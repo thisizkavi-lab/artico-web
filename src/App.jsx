@@ -243,7 +243,7 @@ function CurriculumNav({
                   aria-current={courseLayer === 'foundation' && activeFoundationId === step.id ? 'page' : undefined}
                   onClick={() => chooseFoundation(step.id)}
                 >
-                  <span className="curriculum-number">{index + 1}:</span>
+                  <span className="curriculum-number">{index + 1}.</span>
                   <span className="curriculum-item-copy"><strong>{step.label}</strong><small>{step.ja}</small></span>
                 </button>
               </li>
@@ -274,7 +274,7 @@ function CurriculumNav({
                     aria-current={moduleActive ? 'page' : undefined}
                     onClick={() => chooseEveryday(module.id)}
                   >
-                    <span className="curriculum-number">{module.number}:</span>
+                    <span className="curriculum-number">{module.number}.</span>
                     <span className="curriculum-item-copy"><strong>{module.enTitle || module.title}</strong><small>{module.title}</small></span>
                   </button>
                   {moduleActive && module.lessons && (

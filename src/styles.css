@@ -1,17 +1,17 @@
 :root {
-  --ink: #0f110f;
-  --paper: #ffffff;
-  --warm: #fffdf5;
-  --surface: #f1f2f0;
-  --surface-strong: #e4e8e2;
-  --line: #d8dad6;
-  --muted: #595e59;
-  --olive: #3a503f;
-  --brand: #706b08;
-  --note: #fcffda;
-  --shadow: 0 18px 46px rgba(15, 17, 15, 0.08);
+  --ink: #3a403b;
+  --paper: #fffefa;
+  --warm: #fbfcfa;
+  --surface: #f3f5f1;
+  --surface-strong: #e8ede7;
+  --line: #e5e9e4;
+  --muted: #7a827a;
+  --olive: #617263;
+  --brand: #70773b;
+  --note: #f4f5ed;
+  --shadow: none;
   color: var(--ink);
-  font-family: 'Poppins', 'Noto Sans JP', Arial, sans-serif;
+  font-family: 'Avenir Next', 'Manrope', 'DM Sans', 'Noto Sans JP', Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -35,8 +35,8 @@ svg { display: block; }
   background: transparent;
   cursor: pointer;
 }
-.logo > span { color: var(--brand); font-size: 54px; font-weight: 800; letter-spacing: -4px; line-height: .85; }
-.logo small { color: var(--ink); font-size: 13px; font-weight: 700; margin-top: 8px; }
+.logo > span { color: var(--brand); font-size: 48px; font-weight: 700; letter-spacing: -3.5px; line-height: .88; }
+.logo small { color: var(--muted); font-size: 12px; font-weight: 600; margin-top: 7px; }
 
 .primary-button {
   display: inline-flex;
@@ -45,16 +45,16 @@ svg { display: block; }
   gap: 10px;
   min-height: 54px;
   padding: 0 25px;
-  border: 1.5px solid var(--ink);
+  border: 1px solid rgba(97, 114, 99, .32);
   border-radius: 999px;
   background: var(--olive);
   color: var(--paper);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
   transition: transform .2s ease, background .2s ease;
 }
-.primary-button:hover { transform: translateY(-2px); background: #2f4535; }
+.primary-button:hover { transform: translateY(-2px); background: #566658; }
 .primary-button svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 .landing-header {
@@ -364,16 +364,16 @@ svg { display: block; }
 
 /* Calm theory reader + book-like curriculum tree */
 .course-app {
-  --ink: #262c28;
+  --ink: #3a403b;
   --paper: #fffefa;
-  --warm: #fbfcf9;
-  --surface: #f0f2ed;
-  --surface-strong: #e8eee7;
-  --line: #e3e7e1;
-  --muted: #687269;
-  --olive: #536955;
-  --brand: #606a24;
-  --note: #f4f5e8;
+  --warm: #fbfcfa;
+  --surface: #f3f5f1;
+  --surface-strong: #e8ede7;
+  --line: #e5e9e4;
+  --muted: #7a827a;
+  --olive: #617263;
+  --brand: #70773b;
+  --note: #f4f5ed;
   --shadow: none;
   font-family: 'Avenir Next', 'Manrope', 'DM Sans', 'Noto Sans JP', Arial, sans-serif;
   background: var(--warm);
@@ -460,7 +460,7 @@ svg { display: block; }
   transition: background .16s ease, color .16s ease;
 }
 .curriculum-item:hover { background: var(--surface); }
-.curriculum-item.active { background: #edf1eb; box-shadow: inset 2px 0 var(--olive); }
+.curriculum-item.active { background: #f0f2ed; box-shadow: none; }
 .curriculum-number {
   display: grid;
   width: 28px;
@@ -496,7 +496,7 @@ svg { display: block; }
   padding: 7px 9px;
   border-radius: 10px;
 }
-.course-app .curriculum-item.active { background: #edf1eb; box-shadow: inset 2px 0 var(--olive); }
+.course-app .curriculum-item.active { background: #f0f2ed; box-shadow: none; }
 .course-app .curriculum-item .curriculum-number {
   display: grid;
   width: 28px;
@@ -630,4 +630,158 @@ svg { display: block; }
   .course-app .session-card { min-height: 0; padding: 24px; }
   .course-app .lesson-title h1 { font-size: 34px; letter-spacing: -1.2px; }
   .course-app .lesson-title p { font-size: 14px; }
+}
+
+/* Final calm visual pass: softer contrast, quieter type, and no active-edge accent. */
+.landing-page {
+  color: var(--ink);
+  background: var(--warm);
+}
+.landing-header {
+  border-bottom-color: var(--line);
+  background: rgba(255, 254, 250, .94);
+}
+.landing-header nav a,
+.landing-footer a,
+.landing-footer span,
+.landing-footer button { color: var(--muted); }
+.landing-header nav a { font-weight: 500; }
+.language-button {
+  border-color: var(--line);
+  color: var(--muted);
+  font-weight: 600;
+}
+.login-button {
+  border-color: #c0c7c0;
+  background: #cbd0cb;
+  color: #fffefa;
+  font-size: 15px;
+  font-weight: 600;
+}
+.hero-content h1 {
+  color: var(--ink);
+  font-size: clamp(56px, 5.8vw, 88px);
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.hero-content p { font-size: clamp(17px, 1.55vw, 25px); }
+.hero-content .primary-button { min-height: 60px; font-size: 18px; }
+.feature-copy h2 { font-size: clamp(52px, 4.7vw, 78px); font-weight: 700; }
+.feature-copy p { font-size: clamp(20px, 2vw, 31px); }
+.landing-cta h2 { font-size: clamp(42px, 4.7vw, 72px); font-weight: 700; }
+.landing-cta .primary-button { min-height: 58px; font-size: 17px; }
+.landing-footer strong { color: var(--ink); font-size: 18px; font-weight: 600; }
+.landing-footer a, .landing-footer span, .landing-footer button { font-size: 14px; }
+
+.course-app {
+  background: var(--warm);
+  color: var(--ink);
+}
+.course-app .app-header {
+  background: rgba(255, 254, 250, .94);
+  border-bottom-color: var(--line);
+}
+.course-app .app-header .logo > span {
+  color: var(--olive);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.course-app .app-header .logo small { color: var(--muted); font-weight: 500; }
+.course-app .mode-switch { border-color: var(--line); background: #fffefa; }
+.course-app .mode-switch button { font-weight: 500; }
+.course-app .mode-switch button.active { background: var(--surface-strong); }
+.course-app .lesson-sidebar,
+.course-app .practice-sidebar,
+.course-app .everyday-sidebar { background: #fffefa; }
+.course-app .lesson-main { background: var(--warm); }
+.course-app .lesson-title h1 {
+  font-size: clamp(38px, 3.25vw, 52px);
+  font-weight: 650;
+  letter-spacing: -1.6px;
+}
+.course-app .lesson-title p { color: var(--muted); font-size: 14px; }
+.course-app .curriculum-tree { color: var(--ink); }
+.course-app .curriculum-section-toggle {
+  color: #566157;
+  font-size: 14px;
+  font-weight: 600;
+}
+.course-app .curriculum-list { gap: 1px; }
+.course-app .lesson-sidebar .curriculum-item,
+.course-app .practice-sidebar .curriculum-item,
+.course-app .everyday-sidebar .curriculum-item {
+  min-height: 55px;
+  padding: 6px 9px;
+  border-radius: 11px;
+}
+.course-app .curriculum-item:hover { background: #f5f6f2; }
+.course-app .curriculum-item.active {
+  background: #f0f2ed;
+  box-shadow: none;
+}
+.course-app .curriculum-item .curriculum-number {
+  width: 27px;
+  height: 27px;
+  border-color: #e7eae5;
+  background: #f7f8f5;
+  color: #7b837b;
+  font-size: 10.5px;
+  font-weight: 500;
+}
+.course-app .curriculum-item.active .curriculum-number {
+  border-color: #69786a;
+  background: #69786a;
+  color: #fffefa;
+  font-weight: 600;
+}
+.course-app .curriculum-item-copy { gap: 1px; }
+.course-app .curriculum-item-copy strong {
+  color: #414942;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.22;
+}
+.course-app .curriculum-item-copy small {
+  color: #858c85;
+  font-size: 9.5px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.course-app .curriculum-section.current > .curriculum-section-toggle { color: #60705f; }
+.course-app .theory-outline { border-left-color: var(--line); }
+.course-app .theory-outline strong,
+.course-app .theory-outline a { color: var(--muted); }
+.course-app .orientation-row {
+  min-height: 98px;
+  padding: 17px 21px;
+  border-color: #e9ece7;
+  background: #fffefa;
+}
+.course-app .orientation-row > b { background: #617263; }
+.course-app .orientation-row h3 { font-size: 17px; font-weight: 600; }
+.course-app .orientation-row p { font-size: 12px; }
+.course-app .session-card {
+  min-height: 430px;
+  padding: 30px;
+  border-color: #e9ece7;
+  background: #f6f7f1;
+}
+.course-app .session-card h3 { font-size: 21px; font-weight: 600; }
+.course-app .session-card p { font-size: 12px; }
+.course-app .quiet-visual { background: #fffefa; }
+.course-app .quiet-visual span { opacity: .72; }
+
+@media (max-width: 760px) {
+  .landing-header .logo > span { font-size: 40px; }
+  .hero-content h1 { font-size: 48px; }
+  .hero-content .primary-button { min-height: 54px; font-size: 16px; }
+  .feature-copy h2 { font-size: 48px; }
+  .feature-copy p { font-size: 19px; }
+  .landing-cta h2 { font-size: 43px; }
+  .course-app .app-header .logo > span { font-size: 30px; }
+  .course-app .curriculum-section-toggle { font-size: 13px; }
+  .course-app .curriculum-item-copy strong { font-size: 12px; }
+  .course-app .curriculum-item-copy small { font-size: 9px; }
+  .course-app .lesson-title h1 { font-size: 33px; }
 }

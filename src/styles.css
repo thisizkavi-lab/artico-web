@@ -364,29 +364,31 @@ svg { display: block; }
 
 /* Calm theory reader + book-like curriculum tree */
 .course-app {
-  --ink: #252b27;
-  --paper: #fcfcfa;
-  --warm: #f8faf7;
-  --surface: #eef1ed;
-  --surface-strong: #e4ebe4;
-  --line: #dfe4df;
-  --muted: #6d766f;
-  --olive: #49614f;
-  --brand: #65701d;
-  --note: #f3f5e6;
-  --shadow: 0 8px 24px rgba(37, 43, 39, 0.045);
+  --ink: #262c28;
+  --paper: #fffefa;
+  --warm: #fbfcf9;
+  --surface: #f0f2ed;
+  --surface-strong: #e8eee7;
+  --line: #e3e7e1;
+  --muted: #687269;
+  --olive: #536955;
+  --brand: #606a24;
+  --note: #f4f5e8;
+  --shadow: none;
+  font-family: 'Avenir Next', 'Manrope', 'DM Sans', 'Noto Sans JP', Arial, sans-serif;
   background: var(--warm);
   color: var(--ink);
 }
 
 .course-app .app-header {
   grid-template-columns: 240px 1fr 240px;
-  height: 78px;
-  padding: 0 24px;
-  background: rgba(252, 252, 250, .96);
+  height: 98px;
+  padding: 0 40px;
+  border-bottom-color: var(--line);
+  background: rgba(255, 254, 250, .96);
 }
-.course-app .app-header .logo { width: 128px; }
-.course-app .app-header .logo > span { font-size: 38px; }
+.course-app .app-header .logo { width: 128px; align-items: flex-start; justify-self: start; }
+.course-app .app-header .logo > span { font-size: 38px; text-transform: lowercase; }
 .course-app .app-header .logo small { font-size: 9px; }
 .course-app .mode-switch { width: 390px; padding: 5px; border-color: var(--line); background: var(--paper); }
 .course-app .mode-switch button { height: 44px; gap: 9px; color: var(--muted); font-size: 14px; }
@@ -395,34 +397,35 @@ svg { display: block; }
 .course-app .profile-button, .course-app .profile-button svg { width: 44px; height: 44px; }
 .course-app .profile-button svg { stroke: var(--olive); stroke-width: 2.1; }
 
-.course-app .app-body { grid-template-columns: 286px minmax(0, 1fr); min-height: calc(100vh - 78px); }
+.course-app .app-body { grid-template-columns: 280px minmax(0, 1fr); min-height: calc(100vh - 98px); }
 .course-app .lesson-sidebar,
 .course-app .practice-sidebar,
 .course-app .everyday-sidebar {
-  top: 78px;
-  height: calc(100vh - 78px);
+  top: 98px;
+  height: calc(100vh - 98px);
   background: var(--paper);
 }
 .course-app .lesson-main { background: var(--warm); }
 .course-app .lesson-page,
 .course-app .practice-page {
-  max-width: 1320px;
-  min-height: calc(100vh - 78px);
-  padding: 42px 48px 32px;
+  max-width: 1440px;
+  min-height: calc(100vh - 98px);
+  padding: 52px 72px 34px;
 }
-.course-app .lesson-title small { font-size: 11px; letter-spacing: 1.5px; }
+.course-app .lesson-title small { font-size: 11px; letter-spacing: 1.7px; }
 .course-app .lesson-title h1 {
-  max-width: 900px;
-  margin: 14px 0 9px;
-  font-size: clamp(36px, 3.5vw, 54px);
-  letter-spacing: -1.7px;
+  max-width: 940px;
+  margin: 16px 0 11px;
+  font-size: clamp(40px, 3.5vw, 58px);
+  letter-spacing: -2px;
   line-height: 1.12;
 }
-.course-app .lesson-title p { max-width: 820px; font-size: 15px; line-height: 1.75; }
+.course-app .lesson-title p { max-width: 880px; color: var(--muted); font-size: 15px; line-height: 1.75; }
 .course-app .primary-button { min-height: 44px; padding: 0 19px; border-width: 1px; font-size: 14px; }
+.course-app .lesson-footer { margin-top: 38px; }
 
-.curriculum-tree { padding: 24px 16px 10px; }
-.curriculum-section + .curriculum-section { margin-top: 24px; }
+.curriculum-tree { padding: 27px 16px 10px; }
+.curriculum-section + .curriculum-section { margin-top: 29px; }
 .curriculum-section-toggle {
   display: flex;
   align-items: center;
@@ -447,7 +450,7 @@ svg { display: block; }
   gap: 8px;
   align-items: center;
   width: 100%;
-  min-height: 47px;
+  min-height: 49px;
   padding: 7px 9px;
   border-radius: 8px;
   background: transparent;
@@ -457,9 +460,21 @@ svg { display: block; }
   transition: background .16s ease, color .16s ease;
 }
 .curriculum-item:hover { background: var(--surface); }
-.curriculum-item.active { background: var(--surface-strong); box-shadow: inset 3px 0 var(--olive); }
-.curriculum-number { align-self: start; padding-top: 2px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
-.curriculum-item.active .curriculum-number { color: var(--olive); font-weight: 700; }
+.curriculum-item.active { background: #edf1eb; box-shadow: inset 2px 0 var(--olive); }
+.curriculum-number {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  align-self: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  place-items: center;
+}
+.curriculum-item.active .curriculum-number { border-color: var(--olive); background: var(--olive); color: #fff; font-weight: 700; }
 .curriculum-item-copy { display: flex; min-width: 0; flex-direction: column; gap: 2px; }
 .curriculum-item-copy strong { overflow-wrap: anywhere; font-size: 13px; font-weight: 600; line-height: 1.25; }
 .curriculum-item-copy small { overflow-wrap: anywhere; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.35; }
@@ -470,6 +485,35 @@ svg { display: block; }
 .curriculum-subitem strong { font-size: 11px; font-weight: 600; line-height: 1.25; }
 .curriculum-subitem small { font-family: 'Noto Sans JP', sans-serif; font-size: 9px; line-height: 1.3; }
 .curriculum-section.current > .curriculum-section-toggle { color: var(--olive); }
+.course-app .curriculum-list { padding-right: 12px; padding-left: 24px; }
+.course-app .curriculum-list { margin-top: 7px; }
+.course-app .curriculum-list-everyday { margin-top: 15px; }
+.course-app .lesson-sidebar .curriculum-item,
+.course-app .practice-sidebar .curriculum-item,
+.course-app .everyday-sidebar .curriculum-item {
+  grid-template-columns: 32px minmax(0, 1fr);
+  min-height: 58px;
+  padding: 7px 9px;
+  border-radius: 10px;
+}
+.course-app .curriculum-item.active { background: #edf1eb; box-shadow: inset 2px 0 var(--olive); }
+.course-app .curriculum-item .curriculum-number {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  align-self: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  place-items: center;
+}
+.course-app .curriculum-item.active .curriculum-number { border-color: var(--olive); background: var(--olive); color: #fff; font-weight: 700; }
+.course-app .curriculum-item-copy { gap: 2px; }
+.course-app .curriculum-item-copy strong { font-size: 13px; line-height: 1.25; }
+.course-app .curriculum-item-copy small { font-size: 10px; line-height: 1.35; }
 .course-app .sidebar-note { margin: auto 16px 18px; padding: 15px; border-radius: 12px; background: var(--warm); box-shadow: none; }
 .course-app .sidebar-note strong { font-size: 13px; line-height: 1.35; }
 .course-app .sidebar-note span { font-size: 10px; line-height: 1.55; }
@@ -481,15 +525,28 @@ svg { display: block; }
 .course-app .practice-sidebar nav button { min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 12px; }
 .course-app .selected-sidebar { margin: 18px 16px 0; padding: 14px; border-radius: 12px; box-shadow: none; }
 
-.theory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 148px; align-items: start; max-width: 1420px; margin: 0 auto; }
+.theory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 182px; align-items: start; max-width: 1440px; margin: 0 auto; }
 .theory-content { min-width: 0; }
 .theory-content > .lesson-page { max-width: none; }
-.theory-outline { position: sticky; top: 102px; margin: 44px 20px 0 0; padding: 4px 0 0 16px; border-left: 1px solid var(--line); }
+.course-app .theory-content > .lesson-page { padding-right: 38px; }
+.theory-outline { position: sticky; top: 122px; margin: 45px 22px 0 0; padding: 4px 0 0 18px; border-left: 1px solid var(--line); }
 .theory-outline strong { display: block; margin-bottom: 13px; color: var(--muted); font-size: 11px; font-weight: 700; }
 .theory-outline ol { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .theory-outline li { line-height: 1.35; }
 .theory-outline a { color: var(--muted); font-size: 11px; }
 .theory-outline a:hover { color: var(--olive); }
+
+.course-app .orientation-layout { grid-template-columns: minmax(0, 1.22fr) minmax(320px, .78fr); gap: 32px; margin-top: 39px; }
+.course-app .orientation-list { gap: 12px; }
+.course-app .orientation-row { grid-template-columns: 58px minmax(0, 1fr); padding: 18px 22px; }
+.course-app .orientation-row > b { width: 52px; height: 52px; border-radius: 16px; }
+.course-app .session-card { min-height: 446px; padding: 32px; }
+.course-app .session-card p { color: var(--muted); }
+.course-app .quiet-visual { background: #fffefa; }
+.course-app .quiet-visual span:nth-child(1) { background: #dfe6dc; }
+.course-app .quiet-visual span:nth-child(2) { background: #d9e1d5; }
+.course-app .quiet-visual span:nth-child(3) { background: #d3ddd0; }
+.course-app .quiet-visual span:nth-child(4) { background: #e0e6dc; }
 
 .course-app .orientation-row,
 .course-app .session-card,
@@ -507,7 +564,7 @@ svg { display: block; }
 .course-app .everyday-card,
 .course-app .daily-routine,
 .course-app .week-grid article { box-shadow: none; border: 1px solid var(--line); }
-.course-app .orientation-row { border-radius: 14px; min-height: 88px; }
+.course-app .orientation-row { border-radius: 17px; min-height: 104px; }
 .course-app .session-card,
 .course-app .alphabet-board,
 .course-app .guided-panel,
@@ -515,12 +572,12 @@ svg { display: block; }
 .course-app .sound-note,
 .course-app .compact-video > div:last-child,
 .course-app .everyday-card { border-radius: 16px; }
-.course-app .orientation-row h3 { font-size: 17px; }
+.course-app .orientation-row h3 { font-size: 18px; }
 .course-app .orientation-row p,
 .course-app .session-card p,
 .course-app .sound-note p,
 .course-app .compact-video > div:last-child p { font-size: 13px; line-height: 1.7; }
-.course-app .session-card h3 { font-size: 23px; }
+.course-app .session-card h3 { font-size: 22px; letter-spacing: -.35px; }
 .course-app .alphabet-grid button { min-height: 52px; border-radius: 10px; font-size: 20px; }
 .course-app .alphabet-grid button span { font-size: 15px; }
 .course-app .video-reference { border-radius: 16px; }
@@ -537,6 +594,7 @@ svg { display: block; }
   .course-app .app-body { grid-template-columns: 260px minmax(0, 1fr); }
   .theory-layout { grid-template-columns: minmax(0, 1fr) 126px; }
   .theory-outline { margin-right: 14px; padding-left: 12px; }
+  .course-app .theory-content > .lesson-page { padding-right: 34px; }
 }
 
 @media (max-width: 760px) {
@@ -560,6 +618,16 @@ svg { display: block; }
   .theory-outline { display: none; }
   .course-app .lesson-page,
   .course-app .practice-page { min-height: auto; padding: 32px 18px 28px; }
+  .course-app .orientation-layout,
+  .course-app .letters-layout,
+  .course-app .media-layout,
+  .course-app .sound-explainer,
+  .course-app .compact-video,
+  .course-app .tongue-intro-layout,
+  .course-app .drill-layout { grid-template-columns: 1fr; }
+  .course-app .orientation-layout { margin-top: 28px; }
+  .course-app .orientation-row { grid-template-columns: 48px minmax(0, 1fr); min-height: 92px; }
+  .course-app .session-card { min-height: 0; padding: 24px; }
   .course-app .lesson-title h1 { font-size: 34px; letter-spacing: -1.2px; }
   .course-app .lesson-title p { font-size: 14px; }
 }

@@ -1,0 +1,464 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8768" height="1152" viewBox="0 0 8768 1152">
+  <title>Artico — Alphabet Foundations lesson flow</title>
+  <desc>Four coordinated desktop app screens: meet the letters, hear the alphabet, write the alphabet, and a short letters-versus-sounds note.</desc>
+  <defs>
+    <style>
+      .poppins { font-family: Poppins, Arial, sans-serif; }
+      .jp { font-family: "Noto Sans JP", "Hiragino Sans", Arial, sans-serif; }
+      .ink { fill: #0F110F; }
+      .paper { fill: #FFFFFF; }
+      .warm { fill: #FFFDF5; }
+      .surface { fill: #F1F2F0; }
+      .muted { fill: #737873; }
+      .olive { fill: #3A503F; }
+      .brand { fill: #706B08; }
+      .line { stroke: #D8DAD6; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F110F" flood-opacity=".08"/>
+    </filter>
+    <linearGradient id="videoGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24372A"/>
+      <stop offset="1" stop-color="#607365"/>
+    </linearGradient>
+    <linearGradient id="videoRose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4D293B"/>
+      <stop offset="1" stop-color="#BE7388"/>
+    </linearGradient>
+    <g id="app-header">
+      <rect width="2048" height="112" fill="#FFFFFF"/>
+      <line x1="0" y1="111" x2="2048" y2="111" stroke="#D8DAD6"/>
+      <g transform="translate(42 18)">
+        <text class="poppins brand" x="0" y="52" font-size="50" font-weight="800" letter-spacing="-3">artiCo</text>
+        <text class="poppins ink" x="25" y="79" font-size="14" font-weight="600">english but better...</text>
+      </g>
+      <g transform="translate(748 16)">
+        <rect width="552" height="80" rx="40" fill="#FFFFFF" stroke="#A6A8A5" stroke-width="2"/>
+        <rect x="10" y="10" width="254" height="60" rx="30" fill="#F1F2F0"/>
+        <g transform="translate(52 23)" fill="#0F110F">
+          <path d="M0 5c18 0 29 7 35 17v25c-8-8-19-12-35-12V5Zm70 0c-18 0-29 7-35 17v25c8-8 19-12 35-12V5Z"/>
+          <circle cx="35" cy="8" r="8"/>
+        </g>
+        <text class="poppins ink" x="145" y="52" font-size="27" font-weight="700">Learn</text>
+        <g transform="translate(319 24)" fill="none" stroke="#3A503F" stroke-width="3">
+          <circle cx="24" cy="18" r="16"/><path d="M19 12l10 12M29 12L19 24" stroke-linecap="round"/>
+        </g>
+        <text class="poppins olive" x="388" y="52" font-size="27" font-weight="600">Practice</text>
+      </g>
+      <g transform="translate(1901 25)" fill="none" stroke="#0F110F" stroke-width="3">
+        <circle cx="31" cy="31" r="30"/><circle cx="31" cy="24" r="11"/><path d="M12 50c4-12 10-17 19-17s16 5 20 17"/>
+      </g>
+    </g>
+    <g id="play-button">
+      <circle cx="0" cy="0" r="42" fill="#FFFFFF"/>
+      <path d="M-10 -18L21 0-10 18Z" fill="#3A503F"/>
+    </g>
+  </defs>
+
+  <rect width="8768" height="1152" fill="#D8DAD6"/>
+
+  <!-- SCREEN 1 ================================================= -->
+  <g id="Screen-01-Meet-the-Letters">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#app-header"/>
+
+    <g id="Sidebar-01" transform="translate(0 112)">
+      <rect width="420" height="1040" fill="#FFFDF5"/>
+      <line x1="419" y1="0" x2="419" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="34" y="58" font-size="17" font-weight="700" letter-spacing="1.7">FREE FOUNDATION</text>
+      <text class="poppins ink" x="34" y="105" font-size="27" font-weight="700">Alphabets &amp; Sounds</text>
+      <text class="jp muted" x="34" y="137" font-size="15">7つの短いステップ</text>
+      <g transform="translate(26 176)">
+        <rect width="368" height="60" rx="17" fill="#E4E8E2"/>
+        <rect width="6" height="60" rx="3" fill="#3A503F"/>
+        <circle cx="34" cy="30" r="14" fill="#3A503F"/>
+        <text class="poppins paper" x="34" y="36" font-size="14" font-weight="700" text-anchor="middle">1</text>
+        <text class="poppins ink" x="64" y="38" font-size="20" font-weight="700">Welcome</text>
+        <text class="poppins ink" x="34" y="102" font-size="19">2  Meet the 26 letters</text>
+        <text class="poppins ink" x="34" y="160" font-size="19">3  Hear the Alphabet</text>
+        <text class="poppins ink" x="34" y="218" font-size="19">4  Write the Alphabet</text>
+        <text class="poppins ink" x="34" y="276" font-size="19">5  Letters &amp; sounds</text>
+        <text class="poppins ink" x="34" y="334" font-size="19">6  Guided Try</text>
+        <text class="poppins ink" x="34" y="392" font-size="19">7  Review</text>
+      </g>
+      <g transform="translate(26 876)">
+        <rect width="368" height="112" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="22" y="34" font-size="14" font-weight="700" letter-spacing="1.2">NEXT IN PRACTICE</text>
+        <text class="poppins ink" x="22" y="70" font-size="20" font-weight="700">Tongue Twisters</text>
+        <text class="jp muted" x="22" y="96" font-size="14">発音練習はここから始まります</text>
+      </g>
+    </g>
+
+    <g id="Main-01" transform="translate(420 112)">
+      <rect width="1628" height="1040" fill="#FFFFFF"/>
+      <g transform="translate(74 58)">
+        <text class="poppins brand" x="0" y="18" font-size="17" font-weight="700" letter-spacing="2.2">ALPHABETS &amp; SOUNDS · 01 / 07</text>
+        <text class="poppins ink" x="0" y="96" font-size="58" font-weight="800" letter-spacing="-1.5">Meet the 26 letters</text>
+        <text class="jp ink" x="0" y="145" font-size="20" opacity=".68">英語のすべては、26文字から始まります。まずは大文字と小文字の形・名前に慣れましょう。</text>
+      </g>
+
+      <g transform="translate(74 252)">
+        <g id="Concept-26-2">
+          <rect width="420" height="168" rx="28" fill="#FCFFDA"/>
+          <text class="poppins brand" x="28" y="58" font-size="40" font-weight="800">26 letters</text>
+          <text class="poppins ink" x="28" y="98" font-size="24" font-weight="700">2 forms</text>
+          <text class="jp ink" x="28" y="136" font-size="16" opacity=".67">大文字と小文字は、同じ文字の二つの形です。</text>
+        </g>
+        <g transform="translate(0 198)">
+          <rect width="420" height="210" rx="28" fill="#F1F2F0"/>
+          <text class="poppins ink" x="28" y="48" font-size="21" font-weight="700">What matters now</text>
+          <circle cx="38" cy="86" r="6" fill="#3A503F"/><text class="jp ink" x="58" y="93" font-size="17">文字の形を見る</text>
+          <circle cx="38" cy="126" r="6" fill="#3A503F"/><text class="jp ink" x="58" y="133" font-size="17">文字の名前を聞く</text>
+          <circle cx="38" cy="166" r="6" fill="#3A503F"/><text class="jp ink" x="58" y="173" font-size="17">声に出してまねる</text>
+        </g>
+        <g transform="translate(0 438)">
+          <rect width="420" height="116" rx="24" fill="#FFFFFF" stroke="#D8DAD6"/>
+          <text class="poppins brand" x="24" y="36" font-size="14" font-weight="700" letter-spacing="1.1">OPTIONAL · READ MORE</text>
+          <text class="jp ink" x="24" y="75" font-size="17" font-weight="600">アルファベットはどこから来たの？</text>
+          <text class="jp muted" x="24" y="99" font-size="14">歴史の説明はここに折りたたみます</text>
+        </g>
+      </g>
+
+      <g id="Alphabet-Board" transform="translate(538 242)" filter="url(#shadow)">
+        <rect width="1008" height="626" rx="32" fill="#FFFFFF"/>
+        <text class="poppins ink" x="42" y="54" font-size="24" font-weight="700">Uppercase + lowercase</text>
+        <text class="jp muted" x="42" y="86" font-size="15">同じ文字を、二つの形で見てみましょう</text>
+        <line x1="42" y1="112" x2="966" y2="112" stroke="#D8DAD6"/>
+        <g class="poppins ink" font-size="31" font-weight="650" text-anchor="middle">
+          <g transform="translate(48 140)">
+            <g><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">A  a</text></g>
+            <g transform="translate(181 0)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">B  b</text></g>
+            <g transform="translate(362 0)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">C  c</text></g>
+            <g transform="translate(543 0)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">D  d</text></g>
+            <g transform="translate(724 0)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">E  e</text></g>
+            <g transform="translate(0 90)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">F  f</text></g>
+            <g transform="translate(181 90)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">G  g</text></g>
+            <g transform="translate(362 90)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">H  h</text></g>
+            <g transform="translate(543 90)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">I  i</text></g>
+            <g transform="translate(724 90)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">J  j</text></g>
+            <g transform="translate(0 180)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">K  k</text></g>
+            <g transform="translate(181 180)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">L  l</text></g>
+            <g transform="translate(362 180)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">M  m</text></g>
+            <g transform="translate(543 180)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">N  n</text></g>
+            <g transform="translate(724 180)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">O  o</text></g>
+            <g transform="translate(0 270)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">P  p</text></g>
+            <g transform="translate(181 270)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">Q  q</text></g>
+            <g transform="translate(362 270)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">R  r</text></g>
+            <g transform="translate(543 270)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">S  s</text></g>
+            <g transform="translate(724 270)"><rect width="158" height="72" rx="18" fill="#FFFDF5"/><text x="79" y="47">T  t</text></g>
+            <g transform="translate(0 360)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">U  u</text></g>
+            <g transform="translate(181 360)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">V  v</text></g>
+            <g transform="translate(362 360)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">W  w</text></g>
+            <g transform="translate(543 360)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">X  x</text></g>
+            <g transform="translate(724 360)"><rect width="158" height="72" rx="18" fill="#F1F2F0"/><text x="79" y="47">Y  y</text></g>
+            <g transform="translate(362 450)"><rect width="158" height="72" rx="18" fill="#FCFFDA"/><text x="79" y="47">Z  z</text></g>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(74 920)">
+        <text class="jp muted" x="0" y="47" font-size="17">Step 1 of 7</text>
+        <g transform="translate(1132 0)">
+          <rect width="342" height="72" rx="36" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="171" y="46" font-size="20" font-weight="700" text-anchor="middle">Hear the Alphabet へ</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 2 ================================================= -->
+  <g id="Screen-02-Hear-the-Alphabet" transform="translate(2240 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#app-header"/>
+    <g id="Sidebar-02" transform="translate(0 112)">
+      <rect width="420" height="1040" fill="#FFFDF5"/>
+      <line x1="419" y1="0" x2="419" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="34" y="58" font-size="17" font-weight="700" letter-spacing="1.7">FREE FOUNDATION</text>
+      <text class="poppins ink" x="34" y="105" font-size="27" font-weight="700">Alphabets &amp; Sounds</text>
+      <text class="jp muted" x="34" y="137" font-size="15">7つの短いステップ</text>
+      <g transform="translate(26 176)">
+        <text class="poppins muted" x="34" y="38" font-size="19">1  Welcome</text>
+        <text class="poppins muted" x="34" y="96" font-size="19">2  Meet the 26 letters</text>
+        <rect y="118" width="368" height="60" rx="17" fill="#E4E8E2"/>
+        <rect y="118" width="6" height="60" rx="3" fill="#3A503F"/>
+        <circle cx="34" cy="148" r="14" fill="#3A503F"/>
+        <text class="poppins paper" x="34" y="154" font-size="14" font-weight="700" text-anchor="middle">3</text>
+        <text class="poppins ink" x="64" y="156" font-size="20" font-weight="700">Hear the Alphabet</text>
+        <text class="poppins ink" x="34" y="220" font-size="19">4  Write the Alphabet</text>
+        <text class="poppins ink" x="34" y="278" font-size="19">5  Letters &amp; sounds</text>
+        <text class="poppins ink" x="34" y="336" font-size="19">6  Guided Try</text>
+        <text class="poppins ink" x="34" y="394" font-size="19">7  Review</text>
+      </g>
+      <g transform="translate(26 876)">
+        <rect width="368" height="112" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="22" y="34" font-size="14" font-weight="700" letter-spacing="1.2">TODAY</text>
+        <text class="jp ink" x="22" y="70" font-size="18" font-weight="700">聞く → 一緒に歌う → 思い出す</text>
+        <text class="jp muted" x="22" y="96" font-size="14">合計10分以内で十分です</text>
+      </g>
+    </g>
+    <g id="Main-02" transform="translate(420 112)">
+      <rect width="1628" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(74 54)">
+        <text class="poppins brand" x="0" y="18" font-size="17" font-weight="700" letter-spacing="2.2">ALPHABETS &amp; SOUNDS · 03 / 07</text>
+        <text class="poppins ink" x="0" y="92" font-size="56" font-weight="800" letter-spacing="-1.3">Hear the Alphabet</text>
+        <text class="jp ink" x="0" y="140" font-size="20" opacity=".68">動画は音のお手本です。見終わったら、右のArticoの手順で口を動かします。</text>
+      </g>
+      <g id="Video-Reference-ABC" transform="translate(74 236)" filter="url(#shadow)">
+        <rect width="820" height="528" rx="30" fill="#FFFFFF"/>
+        <g transform="translate(24 22)">
+          <rect width="188" height="32" rx="16" fill="#FCFFDA"/>
+          <text class="poppins brand" x="94" y="22" font-size="13" font-weight="700" letter-spacing="1" text-anchor="middle">YOUTUBE REFERENCE</text>
+          <text class="poppins ink" x="0" y="88" font-size="25" font-weight="700">The Alphabet Song · lowercase letters</text>
+          <text class="poppins muted" x="0" y="118" font-size="15">External creator · opens with standard YouTube controls</text>
+          <g transform="translate(0 144)">
+            <rect width="772" height="306" rx="22" fill="url(#videoGreen)"/>
+            <text class="poppins paper" x="42" y="70" font-size="18" font-weight="700">AUDIO MODEL</text>
+            <text class="poppins paper" x="386" y="180" font-size="88" font-weight="800" text-anchor="middle" opacity=".2">a b c</text>
+            <use href="#play-button" x="386" y="153"/>
+            <rect x="24" y="258" width="724" height="22" rx="11" fill="#FFFFFF" opacity=".18"/>
+            <rect x="24" y="258" width="212" height="22" rx="11" fill="#FFFFFF" opacity=".72"/>
+          </g>
+          <text class="jp muted" x="0" y="486" font-size="14">外部動画 · 必要なら「YouTubeで開く」を使えます</text>
+        </g>
+      </g>
+      <g id="Artico-Loop" transform="translate(930 236)">
+        <text class="poppins ink" x="0" y="26" font-size="24" font-weight="700">After the video</text>
+        <text class="jp muted" x="0" y="58" font-size="16">順番どおりに、一つずつ。</text>
+        <g transform="translate(0 92)">
+          <rect width="618" height="126" rx="26" fill="#FFFFFF" stroke="#D8DAD6"/>
+          <circle cx="48" cy="48" r="25" fill="#3A503F"/><text class="poppins paper" x="48" y="56" font-size="20" font-weight="700" text-anchor="middle">1</text>
+          <text class="poppins ink" x="88" y="45" font-size="22" font-weight="700">Listen</text>
+          <text class="jp ink" x="88" y="76" font-size="16">まず一度、歌わずに聴く。</text>
+          <text class="jp muted" x="88" y="101" font-size="14">リズムだけを感じます。</text>
+        </g>
+        <g transform="translate(0 238)">
+          <rect width="618" height="126" rx="26" fill="#FCFFDA"/>
+          <circle cx="48" cy="48" r="25" fill="#706B08"/><text class="poppins paper" x="48" y="56" font-size="20" font-weight="700" text-anchor="middle">2</text>
+          <text class="poppins ink" x="88" y="45" font-size="22" font-weight="700">Join</text>
+          <text class="jp ink" x="88" y="76" font-size="16">次に音声と一緒に5回。</text>
+          <text class="jp muted" x="88" y="101" font-size="14">口を止めずにAからZまで。</text>
+        </g>
+        <g transform="translate(0 384)">
+          <rect width="618" height="126" rx="26" fill="#FFFFFF" stroke="#D8DAD6"/>
+          <circle cx="48" cy="48" r="25" fill="#3A503F"/><text class="poppins paper" x="48" y="56" font-size="20" font-weight="700" text-anchor="middle">3</text>
+          <text class="poppins ink" x="88" y="45" font-size="22" font-weight="700">Recall</text>
+          <text class="jp ink" x="88" y="76" font-size="16">最後に音声なしで一度。</text>
+          <text class="jp muted" x="88" y="101" font-size="14">止まった文字だけ確認します。</text>
+        </g>
+        <g transform="translate(0 536)">
+          <rect width="618" height="78" rx="22" fill="#E4E8E2"/>
+          <rect x="22" y="22" width="34" height="34" rx="9" fill="#FFFFFF" stroke="#3A503F" stroke-width="2"/>
+          <text class="jp ink" x="74" y="49" font-size="17" font-weight="600">音声なしでA–Zを言えた</text>
+        </g>
+      </g>
+      <g transform="translate(74 914)">
+        <text class="jp muted" x="0" y="47" font-size="17">← Meet the 26 letters</text>
+        <g transform="translate(1132 0)">
+          <rect width="342" height="72" rx="36" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="171" y="46" font-size="20" font-weight="700" text-anchor="middle">Write the Alphabet へ</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 3 ================================================= -->
+  <g id="Screen-03-Write-the-Alphabet" transform="translate(4480 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#app-header"/>
+    <g id="Sidebar-03" transform="translate(0 112)">
+      <rect width="420" height="1040" fill="#FFFDF5"/>
+      <line x1="419" y1="0" x2="419" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="34" y="58" font-size="17" font-weight="700" letter-spacing="1.7">FREE FOUNDATION</text>
+      <text class="poppins ink" x="34" y="105" font-size="27" font-weight="700">Alphabets &amp; Sounds</text>
+      <text class="jp muted" x="34" y="137" font-size="15">7つの短いステップ</text>
+      <g transform="translate(26 176)">
+        <text class="poppins muted" x="34" y="38" font-size="19">1  Welcome</text>
+        <text class="poppins muted" x="34" y="96" font-size="19">2  Meet the 26 letters</text>
+        <text class="poppins muted" x="34" y="154" font-size="19">3  Hear the Alphabet</text>
+        <rect y="176" width="368" height="60" rx="17" fill="#E4E8E2"/>
+        <rect y="176" width="6" height="60" rx="3" fill="#3A503F"/>
+        <circle cx="34" cy="206" r="14" fill="#3A503F"/>
+        <text class="poppins paper" x="34" y="212" font-size="14" font-weight="700" text-anchor="middle">4</text>
+        <text class="poppins ink" x="64" y="214" font-size="20" font-weight="700">Write the Alphabet</text>
+        <text class="poppins ink" x="34" y="278" font-size="19">5  Letters &amp; sounds</text>
+        <text class="poppins ink" x="34" y="336" font-size="19">6  Guided Try</text>
+        <text class="poppins ink" x="34" y="394" font-size="19">7  Review</text>
+      </g>
+      <g transform="translate(26 876)">
+        <rect width="368" height="112" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="22" y="34" font-size="14" font-weight="700" letter-spacing="1.2">YOU NEED</text>
+        <text class="jp ink" x="22" y="70" font-size="18" font-weight="700">鉛筆 · 消しゴム · ノート</text>
+        <text class="jp muted" x="22" y="96" font-size="14">画面上で書く機能はMVPに不要です</text>
+      </g>
+    </g>
+    <g id="Main-03" transform="translate(420 112)">
+      <rect width="1628" height="1040" fill="#FFFFFF"/>
+      <g transform="translate(74 54)">
+        <text class="poppins brand" x="0" y="18" font-size="17" font-weight="700" letter-spacing="2.2">ALPHABETS &amp; SOUNDS · 04 / 07</text>
+        <text class="poppins ink" x="0" y="92" font-size="56" font-weight="800" letter-spacing="-1.3">Write the Alphabet</text>
+        <text class="jp ink" x="0" y="140" font-size="20" opacity=".68">文字は紙に書きます。手を動かすことで、形を見分けやすくします。</text>
+      </g>
+      <g id="Video-Reference-Writing" transform="translate(74 232)" filter="url(#shadow)">
+        <rect width="724" height="548" rx="30" fill="#FFFFFF"/>
+        <g transform="translate(24 22)">
+          <rect width="188" height="32" rx="16" fill="#FCFFDA"/>
+          <text class="poppins brand" x="94" y="22" font-size="13" font-weight="700" letter-spacing="1" text-anchor="middle">YOUTUBE REFERENCE</text>
+          <text class="poppins ink" x="0" y="88" font-size="24" font-weight="700">How to write uppercase + lowercase</text>
+          <text class="poppins muted" x="0" y="118" font-size="15">Watch the hand movement once, then move to paper.</text>
+          <g transform="translate(0 144)">
+            <rect width="676" height="282" rx="22" fill="url(#videoRose)"/>
+            <g class="poppins paper" font-size="62" font-weight="600" opacity=".24">
+              <text x="54" y="98">Aa</text><text x="238" y="172">Bb</text><text x="464" y="112">Cc</text>
+              <path d="M40 222H636M40 250H636" stroke="#FFFFFF" stroke-width="2"/>
+            </g>
+            <use href="#play-button" x="338" y="141"/>
+          </g>
+          <g transform="translate(0 454)">
+            <rect width="676" height="58" rx="18" fill="#F1F2F0"/>
+            <text class="poppins ink" x="22" y="37" font-size="16" font-weight="600">Optional worksheet</text>
+            <text class="jp muted" x="206" y="37" font-size="14">無料の印刷シート ↗</text>
+          </g>
+        </g>
+      </g>
+      <g id="Paper-Task" transform="translate(842 232)" filter="url(#shadow)">
+        <rect width="706" height="548" rx="30" fill="#F1F2F0"/>
+        <g transform="translate(34 32)">
+          <text class="poppins brand" x="0" y="20" font-size="15" font-weight="700" letter-spacing="1.4">TODAY’S PAPER TASK</text>
+          <text class="poppins ink" x="0" y="76" font-size="30" font-weight="800">Write one letter set</text>
+          <text class="jp muted" x="0" y="110" font-size="16">今日は A a から E e。ゆっくりで大丈夫です。</text>
+          <g transform="translate(0 146)">
+            <circle cx="26" cy="26" r="26" fill="#3A503F"/><text class="poppins paper" x="26" y="34" font-size="20" font-weight="700" text-anchor="middle">1</text>
+            <text class="jp ink" x="70" y="22" font-size="18" font-weight="700">なぞる</text>
+            <text class="jp muted" x="70" y="49" font-size="15">大文字・小文字を5回ずつなぞる</text>
+          </g>
+          <g transform="translate(0 228)">
+            <circle cx="26" cy="26" r="26" fill="#706B08"/><text class="poppins paper" x="26" y="34" font-size="20" font-weight="700" text-anchor="middle">2</text>
+            <text class="jp ink" x="70" y="22" font-size="18" font-weight="700">見ないで書く</text>
+            <text class="jp muted" x="70" y="49" font-size="15">線なしで一度。形を自分で思い出す</text>
+          </g>
+          <g transform="translate(0 310)">
+            <circle cx="26" cy="26" r="26" fill="#3A503F"/><text class="poppins paper" x="26" y="34" font-size="20" font-weight="700" text-anchor="middle">3</text>
+            <text class="jp ink" x="70" y="22" font-size="18" font-weight="700">小さな単語を3つ</text>
+            <text class="jp muted" x="70" y="49" font-size="15">A: apple · ant · art のように書く</text>
+          </g>
+          <g transform="translate(0 404)">
+            <rect width="638" height="72" rx="22" fill="#FFFFFF"/>
+            <rect x="20" y="19" width="34" height="34" rx="9" fill="#FFFFFF" stroke="#3A503F" stroke-width="2"/>
+            <text class="jp ink" x="72" y="45" font-size="17" font-weight="600">ノート1ページを終えた</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(74 914)">
+        <text class="jp muted" x="0" y="47" font-size="17">← Hear the Alphabet</text>
+        <g transform="translate(1132 0)">
+          <rect width="342" height="72" rx="36" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="171" y="46" font-size="20" font-weight="700" text-anchor="middle">Letters &amp; sounds へ</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 4 ================================================= -->
+  <g id="Screen-04-Letters-vs-Sounds" transform="translate(6720 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#app-header"/>
+    <g id="Sidebar-04" transform="translate(0 112)">
+      <rect width="420" height="1040" fill="#FFFDF5"/>
+      <line x1="419" y1="0" x2="419" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="34" y="58" font-size="17" font-weight="700" letter-spacing="1.7">FREE FOUNDATION</text>
+      <text class="poppins ink" x="34" y="105" font-size="27" font-weight="700">Alphabets &amp; Sounds</text>
+      <text class="jp muted" x="34" y="137" font-size="15">7つの短いステップ</text>
+      <g transform="translate(26 176)">
+        <text class="poppins muted" x="34" y="38" font-size="19">1  Welcome</text>
+        <text class="poppins muted" x="34" y="96" font-size="19">2  Meet the 26 letters</text>
+        <text class="poppins muted" x="34" y="154" font-size="19">3  Hear the Alphabet</text>
+        <text class="poppins muted" x="34" y="212" font-size="19">4  Write the Alphabet</text>
+        <rect y="234" width="368" height="60" rx="17" fill="#FCFFDA"/>
+        <rect y="234" width="6" height="60" rx="3" fill="#706B08"/>
+        <circle cx="34" cy="264" r="14" fill="#706B08"/>
+        <text class="poppins paper" x="34" y="270" font-size="14" font-weight="700" text-anchor="middle">5</text>
+        <text class="poppins ink" x="64" y="272" font-size="20" font-weight="700">Letters &amp; sounds</text>
+        <text class="poppins ink" x="34" y="336" font-size="19">6  Guided Try</text>
+        <text class="poppins ink" x="34" y="394" font-size="19">7  Review</text>
+      </g>
+      <g transform="translate(26 876)">
+        <rect width="368" height="112" rx="22" fill="#FCFFDA"/>
+        <text class="poppins brand" x="22" y="34" font-size="14" font-weight="700" letter-spacing="1.2">SIDE NOTE · 2 MIN</text>
+        <text class="jp ink" x="22" y="70" font-size="18" font-weight="700">暗記しなくて大丈夫</text>
+        <text class="jp muted" x="22" y="96" font-size="14">「文字と音は違う」で十分です</text>
+      </g>
+    </g>
+    <g id="Main-04" transform="translate(420 112)">
+      <rect width="1628" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(74 50)">
+        <text class="poppins brand" x="0" y="18" font-size="17" font-weight="700" letter-spacing="2.2">SIDE NOTE · ABOUT 2 MIN</text>
+        <text class="poppins ink" x="0" y="90" font-size="52" font-weight="800" letter-spacing="-1.1">Why can one letter sound different?</text>
+        <text class="jp ink" x="0" y="138" font-size="19" opacity=".68">文字は綴りを、IPAは音を表します。今は記号を暗記したり書いたりする必要はありません。</text>
+      </g>
+      <g id="Letters-Sounds-Explanation" transform="translate(74 232)">
+        <rect width="740" height="548" rx="30" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <g transform="translate(34 34)">
+          <text class="poppins brand" x="0" y="50" font-size="48" font-weight="800">26 LETTERS</text>
+          <text class="poppins muted" x="335" y="50" font-size="42" font-weight="700">≠</text>
+          <text class="poppins olive" x="392" y="50" font-size="48" font-weight="800">~44 SOUNDS</text>
+          <text class="jp muted" x="0" y="92" font-size="15">音の数は、アクセントや数え方によって少し変わります。</text>
+          <g transform="translate(0 130)">
+            <rect width="672" height="178" rx="24" fill="#F1F2F0"/>
+            <text class="poppins muted" x="22" y="38" font-size="14" font-weight="700" letter-spacing="1">SYSTEM</text>
+            <text class="poppins muted" x="254" y="38" font-size="14" font-weight="700" letter-spacing="1">REPRESENTS</text>
+            <text class="poppins muted" x="493" y="38" font-size="14" font-weight="700" letter-spacing="1">EXAMPLE</text>
+            <line x1="22" y1="58" x2="650" y2="58" stroke="#D8DAD6"/>
+            <text class="poppins ink" x="22" y="96" font-size="20" font-weight="700">Alphabet</text>
+            <text class="poppins ink" x="254" y="96" font-size="19">Letters</text>
+            <text class="poppins ink" x="493" y="96" font-size="19">a, b, c</text>
+            <text class="poppins ink" x="22" y="146" font-size="20" font-weight="700">IPA</text>
+            <text class="poppins ink" x="254" y="146" font-size="19">Sounds</text>
+            <text class="poppins ink" x="493" y="146" font-size="19">/æ/, /b/, /k/</text>
+          </g>
+          <g transform="translate(0 334)">
+            <rect width="672" height="132" rx="24" fill="#FCFFDA"/>
+            <text class="jp ink" x="24" y="42" font-size="19" font-weight="700">今日わかればいいこと</text>
+            <text class="jp ink" x="24" y="78" font-size="17">同じ文字でも、単語によって音が変わることがあります。</text>
+            <text class="jp muted" x="24" y="106" font-size="15">だから発音が不規則に感じても、あなたのせいではありません。</text>
+          </g>
+        </g>
+      </g>
+      <g id="Optional-References" transform="translate(850 232)">
+        <text class="poppins ink" x="0" y="24" font-size="23" font-weight="700">Optional references</text>
+        <text class="jp muted" x="0" y="56" font-size="15">気になる場合だけ見てください。どちらもスキップできます。</text>
+        <g transform="translate(0 88)" filter="url(#shadow)">
+          <rect width="698" height="194" rx="26" fill="#FFFFFF"/>
+          <rect x="18" y="18" width="244" height="158" rx="18" fill="url(#videoGreen)"/>
+          <use href="#play-button" x="140" y="97" transform="scale(.68) translate(66 45)"/>
+          <rect x="286" y="24" width="164" height="28" rx="14" fill="#FCFFDA"/>
+          <text class="poppins brand" x="368" y="44" font-size="12" font-weight="700" text-anchor="middle">YOUTUBE · 8 MIN</text>
+          <text class="poppins ink" x="286" y="86" font-size="22" font-weight="700">Understand the sound map</text>
+          <text class="jp muted" x="286" y="120" font-size="15">44前後の音を、例と一緒に聞く</text>
+          <text class="poppins olive" x="286" y="157" font-size="15" font-weight="700">Open reference ↗</text>
+        </g>
+        <g transform="translate(0 306)" filter="url(#shadow)">
+          <rect width="698" height="194" rx="26" fill="#FFFFFF"/>
+          <rect x="18" y="18" width="244" height="158" rx="18" fill="url(#videoRose)"/>
+          <text class="poppins paper" x="140" y="92" font-size="34" font-weight="800" text-anchor="middle" opacity=".38">/æ/ /θ/ /ŋ/</text>
+          <circle cx="140" cy="128" r="25" fill="#FFFFFF"/><path d="M133 116L153 128 133 140Z" fill="#3A503F"/>
+          <rect x="286" y="24" width="170" height="28" rx="14" fill="#FCFFDA"/>
+          <text class="poppins brand" x="371" y="44" font-size="12" font-weight="700" text-anchor="middle">YOUTUBE · SHORT</text>
+          <text class="poppins ink" x="286" y="86" font-size="22" font-weight="700">IPA sound song</text>
+          <text class="jp muted" x="286" y="120" font-size="15">聞いて、まねして、口を慣らす</text>
+          <text class="poppins olive" x="286" y="157" font-size="15" font-weight="700">Open reference ↗</text>
+        </g>
+      </g>
+      <g id="Continue-Tongue-Twisters" transform="translate(74 816)">
+        <rect width="1474" height="160" rx="30" fill="#E4E8E2"/>
+        <g transform="translate(30 31)">
+          <text class="poppins ink" x="0" y="32" font-size="25" font-weight="700">That is enough for today.</text>
+          <text class="jp muted" x="0" y="66" font-size="16">「文字と音は同じではない」と分かれば十分です。次は、実際に口を動かします。</text>
+          <text class="poppins brand" x="0" y="98" font-size="15" font-weight="700">Review alphabet</text>
+        </g>
+        <g transform="translate(1040 42)">
+          <rect width="400" height="76" rx="38" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="poppins paper" x="200" y="48" font-size="20" font-weight="700" text-anchor="middle">Continue to Tongue Twisters</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

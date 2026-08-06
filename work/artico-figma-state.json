@@ -1,0 +1,119 @@
+{
+  "runId": "artico-landing-2026-07-22",
+  "fileKey": "01eAxNITu4T8AKcEOj0OjH",
+  "fileUrl": "https://www.figma.com/design/01eAxNITu4T8AKcEOj0OjH",
+  "phase": "phase7",
+  "step": "tongue-twister-module-ready-for-svg-import-figma-starter-limit-reached",
+  "entities": {
+    "collections": {
+      "primitives": "VariableCollectionId:4:2",
+      "color": "VariableCollectionId:4:3",
+      "spacing": "VariableCollectionId:4:4",
+      "radius": "VariableCollectionId:4:5"
+    },
+    "variables": {},
+    "styles": {
+      "Brand/Logo": "S:e3890febf60d590a0bc301c89f0da725f870283c,",
+      "Brand/Tagline": "S:764fad20720a0cfe459b08ecf09855c3273d8039,",
+      "Display/Hero": "S:5c2b03e94fb89e943409f24046310e6709d01bb8,",
+      "Body/Hero": "S:2c12656bf449a70df446ae62ec764a7cef53d111,",
+      "Label/Action": "S:244aac25f1f711886f6d11d46bf534f15fa76351,",
+      "Label/Navigation": "S:f75df8d197fcdcd4a718e42095dbad5dfe6c3b6e,"
+    },
+    "pages": {
+      "cover": "0:1",
+      "foundationsComponents": "8:4",
+      "landingPage": "8:5"
+    },
+    "components": {},
+    "screens": {},
+    "frames": {
+      "cover": "10:2"
+    },
+    "importAssets": {
+      "landingSvg": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-landing.svg",
+      "landingWidth": 2048,
+      "landingHeight": 4608,
+      "sectionOrder": [
+        "Hero",
+        "Why Artico",
+        "How Artico Works",
+        "Final CTA and Footer"
+      ],
+      "sourceSketches": [
+        "/var/folders/kc/1k_1r5ys2_lcf378bj9lrrzw0000gn/T/codex-clipboard-c29b0b77-b0de-4b8c-927e-167fa1583053.png",
+        "/var/folders/kc/1k_1r5ys2_lcf378bj9lrrzw0000gn/T/codex-clipboard-f9c4c099-c016-4cd1-8bb8-357bc02d85dd.png",
+        "/var/folders/kc/1k_1r5ys2_lcf378bj9lrrzw0000gn/T/codex-clipboard-3a58191b-6f91-4627-a508-911681cfb99b.png"
+      ],
+      "learningFlowSvg": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-learning-flow.svg",
+      "learningFlowWidth": 4288,
+      "learningFlowHeight": 1152,
+      "appLogicSpec": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-app-logic.md",
+      "learningScreens": [
+        "Learn / Orientation",
+        "Practice / Tongue Twisters / Slow Precision"
+      ],
+      "alphabetModuleSpec": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-alphabet-module.md",
+      "alphabetFlowSvg": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-alphabet-flow.svg",
+      "alphabetFlowWidth": 8768,
+      "alphabetFlowHeight": 1152,
+      "alphabetScreens": [
+        "Meet the 26 letters",
+        "Hear the Alphabet",
+        "Write the Alphabet",
+        "Side note: letters versus sounds"
+      ],
+      "alphabetPreviewPngs": [
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/alphabet-screen-01.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/alphabet-screen-02.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/alphabet-screen-03.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/alphabet-screen-04.png"
+      ],
+      "alphabetOverviewPreview": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/artico-alphabet-overview.png",
+      "tongueTwisterResearch": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-tongue-twister-research.md",
+      "tongueTwisterFlowSvg": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/artico-tongue-twister-flow.svg",
+      "tongueTwisterFlowWidth": 8768,
+      "tongueTwisterFlowHeight": 1152,
+      "tongueTwisterScreens": [
+        "Learn / Train transitions, not speed",
+        "Practice / 12-classic library",
+        "Practice / Red lorry guided drill",
+        "Practice / Suggested four-week rotation"
+      ],
+      "tongueTwisterPreviewPngs": [
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/tongue-screen-01.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/tongue-screen-02.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/tongue-screen-03.png",
+        "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/tongue-screen-04.png"
+      ],
+      "tongueTwisterOverviewPreview": "/Users/kavi/Documents/Codex/2026-07-22/fi/work/previews/artico-tongue-twister-overview.png"
+    }
+  },
+  "pendingValidations": [
+    "phase2:foundations-docs",
+    "phase3:components",
+    "phase4:svg-import",
+    "phase4:visual-qa",
+    "phase6:alphabet-svg-import",
+    "phase7:tongue-twister-svg-import"
+  ],
+  "completedSteps": [
+    "phase0",
+    "phase1",
+    "phase2:page-structure",
+    "phase2:cover",
+    "phase4:svg-package",
+    "phase4:all-landing-sections",
+    "phase4:local-visual-qa",
+    "phase5:app-logic-spec",
+    "phase5:orientation-screen",
+    "phase5:tongue-twister-practice-screen",
+    "phase5:local-visual-qa",
+    "phase6:alphabet-module-spec",
+    "phase6:alphabet-four-screen-flow",
+    "phase6:alphabet-local-visual-qa",
+    "phase7:tongue-twister-research",
+    "phase7:tongue-twister-four-screen-flow",
+    "phase7:tongue-twister-local-visual-qa"
+  ]
+}

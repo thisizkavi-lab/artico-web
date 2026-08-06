@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="4608" viewBox="0 0 2048 4608">
+  <title>Artico — Landing Page</title>
+  <desc>Premium English-learning landing page for Japanese adults.</desc>
+
+  <defs>
+    <style>
+      .poppins { font-family: Poppins, Arial, sans-serif; }
+      .ink { fill: #0F110F; }
+      .paper { fill: #FFFFFF; }
+      .hero-bg { fill: #F1F2F0; }
+      .olive { fill: #3A503F; }
+      .brand { fill: #706B08; }
+      .muted { fill: #D8DAD6; }
+      .line { stroke: #0F110F; stroke-width: 2; }
+    </style>
+    <pattern id="shirtGrid" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <path d="M0 0V36M18 0V36" stroke="#FFFFFF" stroke-opacity=".32" stroke-width="2"/>
+      <path d="M0 0H36M0 18H36" stroke="#FFFFFF" stroke-opacity=".32" stroke-width="2"/>
+    </pattern>
+    <clipPath id="heroClip"><rect x="0" y="156" width="2048" height="996"/></clipPath>
+    <filter id="softGlow" x="-30%" y="-120%" width="160%" height="340%">
+      <feGaussianBlur stdDeviation="72"/>
+    </filter>
+  </defs>
+
+  <!-- Header -->
+  <g id="Header">
+    <rect class="paper" width="2048" height="156"/>
+
+    <g id="Logo-Lockup" transform="translate(88 20)">
+      <text class="poppins brand" x="0" y="77" font-size="76" font-weight="800" letter-spacing="-5">artiCo</text>
+      <text class="poppins ink" x="50" y="120" font-size="20" font-weight="600">english but better...</text>
+    </g>
+
+    <g id="Language-Button" transform="translate(1445 38)">
+      <rect class="paper line" width="80" height="80" rx="40"/>
+      <g id="Language-Icon" transform="translate(18 18)" fill="none" stroke="#0F110F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 3h20v13H11l-7 7v-7H1V3Z"/>
+        <path d="M23 16h20v14h-5v9l-9-9h-6V16Z"/>
+        <path d="M7 8h9M11.5 5.5v11M28 21h10M33 18v10" stroke-width="2.2"/>
+      </g>
+    </g>
+
+    <g id="Primary-Header-Button" transform="translate(1559 38)">
+      <rect class="olive line" width="290" height="80" rx="40"/>
+      <text class="poppins paper" x="145" y="53" font-size="32" font-weight="600" text-anchor="middle">Get Started</text>
+    </g>
+
+    <g id="Login-Button" transform="translate(1864 38)">
+      <rect x="0" y="0" width="158" height="80" rx="40" fill="#A6A8A5" stroke="#0F110F" stroke-width="2"/>
+      <text class="poppins paper" x="79" y="53" font-size="32" font-weight="600" text-anchor="middle">Log in</text>
+    </g>
+  </g>
+
+  <!-- Hero -->
+  <g id="Hero" clip-path="url(#heroClip)">
+    <rect class="hero-bg" x="0" y="156" width="2048" height="996"/>
+
+    <!-- Abstract conversation scene: deliberately low contrast so the message leads. -->
+    <g id="Abstract-Conversation-Illustration" opacity=".56" transform="translate(0 156)">
+      <g id="Center-Speaker" class="muted">
+        <path d="M858 156c0-52 59-90 142-90 96 0 168 53 168 121 0 61-58 111-141 120l-46 46 7-51c-78-15-130-71-130-146Z"/>
+        <circle cx="1000" cy="472" r="74"/>
+        <path d="M817 764c33-134 99-212 190-212 95 0 165 80 202 212v232H817V764Z"/>
+        <path d="M841 703h329v293H841z" fill="url(#shirtGrid)"/>
+      </g>
+
+      <g id="Left-Listener" class="muted">
+        <circle cx="492" cy="544" r="75"/>
+        <path d="M270 841c53-143 137-219 250-219 91 0 161 52 214 155l-146 219H307l-37-155Z"/>
+        <path d="M475 626l146 216-61 41-152-216z" fill="#F1F2F0" opacity=".72"/>
+      </g>
+
+      <g id="Right-Listener" class="muted">
+        <circle cx="1395" cy="514" r="74"/>
+        <path d="M1210 803c31-129 97-205 198-205 106 0 190 82 251 245l-83 153h-329l-37-193Z"/>
+        <path d="M1284 654h210v342h-210z" fill="url(#shirtGrid)" opacity=".9"/>
+      </g>
+
+      <g id="Outer-Participants" class="muted">
+        <circle cx="182" cy="716" r="66"/>
+        <path d="M-40 975c44-132 122-199 235-199 78 0 144 42 198 127l-98 93H0l-40-21Z"/>
+        <circle cx="1772" cy="684" r="66"/>
+        <path d="M1600 875c47-88 112-132 194-132 103 0 185 72 246 217l-20 36h-345l-75-121Z"/>
+      </g>
+
+      <g id="Conversation-Lines" fill="none" stroke="#A6A8A5" stroke-width="3" stroke-linecap="round" opacity=".45">
+        <path d="M693 405c49-53 96-79 141-78M1176 352c45-54 89-82 132-83M1542 548c67-35 128-44 183-27M353 561c-62-35-121-42-176-19"/>
+        <path d="M1102 708l113 186M1064 739l86 142M1357 688l155 161M480 757l127 117"/>
+      </g>
+    </g>
+
+    <g id="Hero-Content">
+      <text class="poppins ink" x="1024" y="430" font-size="80" font-weight="800" text-anchor="middle" letter-spacing="-2">
+        <tspan x="1024" dy="0">One language, infinite</tspan>
+        <tspan x="1024" dy="106">possibilities.</tspan>
+      </text>
+
+      <text class="poppins ink" x="1024" y="637" font-size="30" font-weight="400" text-anchor="middle">
+        <tspan x="1024" dy="0">Turn English from a barrier into a multiplier — giving people in the</tspan>
+        <tspan x="1024" dy="48">world, the freedom to communicate, connect, and create in</tspan>
+        <tspan x="1024" dy="48">the most powerful language of our age.</tspan>
+      </text>
+
+      <g id="Hero-CTA" transform="translate(878 813)">
+        <rect class="olive line" width="292" height="80" rx="40"/>
+        <text class="poppins paper" x="146" y="53" font-size="32" font-weight="600" text-anchor="middle">Get Started</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Why Artico -->
+  <g id="Why-Artico" transform="translate(0 1152)">
+    <rect width="2048" height="1152" fill="#FFFDF5"/>
+    <rect x="150" y="134" width="1748" height="832" rx="54" fill="#E7E8E4"/>
+
+    <g id="Why-Copy">
+      <text class="poppins ink" x="523" y="352" font-size="88" font-weight="800" text-anchor="middle" letter-spacing="-2">why artiCo?</text>
+      <text class="poppins ink" x="523" y="467" font-size="38" font-weight="400" text-anchor="middle">
+        <tspan x="523" dy="0">this app doesn’t just</tspan>
+        <tspan x="523" dy="62">teach you English. it</tspan>
+        <tspan x="523" dy="62">shapes how you speak,</tspan>
+        <tspan x="523" dy="62">think, and carry yourself</tspan>
+        <tspan x="523" dy="62">— so that when you talk,</tspan>
+        <tspan x="523" dy="62">people feel it.</tspan>
+      </text>
+    </g>
+
+    <g id="Why-Preview" transform="translate(897 259)">
+      <rect width="847" height="580" rx="54" fill="#FCFFDA"/>
+      <g id="Why-Preview-Chrome" transform="translate(62 56)">
+        <rect width="170" height="38" rx="19" fill="#3A503F"/>
+        <text class="poppins paper" x="85" y="26" font-size="16" font-weight="600" text-anchor="middle">SOCIAL FLUENCY</text>
+        <circle cx="686" cy="19" r="18" fill="#FFFFFF" stroke="#0F110F" stroke-width="2"/>
+        <path d="M679 19h14M686 12v14" stroke="#0F110F" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g id="Why-Preview-Card" transform="translate(77 140)">
+        <rect width="693" height="335" rx="34" fill="#FFFFFF"/>
+        <text class="poppins ink" x="48" y="64" font-size="18" font-weight="600">MAKE IT YOURS</text>
+        <text class="poppins ink" x="48" y="127" font-size="42" font-weight="700">“Nice to meet you.”</text>
+        <text class="poppins ink" x="48" y="168" font-size="20" opacity=".58">はじめまして。でも、あなたらしく。</text>
+        <g transform="translate(48 212)" fill="#A6A8A5">
+          <rect width="12" height="38" rx="6"/><rect x="23" y="-10" width="12" height="58" rx="6"/>
+          <rect x="46" y="5" width="12" height="28" rx="6"/><rect x="69" y="-20" width="12" height="78" rx="6"/>
+          <rect x="92" y="-2" width="12" height="42" rx="6"/><rect x="115" y="8" width="12" height="22" rx="6"/>
+          <rect x="138" y="-14" width="12" height="66" rx="6"/><rect x="161" y="1" width="12" height="36" rx="6"/>
+        </g>
+        <g transform="translate(491 222)">
+          <rect width="154" height="62" rx="31" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="poppins paper" x="77" y="41" font-size="21" font-weight="600" text-anchor="middle">Try it aloud</text>
+        </g>
+      </g>
+      <text class="poppins ink" x="424" y="527" font-size="18" text-anchor="middle" opacity=".55">Sneak-peek animation area · listen → repeat → personalize</text>
+    </g>
+  </g>
+
+  <!-- How Artico Works -->
+  <g id="How-Artico-Works" transform="translate(0 2304)">
+    <rect width="2048" height="1152" fill="#FFFDF5"/>
+    <rect x="150" y="134" width="1748" height="832" rx="54" fill="#E7E8E4"/>
+
+    <g id="How-Copy">
+      <text class="poppins ink" x="523" y="306" font-size="74" font-weight="800" text-anchor="middle" letter-spacing="-1.5">
+        <tspan x="523" dy="0">How artiCo</tspan>
+        <tspan x="523" dy="92">works?</tspan>
+      </text>
+      <text class="poppins ink" x="228" y="486" font-size="28" font-weight="400">
+        <tspan x="228" dy="0">you start from scratch — the raw mechanics of</tspan>
+        <tspan x="228" dy="42">English: sounds, letters, tongue movement, and</tspan>
+        <tspan x="228" dy="42">rhythm. the basics most people skip, but the</tspan>
+        <tspan x="228" dy="42">real foundation of fluent speech.</tspan>
+        <tspan x="228" dy="58">from there, you move into social fluency:</tspan>
+        <tspan x="228" dy="42">greetings, emotions, stories, and everyday talk.</tspan>
+        <tspan x="228" dy="42">you stop memorizing and start connecting.</tspan>
+      </text>
+    </g>
+
+    <g id="How-Preview" transform="translate(897 259)">
+      <rect width="847" height="580" rx="54" fill="#FCFFDA"/>
+      <g transform="translate(62 58)">
+        <text class="poppins ink" x="0" y="28" font-size="18" font-weight="600" letter-spacing="2">YOUR LEARNING PATH</text>
+        <text class="poppins ink" x="0" y="72" font-size="24" opacity=".6">understand → practice → return → use</text>
+      </g>
+      <g id="Path-Steps" transform="translate(62 170)">
+        <path d="M44 42H645" stroke="#A6A8A5" stroke-width="5" stroke-linecap="round"/>
+        <g transform="translate(0 0)">
+          <circle cx="44" cy="42" r="42" fill="#3A503F"/>
+          <text class="poppins paper" x="44" y="52" font-size="26" font-weight="700" text-anchor="middle">1</text>
+          <text class="poppins ink" x="44" y="118" font-size="18" font-weight="600" text-anchor="middle">UNDERSTAND</text>
+          <text class="poppins ink" x="44" y="150" font-size="16" text-anchor="middle" opacity=".58">short theory</text>
+        </g>
+        <g transform="translate(201 0)">
+          <circle cx="44" cy="42" r="42" fill="#706B08"/>
+          <text class="poppins paper" x="44" y="52" font-size="26" font-weight="700" text-anchor="middle">2</text>
+          <text class="poppins ink" x="44" y="118" font-size="18" font-weight="600" text-anchor="middle">PRACTICE</text>
+          <text class="poppins ink" x="44" y="150" font-size="16" text-anchor="middle" opacity=".58">guided aloud</text>
+        </g>
+        <g transform="translate(402 0)">
+          <circle cx="44" cy="42" r="42" fill="#A6A8A5"/>
+          <text class="poppins paper" x="44" y="52" font-size="26" font-weight="700" text-anchor="middle">3</text>
+          <text class="poppins ink" x="44" y="118" font-size="18" font-weight="600" text-anchor="middle">RETURN</text>
+          <text class="poppins ink" x="44" y="150" font-size="16" text-anchor="middle" opacity=".58">spaced review</text>
+        </g>
+        <g transform="translate(603 0)">
+          <circle cx="44" cy="42" r="42" fill="#0F110F"/>
+          <text class="poppins paper" x="44" y="52" font-size="26" font-weight="700" text-anchor="middle">4</text>
+          <text class="poppins ink" x="44" y="118" font-size="18" font-weight="600" text-anchor="middle">USE</text>
+          <text class="poppins ink" x="44" y="150" font-size="16" text-anchor="middle" opacity=".58">real life</text>
+        </g>
+      </g>
+      <g transform="translate(62 408)">
+        <rect width="723" height="100" rx="30" fill="#FFFFFF"/>
+        <text class="poppins ink" x="34" y="42" font-size="18" font-weight="600">TODAY’S GUIDANCE</text>
+        <text class="poppins ink" x="34" y="74" font-size="18" opacity=".62">Find a quiet place. Put on headphones. Speak without rushing.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CTA and Footer -->
+  <g id="Final-CTA-and-Footer" transform="translate(0 3456)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <ellipse cx="670" cy="300" rx="620" ry="128" fill="#A6A8A5" opacity=".34" filter="url(#softGlow)"/>
+
+    <text class="poppins ink" x="72" y="331" font-size="76" font-weight="800" letter-spacing="-1.8">your English journey starts here.</text>
+    <g id="Final-CTA" transform="translate(1274 249)">
+      <rect width="292" height="80" rx="40" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+      <text class="poppins paper" x="146" y="53" font-size="31" font-weight="600" text-anchor="middle">Get Started</text>
+    </g>
+
+    <g id="Footer" transform="translate(160 601)">
+      <g id="Footer-Brand">
+        <text class="poppins brand" x="0" y="79" font-size="76" font-weight="800" letter-spacing="-5">artiCo</text>
+        <text class="poppins ink" x="30" y="118" font-size="19" font-weight="600">english but better...</text>
+        <g id="Social-Icons" transform="translate(0 156)" fill="none" stroke="#A6A8A5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 0l38 50M50 0L12 50"/>
+          <path d="M86 14c0-10 8-18 18-18h24c10 0 18 8 18 18v22c0 10-8 18-18 18h-24c-10 0-18-8-18-18V14Z"/>
+          <circle cx="105" cy="27" r="3" fill="#A6A8A5" stroke="none"/><circle cx="127" cy="27" r="3" fill="#A6A8A5" stroke="none"/>
+          <path d="M179 2h52c8 0 14 6 14 14v26c0 8-6 14-14 14h-52c-8 0-14-6-14-14V16c0-8 6-14 14-14Z"/>
+          <path d="M197 16l25 13-25 13V16Z" fill="#A6A8A5" stroke="none"/>
+        </g>
+      </g>
+
+      <g id="Footer-Explore" transform="translate(620 0)">
+        <text class="poppins ink" font-size="29" font-weight="700">Explore</text>
+        <text class="poppins ink" y="78" font-size="24">How it works</text>
+        <text class="poppins ink" y="127" font-size="24">Course</text>
+        <text class="poppins ink" y="176" font-size="24">Philosophy</text>
+      </g>
+      <g id="Footer-About" transform="translate(910 0)">
+        <text class="poppins ink" font-size="29" font-weight="700">About us</text>
+        <text class="poppins ink" y="78" font-size="24">About Artico</text>
+        <text class="poppins ink" y="127" font-size="24">Contact</text>
+      </g>
+      <g id="Footer-Resources" transform="translate(1208 0)">
+        <text class="poppins ink" font-size="29" font-weight="700">Resources</text>
+        <text class="poppins ink" y="78" font-size="24">Learning guide</text>
+        <text class="poppins ink" y="127" font-size="24">FAQs</text>
+      </g>
+      <g id="Footer-Support" transform="translate(1500 0)">
+        <text class="poppins ink" font-size="29" font-weight="700">Support</text>
+        <text class="poppins ink" y="78" font-size="24">Help</text>
+        <text class="poppins ink" y="127" font-size="24">Contact us</text>
+      </g>
+
+      <g id="Footer-Legal" transform="translate(0 360)">
+        <text class="poppins ink" x="0" y="0" font-size="22">© 2026 Artico, Inc.</text>
+        <text class="poppins ink" x="0" y="48" font-size="20">Terms of service</text>
+        <text class="poppins ink" x="198" y="48" font-size="20">Privacy</text>
+      </g>
+    </g>
+  </g>
+</svg>

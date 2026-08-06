@@ -1,0 +1,529 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8768" height="1152" viewBox="0 0 8768 1152">
+  <title>Artico — Tongue Twister module</title>
+  <desc>Four coordinated desktop screens: Learn introduction, curated classic set, individual guided drill, and a suggested four-week routine.</desc>
+  <defs>
+    <style>
+      .poppins { font-family: Poppins, Arial, sans-serif; }
+      .jp { font-family: "Noto Sans JP", "Hiragino Sans", Arial, sans-serif; }
+      .ink { fill: #0F110F; }
+      .paper { fill: #FFFFFF; }
+      .warm { fill: #FFFDF5; }
+      .surface { fill: #F1F2F0; }
+      .muted { fill: #737873; }
+      .olive { fill: #3A503F; }
+      .brand { fill: #706B08; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F110F" flood-opacity=".07"/>
+    </filter>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#263A2C"/>
+      <stop offset="1" stop-color="#58705E"/>
+    </linearGradient>
+    <g id="logo">
+      <text class="poppins brand" x="0" y="52" font-size="50" font-weight="800" letter-spacing="-3">artiCo</text>
+      <text class="poppins ink" x="25" y="79" font-size="14" font-weight="600">english but better...</text>
+    </g>
+    <g id="account">
+      <circle cx="31" cy="31" r="30" fill="none" stroke="#0F110F" stroke-width="3"/>
+      <circle cx="31" cy="24" r="11" fill="none" stroke="#0F110F" stroke-width="3"/>
+      <path d="M12 50c4-12 10-17 19-17s16 5 20 17" fill="none" stroke="#0F110F" stroke-width="3"/>
+    </g>
+    <g id="header-learn">
+      <rect width="2048" height="112" fill="#FFFFFF"/>
+      <line x1="0" y1="111" x2="2048" y2="111" stroke="#D8DAD6"/>
+      <use href="#logo" x="42" y="18"/>
+      <g transform="translate(748 16)">
+        <rect width="552" height="80" rx="40" fill="#FFFFFF" stroke="#A6A8A5" stroke-width="2"/>
+        <rect x="10" y="10" width="254" height="60" rx="30" fill="#F1F2F0"/>
+        <circle cx="69" cy="40" r="17" fill="#0F110F"/>
+        <path d="M49 60c9-17 30-17 40 0" fill="#0F110F"/>
+        <text class="poppins ink" x="145" y="52" font-size="27" font-weight="700">Learn</text>
+        <circle cx="343" cy="40" r="16" fill="none" stroke="#3A503F" stroke-width="3"/>
+        <path d="M337 34l12 12M349 34l-12 12" stroke="#3A503F" stroke-width="3" stroke-linecap="round"/>
+        <text class="poppins olive" x="388" y="52" font-size="27" font-weight="600">Practice</text>
+      </g>
+      <use href="#account" x="1901" y="25"/>
+    </g>
+    <g id="header-practice">
+      <rect width="2048" height="112" fill="#FFFFFF"/>
+      <line x1="0" y1="111" x2="2048" y2="111" stroke="#D8DAD6"/>
+      <use href="#logo" x="42" y="18"/>
+      <g transform="translate(748 16)">
+        <rect width="552" height="80" rx="40" fill="#FFFFFF" stroke="#A6A8A5" stroke-width="2"/>
+        <circle cx="69" cy="40" r="17" fill="#0F110F"/>
+        <path d="M49 60c9-17 30-17 40 0" fill="#0F110F"/>
+        <text class="poppins ink" x="145" y="52" font-size="27" font-weight="600">Learn</text>
+        <rect x="288" y="10" width="254" height="60" rx="30" fill="#E4E8E2"/>
+        <circle cx="343" cy="40" r="16" fill="none" stroke="#3A503F" stroke-width="3"/>
+        <path d="M337 34l12 12M349 34l-12 12" stroke="#3A503F" stroke-width="3" stroke-linecap="round"/>
+        <text class="poppins olive" x="388" y="52" font-size="27" font-weight="700">Practice</text>
+      </g>
+      <use href="#account" x="1901" y="25"/>
+    </g>
+    <g id="sound-badge-rl">
+      <rect width="84" height="34" rx="17" fill="#FCFFDA"/>
+      <text class="poppins brand" x="42" y="23" font-size="14" font-weight="700" text-anchor="middle">R / L</text>
+    </g>
+    <g id="play-small">
+      <circle cx="28" cy="28" r="28" fill="#3A503F"/>
+      <path d="M22 17l18 11-18 11z" fill="#FFFFFF"/>
+    </g>
+  </defs>
+
+  <rect width="8768" height="1152" fill="#D8DAD6"/>
+
+  <!-- SCREEN 1: LEARN INTRO -->
+  <g id="Screen-01-Learn-Introduction">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#header-learn"/>
+    <g transform="translate(0 112)">
+      <rect width="420" height="1040" fill="#FFFDF5"/>
+      <line x1="419" y1="0" x2="419" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="34" y="58" font-size="17" font-weight="700" letter-spacing="1.7">FREE FOUNDATION</text>
+      <text class="poppins ink" x="34" y="105" font-size="27" font-weight="700">Tongue Twisters</text>
+      <text class="jp muted" x="34" y="137" font-size="15">3つの短い説明</text>
+      <g transform="translate(26 176)">
+        <rect width="368" height="60" rx="17" fill="#E4E8E2"/>
+        <rect width="6" height="60" rx="3" fill="#3A503F"/>
+        <circle cx="34" cy="30" r="14" fill="#3A503F"/>
+        <text class="poppins paper" x="34" y="36" font-size="14" font-weight="700" text-anchor="middle">1</text>
+        <text class="poppins ink" x="64" y="38" font-size="20" font-weight="700">Why this works</text>
+        <text class="poppins ink" x="34" y="102" font-size="19">2  The 12-classic set</text>
+        <text class="poppins ink" x="34" y="160" font-size="19">3  How to practise</text>
+      </g>
+      <g transform="translate(26 856)">
+        <rect width="368" height="132" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="22" y="34" font-size="14" font-weight="700" letter-spacing="1.2">NEXT IN PRACTICE</text>
+        <text class="poppins ink" x="22" y="70" font-size="20" font-weight="700">Classic Set · 12 drills</text>
+        <text class="jp muted" x="22" y="98" font-size="14">定番だけを、目的別に練習します</text>
+      </g>
+    </g>
+    <g transform="translate(420 112)">
+      <rect width="1628" height="1040" fill="#FFFFFF"/>
+      <g transform="translate(74 54)">
+        <text class="poppins brand" x="0" y="18" font-size="17" font-weight="700" letter-spacing="2.2">TONGUE TWISTERS · INTRO</text>
+        <text class="poppins ink" x="0" y="96" font-size="62" font-weight="800" letter-spacing="-1.8">Train transitions, not speed.</text>
+        <text class="jp ink" x="0" y="148" font-size="21" opacity=".7">早口で言う競争ではありません。英語の音から次の音へ、正確に切り替える練習です。</text>
+      </g>
+      <g transform="translate(74 246)">
+        <rect width="486" height="596" rx="32" fill="#FCFFDA"/>
+        <text class="poppins brand" x="34" y="72" font-size="64" font-weight="800">12</text>
+        <text class="poppins ink" x="128" y="69" font-size="27" font-weight="700">classic lines</text>
+        <line x1="34" y1="104" x2="452" y2="104" stroke="#C8CCA6"/>
+        <text class="poppins brand" x="34" y="178" font-size="64" font-weight="800">4</text>
+        <text class="poppins ink" x="104" y="175" font-size="27" font-weight="700">training groups</text>
+        <line x1="34" y1="210" x2="452" y2="210" stroke="#C8CCA6"/>
+        <text class="poppins brand" x="34" y="284" font-size="64" font-weight="800">1</text>
+        <text class="poppins ink" x="90" y="281" font-size="27" font-weight="700">repeatable loop</text>
+        <g transform="translate(34 338)">
+          <rect width="418" height="196" rx="24" fill="#FFFFFF"/>
+          <text class="poppins ink" x="24" y="42" font-size="20" font-weight="700">What this practice does</text>
+          <circle cx="30" cy="82" r="5" fill="#3A503F"/><text class="jp ink" x="48" y="89" font-size="16">音の切り替えを明確にする</text>
+          <circle cx="30" cy="120" r="5" fill="#3A503F"/><text class="jp ink" x="48" y="127" font-size="16">子音の間に母音を足さない</text>
+          <circle cx="30" cy="158" r="5" fill="#3A503F"/><text class="jp ink" x="48" y="165" font-size="16">英語のリズムで口を動かす</text>
+        </g>
+      </g>
+      <g transform="translate(594 246)">
+        <text class="poppins ink" x="0" y="30" font-size="24" font-weight="700">A complete set, without an endless feed</text>
+        <g transform="translate(0 62)">
+          <rect width="454" height="190" rx="28" fill="#F1F2F0"/>
+          <rect x="24" y="24" width="54" height="54" rx="18" fill="#3A503F"/>
+          <text class="poppins paper" x="51" y="60" font-size="22" font-weight="800" text-anchor="middle">01</text>
+          <text class="poppins ink" x="98" y="55" font-size="22" font-weight="700">R/L + sound contrasts</text>
+          <text class="jp muted" x="24" y="108" font-size="16">日本語話者が迷いやすい音を、</text>
+          <text class="jp muted" x="24" y="135" font-size="16">短い定番フレーズで切り替えます。</text>
+          <text class="poppins brand" x="24" y="170" font-size="14" font-weight="700">3 CLASSICS</text>
+        </g>
+        <g transform="translate(480 62)">
+          <rect width="454" height="190" rx="28" fill="#FFFDF5" stroke="#D8DAD6"/>
+          <rect x="24" y="24" width="54" height="54" rx="18" fill="#706B08"/>
+          <text class="poppins paper" x="51" y="60" font-size="22" font-weight="800" text-anchor="middle">02</text>
+          <text class="poppins ink" x="98" y="55" font-size="22" font-weight="700">Clean consonants</text>
+          <text class="jp muted" x="24" y="108" font-size="16">P・B・W・CHを、余分な母音を</text>
+          <text class="jp muted" x="24" y="135" font-size="16">足さずに明確に出します。</text>
+          <text class="poppins brand" x="24" y="170" font-size="14" font-weight="700">3 CLASSICS</text>
+        </g>
+        <g transform="translate(0 278)">
+          <rect width="454" height="190" rx="28" fill="#FFFDF5" stroke="#D8DAD6"/>
+          <rect x="24" y="24" width="54" height="54" rx="18" fill="#706B08"/>
+          <text class="poppins paper" x="51" y="60" font-size="22" font-weight="800" text-anchor="middle">03</text>
+          <text class="poppins ink" x="98" y="55" font-size="22" font-weight="700">Clusters, no extra vowel</text>
+          <text class="jp muted" x="24" y="108" font-size="16">SCR・SL・SN・FR・FLを一つの</text>
+          <text class="jp muted" x="24" y="135" font-size="16">かたまりとして動かします。</text>
+          <text class="poppins brand" x="24" y="170" font-size="14" font-weight="700">3 CLASSICS</text>
+        </g>
+        <g transform="translate(480 278)">
+          <rect width="454" height="190" rx="28" fill="#F1F2F0"/>
+          <rect x="24" y="24" width="54" height="54" rx="18" fill="#3A503F"/>
+          <text class="poppins paper" x="51" y="60" font-size="22" font-weight="800" text-anchor="middle">04</text>
+          <text class="poppins ink" x="98" y="55" font-size="22" font-weight="700">Rhythm + vowel movement</text>
+          <text class="jp muted" x="24" y="108" font-size="16">子音を保ったまま母音を変え、</text>
+          <text class="jp muted" x="24" y="135" font-size="16">英語の強弱でつなげます。</text>
+          <text class="poppins brand" x="24" y="170" font-size="14" font-weight="700">3 CLASSICS</text>
+        </g>
+        <g transform="translate(0 500)">
+          <rect width="934" height="96" rx="24" fill="#FFFFFF" stroke="#D8DAD6"/>
+          <text class="poppins ink" x="24" y="38" font-size="18" font-weight="700">One part of pronunciation training — not a fluency promise</text>
+          <text class="jp muted" x="24" y="68" font-size="15">会話練習の代わりではありません。選んだ音の動きを、繰り返せる形にします。</text>
+        </g>
+      </g>
+      <g transform="translate(74 912)">
+        <text class="jp muted" x="0" y="48" font-size="17">Learn 1 of 3</text>
+        <g transform="translate(1110 0)">
+          <rect width="364" height="72" rx="36" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="182" y="46" font-size="20" font-weight="700" text-anchor="middle">12本のセットを見る</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 2: PRACTICE LIBRARY -->
+  <g id="Screen-02-Practice-Library" transform="translate(2240 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#header-practice"/>
+    <g transform="translate(0 112)">
+      <rect width="352" height="1040" fill="#FFFDF5"/>
+      <line x1="351" y1="0" x2="351" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="30" y="58" font-size="17" font-weight="700" letter-spacing="1.7">PRACTICE MODE</text>
+      <text class="poppins ink" x="30" y="105" font-size="26" font-weight="700">Tongue Twisters</text>
+      <text class="jp muted" x="30" y="137" font-size="14">12本の定番セット</text>
+      <g transform="translate(22 178)">
+        <rect width="308" height="58" rx="17" fill="#E4E8E2"/>
+        <rect width="6" height="58" rx="3" fill="#3A503F"/>
+        <text class="poppins ink" x="26" y="37" font-size="19" font-weight="700">All classics</text>
+        <text class="poppins ink" x="26" y="98" font-size="18">R/L + contrasts</text>
+        <text class="poppins ink" x="26" y="154" font-size="18">Clean consonants</text>
+        <text class="poppins ink" x="26" y="210" font-size="18">Clusters</text>
+        <text class="poppins ink" x="26" y="266" font-size="18">Rhythm + vowels</text>
+      </g>
+      <g transform="translate(22 852)">
+        <rect width="308" height="136" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="20" y="34" font-size="13" font-weight="700" letter-spacing="1.1">SUGGESTED SESSION</text>
+        <text class="poppins ink" x="20" y="69" font-size="19" font-weight="700">One focus + two mixed</text>
+        <text class="jp muted" x="20" y="98" font-size="14">目安 8–10分 · 速度より明瞭さ</text>
+      </g>
+    </g>
+    <g transform="translate(352 112)">
+      <rect width="1696" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(64 46)">
+        <text class="poppins brand" x="0" y="18" font-size="16" font-weight="700" letter-spacing="2">CLASSIC SET · 12 DRILLS</text>
+        <text class="poppins ink" x="0" y="84" font-size="52" font-weight="800" letter-spacing="-1.2">12 classics. Nothing random.</text>
+        <text class="jp muted" x="0" y="128" font-size="19">定番の言い回しだけを、発音の目的別に整理しました。最初はゆっくり、明瞭さを保てたら自然な速さへ。</text>
+      </g>
+      <g transform="translate(64 210)">
+        <g>
+          <rect width="760" height="326" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect x="24" y="22" width="54" height="54" rx="18" fill="#3A503F"/>
+          <text class="poppins paper" x="51" y="58" font-size="22" font-weight="800" text-anchor="middle">01</text>
+          <text class="poppins ink" x="96" y="48" font-size="23" font-weight="700">Japanese-priority contrasts</text>
+          <text class="jp muted" x="96" y="75" font-size="14">音の違いを、短い切り替えで感じる</text>
+          <line x1="24" y1="100" x2="736" y2="100" stroke="#D8DAD6"/>
+          <use href="#sound-badge-rl" x="24" y="121"/>
+          <text class="poppins ink" x="126" y="145" font-size="19" font-weight="700">Red lorry, yellow lorry.</text>
+          <text class="poppins brand" x="702" y="145" font-size="15" font-weight="700" text-anchor="end">6–8 MIN</text>
+          <rect x="24" y="171" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="194" font-size="14" font-weight="700" text-anchor="middle">S / SH</text>
+          <text class="poppins ink" x="126" y="195" font-size="19" font-weight="700">She sells seashells by the seashore.</text>
+          <rect x="24" y="221" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="244" font-size="14" font-weight="700" text-anchor="middle">TH / F</text>
+          <text class="poppins ink" x="126" y="245" font-size="19" font-weight="700">Three free throws.</text>
+          <rect x="24" y="274" width="712" height="34" rx="17" fill="#F1F2F0"/>
+          <text class="jp muted" x="42" y="297" font-size="14">おすすめ開始: Red lorry · R/Lを孤立音ではなく切り替えで練習</text>
+        </g>
+        <g transform="translate(792 0)">
+          <rect width="760" height="326" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect x="24" y="22" width="54" height="54" rx="18" fill="#706B08"/>
+          <text class="poppins paper" x="51" y="58" font-size="22" font-weight="800" text-anchor="middle">02</text>
+          <text class="poppins ink" x="96" y="48" font-size="23" font-weight="700">Clean consonants</text>
+          <text class="jp muted" x="96" y="75" font-size="14">破裂と語尾を、余分な母音なしで出す</text>
+          <line x1="24" y1="100" x2="736" y2="100" stroke="#D8DAD6"/>
+          <rect x="24" y="121" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="144" font-size="14" font-weight="700" text-anchor="middle">P</text>
+          <text class="poppins ink" x="126" y="145" font-size="19" font-weight="700">Peter Piper picked a peck of pickled peppers.</text>
+          <rect x="24" y="171" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="194" font-size="14" font-weight="700" text-anchor="middle">B + END</text>
+          <text class="poppins ink" x="126" y="195" font-size="19" font-weight="700">A big black bug bit a big black bear.</text>
+          <rect x="24" y="221" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="244" font-size="14" font-weight="700" text-anchor="middle">W / CH</text>
+          <text class="poppins ink" x="126" y="245" font-size="18" font-weight="700">If two witches were watching two watches…</text>
+          <rect x="24" y="274" width="712" height="34" rx="17" fill="#F1F2F0"/>
+          <text class="jp muted" x="42" y="297" font-size="14">口を閉じる・開く・息を出す動きを、明確に保ちます</text>
+        </g>
+        <g transform="translate(0 356)">
+          <rect width="760" height="326" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect x="24" y="22" width="54" height="54" rx="18" fill="#706B08"/>
+          <text class="poppins paper" x="51" y="58" font-size="22" font-weight="800" text-anchor="middle">03</text>
+          <text class="poppins ink" x="96" y="48" font-size="23" font-weight="700">Clusters without extra vowels</text>
+          <text class="jp muted" x="96" y="75" font-size="14">子音のかたまりを、分解せずにつなぐ</text>
+          <line x1="24" y1="100" x2="736" y2="100" stroke="#D8DAD6"/>
+          <rect x="24" y="121" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="144" font-size="14" font-weight="700" text-anchor="middle">SCR</text>
+          <text class="poppins ink" x="126" y="145" font-size="19" font-weight="700">I scream, you scream, we all scream for ice cream.</text>
+          <rect x="24" y="171" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="194" font-size="14" font-weight="700" text-anchor="middle">SL / SN</text>
+          <text class="poppins ink" x="126" y="195" font-size="19" font-weight="700">Six slippery snails slid slowly seaward.</text>
+          <rect x="24" y="221" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="244" font-size="14" font-weight="700" text-anchor="middle">FR / FL</text>
+          <text class="poppins ink" x="126" y="245" font-size="19" font-weight="700">Freshly fried fresh flesh.</text>
+          <rect x="24" y="274" width="712" height="34" rx="17" fill="#F1F2F0"/>
+          <text class="jp muted" x="42" y="297" font-size="14">例: “su-cream” にせず、/skr/ を一つの動きにします</text>
+        </g>
+        <g transform="translate(792 356)">
+          <rect width="760" height="326" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect x="24" y="22" width="54" height="54" rx="18" fill="#3A503F"/>
+          <text class="poppins paper" x="51" y="58" font-size="22" font-weight="800" text-anchor="middle">04</text>
+          <text class="poppins ink" x="96" y="48" font-size="23" font-weight="700">Rhythm + vowel movement</text>
+          <text class="jp muted" x="96" y="75" font-size="14">同じ拍の中で、母音と強弱を切り替える</text>
+          <line x1="24" y1="100" x2="736" y2="100" stroke="#D8DAD6"/>
+          <rect x="24" y="121" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="144" font-size="14" font-weight="700" text-anchor="middle">B / T</text>
+          <text class="poppins ink" x="126" y="145" font-size="19" font-weight="700">Betty Botter bought some butter.</text>
+          <rect x="24" y="171" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="194" font-size="14" font-weight="700" text-anchor="middle">W / CH</text>
+          <text class="poppins ink" x="126" y="195" font-size="18" font-weight="700">How much wood would a woodchuck chuck…</text>
+          <rect x="24" y="221" width="84" height="34" rx="17" fill="#FCFFDA"/><text class="poppins brand" x="66" y="244" font-size="14" font-weight="700" text-anchor="middle">YOO / K</text>
+          <text class="poppins ink" x="126" y="245" font-size="19" font-weight="700">Unique New York.</text>
+          <rect x="24" y="274" width="712" height="34" rx="17" fill="#F1F2F0"/>
+          <text class="jp muted" x="42" y="297" font-size="14">速さではなく、強い音と弱い音の流れを保ちます</text>
+        </g>
+      </g>
+      <g transform="translate(64 918)">
+        <text class="jp muted" x="0" y="45" font-size="16">追加候補は「More classics」に分離 · MVPでは12本を繰り返す</text>
+        <g transform="translate(1190 0)">
+          <rect width="362" height="68" rx="34" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="181" y="43" font-size="19" font-weight="700" text-anchor="middle">最初のドリルを開く</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 3: INDIVIDUAL DRILL -->
+  <g id="Screen-03-Individual-Drill" transform="translate(4480 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#header-practice"/>
+    <g transform="translate(0 112)">
+      <rect width="352" height="1040" fill="#FFFDF5"/>
+      <line x1="351" y1="0" x2="351" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="30" y="58" font-size="17" font-weight="700" letter-spacing="1.7">PRACTICE · DRILL 01</text>
+      <text class="poppins ink" x="30" y="105" font-size="26" font-weight="700">R/L + contrasts</text>
+      <g transform="translate(22 160)">
+        <rect width="308" height="78" rx="18" fill="#E4E8E2"/>
+        <rect width="6" height="78" rx="3" fill="#3A503F"/>
+        <text class="poppins ink" x="26" y="34" font-size="18" font-weight="700">Red lorry, yellow lorry.</text>
+        <text class="jp muted" x="26" y="59" font-size="13">R / L · 目安 6–8分</text>
+        <text class="poppins ink" x="26" y="126" font-size="17">She sells seashells…</text>
+        <text class="poppins ink" x="26" y="180" font-size="17">Three free throws.</text>
+      </g>
+      <g transform="translate(22 792)">
+        <rect width="308" height="196" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="20" y="34" font-size="13" font-weight="700" letter-spacing="1.1">RULE FOR EVERY DRILL</text>
+        <text class="poppins ink" x="20" y="74" font-size="20" font-weight="700">Accuracy before speed.</text>
+        <text class="jp muted" x="20" y="106" font-size="14">音が崩れたら、速度を戻します。</text>
+        <text class="jp muted" x="20" y="134" font-size="14">覚えることより、動きを整える。</text>
+        <text class="jp muted" x="20" y="170" font-size="14">スコアはありません。</text>
+      </g>
+    </g>
+    <g transform="translate(352 112)">
+      <rect width="1696" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(64 42)">
+        <text class="poppins brand" x="0" y="18" font-size="16" font-weight="700" letter-spacing="2">JAPANESE PRIORITY · R / L</text>
+        <text class="poppins ink" x="0" y="92" font-size="54" font-weight="800" letter-spacing="-1.4">Red lorry, yellow lorry.</text>
+        <use href="#sound-badge-rl" x="0" y="118"/>
+        <rect x="100" y="118" width="146" height="34" rx="17" fill="#F1F2F0"/>
+        <text class="poppins muted" x="173" y="141" font-size="13" font-weight="700" text-anchor="middle">6–8 MINUTES</text>
+      </g>
+      <g transform="translate(64 238)">
+        <g>
+          <rect width="948" height="526" rx="32" fill="#FFFFFF" filter="url(#shadow)"/>
+          <g transform="translate(24 24)">
+            <rect width="900" height="252" rx="24" fill="url(#wave)"/>
+            <text class="poppins paper" x="28" y="42" font-size="15" font-weight="700" letter-spacing="1.2">APPROVED AUDIO · PLACEHOLDER</text>
+            <use href="#play-small" x="48" y="100"/>
+            <text class="poppins paper" x="124" y="123" font-size="22" font-weight="700">Model · natural</text>
+            <g transform="translate(338 104)" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".8">
+              <path d="M0 24v-12M20 30V6M40 36V0M60 28V8M80 38V-2M100 26V10M120 34V2M140 24V12M160 40V-4M180 30V6M200 36V0M220 26V10M240 34V2M260 22V14M280 38V-2M300 28V8M320 34V2M340 26V10M360 38V-2M380 30V6M400 34V2M420 24V12M440 38V-2"/>
+            </g>
+            <rect x="28" y="202" width="844" height="8" rx="4" fill="#FFFFFF" opacity=".25"/>
+            <rect x="28" y="202" width="214" height="8" rx="4" fill="#FFFFFF" opacity=".82"/>
+            <text class="poppins paper" x="28" y="234" font-size="13" opacity=".75">00:04</text>
+            <text class="poppins paper" x="872" y="234" font-size="13" text-anchor="end" opacity=".75">00:12</text>
+          </g>
+          <g transform="translate(24 300)">
+            <rect width="286" height="58" rx="29" fill="#E4E8E2"/>
+            <text class="poppins olive" x="143" y="37" font-size="18" font-weight="700" text-anchor="middle">Model</text>
+            <rect x="306" width="286" height="58" rx="29" fill="#F1F2F0"/>
+            <text class="poppins ink" x="449" y="37" font-size="18" font-weight="700" text-anchor="middle">Slow</text>
+            <rect x="612" width="286" height="58" rx="29" fill="#F1F2F0"/>
+            <text class="poppins ink" x="755" y="37" font-size="18" font-weight="700" text-anchor="middle">Natural</text>
+          </g>
+          <g transform="translate(24 388)">
+            <text class="poppins muted" x="0" y="18" font-size="14" font-weight="700" letter-spacing="1.2">CHUNK THE MOVEMENT</text>
+            <text class="poppins ink" x="0" y="74" font-size="34" font-weight="800">RED LORRY</text>
+            <text class="poppins brand" x="238" y="74" font-size="34" font-weight="800">/</text>
+            <text class="poppins ink" x="274" y="74" font-size="34" font-weight="800">YELLOW LORRY</text>
+            <text class="jp muted" x="0" y="110" font-size="15">R: 舌先を上につけない　·　L: 舌先を上の歯ぐきにつけて離す</text>
+          </g>
+        </g>
+        <g transform="translate(980 0)">
+          <rect width="572" height="158" rx="28" fill="#FCFFDA"/>
+          <text class="poppins brand" x="24" y="38" font-size="14" font-weight="700" letter-spacing="1.2">WHY THIS MATTERS</text>
+          <text class="jp ink" x="24" y="76" font-size="17" font-weight="600">日本語ではR/Lを一つのカテゴリーとして</text>
+          <text class="jp ink" x="24" y="103" font-size="17" font-weight="600">聞きやすいため、英語では切り替えが難しくなります。</text>
+          <text class="jp muted" x="24" y="136" font-size="14">孤立音ではなく、単語の流れの中で練習します。</text>
+          <g transform="translate(0 184)">
+            <rect width="572" height="342" rx="28" fill="#FFFFFF" filter="url(#shadow)"/>
+            <text class="poppins ink" x="24" y="42" font-size="21" font-weight="700">Today’s guided sequence</text>
+            <g transform="translate(24 68)">
+              <circle cx="18" cy="18" r="18" fill="#3A503F"/><text class="poppins paper" x="18" y="24" font-size="13" font-weight="700" text-anchor="middle">1</text>
+              <text class="poppins ink" x="52" y="24" font-size="17" font-weight="700">Listen once</text><text class="jp muted" x="250" y="24" font-size="14">まだ話さない</text>
+              <circle cx="18" cy="75" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="81" font-size="13" font-weight="700" text-anchor="middle">2</text>
+              <text class="poppins ink" x="52" y="81" font-size="17" font-weight="700">Slow ×3</text><text class="jp muted" x="250" y="81" font-size="14">区切って明確に</text>
+              <circle cx="18" cy="132" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="138" font-size="13" font-weight="700" text-anchor="middle">3</text>
+              <text class="poppins ink" x="52" y="138" font-size="17" font-weight="700">With rhythm ×3</text><text class="jp muted" x="250" y="138" font-size="14">明瞭さを保つ</text>
+              <circle cx="18" cy="189" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="195" font-size="13" font-weight="700" text-anchor="middle">4</text>
+              <text class="poppins ink" x="52" y="195" font-size="17" font-weight="700">Transfer ×2</text><text class="jp muted" x="250" y="195" font-size="14">日常文へ移す</text>
+            </g>
+            <rect x="24" y="286" width="524" height="34" rx="17" fill="#F1F2F0"/>
+            <text class="jp muted" x="286" y="309" font-size="14" text-anchor="middle">音が崩れたら、Slowに戻る</text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(64 790)">
+        <rect width="948" height="122" rx="26" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="24" y="34" font-size="13" font-weight="700" letter-spacing="1.2">TRANSFER TO NORMAL ENGLISH</text>
+        <text class="poppins ink" x="24" y="72" font-size="20" font-weight="700">“I really like it.”</text>
+        <text class="poppins ink" x="340" y="72" font-size="20" font-weight="700">“Turn left at the light.”</text>
+        <text class="jp muted" x="24" y="101" font-size="14">同じR/Lの動きを、普通の文でも2回ずつ使います。</text>
+        <g transform="translate(980 0)">
+          <rect width="572" height="122" rx="26" fill="#FFFDF5" stroke="#D8DAD6"/>
+          <text class="poppins ink" x="24" y="38" font-size="19" font-weight="700">Stop with clarity intact.</text>
+          <text class="jp muted" x="24" y="69" font-size="14">今日は速く言い切る必要はありません。</text>
+          <text class="jp muted" x="24" y="96" font-size="14">次のセッションで、また同じ動きに戻ります。</text>
+        </g>
+      </g>
+      <g transform="translate(64 934)">
+        <text class="jp muted" x="0" y="43" font-size="16">自分で録音する機能は後期候補 · MVPは聞く・動かす・戻る</text>
+        <g transform="translate(1190 0)">
+          <rect width="362" height="68" rx="34" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="181" y="43" font-size="19" font-weight="700" text-anchor="middle">次のセッションへ保存</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCREEN 4: ROUTINE -->
+  <g id="Screen-04-Four-Week-Rotation" transform="translate(6720 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+    <use href="#header-practice"/>
+    <g transform="translate(0 112)">
+      <rect width="352" height="1040" fill="#FFFDF5"/>
+      <line x1="351" y1="0" x2="351" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="30" y="58" font-size="17" font-weight="700" letter-spacing="1.7">PRACTICE ROUTINE</text>
+      <text class="poppins ink" x="30" y="105" font-size="26" font-weight="700">Suggested rotation</text>
+      <text class="jp muted" x="30" y="137" font-size="14">4週間は目安です</text>
+      <g transform="translate(22 178)">
+        <rect width="308" height="58" rx="17" fill="#E4E8E2"/>
+        <rect width="6" height="58" rx="3" fill="#3A503F"/>
+        <text class="poppins ink" x="26" y="37" font-size="19" font-weight="700">Four-week view</text>
+        <text class="poppins ink" x="26" y="98" font-size="18">Today’s 8–10 minutes</text>
+        <text class="poppins ink" x="26" y="154" font-size="18">Return to a drill</text>
+      </g>
+      <g transform="translate(22 808)">
+        <rect width="308" height="180" rx="22" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="poppins brand" x="20" y="34" font-size="13" font-weight="700" letter-spacing="1.1">NO DEADLINE</text>
+        <text class="jp ink" x="20" y="72" font-size="16" font-weight="700">1週間を繰り返しても大丈夫。</text>
+        <text class="jp muted" x="20" y="102" font-size="14">連続記録やペナルティはありません。</text>
+        <text class="jp muted" x="20" y="132" font-size="14">4週間で発音が「完成」するという</text>
+        <text class="jp muted" x="20" y="158" font-size="14">約束でもありません。</text>
+      </g>
+    </g>
+    <g transform="translate(352 112)">
+      <rect width="1696" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(64 46)">
+        <text class="poppins brand" x="0" y="18" font-size="16" font-weight="700" letter-spacing="2">SUGGESTED ROTATION · 4 WEEKS</text>
+        <text class="poppins ink" x="0" y="86" font-size="52" font-weight="800" letter-spacing="-1.3">Repeat the set. Change the order.</text>
+        <text class="jp muted" x="0" y="130" font-size="19">最初は同じ音をまとめて練習し、慣れたら違うグループを混ぜます。4週間は繰り返すための型です。</text>
+      </g>
+      <g transform="translate(64 214)">
+        <g>
+          <rect width="368" height="360" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect width="368" height="82" rx="30" fill="#3A503F"/>
+          <rect y="54" width="368" height="28" fill="#3A503F"/>
+          <text class="poppins paper" x="24" y="34" font-size="14" font-weight="700" letter-spacing="1.2">WEEK 1</text>
+          <text class="poppins paper" x="24" y="64" font-size="22" font-weight="700">Sound contrasts</text>
+          <text class="poppins ink" x="24" y="125" font-size="17" font-weight="700">Red lorry, yellow lorry.</text>
+          <text class="poppins ink" x="24" y="169" font-size="17" font-weight="700">She sells seashells…</text>
+          <text class="poppins ink" x="24" y="213" font-size="17" font-weight="700">Three free throws.</text>
+          <line x1="24" y1="244" x2="344" y2="244" stroke="#D8DAD6"/>
+          <text class="jp muted" x="24" y="278" font-size="14">同じグループを集中して練習。</text>
+          <text class="jp muted" x="24" y="305" font-size="14">各日: 1本を重点 + 2本を短く。</text>
+          <rect x="24" y="322" width="126" height="24" rx="12" fill="#FCFFDA"/>
+          <text class="poppins brand" x="87" y="339" font-size="11" font-weight="700" text-anchor="middle">FOCUSED FIRST</text>
+        </g>
+        <g transform="translate(392 0)">
+          <rect width="368" height="360" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect width="368" height="82" rx="30" fill="#706B08"/>
+          <rect y="54" width="368" height="28" fill="#706B08"/>
+          <text class="poppins paper" x="24" y="34" font-size="14" font-weight="700" letter-spacing="1.2">WEEK 2</text>
+          <text class="poppins paper" x="24" y="64" font-size="22" font-weight="700">Clean consonants</text>
+          <text class="poppins ink" x="24" y="125" font-size="17" font-weight="700">Peter Piper…</text>
+          <text class="poppins ink" x="24" y="169" font-size="17" font-weight="700">A big black bug…</text>
+          <text class="poppins ink" x="24" y="213" font-size="17" font-weight="700">If two witches…</text>
+          <line x1="24" y1="244" x2="344" y2="244" stroke="#D8DAD6"/>
+          <text class="jp muted" x="24" y="278" font-size="14">重点2本 + Week 1から1本。</text>
+          <text class="jp muted" x="24" y="305" font-size="14">少しずつ順番を変えます。</text>
+          <rect x="24" y="322" width="148" height="24" rx="12" fill="#FCFFDA"/>
+          <text class="poppins brand" x="98" y="339" font-size="11" font-weight="700" text-anchor="middle">BEGIN TO MIX</text>
+        </g>
+        <g transform="translate(784 0)">
+          <rect width="368" height="360" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect width="368" height="82" rx="30" fill="#706B08"/>
+          <rect y="54" width="368" height="28" fill="#706B08"/>
+          <text class="poppins paper" x="24" y="34" font-size="14" font-weight="700" letter-spacing="1.2">WEEK 3</text>
+          <text class="poppins paper" x="24" y="64" font-size="22" font-weight="700">Consonant clusters</text>
+          <text class="poppins ink" x="24" y="125" font-size="17" font-weight="700">I scream, you scream…</text>
+          <text class="poppins ink" x="24" y="169" font-size="17" font-weight="700">Six slippery snails…</text>
+          <text class="poppins ink" x="24" y="213" font-size="17" font-weight="700">Freshly fried fresh flesh.</text>
+          <line x1="24" y1="244" x2="344" y2="244" stroke="#D8DAD6"/>
+          <text class="jp muted" x="24" y="278" font-size="14">重点1本 + 混合2本。</text>
+          <text class="jp muted" x="24" y="305" font-size="14">母音を足さず、明確さを保つ。</text>
+          <rect x="24" y="322" width="148" height="24" rx="12" fill="#FCFFDA"/>
+          <text class="poppins brand" x="98" y="339" font-size="11" font-weight="700" text-anchor="middle">MORE MIXING</text>
+        </g>
+        <g transform="translate(1176 0)">
+          <rect width="368" height="360" rx="30" fill="#FFFFFF" filter="url(#shadow)"/>
+          <rect width="368" height="82" rx="30" fill="#3A503F"/>
+          <rect y="54" width="368" height="28" fill="#3A503F"/>
+          <text class="poppins paper" x="24" y="34" font-size="14" font-weight="700" letter-spacing="1.2">WEEK 4</text>
+          <text class="poppins paper" x="24" y="64" font-size="22" font-weight="700">Rhythm + mixed review</text>
+          <text class="poppins ink" x="24" y="125" font-size="17" font-weight="700">Betty Botter…</text>
+          <text class="poppins ink" x="24" y="169" font-size="17" font-weight="700">How much wood…</text>
+          <text class="poppins ink" x="24" y="213" font-size="17" font-weight="700">Unique New York.</text>
+          <line x1="24" y1="244" x2="344" y2="244" stroke="#D8DAD6"/>
+          <text class="jp muted" x="24" y="278" font-size="14">全グループから順番を変えて選ぶ。</text>
+          <text class="jp muted" x="24" y="305" font-size="14">日常文への移し替えを増やします。</text>
+          <rect x="24" y="322" width="148" height="24" rx="12" fill="#FCFFDA"/>
+          <text class="poppins brand" x="98" y="339" font-size="11" font-weight="700" text-anchor="middle">MIXED REVIEW</text>
+        </g>
+      </g>
+      <g transform="translate(64 610)">
+        <rect width="1544" height="294" rx="32" fill="#FFFFFF" filter="url(#shadow)"/>
+        <g transform="translate(28 26)">
+          <text class="poppins brand" x="0" y="20" font-size="14" font-weight="700" letter-spacing="1.2">TODAY · 8–10 MINUTES</text>
+          <text class="poppins ink" x="0" y="66" font-size="27" font-weight="700">One focus card, then two mixed cards</text>
+          <text class="jp muted" x="0" y="99" font-size="15">週5日を目安に。休んでも記録は失われません。</text>
+        </g>
+        <g transform="translate(28 154)">
+          <g><circle cx="26" cy="26" r="26" fill="#3A503F"/><text class="poppins paper" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">1</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Prepare</text><text class="jp muted" x="66" y="47" font-size="13">30秒</text></g>
+          <g transform="translate(240 0)"><circle cx="26" cy="26" r="26" fill="#F1F2F0"/><text class="poppins ink" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">2</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Model</text><text class="jp muted" x="66" y="47" font-size="13">1回聞く</text></g>
+          <g transform="translate(470 0)"><circle cx="26" cy="26" r="26" fill="#F1F2F0"/><text class="poppins ink" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">3</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Slow</text><text class="jp muted" x="66" y="47" font-size="13">3回</text></g>
+          <g transform="translate(684 0)"><circle cx="26" cy="26" r="26" fill="#F1F2F0"/><text class="poppins ink" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">4</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Rhythm</text><text class="jp muted" x="66" y="47" font-size="13">3回</text></g>
+          <g transform="translate(924 0)"><circle cx="26" cy="26" r="26" fill="#F1F2F0"/><text class="poppins ink" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">5</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Transfer</text><text class="jp muted" x="66" y="47" font-size="13">普通の文 ×2</text></g>
+          <g transform="translate(1202 0)"><circle cx="26" cy="26" r="26" fill="#FCFFDA"/><text class="poppins brand" x="26" y="33" font-size="14" font-weight="700" text-anchor="middle">6</text><text class="poppins ink" x="66" y="24" font-size="16" font-weight="700">Return</text><text class="jp muted" x="66" y="47" font-size="13">次回また行う</text></g>
+        </g>
+        <g transform="translate(28 232)">
+          <rect width="1488" height="38" rx="19" fill="#F1F2F0"/>
+          <text class="jp muted" x="744" y="25" font-size="14" text-anchor="middle">集中練習から始め、慣れたら順番を混ぜる · 同じ12本を繰り返す</text>
+        </g>
+      </g>
+      <g transform="translate(64 930)">
+        <text class="jp muted" x="0" y="43" font-size="16">Suggested, not required · 必要なら同じ週を繰り返してください</text>
+        <g transform="translate(1190 0)">
+          <rect width="354" height="68" rx="34" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="177" y="43" font-size="19" font-weight="700" text-anchor="middle">Red lorryから始める</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

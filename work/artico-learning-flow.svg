@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4288" height="1152" viewBox="0 0 4288 1152">
+  <title>Artico — Learn Orientation and Tongue Twister Practice</title>
+  <desc>Two coordinated desktop app screens defining the MVP learning logic.</desc>
+  <defs>
+    <style>
+      .poppins { font-family: Poppins, Arial, sans-serif; }
+      .jp { font-family: "Noto Sans JP", "Hiragino Sans", Arial, sans-serif; }
+      .ink { fill: #0F110F; }
+      .paper { fill: #FFFFFF; }
+      .warm { fill: #FFFDF5; }
+      .surface { fill: #F1F2F0; }
+      .muted { fill: #A6A8A5; }
+      .olive { fill: #3A503F; }
+      .brand { fill: #706B08; }
+    </style>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#0F110F" flood-opacity=".08"/>
+    </filter>
+  </defs>
+
+  <rect width="4288" height="1152" fill="#D8DAD6"/>
+
+  <!-- ============================================================ -->
+  <!-- SCREEN 1: LEARN / ORIENTATION                              -->
+  <!-- ============================================================ -->
+  <g id="Screen-Learn-Orientation">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+
+    <g id="Learn-Header">
+      <rect width="2048" height="112" fill="#FFFFFF"/>
+      <line x1="0" y1="111" x2="2048" y2="111" stroke="#D8DAD6"/>
+      <g id="Learn-Logo" transform="translate(42 18)">
+        <text class="poppins brand" x="0" y="52" font-size="50" font-weight="800" letter-spacing="-3">artiCo</text>
+        <text class="poppins ink" x="25" y="79" font-size="14" font-weight="600">english but better...</text>
+      </g>
+
+      <g id="Mode-Switch-Learn" transform="translate(748 16)">
+        <rect width="552" height="80" rx="40" fill="#FFFFFF" stroke="#A6A8A5" stroke-width="2"/>
+        <rect x="10" y="10" width="254" height="60" rx="30" fill="#F1F2F0"/>
+        <g transform="translate(54 23)" fill="#0F110F">
+          <path d="M0 5c18 0 29 7 35 17v25c-8-8-19-12-35-12V5Zm70 0c-18 0-29 7-35 17v25c8-8 19-12 35-12V5Z"/>
+          <circle cx="35" cy="8" r="8"/>
+        </g>
+        <text class="poppins ink" x="145" y="52" font-size="27" font-weight="700">Learn</text>
+        <g transform="translate(319 24)" fill="none" stroke="#3A503F" stroke-width="3">
+          <circle cx="24" cy="18" r="16"/><path d="M19 12l10 12M29 12L19 24" stroke-linecap="round"/>
+        </g>
+        <text class="poppins olive" x="388" y="52" font-size="27" font-weight="600">Practice</text>
+      </g>
+
+      <g id="Learn-Profile" transform="translate(1901 25)" fill="none" stroke="#0F110F" stroke-width="3">
+        <circle cx="31" cy="31" r="30"/><circle cx="31" cy="24" r="11"/><path d="M12 50c4-12 10-17 19-17s16 5 20 17"/>
+      </g>
+    </g>
+
+    <g id="Learn-Sidebar" transform="translate(0 112)">
+      <rect width="480" height="1040" fill="#FFFDF5"/>
+      <line x1="479" y1="0" x2="479" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="40" y="62" font-size="19" font-weight="700" letter-spacing="1.5">LEARNING MODE</text>
+
+      <g id="Start-Here-Nav" transform="translate(30 98)">
+        <text class="poppins ink" x="10" y="26" font-size="26" font-weight="700">Start Here</text>
+        <rect x="0" y="52" width="420" height="62" rx="18" fill="#E4E8E2"/>
+        <rect x="0" y="52" width="6" height="62" rx="3" fill="#3A503F"/>
+        <circle cx="42" cy="83" r="12" fill="#3A503F"/>
+        <path d="M36 83l4 4 8-10" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="poppins ink" x="70" y="92" font-size="22" font-weight="600">Orientation</text>
+      </g>
+
+      <g id="Foundation-Nav" transform="translate(40 258)">
+        <text class="poppins muted" x="0" y="0" font-size="17" font-weight="700" letter-spacing="1.4">FOUNDATION</text>
+        <text class="poppins ink" x="0" y="55" font-size="23" font-weight="600">Alphabets &amp; Sounds</text>
+        <text class="poppins ink" x="0" y="105" font-size="23" font-weight="600">Tongue Twisters</text>
+      </g>
+
+      <g id="Social-Fluency-Nav" transform="translate(40 440)">
+        <text class="poppins muted" x="0" y="0" font-size="17" font-weight="700" letter-spacing="1.4">SOCIAL FLUENCY</text>
+        <text class="poppins ink" x="0" y="55" font-size="21">Greetings &amp; Openings</text>
+        <text class="poppins ink" x="0" y="102" font-size="21">Everyday Responses</text>
+        <text class="poppins ink" x="0" y="149" font-size="21">Emotion &amp; Tone</text>
+        <text class="poppins ink" x="0" y="196" font-size="21">Conversation Patterns</text>
+        <text class="poppins ink" x="0" y="243" font-size="21">Stories &amp; Connection</text>
+      </g>
+
+      <g transform="translate(30 916)">
+        <rect width="420" height="80" rx="24" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="jp ink" x="24" y="33" font-size="16" font-weight="600">困ったときは</text>
+        <text class="jp ink" x="24" y="58" font-size="15" opacity=".62">「Articoの使い方」にいつでも戻れます</text>
+      </g>
+    </g>
+
+    <g id="Orientation-Main" transform="translate(480 112)">
+      <rect width="1568" height="1040" fill="#FFFFFF"/>
+      <g transform="translate(86 62)">
+        <text class="poppins brand" x="0" y="22" font-size="18" font-weight="700" letter-spacing="2.4">START HERE · 3–5 MIN</text>
+        <text class="poppins ink" x="0" y="104" font-size="64" font-weight="800" letter-spacing="-1.8">Before you begin</text>
+        <text class="jp ink" x="0" y="159" font-size="22" opacity=".68">英語を「知っている」から「口から出る」へ。最初に、Articoの使い方を確認しましょう。</text>
+      </g>
+
+      <g id="Orientation-Principles" transform="translate(86 286)">
+        <g id="Principle-Learn">
+          <rect width="430" height="208" rx="28" fill="#F1F2F0"/>
+          <circle cx="54" cy="52" r="26" fill="#3A503F"/>
+          <text class="poppins paper" x="54" y="61" font-size="22" font-weight="700" text-anchor="middle">1</text>
+          <text class="poppins ink" x="94" y="60" font-size="25" font-weight="700">Learn</text>
+          <text class="jp ink" x="30" y="116" font-size="19">日本語で、考え方と仕組みを</text>
+          <text class="jp ink" x="30" y="150" font-size="19">短く理解します。</text>
+          <text class="jp ink" x="30" y="184" font-size="16" opacity=".56">長い講義ではなく、必要な理屈だけ。</text>
+        </g>
+        <g id="Principle-Practice" transform="translate(462 0)">
+          <rect width="430" height="208" rx="28" fill="#FCFFDA"/>
+          <circle cx="54" cy="52" r="26" fill="#706B08"/>
+          <text class="poppins paper" x="54" y="61" font-size="22" font-weight="700" text-anchor="middle">2</text>
+          <text class="poppins ink" x="94" y="60" font-size="25" font-weight="700">Practice</text>
+          <text class="jp ink" x="30" y="116" font-size="19">声に出して、ゆっくり正確に</text>
+          <text class="jp ink" x="30" y="150" font-size="19">繰り返します。</text>
+          <text class="jp ink" x="30" y="184" font-size="16" opacity=".56">最初の練習は Tongue Twisters。</text>
+        </g>
+        <g id="Principle-Return" transform="translate(924 0)">
+          <rect width="430" height="208" rx="28" fill="#F1F2F0"/>
+          <circle cx="54" cy="52" r="26" fill="#A6A8A5"/>
+          <text class="poppins paper" x="54" y="61" font-size="22" font-weight="700" text-anchor="middle">3</text>
+          <text class="poppins ink" x="94" y="60" font-size="25" font-weight="700">Return</text>
+          <text class="jp ink" x="30" y="116" font-size="19">少し時間を空けて戻り、</text>
+          <text class="jp ink" x="30" y="150" font-size="19">もう一度口を動かします。</text>
+          <text class="jp ink" x="30" y="184" font-size="16" opacity=".56">ポイントではなく、定着が目的です。</text>
+        </g>
+      </g>
+
+      <g id="Orientation-Setup" transform="translate(86 536)">
+        <rect width="1354" height="220" rx="30" fill="#F7F7F4" stroke="#D8DAD6"/>
+        <text class="jp ink" x="34" y="55" font-size="25" font-weight="700">はじめる前の準備</text>
+        <g transform="translate(34 91)">
+          <circle cx="18" cy="18" r="18" fill="#E4E8E2"/><path d="M10 18h16M18 10v16" stroke="#3A503F" stroke-width="2"/>
+          <text class="jp ink" x="48" y="25" font-size="19">できれば静かな場所</text>
+          <circle cx="330" cy="18" r="18" fill="#E4E8E2"/><path d="M321 20c0-7 4-12 9-12s9 5 9 12v7" fill="none" stroke="#3A503F" stroke-width="2"/>
+          <text class="jp ink" x="360" y="25" font-size="19">ヘッドフォン</text>
+          <circle cx="584" cy="18" r="18" fill="#E4E8E2"/><path d="M576 11h16l-2 16h-12z" fill="none" stroke="#3A503F" stroke-width="2"/>
+          <text class="jp ink" x="614" y="25" font-size="19">水</text>
+          <circle cx="760" cy="18" r="18" fill="#E4E8E2"/><path d="M752 19l6 6 11-14" fill="none" stroke="#3A503F" stroke-width="2.5"/>
+          <text class="jp ink" x="790" y="25" font-size="19">間違えても声を止めない</text>
+        </g>
+        <text class="jp ink" x="34" y="180" font-size="18" opacity=".62">速さより正確さ。恥ずかしさより、口を動かした回数を大切にします。</text>
+      </g>
+
+      <g id="Orientation-Action" transform="translate(86 812)">
+        <text class="jp ink" x="0" y="38" font-size="18" opacity=".62">Orientation 1 / 1</text>
+        <g transform="translate(1004 0)">
+          <rect width="350" height="76" rx="38" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+          <text class="jp paper" x="175" y="49" font-size="21" font-weight="700" text-anchor="middle">Alphabets &amp; Sounds へ</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- SCREEN 2: PRACTICE / TONGUE TWISTERS                        -->
+  <!-- ============================================================ -->
+  <g id="Screen-Practice-Tongue-Twisters" transform="translate(2240 0)">
+    <rect width="2048" height="1152" fill="#FFFFFF"/>
+
+    <g id="Practice-Header">
+      <rect width="2048" height="112" fill="#FFFFFF"/>
+      <line x1="0" y1="111" x2="2048" y2="111" stroke="#D8DAD6"/>
+      <g transform="translate(42 18)">
+        <text class="poppins brand" x="0" y="52" font-size="50" font-weight="800" letter-spacing="-3">artiCo</text>
+        <text class="poppins ink" x="25" y="79" font-size="14" font-weight="600">english but better...</text>
+      </g>
+      <g id="Mode-Switch-Practice" transform="translate(748 16)">
+        <rect width="552" height="80" rx="40" fill="#FFFFFF" stroke="#A6A8A5" stroke-width="2"/>
+        <rect x="288" y="10" width="254" height="60" rx="30" fill="#E4E8E2"/>
+        <g transform="translate(54 23)" fill="#A6A8A5">
+          <path d="M0 5c18 0 29 7 35 17v25c-8-8-19-12-35-12V5Zm70 0c-18 0-29 7-35 17v25c8-8 19-12 35-12V5Z"/>
+          <circle cx="35" cy="8" r="8"/>
+        </g>
+        <text class="poppins muted" x="145" y="52" font-size="27" font-weight="600">Learn</text>
+        <g transform="translate(319 24)" fill="none" stroke="#3A503F" stroke-width="3">
+          <circle cx="24" cy="18" r="16"/><path d="M19 12l10 12M29 12L19 24" stroke-linecap="round"/>
+        </g>
+        <text class="poppins ink" x="388" y="52" font-size="27" font-weight="700">Practice</text>
+      </g>
+      <g transform="translate(1901 25)" fill="none" stroke="#0F110F" stroke-width="3">
+        <circle cx="31" cy="31" r="30"/><circle cx="31" cy="24" r="11"/><path d="M12 50c4-12 10-17 19-17s16 5 20 17"/>
+      </g>
+    </g>
+
+    <g id="Practice-Sidebar" transform="translate(0 112)">
+      <rect width="480" height="1040" fill="#FFFDF5"/>
+      <line x1="479" y1="0" x2="479" y2="1040" stroke="#D8DAD6"/>
+      <text class="poppins brand" x="40" y="62" font-size="19" font-weight="700" letter-spacing="1.5">PRACTICE MODE</text>
+
+      <g transform="translate(30 98)">
+        <rect width="420" height="64" rx="18" fill="#E4E8E2"/>
+        <rect width="6" height="64" rx="3" fill="#3A503F"/>
+        <text class="poppins ink" x="28" y="42" font-size="24" font-weight="700">Tongue Twisters</text>
+      </g>
+      <g transform="translate(58 188)">
+        <line x1="0" y1="0" x2="0" y2="238" stroke="#A6A8A5" stroke-width="4"/>
+        <circle cx="0" cy="70" r="7" fill="#3A503F"/>
+        <text class="poppins ink" x="30" y="11" font-size="20">Introduction</text>
+        <text class="poppins ink" x="30" y="78" font-size="20" font-weight="700">Slow Precision</text>
+        <text class="poppins ink" x="30" y="145" font-size="20">Build Speed</text>
+        <text class="poppins ink" x="30" y="212" font-size="20">Stress &amp; Rhythm</text>
+        <text class="poppins ink" x="30" y="279" font-size="20">Real Phrases</text>
+      </g>
+
+      <g transform="translate(40 544)">
+        <text class="poppins muted" x="0" y="0" font-size="17" font-weight="700" letter-spacing="1.4">NEXT</text>
+        <text class="poppins ink" x="0" y="55" font-size="22">Sound Contrasts</text>
+        <text class="poppins ink" x="0" y="104" font-size="22">Rhythm &amp; Stress</text>
+        <text class="poppins ink" x="0" y="153" font-size="22">Connected Speech</text>
+        <text class="poppins ink" x="0" y="202" font-size="22">Social Speaking Patterns</text>
+      </g>
+
+      <g transform="translate(30 916)">
+        <rect width="420" height="80" rx="24" fill="#FFFFFF" stroke="#D8DAD6"/>
+        <text class="jp ink" x="24" y="33" font-size="16" font-weight="600">今日の目安</text>
+        <text class="jp ink" x="24" y="58" font-size="15" opacity=".62">10分以内。正確さを優先します。</text>
+      </g>
+    </g>
+
+    <g id="Tongue-Twister-Main" transform="translate(480 112)">
+      <rect width="1568" height="1040" fill="#F7F7F4"/>
+      <g transform="translate(82 56)">
+        <text class="poppins brand" x="0" y="22" font-size="18" font-weight="700" letter-spacing="2.4">FOUNDATION PRACTICE · 01</text>
+        <text class="poppins ink" x="0" y="98" font-size="60" font-weight="800" letter-spacing="-1.4">Tongue Twisters</text>
+        <text class="jp ink" x="0" y="148" font-size="21" opacity=".65">速さではなく、正確さから始めます。今日は R と L の舌の位置だけに集中しましょう。</text>
+      </g>
+
+      <g id="Practice-Card" transform="translate(82 260)" filter="url(#cardShadow)">
+        <rect width="1404" height="558" rx="34" fill="#FFFFFF"/>
+        <g transform="translate(42 38)">
+          <rect width="166" height="38" rx="19" fill="#E4E8E2"/>
+          <text class="poppins olive" x="83" y="26" font-size="15" font-weight="700" text-anchor="middle">SLOW PRECISION</text>
+          <text class="poppins ink" x="0" y="134" font-size="48" font-weight="700">Red leather, yellow leather.</text>
+          <text class="jp ink" x="0" y="180" font-size="19" opacity=".6">舌先を意識する：R では舌を浮かせ、L では上の歯ぐきに軽く触れます。</text>
+
+          <g id="Audio-Model" transform="translate(0 230)">
+            <circle cx="34" cy="34" r="34" fill="#3A503F"/>
+            <path d="M27 21l22 13-22 13V21Z" fill="#FFFFFF"/>
+            <g transform="translate(90 10)" fill="#A6A8A5">
+              <rect width="10" height="48" rx="5"/><rect x="20" y="12" width="10" height="24" rx="5"/>
+              <rect x="40" y="-5" width="10" height="58" rx="5"/><rect x="60" y="7" width="10" height="34" rx="5"/>
+              <rect x="80" y="-12" width="10" height="72" rx="5"/><rect x="100" y="4" width="10" height="40" rx="5"/>
+              <rect x="120" y="14" width="10" height="20" rx="5"/><rect x="140" y="-3" width="10" height="54" rx="5"/>
+              <rect x="160" y="9" width="10" height="30" rx="5"/><rect x="180" y="-8" width="10" height="64" rx="5"/>
+              <rect x="200" y="3" width="10" height="42" rx="5"/><rect x="220" y="14" width="10" height="20" rx="5"/>
+              <rect x="240" y="0" width="10" height="48" rx="5"/><rect x="260" y="8" width="10" height="32" rx="5"/>
+              <rect x="280" y="-5" width="10" height="58" rx="5"/><rect x="300" y="11" width="10" height="26" rx="5"/>
+            </g>
+            <text class="poppins ink" x="430" y="42" font-size="18" opacity=".58">0:04 · slow model</text>
+          </g>
+
+          <g id="Practice-Instructions" transform="translate(0 348)">
+            <g>
+              <circle cx="18" cy="18" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="25" font-size="17" font-weight="700" text-anchor="middle">1</text>
+              <text class="jp ink" x="48" y="24" font-size="18">一度、最後まで聴く</text>
+            </g>
+            <g transform="translate(320 0)">
+              <circle cx="18" cy="18" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="25" font-size="17" font-weight="700" text-anchor="middle">2</text>
+              <text class="jp ink" x="48" y="24" font-size="18">ゆっくり3回言う</text>
+            </g>
+            <g transform="translate(620 0)">
+              <circle cx="18" cy="18" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="25" font-size="17" font-weight="700" text-anchor="middle">3</text>
+              <text class="jp ink" x="48" y="24" font-size="18">音声と一緒に3回</text>
+            </g>
+            <g transform="translate(950 0)">
+              <circle cx="18" cy="18" r="18" fill="#F1F2F0"/><text class="poppins ink" x="18" y="25" font-size="17" font-weight="700" text-anchor="middle">4</text>
+              <text class="jp ink" x="48" y="24" font-size="18">明日もう一度</text>
+            </g>
+          </g>
+
+          <g transform="translate(1000 430)">
+            <rect width="320" height="72" rx="36" fill="#3A503F" stroke="#0F110F" stroke-width="2"/>
+            <text class="jp paper" x="160" y="47" font-size="21" font-weight="700" text-anchor="middle">ゆっくり始める</text>
+          </g>
+        </g>
+      </g>
+
+      <g id="Practice-Transfer" transform="translate(82 866)">
+        <text class="poppins ink" x="0" y="24" font-size="19" font-weight="700">TRANSFER TO REAL SPEECH</text>
+        <text class="jp ink" x="0" y="61" font-size="18" opacity=".62">次は普通の表現へ移します：</text>
+        <text class="poppins ink" x="258" y="61" font-size="20" font-weight="600">“I really like learning languages.”</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,56 +1,11 @@
 import { useState } from 'react'
 import { everydayModules } from './data'
 
-export function EverydaySidebar({ activeModuleId, onSelectModule, activeLessonId, onSelectLesson, courseLayer, setCourseLayer, LayerNav }) {
+export function EverydaySidebar({ activeModuleId, onSelectModule, activeLessonId, onSelectLesson, curriculum, CurriculumNav }) {
   return (
     <aside className="everyday-sidebar">
-      {LayerNav && <LayerNav courseLayer={courseLayer} setCourseLayer={setCourseLayer} />}
-      <div className="sidebar-heading">
-        <small>Everyday Fluency</small>
-        <h2>8 Core Modules</h2>
-        <p>状況から入る英会話</p>
-      </div>
-      <nav className="everyday-nav">
-        {everydayModules.map((mod) => {
-          const isActive = activeModuleId === mod.id
-          const isInteractive = mod.status === 'interactive'
-          return (
-            <div key={mod.id}>
-              <button
-                type="button"
-                className={`everyday-module-btn ${isActive ? 'active' : ''}`}
-                aria-current={isActive ? 'page' : undefined}
-                onClick={() => onSelectModule(mod.id)}
-              >
-                <b>{mod.number}</b>
-                <div>
-                  <strong>{mod.title}</strong>
-                  <small>{mod.enTitle}</small>
-                </div>
-                <span className="everyday-status-text">
-                  {isInteractive ? 'Available' : 'Coming next'}
-                </span>
-              </button>
-              {isActive && isInteractive && mod.lessons && (
-                <div className="everyday-lessons-rail">
-                  {mod.lessons.map((les) => (
-                    <button
-                      key={les.id}
-                      type="button"
-                      className={`everyday-lesson-btn ${activeLessonId === les.id ? 'active' : ''}`}
-                      aria-current={activeLessonId === les.id ? 'step' : undefined}
-                      onClick={() => onSelectLesson(les.id)}
-                    >
-                      <strong>{les.title}</strong>
-                      <small>{les.ja}</small>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          )
-        })}
-      </nav>
+      {CurriculumNav && <CurriculumNav {...curriculum} activeEverydayModuleId={activeModuleId} onSelectEverydayModule={onSelectModule} activeEverydayLessonId={activeLessonId} onSelectEverydayLesson={onSelectLesson} />}
+      <div className="sidebar-note"><small>Everyday Fluency</small><strong>状況から入る英会話</strong><span>理解してから、声に出し、自分の状況に置き換えます。</span></div>
     </aside>
   )
 }

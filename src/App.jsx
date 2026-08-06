@@ -189,44 +189,126 @@ function AppHeader({ mode, setMode, onHome, onProfileClick }) {
   )
 }
 
-function LayerNav({ courseLayer, setCourseLayer }) {
+function DisclosureIcon({ expanded }) {
   return (
-    <div className="sidebar-layer-nav" aria-label="Course selection">
-      <button
-        type="button"
-        aria-pressed={courseLayer === 'foundation'}
-        className={courseLayer === 'foundation' ? 'active' : ''}
-        onClick={() => setCourseLayer('foundation')}
-      >
-        Foundation
-      </button>
-      <button
-        type="button"
-        aria-pressed={courseLayer === 'fluency'}
-        className={courseLayer === 'fluency' ? 'active' : ''}
-        onClick={() => setCourseLayer('fluency')}
-      >
-        Everyday Fluency
-      </button>
-    </div>
+    <svg className={`disclosure-icon ${expanded ? 'expanded' : ''}`} viewBox="0 0 16 16" aria-hidden="true">
+      <path d="m4 6 4 4 4-4" />
+    </svg>
   )
 }
 
-function LessonSidebar({ active, onSelect, courseLayer, setCourseLayer }) {
+function CurriculumNav({
+  courseLayer,
+  setCourseLayer,
+  foundationOpen,
+  setFoundationOpen,
+  everydayOpen,
+  setEverydayOpen,
+  activeFoundationId,
+  onSelectFoundation,
+  activeEverydayModuleId,
+  onSelectEverydayModule,
+  activeEverydayLessonId,
+  onSelectEverydayLesson,
+}) {
+  const chooseFoundation = (id) => {
+    setCourseLayer('foundation')
+    onSelectFoundation?.(id)
+  }
+
+  const chooseEveryday = (id) => {
+    setCourseLayer('fluency')
+    onSelectEverydayModule?.(id)
+  }
+
+  return (
+    <nav className="curriculum-tree" aria-label="Course curriculum">
+      <section className={`curriculum-section ${courseLayer === 'foundation' ? 'current' : ''}`}>
+        <button
+          type="button"
+          className="curriculum-section-toggle"
+          aria-expanded={foundationOpen}
+          onClick={() => setFoundationOpen((open) => !open)}
+        >
+          <DisclosureIcon expanded={foundationOpen} />
+          <span>Part 1: Foundation</span>
+        </button>
+        {foundationOpen && (
+          <ol className="curriculum-list">
+            {learnSteps.map((step, index) => (
+              <li key={step.id}>
+                <button
+                  type="button"
+                  className={`curriculum-item ${courseLayer === 'foundation' && activeFoundationId === step.id ? 'active' : ''}`}
+                  aria-current={courseLayer === 'foundation' && activeFoundationId === step.id ? 'page' : undefined}
+                  onClick={() => chooseFoundation(step.id)}
+                >
+                  <span className="curriculum-number">{index + 1}:</span>
+                  <span className="curriculum-item-copy"><strong>{step.label}</strong><small>{step.ja}</small></span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        )}
+      </section>
+
+      <section className={`curriculum-section ${courseLayer === 'fluency' ? 'current' : ''}`}>
+        <button
+          type="button"
+          className="curriculum-section-toggle"
+          aria-expanded={everydayOpen}
+          onClick={() => setEverydayOpen((open) => !open)}
+        >
+          <DisclosureIcon expanded={everydayOpen} />
+          <span>Part 2: Everyday Fluency</span>
+        </button>
+        {everydayOpen && (
+          <ol className="curriculum-list curriculum-list-everyday">
+            {everydayModules.map((module) => {
+              const moduleActive = courseLayer === 'fluency' && activeEverydayModuleId === module.id
+              return (
+                <li key={module.id}>
+                  <button
+                    type="button"
+                    className={`curriculum-item ${moduleActive ? 'active' : ''}`}
+                    aria-current={moduleActive ? 'page' : undefined}
+                    onClick={() => chooseEveryday(module.id)}
+                  >
+                    <span className="curriculum-number">{module.number}:</span>
+                    <span className="curriculum-item-copy"><strong>{module.enTitle || module.title}</strong><small>{module.title}</small></span>
+                  </button>
+                  {moduleActive && module.lessons && (
+                    <ol className="curriculum-sublist">
+                      {module.lessons.map((lesson) => (
+                        <li key={lesson.id}>
+                          <button
+                            type="button"
+                            className={`curriculum-subitem ${activeEverydayLessonId === lesson.id ? 'active' : ''}`}
+                            aria-current={activeEverydayLessonId === lesson.id ? 'step' : undefined}
+                            onClick={() => onSelectEverydayLesson?.(lesson.id)}
+                          >
+                            <strong>{lesson.title}</strong>
+                            <small>{lesson.ja}</small>
+                          </button>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                </li>
+              )
+            })}
+          </ol>
+        )}
+      </section>
+    </nav>
+  )
+}
+
+function LessonSidebar({ active, onSelect, curriculum }) {
   return (
     <aside className="lesson-sidebar">
-      <LayerNav courseLayer={courseLayer} setCourseLayer={setCourseLayer} />
-      <div className="sidebar-heading"><small>Free foundation</small><h2>Foundation</h2><p>理解してから、口を動かす</p></div>
-      <ol>
-        {learnSteps.map((step, index) => (
-          <li key={step.id}>
-            <button className={active === step.id ? 'active' : ''} aria-current={active === step.id ? 'step' : undefined} type="button" onClick={() => onSelect(step.id)}>
-              <span>{index + 1}</span><span><strong>{step.label}</strong><small>{step.ja}</small></span>
-            </button>
-          </li>
-        ))}
-      </ol>
-      <div className="sidebar-note"><small>Next in practice</small><strong>Tongue Twisters</strong><span>発音練習はここから始まります</span></div>
+      <CurriculumNav {...curriculum} activeFoundationId={active} onSelectFoundation={onSelect} />
+      <div className="sidebar-note"><small>Learning loop</small><strong>Understand → practise → return</strong><span>理解してから、口を動かし、時間をあけて戻ります。</span></div>
     </aside>
   )
 }
@@ -328,7 +410,26 @@ function LessonFooter({ label, onNext }) {
   return <div className="lesson-footer"><span>Accuracy before speed.</span><PrimaryButton onClick={onNext}>{label}</PrimaryButton></div>
 }
 
-function LearnMode({ activeStep, setActiveStep, openPractice, courseLayer, setCourseLayer }) {
+const theoryOutlines = {
+  orientation: ['Welcome', 'The Artico learning loop', 'Prepare your space'],
+  letters: ['Meet the 26 letters', 'Uppercase and lowercase', 'What matters now'],
+  hear: ['Hear the alphabet', 'Listen', 'Repeat', 'Recall'],
+  write: ['Write the alphabet', 'Paper practice', 'Move on'],
+  sounds: ['Letters versus sounds', 'Awareness, not mastery', 'One viewing is enough'],
+  'tongue-intro': ['Why tongue twisters', 'A small focused set', 'Practice begins here'],
+}
+
+function TheoryOutline({ activeStep }) {
+  const items = theoryOutlines[activeStep] || []
+  return (
+    <aside className="theory-outline" aria-label="On this page">
+      <strong>On this page</strong>
+      <ol>{items.map((item, index) => <li key={item}><a href={`#theory-${activeStep}-${index}`}>{item}</a></li>)}</ol>
+    </aside>
+  )
+}
+
+function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
   const index = learnSteps.findIndex((step) => step.id === activeStep)
   const next = () => setActiveStep(learnSteps[Math.min(index + 1, learnSteps.length - 1)].id)
   const content = {
@@ -340,14 +441,14 @@ function LearnMode({ activeStep, setActiveStep, openPractice, courseLayer, setCo
     'tongue-intro': <TongueIntro onPractice={openPractice} />,
   }[activeStep]
 
-  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} courseLayer={courseLayer} setCourseLayer={setCourseLayer} /><main className="lesson-main">{content}</main></div>
+  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} /></div></main></div>
 }
 
-function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup, pendingGroupId, activeGroupId, courseLayer, setCourseLayer }) {
+function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup, pendingGroupId, activeGroupId, curriculum }) {
   return (
     <aside className="practice-sidebar">
-      <LayerNav courseLayer={courseLayer} setCourseLayer={setCourseLayer} />
-      <div className="sidebar-heading"><small>Practice mode</small><h2>Tongue Twisters</h2><p>12本の定番セット</p></div>
+      <CurriculumNav {...curriculum} />
+      <div className="sidebar-heading sidebar-tool-heading"><small>Practice mode</small><h2>Tongue Twisters</h2><p>12本の定番セット</p></div>
       <nav>
         <button
           className={view === 'library' && !selected && !pendingGroupId && !activeGroupId ? 'active' : ''}
@@ -480,7 +581,7 @@ function RoutinePage({ onStart }) {
   )
 }
 
-function PracticeMode({ selected, setSelected, view, setView, courseLayer, setCourseLayer }) {
+function PracticeMode({ selected, setSelected, view, setView, curriculum }) {
   const [pendingGroupId, setPendingGroupId] = useState(null)
   const [activeGroupId, setActiveGroupId] = useState(null)
 
@@ -533,8 +634,7 @@ function PracticeMode({ selected, setSelected, view, setView, courseLayer, setCo
         onSelectGroup={handleGroupSelect}
         pendingGroupId={pendingGroupId}
         activeGroupId={activeGroupId}
-        courseLayer={courseLayer}
-        setCourseLayer={setCourseLayer}
+        curriculum={curriculum}
       />
       <main className="lesson-main practice-main">
         {selected ? (
@@ -556,6 +656,8 @@ function CourseApp({ onHome }) {
   const [selected, setSelected] = useState(null)
   const [practiceView, setPracticeView] = useState('library')
   const [notice, setNotice] = useState('')
+  const [foundationOpen, setFoundationOpen] = useState(true)
+  const [everydayOpen, setEverydayOpen] = useState(true)
 
   // Everyday Fluency state
   const [everydayModuleId, setEverydayModuleId] = useState('icebreakers')
@@ -585,7 +687,15 @@ function CourseApp({ onHome }) {
   }
   const showProfileNotice = () => setNotice('学習プロファイル: 無料基礎コース進行中')
 
+  const selectFoundationStep = (id) => {
+    setCourseLayer('foundation')
+    setMode('learn')
+    setActiveStep(id)
+    setSelected(null)
+  }
+
   const selectEverydayModule = (id) => {
+    setCourseLayer('fluency')
     setEverydayModuleId(id)
     const mod = everydayModules.find((m) => m.id === id)
     if (mod && mod.lessons) {
@@ -603,15 +713,29 @@ function CourseApp({ onHome }) {
 
   const currentEverydayModule = everydayModules.find((m) => m.id === everydayModuleId)
   const currentEverydayLesson = currentEverydayModule?.lessons?.find((l) => l.id === everydayLessonId) || currentEverydayModule?.lessons?.[0]
+  const curriculum = {
+    courseLayer,
+    setCourseLayer,
+    foundationOpen,
+    setFoundationOpen,
+    everydayOpen,
+    setEverydayOpen,
+    activeFoundationId: activeStep,
+    onSelectFoundation: selectFoundationStep,
+    activeEverydayModuleId: everydayModuleId,
+    onSelectEverydayModule: selectEverydayModule,
+    activeEverydayLessonId: everydayLessonId,
+    onSelectEverydayLesson: selectEverydayLesson,
+  }
 
   return (
     <div className="course-app">
       <AppHeader mode={mode} setMode={changeMode} onHome={onHome} onProfileClick={showProfileNotice} />
       {courseLayer === 'foundation' ? (
         mode === 'learn' ? (
-          <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} courseLayer={courseLayer} setCourseLayer={setCourseLayer} />
+          <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} />
         ) : (
-          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} courseLayer={courseLayer} setCourseLayer={setCourseLayer} />
+          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} />
         )
       ) : (
         <div className="app-body">
@@ -620,9 +744,8 @@ function CourseApp({ onHome }) {
             onSelectModule={selectEverydayModule}
             activeLessonId={everydayLessonId}
             onSelectLesson={selectEverydayLesson}
-            courseLayer={courseLayer}
-            setCourseLayer={setCourseLayer}
-            LayerNav={LayerNav}
+            curriculum={curriculum}
+            CurriculumNav={CurriculumNav}
           />
           <main className="lesson-main">
             {currentEverydayModule?.status === 'coming_soon' ? (

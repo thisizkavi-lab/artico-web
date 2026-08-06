@@ -11,6 +11,13 @@ pnpm dev
 
 Then open `http://127.0.0.1:5173/`.
 
+## GitHub Pages
+
+The `main` branch deploys automatically through GitHub Actions. Once the first
+deployment completes, the site is available at:
+
+`https://thisizkavi-lab.github.io/artico-web/`
+
 ## Included in this prototype
 
 - Minimal premium landing page with Japanese/English hero copy
@@ -28,4 +35,3 @@ Then open `http://127.0.0.1:5173/`.
 - Login and payments are visual placeholders
 - Browser speech synthesis is used as a temporary preview; approved recorded audio can replace it later
 - The external video references remain credited links or privacy-enhanced YouTube embeds
-

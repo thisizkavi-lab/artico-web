@@ -256,7 +256,7 @@ svg { display: block; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
-/* Everyday Fluency & Layer Selector */
+/* Social Fluency & Layer Selector */
 .sidebar-layer-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 20px 18px 0; padding: 4px; border: 1px solid var(--line); border-radius: 16px; background: white; }
 .sidebar-layer-nav button { min-height: 38px; padding: 0 10px; border-radius: 12px; background: transparent; color: var(--muted); font-size: 12px; font-weight: 700; cursor: pointer; transition: background .15s ease, color .15s ease; }
 .sidebar-layer-nav button.active { background: var(--surface-strong); color: var(--ink); }
@@ -346,6 +346,13 @@ svg { display: block; }
 .overview-lesson-list li strong { font-size: 13px; color: var(--ink); margin-right: 8px; }
 .overview-lesson-list li small { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; color: var(--muted); }
 .rail-start-btn { align-self: center; min-height: 44px; padding: 0 20px; font-size: 13px; }
+.social-fluency-part { grid-template-columns: 48px minmax(0, 1fr); }
+.social-fluency-chapters { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 16px; padding-left: 0; list-style: none; gap: 4px 18px; }
+.social-chapter-link { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; padding: 8px 10px; border: 1px solid transparent; border-radius: 9px; background: transparent; text-align: left; cursor: pointer; }
+.social-chapter-link:hover { background: var(--surface); }
+.social-chapter-link.active { background: var(--surface-strong); border-color: var(--line); }
+.social-chapter-link strong { color: var(--ink); font-size: 13px; font-weight: 600; line-height: 1.3; }
+.social-chapter-link small { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; line-height: 1.35; }
 
 @media (max-width: 760px) {
   .everyday-sidebar { width: 100%; height: auto; position: static; border-right: 0; border-bottom: 1px solid var(--line); }
@@ -771,6 +778,14 @@ svg { display: block; }
 .course-app .session-card p { font-size: 12px; }
 .course-app .quiet-visual { background: #fffefa; }
 .course-app .quiet-visual span { opacity: .72; }
+.course-app .social-fluency-part { grid-template-columns: 42px minmax(0, 1fr); padding: 17px 20px; }
+.course-app .social-fluency-chapters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.course-app .social-fluency-part .rail-item-header { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.course-app .social-fluency-part .rail-item-en { margin-left: 0; }
+.course-app .social-fluency-part .rail-status-text { margin-left: auto; letter-spacing: .3px; }
+.course-app .social-chapter-link { padding: 8px 9px; }
+.course-app .social-chapter-link strong { color: #4b544d; font-size: 12px; font-weight: 500; }
+.course-app .social-chapter-link small { color: #858c85; font-size: 9.5px; }
 
 @media (max-width: 760px) {
   .landing-header .logo > span { font-size: 40px; }
@@ -784,4 +799,8 @@ svg { display: block; }
   .course-app .curriculum-item-copy strong { font-size: 12px; }
   .course-app .curriculum-item-copy small { font-size: 9px; }
   .course-app .lesson-title h1 { font-size: 33px; }
+  .course-app .social-fluency-part { grid-template-columns: 1fr; padding: 16px; }
+  .course-app .social-fluency-chapters { grid-template-columns: 1fr; }
+  .course-app .everyday-sidebar { max-height: 360px; overflow-y: auto; }
+  .course-app .social-fluency-part .rail-status-text { margin-left: 0; }
 }

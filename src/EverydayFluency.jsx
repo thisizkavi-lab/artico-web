@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { everydayModules } from './data'
+import { socialFluencyChapterCount } from './socialFluencyCurriculum'
 
 export function EverydaySidebar({ activeModuleId, onSelectModule, activeLessonId, onSelectLesson, curriculum, CurriculumNav }) {
   return (
     <aside className="everyday-sidebar">
       {CurriculumNav && <CurriculumNav {...curriculum} activeEverydayModuleId={activeModuleId} onSelectEverydayModule={onSelectModule} activeEverydayLessonId={activeLessonId} onSelectEverydayLesson={onSelectLesson} />}
-      <div className="sidebar-note"><small>Everyday Fluency</small><strong>状況から入る英会話</strong><span>理解してから、声に出し、自分の状況に置き換えます。</span></div>
+      <div className="sidebar-note"><small>Social Fluency</small><strong>人とつながる英会話</strong><span>96章の場面と理論を、理解してから声に出し、自分の状況に置き換えます。</span></div>
     </aside>
   )
 }
@@ -16,7 +16,7 @@ export function EverydayLearnView({ lesson, step, setStep, speakWithBrowser, Pla
 
   return (
     <div className="lesson-page">
-      <LessonTitle eyebrow={`Everyday Fluency · ${lesson.number}`} title={lesson.title} ja={lesson.ja} />
+      <LessonTitle eyebrow={`Social Fluency · ${lesson.number}`} title={lesson.title} ja={lesson.ja} />
       
       <div className="everyday-step-selector">
         {[
@@ -119,7 +119,7 @@ export function EverydayPracticeView({ lesson, step, setStep, speakWithBrowser, 
 
   return (
     <div className="practice-page">
-      <LessonTitle eyebrow={`Everyday Practice · ${lesson.number}`} title={lesson.title} ja="学んだフレーズを自分の状況に合わせて使います。" />
+      <LessonTitle eyebrow={`Social Fluency Practice · ${lesson.number}`} title={lesson.title} ja="学んだフレーズを自分の状況に合わせて使います。" />
       
       <div className="everyday-step-selector">
         {[
@@ -247,48 +247,41 @@ export function EverydayPracticeView({ lesson, step, setStep, speakWithBrowser, 
   )
 }
 
-export function EverydayOverviewView({ modules = everydayModules, onSelectModule, LessonTitle }) {
+export function EverydayOverviewView({ parts = [], activeModuleId, onSelectModule, LessonTitle }) {
   return (
     <div className="lesson-page everyday-overview-page">
       <LessonTitle
-        eyebrow="Everyday Fluency · 8 Core Modules"
-        title="Everyday English for Real Contexts"
-        ja="場面・目的別の実用英会話。理解してから、声に出し、自分の状況に置き換えます。"
+        eyebrow={`Social Fluency · ${socialFluencyChapterCount} chapters · ${parts.length} parts`}
+        title="English for real social life"
+        ja="96章の場面・目的別の英会話。理解してから、声に出し、自分の状況に置き換えます。"
       />
       <div className="everyday-module-rail-list">
-        {modules.map((mod) => (
-          <div key={mod.id} className={`everyday-rail-item ${mod.status}`}>
-            <div className="rail-item-num">{mod.number}</div>
+        {parts.map((part) => (
+          <section key={part.id} className="everyday-rail-item social-fluency-part">
+            <div className="rail-item-num">{part.number}</div>
             <div className="rail-item-content">
               <div className="rail-item-header">
-                <h3>{mod.title}</h3>
-                <span className="rail-item-en">{mod.enTitle}</span>
-                <span className="rail-status-text">
-                  {mod.status === 'interactive' ? 'Available' : 'Coming next'}
-                </span>
+                <h3>{part.title}</h3>
+                <span className="rail-item-en">{part.ja}</span>
+                <span className="rail-status-text">{part.chapters.length} chapters</span>
               </div>
-              <p className="rail-item-cando"><strong>Can-do:</strong> {mod.cando}</p>
-              {mod.lessons && (
-                <ol className="overview-lesson-list">
-                  {mod.lessons.map((les) => (
-                    <li key={les.id}>
-                      <strong>{les.number} {les.title}</strong>
-                      <small>{les.ja}</small>
-                    </li>
-                  ))}
-                </ol>
-              )}
+              <ol className="overview-lesson-list social-fluency-chapters">
+                {part.chapters.map((chapter) => (
+                  <li key={chapter.id}>
+                    <button
+                      type="button"
+                      className={`social-chapter-link ${activeModuleId === chapter.id ? 'active' : ''}`}
+                      aria-current={activeModuleId === chapter.id ? 'page' : undefined}
+                      onClick={() => onSelectModule?.(chapter.id)}
+                    >
+                      <strong>{chapter.number}. {chapter.enTitle}</strong>
+                      <small>{chapter.ja}</small>
+                    </button>
+                  </li>
+                ))}
+              </ol>
             </div>
-            {mod.status === 'interactive' && onSelectModule && (
-              <button
-                type="button"
-                className="primary-button rail-start-btn"
-                onClick={() => onSelectModule(mod.id)}
-              >
-                Start Module
-              </button>
-            )}
-          </div>
+          </section>
         ))}
       </div>
     </div>

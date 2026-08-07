@@ -82,7 +82,11 @@ export const tongueGroups = [
 
 export const allTwisters = tongueGroups.flatMap((group) => group.items.map((item) => ({ ...item, groupId: group.id, groupTitle: group.title })))
 
-export const everydayModules = [
+// Legacy lesson prototypes retained for the detailed lesson renderer. The
+// 96-chapter Social Fluency syllabus is generated from the book map in
+// src/socialFluencyCurriculum.js; promote chapters here only when their theory
+// has been curated into a complete lesson.
+export const socialFluencyModules = [
   {
     id: 'icebreakers',
     number: '01',
@@ -339,3 +343,6 @@ export const everydayModules = [
     status: 'coming_soon',
   },
 ]
+
+// Temporary compatibility alias for any older lesson tooling.
+export const everydayModules = socialFluencyModules

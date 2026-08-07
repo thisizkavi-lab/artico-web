@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { allTwisters, alphabet, everydayModules, learnSteps, tongueGroups } from './data'
+import { allTwisters, alphabet, learnSteps, tongueGroups } from './data'
+import { socialFluencyChapters, socialFluencyParts } from './socialFluencyCurriculum'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
 
 function speakWithBrowser(text, options = {}) {
@@ -260,40 +261,23 @@ function CurriculumNav({
           onClick={() => setEverydayOpen((open) => !open)}
         >
           <DisclosureIcon expanded={everydayOpen} />
-          <span>Part 2: Everyday Fluency</span>
+          <span>Part 2: Social Fluency</span>
         </button>
         {everydayOpen && (
           <ol className="curriculum-list curriculum-list-everyday">
-            {everydayModules.map((module) => {
-              const moduleActive = courseLayer === 'fluency' && activeEverydayModuleId === module.id
+            {socialFluencyChapters.map((chapter) => {
+              const moduleActive = courseLayer === 'fluency' && activeEverydayModuleId === chapter.id
               return (
-                <li key={module.id}>
+                <li key={chapter.id}>
                   <button
                     type="button"
                     className={`curriculum-item ${moduleActive ? 'active' : ''}`}
                     aria-current={moduleActive ? 'page' : undefined}
-                    onClick={() => chooseEveryday(module.id)}
+                    onClick={() => chooseEveryday(chapter.id)}
                   >
-                    <span className="curriculum-number">{module.number}.</span>
-                    <span className="curriculum-item-copy"><strong>{module.enTitle || module.title}</strong><small>{module.title}</small></span>
+                    <span className="curriculum-number">{chapter.number}.</span>
+                    <span className="curriculum-item-copy"><strong>{chapter.enTitle}</strong><small>{chapter.ja}</small></span>
                   </button>
-                  {moduleActive && module.lessons && (
-                    <ol className="curriculum-sublist">
-                      {module.lessons.map((lesson) => (
-                        <li key={lesson.id}>
-                          <button
-                            type="button"
-                            className={`curriculum-subitem ${activeEverydayLessonId === lesson.id ? 'active' : ''}`}
-                            aria-current={activeEverydayLessonId === lesson.id ? 'step' : undefined}
-                            onClick={() => onSelectEverydayLesson?.(lesson.id)}
-                          >
-                            <strong>{lesson.title}</strong>
-                            <small>{lesson.ja}</small>
-                          </button>
-                        </li>
-                      ))}
-                    </ol>
-                  )}
                 </li>
               )
             })}
@@ -659,9 +643,9 @@ function CourseApp({ onHome }) {
   const [foundationOpen, setFoundationOpen] = useState(true)
   const [everydayOpen, setEverydayOpen] = useState(true)
 
-  // Everyday Fluency state
-  const [everydayModuleId, setEverydayModuleId] = useState('icebreakers')
-  const [everydayLessonId, setEverydayLessonId] = useState('check-in')
+  // Social Fluency state (chapter map is sourced from the book manuscript)
+  const [everydayModuleId, setEverydayModuleId] = useState('social-01')
+  const [everydayLessonId, setEverydayLessonId] = useState('social-01')
   const [everydayLearnStep, setEverydayLearnStep] = useState('context')
   const [everydayPracticeStep, setEverydayPracticeStep] = useState('substitute')
 
@@ -697,12 +681,9 @@ function CourseApp({ onHome }) {
   const selectEverydayModule = (id) => {
     setCourseLayer('fluency')
     setEverydayModuleId(id)
-    const mod = everydayModules.find((m) => m.id === id)
-    if (mod && mod.lessons) {
-      setEverydayLessonId(mod.lessons[0].id)
-      setEverydayLearnStep('context')
-      setEverydayPracticeStep('substitute')
-    }
+    setEverydayLessonId(id)
+    setEverydayLearnStep('context')
+    setEverydayPracticeStep('substitute')
   }
 
   const selectEverydayLesson = (id) => {
@@ -711,8 +692,8 @@ function CourseApp({ onHome }) {
     setEverydayPracticeStep('substitute')
   }
 
-  const currentEverydayModule = everydayModules.find((m) => m.id === everydayModuleId)
-  const currentEverydayLesson = currentEverydayModule?.lessons?.find((l) => l.id === everydayLessonId) || currentEverydayModule?.lessons?.[0]
+  const currentEverydayModule = socialFluencyChapters.find((chapter) => chapter.id === everydayModuleId)
+  const currentEverydayLesson = currentEverydayModule?.lessons?.find((lesson) => lesson.id === everydayLessonId) || currentEverydayModule?.lessons?.[0]
   const curriculum = {
     courseLayer,
     setCourseLayer,
@@ -750,7 +731,8 @@ function CourseApp({ onHome }) {
           <main className="lesson-main">
             {currentEverydayModule?.status === 'coming_soon' ? (
               <EverydayOverviewView
-                modules={everydayModules}
+                parts={socialFluencyParts}
+                activeModuleId={everydayModuleId}
                 onSelectModule={selectEverydayModule}
                 LessonTitle={LessonTitle}
               />

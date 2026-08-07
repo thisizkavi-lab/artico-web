@@ -430,6 +430,11 @@ svg { display: block; }
 .course-app .lesson-title p { max-width: 880px; color: var(--muted); font-size: 15px; line-height: 1.75; }
 .course-app .primary-button { min-height: 44px; padding: 0 19px; border-width: 1px; font-size: 14px; }
 .course-app .lesson-footer { margin-top: 38px; }
+.course-app .lesson-footer-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; margin-left: auto; }
+.course-app .secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 17px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--olive); font-size: 13px; font-weight: 600; cursor: pointer; transition: background .16s ease, border-color .16s ease, transform .16s ease; }
+.course-app .secondary-button:hover:not(:disabled) { border-color: #cbd4c9; background: var(--surface); transform: translateY(-1px); }
+.course-app .secondary-button:disabled { color: #b2b9b1; cursor: default; opacity: .72; }
+.course-app .secondary-button > span { font-size: 16px; line-height: 1; }
 
 .curriculum-tree { padding: 27px 16px 10px; }
 .curriculum-section + .curriculum-section { margin-top: 29px; }
@@ -638,6 +643,9 @@ svg { display: block; }
   .course-app .session-card { min-height: 0; padding: 24px; }
   .course-app .lesson-title h1 { font-size: 34px; letter-spacing: -1.2px; }
   .course-app .lesson-title p { font-size: 14px; }
+  .course-app .lesson-footer-actions { width: 100%; margin-left: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .course-app .lesson-footer-actions .secondary-button,
+  .course-app .lesson-footer-actions .primary-button { width: 100%; min-width: 0; padding-right: 12px; padding-left: 12px; }
 }
 
 /* Final calm visual pass: softer contrast, quieter type, and no active-edge accent. */

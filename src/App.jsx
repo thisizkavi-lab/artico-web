@@ -308,7 +308,7 @@ const theorySectionSets = {
   'how-it-works': howItWorksSections,
 }
 
-function TheoryBookLesson({ onNext, activeSectionId, eyebrow, title, ja, sections, closingTitle = '理解したら、次は口を動かします。', closingCopy = 'ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。', footerLabel, footerNote }) {
+function TheoryBookLesson({ onPrevious, previousLabel, onNext, activeSectionId, eyebrow, title, ja, sections, closingTitle = '理解したら、次は口を動かします。', closingCopy = 'ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。', footerLabel, footerNote }) {
   return (
     <section className="lesson-page orientation-page">
       <LessonTitle eyebrow={eyebrow} title={title} ja={ja} />
@@ -329,17 +329,17 @@ function TheoryBookLesson({ onNext, activeSectionId, eyebrow, title, ja, section
         ))}
       </div>
       <div className="orientation-closing"><strong>{closingTitle}</strong><p>{closingCopy}</p></div>
-      <LessonFooter label={footerLabel} note={footerNote} onNext={onNext} />
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label={footerLabel} note={footerNote} onNext={onNext} />
     </section>
   )
 }
 
-function Orientation({ onNext, activeSectionId }) {
-  return <TheoryBookLesson onNext={onNext} activeSectionId={activeSectionId} eyebrow="オリエンテーション · 01" title="言葉って、なぜ大切なのでしょうか？" ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。" sections={orientationSections} closingTitle="理解したら、次は学び方を選びます。" closingCopy="ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。" footerLabel="Articoの仕組み" footerNote="急がず、全体の地図をつかみましょう。" />
+function Orientation({ onPrevious, previousLabel, onNext, activeSectionId }) {
+  return <TheoryBookLesson onPrevious={onPrevious} previousLabel={previousLabel} onNext={onNext} activeSectionId={activeSectionId} eyebrow="オリエンテーション · 01" title="言葉って、なぜ大切なのでしょうか？" ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。" sections={orientationSections} closingTitle="理解したら、次は学び方を選びます。" closingCopy="ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。" footerLabel="Articoの仕組み" footerNote="急がず、全体の地図をつかみましょう。" />
 }
 
-function HowArticoWorksLesson({ onNext, activeSectionId }) {
-  return <TheoryBookLesson onNext={onNext} activeSectionId={activeSectionId} eyebrow="ARTICO · 02" title="Articoの仕組み" ja="あなたの現在地に合わせて、LearnとPracticeをどう使うかを案内します。" sections={howItWorksSections} closingTitle="地図が見えたら、最初の一歩へ。" closingCopy="基礎を確認しながら、今日のあなたに必要な会話から始めましょう。Articoは、理解と練習を何度でも行き来できます。" footerLabel="26文字に出会う" footerNote="次は、英語の最小単位へ。" />
+function HowArticoWorksLesson({ onPrevious, previousLabel, onNext, activeSectionId }) {
+  return <TheoryBookLesson onPrevious={onPrevious} previousLabel={previousLabel} onNext={onNext} activeSectionId={activeSectionId} eyebrow="ARTICO · 02" title="Articoの仕組み" ja="あなたの現在地に合わせて、LearnとPracticeをどう使うかを案内します。" sections={howItWorksSections} closingTitle="地図が見えたら、最初の一歩へ。" closingCopy="基礎を確認しながら、今日のあなたに必要な会話から始めましょう。Articoは、理解と練習を何度でも行き来できます。" footerLabel="26文字に出会う" footerNote="次は、英語の最小単位へ。" />
 }
 
 const emptyTheorySections = []
@@ -375,7 +375,7 @@ function useActiveTheorySection(activeStep) {
   return activeSectionId
 }
 
-function LettersLesson({ onNext }) {
+function LettersLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page letters-page">
       <LessonTitle eyebrow="Alphabets & sounds · 03" title="Meet the 26 letters" ja="英語のすべては、26文字から始まります。まずは大文字と小文字の形・名前に慣れましょう。" />
@@ -383,7 +383,7 @@ function LettersLesson({ onNext }) {
         <div className="letters-explain"><div className="number-card"><strong>26 letters</strong><b>2 forms</b><span>大文字と小文字は、同じ文字の二つの形です。</span></div><div className="matter-card"><h3>What matters now</h3><p>文字の形を見る</p><p>文字の名前を聞く</p><p>声に出してまねる</p></div></div>
         <div className="alphabet-board"><div><h3>Uppercase + lowercase</h3><span>同じ文字を、二つの形で見てみましょう</span></div><div className="alphabet-grid">{alphabet.map((letter) => <button key={letter} type="button" onClick={() => speakWithBrowser(letter)}><strong>{letter}</strong><span>{letter.toLowerCase()}</span></button>)}</div></div>
       </div>
-      <LessonFooter label="Hear the Alphabet" onNext={onNext} />
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Hear the Alphabet" onNext={onNext} />
     </section>
   )
 }
@@ -397,7 +397,7 @@ function VideoReference({ videoId, label, title, source, externalUrl }) {
   )
 }
 
-function HearLesson({ onNext }) {
+function HearLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page media-page">
       <LessonTitle eyebrow="Alphabets & sounds · 04" title="Hear the Alphabet" ja="動画は音のお手本です。見終わったら、Articoの手順で口を動かします。" />
@@ -405,12 +405,12 @@ function HearLesson({ onNext }) {
         <VideoReference label="External reference" title="The Super Simple Alphabet Song · lowercase" source="Super Simple · slow alphabet model" externalUrl="https://supersimple.com/phonics-fun/the-super-simple-alphabet-song-lowercase/" />
         <div className="guided-panel"><h3>Use the video in three passes</h3>{[['1', 'Listen', '最初は歌わず、リズムと音を聞く。'], ['2', 'Repeat', '止めずに、一緒に5回まで声に出す。'], ['3', 'Recall', '音を止めて、AからZまで思い出す。']].map(([n, title, copy]) => <div key={n}><b>{n}</b><span><strong>{title}</strong><small>{copy}</small></span></div>)}</div>
       </div>
-      <LessonFooter label="Write the Alphabet" onNext={onNext} />
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Write the Alphabet" onNext={onNext} />
     </section>
   )
 }
 
-function WriteLesson({ onNext }) {
+function WriteLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page media-page">
       <LessonTitle eyebrow="Alphabets & sounds · 05" title="Write the Alphabet" ja="画面をタップするだけでなく、紙に書いて文字の形を手と目に覚えさせます。" />
@@ -418,34 +418,38 @@ function WriteLesson({ onNext }) {
         <VideoReference videoId="7yMlDJg2IZw" label="YouTube reference" title="Learn to Write the ABCs" source="Bri Reads · handwriting practice" />
         <div className="writing-panel"><h3>Paper practice</h3><p>鉛筆、消しゴム、罫線のあるノートを用意してください。</p><ol><li>大文字と小文字を数回なぞる</li><li>見本を隠して、自分で書く</li><li>その文字で始まる短い単語を3つ書く</li></ol><a href="https://teachprints.com/letter-tracing-worksheets/" target="_blank" rel="noreferrer">Free tracing sheets ↗</a></div>
       </div>
-      <LessonFooter label="Letters & sounds" onNext={onNext} />
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Letters & sounds" onNext={onNext} />
     </section>
   )
 }
 
-function SoundsLesson({ onNext }) {
+function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page media-page">
       <LessonTitle eyebrow="Side note · letters versus sounds · 06" title="26 letters. About 44 sounds." ja="IPAを暗記する必要はありません。文字と音がいつも一対一ではないことを、ここで知っておきましょう。" />
       <div className="sound-explainer"><div className="comparison-table"><div><strong>System</strong><strong>Represents</strong><strong>Example</strong></div><div><span>Alphabet</span><span>Letters</span><span>“a”, “b”, “c”</span></div><div><span>IPA</span><span>Sounds</span><span>/æ/, /b/, /k/</span></div></div><div className="sound-note"><h3>Awareness, not mastery</h3><p>同じ文字でも、単語によって音が変わることがあります。辞書でIPAを見たときに「発音を表す記号」だと分かれば、今は十分です。</p></div></div>
       <div className="compact-video"><VideoReference videoId="z5nWOwM5HsI" label="YouTube reference" title="Learn all 44 British English sounds" source="English for Traveling · IPA overview" /><div><h3>One viewing is enough for now.</h3><p>すべての記号を覚えようとせず、英語には文字より多くの音があることを耳で確認します。</p></div></div>
-      <LessonFooter label="Tongue Twisters" onNext={onNext} />
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Tongue Twisters" onNext={onNext} />
     </section>
   )
 }
 
-function TongueIntro({ onPractice }) {
+function TongueIntro({ onPrevious, previousLabel, onPractice }) {
   return (
     <section className="lesson-page tongue-intro-page">
       <LessonTitle eyebrow="Tongue twisters · introduction · 07" title="Train transitions, not speed." ja="早口で言う競争ではありません。英語の音から次の音へ、正確に切り替える練習です。" />
       <div className="tongue-intro-layout"><div className="set-summary"><div><b>12</b><span>classic lines</span></div><div><b>4</b><span>training groups</span></div><div><b>1</b><span>repeatable loop</span></div><p>会話練習の代わりではありません。選んだ音の動きを、繰り返せる形にします。</p></div><div className="group-preview">{tongueGroups.map((group) => <article key={group.id}><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.ja}</p><span>3 classics</span></div></article>)}</div></div>
-      <div className="lesson-footer"><span>Learn complete · 練習はPracticeから始まります</span><PrimaryButton onClick={onPractice}>Open the classic set</PrimaryButton></div>
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} note="Learn complete · 練習はPracticeから始まります" label="Open the classic set" onNext={onPractice} />
     </section>
   )
 }
 
-function LessonFooter({ label, note = 'Accuracy before speed.', onNext }) {
-  return <div className="lesson-footer"><span>{note}</span><PrimaryButton onClick={onNext}>{label}</PrimaryButton></div>
+function SecondaryButton({ children, onClick, disabled = false }) {
+  return <button className="secondary-button" type="button" onClick={onClick} disabled={disabled}><span aria-hidden="true">←</span>{children}</button>
+}
+
+function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext }) {
+  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}>{previousLabel}</SecondaryButton><PrimaryButton onClick={onNext}>{label}</PrimaryButton></div></div>
 }
 
 const theoryOutlines = {
@@ -474,15 +478,18 @@ function TheoryOutline({ activeStep, activeSectionId }) {
 function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
   const index = learnSteps.findIndex((step) => step.id === activeStep)
   const activeTheorySectionId = useActiveTheorySection(activeStep)
+  const previousStep = learnSteps[index - 1]
+  const previous = previousStep ? () => setActiveStep(previousStep.id) : undefined
+  const previousLabel = previousStep?.label || 'Previous'
   const next = () => setActiveStep(learnSteps[Math.min(index + 1, learnSteps.length - 1)].id)
   const content = {
-    orientation: <Orientation onNext={next} activeSectionId={activeTheorySectionId} />,
-    'how-it-works': <HowArticoWorksLesson onNext={next} activeSectionId={activeTheorySectionId} />,
-    letters: <LettersLesson onNext={next} />,
-    hear: <HearLesson onNext={next} />,
-    write: <WriteLesson onNext={next} />,
-    sounds: <SoundsLesson onNext={next} />,
-    'tongue-intro': <TongueIntro onPractice={openPractice} />,
+    orientation: <Orientation onPrevious={previous} previousLabel={previousLabel} onNext={next} activeSectionId={activeTheorySectionId} />,
+    'how-it-works': <HowArticoWorksLesson onPrevious={previous} previousLabel={previousLabel} onNext={next} activeSectionId={activeTheorySectionId} />,
+    letters: <LettersLesson onPrevious={previous} previousLabel={previousLabel} onNext={next} />,
+    hear: <HearLesson onPrevious={previous} previousLabel={previousLabel} onNext={next} />,
+    write: <WriteLesson onPrevious={previous} previousLabel={previousLabel} onNext={next} />,
+    sounds: <SoundsLesson onPrevious={previous} previousLabel={previousLabel} onNext={next} />,
+    'tongue-intro': <TongueIntro onPrevious={previous} previousLabel={previousLabel} onPractice={openPractice} />,
   }[activeStep]
 
   return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} activeSectionId={activeTheorySectionId} /></div></main></div>
@@ -531,11 +538,12 @@ function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup
   )
 }
 
-function TwisterLibrary({ onSelect }) {
+function TwisterLibrary({ onSelect, onPrevious, onNext }) {
   return (
     <section className="practice-page library-page">
       <LessonTitle eyebrow="Classic set · 12 drills" title="12 classics. Nothing random." ja="定番の言い回しだけを、発音の目的別に整理しました。最初はゆっくり、明瞭さを保てたら自然な速さへ。" />
       <div className="twister-group-grid">{tongueGroups.map((group) => <article id={`group-${group.id}`} className="twister-group" key={group.id}><header><b>{group.number}</b><div><h2>{group.title}</h2><p>{group.ja}</p></div></header><div>{group.items.map((item) => <button key={item.id} type="button" onClick={() => onSelect({ ...item, groupId: group.id, groupTitle: group.title })}><span>{item.target}</span><strong>{item.phrase}</strong><small>{item.duration}</small><ArrowIcon /></button>)}</div></article>)}</div>
+      <LessonFooter previousLabel="Tongue Twisters" onPrevious={onPrevious} note="Practice begins here · 口の動きを整えます" label="Four-week routine" onNext={onNext} />
     </section>
   )
 }
@@ -583,7 +591,7 @@ function useSpeechPlayer() {
   return { playing, progress, play, stop }
 }
 
-function TwisterDrill({ item }) {
+function TwisterDrill({ item, onPrevious, previousLabel, onNext, nextLabel }) {
   const [speed, setSpeed] = useState('model')
   const [stage, setStage] = useState(1)
   const player = useSpeechPlayer()
@@ -604,11 +612,12 @@ function TwisterDrill({ item }) {
         <div className="drill-guidance"><div className="why-card"><small>Why this matters</small><p>{item.why}</p></div><div className="sequence-card"><h2>Today’s guided sequence</h2>{[['Listen once', 'まだ話さない'], ['Slow ×3', '区切って明確に'], ['With rhythm ×3', '明瞭さを保つ'], ['Transfer ×2', '日常文へ移す']].map(([label, ja], i) => <button aria-pressed={stage === i + 1} className={stage === i + 1 ? 'active' : stage > i + 1 ? 'done' : ''} key={label} type="button" onClick={() => setStage(i + 1)}><b>{i + 1}</b><strong>{label}</strong><span>{ja}</span></button>)}</div></div>
       </div>
       <div className="transfer-card"><small>Transfer to normal English</small>{item.transfer.map((phrase) => <button type="button" key={phrase} onClick={() => player.play(phrase, 0.86)}>“{phrase}” <PlayIcon /></button>)}<span>同じ口の動きを、普通の文でも2回ずつ使います。</span></div>
+      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} note="One drill at a time · 速度より明瞭さ" label={nextLabel} onNext={onNext} />
     </section>
   )
 }
 
-function RoutinePage({ onStart }) {
+function RoutinePage({ onStart, onPrevious }) {
   const weeks = [
     ['Week 1', 'Sound contrasts', tongueGroups[0].items, 'Focused first'],
     ['Week 2', 'Clean consonants', tongueGroups[1].items, 'Begin to mix'],
@@ -620,12 +629,12 @@ function RoutinePage({ onStart }) {
       <LessonTitle eyebrow="Suggested rotation · 4 weeks" title="Repeat the set. Change the order." ja="最初は同じ音をまとめて練習し、慣れたら違うグループを混ぜます。4週間は繰り返すための型です。" />
       <div className="week-grid">{weeks.map(([week, title, items, label]) => <article key={week}><header><small>{week}</small><h2>{title}</h2></header>{items.map((item) => <span key={item.id}>{item.phrase}</span>)}<p>{week === 'Week 1' ? '同じグループを集中して練習。' : week === 'Week 4' ? '全グループから順番を変えて選ぶ。' : '重点練習の後に、前の週から1本混ぜる。'}</p><b>{label}</b></article>)}</div>
       <div className="daily-routine"><div><small>Today · 8–10 minutes</small><h2>One focus card, then two mixed cards</h2><p>週5日を目安に。休んでも記録は失われません。</p></div><ol>{[['Prepare', '30秒'], ['Model', '1回聞く'], ['Slow', '3回'], ['Rhythm', '3回'], ['Transfer', '普通の文 ×2'], ['Return', '次回また行う']].map(([label, ja], i) => <li key={label}><b>{i + 1}</b><strong>{label}</strong><span>{ja}</span></li>)}</ol></div>
-      <div className="lesson-footer"><span>Suggested, not required · 同じ週を繰り返しても大丈夫です</span><PrimaryButton onClick={onStart}>Start with Red lorry</PrimaryButton></div>
+      <LessonFooter previousLabel="All classics" onPrevious={onPrevious} note="Suggested, not required · 同じ週を繰り返しても大丈夫です" label="Start with Red lorry" onNext={onStart} />
     </section>
   )
 }
 
-function PracticeMode({ selected, setSelected, view, setView, curriculum }) {
+function PracticeMode({ selected, setSelected, view, setView, curriculum, onBackToLearn }) {
   const [pendingGroupId, setPendingGroupId] = useState(null)
   const [activeGroupId, setActiveGroupId] = useState(null)
 
@@ -668,6 +677,16 @@ function PracticeMode({ selected, setSelected, view, setView, curriculum }) {
     setPendingGroupId(groupId)
   }
 
+  const selectedIndex = selected ? allTwisters.findIndex((item) => item.id === selected.id) : -1
+  const nextItem = selectedIndex >= 0 ? allTwisters[selectedIndex + 1] : null
+  const selectNextDrill = () => {
+    if (nextItem) {
+      selectTwister(nextItem)
+      return
+    }
+    changeView('routine')
+  }
+
   return (
     <div className="app-body">
       <PracticeSidebar
@@ -682,11 +701,11 @@ function PracticeMode({ selected, setSelected, view, setView, curriculum }) {
       />
       <main className="lesson-main practice-main">
         {selected ? (
-          <TwisterDrill item={selected} />
+          <TwisterDrill item={selected} onPrevious={() => changeView('library')} previousLabel="All classics" onNext={selectNextDrill} nextLabel={nextItem ? `Next: ${nextItem.target}` : 'Four-week routine'} />
         ) : view === 'routine' ? (
-          <RoutinePage onStart={() => selectTwister(allTwisters[0])} />
+          <RoutinePage onPrevious={() => changeView('library')} onStart={() => selectTwister(allTwisters[0])} />
         ) : (
-          <TwisterLibrary onSelect={selectTwister} />
+          <TwisterLibrary onSelect={selectTwister} onPrevious={onBackToLearn} onNext={() => changeView('routine')} />
         )}
       </main>
     </div>
@@ -720,6 +739,7 @@ function CourseApp({ onHome }) {
   }, [notice])
 
   const openPractice = () => { setMode('practice'); setPracticeView('library'); setSelected(null); setEverydayPracticeStep('substitute'); }
+  const backToTongueIntro = () => { setMode('learn'); setCourseLayer('foundation'); setActiveStep('tongue-intro'); setSelected(null); }
   const changeMode = (next) => {
     setMode(next)
     if (next === 'practice') {
@@ -776,7 +796,7 @@ function CourseApp({ onHome }) {
         mode === 'learn' ? (
           <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} />
         ) : (
-          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} />
+          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} onBackToLearn={backToTongueIntro} />
         )
       ) : (
         <div className="app-body">

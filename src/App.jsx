@@ -302,64 +302,10 @@ function LessonTitle({ eyebrow, title, ja }) {
   return <div className="lesson-title"><small>{eyebrow}</small><h1>{title}</h1><p>{ja}</p></div>
 }
 
-function OrientationProgress({ sections, activeSectionId, activeIndex, progress, onJump }) {
-  return (
-    <div className="orientation-progress" aria-label="このページの読書進捗">
-      <div className="orientation-progress-head">
-        <div><small>このページの進み具合</small><strong>{sections[activeIndex]?.title}</strong></div>
-        <b>{progress}%</b>
-      </div>
-      <div className="orientation-progress-track" role="progressbar" aria-label="読書の進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow={progress}><span style={{ width: `${progress}%` }} /></div>
-      <div className="orientation-progress-meta"><span>{activeIndex + 1} / {sections.length} セクション</span><span>スクロールして読み進める</span></div>
-      <nav className="orientation-section-nav" aria-label="オリエンテーションの章立て">
-        <ol>
-          {sections.map((section) => (
-            <li key={section.id}>
-              <button type="button" className={activeSectionId === section.id ? 'active' : ''} aria-current={activeSectionId === section.id ? 'location' : undefined} onClick={() => onJump(section.id)}>
-                <span>{section.number}</span><strong>{section.title}</strong>
-              </button>
-            </li>
-          ))}
-        </ol>
-      </nav>
-    </div>
-  )
-}
-
-function Orientation({ onNext }) {
-  const [activeSectionId, setActiveSectionId] = useState(orientationSections[0].id)
-  const [progress, setProgress] = useState(0)
-  const activeIndex = Math.max(0, orientationSections.findIndex((section) => section.id === activeSectionId))
-
-  useEffect(() => {
-    const updateReadingState = () => {
-      const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1)
-      const nextProgress = Math.round(Math.min(1, Math.max(0, window.scrollY / maxScroll)) * 100)
-      let nextSection = orientationSections[0].id
-      orientationSections.forEach((section) => {
-        const element = document.getElementById(section.id)
-        if (element && element.getBoundingClientRect().top <= window.innerHeight * 0.34) nextSection = section.id
-      })
-      if (nextProgress >= 97) nextSection = orientationSections[orientationSections.length - 1].id
-      setProgress(nextProgress)
-      setActiveSectionId(nextSection)
-    }
-
-    window.addEventListener('scroll', updateReadingState, { passive: true })
-    window.addEventListener('resize', updateReadingState)
-    updateReadingState()
-    return () => {
-      window.removeEventListener('scroll', updateReadingState)
-      window.removeEventListener('resize', updateReadingState)
-    }
-  }, [])
-
-  const jumpToSection = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-
+function Orientation({ onNext, activeSectionId }) {
   return (
     <section className="lesson-page orientation-page">
       <LessonTitle eyebrow="オリエンテーション · 01" title="言葉って、なぜ大切なのでしょうか？" ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。" />
-      <OrientationProgress sections={orientationSections} activeSectionId={activeSectionId} activeIndex={activeIndex} progress={progress} onJump={jumpToSection} />
       <div className="orientation-reader">
         {orientationSections.map((section, index) => (
           <article className={`orientation-section ${activeSectionId === section.id ? 'is-active' : ''}`} id={section.id} key={section.id}>
@@ -379,6 +325,35 @@ function Orientation({ onNext }) {
       <LessonFooter label="26文字に出会う" note="急がず、明瞭さを大切に。" onNext={onNext} />
     </section>
   )
+}
+
+function useOrientationActiveSection(activeStep) {
+  const [activeSectionId, setActiveSectionId] = useState(orientationSections[0].id)
+
+  useEffect(() => {
+    if (activeStep !== 'orientation') return undefined
+
+    const updateReadingState = () => {
+      let nextSection = orientationSections[0].id
+      orientationSections.forEach((section) => {
+        const element = document.getElementById(section.id)
+        if (element && element.getBoundingClientRect().top <= window.innerHeight * 0.34) nextSection = section.id
+      })
+      const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80
+      if (atBottom) nextSection = orientationSections[orientationSections.length - 1].id
+      setActiveSectionId(nextSection)
+    }
+
+    window.addEventListener('scroll', updateReadingState, { passive: true })
+    window.addEventListener('resize', updateReadingState)
+    updateReadingState()
+    return () => {
+      window.removeEventListener('scroll', updateReadingState)
+      window.removeEventListener('resize', updateReadingState)
+    }
+  }, [activeStep])
+
+  return activeSectionId
 }
 
 function LettersLesson({ onNext }) {
@@ -463,24 +438,25 @@ const theoryOutlines = {
   'tongue-intro': ['Why tongue twisters', 'A small focused set', 'Practice begins here'],
 }
 
-function TheoryOutline({ activeStep }) {
+function TheoryOutline({ activeStep, activeSectionId }) {
   const items = theoryOutlines[activeStep] || []
   const links = activeStep === 'orientation'
-    ? orientationSections.map((section) => ({ label: section.title, href: `#${section.id}` }))
+    ? orientationSections.map((section) => ({ label: section.title, href: `#${section.id}`, active: activeSectionId === section.id }))
     : items.map((item, index) => ({ label: item, href: `#theory-${activeStep}-${index}` }))
   return (
     <aside className="theory-outline" aria-label={activeStep === 'orientation' ? 'このページ' : 'On this page'}>
       <strong>{activeStep === 'orientation' ? 'このページ' : 'On this page'}</strong>
-      <ol>{links.map((item) => <li key={item.href}><a href={item.href}>{item.label}</a></li>)}</ol>
+      <ol>{links.map((item) => <li key={item.href}><a className={item.active ? 'active' : undefined} aria-current={item.active ? 'location' : undefined} href={item.href}>{item.label}</a></li>)}</ol>
     </aside>
   )
 }
 
 function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
   const index = learnSteps.findIndex((step) => step.id === activeStep)
+  const activeOrientationSectionId = useOrientationActiveSection(activeStep)
   const next = () => setActiveStep(learnSteps[Math.min(index + 1, learnSteps.length - 1)].id)
   const content = {
-    orientation: <Orientation onNext={next} />,
+    orientation: <Orientation onNext={next} activeSectionId={activeOrientationSectionId} />,
     letters: <LettersLesson onNext={next} />,
     hear: <HearLesson onNext={next} />,
     write: <WriteLesson onNext={next} />,
@@ -488,7 +464,7 @@ function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
     'tongue-intro': <TongueIntro onPractice={openPractice} />,
   }[activeStep]
 
-  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} /></div></main></div>
+  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} activeSectionId={activeOrientationSectionId} /></div></main></div>
 }
 
 function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup, pendingGroupId, activeGroupId, curriculum }) {

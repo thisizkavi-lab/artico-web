@@ -414,7 +414,7 @@ function VideoReference({ videoId, label, title, source, externalUrl }) {
   )
 }
 
-function YouTubeAlphabetPlayer() {
+function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
   const containerRef = useRef(null)
   const iframeRef = useRef(null)
   const hasStartedRef = useRef(false)
@@ -434,7 +434,7 @@ function YouTubeAlphabetPlayer() {
     const playWhenReady = () => {
       if (!playerLoaded) return
       if (!hasStartedRef.current) {
-        sendCommand('seekTo', [20, true])
+        sendCommand('seekTo', [startAt, true])
         hasStartedRef.current = true
       }
       sendCommand('playVideo')
@@ -473,23 +473,24 @@ function YouTubeAlphabetPlayer() {
   }, [])
 
   const origin = typeof window === 'undefined' ? '' : `&origin=${encodeURIComponent(window.location.origin)}`
-  const source = `https://www.youtube-nocookie.com/embed/MgmIHtp-ZQM?autoplay=1&start=20&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
+  const start = startAt > 0 ? `&start=${startAt}` : ''
+  const source = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1${start}&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
 
   return (
-    <div className="youtube-alphabet-player" ref={containerRef}>
+    <div className="youtube-lesson-player" ref={containerRef}>
       <div className="youtube-player-frame">
         <iframe
           ref={iframeRef}
           src={source}
-          title="The Alphabet Song | Lower Case Letters | Super Simple ABCs"
+          title={title}
           loading="eager"
           allow="autoplay; accelerometer; encrypted-media; picture-in-picture; web-share"
           allowFullScreen
         />
       </div>
       <div className="youtube-player-caption">
-        <span>動画：Super Simple ABCs / Super Simple Songs</span>
-        <small>20秒から再生 · スクロール中は一時停止</small>
+        <span>{credit}</span>
+        <small>{startAt > 0 ? `${startAt}秒から再生 · ` : ''}スクロール中は一時停止</small>
       </div>
     </div>
   )
@@ -508,7 +509,7 @@ function HearLesson({ onPrevious, previousLabel, onNext }) {
             <p className="alphabet-song-focus">前のレッスンでは、大文字と小文字を見分ける練習をしました。今回の目標は、アルファベット全体に慣れることです。特に、<strong>文字の順番と発音（音）</strong>を意識してみましょう。</p>
           </article>
           <div id="theory-hear-1">
-            <YouTubeAlphabetPlayer />
+            <YouTubeLessonPlayer videoId="MgmIHtp-ZQM" title="The Alphabet Song | Lower Case Letters | Super Simple ABCs" credit="動画：Super Simple ABCs / Super Simple Songs" startAt={20} />
           </div>
           <article className="alphabet-song-after" id="theory-hear-3">
             <strong>すぐに全部を覚える必要はありません。</strong>
@@ -532,11 +533,71 @@ function HearLesson({ onPrevious, previousLabel, onNext }) {
 
 function WriteLesson({ onPrevious, previousLabel, onNext }) {
   return (
-    <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 05" title="Write the Alphabet" ja="画面をタップするだけでなく、紙に書いて文字の形を手と目に覚えさせます。" />
-      <div className="media-layout">
-        <VideoReference videoId="7yMlDJg2IZw" label="YouTube reference" title="Learn to Write the ABCs" source="Bri Reads · handwriting practice" />
-        <div className="writing-panel"><h3>Paper practice</h3><p>鉛筆、消しゴム、罫線のあるノートを用意してください。</p><ol><li>大文字と小文字を数回なぞる</li><li>見本を隠して、自分で書く</li><li>その文字で始まる短い単語を3つ書く</li></ol><a href="https://teachprints.com/letter-tracing-worksheets/" target="_blank" rel="noreferrer">Free tracing sheets ↗</a></div>
+    <section className="lesson-page writing-lesson-page">
+      <LessonTitle eyebrow="Alphabets · 05" title="Write the Alphabet" ja="アルファベットを書いてみましょう。文字の形を、目だけでなく手にも覚えさせます。" />
+      <div className="writing-lesson-layout">
+        <div className="writing-lesson-main">
+          <article className="writing-lesson-card writing-intro-card" id="theory-write-0">
+            <h2>アルファベットを書いてみましょう</h2>
+            <p>「ABCの歌」を聞いたり歌ったりすることは、アルファベットに慣れるためのとても良い方法です。でも、聞くだけでは足りないことがよくあります。文字を本当に自分のものにするために、手で書いて練習してみましょう。</p>
+            <p>実際に書くことで、一つひとつの文字をもっと丁寧に見ることができます。文字の形、書く方向、線を引く順番に気づけます。これにより、アルファベットを覚えるのが早くなり、次に文字を見たときに、もっと親しみを感じられるようになります。</p>
+            <p>今の段階では、美しい字を書く練習をしているわけではありません。英語の文字の基本的な形と、普段どのように書かれているかを学ぶだけで十分です。</p>
+          </article>
+
+          <article className="writing-lesson-card writing-method-card" id="theory-write-2">
+            <div className="writing-section-heading"><span>02</span><div><small>練習の方法</small><h2>早く書こうとしなくても大丈夫です。</h2></div></div>
+            <p>まずは書き方の動画を見て、それぞれの文字がどのように作られているかを確認しましょう。文字がどこから始まるか、線を引く方向に注目してください。</p>
+            <div className="writing-video-wrap"><YouTubeLessonPlayer videoId="DnNqoEXoGdg" title="How to Write Letters A-Z | Learn to Write the ABCs" credit="動画：DorufaVSArt / YouTube" /></div>
+            <p>その後、紙の上で練習します。次のようなシンプルな順番で進めてみましょう。</p>
+            <ol className="writing-step-list">
+              <li><b>01</b><span>文字を何回かなぞって書く。</span></li>
+              <li><b>02</b><span>見本を見ずに、自分で何回か書いてみる。</span></li>
+              <li><b>03</b><span>大文字と小文字の両方を練習する。</span></li>
+              <li><b>04</b><span>慣れてきたら、その文字から始まるシンプルな言葉を書く。</span></li>
+            </ol>
+            <div className="writing-example"><small>例：A と a を練習したら</small><strong>apple — ant — animal</strong></div>
+            <p>完璧を目指さなくても大丈夫です。最初は書くのが遅かったり、線の太さがバラバラだったりするかもしれません。それは完全に普通のことです。文字をはっきりと書き、自分が何を書いているかを意識することに集中しましょう。</p>
+          </article>
+
+          <article className="writing-lesson-card writing-names-card" id="theory-write-3">
+            <h2>練習：知っている名前を書いてみよう</h2>
+            <p>アルファベットの基本的な形がわかったら、今度はそれを実際に使ってみましょう。ただ「A, B, C, D...」と練習する代わりに、あなたにとって身近な名前を書きます。</p>
+            <div className="writing-name-grid">
+              <section><span>01</span><h3>自分の名前を書く</h3><p>まずは自分の名前から始めましょう。英語で名前を書くとき、通常、名前の最初の文字は大文字（頭文字）で書きます。</p><div className="writing-name-example"><small>例</small><strong>Taro Yamada</strong><strong>Hanako Suzuki</strong><em>Taro → T – A – R – O</em></div><p>日本語では伝統的に名字が先ですが、多くの英語圏では名前が先、名字が後に来ます。今は両方のスタイルを知っていれば十分です。</p></section>
+              <section><span>02</span><h3>家族の名前を書く</h3><p>家族のことを思い浮かべて、名前を書いてみましょう。最初の文字を大文字にすることを忘れないでください。</p><div className="writing-word-list"><span>mother</span><span>father</span><span>brother</span><span>sister</span><span>grandmother</span><span>grandfather</span></div><p>書いた後は、それぞれの名前を声に出し、1文字ずつスペルアウトします。</p></section>
+              <section><span>03</span><h3>友達の名前を書く</h3><p>親友、クラスメイト、同僚など、あなたがよく知っている人の名前をいくつか書いてみましょう。</p><p>同じように、まず名前を書いてから、声に出して1文字ずつ発音してみます。</p></section>
+            </div>
+          </article>
+
+          <article className="writing-lesson-card writing-purpose-card" id="theory-write-4">
+            <h2>なぜこの練習が役に立つのか</h2>
+            <p>アルファベットの文字だけを練習するのも役に立ちますが、身近な名前を使うことで、文字がとても意味のあるものに変わります。</p>
+            <p>自分の名前は、新しい言葉で書く最も大切な言葉の一つです。書類、申請書、予約、自己紹介、アカウント作成など、多くの場所で自分の名前を書くことになります。</p>
+            <p>この練習が終わる頃には、単にアルファベットを覚える以上のことができているはずです。あなたの人生につながる「本物の言葉」を書くために、英語の文字を使い始めているのです。</p>
+            <div className="writing-assignment"><h3>あなたの課題</h3><p>次のものを書いてみましょう。</p><ul><li>自分の名前</li><li>家族の名前</li><li>3〜5人の友達や知人の名前</li></ul><p>それぞれの名前を書いた後、1文字ずつ声に出して発音してください。目標はシンプルです。</p><strong>書く。読む。発音する。</strong></div>
+          </article>
+
+          <article className="writing-lesson-card writing-finish-card" id="theory-write-5">
+            <h2>筆記体について</h2>
+            <p>英語の書き方には、文字がつながって流れるように書く「筆記体」というスタイルもあります。知っておくことは役に立ちますが、この初心者向けコースでは筆記体の練習は行いません。</p>
+            <p>今は、本、ウェブサイト、看板、アプリ、教材などで最もよく目にする、通常の「ブロック体（プリント体）」に集中しましょう。普通の書き方に慣れてから、興味があれば筆記体や英語のカリグラフィーに挑戦してください。</p>
+            <h2>焦らず進めましょう</h2>
+            <p>大人の学習者は、すでに別の言葉の書き方を知っているため、子どもより早く進めることがあります。定期的に練習すれば、数日または1週間ほどで基本的なアルファベットに慣れることもできますが、急ぐ必要はありません。</p>
+            <p>大切なのは、しっかりとした基礎を作ることです。鉛筆とノートを用意して、動画を見ながら練習問題に挑戦し、アルファベットを1文字ずつ自分のものにしていきましょう。</p>
+          </article>
+        </div>
+
+        <aside className="writing-lesson-aside">
+          <article className="writing-supplies-card" id="theory-write-1">
+            <small>まず、これだけ</small><h2>準備するもの</h2>
+            <p>必要なものは、とてもシンプルです。</p>
+            <ul className="writing-supplies-list"><li>鉛筆</li><li>消しゴム</li><li>鉛筆削り</li><li>英語の練習用ノート（または線が入ったノート）</li></ul>
+            <p>練習中は、ペンよりも鉛筆がおすすめです。間違えても簡単に直すことができるからです。</p>
+            <p>できれば、初心者向けのガイド線が入ったノートを使いましょう。無料でプリントできる練習シートを使っても構いません。</p>
+            <a href="https://teachprints.com/letter-tracing-worksheets/" target="_blank" rel="noreferrer">無料の練習シートを見る ↗</a>
+          </article>
+          <div className="writing-paper-note"><strong>紙と手で練習する</strong><p>キーボード入力や画面のタップは、手で書く練習の代わりにはなりません。今日だけは、紙と鉛筆を使ってください。</p></div>
+        </aside>
       </div>
       <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Letters & sounds" onNext={onNext} />
     </section>
@@ -577,7 +638,7 @@ const theoryOutlines = {
   'how-it-works': howItWorksSections.map((section) => section.title),
   letters: ['Meet the 26 letters', 'Uppercase and lowercase', 'What matters now'],
   hear: ['Hear the alphabet', 'Listen', 'Repeat', 'Recall'],
-  write: ['Write the alphabet', 'Paper practice', 'Move on'],
+  write: ['Write the alphabet', 'Prepare', 'Practice', 'Write real names', 'Why this matters', 'Cursive & pace'],
   sounds: ['Letters versus sounds', 'Awareness, not mastery', 'One viewing is enough'],
   'tongue-intro': ['Why tongue twisters', 'A small focused set', 'Practice begins here'],
 }

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { allTwisters, alphabet, learnSteps, tongueGroups } from './data'
 import { socialFluencyChapters, socialFluencyParts } from './socialFluencyCurriculum'
 import { orientationSections } from './orientationContent'
+import { howItWorksSections } from './howItWorksContent'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
 
 function speakWithBrowser(text, options = {}) {
@@ -302,12 +303,17 @@ function LessonTitle({ eyebrow, title, ja }) {
   return <div className="lesson-title"><small>{eyebrow}</small><h1>{title}</h1><p>{ja}</p></div>
 }
 
-function Orientation({ onNext, activeSectionId }) {
+const theorySectionSets = {
+  orientation: orientationSections,
+  'how-it-works': howItWorksSections,
+}
+
+function TheoryBookLesson({ onNext, activeSectionId, eyebrow, title, ja, sections, closingTitle = '理解したら、次は口を動かします。', closingCopy = 'ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。', footerLabel, footerNote }) {
   return (
     <section className="lesson-page orientation-page">
-      <LessonTitle eyebrow="オリエンテーション · 01" title="言葉って、なぜ大切なのでしょうか？" ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。" />
+      <LessonTitle eyebrow={eyebrow} title={title} ja={ja} />
       <div className="orientation-reader">
-        {orientationSections.map((section, index) => (
+        {sections.map((section, index) => (
           <article className={`orientation-section ${activeSectionId === section.id ? 'is-active' : ''}`} id={section.id} key={section.id}>
             <header className="orientation-section-header">
               <span>{section.number}</span>
@@ -315,35 +321,48 @@ function Orientation({ onNext, activeSectionId }) {
             </header>
             <div className="orientation-section-body">
               {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {section.items && <ul className="theory-section-list">{section.items.map((item) => <li key={item}>{item}</li>)}</ul>}
               {section.callout && <aside className="orientation-callout"><strong>{section.callout.label}</strong><p>{section.callout.text}</p></aside>}
               {section.emphasis && <p className="orientation-emphasis">{section.emphasis}</p>}
             </div>
           </article>
         ))}
       </div>
-      <div className="orientation-closing"><strong>理解したら、次は口を動かします。</strong><p>ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。</p></div>
-      <LessonFooter label="26文字に出会う" note="急がず、明瞭さを大切に。" onNext={onNext} />
+      <div className="orientation-closing"><strong>{closingTitle}</strong><p>{closingCopy}</p></div>
+      <LessonFooter label={footerLabel} note={footerNote} onNext={onNext} />
     </section>
   )
 }
 
-function useOrientationActiveSection(activeStep) {
+function Orientation({ onNext, activeSectionId }) {
+  return <TheoryBookLesson onNext={onNext} activeSectionId={activeSectionId} eyebrow="オリエンテーション · 01" title="言葉って、なぜ大切なのでしょうか？" ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。" sections={orientationSections} closingTitle="理解したら、次は学び方を選びます。" closingCopy="ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。" footerLabel="Articoの仕組み" footerNote="急がず、全体の地図をつかみましょう。" />
+}
+
+function HowArticoWorksLesson({ onNext, activeSectionId }) {
+  return <TheoryBookLesson onNext={onNext} activeSectionId={activeSectionId} eyebrow="ARTICO · 02" title="Articoの仕組み" ja="あなたの現在地に合わせて、LearnとPracticeをどう使うかを案内します。" sections={howItWorksSections} closingTitle="地図が見えたら、最初の一歩へ。" closingCopy="基礎を確認しながら、今日のあなたに必要な会話から始めましょう。Articoは、理解と練習を何度でも行き来できます。" footerLabel="26文字に出会う" footerNote="次は、英語の最小単位へ。" />
+}
+
+const emptyTheorySections = []
+
+function useActiveTheorySection(activeStep) {
+  const sections = theorySectionSets[activeStep] || emptyTheorySections
   const [activeSectionId, setActiveSectionId] = useState(orientationSections[0].id)
 
   useEffect(() => {
-    if (activeStep !== 'orientation') return undefined
+    if (!sections.length) return undefined
 
     const updateReadingState = () => {
-      let nextSection = orientationSections[0].id
-      orientationSections.forEach((section) => {
+      let nextSection = sections[0].id
+      sections.forEach((section) => {
         const element = document.getElementById(section.id)
         if (element && element.getBoundingClientRect().top <= window.innerHeight * 0.34) nextSection = section.id
       })
       const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80
-      if (atBottom) nextSection = orientationSections[orientationSections.length - 1].id
+      if (atBottom) nextSection = sections[sections.length - 1].id
       setActiveSectionId(nextSection)
     }
 
+    setActiveSectionId(sections[0].id)
     window.addEventListener('scroll', updateReadingState, { passive: true })
     window.addEventListener('resize', updateReadingState)
     updateReadingState()
@@ -351,7 +370,7 @@ function useOrientationActiveSection(activeStep) {
       window.removeEventListener('scroll', updateReadingState)
       window.removeEventListener('resize', updateReadingState)
     }
-  }, [activeStep])
+  }, [activeStep, sections])
 
   return activeSectionId
 }
@@ -359,7 +378,7 @@ function useOrientationActiveSection(activeStep) {
 function LettersLesson({ onNext }) {
   return (
     <section className="lesson-page letters-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 02" title="Meet the 26 letters" ja="英語のすべては、26文字から始まります。まずは大文字と小文字の形・名前に慣れましょう。" />
+      <LessonTitle eyebrow="Alphabets & sounds · 03" title="Meet the 26 letters" ja="英語のすべては、26文字から始まります。まずは大文字と小文字の形・名前に慣れましょう。" />
       <div className="letters-layout">
         <div className="letters-explain"><div className="number-card"><strong>26 letters</strong><b>2 forms</b><span>大文字と小文字は、同じ文字の二つの形です。</span></div><div className="matter-card"><h3>What matters now</h3><p>文字の形を見る</p><p>文字の名前を聞く</p><p>声に出してまねる</p></div></div>
         <div className="alphabet-board"><div><h3>Uppercase + lowercase</h3><span>同じ文字を、二つの形で見てみましょう</span></div><div className="alphabet-grid">{alphabet.map((letter) => <button key={letter} type="button" onClick={() => speakWithBrowser(letter)}><strong>{letter}</strong><span>{letter.toLowerCase()}</span></button>)}</div></div>
@@ -381,7 +400,7 @@ function VideoReference({ videoId, label, title, source, externalUrl }) {
 function HearLesson({ onNext }) {
   return (
     <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 03" title="Hear the Alphabet" ja="動画は音のお手本です。見終わったら、Articoの手順で口を動かします。" />
+      <LessonTitle eyebrow="Alphabets & sounds · 04" title="Hear the Alphabet" ja="動画は音のお手本です。見終わったら、Articoの手順で口を動かします。" />
       <div className="media-layout">
         <VideoReference label="External reference" title="The Super Simple Alphabet Song · lowercase" source="Super Simple · slow alphabet model" externalUrl="https://supersimple.com/phonics-fun/the-super-simple-alphabet-song-lowercase/" />
         <div className="guided-panel"><h3>Use the video in three passes</h3>{[['1', 'Listen', '最初は歌わず、リズムと音を聞く。'], ['2', 'Repeat', '止めずに、一緒に5回まで声に出す。'], ['3', 'Recall', '音を止めて、AからZまで思い出す。']].map(([n, title, copy]) => <div key={n}><b>{n}</b><span><strong>{title}</strong><small>{copy}</small></span></div>)}</div>
@@ -394,7 +413,7 @@ function HearLesson({ onNext }) {
 function WriteLesson({ onNext }) {
   return (
     <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 04" title="Write the Alphabet" ja="画面をタップするだけでなく、紙に書いて文字の形を手と目に覚えさせます。" />
+      <LessonTitle eyebrow="Alphabets & sounds · 05" title="Write the Alphabet" ja="画面をタップするだけでなく、紙に書いて文字の形を手と目に覚えさせます。" />
       <div className="media-layout">
         <VideoReference videoId="7yMlDJg2IZw" label="YouTube reference" title="Learn to Write the ABCs" source="Bri Reads · handwriting practice" />
         <div className="writing-panel"><h3>Paper practice</h3><p>鉛筆、消しゴム、罫線のあるノートを用意してください。</p><ol><li>大文字と小文字を数回なぞる</li><li>見本を隠して、自分で書く</li><li>その文字で始まる短い単語を3つ書く</li></ol><a href="https://teachprints.com/letter-tracing-worksheets/" target="_blank" rel="noreferrer">Free tracing sheets ↗</a></div>
@@ -407,7 +426,7 @@ function WriteLesson({ onNext }) {
 function SoundsLesson({ onNext }) {
   return (
     <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Side note · letters versus sounds" title="26 letters. About 44 sounds." ja="IPAを暗記する必要はありません。文字と音がいつも一対一ではないことを、ここで知っておきましょう。" />
+      <LessonTitle eyebrow="Side note · letters versus sounds · 06" title="26 letters. About 44 sounds." ja="IPAを暗記する必要はありません。文字と音がいつも一対一ではないことを、ここで知っておきましょう。" />
       <div className="sound-explainer"><div className="comparison-table"><div><strong>System</strong><strong>Represents</strong><strong>Example</strong></div><div><span>Alphabet</span><span>Letters</span><span>“a”, “b”, “c”</span></div><div><span>IPA</span><span>Sounds</span><span>/æ/, /b/, /k/</span></div></div><div className="sound-note"><h3>Awareness, not mastery</h3><p>同じ文字でも、単語によって音が変わることがあります。辞書でIPAを見たときに「発音を表す記号」だと分かれば、今は十分です。</p></div></div>
       <div className="compact-video"><VideoReference videoId="z5nWOwM5HsI" label="YouTube reference" title="Learn all 44 British English sounds" source="English for Traveling · IPA overview" /><div><h3>One viewing is enough for now.</h3><p>すべての記号を覚えようとせず、英語には文字より多くの音があることを耳で確認します。</p></div></div>
       <LessonFooter label="Tongue Twisters" onNext={onNext} />
@@ -418,7 +437,7 @@ function SoundsLesson({ onNext }) {
 function TongueIntro({ onPractice }) {
   return (
     <section className="lesson-page tongue-intro-page">
-      <LessonTitle eyebrow="Tongue twisters · introduction" title="Train transitions, not speed." ja="早口で言う競争ではありません。英語の音から次の音へ、正確に切り替える練習です。" />
+      <LessonTitle eyebrow="Tongue twisters · introduction · 07" title="Train transitions, not speed." ja="早口で言う競争ではありません。英語の音から次の音へ、正確に切り替える練習です。" />
       <div className="tongue-intro-layout"><div className="set-summary"><div><b>12</b><span>classic lines</span></div><div><b>4</b><span>training groups</span></div><div><b>1</b><span>repeatable loop</span></div><p>会話練習の代わりではありません。選んだ音の動きを、繰り返せる形にします。</p></div><div className="group-preview">{tongueGroups.map((group) => <article key={group.id}><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.ja}</p><span>3 classics</span></div></article>)}</div></div>
       <div className="lesson-footer"><span>Learn complete · 練習はPracticeから始まります</span><PrimaryButton onClick={onPractice}>Open the classic set</PrimaryButton></div>
     </section>
@@ -431,6 +450,7 @@ function LessonFooter({ label, note = 'Accuracy before speed.', onNext }) {
 
 const theoryOutlines = {
   orientation: orientationSections.map((section) => section.title),
+  'how-it-works': howItWorksSections.map((section) => section.title),
   letters: ['Meet the 26 letters', 'Uppercase and lowercase', 'What matters now'],
   hear: ['Hear the alphabet', 'Listen', 'Repeat', 'Recall'],
   write: ['Write the alphabet', 'Paper practice', 'Move on'],
@@ -440,12 +460,12 @@ const theoryOutlines = {
 
 function TheoryOutline({ activeStep, activeSectionId }) {
   const items = theoryOutlines[activeStep] || []
-  const links = activeStep === 'orientation'
-    ? orientationSections.map((section) => ({ label: section.title, href: `#${section.id}`, active: activeSectionId === section.id }))
+  const links = theorySectionSets[activeStep]
+    ? theorySectionSets[activeStep].map((section) => ({ label: section.title, href: `#${section.id}`, active: activeSectionId === section.id }))
     : items.map((item, index) => ({ label: item, href: `#theory-${activeStep}-${index}` }))
   return (
-    <aside className="theory-outline" aria-label={activeStep === 'orientation' ? 'このページ' : 'On this page'}>
-      <strong>{activeStep === 'orientation' ? 'このページ' : 'On this page'}</strong>
+    <aside className="theory-outline" aria-label={theorySectionSets[activeStep] ? 'このページ' : 'On this page'}>
+      <strong>{theorySectionSets[activeStep] ? 'このページ' : 'On this page'}</strong>
       <ol>{links.map((item) => <li key={item.href}><a className={item.active ? 'active' : undefined} aria-current={item.active ? 'location' : undefined} href={item.href}>{item.label}</a></li>)}</ol>
     </aside>
   )
@@ -453,10 +473,11 @@ function TheoryOutline({ activeStep, activeSectionId }) {
 
 function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
   const index = learnSteps.findIndex((step) => step.id === activeStep)
-  const activeOrientationSectionId = useOrientationActiveSection(activeStep)
+  const activeTheorySectionId = useActiveTheorySection(activeStep)
   const next = () => setActiveStep(learnSteps[Math.min(index + 1, learnSteps.length - 1)].id)
   const content = {
-    orientation: <Orientation onNext={next} activeSectionId={activeOrientationSectionId} />,
+    orientation: <Orientation onNext={next} activeSectionId={activeTheorySectionId} />,
+    'how-it-works': <HowArticoWorksLesson onNext={next} activeSectionId={activeTheorySectionId} />,
     letters: <LettersLesson onNext={next} />,
     hear: <HearLesson onNext={next} />,
     write: <WriteLesson onNext={next} />,
@@ -464,7 +485,7 @@ function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
     'tongue-intro': <TongueIntro onPractice={openPractice} />,
   }[activeStep]
 
-  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} activeSectionId={activeOrientationSectionId} /></div></main></div>
+  return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} activeSectionId={activeTheorySectionId} /></div></main></div>
 }
 
 function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup, pendingGroupId, activeGroupId, curriculum }) {

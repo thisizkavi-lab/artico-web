@@ -2,6 +2,7 @@ export const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 export const learnSteps = [
   { id: 'orientation', label: 'Orientation', ja: '学び方を知る' },
+  { id: 'how-it-works', label: 'How Artico works', ja: 'Articoの仕組み' },
   { id: 'letters', label: 'Meet the 26 letters', ja: '26文字に出会う' },
   { id: 'hear', label: 'Hear the Alphabet', ja: '文字の名前を聞く' },
   { id: 'write', label: 'Write the Alphabet', ja: '紙に書く' },

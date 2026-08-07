@@ -791,6 +791,9 @@ svg { display: block; }
 .course-app .orientation-section-body { max-width: 760px; margin: 22px auto 0; }
 .course-app .orientation-section-body > p { margin: 0 0 17px; color: #4f574f; font-family: 'Noto Sans JP', sans-serif; font-size: 15px; line-height: 2.05; }
 .course-app .orientation-section-body > p:last-child { margin-bottom: 0; }
+.course-app .theory-section-list { display: flex; flex-direction: column; gap: 9px; margin: 20px 0 22px; padding: 0; list-style: none; }
+.course-app .theory-section-list li { position: relative; padding: 11px 14px 11px 29px; border: 1px solid #e7ebe5; border-radius: 9px; background: #fbfcf9; color: #566057; font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.75; }
+.course-app .theory-section-list li::before { position: absolute; top: 18px; left: 13px; width: 5px; height: 5px; border-radius: 50%; background: #a5b1a2; content: ''; }
 .course-app .orientation-callout { margin: 24px 0 4px; padding: 16px 18px; border: 1px solid #e6ebe3; border-left: 3px solid #adbba9; border-radius: 10px; background: #f5f7f1; }
 .course-app .orientation-callout strong { display: block; margin-bottom: 7px; color: #6b786b; font-family: 'Noto Sans JP', sans-serif; font-size: 12px; font-weight: 700; }
 .course-app .orientation-callout p { margin: 0; color: #596359; font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.85; }

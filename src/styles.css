@@ -1112,3 +1112,88 @@ svg { display: block; }
   .sound-routine-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sound-reminder-card { padding: 20px; }
 }
+
+/* Tongue twister theory: a quiet, listen-first introduction. */
+.tongue-theory-reader { display: flex; flex-direction: column; gap: 18px; margin-top: 38px; }
+.tongue-theory-card { padding: 28px; border: 1px solid var(--line); border-radius: 26px; background: white; }
+.tongue-theory-card p { margin: 0 0 16px; color: #4f574f; font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.9; }
+.tongue-theory-card p:last-child { margin-bottom: 0; }
+.tongue-theory-card strong { color: var(--brand); }
+.tongue-section-heading { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 18px; }
+.tongue-section-heading > span { display: grid; width: 42px; height: 42px; flex: 0 0 42px; border-radius: 13px; background: var(--olive); color: white; font-size: 11px; place-items: center; }
+.tongue-section-heading small { display: block; margin-bottom: 5px; color: var(--brand); font-size: 10px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; }
+.tongue-section-heading h2 { margin: 0; color: var(--brand); font-size: 22px; line-height: 1.4; }
+.tongue-japan-card { background: #fbfcf8; }
+.tongue-minimal-pairs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 22px 0; }
+.tongue-minimal-pairs > div { display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 16px; background: white; }
+.tongue-minimal-pairs strong { color: var(--ink); font-size: 16px; }
+.tongue-minimal-pairs span { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; line-height: 1.6; }
+.tongue-sound-strip { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.tongue-sound-strip span, .tongue-sound-strip strong { padding: 7px 10px; border-radius: 999px; background: white; color: var(--brand); font-size: 11px; font-weight: 700; }
+.tongue-sound-strip strong { background: var(--surface-strong); }
+.tongue-listen-callout { display: flex; flex-direction: column; gap: 6px; margin-top: 22px; padding: 18px 20px; border-left: 3px solid #b8c6b6; border-radius: 0 16px 16px 0; background: var(--note); }
+.tongue-listen-callout strong { font-size: 15px; }
+.tongue-listen-callout span { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; line-height: 1.7; }
+.tongue-set-lead { max-width: 760px; }
+.tongue-theory-groups { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+.tongue-theory-group { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--warm); }
+.tongue-theory-group header { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: start; padding: 20px; border-bottom: 1px solid var(--line); background: var(--note); }
+.tongue-theory-group header > b { display: grid; width: 40px; height: 40px; border-radius: 12px; background: var(--olive); color: white; font-size: 11px; place-items: center; }
+.tongue-theory-group h3 { margin: 1px 0 6px; color: var(--brand); font-size: 17px; line-height: 1.45; }
+.tongue-theory-group header p { margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; line-height: 1.7; }
+.tongue-theory-items { display: flex; flex-direction: column; }
+.tongue-theory-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, .78fr); gap: 22px; align-items: center; padding: 20px; border-bottom: 1px solid var(--line); }
+.tongue-theory-item:last-child { border-bottom: 0; }
+.tongue-item-copy { min-width: 0; }
+.tongue-item-copy > span { display: inline-flex; padding: 5px 8px; border-radius: 999px; background: white; color: var(--brand); font-size: 10px; font-weight: 800; letter-spacing: .4px; }
+.tongue-item-copy > strong { display: block; margin: 10px 0 7px; color: var(--ink); font-size: 17px; line-height: 1.45; }
+.tongue-item-copy p { margin: 0; font-size: 12px; line-height: 1.75; }
+.theory-audio-sample { min-width: 0; padding: 15px 16px 12px; border: 1px solid #e4e7e1; border-radius: 17px; background: white; }
+.theory-audio-sample audio { display: none; }
+.theory-audio-head { display: grid; grid-template-columns: 42px minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+.theory-audio-play { display: grid; width: 40px; height: 40px; border-radius: 50%; background: var(--olive); color: white; place-items: center; cursor: pointer; }
+.theory-audio-play:disabled { background: #d4d9d2; cursor: not-allowed; }
+.theory-audio-play svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+.theory-audio-waveform { display: flex; align-items: center; gap: 3px; height: 39px; overflow: hidden; }
+.theory-audio-waveform i { display: block; width: 3px; flex: 0 0 3px; border-radius: 5px; background: #d8ded6; }
+.theory-audio-sample:not(.is-pending) .theory-audio-waveform i:nth-child(-n+9) { background: #9aa996; }
+.theory-audio-times { display: flex; flex-direction: column; gap: 13px; color: #8b938b; font-variant-numeric: tabular-nums; font-size: 10px; text-align: right; }
+.theory-audio-track { height: 5px; margin: 10px 0 11px 54px; overflow: hidden; border-radius: 999px; background: #e5e8e3; }
+.theory-audio-track span { display: block; height: 100%; border-radius: inherit; background: var(--olive); transition: width .12s linear; }
+.theory-audio-controls { display: flex; align-items: center; gap: 8px; margin-left: 54px; }
+.theory-audio-controls button { min-width: 52px; padding: 5px 7px; border: 1px solid #d7ddd5; border-radius: 999px; background: white; color: var(--brand); font-size: 10px; cursor: pointer; }
+.theory-audio-controls button:disabled { color: #aab1aa; cursor: not-allowed; }
+.theory-audio-controls button:nth-child(2) { min-width: 48px; }
+.theory-audio-controls small { margin-left: auto; color: #9aa29a; font-family: 'Noto Sans JP', sans-serif; font-size: 9px; white-space: nowrap; }
+.tongue-listen-steps { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: 10px; align-items: center; margin: 24px 0 19px; }
+.tongue-listen-steps > div { display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 15px 10px; border-radius: 15px; background: var(--warm); text-align: center; }
+.tongue-listen-steps b { display: grid; width: 28px; height: 28px; border-radius: 9px; background: var(--surface-strong); color: var(--brand); font-size: 10px; place-items: center; }
+.tongue-listen-steps span { color: var(--brand); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; font-weight: 700; }
+.tongue-listen-steps i { color: #a9b1a7; font-size: 18px; font-style: normal; }
+.tongue-listen-finish { padding-top: 17px; border-top: 1px solid var(--line); }
+.tongue-final-cues { display: flex; flex-wrap: wrap; gap: 9px; margin: 20px 0; }
+.tongue-final-cues strong { padding: 10px 13px; border-radius: 12px; background: var(--note); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; }
+.tongue-practice-transition { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 19px 22px; border: 1px solid var(--line); border-radius: 18px; background: #f5f7f1; }
+.tongue-practice-transition strong { color: var(--brand); font-size: 14px; }
+.tongue-practice-transition span { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; }
+
+@media (max-width: 1180px) {
+  .tongue-theory-item { grid-template-columns: 1fr; gap: 14px; }
+}
+
+@media (max-width: 760px) {
+  .course-app .tongue-theory-reader { gap: 16px; margin-top: 28px; }
+  .course-app .tongue-theory-card { padding: 22px; border-radius: 16px; }
+  .course-app .tongue-section-heading h2 { font-size: 19px; }
+  .course-app .tongue-theory-card p { font-size: 13px; line-height: 1.9; }
+  .tongue-minimal-pairs { grid-template-columns: 1fr; }
+  .tongue-theory-group header { padding: 17px; }
+  .tongue-theory-item { padding: 17px; }
+  .theory-audio-sample { padding: 13px 12px 11px; }
+  .theory-audio-controls { margin-left: 52px; }
+  .theory-audio-controls small { font-size: 8px; }
+  .tongue-listen-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .tongue-listen-steps i { display: none; }
+  .tongue-final-cues { flex-direction: column; }
+  .tongue-practice-transition { align-items: flex-start; flex-direction: column; gap: 5px; }
+}

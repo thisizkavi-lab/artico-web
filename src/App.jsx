@@ -660,11 +660,118 @@ function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
+function TheoryAudioSample({ phrase, target, src }) {
+  const audioRef = useRef(null)
+  const [playing, setPlaying] = useState(false)
+  const [progress, setProgress] = useState(0)
+  const [duration, setDuration] = useState(0)
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio || !src) return undefined
+    const updateProgress = () => setProgress(audio.duration ? (audio.currentTime / audio.duration) * 100 : 0)
+    const updateDuration = () => setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
+    const finish = () => setPlaying(false)
+    audio.addEventListener('timeupdate', updateProgress)
+    audio.addEventListener('loadedmetadata', updateDuration)
+    audio.addEventListener('ended', finish)
+    return () => {
+      audio.removeEventListener('timeupdate', updateProgress)
+      audio.removeEventListener('loadedmetadata', updateDuration)
+      audio.removeEventListener('ended', finish)
+    }
+  }, [src])
+
+  const toggle = async () => {
+    const audio = audioRef.current
+    if (!audio || !src) return
+    if (audio.paused) {
+      await audio.play()
+      setPlaying(true)
+    } else {
+      audio.pause()
+      setPlaying(false)
+    }
+  }
+
+  const rewind = () => {
+    const audio = audioRef.current
+    if (audio && src) audio.currentTime = Math.max(0, audio.currentTime - 10)
+  }
+
+  const formatTime = (value) => {
+    if (!value) return '0:00'
+    const minutes = Math.floor(value / 60)
+    const seconds = Math.floor(value % 60).toString().padStart(2, '0')
+    return `${minutes}:${seconds}`
+  }
+
+  return (
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}`}>
+      {src && <audio ref={audioRef} src={src} preload="metadata" />}
+      <div className="theory-audio-head"><button type="button" className="theory-audio-play" onClick={toggle} disabled={!src} aria-label={src ? `${phrase}を再生` : `${phrase}の音声は準備中`}><PlayIcon pause={playing} /></button><div className="theory-audio-waveform" aria-hidden="true">{[20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32, 46, 26].map((height, index) => <i key={index} style={{ height }} />)}</div><div className="theory-audio-times"><span>{formatTime((progress / 100) * duration)}</span><span>{duration ? formatTime(duration) : '--:--'}</span></div></div>
+      <div className="theory-audio-track"><span style={{ width: `${progress}%` }} /></div>
+      <div className="theory-audio-controls"><button type="button" onClick={rewind} disabled={!src} aria-label="10秒戻る">↶ <span>-10s</span></button><button type="button" disabled={!src} aria-label="再生速度">1.0x</button><small>{src ? '音声サンプル' : '音声サンプルを準備中'}</small></div>
+    </div>
+  )
+}
+
+const tongueIntroGroups = [
+  { id: 'priority', number: '01', title: '日本の学習者が優先して練習したい音の違い', intro: '多くの日本の学習者にとって、最初に身につけると便利な音の違いに焦点を当てます。', itemIds: ['red-lorry', 'seashells', 'free-throws'] },
+  { id: 'consonants', number: '02', title: 'はっきりとした子音の音', intro: '言葉の最初や最後にある、はっきりとした子音を、余分な母音なしで出す練習です。', itemIds: ['peter-piper', 'big-black-bug', 'two-witches'] },
+  { id: 'clusters', number: '03', title: '子音が連続する音', intro: '英語でよく起こる子音のかたまりを、分解せずにつなげる感覚に慣れます。', itemIds: ['fresh-flesh'] },
+  { id: 'rhythm', number: '04', title: 'リズムと音のつながり', intro: '個々の音だけでなく、英語の強弱と、音から音への自然な流れを感じます。', itemIds: ['betty-botter', 'woodchuck', 'unique-new-york'] },
+]
+
 function TongueIntro({ onPrevious, previousLabel, onPractice }) {
+  const findItem = (id) => allTwisters.find((item) => item.id === id)
   return (
     <section className="lesson-page tongue-intro-page">
-      <LessonTitle eyebrow="Tongue twisters · introduction · 07" title="Train transitions, not speed." ja="早口で言う競争ではありません。英語の音から次の音へ、正確に切り替える練習です。" />
-      <div className="tongue-intro-layout"><div className="set-summary"><div><b>12</b><span>classic lines</span></div><div><b>4</b><span>training groups</span></div><div><b>1</b><span>repeatable loop</span></div><p>会話練習の代わりではありません。選んだ音の動きを、繰り返せる形にします。</p></div><div className="group-preview">{tongueGroups.map((group) => <article key={group.id}><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.ja}</p><span>3 classics</span></div></article>)}</div></div>
+      <LessonTitle eyebrow="Tongue twisters · introduction · 07" title="Train your mouth with tongue twisters." ja="音を理解したら、次は口を動かし、英語の音に慣れていきます。" />
+      <div className="tongue-theory-reader">
+        <article className="tongue-theory-card tongue-theory-intro" id="theory-tongue-intro-0">
+          <div className="tongue-section-heading"><span>01</span><div><small>音の理解から、口のトレーニングへ</small><h2>早口言葉で口をトレーニングしましょう！</h2></div></div>
+          <p>これまでは「音を理解すること」について考えてきました。これからは、実際に「その音を出すための口のトレーニング」に進みましょう。そのための最も効果的な方法の一つが、<strong>早口言葉（tongue twister）</strong>です。</p>
+          <p>早口言葉は、似ている音や難しい音が近くに並んでいる短いフレーズです。唇、舌、あご、そして息の出し方を細かく正確にコントロールする必要があるため、いわば<strong>口の小さな筋トレ</strong>のようなものです。</p>
+          <p>俳優、歌手、スピーチをする人、アナウンサー、そして語学の学習者など、多くの人が、はっきり話すため、リズムやコントロールを良くするために使っています。</p>
+        </article>
+
+        <article className="tongue-theory-card tongue-japan-card" id="theory-tongue-intro-1">
+          <div className="tongue-section-heading"><span>02</span><div><small>なぜ日本の学習者にとって大切なのか</small><h2>耳と口が、音の違いに慣れるまで</h2></div></div>
+          <p>日本語と英語では、音の作り方や整理の仕方が違います。そのため、英語を始めたばかりのとき、いくつかの音を正しく発音し分けるのが難しく感じることがあります。</p>
+          <div className="tongue-minimal-pairs"><div><strong>right / light</strong><span>右・正しい / 光・軽い</span></div><div><strong>road / load</strong><span>道 / 荷物</span></div><div><strong>rice / lice</strong><span>お米 / シラミ</span></div></div>
+          <p>最初は、これらの言葉が同じように聞こえたり、同じように感じられたりするかもしれません。でも、諦める必要はありません。耳と口が動きの違いに慣れるまで、少し時間が必要なだけです。</p>
+          <div className="tongue-sound-strip"><strong>R / L</strong><span>S / SH</span><span>TH / F</span><span>W / CH</span><span>語尾の子音</span></div>
+        </article>
+
+        <article className="tongue-theory-card tongue-purpose-card" id="theory-tongue-intro-2">
+          <div className="tongue-section-heading"><span>03</span><div><small>目的は「覚えること」ではありません</small><h2>あなたの口を、英語の動きに慣れさせる</h2></div></div>
+          <p>何百個もの早口言葉を暗記する必要はありません。インターネットには何千個もの文があり、AIを使えばいくらでも作れます。しかし、たくさん練習すれば良いというわけではありません。</p>
+          <p>このコースでは、日常的によく使われ、慣れておくと役に立つ発音パターンを集めた、少数の定番を選びました。面白い文を覚えることではなく、英語の音をスムーズに出せるようにすることが目的です。</p>
+          <div className="tongue-listen-callout"><strong>まずは、聞き、気づき、音に慣れること。</strong><span>具体的な練習方法は、この後のPracticeセクションで丁寧に説明します。</span></div>
+        </article>
+
+        <article className="tongue-theory-card tongue-set-card" id="theory-tongue-intro-3">
+          <div className="tongue-section-heading"><span>04</span><div><small>これから練習する早口言葉</small><h2>4つのグループから、音を聞いてみましょう。</h2></div></div>
+          <p className="tongue-set-lead">「破裂音」や「二重母音」といった専門用語を理解する必要はありません。まずは注目する音を意識して、各フレーズの音声サンプルを聞いてみましょう。</p>
+          <div className="tongue-theory-groups">{tongueIntroGroups.map((group) => <section className="tongue-theory-group" key={group.id}><header><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.intro}</p></div></header><div className="tongue-theory-items">{group.itemIds.map((itemId) => { const item = findItem(itemId); if (!item) return null; return <article className="tongue-theory-item" key={item.id}><div className="tongue-item-copy"><span>{item.target}</span><strong>{item.phrase}</strong><p>{item.why}</p></div><TheoryAudioSample phrase={item.phrase} target={item.target} /></article> })}</div></section>)}</div>
+        </article>
+
+        <article className="tongue-theory-card tongue-listen-card" id="theory-tongue-intro-4">
+          <div className="tongue-section-heading"><span>05</span><div><small>今は、聞くだけで大丈夫です</small><h2>早く言う必要も、暗記する必要もありません。</h2></div></div>
+          <p>このページで、早口言葉を完璧に言えるようになる必要はありません。これから練習していく音や口の動きを紹介するためのページです。</p>
+          <div className="tongue-listen-steps"><div><b>01</b><span>文を読む</span></div><i>→</i><div><b>02</b><span>音声を聞く</span></div><i>→</i><div><b>03</b><span>音に集中する</span></div><i>→</i><div><b>04</b><span>1〜2回試す</span></div></div>
+          <p className="tongue-listen-finish">今はこれだけで十分です。本格的なステップ別トレーニングは、次のPracticeで行います。</p>
+        </article>
+
+        <article className="tongue-theory-card tongue-finish-card" id="theory-tongue-intro-5">
+          <div className="tongue-section-heading"><span>06</span><div><small>最後に忘れないでください</small><h2>早口言葉は、実用的な道具です。</h2></div></div>
+          <p>早口言葉は、ただ「おかしな文を早く言うためのゲーム」ではありません。英語の音を思い通りにコントロールするための、とても実用的なツールです。</p>
+          <div className="tongue-final-cues"><strong>音を聞きましょう。</strong><strong>動きに気づきましょう。</strong><strong>自分で少し試してみましょう。</strong></div>
+          <p>次のセクションで、本格的な練習を一緒に始めます。</p>
+        </article>
+        <div className="tongue-practice-transition" id="theory-tongue-intro-6"><strong>次はPracticeへ</strong><span>音声を聞き、口の動きを一つずつ練習します。</span></div>
+      </div>
       <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} note="Learn complete · 練習はPracticeから始まります" label="Open the classic set" onNext={onPractice} />
     </section>
   )
@@ -685,7 +792,7 @@ const theoryOutlines = {
   hear: ['Hear the alphabet', 'Listen', 'Repeat', 'Recall'],
   write: ['Write the alphabet', 'Prepare', 'Practice', 'Write real names', 'Why this matters', 'Cursive & pace'],
   sounds: ['Letters versus sounds', 'Why spelling surprises us', 'Meet the sounds', 'What is IPA?', 'IPA as a map', 'Try it now', 'Remember'],
-  'tongue-intro': ['Why tongue twisters', 'A small focused set', 'Practice begins here'],
+  'tongue-intro': ['Why tongue twisters', 'Japanese-priority sounds', 'Purpose: train the mouth', 'The focused classic set', 'Listen for now', 'Remember', 'Practice begins here'],
 }
 
 function TheoryOutline({ activeStep, activeSectionId }) {

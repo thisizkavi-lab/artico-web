@@ -606,10 +606,55 @@ function WriteLesson({ onPrevious, previousLabel, onNext }) {
 
 function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   return (
-    <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Side note · letters versus sounds · 06" title="26 letters. About 44 sounds." ja="IPAを暗記する必要はありません。文字と音がいつも一対一ではないことを、ここで知っておきましょう。" />
-      <div className="sound-explainer"><div className="comparison-table"><div><strong>System</strong><strong>Represents</strong><strong>Example</strong></div><div><span>Alphabet</span><span>Letters</span><span>“a”, “b”, “c”</span></div><div><span>IPA</span><span>Sounds</span><span>/æ/, /b/, /k/</span></div></div><div className="sound-note"><h3>Awareness, not mastery</h3><p>同じ文字でも、単語によって音が変わることがあります。辞書でIPAを見たときに「発音を表す記号」だと分かれば、今は十分です。</p></div></div>
-      <div className="compact-video"><VideoReference videoId="z5nWOwM5HsI" label="YouTube reference" title="Learn all 44 British English sounds" source="English for Traveling · IPA overview" /><div><h3>One viewing is enough for now.</h3><p>すべての記号を覚えようとせず、英語には文字より多くの音があることを耳で確認します。</p></div></div>
+    <section className="lesson-page sound-lesson-page">
+      <LessonTitle eyebrow="Alphabets · 06" title="26 letters. About 44 sounds." ja="英語には26個の文字があります。でも、話すときの音はそれよりも多くあります。" />
+      <div className="sound-lesson-layout">
+        <div className="sound-lesson-main">
+          <article className="sound-lesson-card sound-intro-card" id="theory-sounds-0">
+            <div className="sound-section-heading"><span>01</span><div><small>まず知っておくこと</small><h2>文字と音は同じではありません</h2></div></div>
+            <p>ここまでで、あなたは英語の26個のアルファベットを学びました。文字の形、書き方、そして名前の言い方が分かりましたね。ここで、もう1つ知っておくべき大切なアイデアがあります。</p>
+            <p>英語の文字は26個ですが、話すときの音は文字の数よりもたくさんあります。話し方（アクセント）や音の数え方によって違いますが、英語にはよく使われる音が<strong>約44個</strong>あると言われています。これを<strong>音素（phoneme）</strong>と呼びます。</p>
+            <div className="sound-count-callout"><div><strong>26</strong><span>letters<br />書くための文字</span></div><b>≠</b><div><strong>about 44</strong><span>sounds<br />話すときの音</span></div></div>
+            <p>これが、英語の発音がときどき難しく、混乱しやすい理由の1つです。今は数字を暗記しなくても大丈夫です。「文字の数と音の数は同じではない」と知っておきましょう。</p>
+          </article>
+
+          <article className="sound-lesson-card sound-spelling-card" id="theory-sounds-1">
+            <div className="sound-section-heading"><span>02</span><div><small>つづりを見たとき</small><h2>なぜ、英語は見た目どおりに発音しないのでしょうか？</h2></div></div>
+            <p>いくつかの言語では、文字と発音の関係がとても分かりやすく、予想しやすいことがあります。しかし、英語では同じ文字でも単語によって違う音になったり、いくつかの文字が組み合わさって1つの音になったりします。文字は書かれているのに、まったく発音されないこともあります。</p>
+            <div className="sound-example-grid">
+              <div><strong>knife</strong><span>kは書かれていますが、ふつうは発音しません。</span><em>silent k</em></div>
+              <div><strong>knight</strong><span>ここでもkは音になりません。つづりと音が一致しない例です。</span><em>silent letter</em></div>
+            </div>
+            <p className="sound-emphasis">英語のつづりと発音は、いつも1対1で同じになるわけではありません。このことを今知っておくだけで、これから先の勉強がずっと簡単になります。</p>
+          </article>
+
+          <article className="sound-lesson-card sound-video-card" id="theory-sounds-2">
+            <div className="sound-section-heading"><span>03</span><div><small>英語の音に出会う</small><h2>まずは、聞いて気づくだけで十分です。</h2></div></div>
+            <p>この段階では、英語の音をすべて暗記する必要はありません。難しい発音のルールを勉強する必要もありません。今はただ、そのような音があることを知って、注意して聞き始めるだけで大丈夫です。</p>
+            <div className="sound-video-wrap"><YouTubeLessonPlayer videoId="JwTDPu2TE6k" title="Sounds of English Vowels and Consonants (with phonetic symbols)" credit="動画：YouTube（音声紹介）" /></div>
+            <p>動画を見て、よく聞いて、聞こえた音を真似して声に出してみましょう。最初はうまくできなくても気にしないでください。目標は<strong>「慣れること」</strong>であり、「完璧にマスターすること」ではありません。</p>
+          </article>
+        </div>
+
+        <aside className="sound-lesson-aside">
+          <article className="sound-lesson-card sound-ipa-card" id="theory-sounds-3">
+            <small>発音の地図</small><h2>IPAって何ですか？</h2>
+            <p>発音を学ぶとき、<strong>/æ/　/ʃ/　/θ/　/ŋ/</strong>のような不思議な記号を見ることがあります。これらは国際音声記号、ふつうは<strong>IPA</strong>と呼ばれるものです。</p>
+            <p>ふつうのアルファベットは「書くために使う文字」を表します。一方で、IPAは「話すときに使う音」を表します。</p>
+            <div className="ipa-table" role="table" aria-label="アルファベットとIPAの違い"><div role="row"><strong>システム</strong><strong>表すもの</strong><strong>例</strong></div><div role="row"><span>英語のアルファベット</span><span>書くための文字</span><span>a, b, c</span></div><div role="row"><span>IPA</span><span>話すときの音</span><span>/æ/, /b/, /k/</span></div></div>
+            <p>IPAの便利なところは、つづりがややこしい単語でも、どのように発音されるかを正確に示してくれることです。</p>
+          </article>
+          <div className="sound-map-note" id="theory-sounds-4"><strong>IPAは「発音の地図」</strong><p>今は地図のすべてを読めなくても大丈夫です。「この地図が存在する」と知っていれば十分です。</p><div><span>/kæt/</span><small>cat の音</small></div><a href="https://www.ipachart.com" target="_blank" rel="noreferrer">インタラクティブなIPAチャートを見る ↗</a></div>
+        </aside>
+      </div>
+
+      <article className="sound-lesson-card sound-routine-card" id="theory-sounds-5">
+        <div className="sound-section-heading"><span>04</span><div><small>今、何をすればいいですか？</small><h2>難しく考えず、シンプルにいきましょう。</h2></div></div>
+        <div className="sound-routine-grid"><div><b>01</b><strong>見る</strong><span>英語の音の短い紹介動画を見る。</span></div><div><b>02</b><strong>聞く</strong><span>それぞれの音を注意して聞く。</span></div><div><b>03</b><strong>真似する</strong><span>聞こえた音を声に出してみる。</span></div><div><b>04</b><strong>戻る</strong><span>練習用の歌や動画を何度か繰り返す。</span></div></div>
+        <p className="sound-routine-close">IPAの記号を覚える心配はしなくて大丈夫です。今は、聞いて、気づいて、真似してみる。それだけで十分です。</p>
+      </article>
+
+      <article className="sound-reminder-card" id="theory-sounds-6"><strong>忘れないでください</strong><p>26個の文字があるからといって、音が26個だけというわけではありません。英語は、比較的少ないアルファベットを使って、たくさんの話し言葉の音を表しています。</p><b>聞いて、気づいて、真似してみる。</b><span>進んでいくうちに、少しずつ詳しいことを学んでいきましょう。</span></article>
       <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Tongue Twisters" onNext={onNext} />
     </section>
   )
@@ -639,7 +684,7 @@ const theoryOutlines = {
   letters: ['Meet the 26 letters', 'Uppercase and lowercase', 'What matters now'],
   hear: ['Hear the alphabet', 'Listen', 'Repeat', 'Recall'],
   write: ['Write the alphabet', 'Prepare', 'Practice', 'Write real names', 'Why this matters', 'Cursive & pace'],
-  sounds: ['Letters versus sounds', 'Awareness, not mastery', 'One viewing is enough'],
+  sounds: ['Letters versus sounds', 'Why spelling surprises us', 'Meet the sounds', 'What is IPA?', 'IPA as a map', 'Try it now', 'Remember'],
   'tongue-intro': ['Why tongue twisters', 'A small focused set', 'Practice begins here'],
 }
 

@@ -593,6 +593,78 @@ svg { display: block; }
 .course-app .session-card h3 { font-size: 22px; letter-spacing: -.35px; }
 .course-app .alphabet-grid button { min-height: 52px; border-radius: 10px; font-size: 20px; }
 .course-app .alphabet-grid button span { font-size: 15px; }
+.course-app .letters-layout {
+  grid-template-columns: minmax(0, .9fr) minmax(500px, 1.1fr);
+  gap: 46px;
+  align-items: start;
+  margin-top: 40px;
+}
+.course-app .letters-copy { max-width: 580px; padding: 8px 0; }
+.course-app .letters-copy h2 {
+  margin: 0 0 24px;
+  color: #556247;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.course-app .letters-copy p {
+  margin: 0 0 22px;
+  color: #4f574f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 2.02;
+}
+.course-app .letters-copy p strong { color: #556247; font-weight: 700; }
+.course-app .letters-closing {
+  display: block;
+  margin-top: 30px;
+  color: #556247;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.course-app .alphabet-board {
+  padding: 32px 30px 34px;
+  background: #f5f4ed;
+}
+.course-app .alphabet-case-section h3 {
+  margin: 0 0 30px;
+  color: #59633d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.course-app .alphabet-case-section h3 span { font-size: .95em; }
+.course-app .alphabet-case-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 20px 16px;
+}
+.course-app .alphabet-case-grid button {
+  display: grid;
+  min-height: 34px;
+  padding: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #343a33;
+  font-size: 21px;
+  font-weight: 500;
+  place-items: center;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, transform .16s ease;
+}
+.course-app .alphabet-case-grid button:hover {
+  background: #e9ece1;
+  color: #59633d;
+  transform: translateY(-1px);
+}
+.course-app .alphabet-case-grid button:focus-visible {
+  outline: 1px solid #cfd6cb;
+  outline-offset: 1px;
+}
+.course-app .alphabet-case-divider { margin: 36px 0 38px; border-top: 1px solid #dfe1d9; }
 .course-app .video-reference { border-radius: 16px; }
 .course-app .video-copy h3 { font-size: 18px; }
 .course-app .guided-panel h3,
@@ -732,6 +804,11 @@ svg { display: block; }
   border-radius: 11px;
 }
 .course-app .curriculum-item:hover { background: #f5f6f2; }
+.course-app .curriculum-item:focus-visible,
+.course-app .curriculum-section-toggle:focus-visible {
+  outline: 1px solid #cfd6cb;
+  outline-offset: 1px;
+}
 .course-app .curriculum-item.active {
   background: #f0f2ed;
   box-shadow: none;
@@ -830,6 +907,15 @@ svg { display: block; }
   .course-app .curriculum-item-copy strong { font-size: 12px; }
   .course-app .curriculum-item-copy small { font-size: 9px; }
   .course-app .lesson-title h1 { font-size: 33px; }
+  .course-app .letters-copy { max-width: none; padding: 0; }
+  .course-app .letters-copy h2 { font-size: 19px; }
+  .course-app .letters-copy p { font-size: 14px; line-height: 1.95; }
+  .course-app .letters-closing { margin-top: 25px; font-size: 15px; }
+  .course-app .alphabet-board { padding: 24px 18px 26px; }
+  .course-app .alphabet-case-section h3 { margin-bottom: 22px; font-size: 20px; }
+  .course-app .alphabet-case-grid { gap: 14px 8px; }
+  .course-app .alphabet-case-grid button { min-height: 34px; font-size: 19px; }
+  .course-app .alphabet-case-divider { margin: 28px 0 30px; }
   .course-app .orientation-section { padding: 23px 18px 25px; border-radius: 15px; }
   .course-app .orientation-section-header { grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding-bottom: 16px; }
   .course-app .orientation-section-header > span { width: 36px; height: 36px; border-radius: 10px; }

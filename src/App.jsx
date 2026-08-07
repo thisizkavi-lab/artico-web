@@ -378,10 +378,27 @@ function useActiveTheorySection(activeStep) {
 function LettersLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page letters-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 03" title="Meet the 26 letters" ja="英語のすべては、26文字から始まります。まずは大文字と小文字の形・名前に慣れましょう。" />
+      <LessonTitle eyebrow="Alphabets · 03" title="Alphabets" ja="英語のスタートラインへ。26個の文字と、大文字・小文字の形に出会います。" />
       <div className="letters-layout">
-        <div className="letters-explain"><div className="number-card"><strong>26 letters</strong><b>2 forms</b><span>大文字と小文字は、同じ文字の二つの形です。</span></div><div className="matter-card"><h3>What matters now</h3><p>文字の形を見る</p><p>文字の名前を聞く</p><p>声に出してまねる</p></div></div>
-        <div className="alphabet-board"><div><h3>Uppercase + lowercase</h3><span>同じ文字を、二つの形で見てみましょう</span></div><div className="alphabet-grid">{alphabet.map((letter) => <button key={letter} type="button" onClick={() => speakWithBrowser(letter)}><strong>{letter}</strong><span>{letter.toLowerCase()}</span></button>)}</div></div>
+        <div className="letters-copy">
+          <h2>英語のスタートラインへ、ようこそ！</h2>
+          <p>あなたが今までに聞いたことがある英語の言葉はすべて、たった<strong>26個の文字</strong>からできています。それだけです。26個の記号があり、それぞれ大文字と小文字という2つの形があります。</p>
+          <p>これらの文字は、イギリスで生まれたわけではありません。<strong>旅をしてきたのです。</strong> 英語のアルファベットはラテン語から来て、ラテン語はギリシャ語から来て、さらにそれは何千年も前の古代フェニキアの商人たちから来ました。つまり、あなたが文字を書いたり発音したりするたびに、<strong>3000年以上も受け継がれてきた歴史の一部</strong>を使っていることになります。</p>
+          <p>文字を<strong>レンガ</strong>のように考えてみてください。1つだけでは小さくてシンプルです。でも、組み合わせることで、何でも作ることができます。名前、冗談、歌、ストーリー、そして新しい世界まで作ることができます。</p>
+          <p>今日は、英語の26個の文字から始めましょう。見て、聞いて、声に出して、<strong>口が自然に覚えるまで体で感じてみてください。</strong> この音を自分のものにすれば、これからの英語はずっと簡単になります。</p>
+          <strong className="letters-closing">それでは、まずはすべての文字に出会いましょう！</strong>
+        </div>
+        <div className="alphabet-board">
+          <section className="alphabet-case-section" aria-labelledby="uppercase-title">
+            <h3 id="uppercase-title">uppercase <span>(capital) letters</span></h3>
+            <div className="alphabet-case-grid">{alphabet.map((letter) => <button key={letter} type="button" aria-label={`Say uppercase ${letter}`} onClick={() => speakWithBrowser(letter)}>{letter}</button>)}</div>
+          </section>
+          <div className="alphabet-case-divider" />
+          <section className="alphabet-case-section" aria-labelledby="lowercase-title">
+            <h3 id="lowercase-title">lowercase <span>(small) letters</span></h3>
+            <div className="alphabet-case-grid">{alphabet.map((letter) => <button key={letter} type="button" aria-label={`Say lowercase ${letter.toLowerCase()}`} onClick={() => speakWithBrowser(letter.toLowerCase())}>{letter.toLowerCase()}</button>)}</div>
+          </section>
+        </div>
       </div>
       <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Hear the Alphabet" onNext={onNext} />
     </section>

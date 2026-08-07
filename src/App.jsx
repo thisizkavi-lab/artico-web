@@ -414,13 +414,116 @@ function VideoReference({ videoId, label, title, source, externalUrl }) {
   )
 }
 
+function YouTubeAlphabetPlayer() {
+  const containerRef = useRef(null)
+  const iframeRef = useRef(null)
+  const hasStartedRef = useRef(false)
+
+  useEffect(() => {
+    const container = containerRef.current
+    const iframe = iframeRef.current
+    if (!container || !iframe) return undefined
+
+    let playerLoaded = false
+    let isVisible = false
+
+    const sendCommand = (func, args = []) => {
+      iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func, args }), '*')
+    }
+
+    const playWhenReady = () => {
+      if (!playerLoaded) return
+      if (!hasStartedRef.current) {
+        sendCommand('seekTo', [20, true])
+        hasStartedRef.current = true
+      }
+      sendCommand('playVideo')
+    }
+
+    const handleLoad = () => {
+      playerLoaded = true
+      if (isVisible) playWhenReady()
+    }
+
+    iframe.addEventListener('load', handleLoad)
+
+    const observer = typeof IntersectionObserver === 'function'
+      ? new IntersectionObserver(([entry]) => {
+        isVisible = entry.isIntersecting && entry.intersectionRatio >= 0.45
+        if (isVisible) playWhenReady()
+        else sendCommand('pauseVideo')
+      }, { threshold: [0, 0.45, 0.8] })
+      : null
+
+    observer?.observe(container)
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) sendCommand('pauseVideo')
+      else if (isVisible) playWhenReady()
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+
+    return () => {
+      sendCommand('pauseVideo')
+      observer?.disconnect()
+      iframe.removeEventListener('load', handleLoad)
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+    }
+  }, [])
+
+  const origin = typeof window === 'undefined' ? '' : `&origin=${encodeURIComponent(window.location.origin)}`
+  const source = `https://www.youtube-nocookie.com/embed/MgmIHtp-ZQM?autoplay=1&start=20&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
+
+  return (
+    <div className="youtube-alphabet-player" ref={containerRef}>
+      <div className="youtube-player-frame">
+        <iframe
+          ref={iframeRef}
+          src={source}
+          title="The Alphabet Song | Lower Case Letters | Super Simple ABCs"
+          loading="eager"
+          allow="autoplay; accelerometer; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+      <div className="youtube-player-caption">
+        <span>動画：Super Simple ABCs / Super Simple Songs</span>
+        <small>20秒から再生 · スクロール中は一時停止</small>
+      </div>
+    </div>
+  )
+}
+
 function HearLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page media-page">
-      <LessonTitle eyebrow="Alphabets & sounds · 04" title="Hear the Alphabet" ja="動画は音のお手本です。見終わったら、Articoの手順で口を動かします。" />
-      <div className="media-layout">
-        <VideoReference label="External reference" title="The Super Simple Alphabet Song · lowercase" source="Super Simple · slow alphabet model" externalUrl="https://supersimple.com/phonics-fun/the-super-simple-alphabet-song-lowercase/" />
-        <div className="guided-panel"><h3>Use the video in three passes</h3>{[['1', 'Listen', '最初は歌わず、リズムと音を聞く。'], ['2', 'Repeat', '止めずに、一緒に5回まで声に出す。'], ['3', 'Recall', '音を止めて、AからZまで思い出す。']].map(([n, title, copy]) => <div key={n}><b>{n}</b><span><strong>{title}</strong><small>{copy}</small></span></div>)}</div>
+      <LessonTitle eyebrow="Alphabets · 04" title="Hear the Alphabet" ja="歌でアルファベットを覚えましょう。文字の順番と名前を、音楽に合わせて体に入れます。" />
+      <div className="alphabet-song-layout">
+        <div className="alphabet-song-main">
+          <article className="alphabet-song-intro" id="theory-hear-0">
+            <h2>歌でアルファベットを覚えましょう</h2>
+            <p>英語のアルファベットを覚える一番簡単で楽しい方法の1つは、<strong>「ABCの歌」</strong>です。たくさんの子どもたちが、最初にこの歌を聞いて、真似して、一緒に歌うことで、アルファベットを覚えます。</p>
+            <p>インターネットにはたくさんのアルファベットの歌がありますが、初心者にとってシンプルで分かりやすく、真似しやすいこの動画を選びました。</p>
+            <p className="alphabet-song-focus">前のレッスンでは、大文字と小文字を見分ける練習をしました。今回の目標は、アルファベット全体に慣れることです。特に、<strong>文字の順番と発音（音）</strong>を意識してみましょう。</p>
+          </article>
+          <div id="theory-hear-1">
+            <YouTubeAlphabetPlayer />
+          </div>
+          <article className="alphabet-song-after" id="theory-hear-3">
+            <strong>すぐに全部を覚える必要はありません。</strong>
+            <p>まずは動画を再生して、よく聞き、できるだけ一緒に歌ってみましょう。何度も戻ってくるうちに、文字の順番と名前が少しずつ自然になります。</p>
+          </article>
+        </div>
+        <aside className="alphabet-song-guide" id="theory-hear-2">
+          <h3>やってみること</h3>
+          <ol>
+            <li><b>01</b><span><strong>まず、目で追う</strong><small>動画を再生して、アルファベットの文字を目で追いましょう。</small></span></li>
+            <li><b>02</b><span><strong>一緒に歌う</strong><small>歌を何度も聞いて、一緒に歌う練習をしましょう。必要なだけ繰り返してください。</small></span></li>
+            <li><b>03</b><span><strong>AからZまで思い出す</strong><small>練習を続けると、文字を見分け、名前を発音し、AからZまで歌えるようになります。</small></span></li>
+          </ol>
+          <div className="alphabet-song-callout"><strong>焦らず、楽しんで進めてください。</strong><p>このレッスンは完全な初心者のために作られています。音楽に合わせて何度も繰り返すことで、アルファベットがずっと覚えやすくなります。</p></div>
+        </aside>
       </div>
       <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} label="Write the Alphabet" onNext={onNext} />
     </section>

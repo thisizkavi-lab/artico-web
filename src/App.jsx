@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { allTwisters, alphabet, learnSteps, tongueGroups } from './data'
 import { socialFluencyChapters, socialFluencyParts } from './socialFluencyCurriculum'
 import { orientationSections } from './orientationContent'
@@ -198,7 +198,77 @@ function LandingPage({ onStart }) {
   )
 }
 
-function AppHeader({ mode, setMode, onHome, onProfileClick }) {
+function ProfileMenu({ open, onToggle, onClose, onContinue, onHome, summary }) {
+  const rootRef = useRef(null)
+  const triggerRef = useRef(null)
+
+  useEffect(() => {
+    if (!open) return undefined
+    const handlePointerDown = (event) => {
+      if (!rootRef.current?.contains(event.target)) onClose()
+    }
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        onClose()
+        window.requestAnimationFrame(() => triggerRef.current?.focus())
+      }
+    }
+    document.addEventListener('pointerdown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [open, onClose])
+
+  return (
+    <div className="profile-menu-shell" ref={rootRef}>
+      <button
+        className="profile-button"
+        ref={triggerRef}
+        type="button"
+        aria-label="Learning profile"
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        aria-controls="learning-profile-panel"
+        onClick={onToggle}
+      >
+        <ProfileIcon />
+      </button>
+      {open && (
+        <aside className="profile-panel" id="learning-profile-panel" role="dialog" aria-labelledby="learning-profile-title">
+          <header className="profile-panel-header">
+            <span className="profile-panel-avatar"><ProfileIcon /></span>
+            <div>
+              <small>LEARNING PROFILE</small>
+              <h2 id="learning-profile-title">Guest learner</h2>
+              <p>この端末に学習位置を保存しています</p>
+            </div>
+          </header>
+
+          <section className="profile-current-lesson" aria-label="Current course position">
+            <div className="profile-current-meta"><span>{summary.course}</span><small>{summary.mode}</small></div>
+            <strong>{summary.lesson}</strong>
+            <p>{summary.lessonJa}</p>
+            <div className="profile-position-track" role="progressbar" aria-label="Course position" aria-valuemin="1" aria-valuemax={summary.total} aria-valuenow={summary.position} aria-valuetext={`${summary.position} of ${summary.total}`}>
+              <span style={{ width: `${summary.percent}%` }} />
+            </div>
+            <div className="profile-position-copy"><span>Course position</span><b>{summary.position} / {summary.total}</b></div>
+          </section>
+
+          <button className="profile-continue-button" type="button" onClick={onContinue}>
+            <span><strong>Continue learning</strong><small>{summary.lesson}</small></span>
+            <ArrowIcon />
+          </button>
+          <button className="profile-home-button" type="button" onClick={onHome}>Back to home</button>
+          <p className="profile-sync-note">ログインと端末間の同期は、アカウント機能と一緒に後から接続します。</p>
+        </aside>
+      )}
+    </div>
+  )
+}
+
+function AppHeader({ mode, setMode, onHome, profile }) {
   return (
     <header className="app-header">
       <Logo onClick={onHome} />
@@ -206,7 +276,7 @@ function AppHeader({ mode, setMode, onHome, onProfileClick }) {
         <button aria-pressed={mode === 'learn'} className={mode === 'learn' ? 'active' : ''} type="button" onClick={() => setMode('learn')}><span className="book-symbol">◆</span>Learn</button>
         <button aria-pressed={mode === 'practice'} className={mode === 'practice' ? 'active' : ''} type="button" onClick={() => setMode('practice')}><span className="mouth-symbol">◌</span>Practice</button>
       </div>
-      <button className="profile-button" type="button" aria-label="Profile" onClick={onProfileClick}><ProfileIcon /></button>
+      <ProfileMenu {...profile} />
     </header>
   )
 }
@@ -1522,19 +1592,50 @@ function PracticeMode({ selected, setSelected, view, setView, curriculum, onBack
   )
 }
 
+const courseProfileStorageKey = 'artico-course-position-v1'
+
+function readStoredCoursePosition() {
+  const fallbackModule = socialFluencyChapters[0]
+  const fallbackLesson = fallbackModule?.lessons?.[0]
+  const fallback = {
+    courseLayer: 'foundation',
+    activeStep: 'orientation',
+    everydayModuleId: fallbackModule?.id || 'social-01',
+    everydayLessonId: fallbackLesson?.id || fallbackModule?.id || 'social-01',
+  }
+  if (typeof window === 'undefined') return fallback
+
+  try {
+    const stored = JSON.parse(window.localStorage.getItem(courseProfileStorageKey) || '{}')
+    const activeStep = learnSteps.some((step) => step.id === stored.activeStep) ? stored.activeStep : fallback.activeStep
+    const module = socialFluencyChapters.find((chapter) => chapter.id === stored.everydayModuleId) || fallbackModule
+    const lesson = module?.lessons?.find((item) => item.id === stored.everydayLessonId) || module?.lessons?.[0]
+    return {
+      courseLayer: stored.courseLayer === 'fluency' ? 'fluency' : 'foundation',
+      activeStep,
+      everydayModuleId: module?.id || fallback.everydayModuleId,
+      everydayLessonId: lesson?.id || module?.id || fallback.everydayLessonId,
+    }
+  } catch {
+    return fallback
+  }
+}
+
 function CourseApp({ onHome }) {
-  const [courseLayer, setCourseLayer] = useState('foundation')
+  const initialCoursePosition = useMemo(readStoredCoursePosition, [])
+  const [courseLayer, setCourseLayer] = useState(initialCoursePosition.courseLayer)
   const [mode, setMode] = useState('learn')
-  const [activeStep, setActiveStep] = useState('orientation')
+  const [activeStep, setActiveStep] = useState(initialCoursePosition.activeStep)
   const [selected, setSelected] = useState(null)
   const [practiceView, setPracticeView] = useState('library')
-  const [notice, setNotice] = useState('')
   const [foundationOpen, setFoundationOpen] = useState(true)
   const [everydayOpen, setEverydayOpen] = useState(true)
+  const [profileOpen, setProfileOpen] = useState(false)
+  const closeProfile = useCallback(() => setProfileOpen(false), [])
 
   // Social Fluency state (chapter map is sourced from the book manuscript)
-  const [everydayModuleId, setEverydayModuleId] = useState('social-01')
-  const [everydayLessonId, setEverydayLessonId] = useState('social-01')
+  const [everydayModuleId, setEverydayModuleId] = useState(initialCoursePosition.everydayModuleId)
+  const [everydayLessonId, setEverydayLessonId] = useState(initialCoursePosition.everydayLessonId)
   const [everydayLearnStep, setEverydayLearnStep] = useState('context')
   const [everydayPracticeStep, setEverydayPracticeStep] = useState('substitute')
 
@@ -1543,10 +1644,12 @@ function CourseApp({ onHome }) {
   }, [mode, activeStep, selected, practiceView, courseLayer, everydayModuleId, everydayLessonId])
 
   useEffect(() => {
-    if (!notice) return undefined
-    const timer = window.setTimeout(() => setNotice(''), 2600)
-    return () => window.clearTimeout(timer)
-  }, [notice])
+    try {
+      window.localStorage.setItem(courseProfileStorageKey, JSON.stringify({ courseLayer, activeStep, everydayModuleId, everydayLessonId }))
+    } catch {
+      // The course remains fully usable when storage is unavailable.
+    }
+  }, [courseLayer, activeStep, everydayModuleId, everydayLessonId])
 
   const openPractice = () => { setMode('practice'); setPracticeView('drill'); setSelected(allTwisters[0]); setEverydayPracticeStep('substitute'); }
   const changeMode = (next) => {
@@ -1560,8 +1663,6 @@ function CourseApp({ onHome }) {
       setEverydayLearnStep('context')
     }
   }
-  const showProfileNotice = () => setNotice('学習プロファイル: 無料基礎コース進行中')
-
   const selectFoundationStep = (id) => {
     setCourseLayer('foundation')
     setMode('learn')
@@ -1592,6 +1693,20 @@ function CourseApp({ onHome }) {
   const foundationPracticeAvailable = activeStep === 'tongue-intro'
   const everydayPracticeAvailable = Boolean(currentEverydayLesson?.practice)
   const practiceAvailable = courseLayer === 'foundation' ? foundationPracticeAvailable : everydayPracticeAvailable
+  const activeFoundationIndex = Math.max(0, learnSteps.findIndex((step) => step.id === activeStep))
+  const activeFoundationStep = learnSteps[activeFoundationIndex]
+  const activeSocialIndex = Math.max(0, socialFluencyChapters.findIndex((chapter) => chapter.id === everydayModuleId))
+  const profilePosition = courseLayer === 'foundation' ? activeFoundationIndex + 1 : activeSocialIndex + 1
+  const profileTotal = courseLayer === 'foundation' ? learnSteps.length : socialFluencyChapters.length
+  const profileSummary = {
+    course: courseLayer === 'foundation' ? 'Foundation' : 'Social Fluency',
+    mode: mode === 'learn' ? 'Learn mode' : 'Practice mode',
+    lesson: courseLayer === 'foundation' ? activeFoundationStep?.label : currentEverydayModule?.enTitle,
+    lessonJa: courseLayer === 'foundation' ? activeFoundationStep?.ja : currentEverydayModule?.ja,
+    position: profilePosition,
+    total: profileTotal,
+    percent: Math.round((profilePosition / Math.max(1, profileTotal)) * 100),
+  }
   const curriculum = {
     courseLayer,
     setCourseLayer,
@@ -1609,7 +1724,19 @@ function CourseApp({ onHome }) {
 
   return (
     <div className="course-app">
-      <AppHeader mode={mode} setMode={changeMode} onHome={onHome} onProfileClick={showProfileNotice} />
+      <AppHeader
+        mode={mode}
+        setMode={changeMode}
+        onHome={onHome}
+        profile={{
+          open: profileOpen,
+          onToggle: () => setProfileOpen((value) => !value),
+          onClose: closeProfile,
+          onContinue: closeProfile,
+          onHome: () => { setProfileOpen(false); onHome() },
+          summary: profileSummary,
+        }}
+      />
       {courseLayer === 'foundation' ? (
         mode === 'learn' ? (
           <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} />
@@ -1663,7 +1790,6 @@ function CourseApp({ onHome }) {
           </main>
         </div>
       )}
-      {notice && <div className="toast" role="status">{notice}</div>}
     </div>
   )
 }

@@ -553,7 +553,21 @@ svg { display: block; }
   line-height: 1.12;
 }
 .course-app .lesson-title p { max-width: 880px; color: var(--muted); font-size: 15px; line-height: 1.75; }
+.course-app .practice-unavailable-page { max-width: 1120px; }
+.course-app .practice-unavailable-card {
+  max-width: 760px;
+  margin-top: 42px;
+  padding: 34px 38px;
+  border: 1px solid #e3e8e0;
+  border-radius: 18px;
+  background: #fffefa;
+}
+.course-app .practice-unavailable-card h2 { margin: 0 0 15px; color: #4f5e50; font-size: clamp(25px, 2.5vw, 35px); font-weight: 600; letter-spacing: -.8px; line-height: 1.2; }
+.course-app .practice-unavailable-card p { max-width: 640px; margin: 0; color: #687269; font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.9; }
+.course-app .practice-unavailable-card .practice-unavailable-note { margin-top: 14px; color: #8a938a; font-family: inherit; font-size: 12px; line-height: 1.7; }
+.course-app .practice-unavailable-actions { display: flex; justify-content: flex-start; margin-top: 26px; }
 .course-app .primary-button { min-height: 44px; padding: 0 19px; border-width: 1px; font-size: 14px; }
+.course-app .primary-button:disabled { cursor: default; opacity: .46; transform: none; }
 .course-app .lesson-footer { margin-top: 38px; }
 .course-app .lesson-footer-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; margin-left: auto; }
 .course-app .secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 17px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--olive); font-size: 13px; font-weight: 600; cursor: pointer; transition: background .16s ease, border-color .16s ease, transform .16s ease; }
@@ -852,6 +866,10 @@ svg { display: block; }
   .theory-outline { display: none; }
   .course-app .lesson-page,
   .course-app .practice-page { min-height: auto; padding: 32px 18px 28px; }
+  .course-app .practice-unavailable-page { min-height: auto; padding: 32px 18px 28px; }
+  .course-app .practice-unavailable-card { margin-top: 28px; padding: 24px 20px; border-radius: 15px; }
+  .course-app .practice-unavailable-card h2 { font-size: 25px; }
+  .course-app .practice-unavailable-card p { font-size: 13px; }
   .course-app .orientation-layout,
   .course-app .letters-layout,
   .course-app .media-layout,
@@ -1154,8 +1172,8 @@ svg { display: block; }
 .theory-audio-play { display: grid; width: 40px; height: 40px; border-radius: 50%; background: var(--olive); color: white; place-items: center; cursor: pointer; }
 .theory-audio-play:disabled { background: #d4d9d2; cursor: not-allowed; }
 .theory-audio-play svg { width: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
-.theory-audio-waveform { display: flex; align-items: center; gap: 3px; height: 39px; overflow: hidden; }
-.theory-audio-waveform i { display: block; width: 3px; flex: 0 0 3px; border-radius: 5px; background: #d8ded6; }
+.theory-audio-waveform { display: flex; align-items: center; gap: 0; height: 39px; overflow: hidden; }
+.theory-audio-waveform i { display: block; width: auto; min-width: 0; flex: 1 1 0; border-radius: 2px; background: #d8ded6; }
 .theory-audio-sample:not(.is-pending) .theory-audio-waveform i:nth-child(-n+9) { background: #9aa996; }
 .theory-audio-times { display: flex; flex-direction: column; gap: 13px; color: #8b938b; font-variant-numeric: tabular-nums; font-size: 10px; text-align: right; }
 .theory-audio-track { height: 5px; margin: 10px 0 11px 54px; overflow: hidden; border-radius: 999px; background: #e5e8e3; }
@@ -1164,6 +1182,7 @@ svg { display: block; }
 .theory-audio-controls button { min-width: 52px; padding: 5px 7px; border: 1px solid #d7ddd5; border-radius: 999px; background: white; color: var(--brand); font-size: 10px; cursor: pointer; }
 .theory-audio-controls button:disabled { color: #aab1aa; cursor: not-allowed; }
 .theory-audio-controls button:nth-child(2) { min-width: 48px; }
+.theory-audio-controls button:nth-child(3) { min-width: 58px; }
 .theory-audio-controls small { margin-left: auto; color: #9aa29a; font-family: 'Noto Sans JP', sans-serif; font-size: 9px; white-space: nowrap; }
 .tongue-listen-steps { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: 10px; align-items: center; margin: 24px 0 19px; }
 .tongue-listen-steps > div { display: flex; flex-direction: column; align-items: center; gap: 7px; padding: 15px 10px; border-radius: 15px; background: var(--warm); text-align: center; }
@@ -1196,4 +1215,246 @@ svg { display: block; }
   .tongue-listen-steps i { display: none; }
   .tongue-final-cues { flex-direction: column; }
   .tongue-practice-transition { align-items: flex-start; flex-direction: column; gap: 5px; }
+}
+
+/* Lesson navigation: keep the two actions at opposite edges with a quiet centre. */
+.course-app .lesson-footer {
+  display: grid;
+  grid-template-columns: minmax(190px, 250px) minmax(32px, 1fr) minmax(190px, 250px);
+  align-items: center;
+  column-gap: 32px;
+}
+.course-app .lesson-footer > span {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  max-width: 220px;
+  text-align: center;
+}
+.course-app .lesson-footer-actions {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: minmax(190px, 250px) minmax(32px, 1fr) minmax(190px, 250px);
+  column-gap: 32px;
+  width: 100%;
+  margin-left: 0;
+}
+.course-app .lesson-footer-actions .secondary-button,
+.course-app .lesson-footer-actions .primary-button {
+  min-width: 190px;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.course-app .lesson-footer-actions .secondary-button {
+  grid-column: 1;
+  border: 2px solid #858b80;
+  color: #656b64;
+}
+.course-app .lesson-footer-actions .primary-button {
+  grid-column: 3;
+  border: 1px solid #5b6b5c;
+  background: #455536;
+}
+.course-app .lesson-footer-actions .secondary-button > span { font-size: 28px; font-weight: 400; }
+.course-app .lesson-footer-actions .primary-button svg { width: 28px; height: 28px; stroke-width: 1.7; }
+
+/* Five-stage tongue-twister practice: a connected rail, a quiet workspace, and repetition at the centre. */
+.course-app .practice-flow-meta { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; color: #8b938b; }
+.course-app .practice-flow-meta small { color: #7b866f; font-size: 10px; font-weight: 700; letter-spacing: 1.7px; }
+.course-app .practice-flow-meta span { font-size: 11px; font-variant-numeric: tabular-nums; }
+.course-app .practice-flow-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 28px; align-items: start; }
+.course-app .practice-flow-rail { position: sticky; top: 122px; padding: 18px 12px 17px; border: 1px solid #e6eae4; border-radius: 17px; background: #fffefa; }
+.course-app .practice-flow-rail-title { display: block; margin: 0 8px 16px; color: #858d83; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.course-app .practice-flow-rail ol { position: relative; display: flex; flex-direction: column; gap: 1px; margin: 0; padding: 0; list-style: none; }
+.course-app .practice-flow-rail ol::before { position: absolute; top: 18px; bottom: 18px; left: 17px; width: 1px; background: #dfe5dd; content: ''; }
+.course-app .practice-flow-rail li { position: relative; z-index: 1; }
+.course-app .practice-flow-rail button { display: grid; grid-template-columns: 30px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 9px; align-items: center; width: 100%; min-height: 57px; padding: 7px 8px; border-radius: 11px; background: transparent; color: #6d766d; text-align: left; cursor: pointer; }
+.course-app .practice-flow-rail button:hover:not(:disabled) { background: #f6f7f3; }
+.course-app .practice-flow-rail button.active { background: #eef1ec; color: #465346; }
+.course-app .practice-flow-rail button:disabled { cursor: default; opacity: .58; }
+.course-app .practice-flow-rail button > span { display: grid; grid-row: 1 / -1; width: 27px; height: 27px; border: 1px solid #dbe1da; border-radius: 50%; background: #fffefa; color: #879087; font-size: 10px; font-variant-numeric: tabular-nums; place-items: center; }
+.course-app .practice-flow-rail button.active > span,
+.course-app .practice-flow-rail button.completed > span { border-color: #758571; background: #758571; color: #fffefa; }
+.course-app .practice-flow-rail button strong { font-size: 12px; font-weight: 600; line-height: 1.25; }
+.course-app .practice-flow-rail button small { color: #929a91; font-family: 'Noto Sans JP', sans-serif; font-size: 9px; line-height: 1.3; }
+.course-app .practice-flow-rail button.active small { color: #69766a; }
+.course-app .practice-flow-workspace { min-width: 0; }
+.course-app .practice-flow-stage-label { display: flex; align-items: baseline; gap: 10px; margin: 1px 0 10px; color: #7b866f; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; }
+.course-app .practice-flow-stage-label span { color: #969e96; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0; }
+.course-app .twister-select-rail { max-height: calc(100vh - 145px); overflow-y: auto; scrollbar-width: thin; }
+.course-app .twister-select-rail .practice-flow-rail-title { margin-bottom: 12px; }
+.course-app .twister-select-rail button { min-height: 57px; }
+.course-app .twister-select-rail button strong { display: block; overflow: hidden; font-size: 11px; font-weight: 600; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.course-app .twister-select-rail button small { display: block; overflow: hidden; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.course-app .practice-welcome-card { margin-bottom: 16px; padding: 25px 29px 24px; border: 1px solid #e4e9e2; border-radius: 19px; background: #f6f8f3; }
+.course-app .practice-welcome-card h1 { max-width: 660px; margin: 12px 0 10px; color: #465346; font-size: clamp(27px, 3vw, 40px); font-weight: 600; letter-spacing: -1px; line-height: 1.16; }
+.course-app .practice-welcome-card p { max-width: 760px; margin: 0; color: #707a70; font-family: 'Noto Sans JP', sans-serif; font-size: 12px; line-height: 1.85; }
+.course-app .practice-welcome-points { display: flex; flex-wrap: wrap; gap: 9px 20px; margin-top: 20px; color: #717c70; font-size: 11px; font-weight: 600; }
+.course-app .practice-welcome-points span { display: inline-flex; align-items: center; gap: 7px; }
+.course-app .practice-welcome-points b { display: grid; width: 22px; height: 22px; border-radius: 50%; background: #dce5d8; color: #60705f; font-size: 9px; place-items: center; }
+.course-app .practice-lesson-nav { position: sticky; top: 108px; z-index: 3; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 7px; margin: 0 0 18px; padding: 8px; border: 1px solid #e4e9e2; border-radius: 15px; background: rgba(255, 254, 250, .96); backdrop-filter: blur(12px); }
+.course-app .practice-lesson-nav a { display: grid; grid-template-columns: 25px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 7px; align-items: center; min-height: 49px; padding: 7px 8px; border-radius: 10px; color: #798278; text-decoration: none; }
+.course-app .practice-lesson-nav a:hover { background: #f6f8f3; }
+.course-app .practice-lesson-nav a.active { background: #edf2eb; color: #536252; }
+.course-app .practice-lesson-nav a > span { display: grid; grid-row: 1 / -1; width: 24px; height: 24px; border-radius: 50%; background: #f0f3ed; color: #7b8879; font-size: 9px; font-variant-numeric: tabular-nums; place-items: center; }
+.course-app .practice-lesson-nav a.active > span { background: #758571; color: #fffefa; }
+.course-app .practice-lesson-nav strong { overflow: hidden; font-size: 10px; font-weight: 700; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.course-app .practice-lesson-nav small { overflow: hidden; color: #9aa29a; font-family: 'Noto Sans JP', sans-serif; font-size: 8px; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
+.course-app .practice-stage-card { scroll-margin-top: 180px; padding: 30px 34px 33px; border: 1px solid #e4e9e2; border-radius: 19px; background: #fffefa; }
+.course-app .practice-stage-card + .practice-stage-card { margin-top: 18px; }
+.course-app .practice-reference-video { margin: 24px 0 26px; }
+.course-app .practice-stage-kicker { color: #7b866f; font-size: 10px; font-weight: 700; letter-spacing: 1.25px; }
+.course-app .practice-stage-card h2 { max-width: 620px; margin: 13px 0 11px; color: #414942; font-size: clamp(26px, 3vw, 38px); font-weight: 600; letter-spacing: -1px; line-height: 1.17; }
+.course-app .practice-stage-intro { max-width: 720px; margin: 0; color: #687168; font-family: 'Noto Sans JP', sans-serif; font-size: 13px; line-height: 1.9; }
+.course-app .practice-stage-intro b { color: #69785f; font-weight: 600; }
+.course-app .practice-phrase { margin: 27px 0 23px; color: #3f463f; font-size: clamp(30px, 3.3vw, 46px); font-weight: 600; letter-spacing: -1.4px; line-height: 1.18; }
+.course-app .practice-phrase.small { margin: 22px 0 20px; font-size: clamp(23px, 2.5vw, 34px); }
+.course-app .phrase-focus-red, .course-app .phrase-r { color: #bf5548; font-weight: 700; }
+.course-app .phrase-focus-gold, .course-app .phrase-l { color: #aa8b31; font-weight: 700; }
+.course-app .practice-model-actions,
+.course-app .rep-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+.course-app .model-button,
+.course-app .primary-small-button,
+.course-app .quiet-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 15px; border: 1px solid #dce3db; border-radius: 999px; background: #fffefa; color: #586657; font-size: 12px; font-weight: 600; cursor: pointer; }
+.course-app .model-button svg { width: 15px; fill: none; stroke: currentColor; stroke-width: 2; }
+.course-app .primary-small-button { border-color: #6c7c6d; background: #6c7c6d; color: #fffefa; }
+.course-app .primary-small-button:disabled { border-color: #dfe4dd; background: #dfe4dd; color: #929a91; cursor: default; }
+.course-app .quiet-button { color: #7c857c; }
+.course-app .quiet-button:disabled { cursor: default; opacity: .5; }
+.course-app .loop-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 0 13px; border: 1px solid #dce3db; border-radius: 999px; background: #fffefa; color: #7c857c; font-size: 12px; font-weight: 600; cursor: pointer; }
+.course-app .loop-toggle.active,
+.course-app .theory-audio-controls button.active { border-color: #b7c6b3; background: #edf2eb; color: #667563; }
+.course-app .loop-toggle.compact { min-height: 34px; padding: 0 11px; font-size: 11px; }
+.course-app .practice-three-cues { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 34px; padding-top: 21px; border-top: 1px solid #edf0ec; }
+.course-app .practice-three-cues > div { display: flex; flex-direction: column; gap: 6px; padding-right: 11px; }
+.course-app .practice-three-cues > div + div { border-left: 1px solid #edf0ec; padding-left: 14px; }
+.course-app .practice-three-cues b { color: #667364; font-size: 11px; font-weight: 700; }
+.course-app .practice-three-cues span { color: #858d84; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.6; }
+.course-app .practice-build-guidance { display: flex; flex-direction: column; gap: 4px; max-width: 650px; margin: 24px auto 20px; text-align: center; }
+.course-app .practice-build-guidance strong { color: #667364; font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: 700; }
+.course-app .practice-build-guidance span { color: #818a81; font-size: 11px; }
+.course-app .practice-build-guidance small { margin-top: 4px; color: #929a91; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.7; }
+.course-app .practice-build-guidance .loop-toggle { align-self: center; margin-top: 6px; }
+.course-app .practice-build-ladder { display: flex; flex-direction: column; align-items: center; margin: 0 auto; padding: 2px 0 4px; }
+.course-app .practice-build-step { display: grid; grid-template-columns: 31px minmax(0, 1fr) 19px; gap: 12px; align-items: center; width: min(100%, 610px); min-height: 59px; padding: 12px 17px; border: 1px solid #e1e7df; border-radius: 14px; background: #fffefa; color: #414942; text-align: left; cursor: pointer; transition: border-color .16s ease, background .16s ease, transform .16s ease; }
+.course-app .practice-build-step:hover { border-color: #cfd9cc; background: #f9faf7; transform: translateY(-1px); }
+.course-app .practice-build-step.active { border-color: #b8c8b5; background: #f1f4ee; }
+.course-app .practice-build-step.done { color: #697569; background: #fbfcf9; }
+.course-app .practice-build-step.final { width: min(100%, 680px); min-height: 71px; padding: 15px 20px; border-color: #cbd6c7; background: #f5f7f1; }
+.course-app .practice-build-step-number { display: grid; width: 27px; height: 27px; border-radius: 50%; background: #f0f2ed; color: #7d877c; font-size: 10px; font-variant-numeric: tabular-nums; place-items: center; }
+.course-app .practice-build-step.active .practice-build-step-number,
+.course-app .practice-build-step.done .practice-build-step-number,
+.course-app .practice-build-step.final .practice-build-step-number { background: #748474; color: #fffefa; }
+.course-app .practice-build-step-phrase { min-width: 0; overflow-wrap: anywhere; font-size: clamp(15px, 1.65vw, 21px); font-weight: 600; line-height: 1.45; text-align: center; }
+.course-app .practice-build-step.final .practice-build-step-phrase { font-size: clamp(17px, 1.85vw, 24px); }
+.course-app .practice-build-step-play { display: grid; align-self: center; place-items: center; }
+.course-app .practice-build-step-play svg { width: 16px; fill: none; stroke: #788477; stroke-width: 1.8; }
+.course-app .practice-build-arrow { display: grid; min-height: 30px; color: #99a598; font-size: 25px; line-height: 1; place-items: center; }
+.course-app .practice-technique-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
+.course-app .practice-technique-grid > div { display: flex; flex-direction: column; gap: 7px; padding: 15px 16px; border-radius: 12px; background: #f5f7f1; }
+.course-app .practice-technique-grid b { color: #697765; font-size: 11px; font-weight: 700; }
+.course-app .practice-technique-grid span { color: #727c72; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.7; }
+.course-app .clean-reps-card,
+.course-app .speed-challenge-card { margin-top: 25px; padding: 22px; border: 1px solid #e7ebe5; border-radius: 15px; background: #fbfcf9; }
+.course-app .clean-reps-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #707b70; font-size: 11px; }
+.course-app .clean-reps-heading b { font-weight: 700; letter-spacing: .3px; }
+.course-app .clean-reps-heading strong { color: #5e6e5f; font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.course-app .rep-pills { display: flex; gap: 8px; margin: 16px 0 20px; }
+.course-app .rep-pills span { display: grid; width: 30px; height: 30px; border: 1px solid #e0e6df; border-radius: 50%; background: #fffefa; color: #8b9489; font-size: 10px; place-items: center; }
+.course-app .rep-pills span.done { border-color: #758571; background: #758571; color: #fffefa; }
+.course-app .rep-pills span.current { border-color: #b8c5b5; background: #edf1ea; color: #6a786b; }
+.course-app .speed-count { display: flex; flex-direction: column; align-items: center; color: #4d5b4e; font-size: 58px; font-weight: 600; letter-spacing: -2px; line-height: 1; }
+.course-app .speed-count small { margin-top: 8px; color: #90988e; font-size: 11px; font-weight: 400; letter-spacing: 0; }
+.course-app .speed-challenge-card .practice-phrase { text-align: center; }
+.course-app .speed-challenge-card .rep-actions { justify-content: center; }
+.course-app .challenge-status { margin: 17px 0 0; padding: 12px 13px; border-radius: 10px; background: #f1f3ed; color: #8a9388; font-family: 'Noto Sans JP', sans-serif; font-size: 11px; text-align: center; }
+.course-app .challenge-status.ready { color: #667563; background: #eaf0e8; }
+.course-app .challenge-note { display: block; margin-top: 14px; color: #8e968d; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; text-align: center; }
+.course-app .finish-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.course-app .finish-columns > div { display: flex; flex-direction: column; gap: 8px; padding: 17px; border: 1px solid #e7ebe5; border-radius: 13px; background: #fbfcf9; }
+.course-app .finish-columns strong { color: #677466; font-size: 12px; font-weight: 700; }
+.course-app .finish-columns span { color: #747e74; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.6; }
+.course-app .finish-columns p { margin: 0 0 5px; color: #808980; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.7; }
+.course-app .finish-columns button { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 40px; padding: 7px 11px; border: 1px solid #e5eae3; border-radius: 9px; background: #fffefa; color: #6b766a; text-align: left; cursor: pointer; }
+.course-app .finish-columns button.selected { border-color: #b8c6b5; background: #edf2eb; }
+.course-app .finish-columns button b { font-size: 13px; font-weight: 600; }
+.course-app .finish-columns button span { font-size: 9px; }
+.course-app .finish-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 22px; }
+.course-app .finish-actions .primary-small-button svg { width: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.course-app .practice-flow-workspace > .lesson-footer { margin-top: 26px; }
+
+@media (max-width: 760px) {
+  .course-app .lesson-footer {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .course-app .lesson-footer-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+  .course-app .lesson-footer > span { order: 2; max-width: none; }
+  .course-app .lesson-footer-actions .secondary-button,
+  .course-app .lesson-footer-actions .primary-button {
+    grid-column: auto;
+    min-width: 0;
+    min-height: 54px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 13px;
+  }
+  .course-app .lesson-footer-actions .secondary-button > span { font-size: 24px; }
+  .course-app .lesson-footer-actions .primary-button svg { width: 23px; height: 23px; }
+}
+
+@media (max-width: 760px) {
+  .course-app .practice-flow-meta { margin-bottom: 10px; }
+  .course-app .practice-flow-layout { grid-template-columns: 1fr; gap: 15px; }
+  .course-app .practice-flow-rail { position: static; max-height: none; padding: 12px 9px; overflow-x: auto; }
+  .course-app .practice-flow-rail-title { margin: 0 7px 9px; }
+  .course-app .practice-flow-rail ol { flex-direction: row; gap: 4px; }
+  .course-app .practice-flow-rail ol::before { top: 18px; right: 20px; bottom: auto; left: 20px; width: auto; height: 1px; }
+  .course-app .practice-flow-rail li { flex: 0 0 164px; }
+  .course-app .practice-flow-rail button { grid-template-columns: 26px minmax(0, 1fr); min-height: 56px; padding: 7px 6px; }
+  .course-app .practice-flow-rail button > span { width: 25px; height: 25px; }
+  .course-app .practice-flow-rail button strong { font-size: 10px; }
+  .course-app .practice-flow-rail button small { font-size: 8px; }
+  .course-app .practice-welcome-card { padding: 21px 18px 20px; }
+  .course-app .practice-welcome-card h1 { font-size: 27px; }
+  .course-app .practice-welcome-card p { font-size: 11px; line-height: 1.8; }
+  .course-app .practice-welcome-points { align-items: flex-start; flex-direction: column; gap: 8px; margin-top: 16px; font-size: 10px; }
+  .course-app .practice-lesson-nav { position: static; display: flex; gap: 5px; margin-bottom: 14px; padding: 6px; overflow-x: auto; }
+  .course-app .practice-lesson-nav a { flex: 0 0 142px; min-height: 46px; }
+  .course-app .practice-stage-card { padding: 22px 18px 24px; border-radius: 15px; }
+  .course-app .practice-stage-card h2 { margin-top: 11px; font-size: 26px; letter-spacing: -.6px; }
+  .course-app .practice-stage-intro { font-size: 12px; line-height: 1.85; }
+  .course-app .practice-phrase { margin: 23px 0 19px; font-size: 28px; letter-spacing: -.8px; }
+  .course-app .practice-phrase.small { font-size: 22px; }
+  .course-app .practice-three-cues { grid-template-columns: 1fr; gap: 9px; margin-top: 27px; }
+  .course-app .practice-three-cues > div { padding: 10px 0 0; border-top: 1px solid #edf0ec; }
+  .course-app .practice-three-cues > div + div { padding-left: 0; border-left: 0; }
+  .course-app .practice-technique-grid,
+  .course-app .finish-columns { grid-template-columns: 1fr; }
+  .course-app .practice-build-guidance { margin-top: 21px; }
+  .course-app .practice-build-guidance strong { font-size: 12px; }
+  .course-app .practice-build-guidance span,
+  .course-app .practice-build-guidance small { font-size: 9px; }
+  .course-app .practice-build-step { grid-template-columns: 27px minmax(0, 1fr) 17px; gap: 8px; min-height: 55px; padding: 10px 11px; }
+  .course-app .practice-build-step.final { min-height: 64px; padding: 12px 13px; }
+  .course-app .practice-build-step-phrase { font-size: 14px; line-height: 1.5; }
+  .course-app .practice-build-step.final .practice-build-step-phrase { font-size: 15px; }
+  .course-app .practice-build-arrow { min-height: 26px; font-size: 22px; }
+  .course-app .clean-reps-card,
+  .course-app .speed-challenge-card { padding: 17px; }
+  .course-app .clean-reps-heading { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .course-app .speed-count { font-size: 50px; }
+  .course-app .finish-actions { align-items: stretch; flex-direction: column; }
+  .course-app .finish-actions button { width: 100%; }
 }

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { allTwisters, alphabet, learnSteps, tongueGroups } from './data'
 import { socialFluencyChapters, socialFluencyParts } from './socialFluencyCurriculum'
 import { orientationSections } from './orientationContent'
@@ -21,6 +21,25 @@ function speakWithBrowser(text, options = {}) {
     if (onerror) onerror(e)
     return false
   }
+}
+
+// Keep every lesson audio source in one shared playback lane. A new source
+// claims the lane and stops the previous one, even when the two clips live in
+// different lesson cards or practice sections.
+let activePlayback = null
+
+function claimPlayback(token, stop) {
+  if (activePlayback && activePlayback !== token) {
+    const previous = activePlayback
+    activePlayback = null
+    previous.stop()
+  }
+  token.stop = stop
+  activePlayback = token
+}
+
+function releasePlayback(token) {
+  if (activePlayback === token) activePlayback = null
 }
 
 const ArrowIcon = () => (
@@ -46,8 +65,8 @@ function Logo({ onClick }) {
   )
 }
 
-function PrimaryButton({ children, onClick, className = '' }) {
-  return <button className={`primary-button ${className}`} type="button" onClick={onClick}>{children}<ArrowIcon /></button>
+function PrimaryButton({ children, onClick, className = '', disabled = false }) {
+  return <button className={`primary-button ${className}`} type="button" onClick={onClick} disabled={disabled}>{children}<ArrowIcon /></button>
 }
 
 function LandingHeader({ onStart, language, setLanguage, onLogin }) {
@@ -303,6 +322,27 @@ function LessonTitle({ eyebrow, title, ja }) {
   return <div className="lesson-title"><small>{eyebrow}</small><h1>{title}</h1><p>{ja}</p></div>
 }
 
+function PracticeUnavailable({ lessonLabel, lessonJa, onBackToLearn }) {
+  return (
+    <section className="lesson-page practice-unavailable-page">
+      <LessonTitle
+        eyebrow="Practice · this lesson is learn-only"
+        title="There is no practice section here yet."
+        ja={`${lessonLabel}（${lessonJa}）は、今はLearnだけのレッスンです。`}
+      />
+      <div className="practice-unavailable-card">
+        <span className="section-kicker">Learn first</span>
+        <h2>このレッスンにはPracticeがありません。</h2>
+        <p>ここでは理論や学び方を読むことに集中します。Practiceは、練習が用意されているレッスンだけに表示されます。</p>
+        <p className="practice-unavailable-note">Practice is lesson-specific. Tongue Twisters has its own guided drill; other lessons will open their own practice when they are ready.</p>
+        <div className="practice-unavailable-actions">
+          <SecondaryButton onClick={onBackToLearn}>Back to Learn</SecondaryButton>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 const theorySectionSets = {
   orientation: orientationSections,
   'how-it-works': howItWorksSections,
@@ -414,7 +454,13 @@ function VideoReference({ videoId, label, title, source, externalUrl }) {
   )
 }
 
-function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
+function formatVideoTime(seconds) {
+  const minutes = Math.floor(seconds / 60)
+  const remainder = Math.floor(seconds % 60)
+  return `${minutes}:${String(remainder).padStart(2, '0')}`
+}
+
+function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0, endAt = 0, loopSegment = false, autoplay = true }) {
   const containerRef = useRef(null)
   const iframeRef = useRef(null)
   const hasStartedRef = useRef(false)
@@ -426,9 +472,16 @@ function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
 
     let playerLoaded = false
     let isVisible = false
+    const hasSegment = loopSegment && endAt > startAt
 
     const sendCommand = (func, args = []) => {
       iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func, args }), '*')
+    }
+
+    const restartSegment = () => {
+      if (!hasSegment || !isVisible) return
+      sendCommand('seekTo', [startAt, true])
+      sendCommand('playVideo')
     }
 
     const playWhenReady = () => {
@@ -442,15 +495,29 @@ function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
 
     const handleLoad = () => {
       playerLoaded = true
-      if (isVisible) playWhenReady()
+      if (hasSegment) sendCommand('addEventListener', ['onStateChange'])
+      if (isVisible && autoplay) playWhenReady()
+    }
+
+    const handleMessage = (event) => {
+      if (event.source !== iframe.contentWindow || !hasSegment) return
+      let data
+      try {
+        data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data
+      } catch {
+        return
+      }
+      if (data?.event === 'onStateChange' && Number(data.info) === 0) restartSegment()
+      if (data?.event === 'infoDelivery' && Number(data.info?.currentTime) >= endAt - 0.25) restartSegment()
     }
 
     iframe.addEventListener('load', handleLoad)
+    window.addEventListener('message', handleMessage)
 
     const observer = typeof IntersectionObserver === 'function'
       ? new IntersectionObserver(([entry]) => {
         isVisible = entry.isIntersecting && entry.intersectionRatio >= 0.45
-        if (isVisible) playWhenReady()
+        if (isVisible && autoplay) playWhenReady()
         else sendCommand('pauseVideo')
       }, { threshold: [0, 0.45, 0.8] })
       : null
@@ -459,7 +526,7 @@ function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
 
     const handleVisibilityChange = () => {
       if (document.hidden) sendCommand('pauseVideo')
-      else if (isVisible) playWhenReady()
+      else if (isVisible && autoplay) playWhenReady()
     }
 
     document.addEventListener('visibilitychange', handleVisibilityChange)
@@ -468,13 +535,20 @@ function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
       sendCommand('pauseVideo')
       observer?.disconnect()
       iframe.removeEventListener('load', handleLoad)
+      window.removeEventListener('message', handleMessage)
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
-  }, [])
+  }, [autoplay, endAt, loopSegment, startAt])
 
   const origin = typeof window === 'undefined' ? '' : `&origin=${encodeURIComponent(window.location.origin)}`
   const start = startAt > 0 ? `&start=${startAt}` : ''
-  const source = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1${start}&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
+  const end = endAt > startAt ? `&end=${endAt}` : ''
+  const source = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=${autoplay ? 1 : 0}${start}${end}&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
+  const segmentLabel = endAt > startAt
+    ? `${formatVideoTime(startAt)}–${formatVideoTime(endAt)} をループ · スクロール中は一時停止`
+    : autoplay
+      ? `${startAt > 0 ? `${startAt}秒から再生 · ` : ''}スクロール中は一時停止`
+      : 'クリックして再生 · スクロール中は一時停止'
 
   return (
     <div className="youtube-lesson-player" ref={containerRef}>
@@ -490,7 +564,7 @@ function YouTubeLessonPlayer({ videoId, title, credit, startAt = 0 }) {
       </div>
       <div className="youtube-player-caption">
         <span>{credit}</span>
-        <small>{startAt > 0 ? `${startAt}秒から再生 · ` : ''}スクロール中は一時停止</small>
+        <small>{segmentLabel}</small>
       </div>
     </div>
   )
@@ -662,35 +736,62 @@ function SoundsLesson({ onPrevious, previousLabel, onNext }) {
 
 function TheoryAudioSample({ phrase, target, src }) {
   const audioRef = useRef(null)
+  const playbackToken = useRef({ stop: () => {} })
   const [playing, setPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [playbackRate, setPlaybackRate] = useState(1)
+  const [looping, setLooping] = useState(false)
+
+  const stopPlayback = () => {
+    const audio = audioRef.current
+    if (audio) audio.pause()
+    setPlaying(false)
+    releasePlayback(playbackToken.current)
+  }
 
   useEffect(() => {
     const audio = audioRef.current
     if (!audio || !src) return undefined
     const updateProgress = () => setProgress(audio.duration ? (audio.currentTime / audio.duration) * 100 : 0)
     const updateDuration = () => setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
-    const finish = () => setPlaying(false)
+    const finish = () => {
+      setPlaying(false)
+      releasePlayback(playbackToken.current)
+    }
     audio.addEventListener('timeupdate', updateProgress)
     audio.addEventListener('loadedmetadata', updateDuration)
     audio.addEventListener('ended', finish)
     return () => {
+      stopPlayback()
       audio.removeEventListener('timeupdate', updateProgress)
       audio.removeEventListener('loadedmetadata', updateDuration)
       audio.removeEventListener('ended', finish)
     }
   }, [src])
 
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.playbackRate = playbackRate
+  }, [playbackRate, src])
+
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.loop = looping
+  }, [looping, src])
+
   const toggle = async () => {
     const audio = audioRef.current
     if (!audio || !src) return
     if (audio.paused) {
-      await audio.play()
-      setPlaying(true)
+      claimPlayback(playbackToken.current, stopPlayback)
+      try {
+        await audio.play()
+        if (activePlayback === playbackToken.current && !audio.paused) setPlaying(true)
+      } catch {
+        releasePlayback(playbackToken.current)
+        setPlaying(false)
+      }
     } else {
-      audio.pause()
-      setPlaying(false)
+      stopPlayback()
     }
   }
 
@@ -698,6 +799,19 @@ function TheoryAudioSample({ phrase, target, src }) {
     const audio = audioRef.current
     if (audio && src) audio.currentTime = Math.max(0, audio.currentTime - 10)
   }
+
+  const cycleSpeed = () => {
+    if (!src) return
+    const speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
+    setPlaybackRate((rate) => speeds[(speeds.indexOf(rate) + 1) % speeds.length])
+  }
+
+  const toggleLoop = () => {
+    if (!src) return
+    setLooping((value) => !value)
+  }
+
+  const speedLabel = `${playbackRate.toFixed(2).replace(/0$/, '')}x`
 
   const formatTime = (value) => {
     if (!value) return '0:00'
@@ -711,7 +825,7 @@ function TheoryAudioSample({ phrase, target, src }) {
       {src && <audio ref={audioRef} src={src} preload="metadata" />}
       <div className="theory-audio-head"><button type="button" className="theory-audio-play" onClick={toggle} disabled={!src} aria-label={src ? `${phrase}を再生` : `${phrase}の音声は準備中`}><PlayIcon pause={playing} /></button><div className="theory-audio-waveform" aria-hidden="true">{[20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32, 46, 26].map((height, index) => <i key={index} style={{ height }} />)}</div><div className="theory-audio-times"><span>{formatTime((progress / 100) * duration)}</span><span>{duration ? formatTime(duration) : '--:--'}</span></div></div>
       <div className="theory-audio-track"><span style={{ width: `${progress}%` }} /></div>
-      <div className="theory-audio-controls"><button type="button" onClick={rewind} disabled={!src} aria-label="10秒戻る">↶ <span>-10s</span></button><button type="button" disabled={!src} aria-label="再生速度">1.0x</button><small>{src ? '音声サンプル' : '音声サンプルを準備中'}</small></div>
+      <div className="theory-audio-controls"><button type="button" onClick={rewind} disabled={!src} aria-label="10秒戻る">↶ <span>-10s</span></button><button type="button" onClick={cycleSpeed} disabled={!src} aria-label={`再生速度 ${speedLabel}`}>{speedLabel}</button><button type="button" className={looping ? 'active' : ''} onClick={toggleLoop} disabled={!src} aria-label={looping ? 'ループをオフ' : 'ループをオン'} aria-pressed={looping}>↻ <span>Loop</span></button><small>{src ? '音声サンプル' : '音声サンプルを準備中'}</small></div>
     </div>
   )
 }
@@ -719,7 +833,7 @@ function TheoryAudioSample({ phrase, target, src }) {
 const tongueIntroGroups = [
   { id: 'priority', number: '01', title: '日本の学習者が優先して練習したい音の違い', intro: '多くの日本の学習者にとって、最初に身につけると便利な音の違いに焦点を当てます。', itemIds: ['red-lorry', 'seashells', 'free-throws'] },
   { id: 'consonants', number: '02', title: 'はっきりとした子音の音', intro: '言葉の最初や最後にある、はっきりとした子音を、余分な母音なしで出す練習です。', itemIds: ['peter-piper', 'big-black-bug', 'two-witches'] },
-  { id: 'clusters', number: '03', title: '子音が連続する音', intro: '英語でよく起こる子音のかたまりを、分解せずにつなげる感覚に慣れます。', itemIds: ['fresh-flesh'] },
+  { id: 'clusters', number: '03', title: '子音が連続する音', intro: '英語でよく起こる子音のかたまりを、分解せずにつなげる感覚に慣れます。', itemIds: ['ice-cream', 'slippery-snails', 'fresh-flesh'] },
   { id: 'rhythm', number: '04', title: 'リズムと音のつながり', intro: '個々の音だけでなく、英語の強弱と、音から音への自然な流れを感じます。', itemIds: ['betty-botter', 'woodchuck', 'unique-new-york'] },
 ]
 
@@ -754,7 +868,7 @@ function TongueIntro({ onPrevious, previousLabel, onPractice }) {
         <article className="tongue-theory-card tongue-set-card" id="theory-tongue-intro-3">
           <div className="tongue-section-heading"><span>04</span><div><small>これから練習する早口言葉</small><h2>4つのグループから、音を聞いてみましょう。</h2></div></div>
           <p className="tongue-set-lead">「破裂音」や「二重母音」といった専門用語を理解する必要はありません。まずは注目する音を意識して、各フレーズの音声サンプルを聞いてみましょう。</p>
-          <div className="tongue-theory-groups">{tongueIntroGroups.map((group) => <section className="tongue-theory-group" key={group.id}><header><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.intro}</p></div></header><div className="tongue-theory-items">{group.itemIds.map((itemId) => { const item = findItem(itemId); if (!item) return null; return <article className="tongue-theory-item" key={item.id}><div className="tongue-item-copy"><span>{item.target}</span><strong>{item.phrase}</strong><p>{item.why}</p></div><TheoryAudioSample phrase={item.phrase} target={item.target} /></article> })}</div></section>)}</div>
+          <div className="tongue-theory-groups">{tongueIntroGroups.map((group) => <section className="tongue-theory-group" key={group.id}><header><b>{group.number}</b><div><h3>{group.title}</h3><p>{group.intro}</p></div></header><div className="tongue-theory-items">{group.itemIds.map((itemId) => { const item = findItem(itemId); if (!item) return null; return <article className="tongue-theory-item" key={item.id}><div className="tongue-item-copy"><span>{item.target}</span><strong><HighlightedPhrase item={item} /></strong><p>{item.why}</p></div><TheoryAudioSample phrase={item.phrase} target={item.target} src={`${import.meta.env.BASE_URL}audio/${item.id}.wav`} /></article> })}</div></section>)}</div>
         </article>
 
         <article className="tongue-theory-card tongue-listen-card" id="theory-tongue-intro-4">
@@ -781,8 +895,8 @@ function SecondaryButton({ children, onClick, disabled = false }) {
   return <button className="secondary-button" type="button" onClick={onClick} disabled={disabled}><span aria-hidden="true">←</span>{children}</button>
 }
 
-function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext }) {
-  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}>{previousLabel}</SecondaryButton><PrimaryButton onClick={onNext}>{label}</PrimaryButton></div></div>
+function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext, nextDisabled = false }) {
+  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}>{previousLabel}</SecondaryButton><PrimaryButton onClick={onNext} disabled={nextDisabled}>{label}</PrimaryButton></div></div>
 }
 
 const theoryOutlines = {
@@ -828,43 +942,10 @@ function LearnMode({ activeStep, setActiveStep, openPractice, curriculum }) {
   return <div className="app-body"><LessonSidebar active={activeStep} onSelect={setActiveStep} curriculum={curriculum} /><main className="lesson-main"><div className="theory-layout"><div className="theory-content">{content}</div><TheoryOutline activeStep={activeStep} activeSectionId={activeTheorySectionId} /></div></main></div>
 }
 
-function PracticeSidebar({ view, setView, selected, selectTwister, onSelectGroup, pendingGroupId, activeGroupId, curriculum }) {
+function PracticeSidebar({ selected, selectTwister, curriculum }) {
   return (
     <aside className="practice-sidebar">
       <CurriculumNav {...curriculum} />
-      <div className="sidebar-heading sidebar-tool-heading"><small>Practice mode</small><h2>Tongue Twisters</h2><p>12本の定番セット</p></div>
-      <nav>
-        <button
-          className={view === 'library' && !selected && !pendingGroupId && !activeGroupId ? 'active' : ''}
-          aria-current={view === 'library' && !selected && !pendingGroupId && !activeGroupId ? 'page' : undefined}
-          type="button"
-          onClick={() => { setView('library'); onSelectGroup(null); }}
-        >
-          All classics
-        </button>
-        {tongueGroups.map((group) => {
-          const isGroupActive = view === 'library' && !selected && (pendingGroupId === group.id || activeGroupId === group.id)
-          return (
-            <button
-              key={group.id}
-              className={isGroupActive ? 'active' : ''}
-              aria-current={isGroupActive ? 'page' : undefined}
-              type="button"
-              onClick={() => onSelectGroup(group.id)}
-            >
-              {group.title.replace('Japanese-priority ', '')}
-            </button>
-          )
-        })}
-        <button
-          className={view === 'routine' ? 'active' : ''}
-          aria-current={view === 'routine' ? 'page' : undefined}
-          type="button"
-          onClick={() => { setView('routine'); onSelectGroup(null); }}
-        >
-          Four-week routine
-        </button>
-      </nav>
       {selected && <div className="selected-sidebar"><small>Current drill</small><strong>{selected.phrase}</strong><span>{selected.target} · {selected.duration}</span><button type="button" onClick={() => selectTwister(null)}>Back to library</button></div>}
       {!selected && <div className="sidebar-note"><small>Suggested session</small><strong>One focus + two mixed</strong><span>目安 8–10分 · 速度より明瞭さ</span></div>}
     </aside>
@@ -884,28 +965,50 @@ function TwisterLibrary({ onSelect, onPrevious, onNext }) {
 function useSpeechPlayer() {
   const [playing, setPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
+  const [looping, setLooping] = useState(false)
   const timer = useRef(null)
+  const runRef = useRef(0)
+  const loopRef = useRef(false)
+  const playbackToken = useRef({ stop: () => {} })
+
+  const setLoop = (value) => {
+    loopRef.current = value
+    setLooping(value)
+  }
+
+  const toggleLoop = () => setLoop(!loopRef.current)
 
   const stop = () => {
+    runRef.current += 1
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       window.speechSynthesis.cancel()
     }
     window.clearInterval(timer.current)
     setPlaying(false)
     setProgress(0)
+    releasePlayback(playbackToken.current)
   }
 
   const play = (text, rate) => {
     stop()
+    const run = runRef.current
     const started = Date.now()
     const estimated = Math.max(2600, (text.split(' ').length * 520) / rate)
+
+    claimPlayback(playbackToken.current, stop)
 
     const success = speakWithBrowser(text, {
       rate,
       onend: () => {
+        if (run !== runRef.current) return
         window.clearInterval(timer.current)
-        setPlaying(false)
-        setProgress(100)
+        if (loopRef.current) {
+          play(text, rate)
+        } else {
+          setPlaying(false)
+          setProgress(100)
+          releasePlayback(playbackToken.current)
+        }
       },
       onerror: stop,
     })
@@ -917,35 +1020,417 @@ function useSpeechPlayer() {
         () => setProgress(Math.min(94, ((Date.now() - started) / estimated) * 100)),
         120
       )
+    } else {
+      releasePlayback(playbackToken.current)
     }
   }
 
-  useEffect(() => () => stop(), [])
-  return { playing, progress, play, stop }
+  useEffect(() => () => { loopRef.current = false; stop() }, [])
+  return { playing, progress, looping, play, stop, toggleLoop, setLoop }
 }
 
-function TwisterDrill({ item, onPrevious, previousLabel, onNext, nextLabel }) {
-  const [speed, setSpeed] = useState('model')
-  const [stage, setStage] = useState(1)
-  const player = useSpeechPlayer()
-  const rate = speed === 'slow' ? 0.58 : speed === 'natural' ? 1.05 : 0.82
+const practiceAudioIds = new Set(['red-lorry', 'seashells', 'free-throws', 'peter-piper', 'big-black-bug', 'two-witches', 'ice-cream', 'slippery-snails', 'fresh-flesh', 'betty-botter', 'woodchuck', 'unique-new-york'])
+
+const phraseHighlightRules = {
+  'red-lorry': [{ source: 'R', className: 'phrase-focus-red', caseSensitive: true }, { source: 'l', className: 'phrase-focus-gold' }],
+  seashells: [{ source: 'sh', className: 'phrase-focus-gold' }, { source: 's', className: 'phrase-focus-red' }],
+  'free-throws': [{ source: 'th', className: 'phrase-focus-red' }, { source: 'f', className: 'phrase-focus-gold' }],
+  'peter-piper': [{ source: 'p', className: 'phrase-focus-red' }],
+  'big-black-bug': [{ source: 'b', className: 'phrase-focus-red' }, { source: '[gkdrt](?=\\b)', className: 'phrase-focus-gold' }],
+  'two-witches': [{ source: 'ch', className: 'phrase-focus-gold' }, { source: 'w', className: 'phrase-focus-red' }],
+  'ice-cream': [{ source: 'scr', className: 'phrase-focus-red' }],
+  'slippery-snails': [{ source: 'sl', className: 'phrase-focus-red' }, { source: 'sn', className: 'phrase-focus-gold' }],
+  'fresh-flesh': [{ source: 'fr', className: 'phrase-focus-red' }, { source: 'fl', className: 'phrase-focus-gold' }],
+  'betty-botter': [{ source: 'b', className: 'phrase-focus-red' }, { source: 't', className: 'phrase-focus-gold' }],
+  woodchuck: [{ source: 'ch', className: 'phrase-focus-gold' }, { source: 'w', className: 'phrase-focus-red' }],
+  'unique-new-york': [{ source: 'u', className: 'phrase-focus-red' }, { source: 'k', className: 'phrase-focus-gold' }, { source: 'n', className: 'phrase-focus-gold' }],
+}
+
+function HighlightedPhrase({ item, phrase = item.phrase }) {
+  const rules = phraseHighlightRules[item.id]
+  if (!rules) return <span>{phrase}</span>
+  const matcher = new RegExp(`(${rules.map((rule) => rule.source).join('|')})`, 'gi')
+  return <span>{phrase.split(matcher).map((part, index) => {
+    const rule = rules.find((candidate) => {
+      const matches = new RegExp(`^${candidate.source}$`, 'i').test(part)
+      return matches && (!candidate.caseSensitive || part === candidate.source)
+    })
+    return rule ? <b className={rule.className} key={`${part}-${index}`}>{part}</b> : <Fragment key={`${part}-${index}`}>{part}</Fragment>
+  })}</span>
+}
+
+function PracticePhrase({ item, phrase = item.phrase }) {
+  return <HighlightedPhrase item={item} phrase={phrase} />
+}
+
+function LoopToggle({ looping, onToggle, compact = false }) {
+  return <button type="button" className={`loop-toggle ${looping ? 'active' : ''} ${compact ? 'compact' : ''}`} onClick={onToggle} aria-pressed={looping} aria-label={looping ? 'Turn loop off' : 'Turn loop on'}>↻ <span>{looping ? 'Loop on' : 'Loop'}</span></button>
+}
+
+function usePracticeAudio(item) {
+  const audioRef = useRef(null)
+  const playbackToken = useRef({ stop: () => {} })
+  const fallback = useSpeechPlayer()
+  const [audioPlaying, setAudioPlaying] = useState(false)
+  const [progress, setProgress] = useState(0)
+  const [duration, setDuration] = useState(0)
+  const src = practiceAudioIds.has(item.id) ? `${import.meta.env.BASE_URL}audio/${item.id}.wav` : ''
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio) return undefined
+    const onTime = () => setProgress(audio.duration ? (audio.currentTime / audio.duration) * 100 : 0)
+    const onMeta = () => setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
+    const onEnd = () => {
+      setAudioPlaying(false)
+      setProgress(100)
+      releasePlayback(playbackToken.current)
+    }
+    audio.addEventListener('timeupdate', onTime)
+    audio.addEventListener('loadedmetadata', onMeta)
+    audio.addEventListener('ended', onEnd)
+    return () => {
+      audio.pause()
+      audio.removeEventListener('timeupdate', onTime)
+      audio.removeEventListener('loadedmetadata', onMeta)
+      audio.removeEventListener('ended', onEnd)
+    }
+  }, [src])
+
+  useEffect(() => {
+    if (audioRef.current) audioRef.current.loop = fallback.looping
+  }, [fallback.looping, src])
+
+  const stop = () => {
+    const audio = audioRef.current
+    if (audio) audio.pause()
+    fallback.stop()
+    setAudioPlaying(false)
+    releasePlayback(playbackToken.current)
+  }
+
+  const play = (rate = 1, text = item.phrase) => {
+    const audio = audioRef.current
+    const isFullPhrase = text === item.phrase
+    if (audio) {
+      audio.pause()
+      audio.currentTime = 0
+      setAudioPlaying(false)
+    }
+    if (!audio || !isFullPhrase) {
+      fallback.play(text, rate)
+      return
+    }
+    fallback.stop()
+    const stopNativePlayback = () => {
+      audio.pause()
+      setAudioPlaying(false)
+      releasePlayback(playbackToken.current)
+    }
+    claimPlayback(playbackToken.current, stopNativePlayback)
+    audio.playbackRate = rate
+    audio.play().then(() => {
+      if (activePlayback === playbackToken.current && !audio.paused) setAudioPlaying(true)
+    }).catch(() => {
+      releasePlayback(playbackToken.current)
+      fallback.play(text, rate)
+    })
+  }
+
+  return { audioRef, src, playing: audioPlaying || fallback.playing, looping: fallback.looping, toggleLoop: fallback.toggleLoop, progress, duration, play, stop }
+}
+
+function PracticeTwisterRail({ item, twisters, onSelect }) {
+  return (
+    <aside className="practice-flow-rail twister-select-rail" aria-label="Tongue twisters">
+      <small className="practice-flow-rail-title">12 TONGUE TWISTERS</small>
+      <ol>
+        {twisters.map((twister, index) => {
+          const active = item.id === twister.id
+          return (
+            <li key={twister.id}>
+              <button type="button" className={active ? 'active' : ''} aria-current={active ? 'page' : undefined} onClick={() => onSelect(twister)}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <strong>{twister.phrase}</strong>
+                <small>{twister.target.replace('·', ' / ')}</small>
+              </button>
+            </li>
+          )
+        })}
+      </ol>
+    </aside>
+  )
+}
+
+function TwisterDrill({ item, twisters, twisterIndex, onSelectTwister, onPrevious, previousLabel, onNext, nextLabel }) {
+  const [buildIndex, setBuildIndex] = useState(0)
+  const [cleanReps, setCleanReps] = useState(0)
+  const [speedReps, setSpeedReps] = useState(0)
+  const [review, setReview] = useState('')
+  const [activeSection, setActiveSection] = useState('listen')
+  const player = usePracticeAudio(item)
+  const buildSteps = item.buildSteps || [item.phrase]
+  const targetLabel = item.target.replace('·', ' / ')
+  const currentSet = Math.min(3, Math.floor(cleanReps / 5) + 1)
+  const repsInSet = cleanReps >= 15 ? 5 : cleanReps % 5
+  const sectionRefs = useRef({})
+  const activeSectionRef = useRef('listen')
+  const playbackIntentRef = useRef(null)
+  const hasInteractedRef = useRef(false)
+  const playerRef = useRef(player)
+
+  playerRef.current = player
+
+  const setSectionRef = (id) => (node) => {
+    if (node) sectionRefs.current[id] = node
+    else delete sectionRefs.current[id]
+  }
+
+  const playTrainingAudio = (text = item.phrase, rate = 0.86) => {
+    hasInteractedRef.current = true
+    playbackIntentRef.current = { text, rate }
+    player.play(rate, text)
+  }
+
+  useEffect(() => {
+    player.stop()
+    setBuildIndex(0)
+    setCleanReps(0)
+    setSpeedReps(0)
+    setReview('')
+    setActiveSection('listen')
+    activeSectionRef.current = 'listen'
+    playbackIntentRef.current = null
+    hasInteractedRef.current = false
+  }, [item.id])
+
+  const resetLesson = () => {
+    player.stop()
+    setBuildIndex(0)
+    setCleanReps(0)
+    setSpeedReps(0)
+    setReview('')
+    setActiveSection('listen')
+    activeSectionRef.current = 'listen'
+    playbackIntentRef.current = null
+    hasInteractedRef.current = false
+  }
+
+  useEffect(() => {
+    const sections = Object.values(sectionRefs.current)
+    if (!sections.length || typeof IntersectionObserver !== 'function') return undefined
+
+    const idsByNode = new Map(sections.map((node) => [node, node.dataset.practiceSection]))
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.35)
+      if (!visible.length) return
+      visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+      const nextSection = idsByNode.get(visible[0].target)
+      if (!nextSection || nextSection === activeSectionRef.current) return
+
+      activeSectionRef.current = nextSection
+      setActiveSection(nextSection)
+      const intent = playbackIntentRef.current
+      if (hasInteractedRef.current && intent) playerRef.current.play(intent.rate, intent.text)
+      else playerRef.current.stop()
+    }, { threshold: [0.35, 0.6, 0.85], rootMargin: '-96px 0px -16% 0px' })
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [item.id])
+
+  const sectionNav = [
+    ['listen', 'Listen & understand', '聞く・今日のやり方'],
+    ['build', 'Build it', '短く → 全文へ'],
+    ['reps', '15 clean reps', '5回 × 3セット'],
+    ['speed', 'Speed challenge', '速さの中で保つ'],
+    ['finish', 'Finish & return', '復習につなげる'],
+  ]
 
   return (
     <section className="practice-page drill-page">
-      <LessonTitle eyebrow={`${item.groupTitle} · ${item.target}`} title={item.phrase} ja="音が崩れたら速度を戻します。覚えることより、動きを整えます。" />
-      <div className="drill-layout">
-        <div className="drill-player-card">
-          <div className="audio-player">
-            <small>Device voice preview · replace with approved audio</small>
-            <div><button type="button" onClick={() => player.play(item.phrase, rate)} aria-label="Play model"><PlayIcon pause={player.playing} /></button><strong>{speed === 'slow' ? 'Slow model' : speed === 'natural' ? 'Natural model' : 'Model · clear'}</strong><div className="waveform" aria-hidden="true">{[22,34,47,28,42,51,24,40,55,36,46,31,54,28,44,49,33,57,27,41,52].map((height, i) => <i key={i} style={{ height }} />)}</div></div><div className="audio-track"><span style={{ width: `${player.progress}%` }} /></div>
+      {player.src && <audio ref={player.audioRef} src={player.src} preload="metadata" />}
+      <div className="practice-flow-meta"><small>TONGUE TWISTER · {String(twisterIndex + 1).padStart(2, '0')}</small><span>{item.duration}</span></div>
+      <div className="practice-flow-layout">
+        <PracticeTwisterRail item={item} twisters={twisters} onSelect={onSelectTwister} />
+        <div className="practice-flow-workspace">
+          {item.id === 'red-lorry' && (
+            <article className="practice-welcome-card">
+              <div className="practice-stage-kicker">HOW TO USE THIS TRAINING</div>
+              <h1>Make the movement easy before you make it fast.</h1>
+              <p>このページは、ひとつの早口言葉を最後まで練習するための場所です。上から順に進んでも、必要なところへ直接移っても構いません。音声を聞き、短いかたまりを作り、普通の速さで繰り返してから、最後に少し速くします。</p>
+              <div className="practice-welcome-points"><span><b>01</b>Listen first</span><span><b>02</b>Build from the hard movement</span><span><b>03</b>Keep it clean, then add speed</span></div>
+            </article>
+          )}
+
+          <div className="practice-lesson-nav" aria-label="Sections in this lesson">
+            {sectionNav.map(([id, title, ja]) => <a key={id} className={activeSection === id ? 'active' : ''} href={`#practice-${id}`}><span>{String(sectionNav.findIndex((section) => section[0] === id) + 1).padStart(2, '0')}</span><strong>{title}</strong><small>{ja}</small></a>)}
           </div>
-          <div className="speed-tabs">{['model', 'slow', 'natural'].map((option) => <button aria-pressed={speed === option} className={speed === option ? 'active' : ''} key={option} type="button" onClick={() => setSpeed(option)}>{option[0].toUpperCase() + option.slice(1)}</button>)}</div>
-          <div className="mouth-cue"><small>Mouth cue</small><h3>{item.target}</h3><p>{item.cue}</p></div>
+
+          <article className="practice-stage-card" id="practice-listen" data-practice-section="listen" ref={setSectionRef('listen')}>
+        <div className="practice-stage-kicker">① LISTEN &amp; UNDERSTAND</div>
+        <h2>First, know what you&apos;re training.</h2>
+        <p className="practice-stage-intro">今日はただ速く言う練習ではありません。<b>{targetLabel}</b>を切り替えながら、フレーズ全体を一つのリズムとして言えるようにします。</p>
+        {item.id === 'red-lorry' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="GAhdinFrTps"
+              title="Red lorry, yellow lorry pronunciation reference"
+              credit="発音参考：YouTube · Red lorry, yellow lorry"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'seashells' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="K9IC9GbHX4Q"
+              title="She sells seashells by the seashore pronunciation reference"
+              credit="発音参考：YouTube · She sells seashells by the seashore"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'free-throws' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="zAxOpFUKAYw"
+              title="Three free throws pronunciation reference"
+              credit="発音参考：YouTube · Three free throws"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'peter-piper' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="3e1tB9m0eSg"
+              title="Peter Piper picked a peck of pickled peppers pronunciation reference"
+              credit="発音参考：YouTube · Peter Piper picked a peck of pickled peppers"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'big-black-bug' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="vdg8QBpyBDY"
+              title="A big black bug bit a big black bear pronunciation reference"
+              credit="発音参考：YouTube · A big black bug bit a big black bear"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'two-witches' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="sr6Vgxn67a4"
+              title="If two witches were watching two watches pronunciation reference"
+              credit="発音参考：YouTube · If two witches were watching two watches"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'ice-cream' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="52rEBee1jkc"
+              title="I scream, you scream, we all scream for ice cream pronunciation reference"
+              credit="発音参考：YouTube · I scream, you scream, we all scream for ice cream"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'slippery-snails' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="rUVjfdI3q7k"
+              title="Six slippery snails slid slowly seaward pronunciation reference"
+              credit="発音参考：YouTube · Six slippery snails slid slowly seaward"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'fresh-flesh' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="N_lay3-7kKQ"
+              title="Freshly fried fresh flesh pronunciation reference"
+              credit="発音参考：YouTube · Freshly fried fresh flesh"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'betty-botter' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="CPXbrFmP1Sg"
+              title="Betty Botter bought some butter pronunciation reference"
+              credit="発音参考：YouTube · Betty Botter bought some butter"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'woodchuck' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="HltcZKJ-Yf4"
+              title="How much wood would a woodchuck chuck pronunciation reference"
+              credit="発音参考：YouTube · How much wood would a woodchuck chuck"
+              autoplay={false}
+            />
+          </div>
+        )}
+        {item.id === 'unique-new-york' && (
+          <div className="practice-reference-video">
+            <YouTubeLessonPlayer
+              videoId="RAr-48JusHM"
+              title="Unique New York pronunciation reference"
+              credit="発音参考：YouTube · Unique New York"
+              autoplay={false}
+            />
+          </div>
+        )}
+        <div className="practice-phrase"><PracticePhrase item={item} /></div>
+        <div className="practice-model-actions"><button type="button" className="model-button" onClick={() => playTrainingAudio(item.phrase, 0.86)}><PlayIcon pause={player.playing && activeSection === 'listen'} /> {player.playing && activeSection === 'listen' ? 'Playing model' : 'Listen to model'}</button><button type="button" className="quiet-button" onClick={() => playTrainingAudio(item.phrase, 0.62)}>Slow model</button><LoopToggle looping={player.looping} onToggle={player.toggleLoop} /></div>
+        <div className="practice-three-cues"><div><b>Listen</b><span>まず正しい音とリズムを耳に入れる。</span></div><div><b>Build</b><span>短い単位から全文までつなぐ。</span></div><div><b>Repeat</b><span>正確さを保って繰り返し、最後に速度を上げる。</span></div></div>
+          </article>
+
+          <article className="practice-stage-card" id="practice-build" data-practice-section="build" ref={setSectionRef('build')}>
+        <div className="practice-stage-kicker">② BUILD IT</div>
+        <h2>Build from the hardest movement.</h2>
+        <p className="practice-stage-intro">いきなり全文ではなく、口が迷わないところまで小さくしてから足していきます。各行をタップして音を確認してください。</p>
+        <div className="practice-build-guidance"><strong>短いかたまりから少しずつ長くする</strong><span>Start with a short chunk and gradually make it longer.</span><small>止まりすぎず、ひとかたまりで · Try to say each step as one connected chunk rather than stopping between every word.</small><LoopToggle looping={player.looping} onToggle={player.toggleLoop} /></div>
+        <div className="practice-build-ladder" aria-label="Progressive pronunciation ladder">{buildSteps.map((phrase, index) => <Fragment key={`${phrase}-${index}`}><button type="button" aria-pressed={buildIndex === index} className={`practice-build-step ${buildIndex === index ? 'active' : ''} ${buildIndex > index ? 'done' : ''} ${index === buildSteps.length - 1 ? 'final' : ''}`} onClick={() => { setBuildIndex(index); playTrainingAudio(phrase, 0.72) }}><span className="practice-build-step-number">{String(index + 1).padStart(2, '0')}</span><span className="practice-build-step-phrase"><PracticePhrase item={item} phrase={phrase} /></span><span className="practice-build-step-play"><PlayIcon pause={player.playing && activeSection === 'build' && buildIndex === index} /></span></button>{index < buildSteps.length - 1 && <span className="practice-build-arrow" aria-hidden="true">↓</span>}</Fragment>)}</div>
+        <div className="practice-technique-grid"><div><b>{targetLabel.split(' / ')[0]}</b><span>{item.cue}</span></div><div><b>Whole phrase</b><span>音を止めず、短い単位を一つの流れにまとめます。</span></div></div>
+          </article>
+
+          <article className="practice-stage-card" id="practice-reps" data-practice-section="reps" ref={setSectionRef('reps')}>
+        <div className="practice-stage-kicker">③ 15 CLEAN REPS</div>
+        <h2>5 times. Pause. Repeat.</h2>
+        <p className="practice-stage-intro">ここでは速くしません。普通のゆっくりしたテンポで、同じ発音を5回 × 3セット保ちます。セットの間では少し口を休めてください。</p>
+        <div className="clean-reps-card"><div className="clean-reps-heading"><b>SET {currentSet} · 5 repetitions</b><strong>{cleanReps} / 15</strong></div><div className="practice-phrase small"><PracticePhrase item={item} /></div><div className="rep-pills" aria-label="Clean repetitions">{Array.from({ length: 5 }, (_, index) => <span className={index < repsInSet ? 'done' : index === repsInSet && cleanReps < 15 ? 'current' : ''} key={index}>{index + 1}</span>)}</div><div className="rep-actions"><button type="button" className="model-button" onClick={() => playTrainingAudio(item.phrase, 0.72)}><PlayIcon pause={player.playing && activeSection === 'reps'} /> Hear model</button><LoopToggle looping={player.looping} onToggle={player.toggleLoop} compact /><button type="button" className="primary-small-button" disabled={cleanReps >= 15} onClick={() => setCleanReps((value) => Math.min(15, value + 1))}>✓ I said it</button></div></div>
+          </article>
+
+          <article className="practice-stage-card" id="practice-speed" data-practice-section="speed" ref={setSectionRef('speed')}>
+        <div className="practice-stage-kicker">④ SPEED CHALLENGE</div>
+        <h2>Now let it run.</h2>
+        <p className="practice-stage-intro">ここでは少し速くします。最低5回。その後は <b>{targetLabel}</b> が崩れない限り、何回続けてもOKです。</p>
+        <div className="speed-challenge-card"><div className="speed-count">{speedReps}<small>clean fast repetitions</small></div><div className="practice-phrase small"><PracticePhrase item={item} /></div><div className="rep-actions"><button type="button" className="model-button" onClick={() => playTrainingAudio(item.phrase, 1.08)}><PlayIcon pause={player.playing && activeSection === 'speed'} /> Hear faster model</button><LoopToggle looping={player.looping} onToggle={player.toggleLoop} compact /><button type="button" className="primary-small-button" onClick={() => setSpeedReps((value) => value + 1)}>+ Clean repetition</button><button type="button" className="quiet-button" disabled={!speedReps} onClick={() => setSpeedReps((value) => Math.max(0, value - 1))}>Undo</button></div><p className={`challenge-status ${speedReps >= 5 ? 'ready' : ''}`}>{speedReps >= 5 ? 'Minimum reached. Keep going if the sound stays clean.' : `${5 - speedReps} more to reach the minimum.`}</p><small className="challenge-note">崩れたら回数に入れず、一度ゆっくり戻る。</small></div>
+          </article>
+
+          <article className="practice-stage-card finish-stage-card" id="practice-finish" data-practice-section="finish" ref={setSectionRef('finish')}>
+        <div className="practice-stage-kicker">⑤ FINISH &amp; RETURN</div>
+        <h2>You trained the movement, not just the sentence.</h2>
+        <p className="practice-stage-intro">今日覚えたのはこの一文だけではありません。<b>{targetLabel}</b>を切り替えながら、止まらずに音をつなげる動きを練習しました。</p>
+        <div className="practice-phrase"><PracticePhrase item={item} /></div>
+        <div className="finish-columns"><div><strong>Today&apos;s takeaway</strong>{[`${targetLabel}を別々の口の動きとして使う`, '短い単位から全文へ止まらず切り替える', '正確さを保ったまま少し速度を上げる'].map((text) => <span key={text}>✓ {text}</span>)}</div><div><strong>Come back before you forget.</strong><p>一度で完成させる必要はありません。短く戻る方が、長く一度だけ練習するより実用的です。</p>{[['1 day', '5回だけ復習'], ['3 days', '普通 → 少し速く'], ['7 days', '最終チェック']].map(([label, text]) => <button type="button" className={review === label ? 'selected' : ''} onClick={() => setReview(label)} key={label}><b>+{label}</b><span>{text}</span></button>)}</div></div>
+        <div className="finish-actions"><button type="button" className="quiet-button" onClick={resetLesson}>↻ Repeat this lesson</button></div>
+          </article>
+
+          <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} note="Scroll freely · 音声は表示中の練習に合わせて止まります" label={nextLabel || 'Next tongue twister'} onNext={onNext} />
         </div>
-        <div className="drill-guidance"><div className="why-card"><small>Why this matters</small><p>{item.why}</p></div><div className="sequence-card"><h2>Today’s guided sequence</h2>{[['Listen once', 'まだ話さない'], ['Slow ×3', '区切って明確に'], ['With rhythm ×3', '明瞭さを保つ'], ['Transfer ×2', '日常文へ移す']].map(([label, ja], i) => <button aria-pressed={stage === i + 1} className={stage === i + 1 ? 'active' : stage > i + 1 ? 'done' : ''} key={label} type="button" onClick={() => setStage(i + 1)}><b>{i + 1}</b><strong>{label}</strong><span>{ja}</span></button>)}</div></div>
       </div>
-      <div className="transfer-card"><small>Transfer to normal English</small>{item.transfer.map((phrase) => <button type="button" key={phrase} onClick={() => player.play(phrase, 0.86)}>“{phrase}” <PlayIcon /></button>)}<span>同じ口の動きを、普通の文でも2回ずつ使います。</span></div>
-      <LessonFooter previousLabel={previousLabel} onPrevious={onPrevious} note="One drill at a time · 速度より明瞭さ" label={nextLabel} onNext={onNext} />
     </section>
   )
 }
@@ -967,47 +1452,16 @@ function RoutinePage({ onStart, onPrevious }) {
   )
 }
 
-function PracticeMode({ selected, setSelected, view, setView, curriculum, onBackToLearn }) {
-  const [pendingGroupId, setPendingGroupId] = useState(null)
-  const [activeGroupId, setActiveGroupId] = useState(null)
-
-  useEffect(() => {
-    if (view === 'library' && !selected && pendingGroupId) {
-      const element = document.getElementById(`group-${pendingGroupId}`)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-        setActiveGroupId(pendingGroupId)
-      }
-      setPendingGroupId(null)
-    }
-  }, [view, selected, pendingGroupId])
-
+function PracticeMode({ selected, setSelected, view, setView, curriculum, onBackToLearn, practiceAvailable, activeStep }) {
   const selectTwister = (item) => {
     setSelected(item)
     setView(item ? 'drill' : 'library')
-    if (item) {
-      setActiveGroupId(null)
-      setPendingGroupId(null)
-    }
+    if (item) window.scrollTo({ top: 0, behavior: 'auto' })
   }
 
   const changeView = (next) => {
     setSelected(null)
-    setPendingGroupId(null)
-    setActiveGroupId(null)
     setView(next)
-  }
-
-  const handleGroupSelect = (groupId) => {
-    setSelected(null)
-    if (!groupId) {
-      setActiveGroupId(null)
-      setPendingGroupId(null)
-      return
-    }
-    setView('library')
-    setActiveGroupId(null)
-    setPendingGroupId(groupId)
   }
 
   const selectedIndex = selected ? allTwisters.findIndex((item) => item.id === selected.id) : -1
@@ -1017,24 +1471,31 @@ function PracticeMode({ selected, setSelected, view, setView, curriculum, onBack
       selectTwister(nextItem)
       return
     }
-    changeView('routine')
+    changeView('library')
+  }
+
+  if (!practiceAvailable) {
+    const currentStep = learnSteps.find((step) => step.id === activeStep) || learnSteps[0]
+    return (
+      <div className="app-body">
+        <LessonSidebar active={activeStep} onSelect={curriculum.onSelectFoundation} curriculum={curriculum} />
+        <main className="lesson-main practice-main">
+          <PracticeUnavailable lessonLabel={currentStep.label} lessonJa={currentStep.ja} onBackToLearn={onBackToLearn} />
+        </main>
+      </div>
+    )
   }
 
   return (
     <div className="app-body">
       <PracticeSidebar
-        view={view}
-        setView={changeView}
         selected={selected}
         selectTwister={selectTwister}
-        onSelectGroup={handleGroupSelect}
-        pendingGroupId={pendingGroupId}
-        activeGroupId={activeGroupId}
         curriculum={curriculum}
       />
       <main className="lesson-main practice-main">
         {selected ? (
-          <TwisterDrill item={selected} onPrevious={() => changeView('library')} previousLabel="All classics" onNext={selectNextDrill} nextLabel={nextItem ? `Next: ${nextItem.target}` : 'Four-week routine'} />
+          <TwisterDrill item={selected} twisters={allTwisters} twisterIndex={selectedIndex} onSelectTwister={selectTwister} onPrevious={() => changeView('library')} previousLabel="All classics" onNext={selectNextDrill} nextLabel={nextItem ? `Next: ${nextItem.target}` : 'Back to tongue twisters'} />
         ) : view === 'routine' ? (
           <RoutinePage onPrevious={() => changeView('library')} onStart={() => selectTwister(allTwisters[0])} />
         ) : (
@@ -1071,12 +1532,13 @@ function CourseApp({ onHome }) {
     return () => window.clearTimeout(timer)
   }, [notice])
 
-  const openPractice = () => { setMode('practice'); setPracticeView('library'); setSelected(null); setEverydayPracticeStep('substitute'); }
-  const backToTongueIntro = () => { setMode('learn'); setCourseLayer('foundation'); setActiveStep('tongue-intro'); setSelected(null); }
+  const openPractice = () => { setMode('practice'); setPracticeView('drill'); setSelected(allTwisters[0]); setEverydayPracticeStep('substitute'); }
   const changeMode = (next) => {
     setMode(next)
     if (next === 'practice') {
       setSelected(null)
+      setPracticeView(practiceAvailable ? 'drill' : 'unavailable')
+      if (practiceAvailable && courseLayer === 'foundation') setSelected(allTwisters[0])
       setEverydayPracticeStep('substitute')
     } else {
       setEverydayLearnStep('context')
@@ -1093,6 +1555,8 @@ function CourseApp({ onHome }) {
 
   const selectEverydayModule = (id) => {
     setCourseLayer('fluency')
+    setMode('learn')
+    setSelected(null)
     setEverydayModuleId(id)
     setEverydayLessonId(id)
     setEverydayLearnStep('context')
@@ -1100,6 +1564,8 @@ function CourseApp({ onHome }) {
   }
 
   const selectEverydayLesson = (id) => {
+    setMode('learn')
+    setSelected(null)
     setEverydayLessonId(id)
     setEverydayLearnStep('context')
     setEverydayPracticeStep('substitute')
@@ -1107,6 +1573,9 @@ function CourseApp({ onHome }) {
 
   const currentEverydayModule = socialFluencyChapters.find((chapter) => chapter.id === everydayModuleId)
   const currentEverydayLesson = currentEverydayModule?.lessons?.find((lesson) => lesson.id === everydayLessonId) || currentEverydayModule?.lessons?.[0]
+  const foundationPracticeAvailable = activeStep === 'tongue-intro'
+  const everydayPracticeAvailable = Boolean(currentEverydayLesson?.practice)
+  const practiceAvailable = courseLayer === 'foundation' ? foundationPracticeAvailable : everydayPracticeAvailable
   const curriculum = {
     courseLayer,
     setCourseLayer,
@@ -1129,7 +1598,7 @@ function CourseApp({ onHome }) {
         mode === 'learn' ? (
           <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} />
         ) : (
-          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} onBackToLearn={backToTongueIntro} />
+          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} onBackToLearn={() => setMode('learn')} practiceAvailable={foundationPracticeAvailable} activeStep={activeStep} />
         )
       ) : (
         <div className="app-body">
@@ -1142,7 +1611,7 @@ function CourseApp({ onHome }) {
             CurriculumNav={CurriculumNav}
           />
           <main className="lesson-main">
-            {currentEverydayModule?.status === 'coming_soon' ? (
+            {mode === 'learn' && currentEverydayModule?.status === 'coming_soon' ? (
               <EverydayOverviewView
                 parts={socialFluencyParts}
                 activeModuleId={everydayModuleId}
@@ -1158,7 +1627,7 @@ function CourseApp({ onHome }) {
                 PlayIcon={PlayIcon}
                 LessonTitle={LessonTitle}
               />
-            ) : (
+            ) : practiceAvailable ? (
               <EverydayPracticeView
                 key={currentEverydayLesson?.id}
                 lesson={currentEverydayLesson}
@@ -1167,6 +1636,12 @@ function CourseApp({ onHome }) {
                 speakWithBrowser={speakWithBrowser}
                 PlayIcon={PlayIcon}
                 LessonTitle={LessonTitle}
+              />
+            ) : (
+              <PracticeUnavailable
+                lessonLabel={currentEverydayModule?.enTitle || 'This lesson'}
+                lessonJa={currentEverydayModule?.ja || 'このレッスン'}
+                onBackToLearn={() => setMode('learn')}
               />
             )}
           </main>

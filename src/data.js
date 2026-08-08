@@ -25,6 +25,7 @@ export const tongueGroups = [
         why: '日本語ではR/Lを一つのカテゴリーとして聞きやすいため、英語では切り替えが難しくなります。',
         cue: 'Rでは舌先を上につけない。Lでは舌先を上の歯ぐきにつけて離します。',
         transfer: ['I really like it.', 'Turn left at the light.'],
+        buildSteps: ['lorry', 'yellow lorry', 'lorry, yellow lorry', 'Red lorry, yellow lorry.'],
       },
       {
         id: 'seashells',
@@ -34,6 +35,7 @@ export const tongueGroups = [
         why: '細いSの息と、少し広いSHの息を、単語の中で切り替える練習です。',
         cue: 'Sは舌を前に、SHは唇を少し丸めて、息の通り道を変えます。',
         transfer: ['She said so.', 'Show me the shop.'],
+        buildSteps: ['shells', 'seashells', 'sells seashells', 'She sells seashells', 'She sells seashells by the seashore.'],
       },
       {
         id: 'free-throws',
@@ -43,6 +45,7 @@ export const tongueGroups = [
         why: 'THとFを同じ音にせず、舌と唇の位置を素早く切り替えます。',
         cue: 'THは舌先を歯の間へ。Fは下唇を上の歯に軽く触れます。',
         transfer: ['Three friends.', 'Feel the difference.'],
+        buildSteps: ['throws', 'free throws', 'three free throws.'],
       },
     ],
   },
@@ -52,9 +55,9 @@ export const tongueGroups = [
     title: 'Clean consonants',
     ja: '破裂と語尾を、余分な母音なしで出す',
     items: [
-      { id: 'peter-piper', phrase: 'Peter Piper picked a peck of pickled peppers.', target: 'P', duration: '6–8 min', why: 'Pの息を明確に出しながら、音の後に余分な母音を足さない練習です。', cue: '唇を閉じ、短く息を解放します。強く吹きすぎないでください。', transfer: ['Pick a paper.', 'Please pass the pepper.'] },
-      { id: 'big-black-bug', phrase: 'A big black bug bit a big black bear.', target: 'B + END', duration: '6–8 min', why: 'Bの閉鎖、短い母音、聞こえる語尾を一つの流れで整えます。', cue: 'Bは声を出しながら唇を開き、語尾の子音で止めます。', transfer: ['A big blue bag.', 'Bob bought a book.'] },
-      { id: 'two-witches', phrase: 'If two witches were watching two watches, which witch would watch which watch?', target: 'W / CH', duration: '8–10 min', why: '丸いWと鋭いCHを、長い英語のリズムの中で保ちます。', cue: 'Wは唇を丸め、CHは舌の後ろにためた空気を短く出します。', transfer: ['Which way?', 'Watch this.'] },
+      { id: 'peter-piper', phrase: 'Peter Piper picked a peck of pickled peppers.', target: 'P', duration: '6–8 min', why: 'Pの息を明確に出しながら、音の後に余分な母音を足さない練習です。', cue: '唇を閉じ、短く息を解放します。強く吹きすぎないでください。', transfer: ['Pick a paper.', 'Please pass the pepper.'], buildSteps: ['peppers', 'pickled peppers', 'a peck of pickled peppers', 'picked a peck of pickled peppers', 'Peter Piper picked a peck of pickled peppers.'] },
+      { id: 'big-black-bug', phrase: 'A big black bug bit a big black bear.', target: 'B + END', duration: '6–8 min', why: 'Bの閉鎖、短い母音、聞こえる語尾を一つの流れで整えます。', cue: 'Bは声を出しながら唇を開き、語尾の子音で止めます。', transfer: ['A big blue bag.', 'Bob bought a book.'], buildSteps: ['bug', 'black bug', 'big black bug', 'a big black bug', 'A big black bug bit a big black bear.'] },
+      { id: 'two-witches', phrase: 'If two witches were watching two watches, which witch would watch which watch?', target: 'W / CH', duration: '8–10 min', why: '丸いWと鋭いCHを、長い英語のリズムの中で保ちます。', cue: 'Wは唇を丸め、CHは舌の後ろにためた空気を短く出します。', transfer: ['Which way?', 'Watch this.'], buildSteps: ['watches', 'two watches', 'watch which watch', 'which witch would watch which watch', 'If two witches were watching two watches, which witch would watch which watch?'] },
     ],
   },
   {
@@ -63,9 +66,9 @@ export const tongueGroups = [
     title: 'Clusters without extra vowels',
     ja: '子音のかたまりを、分解せずにつなぐ',
     items: [
-      { id: 'ice-cream', phrase: 'I scream, you scream, we all scream for ice cream.', target: 'SCR', duration: '6–8 min', why: 'SCRを一つの動きとして出し、子音の間に母音を挟まない練習です。', cue: 'Sの息を止めずにKへ移り、そのままRへつなげます。', transfer: ['The screen is bright.', 'Scratch the surface.'] },
-      { id: 'slippery-snails', phrase: 'Six slippery snails slid slowly seaward.', target: 'SL / SN', duration: '6–8 min', why: 'SLとSNを分解せず、Sの息を次の子音へ渡します。', cue: 'Sを言った後、母音を入れずにLまたはNへ直接移ります。', transfer: ['Sleep slowly.', 'Snow is falling.'] },
-      { id: 'fresh-flesh', phrase: 'Freshly fried fresh flesh.', target: 'FR / FL', duration: '5–7 min', why: 'R/Lの違いを、より難しい子音クラスターの中で練習します。', cue: 'Fの息を保ったまま、Rでは触れず、Lでは舌先を触れます。', transfer: ['Fresh flowers.', 'A friendly place.'] },
+      { id: 'ice-cream', phrase: 'I scream, you scream, we all scream for ice cream.', target: 'SCR', duration: '6–8 min', why: 'SCRを一つの動きとして出し、子音の間に母音を挟まない練習です。', cue: 'Sの息を止めずにKへ移り、そのままRへつなげます。', transfer: ['The screen is bright.', 'Scratch the surface.'], buildSteps: ['scream', 'all scream', 'we all scream', 'you scream, we all scream', 'I scream, you scream, we all scream for ice cream.'] },
+      { id: 'slippery-snails', phrase: 'Six slippery snails slid slowly seaward.', target: 'SL / SN', duration: '6–8 min', why: 'SLとSNを分解せず、Sの息を次の子音へ渡します。', cue: 'Sを言った後、母音を入れずにLまたはNへ直接移ります。', transfer: ['Sleep slowly.', 'Snow is falling.'], buildSteps: ['snails', 'slippery snails', 'six slippery snails', 'Six slippery snails slid slowly', 'Six slippery snails slid slowly seaward.'] },
+      { id: 'fresh-flesh', phrase: 'Freshly fried fresh flesh.', target: 'FR / FL', duration: '5–7 min', why: 'R/Lの違いを、より難しい子音クラスターの中で練習します。', cue: 'Fの息を保ったまま、Rでは触れず、Lでは舌先を触れます。', transfer: ['Fresh flowers.', 'A friendly place.'], buildSteps: ['flesh', 'fresh flesh', 'fried fresh flesh', 'Freshly fried fresh flesh.'] },
     ],
   },
   {
@@ -74,9 +77,9 @@ export const tongueGroups = [
     title: 'Rhythm + vowel movement',
     ja: '同じ拍の中で、母音と強弱を切り替える',
     items: [
-      { id: 'betty-botter', phrase: 'Betty Botter bought some butter.', target: 'B / T', duration: '6–8 min', why: '子音の骨格を保ちながら、変化する母音と英語の強弱を感じます。', cue: 'すべての単語を同じ強さにせず、名前と動詞をはっきり置きます。', transfer: ['Better butter.', 'Betty bought it.'] },
-      { id: 'woodchuck', phrase: 'How much wood would a woodchuck chuck if a woodchuck could chuck wood?', target: 'W / CH', duration: '8–10 min', why: '繰り返す音を、強い拍と弱い拍の流れに乗せます。', cue: '内容語に拍を置き、その間の短い語は軽く通過します。', transfer: ['What would you choose?', 'How much could it cost?'] },
-      { id: 'unique-new-york', phrase: 'Unique New York.', target: 'YOO / K·N', duration: '5–7 min', why: '母音から語尾のK、次のNへ、境目を曖昧にせず切り替えます。', cue: 'UniqueのKを消さず、短く閉じてからNewのNへ移ります。', transfer: ['A unique name.', 'New York at night.'] },
+      { id: 'betty-botter', phrase: 'Betty Botter bought some butter.', target: 'B / T', duration: '6–8 min', why: '子音の骨格を保ちながら、変化する母音と英語の強弱を感じます。', cue: 'すべての単語を同じ強さにせず、名前と動詞をはっきり置きます。', transfer: ['Better butter.', 'Betty bought it.'], buildSteps: ['butter', 'some butter', 'bought some butter', 'Betty Botter bought some butter.'] },
+      { id: 'woodchuck', phrase: 'How much wood would a woodchuck chuck if a woodchuck could chuck wood?', target: 'W / CH', duration: '8–10 min', why: '繰り返す音を、強い拍と弱い拍の流れに乗せます。', cue: '内容語に拍を置き、その間の短い語は軽く通過します。', transfer: ['What would you choose?', 'How much could it cost?'], buildSteps: ['wood', 'chuck wood', 'could chuck wood', 'a woodchuck could chuck wood', 'if a woodchuck could chuck wood', 'How much wood would a woodchuck chuck if a woodchuck could chuck wood?'] },
+      { id: 'unique-new-york', phrase: 'Unique New York.', target: 'YOO / K·N', duration: '5–7 min', why: '母音から語尾のK、次のNへ、境目を曖昧にせず切り替えます。', cue: 'UniqueのKを消さず、短く閉じてからNewのNへ移ります。', transfer: ['A unique name.', 'New York at night.'], buildSteps: ['York', 'New York', 'Unique New York.'] },
     ],
   },
 ]

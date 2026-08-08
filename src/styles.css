@@ -19,6 +19,8 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: var(--paper); }
+html[data-artico-theme="dark"],
+html[data-artico-theme="dark"] body { background: #111411; }
 button, a { font: inherit; }
 button { color: inherit; }
 button:focus-visible, a:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
@@ -1509,4 +1511,453 @@ svg { display: block; }
   .course-app .profile-button,
   .course-app .profile-continue-button,
   .course-app .profile-position-track > span { transition: none; }
+}
+
+/* Persistent view preferences: quiet header controls, focused reading, and a low-glare night palette. */
+.course-app .header-utilities { justify-self: end; display: flex; align-items: center; gap: 4px; }
+.course-app .view-controls { display: flex; align-items: center; gap: 2px; padding-right: 4px; border-right: 1px solid var(--line); }
+.course-app .view-toggle { display: grid; width: 44px; height: 44px; padding: 0; border-radius: 50%; background: transparent; color: #7d877e; cursor: pointer; place-items: center; transition: background .16s ease, color .16s ease; }
+.course-app .view-toggle:hover { background: var(--surface); color: var(--olive); }
+.course-app .view-toggle[aria-pressed="true"] { background: var(--surface-strong); color: #536253; }
+.course-app .view-toggle:focus-visible { outline: 2px solid #97a596; outline-offset: 2px; }
+.course-app .view-toggle svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.course-app .view-toggle .moon-icon.is-active { fill: currentColor; }
+.course-app .profile-view-preferences { display: none; }
+.course-app .profile-panel { max-height: calc(100vh - 112px); overflow-y: auto; }
+
+.course-app.reading-focus .app-body { grid-template-columns: minmax(0, 1fr); }
+.course-app.reading-focus .app-body > .lesson-sidebar,
+.course-app.reading-focus .app-body > .practice-sidebar,
+.course-app.reading-focus .app-body > .everyday-sidebar,
+.course-app.reading-focus .theory-outline { display: none; }
+.course-app.reading-focus .theory-layout { grid-template-columns: minmax(0, 1fr); max-width: 1440px; }
+.course-app.reading-focus .theory-content > .lesson-page,
+.course-app.reading-focus .lesson-main > .lesson-page,
+.course-app.reading-focus .lesson-main > .practice-page { width: 100%; max-width: 1440px; margin-right: auto; margin-left: auto; padding-right: 64px; padding-left: 64px; }
+
+.course-app.theme-dark {
+  --ink: #e2e7e1;
+  --paper: #171b18;
+  --warm: #111411;
+  --surface: #202620;
+  --surface-strong: #293229;
+  --line: #333b34;
+  --muted: #9aa49b;
+  --olive: #a8b8a8;
+  --brand: #bac68a;
+  --note: #1d241e;
+  color-scheme: dark;
+  background: var(--warm);
+  color: var(--ink);
+}
+.course-app.theme-dark .app-header { border-bottom-color: var(--line); background: rgba(18, 21, 18, .96); }
+.course-app.theme-dark .mode-switch,
+.course-app.theme-dark .lesson-sidebar,
+.course-app.theme-dark .practice-sidebar,
+.course-app.theme-dark .everyday-sidebar,
+.course-app.theme-dark .profile-panel { background: var(--paper); }
+.course-app.theme-dark .lesson-main { background: var(--warm); }
+.course-app.theme-dark .view-toggle[aria-pressed="true"],
+.course-app.theme-dark .profile-button[aria-expanded="true"],
+.course-app.theme-dark .mode-switch button.active { background: var(--surface-strong); color: var(--ink); }
+.course-app.theme-dark .profile-panel { border-color: var(--line); box-shadow: 0 20px 52px rgba(0, 0, 0, .34); }
+.course-app.theme-dark .profile-panel-header,
+.course-app.theme-dark .profile-sync-note { border-color: var(--line); }
+.course-app.theme-dark .profile-panel-avatar,
+.course-app.theme-dark .profile-current-lesson { background: var(--surface); }
+.course-app.theme-dark .profile-panel-header h2,
+.course-app.theme-dark .profile-current-lesson > strong { color: var(--ink); }
+.course-app.theme-dark .profile-home-button { color: var(--muted); }
+
+.course-app.theme-dark :where(
+  .orientation-row,
+  .orientation-section,
+  .alphabet-board,
+  .video-reference,
+  .alphabet-song-intro,
+  .alphabet-song-guide,
+  .alphabet-song-after,
+  .youtube-lesson-player,
+  .writing-lesson-card,
+  .writing-supplies-card,
+  .writing-paper-note,
+  .guided-panel,
+  .writing-panel,
+  .comparison-table,
+  .sound-lesson-card,
+  .sound-note,
+  .sound-map-note,
+  .sound-ipa-card,
+  .compact-video > div:last-child,
+  .tongue-theory-card,
+  .tongue-theory-group,
+  .tongue-minimal-pairs > div,
+  .theory-audio-sample,
+  .practice-flow-rail,
+  .practice-welcome-card,
+  .practice-lesson-nav,
+  .practice-stage-card,
+  .practice-build-step,
+  .clean-reps-card,
+  .speed-challenge-card,
+  .finish-columns > div,
+  .everyday-card,
+  .everyday-module-btn,
+  .everyday-rail-item,
+  .imitate-row,
+  .substitute-option,
+  .mission-starter-btn,
+  .daily-routine,
+  .week-grid article
+) { border-color: var(--line); background: var(--paper); color: var(--ink); }
+
+.course-app.theme-dark :where(
+  .session-card,
+  .orientation-callout,
+  .orientation-closing,
+  .theory-section-list li,
+  .alphabet-song-callout,
+  .writing-example,
+  .writing-assignment,
+  .sound-count-callout,
+  .tongue-japan-card,
+  .tongue-listen-callout,
+  .tongue-theory-group header,
+  .practice-technique-grid > div,
+  .practice-build-step.final,
+  .practice-build-step.done,
+  .challenge-status,
+  .personalize-practice-box,
+  .mission-scenario
+) { border-color: var(--line); background: var(--note); color: var(--ink); }
+
+.course-app.theme-dark :where(
+  .orientation-section-header,
+  .tongue-theory-group header,
+  .tongue-theory-item,
+  .theory-audio-sample,
+  .profile-position-track,
+  .practice-three-cues,
+  .tongue-listen-finish
+) { border-color: var(--line); }
+
+.course-app.theme-dark :where(
+  .lesson-title h1,
+  .orientation-section-header h2,
+  .orientation-section-body > p,
+  .theory-section-list li,
+  .orientation-callout p,
+  .orientation-closing strong,
+  .letters-copy h2,
+  .letters-copy p,
+  .letters-closing,
+  .alphabet-case-grid button,
+  .writing-lesson-card p,
+  .sound-lesson-card p,
+  .sound-note p,
+  .tongue-theory-card p,
+  .tongue-item-copy > strong,
+  .practice-stage-card h2,
+  .practice-phrase,
+  .practice-build-step,
+  .everyday-card h3,
+  .everyday-card p,
+  .curriculum-item-copy strong,
+  .social-chapter-link strong
+) { color: var(--ink); }
+
+.course-app.theme-dark :where(
+  .lesson-title p,
+  .orientation-section-header p,
+  .orientation-closing p,
+  .youtube-player-caption,
+  .tongue-theory-group header p,
+  .tongue-item-copy p,
+  .practice-stage-intro,
+  .practice-three-cues span,
+  .curriculum-item-copy small,
+  .social-chapter-link small
+) { color: var(--muted); }
+
+.course-app.theme-dark .orientation-section.is-active,
+.course-app.theme-dark .curriculum-item.active,
+.course-app.theme-dark .curriculum-subitem.active,
+.course-app.theme-dark .social-chapter-link.active,
+.course-app.theme-dark .practice-lesson-nav a.active,
+.course-app.theme-dark .practice-build-step.active,
+.course-app.theme-dark .substitute-option.selected,
+.course-app.theme-dark .mission-starter-btn.selected { border-color: #556255; background: var(--surface-strong); }
+.course-app.theme-dark .alphabet-case-section h3 { color: var(--brand); }
+.course-app.theme-dark .alphabet-board { background: #1c211c; }
+.course-app.theme-dark .youtube-player-caption,
+.course-app.theme-dark .theory-audio-controls button,
+.course-app.theme-dark .quiet-button,
+.course-app.theme-dark .loop-toggle,
+.course-app.theme-dark .rep-pills span,
+.course-app.theme-dark .finish-columns button { border-color: var(--line); background: var(--surface); color: var(--muted); }
+.course-app.theme-dark .theory-audio-waveform i { background: #3c463d; }
+.course-app.theme-dark .theory-audio-sample:not(.is-pending) .theory-audio-waveform i:nth-child(-n+9) { background: #7f927f; }
+.course-app.theme-dark .theory-audio-track,
+.course-app.theme-dark .profile-position-track { background: #323b33; }
+
+/* Dark-mode contrast and state corrections for legacy lesson surfaces. */
+.course-app.theme-dark .lesson-main :where(
+  .practice-unavailable-card,
+  .orientation-section,
+  .alphabet-board,
+  .alphabet-song-intro,
+  .alphabet-song-guide,
+  .alphabet-song-after,
+  .youtube-lesson-player,
+  .youtube-player-caption,
+  .writing-lesson-card,
+  .writing-supplies-card,
+  .writing-paper-note,
+  .writing-name-example,
+  .writing-word-list span,
+  .writing-supplies-list li,
+  .sound-lesson-card,
+  .sound-map-note,
+  .sound-example-grid em,
+  .ipa-table,
+  .tongue-theory-card,
+  .tongue-minimal-pairs > div,
+  .tongue-theory-group,
+  .tongue-theory-group header,
+  .tongue-sound-strip span,
+  .tongue-sound-strip strong,
+  .tongue-item-copy > span,
+  .theory-audio-sample,
+  .tongue-practice-transition,
+  .twister-group,
+  .twister-group button,
+  .practice-flow-rail,
+  .practice-welcome-card,
+  .practice-lesson-nav,
+  .practice-stage-card,
+  .practice-build-step,
+  .clean-reps-card,
+  .speed-challenge-card,
+  .finish-columns > div,
+  .finish-columns button,
+  .everyday-card,
+  .everyday-module-btn,
+  .everyday-lesson-btn.active,
+  .everyday-step-btn,
+  .imitate-row,
+  .substitute-option,
+  .mission-card,
+  .mission-starter-btn,
+  .everyday-rail-item,
+  .week-grid article,
+  .daily-routine
+) { border-color: var(--line); background: var(--paper); }
+
+.course-app.theme-dark .lesson-main :where(
+  .orientation-callout,
+  .orientation-closing,
+  .alphabet-song-callout,
+  .writing-example,
+  .writing-assignment,
+  .writing-name-grid section,
+  .writing-step-list li,
+  .sound-count-callout,
+  .sound-example-grid > div,
+  .sound-map-note > div,
+  .sound-routine-grid > div,
+  .sound-reminder-card,
+  .tongue-japan-card,
+  .tongue-listen-callout,
+  .tongue-final-cues strong,
+  .tongue-listen-steps > div,
+  .practice-technique-grid > div,
+  .challenge-status,
+  .personalize-practice-box,
+  .mission-scenario,
+  .mission-model-box,
+  .breakdown-item,
+  .notice-phrase-card
+) { border-color: var(--line); background: var(--surface); }
+
+.course-app.theme-dark .lesson-main :where(h1, h2, h3, h4, strong, b, button, a) { color: var(--ink); }
+.course-app.theme-dark .lesson-main :where(p, li, span, small, em) { color: #aeb7af; }
+.course-app.theme-dark .lesson-main :where(
+  .lesson-title small,
+  .section-kicker,
+  .letters-copy h2,
+  .letters-closing,
+  .alphabet-case-section h3,
+  .writing-section-heading small,
+  .writing-supplies-card > small,
+  .writing-lesson-card h2,
+  .writing-assignment h3,
+  .writing-assignment > strong,
+  .sound-section-heading small,
+  .sound-ipa-card > small,
+  .sound-lesson-card h2,
+  .sound-ipa-card h2,
+  .sound-reminder-card strong,
+  .sound-reminder-card b,
+  .sound-map-note > div span,
+  .sound-map-note a,
+  .tongue-section-heading small,
+  .tongue-section-heading h2,
+  .tongue-theory-group h3,
+  .tongue-theory-card strong,
+  .tongue-item-copy > span,
+  .practice-flow-meta small,
+  .practice-stage-kicker,
+  .practice-flow-stage-label,
+  .practice-build-guidance strong,
+  .profile-current-meta span,
+  .section-subkicker,
+  .personalize-heading,
+  .breakdown-item strong,
+  .rail-item-num
+) { color: var(--brand); }
+
+.course-app.theme-dark .alphabet-case-grid button,
+.course-app.theme-dark .letters-copy p,
+.course-app.theme-dark .curriculum-item-copy strong,
+.course-app.theme-dark .social-chapter-link strong { color: var(--ink); }
+.course-app.theme-dark .alphabet-case-divider,
+.course-app.theme-dark .comparison-table > div > *,
+.course-app.theme-dark .ipa-table > div > *,
+.course-app.theme-dark .practice-three-cues,
+.course-app.theme-dark .practice-three-cues > div + div { border-color: var(--line); }
+.course-app.theme-dark .quiet-visual { background: var(--paper); }
+.course-app.theme-dark .quiet-visual span { background: #526052; }
+.course-app.theme-dark .theory-outline a.active,
+.course-app.theme-dark .curriculum-item:hover,
+.course-app.theme-dark .curriculum-subitem:hover,
+.course-app.theme-dark .practice-flow-rail button:hover:not(:disabled),
+.course-app.theme-dark .practice-lesson-nav a:hover { background: var(--surface); color: var(--ink); }
+.course-app.theme-dark .curriculum-item .curriculum-number,
+.course-app.theme-dark .practice-flow-rail button > span,
+.course-app.theme-dark .practice-lesson-nav a > span,
+.course-app.theme-dark .practice-build-step-number { border-color: var(--line); background: var(--surface); color: var(--muted); }
+.course-app.theme-dark .curriculum-item.active .curriculum-number,
+.course-app.theme-dark .practice-flow-rail button.active > span,
+.course-app.theme-dark .practice-flow-rail button.completed > span,
+.course-app.theme-dark .practice-lesson-nav a.active > span,
+.course-app.theme-dark .practice-build-step.active .practice-build-step-number,
+.course-app.theme-dark .practice-build-step.done .practice-build-step-number,
+.course-app.theme-dark .practice-build-step.final .practice-build-step-number { border-color: var(--olive); background: var(--olive); color: #fffefa; }
+.course-app.theme-dark .practice-flow-rail ol::before { background: var(--line); }
+.course-app.theme-dark .practice-flow-rail button.active { background: var(--surface-strong); color: var(--ink); }
+.course-app.theme-dark .practice-flow-rail button.active strong { color: var(--ink); }
+.course-app.theme-dark .practice-flow-rail button.active small { color: var(--muted); }
+.course-app.theme-dark .profile-button:hover { background: var(--surface-strong); color: var(--ink); }
+.course-app.theme-dark .orientation-emphasis { color: #b8c2b9 !important; }
+.course-app.theme-dark .theory-audio-play:disabled,
+.course-app.theme-dark .primary-small-button:disabled { background: #3b433c; color: #818a82; }
+
+.course-app.theme-dark .practice-build-step:hover,
+.course-app.theme-dark .practice-build-step.done { border-color: #465247; background: var(--surface); color: var(--ink); }
+.course-app.theme-dark .practice-build-step.active,
+.course-app.theme-dark .practice-build-step.final { border-color: #5d6d5f; background: var(--surface-strong); color: var(--ink); }
+.course-app.theme-dark .challenge-status.ready { background: #2a362b; color: #c1cdbf; }
+.course-app.theme-dark .loop-toggle.active,
+.course-app.theme-dark .theory-audio-controls button.active { border-color: #718571; background: #2d382e; color: #c7d4c5; }
+.course-app.theme-dark .rep-pills span.done { border-color: #758571; background: #758571; color: #fffefa; }
+.course-app.theme-dark .rep-pills span.current { border-color: #718571; background: #2d382e; color: #c7d4c5; }
+.course-app.theme-dark .finish-columns button.selected,
+.course-app.theme-dark .substitute-option.selected,
+.course-app.theme-dark .mission-starter-btn.selected { border-color: #718571; background: #2d382e; color: var(--ink); }
+.course-app.theme-dark .phrase-focus-red,
+.course-app.theme-dark .phrase-r { color: #de7468; }
+.course-app.theme-dark .phrase-focus-gold,
+.course-app.theme-dark .phrase-l { color: #d3b35c; }
+.course-app.theme-dark .writing-section-heading > span,
+.course-app.theme-dark .sound-section-heading > span,
+.course-app.theme-dark .tongue-section-heading > span,
+.course-app.theme-dark .tongue-theory-group header > b,
+.course-app.theme-dark .twister-group header > b,
+.course-app.theme-dark .week-grid article header :where(small, h2),
+.course-app.theme-dark .primary-button,
+.course-app.theme-dark .primary-small-button,
+.course-app.theme-dark .theory-audio-play { color: #fffefa; }
+
+/* Remaining reachable dark-theme contrast corrections. */
+.course-app.theme-dark .curriculum-section-toggle { color: var(--ink); }
+.course-app.theme-dark .curriculum-section.current > .curriculum-section-toggle { color: var(--brand); }
+.course-app.theme-dark .profile-panel { color: var(--ink); }
+.course-app.theme-dark .profile-panel-avatar,
+.course-app.theme-dark .profile-panel-header small,
+.course-app.theme-dark .profile-current-meta span,
+.course-app.theme-dark .profile-position-copy b { color: var(--brand); }
+.course-app.theme-dark .profile-panel-header p,
+.course-app.theme-dark .profile-current-meta small,
+.course-app.theme-dark .profile-current-lesson > p,
+.course-app.theme-dark .profile-position-copy,
+.course-app.theme-dark .profile-sync-note { color: var(--muted); }
+.course-app.theme-dark .profile-home-button:hover { color: var(--ink); }
+.course-app.theme-dark .orientation-section-header > span,
+.course-app.theme-dark .practice-welcome-points b { background: var(--surface-strong); color: var(--brand); }
+.course-app.theme-dark .alphabet-case-grid button:hover { background: var(--surface-strong); color: var(--ink); }
+.course-app.theme-dark .sound-emphasis { border-color: var(--line); background: var(--surface); color: var(--ink); }
+.course-app.theme-dark .model-button { border-color: var(--line); background: var(--surface); color: var(--ink); }
+.course-app.theme-dark .speed-count { color: var(--ink); }
+.course-app.theme-dark .practice-three-cues > div { border-color: var(--line); }
+
+/* Pale night-mode accents need dark foregrounds to remain readable. */
+.course-app.theme-dark .curriculum-item.active .curriculum-number,
+.course-app.theme-dark .alphabet-song-guide li > b,
+.course-app.theme-dark .writing-section-heading > span,
+.course-app.theme-dark .sound-section-heading > span,
+.course-app.theme-dark .tongue-section-heading > span,
+.course-app.theme-dark .tongue-theory-group header > b,
+.course-app.theme-dark .twister-group header > b,
+.course-app.theme-dark .practice-flow-rail button:is(.active, .completed) > span,
+.course-app.theme-dark .practice-lesson-nav a.active > span,
+.course-app.theme-dark .practice-build-step:is(.active, .done, .final) .practice-build-step-number,
+.course-app.theme-dark .daily-routine li:first-child b,
+.course-app.theme-dark .everyday-module-btn.active b,
+.course-app.theme-dark .everyday-step-btn.active,
+.course-app.theme-dark .theory-audio-play:not(:disabled),
+.course-app.theme-dark .week-grid article header :is(small, h2) { color: var(--paper); }
+.course-app.theme-dark .primary-button { color: var(--paper); }
+.course-app.theme-dark .primary-button:hover,
+.course-app.theme-dark .lesson-footer-actions .primary-button { color: #fffefa; }
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .course-app .app-header { grid-template-columns: 180px minmax(0, 1fr) 150px; }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .course-app .app-header { grid-template-columns: 180px minmax(0, 1fr) 108px; }
+}
+
+@media (max-width: 900px) {
+  .course-app .view-controls .view-toggle:last-child { display: none; }
+  .course-app .profile-view-preferences { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0 2px; padding: 12px 0 4px; border-top: 1px solid var(--line); }
+  .course-app .profile-view-preferences > span { grid-column: 1 / -1; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: 1.2px; }
+  .course-app .profile-view-preferences button { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 11px; background: transparent; color: var(--muted); cursor: pointer; }
+  .course-app .profile-view-preferences button[aria-pressed="true"] { background: var(--surface-strong); color: var(--ink); }
+  .course-app .profile-view-preferences svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+  .course-app .profile-view-preferences .moon-icon.is-active { fill: currentColor; }
+  .course-app .profile-view-preferences strong { font-size: 10px; font-weight: 600; }
+  .course-app .practice-flow-layout { grid-template-columns: 1fr; gap: 15px; }
+  .course-app .practice-flow-rail { position: static; max-height: none; padding: 12px 9px; overflow-x: auto; }
+  .course-app .practice-flow-rail-title { margin: 0 7px 9px; }
+  .course-app .practice-flow-rail ol { flex-direction: row; gap: 4px; }
+  .course-app .practice-flow-rail ol::before { top: 18px; right: 20px; bottom: auto; left: 20px; width: auto; height: 1px; }
+  .course-app .practice-flow-rail li { flex: 0 0 164px; }
+  .course-app .practice-flow-rail button { grid-template-columns: 26px minmax(0, 1fr); min-height: 56px; padding: 7px 6px; }
+  .course-app .practice-flow-rail button > span { width: 25px; height: 25px; }
+  .course-app .lesson-footer { align-items: stretch; flex-direction: column; gap: 16px; }
+  .course-app .lesson-footer-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 100%; margin-left: 0; }
+  .course-app .lesson-footer-actions .secondary-button,
+  .course-app .lesson-footer-actions .primary-button { min-width: 0; }
+}
+
+@media (max-width: 760px) {
+  .course-app .view-controls { display: none; }
+  .course-app.reading-focus .theory-content > .lesson-page,
+  .course-app.reading-focus .lesson-main > .lesson-page,
+  .course-app.reading-focus .lesson-main > .practice-page { padding-right: 18px; padding-left: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .course-app .view-toggle { transition: none; }
 }

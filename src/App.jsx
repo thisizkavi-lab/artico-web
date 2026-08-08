@@ -56,6 +56,18 @@ const ProfileIcon = () => (
   <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><circle cx="24" cy="18" r="7"/><path d="M11 38c2-9 7-13 13-13s11 4 13 13"/></svg>
 )
 
+const MoonIcon = ({ active = false }) => (
+  <svg className={`moon-icon${active ? ' is-active' : ''}`} viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z" />
+  </svg>
+)
+
+const ReadingIcon = () => (
+  <svg className="reading-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 5.5c2.8-.7 5.4.1 8 2.2v11c-2.6-2.1-5.2-2.9-8-2.2v-11Zm16 0c-2.8-.7-5.4.1-8 2.2v11c2.6-2.1 5.2-2.9 8-2.2v-11Z" />
+  </svg>
+)
+
 function Logo({ onClick }) {
   return (
     <button className="logo" type="button" onClick={onClick} aria-label="Artico home">
@@ -198,7 +210,7 @@ function LandingPage({ onStart }) {
   )
 }
 
-function ProfileMenu({ open, onToggle, onClose, onContinue, onHome, summary }) {
+function ProfileMenu({ open, onToggle, onClose, onContinue, onHome, summary, view }) {
   const rootRef = useRef(null)
   const triggerRef = useRef(null)
 
@@ -261,6 +273,11 @@ function ProfileMenu({ open, onToggle, onClose, onContinue, onHome, summary }) {
             <ArrowIcon />
           </button>
           <button className="profile-home-button" type="button" onClick={onHome}>Back to home</button>
+          <section className="profile-view-preferences" aria-label="View preferences">
+            <span>VIEW</span>
+            <button type="button" aria-pressed={view.readingFocus} onClick={view.onToggleReading}><ReadingIcon /><strong>Reading focus</strong></button>
+            <button type="button" aria-pressed={view.darkMode} onClick={view.onToggleDark}><MoonIcon active={view.darkMode} /><strong>Dark mode</strong></button>
+          </section>
           <p className="profile-sync-note">ログインと端末間の同期は、アカウント機能と一緒に後から接続します。</p>
         </aside>
       )}
@@ -268,7 +285,34 @@ function ProfileMenu({ open, onToggle, onClose, onContinue, onHome, summary }) {
   )
 }
 
-function AppHeader({ mode, setMode, onHome, profile }) {
+function ViewControls({ darkMode, readingFocus, onToggleDark, onToggleReading }) {
+  return (
+    <div className="view-controls" role="group" aria-label="View preferences">
+      <button
+        className="view-toggle"
+        type="button"
+        aria-label={readingFocus ? 'Exit reading focus' : 'Enter reading focus'}
+        aria-pressed={readingFocus}
+        title={readingFocus ? 'Exit reading focus' : 'Reading focus'}
+        onClick={onToggleReading}
+      >
+        <ReadingIcon />
+      </button>
+      <button
+        className="view-toggle"
+        type="button"
+        aria-label={darkMode ? 'Use light mode' : 'Use dark mode'}
+        aria-pressed={darkMode}
+        title={darkMode ? 'Light mode' : 'Dark mode'}
+        onClick={onToggleDark}
+      >
+        <MoonIcon active={darkMode} />
+      </button>
+    </div>
+  )
+}
+
+function AppHeader({ mode, setMode, onHome, profile, view }) {
   return (
     <header className="app-header">
       <Logo onClick={onHome} />
@@ -276,7 +320,10 @@ function AppHeader({ mode, setMode, onHome, profile }) {
         <button aria-pressed={mode === 'learn'} className={mode === 'learn' ? 'active' : ''} type="button" onClick={() => setMode('learn')}><span className="book-symbol">◆</span>Learn</button>
         <button aria-pressed={mode === 'practice'} className={mode === 'practice' ? 'active' : ''} type="button" onClick={() => setMode('practice')}><span className="mouth-symbol">◌</span>Practice</button>
       </div>
-      <ProfileMenu {...profile} />
+      <div className="header-utilities">
+        <ViewControls {...view} />
+        <ProfileMenu {...profile} view={view} />
+      </div>
     </header>
   )
 }
@@ -1593,6 +1640,7 @@ function PracticeMode({ selected, setSelected, view, setView, curriculum, onBack
 }
 
 const courseProfileStorageKey = 'artico-course-position-v1'
+const courseViewPreferencesStorageKey = 'artico-view-preferences-v1'
 
 function readStoredCoursePosition() {
   const fallbackModule = socialFluencyChapters[0]
@@ -1621,6 +1669,16 @@ function readStoredCoursePosition() {
   }
 }
 
+function readStoredViewPreferences() {
+  if (typeof window === 'undefined') return { darkMode: false, readingFocus: false }
+  try {
+    const stored = JSON.parse(window.localStorage.getItem(courseViewPreferencesStorageKey) || '{}')
+    return { darkMode: stored.darkMode === true, readingFocus: stored.readingFocus === true }
+  } catch {
+    return { darkMode: false, readingFocus: false }
+  }
+}
+
 function CourseApp({ onHome }) {
   const initialCoursePosition = useMemo(readStoredCoursePosition, [])
   const [courseLayer, setCourseLayer] = useState(initialCoursePosition.courseLayer)
@@ -1632,6 +1690,7 @@ function CourseApp({ onHome }) {
   const [everydayOpen, setEverydayOpen] = useState(true)
   const [profileOpen, setProfileOpen] = useState(false)
   const closeProfile = useCallback(() => setProfileOpen(false), [])
+  const [viewPreferences, setViewPreferences] = useState(readStoredViewPreferences)
 
   // Social Fluency state (chapter map is sourced from the book manuscript)
   const [everydayModuleId, setEverydayModuleId] = useState(initialCoursePosition.everydayModuleId)
@@ -1650,6 +1709,30 @@ function CourseApp({ onHome }) {
       // The course remains fully usable when storage is unavailable.
     }
   }, [courseLayer, activeStep, everydayModuleId, everydayLessonId])
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(courseViewPreferencesStorageKey, JSON.stringify(viewPreferences))
+    } catch {
+      // View preferences remain usable for the current session without storage.
+    }
+  }, [viewPreferences])
+
+  useEffect(() => {
+    const themeColor = document.querySelector('meta[name="theme-color"]')
+    if (viewPreferences.darkMode) {
+      document.documentElement.dataset.articoTheme = 'dark'
+      themeColor?.setAttribute('content', '#111411')
+    } else {
+      delete document.documentElement.dataset.articoTheme
+      themeColor?.setAttribute('content', '#fffefa')
+    }
+
+    return () => {
+      delete document.documentElement.dataset.articoTheme
+      themeColor?.setAttribute('content', '#fffefa')
+    }
+  }, [viewPreferences.darkMode])
 
   const openPractice = () => { setMode('practice'); setPracticeView('drill'); setSelected(allTwisters[0]); setEverydayPracticeStep('substitute'); }
   const changeMode = (next) => {
@@ -1723,7 +1806,7 @@ function CourseApp({ onHome }) {
   }
 
   return (
-    <div className="course-app">
+    <div className={`course-app${viewPreferences.darkMode ? ' theme-dark' : ''}${viewPreferences.readingFocus ? ' reading-focus' : ''}`}>
       <AppHeader
         mode={mode}
         setMode={changeMode}
@@ -1735,6 +1818,12 @@ function CourseApp({ onHome }) {
           onContinue: closeProfile,
           onHome: () => { setProfileOpen(false); onHome() },
           summary: profileSummary,
+        }}
+        view={{
+          darkMode: viewPreferences.darkMode,
+          readingFocus: viewPreferences.readingFocus,
+          onToggleDark: () => setViewPreferences((current) => ({ ...current, darkMode: !current.darkMode })),
+          onToggleReading: () => setViewPreferences((current) => ({ ...current, readingFocus: !current.readingFocus })),
         }}
       />
       {courseLayer === 'foundation' ? (

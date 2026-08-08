@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fffefa" />
     <meta name="description" content="Artico — 日本語話者のための、英語の基礎と社会的な流暢さを育てる学習コース。" />
     <title>Artico — English, but better.</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        const view = JSON.parse(localStorage.getItem('artico-view-preferences-v1') || '{}')
+        if (location.hash === '#course' && view.darkMode === true) {
+          document.documentElement.dataset.articoTheme = 'dark'
+          document.querySelector('meta[name="theme-color"]').content = '#111411'
+        }
+      } catch {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

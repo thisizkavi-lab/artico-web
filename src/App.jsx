@@ -1030,6 +1030,7 @@ function useSpeechPlayer() {
 }
 
 const practiceAudioIds = new Set(['red-lorry', 'seashells', 'free-throws', 'peter-piper', 'big-black-bug', 'two-witches', 'ice-cream', 'slippery-snails', 'fresh-flesh', 'betty-botter', 'woodchuck', 'unique-new-york'])
+const practiceSegmentAudioVersion = '2'
 
 const phraseHighlightRules = {
   'red-lorry': [{ source: 'R', className: 'phrase-focus-red', caseSensitive: true }, { source: 'l', className: 'phrase-focus-gold' }],
@@ -1074,7 +1075,7 @@ function getPracticeAudioSrc(item, text) {
 
   const stepIndex = item.buildSteps?.findIndex((step) => step === text) ?? -1
   if (stepIndex < 0) return ''
-  return `${import.meta.env.BASE_URL}audio/segments/${item.id}-${stepIndex + 1}.wav`
+  return `${import.meta.env.BASE_URL}audio/segments/${item.id}-${stepIndex + 1}.wav?v=${practiceSegmentAudioVersion}`
 }
 
 function usePracticeAudio(item) {

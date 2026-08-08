@@ -1067,18 +1067,32 @@ function LoopToggle({ looping, onToggle, compact = false }) {
   return <button type="button" className={`loop-toggle ${looping ? 'active' : ''} ${compact ? 'compact' : ''}`} onClick={onToggle} aria-pressed={looping} aria-label={looping ? 'Turn loop off' : 'Turn loop on'}>↻ <span>{looping ? 'Loop on' : 'Loop'}</span></button>
 }
 
+function getPracticeAudioSrc(item, text) {
+  if (text === item.phrase && practiceAudioIds.has(item.id)) {
+    return `${import.meta.env.BASE_URL}audio/${item.id}.wav`
+  }
+
+  const stepIndex = item.buildSteps?.findIndex((step) => step === text) ?? -1
+  if (stepIndex < 0) return ''
+  return `${import.meta.env.BASE_URL}audio/segments/${item.id}-${stepIndex + 1}.wav`
+}
+
 function usePracticeAudio(item) {
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
-  const fallback = useSpeechPlayer()
   const [audioPlaying, setAudioPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [looping, setLooping] = useState(false)
   const src = practiceAudioIds.has(item.id) ? `${import.meta.env.BASE_URL}audio/${item.id}.wav` : ''
 
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return undefined
+    if (src) {
+      audio.src = src
+      audio.load()
+    }
     const onTime = () => setProgress(audio.duration ? (audio.currentTime / audio.duration) * 100 : 0)
     const onMeta = () => setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
     const onEnd = () => {
@@ -1098,46 +1112,47 @@ function usePracticeAudio(item) {
   }, [src])
 
   useEffect(() => {
-    if (audioRef.current) audioRef.current.loop = fallback.looping
-  }, [fallback.looping, src])
+    if (audioRef.current) audioRef.current.loop = looping
+  }, [looping])
 
   const stop = () => {
     const audio = audioRef.current
     if (audio) audio.pause()
-    fallback.stop()
     setAudioPlaying(false)
     releasePlayback(playbackToken.current)
   }
 
+  const toggleLoop = () => setLooping((value) => !value)
+
   const play = (rate = 1, text = item.phrase) => {
     const audio = audioRef.current
-    const isFullPhrase = text === item.phrase
-    if (audio) {
-      audio.pause()
-      audio.currentTime = 0
-      setAudioPlaying(false)
-    }
-    if (!audio || !isFullPhrase) {
-      fallback.play(text, rate)
-      return
-    }
-    fallback.stop()
+    const targetSrc = getPracticeAudioSrc(item, text)
+    if (!audio || !targetSrc) return
+
+    audio.pause()
+    audio.currentTime = 0
+    setAudioPlaying(false)
+    setProgress(0)
+    setDuration(0)
+    audio.src = targetSrc
+    audio.load()
+
     const stopNativePlayback = () => {
       audio.pause()
       setAudioPlaying(false)
       releasePlayback(playbackToken.current)
     }
     claimPlayback(playbackToken.current, stopNativePlayback)
+    audio.loop = looping
     audio.playbackRate = rate
     audio.play().then(() => {
       if (activePlayback === playbackToken.current && !audio.paused) setAudioPlaying(true)
     }).catch(() => {
-      releasePlayback(playbackToken.current)
-      fallback.play(text, rate)
+      stopNativePlayback()
     })
   }
 
-  return { audioRef, src, playing: audioPlaying || fallback.playing, looping: fallback.looping, toggleLoop: fallback.toggleLoop, progress, duration, play, stop }
+  return { audioRef, src, playing: audioPlaying, looping, toggleLoop, progress, duration, play, stop }
 }
 
 function PracticeTwisterRail({ item, twisters, onSelect }) {
@@ -1249,7 +1264,7 @@ function TwisterDrill({ item, twisters, twisterIndex, onSelectTwister, onPreviou
 
   return (
     <section className="practice-page drill-page">
-      {player.src && <audio ref={player.audioRef} src={player.src} preload="metadata" />}
+      {player.src && <audio ref={player.audioRef} preload="metadata" />}
       <div className="practice-flow-meta"><small>TONGUE TWISTER · {String(twisterIndex + 1).padStart(2, '0')}</small><span>{item.duration}</span></div>
       <div className="practice-flow-layout">
         <PracticeTwisterRail item={item} twisters={twisters} onSelect={onSelectTwister} />

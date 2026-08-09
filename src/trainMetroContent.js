@@ -1,183 +1,670 @@
 /** Chapter 67 · Train and metro travel. */
 export const trainMetroLesson = {
-  id: 'train-metro-travel',
-  kind: 'train-metro-travel',
-  number: '67',
-  title: '第67章に入る前に：なぜ「電車・地下鉄で使う英語」を学ぶのでしょうか？',
-  enTitle: 'Train and metro travel',
-  ja: '切符の購入、駅や車内での質問、乗り換え、運行情報について話す英語を学びます。',
-  cando: '電車や地下鉄の切符、ホーム、乗り換え、停車駅、遅延や安全案内を確認できる。',
-  learn: {
-    intro: [
-      '電車や地下鉄では、目的地に着くまでに、切符を買う、乗るホームを確認する、乗り換えをするといった多くの判断が必要になります。',
-      'また、遅延などの情報を理解し、どの電車に乗るのか、どこで乗り降りするのかを自分で確認することも大切です。',
-      'この章では、切符の購入、駅や車内での質問、乗り換えや運行情報に関する表現を学びます。',
+  "id": "train-metro-travel",
+  "kind": "train-metro-travel",
+  "number": "67",
+  "title": "第67章に入る前に：なぜ「電車・地下鉄で使う英語」を学ぶのでしょうか？",
+  "enTitle": "Train and metro travel",
+  "ja": "切符の購入、駅や車内での質問、乗り換え、運行情報について話す英語を学びます。",
+  "cando": "電車や地下鉄の切符、ホーム、乗り換え、停車駅、遅延や安全案内を確認できる。",
+  "learn": {
+    "intro": [
+      "電車や地下鉄では、目的地に着くまでに、切符を買う、乗るホームを確認する、乗り換えをするといった多くの判断が必要になります。",
+      "また、遅延などの情報を理解し、どの電車に乗るのか、どこで乗り降りするのかを自分で確認することも大切です。",
+      "この章では、切符の購入、駅や車内での質問、乗り換えや運行情報に関する表現を学びます。"
     ],
-    functions: [
-      ['01', '切符と座席を手配する'],
-      ['02', 'ホームと出発時刻を確認する'],
-      ['03', '停車駅と乗り換えを尋ねる'],
-      ['04', '車内案内と遅延に対応する'],
+    "functions": [
+      [
+        "01",
+        "切符と座席を手配する"
+      ],
+      [
+        "02",
+        "ホームと出発時刻を確認する"
+      ],
+      [
+        "03",
+        "停車駅と乗り換えを尋ねる"
+      ],
+      [
+        "04",
+        "車内案内と遅延に対応する"
+      ]
     ],
-    tickets: {
-      title: '切符の購入',
-      enTitle: 'Buying tickets',
-      intro: '窓口や券売機で、行き先、片道・往復、座席、改札のタッチ方法を確認します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'Hello, how can I help?', meaning: 'いらっしゃいませ。どのようなご用件でしょうか？', context: '窓口で応対する', register: 'polite' },
-        { phrase: 'A single to Leeds, please.', meaning: 'リーズまでの片道切符を1枚お願いします。', context: '片道切符を買う', register: 'polite' },
-        { phrase: 'Hello, can we book two return tickets to Leeds, please?', meaning: 'リーズまでの往復切符を2枚予約できますか？', context: '往復切符を予約する', register: 'polite' },
-        { phrase: 'Absolutely. Are you travelling today?', meaning: 'かしこまりました。本日ご乗車ですか？', context: '乗車日を確認する', register: 'polite' },
-        { phrase: 'How much is a single to Penrith?', meaning: 'ペンリスまでの片道切符はいくらですか？', context: '運賃を尋ねる', register: 'polite' },
-        { phrase: 'Can I reserve a seat?', meaning: '座席を予約できますか？', context: '座席を尋ねる', register: 'polite' },
-        { phrase: "Let's wait in the waiting room.", meaning: '待合室で待ちましょう。', context: '待つ場所を提案する', register: 'casual' },
-        { phrase: 'Do I tap in at the ticket barrier?', meaning: '自動改札口でカードをタッチするのですか？', context: '改札方法を確認する', register: 'neutral' },
+    "tickets": {
+      "title": "切符の購入",
+      "enTitle": "Buying tickets",
+      "intro": "窓口や券売機で、行き先、片道・往復、座席、改札のタッチ方法を確認します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "Hello, how can I help?",
+          "meaning": "いらっしゃいませ。どのようなご用件でしょうか？",
+          "context": "窓口で応対する",
+          "register": "polite"
+        },
+        {
+          "phrase": "A single to Leeds, please.",
+          "meaning": "リーズまでの片道切符を1枚お願いします。",
+          "context": "片道切符を買う",
+          "register": "polite"
+        },
+        {
+          "phrase": "Hello, can we book two return tickets to Leeds, please?",
+          "meaning": "リーズまでの往復切符を2枚予約できますか？",
+          "context": "往復切符を予約する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Absolutely. Are you travelling today?",
+          "meaning": "かしこまりました。本日ご乗車ですか？",
+          "context": "乗車日を確認する",
+          "register": "polite"
+        },
+        {
+          "phrase": "How much is a single to Penrith?",
+          "meaning": "ペンリスまでの片道切符はいくらですか？",
+          "context": "運賃を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Can I reserve a seat?",
+          "meaning": "座席を予約できますか？",
+          "context": "座席を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Let's wait in the waiting room.",
+          "meaning": "待合室で待ちましょう。",
+          "context": "待つ場所を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "Do I tap in at the ticket barrier?",
+          "meaning": "自動改札口でカードをタッチするのですか？",
+          "context": "改札方法を確認する",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'a single to', meaning: '〜までの片道切符', note: '行き先を後ろに続けます。' },
-        { phrase: 'return tickets', meaning: '往復切符', note: 'イギリス英語では return と呼びます。' },
-        { phrase: 'reserve a seat', meaning: '座席を予約する', note: '指定席を手配するときに使います。' },
-        { phrase: 'ticket barrier', meaning: '自動改札口', note: 'ticket gate とも言います。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "a single to",
+          "meaning": "〜までの片道切符",
+          "note": "行き先を後ろに続けます。"
+        },
+        {
+          "phrase": "return tickets",
+          "meaning": "往復切符",
+          "note": "イギリス英語では return と呼びます。"
+        },
+        {
+          "phrase": "reserve a seat",
+          "meaning": "座席を予約する",
+          "note": "指定席を手配するときに使います。"
+        },
+        {
+          "phrase": "ticket barrier",
+          "meaning": "自動改札口",
+          "note": "ticket gate とも言います。"
+        }
+      ]
     },
-    station: {
-      title: '駅での情報確認',
-      enTitle: 'Asking for information',
-      intro: 'ホーム番号、発車・到着予定、停車駅、券売機の場所を駅で尋ねます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'Which platform for the Glasgow train?', meaning: 'グラスゴー行きの電車はどのプラットホームですか？', context: 'ホームを尋ねる', register: 'neutral' },
-        { phrase: 'Platform 6. It leaves in 15 minutes.', meaning: '6番線です。15分後に出発します。', context: 'ホームと発車時刻を伝える', register: 'neutral' },
-        { phrase: "There's a massive queue for tickets!", meaning: '切符売り場にものすごい列ができています！', context: '混雑を伝える', register: 'casual' },
-        { phrase: "Let's try the ticket machines.", meaning: '券売機に行ってみましょう。', context: '別の購入方法を提案する', register: 'casual' },
-        { phrase: 'Has the Cardiff train left yet?', meaning: 'カーディフ行きの電車はもう出発してしまいましたか？', context: '出発済みか尋ねる', register: 'neutral' },
-        { phrase: 'When is the Dover train due?', meaning: 'ドーバー行きの電車はいつ到着予定ですか？', context: '到着予定を尋ねる', register: 'neutral' },
-        { phrase: 'Does this train stop at Birmingham?', meaning: 'この電車はバーミンガムに止まりますか？', context: '停車駅を尋ねる', register: 'neutral' },
-        { phrase: 'What time is the next train to Newcastle?', meaning: 'ニューカッスル行きの次の電車は何時ですか？', context: '次の便を尋ねる', register: 'neutral' },
+    "station": {
+      "title": "駅での情報確認",
+      "enTitle": "Asking for information",
+      "intro": "ホーム番号、発車・到着予定、停車駅、券売機の場所を駅で尋ねます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "Which platform for the Glasgow train?",
+          "meaning": "グラスゴー行きの電車はどのプラットホームですか？",
+          "context": "ホームを尋ねる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Platform 6. It leaves in 15 minutes.",
+          "meaning": "6番線です。15分後に出発します。",
+          "context": "ホームと発車時刻を伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "There's a massive queue for tickets!",
+          "meaning": "切符売り場にものすごい列ができています！",
+          "context": "混雑を伝える",
+          "register": "casual"
+        },
+        {
+          "phrase": "Let's try the ticket machines.",
+          "meaning": "券売機に行ってみましょう。",
+          "context": "別の購入方法を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "Has the Cardiff train left yet?",
+          "meaning": "カーディフ行きの電車はもう出発してしまいましたか？",
+          "context": "出発済みか尋ねる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "When is the Dover train due?",
+          "meaning": "ドーバー行きの電車はいつ到着予定ですか？",
+          "context": "到着予定を尋ねる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Does this train stop at Birmingham?",
+          "meaning": "この電車はバーミンガムに止まりますか？",
+          "context": "停車駅を尋ねる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "What time is the next train to Newcastle?",
+          "meaning": "ニューカッスル行きの次の電車は何時ですか？",
+          "context": "次の便を尋ねる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Due to engineering works, there will be no service this weekend...",
+          "meaning": "工事のため、今週末は運行がありません…",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "This train is not in service...",
+          "meaning": "この電車は運行していません…",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Please wait for further announcements.",
+          "meaning": "続報をお待ちください。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Rail replacement buses will operate.",
+          "meaning": "代替バスが運行します。",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'platform', meaning: 'プラットホーム・番線', note: 'Platform 6 のように番号と使います。' },
-        { phrase: 'massive queue', meaning: 'ものすごく長い列', note: 'massive は「非常に大きい」という強調です。' },
-        { phrase: 'due', meaning: '到着予定で', note: '乗り物の予定時刻を尋ねる形容詞です。' },
-        { phrase: 'left yet', meaning: 'もう出発した', note: 'Has ... left yet? で出発済みか確認します。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "platform",
+          "meaning": "プラットホーム・番線",
+          "note": "Platform 6 のように番号と使います。"
+        },
+        {
+          "phrase": "massive queue",
+          "meaning": "ものすごく長い列",
+          "note": "massive は「非常に大きい」という強調です。"
+        },
+        {
+          "phrase": "due",
+          "meaning": "到着予定で",
+          "note": "乗り物の予定時刻を尋ねる形容詞です。"
+        },
+        {
+          "phrase": "left yet",
+          "meaning": "もう出発した",
+          "note": "Has ... left yet? で出発済みか確認します。"
+        }
+      ]
     },
-    onboard: {
-      title: '車内・地下鉄でのやり取り',
-      enTitle: 'On the train & metro',
-      intro: '車内設備、乗り換え、停車駅、安全案内、遅延、電源の使用について尋ねます。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'Tickets, please!', meaning: '切符を拝見します！', context: '検札をする', register: 'polite' },
-        { phrase: 'Which way is the buffet car, please?', meaning: 'ビュッフェ車両はどちらですか？', context: '車内設備を尋ねる', register: 'polite' },
-        { phrase: 'That way, next carriage!', meaning: 'あちらです、隣の車両ですよ！', context: '車両の場所を案内する', register: 'casual' },
-        { phrase: "How do I get to King's Cross?", meaning: 'キングス・クロス駅にはどうやって行けばいいですか？', context: '乗り換えを尋ねる', register: 'polite' },
-        { phrase: 'Take any Piccadilly line train from Platform 6.', meaning: '6番線からピカデリー線の電車に乗ってください。', context: '乗り換え方法を案内する', register: 'neutral' },
-        { phrase: 'Stand clear of the doors, please.', meaning: 'ドアから離れてください。', context: '安全案内をする', register: 'polite' },
-        { phrase: 'Due to strong winds, the 9.30 from Dundee is delayed.', meaning: '強風のため、ダンディー発9時30分の電車は遅れています。', context: '遅延アナウンス', register: 'formal' },
-        { phrase: 'Please mind the gap between the train and the platform.', meaning: '電車とプラットホームの間の隙間にご注意ください。', context: '安全アナウンス', register: 'formal' },
-        { phrase: 'Excuse me, how many stops is it to Victoria?', meaning: 'すみません、ビクトリア駅まであと何駅ですか？', context: '残りの駅数を尋ねる', register: 'polite' },
-        { phrase: 'Do you mind if I plug my laptop in here?', meaning: 'ここでパソコンをコンセントにつないでもいいですか？', context: '電源を使ってよいか尋ねる', register: 'polite' },
+    "onboard": {
+      "title": "車内・地下鉄でのやり取り",
+      "enTitle": "On the train & metro",
+      "intro": "車内設備、乗り換え、停車駅、安全案内、遅延、電源の使用について尋ねます。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "Tickets, please!",
+          "meaning": "切符を拝見します！",
+          "context": "検札をする",
+          "register": "polite"
+        },
+        {
+          "phrase": "Which way is the buffet car, please?",
+          "meaning": "ビュッフェ車両はどちらですか？",
+          "context": "車内設備を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "That way, next carriage!",
+          "meaning": "あちらです、隣の車両ですよ！",
+          "context": "車両の場所を案内する",
+          "register": "casual"
+        },
+        {
+          "phrase": "How do I get to King's Cross?",
+          "meaning": "キングス・クロス駅にはどうやって行けばいいですか？",
+          "context": "乗り換えを尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Take any Piccadilly line train from Platform 6.",
+          "meaning": "6番線からピカデリー線の電車に乗ってください。",
+          "context": "乗り換え方法を案内する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Stand clear of the doors, please.",
+          "meaning": "ドアから離れてください。",
+          "context": "安全案内をする",
+          "register": "polite"
+        },
+        {
+          "phrase": "Due to strong winds, the 9.30 from Dundee is delayed.",
+          "meaning": "強風のため、ダンディー発9時30分の電車は遅れています。",
+          "context": "遅延アナウンス",
+          "register": "formal"
+        },
+        {
+          "phrase": "Please mind the gap between the train and the platform.",
+          "meaning": "電車とプラットホームの間の隙間にご注意ください。",
+          "context": "安全アナウンス",
+          "register": "formal"
+        },
+        {
+          "phrase": "Excuse me, how many stops is it to Victoria?",
+          "meaning": "すみません、ビクトリア駅まであと何駅ですか？",
+          "context": "残りの駅数を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Do you mind if I plug my laptop in here?",
+          "meaning": "ここでパソコンをコンセントにつないでもいいですか？",
+          "context": "電源を使ってよいか尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Here you go.",
+          "meaning": "はい、どうぞ。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Thanks - can I see your railcard too, please?",
+          "meaning": "ありがとう。レールカードも見せてもらえますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "This train is ready to depart.",
+          "meaning": "この電車は出発の準備ができています。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Sure, no problem.",
+          "meaning": "もちろん、問題ありません。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Let's see... it's five stops from here.",
+          "meaning": "ええと、ここから5駅です。",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'buffet car', meaning: 'ビュッフェ車両・食堂車', note: '列車内の飲食車両です。' },
-        { phrase: 'carriage', meaning: '車両', note: 'イギリス英語で train car にあたります。' },
-        { phrase: 'mind the gap', meaning: '隙間に注意する', note: 'イギリスの駅で有名な安全案内です。' },
-        { phrase: 'strong winds', meaning: '強風', note: '天候による遅延理由を伝えます。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "buffet car",
+          "meaning": "ビュッフェ車両・食堂車",
+          "note": "列車内の飲食車両です。"
+        },
+        {
+          "phrase": "carriage",
+          "meaning": "車両",
+          "note": "イギリス英語で train car にあたります。"
+        },
+        {
+          "phrase": "mind the gap",
+          "meaning": "隙間に注意する",
+          "note": "イギリスの駅で有名な安全案内です。"
+        },
+        {
+          "phrase": "strong winds",
+          "meaning": "強風",
+          "note": "天候による遅延理由を伝えます。"
+        }
+      ]
     },
-    vocabulary: {
-      title: '電車・地下鉄のボキャブラリー',
-      enTitle: 'Vocabulary · Train & metro travel',
-      intro: '切符、駅、車内、地下鉄の案内で見聞きする語彙を、移動の流れと結びつけます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'single ticket', meaning: '片道切符', context: '切符', register: 'regional' },
-        { phrase: 'return ticket', meaning: '往復切符', context: '切符', register: 'regional' },
-        { phrase: 'ticket barrier', meaning: '自動改札口', context: '駅', register: 'regional' },
-        { phrase: 'waiting room', meaning: '待合室', context: '駅', register: 'neutral' },
-        { phrase: 'ticket machines', meaning: '券売機', context: '駅', register: 'neutral' },
-        { phrase: 'platform', meaning: 'プラットホーム', context: '駅', register: 'neutral' },
-        { phrase: 'carriage', meaning: '車両', context: '車内', register: 'regional' },
-        { phrase: 'gap', meaning: '隙間', context: '安全案内', register: 'neutral' },
-        { phrase: 'stops', meaning: '停車駅の数', context: '地下鉄・電車', register: 'neutral' },
-        { phrase: 'delayed', meaning: '遅延している', context: '運行情報', register: 'neutral' },
+    "vocabulary": {
+      "title": "電車・地下鉄のボキャブラリー",
+      "enTitle": "Vocabulary · Train & metro travel",
+      "intro": "切符、駅、車内、地下鉄の案内で見聞きする語彙を、移動の流れと結びつけます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "single ticket",
+          "meaning": "片道切符",
+          "context": "切符",
+          "register": "regional"
+        },
+        {
+          "phrase": "return ticket",
+          "meaning": "往復切符",
+          "context": "切符",
+          "register": "regional"
+        },
+        {
+          "phrase": "ticket barrier",
+          "meaning": "自動改札口",
+          "context": "駅",
+          "register": "regional"
+        },
+        {
+          "phrase": "waiting room",
+          "meaning": "待合室",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "ticket machines",
+          "meaning": "券売機",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "platform",
+          "meaning": "プラットホーム",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "carriage",
+          "meaning": "車両",
+          "context": "車内",
+          "register": "regional"
+        },
+        {
+          "phrase": "gap",
+          "meaning": "隙間",
+          "context": "安全案内",
+          "register": "neutral"
+        },
+        {
+          "phrase": "stops",
+          "meaning": "停車駅の数",
+          "context": "地下鉄・電車",
+          "register": "neutral"
+        },
+        {
+          "phrase": "delayed",
+          "meaning": "遅延している",
+          "context": "運行情報",
+          "register": "neutral"
+        },
+        {
+          "phrase": "information display",
+          "meaning": "案内表示",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "ticket office",
+          "meaning": "切符売り場",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "departure board",
+          "meaning": "出発案内板",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "seat",
+          "meaning": "座席",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "ticket machine",
+          "meaning": "券売機",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "passenger",
+          "meaning": "乗客",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "luggage storage",
+          "meaning": "荷物置き場",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "ticket inspector",
+          "meaning": "車内の検札係",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'single / return', meaning: '片道 / 往復', note: 'アメリカ英語では one-way / round-trip と言います。' },
-        { phrase: 'due', meaning: '到着予定で', note: '掲示板や駅員の案内でよく見ます。' },
-        { phrase: 'mind the gap', meaning: '隙間に注意', note: 'The Tube などの定番アナウンスです。' },
-        { phrase: 'ticket barrier', meaning: '改札口', note: 'tap in / tap out と一緒に使います。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "single / return",
+          "meaning": "片道 / 往復",
+          "note": "アメリカ英語では one-way / round-trip と言います。"
+        },
+        {
+          "phrase": "due",
+          "meaning": "到着予定で",
+          "note": "掲示板や駅員の案内でよく見ます。"
+        },
+        {
+          "phrase": "mind the gap",
+          "meaning": "隙間に注意",
+          "note": "The Tube などの定番アナウンスです。"
+        },
+        {
+          "phrase": "ticket barrier",
+          "meaning": "改札口",
+          "note": "tap in / tap out と一緒に使います。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'tickets',
-        label: 'Pattern A · Buying tickets',
-        title: '切符とホームを確認する',
-        lines: [
-          { speaker: 'A', en: 'A single to Leeds, please.', ja: 'リーズまでの片道切符を1枚お願いします。' },
-          { speaker: 'B', en: 'Absolutely. Are you travelling today?', ja: 'かしこまりました。本日ご乗車ですか？' },
-          { speaker: 'A', en: 'Can I reserve a seat?', ja: '座席を予約できますか？' },
-          { speaker: 'B', en: 'Platform 6. It leaves in 15 minutes.', ja: '6番線です。15分後に出発します。' },
-        ],
+        "id": "tickets",
+        "label": "Pattern A · Buying tickets",
+        "title": "切符とホームを確認する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "A single to Leeds, please.",
+            "ja": "リーズまでの片道切符を1枚お願いします。"
+          },
+          {
+            "speaker": "B",
+            "en": "Absolutely. Are you travelling today?",
+            "ja": "かしこまりました。本日ご乗車ですか？"
+          },
+          {
+            "speaker": "A",
+            "en": "Can I reserve a seat?",
+            "ja": "座席を予約できますか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Platform 6. It leaves in 15 minutes.",
+            "ja": "6番線です。15分後に出発します。"
+          }
+        ]
       },
       {
-        id: 'station',
-        label: 'Pattern B · At the station',
-        title: '停車駅と乗り換えを尋ねる',
-        lines: [
-          { speaker: 'A', en: 'Does this train stop at Birmingham?', ja: 'この電車はバーミンガムに止まりますか？' },
-          { speaker: 'B', en: 'Yes. What time is the next train to Newcastle?', ja: 'はい。ニューカッスル行きの次の電車は何時ですか？' },
-          { speaker: 'A', en: "How do I get to King's Cross?", ja: 'キングス・クロス駅にはどうやって行けばいいですか？' },
-          { speaker: 'B', en: 'Take any Piccadilly line train from Platform 6.', ja: '6番線からピカデリー線の電車に乗ってください。' },
-        ],
+        "id": "station",
+        "label": "Pattern B · At the station",
+        "title": "停車駅と乗り換えを尋ねる",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Does this train stop at Birmingham?",
+            "ja": "この電車はバーミンガムに止まりますか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Yes. What time is the next train to Newcastle?",
+            "ja": "はい。ニューカッスル行きの次の電車は何時ですか？"
+          },
+          {
+            "speaker": "A",
+            "en": "How do I get to King's Cross?",
+            "ja": "キングス・クロス駅にはどうやって行けばいいですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Take any Piccadilly line train from Platform 6.",
+            "ja": "6番線からピカデリー線の電車に乗ってください。"
+          }
+        ]
       },
       {
-        id: 'onboard',
-        label: 'Pattern C · On the train',
-        title: '車内設備と安全案内を確認する',
-        lines: [
-          { speaker: 'A', en: 'Which way is the buffet car, please?', ja: 'ビュッフェ車両はどちらですか？' },
-          { speaker: 'B', en: 'That way, next carriage!', ja: 'あちらです、隣の車両ですよ！' },
-          { speaker: 'A', en: 'Excuse me, how many stops is it to Victoria?', ja: 'ビクトリア駅まであと何駅ですか？' },
-          { speaker: 'B', en: 'Please mind the gap between the train and the platform.', ja: '電車とプラットホームの間の隙間にご注意ください。' },
-        ],
-      },
+        "id": "onboard",
+        "label": "Pattern C · On the train",
+        "title": "車内設備と安全案内を確認する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Which way is the buffet car, please?",
+            "ja": "ビュッフェ車両はどちらですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "That way, next carriage!",
+            "ja": "あちらです、隣の車両ですよ！"
+          },
+          {
+            "speaker": "A",
+            "en": "Excuse me, how many stops is it to Victoria?",
+            "ja": "ビクトリア駅まであと何駅ですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Please mind the gap between the train and the platform.",
+            "ja": "電車とプラットホームの間の隙間にご注意ください。"
+          }
+        ]
+      }
     ],
-    tip: 'イギリス英語では片道を single、往復を return と言います。due は到着予定、mind the gap はホームと車両の隙間への注意です。改札口は ticket barrier、車両は carriage と表現します。',
+    "tip": "イギリス英語では片道を single、往復を return と言います。due は到着予定、mind the gap はホームと車両の隙間への注意です。改札口は ticket barrier、車両は carriage と表現します。"
   },
-  practice: {
-    title: '電車と地下鉄の情報を、英語で正確に確認する',
-    instructions: '日本語訳は見ずに、切符、ホーム、乗り換え、車内案内の表現を声に重ねます。',
-    coreHeading: 'まずは、目的地までの切符を頼む一文から。',
-    dialogueHeading: '切符購入、駅の質問、車内の場面で役を切り替える。',
-    dialogueDescription: '切符とホームを確認する、停車駅と乗り換えを尋ねる、車内設備と安全案内を確認する3つの場面を練習します。',
-    finishTitle: '次に電車や地下鉄に乗るとき、ホームか停車駅の英語をひとつ使ってみましょう。',
-    corePhrases: [
-      { phrase: 'A single to Leeds, please.', context: '片道切符を買う', rate: 0.82 },
-      { phrase: 'Can we book two return tickets to Leeds, please?', context: '往復切符を予約する', rate: 0.74 },
-      { phrase: 'How much is a single to Penrith?', context: '運賃を尋ねる', rate: 0.78 },
-      { phrase: 'Can I reserve a seat?', context: '座席を予約する', rate: 0.82 },
-      { phrase: 'Which platform for the Glasgow train?', context: 'ホームを尋ねる', rate: 0.78 },
-      { phrase: 'Platform 6. It leaves in 15 minutes.', context: 'ホームと時刻を伝える', rate: 0.76 },
-      { phrase: 'Has the Cardiff train left yet?', context: '出発済みか尋ねる', rate: 0.78 },
-      { phrase: 'Does this train stop at Birmingham?', context: '停車駅を尋ねる', rate: 0.8 },
-      { phrase: "How do I get to King's Cross?", context: '乗り換えを尋ねる', rate: 0.78 },
-      { phrase: 'Take any Piccadilly line train from Platform 6.', context: '乗り換えを案内する', rate: 0.72 },
-      { phrase: 'Please mind the gap between the train and the platform.', context: '安全案内をする', rate: 0.72 },
-      { phrase: 'How many stops is it to Victoria?', context: '駅数を尋ねる', rate: 0.8 },
+  "practice": {
+    "title": "電車と地下鉄の情報を、英語で正確に確認する",
+    "instructions": "日本語訳は見ずに、切符、ホーム、乗り換え、車内案内の表現を声に重ねます。",
+    "coreHeading": "まずは、目的地までの切符を頼む一文から。",
+    "dialogueHeading": "切符購入、駅の質問、車内の場面で役を切り替える。",
+    "dialogueDescription": "切符とホームを確認する、停車駅と乗り換えを尋ねる、車内設備と安全案内を確認する3つの場面を練習します。",
+    "finishTitle": "次に電車や地下鉄に乗るとき、ホームか停車駅の英語をひとつ使ってみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "A single to Leeds, please.",
+        "context": "片道切符を買う",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Can we book two return tickets to Leeds, please?",
+        "context": "往復切符を予約する",
+        "rate": 0.74
+      },
+      {
+        "phrase": "How much is a single to Penrith?",
+        "context": "運賃を尋ねる",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Can I reserve a seat?",
+        "context": "座席を予約する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Which platform for the Glasgow train?",
+        "context": "ホームを尋ねる",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Platform 6. It leaves in 15 minutes.",
+        "context": "ホームと時刻を伝える",
+        "rate": 0.76
+      },
+      {
+        "phrase": "Has the Cardiff train left yet?",
+        "context": "出発済みか尋ねる",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Does this train stop at Birmingham?",
+        "context": "停車駅を尋ねる",
+        "rate": 0.8
+      },
+      {
+        "phrase": "How do I get to King's Cross?",
+        "context": "乗り換えを尋ねる",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Take any Piccadilly line train from Platform 6.",
+        "context": "乗り換えを案内する",
+        "rate": 0.72
+      },
+      {
+        "phrase": "Please mind the gap between the train and the platform.",
+        "context": "安全案内をする",
+        "rate": 0.72
+      },
+      {
+        "phrase": "How many stops is it to Victoria?",
+        "context": "駅数を尋ねる",
+        "rate": 0.8
+      }
     ],
-    dialogues: [
-      { title: 'Buying tickets', lines: ['A single to Leeds, please.', 'Absolutely. Are you travelling today?', 'Can I reserve a seat?', 'Platform 6. It leaves in 15 minutes.'] },
-      { title: 'At the station', lines: ['Does this train stop at Birmingham?', 'Yes. What time is the next train to Newcastle?', "How do I get to King's Cross?", 'Take any Piccadilly line train from Platform 6.'] },
-      { title: 'On the train', lines: ['Which way is the buffet car, please?', 'That way, next carriage!', 'Excuse me, how many stops is it to Victoria?', 'Please mind the gap between the train and the platform.'] },
+    "dialogues": [
+      {
+        "title": "Buying tickets",
+        "lines": [
+          "A single to Leeds, please.",
+          "Absolutely. Are you travelling today?",
+          "Can I reserve a seat?",
+          "Platform 6. It leaves in 15 minutes."
+        ]
+      },
+      {
+        "title": "At the station",
+        "lines": [
+          "Does this train stop at Birmingham?",
+          "Yes. What time is the next train to Newcastle?",
+          "How do I get to King's Cross?",
+          "Take any Piccadilly line train from Platform 6."
+        ]
+      },
+      {
+        "title": "On the train",
+        "lines": [
+          "Which way is the buffet car, please?",
+          "That way, next carriage!",
+          "Excuse me, how many stops is it to Victoria?",
+          "Please mind the gap between the train and the platform."
+        ]
+      }
     ],
-    natural: [
-      { full: 'What is the price of a one-way ticket to Penrith?', natural: 'How much is a single to Penrith?' },
-      { full: 'At which platform can I catch the train going to Glasgow?', natural: 'Which platform for the Glasgow train?' },
-      { full: 'How many stations remain before we reach Victoria?', natural: 'How many stops is it to Victoria?' },
-    ],
-  },
+    "natural": [
+      {
+        "full": "What is the price of a one-way ticket to Penrith?",
+        "natural": "How much is a single to Penrith?"
+      },
+      {
+        "full": "At which platform can I catch the train going to Glasgow?",
+        "natural": "Which platform for the Glasgow train?"
+      },
+      {
+        "full": "How many stations remain before we reach Victoria?",
+        "natural": "How many stops is it to Victoria?"
+      }
+    ]
+  }
 }

@@ -1,152 +1,561 @@
 /** Chapter 41 · Hair, beauty, and grooming. */
 export const hairBeautyLesson = {
-  id: 'hair-beauty',
-  kind: 'hair-beauty',
-  number: '41',
-  title: '第41章に入る前に：なぜ「ヘア・ビューティー・身だしなみ」の英語を学ぶのでしょうか？',
-  enTitle: 'Hair, beauty, and grooming',
-  ja: '予約、髪型の希望、ネイルやフェイシャルを相談する英語を学びます。',
-  cando: 'サロンの予約を取り、髪型や施術の希望を伝え、専門家の提案を理解できる。',
-  learn: {
-    intro: [
-      '美容室や理髪店、サロンで受けるサービスは、とても個人的なものです。髪の長さやスタイル、施術の内容が少し違うだけでも、仕上がりは大きく変わることがあります。',
-      'そのため、自分の希望をできるだけ明確に伝えることが大切です。一方で、自分ではどのスタイルがよいか分からず、スタイリストからアドバイスをもらうこともあります。',
-      'この章では、予約の取り方、希望するスタイルや施術の伝え方、そしてサロンで自然にやり取りする表現を学びます。',
+  "id": "hair-beauty",
+  "kind": "hair-beauty",
+  "number": "41",
+  "title": "第41章に入る前に：なぜ「ヘア・ビューティー・身だしなみ」の英語を学ぶのでしょうか？",
+  "enTitle": "Hair, beauty, and grooming",
+  "ja": "予約、髪型の希望、ネイルやフェイシャルを相談する英語を学びます。",
+  "cando": "サロンの予約を取り、髪型や施術の希望を伝え、専門家の提案を理解できる。",
+  "learn": {
+    "intro": [
+      "美容室や理髪店、サロンで受けるサービスは、とても個人的なものです。髪の長さやスタイル、施術の内容が少し違うだけでも、仕上がりは大きく変わることがあります。",
+      "そのため、自分の希望をできるだけ明確に伝えることが大切です。一方で、自分ではどのスタイルがよいか分からず、スタイリストからアドバイスをもらうこともあります。",
+      "この章では、予約の取り方、希望するスタイルや施術の伝え方、そしてサロンで自然にやり取りする表現を学びます。"
     ],
-    functions: [
-      ['01', '予約を取る'],
-      ['02', '希望を伝える'],
-      ['03', '専門家に相談する'],
-      ['04', '施術を選ぶ'],
+    "functions": [
+      [
+        "01",
+        "予約を取る"
+      ],
+      [
+        "02",
+        "希望を伝える"
+      ],
+      [
+        "03",
+        "専門家に相談する"
+      ],
+      [
+        "04",
+        "施術を選ぶ"
+      ]
     ],
-    appointment: {
-      title: '予約の受付と問い合わせ',
-      enTitle: 'Making an appointment',
-      intro: '希望する日時、メニュー、初めての来店かどうかを確認します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'Would you like to make an appointment?', meaning: '予約をなさいますか？', context: '予約を受け付ける', register: 'polite' },
-        { phrase: 'Can you do Thursday at 3pm?', meaning: '木曜日の午後3時は空いていますか？', context: '希望日時を提案する', register: 'casual' },
-        { phrase: "We're fully booked on Thursday, I'm afraid.", meaning: '恐れ入りますが、木曜日は予約でいっぱいです。', context: '空きがないと伝える', register: 'polite' },
-        { phrase: 'How about Friday morning?', meaning: '金曜日の午前中はいかがですか？', context: '別の日時を提案する', register: 'casual' },
-        { phrase: 'Would you like a cut and blow-dry?', meaning: 'カットとブローになさいますか？', context: 'メニューを確認する', register: 'polite' },
-        { phrase: 'Have you been to this salon before?', meaning: '当サロンにいらしたことはありますか？', context: '来店経験を尋ねる', register: 'polite' },
-        { phrase: 'Who normally does your hair?', meaning: '普段はどなたが担当されていますか？', context: '担当者を尋ねる', register: 'casual' },
-        { phrase: "What's the earliest you could fit me in?", meaning: '一番早く入れるのは何時ですか？', context: '最短の空きを尋ねる', register: 'polite' },
+    "appointment": {
+      "title": "予約の受付と問い合わせ",
+      "enTitle": "Making an appointment",
+      "intro": "希望する日時、メニュー、初めての来店かどうかを確認します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "Would you like to make an appointment?",
+          "meaning": "予約をなさいますか？",
+          "context": "予約を受け付ける",
+          "register": "polite"
+        },
+        {
+          "phrase": "Can you do Thursday at 3pm?",
+          "meaning": "木曜日の午後3時は空いていますか？",
+          "context": "希望日時を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "We're fully booked on Thursday, I'm afraid.",
+          "meaning": "恐れ入りますが、木曜日は予約でいっぱいです。",
+          "context": "空きがないと伝える",
+          "register": "polite"
+        },
+        {
+          "phrase": "How about Friday morning?",
+          "meaning": "金曜日の午前中はいかがですか？",
+          "context": "別の日時を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "Would you like a cut and blow-dry?",
+          "meaning": "カットとブローになさいますか？",
+          "context": "メニューを確認する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Have you been to this salon before?",
+          "meaning": "当サロンにいらしたことはありますか？",
+          "context": "来店経験を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Who normally does your hair?",
+          "meaning": "普段はどなたが担当されていますか？",
+          "context": "担当者を尋ねる",
+          "register": "casual"
+        },
+        {
+          "phrase": "What's the earliest you could fit me in?",
+          "meaning": "一番早く入れるのは何時ですか？",
+          "context": "最短の空きを尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Yes, please. Can you do Thursday at 3pm?",
+          "meaning": "はい、お願いします。木曜日の午後3時は空いていますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Can you come in on Monday?",
+          "meaning": "月曜日に来られますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Is Saturday afternoon any good?",
+          "meaning": "土曜日の午後はいかがですか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Friday is fine. Is 9.30 okay?",
+          "meaning": "金曜日で大丈夫です。9時30分はよいですか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Would you like to make another appointment?",
+          "meaning": "次の予約もお取りになりますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'fully booked', meaning: '予約でいっぱい', note: '空きがないことをやわらかく伝えます。' },
-        { phrase: 'fit me in', meaning: '予約の時間に入れてくれる', note: '急な予約や最短の空きを尋ねるときに使います。' },
-        { phrase: "I'm afraid", meaning: '恐れ入りますが・残念ながら', note: '断りをやわらげるクッション表現です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "fully booked",
+          "meaning": "予約でいっぱい",
+          "note": "空きがないことをやわらかく伝えます。"
+        },
+        {
+          "phrase": "fit me in",
+          "meaning": "予約の時間に入れてくれる",
+          "note": "急な予約や最短の空きを尋ねるときに使います。"
+        },
+        {
+          "phrase": "I'm afraid",
+          "meaning": "恐れ入りますが・残念ながら",
+          "note": "断りをやわらげるクッション表現です。"
+        }
+      ]
     },
-    styling: {
-      title: 'スタイリストや理髪店での相談',
-      enTitle: "Consulting the stylist · At the barber's",
-      intro: '長さやスタイルの希望を伝え、写真を見せながら相談します。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'So, what are we doing today?', meaning: '今日はどのような髪型にしましょうか？', context: '希望を聞く', register: 'casual' },
-        { phrase: 'Just my usual, I think.', meaning: 'いつもの感じでお願いします。', context: 'いつもの髪型を頼む', register: 'casual' },
-        { phrase: 'I just need a quick trim. Can you fit me in?', meaning: '軽く整えてもらいたいのですが、今入れますか？', context: '簡単なカットを頼む', register: 'casual' },
-        { phrase: 'Not too much off the top, please.', meaning: 'トップはあまり切りすぎないでください。', context: '切る量を指定する', register: 'polite' },
-        { phrase: "I feel like a change, but I don't know what to go for.", meaning: 'イメチェンしたいのですが、どんなスタイルがよいか分かりません。', context: '相談を始める', register: 'neutral' },
-        { phrase: 'I was thinking of something like this...', meaning: 'こんな感じのスタイルを考えていたのですが…', context: '写真を見せる', register: 'neutral' },
-        { phrase: 'I think a shorter style would really suit you.', meaning: '短いスタイルがとてもよくお似合いだと思います。', context: '提案する', register: 'polite' },
-        { phrase: 'Could you cut it a bit shorter at the sides?', meaning: 'サイドをもう少し短く切っていただけますか？', context: 'サイドの長さを指定する', register: 'polite' },
-        { phrase: 'Leave it longer on top, please.', meaning: 'トップは長めに残してください。', context: 'トップの長さを指定する', register: 'polite' },
-        { phrase: 'Could you cut the fringe a bit more?', meaning: '前髪をもう少し切ってもらえますか？', context: '前髪を指定する', register: 'polite' },
+    "styling": {
+      "title": "スタイリストや理髪店での相談",
+      "enTitle": "Consulting the stylist · At the barber's",
+      "intro": "長さやスタイルの希望を伝え、写真を見せながら相談します。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "So, what are we doing today?",
+          "meaning": "今日はどのような髪型にしましょうか？",
+          "context": "希望を聞く",
+          "register": "casual"
+        },
+        {
+          "phrase": "Just my usual, I think.",
+          "meaning": "いつもの感じでお願いします。",
+          "context": "いつもの髪型を頼む",
+          "register": "casual"
+        },
+        {
+          "phrase": "I just need a quick trim. Can you fit me in?",
+          "meaning": "軽く整えてもらいたいのですが、今入れますか？",
+          "context": "簡単なカットを頼む",
+          "register": "casual"
+        },
+        {
+          "phrase": "Not too much off the top, please.",
+          "meaning": "トップはあまり切りすぎないでください。",
+          "context": "切る量を指定する",
+          "register": "polite"
+        },
+        {
+          "phrase": "I feel like a change, but I don't know what to go for.",
+          "meaning": "イメチェンしたいのですが、どんなスタイルがよいか分かりません。",
+          "context": "相談を始める",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I was thinking of something like this...",
+          "meaning": "こんな感じのスタイルを考えていたのですが…",
+          "context": "写真を見せる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I think a shorter style would really suit you.",
+          "meaning": "短いスタイルがとてもよくお似合いだと思います。",
+          "context": "提案する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Could you cut it a bit shorter at the sides?",
+          "meaning": "サイドをもう少し短く切っていただけますか？",
+          "context": "サイドの長さを指定する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Leave it longer on top, please.",
+          "meaning": "トップは長めに残してください。",
+          "context": "トップの長さを指定する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Could you cut the fringe a bit more?",
+          "meaning": "前髪をもう少し切ってもらえますか？",
+          "context": "前髪を指定する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Could you wait 20 minutes?",
+          "meaning": "20分お待ちいただけますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "There’s one person before you.",
+          "meaning": "あなたの前に一人いらっしゃいます。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Sure. No problem.",
+          "meaning": "もちろんです。問題ありません。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Have a look through these styles, then we'll have a chat.",
+          "meaning": "こちらのスタイルを見てから相談しましょう。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "What colour would be best for me?",
+          "meaning": "私にはどの色が一番似合いますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'll have some styling gel on it, please.",
+          "meaning": "スタイリングジェルをつけてください。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Do you think I should go for highlights?",
+          "meaning": "ハイライトを入れたほうがよいと思いますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'trim', meaning: '毛先などを軽く整える', note: '大きく長さを変えないカットです。' },
-        { phrase: 'fringe', meaning: '前髪', note: 'アメリカ英語では bangs と言います。' },
-        { phrase: 'suit you', meaning: 'あなたによく似合う', note: 'スタイリストの提案でよく聞く表現です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "trim",
+          "meaning": "毛先などを軽く整える",
+          "note": "大きく長さを変えないカットです。"
+        },
+        {
+          "phrase": "fringe",
+          "meaning": "前髪",
+          "note": "アメリカ英語では bangs と言います。"
+        },
+        {
+          "phrase": "suit you",
+          "meaning": "あなたによく似合う",
+          "note": "スタイリストの提案でよく聞く表現です。"
+        }
+      ]
     },
-    beauty: {
-      title: 'ビューティーと身だしなみ',
-      enTitle: 'Beauty and grooming',
-      intro: 'ネイルやフェイシャルなど、ヘアカット以外のサービスを頼みます。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: "I'd like a manicure and polish.", meaning: 'マニキュアとカラーリングをお願いします。', context: 'ネイルを予約する', register: 'polite' },
-        { phrase: 'Have a look at these colours and take your pick.', meaning: 'こちらの色をご覧になって、お好きなものをお選びください。', context: '色を選んでもらう', register: 'casual' },
-        { phrase: "So, you're having the aromatherapy facial today?", meaning: '今日はアロマセラピー・フェイシャルのご予約ですね？', context: '施術を確認する', register: 'neutral' },
-        { phrase: "Yes, that's right.", meaning: 'はい、その通りです。', context: '予約内容を確認する', register: 'neutral' },
-        { phrase: 'Could I book a manicure for next week?', meaning: '来週、マニキュアを予約できますか？', context: 'ネイルの予約を取る', register: 'polite' },
-        { phrase: "I'd like to try a different colour this time.", meaning: '今回は違う色を試したいです。', context: '色の希望を伝える', register: 'polite' },
+    "beauty": {
+      "title": "ビューティーと身だしなみ",
+      "enTitle": "Beauty and grooming",
+      "intro": "ネイルやフェイシャルなど、ヘアカット以外のサービスを頼みます。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "I'd like a manicure and polish.",
+          "meaning": "マニキュアとカラーリングをお願いします。",
+          "context": "ネイルを予約する",
+          "register": "polite"
+        },
+        {
+          "phrase": "Have a look at these colours and take your pick.",
+          "meaning": "こちらの色をご覧になって、お好きなものをお選びください。",
+          "context": "色を選んでもらう",
+          "register": "casual"
+        },
+        {
+          "phrase": "So, you're having the aromatherapy facial today?",
+          "meaning": "今日はアロマセラピー・フェイシャルのご予約ですね？",
+          "context": "施術を確認する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Yes, that's right.",
+          "meaning": "はい、その通りです。",
+          "context": "予約内容を確認する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Could I book a manicure for next week?",
+          "meaning": "来週、マニキュアを予約できますか？",
+          "context": "ネイルの予約を取る",
+          "register": "polite"
+        },
+        {
+          "phrase": "I'd like to try a different colour this time.",
+          "meaning": "今回は違う色を試したいです。",
+          "context": "色の希望を伝える",
+          "register": "polite"
+        },
+        {
+          "phrase": "I booked a back wax for 4pm.",
+          "meaning": "4時に背中のワックス脱毛を予約しています。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Could I take your name, please?",
+          "meaning": "お名前を伺ってもよろしいですか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "hairdresser",
+          "meaning": "美容師",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "barber",
+          "meaning": "理髪師",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "beautician",
+          "meaning": "美容スタッフ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "highlights",
+          "meaning": "ハイライト",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "pedicure",
+          "meaning": "ペディキュア",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "waxing",
+          "meaning": "ワックス脱毛",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'manicure', meaning: 'マニキュア・手のケア', note: 'polish と一緒に色を塗るサービスを表します。' },
-        { phrase: 'polish', meaning: 'ネイルカラー', note: '色を選ぶときに使う名詞です。' },
-        { phrase: 'facial', meaning: 'フェイシャル', note: '顔の肌をケアする施術です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "manicure",
+          "meaning": "マニキュア・手のケア",
+          "note": "polish と一緒に色を塗るサービスを表します。"
+        },
+        {
+          "phrase": "polish",
+          "meaning": "ネイルカラー",
+          "note": "色を選ぶときに使う名詞です。"
+        },
+        {
+          "phrase": "facial",
+          "meaning": "フェイシャル",
+          "note": "顔の肌をケアする施術です。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'appointment',
-        label: 'Pattern A · Making an appointment',
-        title: '予約を取り、別の日時を提案する',
-        lines: [
-          { speaker: 'A', en: 'Would you like to make an appointment?', ja: '予約をなさいますか？' },
-          { speaker: 'B', en: 'Can you do Thursday at 3pm?', ja: '木曜日の午後3時は空いていますか？' },
-          { speaker: 'A', en: "We're fully booked on Thursday, I'm afraid.", ja: '恐れ入りますが、木曜日は予約でいっぱいです。' },
-          { speaker: 'B', en: 'How about Friday morning?', ja: '金曜日の午前中はいかがですか？' },
-        ],
+        "id": "appointment",
+        "label": "Pattern A · Making an appointment",
+        "title": "予約を取り、別の日時を提案する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Would you like to make an appointment?",
+            "ja": "予約をなさいますか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Can you do Thursday at 3pm?",
+            "ja": "木曜日の午後3時は空いていますか？"
+          },
+          {
+            "speaker": "A",
+            "en": "We're fully booked on Thursday, I'm afraid.",
+            "ja": "恐れ入りますが、木曜日は予約でいっぱいです。"
+          },
+          {
+            "speaker": "B",
+            "en": "How about Friday morning?",
+            "ja": "金曜日の午前中はいかがですか？"
+          }
+        ]
       },
       {
-        id: 'styling',
-        label: 'Pattern B · Consulting the stylist',
-        title: '髪型の希望を具体的に伝える',
-        lines: [
-          { speaker: 'A', en: 'So, what are we doing today?', ja: '今日はどのような髪型にしましょうか？' },
-          { speaker: 'B', en: 'I just need a quick trim.', ja: '軽く整えてもらいたいです。' },
-          { speaker: 'A', en: 'Not too much off the top?', ja: 'トップはあまり切らない感じですね？' },
-          { speaker: 'B', en: 'That’s right. Leave it longer on top, please.', ja: 'そうです。トップは長めに残してください。' },
-        ],
+        "id": "styling",
+        "label": "Pattern B · Consulting the stylist",
+        "title": "髪型の希望を具体的に伝える",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "So, what are we doing today?",
+            "ja": "今日はどのような髪型にしましょうか？"
+          },
+          {
+            "speaker": "B",
+            "en": "I just need a quick trim.",
+            "ja": "軽く整えてもらいたいです。"
+          },
+          {
+            "speaker": "A",
+            "en": "Not too much off the top?",
+            "ja": "トップはあまり切らない感じですね？"
+          },
+          {
+            "speaker": "B",
+            "en": "That’s right. Leave it longer on top, please.",
+            "ja": "そうです。トップは長めに残してください。"
+          }
+        ]
       },
       {
-        id: 'beauty',
-        label: 'Pattern C · Beauty services',
-        title: 'ネイルとフェイシャルを確認する',
-        lines: [
-          { speaker: 'A', en: "I'd like a manicure and polish.", ja: 'マニキュアとカラーリングをお願いします。' },
-          { speaker: 'B', en: 'Have a look at these colours and take your pick.', ja: 'こちらの色をご覧になって、お好きなものをお選びください。' },
-          { speaker: 'A', en: "So, you're having the aromatherapy facial today?", ja: '今日はアロマセラピー・フェイシャルのご予約ですね？' },
-          { speaker: 'B', en: "Yes, that's right.", ja: 'はい、その通りです。' },
-        ],
-      },
+        "id": "beauty",
+        "label": "Pattern C · Beauty services",
+        "title": "ネイルとフェイシャルを確認する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "I'd like a manicure and polish.",
+            "ja": "マニキュアとカラーリングをお願いします。"
+          },
+          {
+            "speaker": "B",
+            "en": "Have a look at these colours and take your pick.",
+            "ja": "こちらの色をご覧になって、お好きなものをお選びください。"
+          },
+          {
+            "speaker": "A",
+            "en": "So, you're having the aromatherapy facial today?",
+            "ja": "今日はアロマセラピー・フェイシャルのご予約ですね？"
+          },
+          {
+            "speaker": "B",
+            "en": "Yes, that's right.",
+            "ja": "はい、その通りです。"
+          }
+        ]
+      }
     ],
-    tip: 'trim は毛先を軽く整えるカット、fringe はイギリス英語で「前髪」です。アメリカ英語では bangs と言います。予約がいっぱいだと伝えるときの I\'m afraid は、「恐れ入りますが」という丁寧なクッション表現です。',
+    "tip": "trim は毛先を軽く整えるカット、fringe はイギリス英語で「前髪」です。アメリカ英語では bangs と言います。予約がいっぱいだと伝えるときの I'm afraid は、「恐れ入りますが」という丁寧なクッション表現です。"
   },
-  practice: {
-    title: 'サロンで、希望するスタイルを英語で伝える',
-    instructions: '日本語の説明はここまで。予約、髪型の希望、ネイルやフェイシャルについて尋ねる英語を声に重ねます。',
-    coreHeading: 'まずは、サロンでそのまま使える一文から。',
-    dialogueHeading: '予約を取り、髪型と施術の希望を確認する。',
-    dialogueDescription: '予約を提案する声、スタイルを相談する声、ビューティーサービスを確認する声を切り替えます。',
-    finishTitle: '次にサロンへ行くとき、希望する長さや施術をひとつ英語で伝えてみましょう。',
-    corePhrases: [
-      { phrase: 'Would you like to make an appointment?', context: '予約を受け付ける', rate: 0.78 },
-      { phrase: 'Can you do Thursday at 3pm?', context: '希望日時を尋ねる', rate: 0.82 },
-      { phrase: "We're fully booked on Thursday, I'm afraid.", context: '空きがないと伝える', rate: 0.74 },
-      { phrase: 'How about Friday morning?', context: '別の日時を提案する', rate: 0.86 },
-      { phrase: 'I just need a quick trim.', context: '軽く整える', rate: 0.84 },
-      { phrase: 'Not too much off the top, please.', context: '切る量を指定する', rate: 0.76 },
-      { phrase: 'Leave it longer on top, please.', context: 'トップを長く残す', rate: 0.78 },
-      { phrase: 'Could you cut the fringe a bit more?', context: '前髪を指定する', rate: 0.78 },
-      { phrase: "I'd like a manicure and polish.", context: 'ネイルを頼む', rate: 0.78 },
-      { phrase: "You're having the aromatherapy facial today?", context: '施術を確認する', rate: 0.76 },
+  "practice": {
+    "title": "サロンで、希望するスタイルを英語で伝える",
+    "instructions": "日本語の説明はここまで。予約、髪型の希望、ネイルやフェイシャルについて尋ねる英語を声に重ねます。",
+    "coreHeading": "まずは、サロンでそのまま使える一文から。",
+    "dialogueHeading": "予約を取り、髪型と施術の希望を確認する。",
+    "dialogueDescription": "予約を提案する声、スタイルを相談する声、ビューティーサービスを確認する声を切り替えます。",
+    "finishTitle": "次にサロンへ行くとき、希望する長さや施術をひとつ英語で伝えてみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "Would you like to make an appointment?",
+        "context": "予約を受け付ける",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Can you do Thursday at 3pm?",
+        "context": "希望日時を尋ねる",
+        "rate": 0.82
+      },
+      {
+        "phrase": "We're fully booked on Thursday, I'm afraid.",
+        "context": "空きがないと伝える",
+        "rate": 0.74
+      },
+      {
+        "phrase": "How about Friday morning?",
+        "context": "別の日時を提案する",
+        "rate": 0.86
+      },
+      {
+        "phrase": "I just need a quick trim.",
+        "context": "軽く整える",
+        "rate": 0.84
+      },
+      {
+        "phrase": "Not too much off the top, please.",
+        "context": "切る量を指定する",
+        "rate": 0.76
+      },
+      {
+        "phrase": "Leave it longer on top, please.",
+        "context": "トップを長く残す",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Could you cut the fringe a bit more?",
+        "context": "前髪を指定する",
+        "rate": 0.78
+      },
+      {
+        "phrase": "I'd like a manicure and polish.",
+        "context": "ネイルを頼む",
+        "rate": 0.78
+      },
+      {
+        "phrase": "You're having the aromatherapy facial today?",
+        "context": "施術を確認する",
+        "rate": 0.76
+      }
     ],
-    dialogues: [
-      { title: 'Making an appointment', lines: ['Would you like to make an appointment?', 'Can you do Thursday at 3pm?', "We're fully booked on Thursday, I'm afraid.", 'How about Friday morning?'] },
-      { title: 'Consulting the stylist', lines: ['So, what are we doing today?', 'I just need a quick trim.', 'Not too much off the top?', 'That’s right. Leave it longer on top, please.'] },
-      { title: 'Beauty services', lines: ["I'd like a manicure and polish.", 'Have a look at these colours and take your pick.', "So, you're having the aromatherapy facial today?", "Yes, that's right."] },
+    "dialogues": [
+      {
+        "title": "Making an appointment",
+        "lines": [
+          "Would you like to make an appointment?",
+          "Can you do Thursday at 3pm?",
+          "We're fully booked on Thursday, I'm afraid.",
+          "How about Friday morning?"
+        ]
+      },
+      {
+        "title": "Consulting the stylist",
+        "lines": [
+          "So, what are we doing today?",
+          "I just need a quick trim.",
+          "Not too much off the top?",
+          "That’s right. Leave it longer on top, please."
+        ]
+      },
+      {
+        "title": "Beauty services",
+        "lines": [
+          "I'd like a manicure and polish.",
+          "Have a look at these colours and take your pick.",
+          "So, you're having the aromatherapy facial today?",
+          "Yes, that's right."
+        ]
+      }
     ],
-    natural: [
-      { full: 'I only need a small cut.', natural: 'I just need a quick trim.' },
-      { full: 'Please do not cut too much from the top.', natural: 'Not too much off the top, please.' },
-      { full: 'Can you make the sides shorter?', natural: 'Could you cut it a bit shorter at the sides?' },
-    ],
-  },
+    "natural": [
+      {
+        "full": "I only need a small cut.",
+        "natural": "I just need a quick trim."
+      },
+      {
+        "full": "Please do not cut too much from the top.",
+        "natural": "Not too much off the top, please."
+      },
+      {
+        "full": "Can you make the sides shorter?",
+        "natural": "Could you cut it a bit shorter at the sides?"
+      }
+    ]
+  }
 }

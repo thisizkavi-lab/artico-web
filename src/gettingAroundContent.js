@@ -1,210 +1,790 @@
 /** Chapter 65 · Getting around. */
 export const gettingAroundLesson = {
-  id: 'getting-around',
-  kind: 'getting-around',
-  number: '65',
-  title: '第65章に入る前に：なぜ「移動・交通に関する英語」を学ぶのでしょうか？',
-  enTitle: 'Getting around',
-  ja: 'さまざまな交通手段、乗り降りや予約の動詞、切符や時刻表、運行情報に関する英語を学びます。',
-  cando: '行き先と交通手段を確認し、切符、乗車方法、遅延や変更について伝えられる。',
-  learn: {
-    intro: [
-      '移動するとき、私たちはただ乗り物に乗るだけではありません。どの交通手段を使うのかを選び、行き先や時間を確認します。',
-      '必要なら切符を買い、乗り降りや予約を行い、遅れや変更にも対応します。',
-      'この章では、さまざまな交通手段、乗り降りや予約に使う動詞、そして切符や時刻表、運行情報に関する表現を学びます。',
+  "id": "getting-around",
+  "kind": "getting-around",
+  "number": "65",
+  "title": "第65章に入る前に：なぜ「移動・交通に関する英語」を学ぶのでしょうか？",
+  "enTitle": "Getting around",
+  "ja": "さまざまな交通手段、乗り降りや予約の動詞、切符や時刻表、運行情報に関する英語を学びます。",
+  "cando": "行き先と交通手段を確認し、切符、乗車方法、遅延や変更について伝えられる。",
+  "learn": {
+    "intro": [
+      "移動するとき、私たちはただ乗り物に乗るだけではありません。どの交通手段を使うのかを選び、行き先や時間を確認します。",
+      "必要なら切符を買い、乗り降りや予約を行い、遅れや変更にも対応します。",
+      "この章では、さまざまな交通手段、乗り降りや予約に使う動詞、そして切符や時刻表、運行情報に関する表現を学びます。"
     ],
-    functions: [
-      ['01', '交通手段を選ぶ'],
-      ['02', '乗り降りと予約を伝える'],
-      ['03', '切符と行き先を確認する'],
-      ['04', '遅延や運行情報に対応する'],
+    "functions": [
+      [
+        "01",
+        "交通手段を選ぶ"
+      ],
+      [
+        "02",
+        "乗り降りと予約を伝える"
+      ],
+      [
+        "03",
+        "切符と行き先を確認する"
+      ],
+      [
+        "04",
+        "遅延や運行情報に対応する"
+      ]
     ],
-    transport: {
-      title: '乗り物の種類',
-      enTitle: 'Transport',
-      intro: '道路、鉄道、空港、港など、移動の場面で見かける乗り物と場所を整理します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'car', meaning: '車', context: '道路', register: 'neutral' },
-        { phrase: 'van', meaning: 'バン・小型トラック', context: '道路', register: 'neutral' },
-        { phrase: 'lorry', meaning: 'トラック', context: '道路', register: 'regional' },
-        { phrase: 'taxi', meaning: 'タクシー', context: '道路', register: 'neutral' },
-        { phrase: 'taxi rank', meaning: 'タクシー乗り場', context: '交通施設', register: 'regional' },
-        { phrase: 'bicycle / bike', meaning: '自転車', context: '道路', register: 'neutral' },
-        { phrase: 'scooter', meaning: 'スクーター・キックボード', context: '道路', register: 'neutral' },
-        { phrase: 'moped', meaning: 'モペッド・原動機付自転車', context: '道路', register: 'neutral' },
-        { phrase: 'motorbike', meaning: 'バイク・オートバイ', context: '道路', register: 'neutral' },
-        { phrase: 'garage', meaning: '整備工場・ガレージ', context: '自動車', register: 'neutral' },
-        { phrase: 'ferry', meaning: 'フェリー', context: '水上交通', register: 'neutral' },
-        { phrase: 'boat', meaning: 'ボート・小船', context: '水上交通', register: 'neutral' },
-        { phrase: 'yacht', meaning: 'ヨット', context: '水上交通', register: 'neutral' },
-        { phrase: 'port', meaning: '港', context: '交通施設', register: 'neutral' },
-        { phrase: 'helicopter', meaning: 'ヘリコプター', context: '空の交通', register: 'neutral' },
-        { phrase: 'cable car', meaning: 'ケーブルカー・ロープウェイ', context: '観光・交通', register: 'neutral' },
-        { phrase: 'aeroplane', meaning: '飛行機', context: '空港', register: 'regional' },
-        { phrase: 'airport', meaning: '空港', context: '交通施設', register: 'neutral' },
-        { phrase: 'runway', meaning: '滑走路', context: '空港', register: 'neutral' },
-        { phrase: 'airport bus', meaning: '空港バス', context: '空港', register: 'neutral' },
-        { phrase: 'car park', meaning: '駐車場', context: '道路', register: 'regional' },
-        { phrase: 'coach', meaning: '長距離バス・観光バス', context: 'バス', register: 'regional' },
-        { phrase: 'bus station', meaning: 'バスターミナル', context: 'バス', register: 'neutral' },
-        { phrase: 'bus', meaning: '路線バス', context: 'バス', register: 'neutral' },
-        { phrase: 'bus stop', meaning: 'バス停', context: 'バス', register: 'neutral' },
-        { phrase: 'queue', meaning: '順番を待つ列', context: '待ち時間', register: 'regional' },
-        { phrase: 'tram', meaning: '路面電車・トラム', context: '鉄道', register: 'neutral' },
-        { phrase: 'metro station', meaning: '地下鉄の駅', context: '鉄道', register: 'neutral' },
-        { phrase: 'train station', meaning: '電車の駅', context: '鉄道', register: 'neutral' },
-        { phrase: 'platform number', meaning: 'プラットホームの番号', context: '駅', register: 'neutral' },
-        { phrase: 'passengers', meaning: '乗客', context: '交通全般', register: 'neutral' },
-        { phrase: 'platform', meaning: 'プラットホーム', context: '駅', register: 'neutral' },
-        { phrase: 'train', meaning: '電車', context: '鉄道', register: 'neutral' },
+    "transport": {
+      "title": "乗り物の種類",
+      "enTitle": "Transport",
+      "intro": "道路、鉄道、空港、港など、移動の場面で見かける乗り物と場所を整理します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "car",
+          "meaning": "車",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "van",
+          "meaning": "バン・小型トラック",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "lorry",
+          "meaning": "トラック",
+          "context": "道路",
+          "register": "regional"
+        },
+        {
+          "phrase": "taxi",
+          "meaning": "タクシー",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "taxi rank",
+          "meaning": "タクシー乗り場",
+          "context": "交通施設",
+          "register": "regional"
+        },
+        {
+          "phrase": "bicycle / bike",
+          "meaning": "自転車",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "scooter",
+          "meaning": "スクーター・キックボード",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "moped",
+          "meaning": "モペッド・原動機付自転車",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "motorbike",
+          "meaning": "バイク・オートバイ",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "garage",
+          "meaning": "整備工場・ガレージ",
+          "context": "自動車",
+          "register": "neutral"
+        },
+        {
+          "phrase": "ferry",
+          "meaning": "フェリー",
+          "context": "水上交通",
+          "register": "neutral"
+        },
+        {
+          "phrase": "boat",
+          "meaning": "ボート・小船",
+          "context": "水上交通",
+          "register": "neutral"
+        },
+        {
+          "phrase": "yacht",
+          "meaning": "ヨット",
+          "context": "水上交通",
+          "register": "neutral"
+        },
+        {
+          "phrase": "port",
+          "meaning": "港",
+          "context": "交通施設",
+          "register": "neutral"
+        },
+        {
+          "phrase": "helicopter",
+          "meaning": "ヘリコプター",
+          "context": "空の交通",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cable car",
+          "meaning": "ケーブルカー・ロープウェイ",
+          "context": "観光・交通",
+          "register": "neutral"
+        },
+        {
+          "phrase": "aeroplane",
+          "meaning": "飛行機",
+          "context": "空港",
+          "register": "regional"
+        },
+        {
+          "phrase": "airport",
+          "meaning": "空港",
+          "context": "交通施設",
+          "register": "neutral"
+        },
+        {
+          "phrase": "runway",
+          "meaning": "滑走路",
+          "context": "空港",
+          "register": "neutral"
+        },
+        {
+          "phrase": "airport bus",
+          "meaning": "空港バス",
+          "context": "空港",
+          "register": "neutral"
+        },
+        {
+          "phrase": "car park",
+          "meaning": "駐車場",
+          "context": "道路",
+          "register": "regional"
+        },
+        {
+          "phrase": "coach",
+          "meaning": "長距離バス・観光バス",
+          "context": "バス",
+          "register": "regional"
+        },
+        {
+          "phrase": "bus station",
+          "meaning": "バスターミナル",
+          "context": "バス",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bus",
+          "meaning": "路線バス",
+          "context": "バス",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bus stop",
+          "meaning": "バス停",
+          "context": "バス",
+          "register": "neutral"
+        },
+        {
+          "phrase": "queue",
+          "meaning": "順番を待つ列",
+          "context": "待ち時間",
+          "register": "regional"
+        },
+        {
+          "phrase": "tram",
+          "meaning": "路面電車・トラム",
+          "context": "鉄道",
+          "register": "neutral"
+        },
+        {
+          "phrase": "metro station",
+          "meaning": "地下鉄の駅",
+          "context": "鉄道",
+          "register": "neutral"
+        },
+        {
+          "phrase": "train station",
+          "meaning": "電車の駅",
+          "context": "鉄道",
+          "register": "neutral"
+        },
+        {
+          "phrase": "platform number",
+          "meaning": "プラットホームの番号",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "passengers",
+          "meaning": "乗客",
+          "context": "交通全般",
+          "register": "neutral"
+        },
+        {
+          "phrase": "platform",
+          "meaning": "プラットホーム",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "train",
+          "meaning": "電車",
+          "context": "鉄道",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'lorry', meaning: 'トラック', note: 'アメリカ英語の truck にあたるイギリス英語です。' },
-        { phrase: 'coach', meaning: '長距離バス・観光バス', note: '路線バスの bus と区別します。' },
-        { phrase: 'taxi rank', meaning: 'タクシー乗り場', note: 'イギリス英語でよく使います。' },
-        { phrase: 'car park', meaning: '駐車場', note: 'アメリカ英語の parking lot にあたります。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "lorry",
+          "meaning": "トラック",
+          "note": "アメリカ英語の truck にあたるイギリス英語です。"
+        },
+        {
+          "phrase": "coach",
+          "meaning": "長距離バス・観光バス",
+          "note": "路線バスの bus と区別します。"
+        },
+        {
+          "phrase": "taxi rank",
+          "meaning": "タクシー乗り場",
+          "note": "イギリス英語でよく使います。"
+        },
+        {
+          "phrase": "car park",
+          "meaning": "駐車場",
+          "note": "アメリカ英語の parking lot にあたります。"
+        }
+      ]
     },
-    verbs: {
-      title: '移動に関する動詞',
-      enTitle: 'Verbs for getting around',
-      intro: '搭乗、離着陸、タッチ、乗車、運転、送迎、予約を表す動詞フレーズです。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'to board a plane', meaning: '飛行機に搭乗する', context: '空港', register: 'neutral' },
-        { phrase: 'to take off', meaning: '離陸する', context: '飛行機', register: 'neutral' },
-        { phrase: 'to land', meaning: '着陸する', context: '飛行機', register: 'neutral' },
-        { phrase: 'to tap in', meaning: 'カードをタッチして入場する', context: '改札', register: 'regional' },
-        { phrase: 'to tap out', meaning: 'カードをタッチして出場する', context: '改札', register: 'regional' },
-        { phrase: 'to wait for a bus', meaning: 'バスを待つ', context: 'バス停', register: 'neutral' },
-        { phrase: 'to get on a bus', meaning: 'バスに乗る', context: 'バス', register: 'neutral' },
-        { phrase: 'to drive a car', meaning: '車を運転する', context: '道路', register: 'neutral' },
-        { phrase: 'to give someone a lift', meaning: '人を車に乗せて送る', context: '送迎', register: 'regional' },
-        { phrase: 'to book a taxi', meaning: 'タクシーを予約する', context: '道路', register: 'neutral' },
+    "verbs": {
+      "title": "移動に関する動詞",
+      "enTitle": "Verbs for getting around",
+      "intro": "搭乗、離着陸、タッチ、乗車、運転、送迎、予約を表す動詞フレーズです。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "to board a plane",
+          "meaning": "飛行機に搭乗する",
+          "context": "空港",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to take off",
+          "meaning": "離陸する",
+          "context": "飛行機",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to land",
+          "meaning": "着陸する",
+          "context": "飛行機",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to tap in",
+          "meaning": "カードをタッチして入場する",
+          "context": "改札",
+          "register": "regional"
+        },
+        {
+          "phrase": "to tap out",
+          "meaning": "カードをタッチして出場する",
+          "context": "改札",
+          "register": "regional"
+        },
+        {
+          "phrase": "to wait for a bus",
+          "meaning": "バスを待つ",
+          "context": "バス停",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to get on a bus",
+          "meaning": "バスに乗る",
+          "context": "バス",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to drive a car",
+          "meaning": "車を運転する",
+          "context": "道路",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to give someone a lift",
+          "meaning": "人を車に乗せて送る",
+          "context": "送迎",
+          "register": "regional"
+        },
+        {
+          "phrase": "to book a taxi",
+          "meaning": "タクシーを予約する",
+          "context": "道路",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'board', meaning: '乗り込む・搭乗する', note: 'board a plane のように使います。' },
-        { phrase: 'tap in / tap out', meaning: '交通系カードを入出場時にタッチする', note: 'ロンドンなどの公共交通で使います。' },
-        { phrase: 'give someone a lift', meaning: '車で送る', note: 'アメリカ英語では give someone a ride が一般的です。' },
-        { phrase: 'book a taxi', meaning: 'タクシーを予約する', note: '電話やアプリでの手配に使います。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "board",
+          "meaning": "乗り込む・搭乗する",
+          "note": "board a plane のように使います。"
+        },
+        {
+          "phrase": "tap in / tap out",
+          "meaning": "交通系カードを入出場時にタッチする",
+          "note": "ロンドンなどの公共交通で使います。"
+        },
+        {
+          "phrase": "give someone a lift",
+          "meaning": "車で送る",
+          "note": "アメリカ英語では give someone a ride が一般的です。"
+        },
+        {
+          "phrase": "book a taxi",
+          "meaning": "タクシーを予約する",
+          "note": "電話やアプリでの手配に使います。"
+        }
+      ]
     },
-    essentials: {
-      title: '旅行の必需品と案内表示',
-      enTitle: 'Travel essentials',
-      intro: '切符、割引カード、免許証、時刻表、出発案内板、運行状況を読み取ります。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'single ticket', meaning: '片道切符', context: '切符', register: 'regional' },
-        { phrase: 'return ticket', meaning: '往復切符', context: '切符', register: 'regional' },
-        { phrase: 'e-ticket', meaning: '電子チケット', context: '切符', register: 'neutral' },
-        { phrase: 'railcard', meaning: '鉄道割引カード', context: '割引', register: 'regional' },
-        { phrase: 'driving licence', meaning: '運転免許証', context: '身分証', register: 'regional' },
-        { phrase: 'departure times', meaning: '出発時刻', context: '時刻表', register: 'neutral' },
-        { phrase: 'departure board', meaning: '出発案内板', context: '駅・空港', register: 'neutral' },
-        { phrase: 'destinations', meaning: '目的地', context: '案内表示', register: 'neutral' },
-        { phrase: 'On Time', meaning: '定刻通り', context: '運行状況', register: 'neutral' },
-        { phrase: 'delayed', meaning: '遅延', context: '運行状況', register: 'neutral' },
-        { phrase: 'Expected 7:45', meaning: '7時45分到着予定', context: '案内表示', register: 'neutral' },
-        { phrase: 'cancelled', meaning: '運休・キャンセル', context: '運行状況', register: 'neutral' },
+    "essentials": {
+      "title": "旅行の必需品と案内表示",
+      "enTitle": "Travel essentials",
+      "intro": "切符、割引カード、免許証、時刻表、出発案内板、運行状況を読み取ります。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "single ticket",
+          "meaning": "片道切符",
+          "context": "切符",
+          "register": "regional"
+        },
+        {
+          "phrase": "return ticket",
+          "meaning": "往復切符",
+          "context": "切符",
+          "register": "regional"
+        },
+        {
+          "phrase": "e-ticket",
+          "meaning": "電子チケット",
+          "context": "切符",
+          "register": "neutral"
+        },
+        {
+          "phrase": "railcard",
+          "meaning": "鉄道割引カード",
+          "context": "割引",
+          "register": "regional"
+        },
+        {
+          "phrase": "driving licence",
+          "meaning": "運転免許証",
+          "context": "身分証",
+          "register": "regional"
+        },
+        {
+          "phrase": "departure times",
+          "meaning": "出発時刻",
+          "context": "時刻表",
+          "register": "neutral"
+        },
+        {
+          "phrase": "departure board",
+          "meaning": "出発案内板",
+          "context": "駅・空港",
+          "register": "neutral"
+        },
+        {
+          "phrase": "destinations",
+          "meaning": "目的地",
+          "context": "案内表示",
+          "register": "neutral"
+        },
+        {
+          "phrase": "On Time",
+          "meaning": "定刻通り",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "delayed",
+          "meaning": "遅延",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Expected 7:45",
+          "meaning": "7時45分到着予定",
+          "context": "案内表示",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cancelled",
+          "meaning": "運休・キャンセル",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Exeter",
+          "meaning": "エクセター",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Brighton",
+          "meaning": "ブライトン",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Cardiff",
+          "meaning": "カーディフ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Dundee",
+          "meaning": "ダンディー",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Swindon",
+          "meaning": "スウィンドン",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Bristol",
+          "meaning": "ブリストル",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Reading",
+          "meaning": "レディング",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "London",
+          "meaning": "ロンドン",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Weston-Super-Mare",
+          "meaning": "ウェストン・スーパー・メア",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Expected 9:05",
+          "meaning": "9時05分到着予定",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'single / return', meaning: '片道 / 往復', note: 'アメリカ英語では one-way / round-trip と言います。' },
-        { phrase: 'railcard', meaning: '鉄道割引カード', note: 'イギリスの鉄道で使われる割引カードです。' },
-        { phrase: 'departure board', meaning: '出発案内板', note: 'ホームやゲートを確認できます。' },
-        { phrase: 'Expected 7:45', meaning: '7時45分到着予定', note: '遅延時の案内表示です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "single / return",
+          "meaning": "片道 / 往復",
+          "note": "アメリカ英語では one-way / round-trip と言います。"
+        },
+        {
+          "phrase": "railcard",
+          "meaning": "鉄道割引カード",
+          "note": "イギリスの鉄道で使われる割引カードです。"
+        },
+        {
+          "phrase": "departure board",
+          "meaning": "出発案内板",
+          "note": "ホームやゲートを確認できます。"
+        },
+        {
+          "phrase": "Expected 7:45",
+          "meaning": "7時45分到着予定",
+          "note": "遅延時の案内表示です。"
+        }
+      ]
     },
-    vocabulary: {
-      title: '交通案内のボキャブラリー',
-      enTitle: 'Vocabulary · Transport signs',
-      intro: '駅、空港、バス停で見聞きする短い表示を、移動の流れと結びつけます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'platform number', meaning: 'ホーム番号', context: '駅', register: 'neutral' },
-        { phrase: 'departure board', meaning: '出発案内板', context: '駅・空港', register: 'neutral' },
-        { phrase: 'destinations', meaning: '目的地', context: '案内表示', register: 'neutral' },
-        { phrase: 'On Time', meaning: '定刻通り', context: '運行状況', register: 'neutral' },
-        { phrase: 'delayed', meaning: '遅延', context: '運行状況', register: 'neutral' },
-        { phrase: 'cancelled', meaning: '運休・キャンセル', context: '運行状況', register: 'neutral' },
-        { phrase: 'bus stop', meaning: 'バス停', context: 'バス', register: 'neutral' },
-        { phrase: 'queue', meaning: '待ち行列', context: '乗り場', register: 'regional' },
+    "vocabulary": {
+      "title": "交通案内のボキャブラリー",
+      "enTitle": "Vocabulary · Transport signs",
+      "intro": "駅、空港、バス停で見聞きする短い表示を、移動の流れと結びつけます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "platform number",
+          "meaning": "ホーム番号",
+          "context": "駅",
+          "register": "neutral"
+        },
+        {
+          "phrase": "departure board",
+          "meaning": "出発案内板",
+          "context": "駅・空港",
+          "register": "neutral"
+        },
+        {
+          "phrase": "destinations",
+          "meaning": "目的地",
+          "context": "案内表示",
+          "register": "neutral"
+        },
+        {
+          "phrase": "On Time",
+          "meaning": "定刻通り",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "delayed",
+          "meaning": "遅延",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cancelled",
+          "meaning": "運休・キャンセル",
+          "context": "運行状況",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bus stop",
+          "meaning": "バス停",
+          "context": "バス",
+          "register": "neutral"
+        },
+        {
+          "phrase": "queue",
+          "meaning": "待ち行列",
+          "context": "乗り場",
+          "register": "regional"
+        }
       ],
-      recognition: [
-        { phrase: 'On Time', meaning: '定刻通り', note: '案内板で運行が予定通りであることを示します。' },
-        { phrase: 'delayed', meaning: '遅延している', note: 'Expected 7:45 などの追加表示と一緒に出ます。' },
-        { phrase: 'cancelled', meaning: '運休・キャンセルされた', note: '別の便やルートを探す必要があります。' },
-        { phrase: 'passengers', meaning: '乗客', note: '交通機関を利用する人々です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "On Time",
+          "meaning": "定刻通り",
+          "note": "案内板で運行が予定通りであることを示します。"
+        },
+        {
+          "phrase": "delayed",
+          "meaning": "遅延している",
+          "note": "Expected 7:45 などの追加表示と一緒に出ます。"
+        },
+        {
+          "phrase": "cancelled",
+          "meaning": "運休・キャンセルされた",
+          "note": "別の便やルートを探す必要があります。"
+        },
+        {
+          "phrase": "passengers",
+          "meaning": "乗客",
+          "note": "交通機関を利用する人々です。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'transport',
-        label: 'Pattern A · Choosing transport',
-        title: '交通手段と乗り場を決める',
-        lines: [
-          { speaker: 'A', en: 'Where is the bus stop?', ja: 'バス停はどこですか？' },
-          { speaker: 'B', en: "Let's get the airport bus.", ja: '空港バスに乗ろう。' },
-          { speaker: 'A', en: "Where's the taxi rank?", ja: 'タクシー乗り場はどこ？' },
-          { speaker: 'B', en: "I'll give you a lift instead.", ja: '代わりに車で送るよ。' },
-        ],
+        "id": "transport",
+        "label": "Pattern A · Choosing transport",
+        "title": "交通手段と乗り場を決める",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Where is the bus stop?",
+            "ja": "バス停はどこですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Let's get the airport bus.",
+            "ja": "空港バスに乗ろう。"
+          },
+          {
+            "speaker": "A",
+            "en": "Where's the taxi rank?",
+            "ja": "タクシー乗り場はどこ？"
+          },
+          {
+            "speaker": "B",
+            "en": "I'll give you a lift instead.",
+            "ja": "代わりに車で送るよ。"
+          }
+        ]
       },
       {
-        id: 'tickets',
-        label: 'Pattern B · Tickets',
-        title: '切符と出発時刻を確認する',
-        lines: [
-          { speaker: 'A', en: 'A single ticket to Oxford, please.', ja: 'オックスフォードまで片道切符をお願いします。' },
-          { speaker: 'B', en: 'Do you need a return ticket?', ja: '往復切符が必要ですか？' },
-          { speaker: 'A', en: 'No, thanks. Here is my e-ticket.', ja: 'いいえ、結構です。これが電子チケットです。' },
-          { speaker: 'B', en: 'Check the departure board for platform 3.', ja: '3番ホームの出発案内板を確認してください。' },
-        ],
+        "id": "tickets",
+        "label": "Pattern B · Tickets",
+        "title": "切符と出発時刻を確認する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "A single ticket to Oxford, please.",
+            "ja": "オックスフォードまで片道切符をお願いします。"
+          },
+          {
+            "speaker": "B",
+            "en": "Do you need a return ticket?",
+            "ja": "往復切符が必要ですか？"
+          },
+          {
+            "speaker": "A",
+            "en": "No, thanks. Here is my e-ticket.",
+            "ja": "いいえ、結構です。これが電子チケットです。"
+          },
+          {
+            "speaker": "B",
+            "en": "Check the departure board for platform 3.",
+            "ja": "3番ホームの出発案内板を確認してください。"
+          }
+        ]
       },
       {
-        id: 'status',
-        label: 'Pattern C · Travel status',
-        title: '遅延や運行状況に対応する',
-        lines: [
-          { speaker: 'A', en: 'Is the train on time?', ja: '電車は定刻通りですか？' },
-          { speaker: 'B', en: 'No, it is delayed.', ja: 'いいえ、遅延しています。' },
-          { speaker: 'A', en: 'The board says Expected 7:45.', ja: '案内板には7時45分到着予定と出ています。' },
-          { speaker: 'B', en: "Let's wait by the platform.", ja: 'ホームで待ちましょう。' },
-        ],
-      },
+        "id": "status",
+        "label": "Pattern C · Travel status",
+        "title": "遅延や運行状況に対応する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Is the train on time?",
+            "ja": "電車は定刻通りですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "No, it is delayed.",
+            "ja": "いいえ、遅延しています。"
+          },
+          {
+            "speaker": "A",
+            "en": "The board says Expected 7:45.",
+            "ja": "案内板には7時45分到着予定と出ています。"
+          },
+          {
+            "speaker": "B",
+            "en": "Let's wait by the platform.",
+            "ja": "ホームで待ちましょう。"
+          }
+        ]
+      }
     ],
-    tip: 'イギリス英語ではトラックを lorry、長距離バスを coach、駐車場を car park と言います。片道切符は single ticket、往復は return ticket です。交通系カードは tap in / tap out、車で送るときは give someone a lift と表現します。',
+    "tip": "イギリス英語ではトラックを lorry、長距離バスを coach、駐車場を car park と言います。片道切符は single ticket、往復は return ticket です。交通系カードは tap in / tap out、車で送るときは give someone a lift と表現します。"
   },
-  practice: {
-    title: '行き先と交通情報を、英語でスムーズに確認する',
-    instructions: '日本語訳は見ずに、交通手段、切符、乗り場、遅延の表現を声に重ねます。',
-    coreHeading: 'まずは、どこへどう行くかを尋ねる一文から。',
-    dialogueHeading: '交通手段、切符、運行状況の場面で役を切り替える。',
-    dialogueDescription: '乗り場と送迎を決める、切符とホームを確認する、遅延に対応する3つの場面を練習します。',
-    finishTitle: '次に移動するとき、乗り場か運行状況の英語をひとつ使ってみましょう。',
-    corePhrases: [
-      { phrase: 'Where is the bus stop?', context: 'バス停を尋ねる', rate: 0.82 },
-      { phrase: "Let's get the airport bus.", context: '交通手段を提案する', rate: 0.82 },
-      { phrase: "Where's the taxi rank?", context: 'タクシー乗り場を尋ねる', rate: 0.84 },
-      { phrase: "I'll give you a lift instead.", context: '車で送ると伝える', rate: 0.8 },
-      { phrase: 'A single ticket to Oxford, please.', context: '片道切符を買う', rate: 0.8 },
-      { phrase: 'Do you need a return ticket?', context: '往復切符を確認する', rate: 0.8 },
-      { phrase: 'Here is my e-ticket.', context: '電子チケットを示す', rate: 0.82 },
-      { phrase: 'Check the departure board for platform 3.', context: '案内板とホームを確認する', rate: 0.76 },
-      { phrase: 'Is the train on time?', context: '定刻か尋ねる', rate: 0.84 },
-      { phrase: 'No, it is delayed.', context: '遅延を伝える', rate: 0.84 },
-      { phrase: 'The board says Expected 7:45.', context: '到着予定を読む', rate: 0.78 },
-      { phrase: "Let's wait by the platform.", context: 'ホームで待つと伝える', rate: 0.82 },
+  "practice": {
+    "title": "行き先と交通情報を、英語でスムーズに確認する",
+    "instructions": "日本語訳は見ずに、交通手段、切符、乗り場、遅延の表現を声に重ねます。",
+    "coreHeading": "まずは、どこへどう行くかを尋ねる一文から。",
+    "dialogueHeading": "交通手段、切符、運行状況の場面で役を切り替える。",
+    "dialogueDescription": "乗り場と送迎を決める、切符とホームを確認する、遅延に対応する3つの場面を練習します。",
+    "finishTitle": "次に移動するとき、乗り場か運行状況の英語をひとつ使ってみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "Where is the bus stop?",
+        "context": "バス停を尋ねる",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Let's get the airport bus.",
+        "context": "交通手段を提案する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Where's the taxi rank?",
+        "context": "タクシー乗り場を尋ねる",
+        "rate": 0.84
+      },
+      {
+        "phrase": "I'll give you a lift instead.",
+        "context": "車で送ると伝える",
+        "rate": 0.8
+      },
+      {
+        "phrase": "A single ticket to Oxford, please.",
+        "context": "片道切符を買う",
+        "rate": 0.8
+      },
+      {
+        "phrase": "Do you need a return ticket?",
+        "context": "往復切符を確認する",
+        "rate": 0.8
+      },
+      {
+        "phrase": "Here is my e-ticket.",
+        "context": "電子チケットを示す",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Check the departure board for platform 3.",
+        "context": "案内板とホームを確認する",
+        "rate": 0.76
+      },
+      {
+        "phrase": "Is the train on time?",
+        "context": "定刻か尋ねる",
+        "rate": 0.84
+      },
+      {
+        "phrase": "No, it is delayed.",
+        "context": "遅延を伝える",
+        "rate": 0.84
+      },
+      {
+        "phrase": "The board says Expected 7:45.",
+        "context": "到着予定を読む",
+        "rate": 0.78
+      },
+      {
+        "phrase": "Let's wait by the platform.",
+        "context": "ホームで待つと伝える",
+        "rate": 0.82
+      }
     ],
-    dialogues: [
-      { title: 'Choosing transport', lines: ['Where is the bus stop?', "Let's get the airport bus.", "Where's the taxi rank?", "I'll give you a lift instead."] },
-      { title: 'Tickets', lines: ['A single ticket to Oxford, please.', 'Do you need a return ticket?', 'No, thanks. Here is my e-ticket.', 'Check the departure board for platform 3.'] },
-      { title: 'Travel status', lines: ['Is the train on time?', 'No, it is delayed.', 'The board says Expected 7:45.', "Let's wait by the platform."] },
+    "dialogues": [
+      {
+        "title": "Choosing transport",
+        "lines": [
+          "Where is the bus stop?",
+          "Let's get the airport bus.",
+          "Where's the taxi rank?",
+          "I'll give you a lift instead."
+        ]
+      },
+      {
+        "title": "Tickets",
+        "lines": [
+          "A single ticket to Oxford, please.",
+          "Do you need a return ticket?",
+          "No, thanks. Here is my e-ticket.",
+          "Check the departure board for platform 3."
+        ]
+      },
+      {
+        "title": "Travel status",
+        "lines": [
+          "Is the train on time?",
+          "No, it is delayed.",
+          "The board says Expected 7:45.",
+          "Let's wait by the platform."
+        ]
+      }
     ],
-    natural: [
-      { full: 'Could you tell me where the place for taxis is?', natural: "Where's the taxi rank?" },
-      { full: 'I can drive you there instead.', natural: "I'll give you a lift instead." },
-      { full: 'The train is not running according to its scheduled time.', natural: 'No, it is delayed.' },
-    ],
-  },
+    "natural": [
+      {
+        "full": "Could you tell me where the place for taxis is?",
+        "natural": "Where's the taxi rank?"
+      },
+      {
+        "full": "I can drive you there instead.",
+        "natural": "I'll give you a lift instead."
+      },
+      {
+        "full": "The train is not running according to its scheduled time.",
+        "natural": "No, it is delayed."
+      }
+    ]
+  }
 }

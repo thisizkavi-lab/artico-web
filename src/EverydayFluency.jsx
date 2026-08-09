@@ -9014,9 +9014,10 @@ function HolidayProblemsLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTi
 function HealthMedicineLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
   const [activeSection, setActiveSection] = useState('health-medicine-why')
   const { learn } = lesson
+  const isSourceVocabularyLesson = lesson.number === '80'
 
   useEffect(() => {
-    const sections = ['health-medicine-why', 'health-medicine-general', 'health-medicine-pain', 'health-medicine-conditions', 'health-medicine-dialogues', 'health-medicine-tips']
+    const sections = ['health-medicine-why', 'health-medicine-general', 'health-medicine-pain', 'health-medicine-conditions', ...(isSourceVocabularyLesson ? ['health-medicine-emergencies'] : ['health-medicine-dialogues']), 'health-medicine-tips']
       .map((id) => document.getElementById(id))
       .filter(Boolean)
     if (!sections.length || typeof IntersectionObserver === 'undefined') return undefined
@@ -9028,14 +9029,14 @@ function HealthMedicineLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTit
     }, { rootMargin: '-18% 0px -62% 0px', threshold: 0 })
     sections.forEach((section) => observer.observe(section))
     return () => observer.disconnect()
-  }, [])
+  }, [isSourceVocabularyLesson])
 
   const outline = [
     ['health-medicine-why', '健康を伝える役割'],
-    ['health-medicine-general', '基本の症状'],
-    ['health-medicine-pain', '痛み・けが'],
-    ['health-medicine-conditions', '持病・処置'],
-    ['health-medicine-dialogues', '会話の練習'],
+    [ 'health-medicine-general', isSourceVocabularyLesson ? '人体の部位' : '基本の症状'],
+    [ 'health-medicine-pain', isSourceVocabularyLesson ? '病気とけが' : '痛み・けが'],
+    [ 'health-medicine-conditions', isSourceVocabularyLesson ? '医療専門職' : '持病・処置'],
+    ...(isSourceVocabularyLesson ? [['health-medicine-emergencies', '緊急・診断・治療']] : [['health-medicine-dialogues', '会話の練習']]),
     ['health-medicine-tips', '会話のポイント'],
   ]
 
@@ -9058,32 +9059,41 @@ function HealthMedicineLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTit
 
           <section id="health-medicine-general" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">症状 · General symptoms</span>
-              <h2>吐き気、頭痛、鼻づまりなどを説明する。</h2>
-              <p>feel sick、have been -ing、congested、ache、diarrhoea、constipatedを使って体調の変化を伝えます。</p>
+              <span className="section-kicker">{isSourceVocabularyLesson ? '人体の部位 · The human body' : '症状 · General symptoms'}</span>
+              <h2>{isSourceVocabularyLesson ? '体の部位を英語で確認する。' : '吐き気、頭痛、鼻づまりなどを説明する。'}</h2>
+              <p>{isSourceVocabularyLesson ? 'head、shoulder、wrist、ankleなど、体の部位を正確に区別します。' : 'feel sick、have been -ing、congested、ache、diarrhoea、constipatedを使って体調の変化を伝えます。'}</p>
             </div>
             <GreetingVocabularySection section={learn.general} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
 
           <section id="health-medicine-pain" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">痛みとけが · Pain and injuries</span>
-              <h2>痛む場所、腫れ、強さ、動作中の痛みを伝える。</h2>
-              <p>swollen、in a lot of pain、a pain in my、pull a muscle、sprainで具体的な状態を説明します。</p>
+              <span className="section-kicker">{isSourceVocabularyLesson ? '病気とけが · Illnesses and injuries' : '痛みとけが · Pain and injuries'}</span>
+              <h2>{isSourceVocabularyLesson ? '病気とけがの基本語彙を整理する。' : '痛む場所、腫れ、強さ、動作中の痛みを伝える。'}</h2>
+              <p>{isSourceVocabularyLesson ? 'cough、fever、rash、sprain、broken boneなどを確認します。' : 'swollen、in a lot of pain、a pain in my、pull a muscle、sprainで具体的な状態を説明します。'}</p>
             </div>
             <GreetingVocabularySection section={learn.pain} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
 
           <section id="health-medicine-conditions" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">持病と処置 · Chronic conditions</span>
-              <h2>持病、息苦しさ、必要な薬や器具を知らせる。</h2>
-              <p>diabetic、insulin、breathless、asthmatic、inhalerを質問と返答の形で練習します。</p>
+              <span className="section-kicker">{isSourceVocabularyLesson ? '医療専門職 · Medical professionals' : '持病と処置 · Chronic conditions'}</span>
+              <h2>{isSourceVocabularyLesson ? '医療に関わる専門職の名前を覚える。' : '持病、息苦しさ、必要な薬や器具を知らせる。'}</h2>
+              <p>{isSourceVocabularyLesson ? 'nurse、surgeon、paramedic、pharmacistなど、医療専門職の語彙です。' : 'diabetic、insulin、breathless、asthmatic、inhalerを質問と返答の形で練習します。'}</p>
             </div>
             <GreetingVocabularySection section={learn.conditions} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
 
-          <section id="health-medicine-dialogues" className="greetings-content-section">
+          {isSourceVocabularyLesson && <section id="health-medicine-emergencies" className="greetings-content-section">
+            <div className="greetings-section-heading">
+              <span className="section-kicker">緊急・診断・治療 · Emergencies, diagnoses, and treatment</span>
+              <h2>緊急時や検査・治療で使う語彙を確認する。</h2>
+              <p>ambulance、A&amp;E、blood pressure、X-ray、bandage、antibioticsなどをまとめて覚えます。</p>
+            </div>
+            <GreetingVocabularySection section={learn.emergencies} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
+          </section>}
+
+          {!isSourceVocabularyLesson && <section id="health-medicine-dialogues" className="greetings-content-section">
             <div className="greetings-section-heading">
               <span className="section-kicker">会話の流れ · Put it into a conversation</span>
               <h2>症状、けが、持病の情報を順番に伝える。</h2>
@@ -9092,18 +9102,23 @@ function HealthMedicineLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTit
             <div className="greetings-dialogue-grid">
               {learn.dialogues.map((pattern) => <GreetingDialogueCard key={pattern.id} pattern={pattern} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />)}
             </div>
-          </section>
+          </section>}
 
           <section id="health-medicine-tips" className="greetings-content-section">
             <span className="section-kicker">会話のポイント · Good to know</span>
-            <h2>feel sick、ache、pull a muscleを使い分ける。</h2>
+            <h2>{isSourceVocabularyLesson ? '人体・医療・治療の語彙を使い分ける。' : 'feel sick、ache、pull a muscleを使い分ける。'}</h2>
             <p>{learn.tip}</p>
             <div className="greetings-recap">
               {learn.tips.map((tip) => <div key={tip.title}><span className="section-kicker">{tip.title}</span><p>{tip.body}</p></div>)}
             </div>
             <div className="greetings-recap">
-              <div><span className="section-kicker">自分で使う</span><p>I&apos;ve been feeling sick. · I&apos;ve got a swollen ankle. · I&apos;m asthmatic. I need another inhaler.</p></div>
-              <div><span className="section-kicker">聞いたら分かる</span><p>diarrhoea · congested · breathless · insulin · inhaler</p></div>
+              {isSourceVocabularyLesson ? <>
+                <div><span className="section-kicker">自分で使う</span><p>head · shoulder · wrist · ankle · cough · fever · rash · ambulance</p></div>
+                <div><span className="section-kicker">聞いたら分かる</span><p>A&amp;E · blood pressure · X-ray · bandage · medication · antibiotics</p></div>
+              </> : <>
+                <div><span className="section-kicker">自分で使う</span><p>I&apos;ve been feeling sick. · I&apos;ve got a swollen ankle. · I&apos;m asthmatic. I need another inhaler.</p></div>
+                <div><span className="section-kicker">聞いたら分かる</span><p>diarrhoea · congested · breathless · insulin · inhaler</p></div>
+              </>}
             </div>
             <p className="greetings-next-cue">Practiceで声を重ねる →</p>
           </section>
@@ -9236,6 +9251,7 @@ function PharmacyLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) 
 function AppointmentLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
   const [activeSection, setActiveSection] = useState('appointment-why')
   const { learn } = lesson
+  const isSourceAppointmentLesson = lesson.number === '82'
 
   useEffect(() => {
     const sections = ['appointment-why', 'appointment-booking', 'appointment-availability', 'appointment-rearranging', 'appointment-dialogues', 'appointment-tips']
@@ -9254,9 +9270,9 @@ function AppointmentLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle 
 
   const outline = [
     ['appointment-why', '予約で伝える役割'],
-    ['appointment-booking', '診察の予約'],
-    ['appointment-availability', '緊急と空き状況'],
-    ['appointment-rearranging', '変更とキャンセル'],
+    ['appointment-booking', isSourceAppointmentLesson ? '診療所で予約' : '診察の予約'],
+    ['appointment-availability', isSourceAppointmentLesson ? '歯科で予約' : '緊急と空き状況'],
+    ['appointment-rearranging', isSourceAppointmentLesson ? '緊急予約' : '変更とキャンセル'],
     ['appointment-dialogues', '会話の練習'],
     ['appointment-tips', '会話のポイント'],
   ]
@@ -9280,27 +9296,27 @@ function AppointmentLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle 
 
           <section id="appointment-booking" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">予約 · Booking an appointment</span>
-              <h2>医師の予約と患者情報を確認する。</h2>
-              <p>book / make an appointment、registered、date of birth、openingで予約を確保します。</p>
+              <span className="section-kicker">{isSourceAppointmentLesson ? "診療所 · At the doctor's surgery" : '予約 · Booking an appointment'}</span>
+              <h2>{isSourceAppointmentLesson ? '医師・看護師の予約と症状を伝える。' : '医師の予約と患者情報を確認する。'}</h2>
+              <p>{isSourceAppointmentLesson ? 'book an appointment、chest infection、squeeze you in、available slotで相談します。' : 'book / make an appointment、registered、date of birth、openingで予約を確保します。'}</p>
             </div>
             <GreetingVocabularySection section={learn.booking} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
 
           <section id="appointment-availability" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">緊急と空き状況 · Availability</span>
-              <h2>今日の予約枠と緊急度を相談する。</h2>
-              <p>available today、urgent、fully booked、fit you in、earliest appointmentで時間を調整します。</p>
+              <span className="section-kicker">{isSourceAppointmentLesson ? '歯科 · At the dentist' : '緊急と空き状況 · Availability'}</span>
+              <h2>{isSourceAppointmentLesson ? '検診・歯痛・新規患者の予約を確認する。' : '今日の予約枠と緊急度を相談する。'}</h2>
+              <p>{isSourceAppointmentLesson ? 'check-up、toothache、new patients、slotで歯科の予約を調整します。' : 'available today、urgent、fully booked、fit you in、earliest appointmentで時間を調整します。'}</p>
             </div>
             <GreetingVocabularySection section={learn.availability} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
 
           <section id="appointment-rearranging" className="greetings-content-section">
             <div className="greetings-section-heading">
-              <span className="section-kicker">変更とキャンセル · Rearranging and cancelling</span>
-              <h2>予約を変更し、次回の診察枠を取る。</h2>
-              <p>cancel、rearrange、reschedule、double appointment、follow-up appointmentを使い分けます。</p>
+              <span className="section-kicker">{isSourceAppointmentLesson ? '緊急予約 · Emergency appointments' : '変更とキャンセル · Rearranging and cancelling'}</span>
+              <h2>{isSourceAppointmentLesson ? '緊急予約とトリアージの流れを理解する。' : '予約を変更し、次回の診察枠を取る。'}</h2>
+              <p>{isSourceAppointmentLesson ? 'emergency appointment、urgent appointment、triage listを使って対応を確認します。' : 'cancel、rearrange、reschedule、double appointment、follow-up appointmentを使い分けます。'}</p>
             </div>
             <GreetingVocabularySection section={learn.rearranging} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
           </section>
@@ -9308,8 +9324,8 @@ function AppointmentLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle 
           <section id="appointment-dialogues" className="greetings-content-section">
             <div className="greetings-section-heading">
               <span className="section-kicker">会話の流れ · Put it into a conversation</span>
-              <h2>予約、緊急枠、変更の手続きを順番に伝える。</h2>
-              <p>診察を予約する、今日の空きと緊急度を相談する、予約を変更して次回枠を取る3つの場面を聞いてみましょう。</p>
+              <h2>{isSourceAppointmentLesson ? '診療所、歯科、緊急予約の流れを聞く。' : '予約、緊急枠、変更の手続きを順番に伝える。'}</h2>
+              <p>{isSourceAppointmentLesson ? '医師の診療所、歯科、緊急時の3つの場面を聞いてみましょう。' : '診察を予約する、今日の空きと緊急度を相談する、予約を変更して次回枠を取る3つの場面を聞いてみましょう。'}</p>
             </div>
             <div className="greetings-dialogue-grid">
               {learn.dialogues.map((pattern) => <GreetingDialogueCard key={pattern.id} pattern={pattern} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />)}
@@ -9318,14 +9334,19 @@ function AppointmentLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle 
 
           <section id="appointment-tips" className="greetings-content-section">
             <span className="section-kicker">会話のポイント · Good to know</span>
-            <h2>book、That works for me、fit you inを使い分ける。</h2>
+            <h2>{isSourceAppointmentLesson ? 'available、sooner、squeeze you in、triage listを使い分ける。' : 'book、That works for me、fit you inを使い分ける。'}</h2>
             <p>{learn.tip}</p>
             <div className="greetings-recap">
               {learn.tips.map((tip) => <div key={tip.title}><span className="section-kicker">{tip.title}</span><p>{tip.body}</p></div>)}
             </div>
             <div className="greetings-recap">
-              <div><span className="section-kicker">自分で使う</span><p>I&apos;d like to book an appointment. · Do you have any appointments available today? · I have to reschedule my appointment.</p></div>
-              <div><span className="section-kicker">聞いたら分かる</span><p>registered · an opening · fully booked · fit you in · follow-up appointment</p></div>
+              {isSourceAppointmentLesson ? <>
+                <div><span className="section-kicker">自分で使う</span><p>I&apos;d like to book an appointment with Doctor Cole. · I&apos;d like to book a check-up, please. · I need an emergency appointment.</p></div>
+                <div><span className="section-kicker">聞いたら分かる</span><p>chest infection · toothache · squeeze you in · triage list · new patients</p></div>
+              </> : <>
+                <div><span className="section-kicker">自分で使う</span><p>I&apos;d like to book an appointment. · Do you have any appointments available today? · I have to reschedule my appointment.</p></div>
+                <div><span className="section-kicker">聞いたら分かる</span><p>registered · an opening · fully booked · fit you in · follow-up appointment</p></div>
+              </>}
             </div>
             <p className="greetings-next-cue">Practiceで声を重ねる →</p>
           </section>

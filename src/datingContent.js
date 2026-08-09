@@ -1,154 +1,493 @@
 /** Chapter 18 · Dating and romance. */
 export const datingLesson = {
-  id: 'dating',
-  kind: 'dating',
-  number: '18',
-  title: 'なぜ「デートと恋愛」の表現を学ぶのでしょうか？',
-  enTitle: 'Dating and romance',
-  ja: '誘う、受ける、断る、初デートで話す、そしてまた会いたい気持ちを伝えます。',
-  cando: '相手の気持ちと意思を尊重しながら、デートに誘い、返事をし、次の約束につなげられる。',
-  learn: {
-    intro: [
-      'デートでは、お互いに興味があるか、そしてもっと相手を知りたいかを、会話を通して少しずつ確かめていきます。そのため、自分の気持ちを伝えるだけでなく、相手の気持ちや意思を尊重することも大切です。',
-      '誘いを受けたいこともあれば、断りたいこともあります。また、まだ自分の気持ちがはっきりしないこともあります。どの返事も、相手を尊重しながら自分の意思を伝えるための大切な会話です。',
-      'この章では、デートへの誘い方、受け方・断り方、初デートでの会話、そして「また会いたい」という気持ちの伝え方を学びます。',
+  "id": "dating",
+  "kind": "dating",
+  "number": "18",
+  "title": "なぜ「デートと恋愛」の表現を学ぶのでしょうか？",
+  "enTitle": "Dating and romance",
+  "ja": "誘う、受ける、断る、初デートで話す、そしてまた会いたい気持ちを伝えます。",
+  "cando": "相手の気持ちと意思を尊重しながら、デートに誘い、返事をし、次の約束につなげられる。",
+  "learn": {
+    "intro": [
+      "デートでは、お互いに興味があるか、そしてもっと相手を知りたいかを、会話を通して少しずつ確かめていきます。そのため、自分の気持ちを伝えるだけでなく、相手の気持ちや意思を尊重することも大切です。",
+      "誘いを受けたいこともあれば、断りたいこともあります。また、まだ自分の気持ちがはっきりしないこともあります。どの返事も、相手を尊重しながら自分の意思を伝えるための大切な会話です。",
+      "この章では、デートへの誘い方、受け方・断り方、初デートでの会話、そして「また会いたい」という気持ちの伝え方を学びます。"
     ],
-    functions: [
-      ['01', '軽く誘う'],
-      ['02', '意思を返す'],
-      ['03', '初デートで知る'],
-      ['04', '次につなげる'],
+    "functions": [
+      [
+        "01",
+        "軽く誘う"
+      ],
+      [
+        "02",
+        "意思を返す"
+      ],
+      [
+        "03",
+        "初デートで知る"
+      ],
+      [
+        "04",
+        "次につなげる"
+      ]
     ],
-    asking: {
-      title: 'デートに誘う・誘いを受ける',
-      enTitle: 'Ask someone out · Say yes',
-      intro: '相手を重くさせずに、具体的な提案をします。受けるときは、気持ちと次の予定を短く返します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: "I was wondering if you'd like to go out this Saturday?", meaning: '今週の土曜日、一緒に出かけませんか？', context: '丁寧で控えめに誘う', register: 'polite' },
-        { phrase: 'Do you fancy going for a coffee next week?', meaning: '来週、コーヒーでも飲みに行かない？', context: '軽く誘う', register: 'casual' },
-        { phrase: 'We should meet up sometime.', meaning: 'いつか会いましょう／遊びましょう。', context: 'まだ具体化しない誘い', register: 'neutral' },
-        { phrase: "I'd love to! Pick me up at 7?", meaning: 'ぜひ！7時に迎えに来てくれる？', context: '喜んで受ける', register: 'casual' },
-        { phrase: "Yeah, I'd like that. Next Friday, maybe?", meaning: 'ええ、いいですね。次の金曜日はどう？', context: '受けて日程を提案する', register: 'neutral' },
-        { phrase: "I was hoping you'd ask me.", meaning: '誘ってくれるのを待ってたの。', context: '嬉しさを伝える', register: 'casual' },
+    "asking": {
+      "title": "デートに誘う・誘いを受ける",
+      "enTitle": "Ask someone out · Say yes",
+      "intro": "相手を重くさせずに、具体的な提案をします。受けるときは、気持ちと次の予定を短く返します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "I was wondering if you'd like to go out this Saturday?",
+          "meaning": "今週の土曜日、一緒に出かけませんか？",
+          "context": "丁寧で控えめに誘う",
+          "register": "polite"
+        },
+        {
+          "phrase": "Do you fancy going for a coffee next week?",
+          "meaning": "来週、コーヒーでも飲みに行かない？",
+          "context": "軽く誘う",
+          "register": "casual"
+        },
+        {
+          "phrase": "We should meet up sometime.",
+          "meaning": "いつか会いましょう／遊びましょう。",
+          "context": "まだ具体化しない誘い",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'd love to! Pick me up at 7?",
+          "meaning": "ぜひ！7時に迎えに来てくれる？",
+          "context": "喜んで受ける",
+          "register": "casual"
+        },
+        {
+          "phrase": "Yeah, I'd like that. Next Friday, maybe?",
+          "meaning": "ええ、いいですね。次の金曜日はどう？",
+          "context": "受けて日程を提案する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I was hoping you'd ask me.",
+          "meaning": "誘ってくれるのを待ってたの。",
+          "context": "嬉しさを伝える",
+          "register": "casual"
+        },
+        {
+          "phrase": "Saturday afternoon?",
+          "meaning": "土曜日の午後はどう？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Cool, I’ll message you.",
+          "meaning": "いいね、メッセージするよ。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Sounds great!",
+          "meaning": "すごくいいね！",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "That would be really nice.",
+          "meaning": "それは本当にいいね。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "You took your time!",
+          "meaning": "ずいぶん時間がかかったね！",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Sure, why not?",
+          "meaning": "もちろん、いいよ。",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: "I thought you'd never ask!", meaning: '一生誘ってくれないかと思ってた！', note: 'ずっと気になっていた相手から誘われたときの、少しドラマチックで可愛い返しです。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "I thought you'd never ask!",
+          "meaning": "一生誘ってくれないかと思ってた！",
+          "note": "ずっと気になっていた相手から誘われたときの、少しドラマチックで可愛い返しです。"
+        }
+      ]
     },
-    declining: {
-      title: 'デートをやんわり断る',
-      enTitle: 'Turn down a date · Say no',
-      intro: '相手を傷つけるためではなく、自分の意思を誠実に伝えるための表現です。理由を詳しく説明したくないときも、短く丁寧に返せます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: "That's really kind, but I already have plans.", meaning: 'とても嬉しいですが、すでに予定が入っているんです。', context: '予定を理由にやんわり断る', register: 'polite' },
-        { phrase: "Thanks, but I'm not dating right now.", meaning: 'ありがとう、でも今は誰ともデートしていないんです。', context: '今はデートをしないと伝える', register: 'neutral' },
-        { phrase: "I'm not looking for a relationship, sorry.", meaning: '今は恋人を探していないんです、ごめんなさい。', context: '関係を求めていないと伝える', register: 'polite' },
-        { phrase: 'I just like you as a friend.', meaning: 'あなたのことは友達として好きです。', context: '友達としての気持ちを伝える', register: 'neutral' },
-        { phrase: "Thanks, but I'm actually already seeing someone.", meaning: 'ありがとう、でも実はもう付き合っている人がいるんです。', context: '交際相手がいると伝える', register: 'neutral' },
-        { phrase: "It was lovely to meet you, but I'm not really feeling a connection.", meaning: 'お会いできて嬉しかったですが、あまりフィーリングが合わないみたいです。', context: '会った後に誠実に断る', register: 'polite' },
+    "declining": {
+      "title": "デートをやんわり断る",
+      "enTitle": "Turn down a date · Say no",
+      "intro": "相手を傷つけるためではなく、自分の意思を誠実に伝えるための表現です。理由を詳しく説明したくないときも、短く丁寧に返せます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "That's really kind, but I already have plans.",
+          "meaning": "とても嬉しいですが、すでに予定が入っているんです。",
+          "context": "予定を理由にやんわり断る",
+          "register": "polite"
+        },
+        {
+          "phrase": "Thanks, but I'm not dating right now.",
+          "meaning": "ありがとう、でも今は誰ともデートしていないんです。",
+          "context": "今はデートをしないと伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'm not looking for a relationship, sorry.",
+          "meaning": "今は恋人を探していないんです、ごめんなさい。",
+          "context": "関係を求めていないと伝える",
+          "register": "polite"
+        },
+        {
+          "phrase": "I just like you as a friend.",
+          "meaning": "あなたのことは友達として好きです。",
+          "context": "友達としての気持ちを伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Thanks, but I'm actually already seeing someone.",
+          "meaning": "ありがとう、でも実はもう付き合っている人がいるんです。",
+          "context": "交際相手がいると伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "It was lovely to meet you, but I'm not really feeling a connection.",
+          "meaning": "お会いできて嬉しかったですが、あまりフィーリングが合わないみたいです。",
+          "context": "会った後に誠実に断る",
+          "register": "polite"
+        },
+        {
+          "phrase": "I'd love to take you out tonight.",
+          "meaning": "今夜、あなたをデートに連れて行きたいな。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Another night, maybe?",
+          "meaning": "また別の日にしない？",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: "I'm seeing someone.", meaning: '付き合っている人がいます。', note: '交際中、または真剣にデートを重ねていることを自然に伝える表現です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "I'm seeing someone.",
+          "meaning": "付き合っている人がいます。",
+          "note": "交際中、または真剣にデートを重ねていることを自然に伝える表現です。"
+        }
+      ]
     },
-    firstDate: {
-      title: '初デート中の会話',
-      enTitle: 'On a first date',
-      intro: '待ち合わせのあいさつから、緊張をほぐす言葉、相手を知る質問へと少しずつ進みます。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'Hey! Nice to see you.', meaning: 'やあ！会えて嬉しいよ。', context: '待ち合わせで会う', register: 'casual' },
-        { phrase: 'You, too. You look great.', meaning: 'こちらこそ。すごく素敵だね。', context: '返事と軽い褒め言葉', register: 'casual' },
-        { phrase: 'Thanks, so do you. Shall we get a coffee first?', meaning: 'ありがとう、あなたもね。まずはコーヒーでも買う？', context: '褒め返して次を提案する', register: 'casual' },
-        { phrase: "I can't lie, I'm a bit nervous.", meaning: '嘘はつけないな、ちょっと緊張してるんだ。', context: '緊張を正直に伝える', register: 'neutral' },
-        { phrase: "So am I. I haven't been on a date for ages!", meaning: '私も。デートなんてすごく久しぶり！', context: '共感して安心させる', register: 'casual' },
-        { phrase: 'Have you been on the app a while?', meaning: 'アプリは長くやっているの？', context: '出会いの背景を聞く', register: 'neutral' },
-        { phrase: 'What kind of things are you into?', meaning: 'どんなことに興味があるの？', context: '興味・好みを聞く', register: 'casual' },
-        { phrase: 'Are you looking for something serious?', meaning: '真剣な出会いを探しているの？', context: '関係への希望を確認する', register: 'neutral' },
+    "firstDate": {
+      "title": "初デート中の会話",
+      "enTitle": "On a first date",
+      "intro": "待ち合わせのあいさつから、緊張をほぐす言葉、相手を知る質問へと少しずつ進みます。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "Hey! Nice to see you.",
+          "meaning": "やあ！会えて嬉しいよ。",
+          "context": "待ち合わせで会う",
+          "register": "casual"
+        },
+        {
+          "phrase": "You, too. You look great.",
+          "meaning": "こちらこそ。すごく素敵だね。",
+          "context": "返事と軽い褒め言葉",
+          "register": "casual"
+        },
+        {
+          "phrase": "Thanks, so do you. Shall we get a coffee first?",
+          "meaning": "ありがとう、あなたもね。まずはコーヒーでも買う？",
+          "context": "褒め返して次を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "I can't lie, I'm a bit nervous.",
+          "meaning": "嘘はつけないな、ちょっと緊張してるんだ。",
+          "context": "緊張を正直に伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "So am I. I haven't been on a date for ages!",
+          "meaning": "私も。デートなんてすごく久しぶり！",
+          "context": "共感して安心させる",
+          "register": "casual"
+        },
+        {
+          "phrase": "Have you been on the app a while?",
+          "meaning": "アプリは長くやっているの？",
+          "context": "出会いの背景を聞く",
+          "register": "neutral"
+        },
+        {
+          "phrase": "What kind of things are you into?",
+          "meaning": "どんなことに興味があるの？",
+          "context": "興味・好みを聞く",
+          "register": "casual"
+        },
+        {
+          "phrase": "Are you looking for something serious?",
+          "meaning": "真剣な出会いを探しているの？",
+          "context": "関係への希望を確認する",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'How long have you been single?', meaning: '恋人がいない期間はどのくらい？', note: '相手によっては個人的な質問になるため、場の流れと相手の反応を見て使います。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "How long have you been single?",
+          "meaning": "恋人がいない期間はどのくらい？",
+          "note": "相手によっては個人的な質問になるため、場の流れと相手の反応を見て使います。"
+        }
+      ]
     },
-    ending: {
-      title: 'デートの終わり・次につなげる',
-      enTitle: 'End the date · Meet again',
-      intro: '楽しかった気持ちを伝え、また会いたいかどうかを自分の言葉で返します。帰り道の確認も、相手を気づかう自然な一言です。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'Thanks so much for tonight. I had a really great time.', meaning: '今夜は本当にありがとう。すごく楽しかったよ。', context: 'デートへの感謝を伝える', register: 'neutral' },
-        { phrase: 'Same here. Shall we do it again soon?', meaning: '私もだよ。近いうちにまた会おうか？', context: 'また会う提案をする', register: 'casual' },
-        { phrase: "Yeah, definitely. I'll message you.", meaning: 'うん、絶対に。メッセージするね。', context: '次の連絡を約束する', register: 'casual' },
-        { phrase: "I'd really like to see you again.", meaning: 'ぜひまたお会いしたいです。', context: 'また会いたいと伝える', register: 'polite' },
-        { phrase: 'How are you getting home?', meaning: 'どうやって帰るの？', context: '帰り道を気づかう', register: 'neutral' },
-        { phrase: "I'm just booking a cab.", meaning: 'ちょうどタクシーを呼んでいるところ。', context: '帰り方を答える', register: 'neutral' },
-        { phrase: "I'd better head off. Early start tomorrow!", meaning: 'もう帰らなくちゃ。明日は朝が早いんだ！', context: '自然に切り上げる', register: 'casual' },
+    "ending": {
+      "title": "デートの終わり・次につなげる",
+      "enTitle": "End the date · Meet again",
+      "intro": "楽しかった気持ちを伝え、また会いたいかどうかを自分の言葉で返します。帰り道の確認も、相手を気づかう自然な一言です。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "Thanks so much for tonight. I had a really great time.",
+          "meaning": "今夜は本当にありがとう。すごく楽しかったよ。",
+          "context": "デートへの感謝を伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Same here. Shall we do it again soon?",
+          "meaning": "私もだよ。近いうちにまた会おうか？",
+          "context": "また会う提案をする",
+          "register": "casual"
+        },
+        {
+          "phrase": "Yeah, definitely. I'll message you.",
+          "meaning": "うん、絶対に。メッセージするね。",
+          "context": "次の連絡を約束する",
+          "register": "casual"
+        },
+        {
+          "phrase": "I'd really like to see you again.",
+          "meaning": "ぜひまたお会いしたいです。",
+          "context": "また会いたいと伝える",
+          "register": "polite"
+        },
+        {
+          "phrase": "How are you getting home?",
+          "meaning": "どうやって帰るの？",
+          "context": "帰り道を気づかう",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'm just booking a cab.",
+          "meaning": "ちょうどタクシーを呼んでいるところ。",
+          "context": "帰り方を答える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'd better head off. Early start tomorrow!",
+          "meaning": "もう帰らなくちゃ。明日は朝が早いんだ！",
+          "context": "自然に切り上げる",
+          "register": "casual"
+        }
       ],
-      recognition: [
-        { phrase: 'Same here.', meaning: '私も同じです。／こちらもそうです。', note: '相手の気持ちや感想に自然に同意する短い返しです。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "Same here.",
+          "meaning": "私も同じです。／こちらもそうです。",
+          "note": "相手の気持ちや感想に自然に同意する短い返しです。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'ask-date',
-        label: 'Pattern A · Ask and accept',
-        title: '軽い誘いを、具体的な予定へ',
-        lines: [
-          { speaker: 'A', en: 'Do you fancy going for a coffee next week?', ja: '来週、コーヒーでも飲みに行かない？' },
-          { speaker: 'B', en: "Yeah, I'd like that. Next Friday, maybe?", ja: 'ええ、いいですね。次の金曜日はどう？' },
-        ],
+        "id": "ask-date",
+        "label": "Pattern A · Ask and accept",
+        "title": "軽い誘いを、具体的な予定へ",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Do you fancy going for a coffee next week?",
+            "ja": "来週、コーヒーでも飲みに行かない？"
+          },
+          {
+            "speaker": "B",
+            "en": "Yeah, I'd like that. Next Friday, maybe?",
+            "ja": "ええ、いいですね。次の金曜日はどう？"
+          }
+        ]
       },
       {
-        id: 'first-date',
-        label: 'Pattern B · First date',
-        title: '緊張を共有して、相手を知る',
-        lines: [
-          { speaker: 'A', en: "I can't lie, I'm a bit nervous.", ja: '嘘はつけないな、ちょっと緊張してるんだ。' },
-          { speaker: 'B', en: "So am I. I haven't been on a date for ages!", ja: '私も。デートなんてすごく久しぶり！' },
-        ],
+        "id": "first-date",
+        "label": "Pattern B · First date",
+        "title": "緊張を共有して、相手を知る",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "I can't lie, I'm a bit nervous.",
+            "ja": "嘘はつけないな、ちょっと緊張してるんだ。"
+          },
+          {
+            "speaker": "B",
+            "en": "So am I. I haven't been on a date for ages!",
+            "ja": "私も。デートなんてすごく久しぶり！"
+          }
+        ]
       },
       {
-        id: 'end-date',
-        label: 'Pattern C · End the date',
-        title: '楽しかった気持ちを、次につなげる',
-        lines: [
-          { speaker: 'A', en: 'Thanks so much for tonight. I had a really great time.', ja: '今夜は本当にありがとう。すごく楽しかったよ。' },
-          { speaker: 'B', en: 'Same here. Shall we do it again soon?', ja: '私もだよ。近いうちにまた会おうか？' },
-        ],
+        "id": "end-date",
+        "label": "Pattern C · End the date",
+        "title": "楽しかった気持ちを、次につなげる",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Thanks so much for tonight. I had a really great time.",
+            "ja": "今夜は本当にありがとう。すごく楽しかったよ。"
+          },
+          {
+            "speaker": "B",
+            "en": "Same here. Shall we do it again soon?",
+            "ja": "私もだよ。近いうちにまた会おうか？"
+          }
+        ]
       },
+      {
+        "id": "source-first-date-ending",
+        "label": "Source · 初デートの終わり",
+        "title": "初デートの終わり",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "That was lovely. Do you fancy meeting up again?",
+            "ja": "楽しかったね。また会わない？"
+          },
+          {
+            "speaker": "B",
+            "en": "Maybe, I’ll call you.",
+            "ja": "たぶんね。こちらから電話するよ。"
+          },
+          {
+            "speaker": "A",
+            "en": "Me neither!",
+            "ja": "私も同じ！"
+          },
+          {
+            "speaker": "B",
+            "en": "Thanks for a fun night.",
+            "ja": "楽しい夜をありがとう。"
+          },
+          {
+            "speaker": "A",
+            "en": "It was nice to hang with you.",
+            "ja": "一緒に過ごせてよかったよ。"
+          },
+          {
+            "speaker": "B",
+            "en": "Can I call you?",
+            "ja": "電話してもいい？"
+          }
+        ]
+      }
     ],
-    tip: '“I’m seeing someone” は、英語で「付き合っている人がいる」と自然に伝える表現です。誘いを受けるときも断るときも、相手の意思を尊重しながら、自分の気持ちをはっきり伝えて大丈夫です。',
+    "tip": "“I’m seeing someone” は、英語で「付き合っている人がいる」と自然に伝える表現です。誘いを受けるときも断るときも、相手の意思を尊重しながら、自分の気持ちをはっきり伝えて大丈夫です。"
   },
-  practice: {
-    title: '自分の気持ちを尊重しながら、声を重ねる',
-    instructions: '日本語の説明はここまで。誘う、返事をする、質問する、また会いたいと伝える英語を声に重ねます。',
-    coreHeading: 'まずは、意思が伝わる短いフレーズから。',
-    dialogueHeading: '誘いから次の約束までを練習する。',
-    dialogueDescription: '相手の役を聞いてから、自分の返事を自然な間で重ねます。',
-    finishTitle: '自分の気持ちに合う一文を、無理なく使ってみましょう。',
-    corePhrases: [
-      { phrase: 'Do you fancy going for a coffee next week?', context: '軽く誘う', rate: 0.78 },
-      { phrase: "I'd love to!", context: '喜んで受ける', rate: 0.86 },
-      { phrase: "That's really kind, but I already have plans.", context: 'やんわり断る', rate: 0.78 },
-      { phrase: "I'm not looking for a relationship, sorry.", context: '意思を丁寧に伝える', rate: 0.76 },
-      { phrase: 'You, too. You look great.', context: '初デートの返事', rate: 0.84 },
-      { phrase: "I can't lie, I'm a bit nervous.", context: '緊張を伝える', rate: 0.8 },
-      { phrase: 'What kind of things are you into?', context: '相手を知る', rate: 0.8 },
-      { phrase: "I'd really like to see you again.", context: 'また会いたいと伝える', rate: 0.78 },
-      { phrase: 'How are you getting home?', context: '帰り道を気づかう', rate: 0.84 },
-      { phrase: "I'll message you.", context: '次の連絡を約束する', rate: 0.86 },
+  "practice": {
+    "title": "自分の気持ちを尊重しながら、声を重ねる",
+    "instructions": "日本語の説明はここまで。誘う、返事をする、質問する、また会いたいと伝える英語を声に重ねます。",
+    "coreHeading": "まずは、意思が伝わる短いフレーズから。",
+    "dialogueHeading": "誘いから次の約束までを練習する。",
+    "dialogueDescription": "相手の役を聞いてから、自分の返事を自然な間で重ねます。",
+    "finishTitle": "自分の気持ちに合う一文を、無理なく使ってみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "Do you fancy going for a coffee next week?",
+        "context": "軽く誘う",
+        "rate": 0.78
+      },
+      {
+        "phrase": "I'd love to!",
+        "context": "喜んで受ける",
+        "rate": 0.86
+      },
+      {
+        "phrase": "That's really kind, but I already have plans.",
+        "context": "やんわり断る",
+        "rate": 0.78
+      },
+      {
+        "phrase": "I'm not looking for a relationship, sorry.",
+        "context": "意思を丁寧に伝える",
+        "rate": 0.76
+      },
+      {
+        "phrase": "You, too. You look great.",
+        "context": "初デートの返事",
+        "rate": 0.84
+      },
+      {
+        "phrase": "I can't lie, I'm a bit nervous.",
+        "context": "緊張を伝える",
+        "rate": 0.8
+      },
+      {
+        "phrase": "What kind of things are you into?",
+        "context": "相手を知る",
+        "rate": 0.8
+      },
+      {
+        "phrase": "I'd really like to see you again.",
+        "context": "また会いたいと伝える",
+        "rate": 0.78
+      },
+      {
+        "phrase": "How are you getting home?",
+        "context": "帰り道を気づかう",
+        "rate": 0.84
+      },
+      {
+        "phrase": "I'll message you.",
+        "context": "次の連絡を約束する",
+        "rate": 0.86
+      }
     ],
-    dialogues: [
-      { title: 'Ask and accept', lines: ['Do you fancy going for a coffee next week?', "Yeah, I'd like that. Next Friday, maybe?"] },
-      { title: 'First date', lines: ["I can't lie, I'm a bit nervous.", "So am I. I haven't been on a date for ages!"] },
-      { title: 'End the date', lines: ['Thanks so much for tonight. I had a really great time.', 'Same here. Shall we do it again soon?'] },
+    "dialogues": [
+      {
+        "title": "Ask and accept",
+        "lines": [
+          "Do you fancy going for a coffee next week?",
+          "Yeah, I'd like that. Next Friday, maybe?"
+        ]
+      },
+      {
+        "title": "First date",
+        "lines": [
+          "I can't lie, I'm a bit nervous.",
+          "So am I. I haven't been on a date for ages!"
+        ]
+      },
+      {
+        "title": "End the date",
+        "lines": [
+          "Thanks so much for tonight. I had a really great time.",
+          "Same here. Shall we do it again soon?"
+        ]
+      }
     ],
-    natural: [
-      { full: 'Do you want to go for a coffee next week?', natural: 'Do you fancy going for a coffee next week?' },
-      { full: 'I would really like to see you again.', natural: "I'd really like to see you again." },
-      { full: 'I will message you.', natural: "I'll message you." },
-    ],
-  },
+    "natural": [
+      {
+        "full": "Do you want to go for a coffee next week?",
+        "natural": "Do you fancy going for a coffee next week?"
+      },
+      {
+        "full": "I would really like to see you again.",
+        "natural": "I'd really like to see you again."
+      },
+      {
+        "full": "I will message you.",
+        "natural": "I'll message you."
+      }
+    ]
+  }
 }

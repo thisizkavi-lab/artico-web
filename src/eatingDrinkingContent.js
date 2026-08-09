@@ -1,187 +1,630 @@
 /** Chapter 20 · Eating and drinking. */
 export const eatingDrinkingLesson = {
-  id: 'eating-drinking',
-  kind: 'eating-drinking',
-  number: '20',
-  title: 'なぜ「飲食」の言葉を学ぶのでしょうか？',
-  enTitle: 'Eating and drinking',
-  ja: '飲み物、料理の動作、調理法、外食と食事の制限を伝えます。',
-  cando: 'カフェやレストランで、飲み物、料理、食事の好みや制限について伝えられる。',
-  learn: {
-    intro: [
-      '食べることや飲むことは、毎日の生活の一部です。そのため英語でも、何を食べるのか、どのように料理するのか、何を注文したいのかを伝える場面がたくさんあります。',
-      '食に関する語彙を知っていると、メニューやレシピを理解したり、カフェやレストランで注文したりするときにも役立ちます。また、アレルギーや食事の好み、食べられないものを伝えるためにも大切です。',
-      'この章では、飲み物、料理の動作、キッチン用品、調理法、そして外食で使う基本的な語彙を学びます。単語を眺めるだけでなく、短いフレーズの中で声に出してみましょう。',
+  "id": "eating-drinking",
+  "kind": "eating-drinking",
+  "number": "20",
+  "title": "なぜ「飲食」の言葉を学ぶのでしょうか？",
+  "enTitle": "Eating and drinking",
+  "ja": "飲み物、料理の動作、調理法、外食と食事の制限を伝えます。",
+  "cando": "カフェやレストランで、飲み物、料理、食事の好みや制限について伝えられる。",
+  "learn": {
+    "intro": [
+      "食べることや飲むことは、毎日の生活の一部です。そのため英語でも、何を食べるのか、どのように料理するのか、何を注文したいのかを伝える場面がたくさんあります。",
+      "食に関する語彙を知っていると、メニューやレシピを理解したり、カフェやレストランで注文したりするときにも役立ちます。また、アレルギーや食事の好み、食べられないものを伝えるためにも大切です。",
+      "この章では、飲み物、料理の動作、キッチン用品、調理法、そして外食で使う基本的な語彙を学びます。単語を眺めるだけでなく、短いフレーズの中で声に出してみましょう。"
     ],
-    functions: [
-      ['01', '飲み物を選ぶ'],
-      ['02', '料理の動作を知る'],
-      ['03', '道具を見分ける'],
-      ['04', '調理法を読む'],
-      ['05', '外食で伝える'],
+    "functions": [
+      [
+        "01",
+        "飲み物を選ぶ"
+      ],
+      [
+        "02",
+        "料理の動作を知る"
+      ],
+      [
+        "03",
+        "道具を見分ける"
+      ],
+      [
+        "04",
+        "調理法を読む"
+      ],
+      [
+        "05",
+        "外食で伝える"
+      ]
     ],
-    drinks: {
-      title: '飲み物とミルクの種類',
-      enTitle: 'Coffees, teas, and soft drinks',
-      intro: 'カフェで飲み物を選ぶときは、飲み物の種類とミルクの種類を組み合わせて伝えます。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'black coffee', meaning: 'ブラックコーヒー', context: 'ミルクなしのコーヒー', register: 'neutral' },
-        { phrase: 'white coffee', meaning: 'ミルク入りコーヒー', context: 'イギリス英語での呼び方', register: 'neutral' },
-        { phrase: 'herbal tea', meaning: 'ハーブティー', context: 'お茶を選ぶ', register: 'neutral' },
-        { phrase: 'sparkling water', meaning: '炭酸水', context: '水を選ぶ', register: 'neutral' },
-        { phrase: 'mineral water', meaning: 'ミネラルウォーター', context: '水を選ぶ', register: 'neutral' },
-        { phrase: 'reusable cup', meaning: '繰り返し使えるカップ／マイボトル', context: '持ち帰りのカップ', register: 'neutral' },
-        { phrase: 'whole milk', meaning: '成分無調整牛乳／普通の牛乳', context: 'ミルクを選ぶ', register: 'neutral' },
-        { phrase: 'skimmed milk', meaning: '無脂肪乳', context: 'ミルクを選ぶ', register: 'neutral' },
-        { phrase: 'soya milk', meaning: '豆乳', context: 'ミルクを選ぶ', register: 'neutral' },
-        { phrase: 'oat milk / almond milk', meaning: 'オーツミルク／アーモンドミルク', context: '植物性ミルク', register: 'neutral' },
+    "drinks": {
+      "title": "飲み物とミルクの種類",
+      "enTitle": "Coffees, teas, and soft drinks",
+      "intro": "カフェで飲み物を選ぶときは、飲み物の種類とミルクの種類を組み合わせて伝えます。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "black coffee",
+          "meaning": "ブラックコーヒー",
+          "context": "ミルクなしのコーヒー",
+          "register": "neutral"
+        },
+        {
+          "phrase": "white coffee",
+          "meaning": "ミルク入りコーヒー",
+          "context": "イギリス英語での呼び方",
+          "register": "neutral"
+        },
+        {
+          "phrase": "herbal tea",
+          "meaning": "ハーブティー",
+          "context": "お茶を選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "sparkling water",
+          "meaning": "炭酸水",
+          "context": "水を選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "mineral water",
+          "meaning": "ミネラルウォーター",
+          "context": "水を選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "reusable cup",
+          "meaning": "繰り返し使えるカップ／マイボトル",
+          "context": "持ち帰りのカップ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "whole milk",
+          "meaning": "成分無調整牛乳／普通の牛乳",
+          "context": "ミルクを選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "skimmed milk",
+          "meaning": "無脂肪乳",
+          "context": "ミルクを選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "soya milk",
+          "meaning": "豆乳",
+          "context": "ミルクを選ぶ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "oat milk / almond milk",
+          "meaning": "オーツミルク／アーモンドミルク",
+          "context": "植物性ミルク",
+          "register": "neutral"
+        },
+        {
+          "phrase": "espresso",
+          "meaning": "エスプレッソ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cappuccino",
+          "meaning": "カプチーノ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "latte",
+          "meaning": "ラテ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "iced coffee",
+          "meaning": "アイスコーヒー",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "tea",
+          "meaning": "紅茶",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "iced tea",
+          "meaning": "アイスティー",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "hot chocolate",
+          "meaning": "ホットチョコレート",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "milkshake",
+          "meaning": "ミルクシェイク",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "orange juice",
+          "meaning": "オレンジジュース",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cola",
+          "meaning": "コーラ",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "sugar",
+          "meaning": "砂糖",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'white coffee', meaning: 'ミルク入りコーヒー', note: '日本の「ホワイトコーヒー」と同じとは限らず、甘いという意味でもありません。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "white coffee",
+          "meaning": "ミルク入りコーヒー",
+          "note": "日本の「ホワイトコーヒー」と同じとは限らず、甘いという意味でもありません。"
+        }
+      ]
     },
-    verbs: {
-      title: '料理の動作を表す動詞',
-      enTitle: 'Kitchen verbs',
-      intro: 'レシピや料理番組では、食材をどう動かすかを表す動詞が繰り返し登場します。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'to peel', meaning: '皮をむく', context: '食材を下ごしらえする', register: 'neutral' },
-        { phrase: 'to chop', meaning: '細かく刻む／ぶつ切りにする', context: '食材を切る', register: 'neutral' },
-        { phrase: 'to slice', meaning: '薄切りにする', context: '食材を切る', register: 'neutral' },
-        { phrase: 'to grate', meaning: 'すりおろす', context: 'チーズや野菜をおろす', register: 'neutral' },
-        { phrase: 'to pour', meaning: '注ぐ', context: '液体を移す', register: 'neutral' },
-        { phrase: 'to stir', meaning: 'かき混ぜる', context: 'スープや飲み物を混ぜる', register: 'neutral' },
-        { phrase: 'to whisk', meaning: '泡立てる', context: '卵やクリームを混ぜる', register: 'neutral' },
-        { phrase: 'to mix', meaning: '混ぜ合わせる', context: '材料を合わせる', register: 'neutral' },
-        { phrase: 'to weigh', meaning: '重さを量る', context: '材料の量を確認する', register: 'neutral' },
-        { phrase: 'to roll out', meaning: '生地などを伸ばす', context: '生地を平らにする', register: 'neutral' },
+    "verbs": {
+      "title": "料理の動作を表す動詞",
+      "enTitle": "Kitchen verbs",
+      "intro": "レシピや料理番組では、食材をどう動かすかを表す動詞が繰り返し登場します。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "to peel",
+          "meaning": "皮をむく",
+          "context": "食材を下ごしらえする",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to chop",
+          "meaning": "細かく刻む／ぶつ切りにする",
+          "context": "食材を切る",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to slice",
+          "meaning": "薄切りにする",
+          "context": "食材を切る",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to grate",
+          "meaning": "すりおろす",
+          "context": "チーズや野菜をおろす",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to pour",
+          "meaning": "注ぐ",
+          "context": "液体を移す",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to stir",
+          "meaning": "かき混ぜる",
+          "context": "スープや飲み物を混ぜる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to whisk",
+          "meaning": "泡立てる",
+          "context": "卵やクリームを混ぜる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to mix",
+          "meaning": "混ぜ合わせる",
+          "context": "材料を合わせる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to weigh",
+          "meaning": "重さを量る",
+          "context": "材料の量を確認する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to roll out",
+          "meaning": "生地などを伸ばす",
+          "context": "生地を平らにする",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to burn",
+          "meaning": "焦がす／焼けすぎる",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'roll out', meaning: '（生地などを）伸ばす', note: 'roll は「転がす」ですが、料理ではめん棒などで生地を伸ばす意味になります。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "roll out",
+          "meaning": "（生地などを）伸ばす",
+          "note": "roll は「転がす」ですが、料理ではめん棒などで生地を伸ばす意味になります。"
+        }
+      ]
     },
-    equipment: {
-      title: 'キッチンの道具',
-      enTitle: 'Kitchen equipment',
-      intro: '日本語のカタカナと少し違う道具名もあります。見たものを英語で呼べるようにします。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'saucepan', meaning: '小鍋／片手鍋', context: '鍋を見分ける', register: 'neutral' },
-        { phrase: 'frying pan', meaning: 'フライパン', context: '焼く・炒める道具', register: 'neutral' },
-        { phrase: 'colander', meaning: '水切りボウル／ざる', context: '水を切る道具', register: 'neutral' },
-        { phrase: 'measuring jug', meaning: '計量カップ', context: '液体を量る道具', register: 'neutral' },
-        { phrase: 'scales', meaning: 'はかり／スケール', context: '重さを量る道具', register: 'neutral' },
-        { phrase: 'grater', meaning: 'おろし金', context: '食材をすりおろす道具', register: 'neutral' },
-        { phrase: 'microwave', meaning: '電子レンジ', context: '温める家電', register: 'neutral' },
+    "equipment": {
+      "title": "キッチンの道具",
+      "enTitle": "Kitchen equipment",
+      "intro": "日本語のカタカナと少し違う道具名もあります。見たものを英語で呼べるようにします。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "saucepan",
+          "meaning": "小鍋／片手鍋",
+          "context": "鍋を見分ける",
+          "register": "neutral"
+        },
+        {
+          "phrase": "frying pan",
+          "meaning": "フライパン",
+          "context": "焼く・炒める道具",
+          "register": "neutral"
+        },
+        {
+          "phrase": "colander",
+          "meaning": "水切りボウル／ざる",
+          "context": "水を切る道具",
+          "register": "neutral"
+        },
+        {
+          "phrase": "measuring jug",
+          "meaning": "計量カップ",
+          "context": "液体を量る道具",
+          "register": "neutral"
+        },
+        {
+          "phrase": "scales",
+          "meaning": "はかり／スケール",
+          "context": "重さを量る道具",
+          "register": "neutral"
+        },
+        {
+          "phrase": "grater",
+          "meaning": "おろし金",
+          "context": "食材をすりおろす道具",
+          "register": "neutral"
+        },
+        {
+          "phrase": "microwave",
+          "meaning": "電子レンジ",
+          "context": "温める家電",
+          "register": "neutral"
+        },
+        {
+          "phrase": "toaster",
+          "meaning": "トースター",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'microwave', meaning: '電子レンジ', note: '英語では electronic range とは言わず、microwave と呼びます。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "microwave",
+          "meaning": "電子レンジ",
+          "note": "英語では electronic range とは言わず、microwave と呼びます。"
+        }
+      ]
     },
-    preparation: {
-      title: '調理法',
-      enTitle: 'Food preparation',
-      intro: 'メニューでは、料理がどのように調理されたかを表す言葉を見ます。動作ではなく、完成した料理の特徴として覚えます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'fried', meaning: '焼いた／炒めた', context: '油やフライパンで調理', register: 'neutral' },
-        { phrase: 'stir-fried', meaning: '炒めた', context: '混ぜながら炒める', register: 'neutral' },
-        { phrase: 'deep-fried', meaning: 'たっぷりの油で揚げた', context: '油で揚げる', register: 'neutral' },
-        { phrase: 'boiled', meaning: 'ゆでた', context: '湯で加熱する', register: 'neutral' },
-        { phrase: 'poached', meaning: '落としゆでにした', context: 'ポーチドエッグなど', register: 'neutral' },
-        { phrase: 'stewed', meaning: 'とろ火で煮込んだ', context: '時間をかけて煮る', register: 'neutral' },
-        { phrase: 'roasted', meaning: 'ローストした／オーブンで焼いた', context: '肉や野菜など', register: 'neutral' },
-        { phrase: 'baked', meaning: '焼いた', context: 'パンやお菓子など', register: 'neutral' },
-        { phrase: 'grilled', meaning: '網焼きした／直火焼きした', context: '直火やグリルで焼く', register: 'neutral' },
-        { phrase: 'steamed / smoked', meaning: '蒸した／燻製にした', context: '調理法を読む', register: 'neutral' },
+    "preparation": {
+      "title": "調理法",
+      "enTitle": "Food preparation",
+      "intro": "メニューでは、料理がどのように調理されたかを表す言葉を見ます。動作ではなく、完成した料理の特徴として覚えます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "fried",
+          "meaning": "焼いた／炒めた",
+          "context": "油やフライパンで調理",
+          "register": "neutral"
+        },
+        {
+          "phrase": "stir-fried",
+          "meaning": "炒めた",
+          "context": "混ぜながら炒める",
+          "register": "neutral"
+        },
+        {
+          "phrase": "deep-fried",
+          "meaning": "たっぷりの油で揚げた",
+          "context": "油で揚げる",
+          "register": "neutral"
+        },
+        {
+          "phrase": "boiled",
+          "meaning": "ゆでた",
+          "context": "湯で加熱する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "poached",
+          "meaning": "落としゆでにした",
+          "context": "ポーチドエッグなど",
+          "register": "neutral"
+        },
+        {
+          "phrase": "stewed",
+          "meaning": "とろ火で煮込んだ",
+          "context": "時間をかけて煮る",
+          "register": "neutral"
+        },
+        {
+          "phrase": "roasted",
+          "meaning": "ローストした／オーブンで焼いた",
+          "context": "肉や野菜など",
+          "register": "neutral"
+        },
+        {
+          "phrase": "baked",
+          "meaning": "焼いた",
+          "context": "パンやお菓子など",
+          "register": "neutral"
+        },
+        {
+          "phrase": "grilled",
+          "meaning": "網焼きした／直火焼きした",
+          "context": "直火やグリルで焼く",
+          "register": "neutral"
+        },
+        {
+          "phrase": "steamed / smoked",
+          "meaning": "蒸した／燻製にした",
+          "context": "調理法を読む",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'poached', meaning: '落としゆでにした', note: 'poached egg は「ポーチドエッグ」、つまり湯の中でゆでた卵です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "poached",
+          "meaning": "落としゆでにした",
+          "note": "poached egg は「ポーチドエッグ」、つまり湯の中でゆでた卵です。"
+        }
+      ]
     },
-    eatingOut: {
-      title: '外食時の用語と食のルール',
-      enTitle: 'Eating out',
-      intro: '予約、注文、お会計の流れと、食べられないものや食事のスタイルを伝える言葉です。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: 'to book a table', meaning: '席を予約する', context: 'レストランを予約する', register: 'neutral' },
-        { phrase: 'starter', meaning: '前菜', context: 'コースの最初の料理', register: 'neutral' },
-        { phrase: 'main course', meaning: 'メインディッシュ', context: '中心となる料理', register: 'neutral' },
-        { phrase: 'side order', meaning: 'サイドメニュー', context: '料理に添える一品', register: 'neutral' },
-        { phrase: 'dessert / pudding', meaning: 'デザート', context: '食後の料理', register: 'neutral' },
-        { phrase: 'to order', meaning: '注文する', context: '料理や飲み物を頼む', register: 'neutral' },
-        { phrase: 'bill', meaning: 'お会計／請求書', context: '食事代を確認する', register: 'neutral' },
-        { phrase: 'to split the bill', meaning: '割り勘にする', context: '会計を分ける', register: 'neutral' },
-        { phrase: 'vegetarian / vegan', meaning: 'ベジタリアン／ヴィーガン', context: '食事のスタイル', register: 'neutral' },
-        { phrase: 'gluten-free / dairy-free', meaning: 'グルテンフリー／乳製品不使用', context: '食事の制限を伝える', register: 'neutral' },
+    "eatingOut": {
+      "title": "外食時の用語と食のルール",
+      "enTitle": "Eating out",
+      "intro": "予約、注文、お会計の流れと、食べられないものや食事のスタイルを伝える言葉です。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "to book a table",
+          "meaning": "席を予約する",
+          "context": "レストランを予約する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "starter",
+          "meaning": "前菜",
+          "context": "コースの最初の料理",
+          "register": "neutral"
+        },
+        {
+          "phrase": "main course",
+          "meaning": "メインディッシュ",
+          "context": "中心となる料理",
+          "register": "neutral"
+        },
+        {
+          "phrase": "side order",
+          "meaning": "サイドメニュー",
+          "context": "料理に添える一品",
+          "register": "neutral"
+        },
+        {
+          "phrase": "dessert / pudding",
+          "meaning": "デザート",
+          "context": "食後の料理",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to order",
+          "meaning": "注文する",
+          "context": "料理や飲み物を頼む",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bill",
+          "meaning": "お会計／請求書",
+          "context": "食事代を確認する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "to split the bill",
+          "meaning": "割り勘にする",
+          "context": "会計を分ける",
+          "register": "neutral"
+        },
+        {
+          "phrase": "vegetarian / vegan",
+          "meaning": "ベジタリアン／ヴィーガン",
+          "context": "食事のスタイル",
+          "register": "neutral"
+        },
+        {
+          "phrase": "gluten-free / dairy-free",
+          "meaning": "グルテンフリー／乳製品不使用",
+          "context": "食事の制限を伝える",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'pudding', meaning: 'デザート全般', note: 'イギリス英語では、カスタードプリンに限らず食後のデザート全般を指すことがあります。' },
-        { phrase: 'split the bill', meaning: '割り勘にする', note: 'split は「分ける」、bill は「お会計」。レストランで役立つ定番表現です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "pudding",
+          "meaning": "デザート全般",
+          "note": "イギリス英語では、カスタードプリンに限らず食後のデザート全般を指すことがあります。"
+        },
+        {
+          "phrase": "split the bill",
+          "meaning": "割り勘にする",
+          "note": "split は「分ける」、bill は「お会計」。レストランで役立つ定番表現です。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'cafe-order',
-        label: 'Pattern A · At a café',
-        title: '飲み物とミルクを選ぶ',
-        lines: [
-          { speaker: 'A', en: 'Could I have a white coffee with oat milk, please?', ja: 'オーツミルク入りのホワイトコーヒーをいただけますか？' },
-          { speaker: 'B', en: 'Of course. Would you like a reusable cup?', ja: 'もちろんです。リユースカップはいかがですか？' },
-        ],
+        "id": "cafe-order",
+        "label": "Pattern A · At a café",
+        "title": "飲み物とミルクを選ぶ",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Could I have a white coffee with oat milk, please?",
+            "ja": "オーツミルク入りのホワイトコーヒーをいただけますか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Of course. Would you like a reusable cup?",
+            "ja": "もちろんです。リユースカップはいかがですか？"
+          }
+        ]
       },
       {
-        id: 'restaurant-order',
-        label: 'Pattern B · At a restaurant',
-        title: '予約して注文する',
-        lines: [
-          { speaker: 'A', en: 'Can we book a table for two?', ja: '2人分の席を予約できますか？' },
-          { speaker: 'B', en: 'Certainly. Would you like a starter?', ja: 'もちろんです。前菜はいかがですか？' },
-        ],
+        "id": "restaurant-order",
+        "label": "Pattern B · At a restaurant",
+        "title": "予約して注文する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Can we book a table for two?",
+            "ja": "2人分の席を予約できますか？"
+          },
+          {
+            "speaker": "B",
+            "en": "Certainly. Would you like a starter?",
+            "ja": "もちろんです。前菜はいかがですか？"
+          }
+        ]
       },
       {
-        id: 'dietary-needs',
-        label: 'Pattern C · Dietary needs',
-        title: '食事の制限を伝える',
-        lines: [
-          { speaker: 'A', en: 'Is this dish gluten-free?', ja: 'この料理はグルテンフリーですか？' },
-          { speaker: 'B', en: "I'll check with the kitchen.", ja: 'キッチンに確認します。' },
-        ],
-      },
+        "id": "dietary-needs",
+        "label": "Pattern C · Dietary needs",
+        "title": "食事の制限を伝える",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Is this dish gluten-free?",
+            "ja": "この料理はグルテンフリーですか？"
+          },
+          {
+            "speaker": "B",
+            "en": "I'll check with the kitchen.",
+            "ja": "キッチンに確認します。"
+          }
+        ]
+      }
     ],
-    tip: 'White coffee はイギリス英語で「ミルク入りのコーヒー」を指し、必ずしも甘いという意味ではありません。Pudding はデザート全般、split the bill は割り勘です。',
+    "tip": "White coffee はイギリス英語で「ミルク入りのコーヒー」を指し、必ずしも甘いという意味ではありません。Pudding はデザート全般、split the bill は割り勘です。"
   },
-  practice: {
-    title: '飲食の言葉を、注文と会話で使う',
-    instructions: '日本語の説明はここまで。飲み物を選び、料理を説明し、食事の制限を伝える英語を声に重ねます。',
-    coreHeading: 'まずは、外食でそのまま使える短いフレーズから。',
-    dialogueHeading: '注文から食事の確認までを練習する。',
-    dialogueDescription: 'カフェ、レストラン、食事の制限の3場面を英語だけで声に重ねます。',
-    finishTitle: '次にメニューを見たら、調理法を一つ英語で読んでみましょう。',
-    corePhrases: [
-      { phrase: 'Could I have a white coffee with oat milk, please?', context: 'カフェで注文する', rate: 0.76 },
-      { phrase: 'Sparkling water, please.', context: '飲み物を選ぶ', rate: 0.86 },
-      { phrase: 'Can we book a table for two?', context: '席を予約する', rate: 0.8 },
-      { phrase: 'Could we have the bill, please?', context: 'お会計を頼む', rate: 0.8 },
-      { phrase: 'Can we split the bill?', context: '割り勘を提案する', rate: 0.82 },
-      { phrase: 'Is this dish gluten-free?', context: '食事の制限を確認する', rate: 0.8 },
-      { phrase: "I'm vegetarian.", context: '食事のスタイルを伝える', rate: 0.86 },
-      { phrase: 'Could you chop the vegetables?', context: '料理の動作を頼む', rate: 0.8 },
-      { phrase: 'The vegetables are steamed.', context: '調理法を説明する', rate: 0.82 },
-      { phrase: 'Would you like a dessert?', context: 'デザートをすすめる', rate: 0.82 },
+  "practice": {
+    "title": "飲食の言葉を、注文と会話で使う",
+    "instructions": "日本語の説明はここまで。飲み物を選び、料理を説明し、食事の制限を伝える英語を声に重ねます。",
+    "coreHeading": "まずは、外食でそのまま使える短いフレーズから。",
+    "dialogueHeading": "注文から食事の確認までを練習する。",
+    "dialogueDescription": "カフェ、レストラン、食事の制限の3場面を英語だけで声に重ねます。",
+    "finishTitle": "次にメニューを見たら、調理法を一つ英語で読んでみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "Could I have a white coffee with oat milk, please?",
+        "context": "カフェで注文する",
+        "rate": 0.76
+      },
+      {
+        "phrase": "Sparkling water, please.",
+        "context": "飲み物を選ぶ",
+        "rate": 0.86
+      },
+      {
+        "phrase": "Can we book a table for two?",
+        "context": "席を予約する",
+        "rate": 0.8
+      },
+      {
+        "phrase": "Could we have the bill, please?",
+        "context": "お会計を頼む",
+        "rate": 0.8
+      },
+      {
+        "phrase": "Can we split the bill?",
+        "context": "割り勘を提案する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Is this dish gluten-free?",
+        "context": "食事の制限を確認する",
+        "rate": 0.8
+      },
+      {
+        "phrase": "I'm vegetarian.",
+        "context": "食事のスタイルを伝える",
+        "rate": 0.86
+      },
+      {
+        "phrase": "Could you chop the vegetables?",
+        "context": "料理の動作を頼む",
+        "rate": 0.8
+      },
+      {
+        "phrase": "The vegetables are steamed.",
+        "context": "調理法を説明する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Would you like a dessert?",
+        "context": "デザートをすすめる",
+        "rate": 0.82
+      }
     ],
-    dialogues: [
-      { title: 'At a café', lines: ['Could I have a white coffee with oat milk, please?', 'Of course. Would you like a reusable cup?'] },
-      { title: 'At a restaurant', lines: ['Can we book a table for two?', 'Certainly. Would you like a starter?'] },
-      { title: 'Dietary needs', lines: ['Is this dish gluten-free?', "I'll check with the kitchen."] },
+    "dialogues": [
+      {
+        "title": "At a café",
+        "lines": [
+          "Could I have a white coffee with oat milk, please?",
+          "Of course. Would you like a reusable cup?"
+        ]
+      },
+      {
+        "title": "At a restaurant",
+        "lines": [
+          "Can we book a table for two?",
+          "Certainly. Would you like a starter?"
+        ]
+      },
+      {
+        "title": "Dietary needs",
+        "lines": [
+          "Is this dish gluten-free?",
+          "I'll check with the kitchen."
+        ]
+      }
     ],
-    natural: [
-      { full: 'Could I have a coffee with oat milk, please?', natural: "Could I have a coffee with oat milk, please?" },
-      { full: 'Would you like to have a dessert?', natural: 'Would you like a dessert?' },
-      { full: 'Can we divide the bill?', natural: 'Can we split the bill?' },
-    ],
-  },
+    "natural": [
+      {
+        "full": "Could I have a coffee with oat milk, please?",
+        "natural": "Could I have a coffee with oat milk, please?"
+      },
+      {
+        "full": "Would you like to have a dessert?",
+        "natural": "Would you like a dessert?"
+      },
+      {
+        "full": "Can we divide the bill?",
+        "natural": "Can we split the bill?"
+      }
+    ]
+  }
 }

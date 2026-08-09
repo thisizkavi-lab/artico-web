@@ -1,177 +1,601 @@
 /** Chapter 43 · Money and finance. */
 export const financeLesson = {
-  id: 'money-finance',
-  kind: 'money-finance',
-  number: '43',
-  title: '第43章に入る前に：なぜ「お金と金融」の英語を学ぶのでしょうか？',
-  enTitle: 'Money and finance',
-  ja: '銀行の手続き、外貨両替、カードのトラブル、支払いを説明する英語を学びます。',
-  cando: '口座、現金、カード、外貨、送金について、安全に確認し、支払い方法を伝えられる。',
-  learn: {
-    intro: [
-      'お金は、銀行口座を開いたり、現金を引き出したり、送金したり、外貨を両替したりする日常のさまざまな場面に関わっています。',
-      'カードをなくしたり、ATMでトラブルが起きたりすることもあります。お金に関するやり取りでは、特に正確に、明確に、そして安全に伝えることが大切です。',
-      'この章では、銀行での基本的な手続き、外貨両替、カードのトラブル、そしてさまざまな支払い方法を学びます。',
+  "id": "money-finance",
+  "kind": "money-finance",
+  "number": "43",
+  "title": "第43章に入る前に：なぜ「お金と金融」の英語を学ぶのでしょうか？",
+  "enTitle": "Money and finance",
+  "ja": "銀行の手続き、外貨両替、カードのトラブル、支払いを説明する英語を学びます。",
+  "cando": "口座、現金、カード、外貨、送金について、安全に確認し、支払い方法を伝えられる。",
+  "learn": {
+    "intro": [
+      "お金は、銀行口座を開いたり、現金を引き出したり、送金したり、外貨を両替したりする日常のさまざまな場面に関わっています。",
+      "カードをなくしたり、ATMでトラブルが起きたりすることもあります。お金に関するやり取りでは、特に正確に、明確に、そして安全に伝えることが大切です。",
+      "この章では、銀行での基本的な手続き、外貨両替、カードのトラブル、そしてさまざまな支払い方法を学びます。"
     ],
-    functions: [
-      ['01', '口座を開く・入出金する'],
-      ['02', '外貨とカードを確認する'],
-      ['03', '支払い方法を伝える'],
-      ['04', '割り勘と送金を相談する'],
+    "functions": [
+      [
+        "01",
+        "口座を開く・入出金する"
+      ],
+      [
+        "02",
+        "外貨とカードを確認する"
+      ],
+      [
+        "03",
+        "支払い方法を伝える"
+      ],
+      [
+        "04",
+        "割り勘と送金を相談する"
+      ]
     ],
-    bank: {
-      title: '銀行での手続きと用語',
-      enTitle: 'Opening an account · Withdrawals',
-      intro: '口座を開く、アプリへアクセスする、入金や引き出しをする流れを確認します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: "I'd like to open a bank account, please.", meaning: '銀行口座を開設したいのですが。', context: '口座を開く', register: 'polite' },
-        { phrase: 'Great. Have you brought some ID?', meaning: '身分証明書はお持ちですか？', context: 'IDを確認する', register: 'polite' },
-        { phrase: 'How can I access my new account online?', meaning: '新しい口座にオンラインでアクセスするにはどうすればいいですか？', context: 'オンラインアクセスを尋ねる', register: 'polite' },
-        { phrase: 'Via our website or you can download the banking app.', meaning: 'ウェブサイト経由か、銀行アプリをダウンロードして利用できます。', context: 'アクセス方法を説明する', register: 'neutral' },
-        { phrase: 'How do I pay money into my savings account?', meaning: '預金口座にはどうやって入金するのですか？', context: '入金方法を尋ねる', register: 'polite' },
-        { phrase: 'You can use the self-service machine.', meaning: 'セルフサービスの機械をご利用いただけます。', context: '機械を案内する', register: 'neutral' },
-        { phrase: "I'd like to withdraw £300 in cash.", meaning: '現金で300ポンドを引き出したいのですが。', context: '現金を引き出す', register: 'polite' },
+    "bank": {
+      "title": "銀行での手続きと用語",
+      "enTitle": "Opening an account · Withdrawals",
+      "intro": "口座を開く、アプリへアクセスする、入金や引き出しをする流れを確認します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "I'd like to open a bank account, please.",
+          "meaning": "銀行口座を開設したいのですが。",
+          "context": "口座を開く",
+          "register": "polite"
+        },
+        {
+          "phrase": "Great. Have you brought some ID?",
+          "meaning": "身分証明書はお持ちですか？",
+          "context": "IDを確認する",
+          "register": "polite"
+        },
+        {
+          "phrase": "How can I access my new account online?",
+          "meaning": "新しい口座にオンラインでアクセスするにはどうすればいいですか？",
+          "context": "オンラインアクセスを尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "Via our website or you can download the banking app.",
+          "meaning": "ウェブサイト経由か、銀行アプリをダウンロードして利用できます。",
+          "context": "アクセス方法を説明する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "How do I pay money into my savings account?",
+          "meaning": "預金口座にはどうやって入金するのですか？",
+          "context": "入金方法を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "You can use the self-service machine.",
+          "meaning": "セルフサービスの機械をご利用いただけます。",
+          "context": "機械を案内する",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'd like to withdraw £300 in cash.",
+          "meaning": "現金で300ポンドを引き出したいのですが。",
+          "context": "現金を引き出す",
+          "register": "polite"
+        },
+        {
+          "phrase": "Good morning, how can I help?",
+          "meaning": "おはようございます。どのようなご用件でしょうか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Yes, I’ve got my passport.",
+          "meaning": "はい、パスポートを持っています。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "What can I do for you today?",
+          "meaning": "今日はどのようなご用件でしょうか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'd like to withdraw £300 in cash. Here's my debit card.",
+          "meaning": "現金で300ポンド引き出したいです。こちらがデビットカードです。",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'pay money into', meaning: '口座に入金する', note: '預金口座へお金を入れるときの表現です。' },
-        { phrase: 'withdraw money', meaning: 'お金を引き出す', note: '銀行窓口や cash machine で使います。' },
-        { phrase: 'bank statement', meaning: '銀行の取引明細書', note: '口座の入出金記録を表します。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "pay money into",
+          "meaning": "口座に入金する",
+          "note": "預金口座へお金を入れるときの表現です。"
+        },
+        {
+          "phrase": "withdraw money",
+          "meaning": "お金を引き出す",
+          "note": "銀行窓口や cash machine で使います。"
+        },
+        {
+          "phrase": "bank statement",
+          "meaning": "銀行の取引明細書",
+          "note": "口座の入出金記録を表します。"
+        }
+      ]
     },
-    currency: {
-      title: '外貨両替とカードのトラブル',
-      enTitle: 'Ordering currency · Card problems',
-      intro: '旅行用の外貨を受け取り、カード紛失や ATM のトラブルを安全に伝えます。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: "I've come to pick up the dollars I ordered online.", meaning: 'ネットで注文したドルを受け取りに来ました。', context: '外貨を受け取る', register: 'neutral' },
-        { phrase: 'Would you prefer small or large notes?', meaning: '少額紙幣と高額紙幣、どちらになさいますか？', context: '紙幣の種類を尋ねる', register: 'polite' },
-        { phrase: 'A mix of both will be fine.', meaning: '両方を混ぜたもので大丈夫です。', context: '紙幣の希望を答える', register: 'casual' },
-        { phrase: 'Hello there. Can I help?', meaning: 'こんにちは。何かお手伝いしましょうか？', context: 'トラブルを尋ねる', register: 'polite' },
-        { phrase: 'I hope so... The cash machine has just swallowed my card!', meaning: 'そう願いたいです…ATMがカードを飲み込んでしまったんです！', context: 'ATMのトラブルを伝える', register: 'neutral' },
-        { phrase: "I've lost my wallet and bank cards. Could you cancel them for me?", meaning: '財布とキャッシュカードをなくしました。利用を停止してもらえますか？', context: 'カード紛失を伝える', register: 'polite' },
-        { phrase: 'The exchange rate is not very good today.', meaning: '今日は両替レートがあまりよくありません。', context: 'レートについて話す', register: 'neutral' },
+    "currency": {
+      "title": "外貨両替とカードのトラブル",
+      "enTitle": "Ordering currency · Card problems",
+      "intro": "旅行用の外貨を受け取り、カード紛失や ATM のトラブルを安全に伝えます。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "I've come to pick up the dollars I ordered online.",
+          "meaning": "ネットで注文したドルを受け取りに来ました。",
+          "context": "外貨を受け取る",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Would you prefer small or large notes?",
+          "meaning": "少額紙幣と高額紙幣、どちらになさいますか？",
+          "context": "紙幣の種類を尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "A mix of both will be fine.",
+          "meaning": "両方を混ぜたもので大丈夫です。",
+          "context": "紙幣の希望を答える",
+          "register": "casual"
+        },
+        {
+          "phrase": "Hello there. Can I help?",
+          "meaning": "こんにちは。何かお手伝いしましょうか？",
+          "context": "トラブルを尋ねる",
+          "register": "polite"
+        },
+        {
+          "phrase": "I hope so... The cash machine has just swallowed my card!",
+          "meaning": "そう願いたいです…ATMがカードを飲み込んでしまったんです！",
+          "context": "ATMのトラブルを伝える",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I've lost my wallet and bank cards. Could you cancel them for me?",
+          "meaning": "財布とキャッシュカードをなくしました。利用を停止してもらえますか？",
+          "context": "カード紛失を伝える",
+          "register": "polite"
+        },
+        {
+          "phrase": "The exchange rate is not very good today.",
+          "meaning": "今日は両替レートがあまりよくありません。",
+          "context": "レートについて話す",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I've just ordered our holiday money!",
+          "meaning": "旅行用のお金を注文したばかりです！",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Great. Did you get a good exchange rate?",
+          "meaning": "よかった。よい両替レートだった？",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "No problem, we’ll sort it out for you.",
+          "meaning": "問題ありません。こちらで対応します。",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Of course. I just need to confirm your details first.",
+          "meaning": "もちろんです。まず詳細を確認させてください。",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'small or large notes', meaning: '少額紙幣か高額紙幣か', note: 'イギリス英語では紙幣を notes と呼びます。' },
-        { phrase: 'cash machine', meaning: 'ATM', note: 'イギリス英語でよく使う呼び方です。' },
-        { phrase: 'swallow my card', meaning: 'カードを飲み込む', note: 'ATMからカードが出てこないときの表現です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "small or large notes",
+          "meaning": "少額紙幣か高額紙幣か",
+          "note": "イギリス英語では紙幣を notes と呼びます。"
+        },
+        {
+          "phrase": "cash machine",
+          "meaning": "ATM",
+          "note": "イギリス英語でよく使う呼び方です。"
+        },
+        {
+          "phrase": "swallow my card",
+          "meaning": "カードを飲み込む",
+          "note": "ATMからカードが出てこないときの表現です。"
+        }
+      ]
     },
-    payments: {
-      title: '支払いと割り勘の方法',
-      enTitle: 'Ways to pay',
-      intro: '現金、カード、チップ、割り勘、立て替えた分の送金について話します。',
-      image: '/assets/illustrations/greeting-casual-chat.svg',
-      phrases: [
-        { phrase: "I'll pay in cash.", meaning: '現金で払います。', context: '現金で支払う', register: 'neutral' },
-        { phrase: "I'll pay by card.", meaning: 'カードで払います。', context: 'カードで支払う', register: 'neutral' },
-        { phrase: "I'll put this on my credit card.", meaning: 'これは私のクレジットカードで払います。', context: 'クレジットカードで払う', register: 'neutral' },
-        { phrase: "Let's add a £5 tip.", meaning: '5ポンドのチップを足そう。', context: 'チップを加える', register: 'casual' },
-        { phrase: 'Shall we split it three ways?', meaning: '3等分に割り勘にしようか？', context: '割り勘を提案する', register: 'casual' },
-        { phrase: "I'll get this. You can transfer your share later.", meaning: 'ここは私が払うよ。あなたの分は後で振り込んでね。', context: '立て替えを提案する', register: 'casual' },
-        { phrase: 'Okay, thanks. Let me know your bank details.', meaning: 'わかった、ありがとう。口座情報を教えてね。', context: '送金先を確認する', register: 'casual' },
-        { phrase: 'Can we pay half each on our cards, please?', meaning: 'カードで半分ずつ払うことはできますか？', context: 'カードで別々に払う', register: 'polite' },
+    "payments": {
+      "title": "支払いと割り勘の方法",
+      "enTitle": "Ways to pay",
+      "intro": "現金、カード、チップ、割り勘、立て替えた分の送金について話します。",
+      "image": "/assets/illustrations/greeting-casual-chat.svg",
+      "phrases": [
+        {
+          "phrase": "I'll pay in cash.",
+          "meaning": "現金で払います。",
+          "context": "現金で支払う",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'll pay by card.",
+          "meaning": "カードで払います。",
+          "context": "カードで支払う",
+          "register": "neutral"
+        },
+        {
+          "phrase": "I'll put this on my credit card.",
+          "meaning": "これは私のクレジットカードで払います。",
+          "context": "クレジットカードで払う",
+          "register": "neutral"
+        },
+        {
+          "phrase": "Let's add a £5 tip.",
+          "meaning": "5ポンドのチップを足そう。",
+          "context": "チップを加える",
+          "register": "casual"
+        },
+        {
+          "phrase": "Shall we split it three ways?",
+          "meaning": "3等分に割り勘にしようか？",
+          "context": "割り勘を提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "I'll get this. You can transfer your share later.",
+          "meaning": "ここは私が払うよ。あなたの分は後で振り込んでね。",
+          "context": "立て替えを提案する",
+          "register": "casual"
+        },
+        {
+          "phrase": "Okay, thanks. Let me know your bank details.",
+          "meaning": "わかった、ありがとう。口座情報を教えてね。",
+          "context": "送金先を確認する",
+          "register": "casual"
+        },
+        {
+          "phrase": "Can we pay half each on our cards, please?",
+          "meaning": "カードで半分ずつ払うことはできますか？",
+          "context": "カードで別々に払う",
+          "register": "polite"
+        },
+        {
+          "phrase": "How would you like to pay?",
+          "meaning": "お支払い方法はいかがなさいますか？",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'put this on my credit card', meaning: 'クレジットカードで払う', note: '買い物やサービスの支払いで使います。' },
-        { phrase: 'transfer your share', meaning: '自分の分を送金する', note: '立て替えてもらった金額を後から送ります。' },
-        { phrase: 'bank details', meaning: '銀行口座の詳細', note: '安全な相手にだけ共有する情報です。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "put this on my credit card",
+          "meaning": "クレジットカードで払う",
+          "note": "買い物やサービスの支払いで使います。"
+        },
+        {
+          "phrase": "transfer your share",
+          "meaning": "自分の分を送金する",
+          "note": "立て替えてもらった金額を後から送ります。"
+        },
+        {
+          "phrase": "bank details",
+          "meaning": "銀行口座の詳細",
+          "note": "安全な相手にだけ共有する情報です。"
+        }
+      ]
     },
-    vocabulary: {
-      title: 'お金と金融のボキャブラリー',
-      enTitle: 'Vocabulary · Money and finance',
-      intro: '銀行、外貨、支払いの案内でよく見る単語を、役割ごとに整理します。',
-      image: '/assets/illustrations/greeting-online-wishes.svg',
-      phrases: [
-        { phrase: 'bank account', meaning: '銀行口座', context: 'お金を管理する口座', register: 'neutral' },
-        { phrase: 'savings account', meaning: '預金口座', context: '貯金用の口座', register: 'neutral' },
-        { phrase: 'bank statement', meaning: '銀行の取引明細書', context: '入出金の記録', register: 'neutral' },
-        { phrase: 'transfer money', meaning: 'お金を送金する', context: '口座から別の口座へ送る', register: 'neutral' },
-        { phrase: 'currency', meaning: '通貨・貨幣', context: '国ごとのお金', register: 'neutral' },
-        { phrase: 'exchange rate', meaning: '為替レート', context: '通貨を交換する割合', register: 'neutral' },
-        { phrase: 'notes', meaning: '紙幣', context: 'イギリス英語で bills', register: 'neutral' },
-        { phrase: 'cash machine', meaning: 'ATM', context: '現金自動預け払い機', register: 'neutral' },
-        { phrase: 'credit card', meaning: 'クレジットカード', context: '後払いのカード', register: 'neutral' },
-        { phrase: 'bank details', meaning: '銀行口座の詳細', context: '送金に必要な情報', register: 'neutral' },
-        { phrase: 'tip', meaning: 'チップ', context: 'サービスへの心づけ', register: 'neutral' },
+    "vocabulary": {
+      "title": "お金と金融のボキャブラリー",
+      "enTitle": "Vocabulary · Money and finance",
+      "intro": "銀行、外貨、支払いの案内でよく見る単語を、役割ごとに整理します。",
+      "image": "/assets/illustrations/greeting-online-wishes.svg",
+      "phrases": [
+        {
+          "phrase": "bank account",
+          "meaning": "銀行口座",
+          "context": "お金を管理する口座",
+          "register": "neutral"
+        },
+        {
+          "phrase": "savings account",
+          "meaning": "預金口座",
+          "context": "貯金用の口座",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bank statement",
+          "meaning": "銀行の取引明細書",
+          "context": "入出金の記録",
+          "register": "neutral"
+        },
+        {
+          "phrase": "transfer money",
+          "meaning": "お金を送金する",
+          "context": "口座から別の口座へ送る",
+          "register": "neutral"
+        },
+        {
+          "phrase": "currency",
+          "meaning": "通貨・貨幣",
+          "context": "国ごとのお金",
+          "register": "neutral"
+        },
+        {
+          "phrase": "exchange rate",
+          "meaning": "為替レート",
+          "context": "通貨を交換する割合",
+          "register": "neutral"
+        },
+        {
+          "phrase": "notes",
+          "meaning": "紙幣",
+          "context": "イギリス英語で bills",
+          "register": "neutral"
+        },
+        {
+          "phrase": "cash machine",
+          "meaning": "ATM",
+          "context": "現金自動預け払い機",
+          "register": "neutral"
+        },
+        {
+          "phrase": "credit card",
+          "meaning": "クレジットカード",
+          "context": "後払いのカード",
+          "register": "neutral"
+        },
+        {
+          "phrase": "bank details",
+          "meaning": "銀行口座の詳細",
+          "context": "送金に必要な情報",
+          "register": "neutral"
+        },
+        {
+          "phrase": "tip",
+          "meaning": "チップ",
+          "context": "サービスへの心づけ",
+          "register": "neutral"
+        },
+        {
+          "phrase": "debit card",
+          "meaning": "デビットカード",
+          "context": "原書の表現",
+          "register": "neutral"
+        },
+        {
+          "phrase": "mobile banking",
+          "meaning": "モバイルバンキング",
+          "context": "原書の表現",
+          "register": "neutral"
+        }
       ],
-      recognition: [
-        { phrase: 'notes', meaning: '紙幣', note: 'アメリカ英語の bill にあたります。' },
-        { phrase: 'cash machine', meaning: 'ATM', note: 'イギリス英語で一般的な呼び方です。' },
-        { phrase: 'exchange rate', meaning: '為替レート', note: '両替の有利・不利を話すときに使います。' },
-        { phrase: 'swallow', meaning: '飲み込む', note: 'ATMがカードを取り込む場面にも使えます。' },
-      ],
+      "recognition": [
+        {
+          "phrase": "notes",
+          "meaning": "紙幣",
+          "note": "アメリカ英語の bill にあたります。"
+        },
+        {
+          "phrase": "cash machine",
+          "meaning": "ATM",
+          "note": "イギリス英語で一般的な呼び方です。"
+        },
+        {
+          "phrase": "exchange rate",
+          "meaning": "為替レート",
+          "note": "両替の有利・不利を話すときに使います。"
+        },
+        {
+          "phrase": "swallow",
+          "meaning": "飲み込む",
+          "note": "ATMがカードを取り込む場面にも使えます。"
+        }
+      ]
     },
-    dialogues: [
+    "dialogues": [
       {
-        id: 'account',
-        label: 'Pattern A · Opening an account',
-        title: '口座を開き、オンラインアクセスを確認する',
-        lines: [
-          { speaker: 'A', en: "I'd like to open a bank account, please.", ja: '銀行口座を開設したいのですが。' },
-          { speaker: 'B', en: 'Great. Have you brought some ID?', ja: '身分証明書はお持ちですか？' },
-          { speaker: 'A', en: 'How can I access my new account online?', ja: '新しい口座にオンラインでアクセスするには？' },
-          { speaker: 'B', en: 'You can download the banking app.', ja: '銀行アプリをダウンロードできます。' },
-        ],
+        "id": "account",
+        "label": "Pattern A · Opening an account",
+        "title": "口座を開き、オンラインアクセスを確認する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "I'd like to open a bank account, please.",
+            "ja": "銀行口座を開設したいのですが。"
+          },
+          {
+            "speaker": "B",
+            "en": "Great. Have you brought some ID?",
+            "ja": "身分証明書はお持ちですか？"
+          },
+          {
+            "speaker": "A",
+            "en": "How can I access my new account online?",
+            "ja": "新しい口座にオンラインでアクセスするには？"
+          },
+          {
+            "speaker": "B",
+            "en": "You can download the banking app.",
+            "ja": "銀行アプリをダウンロードできます。"
+          }
+        ]
       },
       {
-        id: 'card-problem',
-        label: 'Pattern B · Card problem',
-        title: 'ATMにカードを飲み込まれたと伝える',
-        lines: [
-          { speaker: 'A', en: 'Hello there. Can I help?', ja: 'こんにちは。何かお手伝いしましょうか？' },
-          { speaker: 'B', en: 'The cash machine has just swallowed my card!', ja: 'ATMがカードを飲み込んでしまったんです！' },
-          { speaker: 'A', en: "I've lost my wallet and bank cards.", ja: '財布とカードをなくしました。' },
-          { speaker: 'B', en: 'Could you cancel them for me?', ja: '利用を停止してもらえますか？' },
-        ],
+        "id": "card-problem",
+        "label": "Pattern B · Card problem",
+        "title": "ATMにカードを飲み込まれたと伝える",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Hello there. Can I help?",
+            "ja": "こんにちは。何かお手伝いしましょうか？"
+          },
+          {
+            "speaker": "B",
+            "en": "The cash machine has just swallowed my card!",
+            "ja": "ATMがカードを飲み込んでしまったんです！"
+          },
+          {
+            "speaker": "A",
+            "en": "I've lost my wallet and bank cards.",
+            "ja": "財布とカードをなくしました。"
+          },
+          {
+            "speaker": "B",
+            "en": "Could you cancel them for me?",
+            "ja": "利用を停止してもらえますか？"
+          }
+        ]
       },
       {
-        id: 'paying',
-        label: 'Pattern C · Paying and splitting',
-        title: '支払い方法と割り勘を相談する',
-        lines: [
-          { speaker: 'A', en: 'Shall we split it three ways?', ja: '3等分に割り勘にしようか？' },
-          { speaker: 'B', en: "I'll get this. You can transfer your share later.", ja: 'ここは私が払うよ。後で送金してね。' },
-          { speaker: 'A', en: 'Okay, thanks. Let me know your bank details.', ja: 'わかった、ありがとう。口座情報を教えてね。' },
-          { speaker: 'B', en: "Let's add a £5 tip.", ja: '5ポンドのチップを足そう。' },
-        ],
-      },
+        "id": "paying",
+        "label": "Pattern C · Paying and splitting",
+        "title": "支払い方法と割り勘を相談する",
+        "lines": [
+          {
+            "speaker": "A",
+            "en": "Shall we split it three ways?",
+            "ja": "3等分に割り勘にしようか？"
+          },
+          {
+            "speaker": "B",
+            "en": "I'll get this. You can transfer your share later.",
+            "ja": "ここは私が払うよ。後で送金してね。"
+          },
+          {
+            "speaker": "A",
+            "en": "Okay, thanks. Let me know your bank details.",
+            "ja": "わかった、ありがとう。口座情報を教えてね。"
+          },
+          {
+            "speaker": "B",
+            "en": "Let's add a £5 tip.",
+            "ja": "5ポンドのチップを足そう。"
+          }
+        ]
+      }
     ],
-    tip: 'イギリス英語では紙幣を notes、ATM を cash machine と呼ぶことが多いです。small or large notes は少額紙幣か高額紙幣かを尋ねる表現です。ATM がカードを返さないときは The cash machine swallowed my card! と伝え、カード情報や bank details は安全な相手にだけ共有しましょう。',
+    "tip": "イギリス英語では紙幣を notes、ATM を cash machine と呼ぶことが多いです。small or large notes は少額紙幣か高額紙幣かを尋ねる表現です。ATM がカードを返さないときは The cash machine swallowed my card! と伝え、カード情報や bank details は安全な相手にだけ共有しましょう。"
   },
-  practice: {
-    title: 'お金と支払いを、英語で安全に確認する',
-    instructions: '日本語訳は見ずに、銀行の手続き、カードの問題、支払いと割り勘を声に重ねます。',
-    coreHeading: 'まずは、銀行や支払いでそのまま使える一文から。',
-    dialogueHeading: '口座、カード、支払いの場面で役を切り替える。',
-    dialogueDescription: '銀行口座を開く、カードのトラブルを伝える、割り勘を相談する3つの会話を練習します。',
-    finishTitle: '次に支払いや送金をするとき、方法や金額を英語でひとつ確認してみましょう。',
-    corePhrases: [
-      { phrase: "I'd like to open a bank account, please.", context: '口座を開く', rate: 0.76 },
-      { phrase: 'Have you brought some ID?', context: 'IDを確認する', rate: 0.82 },
-      { phrase: 'How can I access my new account online?', context: 'オンラインアクセスを尋ねる', rate: 0.72 },
-      { phrase: 'How do I pay money into my savings account?', context: '入金方法を尋ねる', rate: 0.72 },
-      { phrase: "I'd like to withdraw £300 in cash.", context: '現金を引き出す', rate: 0.78 },
-      { phrase: "I've come to pick up the dollars I ordered online.", context: '外貨を受け取る', rate: 0.72 },
-      { phrase: 'Would you prefer small or large notes?', context: '紙幣の種類を尋ねる', rate: 0.76 },
-      { phrase: 'The cash machine has just swallowed my card!', context: 'ATMトラブルを伝える', rate: 0.72 },
-      { phrase: "I've lost my wallet and bank cards.", context: 'カード紛失を伝える', rate: 0.8 },
-      { phrase: "I'll pay by card.", context: 'カードで払う', rate: 0.86 },
-      { phrase: 'Shall we split it three ways?', context: '割り勘を提案する', rate: 0.82 },
-      { phrase: 'Can we pay half each on our cards, please?', context: 'カードで別々に払う', rate: 0.74 },
+  "practice": {
+    "title": "お金と支払いを、英語で安全に確認する",
+    "instructions": "日本語訳は見ずに、銀行の手続き、カードの問題、支払いと割り勘を声に重ねます。",
+    "coreHeading": "まずは、銀行や支払いでそのまま使える一文から。",
+    "dialogueHeading": "口座、カード、支払いの場面で役を切り替える。",
+    "dialogueDescription": "銀行口座を開く、カードのトラブルを伝える、割り勘を相談する3つの会話を練習します。",
+    "finishTitle": "次に支払いや送金をするとき、方法や金額を英語でひとつ確認してみましょう。",
+    "corePhrases": [
+      {
+        "phrase": "I'd like to open a bank account, please.",
+        "context": "口座を開く",
+        "rate": 0.76
+      },
+      {
+        "phrase": "Have you brought some ID?",
+        "context": "IDを確認する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "How can I access my new account online?",
+        "context": "オンラインアクセスを尋ねる",
+        "rate": 0.72
+      },
+      {
+        "phrase": "How do I pay money into my savings account?",
+        "context": "入金方法を尋ねる",
+        "rate": 0.72
+      },
+      {
+        "phrase": "I'd like to withdraw £300 in cash.",
+        "context": "現金を引き出す",
+        "rate": 0.78
+      },
+      {
+        "phrase": "I've come to pick up the dollars I ordered online.",
+        "context": "外貨を受け取る",
+        "rate": 0.72
+      },
+      {
+        "phrase": "Would you prefer small or large notes?",
+        "context": "紙幣の種類を尋ねる",
+        "rate": 0.76
+      },
+      {
+        "phrase": "The cash machine has just swallowed my card!",
+        "context": "ATMトラブルを伝える",
+        "rate": 0.72
+      },
+      {
+        "phrase": "I've lost my wallet and bank cards.",
+        "context": "カード紛失を伝える",
+        "rate": 0.8
+      },
+      {
+        "phrase": "I'll pay by card.",
+        "context": "カードで払う",
+        "rate": 0.86
+      },
+      {
+        "phrase": "Shall we split it three ways?",
+        "context": "割り勘を提案する",
+        "rate": 0.82
+      },
+      {
+        "phrase": "Can we pay half each on our cards, please?",
+        "context": "カードで別々に払う",
+        "rate": 0.74
+      }
     ],
-    dialogues: [
-      { title: 'Opening an account', lines: ["I'd like to open a bank account, please.", 'Great. Have you brought some ID?', 'How can I access my new account online?', 'You can download the banking app.'] },
-      { title: 'Card problem', lines: ['Hello there. Can I help?', 'The cash machine has just swallowed my card!', "I've lost my wallet and bank cards.", 'Could you cancel them for me?'] },
-      { title: 'Paying and splitting', lines: ['Shall we split it three ways?', "I'll get this. You can transfer your share later.", 'Okay, thanks. Let me know your bank details.', "Let's add a £5 tip."] },
+    "dialogues": [
+      {
+        "title": "Opening an account",
+        "lines": [
+          "I'd like to open a bank account, please.",
+          "Great. Have you brought some ID?",
+          "How can I access my new account online?",
+          "You can download the banking app."
+        ]
+      },
+      {
+        "title": "Card problem",
+        "lines": [
+          "Hello there. Can I help?",
+          "The cash machine has just swallowed my card!",
+          "I've lost my wallet and bank cards.",
+          "Could you cancel them for me?"
+        ]
+      },
+      {
+        "title": "Paying and splitting",
+        "lines": [
+          "Shall we split it three ways?",
+          "I'll get this. You can transfer your share later.",
+          "Okay, thanks. Let me know your bank details.",
+          "Let's add a £5 tip."
+        ]
+      }
     ],
-    natural: [
-      { full: 'I would like to open a bank account, please.', natural: "I'd like to open a bank account, please." },
-      { full: 'The ATM has taken my card.', natural: 'The cash machine has just swallowed my card!' },
-      { full: 'Can we divide the bill into three parts?', natural: 'Shall we split it three ways?' },
-    ],
-  },
+    "natural": [
+      {
+        "full": "I would like to open a bank account, please.",
+        "natural": "I'd like to open a bank account, please."
+      },
+      {
+        "full": "The ATM has taken my card.",
+        "natural": "The cash machine has just swallowed my card!"
+      },
+      {
+        "full": "Can we divide the bill into three parts?",
+        "natural": "Shall we split it three ways?"
+      }
+    ]
+  }
 }

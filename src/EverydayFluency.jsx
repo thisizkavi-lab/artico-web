@@ -9122,6 +9122,117 @@ function HealthMedicineLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTit
   )
 }
 
+function PharmacyLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  const [activeSection, setActiveSection] = useState('pharmacy-why')
+  const { learn } = lesson
+
+  useEffect(() => {
+    const sections = ['pharmacy-why', 'pharmacy-prescription', 'pharmacy-symptoms', 'pharmacy-vocabulary', 'pharmacy-dialogues', 'pharmacy-tips']
+      .map((id) => document.getElementById(id))
+      .filter(Boolean)
+    if (!sections.length || typeof IntersectionObserver === 'undefined') return undefined
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]
+      if (visible) setActiveSection(visible.target.id)
+    }, { rootMargin: '-18% 0px -62% 0px', threshold: 0 })
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [])
+
+  const outline = [
+    ['pharmacy-why', '薬局で伝える役割'],
+    ['pharmacy-prescription', '処方箋と薬'],
+    ['pharmacy-symptoms', '症状と市販薬'],
+    ['pharmacy-vocabulary', '薬局の単語'],
+    ['pharmacy-dialogues', '会話の練習'],
+    ['pharmacy-tips', '会話のポイント'],
+  ]
+
+  return (
+    <div className="lesson-page greetings-page opinions-page pharmacy-page">
+      <LessonTitle eyebrow={`Social Fluency · ${lesson.number}`} title={lesson.title} ja={lesson.ja} />
+      <div className="greetings-reader">
+        <div className="greetings-reader-main">
+          <section id="pharmacy-why" className="greetings-hero-section greetings-content-section">
+            <div className="greetings-hero-copy">
+              <span className="section-kicker">はじめに · Start with the big picture</span>
+              <h2>症状と薬の情報を正確に伝えて、分からないことを確認する。</h2>
+              {learn.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              <p className="greetings-pull-quote">薬局での英語は、症状・アレルギー・服用中の薬を伝え、安心して使うために質問する力です。</p>
+            </div>
+            <GreetingSceneImage src="/assets/illustrations/greeting-casual-chat.svg" alt="薬局で薬について相談する場面" />
+          </section>
+
+          <FillerFunctionStrip items={learn.functions} ariaLabel="薬局での会話を進める方法" />
+
+          <section id="pharmacy-prescription" className="greetings-content-section">
+            <div className="greetings-section-heading">
+              <span className="section-kicker">処方箋 · Picking up a prescription</span>
+              <h2>処方箋、アレルギー、服用中の薬を確認する。</h2>
+              <p>get a prescription filled、pick up a prescription、side effects、before or after mealsで薬の受け取りと使い方を伝えます。</p>
+            </div>
+            <GreetingVocabularySection section={learn.prescription} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
+          </section>
+
+          <section id="pharmacy-symptoms" className="greetings-content-section">
+            <div className="greetings-section-heading">
+              <span className="section-kicker">症状と市販薬 · Symptoms</span>
+              <h2>湿疹やのどの痛みを伝えて、市販薬を相談する。</h2>
+              <p>itchy rash、sore throat、How long have you had ...?、other symptoms、do the trickで症状と提案を確認します。</p>
+            </div>
+            <GreetingVocabularySection section={learn.symptoms} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
+          </section>
+
+          <section id="pharmacy-vocabulary" className="greetings-content-section">
+            <div className="greetings-section-heading">
+              <span className="section-kicker">単語 · Pharmacy vocabulary</span>
+              <h2>薬局で見かける基本語を整理する。</h2>
+              <p>薬剤師、処方箋、薬、副作用、消毒薬など、薬局で役立つ語をまとめます。</p>
+            </div>
+            <GreetingVocabularySection section={learn.vocabulary} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
+          </section>
+
+          <section id="pharmacy-dialogues" className="greetings-content-section">
+            <div className="greetings-section-heading">
+              <span className="section-kicker">会話の流れ · Put it into a conversation</span>
+              <h2>処方箋、症状、薬の使い方を順番に確認する。</h2>
+              <p>処方箋を受け取る、症状に合う市販薬を相談する、飲み方や併用を確認する3つの場面を聞いてみましょう。</p>
+            </div>
+            <div className="greetings-dialogue-grid">
+              {learn.dialogues.map((pattern) => <GreetingDialogueCard key={pattern.id} pattern={pattern} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />)}
+            </div>
+          </section>
+
+          <section id="pharmacy-tips" className="greetings-content-section">
+            <span className="section-kicker">会話のポイント · Good to know</span>
+            <h2>do the trick、sore、chemist&apos;sを使い分ける。</h2>
+            <p>{learn.tip}</p>
+            <div className="greetings-recap">
+              {learn.tips.map((tip) => <div key={tip.title}><span className="section-kicker">{tip.title}</span><p>{tip.body}</p></div>)}
+            </div>
+            <div className="greetings-recap">
+              <div><span className="section-kicker">自分で使う</span><p>I&apos;m here to pick up a prescription. · I have an itchy rash on my arm. · How often should I take it?</p></div>
+              <div><span className="section-kicker">聞いたら分かる</span><p>pharmacist · side effects · over-the-counter · do the trick · chemist&apos;s</p></div>
+            </div>
+            <p className="greetings-next-cue">Practiceで声を重ねる →</p>
+          </section>
+        </div>
+
+        <aside className="greetings-outline" aria-label="このページの項目">
+          <span>On this page</span>
+          <nav>
+            {outline.map(([id, label]) => (
+              <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''}>{label}</a>
+            ))}
+          </nav>
+        </aside>
+      </div>
+    </div>
+  )
+}
+
 function PresentationLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
   const [activeSection, setActiveSection] = useState('presentation-why')
   const { learn } = lesson
@@ -9386,6 +9497,7 @@ export function EverydayLearnView({ lesson, step, setStep, speakWithBrowser, Pla
   if (lesson?.kind === 'finding-way') return <FindingWayLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'holiday-problems') return <HolidayProblemsLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'health-medicine') return <HealthMedicineLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
+  if (lesson?.kind === 'pharmacy') return <PharmacyLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (!lesson || !lesson.learn) return null
   const { learn } = lesson
 
@@ -9486,7 +9598,7 @@ export function EverydayLearnView({ lesson, step, setStep, speakWithBrowser, Pla
 }
 
 export function EverydayPracticeView({ lesson, step, setStep, speakWithBrowser, PlayIcon, LessonTitle }) {
-  if (lesson?.kind === 'greetings' || lesson?.kind === 'introductions' || lesson?.kind === 'fillers' || lesson?.kind === 'repair' || lesson?.kind === 'opinions' || lesson?.kind === 'agreement' || lesson?.kind === 'suggestions' || lesson?.kind === 'thanks' || lesson?.kind === 'sorry' || lesson?.kind === 'goodbye' || lesson?.kind === 'dates-weather' || lesson?.kind === 'arrangements' || lesson?.kind === 'weather' || lesson?.kind === 'family' || lesson?.kind === 'talking-family' || lesson?.kind === 'life-events' || lesson?.kind === 'socializing' || lesson?.kind === 'dating' || lesson?.kind === 'support' || lesson?.kind === 'eating-drinking' || lesson?.kind === 'cafes' || lesson?.kind === 'takeaway' || lesson?.kind === 'bars' || lesson?.kind === 'restaurant' || lesson?.kind === 'cooking' || lesson?.kind === 'free-time' || lesson?.kind === 'cinema' || lesson?.kind === 'theatre' || lesson?.kind === 'concerts' || lesson?.kind === 'gym' || lesson?.kind === 'sports' || lesson?.kind === 'sports-events' || lesson?.kind === 'hobbies' || lesson?.kind === 'shops-services' || lesson?.kind === 'market' || lesson?.kind === 'supermarket' || lesson?.kind === 'garden-centre' || lesson?.kind === 'diy-store' || lesson?.kind === 'clothes-shoes' || lesson?.kind === 'returns-goods' || lesson?.kind === 'hair-beauty' || lesson?.kind === 'post-office' || lesson?.kind === 'money-finance' || lesson?.kind === 'library' || lesson?.kind === 'work-study' || lesson?.kind === 'school' || lesson?.kind === 'higher-education' || lesson?.kind === 'looking-for-work' || lesson?.kind === 'applying-for-job' || lesson?.kind === 'job-interviews' || lesson?.kind === 'starting-new-job' || lesson?.kind === 'workplace' || lesson?.kind === 'presentation' || lesson?.kind === 'work-meetings' || lesson?.kind === 'online-meetings' || lesson?.kind === 'home' || lesson?.kind === 'finding-home' || lesson?.kind === 'moving-house' || lesson?.kind === 'neighbours' || lesson?.kind === 'chores' || lesson?.kind === 'home-improvements' || lesson?.kind === 'pets' || lesson?.kind === 'home-emergencies' || lesson?.kind === 'home-entertainment' || lesson?.kind === 'getting-around' || lesson?.kind === 'buses-coaches' || lesson?.kind === 'train-metro-travel' || lesson?.kind === 'airport' || lesson?.kind === 'cycling' || lesson?.kind === 'taxis' || lesson?.kind === 'garage' || lesson?.kind === 'holiday' || lesson?.kind === 'booking-holiday' || lesson?.kind === 'staying-hotel' || lesson?.kind === 'city-sightseeing' || lesson?.kind === 'camping' || lesson?.kind === 'beach' || lesson?.kind === 'finding-way' || lesson?.kind === 'holiday-problems' || lesson?.kind === 'health-medicine') return <GreetingsPracticeView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
+  if (lesson?.kind === 'greetings' || lesson?.kind === 'introductions' || lesson?.kind === 'fillers' || lesson?.kind === 'repair' || lesson?.kind === 'opinions' || lesson?.kind === 'agreement' || lesson?.kind === 'suggestions' || lesson?.kind === 'thanks' || lesson?.kind === 'sorry' || lesson?.kind === 'goodbye' || lesson?.kind === 'dates-weather' || lesson?.kind === 'arrangements' || lesson?.kind === 'weather' || lesson?.kind === 'family' || lesson?.kind === 'talking-family' || lesson?.kind === 'life-events' || lesson?.kind === 'socializing' || lesson?.kind === 'dating' || lesson?.kind === 'support' || lesson?.kind === 'eating-drinking' || lesson?.kind === 'cafes' || lesson?.kind === 'takeaway' || lesson?.kind === 'bars' || lesson?.kind === 'restaurant' || lesson?.kind === 'cooking' || lesson?.kind === 'free-time' || lesson?.kind === 'cinema' || lesson?.kind === 'theatre' || lesson?.kind === 'concerts' || lesson?.kind === 'gym' || lesson?.kind === 'sports' || lesson?.kind === 'sports-events' || lesson?.kind === 'hobbies' || lesson?.kind === 'shops-services' || lesson?.kind === 'market' || lesson?.kind === 'supermarket' || lesson?.kind === 'garden-centre' || lesson?.kind === 'diy-store' || lesson?.kind === 'clothes-shoes' || lesson?.kind === 'returns-goods' || lesson?.kind === 'hair-beauty' || lesson?.kind === 'post-office' || lesson?.kind === 'money-finance' || lesson?.kind === 'library' || lesson?.kind === 'work-study' || lesson?.kind === 'school' || lesson?.kind === 'higher-education' || lesson?.kind === 'looking-for-work' || lesson?.kind === 'applying-for-job' || lesson?.kind === 'job-interviews' || lesson?.kind === 'starting-new-job' || lesson?.kind === 'workplace' || lesson?.kind === 'presentation' || lesson?.kind === 'work-meetings' || lesson?.kind === 'online-meetings' || lesson?.kind === 'home' || lesson?.kind === 'finding-home' || lesson?.kind === 'moving-house' || lesson?.kind === 'neighbours' || lesson?.kind === 'chores' || lesson?.kind === 'home-improvements' || lesson?.kind === 'pets' || lesson?.kind === 'home-emergencies' || lesson?.kind === 'home-entertainment' || lesson?.kind === 'getting-around' || lesson?.kind === 'buses-coaches' || lesson?.kind === 'train-metro-travel' || lesson?.kind === 'airport' || lesson?.kind === 'cycling' || lesson?.kind === 'taxis' || lesson?.kind === 'garage' || lesson?.kind === 'holiday' || lesson?.kind === 'booking-holiday' || lesson?.kind === 'staying-hotel' || lesson?.kind === 'city-sightseeing' || lesson?.kind === 'camping' || lesson?.kind === 'beach' || lesson?.kind === 'finding-way' || lesson?.kind === 'holiday-problems' || lesson?.kind === 'health-medicine' || lesson?.kind === 'pharmacy') return <GreetingsPracticeView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (!lesson || !lesson.practice) return null
   const { practice } = lesson
   const [selectedSub, setSelectedSub] = useState(0)

@@ -1,0 +1,136 @@
+/** Chapter 22 · Takeaway and delivery. */
+export const takeawayLesson = {
+  id: 'takeaway',
+  kind: 'takeaway',
+  number: '22',
+  title: 'なぜ「テイクアウトとデリバリー」の英語を学ぶのでしょうか？',
+  enTitle: 'Takeaway and delivery',
+  ja: '注文、受け取り、配達先の確認、届かないときの問い合わせを伝えます。',
+  cando: 'テイクアウトやデリバリーを注文し、受け取り、配達情報やトラブルを英語で伝えられる。',
+  learn: {
+    intro: [
+      '食べ物を注文することは、日常生活の中でよくある場面です。自分でお店に取りに行く場合でも、家まで届けてもらう場合でも、何を注文したいのか、どこに届けてほしいのか、いつ受け取るのかを明確に伝える必要があります。',
+      '基本的にはシンプルなやり取りですが、注文が届かない、遅れているなどの問題が起こることもあります。注文がうまく進むように、必要な情報を一つずつ確認することが大切です。',
+      'この章では、テイクアウトやデリバリーの注文、商品の受け取り、配達情報の伝え方、そしてよくあるトラブルへの対応を学びます。',
+    ],
+    functions: [
+      ['01', '持ち帰りを提案する'],
+      ['02', '注文・受け取りを伝える'],
+      ['03', '配達先を確認する'],
+      ['04', '問題を問い合わせる'],
+    ],
+    pickup: {
+      title: 'テイクアウト（持ち帰り）をする',
+      enTitle: 'Getting a takeaway',
+      intro: '持ち帰りを提案し、店頭で注文し、予約した商品を受け取るまでの表現です。',
+      image: '/assets/illustrations/greeting-casual-chat.svg',
+      phrases: [
+        { phrase: 'Shall we get a takeaway curry tonight?', meaning: '今夜はカレーをテイクアウトしない？', context: '持ち帰りを提案する', register: 'casual' },
+        { phrase: "Good idea. I'll pick it up on my way home.", meaning: 'いいアイデアだね。帰り道に受け取っていくよ。', context: '受け取りを引き受ける', register: 'casual' },
+        { phrase: 'Two burgers to go, please.', meaning: 'ハンバーガーを2つ、持ち帰りでお願いします。', context: '店頭で注文する', register: 'polite' },
+        { phrase: 'Do you want fries with that?', meaning: 'ご一緒にフライドポテトはいかがですか？', context: '追加をすすめる', register: 'neutral' },
+        { phrase: "I've come to pick up my order.", meaning: '注文した商品を受け取りに来ました。', context: '予約商品を受け取る', register: 'polite' },
+        { phrase: 'Can I take your name, please?', meaning: 'お名前をお伺いできますか？', context: '店員が注文を確認する', register: 'polite' },
+      ],
+      recognition: [
+        { phrase: 'pick it up', meaning: '商品を受け取る', note: '注文したものを店頭で受け取るときの、持ち帰りに欠かせない表現です。' },
+        { phrase: 'to go', meaning: '持ち帰りで', note: 'アメリカ英語で特によく使われます。' },
+      ],
+    },
+    delivery: {
+      title: 'デリバリー（配達）を頼む',
+      enTitle: 'Ordering a delivery',
+      intro: 'アプリで注文したり、配達エリアや住所を確認したり、届かないときに問い合わせたりします。',
+      image: '/assets/illustrations/greeting-online-wishes.svg',
+      phrases: [
+        { phrase: "We've got no food. Let's get a pizza in!", meaning: '食べ物が何もないよ。ピザのデリバリーを頼もう！', context: '出前を提案する', register: 'casual' },
+        { phrase: "Okay, I'll order it on the app.", meaning: 'わかった、アプリで注文するね。', context: 'アプリで注文を引き受ける', register: 'casual' },
+        { phrase: 'Can I check if you deliver to this address?', meaning: 'この住所に配達してもらえるか確認できますか？', context: '配達エリアを確認する', register: 'polite' },
+        { phrase: "Of course. What's your postcode?", meaning: 'もちろんです。郵便番号は何ですか？', context: '住所情報を確認する', register: 'polite' },
+        { phrase: "Our fried chicken order still hasn't arrived.", meaning: '注文したフライドチキンがまだ届きません。', context: '届かないことを伝える', register: 'polite' },
+        { phrase: "Sorry about that. Let me check what's happening.", meaning: '申し訳ありません。どうなっているか確認させてください。', context: '店員が状況を確認する', register: 'polite' },
+      ],
+      recognition: [
+        { phrase: 'get a pizza in', meaning: 'ピザの出前を取る', note: 'get [food] in は、イギリス英語などで使われるカジュアルな言い方です。' },
+        { phrase: 'postcode', meaning: '郵便番号', note: 'アメリカ英語では zip code と呼ぶのが一般的です。' },
+      ],
+    },
+    vocabulary: {
+      title: 'テイクアウト・デリバリーの単語',
+      enTitle: 'Takeaway meals vocabulary',
+      intro: '海外で注文する機会の多い料理と、持ち帰り・配達に関する基本語彙です。',
+      image: '/assets/illustrations/greeting-casual-chat.svg',
+      phrases: [
+        { phrase: 'takeaway', meaning: 'テイクアウト／持ち帰り', context: 'イギリス・オーストラリア英語', register: 'neutral' },
+        { phrase: 'delivery', meaning: 'デリバリー／配達', context: '家などへ届けること', register: 'neutral' },
+        { phrase: 'curry / noodles / pizza / sushi', meaning: 'カレー／麺類／ピザ／お寿司', context: '定番の注文', register: 'neutral' },
+        { phrase: 'tacos / kebab', meaning: 'タコス／ケバブ', context: '定番の注文', register: 'neutral' },
+        { phrase: 'burgers / fried chicken', meaning: 'ハンバーガー／フライドチキン', context: '定番の注文', register: 'neutral' },
+        { phrase: 'fries / nachos', meaning: 'フライドポテト／ナチョス', context: 'サイドや追加注文', register: 'neutral' },
+      ],
+      recognition: [
+        { phrase: 'takeaway', meaning: '持ち帰り', note: 'アメリカ英語の takeout にあたる、イギリス・オーストラリア英語の言い方です。' },
+      ],
+    },
+    dialogues: [
+      {
+        id: 'pickup',
+        label: 'Pattern A · Pickup',
+        title: '持ち帰りを注文して受け取る',
+        lines: [
+          { speaker: 'A', en: 'Two burgers to go, please.', ja: 'ハンバーガーを2つ、持ち帰りでお願いします。' },
+          { speaker: 'B', en: "I've come to pick up my order.", ja: '注文した商品を受け取りに来ました。' },
+        ],
+      },
+      {
+        id: 'delivery',
+        label: 'Pattern B · Delivery',
+        title: '配達先を確認する',
+        lines: [
+          { speaker: 'A', en: 'Can I check if you deliver to this address?', ja: 'この住所に配達してもらえるか確認できますか？' },
+          { speaker: 'B', en: "Of course. What's your postcode?", ja: 'もちろんです。郵便番号は何ですか？' },
+        ],
+      },
+      {
+        id: 'late-order',
+        label: 'Pattern C · Late order',
+        title: '届かない注文を問い合わせる',
+        lines: [
+          { speaker: 'A', en: "Our fried chicken order still hasn't arrived.", ja: '注文したフライドチキンがまだ届きません。' },
+          { speaker: 'B', en: "Sorry about that. Let me check what's happening.", ja: '申し訳ありません。どうなっているか確認させてください。' },
+        ],
+      },
+    ],
+    tip: 'Takeaway はイギリス・オーストラリア英語、takeout はアメリカ英語で「持ち帰り」を表します。注文時の to go もアメリカでよく使われ、イギリスでは to have in or take away? と聞かれることが多いです。',
+  },
+  practice: {
+    title: '注文、受け取り、問い合わせを声にする',
+    instructions: '日本語の説明はここまで。持ち帰り、配達、住所確認、遅れた注文の問い合わせを英語だけで声に重ねます。',
+    coreHeading: 'まずは、注文と受け取りに使える一文から。',
+    dialogueHeading: '注文の状況に合わせて返す。',
+    dialogueDescription: '店員や配達側の言葉を聞いてから、自分の役の返事を自然な間で重ねます。',
+    finishTitle: '次に注文するとき、pickup か delivery かを英語で言ってみましょう。',
+    corePhrases: [
+      { phrase: 'Shall we get a takeaway curry tonight?', context: '持ち帰りを提案する', rate: 0.8 },
+      { phrase: "I'll pick it up on my way home.", context: '受け取りを引き受ける', rate: 0.78 },
+      { phrase: 'Two burgers to go, please.', context: '持ち帰りを注文する', rate: 0.84 },
+      { phrase: "I've come to pick up my order.", context: '注文を受け取る', rate: 0.78 },
+      { phrase: "Let's get a pizza in!", context: '出前を提案する', rate: 0.84 },
+      { phrase: "I'll order it on the app.", context: 'アプリで注文する', rate: 0.82 },
+      { phrase: 'Can I check if you deliver to this address?', context: '配達先を確認する', rate: 0.74 },
+      { phrase: "What's your postcode?", context: '郵便番号を確認する', rate: 0.84 },
+      { phrase: "Our order still hasn't arrived.", context: '届かないことを伝える', rate: 0.76 },
+      { phrase: "Let me check what's happening.", context: '状況を確認する', rate: 0.8 },
+    ],
+    dialogues: [
+      { title: 'Pickup', lines: ['Two burgers to go, please.', "I've come to pick up my order."] },
+      { title: 'Delivery', lines: ['Can I check if you deliver to this address?', "Of course. What's your postcode?"] },
+      { title: 'Late order', lines: ["Our fried chicken order still hasn't arrived.", "Sorry about that. Let me check what's happening."] },
+    ],
+    natural: [
+      { full: 'I have come to pick up my order.', natural: "I've come to pick up my order." },
+      { full: 'We have no food. Let us order a pizza.', natural: "We've got no food. Let's get a pizza in!" },
+      { full: 'The order has still not arrived.', natural: "The order still hasn't arrived." },
+    ],
+  },
+}

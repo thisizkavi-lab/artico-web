@@ -1961,3 +1961,198 @@ svg { display: block; }
 @media (prefers-reduced-motion: reduce) {
   .course-app .view-toggle { transition: none; }
 }
+
+/* Greetings lesson ------------------------------------------------------- */
+.course-app .greetings-page,
+.course-app .greetings-practice-page { color: var(--ink); }
+.course-app .greetings-reader { display: grid; grid-template-columns: minmax(0, 1fr) 174px; gap: 42px; align-items: start; }
+.course-app .greetings-reader-main { min-width: 0; max-width: 980px; }
+.course-app .greetings-content-section,
+.course-app .greetings-practice-section { margin: 0 0 48px; scroll-margin-top: 118px; }
+.course-app .greetings-hero-section { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 34px; align-items: center; padding: 27px 0 34px; border-top: 1px solid var(--line); }
+.course-app .greetings-hero-copy h2,
+.course-app .greetings-section-heading h2,
+.course-app .greetings-relationship-section h2,
+.course-app .greetings-exchange-heading h2,
+.course-app .greetings-natural-practice h2 { margin: 8px 0 15px; color: var(--ink); font-size: clamp(24px, 2.2vw, 34px); line-height: 1.2; letter-spacing: -.035em; }
+.course-app .greetings-hero-copy p,
+.course-app .greetings-section-heading p,
+.course-app .greetings-relationship-section > p,
+.course-app .greetings-exchange-heading p,
+.course-app .greetings-natural-practice p { margin: 0 0 13px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 14px; line-height: 1.95; }
+.course-app .greetings-scene-image { display: grid; min-height: 138px; padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); place-items: center; overflow: hidden; }
+.course-app .greetings-scene-image img { display: block; width: 100%; max-height: 220px; object-fit: contain; }
+.course-app .greetings-hero-section > .greetings-scene-image { min-height: 220px; background: linear-gradient(145deg, var(--surface), var(--note)); }
+.course-app .greetings-pull-quote { margin-top: 19px !important; padding-left: 15px; border-left: 3px solid var(--olive); color: var(--olive) !important; font-size: 15px !important; font-weight: 700; }
+.course-app .greetings-signal-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: -8px 0 50px; padding: 13px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.course-app .greetings-signal-item { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 12px; }
+.course-app .greetings-signal-item span { display: grid; width: 25px; height: 25px; flex: 0 0 auto; border-radius: 50%; background: var(--surface-strong); color: var(--olive); font-size: 9px; font-weight: 800; place-items: center; }
+.course-app .greetings-signal-item strong { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; font-weight: 600; }
+.course-app .greetings-context-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+.course-app .greetings-context-grid > div { display: grid; gap: 7px; padding: 17px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.course-app .greetings-context-grid strong { font-size: 15px; }
+.course-app .greetings-context-grid p { margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; line-height: 1.7; }
+.course-app .greetings-register-chip { display: inline-flex; width: max-content; align-items: center; min-height: 22px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.course-app .greetings-register-chip-casual { color: var(--olive); background: var(--surface-strong); }
+.course-app .greetings-register-chip-neutral { color: var(--muted); background: var(--surface); }
+.course-app .greetings-register-chip-regional { color: #8b7753; background: #f5f0e6; }
+.course-app .greetings-register-chip-polite,
+.course-app .greetings-register-chip-formal { color: #65715e; background: #edf1eb; }
+.course-app .greetings-vocab-section { margin: 30px 0 37px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--warm); }
+.course-app .greetings-vocab-head { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 20px; align-items: center; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.course-app .greetings-vocab-head .greetings-scene-image { min-height: 116px; padding: 10px; background: var(--surface); }
+.course-app .greetings-vocab-head h3 { margin: 6px 0 7px; color: var(--ink); font-size: 22px; letter-spacing: -.025em; }
+.course-app .greetings-vocab-head p { margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; line-height: 1.7; }
+.course-app .greetings-phrase-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; padding-top: 17px; }
+.course-app .greeting-phrase-card { display: grid; grid-template-columns: minmax(0, 1fr) 30px; gap: 10px; align-items: center; min-height: 112px; padding: 13px 14px; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+.course-app .greeting-phrase-topline { display: flex; align-items: center; gap: 7px; min-width: 0; }
+.course-app .greeting-phrase-context { overflow: hidden; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.course-app .greeting-phrase-card h3 { margin: 9px 0 3px; color: var(--ink); font-size: 17px; letter-spacing: -.02em; }
+.course-app .greeting-phrase-card p { margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; line-height: 1.5; }
+.course-app .greeting-play-button,
+.course-app .greeting-listen-dialogue { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--olive); cursor: pointer; transition: background .15s ease, color .15s ease; }
+.course-app .greeting-play-button { width: 30px; height: 30px; }
+.course-app .greeting-play-button:hover,
+.course-app .greeting-listen-dialogue:hover { background: var(--surface-strong); color: var(--ink); }
+.course-app .greeting-play-button svg,
+.course-app .greeting-listen-dialogue svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.course-app .greetings-recognition { margin-top: 14px; border-top: 1px dashed var(--line); }
+.course-app .greetings-recognition summary { display: flex; align-items: center; justify-content: space-between; padding: 14px 3px 3px; color: var(--muted); cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-size: 12px; font-weight: 700; list-style: none; }
+.course-app .greetings-recognition summary::-webkit-details-marker { display: none; }
+.course-app .greetings-recognition summary::after { content: '+'; color: var(--olive); font-size: 18px; font-weight: 400; }
+.course-app .greetings-recognition[open] summary::after { content: '−'; }
+.course-app .greetings-recognition summary span { margin-left: auto; margin-right: 12px; color: var(--muted); font-family: inherit; font-size: 10px; font-weight: 500; }
+.course-app .greetings-recognition-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 13px 0 2px; }
+.course-app .greetings-recognition-list > div { display: grid; gap: 3px; padding: 9px 11px; border-radius: 9px; background: var(--surface); }
+.course-app .greetings-recognition-list strong { font-size: 13px; }
+.course-app .greetings-recognition-list span,
+.course-app .greetings-recognition-list small { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.5; }
+.course-app .greetings-exchange-heading { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 23px; align-items: center; padding-bottom: 21px; border-bottom: 1px solid var(--line); }
+.course-app .greetings-exchange-heading .greetings-scene-image { min-height: 125px; }
+.course-app .greetings-dialogue-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.course-app .greeting-dialogue-card { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.course-app .greeting-dialogue-header { display: flex; align-items: start; justify-content: space-between; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.course-app .greeting-dialogue-header h3 { margin: 5px 0 0; font-size: 17px; }
+.course-app .greeting-listen-dialogue { gap: 6px; min-height: 32px; padding: 0 11px; border-radius: 999px; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.course-app .greeting-dialogue-lines { display: grid; gap: 11px; padding-top: 16px; }
+.course-app .greeting-dialogue-line { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 9px; align-items: start; }
+.course-app .greeting-dialogue-line.speaker-b { padding-left: 19px; }
+.course-app .greeting-speaker { display: grid; width: 24px; height: 24px; border-radius: 50%; background: var(--olive); color: var(--paper); font-size: 10px; font-weight: 800; place-items: center; }
+.course-app .greeting-speech-bubble { display: grid; gap: 3px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 4px 12px 12px 12px; background: var(--paper); }
+.course-app .speaker-b .greeting-speech-bubble { border-radius: 12px 4px 12px 12px; background: var(--note); }
+.course-app .greeting-speech-bubble strong { font-size: 13px; line-height: 1.45; }
+.course-app .greeting-speech-bubble small { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.5; }
+.course-app .greetings-natural-list { display: grid; gap: 8px; margin-top: 20px; }
+.course-app .greetings-natural-row { display: grid; grid-template-columns: minmax(0, 1fr) 25px minmax(0, 1fr); gap: 15px; align-items: center; padding: 13px 16px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); }
+.course-app .greetings-natural-row > div { display: grid; gap: 4px; }
+.course-app .greetings-natural-row small { color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.course-app .greetings-natural-row strong { font-size: 15px; }
+.course-app .greetings-natural-row > span { color: var(--olive); text-align: center; }
+.course-app .greetings-natural-row p { margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.5; }
+.course-app .greetings-recap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
+.course-app .greetings-recap > div { padding: 15px 17px; border: 1px solid var(--line); border-radius: 13px; background: var(--warm); }
+.course-app .greetings-recap p { margin: 9px 0 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 12px; line-height: 1.7; }
+.course-app .greetings-next-cue { margin-top: 23px !important; color: var(--olive) !important; font-size: 13px !important; font-weight: 700; text-align: right; }
+.course-app .greetings-outline { position: sticky; top: 119px; padding-left: 17px; border-left: 1px solid var(--line); }
+.course-app .greetings-outline > span { display: block; margin-bottom: 13px; color: var(--olive); font-size: 10px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.course-app .greetings-outline nav { display: grid; gap: 5px; }
+.course-app .greetings-outline a { padding: 7px 8px; border-radius: 7px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 11px; line-height: 1.45; text-decoration: none; }
+.course-app .greetings-outline a:hover { background: var(--surface); color: var(--ink); }
+.course-app .greetings-outline a.active { background: var(--surface-strong); color: var(--ink); font-weight: 700; }
+
+/* Greetings practice */
+.course-app .greetings-practice-page { max-width: 980px; }
+.course-app .greetings-practice-flow { display: grid; grid-template-columns: 1fr 30px 1fr 30px 1fr; align-items: center; margin: 5px 0 43px; padding: 15px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.course-app .greetings-practice-flow > div { display: grid; grid-template-columns: 29px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 9px; align-items: center; }
+.course-app .greetings-practice-flow b { display: grid; grid-row: 1 / 3; width: 29px; height: 29px; border-radius: 50%; background: var(--olive); color: var(--paper); font-size: 10px; place-items: center; }
+.course-app .greetings-practice-flow span { font-size: 13px; font-weight: 800; }
+.course-app .greetings-practice-flow small { color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; }
+.course-app .greetings-practice-flow i { color: var(--muted); font-style: normal; text-align: center; }
+.course-app .greetings-shadow-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.course-app .greetings-shadow-card { padding: 17px; border: 1px solid var(--line); border-radius: 15px; background: var(--paper); }
+.course-app .greetings-shadow-card.is-looping { border-color: var(--olive); box-shadow: 0 0 0 2px var(--surface-strong); }
+.course-app .greeting-shadow-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 10px; }
+.course-app .greeting-shadow-meta small { color: var(--olive); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.course-app .greetings-shadow-card h3 { margin: 19px 0 17px; color: var(--ink); font-size: 22px; letter-spacing: -.03em; }
+.course-app .greetings-shadow-controls { display: flex; flex-wrap: wrap; gap: 7px; }
+.course-app .greetings-shadow-controls button,
+.course-app .greetings-natural-practice-row button { display: inline-flex; align-items: center; gap: 5px; min-height: 30px; padding: 0 10px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; font-weight: 700; }
+.course-app .greetings-shadow-controls button:hover,
+.course-app .greetings-shadow-controls button[aria-pressed="true"],
+.course-app .greetings-natural-practice-row button:hover { border-color: var(--olive); background: var(--surface-strong); color: var(--ink); }
+.course-app .greetings-shadow-controls svg,
+.course-app .greetings-natural-practice-row svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.course-app .greetings-dialogue-practice { padding-top: 5px; }
+.course-app .greetings-role-toggle { display: flex; gap: 7px; margin: 18px 0 12px; }
+.course-app .greetings-role-toggle button { min-height: 33px; padding: 0 13px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-size: 11px; font-weight: 700; }
+.course-app .greetings-role-toggle button.active { border-color: var(--olive); background: var(--surface-strong); color: var(--ink); }
+.course-app .greetings-dialogue-practice-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.course-app .greetings-dialogue-practice-card { display: grid; gap: 9px; padding: 17px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); }
+.course-app .greetings-dialogue-practice-card > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.course-app .greetings-practice-line { display: grid; grid-template-columns: 25px minmax(0, 1fr) 20px; gap: 9px; align-items: center; width: 100%; padding: 11px 9px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--muted); cursor: pointer; text-align: left; }
+.course-app .greetings-practice-line:hover,
+.course-app .greetings-practice-line.your-line { border-color: var(--olive); background: var(--surface-strong); color: var(--ink); }
+.course-app .greetings-practice-line > span { display: grid; width: 22px; height: 22px; border-radius: 50%; background: var(--surface-strong); color: var(--olive); font-size: 9px; font-weight: 800; place-items: center; }
+.course-app .greetings-practice-line strong { font-size: 12px; line-height: 1.45; }
+.course-app .greetings-practice-line svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.course-app .greetings-natural-practice-row { display: grid; grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr) 30px; gap: 10px; align-items: center; margin-top: 9px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.course-app .greetings-natural-practice-row span { color: var(--muted); font-size: 13px; }
+.course-app .greetings-natural-practice-row b { color: var(--olive); text-align: center; }
+.course-app .greetings-natural-practice-row strong { font-size: 14px; }
+.course-app .greetings-natural-practice-row button { width: 30px; height: 30px; padding: 0; justify-content: center; }
+.course-app .greetings-finish-card { margin-top: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 17px; background: var(--surface-strong); }
+.course-app .greetings-finish-card h2 { margin: 8px 0 8px; color: var(--ink); font-size: 23px; }
+.course-app .greetings-finish-card p { max-width: 620px; margin: 0; color: var(--muted); font-family: 'Noto Sans JP', sans-serif; font-size: 13px; line-height: 1.8; }
+
+/* Four compact roles fit the filler chapter's opening strip. */
+.course-app .filler-function-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (max-width: 900px) {
+  .course-app .greetings-reader { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .course-app .greetings-outline { position: static; order: -1; display: flex; gap: 15px; align-items: center; padding: 10px 0; border: 0; border-bottom: 1px solid var(--line); overflow-x: auto; }
+  .course-app .greetings-outline > span { flex: 0 0 auto; margin: 0; }
+  .course-app .greetings-outline nav { display: flex; gap: 4px; }
+  .course-app .greetings-outline a { flex: 0 0 auto; white-space: nowrap; }
+}
+
+@media (max-width: 760px) {
+  .course-app .greetings-content-section,
+  .course-app .greetings-practice-section { margin-bottom: 36px; scroll-margin-top: 88px; }
+  .course-app .greetings-hero-section,
+  .course-app .greetings-exchange-heading { grid-template-columns: 1fr; gap: 18px; }
+  .course-app .greetings-hero-section > .greetings-scene-image { order: -1; min-height: 165px; }
+  .course-app .greetings-signal-strip { grid-template-columns: 1fr; gap: 0; margin-bottom: 34px; }
+  .course-app .filler-function-strip { grid-template-columns: 1fr; }
+  .course-app .greetings-signal-item { padding: 8px 0; }
+  .course-app .greetings-context-grid,
+  .course-app .greetings-phrase-grid,
+  .course-app .greetings-dialogue-grid,
+  .course-app .greetings-recognition-list,
+  .course-app .greetings-recap,
+  .course-app .greetings-shadow-grid,
+  .course-app .greetings-dialogue-practice-list { grid-template-columns: 1fr; }
+  .course-app .greetings-vocab-section { padding: 15px; }
+  .course-app .greetings-vocab-head { grid-template-columns: 108px minmax(0, 1fr); gap: 12px; }
+  .course-app .greetings-vocab-head .greetings-scene-image { min-height: 88px; }
+  .course-app .greetings-natural-row { grid-template-columns: minmax(0, 1fr) 18px minmax(0, 1fr); gap: 9px; padding: 12px 10px; }
+  .course-app .greetings-natural-row strong { font-size: 13px; }
+  .course-app .greetings-natural-row p { grid-column: 1 / -1; }
+  .course-app .greetings-practice-flow { grid-template-columns: 1fr; gap: 9px; margin-bottom: 31px; }
+  .course-app .greetings-practice-flow > div { grid-template-columns: 29px minmax(0, 1fr); }
+  .course-app .greetings-practice-flow > i { display: none; }
+  .course-app .greetings-natural-practice-row { grid-template-columns: minmax(0, 1fr) 17px minmax(0, 1fr) 30px; gap: 6px; padding: 11px 9px; }
+  .course-app .greetings-natural-practice-row span,
+  .course-app .greetings-natural-practice-row strong { font-size: 12px; }
+  .course-app .greeting-dialogue-header { flex-direction: column; }
+}
+
+/* Keep the lesson-specific surfaces legible in the existing night theme. */
+.course-app.theme-dark .greeting-phrase-card,
+.course-app.theme-dark .greeting-speech-bubble,
+.course-app.theme-dark .greetings-shadow-card,
+.course-app.theme-dark .greetings-practice-line { background: var(--paper); }
+.course-app.theme-dark .greetings-vocab-section,
+.course-app.theme-dark .greeting-dialogue-card,
+.course-app.theme-dark .greetings-dialogue-practice-card { background: var(--surface); }
+.course-app.theme-dark .greetings-pull-quote { color: var(--brand) !important; }
+.course-app.theme-dark .greetings-register-chip-regional { background: #3a3529; color: #d9c591; }

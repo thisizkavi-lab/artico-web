@@ -1,0 +1,138 @@
+/** Chapter 21 · Cafés and coffee shops. */
+export const cafesLesson = {
+  id: 'cafes',
+  kind: 'cafes',
+  number: '21',
+  title: 'なぜ「カフェで使う英語」を学ぶのでしょうか？',
+  enTitle: 'Cafés and coffee shops',
+  ja: '注文、店員からの質問、席、Wi-Fi、おかわりを自然にやり取りします。',
+  cando: 'カフェで欲しいものを注文し、店員の質問に答え、席やWi-Fiについて尋ねられる。',
+  learn: {
+    intro: [
+      'カフェは、日常英語を実際に使う機会がとても多い場所の一つです。会話自体は短くても、相手の質問を理解し、自分で選び、欲しいものを伝え、丁寧に返事をする必要があります。',
+      'そのため、カフェでの会話は、目的がはっきりした実践的なコミュニケーションを練習するのに適しています。決まった流れがあるからこそ、最初は安心して声に出せます。',
+      'この章では、食べ物や飲み物の注文、店員からのよくある質問への答え方、席やWi-Fiについて尋ねる表現などを学びます。',
+    ],
+    functions: [
+      ['01', '注文を始める'],
+      ['02', '好みを伝える'],
+      ['03', '席を見つける'],
+      ['04', '追加を頼む'],
+    ],
+    ordering: {
+      title: 'カフェでの注文の流れ',
+      enTitle: 'At the coffee shop',
+      intro: '店員の質問を聞き、飲み物や食べ物、店内か持ち帰りかを順番に伝えます。',
+      image: '/assets/illustrations/greeting-casual-chat.svg',
+      phrases: [
+        { phrase: 'Hi, what can I get you?', meaning: 'いらっしゃいませ、何になさいますか？', context: '店員が注文を聞く', register: 'neutral' },
+        { phrase: 'Two black coffees and an orange juice, please.', meaning: 'ブラックコーヒー2つと、オレンジジュースを1つお願いします。', context: '飲み物を注文する', register: 'polite' },
+        { phrase: 'To have in or take away?', meaning: '店内でお召し上がりですか、それともお持ち帰りですか？', context: '店員が場所を確認する', register: 'neutral' },
+        { phrase: 'To take away, please.', meaning: '持ち帰りでお願いします。', context: '持ち帰りを選ぶ', register: 'polite' },
+        { phrase: 'This sandwich is vegan, right?', meaning: 'このサンドイッチはヴィーガンですよね？', context: '食事の条件を確認する', register: 'neutral' },
+        { phrase: "That's right. Would you like it toasted?", meaning: 'はい、そうです。トーストしますか？', context: '店員が温めるか聞く', register: 'neutral' },
+        { phrase: "Excuse me, what's the Wi-Fi code?", meaning: 'すみません、Wi-Fiのパスワードは何ですか？', context: 'Wi-Fiを尋ねる', register: 'polite' },
+        { phrase: "It's right here, on this sign.", meaning: 'すぐそこの、このサインにありますよ。', context: '場所を教える', register: 'neutral' },
+      ],
+      recognition: [
+        { phrase: 'To have in or take away?', meaning: '店内ですか、持ち帰りですか？', note: 'アメリカ英語では For here or to go? が一般的です。' },
+      ],
+    },
+    phrases: {
+      title: 'カフェでよく使う・聞かれるフレーズ',
+      enTitle: 'More phrases',
+      intro: '注文する側と店員側、それぞれの短いフレーズをまとめて覚えます。',
+      image: '/assets/illustrations/greeting-online-wishes.svg',
+      phrases: [
+        { phrase: 'An iced coffee to go, please.', meaning: 'アイスコーヒーを持ち帰りでお願いします。', context: '短く注文する', register: 'polite' },
+        { phrase: 'Could I have a skinny latte?', meaning: 'スキニーラテをお願いできますか？', context: '無脂肪乳のラテを頼む', register: 'polite' },
+        { phrase: 'I brought my own cup.', meaning: 'マイカップを持参しました。', context: '自分のカップを使う', register: 'neutral' },
+        { phrase: 'Any milk or sugar?', meaning: 'ミルクや砂糖はいりますか？', context: '店員が好みを聞く', register: 'neutral' },
+        { phrase: 'Have you got a loyalty card?', meaning: 'ポイントカードはお持ちですか？', context: '店員がカードを聞く', register: 'neutral' },
+        { phrase: 'Regular or large?', meaning: 'レギュラーサイズですか、ラージサイズですか？', context: 'サイズを選ぶ', register: 'neutral' },
+        { phrase: "Take a seat and I'll bring your drinks over to you.", meaning: '席にお掛けください。飲み物はお席までお持ちします。', context: '席まで運ぶと伝える', register: 'polite' },
+      ],
+      recognition: [
+        { phrase: 'skinny latte', meaning: '無脂肪乳で作ったラテ', note: 'skinny はこの注文では「無脂肪乳の」という意味です。' },
+      ],
+    },
+    seating: {
+      title: '席の確保と、おかわり',
+      enTitle: 'Finding a seat and refills',
+      intro: '混んでいるカフェで席を探したり、友達の飲み物を一緒に買ったりする会話です。',
+      image: '/assets/illustrations/greeting-casual-chat.svg',
+      phrases: [
+        { phrase: "I'll wait for the drinks if you grab that table.", meaning: 'あなたがそこの席を取ってくれるなら、私が飲み物を待っているよ。', context: '友達と席と注文を分担する', register: 'casual' },
+        { phrase: 'Cappuccino for Andrew!', meaning: 'アンドリュー様、カプチーノです！', context: '店員が商品を呼ぶ', register: 'neutral' },
+        { phrase: 'Excuse me, is anyone sitting here?', meaning: 'すみません、ここは誰か座っていますか？', context: '空席を確認する', register: 'polite' },
+        { phrase: "No, it's all yours!", meaning: 'いいえ、どうぞ使ってください！', context: '席を譲る', register: 'casual' },
+        { phrase: "I'm getting a refill. Can I get you anything?", meaning: 'おかわりを買ってくるけど、何か買ってくる？', context: '追加注文を申し出る', register: 'casual' },
+        { phrase: "Ooh, I'd love another flat white with almond milk, please.", meaning: 'アーモンドミルクのフラットホワイトをもう一杯お願い。', context: '追加の飲み物を頼む', register: 'casual' },
+      ],
+      recognition: [
+        { phrase: "It's all yours!", meaning: 'どうぞ使ってください。', note: '空いている席を気持ちよく譲るときの定番表現です。' },
+        { phrase: 'flat white', meaning: 'エスプレッソにスチームミルクを合わせた飲み物', note: 'オセアニア発祥の人気のコーヒーです。' },
+      ],
+    },
+    dialogues: [
+      {
+        id: 'order',
+        label: 'Pattern A · Order',
+        title: '注文を始めて、持ち帰りを選ぶ',
+        lines: [
+          { speaker: 'A', en: 'Hi, what can I get you?', ja: 'いらっしゃいませ、何になさいますか？' },
+          { speaker: 'B', en: 'An iced coffee to go, please.', ja: 'アイスコーヒーを持ち帰りでお願いします。' },
+        ],
+      },
+      {
+        id: 'seat',
+        label: 'Pattern B · Find a seat',
+        title: '空席を確認する',
+        lines: [
+          { speaker: 'A', en: 'Excuse me, is anyone sitting here?', ja: 'すみません、ここは誰か座っていますか？' },
+          { speaker: 'B', en: "No, it's all yours!", ja: 'いいえ、どうぞ使ってください！' },
+        ],
+      },
+      {
+        id: 'refill',
+        label: 'Pattern C · Refill',
+        title: 'おかわりを申し出る',
+        lines: [
+          { speaker: 'A', en: "I'm getting a refill. Can I get you anything?", ja: 'おかわりを買ってくるけど、何か買ってくる？' },
+          { speaker: 'B', en: "I'd love another flat white with almond milk, please.", ja: 'アーモンドミルクのフラットホワイトをもう一杯お願い。' },
+        ],
+      },
+    ],
+    tip: 'カフェで I want… と言うより、Could I have…? や Can I get…? を使うと丁寧で自然です。Can I get a cappuccino, please? は、さまざまな英語圏で通じる便利な注文フレーズです。',
+  },
+  practice: {
+    title: 'カフェの短いやり取りを、自分の注文にする',
+    instructions: '日本語の説明はここまで。注文、サイズ、持ち帰り、席、追加注文を英語だけで声に重ねます。',
+    coreHeading: 'まずは、カウンターでそのまま使える一文から。',
+    dialogueHeading: '店員と客の順番を感じる。',
+    dialogueDescription: '店員の質問を聞いてから、自分の注文や返事を自然な間で重ねます。',
+    finishTitle: '次にカフェへ行ったら、Could I have…? で一つ注文してみましょう。',
+    corePhrases: [
+      { phrase: 'Hi, what can I get you?', context: '注文を始める', rate: 0.86 },
+      { phrase: 'An iced coffee to go, please.', context: '持ち帰りを注文する', rate: 0.82 },
+      { phrase: 'Could I have a skinny latte?', context: 'ミルクを指定する', rate: 0.8 },
+      { phrase: 'To have in or take away?', context: '店員の質問を聞く', rate: 0.84 },
+      { phrase: 'Any milk or sugar?', context: '店員の質問を聞く', rate: 0.86 },
+      { phrase: 'Regular or large?', context: 'サイズを選ぶ', rate: 0.86 },
+      { phrase: "Excuse me, what's the Wi-Fi code?", context: 'Wi-Fiを尋ねる', rate: 0.78 },
+      { phrase: 'Is anyone sitting here?', context: '空席を確認する', rate: 0.84 },
+      { phrase: "It's all yours!", context: '席を譲る', rate: 0.86 },
+      { phrase: 'Can I get you anything?', context: '追加を尋ねる', rate: 0.82 },
+    ],
+    dialogues: [
+      { title: 'Order', lines: ['Hi, what can I get you?', 'An iced coffee to go, please.'] },
+      { title: 'Find a seat', lines: ['Excuse me, is anyone sitting here?', "No, it's all yours!"] },
+      { title: 'Refill', lines: ["I'm getting a refill. Can I get you anything?", "I'd love another flat white with almond milk, please."] },
+    ],
+    natural: [
+      { full: 'Could I have an iced coffee to take away, please?', natural: 'An iced coffee to go, please.' },
+      { full: 'Do you want regular or large?', natural: 'Regular or large?' },
+      { full: 'Can I get you anything else?', natural: 'Can I get you anything?' },
+    ],
+  },
+}

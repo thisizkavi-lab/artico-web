@@ -3,7 +3,168 @@ import { allTwisters, alphabet, learnSteps, tongueGroups } from './data'
 import { socialFluencyChapters, socialFluencyParts } from './socialFluencyCurriculum'
 import { orientationSections } from './orientationContent'
 import { howItWorksSections } from './howItWorksContent'
+import { greetingsLesson } from './greetingsContent'
+import { introductionsLesson } from './introductionsContent'
+import { fillersLesson } from './fillersContent'
+import { repairLesson } from './repairContent'
+import { opinionsLesson } from './opinionsContent'
+import { agreementLesson } from './agreementContent'
+import { suggestionsLesson } from './suggestionsContent'
+import { thanksLesson } from './thanksContent'
+import { sorryLesson } from './sorryContent'
+import { goodbyeLesson } from './goodbyeContent'
+import { datesWeatherLesson } from './datesWeatherContent'
+import { arrangementsLesson } from './arrangementsContent'
+import { weatherLesson } from './weatherContent'
+import { familyLesson } from './familyContent'
+import { talkingFamilyLesson } from './talkingFamilyContent'
+import { lifeEventsLesson } from './lifeEventsContent'
+import { socializingLesson } from './socializingContent'
+import { datingLesson } from './datingContent'
+import { supportLesson } from './supportContent'
+import { eatingDrinkingLesson } from './eatingDrinkingContent'
+import { cafesLesson } from './cafesContent'
+import { takeawayLesson } from './takeawayContent'
+import { barsLesson } from './barsContent'
+import { restaurantLesson } from './restaurantContent'
+import { cookingLesson } from './cookingContent'
+import { freeTimeLesson } from './freeTimeContent'
+import { cinemaLesson } from './cinemaContent'
+import { theatreLesson } from './theatreContent'
+import { concertsLesson } from './concertsContent'
+import { gymLesson } from './gymContent'
+import { sportsLesson } from './sportsContent'
+import { sportsEventsLesson } from './sportsEventsContent'
+import { hobbiesLesson } from './hobbiesContent'
+import { shopsLesson } from './shopsContent'
+import { marketLesson } from './marketContent'
+import { supermarketLesson } from './supermarketContent'
+import { gardenLesson } from './gardenContent'
+import { diyLesson } from './diyContent'
+import { clothesLesson } from './clothesContent'
+import { returnsLesson } from './returnsContent'
+import { hairBeautyLesson } from './hairBeautyContent'
+import { postLesson } from './postContent'
+import { financeLesson } from './financeContent'
+import { libraryLesson } from './libraryContent'
+import { workStudyLesson } from './workStudyContent'
+import { schoolLesson } from './schoolContent'
+import { higherEducationLesson } from './higherEducationContent'
+import { lookingForWorkLesson } from './lookingForWorkContent'
+import { applyingForJobLesson } from './applyingForJobContent'
+import { jobInterviewsLesson } from './jobInterviewsContent'
+import { startingNewJobLesson } from './startingNewJobContent'
+import { workplaceLesson } from './workplaceContent'
+import { presentationLesson } from './presentationContent'
+import { workMeetingsLesson } from './workMeetingsContent'
+import { onlineMeetingsLesson } from './onlineMeetingsContent'
+import { homeLesson } from './homeContent'
+import { findingHomeLesson } from './findingHomeContent'
+import { movingHouseLesson } from './movingHouseContent'
+import { neighboursLesson } from './neighboursContent'
+import { choresLesson } from './choresContent'
+import { homeImprovementsLesson } from './homeImprovementsContent'
+import { petsLesson } from './petsContent'
+import { homeEmergenciesLesson } from './homeEmergenciesContent'
+import { homeEntertainmentLesson } from './homeEntertainmentContent'
+import { gettingAroundLesson } from './gettingAroundContent'
+import { busesCoachesLesson } from './busesCoachesContent'
+import { trainMetroLesson } from './trainMetroContent'
+import { airportLesson } from './airportContent'
+import { cyclingLesson } from './cyclingContent'
+import { taxisLesson } from './taxisContent'
+import { garageLesson } from './garageContent'
+import { holidayLesson } from './holidayContent'
+import { bookingHolidayLesson } from './bookingHolidayContent'
+import { hotelLesson } from './hotelContent'
+import { citySightseeingLesson } from './citySightseeingContent'
+import { campingLesson } from './campingContent'
+import { beachLesson } from './beachContent'
+import { findingWayLesson } from './findingWayContent'
+import { holidayProblemsLesson } from './holidayProblemsContent'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
+
+const interactiveSocialLessons = {
+  'social-01': greetingsLesson,
+  'social-02': introductionsLesson,
+  'social-03': fillersLesson,
+  'social-04': repairLesson,
+  'social-05': opinionsLesson,
+  'social-06': agreementLesson,
+  'social-07': suggestionsLesson,
+  'social-08': thanksLesson,
+  'social-09': sorryLesson,
+  'social-10': goodbyeLesson,
+  'social-11': datesWeatherLesson,
+  'social-12': arrangementsLesson,
+  'social-13': weatherLesson,
+  'social-14': familyLesson,
+  'social-15': talkingFamilyLesson,
+  'social-16': lifeEventsLesson,
+  'social-17': socializingLesson,
+  'social-18': datingLesson,
+  'social-19': supportLesson,
+  'social-20': eatingDrinkingLesson,
+  'social-21': cafesLesson,
+  'social-22': takeawayLesson,
+  'social-23': barsLesson,
+  'social-24': restaurantLesson,
+  'social-25': cookingLesson,
+  'social-26': freeTimeLesson,
+  'social-27': cinemaLesson,
+  'social-28': theatreLesson,
+  'social-29': concertsLesson,
+  'social-30': gymLesson,
+  'social-31': sportsLesson,
+  'social-32': sportsEventsLesson,
+  'social-33': hobbiesLesson,
+  'social-34': shopsLesson,
+  'social-35': marketLesson,
+  'social-36': supermarketLesson,
+  'social-37': gardenLesson,
+  'social-38': diyLesson,
+  'social-39': clothesLesson,
+  'social-40': returnsLesson,
+  'social-41': hairBeautyLesson,
+  'social-42': postLesson,
+  'social-43': financeLesson,
+  'social-44': libraryLesson,
+  'social-45': workStudyLesson,
+  'social-46': schoolLesson,
+  'social-47': higherEducationLesson,
+  'social-48': lookingForWorkLesson,
+  'social-49': applyingForJobLesson,
+  'social-50': jobInterviewsLesson,
+  'social-51': startingNewJobLesson,
+  'social-52': workplaceLesson,
+  'social-53': presentationLesson,
+  'social-54': workMeetingsLesson,
+  'social-55': onlineMeetingsLesson,
+  'social-56': homeLesson,
+  'social-57': findingHomeLesson,
+  'social-58': movingHouseLesson,
+  'social-59': neighboursLesson,
+  'social-60': choresLesson,
+  'social-61': homeImprovementsLesson,
+  'social-62': petsLesson,
+  'social-63': homeEmergenciesLesson,
+  'social-64': homeEntertainmentLesson,
+  'social-65': gettingAroundLesson,
+  'social-66': busesCoachesLesson,
+  'social-67': trainMetroLesson,
+  'social-68': airportLesson,
+  'social-69': cyclingLesson,
+  'social-70': taxisLesson,
+  'social-71': garageLesson,
+  'social-72': holidayLesson,
+  'social-73': bookingHolidayLesson,
+  'social-74': hotelLesson,
+  'social-75': citySightseeingLesson,
+  'social-76': campingLesson,
+  'social-77': beachLesson,
+  'social-78': findingWayLesson,
+  'social-79': holidayProblemsLesson,
+}
 
 function speakWithBrowser(text, options = {}) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return false
@@ -1771,7 +1932,13 @@ function CourseApp({ onHome }) {
     setEverydayPracticeStep('substitute')
   }
 
-  const currentEverydayModule = socialFluencyChapters.find((chapter) => chapter.id === everydayModuleId)
+  const currentEverydayChapter = socialFluencyChapters.find((chapter) => chapter.id === everydayModuleId)
+  // Keep curated Social Fluency lessons interactive while the remaining
+  // manuscript chapters stay in their coming-soon state.
+  const interactiveSocialLesson = interactiveSocialLessons[currentEverydayChapter?.id]
+  const currentEverydayModule = interactiveSocialLesson
+    ? { ...currentEverydayChapter, status: 'interactive', lessons: [interactiveSocialLesson] }
+    : currentEverydayChapter
   const currentEverydayLesson = currentEverydayModule?.lessons?.find((lesson) => lesson.id === everydayLessonId) || currentEverydayModule?.lessons?.[0]
   const foundationPracticeAvailable = activeStep === 'tongue-intro'
   const everydayPracticeAvailable = Boolean(currentEverydayLesson?.practice)

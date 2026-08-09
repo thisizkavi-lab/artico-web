@@ -82,6 +82,7 @@ import { campingLesson } from './campingContent'
 import { beachLesson } from './beachContent'
 import { findingWayLesson } from './findingWayContent'
 import { holidayProblemsLesson } from './holidayProblemsContent'
+import { healthMedicineLesson } from './healthMedicineContent'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
 
 const interactiveSocialLessons = {
@@ -164,6 +165,7 @@ const interactiveSocialLessons = {
   'social-77': beachLesson,
   'social-78': findingWayLesson,
   'social-79': holidayProblemsLesson,
+  'social-80': healthMedicineLesson,
 }
 
 function speakWithBrowser(text, options = {}) {

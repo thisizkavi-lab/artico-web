@@ -2172,3 +2172,419 @@ svg { display: block; }
 .course-app.theme-dark .greetings-dialogue-practice-card { background: var(--surface); }
 .course-app.theme-dark .greetings-pull-quote { color: var(--brand) !important; }
 .course-app.theme-dark .greetings-register-chip-regional { background: #3a3529; color: #d9c591; }
+
+/* -----------------------------------------------------------------------
+   Zenith Academic — bilingual light theme
+   A paper-like, low-glare system shared by the landing page and course app.
+   ----------------------------------------------------------------------- */
+:root {
+  --zenith-ink: #2d3436;
+  --zenith-paper: #ffffff;
+  --zenith-background: #f8f9f7;
+  --zenith-surface: #ffffff;
+  --zenith-surface-soft: #f1f4ef;
+  --zenith-border: #dadad9;
+  --zenith-muted: #667174;
+  --zenith-sage: #588157;
+  --zenith-sage-soft: #a3b18a;
+  --zenith-note: #f3f5ef;
+  --zenith-radius: 4px;
+  --zenith-page-margin: 80px;
+  --zenith-gutter: 32px;
+  --zenith-section-gap: 48px;
+  color: var(--zenith-ink);
+  color-scheme: light;
+  font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif;
+}
+
+html,
+body,
+html[data-artico-theme="dark"],
+html[data-artico-theme="dark"] body {
+  background: var(--zenith-paper);
+  color: var(--zenith-ink);
+  color-scheme: light;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif;
+}
+
+button,
+.primary-button,
+.secondary-button,
+.login-button,
+.language-button {
+  border-radius: var(--zenith-radius);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--zenith-sage);
+  outline-offset: 3px;
+}
+
+.landing-page {
+  --ink: var(--zenith-ink);
+  --paper: var(--zenith-paper);
+  --warm: var(--zenith-background);
+  --surface: var(--zenith-surface-soft);
+  --surface-strong: #e8eee5;
+  --line: var(--zenith-border);
+  --muted: var(--zenith-muted);
+  --olive: var(--zenith-sage);
+  --brand: var(--zenith-sage);
+  --note: var(--zenith-note);
+  --shadow: none;
+  background: var(--zenith-paper);
+  color: var(--zenith-ink);
+}
+
+.landing-header {
+  min-height: 78px;
+  padding: 0 var(--zenith-page-margin);
+  border-bottom: 1px solid var(--zenith-border);
+  background: rgba(255, 255, 255, .96);
+  box-shadow: none;
+}
+
+.landing-header nav { gap: 32px; }
+.landing-header nav a,
+.landing-footer a,
+.landing-footer span,
+.landing-footer button { color: var(--zenith-ink); }
+
+.logo > span { color: var(--zenith-sage); }
+.logo small { color: var(--zenith-muted); }
+
+.primary-button {
+  min-height: 44px;
+  padding: 12px 24px;
+  border: 1px solid var(--zenith-sage);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-sage);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  box-shadow: none;
+  transform: none;
+}
+
+.primary-button:hover {
+  background: #416a45;
+  box-shadow: none;
+  transform: none;
+}
+
+.primary-button svg { width: 20px; height: 20px; }
+
+/* Keep the exact Zenith button rhythm even where older hero/CTA selectors
+   supplied larger, full-height variants. */
+.landing-page .primary-button,
+.landing-page .hero-content .primary-button,
+.landing-page .landing-cta .primary-button,
+.landing-page .header-actions .primary-button,
+.course-app .primary-button {
+  min-height: 44px;
+  padding: 12px 24px;
+  border-radius: var(--zenith-radius);
+}
+
+.language-button {
+  width: auto;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 10px;
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-paper);
+  color: var(--zenith-ink);
+}
+
+.login-button {
+  min-height: 44px;
+  padding: 12px 24px;
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: transparent;
+  color: var(--zenith-ink);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero-section { background: var(--zenith-background); }
+.scene-fill { fill: #e4ebe2; }
+.scene-lines { stroke: var(--zenith-sage-soft); }
+.landing-feature,
+.landing-cta,
+.landing-footer { background: var(--zenith-paper); }
+.landing-feature { gap: var(--zenith-section-gap); padding: var(--zenith-page-margin); }
+.landing-cta { padding: var(--zenith-page-margin); }
+.landing-footer { padding-right: var(--zenith-page-margin); padding-left: var(--zenith-page-margin); }
+
+.product-preview,
+.phrase-card,
+.today-guidance {
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-surface);
+  box-shadow: none;
+}
+
+.product-preview { padding: 32px; }
+.phrase-card { padding: 32px; }
+.preview-top > span:first-child { border-radius: var(--zenith-radius); background: var(--zenith-sage); }
+.preview-plus { border-radius: var(--zenith-radius); border-color: var(--zenith-border); }
+.phrase-card button { border-radius: var(--zenith-radius); background: var(--zenith-sage); }
+.today-guidance { padding: 20px 24px; }
+.toast { border-radius: var(--zenith-radius); background: var(--zenith-ink); box-shadow: none; }
+
+.course-app {
+  --ink: var(--zenith-ink);
+  --paper: var(--zenith-paper);
+  --warm: var(--zenith-background);
+  --surface: var(--zenith-surface-soft);
+  --surface-strong: #e8eee5;
+  --line: var(--zenith-border);
+  --muted: var(--zenith-muted);
+  --olive: var(--zenith-sage);
+  --brand: var(--zenith-sage);
+  --note: var(--zenith-note);
+  --shadow: none;
+  background: var(--zenith-background);
+  color: var(--zenith-ink);
+  color-scheme: light;
+  font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif;
+}
+
+.course-app .app-header {
+  grid-template-columns: 240px minmax(260px, 1fr) 240px;
+  height: 78px;
+  padding: 0 var(--zenith-gutter);
+  border-bottom: 1px solid var(--zenith-border);
+  background: rgba(255, 255, 255, .98);
+  box-shadow: none;
+}
+
+.course-app .app-body { grid-template-columns: 304px minmax(0, 1fr); }
+.course-app .lesson-sidebar,
+.course-app .practice-sidebar,
+.course-app .everyday-sidebar {
+  top: 78px;
+  height: calc(100vh - 78px);
+  border-right: 1px solid var(--zenith-border);
+  background: var(--zenith-paper);
+}
+
+.course-app .lesson-main { background: var(--zenith-background); }
+.course-app .lesson-page,
+.course-app .practice-page {
+  max-width: none;
+  padding: var(--zenith-page-margin) var(--zenith-page-margin) 48px;
+}
+
+.course-app .mode-switch {
+  width: min(390px, 100%);
+  padding: 3px;
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-paper);
+}
+
+.course-app .mode-switch button {
+  height: 40px;
+  border-radius: var(--zenith-radius);
+  color: var(--zenith-muted);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.course-app .mode-switch button.active {
+  background: var(--zenith-sage);
+  color: #ffffff;
+}
+
+.course-app .profile-button,
+.course-app .profile-button svg { width: 40px; height: 40px; }
+.course-app .profile-button { border-radius: var(--zenith-radius); }
+.course-app .profile-button svg { stroke: var(--zenith-ink); }
+
+.course-app .curriculum-tree { padding: 24px 16px 10px; }
+.course-app .curriculum-section + .curriculum-section { margin-top: 24px; }
+.course-app .curriculum-item,
+.course-app .curriculum-subitem { border-radius: var(--zenith-radius); }
+.course-app .curriculum-item:hover,
+.course-app .curriculum-subitem:hover { background: var(--zenith-surface-soft); }
+.course-app .curriculum-item.active,
+.course-app .curriculum-subitem.active { background: #e8eee5; box-shadow: none; }
+.course-app .curriculum-item.active .curriculum-number { background: var(--zenith-sage); border-color: var(--zenith-sage); }
+
+.course-app .lesson-footer { margin-top: var(--zenith-section-gap); }
+.course-app .lesson-footer-actions { gap: 16px; }
+.course-app .secondary-button {
+  min-height: 44px;
+  padding: 12px 24px;
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: transparent;
+  color: var(--zenith-ink);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.course-app .secondary-button:hover:not(:disabled) {
+  border-color: var(--zenith-sage);
+  background: var(--zenith-surface-soft);
+  color: var(--zenith-ink);
+  transform: none;
+}
+
+.course-app .lesson-footer-actions .primary-button {
+  min-height: 44px;
+  padding: 12px 24px;
+  border-radius: var(--zenith-radius);
+}
+
+.lesson-action-ja { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; }
+.lesson-action-en { font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif; }
+
+.course-app :where(
+  .orientation-row,
+  .session-card,
+  .orientation-section,
+  .orientation-closing,
+  .alphabet-board,
+  .video-reference,
+  .guided-panel,
+  .writing-panel,
+  .writing-lesson-card,
+  .writing-supplies-card,
+  .writing-paper-note,
+  .sound-lesson-card,
+  .sound-note,
+  .sound-ipa-card,
+  .compact-video > div:last-child,
+  .tongue-theory-card,
+  .tongue-theory-group,
+  .tongue-minimal-pairs > div,
+  .theory-audio-sample,
+  .practice-welcome-card,
+  .practice-stage-card,
+  .practice-build-step,
+  .clean-reps-card,
+  .speed-challenge-card,
+  .finish-columns > div,
+  .everyday-card,
+  .everyday-module-btn,
+  .everyday-rail-item,
+  .source-book-phrase-card,
+  .source-book-audio-shelf,
+  .greetings-vocab-section,
+  .greeting-dialogue-card,
+  .greeting-phrase-card,
+  .greeting-speech-bubble,
+  .greetings-practice-line,
+  .greetings-finish-card
+) {
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  box-shadow: none;
+}
+
+.course-app :where(
+  .orientation-row,
+  .orientation-section,
+  .alphabet-board,
+  .video-reference,
+  .guided-panel,
+  .writing-panel,
+  .writing-lesson-card,
+  .writing-supplies-card,
+  .writing-paper-note,
+  .sound-lesson-card,
+  .sound-ipa-card,
+  .theory-audio-sample,
+  .practice-welcome-card,
+  .practice-stage-card,
+  .everyday-card,
+  .source-book-phrase-card,
+  .greeting-dialogue-card,
+  .greeting-phrase-card
+) { background: var(--zenith-surface); }
+
+.course-app :where(
+  .session-card,
+  .orientation-callout,
+  .orientation-closing,
+  .theory-section-list li,
+  .tongue-japan-card,
+  .tongue-listen-callout,
+  .tongue-theory-group header,
+  .practice-technique-grid > div,
+  .practice-build-step.final,
+  .practice-build-step.done,
+  .challenge-status,
+  .source-book-audio-shelf,
+  .greetings-practice-line
+) { background: var(--zenith-note); }
+
+.course-app :where(.section-kicker, .lesson-title small, .greetings-outline > span, .sidebar-heading > small) { color: var(--zenith-sage); }
+.course-app :where(.lesson-title h1, .greetings-section-heading h2, .greetings-hero-copy h2, .greeting-phrase-card h3, .greeting-dialogue-card h3) { color: var(--zenith-ink); }
+.course-app :where(.lesson-title p, .greetings-section-heading p, .greetings-hero-copy p, .greeting-phrase-card p, .greeting-speech-bubble small) { color: var(--zenith-muted); }
+
+.course-app .source-book-audio-shelf { padding: 16px; }
+.course-app .source-book-audio audio { accent-color: var(--zenith-sage); }
+.course-app .source-book-practice-tabs button { border-radius: var(--zenith-radius); }
+.course-app .source-book-practice-tabs button.active,
+.course-app .source-book-practice-tabs button:hover { border-color: var(--zenith-sage); background: var(--zenith-surface-soft); color: var(--zenith-ink); }
+
+.course-app .theory-outline a.active,
+.course-app .greetings-outline a.active { border-radius: var(--zenith-radius); background: var(--zenith-surface-soft); color: var(--zenith-ink); }
+.course-app .greetings-register-chip,
+.course-app .greetings-register-chip-casual,
+.course-app .greetings-register-chip-neutral,
+.course-app .greetings-register-chip-regional,
+.course-app .greetings-register-chip-polite,
+.course-app .greetings-register-chip-formal { border-radius: var(--zenith-radius); }
+
+.course-app .profile-panel {
+  border: 1px solid var(--zenith-border);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-paper);
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  :root { --zenith-page-margin: 24px; --zenith-gutter: 24px; }
+  .landing-header { padding: 0 24px; }
+  .landing-feature,
+  .landing-cta { padding: 64px 24px; }
+  .landing-footer { padding-right: 24px; padding-left: 24px; }
+  .course-app .app-header { height: 72px; padding: 0 24px; }
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar { top: 72px; height: auto; }
+  .course-app .lesson-page,
+  .course-app .practice-page { padding: 48px 24px 32px; }
+}
+
+@media (max-width: 760px) {
+  .landing-header { padding: 0 24px; }
+  .landing-feature,
+  .landing-cta { padding: 48px 24px; }
+  .course-app .app-header { padding: 0 16px; }
+  .course-app .lesson-page,
+  .course-app .practice-page { padding: 36px 24px 28px; }
+  .course-app .lesson-footer-actions { gap: 12px; }
+  .course-app .lesson-footer-actions .secondary-button,
+  .course-app .lesson-footer-actions .primary-button { padding: 12px 16px; }
+}

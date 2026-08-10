@@ -1204,8 +1204,14 @@ function SecondaryButton({ children, onClick, disabled = false }) {
   return <button className="secondary-button" type="button" onClick={onClick} disabled={disabled}><span aria-hidden="true">←</span>{children}</button>
 }
 
+function BilingualLessonAction({ direction, label }) {
+  const isNext = direction === 'next'
+  const fallback = isNext ? 'Next Lesson' : 'Previous Lesson'
+  return <><span className="lesson-action-ja">{isNext ? '次へ' : '前へ'}</span><span className="lesson-action-en">({label || fallback})</span></>
+}
+
 function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext, nextDisabled = false }) {
-  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}>{previousLabel}</SecondaryButton><PrimaryButton onClick={onNext} disabled={nextDisabled}>{label}</PrimaryButton></div></div>
+  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}><BilingualLessonAction direction="previous" label={previousLabel === 'Previous' ? 'Previous Lesson' : previousLabel} /></SecondaryButton><PrimaryButton onClick={onNext} disabled={nextDisabled}><BilingualLessonAction direction="next" label={label || 'Next Lesson'} /></PrimaryButton></div></div>
 }
 
 const theoryOutlines = {
@@ -1865,7 +1871,9 @@ function readStoredViewPreferences() {
   if (typeof window === 'undefined') return { darkMode: false, readingFocus: false }
   try {
     const stored = JSON.parse(window.localStorage.getItem(courseViewPreferencesStorageKey) || '{}')
-    return { darkMode: stored.darkMode === true, readingFocus: stored.readingFocus === true }
+    // Zenith Academic is the global light theme. Keep reading focus persisted,
+    // but migrate any previous night-theme preference back to the new default.
+    return { darkMode: false, readingFocus: stored.readingFocus === true }
   } catch {
     return { darkMode: false, readingFocus: false }
   }
@@ -1917,12 +1925,12 @@ function CourseApp({ onHome }) {
       themeColor?.setAttribute('content', '#111411')
     } else {
       delete document.documentElement.dataset.articoTheme
-      themeColor?.setAttribute('content', '#fffefa')
+      themeColor?.setAttribute('content', '#ffffff')
     }
 
     return () => {
       delete document.documentElement.dataset.articoTheme
-      themeColor?.setAttribute('content', '#fffefa')
+      themeColor?.setAttribute('content', '#ffffff')
     }
   }, [viewPreferences.darkMode])
 

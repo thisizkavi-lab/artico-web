@@ -466,7 +466,7 @@
 
 .course-app .greetings-conversation-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   gap: 18px;
   margin-top: 20px;
 }
@@ -526,6 +526,229 @@
 .course-app .greetings-interactive-lines svg,
 .course-app .greetings-roleplay-line svg { grid-column: 3; grid-row: 1 / 3; }
 .course-app .greetings-play-dialogue { width: calc(100% - 30px); margin: 0 15px 15px; background: #c98227; border-color: #c98227; }
+
+/* Conversation cards follow the reference chart: two large speech bubbles
+   around a shared scene, while the Japanese explanation stays attached to
+   each source line. */
+.course-app .greetings-conversation-card {
+  border: 2px solid #efbb28;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.course-app .greetings-conversation-card-header {
+  align-items: center;
+  padding: 17px 22px 9px;
+  border-bottom: 0;
+}
+
+.course-app .greetings-conversation-card-header h3 {
+  margin: 5px 0 0;
+  color: var(--zenith-ink);
+  font-size: 18px;
+}
+
+.course-app .greetings-conversation-turns {
+  color: #a66d1f;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.course-app .greetings-conversation-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 480px;
+  padding: 5px 25px 22px;
+  align-items: stretch;
+}
+
+.course-app .greetings-dialogue-bubble {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px;
+  gap: 5px 10px;
+  width: min(88%, 390px);
+  min-height: 116px;
+  padding: 18px 18px 14px;
+  border: 2px solid #f0ae0a;
+  border-radius: 18px;
+  background: #fffefa;
+  color: var(--zenith-ink);
+  cursor: pointer;
+  text-align: left;
+  transition: background .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+
+.course-app .greetings-dialogue-bubble::after {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-right: 2px solid #f0ae0a;
+  border-bottom: 2px solid #f0ae0a;
+  background: #fffefa;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.course-app .greetings-dialogue-bubble.bubble-top {
+  align-self: flex-start;
+}
+
+.course-app .greetings-dialogue-bubble.bubble-top::after {
+  bottom: -11px;
+  left: 42px;
+}
+
+.course-app .greetings-dialogue-bubble.bubble-bottom {
+  align-self: flex-end;
+}
+
+.course-app .greetings-dialogue-bubble.bubble-bottom::after {
+  top: -11px;
+  right: 42px;
+  transform: rotate(225deg);
+}
+
+.course-app .greetings-dialogue-bubble.bubble-middle {
+  align-self: center;
+  width: min(94%, 410px);
+}
+
+.course-app .greetings-dialogue-bubble.bubble-middle::after {
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.course-app .greetings-dialogue-bubble:hover,
+.course-app .greetings-dialogue-bubble:focus-visible,
+.course-app .greetings-dialogue-bubble.is-playing {
+  background: #fff6cc;
+  box-shadow: 0 0 0 3px rgba(240, 174, 10, .13);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.course-app .greetings-dialogue-speaker {
+  display: grid;
+  gap: 1px;
+  grid-column: 1;
+}
+
+.course-app .greetings-dialogue-speaker b {
+  color: #a44d0b;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.course-app .greetings-dialogue-speaker small {
+  color: #a66d1f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.course-app .greetings-dialogue-english {
+  grid-column: 1;
+  color: #172139;
+  font-size: clamp(16px, 1.55vw, 23px);
+  font-weight: 850;
+  line-height: 1.23;
+}
+
+.course-app .greetings-dialogue-sound {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 25px;
+  height: 25px;
+  color: #ef7c08;
+  place-items: center;
+}
+
+.course-app .greetings-sound-glyph {
+  width: 24px;
+  height: 24px;
+}
+
+.course-app .greetings-dialogue-japanese {
+  grid-column: 1 / -1;
+  color: var(--zenith-muted);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.course-app .greetings-conversation-stage > .greetings-conversation-scene {
+  display: block;
+  width: min(100%, 470px);
+  margin: 10px auto 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.course-app .greetings-conversation-stage > .greetings-conversation-scene:focus-visible {
+  outline: 3px solid rgba(88, 129, 87, .45);
+  outline-offset: 4px;
+}
+
+.course-app .greetings-conversation-stage > .greetings-play-dialogue {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1px 9px;
+  width: min(92%, 300px);
+  min-height: 55px;
+  margin: 0 auto 7px;
+  padding: 9px 18px;
+  border: 1px solid #f46808;
+  border-radius: 999px;
+  background: #f46808;
+  color: #fff;
+  cursor: pointer;
+  place-items: center start;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(160, 91, 20, .16);
+}
+
+.course-app .greetings-conversation-stage > .greetings-play-dialogue > .greetings-play-dialogue-icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+}
+
+.course-app .greetings-conversation-stage > .greetings-play-dialogue > span:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.course-app .greetings-conversation-stage > .greetings-play-dialogue small {
+  grid-column: 2;
+  grid-row: 2;
+  color: rgba(255, 255, 255, .86);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 9px;
+}
+
+.course-app .greetings-conversation-stage > .greetings-play-dialogue:hover,
+.course-app .greetings-conversation-stage > .greetings-play-dialogue:focus-visible {
+  background: #dc5907;
+  outline: 3px solid rgba(244, 104, 8, .22);
+  outline-offset: 2px;
+}
 
 .course-app .greetings-good-to-know {
   padding: 30px;

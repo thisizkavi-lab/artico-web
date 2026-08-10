@@ -421,30 +421,61 @@ function ConversationSceneSVG({ variant }) {
   )
 }
 
+function SoundGlyph() {
+  return (
+    <svg className="greetings-sound-glyph" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4Z" fill="currentColor" />
+      <path d="M16 9.5a4 4 0 0 1 0 5M18.5 7a7.5 7.5 0 0 1 0 10" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="1.9" />
+    </svg>
+  )
+}
+
+function ConversationBubble({ line, placement, dialogueId, index, speech }) {
+  const speaker = line.speaker || (index ? 'B' : 'A')
+  const playId = `${dialogueId}:${index}`
+  const isPlaying = speech.playingId === playId
+  return (
+    <button
+      type="button"
+      className={`greetings-dialogue-bubble bubble-${placement} ${isPlaying ? 'is-playing' : ''}`}
+      onClick={() => speech.play(playId, [line.en], 0.92)}
+      aria-label={`${line.en}を聞く`}
+    >
+      <span className="greetings-dialogue-speaker"><b>PERSON {speaker}</b><small>話者 {speaker}</small></span>
+      <span className="greetings-dialogue-english" lang="en">“{line.en}”</span>
+      <span className="greetings-dialogue-sound"><SoundGlyph /></span>
+      <small className="greetings-dialogue-japanese" lang="ja">{line.ja}</small>
+    </button>
+  )
+}
+
 function ConversationCard({ dialogue, speech, PlayIcon }) {
   const playId = `dialogue:${dialogue.id}`
+  const firstLine = dialogue.lines[0]
+  const lastLine = dialogue.lines[dialogue.lines.length - 1]
+  const middleLines = dialogue.lines.slice(1, -1)
   return (
     <article className="greetings-conversation-card">
-      <header>
-        <div><span className="section-kicker">{dialogue.label || 'Source dialogue'}</span><h3>{dialogue.title}</h3></div>
-        <span>{dialogue.lines.length} turns</span>
+      <header className="greetings-conversation-card-header">
+        <div>
+          <span className="section-kicker">{dialogue.label || 'Source dialogue'}</span>
+          <h3>{dialogue.title}</h3>
+        </div>
+        <span className="greetings-conversation-turns">{dialogue.lines.length} turns</span>
       </header>
-      <button type="button" className="greetings-conversation-scene" onClick={() => speech.play(playId, dialogue.lines.map((line) => line.en), 0.9)} aria-label={`${dialogue.title}をすべて聞く`}>
-        <ConversationSceneSVG variant={dialogue.id} />
-      </button>
-      <div className="greetings-conversation-lines">
-        {dialogue.lines.map((line, index) => (
-          <button key={`${dialogue.id}-${line.speaker}-${index}`} type="button" className={`speaker-${String(line.speaker || (index ? 'B' : 'A')).toLowerCase()}`} onClick={() => speech.play(`${dialogue.id}:${index}`, [line.en], 0.92)}>
-            <span>{line.speaker || (index ? 'B' : 'A')}</span>
-            <strong lang="en">{line.en}</strong>
-            <small lang="ja">{line.ja}</small>
-            <PlayGlyph PlayIcon={PlayIcon} />
-          </button>
-        ))}
+      <div className="greetings-conversation-stage">
+        {firstLine && <ConversationBubble line={firstLine} placement="top" dialogueId={dialogue.id} index={0} speech={speech} />}
+        <button type="button" className="greetings-conversation-scene" onClick={() => speech.play(playId, dialogue.lines.map((line) => line.en), 0.9)} aria-label={`${dialogue.title}をすべて聞く`}>
+          <ConversationSceneSVG variant={dialogue.id} />
+        </button>
+        <button type="button" className={`greetings-play-dialogue ${speech.playingId === playId ? 'is-playing' : ''}`} onClick={() => speech.play(playId, dialogue.lines.map((line) => line.en), 0.9)}>
+          <span className="greetings-play-dialogue-icon"><PlayGlyph PlayIcon={PlayIcon} /></span>
+          <span lang="en">{speech.playingId === playId ? 'Stop conversation' : 'Play full conversation'}</span>
+          <small lang="ja">{speech.playingId === playId ? '停止' : '会話全体を聞く'}</small>
+        </button>
+        {middleLines.map((line, index) => <ConversationBubble key={`${dialogue.id}-middle-${index}`} line={line} placement="middle" dialogueId={dialogue.id} index={index + 1} speech={speech} />)}
+        {lastLine && <ConversationBubble line={lastLine} placement="bottom" dialogueId={dialogue.id} index={dialogue.lines.length - 1} speech={speech} />}
       </div>
-      <button type="button" className={`greetings-play-dialogue ${speech.playingId === playId ? 'is-playing' : ''}`} onClick={() => speech.play(playId, dialogue.lines.map((line) => line.en), 0.9)}>
-        <PlayGlyph PlayIcon={PlayIcon} /> {speech.playingId === playId ? '停止' : '会話を最初から聞く'}
-      </button>
     </article>
   )
 }

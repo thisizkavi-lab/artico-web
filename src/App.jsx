@@ -724,20 +724,118 @@ function useActiveTheorySection(activeStep) {
   return activeSectionId
 }
 
+// Keep every in-page outline (theory pages and source-book chapters) on the
+// same navigation path. Some lesson views own their active state, while older
+// views only render plain anchors; this shared layer makes both behave alike.
+function useCourseOutlineNavigation() {
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return undefined
+
+    const outlineSelector = '.course-app .greetings-outline, .course-app .theory-outline'
+    let frame = null
+    const clickPriority = new WeakMap()
+
+    const applyActiveLink = (outline, activeLink) => {
+      const links = Array.from(outline.querySelectorAll('a[href^="#"]'))
+      links.forEach((link) => {
+        const isActive = link === activeLink
+        link.classList.toggle('active', isActive)
+        if (isActive) link.setAttribute('aria-current', 'location')
+        else link.removeAttribute('aria-current')
+      })
+    }
+
+    const updateActiveLinks = () => {
+      frame = null
+      const outlines = Array.from(document.querySelectorAll(outlineSelector))
+      const threshold = Math.max(120, Math.min(window.innerHeight * 0.34, 240))
+      const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80
+
+      outlines.forEach((outline) => {
+        const links = Array.from(outline.querySelectorAll('a[href^="#"]'))
+        const items = links
+          .map((link) => {
+            const href = link.getAttribute('href') || ''
+            const id = href.slice(1)
+            return { link, target: id ? document.getElementById(id) : null }
+          })
+          .filter((item) => item.target)
+        if (!items.length) return
+
+        const priority = clickPriority.get(outline)
+        if (priority && priority.until > performance.now()) {
+          const selected = items.find((item) => item.target.id === priority.id)
+          if (selected) {
+            applyActiveLink(outline, selected.link)
+            return
+          }
+        } else if (priority) clickPriority.delete(outline)
+
+        let active = items[0]
+        items.forEach((item) => {
+          if (item.target.getBoundingClientRect().top <= threshold) active = item
+        })
+        if (atBottom) active = items[items.length - 1]
+        applyActiveLink(outline, active.link)
+      })
+    }
+
+    const scheduleActiveUpdate = () => {
+      if (frame !== null) return
+      frame = window.requestAnimationFrame(updateActiveLinks)
+    }
+
+    const handleOutlineClick = (event) => {
+      const target = event.target instanceof Element ? event.target.closest(`${outlineSelector} a[href^="#"]`) : null
+      if (!target) return
+      const href = target.getAttribute('href') || ''
+      const id = href.slice(1)
+      const section = id ? document.getElementById(id) : null
+      if (!section) return
+
+      event.preventDefault()
+      const outline = target.closest(outlineSelector)
+      if (outline) clickPriority.set(outline, { id, until: performance.now() + 1200 })
+      if (outline) applyActiveLink(outline, target)
+      window.history.pushState({ ...window.history.state, outline: id }, '', href)
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      scheduleActiveUpdate()
+    }
+
+    document.addEventListener('click', handleOutlineClick)
+    window.addEventListener('scroll', scheduleActiveUpdate, { passive: true })
+    window.addEventListener('resize', scheduleActiveUpdate)
+    window.addEventListener('hashchange', scheduleActiveUpdate)
+
+    const mutationObserver = new MutationObserver(scheduleActiveUpdate)
+    mutationObserver.observe(document.body, { childList: true, subtree: true })
+    scheduleActiveUpdate()
+
+    return () => {
+      if (frame !== null) window.cancelAnimationFrame(frame)
+      mutationObserver.disconnect()
+      document.removeEventListener('click', handleOutlineClick)
+      window.removeEventListener('scroll', scheduleActiveUpdate)
+      window.removeEventListener('resize', scheduleActiveUpdate)
+      window.removeEventListener('hashchange', scheduleActiveUpdate)
+    }
+  }, [])
+}
+
 function LettersLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page letters-page">
       <LessonTitle eyebrow="Alphabets · 03" title="Alphabets" ja="英語のスタートラインへ。26個の文字と、大文字・小文字の形に出会います。" />
       <div className="letters-layout">
-        <div className="letters-copy">
+        <div className="letters-copy" id="theory-letters-0">
           <h2>英語のスタートラインへ、ようこそ！</h2>
           <p>あなたが今までに聞いたことがある英語の言葉はすべて、たった<strong>26個の文字</strong>からできています。それだけです。26個の記号があり、それぞれ大文字と小文字という2つの形があります。</p>
           <p>これらの文字は、イギリスで生まれたわけではありません。<strong>旅をしてきたのです。</strong> 英語のアルファベットはラテン語から来て、ラテン語はギリシャ語から来て、さらにそれは何千年も前の古代フェニキアの商人たちから来ました。つまり、あなたが文字を書いたり発音したりするたびに、<strong>3000年以上も受け継がれてきた歴史の一部</strong>を使っていることになります。</p>
           <p>文字を<strong>レンガ</strong>のように考えてみてください。1つだけでは小さくてシンプルです。でも、組み合わせることで、何でも作ることができます。名前、冗談、歌、ストーリー、そして新しい世界まで作ることができます。</p>
           <p>今日は、英語の26個の文字から始めましょう。見て、聞いて、声に出して、<strong>口が自然に覚えるまで体で感じてみてください。</strong> この音を自分のものにすれば、これからの英語はずっと簡単になります。</p>
-          <strong className="letters-closing">それでは、まずはすべての文字に出会いましょう！</strong>
+          <strong className="letters-closing" id="theory-letters-2">それでは、まずはすべての文字に出会いましょう！</strong>
         </div>
-        <div className="alphabet-board">
+        <div className="alphabet-board" id="theory-letters-1">
           <section className="alphabet-case-section" aria-labelledby="uppercase-title">
             <h3 id="uppercase-title">uppercase <span>(capital) letters</span></h3>
             <div className="alphabet-case-grid">{alphabet.map((letter) => <button key={letter} type="button" aria-label={`Say uppercase ${letter}`} onClick={() => speakWithBrowser(letter)}>{letter}</button>)}</div>
@@ -1880,6 +1978,7 @@ function readStoredViewPreferences() {
 }
 
 function CourseApp({ onHome }) {
+  useCourseOutlineNavigation()
   const initialCoursePosition = useMemo(readStoredCoursePosition, [])
   const [courseLayer, setCourseLayer] = useState(initialCoursePosition.courseLayer)
   const [mode, setMode] = useState('learn')
@@ -1901,6 +2000,24 @@ function CourseApp({ onHome }) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [mode, activeStep, selected, practiceView, courseLayer, everydayModuleId, everydayLessonId])
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (!hash || hash === 'course') return
+    let attempts = 0
+    let frame
+    const scrollToHash = () => {
+      const target = document.getElementById(decodeURIComponent(hash))
+      if (target) {
+        target.scrollIntoView({ behavior: 'auto', block: 'start' })
+        return
+      }
+      attempts += 1
+      if (attempts < 30) frame = window.requestAnimationFrame(scrollToHash)
+    }
+    frame = window.requestAnimationFrame(scrollToHash)
+    return () => window.cancelAnimationFrame(frame)
+  }, [])
 
   useEffect(() => {
     try {
@@ -1936,6 +2053,7 @@ function CourseApp({ onHome }) {
 
   const openPractice = () => { setMode('practice'); setPracticeView('drill'); setSelected(allTwisters[0]); setEverydayPracticeStep('substitute'); }
   const changeMode = (next) => {
+    if (window.location.hash && window.location.hash !== '#course') window.history.replaceState(window.history.state, '', '#course')
     setMode(next)
     if (next === 'practice') {
       setSelected(null)
@@ -1946,7 +2064,11 @@ function CourseApp({ onHome }) {
       setEverydayLearnStep('context')
     }
   }
+  const clearOutlineHash = () => {
+    if (window.location.hash && window.location.hash !== '#course') window.history.replaceState(window.history.state, '', '#course')
+  }
   const selectFoundationStep = (id) => {
+    clearOutlineHash()
     setCourseLayer('foundation')
     setMode('learn')
     setActiveStep(id)
@@ -1954,6 +2076,7 @@ function CourseApp({ onHome }) {
   }
 
   const selectEverydayModule = (id) => {
+    clearOutlineHash()
     setCourseLayer('fluency')
     setMode('learn')
     setSelected(null)
@@ -1964,6 +2087,7 @@ function CourseApp({ onHome }) {
   }
 
   const selectEverydayLesson = (id) => {
+    clearOutlineHash()
     setMode('learn')
     setSelected(null)
     setEverydayLessonId(id)
@@ -2090,11 +2214,15 @@ function CourseApp({ onHome }) {
 }
 
 export default function App() {
-  const [surface, setSurface] = useState(() => window.location.hash === '#course' ? 'course' : 'landing')
+  const [surface, setSurface] = useState(() => window.location.hash && window.location.hash !== '#' ? 'course' : 'landing')
 
   useEffect(() => {
-    window.location.hash = surface === 'course' ? 'course' : ''
-    window.scrollTo(0, 0)
+    if (surface === 'course') {
+      if (!window.location.hash || window.location.hash === '#') window.location.hash = 'course'
+    } else {
+      window.location.hash = ''
+    }
+    if (surface !== 'course' || !window.location.hash || window.location.hash === '#course') window.scrollTo(0, 0)
   }, [surface])
 
   return surface === 'course' ? <CourseApp onHome={() => setSurface('landing')} /> : <LandingPage onStart={() => setSurface('course')} />

@@ -2187,6 +2187,8 @@ svg { display: block; }
   --zenith-muted: #667174;
   --zenith-sage: #588157;
   --zenith-sage-soft: #a3b18a;
+  --zenith-sage-highlight: #d9e7a9;
+  --zenith-sage-highlight-ink: #4e672d;
   --zenith-note: #f3f5ef;
   --zenith-radius: 4px;
   --zenith-page-margin: 80px;
@@ -2548,7 +2550,29 @@ a:focus-visible {
 .course-app .source-book-practice-tabs button:hover { border-color: var(--zenith-sage); background: var(--zenith-surface-soft); color: var(--zenith-ink); }
 
 .course-app .theory-outline a.active,
-.course-app .greetings-outline a.active { border-radius: var(--zenith-radius); background: var(--zenith-surface-soft); color: var(--zenith-ink); }
+.course-app .greetings-outline a.active {
+  border: 1px solid var(--zenith-sage-soft);
+  border-radius: var(--zenith-radius);
+  background: var(--zenith-sage-highlight);
+  color: var(--zenith-sage-highlight-ink);
+}
+
+/* All outline targets clear the fixed course header when navigated to. */
+.course-app .greetings-content-section,
+.course-app .source-book-section,
+.course-app .greetings-vocabulary-section,
+.course-app .greetings-conversation-section,
+.course-app .greetings-good-to-know,
+.course-app [id^="theory-"] { scroll-margin-top: 126px; }
+
+@media (max-width: 900px) {
+  .course-app .greetings-content-section,
+  .course-app .source-book-section,
+  .course-app .greetings-vocabulary-section,
+  .course-app .greetings-conversation-section,
+  .course-app .greetings-good-to-know,
+  .course-app [id^="theory-"] { scroll-margin-top: 88px; }
+}
 .course-app .greetings-register-chip,
 .course-app .greetings-register-chip-casual,
 .course-app .greetings-register-chip-neutral,

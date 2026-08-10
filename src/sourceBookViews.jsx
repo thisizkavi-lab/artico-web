@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { SourceBookAudio } from './sourceBookAudio'
 import { GreetingsInteractiveLearnView, GreetingsInteractivePracticeView } from './greetingsInteractive'
 
@@ -66,10 +66,29 @@ function SourceBookDialogue({ dialogue }) {
 }
 
 export function SourceBookLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
-  if (Number(lesson?.number) === 1) return <GreetingsInteractiveLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
+  const isGreetings = Number(lesson?.number) === 1
   const { learn } = lesson
-  const [activeSection, setActiveSection] = useState(learn.sections?.[0]?.id)
+  const [activeSection, setActiveSection] = useState(() => isGreetings ? undefined : learn.sections?.[0]?.id)
   const outline = useMemo(() => (learn.sections || []).map((item) => [item.id, item.title]), [learn.sections])
+
+  useEffect(() => {
+    if (isGreetings) return undefined
+    const sections = (learn.sections || [])
+      .map((item) => document.getElementById(item.id))
+      .filter(Boolean)
+    if (!sections.length || typeof IntersectionObserver === 'undefined') return undefined
+    setActiveSection((current) => sections.some((section) => section.id === current) ? current : sections[0].id)
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]
+      if (visible) setActiveSection(visible.target.id)
+    }, { rootMargin: '-18% 0px -62% 0px', threshold: 0 })
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [isGreetings, learn.sections])
+
+  if (isGreetings) return <GreetingsInteractiveLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
 
   return (
     <div className="lesson-page greetings-page source-book-page">

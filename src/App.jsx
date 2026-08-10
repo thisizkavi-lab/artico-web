@@ -1310,8 +1310,8 @@ function BilingualLessonAction({ direction, label }) {
   return <><span className="lesson-action-ja">{isNext ? '次へ' : '前へ'}</span><span className="lesson-action-en">({label || fallback})</span></>
 }
 
-function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext, nextDisabled = false }) {
-  return <div className="lesson-footer"><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}><BilingualLessonAction direction="previous" label={previousLabel === 'Previous' ? 'Previous Lesson' : previousLabel} /></SecondaryButton><PrimaryButton onClick={onNext} disabled={nextDisabled}><BilingualLessonAction direction="next" label={label || 'Next Lesson'} /></PrimaryButton></div></div>
+function LessonFooter({ previousLabel = 'Previous', onPrevious, label, note = 'Accuracy before speed.', onNext, nextDisabled = false, className = '' }) {
+  return <div className={`lesson-footer ${className}`.trim()}><span>{note}</span><div className="lesson-footer-actions"><SecondaryButton onClick={onPrevious} disabled={!onPrevious}><BilingualLessonAction direction="previous" label={previousLabel === 'Previous' ? 'Previous Lesson' : previousLabel} /></SecondaryButton><PrimaryButton onClick={onNext} disabled={nextDisabled || !onNext}><BilingualLessonAction direction="next" label={label || 'Next Lesson'} /></PrimaryButton></div></div>
 }
 
 const theoryOutlines = {
@@ -2111,6 +2111,21 @@ function CourseApp({ onHome }) {
   const activeFoundationIndex = Math.max(0, learnSteps.findIndex((step) => step.id === activeStep))
   const activeFoundationStep = learnSteps[activeFoundationIndex]
   const activeSocialIndex = Math.max(0, socialFluencyChapters.findIndex((chapter) => chapter.id === everydayModuleId))
+  const previousSocialChapter = activeSocialIndex > 0 ? socialFluencyChapters[activeSocialIndex - 1] : undefined
+  const nextSocialChapter = activeSocialIndex < socialFluencyChapters.length - 1 ? socialFluencyChapters[activeSocialIndex + 1] : undefined
+  const socialChapterLabel = (chapter) => chapter ? `${chapter.number}. ${chapter.enTitle}` : undefined
+  const socialPrevious = previousSocialChapter ? () => selectEverydayModule(previousSocialChapter.id) : undefined
+  const socialNext = nextSocialChapter ? () => selectEverydayModule(nextSocialChapter.id) : undefined
+  const socialLessonFooter = currentEverydayLesson ? (
+    <LessonFooter
+      className="lesson-route-footer"
+      previousLabel={socialChapterLabel(previousSocialChapter)}
+      onPrevious={socialPrevious}
+      label={socialChapterLabel(nextSocialChapter) || 'Next Lesson'}
+      onNext={socialNext}
+      note="章を移動 · Chapter navigation"
+    />
+  ) : null
   const profilePosition = courseLayer === 'foundation' ? activeFoundationIndex + 1 : activeSocialIndex + 1
   const profileTotal = courseLayer === 'foundation' ? learnSteps.length : socialFluencyChapters.length
   const profileSummary = {
@@ -2183,30 +2198,39 @@ function CourseApp({ onHome }) {
                 LessonTitle={LessonTitle}
               />
             ) : mode === 'learn' ? (
-              <EverydayLearnView
-                lesson={currentEverydayLesson}
-                step={everydayLearnStep}
-                setStep={setEverydayLearnStep}
-                speakWithBrowser={speakWithBrowser}
-                PlayIcon={PlayIcon}
-                LessonTitle={LessonTitle}
-              />
+              <>
+                <EverydayLearnView
+                  lesson={currentEverydayLesson}
+                  step={everydayLearnStep}
+                  setStep={setEverydayLearnStep}
+                  speakWithBrowser={speakWithBrowser}
+                  PlayIcon={PlayIcon}
+                  LessonTitle={LessonTitle}
+                />
+                {socialLessonFooter}
+              </>
             ) : practiceAvailable ? (
-              <EverydayPracticeView
-                key={currentEverydayLesson?.id}
-                lesson={currentEverydayLesson}
-                step={everydayPracticeStep}
-                setStep={setEverydayPracticeStep}
-                speakWithBrowser={speakWithBrowser}
-                PlayIcon={PlayIcon}
-                LessonTitle={LessonTitle}
-              />
+              <>
+                <EverydayPracticeView
+                  key={currentEverydayLesson?.id}
+                  lesson={currentEverydayLesson}
+                  step={everydayPracticeStep}
+                  setStep={setEverydayPracticeStep}
+                  speakWithBrowser={speakWithBrowser}
+                  PlayIcon={PlayIcon}
+                  LessonTitle={LessonTitle}
+                />
+                {socialLessonFooter}
+              </>
             ) : (
-              <PracticeUnavailable
-                lessonLabel={currentEverydayModule?.enTitle || 'This lesson'}
-                lessonJa={currentEverydayModule?.ja || 'このレッスン'}
-                onBackToLearn={() => setMode('learn')}
-              />
+              <>
+                <PracticeUnavailable
+                  lessonLabel={currentEverydayModule?.enTitle || 'This lesson'}
+                  lessonJa={currentEverydayModule?.ja || 'このレッスン'}
+                  onBackToLearn={() => setMode('learn')}
+                />
+                {socialLessonFooter}
+              </>
             )}
           </main>
         </div>

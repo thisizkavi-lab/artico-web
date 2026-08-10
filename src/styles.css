@@ -2612,3 +2612,188 @@ a:focus-visible {
   .course-app .lesson-footer-actions .secondary-button,
   .course-app .lesson-footer-actions .primary-button { padding: 12px 16px; }
 }
+
+/* Shared chapter navigation.  Foundation pages render this footer inside
+   their lesson surface; Social Fluency renders the same footer just below
+   each chapter surface.  Keeping the geometry here prevents long bilingual
+   labels from pushing the two actions into one another. */
+.course-app .lesson-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+}
+
+.course-app .lesson-footer > span {
+  min-width: 0;
+  flex: 1 1 220px;
+  line-height: 1.6;
+}
+
+.course-app .lesson-footer-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column: auto;
+  grid-row: auto;
+  flex: 0 1 520px;
+  min-width: min(100%, 420px);
+  gap: 12px;
+  margin-left: auto;
+}
+
+.course-app .lesson-footer-actions .secondary-button,
+.course-app .lesson-footer-actions .primary-button {
+  display: inline-flex;
+  grid-column: auto;
+  grid-row: auto;
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  padding: 10px 18px;
+  border-radius: var(--zenith-radius);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.course-app .lesson-footer-actions .secondary-button {
+  border: 1px solid var(--zenith-border);
+  background: transparent;
+  color: var(--zenith-ink);
+}
+
+.course-app .lesson-footer-actions .secondary-button:hover:not(:disabled) {
+  border-color: var(--zenith-sage);
+  background: var(--zenith-surface-soft);
+  transform: none;
+}
+
+.course-app .lesson-footer-actions .secondary-button > span {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.course-app .lesson-footer-actions .secondary-button > span:not(.lesson-action-ja):not(.lesson-action-en) {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.course-app .lesson-footer-actions .secondary-button > .lesson-action-ja {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.course-app .lesson-footer-actions .secondary-button > .lesson-action-en {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.course-app .lesson-footer-actions .primary-button {
+  border: 1px solid var(--zenith-sage);
+  background: var(--zenith-sage);
+  color: #fff;
+}
+
+.course-app .lesson-footer-actions .primary-button:hover:not(:disabled) {
+  background: #456f49;
+  transform: translateY(-1px);
+}
+
+.course-app .lesson-footer-actions .secondary-button:disabled,
+.course-app .lesson-footer-actions .primary-button:disabled {
+  cursor: default;
+  opacity: .46;
+  transform: none;
+}
+
+.course-app .lesson-footer .lesson-action-ja,
+.course-app .lesson-footer .lesson-action-en {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.course-app .lesson-footer .lesson-action-en {
+  font-size: 12px;
+}
+
+/* Social Fluency places navigation outside its variable-height lesson
+   components, so give it the same horizontal reading gutter as a lesson. */
+.course-app .lesson-route-footer {
+  margin: 0 auto;
+  padding: 0 var(--zenith-page-margin) 48px;
+}
+
+/* At the compact desktop width the fixed alphabet-board minimum used by the
+   legacy lesson rules squeezes the Japanese explanation into a thin strip.
+   Let both columns shrink together before switching to the mobile stack. */
+@media (min-width: 901px) and (max-width: 1280px) {
+  .course-app .letters-layout {
+    grid-template-columns: minmax(230px, .82fr) minmax(0, 1.18fr);
+    gap: 28px;
+  }
+
+  .course-app .theory-layout {
+    grid-template-columns: minmax(0, 1fr) 150px;
+  }
+
+  .course-app .theory-outline {
+    margin-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .course-app .app-header { grid-template-columns: 180px minmax(0, 1fr) 108px; }
+  .course-app .mode-switch { min-width: 0; }
+  .course-app .lesson-footer > span { flex: 0 0 auto; }
+  .course-app .lesson-footer-actions { flex-basis: auto; }
+  .course-app .lesson-route-footer { padding-right: var(--zenith-page-margin); padding-left: var(--zenith-page-margin); }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .course-app .theory-layout { display: block; }
+  .course-app .theory-outline { display: none; }
+  .course-app .letters-layout,
+  .course-app .orientation-layout,
+  .course-app .media-layout,
+  .course-app .alphabet-song-layout,
+  .course-app .sound-explainer,
+  .course-app .compact-video,
+  .course-app .tongue-intro-layout,
+  .course-app .drill-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+
+@media (max-width: 760px) {
+  .course-app .app-header { grid-template-columns: 86px minmax(0, 1fr) 42px; }
+  .course-app .app-header .logo { width: 82px; }
+  .course-app .mode-switch { width: 100%; }
+  .course-app .lesson-footer {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .course-app .lesson-footer > span { order: 2; flex-basis: auto; }
+
+  .course-app .lesson-footer-actions {
+    order: 1;
+    width: 100%;
+    min-width: 0;
+    flex-basis: auto;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .course-app .lesson-footer-actions .secondary-button,
+  .course-app .lesson-footer-actions .primary-button {
+    min-height: 50px;
+    padding: 9px 12px;
+  }
+
+  .course-app .lesson-route-footer {
+    padding-bottom: 32px;
+  }
+}

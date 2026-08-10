@@ -618,6 +618,118 @@
 .course-app .greetings-vocabulary-section.tone-others .greetings-vocabulary-more-item:focus-visible,
 .course-app .greetings-vocabulary-section.tone-others .greetings-vocabulary-more-item.is-selected { border-color: #d66b3d; background: #fff8f4; }
 .course-app .greetings-vocabulary-recognition-note { margin: 0 16px 18px; padding: 11px 12px; border-left: 3px solid #0aa6e8; background: #f2faff; color: #54728a; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.65; }
+
+/* Shared source-book reader panels (chapters 3–96).  The source-book
+   converter supplies every English/Japanese item; this layer only gives the
+   repeated panels a consistent, scannable visual treatment. */
+.course-app .source-book-interactive-page .source-book-intro {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .8fr);
+}
+
+.course-app .source-book-interactive-page .source-book-intro .source-book-scene-artwork {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  margin: 0 auto;
+  aspect-ratio: 760 / 390;
+}
+
+.course-app .greetings-master-card-main .source-book-scene-artwork,
+.course-app .source-book-detail-dialog .source-book-scene-artwork {
+  position: static;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 760 / 390;
+}
+
+.course-app .source-book-interactive-section {
+  margin-bottom: 48px;
+}
+
+.course-app .source-book-interactive-section .greetings-vocabulary-scene-panel,
+.course-app .source-book-interactive-section .greetings-vocabulary-more {
+  border-color: #72c900;
+}
+
+.course-app .source-book-tone-pill {
+  background: #eef5e9;
+  color: #47704b;
+}
+
+.course-app .source-book-interactive-section .greetings-scene-bubble {
+  border-color: #8c63e8;
+}
+
+.course-app .source-book-interactive-section .greetings-scene-bubble::after {
+  color: #8c63e8;
+}
+
+.course-app .source-book-interactive-section .greetings-scene-bubble:hover,
+.course-app .source-book-interactive-section .greetings-scene-bubble:focus-visible,
+.course-app .source-book-interactive-section .greetings-scene-bubble.is-selected,
+.course-app .source-book-interactive-section .greetings-scene-bubble.is-playing {
+  background: #f5efff;
+  box-shadow: 0 4px 0 rgba(140, 99, 232, .2);
+}
+
+.course-app .source-book-more-empty {
+  margin: auto 18px;
+  padding: 20px 14px;
+  border: 1px dashed #d6e2d2;
+  border-radius: 10px;
+  color: var(--zenith-muted);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.course-app .source-book-good-to-know {
+  border: 1px solid #d8e4d3;
+  border-top: 4px solid #72c900;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.course-app .source-book-detail-dialog .source-book-detail-artwork,
+.course-app .source-book-detail-dialog .source-book-detail-artwork svg {
+  width: 100%;
+}
+
+.course-app .source-book-detail-dialog .source-book-detail-artwork {
+  margin-bottom: 15px;
+  border: 1px solid #dfe9dc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .course-app .source-book-interactive-page .source-book-intro {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .course-app .source-book-interactive-section {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .course-app .source-book-interactive-section .greetings-vocabulary-stage {
+    min-height: 300px;
+  }
+
+  .course-app .source-book-interactive-section .greetings-vocabulary-panel-header {
+    display: block;
+  }
+
+  .course-app .source-book-interactive-section .source-book-tone-pill {
+    display: inline-flex;
+    margin-top: 12px;
+  }
+}
 .course-app .greetings-vocabulary-recognition-note strong { color: #101a2d; font-family: 'Hanken Grotesk', sans-serif; }
 
 .course-app .greetings-empty-filter {

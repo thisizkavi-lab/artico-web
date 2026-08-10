@@ -372,18 +372,28 @@ export function makeSourceBookLesson(lesson) {
   const functions = lesson.learn?.functions || []
   const allPhrases = sections.flatMap((item) => item.phrases)
   const isGreetingsChapter = Number(lesson.number) === 1
-  const sourceDialogues = isGreetingsChapter
+  // Keep the dialogue panels that are already present in the lesson data, but
+  // apply the same source-corpus guard used for vocabulary.  This preserves
+  // source-backed conversations for every chapter without allowing practice
+  // role-play lines or newly authored examples to leak into the source reader.
+  const dialoguePatterns = isGreetingsChapter
     ? (lesson.learn?.exchanges?.patterns || [])
-      .map((pattern) => ({
-        id: pattern.id,
-        label: pattern.label,
-        title: pattern.title,
-        lines: (pattern.lines || [])
-          .filter((line) => isSourceEnglish(line.en, lesson.number))
-          .map((line) => ({ speaker: line.speaker, en: line.en, ja: line.ja })),
-      }))
-      .filter((pattern) => pattern.lines.length > 1)
-    : []
+    : (lesson.learn?.dialogues || [])
+  const sourceDialogues = dialoguePatterns
+    .map((pattern, patternIndex) => ({
+      id: pattern.id || `${lesson.id || `social-${lesson.number}`}-dialogue-${patternIndex + 1}`,
+      label: pattern.label,
+      title: pattern.title || `Pattern ${patternIndex + 1}`,
+      lines: (pattern.lines || [])
+        .map((line, lineIndex) => {
+          const en = typeof line === 'string' ? line : line.en || line.phrase
+          const ja = typeof line === 'string' ? undefined : line.ja || line.meaning
+          if (!isSourceEnglish(en, lesson.number)) return null
+          return { speaker: typeof line === 'string' ? (lineIndex % 2 ? 'B' : 'A') : line.speaker, en, ja }
+        })
+        .filter(Boolean),
+    }))
+    .filter((pattern) => pattern.lines.length > 1)
   return {
     ...lesson,
     kind: 'source-book',

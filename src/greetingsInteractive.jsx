@@ -434,13 +434,13 @@ function PlayGlyph({ PlayIcon }) {
   return PlayIcon ? <PlayIcon /> : <span aria-hidden="true">▶</span>
 }
 
-function VocabularyCard({ item, status, onPlay, onDetail, isPlaying, PlayIcon }) {
+function VocabularyCard({ item, status, onPlay, onDetail, isPlaying, PlayIcon, artwork = 'greeting' }) {
   const meta = STATUS_META[status]
   return (
     <article className={`greetings-master-card status-${status}`}>
       <span className={`greetings-status-badge status-${status}`}>{meta.short}</span>
       <button type="button" className="greetings-master-card-main" onClick={onPlay} aria-label={`${item.phrase} を聞く`}>
-        <GreetingVocabularySVG item={item} />
+        {artwork === 'source' ? <SourceBookSceneArtwork phraseCount={String(item.phrase || '').length} /> : <GreetingVocabularySVG item={item} />}
         <span className="greetings-master-copy">
           <strong lang="en">{item.phrase}</strong>
           <small lang="ja">{item.meaning}</small>
@@ -457,7 +457,7 @@ function VocabularyCard({ item, status, onPlay, onDetail, isPlaying, PlayIcon })
   )
 }
 
-function VocabularyDetailDialog({ item, status, onStatus, onClose, onPlay, isPlaying, PlayIcon }) {
+function VocabularyDetailDialog({ item, status, onStatus, onClose, onPlay, isPlaying, PlayIcon, artwork = 'greeting' }) {
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === 'Escape') onClose()
@@ -473,7 +473,7 @@ function VocabularyDetailDialog({ item, status, onStatus, onClose, onPlay, isPla
     <div className="greetings-detail-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}>
       <section className="greetings-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="greetings-detail-title">
         <button type="button" className="greetings-detail-close" onClick={onClose} aria-label="閉じる">×</button>
-        <div className="greetings-detail-visual"><GreetingVocabularySVG item={item} /></div>
+        <div className="greetings-detail-visual">{artwork === 'source' ? <SourceBookSceneArtwork phraseCount={String(item.phrase || '').length} /> : <GreetingVocabularySVG item={item} />}</div>
         <span className="section-kicker">原書の語句 · Source phrase</span>
         <h2 id="greetings-detail-title" lang="en">{item.phrase}</h2>
         <p className="greetings-detail-meaning" lang="ja">{item.meaning}</p>
@@ -499,7 +499,7 @@ function VocabularyDetailDialog({ item, status, onStatus, onClose, onPlay, isPla
   )
 }
 
-function VocabularyMasteryBoard({ lesson, section, mastery, speech, PlayIcon }) {
+function VocabularyMasteryBoard({ lesson, section, mastery, speech, PlayIcon, artwork = 'greeting' }) {
   const items = useMemo(() => normalizeVocabularySection(lesson, section), [lesson, section])
   const [filter, setFilter] = useState('unsorted')
   const [selectedItem, setSelectedItem] = useState(null)
@@ -537,6 +537,7 @@ function VocabularyMasteryBoard({ lesson, section, mastery, speech, PlayIcon }) 
               onPlay={() => speech.play(item.id, [item.phrase], 0.92)}
               onDetail={() => setSelectedItem(item)}
               PlayIcon={PlayIcon}
+              artwork={artwork}
             />
           ))}
         </div>
@@ -553,6 +554,7 @@ function VocabularyMasteryBoard({ lesson, section, mastery, speech, PlayIcon }) 
           onPlay={() => speech.play(selectedItem.id, [selectedItem.phrase], 0.88)}
           isPlaying={speech.playingId === selectedItem.id}
           PlayIcon={PlayIcon}
+          artwork={artwork}
         />
       )}
     </div>
@@ -1024,6 +1026,170 @@ export function GreetingsInteractivePracticeView({ lesson, speakWithBrowser, Pla
           <ConversationPracticeStudio dialogues={dialogues} speech={speech} PlayIcon={PlayIcon} />
         </section>
       )}
+    </div>
+  )
+}
+
+/*
+ * The source-book chapters share the same learning contract, but their
+ * vocabulary is not limited to greetings.  These generic panels intentionally
+ * keep the source phrase as the hero while Japanese remains visible beside it
+ * and in the detail dialog.  The artwork is decorative only: it never invents
+ * a new English example or replaces source content.
+ */
+function SourceBookSceneArtwork({ phraseCount = 2 }) {
+  const accent = phraseCount > 8 ? '#588157' : '#753cf2'
+  return (
+    <svg className="greetings-scene-artwork source-book-scene-artwork" viewBox="0 0 760 390" role="img" aria-label="表現を場面で確認するイラスト">
+      <rect width="760" height="390" fill="#fff" />
+      <path d="M0 314 Q190 280 380 314 T760 314 V390 H0Z" fill="#f3f7f2" />
+      <rect x="256" y="72" width="248" height="140" rx="10" fill="#f7faf6" stroke="#d4e4cf" strokeWidth="4" />
+      <path d="M288 112 H470 M288 145 H430 M288 178 H454" stroke="#b4c7ae" strokeLinecap="round" strokeWidth="10" />
+      <circle cx="323" cy="247" r="17" fill={accent} />
+      <circle cx="438" cy="247" r="17" fill="#5e7c8b" />
+      <path d="M323 266 V313 M438 266 V313" stroke={accent} strokeLinecap="round" strokeWidth="9" />
+      <path d="M307 279 L282 307 M339 279 L363 307 M422 279 L398 307 M454 279 L479 307" stroke={accent} strokeLinecap="round" strokeWidth="8" />
+      <path d="M342 262 Q380 229 418 262" fill="none" stroke="#d39b46" strokeDasharray="7 8" strokeLinecap="round" strokeWidth="5" />
+      <circle cx="380" cy="242" r="7" fill="#d39b46" />
+      <g transform="translate(120 292)"><circle r="30" fill="#dce8d8" /><path d="M-12-3 Q0-17 12-3 V15 H-12Z" fill="#588157" /><circle cy="-19" r="8" fill="#588157" /></g>
+      <g transform="translate(640 292)"><circle r="30" fill="#e7edf2" /><path d="M-12-3 Q0-17 12-3 V15 H-12Z" fill="#5e7c8b" /><circle cy="-19" r="8" fill="#5e7c8b" /></g>
+    </svg>
+  )
+}
+
+function SourceBookDetailDialog({ item, status, onStatus, onClose, onPlay, isPlaying, PlayIcon }) {
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') onClose()
+      if (event.key === '1') onStatus('difficult')
+      if (event.key === '2') onStatus('learning')
+      if (event.key === '3') onStatus('known')
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [onClose, onStatus])
+  return (
+    <div className="greetings-detail-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}>
+      <section className="greetings-detail-dialog source-book-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="source-book-detail-title">
+        <button type="button" className="greetings-detail-close" onClick={onClose} aria-label="閉じる">×</button>
+        <div className="source-book-detail-artwork"><SourceBookSceneArtwork phraseCount={String(item.phrase || '').length} /></div>
+        <span className="section-kicker">原書の語句 · Source phrase</span>
+        <h2 id="source-book-detail-title" lang="en">{item.phrase}</h2>
+        <p className="greetings-detail-meaning" lang="ja">{item.meaning}</p>
+        <p className="greetings-detail-context" lang="ja">使う場面：{item.context || '原書の表現'}</p>
+        <button type="button" className={`greetings-detail-listen ${isPlaying ? 'is-playing' : ''}`} onClick={onPlay}><PlayGlyph PlayIcon={PlayIcon} /> {isPlaying ? '停止する' : '英語を聞く'}</button>
+        <div className="greetings-classify-block">
+          <div><span className="section-kicker">How well do you know this?</span><h3>この表現を整理する</h3></div>
+          <div className="greetings-classify-options">
+            {CLASSIFY_ORDER.map((value, index) => <button key={value} type="button" className={`status-${value}`} aria-pressed={status === value} onClick={() => onStatus(value)}><b>{index + 1}</b><span>{STATUS_META[value].ja}<small>{STATUS_META[value].en}</small></span></button>)}
+          </div>
+          {status !== 'unsorted' && <button type="button" className="greetings-reset-status" onClick={() => onStatus('unsorted')}>未整理に戻す</button>}
+          <p>キーボードでは 1・2・3 でも選べます。</p>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+function SourceBookPhraseRow({ item, selected, isPlaying, onClick }) {
+  return (
+    <button type="button" className={`greetings-vocabulary-more-item ${selected ? 'is-selected' : ''}`} onClick={onClick} aria-label={`${item.phrase}（${item.meaning}）を聞く`}>
+      <span><strong lang="en">{item.phrase}</strong><small lang="ja">{item.meaning}</small></span>
+      <span className={isPlaying ? 'is-playing' : ''}><SoundGlyph /></span>
+    </button>
+  )
+}
+
+function SourceBookInteractiveSection({ lesson, section, index, mastery, speech, PlayIcon }) {
+  const phrases = useMemo(() => normalizeVocabularySection(lesson, section), [lesson, section])
+  const sceneItems = phrases.slice(0, phrases.length <= 4 ? phrases.length : 3)
+  const moreItems = phrases.slice(sceneItems.length)
+  const [selectedItem, setSelectedItem] = useState(sceneItems[0] || moreItems[0] || null)
+  const [detailOpen, setDetailOpen] = useState(false)
+  useEffect(() => {
+    if (!selectedItem || !phrases.some((item) => item.id === selectedItem.id)) setSelectedItem(sceneItems[0] || moreItems[0] || null)
+  }, [moreItems, phrases, sceneItems, selectedItem])
+  const playItem = useCallback((item) => {
+    if (!item) return
+    setSelectedItem(item)
+    speech.play(item.id, [item.phrase], 0.9)
+  }, [speech])
+  const playAllId = `${section.id}:source-all`
+  const sectionNumber = `${lesson.number}.${index + 1}`
+  const allItems = [...sceneItems, ...moreItems]
+  const heading = section.enTitle || 'Source phrases'
+  return (
+    <section id={section.id} className="greetings-vocabulary-section source-book-interactive-section" aria-labelledby={`${section.id}-heading`}>
+      <div className="greetings-vocabulary-scene-panel">
+        <header className="greetings-vocabulary-panel-header">
+          <div><div className="greetings-vocabulary-panel-title"><span className="greetings-vocabulary-panel-number">{sectionNumber}</span><h2 id={`${section.id}-heading`}>{heading}</h2></div><p lang="ja">{section.title} · {section.intro}</p></div>
+          <span className="greetings-vocabulary-tone-pill source-book-tone-pill">Source · 原書</span>
+        </header>
+        <div className="greetings-vocabulary-stage">
+          <SourceBookSceneArtwork phraseCount={phrases.length} />
+          <div className="greetings-scene-bubbles">
+            {sceneItems.map((item, itemIndex) => <ScenePhraseBubble key={item.id} item={item} tone="informal" position={INFORMAL_BUBBLE_POSITIONS[itemIndex] || 'middle-center'} selected={selectedItem?.id === item.id} isPlaying={speech.playingId === item.id} onClick={() => playItem(item)} />)}
+          </div>
+          <button type="button" className={`greetings-vocabulary-stage-play ${speech.playingId === playAllId ? 'is-playing' : ''}`} onClick={() => speech.play(playAllId, allItems.map((item) => item.phrase), 0.88)} disabled={!allItems.length} aria-label={speech.playingId === playAllId ? 'このセクションを停止' : 'このセクションをすべて聞く'}>{speech.playingId === playAllId ? <span aria-hidden="true">■</span> : <SoundGlyph />}</button>
+        </div>
+        {selectedItem && <div className="greetings-vocabulary-selected" aria-live="polite"><div><span className="section-kicker">Selected phrase · 選択中の表現</span><strong lang="en">{selectedItem.phrase}</strong><p lang="ja">{selectedItem.meaning}</p><small lang="ja">使う場面：{selectedItem.context || '原書の表現'}</small></div><div className="greetings-vocabulary-selected-actions"><button type="button" className={speech.playingId === selectedItem.id ? 'is-playing' : ''} onClick={() => playItem(selectedItem)}><SoundGlyph /> {speech.playingId === selectedItem.id ? '停止' : '聞く'}</button><button type="button" onClick={() => setDetailOpen(true)}>詳細・整理</button></div></div>}
+      </div>
+      <aside className="greetings-vocabulary-more" aria-label={`${section.title}の追加表現`}>
+        <header className="greetings-vocabulary-panel-header greetings-vocabulary-more-header"><div className="greetings-vocabulary-panel-title"><span className="greetings-vocabulary-panel-number">{sectionNumber}</span><h2>MORE PHRASES</h2></div><p lang="ja">{moreItems.length ? '追加表現 · 英語を押すと音声と意味を確認できます。' : 'このセクションの原書表現を確認できます。'}</p></header>
+        <div className="greetings-vocabulary-more-list">{moreItems.length ? moreItems.map((item) => <SourceBookPhraseRow key={item.id} item={item} selected={selectedItem?.id === item.id} isPlaying={speech.playingId === item.id} onClick={() => playItem(item)} />) : <p className="source-book-more-empty" lang="ja">このセクションの表現は左のパネルに表示しています。</p>}</div>
+      </aside>
+      {detailOpen && selectedItem && <SourceBookDetailDialog item={selectedItem} status={mastery.statusFor(selectedItem.id)} onStatus={(status) => mastery.setStatus(selectedItem.id, status)} onClose={() => setDetailOpen(false)} onPlay={() => playItem(selectedItem)} isPlaying={speech.playingId === selectedItem.id} PlayIcon={PlayIcon} />}
+    </section>
+  )
+}
+
+export function SourceBookInteractiveLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  const mastery = useVocabularyMastery()
+  const speech = useSpeechQueue(speakWithBrowser)
+  const learn = lesson.learn || {}
+  const sections = learn.sections || []
+  const [activeSection, setActiveSection] = useState(sections[0]?.id)
+  const outline = useMemo(() => sections.map((section) => [section.id, section.title]), [sections])
+  useEffect(() => {
+    if (!sections.length || typeof IntersectionObserver === 'undefined') return undefined
+    const nodes = sections.map((section) => document.getElementById(section.id)).filter(Boolean)
+    if (!nodes.length) return undefined
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]
+      if (visible) setActiveSection(visible.target.id)
+    }, { rootMargin: '-18% 0px -62% 0px', threshold: 0 })
+    nodes.forEach((node) => observer.observe(node))
+    return () => observer.disconnect()
+  }, [sections])
+  return (
+    <div className="lesson-page greetings-page source-book-page greetings-interactive-page source-book-interactive-page">
+      <LessonTitle eyebrow={`Social Fluency · ${lesson.number}`} title={lesson.title} ja={lesson.ja} />
+      <div className="greetings-reader"><div className="greetings-reader-main">
+        <section className="greetings-interactive-hero greetings-content-section source-book-intro"><div className="greetings-hero-copy"><span className="section-kicker">原書に沿って学ぶ · Source book</span><h2>{lesson.enTitle}</h2>{learn.intro?.map((paragraph) => <p key={paragraph} lang="ja">{paragraph}</p>)}</div><SourceBookSceneArtwork phraseCount={sections.reduce((total, section) => total + (section.phrases?.length || 0), 0)} /></section>
+        {learn.functions?.length > 0 && <div className="greetings-signal-strip source-book-functions" aria-label="学習項目">{learn.functions.map(([number, label]) => <div key={number} className="greetings-signal-item"><span>{number}</span><strong>{label}</strong></div>)}</div>}
+        {sections.map((section, index) => <SourceBookInteractiveSection key={section.id} lesson={lesson} section={section} index={index} mastery={mastery} speech={speech} PlayIcon={PlayIcon} />)}
+        {learn.dialogues?.length > 0 && <section className="greetings-content-section source-book-dialogues"><div className="greetings-section-heading"><span className="section-kicker">Source dialogues</span><h2>原書の会話</h2><p>原書に掲載された会話を確認します。</p></div><div className="greetings-dialogue-grid">{learn.dialogues.map((dialogue) => <ConversationCard key={dialogue.id || dialogue.title} dialogue={dialogue} speech={speech} PlayIcon={PlayIcon} />)}</div></section>}
+        {learn.tip && <section className="greetings-content-section source-book-tip source-book-good-to-know"><span className="section-kicker">Good to know · 原書のポイント</span><h2>学習メモ</h2><p lang="ja">{learn.tip}</p></section>}
+      </div><aside className="greetings-outline" aria-label="このページの項目"><span>On this page</span><nav>{outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}</nav></aside></div>
+    </div>
+  )
+}
+
+export function SourceBookInteractivePracticeView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  const mastery = useVocabularyMastery()
+  const speech = useSpeechQueue(speakWithBrowser)
+  const sections = lesson.learn?.sections || []
+  const dialogues = lesson.learn?.dialogues || []
+  const [track, setTrack] = useState('vocabulary')
+  const [selectedSection, setSelectedSection] = useState(0)
+  const active = sections[selectedSection] || sections[0]
+  return (
+    <div className="practice-page greetings-practice-page source-book-practice-page source-book-interactive-practice">
+      <LessonTitle eyebrow={`Social Fluency Practice · ${lesson.number}`} title={lesson.practice?.title || lesson.title} ja={lesson.practice?.instructions} />
+      <div className="greetings-practice-flow" aria-label="Practice flow"><div><b>01</b><span>Listen</span><small>まず聞く</small></div><i aria-hidden="true">→</i><div><b>02</b><span>Read</span><small>意味を確認する</small></div><i aria-hidden="true">→</i><div><b>03</b><span>Repeat</span><small>声に出す</small></div></div>
+      {dialogues.length > 0 && <div className="greetings-track-switch" role="tablist" aria-label="練習内容"><button type="button" role="tab" aria-selected={track === 'vocabulary'} className={track === 'vocabulary' ? 'active' : ''} onClick={() => setTrack('vocabulary')}><span>語彙・フレーズ<small>Vocabulary</small></span></button><button type="button" role="tab" aria-selected={track === 'conversation'} className={track === 'conversation' ? 'active' : ''} onClick={() => setTrack('conversation')}><span>会話<small>Conversation</small></span></button></div>}
+      {track === 'vocabulary' ? <section className="greetings-practice-section greetings-learning-panel"><div className="greetings-section-heading"><span className="section-kicker">Vocabulary mastery · 原書の語彙</span><h2>今、集中したい表現だけを見る。</h2><p>英語を聞き、日本語の意味を確認して、「難しい・学習中・覚えた」に整理できます。</p></div><div className="greetings-dialogue-tabs" role="tablist">{sections.map((section, index) => <button key={section.id} type="button" role="tab" aria-selected={selectedSection === index} className={selectedSection === index ? 'active' : ''} onClick={() => setSelectedSection(index)}>{section.title}</button>)}</div>{active && <VocabularyMasteryBoard lesson={lesson} section={active} mastery={mastery} speech={speech} PlayIcon={PlayIcon} artwork="source" />}</section> : <section className="greetings-practice-section greetings-conversation-section"><div className="greetings-section-heading"><span className="section-kicker">Conversation studio · 原書の会話</span><h2>全文・一行ずつ・役割練習。</h2><p>原書の会話を、日本語の意味を残して練習します。</p></div><ConversationPracticeStudio dialogues={dialogues} speech={speech} PlayIcon={PlayIcon} /></section>}
+      {lesson.learn?.tip && <div className="greetings-finish-card source-book-good-to-know"><span className="section-kicker">Good to know · 原書のポイント</span><p lang="ja">{lesson.learn.tip}</p></div>}
     </div>
   )
 }

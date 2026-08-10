@@ -152,6 +152,20 @@ function normalizeVocabularySection(lesson, section) {
   })
 }
 
+function normalizeRecognitionSection(lesson, section) {
+  return (section?.recognition || []).map((item) => {
+    const textKey = normalizeText(item.phrase)
+    return {
+      ...item,
+      id: `${lesson.id || `social-${lesson.number}`}/${section.sourceKey || section.id}/recognition-${textKey}`,
+      sectionId: section.id,
+      kind: 'phrase',
+      visualKey: visualKeyFor(item.phrase),
+      context: item.context || item.note || '補足表現',
+    }
+  })
+}
+
 function wrapBubbleText(text) {
   const words = String(text || '').split(/\s+/)
   if (words.length <= 2) return [text]
@@ -245,6 +259,174 @@ function GreetingVocabularySVG({ item }) {
       {item.visualKey === 'hiya' && <circle cx="45" cy="100" r="5" fill="#d7a74d" opacity=".9" />}
       <SpeechBubble text={item.phrase} x={phraseScene ? 112 : 145} y={14} width={phraseScene ? 224 : 176} />
     </svg>
+  )
+}
+
+function GreetingSceneArtwork({ tone }) {
+  const informal = tone === 'informal'
+  return (
+    <svg className={`greetings-scene-artwork tone-${tone}`} viewBox="0 0 760 390" role="img" aria-label={informal ? '車のそばで友人同士がカジュアルにあいさつする場面' : '仕事の場で丁寧にあいさつする場面'}>
+      <rect width="760" height="390" fill="#fff" />
+      {informal ? (
+        <>
+          <path d="M0 315 Q190 281 380 315 T760 315 V390 H0Z" fill="#f4f7fb" />
+          <g transform="translate(102 178)">
+            <path d="M0 99 Q8 39 58 28 H182 Q218 39 233 99Z" fill="#b9c7d8" />
+            <rect y="99" width="239" height="54" rx="10" fill="#94a5bb" />
+            <path d="M61 39 H175 Q191 43 204 83 H34 Q45 45 61 39Z" fill="#d8e4ee" />
+            <circle cx="53" cy="154" r="31" fill="#46556b" stroke="#fff" strokeWidth="7" />
+            <circle cx="198" cy="154" r="31" fill="#46556b" stroke="#fff" strokeWidth="7" />
+          </g>
+          <g transform="translate(428 178) scale(-1 1)">
+            <path d="M0 99 Q8 39 58 28 H182 Q218 39 233 99Z" fill="#b9c7d8" />
+            <rect y="99" width="239" height="54" rx="10" fill="#94a5bb" />
+            <path d="M61 39 H175 Q191 43 204 83 H34 Q45 45 61 39Z" fill="#d8e4ee" />
+            <circle cx="53" cy="154" r="31" fill="#46556b" stroke="#fff" strokeWidth="7" />
+            <circle cx="198" cy="154" r="31" fill="#46556b" stroke="#fff" strokeWidth="7" />
+          </g>
+          <ScenePerson x={322} y={294} color="#753cf2" wave />
+          <ScenePerson x={454} y={294} color="#753cf2" flip wave />
+          <path d="M378 268 Q388 247 399 268 M399 268 Q410 247 421 268" fill="none" stroke="#753cf2" strokeLinecap="round" strokeWidth="8" />
+        </>
+      ) : (
+        <>
+          <ellipse cx="300" cy="298" rx="222" ry="59" fill="#dff2ff" stroke="#72b7df" strokeWidth="5" />
+          {[190, 240, 300, 360, 420].map((x) => <rect key={x} x={x} y="253" width="18" height="42" rx="6" fill="#087fb9" />)}
+          <ScenePerson x={465} y={287} color="#087fb9" />
+          <ScenePerson x={585} y={287} color="#087fb9" flip />
+          <circle cx="524" cy="247" r="10" fill="#40b8e8" />
+          <path d="M495 254 Q522 238 548 254" fill="none" stroke="#087fb9" strokeLinecap="round" strokeWidth="7" />
+          <path d="M430 191 Q522 155 615 191" fill="none" stroke="#a7ddf6" strokeDasharray="8 10" strokeLinecap="round" strokeWidth="5" />
+        </>
+      )}
+    </svg>
+  )
+}
+
+const INFORMAL_BUBBLE_POSITIONS = ['top-left', 'top-center', 'top-right', 'middle-left', 'bottom-left', 'bottom-right']
+const FORMAL_BUBBLE_POSITIONS = ['top-center', 'top-right', 'bottom-center']
+
+function ScenePhraseBubble({ item, position, tone, selected, isPlaying, onClick }) {
+  return (
+    <button
+      type="button"
+      className={`greetings-scene-bubble tone-${tone} position-${position} ${selected ? 'is-selected' : ''} ${isPlaying ? 'is-playing' : ''}`}
+      onClick={onClick}
+      aria-pressed={selected}
+      aria-label={`${item.phrase}（${item.meaning}）を聞く`}
+    >
+      <span lang="en">{item.phrase}</span>
+      <span className="greetings-scene-bubble-sound"><SoundGlyph /></span>
+    </button>
+  )
+}
+
+function GreetingVocabularySceneSection({ lesson, section, mastery, speech, PlayIcon }) {
+  const tone = section.sourceKey === 'formal' ? 'formal' : 'informal'
+  const phrases = useMemo(() => normalizeVocabularySection(lesson, section), [lesson, section])
+  const recognition = useMemo(() => normalizeRecognitionSection(lesson, section), [lesson, section])
+  const sceneItems = tone === 'formal' ? phrases.slice(0, 3) : phrases
+  const moreItems = tone === 'formal' ? [...phrases.slice(3), ...recognition] : recognition
+  const [selectedItem, setSelectedItem] = useState(sceneItems[0] || moreItems[0] || null)
+  const selectedId = selectedItem?.id
+  const [detailOpen, setDetailOpen] = useState(false)
+  useEffect(() => {
+    if (!selectedItem || ![...sceneItems, ...moreItems].some((item) => item.id === selectedItem.id)) {
+      setSelectedItem(sceneItems[0] || moreItems[0] || null)
+    }
+  }, [moreItems, sceneItems, selectedItem])
+
+  const playItem = useCallback((item) => {
+    if (!item) return
+    setSelectedItem(item)
+    speech.play(item.id, [item.phrase], 0.92)
+  }, [speech])
+  const playAllId = `${section.id}:scene-all`
+  const allItems = [...sceneItems, ...moreItems]
+  const isPlayingAll = speech.playingId === playAllId
+
+  return (
+    <section id={`greetings-${section.sourceKey}`} className={`greetings-vocabulary-section tone-${tone}`}>
+      <div className="greetings-vocabulary-scene-panel">
+        <header className="greetings-vocabulary-panel-header">
+          <div>
+            <div className="greetings-vocabulary-panel-title">
+              <span className="greetings-vocabulary-panel-number">{tone === 'informal' ? '1.1' : '1.3'}</span>
+              <h2>{tone === 'informal' ? 'INFORMAL GREETINGS' : 'FORMAL GREETINGS'}</h2>
+            </div>
+            <p lang="ja">{section.intro}</p>
+          </div>
+          <span className={`greetings-vocabulary-tone-pill tone-${tone}`}>{tone === 'informal' ? 'Casual / Friends' : 'Business / Professional'}</span>
+        </header>
+        <div className="greetings-vocabulary-stage">
+          <GreetingSceneArtwork tone={tone} />
+          <div className="greetings-scene-bubbles">
+            {sceneItems.map((item, index) => (
+              <ScenePhraseBubble
+                key={item.id}
+                item={item}
+                tone={tone}
+                position={(tone === 'informal' ? INFORMAL_BUBBLE_POSITIONS : FORMAL_BUBBLE_POSITIONS)[index] || 'middle-center'}
+                selected={selectedId === item.id}
+                isPlaying={speech.playingId === item.id}
+                onClick={() => playItem(item)}
+              />
+            ))}
+          </div>
+          <button type="button" className={`greetings-vocabulary-stage-play ${isPlayingAll ? 'is-playing' : ''}`} onClick={() => speech.play(playAllId, allItems.map((item) => item.phrase), 0.9)} disabled={!allItems.length} aria-label={isPlayingAll ? 'あいさつを停止' : 'このセクションをすべて聞く'}>
+            {isPlayingAll ? <span aria-hidden="true">■</span> : <SoundGlyph />}
+          </button>
+        </div>
+        {selectedItem && (
+          <div className="greetings-vocabulary-selected" aria-live="polite">
+            <div>
+              <span className="section-kicker">Selected phrase · 選択中の表現</span>
+              <strong lang="en">{selectedItem.phrase}</strong>
+              <p lang="ja">{selectedItem.meaning}</p>
+              <small lang="ja">使う場面：{selectedItem.context || selectedItem.note || '原書の表現'}</small>
+            </div>
+            <div className="greetings-vocabulary-selected-actions">
+              <button type="button" className={speech.playingId === selectedItem.id ? 'is-playing' : ''} onClick={() => playItem(selectedItem)}><SoundGlyph /> {speech.playingId === selectedItem.id ? '停止' : '聞く'}</button>
+              <button type="button" onClick={() => setDetailOpen(true)}>詳細・整理</button>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <aside className="greetings-vocabulary-more" aria-label={`${section.title}の追加表現`}>
+        <header className="greetings-vocabulary-panel-header greetings-vocabulary-more-header">
+          <div className="greetings-vocabulary-panel-title">
+            <span className="greetings-vocabulary-panel-number">{tone === 'informal' ? '1.2' : '1.4'}</span>
+            <h2>MORE PHRASES</h2>
+          </div>
+          <p lang="ja">追加表現 · 英語を押すと音声と意味を確認できます。</p>
+        </header>
+        <div className="greetings-vocabulary-more-list">
+          {moreItems.map((item) => (
+            <button key={item.id} type="button" className={`greetings-vocabulary-more-item ${selectedId === item.id ? 'is-selected' : ''}`} onClick={() => playItem(item)} aria-label={`${item.phrase}（${item.meaning}）を聞く`}>
+              <span>
+                <strong lang="en">{item.phrase}</strong>
+                <small lang="ja">{item.meaning}</small>
+              </span>
+              <SoundGlyph />
+            </button>
+          ))}
+        </div>
+        {tone === 'formal' && recognition.length > 0 && <p className="greetings-vocabulary-recognition-note" lang="ja">※ <strong>How do you do?</strong> は原書の補足表現です。伝統的で非常にフォーマルなため、今は聞いて分かれば十分です。</p>}
+      </aside>
+
+      {detailOpen && selectedItem && (
+        <VocabularyDetailDialog
+          item={selectedItem}
+          status={mastery.statusFor(selectedItem.id)}
+          onStatus={(status) => mastery.setStatus(selectedItem.id, status)}
+          onClose={() => setDetailOpen(false)}
+          onPlay={() => playItem(selectedItem)}
+          isPlaying={speech.playingId === selectedItem.id}
+          PlayIcon={PlayIcon}
+        />
+      )}
+    </section>
   )
 }
 
@@ -481,6 +663,9 @@ function ConversationCard({ dialogue, speech, PlayIcon }) {
 }
 
 function VocabularyLessonSection({ lesson, section, mastery, speech, PlayIcon }) {
+  if (['informal', 'formal'].includes(section.sourceKey)) {
+    return <GreetingVocabularySceneSection lesson={lesson} section={section} mastery={mastery} speech={speech} PlayIcon={PlayIcon} />
+  }
   return (
     <section id={`greetings-${section.sourceKey}`} className="greetings-content-section greetings-learning-panel">
       <div className="greetings-learning-panel-head">

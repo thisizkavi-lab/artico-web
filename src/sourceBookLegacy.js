@@ -354,6 +354,20 @@ function mergeSourceSupplements(sections, number) {
 export function makeSourceBookLesson(lesson) {
   if (!lesson || lesson.kind === 'source-book') return lesson
   const sections = reorderSections(mergeSourceSupplements(childSections(lesson), lesson.number), lesson.number)
+  // Greetings keeps two small source panels beside the main phrases: the
+  // printed "more phrases" / recognition lists.  The legacy section builder
+  // only flattened `phrases`, so restore those entries here before the
+  // Chapter 1 interactive reader consumes the source-book lesson.  Keeping
+  // them in the normalized lesson prevents a visual redesign from silently
+  // dropping source material (and preserves each Japanese explanation).
+  if (Number(lesson.number) === 1) {
+    sections.forEach((section) => {
+      const sourceSection = lesson.learn?.[section.sourceKey]
+      if (Array.isArray(sourceSection?.recognition)) {
+        section.recognition = sourceSection.recognition.map((item) => ({ ...item }))
+      }
+    })
+  }
   const intro = lesson.learn?.intro || lesson.learn?.why || []
   const functions = lesson.learn?.functions || []
   const allPhrases = sections.flatMap((item) => item.phrases)

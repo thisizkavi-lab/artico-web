@@ -2797,3 +2797,221 @@ a:focus-visible {
     padding-bottom: 32px;
   }
 }
+
+/* -----------------------------------------------------------------------
+   Final theme + responsive corrections
+
+   The Zenith layer above intentionally owns the visual system, so these
+   rules live at the end of the stylesheet.  They keep the older lesson
+   selectors from re-introducing white surfaces in night mode and give iPad
+   portrait a real single-column reading width instead of a 304px rail plus
+   a squeezed lesson.
+   ----------------------------------------------------------------------- */
+
+html[data-artico-theme="dark"],
+html[data-artico-theme="dark"] body {
+  --zenith-ink: #e2e7e1;
+  --zenith-paper: #171b18;
+  --zenith-background: #111411;
+  --zenith-surface: #202620;
+  --zenith-surface-soft: #232b24;
+  --zenith-border: #384239;
+  --zenith-muted: #a5afa6;
+  --zenith-sage: #a8b8a8;
+  --zenith-sage-soft: #70866f;
+  --zenith-sage-highlight: #394834;
+  --zenith-sage-highlight-ink: #ebf2e5;
+  --zenith-note: #1d241e;
+  background: var(--zenith-background);
+  color: var(--zenith-ink);
+  color-scheme: dark;
+}
+
+.course-app.theme-dark {
+  --ink: var(--zenith-ink);
+  --paper: var(--zenith-paper);
+  --warm: var(--zenith-background);
+  --surface: var(--zenith-surface);
+  --surface-strong: #293229;
+  --line: var(--zenith-border);
+  --muted: var(--zenith-muted);
+  --olive: var(--zenith-sage);
+  --brand: #c5d29a;
+  --note: var(--zenith-note);
+  background: var(--zenith-background);
+  color: var(--zenith-ink);
+  color-scheme: dark;
+}
+
+.course-app.theme-dark .app-header,
+.course-app.theme-dark .mode-switch,
+.course-app.theme-dark .lesson-sidebar,
+.course-app.theme-dark .practice-sidebar,
+.course-app.theme-dark .everyday-sidebar,
+.course-app.theme-dark .profile-panel {
+  border-color: var(--zenith-border);
+  background: var(--zenith-paper);
+}
+
+.course-app.theme-dark .app-header { background: rgba(18, 21, 18, .97); }
+.course-app.theme-dark .lesson-main { background: var(--zenith-background); }
+.course-app.theme-dark .curriculum-item.active,
+.course-app.theme-dark .curriculum-subitem.active { background: var(--zenith-surface-strong); }
+.course-app.theme-dark .curriculum-item:hover,
+.course-app.theme-dark .curriculum-subitem:hover { background: var(--zenith-surface); }
+.course-app.theme-dark .curriculum-item.active .curriculum-number { border-color: var(--zenith-sage); background: var(--zenith-sage); color: #172018; }
+.course-app.theme-dark .mode-switch button { color: var(--zenith-muted); }
+.course-app.theme-dark .mode-switch button.active { background: var(--zenith-surface-strong); color: var(--zenith-ink); }
+.course-app.theme-dark .secondary-button { border-color: var(--zenith-border); color: var(--zenith-ink); }
+.course-app.theme-dark .secondary-button:hover:not(:disabled) { background: var(--zenith-surface); color: var(--zenith-ink); }
+
+/* Interactive source-book panels contain a few deliberately art-directed
+   white fills.  Re-map those fills so the Japanese explanation and English
+   text remain readable together in both lesson tracks. */
+.course-app.theme-dark .greetings-interactive-hero,
+.course-app.theme-dark .greetings-vocabulary-scene-panel,
+.course-app.theme-dark .greetings-vocabulary-more,
+.course-app.theme-dark .greetings-vocabulary-stage,
+.course-app.theme-dark .greetings-vocabulary-more-item,
+.course-app.theme-dark .greetings-conversation-card,
+.course-app.theme-dark .greetings-conversation-lines button,
+.course-app.theme-dark .greetings-interactive-lines > button:not(.greetings-next-line),
+.course-app.theme-dark .greetings-roleplay-line,
+.course-app.theme-dark .greetings-roleplay-hidden,
+.course-app.theme-dark .greetings-natural-table > div,
+.course-app.theme-dark .greetings-good-note,
+.course-app.theme-dark .source-book-good-to-know,
+.course-app.theme-dark .source-book-detail-dialog {
+  background: var(--zenith-paper);
+  color: var(--zenith-ink);
+}
+
+.course-app.theme-dark .greetings-vocabulary-scene-panel,
+.course-app.theme-dark .greetings-vocabulary-more,
+.course-app.theme-dark .greetings-interactive-hero,
+.course-app.theme-dark .greetings-conversation-section,
+.course-app.theme-dark .greetings-good-to-know {
+  border-color: #708b59;
+}
+
+.course-app.theme-dark .greetings-vocabulary-stage { background: var(--zenith-surface); border-color: #536b50; }
+.course-app.theme-dark .greetings-scene-artwork > rect:first-child,
+.course-app.theme-dark .source-book-scene-artwork > rect:first-child { fill: var(--zenith-paper); }
+.course-app.theme-dark .greetings-vocabulary-panel-header,
+.course-app.theme-dark .greetings-conversation-card-header { border-color: var(--zenith-border); }
+.course-app.theme-dark .greetings-vocabulary-panel-title h2,
+.course-app.theme-dark .greetings-vocabulary-selected strong,
+.course-app.theme-dark .greetings-dialogue-english { color: var(--zenith-ink); }
+.course-app.theme-dark .greetings-vocabulary-panel-number,
+.course-app.theme-dark .greetings-conversation-turns,
+.course-app.theme-dark .greetings-dialogue-speaker b,
+.course-app.theme-dark .greetings-dialogue-speaker small { color: var(--brand); }
+.course-app.theme-dark .greetings-vocabulary-tone-pill,
+.course-app.theme-dark .source-book-tone-pill { background: #2d3b2e; color: #d5e7c9; }
+.course-app.theme-dark .greetings-vocabulary-tone-pill.tone-formal { background: #263b43; color: #b9e4f4; }
+.course-app.theme-dark .greetings-vocabulary-tone-pill.tone-others { background: #403027; color: #f0c7a8; }
+
+.course-app.theme-dark .greetings-scene-bubble,
+.course-app.theme-dark .greetings-scene-bubble::after,
+.course-app.theme-dark .greetings-dialogue-bubble,
+.course-app.theme-dark .greetings-dialogue-bubble::after { background: var(--zenith-surface); color: var(--zenith-ink); }
+.course-app.theme-dark .greetings-scene-bubble.tone-others { color: #f1c5ad; }
+.course-app.theme-dark .greetings-scene-bubble:hover,
+.course-app.theme-dark .greetings-scene-bubble:focus-visible,
+.course-app.theme-dark .greetings-scene-bubble.is-selected,
+.course-app.theme-dark .greetings-scene-bubble.is-playing { background: #303a2f; }
+.course-app.theme-dark .greetings-scene-bubble.tone-formal:hover,
+.course-app.theme-dark .greetings-scene-bubble.tone-formal:focus-visible,
+.course-app.theme-dark .greetings-scene-bubble.tone-formal.is-selected,
+.course-app.theme-dark .greetings-scene-bubble.tone-formal.is-playing { background: #263a42; }
+.course-app.theme-dark .greetings-scene-bubble.tone-others:hover,
+.course-app.theme-dark .greetings-scene-bubble.tone-others:focus-visible,
+.course-app.theme-dark .greetings-scene-bubble.tone-others.is-selected,
+.course-app.theme-dark .greetings-scene-bubble.tone-others.is-playing { background: #403027; }
+
+.course-app.theme-dark .greetings-vocabulary-selected,
+.course-app.theme-dark .greetings-vocabulary-selected-actions button,
+.course-app.theme-dark .greetings-vocabulary-more-item:hover,
+.course-app.theme-dark .greetings-vocabulary-more-item:focus-visible,
+.course-app.theme-dark .greetings-vocabulary-more-item.is-selected,
+.course-app.theme-dark .greetings-conversation-lines button.speaker-b,
+.course-app.theme-dark .greetings-interactive-lines button.speaker-b,
+.course-app.theme-dark .greetings-roleplay-line.is-own-line,
+.course-app.theme-dark .greetings-roleplay-hidden,
+.course-app.theme-dark .greetings-good-to-know,
+.course-app.theme-dark .greetings-natural-table > div { background: var(--zenith-surface); }
+.course-app.theme-dark .greetings-vocabulary-selected,
+.course-app.theme-dark .greetings-vocabulary-selected-actions button,
+.course-app.theme-dark .greetings-vocabulary-more-item,
+.course-app.theme-dark .greetings-conversation-lines button,
+.course-app.theme-dark .greetings-interactive-lines > button:not(.greetings-next-line),
+.course-app.theme-dark .greetings-roleplay-line,
+.course-app.theme-dark .greetings-roleplay-hidden { border-color: var(--zenith-border); }
+.course-app.theme-dark .greetings-vocabulary-more-item small,
+.course-app.theme-dark .greetings-vocabulary-recognition-note,
+.course-app.theme-dark .greetings-dialogue-japanese,
+.course-app.theme-dark .greetings-good-note { color: var(--zenith-muted); }
+.course-app.theme-dark .greetings-vocabulary-recognition-note { background: var(--zenith-note); border-left-color: #6f9bb0; }
+
+.course-app.theme-dark .greetings-conversation-section { background: var(--zenith-paper); }
+.course-app.theme-dark .greetings-conversation-card { background: var(--zenith-surface); border-color: #9a7b38; }
+.course-app.theme-dark .greetings-dialogue-bubble { background: var(--zenith-paper); }
+.course-app.theme-dark .greetings-dialogue-bubble::after { background: var(--zenith-paper); }
+.course-app.theme-dark .greetings-dialogue-bubble:hover,
+.course-app.theme-dark .greetings-dialogue-bubble:focus-visible,
+.course-app.theme-dark .greetings-dialogue-bubble.is-playing { background: #3a3829; }
+.course-app.theme-dark .greetings-dialogue-bubble:hover::after,
+.course-app.theme-dark .greetings-dialogue-bubble:focus-visible::after,
+.course-app.theme-dark .greetings-dialogue-bubble.is-playing::after { background: #3a3829; }
+.course-app.theme-dark .greetings-natural-table > div { border-color: var(--zenith-border); }
+.course-app.theme-dark .greetings-track-switch,
+.course-app.theme-dark .greetings-studio-modes,
+.course-app.theme-dark .greetings-dialogue-tabs button,
+.course-app.theme-dark .greetings-role-choice button { background: var(--zenith-paper); color: var(--zenith-muted); }
+.course-app.theme-dark .greetings-dialogue-tabs button.active,
+.course-app.theme-dark .greetings-role-choice button.active { background: var(--zenith-surface-strong); color: var(--zenith-ink); }
+.course-app.theme-dark .greetings-practice-conversation-card { background: var(--zenith-surface); border-color: #9a7b38; }
+
+/* iPad portrait: keep the curriculum useful without squeezing the lesson
+   into the leftover 464px column.  The rail remains scrollable and compact;
+   the reading area receives the full viewport width below it. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .course-app .app-body { display: block; }
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--zenith-border);
+  }
+  .course-app .curriculum-tree { padding: 16px 24px 12px; }
+  .course-app .lesson-page,
+  .course-app .practice-page { padding: 48px 40px 40px; }
+  .course-app .lesson-route-footer { padding-right: 40px; padding-left: 40px; }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .course-app .app-body { grid-template-columns: 260px minmax(0, 1fr); }
+  .course-app .lesson-page,
+  .course-app .practice-page { padding-right: 40px; padding-left: 40px; }
+  .course-app .lesson-route-footer { padding-right: 40px; padding-left: 40px; }
+  .course-app .greetings-reader { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .course-app .greetings-outline {
+    position: static;
+    order: -1;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid var(--zenith-border);
+    overflow-x: auto;
+  }
+  .course-app .greetings-outline > span { flex: 0 0 auto; margin: 0; }
+  .course-app .greetings-outline nav { display: flex; gap: 4px; }
+  .course-app .greetings-outline a { flex: 0 0 auto; white-space: nowrap; }
+}

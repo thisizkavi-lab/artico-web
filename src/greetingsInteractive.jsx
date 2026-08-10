@@ -752,6 +752,184 @@ export function GreetingsInteractiveLearnView({ lesson, speakWithBrowser, PlayIc
   )
 }
 
+const INTRODUCTION_BUBBLE_POSITIONS = {
+  informal: ['top-left', 'top-center', 'middle-left', 'top-right'],
+  formal: ['top-center', 'top-right', 'bottom-center'],
+  others: ['top-left', 'top-right', 'bottom-center'],
+}
+
+function IntroductionSceneArtwork({ tone = 'informal' }) {
+  const formal = tone === 'formal'
+  const others = tone === 'others'
+  return (
+    <svg className="greetings-scene-artwork introduction-scene-artwork" viewBox="0 0 760 390" role="img" aria-label={formal ? '職場で自己紹介をする場面' : others ? '知り合い同士を紹介する場面' : 'カジュアルに自己紹介をする場面'}>
+      <rect width="760" height="390" fill="#fff" />
+      <path d="M0 315 Q190 281 380 315 T760 315 V390 H0Z" fill={formal ? '#eef5f8' : '#f4f7fb'} />
+      {formal ? (
+        <>
+          <rect x="75" y="205" width="310" height="28" rx="5" fill="#d5e8ee" />
+          <rect x="108" y="233" width="28" height="80" fill="#b3cdd7" />
+          <rect x="325" y="233" width="28" height="80" fill="#b3cdd7" />
+          {[100, 175, 250, 325].map((x) => <rect key={x} x={x} y="160" width="18" height="45" rx="3" fill="#b3cdd7" />)}
+          <ScenePerson x={487} y={294} color="#087fb9" />
+          <ScenePerson x={610} y={294} color="#087fb9" flip />
+          <path d="M532 268 Q548 252 565 268 M565 268 Q582 252 598 268" fill="none" stroke="#40b8e8" strokeLinecap="round" strokeWidth="7" />
+        </>
+      ) : others ? (
+        <>
+          <ellipse cx="380" cy="284" rx="180" ry="48" fill="#f7e8d9" stroke="#d7a74d" strokeWidth="4" />
+          <ScenePerson x={210} y={294} color="#d66b3d" wave />
+          <ScenePerson x={380} y={294} color="#753cf2" />
+          <ScenePerson x={550} y={294} color="#5e7c8b" flip wave />
+          <path d="M271 255 Q380 211 489 255" fill="none" stroke="#d7a74d" strokeDasharray="7 9" strokeLinecap="round" strokeWidth="4" />
+          <circle cx="380" cy="228" r="6" fill="#d7a74d" />
+        </>
+      ) : (
+        <>
+          <path d="M135 278 Q235 242 335 278 T535 278" fill="none" stroke="#d8e4ee" strokeWidth="20" strokeLinecap="round" />
+          <ScenePerson x={276} y={294} color="#753cf2" wave />
+          <ScenePerson x={457} y={294} color="#5e7c8b" flip wave />
+          <path d="M328 256 Q366 229 405 256" fill="none" stroke="#d7a74d" strokeDasharray="7 9" strokeLinecap="round" strokeWidth="4" />
+          <circle cx="366" cy="231" r="6" fill="#d7a74d" />
+        </>
+      )}
+    </svg>
+  )
+}
+
+function IntroductionVocabularySceneSection({ lesson, section, panelNumber, tone, moreItemsOverride, moreNumber }) {
+  const mastery = section.mastery
+  const speech = section.speech
+  const PlayIcon = section.PlayIcon
+  const phrases = useMemo(() => normalizeVocabularySection(lesson, section), [lesson, section])
+  const recognition = useMemo(() => normalizeRecognitionSection(lesson, section), [lesson, section])
+  const sceneCount = tone === 'formal' ? 3 : phrases.length
+  const sceneItems = useMemo(() => phrases.slice(0, sceneCount), [phrases, sceneCount])
+  const moreItems = useMemo(() => {
+    if (moreItemsOverride) {
+      const moreSection = { id: `${section.id}-more`, sourceKey: `${section.sourceKey}-more`, phrases: moreItemsOverride }
+      return normalizeVocabularySection(lesson, moreSection)
+    }
+    return [...phrases.slice(sceneCount), ...recognition]
+  }, [lesson, moreItemsOverride, phrases, recognition, sceneCount, section.id, section.sourceKey])
+  const [selectedItem, setSelectedItem] = useState(sceneItems[0] || moreItems[0] || null)
+  const selectedId = selectedItem?.id
+  const [detailOpen, setDetailOpen] = useState(false)
+  useEffect(() => {
+    if (!selectedItem || ![...sceneItems, ...moreItems].some((item) => item.id === selectedItem.id)) setSelectedItem(sceneItems[0] || moreItems[0] || null)
+  }, [moreItems, sceneItems, selectedItem])
+
+  const playItem = useCallback((item) => {
+    if (!item) return
+    setSelectedItem(item)
+    speech.play(item.id, [item.phrase], 0.92)
+  }, [speech])
+  const playAllId = `${section.id}:scene-all`
+  const allItems = [...sceneItems, ...moreItems]
+  const panelTitle = tone === 'formal' ? 'INTRODUCING YOURSELF FORMALLY' : tone === 'others' ? 'INTRODUCING OTHER PEOPLE' : 'INTRODUCING YOURSELF INFORMALLY'
+  const toneLabel = tone === 'formal' ? 'Business / Professional' : tone === 'others' ? 'Connecting people' : 'Casual / Friends'
+
+  return (
+    <section id={`introductions-${section.sourceKey}`} className={`greetings-vocabulary-section introductions-vocabulary-section tone-${tone}`}>
+      <div className="greetings-vocabulary-scene-panel">
+        <header className="greetings-vocabulary-panel-header">
+          <div>
+            <div className="greetings-vocabulary-panel-title"><span className="greetings-vocabulary-panel-number">{panelNumber}</span><h2>{panelTitle}</h2></div>
+            <p lang="ja">{section.intro}</p>
+          </div>
+          <span className={`greetings-vocabulary-tone-pill tone-${tone}`}>{toneLabel}</span>
+        </header>
+        <div className="greetings-vocabulary-stage">
+          <IntroductionSceneArtwork tone={tone} />
+          <div className="greetings-scene-bubbles">
+            {sceneItems.map((item, index) => <ScenePhraseBubble key={item.id} item={item} tone={tone} position={INTRODUCTION_BUBBLE_POSITIONS[tone][index] || 'middle-center'} selected={selectedId === item.id} isPlaying={speech.playingId === item.id} onClick={() => playItem(item)} />)}
+          </div>
+          <button type="button" className={`greetings-vocabulary-stage-play ${speech.playingId === playAllId ? 'is-playing' : ''}`} onClick={() => speech.play(playAllId, allItems.map((item) => item.phrase), 0.9)} disabled={!allItems.length} aria-label={speech.playingId === playAllId ? '自己紹介を停止' : 'このセクションをすべて聞く'}>
+            {speech.playingId === playAllId ? <span aria-hidden="true">■</span> : <SoundGlyph />}
+          </button>
+        </div>
+        {selectedItem && <div className="greetings-vocabulary-selected" aria-live="polite">
+          <div><span className="section-kicker">Selected phrase · 選択中の表現</span><strong lang="en">{selectedItem.phrase}</strong><p lang="ja">{selectedItem.meaning}</p><small lang="ja">使う場面：{selectedItem.context || selectedItem.note || '原書の表現'}</small></div>
+          <div className="greetings-vocabulary-selected-actions"><button type="button" className={speech.playingId === selectedItem.id ? 'is-playing' : ''} onClick={() => playItem(selectedItem)}><SoundGlyph /> {speech.playingId === selectedItem.id ? '停止' : '聞く'}</button><button type="button" onClick={() => setDetailOpen(true)}>詳細・整理</button></div>
+        </div>}
+      </div>
+
+      <aside className="greetings-vocabulary-more" aria-label={`${section.title}の追加表現`}>
+        <header className="greetings-vocabulary-panel-header greetings-vocabulary-more-header">
+          <div className="greetings-vocabulary-panel-title">{moreNumber && <span className="greetings-vocabulary-panel-number">{moreNumber}</span>}<h2>MORE PHRASES</h2></div>
+          <p lang="ja">追加表現 · 英語を押すと音声と意味を確認できます。</p>
+        </header>
+        <div className="greetings-vocabulary-more-list">{moreItems.map((item) => <button key={item.id} type="button" className={`greetings-vocabulary-more-item ${selectedId === item.id ? 'is-selected' : ''}`} onClick={() => playItem(item)} aria-label={`${item.phrase}（${item.meaning}）を聞く`}><span><strong lang="en">{item.phrase}</strong><small lang="ja">{item.meaning}</small></span><SoundGlyph /></button>)}</div>
+      </aside>
+
+      {detailOpen && selectedItem && <VocabularyDetailDialog item={selectedItem} status={mastery.statusFor(selectedItem.id)} onStatus={(status) => mastery.setStatus(selectedItem.id, status)} onClose={() => setDetailOpen(false)} onPlay={() => playItem(selectedItem)} isPlaying={speech.playingId === selectedItem.id} PlayIcon={PlayIcon} />}
+    </section>
+  )
+}
+
+export function IntroductionsInteractiveLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  const mastery = useVocabularyMastery()
+  const speech = useSpeechQueue(speakWithBrowser)
+  const learn = lesson.learn || {}
+  const sections = useMemo(() => [
+    { ...learn.informal, id: 'intro-informal', sourceKey: 'informal', mastery, speech, PlayIcon },
+    { ...learn.formal, id: 'intro-formal', sourceKey: 'formal', mastery, speech, PlayIcon },
+    { ...learn.others, id: 'intro-others', sourceKey: 'others', mastery, speech, PlayIcon },
+  ], [PlayIcon, learn.formal, learn.informal, learn.others, mastery, speech])
+  const [activeSection, setActiveSection] = useState('introductions-why')
+  const outline = [['introductions-why', '自己紹介の役割'], ...sections.map((section) => [`introductions-${section.sourceKey}`, section.title]), ['introductions-conversations', '会話を交わす'], ['introductions-tips', 'Good to know']]
+
+  return (
+    <div className="lesson-page greetings-page source-book-page greetings-interactive-page introductions-interactive-page">
+      <LessonTitle eyebrow={`Social Fluency · ${lesson.number}`} title={lesson.title} ja={lesson.ja} />
+      <div className="greetings-reader">
+        <div className="greetings-reader-main">
+          <section id="introductions-why" className="greetings-content-section greetings-interactive-hero">
+            <div className="greetings-hero-copy"><span className="section-kicker">Chapter 02 · Start with the big picture</span><h2>自分が誰なのかを、相手に伝える。</h2>{(learn.intro || []).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+            <IntroductionSceneArtwork tone="informal" />
+          </section>
+
+          <section className="greetings-content-section introductions-context-strip"><div><span className="section-kicker">Context matters · 場面で変わる</span><h2>名前だけでなく、関係や役割も伝えます。</h2><p>友人、職場、初対面など、相手との距離に合わせて自己紹介の形を選びます。</p></div><div className="greetings-recap"><div><span className="section-kicker">Casual</span><p>Hey, I&apos;m Tao.</p></div><div><span className="section-kicker">Professional</span><p>Hello, I&apos;m Daniyal Ali.</p></div></div></section>
+
+          <IntroductionVocabularySceneSection lesson={lesson} section={sections[0]} panelNumber="2.1" tone="informal" />
+          <IntroductionVocabularySceneSection lesson={lesson} section={sections[1]} panelNumber="2.2" tone="formal" />
+          <IntroductionVocabularySceneSection lesson={lesson} section={sections[2]} panelNumber="2.3" tone="others" moreItemsOverride={learn.more || []} moreNumber="2.4" />
+
+          <section id="introductions-conversations" className="greetings-content-section greetings-conversation-section">
+            <div className="greetings-section-heading"><span className="section-kicker">Introducing people · 実際の会話</span><h2>紹介の順番を、会話の流れで見る。</h2><p>一人ずつの発話を押して聞いたり、会話全体を続けて聞いたりできます。日本語の意味も残しています。</p></div>
+            <div className="greetings-conversation-grid">{(learn.dialogues || []).map((dialogue) => <ConversationCard key={dialogue.id} dialogue={dialogue} speech={speech} PlayIcon={PlayIcon} />)}</div>
+          </section>
+
+          <section id="introductions-tips" className="greetings-content-section greetings-good-to-know introductions-good-to-know"><div className="greetings-section-heading"><span className="section-kicker">Good to know · 原書のポイント</span><h2>名前に、ひと言の関係と返事を添える。</h2><p>{learn.tip}</p></div><div className="greetings-recap"><div><span className="section-kicker">自分で使う</span><p>Hey, I&apos;m … · I don&apos;t think we&apos;ve met. · You can call me …</p></div><div><span className="section-kicker">返せるようにする</span><p>Lovely to meet you. · Great to meet you! · You, too!</p></div></div><p className="greetings-next-cue">Practiceで声を重ねる →</p></section>
+        </div>
+        <aside className="greetings-outline" aria-label="このページの項目"><span>On this page</span><nav>{outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}</nav></aside>
+      </div>
+    </div>
+  )
+}
+
+export function IntroductionsInteractivePracticeView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  const mastery = useVocabularyMastery()
+  const speech = useSpeechQueue(speakWithBrowser)
+  const learn = lesson.learn || {}
+  const sections = useMemo(() => [
+    { ...learn.informal, id: 'intro-informal', sourceKey: 'informal' },
+    { ...learn.formal, id: 'intro-formal', sourceKey: 'formal' },
+    { ...learn.others, id: 'intro-others', sourceKey: 'others' },
+    { id: 'intro-more', sourceKey: 'more', title: 'More phrases', intro: '人間関係や役割を添える表現です。', phrases: learn.more || [] },
+  ], [learn.formal, learn.informal, learn.more, learn.others])
+  const [track, setTrack] = useState('vocabulary')
+  const [selectedSection, setSelectedSection] = useState(0)
+  const active = sections[selectedSection] || sections[0]
+  return (
+    <div className="practice-page greetings-practice-page greetings-interactive-practice introductions-interactive-practice">
+      <LessonTitle eyebrow={`Social Fluency Practice · ${lesson.number}`} title="自己紹介を整理して、会話で使う" ja="原書の語句と会話だけを使って、覚え方を自分に合わせます。" />
+      <div className="greetings-track-switch" role="tablist" aria-label="練習内容"><button type="button" role="tab" aria-selected={track === 'vocabulary'} className={track === 'vocabulary' ? 'active' : ''} onClick={() => setTrack('vocabulary')}><span>語彙・フレーズ<small>Vocabulary</small></span></button><button type="button" role="tab" aria-selected={track === 'conversation'} className={track === 'conversation' ? 'active' : ''} onClick={() => setTrack('conversation')}><span>会話<small>Conversation</small></span></button></div>
+      {track === 'vocabulary' ? <section className="greetings-practice-section greetings-learning-panel"><div className="greetings-section-heading"><span className="section-kicker">Vocabulary mastery</span><h2>今、集中したい表現だけを見る。</h2><p>「難しい・学習中・覚えた」に整理した結果は、このブラウザーに保存されます。</p></div><div className="greetings-dialogue-tabs" role="tablist">{sections.map((section, index) => <button key={section.id} type="button" role="tab" aria-selected={selectedSection === index} className={selectedSection === index ? 'active' : ''} onClick={() => setSelectedSection(index)}>{section.title}</button>)}</div>{active && <VocabularyMasteryBoard lesson={lesson} section={active} mastery={mastery} speech={speech} PlayIcon={PlayIcon} />}</section> : <section className="greetings-practice-section greetings-conversation-section"><div className="greetings-section-heading"><span className="section-kicker">Conversation studio</span><h2>全文・一行ずつ・役割練習。</h2><p>会話文は原書の2つのやり取りから変えていません。</p></div><ConversationPracticeStudio dialogues={learn.dialogues || []} speech={speech} PlayIcon={PlayIcon} /></section>}
+    </div>
+  )
+}
+
 function ConversationPracticeStudio({ dialogues, speech, PlayIcon }) {
   const [mode, setMode] = useState('full')
   const [dialogueIndex, setDialogueIndex] = useState(0)

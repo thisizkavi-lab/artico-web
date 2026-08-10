@@ -52,6 +52,17 @@
   border-radius: var(--zenith-radius);
 }
 
+/* Introduction's hero artwork is also used as the stage background below.
+   Keep the hero copy in normal flow so it cannot become a viewport-sized
+   absolute layer before the first vocabulary panel. */
+.course-app .greetings-interactive-hero .introduction-scene-artwork {
+  position: static;
+  width: min(100%, 760px);
+  height: auto;
+  margin: 0 auto;
+  aspect-ratio: 760 / 390;
+}
+
 .course-app .greetings-learning-panel {
   padding: 0;
   border: 1px solid var(--zenith-border);
@@ -419,6 +430,7 @@
   white-space: nowrap;
 }
 .course-app .greetings-vocabulary-tone-pill.tone-formal { background: #dff3ff; color: #0877ae; }
+.course-app .greetings-vocabulary-tone-pill.tone-others { background: #fff0e8; color: #a94e20; }
 
 .course-app .greetings-vocabulary-stage {
   position: relative;
@@ -479,6 +491,8 @@
 
 .course-app .greetings-scene-bubble.tone-formal { border-color: #0aa6e8; }
 .course-app .greetings-scene-bubble.tone-formal::after { color: #0aa6e8; }
+.course-app .greetings-scene-bubble.tone-others { border-color: #d66b3d; color: #8b3f24; }
+.course-app .greetings-scene-bubble.tone-others::after { color: #d66b3d; }
 .course-app .greetings-scene-bubble span:first-child { min-width: 0; overflow-wrap: anywhere; }
 .course-app .greetings-scene-bubble-sound { display: grid; width: 20px; height: 20px; color: currentColor; place-items: center; }
 .course-app .greetings-scene-bubble-sound .greetings-sound-glyph { width: 19px; height: 19px; }
@@ -490,6 +504,10 @@
 .course-app .greetings-scene-bubble.tone-formal:focus-visible,
 .course-app .greetings-scene-bubble.tone-formal.is-selected,
 .course-app .greetings-scene-bubble.tone-formal.is-playing { background: #e7f7ff; box-shadow: 0 4px 0 rgba(10, 166, 232, .2); }
+.course-app .greetings-scene-bubble.tone-others:hover,
+.course-app .greetings-scene-bubble.tone-others:focus-visible,
+.course-app .greetings-scene-bubble.tone-others.is-selected,
+.course-app .greetings-scene-bubble.tone-others.is-playing { background: #fff0e8; box-shadow: 0 4px 0 rgba(214, 107, 61, .22); }
 
 .course-app .greetings-scene-bubble.position-top-left { top: 8%; left: 5%; }
 .course-app .greetings-scene-bubble.position-top-center { top: 6%; left: 34%; }
@@ -596,6 +614,9 @@
 .course-app .greetings-vocabulary-section.tone-formal .greetings-vocabulary-more-item:hover,
 .course-app .greetings-vocabulary-section.tone-formal .greetings-vocabulary-more-item:focus-visible,
 .course-app .greetings-vocabulary-section.tone-formal .greetings-vocabulary-more-item.is-selected { border-color: #0aa6e8; background: #f4fbff; }
+.course-app .greetings-vocabulary-section.tone-others .greetings-vocabulary-more-item:hover,
+.course-app .greetings-vocabulary-section.tone-others .greetings-vocabulary-more-item:focus-visible,
+.course-app .greetings-vocabulary-section.tone-others .greetings-vocabulary-more-item.is-selected { border-color: #d66b3d; background: #fff8f4; }
 .course-app .greetings-vocabulary-recognition-note { margin: 0 16px 18px; padding: 11px 12px; border-left: 3px solid #0aa6e8; background: #f2faff; color: #54728a; font-family: 'Noto Sans JP', sans-serif; font-size: 10px; line-height: 1.65; }
 .course-app .greetings-vocabulary-recognition-note strong { color: #101a2d; font-family: 'Hanken Grotesk', sans-serif; }
 

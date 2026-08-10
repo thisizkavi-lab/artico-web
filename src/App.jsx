@@ -194,7 +194,9 @@ const interactiveSocialLessons = {
 // retaining the Japanese explanations.
 Object.keys(interactiveSocialLessons).forEach((id) => {
   const chapterNumber = Number(id.replace('social-', ''))
-  if (chapterNumber <= 79) interactiveSocialLessons[id] = makeSourceBookLesson(interactiveSocialLessons[id])
+  // Chapter 2 has a dedicated reader that consumes its structured sections;
+  // the source-book adapter remains the Chapter 1/later-chapter fallback.
+  if (chapterNumber <= 79 && chapterNumber !== 2) interactiveSocialLessons[id] = makeSourceBookLesson(interactiveSocialLessons[id])
 })
 
 function speakWithBrowser(text, options = {}) {

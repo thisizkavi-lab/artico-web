@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { SourceBookAudio } from './sourceBookAudio'
+import { GreetingsInteractiveLearnView, GreetingsInteractivePracticeView } from './greetingsInteractive'
 
 function SourcePhraseCard({ item }) {
   return (
@@ -65,6 +66,7 @@ function SourceBookDialogue({ dialogue }) {
 }
 
 export function SourceBookLearnView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  if (Number(lesson?.number) === 1) return <GreetingsInteractiveLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   const { learn } = lesson
   const [activeSection, setActiveSection] = useState(learn.sections?.[0]?.id)
   const outline = useMemo(() => (learn.sections || []).map((item) => [item.id, item.title]), [learn.sections])
@@ -104,7 +106,8 @@ export function SourceBookLearnView({ lesson, speakWithBrowser, PlayIcon, Lesson
   )
 }
 
-export function SourceBookPracticeView({ lesson, LessonTitle }) {
+export function SourceBookPracticeView({ lesson, speakWithBrowser, PlayIcon, LessonTitle }) {
+  if (Number(lesson?.number) === 1) return <GreetingsInteractivePracticeView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   const [selectedSection, setSelectedSection] = useState(0)
   const sections = lesson.learn?.sections || []
   const active = sections[selectedSection] || sections[0]

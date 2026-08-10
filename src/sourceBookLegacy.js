@@ -357,21 +357,38 @@ export function makeSourceBookLesson(lesson) {
   const intro = lesson.learn?.intro || lesson.learn?.why || []
   const functions = lesson.learn?.functions || []
   const allPhrases = sections.flatMap((item) => item.phrases)
+  const isGreetingsChapter = Number(lesson.number) === 1
+  const sourceDialogues = isGreetingsChapter
+    ? (lesson.learn?.exchanges?.patterns || [])
+      .map((pattern) => ({
+        id: pattern.id,
+        label: pattern.label,
+        title: pattern.title,
+        lines: (pattern.lines || [])
+          .filter((line) => isSourceEnglish(line.en, lesson.number))
+          .map((line) => ({ speaker: line.speaker, en: line.en, ja: line.ja })),
+      }))
+      .filter((pattern) => pattern.lines.length > 1)
+    : []
   return {
     ...lesson,
     kind: 'source-book',
     learn: {
       intro,
+      background: isGreetingsChapter
+        ? [...(lesson.learn?.why || []), ...(lesson.learn?.relationship || [])]
+        : intro,
       functions,
       sections,
-      dialogues: [],
+      dialogues: sourceDialogues,
+      naturalSpeech: isGreetingsChapter ? (lesson.learn?.naturalSpeech || []) : [],
       tip: lesson.learn?.tip || '原書の英文と語彙を、原書の順序に沿って確認します。',
     },
     practice: {
       title: `${lesson.enTitle || lesson.title} · 原書フレーズ練習`,
       instructions: '原書にある英文を聞き、意味を確認して声に出します。',
       corePhrases: allPhrases.map((item) => ({ ...item, rate: item.phrase.length > 70 ? 0.78 : 0.86 })),
-      dialogues: [],
+      dialogues: sourceDialogues,
       natural: [],
     },
   }

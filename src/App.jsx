@@ -85,6 +85,8 @@ import { holidayProblemsLesson } from './holidayProblemsContent'
 import { healthMedicineLesson } from './healthMedicineContent'
 import { pharmacyLesson } from './pharmacyContent'
 import { appointmentLesson } from './appointmentContent'
+import { sourceBookLessons } from './sourceBookLessons'
+import { makeSourceBookLesson } from './sourceBookLegacy'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
 
 const interactiveSocialLessons = {
@@ -167,10 +169,33 @@ const interactiveSocialLessons = {
   'social-77': beachLesson,
   'social-78': findingWayLesson,
   'social-79': holidayProblemsLesson,
-  'social-80': healthMedicineLesson,
-  'social-81': pharmacyLesson,
-  'social-82': appointmentLesson,
+  'social-80': sourceBookLessons['social-80'],
+  'social-81': sourceBookLessons['social-81'],
+  'social-82': sourceBookLessons['social-82'],
+  'social-83': sourceBookLessons['social-83'],
+  'social-84': sourceBookLessons['social-84'],
+  'social-85': sourceBookLessons['social-85'],
+  'social-86': sourceBookLessons['social-86'],
+  'social-87': sourceBookLessons['social-87'],
+  'social-88': sourceBookLessons['social-88'],
+  'social-89': sourceBookLessons['social-89'],
+  'social-90': sourceBookLessons['social-90'],
+  'social-91': sourceBookLessons['social-91'],
+  'social-92': sourceBookLessons['social-92'],
+  'social-93': sourceBookLessons['social-93'],
+  'social-94': sourceBookLessons['social-94'],
+  'social-95': sourceBookLessons['social-95'],
+  'social-96': sourceBookLessons['social-96'],
 }
+
+// The original lesson files contain earlier custom presentation layers. For
+// the source-book pass, chapters 1–79 are rendered from their source-backed
+// phrase/vocabulary items only; this removes invented role-play lines while
+// retaining the Japanese explanations.
+Object.keys(interactiveSocialLessons).forEach((id) => {
+  const chapterNumber = Number(id.replace('social-', ''))
+  if (chapterNumber <= 79) interactiveSocialLessons[id] = makeSourceBookLesson(interactiveSocialLessons[id])
+})
 
 function speakWithBrowser(text, options = {}) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return false

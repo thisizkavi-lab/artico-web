@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { socialFluencyChapterCount } from './socialFluencyCurriculum'
+import { SourceBookLearnView, SourceBookPracticeView } from './sourceBookViews'
 
 export function EverydaySidebar({ activeModuleId, onSelectModule, activeLessonId, onSelectLesson, curriculum, CurriculumNav }) {
   return (
@@ -9549,6 +9550,7 @@ function GreetingsPracticeView({ lesson, speakWithBrowser, PlayIcon, LessonTitle
 }
 
 export function EverydayLearnView({ lesson, step, setStep, speakWithBrowser, PlayIcon, LessonTitle }) {
+  if (lesson?.kind === 'source-book') return <SourceBookLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'greetings') return <GreetingsLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'introductions') return <IntroductionsLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'fillers') return <FillersLearnView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
@@ -9731,6 +9733,7 @@ export function EverydayLearnView({ lesson, step, setStep, speakWithBrowser, Pla
 }
 
 export function EverydayPracticeView({ lesson, step, setStep, speakWithBrowser, PlayIcon, LessonTitle }) {
+  if (lesson?.kind === 'source-book') return <SourceBookPracticeView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (lesson?.kind === 'greetings' || lesson?.kind === 'introductions' || lesson?.kind === 'fillers' || lesson?.kind === 'repair' || lesson?.kind === 'opinions' || lesson?.kind === 'agreement' || lesson?.kind === 'suggestions' || lesson?.kind === 'thanks' || lesson?.kind === 'sorry' || lesson?.kind === 'goodbye' || lesson?.kind === 'dates-weather' || lesson?.kind === 'arrangements' || lesson?.kind === 'weather' || lesson?.kind === 'family' || lesson?.kind === 'talking-family' || lesson?.kind === 'life-events' || lesson?.kind === 'socializing' || lesson?.kind === 'dating' || lesson?.kind === 'support' || lesson?.kind === 'eating-drinking' || lesson?.kind === 'cafes' || lesson?.kind === 'takeaway' || lesson?.kind === 'bars' || lesson?.kind === 'restaurant' || lesson?.kind === 'cooking' || lesson?.kind === 'free-time' || lesson?.kind === 'cinema' || lesson?.kind === 'theatre' || lesson?.kind === 'concerts' || lesson?.kind === 'gym' || lesson?.kind === 'sports' || lesson?.kind === 'sports-events' || lesson?.kind === 'hobbies' || lesson?.kind === 'shops-services' || lesson?.kind === 'market' || lesson?.kind === 'supermarket' || lesson?.kind === 'garden-centre' || lesson?.kind === 'diy-store' || lesson?.kind === 'clothes-shoes' || lesson?.kind === 'returns-goods' || lesson?.kind === 'hair-beauty' || lesson?.kind === 'post-office' || lesson?.kind === 'money-finance' || lesson?.kind === 'library' || lesson?.kind === 'work-study' || lesson?.kind === 'school' || lesson?.kind === 'higher-education' || lesson?.kind === 'looking-for-work' || lesson?.kind === 'applying-for-job' || lesson?.kind === 'job-interviews' || lesson?.kind === 'starting-new-job' || lesson?.kind === 'workplace' || lesson?.kind === 'presentation' || lesson?.kind === 'work-meetings' || lesson?.kind === 'online-meetings' || lesson?.kind === 'home' || lesson?.kind === 'finding-home' || lesson?.kind === 'moving-house' || lesson?.kind === 'neighbours' || lesson?.kind === 'chores' || lesson?.kind === 'home-improvements' || lesson?.kind === 'pets' || lesson?.kind === 'home-emergencies' || lesson?.kind === 'home-entertainment' || lesson?.kind === 'getting-around' || lesson?.kind === 'buses-coaches' || lesson?.kind === 'train-metro-travel' || lesson?.kind === 'airport' || lesson?.kind === 'cycling' || lesson?.kind === 'taxis' || lesson?.kind === 'garage' || lesson?.kind === 'holiday' || lesson?.kind === 'booking-holiday' || lesson?.kind === 'staying-hotel' || lesson?.kind === 'city-sightseeing' || lesson?.kind === 'camping' || lesson?.kind === 'beach' || lesson?.kind === 'finding-way' || lesson?.kind === 'holiday-problems' || lesson?.kind === 'health-medicine' || lesson?.kind === 'pharmacy' || lesson?.kind === 'booking-appointment') return <GreetingsPracticeView lesson={lesson} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} LessonTitle={LessonTitle} />
   if (!lesson || !lesson.practice) return null
   const { practice } = lesson

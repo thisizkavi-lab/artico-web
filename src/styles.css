@@ -3177,12 +3177,16 @@ html[data-artico-theme="dark"] body {
 }
 
 .course-app .sidebar-toggle-row {
+  position: sticky;
+  top: 0;
+  z-index: 4;
   display: flex;
   flex: 0 0 auto;
   align-items: center;
   justify-content: flex-start;
   padding: 13px 16px 9px;
   border-bottom: 1px solid var(--line);
+  background: var(--paper);
 }
 
 .course-app .sidebar-toggle {

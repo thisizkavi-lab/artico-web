@@ -88,6 +88,7 @@ import { appointmentLesson } from './appointmentContent'
 import { sourceBookLessons } from './sourceBookLessons'
 import { makeSourceBookLesson } from './sourceBookLegacy'
 import { EverydaySidebar, EverydayLearnView, EverydayPracticeView, EverydayOverviewView } from './EverydayFluency'
+import { ResponsiveOutline } from './ResponsiveOutline'
 
 const interactiveSocialLessons = {
   'social-01': greetingsLesson,
@@ -509,7 +510,19 @@ function ViewControls({ darkMode, readingFocus, onToggleDark, onToggleReading })
 function AppHeader({ mode, setMode, onHome, profile, view }) {
   return (
     <header className="app-header">
-      <Logo onClick={onHome} />
+      <div className="course-header-brand">
+        <button
+          type="button"
+          className="course-nav-toggle"
+          aria-label="Open course navigation"
+          aria-controls="mobile-course-navigation"
+          aria-expanded={view.navOpen}
+          onClick={view.onOpenNav}
+        >
+          <MenuIcon />
+        </button>
+        <Logo onClick={onHome} />
+      </div>
       <div className="mode-switch" aria-label="Learning mode">
         <button aria-pressed={mode === 'learn'} className={mode === 'learn' ? 'active' : ''} type="button" onClick={() => setMode('learn')}><span className="book-symbol">◆</span>Learn</button>
         <button aria-pressed={mode === 'practice'} className={mode === 'practice' ? 'active' : ''} type="button" onClick={() => setMode('practice')}><span className="mouth-symbol">◌</span>Practice</button>
@@ -519,6 +532,52 @@ function AppHeader({ mode, setMode, onHome, profile, view }) {
         <ProfileMenu {...profile} view={view} />
       </div>
     </header>
+  )
+}
+
+function MenuIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </svg>
+  )
+}
+
+function CloseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6 6 12 12M18 6 6 18" />
+    </svg>
+  )
+}
+
+function MobileCurriculumDrawer({ open, onClose, curriculum }) {
+  if (!open) return null
+
+  return (
+    <div className="mobile-curriculum-layer" data-open="true">
+      <button type="button" className="mobile-curriculum-scrim" aria-label="Close course navigation" onClick={onClose} />
+      <aside
+        id="mobile-course-navigation"
+        className="mobile-curriculum-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Course navigation"
+      >
+        <div className="mobile-curriculum-header">
+          <div>
+            <small>ARTICO COURSE</small>
+            <strong>コースナビゲーション</strong>
+          </div>
+          <button type="button" className="mobile-curriculum-close" aria-label="Close course navigation" onClick={onClose}>
+            <CloseIcon />
+          </button>
+        </div>
+        <div className="mobile-curriculum-scroll">
+          <CurriculumNav {...curriculum} />
+        </div>
+      </aside>
+    </div>
   )
 }
 
@@ -543,15 +602,18 @@ function CurriculumNav({
   onSelectEverydayModule,
   activeEverydayLessonId,
   onSelectEverydayLesson,
+  onClose,
 }) {
   const chooseFoundation = (id) => {
     setCourseLayer('foundation')
     onSelectFoundation?.(id)
+    onClose?.()
   }
 
   const chooseEveryday = (id) => {
     setCourseLayer('fluency')
     onSelectEverydayModule?.(id)
+    onClose?.()
   }
 
   return (
@@ -1330,10 +1392,9 @@ function TheoryOutline({ activeStep, activeSectionId }) {
     ? theorySectionSets[activeStep].map((section) => ({ label: section.title, href: `#${section.id}`, active: activeSectionId === section.id }))
     : items.map((item, index) => ({ label: item, href: `#theory-${activeStep}-${index}` }))
   return (
-    <aside className="theory-outline" aria-label={theorySectionSets[activeStep] ? 'このページ' : 'On this page'}>
-      <strong>{theorySectionSets[activeStep] ? 'このページ' : 'On this page'}</strong>
+    <ResponsiveOutline className="theory-outline" ariaLabel={theorySectionSets[activeStep] ? 'このページ' : 'On this page'} label={theorySectionSets[activeStep] ? 'このページ' : 'On this page'}>
       <ol>{links.map((item) => <li key={item.href}><a className={item.active ? 'active' : undefined} aria-current={item.active ? 'location' : undefined} href={item.href}>{item.label}</a></li>)}</ol>
-    </aside>
+    </ResponsiveOutline>
   )
 }
 
@@ -1990,6 +2051,7 @@ function CourseApp({ onHome }) {
   const [foundationOpen, setFoundationOpen] = useState(true)
   const [everydayOpen, setEverydayOpen] = useState(true)
   const [profileOpen, setProfileOpen] = useState(false)
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const closeProfile = useCallback(() => setProfileOpen(false), [])
   const [viewPreferences, setViewPreferences] = useState(readStoredViewPreferences)
 
@@ -2002,6 +2064,28 @@ function CourseApp({ onHome }) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [mode, activeStep, selected, practiceView, courseLayer, everydayModuleId, everydayLessonId])
+
+  useEffect(() => {
+    if (!mobileNavOpen) return undefined
+
+    const previousOverflow = document.body.style.overflow
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setMobileNavOpen(false)
+    }
+    const closeOnWideViewport = () => {
+      if (window.innerWidth > 900) setMobileNavOpen(false)
+    }
+
+    document.body.style.overflow = 'hidden'
+    document.addEventListener('keydown', closeOnEscape)
+    window.addEventListener('resize', closeOnWideViewport)
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', closeOnEscape)
+      window.removeEventListener('resize', closeOnWideViewport)
+    }
+  }, [mobileNavOpen])
 
   useEffect(() => {
     const hash = window.location.hash.slice(1)
@@ -2150,6 +2234,7 @@ function CourseApp({ onHome }) {
     onSelectEverydayModule: selectEverydayModule,
     activeEverydayLessonId: everydayLessonId,
     onSelectEverydayLesson: selectEverydayLesson,
+    onClose: () => setMobileNavOpen(false),
   }
 
   return (
@@ -2171,8 +2256,11 @@ function CourseApp({ onHome }) {
           readingFocus: viewPreferences.readingFocus,
           onToggleDark: () => setViewPreferences((current) => ({ ...current, darkMode: !current.darkMode })),
           onToggleReading: () => setViewPreferences((current) => ({ ...current, readingFocus: !current.readingFocus })),
+          navOpen: mobileNavOpen,
+          onOpenNav: () => setMobileNavOpen(true),
         }}
       />
+      <MobileCurriculumDrawer open={mobileNavOpen} onClose={() => setMobileNavOpen(false)} curriculum={curriculum} />
       {courseLayer === 'foundation' ? (
         mode === 'learn' ? (
           <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} />

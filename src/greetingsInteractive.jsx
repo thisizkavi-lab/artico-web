@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import './greetingsInteractive.css'
+import { ResponsiveOutline } from './ResponsiveOutline'
 
 const MASTERY_STORAGE_KEY = 'artico-vocabulary-mastery-v1'
 
@@ -745,10 +746,9 @@ export function GreetingsInteractiveLearnView({ lesson, speakWithBrowser, PlayIc
 
           <GoodToKnow rows={naturalSpeech} />
         </div>
-        <aside className="greetings-outline" aria-label="このページの項目">
-          <span>On this page</span>
-          <nav>{outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}</nav>
-        </aside>
+        <ResponsiveOutline className="greetings-outline" ariaLabel="このページの項目">
+          {outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}
+        </ResponsiveOutline>
       </div>
     </div>
   )
@@ -904,7 +904,9 @@ export function IntroductionsInteractiveLearnView({ lesson, speakWithBrowser, Pl
 
           <section id="introductions-tips" className="greetings-content-section greetings-good-to-know introductions-good-to-know"><div className="greetings-section-heading"><span className="section-kicker">Good to know · 原書のポイント</span><h2>名前に、ひと言の関係と返事を添える。</h2><p>{learn.tip}</p></div><div className="greetings-recap"><div><span className="section-kicker">自分で使う</span><p>Hey, I&apos;m … · I don&apos;t think we&apos;ve met. · You can call me …</p></div><div><span className="section-kicker">返せるようにする</span><p>Lovely to meet you. · Great to meet you! · You, too!</p></div></div><p className="greetings-next-cue">Practiceで声を重ねる →</p></section>
         </div>
-        <aside className="greetings-outline" aria-label="このページの項目"><span>On this page</span><nav>{outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}</nav></aside>
+        <ResponsiveOutline className="greetings-outline" ariaLabel="このページの項目">
+          {outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}
+        </ResponsiveOutline>
       </div>
     </div>
   )
@@ -1170,7 +1172,9 @@ export function SourceBookInteractiveLearnView({ lesson, speakWithBrowser, PlayI
         {sections.map((section, index) => <SourceBookInteractiveSection key={section.id} lesson={lesson} section={section} index={index} mastery={mastery} speech={speech} PlayIcon={PlayIcon} />)}
         {learn.dialogues?.length > 0 && <section className="greetings-content-section source-book-dialogues"><div className="greetings-section-heading"><span className="section-kicker">Source dialogues</span><h2>原書の会話</h2><p>原書に掲載された会話を確認します。</p></div><div className="greetings-dialogue-grid">{learn.dialogues.map((dialogue) => <ConversationCard key={dialogue.id || dialogue.title} dialogue={dialogue} speech={speech} PlayIcon={PlayIcon} />)}</div></section>}
         {learn.tip && <section className="greetings-content-section source-book-tip source-book-good-to-know"><span className="section-kicker">Good to know · 原書のポイント</span><h2>学習メモ</h2><p lang="ja">{learn.tip}</p></section>}
-      </div><aside className="greetings-outline" aria-label="このページの項目"><span>On this page</span><nav>{outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}</nav></aside></div>
+      </div><ResponsiveOutline className="greetings-outline" ariaLabel="このページの項目">
+        {outline.map(([id, label]) => <a key={id} href={`#${id}`} className={activeSection === id ? 'active' : ''} onClick={() => setActiveSection(id)}>{label}</a>)}
+      </ResponsiveOutline></div>
     </div>
   )
 }

@@ -530,29 +530,6 @@ svg { display: block; }
 .course-app .book-symbol, .course-app .mouth-symbol { font-size: 14px; }
 .course-app .profile-button, .course-app .profile-button svg { width: 44px; height: 44px; }
 .course-app .profile-button svg { stroke: var(--olive); stroke-width: 2.1; }
-.course-header-brand { display: flex; align-items: center; justify-self: start; min-width: 0; }
-.course-nav-toggle { display: none; align-items: center; justify-content: center; width: 42px; height: 42px; margin-right: 8px; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--olive); cursor: pointer; }
-.course-nav-toggle svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.8; }
-.course-nav-toggle:hover { background: var(--surface); }
-
-.mobile-curriculum-layer { position: fixed; z-index: 80; inset: 0; display: block; }
-.mobile-curriculum-scrim { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; background: rgba(28, 35, 29, .38); cursor: pointer; }
-.mobile-curriculum-drawer { position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; display: flex; width: min(360px, calc(100vw - 48px)); flex-direction: column; border-right: 1px solid var(--line); background: var(--paper); box-shadow: 18px 0 45px rgba(36, 49, 39, .16); animation: mobile-curriculum-in .2s ease-out both; }
-.mobile-curriculum-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 78px; padding: 16px 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
-.mobile-curriculum-header > div { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
-.mobile-curriculum-header small { color: var(--brand); font-size: 9px; font-weight: 800; letter-spacing: 1.2px; }
-.mobile-curriculum-header strong { overflow: hidden; color: var(--ink); font-family: 'Noto Sans JP', sans-serif; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; }
-.mobile-curriculum-close { display: grid; flex: 0 0 auto; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 12px; background: transparent; color: var(--olive); cursor: pointer; place-items: center; }
-.mobile-curriculum-close:hover { background: var(--surface); }
-.mobile-curriculum-close svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.8; }
-.mobile-curriculum-scroll { min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
-.mobile-curriculum-scroll .curriculum-tree { padding: 20px 14px 28px; }
-.mobile-curriculum-scroll .curriculum-section + .curriculum-section { margin-top: 24px; }
-.mobile-curriculum-scroll .curriculum-list { padding-right: 0; padding-left: 8px; }
-.mobile-curriculum-scroll .curriculum-list-everyday { margin-top: 12px; }
-.mobile-curriculum-scroll .curriculum-item { min-height: 56px; }
-@keyframes mobile-curriculum-in { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
-
 .course-app .app-body { grid-template-columns: 280px minmax(0, 1fr); min-height: calc(100vh - 98px); }
 .course-app .lesson-sidebar,
 .course-app .practice-sidebar,
@@ -1984,31 +1961,6 @@ svg { display: block; }
   .course-app .view-toggle { transition: none; }
 }
 
-/* Responsive course navigation: keep the lesson readable on compact screens.
-   The curriculum lives in the modal drawer below 900px; the desktop sidebars
-   remain the source of truth at larger widths. */
-@media (max-width: 900px) {
-  .course-app .app-header { grid-template-columns: auto minmax(0, 1fr) auto; height: 76px; padding: 0 12px; }
-  .course-app .course-nav-toggle { display: inline-flex; }
-  .course-app .course-header-brand { min-width: 0; }
-  .course-app .course-header-brand .logo { width: 88px; align-items: flex-start; }
-  .course-app .course-header-brand .logo > span { font-size: 32px; }
-  .course-app .course-header-brand .logo small { display: none; }
-  .course-app .mode-switch { width: 100%; max-width: 380px; padding: 5px; }
-  .course-app .mode-switch button { height: 44px; gap: 5px; font-size: 13px; }
-  .course-app .view-controls { display: none; }
-  .course-app .app-body { display: block; }
-  .course-app .app-body > .lesson-sidebar,
-  .course-app .app-body > .practice-sidebar,
-  .course-app .app-body > .everyday-sidebar { display: none; }
-  .course-app .lesson-main { min-width: 0; }
-  .mobile-curriculum-layer { display: block; }
-}
-
-@media (min-width: 901px) {
-  .mobile-curriculum-layer { display: none; }
-}
-
 /* Greetings lesson ------------------------------------------------------- */
 .course-app .greetings-page,
 .course-app .greetings-practice-page { color: var(--ink); }
@@ -3199,22 +3151,8 @@ html[data-artico-theme="dark"] body {
     grid-template-columns: minmax(118px, auto) minmax(0, 1fr) 42px;
     gap: 8px;
   }
-
-  .course-app .course-header-brand {
-    width: 100%;
-    gap: 8px;
-  }
-
-  .course-app .course-header-brand .logo {
-    width: auto;
-    min-width: 0;
-    flex: 1 1 auto;
-  }
-
-  .course-app .course-header-brand .logo > span {
-    font-size: 32px;
-    letter-spacing: -2.5px;
-  }
+  .course-app .app-header .logo { width: 118px; }
+  .course-app .app-header .logo > span { font-size: 32px; letter-spacing: -2.5px; }
 }
 
 @media (max-width: 760px) {
@@ -3222,9 +3160,134 @@ html[data-artico-theme="dark"] body {
     grid-template-columns: minmax(118px, auto) minmax(0, 1fr) 42px;
   }
 
-  .course-app .course-header-brand .logo > span { font-size: 30px; }
+  .course-app .app-header .logo { width: 92px; }
+  .course-app .app-header .logo > span { font-size: 30px; }
   .course-app .theory-outline {
     padding-right: 24px;
     padding-left: 24px;
   }
+}
+
+/* Sidebar toggle layout ----------------------------------------------------
+   The course navigation follows the reference pattern: the navbar remains
+   unchanged, while a small control at the top of the curriculum rail
+   expands the labelled sidebar or collapses it to an icon/number rail. */
+.course-app .app-body {
+  transition: grid-template-columns .22s ease;
+}
+
+.course-app .sidebar-toggle-row {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 13px 16px 9px;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-app .sidebar-toggle {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--olive);
+  cursor: pointer;
+  transition: background .16s ease, border-color .16s ease;
+}
+
+.course-app .sidebar-toggle:hover,
+.course-app .sidebar-toggle:focus-visible {
+  border-color: var(--zenith-sage-soft);
+  background: var(--surface-strong);
+  outline: none;
+}
+
+.course-app .sidebar-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+}
+
+.course-app .sidebar-toggle span { display: none; }
+
+@media (min-width: 901px) {
+  .course-app .app-body { grid-template-columns: 304px minmax(0, 1fr); }
+  .course-app.sidebar-collapsed .app-body { grid-template-columns: 72px minmax(0, 1fr); }
+
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .course-app.sidebar-collapsed .sidebar-toggle-row { justify-content: center; padding-right: 8px; padding-left: 8px; }
+  .course-app.sidebar-collapsed .curriculum-tree { padding-right: 7px; padding-left: 7px; }
+  .course-app.sidebar-collapsed .curriculum-section-toggle { justify-content: center; min-height: 20px; padding: 2px; font-size: 0; }
+  .course-app.sidebar-collapsed .curriculum-section-toggle .disclosure-icon { display: none; }
+  .course-app.sidebar-collapsed .curriculum-list { padding-right: 0; padding-left: 0; }
+  .course-app.sidebar-collapsed .curriculum-item { grid-template-columns: 1fr; justify-items: center; min-height: 48px; padding: 6px 4px; }
+  .course-app.sidebar-collapsed .curriculum-item-copy,
+  .course-app.sidebar-collapsed .sidebar-note { display: none; }
+  .course-app.sidebar-collapsed .curriculum-item > .curriculum-number { width: 32px; height: 32px; border-radius: 50%; place-items: center; }
+}
+
+@media (max-width: 900px) {
+  .course-app .app-body {
+    display: block;
+    min-height: calc(100vh - 76px);
+  }
+
+  .course-app .lesson-main { min-width: 0; }
+
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar {
+    position: fixed;
+    z-index: 35;
+    top: 76px;
+    bottom: 0;
+    left: 0;
+    display: flex !important;
+    width: min(304px, calc(100vw - 18px));
+    height: auto;
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+    box-shadow: 10px 0 28px rgba(25, 35, 27, .12);
+    transition: width .22s ease, box-shadow .22s ease;
+  }
+
+  .course-app.sidebar-collapsed .lesson-sidebar,
+  .course-app.sidebar-collapsed .practice-sidebar,
+  .course-app.sidebar-collapsed .everyday-sidebar {
+    width: 56px;
+    box-shadow: 4px 0 14px rgba(25, 35, 27, .08);
+  }
+
+  .course-app.sidebar-collapsed .lesson-main { padding-left: 56px; }
+  .course-app:not(.sidebar-collapsed) .lesson-main { padding-left: 0; }
+
+  .course-app.sidebar-collapsed .sidebar-toggle-row { justify-content: center; padding-right: 8px; padding-left: 8px; }
+  .course-app.sidebar-collapsed .curriculum-tree { padding-right: 7px; padding-left: 7px; }
+  .course-app.sidebar-collapsed .curriculum-section-toggle,
+  .course-app.sidebar-collapsed .curriculum-item-copy,
+  .course-app.sidebar-collapsed .sidebar-note { display: none; }
+  .course-app.sidebar-collapsed .curriculum-list { padding: 8px 0; }
+  .course-app.sidebar-collapsed .curriculum-section:not(:has(.curriculum-item.active)) .curriculum-list { display: none; }
+  .course-app.sidebar-collapsed .curriculum-list li:not(:has(.curriculum-item.active)) { display: none; }
+  .course-app.sidebar-collapsed .curriculum-item { grid-template-columns: 1fr; justify-items: center; min-height: 48px; padding: 6px 4px; }
+  .course-app.sidebar-collapsed .curriculum-item > .curriculum-number { width: 32px; height: 32px; border-radius: 50%; place-items: center; }
+
+  .course-app:not(.sidebar-collapsed) .sidebar-toggle-row { padding-top: 13px; }
 }

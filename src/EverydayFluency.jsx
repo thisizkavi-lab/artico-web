@@ -6,7 +6,6 @@ import { IntroductionsInteractiveLearnView, IntroductionsInteractivePracticeView
 export function EverydaySidebar({ activeModuleId, onSelectModule, activeLessonId, onSelectLesson, curriculum, CurriculumNav, SidebarToggle, sidebarCollapsed, onToggleSidebar }) {
   return (
     <aside className={`everyday-sidebar${sidebarCollapsed ? ' is-collapsed' : ''}`}>
-      {SidebarToggle && <SidebarToggle collapsed={sidebarCollapsed} onToggle={onToggleSidebar} />}
       {CurriculumNav && <CurriculumNav {...curriculum} activeEverydayModuleId={activeModuleId} onSelectEverydayModule={onSelectModule} activeEverydayLessonId={activeLessonId} onSelectEverydayLesson={onSelectLesson} />}
       <div className="sidebar-note"><small>Social Fluency</small><strong>人とつながる英会話</strong><span>96章の場面と理論を、理解してから声に出し、自分の状況に置き換えます。</span></div>
     </aside>

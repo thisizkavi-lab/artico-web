@@ -3295,3 +3295,206 @@ html[data-artico-theme="dark"] body {
 
   .course-app:not(.sidebar-collapsed) .sidebar-toggle-row { padding-top: 13px; }
 }
+
+/* Responsive sidebar toggle refinement ----------------------------------
+   The control follows the reference pattern: desktop places it beside the
+   brand at the left edge of the navbar; phones place it in the right utility
+   cluster and open the curriculum as an off-canvas drawer. */
+.course-app .app-header {
+  position: sticky;
+  z-index: 50;
+}
+
+.course-app .app-header-brand {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 14px;
+}
+
+.course-app .app-header-brand .logo { flex: 0 0 auto; }
+.course-app .desktop-sidebar-toggle { margin-left: auto; }
+.course-app .mobile-sidebar-toggle { display: none; }
+.course-app .sidebar-toggle-row { display: none !important; }
+
+.course-app .sidebar-toggle {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  padding: 0;
+  border: 1px solid var(--zenith-border, var(--line));
+  border-radius: var(--zenith-radius, 10px);
+  background: var(--zenith-paper, var(--paper));
+  color: var(--zenith-sage, var(--olive));
+  cursor: pointer;
+  transition: background .16s ease, border-color .16s ease, color .16s ease;
+}
+
+.course-app .sidebar-toggle:hover,
+.course-app .sidebar-toggle:focus-visible {
+  border-color: var(--zenith-sage-soft, var(--line));
+  background: var(--zenith-surface-soft, var(--surface));
+  color: var(--zenith-ink, var(--ink));
+  outline: none;
+}
+
+.course-app .sidebar-toggle:focus-visible {
+  outline: 2px solid var(--zenith-sage-soft, var(--olive));
+  outline-offset: 2px;
+}
+
+.course-app .sidebar-toggle svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.course-app .mobile-sidebar-backdrop {
+  position: fixed;
+  z-index: 38;
+  inset: 72px 0 0;
+  width: 100%;
+  border: 0;
+  background: rgba(31, 39, 32, .22);
+  cursor: pointer;
+}
+
+@media (min-width: 901px) {
+  .course-app .app-header {
+    grid-template-columns: 304px minmax(260px, 1fr) 240px;
+  }
+
+  .course-app.sidebar-collapsed .app-header {
+    grid-template-columns: 72px minmax(260px, 1fr) 240px;
+  }
+
+  .course-app.sidebar-collapsed .app-header-brand {
+    justify-content: center;
+  }
+
+  .course-app.sidebar-collapsed .app-header-brand .logo { display: none; }
+  .course-app .mobile-sidebar-backdrop { display: none; }
+}
+
+@media (max-width: 900px) {
+  .course-app .app-header {
+    grid-template-columns: minmax(86px, auto) minmax(0, 1fr) auto;
+    height: 72px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .course-app .desktop-sidebar-toggle { display: none; }
+  .course-app .mobile-sidebar-toggle { display: inline-flex; }
+  .course-app .header-utilities { gap: 4px; }
+  .course-app .mobile-sidebar-backdrop { display: block; }
+
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar {
+    position: fixed;
+    z-index: 40;
+    top: 72px;
+    bottom: 0;
+    left: 0;
+    display: flex !important;
+    width: min(304px, calc(100vw - 18px));
+    height: calc(100vh - 72px);
+    max-height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
+    max-height: calc(100dvh - 72px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid var(--zenith-border, var(--line));
+    border-bottom: 0;
+    box-shadow: 12px 0 32px rgba(25, 35, 27, .14);
+    transform: translateX(calc(-100% - 18px));
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .22s ease, visibility 0s linear .22s;
+  }
+
+  /* The desktop rail state is independent from the mobile drawer. Keep the
+     drawer full-width even when the viewport is resized from a collapsed
+     desktop layout. */
+  .course-app.sidebar-collapsed .lesson-sidebar,
+  .course-app.sidebar-collapsed .practice-sidebar,
+  .course-app.sidebar-collapsed .everyday-sidebar {
+    width: min(304px, calc(100vw - 18px));
+    box-shadow: 12px 0 32px rgba(25, 35, 27, .14);
+  }
+
+  .course-app.mobile-sidebar-open .lesson-sidebar,
+  .course-app.mobile-sidebar-open .practice-sidebar,
+  .course-app.mobile-sidebar-open .everyday-sidebar {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform .22s ease;
+  }
+
+  .course-app.mobile-sidebar-open.sidebar-collapsed .lesson-sidebar,
+  .course-app.mobile-sidebar-open.sidebar-collapsed .practice-sidebar,
+  .course-app.mobile-sidebar-open.sidebar-collapsed .everyday-sidebar {
+    width: min(304px, calc(100vw - 18px));
+    transform: translateX(0);
+  }
+
+  .course-app .lesson-main,
+  .course-app.sidebar-collapsed .lesson-main,
+  .course-app:not(.sidebar-collapsed) .lesson-main { padding-left: 0 !important; }
+  .course-app .curriculum-tree { padding-top: 24px; }
+
+  /* Older phone styles turn the curriculum into a horizontal scroller. The
+     drawer is a vertical navigation surface, so restore the full list here. */
+  .course-app .lesson-sidebar .curriculum-list,
+  .course-app .practice-sidebar .curriculum-list,
+  .course-app .everyday-sidebar .curriculum-list {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    overflow: visible;
+    padding-right: 12px;
+    padding-left: 24px;
+  }
+
+  .course-app .lesson-sidebar .curriculum-list > li,
+  .course-app .practice-sidebar .curriculum-list > li,
+  .course-app .everyday-sidebar .curriculum-list > li {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .course-app .lesson-sidebar .curriculum-list .curriculum-item,
+  .course-app .practice-sidebar .curriculum-list .curriculum-item,
+  .course-app .everyday-sidebar .curriculum-list .curriculum-item {
+    display: grid;
+    width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 760px) {
+  .course-app .app-header {
+    grid-template-columns: 82px minmax(0, 1fr) 86px;
+  }
+
+  .course-app .app-header-brand .logo { width: 78px; }
+  .course-app .app-header-brand .logo > span { font-size: 30px; }
+  .course-app .header-utilities { gap: 2px; }
+  .course-app .sidebar-toggle,
+  .course-app .profile-button { width: 40px; height: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .course-app .sidebar-toggle,
+  .course-app .lesson-sidebar,
+  .course-app .practice-sidebar,
+  .course-app .everyday-sidebar { transition: none; }
+}

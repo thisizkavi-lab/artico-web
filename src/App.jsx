@@ -508,15 +508,19 @@ function ViewControls({ darkMode, readingFocus, onToggleDark, onToggleReading })
   )
 }
 
-function AppHeader({ mode, setMode, onHome, profile, view }) {
+function AppHeader({ mode, setMode, onHome, profile, view, sidebarCollapsed, mobileSidebarOpen, onToggleSidebar }) {
   return (
     <header className="app-header">
-      <Logo onClick={onHome} />
+      <div className="app-header-brand">
+        <Logo onClick={onHome} />
+        <SidebarToggle collapsed={sidebarCollapsed} onToggle={onToggleSidebar} className="desktop-sidebar-toggle" />
+      </div>
       <div className="mode-switch" aria-label="Learning mode">
         <button aria-pressed={mode === 'learn'} className={mode === 'learn' ? 'active' : ''} type="button" onClick={() => setMode('learn')}><span className="book-symbol">◆</span>Learn</button>
         <button aria-pressed={mode === 'practice'} className={mode === 'practice' ? 'active' : ''} type="button" onClick={() => setMode('practice')}><span className="mouth-symbol">◌</span>Practice</button>
       </div>
       <div className="header-utilities">
+        <SidebarToggle collapsed={sidebarCollapsed} expanded={mobileSidebarOpen} onToggle={onToggleSidebar} className="mobile-sidebar-toggle" />
         <ViewControls {...view} />
         <ProfileMenu {...profile} view={view} />
       </div>
@@ -628,7 +632,6 @@ function CurriculumNav({
 function LessonSidebar({ active, onSelect, curriculum, sidebarCollapsed, onToggleSidebar }) {
   return (
     <aside className={`lesson-sidebar${sidebarCollapsed ? ' is-collapsed' : ''}`}>
-      <SidebarToggle collapsed={sidebarCollapsed} onToggle={onToggleSidebar} />
       <CurriculumNav {...curriculum} activeFoundationId={active} onSelectFoundation={onSelect} />
       <div className="sidebar-note"><small>Learning loop</small><strong>Understand → practise → return</strong><span>理解してから、口を動かし、時間をあけて戻ります。</span></div>
     </aside>
@@ -1365,7 +1368,6 @@ function LearnMode({ activeStep, setActiveStep, openPractice, curriculum, sideba
 function PracticeSidebar({ selected, selectTwister, curriculum, sidebarCollapsed, onToggleSidebar }) {
   return (
     <aside className={`practice-sidebar${sidebarCollapsed ? ' is-collapsed' : ''}`}>
-      <SidebarToggle collapsed={sidebarCollapsed} onToggle={onToggleSidebar} />
       <CurriculumNav {...curriculum} />
       {selected && <div className="selected-sidebar"><small>Current drill</small><strong>{selected.phrase}</strong><span>{selected.target} · {selected.duration}</span><button type="button" onClick={() => selectTwister(null)}>Back to library</button></div>}
       {!selected && <div className="sidebar-note"><small>Suggested session</small><strong>One focus + two mixed</strong><span>目安 8–10分 · 速度より明瞭さ</span></div>}
@@ -1998,7 +2000,8 @@ function CourseApp({ onHome }) {
   const [foundationOpen, setFoundationOpen] = useState(true)
   const [everydayOpen, setEverydayOpen] = useState(true)
   const [profileOpen, setProfileOpen] = useState(false)
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 900)
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
   const closeProfile = useCallback(() => setProfileOpen(false), [])
   const [viewPreferences, setViewPreferences] = useState(readStoredViewPreferences)
 
@@ -2009,12 +2012,33 @@ function CourseApp({ onHome }) {
   const [everydayPracticeStep, setEverydayPracticeStep] = useState('substitute')
 
   useEffect(() => {
-    const expandOnDesktop = () => {
-      if (window.innerWidth > 900) setSidebarCollapsed(false)
+    const syncNavigationMode = () => {
+      if (window.innerWidth > 900) {
+        setSidebarCollapsed(false)
+        setMobileSidebarOpen(false)
+      } else {
+        // A desktop-only collapsed rail should never carry over into the
+        // mobile drawer when a responsive viewport changes in place.
+        setSidebarCollapsed(false)
+      }
     }
-    window.addEventListener('resize', expandOnDesktop)
-    return () => window.removeEventListener('resize', expandOnDesktop)
+    window.addEventListener('resize', syncNavigationMode)
+    return () => window.removeEventListener('resize', syncNavigationMode)
   }, [])
+
+  useEffect(() => {
+    if (!mobileSidebarOpen || typeof window === 'undefined' || window.innerWidth > 900) return undefined
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setMobileSidebarOpen(false)
+    }
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    document.addEventListener('keydown', closeOnEscape)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', closeOnEscape)
+    }
+  }, [mobileSidebarOpen])
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -2114,6 +2138,14 @@ function CourseApp({ onHome }) {
     setEverydayPracticeStep('substitute')
   }
 
+  const toggleSidebar = () => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 900) {
+      setMobileSidebarOpen((value) => !value)
+      return
+    }
+    setSidebarCollapsed((value) => !value)
+  }
+
   const currentEverydayChapter = socialFluencyChapters.find((chapter) => chapter.id === everydayModuleId)
   // Keep curated Social Fluency lessons interactive while the remaining
   // manuscript chapters stay in their coming-soon state.
@@ -2168,16 +2200,19 @@ function CourseApp({ onHome }) {
     activeEverydayLessonId: everydayLessonId,
     onSelectEverydayLesson: selectEverydayLesson,
     onNavigate: () => {
-      if (typeof window !== 'undefined' && window.innerWidth <= 900) setSidebarCollapsed(true)
+      if (typeof window !== 'undefined' && window.innerWidth <= 900) setMobileSidebarOpen(false)
     },
   }
 
   return (
-    <div className={`course-app${viewPreferences.darkMode ? ' theme-dark' : ''}${viewPreferences.readingFocus ? ' reading-focus' : ''}${sidebarCollapsed ? ' sidebar-collapsed' : ''}`}>
+    <div className={`course-app${viewPreferences.darkMode ? ' theme-dark' : ''}${viewPreferences.readingFocus ? ' reading-focus' : ''}${sidebarCollapsed ? ' sidebar-collapsed' : ''}${mobileSidebarOpen ? ' mobile-sidebar-open' : ''}`}>
       <AppHeader
         mode={mode}
         setMode={changeMode}
         onHome={onHome}
+        sidebarCollapsed={sidebarCollapsed}
+        mobileSidebarOpen={mobileSidebarOpen}
+        onToggleSidebar={toggleSidebar}
         profile={{
           open: profileOpen,
           onToggle: () => setProfileOpen((value) => !value),
@@ -2193,11 +2228,12 @@ function CourseApp({ onHome }) {
           onToggleReading: () => setViewPreferences((current) => ({ ...current, readingFocus: !current.readingFocus })),
         }}
       />
+      {mobileSidebarOpen && <button className="mobile-sidebar-backdrop" type="button" aria-label="Close course navigation" onClick={() => setMobileSidebarOpen(false)} />}
       {courseLayer === 'foundation' ? (
         mode === 'learn' ? (
-          <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} sidebarCollapsed={sidebarCollapsed} onToggleSidebar={() => setSidebarCollapsed((value) => !value)} />
+          <LearnMode activeStep={activeStep} setActiveStep={setActiveStep} openPractice={openPractice} curriculum={curriculum} sidebarCollapsed={sidebarCollapsed} onToggleSidebar={toggleSidebar} />
         ) : (
-          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} onBackToLearn={() => setMode('learn')} practiceAvailable={foundationPracticeAvailable} activeStep={activeStep} sidebarCollapsed={sidebarCollapsed} onToggleSidebar={() => setSidebarCollapsed((value) => !value)} />
+          <PracticeMode selected={selected} setSelected={setSelected} view={practiceView} setView={setPracticeView} curriculum={curriculum} onBackToLearn={() => setMode('learn')} practiceAvailable={foundationPracticeAvailable} activeStep={activeStep} sidebarCollapsed={sidebarCollapsed} onToggleSidebar={toggleSidebar} />
         )
       ) : (
         <div className="app-body">
@@ -2210,7 +2246,7 @@ function CourseApp({ onHome }) {
             CurriculumNav={CurriculumNav}
             SidebarToggle={SidebarToggle}
             sidebarCollapsed={sidebarCollapsed}
-            onToggleSidebar={() => setSidebarCollapsed((value) => !value)}
+            onToggleSidebar={toggleSidebar}
           />
           <main className="lesson-main">
             {mode === 'learn' && currentEverydayModule?.status === 'coming_soon' ? (

@@ -1,9 +1,11 @@
+import { lazy, Suspense } from 'react'
 import {
   Artwork,
   Button,
   Cast,
   Heading,
   IconButton,
+  LessonMode,
   Player,
   Portrait,
   Segments,
@@ -12,10 +14,9 @@ import {
 } from './components'
 import { chunks, phrases, scenes, twister, words } from './content'
 
-const studyTabs = [
-  { value: 'study', label: 'Study' },
-  { value: 'practice', label: 'Practice' },
-]
+const ChapterContent = lazy(() =>
+  import('./Reader').then((module) => ({ default: module.ChapterContent })),
+)
 const sceneTabs = [
   { value: 'first', label: 'First meeting' },
   { value: 'friend', label: 'Introduce a friend' },
@@ -39,19 +40,17 @@ export function Study({ route, notify, learning, save }) {
   return (
     <div className="aw-page aw-study-page">
       <Heading eyebrow="SOCIAL FLUENCY / CHAPTER 02" title={scene.title} ja={scene.ja} />
-      <div className="aw-study-route">
-        <Segments
-          items={studyTabs}
-          active="study"
-          onChange={(view) => go(lessonPath(view, route.scene))}
-          label="Study or practice"
-        />
+      <LessonMode
+        active="study"
+        study={lessonPath('study', route.scene)}
+        practice={lessonPath('practice', route.scene)}
+      >
         <IconButton
           name="book"
           label="Open words and phrases"
           onClick={() => go(lessonPath('words', route.scene))}
         />
-      </div>
+      </LessonMode>
       <div className="aw-study-grid">
         <aside className="aw-study-context">
           <Artwork
@@ -99,6 +98,11 @@ export function Study({ route, notify, learning, save }) {
           </Button>
         </section>
       </div>
+      <div className="aw-chapter-continuation">
+        <Suspense fallback={<p role="status">Loading the lesson…</p>}>
+          <ChapterContent chapterId="02" illustratedScene={route.scene === 'first'} />
+        </Suspense>
+      </div>
       <section className="aw-lesson-extra">
         <div className="aw-divider" />
         <h2 className="aw-section-title">Keep a useful line.</h2>
@@ -123,9 +127,6 @@ export function Study({ route, notify, learning, save }) {
             </div>
           ))}
         </div>
-        <Button variant="outline" href="/lesson/02/reader">
-          Read the full chapter
-        </Button>
       </section>
     </div>
   )
@@ -139,6 +140,11 @@ export function Vocabulary({ route, notify, learning, save }) {
         eyebrow="CHAPTER 02 / WORDS & PHRASES"
         title={isWords ? 'People & small talk.' : 'Say it in a scene.'}
         ja={isWords ? '絵を見て、意味と音をつなげる。' : '場面といっしょに、表現を覚える。'}
+      />
+      <LessonMode
+        active="study"
+        study={lessonPath('study', route.scene)}
+        practice={lessonPath('practice', route.scene)}
       />
       <Segments
         items={wordTabs}
@@ -237,7 +243,10 @@ export function Shadow({ route, learning, update, notify }) {
   const next = scene.turns[(index + 1) % scene.turns.length]
   const audio = useAudio(notify)
   const select = (value) =>
-    update((previous) => ({ ...previous, indices: { ...previous.indices, [route.scene]: value } }))
+    update((previous) => ({
+      ...previous,
+      indices: { ...previous.indices, [route.scene]: value },
+    }))
   const setMode = (value) => {
     audio.stop()
     update((previous) => ({ ...previous, mode: value }))
@@ -254,6 +263,11 @@ export function Shadow({ route, learning, update, notify }) {
         eyebrow={`CHAPTER 02 / ${mode === 'shadow' ? 'SHADOWING' : mode.toUpperCase()}`}
         title={`Say it with ${turn.speaker}.`}
         ja={instructions[mode]}
+      />
+      <LessonMode
+        active="practice"
+        study={lessonPath('study', route.scene)}
+        practice={lessonPath('practice', route.scene)}
       />
       <div className="aw-shadow-grid">
         <aside className="aw-shadow-context">
@@ -323,16 +337,11 @@ export function Shadow({ route, learning, update, notify }) {
           </p>
         </section>
       </div>
-      <section className="aw-lesson-extra">
-        <div className="aw-divider" />
-        <h2 className="aw-section-title" lang="en">
-          Now, take your turn.
-        </h2>
-        <p className="aw-jp">音に慣れたら、カードを使って自分の会話をつくりましょう。</p>
-        <Button href="/lesson/02/practice" variant="outline">
-          Try the chapter scenarios
-        </Button>
-      </section>
+      <div className="aw-chapter-continuation">
+        <Suspense fallback={<p role="status">Loading the practice…</p>}>
+          <ChapterContent chapterId="02" mode="practice" />
+        </Suspense>
+      </div>
     </div>
   )
 }
@@ -349,6 +358,11 @@ export function PhrasePractice({ route, learning, update, notify }) {
         eyebrow="CHAPTER 02 / PHRASE PRACTICE"
         title={`Say it with ${speaker}.`}
         ja="場面を思い浮かべて、ひとつの表現を声に。"
+      />
+      <LessonMode
+        active="practice"
+        study={lessonPath('phrases', route.scene)}
+        practice={route.path}
       />
       <div className="aw-shadow-grid">
         <aside className="aw-shadow-context">
@@ -408,7 +422,10 @@ export function Twister({ route, learning, update, notify }) {
   const index = learning.indices.lr ?? 1
   const audio = useAudio(notify)
   const select = (value) =>
-    update((previous) => ({ ...previous, indices: { ...previous.indices, lr: value } }))
+    update((previous) => ({
+      ...previous,
+      indices: { ...previous.indices, lr: value },
+    }))
   const item = isWhole ? twister : chunks[index]
   const [title, support] = isStudy
     ? ['L & R, in rhythm.', '早口より、はっきり言えることから。']
@@ -422,12 +439,10 @@ export function Twister({ route, learning, update, notify }) {
         title={title}
         ja={support}
       />
-      <Segments
-        items={studyTabs}
+      <LessonMode
         active={isStudy ? 'study' : 'practice'}
-        className="aw-word-tabs"
-        label="Sound study or practice"
-        onChange={(value) => go(`/foundation/lr/${value === 'study' ? 'study' : 'chunks'}`)}
+        study="/foundation/lr/study"
+        practice={`/foundation/lr/${isWhole ? 'whole' : 'chunks'}`}
       />
       <div className={`aw-twister-grid ${isStudy ? 'aw-twister-study' : 'aw-twister-practice'}`}>
         <aside className="aw-twister-context">

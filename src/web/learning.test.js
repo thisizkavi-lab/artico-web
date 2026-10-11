@@ -54,6 +54,8 @@ test('unavailable and corrupt storage cannot prevent starting as a guest', () =>
 test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () => {
   assert.equal(parseRoute('#course').page, 'courses')
   assert.equal(parseRoute('#/courses?foundation').page, 'courses')
+  assert.equal(parseRoute('#/lesson/02/reader').view, 'study')
+  assert.equal(parseRoute('#/lesson/01/reader').view, 'study')
   assert.equal(parseRoute('#/lesson/02/practice/friend').scene, 'friend')
   assert.equal(
     parseRoute('#/lesson/02/practice/first?phrase=phrase-coworker').phrase,

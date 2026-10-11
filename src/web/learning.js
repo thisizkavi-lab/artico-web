@@ -80,7 +80,7 @@ export function parseRoute(hash) {
       path,
       page,
       id,
-      view,
+      view: view === 'reader' ? 'study' : view,
       scene: scene === 'friend' ? 'friend' : 'first',
       ...(view === 'practice' && ['phrase-friend', 'phrase-coworker'].includes(phrase)
         ? { phrase }

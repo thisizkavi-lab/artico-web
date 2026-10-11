@@ -4,7 +4,7 @@
 
 Implements the twelve approved web frames from Figma V3: Home, Courses, Practice library, two-person and three-person Study, Words, Phrases, two-person and three-person Shadowing, L/R Study, chunk practice, and whole-sentence practice. Individual phrase practice and saved expressions reuse the same visual system.
 
-All 96 English review manuscripts are available through a shared reader. Each chapter loads on demand. The original foundation lessons also load separately, without importing the old complete course app.
+All 96 English review manuscripts are available in the lesson view. Each chapter loads on demand. The illustrated chapter continues into its explanations as the learner scrolls; shadowing continues into the practice scenarios. The original foundation lessons also load separately, without importing the old complete course app.
 
 ## Fidelity record
 
@@ -27,7 +27,8 @@ All 96 English review manuscripts are available through a shared reader. Each ch
 - Saved-expression totals reflect real local bookmarks.
 - Sync and new course audio are clearly marked as pending, rather than simulating working services.
 - All 96 chapters are navigable. Catalog titles follow the reviewed English manuscript where it differs from the older Figma example labels.
-- Extra book reading, scenario practice, and bookmark actions appear after the illustrated lesson content.
+- The full study content and practice scenarios follow the illustrated content in one continuous scroll. The already illustrated opening dialogue is not repeated in the explanations. There is no separate full-chapter step.
+- The Study / Practice switch stays floating at the top of the scrolling lesson on desktop, tablet, and phone, including vocabulary and L/R practice. Switching modes preserves the scene and each mode's reading position. Legacy reader links open Study.
 - Small web viewports stack study columns and use bottom navigation. Phone practice keeps a compact scene so the phrase and transport controls can fit together. Native iPhone/iPad applications are outside this web implementation.
 
 ## Validation
@@ -38,6 +39,8 @@ All 96 English review manuscripts are available through a shared reader. Each ch
 - Visually reviewed the Figma study reference and rendered screens. Checked vocabulary illustration loading and intrinsic aspect ratios.
 - Exercised course groups and Chapter 96, Study/Practice navigation, two-/three-person scenes, saved expressions, alphabet inventory, chunk/whole-sentence navigation, speed changes, audio-readiness feedback, and guest profile behavior.
 - Verified persisted sound speed after a reload and no horizontal overflow in the checked phone/tablet layouts.
+- Continuous lesson update: checked the floating mode switch at desktop 1440 × 1040, phone 402 × 874, and the default tablet-sized browser view. Study explanations and Practice scenarios stay on their respective lesson pages, without the extra reader/scenario links.
+- Scrolled Study → floating Practice → floating Study restores the same reading position. A reload also restores the position after the chapter loads. Sample answers open inline in Practice; the browser console is clear.
 
 ## Content and audio handoff
 

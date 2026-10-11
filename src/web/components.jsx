@@ -83,6 +83,25 @@ export function Segments({ items, active, onChange, className = '', label }) {
   )
 }
 
+export function LessonMode({ active, study, practice, children }) {
+  return (
+    <div className="aw-lesson-mode">
+      <Segments
+        items={[
+          { value: 'study', label: 'Study' },
+          { value: 'practice', label: 'Practice' },
+        ]}
+        active={active}
+        label="Study or practice"
+        onChange={(mode) => {
+          window.location.hash = mode === 'study' ? study : practice
+        }}
+      />
+      {children}
+    </div>
+  )
+}
+
 const portraits = {
   Maya: {
     32: ['c1b2b.svg', '2f40a.svg'],

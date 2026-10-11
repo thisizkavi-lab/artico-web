@@ -720,13 +720,43 @@ body {
 }
 
 /* The book-like scene and its conversation. */
-.aw-study-route {
+.aw-lesson-mode {
+  position: sticky;
+  top: 12px;
+  z-index: 12;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
+  pointer-events: none;
 }
-.aw-study-route > .aw-icon-button {
+.aw-lesson-mode::before {
+  content: '';
+  position: absolute;
+  inset: -12px 0;
+  z-index: -1;
+  background: var(--paper);
+  pointer-events: none;
+}
+.aw-lesson-mode > * {
+  pointer-events: auto;
+  box-shadow: 0 3px 16px rgb(37 60 56 / 12%);
+}
+.aw-lesson-mode > .aw-icon-button {
   margin-left: auto;
+  background: var(--paper);
+}
+.aw-chapter-continuation {
+  margin-top: 24px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.aw-chapter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.aw-study-page > .aw-lesson-extra {
+  margin-top: 16px;
 }
 .aw-study-grid {
   display: grid;
@@ -1122,9 +1152,6 @@ body {
 }
 
 /* All 96 manuscripts use one readable book layout. */
-.aw-reader-tabs {
-  width: 300px;
-}
 .aw-reader-grid {
   display: grid;
   grid-template-columns: 250px minmax(0, 780px);
@@ -1133,7 +1160,7 @@ body {
 }
 .aw-reader-outline {
   position: sticky;
-  top: 24px;
+  top: 88px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -1165,7 +1192,7 @@ body {
   line-height: 42px;
   font-weight: 400;
   margin-top: 40px;
-  scroll-margin-top: 28px;
+  scroll-margin-top: 88px;
 }
 .aw-manuscript > h3,
 .aw-manuscript > h4 {
@@ -1173,7 +1200,7 @@ body {
   line-height: 34px;
   font-weight: 600;
   margin-top: 28px;
-  scroll-margin-top: 28px;
+  scroll-margin-top: 88px;
 }
 .aw-manuscript blockquote {
   margin-left: 0;

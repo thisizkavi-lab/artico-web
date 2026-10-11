@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button, Heading, Segments } from './components'
+import { Button, Heading, LessonMode } from './components'
 import { catalog, chapterById } from './content'
 
 const manuscripts = import.meta.glob('../course/chapters/*.md', {
@@ -50,7 +50,7 @@ export function Markdown({ text }) {
       const Tag = `h${Math.max(2, Math.min(heading[1].length, 4))}`
       blocks.push(
         <Tag key={key} id={`section-${key}`}>
-          {inline(heading[2])}
+          {inline(heading[2].replace(/^(?:Study|Practice):\s*/, ''))}
         </Tag>,
       )
       index++
@@ -130,10 +130,10 @@ export function Markdown({ text }) {
   )
 }
 
-export default function Reader({ route }) {
-  const chapter = chapterById[route.id]
+export function ChapterContent({ chapterId, mode = 'study', illustratedScene = false }) {
+  const chapter = chapterById[chapterId]
   const [result, setResult] = useState({ id: null, text: '', error: false })
-  const practice = route.view === 'practice'
+  const practice = mode === 'practice'
   const [showAnswers, setShowAnswers] = useState(false)
   useEffect(() => {
     let active = true
@@ -148,10 +148,18 @@ export default function Reader({ route }) {
     return () => {
       active = false
     }
-  }, [chapter.id])
+  }, [chapter.id, mode])
   const text = result.id === chapter.id ? result.text.replace(/^# .+\n/, '') : ''
   const practiceStart = text.search(/^## Practice\b/m)
-  const studyText = practiceStart < 0 ? text : text.slice(0, practiceStart)
+  const fullStudy = practiceStart < 0 ? text : text.slice(0, practiceStart)
+  // The illustrated opening already presents this exchange. Keep its explanation
+  // and the rest of the original chapter without repeating the same dialogue.
+  const studyText = illustratedScene
+    ? fullStudy.replace(
+        /\*\*At a friend's gathering\*\*[\s\S]*?(?=\*\*A friend of Jordan's\*\*)/,
+        '',
+      )
+    : fullStudy
   const practiceText = practiceStart < 0 ? '' : text.slice(practiceStart)
   const answerStart = practiceText.search(/^### (?:Sample|Possible|Example|One possible|Answer)/im)
   const current = practice
@@ -163,40 +171,28 @@ export default function Reader({ route }) {
     .trim()
     .split('\n')
     .flatMap((line, index) =>
-      /^#{2,3} /.test(line) ? [{ id: `section-${index}`, title: line.replace(/^#+\s*/, '') }] : [],
+      /^#{2,3} /.test(line)
+        ? [
+            {
+              id: `section-${index}`,
+              title: line.replace(/^#+\s*/, '').replace(/^(?:Study|Practice):\s*/, ''),
+            },
+          ]
+        : [],
     )
   const previous = catalog[Number(chapter.id) - 2]
   const next = catalog[Number(chapter.id)]
   return (
-    <div className="aw-page aw-reader-page">
-      <Heading
-        eyebrow={`SOCIAL FLUENCY / CHAPTER ${chapter.id}`}
-        title={chapter.title}
-        ja={chapter.ja}
-      />
-      <Segments
-        items={[
-          { value: 'study', label: 'Study' },
-          { value: 'practice', label: 'Practice' },
-        ]}
-        active={practice ? 'practice' : 'study'}
-        onChange={(view) => {
-          window.location.hash = `/lesson/${chapter.id}/${view}${chapter.id === '02' && view === 'study' ? '/first' : ''}`
-        }}
-        label="Chapter mode"
-        className="aw-reader-tabs"
-      />
-      {practice && (
+    <section
+      className="aw-chapter-content"
+      aria-label={practice ? 'Practice scenarios' : 'Lesson explanations'}
+    >
+      {practice && chapter.id !== '02' && (
         <aside className="aw-reader-instruction">
           <h2>First, make the words familiar.</h2>
           <p className="aw-jp">
             短い表現を声にしてから、下の場面を試しましょう。音声は文章の確認後に追加します。
           </p>
-          {chapter.id === '02' && (
-            <Button href="/lesson/02/practice/first" variant="outline">
-              Back to shadowing
-            </Button>
-          )}
         </aside>
       )}
       {result.error ? (
@@ -259,6 +255,26 @@ export default function Reader({ route }) {
           </article>
         </div>
       )}
+    </section>
+  )
+}
+
+export default function Reader({ route }) {
+  const chapter = chapterById[route.id]
+  const practice = route.view === 'practice'
+  return (
+    <div className="aw-page aw-reader-page">
+      <Heading
+        eyebrow={`SOCIAL FLUENCY / CHAPTER ${chapter.id}`}
+        title={chapter.title}
+        ja={chapter.ja}
+      />
+      <LessonMode
+        active={practice ? 'practice' : 'study'}
+        study={`/lesson/${chapter.id}/study`}
+        practice={`/lesson/${chapter.id}/practice`}
+      />
+      <ChapterContent chapterId={chapter.id} mode={practice ? 'practice' : 'study'} />
     </div>
   )
 }

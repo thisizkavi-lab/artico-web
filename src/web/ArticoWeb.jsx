@@ -18,7 +18,11 @@ const foundationNames = {
 const foundations = Object.fromEntries(
   Object.entries(foundationNames).map(([id, name]) => [
     id,
-    lazy(() => import('./FoundationContent').then((module) => ({ default: module[name] }))),
+    lazy(() =>
+      import('./FoundationContent').then((module) => ({
+        default: module[name],
+      })),
+    ),
   ]),
 )
 const destinations = [
@@ -97,12 +101,17 @@ export default function ArticoWeb() {
   const [modal, setModal] = useState(false)
   const [toast, setToast] = useState('')
   const mainRef = useRef(null)
+  const contentRef = useRef(null)
   const learningRef = useRef(learning)
   const scrollTimer = useRef(null)
+  const pendingScroll = useRef(null)
   learningRef.current = learning
   const notify = (message) => setToast(message)
   const save = (id) =>
-    update((previous) => ({ ...previous, saved: toggleSaved(previous.saved, id) }))
+    update((previous) => ({
+      ...previous,
+      saved: toggleSaved(previous.saved, id),
+    }))
   useEffect(() => {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(learning))
@@ -116,11 +125,52 @@ export default function ArticoWeb() {
       clearTimeout(scrollTimer.current)
       scrollTimer.current = null
     }
-    mainRef.current.scrollTop = learningRef.current.positions[route.path] ?? 0
-    update((previous) => visit(previous, route.path))
+    const outgoing = pendingScroll.current
+    pendingScroll.current = null
+    update((previous) =>
+      visit(
+        outgoing
+          ? {
+              ...previous,
+              positions: {
+                ...previous.positions,
+                [outgoing.path]: outgoing.top,
+              },
+            }
+          : previous,
+        route.path,
+      ),
+    )
+    const viewport = mainRef.current
+    const target = learningRef.current.positions[route.path] ?? 0
+    let restoring = true
+    const observer = new ResizeObserver(() => {
+      if (!restoring) return
+      viewport.scrollTop = target
+      if (Math.abs(viewport.scrollTop - target) < 1) stopRestoring()
+    })
+    const stopRestoring = () => {
+      restoring = false
+      observer.disconnect()
+      viewport.removeEventListener('wheel', stopRestoring)
+      viewport.removeEventListener('touchstart', stopRestoring)
+      viewport.removeEventListener('pointerdown', stopRestoring)
+      viewport.removeEventListener('keydown', stopRestoring)
+    }
+    viewport.scrollTop = target
+    if (Math.abs(viewport.scrollTop - target) >= 1) {
+      observer.observe(contentRef.current)
+      viewport.addEventListener('wheel', stopRestoring, { passive: true })
+      viewport.addEventListener('touchstart', stopRestoring, { passive: true })
+      viewport.addEventListener('pointerdown', stopRestoring, {
+        passive: true,
+      })
+      viewport.addEventListener('keydown', stopRestoring)
+    } else stopRestoring()
     const chapter = chapterById[route.id]
     const foundation = foundationSteps.find((step) => step.id === route.id)
     document.title = `${chapter?.title ?? foundation?.en ?? (route.page === 'courses' ? 'Courses' : route.page === 'practice' ? 'Practice' : route.page === 'saved' ? 'Saved phrases' : 'Your learning space')} · Artico`
+    return stopRestoring
   }, [route.path])
   useEffect(() => () => clearTimeout(scrollTimer.current), [])
   useEffect(() => {
@@ -132,10 +182,14 @@ export default function ArticoWeb() {
     if (!['lesson', 'foundation'].includes(route.page)) return
     const top = event.currentTarget.scrollTop
     const path = route.path
+    pendingScroll.current = { path, top }
     clearTimeout(scrollTimer.current)
     scrollTimer.current = setTimeout(
       () =>
-        update((previous) => ({ ...previous, positions: { ...previous.positions, [path]: top } })),
+        update((previous) => ({
+          ...previous,
+          positions: { ...previous.positions, [path]: top },
+        })),
       180,
     )
   }
@@ -190,11 +244,7 @@ export default function ArticoWeb() {
           notify={notify}
         />
       )
-    else if (
-      route.id === '02' &&
-      route.view === 'practice' &&
-      /\/(?:first|friend)$/.test(route.path)
-    )
+    else if (route.id === '02' && route.view === 'practice')
       screen = (
         <Shadow
           key={route.path}
@@ -279,7 +329,9 @@ export default function ArticoWeb() {
           className="aw-viewport"
           onScroll={recordScroll}
         >
-          <LearningBoundary key={route.path}>{screen}</LearningBoundary>
+          <div ref={contentRef}>
+            <LearningBoundary key={route.path}>{screen}</LearningBoundary>
+          </div>
         </main>
         <nav className="aw-mobile-nav" aria-label="Mobile navigation">
           {destinations.map((destination) => (

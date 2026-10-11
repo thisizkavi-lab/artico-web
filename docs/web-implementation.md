@@ -24,6 +24,9 @@ All 96 English review manuscripts are available in the lesson view. Each chapter
 ## Deliberate behavior differences
 
 - First visits invite the learner to start; resume wording and phrase counts appear after an actual visit. No seeded completion statistics are shown.
+- Home now presents the requested sequence, Orientation → Foundations → Social Fluency, as a connected study map. The three cards reuse the lilac, warm yellow, and sage palette. The current stage and its Continue link come from the learner's actual last visit; every stage remains accessible.
+- New guests start at Orientation. Course categories follow the same order, with two Orientation lessons, six Foundations lessons, and 96 Social Fluency chapters. Stage navigation, category breadcrumbs, and lesson footers connect the entire route into Chapter 01.
+- Orientation and Foundations use the shared English headings, smaller Japanese support, paper surfaces, rounded cards, and Artico buttons. Orientation explanations use a numbered book layout with a sticky desktop contents list and collapsible contents on smaller screens. The web edition's navigation explanation uses the current stage names and Study/Practice wording; original book sources remain intact.
 - Saved-expression totals reflect real local bookmarks.
 - Sync and new course audio are clearly marked as pending, rather than simulating working services.
 - All 96 chapters are navigable. Catalog titles follow the reviewed English manuscript where it differs from the older Figma example labels.
@@ -33,7 +36,7 @@ All 96 English review manuscripts are available in the lesson view. Each chapter
 
 ## Validation
 
-- `pnpm test`: five tests covering persisted guest state, unavailable/corrupt storage, all chapter routes, reversible bookmarks, and complete manuscript inventory.
+- `pnpm test`: seven tests covering persisted guest state, unavailable/corrupt storage, all chapter routes, reversible bookmarks, complete manuscript inventory, transitions between learning stages, and new/returning guest stage selection.
 - `pnpm build`: production build with the `/artico-web/` deployment base.
 - In-app browser: desktop 1440 × 1040, phone 402 × 874, and tablet 834 × 1194.
 - Visually reviewed the Figma study reference and rendered screens. Checked vocabulary illustration loading and intrinsic aspect ratios.
@@ -41,6 +44,9 @@ All 96 English review manuscripts are available in the lesson view. Each chapter
 - Verified persisted sound speed after a reload and no horizontal overflow in the checked phone/tablet layouts.
 - Continuous lesson update: checked the floating mode switch at desktop 1440 × 1040, phone 402 × 874, and the default tablet-sized browser view. Study explanations and Practice scenarios stay on their respective lesson pages, without the extra reader/scenario links.
 - Scrolled Study → floating Practice → floating Study restores the same reading position. A reload also restores the position after the chapter loads. Sample answers open inline in Practice; the browser console is clear.
+- Study map update: reviewed the connected desktop map at 1440 × 1040 and vertical phone layout at 402 × 874. Checked stage order, original resume destination, guest Orientation entry, the map shortcut, course category ordering, and Foundations resume on an 834 × 1194 tablet viewport.
+- Compared the map and lesson layouts with the existing UI: retained paper/forest/terracotta colors, Newsreader headings, Hanken English and Noto Japanese type, 20px card corners, and the English/Japanese size hierarchy. Existing illustrations and the floating Study/Practice switch are preserved.
+- Exercised Orientation contents navigation on desktop and phone, Orientation → Foundations, tongue-twister introduction → L/R, and L/R → Social Fluency. All 52 alphabet controls remain available with at least 44px height. Checked phone/tablet overflow and the browser console; no errors or warnings were recorded.
 
 ## Content and audio handoff
 

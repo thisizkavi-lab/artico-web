@@ -3,6 +3,7 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import { allTwisters, alphabet } from '../data'
 import { orientationSections } from '../orientationContent'
 import { howItWorksSections } from '../howItWorksContent'
+import { Heading } from './components'
 
 function speakWithBrowser(text, options = {}) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return false
@@ -74,14 +75,40 @@ function PrimaryButton({ children, onClick, className = '', disabled = false }) 
 }
 
 function LessonTitle({ eyebrow, title, ja }) {
-  return (
-    <div className="lesson-title">
-      <small>{eyebrow}</small>
-      <h1>{title}</h1>
-      <p>{ja}</p>
-    </div>
-  )
+  return <Heading eyebrow={eyebrow} title={title} ja={ja} />
 }
+
+const studyTerminology = (text) => text?.replace(/\bLearn\b/g, 'Study')
+
+// Keep the original book intact; describe the navigation used by this web edition.
+const webHowItWorksSections = howItWorksSections.map((section) => {
+  if (section.id === 'how-two-by-two')
+    return {
+      ...section,
+      title: '学習の道順と、2つのモード',
+      subtitle: '学び方を知り、基礎を確かめ、会話へ',
+      paragraphs: [
+        '学習マップは、Orientation（はじめに）→ Foundations（基礎）→ Social Fluency（日常会話）の順番です。はじめに学ぶ理由と進め方を知り、文字と音を確かめ、それから会話へ進みます。知っているところは飛ばしても、必要なところへ戻っても大丈夫です。',
+        section.paragraphs[1],
+      ],
+      items: [
+        'オリエンテーション（はじめに） — 英語を学ぶ理由と、Articoの進め方を知ります。',
+        ...section.items,
+      ],
+    }
+  if (section.id === 'how-foundation')
+    return { ...section, title: '基礎：文字と音、体のトレーニング' }
+  if (section.id === 'how-social-fluency') return { ...section, title: '日常会話：生きたやりとり' }
+  if (section.id === 'how-audio')
+    return {
+      ...section,
+      paragraphs: [
+        'このコースでは、聞くための自然な音声と、声に出して練習するための音声を分けて使います。音声は現在、準備中です。',
+        ...section.paragraphs.slice(1),
+      ],
+    }
+  return section
+})
 
 function TheoryBookLesson({
   onPrevious,
@@ -97,49 +124,81 @@ function TheoryBookLesson({
   footerLabel,
   footerNote,
 }) {
+  const outline = (
+    <nav aria-label="In this lesson">
+      {sections.map((section) => (
+        <button
+          key={section.id}
+          type="button"
+          onClick={() => document.getElementById(section.id)?.scrollIntoView({ block: 'start' })}
+        >
+          <span>{section.number}</span>
+          <span lang="ja">{studyTerminology(section.title)}</span>
+        </button>
+      ))}
+    </nav>
+  )
   return (
     <section className="lesson-page orientation-page">
       <LessonTitle eyebrow={eyebrow} title={title} ja={ja} />
-      <div className="orientation-reader">
-        {sections.map((section, index) => (
-          <article
-            className={`orientation-section ${activeSectionId === section.id ? 'is-active' : ''}`}
-            id={section.id}
-            key={section.id}
-          >
-            <header className="orientation-section-header">
-              <span>{section.number}</span>
-              <div>
-                <small>{index === 0 ? 'はじめに' : `セクション ${section.number}`}</small>
-                <h2>{index === 0 ? section.subtitle : section.title}</h2>
-                <p>{index === 0 ? section.title : section.subtitle}</p>
+      <div className="aw-reader-grid">
+        <aside className="aw-reader-outline aw-theory-outline">
+          <div className="aw-theory-desktop-outline">
+            <p className="aw-eyebrow" lang="en">
+              IN THIS LESSON
+            </p>
+            {outline}
+          </div>
+          <details className="aw-theory-mobile-outline">
+            <summary>
+              In this lesson <span lang="ja">目次</span>
+            </summary>
+            {outline}
+          </details>
+        </aside>
+        <div className="orientation-reader">
+          {sections.map((section, index) => (
+            <article
+              className={`orientation-section ${activeSectionId === section.id ? 'is-active' : ''}`}
+              id={section.id}
+              key={section.id}
+            >
+              <header className="orientation-section-header">
+                <span>{section.number}</span>
+                <div>
+                  <small>{index === 0 ? 'はじめに' : `セクション ${section.number}`}</small>
+                  <h2>{studyTerminology(index === 0 ? section.subtitle : section.title)}</h2>
+                  <p>{studyTerminology(index === 0 ? section.title : section.subtitle)}</p>
+                </div>
+              </header>
+              <div className="orientation-section-body">
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{studyTerminology(paragraph)}</p>
+                ))}
+                {section.items && (
+                  <ul className="theory-section-list">
+                    {section.items.map((item) => (
+                      <li key={item}>{studyTerminology(item)}</li>
+                    ))}
+                  </ul>
+                )}
+                {section.callout && (
+                  <aside className="orientation-callout">
+                    <strong>{section.callout.label}</strong>
+                    <p>{studyTerminology(section.callout.text)}</p>
+                  </aside>
+                )}
+                {section.emphasis && (
+                  <p className="orientation-emphasis">{studyTerminology(section.emphasis)}</p>
+                )}
               </div>
-            </header>
-            <div className="orientation-section-body">
-              {section.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-              {section.items && (
-                <ul className="theory-section-list">
-                  {section.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              )}
-              {section.callout && (
-                <aside className="orientation-callout">
-                  <strong>{section.callout.label}</strong>
-                  <p>{section.callout.text}</p>
-                </aside>
-              )}
-              {section.emphasis && <p className="orientation-emphasis">{section.emphasis}</p>}
-            </div>
-          </article>
-        ))}
-      </div>
-      <div className="orientation-closing">
-        <strong>{closingTitle}</strong>
-        <p>{closingCopy}</p>
+            </article>
+          ))}
+          <div className="orientation-closing">
+            <strong>{closingTitle}</strong>
+            <p>{closingCopy}</p>
+          </div>
+        </div>
       </div>
       <LessonFooter
         previousLabel={previousLabel}
@@ -159,13 +218,13 @@ export function Orientation({ onPrevious, previousLabel, onNext, activeSectionId
       previousLabel={previousLabel}
       onNext={onNext}
       activeSectionId={activeSectionId}
-      eyebrow="オリエンテーション · 01"
-      title="言葉って、なぜ大切なのでしょうか？"
+      eyebrow="ORIENTATION / LESSON 01"
+      title="Why learn a language?"
       ja="英語を学ぶ前に、言葉と人間、そしてあなた自身の理由を考えます。"
       sections={orientationSections}
       closingTitle="理解したら、次は学び方を選びます。"
       closingCopy="ここで覚えるのは答えではありません。あなたが英語を学ぶ理由と、これからの学び方の地図です。"
-      footerLabel="Articoの仕組み"
+      footerLabel="How Artico works"
       footerNote="急がず、全体の地図をつかみましょう。"
     />
   )
@@ -178,13 +237,13 @@ export function HowArticoWorksLesson({ onPrevious, previousLabel, onNext, active
       previousLabel={previousLabel}
       onNext={onNext}
       activeSectionId={activeSectionId}
-      eyebrow="ARTICO · 02"
-      title="Articoの仕組み"
-      ja="あなたの現在地に合わせて、LearnとPracticeをどう使うかを案内します。"
-      sections={howItWorksSections}
+      eyebrow="ORIENTATION / LESSON 02"
+      title="How Artico works"
+      ja="あなたの現在地に合わせて、StudyとPracticeをどう使うかを案内します。"
+      sections={webHowItWorksSections}
       closingTitle="地図が見えたら、最初の一歩へ。"
       closingCopy="基礎を確認しながら、今日のあなたに必要な会話から始めましょう。Articoは、理解と練習を何度でも行き来できます。"
-      footerLabel="26文字に出会う"
+      footerLabel="Meet the 26 letters"
       footerNote="次は、英語の最小単位へ。"
     />
   )
@@ -194,8 +253,8 @@ export function LettersLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page letters-page">
       <LessonTitle
-        eyebrow="Alphabets · 03"
-        title="Alphabets"
+        eyebrow="FOUNDATIONS / LESSON 01"
+        title="Meet the 26 letters"
         ja="英語のスタートラインへ。26個の文字と、大文字・小文字の形に出会います。"
       />
       <div className="letters-layout">
@@ -265,7 +324,7 @@ export function LettersLesson({ onPrevious, previousLabel, onNext }) {
       <LessonFooter
         previousLabel={previousLabel}
         onPrevious={onPrevious}
-        label="Hear the Alphabet"
+        label="Hear the alphabet"
         onNext={onNext}
       />
     </section>
@@ -407,8 +466,8 @@ export function HearLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page media-page">
       <LessonTitle
-        eyebrow="Alphabets · 04"
-        title="Hear the Alphabet"
+        eyebrow="FOUNDATIONS / LESSON 02"
+        title="Hear the alphabet"
         ja="歌でアルファベットを覚えましょう。文字の順番と名前を、音楽に合わせて体に入れます。"
       />
       <div className="alphabet-song-layout">
@@ -482,7 +541,7 @@ export function HearLesson({ onPrevious, previousLabel, onNext }) {
       <LessonFooter
         previousLabel={previousLabel}
         onPrevious={onPrevious}
-        label="Write the Alphabet"
+        label="Write the alphabet"
         onNext={onNext}
       />
     </section>
@@ -493,8 +552,8 @@ export function WriteLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page writing-lesson-page">
       <LessonTitle
-        eyebrow="Alphabets · 05"
-        title="Write the Alphabet"
+        eyebrow="FOUNDATIONS / LESSON 03"
+        title="Write the alphabet"
         ja="アルファベットを書いてみましょう。文字の形を、目だけでなく手にも覚えさせます。"
       />
       <div className="writing-lesson-layout">
@@ -699,8 +758,8 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   return (
     <section className="lesson-page sound-lesson-page">
       <LessonTitle
-        eyebrow="Alphabets · 06"
-        title="26 letters. About 44 sounds."
+        eyebrow="FOUNDATIONS / LESSON 04"
+        title="Letters & sounds"
         ja="英語には26個の文字があります。でも、話すときの音はそれよりも多くあります。"
       />
       <div className="sound-lesson-layout">
@@ -893,7 +952,7 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
       <LessonFooter
         previousLabel={previousLabel}
         onPrevious={onPrevious}
-        label="Tongue Twisters"
+        label="Why tongue twisters?"
         onNext={onNext}
       />
     </section>
@@ -1082,8 +1141,8 @@ export function TongueIntro({ onPrevious, previousLabel, onPractice }) {
   return (
     <section className="lesson-page tongue-intro-page">
       <LessonTitle
-        eyebrow="Tongue twisters · introduction · 07"
-        title="Train your mouth with tongue twisters."
+        eyebrow="FOUNDATIONS / LESSON 05"
+        title="Why tongue twisters?"
         ja="音を理解したら、次は口を動かし、英語の音に慣れていきます。"
       />
       <div className="tongue-theory-reader">
@@ -1269,15 +1328,15 @@ export function TongueIntro({ onPrevious, previousLabel, onPractice }) {
           <p>次のセクションで、本格的な練習を一緒に始めます。</p>
         </article>
         <div className="tongue-practice-transition" id="theory-tongue-intro-6">
-          <strong>次はPracticeへ</strong>
+          <strong>次は、LとRをひとつの文で。</strong>
           <span>音声を聞き、口の動きを一つずつ練習します。</span>
         </div>
       </div>
       <LessonFooter
         previousLabel={previousLabel}
         onPrevious={onPrevious}
-        note="Learn complete · 練習はPracticeから始まります"
-        label="Open the classic set"
+        note="LとRの動きを知り、短い文で試してみましょう。"
+        label="L & R, in rhythm."
         onNext={onPractice}
       />
     </section>
@@ -1298,8 +1357,12 @@ function BilingualLessonAction({ direction, label }) {
   const fallback = isNext ? 'Next Lesson' : 'Previous Lesson'
   return (
     <>
-      <span className="lesson-action-ja">{isNext ? '次へ' : '前へ'}</span>
-      <span className="lesson-action-en">({label || fallback})</span>
+      <span className="lesson-action-en" lang="en">
+        {label || fallback}
+      </span>
+      <span className="lesson-action-ja" lang="ja">
+        {isNext ? '次へ' : '前へ'}
+      </span>
     </>
   )
 }

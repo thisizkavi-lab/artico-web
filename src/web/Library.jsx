@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Button, Heading, Icon } from './components'
+import StudyMap from './StudyMap'
+import { getLearningStage, learningStages } from './pathway'
 import {
   catalog,
   chapterById,
@@ -28,21 +30,26 @@ export function Home({ learning, sync, storageAvailable }) {
   const scene = last?.endsWith('/friend') ? 'friend' : 'first'
   const index = learning.indices[scene] ?? 0
   const turn = scenes[scene].turns[index]
-  const isPractice = last?.includes('/practice')
+  const isPractice = /\/(practice|chunks|whole)(\/|$|\?)/.test(last ?? '')
   const isFoundation = last?.startsWith('/foundation')
-  const resume = last ?? '/lesson/02/study/first'
+  const stage = getLearningStage(last) ?? learningStages[0]
+  const resume = last ?? learningStages[0].start
   const foundation = foundationSteps.find((step) => last?.startsWith(`/foundation/${step.id}/`))
   const phrase = phrases.find((item) => last?.endsWith(`?phrase=${item.id}`))
-  const remembered = isFoundation
-    ? (foundation?.en ?? 'Sounds & rhythm')
-    : phrase
-      ? `“${phrase.en}”`
-      : chapterId === '02'
-        ? `“${turn.focus ?? turn.en}”`
-        : chapter.goal
-  const studyPath = isFoundation
-    ? `/foundation/${foundation?.id ?? 'lr'}/study`
-    : `/lesson/${chapterId}/study${chapterId === '02' ? `/${scene}` : ''}`
+  const remembered = !last
+    ? 'Understand.\nThen say it.'
+    : isFoundation
+      ? (foundation?.en ?? 'Sounds & rhythm')
+      : phrase
+        ? `“${phrase.en}”`
+        : chapterId === '02'
+          ? `“${turn.focus ?? turn.en}”`
+          : chapter.goal
+  const studyPath = !last
+    ? learningStages[0].start
+    : isFoundation
+      ? `/foundation/${foundation?.id ?? 'lr'}/study`
+      : `/lesson/${chapterId}/study${chapterId === '02' ? `/${scene}` : ''}`
   const sceneLabel =
     chapterId === '02'
       ? phrase
@@ -55,26 +62,36 @@ export function Home({ learning, sync, storageAvailable }) {
     <div className="aw-page aw-library-page">
       <Heading
         eyebrow="YOUR LEARNING SPACE"
-        title="また、ここから。"
-        ja="今日は、ひとつの会話を声に。"
+        title={last ? 'また、ここから。' : '自分のペースで、はじめよう。'}
+        ja={last ? '今日は、ひとつの会話を声に。' : '学び方を知り、音に慣れ、会話へ。'}
         japanese
       />
       <section className="aw-resume">
         <div className="aw-resume-copy">
           <p className="aw-caption">
             {last ? '前回の続き' : '最初の一歩'} /{' '}
-            {isFoundation ? 'FOUNDATION' : `CHAPTER ${chapterId}`}
+            {!last
+              ? 'ORIENTATION'
+              : isFoundation
+                ? stage.title.toUpperCase()
+                : `CHAPTER ${chapterId}`}
           </p>
-          <h2 lang="en">{isFoundation ? 'Sounds & rhythm' : chapter.title}</h2>
+          <h2 lang="en">
+            {!last ? 'A good place to begin.' : isFoundation ? foundation?.en : chapter.title}
+          </h2>
           <p className="aw-resume-ja" lang="ja">
-            {isFoundation ? '音とリズム' : chapter.ja}
+            {!last ? 'まずは、学び方の地図から。' : isFoundation ? foundation?.ja : chapter.ja}
           </p>
           <p className="aw-resume-location" lang="ja">
-            {isFoundation
-              ? '文字と音から、少しずつ。'
-              : isPractice
-                ? `練習 — ${sceneLabel}`
-                : '解説 — 場面から、英語を知る。'}
+            {!last
+              ? '英語を学ぶ理由と、Articoの使い方を知る。'
+              : isFoundation
+                ? stage.id === 'orientation'
+                  ? 'はじめに — 理由と学び方を知る。'
+                  : '文字と音から、少しずつ。'
+                : isPractice
+                  ? `練習 — ${sceneLabel}`
+                  : '解説 — 場面から、英語を知る。'}
             <br />
             {isPractice && chapterId === '02'
               ? phrase
@@ -82,32 +99,47 @@ export function Home({ learning, sync, storageAvailable }) {
                 : `前回はフレーズ ${index + 1} / 3 まで`
               : last
                 ? '自分のペースで、続きをどうぞ。'
-                : 'まずは短い会話を読んでみましょう。'}
+                : '急がず、自分に合う始め方を見つけましょう。'}
           </p>
           <div className="aw-resume-actions">
             <Button href={resume} variant="paper" className="aw-resume-primary">
-              {last ? (isPractice ? '練習を再開' : '学習を再開') : '学習を始める'}
+              {last ? (isPractice ? '練習を再開' : '学習を再開') : 'はじめに進む'}
             </Button>
-            <Button href={studyPath} variant="light">
-              解説を読む
-            </Button>
+            {last ? (
+              <Button href={studyPath} variant="light">
+                解説を読む
+              </Button>
+            ) : (
+              <Button
+                variant="light"
+                onClick={() =>
+                  document
+                    .getElementById('aw-study-map')
+                    ?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+                }
+              >
+                学習マップを見る
+              </Button>
+            )}
           </div>
         </div>
         <div
-          className={`aw-remember ${chapterId !== '02' || isFoundation ? 'aw-remember-goal' : ''}`}
+          className={`aw-remember ${!last || chapterId !== '02' || isFoundation ? 'aw-remember-goal' : ''}`}
         >
           <p className="aw-eyebrow">
-            {chapterId === '02' && !isFoundation
+            {last && chapterId === '02' && !isFoundation
               ? phrase
                 ? phrase.id === 'phrase-friend'
                   ? 'MAYA'
                   : 'ELI'
                 : turn.speaker.toUpperCase()
-              : 'YOUR NEXT STEP'}
+              : !last
+                ? 'HOW WE LEARN'
+                : 'YOUR NEXT STEP'}
           </p>
           <p lang="en">{remembered}</p>
           <span lang="ja">
-            {chapterId === '02' && !isFoundation
+            {last && chapterId === '02' && !isFoundation
               ? '相手に少し遅れて、重ねて話す。'
               : 'わかったことを、少しずつ声に。'}
           </span>
@@ -120,22 +152,7 @@ export function Home({ learning, sync, storageAvailable }) {
           ほかの端末でも続ける ↗
         </button>
       </div>
-      <h2 className="aw-jp-section">学びたいところへ</h2>
-      <div className="aw-collections aw-collections-two">
-        <Collection
-          title="Social Fluency"
-          description="日常のやりとりを、一場面ずつ。"
-          footer="96 chapters · 解説と練習"
-          href="/courses"
-        />
-        <Collection
-          title="音とリズム"
-          description="短い音から、言いやすい英語へ。"
-          footer="Foundation · 無料"
-          tone="yellow"
-          href="/courses?foundation"
-        />
-      </div>
+      <StudyMap learning={learning} />
       <div className="aw-divider" />
       <div className="aw-revisit">
         <span>もう一度、声にしてみる</span>
@@ -147,18 +164,20 @@ export function Home({ learning, sync, storageAvailable }) {
   )
 }
 
-const courseTabs = [
-  { value: 'social', label: 'Social Fluency · 96章' },
-  { value: 'foundation', label: 'Foundation · 音と文字' },
-  { value: 'orientation', label: 'Orientation · はじめに' },
-]
+const courseTabs = learningStages.map((stage) => ({
+  value: stage.id,
+  label: `${stage.title} · ${stage.id === 'social' ? '96章' : stage.ja}`,
+  tone: stage.tone,
+}))
 export function Courses({ learning, route }) {
   const [category, setCategory] = useState(
     route.path.includes('?foundation')
       ? 'foundation'
       : route.path.includes('?orientation')
         ? 'orientation'
-        : 'social',
+        : route.path.includes('?social')
+          ? 'social'
+          : (getLearningStage(learning.last)?.id ?? 'orientation'),
   )
   const [groupIndex, setGroupIndex] = useState(0)
   const [expanded, setExpanded] = useState(false)
@@ -166,20 +185,20 @@ export function Courses({ learning, route }) {
   const chapterList = catalog.filter(
     (chapter) => Number(chapter.id) >= group.start && Number(chapter.id) <= group.end,
   )
-  const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1] ?? '02'
+  const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
   return (
     <div className="aw-page aw-library-page">
       <Heading eyebrow="YOUR COURSES" title="学ぶことを選ぶ。" japanese />
       <div className="aw-course-tabs" role="group" aria-label="Course categories">
-        {courseTabs.map((item, index) => (
+        {courseTabs.map((item) => (
           <button
             key={item.value}
             type="button"
-            className={`aw-tone-${['green', 'yellow', 'lilac'][index]}`}
+            className={`aw-tone-${item.tone}`}
             aria-pressed={category === item.value}
             onClick={() => {
               setCategory(item.value)
-              window.location.hash = `/courses${item.value === 'social' ? '' : `?${item.value}`}`
+              window.location.hash = `/courses?${item.value}`
             }}
           >
             {item.label}
@@ -245,29 +264,28 @@ export function Courses({ learning, route }) {
           </div>
         </>
       ) : (
-        <FoundationList category={category} />
+        <FoundationList category={category} learning={learning} />
       )}
     </div>
   )
 }
 
-function FoundationList({ category }) {
-  const steps = category === 'orientation' ? foundationSteps.slice(0, 2) : foundationSteps.slice(2)
+function FoundationList({ category, learning }) {
+  const stage = learningStages.find((item) => item.id === category)
+  const steps = stage.lessonIds.map((id) => foundationSteps.find((step) => step.id === id))
   return (
     <>
       <div className="aw-course-heading">
-        <h2 lang="en">
-          {category === 'orientation' ? 'A little orientation.' : 'Sounds & rhythm.'}
-        </h2>
-        <p lang="ja">
-          {category === 'orientation'
-            ? '学ぶ理由と、自分に合う進め方。'
-            : '文字を知り、音を聞き、口を動かす。いつでも戻れます。'}
-        </p>
+        <h2 lang="en">{stage.title}</h2>
+        <p lang="ja">{stage.support}</p>
       </div>
       <div className="aw-foundation-list">
         {steps.map((step, index) => (
-          <a className="aw-chapter" href={`#/foundation/${step.id}/study`} key={step.id}>
+          <a
+            className={`aw-chapter ${learning.last?.startsWith(`/foundation/${step.id}/`) ? 'is-current' : ''}`}
+            href={`#/foundation/${step.id}/study`}
+            key={step.id}
+          >
             <span className="aw-chapter-number">{String(index + 1).padStart(2, '0')}</span>
             <span>
               <strong lang="en">{step.en}</strong>

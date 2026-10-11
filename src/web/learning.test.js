@@ -9,6 +9,37 @@ import {
   toggleSaved,
   visit,
 } from './learning.js'
+import { getFoundationNavigation, getLearningStage, learningStages } from './pathway.js'
+
+test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {
+  const steps = learningStages.flatMap((stage) => stage.lessonIds)
+  assert.equal(new Set(steps).size, steps.length)
+  assert.equal(getFoundationNavigation('orientation').previous, '/courses?orientation')
+  assert.equal(getFoundationNavigation('how-it-works').next, '/foundation/letters/study')
+  assert.equal(getFoundationNavigation('letters').previous, '/foundation/how-it-works/study')
+  assert.equal(getFoundationNavigation('lr').next, '/lesson/01/study')
+  steps.slice(0, -1).forEach((id, index) => {
+    const next = getFoundationNavigation(id).next
+    assert.equal(parseRoute(`#${next}`).id, steps[index + 1])
+    assert.equal(parseRoute(`#${next}`).view, 'study')
+  })
+  assert.equal(getFoundationNavigation('not-a-lesson'), null)
+})
+test('new guests start at Orientation and returning guests keep their actual study or practice stage', () => {
+  const cases = [
+    [null, 'orientation'],
+    ['/foundation/how-it-works/study', 'orientation'],
+    ['/foundation/letters/study', 'foundation'],
+    ['/foundation/lr/chunks', 'foundation'],
+    ['/foundation/lr/whole', 'foundation'],
+    ['/lesson/02/practice/friend', 'social'],
+    ['/lesson/96/study', 'social'],
+  ]
+  cases.forEach(([path, stage]) => {
+    assert.equal((getLearningStage(path) ?? learningStages[0]).id, stage)
+  })
+  assert.equal(parseRoute(`#${learningStages[0].start}`).id, 'orientation')
+})
 
 test('guest progress survives a storage round trip with the selected phrase and reading position', () => {
   const learning = {

@@ -13,6 +13,7 @@ import {
   useAudio,
 } from './components'
 import { chunks, phrases, scenes, twister, words } from './content'
+import { StageNavigation } from './StudyMap'
 
 const ChapterContent = lazy(() =>
   import('./Reader').then((module) => ({ default: module.ChapterContent })),
@@ -434,8 +435,9 @@ export function Twister({ route, learning, update, notify }) {
       : ['One clear chunk.', '音声を聞いて、区切ってまねる。']
   return (
     <div className="aw-page aw-twister-page">
+      <StageNavigation active="foundation" />
       <Heading
-        eyebrow={isStudy ? 'FOUNDATION / TONGUE TWISTERS' : 'FOUNDATION / L & R'}
+        eyebrow={isStudy ? 'FOUNDATIONS / LESSON 06' : 'FOUNDATIONS / L & R'}
         title={title}
         ja={support}
       />
@@ -558,6 +560,14 @@ export function Twister({ route, learning, update, notify }) {
           </section>
         )}
       </div>
+      <footer className="aw-reader-footer">
+        <Button variant="quiet" href="/foundation/tongue-intro/study">
+          ← Why tongue twisters?
+        </Button>
+        <Button variant="outline" href="/lesson/01/study">
+          Start Social Fluency →
+        </Button>
+      </footer>
     </div>
   )
 }

@@ -4,27 +4,10 @@ import { Courses, Home, PracticeLibrary, Saved } from './Library'
 import { PhrasePractice, Shadow, Study, Twister, Vocabulary } from './Lesson'
 import { chapterById, foundationSteps } from './content'
 import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './learning'
+import Foundation from './Foundation'
+import { getLearningStage, learningStages } from './pathway'
 
 const Reader = lazy(() => import('./Reader'))
-const foundationNames = {
-  orientation: 'Orientation',
-  'how-it-works': 'HowArticoWorksLesson',
-  letters: 'LettersLesson',
-  hear: 'HearLesson',
-  write: 'WriteLesson',
-  sounds: 'SoundsLesson',
-  'tongue-intro': 'TongueIntro',
-}
-const foundations = Object.fromEntries(
-  Object.entries(foundationNames).map(([id, name]) => [
-    id,
-    lazy(() =>
-      import('./FoundationContent').then((module) => ({
-        default: module[name],
-      })),
-    ),
-  ]),
-)
 const destinations = [
   { id: 'home', label: 'ホーム', icon: 'home' },
   { id: 'courses', label: 'コース', icon: 'book' },
@@ -50,32 +33,6 @@ function useRoute() {
     }
   }, [])
   return route
-}
-function Foundation({ route }) {
-  const Lesson = foundations[route.id]
-  const index = foundationSteps.findIndex((step) => step.id === route.id)
-  const previous = foundationSteps[index - 1]
-  const next = foundationSteps[index + 1]
-  const go = (path) => {
-    window.location.hash = path
-  }
-  return (
-    <div className="aw-page aw-legacy">
-      <Button variant="quiet" href="/courses?foundation">
-        ← Foundation
-      </Button>
-      <Suspense fallback={<p role="status">Loading the lesson…</p>}>
-        <Lesson
-          onPrevious={() =>
-            go(previous ? `/foundation/${previous.id}/study` : '/courses?orientation')
-          }
-          previousLabel={previous?.en ?? 'Orientation'}
-          onNext={() => go(`/foundation/${next?.id ?? 'lr'}/study`)}
-          onPractice={() => go('/foundation/lr/chunks')}
-        />
-      </Suspense>
-    </div>
-  )
 }
 class LearningBoundary extends Component {
   state = { failed: false }
@@ -200,13 +157,19 @@ export default function ArticoWeb() {
       : route.page
   const chapterId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
   const lastChapter = chapterById[chapterId]
+  const lastStage = getLearningStage(learning.last) ?? learningStages[0]
+  const lastFoundation = foundationSteps.find((step) =>
+    learning.last?.startsWith(`/foundation/${step.id}/`),
+  )
+  const courseStage =
+    learningStages.find((stage) => route.path.includes(`?${stage.id}`)) ?? lastStage
   const crumb =
     route.page === 'lesson'
       ? `コース   /   Social Fluency   /   Chapter ${route.id}`
       : route.page === 'foundation'
-        ? 'コース   /   Foundation'
+        ? `コース   /   ${getLearningStage(route.path)?.title ?? 'Foundations'}`
         : route.page === 'courses'
-          ? `コース   /   ${route.path.includes('?foundation') ? 'Foundation' : route.path.includes('?orientation') ? 'Orientation' : 'Social Fluency'}`
+          ? `コース   /   ${courseStage.title}`
           : ['practice', 'saved'].includes(route.page)
             ? '練習室'
             : 'ホーム'
@@ -302,13 +265,15 @@ export default function ArticoWeb() {
         </nav>
         <div className="aw-divider" />
         <p className="aw-my-course">MY COURSE</p>
-        <a className="aw-course-name" href="#/courses" lang="en">
-          Social Fluency
+        <a className="aw-course-name" href={`#${lastStage.overview}`} lang="en">
+          {lastStage.title}
         </a>
         <p className="aw-course-status">
           {lastChapter
             ? `${lastChapter.ja}を${learning.last.includes('/practice') ? '練習' : '学習'}中`
-            : '今日の会話を見つける'}
+            : lastFoundation
+              ? `${lastFoundation.ja} · ${/\/(chunks|whole)(\/|$)/.test(learning.last) ? '練習中' : '学習中'}`
+              : '自分のペースで、はじめよう'}
         </p>
         <button className="aw-sync" type="button" onClick={() => setModal(true)}>
           <Icon name="cloud" />

@@ -496,6 +496,193 @@ body {
   line-height: 24px;
   font-weight: 500;
 }
+.aw-study-map {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  scroll-margin-top: 24px;
+}
+.aw-map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.aw-map-heading h2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.aw-map-heading > .aw-button {
+  flex-shrink: 0;
+}
+.aw-map-stages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aw-map-stages > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.aw-map-stages > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  right: -20px;
+  height: 1px;
+  background: var(--line);
+}
+.aw-map-stop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+.aw-map-number {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.is-current > .aw-map-stop .aw-map-number {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--paper);
+}
+.aw-map-current {
+  padding: 0 8px;
+  background: var(--paper);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+}
+.aw-map-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 20px;
+  flex: 1;
+}
+.is-current > .aw-map-card {
+  box-shadow: inset 0 0 0 1px var(--forest);
+}
+.aw-map-card-title h3 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+}
+.aw-map-card-title .aw-jp {
+  margin-top: 2px;
+}
+.aw-map-description {
+  font-size: 20px;
+  line-height: 28px;
+  min-height: 56px;
+  margin-top: 8px !important;
+}
+.aw-map-card > .aw-jp {
+  min-height: 48px;
+}
+.aw-map-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+.aw-map-card footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px 12px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+.aw-map-card footer > span {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--muted);
+}
+.aw-map-card footer .aw-button {
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 22px;
+}
+.aw-map-card footer .aw-icon {
+  width: 18px;
+  height: 18px;
+}
+.aw-map-note {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--muted);
+}
+.aw-stage-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  max-width: 720px;
+}
+.aw-stage-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  min-height: 48px;
+  border-radius: 12px;
+  color: var(--muted);
+}
+.aw-stage-nav a[aria-current] {
+  color: var(--ink);
+}
+.aw-stage-nav a > span {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.aw-stage-nav strong {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.aw-foundation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.aw-foundation-meta > span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 22px;
+  font-variant-numeric: tabular-nums;
+}
 .aw-collections {
   display: grid;
   gap: 16px;
@@ -1311,39 +1498,276 @@ body {
   line-height: 26px;
 }
 
-/* Keep the original foundations available inside the new shell. */
+/* Orientation and Foundations share the book layout and Artico's visual system. */
 .aw-legacy .lesson-page {
   width: 100%;
   min-height: auto;
   padding: 0;
-}
-.aw-legacy .lesson-title {
-  margin-top: 16px;
-}
-.aw-legacy .lesson-title h1 {
-  font-family: 'Newsreader', 'Noto Sans JP', serif;
-  font-size: 44px;
-  line-height: 1.25;
-  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .aw-legacy .letters-layout,
 .aw-legacy .alphabet-song-layout,
 .aw-legacy .writing-lesson-layout,
 .aw-legacy .sound-lesson-layout {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  margin-top: 0;
+  gap: 28px;
+  align-items: start;
+}
+.aw-legacy .orientation-reader,
+.aw-legacy .tongue-theory-reader {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  margin-top: 0;
 }
 .aw-legacy .orientation-reader {
-  max-width: 920px;
+  max-width: 780px;
+}
+.aw-theory-outline {
+  top: 24px;
+}
+.aw-theory-outline nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+}
+.aw-theory-outline button {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 8px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  min-height: 44px;
+}
+.aw-theory-outline button > span:first-child {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+}
+.aw-theory-mobile-outline {
+  display: none;
+}
+.aw-legacy .orientation-section,
+.aw-legacy .writing-lesson-card,
+.aw-legacy .sound-lesson-card,
+.aw-legacy .tongue-theory-card,
+.aw-legacy .alphabet-song-intro,
+.aw-legacy .alphabet-song-guide,
+.aw-legacy .alphabet-board {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: none;
 }
 .aw-legacy .orientation-section {
   scroll-margin-top: 24px;
 }
-.aw-legacy .lesson-footer {
-  padding-left: 0;
-  padding-right: 0;
+.aw-legacy .orientation-section-header {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.aw-legacy .orientation-section-header > span {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--lilac-soft);
+  border-radius: 12px;
+  font-size: 13px;
+}
+.aw-legacy .orientation-section-header small,
+.aw-legacy .orientation-section-header p {
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--muted);
+}
+.aw-legacy .lesson-page h2 {
+  color: var(--ink);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+.aw-legacy .orientation-section-header h2 {
+  margin: 6px 0;
+}
+.aw-legacy
+  :is(
+    .writing-lesson-card,
+    .sound-lesson-card,
+    .tongue-theory-card,
+    .alphabet-song-intro,
+    .alphabet-song-guide
+  )
+  > p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--ink);
+}
+.aw-legacy .orientation-section-body {
+  padding-top: 24px;
+}
+.aw-legacy .orientation-section-body p,
+.aw-legacy .letters-copy p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.aw-legacy .orientation-section-body p:last-child {
+  margin-bottom: 0;
+}
+.aw-legacy .theory-section-list {
+  padding-left: 20px;
+  margin: 20px 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+.aw-legacy .theory-section-list li + li {
+  margin-top: 12px;
+}
+.aw-legacy .orientation-callout,
+.aw-legacy .orientation-closing {
+  background: var(--surface-strong);
+  padding: 24px;
+  border-radius: 12px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+.aw-legacy .orientation-callout {
+  margin: 24px 0;
+}
+.aw-legacy .orientation-closing {
+  background: var(--lilac-soft);
+  max-width: 780px;
+}
+.aw-legacy .orientation-callout strong,
+.aw-legacy .orientation-closing strong {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.aw-legacy .orientation-emphasis {
+  border-left: 2px solid var(--brand);
+  padding-left: 16px;
+}
+.aw-legacy .letters-closing {
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.aw-legacy .alphabet-case-section h3 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.aw-legacy .alphabet-case-section h3 span {
+  display: block;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--muted);
+}
+.aw-legacy .alphabet-case-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
 }
 .aw-legacy .alphabet-case-grid button {
+  min-height: 44px;
+  padding: 0;
   border-radius: 12px;
+  background: var(--surface-strong);
+  font-size: 24px;
+  font-weight: 500;
+}
+.aw-legacy .alphabet-case-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 24px 0;
+  padding: 0;
+}
+.aw-legacy .lesson-footer {
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line);
+}
+.aw-legacy .lesson-footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: auto;
+}
+.aw-legacy .primary-button,
+.aw-legacy .secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--brand);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 500;
+  transform: none;
+}
+.aw-legacy .secondary-button {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.aw-legacy .lesson-action-ja {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.aw-legacy .tongue-item-copy > strong,
+.aw-legacy .tongue-minimal-pairs strong {
+  color: var(--ink);
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.aw-legacy .tongue-item-copy p,
+.aw-legacy .tongue-minimal-pairs span {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--muted);
+}
+.aw-legacy .ipa-table > div > * {
+  font-size: 13px;
+  line-height: 24px;
+}
+.aw-legacy .ipa-table span:last-child {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
 }
 .aw-legacy iframe {
   max-width: 100%;
@@ -1417,6 +1841,37 @@ body {
 }
 
 @media (max-width: 1180px) {
+  .aw-map-stages {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .aw-map-stages > li {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 16px;
+  }
+  .aw-map-stop {
+    align-self: start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .aw-map-stages > li:not(:last-child)::after {
+    top: 40px;
+    bottom: -24px;
+    left: 20px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+  .aw-map-current {
+    padding: 4px 0;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .aw-map-description,
+  .aw-map-card > .aw-jp {
+    min-height: 0;
+  }
   .aw-page {
     padding-left: 28px;
     padding-right: 28px;
@@ -1475,6 +1930,34 @@ body {
   }
 }
 @media (max-width: 960px) {
+  .aw-resume {
+    flex-direction: column;
+  }
+  .aw-resume-copy,
+  .aw-remember {
+    flex: auto;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+  .aw-theory-desktop-outline {
+    display: none;
+  }
+  .aw-theory-mobile-outline {
+    display: block;
+  }
+  .aw-theory-mobile-outline summary {
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+  }
+  .aw-theory-mobile-outline summary > span {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
   .aw-sidebar {
     flex-basis: 188px;
     width: 188px;
@@ -1565,6 +2048,65 @@ body {
   }
 }
 @media (max-width: 640px) {
+  .aw-map-heading {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .aw-map-heading h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .aw-map-card {
+    padding: 20px;
+    gap: 10px;
+  }
+  .aw-map-card-title h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .aw-stage-nav {
+    gap: 4px;
+  }
+  .aw-stage-nav a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 10px;
+  }
+  .aw-stage-nav strong {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .aw-legacy .orientation-section,
+  .aw-legacy .writing-lesson-card,
+  .aw-legacy .sound-lesson-card,
+  .aw-legacy .tongue-theory-card,
+  .aw-legacy .alphabet-song-intro,
+  .aw-legacy .alphabet-song-guide,
+  .aw-legacy .alphabet-board {
+    padding: 20px;
+  }
+  .aw-legacy .orientation-section-header {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .aw-legacy .orientation-section-header > span {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+  .aw-legacy .alphabet-case-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .aw-legacy .lesson-footer-actions {
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .aw-legacy .lesson-footer-actions > button {
+    width: 100%;
+  }
   .aw-sidebar {
     display: none;
   }

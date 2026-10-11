@@ -1,6 +1,6 @@
 # Artico web prototype
 
-A responsive React/Vite prototype for Artico: a Japanese-first English learning product focused on foundations and social fluency.
+A responsive React/Vite prototype for Artico, implementing the approved illustrated Figma web design. English leads the lesson content; smaller Japanese text supports understanding.
 
 ## Run locally
 
@@ -11,6 +11,11 @@ pnpm dev
 
 Then open `http://127.0.0.1:5173/`.
 
+```bash
+pnpm test
+pnpm build
+```
+
 ## GitHub Pages
 
 The `main` branch deploys automatically through GitHub Actions. Once the first
@@ -20,18 +25,28 @@ deployment completes, the site is available at:
 
 ## Included in this prototype
 
-- Minimal premium landing page with Japanese/English hero copy
-- Orientation before the alphabet lessons
-- Interactive uppercase/lowercase alphabet board
-- Reference-video layouts for alphabet, writing, and IPA awareness
-- Tongue-twister learning introduction
-- Practice library with 12 classic tongue twisters in four training groups
-- Guided pronunciation drill with speed modes, mouth cues, transfer phrases, and browser voice preview
-- Suggested four-week routine
-- Responsive desktop and mobile layouts
+- Guest learning home, resume cards, course browsing, and practice library
+- All 96 original General American English review chapters, loaded individually
+- Illustrated Chapter 02 with two- and three-person conversations
+- Four illustrated vocabulary words and two phrase scenes
+- Listen, Repeat, and Shadow modes, phrase selection, and playback speed controls
+- Illustrated L/R sound lesson, three chunks, and whole-sentence practice
+- Saved expressions, last study/practice locations, and reading positions stored locally
+- Existing orientation, alphabet, writing, sound-awareness, and tongue-twister explanations
+- Responsive web layouts for desktop, tablet, and phone
 
 ## Prototype boundaries
 
-- Login and payments are visual placeholders
-- Browser speech synthesis is used as a temporary preview; approved recorded audio can replace it later
-- The external video references remain credited links or privacy-enhanced YouTube embeds
+- Dedicated new course recordings are pending. The audio controls show a clear readiness message; no audio generation service or API is called.
+- `approvedAudio` in `src/web/components.jsx` is the attachment point for reviewed static recordings. Asset paths are relative to the Vite deployment base.
+- The original Foundation material keeps its existing recordings, browser pronunciation preview, and credited video references. These are separate from the new course recordings.
+- Progress is local to this browser. The guest profile explains that account sign-in and cross-device synchronization are pending.
+- Chapter 02 and the L/R lesson have the illustrated bilingual treatment from Figma. Other chapters use the complete English review manuscript with Japanese chapter titles; their illustrated scenes and Japanese explanations remain editorial work.
+- The illustrated introduction of Jordan is a separate scenario from the full chapter's introduction of colleague Sam. Keep scene text and audio identities distinct during recording review.
+- The previous app source, content, and assets remain in the repository. Figma was used read-only for this implementation.
+
+## Design reference
+
+The source is the `04 · Illustrated learning / V3` page in [Artico — Web, iPad & iPhone](https://www.figma.com/design/UpOjDYloonXEyU5m6fcnWz/Artico?node-id=79-353).
+
+The implementation uses plain CSS and reusable React components. Exported artwork lives in `public/assets/figma/`; no full-screen design screenshot is used as app content. See [web implementation notes](docs/web-implementation.md) for the fidelity and validation record.

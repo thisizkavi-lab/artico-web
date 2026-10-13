@@ -1,99 +1,54 @@
-import { Button, Icon } from './components'
+import { useLanguage } from './Language'
 import { getLearningStage, learningStages } from './pathway'
-
 export function StageNavigation({ active }) {
+  const { t, language } = useLanguage()
   return (
-    <nav className="aw-stage-nav" aria-label="Learning path">
+    <nav className="rl-stage-tabs" aria-label={t("Learning stages")}>
       {learningStages.map((stage, index) => (
         <a
           key={stage.id}
           href={`#${stage.overview}`}
-          className={active === stage.id ? `aw-tone-${stage.tone}` : ''}
-          aria-current={active === stage.id ? 'step' : undefined}
+          aria-current={stage.id === active ? 'page' : undefined}
         >
           <span>{String(index + 1).padStart(2, '0')}</span>
-          <strong lang="en">{stage.title}</strong>
+          {t(stage.title)}
         </a>
       ))}
     </nav>
   )
 }
-
 export default function StudyMap({ learning }) {
-  const current = getLearningStage(learning.last)
+  const { t, language } = useLanguage()
+  const current = getLearningStage(learning.last)?.id
   return (
-    <section className="aw-study-map" id="aw-study-map" aria-labelledby="aw-map-heading">
-      <header className="aw-map-heading">
+    <section className="rl-study-map" id="aw-study-map" aria-labelledby="learning-path-title">
+      <header>
         <div>
-          <h2 id="aw-map-heading" lang="en">
-            Your learning path.
-          </h2>
-          <p className="aw-jp" lang="ja">
-            迷ったら、この順番で。途中からでも、いつでも戻れます。
-          </p>
+          <p className="rl-kicker">{t("THE PATH AHEAD")}</p>
+          <h2 id="learning-path-title">{t("Your learning path.")}</h2>
         </div>
-        <Button href="/courses" variant="quiet">
-          コース一覧 <Icon name="next" />
-        </Button>
+        <span>{t("Start at the beginning, or find what you need.")}</span>
       </header>
-      <ol className="aw-map-stages">
-        {learningStages.map((stage, index) => {
-          const isCurrent = current?.id === stage.id
-          return (
-            <li
-              className={isCurrent ? 'is-current' : ''}
-              aria-current={isCurrent ? 'step' : undefined}
-              key={stage.id}
-            >
-              <div className="aw-map-stop">
-                <span className="aw-map-number" aria-label={`Stage ${index + 1}`}>
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-                {isCurrent && (
-                  <span className="aw-map-current" lang="ja">
-                    学習中
-                  </span>
-                )}
+      <ol>
+        {learningStages.map((stage, index) => (
+          <li key={stage.id} className={current === stage.id ? 'is-current' : ''}>
+            <span className="rl-stage-number">{String(index + 1).padStart(2, '0')}</span>
+            <div>
+              <div className="rl-stage-title">
+                <h3>{t(stage.title)}</h3>
+                {current === stage.id && <small>{t("YOU ARE HERE")}</small>}
               </div>
-              <article className={`aw-map-card aw-tone-${stage.tone}`}>
-                <div className="aw-map-card-title">
-                  <h3 lang="en">
-                    <a href={`#${stage.overview}`}>{stage.title}</a>
-                  </h3>
-                  <p className="aw-jp" lang="ja">
-                    {stage.ja}
-                  </p>
-                </div>
-                <p className="aw-map-description" lang="en">
-                  {stage.description}
-                </p>
-                <p className="aw-jp" lang="ja">
-                  {stage.support}
-                </p>
-                <ul className="aw-map-topics" lang="en">
-                  {stage.topics.map((topic) => (
-                    <li key={topic}>{topic}</li>
-                  ))}
-                </ul>
-                <footer>
-                  <span>{stage.count}</span>
-                  <Button
-                    href={isCurrent ? learning.last : stage.start}
-                    variant="quiet"
-                    aria-label={isCurrent ? `Continue ${stage.title}` : `Start ${stage.title}`}
-                  >
-                    {isCurrent ? '続きを学ぶ' : stage.action}
-                    <Icon name="next" />
-                  </Button>
-                </footer>
-              </article>
-            </li>
-          )
-        })}
+              <p>{t(stage.description)}</p>
+              <span className="rl-topics">{stage.topics.map((topic) => t(topic)).join(' · ')}</span>
+            </div>
+            <a href={`#${stage.overview}`} aria-label={t(stage.action)}>
+              <span>{t(stage.count)}</span>
+              <strong>{t("Explore →")}</strong>
+            </a>
+          </li>
+        ))}
       </ol>
-      <p className="aw-map-note" lang="ja">
-        基礎を知っているところは、飛ばして大丈夫。気になる音は、会話を学びながら何度でも。
-      </p>
+      <p className="rl-map-note"> {t("Already know the basics? Move ahead. You can always return to a sound or an explanation.")} </p>
     </section>
   )
 }

@@ -1,17 +1,21 @@
+import { LanguageSelector, useLanguage } from './Language'
 import { Component, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Button, Icon, IconButton, Modal } from './components'
 import { Courses, Home, PracticeLibrary, Saved } from './Library'
-import { PhrasePractice, Shadow, Study, Twister, Vocabulary } from './Lesson'
 import { chapterById, foundationSteps } from './content'
 import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './learning'
-import Foundation from './Foundation'
+import Progress from './Progress'
+import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
 
-const Reader = lazy(() => import('./Reader'))
+const Foundation = lazy(() => import('./Foundation'))
+const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
+const ChapterLesson = lazy(() => import('./ChapterLesson'))
+const IntroductionsLesson = lazy(() => import('./IntroductionsLesson'))
 const destinations = [
-  { id: 'home', label: 'ホーム', icon: 'home' },
-  { id: 'courses', label: 'コース', icon: 'book' },
-  { id: 'practice', label: '練習室', icon: 'audio' },
+  { id: 'home', label: 'Home', icon: 'home' },
+  { id: 'courses', label: 'Learn', icon: 'book' },
+  { id: 'progress', label: 'Progress', icon: 'check' },
 ]
 
 function readLearning() {
@@ -21,10 +25,19 @@ function readLearning() {
     return loadLearning({ getItem: () => null })
   }
 }
-function useRoute() {
+function useRoute(beforeChange) {
   const [route, setRoute] = useState(() => parseRoute(window.location.hash))
+  const currentRoute = useRef(route)
+  const beforeChangeRef = useRef(beforeChange)
+  beforeChangeRef.current = beforeChange
   useEffect(() => {
-    const change = () => setRoute(parseRoute(window.location.hash))
+    const change = () => {
+      const next = parseRoute(window.location.hash)
+      if (next.path === currentRoute.current.path) return
+      beforeChangeRef.current(currentRoute.current)
+      currentRoute.current = next
+      setRoute(next)
+    }
     window.addEventListener('hashchange', change)
     window.addEventListener('popstate', change)
     return () => {
@@ -43,8 +56,8 @@ class LearningBoundary extends Component {
     if (this.state.failed)
       return (
         <div className="aw-page aw-empty">
-          <h1>このページを読み込めませんでした。</h1>
-          <Button onClick={() => window.location.reload()}>もう一度読み込む</Button>
+          <h1>{this.props.t('This page could not be loaded.')}</h1>
+          <Button onClick={() => window.location.reload()}>{this.props.t('Try again')}</Button>
         </div>
       )
     return this.props.children
@@ -52,23 +65,37 @@ class LearningBoundary extends Component {
 }
 
 export default function ArticoWeb() {
-  const route = useRoute()
+  const { t, language } = useLanguage()
+  const mainRef = useRef(null)
+  const pendingScroll = useRef(null)
+  const route = useRoute((outgoing) => {
+    const viewport = mainRef.current
+    if (!viewport) return
+    if (['lesson', 'foundation'].includes(outgoing.page))
+      pendingScroll.current = { path: outgoing.path, top: viewport.scrollTop }
+    // Stop any section-jump animation before replacing the page. Capture the
+    // outgoing position before React changes its height or the browser clamps it.
+    viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' })
+  })
   const [learning, update] = useState(readLearning)
   const [storageAvailable, setStorageAvailable] = useState(true)
   const [modal, setModal] = useState(false)
   const [toast, setToast] = useState('')
-  const mainRef = useRef(null)
   const contentRef = useRef(null)
   const learningRef = useRef(learning)
   const scrollTimer = useRef(null)
-  const pendingScroll = useRef(null)
   learningRef.current = learning
   const notify = (message) => setToast(message)
-  const save = (id) =>
-    update((previous) => ({
-      ...previous,
-      saved: toggleSaved(previous.saved, id),
-    }))
+  const save = (item) =>
+    update((previous) => {
+      const id = typeof item === 'string' ? item : item.id
+      const saved = toggleSaved(previous.saved, id)
+      const savedDetails = { ...previous.savedDetails }
+      if (!saved.includes(id)) delete savedDetails[id]
+      else if (typeof item !== 'string')
+        savedDetails[id] = { id, en: item.en, ja: item.ja ?? '', chapter: item.chapter }
+      return { ...previous, saved, savedDetails }
+    })
   useEffect(() => {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(learning))
@@ -124,11 +151,14 @@ export default function ArticoWeb() {
       })
       viewport.addEventListener('keydown', stopRestoring)
     } else stopRestoring()
-    const chapter = chapterById[route.id]
-    const foundation = foundationSteps.find((step) => step.id === route.id)
-    document.title = `${chapter?.title ?? foundation?.en ?? (route.page === 'courses' ? 'Courses' : route.page === 'practice' ? 'Practice' : route.page === 'saved' ? 'Saved phrases' : 'Your learning space')} · Artico`
     return stopRestoring
   }, [route.path])
+  useEffect(() => {
+    const chapter = chapterById[route.id]
+    const foundation = foundationSteps.find((step) => step.id === route.id)
+    const pageName = { courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases', home: 'Your learning space' }[route.page]
+    document.title = `${(language === 'ja' ? chapter?.ja : chapter?.title) ?? (language === 'ja' ? foundation?.ja : foundation?.en) ?? t(pageName ?? 'Your learning space')} · Artico`
+  }, [route.path, language, t])
   useEffect(() => () => clearTimeout(scrollTimer.current), [])
   useEffect(() => {
     if (!toast) return
@@ -152,8 +182,8 @@ export default function ArticoWeb() {
   }
   const activeNav = ['lesson', 'foundation'].includes(route.page)
     ? 'courses'
-    : route.page === 'saved'
-      ? 'practice'
+    : ['saved', 'practice'].includes(route.page)
+      ? 'progress'
       : route.page
   const chapterId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
   const lastChapter = chapterById[chapterId]
@@ -165,18 +195,23 @@ export default function ArticoWeb() {
     learningStages.find((stage) => route.path.includes(`?${stage.id}`)) ?? lastStage
   const crumb =
     route.page === 'lesson'
-      ? `コース   /   Social Fluency   /   Chapter ${route.id}`
+      ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
       : route.page === 'foundation'
-        ? `コース   /   ${getLearningStage(route.path)?.title ?? 'Foundations'}`
+        ? `${t('Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Foundations')}`
         : route.page === 'courses'
-          ? `コース   /   ${courseStage.title}`
+          ? `${t('Learn')} / ${t(courseStage.title)}`
           : ['practice', 'saved'].includes(route.page)
-            ? '練習室'
-            : 'ホーム'
+            ? route.page === 'saved'
+              ? `${t('Progress')} / ${t('Saved phrases')}`
+              : t("Practice")
+            : route.page === 'progress'
+              ? t("Progress")
+              : t("Home")
   let screen
   if (route.page === 'courses')
     screen = <Courses learning={learning} route={route} key={route.path} />
   else if (route.page === 'practice') screen = <PracticeLibrary learning={learning} />
+  else if (route.page === 'progress') screen = <Progress learning={learning} />
   else if (route.page === 'saved')
     screen = <Saved learning={learning} save={save} notify={notify} />
   else if (route.page === 'foundation')
@@ -190,51 +225,32 @@ export default function ArticoWeb() {
           notify={notify}
         />
       ) : (
-        <Foundation route={route} />
+        <Foundation key={route.path} route={route} learning={learning} update={update} />
       )
   else if (route.page === 'lesson') {
-    if (route.id === '02' && route.view === 'study')
-      screen = <Study route={route} learning={learning} save={save} notify={notify} />
-    else if (route.id === '02' && ['words', 'phrases'].includes(route.view))
-      screen = <Vocabulary route={route} learning={learning} save={save} notify={notify} />
-    else if (route.id === '02' && route.phrase)
-      screen = (
-        <PhrasePractice
+    const Lesson = route.id === '02' ? IntroductionsLesson : ChapterLesson
+    screen = (
+      <Suspense
+        fallback={
+          <div className="aw-page" role="status"> {t("Loading the chapter…")} </div>
+        }
+      >
+        <Lesson
           key={route.path}
           route={route}
           learning={learning}
           update={update}
+          save={save}
           notify={notify}
         />
-      )
-    else if (route.id === '02' && route.view === 'practice')
-      screen = (
-        <Shadow
-          key={route.path}
-          route={route}
-          learning={learning}
-          update={update}
-          notify={notify}
-        />
-      )
-    else
-      screen = (
-        <Suspense
-          fallback={
-            <div className="aw-page" role="status">
-              Loading the chapter…
-            </div>
-          }
-        >
-          <Reader route={route} />
-        </Suspense>
-      )
+      </Suspense>
+    )
   } else
     screen = (
       <Home learning={learning} storageAvailable={storageAvailable} sync={() => setModal(true)} />
     )
   return (
-    <div className="aw-app">
+    <div className="aw-app is-english-pilot" data-language={language}>
       <a
         className="aw-skip"
         href="#aw-content"
@@ -242,15 +258,13 @@ export default function ArticoWeb() {
           event.preventDefault()
           mainRef.current.focus()
         }}
-      >
-        本文へ
-      </a>
+      > {t("Skip to content")} </a>
       <aside className="aw-sidebar">
-        <a className="aw-wordmark" href="#/home" aria-label="Artico home">
+        <a className="aw-wordmark" href="#/home" aria-label={t("Artico home")}>
           artico
         </a>
-        <p className="aw-tagline">言葉を、毎日の会話へ。</p>
-        <nav className="aw-destinations" aria-label="Main navigation">
+        <p className="aw-tagline">{t("Words for everyday life.")}</p>
+        <nav className="aw-destinations" aria-label={t("Main navigation")}>
           {destinations.map((destination) => (
             <a
               key={destination.id}
@@ -259,33 +273,39 @@ export default function ArticoWeb() {
               aria-current={activeNav === destination.id ? 'page' : undefined}
             >
               <Icon name={destination.icon} />
-              <span>{destination.label}</span>
+              <span>{t(destination.label)}</span>
             </a>
           ))}
         </nav>
         <div className="aw-divider" />
-        <p className="aw-my-course">MY COURSE</p>
-        <a className="aw-course-name" href={`#${lastStage.overview}`} lang="en">
-          {lastStage.title}
+        <p className="aw-my-course">{t("MY COURSE")}</p>
+        <a className="aw-course-name" href={`#${lastStage.overview}`}>
+          {t(lastStage.title)}
         </a>
         <p className="aw-course-status">
           {lastChapter
-            ? `${lastChapter.ja}を${learning.last.includes('/practice') ? '練習' : '学習'}中`
+            ? `${t('Chapter {id}', { id: lastChapter.id })} · ${learning.last.includes('/practice') ? t("Practice") : t("Study")}`
             : lastFoundation
-              ? `${lastFoundation.ja} · ${/\/(chunks|whole)(\/|$)/.test(learning.last) ? '練習中' : '学習中'}`
-              : '自分のペースで、はじめよう'}
+              ? `${language === 'ja' ? lastFoundation.ja : lastFoundation.en} · ${/\/(practice|chunks|whole)(\/|$)/.test(learning.last) ? t("Practice") : t("Study")}`
+              : t("Start at your own pace.")}
         </p>
-        <button className="aw-sync" type="button" onClick={() => setModal(true)}>
+        <button
+          className="aw-sync"
+          type="button"
+          aria-label={t("About local saving and device sync")}
+          onClick={() => setModal(true)}
+        >
           <Icon name="cloud" />
-          <strong>ほかの端末でも続ける</strong>
-          <span>この端末に保存 · 同期は準備中</span>
+          <strong>{t("Your learning, saved here")}</strong>
+          <span>{t("Device sync is coming later.")}</span>
         </button>
       </aside>
       <div className="aw-main">
         <header className="aw-topbar">
           <p>{crumb}</p>
-          <span>{storageAvailable ? 'この端末に保存' : 'このタブで学習中'}</span>
-          <IconButton name="user" label="Your guest profile" onClick={() => setModal(true)} />
+          <span>{storageAvailable ? t("Saved on this device") : t("Saved for this visit")}</span>
+          <LanguageSelector />
+          <IconButton name="user" label={t("Your guest profile")} onClick={() => setModal(true)} />
         </header>
         <main
           ref={mainRef}
@@ -295,10 +315,10 @@ export default function ArticoWeb() {
           onScroll={recordScroll}
         >
           <div ref={contentRef}>
-            <LearningBoundary key={route.path}>{screen}</LearningBoundary>
+            <LearningBoundary key={route.path} t={t}><Suspense fallback={<div className="aw-page" role="status">{t('Loading your lesson…')}</div>}>{screen}</Suspense></LearningBoundary>
           </div>
         </main>
-        <nav className="aw-mobile-nav" aria-label="Mobile navigation">
+        <nav className="aw-mobile-nav" aria-label={t("Mobile navigation")}>
           {destinations.map((destination) => (
             <a
               key={destination.id}
@@ -307,7 +327,7 @@ export default function ArticoWeb() {
               aria-current={activeNav === destination.id ? 'page' : undefined}
             >
               <Icon name={destination.icon} />
-              <span>{destination.label}</span>
+              <span>{t(destination.label)}</span>
             </a>
           ))}
         </nav>
@@ -315,17 +335,18 @@ export default function ArticoWeb() {
       {toast && (
         <div className="aw-toast" role="status">
           <span>{toast}</span>
-          <button type="button" aria-label="Dismiss message" onClick={() => setToast('')}>
+          <button type="button" aria-label={t("Dismiss message")} onClick={() => setToast('')}>
             ×
           </button>
         </div>
       )}
       {modal && (
-        <Modal title="ゲストで、すぐに学べます。" onClose={() => setModal(false)}>
-          <p>学習の続きと保存した表現は、この端末のブラウザに保存されます。</p>
-          <p>端末間の同期は準備中です。今はアカウントを作らずに、コースと練習を進められます。</p>
+        <Modal title={t("Your own learning space.")} onClose={() => setModal(false)}>
+          <LanguageSelector profile />
+          <p>{t("Your place in the course, practice choices, and saved phrases stay in this browser.")}</p>
+          <p>{t("You can learn as a guest. Signing in to sync between devices is coming later.")}</p>
           {!storageAvailable && (
-            <p>ブラウザの保存機能が使えないため、このタブを閉じると学習の続きが失われます。</p>
+            <p> {t("Browser storage is unavailable. Your progress will be lost when you close this tab.")} </p>
           )}
         </Modal>
       )}

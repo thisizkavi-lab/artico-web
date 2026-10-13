@@ -94,6 +94,12 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
   )
   assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
   assert.equal(parseRoute('#/lesson/97/study').page, 'home')
+  assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line3').line, 'ch02-line3')
+  assert.equal(parseRoute('#/lesson/02/practice?line=ch03-line3').line, undefined)
+  assert.equal(
+    visit(emptyLearning, '/lesson/02/practice?line=ch02-v1').lastPractice,
+    '/lesson/02/practice?line=ch02-v1',
+  )
   assert.equal(parseRoute('#/%invalid').page, 'home')
   for (let number = 1; number <= 96; number++)
     assert.equal(parseRoute(`#/lesson/${String(number).padStart(2, '0')}/study`).page, 'lesson')
@@ -101,6 +107,33 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
 test('saving and unsaving phrases is reversible and never duplicates a saved item', () => {
   assert.deepEqual(toggleSaved(['first-0'], 'first-1'), ['first-0', 'first-1'])
   assert.deepEqual(toggleSaved(['first-0', 'first-1'], 'first-0'), ['first-1'])
+})
+test('new chapter phrase selection and saved text survive reload without accepting arbitrary stored objects', () => {
+  const stored = {
+    ...emptyLearning,
+    indices: { 'chapter-94': 8 },
+    responses: { 'ch94-b15-0': 'I’m running ten minutes late.', invalid: 'discard' },
+    saved: ['ch94-line13'],
+    savedDetails: {
+      'ch94-line13': {
+        id: 'wrong',
+        en: 'Traffic’s barely moving.',
+        ja: '車がほとんど進みません。',
+        chapter: '94',
+        extra: 'discard',
+      },
+    },
+  }
+  const restored = sanitizeLearning(stored)
+  assert.deepEqual(restored.indices, { 'chapter-94': 8 })
+  assert.deepEqual(restored.responses, { 'ch94-b15-0': 'I’m running ten minutes late.' })
+  assert.deepEqual(restored.savedDetails['ch94-line13'], {
+    id: 'ch94-line13',
+    en: 'Traffic’s barely moving.',
+    ja: '車がほとんど進みません。',
+    chapter: '94',
+  })
+  assert.deepEqual(sanitizeLearning({ ...stored, saved: [] }).savedDetails, {})
 })
 test('the web course includes every original chapter, study and practice, without local editorial paths', () => {
   const directory = new URL('../course/chapters/', import.meta.url)

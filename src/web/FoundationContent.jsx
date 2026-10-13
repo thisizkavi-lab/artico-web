@@ -1,3 +1,4 @@
+import { useLanguage } from './Language'
 // Existing foundation lessons, preserved and loaded independently of the old course app.
 import { Fragment, useEffect, useRef, useState } from 'react'
 import { allTwisters, alphabet } from '../data'
@@ -337,7 +338,7 @@ function formatVideoTime(seconds) {
   return `${minutes}:${String(remainder).padStart(2, '0')}`
 }
 
-function YouTubeLessonPlayer({
+export function YouTubeLessonPlayer({
   videoId,
   title,
   credit,
@@ -346,6 +347,7 @@ function YouTubeLessonPlayer({
   loopSegment = false,
   autoplay = true,
 }) {
+  const { t, language } = useLanguage()
   const containerRef = useRef(null)
   const iframeRef = useRef(null)
   const hasStartedRef = useRef(false)
@@ -434,13 +436,13 @@ function YouTubeLessonPlayer({
     typeof window === 'undefined' ? '' : `&origin=${encodeURIComponent(window.location.origin)}`
   const start = startAt > 0 ? `&start=${startAt}` : ''
   const end = endAt > startAt ? `&end=${endAt}` : ''
-  const source = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=${autoplay ? 1 : 0}${start}${end}&rel=0&playsinline=1&hl=ja&modestbranding=1&enablejsapi=1${origin}`
+  const source = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=${autoplay ? 1 : 0}${start}${end}&rel=0&playsinline=1&hl=${language}&modestbranding=1&enablejsapi=1${origin}`
   const segmentLabel =
     endAt > startAt
-      ? `${formatVideoTime(startAt)}–${formatVideoTime(endAt)} をループ · スクロール中は一時停止`
+      ? `${formatVideoTime(startAt)}–${formatVideoTime(endAt)} loop · Pauses off screen`
       : autoplay
-        ? `${startAt > 0 ? `${startAt}秒から再生 · ` : ''}スクロール中は一時停止`
-        : 'クリックして再生 · スクロール中は一時停止'
+        ? `${startAt > 0 ? `${startAt} seconds · ` : ''}Pauses off screen`
+        : t("Press play · Pauses off screen")
 
   return (
     <div className="youtube-lesson-player" ref={containerRef}>
@@ -959,7 +961,8 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
-function TheoryAudioSample({ phrase, target, src }) {
+export function TheoryAudioSample({ phrase, target, src }) {
+  const { t, language } = useLanguage()
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
   const [playing, setPlaying] = useState(false)
@@ -1057,7 +1060,7 @@ function TheoryAudioSample({ phrase, target, src }) {
           className="theory-audio-play"
           onClick={toggle}
           disabled={!src}
-          aria-label={src ? `${phrase}を再生` : `${phrase}の音声は準備中`}
+          aria-label={src ? `Play: ${phrase}` : `Audio coming soon: ${phrase}`}
         >
           <PlayIcon pause={playing} />
         </button>
@@ -1078,14 +1081,14 @@ function TheoryAudioSample({ phrase, target, src }) {
         <span style={{ width: `${progress}%` }} />
       </div>
       <div className="theory-audio-controls">
-        <button type="button" onClick={rewind} disabled={!src} aria-label="10秒戻る">
+        <button type="button" onClick={rewind} disabled={!src} aria-label={t("Back 10 seconds")}>
           ↶ <span>-10s</span>
         </button>
         <button
           type="button"
           onClick={cycleSpeed}
           disabled={!src}
-          aria-label={`再生速度 ${speedLabel}`}
+          aria-label={`Playback speed ${speedLabel}`}
         >
           {speedLabel}
         </button>
@@ -1094,12 +1097,12 @@ function TheoryAudioSample({ phrase, target, src }) {
           className={looping ? 'active' : ''}
           onClick={toggleLoop}
           disabled={!src}
-          aria-label={looping ? 'ループをオフ' : 'ループをオン'}
+          aria-label={looping ? t("Turn loop off") : t("Turn loop on")}
           aria-pressed={looping}
         >
-          ↻ <span>Loop</span>
+          ↻ <span>{t("Loop")}</span>
         </button>
-        <small>{src ? '音声サンプル' : '音声サンプルを準備中'}</small>
+        <small>{src ? t("Existing audio sample") : t("Recording coming soon")}</small>
       </div>
     </div>
   )

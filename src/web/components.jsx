@@ -1,3 +1,4 @@
+import { useLanguage } from './Language'
 import { useEffect, useRef, useState } from 'react'
 
 const icons = {
@@ -53,10 +54,11 @@ export function IconButton({ name, label, onClick, className = '', ...props }) {
   )
 }
 export function Heading({ eyebrow, title, ja, japanese = false }) {
+  const { language } = useLanguage()
   return (
     <header className={`aw-heading ${japanese ? 'aw-heading-jp' : ''}`}>
       <p className="aw-eyebrow">{eyebrow}</p>
-      <h1 lang={japanese ? 'ja' : 'en'}>{title}</h1>
+      <h1 lang={japanese ? 'ja' : language}>{title}</h1>
       {ja && (
         <p className={japanese ? 'aw-heading-support' : 'aw-jp'} lang="ja">
           {ja}
@@ -84,15 +86,16 @@ export function Segments({ items, active, onChange, className = '', label }) {
 }
 
 export function LessonMode({ active, study, practice, children }) {
+  const { t, language } = useLanguage()
   return (
     <div className="aw-lesson-mode">
       <Segments
         items={[
-          { value: 'study', label: 'Study' },
-          { value: 'practice', label: 'Practice' },
+          { value: 'study', label: t("Study") },
+          { value: 'practice', label: t("Practice") },
         ]}
         active={active}
-        label="Study or practice"
+        label={t("Study or practice")}
         onChange={(mode) => {
           window.location.hash = mode === 'study' ? study : practice
         }}
@@ -191,7 +194,9 @@ export function Turn({ turn, index, compact = false, onSelect, selected, onListe
 // Only approved, downloaded recordings belong here. No generation API is used.
 export const approvedAudio = {}
 export function useAudio(notify) {
+  const { t, language } = useLanguage()
   const audioRef = useRef(null)
+  const currentId = useRef(null)
   const [playing, setPlaying] = useState(false)
   const stop = () => {
     if (audioRef.current) {
@@ -201,38 +206,40 @@ export function useAudio(notify) {
     setPlaying(false)
   }
   useEffect(() => () => audioRef.current?.pause(), [])
-  const play = async (id, speed = 1) => {
+  const play = async (id, speed = 1, restart = false) => {
     const source = approvedAudio[id]
     if (!source) {
       stop()
-      notify('音声は準備中です。文章を確認してから、専用の録音を追加します。')
+      notify(t("Audio is coming soon. Recordings will be added after the phrases are finalized."))
       return
     }
-    if (playing) {
+    if (currentId.current === id && audioRef.current && !audioRef.current.paused && !restart) {
       stop()
       return
     }
     const audio = new Audio(`${import.meta.env.BASE_URL}${source}`)
     audioRef.current?.pause()
     audioRef.current = audio
+    currentId.current = id
     audio.playbackRate = speed
     audio.preservesPitch = true
     audio.onended = () => setPlaying(false)
     audio.onerror = () => {
       setPlaying(false)
-      notify('音声を読み込めませんでした。もう一度お試しください。')
+      notify(t("The recording could not be loaded. Please try again."))
     }
     try {
       await audio.play()
-      setPlaying(true)
+      if (audioRef.current === audio && !audio.paused) setPlaying(true)
     } catch {
       setPlaying(false)
-      notify('音声を再生できませんでした。もう一度お試しください。')
+      notify(t("The recording could not be played. Please try again."))
     }
   }
   return { playing, play, stop }
 }
 export function Player({ item, label, speed, setSpeed, next, audio }) {
+  const { t, language } = useLanguage()
   const speeds = [0.75, 0.9, 1, 1.1]
   useEffect(() => {
     audio.stop()
@@ -267,13 +274,14 @@ export function Player({ item, label, speed, setSpeed, next, audio }) {
         >
           {audio.playing ? <span className="aw-pause" /> : <Icon name="whitePlay" />}
         </button>
-        <IconButton name="next" label="Next phrase" onClick={next} />
+        <IconButton name="next" label={t("Next phrase")} onClick={next} />
       </div>
     </section>
   )
 }
 
 export function Modal({ onClose, children, title }) {
+  const { t } = useLanguage()
   const ref = useRef(null)
   useEffect(() => {
     const dialog = ref.current
@@ -293,7 +301,7 @@ export function Modal({ onClose, children, title }) {
       <h2 id="aw-dialog-title">{title}</h2>
       {children}
       <Button variant="outline" onClick={onClose} className="aw-full">
-        閉じる
+        {t('Close')}
       </Button>
     </dialog>
   )

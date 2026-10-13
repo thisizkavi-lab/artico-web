@@ -1,11 +1,12 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './web/ArticoWeb'
+import { LanguageProvider } from './web/Language'
 import './styles.css'
 import './web/artico.css'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider><App /></LanguageProvider>
   </React.StrictMode>,
 )

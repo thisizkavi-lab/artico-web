@@ -1,0 +1,115 @@
+.aw-progress {
+  max-width: 1080px;
+}
+.aw-progress .aw-heading h1 {
+  font-size: 38px;
+}
+.aw-progress-intro {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 64ch;
+}
+.aw-progress-resume {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 28px;
+  border-radius: 16px;
+}
+.aw-progress-resume span {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.aw-progress-resume h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.aw-progress-resume p,
+.aw-progress-phrases p,
+.aw-progress-opened p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.aw-progress h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.aw-progress .aw-button {
+  font-family: inherit;
+}
+.aw-progress-phrases {
+  display: grid;
+  gap: 14px;
+}
+.aw-progress-phrases > .aw-button {
+  justify-self: start;
+}
+.aw-progress-ratings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: white;
+}
+.aw-progress-ratings > div {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aw-progress-ratings > div + div {
+  border-left: 1px solid var(--line);
+}
+.aw-progress-ratings strong {
+  font-size: 30px;
+  font-weight: 500;
+}
+.aw-progress-ratings span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.aw-progress-opened > h2 {
+  margin-bottom: 15px;
+}
+.aw-progress-opened > a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.aw-progress-opened > a strong {
+  font-weight: 500;
+  flex: 1;
+}
+.aw-progress-opened > a > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.aw-progress-saved {
+  display: flex;
+  justify-content: space-between;
+  color: var(--brand);
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  .aw-progress-resume {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .aw-progress-ratings > div {
+    padding: 18px 14px;
+  }
+  .aw-progress .aw-heading h1 {
+    font-size: 32px;
+  }
+}

@@ -11,7 +11,7 @@ export const learningStages = [
     count: '2 lessons',
     overview: '/courses?orientation',
     start: '/foundation/orientation/study',
-    action: 'はじめに進む',
+    action: 'Explore orientation',
   },
   {
     id: 'foundation',
@@ -25,7 +25,7 @@ export const learningStages = [
     count: '6 lessons',
     overview: '/courses?foundation',
     start: '/foundation/letters/study',
-    action: '基礎に進む',
+    action: 'Explore foundations',
   },
   {
     id: 'social',
@@ -39,7 +39,7 @@ export const learningStages = [
     count: '96 chapters',
     overview: '/courses?social',
     start: '/lesson/01/study',
-    action: '会話に進む',
+    action: 'Explore conversations',
   },
 ]
 

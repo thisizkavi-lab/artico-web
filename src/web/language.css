@@ -1,0 +1,30 @@
+.aw-language { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; color: var(--muted); }
+.aw-language select { color: var(--ink); font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; min-height: 36px; padding: 5px 7px; cursor: pointer; }
+.aw-language select:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.aw-language-profile { display: grid; gap: 10px; margin: 24px 0 8px; }
+.aw-language-profile select { width: 100%; min-height: 44px; }
+.aw-language-profile small { font-size: 13px; line-height: 1.7; }
+.aw-topbar > p { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.aw-app[data-language="ja"] { font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif; }
+.aw-app[data-language="ja"] :is(.aw-heading h1, .rl-resume h2, .rl-start-note p, .aw-progress-resume h2) { font-family: 'Noto Sans JP', -apple-system, 'Hiragino Kaku Gothic ProN', sans-serif; font-weight: 600; line-height: 1.55; letter-spacing: 0; }
+[data-language="ja"] .aw-heading h1 { font-size: clamp(25px, 2.9vw, 36px); }
+[data-language="ja"] :is(.ip-prose, .rc-list, .ip-context, .ip-note, .rl-intro, .ip-focus-context) { line-height: 1.95; word-break: normal; overflow-wrap: anywhere; }
+[data-language="ja"] :is(.ip-prose, .rc-list) { font-size: 15px; color: #526365; }
+[data-language="ja"] :is(.ip-phrase-text, .ip-list-phrase, .rf-spoken) { color: var(--ink); font-size: 20px; line-height: 1.5; }
+[data-language="ja"] .ip-section-heading h2 { font-size: 21px; line-height: 1.6; }
+[data-language="ja"] :is(.ip-kicker, .rl-kicker) { letter-spacing: .03em; line-height: 1.7; }
+.ip-phrase-support { margin: 8px 0 0; color: #627176; font-size: 13px; line-height: 1.8; }
+.rc-english-example { font-size: 18px; line-height: 1.65; color: var(--ink); }
+@media(max-width: 600px) {
+  .aw-topbar { gap: 9px; }
+  .aw-topbar .aw-language { margin-left: auto; }
+  .aw-language select { min-height: 36px; font-size: 12px; }
+  [data-language="ja"] .ip-section-heading h2 { font-size: 18px; }
+  [data-language="ja"] .ip-prose { font-size: 14px; }
+}
+
+.aw-app[data-language="ja"] .aw-heading h1 { font-size: clamp(25px, 2.9vw, 36px); }
+.aw-app[data-language="ja"] .rf-page .ip-lesson-heading h1 { font-family: inherit; font-size: clamp(25px, 3vw, 36px); line-height: 1.55; }
+[data-language="ja"] .aw-tagline { font-size: 12px; }
+.rf-practice-explanation { margin: 24px 0; max-width: 760px; }
+.aw-app[data-language="ja"] { line-break: strict; }

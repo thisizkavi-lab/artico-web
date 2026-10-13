@@ -1,3 +1,4 @@
+import japaneseCatalog from '../course/locales/ja/catalog.json'
 import chapters from '../course/catalog.json'
 import { socialFluencyChapters } from '../socialFluencyCurriculum'
 
@@ -10,19 +11,20 @@ const japaneseTitles = {
 }
 export const catalog = chapters.map((chapter) => ({
   ...chapter,
-  ja:
-    japaneseTitles[chapter.id] ??
+  goalJa: japaneseCatalog[chapter.id]?.goal,
+  ja: japaneseTitles[chapter.id] ??
+    japaneseCatalog[chapter.id]?.title ??
     socialFluencyChapters.find((item) => item.number === chapter.id)?.ja ??
     chapter.title,
 }))
 export const chapterById = Object.fromEntries(catalog.map((chapter) => [chapter.id, chapter]))
 export const groups = [
-  { start: 1, end: 12, title: '人とつながる', heading: '会話の土台' },
-  { start: 13, end: 24, title: '身のまわりのこと' },
-  { start: 25, end: 36, title: '予定と毎日' },
-  { start: 37, end: 48, title: '外出と移動' },
-  { start: 49, end: 72, title: '生活の場面' },
-  { start: 73, end: 96, title: '気持ちと仕事' },
+  { start: 1, end: 12, title: 'Connecting with people', heading: 'The conversation basics' },
+  { start: 13, end: 24, title: 'The world around you' },
+  { start: 25, end: 36, title: 'Plans & everyday life' },
+  { start: 37, end: 48, title: 'Out & about' },
+  { start: 49, end: 72, title: 'Everyday situations' },
+  { start: 73, end: 96, title: 'Feelings, work & interests' },
 ]
 
 export const scenes = {
@@ -123,14 +125,54 @@ export const twister = {
 }
 
 export const foundationSteps = [
-  { id: 'orientation', en: 'Why learn a language?', ja: '言葉と、学ぶ理由' },
-  { id: 'how-it-works', en: 'How Artico works', ja: 'Articoの使い方' },
-  { id: 'letters', en: 'Meet the 26 letters', ja: '大文字と小文字' },
-  { id: 'hear', en: 'Hear the alphabet', ja: '文字の名前を聞く' },
-  { id: 'write', en: 'Write the alphabet', ja: '文字を書いてみる' },
-  { id: 'sounds', en: 'Letters & sounds', ja: '文字と音の違い' },
-  { id: 'tongue-intro', en: 'Why tongue twisters?', ja: '口とリズムを練習する' },
-  { id: 'lr', en: 'L & R, in rhythm.', ja: 'ゆっくり、はっきり言う' },
+  {
+    id: 'orientation',
+    en: 'Why learn a language?',
+    description: 'Find your reason to learn.',
+    ja: '言葉と、学ぶ理由',
+  },
+  {
+    id: 'how-it-works',
+    en: 'How Artico works',
+    description: 'Understand Study, Practice, and your learning path.',
+    ja: 'Articoの使い方',
+  },
+  {
+    id: 'letters',
+    en: 'Meet the 26 letters',
+    description: 'Recognize uppercase and lowercase letters.',
+    ja: '大文字と小文字',
+  },
+  {
+    id: 'hear',
+    en: 'Hear the alphabet',
+    description: 'Listen to letter names and spell them aloud.',
+    ja: '文字の名前を聞く',
+  },
+  {
+    id: 'write',
+    en: 'Write the alphabet',
+    description: 'Build familiar letter shapes on paper.',
+    ja: '文字を書いてみる',
+  },
+  {
+    id: 'sounds',
+    en: 'Letters & sounds',
+    description: 'Notice how written letters relate to spoken sounds.',
+    ja: '文字と音の違い',
+  },
+  {
+    id: 'tongue-intro',
+    en: 'Why tongue twisters?',
+    description: 'Learn how to practice clearly, one movement at a time.',
+    ja: '口とリズムを練習する',
+  },
+  {
+    id: 'lr',
+    en: 'L & R, in rhythm.',
+    description: 'Build a tongue twister in short, clear chunks.',
+    ja: 'ゆっくり、はっきり言う',
+  },
 ]
 
 export const savedItems = Object.fromEntries(

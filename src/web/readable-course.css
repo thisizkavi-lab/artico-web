@@ -1,0 +1,154 @@
+.rc-source {
+  margin: 18px 0;
+}
+.rc-source > .ip-prose {
+  margin: 0;
+}
+.ip-section > .rc-source {
+  margin: 0;
+}
+.ip-section > .rc-source .rc-examples {
+  margin-bottom: 0;
+}
+.rc-source strong,
+.rc-list strong {
+  font-weight: 600;
+}
+.rc-examples {
+  margin: 14px 0 24px;
+}
+.rc-list {
+  padding-left: 23px;
+  color: var(--ink);
+  line-height: 1.85;
+}
+.rc-list li + li {
+  margin-top: 9px;
+}
+.rc-table {
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 20px 0;
+  background: white;
+}
+.rc-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+}
+.rc-table th,
+.rc-table td {
+  padding: 13px 17px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  min-width: 140px;
+}
+.rc-table th {
+  font-weight: 600;
+}
+.rc-table thead {
+  background: #f0f3f5;
+  font-size: 12px;
+  color: var(--muted);
+}
+.rc-table tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.rc-example {
+  border-left: 2px solid #b6c7e8;
+  padding: 8px 22px;
+  margin: 20px 0;
+  line-height: 1.85;
+}
+.rc-example p + p,
+.rc-sample-conversation p + p {
+  margin-top: 16px;
+}
+.rc-email {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+}
+.rc-practice-section {
+  margin-top: 28px;
+}
+.rc-practice-section > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.rc-answers {
+  margin-top: 18px;
+}
+.rc-answers > summary {
+  min-height: 44px;
+  cursor: pointer;
+  color: var(--brand);
+}
+.rc-sample-conversation {
+  padding: 16px 22px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.ip-next-lesson {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.ip-next-lesson strong {
+  color: var(--ink);
+  margin-left: auto;
+  font-weight: 600;
+}
+.ip-page .aw-learning-diagram {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 14px;
+}
+.ip-page .aw-diagram-title h2 {
+  font-size: 24px;
+}
+.ip-page .aw-learning-diagram :is(button, p, span, div) {
+  font-family: inherit;
+}
+.ip-page .aw-learning-diagram .aw-jp {
+  font-size: 14px;
+  color: var(--muted);
+}
+@media (max-width: 600px) {
+  .rc-table table {
+    font-size: 14px;
+  }
+  .rc-table th,
+  .rc-table td {
+    padding: 12px;
+    min-width: 120px;
+  }
+  .ip-page .aw-learning-diagram {
+    padding: 16px;
+  }
+  .ip-next-lesson {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .ip-next-lesson strong {
+    max-width: 60%;
+  }
+}
+
+.rc-phrase-art {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  align-self: center;
+  flex-shrink: 0;
+}

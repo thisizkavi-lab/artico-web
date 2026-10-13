@@ -1,0 +1,94 @@
+.aw-app.is-english-pilot {
+  --paper: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #263b3b;
+  --muted: #657273;
+  --line: #e2e6e5;
+  --brand: #285bcc;
+  --surface-strong: #eaf0fc;
+}
+.is-english-pilot .aw-sidebar {
+  width: 204px;
+  flex-basis: 204px;
+  padding: 26px 20px;
+  gap: 22px;
+}
+.is-english-pilot .aw-topbar {
+  height: 60px;
+  flex-basis: 60px;
+  border-bottom: 1px solid var(--line);
+}
+.is-english-pilot .aw-tagline,
+.is-english-pilot .aw-destinations a,
+.is-english-pilot .aw-course-status,
+.is-english-pilot .aw-sync strong,
+.is-english-pilot .aw-sync span,
+.is-english-pilot .aw-topbar p,
+.is-english-pilot .aw-topbar > span,
+.is-english-pilot .aw-mobile-nav a {
+  font-family: inherit;
+}
+.is-english-pilot .aw-destinations .is-active {
+  color: var(--brand);
+}
+.is-english-pilot .aw-my-course {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.is-english-pilot .aw-course-name {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.is-english-pilot .aw-sync {
+  gap: 12px;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .is-english-pilot .aw-sidebar {
+    width: 88px;
+    flex-basis: 88px;
+    padding: 23px 10px;
+    align-items: center;
+  }
+  .is-english-pilot .aw-wordmark {
+    font-size: 23px;
+  }
+  .is-english-pilot .aw-destinations {
+    width: 100%;
+  }
+  .is-english-pilot .aw-destinations a {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 4px;
+    font-size: 11px;
+  }
+  .is-english-pilot .aw-destinations .aw-icon {
+    margin-right: 0;
+  }
+  .is-english-pilot .aw-tagline,
+  .is-english-pilot .aw-sidebar > .aw-divider,
+  .is-english-pilot .aw-my-course,
+  .is-english-pilot .aw-course-name,
+  .is-english-pilot .aw-course-status,
+  .is-english-pilot .aw-sync strong,
+  .is-english-pilot .aw-sync span {
+    display: none;
+  }
+  .is-english-pilot .aw-sync {
+    padding: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .is-english-pilot .aw-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .is-english-pilot .aw-topbar {
+    height: 50px;
+    flex-basis: 50px;
+    padding: 0 18px;
+  }
+  .is-english-pilot .aw-topbar p {
+    font-size: 11px;
+  }
+}

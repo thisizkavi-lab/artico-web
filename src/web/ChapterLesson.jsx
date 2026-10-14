@@ -2,7 +2,6 @@ import { useLanguage } from './Language'
 import { useEffect, useMemo, useState } from 'react'
 import LessonExperience, { Glyph } from './LessonExperience'
 import { LessonDiagram } from './LessonDiagrams'
-import { chapterById } from './content'
 import { RichText, SourceContent } from './ContentBlocks'
 import './chapter.css'
 import './readable-course.css'
@@ -119,7 +118,6 @@ function makeModel(source, t) {
       },
     ],
   })
-  const next = chapterById[String(Number(source.id) + 1).padStart(2, '0')]
   return {
     id: source.id,
     title: source.title,
@@ -132,9 +130,6 @@ function makeModel(source, t) {
     Diagram: LessonDiagram,
     Scenarios: ChapterScenarios,
     scenarioSource: source,
-    next: next
-      ? { title: source.language === 'ja' ? next.ja : next.title, href: `#/lesson/${next.id}/study` }
-      : { title: t('Explore your progress'), href: '#/progress' },
   }
 }
 

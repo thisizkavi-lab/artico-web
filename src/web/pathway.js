@@ -64,3 +64,26 @@ export function getFoundationNavigation(id) {
         : learningStages[2].start,
   }
 }
+
+export function getLessonNavigation({ page, id }) {
+  if (page === 'foundation') {
+    const navigation = getFoundationNavigation(id)
+    if (!navigation) return null
+    return {
+      previous: navigation.previous,
+      next: navigation.next,
+      practice: `/foundation/${id}/${id === 'lr' ? 'chunks' : 'practice'}`,
+    }
+  }
+  if (page !== 'lesson' || !/^(?:0[1-9]|[1-8]\d|9[0-6])$/.test(id)) return null
+  const chapter = Number(id)
+  const chapterPath = (number) => `/lesson/${String(number).padStart(2, '0')}/study`
+  const foundationIds = learningStages.flatMap((stage) => stage.lessonIds)
+  return {
+    previous: chapter === 1
+      ? `/foundation/${foundationIds.at(-1)}/study`
+      : chapterPath(chapter - 1),
+    next: chapter === 96 ? '/progress' : chapterPath(chapter + 1),
+    practice: `/lesson/${id}/practice`,
+  }
+}

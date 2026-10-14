@@ -97,6 +97,12 @@ export function loadLearning(storage) {
   }
 }
 
+// Keep direct lesson links intact. Only the public entry point depends on progress.
+export function shouldShowLanding(hash, learning) {
+  const path = hash.replace(/^#/, '').split('?')[0].replace(/\/$/, '')
+  return path === '/landing' || (path === '' && !learning.last)
+}
+
 export function parseRoute(hash) {
   let path
   try {

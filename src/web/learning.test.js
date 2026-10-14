@@ -6,10 +6,25 @@ import {
   loadLearning,
   parseRoute,
   sanitizeLearning,
+  shouldShowLanding,
   toggleSaved,
   visit,
 } from './learning.js'
-import { getFoundationNavigation, getLearningStage, learningStages } from './pathway.js'
+import { getFoundationNavigation, getLearningStage, getLessonNavigation, learningStages } from './pathway.js'
+
+test('the public entry welcomes new guests without blocking returning learners or direct lesson links', () => {
+  const returning = visit(emptyLearning, '/lesson/02/practice/friend')
+  for (const hash of ['', '#', '#/', '#/?ref=shared']) {
+    assert.equal(shouldShowLanding(hash, emptyLearning), true)
+    assert.equal(shouldShowLanding(hash, returning), false)
+  }
+  for (const hash of ['#/home', '#/courses?foundation', '#/lesson/02/practice/friend', '#course']) {
+    assert.equal(shouldShowLanding(hash, emptyLearning), false)
+  }
+  assert.equal(shouldShowLanding('#/landing', returning), true)
+  assert.equal(shouldShowLanding('#/landing/', emptyLearning), true)
+  assert.equal(shouldShowLanding('', loadLearning({ getItem: () => '{bad json' })), true)
+})
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {
   const steps = learningStages.flatMap((stage) => stage.lessonIds)
@@ -39,6 +54,37 @@ test('new guests start at Orientation and returning guests keep their actual stu
     assert.equal((getLearningStage(path) ?? learningStages[0]).id, stage)
   })
   assert.equal(parseRoute(`#${learningStages[0].start}`).id, 'orientation')
+})
+
+test('all 104 lessons have a reversible path from Orientation through Chapter 96 in both modes', () => {
+  const chapters = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url)))
+  const routes = [
+    ...learningStages.flatMap((stage) => stage.lessonIds).map((id) => `/foundation/${id}/study`),
+    ...chapters.map((chapter) => `/lesson/${chapter.id}/study`),
+  ]
+  assert.equal(routes.length, 104)
+  assert.equal(new Set(routes).size, routes.length)
+  routes.forEach((path, index) => {
+    const route = parseRoute(`#${path}`)
+    const navigation = getLessonNavigation(route)
+    assert.equal(navigation.previous, routes[index - 1] ?? '/courses?orientation', path)
+    assert.equal(navigation.next, routes[index + 1] ?? '/progress', path)
+    const practice = parseRoute(`#${navigation.practice}`)
+    assert.equal(practice.id, route.id)
+    assert.equal(practice.page, route.page)
+    assert.notEqual(practice.view, 'study')
+    assert.deepEqual(getLessonNavigation(practice), navigation)
+    if (index < routes.length - 1) {
+      assert.equal(getLessonNavigation(parseRoute(`#${navigation.next}`)).previous, path)
+    }
+  })
+  for (const view of ['reader', 'words', 'phrases']) {
+    assert.equal(getLessonNavigation(parseRoute(`#/lesson/02/${view}/friend`)).next, '/lesson/03/study')
+  }
+  assert.equal(getLessonNavigation({ page: 'lesson', id: '97' }), null)
+  assert.equal(getLessonNavigation({ page: 'lesson', id: '2' }), null)
+  assert.equal(getLessonNavigation({ page: 'foundation', id: 'unknown' }), null)
+  assert.equal(getLessonNavigation({ page: 'home' }), null)
 })
 
 test('guest progress survives a storage round trip with the selected phrase and reading position', () => {

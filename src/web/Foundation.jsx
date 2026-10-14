@@ -4,10 +4,10 @@ import { useLanguage } from './Language'
 import { useEffect, useRef, useState } from 'react'
 import { foundationReading, twisterGuidance } from '../course/foundations-en'
 import { alphabet, tongueGroups, allTwisters } from '../data'
-import { foundationSteps } from './content'
 import { getFoundationNavigation } from './pathway'
 import { TheoryAudioSample, YouTubeLessonPlayer } from './FoundationContent'
 import { Glyph } from './LessonExperience'
+import LessonFooter from './LessonFooter'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -20,10 +20,6 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
   const navigation = getFoundationNavigation(route.id)
   const practice = route.view !== 'study'
   const contents = useRef(null)
-  const previous = foundationSteps.find((step) =>
-    navigation.previous.includes(`/foundation/${step.id}/`),
-  )
-  const next = foundationSteps.find((step) => navigation.next.includes(`/foundation/${step.id}/`))
   return (
     <div className="ip-page rf-page" lang={language}>
       <header className="ip-lesson-heading">
@@ -69,16 +65,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
         )}
       </div>
       {children}
-      <footer className="rf-lesson-footer">
-        <a href={`#${navigation.previous}`}>
-          <Glyph name="back" size={17} />
-          {previous ? t('Previous: {title}', { title: language === 'ja' ? previous.ja : previous.en }) : t(navigation.stage.title)}
-        </a>
-        <a href={`#${navigation.next}`}>
-          {t('Next: {title}', { title: (language === 'ja' ? next?.ja : next?.en) ?? (language === 'ja' ? 'あいさつ' : 'Greetings') })}
-          <Glyph name="arrow" size={17} />
-        </a>
-      </footer>
+      <LessonFooter route={route} practice={practice} practicePath={practicePath} />
     </div>
   )
 }
@@ -435,17 +422,7 @@ export default function Foundation({ route, learning, update }) {
       sections={model.sections}
     >
       {route.view === 'study' ? (
-        <>
-          <Reading model={model} />
-          <div className="ip-study-end">
-            <div>
-              <h2>{t("Give it a try.")}</h2>
-              <p>{t("Take one small idea into practice.")}</p>
-            </div>
-            <a className="ip-primary" href={`#/foundation/${route.id}/practice`}> {t("Go to Practice")} <Glyph name="arrow" />
-            </a>
-          </div>
-        </>
+        <Reading model={model} />
       ) : (
         <FoundationPractice id={route.id} learning={learning} update={update} />
       )}

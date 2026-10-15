@@ -1,6 +1,6 @@
 import { useLanguage } from './Language'
-import { useState } from 'react'
-import { Segments } from './components'
+import { useRef, useState } from 'react'
+import { Segments, Modal } from './components'
 
 const art = (name) => `${import.meta.env.BASE_URL}assets/course/word-${name}.svg`
 function DiagramTitle({ title, ja }) {
@@ -230,20 +230,19 @@ function Home() {
 function Directions() {
   const { t, language } = useLanguage()
   const [destination, setDestination] = useState('clinic')
+  const [expanded, setExpanded] = useState(false)
+  const enlargeButton = useRef(null)
+  const closeMap = () => {
+    setExpanded(false)
+    requestAnimationFrame(() => enlargeButton.current?.focus({ preventScroll: true }))
+  }
   const routes = { clinic: 'M300 265V125', cafe: 'M300 265V170H400', station: 'M300 265V70H130' }
   const answers = {
     clinic: ['Go straight. Go past Pine.', t("Continue along Main and pass Pine.")],
     cafe: ['Turn right at Pine. Half a block.', t("Turn onto Pine and continue half a block.")],
     station: ['Two blocks to Cedar. Then turn left.', t("Continue to Cedar, then turn left.")],
   }
-  return (
-    <section className="aw-learning-diagram">
-      <DiagramTitle
-        title={t("Start here. Follow the route.")}
-        ja={t("You are at Main and Oak, facing north. This is the chapter’s invented map.")}
-      />
-      <div className="aw-direction-map">
-        <svg
+  const map = (<svg
           viewBox="0 0 560 320"
           role="img"
           aria-label={`Map of Main, Oak, Pine and Cedar Streets; route to the ${destination}`}
@@ -298,8 +297,23 @@ function Directions() {
           <g fontFamily="Hanken Grotesk,Arial,sans-serif" fontSize="16" fill="#253C38">
             <text x="324" y="294"> {t("You are here")} </text>
           </g>
-        </svg>
+        </svg>)
+  return (
+    <section className="aw-learning-diagram">
+      <DiagramTitle
+        title={t("Start here. Follow the route.")}
+        ja={t("You are at Main and Oak, facing north. This is the chapter’s invented map.")}
+      />
+      <div className="aw-direction-map">
+        {map}
+
       </div>
+      <button ref={enlargeButton} className="ip-text-button" type="button" onClick={() => setExpanded(true)}>{t('Enlarge map')}</button>
+      {expanded && <Modal title={t('Follow the route')} onClose={closeMap}>
+        <p className="ip-context">{t('Scroll sideways to explore the map. Start at Main and Oak, facing north.')}</p>
+        <div className="aw-map-detail" role="region" tabIndex={0} aria-label={t('Enlarged map')}>{map}</div>
+        <p className="aw-map-route" lang="en">{answers[destination][0]}</p>
+      </Modal>}
       <Segments
         items={[
           { value: 'clinic', label: 'Clinic' },

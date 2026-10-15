@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { termArt } from './term-art.mjs'
 import { plain } from './lesson-parser.mjs'
+import { normalizeTerm, vocabularyMeanings } from './vocabulary-meanings.mjs'
 
 // Only explicit teaching examples are collected. Ordinary prose is never split
 // into invented speaking lines. IDs use content + section, not array position.
@@ -9,7 +10,9 @@ export function addPhraseBank(lesson) {
     byKey = new Map(),
     ids = new Set()
   const add = (en, section, context, extra = {}) => {
-    en = en.trim().replace(/^“|”$/g, '')
+    en = en.trim()
+    // Strip only a complete enclosing quote pair, never the opening of a quoted title.
+    if (en.startsWith('“') && en.endsWith('”')) en = en.slice(1, -1)
     if (!en || /^(?:Check|Outcome|Your goal|Sample|Support|Note):?$/.test(en)) return null
     const key = `${section.id}|${en.toLowerCase()}`
     if (byKey.has(key)) return byKey.get(key)
@@ -88,8 +91,9 @@ export function addPhraseBank(lesson) {
           block.phraseIds.push(...item.phraseIds)
         }
       } else if (lesson.id === '53' && section.title === 'Connected model' && block.runs) {
+        if (!plain(block.runs).startsWith('“')) continue
         block.phraseIds = [
-          add(plain(block.runs), section, 'Presenter · Connected model', {
+          add(plain(block.runs).replace(/^“|”$/g, ''), section, 'Presenter · Connected model', {
             id: block.id,
             kind: 'phrase',
           }),
@@ -120,7 +124,7 @@ export function addPhraseBank(lesson) {
     add(
       word.en,
       { id: 'words', title: 'Words & phrases' },
-      equivalent?.context ?? `A useful word for ${lesson.title.toLowerCase()}.`,
+      vocabularyMeanings[normalizeTerm(word.en)] ?? equivalent?.context ?? (() => { throw new Error(`Missing English meaning: ${lesson.id} / ${word.en}`) })(),
       {
         id: word.id,
         art: word.art,

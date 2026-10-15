@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import LessonExperience, { Glyph } from './LessonExperience'
 import { LessonDiagram } from './LessonDiagrams'
 import { RichText, SourceContent } from './ContentBlocks'
+import { pairScenarioResponses } from './scenarioResponses'
 import './chapter.css'
 import './readable-course.css'
 
@@ -16,7 +17,7 @@ function ChapterScenarios({ source, learning, update }) {
   return (
     <section className="ip-your-turn">
       <p className="ip-kicker">{t("02 / PUT IT INTO WORDS")}</p>
-      <h2>{t("When the phrases feel familiar.")}</h2>
+      <h2 id="ip-situations-heading" tabIndex={-1}>{t("When the phrases feel familiar.")}</h2>
       <p className="ip-prose"> {t("Try the situations in your own words. Use the sample responses when you need a little support.")} </p>
       {source.practice.map((section) => {
         let answering = false
@@ -26,6 +27,8 @@ function ChapterScenarios({ source, learning, update }) {
           if (block.type === 'answerHeading' || block.type === 'answer') answering = true
           ;(answering ? answers : prompts).push(block)
         }
+        const paired = pairScenarioResponses(prompts, answers)
+        const sharedAnswers = paired ? answers.filter((block) => block !== paired.block && block.type !== 'answerHeading') : answers
         return (
           <div key={section.id} className="rc-practice-section">
             <h3>{section.title}</h3>
@@ -43,6 +46,10 @@ function ChapterScenarios({ source, learning, update }) {
                         <Glyph name="chevron" />
                       </summary>
                       <div className="ip-scenario-body">
+                        {paired && <details className="ip-sample">
+                          <summary>{t('Show a sample response')}</summary>
+                          <p><RichText runs={paired.responses[i]} /></p>
+                        </details>}
                         <label> {t("Your notes")} <span>{t("(optional)")}</span>
                           <textarea
                             rows={3}
@@ -65,10 +72,10 @@ function ChapterScenarios({ source, learning, update }) {
                 <SourceContent key={block.id} block={block} examples={false} />
               ),
             )}
-            {answers.length > 0 && (
+            {sharedAnswers.length > 0 && (
               <details className="ip-sample rc-answers">
-                <summary>{t("Show sample responses")}</summary>
-                {answers.map((block) => (
+                <summary>{t(paired ? 'More guidance' : 'Show sample responses')}</summary>
+                {sharedAnswers.map((block) => (
                   <SourceContent key={block.id} block={block} examples={false} />
                 ))}
               </details>
@@ -98,8 +105,10 @@ function makeModel(source, t) {
         : { type: 'source', id: block.id, source: block },
     ),
   }))
+  // Show the complete email and its purpose before the delivery vocabulary.
+  if (source.id === '93' && sections.length > 1) sections.unshift(...sections.splice(1, 1))
   if (source.diagram)
-    sections.push({
+    sections.splice(Math.min({ calendar: 2, family: 1, sequence: 0, presentation: 2, home: 2, directions: 2, body: 1 }[source.diagram] ?? 1, sections.length), 0, {
       id: 'visual',
       title: t('Look & understand'),
       short: t('Visual guide'),

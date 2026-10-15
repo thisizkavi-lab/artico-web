@@ -144,7 +144,7 @@ function TwisterCollection() {
             }
           </h3>
           {group.items.map((item) => (
-            <article key={item.id} className="rf-twister-example">
+            <TwisterDetails key={item.id} item={item}>
               <span className="ip-register">{item.target}</span>
               <p className="rf-spoken" lang="en">{item.phrase}</p>
               <p className="ip-context">{twisterGuidance[item.id][0]}</p>
@@ -153,7 +153,7 @@ function TwisterCollection() {
                 target={item.target}
                 src={`${import.meta.env.BASE_URL}audio/${item.id}.wav`}
               />
-            </article>
+            </TwisterDetails>
           ))}
         </section>
       ))}
@@ -161,13 +161,34 @@ function TwisterCollection() {
   )
 }
 
+function TwisterDetails({ item, children }) {
+  const [open, setOpen] = useState(item.id === allTwisters[0].id)
+  return <details className="rf-twister-example rf-twister-choice" open={open} onToggle={(event) => setOpen(event.currentTarget.open)}>
+    <summary><span><small>{item.target}</small><span lang="en">{item.phrase}</span></span><Glyph name="chevron" size={18} /></summary>
+    {open && <div className="rf-twister-body">{children}</div>}
+  </details>
+}
 
 function LocalizedTwister({ block }) {
   const item = allTwisters.find((item) => item.id === block.id)
-  return <article className="rf-twister-example">
+  return <TwisterDetails item={item}>
     {block.blocks.map((part) => <SourceContent key={part.id} block={part} examples={false} />)}
     <TheoryAudioSample phrase={item.phrase} target={item.target} src={`${import.meta.env.BASE_URL}audio/${item.id}.wav`} />
-  </article>
+  </TwisterDetails>
+}
+
+function OrientationPreview() {
+  const { t } = useLanguage()
+  return <aside className="rf-quick-start" aria-labelledby="quick-start-heading">
+    <p className="ip-kicker">{t('A SIMPLE WAY TO BEGIN')}</p>
+    <h2 id="quick-start-heading">{t('Understand it. Then say it.')}</h2>
+    <div className="rf-mode-demo">
+      <div><span className="ip-register">01 · {t('Study')}</span><p className="rf-spoken" lang="en">Good morning.</p><p className="ip-context">{t('A greeting when you meet someone in the morning.')}</p></div>
+      <div><span className="ip-register">02 · {t('Practice')}</span><p>{t('Say it aloud. Look away and try it again. Then use it in a short conversation.')}</p></div>
+    </div>
+    <a className="ip-primary" href="#/lesson/01/study">{t('Try the first conversation')}<Glyph name="arrow" /></a>
+    <p className="ip-context">{t('Or keep reading below. You can return to this guide whenever you need it.')}</p>
+  </aside>
 }
 
 export function Reading({ model }) {
@@ -422,7 +443,16 @@ export default function Foundation({ route, learning, update }) {
       sections={model.sections}
     >
       {route.view === 'study' ? (
-        <Reading model={model} />
+        <>
+          {['orientation', 'how-it-works'].includes(route.id) && <OrientationPreview />}
+          {route.id === 'tongue-intro' && <aside className="rf-quick-start">
+            <h2>{t('Clarity before speed.')}</h2>
+            <p>{t('Choose one sound. Listen, repeat a short chunk, and add the next part when it feels comfortable.')}</p>
+            <a className="ip-primary" href="#/foundation/tongue-intro/practice">{t('Try one tongue twister')}<Glyph name="arrow" /></a>
+            <p className="ip-context">{t('The complete guide and all examples are below.')}</p>
+          </aside>}
+          <Reading model={model} />
+        </>
       ) : (
         <FoundationPractice id={route.id} learning={learning} update={update} />
       )}

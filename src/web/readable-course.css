@@ -152,3 +152,18 @@
   align-self: center;
   flex-shrink: 0;
 }
+.aw-map-detail { overflow-x: auto; margin: 16px 0; border: 1px solid var(--line); border-radius: 12px; }
+.aw-map-detail svg { display: block; min-width: 560px; width: 100%; }
+.aw-dialog:has(.aw-map-detail) { width: min(680px, calc(100vw - 24px)); max-width: none; }
+.aw-map-route { font-size: 20px; line-height: 1.5; margin-bottom: 20px; }
+.aw-family-diagram .aw-family-branch { opacity: 1; }
+@media (max-width: 600px) {
+  .aw-family-diagram .aw-family-branch { display: grid; grid-template-columns: minmax(0, 1fr) 18px 52px; gap: 6px; padding: 12px; align-items: center; }
+  .aw-family-diagram .aw-family-branch > .aw-caption { grid-column: 1 / -1; font-size: 12px; }
+  .aw-family-diagram .aw-family-branch .aw-family-parents { margin: 0; justify-content: flex-start; gap: 4px; }
+  .aw-family-diagram .aw-family-parents > span { padding: 4px 6px; font-size: 14px; }
+  .aw-family-diagram .aw-family-link { width: 18px; height: 1px; }
+  .aw-family-diagram .aw-family-child { font-size: 20px; line-height: 1.4; }
+}
+.aw-learning-diagram .aw-segments .is-active { background: var(--brand); color: white; }
+.aw-family-diagram .aw-family-branch.is-connected { background: var(--surface-strong); }

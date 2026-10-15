@@ -40,6 +40,7 @@ export function sanitizePracticeSets(input) {
                   ? set.session.index
                   : 0,
               active: set.session?.active === true && queue.length > 0,
+              completed: set.session?.completed === true && queue.length > 0,
             },
           },
         ]
@@ -47,34 +48,41 @@ export function sanitizePracticeSets(input) {
   )
 }
 
-export function getPracticeSet(stored, items, legacy) {
+export function getPracticeSet(stored, items, legacy, catalog = {}) {
   const ids = items.map((item) => item.id)
   const allowed = new Set(ids)
+  const resolve = (id) => (catalog.aliases?.[id] ?? [id]).filter((value) => allowed.has(value))
+  const migrate = (values) => [...new Set((values ?? []).flatMap(resolve))]
   // Preserve the old rehearsal position by identity when the course gains
   // additional examples. It appears as a resumable set in the new chooser.
   const previousSession =
     !stored && Number.isInteger(legacy?.index)
       ? { ids: legacy.ids, index: legacy.index, active: false }
       : stored?.session
-  const queue = (previousSession?.ids ?? []).filter((id) => allowed.has(id))
+  const queue = migrate(previousSession?.ids)
   const current = previousSession?.ids?.[previousSession.index]
   return {
-    selected: stored?.selected ? stored.selected.filter((id) => allowed.has(id)) : ids,
-    ratings: stored?.ratings ?? {},
+    selected: stored?.selected ? migrate(stored.selected) : (catalog.starterIds ?? ids),
+    ratings: Object.fromEntries(Object.entries(stored?.ratings ?? {}).flatMap(([id, rating]) =>
+      resolve(id).map((target) => [target, stored?.ratings?.[target] ?? rating]))),
     filter: stored?.filter ?? 'all',
     search: stored?.search ?? '',
     session: {
       ids: queue,
-      index: Math.max(0, queue.indexOf(current)),
+      index: Math.max(0, queue.indexOf(resolve(current)[0])),
       active: Boolean(previousSession?.active && queue.length),
+      completed: Boolean(previousSession?.completed && queue.length),
     },
   }
 }
 
-export function startPractice(set, items) {
+export function startPractice(set, items, orderedIds) {
   // Snapshot in lesson order. Later ratings and checklist edits do not change this round.
-  const ids = items.filter((item) => set.selected.includes(item.id)).map((item) => item.id)
-  return { ...set, session: { ids, index: 0, active: ids.length > 0 } }
+  const allowed = new Set(items.map((item) => item.id))
+  const ids = orderedIds
+    ? [...new Set(orderedIds)].filter((id) => allowed.has(id))
+    : items.filter((item) => set.selected.includes(item.id)).map((item) => item.id)
+  return { ...set, session: { ids, index: 0, active: ids.length > 0, completed: false } }
 }
 
 export function stepPractice(set, direction) {
@@ -82,7 +90,10 @@ export function stepPractice(set, direction) {
   if (!count) return set
   return {
     ...set,
-    session: { ...set.session, index: (set.session.index + direction + count) % count },
+    session: { ...set.session,
+      index: Math.min(count - 1, Math.max(0, set.session.index + direction)),
+      completed: direction > 0 && set.session.index === count - 1,
+    },
   }
 }
 

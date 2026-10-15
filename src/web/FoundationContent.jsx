@@ -1026,7 +1026,10 @@ export function TheoryAudioSample({ phrase, target, src }) {
 
   const rewind = () => {
     const audio = audioRef.current
-    if (audio && src) audio.currentTime = Math.max(0, audio.currentTime - 10)
+    if (audio && src) {
+      audio.currentTime = 0
+      if (audio.paused) toggle()
+    }
   }
 
   const cycleSpeed = () => {
@@ -1060,7 +1063,7 @@ export function TheoryAudioSample({ phrase, target, src }) {
           className="theory-audio-play"
           onClick={toggle}
           disabled={!src}
-          aria-label={src ? `Play: ${phrase}` : `Audio coming soon: ${phrase}`}
+          aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}
         >
           <PlayIcon pause={playing} />
         </button>
@@ -1081,14 +1084,14 @@ export function TheoryAudioSample({ phrase, target, src }) {
         <span style={{ width: `${progress}%` }} />
       </div>
       <div className="theory-audio-controls">
-        <button type="button" onClick={rewind} disabled={!src} aria-label={t("Back 10 seconds")}>
-          ↶ <span>-10s</span>
+        <button type="button" onClick={rewind} disabled={!src} aria-label={t('Replay')}>
+          ↶ <span>{t('Replay')}</span>
         </button>
         <button
           type="button"
           onClick={cycleSpeed}
           disabled={!src}
-          aria-label={`Playback speed ${speedLabel}`}
+          aria-label={t('Playback speed {speed}', { speed: speedLabel })}
         >
           {speedLabel}
         </button>

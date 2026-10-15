@@ -19,12 +19,16 @@ export const catalog = chapters.map((chapter) => ({
 }))
 export const chapterById = Object.fromEntries(catalog.map((chapter) => [chapter.id, chapter]))
 export const groups = [
-  { start: 1, end: 12, title: 'Connecting with people', heading: 'The conversation basics' },
-  { start: 13, end: 24, title: 'The world around you' },
-  { start: 25, end: 36, title: 'Plans & everyday life' },
-  { start: 37, end: 48, title: 'Out & about' },
-  { start: 49, end: 72, title: 'Everyday situations' },
-  { start: 73, end: 96, title: 'Feelings, work & interests' },
+  { start: 1, end: 10, title: 'Conversation basics' },
+  { start: 11, end: 19, title: 'People & plans' },
+  { start: 20, end: 25, title: 'Food & drink' },
+  { start: 26, end: 33, title: 'Free time & interests' },
+  { start: 34, end: 44, title: 'Shopping & services' },
+  { start: 45, end: 55, title: 'Study & work' },
+  { start: 56, end: 64, title: 'At home' },
+  { start: 65, end: 79, title: 'Travel & getting around' },
+  { start: 80, end: 87, title: 'Health & care' },
+  { start: 88, end: 96, title: 'Communication & media' },
 ]
 
 export const scenes = {

@@ -169,9 +169,11 @@
 }
 .ip-reading {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 42px;
 }
 .ip-section {
+  min-width: 0;
   scroll-margin-top: 84px;
   display: flex;
   flex-direction: column;

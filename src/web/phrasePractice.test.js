@@ -75,8 +75,8 @@ test('selection does not change familiarity and an active set stays fixed as rat
   const deselected = togglePracticePhrase(rated, 'ch02-p1')
   assert.deepEqual(deselected.session, active.session)
   assert.equal(deselected.ratings['ch02-p1'], 'familiar')
-  assert.equal(stepPractice(stepPractice(stepPractice(rated, 1), 1), 1).session.index, 0)
-  assert.equal(stepPractice(rated, -1).session.index, 2)
+  assert.equal(stepPractice(stepPractice(stepPractice(rated, 1), 1), 1).session.completed, true)
+  assert.equal(stepPractice(rated, -1).session.index, 0)
   assert.equal(
     startPractice({ ...initial, selected: [] }, introductionPhrases).session.active,
     false,
@@ -91,10 +91,10 @@ test('an older rehearsal position remains resumable after new phrases are added'
     set.selected,
     items.map((item) => item.id),
   )
-  assert.deepEqual(set.session, { ...legacy, active: false })
+  assert.deepEqual(set.session, { ...legacy, active: false, completed: false })
   assert.equal(set.session.ids[set.session.index], 'ch01-line9')
 
-  const chosen = { ...set, selected: [], session: { ids: [], index: 0, active: false } }
+  const chosen = { ...set, selected: [], session: { ids: [], index: 0, active: false, completed: false } }
   assert.deepEqual(getPracticeSet(chosen, items, legacy).session, chosen.session)
   assert.deepEqual(getPracticeSet(chosen, items, legacy).selected, [])
 })
@@ -140,7 +140,7 @@ test('empty selections, ratings, and an active position survive reload with corr
   const restored = getPracticeSet(loaded.practiceSets['02'], introductionPhrases)
   assert.deepEqual(restored.selected, [])
   assert.deepEqual(restored.ratings, { 'ch02-p1': 'familiar' })
-  assert.deepEqual(restored.session, { ids: ['ch02-p1', 'ch02-p6'], index: 1, active: true })
+  assert.deepEqual(restored.session, { ids: ['ch02-p1', 'ch02-p6'], index: 1, active: true, completed: false })
   assert.equal(restored.search, 'Jordan')
   assert.equal(loaded.practiceSets.invalid, undefined)
   assert.deepEqual(
@@ -148,7 +148,7 @@ test('empty selections, ratings, and an active position survive reload with corr
       { selected: ['ch02-p999'], session: { ids: ['ch02-p999'], index: 0, active: true } },
       introductionPhrases,
     ).session,
-    { ids: [], index: 0, active: false },
+    { ids: [], index: 0, active: false, completed: false },
   )
 })
 
@@ -166,4 +166,21 @@ test('new stable phrase URLs and saved phrases coexist with legacy links', () =>
   })
   assert.equal(saved.savedDetails['ch02-p15'].en, 'I go by Dan.')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line10').line, 'ch02-line10')
+})
+
+test('finishing a set persists a recap and repeating starts at the beginning', () => {
+  let set = startPractice({ ...getPracticeSet(undefined, introductionPhrases), selected: ['ch02-p1'] }, introductionPhrases)
+  set = stepPractice(set, 1)
+  const stored = sanitizeLearning({ ...emptyLearning, practiceSets: { '02': set } }).practiceSets['02']
+  const restored = getPracticeSet(stored, introductionPhrases)
+  assert.equal(restored.session.completed, true)
+  assert.equal(restored.session.index, 0)
+  assert.equal(startPractice(restored, introductionPhrases).session.completed, false)
+})
+
+test('recommended scenes and repeated sets retain their authored turn order', () => {
+  const set = getPracticeSet(undefined, introductionPhrases)
+  const ids = ['ch02-p6', 'ch02-p2', 'ch02-p1']
+  assert.deepEqual(startPractice(set, introductionPhrases, ids).session.ids, ids)
+  assert.deepEqual(startPractice(set, introductionPhrases, ids).selected, set.selected)
 })

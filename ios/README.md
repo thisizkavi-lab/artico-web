@@ -40,10 +40,12 @@ Command-line simulator build:
 ```sh
 xcodebuild -project Artico.xcodeproj -scheme Artico \
   -destination 'generic/platform=iOS Simulator' \
-  -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO build
+  -derivedDataPath /tmp/ArticoDerivedData CODE_SIGNING_ALLOWED=NO build
 ```
 
 Content edits flow from the existing web sources through `pnpm run lessons` and `pnpm run ios:content`. The native renderer keeps explanations, conversation turns, vocabulary, tables, and examples separate. The practice catalog uses the web's canonical choices and ordered starters.
+
+Keep command-line build products and test result bundles outside `ios/`. This directory is also a local Swift package; build output inside it can repeatedly trigger Xcode's package watcher. Xcode's normal, default Derived Data location is suitable.
 
 ## Validation priorities
 

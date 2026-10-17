@@ -11,11 +11,11 @@ final class AudioController: NSObject, AVAudioPlayerDelegate {
     private(set) var playing = false
     private(set) var error: String?
     var speed: Float = 1 { didSet { player?.rate = speed } }
-    var repeatPhrase = false
+    var repeatPhrase = false { didSet { if !repeatPhrase { replayTask?.cancel(); replayTask = nil } } }
     var responsePause: Double = 2
     @ObservationIgnored private var player: AVAudioPlayer?
     @ObservationIgnored private var replayTask: Task<Void, Never>?
-    @ObservationIgnored private var speech = AVSpeechSynthesizer()
+    @ObservationIgnored private var speech: AVSpeechSynthesizer?
     @ObservationIgnored private var interruptionObserver: NSObjectProtocol?
     @ObservationIgnored private var routeObserver: NSObjectProtocol?
 
@@ -53,7 +53,7 @@ final class AudioController: NSObject, AVAudioPlayerDelegate {
         } catch { self.error = "Recording unavailable"; playing = false }
     }
     func pause() {
-        replayTask?.cancel(); replayTask = nil; player?.pause(); speech.stopSpeaking(at: .immediate); playing = false
+        replayTask?.cancel(); replayTask = nil; player?.pause(); speech?.stopSpeaking(at: .immediate); playing = false
         #if os(iOS)
         MPNowPlayingInfoCenter.default().nowPlayingInfo?[MPNowPlayingInfoPropertyPlaybackRate] = 0
         #endif
@@ -76,14 +76,17 @@ final class AudioController: NSObject, AVAudioPlayerDelegate {
     }
     func speakLetter(_ letter: String) {
         stop()
+        guard let voice = AVSpeechSynthesisVoice(language: "en-US") else { error = "englishVoiceUnavailable"; return }
+        error = nil
+        if speech == nil { speech = AVSpeechSynthesizer() }
         let utterance = AVSpeechUtterance(string: letter)
         #if os(iOS)
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
         try? AVAudioSession.sharedInstance().setActive(true)
         #endif
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.voice = voice
         utterance.rate = 0.42
-        speech.speak(utterance)
+        speech?.speak(utterance)
     }
     nonisolated func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         Task { @MainActor [weak self] in

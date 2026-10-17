@@ -7,7 +7,7 @@ struct PracticeScreen: View {
     let lesson: Lesson
     let goToSituations: () -> Void
     let viewStudy: (String) -> Void
-    @State private var showingSession = false
+    @Binding var showingSession: Bool
     @State private var selector: PracticeSheet?
     @State private var hidden = false
     @State private var situationSelected = false
@@ -15,11 +15,11 @@ struct PracticeScreen: View {
     private var starter: [Phrase] { lesson.starterIds.compactMap(lesson.phrase) }
     private var validIDs: Set<String> { Set(lesson.phrases.map(\.id)) }
     var body: some View {
-        VStack(alignment: .leading, spacing: 28) {
+        LazyVStack(alignment: .leading, spacing: 28) {
             if showingSession, session.completed { completion }
             else if showingSession, let id = session.currentID, let phrase = lesson.phrase(id) { focusedPhrase(phrase) }
             else { entry }
-            if !lesson.practice.isEmpty {
+            if !lesson.practice.isEmpty && (!showingSession || session.completed) {
                 VStack(alignment: .leading, spacing: 12) {
                     Kicker(text: learning.text("02 / PUT IT INTO WORDS", "02 / 自分の言葉で伝える"))
                     Text(learning.text("When the phrases feel familiar.", "表現に慣れてきたら。")) .font(.title2.weight(.semibold))
@@ -29,6 +29,7 @@ struct PracticeScreen: View {
             }
         }
         .sheet(item: $selector) { _ in PhraseSelectionSheet(lesson: lesson) { ids in start(ids) } }
+        .task(id: lesson.id) { learning.updateSession(lesson.id) { $0.reconcile(validIDs: validIDs) } }
         .onChange(of: session.currentID) { _, _ in hidden = false; audio.stop() }
         .onDisappear { audio.stop() }
     }
@@ -44,10 +45,6 @@ struct PracticeScreen: View {
                     Kicker(text: learning.text("01 / SAY IT AGAIN", "01 / 繰り返し声に出す"))
                     Text(learning.text("Start with a short set.", "まずは、短いセットから。")) .font(.title2.weight(.semibold))
                     Text(learning.text("Say each expression aloud. Repeat the ones you need.", "一つずつ声に出しましょう。必要な表現を繰り返します。")).font(.subheadline).foregroundStyle(ArticoTheme.muted)
-                    ForEach(starter) { phrase in
-                        Text(phrase.en).font(.body.weight(.medium)).fixedSize(horizontal: false, vertical: true)
-                        Divider()
-                    }
                     Button(learning.text("Practice \(starter.count) expressions", "\(starter.count)個の表現を練習")) { start(lesson.starterIds) }
                         .buttonStyle(PrimaryButton()).disabled(starter.isEmpty).accessibilityIdentifier("start-practice")
                     if !session.queue.isEmpty {
@@ -55,6 +52,13 @@ struct PracticeScreen: View {
                             if session.completed { start(session.queue) } else { showingSession = true }
                         }.font(.subheadline).frame(minHeight: 44).accessibilityIdentifier("resume-practice")
                     }
+                    DisclosureGroup(learning.text("Preview the expressions", "練習する表現を見る")) {
+                        VStack(alignment: .leading, spacing: 14) {
+                            ForEach(starter) { phrase in
+                                Text(phrase.en).font(.body.weight(.medium)).fixedSize(horizontal: false, vertical: true)
+                            }
+                        }.padding(.top, 12)
+                    }.font(.subheadline)
                 }
             }
             Button { selector = .phrases } label: {
@@ -96,13 +100,6 @@ struct PracticeScreen: View {
                 }
                 Text(learning.text("Your own reflection. It stays in this set.", "自分の感覚で選びます。表現はこのセットに残ります。")).font(.caption).foregroundStyle(ArticoTheme.muted)
             }
-            HStack(spacing: 16) {
-                Button { learning.updateSession(lesson.id) { $0.previous() } } label: { Image(systemName: "arrow.left").frame(width: 48, height: 48) }
-                    .buttonStyle(.bordered).disabled(session.index == 0).accessibilityLabel(learning.text("Previous phrase", "前の表現"))
-                Button(learning.text(session.index == session.queue.count - 1 ? "Finish set" : "Next phrase", session.index == session.queue.count - 1 ? "セットを終える" : "次の表現")) {
-                    learning.updateSession(lesson.id) { $0.next() }; audio.stop()
-                }.buttonStyle(PrimaryButton()).accessibilityIdentifier("next-phrase")
-            }
             Button(learning.text("View in Study", "学習で確認する")) { viewStudy(phrase.section == "words" ? "\(lesson.id)-words" : phrase.section) }.font(.subheadline).frame(minHeight: 44)
         }
     }
@@ -132,6 +129,22 @@ struct PracticeScreen: View {
                 Text(learning.text("Your ratings are your own reflection, not a test score.", "評価は、自分で振り返るためのものです。テストの点数ではありません。")).font(.caption).foregroundStyle(ArticoTheme.muted)
             }
         }
+    }
+}
+
+struct PracticeNavigationBar: View {
+    @Environment(LearningStore.self) private var learning
+    @Environment(AudioController.self) private var audio
+    let lessonID: String
+    private var session: PracticeSession { learning.session(for: lessonID) }
+    var body: some View {
+        HStack(spacing: 16) {
+            Button { learning.updateSession(lessonID) { $0.previous() }; audio.stop() } label: { Image(systemName: "arrow.left").frame(width: 48, height: 48) }
+                .buttonStyle(.bordered).disabled(session.index == 0).accessibilityLabel(learning.text("Previous phrase", "前の表現"))
+            Button(learning.text(session.index == session.queue.count - 1 ? "Finish set" : "Next phrase", session.index == session.queue.count - 1 ? "セットを終える" : "次の表現")) {
+                learning.updateSession(lessonID) { $0.next() }; audio.stop()
+            }.buttonStyle(PrimaryButton()).accessibilityIdentifier("next-phrase")
+        }.padding(.horizontal, 20).padding(.vertical, 10).background(.regularMaterial)
     }
 }
 
@@ -168,7 +181,7 @@ struct PhraseSelectionSheet: View {
                         Button(learning.text("Select shown", "表示中を選択")) { setSelection(selected.union(visible.map(\.id))) }
                         Spacer()
                         Button(learning.text("Clear all", "すべて外す")) { setSelection([]) }
-                    }.font(.subheadline).frame(minHeight: 36)
+                    }.font(.subheadline).frame(minHeight: 36).buttonStyle(.borderless)
                 }
                 ForEach(visible) { phrase in
                     Button {
@@ -208,7 +221,7 @@ struct ScenarioSectionView: View {
     let lesson: Lesson
     let expandFirst: Bool
     var body: some View {
-        VStack(alignment: .leading, spacing: 18) {
+        LazyVStack(alignment: .leading, spacing: 18) {
             Text(section.title).font(.headline)
             ForEach(section.blocks) { block in
                 if block.type == "list", block.ordered == true {

@@ -35,12 +35,25 @@ public struct ArticoRoot: View {
         }
         .environment(learning).environment(audio).tint(ArticoTheme.blue).readingCanvas()
         .environment(\.locale, Locale(identifier: learning.language.rawValue))
+        .modifier(DebugAppearance())
         .task {
             #if DEBUG
             if ProcessInfo.processInfo.arguments.contains("--english") { learning.setLanguage(.english) }
             #endif
             do { manifest = try CourseResources.manifest() } catch { self.error = true }
         }
+    }
+}
+
+private struct DebugAppearance: ViewModifier {
+    @Environment(\.dynamicTypeSize) private var systemSize
+    func body(content: Content) -> some View {
+        #if DEBUG
+        content.dynamicTypeSize(ProcessInfo.processInfo.arguments.contains("--large-type") ? .accessibility2 : systemSize)
+            .preferredColorScheme(ProcessInfo.processInfo.arguments.contains("--dark") ? .dark : nil)
+        #else
+        content
+        #endif
     }
 }
 

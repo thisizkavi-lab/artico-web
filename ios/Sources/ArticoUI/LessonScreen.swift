@@ -12,6 +12,7 @@ struct LessonScreen: View {
     @State private var mode: LessonMode
     @State private var readingSection: String?
     @State private var contents: ContentsDestination?
+    @State private var practiceActive = false
 
     init(route: LessonRoute, manifest: CourseManifest, moveToLesson: @escaping (String) -> Void) {
         self.route = route; self.manifest = manifest; self.moveToLesson = moveToLesson
@@ -23,7 +24,8 @@ struct LessonScreen: View {
                 ScrollViewReader { proxy in
                     ScrollView {
                         LazyVStack(alignment: .leading, spacing: 28) {
-                            lessonHeader(lesson).id("lesson-top")
+                            if mode == .study || !practiceActive { lessonHeader(lesson).id("lesson-top") }
+                            else { Color.clear.frame(height: 1).id("lesson-top") }
                             if mode == .study {
                                 if lesson.stage == "orientation" { OrientationStartCard() }
                                 ForEach(lesson.study) { section in
@@ -41,15 +43,29 @@ struct LessonScreen: View {
                                 FoundationPracticeView(lesson: lesson)
                             } else {
                                 foundationGuidance(lesson)
-                                PracticeScreen(lesson: lesson, goToSituations: { proxy.scrollTo("practice-situations", anchor: .top) }) { section in
+                                PracticeScreen(lesson: lesson, goToSituations: { proxy.scrollTo("practice-situations", anchor: .top) }, viewStudy: { section in
                                     readingSection = section; mode = .study
-                                }
+                                }, showingSession: $practiceActive)
                             }
-                            LessonEndNavigation(lesson: lesson, manifest: manifest, moveToLesson: moveToLesson)
+                            if mode == .study || !practiceActive || learning.session(for: lesson.id).completed {
+                                LessonEndNavigation(lesson: lesson, manifest: manifest, moveToLesson: moveToLesson)
+                            }
                         }.scrollTargetLayout().padding(20).frame(maxWidth: 680)
                     }
                     .scrollPosition(id: mode == .study ? $readingSection : .constant(nil), anchor: .top)
                     .safeAreaInset(edge: .top, spacing: 0) { modeBar(lesson) }
+                    .safeAreaInset(edge: .bottom, spacing: 0) {
+                        if mode == .practice && practiceActive && learning.session(for: lesson.id).isActive {
+                            PracticeNavigationBar(lessonID: lesson.id)
+                        }
+                    }
+                    .onChange(of: practiceActive) { _, _ in proxy.scrollTo("lesson-top", anchor: .top) }
+                    .onChange(of: learning.session(for: lesson.id).index) { _, _ in
+                        if mode == .practice { proxy.scrollTo("lesson-top", anchor: .top) }
+                    }
+                    .onChange(of: learning.session(for: lesson.id).completed) { _, _ in
+                        if mode == .practice { proxy.scrollTo("lesson-top", anchor: .top) }
+                    }
                     .onChange(of: mode) { _, newMode in
                         audio.stop(); learning.visit(lesson.id, mode: newMode)
                         if newMode == .practice { proxy.scrollTo("lesson-top", anchor: .top) }
@@ -71,6 +87,7 @@ struct LessonScreen: View {
                 let id = route.id, language = learning.language
                 let loaded = try await Task.detached(priority: .userInitiated) { try CourseResources.lesson(id, language: language) }.value
                 guard !Task.isCancelled else { return }
+                if lesson == nil, route.mode == .practice { practiceActive = learning.session(for: id).isActive }
                 lesson = loaded; loadError = false
                 learning.visit(id, mode: mode)
                 let savedSection = route.section ?? readingSection ?? learning.state.readingSections[id]

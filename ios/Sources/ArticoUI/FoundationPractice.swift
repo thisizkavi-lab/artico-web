@@ -19,6 +19,9 @@ struct AlphabetBoard: View {
             }
             Text(learning.text("Letter names · your device’s American English voice. A letter’s name is different from its sounds in words.", "文字の名前を、端末のアメリカ英語の音声で読みます。文字の名前と、単語の中での音は別のものです。"))
                 .font(.footnote).foregroundStyle(ArticoTheme.muted)
+            if audio.error == "englishVoiceUnavailable" {
+                Text(learning.text("An American English voice is not installed on this device. You can add one in iPhone Accessibility settings.", "この端末にはアメリカ英語の音声がありません。iPhoneのアクセシビリティ設定から追加できます。")) .font(.footnote)
+            }
         }
     }
 }
@@ -107,6 +110,7 @@ struct TwisterPracticeView: View {
                 ForEach(items) { Text($0.phrase).tag($0.id) }
             }.pickerStyle(.menu).accessibilityIdentifier("twister-picker")
             if let item {
+                let activeStep = min(step, item.buildSteps.count - 1)
                 if finished {
                     ArticoCard(color: ArticoTheme.blueWash) {
                         VStack(alignment: .leading, spacing: 16) {
@@ -119,10 +123,10 @@ struct TwisterPracticeView: View {
                     ArticoCard {
                         VStack(alignment: .leading, spacing: 18) {
                             Kicker(text: item.target)
-                            Text(learning.text("Step \(step + 1) of \(item.buildSteps.count)", "\(item.buildSteps.count)ステップ中の\(step + 1)")) .font(.subheadline).foregroundStyle(ArticoTheme.muted)
-                            Text(item.buildSteps[step]).font(.title.weight(.medium)).fixedSize(horizontal: false, vertical: true)
+                            Text(learning.text("Step \(activeStep + 1) of \(item.buildSteps.count)", "\(item.buildSteps.count)ステップ中の\(activeStep + 1)")) .font(.subheadline).foregroundStyle(ArticoTheme.muted)
+                            Text(item.buildSteps[activeStep]).font(.title.weight(.medium)).fixedSize(horizontal: false, vertical: true)
                             Text(learning.text(item.guidance, item.cue)).font(.subheadline).foregroundStyle(ArticoTheme.muted).lineSpacing(4)
-                            AudioControls(source: item.chunkAudio[step], phrase: item.buildSteps[step])
+                            AudioControls(source: item.chunkAudio[activeStep], phrase: item.buildSteps[activeStep])
                         }
                     }
                     AudioPracticeSettings()

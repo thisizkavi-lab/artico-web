@@ -53,16 +53,17 @@ final class ArticoUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["practice-phrase"].waitForExistence(timeout: 5))
         screenshot("04-practice-phrase")
         let next = app.buttons["next-phrase"]
-        reveal(next); next.tap()
+        XCTAssertTrue(next.isHittable, "Phrase navigation must be reachable without scrolling")
+        next.tap()
         XCTAssertTrue(app.staticTexts["practice-position"].label.hasPrefix("2 /"))
         app.terminate(); app.launchArguments = ["--ui-testing"]; app.launch()
         app.buttons["home-resume"].tap()
-        let resume = app.buttons["resume-practice"]
-        reveal(resume); resume.tap()
+        XCTAssertTrue(app.staticTexts["practice-position"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["practice-position"].label.hasPrefix("2 /"))
         for _ in 0..<8 {
             if app.staticTexts["practice-complete"].exists { break }
-            reveal(app.buttons["next-phrase"]); app.buttons["next-phrase"].tap()
+            XCTAssertTrue(app.buttons["next-phrase"].isHittable)
+            app.buttons["next-phrase"].tap()
         }
         XCTAssertTrue(app.staticTexts["practice-complete"].exists)
         screenshot("05-practice-complete")
@@ -101,5 +102,19 @@ final class ArticoUITests: XCTestCase {
         app.buttons["previous-lesson"].tap()
         XCTAssertTrue(app.staticTexts["lesson-title"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.navigationBars["Chapter 95"].exists)
+    }
+    func testLargeTextDarkModeKeepsPracticeNavigationReachable() {
+        app.terminate()
+        app.launchArguments += ["--large-type", "--dark"]
+        app.launch()
+        openLesson("01")
+        screenshot("08-study-large-text-dark")
+        app.segmentedControls["lesson-mode"].buttons["Practice"].tap()
+        let start = app.buttons["start-practice"]; reveal(start); start.tap()
+        XCTAssertTrue(app.staticTexts["practice-phrase"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["next-phrase"].isHittable)
+        screenshot("09-practice-large-text-dark")
+        app.buttons["next-phrase"].tap()
+        XCTAssertTrue(app.staticTexts["practice-position"].label.hasPrefix("2 /"))
     }
 }

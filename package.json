@@ -10,13 +10,15 @@
     "test": "node --test src/web/learning.test.js src/web/phrasePractice.test.js scripts/lessons.test.mjs scripts/locales.test.mjs scripts/practice-catalog.test.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "ios:content": "node scripts/export-ios-content.mjs"
   },
   "dependencies": {
     "react": "19.2.7",
     "react-dom": "19.2.7"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "@vitejs/plugin-react": "6.0.3",
     "vite": "8.1.5"
   }

@@ -1,0 +1,54 @@
+name: Artico iPhone
+
+on:
+  push:
+    branches: [main, 'codex/artico-ios']
+    paths: ['ios/**', '.github/workflows/ios.yml']
+  pull_request:
+    paths: ['ios/**', '.github/workflows/ios.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  iphone:
+    runs-on: macos-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test course integrity and progress
+        run: swift test --package-path ios
+      - name: Select an available iPhone simulator
+        id: simulator
+        run: |
+          xcrun simctl list devices available -j > "$RUNNER_TEMP/devices.json"
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          data = json.load(open(os.environ['RUNNER_TEMP'] + '/devices.json'))
+          devices = [d for runtime, group in data['devices'].items() if '.iOS-' in runtime for d in group if d['isAvailable'] and d['name'].startswith('iPhone')]
+          assert devices, 'No available iPhone simulator'
+          preferred = next((d for d in devices if 'Pro' not in d['name'] and 'Max' not in d['name']), devices[0])
+          print('id=' + preferred['udid'])
+          PY
+      - name: Build and test the native iPhone app
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/Artico.xcodeproj -scheme Artico \
+            -destination 'platform=iOS Simulator,id=${{ steps.simulator.outputs.id }}' \
+            -derivedDataPath "$RUNNER_TEMP/artico-derived" \
+            -resultBundlePath "$RUNNER_TEMP/artico-tests.xcresult" \
+            CODE_SIGNING_ALLOWED=NO test | tee "$RUNNER_TEMP/artico-build.log"
+      - name: Keep test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: iphone-test-results
+          path: |
+            ${{ runner.temp }}/artico-tests.xcresult
+            ${{ runner.temp }}/artico-build.log
+          retention-days: 7

@@ -112,21 +112,7 @@ export const phrases = [
     art: '711fc.svg',
   },
 ]
-export const chunks = [
-  { id: 'twister-lr-0', en: 'Lily', ja: 'リリー' },
-  {
-    id: 'twister-lr-1',
-    en: 'really likes',
-    ja: '大好き',
-    instruction: '「大好き」の部分を、ひとかたまりで。',
-  },
-  { id: 'twister-lr-2', en: 'red roses', ja: '赤いバラ' },
-]
-export const twister = {
-  id: 'twister-lr-whole',
-  en: 'Lily really likes\nred roses.',
-  ja: 'リリーは赤いバラが大好きです。',
-}
+export { lrChunks as chunks, lrWhole as twister } from '../course/lr-content.js'
 
 export const foundationSteps = [
   {

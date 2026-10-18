@@ -18,3 +18,10 @@ dist/
 # Local tool state
 .codex/
 .tools/
+
+# Native build products (source and shared course exports stay tracked)
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcresult/

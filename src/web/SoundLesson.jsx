@@ -7,16 +7,8 @@ import { SourceContent } from './ContentBlocks'
 import { FoundationShell, Reading } from './Foundation'
 import { Glyph } from './LessonExperience'
 
-const notes = [
-  'Let the tongue tip touch the ridge for L.',
-  'Move from R into L without adding an extra vowel.',
-  'Keep the R sounds clear and finish the last consonant.',
-]
-const sections = [
-  { id: 'lr-notice', title: 'Notice the movement.' },
-  { id: 'lr-parts', title: 'Build it in three parts.' },
-  { id: 'lr-everyday', title: 'Use it naturally.' },
-]
+import { lrReading, lrNotes as notes } from '../course/lr-content.js'
+const sections = lrReading.sections
 export function Twister({ route, learning, update, notify }) {
   const { t, language } = useLanguage()
   const isStudy = route.view === 'study',
@@ -34,7 +26,7 @@ export function Twister({ route, learning, update, notify }) {
     <FoundationShell
       route={route}
       title="L & R, in rhythm."
-      subtitle={t("Clear movements first. A natural rhythm follows.")}
+      subtitle={t(lrReading.subtitle)}
       sections={language === 'ja' ? japaneseFoundation.lr.sections : sections}
       practicePath={`/foundation/lr/${whole ? 'whole' : 'chunks'}`}
     >
@@ -49,7 +41,7 @@ export function Twister({ route, learning, update, notify }) {
               <Artwork file="a97bc.svg" width={540} height={270} alt={language === 'ja' ? '赤いバラのそばにいるLily。' : 'Lily beside red roses'} />
               <div>
                 <p className="rf-spoken">{twister.en}</p>
-                <p className="ip-prose"> {t("For L, let the tongue tip touch the ridge behind the upper front teeth. For American R, keep it from tapping that ridge. Begin slowly enough to notice the difference.")} </p>
+                <p className="ip-prose"> {t(lrReading.sections[0].paragraphs[0])} </p>
                 <span className="ip-register">L /l/ · R /ɹ/</span>
               </div>
             </div>
@@ -69,7 +61,7 @@ export function Twister({ route, learning, update, notify }) {
                 </article>
               ))}
             </div>
-            <p className="ip-prose"> {t("Make each part clear. Then connect the three parts without adding an extra vowel between consonants.")} </p>
+            <p className="ip-prose"> {t(lrReading.sections[1].paragraphs[0])} </p>
             <a className="ip-primary" href="#/foundation/lr/chunks"> {t("Practice the sounds")} <Glyph name="arrow" />
             </a>
           </section>
@@ -81,7 +73,7 @@ export function Twister({ route, learning, update, notify }) {
             <article className="ip-phrase">
               <div className="ip-phrase-copy">
                 <p className="ip-phrase-text">I really like roses.</p>
-                <p className="ip-context">{t("Use the same movements in an everyday sentence.")}</p>
+                <p className="ip-context">{t(lrReading.sections[2].examples[0][1])}</p>
               </div>
             </article>
           </section>

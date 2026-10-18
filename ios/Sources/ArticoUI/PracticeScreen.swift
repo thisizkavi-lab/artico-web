@@ -15,7 +15,7 @@ struct PracticeScreen: View {
     private var starter: [Phrase] { lesson.starterIds.compactMap(lesson.phrase) }
     private var validIDs: Set<String> { Set(lesson.phrases.map(\.id)) }
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 28) {
+        VStack(alignment: .leading, spacing: 28) {
             if showingSession, session.completed { completion }
             else if showingSession, let id = session.currentID, let phrase = lesson.phrase(id) { focusedPhrase(phrase) }
             else { entry }
@@ -199,7 +199,7 @@ struct PhraseSelectionSheet: View {
                     }.buttonStyle(.plain).accessibilityAddTraits(selected.contains(phrase.id) ? .isSelected : [])
                 }
                 if visible.isEmpty { ContentUnavailableView.search(text: query) }
-            }.searchable(text: $query, prompt: learning.text("Find an expression", "表現を探す"))
+            }.courseSearch(text: $query, prompt: learning.text("Find an expression", "表現を探す"))
                 .navigationTitle(learning.text("Your practice set", "練習する表現")).inlineTitle()
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button(learning.text("Done", "完了")) { dismiss() } } }
                 .safeAreaInset(edge: .bottom) {
@@ -221,7 +221,7 @@ struct ScenarioSectionView: View {
     let lesson: Lesson
     let expandFirst: Bool
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 18) {
+        VStack(alignment: .leading, spacing: 18) {
             Text(section.title).font(.headline)
             ForEach(section.blocks) { block in
                 if block.type == "list", block.ordered == true {

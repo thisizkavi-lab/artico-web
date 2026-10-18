@@ -96,7 +96,17 @@ final class ArticoUITests: XCTestCase {
     }
     func testFinalChapterHasPreviousButNoNext() {
         openLesson("96")
+        app.buttons["lesson-contents"].tap()
+        app.buttons["contents-96-study-2"].tap()
+        XCTAssertTrue(app.staticTexts["section-heading-96-study-2"].isHittable)
         app.segmentedControls["lesson-mode"].buttons["Practice"].tap()
+        XCTAssertTrue(app.segmentedControls["lesson-mode"].buttons["Practice"].isSelected)
+        app.segmentedControls["lesson-mode"].buttons["Study"].tap()
+        XCTAssertTrue(app.segmentedControls["lesson-mode"].buttons["Study"].isSelected)
+        XCTAssertTrue(app.staticTexts["section-heading-96-study-2"].isHittable, "Study must keep its reading position when returning from Practice")
+        app.segmentedControls["lesson-mode"].buttons["Practice"].tap()
+        XCTAssertTrue(app.segmentedControls["lesson-mode"].buttons["Practice"].isSelected)
+        screenshot("10-final-chapter-practice")
         reveal(app.buttons["previous-lesson"], limit: 40)
         XCTAssertFalse(app.buttons["next-lesson"].exists)
         app.buttons["previous-lesson"].tap()

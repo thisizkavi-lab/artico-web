@@ -7,7 +7,8 @@ struct StudySectionView: View {
     let lesson: Lesson
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text(section.title).font(.title2.weight(.semibold)).fixedSize(horizontal: false, vertical: true).accessibilityAddTraits(.isHeader)
+            Text(section.title).font(.title2.weight(.semibold)).fixedSize(horizontal: false, vertical: true)
+                .accessibilityAddTraits(.isHeader).accessibilityIdentifier("section-heading-\(section.id)")
             ForEach(section.blocks) { block in StudyBlockView(block: block, lesson: lesson) }
             if let widget = section.widget { LessonWidget(kind: widget) }
             if let string = section.videoURL, let url = URL(string: string) {

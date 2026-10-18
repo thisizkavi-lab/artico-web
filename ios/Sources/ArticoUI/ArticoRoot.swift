@@ -105,20 +105,21 @@ struct SettingsScreen: View {
             Form {
                 Section {
                     Label(learning.text("Learning as a guest", "ゲストとして学習中"), systemImage: "person.crop.circle")
-                    Text(learning.text("Your progress stays on this device. You can study without an account.", "アカウントなしで学習できます。学習内容はこの端末に保存されます。")).font(.subheadline).foregroundStyle(.secondary)
+                    Text(learning.text("Your progress stays on this device. You can study without an account.", "アカウントなしで学習できます。学習内容はこの端末に保存されます。")).font(.subheadline).foregroundStyle(ArticoTheme.muted)
                 }
                 Section(learning.text("Explanation language", "解説の言語")) {
                     ForEach(ExplanationLanguage.allCases, id: \.self) { language in
                         Button { learning.setLanguage(language) } label: {
-                            HStack { Text(language.title); Spacer(); if learning.language == language { Image(systemName: "checkmark") } }.frame(minHeight: 32)
-                        }.accessibilityIdentifier("language-\(language.rawValue)")
+                            HStack { Text(language.title).foregroundStyle(ArticoTheme.ink); Spacer(); if learning.language == language { Image(systemName: "checkmark").foregroundStyle(ArticoTheme.blue) } }.frame(minHeight: 32)
+                        }.buttonStyle(.plain).accessibilityIdentifier("language-\(language.rawValue)")
+                            .accessibilityAddTraits(learning.language == language ? .isSelected : [])
                     }
-                    Text(learning.text("Practice phrases always stay in English.", "練習する表現は、どちらの設定でも英語です。")).font(.footnote).foregroundStyle(.secondary)
+                    Text(learning.text("Practice phrases always stay in English.", "練習する表現は、どちらの設定でも英語です。")).font(.footnote).foregroundStyle(ArticoTheme.muted)
                 }
                 Section(learning.text("Available offline", "オフラインで使える内容")) {
                     Label(learning.text("All 104 lessons and illustrations", "全104レッスンとイラスト"), systemImage: "book.closed")
                     Label(learning.text("Existing tongue-twister recordings", "収録済みの早口言葉の音声"), systemImage: "waveform")
-                    Text(learning.text("Videos and external resources need an internet connection. Conversation recordings and device sync are coming later.", "動画や外部の資料にはインターネット接続が必要です。会話の音声と端末間の同期は、今後対応予定です。")).font(.footnote).foregroundStyle(.secondary)
+                    Text(learning.text("Videos and external resources need an internet connection. Conversation recordings and device sync are coming later.", "動画や外部の資料にはインターネット接続が必要です。会話の音声と端末間の同期は、今後対応予定です。")).font(.footnote).foregroundStyle(ArticoTheme.muted)
                 }
                 if let error = learning.saveError { Section { Text(error).foregroundStyle(.red) } }
                 if learning.recoveryNotice { Section { Text(learning.text("A previous progress file could not be read. A recovery copy was kept when possible.", "以前の学習データを読み込めませんでした。可能な場合は復旧用のコピーを保存しています。")) } }

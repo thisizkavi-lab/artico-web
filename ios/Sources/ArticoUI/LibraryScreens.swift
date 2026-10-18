@@ -96,7 +96,7 @@ struct CourseScreen: View {
                     }
                 }
             }
-        }.searchable(text: $search, prompt: learning.text("Find a lesson or situation", "レッスンや場面を探す"))
+        }.courseSearch(text: $search, prompt: learning.text("Find a lesson or situation", "レッスンや場面を探す"))
             .scrollContentBackground(.hidden).readingCanvas()
     }
 }

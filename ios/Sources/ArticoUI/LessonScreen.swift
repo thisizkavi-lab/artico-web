@@ -22,37 +22,47 @@ struct LessonScreen: View {
         Group {
             if let lesson {
                 ScrollViewReader { proxy in
-                    ScrollView {
-                        LazyVStack(alignment: .leading, spacing: 28) {
-                            if mode == .study || !practiceActive { lessonHeader(lesson).id("lesson-top") }
-                            else { Color.clear.frame(height: 1).id("lesson-top") }
-                            if mode == .study {
-                                if lesson.stage == "orientation" { OrientationStartCard() }
-                                ForEach(lesson.study) { section in
-                                    StudySectionView(section: section, lesson: lesson).id(section.id)
-                                }
-                                ArticoCard(color: ArticoTheme.blueWash) {
-                                    VStack(alignment: .leading, spacing: 12) {
-                                        Text(learning.text("Give it a try.", "声に出して、試してみましょう。")) .font(.title2.weight(.semibold))
-                                        Text(learning.text("Practice what you learned in this lesson.", "このレッスンで学んだことを練習します。")).font(.subheadline).foregroundStyle(ArticoTheme.muted)
-                                        Button(learning.text("Go to Practice", "練習へ進む")) { mode = .practice; proxy.scrollTo("lesson-top", anchor: .top) }.buttonStyle(PrimaryButton())
+                    Group {
+                        if mode == .study {
+                            ScrollView {
+                                LazyVStack(alignment: .leading, spacing: 28) {
+                                    lessonHeader(lesson).id("lesson-top")
+                                    if lesson.stage == "orientation" { OrientationStartCard() }
+                                    ForEach(lesson.study) { section in
+                                        StudySectionView(section: section, lesson: lesson).id(section.id)
                                     }
-                                }
-                            } else if lesson.stage != "social", lesson.id != "lr" {
-                                foundationGuidance(lesson)
-                                FoundationPracticeView(lesson: lesson)
-                            } else {
-                                foundationGuidance(lesson)
-                                PracticeScreen(lesson: lesson, goToSituations: { proxy.scrollTo("practice-situations", anchor: .top) }, viewStudy: { section in
-                                    readingSection = section; mode = .study
-                                }, showingSession: $practiceActive)
+                                    ArticoCard(color: ArticoTheme.blueWash) {
+                                        VStack(alignment: .leading, spacing: 12) {
+                                            Text(learning.text("Give it a try.", "声に出して、試してみましょう。")) .font(.title2.weight(.semibold))
+                                            Text(learning.text("Practice what you learned in this lesson.", "このレッスンで学んだことを練習します。")).font(.subheadline).foregroundStyle(ArticoTheme.muted)
+                                            Button(learning.text("Go to Practice", "練習へ進む")) { mode = .practice }.buttonStyle(PrimaryButton())
+                                        }
+                                    }
+                                    LessonEndNavigation(lesson: lesson, manifest: manifest, moveToLesson: moveToLesson)
+                                }.scrollTargetLayout().padding(20).frame(maxWidth: 680)
+                            }.scrollPosition(id: $readingSection, anchor: .top)
+                        } else {
+                            // Practice has a small, bounded set of activities. A regular stack
+                            // gives it stable geometry, independent of Study's reading anchor.
+                            ScrollView {
+                                VStack(alignment: .leading, spacing: 28) {
+                                    if !practiceActive { lessonHeader(lesson).id("lesson-top") }
+                                    else { Color.clear.frame(height: 1).id("lesson-top") }
+                                    foundationGuidance(lesson)
+                                    if lesson.stage != "social", lesson.id != "lr" {
+                                        FoundationPracticeView(lesson: lesson)
+                                    } else {
+                                        PracticeScreen(lesson: lesson, goToSituations: { proxy.scrollTo("practice-situations", anchor: .top) }, viewStudy: { section in
+                                            readingSection = section; mode = .study
+                                        }, showingSession: $practiceActive)
+                                    }
+                                    if !practiceActive || learning.session(for: lesson.id).completed {
+                                        LessonEndNavigation(lesson: lesson, manifest: manifest, moveToLesson: moveToLesson)
+                                    }
+                                }.padding(20).frame(maxWidth: 680)
                             }
-                            if mode == .study || !practiceActive || learning.session(for: lesson.id).completed {
-                                LessonEndNavigation(lesson: lesson, manifest: manifest, moveToLesson: moveToLesson)
-                            }
-                        }.scrollTargetLayout().padding(20).frame(maxWidth: 680)
+                        }
                     }
-                    .scrollPosition(id: mode == .study ? $readingSection : .constant(nil), anchor: .top)
                     .safeAreaInset(edge: .top, spacing: 0) { modeBar(lesson) }
                     .safeAreaInset(edge: .bottom, spacing: 0) {
                         if mode == .practice && practiceActive && learning.session(for: lesson.id).isActive {
@@ -142,7 +152,7 @@ struct LessonContentsSheet: View {
                         Text(String(format: "%02d", index + 1)).font(.subheadline.monospacedDigit()).foregroundStyle(ArticoTheme.muted)
                         Text(section.title).foregroundStyle(ArticoTheme.ink)
                     }.padding(.vertical, 8)
-                }
+                }.accessibilityIdentifier("contents-\(section.id)")
             }.navigationTitle(learning.text("In this lesson", "このレッスンの内容")).inlineTitle()
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button(learning.text("Done", "完了")) { dismiss() } } }
         }.presentationDetents([.medium, .large]).presentationDragIndicator(.visible)

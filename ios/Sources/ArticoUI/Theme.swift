@@ -104,6 +104,13 @@ struct CourseArtwork: View {
 }
 
 extension View {
+    @ViewBuilder func courseSearch(text: Binding<String>, prompt: String) -> some View {
+        #if os(iOS)
+        searchable(text: text, placement: .navigationBarDrawer(displayMode: .always), prompt: prompt)
+        #else
+        searchable(text: text, prompt: prompt)
+        #endif
+    }
     @ViewBuilder func inlineTitle() -> some View {
         #if os(iOS)
         navigationBarTitleDisplayMode(.inline)

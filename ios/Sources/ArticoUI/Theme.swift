@@ -8,6 +8,7 @@ import AppKit
 
 enum ArticoTheme {
     static let blue = adaptive(0x285BCC, 0x8CAFFF)
+    static let action = Color(red: 0.157, green: 0.357, blue: 0.8)
     static let paper = adaptive(0xFBFAF7, 0x172020)
     static let surface = adaptive(0xFFFFFF, 0x223030)
     static let ink = adaptive(0x263B3B, 0xF0F3F0)
@@ -47,7 +48,7 @@ struct PrimaryButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label.font(.headline).frame(maxWidth: .infinity, minHeight: 26).padding(.vertical, 13).padding(.horizontal, 18)
             .foregroundStyle(enabled ? Color.white : ArticoTheme.muted)
-            .background(enabled ? Color(red: 0.157, green: 0.357, blue: 0.8).opacity(configuration.isPressed ? 0.8 : 1) : ArticoTheme.line, in: RoundedRectangle(cornerRadius: 14))
+            .background(enabled ? ArticoTheme.action.opacity(configuration.isPressed ? 0.8 : 1) : ArticoTheme.line, in: RoundedRectangle(cornerRadius: 14))
             .contentShape(Rectangle())
     }
 }

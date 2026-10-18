@@ -114,8 +114,8 @@ struct AudioControls: View {
             HStack(spacing: 16) {
                 Button { audio.play(source, title: phrase) } label: {
                     Label(learning.text(audio.playing && audio.activeSource == source ? "Pause" : "Listen", audio.playing && audio.activeSource == source ? "一時停止" : "聞く"), systemImage: audio.playing && audio.activeSource == source ? "pause.fill" : "play.fill")
-                        .frame(minHeight: 44)
-                }.buttonStyle(.borderedProminent).accessibilityIdentifier("listen-button")
+                        .frame(minHeight: 44).foregroundStyle(.white)
+                }.buttonStyle(.borderedProminent).tint(ArticoTheme.action).accessibilityIdentifier("listen-button")
                 if !compact {
                     Button { audio.play(source, title: phrase, restart: true) } label: { Image(systemName: "arrow.counterclockwise").frame(width: 44, height: 44) }
                         .accessibilityLabel(learning.text("Replay", "もう一度聞く"))

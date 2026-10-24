@@ -3,10 +3,35 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { buildPracticeCatalog, normalizePracticeText } from '../src/web/practiceCatalog.js'
 import { getPracticeSet } from '../src/web/phrasePractice.js'
+import { greetingsModel } from '../src/course/greetings.js'
+import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
 
 const read = (id, language = 'en') => JSON.parse(readFileSync(new URL(`../src/course/${language === 'ja' ? 'locales/ja/' : ''}lessons/${id}.json`, import.meta.url)))
 const model = (source) => ({ ...source, phrases: source.phraseBank, sections: source.study.map((section) => ({ ...section, blocks: section.blocks.map((block) => ({ ...block, phrases: block.phraseIds })) })) })
 const catalogFor = (id, language) => buildPracticeCatalog(model(read(id, language)))
+
+test('curated greetings preserve existing selections, ratings and the current expression in both languages', () => {
+  for (const lesson of [greetingsModel, localizeGreetings(greetingsModel)]) {
+    const catalog = buildPracticeCatalog(lesson)
+    assert.deepEqual(catalog.starterIds, greetingsModel.starterIds)
+    assert.ok(!catalog.items.some((item) => normalizePracticeText(item.en) === 'i lost my phone'))
+    const previous = {
+      selected: ['ch01-line17', 'ch01-line41', 'ch01-line58'],
+      ratings: { 'ch01-line41': 'needs-work' },
+      session: { ids: ['ch01-line17', 'ch01-line41', 'ch01-line58'], index: 1, active: true },
+    }
+    const migrated = getPracticeSet(previous, catalog.items, undefined, catalog)
+    assert.deepEqual(migrated.selected, ['ch01-p1', 'ch01-p13', 'ch01-p29'])
+    assert.deepEqual(migrated.session.ids, migrated.selected)
+    assert.equal(migrated.session.index, 1)
+    assert.equal(migrated.session.active, true)
+    assert.equal(migrated.ratings['ch01-p13'], 'needs-work')
+    for (const phrase of read('01').phraseBank) {
+      if (normalizePracticeText(phrase.en) !== 'i lost my phone')
+        assert.ok(catalog.aliases[phrase.id]?.length, `Missing saved expression: ${phrase.id}`)
+    }
+  }
+})
 
 test('all 96 chapters have bounded starting sets, unique targets and reachable Study sources in both languages', () => {
   for (let chapter = 1; chapter <= 96; chapter++) {

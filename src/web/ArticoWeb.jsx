@@ -11,6 +11,7 @@ import { getLearningStage, learningStages } from './pathway'
 const Foundation = lazy(() => import('./Foundation'))
 const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
+const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
 const IntroductionsLesson = lazy(() => import('./IntroductionsLesson'))
 const destinations = [
   { id: 'home', label: 'Home', icon: 'home' },
@@ -228,7 +229,12 @@ export default function ArticoWeb() {
         <Foundation key={route.path} route={route} learning={learning} update={update} />
       )
   else if (route.page === 'lesson') {
-    const Lesson = route.id === '02' ? IntroductionsLesson : ChapterLesson
+    const Lesson =
+      route.id === '01'
+        ? GreetingsLesson
+        : route.id === '02'
+          ? IntroductionsLesson
+          : ChapterLesson
     screen = (
       <Suspense
         fallback={

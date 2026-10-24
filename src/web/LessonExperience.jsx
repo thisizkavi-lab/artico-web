@@ -19,6 +19,8 @@ const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
 const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 const portraits = {
+  Alex: '8508101',
+  Casey: '265283458',
   Maya: '8855619',
   Eli: '278299',
   Priya: '277786664',
@@ -175,6 +177,24 @@ function Study({ audioProps, focusedId }) {
                 <aside className="ip-note" key={blockIndex}>
                   <strong>{block.title}</strong>
                   <p>{block.text}</p>
+                </aside>
+              )
+            if (block.type === 'comparison')
+              return (
+                <aside className="ip-comparison" key={blockIndex} aria-label={block.title}>
+                  <strong className="ip-comparison-title">{block.title}</strong>
+                  <div className="ip-comparison-grid">
+                    {block.items.map((entry, entryIndex) => (
+                      <div
+                        key={entryIndex}
+                        className={`ip-comparison-card ${entry.contrast ? 'is-contrast' : ''}`}
+                      >
+                        <span className="ip-comparison-badge">{entry.badge}</span>
+                        <p className="ip-comparison-phrase" lang="en">{entry.en}</p>
+                        <p className="ip-comparison-text">{entry.text}</p>
+                      </div>
+                    ))}
+                  </div>
                 </aside>
               )
             if (block.type === 'conversation')
@@ -593,7 +613,14 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
 
 function YourTurn({ learning, update }) {
   const { t, language } = useLanguage()
-  const { scenarios: introductionScenarios } = useLesson()
+  const { scenarios: introductionScenarios, scenarioCheck } = useLesson()
+  const fallbackTitles = [
+    t("Meet someone at a gathering"),
+    t("Introduce yourself at work"),
+    t("Bring two people together"),
+    t("Recognize someone you have met"),
+    t("Try it with your own details"),
+  ]
   return (
     <section className="ip-your-turn">
       <p className="ip-kicker">{t("02 / USE IT IN A CONVERSATION")}</p>
@@ -603,15 +630,7 @@ function YourTurn({ learning, update }) {
         <details className="ip-scenario" key={scenario.id}>
           <summary>
             <span>{String(index + 1).padStart(2, '0')}</span>
-            {
-              [
-                t("Meet someone at a gathering"),
-                t("Introduce yourself at work"),
-                t("Bring two people together"),
-                t("Recognize someone you have met"),
-                t("Try it with your own details"),
-              ][index]
-            }
+            {scenario.title ?? fallbackTitles[index]}
             <Glyph name="chevron" />
           </summary>
           <div className="ip-scenario-body">
@@ -637,7 +656,7 @@ function YourTurn({ learning, update }) {
           </div>
         </details>
       ))}
-      <p className="ip-context"> {t("Check: did both people receive an introduction? Did you respond to what they actually said?")} </p>
+      <p className="ip-context"> {scenarioCheck ?? t("Check: did both people receive an introduction? Did you respond to what they actually said?")} </p>
     </section>
   )
 }
@@ -647,6 +666,7 @@ function Experience({ route, learning, update, save, notify }) {
   const {
     id,
     title,
+    titleJa,
     subtitle,
     eyebrow,
     aliases: introductionAliases = {},
@@ -739,7 +759,10 @@ function Experience({ route, learning, update, save, notify }) {
             </>
           )}
         </p>
-        <h1 lang="en">{title}</h1>
+        <h1>
+          <span lang="en">{title}</span>
+          {language === 'ja' && titleJa && <span className="ip-title-ja" lang="ja">{titleJa}</span>}
+        </h1>
         <p>{subtitle}</p>
       </header>
       <div className="ip-mode-bar">

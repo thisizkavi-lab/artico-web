@@ -6,6 +6,8 @@ import ja from '../src/web/locales/ja.js'
 import { foundationReading } from '../src/course/foundations-en.js'
 import { introductionPhrases, introductionSections, introductionScenarios } from '../src/course/introductions.js'
 import { japaneseIntroduction } from '../src/course/locales/ja/introductions.js'
+import { greetingsModel } from '../src/course/greetings.js'
+import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
 
 const read = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
 const catalog = await read('../src/course/catalog.json')
@@ -61,4 +63,18 @@ test('the introduction pilot translates the existing layout without replacing re
   assert(ja.sections.every((section) => japanese.test(section.title)))
   assert(ja.scenarios.every((item) => japanese.test(item.prompt)))
   assert.deepEqual(ja.scenarios.map((item) => item.id), model.scenarios.map((item) => item.id))
+})
+
+test('the greetings chapter curates Study and Practice presentation with full Japanese support', () => {
+  const ja = localizeGreetings(greetingsModel)
+  assert.equal(ja.titleJa, 'あいさつ')
+  assert(japanese.test(ja.subtitle))
+  assert.deepEqual(ja.phrases.map(({ id, en, section }) => ({ id, en, section })), greetingsModel.phrases.map(({ id, en, section }) => ({ id, en, section })))
+  assert(ja.phrases.every((item) => japanese.test(item.context) && (!item.register || japanese.test(item.register)) && japanese.test(item.ja)))
+  assert(ja.sections.every((section) => japanese.test(section.title)))
+  const conversationPhraseIds = ja.sections.flatMap((section) => section.blocks.filter((b) => b.type === 'conversation').flatMap((b) => b.phrases))
+  assert(conversationPhraseIds.length > 0)
+  assert(conversationPhraseIds.every((id) => japanese.test(ja.phrases.find((p) => p.id === id)?.ja ?? '')))
+  assert(ja.scenarios.every((item) => japanese.test(item.title) && japanese.test(item.prompt)))
+  assert.deepEqual(ja.scenarios.map((item) => item.id), greetingsModel.scenarios.map((item) => item.id))
 })

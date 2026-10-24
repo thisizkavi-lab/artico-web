@@ -55,12 +55,17 @@ export function buildPracticeCatalog(model) {
     }
     aliases[source.id] = [...new Set(targets)]
   }
+  // Curated lessons replace source IDs while keeping saved practice compatible.
+  for (const [previous, replacement] of Object.entries(model.aliases ?? {})) {
+    const sources = Array.isArray(replacement) ? replacement : [replacement]
+    aliases[previous] = [...new Set(sources.flatMap((id) => aliases[id] ?? []))]
+  }
   // Begin with one complete scene where available; vocabulary lessons use their
   // authored illustrated subset. A presentation starts with its connected model.
   const firstConversation = model.sections.flatMap((section) => section.blocks)
     .find((block) => block.type === 'conversation')
-  let candidates = firstConversation?.phrases
-  if (model.id === '01') candidates = ['ch01-line17', 'ch01-line18', 'ch01-line40', 'ch01-line41', 'ch01-line42']
+  let candidates = model.starterIds ?? firstConversation?.phrases
+  if (!model.starterIds && model.id === '01') candidates = ['ch01-line17', 'ch01-line18', 'ch01-line40', 'ch01-line41', 'ch01-line42']
   if (model.id === '53') candidates = model.phrases.filter((item) => /^ch53-b/.test(item.id)).map((item) => item.id)
   if (!candidates?.length) candidates = model.phrases.filter((item) => item.section === 'words').map((item) => item.id)
   const starterIds = [...new Set((candidates ?? []).flatMap((id) => aliases[id] ?? []))].slice(0, 8)

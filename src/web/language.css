@@ -1,9 +1,27 @@
-.aw-language { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; color: var(--muted); }
-.aw-language select { color: var(--ink); font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; min-height: 36px; padding: 5px 7px; cursor: pointer; }
-.aw-language select:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
-.aw-language-profile { display: grid; gap: 10px; margin: 24px 0 8px; }
-.aw-language-profile select { width: 100%; min-height: 44px; }
-.aw-language-profile small { font-size: 13px; line-height: 1.7; }
+/* Compact segmented language choice, shared by top bar and profile. */
+.aw-language { display:inline-flex; align-items:center; flex-shrink:0; }
+.aw-language-toggle {
+  display:inline-flex; align-items:center; gap:3px;
+  padding:4px; background:#fff; border:1px solid #d8e2f1;
+  border-radius:999px;
+}
+.aw-language-option {
+  display:grid; place-items:center;
+  min-width:47px; min-height:36px; padding:7px 14px;
+  border:0; border-radius:999px; background:transparent;
+  color:#64748b; font:inherit; font-size:13px;
+  font-weight:700; line-height:1.15; white-space:nowrap; cursor:pointer;
+}
+.aw-language-option[aria-pressed="true"] {
+  background:#285bcc; color:#fff;
+}
+.aw-language-option:hover:not([aria-pressed="true"]) {
+  background:#eff4ff; color:#285bcc;
+}
+.aw-language-option:focus-visible { outline:2px solid #285bcc; outline-offset:3px; }
+.aw-language-profile { display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin:24px 0 8px; }
+.aw-language-profile .aw-language-label { font-weight:600; color:var(--ink); }
+.aw-language-profile small { font-size:13px; line-height:1.7; color:var(--muted); }
 .aw-topbar > p { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .aw-app[data-language="ja"] { font-family: 'Hanken Grotesk', 'Noto Sans JP', sans-serif; }
 .aw-app[data-language="ja"] :is(.aw-heading h1, .rl-resume h2, .rl-start-note p, .aw-progress-resume h2) { font-family: 'Noto Sans JP', -apple-system, 'Hiragino Kaku Gothic ProN', sans-serif; font-weight: 600; line-height: 1.55; letter-spacing: 0; }
@@ -18,7 +36,8 @@
 @media(max-width: 600px) {
   .aw-topbar { gap: 9px; }
   .aw-topbar .aw-language { margin-left: auto; }
-  .aw-language select { min-height: 36px; font-size: 12px; }
+  .aw-language-toggle { padding:3px; gap:2px; }
+  .aw-language-option { min-height:32px; min-width:41px; padding:6px 11px; font-size:12px; }
   [data-language="ja"] .ip-section-heading h2 { font-size: 18px; }
   [data-language="ja"] .ip-prose { font-size: 14px; }
 }

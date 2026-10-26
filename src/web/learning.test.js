@@ -365,6 +365,15 @@ test('learning tree is grayscale with blue selection while other views retain bl
   }
 })
 
+test('Home keeps the main heading and cards without redundant introductory copy', () => {
+  const home = readFileSync(new URL('./Home.jsx', import.meta.url), 'utf8')
+  assert.match(home, /Pick your starting point\./)
+  assert.doesNotMatch(home, /ARTICO · YOUR STARTING POINT/)
+  assert.doesNotMatch(home, /Choose the path that fits you today\./)
+  assert.doesNotMatch(home, /今の自分に合うところから始めましょう。/)
+  assert.match(home, /className="ah-options"/)
+})
+
 test('Home cards are compact grayscale and Foundations displays as Level Zero', () => {
   const home = readFileSync(new URL('./Home.jsx', import.meta.url), 'utf8')
   const css = readFileSync(new URL('./home.css', import.meta.url), 'utf8')

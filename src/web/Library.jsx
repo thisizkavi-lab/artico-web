@@ -5,6 +5,7 @@ import CurriculumIcon, { chapterIcon, foundationIcon, groupIcon, stageIcon } fro
 import { introductionAliases } from '../course/introductions'
 import { getLearningStage, learningStages } from './pathway'
 import { catalog, foundationSteps, groups, savedItems } from './content'
+import { applicationTracks } from './applicationTracks'
 import './library-readable.css'
 
 function CourseLesson({ href, number, iconName, title, active = false }) {
@@ -23,7 +24,9 @@ function CourseLesson({ href, number, iconName, title, active = false }) {
 export function Courses({ learning, route }) {
   const { t, language } = useLanguage()
   const learnStages = learningStages.filter(stage => stage.id !== 'orientation')
-  const requestedStage = learnStages.find(stage => route.path.endsWith('?' + stage.id))?.id
+  const requestedStage = route.path.endsWith('?application')
+    ? 'application'
+    : learnStages.find(stage => route.path.endsWith('?' + stage.id))?.id
   const initialStage = requestedStage ??
     (getLearningStage(learning.last)?.id === 'social' ? 'social' : 'foundation')
   const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
@@ -141,15 +144,28 @@ export function Courses({ learning, route }) {
             </section>
           )
         })}
-        <section className="rl-vertical-stage rl-vertical-stage--future">
+        <section className={'rl-vertical-stage' + (expandedStage === 'application' ? ' is-open' : '')}>
           <span className="rl-vertical-step" aria-hidden="true">03</span>
           <div className="rl-vertical-shell">
-            <div className="rl-vertical-stage-button rl-vertical-stage-static">
+            <button type="button" className="rl-vertical-stage-button"
+              aria-controls="rl-stage-panel-application"
+              aria-expanded={expandedStage === 'application'}
+              onClick={() => setExpandedStage(expandedStage === 'application' ? null : 'application')}>
               <CurriculumIcon name="globe" size={26} />
               <span className="rl-vertical-stage-title">
                 <strong>{language === 'ja' ? '実践' : 'Application'}</strong>
-                <small>{language === 'ja' ? '自分の目的に英語を使う · 準備中' : 'Personal use cases · Coming later'}</small>
               </span>
+              <span className="rl-vertical-chevron" aria-hidden="true"/>
+            </button>
+            <div id="rl-stage-panel-application" className="rl-vertical-stage-panel"
+              hidden={expandedStage !== 'application'}>
+              <div className="rl-vertical-lessons rl-vertical-foundation">
+                {applicationTracks.map((track,i) => (
+                  <CourseLesson key={track.id} href={'#/application/' + track.id}
+                    number={String(i+1).padStart(2,'0')} iconName={track.icon}
+                    title={language === 'ja' ? track.ja : track.en} />
+                ))}
+              </div>
             </div>
           </div>
         </section>

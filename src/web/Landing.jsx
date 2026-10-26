@@ -34,7 +34,7 @@ export default function Landing({ last }) {
       <a className="al-skip" href="#al-content" onClick={(event) => { event.preventDefault(); scrollTo(mainRef) }}>{copy.skip}</a>
       <header className="al-header">
         <nav className="al-container al-nav" aria-label={copy.navigation}>
-          <a className="al-wordmark artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
+          <a className="al-wordmark artico-wordmark" href="#/courses" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
           <div className="al-nav-links">
             <button type="button" onClick={() => scrollTo(methodRef)}>{copy.how}</button>
             <button type="button" onClick={() => scrollTo(pathRef)}>{copy.course}</button>
@@ -155,7 +155,7 @@ export default function Landing({ last }) {
         <p className="al-fine">© {new Date().getFullYear()} Artico</p>
         <div className="al-footer-links">
           <a href={`#${learningStages[0].start}`}>{copy.startHere}</a>
-          <a href="#/home">{copy.open}</a>
+          <a href="#/courses">{copy.open}</a>
         </div>
       </footer>
     </div>

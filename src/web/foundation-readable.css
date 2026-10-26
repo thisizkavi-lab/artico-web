@@ -2,7 +2,6 @@
    No bordered cards, boxed captions, or artificial backgrounds. */
 .rf-page .rf-illustrated-section {
   display: block;
-  flow-root: auto;
 }
 .rf-page .rf-illustrated-section::after {
   content: '';

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
 import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
+import WritingStudio from './WritingStudio'
 import './application.css'
 
 function TrackCard({ track, language, index }) {
@@ -102,6 +103,7 @@ function TrackExercise({ track, language, learning, update }) {
 export default function Application({ route, learning, update }) {
   const { language } = useLanguage()
   if (!route.id) return <TrackOverview language={language}/>
+  if (route.id === 'writing') return <WritingStudio />
   const track = applicationTrack(route.id)
   if (!track) return <TrackOverview language={language}/>
   return <TrackExercise key={track.id} track={track} language={language}

@@ -7,5 +7,9 @@ export const personaArtwork = {
   thinker: root + '5e5357c58becbf70a753467d_peep-53.png',
   storyteller: root + '5e53575e7371bb2d639e9757_peep-49.png',
   explorer: root + '5e535ae8d39923990755a2e7_peep-79.png',
-  collaborator: root + '5e535dc1c67e797997975904_peep-104.png',
+  // Team Player is a two-person conversation, not an arbitrary solo portrait.
+  collaborator: [
+    root + '5e535b5e8becbf0e0b545ab7_peep-83.png',
+    root + '5e53566fc992503ea6c77af5_peep-41.png',
+  ],
 }

@@ -223,3 +223,17 @@ test('Learn and Progress replace the duplicate Home dashboard without losing les
   assert.match(library, /export function Courses\(/)
   assert.match(landing, /al-wordmark artico-wordmark" href="#\/courses"/)
 })
+
+test('course browsing stays compact without repeating lesson goals underneath titles', () => {
+  const library = readFileSync(new URL('./Library.jsx', import.meta.url), 'utf8')
+  const style = readFileSync(new URL('./library-readable.css', import.meta.url), 'utf8')
+  assert.match(library, /className="rl-chapter-list rl-course-lessons"/)
+  assert.equal((library.match(/className="rl-chapter-list rl-course-lessons"/g) ?? []).length, 2)
+  assert.doesNotMatch(library, /<small>\{chapter\.id === currentId/)
+  assert.doesNotMatch(library, /<small>\{t\(step\.description\)\}/)
+  assert.match(library, /<strong>\{language === 'ja' \? chapter\.ja : chapter\.title\}<\/strong>/)
+  assert.match(library, /<strong>\{language === 'ja' \? step\.ja : step\.en\}<\/strong>/)
+  assert.match(library, /\$\{chapter\.goal\}/) // descriptions still searchable
+  assert.match(style, /\.rl-course-lessons > a \{/)
+  assert.match(library, /className=\{chapter\.id === currentId \? 'is-current' : ''\}/)
+})

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
+import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
 const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
@@ -42,7 +43,7 @@ test('Vocabulary directory metadata matches all 78 existing topic titles without
   assert.ok(topics.every(topic=>Object.keys(topic).sort().join(',')==='ja,sourceLesson,topic'))
 })
 
-test('Lesson 97 supports a directory and direct routes for all 78 empty lesson pages',()=>{
+test('Lesson 97 supports a directory and direct routes for all 78 lesson pages',()=>{
   assert.deepEqual(parseRoute('#/lesson/97/study'),{path:'/lesson/97/study',page:'vocabulary',id:'97'})
   assert.equal(parseRoute('#/vocabulary').page,'vocabulary')
   for (let n=1;n<=78;n++) {
@@ -76,6 +77,40 @@ test('Lesson 97 supports a directory and direct routes for all 78 empty lesson p
   assert.match(ui,/topics\.map/)
   assert.match(ui,/This lesson is being prepared/)
   assert.match(ui,/topicHref\(next\.sourceLesson\)/)
+  assert.match(ui,/topic\.sourceLesson === 1/)
+  assert.match(ui,/VocabularyCountriesLesson/)
   assert.doesNotMatch(ui,/vocabularyCatalog\.json|vocabularyJapaneseAM|vocabularyJapaneseNZ|vocabularyJapaneseOverrides/)
   assert.match(css,/@media \(max-width: 620px\)/)
+})
+
+test('Lesson 1 preserves the organized country, nationality and place vocabulary',()=>{
+  assert.equal(countries.length,34)
+  assert.equal(new Set(countries.map(item=>item.code)).size,34)
+  assert.deepEqual(countries.map(item=>item.country),[
+    'Argentina','Australia','Brazil','Canada','China','Czech Republic / Czechia','Egypt','France','Germany','Greece',
+    'India','Indonesia','Japan','Mexico','Mongolia','Nepal','the Netherlands','New Zealand','Pakistan','the Philippines',
+    'Poland','Portugal','Republic of Ireland / ROI','Russia','Singapore','Slovakia','South Africa','South Korea','Spain',
+    'Thailand','Turkey','the United Arab Emirates / UAE','the United Kingdom / UK',
+    'the United States of America / United States / US / USA',
+  ])
+  assert.deepEqual(countries.map(item=>item.nationality),[
+    'Argentinian / Argentine','Australian','Brazilian','Canadian','Chinese','Czech','Egyptian','French','German','Greek',
+    'Indian','Indonesian','Japanese','Mexican','Mongolian','Nepali','Dutch','New Zealander','Pakistani','Filipino',
+    'Polish','Portuguese','Irish','Russian','Singaporean','Slovak','South African','South Korean','Spanish','Thai',
+    'Turkish','Emirati','British','American',
+  ])
+  assert.ok(countries.every(item=>item.nationality && item.ja && item.nationalityJa && item.regions.length))
+  assert.equal(countries.find(item=>item.code==='nl').nationality,'Dutch')
+  assert.equal(countries.find(item=>item.code==='np').nationality,'Nepali')
+  assert.equal(countries.find(item=>item.code==='kr').nationality,'South Korean')
+  assert.equal(countries.find(item=>item.code==='ie').nationality,'Irish')
+  assert.ok(countries.filter(item=>['ru','tr'].includes(item.code)).every(item=>item.regions.includes('europe')&&item.regions.includes('asia')))
+  assert.ok(countries.every(item=>item.regions.every(region=>regions.some(entry=>entry.id===region))))
+  assert.deepEqual(placeWords.map(item=>item.en),['country / countries','nationality / nationalities','city','hometown','state','ZIP code'])
+  assert.deepEqual(placePhrases.map(item=>item.en),['Where are you from?',"I'm from ..."])
+  for (const item of countries) {
+    const svg=readFileSync(new URL(`../../public/assets/vocabulary/flags/${item.code}.svg`,import.meta.url),'utf8')
+    assert.match(svg,/<svg/)
+  }
+  assert.match(readFileSync(new URL('../../public/assets/vocabulary/flags/LICENSE',import.meta.url),'utf8'),/MIT License/)
 })

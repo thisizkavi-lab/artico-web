@@ -135,7 +135,7 @@ export const howItWorks = [
     {
       items: [
         'Orientation — your reason and your route.',
-        'Foundations — letters, sounds, and rhythm.',
+        'Level Zero — letters, sounds, and rhythm.',
         'Social Fluency — words for everyday interaction.',
         'Study — understand the context and examples.',
         'Practice — choose useful phrases, say them, and try a situation.',
@@ -228,7 +228,7 @@ export const howItWorks = [
     'Aim for clear, dependable speech and attention to the people you are talking with. Develop your own preferences as you gain experience.',
   ]),
   section('how-start', 'Make a small start today.', [
-    'Read Orientation, glance through Foundations, and choose a starting point that is useful now. This edition’s guidance is in English.',
+    'Read Orientation, glance through Level Zero, and choose a starting point that is useful now. This edition’s guidance is in English.',
     'Study one conversation. Pick a small set of phrases to say aloud. Try a sound exercise alongside it if that helps. Spend some of your time actually speaking, rather than only rereading explanations.',
     'Your place, notes, saved phrases, and selections stay in this browser. Device sync and scheduled review reminders are not available yet. Progress shows what you opened and the ratings you gave yourself.',
   ]),

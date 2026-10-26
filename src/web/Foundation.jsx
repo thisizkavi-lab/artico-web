@@ -11,6 +11,7 @@ import LessonFooter from './LessonFooter'
 import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
 import OrientationFigure, { orientationFigures } from './OrientationFigures'
 import OrientationPractice from './OrientationPractice'
+import StudyPlan from './StudyPlan'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -345,6 +346,7 @@ function FoundationPractice({ id, learning, update }) {
   const { t, language } = useLanguage()
   if (id === 'tongue-intro') return <TwisterPractice />
   if (id === 'orientation') return <OrientationPractice learning={learning} update={update} />
+  if (id === 'how-it-works') return <StudyPlan learning={learning} update={update} />
   const titles = {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
@@ -357,19 +359,6 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {id === 'how-it-works' && (
-        <>
-          <p className="ip-prose"> {t("You can start with the letters, work on a sound, or explore a conversation. Choose what would help you today.")} </p>
-          <div className="rf-start-options">
-            <a href="#/foundation/letters/study"> {t("Get to know the letters")} <Glyph name="arrow" />
-            </a>
-            <a href="#/foundation/tongue-intro/study"> {t("Work on a sound")} <Glyph name="arrow" />
-            </a>
-            <a href="#/lesson/01/study"> {t("Begin a conversation")} <Glyph name="arrow" />
-            </a>
-          </div>
-        </>
-      )}
       {['letters', 'hear'].includes(id) && (
         <>
           <p className="ip-prose"> {t("Say a letter’s name before selecting it. Listen and compare. Then try a short sequence without looking.")} </p>

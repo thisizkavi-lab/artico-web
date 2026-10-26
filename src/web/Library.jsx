@@ -22,10 +22,10 @@ function CourseLesson({ href, number, iconName, title, active = false }) {
 
 export function Courses({ learning, route }) {
   const { t, language } = useLanguage()
-  const initialStage =
-    learningStages.find((stage) => route.path.endsWith('?' + stage.id))?.id ??
-    getLearningStage(learning.last)?.id ??
-    'orientation'
+  const learnStages = learningStages.filter(stage => stage.id !== 'orientation')
+  const requestedStage = learnStages.find(stage => route.path.endsWith('?' + stage.id))?.id
+  const initialStage = requestedStage ??
+    (getLearningStage(learning.last)?.id === 'social' ? 'social' : 'foundation')
   const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
   const initialGroup = groups.findIndex((group) =>
     currentId && Number(currentId) >= group.start && Number(currentId) <= group.end,
@@ -53,7 +53,7 @@ export function Courses({ learning, route }) {
     <div className="aw-page aw-library-page rl-vertical-page">
       <Heading eyebrow={t('YOUR LEARNING PATH')} title={t('Choose your next step.')} />
       <div className="rl-vertical-stages">
-        {learningStages.map((stage, index) => {
+        {learnStages.map((stage, index) => {
           const open = expandedStage === stage.id
           return (
             <section className={'rl-vertical-stage' + (open ? ' is-open' : '')}
@@ -141,6 +141,18 @@ export function Courses({ learning, route }) {
             </section>
           )
         })}
+        <section className="rl-vertical-stage rl-vertical-stage--future">
+          <span className="rl-vertical-step" aria-hidden="true">03</span>
+          <div className="rl-vertical-shell">
+            <div className="rl-vertical-stage-button rl-vertical-stage-static">
+              <CurriculumIcon name="globe" size={26} />
+              <span className="rl-vertical-stage-title">
+                <strong>{language === 'ja' ? '実践' : 'Application'}</strong>
+                <small>{language === 'ja' ? '自分の目的に英語を使う · 準備中' : 'Personal use cases · Coming later'}</small>
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )

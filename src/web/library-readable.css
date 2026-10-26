@@ -683,3 +683,16 @@
 @media (prefers-reduced-motion:reduce) {
   .rl-vertical-chevron { transition:none; }
 }
+
+/* Application is an honest preview, not a disabled/locked lesson control. */
+.rl-vertical-stage-static {
+  cursor:default;
+}
+.rl-vertical-stage-static:hover { background:transparent; }
+.rl-vertical-stage-static .rl-vertical-stage-title > small {
+  display:block; margin-top:5px; font-size:12px; font-weight:500;
+  line-height:1.5; color:#778e7d;
+}
+.rl-vertical-stage--future .rl-vertical-step {
+  color:#78927e; border-color:#bed0c0; background:#f7faf7;
+}

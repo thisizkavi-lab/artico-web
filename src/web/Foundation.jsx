@@ -8,6 +8,7 @@ import { getFoundationNavigation } from './pathway'
 import { TheoryAudioSample, YouTubeLessonPlayer } from './FoundationContent'
 import { Glyph } from './LessonExperience'
 import LessonFooter from './LessonFooter'
+import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -27,7 +28,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
           {t(navigation.stage.title)} <span>/</span> {language === 'ja' ? 'レッスン' : 'LESSON'}{' '}
           {String(navigation.index + 1).padStart(2, '0')}
         </p>
-        <h1>{title}</h1>
+        <div className="ip-heading-title"><CurriculumIcon name={foundationIcon(route.id)} size={30} /><h1>{title}</h1></div>
         <p>{subtitle}</p>
       </header>
       <div className="ip-mode-bar">

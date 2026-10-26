@@ -59,14 +59,21 @@ function PersonaImage({ roleId, language, small = false }) {
   const artwork = personaArtwork[roleId]
   const alt = language === 'ja' ? roles[roleId].ja + 'のイラスト' : 'Illustration for ' + roles[roleId].en
   if (error) return <CurriculumIcon name={iconName[roleId]} size={small ? 30 : 64} />
-  if (Array.isArray(artwork)) return (
-    <div className="rf-persona-duo" role="img" aria-label={alt}>
-      {artwork.map(src => <img key={src} src={src} alt="" loading={small ? 'lazy' : 'eager'}
-        decoding="async" onError={() => setError(true)} />)}
-    </div>
-  )
+  // The small picker needs a single portrait with the same visual size
+  // as the other options. The larger result may show a two-person scene.
+  if (Array.isArray(artwork)) {
+    if (small) return <img src={artwork[0]} alt={alt} width="132" height="132"
+      loading="lazy" decoding="async" onError={() => setError(true)} />
+    return (
+      <div className="rf-persona-duo" role="img" aria-label={alt}>
+        {artwork.map(src => <img key={src} src={src} alt="" loading="eager"
+          decoding="async" onError={() => setError(true)} />)}
+      </div>
+    )
+  }
   return <img src={artwork} alt={alt} loading={small ? 'lazy' : 'eager'}
-    decoding="async" onError={() => setError(true)} />
+    decoding="async" width={small ? 132 : 320} height={small ? 132 : 320}
+    onError={() => setError(true)} />
 }
 
 export default function OrientationPractice({ learning, update }) {
@@ -168,8 +175,10 @@ export default function OrientationPractice({ learning, update }) {
                   onClick={() => save({ ...answers, roleOverride:id })}
                 >
                   <span className="rf-persona-mini"><PersonaImage roleId={id} language={language} small /></span>
-                  <span lang="en">{role.en}</span>
-                  {language === 'ja' && <small>{role.ja}</small>}
+                  <span className="rf-persona-label">
+                    <strong lang="en">{role.en}</strong>
+                    {language === 'ja' && <small lang="ja">{role.ja}</small>}
+                  </span>
                 </button>
               )}
             </div>

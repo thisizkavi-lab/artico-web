@@ -100,7 +100,7 @@ const iconPaths = {
   repeat: 'M20 7V3l-3 3-3 1M4 17v4l3-3 3-1M5 8a8 8 0 0 1 13-2M19 16a8 8 0 0 1-13 2',
 };
 
-const stageMap = { orientation: 'compass', foundation: 'levelZero', social: 'messages' };
+const stageMap = { orientation: 'compass', foundation: 'levelZero', social: 'socialDuo' };
 const groupMap = {
   1: 'messages', 11: 'calendar', 20: 'utensils', 26: 'palette',
   34: 'storefront', 45: 'briefcase', 56: 'house', 65: 'route',
@@ -131,6 +131,42 @@ export const foundationIcon = (id) => foundationMap[id] ?? 'book';
 export const chapterIcon = (id) => chapters[Number(id) - 1] ?? 'book';
 
 export function CurriculumIcon({ name, size = 24, className = '' }) {
+  if (name === 'socialDuo') {
+    // Two distinct illustrated people in conversation rather than a generic
+    // people glyph. Simple silhouettes and thick outlines read at icon sizes.
+    return (
+      <svg
+        className={`curriculum-icon curriculum-icon--social-duo ${className}`.trim()}
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 92 62"
+        fill="none"
+        stroke="#272238"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        focusable="false"
+        aria-hidden="true"
+      >
+        <path d="M6 57 Q7 41 16 38 L33 38 Q40 42 41 57 Z" fill="#399fda" strokeWidth="2.7" />
+        <path d="M17 38 L24 46 L31 38" stroke="#277ca8" strokeWidth="2" />
+        <path d="M19 35 V40 Q24 44 29 40 V34 Z" fill="#e5a779" strokeWidth="2.3" />
+        <path d="M13 21 Q13 8 25 8 Q36 8 36 21 L35 30 Q32 38 24 38 Q16 37 14 30 Z" fill="#f5bc8d" strokeWidth="2.5" />
+        <path d="M12 25 Q9 15 17 10 Q20 5 28 7 Q37 7 39 17 L36 24 L32 16 Q24 19 17 16 L14 28 Z" fill="#3c344e" strokeWidth="2.4" />
+        <circle cx="29" cy="26" r="1.2" fill="#272238" stroke="none" />
+        <path d="M28 32 Q30 34 32 32" strokeWidth="1.5" />
+        <path d="M51 57 Q52 42 60 38 L77 38 Q85 43 86 57 Z" fill="#f2bd43" strokeWidth="2.7" />
+        <path d="M64 38 L69 44 L75 38" stroke="#d9902f" strokeWidth="2" />
+        <path d="M54 19 Q53 5 68 5 Q81 5 82 19 L81 38 Q78 41 74 39 L60 39 Q53 40 53 33 Z" fill="#6d4258" strokeWidth="2.5" />
+        <path d="M63 34 V41 Q69 44 74 40 V34" fill="#b97150" strokeWidth="2.2" />
+        <path d="M57 20 Q58 10 69 10 Q79 10 79 22 V29 Q77 38 68 38 Q59 38 57 30 Z" fill="#d99068" strokeWidth="2.5" />
+        <path d="M55 22 Q53 9 64 7 Q78 3 82 16 L79 27 L75 17 Q66 20 58 18 L57 27 Z" fill="#6d4258" strokeWidth="2.4" />
+        <circle cx="63" cy="27" r="1.2" fill="#272238" stroke="none" />
+        <path d="M60 32 Q62 34 64 32" strokeWidth="1.5" />
+        <path d="M43 15 L46 12 M46 23 H49 M43 30 L46 33" stroke="#ed735d" strokeWidth="2.4" />
+      </svg>
+    );
+  }
   if (name === 'levelZero') {
     // Compact hand-drawn A/B/C mark, modeled as vector geometry so it stays
     // sharp and transparent in both the Home circle and small course tree.

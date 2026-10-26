@@ -486,6 +486,10 @@
 /* Quiet grayscale curriculum hierarchy; Artico blue is reserved for active steps and keyboard focus. */
 /* A branching curriculum: stages > topics > lessons. Keep the connectors
    deliberately prominent while the leaf labels remain quiet and readable. */
+/* Keep the learning tree focused, including its title, without shrinking other Library pages. */
+.is-english-pilot .aw-page.aw-library-page.rl-vertical-page {
+  max-width:920px;
+}
 .rl-vertical-page {
   --rl-v-ink:#242424;
   --rl-v-line:#e1e1e1;
@@ -493,23 +497,24 @@
   --rl-v-branch:#c5c5c5;
   --rl-v-leaf:#dedede;
 }
-.rl-vertical-page > .aw-heading { margin-bottom:25px; }
-.rl-vertical-stages { position:relative; display:grid; gap:17px; }
-.rl-vertical-stages::before {
-  content:""; position:absolute; top:22px; bottom:24px; left:21px;
-  width:3px; border-radius:3px; background:var(--rl-v-trunk);
-  pointer-events:none;
-}
+.rl-vertical-page > .aw-heading { margin-bottom:21px; }
+.rl-vertical-stages { position:relative; display:grid; gap:14px; }
 .rl-vertical-stage {
-  display:grid; grid-template-columns:44px minmax(0,1fr);
-  gap:18px; align-items:start; position:relative; min-width:0;
+  display:grid; grid-template-columns:40px minmax(0,1fr);
+  gap:16px; align-items:start; position:relative; min-width:0;
+}
+/* Each trunk segment stops at the next node, including when a stage is open. */
+.rl-vertical-stage:not(:last-child)::after {
+  content:""; position:absolute; top:36px; bottom:-50px; left:19px;
+  width:3px; background:var(--rl-v-trunk); pointer-events:none;
 }
 .rl-vertical-stage::before {
-  content:""; position:absolute; top:21px; left:22px; width:40px;
+  content:""; position:absolute; top:35px; left:20px; width:36px;
   height:3px; background:var(--rl-v-trunk); pointer-events:none;
 }
 .rl-vertical-step {
-  display:grid; place-items:center; width:44px; height:44px;
+  display:grid; place-items:center; width:40px; height:40px;
+  margin-top:16px;
   position:relative; z-index:1; background:#fbfaf7;
   border:2px solid var(--rl-v-trunk); border-radius:50%;
   color:#555555; font-size:11px; font-weight:750;
@@ -524,8 +529,8 @@
 }
 .rl-vertical-stage.is-open > .rl-vertical-shell { border-color:#bcbcbc; }
 .rl-vertical-stage-button {
-  width:100%; min-height:88px; padding:19px 21px;
-  display:flex; align-items:center; gap:17px; text-align:left;
+  width:100%; min-height:72px; padding:14px 16px;
+  display:flex; align-items:center; gap:14px; text-align:left;
   cursor:pointer; border:0; background:transparent;
   color:var(--rl-v-ink); font:inherit;
 }
@@ -553,7 +558,7 @@
 .rl-vertical-group.is-open > .rl-vertical-group-button .rl-vertical-chevron {
   transform:rotate(225deg); margin-bottom:-4px;
 }
-.rl-vertical-stage-panel { border-top:1px solid #ededed; padding:7px 20px 12px; }
+.rl-vertical-stage-panel { border-top:1px solid #ededed; padding:7px 16px 12px; }
 .rl-vertical-stage-panel[hidden],
 .rl-vertical-lessons[hidden] { display:none; }
 
@@ -662,12 +667,12 @@
   outline:2px solid #285bcc; outline-offset:-2px;
 }
 @media (max-width:600px) {
-  .rl-vertical-stages { gap:12px; }
-  .rl-vertical-stages::before { left:15px; }
+  .rl-vertical-stages { gap:11px; }
   .rl-vertical-stage { grid-template-columns:33px minmax(0,1fr); gap:10px; }
-  .rl-vertical-stage::before { left:16px; top:16px; width:27px; }
-  .rl-vertical-step { width:33px; height:33px; font-size:10px; }
-  .rl-vertical-stage-button { min-height:75px; padding:14px 12px; gap:11px; }
+  .rl-vertical-stage:not(:last-child)::after { top:33px; bottom:-44px; left:15px; }
+  .rl-vertical-stage::before { left:16px; top:32px; width:27px; }
+  .rl-vertical-step { width:33px; height:33px; margin-top:16px; font-size:10px; }
+  .rl-vertical-stage-button { min-height:66px; padding:12px; gap:11px; }
   .rl-vertical-stage-button > .curriculum-icon { width:23px; height:23px; flex-basis:23px; }
   .rl-vertical-stage-button > .curriculum-icon--level-zero { width:31px; height:23px; flex-basis:31px; }
   .rl-vertical-stage-button > .curriculum-icon--social-duo { width:33px; height:25px; flex-basis:33px; }

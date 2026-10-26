@@ -232,7 +232,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.doesNotMatch(home, /Unlock|lock-icon|disabled button/i)
 })
 
-test('Learn keeps Foundations and Social Fluency and expands seven Application tracks', () => {
+test('Learn keeps Foundations and Social Fluency and expands eight Application tracks', () => {
   const library = readFileSync(new URL('./Library.jsx', import.meta.url), 'utf8')
   const style = readFileSync(new URL('./library-readable.css', import.meta.url), 'utf8')
   const catalog = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url), 'utf8'))
@@ -252,8 +252,8 @@ test('Learn keeps Foundations and Social Fluency and expands seven Application t
   assert.doesNotMatch(library, /Apex Communicator|Unlock|Coming later/)
 })
 
-test('all Application tracks have usable, bilingual practice tasks and valid deep links', () => {
-  const ids = ['tests','interviews','presentations','storytelling','writing','reading','ideas']
+test('all eight Application tracks have usable, bilingual practice tasks and valid deep links', () => {
+  const ids = ['tests','smalltalk','interviews','presentations','storytelling','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
   assert.equal(parseRoute('#/application').page, 'application')
   assert.equal(parseRoute('#/application/unknown').path, '/application')
@@ -271,7 +271,7 @@ test('all Application tracks have usable, bilingual practice tasks and valid dee
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),14)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),16)
 })
 
 test('Application exercises use learner notes, not fake scores or unlocks',()=>{
@@ -285,4 +285,23 @@ test('Application exercises use learner notes, not fake scores or unlocks',()=>{
   assert.match(ui, /aria-pressed=\{selected===i\}/)
   assert.match(css, /\.ap-draft:focus-visible/)
   assert.doesNotMatch(ui, /locked|unlock|CEFR score|AI score/i)
+})
+
+test('Small Talk uses real two-sided exchanges and saves both independent practice notes', () => {
+  const talk=applicationTracks.find(track=>track.id==='smalltalk')
+  assert.equal(talk.en,'Small Talk')
+  assert.equal(talk.ja,'ちょっとした会話')
+  assert.equal(talk.tasks.length,2)
+  assert.ok(talk.tasks.every(task=>task.kind==='speaking'))
+  assert.ok(talk.tasks.every(task=>task.example.includes('A:') && task.example.includes('B:')))
+  assert.equal(parseRoute('#/application/smalltalk').id,'smalltalk')
+  const notes={
+    [applicationResponseKey('smalltalk',0)]:'My opening question',
+    [applicationResponseKey('smalltalk',1)]:'My follow-up'
+  }
+  const clean=sanitizeLearning({...emptyLearning,responses:notes})
+  assert.deepEqual(
+    Object.fromEntries(Object.entries(clean.responses).filter(([key])=>key.startsWith('application-smalltalk-'))),
+    notes
+  )
 })

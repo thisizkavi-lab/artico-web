@@ -1,79 +1,11 @@
 import { useLanguage } from './Language'
 import { useState } from 'react'
 import { Button, Heading, Icon } from './components'
-import StudyMap from './StudyMap'
 import CurriculumIcon, { chapterIcon, foundationIcon, groupIcon, stageIcon } from './CurriculumIcon'
 import { introductionAliases } from '../course/introductions'
 import { getLearningStage, learningStages } from './pathway'
-import { catalog, chapterById, foundationSteps, groups, savedItems } from './content'
+import { catalog, foundationSteps, groups, savedItems } from './content'
 import './library-readable.css'
-
-export function Home({ learning, sync, storageAvailable }) {
-  const { t, language } = useLanguage()
-  const last = learning.last
-  const chapter = chapterById[last?.match(/\/lesson\/(\d+)/)?.[1]]
-  const foundation = foundationSteps.find((step) => last?.startsWith(`/foundation/${step.id}/`))
-  const stage = getLearningStage(last) ?? learningStages[0]
-  const practice = /\/(practice|chunks|whole)(\/|$|\?)/.test(last ?? '')
-  const set = chapter && learning.practiceSets?.[chapter.id]?.session
-  return (
-    <div className="aw-page aw-library-page">
-      <Heading
-        eyebrow={t("YOUR LEARNING SPACE")}
-        title={last ? t("A little further, today.") : t("Find your way into English.")}
-      />
-      <p className="rl-intro">{t("Understand the idea. Find the words. Make them your own.")}</p>
-      <section className="rl-resume">
-        <div>
-          <p className="rl-kicker">
-            {last ? t("PICK UP WHERE YOU LEFT OFF") : t("A GOOD PLACE TO BEGIN")}{' '}
-            <span> / {chapter ? t('CHAPTER {id}', { id: chapter.id }) : t(stage.title)}</span>
-          </p>
-          <h2>{(language === 'ja' ? chapter?.ja : chapter?.title) ?? (language === 'ja' ? foundation?.ja : foundation?.en) ?? t("The big picture")}</h2>
-          <p>{(language === 'ja' ? chapter?.goalJa : chapter?.goal) ?? t(stage.description)}</p>
-          {last && (
-            <span className="rl-resume-position">
-              {practice ? t("Practice") : t("Study")}
-              {practice && set?.active
-                ? ` · ${t('Phrase {current} of {total}', { current: set.index + 1, total: set.ids.length })}`
-                : ` · ${t('Your place is saved')}`}
-            </span>
-          )}
-          <div className="aw-actions">
-            <Button href={last ?? '/foundation/orientation/study'}>
-              {last ? t("Continue learning") : t("Start here")} <Icon name="next" />
-            </Button>
-            <Button variant="quiet" href="/courses"> {t("Browse lessons")} </Button>
-          </div>
-        </div>
-        {chapter?.hero ? (
-          <img
-            src={`${import.meta.env.BASE_URL}assets/course/${chapter.hero}`}
-            width="560"
-            height="280"
-            alt=""
-          />
-        ) : (
-          <div className="rl-start-note">
-            <span>{t("YOUR PACE. YOUR REASON.")}</span>
-            <p> {t("Small steps.")} <br /> {t("Real conversations.")} </p>
-            <small>{t("Start where it helps. Come back whenever you need.")}</small>
-          </div>
-        )}
-      </section>
-      <div className="aw-local">
-        <Icon name="check" />
-        <span>{storageAvailable ? t("Saved on this device") : t("Learning in this tab")}</span>
-        <button type="button" onClick={sync}> {t("About saving & sync ↗")} </button>
-      </div>
-      <StudyMap learning={learning} />
-      <a className="rl-history" href="#/progress">
-        <span>{t("Your learning so far")}</span>
-        <strong>{t("Progress & saved phrases →")}</strong>
-      </a>
-    </div>
-  )
-}
 
 export function Courses({ learning, route }) {
   const { t, language } = useLanguage()

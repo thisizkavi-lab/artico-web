@@ -14,7 +14,7 @@ const startingPoints = [
   },
   {
     id:'foundation',
-    icon:'abc',
+    icon:'levelZero',
     label:'Level Zero',
     ja:'レベルゼロ',
     description:'Start with letters and sounds.',

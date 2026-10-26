@@ -1,3 +1,72 @@
+/* Editorial illustrations sit in the reading flow exactly where an idea needs
+   a picture. They are not chapter heroes or extra onboarding instructions. */
+.rf-editorial-figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(230px, .88fr);
+  align-items: stretch;
+  width: min(100%, 820px);
+  margin: 24px 0 30px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dce5dd;
+  border-radius: 15px;
+  background: #fffefb;
+}
+.rf-editorial-art {
+  display: flex;
+  align-items: center;
+  background: #f6f7ef;
+  min-width: 0;
+}
+.rf-editorial-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.rf-editorial-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  padding: clamp(17px, 3vw, 27px);
+  min-width: 0;
+  line-height: 1.65;
+}
+.rf-editorial-kicker {
+  color: #668471;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.rf-editorial-caption strong {
+  color: #29463b;
+  font-size: clamp(15px, 1.7vw, 18px);
+  line-height: 1.5;
+  font-weight: 650;
+}
+.rf-editorial-detail {
+  color: #65756a;
+  font-size: 13px;
+  line-height: 1.75;
+}
+@media (max-width: 680px) {
+  .rf-editorial-figure {
+    grid-template-columns: minmax(0, 1fr);
+    margin: 19px 0 25px;
+  }
+  .rf-editorial-art {
+    justify-content: center;
+  }
+  .rf-editorial-art svg {
+    max-height: 210px;
+  }
+  .rf-editorial-caption {
+    padding: 16px 18px 19px;
+    gap: 5px;
+  }
+}
+
 .rf-page .ip-reading {
   max-width: 100%;
 }

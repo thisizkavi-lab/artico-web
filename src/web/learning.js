@@ -60,7 +60,7 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-6])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro))$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-6])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|interviews|presentations|storytelling|writing|reading|ideas)-[01])$/.test(
             id,
           ) &&
           typeof value === 'string' &&
@@ -113,6 +113,12 @@ export function parseRoute(hash) {
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
   if (path === '/courses?orientation') return { path: '/home', page: 'home' }
   const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
+  if (page === 'application') {
+    if (!id) return { path: '/application', page:'application' }
+    if (/^(?:tests|interviews|presentations|storytelling|writing|reading|ideas)$/.test(id) && !view)
+      return { path:'/application/' + id, page:'application', id }
+    return { path: '/application', page:'application' }
+  }
   if (page === 'home') return { path: '/home', page: 'home' }
   if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
   if (

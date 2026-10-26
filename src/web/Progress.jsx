@@ -38,7 +38,7 @@ export default function Progress({ learning }) {
             {chapter
               ? t('Chapter {id}', { id: chapter.id })
               : foundation
-                ? t("Foundations & orientation")
+                ? t("Orientation & Level Zero")
                 : t("Orientation")}{' '}
             ·{' '}
             {/\/(practice|chunks|whole)(?:[/?]|$)/.test(learning.last ?? '') ? t("Practice") : t("Study")}
@@ -76,7 +76,7 @@ export default function Progress({ learning }) {
       </section>
       {foundationOpened.length > 0 && (
         <section className="aw-progress-opened">
-          <h2>{t("Orientation & foundations")}</h2>
+          <h2>{t("Orientation & Level Zero")}</h2>
           {foundationOpened.map((step) => (
             <a key={step.id} href={`#/foundation/${step.id}/study`}>
               <strong>{language === 'ja' ? step.ja : step.en}</strong>

@@ -1,69 +1,52 @@
-/* Editorial illustrations sit in the reading flow exactly where an idea needs
-   a picture. They are not chapter heroes or extra onboarding instructions. */
-.rf-editorial-figure {
-  display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(230px, .88fr);
-  align-items: stretch;
-  width: min(100%, 820px);
-  margin: 24px 0 30px;
+/* Transparent editorial PNGs are embedded in the reading itself.
+   No bordered cards, boxed captions, or artificial backgrounds. */
+.rf-page .rf-illustrated-section {
+  display: block;
+  flow-root: auto;
+}
+.rf-page .rf-illustrated-section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.rf-page .rf-illustrated-section > .ip-section-heading {
+  margin-bottom: 20px;
+}
+.rf-page .rf-illustrated-section > .rc-source {
+  margin: 0 0 20px;
+}
+.rf-page .rf-illustrated-section > .ip-prose {
+  margin: 0 0 20px;
+}
+.rf-open-figure {
+  width: clamp(210px, 33%, 300px);
+  max-width: 100%;
   padding: 0;
-  overflow: hidden;
-  border: 1px solid #dce5dd;
-  border-radius: 15px;
-  background: #fffefb;
+  border: 0;
+  background: none;
+  box-shadow: none;
 }
-.rf-editorial-art {
-  display: flex;
-  align-items: center;
-  background: #f6f7ef;
-  min-width: 0;
+.rf-open-figure--right {
+  float: right;
+  margin: 0 0 16px clamp(20px, 3vw, 36px);
 }
-.rf-editorial-art svg {
+.rf-open-figure--left {
+  float: left;
+  margin: 0 clamp(20px, 3vw, 36px) 16px 0;
+}
+.rf-open-figure img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
+  object-fit: contain;
 }
-.rf-editorial-caption {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 9px;
-  padding: clamp(17px, 3vw, 27px);
-  min-width: 0;
-  line-height: 1.65;
-}
-.rf-editorial-kicker {
-  color: #668471;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .08em;
-}
-.rf-editorial-caption strong {
-  color: #29463b;
-  font-size: clamp(15px, 1.7vw, 18px);
-  line-height: 1.5;
-  font-weight: 650;
-}
-.rf-editorial-detail {
-  color: #65756a;
-  font-size: 13px;
-  line-height: 1.75;
-}
-@media (max-width: 680px) {
-  .rf-editorial-figure {
-    grid-template-columns: minmax(0, 1fr);
-    margin: 19px 0 25px;
-  }
-  .rf-editorial-art {
-    justify-content: center;
-  }
-  .rf-editorial-art svg {
-    max-height: 210px;
-  }
-  .rf-editorial-caption {
-    padding: 16px 18px 19px;
-    gap: 5px;
+@media (max-width: 700px) {
+  .rf-open-figure,
+  .rf-open-figure--right,
+  .rf-open-figure--left {
+    float: none;
+    margin: 5px auto 19px;
+    width: min(74%, 275px);
   }
 }
 

@@ -83,7 +83,7 @@ export function getLessonNavigation({ page, id }) {
     previous: chapter === 1
       ? `/foundation/${foundationIds.at(-1)}/study`
       : chapterPath(chapter - 1),
-    next: chapter === 96 ? '/progress' : chapterPath(chapter + 1),
+    next: chapter === 96 ? '/lesson/97/study' : chapterPath(chapter + 1),
     practice: `/lesson/${id}/practice`,
   }
 }

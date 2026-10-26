@@ -1,7 +1,7 @@
 import { LanguageSelector, useLanguage } from './Language'
 import { Component, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Button, Icon, IconButton, Modal } from './components'
-import { Courses, Home, PracticeLibrary, Saved } from './Library'
+import { Courses, PracticeLibrary, Saved } from './Library'
 import { chapterById, foundationSteps } from './content'
 import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './learning'
 import Progress from './Progress'
@@ -14,7 +14,6 @@ const ChapterLesson = lazy(() => import('./ChapterLesson'))
 const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
 const IntroductionsLesson = lazy(() => import('./IntroductionsLesson'))
 const destinations = [
-  { id: 'home', label: 'Home', icon: 'home' },
   { id: 'courses', label: 'Learn', icon: 'book' },
   { id: 'progress', label: 'Progress', icon: 'check' },
 ]
@@ -157,8 +156,8 @@ export default function ArticoWeb() {
   useEffect(() => {
     const chapter = chapterById[route.id]
     const foundation = foundationSteps.find((step) => step.id === route.id)
-    const pageName = { courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases', home: 'Your learning space' }[route.page]
-    document.title = `${(language === 'ja' ? chapter?.ja : chapter?.title) ?? (language === 'ja' ? foundation?.ja : foundation?.en) ?? t(pageName ?? 'Your learning space')} · Artico`
+    const pageName = { courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases' }[route.page]
+    document.title = `${(language === 'ja' ? chapter?.ja : chapter?.title) ?? (language === 'ja' ? foundation?.ja : foundation?.en) ?? t(pageName ?? 'Courses')} · Artico`
   }, [route.path, language, t])
   useEffect(() => () => clearTimeout(scrollTimer.current), [])
   useEffect(() => {
@@ -207,7 +206,7 @@ export default function ArticoWeb() {
               : t("Practice")
             : route.page === 'progress'
               ? t("Progress")
-              : t("Home")
+              : t("Learn")
   let screen
   if (route.page === 'courses')
     screen = <Courses learning={learning} route={route} key={route.path} />
@@ -251,10 +250,9 @@ export default function ArticoWeb() {
         />
       </Suspense>
     )
-  } else
-    screen = (
-      <Home learning={learning} storageAvailable={storageAvailable} sync={() => setModal(true)} />
-    )
+  } else {
+    screen = <Courses learning={learning} route={{ ...route, path:'/courses' }} />
+  }
   return (
     <div className="aw-app is-english-pilot" data-language={language}>
       <a
@@ -266,7 +264,7 @@ export default function ArticoWeb() {
         }}
       > {t("Skip to content")} </a>
       <aside className="aw-sidebar">
-        <a className="aw-wordmark artico-wordmark" href="#/home" aria-label={t("Artico home")}>
+        <a className="aw-wordmark artico-wordmark" href="#/courses" aria-label={t("Learn")}>
           artico<span className="artico-wordmark-dot" aria-hidden="true">.</span>
         </a>
         <nav className="aw-destinations" aria-label={t("Main navigation")}>

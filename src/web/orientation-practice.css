@@ -57,6 +57,16 @@
 .rf-profile-identity strong { display: block; font-family: 'Newsreader', Georgia, serif;
   color: #29443a; font-size: clamp(28px, 4vw, 42px); font-weight: 500; line-height: 1.1; }
 .rf-profile-identity p { color: #718577; font-size: 14px; margin-top: 8px; }
+.rf-profile-roles { margin: 0 0 23px; }
+.rf-profile-roles > p { font-size: 12px; font-weight: 700; color: #6a806e; margin: 0 0 11px; }
+.rf-profile-roles > div { display: flex; flex-wrap: wrap; gap: 7px; }
+.rf-profile-roles button { display: inline-flex; gap: 5px; align-items: center; background: #fff;
+  color: #5a6e60; border: 1px solid #d6e1d7; border-radius: 999px;
+  padding: 9px 13px; cursor: pointer; font: inherit; font-size: 12px; line-height: 1.4; }
+.rf-profile-roles button:hover { background: #f5f8f4; }
+.rf-profile-roles button.is-chosen { background: #e8f2e9; border-color: #729c7d; color: #31583d; }
+.rf-profile-roles button span { color: #889990; font-size: 10px; }
+.rf-profile-roles button:focus-visible { outline: 3px solid #7a9d8a; outline-offset: 3px; }
 .rf-profile-why { border-top: 1px solid #e3e8e3; padding: 19px 0 26px; }
 .rf-profile-why > span { color: #6a8a76; font-size: 12px; font-weight: 700; }
 .rf-profile-why p { color: #31483c; margin: 9px 0 0; font-size: clamp(17px,2.5vw,22px); line-height: 1.75; font-weight: 550; }

@@ -70,3 +70,16 @@ test('the learner can choose a different imagined self without changing why they
   assert.equal(normalizeOrientationAnswers({ ...sample, roleOverride:'invalid' }).roleOverride, null)
   assert.equal(parseOrientationAnswers(JSON.stringify({ ...sample, roleOverride:'explorer' })).roleOverride,'explorer')
 })
+
+test('persona labels are natural and do not combine incompatible adjectives', () => {
+  assert.equal(roles.collaborator.en, 'Team Player')
+  assert.equal(roles.thinker.en, 'Thinker')
+  for (const goal of choices.goal) {
+    for (const voice of choices.voice) {
+      const result = buildOrientationResult({ ...sample, goal:goal.id, voice:voice.id })
+      assert.equal(result.titleEn, 'The ' + result.role.en)
+      assert.equal(result.styleEn, voice.en)
+      assert.equal(result.styleJa, voice.ja)
+    }
+  }
+})

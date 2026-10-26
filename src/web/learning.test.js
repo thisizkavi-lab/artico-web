@@ -325,7 +325,7 @@ test('Academic and Humor routes are working and deep conversations remain in Ide
   assert.equal(applicationTracks.filter(track=>track.id==='relationships').length,0)
 })
 
-test('language switch and learning views share a coherent blue palette', () => {
+test('learning tree is grayscale with blue selection while other views retain blue', () => {
   const language = readFileSync(new URL('./Language.jsx', import.meta.url), 'utf8')
   const selectorStyle = readFileSync(new URL('./language.css', import.meta.url), 'utf8')
   const shell = readFileSync(new URL('./english-shell.css', import.meta.url), 'utf8')
@@ -344,10 +344,18 @@ test('language switch and learning views share a coherent blue palette', () => {
   assert.match(selectorStyle, /\.aw-language-option\[aria-pressed="true"\]/)
   assert.match(selectorStyle, /background:#285bcc; color:#fff/)
   assert.match(selectorStyle, /\.aw-language-option:focus-visible/)
-  assert.match(path, /--rl-v-trunk:#7198d2/)
-  assert.match(path, /--rl-v-branch:#a1bae4/)
-  assert.match(path, /--rl-v-leaf:#bfd1ee/)
+  assert.match(path, /--rl-v-trunk:#9c9c9c/)
+  assert.match(path, /--rl-v-branch:#c5c5c5/)
+  assert.match(path, /--rl-v-leaf:#dedede/)
   assert.match(path, /background:#285bcc; color:white; border-color:#285bcc/)
+  assert.match(path, /--rl-v-ink:#242424/)
+  assert.match(path, /color:#242424; font-size:22px/)
+  assert.match(path, /\.rl-vertical-lesson\.is-current[^\n]*\{ color:#285bcc; background:#eef3ff;/)
+  assert.match(path, /\.rl-vertical-lesson\.is-current \.curriculum-icon/)
+  assert.match(path, /border-left:3px solid var\(--rl-v-leaf\)/)
+  assert.match(path, /width:3px; background:var\(--rl-v-branch\)/)
+  assert.doesNotMatch(path, /--rl-v-trunk:#7198d2|--rl-v-branch:#a1bae4|--rl-v-leaf:#bfd1ee/)
+
   assert.match(home, /background:#285bcc; color:white/)
   assert.match(application, /\.ap-exercise-tabs button\.is-selected/)
   assert.match(writing, /\.ws-prompt-item\.is-selected/)

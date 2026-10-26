@@ -344,6 +344,16 @@
   border-top: 1px solid var(--line);
 }
 .rl-chapter-list > a > .rl-lesson-copy { flex: 1; min-width: 0; }
+/* Course rows now contain only number, icon, title, and arrow.
+   Keep the rest of the learning/progress list styles unchanged. */
+.rl-course-lessons > a {
+  padding: 14px 8px;
+  min-height: 62px;
+}
+.rl-course-lessons .rl-lesson-copy strong {
+  line-height: 1.45;
+}
+
 .rl-chapter-list .rl-topic-icon { flex: 0 0 auto; color: #587966; }
 .rl-chapter-list > a:hover .rl-topic-icon, .rl-chapter-list > a.is-current .rl-topic-icon { color: var(--brand); }
 .rl-stage-number .curriculum-icon { flex: 0 0 auto; color: #466e5a; }

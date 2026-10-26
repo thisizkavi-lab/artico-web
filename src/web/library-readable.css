@@ -483,15 +483,15 @@
 }
 
 
-/* Blue accents harmonize the learning path with the existing blue chapter interface. */
+/* Quiet grayscale curriculum hierarchy; Artico blue is reserved for active steps and keyboard focus. */
 /* A branching curriculum: stages > topics > lessons. Keep the connectors
    deliberately prominent while the leaf labels remain quiet and readable. */
 .rl-vertical-page {
-  --rl-v-ink:#23374f;
-  --rl-v-line:#d9e1ee;
-  --rl-v-trunk:#7198d2;
-  --rl-v-branch:#a1bae4;
-  --rl-v-leaf:#bfd1ee;
+  --rl-v-ink:#242424;
+  --rl-v-line:#e1e1e1;
+  --rl-v-trunk:#9c9c9c;
+  --rl-v-branch:#c5c5c5;
+  --rl-v-leaf:#dedede;
 }
 .rl-vertical-page > .aw-heading { margin-bottom:25px; }
 .rl-vertical-stages { position:relative; display:grid; gap:17px; }
@@ -512,7 +512,7 @@
   display:grid; place-items:center; width:44px; height:44px;
   position:relative; z-index:1; background:#fbfaf7;
   border:2px solid var(--rl-v-trunk); border-radius:50%;
-  color:#51617b; font-size:11px; font-weight:750;
+  color:#555555; font-size:11px; font-weight:750;
   font-variant-numeric:tabular-nums;
 }
 .rl-vertical-stage.is-open > .rl-vertical-step {
@@ -522,28 +522,28 @@
   min-width:0; border:1px solid var(--rl-v-line);
   border-radius:13px; overflow:hidden; background:white;
 }
-.rl-vertical-stage.is-open > .rl-vertical-shell { border-color:#b2bccc; }
+.rl-vertical-stage.is-open > .rl-vertical-shell { border-color:#bcbcbc; }
 .rl-vertical-stage-button {
   width:100%; min-height:88px; padding:19px 21px;
   display:flex; align-items:center; gap:17px; text-align:left;
   cursor:pointer; border:0; background:transparent;
   color:var(--rl-v-ink); font:inherit;
 }
-.rl-vertical-stage-button:hover { background:#f6f9ff; }
-.rl-vertical-stage-button > .curriculum-icon { flex:0 0 28px; color:#37578b; }
+.rl-vertical-stage-button:hover { background:#f7f7f7; }
+.rl-vertical-stage-button > .curriculum-icon { flex:0 0 28px; color:#555555; }
 .rl-vertical-stage-title {
   flex:1; min-width:0; display:flex; flex-direction:column; gap:5px;
 }
 .rl-vertical-stage-title > strong {
-  color:#23374f; font-size:22px; font-weight:750;
+  color:#242424; font-size:22px; font-weight:750;
   letter-spacing:-.025em; line-height:1.35;
 }
 .rl-vertical-stage-title > small {
-  font-size:12px; font-weight:500; color:#677b9c; line-height:1.4;
+  font-size:12px; font-weight:500; color:#777777; line-height:1.4;
 }
 .rl-vertical-chevron {
   flex:0 0 10px; width:10px; height:10px; display:block;
-  border-right:2px solid #7285a3; border-bottom:2px solid #7285a3;
+  border-right:2px solid #888888; border-bottom:2px solid #888888;
   transform:rotate(45deg); transition:transform .15s ease;
   margin:0 4px 5px auto;
 }
@@ -551,7 +551,7 @@
 .rl-vertical-group.is-open > .rl-vertical-group-button .rl-vertical-chevron {
   transform:rotate(225deg); margin-bottom:-4px;
 }
-.rl-vertical-stage-panel { border-top:1px solid #e8edf6; padding:7px 20px 12px; }
+.rl-vertical-stage-panel { border-top:1px solid #ededed; padding:7px 20px 12px; }
 .rl-vertical-stage-panel[hidden],
 .rl-vertical-lessons[hidden] { display:none; }
 
@@ -563,8 +563,8 @@
 .rl-vertical-lesson {
   position:relative; display:flex; align-items:center; gap:14px;
   min-width:0; min-height:58px; padding:12px 3px;
-  border-bottom:1px solid #e8edf6;
-  color:#495870; text-decoration:none;
+  border-bottom:1px solid #ededed;
+  color:#505050; text-decoration:none;
 }
 .rl-vertical-lesson::before {
   content:""; position:absolute; top:0; left:-24px;
@@ -578,19 +578,23 @@
   width:3px; background:var(--rl-v-leaf); pointer-events:none;
 }
 .rl-vertical-lesson:last-child { border-bottom:0; }
-.rl-vertical-lesson:hover { color:#263b5d; background:#f6f9ff; }
-.rl-vertical-lesson.is-current { color:#25395a; background:#eaf1ff; }
+.rl-vertical-lesson:hover { color:#282828; background:#f7f7f7; }
+.rl-vertical-lesson.is-current { color:#285bcc; background:#eef3ff; }
 .rl-vertical-lesson.is-current .rl-vertical-lesson-title { font-weight:750; }
+/* A chosen lesson gets the blue emphasis; the branch geometry stays neutral. */
+.rl-vertical-lesson.is-current .rl-vertical-lesson-number,
+.rl-vertical-lesson.is-current .curriculum-icon,
+.rl-vertical-lesson.is-current .rl-vertical-arrow { color:#285bcc; }
 .rl-vertical-lesson-number {
-  flex:0 0 24px; color:#7285a3; font-size:11px;
+  flex:0 0 24px; color:#888888; font-size:11px;
   font-variant-numeric:tabular-nums;
 }
-.rl-vertical-lesson .curriculum-icon { flex:0 0 19px; color:#6e82a1; }
+.rl-vertical-lesson .curriculum-icon { flex:0 0 19px; color:#777777; }
 .rl-vertical-lesson-title {
   flex:1; min-width:0; font-size:14px; font-weight:530;
   line-height:1.5; overflow-wrap:break-word;
 }
-.rl-vertical-arrow { font-size:22px; color:#7487a5; line-height:1; font-weight:300; }
+.rl-vertical-arrow { font-size:22px; color:#8a8a8a; line-height:1; font-weight:300; }
 .rl-vertical-foundation::before {
   content:""; position:absolute; left:0; top:-7px; height:7px;
   width:3px; background:var(--rl-v-leaf);
@@ -601,20 +605,20 @@
 .rl-vertical-social { min-width:0; }
 .rl-vertical-search {
   margin:10px 0 15px; padding:9px 13px;
-  border:1px solid #d8e0ed; border-radius:9px;
+  border:1px solid #dedede; border-radius:9px;
   display:flex; gap:10px; align-items:center;
-  color:#7a8ca8; background:white;
+  color:#8a8a8a; background:white;
 }
 .rl-vertical-search .curriculum-icon { flex-shrink:0; }
 .rl-vertical-search input {
   min-width:0; width:100%; border:0; outline:none;
-  color:#243757; background:transparent; font:inherit; font-size:13px;
+  color:#333333; background:transparent; font:inherit; font-size:13px;
 }
-.rl-vertical-search:focus-within { border-color:#527aba; box-shadow:0 0 0 2px #d5deec; }
-.rl-vertical-search input::placeholder { color:#8c9bb4; }
+.rl-vertical-search:focus-within { border-color:#285bcc; box-shadow:0 0 0 2px #dce7ff; }
+.rl-vertical-search input::placeholder { color:#999999; }
 .rl-vertical-group-tree { position:relative; margin-left:16px; padding-left:24px; }
 .rl-vertical-group {
-  position:relative; border-bottom:1px solid #e8edf6;
+  position:relative; border-bottom:1px solid #ededed;
 }
 .rl-vertical-group:last-child { border-bottom:0; }
 .rl-vertical-group:not(:last-child)::after {
@@ -625,7 +629,7 @@
   position:relative; min-height:60px; padding:13px 3px; width:100%;
   display:flex; align-items:center; gap:12px;
   border:0; background:transparent; text-align:left;
-  cursor:pointer; color:#263b5c; font:inherit;
+  cursor:pointer; color:#444444; font:inherit;
 }
 .rl-vertical-group-button::before {
   content:""; position:absolute; top:0; left:-24px;
@@ -634,23 +638,23 @@
   border-bottom:3px solid var(--rl-v-branch);
   border-bottom-left-radius:10px; pointer-events:none;
 }
-.rl-vertical-group-button:hover { color:#203350; background:#f6f9ff; }
+.rl-vertical-group-button:hover { color:#242424; background:#f7f7f7; }
 .rl-vertical-range {
-  flex:0 0 43px; color:#65799a;
+  flex:0 0 43px; color:#777777;
   font-size:11px; font-variant-numeric:tabular-nums;
 }
-.rl-vertical-group-button > .curriculum-icon { flex:0 0 20px; color:#5e7190; }
+.rl-vertical-group-button > .curriculum-icon { flex:0 0 20px; color:#666666; }
 .rl-vertical-group-title {
   min-width:0; flex:1; font-size:17px; line-height:1.4;
-  font-weight:730; letter-spacing:-.015em; color:#233756;
+  font-weight:730; letter-spacing:-.015em; color:#333333;
 }
-.rl-vertical-group-count { font-size:11px; color:#7f90ac; }
+.rl-vertical-group-count { font-size:11px; color:#888888; }
 .rl-vertical-group-button .rl-vertical-chevron { flex-basis:9px; width:9px; height:9px; }
 .rl-vertical-group-lessons { margin-left:16px; padding-left:24px; }
 .rl-vertical-group-lessons .rl-vertical-lesson {
   min-height:52px; padding:9px 3px;
 }
-.rl-vertical-empty { color:#7386a4; font-size:13px; padding:18px 3px; }
+.rl-vertical-empty { color:#777777; font-size:13px; padding:18px 3px; }
 .rl-vertical-page button:focus-visible,
 .rl-vertical-page .rl-vertical-lesson:focus-visible {
   outline:2px solid #285bcc; outline-offset:-2px;
@@ -692,8 +696,8 @@
 .rl-vertical-stage-static:hover { background:transparent; }
 .rl-vertical-stage-static .rl-vertical-stage-title > small {
   display:block; margin-top:5px; font-size:12px; font-weight:500;
-  line-height:1.5; color:#687c9d;
+  line-height:1.5; color:#777777;
 }
 .rl-vertical-stage--future .rl-vertical-step {
-  color:#6b7f9f; border-color:#b2c2dc; background:#f6f9ff;
+  color:#777777; border-color:#cccccc; background:#fafafa;
 }

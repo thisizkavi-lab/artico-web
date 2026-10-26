@@ -37,7 +37,7 @@ const startingPoints = [
     ja:'実践',
     description:'Use English for your own goals.',
     descriptionJa:'自分の目的に英語を使う。',
-    href:null,
+    href:'#/application',
   },
 ]
 

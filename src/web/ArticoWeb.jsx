@@ -10,6 +10,7 @@ import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
 
 const Foundation = lazy(() => import('./Foundation'))
+const Application = lazy(() => import('./Application'))
 const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
 const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
@@ -182,7 +183,9 @@ export default function ArticoWeb() {
       180,
     )
   }
-  const activeNav = route.page === 'foundation' && ['orientation', 'how-it-works'].includes(route.id)
+  const activeNav = route.page === 'application'
+    ? 'courses'
+    : route.page === 'foundation' && ['orientation', 'how-it-works'].includes(route.id)
     ? 'home'
     : ['lesson', 'foundation'].includes(route.page)
       ? 'courses'
@@ -198,8 +201,10 @@ export default function ArticoWeb() {
   const crumb =
     route.page === 'lesson'
       ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
-      : route.page === 'foundation'
-        ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Foundations')}`
+      : route.page === 'application'
+        ? `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
+        : route.page === 'foundation'
+          ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Foundations')}`
         : route.page === 'courses'
           ? t('Learn')
           : ['practice', 'saved'].includes(route.page)
@@ -215,6 +220,12 @@ export default function ArticoWeb() {
   if (route.page === 'home') screen = <Home />
   else if (route.page === 'courses')
     screen = <Courses learning={learning} route={route} key={route.path} />
+  else if (route.page === 'application')
+    screen = (
+      <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}>
+        <Application route={route} learning={learning} update={update} />
+      </Suspense>
+    )
   else if (route.page === 'practice') screen = <PracticeLibrary learning={learning} />
   else if (route.page === 'progress') screen = <Progress learning={learning} />
   else if (route.page === 'saved')

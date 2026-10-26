@@ -39,14 +39,28 @@
 .rf-plan-milestone > div:last-child > strong { font-size:15px; font-weight:600; line-height:1.6; color:#2e4638; }
 .rf-plan-milestone > div:last-child > span { font-size:12px; color:#8b9a8e; }
 .rf-plan-caveat { max-width:77ch; font-size:11px; line-height:1.85; margin-top:15px; color:#829285; }
-.rf-plan-launch { margin-top:26px; }
-.rf-plan-actions { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-top:24px; }
-.rf-plan-actions button,.rf-plan-actions a { display:inline-flex; align-items:center; justify-content:center; text-align:center;
-  min-height:47px; padding:12px 19px; font:inherit; font-size:13px; font-weight:700; border-radius:10px; }
-.rf-plan-save { background:transparent; border:1px solid #cbdacf; color:#52725a; cursor:pointer; }
-.rf-plan-save:disabled { opacity:.75; cursor:default; }
-.rf-plan-start { background:#365c48; border:1px solid #365c48; color:#fff; text-decoration:none; }
+.rf-plan-actions { display:flex; justify-content:flex-start; margin-top:24px; }
+.rf-plan-start { display:inline-flex; justify-content:center; align-items:center;
+  min-height:49px; padding:12px 23px; font:inherit; font-size:13px; font-weight:700;
+  border:1px solid #365c48; border-radius:10px; background:#365c48;
+  color:#fff; cursor:pointer; }
 .rf-plan-start:hover { background:#284b38; }
+.rf-plan-outlook { max-width:790px; }
+.rf-plan-outlook h2 { max-width:660px; font-size:clamp(29px,4vw,40px); font-weight:550;
+  letter-spacing:-.035em; line-height:1.45; margin:8px 0 21px; }
+.rf-plan-outlook-target { font-size:clamp(24px,3.7vw,36px); font-weight:600;
+  letter-spacing:-.02em; color:#355c46; line-height:1.55; margin:0 0 23px; }
+.rf-plan-example { margin:0 0 27px; padding-left:17px; border-left:3px solid #a9c1af; }
+.rf-plan-example > span { display:block; font-size:12px; font-weight:700; color:#738d7a; margin:0 0 5px; }
+.rf-plan-example p { color:#3f5949; font-size:15px; line-height:1.75; margin:0; }
+.rf-plan-outlook .rf-plan-result { margin-top:0; }
+.rf-plan-effort { max-width:68ch; font-size:15px; font-weight:600; line-height:1.85;
+  color:#3c6049; margin:26px 0 14px; }
+.rf-plan-edit { margin-top:20px; padding:12px 16px; background:#fff; color:#365e48;
+  border:1px solid #b8cdbd; border-radius:9px; cursor:pointer; font:inherit;
+  font-size:13px; font-weight:650; }
+.rf-plan-edit:hover { background:#f4f8f3; }
+.rf-plan-edit:focus-visible { outline:3px solid #8bae96; outline-offset:3px; }
 @media(max-width:680px) {
   .rf-plan { margin:7px 0 15px; }
   .rf-plan-head { margin-bottom:22px; }
@@ -56,8 +70,9 @@
   .rf-plan-split { gap:13px; }
   .rf-plan-plus { padding:0; }
   .rf-plan-milestone { grid-template-columns:53px minmax(0,1fr); gap:13px; }
-  .rf-plan-actions { flex-direction:column-reverse; align-items:stretch; }
-  .rf-plan-actions button,.rf-plan-actions a { width:100%; }
+  .rf-plan-actions { align-items:stretch; }
+  .rf-plan-actions button { width:100%; }
+  .rf-plan-outlook-target { margin-bottom:18px; }
 }
 @media(prefers-reduced-motion:reduce) {
   .rf-plan-bar span,.rf-plan-choice { transition:none; }

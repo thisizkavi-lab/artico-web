@@ -69,7 +69,7 @@ test('all 104 lessons have a reversible path from Orientation through Chapter 96
     const route = parseRoute(`#${path}`)
     const navigation = getLessonNavigation(route)
     assert.equal(navigation.previous, routes[index - 1] ?? '/home', path)
-    assert.equal(navigation.next, routes[index + 1] ?? '/progress', path)
+    assert.equal(navigation.next, routes[index + 1] ?? '/lesson/97/study', path)
     const practice = parseRoute(`#${navigation.practice}`)
     assert.equal(practice.id, route.id)
     assert.equal(practice.page, route.page)
@@ -140,7 +140,7 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
     'phrase-coworker',
   )
   assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
-  assert.equal(parseRoute('#/lesson/97/study').page, 'home')
+  assert.equal(parseRoute('#/lesson/97/study').page, 'vocabulary')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line3').line, 'ch02-line3')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch03-line3').line, undefined)
   assert.equal(

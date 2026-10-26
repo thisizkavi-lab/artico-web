@@ -207,3 +207,19 @@ test('Home is retired without breaking old bookmarks, while Progress retains les
   const continued = visit(emptyLearning, '/foundation/how-it-works/practice')
   assert.equal(continued.last, '/foundation/how-it-works/practice')
 })
+
+test('Learn and Progress replace the duplicate Home dashboard without losing lesson navigation', () => {
+  const shell = readFileSync(new URL('./ArticoWeb.jsx', import.meta.url), 'utf8')
+  const library = readFileSync(new URL('./Library.jsx', import.meta.url), 'utf8')
+  const progress = readFileSync(new URL('./Progress.jsx', import.meta.url), 'utf8')
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+
+  assert.doesNotMatch(shell, /id: 'home', label: 'Home'/)
+  assert.match(shell, /id: 'courses', label: 'Learn'/)
+  assert.match(shell, /id: 'progress', label: 'Progress'/)
+  assert.match(shell, /href="#\/courses" aria-label=\{t\("Learn"\)\}/)
+  assert.doesNotMatch(library, /export function Home\(/)
+  assert.match(progress, /aw-progress-resume/)
+  assert.match(library, /export function Courses\(/)
+  assert.match(landing, /al-wordmark artico-wordmark" href="#\/courses"/)
+})

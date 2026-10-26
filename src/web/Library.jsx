@@ -77,7 +77,7 @@ export function Courses({ learning, route }) {
                     <strong>{t(stage.title)}</strong>
                     <small>{stageCount(stage)}</small>
                   </span>
-                  <span className="rl-vertical-chevron" aria-hidden="true">⌄</span>
+                  <span className="rl-vertical-chevron" aria-hidden="true" />
                 </button>
                 <div id={'rl-stage-panel-' + stage.id}
                   className="rl-vertical-stage-panel" hidden={!open}>
@@ -97,7 +97,7 @@ export function Courses({ learning, route }) {
                   ) : (
                     <div className="rl-vertical-social">
                       <label className="rl-vertical-search">
-                        <span className="rl-vertical-search-icon" aria-hidden="true">⌕</span>
+                        <CurriculumIcon className="rl-vertical-search-icon" name="search" size={19} />
                         <input type="search" value={search}
                           onChange={(event) => setSearch(event.target.value)}
                           placeholder={t('Find a chapter')}
@@ -125,7 +125,7 @@ export function Courses({ learning, route }) {
                               <span className="rl-vertical-group-count">
                                 {language === 'ja' ? group.chapters.length + '件' : group.chapters.length}
                               </span>
-                              <span className="rl-vertical-chevron" aria-hidden="true">⌄</span>
+                              <span className="rl-vertical-chevron" aria-hidden="true" />
                             </button>
                             <div id={'rl-group-panel-' + group.start}
                               className="rl-vertical-lessons rl-vertical-group-lessons"

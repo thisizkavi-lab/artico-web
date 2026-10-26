@@ -39,17 +39,24 @@ export const useLanguage = () => useContext(LanguageContext)
 export function LanguageSelector({ profile = false }) {
   const { language, setLanguage, t, persistent } = useLanguage()
   return (
-    <label className={`aw-language ${profile ? 'aw-language-profile' : ''}`}>
-      {profile ? <span>{t('Explanation language')}</span> : (
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-          <circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" />
-        </svg>
-      )}
-      <select aria-label={t('Explanation language')} value={language} onChange={(event) => setLanguage(event.target.value)}>
-        {languages.map((item) => <option key={item.id} value={item.id} lang={item.id}>{item.label}</option>)}
-      </select>
+    <div className={`aw-language ${profile ? 'aw-language-profile' : ''}`}>
+      {profile && <span className="aw-language-label">{t('Explanation language')}</span>}
+      <div className="aw-language-toggle" role="group" aria-label={t('Explanation language')}>
+        {[...languages].reverse().map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            lang={item.id}
+            className="aw-language-option"
+            aria-pressed={language === item.id}
+            onClick={() => setLanguage(item.id)}
+          >
+            {item.id === 'en' ? 'EN' : item.label}
+          </button>
+        ))}
+      </div>
       {profile && <small>{t('English phrases stay in English. Choose the language for explanations and menus.')}</small>}
       {profile && !persistent && <small role="status">{t('Your language choice is saved for this visit only.')}</small>}
-    </label>
+    </div>
   )
 }

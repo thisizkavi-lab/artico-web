@@ -11,6 +11,7 @@ function CourseLesson({ href, number, iconName, title, active = false }) {
   return (
     <a className={'rl-vertical-lesson' + (active ? ' is-current' : '')} href={href}
       aria-current={active ? 'location' : undefined}>
+      <span className="rl-tree-node rl-tree-node--lesson" aria-hidden="true" />
       <span className="rl-vertical-lesson-number">{number}</span>
       <CurriculumIcon name={iconName} size={19} />
       <span className="rl-vertical-lesson-title">{title}</span>
@@ -33,13 +34,6 @@ export function Courses({ learning, route }) {
   const [expandedGroup, setExpandedGroup] = useState(initialGroup >= 0 ? initialGroup : 0)
   const [search, setSearch] = useState('')
   const query = search.trim().toLowerCase()
-  const stageCount = (stage) =>
-    stage.id === 'social'
-      ? language === 'ja' ? '96チャプター · 10グループ' : '96 chapters · 10 groups'
-      : language === 'ja'
-        ? stage.lessonIds.length + 'レッスン'
-        : stage.lessonIds.length + ' lessons'
-
   const visibleGroups = groups.map((group, i) => {
     const chapters = catalog.filter((chapter) => {
       const number = Number(chapter.id)
@@ -75,7 +69,6 @@ export function Courses({ learning, route }) {
                   <CurriculumIcon name={stageIcon(stage.id)} size={26} />
                   <span className="rl-vertical-stage-title">
                     <strong>{t(stage.title)}</strong>
-                    <small>{stageCount(stage)}</small>
                   </span>
                   <span className="rl-vertical-chevron" aria-hidden="true" />
                 </button>
@@ -118,14 +111,9 @@ export function Courses({ learning, route }) {
                                   setExpandedGroup(group.i)
                                 } else setExpandedGroup(groupOpen ? null : group.i)
                               }}>
-                              <span className="rl-vertical-range">
-                                {String(group.start).padStart(2, '0')}–{String(group.end).padStart(2, '0')}
-                              </span>
+                              <span className="rl-tree-node rl-tree-node--group" aria-hidden="true" />
                               <CurriculumIcon name={groupIcon(group.start)} size={20} />
                               <span className="rl-vertical-group-title">{t(group.title)}</span>
-                              <span className="rl-vertical-group-count">
-                                {language === 'ja' ? group.chapters.length + '件' : group.chapters.length}
-                              </span>
                               <span className="rl-vertical-chevron" aria-hidden="true" />
                             </button>
                             <div id={'rl-group-panel-' + group.start}

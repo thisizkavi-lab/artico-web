@@ -103,7 +103,8 @@ export function Courses({ learning, route }) {
                           placeholder={t('Find a chapter')}
                           aria-label={t('Find a chapter')} />
                       </label>
-                      {visibleGroups.length ? visibleGroups.map((group) => {
+                      <div className="rl-vertical-group-tree">
+                        {visibleGroups.length ? visibleGroups.map((group) => {
                         const groupOpen = Boolean(query) || expandedGroup === group.i
                         return (
                           <section className={'rl-vertical-group' + (groupOpen ? ' is-open' : '')}
@@ -143,7 +144,8 @@ export function Courses({ learning, route }) {
                         )
                       }) : <p className="rl-vertical-empty">
                         {t('No chapters match. Try a shorter search.')}
-                      </p>}
+                        </p>}
+                      </div>
                     </div>
                   )}
                 </div>

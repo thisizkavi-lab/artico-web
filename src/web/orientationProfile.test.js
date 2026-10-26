@@ -4,6 +4,8 @@ import {
   ORIENTATION_RESPONSE_KEY,
   buildOrientationResult,
   choices,
+  canAdvanceOrientation,
+  nextOrientationStep,
   orientationComplete,
   parseOrientationAnswers,
   normalizeOrientationAnswers,
@@ -83,3 +85,51 @@ test('future English selves use parallel actions, not personality labels', () =>
     }
   }
 })
+
+test('Orientation navigation has a reliable Next action at all four steps', () => {
+  const blank = normalizeOrientationAnswers(null)
+  for (let step = 0; step < 4; step++) {
+    assert.equal(canAdvanceOrientation(blank, step), false)
+    assert.equal(nextOrientationStep(blank, step), step)
+  }
+
+  // Step 1: choosing a context enables Next.
+  const afterContext = { ...blank, context:['friends'] }
+  assert.equal(canAdvanceOrientation(afterContext, 0), true)
+  assert.equal(nextOrientationStep(afterContext, 0), 1)
+  assert.equal(canAdvanceOrientation(afterContext, 1), false)
+
+  // Step 2: choosing a conversation goal enables Next, but nothing
+  // advances automatically when an option is first selected.
+  const afterGoal = { ...afterContext, goal:'connect' }
+  assert.equal(canAdvanceOrientation(afterGoal, 1), true)
+  assert.equal(nextOrientationStep(afterGoal, 1), 2)
+  assert.equal(nextOrientationStep(afterGoal, 2), 2)
+
+  // Step 3: learner chooses their preferred speaking style.
+  const afterVoice = { ...afterGoal, voice:'warm' }
+  assert.equal(canAdvanceOrientation(afterVoice, 2), true)
+  assert.equal(nextOrientationStep(afterVoice, 2), 3)
+  assert.equal(canAdvanceOrientation(afterVoice, 3), false)
+
+  // Step 4: last answer explicitly unlocks the results screen.
+  const done = { ...afterVoice, friction:'confidence' }
+  assert.equal(orientationComplete(done), true)
+  assert.equal(canAdvanceOrientation(done, 3), true)
+  assert.equal(nextOrientationStep(done, 3), 4)
+  assert.equal(canAdvanceOrientation(done, 4), false)
+  assert.equal(nextOrientationStep(done, 4), 4)
+
+  // Going back to any previously answered step leaves its Next usable.
+  for (let step = 0; step < 4; step++) {
+    assert.equal(canAdvanceOrientation(done, step), true)
+    assert.equal(nextOrientationStep(done, step), step + 1)
+  }
+
+  // Re-evaluating an answer does not skip a step, nor bypass an
+  // earlier empty question in manually corrupted saved progress.
+  assert.equal(nextOrientationStep({ ...done, goal:null }, 1), 1)
+  assert.equal(nextOrientationStep({ ...done, goal:null }, 3), 3)
+  assert.equal(nextOrientationStep({ ...done, context:[] }, 3), 3)
+  assert.equal(nextOrientationStep(done, -1), -1)
+});

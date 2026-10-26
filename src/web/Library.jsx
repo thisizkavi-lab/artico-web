@@ -7,120 +7,151 @@ import { getLearningStage, learningStages } from './pathway'
 import { catalog, foundationSteps, groups, savedItems } from './content'
 import './library-readable.css'
 
+function CourseLesson({ href, number, iconName, title, active = false }) {
+  return (
+    <a className={'rl-vertical-lesson' + (active ? ' is-current' : '')} href={href}
+      aria-current={active ? 'location' : undefined}>
+      <span className="rl-vertical-lesson-number">{number}</span>
+      <CurriculumIcon name={iconName} size={19} />
+      <span className="rl-vertical-lesson-title">{title}</span>
+      <span className="rl-vertical-arrow" aria-hidden="true">›</span>
+    </a>
+  )
+}
+
 export function Courses({ learning, route }) {
   const { t, language } = useLanguage()
-  const category =
-    learningStages.find((stage) => route.path.endsWith(`?${stage.id}`))?.id ??
+  const initialStage =
+    learningStages.find((stage) => route.path.endsWith('?' + stage.id))?.id ??
     getLearningStage(learning.last)?.id ??
     'orientation'
-  const [groupIndex, setGroupIndex] = useState(0)
-  const [search, setSearch] = useState('')
-  const stage = learningStages.find((item) => item.id === category)
-  const group = groups[groupIndex]
-  const chapters = catalog.filter((chapter) =>
-    search.trim()
-      ? `${chapter.id} ${language === 'ja' ? chapter.ja : chapter.title} ${chapter.goal}`
-          .toLowerCase()
-          .includes(search.trim().toLowerCase())
-      : Number(chapter.id) >= group.start && Number(chapter.id) <= group.end,
-  )
   const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
+  const initialGroup = groups.findIndex((group) =>
+    currentId && Number(currentId) >= group.start && Number(currentId) <= group.end,
+  )
+  const [expandedStage, setExpandedStage] = useState(initialStage)
+  const [expandedGroup, setExpandedGroup] = useState(initialGroup >= 0 ? initialGroup : 0)
+  const [search, setSearch] = useState('')
+  const query = search.trim().toLowerCase()
+  const stageCount = (stage) =>
+    stage.id === 'social'
+      ? language === 'ja' ? '96チャプター · 10グループ' : '96 chapters · 10 groups'
+      : language === 'ja'
+        ? stage.lessonIds.length + 'レッスン'
+        : stage.lessonIds.length + ' lessons'
+
+  const visibleGroups = groups.map((group, i) => {
+    const chapters = catalog.filter((chapter) => {
+      const number = Number(chapter.id)
+      const inRange = number >= group.start && number <= group.end
+      if (!inRange) return false
+      if (!query) return true
+      // Keep chapter explanations searchable without displaying them as subtext.
+      const searchable = [
+        chapter.id, chapter.title, chapter.ja, chapter.goal, chapter.goalJa,
+      ].filter(Boolean).join(' ').toLowerCase()
+      return group.title.toLowerCase().includes(query) || searchable.includes(query)
+    })
+    return { ...group, i, chapters }
+  }).filter((group) => !query || group.chapters.length > 0)
+
   return (
-    <div className="aw-page aw-library-page">
-      <Heading eyebrow={t("YOUR LEARNING PATH")} title={t("Choose your next step.")} />
-      <p className="rl-intro">{t("A clear path, with room to follow your curiosity.")}</p>
-      <nav className="rl-stage-tabs" aria-label={t("Learning stages")}>
-        {learningStages.map((item, i) => (
-          <a
-            key={item.id}
-            href={`#/courses?${item.id}`}
-            aria-current={category === item.id ? 'page' : undefined}
-          >
-            <CurriculumIcon name={stageIcon(item.id)} size={18} />
-            {t(item.title)}
-          </a>
-        ))}
-      </nav>
-      <div className="rl-course-heading">
-        <div className="rl-course-title"><CurriculumIcon name={stageIcon(stage.id)} size={26} /><h2>{t(stage.title)}</h2></div>
-        <p>{t(stage.description)}</p>
-      </div>
-      {category === 'social' ? (
-        <>
-          <label className="rl-search">
-            <span>{t("Find a chapter")}</span>
-            <input
-              type="search"
-              placeholder={t("A topic, phrase, or chapter number…")}
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-            />
-          </label>
-          <div className="rl-catalog">
-            <aside aria-label={t("Chapter groups")}>
-              {groups.map((item, i) => (
-                <button
-                  key={item.start}
-                  type="button"
-                  aria-pressed={!search && groupIndex === i}
-                  onClick={() => {
-                    setGroupIndex(i)
-                    setSearch('')
-                  }}
-                >
-                  <span className="rl-group-range">
-                    {String(item.start).padStart(2, '0')}–{item.end}
+    <div className="aw-page aw-library-page rl-vertical-page">
+      <Heading eyebrow={t('YOUR LEARNING PATH')} title={t('Choose your next step.')} />
+      <div className="rl-vertical-stages">
+        {learningStages.map((stage, index) => {
+          const open = expandedStage === stage.id
+          return (
+            <section className={'rl-vertical-stage' + (open ? ' is-open' : '')}
+              key={stage.id}>
+              <span className="rl-vertical-step" aria-hidden="true">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+              <div className="rl-vertical-shell">
+                <button type="button" className="rl-vertical-stage-button"
+                  aria-controls={'rl-stage-panel-' + stage.id}
+                  aria-expanded={open}
+                  onClick={() => setExpandedStage(open ? null : stage.id)}>
+                  <CurriculumIcon name={stageIcon(stage.id)} size={26} />
+                  <span className="rl-vertical-stage-title">
+                    <strong>{t(stage.title)}</strong>
+                    <small>{stageCount(stage)}</small>
                   </span>
-                  <CurriculumIcon name={groupIcon(item.start)} size={20} />
-                  <span className="rl-group-name">{t(item.title)}</span>
+                  <span className="rl-vertical-chevron" aria-hidden="true">⌄</span>
                 </button>
-              ))}
-            </aside>
-            <div className="rl-chapter-list rl-course-lessons">
-              <p className="rl-list-label">
-                {search ? t('{count} chapters found', { count: chapters.length }) : t(group.title)}
-              </p>
-              {chapters.map((chapter) => (
-                <a
-                  key={chapter.id}
-                  href={`#/lesson/${chapter.id}/study`}
-                  className={chapter.id === currentId ? 'is-current' : ''}
-                >
-                  <span className="rl-number">{chapter.id}</span>
-                  <CurriculumIcon className="rl-topic-icon" name={chapterIcon(chapter.id)} size={22} />
-                  <span className="rl-lesson-copy">
-                    <strong>{language === 'ja' ? chapter.ja : chapter.title}</strong>
-                  </span>
-                  <Icon name="next" />
-                </a>
-              ))}
-              {!chapters.length && (
-                <p className="rl-empty">{t("No chapters match. Try a shorter search.")}</p>
-              )}
-            </div>
-          </div>
-        </>
-      ) : (
-        <div className="rl-chapter-list rl-course-lessons">
-          {stage.lessonIds.map((id, i) => {
-            const step = foundationSteps.find((item) => item.id === id)
-            return (
-              <a
-                key={id}
-                href={`#/foundation/${id}/study`}
-                className={learning.last?.startsWith(`/foundation/${id}/`) ? 'is-current' : ''}
-              >
-                <span className="rl-number">{String(i + 1).padStart(2, '0')}</span>
-                <CurriculumIcon className="rl-topic-icon" name={foundationIcon(id)} size={22} />
-                <span className="rl-lesson-copy">
-                  <strong>{language === 'ja' ? step.ja : step.en}</strong>
-                </span>
-                <Icon name="next" />
-              </a>
-            )
-          })}
-        </div>
-      )}
+                <div id={'rl-stage-panel-' + stage.id}
+                  className="rl-vertical-stage-panel" hidden={!open}>
+                  {stage.id !== 'social' ? (
+                    <div className="rl-vertical-lessons rl-vertical-foundation">
+                      {stage.lessonIds.map((id, i) => {
+                        const lesson = foundationSteps.find((item) => item.id === id)
+                        if (!lesson) return null
+                        return <CourseLesson key={id}
+                          href={'#/foundation/' + id + '/study'}
+                          number={String(i + 1).padStart(2, '0')}
+                          iconName={foundationIcon(id)}
+                          title={language === 'ja' ? lesson.ja : lesson.en}
+                          active={learning.last?.startsWith('/foundation/' + id + '/')} />
+                      })}
+                    </div>
+                  ) : (
+                    <div className="rl-vertical-social">
+                      <label className="rl-vertical-search">
+                        <span className="rl-vertical-search-icon" aria-hidden="true">⌕</span>
+                        <input type="search" value={search}
+                          onChange={(event) => setSearch(event.target.value)}
+                          placeholder={t('Find a chapter')}
+                          aria-label={t('Find a chapter')} />
+                      </label>
+                      {visibleGroups.length ? visibleGroups.map((group) => {
+                        const groupOpen = Boolean(query) || expandedGroup === group.i
+                        return (
+                          <section className={'rl-vertical-group' + (groupOpen ? ' is-open' : '')}
+                            key={group.start}>
+                            <button type="button" className="rl-vertical-group-button"
+                              aria-controls={'rl-group-panel-' + group.start}
+                              aria-expanded={groupOpen}
+                              onClick={() => {
+                                if (query) {
+                                  setSearch('')
+                                  setExpandedGroup(group.i)
+                                } else setExpandedGroup(groupOpen ? null : group.i)
+                              }}>
+                              <span className="rl-vertical-range">
+                                {String(group.start).padStart(2, '0')}–{String(group.end).padStart(2, '0')}
+                              </span>
+                              <CurriculumIcon name={groupIcon(group.start)} size={20} />
+                              <span className="rl-vertical-group-title">{t(group.title)}</span>
+                              <span className="rl-vertical-group-count">
+                                {language === 'ja' ? group.chapters.length + '件' : group.chapters.length}
+                              </span>
+                              <span className="rl-vertical-chevron" aria-hidden="true">⌄</span>
+                            </button>
+                            <div id={'rl-group-panel-' + group.start}
+                              className="rl-vertical-lessons rl-vertical-group-lessons"
+                              hidden={!groupOpen}>
+                              {group.chapters.map((chapter) => (
+                                <CourseLesson key={chapter.id}
+                                  href={'#/lesson/' + chapter.id + '/study'}
+                                  number={chapter.id}
+                                  iconName={chapterIcon(chapter.id)}
+                                  title={language === 'ja' ? chapter.ja : chapter.title}
+                                  active={chapter.id === currentId} />
+                              ))}
+                            </div>
+                          </section>
+                        )
+                      }) : <p className="rl-vertical-empty">
+                        {t('No chapters match. Try a shorter search.')}
+                      </p>}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+          )
+        })}
+      </div>
     </div>
   )
 }

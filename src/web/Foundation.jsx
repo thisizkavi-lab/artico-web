@@ -10,6 +10,7 @@ import { Glyph } from './LessonExperience'
 import LessonFooter from './LessonFooter'
 import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
 import OrientationFigure, { orientationFigures } from './OrientationFigures'
+import OrientationPractice from './OrientationPractice'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -343,6 +344,7 @@ function TwisterPractice() {
 function FoundationPractice({ id, learning, update }) {
   const { t, language } = useLanguage()
   if (id === 'tongue-intro') return <TwisterPractice />
+  if (id === 'orientation') return <OrientationPractice learning={learning} update={update} />
   const titles = {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
@@ -355,17 +357,6 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {id === 'orientation' && (
-        <>
-          <p className="ip-prose"> {t("Think of one situation where you would like to use English. Who would you be with? What would you want to understand or say?")} </p>
-          <Reflection
-            id={id}
-            learning={learning}
-            update={update}
-            label={t("One thing I would like to do in English")}
-          />
-        </>
-      )}
       {id === 'how-it-works' && (
         <>
           <p className="ip-prose"> {t("You can start with the letters, work on a sound, or explore a conversation. Choose what would help you today.")} </p>

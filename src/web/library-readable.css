@@ -531,6 +531,7 @@
 }
 .rl-vertical-stage-button:hover { background:#f7f7f7; }
 .rl-vertical-stage-button > .curriculum-icon { flex:0 0 28px; color:#555555; }
+.rl-vertical-stage-button > .curriculum-icon--level-zero { width:35px; height:26px; flex-basis:35px; }
 .rl-vertical-stage-title {
   flex:1; min-width:0; display:flex; flex-direction:column; gap:5px;
 }
@@ -667,6 +668,7 @@
   .rl-vertical-step { width:33px; height:33px; font-size:10px; }
   .rl-vertical-stage-button { min-height:75px; padding:14px 12px; gap:11px; }
   .rl-vertical-stage-button > .curriculum-icon { width:23px; height:23px; flex-basis:23px; }
+  .rl-vertical-stage-button > .curriculum-icon--level-zero { width:31px; height:23px; flex-basis:31px; }
   .rl-vertical-stage-title > strong { font-size:18px; line-height:1.32; }
   .rl-vertical-stage-title > small { font-size:11px; }
   .rl-vertical-stage-panel { padding:6px 10px 10px; }

@@ -14,6 +14,7 @@ import {
 } from './phrasePractice'
 import './introductions.css'
 import './learning-flow.css'
+import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -759,10 +760,13 @@ function Experience({ route, learning, update, save, notify }) {
             </>
           )}
         </p>
-        <h1>
-          <span lang="en">{title}</span>
-          {language === 'ja' && titleJa && <span className="ip-title-ja" lang="ja">{titleJa}</span>}
-        </h1>
+        <div className="ip-heading-title">
+          <CurriculumIcon name={chapterIcon(id)} size={30} />
+          <h1>
+            <span lang="en">{title}</span>
+            {language === 'ja' && titleJa && <span className="ip-title-ja" lang="ja">{titleJa}</span>}
+          </h1>
+        </div>
         <p>{subtitle}</p>
       </header>
       <div className="ip-mode-bar">

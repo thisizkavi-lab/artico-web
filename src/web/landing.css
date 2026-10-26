@@ -81,6 +81,8 @@
 .al-path h2 { font-size: 36px; line-height: 50px; font-weight: 600; scroll-margin-top: 24px; }
 .al-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
 .al-stage { padding-top: 12px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px; }
+.al-stage-top { display: flex; align-items: center; justify-content: space-between; min-height: 37px; }
+.al-stage-top .curriculum-icon { color: #416b56; }
 .al-stage h3 { font-size: 28px; line-height: 38px; font-weight: 600; }
 .al-stage:hover h3 { color: var(--brand); }
 .al-stage-support { color: var(--brand); font-size: 14px; line-height: 24px; }

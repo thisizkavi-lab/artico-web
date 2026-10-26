@@ -6,6 +6,7 @@ import {
   orientationComplete, buildOrientationResult, canAdvanceOrientation, nextOrientationStep,
 } from './orientationProfile'
 import { personaArtwork } from './personaArtwork'
+import { getPersonaConfetti, getPersonaConfettiPieces } from './personaConfetti'
 import './orientation-practice.css'
 
 const questions = [
@@ -30,10 +31,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF', resultTitle:'英語を話す、未来の自分。',
     why:'あなたが英語を学ぶ理由（仮）', imagine:'こんな会話をしている自分を想像してみて。',
     you:'YOU', other:'THEM', otherSelves:'ほかの可能性も見てみる',
-    suggested:'おすすめ', nextStep:'最初の一歩', explore:'ここから始める',
-    again:'答えを変える', continue:'次へ進む',
-    note:'性格診断ではありません。英語でできるようになりたいことの一例です。',
-    licensed:'Illustrations: Open Peeps · CC0',
+    suggested:'おすすめ',
   },
   en: {
     intro:'Meet your English-speaking self.',start:'YOUR ENGLISH SELF',counter:'STEP',
@@ -41,10 +39,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF',resultTitle:'A future you, speaking English.',
     why:'A possible reason to learn',imagine:'Picture yourself saying this.',
     you:'YOU',other:'THEM',otherSelves:'Explore other possibilities',
-    suggested:'Suggested',nextStep:'Your first step',explore:'Start here',
-    again:'Change answers',continue:'Keep learning',
-    note:'These are possibilities for what you could do in English—not personality types.',
-    licensed:'Illustrations: Open Peeps · CC0',
+    suggested:'Suggested',
   },
 }
 
@@ -76,18 +71,58 @@ function PersonaImage({ roleId, language, small = false }) {
     onError={() => setError(true)} />
 }
 
+function PersonaConfetti({ roleId }) {
+  const theme = getPersonaConfetti(roleId)
+  const pieces = getPersonaConfettiPieces(roleId)
+  return (
+    <div className={`rf-persona-confetti rf-persona-confetti--${theme.shape}`} aria-hidden="true">
+      {pieces.map((piece, i) => (
+        <span key={i} className="rf-persona-confetti-piece" style={{
+          '--piece-color': piece.color,
+          '--piece-dx': piece.drift,
+          '--piece-rise': piece.rise,
+          '--piece-fall': piece.fall,
+          '--piece-delay': piece.delay,
+          '--piece-duration': piece.duration,
+          '--piece-spin': piece.spin,
+          '--piece-size': piece.size,
+        }} />
+      ))}
+    </div>
+  )
+}
+
 export default function OrientationPractice({ learning, update }) {
   const { language } = useLanguage()
   const l = copy[language] ?? copy.en
   const answers = parseOrientationAnswers(learning.responses?.[ORIENTATION_RESPONSE_KEY])
   const [step, setStep] = useState(() => orientationComplete(answers) ? 4 : 0)
+  const [celebration, setCelebration] = useState(null)
   const titleRef = useRef(null)
   useEffect(() => { titleRef.current?.focus({ preventScroll: true }) }, [step])
+  useEffect(() => {
+    if (!celebration) return
+    const timeout = window.setTimeout(() => setCelebration(null), 2200)
+    return () => window.clearTimeout(timeout)
+  }, [celebration])
   const result = orientationComplete(answers) ? buildOrientationResult(answers) : null
   const current = questions[step]
   const isContext = current?.id === 'context'
   const selectedCount = answers.context.length
   const valid = canAdvanceOrientation(answers, step)
+  const celebrate = (roleId) => {
+    // Motion-sensitive learners see the result without animation.
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    setCelebration(previous => ({ roleId, sequence: (previous?.sequence ?? 0) + 1 }))
+  }
+  const advance = () => {
+    const next = nextOrientationStep(answers, step)
+    if (step === questions.length - 1 && next === questions.length) {
+      const chosenRole = buildOrientationResult(answers)?.roleId
+      if (chosenRole) celebrate(chosenRole)
+    }
+    setStep(next)
+  }
   const save = (values) => update(previous => ({
     ...previous,
     responses: { ...previous.responses, [ORIENTATION_RESPONSE_KEY]: JSON.stringify({ v:1, ...values }) },
@@ -137,13 +172,16 @@ export default function OrientationPractice({ learning, update }) {
           <footer className="rf-profile-actions">
             <button className="rf-profile-back" type="button" onClick={() => setStep(Math.max(0,step-1))} disabled={step===0}>← {l.back}</button>
             <button type="button" className="rf-profile-next" disabled={!valid}
-              onClick={() => setStep(value => nextOrientationStep(answers, value))}>
+              onClick={advance}>
               {step === questions.length - 1 ? l.show : l.next} →
             </button>
           </footer>
         </>
       ) : result && (
         <div className="rf-persona">
+          {celebration && (
+            <PersonaConfetti key={celebration.roleId + '-' + celebration.sequence} roleId={celebration.roleId} />
+          )}
           <p className="rf-profile-eyebrow">{l.resultEyebrow}</p>
           <h2 ref={titleRef} tabIndex={-1}>{l.resultTitle}</h2>
           <div className="rf-persona-hero">
@@ -175,7 +213,11 @@ export default function OrientationPractice({ learning, update }) {
                   key={id}
                   aria-pressed={result.roleId===id}
                   className={'rf-persona-option' + (result.roleId===id ? ' is-selected' : '')}
-                  onClick={() => save({ ...answers, roleOverride:id })}
+                  onClick={() => {
+                    if (id === result.roleId) return
+                    save({ ...answers, roleOverride:id })
+                    celebrate(id)
+                  }}
                 >
                   <span className="rf-persona-mini"><PersonaImage roleId={id} language={language} small /></span>
                   <span className="rf-persona-label">
@@ -186,18 +228,6 @@ export default function OrientationPractice({ learning, update }) {
               )}
             </div>
           </div>
-          <div className="rf-persona-next">
-            <div>
-              <small>{l.nextStep}</small>
-              <p>{language==='ja' ? result.actionJa : result.actionEn}</p>
-            </div>
-            <a href={'#'+result.nextPath}>{l.explore} →</a>
-          </div>
-          <footer className="rf-persona-footer">
-            <button type="button" onClick={() => setStep(0)}>{l.again}</button>
-            <a href="#/foundation/how-it-works/study">{l.continue} →</a>
-          </footer>
-          <p className="rf-persona-note">{l.note} <span>{l.licensed}</span></p>
         </div>
       )}
     </section>

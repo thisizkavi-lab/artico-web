@@ -47,15 +47,47 @@
 .rf-persona-why > span { display:block;font-size:12px;color:#6a8b76;font-weight:700; }
 .rf-persona-why p { font-size:clamp(17px,2.5vw,21px);line-height:1.7;color:#364f41;margin:6px 0 0; }
 .rf-persona-collection h4 { font-size:13px;color:#657a6c;font-weight:650;margin:0 0 12px; }
-.rf-persona-strip { display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px; }
-.rf-persona-option { font:inherit;min-width:0;cursor:pointer;border:1px solid transparent;background:transparent;
-  border-radius:12px;padding:8px 4px 10px;display:flex;flex-direction:column;align-items:center;gap:7px;
-  color:#75877a;line-height:1.3; }
-.rf-persona-option.is-selected { background:#eef4ec;border-color:#b5cfba;color:#315641; }
+/* Every persona choice owns a fixed-height, clipped image slot. The portrait
+   cannot affect the card's height or paint over its label or neighboring cards. */
+.rf-persona-collection { max-width:100%; min-width:0; }
+.rf-persona-strip {
+  display:grid; grid-template-columns:repeat(5,minmax(0,1fr));
+  align-items:stretch; gap:10px; max-width:100%; min-width:0;
+}
+.rf-persona-option {
+  font:inherit; box-sizing:border-box; min-width:0; max-width:100%; width:100%;
+  cursor:pointer; border:1px solid #e2e9e2; background:#fffefc;
+  border-radius:13px; padding:10px 8px 14px;
+  display:grid; grid-template-rows:126px minmax(0,1fr);
+  align-items:start; justify-items:center; gap:9px;
+  overflow:hidden; color:#546d5b;
+}
+.rf-persona-option.is-selected { background:#edf4ec;border-color:#80a88a;color:#315641; }
 .rf-persona-option:hover { background:#f5f8f3; }
-.rf-persona-mini { display:grid;place-items:center;width:100%;height:88px;color:#668875; }
-.rf-persona-mini img { width:95%;height:100%;object-fit:contain;display:block; }
-.rf-persona-option > span:last-child { font-size:11px;font-weight:650;text-align:center;overflow-wrap:anywhere; }
+.rf-persona-mini {
+  position:relative; display:block; box-sizing:border-box;
+  width:100%; height:126px; max-height:126px; min-height:126px;
+  max-width:100%; overflow:hidden; isolation:isolate; color:#668875;
+}
+.rf-persona-mini > img {
+  position:absolute; inset:0; display:block;
+  width:100% !important; height:100% !important;
+  max-width:100% !important; max-height:100% !important;
+  object-fit:contain !important; object-position:center bottom;
+}
+.rf-persona-label {
+  display:flex; flex-direction:column; align-items:center; gap:5px;
+  width:100%; min-width:0; max-width:100%; min-height:50px;
+  line-height:1.4; text-align:center;
+}
+.rf-persona-label strong {
+  display:block; width:100%; font-size:12px; line-height:1.35;
+  font-weight:700; overflow-wrap:normal; word-break:normal;
+}
+.rf-persona-label small {
+  display:block; width:100%; font-size:10px; font-weight:400;
+  line-height:1.5; color:#778e7d; overflow-wrap:anywhere;
+}
 .rf-persona-next { display:flex;justify-content:space-between;align-items:center;gap:18px;
   border-top:1px solid #e1e8e0;padding:24px 0 21px;margin-top:23px; }
 .rf-persona-next small { font-size:12px;color:#698571;font-weight:700; }
@@ -80,8 +112,16 @@
   .rf-persona-situation { margin-bottom:13px; }
   .rf-persona-phrase { text-align:left;max-width:360px;margin:0 auto; }
   .rf-persona-why { margin:18px 0; }
-  .rf-persona-strip { display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:7px; }
-  .rf-persona-option { flex:0 0 105px;scroll-snap-align:start; }
+  .rf-persona-strip {
+    display:flex; gap:9px; overflow-x:auto; overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory; padding-bottom:12px;
+  }
+  .rf-persona-option {
+    flex:0 0 142px; max-width:142px; width:142px;
+    grid-template-rows:122px minmax(0,1fr);
+    scroll-snap-align:start;
+  }
+  .rf-persona-mini { height:122px; min-height:122px; max-height:122px; }
   .rf-persona-next { align-items:stretch;flex-direction:column;gap:13px; }
   .rf-persona-next a { text-align:center; }
 }
@@ -120,16 +160,6 @@
 }
 .rf-persona-illustration .rf-persona-duo img:first-child { left:0; transform:scaleX(-1); }
 .rf-persona-illustration .rf-persona-duo img:last-child { right:0; }
-.rf-persona-mini .rf-persona-duo { width:100%; height:88px; }
-.rf-persona-mini .rf-persona-duo img {
-  position:absolute;
-  width:62%;
-  height:100%;
-  object-fit:contain;
-}
-.rf-persona-mini .rf-persona-duo img:first-child { left:0; transform:scaleX(-1); }
-.rf-persona-mini .rf-persona-duo img:last-child { right:0; }
 @media(max-width:680px) {
   .rf-persona-illustration .rf-persona-duo { height:225px; }
-  .rf-persona-option { flex-basis:116px; }
 }

@@ -11,6 +11,7 @@ import { getLearningStage, learningStages } from './pathway'
 
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))
+const Vocabulary = lazy(() => import('./Vocabulary'))
 const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
 const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
@@ -183,7 +184,7 @@ export default function ArticoWeb() {
       180,
     )
   }
-  const activeNav = route.page === 'application'
+  const activeNav = route.page === 'vocabulary' ? 'courses' : route.page === 'application'
     ? 'courses'
     : route.page === 'foundation' && ['orientation', 'how-it-works'].includes(route.id)
     ? 'home'
@@ -199,7 +200,7 @@ export default function ArticoWeb() {
     learning.last?.startsWith(`/foundation/${step.id}/`),
   )
   const crumb =
-    route.page === 'lesson'
+    route.page === 'vocabulary' ? (language === 'ja' ? '学ぶ / 語彙 / 97' : 'Learn / Vocabulary / 97') : route.page === 'lesson'
       ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
       : route.page === 'application'
         ? `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
@@ -220,6 +221,8 @@ export default function ArticoWeb() {
   if (route.page === 'home') screen = <Home />
   else if (route.page === 'courses')
     screen = <Courses learning={learning} route={route} key={route.path} />
+  else if (route.page === 'vocabulary')
+    screen = <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}><Vocabulary /></Suspense>
   else if (route.page === 'application')
     screen = (
       <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}>

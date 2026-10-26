@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
 import {
-  ORIENTATION_RESPONSE_KEY, choices, parseOrientationAnswers,
+  ORIENTATION_RESPONSE_KEY, choices, roles, parseOrientationAnswers,
   orientationComplete, buildOrientationResult,
 } from './orientationProfile'
 import './orientation-practice.css'
@@ -36,6 +36,7 @@ const locale = {
     nextStep:'今日の、小さな一歩',
     explore:'この練習から始める',continue:'次のレッスンへ',
     revise:'回答を変える',disclaimer:'これは性格診断ではありません。今の選択から作った仮の姿です。話し方も目標も、あとから自由に変えられます。',
+    roles:'ほかの自分も想像してみる',suggested:'おすすめ',
     selected:'選択済み',pick:'選択する',
   },
   en:{
@@ -52,6 +53,7 @@ const locale = {
     nextStep:'One small step today',
     explore:'Try this lesson',continue:'Continue to next lesson',
     revise:'Change answers',disclaimer:'This is not a diagnosis or fixed personality type. It is one possible future self based on your choices. You can revise it anytime.',
+    roles:'Try imagining another version of yourself',suggested:'Suggested',
     selected:'Selected',pick:'Select',
   },
 }
@@ -143,6 +145,23 @@ export default function OrientationPractice({ learning, update }) {
             <div>
               <strong lang="en">{result.titleEn}</strong>
               <p>{language === 'ja' ? result.role.ja : result.role.en}</p>
+            </div>
+          </div>
+          <div className="rf-profile-roles" role="group" aria-label={l.roles}>
+            <p>{l.roles}</p>
+            <div>
+              {Object.entries(roles).map(([id, role]) => (
+                <button
+                  type="button"
+                  key={id}
+                  aria-pressed={result.roleId === id}
+                  className={result.roleId === id ? 'is-chosen' : ''}
+                  onClick={() => change({ ...answers, roleOverride: id })}
+                >
+                  {language === 'ja' ? role.ja : role.en}
+                  {result.suggestedRole === id && <span>{l.suggested}</span>}
+                </button>
+              ))}
             </div>
           </div>
           <div className="rf-profile-why">

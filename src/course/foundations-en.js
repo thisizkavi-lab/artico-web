@@ -121,14 +121,14 @@ export const orientation = [
 export const howItWorks = [
   section('how-start-line', 'Begin where it helps you.', [
     'Some learners are meeting the alphabet for the first time. Others know grammar well but find ordinary speech difficult to follow. Some already communicate and want more control over their pronunciation.',
-    'Artico starts with the basics, but Foundations is open to explore, repeat, or skip. There is no placement test or penalty for changing your mind.',
+    'Artico starts with the basics, but Level Zero is open to explore, repeat, or skip. There is no placement test or penalty for changing your mind.',
     'If the letters and basic sounds are familiar, take a quick look. You might notice something useful. Otherwise, go straight to the conversations and return when a foundation lesson would help.',
   ]),
   section(
     'how-two-by-two',
     'One learning path. Two modes.',
     [
-      'Orientation introduces the big picture. Foundations explores letters, sounds, mouth movements, and rhythm. Social Fluency brings those skills into everyday situations.',
+      'Orientation introduces the big picture. Level Zero explores letters, sounds, mouth movements, and rhythm. Social Fluency brings those skills into everyday situations.',
       'Inside a lesson, Study explains what is happening and why the language fits. Practice gives you space to say, recall, adapt, and repeat it.',
       'These are places you can move between. You can work on a sound while learning a conversation and return to an explanation whenever you need it.',
     ],

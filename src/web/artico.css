@@ -73,6 +73,18 @@ body {
   line-height: 38px;
   font-weight: 800;
 }
+/* Shared logo treatment for the landing page, footer, and lesson sidebar. */
+.aw-wordmark.artico-wordmark,
+.al-wordmark.artico-wordmark {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  color: #24352e;
+  white-space: nowrap;
+}
+.artico-wordmark-dot {
+  color: #d94b4b;
+}
 .aw-tagline {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 13px;

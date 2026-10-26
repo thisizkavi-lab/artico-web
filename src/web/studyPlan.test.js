@@ -67,6 +67,7 @@ test('saved plan survives browser storage sanitization and retains other lesson 
 test('save reveals the conditional three-month outlook; no starting lesson navigation remains',()=>{
   const foundation=readFileSync(new URL('./Foundation.jsx',import.meta.url),'utf8')
   const jsx=readFileSync(new URL('./StudyPlan.jsx',import.meta.url),'utf8')
+  assert.match(foundation,/import StudyPlan from '\.\/StudyPlan\.jsx'/)
   assert.match(foundation,/id === 'how-it-works'\) return <StudyPlan learning={learning} update={update} \/>/)
   assert.doesNotMatch(foundation,/className="rf-start-options"/)
   assert.doesNotMatch(jsx,/href=|STARTS|plan\.route|<a\b/)

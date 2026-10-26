@@ -1,153 +1,120 @@
-import { useMemo, useState } from 'react'
 import { useLanguage } from './Language'
-import catalog from './vocabularyCatalog.json'
-import japaneseAM from './vocabularyJapaneseAM.json'
-import japaneseNZ from './vocabularyJapaneseNZ.json'
-import overrides from './vocabularyJapaneseOverrides.json'
+import topics from './vocabularyTopics.json'
 import './vocabulary.css'
 
-const translations = { ...japaneseAM, ...japaneseNZ, ...overrides }
-const normalizedTranslations = new Map(Object.entries(translations).map(([en, jp]) => [en.toLowerCase(), jp]))
-const topics = catalog.topics
+const vocabularyIndex = '#/lesson/97/study'
+const topicHref = (number) => `${vocabularyIndex}/${String(number).padStart(2, '0')}`
 
-export function japaneseFor(word) {
-  const direct = translations[word] ?? normalizedTranslations.get(word.toLowerCase())
-  if (direct) return direct
-  const normalized = word.trim().toLowerCase()
-  if (/^[a-z-]+s$/.test(normalized)) {
-    const singular = normalized.endsWith('ies') ? normalized.slice(0, -3) + 'y'
-      : normalized.endsWith('ses') ? normalized.slice(0, -2) : normalized.slice(0, -1)
-    return normalizedTranslations.get(singular) ?? null
-  }
-  return null
-}
-export function displayGloss(word) {
-  const gloss = japaneseFor(word)
-  if (!gloss) return ''
-  // Retain dictionary headwords, omitting potentially outdated side notes.
-  const simple = gloss.match(/^([^()（]{2,65})[\(（]/)?.[1]?.trim()
-  return simple && /[ぁ-んァ-ン一-龯]/u.test(simple) ? simple : gloss
+function LessonLink({ topic, japanese }) {
+  const number = String(topic.sourceLesson).padStart(2, '0')
+  return (
+    <li>
+      <a className="vl-lesson-link" href={topicHref(topic.sourceLesson)}
+        aria-label={japanese ? `レッスン${topic.sourceLesson}：${topic.ja}` : `Lesson ${topic.sourceLesson}: ${topic.topic}`}>
+        <span className="vl-lesson-number" aria-hidden="true">{number}</span>
+        <span className="vl-lesson-titles">
+          <strong lang={japanese ? 'ja' : 'en'}>{japanese ? topic.ja : topic.topic}</strong>
+          <small lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</small>
+        </span>
+        <span className="vl-lesson-arrow" aria-hidden="true">→</span>
+      </a>
+    </li>
+  )
 }
 
-export default function Vocabulary() {
-  const { language } = useLanguage()
-  const ja = language === 'ja'
-  const [topic, setTopic] = useState(0)
-  const [query, setQuery] = useState('')
-  const [filter, setFilter] = useState('all')
-  const [limit, setLimit] = useState(120)
-  const [showVariants, setShowVariants] = useState(false)
-  const activeTopic = topics[topic]
-  const searching = !!query.trim()
-  const rows = useMemo(() => {
-    const selected = searching ? topics : [activeTopic]
-    const results = []
-    const term = query.toLocaleLowerCase().trim()
-    for (const section of selected) {
-      for (const kind of ['core', 'extra']) {
-        if (filter !== 'all' && filter !== kind) continue
-        for (const en of section[kind]) {
-          const translated = displayGloss(en)
-          if (term && ![en, translated, section.topic, section.ja].some(value =>
-            value.toLocaleLowerCase().includes(term))) continue
-          results.push({ en, ja: translated, kind, section })
-        }
-      }
-    }
-    return results
-  }, [query, topic, filter])
-  const renderRows = rows.slice(0, limit)
-  const selectTopic = value => { setTopic(Number(value)); setQuery(''); setLimit(120); setShowVariants(false) }
-  const setSearch = value => { setQuery(value); setLimit(120); setShowVariants(false) }
-  const changeFilter = value => { setFilter(value); setLimit(120) }
+function VocabularyIndex({ japanese }) {
   return (
     <div className="aw-page vl-page">
-      <a className="vl-back" href="#/courses?social">← {ja ? '学習コースへ' : 'Back to Learn'}</a>
+      <a className="vl-back" href="#/courses?social">
+        <span aria-hidden="true">←</span> {japanese ? '学習コースへ' : 'Back to Learn'}
+      </a>
       <header className="vl-heading">
         <p className="vl-eyebrow">CHAPTER 97 · VOCABULARY</p>
-        <h1>{ja ? '英語の語彙' : 'Vocabulary'}</h1>
-        <p>{ja ? 'アメリカ英語の単語と表現を、テーマ別に学びましょう。'
-          : 'Everyday American English, organized by topic.'}</p>
-        <small>{topics.length} {ja ? 'テーマ' : 'topics'} · {catalog.coreCount + catalog.extraCount} {ja ? '語句' : 'words and phrases'}</small>
+        <h1>{japanese ? '語彙のレッスン' : 'Vocabulary lessons'}</h1>
+        <p>{japanese
+          ? '学びたいトピックを選びましょう。各レッスンの内容は後から追加されます。'
+          : 'Choose a topic to explore. Lesson content will be added later.'}</p>
       </header>
-      <div className="vl-toolbar">
-        <label className="vl-field vl-topic">
-          <span>{ja ? 'テーマ' : 'Topic'}</span>
-          <select value={topic} onChange={event => selectTopic(event.target.value)}>
-            {topics.map((section, i) =>
-              <option key={section.sourceLesson} value={i}>
-                {String(i + 1).padStart(2, '0')} · {ja ? section.ja : section.topic}
-              </option>)}
-          </select>
-        </label>
-        <label className="vl-field vl-search">
-          <span>{ja ? '語句を検索' : 'Find a word or phrase'}</span>
-          <input type="search" value={query} onChange={event => setSearch(event.target.value)}
-            placeholder={ja ? '英語・日本語で検索…' : 'Search English or Japanese…'} />
-        </label>
-      </div>
-      <div className="vl-content-header">
-        <div>
-          <h2>{searching ? (ja ? '検索結果' : 'Search results') : (ja ? activeTopic.ja : activeTopic.topic)}</h2>
-          <small>{searching ? (ja ? 'すべてのテーマから検索' : 'Across all topics')
-            : (ja ? activeTopic.topic : activeTopic.ja)}</small>
-        </div>
-        <div className="vl-filters" role="group" aria-label={ja ? '種類で絞り込む' : 'Filter vocabulary type'}>
-          {[['all', ja ? 'すべて' : 'All'], ['core', ja ? '基本' : 'Core'], ['extra', ja ? '追加' : 'Practical']].map(([id, label]) =>
-            <button key={id} type="button" className={filter === id ? 'is-active' : ''}
-              aria-pressed={filter === id} onClick={() => changeFilter(id)}>{label}</button>)}
-        </div>
-      </div>
-      <div className="vl-table" role="list" aria-label={ja ? '英語と日本語の語彙' : 'English and Japanese vocabulary'}>
-        <div className="vl-table-heading" aria-hidden="true">
-          <span>ENGLISH</span><span>日本語</span>
-        </div>
-        {renderRows.map((item, i) => (
-          <div className="vl-row" key={item.section.sourceLesson + '-' + item.kind + '-' + i} role="listitem">
-            <div className="vl-english" lang="en">
-              <strong>{item.en}</strong>
-              {item.kind === 'extra' && <span className="vl-extra" title={ja ? '実用的な追加表現' : 'Practical addition'}>+</span>}
-              {searching && <small>{ja ? item.section.ja : item.section.topic}</small>}
-            </div>
-            <div className="vl-japanese" lang="ja">
-              {item.ja || <a href={'https://jisho.org/search/' + encodeURIComponent(item.en)}
-                target="_blank" rel="noopener noreferrer" className="vl-unmatched"
-                aria-label={(ja ? '辞書で意味を確認する: ' : 'Check in dictionary: ') + item.en}>
-                {ja ? '辞書で確認 ↗' : 'Look up ↗'}
-              </a>}
-            </div>
+
+      <section className="vl-directory" aria-labelledby="vl-directory-heading">
+        <div className="vl-directory-heading">
+          <div>
+            <p className="vl-section-label">YOUR VOCABULARY LIBRARY</p>
+            <h2 id="vl-directory-heading">{japanese ? 'すべてのレッスン' : 'All lessons'}</h2>
           </div>
-        ))}
-        {!rows.length && <p className="vl-empty">{ja ? '一致する語句がありません。' : 'No matching words or phrases.'}</p>}
-      </div>
-      <div className="vl-after-list">
-        <span>{rows.length} {ja ? '件' : 'entries'}
-          {rows.length > limit ? ' · ' + limit + (ja ? '件表示' : ' shown') : ''}</span>
-        {rows.length > limit && <button type="button" onClick={() => setLimit(n => n + 120)}>
-          {ja ? 'さらに表示' : 'Show more'}</button>}
-      </div>
-      {!searching && activeTopic.variants.length > 0 && (
-        <div className="vl-variants">
-          <button type="button" aria-expanded={showVariants} onClick={() => setShowVariants(v => !v)}>
-            {ja ? 'イギリス英語・別表現' : 'British English and other variants'} ({activeTopic.variants.length})
-            <span aria-hidden="true">{showVariants ? ' −' : ' +'}</span>
-          </button>
-          {showVariants && <ul>{activeTopic.variants.map((variant, i) =>
-            <li key={i}><strong>{variant.from}</strong>{variant.to ? ' → ' + variant.to : ''}
-              {variant.note && <span> · {variant.note}</span>}</li>)}</ul>}
+          <span className="vl-count">{topics.length} {japanese ? 'レッスン' : 'lessons'}</span>
         </div>
-      )}
-      <footer className="vl-source">
-        <p>{ja ? '訳語は参考用です。文脈によって意味が変わります。訳語が未確認の語句は辞書へのリンクを表示します。'
-          : 'Japanese glosses are reference meanings. Context may change the translation. Unmatched phrases link to a dictionary.'}</p>
-        <p>{ja ? '英語リスト: 提供された GA 版 · 日本語訳: ' : 'Vocabulary: supplied General American edition · Japanese glosses: '}
-          <a href="https://github.com/kujirahand/EJDict" target="_blank" rel="noopener noreferrer">EJDict (CC0)</a>
-          {ja ? ' および確認済みの訳語。' : ' and curated equivalents.'}</p>
-      </footer>
-      <nav className="vl-bottom-nav" aria-label={ja ? '学習ナビゲーション' : 'Learning navigation'}>
-        <a href="#/lesson/96/study">← {ja ? '第96課' : 'Chapter 96'}</a>
-        <a href="#/progress">{ja ? '進捗を見る' : 'My Progress'} →</a>
+        <ol className="vl-lesson-list">
+          {topics.map((topic) => <LessonLink key={topic.sourceLesson} topic={topic} japanese={japanese} />)}
+        </ol>
+      </section>
+      <nav className="vl-bottom-nav" aria-label={japanese ? '学習ナビゲーション' : 'Learning navigation'}>
+        <a href="#/lesson/96/study">← {japanese ? '第96課' : 'Chapter 96'}</a>
+        <a href="#/progress">{japanese ? '進捗を見る' : 'My Progress'} →</a>
       </nav>
     </div>
   )
+}
+
+function VocabularyLesson({ topic, japanese }) {
+  const number = String(topic.sourceLesson).padStart(2, '0')
+  const previous = topics[topic.sourceLesson - 2]
+  const next = topics[topic.sourceLesson]
+
+  return (
+    <div className="aw-page vl-page vl-detail-page">
+      <a className="vl-back" href={vocabularyIndex}>
+        <span aria-hidden="true">←</span> {japanese ? '語彙のレッスン一覧へ' : 'All vocabulary lessons'}
+      </a>
+      <header className="vl-heading vl-detail-heading">
+        <p className="vl-eyebrow">VOCABULARY · LESSON {number}</p>
+        <h1 lang={japanese ? 'ja' : 'en'}>{japanese ? topic.ja : topic.topic}</h1>
+        <p className="vl-subtitle" lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</p>
+      </header>
+
+      <section className="vl-placeholder" aria-labelledby="vl-placeholder-title">
+        <div className="vl-placeholder-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M5 7.5c3.8-1.3 7.7-.8 11 1.6 3.3-2.4 7.2-2.9 11-1.6v16c-3.8-1.3-7.7-.8-11 1.6-3.3-2.4-7.2-2.9-11-1.6v-16Z" />
+            <path d="M16 9.1v16M8.5 11.3c1.8-.4 3.4-.1 4.7.6M19 11.9c1.3-.7 2.9-1 4.5-.6" />
+          </svg>
+        </div>
+        <p className="vl-section-label">COMING SOON</p>
+        <h2 id="vl-placeholder-title">{japanese ? 'レッスンの内容は準備中です' : 'This lesson is being prepared'}</h2>
+        <p>{japanese
+          ? 'このトピックの語彙は、後から追加されます。'
+          : 'Vocabulary for this topic will be added later.'}</p>
+        <a className="vl-return" href={vocabularyIndex}>
+          {japanese ? 'レッスン一覧に戻る' : 'Back to all lessons'}
+        </a>
+      </section>
+
+      <nav className="vl-lesson-navigation" aria-label={japanese ? '語彙レッスンの移動' : 'Vocabulary lesson navigation'}>
+        {previous ? (
+          <a href={topicHref(previous.sourceLesson)}>
+            <span aria-hidden="true">←</span>
+            <span><small>{japanese ? '前のレッスン' : 'Previous lesson'}</small>
+              <strong>{japanese ? previous.ja : previous.topic}</strong></span>
+          </a>
+        ) : <span aria-hidden="true" />}
+        {next ? (
+          <a className="vl-next-lesson" href={topicHref(next.sourceLesson)}>
+            <span><small>{japanese ? '次のレッスン' : 'Next lesson'}</small>
+              <strong>{japanese ? next.ja : next.topic}</strong></span>
+            <span aria-hidden="true">→</span>
+          </a>
+        ) : <span aria-hidden="true" />}
+      </nav>
+    </div>
+  )
+}
+
+export default function Vocabulary({ route }) {
+  const { language } = useLanguage()
+  const japanese = language === 'ja'
+  const selected = topics.find((topic) => topic.sourceLesson === Number(route.topic))
+
+  return selected
+    ? <VocabularyLesson topic={selected} japanese={japanese} />
+    : <VocabularyIndex japanese={japanese} />
 }

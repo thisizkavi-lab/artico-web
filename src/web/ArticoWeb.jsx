@@ -72,11 +72,14 @@ export default function ArticoWeb() {
   const { t, language } = useLanguage()
   const mainRef = useRef(null)
   const pendingScroll = useRef(null)
+  const vocabularyPositions = useRef({})
   const route = useRoute((outgoing) => {
     const viewport = mainRef.current
     if (!viewport) return
     if (['lesson', 'foundation'].includes(outgoing.page))
       pendingScroll.current = { path: outgoing.path, top: viewport.scrollTop }
+    if (outgoing.page === 'vocabulary')
+      vocabularyPositions.current[outgoing.path] = viewport.scrollTop
     // Stop any section-jump animation before replacing the page. Capture the
     // outgoing position before React changes its height or the browser clamps it.
     viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' })
@@ -130,7 +133,9 @@ export default function ArticoWeb() {
       ),
     )
     const viewport = mainRef.current
-    const target = learningRef.current.positions[route.path] ?? 0
+    const target = route.page === 'vocabulary'
+      ? vocabularyPositions.current[route.path] ?? 0
+      : learningRef.current.positions[route.path] ?? 0
     let restoring = true
     const observer = new ResizeObserver(() => {
       if (!restoring) return
@@ -158,6 +163,11 @@ export default function ArticoWeb() {
     return stopRestoring
   }, [route.path])
   useEffect(() => {
+    if (route.page === 'vocabulary') {
+      const lesson = route.topic ? (language === 'ja' ? `レッスン${Number(route.topic)} · ` : `Lesson ${Number(route.topic)} · `) : ''
+      document.title = `${lesson}${language === 'ja' ? '語彙' : 'Vocabulary'} · Artico`
+      return
+    }
     const chapter = chapterById[route.id]
     const foundation = foundationSteps.find((step) => step.id === route.id)
     const pageName = { home: 'Home', courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases' }[route.page]
@@ -200,7 +210,7 @@ export default function ArticoWeb() {
     learning.last?.startsWith(`/foundation/${step.id}/`),
   )
   const crumb =
-    route.page === 'vocabulary' ? (language === 'ja' ? '学ぶ / 語彙 / 97' : 'Learn / Vocabulary / 97') : route.page === 'lesson'
+    route.page === 'vocabulary' ? `${language === 'ja' ? '学ぶ / 語彙' : 'Learn / Vocabulary'}${route.topic ? ` / ${route.topic}` : ''}` : route.page === 'lesson'
       ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
       : route.page === 'application'
         ? `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
@@ -222,7 +232,7 @@ export default function ArticoWeb() {
   else if (route.page === 'courses')
     screen = <Courses learning={learning} route={route} key={route.path} />
   else if (route.page === 'vocabulary')
-    screen = <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}><Vocabulary /></Suspense>
+    screen = <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}><Vocabulary route={route} /></Suspense>
   else if (route.page === 'application')
     screen = (
       <Suspense fallback={<div className="aw-page" role="status">{t('Loading the chapter…')}</div>}>

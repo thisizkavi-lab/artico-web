@@ -5,6 +5,7 @@ import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
+const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
 const japaneseAM=JSON.parse(readFileSync(new URL('./vocabularyJapaneseAM.json',import.meta.url),'utf8'))
 const japaneseNZ=JSON.parse(readFileSync(new URL('./vocabularyJapaneseNZ.json',import.meta.url),'utf8'))
 const overrides=JSON.parse(readFileSync(new URL('./vocabularyJapaneseOverrides.json',import.meta.url),'utf8'))
@@ -35,9 +36,31 @@ test('Japanese equivalents are grounded in CC0 dictionary or curated phrase tran
   assert.ok(source.topics.some(t=>t.extra.includes('time zone')))
 })
 
-test('Lesson 97 route, learn entry and navigation preserve the existing 96 chapters',()=>{
+test('Vocabulary directory metadata matches all 78 existing topic titles without including lesson words',()=>{
+  assert.deepEqual(topics,source.topics.map(({sourceLesson,topic,ja})=>({sourceLesson,topic,ja})))
+  assert.equal(topics.length,78)
+  assert.ok(topics.every(topic=>Object.keys(topic).sort().join(',')==='ja,sourceLesson,topic'))
+})
+
+test('Lesson 97 supports a directory and direct routes for all 78 empty lesson pages',()=>{
   assert.deepEqual(parseRoute('#/lesson/97/study'),{path:'/lesson/97/study',page:'vocabulary',id:'97'})
   assert.equal(parseRoute('#/vocabulary').page,'vocabulary')
+  for (let n=1;n<=78;n++) {
+    const topic=String(n).padStart(2,'0')
+    assert.deepEqual(parseRoute(`#/lesson/97/study/${topic}`),{
+      path:`/lesson/97/study/${topic}`,page:'vocabulary',id:'97',topic,
+    })
+  }
+  assert.deepEqual(parseRoute('#/lesson/97/study/1'),{
+    path:'/lesson/97/study/01',page:'vocabulary',id:'97',topic:'01',
+  })
+  assert.deepEqual(parseRoute('#/vocabulary/78'),{
+    path:'/lesson/97/study/78',page:'vocabulary',id:'97',topic:'78',
+  })
+  for (const invalid of ['00','79','100','not-a-lesson'])
+    assert.deepEqual(parseRoute(`#/lesson/97/study/${invalid}`),{
+      path:'/lesson/97/study',page:'vocabulary',id:'97',
+    })
   assert.equal(parseRoute('#/lesson/96/study').page,'lesson')
   assert.equal(getLessonNavigation({page:'lesson',id:'96'}).next,'/lesson/97/study')
   const shell=readFileSync(new URL('./ArticoWeb.jsx',import.meta.url),'utf8')
@@ -46,11 +69,13 @@ test('Lesson 97 route, learn entry and navigation preserve the existing 96 chapt
   const css=readFileSync(new URL('./vocabulary.css',import.meta.url),'utf8')
   assert.match(shell,/lazy\(\(\) => import\('\.\/Vocabulary'\)\)/)
   assert.match(shell,/route\.page === 'vocabulary'/)
+  assert.match(shell,/<Vocabulary route=\{route\}/)
   assert.match(learn,/href="#\/lesson\/97\/study"/)
   assert.match(learn,/78 topics/)
-  assert.match(ui,/japaneseJapanese|vocabularyJapaneseAM/)
-  assert.match(ui,/https:\/\/jisho\.org\/search\//)
-  assert.match(ui,/aria-pressed=\{filter === id\}/)
-  assert.match(ui,/limit \+ 120|setLimit\(n => n \+ 120\)/)
-  assert.match(css,/@media\(max-width:620px\)/)
+  assert.match(ui,/vocabularyTopics\.json/)
+  assert.match(ui,/topics\.map/)
+  assert.match(ui,/This lesson is being prepared/)
+  assert.match(ui,/topicHref\(next\.sourceLesson\)/)
+  assert.doesNotMatch(ui,/vocabularyCatalog\.json|vocabularyJapaneseAM|vocabularyJapaneseNZ|vocabularyJapaneseOverrides/)
+  assert.match(css,/@media \(max-width: 620px\)/)
 })

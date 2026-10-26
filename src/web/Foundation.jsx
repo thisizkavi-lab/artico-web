@@ -11,7 +11,7 @@ import LessonFooter from './LessonFooter'
 import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
 import OrientationFigure, { orientationFigures } from './OrientationFigures'
 import OrientationPractice from './OrientationPractice'
-import StudyPlan from './StudyPlan'
+import StudyPlan from './StudyPlan.jsx'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>

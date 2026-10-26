@@ -113,6 +113,8 @@ export function parseRoute(hash) {
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
   if (path === '/courses?orientation') return { path: '/home', page: 'home' }
   const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
+  if ((page === 'lesson' && id === '97' && view === 'study') || page === 'vocabulary')
+    return { path:'/lesson/97/study', page:'vocabulary', id:'97' }
   if (page === 'application') {
     if (!id) return { path: '/application', page:'application' }
     if (/^(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)$/.test(id) && !view)

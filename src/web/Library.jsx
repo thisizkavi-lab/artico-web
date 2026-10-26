@@ -2,6 +2,7 @@ import { useLanguage } from './Language'
 import { useState } from 'react'
 import { Button, Heading, Icon } from './components'
 import StudyMap from './StudyMap'
+import CurriculumIcon, { chapterIcon, foundationIcon, groupIcon, stageIcon } from './CurriculumIcon'
 import { introductionAliases } from '../course/introductions'
 import { getLearningStage, learningStages } from './pathway'
 import { catalog, chapterById, foundationSteps, groups, savedItems } from './content'
@@ -103,13 +104,13 @@ export function Courses({ learning, route }) {
             href={`#/courses?${item.id}`}
             aria-current={category === item.id ? 'page' : undefined}
           >
-            <span>{String(i + 1).padStart(2, '0')}</span>
+            <CurriculumIcon name={stageIcon(item.id)} size={18} />
             {t(item.title)}
           </a>
         ))}
       </nav>
       <div className="rl-course-heading">
-        <h2>{t(stage.title)}</h2>
+        <div className="rl-course-title"><CurriculumIcon name={stageIcon(stage.id)} size={26} /><h2>{t(stage.title)}</h2></div>
         <p>{t(stage.description)}</p>
       </div>
       {category === 'social' ? (
@@ -135,10 +136,11 @@ export function Courses({ learning, route }) {
                     setSearch('')
                   }}
                 >
-                  <span>
+                  <span className="rl-group-range">
                     {String(item.start).padStart(2, '0')}–{item.end}
                   </span>
-                  {t(item.title)}
+                  <CurriculumIcon name={groupIcon(item.start)} size={20} />
+                  <span className="rl-group-name">{t(item.title)}</span>
                 </button>
               ))}
             </aside>
@@ -153,7 +155,8 @@ export function Courses({ learning, route }) {
                   className={chapter.id === currentId ? 'is-current' : ''}
                 >
                   <span className="rl-number">{chapter.id}</span>
-                  <span>
+                  <CurriculumIcon className="rl-topic-icon" name={chapterIcon(chapter.id)} size={22} />
+                  <span className="rl-lesson-copy">
                     <strong>{language === 'ja' ? chapter.ja : chapter.title}</strong>
                     <small>{chapter.id === currentId ? t("Continue learning") : language === 'ja' ? chapter.goalJa : chapter.goal}</small>
                   </span>
@@ -177,7 +180,8 @@ export function Courses({ learning, route }) {
                 className={learning.last?.startsWith(`/foundation/${id}/`) ? 'is-current' : ''}
               >
                 <span className="rl-number">{String(i + 1).padStart(2, '0')}</span>
-                <span>
+                <CurriculumIcon className="rl-topic-icon" name={foundationIcon(id)} size={22} />
+                <span className="rl-lesson-copy">
                   <strong>{language === 'ja' ? step.ja : step.en}</strong>
                   <small>{t(step.description)}</small>
                 </span>

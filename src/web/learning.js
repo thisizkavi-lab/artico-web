@@ -111,6 +111,7 @@ export function parseRoute(hash) {
     return { path: '/home', page: 'home' }
   }
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
+  if (path === '/courses?orientation') return { path: '/home', page: 'home' }
   const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
   if (page === 'home') return { path: '/home', page: 'home' }
   if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }

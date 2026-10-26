@@ -1,5 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
 import {
   ORIENTATION_RESPONSE_KEY,
   buildOrientationResult,
@@ -12,6 +13,7 @@ import {
   roles,
 } from './orientationProfile.js'
 import { emptyLearning, sanitizeLearning } from './learning.js'
+import { getPersonaConfetti, getPersonaConfettiPieces, personaConfettiThemes } from './personaConfetti.js'
 
 const sample = {
   v:1, context:['friends','ideas'], goal:'exchange',
@@ -133,3 +135,30 @@ test('Orientation navigation has a reliable Next action at all four steps', () =
   assert.equal(nextOrientationStep({ ...done, context:[] }, 3), 3)
   assert.equal(nextOrientationStep(done, -1), -1)
 });
+
+test('each imagined English self has a distinct confetti shape and palette', () => {
+  const names = Object.keys(roles)
+  assert.deepEqual(Object.keys(personaConfettiThemes), names)
+  assert.equal(new Set(names.map(id => getPersonaConfetti(id).shape)).size, names.length)
+  assert.equal(new Set(names.map(id => getPersonaConfetti(id).colors.join(','))).size, names.length)
+  for (const id of names) {
+    const pieces = getPersonaConfettiPieces(id)
+    const theme = getPersonaConfetti(id)
+    assert.equal(pieces.length, 34)
+    assert.deepEqual(getPersonaConfettiPieces(id), pieces) // deterministic, no random jitter
+    assert.ok(pieces.every(p => theme.colors.includes(p.color)))
+    assert.ok(pieces.every(p => p.drift.endsWith('vw') && p.fall.endsWith('px')))
+    assert.ok(pieces.every(p => p.delay.endsWith('ms') && p.duration.endsWith('ms')))
+  }
+})
+
+test('the redundant Orientation result footer is removed but the final reveal remains', () => {
+  const jsx = readFileSync(new URL('./OrientationPractice.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./orientation-practice.css', import.meta.url), 'utf8')
+  assert.doesNotMatch(jsx, /rf-persona-next|rf-persona-footer|rf-persona-note/)
+  assert.doesNotMatch(css, /\\.rf-persona-next|\\.rf-persona-footer|\\.rf-persona-note/)
+  assert.match(jsx, /<PersonaConfetti/)
+  assert.match(jsx, /celebrate\\(chosenRole\\)/)
+  assert.match(jsx, /celebrate\\(id\\)/)
+  assert.match(css, /prefers-reduced-motion/)
+})

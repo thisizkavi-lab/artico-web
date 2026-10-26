@@ -57,7 +57,7 @@ export const roles = {
   },
 }
 
-export const defaultAnswers = { context:[], goal:null, voice:null, friction:null }
+export const defaultAnswers = { context:[], goal:null, voice:null, friction:null, roleOverride:null }
 
 const allowed = (key, id) => choices[key].some(option => option.id === id)
 
@@ -70,6 +70,7 @@ export function normalizeOrientationAnswers(value) {
     goal: allowed('goal', value.goal) ? value.goal : null,
     voice: allowed('voice', value.voice) ? value.voice : null,
     friction: allowed('friction', value.friction) ? value.friction : null,
+    roleOverride: Object.hasOwn(roles, value.roleOverride) ? value.roleOverride : null,
   }
 }
 export function parseOrientationAnswers(raw) {
@@ -93,7 +94,8 @@ export function buildOrientationResult(input) {
   ]
   for(const item of selected) for(const [role, weight] of Object.entries(item.weights)) scores[role] += weight
   const preferredRole = Object.keys(choices.goal.find(o => o.id === answers.goal).weights)[0]
-  const roleId = Object.keys(scores).sort((a,b) => scores[b] - scores[a] || (a === preferredRole ? -1 : b === preferredRole ? 1 : 0))[0]
+  const suggestedRole = Object.keys(scores).sort((a,b) => scores[b] - scores[a] || (a === preferredRole ? -1 : b === preferredRole ? 1 : 0))[0]
+  const roleId = answers.roleOverride ?? suggestedRole
   const contexts = answers.context.map(id => choices.context.find(o => o.id === id))
   const goal = choices.goal.find(o => o.id === answers.goal)
   const voice = choices.voice.find(o => o.id === answers.voice)
@@ -102,6 +104,7 @@ export function buildOrientationResult(input) {
   const contextEn = contexts.map(x => x.sceneEn).join(' or ')
   return {
     roleId,
+    suggestedRole,
     role: roles[roleId],
     titleEn: 'The ' + voice.adjective + ' ' + roles[roleId].en,
     tentativeWhyJa: contextJa + 'で、' + goal.wantJa + 'ため。',

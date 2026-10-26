@@ -47,9 +47,7 @@ export default function Home() {
   return (
     <div className="aw-page aw-library-page ah-page">
       <header className="ah-heading">
-        <p className="ah-eyebrow">ARTICO · YOUR STARTING POINT</p>
         <h1>{ja ? 'どこから始める？' : 'Pick your starting point.'}</h1>
-        <p>{ja ? '今の自分に合うところから始めましょう。' : 'Choose the path that fits you today.'}</p>
       </header>
       <div className="ah-options">
         {startingPoints.map(point => (

@@ -93,7 +93,7 @@ export default function WritingStudio() {
   const [category, setCategory] = useState('c01')
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState(prompts[0].id)
-  const [draftIds, setDraftIds] = useState(() => listWritingDraftIds(window.localStorage))
+  const [draftIds, setDraftIds] = useState(() => listWritingDraftIds(window.localStorage, prompts.map(prompt => prompt.id)))
   const editorRef = useRef(null)
 
   const visible = useMemo(() => prompts.filter(prompt => {

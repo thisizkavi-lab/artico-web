@@ -266,8 +266,8 @@ export default function ArticoWeb() {
         }}
       > {t("Skip to content")} </a>
       <aside className="aw-sidebar">
-        <a className="aw-wordmark" href="#/home" aria-label={t("Artico home")}>
-          artico
+        <a className="aw-wordmark artico-wordmark" href="#/home" aria-label={t("Artico home")}>
+          artico<span className="artico-wordmark-dot" aria-hidden="true">.</span>
         </a>
         <p className="aw-tagline">{t("Words for everyday life.")}</p>
         <nav className="aw-destinations" aria-label={t("Main navigation")}>

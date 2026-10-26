@@ -215,7 +215,7 @@ export default function ArticoWeb() {
       : route.page === 'application'
         ? `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
         : route.page === 'foundation'
-          ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Foundations')}`
+          ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Level Zero')}`
         : route.page === 'courses'
           ? t('Learn')
           : ['practice', 'saved'].includes(route.page)

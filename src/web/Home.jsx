@@ -15,8 +15,8 @@ const startingPoints = [
   {
     id:'foundation',
     icon:'abc',
-    label:'Foundations',
-    ja:'基礎',
+    label:'Level Zero',
+    ja:'レベルゼロ',
     description:'Start with letters and sounds.',
     descriptionJa:'文字と音から始める。',
     href:'#/courses?foundation',

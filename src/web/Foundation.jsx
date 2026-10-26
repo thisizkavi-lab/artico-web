@@ -1,7 +1,7 @@
 import japaneseFoundation from '../course/locales/ja/foundations.json'
 import { SourceContent } from './ContentBlocks'
 import { useLanguage } from './Language'
-import { useEffect, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { foundationReading, twisterGuidance } from '../course/foundations-en'
 import { alphabet, tongueGroups, allTwisters } from '../data'
 import { getFoundationNavigation } from './pathway'
@@ -9,6 +9,7 @@ import { TheoryAudioSample, YouTubeLessonPlayer } from './FoundationContent'
 import { Glyph } from './LessonExperience'
 import LessonFooter from './LessonFooter'
 import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
+import OrientationFigure, { orientationFigures } from './OrientationFigures'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -179,6 +180,12 @@ function LocalizedTwister({ block }) {
 }
 
 export function Reading({ model }) {
+  const { language } = useLanguage()
+  const orientationFigure = (section, index) => {
+    const config = orientationFigures[section.id]
+    if (!config || index !== (language === 'ja' ? config.afterJa : config.afterEn)) return null
+    return <OrientationFigure config={config} />
+  }
   return (
     <div className="ip-reading">
       {model.sections.map((section, index) => (
@@ -187,11 +194,17 @@ export function Reading({ model }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2>{section.title}</h2>
           </div>
-          {section.blocks?.map((block) => block.type === 'twister' ? <LocalizedTwister key={block.id} block={block} /> : <SourceContent key={block.id} block={block} examples={false} />)}
+          {section.blocks?.map((block, i) => (
+            <Fragment key={block.id}>
+              {block.type === 'twister' ? <LocalizedTwister block={block} /> : <SourceContent block={block} examples={false} />}
+              {orientationFigure(section, i)}
+            </Fragment>
+          ))}
           {section.paragraphs?.map((text, i) => (
-            <p className="ip-prose" key={i}>
-              {text}
-            </p>
+            <Fragment key={i}>
+              <p className="ip-prose">{text}</p>
+              {orientationFigure(section, i)}
+            </Fragment>
           ))}
           {section.items && (
             <ol className="rf-steps">

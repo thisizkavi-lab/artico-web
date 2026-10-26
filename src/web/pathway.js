@@ -57,7 +57,7 @@ export function getFoundationNavigation(id) {
   return {
     stage,
     index: stage.lessonIds.indexOf(id),
-    previous: position > 0 ? `/foundation/${steps[position - 1]}/study` : stage.overview,
+    previous: position > 0 ? `/foundation/${steps[position - 1]}/study` : '/home',
     next:
       position < steps.length - 1
         ? `/foundation/${steps[position + 1]}/study`

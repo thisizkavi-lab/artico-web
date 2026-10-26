@@ -88,17 +88,6 @@
   display:block; width:100%; font-size:10px; font-weight:400;
   line-height:1.5; color:#778e7d; overflow-wrap:anywhere;
 }
-.rf-persona-next { display:flex;justify-content:space-between;align-items:center;gap:18px;
-  border-top:1px solid #e1e8e0;padding:24px 0 21px;margin-top:23px; }
-.rf-persona-next small { font-size:12px;color:#698571;font-weight:700; }
-.rf-persona-next p { font-size:15px;color:#3f5746;line-height:1.75;margin:6px 0 0; }
-.rf-persona-next a { flex:0 0 auto;border-radius:10px;background:#365e48;color:white;
-  padding:13px 19px;text-decoration:none;font-size:13px;font-weight:700; }
-.rf-persona-footer { display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 17px; }
-.rf-persona-footer button,.rf-persona-footer a { font:inherit;font-size:12px;color:#708578;
-  background:none;border:0;padding:9px 0;text-decoration:underline;text-underline-offset:3px;cursor:pointer; }
-.rf-persona-note { font-size:11px;color:#95a299;line-height:1.6; }
-.rf-persona-note span { margin-left:10px; }
 @media(max-width:680px) {
   .rf-profile { padding:8px 0 28px; }
   .rf-profile-progress { margin:22px 0 28px; }
@@ -122,8 +111,6 @@
     scroll-snap-align:start;
   }
   .rf-persona-mini { height:122px; min-height:122px; max-height:122px; }
-  .rf-persona-next { align-items:stretch;flex-direction:column;gap:13px; }
-  .rf-persona-next a { text-align:center; }
 }
 @media(prefers-reduced-motion:reduce) {
   .rf-profile-option { transition:none; }
@@ -162,4 +149,59 @@
 .rf-persona-illustration .rf-persona-duo img:last-child { right:0; }
 @media(max-width:680px) {
   .rf-persona-illustration .rf-persona-duo { height:225px; }
+}
+
+
+/* A brief, persona-specific celebration when the learner reveals a result.
+   It occupies no layout space and cannot intercept taps or keyboard focus. */
+.rf-persona { position:relative; }
+.rf-persona-confetti {
+  position:absolute;
+  inset:0 0 auto;
+  width:100%;
+  height:min(540px, 100%);
+  overflow:hidden;
+  pointer-events:none;
+  user-select:none;
+  z-index:4;
+}
+.rf-persona-confetti-piece {
+  position:absolute;
+  left:50%;
+  top:117px;
+  width:var(--piece-size);
+  height:var(--piece-size);
+  background:var(--piece-color);
+  opacity:0;
+  animation:rf-persona-confetti-burst var(--piece-duration) ease-out var(--piece-delay) 1 both;
+}
+.rf-persona-confetti--bubble .rf-persona-confetti-piece {
+  border:2px solid var(--piece-color);
+  background:transparent;
+  border-radius:50%;
+}
+.rf-persona-confetti--diamond .rf-persona-confetti-piece {
+  clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.rf-persona-confetti--star .rf-persona-confetti-piece {
+  clip-path:polygon(50% 0%, 62% 36%, 100% 38%, 70% 61%, 81% 100%, 50% 77%, 19% 100%, 30% 61%, 0% 38%, 38% 36%);
+}
+.rf-persona-confetti--triangle .rf-persona-confetti-piece {
+  clip-path:polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.rf-persona-confetti--ribbon .rf-persona-confetti-piece {
+  width:calc(var(--piece-size) * .65);
+  height:calc(var(--piece-size) * 1.85);
+  border-radius:2px;
+}
+@keyframes rf-persona-confetti-burst {
+  0%   { opacity:0; transform:translate3d(0,0,0) scale(.3) rotate(0deg); }
+  12%  { opacity:1; }
+  30%  { opacity:1; transform:translate3d(var(--piece-dx),var(--piece-rise),0) scale(1) rotate(65deg); }
+  82%  { opacity:1; }
+  100% { opacity:0; transform:translate3d(var(--piece-dx),var(--piece-fall),0) scale(.7) rotate(var(--piece-spin)); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .rf-persona-confetti { display:none; }
+  .rf-persona-confetti-piece { animation:none; }
 }

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { asset, Button, Portrait } from './components'
 import { useLanguage } from './Language'
 import { learningStages } from './pathway'
+import CurriculumIcon, { stageIcon } from './CurriculumIcon'
 import { landingCopy } from './landingCopy'
 import './landing.css'
 
@@ -131,7 +132,7 @@ export default function Landing({ last }) {
           <div className="al-stages">
             {learningStages.map((stage, index) => (
               <a key={stage.id} href={`#${index === 0 ? stage.start : stage.overview}`} className="al-stage">
-                <span className="al-kicker">0{index + 1}</span>
+                <div className="al-stage-top"><CurriculumIcon name={stageIcon(stage.id)} size={29} /><span className="al-kicker">0{index + 1}</span></div>
                 <h3 lang="en">{index === 0 ? 'Start here' : stage.title}</h3>
                 {language === 'ja' && <span className="al-stage-support">{stage.ja}</span>}
                 <p>{copy.stages[index]}</p>

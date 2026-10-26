@@ -23,7 +23,7 @@ const startingPoints = [
   },
   {
     id:'social',
-    icon:'messages',
+    icon:'socialDuo',
     label:'Social Fluency',
     ja:'日常会話',
     description:'Speak naturally in everyday situations.',

@@ -1,0 +1,4004 @@
+# English Vocabulary Builder — Vocabulary by lesson
+
+Source: [English for Everyone: English Vocabulary Builder (Thomas Booth, DK)](https://newteacherlibraryandtools.square.site/uploads/b/e4443390-f724-11ec-9291-b5b724deb1dc/English%20for%20Everyone%20-%20English%20Vocabulary%20Builder%20%28Thomas%20Booth%2C%20DK%29%20%28z-lib.org%29%20%281%29.pdf)
+
+This file lists the vocabulary from Lessons 1–78 in the book. The vocabulary is grouped by the lesson number printed in the book’s Word list. Exercise and answer pages are intentionally omitted. Spelling variants and repeated entries are kept where the book lists them.
+
+## Lesson 1 — Countries and nationalities
+
+_59 entries_
+
+- American
+- Argentina
+- Argentinian
+- Australia
+- Brazil
+- Brazilian
+- British
+- Canada
+- Canadian
+- China
+- Chinese
+- countries
+- Czech Republic
+- Egypt
+- Egyptian
+- France
+- French
+- German
+- Germany
+- Greece
+- Greek
+- India
+- Indian
+- Indonesia
+- Japan
+- Japanese
+- Mexican
+- Mexico
+- Mongolia
+- Mongolian
+- nationalities
+- Netherlands
+- New Zealand
+- Pakistan
+- Pakistani
+- Philippines
+- Poland
+- Polish
+- Portugal
+- Portuguese
+- Republic of Ireland
+- ROI
+- Russia
+- Russian
+- Singapore
+- Slovakia
+- South Africa
+- South Korea
+- Spain
+- Spanish
+- Thailand
+- Turkey
+- Turkish
+- UAE
+- UK
+- United Arab Emirates
+- United Kingdom
+- United States of America
+- US
+
+## Lesson 2 — Numbers
+
+_60 entries_
+
+- decimals
+- eight
+- eighteen
+- eighth
+- eighty
+- eleven
+- eleventh
+- fifteen
+- fifth
+- fifty
+- first
+- five
+- forty
+- four
+- fourteen
+- fourth
+- fractions
+- half
+- hundred
+- million
+- nine
+- nineteen
+- ninety
+- ninety-nine percent
+- ninth
+- nought point five
+- numbers
+- one
+- one hundred
+- one million
+- one percent
+- one point seven
+- one thousand
+- percentages
+- quarter
+- second
+- seven
+- seventeen
+- seventh
+- seventy
+- six
+- sixteen
+- sixth
+- sixty
+- ten
+- tenth
+- third
+- thirteen
+- thirty
+- thousand
+- three
+- twelfth
+- twelve
+- twentieth
+- twenty
+- twenty-first
+- twenty-one
+- twenty-two
+- two
+- two hundred
+
+## Lesson 3 — Time expressions
+
+_51 entries_
+
+- afternoon
+- always
+- April
+- August
+- autumn
+- calendar
+- century
+- daily
+- day
+- decade
+- December
+- evening
+- every day
+- every other day
+- fall (season)
+- February
+- fortnight
+- Friday
+- hour
+- hourly
+- January
+- July
+- June
+- March
+- May
+- millennium
+- minute
+- Monday
+- month
+- monthly
+- morning
+- never
+- night
+- November
+- October
+- often
+- once a week
+- Saturday
+- seasons
+- September
+- sometimes
+- spring
+- summer
+- Sunday
+- three times a week
+- Thursday
+- time
+- Tuesday
+- twice a week
+- two weeks
+- usually
+
+## Lesson 4 — Daily routines
+
+_71 entries_
+
+- alarm goes off
+- arrive late
+- bath
+- bed
+- breakfast
+- brush your hair
+- brush your teeth
+- buy groceries
+- café
+- call a friend
+- call your family
+- catch the bus
+- catch the train
+- check your emails
+- clear the table
+- coffee
+- cook dinner
+- dinner
+- dishes
+- do homework
+- do the dishes
+- do the housework
+- drink tea or coffee
+- drive
+- dry your hair
+- eat breakfast
+- eat dinner
+- eat lunch
+- feed the cat
+- feed the dog
+- finish work
+- friends
+- get dressed
+- get up
+- go home
+- go out
+- go to a café
+- go to bed
+- go to school
+- go to work
+- have a bath
+- have a break
+- have a shower
+- have breakfast
+- have dinner
+- have lunch
+- have tea or coffee
+- homework
+- housework
+- iron a shirt
+- leave the house
+- leave work
+- listen to the radio
+- lunch
+- make the bed
+- overtime
+- put on make-up
+- put the children to bed
+- read a newspaper
+- school
+- shave
+- shower
+- start work
+- take a bath
+- take a shower
+- take out the rubbish
+- take out the trash
+- tea
+- wake up
+- walk the dog
+- wash the dishes
+
+## Lesson 5 — Describing things: facts
+
+_48 entries_
+
+- big
+- black
+- blue
+- brown
+- clean
+- cold (temperature)
+- colors / colours
+- cream (colour)
+- dark green
+- deep
+- denim
+- dirty
+- fabric
+- far
+- glass
+- gray / grey
+- green
+- heavy
+- high
+- hot
+- leather
+- light
+- little
+- long
+- loose
+- loud
+- low
+- materials
+- metal
+- narrow
+- navy blue
+- near
+- orange (colour)
+- pale green
+- paper
+- pink
+- plastic
+- purple
+- quiet
+- red
+- shallow
+- sharp
+- short
+- silk
+- small
+- thick
+- thin
+- tight
+
+## Lesson 6 — Describing things: opinions
+
+_53 entries_
+
+- amazing
+- annoying
+- awful
+- bad
+- beautiful
+- boring
+- breathtaking
+- brilliant
+- confusing
+- delicious
+- disappointing
+- disastrous
+- disgusting
+- exciting
+- extraordinary
+- fantastic
+- frightening
+- fun
+- good
+- grateful
+- great
+- harmless
+- horrible
+- important
+- incredible
+- interesting
+- irritating
+- lovely
+- magnificent
+- mediocre
+- nasty
+- nice
+- odd
+- old-fashioned
+- opinions
+- outstanding
+- pleasant
+- pretty
+- relaxing
+- remarkable
+- respectable
+- shocking
+- special
+- strange
+- stunning
+- superb
+- terrible
+- thrilling
+- tiring
+- ugly
+- unpleasant
+- useful
+- useless
+
+## Lesson 7 — Sharing information
+
+_45 entries_
+
+- attachment
+- business card
+- cell phone number
+- city
+- company name
+- contact
+- delete
+- draft
+- email
+- email address
+- exchange business cards
+- first name
+- forward (email action)
+- house number
+- inbox
+- introduce yourself
+- job title
+- junk mail
+- last name
+- letter
+- mail
+- memo
+- middle name
+- mobile number
+- name
+- note
+- online chat
+- outbox
+- phone call
+- post
+- postcode
+- print
+- reply
+- reply all
+- send
+- signature
+- social networking
+- spam
+- state
+- street address
+- subject
+- text message
+- title
+- trash
+- voicemail
+
+## Lesson 8 — Common English idioms
+
+_24 entries_
+
+- against the clock
+- be on the fence
+- cold feet
+- cut corners
+- face the music
+- feel under the weather
+- get cold feet
+- have a heart of gold
+- head over heels
+- hear something on the grapevine
+- heart of gold
+- hit the nail on the head
+- keep an eye on
+- lend a hand
+- let the cat out of the bag
+- let your hair down
+- on the ball
+- on the fence
+- over the top
+- pain in the neck
+- pulling your leg
+- sit on the fence
+- take something with a pinch of salt
+- teacher’s pet
+
+## Lesson 9 — Around the house
+
+_54 entries_
+
+- apartment block
+- armchair
+- attic
+- balcony (building)
+- basement
+- bath
+- bathroom
+- bathtub
+- bed
+- bedroom
+- bedside table
+- bin
+- block of flats
+- bookcase
+- cabinet
+- chair
+- chest of drawers
+- cooker
+- couch
+- cupboard
+- cushion
+- desk
+- dining room
+- dishwasher
+- door
+- downstairs
+- dresser
+- freezer
+- fridge
+- furniture
+- garden
+- house
+- kitchen
+- lamp
+- lawn
+- light
+- living room
+- refrigerator
+- roof
+- rooms
+- rug
+- shower
+- sink (household fixture)
+- sofa
+- stairs
+- stove
+- study
+- table
+- toilet
+- towel
+- trash can
+- TV
+- upstairs
+- wardrobe
+
+## Lesson 10 — Kitchen implements and toiletries
+
+_54 entries_
+
+- bathroom equipment
+- blender
+- bottle opener
+- bowl (container)
+- can opener
+- chopping board
+- chopsticks
+- colander
+- conditioner
+- corkscrew
+- crockery
+- cup
+- cutlery
+- cutting board
+- dental floss
+- deodorant
+- dinnerware
+- face wash
+- fish slice
+- fork (cutlery)
+- frying pan
+- grater
+- kettle
+- kitchen implements
+- kitchen knife
+- knife
+- ladle
+- microwave
+- moisturizer
+- mortar
+- mouthwash
+- mug
+- peeler
+- pestle
+- pestle and mortar
+- plate
+- razor
+- rolling pin
+- saucepan
+- scissors
+- shampoo
+- shaving foam
+- shower gel
+- sieve
+- silverware
+- soap
+- spatula
+- sponge
+- spoon
+- tin opener
+- toaster
+- toilet paper
+- toiletries
+- toothbrush
+
+## Lesson 11 — Chores and cleaning
+
+_60 entries_
+
+- bin liner
+- bleach
+- broom
+- brush
+- bucket
+- change the sheets
+- chores
+- clean the bathroom
+- clean the windows
+- clean up
+- cleaning
+- cleaning fluid
+- clear the table
+- cloth
+- clothes line
+- dishes
+- dishwashing liquid
+- do the dishes
+- do the ironing
+- do the laundry
+- dry the dishes
+- drying clip
+- dust
+- duster
+- dustpan
+- feed the pets
+- fold clothes
+- garbage bag
+- go to the shops
+- go to the store
+- hang clothes
+- household chores
+- iron a shirt
+- ironing
+- ironing board
+- laundry
+- laundry basket
+- laundry detergent
+- load the dishwasher
+- make the bed
+- mop the floor
+- peg
+- polish
+- recycling bin
+- rubber gloves
+- scouring pad
+- scrub the floor
+- set the table
+- shop
+- sponge
+- store
+- sweep the floor
+- take out the rubbish
+- take out the trash
+- tidy
+- tumble dryer
+- unload the dishwasher
+- vacuum cleaner
+- vacuum the carpet
+- wash the car
+
+## Lesson 12 — Tools and gardening
+
+_54 entries_
+
+- Allen keys
+- ax / axe
+- bolt
+- change a lightbulb
+- do the weeding
+- drill
+- file
+- fit a carpet
+- fork (gardening)
+- gardening
+- hacksaw
+- hammer
+- hex keys
+- hoe
+- home improvements
+- hose
+- jigsaw (tool)
+- ladder
+- lawn mower
+- level
+- make curtains
+- monkey wrench
+- mow the lawn
+- nail
+- nuts
+- paint
+- paint a room
+- paint the house
+- paintbrush
+- plane
+- plant bulbs
+- plaster the walls
+- pliers
+- prune trees
+- put up shelves
+- rake
+- roller (paint)
+- saw
+- screw
+- screwdriver
+- shape
+- shears
+- spanner
+- spirit level
+- sprinkler
+- tape measure
+- tile the bathroom
+- tool box
+- tools
+- trim a hedge
+- trowel
+- unblock the sink
+- unclog the sink
+- vice / vise
+
+## Lesson 13 — Moving and renting
+
+_48 entries_
+
+- accommodation
+- apartments
+- bills
+- boxes
+- bungalow
+- cottage
+- deposit
+- detached houses
+- duplex
+- estate agent
+- flats
+- furnished
+- give notice
+- housemate
+- house-warming party
+- including utilities
+- keys
+- landlord
+- lease
+- local
+- lodger
+- move in
+- move out
+- moving
+- moving truck
+- open-plan
+- pack
+- parking space
+- property
+- ranch house
+- real estate
+- realtor
+- reference (landlord)
+- removal van
+- rent
+- renting
+- residential area
+- roomer
+- roommate
+- row houses
+- semi-detached houses
+- storage
+- tenancy agreement
+- tenant
+- terraced houses
+- unfurnished
+- unpack
+- view a house
+
+## Lesson 14 — The body
+
+_57 entries_
+
+- ankle
+- arm
+- blink
+- blush (action)
+- body, parts of
+- bow (gesture)
+- breathe
+- cheek
+- chest
+- chin
+- clap
+- cough
+- cry
+- ear
+- elbow
+- eyebrow
+- eyelashes
+- eyes
+- face
+- finger
+- foot
+- forehead
+- frown
+- grin
+- hand
+- head
+- hip
+- hold your breath
+- knee
+- laugh
+- leg
+- lick
+- lips
+- mouth
+- neck
+- nod
+- nose
+- nostrils
+- perspire
+- shake your head
+- shin
+- shiver
+- shoulder (body)
+- shrug
+- sigh
+- smile
+- sneeze
+- snore
+- stomach
+- suck
+- sweat
+- teeth
+- thigh
+- thumb
+- toe
+- tooth
+- waist
+
+## Lesson 15 — Clothes
+
+_58 entries_
+
+- bathrobe
+- blouse
+- boxer shorts
+- bra
+- button
+- change (clothes)
+- checked / checkered
+- clothes
+- coat
+- collar (shirt)
+- cotton
+- cuff
+- denim
+- do up
+- dress
+- dressing gown
+- fasten
+- fit
+- get changed
+- hood (clothing)
+- jacket
+- jeans
+- jockey shorts
+- jumper
+- knickers
+- leather
+- leggings
+- pajamas
+- panties
+- pants
+- pantyhose
+- plain (adjective)
+- pocket
+- polka dot
+- put on (clothes)
+- pyjamas
+- raincoat
+- shirt
+- shorts
+- silk
+- skirt
+- sleeve
+- socks
+- spotted
+- striped
+- styles
+- suit (clothing)
+- suit (someone)
+- sweater
+- take off
+- tie (clothing)
+- tights
+- trousers
+- t-shirt
+- undo
+- unfasten
+- uniform
+- up
+
+## Lesson 16 — Accessories and beauty products
+
+_54 entries_
+
+- accessories
+- aftershave
+- Alice band
+- backpack
+- badge
+- beauty
+- belt
+- blush / blusher (make-up)
+- boots
+- bow tie
+- bracelet
+- briefcase
+- brooch
+- buckle
+- cap
+- comb
+- cufflinks
+- earrings
+- eyeliner
+- eyeshadow
+- flip-flops
+- foundation
+- glasses
+- gloves
+- hair band
+- hair dye
+- hair gel
+- hair spray
+- hairbrush
+- handbag
+- handkerchief
+- hat
+- high heels
+- jewelry / jewellery
+- laces
+- lipstick
+- mascara
+- moisturizer
+- nail polish
+- necklace
+- perfume
+- pin
+- purse
+- ring
+- rucksack
+- sandals
+- scarf
+- shoes
+- slippers
+- sneakers
+- sunglasses
+- trainers
+- umbrella
+- wallet
+
+## Lesson 17 — Appearance
+
+_55 entries_
+
+- appearance
+- bald
+- beard
+- beautiful
+- black hair
+- blond hair
+- blue eyes
+- brown eyes
+- brown hair
+- casual
+- curly hair
+- dark skin
+- elegant
+- eyes
+- facial hair
+- fair skin
+- formal
+- freckles
+- frizzy hair
+- get your hair cut
+- glamorous
+- goatee
+- gray / grey eyes
+- gray / grey hair
+- green eyes
+- grow your hair
+- hair
+- hair cut
+- handsome
+- have your hair cut
+- hazel eyes
+- long hair
+- medium height
+- middle-aged
+- mole (skin)
+- moustache
+- mustache
+- old
+- olive skin
+- pale skin
+- ponytail
+- red hair
+- shave
+- short
+- short hair
+- shoulder-length hair
+- sideburns
+- smart
+- straight hair
+- stubble
+- style your hair
+- styles
+- tall
+- tan / tanned skin
+- tie your hair back
+
+## Lesson 18 — Personality traits
+
+_51 entries_
+
+- approachable
+- arrogant
+- assertive
+- brave
+- calm
+- caring
+- cautious
+- confident
+- considerate
+- critical
+- dishonest
+- eccentric
+- enthusiastic
+- friendly
+- funny
+- generous
+- honest
+- immature
+- impatient
+- impulsive
+- insensitive
+- intelligent
+- kind
+- laid-back
+- lazy
+- mature
+- mean
+- nervous
+- optimistic
+- outgoing
+- passionate
+- patient (personality trait)
+- personality traits
+- polite
+- reasonable
+- reliable
+- rude
+- secretive
+- selfish
+- sensitive
+- serious
+- shy
+- silly
+- supportive
+- talented
+- talkative
+- unapproachable
+- unfriendly
+- unkind
+- unreasonable
+- unreliable
+
+## Lesson 19 — Feelings and moods
+
+_52 entries_
+
+- amazed
+- amused
+- angry
+- annoyed
+- anxious
+- bored
+- calm
+- cheerful
+- confident
+- confused
+- curious
+- delighted
+- depressed
+- disappointed
+- disgusted
+- distracted
+- ecstatic
+- embarrassed
+- excited
+- exhausted
+- feelings
+- frightened
+- frustrated
+- furious
+- grateful
+- happy
+- interested
+- intrigued
+- irritated
+- jealous
+- lonely
+- lucky
+- mad
+- miserable
+- moods
+- nervous
+- pleased
+- proud
+- relaxed
+- sad
+- scared
+- serious
+- shocked
+- stressed
+- surprised
+- terrified
+- thrilled
+- tired
+- unenthusiastic
+- unhappy
+- unimpressed
+- upset
+
+## Lesson 20 — Family tree
+
+_41 entries_
+
+- adults
+- aunt
+- baby
+- boy
+- boyfriend
+- brother
+- brother-in-law
+- children
+- cousin
+- dad
+- daughter
+- families
+- father
+- female
+- girl
+- girlfriend
+- grandchildren
+- granddaughter
+- grandson
+- husband
+- male
+- mom
+- mother
+- mum
+- nephew
+- niece
+- only child
+- partner
+- sister
+- sister-in-law
+- son
+- stepbrother
+- stepmom
+- stepmother
+- stepmum
+- stepsister
+- teenagers
+- toddler
+- triplets
+- twins
+- uncle
+
+## Lesson 21 — Family and relationships
+
+_24 entries_
+
+- break up with someone
+- bring someone up
+- bring up someone
+- bump into someone
+- click with someone
+- close friend
+- drift apart
+- fall in love with someone
+- fall out with someone
+- families
+- get along with someone
+- get on with someone
+- give birth
+- grow up
+- have something in common
+- look up to someone
+- make friends with someone
+- put your foot down
+- relationships
+- run in the family
+- see eye to eye with someone
+- stick up for someone
+- take after someone
+- think the world of someone
+
+## Lesson 22 — Baby equipment and toys
+
+_57 entries_
+
+- baby carriage
+- baby equipment
+- baby monitor
+- babygro
+- ball
+- balloon
+- bib
+- board games
+- bodysuit
+- booties
+- bottle
+- buggy
+- building blocks
+- building bricks
+- changing mat
+- changing table
+- climbing frame
+- cot
+- crib
+- diaper
+- doll
+- dollhouse / doll’s house
+- dummy
+- games
+- high chair
+- jigsaw puzzle
+- jump rope
+- kite
+- marbles
+- mobile
+- Moses basket
+- nappy
+- nursery
+- pacifier
+- playground
+- playing cards
+- playpen
+- potty
+- pram
+- puppet
+- rattle
+- romper suit
+- sandbox
+- sandpit
+- seesaw
+- skipping rope
+- slide
+- snowsuit
+- soft toy
+- spinning top
+- stair gate
+- stroller
+- stuffed animal
+- swings
+- teddy bear
+- toys
+- train set
+
+## Lesson 23 — Education
+
+_58 entries_
+
+- architecture
+- art
+- biology
+- business studies
+- chemistry
+- class
+- classroom
+- college
+- degree (qualification)
+- design and technology
+- diploma
+- drama
+- economics
+- education
+- engineering
+- English
+- essay
+- exam
+- exercise book
+- fail
+- geography
+- geology
+- graduate
+- history
+- homework
+- information technology
+- laboratory
+- languages
+- law
+- lecture
+- lecturer
+- library
+- math / maths
+- medicine (subject)
+- music
+- pass (succeed)
+- philosophy
+- physical education
+- physics
+- professor
+- psychology
+- qualification
+- resit
+- review
+- revise
+- school
+- science
+- sit an exam
+- student
+- study a subject
+- studying
+- teacher
+- technology
+- test
+- textbook
+- thesis
+- university
+- veterinary medicine
+
+## Lesson 24 — Studying
+
+_28 entries_
+
+- attend classes
+- clear distinction
+- compare and contrast
+- continuous assessment
+- degree (qualification)
+- enrol on
+- enroll in
+- feedback
+- first draft
+- fresher
+- freshman
+- get a degree
+- give someone feedback on something
+- graduate
+- meet a deadline
+- miss a deadline
+- pass with flying colors / colours
+- polar opposites
+- postgraduate
+- semester
+- strikingly different
+- studying
+- take a test
+- take a year off
+- take a year out
+- take an exam
+- term
+- undergraduate
+
+## Lesson 25 — Speaking a foreign language
+
+_21 entries_
+
+- accent
+- bilingual
+- conversational
+- fluent in (languages)
+- good ear for languages
+- grammar
+- have a good ear for languages
+- language barrier
+- languages
+- lingua franca
+- listening
+- make yourself understood
+- native speaker
+- pick something up quickly
+- pronunciation
+- reading
+- rusty
+- speak accurately
+- speaking
+- translation
+- vocabulary
+
+## Lesson 26 — Communication and beliefs
+
+_28 entries_
+
+- bad omen
+- beginner’s luck
+- beliefs
+- believe in something
+- drop a hint
+- fairy tale
+- folklore
+- good omen
+- gossip
+- have a sneaking suspicion
+- have serious doubts
+- have serious misgivings
+- knock on wood
+- make a wish
+- pure luck
+- serious doubts
+- serious misgivings
+- set of beliefs
+- sneaking suspicion
+- spread a rumor / rumour
+- start a rumor / rumour
+- stroke of luck
+- tattletale
+- tell a white lie
+- telltale
+- touch wood
+- unshakable belief
+- urban myth
+
+## Lesson 27 — Crime and the law
+
+_38 entries_
+
+- arrest somebody
+- bribery
+- burglary
+- car theft
+- commit a crime
+- crime
+- crime wave
+- criminal record
+- drug dealing
+- enforce the law
+- find somebody guilty
+- find somebody not guilty
+- fine
+- fraud
+- graffiti
+- guilty
+- hacking
+- hooliganism
+- judge
+- jury
+- law
+- law court
+- lawyer
+- mugging
+- not guilty
+- pickpocketing
+- police
+- prison
+- reach a verdict
+- robbery
+- sentence somebody to something
+- serve a sentence
+- shoplifting
+- smuggling
+- speeding
+- street crime
+- trial
+- vandalism
+
+## Lesson 28 — Meat, fish, dairy, and snacks
+
+_53 entries_
+
+- bacon
+- beef
+- boiled egg
+- breast
+- burger
+- butter
+- cheese
+- chicken
+- chips
+- cod
+- cottage cheese
+- crab
+- cream (dairy)
+- crisps
+- dairy
+- egg
+- egg white
+- fast food
+- fish
+- fried egg
+- fries
+- ham
+- hot dog
+- kebab
+- lamb
+- leg
+- lobster
+- mackerel
+- margarine
+- meat
+- milk
+- mussel
+- octopus
+- omelet / omelette
+- oyster
+- pizza
+- poached egg
+- pork
+- prawn
+- salad
+- salmon
+- sandwich
+- sardines
+- sausages
+- scallops
+- scrambled eggs
+- seafood platter
+- shell
+- shrimp
+- snack
+- soup
+- squid
+- sushi
+
+## Lesson 29 — Fruit and nuts
+
+_47 entries_
+
+- apple
+- apricot
+- banana
+- blackberries
+- blackcurrants
+- blueberries
+- cashew nut
+- cherries
+- coconut
+- cranberries
+- currant
+- date
+- fig
+- fruit
+- golden raisin
+- gooseberries
+- grapefruit
+- grapes
+- guava
+- hazelnut
+- kiwi fruit
+- lemon
+- lime
+- lychees
+- mandarin
+- mango
+- melon
+- nectarine
+- nuts
+- orange (fruit)
+- papaya
+- passion fruit
+- peach
+- peanut
+- pear
+- pineapple
+- pistachio
+- plum
+- pomegranate
+- quince
+- raisin
+- raspberries
+- redcurrants
+- starfruit
+- strawberries
+- sultana
+- walnut
+
+## Lesson 30 — Vegetables
+
+_27 entries_
+
+- artichokes
+- asparagus
+- aubergines
+- avocados
+- beans
+- broccoli
+- butternut squash
+- cabbage
+- carrots
+- cauliflower
+- corn
+- courgettes
+- cucumbers
+- eggplants
+- garlic
+- leeks
+- lettuce
+- mushrooms
+- onions
+- peas
+- peppers
+- potatoes
+- spinach
+- sweet potatoes
+- sweetcorn
+- tomatoes
+- vegetables
+
+## Lesson 31 — Bread, desserts, and condiments
+
+_55 entries_
+
+- bagel
+- basil
+- biscuit
+- bread
+- cake
+- candy
+- cereal
+- cheesecake
+- chili / chilli flakes
+- chives
+- chocolate
+- chutney
+- cilantro
+- condiments
+- cookie
+- coriander
+- croissant
+- cupcake
+- desserts
+- dumplings
+- flavorings
+- flour
+- fruit salad
+- ginger
+- herbs
+- honey
+- ice cream
+- ill
+- jam
+- ketchup
+- lemongrass
+- marmalade
+- mayonnaise
+- meringue
+- mint
+- mousse
+- mustard
+- noodles
+- oil (cooking)
+- pancakes
+- parsley
+- pasta
+- peanut butter
+- pepper
+- rice
+- roll (bread)
+- salt
+- sorbet
+- soy sauce
+- spaghetti
+- spices
+- sugar
+- sweets
+- toast
+- vinegar
+
+## Lesson 32 — Drinking and eating
+
+_57 entries_
+
+- bag
+- beer
+- bite
+- bitter
+- bottle
+- bowl (container)
+- box
+- can
+- carbonated
+- carton
+- chew
+- chilled
+- coffee
+- cola
+- containers
+- delicious
+- dine
+- disgusting
+- drink
+- eat
+- energy drink
+- flask
+- fresh
+- glass
+- gone off
+- gulp
+- herbal tea
+- hot
+- hot chocolate
+- hot drink container
+- ice tea
+- iced
+- jar
+- juice
+- lemonade
+- milkshake
+- nibble
+- non-carbonated
+- off (food)
+- orangeade
+- packet
+- salty
+- savory / savoury
+- sip
+- smoothie
+- sour
+- sparkling
+- spicy
+- sports drink
+- still (drink)
+- strong
+- swallow
+- sweet
+- taste
+- tasty
+- tea
+- tin
+
+## Lesson 33 — Eating in and eating out
+
+_59 entries_
+
+- add
+- appetizer
+- bake
+- bar (pub)
+- bill
+- boil
+- breakfast
+- broil
+- brunch
+- buffet
+- café
+- check (restaurant)
+- chef
+- chop
+- cut (food preparation)
+- desserts
+- dinner
+- entrée
+- fast food
+- fixed menu
+- food stall
+- fry
+- grate
+- grill
+- lunch
+- main course
+- make a reservation
+- mash
+- meals
+- menu
+- mince
+- mix
+- napkin
+- order
+- pay separately
+- peel
+- poach
+- pour
+- pudding
+- restaurant
+- roast
+- roll (action)
+- service charge
+- set menu
+- side
+- side order
+- simmer
+- slice
+- snack
+- specials (menu)
+- split the bill
+- split the check
+- starter
+- stir
+- take away
+- take out
+- tip
+- waiter
+- waitress
+
+## Lesson 34 — Jobs
+
+_53 entries_
+
+- actor
+- architect
+- artist
+- businessman
+- businesswoman
+- butcher
+- chef
+- child-care provider
+- cleaner
+- construction worker
+- dentist
+- designer
+- doctor
+- driver
+- electrician
+- engineer
+- farmer
+- fashion designer
+- firefighter
+- flight attendant
+- gardener
+- hairdresser
+- janitor
+- jobs
+- journalist
+- judge
+- lawyer
+- librarian
+- mechanic
+- musician
+- nurse
+- PA
+- paramedic
+- personal assistant
+- photographer
+- pilot
+- plumber
+- police officer
+- psychologist
+- receptionist
+- sales assistant
+- scientist
+- security guard
+- stylist
+- surgeon
+- taxi driver
+- teacher
+- tour guide
+- train driver
+- travel agent
+- vet
+- waiter
+- waitress
+
+## Lesson 35 — Working conditions
+
+_41 entries_
+
+- annual leave
+- annual vacation
+- apprentice
+- assistant
+- be laid off
+- benefits
+- bonus
+- call in sick
+- client
+- colleague
+- company
+- co-worker
+- day off
+- earn
+- employee
+- employer
+- employment
+- get fired
+- go on maternity leave
+- have a day off
+- headquarters
+- hourly rate
+- intern
+- laid off
+- made redundant
+- manager
+- maternity leave
+- nine-to-five job
+- overtime
+- part-time
+- pay
+- pay cut
+- pay rise
+- permanent
+- promotion
+- raise
+- retire
+- salary
+- staff
+- temporary
+- wages
+
+## Lesson 36 — Industries and departments
+
+_46 entries_
+
+- Accounts (department)
+- Administration (department)
+- advertising industry
+- aerospace industry
+- agriculture
+- catering industry
+- chemical industry
+- construction industry
+- departments (workplace)
+- education
+- electronics industry
+- energy industry
+- entertainment industry
+- Facilities (department)
+- farming
+- fashion industry
+- Finance (department)
+- finance industry
+- fishing industry
+- food industry
+- healthcare
+- hospitality
+- Human Resources / HR (department)
+- industries
+- Information Technology (department)
+- IT (department)
+- journalism
+- Legal (department)
+- manufacturing industry
+- Marketing (department)
+- mining industry
+- Office Services (department)
+- petroleum engineering
+- pharmaceutical industry
+- PR
+- Production (department)
+- property
+- Public Relations
+- Purchasing (department)
+- real estate
+- recycling industry
+- Research and Development / R & D
+- Sales (department)
+- shipping industry
+- tourism industry
+- transportation industry
+
+## Lesson 37 — Office equipment
+
+_52 entries_
+
+- adhesive tape
+- bin
+- binder clip
+- bulletin board
+- calendar
+- cell phone
+- chair
+- clipboard
+- computer
+- correction fluid
+- desk
+- diary
+- drawer
+- drawing pin
+- envelope
+- eraser
+- files
+- filing cabinet
+- folders
+- headset
+- highlighter
+- hole punch
+- lamp
+- laptop
+- letter
+- mobile phone
+- notepad
+- notice board
+- office equipment
+- paper clips
+- pen
+- pencil
+- pencil sharpener
+- phone
+- photocopier
+- planner
+- printer
+- projector
+- rubber
+- rubber band
+- ruler
+- scanner
+- scissors
+- shredder
+- stapler
+- staples
+- stationery
+- sticky notes
+- telephone
+- thumbtack
+- trash can
+- trays
+
+## Lesson 38 — Money and finance
+
+_42 entries_
+
+- ATM
+- bank
+- bank loan
+- bank statement
+- bills
+- break even
+- budget
+- cash machine
+- cash register
+- change money
+- check (payment)
+- cheque
+- coins
+- credit card
+- currency
+- debit card
+- debt
+- economic downturn
+- exchange rate
+- expenditure
+- finance
+- get into debt
+- go out
+- income
+- interest rate
+- invoice
+- make a loss
+- mobile banking
+- money
+- mortgage
+- notes
+- online banking
+- outlay
+- overdraft
+- PIN
+- purse
+- receipt
+- save
+- stock exchange
+- till
+- transfer money
+- wallet
+
+## Lesson 39 — Working
+
+_22 entries_
+
+- bottom of the career ladder
+- career path
+- dead-end job
+- fired
+- get ahead
+- give and take
+- go the extra mile
+- hands-on experience
+- have your hands full
+- hold a position
+- laid off
+- made redundant
+- nine-to-five
+- set your sights on something
+- snowed under
+- step down
+- tackle something head-on
+- take off
+- take on someone
+- take someone on
+- up to your ears
+- up to your eyeballs
+
+## Lesson 40 — Meeting and presenting
+
+_22 entries_
+
+- absent
+- action points
+- any other business
+- AOB
+- attend a meeting
+- board of directors
+- conference call
+- give a presentation
+- interrupt
+- main objective
+- meetings
+- on the agenda
+- presentation
+- reach a consensus
+- review the minutes
+- run out of time
+- show of hands
+- strategy
+- sum up
+- take minutes
+- take questions
+- unanimous agreement
+
+## Lesson 41 — Work and business idioms
+
+_20 entries_
+
+- ahead of the game
+- ball is in your court
+- ballpark figure
+- business
+- business as usual
+- change of pace
+- clinch the deal
+- corner the market
+- do something by the book
+- game plan
+- get down to business
+- get the ball rolling
+- in a nutshell
+- in the red
+- move the goalposts
+- on the same page
+- red tape
+- think outside the box
+- throw money down the drain
+- touch base
+
+## Lesson 42 — Applying for a job
+
+_30 entries_
+
+- application form
+- apply for a job
+- career summary
+- collaborate
+- coordinate
+- cover / covering letter
+- education
+- fill out a form
+- have an interview
+- in-depth knowledge
+- interests
+- interview
+- job ad / advert
+- jobs
+- key skills
+- manager
+- negotiate
+- organize
+- personal statement
+- portfolio
+- professional achievements
+- proficient in
+- proven track record
+- recruitment agency
+- references (employer)
+- responsible for
+- service-oriented
+- supervise
+- trained in
+- volunteer
+
+## Lesson 43 — Workplace skills and abilities
+
+_50 entries_
+
+- able to drive
+- accurate
+- adaptable
+- administration
+- ambitious
+- attention to detail
+- businesslike attitude
+- calm
+- competitive
+- computing
+- confident
+- creative
+- customer service
+- customer-focused
+- data analysis
+- decision-making
+- determined
+- efficient
+- energetic
+- fast learner
+- flexible
+- fluent in (languages)
+- hardworking
+- honest
+- independent
+- initiative
+- innovative
+- interpersonal skills
+- IT
+- leadership
+- motivated
+- negotiating
+- numeracy
+- organization
+- organized
+- patient (personality trait)
+- practical
+- problem-solving
+- professional
+- professional attributes
+- project management
+- public speaking
+- punctual
+- reliable
+- research
+- responsible
+- team player
+- teamwork
+- telephone manner
+- time management
+
+## Lesson 44 — Transportation and travel
+
+_55 entries_
+
+- aeroplane
+- airplane
+- airport
+- bicycle
+- bike
+- boat
+- bus
+- bus stop
+- camel
+- catch a train
+- coach
+- cockpit
+- commuters
+- drive a car
+- engine
+- ferry
+- get in a taxi
+- get off a bus
+- get on a bus
+- get out of a taxi
+- give someone a lift
+- give someone a ride
+- helicopter
+- hitchhike
+- horse
+- hot air balloon
+- lift
+- lorry
+- miss a train
+- moped
+- motorbike / motorcycle
+- passengers
+- pedestrians
+- platform
+- port
+- ride
+- ride a bike
+- ride a horse
+- ship
+- tail (airplane / aeroplane)
+- take a flight
+- take the bus
+- take the train
+- taxi
+- taxi rank
+- taxi stand
+- ticket
+- train
+- train station
+- tram
+- transportation
+- travel
+- truck
+- van
+- walk
+
+## Lesson 45 — Driving a car
+
+_57 entries_
+
+- auto repair shop
+- bonnet (car)
+- boot (car)
+- brakes
+- break down
+- car
+- car accident
+- car park
+- car wash
+- check the oil
+- check the tires / tyres
+- diesel
+- driver’s licence / license
+- driving
+- drop someone off
+- engine
+- fill up
+- flat tire / tyre
+- fuel
+- garage
+- gas station
+- gasoline
+- have a car accident
+- headlight
+- hood (car)
+- indicate
+- indicator
+- insurance
+- mechanic
+- oil (car)
+- overtake
+- park (vehicle)
+- parking attendant
+- parking lot
+- parking meter
+- parking ticket
+- pass (overtake)
+- pedestrian crossing
+- petrol
+- petrol station
+- pick someone up
+- road sign
+- seatbelt
+- service the car
+- set off
+- signal
+- slow down
+- speed camera
+- speed limit
+- speed up
+- steering wheel
+- tire
+- traffic jam
+- traffic lights
+- trunk
+- turn signal
+- tyre
+
+## Lesson 46 — Maps and directions
+
+_66 entries_
+
+- across from
+- ahead
+- ask directions
+- avenue
+- behind
+- bend in the road
+- between
+- block
+- compass
+- corner
+- crossroads
+- direction
+- distance
+- east
+- footpath
+- freeway
+- go ahead
+- go left
+- go past
+- go right
+- go straight on
+- hard shoulder
+- here
+- in front of
+- intersection
+- junction
+- key
+- kilometer / kilometre
+- left
+- main road
+- maps
+- meter / metre
+- mile
+- motorway
+- next to
+- north
+- northeast
+- northwest
+- on the corner
+- on the left
+- on the right
+- one-way street
+- opposite
+- past
+- pavement
+- pedestrianized street
+- plan your route
+- read a map
+- right
+- roadmap
+- scales (measure)
+- shoulder (road)
+- sidewalk
+- signpost
+- south
+- southeast
+- southwest
+- stop at
+- straight on
+- street map
+- take the first left
+- take the second right
+- there
+- turn / turning
+- turn left
+- turn right
+
+## Lesson 47 — Travel and accommodation
+
+_62 entries_
+
+- accommodation
+- all-inclusive
+- apartments
+- be delayed
+- bed and breakfast
+- board a plane
+- boarding pass
+- book a holiday
+- book a vacation
+- cabin
+- chalet
+- check in
+- check out
+- cruise
+- delayed
+- departure gate
+- direct flight
+- dorm
+- double room
+- en-suite bathroom
+- excursion
+- front desk
+- go abroad
+- go on a cruise
+- go on a holiday
+- go on a vacation
+- go on an excursion
+- go sightseeing
+- guesthouse
+- guidebook
+- guided tour
+- holiday
+- hostel
+- hotel
+- land at the airport
+- laundry service
+- luggage
+- make a reservation
+- no vacancies
+- one-way ticket
+- pack your bags
+- passport
+- passport control
+- phrasebook
+- reception
+- rent a cottage
+- return ticket
+- room service
+- room with a view
+- round-trip ticket
+- safe
+- sightseeing
+- single room
+- stay in a hotel
+- suitcase
+- travel
+- twin beds
+- vacancies
+- vacation
+- villa
+- walking holiday
+- walking vacation
+
+## Lesson 48 — Travel and tourism
+
+_26 entries_
+
+- book in advance
+- check out something
+- check something out
+- culture shock
+- feel homesick
+- get away from it all
+- getaway
+- hopelessly lost
+- itchy feet
+- leg of a journey
+- leg of a trip
+- look around
+- look forward to something
+- off the beaten path
+- off the beaten track
+- once-in-a-lifetime
+- out of season
+- run-down
+- see off somebody
+- see somebody off
+- stop off
+- thirst for adventure
+- tourism
+- tourist trap
+- travel
+- unspoiled
+
+## Lesson 49 — Camping and cycling
+
+_59 entries_
+
+- air bed
+- air mattress
+- backpack
+- barbeque
+- basket
+- bicycle
+- bicycle lane
+- bike
+- bike rack
+- brakes
+- build a fire
+- camper van
+- campfire
+- camping
+- camping stove
+- campsite
+- caravan
+- chain
+- cycle pump
+- cycling
+- cycling helmet
+- cycling trails
+- fix a puncture
+- flashlight
+- flask
+- folding chair
+- folding table
+- frame
+- gear
+- get off a bike
+- get on a bike
+- groundsheet
+- guy rope
+- guyline
+- handlebar
+- hot drink container
+- insect repellent
+- lock
+- motor home
+- mountain bike
+- pedal
+- pitch a tent
+- pothole
+- racing bike
+- reflector
+- rucksack
+- saddle
+- shower block
+- sleeping bag
+- tandem
+- tent
+- tent peg
+- tent pole
+- tire
+- toilet block
+- torch
+- tyre
+- unicycle
+- walking boots
+
+## Lesson 50 — Beach
+
+_28 entries_
+
+- beach
+- beach ball
+- bodyboarding
+- bucket and spade
+- crab
+- deck chair
+- flip-flops
+- flippers
+- jet ski
+- kite
+- life preserver
+- life ring
+- lifeguard
+- pail and shovel
+- picnic basket
+- picnic blanket
+- sand
+- sandcastle
+- sea
+- shell
+- snorkel and mask
+- sunbathing
+- sun cream
+- sunscreen
+- surfing
+- swimming trunks
+- swimsuit
+- towel
+
+## Lesson 51 — Weather and climate
+
+_57 entries_
+
+- blizzard
+- boiling
+- boiling point
+- Celsius
+- chilly
+- climate
+- cloud
+- cloudy
+- cold (temperature)
+- cool
+- degrees (temperature)
+- downpour
+- drought
+- dry
+- Fahrenheit
+- flood
+- fog
+- foggy
+- freezing
+- freezing point
+- frost
+- frosty
+- gale
+- hailstone
+- heatwave
+- hot air balloon
+- humidity
+- hurricane
+- ice
+- icy
+- light shower
+- lighting
+- mild
+- minus
+- overcast
+- puddle
+- rain
+- rainbow
+- raindrop
+- rainy
+- sandstorm
+- smog
+- snow
+- snowdrift
+- snowflake
+- snowstorm
+- snowy
+- stifling
+- storm
+- stormy
+- sun
+- sunny
+- temperature
+- thunder
+- thundery
+- tornado
+- warm
+
+## Lesson 52 — Geographical features
+
+_40 entries_
+
+- beach
+- canyon
+- cave
+- cliff
+- countryside
+- desert
+- farmland
+- field (land)
+- forest
+- geographical features
+- geyser
+- glacier
+- grassland
+- hedge
+- high tide
+- hill
+- iceberg
+- island
+- lake
+- low tide
+- meadow
+- mountain
+- mountain range
+- oasis
+- ocean
+- peak
+- plain (landscape)
+- plateau
+- polar region
+- pond
+- rain forest / rainforest
+- rapids
+- river
+- rocks
+- sand dune
+- sea
+- stream
+- swamp
+- valley
+- volcano
+
+## Lesson 53 — Environmental concerns
+
+_19 entries_
+
+- alternative energy
+- climate change
+- consume
+- destruction
+- dire consequences
+- endangered
+- environment
+- extinct
+- fossil fuels
+- global warming
+- green energy sources
+- greenhouse gases
+- harmful to the environment
+- irreversible change
+- reduce your carbon footprint
+- renewable energy
+- solar panel
+- solar power
+- tackle pollution
+
+## Lesson 54 — Pets and farm animals
+
+_62 entries_
+
+- aquarium
+- bark
+- basket
+- bird seed
+- bleat
+- bull
+- cage
+- cat
+- chicken
+- claw(s)
+- collar (pet)
+- cow
+- croak
+- crow (cockerel)
+- dog
+- doghouse
+- donkey
+- duck
+- ears
+- farm animals
+- ferret
+- fish
+- fish tank
+- fur
+- gallop
+- gecko
+- gerbil
+- goat
+- goose
+- guinea pig
+- hamster
+- hiss
+- hop
+- horse
+- iguana
+- kennel
+- lead (for a pet)
+- leash
+- legs
+- litter box
+- litter tray
+- llama
+- meow
+- molt / moult
+- mouse (animal)
+- parrot
+- paws
+- pets
+- pig
+- purr
+- quack
+- rabbit
+- rabbit hutch
+- scratch
+- sheep
+- sniff
+- snort
+- squeak
+- tail (animal)
+- terrarium
+- tortoise
+- turkey
+
+## Lesson 55 — Wild animals
+
+_47 entries_
+
+- antelope
+- armadillo
+- bat
+- bear
+- beaver
+- bison
+- boar
+- buffalo
+- burrow
+- camel
+- cheetah
+- chipmunk
+- crocodile
+- deer
+- elephant
+- fox
+- frog
+- gazelle
+- giraffe
+- gorilla
+- hippopotamus
+- hunt
+- jaguar
+- kangaroo
+- koala
+- leopard
+- lion
+- lizard
+- meerkat
+- mole (animal)
+- mongoose
+- monkey
+- moose
+- panda
+- polar bear
+- prowl
+- raccoon
+- rhinoceros
+- roar
+- sloth
+- snake
+- swing
+- tail (animal)
+- tapir
+- tiger
+- trunk
+- tusk
+
+## Lesson 56 — Birds and bugs
+
+_50 entries_
+
+- ant
+- beak
+- bee
+- beetle
+- birds
+- bugs
+- butterfly
+- buzz
+- caterpillar
+- chicken
+- claw(s)
+- cockroach
+- crow (bird)
+- dove
+- duck
+- eagle
+- feather
+- flamingo
+- flap
+- fly
+- glide
+- goose
+- hatch
+- hawk
+- hoot
+- hummingbird
+- insects
+- kiwi (bird)
+- ladybird
+- ladybug
+- locust
+- mosquito
+- moth
+- ostrich
+- owl
+- parrot
+- peck
+- pelican
+- penguin
+- pigeon
+- seagull
+- sing
+- snail
+- spider
+- sting
+- stork
+- swan
+- swoop
+- toucan
+- vulture
+
+## Lesson 57 — Fish, whales, and sea creatures
+
+_39 entries_
+
+- anemone
+- blue whale
+- clam
+- claw(s)
+- crab
+- dolphin
+- eel
+- fin
+- fish
+- gill
+- humpback whale
+- jellyfish
+- killer whale
+- lobster
+- mussel
+- octopus
+- otter
+- oyster
+- porpoise
+- ray
+- salmon
+- scale (fish)
+- school of fish
+- sea creatures
+- sea lion
+- sea urchin
+- seahorse
+- seal
+- shark
+- shell
+- shrimp
+- sperm whale
+- squid
+- starfish
+- swordfish
+- trout
+- tuna
+- turtle
+- walrus
+
+## Lesson 58 — Free time activities
+
+_77 entries_
+
+- arrange flowers
+- bake
+- beach
+- birdwatching
+- board games
+- book club
+- browse the internet
+- call friends
+- camping
+- cards
+- chess
+- collect stamps
+- concert
+- cook
+- do exercise
+- do karaoke
+- do pottery
+- do puzzles
+- do the gardening
+- do yoga
+- draw (art)
+- evening class
+- exercise
+- fly a kite
+- foraging
+- free time activities
+- gardening
+- go birdwatching
+- go camping
+- go foraging
+- go jogging
+- go on holiday
+- go on vacation
+- go out
+- go shopping
+- go to a book club
+- go to a concert
+- go to a party
+- go to an evening class
+- go to the beach
+- go to the gym
+- gym
+- have a picnic
+- hike
+- holiday
+- jogging
+- karaoke
+- knit
+- listen to music
+- make models
+- meals
+- meet friends
+- musical instrument
+- paint
+- party
+- picnic
+- play a musical instrument
+- play board games
+- play cards
+- play chess
+- play video games
+- pottery
+- puzzles
+- read
+- ride a horse
+- see a play
+- sew
+- shopping
+- sing in a choir
+- stay (at) home
+- surf the internet
+- take photos
+- vacation
+- video games
+- visit a gallery
+- visit a museum
+- walk
+
+## Lesson 59 — Abilities and actions
+
+_50 entries_
+
+- abilities
+- act
+- actions
+- add
+- blow
+- carry
+- catch
+- climb
+- copy
+- count
+- crawl
+- dance
+- decide
+- dig
+- do
+- fall (action)
+- fly
+- hit
+- hold
+- jump
+- kick
+- lick
+- lift
+- listen
+- make
+- move
+- pack
+- play (action)
+- point
+- pull
+- push
+- remember
+- repair
+- ride
+- run
+- see
+- shake
+- shout
+- sing
+- sit down
+- smell
+- speak
+- spell
+- stand up
+- subtract
+- talk
+- taste
+- think
+- throw
+- understand
+
+## Lesson 60 — Sports
+
+_52 entries_
+
+- abseiling
+- American football
+- archery
+- badminton
+- baseball
+- basketball
+- bowling
+- boxing
+- bungee jumping
+- canoeing
+- cricket
+- cycling
+- discus
+- diving
+- fishing
+- football
+- golf
+- gymnastics
+- hang gliding
+- high jump
+- hockey
+- horse riding
+- ice hockey
+- javelin
+- judo
+- kayaking
+- long jump
+- motor racing
+- paragliding
+- pool
+- rock climbing
+- roller-skating
+- rowing
+- rugby
+- running
+- running a marathon
+- sailing
+- scuba diving
+- skateboarding
+- skating
+- skiing
+- skydiving
+- snorkeling / snorkelling
+- snowboarding
+- soccer
+- sports
+- squash
+- surfing
+- swimming
+- table tennis
+- tennis
+- volleyball
+
+## Lesson 61 — Soccer
+
+_42 entries_
+
+- ball
+- bar (goalpost)
+- be booked
+- be sent off
+- booked
+- corner
+- corner kick
+- defender
+- draw (sports result)
+- fans
+- field (sports)
+- final whistle
+- flag
+- forward (soccer player)
+- full time
+- goalkeeper
+- goalpost
+- half time
+- injury time
+- kick
+- kickoff
+- linesman
+- lose
+- manager
+- mascot
+- midfielder
+- net
+- penalty
+- penalty spot
+- pitch (sports)
+- red card
+- score a goal
+- security
+- sent off
+- soccer
+- steward
+- stoppage time
+- striker
+- substitutes
+- tackle
+- throw-in
+- tie (sports result)
+
+## Lesson 62 — Sports equipment and venues
+
+_51 entries_
+
+- armband
+- arrow
+- bait
+- ball
+- baseball bat
+- bow (archery)
+- bowling pins
+- boxing gloves
+- boxing ring
+- diving board
+- field (sports)
+- fishing rod
+- flippers
+- float
+- football boots
+- goggles
+- golf club
+- golf course
+- gymnastics
+- harness
+- helmet
+- hockey stick
+- hook
+- hurdles
+- ice rink
+- ice skates
+- lifejacket
+- net
+- oars
+- paddle
+- pitch (sports)
+- pool cue
+- roller skates
+- running track
+- shuttlecock
+- skateboard
+- ski slope
+- skis
+- snowboard
+- soccer cleats
+- sports
+- stadium
+- stopwatch
+- surfboard
+- swimming cap
+- swimming gear
+- swimming pool
+- swimming trunks
+- swimsuit
+- tennis court
+- tennis racket
+
+## Lesson 63 — Books and reading
+
+_46 entries_
+
+- article
+- author
+- autobiography
+- bestseller
+- biography
+- book
+- chapter
+- coloring / colouring book
+- comic
+- cookbook
+- course book
+- cover
+- crime fiction
+- dictionary
+- encyclopedia
+- e-reader
+- fantasy
+- fiction
+- flick through
+- flip through
+- glowing reviews
+- gossip magazine
+- guidebook
+- hardback
+- headline
+- highbrow
+- horoscope
+- humor / humour
+- illustration
+- nature writing
+- newspaper
+- non-fiction
+- novel
+- page
+- page-turner
+- paperback
+- plot
+- puzzles
+- reading
+- romance
+- science fiction
+- self-help
+- spine
+- textbook
+- travel writing
+- TV guide
+
+## Lesson 64 — Music
+
+_50 entries_
+
+- album
+- band
+- busk
+- cello
+- choir
+- clarinet
+- classical
+- compose
+- composer
+- concert
+- conduct
+- conductor
+- country
+- dance
+- drum
+- electric guitar
+- festival
+- flute
+- group
+- guitar
+- guitar player
+- harmonica
+- hip-hop
+- jazz
+- keyboard
+- latin
+- listen
+- lyrics
+- microphone
+- music
+- music store
+- opera
+- orchestra
+- perform
+- play the trumpet
+- pop
+- practice / practise
+- rap
+- record
+- rehearse
+- rock (music)
+- saxophone
+- sing
+- singer
+- solo
+- soul
+- tambourine
+- trombone
+- trumpet
+- violin
+
+## Lesson 65 — Movies and plays
+
+_53 entries_
+
+- action movie
+- applause
+- audience
+- balcony (theater / theatre)
+- ballet
+- box office
+- cartoon
+- cast
+- cinema
+- circle
+- comedy
+- costumes
+- crime drama
+- curtain
+- dialog / dialogue
+- director
+- drama
+- encore
+- film
+- film star
+- hero
+- horror
+- main character
+- movie
+- movie star
+- movie theater
+- multiplex
+- musical
+- opera
+- opera house
+- orchestra pit
+- orchestra seating
+- performance
+- plays (performance)
+- popcorn
+- program / programme
+- props
+- romantic comedy
+- science fiction
+- screen
+- script
+- sets
+- shows
+- special effects
+- stage
+- stalls
+- standing ovation
+- stunt
+- theater / theatre
+- thriller
+- tragedy
+- usher
+- villain
+
+## Lesson 66 — TV
+
+_59 entries_
+
+- adverts
+- breakfast TV
+- cable TV
+- cartoon
+- catch-up TV
+- change channel
+- channel
+- chat show
+- children’s show
+- children’s TV
+- comedy
+- commercial break
+- cooking show
+- costume drama
+- couch potato
+- crime
+- current affairs
+- documentary
+- drama
+- episode
+- game show
+- host
+- interview
+- music channel
+- nature documentary
+- news
+- news anchor
+- newsreader
+- period drama
+- presenter
+- preview
+- programme (TV)
+- quiz show
+- reality TV
+- record
+- remote
+- reporter
+- satellite TV
+- satire
+- screen
+- seasons
+- series
+- shopping channel
+- shows
+- sitcom
+- soap opera
+- sports programme
+- sports show
+- subtitles
+- talk show
+- thriller
+- turn off
+- turn on
+- turn up the volume
+- TV
+- TV guide
+- TV schedule
+- TV set
+- video on demand
+
+## Lesson 67 — Media and celebrity
+
+_22 entries_
+
+- attention-grabbing
+- become a celebrity
+- celebrity
+- celebrity culture
+- claim to fame
+- exclusive interview
+- exploit
+- expose
+- go to somebody’s head
+- have your name in lights
+- headline news
+- household name
+- in the public eye
+- media
+- meteoric rise
+- newspaper headline
+- opening night
+- paparazzi
+- reality show
+- red carpet
+- sensationalize
+- talent show
+
+## Lesson 68 — Sickness
+
+_52 entries_
+
+- accident
+- ache
+- allergies
+- appendicitis
+- asthma
+- backache
+- bite
+- bleed
+- broken bone
+- bruise
+- burn
+- chickenpox
+- cold (sickness)
+- cough
+- cut (wound)
+- diabetes
+- diarrhea / diarrhoea
+- eczema
+- fever
+- flu
+- food poisoning
+- hay fever
+- headache
+- high blood pressure
+- hurt
+- ill
+- indigestion
+- infection
+- insomnia
+- itchy
+- measles
+- migraine
+- mumps
+- nosebleed
+- pain
+- painful
+- runny nose
+- sick
+- sneeze
+- sore
+- sore throat
+- splinter
+- sprain
+- sting
+- stomachache / stomach ache
+- stress
+- swollen
+- symptoms
+- temperature
+- tonsillitis
+- virus
+- vomit
+
+## Lesson 69 — Medicine and treatment
+
+_52 entries_
+
+- adhesive bandage
+- adhesive tape
+- ambulance
+- antiseptic
+- antiseptic wipes
+- appointment
+- bandage
+- blood test
+- clinic
+- cotton pads
+- cotton wool
+- doctor
+- doctor’s surgery
+- drink water
+- exercise
+- feel better
+- first aid kit
+- gain weight
+- heal
+- hospital
+- inhaler
+- injection
+- lie down
+- lose weight
+- medical treatment
+- medication / medicine (healthcare)
+- nurse
+- ointment
+- operation
+- painkillers
+- paramedic
+- patient (hospital)
+- physical therapy
+- physiotherapy
+- pills
+- plaster
+- prescription
+- recover
+- rest
+- resuscitate
+- safety pin
+- scales (measure)
+- scissors
+- stethoscope
+- stitches
+- syringe
+- tablets (medicine)
+- test results
+- thermometer
+- treatment
+- tweezers
+- waiting room
+
+## Lesson 70 — Healthy eating
+
+_39 entries_
+
+- allergic to something
+- allergies
+- balanced diet
+- calcium
+- calorie-controlled diet
+- calories
+- carbohydrates
+- cholesterol
+- convenience food
+- cut down on something
+- dairy
+- dairy-free
+- detox
+- eat something in moderation
+- energy
+- fiber / fibre
+- give something up
+- give up something
+- gluten-free
+- good source of something
+- healthy eating
+- high in something
+- iron
+- legumes
+- low in something
+- minerals
+- pescatarian
+- portion
+- processed food
+- protein
+- pulses
+- salt
+- saturated fat
+- sugar
+- superfoods
+- unsaturated fat
+- vegan
+- vegetarian
+- vitamins
+
+## Lesson 71 — Fitness and well-being
+
+_47 entries_
+
+- acupuncture
+- aerobics
+- aromatherapy
+- boot camp
+- changing room
+- chill out
+- circuit training
+- cool down
+- counseling / counselling
+- cross-trainer
+- deep breathing
+- elliptical
+- exercise
+- exercise bike
+- exercise class
+- exercise mat
+- fitness
+- gym
+- heart rate
+- hot tub
+- jog
+- jump rope
+- keep fit
+- locker room
+- lockers
+- massage
+- meditate
+- personal trainer
+- Pilates
+- press-up
+- push-up
+- reflexology
+- relax
+- rowing machine
+- run
+- sauna
+- sit-up
+- skip
+- skipping rope
+- sleep well
+- spa
+- squat
+- steam room
+- stretch
+- train
+- treadmill
+- warm up
+
+## Lesson 72 — Around town
+
+_53 entries_
+
+- airport
+- bar (pub)
+- bridge
+- bus station
+- café
+- castle
+- cemetery
+- church
+- cinema
+- city
+- city centre
+- commercial district
+- concert hall
+- downtown
+- factory
+- fire station
+- fountain
+- gas station
+- government building
+- historic quarter
+- hospital
+- hotel
+- law court
+- leisure center / centre
+- library
+- mosque
+- movie theater
+- museum
+- nightclub
+- office building
+- park (recreation area)
+- petrol station
+- pharmacy
+- police station
+- post office
+- restaurant
+- shop
+- shopping mall
+- skyscraper
+- sports center / centre
+- store
+- street map
+- swimming pool
+- synagogue
+- temple
+- theater / theatre
+- tourist information
+- tourist office
+- town
+- town hall
+- town square
+- train station
+- village
+
+## Lesson 73 — Shopping
+
+_41 entries_
+
+- baker
+- bank
+- bargain-hunting
+- bookshop
+- bookstore
+- boutique
+- butcher
+- buy
+- choose
+- delicatessen
+- dry cleaners
+- exchange
+- fifty percent off
+- fish dealer
+- fishmonger
+- fit
+- flea market
+- florist
+- good deal
+- greengrocer
+- haggle
+- hardware store
+- jewelers / jewellers
+- off, percent
+- on a tight budget
+- overpriced
+- pay
+- percentages
+- refund
+- rip-off
+- sell
+- shoe shop
+- shoe store
+- shop around
+- shopping
+- slash prices
+- street market
+- toy shop
+- toy store
+- try on
+- want
+
+## Lesson 74 — At the supermarket
+
+_50 entries_
+
+- baby changing facilities
+- bargain
+- basement
+- basket
+- beauty
+- carrier bag
+- cash register
+- cashier
+- changing room
+- checkout
+- children’s department
+- closed
+- convenient
+- cosmetics
+- customer
+- customer service
+- department store
+- designer labels
+- electrical appliances
+- elevator
+- escalator
+- exit
+- first floor
+- food court
+- ground floor
+- guarantee
+- home furnishings
+- kitchenware
+- lift
+- lighting
+- line
+- lingerie
+- loyalty card
+- men’s wear
+- online shopping
+- open
+- perfumery
+- price tag
+- queue
+- receipt
+- sale
+- second floor
+- shelves
+- shopping bag
+- shopping cart
+- shopping trolley
+- special offer
+- supermarket
+- till
+- upmarket
+
+## Lesson 75 — Urban life
+
+_20 entries_
+
+- carnival
+- cosmopolitan
+- crime rate
+- derelict buildings
+- fast-paced
+- greater choice
+- green spaces
+- historic buildings
+- infrastructure
+- lively nightlife
+- overcrowding
+- pace of life
+- pollution
+- road work / roadworks
+- rush hour
+- suburb
+- tourist attraction
+- traffic jam
+- urban life
+- vandalism
+
+## Lesson 76 — Technology and gadgets
+
+_35 entries_
+
+- back up
+- battery
+- bulb
+- camera
+- click
+- computer desk
+- delete
+- desktop computer
+- download
+- earphones
+- e-reader
+- gadgets
+- GPS
+- hard drive
+- keyboard
+- laptop
+- lead (electrical)
+- log in
+- log out
+- memory card
+- mouse (computer)
+- mouse mat
+- mouse pad
+- plug in
+- power cord
+- router
+- satnav
+- screen
+- smartwatch
+- tablet (gadget)
+- technology
+- turn off
+- turn on
+- upload
+- USB drive
+
+## Lesson 77 — Technology and the future
+
+_22 entries_
+
+- breakthrough
+- computer literate
+- cutting-edge
+- digital age
+- future-proof
+- have an impact on something
+- impact
+- in the long run
+- innovation
+- latest model
+- light-years ahead
+- make predictions
+- obsolete
+- only a matter of time
+- only time will tell
+- out of date
+- revolution
+- shape of things to come
+- state-of-the-art
+- technology
+- technophile
+- technophobe
+
+## Lesson 78 — Science
+
+_50 entries_
+
+- attract
+- battery
+- beaker
+- biologist
+- biology
+- boil
+- Bunsen burner
+- burn
+- cells
+- chemicals
+- chemist
+- chemistry
+- cloning
+- cool
+- crystals
+- dissolve
+- DNA
+- electric shock
+- evaporate
+- experiment
+- float
+- freeze
+- gas
+- genetic engineering
+- heat
+- hypothesis
+- laboratory
+- liquid
+- magnet
+- melt
+- microscope
+- molecules
+- mortar
+- observe
+- pestle
+- physicist
+- physics
+- pour
+- reaction
+- record
+- repel
+- results
+- safety goggles
+- science
+- scientist
+- sink (action)
+- solid
+- static electricity
+- steam
+- test tubes

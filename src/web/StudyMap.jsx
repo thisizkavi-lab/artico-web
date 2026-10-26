@@ -1,16 +1,17 @@
 import { useLanguage } from './Language'
 import { getLearningStage, learningStages } from './pathway'
+import CurriculumIcon, { stageIcon } from './CurriculumIcon'
 export function StageNavigation({ active }) {
   const { t, language } = useLanguage()
   return (
     <nav className="rl-stage-tabs" aria-label={t("Learning stages")}>
-      {learningStages.map((stage, index) => (
+      {learningStages.map((stage) => (
         <a
           key={stage.id}
           href={`#${stage.overview}`}
           aria-current={stage.id === active ? 'page' : undefined}
         >
-          <span>{String(index + 1).padStart(2, '0')}</span>
+          <CurriculumIcon name={stageIcon(stage.id)} size={18} />
           {t(stage.title)}
         </a>
       ))}
@@ -32,7 +33,7 @@ export default function StudyMap({ learning }) {
       <ol>
         {learningStages.map((stage, index) => (
           <li key={stage.id} className={current === stage.id ? 'is-current' : ''}>
-            <span className="rl-stage-number">{String(index + 1).padStart(2, '0')}</span>
+            <span className="rl-stage-number"><CurriculumIcon name={stageIcon(stage.id)} size={21} /></span>
             <div>
               <div className="rl-stage-title">
                 <h3>{t(stage.title)}</h3>

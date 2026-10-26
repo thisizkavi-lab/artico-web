@@ -56,15 +56,17 @@ const iconName = {
 function PersonaImage({ roleId, language, small = false }) {
   const [error, setError] = useState(false)
   useEffect(() => setError(false), [roleId])
-  return error
-    ? <CurriculumIcon name={iconName[roleId]} size={small ? 30 : 64} />
-    : <img
-      src={personaArtwork[roleId]}
-      alt={language === 'ja' ? roles[roleId].ja + 'の人物イラスト' : 'Illustrated character: ' + roles[roleId].en}
-      loading={small ? 'lazy' : 'eager'}
-      decoding="async"
-      onError={() => setError(true)}
-    />
+  const artwork = personaArtwork[roleId]
+  const alt = language === 'ja' ? roles[roleId].ja + 'のイラスト' : 'Illustration for ' + roles[roleId].en
+  if (error) return <CurriculumIcon name={iconName[roleId]} size={small ? 30 : 64} />
+  if (Array.isArray(artwork)) return (
+    <div className="rf-persona-duo" role="img" aria-label={alt}>
+      {artwork.map(src => <img key={src} src={src} alt="" loading={small ? 'lazy' : 'eager'}
+        decoding="async" onError={() => setError(true)} />)}
+    </div>
+  )
+  return <img src={artwork} alt={alt} loading={small ? 'lazy' : 'eager'}
+    decoding="async" onError={() => setError(true)} />
 }
 
 export default function OrientationPractice({ learning, update }) {
@@ -141,7 +143,8 @@ export default function OrientationPractice({ learning, update }) {
             <div className="rf-persona-intro">
               <span className="rf-persona-hint">{l.start}</span>
               <h3 lang="en">{result.titleEn}</h3>
-              <p className="rf-persona-name">{language==='ja' ? result.role.ja : result.role.en}</p>
+              {language === 'ja' && <p className="rf-persona-name">{result.role.ja}</p>}
+              <p className="rf-persona-style">{language==='ja' ? '話し方：' + result.styleJa : 'Your style: ' + result.styleEn}</p>
               <p className="rf-persona-situation">{language==='ja' ? result.role.situationJa : result.role.situationEn}</p>
               <div className="rf-persona-phrase">
                 <small>{l.you}</small>
@@ -166,6 +169,7 @@ export default function OrientationPractice({ learning, update }) {
                 >
                   <span className="rf-persona-mini"><PersonaImage roleId={id} language={language} small /></span>
                   <span lang="en">{role.en}</span>
+                  {language === 'ja' && <small>{role.ja}</small>}
                 </button>
               )}
             </div>

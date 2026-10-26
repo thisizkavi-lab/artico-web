@@ -189,7 +189,7 @@ export function Reading({ model }) {
   return (
     <div className="ip-reading">
       {model.sections.map((section, index) => (
-        <section className="ip-section" key={section.id} id={section.id}>
+        <section className={`ip-section${orientationFigures[section.id] ? " rf-illustrated-section" : ""}`} key={section.id} id={section.id}>
           <div className="ip-section-heading">
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2>{section.title}</h2>

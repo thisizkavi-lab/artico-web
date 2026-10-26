@@ -139,14 +139,14 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
     'phrase-coworker',
   )
   assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
-  assert.equal(parseRoute('#/lesson/97/study').page, 'home')
+  assert.equal(parseRoute('#/lesson/97/study').page, 'courses')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line3').line, 'ch02-line3')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch03-line3').line, undefined)
   assert.equal(
     visit(emptyLearning, '/lesson/02/practice?line=ch02-v1').lastPractice,
     '/lesson/02/practice?line=ch02-v1',
   )
-  assert.equal(parseRoute('#/%invalid').page, 'home')
+  assert.equal(parseRoute('#/%invalid').page, 'courses')
   for (let number = 1; number <= 96; number++)
     assert.equal(parseRoute(`#/lesson/${String(number).padStart(2, '0')}/study`).page, 'lesson')
 })
@@ -195,4 +195,15 @@ test('the web course includes every original chapter, study and practice, withou
     assert.match(text, /^## Practice/m, chapter.filename)
     assert.doesNotMatch(text, /\/Users\//, chapter.filename)
   })
+})
+
+test('Home is retired without breaking old bookmarks, while Progress retains lesson resume', () => {
+  for (const legacy of ['#/home', '#/home/', '#', '#/']) {
+    assert.equal(parseRoute(legacy).page, 'courses')
+    assert.equal(parseRoute(legacy).path, '/courses')
+  }
+  assert.equal(parseRoute('#/courses?social').page, 'courses')
+  assert.equal(parseRoute('#/progress').page, 'progress')
+  const continued = visit(emptyLearning, '/foundation/how-it-works/practice')
+  assert.equal(continued.last, '/foundation/how-it-works/practice')
 })

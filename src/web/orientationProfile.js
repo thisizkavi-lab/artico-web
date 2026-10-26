@@ -80,6 +80,22 @@ export function parseOrientationAnswers(raw) {
 }
 export const orientationComplete = (a) => a.context.length > 0 && !!a.goal && !!a.voice && !!a.friction
 
+// An explicit Next button appears on every question. It can only advance
+// when that question and all previous questions have valid selections.
+// This also covers going back to edit an already answered question.
+const orientationKeys = ['context', 'goal', 'voice', 'friction']
+export function canAdvanceOrientation(answers, step) {
+  if (!Number.isInteger(step) || step < 0 || step >= orientationKeys.length) return false
+  const a = normalizeOrientationAnswers({ ...answers, v: 1 })
+  return orientationKeys.slice(0, step + 1).every(
+    key => key === 'context' ? a.context.length > 0 : Boolean(a[key]),
+  )
+}
+export function nextOrientationStep(answers, step) {
+  return canAdvanceOrientation(answers, step) ? step + 1 : step
+}
+
+
 // The chosen conversational goal leads; contexts and imagined voice adjust it.
 // No psychology claims, training model, or hidden scoring. Scores are only a
 // way to recommend a *future practice role*, not identify someone's personality.

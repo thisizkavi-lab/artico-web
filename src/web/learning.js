@@ -106,14 +106,13 @@ export function shouldShowLanding(hash, learning) {
 export function parseRoute(hash) {
   let path
   try {
-    path = decodeURI(hash.replace(/^#/, '') || '/courses')
+    path = decodeURI(hash.replace(/^#/, '') || '/home')
   } catch {
-    return { path: '/courses', page: 'courses' }
+    return { path: '/home', page: 'home' }
   }
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
   const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
-  // Old bookmarked Home URLs now open Learn. Progress owns resuming lessons.
-  if (page === 'home') return { path: '/courses', page: 'courses' }
+  if (page === 'home') return { path: '/home', page: 'home' }
   if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
   if (
     page === 'lesson' &&
@@ -149,7 +148,7 @@ export function parseRoute(hash) {
       view: ['study', 'practice', 'chunks', 'whole'].includes(view) ? view : 'study',
     }
   }
-  return { path: '/courses', page: 'courses' }
+  return { path: '/home', page: 'home' }
 }
 
 export function visit(learning, path) {

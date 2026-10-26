@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs'
 import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01.js'
+import { numberGroups } from './vocabularyLesson02.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
 const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
@@ -78,9 +79,37 @@ test('Lesson 97 supports a directory and direct routes for all 78 lesson pages',
   assert.match(ui,/This lesson is being prepared/)
   assert.match(ui,/topicHref\(next\.sourceLesson\)/)
   assert.match(ui,/topic\.sourceLesson === 1/)
+  assert.match(ui,/topic\.sourceLesson === 2/)
   assert.match(ui,/VocabularyCountriesLesson/)
+  assert.match(ui,/VocabularyNumbersLesson/)
   assert.doesNotMatch(ui,/vocabularyCatalog\.json|vocabularyJapaneseAM|vocabularyJapaneseNZ|vocabularyJapaneseOverrides/)
   assert.match(css,/@media \(max-width: 620px\)/)
+})
+
+test('Lesson 2 presents the complete everyday-number categories with Japanese clues',()=>{
+  assert.deepEqual(numberGroups.map(group=>group.id),[
+    'counting','tens','large','ordinals','fractions','decimals','percent','everyday',
+  ])
+  assert.equal(numberGroups.reduce((total,group)=>total+group.items.length,0),110)
+  const counting=numberGroups.find(group=>group.id==='counting')
+  assert.equal(counting.items.length,21)
+  assert.deepEqual(counting.items.map(item=>item.cue),Array.from({length:21},(_,i)=>String(i)))
+  const terms=new Set(numberGroups.flatMap(group=>group.items.map(item=>item.term)))
+  for (const term of [
+    'twenty-one','twenty-two','thirty-four','fifty-six','ninety-nine',
+    'ten thousand','one hundred thousand / a hundred thousand',
+    'quadrillion / one quadrillion / a quadrillion','twenty-first','one hundredth',
+    'one and a half','half a dozen','one point two five','zero point five percent',
+    'at least','no more than','phone number','nineteen dollars and ninety-nine cents / nineteen ninety-nine',
+    '1.2 million','3.5 billion dollars',
+  ]) assert.ok(terms.has(term),`Missing lesson 2 term: ${term}`)
+  assert.ok(numberGroups.every(group=>group.ja&&group.intro.ja&&group.items.every(item=>item.ja)))
+  assert.match(numberGroups.find(group=>group.id==='large').note.ja,/hundred/)
+  assert.match(numberGroups.find(group=>group.id==='decimals').intro.ja,/一桁ずつ/)
+  const ui=readFileSync(new URL('./VocabularyNumbersLesson.jsx',import.meta.url),'utf8')
+  assert.match(ui,/Practice recall/)
+  assert.match(ui,/タップして答えを確認/)
+  assert.match(ui,/aria-pressed=\{practice\}/)
 })
 
 test('Lesson 1 preserves the organized country, nationality and place vocabulary',()=>{

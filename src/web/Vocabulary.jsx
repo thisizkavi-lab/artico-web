@@ -1,6 +1,7 @@
 import { useLanguage } from './Language'
 import topics from './vocabularyTopics.json'
 import VocabularyCountriesLesson from './VocabularyCountriesLesson'
+import VocabularyNumbersLesson from './VocabularyNumbersLesson'
 import './vocabulary.css'
 
 const vocabularyIndex = '#/lesson/97/study'
@@ -33,8 +34,8 @@ function VocabularyIndex({ japanese }) {
         <p className="vl-eyebrow">CHAPTER 97 · VOCABULARY</p>
         <h1>{japanese ? '語彙のレッスン' : 'Vocabulary lessons'}</h1>
         <p>{japanese
-          ? '学びたいトピックを選びましょう。レッスン1から学習を始められます。その他の内容は順次追加されます。'
-          : 'Choose a topic to explore. Lesson 1 is ready; more content will be added later.'}</p>
+          ? '学びたいトピックを選びましょう。レッスン1と2を学習できます。その他の内容は順次追加されます。'
+          : 'Choose a topic to explore. Lessons 1 and 2 are ready; more content will be added later.'}</p>
       </header>
 
       <section className="vl-directory" aria-labelledby="vl-directory-heading">
@@ -73,7 +74,11 @@ function VocabularyLesson({ topic, japanese }) {
         <p className="vl-subtitle" lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</p>
       </header>
 
-      {topic.sourceLesson === 1 ? <VocabularyCountriesLesson japanese={japanese} /> : <section className="vl-placeholder" aria-labelledby="vl-placeholder-title">
+      {topic.sourceLesson === 1
+        ? <VocabularyCountriesLesson japanese={japanese} />
+        : topic.sourceLesson === 2
+          ? <VocabularyNumbersLesson japanese={japanese} />
+          : <section className="vl-placeholder" aria-labelledby="vl-placeholder-title">
         <div className="vl-placeholder-icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" fill="none">
             <path d="M5 7.5c3.8-1.3 7.7-.8 11 1.6 3.3-2.4 7.2-2.9 11-1.6v16c-3.8-1.3-7.7-.8-11 1.6-3.3-2.4-7.2-2.9-11-1.6v-16Z" />

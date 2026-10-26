@@ -414,3 +414,223 @@
 @media (prefers-reduced-motion: reduce) {
   .vl-lesson-link, .vl01-country-card { transition: none; }
 }
+
+/* Lesson 02: numbers for everyday use */
+.vl02-lesson { margin-top: 30px; }
+.vl02-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  align-items: center;
+  gap: 25px;
+  min-height: 300px;
+  padding: 32px 36px;
+  border: 1px solid #dbe5f3;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #f1f6fc 0%, #f8fafc 100%);
+  overflow: hidden;
+}
+.vl02-hero-copy { position: relative; z-index: 1; }
+.vl02-hero-copy h2 {
+  max-width: 420px;
+  margin: 12px 0 10px;
+  color: #213656;
+  font-size: clamp(23px, 2.5vw, 31px);
+  font-weight: 750;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+}
+.vl02-hero-copy > p:not(.vl01-kicker) { max-width: 450px; margin: 0; color: #586d89; font-size: 13px; line-height: 1.8; }
+.vl02-hero-meta { display: flex; align-items: center; gap: 8px; margin-top: 20px; color: #586d89; font-size: 11px; }
+.vl02-hero-meta strong { color: #285bcc; font-size: 16px; font-variant-numeric: tabular-nums; }
+.vl02-hero-visual {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 13px;
+  min-height: 236px;
+  padding: 24px;
+  border: 1px solid #dae5f3;
+  border-radius: 16px;
+  background-color: rgba(255,255,255,.82);
+  background-image: radial-gradient(#d8e3f2 1px, transparent 1px);
+  background-size: 18px 18px;
+  isolation: isolate;
+}
+.vl02-visual-orbit { position: absolute; z-index: -1; inset: 22%; border: 1px dashed #c9d9ed; border-radius: 50%; transform: rotate(-18deg); }
+.vl02-visual-example {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  min-width: 120px;
+  padding: 13px 16px 11px;
+  border: 1px solid #d7e2f1;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 6px 17px rgba(42, 72, 117, .07);
+  text-align: center;
+}
+.vl02-example-count { grid-column: 1; grid-row: 1; transform: rotate(-4deg); }
+.vl02-example-decimal { grid-column: 2; grid-row: 1 / span 2; transform: translateY(5px) rotate(3deg); }
+.vl02-example-percent { grid-column: 1; grid-row: 2; transform: rotate(3deg); }
+.vl02-visual-cue { color: #285bcc; font-size: 25px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.04em; }
+.vl02-visual-word { color: #213656; font-size: 11px; font-weight: 700; line-height: 1.45; }
+.vl02-visual-ja { color: #647995; font-size: 10px; line-height: 1.4; }
+.vl02-visual-dot { position: absolute; z-index: -1; display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; background: #dce8f7; color: #476b9f; font-size: 12px; font-weight: 750; }
+.vl02-dot-one { top: 17px; left: 48%; }
+.vl02-dot-zero { right: 15px; bottom: 21px; }
+.vl02-dot-point { bottom: 16px; left: 19px; font-size: 18px; }
+.vl02-intro-note {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) minmax(205px, .8fr);
+  align-items: center;
+  gap: 16px;
+  margin-top: 17px;
+  padding: 18px 21px;
+  border: 1px solid #d4e0f0;
+  border-radius: 14px;
+  background: #f7f9fc;
+}
+.vl02-note-mark { display: grid; place-items: center; flex: 0 0 auto; width: 32px; height: 32px; border-radius: 10px; background: #e4edf8; color: #315f9d; font-size: 15px; font-weight: 800; }
+.vl02-intro-note > div:nth-child(2) strong { color: #263c5f; font-size: 13px; line-height: 1.55; }
+.vl02-intro-note > div:nth-child(2) p { margin: 4px 0 0; color: #61738e; font-size: 11px; line-height: 1.7; }
+.vl02-note-example { display: grid; gap: 4px; padding-left: 18px; border-left: 1px solid #d4e0f0; }
+.vl02-note-example > span { color: #6a7e9d; font-size: 9px; font-weight: 800; letter-spacing: .1em; }
+.vl02-note-example strong { color: #285bcc; font-size: 12px; line-height: 1.5; }
+.vl02-note-example small { color: #61738e; font-size: 10px; line-height: 1.4; }
+.vl02-study { margin-top: 40px; }
+.vl02-section-heading { align-items: flex-end; }
+.vl02-practice-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 10px 15px;
+  border: 1px solid #cbd8eb;
+  border-radius: 9px;
+  background: #fff;
+  color: #315b95;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+.vl02-practice-toggle:hover, .vl02-practice-toggle.is-active { border-color: #285bcc; background: #285bcc; color: #fff; }
+.vl02-practice-toggle > span { font-size: 15px; }
+.vl02-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 19px; }
+.vl02-filters button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 7px 10px 7px 12px;
+  border: 1px solid #d9e2ef;
+  border-radius: 999px;
+  background: #fff;
+  color: #506580;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.vl02-filters button:hover { border-color: #9db3d4; background: #f6f8fc; }
+.vl02-filters button[aria-pressed="true"] { border-color: #285bcc; background: #285bcc; color: #fff; }
+.vl02-filters button > span { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: #edf2f8; color: #506580; font-size: 9px; font-variant-numeric: tabular-nums; }
+.vl02-filters button[aria-pressed="true"] > span { background: rgba(255,255,255,.2); color: #fff; }
+.vl02-practice-hint { margin: 13px 0 0; padding: 12px 15px; border-radius: 9px; background: #edf3fb; color: #405f8c; font-size: 12px; line-height: 1.65; }
+.vl02-groups { margin-top: 12px; }
+.vl02-group { padding: 25px 0 27px; border-top: 1px solid #dce4ef; }
+.vl02-group-heading { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: start; gap: 13px; }
+.vl02-group-number { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: #e9eff8; color: #3d6298; font-size: 11px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.vl02-group-heading h3 { margin: 0; color: #243a5c; font-size: 17px; font-weight: 760; line-height: 1.45; }
+.vl02-group-heading p { max-width: 700px; margin: 4px 0 0; color: #637691; font-size: 11px; line-height: 1.7; }
+.vl02-group-count { display: grid; place-items: center; min-width: 28px; height: 25px; padding: 0 7px; border-radius: 999px; background: #f0f3f8; color: #60718a; font-size: 10px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.vl02-counting-track { display: flex; align-items: center; gap: 9px; width: fit-content; margin: 17px 0 0 46px; color: #446897; font-size: 10px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.vl02-counting-track i { width: 23px; height: 1px; background: #bdcce0; }
+.vl02-card-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; margin-top: 16px; }
+.vl02-grid-counting { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.vl02-grid-tens { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vl02-grid-large { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.vl02-grid-ordinals { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.vl02-grid-fractions { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vl02-grid-decimals { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.vl02-grid-percent { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vl02-grid-everyday { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.vl02-term-card {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  min-height: 105px;
+  padding: 12px;
+  border: 1px solid #dce5f1;
+  border-radius: 11px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+}
+.vl02-practice-card { width: 100%; font: inherit; cursor: pointer; transition: border-color .16s ease, background-color .16s ease, transform .16s ease; }
+.vl02-practice-card:hover { transform: translateY(-2px); border-color: #9db3d4; }
+.vl02-practice-card.is-revealed { border-color: #84a3d1; background: #f4f8fe; }
+.vl02-card-cue { display: grid; flex: 0 0 auto; place-items: center; min-width: 38px; min-height: 36px; padding: 3px 5px; border-radius: 8px; background: #eef3fa; color: #315f9d; font-size: clamp(14px, 1.4vw, 19px); font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.2; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.vl02-card-copy { display: grid; align-content: start; gap: 4px; min-width: 0; }
+.vl02-card-overline { color: #74839a; font-size: 8px; font-weight: 800; letter-spacing: .09em; line-height: 1.35; }
+.vl02-card-term { color: #243a5c; font-size: 12px; font-weight: 750; line-height: 1.45; overflow-wrap: anywhere; }
+.vl02-card-term[hidden] { display: none; }
+.vl02-card-prompt { color: #42699f; font-size: 10px; font-weight: 700; line-height: 1.5; }
+.vl02-card-meaning { color: #687b96; font-size: 10px; line-height: 1.55; overflow-wrap: anywhere; }
+.vl02-card-action { position: absolute; right: 9px; bottom: 7px; color: #4770a7; font-size: 12px; font-weight: 800; }
+.vl02-group-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+.vl02-note { display: flex; align-items: flex-start; gap: 10px; min-width: 0; padding: 13px 14px; border: 1px solid #e0e7f1; border-radius: 10px; background: #f8fafc; }
+.vl02-note .vl02-note-mark { width: 25px; height: 25px; border-radius: 8px; font-size: 11px; }
+.vl02-note strong { display: block; color: #405b82; font-size: 10px; line-height: 1.45; }
+.vl02-note p { margin: 3px 0 0; color: #657690; font-size: 10px; line-height: 1.65; overflow-wrap: anywhere; }
+
+@media (max-width: 820px) {
+  .vl02-hero { grid-template-columns: minmax(0, 1fr) minmax(260px, .85fr); gap: 16px; padding: 28px; }
+  .vl02-hero-visual { min-height: 220px; padding: 16px; }
+  .vl02-visual-example { min-width: 102px; padding: 11px 10px; }
+  .vl02-grid-counting { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .vl02-grid-ordinals { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .vl02-grid-large { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl02-grid-fractions, .vl02-grid-percent { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .vl02-lesson { margin-top: 25px; }
+  .vl02-hero { grid-template-columns: minmax(0, 1fr); gap: 19px; padding: 24px 21px 20px; }
+  .vl02-hero-copy h2 { margin-top: 9px; font-size: 22px; }
+  .vl02-hero-meta { margin-top: 13px; }
+  .vl02-hero-visual { width: min(100%, 420px); min-height: 215px; margin: 0 auto; }
+  .vl02-intro-note { grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 16px; }
+  .vl02-intro-note .vl02-note-mark { width: 28px; height: 28px; }
+  .vl02-note-example { grid-column: 2; padding: 10px 0 0; border-top: 1px solid #d4e0f0; border-left: 0; }
+  .vl02-study { margin-top: 35px; }
+  .vl02-section-heading { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .vl02-practice-toggle { min-height: 42px; }
+  .vl02-filters { flex-wrap: nowrap; margin-right: -16px; padding: 1px 16px 7px 1px; overflow-x: auto; scrollbar-width: thin; }
+  .vl02-filters button { flex: 0 0 auto; }
+  .vl02-group { padding: 21px 0 23px; }
+  .vl02-group-heading { grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; }
+  .vl02-group-number { width: 29px; height: 29px; }
+  .vl02-group-heading h3 { font-size: 15px; }
+  .vl02-counting-track { margin-left: 40px; }
+  .vl02-grid-counting { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl02-grid-tens, .vl02-grid-fractions, .vl02-grid-percent { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl02-grid-large, .vl02-grid-everyday { grid-template-columns: minmax(0, 1fr); }
+  .vl02-grid-ordinals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl02-grid-decimals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl02-term-card { min-height: 91px; padding: 11px; }
+  .vl02-card-cue { min-width: 34px; min-height: 32px; font-size: 15px; }
+  .vl02-card-term { font-size: 11px; }
+  .vl02-group-notes { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vl02-practice-card { transition: none; }
+  .vl02-practice-card:hover { transform: none; }
+}

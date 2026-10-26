@@ -12,7 +12,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 34px;
-  color: #526f58;
+  color: #4c5c75;
   font-size: 13px;
   font-weight: 650;
   text-decoration: none;
@@ -21,7 +21,7 @@
 .vl-heading { max-width: 700px; }
 .vl-eyebrow,
 .vl-section-label {
-  color: #66866c;
+  color: #5d708f;
   font-size: 10px;
   font-weight: 750;
   letter-spacing: .12em;
@@ -29,7 +29,7 @@
 }
 .vl-heading .vl-eyebrow { margin-bottom: 10px; }
 .vl-heading h1 {
-  color: #294534;
+  color: #20324e;
   font-family: 'Newsreader', 'Noto Sans JP', Georgia, serif;
   font-size: clamp(34px, 4vw, 46px);
   font-weight: 500;
@@ -38,7 +38,7 @@
 }
 .vl-heading > p:not(.vl-eyebrow) {
   margin-top: 12px;
-  color: #63766a;
+  color: #566783;
   font-size: 14px;
   line-height: 1.8;
 }
@@ -49,11 +49,11 @@
   justify-content: space-between;
   gap: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #dce7dd;
+  border-bottom: 1px solid #d6dfed;
 }
 .vl-directory-heading h2 {
   margin-top: 5px;
-  color: #2d4936;
+  color: #223554;
   font-size: 20px;
   font-weight: 720;
   line-height: 1.4;
@@ -61,9 +61,9 @@
 .vl-count {
   flex: 0 0 auto;
   border-radius: 999px;
-  background: #edf4eb;
+  background: #e9eef6;
   padding: 6px 11px;
-  color: #526e54;
+  color: #4c5b74;
   font-size: 12px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -84,7 +84,7 @@
   gap: 15px;
   min-height: 92px;
   padding: 16px;
-  border: 1px solid #dce8dc;
+  border: 1px solid #d7dfed;
   border-radius: 12px;
   background: var(--surface, #fff);
   color: inherit;
@@ -92,8 +92,8 @@
   transition: border-color .16s ease, background-color .16s ease;
 }
 .vl-lesson-link:hover {
-  border-color: #9cb99c;
-  background: #f8fbf7;
+  border-color: #99a6bc;
+  background: #f6f8fc;
 }
 .vl-lesson-number {
   display: grid;
@@ -101,27 +101,27 @@
   width: 44px;
   height: 44px;
   border-radius: 11px;
-  background: #edf4eb;
-  color: #507953;
+  background: #e9eef6;
+  color: #395a90;
   font-size: 14px;
   font-weight: 750;
   font-variant-numeric: tabular-nums;
 }
 .vl-lesson-titles { display: grid; gap: 4px; min-width: 0; }
 .vl-lesson-titles strong {
-  color: #2c4535;
+  color: #213350;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
 .vl-lesson-titles small {
-  color: #6e8273;
+  color: #5f7291;
   font-size: 12px;
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
-.vl-lesson-arrow { color: #719476; font-size: 20px; line-height: 1; text-align: right; }
+.vl-lesson-arrow { color: #687c9d; font-size: 20px; line-height: 1; text-align: right; }
 .vl-bottom-nav {
   display: flex;
   justify-content: space-between;
@@ -129,13 +129,13 @@
   margin-top: 36px;
 }
 .vl-bottom-nav a {
-  color: #4d7956;
+  color: #38598e;
   font-size: 13px;
   font-weight: 650;
   text-decoration: none;
 }
 .vl-bottom-nav a:hover { text-decoration: underline; }
-.vl-detail-heading .vl-subtitle { color: #728777; }
+.vl-detail-heading .vl-subtitle { color: #627697; }
 .vl-placeholder {
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@
   min-height: 330px;
   margin-top: 36px;
   padding: 42px 24px;
-  border: 1px solid #dce8dc;
+  border: 1px solid #d7dfed;
   border-radius: 16px;
   background: var(--surface, #fff);
   text-align: center;
@@ -155,8 +155,8 @@
   height: 66px;
   margin-bottom: 20px;
   border-radius: 18px;
-  background: #edf4eb;
-  color: #5d8460;
+  background: #e9eef6;
+  color: #596b88;
 }
 .vl-placeholder-icon svg {
   width: 32px;
@@ -168,14 +168,14 @@
 }
 .vl-placeholder h2 {
   margin-top: 8px;
-  color: #2c4935;
+  color: #223553;
   font-size: 21px;
   line-height: 1.45;
 }
 .vl-placeholder > p:not(.vl-section-label) {
   max-width: 440px;
   margin-top: 9px;
-  color: #687e6d;
+  color: #5b6d8b;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -187,7 +187,7 @@
   margin-top: 24px;
   padding: 10px 18px;
   border-radius: 8px;
-  background: #588157;
+  background: #285bcc;
   color: #fff;
   font-size: 13px;
   font-weight: 700;
@@ -206,23 +206,23 @@
   min-width: 0;
   min-height: 76px;
   padding: 14px 16px;
-  border: 1px solid #dce8dc;
+  border: 1px solid #d7dfed;
   border-radius: 12px;
-  color: #587c60;
+  color: #546580;
   text-decoration: none;
 }
 .vl-lesson-navigation a > span:not([aria-hidden]) { display: grid; gap: 4px; min-width: 0; }
-.vl-lesson-navigation small { color: #708777; font-size: 11px; }
-.vl-lesson-navigation strong { color: #355540; font-size: 13px; line-height: 1.4; overflow-wrap: anywhere; }
+.vl-lesson-navigation small { color: #627595; font-size: 11px; }
+.vl-lesson-navigation strong { color: #283e62; font-size: 13px; line-height: 1.4; overflow-wrap: anywhere; }
 .vl-lesson-navigation .vl-next-lesson {
   justify-content: flex-end;
-  border-color: #588157;
-  background: #588157;
+  border-color: #285bcc;
+  background: #285bcc;
   color: #fff;
   text-align: right;
 }
 .vl-lesson-navigation .vl-next-lesson :is(small, strong) { color: #fff; }
-.vl-page :is(a, button):focus-visible { outline: 3px solid #588157; outline-offset: 3px; }
+.vl-page :is(a, button):focus-visible { outline: 3px solid #285bcc; outline-offset: 3px; }
 .rl-vocabulary-end { margin-top: 7px; margin-bottom: 4px; }
 .rl-vocabulary-end .rl-vertical-lesson { min-height: 55px; }
 

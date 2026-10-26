@@ -60,3 +60,13 @@ test('orientation profile survives reload; older reflection notes remain intact'
   assert.equal(data.responses['not-allowed-profile'], undefined)
   assert.equal(parseOrientationAnswers(data.responses[ORIENTATION_RESPONSE_KEY]).goal, 'exchange')
 })
+
+test('the learner can choose a different imagined self without changing why they learn', () => {
+  const suggested = buildOrientationResult(sample)
+  const chosen = buildOrientationResult({ ...sample, roleOverride:'storyteller' })
+  assert.equal(chosen.roleId, 'storyteller')
+  assert.equal(chosen.suggestedRole, suggested.suggestedRole)
+  assert.equal(chosen.tentativeWhyJa, suggested.tentativeWhyJa)
+  assert.equal(normalizeOrientationAnswers({ ...sample, roleOverride:'invalid' }).roleOverride, null)
+  assert.equal(parseOrientationAnswers(JSON.stringify({ ...sample, roleOverride:'explorer' })).roleOverride,'explorer')
+})

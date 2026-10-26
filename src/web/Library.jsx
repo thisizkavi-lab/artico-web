@@ -76,7 +76,7 @@ export function Courses({ learning, route }) {
                 </button>
               ))}
             </aside>
-            <div className="rl-chapter-list">
+            <div className="rl-chapter-list rl-course-lessons">
               <p className="rl-list-label">
                 {search ? t('{count} chapters found', { count: chapters.length }) : t(group.title)}
               </p>
@@ -90,7 +90,6 @@ export function Courses({ learning, route }) {
                   <CurriculumIcon className="rl-topic-icon" name={chapterIcon(chapter.id)} size={22} />
                   <span className="rl-lesson-copy">
                     <strong>{language === 'ja' ? chapter.ja : chapter.title}</strong>
-                    <small>{chapter.id === currentId ? t("Continue learning") : language === 'ja' ? chapter.goalJa : chapter.goal}</small>
                   </span>
                   <Icon name="next" />
                 </a>
@@ -102,7 +101,7 @@ export function Courses({ learning, route }) {
           </div>
         </>
       ) : (
-        <div className="rl-chapter-list">
+        <div className="rl-chapter-list rl-course-lessons">
           {stage.lessonIds.map((id, i) => {
             const step = foundationSteps.find((item) => item.id === id)
             return (
@@ -115,7 +114,6 @@ export function Courses({ learning, route }) {
                 <CurriculumIcon className="rl-topic-icon" name={foundationIcon(id)} size={22} />
                 <span className="rl-lesson-copy">
                   <strong>{language === 'ja' ? step.ja : step.en}</strong>
-                  <small>{t(step.description)}</small>
                 </span>
                 <Icon name="next" />
               </a>

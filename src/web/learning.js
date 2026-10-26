@@ -106,13 +106,15 @@ export function shouldShowLanding(hash, learning) {
 export function parseRoute(hash) {
   let path
   try {
-    path = decodeURI(hash.replace(/^#/, '') || '/home')
+    path = decodeURI(hash.replace(/^#/, '') || '/courses')
   } catch {
-    return { path: '/home', page: 'home' }
+    return { path: '/courses', page: 'courses' }
   }
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
   const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
-  if (['home', 'courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
+  // Old bookmarked Home URLs now open Learn. Progress owns resuming lessons.
+  if (page === 'home') return { path: '/courses', page: 'courses' }
+  if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
   if (
     page === 'lesson' &&
     /^(?:0[1-9]|[1-8]\d|9[0-6])$/.test(id) &&
@@ -147,7 +149,7 @@ export function parseRoute(hash) {
       view: ['study', 'practice', 'chunks', 'whole'].includes(view) ? view : 'study',
     }
   }
-  return { path: '/home', page: 'home' }
+  return { path: '/courses', page: 'courses' }
 }
 
 export function visit(learning, path) {

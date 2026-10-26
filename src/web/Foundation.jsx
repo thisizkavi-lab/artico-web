@@ -178,20 +178,6 @@ function LocalizedTwister({ block }) {
   </TwisterDetails>
 }
 
-function OrientationPreview() {
-  const { t } = useLanguage()
-  return <aside className="rf-quick-start" aria-labelledby="quick-start-heading">
-    <p className="ip-kicker">{t('A SIMPLE WAY TO BEGIN')}</p>
-    <h2 id="quick-start-heading">{t('Understand it. Then say it.')}</h2>
-    <div className="rf-mode-demo">
-      <div><span className="ip-register">01 · {t('Study')}</span><p className="rf-spoken" lang="en">Good morning.</p><p className="ip-context">{t('A greeting when you meet someone in the morning.')}</p></div>
-      <div><span className="ip-register">02 · {t('Practice')}</span><p>{t('Say it aloud. Look away and try it again. Then use it in a short conversation.')}</p></div>
-    </div>
-    <a className="ip-primary" href="#/lesson/01/study">{t('Try the first conversation')}<Glyph name="arrow" /></a>
-    <p className="ip-context">{t('Or keep reading below. You can return to this guide whenever you need it.')}</p>
-  </aside>
-}
-
 export function Reading({ model }) {
   return (
     <div className="ip-reading">
@@ -445,7 +431,6 @@ export default function Foundation({ route, learning, update }) {
     >
       {route.view === 'study' ? (
         <>
-          {['orientation', 'how-it-works'].includes(route.id) && <OrientationPreview />}
           {route.id === 'tongue-intro' && <aside className="rf-quick-start">
             <h2>{t('Clarity before speed.')}</h2>
             <p>{t('Choose one sound. Listen, repeat a short chunk, and add the next part when it feels comfortable.')}</p>

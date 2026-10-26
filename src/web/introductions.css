@@ -50,6 +50,9 @@
 .ip-lesson-heading {
   padding-bottom: 25px;
 }
+.ip-heading-title { display: flex; align-items: center; gap: 15px; min-width: 0; }
+.ip-heading-title > .curriculum-icon { flex: 0 0 auto; color: #466e5a; }
+.ip-heading-title h1 { margin: 10px 0 8px; min-width: 0; }
 .ip-lesson-heading h1 {
   display: flex;
   flex-wrap: wrap;

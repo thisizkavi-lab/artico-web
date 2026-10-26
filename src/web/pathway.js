@@ -15,8 +15,8 @@ export const learningStages = [
   },
   {
     id: 'foundation',
-    title: 'Foundations',
-    ja: '文字・音・リズム',
+    title: 'Level Zero',
+    ja: 'レベルゼロ',
     tone: 'yellow',
     description: 'Get a feel for the sounds.',
     support: '文字を知り、耳で聞き、口を動かす。',
@@ -25,7 +25,7 @@ export const learningStages = [
     count: '6 lessons',
     overview: '/courses?foundation',
     start: '/foundation/letters/study',
-    action: 'Explore foundations',
+    action: 'Explore Level Zero',
   },
   {
     id: 'social',

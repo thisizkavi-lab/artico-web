@@ -153,6 +153,8 @@
   border-top: 1px solid var(--line);
 }
 .rl-stage-number {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
   width: 36px;
@@ -256,6 +258,7 @@
   font-size: 11px;
   opacity: 0.75;
 }
+.rl-stage-tabs .curriculum-icon { flex: 0 0 auto; }
 .rl-stage-tabs a[aria-current] {
   border-color: var(--brand);
   color: var(--brand);
@@ -263,6 +266,8 @@
 .rl-course-heading {
   margin-bottom: 24px;
 }
+.rl-course-title { display: flex; align-items: center; gap: 11px; }
+.rl-course-title .curriculum-icon { flex: 0 0 auto; color: #456c57; }
 .rl-course-heading p {
   font-size: 15px;
   color: var(--muted);
@@ -301,6 +306,7 @@
 .rl-catalog aside button {
   font: inherit;
   display: flex;
+  align-items: center;
   text-align: left;
   gap: 13px;
   padding: 14px 12px;
@@ -314,6 +320,9 @@
   font-size: 11px;
   min-width: 35px;
 }
+.rl-catalog aside button .curriculum-icon { flex: 0 0 auto; color: #668272; }
+.rl-catalog aside button .rl-group-name { min-width: 0; font-size: 13px; flex: 1; line-height: 1.35; }
+.rl-catalog aside button .rl-group-range { flex: 0 0 35px; }
 .rl-catalog aside button[aria-pressed='true'] {
   background: #edf3ff;
   color: var(--brand);
@@ -329,14 +338,15 @@
 .rl-chapter-list > a {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding: 20px 8px;
   min-height: 80px;
   border-top: 1px solid var(--line);
 }
-.rl-chapter-list > a > span:nth-child(2) {
-  flex: 1;
-}
+.rl-chapter-list > a > .rl-lesson-copy { flex: 1; min-width: 0; }
+.rl-chapter-list .rl-topic-icon { flex: 0 0 auto; color: #587966; }
+.rl-chapter-list > a:hover .rl-topic-icon, .rl-chapter-list > a.is-current .rl-topic-icon { color: var(--brand); }
+.rl-stage-number .curriculum-icon { flex: 0 0 auto; color: #466e5a; }
 .rl-chapter-list > a > strong {
   flex: 1;
 }

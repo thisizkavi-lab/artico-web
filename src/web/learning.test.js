@@ -11,6 +11,7 @@ import {
   visit,
 } from './learning.js'
 import { getFoundationNavigation, getLearningStage, getLessonNavigation, learningStages } from './pathway.js'
+import { applicationTracks, applicationResponseKey } from './applicationTracks.js'
 
 test('the public entry welcomes new guests without blocking returning learners or direct lesson links', () => {
   const returning = visit(emptyLearning, '/lesson/02/practice/friend')
@@ -249,4 +250,39 @@ test('Learn keeps Foundations and Social Fluency and expands seven Application t
   assert.match(library, /chapter\.goalJa/)
   assert.match(style, /\.rl-vertical-lesson::before/)
   assert.doesNotMatch(library, /Apex Communicator|Unlock|Coming later/)
+})
+
+test('all Application tracks have usable, bilingual practice tasks and valid deep links', () => {
+  const ids = ['tests','interviews','presentations','storytelling','writing','reading','ideas']
+  assert.deepEqual(applicationTracks.map(track=>track.id), ids)
+  assert.equal(parseRoute('#/application').page, 'application')
+  assert.equal(parseRoute('#/application/unknown').path, '/application')
+  for(const track of applicationTracks) {
+    assert.equal(parseRoute('#/application/'+track.id).id, track.id)
+    assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
+    assert.equal(track.tasks.length, 2)
+    track.tasks.forEach((task,i) => {
+      assert.ok(['speaking','reading','writing'].includes(task.kind))
+      for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
+      assert.equal(task.checkpointsEn.length,3)
+      assert.equal(task.checkpointsJa.length,3)
+      const responseKey=applicationResponseKey(track.id,i)
+      const saved=sanitizeLearning({...emptyLearning,responses:{[responseKey]:'Original practice notes'}})
+      assert.equal(saved.responses[responseKey], 'Original practice notes')
+    })
+  }
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),14)
+})
+
+test('Application exercises use learner notes, not fake scores or unlocks',()=>{
+  const ui=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
+  const css=readFileSync(new URL('./application.css', import.meta.url),'utf8')
+  assert.match(ui, /applicationTracks\.map\(\(track, index\) =>/)
+  assert.match(ui, /href=\{'#\/application\/' \+ track\.id\}/)
+  assert.match(ui, /applicationResponseKey\(track\.id, selected\)/)
+  assert.match(ui, /maxLength=\{1900\}/)
+  assert.match(ui, /onChange=\{e=>changes\(e\.target\.value\)\}/)
+  assert.match(ui, /aria-pressed=\{selected===i\}/)
+  assert.match(css, /\.ap-draft:focus-visible/)
+  assert.doesNotMatch(ui, /locked|unlock|CEFR score|AI score/i)
 })

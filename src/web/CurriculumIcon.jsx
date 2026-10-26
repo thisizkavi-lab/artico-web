@@ -100,7 +100,7 @@ const iconPaths = {
   repeat: 'M20 7V3l-3 3-3 1M4 17v4l3-3 3-1M5 8a8 8 0 0 1 13-2M19 16a8 8 0 0 1-13 2',
 };
 
-const stageMap = { orientation: 'compass', foundation: 'abc', social: 'messages' };
+const stageMap = { orientation: 'compass', foundation: 'levelZero', social: 'messages' };
 const groupMap = {
   1: 'messages', 11: 'calendar', 20: 'utensils', 26: 'palette',
   34: 'storefront', 45: 'briefcase', 56: 'house', 65: 'route',
@@ -131,6 +131,42 @@ export const foundationIcon = (id) => foundationMap[id] ?? 'book';
 export const chapterIcon = (id) => chapters[Number(id) - 1] ?? 'book';
 
 export function CurriculumIcon({ name, size = 24, className = '' }) {
+  if (name === 'levelZero') {
+    // Compact hand-drawn A/B/C mark, modeled as vector geometry so it stays
+    // sharp and transparent in both the Home circle and small course tree.
+    return (
+      <svg
+        className={`curriculum-icon curriculum-icon--level-zero ${className}`.trim()}
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 90 58"
+        fill="none"
+        focusable="false"
+        aria-hidden="true"
+      >
+        <g stroke="#26223c" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round">
+          <path fill="#b92842" d="M2 50 L11 13 L18 8 L26 49 L18 52 L16 39 L13 39 L11 52 Z" />
+          <path fill="#218bbc" d="M30 10 L37 6 L46 7 Q59 7 59 20 Q59 26 55 28 Q62 32 61 40 Q59 51 45 53 L30 52 Z" />
+          <path fill="#d69c21" d="M83 14 L87 19 L85 26 Q77 23 72 27 Q66 32 67 37 Q74 45 86 38 L86 46 Q76 54 65 51 Q50 47 53 29 Q56 6 74 8 Q81 9 83 14Z" />
+          <path
+            fill="#f34955"
+            fillRule="evenodd"
+            d="M5 46 L15 9 Q16 6 19 6 L20 6 Q23 6 24 10 L35 46 L25 46 L22 36 L13 36 L11 46 Z M15.6 29 L20 29 L17.8 19 Z"
+          />
+          <path
+            fill="#42b9e3"
+            fillRule="evenodd"
+            d="M33 8 L43 7 Q57 7 57 18 Q57 25 51 27 Q59 29 59 37 Q59 47 45 47 L33 47 Z M42 16 L42 23 L45 23 Q49 23 49 19.5 Q49 16 45 16 Z M42 32 L42 39 L46 39 Q51 39 51 35.5 Q51 32 46 32 Z"
+          />
+          <path
+            fill="#ffcb30"
+            d="M83 13 L81 23 Q76 19 72 19 Q64 19 64 28 Q64 37 73 37 Q78 37 83 33 L85 43 Q79 49 69 49 Q55 49 55 28 Q55 7 71 7 Q79 7 83 13 Z"
+          />
+        </g>
+      </svg>
+    );
+  }
   return (
     <svg
       className={`curriculum-icon ${className}`.trim()}

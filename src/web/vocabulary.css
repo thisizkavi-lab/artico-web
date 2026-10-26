@@ -1,0 +1,57 @@
+/* Chapter 97: a concise bilingual reference, not another course dashboard. */
+.is-english-pilot .vl-page {width:min(100%,980px);max-width:980px;margin:0 auto;padding-bottom:65px;}
+.vl-back {display:inline-block;font-size:13px;color:#587c63;text-decoration:none;margin-bottom:19px;}
+.vl-back:hover {text-decoration:underline;}
+.vl-heading {margin-bottom:22px;}
+.vl-eyebrow {font-size:11px;letter-spacing:.11em;font-weight:750;color:#73947c;margin:0 0 7px;}
+.vl-heading h1 {font-family:'Newsreader',Georgia,serif;font-size:clamp(35px,4vw,46px);color:#294534;line-height:1.16;font-weight:500;margin:0 0 7px;}
+.vl-heading p:not(.vl-eyebrow) {font-size:14px;color:#798b7d;line-height:1.6;margin:0 0 8px;}
+.vl-heading small {font-size:12px;color:#7a947f;font-variant-numeric:tabular-nums;}
+.vl-toolbar {display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 20px;}
+.vl-field {min-width:0;display:flex;flex-direction:column;gap:7px;}
+.vl-field span {color:#58755f;font-weight:710;font-size:12px;}
+.vl-field :is(input,select) {box-sizing:border-box;width:100%;min-width:0;height:44px;padding:9px 12px;border:1px solid #d7e5da;background:#fff;border-radius:9px;color:#334d3b;font:inherit;font-size:13px;}
+.vl-field :is(input,select):focus-visible {outline:2px solid #83ab8c;outline-offset:2px;}
+.vl-content-header {display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:12px;}
+.vl-content-header h2 {font-size:20px;color:#2a4835;font-weight:730;line-height:1.4;margin:0 0 3px;}
+.vl-content-header small {color:#92a494;font-size:12px;}
+.vl-filters {display:flex;gap:4px;background:#f4f8f3;border-radius:9px;padding:4px;}
+.vl-filters button {font:inherit;font-size:12px;color:#738978;border:0;border-radius:6px;background:transparent;cursor:pointer;padding:7px 12px;}
+.vl-filters button.is-active {font-weight:700;background:white;color:#366d48;box-shadow:0 1px 4px #24472c12;}
+.vl-table {border:1px solid #dbe8dd;border-radius:11px;overflow:hidden;background:#fff;}
+.vl-table-heading,.vl-row {display:grid;grid-template-columns:1fr 1fr;column-gap:16px;}
+.vl-table-heading {padding:12px 19px;background:#f4f8f4;color:#7d9783;font-weight:760;font-size:10px;letter-spacing:.09em;}
+.vl-row {min-height:53px;align-items:center;padding:10px 19px;border-top:1px solid #edf2ed;}
+.vl-row:hover {background:#f8faf8;}
+.vl-english,.vl-japanese {min-width:0;font-size:14px;line-height:1.6;overflow-wrap:anywhere;}
+.vl-english strong {font-weight:640;color:#324d3c;}
+.vl-english small {display:block;font-size:10px;color:#9aa89b;margin-top:1px;}
+.vl-japanese {color:#5e7566;font-size:13px;}
+.vl-extra {display:inline-block;margin-left:8px;border-radius:4px;padding:1px 5px;color:#668c6d;background:#e9f3ea;font-size:11px;font-weight:700;}
+.vl-unmatched {font-size:12px;color:#799b82;text-decoration:underline;text-decoration-style:dotted;}
+.vl-empty {padding:25px 18px;color:#819584;font-size:13px;}
+.vl-after-list {display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 5px;color:#829789;font-size:12px;}
+.vl-after-list button {background:none;border:0;color:#3e7850;font:inherit;font-weight:680;cursor:pointer;padding:7px;}
+.vl-variants {border-top:1px solid #e4ebe5;margin-top:15px;padding-top:10px;}
+.vl-variants > button {border:0;background:none;color:#587d64;font:inherit;font-size:13px;font-weight:660;cursor:pointer;padding:8px 0;text-align:left;}
+.vl-variants ul {list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px;}
+.vl-variants li {font-size:12px;color:#718774;line-height:1.6;}
+.vl-variants li strong {color:#345b3d;}
+.vl-source {border-top:1px solid #e5eee5;margin-top:22px;padding-top:14px;}
+.vl-source p {font-size:11px;color:#889d8a;line-height:1.7;margin:0 0 5px;}
+.vl-source a {color:#62886b;}
+.vl-bottom-nav {display:flex;justify-content:space-between;gap:15px;margin-top:23px;}
+.vl-bottom-nav a {font-size:13px;color:#4d7956;text-decoration:none;font-weight:650;}
+.vl-bottom-nav a:hover {text-decoration:underline;}
+.vl-page :is(button,a):focus-visible {outline:2px solid #77a884;outline-offset:3px;}
+.rl-vocabulary-end {margin-top:7px;margin-bottom:4px;}
+.rl-vocabulary-end .rl-vertical-lesson {min-height:55px;}
+@media(max-width:620px) {
+  .vl-heading {margin-bottom:17px;}
+  .vl-toolbar {grid-template-columns:1fr;gap:10px;}
+  .vl-content-header h2 {font-size:17px;}
+  .vl-filters button {padding:7px 9px;}
+  .vl-table-heading,.vl-row {grid-template-columns:1fr 1fr;gap:11px;padding-inline:12px;}
+  .vl-english strong {font-size:13px;}
+  .vl-japanese {font-size:12px;}
+}

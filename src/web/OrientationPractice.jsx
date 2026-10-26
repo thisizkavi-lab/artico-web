@@ -3,7 +3,7 @@ import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
 import {
   ORIENTATION_RESPONSE_KEY, choices, roles, parseOrientationAnswers,
-  orientationComplete, buildOrientationResult,
+  orientationComplete, buildOrientationResult, canAdvanceOrientation, nextOrientationStep,
 } from './orientationProfile'
 import { personaArtwork } from './personaArtwork'
 import './orientation-practice.css'
@@ -87,7 +87,7 @@ export default function OrientationPractice({ learning, update }) {
   const current = questions[step]
   const isContext = current?.id === 'context'
   const selectedCount = answers.context.length
-  const valid = current ? (isContext ? selectedCount > 0 : Boolean(answers[current.id])) : true
+  const valid = canAdvanceOrientation(answers, step)
   const save = (values) => update(previous => ({
     ...previous,
     responses: { ...previous.responses, [ORIENTATION_RESPONSE_KEY]: JSON.stringify({ v:1, ...values }) },
@@ -99,8 +99,8 @@ export default function OrientationPractice({ learning, update }) {
       save({ ...answers, roleOverride:null,
         context:exists ? answers.context.filter(x => x !== option) : [...answers.context,option] })
     } else {
+      // Keep the selected answer visible. The learner moves on using Next.
       save({ ...answers, roleOverride:null, [question]:option })
-      setStep(value => Math.min(value + 1, 4))
     }
   }
   return (
@@ -136,7 +136,10 @@ export default function OrientationPractice({ learning, update }) {
           </div>
           <footer className="rf-profile-actions">
             <button className="rf-profile-back" type="button" onClick={() => setStep(Math.max(0,step-1))} disabled={step===0}>← {l.back}</button>
-            {isContext && <button type="button" className="rf-profile-next" disabled={!valid} onClick={() => setStep(1)}>{l.next} →</button>}
+            <button type="button" className="rf-profile-next" disabled={!valid}
+              onClick={() => setStep(value => nextOrientationStep(answers, value))}>
+              {step === questions.length - 1 ? l.show : l.next} →
+            </button>
           </footer>
         </>
       ) : result && (

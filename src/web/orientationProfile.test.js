@@ -31,7 +31,7 @@ test('all input options yield legitimate, actionable future-self output', () => 
     for(const voice of choices.voice) {
       const result = buildOrientationResult({ ...sample, goal:goal.id, voice:voice.id })
       assert.ok(roles[result.roleId])
-      assert.match(result.titleEn, /^The /)
+      assert.equal(result.titleEn, result.role.en)
       assert.ok(result.tentativeWhyJa.length > 8)
       assert.ok(result.tentativeWhyEn.length > 8)
       assert.ok(result.role.line)
@@ -71,13 +71,13 @@ test('the learner can choose a different imagined self without changing why they
   assert.equal(parseOrientationAnswers(JSON.stringify({ ...sample, roleOverride:'explorer' })).roleOverride,'explorer')
 })
 
-test('persona labels are natural and do not combine incompatible adjectives', () => {
-  assert.equal(roles.collaborator.en, 'Team Player')
-  assert.equal(roles.thinker.en, 'Thinker')
+test('future English selves use parallel actions, not personality labels', () => {
+  assert.equal(roles.collaborator.en, 'Make Plans Together')
+  assert.equal(roles.thinker.en, 'Exchange Ideas')
   for (const goal of choices.goal) {
     for (const voice of choices.voice) {
       const result = buildOrientationResult({ ...sample, goal:goal.id, voice:voice.id })
-      assert.equal(result.titleEn, 'The ' + result.role.en)
+      assert.equal(result.titleEn, result.role.en)
       assert.equal(result.styleEn, voice.en)
       assert.equal(result.styleJa, voice.ja)
     }

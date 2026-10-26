@@ -137,6 +137,10 @@ export function Courses({ learning, route }) {
                         {t('No chapters match. Try a shorter search.')}
                         </p>}
                       </div>
+                      <div className="rl-vertical-lessons rl-vocabulary-end">
+                        <CourseLesson href="#/lesson/97/study" number="97"
+                          iconName="book" title={language === 'ja' ? '語彙 · 78テーマ' : 'Vocabulary · 78 topics'} />
+                      </div>
                     </div>
                   )}
                 </div>

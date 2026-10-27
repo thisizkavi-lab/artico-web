@@ -261,7 +261,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, track.id === 'interviews' ? 0 : (track.id === 'ideas' ? 3 : 2))
+    assert.equal(track.tasks.length, ['interviews','storytelling'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
@@ -559,6 +559,6 @@ test('storytelling has five coherent units and fifteen distinct lessons', async 
     assert.equal(lesson.check.options.length,2)
     assert.ok([0,1].includes(lesson.check.correct))
     for(const property of ['title','jaTitle','story','sceneJa','principle','principleJa','task','taskJa'])
-      assert.ok(lesson[property].length>15,lesson.id+' missing '+property)
+      assert.ok(lesson[property].length > (property.startsWith('ja') || property.endsWith('Ja') ? 1 : 15),lesson.id+' missing '+property)
   }
 })

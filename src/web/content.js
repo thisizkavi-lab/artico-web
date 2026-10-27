@@ -1,6 +1,7 @@
 import japaneseCatalog from '../course/locales/ja/catalog.json'
 import chapters from '../course/catalog.json'
 import { socialFluencyChapters } from '../socialFluencyCurriculum'
+import { publicChapterId } from './chapterNumbers.js'
 
 const japaneseTitles = {
   '02': '自己紹介',
@@ -9,7 +10,7 @@ const japaneseTitles = {
   '05': '意見と好み',
   96: '本と読書',
 }
-export const catalog = chapters.map((chapter) => ({
+const originalCatalog = chapters.map((chapter) => ({
   ...chapter,
   goalJa: japaneseCatalog[chapter.id]?.goal,
   ja: japaneseTitles[chapter.id] ??
@@ -17,18 +18,29 @@ export const catalog = chapters.map((chapter) => ({
     socialFluencyChapters.find((item) => item.number === chapter.id)?.ja ??
     chapter.title,
 }))
+export const catalog = originalCatalog.flatMap((chapter) => {
+  const display = { ...chapter, sourceId: chapter.id, id: publicChapterId(chapter.id) }
+  return chapter.id === '34'
+    ? [
+        { id: '34', title: 'Humor & Banter', ja: 'ユーモア・軽い冗談',
+          goal: 'Recognize friendly teasing, respond playfully, and use timing without making someone uncomfortable.',
+          goalJa: '親しい人の冗談を理解し、自然に返し、相手を傷つけないユーモアを使う。' },
+        display,
+      ]
+    : [display]
+})
 export const chapterById = Object.fromEntries(catalog.map((chapter) => [chapter.id, chapter]))
 export const groups = [
   { start: 1, end: 10, title: 'Conversation basics' },
   { start: 11, end: 19, title: 'People & plans' },
   { start: 20, end: 25, title: 'Food & drink' },
-  { start: 26, end: 33, title: 'Free time & interests' },
-  { start: 34, end: 44, title: 'Shopping & services' },
-  { start: 45, end: 55, title: 'Study & work' },
-  { start: 56, end: 64, title: 'At home' },
-  { start: 65, end: 79, title: 'Travel & getting around' },
-  { start: 80, end: 87, title: 'Health & care' },
-  { start: 88, end: 96, title: 'Communication & media' },
+  { start: 26, end: 34, title: 'Free time & interests' },
+  { start: 35, end: 45, title: 'Shopping & services' },
+  { start: 46, end: 56, title: 'Study & work' },
+  { start: 57, end: 65, title: 'At home' },
+  { start: 66, end: 80, title: 'Travel & getting around' },
+  { start: 81, end: 88, title: 'Health & care' },
+  { start: 89, end: 97, title: 'Communication & media' },
 ]
 
 export const scenes = {

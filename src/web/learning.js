@@ -94,7 +94,12 @@ export function sanitizeLearning(input) {
 export function loadLearning(storage) {
   try {
     const stored = JSON.parse(storage.getItem(STORAGE_KEY))
-    if (!stored || storage.getItem(RENUMBER_MARKER) === '1' || typeof storage.setItem !== 'function')
+    if (!stored) {
+      // A new learner never needs the legacy chapter-number migration.
+      try { storage.setItem?.(RENUMBER_MARKER, '1') } catch {}
+      return sanitizeLearning(stored)
+    }
+    if (storage.getItem(RENUMBER_MARKER) === '1' || typeof storage.setItem !== 'function')
       return sanitizeLearning(stored)
     // Migrate only old public lesson paths. Source phrase IDs and ratings stay stable.
     const migrated = {

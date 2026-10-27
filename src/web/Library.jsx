@@ -138,7 +138,7 @@ export function Courses({ learning, route }) {
                         </p>}
                       </div>
                       <div className="rl-vertical-lessons rl-vocabulary-end">
-                        <CourseLesson href="#/lesson/97/study" number="97"
+                        <CourseLesson href="#/lesson/98/study" number="98"
                           iconName="book" title={language === 'ja' ? '語彙 · 78テーマ' : 'Vocabulary · 78 topics'} />
                       </div>
                     </div>

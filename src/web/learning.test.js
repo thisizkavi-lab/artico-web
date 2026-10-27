@@ -261,7 +261,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['interviews','storytelling','academic'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
+    assert.equal(track.tasks.length, ['smalltalk','interviews','storytelling','academic'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
@@ -272,7 +272,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),13)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),11)
   const jobs=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   assert.match(jobs, /route\.id === 'interviews'.*JobsCourse/)
 })
@@ -290,25 +290,33 @@ test('Application exercises use learner notes, not fake scores or unlocks',()=>{
   assert.doesNotMatch(ui, /locked|unlock|CEFR score|AI score/i)
 })
 
-test('Small Talk uses real two-sided exchanges and saves both independent practice notes', () => {
+test('Small Talk is a complete dedicated course, with valid deep links and saved reflection', () => {
   const talk=applicationTracks.find(track=>track.id==='smalltalk')
   assert.equal(talk.en,'Small Talk')
-  assert.equal(talk.ja,'ちょっとした会話')
-  assert.equal(talk.tasks.length,2)
-  assert.ok(talk.tasks.every(task=>task.kind==='speaking'))
-  assert.ok(talk.tasks.every(task=>task.example.includes('A:') && task.example.includes('B:')))
+  assert.equal(talk.tasks.length,0)
   assert.equal(parseRoute('#/application/smalltalk').id,'smalltalk')
-  const notes={
-    [applicationResponseKey('smalltalk',0)]:'My opening question',
-    [applicationResponseKey('smalltalk',1)]:'My follow-up'
+  const data=readFileSync(new URL('./smallTalkContent.js', import.meta.url),'utf8')
+  const ui=readFileSync(new URL('./SmallTalkCourse.jsx', import.meta.url),'utf8')
+  assert.match(data, /export const smallTalkLessons/)
+  assert.match(data, /export const smallTalkScenarios/)
+  assert.match(ui, /ScenarioLab/)
+  assert.match(ui, /aria-current=\{mode===/)
+  assert.doesNotMatch(ui, /likeability score|contact points|AI confidence score/i)
+  for (let n=1;n<=12;n++){
+    const id=String(n).padStart(2,'0')
+    for(const mode of ['study','practice']){
+      const path='/application/smalltalk/'+id+'/'+mode
+      assert.equal(parseRoute('#'+path).lesson,id)
+      assert.equal(parseRoute('#'+path).mode,mode)
+      assert.equal(visit(emptyLearning,path).last,path)
+    }
   }
-  const clean=sanitizeLearning({...emptyLearning,responses:notes})
-  assert.deepEqual(
-    Object.fromEntries(Object.entries(clean.responses).filter(([key])=>key.startsWith('application-smalltalk-'))),
-    notes
-  )
+  assert.equal(parseRoute('#/application/smalltalk/99/practice').path,'/application')
+  const notes={'application-smalltalk-note-01':'An opener for class','application-smalltalk-reflection-01':'Fact: person said goodbye','application-smalltalk-done-01':'1'}
+  assert.deepEqual(sanitizeLearning({...emptyLearning,responses:notes}).responses,notes)
+  const legacy={ [applicationResponseKey('smalltalk',0)]:'Old notes' }
+  assert.deepEqual(sanitizeLearning({...emptyLearning,responses:legacy}).responses,legacy)
 })
-
 test('Academic and Ideas remain in Application; Humor is moved to Social Fluency', () => {
   assert.ok(applicationTracks.some(track=>track.id==='academic'))
   assert.equal(applicationTracks.some(track=>track.id==='humor'), false)

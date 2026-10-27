@@ -378,7 +378,7 @@ export const storytellingLessons = [
   {
     "id": "07",
     "unit": "03",
-    "title": "Make time clear",
+    "title": "Make the timeline clear",
     "jaTitle": "時制と順序を整理する",
     "goal": "Use past tenses and time markers without making a story sound like a grammar drill.",
     "jaGoal": "過去形や時間表現で順序を自然に伝える。",

@@ -6,6 +6,7 @@ import c2 from './jobsCopy02.json'
 import c3 from './jobsCopy03.json'
 import c4 from './jobsCopy04.json'
 import c5 from './jobsCopy05.json'
+import japaneseCopy from './jobsCopyJa.json'
 import './jobs-course.css'
 
 const copy = { ...c1, ...c2, ...c3, ...c4, ...c5 }
@@ -142,7 +143,7 @@ export default function JobsCourse({learning,update}) {
         <div className="jc-switch" role="group" aria-label="Learning mode"><button type="button" aria-pressed={mode==='study'} className={mode==='study'?'is-active':''} onClick={()=>{setMode('study');setWarn('')}}>{t.study}</button><button type="button" aria-pressed={mode==='practice'} className={mode==='practice'?'is-active':''} onClick={()=>{setMode('practice');setWarn('')}}>{t.practice}{responses[jobKey('done',current.id)]==='1'?' ✓':''}</button></div>
 
         {mode==='study'?<div className="jc-reading">
-          <section className="jc-section"><h2>{t.learn}</h2><TextBlock text={info.intro}/></section>
+          <section className="jc-section"><h2>{t.learn}</h2>{ja&&<p lang="ja" className="jc-ja-summary">{japaneseCopy[current.id]}</p>}<TextBlock text={info.intro}/></section>
           <section className="jc-example"><p className="jc-kicker">{t.example}</p><TextBlock text={info.example}/></section>
           {['3.2','3.7','3.6'].includes(current.id)&&<section className="jc-section"><h2>{t.sample}</h2><div className="jc-documents"><article><h3>{ja?'初めての仕事':'First job'}</h3><pre>{sampleResumeEarly}</pre></article><article><h3>{ja?'経験者':'Experienced applicant'}</h3><pre>{sampleResumeExp}</pre></article></div></section>}
           {current.id==='4.3'&&<section className="jc-section"><h2>{ja?'編集できる構成':'An adaptable structure'}</h2><pre className="jc-document">{draftLetter}</pre></section>}

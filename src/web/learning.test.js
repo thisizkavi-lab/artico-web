@@ -253,7 +253,7 @@ test('Learn keeps Foundations and Social Fluency and expands nine Application tr
   assert.doesNotMatch(library, /Apex Communicator|Unlock|Coming later/)
 })
 
-test('all nine Application tracks have usable, bilingual practice tasks and valid deep links', () => {
+test('Application tracks use valid routes; Jobs has its own full course', () => {
   const ids = ['tests','smalltalk','interviews','presentations','academic','storytelling','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
   assert.equal(parseRoute('#/application').page, 'application')
@@ -261,7 +261,7 @@ test('all nine Application tracks have usable, bilingual practice tasks and vali
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, track.id === 'ideas' ? 3 : 2)
+    assert.equal(track.tasks.length, track.id === 'interviews' ? 0 : (track.id === 'ideas' ? 3 : 2))
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
@@ -272,7 +272,9 @@ test('all nine Application tracks have usable, bilingual practice tasks and vali
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),19)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),17)
+  const jobs=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
+  assert.match(jobs, /route\.id === 'interviews'.*JobsCourse/)
 })
 
 test('Application exercises use learner notes, not fake scores or unlocks',()=>{

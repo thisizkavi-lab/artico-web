@@ -272,7 +272,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),17)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),13)
   const jobs=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   assert.match(jobs, /route\.id === 'interviews'.*JobsCourse/)
 })

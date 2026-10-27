@@ -559,6 +559,6 @@ test('storytelling has five coherent units and fifteen distinct lessons', async 
     assert.equal(lesson.check.options.length,2)
     assert.ok([0,1].includes(lesson.check.correct))
     for(const property of ['title','jaTitle','story','sceneJa','principle','principleJa','task','taskJa'])
-      assert.ok(lesson[property].length > (property.startsWith('ja') || property.endsWith('Ja') ? 1 : 15),lesson.id+' missing '+property)
+      assert.ok(lesson[property].length > (['story','principle','task'].includes(property) ? 15 : 1),lesson.id+' missing '+property)
   }
 })

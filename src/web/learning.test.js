@@ -518,3 +518,47 @@ test('Humor is chapter 34 in Free Time, not an Application track',()=>{
   for(const [start,icon] of [[35,'storefront'],[46,'briefcase'],[57,'house'],[66,'route'],[81,'firstAid'],[89,'newspaper']])
     assert.ok(icons.includes(start + ": '" + icon + "'"),start+' group icon')
 })
+
+test('storytelling deep links and saved practice survive reload without accepting invented lessons', () => {
+  const lesson = parseRoute('#/application/storytelling/05/practice')
+  assert.deepEqual([lesson.page,lesson.id,lesson.lesson,lesson.mode],
+    ['application','storytelling','05','practice'])
+  assert.equal(parseRoute('#/application/storytelling/16/study').path, '/application')
+  assert.equal(parseRoute('#/application/storytelling/05/wrong').path, '/application')
+  assert.equal(parseRoute('#/application/storytelling').id, 'storytelling')
+  const state = sanitizeLearning({
+    ...emptyLearning, last:'/application/storytelling/05/practice',
+    lastPractice:'/application/storytelling/05/practice',
+    positions:{ '/application/storytelling/05/practice':125 },
+    responses:{
+      'application-storytelling-note-05':'I found myself in the wrong room.',
+      'application-storytelling-retry-05':'I clarified the expectation.',
+      'application-storytelling-choice-05':'0',
+      'application-storytelling-done-05':'1',
+      'application-storytelling-location':'05',
+      'application-storytelling-done-20':'1',
+    },
+  })
+  assert.equal(state.last, '/application/storytelling/05/practice')
+  assert.equal(state.lastPractice, '/application/storytelling/05/practice')
+  assert.equal(state.positions[state.last],125)
+  assert.equal(state.responses['application-storytelling-note-05'],'I found myself in the wrong room.')
+  assert.equal(state.responses['application-storytelling-done-05'],'1')
+  assert.equal(state.responses['application-storytelling-done-20'],undefined)
+})
+
+test('storytelling has five coherent units and fifteen distinct lessons', async () => {
+  const { storytellingLessons, storytellingUnits } = await import('./storytellingContent.js')
+  assert.equal(storytellingUnits.length,5)
+  assert.equal(storytellingLessons.length,15)
+  assert.equal(new Set(storytellingLessons.map(x=>x.id)).size,15)
+  for (const [index, lesson] of storytellingLessons.entries()) {
+    assert.equal(lesson.id,String(index+1).padStart(2,'0'))
+    assert.ok(storytellingUnits.some(unit=>unit.id===lesson.unit))
+    assert.equal(lesson.beats.length,3)
+    assert.equal(lesson.check.options.length,2)
+    assert.ok([0,1].includes(lesson.check.correct))
+    for(const property of ['title','jaTitle','story','sceneJa','principle','principleJa','task','taskJa'])
+      assert.ok(lesson[property].length>15,lesson.id+' missing '+property)
+  }
+})

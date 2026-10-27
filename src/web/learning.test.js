@@ -12,6 +12,7 @@ import {
 } from './learning.js'
 import { getFoundationNavigation, getLearningStage, getLessonNavigation, learningStages } from './pathway.js'
 import { applicationTracks, applicationResponseKey } from './applicationTracks.js'
+import { publicChapterId, sourceChapterId, migrateLegacyLessonPath } from './chapterNumbers.js'
 
 test('the public entry welcomes new guests without blocking returning learners or direct lesson links', () => {
   const returning = visit(emptyLearning, '/lesson/02/practice/friend')
@@ -57,19 +58,19 @@ test('new guests start at Orientation and returning guests keep their actual stu
   assert.equal(parseRoute(`#${learningStages[0].start}`).id, 'orientation')
 })
 
-test('all 104 lessons have a reversible path from Orientation through Chapter 96 in both modes', () => {
+test('all 105 lessons have a reversible path from Orientation through Chapter 97 in both modes', () => {
   const chapters = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url)))
   const routes = [
     ...learningStages.flatMap((stage) => stage.lessonIds).map((id) => `/foundation/${id}/study`),
-    ...chapters.map((chapter) => `/lesson/${chapter.id}/study`),
+    ...['34', ...chapters.map(chapter => publicChapterId(chapter.id))].sort().map(id => `/lesson/${id}/study`),
   ]
-  assert.equal(routes.length, 104)
+  assert.equal(routes.length, 105)
   assert.equal(new Set(routes).size, routes.length)
   routes.forEach((path, index) => {
     const route = parseRoute(`#${path}`)
     const navigation = getLessonNavigation(route)
     assert.equal(navigation.previous, routes[index - 1] ?? '/home', path)
-    assert.equal(navigation.next, routes[index + 1] ?? '/lesson/97/study', path)
+    assert.equal(navigation.next, routes[index + 1] ?? '/lesson/98/study', path)
     const practice = parseRoute(`#${navigation.practice}`)
     assert.equal(practice.id, route.id)
     assert.equal(practice.page, route.page)
@@ -82,7 +83,7 @@ test('all 104 lessons have a reversible path from Orientation through Chapter 96
   for (const view of ['reader', 'words', 'phrases']) {
     assert.equal(getLessonNavigation(parseRoute(`#/lesson/02/${view}/friend`)).next, '/lesson/03/study')
   }
-  assert.equal(getLessonNavigation({ page: 'lesson', id: '97' }), null)
+  assert.equal(getLessonNavigation({ page: 'lesson', id: '98' }), null)
   assert.equal(getLessonNavigation({ page: 'lesson', id: '2' }), null)
   assert.equal(getLessonNavigation({ page: 'foundation', id: 'unknown' }), null)
   assert.equal(getLessonNavigation({ page: 'home' }), null)
@@ -129,7 +130,7 @@ test('unavailable and corrupt storage cannot prevent starting as a guest', () =>
   assert.deepEqual(restored.saved, ['first-1'])
   assert.equal(restored.speed, 1)
 })
-test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () => {
+test('old course URLs, Foundation links, and all 97 chapter URLs resolve', () => {
   assert.equal(parseRoute('#course').page, 'courses')
   assert.equal(parseRoute('#/courses?foundation').page, 'courses')
   assert.equal(parseRoute('#/lesson/02/reader').view, 'study')
@@ -140,7 +141,7 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
     'phrase-coworker',
   )
   assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
-  assert.equal(parseRoute('#/lesson/97/study').page, 'vocabulary')
+  assert.equal(parseRoute('#/lesson/98/study').page, 'vocabulary')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line3').line, 'ch02-line3')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch03-line3').line, undefined)
   assert.equal(
@@ -148,7 +149,7 @@ test('old course URLs, Foundation links, and all 96 chapter URLs resolve', () =>
     '/lesson/02/practice?line=ch02-v1',
   )
   assert.equal(parseRoute('#/%invalid').page, 'home')
-  for (let number = 1; number <= 96; number++)
+  for (let number = 1; number <= 97; number++)
     assert.equal(parseRoute(`#/lesson/${String(number).padStart(2, '0')}/study`).page, 'lesson')
 })
 test('saving and unsaving phrases is reversible and never duplicates a saved item', () => {
@@ -232,7 +233,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.doesNotMatch(home, /Unlock|lock-icon|disabled button/i)
 })
 
-test('Learn keeps Foundations and Social Fluency and expands ten Application tracks', () => {
+test('Learn keeps Foundations and Social Fluency and expands nine Application tracks', () => {
   const library = readFileSync(new URL('./Library.jsx', import.meta.url), 'utf8')
   const style = readFileSync(new URL('./library-readable.css', import.meta.url), 'utf8')
   const catalog = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url), 'utf8'))
@@ -252,8 +253,8 @@ test('Learn keeps Foundations and Social Fluency and expands ten Application tra
   assert.doesNotMatch(library, /Apex Communicator|Unlock|Coming later/)
 })
 
-test('all ten Application tracks have usable, bilingual practice tasks and valid deep links', () => {
-  const ids = ['tests','smalltalk','interviews','presentations','academic','storytelling','humor','writing','reading','ideas']
+test('all nine Application tracks have usable, bilingual practice tasks and valid deep links', () => {
+  const ids = ['tests','smalltalk','interviews','presentations','academic','storytelling','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
   assert.equal(parseRoute('#/application').page, 'application')
   assert.equal(parseRoute('#/application/unknown').path, '/application')
@@ -271,7 +272,7 @@ test('all ten Application tracks have usable, bilingual practice tasks and valid
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),21)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),19)
 })
 
 test('Application exercises use learner notes, not fake scores or unlocks',()=>{
@@ -306,23 +307,14 @@ test('Small Talk uses real two-sided exchanges and saves both independent practi
   )
 })
 
-test('Academic and Humor routes are working and deep conversations remain in Ideas', () => {
-  for(const id of ['academic','humor']){
-    const track=applicationTracks.find(entry=>entry.id===id)
-    assert.ok(track)
-    assert.equal(parseRoute('#/application/'+id).id,id)
-    assert.equal(track.tasks.length,2)
-    assert.ok(track.tasks.every(task=>task.kind==='speaking'))
-    const key=applicationResponseKey(id,1)
-    assert.equal(sanitizeLearning({...emptyLearning,responses:{[key]:'My own practice answer'}}).responses[key],'My own practice answer')
-  }
-  const ideas=applicationTracks.find(entry=>entry.id==='ideas')
+test('Academic and Ideas remain in Application; Humor is moved to Social Fluency', () => {
+  assert.ok(applicationTracks.some(track=>track.id==='academic'))
+  assert.equal(applicationTracks.some(track=>track.id==='humor'), false)
+  const ideas=applicationTracks.find(track=>track.id==='ideas')
   assert.equal(ideas.tasks.length,3)
   assert.match(ideas.enSummary,/meaningful conversations/)
-  assert.match(ideas.tasks[2].en,/meaningful conversation/)
-  const key=applicationResponseKey('ideas',2)
-  assert.equal(sanitizeLearning({...emptyLearning,responses:{[key]:'A thoughtful question'}}).responses[key],'A thoughtful question')
-  assert.equal(applicationTracks.filter(track=>track.id==='relationships').length,0)
+  assert.equal(parseRoute('#/application/humor').path,'/lesson/34/study')
+  assert.equal(sanitizeLearning({...emptyLearning,responses:{'application-humor-0':'My previous answer'}}).responses['application-humor-0'],'My previous answer')
 })
 
 test('learning tree is grayscale with blue selection while other views retain blue', () => {

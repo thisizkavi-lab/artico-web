@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?)$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice))$/
 const isPractice = (path) =>
   /\/practice(?:[/?]|$)/.test(path) || /\/foundation\/lr\/(?:chunks|whole)/.test(path)
 
@@ -62,7 +62,7 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1[0-5])|location)|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
             id,
           ) &&
           typeof value === 'string' &&
@@ -149,6 +149,8 @@ export function parseRoute(hash) {
   }
   if (page === 'application') {
     if (id === 'humor') return parseRoute('#/lesson/34/study')
+    if (id === 'storytelling' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene))
+      return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
     if (!id) return { path: '/application', page:'application' }
     if (/^(?:tests|smalltalk|interviews|presentations|academic|storytelling|writing|reading|ideas)$/.test(id) && !view)
       return { path:'/application/' + id, page:'application', id }

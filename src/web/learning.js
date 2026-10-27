@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice))$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice))$/
 const isPractice = (path) =>
   /\/practice(?:[/?]|$)/.test(path) || /\/foundation\/lr\/(?:chunks|whole)/.test(path)
 
@@ -62,7 +62,7 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1[0-5])|location)|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1[0-5])|location)|application-smalltalk-(?:note|reflection|done)-(?:0[1-9]|1[0-2])|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
             id,
           ) &&
           typeof value === 'string' &&
@@ -163,6 +163,8 @@ export function parseRoute(hash) {
         ...(query.has('task') ? { task: query.get('task') } : {}), ...(query.has('attempt') ? { attempt: query.get('attempt') } : {}) }
     }
     if (id === 'humor') return parseRoute('#/lesson/34/study')
+    if (id === 'smalltalk' && /^(?:0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))
+      return { path: '/application/smalltalk/' + view + '/' + scene, page:'application', id:'smalltalk', lesson:view, mode:scene }
     if (id === 'storytelling' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
     if (!id) return { path: '/application', page:'application' }

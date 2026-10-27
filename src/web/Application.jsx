@@ -4,6 +4,7 @@ import CurriculumIcon from './CurriculumIcon'
 import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
 import WritingStudio from './WritingStudio'
 import JobsCourse from './JobsCourse'
+import AcademicCourse from './AcademicCourse'
 import './application.css'
 
 function TrackCard({ track, language, index }) {
@@ -106,6 +107,7 @@ export default function Application({ route, learning, update }) {
   if (!route.id) return <TrackOverview language={language}/>
   if (route.id === 'writing') return <WritingStudio />
   if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />
+  if (route.id === 'academic') return <AcademicCourse learning={learning} update={update} />
   const track = applicationTrack(route.id)
   if (!track) return <TrackOverview language={language}/>
   return <TrackExercise key={track.id} track={track} language={language}

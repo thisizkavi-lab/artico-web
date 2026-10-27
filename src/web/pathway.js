@@ -36,7 +36,7 @@ export const learningStages = [
     support: '場面を学び、声にして、自分の言葉で試す。',
     topics: ['Everyday conversations', 'Study · shadowing · scenarios'],
     lessonIds: [],
-    count: '96 chapters',
+    count: '97 chapters',
     overview: '/courses?social',
     start: '/lesson/01/study',
     action: 'Explore conversations',
@@ -75,7 +75,7 @@ export function getLessonNavigation({ page, id }) {
       practice: `/foundation/${id}/${id === 'lr' ? 'chunks' : 'practice'}`,
     }
   }
-  if (page !== 'lesson' || !/^(?:0[1-9]|[1-8]\d|9[0-6])$/.test(id)) return null
+  if (page !== 'lesson' || !/^(?:0[1-9]|[1-8]\d|9[0-7])$/.test(id)) return null
   const chapter = Number(id)
   const chapterPath = (number) => `/lesson/${String(number).padStart(2, '0')}/study`
   const foundationIds = learningStages.flatMap((stage) => stage.lessonIds)
@@ -83,7 +83,7 @@ export function getLessonNavigation({ page, id }) {
     previous: chapter === 1
       ? `/foundation/${foundationIds.at(-1)}/study`
       : chapterPath(chapter - 1),
-    next: chapter === 96 ? '/lesson/97/study' : chapterPath(chapter + 1),
+    next: chapter === 97 ? '/lesson/98/study' : chapterPath(chapter + 1),
     practice: `/lesson/${id}/practice`,
   }
 }

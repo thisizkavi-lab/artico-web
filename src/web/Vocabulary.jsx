@@ -4,7 +4,7 @@ import VocabularyCountriesLesson from './VocabularyCountriesLesson'
 import VocabularyNumbersLesson from './VocabularyNumbersLesson'
 import './vocabulary.css'
 
-const vocabularyIndex = '#/lesson/97/study'
+const vocabularyIndex = '#/lesson/98/study'
 const topicHref = (number) => `${vocabularyIndex}/${String(number).padStart(2, '0')}`
 
 function LessonLink({ topic, japanese }) {
@@ -31,7 +31,7 @@ function VocabularyIndex({ japanese }) {
         <span aria-hidden="true">←</span> {japanese ? '学習コースへ' : 'Back to Learn'}
       </a>
       <header className="vl-heading">
-        <p className="vl-eyebrow">CHAPTER 97 · VOCABULARY</p>
+        <p className="vl-eyebrow">CHAPTER 98 · VOCABULARY</p>
         <h1>{japanese ? '語彙のレッスン' : 'Vocabulary lessons'}</h1>
         <p>{japanese
           ? '学びたいトピックを選びましょう。レッスン1と2を学習できます。その他の内容は順次追加されます。'
@@ -51,7 +51,7 @@ function VocabularyIndex({ japanese }) {
         </ol>
       </section>
       <nav className="vl-bottom-nav" aria-label={japanese ? '学習ナビゲーション' : 'Learning navigation'}>
-        <a href="#/lesson/96/study">← {japanese ? '第96課' : 'Chapter 96'}</a>
+        <a href="#/lesson/97/study">← {japanese ? '第97課' : 'Chapter 97'}</a>
         <a href="#/progress">{japanese ? '進捗を見る' : 'My Progress'} →</a>
       </nav>
     </div>

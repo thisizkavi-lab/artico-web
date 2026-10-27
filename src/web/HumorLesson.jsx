@@ -180,7 +180,7 @@ function Practice({ja,learning,update}) {
   const restart=()=>{setIndex(0);setPicked(null);setChecked(false);setStore({index:0})}
   const activeBranch=branches.find(b=>b.id===branchId)||branches[0]
   const notes=(learning.responses||{})
-  const saveNotes=(i,value)=>{const id='application-humor-'+i;update(prev=>({...prev,responses:{...prev.responses,[id]:value}}))}
+  const saveNotes=(i,value)=>{const id=i<2?'application-humor-'+i:'ch34-note-o'+(i+1);update(prev=>({...prev,responses:{...prev.responses,[id]:value}}))}
   return <div className="hm-practice">
     <div className="hm-practice-tabs" role="group" aria-label={copy('Practice type','練習の種類',ja)}>
       <button type="button" aria-pressed={view==='quiz'} onClick={()=>setView('quiz')}>{copy('Situations','場面の練習',ja)}</button>
@@ -220,7 +220,7 @@ function Practice({ja,learning,update}) {
       </article>
     </div>}
     {view==='open'&&<div className="hm-open"><p className="hm-kicker">MAKE IT YOURS</p><h2>{copy('Your words, your judgment.','自分の言葉で考えよう',ja)}</h2><p>{copy('Speak first if you like. Notes are optional. There is no automatic “funniness” score.','まず声に出しても構いません。メモは任意です。面白さの自動採点はありません。',ja)}</p>
-      {writingPrompts.map((p,i)=><article className="hm-open-task" key={p.id}><span className="hm-index">0{i+1}</span><h3>{copy(p.title,p.ja,ja)}</h3><p>{copy(p.prompt,p.promptJa,ja)}</p><details><summary>{copy('See a possible example','例を見る',ja)}</summary><p lang="en">{p.example}</p></details><label htmlFor={'hm-write-'+i}>{copy('Your notes (optional)','あなたのメモ（任意）',ja)}</label><textarea id={'hm-write-'+i} rows={3} maxLength={1800} value={notes['application-humor-'+i]||''} onChange={e=>saveNotes(i,e.target.value)} placeholder={copy('Try a response in your own words…','自分の言葉で書いてみましょう…',ja)} /></article>)}
+      {writingPrompts.map((p,i)=><article className="hm-open-task" key={p.id}><span className="hm-index">0{i+1}</span><h3>{copy(p.title,p.ja,ja)}</h3><p>{copy(p.prompt,p.promptJa,ja)}</p><details><summary>{copy('See a possible example','例を見る',ja)}</summary><p lang="en">{p.example}</p></details><label htmlFor={'hm-write-'+i}>{copy('Your notes (optional)','あなたのメモ（任意）',ja)}</label><textarea id={'hm-write-'+i} rows={3} maxLength={1800} value={notes[i<2?'application-humor-'+i:'ch34-note-o'+(i+1)]||''} onChange={e=>saveNotes(i,e.target.value)} placeholder={copy('Try a response in your own words…','自分の言葉で書いてみましょう…',ja)} /></article>)}
       <p className="hm-note">{copy('Notes are kept in your existing device-only Artico learning data. They are not sent for AI scoring.','メモは既存のArticoの端末内データとして保存されます。AI採点には送信されません。',ja)}</p>
     </div>}
   </div>

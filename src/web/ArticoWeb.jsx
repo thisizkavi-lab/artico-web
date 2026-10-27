@@ -14,6 +14,7 @@ const Application = lazy(() => import('./Application'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
 const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
+const HumorLesson = lazy(() => import('./HumorLesson'))
 const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
 const IntroductionsLesson = lazy(() => import('./IntroductionsLesson'))
 const destinations = [
@@ -262,7 +263,9 @@ export default function ArticoWeb() {
         ? GreetingsLesson
         : route.id === '02'
           ? IntroductionsLesson
-          : ChapterLesson
+          : route.id === '34'
+            ? HumorLesson
+            : ChapterLesson
     screen = (
       <Suspense
         fallback={

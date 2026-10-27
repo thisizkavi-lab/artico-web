@@ -1,6 +1,7 @@
 // Artico's curriculum icon system. A single lightweight, inline SVG family.
 // All icons are decorative: nearby text always supplies the accessible name.
 const iconPaths = {
+  smile: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM8 10h.01M16 10h.01M7.5 15c2.8 4 6.2 4 9 0',
   compass: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM16.5 7.5l-3 6-6 3 3-6 6-3Z',
   book: 'M12 7C9 5 6 4 3 5v14c3-1 6 0 9 2 3-2 6-3 9-2V5c-3-1-6 0-9 2ZM12 7v14',
   messages: 'M21 11.5a8 8 0 0 1-8 8H7l-4 2v-6a8 8 0 0 1 6-11.8M12 2.5h3a7 7 0 0 1 7 7v1l-3 2',
@@ -128,7 +129,7 @@ const chapters = [
 export const stageIcon = (id) => stageMap[id] ?? 'book';
 export const groupIcon = (start) => groupMap[Number(start)] ?? 'book';
 export const foundationIcon = (id) => foundationMap[id] ?? 'book';
-export const chapterIcon = (id) => chapters[Number(id) - 1] ?? 'book';
+export const chapterIcon = (id) => Number(id) === 34 ? 'smile' : chapters[Number(id) > 34 ? Number(id) - 2 : Number(id) - 1] ?? 'book';
 
 export function CurriculumIcon({ name, size = 24, className = '' }) {
   if (name === 'socialDuo') {

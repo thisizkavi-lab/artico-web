@@ -7,7 +7,7 @@
     "lessons": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
     "predev": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
     "prebuild": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
-    "test": "node --test src/web/jobsCourse.test.js src/web/studyPlan.test.js src/web/orientationProfile.test.js src/web/learning.test.js src/web/writingStudio.test.js src/web/vocabulary.test.js src/web/phrasePractice.test.js scripts/lessons.test.mjs scripts/locales.test.mjs scripts/practice-catalog.test.mjs",
+    "test": "node --test src/web/jobsCourse.test.js src/web/academicCourse.test.js src/web/studyPlan.test.js src/web/orientationProfile.test.js src/web/learning.test.js src/web/writingStudio.test.js src/web/vocabulary.test.js src/web/phrasePractice.test.js scripts/lessons.test.mjs scripts/locales.test.mjs scripts/practice-catalog.test.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1"

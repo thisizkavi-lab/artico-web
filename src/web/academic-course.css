@@ -1,0 +1,65 @@
+/* Academic & Research Writing. Reuse JobsCourse foundations and keep Artico typography. */
+.ac-page { --ac-blue:#285bcc; }
+.ac-hero {max-width:780px;}
+.ac-overview-heading{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin:4px 0 14px;}
+.ac-overview-heading h2{margin:0;}
+.ac-overview-heading span,.ac-course-fine{font-size:12px;color:#7487a2;}
+.ac-course-fine{margin-top:22px;}
+.ac-ja-name{color:#587498!important;}
+.ac-lesson-ja{font-size:13px;color:#5c7291;font-family:'Noto Sans JP',sans-serif;line-height:1.8;margin:-6px 0 13px;}
+.ac-main{max-width:760px;}
+.ac-main .jc-section p{line-height:1.87;}
+.ac-main .jc-example .jc-preline{white-space:pre-line;}
+.ac-case{border:1px solid #dbe4f0;background:white;border-radius:12px;overflow:hidden;}
+.ac-case-toggle{width:100%;border:0;background:#f4f7fc;color:#354d74;padding:16px 19px;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:12px;cursor:pointer;}
+.ac-case-toggle>span:first-child{display:flex;flex-direction:column;gap:5px;}
+.ac-case-toggle strong{font-size:14px;}
+.ac-case-toggle>span:last-child{font-size:21px;color:#7488a7;}
+.ac-case-kicker{font-size:10px;color:#6d81a2;letter-spacing:.09em;text-transform:uppercase;font-weight:700;}
+.ac-case-body{padding:16px 19px;display:grid;gap:13px;}
+.ac-case-body p{margin:0;font-size:13px;line-height:1.8;color:#536782;}
+.ac-case-body small{color:#9a6b46;font-size:11px;}
+.ac-dataset{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.ac-dataset>div{display:flex;flex-direction:column;gap:5px;background:#f2f5fa;border-radius:10px;padding:12px;}
+.ac-dataset strong:first-child{color:#4e6382;font-size:12px;}
+.ac-dataset span{font-size:12px;color:#71839e;}
+.ac-dataset strong:last-child{font-family:Newsreader,Georgia,serif;font-size:27px;font-weight:550;color:#28456e;}
+.ac-guided{border:1px solid #d9e4f0;border-radius:12px;padding:20px;background:#f9fbfe;}
+.ac-guided h3{font-size:15px;line-height:1.55;margin:0 0 17px;}
+.ac-guided-options{display:grid;gap:8px;}
+.ac-option{display:flex;align-items:flex-start;gap:11px;padding:13px 14px;background:#fff;border:1px solid #d7e0eb;border-radius:9px;text-align:left;color:#3c5679;line-height:1.55;cursor:pointer;}
+.ac-option.is-picked{border-color:#537bc0;background:#eff5ff;}
+.ac-option-number{color:#607da9;font-size:11px;font-weight:700;padding-top:3px;}
+.ac-check-feedback{border-top:1px solid #dae5f1;margin-top:15px;padding-top:14px;}
+.ac-check-feedback strong{font-size:13px;color:#355c90;}
+.ac-check-feedback p{font-size:13px;line-height:1.7;color:#627a9b;margin:6px 0 0;}
+.ac-sort{display:grid;gap:8px;}
+.ac-sort-row{display:flex;align-items:center;gap:10px;border:1px solid #d7e0eb;border-radius:9px;background:white;padding:11px;}
+.ac-sort-index{font-size:12px;color:#8597af;}
+.ac-sort-label{flex:1;min-width:0;font-size:13px;color:#465b7c;line-height:1.5;}
+.ac-sort-actions{display:flex;gap:3px;}
+.ac-sort-actions button{border:1px solid #dae2ee;border-radius:7px;background:#f7f9fc;color:#446599;min-width:33px;min-height:33px;}
+.ac-sort-actions button:disabled{opacity:.3;cursor:not-allowed;}
+.ac-check-order{justify-self:start;margin-top:6px;}
+.ac-guide-note{font-size:12px;color:#647b99;line-height:1.75;margin:10px 0 0;}
+.ac-answer{min-height:225px;font-size:15px;}
+.ac-draft-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:-17px;color:#7488a4;font-size:11px;}
+.ac-draft-tools span:first-child{flex:1;min-width:210px;}
+.ac-storage-error{color:#b4523b!important;font-weight:650;}
+.ac-criteria{border:1px solid #dbe4ef;border-radius:12px;padding:19px;background:#f8fafd;display:grid;gap:13px;}
+.ac-criteria h3{margin:0 0 2px;}
+.ac-criterion{display:flex;align-items:flex-start;gap:11px;font-size:13px;line-height:1.55;color:#3d5677;cursor:pointer;}
+.ac-criterion input{accent-color:#285bcc;flex:0 0 auto;margin-top:3px;width:16px;height:16px;}
+.ac-page button:focus-visible,.ac-page a:focus-visible,.ac-page textarea:focus-visible,.ac-page input:focus-visible {outline:3px solid #739bd9;outline-offset:3px;}
+@media(max-width:700px){
+.ac-dataset{grid-template-columns:1fr 1fr;}
+.ac-main{max-width:none;}
+.ac-case-body{padding:14px;}
+.ac-guided{padding:15px;}
+.ac-draft-tools{align-items:flex-start;}
+.ac-overview-heading{align-items:center;}
+.ac-overview-heading h2{font-size:26px;}
+.ac-criterion{font-size:13px;}
+}
+@media(max-width:390px){.ac-dataset{grid-template-columns:1fr;}.ac-sort-row{gap:6px;}}
+@media(prefers-reduced-motion:reduce){.ac-page *{scroll-behavior:auto!important;}}

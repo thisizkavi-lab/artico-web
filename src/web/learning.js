@@ -134,7 +134,8 @@ export function parseRoute(hash) {
   }
   if (path === 'course' || path === '/course') return { path: '/courses', page: 'courses' }
   if (path === '/courses?orientation') return { path: '/home', page: 'home' }
-  const [page, id, view, scene] = path.split('?')[0].split('/').filter(Boolean)
+  const segments = path.split('?')[0].split('/').filter(Boolean)
+  const [page, id, view, scene] = segments
   if ((page === 'lesson' && id === '98' && view === 'study') || page === 'vocabulary') {
     const requestedTopic = page === 'vocabulary' ? id : scene
     const topic = /^(?:0?[1-9]|[1-6]\d|7[0-8])$/.test(requestedTopic ?? '')
@@ -148,6 +149,19 @@ export function parseRoute(hash) {
     }
   }
   if (page === 'application') {
+    if (id === 'tests' && view === 'ielts') {
+      const area = /^(?:home|overview|speaking|writing|listening|reading|guided|mocks|simulation)$/.test(scene ?? '') ? scene : 'home'
+      const mode = segments[4] === 'practice' ? 'practice' : 'study'
+      if (segments.length > 5 || (scene && area !== scene) || (segments[4] && !['study', 'practice'].includes(segments[4])))
+        return { path: '/application/tests', page: 'application', id: 'tests' }
+      const input = new URLSearchParams(path.split('?')[1] ?? '')
+      const query = new URLSearchParams()
+      for (const key of ['task', 'attempt']) {
+        if (/^[a-zA-Z0-9-]{1,100}$/.test(input.get(key) ?? '')) query.set(key, input.get(key))
+      }
+      return { path: `/application/tests/ielts/${area}/${mode}${query.size ? `?${query}` : ''}`, page: 'application', id: 'tests', exam: 'ielts', area, view: mode,
+        ...(query.has('task') ? { task: query.get('task') } : {}), ...(query.has('attempt') ? { attempt: query.get('attempt') } : {}) }
+    }
     if (id === 'humor') return parseRoute('#/lesson/34/study')
     if (id === 'storytelling' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }

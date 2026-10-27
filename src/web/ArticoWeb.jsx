@@ -8,6 +8,7 @@ import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './lea
 import Progress from './Progress'
 import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
+import { ieltsArea } from './ieltsNavigation'
 
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))
@@ -164,6 +165,10 @@ export default function ArticoWeb() {
     return stopRestoring
   }, [route.path])
   useEffect(() => {
+    if (route.page === 'application' && route.id === 'tests') {
+      document.title = `${route.exam === 'ielts' ? `${ieltsArea(route.area)?.title ?? 'IELTS Academic'} · IELTS` : 'English Tests'} · Artico`
+      return
+    }
     if (route.page === 'vocabulary') {
       const lesson = route.topic ? (language === 'ja' ? `レッスン${Number(route.topic)} · ` : `Lesson ${Number(route.topic)} · `) : ''
       document.title = `${lesson}${language === 'ja' ? '語彙' : 'Vocabulary'} · Artico`
@@ -214,7 +219,7 @@ export default function ArticoWeb() {
     route.page === 'vocabulary' ? `${language === 'ja' ? '学ぶ / 語彙' : 'Learn / Vocabulary'}${route.topic ? ` / ${route.topic}` : ''}` : route.page === 'lesson'
       ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
       : route.page === 'application'
-        ? `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
+        ? route.id === 'tests' ? `Application / English Tests${route.exam === 'ielts' ? ' / IELTS' : ''}` : `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
         : route.page === 'foundation'
           ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Level Zero')}`
         : route.page === 'courses'
@@ -350,7 +355,7 @@ export default function ArticoWeb() {
           onScroll={recordScroll}
         >
           <div ref={contentRef}>
-            <LearningBoundary key={route.path} t={t}><Suspense fallback={<div className="aw-page" role="status">{t('Loading your lesson…')}</div>}>{screen}</Suspense></LearningBoundary>
+            <LearningBoundary key={route.exam === 'ielts' ? 'ielts' : route.path} t={t}><Suspense fallback={<div className="aw-page" role="status">{t('Loading your lesson…')}</div>}>{screen}</Suspense></LearningBoundary>
           </div>
         </main>
         <nav className="aw-mobile-nav" aria-label={t("Mobile navigation")}>

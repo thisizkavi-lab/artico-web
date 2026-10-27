@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
 import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
@@ -7,6 +7,8 @@ import JobsCourse from './JobsCourse'
 import StorytellingCourse from './StorytellingCourse'
 import AcademicCourse from './AcademicCourse'
 import './application.css'
+
+const IeltsCourse = lazy(() => import('./IeltsCourse'))
 
 function TrackCard({ track, language, index }) {
   return (
@@ -106,6 +108,7 @@ function TrackExercise({ track, language, learning, update }) {
 export default function Application({ route, learning, update }) {
   const { language } = useLanguage()
   if (!route.id) return <TrackOverview language={language}/>
+  if (route.id === 'tests') return <Suspense fallback={<div className="aw-page" role="status">Loading English Tests…</div>}><IeltsCourse route={route}/></Suspense>
   if (route.id === 'writing') return <WritingStudio />
   if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />
   if (route.id === 'storytelling') return <StorytellingCourse route={route} learning={learning} update={update} />

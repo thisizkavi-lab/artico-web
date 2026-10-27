@@ -67,13 +67,14 @@ export function Heading({ eyebrow, title, ja, japanese = false }) {
     </header>
   )
 }
-export function Segments({ items, active, onChange, className = '', label }) {
+export function Segments({ items, active, onChange, className = '', label, disabled = false }) {
   return (
     <div className={`aw-segments ${className}`} role="group" aria-label={label}>
       {items.map((item) => (
         <button
           key={item.value}
           type="button"
+          disabled={disabled}
           aria-pressed={active === item.value}
           className={active === item.value ? 'is-active' : ''}
           onClick={() => onChange(item.value)}

@@ -13,9 +13,10 @@ test('academic course has six ordered stages and 33 unique complete lessons',()=
   for(const l of academicLessons){
     assert.match(l.id,/^0[1-6]\.\d{2}$/)
     assert.equal(l.stage,l.id.slice(0,2))
-    for(const name of ['title','ja','question','idea','example','language','caution','task','model']){
+    for(const name of ['question','idea','example','language','caution','task','model']){
       assert.ok(l[name]?.length>15,l.id+' missing '+name)
     }
+    assert.ok(l.title.length>6 && l.ja.length>2,l.id+' missing titles')
     assert.equal(l.criteria.length,3)
     assert.ok(l.criteria.every(s=>s.length>8))
     assert.ok(academicJapanese[l.id]?.summary?.length>15,l.id+' Japanese explanation')

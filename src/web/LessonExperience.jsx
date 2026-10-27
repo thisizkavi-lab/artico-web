@@ -666,6 +666,7 @@ function Experience({ route, learning, update, save, notify }) {
   const { t, language } = useLanguage()
   const {
     id,
+    displayId,
     title,
     titleJa,
     subtitle,
@@ -756,12 +757,12 @@ function Experience({ route, learning, update, save, notify }) {
       <header className="ip-lesson-heading">
         <p className="ip-kicker">
           {eyebrow ?? (
-            <> {t("SOCIAL FLUENCY")} <span>/</span> {t('CHAPTER {id}', { id })}
+            <> {t("SOCIAL FLUENCY")} <span>/</span> {t('CHAPTER {id}', { id: displayId ?? id })}
             </>
           )}
         </p>
         <div className="ip-heading-title">
-          <CurriculumIcon name={chapterIcon(id)} size={30} />
+          <CurriculumIcon name={chapterIcon(displayId ?? id)} size={30} />
           <h1>
             <span lang="en">{title}</span>
             {language === 'ja' && titleJa && <span className="ip-title-ja" lang="ja">{titleJa}</span>}

@@ -453,3 +453,57 @@ test('Learning Path stage cards stay compact with connected nodes and mobile lay
   assert.match(css, /--rl-v-branch:#c5c5c5/)
   assert.match(css, /#285bcc/)
 })
+
+test('Humor chapter numbering preserves existing source lessons and local progress', () => {
+  const expectedSource = ['33', null, '34', '35', '96']
+  const publicIds = ['33','34','35','36','97']
+  assert.deepEqual(publicIds.map(sourceChapterId), expectedSource)
+  assert.deepEqual(['33','34','35','96'].map(publicChapterId),['33','35','36','97'])
+  assert.equal(parseRoute('#/lesson/34/study').page,'lesson')
+  assert.equal(parseRoute('#/lesson/97/study').page,'lesson')
+  assert.equal(parseRoute('#/lesson/98/study').page,'vocabulary')
+  assert.equal(getLessonNavigation({page:'lesson',id:'34'}).next,'/lesson/35/study')
+  assert.equal(getLessonNavigation({page:'lesson',id:'97'}).next,'/lesson/98/study')
+  assert.equal(migrateLegacyLessonPath('/lesson/33/study'),'/lesson/33/study')
+  assert.equal(migrateLegacyLessonPath('/lesson/34/study'),'/lesson/35/study')
+  assert.equal(migrateLegacyLessonPath('/lesson/96/practice'),'/lesson/97/practice')
+  assert.equal(migrateLegacyLessonPath('/foundation/letters/study'),'/foundation/letters/study')
+  const storage = new Map([['artico.web.learning.v1',JSON.stringify({
+    ...emptyLearning,last:'/lesson/36/study',lastPractice:'/lesson/34/practice',
+    positions:{'/lesson/35/study':142},responses:{'application-humor-0':'My funny reply'},
+    saved:['ch34-line4'],
+  })]])
+  const store = {
+    getItem:key=>storage.get(key)??null,
+    setItem:(key,value)=>storage.set(key,value),
+  }
+  const result = loadLearning(store)
+  assert.equal(result.last,'/lesson/37/study')
+  assert.equal(result.lastPractice,'/lesson/35/practice')
+  assert.equal(result.positions['/lesson/36/study'],142)
+  assert.equal(result.responses['application-humor-0'],'My funny reply')
+  assert.deepEqual(result.saved,['ch34-line4'])
+  assert.equal(storage.get('artico.web.chapter34-inserted.v1'),'1')
+  assert.deepEqual(loadLearning(store),result)
+})
+
+test('Humor is chapter 34 in Free Time, not an Application track',()=>{
+  const content=readFileSync(new URL('./content.js',import.meta.url),'utf8')
+  const application=readFileSync(new URL('./applicationTracks.js',import.meta.url),'utf8')
+  const humor=readFileSync(new URL('./HumorLesson.jsx',import.meta.url),'utf8')
+  const web=readFileSync(new URL('./ArticoWeb.jsx',import.meta.url),'utf8')
+  const icons=readFileSync(new URL('./CurriculumIcon.jsx',import.meta.url),'utf8')
+  assert.match(content,/\{ start: 26, end: 34, title: 'Free time & interests' \}/)
+  assert.match(content,/\{ start: 35, end: 45, title: 'Shopping & services' \}/)
+  assert.match(content,/\{ start: 89, end: 97, title: 'Communication & media' \}/)
+  assert.match(content,/title: 'Humor & Banter', ja: 'ユーモア・軽い冗談'/)
+  assert.match(web,/route.id === '34'/)
+  assert.match(web,/const HumorLesson = lazy/)
+  assert.match(humor,/getLessonNavigation\(route\)/)
+  assert.match(humor,/\/lesson\/34\/study/)
+  assert.match(humor,/\/lesson\/34\/practice/)
+  assert.match(humor,/application-humor-/)
+  assert.doesNotMatch(application,/id:'humor'/)
+  for(const [start,icon] of [[35,'storefront'],[46,'briefcase'],[57,'house'],[66,'route'],[81,'firstAid'],[89,'newspaper']])
+    assert.ok(icons.includes(start + ": '" + icon + "'"),start+' group icon')
+})

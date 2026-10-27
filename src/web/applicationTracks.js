@@ -45,20 +45,7 @@ export const applicationTracks = [
     id:'interviews', icon:'briefcase', en:'Jobs & Interviews', ja:'仕事・面接',
     enSummary:'Explore the full hiring journey, from finding a job to interviews and offers.',
     jaSummary:'仕事探しから履歴書・面接・採用結果まで、順を追って学ぶ。',
-    tasks:[
-      { en:'Introduce yourself in an interview', ja:'面接で自己紹介する', kind:'speaking',
-        promptEn:'Prepare a 45-second introduction: who you are, what you have done, and what you hope to contribute.',
-        promptJa:'45秒の自己紹介を準備しましょう。自分の経歴、これまでの経験、仕事で貢献したいことを伝えます。',
-        example:'My background is in ... I have experience with ... I hope to contribute by ...',
-        checkpointsEn:['Say what you do.','Mention one relevant experience.','Connect it to the role.'],
-        checkpointsJa:['現在の自分を紹介する。','関連する経験を一つ挙げる。','応募する仕事につなげる。'] },
-      { en:'Explain a challenge you solved', ja:'解決した問題を説明する', kind:'speaking',
-        promptEn:'Describe one problem you faced, what you did, and what changed. Use a real experience rather than a made-up achievement.',
-        promptJa:'実際に経験した問題を一つ選びます。状況、自分の行動、結果を順に話しましょう。',
-        example:'We had a problem with ... My role was to ... As a result, ...',
-        checkpointsEn:['Describe the situation.','Explain your own action.','Give the outcome.'],
-        checkpointsJa:['状況を伝える。','自分の行動を説明する。','結果を述べる。'] },
-    ],
+    tasks:[], // Routed to the dedicated eight-stage JobsCourse.
   },
   {
     id:'presentations', icon:'presentation', en:'Presentations & Public Speaking', ja:'発表・人前で話す',

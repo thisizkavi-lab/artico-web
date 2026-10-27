@@ -104,8 +104,8 @@ const iconPaths = {
 const stageMap = { orientation: 'compass', foundation: 'levelZero', social: 'socialDuo' };
 const groupMap = {
   1: 'messages', 11: 'calendar', 20: 'utensils', 26: 'palette',
-  34: 'storefront', 45: 'briefcase', 56: 'house', 65: 'route',
-  80: 'firstAid', 88: 'newspaper',
+  35: 'storefront', 46: 'briefcase', 57: 'house', 66: 'route',
+  81: 'firstAid', 89: 'newspaper',
 };
 const foundationMap = {
   orientation: 'compass', 'how-it-works': 'book', letters: 'abc', hear: 'ear',

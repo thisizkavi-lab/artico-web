@@ -62,11 +62,11 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2])$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
             id,
           ) &&
           typeof value === 'string' &&
-          value.length <= 2000,
+          value.length <= 5000,
       )
       .slice(-384),
   )

@@ -76,20 +76,7 @@ export const applicationTracks = [
     id:'storytelling', icon:'book', en:'Storytelling', ja:'ストーリーテリング',
     enSummary:'Tell engaging stories and share personal experiences.',
     jaSummary:'経験や感情を、伝わる物語にする。',
-    tasks:[
-      { en:'Tell a memorable moment', ja:'印象に残る出来事を話す', kind:'speaking',
-        promptEn:'Tell a true story about something unexpected that happened to you. Set the scene, describe the turning point, and tell us how you felt.',
-        promptJa:'自分に起きた予想外の出来事を話しましょう。場面、転機、気持ちの順に伝えます。',
-        example:'I still remember the day when ... Everything changed when ...',
-        checkpointsEn:['Set the scene.','Describe what changed.','Share your reaction.'],
-        checkpointsJa:['場面を説明する。','何が変わったか話す。','気持ちを伝える。'] },
-      { en:'Make a simple story more vivid', ja:'話をもっと生き生きとさせる', kind:'writing',
-        promptEn:'Rewrite “I went to a café. It was nice.” Add two sensory details and one emotion. Keep it natural, not exaggerated.',
-        promptJa:'“I went to a café. It was nice.” を書き直しましょう。五感に関わる描写を二つ、気持ちを一つ入れます。',
-        example:'The café smelled of fresh coffee, and ...',
-        checkpointsEn:['Add a concrete detail.','Show an emotion.','Keep the story believable.'],
-        checkpointsJa:['具体的な描写を入れる。','感情が伝わるようにする。','自然な表現にする。'] },
-    ],
+    tasks:[], // Dedicated Storytelling course. Old response keys remain readable for migration.
   },
   {
     id:'writing', icon:'pencil', en:'Writing', ja:'ライティング',

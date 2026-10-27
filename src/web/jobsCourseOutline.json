@@ -1,0 +1,1104 @@
+{
+  "units": [
+    {
+      "id": "U01",
+      "title": "The Big Picture",
+      "promise": "Understand the exchange before learning the documents.",
+      "workbook": {
+        "title": "My reasons, my evidence, the employer’s needs",
+        "task": "Complete a two-party hiring map, separate private motivations from public role-fit reasons, and create an initial evidence bank.",
+        "output": "One-page personal hiring framework."
+      }
+    },
+    {
+      "id": "U02",
+      "title": "Finding and Understanding a Job",
+      "promise": "Read opportunities before investing effort in them.",
+      "workbook": {
+        "title": "Opportunity investigation",
+        "task": "Inspect two job ads and one suspicious outreach, mark requirements, find official sources, build a fit matrix, and draft one optional cold message.",
+        "output": "Annotated posting, safe target shortlist, and personalized cold outreach."
+      }
+    },
+    {
+      "id": "U03",
+      "title": "The Résumé / CV",
+      "promise": "Make relevant experience easy for another person to understand.",
+      "workbook": {
+        "title": "Résumé / CV studio",
+        "task": "Use a plain sample template, turn evidence into concise bullets, build your own draft in any document editor, and check relevance and truthfulness.",
+        "output": "Complete learner-authored résumé or CV; no fake auto-export promise."
+      }
+    },
+    {
+      "id": "U04",
+      "title": "The Cover Letter",
+      "promise": "Explain the connection that a résumé alone may not show.",
+      "workbook": {
+        "title": "Cover letter studio",
+        "task": "Decide whether a letter is appropriate, annotate a complete model, draft a role-specific letter, then revise it from the hiring manager’s view.",
+        "output": "One complete original cover letter and marked revisions."
+      }
+    },
+    {
+      "id": "U05",
+      "title": "How Hiring Works",
+      "promise": "Understand the process and handle the messages around it.",
+      "workbook": {
+        "title": "The professional inbox",
+        "task": "Move through a realistic inbox: invitation → screening → reschedule → assessment → thank-you → wait → rejection or offer → acceptance/decline.",
+        "output": "Message portfolio and correct no-response decisions."
+      }
+    },
+    {
+      "id": "U06",
+      "title": "The Interview",
+      "promise": "Answer questions with real evidence, and understand the conversation.",
+      "workbook": {
+        "title": "General and behavioral interview practice",
+        "task": "Listen to, transcribe or read a screening/general question; build evidence stories; answer novel behavioral and situational questions; respond to follow-ups.",
+        "output": "Three flexible original responses and one revised rehearsal."
+      }
+    },
+    {
+      "id": "U07",
+      "title": "Technical and Role-Specific Interviews",
+      "promise": "Transfer a common communication framework into unfamiliar work.",
+      "workbook": {
+        "title": "Role-specific explanation",
+        "task": "Choose support, operations, or software/research support; handle a role-specific task and communicate how you reason even when uncertain.",
+        "output": "One recorded or typed task explanation and uncertainty check."
+      }
+    },
+    {
+      "id": "U08",
+      "title": "The Final Application",
+      "promise": "Combine the skills in one continuous, believable hiring journey.",
+      "workbook": {
+        "title": "One complete fictional application",
+        "task": "Pick one Northstar role and proceed through the real connected artifacts, interview branches, recruiter messages and offer/rejection outcomes.",
+        "output": "Application portfolio, communication log and next-action plan."
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1.1",
+      "unit_id": "U01",
+      "title": "What is a job?",
+      "question": "What exactly are people exchanging when they take a job?",
+      "beats": [
+        "Distinguish work, job, occupation, career, role, and position in everyday English.",
+        "Show that people supply time, skills, judgment or service; an employer provides compensation and agreed conditions.",
+        "Explain employer, employee, manager, recruiter, customer and team in a simple scene.",
+        "Mention part-time, full-time, temporary, internship and self-employment as different arrangements, not interchangeable legal categories."
+      ],
+      "examplePlan": "A scene of a busy shop and a worker, with the same principle applied to a research lab.",
+      "action": "Sort five real-world statements into job, career, task, or self-employment; label who contributes what in a shop scene.",
+      "artifact": "A completed work-exchange diagram and one original sentence.",
+      "outcome": "Explain what a job is without reducing it to either money or passion.",
+      "interaction": "scene"
+    },
+    {
+      "id": "1.2",
+      "unit_id": "U01",
+      "title": "Why do people work?",
+      "question": "Is there one correct reason to want a job?",
+      "beats": [
+        "Explore needs (income, safety, autonomy), wants (learning, interest, belonging, growth) and contributions (what one can offer).",
+        "Legitimize financial necessity without requiring invented passion.",
+        "Explain that motivations can change with circumstances, life stages and job type.",
+        "Separate a private reason for needing employment from a role-specific reason for applying."
+      ],
+      "examplePlan": "Three illustrated applicants with different, equally legitimate priorities.",
+      "action": "Choose the three reasons that actually matter to you, separate what you would say privately from what you would say to an employer, and rewrite one reason truthfully.",
+      "artifact": "A private needs/wants/contributions reflection plus an authentic job-interest sentence.",
+      "outcome": "State a genuine motivation without copying a sentimental interview script.",
+      "interaction": "scene"
+    },
+    {
+      "id": "1.3",
+      "unit_id": "U01",
+      "title": "Why do employers hire?",
+      "question": "Why would a business or organization pay someone to work?",
+      "beats": [
+        "Start with work that needs to be done: serving customers, scheduling, producing software, teaching, researching.",
+        "Show constraints: money, deadlines, reliability, skills, teamwork, regulations and training capacity.",
+        "Distinguish “needs a credential” from “needs a capability”; in some roles credentials are legally required.",
+        "Show why a role description lists duties and qualifications."
+      ],
+      "examplePlan": "Before-and-after scene: work demand exceeds existing team capacity.",
+      "action": "Examine an overwhelmed service desk. Pick the actual operational problem, the skills needed, and what proof a candidate could provide.",
+      "artifact": "A needs-to-evidence chain with no unsupported claims.",
+      "outcome": "Explain an employer’s basic hiring problem in one or two sentences.",
+      "interaction": "scene"
+    },
+    {
+      "id": "1.4",
+      "unit_id": "U01",
+      "title": "Two parties, imperfect information",
+      "question": "Why can neither side know in advance whether a job will work?",
+      "beats": [
+        "An applicant knows some of their own needs and capabilities; the employer knows some of the work and conditions.",
+        "Documents, interviews, work samples and references reduce uncertainty but never eliminate it.",
+        "Discuss unequal bargaining power, scarce opportunities and imperfect hiring decisions without making the learner cynical.",
+        "The applicant also evaluates pay, conditions, responsibilities, learning and treatment."
+      ],
+      "examplePlan": "Split-view cards showing applicant and employer questions; connect at the hiring decision.",
+      "action": "Sort ten questions between applicant and employer, then add one question you would personally need answered before accepting.",
+      "artifact": "A two-party uncertainty map.",
+      "outcome": "Describe hiring as a two-way decision under uncertainty.",
+      "interaction": "decision"
+    },
+    {
+      "id": "1.5",
+      "unit_id": "U01",
+      "title": "What counts as evidence?",
+      "question": "How does an employer distinguish a claim from a believable example?",
+      "beats": [
+        "Difference between “I am hardworking” and an observable example.",
+        "Experience can come from paid work, school, volunteering, caregiving, projects or internships.",
+        "Qualifications and potential differ: some roles require proof or authorization before entry.",
+        "Honest relevance beats exaggeration; a beginner can be credible without pretending to be experienced."
+      ],
+      "examplePlan": "Two miniature candidate profiles, one with paid experience and one with project evidence.",
+      "action": "Convert three vague claims (\"hardworking\", \"good at teamwork\", \"quick learner\") into specific, real examples, or mark \"no evidence yet\".",
+      "artifact": "An evidence bank that can be reused in applications.",
+      "outcome": "Connect one ability to one concrete supporting experience.",
+      "interaction": "decision"
+    },
+    {
+      "id": "1.6",
+      "unit_id": "U01",
+      "title": "See the whole journey",
+      "question": "What happens between wanting a job and deciding whether to accept one?",
+      "beats": [
+        "Map job search → advertisement → application → screening → interview/assessment → offer → decision.",
+        "Explain that stages vary by country, employer and role, and some steps are skipped or repeated.",
+        "Introduce essential English words: vacancy, apply, requirements, shortlist, interview, offer, reject.",
+        "Introduce the fictional company and recurring example learner; let learners choose “learn from zero” or “interview soon” without locking content."
+      ],
+      "examplePlan": "A single interactive hiring journey map, with stages that reveal a real artifact.",
+      "action": "Arrange six hiring artifacts and events into a sensible sequence; flag which stages can overlap or disappear.",
+      "artifact": "An annotated hiring journey map.",
+      "outcome": "Identify the purpose of the main stages and the English needed at each.",
+      "interaction": "process"
+    },
+    {
+      "id": "2.1",
+      "unit_id": "U02",
+      "title": "What kind of job?",
+      "question": "What are you actually searching for?",
+      "beats": [
+        "Distinguish job title, work function, industry, seniority and work arrangement.",
+        "Explain on-site, hybrid, remote, contract, shift, full-time, part-time and internship vocabulary.",
+        "Clarify how adjacent job titles can hide similar work and how the same title can differ across employers.",
+        "Start with desired tasks, constraints and skills rather than company prestige alone."
+      ],
+      "examplePlan": "Three similar-sounding advertisements with different actual duties.",
+      "action": "Choose preferred tasks, work arrangements, commute limits and eligibility; compare three job titles whose actual duties differ.",
+      "artifact": "An honest role-and-constraints profile.",
+      "outcome": "Describe a job target beyond its title.",
+      "interaction": "decision"
+    },
+    {
+      "id": "2.2",
+      "unit_id": "U02",
+      "title": "Where openings come from",
+      "question": "Where do people learn that someone is hiring?",
+      "beats": [
+        "Company career pages, reputable job boards, campus centers, referrals, networking, recruitment agencies and direct applications.",
+        "Explain that a referral introduces a candidate; it is not a guaranteed advantage.",
+        "Teach search expressions, filters and how to avoid applying indiscriminately.",
+        "Use generic tool categories rather than depending on one paid platform or country."
+      ],
+      "examplePlan": "Side-by-side mock search results from three sources.",
+      "action": "Use a sample careers page, job-board result and forwarded message. Trace each to a legitimate employer-controlled vacancy page.",
+      "artifact": "Two useful search queries and one verified vacancy path.",
+      "outcome": "Find and recognize a credible opportunity.",
+      "interaction": "document"
+    },
+    {
+      "id": "2.3",
+      "unit_id": "U02",
+      "title": "Cold outreach: when and why",
+      "question": "When should you contact someone who has not invited you?",
+      "beats": [
+        "Distinguish informational outreach, referral requests, speculative applications and direct responses to posted roles.",
+        "Decide whom to contact, what useful information to ask for and what a reasonable request looks like.",
+        "Explain that outreach is optional, context-dependent and should never become mass spam."
+      ],
+      "examplePlan": "Two authentic-looking professional profiles and three outreach goals.",
+      "action": "Choose the most reasonable contact and request in three situations; identify what should be researched before sending.",
+      "artifact": "A contact-and-purpose plan.",
+      "outcome": "Differentiate an information request from an unsolicited demand for a job.",
+      "interaction": "compare"
+    },
+    {
+      "id": "2.4",
+      "unit_id": "U02",
+      "title": "Write and follow up on a cold message",
+      "question": "What makes a stranger willing to read or reply?",
+      "beats": [
+        "Use a truthful context or shared connection, clear purpose, specific low-burden request and concise close.",
+        "Contrast email with LinkedIn-style direct messages; choose channel and register appropriate to the recipient.",
+        "Demonstrate one respectful follow-up, appropriate wait, and stopping when there is no reply; no guaranteed response."
+      ],
+      "examplePlan": "An annotated short cold email, an overlong weak message, a polite follow-up and a no-response branch.",
+      "action": "Assemble and personalize a 4–6 sentence outreach message to a fictional worker; write one optional follow-up and choose when to stop.",
+      "artifact": "A usable original cold message and follow-up.",
+      "outcome": "The message is truthful, specific, respectful and easy to ignore.",
+      "interaction": "message annotation"
+    },
+    {
+      "id": "2.5",
+      "unit_id": "U02",
+      "title": "How to read a job advertisement",
+      "question": "What information is actually in the posting?",
+      "beats": [
+        "Point out role title, purpose, responsibilities, required/preferred qualifications, location, hours, compensation, deadline and application method.",
+        "Teach “responsible for,” “required,” “preferred,” “report to,” “eligible,” “experience with.”",
+        "Separate plain claims about culture from concrete working conditions.",
+        "Read the posting as evidence of the employer’s priorities, not as a guarantee of what the job will be like."
+      ],
+      "examplePlan": "A full fictional job posting with tappable inline annotations.",
+      "action": "Inspect a new posting and highlight duties, required vs preferred criteria, compensation, schedule, location and deadlines; mark missing facts.",
+      "artifact": "A marked-up advertisement and three clarification questions.",
+      "outcome": "Extract the essential information from an unfamiliar posting.",
+      "interaction": "document"
+    },
+    {
+      "id": "2.6",
+      "unit_id": "U02",
+      "title": "Requirements, preferences and eligibility",
+      "question": "Does a candidate need to meet every bullet?",
+      "beats": [
+        "Separate non-negotiable legal/credential/work authorization requirements from employer preferences.",
+        "Discuss “years of experience” as a signal that may or may not be flexible.",
+        "Never teach candidates to misrepresent authorization, licenses or qualifications.",
+        "Explain when asking the recruiter a precise question is better than guessing."
+      ],
+      "examplePlan": "Three labeled posting lines: legally required license, essential shift availability, preferred tool experience.",
+      "action": "Classify requirements as legal/credential, essential job constraint, or negotiable preference; decide whether to apply or clarify.",
+      "artifact": "A requirement matrix and a polite clarification message.",
+      "outcome": "Recognize real blockers and avoid treating every preference as mandatory.",
+      "interaction": "document"
+    },
+    {
+      "id": "2.7",
+      "unit_id": "U02",
+      "title": "Research the employer",
+      "question": "What should you verify before applying?",
+      "beats": [
+        "Understand what the organization does, whom it serves and what the advertised team does.",
+        "Look for credible information about work conditions, responsibilities, compensation and culture.",
+        "Check company identity and vacancy legitimacy; do not send money to get hired or disclose unnecessary sensitive details.",
+        "Distinguish a real research finding from vague flattery about mission and values."
+      ],
+      "examplePlan": "A compact mock company page versus a suspicious recruitment message.",
+      "action": "Compare a real-looking employer page and two mock messages, including an urgent paid-equipment scam; identify verifiable signals without guessing from grammar alone.",
+      "artifact": "A legitimacy checklist and a safe next step.",
+      "outcome": "Describe a reason to apply grounded in actual job information.",
+      "interaction": "decision"
+    },
+    {
+      "id": "2.8",
+      "unit_id": "U02",
+      "title": "Match your evidence to their needs",
+      "question": "How can you tell whether you are a plausible candidate?",
+      "beats": [
+        "Create a two-column “they need / I can show” map.",
+        "Separate strong evidence, partial evidence, missing skills and transferable skills.",
+        "Include non-work evidence without inventing outcomes.",
+        "Identify one requirement to address in a cover letter or conversation."
+      ],
+      "examplePlan": "An editable requirements-to-evidence mapping for a fictional candidate.",
+      "action": "Drag four posting requirements beside your real examples; where evidence is missing, mark the gap instead of inventing experience.",
+      "artifact": "A truthful match table that feeds the résumé and letter.",
+      "outcome": "Make a reasoned fit assessment rather than claim perfect fit.",
+      "interaction": "document"
+    },
+    {
+      "id": "2.9",
+      "unit_id": "U02",
+      "title": "Choose what to apply for",
+      "question": "How do you balance application quality, quantity and time?",
+      "beats": [
+        "Prioritize credible roles by eligibility, fit, urgency, conditions and effort.",
+        "Track applications and deadlines; avoid generic spam but do not assume a few perfect applications guarantee success.",
+        "Use concise ethical outreach and referrals where suitable.",
+        "Know when to broaden roles or revise material if responses are limited."
+      ],
+      "examplePlan": "A simple three-vacancy comparison and application tracker.",
+      "action": "Rank three plausible vacancies using fit, pay, deadline, commute, eligibility and preparation effort; plan where to spend your time.",
+      "artifact": "A justified shortlist and simple application tracker.",
+      "outcome": "Set a realistic plan for two or three relevant opportunities.",
+      "interaction": "decision"
+    },
+    {
+      "id": "3.1",
+      "unit_id": "U03",
+      "title": "What is a résumé or CV?",
+      "question": "Why does a recruiter ask for this document?",
+      "beats": [
+        "A concise record of relevant qualifications, experience, education and projects.",
+        "Differentiate common U.S. résumé usage from longer academic CVs and regional uses of the word CV.",
+        "The goal is to make relevant evidence easy to find, not to tell an entire autobiography.",
+        "Explain human screening and hiring software without claiming magic ATS tricks."
+      ],
+      "examplePlan": "One résumé and one academic CV shown next to a job ad.",
+      "action": "Look at two documents labeled résumé and CV. Identify what changes between a short job-focused résumé and an academic CV; pick an appropriate format for a stated country/role.",
+      "artifact": "A document-choice explanation, with country-variation warning.",
+      "outcome": "Explain the document’s purpose and recognize format differences.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.2",
+      "unit_id": "U03",
+      "title": "Anatomy of a résumé",
+      "question": "What does each section contribute?",
+      "beats": [
+        "Name and appropriate contact details, summary if useful, work experience, education, skills, projects, certifications and relevant extras.",
+        "Order sections according to role and career stage; not every section is mandatory.",
+        "Explain reverse chronological organization and plain, consistent formatting.",
+        "Show what not to include by default, while warning that photo and personal-detail conventions vary across countries."
+      ],
+      "examplePlan": "Fully annotated, accessible HTML résumé document with tappable headings.",
+      "action": "Tap the annotated sections of two complete sample documents and rearrange a disorganized example for easier reading.",
+      "artifact": "A section-order plan that fits a chosen role.",
+      "outcome": "Understand a complete sample without imitating every formatting choice.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.3",
+      "unit_id": "U03",
+      "title": "Describe experience truthfully",
+      "question": "How do you turn work into useful evidence?",
+      "beats": [
+        "Distinguish duties from specific actions and results.",
+        "Teach action verbs and patterns: action + object + context + outcome.",
+        "Use numbers only when true and relevant; good evidence need not be quantified.",
+        "Avoid unsupported superlatives, invented achievements, and copied AI language."
+      ],
+      "examplePlan": "Before/after bullet examples with an explanation panel.",
+      "action": "Rewrite bland or exaggerated experience bullets using action, task and result, retaining only evidence the fictional applicant has.",
+      "artifact": "Three truthful, readable experience bullets.",
+      "outcome": "Write one clear, factual résumé bullet.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.4",
+      "unit_id": "U03",
+      "title": "No experience, career changes and gaps",
+      "question": "What belongs on a résumé when paid experience is limited or different?",
+      "beats": [
+        "Use school, volunteering, projects, internships and relevant responsibilities.",
+        "Select transferable skills for a new field; do not disguise a transition.",
+        "Address employment gaps only when useful or requested and without forced intimate disclosure.",
+        "Distinguish a skill you have used from one you are still learning."
+      ],
+      "examplePlan": "Two fully annotated example résumés: first-time applicant and career changer.",
+      "action": "Choose school, volunteer, caregiving or project evidence for an applicant with no paid experience; handle a gap without fabricating a job.",
+      "artifact": "One credible entry-level résumé section.",
+      "outcome": "Recognize honest ways to present a non-linear background.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.5",
+      "unit_id": "U03",
+      "title": "Create and format a résumé",
+      "question": "How do you actually make the document?",
+      "beats": [
+        "Use common document editors/templates; teach headings, spacing and editable text rather than a specific app subscription.",
+        "Explain when to use PDF or another employer-requested format; check legibility and copyable text.",
+        "Avoid unnecessary graphics and decorative layouts for roles that prioritize quick scanning.",
+        "Give an accessible checklist for file naming, contact accuracy, spelling, links and privacy."
+      ],
+      "examplePlan": "A printable simple template alongside a mock export/download menu.",
+      "action": "Choose a plain template, fill contact/education/experience sections with safe fictional details, check readability and export instructions.",
+      "artifact": "A first résumé draft ready for independent editing in a document tool.",
+      "outcome": "Know how to create, export and inspect a readable résumé independently.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.6",
+      "unit_id": "U03",
+      "title": "Compare, tailor and check",
+      "question": "How should a résumé change for a specific opening?",
+      "beats": [
+        "Read two complete annotated sample résumés against one advertisement.",
+        "Explain why changing emphasis is legitimate but changing facts is not.",
+        "Identify irrelevance, missing evidence, hard-to-read sections and inconsistencies.",
+        "Use a practical review checklist without claiming a guaranteed “ATS score.”"
+      ],
+      "examplePlan": "Job ad + two résumé examples; optional “show recruiter’s view” lens.",
+      "action": "Compare one generic résumé with a version tailored to a specific Northstar posting; find unsupported keyword stuffing and hidden formatting traps.",
+      "artifact": "A concise revision checklist and corrected draft.",
+      "outcome": "Judge whether an application résumé answers the employer’s key needs.",
+      "interaction": "document"
+    },
+    {
+      "id": "3.7",
+      "unit_id": "U03",
+      "title": "Create your own résumé or CV",
+      "question": "Can you assemble a clear, truthful document without copying the example?",
+      "beats": [
+        "Offer one minimal job résumé template and one academic CV illustration; distinguish country/industry conventions.",
+        "Provide a phrase bank for describing tasks, teamwork, tools and measurable results without inventing numbers.",
+        "Explain plain tools (word processor, template, PDF export) and a privacy-first workflow with optional local notes."
+      ],
+      "examplePlan": "Two downloadable blank layouts and a fully annotated before/after sample.",
+      "action": "Populate a worksheet from your evidence bank, construct a document in your own editor and apply a role-specific proofreading checklist.",
+      "artifact": "A draft résumé or CV built by the learner.",
+      "outcome": "A reader can find relevant, accurate evidence quickly.",
+      "interaction": "annotated template"
+    },
+    {
+      "id": "4.1",
+      "unit_id": "U04",
+      "title": "What is a cover letter?",
+      "question": "Why would an employer want an additional letter?",
+      "beats": [
+        "A short, audience-specific explanation of your interest and relevant evidence.",
+        "Sometimes required, sometimes optional, sometimes not used; distinguish attachments, email messages and application-form questions.",
+        "Show what a letter adds to a résumé: motivation, fit, context or a career transition.",
+        "Explain that long, ornate writing is not an advantage."
+      ],
+      "examplePlan": "Résume-only application versus an application requiring a cover letter.",
+      "action": "Decide whether a cover letter is required, optional, or unnecessary in three situations, and state the useful question a letter can answer.",
+      "artifact": "A clear reason to write—or not write—a letter.",
+      "outcome": "Recognize when and why to write a cover letter.",
+      "interaction": "document"
+    },
+    {
+      "id": "4.2",
+      "unit_id": "U04",
+      "title": "Read from the hiring manager’s viewpoint",
+      "question": "What does the reader need to learn?",
+      "beats": [
+        "What role is the applicant seeking? Why this job? What evidence fits? Why continue the conversation?",
+        "Differentiate generic admiration from a researched connection.",
+        "Avoid false certainty about what every hiring manager wants.",
+        "Show that a letter is not a rewrite of the résumé."
+      ],
+      "examplePlan": "One hiring manager’s short review with highlighted questions.",
+      "action": "Read an opening from a hiring manager’s viewpoint: highlight evidence and relevance, cross out vague compliments.",
+      "artifact": "A hiring-manager read-through annotated by purpose.",
+      "outcome": "Identify the essential information without relying on a rigid formula.",
+      "interaction": "document"
+    },
+    {
+      "id": "4.3",
+      "unit_id": "U04",
+      "title": "Anatomy of a useful letter",
+      "question": "How does a concise letter work sentence by sentence?",
+      "beats": [
+        "Practical opening: role, relevant motivation, strongest connection.",
+        "Evidence paragraph: one or two concrete experiences and why they matter for this job.",
+        "Closing: invitation to discuss, thanks and next step; appropriate professional greeting and sign-off.",
+        "Show multiple legitimate structures, formal and natural tone, and country/sector variation."
+      ],
+      "examplePlan": "Fully annotated letter with optional alternate paragraph order and tone comparison.",
+      "action": "Assemble paragraphs from real facts in a sensible order: role, fit evidence, connection, and closing; identify information that belongs in the résumé instead.",
+      "artifact": "A structured cover-letter outline.",
+      "outcome": "Explain the function of each paragraph, not memorize a script.",
+      "interaction": "document"
+    },
+    {
+      "id": "4.4",
+      "unit_id": "U04",
+      "title": "Weak versus useful writing",
+      "question": "What makes a letter specific and believable?",
+      "beats": [
+        "Contrast generic claims (“perfect fit,” “passionate”) with concrete evidence.",
+        "Make one experience relevant to an advertised duty.",
+        "Use clear sentences over clichés, flattery and overly complex vocabulary.",
+        "Teach honest career-change context without oversharing or apology."
+      ],
+      "examplePlan": "Two complete letters about the same fictional applicant and role, with annotations.",
+      "action": "Compare a formulaic letter with one specific to the role and correct four weaknesses without adding invented enthusiasm.",
+      "artifact": "An improved letter excerpt and explanation.",
+      "outcome": "Revise an unconvincing cover letter without inventing credentials.",
+      "interaction": "document"
+    },
+    {
+      "id": "4.5",
+      "unit_id": "U04",
+      "title": "Send a complete application",
+      "question": "What should happen just before and after sending?",
+      "beats": [
+        "Check instructions, required documents, filenames, links and deadlines.",
+        "Show a concise application email and a short application-form response.",
+        "If no letter is requested, do not require one; if asked, adapt the message.",
+        "Keep one record of what was sent and where, for later interviews."
+      ],
+      "examplePlan": "Mock application form, upload checklist and confirmation email.",
+      "action": "Check a complete fictional application against the instructions, subject line, file names, attachments and deadline; spot a risky personal-data request.",
+      "artifact": "A final submission checklist and concise email.",
+      "outcome": "Submit a coherent application packet and retain the details.",
+      "interaction": "document"
+    },
+    {
+      "id": "4.6",
+      "unit_id": "U04",
+      "title": "Write and revise your own cover letter",
+      "question": "Can you write an original letter for an actual set of requirements?",
+      "beats": [
+        "When a letter is requested, select a few strongest links between your evidence and the job.",
+        "Show a full sample without prescribing a universal paragraph count or emotional enthusiasm.",
+        "Practice editing for specificity, brevity, register, grammar and consistency with the résumé."
+      ],
+      "examplePlan": "A complete Northstar job posting, applicant evidence bank, and two contrasting finished letters.",
+      "action": "Draft a letter from a fictional applicant’s real experiences, revise it after a hiring-manager perspective check, then try your own.",
+      "artifact": "A complete original draft and revised version.",
+      "outcome": "Each substantive claim is relevant and supported.",
+      "interaction": "compare/annotate"
+    },
+    {
+      "id": "5.1",
+      "unit_id": "U05",
+      "title": "Why employers use multiple stages",
+      "question": "Why do employers not decide from one document or conversation?",
+      "beats": [
+        "Explain application receipt, eligibility checks, interviews, assessments, references and offers.",
+        "Acknowledge variation: screening, behavioral and technical interviews are types, not a fixed three-round ladder.",
+        "Understand the applicant’s choice to withdraw at any stage."
+      ],
+      "examplePlan": "Interactive hiring timeline with branching paths for different roles.",
+      "action": "Place the stages of three fictional hiring processes in plausible order and identify what each stage helps assess.",
+      "artifact": "A process map with possible variations.",
+      "outcome": "Learner can explain why stages differ by employer.",
+      "interaction": "timeline"
+    },
+    {
+      "id": "5.2",
+      "unit_id": "U05",
+      "title": "Human and software-assisted screening",
+      "question": "What happens to an application before a conversation?",
+      "beats": [
+        "Explain humans, applicant tracking systems, filters, eligibility checks and varied automated ranking tools.",
+        "Avoid mythical ATS hacks; favour truthful content, readable layout and role relevance.",
+        "Explain that screening is imperfect and a rejection is not proof of personal inadequacy."
+      ],
+      "examplePlan": "Mock application review with a human reviewer and a rule-based eligibility filter.",
+      "action": "Mark what a screening rule could check, what a person still needs to judge, and where information is missing.",
+      "artifact": "A screening reality-check worksheet.",
+      "outcome": "Distinguish software handling of applicants from guaranteed algorithmic ranking.",
+      "interaction": "pipeline diagram"
+    },
+    {
+      "id": "5.3",
+      "unit_id": "U05",
+      "title": "Recruiter communication basics",
+      "question": "What messages might arrive after you apply?",
+      "beats": [
+        "Recognize confirmation, additional information, availability request, interview invitation, hold, rejection and offer.",
+        "Read tone and instructions accurately and respond with clear, concise English.",
+        "Notice suspicious pressure, unusual financial requests and unverified senders."
+      ],
+      "examplePlan": "An inbox containing seven realistic fictional hiring messages.",
+      "action": "Classify each message; decide reply/no reply, urgency, and what information can be safely shared.",
+      "artifact": "An inbox response plan.",
+      "outcome": "Learner can read recruiter instructions without guessing.",
+      "interaction": "inbox explorer"
+    },
+    {
+      "id": "5.4",
+      "unit_id": "U05",
+      "title": "The initial screening interview",
+      "question": "What does an early recruiter call usually check?",
+      "beats": [
+        "Purpose: basic qualifications, experience overview, interest, schedule, compensation expectations and availability where appropriate.",
+        "Phone/video etiquette, concise answers, asking for clarification, and questions about next steps.",
+        "Screening is sometimes conducted by the hiring manager or skipped entirely."
+      ],
+      "examplePlan": "A 10-turn fictional recruiter screening call with purposeful annotations.",
+      "action": "Respond to six common screening prompts including schedule and role interest; ask one question about the process.",
+      "artifact": "A short recorded or typed screening-call rehearsal.",
+      "outcome": "Answers are clear, truthful, and relevant.",
+      "interaction": "audio dialogue"
+    },
+    {
+      "id": "5.5",
+      "unit_id": "U05",
+      "title": "Scheduling, confirming and rescheduling",
+      "question": "How do you handle interview logistics professionally?",
+      "beats": [
+        "Confirm time, time zone, platform, location, interviewer, accessibility needs or accommodations if relevant.",
+        "Write a clear confirmation, request an alternative slot, or reschedule without oversharing.",
+        "Explain what not to share with unverified contacts."
+      ],
+      "examplePlan": "Three recruiter invitation emails with timezone and schedule conflicts.",
+      "action": "Compose one confirmation, one reschedule request and one clarification about the interview format.",
+      "artifact": "Three short professional messages.",
+      "outcome": "No ambiguity about when and how the candidate will attend.",
+      "interaction": "email annotation"
+    },
+    {
+      "id": "5.6",
+      "unit_id": "U05",
+      "title": "Assessments, interviews and waiting between rounds",
+      "question": "What if there is a test, an extra interview or a long pause?",
+      "beats": [
+        "Explain work samples, short assessments, panels, references and extended delays.",
+        "Clarify preparation instructions, deadlines, and reasonable boundaries around unpaid work.",
+        "Track commitments while continuing other applications rather than assuming silence is failure."
+      ],
+      "examplePlan": "Recruitment timeline with branching assessment and panel routes.",
+      "action": "Decide how to respond to an assessment invitation, ask for missing instructions, and plan preparation.",
+      "artifact": "An assessment plan and one clarification email.",
+      "outcome": "Candidate understands requirements and retains agency.",
+      "interaction": "timeline"
+    },
+    {
+      "id": "5.7",
+      "unit_id": "U05",
+      "title": "Thank-you email after an interview",
+      "question": "What is the purpose of thanking an interviewer?",
+      "beats": [
+        "Brief appreciation, specific reference to the conversation, and genuine continued interest.",
+        "Explain customary expectations vary across settings; a generic copied note is not a magical advantage.",
+        "A thank-you can be unnecessary or inappropriate in some workflows; it should never override explicit instructions."
+      ],
+      "examplePlan": "Two concise thank-you emails: generic versus specific, with annotations.",
+      "action": "Use interview notes to write a 4–6 sentence thank-you email without repeating the résumé.",
+      "artifact": "A personal, appropriate thank-you note.",
+      "outcome": "Message is specific, respectful and truthful.",
+      "interaction": "compare messages"
+    },
+    {
+      "id": "5.8",
+      "unit_id": "U05",
+      "title": "When you do not hear back",
+      "question": "When should you follow up—and when should you stop?",
+      "beats": [
+        "Respect the timeline the employer gave you and any instructions not to contact.",
+        "Write one concise status inquiry after an appropriate wait, then avoid repetitive chasing.",
+        "Distinguish ordinary delays, formal rejection and ghosting without assuming motives."
+      ],
+      "examplePlan": "A timeline showing a promised decision date, one delayed decision and no-response branches.",
+      "action": "Choose whether to wait, inquire, or move on in three scenarios; write one appropriate follow-up.",
+      "artifact": "A status inquiry and stopping rule.",
+      "outcome": "Learner can follow up without demanding an immediate answer.",
+      "interaction": "timeline"
+    },
+    {
+      "id": "5.9",
+      "unit_id": "U05",
+      "title": "Rejection: understanding and replying",
+      "question": "What does a rejection mean, and should you respond?",
+      "beats": [
+        "Compare automated mass rejection, personal rejection after interview and request to stay in touch.",
+        "Optional response: acknowledge decision, express appreciation and genuine future interest without insisting on reconsideration.",
+        "Requesting feedback may be appropriate, but feedback is not guaranteed and you may simply move on."
+      ],
+      "examplePlan": "Three fictional rejection emails with different levels of personalization.",
+      "action": "Select which rejections warrant no response, a brief appreciative reply or an optional request for feedback; draft one.",
+      "artifact": "An appropriate response—or deliberate no-reply decision.",
+      "outcome": "Learner keeps doors open without assuming they were second choice.",
+      "interaction": "inbox comparison"
+    },
+    {
+      "id": "5.10",
+      "unit_id": "U05",
+      "title": "Understanding and evaluating a job offer",
+      "question": "What exactly are you being asked to accept?",
+      "beats": [
+        "Read salary/pay, hours, start date, responsibilities, location, contract type, benefits and conditions.",
+        "Explain acceptance deadlines, questions, negotiation, and cultural/legal differences without giving legal advice.",
+        "Remember that an offer is a decision point for the applicant, not an obligation."
+      ],
+      "examplePlan": "Two Northstar offer summaries with different pay, hours and responsibilities.",
+      "action": "Compare two offers against your priorities; identify two points to clarify and choose a reasoned response.",
+      "artifact": "An offer decision worksheet and questions.",
+      "outcome": "Learner recognizes consequential terms and unresolved details.",
+      "interaction": "offer annotation"
+    },
+    {
+      "id": "5.11",
+      "unit_id": "U05",
+      "title": "Accept, decline, withdraw and preserve relationships",
+      "question": "How do you finish an opportunity professionally?",
+      "beats": [
+        "Write accept, decline and withdrawal messages with gratitude, clarity and no unnecessary apology.",
+        "Handle competing applications without making promises you cannot keep.",
+        "A polite exchange is worthwhile even when no future opportunity follows."
+      ],
+      "examplePlan": "Three message threads: acceptance, declined offer and withdrawal from consideration.",
+      "action": "Draft a concise acceptance, a clear decline and a respectful withdrawal; choose the appropriate delivery channel.",
+      "artifact": "Three outcome-specific messages.",
+      "outcome": "Each message states the decision unambiguously and respects the other party.",
+      "interaction": "message comparison"
+    },
+    {
+      "id": "6.1",
+      "unit_id": "U06",
+      "title": "What is an interview really testing?",
+      "question": "Why would an employer ask questions after reading the documents?",
+      "beats": [
+        "It can explore evidence, reasoning, communication, motivation and work requirements.",
+        "Introduce interview families: background, motivation, behavioral, situational, role-specific and logistics.",
+        "There is rarely one universally correct answer; some questions test concrete knowledge or qualifications.",
+        "Start building a personal “evidence bank” of authentic experiences, not perfect scripts."
+      ],
+      "examplePlan": "Seven question cards that reveal the likely purpose behind each.",
+      "action": "Match interview prompts to what they are testing (basic fit, evidence of behavior, role-specific skills); note that one round can mix all three.",
+      "artifact": "An interview-type recognition worksheet.",
+      "outcome": "Recognize the purpose of an unfamiliar question.",
+      "interaction": "decision"
+    },
+    {
+      "id": "6.2",
+      "unit_id": "U06",
+      "title": "The first minutes",
+      "question": "How do you begin and manage the setting?",
+      "beats": [
+        "Greeting and introductions; small talk as appropriate, and simple turn-taking.",
+        "In-person, telephone and video differences: audio checks, delays, professional requests.",
+        "Show etiquette without insisting on one culture’s rules or judging personality.",
+        "Teach repair phrases such as “Could you repeat that?” or “Could I take a moment?”"
+      ],
+      "examplePlan": "Short audio-first arrival scenario with transcript and pauses.",
+      "action": "Listen to three greetings and choose the clearest natural response; practise checking audio/video, arriving, and asking to repeat a question.",
+      "artifact": "A short recorded or typed opening exchange.",
+      "outcome": "Manage the opening of an interview in understandable English.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.3",
+      "unit_id": "U06",
+      "title": "Tell me about yourself",
+      "question": "How do you introduce your relevant background without retelling your life?",
+      "beats": [
+        "Explain the hidden purpose: short background → relevant evidence → connection to role.",
+        "Show an experienced and a first-time candidate answering differently.",
+        "Choose what to omit, how to sequence time, and how to adapt to 30–90 seconds.",
+        "Practise a paraphrased follow-up (“Walk me through your background”)."
+      ],
+      "examplePlan": "Interviewer audio + two contrasted expandable sample answers.",
+      "action": "Build a 45–60 second truthful introduction from present background, past evidence, and relevance; practise three differently worded prompts.",
+      "artifact": "One flexible introduction, not a memorized script.",
+      "outcome": "Give a relevant introduction with little or no prompt.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.4",
+      "unit_id": "U06",
+      "title": "Why this job, why this employer?",
+      "question": "How can someone answer honestly without faking passion?",
+      "beats": [
+        "Distinguish personal reasons for employment from reasons this role fits.",
+        "Use evidence from employer research, work duties and personal strengths.",
+        "Offer legitimate examples: financial stability plus transferable skill, interest in product, desire to learn.",
+        "Avoid empty compliments and pretending to know the company’s future."
+      ],
+      "examplePlan": "Three truthful candidate motivations plus a role advertisement.",
+      "action": "Separate \"why I need work\" from \"why this role makes sense\"; use an employer fact and your evidence to answer without pretending passion.",
+      "artifact": "A role-specific motivation response.",
+      "outcome": "Give a credible motivation tied to this role.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.5",
+      "unit_id": "U06",
+      "title": "Qualifications, strengths and difficult background questions",
+      "question": "How do you speak about what you can do and where you are still growing?",
+      "beats": [
+        "Discuss strengths through evidence; distinguish skills from unsupported adjectives.",
+        "Handle “weakness,” “little experience,” gaps, career change, or why leaving a job without dishonesty.",
+        "Avoid hostile claims about former employers or unnecessary private disclosures.",
+        "Explain how to say “I have not done that yet, but I have done ___.”"
+      ],
+      "examplePlan": "Four questions with examples from first-time and experienced candidates.",
+      "action": "Transform vague strengths and defensiveness about gaps into evidence-based, concise answers; choose a weakness and explain realistic improvement.",
+      "artifact": "Two supported responses and one safe boundary for personal questions.",
+      "outcome": "Describe capabilities and limitations credibly.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.6",
+      "unit_id": "U06",
+      "title": "Past experience: actions and outcomes",
+      "question": "How do you answer “Tell me about a time when…”?",
+      "beats": [
+        "Explain a simple story structure: context → your action → outcome/learning.",
+        "STAR (Situation, Task, Action, Result) is an optional organizing aid, not a sacred recitation.",
+        "Emphasize one’s actual contribution and avoid inflated results.",
+        "Practise a variant prompt to prevent memorized answers."
+      ],
+      "examplePlan": "A short illustrated work incident with movable story segments.",
+      "action": "Arrange a real example into situation, task, action and result; then answer an unfamiliar variation without the labels.",
+      "artifact": "One usable evidence story and a transfer answer.",
+      "outcome": "Tell a clear, concrete story answering a behavioral question.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.7",
+      "unit_id": "U06",
+      "title": "Teamwork, conflict, mistakes and pressure",
+      "question": "What can stories about difficulty reveal?",
+      "beats": [
+        "Types: collaboration, disagreement, difficult customer, error, changing priorities, feedback, deadline.",
+        "Explain responsibility, communication, choice, consequences and learning.",
+        "Never teach candidates to invent a dramatic conflict or disclose confidential information.",
+        "Provide safe student/project examples for learners without jobs."
+      ],
+      "examplePlan": "Four short alternative incidents and common interviewer probes.",
+      "action": "Choose a respectful way to discuss conflict, feedback, mistakes or pressure; avoid blaming teammates or claiming perfect behavior.",
+      "artifact": "An honest difficult-situation answer.",
+      "outcome": "Answer at least one challenging behavioral question truthfully.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.8",
+      "unit_id": "U06",
+      "title": "Situational and judgment questions",
+      "question": "What if the interviewer asks what you would do in an unfamiliar situation?",
+      "beats": [
+        "Clarify the problem, relevant constraints, people affected and risks.",
+        "Outline a reasonable next action and what information you would seek.",
+        "Show how safety, ethics, accuracy and priorities change answers.",
+        "Contrast reasonable approaches rather than pretending every scenario has one model answer."
+      ],
+      "examplePlan": "Fictional service incident and office error with branching decision points.",
+      "action": "Given a new scenario, explain what you would clarify, prioritize, do and communicate; compare more than one reasonable response.",
+      "artifact": "A structured judgment answer to a novel situation.",
+      "outcome": "Respond logically to a new “What would you do if…?” question.",
+      "interaction": "decision"
+    },
+    {
+      "id": "6.9",
+      "unit_id": "U06",
+      "title": "Keep the conversation going",
+      "question": "How do you handle follow-ups, questions and unknowns?",
+      "beats": [
+        "Listen, pause, check understanding, ask clarification, and answer follow-up questions directly.",
+        "Say “I don’t know” appropriately and explain a reasonable next step.",
+        "Ask the interviewer about role expectations, support, working conditions and process.",
+        "Handle logistics: start date, hours, location, salary expectations and ending the conversation."
+      ],
+      "examplePlan": "Three-turn conversation simulator with one surprising follow-up.",
+      "action": "Respond to interruptions, unclear wording and follow-up questions; ask one substantive question about responsibilities or support.",
+      "artifact": "A two-way exchange with clarification and candidate question.",
+      "outcome": "Sustain an interview exchange instead of delivering a rehearsed monologue.",
+      "interaction": "audio"
+    },
+    {
+      "id": "6.10",
+      "unit_id": "U06",
+      "title": "Questions to ask the interviewer",
+      "question": "What information do you need before you can make a good decision?",
+      "beats": [
+        "Explain questions about actual tasks, supervisor expectations, training, schedule, success measures and hiring timeline.",
+        "Differentiate genuine questions from questions whose answers are prominently stated in the posting.",
+        "Explain sensitive topics such as compensation and availability as legitimate, with timing and cultural variation."
+      ],
+      "examplePlan": "A short interview closing, with two candidate questions and interviewer responses.",
+      "action": "Choose three questions you would ask a potential employer; adapt one when the interviewer has already answered it.",
+      "artifact": "A shortlist of useful questions.",
+      "outcome": "Questions help the applicant evaluate the offer without antagonism.",
+      "interaction": "dialogue analysis"
+    },
+    {
+      "id": "6.11",
+      "unit_id": "U06",
+      "title": "Behavioral interview rehearsal",
+      "question": "Can you respond to unfamiliar wording without reciting a model answer?",
+      "beats": [
+        "Build a small bank of truthful evidence stories before the interview.",
+        "Practise follow-ups that probe personal contribution, verification, uncertainty and learning.",
+        "Use evidence-first feedback rather than personality, accent or confidence scores."
+      ],
+      "examplePlan": "Three related interview prompts that demand different emphasis from one actual experience.",
+      "action": "Answer one behavioral prompt, reveal an unexpected follow-up, identify unsupported claims, and retry with clearer evidence.",
+      "artifact": "Two attempts and an explanation of what improved.",
+      "outcome": "Response answers the question, gives specific action and stays truthful.",
+      "interaction": "comparison"
+    },
+    {
+      "id": "7.1",
+      "unit_id": "U07",
+      "title": "What makes an interview role-specific?",
+      "question": "What changes when the employer tests actual job knowledge?",
+      "beats": [
+        "Distinguish claims about experience from demonstrating domain competence.",
+        "Technical might mean coding, troubleshooting, research design, a customer scenario, a sample lesson or a safety procedure.",
+        "Interview formats differ: problem-solving, task demonstration, case, portfolio review, whiteboard or trial task.",
+        "The course teaches English for explaining competence, not the competence itself."
+      ],
+      "examplePlan": "Three contrasting role-specific assessment invitations.",
+      "action": "Sort four activities into domain-specific demonstration, general behavioral evidence, or recruiter screening; explain why technical tests vary.",
+      "artifact": "A classification and one preparation implication.",
+      "outcome": "Recognize when general interview preparation is insufficient.",
+      "interaction": "document"
+    },
+    {
+      "id": "7.2",
+      "unit_id": "U07",
+      "title": "Prepare from the requirements",
+      "question": "How do you turn a role advertisement into a practice plan?",
+      "beats": [
+        "Extract the actual tools, responsibilities, constraints and relevant knowledge.",
+        "Create an evidence bank: project, skill, portfolio item, process or result.",
+        "Make an honest gap plan and locate official or field-specific preparation resources.",
+        "Identify role-specific vocabulary and the English for explaining it simply."
+      ],
+      "examplePlan": "Role ad annotated into skills, artifacts and communication tasks.",
+      "action": "Extract tools, competencies and deliverables from a sample posting; create a short practice plan without studying unrelated material.",
+      "artifact": "A prioritized role-specific prep plan.",
+      "outcome": "Know what to study beyond this general English course.",
+      "interaction": "document"
+    },
+    {
+      "id": "7.3",
+      "unit_id": "U07",
+      "title": "Explain your reasoning aloud",
+      "question": "How do you speak when the answer is not immediate?",
+      "beats": [
+        "Restate the problem and constraints; ask clarifying questions.",
+        "Explain approach, assumptions and trade-offs in accessible English.",
+        "Check work, acknowledge limits and summarize the result.",
+        "Keep speech concise; technical jargon is used when relevant and explained when needed."
+      ],
+      "examplePlan": "Think-aloud transcript with highlighted good moves and unnecessary rambling.",
+      "action": "Explain how you would diagnose a simple work problem before knowing the answer: clarify, reason, test and check.",
+      "artifact": "A structured spoken or typed reasoning trace.",
+      "outcome": "Make reasoning visible without bluffing.",
+      "interaction": "audio"
+    },
+    {
+      "id": "7.4",
+      "unit_id": "U07",
+      "title": "Three roles, one communication method",
+      "question": "What stays constant between very different occupations?",
+      "beats": [
+        "Customer support: handle an unhappy customer without promising what is impossible.",
+        "Operations assistant: prioritize conflicting requests and communicate delays.",
+        "Technical/research role: troubleshoot a failed process or explain an experiment/implementation decision.",
+        "Compare the common structure: understand problem → choose action → explain trade-offs → check result."
+      ],
+      "examplePlan": "Three interchangeable tabs showing equivalent role scenarios.",
+      "action": "Attempt one support ticket, one operations scheduling problem and one basic software debugging prompt; compare the shared communication moves.",
+      "artifact": "One selected solution and a cross-role reflection.",
+      "outcome": "Recognize general communication patterns in distinct work settings.",
+      "interaction": "decision"
+    },
+    {
+      "id": "7.5",
+      "unit_id": "U07",
+      "title": "Evidence, uncertainty and technical follow-up",
+      "question": "What happens when the interviewer presses for proof?",
+      "beats": [
+        "Walk through a project or portfolio artifact: goal, your role, method, outcome and limitation.",
+        "Respond to “Why did you choose that?” and “What would you change?”",
+        "Admit uncertainty and propose a credible way to verify; don’t invent results or proprietary information.",
+        "Teach a transferable “scope → approach → evidence → limits” structure without a fixed script."
+      ],
+      "examplePlan": "Annotated project brief and two progressively harder follow-up questions.",
+      "action": "Practise saying what you know, what you would verify and what you cannot yet claim; answer a technical follow-up without bluffing.",
+      "artifact": "An honest uncertainty-and-evidence response.",
+      "outcome": "Handle a role-specific follow-up truthfully and clearly.",
+      "interaction": "audio"
+    },
+    {
+      "id": "7.6",
+      "unit_id": "U07",
+      "title": "Technical interview rehearsal",
+      "question": "Can you show your process when the domain question changes?",
+      "beats": [
+        "Choose one of three role-specific tasks, each with a clear scope and reasonable difficulty.",
+        "Practise thinking aloud, clarifying assumptions, checking work and admitting limits.",
+        "Separate linguistic quality from correctness of specialist knowledge."
+      ],
+      "examplePlan": "Three fictional assessments with short evaluator rubrics and no claim of licensing or job-readiness.",
+      "action": "Select one task, explain a proposed solution, inspect model reasoning, and retry with new constraints.",
+      "artifact": "A role-specific explanation plus honest uncertainty statement.",
+      "outcome": "Shows a sensible process and uses understandable language; expert accuracy requires domain review.",
+      "interaction": "task preview"
+    },
+    {
+      "id": "8.1",
+      "unit_id": "U08",
+      "title": "Meet Northstar and choose a role",
+      "question": "Can you understand a complete opportunity?",
+      "beats": [
+        "Meet fictional Northstar Services: customer service, operations and software/research support functions.",
+        "Choose one position; each has realistic duties, required vs preferred qualifications and conditions.",
+        "Use a fictional candidate profile or your own private notes, so beginners need not reveal real personal data.",
+        "Research the fictional company and choose what you would verify if this were a real role."
+      ],
+      "examplePlan": "One company website + three coherent vacancy pages.",
+      "action": "Review Northstar company context, compare three role advertisements, and choose a role based on constraints and evidence.",
+      "artifact": "A chosen role and justified application plan.",
+      "outcome": "Make an informed application choice.",
+      "interaction": "simulation"
+    },
+    {
+      "id": "8.2",
+      "unit_id": "U08",
+      "title": "Prepare and submit",
+      "question": "Can you present the evidence in writing?",
+      "beats": [
+        "Choose/reorder résumé content appropriate for the selected position.",
+        "Write a brief motivation/evidence paragraph; prepare a cover letter if the selected vacancy requests one.",
+        "Check truthfulness, contact details, format, filenames and the instructions.",
+        "Submit a mock application and receive a confirmation."
+      ],
+      "examplePlan": "Editable training application packet with résumé snippets, cover-letter fields and submission preview.",
+      "action": "Produce a fictional résumé, cover letter only if appropriate, and submission message for the selected role; check factual consistency.",
+      "artifact": "A coherent application packet.",
+      "outcome": "Produce an internally consistent, role-relevant application.",
+      "interaction": "simulation"
+    },
+    {
+      "id": "8.3",
+      "unit_id": "U08",
+      "title": "The hiring conversation",
+      "question": "Can you handle an interview beyond rehearsed lines?",
+      "beats": [
+        "Receive and confirm a mock invitation; choose phone/video/in-person version if supported.",
+        "Answer background, motivation, behavioral, situational and one role-specific question.",
+        "Handle at least one paraphrase or follow-up; ask one employer question.",
+        "Adapt challenge to language level: controlled response for A1/A2, freer speaking for B1/B2."
+      ],
+      "examplePlan": "Five-to-seven-turn structured interview with audio, transcripts and typing alternative.",
+      "action": "Respond to a recruiter invitation, complete a screening conversation and one behavioral question, then choose a role-specific challenge.",
+      "artifact": "An interview transcript, recording or typed response with self-review.",
+      "outcome": "Demonstrate a coherent exchange, including recovery when uncertain.",
+      "interaction": "simulation"
+    },
+    {
+      "id": "8.4",
+      "unit_id": "U08",
+      "title": "The decision and what comes next",
+      "question": "Can you evaluate an outcome and reuse the skill?",
+      "beats": [
+        "See one believable outcome (offer, another stage, or rejection); never claim hiring likelihood from language feedback.",
+        "If an offer appears, review key terms, ask for clarification and decide whether it meets needs.",
+        "Receive criterion-linked feedback: relevance, evidence, comprehensibility, clarification and questions asked.",
+        "Try an unseen question/new job advertisement to test transfer; save one concrete next practice goal."
+      ],
+      "examplePlan": "Outcome email, offer terms, feedback and optional changed-role transfer test.",
+      "action": "Read one of three outcomes—offer, rejection or request for clarification—and respond appropriately without assuming a guaranteed next step.",
+      "artifact": "A realistic decision and professional reply.",
+      "outcome": "Complete the entire fictional journey and identify an independent next action.",
+      "interaction": "simulation"
+    },
+    {
+      "id": "8.5",
+      "unit_id": "U08",
+      "title": "Close the loop and transfer to real life",
+      "question": "What do you do with the experience after the simulation?",
+      "beats": [
+        "Review what actually happened and what remains uncertain.",
+        "Save reusable evidence, personal phrases, and messages while avoiding retention of sensitive personal information.",
+        "Choose the next independent action: revise materials, follow up appropriately, seek more openings or prepare for another interview."
+      ],
+      "examplePlan": "A personal timeline and artifacts collected during the fictional Northstar application.",
+      "action": "Identify two communication strengths, one specific weakness, and one next application task; do a different-role transfer check.",
+      "artifact": "A portable one-page job-search communication plan.",
+      "outcome": "Learner can state a concrete next action without relying on a scripted template.",
+      "interaction": "review timeline"
+    }
+  ]
+}

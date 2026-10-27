@@ -485,6 +485,15 @@ test('Humor chapter numbering preserves existing source lessons and local progre
   assert.deepEqual(result.saved,['ch34-line4'])
   assert.equal(storage.get('artico.web.chapter34-inserted.v1'),'1')
   assert.deepEqual(loadLearning(store),result)
+  const fresh = new Map()
+  const newStorage = {
+    getItem:key=>fresh.get(key)??null,
+    setItem:(key,value)=>fresh.set(key,value),
+  }
+  assert.equal(loadLearning(newStorage).last,null)
+  assert.equal(fresh.get('artico.web.chapter34-inserted.v1'),'1')
+  fresh.set('artico.web.learning.v1',JSON.stringify({...emptyLearning,last:'/lesson/34/study'}))
+  assert.equal(loadLearning(newStorage).last,'/lesson/34/study')
 })
 
 test('Humor is chapter 34 in Free Time, not an Application track',()=>{

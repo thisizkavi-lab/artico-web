@@ -43,8 +43,8 @@ export const applicationTracks = [
   },
   {
     id:'interviews', icon:'briefcase', en:'Jobs & Interviews', ja:'仕事・面接',
-    enSummary:'Introduce yourself, explain experience and answer questions.',
-    jaSummary:'自己紹介・経験の説明・面接での受け答え。',
+    enSummary:'Explore the full hiring journey, from finding a job to interviews and offers.',
+    jaSummary:'仕事探しから履歴書・面接・採用結果まで、順を追って学ぶ。',
     tasks:[
       { en:'Introduce yourself in an interview', ja:'面接で自己紹介する', kind:'speaking',
         promptEn:'Prepare a 45-second introduction: who you are, what you have done, and what you hope to contribute.',

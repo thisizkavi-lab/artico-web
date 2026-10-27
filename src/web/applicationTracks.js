@@ -67,23 +67,10 @@ export const applicationTracks = [
     ],
   },
   {
-    id:'academic', icon:'school', en:'Academic & Research English', ja:'学術・研究英語',
-    enSummary:'Discuss studies, ask better questions and explain evidence.',
-    jaSummary:'研究を説明し、根拠を議論し、質問する。',
-    tasks:[
-      { en:'Ask a meaningful question after a research talk', ja:'研究発表のあとに質問する', kind:'speaking',
-        promptEn:'Imagine someone presents a study showing that a new learning method improves test scores. Ask one precise question about the evidence or methods. Briefly explain what you want to understand, without assuming the result is wrong.',
-        promptJa:'新しい学習方法でテストの点数が上がったという研究発表を聞いた場面です。結果を決めつけず、根拠や研究方法について具体的な質問を一つしましょう。何を確認したいのかも短く伝えます。',
-        example:'Thank you for the presentation. You showed an improvement in test scores. Could you clarify how you controlled for differences in the participants’ starting levels?',
-        checkpointsEn:['Refer to something the presenter actually showed.','Ask one specific, answerable question.','Stay curious and respectful.'],
-        checkpointsJa:['発表の具体的な内容に触れる。','答えやすい質問を一つする。','敬意をもって尋ねる。'] },
-      { en:'Explain a result without overstating it', ja:'研究結果と限界を説明する', kind:'speaking',
-        promptEn:'Describe a research finding you know or imagine: what was measured, what the data suggest, and one limitation. Avoid claiming causation when the evidence only shows an association.',
-        promptJa:'知っている研究、または仮の研究結果を選びます。何を測ったか、データから何が言えるか、限界を一つ説明しましょう。関連があるだけなのに原因だと断定しないようにします。',
-        example:'We observed a difference between the two groups. This suggests that ... However, we cannot yet conclude that ... because ...',
-        checkpointsEn:['Distinguish the observation from its interpretation.','Explain what the evidence supports.','State one uncertainty or limitation.'],
-        checkpointsJa:['観察と解釈を区別する。','根拠から言えることを示す。','不確実な点や限界を一つ伝える。'] },
-    ],
+    id:'academic', icon:'school', en:'Academic & Research Writing', ja:'学術・研究ライティング',
+    enSummary:'Six stages: read evidence, write manuscripts and revise academic work.',
+    jaSummary:'文献の読解から研究論文の執筆・推敲まで、６ステージで学ぶ。',
+    tasks:[], // Routed to the dedicated 33-lesson AcademicCourse.
   },
   {
     id:'storytelling', icon:'book', en:'Storytelling', ja:'ストーリーテリング',

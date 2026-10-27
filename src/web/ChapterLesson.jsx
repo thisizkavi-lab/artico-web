@@ -6,6 +6,7 @@ import { RichText, SourceContent } from './ContentBlocks'
 import { pairScenarioResponses } from './scenarioResponses'
 import './chapter.css'
 import './readable-course.css'
+import { sourceChapterId } from './chapterNumbers.js'
 
 const lessons = import.meta.glob('../course/lessons/*.json', { import: 'default' })
 const japaneseLessons = import.meta.glob('../course/locales/ja/lessons/*.json', { import: 'default' })
@@ -144,7 +145,7 @@ function makeModel(source, t) {
 
 export default function ChapterLesson(props) {
   const { t, language } = useLanguage()
-  const id = props.route.id
+  const id = sourceChapterId(props.route.id)
   const cacheKey = `${language}:${id}`
   const [state, setState] = useState(() => ({ id: cacheKey, source: resolved.get(cacheKey), error: false }))
   useEffect(() => {
@@ -175,7 +176,9 @@ export default function ChapterLesson(props) {
     }
   }, [id, language, cacheKey])
   const source = resolved.get(cacheKey) ?? (state.id?.endsWith(`:${id}`) ? state.source : null)
-  const model = useMemo(() => (source ? makeModel(source, t) : null), [source, t])
+  const model = useMemo(() => source
+    ? { ...makeModel(source, t), displayId: props.route.id, basePath: '/lesson/' + props.route.id }
+    : null, [source, t, props.route.id])
   if (state.error && state.id === cacheKey)
     return (
       <div className="ip-page">

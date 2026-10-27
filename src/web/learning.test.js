@@ -261,7 +261,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['interviews','storytelling'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
+    assert.equal(track.tasks.length, ['interviews','storytelling','academic'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])

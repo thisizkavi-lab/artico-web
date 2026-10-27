@@ -1,0 +1,144 @@
+/* Dedicated Storytelling course; extends ARTICO's quiet blue/paper Application language. */
+.st-page{width:min(100%,1100px);margin:0 auto;color:#20324f;padding-bottom:64px}
+.st-page *{box-sizing:border-box}
+.st-page button,.st-page textarea{font:inherit}
+.st-page button{cursor:pointer}
+.st-page button:disabled{cursor:not-allowed;opacity:.48}
+.st-page button:focus-visible,.st-page a:focus-visible,.st-page textarea:focus-visible,.st-page input:focus-visible,.st-page summary:focus-visible{outline:3px solid #7196d0;outline-offset:3px}
+.st-page h1,.st-page h2{font-family:Newsreader,Georgia,serif;font-weight:500;letter-spacing:-.035em}
+.st-page h1{font-size:clamp(34px,4.7vw,49px);line-height:1.15;margin:0 0 13px;color:#1d2e48}
+.st-page h2{font-size:clamp(21px,2.7vw,27px);line-height:1.35;margin:0 0 14px;color:#20324f}
+.st-page p{line-height:1.73}
+.st-hero{max-width:760px;padding:15px 0 35px}
+.st-hero>p:not(.ap-eyebrow){color:#5b6f8f;font-size:16px;max-width:64ch}
+.st-actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.st-primary,.st-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:11px;font-size:13px!important;font-weight:650!important;text-decoration:none;line-height:1.4;min-height:43px}
+.st-primary{color:white!important;background:#285bcc;border:1px solid #285bcc}
+.st-primary:hover{background:#184cad}
+.st-secondary{color:#2e4b79!important;background:white;border:1px solid #ccd7e9}
+.st-secondary:hover{background:#f0f4fb}
+.st-meta{color:#7487a1!important;font-size:12px!important}
+.st-map{border-block:1px solid #d7e0eb}
+.st-unit{border-bottom:1px solid #d7e0eb}
+.st-unit:last-child{border-bottom:0}
+.st-unit-heading{display:flex;align-items:center;gap:16px;width:100%;padding:22px 4px;border:0;text-align:left;color:#243754;background:transparent}
+.st-unit-heading:hover{background:#f3f6fb}
+.st-unit-number{font-family:Newsreader,Georgia,serif;font-size:27px;color:#7b8ea7;min-width:34px}
+.st-unit-text{flex:1;min-width:0;display:grid;gap:5px}
+.st-unit-text strong{font-size:17px;font-weight:650}
+.st-unit-text small{font-size:12px;line-height:1.55;color:#677b99}
+.st-unit-progress{font-size:12px;color:#7689a4;white-space:nowrap}
+.st-chevron{font-size:22px;color:#7b8fa9;min-width:16px;text-align:center}
+.st-unit-lessons{padding:1px 9px 16px 54px}
+.st-unit-lessons[hidden]{display:none}
+.st-lesson-link{display:flex;gap:13px;align-items:center;border-bottom:1px solid #e5eaf2;padding:13px 9px;text-decoration:none;color:#2b4368}
+.st-lesson-link:last-child{border:0}
+.st-lesson-link:hover{background:#f3f6fb}
+.st-lesson-link>span:nth-child(2){min-width:0;flex:1;display:grid;gap:4px}
+.st-lesson-link strong{font-size:14px;font-weight:650}
+.st-lesson-link small{font-size:12px;line-height:1.55;color:#7285a1}
+.st-dot{height:10px;width:10px;flex:0 0 10px;border-radius:50%;border:1.5px solid #aab9d0}
+.st-dot.is-done{background:#285bcc;border-color:#285bcc}
+.st-breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:11px;color:#8091aa;font-size:12px;margin:6px 0 26px}
+.st-breadcrumb a{color:#315d9c;text-decoration:none}
+.st-breadcrumb a:hover{text-decoration:underline}
+.st-layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:40px;align-items:start}
+.st-side{position:sticky;top:20px;max-height:calc(100vh - 65px);overflow-y:auto;padding-right:8px}
+.st-side-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#7d91b0;margin:0 0 12px}
+.st-side-unit{display:block;width:100%;font-size:12px;line-height:1.5;border-radius:8px;padding:10px;text-decoration:none;color:#617591}
+.st-side-unit.is-active{font-weight:700;background:#edf2f9;color:#214d9d}
+.st-side-lessons{display:grid;margin:5px 0 13px 10px;padding-left:10px;border-left:1px solid #dce4f0}
+.st-side-lesson{font-size:11px;line-height:1.5;padding:7px;border-radius:6px;text-decoration:none;color:#7789a1}
+.st-side-lesson:hover,.st-side-lesson.is-current{background:#edf3fc;color:#214d9d}
+.st-main{min-width:0;max-width:720px}
+.st-main>.ap-eyebrow{margin-bottom:13px}
+.st-goal{font-size:16px;color:#5e718d;margin:0 0 23px}
+.st-tabs{display:inline-flex;background:#f2f5f9;border:1px solid #d7dfec;padding:4px;gap:3px;border-radius:100px;margin:0 0 34px}
+.st-tabs a{padding:9px 26px;color:#6b7e99;text-decoration:none;font-size:13px;font-weight:600;border-radius:100px}
+.st-tabs a[aria-current=page]{background:white;color:#2856a3;box-shadow:0 1px 5px #233f651d}
+.st-flow{display:grid;gap:31px}
+.st-flow>section{min-width:0}
+.st-eyebrow{font-size:10px!important;font-weight:780!important;letter-spacing:.095em;text-transform:uppercase;color:#6882a8!important;line-height:1.4!important;margin:0 0 12px!important}
+.st-story{background:#f1f4f9;border-radius:13px;padding:25px 27px}
+.st-story p{color:#2e415d;font-size:17px;line-height:1.9;margin:0;white-space:pre-line}
+.st-ja-context{border-left:2px solid #9eb5d4;margin:17px 0 0;padding:10px 15px;color:#5b6f90;font-size:13px;line-height:1.9!important}
+.st-audio{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:13px}
+.st-audio span{font-size:11px;color:#8291a7;line-height:1.55}
+.st-disclosure{width:100%;border:0;background:transparent;padding:8px 0 14px;display:flex;justify-content:space-between;align-items:center;text-align:left;color:#2c476e;font-size:17px;font-weight:650;border-bottom:1px solid #dae3ef}
+.st-disclosure>span:last-child{font-size:24px;color:#8a9cba}
+.st-beats{margin-top:2px}
+.st-beat{display:flex;gap:20px;align-items:flex-start;padding:16px 4px;border-bottom:1px solid #e3e9f1}
+.st-beat-index{font-size:12px;color:#8ba0bc;font-weight:700;min-width:23px;margin-top:2px}
+.st-beat h3{font-size:14px;margin:0 0 3px;font-weight:700;color:#29446b}
+.st-beat p{font-size:14px;color:#61718b;margin:0}
+.st-principle p:not(.st-eyebrow){font-size:16px;line-height:1.85;margin:0;color:#354a68}
+.st-expressions{padding:0;margin:0;list-style:none;display:grid}
+.st-expressions li{border-bottom:1px solid #e2e8f0;color:#30486b;padding:12px 4px;font-size:16px;line-height:1.6}
+.st-expressions li:first-child{border-top:1px solid #e2e8f0}
+.st-caution{background:#fcfaf1;border-left:3px solid #d7bd71;border-radius:6px;padding:16px 19px}
+.st-caution strong{font-size:12px;color:#71643e}
+.st-caution p{font-size:14px;color:#726951;margin:7px 0 0}
+.st-cta{width:100%;margin-top:3px}
+.st-task{border-bottom:1px solid #e0e7f1;padding-bottom:30px}
+.st-task h2{font-size:22px;margin:0 0 14px}
+.st-helper{font-size:14px;color:#5c6f8b;margin:0 0 17px}
+.st-choices{display:grid;gap:10px}
+.st-choice{display:flex;align-items:flex-start;gap:12px;padding:14px 15px;border:1px solid #d7e1ee;border-radius:10px;background:white;text-align:left;color:#405778;font-size:14px;line-height:1.6}
+.st-choice>span{color:#8aa0bf;font-size:12px;font-weight:750;margin-top:2px}
+.st-choice:hover,.st-choice.is-picked{border-color:#799bcb;background:#edf3fc}
+.st-answer{margin:12px 0 0;font-size:13px;color:#476486;background:#f1f5fa;border-radius:9px;padding:11px 13px}
+.st-order{display:grid;gap:10px}
+.st-order-item{display:flex;align-items:center;gap:13px;padding:13px;border:1px solid #d9e2ef;border-radius:10px;background:#f8fafd}
+.st-order-index{width:24px;height:24px;display:grid;place-items:center;color:#4f70a4;background:#e9eff7;border-radius:100px;font-size:12px;font-weight:700;flex-shrink:0}
+.st-order-label{flex:1;font-size:14px;color:#405775;line-height:1.6}
+.st-arrows{display:flex;gap:4px}
+.st-arrows button{width:34px;height:34px;display:grid;place-items:center;border:1px solid #cbd8eb;border-radius:7px;background:white;color:#385d94}
+.st-order-feedback{color:#7a879a;font-size:12px;margin:12px 0 0}
+.st-order-feedback.is-correct{color:#306a55}
+.st-cues{padding:8px 0 0 22px;color:#4b6080}
+.st-cues li{padding:6px 0;font-size:14px}
+.st-cues li strong{display:block}
+.st-cues li span{display:block;font-size:13px;color:#7a8da5}
+.st-guides{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:0 0 24px}
+.st-guides li{border:1px solid #dce4f0;border-radius:20px;padding:7px 10px;font-size:12px;color:#617a9c;background:#f7f9fc}
+.st-field-label{display:block;font-weight:700;font-size:13px;color:#304a70;margin:0 0 10px}
+.st-page textarea{display:block;resize:vertical;min-height:95px;width:100%;border:1px solid #cbd7e9;border-radius:11px;background:white;padding:15px 16px;color:#29405e;font-size:15px;line-height:1.65}
+.st-page textarea::placeholder{color:#a0aec0}
+.st-record-box{padding-top:16px;display:grid;justify-items:start;gap:9px}
+.st-record-box audio{width:min(100%,420px);height:45px}
+.st-record-box p{font-size:12px;line-height:1.6;color:#7c8ca6;margin:0}
+.st-reflection{display:grid;gap:11px;margin-bottom:23px}
+.st-reflection label,.st-attest{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#445b7b;line-height:1.55;cursor:pointer}
+.st-reflection input,.st-attest input{width:17px;height:17px;flex:0 0 17px;margin:2px 0 0;accent-color:#285bcc}
+.st-attest{margin:22px 0 15px;font-weight:650}
+.st-small{font-size:12px;color:#798ca5;margin:14px 0 0}
+.st-success{font-size:13px;color:#276a4c;margin:12px 0 0}
+.st-model{margin-top:21px;border:1px solid #dbe4f0;border-radius:10px;padding:15px 17px;font-size:14px;color:#435c7d}
+.st-model summary{cursor:pointer;font-weight:650}
+.st-model p{font-size:14px;margin:15px 0 0}
+.st-footer{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #d7e0ea;padding-top:21px;margin-top:37px}
+@media(max-width:920px){.st-layout{grid-template-columns:180px minmax(0,1fr);gap:22px}}
+@media(max-width:700px){
+.st-page{padding-bottom:36px}
+.st-hero{padding-top:4px}
+.st-actions a{flex:1 1 175px}
+.st-unit-heading{gap:10px;padding:17px 2px}
+.st-unit-number{font-size:23px;min-width:28px}
+.st-unit-text strong{font-size:15px}
+.st-unit-progress{font-size:11px}
+.st-unit-lessons{padding-left:16px}
+.st-lesson-link strong{font-size:13px}
+.st-layout{display:block}
+.st-side{display:none}
+.st-breadcrumb{gap:7px;margin-bottom:20px}
+.st-tabs{display:flex;width:100%}
+.st-tabs a{flex:1;text-align:center}
+.st-main h1{font-size:34px}
+.st-goal{font-size:15px}
+.st-flow{gap:26px}
+.st-story{padding:19px 18px}
+.st-story p{font-size:15px;line-height:1.85}
+.st-footer{flex-wrap:wrap}
+.st-footer a{flex:1;min-width:130px}
+}
+@media(prefers-reduced-motion:reduce){.st-page *{scroll-behavior:auto!important;transition:none!important}}

@@ -17,6 +17,7 @@ import {
 import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
+import { conversationSide, groupConversationScenes } from './conversationLayout'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -138,8 +139,7 @@ function Conversation({ block, audioProps, focusedId }) {
       <div className="ip-conversation" aria-label={block.title}>
         {block.phrases.map((id, index) => {
           const item = introductionById[id]
-          const speakerIndex = item.speaker ? speakers.indexOf(item.speaker) : index
-          const outgoing = speakerIndex % 2 === 1
+          const outgoing = conversationSide(speakers, item.speaker, index) === 'outgoing'
           const portrait = item.portrait ?? (portraits[item.speaker] ? `portrait-${portraits[item.speaker]}.svg` : null)
           return (
             <div key={id} className={`ip-turn ${outgoing ? 'is-outgoing' : 'is-incoming'}`}>
@@ -156,18 +156,6 @@ function Conversation({ block, audioProps, focusedId }) {
   )
 }
 
-// Adjacent illustrated scenes sit side by side when space allows.
-function groupConversationScenes(blocks) {
-  const grouped = []
-  for (let i = 0; i < blocks.length; i++) {
-    const first = blocks[i], second = blocks[i + 1]
-    if (first.type === 'conversation' && first.art && second?.type === 'conversation' && second.art) {
-      grouped.push({ type: 'conversation-pair', conversations: [first, second] })
-      i++
-    } else grouped.push(first)
-  }
-  return grouped
-}
 
 function Study({ audioProps, focusedId }) {
   const { t, language } = useLanguage()

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      ts-fsrs:
+        specifier: 5.4.2
+        version: 5.4.2
       react:
         specifier: 19.2.7
         version: 19.2.7
@@ -23,6 +26,9 @@ importers:
         version: 8.1.5
 
 packages:
+
+  ts-fsrs@5.4.2:
+    resolution: {integrity: sha512-z4qop4pzTcyTzuJ566d9EaX/4bZZzhYfeaPImfVr+xcYT65c5oBgFDijUhCE/D+C78eaolHIhKRZ04/RwF+v2g==}
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
@@ -336,6 +342,8 @@ packages:
         optional: true
 
 snapshots:
+
+  ts-fsrs@5.4.2: {}
 
   '@emnapi/core@1.11.1':
     dependencies:

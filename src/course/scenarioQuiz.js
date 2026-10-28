@@ -128,6 +128,8 @@ export function contextQuestions(items, language = 'en', limit = 6) {
   const unique = []
   const seen = new Set()
   for (const item of items ?? []) {
+    // Glossary-only entries were removed from the chapter Practice picker.
+    if (item.section === 'words') continue
     const expression = normalize(item.en)
     const clue = normalize(item.context)
     if (!goodItem(item) || seen.has(clue) || !expression) continue

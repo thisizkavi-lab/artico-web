@@ -14,6 +14,7 @@ import OrientationPractice from './OrientationPractice'
 import StudyPlan from './StudyPlan.jsx'
 import AlphabetRecognition from './AlphabetRecognition.jsx'
 import HandwritingWorksheets from './HandwritingWorksheets.jsx'
+import HandwritingAnimator from './HandwritingAnimator.jsx'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -243,6 +244,7 @@ export function Reading({ model }) {
               ))}
             </div>
           )}
+          {section.id === 'write-model' && <HandwritingAnimator />}
           {section.video && (
             <YouTubeLessonPlayer
               videoId={section.video[0]}

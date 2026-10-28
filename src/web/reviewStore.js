@@ -91,7 +91,7 @@ export async function suspendReviewItem(id) {
   })
 }
 
-export async function submitReview(id, grade, now = new Date()) {
+export async function submitReview(id, grade, now = new Date(), expectedReps = null) {
   const db = await openDatabase()
   // A single transaction protects state + review log from partial writes.
   return new Promise((resolve, reject) => {
@@ -102,6 +102,8 @@ export async function submitReview(id, grade, now = new Date()) {
     request.onsuccess = () => {
       try {
         if (!request.result) throw new Error('Review item is missing')
+        if (expectedReps !== null && request.result.card.reps !== expectedReps)
+          throw new Error('This item was reviewed in another tab. Reload Review to continue.')
         result = scheduleReview(request.result, grade, now)
         store.put(result.record)
         tx.objectStore('logs').add(result.log)

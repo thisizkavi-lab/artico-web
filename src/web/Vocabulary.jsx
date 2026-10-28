@@ -2,6 +2,7 @@ import { useLanguage } from './Language'
 import topics from './vocabularyTopics.json'
 import VocabularyCountriesLesson from './VocabularyCountriesLesson'
 import VocabularyNumbersLesson from './VocabularyNumbersLesson'
+import VocabularyTopicLesson from './VocabularyTopicLesson'
 import './vocabulary.css'
 
 const vocabularyIndex = '#/lesson/98/study'
@@ -34,8 +35,8 @@ function VocabularyIndex({ japanese }) {
         <p className="vl-eyebrow">CHAPTER 98 · VOCABULARY</p>
         <h1>{japanese ? '語彙のレッスン' : 'Vocabulary lessons'}</h1>
         <p>{japanese
-          ? '学びたいトピックを選びましょう。レッスン1と2を学習できます。その他の内容は順次追加されます。'
-          : 'Choose a topic to explore. Lessons 1 and 2 are ready; more content will be added later.'}</p>
+          ? '学びたいトピックを選びましょう。78のトピックから、学びたいレッスンを選びましょう。'
+          : 'Choose a topic to explore. All 78 vocabulary lessons are ready to explore.'}</p>
       </header>
 
       <section className="vl-directory" aria-labelledby="vl-directory-heading">
@@ -78,22 +79,8 @@ function VocabularyLesson({ topic, japanese }) {
         ? <VocabularyCountriesLesson japanese={japanese} />
         : topic.sourceLesson === 2
           ? <VocabularyNumbersLesson japanese={japanese} />
-          : <section className="vl-placeholder" aria-labelledby="vl-placeholder-title">
-        <div className="vl-placeholder-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none">
-            <path d="M5 7.5c3.8-1.3 7.7-.8 11 1.6 3.3-2.4 7.2-2.9 11-1.6v16c-3.8-1.3-7.7-.8-11 1.6-3.3-2.4-7.2-2.9-11-1.6v-16Z" />
-            <path d="M16 9.1v16M8.5 11.3c1.8-.4 3.4-.1 4.7.6M19 11.9c1.3-.7 2.9-1 4.5-.6" />
-          </svg>
-        </div>
-        <p className="vl-section-label">COMING SOON</p>
-        <h2 id="vl-placeholder-title">{japanese ? 'レッスンの内容は準備中です' : 'This lesson is being prepared'}</h2>
-        <p>{japanese
-          ? 'このトピックの語彙は、後から追加されます。'
-          : 'Vocabulary for this topic will be added later.'}</p>
-        <a className="vl-return" href={vocabularyIndex}>
-          {japanese ? 'レッスン一覧に戻る' : 'Back to all lessons'}
-        </a>
-      </section>}
+          : <VocabularyTopicLesson key={topic.sourceLesson} topic={topic} japanese={japanese} />}
+
 
       <nav className="vl-lesson-navigation" aria-label={japanese ? '語彙レッスンの移動' : 'Vocabulary lesson navigation'}>
         {previous ? (

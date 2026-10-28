@@ -400,17 +400,6 @@ const sectionJa = {
       { type: 'phrases', phrases: ['ch01-p45', 'ch01-p46', 'ch01-p47'] },
     ],
   },
-  words: {
-    title: '単語とフレーズ',
-    short: '単語とフレーズ',
-    blocks: [
-      {
-        type: 'text',
-        text: 'この章の各場面（朝のあいさつ・再会・近況確認・久しぶりの声かけ）の軸になる4つの基本表現です。',
-      },
-      { type: 'words', phrases: ['ch01-v0', 'ch01-v1', 'ch01-v2', 'ch01-v3'] },
-    ],
-  },
 }
 
 const scenariosJa = [

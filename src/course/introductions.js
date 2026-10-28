@@ -270,18 +270,6 @@ export const introductionSections = [
       { type: 'phrases', phrases: ids(25, 26) },
     ],
   },
-  {
-    id: 'words',
-    title: 'Words in this chapter',
-    short: 'Words',
-    blocks: [
-      {
-        type: 'text',
-        text: 'A few words to help you talk about names and connections. These are included in your practice list too.',
-      },
-      { type: 'words', phrases: ['ch02-v0', 'ch02-v1', 'ch02-v2', 'ch02-v3'] },
-    ],
-  },
 ]
 
 // Keep existing saved phrases and shared links useful when entering the pilot.

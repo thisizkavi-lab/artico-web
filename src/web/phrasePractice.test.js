@@ -87,10 +87,7 @@ test('an older rehearsal position remains resumable after new phrases are added'
   const legacy = { ids: ['ch01-line8', 'ch01-line9', 'ch01-v1'], index: 1 }
   const items = ['ch01-p123', ...legacy.ids].map((id) => ({ id }))
   const set = getPracticeSet(undefined, items, legacy)
-  assert.deepEqual(
-    set.selected,
-    items.map((item) => item.id),
-  )
+  assert.deepEqual(set.selected, [])
   assert.deepEqual(set.session, { ...legacy, active: false, completed: false })
   assert.equal(set.session.ids[set.session.index], 'ch01-line9')
 

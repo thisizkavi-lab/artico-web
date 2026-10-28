@@ -86,22 +86,9 @@ export const applicationTracks = [
   },
   {
     id:'reading', icon:'book', en:'Reading & Understanding', ja:'読解・理解',
-    enSummary:'Read books, articles and arguments with confidence.',
-    jaSummary:'記事や本を読み、内容や論理をつかむ。',
-    tasks:[
-      { en:'Find the main idea', ja:'文章の主張を見つける', kind:'reading',
-        promptEn:'Read the passage. Write its main idea in one sentence, then list one detail that supports it.',
-        promptJa:'文章を読み、主張を一文でまとめましょう。根拠となる具体例も一つ書きます。',
-        example:'Many people believe learning a language requires talent. In reality, regular practice and useful feedback matter more than early confidence. Short conversations, repeated over time, can help learners build skills they can use outside the classroom.',
-        checkpointsEn:['Find the central claim.','Separate the example from the claim.','Write a one-sentence summary.'],
-        checkpointsJa:['主張を見つける。','主張と例を区別する。','一文で要約する。'] },
-      { en:'Check what a statement actually supports', ja:'根拠を読み分ける', kind:'reading',
-        promptEn:'Read the passage. What is the claim, and what evidence would you need before accepting it?',
-        promptJa:'文章の主張を見つけ、それを確かめるにはどんな証拠が必要か考えましょう。',
-        example:'A company reports that most users feel more confident after one week with its app. The survey did not measure language performance, and only people who finished the week responded.',
-        checkpointsEn:['Identify what was measured.','Notice what was not measured.','Suggest better evidence.'],
-        checkpointsJa:['何を測ったか確認する。','測っていないものに気づく。','必要な証拠を考える。'] },
-    ],
+    enSummary:'A graded library of stories, real-world documents, news and literature.',
+    jaSummary:'物語・日常文書・ニュース・文学を読む、難易度別のライブラリー。',
+    tasks:[], // Routed to the dedicated ReadingCourse; old generic drills have been replaced.
   },
   {
     id:'ideas', icon:'lightbulb', en:'Ideas & Expression', ja:'アイデア・表現',

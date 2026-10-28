@@ -1,5 +1,6 @@
 import { timeIllustration } from './VocabularyTimeArt'
 import { routineScene } from './VocabularySceneArt'
+import { foodIllustration } from './VocabularyFoodArt'
 
 // Deliberately avoid generic topic symbols for meaning cards. A misleading
 // illustration is worse than a clear bilingual text card.
@@ -32,6 +33,8 @@ export function vocabularyVisual(term,chapter) {
  const scene=routineScene(term,chapter)
  if(scene)return {type:'scene',scene}
  const normalized=term.toLowerCase().replace(/\s*\([^)]*\)/g,'').split(' / ')[0].trim()
+ const food=foodIllustration(term,chapter)
+ if(food)return food
  if(chapter===5) {
   if(visualColor[normalized])return {type:'color',value:visualColor[normalized]}
   if(dimensions.has(normalized))return {type:'size',value:normalized}

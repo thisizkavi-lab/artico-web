@@ -14,7 +14,7 @@ const copy = {
     study:'Study · 理解', practice:'Practice · 声に出す',
     perDay:'1日の学習', perWeek:'1週間', total:'12週間',
     week:'週目', save:'保存して、3か月後の目安を見る',
-    saved:'計画を保存しました', edit:'計画を変更する', hourUnit:'時間', minUnit:'分',
+    saved:'計画を保存しました', edit:'計画を変更する', begin:'レベルゼロから始める', jump:'日常会話から始める', hourUnit:'時間', minUnit:'分',
     outcomeTitle:'3か月後、こんな英語を目指せる。',
     outcomeLabel:'続けた場合の目安',
     exampleLabel:'できるように練習すること',
@@ -30,7 +30,7 @@ const copy = {
     study:'Study · understand', practice:'Practice · speak',
     perDay:'Daily routine', perWeek:'Per week', total:'Over 12 weeks',
     week:'weeks', save:'Save & see my three-month outlook',
-    saved:'Your plan is saved', edit:'Edit my plan', hourUnit:'hours', minUnit:'min',
+    saved:'Your plan is saved', edit:'Edit my plan', begin:'Start with Level Zero', jump:'Start with conversations', hourUnit:'hours', minUnit:'min',
     outcomeTitle:'What you could work towards in three months.',
     outcomeLabel:'A possible outcome if you keep going',
     exampleLabel:'A speaking challenge to aim for',
@@ -108,7 +108,11 @@ export default function StudyPlan({ learning, update }) {
         </div>
         <p className="rf-plan-effort">{t.effort}</p>
         <p className="rf-plan-caveat">{t.caution}</p>
-        <button type="button" className="rf-plan-edit" onClick={() => setShowOutlook(false)}>{t.edit}</button>
+        <div className="rf-plan-next-actions">
+          <a className="rf-plan-begin" href="#/courses?foundation">{t.begin} <span aria-hidden="true">→</span></a>
+          <a className="rf-plan-jump" href="#/courses?social">{t.jump}</a>
+          <button type="button" className="rf-plan-edit" onClick={() => setShowOutlook(false)}>{t.edit}</button>
+        </div>
       </div>
     ) : (
       <>

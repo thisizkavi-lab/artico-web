@@ -7,7 +7,7 @@
     "lessons": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
     "predev": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
     "prebuild": "node scripts/compile-lessons.mjs && node scripts/compile-locales.mjs",
-    "test": "node --test scripts/application-render.test.mjs src/web/ielts.test.js src/web/readingCourse.test.js src/web/ideas.test.js src/web/jobsCourse.test.js src/web/academicCourse.test.js src/web/studyPlan.test.js src/web/orientationProfile.test.js src/web/learning.test.js src/web/alphabetRecognition.test.js src/web/writingStudio.test.js src/web/vocabulary.test.js src/web/phrasePractice.test.js scripts/lessons.test.mjs scripts/locales.test.mjs scripts/practice-catalog.test.mjs scripts/scenario-quiz.test.mjs src/web/humorContent.test.js",
+    "test": "node --test scripts/application-render.test.mjs src/web/ielts.test.js src/web/readingCourse.test.js src/web/ideas.test.js src/web/jobsCourse.test.js src/web/academicCourse.test.js src/web/studyPlan.test.js src/web/orientationProfile.test.js src/web/learning.test.js src/web/alphabetRecognition.test.js src/web/writingStudio.test.js src/web/vocabulary.test.js src/web/vocabularyIllustrations.test.js src/web/phrasePractice.test.js scripts/lessons.test.mjs scripts/locales.test.mjs scripts/practice-catalog.test.mjs scripts/scenario-quiz.test.mjs src/web/humorContent.test.js",
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1"

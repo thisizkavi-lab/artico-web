@@ -1,0 +1,62 @@
+/* IPA reference for Level Zero — Artico's normal reading and practice shell. */
+.ipa-reference { width: min(100%, 870px); margin: 18px auto 30px; }
+.ipa-intro { margin-bottom: 19px; }
+.ipa-intro h3 { margin: 0 0 7px; font-size: 21px; font-weight: 670; }
+.ipa-intro p, .ipa-notes p { font-size: 14px; color: var(--muted); line-height: 1.72; }
+.ipa-table-section { margin: 20px 0 24px; }
+.ipa-table-section h4 { margin: 0 0 9px; font-weight: 680; font-size: 17px; }
+.ipa-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); }
+.ipa-table-scroll:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 3px; }
+.ipa-table { border-spacing: 0; border-collapse: collapse; width: 100%; text-align: left; }
+.ipa-table th, .ipa-table td { padding: 11px 13px; vertical-align: middle; border-bottom: 1px solid var(--line); font-size: 13px; }
+.ipa-table tr:last-child th, .ipa-table tr:last-child td { border-bottom: 0; }
+.ipa-table thead th { background: var(--paper); color: var(--muted); font-size: 11px; font-weight: 680; white-space: nowrap; }
+.ipa-table tbody tr:hover { background: var(--surface-strong); }
+.ipa-table .ipa-symbol-cell { font-family: Arial, 'Noto Sans', sans-serif; font-size: 21px; font-weight: 650; color: var(--ink); width: 96px; white-space: nowrap; }
+.ipa-table .ipa-word { font-weight: 650; font-size: 14px; min-width: 74px; }
+.ipa-table .ipa-hint { color: var(--muted); line-height: 1.52; }
+.ipa-table .ipa-button-cell { width: 110px; text-align: right; }
+.ipa-play { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); color: var(--ip-blue); min-height: 37px; padding: 7px 11px; font: inherit; font-size: 12px; font-weight: 670; cursor: pointer; white-space: nowrap; }
+.ipa-play:hover { border-color: var(--ip-blue); background: var(--surface-strong); }
+.ipa-play:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
+.ipa-status { min-height: 22px; font-size: 12px; color: var(--muted); margin: 7px 0 15px; }
+.ipa-notes { background: var(--paper); padding: 17px 18px; border: 1px solid var(--line); border-radius: 12px; }
+.ipa-notes h4 { margin: 0 0 10px; font-size: 14px; font-weight: 680; }
+.ipa-notes p + p { margin-top: 12px; }
+.ipa-sources { margin: 15px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.ipa-sources summary { cursor: pointer; font-weight: 650; }
+.ipa-sources p { margin: 9px 0; }
+.ipa-sources ul { padding-left: 20px; }
+.ipa-sources li { margin: 2px 0; }
+.ipa-sources a { color: var(--ip-blue); text-decoration: underline; text-underline-offset: 3px; }
+.ipa-practice { max-width: 740px; }
+.ipa-practice > h2 { margin: 7px 0 9px; }
+.ipa-practice > .ip-context { max-width: 65ch; margin-bottom: 22px; }
+.ipa-focus { display: flex; flex-direction: column; align-items: center; gap: 13px; padding: 26px 20px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); }
+.ipa-focus-top { display: flex; align-items: center; justify-content: center; gap: 25px; }
+.ipa-focus-top .ip-kicker { font-size: 10px; }
+.ipa-focus-symbol { min-width: 115px; text-align: center; font-family: Arial, 'Noto Sans', sans-serif; font-size: clamp(42px, 7vw, 66px); font-weight: 600; color: var(--ink); }
+.ipa-focus-top h3 { margin: 5px 0 0; font-size: 23px; font-weight: 620; }
+.ipa-focus > p { margin: 0; font-size: 13px; line-height: 1.7; text-align: center; color: var(--muted); }
+.ipa-focus .ipa-main-play { margin: 7px 0; min-height: 44px; padding-inline: 19px; font-size: 14px; }
+.ipa-focus .ipa-instruction { font-size: 12px; }
+.ipa-pick { border-top: 1px solid var(--line); padding-top: 22px; }
+.ipa-pick h3 { margin: 0 0 17px; font-size: 18px; font-weight: 650; }
+.ipa-pick section { margin: 15px 0 20px; }
+.ipa-pick h4 { margin: 0 0 8px; font-size: 12px; color: var(--muted); font-weight: 650; }
+.ipa-symbol-selector { display: flex; flex-wrap: wrap; gap: 7px; }
+.ipa-symbol-selector button { min-width: 58px; min-height: 42px; padding: 6px 8px; border-radius: 9px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); font-size: 16px; font-weight: 620; cursor: pointer; }
+.ipa-symbol-selector button:hover:not([aria-pressed="true"]) { border-color: var(--ip-blue); background: var(--surface-strong); }
+.ipa-symbol-selector button[aria-pressed="true"] { background: var(--forest); color: white; border-color: var(--forest); }
+.ipa-symbol-selector button:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
+@media (max-width: 640px) {
+  .ipa-table th, .ipa-table td { padding: 10px 9px; }
+  .ipa-table .ipa-symbol-cell { font-size: 19px; width: 67px; }
+  .ipa-table .ipa-word { font-size: 12px; min-width: 47px; }
+  .ipa-table .ipa-hint { font-size: 12px; }
+  .ipa-table .ipa-button-cell { width: 70px; }
+  .ipa-play { padding: 7px 8px; }
+  .ipa-play span { display: none; }
+  .ipa-focus { padding: 22px 12px; }
+  .ipa-symbol-selector button { min-width: 53px; }
+}

@@ -72,3 +72,31 @@
 }
 @media(max-width:380px){.vlt-grid{grid-template-columns:1fr}.vlt-card{flex-direction:row;align-items:center;min-height:99px}.vlt-visual{width:63px;height:66px;flex:0 0 63px}}
 @media(prefers-reduced-motion:reduce){.vlt-recall-card{transition:none}}
+
+
+/* The artwork is a complete educational scene, not a small decorative icon. */
+.vlt-card.vlt-image-card{flex-direction:column;align-items:stretch;gap:10px;min-height:0;padding:11px}
+.vlt-image-card .vlt-visual{display:block;width:100%;height:auto;aspect-ratio:152/96;flex:0 0 auto;border:0;border-radius:9px;background:#f6f9fd;overflow:hidden}
+.vlt-image-card .vlt-card-copy{padding:0 3px 4px}
+.vlt-image-card :is(.vlt-scene,.vlt-time-art,.vlt-diagram){display:block;width:100%;height:100%}
+.vlt-image-card .vlt-color{width:100%;height:100%;border:0;border-radius:8px}
+.vlt-hero-art{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0}
+.vlt-hero-preview{flex:0 0 85px;width:85px;aspect-ratio:152/96;border:4px solid #fff;border-radius:9px;box-shadow:0 4px 10px #44668b1b;overflow:hidden;background:#f9fbff;transform:rotate(-6deg)}
+.vlt-hero-preview-1{transform:translateY(11px) rotate(7deg)}
+.vlt-hero-preview :is(svg,.vlt-color){display:block;width:100%;height:100%}
+.vlt-hero-monogram{font-size:68px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.07em;color:#aac3e1}
+.vlt-revisited{margin-top:15px;padding:13px 15px;border:1px solid #e2e9f1;border-radius:9px;background:#f8fafc}
+.vlt-revisited summary{color:#547193;font-size:12px;font-weight:700;cursor:pointer}
+.vlt-revisited summary span{color:#8395aa;font-weight:500}
+.vlt-review-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.vlt-review-list a{display:flex;flex-direction:column;gap:2px;min-width:0;padding:8px 11px;border:1px solid #dce5ef;border-radius:7px;background:#fff;color:#2b517e;font-size:11px;text-decoration:none;overflow-wrap:anywhere}
+.vlt-review-list a:hover{border-color:#9fb8da;background:#f2f7fe}
+.vlt-review-list small{color:#8190a3;font-size:9px}
+@media(max-width:620px){
+ .vlt-card.vlt-image-card{min-height:0;padding:8px}
+ .vlt-image-card .vlt-visual{width:100%;height:auto;aspect-ratio:152/96;flex:0 0 auto}
+ .vlt-hero-preview{flex-basis:57px;width:57px;border-width:3px}
+ .vlt-hero-preview-1{transform:translateY(7px) rotate(7deg)}
+ .vlt-hero-monogram{font-size:43px}
+ .vlt-revisited{padding:12px}
+}

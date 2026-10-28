@@ -165,6 +165,10 @@ export default function ArticoWeb() {
     return stopRestoring
   }, [route.path])
   useEffect(() => {
+    if (route.page === 'application' && route.id === 'ideas') {
+      document.title = 'Ideas & Expression · Artico'
+      return
+    }
     if (route.page === 'application' && route.id === 'tests') {
       document.title = `${route.exam === 'ielts' ? `${ieltsArea(route.area)?.title ?? 'IELTS Academic'} · IELTS` : 'English Tests'} · Artico`
       return

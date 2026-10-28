@@ -5,7 +5,7 @@ import { buildPracticeCatalog, normalizePracticeText } from '../src/web/practice
 import { getPracticeSet } from '../src/web/phrasePractice.js'
 import { greetingsModel } from '../src/course/greetings.js'
 import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
-import { introductionPhrases, introductionSections } from '../src/course/introductions.js'
+import { introductionPhrases, introductionSections, introductionScenarios } from '../src/course/introductions.js'
 import { japaneseIntroduction } from '../src/course/locales/ja/introductions.js'
 
 const read = (id, language = 'en') => JSON.parse(readFileSync(new URL(`../src/course/${language === 'ja' ? 'locales/ja/' : ''}lessons/${id}.json`, import.meta.url)))
@@ -53,7 +53,7 @@ test('all 96 chapters have bounded starting sets, unique targets and reachable S
 
 
 test('standalone glossary-only vocabulary is absent from Study and Practice throughout the course', () => {
-  const intro = { id: '02', phrases: introductionPhrases, sections: introductionSections }
+  const intro = { id: '02', phrases: introductionPhrases, sections: introductionSections, scenarios: introductionScenarios }
   assert.equal(introductionSections.some((section) => section.id === 'words'), false)
   for (const pilot of [intro, japaneseIntroduction(intro)]) {
     const catalog = buildPracticeCatalog(pilot)

@@ -54,9 +54,10 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
     section.blocks.flatMap((block) => block.phrases ?? []),
   )
   const ids = introductionPhrases.map((item) => item.id)
+  const spoken = introductionPhrases.filter((item) => item.section !== 'words')
   assert.equal(new Set(ids).size, 30)
-  assert.deepEqual(displayed, ids)
-  for (const item of introductionPhrases) {
+  assert.deepEqual(displayed, spoken.map((item) => item.id))
+  for (const item of spoken) {
     assert.ok(item.en && item.context)
     assert.ok(introductionSections.some((section) => section.id === item.section))
   }

@@ -1,4 +1,6 @@
 export default {
+  "Choose your practice set.": "練習する表現を選びましょう。",
+  "Select the cards you want to practice. Tap a card to add or remove it.": "練習したい表現のカードを選んでください。カードを押すと選択・解除できます。",
   "You reached the end of 1 expression. Try using it in a situation.": "1個の表現を最後まで確認しました。今度は、場面に合わせて使ってみましょう。",
   "Review needs work ({count})": "もう少し練習したい表現を復習（{count}個）",
   "More guidance": "補足を読む",

@@ -229,9 +229,17 @@ function Study({ audioProps, focusedId }) {
             if (block.type === 'conversation-pair')
               return (
                 <div className="ip-scene-pair" key={blockIndex}>
-                  {block.conversations.map((conversation, i) => (
-                    <Conversation key={conversation.id ?? i} block={conversation} audioProps={audioProps} focusedId={focusedId} />
-                  ))}
+                  <Conversation block={block.conversations[0]} audioProps={audioProps} focusedId={focusedId} />
+                  <div className="ip-scene-pair-second">
+                    {block.bridge?.type === 'source'
+                      ? <SourceContent block={block.bridge.source} audioProps={audioProps} focusedId={focusedId} />
+                      : block.bridge?.type === 'label'
+                        ? <h3 className="ip-small-heading">{block.bridge.text}</h3>
+                        : block.bridge?.type === 'text'
+                          ? <p className="ip-prose">{block.bridge.text}</p>
+                          : null}
+                    <Conversation block={block.conversations[1]} audioProps={audioProps} focusedId={focusedId} />
+                  </div>
                 </div>
               )
             if (block.type === 'conversation')

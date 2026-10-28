@@ -31,7 +31,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF', resultTitle:'英語を話す、未来の自分。',
     why:'あなたが英語を学ぶ理由（仮）', imagine:'こんな会話をしている自分を想像してみて。',
     you:'YOU', other:'THEM', otherSelves:'ほかの可能性も見てみる',
-    suggested:'おすすめ',
+    suggested:'おすすめ', continue:'Articoの使い方へ', edit:'回答を変える',
   },
   en: {
     intro:'Meet your English-speaking self.',start:'YOUR ENGLISH SELF',counter:'STEP',
@@ -39,7 +39,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF',resultTitle:'A future you, speaking English.',
     why:'A possible reason to learn',imagine:'Picture yourself saying this.',
     you:'YOU',other:'THEM',otherSelves:'Explore other possibilities',
-    suggested:'Suggested',
+    suggested:'Suggested', continue:'See how Artico works', edit:'Change my answers',
   },
 }
 
@@ -227,6 +227,15 @@ export default function OrientationPractice({ learning, update }) {
                 </button>
               )}
             </div>
+          </div>
+          <div className="rf-persona-next-actions">
+            <a href="#/foundation/how-it-works/study" className="rf-persona-continue">
+              {l.continue} <span aria-hidden="true">→</span>
+            </a>
+            <button type="button" className="rf-persona-restart" onClick={() => {
+              setCelebration(null)
+              setStep(0)
+            }}>{l.edit}</button>
           </div>
         </div>
       )}

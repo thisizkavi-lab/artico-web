@@ -56,63 +56,35 @@ export const foundationReading = {
     sections: howItWorks,
   },
   letters: {
-    title: 'Meet the 26 letters',
-    subtitle: 'Recognize the shapes. Get to know their names.',
+    title: 'The Alphabet',
+    subtitle: 'Meet the 26 letters. See them, hear them, and give them a try.',
     sections: [
-      section('letters-start', 'Small shapes. So many possibilities.', [
-        'Written English uses 26 letters. Each has an uppercase form and a lowercase form. Together, they build names, messages, stories, and ideas.',
-        'The alphabet has a long history through earlier writing systems. You are learning a set of shared symbols, not 26 unrelated drawings.',
-        'Look at both forms. Some are similar, such as C and c. Others, such as A and a, look quite different. A letter’s name is not always the sound it represents in a word.',
+      section('letters-start', 'Welcome to the very start of English.', [
+        'Every word you write in English is built from just 26 letters. That’s it. Twenty-six symbols, two shapes each — capital and small.',
+        'These letters weren’t born in England. They traveled. The English alphabet came through Latin, which developed from earlier alphabets, including Greek and Phoenician. Every time you write a letter, you’re using a piece of history passed down for thousands of years.',
+        'Think of letters like bricks. Alone, they’re small and simple. Put them together, and you can build anything — names, jokes, songs, stories, even entire worlds.',
+        'Today, we’ll start with the 26 letters of English. You’ll see them, hear their names, say them, and get to know their shapes. Once they feel familiar, the rest will be easier to explore.',
+        '**Let’s meet them all first…**',
       ]),
-      section(
-        'letters-board',
-        'Meet the alphabet.',
-        [
-          'Choose a letter to hear its name using your device’s English voice. The voice can vary between devices.',
+      section('letters-board', 'Meet all 26 letters.', [
+        'Each letter has an uppercase (capital) and a lowercase (small) form. Select any letter to hear its name. The sound comes from your device’s English voice.',
+      ], { widget: 'alphabet' }),
+      section('letters-try', 'Watch. Say. Write.', [
+        'You have met the letters. Now give them a try in three simple steps.',
+        'A letter’s name is not always the sound it makes inside a word. We’ll explore those sounds later.',
+      ], {
+        video: [
+          'MgmIHtp-ZQM',
+          'The Alphabet Song | Lower Case Letters | Super Simple ABCs',
+          'Super Simple ABCs / Super Simple Songs',
+          20,
         ],
-        { widget: 'alphabet' },
-      ),
-      section('letters-try', 'Look, listen, and say it.', [
-        'Take a few letters at a time. Look at the shape, listen to the name, and say it aloud. You can revisit a letter whenever you need.',
-        'Next, put those names into a familiar sequence with the alphabet song.',
-      ]),
-    ],
-  },
-  hear: {
-    title: 'Hear the alphabet',
-    subtitle: 'Follow the letters. Find their rhythm.',
-    sections: [
-      section(
-        'hear-song',
-        'Get familiar with A to Z.',
-        [
-          'An alphabet song connects the names and order of the letters. Listen once while following the shapes, then join in when you feel ready.',
-          'You do not have to remember everything immediately. Return to a short section and repeat it until the sequence feels more familiar.',
+        items: [
+          'Watch — Play the alphabet song and follow A to Z with your eyes.',
+          'Say — Watch again, sing or speak along, then try a few letters without the video.',
+          'Write — On paper, copy a few capital and small letters. Look away and try them once more.',
         ],
-        {
-          video: [
-            'MgmIHtp-ZQM',
-            'The Alphabet Song | Lower Case Letters | Super Simple ABCs',
-            'Super Simple ABCs / Super Simple Songs',
-            20,
-          ],
-        },
-      ),
-      section(
-        'hear-routine',
-        'Try it in three steps.',
-        [
-          'First, watch and follow the letters. Next, sing or speak along. Then look away and see how much of the sequence you can recall.',
-          'If one group of letters runs together, slow your own repetition and give each letter a clear name. Go back to the letter board for any names you want to check.',
-        ],
-        {
-          items: [
-            'Follow the shapes with your eyes.',
-            'Listen again and join in.',
-            'Recall A to Z, then check the part you missed.',
-          ],
-        },
-      ),
+      }),
     ],
   },
   write: {

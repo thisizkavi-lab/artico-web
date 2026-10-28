@@ -99,3 +99,69 @@
   .is-english-pilot .aw-mobile-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 48px; min-width: 76px; border-radius: 12px; padding: 8px 16px; font-size: 12px; line-height: 16px; }
   .is-english-pilot .aw-mobile-nav a.is-active { background: var(--surface-strong); }
 }
+
+/* Guest profile: account status, existing language control and optional partner link. */
+.is-english-pilot .aw-profile-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.is-english-pilot .aw-profile-avatar {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf2f1;
+}
+.is-english-pilot .aw-profile-account strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+}
+.is-english-pilot .aw-profile-account p,
+.is-english-pilot .aw-profile-connect-section p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 3px 0 0;
+}
+.is-english-pilot .aw-profile-divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 22px 0;
+}
+.is-english-pilot .aw-profile-simple .aw-language-profile { margin: 0; }
+.is-english-pilot .aw-profile-simple .aw-language-profile small {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.is-english-pilot .aw-profile-connect-section h3 {
+  font-size: 14px;
+  font-weight: 650;
+  margin: 0;
+}
+.is-english-pilot .aw-profile-connect-section p { margin-top: 9px; }
+.is-english-pilot .aw-profile-connect-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 13px;
+  padding: 13px 14px;
+  border: 1px solid #d9e3f0;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--brand);
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.is-english-pilot .aw-profile-connect-link:hover { background: #f4f7fd; }
+.is-english-pilot .aw-profile-simple + .aw-button-outline {
+  margin-top: 24px;
+  background: #fff;
+  color: var(--brand);
+  border: 1px solid #d9e3f0;
+}

@@ -405,13 +405,32 @@ export default function ArticoWeb() {
         </div>
       )}
       {modal && (
-        <Modal title={t("Your own learning space.")} onClose={() => setModal(false)}>
-          <LanguageSelector profile />
-          <p>{t("Your place in the course, practice choices, and saved phrases stay in this browser.")}</p>
-          <p>{t("You can learn as a guest. Signing in to sync between devices is coming later.")}</p>
-          {!storageAvailable && (
-            <p> {t("Browser storage is unavailable. Your progress will be lost when you close this tab.")} </p>
-          )}
+        <Modal title={language === 'ja' ? 'あなたのプロフィール' : 'Your profile'} onClose={() => setModal(false)}>
+          <div className="aw-profile-simple">
+            <div className="aw-profile-account">
+              <span className="aw-profile-avatar" aria-hidden="true"><Icon name="user" /></span>
+              <div>
+                <strong>{language === 'ja' ? 'ゲスト' : 'Guest'}</strong>
+                <p>{storageAvailable
+                  ? (language === 'ja' ? '学習内容は、この端末に保存されます。' : 'Your learning is saved on this device.')
+                  : (language === 'ja' ? '保存できません。ブラウザを閉じると学習記録が失われる場合があります。' : 'Storage is unavailable. Progress may be lost when you close this tab.')}</p>
+              </div>
+            </div>
+            <hr className="aw-profile-divider" />
+            <LanguageSelector profile />
+            <hr className="aw-profile-divider" />
+            <section className="aw-profile-connect-section">
+              <h3>{language === 'ja' ? '学習パートナーを探す' : 'Find a learning partner'}</h3>
+              <p>{language === 'ja'
+                ? 'Artico Connectで学習パートナーを探せます。別のログインが必要です。'
+                : 'Meet other learners on Artico Connect. A separate login is required.'}</p>
+              <a className="aw-profile-connect-link"
+                href="https://artico-connect.discourse.group/c/fina-a-learning-partner/5"
+                target="_blank" rel="noopener noreferrer">
+                <span>Artico Connect</span><span aria-hidden="true">↗</span>
+              </a>
+            </section>
+          </div>
         </Modal>
       )}
     </div>

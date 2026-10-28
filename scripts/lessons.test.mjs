@@ -195,8 +195,14 @@ test('phrase identities survive an unrelated preceding example and keep differen
 
 test('all foundation topics and existing pronunciation recordings remain available in English', () => {
   assert.equal(Object.keys(foundationReading).length, 7)
-  assert.equal(foundationReading.orientation.sections.length, 9)
-  assert.equal(foundationReading['how-it-works'].sections.length, 14)
+  assert.deepEqual(
+    foundationReading.orientation.sections.map(({ id }) => id),
+    ['orientation-language', 'orientation-english', 'orientation-answer'],
+  )
+  assert.deepEqual(
+    foundationReading['how-it-works'].sections.map(({ id }) => id),
+    ['how-start-line', 'how-two-by-two', 'how-chapter-loop'],
+  )
   assert.doesNotMatch(JSON.stringify(foundationReading), /[\u3040-\u30ff\u4e00-\u9fff]/)
   for (const item of allTwisters) {
     assert.equal(twisterGuidance[item.id].length, 2)

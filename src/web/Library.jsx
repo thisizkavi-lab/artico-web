@@ -1,5 +1,6 @@
 import { useLanguage } from './Language'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { listReviewItems } from './reviewStore'
 import { Button, Heading, Icon } from './components'
 import CurriculumIcon, { chapterIcon, foundationIcon, groupIcon, stageIcon } from './CurriculumIcon'
 import { introductionAliases } from '../course/introductions'
@@ -180,6 +181,15 @@ export function Courses({ learning, route }) {
 
 export function PracticeLibrary({ learning }) {
   const { t, language } = useLanguage()
+  const [dueCount, setDueCount] = useState(null)
+  useEffect(() => {
+    let active = true
+    listReviewItems().then(items => {
+      if (active) setDueCount(items.filter(item =>
+        item.active && item.card.reps > 0 && new Date(item.card.due) <= new Date()).length)
+    }).catch(() => {})
+    return () => { active = false }
+  }, [])
   return (
     <div className="aw-page aw-library-page">
       <Heading eyebrow={t("PRACTICE")} title={t("Give the words another go.")} />
@@ -191,6 +201,11 @@ export function PracticeLibrary({ learning }) {
             <Icon name="next" />
           </a>
         )}
+        <a href="#/review">
+          <strong>{language === 'ja' ? '今日の復習' : 'Your Review'}</strong>
+          {dueCount !== null && <span>{language === 'ja' ? `${dueCount} 件` : `${dueCount} due`}</span>}
+          <Icon name="next" />
+        </a>
         <a href="#/courses?social">
           <strong>{t("Conversation phrases")}</strong>
           <Icon name="next" />

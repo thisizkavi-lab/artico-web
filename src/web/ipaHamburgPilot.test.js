@@ -19,7 +19,7 @@ test('Hamburg trial has ten American July 2019 recordings mapped to Artico IPA',
 test('UHH clips are streamed only on user request; no copying or synthetic audio is added', () => {
   const ui = readFileSync(new URL('./IpaHamburgPilot.jsx', import.meta.url), 'utf8')
   const host = readFileSync(new URL('./IpaReference.jsx', import.meta.url), 'utf8')
-  assert.match(host, /<IpaHamburgPilot \/>/)
+  assert.doesNotMatch(host, /<IpaHamburgPilot \/>/)
   assert.match(ui, /<details/)
   assert.match(ui, /new Audio\(item\.url\)/)
   assert.match(ui, /onClick=\{\(\) => play\(item\)\}/)

@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
 import { numberGroups, numberLessonNotes } from './vocabularyLesson02'
+import { toVocabularyReviewContent } from './vocabularyReview'
+import { ReviewToggle, useReviewCollection } from './ReviewToggle'
 
 function NumberCard({ item, groupId, japanese, practice, revealed, onReveal }) {
   const titleId = `vl02-${groupId}-${item.cue.replace(/[^a-zA-Z0-9]/g, '-')}`
@@ -47,6 +49,7 @@ function LessonNote({ note, japanese, label }) {
 }
 
 export default function VocabularyNumbersLesson({ japanese }) {
+  const collection = useReviewCollection()
   const [activeGroup, setActiveGroup] = useState('all')
   const [practice, setPractice] = useState(false)
   const [revealed, setRevealed] = useState(() => new Set())
@@ -148,6 +151,7 @@ export default function VocabularyNumbersLesson({ japanese }) {
           ? '日本語の意味を見て英語を思い出し、カードをタップして答えを確認しましょう。'
           : 'Use the Japanese meaning to recall the English, then tap a card to reveal the answer.'}</p>}
 
+        {collection.error && <p role="alert" className="ar-collection-error">{collection.error}</p>}
         <div className="vl02-groups">
           {visibleGroups.map((group) => (
             <section className="vl02-group" key={group.id} aria-labelledby={`vl02-group-${group.id}`}>
@@ -167,8 +171,12 @@ export default function VocabularyNumbersLesson({ japanese }) {
               <div className={`vl02-card-grid vl02-grid-${group.id}`}>
                 {group.items.map((item, itemIndex) => {
                   const key = `${group.id}-${itemIndex}`
-                  return <NumberCard key={key} item={item} groupId={`${group.id}-${itemIndex}`} japanese={japanese}
-                    practice={practice} revealed={revealed.has(key)} onReveal={() => revealTerm(key)} />
+                  return <div className="ar-reviewable" key={key}>
+                    <NumberCard item={item} groupId={`${group.id}-${itemIndex}`} japanese={japanese}
+                      practice={practice} revealed={revealed.has(key)} onReveal={() => revealTerm(key)} />
+                    <ReviewToggle content={toVocabularyReviewContent(item.term, 2, item.ja, group.en)}
+                      collection={collection} japanese={japanese} />
+                  </div>
                 })}
               </div>
 

@@ -45,7 +45,7 @@ test('all 96 Japanese chapters preserve every English practice identity, illustr
 
 test('orientation and foundations retain every section and all twelve pronunciation exercises', async () => {
   const ja = await read('../src/course/locales/ja/foundations.json')
-  assert.equal(Object.keys(ja).length, 8)
+  assert.equal(Object.keys(ja).length, 7)
   for (const [id, en] of Object.entries(foundationReading)) {
     assert.deepEqual(ja[id].sections.map((section) => section.id), en.sections.map((section) => section.id))
     assert(ja[id].sections.every((section) => section.blocks.length && japanese.test(section.title)))

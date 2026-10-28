@@ -124,9 +124,10 @@ test('original chapter 18 personality PNG scenes cover each trait',()=>{
 
 test('new commute illustrations and merged equivalent expression pictures stay connected',()=>{
   const source=load('vocabularyActionPng.js')
-  for(const term of ['arrive late','catch the bus','catch the train','commute'])
+  for(const term of ["arrive late","catch the bus","catch the train","commute","drive","go to school","go to work","start work","finish work","leave work","work from home","overtime","do homework","have a break","leave the house","go home"])
     assert.ok(source.includes("'"+term+"'"),'Missing original scene: '+term)
   const renderer=readFileSync(new URL('../../scripts/build_ch04_ai_actions.py',import.meta.url),'utf8')
+  assert.equal((renderer.match(/ch04-[a-z]+-atlas\\.webp/g)||[]).length,4)
   assert.ok(renderer.includes("Image.Resampling.LANCZOS"))
   assert.ok(renderer.includes("with Image.open(out) as verify"))
   assert.ok(load('vocabularyVisual.js').includes("combinedVocabulary"))

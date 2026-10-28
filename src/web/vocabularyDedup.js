@@ -1,6 +1,6 @@
 import catalog from './vocabularyCatalog.json'
 import organized from './vocabularyOrganized.json'
-import { vocabularyTermKey } from './vocabularyIdentity.js'
+import { vocabularyTermKey, normalizeVocabularyTerm as normalize } from './vocabularyIdentity.js'
 
 // A spelling is not automatically a meaning. These are explicitly reviewed
 // homographs and food/animal distinctions; all other exact repeats are

@@ -3,6 +3,8 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState } from 
 import { approvedAudio, useAudio } from './components'
 import Glyph from './Glyph'
 import LessonFooter from './LessonFooter'
+import ScenarioQuiz from './ScenarioQuiz'
+import { makeScenarioQuiz } from '../course/scenarioQuiz'
 import { buildPracticeCatalog, practiceParts } from './practiceCatalog'
 import {
   familiarityOptions,
@@ -597,56 +599,6 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
   )
 }
 
-function YourTurn({ learning, update }) {
-  const { t, language } = useLanguage()
-  const { scenarios: introductionScenarios, scenarioCheck } = useLesson()
-  const fallbackTitles = [
-    t("Meet someone at a gathering"),
-    t("Introduce yourself at work"),
-    t("Bring two people together"),
-    t("Recognize someone you have met"),
-    t("Try it with your own details"),
-  ]
-  return (
-    <section className="ip-your-turn">
-      <p className="ip-kicker">{t("02 / USE IT IN A CONVERSATION")}</p>
-      <h2 id="ip-situations-heading" tabIndex={-1}>{t("When the phrases feel familiar.")}</h2>
-      <p className="ip-prose"> {t("Try these situations in your own words. Speak both sides, then swap roles. A sample is one possibility, not the only correct answer.")} </p>
-      {introductionScenarios.map((scenario, index) => (
-        <details className="ip-scenario" key={scenario.id}>
-          <summary>
-            <span>{String(index + 1).padStart(2, '0')}</span>
-            {scenario.title ?? fallbackTitles[index]}
-            <Glyph name="chevron" />
-          </summary>
-          <div className="ip-scenario-body">
-            <p>{scenario.prompt}</p>
-            <label> {t("Your notes")} <span>{t("(optional)")}</span>
-              <textarea
-                maxLength={2000}
-                rows={3}
-                value={learning.responses[scenario.id] ?? ''}
-                placeholder={t("Try saying it first. Jot down anything you want to remember.")}
-                onChange={(event) =>
-                  update((previous) => ({
-                    ...previous,
-                    responses: { ...previous.responses, [scenario.id]: event.target.value },
-                  }))
-                }
-              />
-            </label>
-            <details className="ip-sample">
-              <summary>{t("Show a sample response")}</summary>
-              <p>{scenario.sample}</p>
-            </details>
-          </div>
-        </details>
-      ))}
-      <p className="ip-context"> {scenarioCheck ?? t("Check: did both people receive an introduction? Did you respond to what they actually said?")} </p>
-    </section>
-  )
-}
-
 function Experience({ route, learning, update, save, notify }) {
   const { t, language } = useLanguage()
   const {
@@ -662,13 +614,15 @@ function Experience({ route, learning, update, save, notify }) {
     byId: introductionById,
     studyPath,
     practicePath,
-    Scenarios,
-    scenarioSource,
     legacyPhraseIds,
     catalog,
     practiceById,
   } = useLesson()
   const practice = route.view === 'practice'
+  const quizQuestions = useMemo(
+    () => makeScenarioQuiz({ id, phrases: introductionPhrases }, language),
+    [id, introductionPhrases, language],
+  )
   const legacySet = (state) => ({
     ids: legacyPhraseIds,
     index: legacyPhraseIds ? state.indices[`chapter-${id}`] : undefined,
@@ -803,11 +757,7 @@ function Experience({ route, learning, update, save, notify }) {
             <PracticeEntry set={set} change={change} audioProps={audioProps} onStart={start} />
           )}
           <div id="ip-situations">
-          {Scenarios ? (
-            <Scenarios source={scenarioSource} learning={learning} update={update} />
-          ) : (
-            <YourTurn learning={learning} update={update} />
-          )}
+            <ScenarioQuiz key={id + '-' + language} questions={quizQuestions} />
           </div>
         </div>
       ) : (

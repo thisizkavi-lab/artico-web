@@ -49,12 +49,15 @@ export function useReviewCollection() {
 export function ReviewToggle({ content, collection, japanese }) {
   if (!content) return null
   const added = collection.active.has(content.id)
+  // Use the visible Japanese cue in accessibility labels. English would
+  // accidentally reveal the hidden answer during vocabulary practice.
+  const cue = content.origin === 'vocabulary' && content.ja ? content.ja : content.en
   return <button className={'ar-add-toggle' + (added ? ' is-active' : '')}
     type="button" aria-pressed={added} disabled={!collection.ready || collection.busyId === content.id}
     onClick={() => collection.toggle(content)}
     aria-label={japanese
-      ? (added ? content.en + 'を復習から外す' : content.en + 'を復習に追加')
-      : (added ? 'Remove ' + content.en + ' from review' : 'Add ' + content.en + ' to review')}>
+      ? (added ? cue + 'を復習から外す' : cue + 'を復習に追加')
+      : (added ? 'Remove item from review: ' + cue : 'Add item to review: ' + cue)}>
     <span aria-hidden="true">{added ? '✓' : '+'}</span>
     {japanese ? (added ? '復習中' : '復習に追加') : (added ? 'In Review' : 'Add to Review')}
   </button>

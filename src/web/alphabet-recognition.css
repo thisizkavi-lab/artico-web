@@ -1,0 +1,48 @@
+/* Alphabet recognition uses the same lesson shell and button tokens as Artico. */
+.rf-letter-check { max-width: 620px; margin-inline: auto; }
+.rf-letter-check > h2 { margin: 8px 0 9px; }
+.rf-letter-check-intro { max-width: 55ch; margin-bottom: 26px; color: var(--ip-muted, var(--muted)); }
+.rf-letter-check-body { max-width: 540px; }
+.rf-letter-check-topline { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 13px; }
+.rf-letter-check-prompt { font-size: 16px; line-height: 1.6; font-weight: 600; }
+.rf-letter-check-prompt:focus { outline: none; }
+.rf-letter-check-count { font-size: 12px; flex-shrink: 0; color: var(--ip-muted, var(--muted)); font-variant-numeric: tabular-nums; }
+.rf-letter-check-face {
+  height: 210px; display: grid; place-items: center;
+  border-radius: 15px; background: var(--surface, #fff);
+  border: 1px solid var(--ip-border, var(--line));
+  font: 500 clamp(86px, 13vw, 130px) / 1 Arial, sans-serif;
+  color: var(--ink);
+}
+.rf-letter-check-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+.rf-letter-check-choice {
+  height: 74px; border: 1px solid var(--ip-border, var(--line));
+  border-radius: 12px; background: var(--surface, #fff);
+  color: var(--ink); font: 500 38px / 1 Arial, sans-serif;
+  cursor: pointer; transition: border-color .15s ease, background .15s ease;
+}
+.rf-letter-check-choice:hover:not(:disabled),
+.rf-letter-check-choice:focus-visible { border-color: var(--ip-blue, var(--forest)); background: var(--surface-strong, #edf2ec); }
+.rf-letter-check-choice:focus-visible { outline: 2px solid var(--ip-blue, var(--forest)); outline-offset: 2px; }
+.rf-letter-check-choice:disabled { cursor: default; opacity: .65; }
+.rf-letter-check-choice.is-match { background: var(--surface-strong, #edf2ec); border-color: var(--forest); opacity: 1; font-weight: 700; }
+.rf-letter-check-choice.is-missed { border-style: dashed; opacity: 1; }
+.rf-letter-check-feedback { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 19px; }
+.rf-letter-check-feedback p { font-size: 14px; line-height: 1.7; }
+.rf-letter-check-pair { white-space: nowrap; color: var(--ip-muted, var(--muted)); }
+.rf-letter-check-feedback .ip-primary { flex-shrink: 0; }
+.rf-letter-check-end { padding: 34px 0 18px; display: grid; justify-items: start; gap: 13px; }
+.rf-letter-check-end h3 { font-size: 24px; font-weight: 600; }
+.rf-letter-check-end h3:focus { outline: none; }
+.rf-letter-check-end p { font-size: 15px; line-height: 1.7; }
+.rf-letter-check-end .ip-secondary { margin-top: 12px; }
+@media (max-width: 600px) {
+  .rf-letter-check-face { height: 175px; }
+  .rf-letter-check-choice { height: 68px; font-size: 34px; }
+  .rf-letter-check-choices { gap: 9px; }
+  .rf-letter-check-feedback { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .rf-letter-check-feedback .ip-primary { align-self: flex-end; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rf-letter-check-choice { transition: none; }
+}

@@ -83,29 +83,32 @@ test('every mapped food kind has a rendering branch',()=>{
 })
 
 
-test('pinned Mulberry artwork is license-safe and maps only known vocabulary entries',()=>{
+
+test('pinned Mulberry and OpenMoji artwork maps only to known vocabulary terms',()=>{
   const manifest=JSON.parse(load('vocabularyMulberryManifest.json'))
+  const openmoji=JSON.parse(load('vocabularyOpenmojiManifest.json'))
   assert.equal(manifest.license,'CC-BY-SA-4.0')
   assert.equal(manifest.version,'v3.6.1')
   assert.equal(manifest.sourceCommit,'9cbab9f400c5de44e2bc58839cca07294aadb086')
-  const terms=new Set(source.lessons.flatMap(l=>l.groups.flatMap(g=>g.items.map(i=>l.sourceLesson+':'+i[0].toLowerCase().trim()))))
-  const entries=Object.entries(manifest.entries)
-  assert.ok(entries.length>=700,'Do not silently reduce the curated illustration inventory')
-  for(const [term,svg] of entries){
-    assert.ok(terms.has(term),'Missing vocabulary for artwork: '+term)
-    assert.match(svg,/^[a-zA-Z0-9_,-]+\\.svg$/,'Invalid or unsafe source path: '+svg)
-  }
-  const openmoji=JSON.parse(load('vocabularyOpenmojiManifest.json'))
   assert.equal(openmoji.license,'CC-BY-SA-4.0')
+  const terms=new Set(source.lessons.flatMap(l=>l.groups.flatMap(g=>
+    g.items.map(item=>l.sourceLesson+':'+item[0].toLowerCase().trim()))))
+  assert.ok(Object.keys(manifest.entries).length>=700)
   assert.ok(Object.keys(openmoji.entries).length>=100)
+  for(const [term,svg] of Object.entries(manifest.entries)){
+    assert.ok(terms.has(term),'Missing vocabulary for artwork: '+term)
+    assert.ok(svg.endsWith('.svg'),'Incorrect SVG extension: '+svg)
+    assert.ok([...svg].every(ch=>/[A-Za-z0-9_,.\-]/.test(ch)),'Unsafe SVG source path: '+svg)
+  }
   for(const [term,code] of Object.entries(openmoji.entries)){
     assert.ok(terms.has(term),'Missing vocabulary for OpenMoji artwork: '+term)
-    assert.match(code,/^[0-9A-F-]+$/)
+    assert.ok([...code].every(ch=>'0123456789ABCDEF-'.includes(ch)),'Unsafe codepoint: '+code)
   }
   const client=load('vocabularyLibraryArtwork.js')
-  assert.match(client,/import\\.meta\\.env\\.BASE_URL/)
-  assert.match(client,/vocabulary-symbols\\/mulberry\\//)
-  assert.match(visual,/vocabularyLibraryIllustration/)
-  assert.match(view,/library-png/)
-  assert.doesNotMatch(client,/https?:\\/\\//,'Runtime must not hotlink external images')
+  assert.ok(client.includes('import.meta.env.BASE_URL'))
+  assert.ok(client.includes('vocabulary-symbols/mulberry/'))
+  assert.ok(client.includes('vocabulary-symbols/openmoji/'))
+  assert.ok(visual.includes('vocabularyLibraryIllustration'))
+  assert.ok(view.includes('library-png'))
+  assert.ok(!client.includes('http://')&&!client.includes('https://'),'No externally hosted artwork at runtime')
 })

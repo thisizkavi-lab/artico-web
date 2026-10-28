@@ -62,7 +62,7 @@ test('standalone glossary-only vocabulary is absent from Study and Practice thro
     assert.ok(!catalog.items.some((item) => item.id === 'ch02-v0' || item.id === 'ch02-v3'))
   }
   const chapterUI = readFileSync(new URL('../src/web/ChapterLesson.jsx', import.meta.url), 'utf8')
-  assert.ok(!chapterUI.includes("sections.push({\\n    id: 'words'"))
+  assert.doesNotMatch(chapterUI, /sections\.push\(\{\s+id: 'words'/)
   for (let chapter = 1; chapter <= 96; chapter++) {
     const id = String(chapter).padStart(2, '0')
     for (const language of ['en', 'ja']) {

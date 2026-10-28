@@ -443,3 +443,33 @@
   .rf-mode-demo { grid-template-columns: 1fr; gap: 16px; }
   .rf-mode-demo > div + div { border-left: 0; border-top: 1px solid var(--line); padding: 16px 0 0; }
 }
+
+/* Orientation: keep the reading brief and mark only the essential ideas. */
+.rf-orientation-lesson .ip-reading {
+  max-width: 78ch;
+}
+.rf-orientation-lesson .rf-open-figure {
+  width: clamp(145px, 25%, 215px);
+}
+.rf-orientation-lesson .ip-prose strong,
+.rf-orientation-lesson .rc-list strong {
+  font-weight: 700;
+  color: inherit;
+  background: linear-gradient(transparent 47%, #dfeddf 47%, #dfeddf 94%, transparent 94%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.rf-orientation-lesson .ip-section-heading {
+  margin-bottom: 14px;
+}
+.rf-orientation-lesson .ip-section .ip-prose {
+  line-height: 1.85;
+}
+.rf-orientation-lesson .rf-steps {
+  margin-top: 15px;
+}
+@media (max-width: 700px) {
+  .rf-orientation-lesson .rf-open-figure {
+    width: min(56%, 205px);
+  }
+}

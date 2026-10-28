@@ -634,3 +634,8 @@
   .vl02-practice-card { transition: none; }
   .vl02-practice-card:hover { transform: none; }
 }
+
+/* Artwork licensing stays unobtrusive but visible in Study and directory views. */
+.vl-art-credit{margin:22px auto 10px;text-align:center;font-size:11px;line-height:1.7;color:#7487a0}
+.vl-art-credit a{color:#5176a6;text-decoration:underline;text-underline-offset:2px}
+.vl-art-credit a:hover{color:#285bcc}

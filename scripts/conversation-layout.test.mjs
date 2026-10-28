@@ -25,6 +25,12 @@ test('adjacent illustrated conversations pair without swallowing text or changin
     { type: 'conversation-pair', conversations: [a,b] }, c,
   ])
   assert.deepEqual(groupConversationScenes([text,a,text,b]), [text,a,text,b])
+  const heading = { type: 'source', source: { type: 'explanation', phraseIds: [], runs: [{ text: 'A different answer' }] } }
+  assert.deepEqual(groupConversationScenes([a, heading, b]),
+    [{ type: 'conversation-pair', conversations: [a, b], bridge: heading }])
+  const longExplanation = { type: 'source', source: { type: 'explanation', phraseIds: [],
+    runs: [{ text: 'A longer explanation with extra context and multiple ideas that should stay between both conversations, not move inside the next illustration.' }] } }
+  assert.deepEqual(groupConversationScenes([a, longExplanation, b]), [a, longExplanation, b])
 })
 
 test('shared conversation UI has one dialogue-level audio control, not per-line controls', () => {

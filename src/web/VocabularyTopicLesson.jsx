@@ -1,43 +1,26 @@
 import { useMemo, useState } from 'react'
-import { CurriculumIcon } from './CurriculumIcon'
 import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
-import { vocabularyTopicArt, vocabularyVisual } from './vocabularyVisual'
+import { vocabularyVisual } from './vocabularyVisual'
+import { organizeVocabularyGroup } from './vocabularyDedup'
+import VocabularySceneArt from './VocabularySceneArt'
+import VocabularyTimeArt from './VocabularyTimeArt'
+import { DimensionArt, MaterialArt, WeatherArt, DirectionArt } from './VocabularyDiagramArt'
 import './vocabulary-topic.css'
 
 const lessons = new Map(organized.lessons.map(lesson => [lesson.sourceLesson, lesson]))
 
-function Visual({ visual }) {
-  if (!visual) return null
-  if (visual.type === 'color') {
-    return <span className="vlt-color" style={{ backgroundColor: visual.value }} aria-hidden="true" />
-  }
-  if (visual.type === 'time') {
-    const isNight = ['night', 'midnight'].includes(visual.value)
-    const isLow = ['dawn', 'sunrise', 'sunset', 'dusk'].includes(visual.value)
-    return (
-      <svg className="vlt-drawing" viewBox="0 0 68 54" aria-hidden="true" focusable="false">
-        <path d="M3 43H65" stroke="currentColor" strokeOpacity=".4" strokeWidth="1.6" />
-        <circle cx="35" cy={isLow ? 41 : 23} r={isNight ? 9 : 13} fill={isNight ? '#b2bfd1' : '#f1c774'} stroke="#7893b7" strokeWidth="1.2" />
-        {isNight && <circle cx="40" cy="18" r="9" fill="#eff4fb" />}
-        <path d="M8 50H60" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M9 43h50" stroke="currentColor" strokeOpacity=".25" strokeWidth="1.5"/>
-      </svg>
-    )
-  }
-  if (visual.type === 'size') {
-    const value = visual.value
-    const narrow = ['thin', 'small', 'little', 'short', 'low', 'near'].includes(value)
-    const vertical = ['high','low'].includes(value)
-    const length = narrow ? 23 : 47
-    return <svg className="vlt-drawing" viewBox="0 0 68 54" aria-hidden="true" focusable="false">
-      <rect x={vertical ? 24 : (68-length)/2} y={vertical ? (narrow ? 29 : 8) : 19}
-        width={vertical ? 20 : length} height={vertical ? (narrow ? 16 : 37) : (value === 'thick' ? 18 : value === 'thin' ? 5 : 14)}
-        rx="4" fill="#719bd2"/>
-      <path d="M8 49H60" stroke="#c2cee0" strokeWidth="1.5"/>
-    </svg>
-  }
-  return <CurriculumIcon name={visual.value} size={36} />
+function Visual({visual,masked=false}) {
+ if (!visual) return null
+ if (visual.type==='color') return <span className="vlt-color" style={{backgroundColor:visual.value}} aria-hidden="true"/>
+ if (visual.type==='scene') return <VocabularySceneArt scene={visual.scene}/>
+ if (['calendar-day','calendar-month','calendar-range','season','frequency','daytime','duration','timeline'].includes(visual.type))
+   return <VocabularyTimeArt visual={visual} masked={masked}/>
+ if (visual.type==='size') return <DimensionArt value={visual.value}/>
+ if (visual.type==='material') return <MaterialArt value={visual.value}/>
+ if (visual.type==='weather') return <WeatherArt value={visual.value}/>
+ if (visual.type==='direction') return <DirectionArt value={visual.value}/>
+ return null
 }
 
 function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
@@ -48,7 +31,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
   const answerHidden = practice && !revealed && canPractice
   const body = (
     <>
-      {visual && <span className="vlt-visual"><Visual visual={visual} /></span>}
+      {visual && <span className="vlt-visual"><Visual visual={visual} masked={answerHidden} /></span>}
       <span className="vlt-card-copy">
         {practice && canPractice && <span className="vlt-card-kicker">{japanese ? '英語で何と言う？' : 'SAY IT IN ENGLISH'}</span>}
         {ja && <span className={'vlt-meaning' + (practice ? ' is-prompt' : '')} lang="ja">{ja}</span>}
@@ -62,12 +45,12 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
     </>
   )
   return practice && canPractice
-    ? <button type="button" className={'vlt-card vlt-recall-card' + (revealed ? ' is-revealed' : '') + (!visual ? ' vlt-text-card' : '')}
+    ? <button type="button" className={'vlt-card vlt-recall-card' + (revealed ? ' is-revealed' : '') + (visual ? ' vlt-image-card' : ' vlt-text-card')}
         onClick={onReveal} aria-label={(ja || (japanese ? '絵のカード' : 'Picture card')) + (revealed ? ': ' + term : (japanese ? '。答えを表示する' : '. Reveal answer'))}
         aria-expanded={Boolean(revealed)}>
         {body}
       </button>
-    : <article className={'vlt-card' + (!visual ? ' vlt-text-card' : '')}>{body}</article>
+    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}</article>
 }
 
 export default function VocabularyTopicLesson({ topic, japanese }) {
@@ -76,7 +59,12 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   const [mode, setMode] = useState('study')
   const [revealed, setRevealed] = useState(() => new Set())
   const groups = lesson?.groups || []
-  const itemCount = useMemo(() => groups.reduce((sum, group) => sum + group.items.length, 0), [groups])
+  const counts = useMemo(() => groups.reduce((acc,group) => {
+    const result=organizeVocabularyGroup(group.items,topic.sourceLesson)
+    acc.fresh += result.fresh.length
+    acc.revisited += result.revisited.length
+    return acc
+  }, {fresh:0,revisited:0}), [groups,topic.sourceLesson])
   const shownGroups = groupIndex === -1 ? groups.map((group, index) => ({ ...group, index }))
     : groups[groupIndex] ? [{ ...groups[groupIndex], index: groupIndex }] : []
   const canRecall = (term) => Boolean(vocabularyJapanese(term, topic.sourceLesson) || vocabularyVisual(term, topic.sourceLesson))
@@ -97,6 +85,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
       return next
     })
   }
+  const sample = groups.flatMap(group => organizeVocabularyGroup(group.items,topic.sourceLesson).fresh)
+    .map(([term]) => ({term,visual:vocabularyVisual(term,topic.sourceLesson)}))
+    .filter(item => item.visual).slice(0,2)
   if (!lesson) return null
 
   return (
@@ -108,13 +99,12 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
           <p>{japanese
             ? 'テーマ別に言葉を見て、必要なものから覚えましょう。'
             : 'Explore vocabulary in small, meaningful groups. Practice what you want to remember.'}</p>
-          <p className="vlt-hero-count"><strong>{itemCount}</strong> {japanese ? 'の語と表現' : 'words and expressions'} <span aria-hidden="true">·</span> {groups.length} {japanese ? 'グループ' : 'groups'}</p>
+          <p className="vlt-hero-count"><strong>{counts.fresh}</strong> {japanese ? '新しい語と表現' : 'new words and expressions'} <span aria-hidden="true">·</span> {counts.revisited} {japanese ? '復習語' : 'review words'}</p>
         </div>
         <div className="vlt-hero-art" aria-hidden="true">
-          <div className="vlt-hero-halo" />
-          <CurriculumIcon name={vocabularyTopicArt(topic.sourceLesson)} size={82} />
-          <span className="vlt-hero-corner vlt-corner-one" />
-          <span className="vlt-hero-corner vlt-corner-two" />
+          {sample.length>0
+            ? sample.map(({term,visual},index)=><div key={term} className={'vlt-hero-preview vlt-hero-preview-'+index}><Visual visual={visual}/></div>)
+            : <div className="vlt-hero-monogram">{String(topic.sourceLesson).padStart(2,'0')}</div>}
         </div>
       </section>
       <div className="vlt-toolbar">
@@ -143,7 +133,8 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
       </nav>
       <div className="vlt-groups">
         {shownGroups.map(group => {
-          const cards = mode === 'study' ? group.items : group.items.filter(([term]) => canRecall(term))
+          const {fresh,revisited} = organizeVocabularyGroup(group.items, topic.sourceLesson)
+          const cards = mode === 'study' ? fresh : fresh.filter(([term]) => canRecall(term))
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -170,6 +161,16 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                 : <p className="vlt-empty">{japanese
                   ? 'このグループは学習用のカードで確認できます。'
                   : 'Explore these words in Study mode.'}</p>}
+              {revisited.length > 0 && <details className="vlt-revisited">
+                <summary>{japanese ? '以前に学んだ言葉' : 'Previously learned'} <span>({revisited.length})</span></summary>
+                <div className="vlt-review-list">
+                  {revisited.map(({term,firstChapter},index) =>
+                    <a key={index} href={'#/lesson/98/study/'+String(firstChapter).padStart(2,'0')}>
+                      <span lang="en">{term}</span>
+                      <small>{japanese ? 'レッスン' : 'Lesson'} {String(firstChapter).padStart(2,'0')}</small>
+                    </a>)}
+                </div>
+              </details>}
             </section>
           )
         })}

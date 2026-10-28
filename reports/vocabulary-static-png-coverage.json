@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "method": "Static PNG artwork inventory only. Existing original SVG scene art, calendars, color/dimension/food diagrams, and lessons 1-2's special visual interfaces are deliberately not counted here; unresolved does not necessarily mean no useful visual exists.",
+  "method": "Exact original/third-party local PNG mapping. Lesson 13 and Lesson 18 have newly generated, chapter-specific original PNG scenes, and all other entries use original images, reviewed Mulberry/OpenMoji sources, or custom illustrations when available. Custom SVG scenes and diagram components are not included in this static PNG report.",
   "inventory": {
     "lessons_1_and_2": {
       "mode": "bespoke custom UI",
@@ -11,7 +11,9 @@
       "original_png": 71,
       "mulberry": 751,
       "openmoji": 106,
-      "unmatched_to_static_png": 3022
+      "unmatched_to_static_png": 2919,
+      "original_generated": 103,
+      "covered_by_static_png": 1031
     }
   },
   "by_lesson": [
@@ -22,7 +24,8 @@
       "original_png": 38,
       "mulberry": 7,
       "openmoji": 0,
-      "unmatched_to_static_png": 37
+      "unmatched_to_static_png": 37,
+      "original_generated": 0
     },
     {
       "lesson": 4,
@@ -31,7 +34,8 @@
       "original_png": 19,
       "mulberry": 13,
       "openmoji": 0,
-      "unmatched_to_static_png": 42
+      "unmatched_to_static_png": 42,
+      "original_generated": 0
     },
     {
       "lesson": 5,
@@ -40,7 +44,8 @@
       "original_png": 0,
       "mulberry": 24,
       "openmoji": 0,
-      "unmatched_to_static_png": 31
+      "unmatched_to_static_png": 31,
+      "original_generated": 0
     },
     {
       "lesson": 6,
@@ -49,7 +54,8 @@
       "original_png": 0,
       "mulberry": 5,
       "openmoji": 0,
-      "unmatched_to_static_png": 53
+      "unmatched_to_static_png": 53,
+      "original_generated": 0
     },
     {
       "lesson": 7,
@@ -58,7 +64,8 @@
       "original_png": 0,
       "mulberry": 5,
       "openmoji": 2,
-      "unmatched_to_static_png": 42
+      "unmatched_to_static_png": 42,
+      "original_generated": 0
     },
     {
       "lesson": 8,
@@ -67,7 +74,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 31
+      "unmatched_to_static_png": 31,
+      "original_generated": 0
     },
     {
       "lesson": 9,
@@ -76,7 +84,8 @@
       "original_png": 7,
       "mulberry": 19,
       "openmoji": 1,
-      "unmatched_to_static_png": 28
+      "unmatched_to_static_png": 28,
+      "original_generated": 0
     },
     {
       "lesson": 10,
@@ -85,7 +94,8 @@
       "original_png": 0,
       "mulberry": 30,
       "openmoji": 2,
-      "unmatched_to_static_png": 21
+      "unmatched_to_static_png": 21,
+      "original_generated": 0
     },
     {
       "lesson": 11,
@@ -94,7 +104,8 @@
       "original_png": 0,
       "mulberry": 15,
       "openmoji": 0,
-      "unmatched_to_static_png": 51
+      "unmatched_to_static_png": 51,
+      "original_generated": 0
     },
     {
       "lesson": 12,
@@ -103,7 +114,8 @@
       "original_png": 0,
       "mulberry": 15,
       "openmoji": 4,
-      "unmatched_to_static_png": 39
+      "unmatched_to_static_png": 39,
+      "original_generated": 0
     },
     {
       "lesson": 13,
@@ -112,7 +124,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 50
+      "unmatched_to_static_png": 0,
+      "original_generated": 50
     },
     {
       "lesson": 14,
@@ -121,7 +134,8 @@
       "original_png": 0,
       "mulberry": 24,
       "openmoji": 0,
-      "unmatched_to_static_png": 38
+      "unmatched_to_static_png": 38,
+      "original_generated": 0
     },
     {
       "lesson": 15,
@@ -130,7 +144,8 @@
       "original_png": 0,
       "mulberry": 18,
       "openmoji": 1,
-      "unmatched_to_static_png": 37
+      "unmatched_to_static_png": 37,
+      "original_generated": 0
     },
     {
       "lesson": 16,
@@ -139,7 +154,8 @@
       "original_png": 0,
       "mulberry": 29,
       "openmoji": 2,
-      "unmatched_to_static_png": 26
+      "unmatched_to_static_png": 26,
+      "original_generated": 0
     },
     {
       "lesson": 17,
@@ -148,7 +164,8 @@
       "original_png": 0,
       "mulberry": 11,
       "openmoji": 0,
-      "unmatched_to_static_png": 47
+      "unmatched_to_static_png": 47,
+      "original_generated": 0
     },
     {
       "lesson": 18,
@@ -157,7 +174,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 53
+      "unmatched_to_static_png": 0,
+      "original_generated": 53
     },
     {
       "lesson": 19,
@@ -166,7 +184,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 52
+      "unmatched_to_static_png": 52,
+      "original_generated": 0
     },
     {
       "lesson": 20,
@@ -175,7 +194,8 @@
       "original_png": 0,
       "mulberry": 8,
       "openmoji": 0,
-      "unmatched_to_static_png": 33
+      "unmatched_to_static_png": 33,
+      "original_generated": 0
     },
     {
       "lesson": 21,
@@ -184,7 +204,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 31
+      "unmatched_to_static_png": 31,
+      "original_generated": 0
     },
     {
       "lesson": 22,
@@ -193,7 +214,8 @@
       "original_png": 0,
       "mulberry": 12,
       "openmoji": 1,
-      "unmatched_to_static_png": 40
+      "unmatched_to_static_png": 40,
+      "original_generated": 0
     },
     {
       "lesson": 23,
@@ -202,7 +224,8 @@
       "original_png": 0,
       "mulberry": 11,
       "openmoji": 0,
-      "unmatched_to_static_png": 51
+      "unmatched_to_static_png": 51,
+      "original_generated": 0
     },
     {
       "lesson": 24,
@@ -211,7 +234,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 37
+      "unmatched_to_static_png": 37,
+      "original_generated": 0
     },
     {
       "lesson": 25,
@@ -220,7 +244,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 28
+      "unmatched_to_static_png": 28,
+      "original_generated": 0
     },
     {
       "lesson": 26,
@@ -229,7 +254,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 38
+      "unmatched_to_static_png": 38,
+      "original_generated": 0
     },
     {
       "lesson": 27,
@@ -238,7 +264,8 @@
       "original_png": 0,
       "mulberry": 3,
       "openmoji": 0,
-      "unmatched_to_static_png": 44
+      "unmatched_to_static_png": 44,
+      "original_generated": 0
     },
     {
       "lesson": 28,
@@ -247,7 +274,8 @@
       "original_png": 0,
       "mulberry": 25,
       "openmoji": 1,
-      "unmatched_to_static_png": 30
+      "unmatched_to_static_png": 30,
+      "original_generated": 0
     },
     {
       "lesson": 29,
@@ -256,7 +284,8 @@
       "original_png": 0,
       "mulberry": 25,
       "openmoji": 2,
-      "unmatched_to_static_png": 22
+      "unmatched_to_static_png": 22,
+      "original_generated": 0
     },
     {
       "lesson": 30,
@@ -265,7 +294,8 @@
       "original_png": 0,
       "mulberry": 16,
       "openmoji": 1,
-      "unmatched_to_static_png": 8
+      "unmatched_to_static_png": 8,
+      "original_generated": 0
     },
     {
       "lesson": 31,
@@ -274,7 +304,8 @@
       "original_png": 0,
       "mulberry": 21,
       "openmoji": 3,
-      "unmatched_to_static_png": 30
+      "unmatched_to_static_png": 30,
+      "original_generated": 0
     },
     {
       "lesson": 32,
@@ -283,7 +314,8 @@
       "original_png": 0,
       "mulberry": 25,
       "openmoji": 0,
-      "unmatched_to_static_png": 41
+      "unmatched_to_static_png": 41,
+      "original_generated": 0
     },
     {
       "lesson": 33,
@@ -292,7 +324,8 @@
       "original_png": 0,
       "mulberry": 20,
       "openmoji": 1,
-      "unmatched_to_static_png": 40
+      "unmatched_to_static_png": 40,
+      "original_generated": 0
     },
     {
       "lesson": 34,
@@ -301,7 +334,8 @@
       "original_png": 0,
       "mulberry": 11,
       "openmoji": 0,
-      "unmatched_to_static_png": 54
+      "unmatched_to_static_png": 54,
+      "original_generated": 0
     },
     {
       "lesson": 35,
@@ -310,7 +344,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 47
+      "unmatched_to_static_png": 47,
+      "original_generated": 0
     },
     {
       "lesson": 36,
@@ -319,7 +354,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 1,
-      "unmatched_to_static_png": 50
+      "unmatched_to_static_png": 50,
+      "original_generated": 0
     },
     {
       "lesson": 37,
@@ -328,7 +364,8 @@
       "original_png": 0,
       "mulberry": 19,
       "openmoji": 2,
-      "unmatched_to_static_png": 31
+      "unmatched_to_static_png": 31,
+      "original_generated": 0
     },
     {
       "lesson": 38,
@@ -337,7 +374,8 @@
       "original_png": 0,
       "mulberry": 5,
       "openmoji": 3,
-      "unmatched_to_static_png": 42
+      "unmatched_to_static_png": 42,
+      "original_generated": 0
     },
     {
       "lesson": 39,
@@ -346,7 +384,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 40,
@@ -355,7 +394,8 @@
       "original_png": 0,
       "mulberry": 3,
       "openmoji": 0,
-      "unmatched_to_static_png": 28
+      "unmatched_to_static_png": 28,
+      "original_generated": 0
     },
     {
       "lesson": 41,
@@ -364,7 +404,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 25
+      "unmatched_to_static_png": 25,
+      "original_generated": 0
     },
     {
       "lesson": 42,
@@ -373,7 +414,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 38
+      "unmatched_to_static_png": 38,
+      "original_generated": 0
     },
     {
       "lesson": 43,
@@ -382,7 +424,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 53
+      "unmatched_to_static_png": 53,
+      "original_generated": 0
     },
     {
       "lesson": 44,
@@ -391,7 +434,8 @@
       "original_png": 7,
       "mulberry": 13,
       "openmoji": 4,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 45,
@@ -400,7 +444,8 @@
       "original_png": 0,
       "mulberry": 5,
       "openmoji": 0,
-      "unmatched_to_static_png": 49
+      "unmatched_to_static_png": 49,
+      "original_generated": 0
     },
     {
       "lesson": 46,
@@ -409,7 +454,8 @@
       "original_png": 0,
       "mulberry": 12,
       "openmoji": 1,
-      "unmatched_to_static_png": 59
+      "unmatched_to_static_png": 59,
+      "original_generated": 0
     },
     {
       "lesson": 47,
@@ -418,7 +464,8 @@
       "original_png": 0,
       "mulberry": 4,
       "openmoji": 2,
-      "unmatched_to_static_png": 62
+      "unmatched_to_static_png": 62,
+      "original_generated": 0
     },
     {
       "lesson": 48,
@@ -427,7 +474,8 @@
       "original_png": 0,
       "mulberry": 2,
       "openmoji": 0,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 49,
@@ -436,7 +484,8 @@
       "original_png": 0,
       "mulberry": 6,
       "openmoji": 5,
-      "unmatched_to_static_png": 52
+      "unmatched_to_static_png": 52,
+      "original_generated": 0
     },
     {
       "lesson": 50,
@@ -445,7 +494,8 @@
       "original_png": 0,
       "mulberry": 6,
       "openmoji": 0,
-      "unmatched_to_static_png": 27
+      "unmatched_to_static_png": 27,
+      "original_generated": 0
     },
     {
       "lesson": 51,
@@ -454,7 +504,8 @@
       "original_png": 0,
       "mulberry": 8,
       "openmoji": 6,
-      "unmatched_to_static_png": 49
+      "unmatched_to_static_png": 49,
+      "original_generated": 0
     },
     {
       "lesson": 52,
@@ -463,7 +514,8 @@
       "original_png": 0,
       "mulberry": 3,
       "openmoji": 3,
-      "unmatched_to_static_png": 37
+      "unmatched_to_static_png": 37,
+      "original_generated": 0
     },
     {
       "lesson": 53,
@@ -472,7 +524,8 @@
       "original_png": 0,
       "mulberry": 0,
       "openmoji": 0,
-      "unmatched_to_static_png": 28
+      "unmatched_to_static_png": 28,
+      "original_generated": 0
     },
     {
       "lesson": 54,
@@ -481,7 +534,8 @@
       "original_png": 0,
       "mulberry": 28,
       "openmoji": 4,
-      "unmatched_to_static_png": 35
+      "unmatched_to_static_png": 35,
+      "original_generated": 0
     },
     {
       "lesson": 55,
@@ -490,7 +544,8 @@
       "original_png": 0,
       "mulberry": 29,
       "openmoji": 8,
-      "unmatched_to_static_png": 18
+      "unmatched_to_static_png": 18,
+      "original_generated": 0
     },
     {
       "lesson": 56,
@@ -499,7 +554,8 @@
       "original_png": 0,
       "mulberry": 26,
       "openmoji": 3,
-      "unmatched_to_static_png": 22
+      "unmatched_to_static_png": 22,
+      "original_generated": 0
     },
     {
       "lesson": 57,
@@ -508,7 +564,8 @@
       "original_png": 0,
       "mulberry": 15,
       "openmoji": 8,
-      "unmatched_to_static_png": 21
+      "unmatched_to_static_png": 21,
+      "original_generated": 0
     },
     {
       "lesson": 58,
@@ -517,7 +574,8 @@
       "original_png": 0,
       "mulberry": 17,
       "openmoji": 2,
-      "unmatched_to_static_png": 70
+      "unmatched_to_static_png": 70,
+      "original_generated": 0
     },
     {
       "lesson": 59,
@@ -526,7 +584,8 @@
       "original_png": 0,
       "mulberry": 26,
       "openmoji": 0,
-      "unmatched_to_static_png": 35
+      "unmatched_to_static_png": 35,
+      "original_generated": 0
     },
     {
       "lesson": 60,
@@ -535,7 +594,8 @@
       "original_png": 0,
       "mulberry": 14,
       "openmoji": 2,
-      "unmatched_to_static_png": 51
+      "unmatched_to_static_png": 51,
+      "original_generated": 0
     },
     {
       "lesson": 61,
@@ -544,7 +604,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 46
+      "unmatched_to_static_png": 46,
+      "original_generated": 0
     },
     {
       "lesson": 62,
@@ -553,7 +614,8 @@
       "original_png": 0,
       "mulberry": 12,
       "openmoji": 4,
-      "unmatched_to_static_png": 45
+      "unmatched_to_static_png": 45,
+      "original_generated": 0
     },
     {
       "lesson": 63,
@@ -562,7 +624,8 @@
       "original_png": 0,
       "mulberry": 3,
       "openmoji": 0,
-      "unmatched_to_static_png": 50
+      "unmatched_to_static_png": 50,
+      "original_generated": 0
     },
     {
       "lesson": 64,
@@ -571,7 +634,8 @@
       "original_png": 0,
       "mulberry": 11,
       "openmoji": 4,
-      "unmatched_to_static_png": 45
+      "unmatched_to_static_png": 45,
+      "original_generated": 0
     },
     {
       "lesson": 65,
@@ -580,7 +644,8 @@
       "original_png": 0,
       "mulberry": 2,
       "openmoji": 1,
-      "unmatched_to_static_png": 54
+      "unmatched_to_static_png": 54,
+      "original_generated": 0
     },
     {
       "lesson": 66,
@@ -589,7 +654,8 @@
       "original_png": 0,
       "mulberry": 4,
       "openmoji": 0,
-      "unmatched_to_static_png": 59
+      "unmatched_to_static_png": 59,
+      "original_generated": 0
     },
     {
       "lesson": 67,
@@ -598,7 +664,8 @@
       "original_png": 0,
       "mulberry": 2,
       "openmoji": 0,
-      "unmatched_to_static_png": 36
+      "unmatched_to_static_png": 36,
+      "original_generated": 0
     },
     {
       "lesson": 68,
@@ -607,7 +674,8 @@
       "original_png": 0,
       "mulberry": 6,
       "openmoji": 0,
-      "unmatched_to_static_png": 51
+      "unmatched_to_static_png": 51,
+      "original_generated": 0
     },
     {
       "lesson": 69,
@@ -616,7 +684,8 @@
       "original_png": 0,
       "mulberry": 13,
       "openmoji": 2,
-      "unmatched_to_static_png": 44
+      "unmatched_to_static_png": 44,
+      "original_generated": 0
     },
     {
       "lesson": 70,
@@ -625,7 +694,8 @@
       "original_png": 0,
       "mulberry": 9,
       "openmoji": 0,
-      "unmatched_to_static_png": 37
+      "unmatched_to_static_png": 37,
+      "original_generated": 0
     },
     {
       "lesson": 71,
@@ -634,7 +704,8 @@
       "original_png": 0,
       "mulberry": 9,
       "openmoji": 0,
-      "unmatched_to_static_png": 44
+      "unmatched_to_static_png": 44,
+      "original_generated": 0
     },
     {
       "lesson": 72,
@@ -643,7 +714,8 @@
       "original_png": 0,
       "mulberry": 6,
       "openmoji": 9,
-      "unmatched_to_static_png": 41
+      "unmatched_to_static_png": 41,
+      "original_generated": 0
     },
     {
       "lesson": 73,
@@ -652,7 +724,8 @@
       "original_png": 0,
       "mulberry": 6,
       "openmoji": 2,
-      "unmatched_to_static_png": 45
+      "unmatched_to_static_png": 45,
+      "original_generated": 0
     },
     {
       "lesson": 74,
@@ -661,7 +734,8 @@
       "original_png": 0,
       "mulberry": 5,
       "openmoji": 5,
-      "unmatched_to_static_png": 47
+      "unmatched_to_static_png": 47,
+      "original_generated": 0
     },
     {
       "lesson": 75,
@@ -670,7 +744,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 0,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 76,
@@ -679,7 +754,8 @@
       "original_png": 0,
       "mulberry": 10,
       "openmoji": 2,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 77,
@@ -688,7 +764,8 @@
       "original_png": 0,
       "mulberry": 1,
       "openmoji": 1,
-      "unmatched_to_static_png": 34
+      "unmatched_to_static_png": 34,
+      "original_generated": 0
     },
     {
       "lesson": 78,
@@ -697,7 +774,8 @@
       "original_png": 0,
       "mulberry": 12,
       "openmoji": 1,
-      "unmatched_to_static_png": 40
+      "unmatched_to_static_png": 40,
+      "original_generated": 0
     }
   ],
   "entries_without_static_png": {
@@ -1096,58 +1174,6 @@
       "unblock the sink",
       "unclog the sink"
     ],
-    "13": [
-      "accommodation",
-      "apartments / flats (UK)",
-      "bungalow",
-      "cottage",
-      "detached houses",
-      "duplex",
-      "furnished",
-      "local",
-      "open-plan",
-      "parking space",
-      "property",
-      "ranch house",
-      "residential area",
-      "row houses / terraced houses (UK)",
-      "semi-detached houses",
-      "storage",
-      "unfurnished",
-      "estate agent",
-      "housemate",
-      "landlord",
-      "lodger",
-      "real estate",
-      "realtor",
-      "roomer",
-      "roommate",
-      "tenant",
-      "bills",
-      "deposit",
-      "give notice",
-      "including utilities",
-      "lease",
-      "maintenance request",
-      "reference (landlord)",
-      "rent",
-      "renting",
-      "security deposit",
-      "tenancy agreement",
-      "utilities",
-      "view a house",
-      "boxes",
-      "house-warming party",
-      "keys",
-      "move in",
-      "move out",
-      "move-in date",
-      "moving",
-      "moving truck",
-      "pack",
-      "removal van",
-      "unpack"
-    ],
     "14": [
       "body, parts of",
       "face",
@@ -1303,61 +1329,6 @@
       "glamorous",
       "smart",
       "styles"
-    ],
-    "18": [
-      "approachable",
-      "assertive",
-      "friendly",
-      "funny",
-      "outgoing",
-      "shy",
-      "silly",
-      "talkative",
-      "unapproachable",
-      "unfriendly",
-      "secretive",
-      "caring",
-      "considerate",
-      "generous",
-      "insensitive",
-      "kind",
-      "mean",
-      "polite",
-      "rude",
-      "selfish",
-      "sensitive",
-      "supportive",
-      "unkind",
-      "dishonest",
-      "honest",
-      "mature",
-      "immature",
-      "organized",
-      "reasonable",
-      "reliable",
-      "unreasonable",
-      "unreliable",
-      "arrogant",
-      "brave",
-      "calm",
-      "cautious",
-      "confident",
-      "eccentric",
-      "easygoing",
-      "enthusiastic",
-      "impatient",
-      "impulsive",
-      "laid-back",
-      "lazy",
-      "nervous",
-      "optimistic",
-      "passionate",
-      "patient / patient (personality trait) (adjective)",
-      "serious",
-      "personality traits",
-      "critical",
-      "intelligent",
-      "talented"
     ],
     "19": [
       "amused",

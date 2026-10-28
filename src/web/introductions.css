@@ -1407,63 +1407,103 @@
 }
 
 
-/* Conversation layout: stable speaker sides, one whole-dialogue audio control. */
+/* Compact conversation scenes. Preserve every illustration's native aspect ratio. */
+.ip-scene {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 252px) minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 16px;
+}
+.ip-scene-setting {
+  min-width: 0;
+  align-self: center;
+  text-align: center;
+}
+.ip-scene-setting img {
+  display: block;
+  width: min(100%, 252px);
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin-inline: auto;
+}
+.ip-scene-caption {
+  font-size: 11px;
+  line-height: 1.45;
+  margin-top: 6px !important;
+}
 .ip-scene-audio-row {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: -8px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  margin: 0;
+  width: 34px;
+  height: 34px;
+  display: block;
+  grid-column: auto;
 }
 .ip-page .ip-conversation-audio {
   display: inline-grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   padding: 0;
-  border: 1px solid #d6dfdd;
-  border-radius: 9px;
-  background: #fff;
-  color: #415b64;
+  border: 1px solid #dfe6e8;
+  border-radius: 50%;
+  background: #f5f8fb;
+  color: #526774;
 }
 .ip-page .ip-conversation-audio:hover:not(:disabled) {
   border-color: #8faabd;
   background: #e9f0f7;
 }
 .ip-page .ip-conversation-audio:disabled {
-  color: #93a1a1;
-  border-color: #e0e6e3;
-  background: #f7f9f6;
+  color: #859298;
+  border-color: #e6ebeb;
+  background: #f5f7f7;
   cursor: not-allowed;
 }
-.ip-conversation {
+.ip-scene .ip-conversation {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   align-items: stretch;
+  min-width: 0;
+  gap: 9px;
+  padding-top: 8px;
 }
-.ip-turn {
+.ip-scene .ip-turn {
   display: flex;
   width: 100%;
   align-items: flex-end;
-  gap: 8px;
+  gap: 6px;
 }
 .ip-turn.is-outgoing {
   flex-direction: row-reverse;
 }
 .ip-turn .ip-person {
   display: block;
-  width: 31px;
-  height: 31px;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
   object-fit: cover;
-  margin: 0 0 4px;
+  margin: 0 0 3px;
 }
 .ip-turn .ip-turn-content {
   flex: 0 1 auto;
-  max-width: 86%;
+  max-width: 84%;
   min-width: 0;
 }
 .ip-turn .ip-speaker {
-  padding: 0 4px 5px;
+  padding: 0 3px 3px;
   font-size: 11px;
 }
 .ip-turn.is-outgoing .ip-speaker {
@@ -1472,7 +1512,7 @@
 .ip-turn .ip-spoken {
   width: fit-content;
   max-width: 100%;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 12px;
   border-top-left-radius: 4px;
   background: #fff;
@@ -1484,101 +1524,112 @@
   border-radius: 12px;
   border-top-right-radius: 4px;
 }
-.ip-turn .ip-spoken .ip-phrase-text {
-  font-size: 17px;
-  line-height: 1.45;
+.ip-page .ip-turn .ip-spoken .ip-phrase-text {
+  font-size: 16px;
+  line-height: 1.4;
 }
 .ip-turn .ip-phrase-support {
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
-/* Only paired, consecutive illustrations share a row, not unrelated content. */
+.ip-scene-short {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 760px;
+}
+.ip-scene-short .ip-scene-setting {
+  padding-right: 40px;
+  text-align: left;
+}
+.ip-scene-short .ip-scene-caption {
+  text-align: left;
+  margin-top: 0 !important;
+}
+
+/* Related conversations can share a row without stretching their pictures or cards. */
 .ip-scene-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 16px;
-}
-.ip-scene-pair > .ip-scene {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto auto 1fr;
-  align-content: start;
   align-items: start;
-  gap: 10px;
-  padding: 18px;
-}
-.ip-scene-pair .ip-scene-audio-row {
-  grid-column: 1;
-  margin-bottom: 0;
-}
-.ip-scene-pair .ip-scene-setting {
+  gap: 12px;
   width: 100%;
+  max-width: 940px;
+  margin-inline: auto;
 }
-.ip-scene-pair .ip-scene-setting img {
-  display: block;
-  width: 100%;
-  max-height: 205px;
-  object-fit: contain;
-}
-.ip-scene-pair .ip-conversation {
-  min-width: 0;
-}
-@media (max-width: 1020px) {
-  .ip-scene-pair {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .ip-scene-pair > .ip-scene {
-    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-    grid-template-rows: auto 1fr;
-    align-items: center;
-  }
-  .ip-scene-pair .ip-scene-audio-row {
-    grid-column: 1 / -1;
-  }
-}
-@media (max-width: 600px) {
-  .ip-scene-audio-row { margin-bottom: 8px; }
-  .ip-turn .ip-turn-content { max-width: 84%; }
-  .ip-turn .ip-person { width: 27px; height: 27px; }
-  .ip-turn .ip-spoken { padding: 9px 11px; }
-  .ip-turn .ip-spoken .ip-phrase-text { font-size: 16px; }
-  .ip-scene-pair > .ip-scene {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto 1fr;
-    padding: 15px;
-  }
-  .ip-scene-pair .ip-scene-setting img { max-height: 160px; }
-}
-
-
-/* The second card may carry a brief heading from between the two scenes. */
-.ip-scene-pair-second { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
-.ip-scene-pair-second > :not(.ip-scene) { margin: 0 2px; }
+.ip-scene-pair > .ip-scene,
 .ip-scene-pair-second > .ip-scene {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto auto 1fr;
-  align-items: start;
+  grid-template-rows: auto auto;
   align-content: start;
-  gap: 10px;
-  padding: 18px;
-  flex: 1;
+  align-items: start;
+  gap: 9px;
+  padding: 14px;
+  max-width: none;
 }
-@media (min-width: 1021px) {
-  .ip-scene-pair-second > .ip-scene .ip-scene-audio-row { grid-column: 1; }
+.ip-scene-pair .ip-scene-setting img {
+  width: min(100%, 240px);
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
-@media (min-width: 601px) and (max-width: 1020px) {
+.ip-scene-pair .ip-scene-audio-row {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  grid-column: auto;
+  margin: 0;
+}
+.ip-scene-pair .ip-conversation {
+  min-width: 0;
+  padding-top: 0;
+}
+.ip-scene-pair-second {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+.ip-scene-pair-second > :not(.ip-scene) {
+  margin: 0 2px;
+}
+.ip-scene-pair-second > .ip-scene {
+  flex: none;
+}
+@media (max-width: 1020px) {
+  .ip-scene-pair { grid-template-columns: minmax(0, 1fr); max-width: 900px; }
+  .ip-scene-pair > .ip-scene,
   .ip-scene-pair-second > .ip-scene {
-    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-    grid-template-rows: auto 1fr;
+    grid-template-columns: minmax(0, 230px) minmax(0, 1fr);
+    grid-template-rows: auto;
     align-items: center;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
+  .ip-scene {
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    gap: 10px;
+    padding: 14px;
+  }
+  .ip-scene-setting img { width: min(100%, 230px); }
+  .ip-scene .ip-conversation { padding-top: 0; }
+  .ip-scene-pair > .ip-scene,
   .ip-scene-pair-second > .ip-scene {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto auto 1fr;
-    padding: 15px;
+    grid-template-rows: auto auto;
   }
+  .ip-scene-pair .ip-scene-setting img { width: min(100%, 230px); }
+}
+@media (max-width: 600px) {
+  .ip-scene { padding: 12px; gap: 9px; }
+  .ip-scene-audio-row { top: 9px; right: 9px; margin: 0; }
+  .ip-turn .ip-person { width: 26px; height: 26px; }
+  .ip-turn .ip-turn-content { max-width: 86%; }
+  .ip-turn .ip-spoken { padding: 8px 10px; }
+  .ip-page .ip-turn .ip-spoken .ip-phrase-text { font-size: 15px; }
+  .ip-scene-pair { gap: 12px; }
+  .ip-scene-pair > .ip-scene,
+  .ip-scene-pair-second > .ip-scene { padding: 12px; }
 }

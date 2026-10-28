@@ -3,10 +3,10 @@ export const readingTiers = ['Starter','Easy','Developing','Confident','Advanced
 export const readingCollections = [
   {
     "id": "short",
-    "title": "Short & Illustrated",
+    "title": "Short Stories",
     "ja": "短い物語・イラスト",
     "icon": "book",
-    "intro": "Small stories, clear events, a manageable first page.",
+    "intro": "Short, accessible stories with clear events and everyday English.",
     "goal": "Track who, where, what happened, and what changed."
   },
   {

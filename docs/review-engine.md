@@ -26,7 +26,7 @@ up to 10 *new* items in each queue; this is **not** yet a per-calendar-day
 limit. Missed short-term items reappear when their due timestamp arrives.
 
 ## Content identities and review prompt quality
-Current scope: Social Fluency chapter practice items, Chapters 01–96.
+Current scope: the 96 original Social Fluency source lessons. Public chapter numbers can shift when chapters are inserted; each review item stores both its stable source chapter and its current public chapter path.
 `buildPracticeCatalog` already resolves multiple source occurrences into
 practicable items, and each card retains the exact practice ID plus the
 original Study anchor. The review record stores a small content snapshot
@@ -38,7 +38,7 @@ English item first, hides the lesson context until Reveal, and asks the
 learner to judge actual recall. Context is not presented as an authoritative
 translation, and there is no automatic speaking assessment.
 
-**Not yet covered:** Chapter 97's 78 vocabulary topics, independently
+**Not yet covered:** the dedicated 78-topic vocabulary library, independently
 graded production cards, audio-based recall, cross-chapter semantic dedup,
 automatic translations, and cross-device synchronization. Don't claim
 these capabilities until their respective content and tests are ready.

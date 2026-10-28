@@ -26,7 +26,7 @@ up to 10 *new* items in each queue; this is **not** yet a per-calendar-day
 limit. Missed short-term items reappear when their due timestamp arrives.
 
 ## Content identities and review prompt quality
-Current scope: the 96 original Social Fluency source lessons. Public chapter numbers can shift when chapters are inserted; each review item stores both its stable source chapter and its current public chapter path.
+Current scope: the 96 original Social Fluency source lessons **and all 78 vocabulary topics**. Public chapter numbers can shift when chapters are inserted; each review item stores both its stable source chapter and its current public chapter path.
 `buildPracticeCatalog` already resolves multiple source occurrences into
 practicable items, and each card retains the exact practice ID plus the
 original Study anchor. The review record stores a small content snapshot
@@ -38,9 +38,7 @@ English item first, hides the lesson context until Reveal, and asks the
 learner to judge actual recall. Context is not presented as an authoritative
 translation, and there is no automatic speaking assessment.
 
-**Not yet covered:** the dedicated 78-topic vocabulary library, independently
-graded production cards, audio-based recall, cross-chapter semantic dedup,
-automatic translations, and cross-device synchronization. Don't claim
+**Included:** the dedicated 78-topic vocabulary library, with Japanese-to-English\nrecall for items with a usable Japanese cue. Chapters 1 and 2 use country/\nnationality relations and number terms; the other 76 topics use the existing\norganized card data and deduplication. The first saved meaning retains its\nFSRS history if the same normalized, sense-aware term is added again.\n**Not yet covered:** independently graded production cards, audio-based recall,\nmanual review of uncertain semantic aliases, automatic translations,\naccount sync, and backup. Don't claim
 these capabilities until their respective content and tests are ready.
 
 ## Persistence and safety
@@ -82,3 +80,23 @@ mobile UI still need a manual test before merging into `main`.
 7. Switch language; check that the same identity/history is retained.
 8. Test mobile keyboard navigation, screen readers, and storage denied
    or storage full. Error messages should be visible.
+
+
+## Vocabulary identity and non-destructive cleanup
+`vocabularyIdentity.js` owns stable content keys. `vocabularyDedup.js`
+consumes the same normalization and explicit polysemy map, including
+Polish/polish, date, ticket, fish, chicken, and bat. Plain spellings are
+deduplicated across lessons **only when they mean the same thing**.
+A country/nationality *relationship* has its own identity.
+
+In the populated source audit, 348 normalized expressions occurred in
+multiple topics. This is not 348 proven content mistakes: recurring concepts
+may reinforce a lesson, and some spellings encode different senses.
+Do not delete source entries or collapse the editorial examples to "clean"
+a review deck. Review records are separate from the immutable lesson content.
+
+Vocab review currently requires an explicit Japanese cue; picture-only items
+without a Japanese meaning do not create unsupported native recall prompts.
+The vocabulary card toggle uses one membership query per topic page, not a
+separate IndexedDB query for every item. This stage does not attempt automatic
+cross-curriculum phrase-vocabulary synonym reconciliation.

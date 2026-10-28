@@ -50,15 +50,21 @@ const leaves=<path d="M78 24q12-13 23-7-8 15-23 13Z" fill="#81aa79" stroke="#668
 function RoundFruit({kind}) {
  const color=palettes[kind]||'#dfac81'
  const pear=kind==='pear'
+ const citrus=['orange','lemon','lime'].includes(kind)
+ const lemon=kind==='lemon'||kind==='lime'
  return <g>
  {pear?<path d="M68 35q13-10 9-19q-6 4-13 0q-10 15-5 20q-24 19-14 41q12 19 33 15q26-6 27-28q-1-17-22-29Z" fill={color} stroke={outline} strokeWidth="2"/>:
-  <path d="M76 31q-17-12-30 5q-16 17-4 37q13 25 34 13q25 15 39-14q8-19-7-35q-13-15-32-6Z" fill={color} stroke={outline} strokeWidth="2"/>}
- <path d="M76 32q-3-12 1-19" stroke="#866e59" strokeWidth="3" strokeLinecap="round"/>
- {leaves}
- {['orange','lemon','lime','grapefruit'].includes(kind) && Array.from({length:5},(_,i)=><circle key={i} cx={56+i*11} cy={58+((i%2)*9)} r="1.5" fill="#f6d39d"/>)}
- {['peach','mango'].includes(kind)&&<path d="M84 37q20 19 3 44" fill="none" stroke="#bf8270" strokeWidth="2"/>}
+ citrus?(lemon?<path d="M32 52q10-6 14-18q11-19 34-17q26 1 37 24q8 11 15 11q-12 10-19 21q-20 18-46 12q-21-4-30-24Z" fill={color} stroke={outline} strokeWidth="2.5"/>:
+   <circle cx="77" cy="52" r="35" fill={color} stroke={outline} strokeWidth="2.5"/>):
+ kind==='tomato'? <path d="M76 30q-21-10-33 8q-16 20-2 40q13 17 34 11q24 12 38-14q10-19-4-37q-12-15-33-8Z" fill={color} stroke={outline} strokeWidth="2"/>:
+ <path d="M76 31q-17-12-30 5q-16 17-4 37q13 25 34 13q25 15 39-14q8-19-7-35q-13-15-32-6Z" fill={color} stroke={outline} strokeWidth="2"/>}
+ {kind==='tomato'?<path d="M76 29l-13-12 8 14-19 0 15 8 9-8 9 8 16-10-18 2 8-13Z" fill="#7b9e72" stroke="#668c69"/>:
+ <><path d="M76 29q-3-12 1-18" stroke="#866e59" strokeWidth="3" strokeLinecap="round"/>{!lemon&&leaves}</>}
+ {citrus&&Array.from({length:8},(_,i)=><circle key={i} cx={57+(i%4)*13} cy={44+Math.floor(i/4)*16} r="1.5" fill="#f6e7ac"/>)}
+ {['peach','apricot'].includes(kind)&&<path d="M84 37q20 19 3 44" fill="none" stroke="#bf8270" strokeWidth="2"/>}
  </g>
 }
+
 function Dish({kind}) {
  if(kind==='pizza') return <g><path d="M34 23q46-20 91 0l-47 64z" fill="#f5c879" stroke="#b7895a" strokeWidth="2.5"/><path d="M34 23Q78 5 125 23" stroke="#c6965c" strokeWidth="9" fill="none"/>{[[68,38],[86,52],[63,63],[101,30]].map(([x,y],i)=><circle key={i} cx={x} cy={y} r="6" fill="#ca6f5f"/>)}</g>
  if(kind==='burger')return <g><path d="M35 45q0-34 43-32q45 0 45 32z" fill="#edc185" stroke="#ac8e69" strokeWidth="2"/><path d="M36 48h87" stroke="#6da679" strokeWidth="9"/><path d="M36 59h88" stroke="#9a5b49" strokeWidth="10"/><path d="M35 69h90v10q-48 13-90 0z" fill="#efc58c" stroke="#ac8e69" strokeWidth="2"/>{[50,75,100].map(x=><ellipse key={x} cx={x} cy="28" rx="4" ry="2" fill="#fff1d6"/>)}</g>
@@ -123,6 +129,7 @@ export default function VocabularyFoodArt({kind}) {
   {kind==='milk'&&<g><path d="M59 28l8-15h23l9 15v57H59Z" fill="#fff" stroke="#a6b9cc" strokeWidth="2"/><path d="M59 42h40v34H59Z" fill="#d7e9f5"/><path d="M68 13h22" stroke="#9cb7c8" strokeWidth="4"/></g>}
   {kind==='yogurt'&&<g><path d="M42 36h70l-9 47H51Z" fill="#d9e7ef" stroke="#97adc0" strokeWidth="2"/><path d="M42 36h70" stroke="#8ca6bd" strokeWidth="7"/><circle cx="77" cy="60" r="11" fill="#e6a3ac"/></g>}
   {kind==='cookie'&&<g><circle cx="77" cy="52" r="35" fill="#dfbb8e" stroke="#b69570" strokeWidth="2"/>{[[59,38],[85,35],[96,59],[71,68],[52,61]].map(([x,y],i)=><circle key={i} cx={x} cy={y} r="4" fill="#9b7465"/>)}</g>}
+  {kind==='candy'&&<g><path d="M43 47L25 32l-10 18 10 18 18-15" fill="#f0b4b3" stroke="#b47f89" strokeWidth="2"/><path d="M109 47l18-15 10 18-10 18-18-15" fill="#f0b4b3" stroke="#b47f89" strokeWidth="2"/><rect x="41" y="31" width="72" height="41" rx="17" fill="#e79c9e" stroke="#b47f89" strokeWidth="2"/><path d="M63 39q14 14 28 0M63 63q14-14 28 0" fill="none" stroke="#f8e3d8" strokeWidth="4"/></g>}
   {kind==='chocolate'&&<g><rect x="42" y="27" width="71" height="51" rx="4" fill="#895f53" stroke="#694c48" strokeWidth="2"/>{[0,1].flatMap(y=>[0,1,2].map(x=><rect key={x+'-'+y} x={45+x*22} y={31+y*22} width="18" height="18" rx="2" fill="#a77966" stroke="#79564e"/>))}</g>}
   {['pizza','burger','sandwich','cake','cupcake','ice-cream','soup','salad','rice','fries','hot-dog','sushi'].includes(kind)&&<Dish kind={kind}/>}
  </svg>

@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { ipaGroups, allIpaSounds, getIpaSound, IPA_SOURCE_BASE } from './ipaSounds.js'
+import { ipaGroups, allIpaSounds, getIpaSound, IPA_VOICE, IPA_VOICE_SOURCE } from './ipaSounds.js'
 
 test('American English IPA chart covers consonants, vowels and glides with unique sound labels', () => {
   assert.deepEqual(ipaGroups.map(group => group.id), ['consonants', 'vowels', 'diphthongs'])
@@ -23,8 +23,9 @@ test('paired sounds and important General American notation distinctions remain 
   assert.match(IPA_SOURCE_BASE, /^https:\/\/commons\.wikimedia\.org\//)
   assert.equal(getIpaSound('i').word, 'seat')
   assert.equal(getIpaSound('ɪ').word, 'sit')
-  assert.ok(allIpaSounds.some(sound => !sound.audioFile))
-  assert.ok(allIpaSounds.some(sound => Boolean(sound.audioFile)))
+  assert.ok(allIpaSounds.every(sound => sound.audioFile.endsWith('.wav')))
+  assert.equal(getIpaSound('eɪ').word, 'day')
+  assert.equal(getIpaSound('aɪ').word, 'my')
 })
 
 test('Sounds Study and Practice use the same IPA guide without the old YouTube embed', () => {
@@ -34,8 +35,8 @@ test('Sounds Study and Practice use the same IPA guide without the old YouTube e
   const ja = readFileSync(new URL('../course/locales/ja/02-foundations.md', import.meta.url), 'utf8')
   const jaData = JSON.parse(readFileSync(new URL('../course/locales/ja/foundations.json', import.meta.url), 'utf8'))
   assert.match(ui, /mode === 'practice'/)
-  assert.match(ui, /speechSynthesis/)
-  assert.match(ui, /IPA_SOURCE_BASE/)
+  assert.match(ui, /audio\\/ipa-one-voice/)
+  assert.doesNotMatch(ui, /speechSynthesis|SpeechSynthesisUtterance|commons\\.wikimedia|IPA_SOURCE_BASE/)
   assert.match(ui, /onerror/)
   assert.match(foundation, /section\.id === 'sounds-listen' && <IpaReference mode="study"/)
   assert.match(foundation, /id === 'sounds'\) return <IpaReference mode="practice"/)

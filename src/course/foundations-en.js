@@ -228,7 +228,7 @@ export const howItWorks = [
     'Aim for clear, dependable speech and attention to the people you are talking with. Develop your own preferences as you gain experience.',
   ]),
   section('how-start', 'Make a small start today.', [
-    'Read Orientation, glance through Level Zero, and choose a starting point that is useful now. This edition’s guidance is in English.',
+    'Choose English or Japanese explanations using the language control. Read Orientation if it helps, glance through Level Zero, and choose a starting point that is useful now.',
     'Study one conversation. Pick a small set of phrases to say aloud. Try a sound exercise alongside it if that helps. Spend some of your time actually speaking, rather than only rereading explanations.',
     'Your place, notes, saved phrases, and selections stay in this browser. Device sync and scheduled review reminders are not available yet. Progress shows what you opened and the ratings you gave yourself.',
   ]),

@@ -1,10 +1,11 @@
 import aToM from './vocabularyJapaneseAM.json'
 import nToZ from './vocabularyJapaneseNZ.json'
 import reviewed from './vocabularyJapaneseOverrides.json'
+import common from './vocabularyJapaneseCommon.json'
 
 // Prefer editorial translations to ambiguous dictionary senses. The underlying
 // historical dictionaries were not always sense-aware (e.g., "fall" and "light").
-const glossary = { ...aToM, ...nToZ, ...reviewed };
+const glossary = { ...aToM, ...nToZ, ...reviewed, ...common };
 const contextual = {
  '3:morning / in the morning':'朝／午前に',
  '3:noon':'正午', '3:midday':'正午ごろ', '3:afternoon / in the afternoon':'午後／午後に',

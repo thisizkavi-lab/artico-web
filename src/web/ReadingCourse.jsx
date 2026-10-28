@@ -50,7 +50,7 @@ const escapeRx=s=>s.replace(/[\x24.*+?^{}()|[\]\\]/g,'\\$&')
 const letters=/^[\p{L}\p{N}][\p{L}\p{N}'’\-]*$/u
 function InlineText({text,glossary,onPick}){
  const terms=Object.keys(glossary).sort((a,b)=>b.length-a.length)
- const regex=new RegExp('('+terms.map(escapeRx).join('|')+')','gi')
+ const regex=new RegExp('\\b('+terms.map(escapeRx).join('|')+')\\b','gi')
  return <>{text.split(regex).map((part,i)=>{
    if(terms.some(t=>t.toLowerCase()===part.toLowerCase()))return <button type="button" className="rd-word rd-glossed" key={i} onClick={()=>onPick(part)} aria-label={'Explain '+part}>{part}</button>
    return part.split(/(\s+|[^\p{L}\p{N}'’\-]+)/u).map((token,j)=>letters.test(token)?<button type="button" className="rd-word" tabIndex={-1} key={i+'-'+j} onClick={()=>onPick(token)}>{token}</button>:<span key={i+'-'+j}>{token}</span>)
@@ -120,7 +120,7 @@ function Reader({text,mode,state,change,t,lang}){
  <section className="rd-study-terms"><div className="rd-section-heading"><p className="rd-eyebrow">LANGUAGE</p><h2>{t.use}</h2></div><div className="rd-terms">{Object.entries(text.glossary).map(([word,def])=><button key={word} type="button" onClick={()=>setWord(word)}><strong>{word}</strong><span>{lang==='ja'?def[1]:def[0]}</span></button>)}</div></section>
  <div className="rd-actions"><a className="rd-primary" href={'#'+path(text.collection,'practice',text.id)}>{t.toPractice} →</a><button type="button" className="rd-secondary" onClick={()=>change(p=>({...p,read:{...p.read,[text.id]:true}}))}>{state.read[text.id]?'✓ '+t.read:t.mark}</button></div></>:<Quiz text={text} state={state} change={change} t={t}/>}
  </div>
- {supported&&<aside className="rd-inspector"><Definition word={word} glossary={text.glossary} store={state} change={change} speak={voice.speak} t={t}/><form onSubmit={e=>{e.preventDefault();if(search.trim())setWord(search.trim().slice(0,60))}} className="rd-lookup"><label htmlFor="rd-search">{t.lookup}</label><div><input id="rd-search" value={search} maxLength={60} onChange={e=>setSearch(e.target.value)} placeholder="word"/><button type="submit" aria-label={t.lookup}>↗</button></div></form></aside>}
+ {supported&&<aside className={'rd-inspector'+(!word?' rd-empty-inspector':'')}><button type="button" className="rd-inspector-close" onClick={()=>setWord('')} aria-label="Close word explanation">×</button><Definition word={word} glossary={text.glossary} store={state} change={change} speak={voice.speak} t={t}/><form onSubmit={e=>{e.preventDefault();if(search.trim())setWord(search.trim().slice(0,60))}} className="rd-lookup"><label htmlFor="rd-search">{t.lookup}</label><div><input id="rd-search" value={search} maxLength={60} onChange={e=>setSearch(e.target.value)} placeholder="word"/><button type="submit" aria-label={t.lookup}>↗</button></div></form></aside>}
  </div>
  <nav className="rd-text-nav" aria-label="Reading navigation">{previous?<a href={'#'+path(text.collection,mode,previous.id)}>← {previous.title}</a>:<span/>}
  <a href={'#'+path(text.collection,mode,next?.id)}>{next?next.title:t.end} →</a></nav>

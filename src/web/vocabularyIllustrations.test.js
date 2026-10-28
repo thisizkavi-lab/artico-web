@@ -95,10 +95,17 @@ test('pinned Mulberry artwork is license-safe and maps only known vocabulary ent
     assert.ok(terms.has(term),'Missing vocabulary for artwork: '+term)
     assert.match(svg,/^[a-zA-Z0-9_,-]+\\.svg$/,'Invalid or unsafe source path: '+svg)
   }
+  const openmoji=JSON.parse(load('vocabularyOpenmojiManifest.json'))
+  assert.equal(openmoji.license,'CC-BY-SA-4.0')
+  assert.ok(Object.keys(openmoji.entries).length>=100)
+  for(const [term,code] of Object.entries(openmoji.entries)){
+    assert.ok(terms.has(term),'Missing vocabulary for OpenMoji artwork: '+term)
+    assert.match(code,/^[0-9A-F-]+$/)
+  }
   const client=load('vocabularyLibraryArtwork.js')
   assert.match(client,/import\\.meta\\.env\\.BASE_URL/)
   assert.match(client,/vocabulary-symbols\\/mulberry\\//)
-  assert.match(visual,/vocabularyMulberryIllustration/)
+  assert.match(visual,/vocabularyLibraryIllustration/)
   assert.match(view,/library-png/)
   assert.doesNotMatch(client,/https?:\\/\\//,'Runtime must not hotlink external images')
 })

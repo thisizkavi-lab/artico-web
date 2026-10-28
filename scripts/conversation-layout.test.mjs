@@ -43,7 +43,8 @@ test('shared conversation UI has one dialogue-level audio control, not per-line 
 
 test('chapter one actually contains repeated alternating speaker records and paired scenes', () => {
   const lesson = JSON.parse(readFileSync(new URL('../src/course/lessons/01.json', import.meta.url)))
-  const blocks = lesson.study.flatMap((section) => section.blocks)
+  const blocks = lesson.study.flatMap((section) => section.blocks.map((block) =>
+    block.type === 'conversation' ? block : { type: 'source', source: block }))
   const scenes = blocks.filter((block) => block.type === 'conversation')
   assert.ok(scenes.length >= 4)
   const byId = Object.fromEntries(lesson.phraseBank.map((item) => [item.id, item]))

@@ -18,10 +18,11 @@ const later = (minutes) => new Date(NOW.getTime() + minutes * 60_000)
 
 test('Artico practice content maps to a single stable review identity', () => {
   assert.deepEqual(toReviewContent(phrase, '01'), {
-    id: phrase.id, sourceId: phrase.id, chapter: '01', en: 'Hi.',
+    id: phrase.id, sourceId: phrase.id, chapter: '01', displayChapter: '01', en: 'Hi.',
     ja: '', context: phrase.context, kind: 'phrase',
   })
   assert.equal(toReviewContent({ ...other, studyId: 'ch01-p123' }, '01').sourceId, 'ch01-p123')
+  assert.equal(toReviewContent(phrase, '01', '02').displayChapter, '02')
   assert.throws(() => toReviewContent(phrase, '02'), /chapter/)
   assert.throws(() => toReviewContent({ ...phrase, id: 'random' }, '01'), /stable/)
   assert.throws(() => toReviewContent({ ...phrase, en: '' }, '01'), /English/)

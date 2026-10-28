@@ -56,6 +56,9 @@
 
 /* Compact practice picker: phrases stay legible while most choices fit at a glance. */
 .ip-picker-intro { margin: 0 0 14px; }
+.ip-picker-heading { display: flex; align-items: baseline; gap: 12px; }
+.ip-picker-number { flex: 0 0 auto; font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; color: #738181; }
+
 .ip-picker-intro h2 { margin: 5px 0; font-size: clamp(22px, 2.5vw, 28px); letter-spacing: -.025em; line-height: 1.25; }
 .ip-picker-intro > p:not(.ip-kicker) { color: var(--ip-muted); font-size: 14px; line-height: 1.5; }
 .ip-picker-intro .ip-resume-set { margin-top: 9px; display: inline-flex; gap: 8px; align-items: center; color: var(--ip-blue); }

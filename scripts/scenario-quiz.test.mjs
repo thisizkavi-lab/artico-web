@@ -34,6 +34,8 @@ test('each general chapter has grounded, distinct English-option recognition que
   assert.ok(files.length >= 85)
   for (const file of files) {
     const data = JSON.parse(readFileSync(root + 'lessons/' + file, 'utf8'))
+    // Chapters 01–02 use dedicated pilot data, tested above.
+    if (data.id === '01' || data.id === '02') continue
     const questions = makeScenarioQuiz({ id: data.id, phrases: data.phraseBank }, 'en')
     assert.ok(questions.length >= 1, file + ' lacks quiz-ready phrases')
     checkQuestions(questions)

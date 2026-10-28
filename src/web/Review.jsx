@@ -35,7 +35,7 @@ export default function Review() {
     setWorking(true)
     setError('')
     try {
-      await submitReview(current.id, value)
+      await submitReview(current.id, value, new Date(), current.card.reps)
       await reload()
       setRevealed(false)
     } catch (reason) {

@@ -121,3 +121,14 @@ test('original chapter 18 personality PNG scenes cover each trait',()=>{
   assert.ok(renderer.includes('cairosvg.svg2png'))
   assert.ok(renderer.includes('No reviewed personality illustration concept'))
 })
+
+test('new commute illustrations and merged equivalent expression pictures stay connected',()=>{
+  const source=load('vocabularyActionPng.js')
+  for(const term of ['arrive late','catch the bus','catch the train','commute'])
+    assert.ok(source.includes("'"+term+"'"),'Missing original scene: '+term)
+  const renderer=readFileSync(new URL('../../scripts/build_ch04_ai_actions.py',import.meta.url),'utf8')
+  assert.ok(renderer.includes("Image.Resampling.LANCZOS"))
+  assert.ok(renderer.includes("with Image.open(out) as verify"))
+  assert.ok(load('vocabularyVisual.js').includes("combinedVocabulary"))
+  assert.ok(load('vocabularyVisual.js').includes("combined === term"))
+})

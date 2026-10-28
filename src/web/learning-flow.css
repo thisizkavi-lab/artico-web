@@ -54,58 +54,60 @@
   .ip-session-nav > a { font-size: 13px; }
 }
 
-/* One clear entry point: an illustrated phrase grid with selectable cards. */
-.ip-picker-intro { margin: 0 0 24px; }
-.ip-picker-intro h2 { margin: 8px 0 7px; font-size: clamp(24px, 3vw, 31px); letter-spacing: -.025em; line-height: 1.25; }
-.ip-picker-intro > p:not(.ip-kicker) { color: var(--ip-muted); font-size: 15px; line-height: 1.6; }
-.ip-picker-intro .ip-resume-set { margin-top: 13px; display: inline-flex; gap: 8px; align-items: center; color: var(--ip-blue); }
+/* Compact practice picker: phrases stay legible while most choices fit at a glance. */
+.ip-picker-intro { margin: 0 0 14px; }
+.ip-picker-intro h2 { margin: 5px 0; font-size: clamp(22px, 2.5vw, 28px); letter-spacing: -.025em; line-height: 1.25; }
+.ip-picker-intro > p:not(.ip-kicker) { color: var(--ip-muted); font-size: 14px; line-height: 1.5; }
+.ip-picker-intro .ip-resume-set { margin-top: 9px; display: inline-flex; gap: 8px; align-items: center; color: var(--ip-blue); }
 .ip-card-picker { padding: 0; }
-.ip-card-picker .ip-selection-tools { padding: 0 0 22px; }
-.ip-card-sections { display: grid; gap: 30px; }
+.ip-card-picker .ip-selection-tools { padding: 0 0 12px; gap: 8px 12px; }
+.ip-card-picker .ip-selection-actions { gap: 4px 14px; }
+.ip-card-picker .ip-selection-actions button { min-height: 30px; }
+.ip-card-sections { display: grid; gap: 18px; }
 .ip-card-section { min-width: 0; }
-.ip-card-section .ip-list-heading { padding: 0 0 12px; }
-.ip-card-section .ip-list-heading h3 { font-size: 16px; color: #28413e; }
-.ip-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.ip-select-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #dfe5e5; border-radius: 15px; background: white; transition: border-color .15s, box-shadow .15s, background-color .15s; }
+.ip-card-section .ip-list-heading { padding: 0 0 7px; }
+.ip-card-section .ip-list-heading h3 { font-size: 14px; color: #28413e; }
+.ip-card-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; }
+.ip-select-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #dfe5e5; border-radius: 11px; background: white; transition: border-color .15s, box-shadow .15s, background-color .15s; }
 .ip-select-card:hover { border-color: #9fb6d9; }
 .ip-select-card.is-selected { border-color: #7298df; box-shadow: 0 0 0 1px #7298df; background: #fcfdff; }
 .ip-select-card:focus-within { outline: 2px solid #285bcc; outline-offset: 2px; }
-.ip-card-select { position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; cursor: pointer; padding: 13px 15px 11px; gap: 8px; }
-.ip-card-checkbox { appearance: none; position: absolute; z-index: 2; top: 20px; right: 22px; width: 25px; height: 25px; margin: 0; flex: 0 0 auto; border: 1.5px solid #91a0a7; border-radius: 8px; background: #fff; cursor: pointer; box-shadow: 0 1px 5px #132d2d15; }
+.ip-card-select { position: relative; flex: 1; min-width: 0; display: flex; flex-direction: column; cursor: pointer; padding: 7px 9px 3px; gap: 5px; }
+.ip-card-checkbox { appearance: none; position: absolute; z-index: 2; top: 13px; right: 15px; width: 24px; height: 24px; margin: 0; flex: 0 0 auto; border: 1.5px solid #91a0a7; border-radius: 6px; background: #fff; cursor: pointer; box-shadow: 0 1px 5px #132d2d15; }
 .ip-card-checkbox:checked { background: #285bcc; border-color: #285bcc; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m4 10 4 4 8-8' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E"); }
-.ip-card-visual { min-height: 132px; width: 100%; border-radius: 10px; background: #eef2ed; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #678074; }
+.ip-card-visual { width: 100%; height: 54px; min-height: 54px; border-radius: 7px; background: #eef2ed; display: flex; align-items: center; justify-content: center; overflow: hidden; color: #678074; }
 .ip-card-section:nth-child(4n + 2) .ip-card-visual { background: #eef1f7; }
 .ip-card-section:nth-child(4n + 3) .ip-card-visual { background: #f5eee6; }
 .ip-card-section:nth-child(4n + 4) .ip-card-visual { background: #f2edef; }
-.ip-card-visual img { width: 100%; height: 132px; object-fit: contain; }
-.ip-card-phrase { color: #2a3c3b; font-size: 17px; line-height: 1.4; font-weight: 650; letter-spacing: -.012em; text-wrap: pretty; overflow-wrap: anywhere; }
-.ip-card-context { color: #697979; font-size: 12px; line-height: 1.55; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-.ip-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 11px 10px 15px; margin-top: auto; min-height: 48px; }
+.ip-card-visual img { width: 100%; height: 54px; object-fit: contain; }
+.ip-card-visual .curriculum-icon { max-width: 38px; max-height: 38px; }
+.ip-card-phrase { color: #2a3c3b; font-size: 14px; line-height: 1.34; font-weight: 650; letter-spacing: -.012em; text-wrap: pretty; overflow-wrap: anywhere; }
+.ip-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 0 5px 5px 9px; margin-top: auto; min-height: 34px; }
 .ip-card-footer-spacer { flex: 1; }
-.ip-card-footer .ip-rating-label { margin: 0; font-size: 11px; }
-.ip-card-actions { display: flex; align-items: center; gap: 4px; margin-left: auto; }
-.ip-card-actions > a { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 9px; color: #71828b; }
+.ip-card-footer .ip-rating-label { margin: 0; font-size: 10px; }
+.ip-card-actions { display: flex; align-items: center; gap: 0; margin-left: auto; }
+.ip-card-actions .ip-audio { width: 32px; height: 32px; }
+.ip-card-actions > a { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; color: #71828b; }
 .ip-card-actions > a:hover { background: #edf3ff; color: #285bcc; }
-.ip-card-picker .ip-selection-bar { margin-top: 22px; }
-@media (max-width: 900px) {
-  .ip-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ip-card-picker .ip-selection-bar { margin-top: 15px; }
+@media (max-width: 1050px) {
+  .ip-card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
-@media (max-width: 600px) {
-  .ip-picker-intro { margin-bottom: 20px; }
+@media (max-width: 760px) {
+  .ip-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 540px) {
+  .ip-picker-intro { margin-bottom: 12px; }
   .ip-card-picker { padding: 0; }
-  .ip-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
-  .ip-card-select { padding: 8px 9px 8px; gap: 6px; }
-  .ip-card-checkbox { top: 14px; right: 15px; width: 24px; height: 24px; }
-  .ip-card-visual { min-height: 94px; }
-  .ip-card-visual img { height: 94px; }
-  .ip-card-phrase { font-size: 14px; line-height: 1.35; }
-  .ip-card-context { font-size: 11px; -webkit-line-clamp: 2; }
-  .ip-card-footer { padding: 4px 6px 6px 9px; flex-wrap: wrap; gap: 4px; }
+  .ip-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .ip-card-select { padding: 7px 7px 4px; gap: 5px; }
+  .ip-card-checkbox { top: 12px; right: 14px; }
+  .ip-card-visual, .ip-card-visual img { height: 48px; min-height: 48px; }
+  .ip-card-phrase { font-size: 13px; }
+  .ip-card-footer { padding: 0 4px 4px 7px; }
   .ip-card-footer .ip-rating-label { font-size: 10px; }
-  .ip-card-actions > a { width: 32px; height: 34px; }
-  .ip-card-picker .ip-selection-bar { margin-top: 18px; }
+  .ip-card-picker .ip-selection-bar { margin-top: 12px; }
 }
-@media (max-width: 370px) {
+@media (max-width: 330px) {
   .ip-card-grid { grid-template-columns: minmax(0, 1fr); }
-  .ip-card-visual, .ip-card-visual img { height: 116px; }
 }

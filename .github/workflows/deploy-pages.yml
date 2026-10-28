@@ -93,6 +93,9 @@ jobs:
         if: steps.ipa-audio-cache.outputs.cache-hit != 'true'
         run: python3 scripts/cache_ipa_audio.py
 
+      - name: Produce original daily-commute PNG illustrations
+        run: python3 scripts/build_ch04_ai_actions.py
+
       - name: Test course and learning progress
         run: pnpm test
 

@@ -84,7 +84,7 @@ export default function HandwritingAnimator() {
               const duration = durations[index]
               elapsed += duration + 180
               return playRun > 0 && (
-                <path key={index} d={d} className="hw-animator-stroke"
+                <path key={index} d={d} pathLength={1} className="hw-animator-stroke"
                   style={{
                     animationDelay: `${delay}ms`,
                     animationDuration: `${duration}ms`,

@@ -114,7 +114,7 @@ const tooGeneric = /^(?:start here|practice|use this|common|example|word|phrase|
 const goodItem = (item) => {
   const context = String(item.context ?? '').trim()
   const expression = String(item.en ?? '').trim()
-  const minimumClueLength = /[\u3040-\u30ff\u3400-\u9fff]/.test(context) ? 7 : 18
+  const minimumClueLength = /[\u3040-\u30ff\u3400-\u9fff]/.test(context) ? 4 : 18
   if (!expression || expression.length > 115 || context.length < minimumClueLength || context.length > 240) return false
   if (tooGeneric.test(context) || /^ch\d{2}-(?:b|p|line|v)/.test(expression)) return false
   // Do not put the literal answer in its description.

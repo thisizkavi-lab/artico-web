@@ -28,7 +28,11 @@ export function practiceParts(item) {
 
 export function buildPracticeCatalog(model) {
   const items = [], aliases = {}, byKey = new Map()
-  for (const source of model.phrases) {
+  // Glossary-only entries are not independent practice targets. Process them
+  // afterward only to preserve links and artwork for words already taught.
+  const teaching = model.phrases.filter((item) => item.section !== 'words')
+  const glossary = model.phrases.filter((item) => item.section === 'words')
+  for (const source of [...teaching, ...glossary]) {
     // This is explicitly a counterexample in Greetings, not a greeting to rehearse.
     if (source.id.startsWith('ch01-') && normalizePracticeText(source.en) === 'i lost my phone') continue
     const parts = practiceParts(source)
@@ -39,6 +43,9 @@ export function buildPracticeCatalog(model) {
       // An illustrated glossary entry can refer back to its already-taught word.
       const equivalent = byKey.get(key) ?? (source.section === 'words'
         ? items.find((item) => normalizePracticeText(item.en) === normalized)?.id : undefined)
+      // A word that exists only in the redundant glossary is intentionally
+      // absent from both the chooser and the shadowing session.
+      if (source.section === 'words' && !equivalent) continue
       if (equivalent) {
         const existing = items.find((item) => item.id === equivalent)
         if (!existing.art && source.art && parts.length === 1) existing.art = source.art

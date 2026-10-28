@@ -155,15 +155,9 @@ export const foundationSteps = [
   },
   {
     id: 'letters',
-    en: 'Meet the 26 letters',
-    description: 'Recognize uppercase and lowercase letters.',
-    ja: '大文字と小文字',
-  },
-  {
-    id: 'hear',
-    en: 'Hear the alphabet',
-    description: 'Listen to letter names and spell them aloud.',
-    ja: '文字の名前を聞く',
+    en: 'The Alphabet',
+    description: 'Meet, hear, and try all 26 letters.',
+    ja: 'アルファベット',
   },
   {
     id: 'write',

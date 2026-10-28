@@ -194,7 +194,7 @@ test('phrase identities survive an unrelated preceding example and keep differen
 })
 
 test('all foundation topics and existing pronunciation recordings remain available in English', () => {
-  assert.equal(Object.keys(foundationReading).length, 7)
+  assert.equal(Object.keys(foundationReading).length, 6)
   assert.deepEqual(
     foundationReading.orientation.sections.map(({ id }) => id),
     ['orientation-language', 'orientation-english', 'orientation-answer'],

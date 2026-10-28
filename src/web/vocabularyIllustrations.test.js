@@ -106,7 +106,7 @@ test('original chapter 13 PNG scene pipeline covers each moving-and-renting entr
   const renderer=readFileSync(new URL('../../scripts/build_vocabulary_original_scenes.py',import.meta.url),'utf8')
   assert.ok(renderer.includes('cairosvg.svg2png'))
   assert.ok(renderer.includes('Unusually small scene'))
-  assert.ok(load('vocabularyVisual.js').includes('vocabularyOriginalScene(term,chapter)'))
+  assert.ok(load('vocabularyVisual.js').includes('vocabularyOriginalScene(term, chapter)'))
 })
 
 test('original chapter 18 personality PNG scenes cover each trait',()=>{

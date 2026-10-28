@@ -1,0 +1,79 @@
+name: Compare American IPA voices (no production changes)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/compare-ipa-voices.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare-voices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Set up audio dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng
+          python -m pip install --quiet 'kokoro==0.9.4' 'soundfile' 'piper-tts==1.8.0'
+      - name: Compare eight tricky words with consistent settings
+        env:
+          OMP_NUM_THREADS: '2'
+          MKL_NUM_THREADS: '2'
+          HF_HUB_DISABLE_TELEMETRY: '1'
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, wave
+          import numpy as np
+          import soundfile as sf
+          from kokoro import KPipeline
+          words = ['go', 'toward', 'seat', 'sit', 'thin', 'this', 'father', 'caught']
+          output = pathlib.Path('voice-comparison')
+          output.mkdir(exist_ok=True)
+          pipeline = KPipeline(lang_code='a')
+          info = []
+          for voice in ['af_heart','af_bella']:
+              for word in words:
+                  utterance = word.capitalize() + '.'
+                  results = list(pipeline(utterance, voice=voice, speed=0.95))
+                  if not results:
+                      raise ValueError(f'No audio from {voice}: {word}')
+                  audio = np.concatenate([np.asarray(a, dtype='float32') for _, _, a in results])
+                  if not np.isfinite(audio).all() or len(audio) < 4000:
+                      raise ValueError(f'Invalid audio for {voice}/{word}')
+                  target = output / f'{voice}__{word}.wav'
+                  sf.write(target, audio, 24000)
+                  phones = ' | '.join(p for _, p, _ in results)
+                  info.append({'voice':voice,'word':word,'file':target.name,'phonemes':phones,'seconds':round(len(audio)/24000,2)})
+                  print(f'{voice}: {word}, {phones}, {len(audio)/24000:.2f}s')
+          (output / 'manifest.json').write_text(json.dumps({
+              'voices': ['af_heart','af_bella'],
+              'model': 'hexgrad/Kokoro-82M (Apache 2.0)',
+              'test_words': words,
+              'note': 'General American single-word prompts. No human quality or phoneme validation claimed.',
+              'recordings': info,
+          }, ensure_ascii=False, indent=2)+'\n', encoding='utf8')
+          PY
+      - name: Verify 16 clips and release as a private comparison artifact
+        run: |
+          test "$(find voice-comparison -maxdepth 1 -name '*.wav' | wc -l)" -eq 16
+          python - <<'PY'
+          from pathlib import Path
+          import soundfile as sf
+          for p in Path('voice-comparison').glob('*.wav'):
+              x,sr=sf.read(str(p))
+              assert sr==24000 and len(x)>4000 and abs(x).max()>.005, p
+          print('Audio sample integrity verified for 16 clips.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kokoro-american-af-heart-vs-bella-16-clips
+          path: voice-comparison/
+          retention-days: 30

@@ -1,0 +1,19 @@
+.ipa-voice-pilot { margin: 18px 0 25px; padding: 19px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); }
+.ipa-voice-pilot-header .ip-kicker { margin-bottom: 6px; }
+.ipa-voice-pilot-header h3 { font-size: 20px; font-weight: 660; margin: 0 0 7px; }
+.ipa-voice-pilot-header p:last-child { margin: 0 0 16px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.ipa-voice-pilot-grid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 8px; }
+.ipa-voice-choice { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 11px 5px; min-height: 98px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); font: inherit; color: var(--ink); cursor: pointer; }
+.ipa-voice-choice:hover, .ipa-voice-choice.is-playing { background: var(--surface-strong); border-color: var(--ip-blue); }
+.ipa-voice-choice:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
+.ipa-voice-symbol { font-family: Arial,'Noto Sans',sans-serif; font-weight: 650; font-size: 23px; white-space: nowrap; }
+.ipa-voice-word { font-size: 13px; font-weight: 600; white-space: nowrap; }
+.ipa-voice-action { display: flex; align-items: center; gap: 4px; color: var(--ip-blue); font-size: 11px; font-weight: 650; }
+.ipa-voice-status { font-size: 12px; min-height: 20px; color: var(--muted); margin: 11px 0 6px; }
+.ipa-voice-status a, .ipa-voice-source { color: var(--ip-blue); text-decoration: underline; text-underline-offset: 3px; }
+.ipa-voice-status a { margin-left: 9px; }
+.ipa-voice-instruction, .ipa-voice-note { color: var(--muted); line-height: 1.7; font-size: 12px; margin: 7px 0; }
+.ipa-voice-note { font-size: 11px; }
+.ipa-voice-source { display: inline-flex; margin-top: 5px; font-size: 12px; }
+@media(max-width: 720px) { .ipa-voice-pilot-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+@media(max-width: 420px) { .ipa-voice-pilot { padding: 13px; } .ipa-voice-pilot-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; } .ipa-voice-choice { padding: 9px 3px; } }

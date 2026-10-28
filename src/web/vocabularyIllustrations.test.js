@@ -126,3 +126,16 @@ test('original chapter 13 PNG scene pipeline covers each moving-and-renting entr
   assert.ok(renderer.includes('Unusually small scene'))
   assert.ok(load('vocabularyVisual.js').includes('vocabularyOriginalScene(term,chapter)'))
 })
+
+test('original chapter 18 personality PNG scenes cover each trait',()=>{
+  const manifest=JSON.parse(load('vocabularyPersonalityScenes.json'))
+  const lesson=source.lessons.find(x=>x.sourceLesson===18)
+  const expected=lesson.groups.flatMap(g=>g.items.map(x=>'18:'+x[0]))
+  assert.equal(expected.length,53)
+  assert.deepEqual(new Set(Object.keys(manifest.entries)),new Set(expected))
+  const files=Object.values(manifest.entries).map(x=>'18-'+x.scene+'.png')
+  assert.equal(new Set(files).size,53)
+  const renderer=readFileSync(new URL('../../scripts/build_vocabulary_personality_scenes.py',import.meta.url),'utf8')
+  assert.ok(renderer.includes('cairosvg.svg2png'))
+  assert.ok(renderer.includes('No reviewed personality illustration concept'))
+})

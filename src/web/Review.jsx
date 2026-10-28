@@ -110,7 +110,7 @@ export default function Review() {
           )}
         </div>}
         <div className="ar-bottom">
-          <a href={`#/lesson/${current.chapter}/study?line=${encodeURIComponent(current.sourceId)}`}>
+          <a href={`#/lesson/${(current.displayChapter ?? current.chapter)}/study?line=${encodeURIComponent(current.sourceId)}`}>
             {ja ? '元のレッスンへ' : 'View original lesson'}
           </a>
           <button type="button" disabled={working} onClick={suspend}>

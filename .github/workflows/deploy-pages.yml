@@ -45,7 +45,7 @@ jobs:
             public/vocabulary-symbols/mulberry
             public/vocabulary-symbols/openmoji
             public/vocabulary-symbols/original
-          key: vocabulary-art-v3-${{ hashFiles('src/web/vocabularyMulberryManifest.json', 'src/web/vocabularyOpenmojiManifest.json', 'src/web/vocabularyOriginalScenes.json', 'scripts/build_vocabulary_original_scenes.py') }}
+          key: vocabulary-art-v4-${{ hashFiles('src/web/vocabularyMulberryManifest.json', 'src/web/vocabularyOpenmojiManifest.json', 'src/web/vocabularyOriginalScenes.json', 'src/web/vocabularyPersonalityScenes.json', 'scripts/build_vocabulary_original_scenes.py', 'scripts/build_vocabulary_personality_scenes.py') }}
 
       - name: Generate locally hosted Mulberry vocabulary PNGs
         run: |
@@ -75,6 +75,9 @@ jobs:
 
       - name: Generate original chapter-specific teaching scenes
         run: python3 scripts/build_vocabulary_original_scenes.py
+
+      - name: Generate personality behavior-scene PNGs
+        run: python3 scripts/build_vocabulary_personality_scenes.py
 
       - name: Test course and learning progress
         run: pnpm test

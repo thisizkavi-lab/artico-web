@@ -44,7 +44,8 @@ jobs:
           path: |
             public/vocabulary-symbols/mulberry
             public/vocabulary-symbols/openmoji
-          key: licensed-vocab-v2-${{ hashFiles('src/web/vocabularyMulberryManifest.json', 'src/web/vocabularyOpenmojiManifest.json') }}
+            public/vocabulary-symbols/original
+          key: vocabulary-art-v3-${{ hashFiles('src/web/vocabularyMulberryManifest.json', 'src/web/vocabularyOpenmojiManifest.json', 'src/web/vocabularyOriginalScenes.json', 'scripts/build_vocabulary_original_scenes.py') }}
 
       - name: Generate locally hosted Mulberry vocabulary PNGs
         run: |
@@ -71,6 +72,9 @@ jobs:
           test -f public/worksheets/Artico_Complete_Handwriting_Workbook.pdf
           test -f public/worksheets/Artico_Handwriting_PDF_Collection.zip
           test "$(find public/worksheets -maxdepth 1 -name '*.pdf' | wc -l)" -eq 58
+
+      - name: Generate original chapter-specific teaching scenes
+        run: python3 scripts/build_vocabulary_original_scenes.py
 
       - name: Test course and learning progress
         run: pnpm test

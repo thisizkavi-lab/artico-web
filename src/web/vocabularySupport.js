@@ -2,6 +2,7 @@ import aToM from './vocabularyJapaneseAM.json'
 import nToZ from './vocabularyJapaneseNZ.json'
 import reviewed from './vocabularyJapaneseOverrides.json'
 import common from './vocabularyJapaneseCommon.json'
+import japaneseGroups from './vocabularyGroupJapanese.json'
 
 // Prefer editorial translations to ambiguous dictionary senses. The underlying
 // historical dictionaries were not always sense-aware (e.g., "fall" and "light").

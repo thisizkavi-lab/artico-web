@@ -13,6 +13,7 @@ import OrientationFigure, { orientationFigures } from './OrientationFigures'
 import OrientationPractice from './OrientationPractice'
 import StudyPlan from './StudyPlan.jsx'
 import AlphabetRecognition from './AlphabetRecognition.jsx'
+import HandwritingWorksheets from './HandwritingWorksheets.jsx'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -406,6 +407,7 @@ function FoundationPractice({ id, learning, update }) {
   if (id === 'orientation') return <OrientationPractice learning={learning} update={update} />
   if (id === 'how-it-works') return <StudyPlan learning={learning} update={update} />
   if (id === 'letters') return <AlphabetRecognition />
+  if (id === 'write') return <HandwritingWorksheets />
   const titles = {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
@@ -416,23 +418,6 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {id === 'write' && (
-        <>
-          <p className="ip-prose"> {t("Use paper and a pencil. Copy a shape, look away, and write it again. Then give those letters something familiar to spell.")} </p>
-          <ol className="rf-steps">
-            <li>{t("Write your name with a capital initial.")}</li>
-            <li>{t("Write a few family members’ names.")}</li>
-            <li>{t("Write the names of three to five friends.")}</li>
-            <li>{t("Read each name aloud and spell it letter by letter.")}</li>
-          </ol>
-          <Reflection
-            id={id}
-            learning={learning}
-            update={update}
-            label={t("Which letters would I like to try again?")}
-          />
-        </>
-      )}
       {id === 'sounds' && (
         <>
           <p className="ip-prose"> {t("Choose one sound from the video. Watch the mouth movement, listen, pause, and imitate it. Repeat a short part before trying a longer word.")} </p>

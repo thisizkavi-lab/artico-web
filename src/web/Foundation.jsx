@@ -14,6 +14,7 @@ import OrientationPractice from './OrientationPractice'
 import StudyPlan from './StudyPlan.jsx'
 import AlphabetRecognition from './AlphabetRecognition.jsx'
 import HandwritingWorksheets from './HandwritingWorksheets.jsx'
+import IpaReference from './IpaReference.jsx'
 import HandwritingAnimator from './HandwritingAnimator.jsx'
 import './foundation-readable.css'
 
@@ -245,6 +246,7 @@ export function Reading({ model }) {
             </div>
           )}
           {section.id === 'write-model' && <HandwritingAnimator />}
+          {section.id === 'sounds-listen' && <IpaReference mode="study" />}
           {section.video && (
             <YouTubeLessonPlayer
               videoId={section.video[0]}
@@ -410,6 +412,7 @@ function FoundationPractice({ id, learning, update }) {
   if (id === 'how-it-works') return <StudyPlan learning={learning} update={update} />
   if (id === 'letters') return <AlphabetRecognition />
   if (id === 'write') return <HandwritingWorksheets />
+  if (id === 'sounds') return <IpaReference mode="practice" />
   const titles = {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
@@ -420,23 +423,7 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {id === 'sounds' && (
-        <>
-          <p className="ip-prose"> {t("Choose one sound from the video. Watch the mouth movement, listen, pause, and imitate it. Repeat a short part before trying a longer word.")} </p>
-          <YouTubeLessonPlayer
-            videoId="JwTDPu2TE6k"
-            title="An introduction to English speech sounds"
-            credit="YouTube / sound introduction"
-            autoplay={false}
-          />
-          <Reflection
-            id={id}
-            learning={learning}
-            update={update}
-            label={t("A sound I want to return to")}
-          />
-        </>
-      )}
+
     </section>
   )
 }

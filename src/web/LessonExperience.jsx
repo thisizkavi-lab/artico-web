@@ -365,7 +365,6 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
                             : <CurriculumIcon name={chapterIcon(chapterId)} size={46} />}
                         </span>
                         <span className="ip-card-phrase" lang="en">{item.en}</span>
-                        <span className="ip-card-context">{item.context}</span>
                       </label>
                       <div className="ip-card-footer">
                         {set.ratings[item.id] ? (

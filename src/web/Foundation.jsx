@@ -1,5 +1,5 @@
 import japaneseFoundation from '../course/locales/ja/foundations.json'
-import { SourceContent } from './ContentBlocks'
+import { RichText, SourceContent } from './ContentBlocks'
 import { useLanguage } from './Language'
 import { Fragment, useEffect, useRef, useState } from 'react'
 import { foundationReading, twisterGuidance } from '../course/foundations-en'
@@ -25,7 +25,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
   const practice = route.view !== 'study'
   const contents = useRef(null)
   return (
-    <div className={`ip-page rf-page${['orientation', 'how-it-works'].includes(route.id) ? ' rf-orientation-lesson' : ''}`} lang={language}>
+    <div className={`ip-page rf-page${['orientation', 'how-it-works'].includes(route.id) ? ' rf-orientation-lesson' : route.id === 'letters' ? ' rf-alphabet-lesson' : ''}`} lang={language}>
       <header className="ip-lesson-heading">
         <p className="ip-kicker">
           {t(navigation.stage.title)} <span>/</span> {language === 'ja' ? 'レッスン' : 'LESSON'}{' '}
@@ -74,7 +74,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
   )
 }
 
-function AlphabetBoard() {
+function AlphabetBoard({ showcase = false }) {
   const { t, language } = useLanguage()
   const [selected, setSelected] = useState('')
   const [message, setMessage] = useState('')
@@ -83,7 +83,7 @@ function AlphabetBoard() {
     setSelected(letter)
     if (!('speechSynthesis' in window)) {
       setMessage(
-        t("Your browser does not support letter playback. Use the alphabet video in the next lesson."),
+        t("Your browser does not support letter playback. Use the alphabet video below."),
       )
       return
     }
@@ -100,11 +100,11 @@ function AlphabetBoard() {
     setMessage(`Letter ${letter}. Device voice.`)
   }
   return (
-    <div className="rf-alphabet">
+    <div className={`rf-alphabet${showcase ? " rf-alphabet--showcase" : ""}`}>
       {[t("Uppercase"), t("Lowercase")].map((label, i) => (
         <section key={label}>
           <h3>
-            {label} <span>{i ? t("small letters") : t("capital letters")}</span>
+            {showcase ? (language === "ja" ? (i ? "小文字（small letters）" : "大文字（capital letters）") : (i ? "lowercase (small) letters" : "uppercase (capital) letters")) : <>{label} <span>{i ? t("small letters") : t("capital letters")}</span></>}
           </h3>
           <div>
             {alphabet.map((letter) => {
@@ -125,7 +125,7 @@ function AlphabetBoard() {
         </section>
       ))}
       <p className="ip-context" role="status">
-        {message || t("Select a letter to hear its name. Uses your device’s speech voice.")}
+        {message || (showcase ? (language === "ja" ? "文字を押して名前を聞いてみよう。" : "Choose a letter to hear its name.") : t("Select a letter to hear its name. Uses your device’s speech voice."))}
       </p>
     </div>
   )
@@ -263,6 +263,55 @@ export function Reading({ model }) {
   )
 }
 
+function AlphabetLessonStudy({ model }) {
+  const { language } = useLanguage()
+  const [welcome, , tryIt] = model.sections
+  const japaneseSteps = tryIt.blocks?.find((block) => block.type === 'list')?.items
+  const intro = tryIt.blocks?.find((block) => block.type !== 'list')
+  const note = tryIt.blocks?.filter((block) => block.type !== 'list').slice(1) ?? []
+  const video = tryIt.video ?? ['MgmIHtp-ZQM', 'The Alphabet Song | Super Simple ABCs', 'Super Simple ABCs / Super Simple Songs', 20]
+
+  return (
+    <div className="rf-alphabet-journey">
+      <div className="rf-alphabet-hero">
+        <section className="rf-alphabet-copy" id="letters-start">
+          <h2>{welcome.title}</h2>
+          {welcome.paragraphs?.map((paragraph, index) => (
+            <p className="ip-prose" key={index}>{highlightReadingKeywords(paragraph)}</p>
+          ))}
+          {welcome.blocks?.map((block) => <SourceContent key={block.id} block={block} examples={false} />)}
+        </section>
+        <section className="rf-alphabet-panel" id="letters-board" aria-label={language === 'ja' ? 'アルファベット26文字' : 'All 26 letters'}>
+          <AlphabetBoard showcase />
+        </section>
+      </div>
+      <section className="rf-alphabet-watch" id="letters-try">
+        <p className="ip-kicker">{language === 'ja' ? '見る・言う・書く' : 'WATCH · SAY · WRITE'}</p>
+        <h2>{tryIt.title}</h2>
+        {tryIt.paragraphs?.slice(0, 1).map((paragraph, index) => <p className="ip-prose" key={index}>{highlightReadingKeywords(paragraph)}</p>)}
+        {intro && <SourceContent block={intro} examples={false} />}
+        <YouTubeLessonPlayer
+          videoId={video[0]}
+          title={video[1]}
+          credit={video[2]}
+          startAt={video[3]}
+          autoplay={false}
+        />
+        <ol className="rf-alphabet-three-steps">
+          {japaneseSteps
+            ? japaneseSteps.map((item, index) => <li key={index}><span className="rf-alphabet-step-number">0{index + 1}</span><span><RichText runs={item.runs} /></span></li>)
+            : tryIt.items?.map((item, index) => {
+              const [verb, rest] = item.split(' — ')
+              return <li key={index}><span className="rf-alphabet-step-number">0{index + 1}</span><span><strong>{verb}.</strong> {rest}</span></li>
+            })}
+        </ol>
+        {tryIt.paragraphs?.slice(1).map((paragraph, index) => <p className="ip-context rf-alphabet-note" key={index}>{highlightReadingKeywords(paragraph)}</p>)}
+        {note.map((block) => <SourceContent key={block.id} block={block} examples={false} />)}
+      </section>
+    </div>
+  )
+}
+
 function Reflection({ id, learning, update, label }) {
   const { t, language } = useLanguage()
   return (
@@ -359,7 +408,6 @@ function FoundationPractice({ id, learning, update }) {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
     letters: t("Look, say, and check."),
-    hear: t("Find the rhythm of A to Z."),
     write: t("Use a page of your own."),
     sounds: t("Notice one sound at a time."),
   }
@@ -367,19 +415,11 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {['letters', 'hear'].includes(id) && (
+      {id === 'letters' && (
         <>
           <p className="ip-prose"> {t("Say a letter’s name before selecting it. Listen and compare. Then try a short sequence without looking.")} </p>
           <AlphabetBoard />
-          {id === 'hear' && (
-            <YouTubeLessonPlayer
-              videoId="MgmIHtp-ZQM"
-              title="The Alphabet Song | Super Simple ABCs"
-              credit="Super Simple ABCs / Super Simple Songs"
-              startAt={20}
-              autoplay={false}
-            />
-          )}
+          <p className="ip-context">{language === 'ja' ? '紙に大文字と小文字をいくつか書いてみましょう。' : 'Now write a few uppercase and lowercase letters on paper.'}</p>
         </>
       )}
       {id === 'write' && (
@@ -438,7 +478,7 @@ export default function Foundation({ route, learning, update }) {
             <a className="ip-primary" href="#/foundation/tongue-intro/practice">{t('Try one tongue twister')}<Glyph name="arrow" /></a>
             <p className="ip-context">{t('The complete guide and all examples are below.')}</p>
           </aside>}
-          <Reading model={model} />
+          {route.id === 'letters' ? <AlphabetLessonStudy model={model} /> : <Reading model={model} />}
         </>
       ) : (
         <FoundationPractice id={route.id} learning={learning} update={update} />

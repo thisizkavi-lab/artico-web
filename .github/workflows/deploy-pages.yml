@@ -96,6 +96,26 @@ jobs:
       - name: Produce original daily-commute PNG illustrations
         run: python3 scripts/build_ch04_ai_actions.py
 
+      - name: Cache one-voice US English IPA pilot
+        id: tts-pilot-cache
+        uses: actions/cache@v4
+        with:
+          path: public/audio/ipa-voice-pilot
+          key: artico-ljspeech-voice-pilot-v1-${{ hashFiles('scripts/generate_ipa_voice_pilot.py') }}
+
+      - name: Generate one-voice US English IPA demo
+        if: steps.tts-pilot-cache.outputs.cache-hit != 'true'
+        run: |
+          python3 -m pip install --quiet piper-tts==1.8.0
+          mkdir -p "$RUNNER_TEMP/artico-voice"
+          (cd "$RUNNER_TEMP/artico-voice" && python3 -m piper.download_voices en_US-ljspeech-medium)
+          python3 scripts/generate_ipa_voice_pilot.py "$RUNNER_TEMP/artico-voice/en_US-ljspeech-medium.onnx"
+
+      - name: Check generated one-voice audio
+        run: |
+          test -f public/audio/ipa-voice-pilot/manifest.json
+          test "$(find public/audio/ipa-voice-pilot -maxdepth 1 -name '*.wav' | wc -l)" -eq 12
+
       - name: Test course and learning progress
         run: pnpm test
 

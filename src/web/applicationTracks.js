@@ -105,28 +105,10 @@ export const applicationTracks = [
   },
   {
     id:'ideas', icon:'lightbulb', en:'Ideas & Expression', ja:'アイデア・表現',
-    enSummary:'Explain ideas, explore values and have meaningful conversations.',
-    jaSummary:'考えや価値観を伝え、深い会話をする。',
-    tasks:[
-      { en:'Explain a difficult idea simply', ja:'難しいアイデアを簡単に説明する', kind:'speaking',
-        promptEn:'Choose something you know well. Explain it to a curious friend using one simple analogy, one example, and no unnecessary jargon.',
-        promptJa:'よく知っているテーマを一つ選び、友人に説明しましょう。わかりやすいたとえと具体例を一つずつ使います。',
-        example:'Think of it like ... For example, ... The important part is ...',
-        checkpointsEn:['Define the idea.','Use one helpful analogy.','Explain why it matters.'],
-        checkpointsJa:['テーマを定義する。','たとえを一つ使う。','なぜ重要か話す。'] },
-      { en:'Disagree with style and respect', ja:'自然に、丁寧に反対意見を伝える', kind:'speaking',
-        promptEn:'Respond to: “Everyone should study the same way.” Respectfully disagree, explain why, and invite another viewpoint.',
-        promptJa:'「みんな同じ方法で勉強すべきだ」という意見に、丁寧に反対しましょう。理由を伝え、相手の意見も聞きます。',
-        example:'I see your point, but I think ... What do you think about ...?',
-        checkpointsEn:['Acknowledge the other view.','State a clear disagreement.','Invite discussion.'],
-        checkpointsJa:['相手の意見を受け止める。','自分の考えを述べる。','会話を続ける質問をする。'] },
-      { en:'Have a meaningful conversation', ja:'価値観について深く話す', kind:'speaking',
-        promptEn:'A close friend says, “I’m not sure what I want to do next.” Rather than rushing to give advice, ask what matters to them, acknowledge their feelings, and share one thoughtful perspective if they welcome it.',
-        promptJa:'親しい友人が「次に何をしたいのかわからない」と言っています。すぐに助言せず、相手にとって大切なことを聞き、気持ちを受け止めましょう。相手が望めば、自分の考えも一つ伝えます。',
-        example:'A: I’m not sure what I want to do next.\nB: That sounds like a lot to figure out. What matters most to you right now?\nA: I think I want something more meaningful.\nB: I get that. Do you want to talk it through, or would it help just to have someone listen?',
-        checkpointsEn:['Ask an open question instead of making assumptions.','Reflect what the other person means.','Offer your view without taking over the conversation.'],
-        checkpointsJa:['決めつけずに自由に答えられる質問をする。','相手の気持ちや考えを受け止める。','自分の意見を押し付けない。'] },
-    ],
+    enSummary:'Explore, refine, and express your own thinking in clear English.',
+    jaSummary:'考えを深め、論理を整え、自分の言葉で英語で伝える。',
+    tasks:[], // Dedicated eight-lesson IdeasCourse. Legacy saved drafts remain untouched.
+
   },
 ]
 export const applicationIds=applicationTracks.map(track=>track.id)

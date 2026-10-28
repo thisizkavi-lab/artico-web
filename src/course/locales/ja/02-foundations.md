@@ -66,7 +66,7 @@
 3. 大文字と小文字を、対にして書きます。
 4. 身近な単語にもつなげます。例は **A, a, apple** です。
 
-**参考動画:** [Writing the English alphabet — DorufaVSArt](https://www.youtube.com/watch?v=DnNqoEXoGdg)。文字の形を確かめるための参考です。動画の進み方に急いで合わせる必要はありません。
+**アニメーション:** 下にあるArticoの書き方ガイドで、文字と書き順を選べます。大文字と小文字を切り替え、１画ずつ確認しましょう。
 
 <!-- section: write-names -->
 ### 03 自分に関係のある名前を書く

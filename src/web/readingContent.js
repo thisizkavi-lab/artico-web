@@ -4,7 +4,7 @@ export const readingCollections = [
   {
     "id": "short",
     "title": "Short Stories",
-    "ja": "短い物語・イラスト",
+    "ja": "短い物語",
     "icon": "book",
     "intro": "Short, accessible stories with clear events and everyday English.",
     "goal": "Track who, where, what happened, and what changed."

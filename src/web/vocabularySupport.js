@@ -43,7 +43,7 @@ const contextual = {
  '4:get ready':'支度をする', '4:get dressed':'服を着る',
  '4:brush your hair':'髪をとかす', '4:brush your teeth':'歯を磨く',
  '4:dry your hair':'髪を乾かす', '4:shave':'ひげをそる',
- '4:commute':'通勤・通学する',
+ '4:commute':'通勤・通学する', '4:drive':'車を運転する',
  '4:have a break':'休憩する', '4:arrive late':'遅れて到着する',
  '4:go out':'外出する', '4:go home':'家に帰る',
  '4:take out the trash':'ごみを出す',
@@ -63,7 +63,7 @@ const contextual = {
  '5:near':'近い', '5:far':'遠い',
  '5:shape':'形', '5:weight':'重さ', '5:size':'大きさ',
  '5:price':'価格',
- '6:good':'良い', '6:great':'とても良い',
+ '6:good':'良い', '6:great':'とても良い', '6:awful':'ひどい', '6:horrible':'ひどい・恐ろしい',
  '6:nice':'感じの良い', '6:pretty':'きれいな・かわいい',
  '6:brilliant':'すばらしい',
  '6:fantastic':'すばらしい', '6:incredible':'信じられないほどすごい',
@@ -94,9 +94,9 @@ const contextual = {
  '7:username':'ユーザー名',
  '7:password':'パスワード',
  '7:link':'リンク',
- '7:house number':'番地',
+ '7:house number':'番地', '7:state':'州',
  '7:company name':'会社名',
- '7:business card':'名刺'
+ '7:business card':'名刺', '15:take off':'（服を）脱ぐ', '39:take off':'（事業などが）急に成功する'
 };
 
 const groupNames = {

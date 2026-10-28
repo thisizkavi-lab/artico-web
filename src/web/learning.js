@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?)$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?)$/
 const isPractice = (path) =>
   /\/practice(?:[/?]|$)/.test(path) || /\/foundation\/lr\/(?:chunks|whole)/.test(path)
 
@@ -149,13 +149,6 @@ export function parseRoute(hash) {
     }
   }
   if (page === 'application') {
-    if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature)$/.test(view ?? '') && ['study', 'practice'].includes(scene)) {
-      if (segments.length > 4) return {path:'/application/reading',page:'application',id:'reading'}
-      const query = new URLSearchParams(path.split('?')[1] ?? '')
-      const text = /^[a-z0-9-]{1,70}$/.test(query.get('text') ?? '') ? query.get('text') : null
-      const clean = '/application/reading/' + view + '/' + scene + (text ? '?text=' + text : '')
-      return {path:clean,page:'application',id:'reading',collection:view,view:scene,...(text?{text}:{})}
-    }
     if (id === 'tests' && view === 'ielts') {
       const area = /^(?:home|overview|speaking|writing|listening|reading|guided|mocks|simulation)$/.test(scene ?? '') ? scene : 'home'
       const mode = segments[4] === 'practice' ? 'practice' : 'study'
@@ -171,65 +164,7 @@ export function parseRoute(hash) {
     }
     if (id === 'ideas' && /^(?:home|0[1-8])$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       const given = new URLSearchParams(path.split('?')[1] ?? '').get('task')
-      const task = scene === 'practice' && new RegExp('^' + view + '-[a-z]
-    if (id === 'smalltalk' && /^(?:0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))
-      return { path: '/application/smalltalk/' + view + '/' + scene, page:'application', id:'smalltalk', lesson:view, mode:scene }
-    if (id === 'storytelling' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene))
-      return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
-    if (!id) return { path: '/application', page:'application' }
-    if (/^(?:tests|smalltalk|interviews|presentations|academic|storytelling|writing|reading|ideas)$/.test(id) && !view)
-      return { path:'/application/' + id, page:'application', id }
-    return { path: '/application', page:'application' }
-  }
-  if (page === 'home') return { path: '/home', page: 'home' }
-  if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
-  if (
-    page === 'lesson' &&
-    /^(?:0[1-9]|[1-8]\d|9[0-7])$/.test(id) &&
-    ['study', 'practice', 'reader', 'words', 'phrases'].includes(view)
-  ) {
-    const query = new URLSearchParams(path.split('?')[1] ?? '')
-    const phrase = query.get('phrase')
-    const line = query.get('line')
-    return {
-      path,
-      page,
-      id,
-      view: view === 'reader' ? 'study' : view,
-      scene: scene === 'friend' ? 'friend' : 'first',
-      ...(view === 'practice' && ['phrase-friend', 'phrase-coworker'].includes(phrase)
-        ? { phrase }
-        : {}),
-      ...(['practice', 'study', 'reader'].includes(view) &&
-      new RegExp(`^ch${sourceChapterId(id) ?? id}-(?:line|v|b|p)\\d+$`).test(line)
-        ? { line }
-        : {}),
-    }
-  }
-  if (
-    page === 'foundation' &&
-    /^(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)$/.test(id)
-  ) {
-    return {
-      path,
-      page,
-      id,
-      view: ['study', 'practice', 'chunks', 'whole'].includes(view) ? view : 'study',
-    }
-  }
-  return { path: '/home', page: 'home' }
-}
-
-export function visit(learning, path) {
-  return validView.test(path)
-    ? { ...learning, last: path, lastPractice: isPractice(path) ? path : learning.lastPractice }
-    : learning
-}
-
-export function toggleSaved(saved, id) {
-  return saved.includes(id) ? saved.filter((item) => item !== id) : [...saved, id]
-}
-).test(given ?? '') ? given : null
+      const task = scene === 'practice' && new RegExp('^' + view + '-[a-z]$').test(given ?? '') ? given : null
       return { path:'/application/ideas/' + view + '/' + scene + (task ? '?task=' + task : ''), page:'application', id:'ideas',
         lesson:view, mode:scene, ...(task ? { task } : {}) }
     }

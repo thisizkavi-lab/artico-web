@@ -473,7 +473,7 @@ function PracticeComplete({ set, change, onStart }) {
 
 function PracticeSession({ set, change, audioProps, learning, save }) {
   const { t, language } = useLanguage()
-  const { practiceById: introductionById, sectionById, studyPath, id: chapterId } = useLesson()
+  const { practiceById: introductionById, sectionById, studyPath, id: chapterId, displayId: displayChapter } = useLesson()
   const item = introductionById[set.session.ids[set.session.index]]
   const [covered, setCovered] = useState(false)
   const [reviewAdded, setReviewAdded] = useState(false)
@@ -500,7 +500,7 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
     setReviewError('')
     try {
       if (reviewAdded) await suspendReviewItem(item.id)
-      else await saveReviewItem(toReviewContent(item, chapterId))
+      else await saveReviewItem(toReviewContent(item, chapterId, displayChapter ?? chapterId))
       setReviewAdded(!reviewAdded)
     } catch (error) {
       setReviewError(error.message)

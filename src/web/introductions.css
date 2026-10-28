@@ -877,6 +877,8 @@
 }
 .ip-focus-top {
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;

@@ -86,21 +86,49 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
       )}
       <div className="ip-phrase-copy">
         {item.register && <span className="ip-register">{item.register}</span>}
-        {individual.length ? <ul className="ip-word-alternatives">
-          {individual.map((part) => <li key={part.id}><span className="ip-phrase-text" lang="en">{part.en}</span><PhraseAudio item={part} {...audioProps} /></li>)}
-        </ul> : <p className="ip-phrase-text" lang="en">{item.en}</p>}
+        {conversation ? <p className="ip-phrase-text" lang="en">{item.en}</p> :
+          individual.length ? <ul className="ip-word-alternatives">
+            {individual.map((part) => <li key={part.id}><span className="ip-phrase-text" lang="en">{part.en}</span><PhraseAudio item={part} {...audioProps} /></li>)}
+          </ul> : <p className="ip-phrase-text" lang="en">{item.en}</p>}
         {!conversation && <p className="ip-context">{item.context}</p>}
         {conversation && language === 'ja' && item.ja && <p className="ip-phrase-support" lang="ja">{item.ja}</p>}
       </div>
-      {!individual.length && <PhraseAudio item={item} {...audioProps} />}
+      {!conversation && !individual.length && <PhraseAudio item={item} {...audioProps} />}
     </article>
+  )
+}
+
+// A single play control belongs to the complete exchange, not each turn.
+function ConversationAudio({ block, audioProps }) {
+  const { t } = useLanguage()
+  const id = block.audioId ?? block.id ?? `dialogue-${block.phrases[0]}`
+  const ready = Boolean(approvedAudio[id])
+  const playing = ready && audioProps.activeId === id && audioProps.audio.playing
+  return (
+    <button
+      type="button"
+      className="ip-conversation-audio"
+      aria-label={ready
+        ? (playing ? t('Pause conversation audio') : t('Play full conversation'))
+        : t('Conversation recording not yet available')}
+      title={ready ? t('Listen to the full conversation') : t('Recording coming soon')}
+      disabled={!ready}
+      onClick={() => audioProps.onPlay(id)}
+    >
+      <Glyph name={playing ? 'pause' : 'play'} size={16} />
+    </button>
   )
 }
 
 function Conversation({ block, audioProps, focusedId }) {
   const { byId: introductionById } = useLesson()
+  // A person stays on the same side for the entire exchange.
+  const speakers = [...new Set(block.phrases.map((id) => introductionById[id]?.speaker).filter(Boolean))]
   return (
     <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}`}>
+      <div className="ip-scene-audio-row">
+        <ConversationAudio block={block} audioProps={audioProps} />
+      </div>
       <div className="ip-scene-setting">
         {block.art && (
           <img src={art(block.art)} alt={block.alt} width="560" height="280" loading="lazy" />
@@ -108,17 +136,14 @@ function Conversation({ block, audioProps, focusedId }) {
         <p className="ip-scene-caption">{block.title}</p>
       </div>
       <div className="ip-conversation" aria-label={block.title}>
-        {block.phrases.map((id) => {
+        {block.phrases.map((id, index) => {
           const item = introductionById[id]
+          const speakerIndex = item.speaker ? speakers.indexOf(item.speaker) : index
+          const outgoing = speakerIndex % 2 === 1
+          const portrait = item.portrait ?? (portraits[item.speaker] ? `portrait-${portraits[item.speaker]}.svg` : null)
           return (
-            <div key={id} className="ip-turn">
-              <img
-                className="ip-person"
-                src={art(item.portrait ?? `portrait-${portraits[item.speaker]}.svg`)}
-                width="32"
-                height="32"
-                alt=""
-              />
+            <div key={id} className={`ip-turn ${outgoing ? 'is-outgoing' : 'is-incoming'}`}>
+              {portrait && <img className="ip-person" src={art(portrait)} width="32" height="32" alt="" />}
               <div className="ip-turn-content">
                 <span className="ip-speaker">{item.speaker}</span>
                 <PhraseCard id={id} audioProps={audioProps} focusedId={focusedId} conversation />
@@ -129,6 +154,19 @@ function Conversation({ block, audioProps, focusedId }) {
       </div>
     </div>
   )
+}
+
+// Adjacent illustrated scenes sit side by side when space allows.
+function groupConversationScenes(blocks) {
+  const grouped = []
+  for (let i = 0; i < blocks.length; i++) {
+    const first = blocks[i], second = blocks[i + 1]
+    if (first.type === 'conversation' && first.art && second?.type === 'conversation' && second.art) {
+      grouped.push({ type: 'conversation-pair', conversations: [first, second] })
+      i++
+    } else grouped.push(first)
+  }
+  return grouped
 }
 
 function Study({ audioProps, focusedId }) {
@@ -152,7 +190,7 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {section.blocks.map((block, blockIndex) => {
+          {groupConversationScenes(section.blocks).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -199,6 +237,14 @@ function Study({ audioProps, focusedId }) {
                     ))}
                   </div>
                 </aside>
+              )
+            if (block.type === 'conversation-pair')
+              return (
+                <div className="ip-scene-pair" key={blockIndex}>
+                  {block.conversations.map((conversation, i) => (
+                    <Conversation key={conversation.id ?? i} block={conversation} audioProps={audioProps} focusedId={focusedId} />
+                  ))}
+                </div>
               )
             if (block.type === 'conversation')
               return (

@@ -1,5 +1,5 @@
 <!-- lesson: tongue-intro | source: artico-web/src/course/foundations-en.js; artico-web/src/data.js -->
-# F05 — 早口言葉を使う理由 / Why tongue twisters?
+# F04 — 早口言葉を使う理由 / Why tongue twisters?
 
 **このレッスンでできるようになること:** 練習する音を一つ選び、短いまとまりから口の動きを確かめ、その動きを普通のフレーズへつなげる。
 
@@ -342,12 +342,12 @@ uniqueは「ほかにない、独特な」という意味です。この短い�
 
 既存の録音は練習用のサンプルです。これから作るコース全体の音声と同じ声・同じアクセントで統一済みとは扱いません。文字の解説だけでも、実際の録音の発音やタイミングを確認したことにはなりません。
 
-**次のレッスン:** F06 — LとRを、短い文でつなげる。
+**次のレッスン:** F05 — LとRを、短い文でつなげる。
 
 ---
 
 <!-- lesson: lr | source: artico-web/src/web/SoundLesson.jsx; artico-web/src/web/content.js -->
-# F06 — LとRを、短い文でつなげる / L & R, in rhythm.
+# F05 — LとRを、短い文でつなげる / L & R, in rhythm.
 
 **このレッスンでできるようになること:** LとRに注意しながら、三つの短い部分を、一つの文へつなげる。
 

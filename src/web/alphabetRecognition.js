@@ -1,4 +1,4 @@
-// A short recognition check, not a score or a test of pronunciation.
+// Short recognition checks: one visual letter or one letter name spoken aloud.
 // Each group of three rounds covers all 26 letters, with four repeated.
 const ORDER = 'BDPQGAELIMNUVWYRSCO TFHJKXZ'.replace(/\s/g, '').split('')
 const SIMILAR = {
@@ -15,16 +15,21 @@ export function makeAlphabetRecognitionCards(round = 0) {
   const number = Number.isSafeInteger(round) && round >= 0 ? round : 0
   return Array.from({ length: LETTERS_PER_CHECK }, (_, index) => {
     const letter = ORDER[(number * LETTERS_PER_CHECK + index) % ORDER.length]
-    const direction = index % 2 === 0 ? 'lower' : 'upper'
+    const media = index % 3 === 2 ? 'audio' : 'visual'
+    // Audio questions test the spoken letter name, not letter case.
+    const direction = media === 'audio' ? 'upper' : index % 2 === 0 ? 'lower' : 'upper'
     const convert = direction === 'lower' ? value => value.toLowerCase() : value => value.toUpperCase()
     const answer = convert(letter)
-    const options = [answer, ...SIMILAR[letter].map(convert)]
+    const distractors = SIMILAR[letter].map(convert)
     const target = (index + number) % 3
-    const choices = [...options.slice(1)]
+    const choices = [...distractors]
     choices.splice(target, 0, answer)
     return {
       id: `${number}-${index}-${letter}`,
-      shown: direction === 'lower' ? letter : letter.toLowerCase(),
+      letter,
+      media,
+      // Never render a visible letter on an audio-only card.
+      shown: media === 'visual' ? (direction === 'lower' ? letter : letter.toLowerCase()) : null,
       answer,
       choices,
       direction,

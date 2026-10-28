@@ -72,7 +72,7 @@ function Dish({kind}) {
  return <g><ellipse cx="77" cy="62" rx="50" ry="13" fill="#e5ecf3" stroke="#97abc4" strokeWidth="2"/><circle cx="76" cy="47" r="23" fill="#dfb47e"/></g>
 }
 export default function VocabularyFoodArt({kind}) {
- const round=['apple','orange','lemon','lime','peach','plum','mango','tomato','potato','pear','fig','kiwi','pomegranate','melon','papaya'].includes(kind)
+ const round=['apple','orange','lemon','lime','peach','plum','mango','tomato','pear','fig','kiwi','pomegranate','melon','papaya'].includes(kind)
  return <svg className="vlt-food-art" viewBox="0 0 152 96" role="img" aria-label="Illustrated food">
   <rect x="1" y="1" width="150" height="94" rx="10" fill="#fcf9f3" stroke="#efe6da"/>
   <ellipse cx="77" cy="84" rx="46" ry="5" fill="#e2d6c8" fillOpacity=".65"/>
@@ -91,11 +91,17 @@ export default function VocabularyFoodArt({kind}) {
   {kind==='corn'&&<g><rect x="56" y="18" width="42" height="67" rx="20" fill="#eaca70" stroke="#a99251" strokeWidth="2"/>{[28,39,50,61,72].map(y=>[64,75,86].map(x=><circle key={x+'-'+y} cx={x} cy={y} r="4" fill="#f4df94"/>))}<path d="M58 82Q40 47 44 33q8 19 32 28M93 82q26-40 14-51q-7 29-24 35" fill="#83ac75" stroke="#719269" strokeWidth="2"/></g>}
   {kind==='broccoli'||kind==='cauliflower'?<g><path d="M66 54h26l-3 33H69Z" fill="#b6c796"/><circle cx="59" cy="43" r="21" fill={kind==='broccoli'?'#679d75':'#e7dec2'} stroke="#779d79"/><circle cx="88" cy="35" r="21" fill={kind==='broccoli'?'#75aa79':'#eae1cd'} stroke="#779d79"/><circle cx="101" cy="51" r="19" fill={kind==='broccoli'?'#609a6f':'#e9e0c9'} stroke="#779d79"/></g>:null}
   {kind==='mushroom'&&<g><path d="M65 46h28l-7 40H72Z" fill="#ebd5b6" stroke="#b49c82" strokeWidth="2"/><path d="M41 51Q41 10 78 15Q113 15 115 51Z" fill="#c48976" stroke="#946d67" strokeWidth="2"/>{[59,82,103].map(x=><circle key={x} cx={x} cy="35" r="4" fill="#f3dfcb"/>)}</g>}
-  {kind==='onion'||kind==='garlic'&&<g/>}
   {['onion','garlic','potato'].includes(kind)&&<g><path d="M76 22q-29 22-24 50q5 18 25 17q25 2 28-18q1-25-29-49Z" fill={kind==='garlic'?'#f0e5d3':kind==='onion'?'#c7a986':'#be9a73'} stroke="#aa8b71" strokeWidth="2"/><path d="M76 20V9" stroke="#719d6f" strokeWidth="4"/></g>}
   {kind==='cucumber'&&<g><rect x="38" y="43" width="84" height="28" rx="14" fill="#7cb08b" stroke="#5e946b" strokeWidth="2"/><path d="M45 57h70" stroke="#a3c99e" strokeWidth="4"/></g>}
   {kind==='peas'&&<g><path d="M25 44q30-29 100 0q-29 34-100 0Z" fill="#82b27a" stroke="#5e966e" strokeWidth="2"/>{[49,69,88,107].map(x=><circle key={x} cx={x} cy="44" r="8" fill="#a9ca8e" stroke="#749e6b"/>)}</g>}
-  {kind==='lettuce'||kind==='cabbage'&&<g><circle cx="76" cy="52" r="35" fill="#a4cb8d" stroke="#6ea374" strokeWidth="2"/><path d="M49 46q29-31 55 0q-40 0-36 26Q87 61 99 58" fill="none" stroke="#72a671" strokeWidth="3"/></g>}
+  {['lettuce','cabbage'].includes(kind)&&<g><circle cx="76" cy="52" r="35" fill="#a4cb8d" stroke="#6ea374" strokeWidth="2"/><path d="M49 46q29-31 55 0q-40 0-36 26Q87 61 99 58" fill="none" stroke="#72a671" strokeWidth="3"/></g>}
+  {kind==='coconut'&&<g><ellipse cx="77" cy="55" rx="35" ry="31" fill="#9d7a5e" stroke="#795b4e" strokeWidth="2.5"/><path d="M44 53q32-20 63 0M51 71q27-16 51 0" fill="none" stroke="#c4a184" strokeWidth="2"/><circle cx="65" cy="44" r="3" fill="#745748"/><circle cx="86" cy="44" r="3" fill="#745748"/></g>}
+  {kind==='raisins'&&<g>{[[52,43],[66,33],[79,43],[92,38],[105,52],[61,61],[83,63],[94,72]].map(([x,y],i)=><ellipse key={i} cx={x} cy={y} rx="9" ry="12" fill="#a17b68" stroke="#806253" strokeWidth="1.5"/>)}</g>}
+  {kind==='nuts'&&<g>{[[53,55],[78,43],[105,59]].map(([x,y],i)=><g key={i}><ellipse cx={x} cy={y} rx="14" ry="20" transform={'rotate('+(i*24-15)+' '+x+' '+y+')'} fill="#d2b184" stroke="#9d815e" strokeWidth="2"/><path d={'M'+(x-6)+' '+y+'q6-8 12 0'} fill="none" stroke="#af906b" strokeWidth="1.5"/></g>)}</g>}
+  {kind==='butter'&&<g><path d="M34 47l48-19 42 17-44 24Z" fill="#f6d88d" stroke="#c9ae74" strokeWidth="2"/><path d="M34 47v18l46 20V69M124 45v18L80 85" fill="#e9c97e" stroke="#c9ae74" strokeWidth="2"/></g>}
+  {kind==='bottle'&&<g><path d="M63 17h29v16l9 13v37H54V46l9-13Z" fill="#bcdfec" fillOpacity=".8" stroke="#83acc1" strokeWidth="2.5"/><path d="M65 13h25" stroke="#669cb6" strokeWidth="7"/><path d="M60 54h36v22H60Z" fill="#e5f1f6"/></g>}
+  {kind==='glass'&&<g><path d="M45 20h65l-9 62q-23 8-47 0Z" fill="#d8eef2" fillOpacity=".65" stroke="#8eb2c0" strokeWidth="2.5"/><path d="M50 55q26 8 55 0" fill="none" stroke="#74b8d0" strokeWidth="3"/></g>}
+  {kind==='bowl'&&<g><ellipse cx="77" cy="42" rx="49" ry="17" fill="#eef5fa" stroke="#8eabc7" strokeWidth="2.5"/><path d="M28 42q2 42 49 42t49-42" fill="#e3edf5" stroke="#8eabc7" strokeWidth="2.5"/></g>}
   {kind==='egg'&&<ellipse cx="77" cy="52" rx="25" ry="34" fill="#f5f2e7" stroke="#c3b8a7" strokeWidth="2"/>}
   {kind==='fried-egg'&&<g><path d="M35 54q-8-21 18-27q14-15 35 1q38-7 40 23q2 31-29 30q-17 14-36 0q-32 5-28-27Z" fill="#fffdf2" stroke="#ddd0b9" strokeWidth="2"/><circle cx="79" cy="52" r="18" fill="#f1c06f"/></g>}
   {kind==='fish'&&<g><path d="M32 54Q65 16 111 54Q66 87 32 54Z" fill="#88b3c0" stroke="#577e97" strokeWidth="2"/><path d="M109 53l28-22v44Z" fill="#85adb6" stroke="#577e97" strokeWidth="2"/><circle cx="49" cy="50" r="3" fill="#4f6270"/></g>}

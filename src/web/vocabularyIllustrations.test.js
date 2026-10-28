@@ -11,6 +11,7 @@ const time=load('VocabularyTimeArt.jsx')
 const food=load('VocabularyFoodArt.jsx')
 const visual=load('vocabularyVisual.js')
 const dedup=load('vocabularyDedup.js')
+const identity=load('vocabularyIdentity.js')
 const japanese=load('vocabularySupport.js')
 
 test('all 78 vocabulary sources remain intact after non-destructive deduplication',()=>{
@@ -30,7 +31,7 @@ test('all 78 vocabulary sources remain intact after non-destructive deduplicatio
 
 test('polysemy is protected rather than deleting different concepts',()=>{
   for(const spelling of ['polish','turkey','second','date','chicken','fish','crab','nuts','light','burn','bat','court','ticket','interview','mean','record','train','leg'])
-    assert.match(dedup,new RegExp('\\b'+spelling+':\\s*\\{'),spelling+' needs a sense review')
+    assert.match(identity,new RegExp('\\b'+spelling+':\\s*\\{'),spelling+' needs a sense review')
   assert.match(japanese,/'55:bat':'コウモリ'/)
   assert.match(japanese,/'62:bat':'バット/)
   assert.match(japanese,/'29:date':'デーツ/)

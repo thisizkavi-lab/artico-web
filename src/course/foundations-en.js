@@ -129,50 +129,41 @@ export const foundationReading = {
   },
   sounds: {
     title: 'Letters & sounds',
-    subtitle: 'What you see and what you hear are connected in different ways.',
+    subtitle: 'Meet the sounds behind English spelling.',
     sections: [
       section(
         'sounds-difference',
         'A letter is not a sound.',
         [
-          'English has 26 letters. Speech uses a wider set of sound distinctions. Different accents and descriptions group those sounds differently, so there is no single sound count you need to memorize.',
-          'The same letter can represent different sounds. Several letters can represent one sound. A written letter can also be silent.',
+          'English has 26 letters. It has more speech sounds than letters, and different accents use slightly different sound systems.',
+          'The same letter can represent different sounds. Several letters can represent one sound. Sometimes a written letter is silent.',
         ],
         {
           examples: [
-            ['know', 'The initial k is normally silent.'],
-            ['knife', 'Again, you write k without a separate k sound.'],
+            ['know', 'The initial k is silent.'],
+            ['knife', 'The written k is not a separate sound.'],
           ],
         },
       ),
       section(
         'sounds-listen',
-        'Begin by noticing.',
+        'Hear the sounds of English.',
         [
-          'Watch this introduction to English sounds. Listen, choose a sound, and try imitating it. You do not need to learn every symbol or pronunciation rule at once.',
+          'The chart below shows common consonants, vowels, and vowel glides in General American English. Each row has an IPA symbol, a familiar word, and a short note.',
+          'Select Listen to hear the example word. Listen, say it aloud, and notice the sound marked by the symbol. You do not need to memorize the whole chart.',
         ],
-        {
-          video: [
-            'JwTDPu2TE6k',
-            'An introduction to English speech sounds',
-            'YouTube / sound introduction',
-            0,
-          ],
-        },
       ),
       section(
         'sounds-ipa',
-        'A map for pronunciation.',
+        'IPA is a pronunciation map.',
         [
-          'The International Phonetic Alphabet, or IPA, uses symbols for sounds. Letters such as a, b, and c belong to a writing system; symbols such as /æ/, /ʃ/, and /θ/ describe speech sounds.',
-          'A pronunciation entry can help when spelling alone is unclear. For example, /kæt/ shows the sounds in cat.',
-          'You can use the map without learning every part of it today.',
+          'The International Phonetic Alphabet (IPA) represents speech sounds, not English letters. For example, cat has three letters and the pronunciation /kæt/.',
+          'The chart is a guide, not a list of sounds that all Americans pronounce identically. Accent differences and dictionary transcription conventions matter.',
         ],
-        { link: ['https://www.ipachart.com', 'Explore the interactive IPA chart'] },
       ),
-      section('sounds-routine', 'Look. Listen. Try. Return.', [
-        'Watch the model, listen carefully, and imitate a short part. Return to a sound or a song when you want another try.',
-        'For now, the useful discovery is that English spelling and sound are not a one-to-one match. The next lessons help you practice the movements more deliberately.',
+      section('sounds-routine', 'Listen. Say. Compare.', [
+        'Choose one sound, listen to its example word, and say it aloud. Then try a contrasting sound, such as /i/ in seat and /ɪ/ in sit.',
+        'The useful discovery is that spelling and sound do not always match. Return to this chart whenever a pronunciation is unclear.',
       ]),
     ],
   },

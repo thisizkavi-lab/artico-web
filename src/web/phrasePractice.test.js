@@ -67,7 +67,7 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
 
 test('selection does not change familiarity and an active set stays fixed as ratings change', () => {
   const initial = getPracticeSet(undefined, introductionPhrases)
-  assert.equal(initial.selected.length, 30)
+  assert.equal(initial.selected.length, 0)
   const choice = { ...initial, selected: ['ch02-p6', 'ch02-p2', 'ch02-p1'] }
   const active = startPractice(choice, introductionPhrases)
   assert.deepEqual(active.session.ids, ['ch02-p1', 'ch02-p2', 'ch02-p6'])

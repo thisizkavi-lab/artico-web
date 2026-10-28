@@ -23,7 +23,7 @@ def fetch(filename):
     uri = "https://commons.wikimedia.org/wiki/Special:Redirect/file/" + quote(filename)
     for attempt in range(2):
         try:
-            request = Request(uri, headers={"User-Agent": "ArticoEducationalIPA/1.0 (https://github.com/thisizkavi-lab/artico-web; noncommercial cache)","Accept": "audio/ogg,*/*"})
+            request = Request(uri, headers={"User-Agent": "ArticoEducationalIPA/1.0 (https://github.com/thisizkavi-lab/artico-web; licensed audio cache)","Accept": "audio/ogg,*/*"})
             with urlopen(request, timeout=7) as response:
                 body = response.read(300_000)
             if not body.startswith(b"OggS"):

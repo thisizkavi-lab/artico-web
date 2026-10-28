@@ -1,0 +1,83 @@
+/* Ideas & Expression shares IELTS's quiet directory, typography, and Study/Practice controls. */
+.id-page { --ie-accent:var(--brand,#285bcc); }
+.id-page .ie-modebar > a { color:var(--muted); font-size:12px; text-decoration:none; }
+.id-page .ie-modebar > a:hover { color:var(--ie-accent); text-decoration:underline; }
+.id-page .id-overline { font-family:inherit; text-transform:uppercase; font-size:11px; letter-spacing:.09em; color:var(--muted); margin-bottom:10px; }
+.id-page .id-path { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-block:1px solid var(--line); margin:28px 0 34px; }
+.id-path > div { display:grid; gap:4px; padding:18px 22px; border-right:1px solid var(--line); }
+.id-path > div:first-child { padding-left:0; }
+.id-path > div:last-child { border-right:0; }
+.id-path span { color:var(--muted); font-size:11px; }
+.id-path strong { font-size:18px; font-weight:650; }
+.id-path small { font-size:12px; color:var(--muted); }
+.id-seed { padding:22px 24px; background:var(--surface); border:1px solid var(--line); border-radius:12px; margin:30px 0; }
+.id-seed h2 { font-size:21px; margin:0 0 8px; }
+.id-seed > p { color:var(--muted); font-size:14px; margin:0 0 22px; }
+.id-seed-body > p { margin:9px 0 0; }
+.id-seed .ie-field-label { margin-top:14px; }
+.id-seed-fold { padding:0; background:var(--surface); }
+.id-seed-fold > summary { padding:18px 22px; font-size:14px; font-weight:650; cursor:pointer; }
+.id-seed-fold summary span { font-size:12px; font-weight:400; color:var(--muted); }
+.id-seed-fold .id-seed-body { padding:0 22px 22px; }
+.id-directory-top { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:36px; }
+.id-directory-top h2 { margin:0; font-size:22px; letter-spacing:-.02em; }
+.id-directory-top span { color:var(--muted); font-size:12px; }
+.id-page .ie-directory { margin-top:20px; }
+.id-page .ie-branch-copy strong { font-size:18px; }
+.id-page .ie-branch-copy small { letter-spacing:0; font-size:11px; }
+.id-example-question { font-weight:650; margin:10px 0 15px; }
+.id-raw, .id-final { border:1px solid var(--line); padding:15px 18px; border-radius:9px; background:var(--paper); margin:18px 0; }
+.id-raw small,.id-final small { font-size:11px; letter-spacing:.03em; color:var(--muted); }
+.id-raw p,.id-final p { margin:5px 0 0; font-size:15px; line-height:1.75; }
+.id-final { border-left:3px solid var(--ie-accent); background:var(--ie-tint); }
+.id-frames { list-style:none; margin:18px 0; padding:0!important; display:flex; flex-wrap:wrap; gap:9px; }
+.id-frames li { background:var(--surface); border:1px solid var(--line); border-radius:99px; padding:8px 14px!important; font-size:13px; margin:0!important; }
+.id-task-nav { display:grid; gap:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin:25px 0 32px; }
+.id-task-nav a { display:flex; align-items:center; justify-content:space-between; gap:15px; padding:15px 13px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); border-left:3px solid transparent; }
+.id-task-nav a:last-child { border-bottom:0; }
+.id-task-nav a:hover,.id-task-nav a.is-active { background:var(--ie-tint); }
+.id-task-nav a.is-active { border-left-color:var(--ie-accent); }
+.id-task-nav a span { font-size:14px; font-weight:650; }
+.id-task-nav a small { color:var(--muted); font-size:11px; white-space:nowrap; }
+.id-exercise { border:1px solid var(--line); background:var(--surface); padding:28px; border-radius:13px; margin:25px 0 40px; }
+.id-exercise-head { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; color:var(--muted); font-size:11px; letter-spacing:.05em; }
+.id-exercise h2 { font-size:27px; letter-spacing:-.025em; line-height:1.3; margin:13px 0 12px; }
+.id-exercise > .ie-lead { margin:0 0 24px; }
+.id-hint { border:1px solid var(--line); border-radius:9px; padding:14px 17px; margin:18px 0 24px; }
+.id-hint summary { font-size:13px; font-weight:650; cursor:pointer; }
+.id-hint p { font-size:13px; margin:12px 0 0; }
+.id-field { margin:25px 0 0; }
+.id-field label { display:block; font-size:14px; font-weight:650; margin-bottom:10px; }
+.id-field textarea { min-height:96px; }
+.id-review { border-top:1px solid var(--line); margin-top:30px; padding-top:15px; }
+.id-review h3,.id-recorder h3 { font-size:19px; margin:12px 0 8px; }
+.id-review > p,.id-recorder > p { font-size:13px; color:var(--muted); margin:0 0 17px; }
+.id-check { display:flex; align-items:flex-start; gap:12px; padding:11px 0; font-size:13px; cursor:pointer; }
+.id-check input { width:17px; height:17px; accent-color:var(--ie-accent); flex:0 0 auto; margin-top:3px; }
+.id-check span { line-height:1.6; }
+.id-review .ie-actions { margin-top:24px; }
+.id-review .ie-fineprint { margin:0; }
+.id-timer { display:flex; gap:10px; flex-wrap:wrap; align-items:center; padding:14px 17px; border:1px solid var(--line); border-radius:9px; margin:19px 0; }
+.id-timer > span { font-size:25px; font-variant-numeric:tabular-nums; font-weight:650; margin-right:auto; }
+.id-timer > button { cursor:pointer; background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:12px; }
+.id-timer > button:hover { border-color:var(--ie-accent); }
+.id-timer small { color:var(--muted); font-size:11px; width:100%; }
+.id-recorder { border:1px solid var(--line); background:var(--paper); padding:17px 19px; border-radius:9px; margin:20px 0; }
+.id-recorder h3 { margin-top:0; }
+.id-recorder .ie-actions { margin:12px 0; }
+.id-recorder .ie-button { font-size:12px!important; }
+.id-listen { display:grid; gap:8px; margin-top:15px; }
+.id-listen a { font-size:12px; }
+.id-error { font-size:12px; color:#b73333; }
+.id-bottom-nav { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; font-size:13px; padding:0 0 40px; }
+.id-page .ie-save { margin:22px 0; }
+@media(max-width:620px) {
+  .id-path > div { padding:13px 10px; }
+  .id-path strong { font-size:15px; }
+  .id-path small { font-size:11px; }
+  .id-exercise { padding:20px 15px; }
+  .id-task-nav a { align-items:flex-start; flex-direction:column; gap:3px; }
+  .id-page .ie-branch { padding:15px; gap:12px; }
+  .id-page .ie-branch-icon { width:42px; height:42px; flex-basis:42px; }
+  .id-page .ie-branch-copy strong { font-size:16px; }
+}

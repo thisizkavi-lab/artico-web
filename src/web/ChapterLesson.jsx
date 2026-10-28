@@ -39,19 +39,6 @@ function makeModel(source, t) {
       short: t('Visual guide'),
       blocks: [{ type: 'diagram', diagram: source.diagram }],
     })
-  sections.push({
-    id: 'words',
-    title: t('Words & phrases'),
-    short: t('Words & phrases'),
-    blocks: [
-      {
-        type: 'words',
-        phrases: source.phraseBank
-          .filter((item) => item.section === 'words')
-          .map((item) => item.id),
-      },
-    ],
-  })
   return {
     id: source.id,
     title: source.title,

@@ -1,48 +1,207 @@
-/* Alphabet recognition uses the same lesson shell and button tokens as Artico. */
-.rf-letter-check { max-width: 620px; margin-inline: auto; }
-.rf-letter-check > h2 { margin: 8px 0 9px; }
-.rf-letter-check-intro { max-width: 55ch; margin-bottom: 26px; color: var(--ip-muted, var(--muted)); }
-.rf-letter-check-body { max-width: 540px; }
-.rf-letter-check-topline { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 13px; }
-.rf-letter-check-prompt { font-size: 16px; line-height: 1.6; font-weight: 600; }
-.rf-letter-check-prompt:focus { outline: none; }
-.rf-letter-check-count { font-size: 12px; flex-shrink: 0; color: var(--ip-muted, var(--muted)); font-variant-numeric: tabular-nums; }
-.rf-letter-check-face {
-  height: 210px; display: grid; place-items: center;
-  border-radius: 15px; background: var(--surface, #fff);
-  border: 1px solid var(--ip-border, var(--line));
-  font: 500 clamp(86px, 13vw, 130px) / 1 Arial, sans-serif;
-  color: var(--ink);
+/* Letter practice lives in the usual Artico FoundationShell.
+   A media-only card sits ABOVE the question and the answer buttons. */
+.rf-letter-check {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 22px 0 10px;
 }
-.rf-letter-check-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+.rf-letter-check-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 0 13px;
+}
+.rf-letter-check-topline .ip-kicker { margin: 0; }
+.rf-letter-check-count {
+  color: var(--ip-muted, var(--muted));
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rf-letter-check-progress {
+  height: 3px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--ip-border, var(--line));
+  margin: 0 0 28px;
+}
+.rf-letter-check-progress span {
+  display: block;
+  height: 100%;
+  background: var(--ip-blue, var(--forest));
+  transition: width .2s ease;
+}
+.rf-letter-check-body { width: 100%; }
+.rf-letter-check-card {
+  display: grid;
+  place-items: center;
+  width: min(100%, 470px);
+  height: clamp(235px, 32vw, 318px);
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid var(--ip-border, #dce3e3);
+  border-radius: 19px;
+  background: var(--surface, #fffefb);
+  box-shadow: 0 7px 22px rgba(33, 59, 53, .035);
+}
+.rf-letter-check-letter {
+  display: block;
+  font: 750 clamp(122px, 15vw, 185px) / 1 Arial, Helvetica, sans-serif;
+  letter-spacing: -.065em;
+  color: #346bd1;
+  background: linear-gradient(160deg, #74a0ed 0%, #2a68d5 57%, #1d4da6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 6px 2px rgba(45, 88, 164, .14));
+  user-select: none;
+}
+.rf-letter-check-card.is-audio {
+  background: var(--surface, #fffefb);
+}
+.rf-letter-check-listen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  padding: 18px 26px;
+  min-width: 164px;
+  min-height: 140px;
+  border: 0;
+  border-radius: 16px;
+  color: var(--ip-blue, #275cd0);
+  background: transparent;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.rf-letter-check-listen svg {
+  width: 76px;
+  height: 76px;
+  padding: 21px;
+  background: var(--ip-blue-soft, #eaf0fd);
+  border-radius: 50%;
+  border: 1px solid rgba(47, 94, 174, .14);
+}
+.rf-letter-check-listen:hover svg,
+.rf-letter-check-listen:focus-visible svg { background: #dce9fb; }
+.rf-letter-check-listen:focus-visible { outline: 3px solid var(--ip-blue, #275cd0); outline-offset: 2px; }
+.rf-letter-check-question {
+  text-align: center;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.5;
+  font-weight: 630;
+  letter-spacing: -.01em;
+  max-width: 38ch;
+  margin: 25px auto 17px;
+}
+.rf-letter-check-question:focus { outline: none; }
+.rf-letter-check-choices {
+  width: 100%;
+  max-width: 710px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(9px, 2vw, 16px);
+}
 .rf-letter-check-choice {
-  height: 74px; border: 1px solid var(--ip-border, var(--line));
-  border-radius: 12px; background: var(--surface, #fff);
-  color: var(--ink); font: 500 38px / 1 Arial, sans-serif;
-  cursor: pointer; transition: border-color .15s ease, background .15s ease;
+  min-width: 0;
+  height: clamp(75px, 10vw, 95px);
+  border: 1.5px solid var(--ip-border, #d5dddc);
+  border-radius: 13px;
+  background: var(--surface, #fffefb);
+  color: var(--ink);
+  font: 620 clamp(33px, 4vw, 46px) / 1 Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(33, 59, 53, .02);
+  transition: border-color .16s ease, background .16s ease, transform .16s ease;
 }
-.rf-letter-check-choice:hover:not(:disabled),
-.rf-letter-check-choice:focus-visible { border-color: var(--ip-blue, var(--forest)); background: var(--surface-strong, #edf2ec); }
-.rf-letter-check-choice:focus-visible { outline: 2px solid var(--ip-blue, var(--forest)); outline-offset: 2px; }
-.rf-letter-check-choice:disabled { cursor: default; opacity: .65; }
-.rf-letter-check-choice.is-match { background: var(--surface-strong, #edf2ec); border-color: var(--forest); opacity: 1; font-weight: 700; }
-.rf-letter-check-choice.is-missed { border-style: dashed; opacity: 1; }
-.rf-letter-check-feedback { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 19px; }
-.rf-letter-check-feedback p { font-size: 14px; line-height: 1.7; }
-.rf-letter-check-pair { white-space: nowrap; color: var(--ip-muted, var(--muted)); }
-.rf-letter-check-feedback .ip-primary { flex-shrink: 0; }
-.rf-letter-check-end { padding: 34px 0 18px; display: grid; justify-items: start; gap: 13px; }
-.rf-letter-check-end h3 { font-size: 24px; font-weight: 600; }
-.rf-letter-check-end h3:focus { outline: none; }
+.rf-letter-check-choice:hover:not(:disabled) {
+  border-color: var(--ip-blue, #275cd0);
+  background: var(--ip-blue-soft, #f1f5fc);
+  transform: translateY(-1px);
+}
+.rf-letter-check-choice:focus-visible {
+  outline: 3px solid var(--ip-blue, #275cd0);
+  outline-offset: 3px;
+}
+.rf-letter-check-choice:disabled { cursor: default; opacity: .67; }
+.rf-letter-check-choice.is-match {
+  opacity: 1;
+  background: var(--surface-strong, #e7eee5);
+  border-color: var(--forest, #213b35);
+  font-weight: 750;
+}
+.rf-letter-check-choice.is-missed {
+  opacity: 1;
+  background: #f8f1eb;
+  border-color: #b88165;
+  border-style: solid;
+}
+.rf-letter-check-feedback {
+  max-width: 710px;
+  min-height: 51px;
+  margin: 12px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rf-letter-check-feedback p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.rf-letter-check-pair {
+  color: var(--ip-muted, var(--muted));
+  white-space: nowrap;
+}
+.rf-letter-check-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin: 10px 0 0;
+}
+.rf-letter-check-nav > button {
+  display: inline-flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 48px;
+}
+.rf-letter-check-nav button:disabled { opacity: .4; cursor: default; }
+.rf-letter-check-end {
+  max-width: 710px;
+  margin: 20px auto 0;
+  padding: 36px 0 24px;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+}
+.rf-letter-check-end h2 { font-size: 25px; font-weight: 650; }
+.rf-letter-check-end h2:focus { outline: none; }
 .rf-letter-check-end p { font-size: 15px; line-height: 1.7; }
+.rf-letter-check-end strong { display: inline-block; }
 .rf-letter-check-end .ip-secondary { margin-top: 12px; }
 @media (max-width: 600px) {
-  .rf-letter-check-face { height: 175px; }
-  .rf-letter-check-choice { height: 68px; font-size: 34px; }
+  .rf-letter-check { padding-top: 17px; }
+  .rf-letter-check-progress { margin-bottom: 20px; }
+  .rf-letter-check-card { width: min(100%, 360px); height: 244px; border-radius: 16px; }
+  .rf-letter-check-letter { font-size: 148px; }
+  .rf-letter-check-question { margin-top: 22px; margin-bottom: 18px; padding-inline: 2px; }
+  .rf-letter-check-choice { height: 80px; font-size: 37px; border-radius: 12px; }
   .rf-letter-check-choices { gap: 9px; }
-  .rf-letter-check-feedback { align-items: flex-start; flex-direction: column; gap: 12px; }
-  .rf-letter-check-feedback .ip-primary { align-self: flex-end; }
+  .rf-letter-check-feedback { min-height: 49px; }
+  .rf-letter-check-nav > button { min-width: 116px; min-height: 45px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .rf-letter-check-choice { transition: none; }
+  .rf-letter-check-choice, .rf-letter-check-progress span { transition: none; }
+  .rf-letter-check-choice:hover:not(:disabled) { transform: none; }
 }

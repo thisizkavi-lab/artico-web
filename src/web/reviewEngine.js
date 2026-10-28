@@ -42,18 +42,21 @@ function deserializeCard(record) {
   }
 }
 
-export function toReviewContent(item, chapter) {
-  if (!item || typeof item.id !== 'string' || !/^ch(?:0[1-9]|[1-8]\d|9[0-6])-(?:p|v|line|b)\d+$/.test(item.id))
+export function toReviewContent(item, chapter, displayChapter = chapter) {
+  if (!item || typeof item.id !== 'string' || !/^ch(?:0[1-9]|[1-8]\d|9[0-9])-(?:p|v|line|b)\d+$/.test(item.id))
     throw new Error('Review item requires a stable Artico phrase ID')
   if (typeof item.en !== 'string' || !item.en.trim()) throw new Error('Review item needs English text')
-  if (!/^(?:0[1-9]|[1-8]\d|9[0-6])$/.test(chapter) || !item.id.startsWith(`ch${chapter}-`))
+  if (!/^(?:0[1-9]|[1-8]\d|9[0-9])$/.test(chapter) || !item.id.startsWith(`ch${chapter}-`))
     throw new Error('Review item chapter does not match its ID')
+  if (!/^(?:0[1-9]|[1-9]\\d)$/.test(displayChapter))
+    throw new Error('Invalid public chapter number')
   // Recognition is the safe default. Context is a usage hint, NOT an
   // automatically-generated translation or a verified production cue.
   return {
     id: item.id,
     sourceId: item.studyId ?? item.id,
     chapter,
+    displayChapter,
     en: item.en.trim().slice(0, 500),
     ja: typeof item.ja === 'string' ? item.ja.trim().slice(0, 1000) : '',
     context: typeof item.context === 'string' ? item.context.trim().slice(0, 1000) : '',

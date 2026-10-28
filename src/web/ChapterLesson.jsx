@@ -1,9 +1,8 @@
 import { useLanguage } from './Language'
 import { useEffect, useMemo, useState } from 'react'
-import LessonExperience, { Glyph } from './LessonExperience'
+import LessonExperience from './LessonExperience'
 import { LessonDiagram } from './LessonDiagrams'
-import { RichText, SourceContent } from './ContentBlocks'
-import { pairScenarioResponses } from './scenarioResponses'
+import { SourceContent } from './ContentBlocks'
 import './chapter.css'
 import './readable-course.css'
 import { sourceChapterId } from './chapterNumbers.js'
@@ -12,81 +11,6 @@ const lessons = import.meta.glob('../course/lessons/*.json', { import: 'default'
 const japaneseLessons = import.meta.glob('../course/locales/ja/lessons/*.json', { import: 'default' })
 const pending = new Map(),
   resolved = new Map()
-
-function ChapterScenarios({ source, learning, update }) {
-  const { t, language } = useLanguage()
-  return (
-    <section className="ip-your-turn">
-      <p className="ip-kicker">{t("02 / PUT IT INTO WORDS")}</p>
-      <h2 id="ip-situations-heading" tabIndex={-1}>{t("When the phrases feel familiar.")}</h2>
-      <p className="ip-prose"> {t("Try the situations in your own words. Use the sample responses when you need a little support.")} </p>
-      {source.practice.map((section) => {
-        let answering = false
-        const prompts = [],
-          answers = []
-        for (const block of section.blocks) {
-          if (block.type === 'answerHeading' || block.type === 'answer') answering = true
-          ;(answering ? answers : prompts).push(block)
-        }
-        const paired = pairScenarioResponses(prompts, answers)
-        const sharedAnswers = paired ? answers.filter((block) => block !== paired.block && block.type !== 'answerHeading') : answers
-        return (
-          <div key={section.id} className="rc-practice-section">
-            <h3>{section.title}</h3>
-            {prompts.map((block) =>
-              block.type === 'list' && block.ordered ? (
-                block.items.map((item, i) => {
-                  const id = `${block.id}-${i}`
-                  return (
-                    <details className="ip-scenario" key={id}>
-                      <summary>
-                        <span>{String(item.number).padStart(2, '0')}</span>
-                        <span>
-                          <RichText runs={item.runs} />
-                        </span>
-                        <Glyph name="chevron" />
-                      </summary>
-                      <div className="ip-scenario-body">
-                        {paired && <details className="ip-sample">
-                          <summary>{t('Show a sample response')}</summary>
-                          <p><RichText runs={paired.responses[i]} /></p>
-                        </details>}
-                        <label> {t("Your notes")} <span>{t("(optional)")}</span>
-                          <textarea
-                            rows={3}
-                            maxLength={2000}
-                            value={learning.responses[id] ?? ''}
-                            placeholder={t("Try saying it first. Keep a note if it helps.")}
-                            onChange={(event) =>
-                              update((previous) => ({
-                                ...previous,
-                                responses: { ...previous.responses, [id]: event.target.value },
-                              }))
-                            }
-                          />
-                        </label>
-                      </div>
-                    </details>
-                  )
-                })
-              ) : (
-                <SourceContent key={block.id} block={block} examples={false} />
-              ),
-            )}
-            {sharedAnswers.length > 0 && (
-              <details className="ip-sample rc-answers">
-                <summary>{t(paired ? 'More guidance' : 'Show sample responses')}</summary>
-                {sharedAnswers.map((block) => (
-                  <SourceContent key={block.id} block={block} examples={false} />
-                ))}
-              </details>
-            )}
-          </div>
-        )
-      })}
-    </section>
-  )
-}
 
 function makeModel(source, t) {
   const sections = source.study.map((section) => ({
@@ -138,8 +62,6 @@ function makeModel(source, t) {
     sections,
     SourceContent,
     Diagram: LessonDiagram,
-    Scenarios: ChapterScenarios,
-    scenarioSource: source,
   }
 }
 

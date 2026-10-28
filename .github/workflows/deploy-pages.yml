@@ -82,39 +82,43 @@ jobs:
       - name: Generate all Lesson 3 time PNG diagrams
         run: python3 scripts/build_vocab_time_png.py
 
-      - name: Cache licensed General American IPA audio
-        id: ipa-audio-cache
-        uses: actions/cache@v4
-        with:
-          path: public/audio/ipa
-          key: artico-ipa-audio-v1-${{ hashFiles('src/web/ipaSounds.js', 'scripts/cache_ipa_audio.py') }}
-
-      - name: Collect U.S.-English example audio
-        if: steps.ipa-audio-cache.outputs.cache-hit != 'true'
-        run: python3 scripts/cache_ipa_audio.py
-
       - name: Produce original daily-commute PNG illustrations
         run: python3 scripts/build_ch04_ai_actions.py
 
-      - name: Cache one-voice US English IPA pilot
-        id: tts-pilot-cache
+      - name: Cache complete single-voice American IPA word audio
+        id: ipa-one-voice-cache
         uses: actions/cache@v4
         with:
-          path: public/audio/ipa-voice-pilot
-          key: artico-ljspeech-voice-pilot-v1-${{ hashFiles('scripts/generate_ipa_voice_pilot.py') }}
+          path: public/audio/ipa-one-voice
+          key: artico-ipa-one-voice-v1-${{ hashFiles('scripts/generate_ipa_single_voice.py', 'src/web/ipaSounds.js') }}
 
-      - name: Generate one-voice US English IPA demo
-        if: steps.tts-pilot-cache.outputs.cache-hit != 'true'
+      - name: Generate every IPA word with one American voice
+        if: steps.ipa-one-voice-cache.outputs.cache-hit != 'true'
         run: |
           python3 -m pip install --quiet piper-tts==1.8.0
           mkdir -p "$RUNNER_TEMP/artico-voice"
           (cd "$RUNNER_TEMP/artico-voice" && python3 -m piper.download_voices en_US-ljspeech-medium)
-          python3 scripts/generate_ipa_voice_pilot.py "$RUNNER_TEMP/artico-voice/en_US-ljspeech-medium.onnx"
+          python3 scripts/generate_ipa_single_voice.py "$RUNNER_TEMP/artico-voice/en_US-ljspeech-medium.onnx"
 
-      - name: Check generated one-voice audio
+      - name: Verify every IPA entry has its locally hosted WAV
         run: |
-          test -f public/audio/ipa-voice-pilot/manifest.json
-          test "$(find public/audio/ipa-voice-pilot -maxdepth 1 -name '*.wav' | wc -l)" -eq 12
+          python3 - <<'PY'
+          import json, wave
+          from pathlib import Path
+          directory=Path('public/audio/ipa-one-voice')
+          manifest=json.loads((directory/'manifest.json').read_text(encoding='utf-8'))
+          entries=manifest['entries']
+          assert len(entries)==41, f"Wrong entry count: {len(entries)}"
+          files={e['file'] for e in entries}
+          assert len(files)==manifest['unique_audio_count']
+          for filename in files:
+              path=directory/filename
+              assert path.is_file() and path.stat().st_size>8000, filename
+              with wave.open(str(path),'rb') as stream:
+                  assert stream.getnframes()>3000 and stream.getnchannels()==1, filename
+          assert len(list(directory.glob('*.wav')))==len(files)
+          print(f"Verified {len(entries)} IPA example entries, {len(files)} unique WAVs, one US voice")
+          PY
 
       - name: Test course and learning progress
         run: pnpm test

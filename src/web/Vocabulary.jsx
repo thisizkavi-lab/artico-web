@@ -12,10 +12,12 @@ function VocabularyArtCredits({ japanese }) {
   return <p className="vl-art-credit">
     {japanese ? '一部のイラスト：' : 'Selected illustrations: '}
     <a href="https://mulberrysymbols.org/" target="_blank" rel="noreferrer">Mulberry Symbols</a>
-    {' · '}
+    {' (Steve Lee) · '}
+    <a href="https://openmoji.org/" target="_blank" rel="noreferrer">OpenMoji</a>
+    {' (OpenMoji Contributors) · '}
     <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>
     {' · '}
-    {japanese ? '原作：Steve Lee、PNG形式に変換' : 'by Steve Lee · converted to PNG for Artico'}
+    {japanese ? '画像はPNG形式に変換' : 'Converted to PNG for Artico'}
   </p>
 }
 

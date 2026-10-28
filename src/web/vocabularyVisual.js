@@ -17,6 +17,9 @@ function artworkFor(term, chapter) {
   if (existing) return existing
   const original = vocabularyOriginalScene(term, chapter)
   if (original) return original
+  // Daily Routines is transitioning to original scene artwork. Do not display
+  // converted icon/SVG pictograms in this lesson: ambiguous visuals misteach actions.
+  if (chapter === 4) return null
   return vocabularyLibraryIllustration(term, chapter)
 }
 

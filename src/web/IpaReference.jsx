@@ -45,6 +45,18 @@ const sources = [
   ['En-us-sit.ogg','Dvortygirl','CC BY-SA / GFDL'],
   ['En-us-A.ogg','Muke Tever','Public domain'],
   ['En-us-I.ogg','Muke Tever','Public domain'],
+  ['En-us-ball.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-go.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-moon.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-fish.ogg','Dvortygirl','Public domain'],
+  ['En-us-Sun.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-zoo.ogg','Neoglitch','CC BY-SA'],
+  ['En-us-hat.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-yes.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-red.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-book.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-mouse.ogg','Dvortygirl','CC BY-SA / GFDL'],
+  ['En-us-boy.ogg','Dvortygirl','CC BY-SA / GFDL'],
 ]
 const sourcePage = name => `https://commons.wikimedia.org/wiki/File:${name}`
 

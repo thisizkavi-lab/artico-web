@@ -203,6 +203,13 @@ test('all foundation topics and existing pronunciation recordings remain availab
     foundationReading['how-it-works'].sections.map(({ id }) => id),
     ['how-philosophy', 'how-start-line', 'how-two-by-two', 'how-chapter-loop'],
   )
+  assert.deepEqual(
+    foundationReading.letters.sections.map(({ id }) => id),
+    ['letters-start', 'letters-board', 'letters-try'],
+  )
+  assert.equal(foundationReading.letters.sections[2].video[0], 'MgmIHtp-ZQM')
+  assert.equal(foundationReading.letters.sections[2].items.length, 3)
+  assert.equal(foundationReading.hear, undefined)
   assert.doesNotMatch(JSON.stringify(foundationReading), /[\u3040-\u30ff\u4e00-\u9fff]/)
   for (const item of allTwisters) {
     assert.equal(twisterGuidance[item.id].length, 2)

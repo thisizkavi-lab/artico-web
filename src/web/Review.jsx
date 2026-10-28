@@ -25,6 +25,7 @@ export default function Review() {
   }, [])
   const queue = useMemo(() => selectReviewQueue(items ?? [], new Date()), [items])
   const current = queue[0]
+  const vocabulary = current?.origin === 'vocabulary'
   const dueCount = (items ?? []).filter((item) =>
     item.active && item.card.reps > 0 && new Date(item.card.due) <= new Date()).length
   const unseenCount = (items ?? []).filter((item) => item.active && item.card.reps === 0).length
@@ -89,19 +90,20 @@ export default function Review() {
           <span>{ja ? 'このセッションの残り' : 'In this session'}: {queue.length}</span>
         </div>
         <div className="ar-card" key={current.id}>
-          <p className="ar-prompt">{ja
-            ? 'この表現の意味と使い方を思い出してください。'
-            : 'Recall what this means and when you would use it.'}</p>
-          <h2 lang="en">{current.en}</h2>
+          <p className="ar-prompt">{vocabulary
+            ? (ja ? '日本語の意味から、英語を思い出して声に出しましょう。' : 'Recall the English expression from this Japanese cue.')
+            : (ja ? 'この表現の意味と使い方を思い出してください。' : 'Recall what this means and when you would use it.')}</p>
+          <h2 lang={vocabulary ? 'ja' : 'en'}>{vocabulary ? current.ja : current.en}</h2>
           {revealed ? <div className="ar-answer">
-            <p>{ja ? '答え・使い方' : 'MEANING / USAGE'}</p>
-            {current.ja && <div lang="ja">{current.ja}</div>}
+            <p>{ja ? '答え・使い方' : 'ANSWER / USAGE'}</p>
+            {vocabulary ? <div lang="en" className="ar-answer-main">{current.en}</div>
+              : current.ja && <div lang="ja">{current.ja}</div>}
             {current.context && <div>{current.context}</div>}
             {!current.ja && !current.context && <div>{ja
               ? 'この表現を使う場面を説明してみましょう。'
               : 'Explain a situation in which you would use this expression.'}</div>}
           </div> : <button type="button" className="ar-button" onClick={() => setRevealed(true)}>
-            {ja ? '答えを表示' : 'Reveal meaning and usage'}
+            {ja ? '答えを表示' : (vocabulary ? 'Reveal English' : 'Reveal meaning and usage')}
           </button>}
         </div>
         {revealed && <div className="ar-grades" aria-label={ja ? '思い出せた度合い' : 'Recall quality'}>
@@ -110,7 +112,9 @@ export default function Review() {
           )}
         </div>}
         <div className="ar-bottom">
-          <a href={`#/lesson/${(current.displayChapter ?? current.chapter)}/study?line=${encodeURIComponent(current.sourceId)}`}>
+          <a href={vocabulary
+            ? `#/lesson/98/study/${current.vocabularyLesson ?? '01'}`
+            : `#/lesson/${current.displayChapter ?? current.chapter}/study?line=${encodeURIComponent(current.sourceId)}`}>
             {ja ? '元のレッスンへ' : 'View original lesson'}
           </a>
           <button type="button" disabled={working} onClick={suspend}>

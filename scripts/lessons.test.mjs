@@ -201,7 +201,7 @@ test('all foundation topics and existing pronunciation recordings remain availab
   )
   assert.deepEqual(
     foundationReading['how-it-works'].sections.map(({ id }) => id),
-    ['how-start-line', 'how-two-by-two', 'how-chapter-loop'],
+    ['how-philosophy', 'how-start-line', 'how-two-by-two', 'how-chapter-loop'],
   )
   assert.doesNotMatch(JSON.stringify(foundationReading), /[\u3040-\u30ff\u4e00-\u9fff]/)
   for (const item of allTwisters) {

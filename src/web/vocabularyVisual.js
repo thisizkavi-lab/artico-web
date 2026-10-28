@@ -1,3 +1,4 @@
+import { vocabularyActionPng } from './vocabularyActionPng'
 import { vocabularyTimePng } from './vocabularyTimePng'
 import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
@@ -7,6 +8,8 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
 // Original educational PNGs take precedence over third-party raster art.
 export function vocabularyVisual(term, chapter) {
+  const action = vocabularyActionPng(term, chapter)
+  if (action) return action
   const time = vocabularyTimePng(term, chapter)
   if (time) return time
   const existing = vocabularyPngIllustration(term, chapter)

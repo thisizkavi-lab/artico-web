@@ -244,18 +244,23 @@ function Study({ audioProps, focusedId }) {
   )
 }
 
+
 function PracticeChooser({ set, change, audioProps, onStart }) {
-  const { t, language } = useLanguage()
-  const { catalog: { items: introductionPhrases }, sections: introductionSections, studyPath } = useLesson()
+  const { t } = useLanguage()
+  const { catalog: { items: introductionPhrases }, sections: introductionSections, studyPath, id: chapterId } = useLesson()
   const barRef = useRef(null)
   const frameRef = useRef(null)
   useEffect(() => {
     const viewport = barRef.current?.closest('.aw-viewport')
-    const measure = () => viewport?.style.setProperty('--practice-bar-height', `${barRef.current?.offsetHeight ?? 0}px`)
+    const measure = () => viewport?.style.setProperty('--practice-bar-height', String(barRef.current?.offsetHeight ?? 0) + 'px')
     const observer = new ResizeObserver(measure)
-    observer.observe(barRef.current)
+    if (barRef.current) observer.observe(barRef.current)
     measure()
-    return () => { observer.disconnect(); viewport?.style.removeProperty('--practice-bar-height'); cancelAnimationFrame(frameRef.current) }
+    return () => {
+      observer.disconnect()
+      viewport?.style.removeProperty('--practice-bar-height')
+      cancelAnimationFrame(frameRef.current)
+    }
   }, [])
   const revealFocus = (event) => {
     const target = event.target
@@ -270,12 +275,17 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
       else if (bounds.top < top) viewport.scrollBy({ top: bounds.top - top, behavior: 'instant' })
     })
   }
+  // A scene illustration supplies context when an individual phrase has no artwork.
+  const sceneArtBySection = Object.fromEntries(introductionSections.map((section) => [
+    section.id, section.blocks.find((block) => block.art || block.source?.art)?.art
+      ?? section.blocks.find((block) => block.source?.art)?.source?.art,
+  ]))
   const shown = filterPracticePhrases(introductionPhrases, set)
   const selected = new Set(set.selected)
   const hasFilter = set.filter !== 'all' || set.search.trim() !== ''
   const hiddenSelected = set.selected.filter((id) => !shown.some((item) => item.id === id)).length
   return (
-    <div className="ip-custom-bank" onFocusCapture={revealFocus}>
+    <div className="ip-custom-bank ip-card-picker" onFocusCapture={revealFocus}>
       <div className="ip-selection-tools">
         <label className="ip-search">
           <Glyph name="search" />
@@ -301,121 +311,108 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
               <span>
                 {option.value === 'all'
                   ? introductionPhrases.length
-                  : introductionPhrases.filter((item) => set.ratings[item.id] === option.value)
-                      .length}
+                  : introductionPhrases.filter((item) => set.ratings[item.id] === option.value).length}
               </span>
             </button>
           ))}
         </div>
         <div className="ip-selection-actions">
-          <span>
-            {t('{shown} of {total} items', { shown: shown.length, total: introductionPhrases.length })}
-          </span>
-          <button
-            type="button"
-            onClick={() =>
-              change((current) => ({
-                ...current,
-                selected: introductionPhrases.map((item) => item.id),
-              }))
-            }
-          > {t("Select all")} </button>
-          <button type="button" onClick={() => change((current) => ({ ...current, selected: [] }))}> {t("Clear selection")} </button>
+          <span>{t('{shown} of {total} items', { shown: shown.length, total: introductionPhrases.length })}</span>
+          <button type="button" onClick={() => change((current) => ({
+            ...current, selected: introductionPhrases.map((item) => item.id),
+          }))}>{t("Select all")}</button>
+          <button type="button" onClick={() => change((current) => ({ ...current, selected: [] }))}>
+            {t("Clear selection")}
+          </button>
           {hasFilter && shown.length > 0 && (
-            <button
-              type="button"
-              onClick={() =>
-                change((current) => ({
-                  ...current,
-                  selected: [...new Set([...current.selected, ...shown.map((item) => item.id)])],
-                }))
-              }
-            > {t("Select shown")} </button>
+            <button type="button" onClick={() => change((current) => ({
+              ...current, selected: [...new Set([...current.selected, ...shown.map((item) => item.id)])],
+            }))}>{t("Select shown")}</button>
           )}
-          {hiddenSelected > 0 && <button type="button" onClick={() => change((current) => ({ ...current, filter: 'all', search: '' }))}>{t('See all selected items')}</button>}
+          {hiddenSelected > 0 && (
+            <button type="button" onClick={() => change((current) => ({
+              ...current, filter: 'all', search: '',
+            }))}>{t('See all selected items')}</button>
+          )}
         </div>
       </div>
-      <div className="ip-phrase-list">
+      <div className="ip-card-sections">
         {introductionSections.map((section) => {
           const items = shown.filter((item) => item.section === section.id)
-          return items.length ? (
-            <section key={section.id} aria-label={section.title}>
+          if (!items.length) return null
+          return (
+            <section key={section.id} aria-label={section.title} className="ip-card-section">
               <div className="ip-list-heading">
                 <h3>{section.title}</h3>
                 <span>{items.length}</span>
               </div>
-              {items.map((item) => (
-                <div
-                  key={item.id}
-                  className={`ip-check-row ${selected.has(item.id) ? 'is-selected' : ''}`}
-                >
-                  <label className="ip-check-label">
-                    <input
-                      type="checkbox"
-                      checked={selected.has(item.id)}
-                      onChange={() => change((current) => togglePracticePhrase(current, item.id))}
-                      aria-label={t('Include: {phrase}', { phrase: item.en })}
-                    />
-                    <span className="ip-check-copy">
-                      <span className="ip-list-phrase" lang="en">{item.en}</span>
-                      <span className="ip-context">{item.context}</span>
-                    </span>
-                  </label>
-                  <div className="ip-row-actions">
-                    <PhraseAudio item={item} {...audioProps} />
-                    <a
-                      href={`${studyPath}?line=${item.studyId ?? item.id}`}
-                      aria-label={t('View in Study: {phrase}', { phrase: item.en })}
-                      title={t("View in Study")}
-                    >
-                      <Glyph name="book" size={18} />
-                    </a>
-                  </div>
-                  {set.ratings[item.id] && (
-                    <span className={`ip-rating-label is-${set.ratings[item.id]}`}>
-                      {t(familiarLabel(set.ratings[item.id]))}
-                    </span>
-                  )}
-                </div>
-              ))}
+              <div className="ip-card-grid">
+                {items.map((item) => {
+                  const illustration = item.art || sceneArtBySection[section.id]
+                  return (
+                    <article key={item.id} className={'ip-select-card' + (selected.has(item.id) ? ' is-selected' : '')}>
+                      <label className="ip-card-select">
+                        <input
+                          type="checkbox"
+                          className="ip-card-checkbox"
+                          checked={selected.has(item.id)}
+                          onChange={() => change((current) => togglePracticePhrase(current, item.id))}
+                          aria-label={t('Include: {phrase}', { phrase: item.en })}
+                        />
+                        <span className="ip-card-visual" aria-hidden="true">
+                          {illustration
+                            ? <img src={art(illustration)} loading="lazy" alt="" />
+                            : <CurriculumIcon name={chapterIcon(chapterId)} size={46} />}
+                        </span>
+                        <span className="ip-card-phrase" lang="en">{item.en}</span>
+                        <span className="ip-card-context">{item.context}</span>
+                      </label>
+                      <div className="ip-card-footer">
+                        {set.ratings[item.id] ? (
+                          <span className={'ip-rating-label is-' + set.ratings[item.id]}>
+                            {t(familiarLabel(set.ratings[item.id]))}
+                          </span>
+                        ) : <span className="ip-card-footer-spacer" />}
+                        <div className="ip-card-actions">
+                          <PhraseAudio item={item} {...audioProps} />
+                          <a
+                            href={studyPath + '?line=' + (item.studyId ?? item.id)}
+                            aria-label={t('View in Study: {phrase}', { phrase: item.en })}
+                            title={t("View in Study")}
+                          ><Glyph name="book" size={18} /></a>
+                        </div>
+                      </div>
+                    </article>
+                  )
+                })}
+              </div>
             </section>
-          ) : null
+          )
         })}
         {!shown.length && (
           <div className="ip-empty">
             <Glyph name="search" size={28} />
             <h3>{t("No phrases in this view yet.")}</h3>
-            <p>
-              {set.search.trim()
-                ? t("Try a different search, or show all phrases.")
-                : t("Your self-ratings will appear here after practice.")}
-            </p>
-            <button
-              className="ip-secondary"
-              type="button"
-              onClick={() => change((current) => ({ ...current, filter: 'all', search: '' }))}
-            > {t("Show all phrases")} </button>
+            <p>{set.search.trim()
+              ? t("Try a different search, or show all phrases.")
+              : t("Your self-ratings will appear here after practice.")}</p>
+            <button className="ip-secondary" type="button" onClick={() => change((current) => ({
+              ...current, filter: 'all', search: '',
+            }))}>{t("Show all phrases")}</button>
           </div>
         )}
       </div>
       <div className="ip-selection-bar" ref={barRef}>
         <div role="status" aria-live="polite">
           <strong>{t('{count} selected', { count: set.selected.length })}</strong>
-          <span>
-            {set.selected.length === 0
-              ? t("Choose at least one phrase.")
-              : hiddenSelected > 0
-                ? t('{count} selected outside this view', { count: hiddenSelected })
-                : t("Your selection is saved on this device.")}
-          </span>
+          <span>{set.selected.length === 0
+            ? t("Choose at least one phrase.")
+            : hiddenSelected > 0
+              ? t('{count} selected outside this view', { count: hiddenSelected })
+              : t("Your selection is saved on this device.")}</span>
         </div>
-        <button
-          type="button"
-          className="ip-primary"
-          disabled={!set.selected.length}
-          onClick={onStart}
-        > {t("Practice selected")} <span className="ip-button-count">{set.selected.length}</span>
-          <Glyph name="arrow" />
+        <button type="button" className="ip-primary" disabled={!set.selected.length} onClick={onStart}>
+          {t("Practice selected")} <span className="ip-button-count">{set.selected.length}</span><Glyph name="arrow" />
         </button>
       </div>
     </div>
@@ -424,28 +421,24 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
 
 function PracticeEntry({ set, change, audioProps, onStart }) {
   const { t } = useLanguage()
-  const { catalog } = useLesson()
-  const [custom, setCustom] = useState(false)
-  const starter = catalog.starterIds.map((id) => catalog.items.find((item) => item.id === id))
-  return <>
-    <section className="ip-starter">
-      <p className="ip-kicker">{t('01 / SAY IT AGAIN')}</p>
-      <h2 id="practice-entry-heading" tabIndex={-1}>{t('Start with a short set.')}</h2>
-      <p>{t('Say each expression aloud. Repeat the ones you need, then try a situation below.')}</p>
-      <ul className="ip-starter-preview" aria-label={t('Your starting set')}>
-        {starter.map((item) => <li key={item.id} lang="en">{item.en}</li>)}
-      </ul>
-      <button className="ip-primary" onClick={() => onStart(catalog.starterIds)}>{t('Practice {count} expressions', { count: starter.length })}<Glyph name="arrow" /></button>
-      {set.session.ids.length > 0 && !set.session.completed && <button className="ip-text-button ip-resume-set" onClick={() => {
-        change((current) => ({ ...current, session: { ...current.session, active: true } }))
-        scrollTo('ip-practice-start')
-      }}>{t('Resume your previous set')} · {set.session.index + 1}/{set.session.ids.length}<Glyph name="arrow" size={16} /></button>}
-    </section>
-    <details className="ip-custom-choice" open={custom} onToggle={(event) => setCustom(event.currentTarget.open)}>
-      <summary><span>{t('Choose your own expressions')}<small>{t('{count} available · your choices stay saved', { count: catalog.items.length })}</small></span><Glyph name="chevron" /></summary>
-      {custom && <PracticeChooser set={set} change={change} audioProps={audioProps} onStart={() => onStart()} />}
-    </details>
-  </>
+  return (
+    <>
+      <section className="ip-picker-intro">
+        <p className="ip-kicker">{t('01 / SAY IT AGAIN')}</p>
+        <h2 id="practice-entry-heading" tabIndex={-1}>{t('Choose your practice set.')}</h2>
+        <p>{t('Select the cards you want to practice. Tap a card to add or remove it.')}</p>
+        {set.session.ids.length > 0 && !set.session.completed && (
+          <button className="ip-text-button ip-resume-set" onClick={() => {
+            change((current) => ({ ...current, session: { ...current.session, active: true } }))
+            scrollTo('ip-practice-start')
+          }}>{t('Resume your previous set')} · {set.session.index + 1}/{set.session.ids.length}
+            <Glyph name="arrow" size={16} />
+          </button>
+        )}
+      </section>
+      <PracticeChooser set={set} change={change} audioProps={audioProps} onStart={() => onStart()} />
+    </>
+  )
 }
 
 function PracticeComplete({ set, change, onStart }) {

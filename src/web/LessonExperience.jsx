@@ -423,17 +423,10 @@ function PracticeEntry({ set, change, audioProps, onStart }) {
   return (
     <>
       <section className="ip-picker-intro">
-        <p className="ip-kicker">{t('01 / SAY IT AGAIN')}</p>
-        <h2 id="practice-entry-heading" tabIndex={-1}>{t('Choose your practice set.')}</h2>
-        <p>{t('Select the cards you want to practice. Tap a card to add or remove it.')}</p>
-        {set.session.ids.length > 0 && !set.session.completed && (
-          <button className="ip-text-button ip-resume-set" onClick={() => {
-            change((current) => ({ ...current, session: { ...current.session, active: true } }))
-            scrollTo('ip-practice-start')
-          }}>{t('Resume your previous set')} · {set.session.index + 1}/{set.session.ids.length}
-            <Glyph name="arrow" size={16} />
-          </button>
-        )}
+        <div className="ip-picker-heading">
+          <span className="ip-picker-number">01</span>
+          <h2 id="practice-entry-heading" tabIndex={-1}>{t('Choose your practice set.')}</h2>
+        </div>
       </section>
       <PracticeChooser set={set} change={change} audioProps={audioProps} onStart={() => onStart()} />
     </>
@@ -789,17 +782,7 @@ function Experience({ route, learning, update, save, notify }) {
               ))}
             </nav>
           </details>
-        ) : (
-          <span className="ip-mode-detail">
-            {set.session.active
-              ? t('{count} in your set', { count: set.session.ids.length })
-              : t('{count} expressions to explore', { count: catalog.items.length })}
-          </span>
-        )}
-      </div>
-      <div className="ip-recording-notice">
-        <Glyph name="headphones" size={16} />
-        <span>{t("Audio recordings are coming soon.")}</span>
+        ) : null}
       </div>
       {practice ? (
         <div

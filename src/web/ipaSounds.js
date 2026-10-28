@@ -53,7 +53,7 @@ export const ipaGroups = [
   {
     id: 'diphthongs', title: 'Vowel glides', ja: '二重母音',
     sounds: [
-      c('eɪ','day','Glide from one vowel position to another.','口の形が変化する母音。','En-us-A.ogg'),
+      c('eɪ','A','This letter name also contains the vowel in “day.”','文字 A の名前。「day」と同じ母音。','En-us-A.ogg'),
       c('oʊ','go','A rounded vowel glide.','唇を丸める方向へ動く。'),
       c('aɪ','I','The sound in “my” and “I.”','「my」「I」の音。','En-us-I.ogg'),
       c('aʊ','house','The sound in “now.”','「now」の音。'),

@@ -249,10 +249,12 @@ export default function ArticoWeb() {
           ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Level Zero')}`
         : route.page === 'courses'
           ? t('Learn')
-          : ['practice', 'saved'].includes(route.page)
+          : ['practice', 'saved', 'review'].includes(route.page)
             ? route.page === 'saved'
               ? `${t('Progress')} / ${t('Saved phrases')}`
-              : t("Practice")
+              : route.page === 'review'
+                ? `${t('Practice')} / ${language === 'ja' ? '今日の復習' : 'Your Review'}`
+                : t("Practice")
             : route.page === 'progress'
               ? t("Progress")
               : route.page === 'home'

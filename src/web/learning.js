@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?)$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?)$/
 const isPractice = (path) =>
   /\/practice(?:[/?]|$)/.test(path) || /\/foundation\/lr\/(?:chunks|whole)/.test(path)
 
@@ -149,6 +149,13 @@ export function parseRoute(hash) {
     }
   }
   if (page === 'application') {
+    if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature)$/.test(view ?? '') && ['study', 'practice'].includes(scene)) {
+      if (segments.length > 4) return {path:'/application/reading',page:'application',id:'reading'}
+      const query = new URLSearchParams(path.split('?')[1] ?? '')
+      const text = /^[a-z0-9-]{1,70}$/.test(query.get('text') ?? '') ? query.get('text') : null
+      const clean = '/application/reading/' + view + '/' + scene + (text ? '?text=' + text : '')
+      return {path:clean,page:'application',id:'reading',collection:view,view:scene,...(text?{text}:{})}
+    }
     if (id === 'tests' && view === 'ielts') {
       const area = /^(?:home|overview|speaking|writing|listening|reading|guided|mocks|simulation)$/.test(scene ?? '') ? scene : 'home'
       const mode = segments[4] === 'practice' ? 'practice' : 'study'

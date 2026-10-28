@@ -88,9 +88,60 @@ def build():
     print(f"Verified {len(written)} local PNGs for {len(MANIFEST['entries'])} vocabulary entries")
 
 
+
+def build_openmoji():
+    """Fetch only pinned CC BY-SA OpenMoji SVGs used for concrete terms."""
+    from concurrent.futures import ThreadPoolExecutor
+    from urllib.request import Request, urlopen
+    from PIL import Image
+    import cairosvg
+
+    manifest = json.loads((ROOT / "src/web/vocabularyOpenmojiManifest.json").read_text(encoding="utf-8"))
+    if manifest["license"] != "CC-BY-SA-4.0":
+        raise RuntimeError("Unreviewed OpenMoji license")
+    codes = sorted(set(manifest["entries"].values()))
+    if not all(len(code) <= 30 and all(ch in "0123456789ABCDEF-" for ch in code) for code in codes):
+        raise RuntimeError("Unsafe OpenMoji codepoint path")
+    output = ROOT / "public/vocabulary-symbols/openmoji"
+    output.mkdir(parents=True, exist_ok=True)
+    pending = [code for code in codes if not (output / (code + ".png")).is_file()]
+    print(f"OpenMoji: {len(codes) - len(pending)} cached, {len(pending)} to render")
+
+    def generate(code):
+        target = output / (code + ".png")
+        url = ("https://raw.githubusercontent.com/hfg-gmuend/openmoji/"
+               + manifest["sourceCommit"] + "/color/svg/" + code + ".svg")
+        last_error = None
+        for attempt in range(3):
+            try:
+                req = Request(url, headers={"User-Agent": "ArticoVocabularyBuilder/1.0"})
+                with urlopen(req, timeout=30) as response:
+                    svg = response.read()
+                if b"<svg" not in svg[:2500]:
+                    raise ValueError("Expected SVG source")
+                png = cairosvg.svg2png(bytestring=svg, output_width=320)
+                picture = Image.open(io.BytesIO(png)).convert("RGBA")
+                picture.thumbnail((320, 220), Image.Resampling.LANCZOS)
+                picture.quantize(colors=160, method=Image.Quantize.FASTOCTREE).save(target, "PNG", optimize=True)
+                if target.stat().st_size < 100:
+                    raise ValueError("Output PNG too small")
+                return code, None
+            except Exception as exc:
+                target.unlink(missing_ok=True)
+                last_error = str(exc)
+        return code, last_error
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        failures = [f"{code}: {err}" for code, err in pool.map(generate, pending) if err]
+    if failures:
+        raise RuntimeError("OpenMoji generation failed: " + " | ".join(failures[:12]))
+    print(f"Verified {len(codes)} local OpenMoji PNGs for {len(manifest['entries'])} vocabulary entries")
+
+
 if __name__ == "__main__":
     try:
         build()
+        build_openmoji()
     except Exception as exc:
         print("ERROR:", exc, file=sys.stderr)
         sys.exit(1)

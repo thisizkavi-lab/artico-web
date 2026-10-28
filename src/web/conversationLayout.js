@@ -8,7 +8,7 @@ export function conversationSide(speakers, speaker, index) {
 // their original reading order or moving substantive explanations.
 const isBridge = (block) => {
   if (!block) return false
-  if (['text','label'].includes(block.type)) return String(block.text ?? '').length <= 90
+  if (block.type === 'label') return String(block.text ?? '').length <= 90
   if (block.type !== 'source' || block.source?.type !== 'explanation') return false
   const source = block.source
   const text = (source.runs ?? []).map((run) => run.text ?? '').join('')

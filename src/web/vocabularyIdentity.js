@@ -29,7 +29,7 @@ export function normalizeVocabularyTerm(term) {
   if (typeof term !== 'string' || !term.trim()) throw new Error('Vocabulary term required')
   return term.normalize('NFKC').toLocaleLowerCase('en')
     .replace(/[‘’]/g, "'").replace(/\s+/g, ' ')
-    .replace(/[.!?]+$/, '').trim()
+    .trim().replace(/[.!?]+$/, '').trim()
 }
 
 export function vocabularyTermKey(term, lesson) {

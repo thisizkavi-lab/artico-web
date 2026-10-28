@@ -1,0 +1,74 @@
+/* Artico vocabulary lessons 03–78: compact paper-and-blue cards. */
+.vlt-lesson{margin-top:28px;color:#253b5b}
+.vlt-hero{display:grid;grid-template-columns:minmax(0,1fr) 180px;align-items:center;gap:22px;min-height:178px;padding:27px 30px;border:1px solid #dce5f2;border-radius:16px;background:linear-gradient(115deg,#f1f6fc,#fafcff)}
+.vlt-hero-copy h2{margin:8px 0;color:#213755;font-size:clamp(21px,2.3vw,26px);line-height:1.35}
+.vlt-hero-copy>p:not(.vl01-kicker){margin:0;color:#60748d;font-size:12px;line-height:1.7}
+.vlt-hero-copy .vlt-hero-count{margin-top:15px!important}
+.vlt-hero-count strong{color:#285bcc;font-size:17px;font-variant-numeric:tabular-nums}
+.vlt-hero-count span{padding:0 5px}
+.vlt-hero-art{position:relative;display:grid;place-items:center;height:135px;color:#4676b1;isolation:isolate}
+.vlt-hero-halo{position:absolute;z-index:-1;width:136px;height:136px;border:1px dashed #a9c1e1;border-radius:50%;background:#ffffff99}
+.vlt-hero-corner{position:absolute;width:9px;height:9px;border-radius:50%;background:#9cbbdf}
+.vlt-corner-one{top:10px;left:22px}
+.vlt-corner-two{right:16px;bottom:12px;width:12px;height:12px}
+.vlt-toolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:29px}
+.vlt-modes{display:inline-flex;padding:4px;border:1px solid #dbe4f0;border-radius:11px;background:#f4f7fb}
+.vlt-modes button{min-width:87px;min-height:37px;padding:8px 17px;border:0;border-radius:8px;background:transparent;color:#64758f;font:inherit;font-size:12px;font-weight:750;cursor:pointer}
+.vlt-modes button[aria-pressed=true]{background:#285bcc;color:white;box-shadow:0 3px 9px #285bcc22}
+.vlt-mode-label{color:#6c7e98;font-size:11px}
+.vlt-filters{display:flex;gap:7px;overflow-x:auto;padding:17px 0 14px;border-bottom:1px solid #e1e8f1;scrollbar-width:thin}
+.vlt-filters button{flex:0 0 auto;max-width:320px;min-height:35px;padding:8px 13px;border:1px solid #dce5ef;border-radius:999px;background:#fff;color:#56708f;font:inherit;font-size:11px;font-weight:650;white-space:nowrap;cursor:pointer}
+.vlt-filters button[aria-pressed=true]{border-color:#285bcc;background:#285bcc;color:#fff}
+.vlt-filters button:not([aria-pressed=true]):hover{border-color:#9db6d7}
+.vlt-group{padding:24px 0 28px;border-bottom:1px solid #e4eaf2}
+.vlt-group:last-child{border-bottom:0}
+.vlt-group-heading{display:flex;align-items:flex-start;gap:12px;margin-bottom:15px}
+.vlt-group-index{display:grid;flex:0 0 auto;place-items:center;width:31px;height:31px;border-radius:9px;background:#eaf0f8;color:#476e9f;font-size:11px;font-weight:800}
+.vlt-group-heading>div{flex:1;min-width:0;padding-top:3px}
+.vlt-group-heading h3{margin:0;color:#243b5b;font-size:17px;font-weight:760;line-height:1.45;overflow-wrap:anywhere}
+.vlt-group-heading p{margin:3px 0 0;color:#72849b;font-size:11px}
+.vlt-group-count{min-width:28px;padding:5px 9px;border-radius:999px;background:#f0f4fa;color:#6b7e99;font-size:11px;font-weight:700;text-align:center}
+.vlt-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:10px}
+.vlt-card{display:flex;align-items:center;gap:11px;min-width:0;min-height:109px;padding:12px;border:1px solid #dce5ef;border-radius:12px;background:#fff;color:inherit;text-align:left}
+.vlt-card.vlt-text-card{min-height:83px;padding:14px 16px}
+.vlt-visual{display:grid;flex:0 0 65px;place-items:center;width:65px;height:71px;border:1px solid #e2eaf5;border-radius:9px;background:#f3f7fc;color:#5479ac;overflow:hidden}
+.vlt-color{display:block;width:43px;height:43px;border:1px solid #aebed4;border-radius:9px;box-shadow:0 2px 8px #1c30461a}
+.vlt-drawing{width:65px;height:58px;color:#658ab6}
+.vlt-card-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.vlt-term{order:0;color:#243956;font-size:13px;font-weight:760;line-height:1.5;overflow-wrap:anywhere}
+.vlt-meaning{order:1;color:#647b96;font-size:11px;line-height:1.55;overflow-wrap:anywhere}
+.vlt-source-note{order:2;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#7c8a9f;font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+.vlt-card-kicker{order:-1;color:#7388a3;font-size:9px;font-weight:800;letter-spacing:.07em}
+.vlt-recall-card{width:100%;font:inherit;cursor:pointer;transition:border-color .13s ease,background .13s ease}
+.vlt-recall-card:hover{border-color:#9db6db;background:#f9fbff}
+.vlt-recall-card.is-revealed{border-color:#91b0db;background:#f5f9ff}
+.vlt-recall-card .vlt-meaning.is-prompt{order:0;color:#375a89;font-size:12px;font-weight:700}
+.vlt-recall-card .vlt-term{order:1;color:#285bcc}
+.vlt-hidden-term{order:1;color:#6681a6;font-size:11px;font-weight:650}
+.vlt-reveal-note{order:2;color:#7085a1;font-size:10px}
+.vlt-empty{padding:18px;border-radius:10px;background:#f4f7fb;color:#627793;font-size:12px}
+.vlt-lesson :is(button,a):focus-visible{outline:3px solid #285bcc;outline-offset:3px}
+@media(max-width:820px){.vlt-hero{grid-template-columns:minmax(0,1fr) 140px;padding:24px}.vlt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){
+.vlt-lesson{margin-top:22px}
+.vlt-hero{grid-template-columns:minmax(0,1fr) 74px;gap:12px;min-height:135px;padding:19px;border-radius:13px}
+.vlt-hero-copy h2{font-size:19px}
+.vlt-hero-copy>p:not(.vl01-kicker){font-size:11px}
+.vlt-hero-art{height:83px}
+.vlt-hero-art .curriculum-icon{width:45px;height:45px}
+.vlt-hero-halo{width:76px;height:76px}
+.vlt-corner-one{top:2px;left:0}.vlt-corner-two{right:0;bottom:0}
+.vlt-toolbar{margin-top:23px}.vlt-mode-label{font-size:10px}
+.vlt-filters{margin-right:-16px;padding-right:16px}
+.vlt-group{padding:21px 0 23px}
+.vlt-group-heading h3{font-size:15px}
+.vlt-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.vlt-card{flex-direction:column;align-items:flex-start;gap:8px;min-height:151px;padding:10px}
+.vlt-visual{width:100%;height:58px;flex:0 0 58px}
+.vlt-card.vlt-text-card{min-height:95px}
+.vlt-term{font-size:11px}.vlt-meaning{font-size:10px}
+.vlt-source-note{font-size:9px}
+.vlt-recall-card .vlt-meaning.is-prompt{font-size:11px}.vlt-hidden-term{font-size:10px}
+}
+@media(max-width:380px){.vlt-grid{grid-template-columns:1fr}.vlt-card{flex-direction:row;align-items:center;min-height:99px}.vlt-visual{width:63px;height:66px;flex:0 0 63px}}
+@media(prefers-reduced-motion:reduce){.vlt-recall-card{transition:none}}

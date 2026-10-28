@@ -191,6 +191,10 @@ export function PracticeLibrary({ learning }) {
             <Icon name="next" />
           </a>
         )}
+        <a href="#/review">
+          <strong>{language === 'ja' ? '今日の復習' : 'Your Review'}</strong>
+          <Icon name="next" />
+        </a>
         <a href="#/courses?social">
           <strong>{t("Conversation phrases")}</strong>
           <Icon name="next" />

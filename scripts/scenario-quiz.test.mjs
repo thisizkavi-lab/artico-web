@@ -37,7 +37,13 @@ test('each general chapter has grounded, distinct English-option recognition que
     // Chapters 01–02 use dedicated pilot data, tested above.
     if (data.id === '01' || data.id === '02') continue
     const questions = makeScenarioQuiz({ id: data.id, phrases: data.phraseBank }, 'en')
-    assert.ok(questions.length >= 1, file + ' lacks quiz-ready phrases')
+    // A vocabulary-only chapter can have no contextual recognition quiz.
+    if (questions.length === 0) {
+      assert.ok(data.phraseBank.every((item) => item.kind === 'word'), file + ' lost quiz-ready expressions')
+      const jp = JSON.parse(readFileSync(root + 'locales/ja/lessons/' + file, 'utf8'))
+      assert.equal(contextQuestions(jp.phraseBank, 'ja').length, 0, file + ' Japanese quiz mismatch')
+      continue
+    }
     checkQuestions(questions)
     const expressions = new Set(data.phraseBank.map((item) => item.en))
     assert.ok(questions.every((q) => expressions.has(q.options[q.answer])), file + ' ungrounded answer')

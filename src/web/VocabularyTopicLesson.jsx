@@ -14,7 +14,7 @@ function Visual({visual,masked=false}) {
  if (!visual) return null
  if (visual.type==='color') return <span className="vlt-color" style={{backgroundColor:visual.value}} aria-hidden="true"/>
  if (visual.type==='scene') return <VocabularySceneArt scene={visual.scene}/>
- if (['calendar-day','calendar-month','calendar-range','season','frequency','daytime','duration','timeline'].includes(visual.type))
+ if (['calendar-day','calendar-month','calendar-range','season','frequency','daytime','clock','duration','timeline'].includes(visual.type))
    return <VocabularyTimeArt visual={visual} masked={masked}/>
  if (visual.type==='size') return <DimensionArt value={visual.value}/>
  if (visual.type==='material') return <MaterialArt value={visual.value}/>

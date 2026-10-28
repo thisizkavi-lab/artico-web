@@ -38,6 +38,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Cache generated licensed vocabulary artwork
+        uses: actions/cache@v4
+        with:
+          path: public/vocabulary-symbols/mulberry
+          key: mulberry-v3.6.1-${{ hashFiles('src/web/vocabularyMulberryManifest.json') }}
+
+      - name: Generate locally hosted Mulberry vocabulary PNGs
+        run: |
+          python3 -m pip install --quiet cairosvg pillow
+          python3 scripts/build_vocabulary_library.py
+
       - name: Test course and learning progress
         run: pnpm test
 

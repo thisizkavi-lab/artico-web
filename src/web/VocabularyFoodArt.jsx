@@ -1,14 +1,14 @@
 // Original illustrated food objects. Each key is an identifiable ingredient or
 // dish; we do not assign an arbitrary food symbol to an unknown word.
 const foodByTerm = {
- 'apple':'apple','apricot':'peach','avocado':'avocado','avocados':'avocado',
+ 'apple':'apple','apricot':'apricot','avocado':'avocado','avocados':'avocado',
  'banana':'banana','blackberries':'berries','blackcurrants':'berries',
  'blueberry / blueberries':'berries','cranberries':'berries','currant':'berries',
  'gooseberries':'berries','raspberries':'berries','redcurrants':'berries',
  'strawberry / strawberries':'strawberry',
  'grape / grapes':'grapes','cherries':'cherry','coconut':'coconut',
  'fig':'fig','golden raisin':'raisins','raisin':'raisins','sultana':'raisins',
- 'grapefruit':'orange','lemon':'lemon','lime':'lime','mandarin':'orange',
+ 'grapefruit':'grapefruit','lemon':'lemon','lime':'lime','mandarin':'orange',
  'orange (fruit)':'orange','peach':'peach','nectarine':'peach',
  'pear':'pear','plum':'plum','pomegranate':'pomegranate',
  'kiwi fruit':'kiwi','mango':'mango','melon':'melon',
@@ -31,7 +31,7 @@ const foodByTerm = {
  'salad':'salad','soup':'soup','sushi':'sushi',
  'fish':'fish','salmon':'fish','cod':'fish','mackerel':'fish','sardines':'fish',
  'shrimp':'shrimp','prawn':'shrimp','crab':'crab',
- 'hot dog':'hot-dog','fries':'fries','chips':'fries',
+ 'hot dog':'hot-dog','fries':'fries','chips':'chips',
  'bottle':'bottle','glass':'glass','bowl (container)':'bowl',
 }
 export function foodIllustration(term,chapter) {
@@ -72,11 +72,19 @@ function Dish({kind}) {
  return <g><ellipse cx="77" cy="62" rx="50" ry="13" fill="#e5ecf3" stroke="#97abc4" strokeWidth="2"/><circle cx="76" cy="47" r="23" fill="#dfb47e"/></g>
 }
 export default function VocabularyFoodArt({kind}) {
- const round=['apple','orange','lemon','lime','peach','plum','mango','tomato','pear','fig','kiwi','pomegranate','melon','papaya'].includes(kind)
+ const round=['apple','orange','lemon','lime','peach','plum','tomato','pear','apricot'].includes(kind)
  return <svg className="vlt-food-art" viewBox="0 0 152 96" role="img" aria-label="Illustrated food">
   <rect x="1" y="1" width="150" height="94" rx="10" fill="#fcf9f3" stroke="#efe6da"/>
   <ellipse cx="77" cy="84" rx="46" ry="5" fill="#e2d6c8" fillOpacity=".65"/>
   {round&&<RoundFruit kind={kind}/>}
+  {kind==='grapefruit'&&<g><circle cx="77" cy="52" r="34" fill="#e6c47c" stroke="#c2a36e" strokeWidth="2"/><circle cx="77" cy="52" r="28" fill="#e9a4a5" stroke="#f4e2c8" strokeWidth="3"/>{Array.from({length:9},(_,i)=>{const a=i*Math.PI*2/9;return <path key={i} d={'M77 52L'+(77+28*Math.cos(a))+' '+(52+28*Math.sin(a))} stroke="#f9d6d6" strokeWidth="2"/>})}</g>}
+  {kind==='kiwi'&&<g><circle cx="77" cy="52" r="35" fill="#b48c69" stroke="#99785f" strokeWidth="2"/><circle cx="77" cy="52" r="30" fill="#a0bb77"/><circle cx="77" cy="52" r="11" fill="#e9e7cc"/>{Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;return <ellipse key={i} cx={77+17*Math.cos(a)} cy={52+17*Math.sin(a)} rx="2" ry="3.5" transform={'rotate('+(i*30)+' '+(77+17*Math.cos(a))+' '+(52+17*Math.sin(a))+')'} fill="#676757"/>})}</g>}
+  {kind==='mango'&&<g><path d="M46 62q-10-31 31-46q42-8 42 30q-8 40-44 43q-24-2-29-27Z" fill="#edbd72" stroke="#b58c5e" strokeWidth="2.5"/><path d="M83 22q10-14 25-12" stroke="#7d9e6e" strokeWidth="5" fill="none" strokeLinecap="round"/><path d="M103 22Q79 58 62 82" fill="none" stroke="#e6a36c" strokeWidth="3"/></g>}
+  {kind==='papaya'&&<g><ellipse cx="77" cy="52" rx="35" ry="44" fill="#e8ae66" stroke="#b88c57" strokeWidth="2"/><ellipse cx="77" cy="52" rx="26" ry="35" fill="#f4cc8c"/><ellipse cx="77" cy="52" rx="13" ry="24" fill="#c98a61"/>{[[72,39],[82,44],[70,51],[83,59],[76,68],[76,54]].map(([x,y],i)=><circle key={i} cx={x} cy={y} r="3" fill="#6e5951"/>)}</g>}
+  {kind==='fig'&&<g><path d="M77 12q-5 14-20 26Q33 70 56 85q22 13 42-2q24-17-2-46Q82 22 77 12Z" fill="#9376a1" stroke="#715d80" strokeWidth="2.5"/><path d="M77 14l4-9" stroke="#73946d" strokeWidth="4"/></g>}
+  {kind==='pomegranate'&&<g><path d="M56 25l7-15 14 11 14-11 6 15" fill="#b75b60" stroke="#934d57" strokeWidth="2"/><circle cx="77" cy="58" r="34" fill="#c96c69" stroke="#984f55" strokeWidth="2.5"/><path d="M77 24v-8" stroke="#a8585a" strokeWidth="4"/></g>}
+  {kind==='melon'&&<g><ellipse cx="77" cy="53" rx="40" ry="34" fill="#b6c88c" stroke="#849b6c" strokeWidth="2.5"/>{[-20,-10,0,10,20].map(x=><path key={x} d={'M'+(77+x)+' 21q-15 30 0 64'} stroke="#9bb47a" strokeWidth="2" fill="none"/>)}</g>}
+  {kind==='chips'&&<g><ellipse cx="77" cy="70" rx="56" ry="19" fill="#fff" stroke="#a2b3c5" strokeWidth="2"/>{[[52,56],[73,45],[92,61],[111,51],[66,67]].map(([x,y],i)=><ellipse key={i} cx={x} cy={y} rx="14" ry="8" transform={'rotate('+(i*22-30)+' '+x+' '+y+')'} fill="#e8c383" stroke="#bf9e68" strokeWidth="1.7"/>)}</g>}
   {kind==='banana'&&<path d="M25 39Q56 92 128 34Q106 91 54 82Q35 75 25 39Z" fill="#eed270" stroke="#b79b5b" strokeWidth="2.5"/>}
   {kind==='strawberry'&&<g><path d="M47 33q28-14 57 0q14 31-29 59Q37 67 47 33Z" fill="#d15d6b" stroke="#a04f62" strokeWidth="2"/><path d="M49 32l-12-9 25 4 14-17 6 18 25-7-10 13Z" fill="#82aa79"/>{Array.from({length:12},(_,i)=><ellipse key={i} cx={49+i%4*14} cy={45+Math.floor(i/4)*12} rx="2" ry="3" fill="#f0d491"/>)}</g>}
   {kind==='grapes'&&<g><path d="M76 12v22" stroke="#8a7f64" strokeWidth="3"/>{[[68,40],[84,40],[58,55],[75,55],[92,55],[67,69],[84,69],[76,82]].map(([x,y],i)=><circle key={i} cx={x} cy={y} r="10" fill={i%2?'#9a7fb6':'#8770a8'} stroke="#756592" strokeWidth="1.5"/>)}</g>}

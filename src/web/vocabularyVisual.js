@@ -1,3 +1,4 @@
+import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { timeIllustration } from './VocabularyTimeArt'
 import { routineScene } from './VocabularySceneArt'
 import { foodIllustration } from './VocabularyFoodArt'
@@ -28,6 +29,8 @@ const directions = {
  'turn left':'left','turn right':'right','go straight':'forward',
 }
 export function vocabularyVisual(term,chapter) {
+ const png=vocabularyPngIllustration(term,chapter)
+ if(png)return png
  const time=timeIllustration(term,chapter)
  if(time)return time
  const scene=routineScene(term,chapter)

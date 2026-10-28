@@ -58,13 +58,13 @@ test('new guests start at Orientation and returning guests keep their actual stu
   assert.equal(parseRoute(`#${learningStages[0].start}`).id, 'orientation')
 })
 
-test('all 105 lessons have a reversible path from Orientation through Chapter 97 in both modes', () => {
+test('all 104 lessons have a reversible path from Orientation through Chapter 97 in both modes', () => {
   const chapters = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url)))
   const routes = [
     ...learningStages.flatMap((stage) => stage.lessonIds).map((id) => `/foundation/${id}/study`),
     ...['34', ...chapters.map(chapter => publicChapterId(chapter.id))].sort().map(id => `/lesson/${id}/study`),
   ]
-  assert.equal(routes.length, 105)
+  assert.equal(routes.length, 104)
   assert.equal(new Set(routes).size, routes.length)
   routes.forEach((path, index) => {
     const route = parseRoute(`#${path}`)
@@ -141,6 +141,8 @@ test('old course URLs, Foundation links, and all 97 chapter URLs resolve', () =>
     'phrase-coworker',
   )
   assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
+  assert.deepEqual(parseRoute('#/foundation/hear/study'), parseRoute('#/foundation/letters/study'))
+  assert.deepEqual(parseRoute('#/foundation/hear/practice'), parseRoute('#/foundation/letters/practice'))
   assert.equal(parseRoute('#/lesson/98/study').page, 'vocabulary')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch02-line3').line, 'ch02-line3')
   assert.equal(parseRoute('#/lesson/02/practice?line=ch03-line3').line, undefined)

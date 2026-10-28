@@ -59,14 +59,15 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   const [mode, setMode] = useState('study')
   const [revealed, setRevealed] = useState(() => new Set())
   const groups = lesson?.groups || []
+  const activeGroups = groups.map((group,index)=>({...group,index}))
+    .filter(group=>organizeVocabularyGroup(group.items,topic.sourceLesson).fresh.length>0)
   const counts = useMemo(() => groups.reduce((acc,group) => {
     const result=organizeVocabularyGroup(group.items,topic.sourceLesson)
     acc.fresh += result.fresh.length
     acc.revisited += result.revisited.length
     return acc
   }, {fresh:0,revisited:0}), [groups,topic.sourceLesson])
-  const shownGroups = groupIndex === -1 ? groups.map((group, index) => ({ ...group, index }))
-    : groups[groupIndex] ? [{ ...groups[groupIndex], index: groupIndex }] : []
+  const shownGroups = groupIndex === -1 ? activeGroups : activeGroups.filter(group=>group.index===groupIndex)
   const canRecall = (term) => Boolean(vocabularyJapanese(term, topic.sourceLesson) || vocabularyVisual(term, topic.sourceLesson))
 
   function chooseGroup(index) {
@@ -124,11 +125,11 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
         <button type="button" aria-pressed={groupIndex === -1} onClick={() => chooseGroup(-1)}>
           {japanese ? 'すべて' : 'All'}
         </button>
-        {groups.map((group, index) =>
-          <button type="button" key={index} aria-pressed={groupIndex === index}
-            onClick={() => chooseGroup(index)}>
-            {vocabularyGroupJapanese(topic.sourceLesson, index) && japanese
-              ? vocabularyGroupJapanese(topic.sourceLesson, index) : group.title}
+        {activeGroups.map((group) =>
+          <button type="button" key={group.index} aria-pressed={groupIndex === group.index}
+            onClick={() => chooseGroup(group.index)}>
+            {vocabularyGroupJapanese(topic.sourceLesson, group.index) && japanese
+              ? vocabularyGroupJapanese(topic.sourceLesson, group.index) : group.title}
           </button>)}
       </nav>
       <div className="vlt-groups">

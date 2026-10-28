@@ -10,6 +10,7 @@ import SmallTalkCourse from './SmallTalkCourse'
 import './application.css'
 
 const IeltsCourse = lazy(() => import('./IeltsCourse'))
+const ReadingCourse = lazy(() => import('./ReadingCourse'))
 const IdeasCourse = lazy(() => import('./IdeasCourse'))
 
 function TrackCard({ track, language, index }) {
@@ -112,6 +113,7 @@ export default function Application({ route, learning, update }) {
   if (!route.id) return <TrackOverview language={language}/>
   if (route.id === 'tests') return <Suspense fallback={<div className="aw-page" role="status">Loading English Tests…</div>}><IeltsCourse route={route}/></Suspense>
   if (route.id === 'ideas') return <Suspense fallback={<div className="aw-page" role="status">Loading Ideas &amp; Expression…</div>}><IdeasCourse route={route}/></Suspense>
+  if (route.id === 'reading') return <Suspense fallback={<div className="aw-page ap-page" role="status">Opening reading library…</div>}><ReadingCourse route={route}/></Suspense>
   if (route.id === 'writing') return <WritingStudio />
   if (route.id === 'smalltalk') return <SmallTalkCourse route={route} learning={learning} update={update} />
   if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />

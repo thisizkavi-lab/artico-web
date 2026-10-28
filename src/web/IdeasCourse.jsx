@@ -84,7 +84,7 @@ function IdeaSeed({ store, collapsed = false }) {
 }
 function Home({ route, store }) {
   const total = allTasks.length
-  const done = Object.keys(store.state.completed).length
+  const done = Object.values(store.state.completed).filter(Boolean).length
   return <>
     <header className="ie-heading"><h1>Ideas &amp; Expression</h1><p>Find out what you think. Test it. Then express it in clear, natural English.</p></header>
     <section className="id-path" aria-label="Course approach">

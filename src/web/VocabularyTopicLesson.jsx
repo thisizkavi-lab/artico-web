@@ -13,6 +13,7 @@ const lessons = new Map(organized.lessons.map(lesson => [lesson.sourceLesson, le
 
 function Visual({visual,masked=false}) {
  if (!visual) return null
+ if (visual.type==='png') return <img className="vlt-png" src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async"/>
  if (visual.type==='color') return <span className="vlt-color" style={{backgroundColor:visual.value}} aria-hidden="true"/>
  if (visual.type==='scene') return <VocabularySceneArt scene={visual.scene}/>
  if (visual.type==='food') return <VocabularyFoodArt kind={visual.kind}/>

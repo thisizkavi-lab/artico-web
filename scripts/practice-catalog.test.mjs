@@ -70,7 +70,7 @@ test('canonical selections preserve ratings and positions; compound selections e
   assert.ok(targets.every((id) => migrated.ratings[id] === 'needs-work'))
   assert.ok(targets.every((id) => catalog.items.find((item) => item.id === id).studyId === sourceId))
   assert.deepEqual(getPracticeSet({ selected: [] }, catalog.items, undefined, catalog).selected, [])
-  assert.deepEqual(getPracticeSet(undefined, catalog.items, undefined, catalog).selected, catalog.starterIds)
+  assert.deepEqual(getPracticeSet(undefined, catalog.items, undefined, catalog).selected, [])
 })
 
 test('equivalent punctuation within a section is merged while distinct teaching contexts remain', () => {

@@ -51,6 +51,27 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
+      - name: Cache Artico handwriting worksheets
+        id: handwriting-cache
+        uses: actions/cache@v4
+        with:
+          path: public/worksheets
+          key: artico-handwriting-v1-${{ hashFiles('scripts/generate_handwriting_worksheets.py') }}
+
+      - name: Generate printable A4 handwriting worksheets
+        if: steps.handwriting-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-sil-andika fonts-lato
+          python3 -m pip install --quiet numpy pillow scikit-image reportlab
+          python3 scripts/generate_handwriting_worksheets.py
+
+      - name: Verify printable worksheets
+        run: |
+          test -f public/worksheets/Artico_Complete_Handwriting_Workbook.pdf
+          test -f public/worksheets/Artico_Handwriting_PDF_Collection.zip
+          test "$(find public/worksheets -maxdepth 1 -name '*.pdf' | wc -l)" -eq 58
+
       - name: Test course and learning progress
         run: pnpm test
 

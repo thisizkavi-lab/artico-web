@@ -7,9 +7,12 @@ const aliases = {
  'put on make-up':'mirror','shave':'mirror',
  'bath':'bath','shower':'shower','take a bath / have a bath':'bath','take a shower / have a shower':'shower',
  'breakfast':'breakfast','eat breakfast':'breakfast','have breakfast':'breakfast',
+ 'eat breakfast / have breakfast':'breakfast',
  'lunch':'lunch','eat lunch':'lunch','have lunch':'lunch',
+ 'eat lunch / have lunch':'lunch',
  'dinner':'dinner','eat dinner':'dinner','have dinner':'dinner',
- 'coffee':'coffee','tea':'tea','drink tea or coffee':'coffee','have tea or coffee':'coffee',
+ 'eat dinner / have dinner':'dinner',
+ 'coffee':'coffee','tea':'tea','drink tea or coffee':'coffee','have tea or coffee':'coffee','drink tea or coffee / have tea or coffee':'coffee',
  'make breakfast':'cook','cook dinner':'cook',
  'arrive late':'late','catch the bus':'bus','catch the train':'train','commute':'bus',
  'drive':'drive','go to school':'school','school':'school','go to work':'office',
@@ -17,15 +20,22 @@ const aliases = {
  'work from home':'laptop','overtime':'night-work','do homework':'homework','homework':'homework',
  'have a break':'break','leave the house':'door','go home':'door',
  'buy groceries':'shopping','run errands':'shopping',
- 'clear the table':'clean','dishes':'dishes','do the dishes':'dishes','wash the dishes':'dishes',
+ 'clear the table':'clean','dishes':'dishes','do the dishes':'dishes','wash the dishes':'dishes','do the dishes / wash the dishes':'dishes',
  'do the housework':'broom','housework':'broom','iron a shirt':'iron','make the bed':'make-bed',
  'take out the trash':'trash','feed the cat':'cat','feed the dog':'dog','walk the dog':'walk-dog',
  'café':'cafe','go to a café':'cafe','friends':'friends','call a friend':'phone',
- 'call your family':'phone','check your emails':'laptop','check email':'laptop',
+ 'call your family':'phone','check your emails':'laptop','check email':'laptop','check your emails / check email':'laptop',
  'go out':'door','listen to the radio':'radio','read a newspaper':'read',
  'bed':'bed','go to bed':'bed','put the children to bed':'bed'
 }
-export const routineScene = (term, chapter) => chapter === 4 ? aliases[normalize(term)] || null : null
+const travelActions = {
+ 'get on a bus':'bus','get off a bus':'bus','catch a train':'train',
+ 'miss a train':'train','get in a taxi':'drive','get out of a taxi':'drive',
+ 'drive a car':'drive','go to school':'school','ride a bike':'bike',
+}
+export const routineScene = (term,chapter) => chapter===4
+ ? aliases[normalize(term)] || null
+ : travelActions[normalize(term)] || null
 
 function Person({ x = 29, y = 17, sitting = false, waving = false, hair = '#4b506a', shirt = '#e6a874' }) {
   return <g transform={'translate('+x+' '+y+')'}>
@@ -62,7 +72,8 @@ export default function VocabularySceneArt({scene}) {
   <><circle cx="134" cy="14" r="8" fill="#f0cf83"/><path d="M9 17H39" stroke="#d8e7f2" strokeWidth="3"/></>}
  {meal&&<><Person x={15} y={12} sitting/><Table/><Plate food={scene==='breakfast'?'#e9c976':scene==='lunch'?'#88b68f':'#de9c75'}/></>}
  {['coffee','tea','break'].includes(scene)&&<><Person x={22} y={12} sitting/><Table/><path d="M80 48h22v16q-11 9-22 0z" fill="#fcfaf4" stroke="#7c98b7" strokeWidth="2"/><path d="M102 52q15 0 0 10M83 44q-4-5 0-10M92 44q-4-5 0-10" stroke="#86aab7" strokeWidth="2" fill="none"/></>}
- {transit&&<><Bus train={scene==='train'}/><Person x={23} y={19} waving/></>}
+ {transit&&<><Bus train={scene==='train'}/><Person x={23} y={19} waving/><path d="M53 65l9-5-5-5" fill="none" stroke="#b77a62" strokeWidth="2.5" strokeLinecap="round"/></>}
+ {scene==='bike'&&<><Person x={24} y={10}/><circle cx="82" cy="70" r="16" fill="none" stroke="#607f9f" strokeWidth="4"/><circle cx="132" cy="70" r="16" fill="none" stroke="#607f9f" strokeWidth="4"/><path d="M82 70l25-23 25 23h-50l17-34h12" fill="none" stroke="#7e9fbd" strokeWidth="3" strokeLinejoin="round"/><path d="M48 57l26 5" stroke="#607f9f" strokeWidth="3"/></>}
  {scene==='late'&&<><Clock late/><Person x={25} y={14}/><path d="M13 74l-9 4M22 81l-12 4M50 66l12-4" stroke="#dd937b" strokeWidth="2.5" strokeLinecap="round"/><path d="M117 51v13" stroke="#db7d6d" strokeWidth="4"/><circle cx="117" cy="69" r="2" fill="#db7d6d"/></>}
  {desk&&<><Person x={13} y={12} sitting/><path d="M55 78H138M61 78v10M129 78v10" stroke="#a48468" strokeWidth="4"/><Computer/>{scene==='night-work'&&<Clock x={127} y={20}/>}</>}
  {scene==='drive'&&<><rect x="61" y="47" width="81" height="30" rx="10" fill="#91b9d8" stroke="#617f9f" strokeWidth="2"/><path d="M79 47l13-15h28l15 15" fill="#c1deee" stroke="#617f9f" strokeWidth="2"/><circle cx="82" cy="76" r="9" fill="#51617d"/><circle cx="125" cy="76" r="9" fill="#51617d"/><Person x={84} y={26} /></>}

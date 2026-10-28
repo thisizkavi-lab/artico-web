@@ -38,51 +38,33 @@ test('polysemy is protected rather than deleting different concepts',()=>{
   assert.match(japanese,/'44:train':'電車/)
 })
 
-test('visual cards draw semantic concepts instead of repeating generic icons',()=>{
-  assert.doesNotMatch(view,/CurriculumIcon/)
-  assert.match(view,/<VocabularyTimeArt/)
-  assert.match(view,/<VocabularySceneArt/)
-  assert.match(view,/<VocabularyFoodArt/)
-  assert.match(view,/<DimensionArt/)
-  assert.match(visual,/timeIllustration\(term,chapter\)/)
-  assert.match(visual,/routineScene\(term,chapter\)/)
-  assert.match(visual,/foodIllustration\(term,chapter\)/)
-  assert.doesNotMatch(visual,/icon:|type:'icon'/)
-  assert.match(scenes,/'catch the bus':'bus'/)
-  assert.match(scenes,/'eat dinner':'dinner'/)
-  assert.match(scenes,/'do the dishes':'dishes'/)
-  assert.match(view,/masked=\{answerHidden\}/)
+test('Vocabulary Lessons 3–78 render raster images only, never inline SVG art',()=>{
+  for(const component of ['VocabularyTimeArt','VocabularySceneArt','VocabularyFoodArt','DimensionArt','MaterialArt','WeatherArt','DirectionArt','CurriculumIcon'])
+    assert.ok(!view.includes(component),'Old inline vector in vocabulary renderer: '+component)
+  assert.ok(!view.includes('<svg'),'Vocabulary card must not render inline SVG')
+  assert.ok(view.includes('<img className='))
+  assert.ok(!visual.includes('timeIllustration('))
+  assert.ok(!visual.includes('routineScene('))
+  assert.ok(!visual.includes('foodIllustration('))
+  assert.ok(visual.includes('vocabularyTimePng(term, chapter)'))
+  assert.ok(visual.includes('vocabularyPngIllustration(term, chapter)'))
+  assert.ok(visual.includes('vocabularyOriginalScene(term, chapter)'))
+  assert.ok(visual.includes('vocabularyLibraryIllustration(term, chapter)'))
 })
 
-test('calendar and time diagrams cover all weekday and month names',()=>{
-  for(const day of ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'])
-    assert.ok(time.includes(day),day)
-  for(const month of ['January','February','March','April','May','June','July','August','September','October','November','December'])
-    assert.ok(time.includes(month),month)
-  assert.match(time,/calendar-day/)
-  assert.match(time,/calendar-month/)
-  assert.match(time,/calendar-range/)
-  assert.match(time,/frequency/)
-  assert.match(time,/clock/)
-  assert.match(time,/season/)
-  assert.match(time,/masked/)
+test('Lesson 3 has an original raster time-diagram image for all 82 terms',()=>{
+  const lesson=source.lessons.find(l=>l.sourceLesson===3)
+  const words=lesson.groups.flatMap(g=>g.items.map(x=>x[0]))
+  assert.equal(words.length,82)
+  assert.equal(new Set(words).size,82)
+  const map=load('vocabularyTimePng.js')
+  assert.ok(map.includes('index.has(term)'))
+  assert.ok(map.includes("'vocabulary-ai/ch03/03-'"))
+  const renderer=readFileSync(new URL('../../scripts/build_vocab_time_png.py',import.meta.url),'utf8')
+  for(const pattern of ['ImageDraw','weekday(d','month(d','clock(d','season(d','freq(d','timeline(d','globe(d'])
+    assert.ok(renderer.includes(pattern),'Time diagram capability missing: '+pattern)
+  assert.ok(!renderer.includes('cairosvg'),'Time pictures must be native raster drawings')
 })
-
-test('every mapped food kind has a rendering branch',()=>{
-  const mapSection=food.split('const foodByTerm = {')[1].split('\n}')[0]
-  const kinds=[...new Set([...mapSection.matchAll(/'[^']+'\s*:\s*'([^']+)'/g)].map(x=>x[1]))]
-  const rendered=new Set()
-  const round=food.match(/const round=\[(.*?)\]\.includes\(kind\)/s)?.[1]||''
-  for(const [,word] of round.matchAll(/'([^']+)'/g))rendered.add(word)
-  for(const [,word] of food.matchAll(/kind==='([^']+)'/g))rendered.add(word)
-  for(const [,words] of food.matchAll(/\[((?:'[^']+'[,]?)+)\]\.includes\(kind\)/g))
-    for(const [,word] of words.matchAll(/'([^']+)'/g))rendered.add(word)
-  assert.ok(kinds.length>=65)
-  assert.deepEqual(kinds.filter(kind=>!rendered.has(kind)),[],'No concept may render as a blank illustration')
-  assert.ok(!food.includes("'chips':'fries'"),'U.S. potato chips must not be pictured as fries')
-})
-
-
 
 test('pinned Mulberry and OpenMoji artwork maps only to known vocabulary terms',()=>{
   const manifest=JSON.parse(load('vocabularyMulberryManifest.json'))

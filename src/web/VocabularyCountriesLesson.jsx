@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01'
+import { toNationalityReviewContent, toVocabularyReviewContent } from './vocabularyReview'
+import { ReviewToggle, useReviewCollection } from './ReviewToggle'
 
 const asset = (path) => `${import.meta.env.BASE_URL}assets/vocabulary/${path}`
 
-function CountryCard({ item, revealed, onToggle, japanese }) {
+function CountryCard({ item, revealed, onToggle, japanese, collection }) {
   const description = revealed
     ? (japanese ? `${item.nationality}、${item.nationalityJa}。タップして隠す` : `${item.nationality}. Click to hide`)
     : (japanese ? '国籍の言い方を表示' : 'Show nationality')
@@ -29,11 +31,13 @@ function CountryCard({ item, revealed, onToggle, japanese }) {
           {!revealed && <span className="vl01-reveal">{japanese ? 'タップして確認' : 'Tap to reveal'} <span aria-hidden="true">↗</span></span>}
         </span>
       </button>
+      <div className="ar-country-action"><ReviewToggle content={toNationalityReviewContent(item)} collection={collection} japanese={japanese} /></div>
     </li>
   )
 }
 
 export default function VocabularyCountriesLesson({ japanese }) {
+  const collection = useReviewCollection()
   const [region, setRegion] = useState('all')
   const [hiddenCountries, setHiddenCountries] = useState(() => new Set())
   const visible = region === 'all' ? countries : countries.filter((item) => item.regions.includes(region))
@@ -84,6 +88,7 @@ export default function VocabularyCountriesLesson({ japanese }) {
         <div className="vl01-note-example"><span>COUNTRY <span aria-hidden="true">→</span> NATIONALITY</span><strong>Japan <span aria-hidden="true">→</span> Japanese</strong><small lang="ja">日本 → 日本人</small></div>
       </aside>
 
+      {collection.error && <p role="alert" className="ar-collection-error">{collection.error}</p>}
       <section className="vl01-countries" aria-labelledby="vl01-countries-heading">
         <div className="vl01-section-heading">
           <div>
@@ -106,7 +111,7 @@ export default function VocabularyCountriesLesson({ japanese }) {
         </p>
         <ul className="vl01-cards">
           {visible.map((item) => <CountryCard key={item.code} item={item} revealed={!hiddenCountries.has(item.code)}
-            onToggle={() => toggleCountry(item.code)} japanese={japanese} />)}
+            onToggle={() => toggleCountry(item.code)} japanese={japanese} collection={collection} />)}
         </ul>
         <p className="vl01-region-note">{japanese
           ? 'ロシアとトルコは、ヨーロッパとアジアの両方に表示されます。'
@@ -122,10 +127,10 @@ export default function VocabularyCountriesLesson({ japanese }) {
           </div>
         </div>
         <dl className="vl01-word-grid">
-          {placeWords.map((word) => <div key={word.en}><dt lang="en">{word.en}</dt><dd lang="ja">{word.ja}</dd></div>)}
+          {placeWords.map((word) => <div key={word.en}><dt lang="en">{word.en}</dt><dd lang="ja">{word.ja}</dd><ReviewToggle content={toVocabularyReviewContent(word.en,1,word.ja)} collection={collection} japanese={japanese} /></div>)}
         </dl>
         <div className="vl01-phrase-grid">
-          {placePhrases.map((phrase) => <div key={phrase.en}><strong lang="en">{phrase.en}</strong><p lang="ja">{phrase.ja}</p></div>)}
+          {placePhrases.map((phrase) => <div key={phrase.en}><strong lang="en">{phrase.en}</strong><p lang="ja">{phrase.ja}</p><ReviewToggle content={toVocabularyReviewContent(phrase.en,1,phrase.ja)} collection={collection} japanese={japanese} /></div>)}
         </div>
       </section>
     </div>

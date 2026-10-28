@@ -3,6 +3,8 @@ import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import { organizeVocabularyGroup } from './vocabularyDedup'
+import { toVocabularyReviewContent } from './vocabularyReview'
+import { ReviewToggle, useReviewCollection } from './ReviewToggle'
 import VocabularySceneArt from './VocabularySceneArt'
 import VocabularyTimeArt from './VocabularyTimeArt'
 import VocabularyFoodArt from './VocabularyFoodArt'
@@ -27,7 +29,7 @@ function Visual({visual,masked=false}) {
  return null
 }
 
-function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
+function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese, collection }) {
   const [term, note] = entry
   const ja = vocabularyJapanese(term, lesson)
   const visual = vocabularyVisual(term, lesson)
@@ -48,17 +50,20 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
       </span>
     </>
   )
-  return practice && canPractice
+  const content = ja ? toVocabularyReviewContent(term, lesson, ja, note) : null
+  const card = practice && canPractice
     ? <button type="button" className={'vlt-card vlt-recall-card' + (revealed ? ' is-revealed' : '') + (visual ? ' vlt-image-card' : ' vlt-text-card')}
         onClick={onReveal} aria-label={(ja || (japanese ? '絵のカード' : 'Picture card')) + (revealed ? ': ' + term : (japanese ? '。答えを表示する' : '. Reveal answer'))}
         aria-expanded={Boolean(revealed)}>
         {body}
       </button>
     : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}</article>
+  return <div className="ar-reviewable">{card}<ReviewToggle content={content} collection={collection} japanese={japanese} /></div>
 }
 
 export default function VocabularyTopicLesson({ topic, japanese }) {
   const lesson = lessons.get(topic.sourceLesson)
+  const collection = useReviewCollection()
   const [groupIndex, setGroupIndex] = useState(-1)
   const [mode, setMode] = useState('study')
   const [revealed, setRevealed] = useState(() => new Set())
@@ -136,6 +141,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
               ? vocabularyGroupJapanese(topic.sourceLesson, group.index) : group.title}
           </button>)}
       </nav>
+      {collection.error && <p role="alert" className="ar-collection-error">{collection.error}</p>}
       <div className="vlt-groups">
         {shownGroups.map(group => {
           const {fresh,revisited} = organizeVocabularyGroup(group.items, topic.sourceLesson)
@@ -160,7 +166,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}
                         practice={mode === 'practice'} revealed={revealed.has(key)}
-                        onReveal={() => toggleReveal(key)} japanese={japanese} />
+                        onReveal={() => toggleReveal(key)} japanese={japanese} collection={collection} />
                     })}
                   </div>
                 : <p className="vlt-empty">{japanese

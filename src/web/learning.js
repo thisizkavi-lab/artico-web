@@ -189,7 +189,7 @@ export function parseRoute(hash) {
     return { path: '/application', page:'application' }
   }
   if (page === 'home') return { path: '/home', page: 'home' }
-  if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }
+  if (['courses', 'practice', 'progress', 'saved', 'review'].includes(page)) return { path, page }
   if (
     page === 'lesson' &&
     /^(?:0[1-9]|[1-8]\d|9[0-7])$/.test(id) &&

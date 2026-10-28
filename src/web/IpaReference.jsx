@@ -98,21 +98,24 @@ function useIpaPlayback(language) {
       browserSpeech(sound.word, l)
       return
     }
-    const source = IPA_SOURCE_BASE + encodeURIComponent(sound.audioFile)
-    const audio = new Audio(source)
-    audioRef.current = audio
-    audio.onended = () => { if (audioRef.current === audio) audioRef.current = null }
-    audio.onerror = () => {
-      if (audioRef.current !== audio) return
-      audioRef.current = null
-      browserSpeech(sound.word, l)
+    const local = `${import.meta.env.BASE_URL}audio/ipa/${sound.audioFile}`
+    const remote = IPA_SOURCE_BASE + encodeURIComponent(sound.audioFile)
+    // Try the Artico-hosted copy first, then Commons, then a labeled device voice.
+    const attempt = (url, remoteFallback) => {
+      const audio = new Audio(url)
+      audioRef.current = audio
+      const failed = () => {
+        if (audioRef.current !== audio) return
+        audioRef.current = null
+        if (remoteFallback) attempt(remote, false)
+        else browserSpeech(sound.word, l)
+      }
+      audio.onended = () => { if (audioRef.current === audio) audioRef.current = null }
+      audio.onerror = failed
+      audio.play().catch(failed)
     }
     setMessage(l.playingRecording)
-    audio.play().catch(() => {
-      if (audioRef.current !== audio) return
-      audioRef.current = null
-      browserSpeech(sound.word, l)
-    })
+    attempt(local, true)
   }
   return { play, stop, message }
 }

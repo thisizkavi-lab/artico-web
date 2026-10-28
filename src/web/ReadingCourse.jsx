@@ -40,9 +40,9 @@ function Home({state,change,mode,t,lang}){
  </>
 }
 function Collection({c,mode,state,t,lang}){
- const [tier,setTier]=useState('All'),items=texts.filter(v=>v.collection===c.id),shown=tier==='All'?items:items.filter(v=>v.tier===tier)
+ const [tier,setTier]=useState('All'),items=texts.filter(v=>v.collection===c.id),available=tiers.filter(level=>items.some(v=>v.tier===level)),shown=tier==='All'?items:items.filter(v=>v.tier===tier)
  return <><header className="rd-heading"><p className="rd-eyebrow">READING COLLECTION</p><h1>{c.title}</h1><p>{lang==='ja'?c.ja+' · ':''}{c.intro} {c.goal}</p></header>
- <div className="rd-filter"><label htmlFor="rd-tier">{t.difficulty}</label><select id="rd-tier" value={tier} onChange={e=>setTier(e.target.value)}><option value="All">{t.any}</option>{tiers.map(x=><option key={x}>{x}</option>)}</select><span>{shown.length} readings</span></div>
+ <div className="rd-filter"><label htmlFor="rd-tier">{t.difficulty}</label><select id="rd-tier" value={tier} onChange={e=>setTier(e.target.value)}><option value="All">{t.any}</option>{available.map(x=><option key={x}>{x}</option>)}</select><span>{shown.length} readings</span></div>
  <div className="rd-text-list">{shown.map(v=><a key={v.id} className="rd-text-row" href={'#'+path(c.id,mode,v.id)}><span className="rd-index">{String(items.indexOf(v)+1).padStart(2,'0')}</span><span className="rd-text-copy"><strong>{v.title}</strong><span>{v.subtitle}</span><small>{v.tier} · {time(v)} min · {v.format}</small></span><span className="rd-row-action">{state.done[v.id]?t.practised:state.read[v.id]?t.read:t.reader} ›</span></a>)}
  {!shown.length&&<p className="rd-empty">{t.noTexts}</p>}</div></>
 }

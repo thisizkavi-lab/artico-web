@@ -136,6 +136,9 @@ export function parseRoute(hash) {
   if (path === '/courses?orientation') return { path: '/home', page: 'home' }
   const segments = path.split('?')[0].split('/').filter(Boolean)
   const [page, id, view, scene] = segments
+  // Old Hear the Alphabet bookmarks now open the combined Alphabet lesson.
+  if (page === 'foundation' && id === 'hear')
+    return parseRoute(`#/foundation/letters/${view === 'practice' ? 'practice' : 'study'}`)
   if ((page === 'lesson' && id === '98' && view === 'study') || page === 'vocabulary') {
     const requestedTopic = page === 'vocabulary' ? id : scene
     const topic = /^(?:0?[1-9]|[1-6]\d|7[0-8])$/.test(requestedTopic ?? '')

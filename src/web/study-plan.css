@@ -77,3 +77,38 @@
 @media(prefers-reduced-motion:reduce) {
   .rf-plan-bar span,.rf-plan-choice { transition:none; }
 }
+
+/* The plan should lead into lessons instead of ending at an outlook. */
+.rf-plan-next-actions {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:11px 17px;
+  margin-top:22px;
+}
+.rf-plan-next-actions :is(a,button) {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-height:45px;
+  padding:11px 15px;
+  border-radius:9px;
+  font:inherit;
+  font-size:13px;
+  font-weight:700;
+  text-decoration:none;
+}
+.rf-plan-begin { background:#365e48; color:#fff; }
+.rf-plan-begin:hover { background:#284b38; }
+.rf-plan-jump { border:1px solid #b8cdbd; color:#365e48; }
+.rf-plan-jump:hover { background:#f4f8f3; }
+.rf-plan-next-actions .rf-plan-edit { margin-top:0; }
+.rf-plan-next-actions :is(a,button):focus-visible {
+  outline:3px solid #8bae96;
+  outline-offset:3px;
+}
+@media(max-width:680px) {
+  .rf-plan-next-actions { flex-direction:column; align-items:stretch; }
+  .rf-plan-next-actions :is(a,button) { width:100%; }
+}

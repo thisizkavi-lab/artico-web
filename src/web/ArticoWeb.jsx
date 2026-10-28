@@ -9,6 +9,7 @@ import Progress from './Progress'
 import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
 import { ieltsArea } from './ieltsNavigation'
+import { isStaleAssetFailure, shouldRefreshStaleAssets } from './routeRecovery.js'
 
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))
@@ -53,17 +54,36 @@ function useRoute(beforeChange) {
   }, [])
   return route
 }
+const RELOAD_MARKER = 'artico.stale-assets-reload-at'
 class LearningBoundary extends Component {
-  state = { failed: false }
-  static getDerivedStateFromError() {
-    return { failed: true }
+  state = { failed: false, staleAssets: false }
+  static getDerivedStateFromError(error) {
+    return { failed: true, staleAssets: isStaleAssetFailure(error) }
+  }
+  componentDidCatch(error, info) {
+    // Keep the real exception visible for debugging genuine render failures.
+    console.error('Artico page error:', error, info?.componentStack ?? '')
+    if (!isStaleAssetFailure(error)) return
+    try {
+      const lastReload = window.sessionStorage.getItem(RELOAD_MARKER)
+      if (shouldRefreshStaleAssets(error, lastReload)) {
+        window.sessionStorage.setItem(RELOAD_MARKER, String(Date.now()))
+        // Reload the new build; preserve the URL/hash and local learning data.
+        window.location.reload()
+      }
+    } catch {
+      // Blocked session storage: leave the manual reload action available.
+    }
   }
   render() {
     if (this.state.failed)
       return (
         <div className="aw-page aw-empty">
-          <h1>{this.props.t('This page could not be loaded.')}</h1>
-          <Button onClick={() => window.location.reload()}>{this.props.t('Try again')}</Button>
+          <h1>{this.props.t(this.state.staleAssets
+            ? 'Artico was updated while this page was open.'
+            : 'This page could not be loaded.')}</h1>
+          {this.state.staleAssets && <p>{this.props.t('Reload to open the newest version. Your saved learning stays on this device.')}</p>}
+          <Button onClick={() => window.location.reload()}>{this.props.t(this.state.staleAssets ? 'Reload latest version' : 'Try again')}</Button>
         </div>
       )
     return this.props.children

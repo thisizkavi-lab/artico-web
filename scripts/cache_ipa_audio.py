@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import quote
 import re
-import time
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "public" / "audio" / "ipa"
@@ -24,7 +24,7 @@ def fetch(filename):
     for attempt in range(2):
         try:
             request = Request(uri, headers={"User-Agent": "ArticoEducationalIPA/1.0 (https://github.com/thisizkavi-lab/artico-web; noncommercial cache)","Accept": "audio/ogg,*/*"})
-            with urlopen(request, timeout=15) as response:
+            with urlopen(request, timeout=7) as response:
                 body = response.read(300_000)
             if not body.startswith(b"OggS"):
                 raise ValueError("Expected Ogg Vorbis audio; received another format")
@@ -32,9 +32,11 @@ def fetch(filename):
             return True
         except Exception as err:
             print(f"Could not cache {filename} (attempt {attempt+1}): {err}")
-            if attempt == 0: time.sleep(.3)
+
     return False
 
 if __name__ == "__main__":
-    cached = [name for name in FILES if fetch(name)]
+    with ThreadPoolExecutor(max_workers=7) as pool:
+        results = list(pool.map(fetch, FILES))
+    cached = [name for name, ok in zip(FILES, results) if ok]
     print(f"Artico IPA audio: cached {len(cached)} of {len(FILES)} verified source recordings")

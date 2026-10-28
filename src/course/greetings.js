@@ -538,18 +538,6 @@ export const greetingSections = [
       { type: 'phrases', phrases: ids(45, 46, 47) },
     ],
   },
-  {
-    id: 'words',
-    title: 'Words & phrases',
-    short: 'Words & phrases',
-    blocks: [
-      {
-        type: 'text',
-        text: 'Four core expressions that anchor each part of a greeting exchange.',
-      },
-      { type: 'words', phrases: ['ch01-v0', 'ch01-v1', 'ch01-v2', 'ch01-v3'] },
-    ],
-  },
 ]
 
 export const greetingStarterIds = [

@@ -118,7 +118,7 @@ const goodItem = (item) => {
   if (!expression || expression.length > 115 || context.length < minimumClueLength || context.length > 240) return false
   if (tooGeneric.test(context) || /^ch\d{2}-(?:b|p|line|v)/.test(expression)) return false
   // Do not put the literal answer in its description.
-  if (normalize(expression).length >= 4 && normalize(context).includes(normalize(expression))) return false
+  if (normalize(expression).length >= 3 && normalize(context).includes(normalize(expression))) return false
   return true
 }
 

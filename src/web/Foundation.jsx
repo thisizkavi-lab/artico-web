@@ -12,6 +12,7 @@ import CurriculumIcon, { foundationIcon } from './CurriculumIcon'
 import OrientationFigure, { orientationFigures } from './OrientationFigures'
 import OrientationPractice from './OrientationPractice'
 import StudyPlan from './StudyPlan.jsx'
+import AlphabetRecognition from './AlphabetRecognition.jsx'
 import './foundation-readable.css'
 
 const scrollTo = (id) =>
@@ -404,10 +405,10 @@ function FoundationPractice({ id, learning, update }) {
   if (id === 'tongue-intro') return <TwisterPractice />
   if (id === 'orientation') return <OrientationPractice learning={learning} update={update} />
   if (id === 'how-it-works') return <StudyPlan learning={learning} update={update} />
+  if (id === 'letters') return <AlphabetRecognition />
   const titles = {
     orientation: t("Find your reason."),
     'how-it-works': t("Choose a useful starting point."),
-    letters: t("Look, say, and check."),
     write: t("Use a page of your own."),
     sounds: t("Notice one sound at a time."),
   }
@@ -415,13 +416,6 @@ function FoundationPractice({ id, learning, update }) {
     <section className="rf-practice">
       <p className="ip-kicker">{t("TRY IT YOURSELF")}</p>
       <h2>{titles[id]}</h2>
-      {id === 'letters' && (
-        <>
-          <p className="ip-prose"> {t("Say a letter’s name before selecting it. Listen and compare. Then try a short sequence without looking.")} </p>
-          <AlphabetBoard />
-          <p className="ip-context">{language === 'ja' ? '紙に大文字と小文字をいくつか書いてみましょう。' : 'Now write a few uppercase and lowercase letters on paper.'}</p>
-        </>
-      )}
       {id === 'write' && (
         <>
           <p className="ip-prose"> {t("Use paper and a pencil. Copy a shape, look away, and write it again. Then give those letters something familiar to spell.")} </p>

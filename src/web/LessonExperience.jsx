@@ -4,6 +4,8 @@ import { approvedAudio, useAudio } from './components'
 import Glyph from './Glyph'
 import LessonFooter from './LessonFooter'
 import { buildPracticeCatalog, practiceParts } from './practiceCatalog'
+import { toReviewContent } from './reviewEngine'
+import { findReviewItem, saveReviewItem, suspendReviewItem } from './reviewStore'
 import {
   familiarityOptions,
   filterPracticePhrases,
@@ -474,7 +476,38 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
   const { practiceById: introductionById, sectionById, studyPath, id: chapterId } = useLesson()
   const item = introductionById[set.session.ids[set.session.index]]
   const [covered, setCovered] = useState(false)
+  const [reviewAdded, setReviewAdded] = useState(false)
+  const [reviewBusy, setReviewBusy] = useState(true)
+  const [reviewError, setReviewError] = useState('')
   const headingRef = useRef(null)
+  useEffect(() => {
+    let active = true
+    setReviewBusy(true)
+    setReviewAdded(false)
+    setReviewError('')
+    findReviewItem(item.id).then((record) => {
+      if (active) setReviewAdded(record?.active === true)
+    }).catch((error) => {
+      if (active) setReviewError(error.message)
+    }).finally(() => {
+      if (active) setReviewBusy(false)
+    })
+    return () => { active = false }
+  }, [item.id])
+  const toggleReview = async () => {
+    if (reviewBusy) return
+    setReviewBusy(true)
+    setReviewError('')
+    try {
+      if (reviewAdded) await suspendReviewItem(item.id)
+      else await saveReviewItem(toReviewContent(item, chapterId))
+      setReviewAdded(!reviewAdded)
+    } catch (error) {
+      setReviewError(error.message)
+    } finally {
+      setReviewBusy(false)
+    }
+  }
   useEffect(() => {
     setCovered(false)
     audioProps.audio.stop()
@@ -528,7 +561,15 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
             <Glyph name="save" size={18} />
             <span>{saved ? t("Saved") : t("Save")}</span>
           </button>
+          <button type="button" className={`ip-save ${reviewAdded ? 'is-saved' : ''}`}
+            aria-pressed={reviewAdded} disabled={reviewBusy}
+            onClick={toggleReview}
+            aria-label={reviewAdded ? (language === 'ja' ? '復習から外す' : 'Remove from review') : (language === 'ja' ? '復習に追加' : 'Add to review')}>
+            <Glyph name="repeat" size={18} />
+            <span>{language === 'ja' ? (reviewAdded ? '復習中' : '復習に追加') : (reviewAdded ? 'In Review' : 'Add to Review')}</span>
+          </button>
         </div>
+        {reviewError && <p role="alert" className="ip-context">{reviewError}</p>}
         <p className="ip-focus-context" id="practice-phrase-context">{item.context}</p>
         {item.art && (
           <img className="ip-focus-art" src={art(item.art)} width="140" height="110" alt="" />

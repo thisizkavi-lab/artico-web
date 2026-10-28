@@ -5,6 +5,8 @@ import { buildPracticeCatalog, normalizePracticeText } from '../src/web/practice
 import { getPracticeSet } from '../src/web/phrasePractice.js'
 import { greetingsModel } from '../src/course/greetings.js'
 import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
+import { introductionPhrases, introductionSections } from '../src/course/introductions.js'
+import { japaneseIntroduction } from '../src/course/locales/ja/introductions.js'
 
 const read = (id, language = 'en') => JSON.parse(readFileSync(new URL(`../src/course/${language === 'ja' ? 'locales/ja/' : ''}lessons/${id}.json`, import.meta.url)))
 const model = (source) => ({ ...source, phrases: source.phraseBank, sections: source.study.map((section) => ({ ...section, blocks: section.blocks.map((block) => ({ ...block, phrases: block.phraseIds })) })) })
@@ -46,6 +48,28 @@ test('all 96 chapters have bounded starting sets, unique targets and reachable S
     }
     assert.deepEqual(catalogFor(id, 'ja').items.map((item) => item.id), catalog.items.map((item) => item.id), id)
     assert.deepEqual(catalogFor(id, 'ja').starterIds, catalog.starterIds, id)
+  }
+})
+
+
+test('standalone glossary-only vocabulary is absent from Study and Practice throughout the course', () => {
+  const intro = { id: '02', phrases: introductionPhrases, sections: introductionSections }
+  assert.equal(introductionSections.some((section) => section.id === 'words'), false)
+  for (const pilot of [intro, japaneseIntroduction(intro)]) {
+    const catalog = buildPracticeCatalog(pilot)
+    assert.ok(catalog.items.length > 0)
+    assert.ok(catalog.items.every((item) => item.section !== 'words'))
+    assert.ok(!catalog.items.some((item) => item.id === 'ch02-v0' || item.id === 'ch02-v3'))
+  }
+  const chapterUI = readFileSync(new URL('../src/web/ChapterLesson.jsx', import.meta.url), 'utf8')
+  assert.ok(!chapterUI.includes("sections.push({\\n    id: 'words'"))
+  for (let chapter = 1; chapter <= 96; chapter++) {
+    const id = String(chapter).padStart(2, '0')
+    for (const language of ['en', 'ja']) {
+      const catalog = catalogFor(id, language)
+      assert.ok(catalog.items.length > 0, id + ' ' + language)
+      assert.ok(catalog.items.every((item) => item.section !== 'words'), id + ' ' + language)
+    }
   }
 })
 

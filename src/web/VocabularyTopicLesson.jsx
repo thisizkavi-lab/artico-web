@@ -5,6 +5,7 @@ import { vocabularyVisual } from './vocabularyVisual'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import VocabularySceneArt from './VocabularySceneArt'
 import VocabularyTimeArt from './VocabularyTimeArt'
+import VocabularyFoodArt from './VocabularyFoodArt'
 import { DimensionArt, MaterialArt, WeatherArt, DirectionArt } from './VocabularyDiagramArt'
 import './vocabulary-topic.css'
 
@@ -14,6 +15,7 @@ function Visual({visual,masked=false}) {
  if (!visual) return null
  if (visual.type==='color') return <span className="vlt-color" style={{backgroundColor:visual.value}} aria-hidden="true"/>
  if (visual.type==='scene') return <VocabularySceneArt scene={visual.scene}/>
+ if (visual.type==='food') return <VocabularyFoodArt kind={visual.kind}/>
  if (['calendar-day','calendar-month','calendar-range','season','frequency','daytime','clock','duration','timeline'].includes(visual.type))
    return <VocabularyTimeArt visual={visual} masked={masked}/>
  if (visual.type==='size') return <DimensionArt value={visual.value}/>

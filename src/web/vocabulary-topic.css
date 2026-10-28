@@ -105,3 +105,8 @@
 .vlt-png{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .vlt-image-card .vlt-visual:has(.vlt-png){background:#fff}
 .vlt-hero-preview .vlt-png{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Licensed Mulberry artwork is pictorial, not a photograph: keep every edge visible. */
+.vlt-image-card .vlt-library-png{object-fit:contain;object-position:center;padding:10px 12px;background:#fff}
+.vlt-hero-preview .vlt-library-png{object-fit:contain;padding:4px;background:#fff}
+@media(max-width:520px){.vlt-image-card .vlt-library-png{padding:7px}}

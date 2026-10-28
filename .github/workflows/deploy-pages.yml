@@ -79,6 +79,9 @@ jobs:
       - name: Generate personality behavior-scene PNGs
         run: python3 scripts/build_vocabulary_personality_scenes.py
 
+      - name: Generate all Lesson 3 time PNG diagrams
+        run: python3 scripts/build_vocab_time_png.py
+
       - name: Test course and learning progress
         run: pnpm test
 

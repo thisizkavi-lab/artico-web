@@ -140,7 +140,7 @@ def scene_for(term):
         elif t=='organized':p.append(star(253,66,.48))
         elif t in ('immature','unreasonable'):p.append(lightning(228,53,.62))
         else:p.append(heart(216,55,.5))
-    elif t in ('brave','ambitious','determined','enthusiastic','passionate','motivated','energetic'):
+    elif t in ('brave','ambitious','determined','enthusiastic','passionate','motivated','energetic','optimistic'):
         p += [person(95,101,.81,shirt=TEAL,arm='right'),target(276,111,1)]
         if t=='brave':p += [path('M233 178l10-61 26 8-10 51Z','#eab58b',NAVY,2),star(199,54,.58)]
         elif t in ('passionate','enthusiastic'):p += [heart(191,109,.7),star(321,39,.62)]

@@ -14,6 +14,7 @@ import { isStaleAssetFailure, shouldRefreshStaleAssets } from './routeRecovery.j
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
+const Review = lazy(() => import('./Review'))
 const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
 const HumorLesson = lazy(() => import('./HumorLesson'))
@@ -200,7 +201,7 @@ export default function ArticoWeb() {
     }
     const chapter = chapterById[route.id]
     const foundation = foundationSteps.find((step) => step.id === route.id)
-    const pageName = { home: 'Home', courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases' }[route.page]
+    const pageName = { home: 'Home', courses: 'Courses', practice: 'Practice', progress: 'Your progress', saved: 'Saved phrases', review: 'Your Review' }[route.page]
     document.title = `${(language === 'ja' ? chapter?.ja : chapter?.title) ?? (language === 'ja' ? foundation?.ja : foundation?.en) ?? t(pageName ?? 'Courses')} · Artico`
   }, [route.path, language, t])
   useEffect(() => () => clearTimeout(scrollTimer.current), [])
@@ -230,7 +231,7 @@ export default function ArticoWeb() {
     ? 'home'
     : ['lesson', 'foundation'].includes(route.page)
       ? 'courses'
-      : ['saved', 'practice'].includes(route.page)
+      : ['saved', 'practice', 'review'].includes(route.page)
         ? 'progress'
         : route.page
   const chapterId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
@@ -270,6 +271,7 @@ export default function ArticoWeb() {
       </Suspense>
     )
   else if (route.page === 'practice') screen = <PracticeLibrary learning={learning} />
+  else if (route.page === 'review') screen = <Suspense fallback={<div className="aw-page" role="status">{t('Loading your review…')}</div>}><Review /></Suspense>
   else if (route.page === 'progress') screen = <Progress learning={learning} />
   else if (route.page === 'saved')
     screen = <Saved learning={learning} save={save} notify={notify} />

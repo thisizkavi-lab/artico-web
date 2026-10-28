@@ -54,3 +54,14 @@ test('chapter one actually contains repeated alternating speaker records and pai
     conversationSide(speakers, byId[id].speaker, i) === 'outgoing'))
   assert.ok(groupConversationScenes(blocks).some((block) => block.type === 'conversation-pair'))
 })
+
+test('conversation illustrations preserve native ratios and audio stays circular at upper-right', () => {
+  const style = readFileSync(new URL('../src/web/introductions.css', import.meta.url), 'utf8')
+  const rules = style.slice(style.indexOf('/* Compact conversation scenes.'))
+  assert.match(rules, /\.ip-scene\s*\{[^}]*position:\s*relative;/s)
+  assert.match(rules, /\.ip-scene-setting img\s*\{[^}]*height:\s*auto;[^}]*aspect-ratio:\s*auto;/s)
+  assert.match(rules, /\.ip-scene-pair \.ip-scene-setting img\s*\{[^}]*height:\s*auto;[^}]*max-height:\s*none;/s)
+  assert.match(rules, /\.ip-scene-audio-row\s*\{[^}]*position:\s*absolute;[^}]*top:\s*12px;[^}]*right:\s*12px;/s)
+  assert.match(rules, /\.ip-page \.ip-conversation-audio\s*\{[^}]*border-radius:\s*50%;/s)
+  assert.match(rules, /\.ip-scene-pair\s*\{[^}]*align-items:\s*start;/s)
+})

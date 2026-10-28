@@ -81,3 +81,24 @@ test('every mapped food kind has a rendering branch',()=>{
   assert.deepEqual(kinds.filter(kind=>!rendered.has(kind)),[],'No concept may render as a blank illustration')
   assert.ok(!food.includes("'chips':'fries'"),'U.S. potato chips must not be pictured as fries')
 })
+
+
+test('pinned Mulberry artwork is license-safe and maps only known vocabulary entries',()=>{
+  const manifest=JSON.parse(load('vocabularyMulberryManifest.json'))
+  assert.equal(manifest.license,'CC-BY-SA-4.0')
+  assert.equal(manifest.version,'v3.6.1')
+  assert.equal(manifest.sourceCommit,'9cbab9f400c5de44e2bc58839cca07294aadb086')
+  const terms=new Set(source.lessons.flatMap(l=>l.groups.flatMap(g=>g.items.map(i=>l.sourceLesson+':'+i[0].toLowerCase().trim()))))
+  const entries=Object.entries(manifest.entries)
+  assert.ok(entries.length>=700,'Do not silently reduce the curated illustration inventory')
+  for(const [term,svg] of entries){
+    assert.ok(terms.has(term),'Missing vocabulary for artwork: '+term)
+    assert.match(svg,/^[a-zA-Z0-9_,-]+\\.svg$/,'Invalid or unsafe source path: '+svg)
+  }
+  const client=load('vocabularyLibraryArtwork.js')
+  assert.match(client,/import\\.meta\\.env\\.BASE_URL/)
+  assert.match(client,/vocabulary-symbols\\/mulberry\\//)
+  assert.match(visual,/vocabularyMulberryIllustration/)
+  assert.match(view,/library-png/)
+  assert.doesNotMatch(client,/https?:\\/\\//,'Runtime must not hotlink external images')
+})

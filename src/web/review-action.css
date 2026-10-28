@@ -1,0 +1,9 @@
+.ar-add-toggle { display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d7dfe2;border-radius:9px;background:transparent;color:inherit;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;min-height:36px;max-width:100%; }
+.ar-add-toggle.is-active { border-color:#587e76;background:#eff8f5;color:#245b49; }
+.ar-add-toggle:disabled { cursor:wait;opacity:.6; }
+.ar-add-toggle:focus-visible { outline:3px solid #6c89b7; outline-offset:2px; }
+.ar-reviewable { display:flex;flex-direction:column;min-width:0;gap:8px; }
+.ar-reviewable > .ar-add-toggle { align-self:flex-end; }
+.ar-reviewable > .vlt-card,.ar-reviewable > .vl02-term-card { width:100%; }
+.ar-country-action { margin-top:8px;display:flex;justify-content:flex-end; }
+.ar-collection-error { border:1px solid #c97e7e;border-radius:8px;padding:10px;margin:12px 0;color:#a03131;font-size:13px; }

@@ -14,35 +14,6 @@ import OrientationPractice from './OrientationPractice'
 import StudyPlan from './StudyPlan.jsx'
 import './foundation-readable.css'
 
-function OrientationGuide({ id }) {
-  const { language } = useLanguage()
-  const ja = language === 'ja'
-  const first = id === 'orientation'
-  return (
-    <aside className="rf-orientation-guide" aria-label={ja ? 'オリエンテーションの進め方' : 'Orientation guide'}>
-      <p className="rf-orientation-guide-label">{ja ? 'はじめに · 2つのステップ' : 'ORIENTATION · TWO STEPS'}</p>
-      <h2>{first
-        ? (ja ? '英語を学ぶ理由は、人それぞれ。' : 'Start with your own reason.')
-        : (ja ? '理解したら、学び方を決めよう。' : 'Make a simple plan. Then begin.')}</h2>
-      <p>{first
-        ? (ja ? '下の文章は、自分のペースで読んでください。4つの質問で、英語を使いたい場面を考えることもできます。'
-          : 'Read the ideas below at your own pace. Or try four short questions to picture where you want English to take you.')
-        : (ja ? 'Studyで学び方を知り、Practiceで続けられる学習計画を作れます。計画を立てずに学習を始めても大丈夫です。'
-          : 'Study explains the approach. Practice helps you choose a realistic routine. You can also start learning without making a plan.')}</p>
-      <div className="rf-orientation-guide-actions">
-        <a className="rf-orientation-guide-primary" href={first ? '#/foundation/orientation/practice' : '#/foundation/how-it-works/practice'}>
-          {first ? (ja ? '自分の理由を見つける' : 'Explore my reason') : (ja ? '学習計画を立てる' : 'Make my study plan')}
-          <span aria-hidden="true">→</span>
-        </a>
-        <a className="rf-orientation-guide-secondary" href={first ? '#/foundation/how-it-works/study' : '#/courses?foundation'}>
-          {first ? (ja ? 'Articoの使い方へ' : 'How Artico works') : (ja ? 'レベルゼロへ進む' : 'Explore Level Zero')}
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-    </aside>
-  )
-}
-
 const scrollTo = (id) =>
   document.getElementById(id)?.scrollIntoView({
     block: 'start',
@@ -97,7 +68,6 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
           <span className="ip-mode-detail">{t(navigation.stage.title)}</span>
         )}
       </div>
-      {route.view === 'study' && ['orientation', 'how-it-works'].includes(route.id) && <OrientationGuide id={route.id} />}
       {children}
       <LessonFooter route={route} practice={practice} practicePath={practicePath} />
     </div>

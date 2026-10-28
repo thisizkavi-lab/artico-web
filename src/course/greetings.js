@@ -342,38 +342,6 @@ export const greetingPhrases = [
     'casual',
     { register: 'Optional · very casual' },
   ),
-  {
-    id: 'ch01-v0',
-    en: 'Good morning.',
-    context: 'A morning greeting used to open contact or return a colleague’s greeting.',
-    section: 'words',
-    kind: 'word',
-    art: 'word-sun.svg',
-  },
-  {
-    id: 'ch01-v1',
-    en: 'Good to see you.',
-    context: 'Say this when you are pleased to meet someone you know again.',
-    section: 'words',
-    kind: 'word',
-    art: 'word-friend.svg',
-  },
-  {
-    id: 'ch01-v2',
-    en: 'How’s it going?',
-    context: 'An informal, friendly way to ask how someone is doing.',
-    section: 'words',
-    kind: 'word',
-    art: 'word-greeting.svg',
-  },
-  {
-    id: 'ch01-v3',
-    en: 'It’s been a while.',
-    context: 'Use this when you have not seen someone for some time.',
-    section: 'words',
-    kind: 'word',
-    art: 'word-calendar.svg',
-  },
 ]
 
 export const greetingById = Object.fromEntries(greetingPhrases.map((item) => [item.id, item]))
@@ -589,6 +557,11 @@ export const greetingScenarios = [
 ]
 
 export const greetingAliases = {
+  // Preserve saved practice from the retired illustrated duplicate cards.
+  'ch01-v0': 'ch01-p6',
+  'ch01-v1': 'ch01-p34',
+  'ch01-v2': 'ch01-p20',
+  'ch01-v3': 'ch01-p35',
   'ch01-line17': 'ch01-p1',
   'ch01-line18': 'ch01-p2',
   'ch01-p112829969009517': 'ch01-p3',

@@ -122,6 +122,16 @@ jobs:
       - name: Build site
         run: pnpm run build
 
+      - name: Verify all sixteen Daily Routines PNGs reach Pages
+        run: |
+          test "$(find dist/vocabulary-ai/ch04 -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 16
+          test -f dist/vocabulary-ai/ch04/arrive-late.png
+          test -f dist/vocabulary-ai/ch04/catch-the-bus.png
+          test -f dist/vocabulary-ai/ch04/catch-the-train.png
+          test -f dist/vocabulary-ai/ch04/do-homework.png
+          test -f dist/vocabulary-ai/ch04/go-home.png
+          test -f dist/vocabulary-ai/ch03/03-000.png
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

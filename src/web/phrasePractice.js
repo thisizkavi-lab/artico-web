@@ -62,7 +62,7 @@ export function getPracticeSet(stored, items, legacy, catalog = {}) {
   const queue = migrate(previousSession?.ids)
   const current = previousSession?.ids?.[previousSession.index]
   return {
-    selected: stored?.selected ? migrate(stored.selected) : (catalog.starterIds ?? ids),
+    selected: stored?.selected ? migrate(stored.selected) : [],
     ratings: Object.fromEntries(Object.entries(stored?.ratings ?? {}).flatMap(([id, rating]) =>
       resolve(id).map((target) => [target, stored?.ratings?.[target] ?? rating]))),
     filter: stored?.filter ?? 'all',

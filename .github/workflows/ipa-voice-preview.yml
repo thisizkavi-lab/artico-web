@@ -1,0 +1,40 @@
+name: Generate one-voice US English audio samples
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/ipa-voice-preview.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  voice-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install local CPU voice engine
+        run: python -m pip install piper-tts==1.8.0
+      - name: Download single US English voice
+        run: |
+          mkdir -p "$RUNNER_TEMP/voice"
+          cd "$RUNNER_TEMP/voice"
+          python -m piper.download_voices en_US-ljspeech-medium
+      - name: Synthesize 12 review clips
+        run: python scripts/generate_ipa_voice_pilot.py "$RUNNER_TEMP/voice/en_US-ljspeech-medium.onnx"
+      - name: Validate all files
+        run: |
+          test "$(find public/audio/ipa-voice-pilot -name '*.wav' | wc -l)" -eq 12
+          test -s public/audio/ipa-voice-pilot/manifest.json
+      - name: Upload voice preview bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: artico-us-voice-samples-12
+          path: public/audio/ipa-voice-pilot/
+          retention-days: 30

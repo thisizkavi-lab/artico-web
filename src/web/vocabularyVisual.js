@@ -1,5 +1,5 @@
 import { vocabularyPngIllustration } from './vocabularyPngArtwork'
-import { vocabularyMulberryIllustration } from './vocabularyLibraryArtwork'
+import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 import { timeIllustration } from './VocabularyTimeArt'
 import { routineScene } from './VocabularySceneArt'
 import { foodIllustration } from './VocabularyFoodArt'
@@ -48,7 +48,7 @@ export function vocabularyVisual(term,chapter) {
  if(chapter===46&&directions[normalized])return {type:'direction',value:directions[normalized]}
  // Licensed real pictogram art, used only after more specific original scenes/diagrams.
  // Lookup is chapter-aware and intentionally omits uncertain senses.
- const library=vocabularyMulberryIllustration(term,chapter)
+ const library=vocabularyLibraryIllustration(term,chapter)
  if(library)return library
  return null
 }

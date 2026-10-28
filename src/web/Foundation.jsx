@@ -25,7 +25,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
   const practice = route.view !== 'study'
   const contents = useRef(null)
   return (
-    <div className="ip-page rf-page" lang={language}>
+    <div className={`ip-page rf-page${['orientation', 'how-it-works'].includes(route.id) ? ' rf-orientation-lesson' : ''}`} lang={language}>
       <header className="ip-lesson-heading">
         <p className="ip-kicker">
           {t(navigation.stage.title)} <span>/</span> {language === 'ja' ? 'レッスン' : 'LESSON'}{' '}
@@ -181,6 +181,14 @@ function LocalizedTwister({ block }) {
   </TwisterDetails>
 }
 
+// Editorial emphasis is explicit: **key idea**. No Markdown HTML is injected.
+const highlightReadingKeywords = (value) =>
+  value.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
+    part.startsWith('**') && part.endsWith('**')
+      ? <strong key={index}>{part.slice(2, -2)}</strong>
+      : part,
+  )
+
 export function Reading({ model }) {
   const { language } = useLanguage()
   const orientationFigure = (section, index) => {
@@ -204,7 +212,7 @@ export function Reading({ model }) {
           ))}
           {section.paragraphs?.map((text, i) => (
             <Fragment key={i}>
-              <p className="ip-prose">{text}</p>
+              <p className="ip-prose">{highlightReadingKeywords(text)}</p>
               {orientationFigure(section, i)}
             </Fragment>
           ))}

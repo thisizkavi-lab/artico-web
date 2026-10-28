@@ -4,6 +4,7 @@ const days=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunda
 const seasons=['spring','summer','fall (season) / autumn','winter']
 const frequency={'always':7,'usually':6,'often':5,'sometimes':3,'rarely / seldom':1,'never':0,'daily / every day':7,'every other day':4,'once a week':1,'twice a week':2,'three times a week':3,'weekly / every week':1}
 const dayTimes=['morning / in the morning','noon','midday','afternoon / in the afternoon','evening / in the evening','night / at night','midnight','a.m.','p.m.','dawn','sunrise','sunset','dusk','time',"What time is it?","o'clock"]
+const clockTerms=['time','What time is it?',"o'clock",'a.m.','p.m.']
 const spanTimes=['second','minute','hour','day','week','two weeks / a fortnight','month','year','decade','century','millennium / millennia']
 export function timeIllustration(term, chapter) {
  if(chapter!==3)return null
@@ -15,6 +16,7 @@ export function timeIllustration(term, chapter) {
  const s=seasons.indexOf(term)
  if(s>=0)return {type:'season',index:s}
  if(frequency[term]!==undefined)return {type:'frequency',count:frequency[term],term}
+ if(clockTerms.includes(term))return {type:'clock',term}
  if(dayTimes.includes(term))return {type:'daytime',term}
  if(spanTimes.includes(term))return {type:'duration',term}
  if(['yesterday / today / tomorrow','earlier / later','before / after','now / right now','ago','soon','on time / late / early'].includes(term))return {type:'timeline',term}
@@ -83,6 +85,17 @@ function Season({index}){
  {index===3&&<g fill="#fff" stroke="#b1c7d9"><circle cx="27" cy="50" r="4"/><circle cx="97" cy="40" r="4"/><circle cx="128" cy="64" r="4"/><circle cx="105" cy="77" r="4"/></g>}
  </Frame>
 }
+function ClockFace({term}){
+ const isAM=term==='a.m.'
+ const isPM=term==='p.m.'
+ return <Frame>
+  <circle cx="76" cy="48" r="35" fill="#fff" stroke="#93b1d0" strokeWidth="3"/>
+  {Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;return <circle key={i} cx={76+28*Math.sin(a)} cy={48-28*Math.cos(a)} r="2" fill="#819ab6"/>})}
+  <path d="M76 48V25M76 48L96 59" stroke="#466e9d" strokeWidth="4" strokeLinecap="round"/>
+  <circle cx="76" cy="48" r="4" fill="#466e9d"/>
+  {(isAM||isPM)&&<text x="76" y="89" fontSize="9" textAnchor="middle" fontWeight="800" fill="#466e9d">{isAM?'BEFORE NOON':'AFTER NOON'}</text>}
+ </Frame>
+}
 function Duration({term}){
  const data={'second':['1','SEC'],'minute':['60','SEC'],'hour':['60','MIN'],'day':['24','HOURS'],'week':['7','DAYS'],'two weeks / a fortnight':['14','DAYS'],'month':['28–31','DAYS'],'year':['12','MONTHS'],'decade':['10','YEARS'],'century':['100','YEARS'],'millennium / millennia':['1,000','YEARS']}
  const [amount,label]=data[term]||['1','UNIT']
@@ -111,6 +124,7 @@ export default function VocabularyTimeArt({visual,masked=false}){
  case 'season':return <Season index={visual.index}/>
  case 'frequency':return <Frequency count={visual.count} term={visual.term}/>
  case 'daytime':return <Daytime term={visual.term}/>
+ case 'clock':return <ClockFace term={visual.term}/>
  case 'duration':return <Duration term={visual.term}/>
  case 'timeline':return <Timeline term={visual.term}/>
  default:return null

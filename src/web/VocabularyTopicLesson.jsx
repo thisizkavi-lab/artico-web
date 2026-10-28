@@ -3,28 +3,14 @@ import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import { organizeVocabularyGroup } from './vocabularyDedup'
-import VocabularySceneArt from './VocabularySceneArt'
-import VocabularyTimeArt from './VocabularyTimeArt'
-import VocabularyFoodArt from './VocabularyFoodArt'
-import { DimensionArt, MaterialArt, WeatherArt, DirectionArt } from './VocabularyDiagramArt'
 import './vocabulary-topic.css'
 
 const lessons = new Map(organized.lessons.map(lesson => [lesson.sourceLesson, lesson]))
 
-function Visual({visual,masked=false}) {
- if (!visual) return null
- if (visual.type==='png') return <img className="vlt-png" src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async"/>
- if (visual.type==='library-png') return <img className="vlt-png vlt-library-png" src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async"/>
- if (visual.type==='color') return <span className="vlt-color" style={{backgroundColor:visual.value}} aria-hidden="true"/>
- if (visual.type==='scene') return <VocabularySceneArt scene={visual.scene}/>
- if (visual.type==='food') return <VocabularyFoodArt kind={visual.kind}/>
- if (['calendar-day','calendar-month','calendar-range','season','frequency','daytime','clock','duration','timeline'].includes(visual.type))
-   return <VocabularyTimeArt visual={visual} masked={masked}/>
- if (visual.type==='size') return <DimensionArt value={visual.value}/>
- if (visual.type==='material') return <MaterialArt value={visual.value}/>
- if (visual.type==='weather') return <WeatherArt value={visual.value}/>
- if (visual.type==='direction') return <DirectionArt value={visual.value}/>
- return null
+function Visual({visual}) {
+  if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
+  return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
+    src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async" />
 }
 
 function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
@@ -35,7 +21,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
   const answerHidden = practice && !revealed && canPractice
   const body = (
     <>
-      {visual && <span className="vlt-visual"><Visual visual={visual} masked={answerHidden} /></span>}
+      {visual && <span className="vlt-visual"><Visual visual={visual} /></span>}
       <span className="vlt-card-copy">
         {practice && canPractice && <span className="vlt-card-kicker">{japanese ? '英語で何と言う？' : 'SAY IT IN ENGLISH'}</span>}
         {ja && <span className={'vlt-meaning' + (practice ? ' is-prompt' : '')} lang="ja">{ja}</span>}

@@ -473,3 +473,134 @@
     width: min(56%, 205px);
   }
 }
+
+/* F01 — screenshot-style alphabet spread */
+.rf-alphabet-lesson .ip-lesson-heading { text-align: center; }
+.rf-alphabet-lesson .ip-heading-title { justify-content: center; }
+.rf-alphabet-lesson .ip-lesson-heading > p:last-child { max-width: 65ch; margin-inline: auto; }
+.rf-alphabet-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.93fr) minmax(0, 1.07fr);
+  align-items: center;
+  gap: clamp(28px, 4.8vw, 76px);
+  margin: 28px 0 46px;
+}
+.rf-alphabet-copy {
+  min-width: 0;
+  text-align: center;
+}
+.rf-alphabet-copy h2 {
+  font-size: clamp(18px, 1.65vw, 24px);
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.015em;
+}
+.rf-alphabet-copy .ip-prose,
+.rf-alphabet-copy .rc-source {
+  font-size: clamp(14px, 1.18vw, 17px);
+  line-height: 1.76;
+  margin: 0 0 19px;
+  max-width: none;
+}
+.rf-alphabet-copy .rc-source .ip-prose {
+  margin: 0;
+}
+.rf-alphabet-copy strong {
+  font-weight: 750;
+}
+.rf-alphabet-panel {
+  min-width: 0;
+  background: #f8f8f8;
+  border: 1px solid #e4e4e4;
+  border-radius: 22px;
+  padding: clamp(24px, 3vw, 48px) clamp(16px, 2.8vw, 42px);
+}
+.rf-alphabet--showcase { margin: 0; }
+.rf-alphabet--showcase > section { margin: 0; }
+.rf-alphabet--showcase > section + section { margin-top: 36px; }
+.rf-alphabet--showcase h3 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: clamp(17px, 1.7vw, 25px);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.rf-alphabet--showcase > section > div {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.rf-alphabet--showcase button {
+  font-size: clamp(17px, 1.45vw, 23px);
+  min-width: 0;
+  min-height: 40px;
+  padding: 4px;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 8px;
+  color: var(--ink);
+}
+.rf-alphabet--showcase button:hover,
+.rf-alphabet--showcase button[aria-pressed='true'] {
+  border-color: #cddbe9;
+  background: #e9eff6;
+  color: var(--ip-blue);
+}
+.rf-alphabet--showcase button:focus-visible {
+  outline: 3px solid var(--ip-blue);
+  outline-offset: 1px;
+}
+.rf-alphabet--showcase .ip-context {
+  margin: 27px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.rf-alphabet-watch {
+  max-width: 740px;
+  margin: 24px auto 36px;
+  scroll-margin-top: 86px;
+}
+.rf-alphabet-watch h2 {
+  font-size: clamp(23px, 2.5vw, 34px);
+  line-height: 1.25;
+  margin: 4px 0 14px;
+}
+.rf-alphabet-watch > .ip-prose,
+.rf-alphabet-watch > .rc-source { margin-bottom: 18px; }
+.rf-alphabet-watch .youtube-lesson-player { max-width: 740px; margin: 24px 0 28px; }
+.rf-alphabet-three-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--ip-border);
+}
+.rf-alphabet-three-steps li {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--ip-border);
+  line-height: 1.7;
+}
+.rf-alphabet-three-steps li strong { font-weight: 700; }
+.rf-alphabet-step-number { font-size: 12px; color: var(--ip-muted); font-variant-numeric: tabular-nums; }
+.rf-alphabet-note { margin: 22px 0 0; }
+@media (max-width: 900px) {
+  .rf-alphabet-hero { gap: 20px; }
+  .rf-alphabet-panel { padding: 25px 18px; }
+  .rf-alphabet--showcase > section > div { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .rf-alphabet-hero { grid-template-columns: 1fr; gap: 18px; margin: 24px 0 35px; }
+  .rf-alphabet-copy { max-width: 560px; margin-inline: auto; }
+  .rf-alphabet-copy .ip-prose, .rf-alphabet-copy .rc-source { font-size: 15px; }
+  .rf-alphabet-panel { max-width: 570px; width: 100%; margin-inline: auto; }
+  .rf-alphabet--showcase h3 { font-size: clamp(18px, 5vw, 23px); }
+  .rf-alphabet--showcase button { font-size: clamp(17px, 4.5vw, 22px); min-height: 38px; }
+  .rf-alphabet-three-steps li { gap: 14px; }
+}

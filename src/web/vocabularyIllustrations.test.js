@@ -112,3 +112,17 @@ test('pinned Mulberry and OpenMoji artwork maps only to known vocabulary terms',
   assert.ok(view.includes('library-png'))
   assert.ok(!client.includes('http://')&&!client.includes('https://'),'No externally hosted artwork at runtime')
 })
+
+test('original chapter 13 PNG scene pipeline covers each moving-and-renting entry',()=>{
+  const manifest=JSON.parse(load('vocabularyOriginalScenes.json'))
+  const lesson=source.lessons.find(x=>x.sourceLesson===13)
+  const expected=lesson.groups.flatMap(g=>g.items.map(x=>'13:'+x[0]))
+  assert.equal(expected.length,50)
+  assert.deepEqual(new Set(Object.keys(manifest.entries)),new Set(expected))
+  const files=Object.values(manifest.entries).map(x=>'13-'+x.kind+'-'+x.scene+'.png')
+  assert.equal(new Set(files).size,50,'Every target requires an intentional distinct scene')
+  const renderer=readFileSync(new URL('../../scripts/build_vocabulary_original_scenes.py',import.meta.url),'utf8')
+  assert.ok(renderer.includes('cairosvg.svg2png'))
+  assert.ok(renderer.includes('Unusually small scene'))
+  assert.ok(load('vocabularyVisual.js').includes('vocabularyOriginalScene(term,chapter)'))
+})

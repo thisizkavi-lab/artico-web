@@ -18,9 +18,13 @@ export const orientation = [
 ]
 
 export const howItWorks = [
+  section('how-philosophy', 'Our philosophy.', [
+    '**Make learning simple, not superficial.**',
+    'Artico provides clear explanations, useful language, and meaningful practice. We remove **unnecessary complexity**, not the effort that helps you learn.',
+    'The goal is not to finish lessons or collect points. **The goal is to understand English and use it in your life.**',
+  ]),
   section('how-start-line', 'Choose where to begin.', [
     'Artico has three learning areas. Choose the one that helps you now:',
-    'You can move between these areas. You do not need to finish one before starting another.',
   ], {
     items: [
       'Level Zero — letters, sounds, pronunciation, and rhythm.',

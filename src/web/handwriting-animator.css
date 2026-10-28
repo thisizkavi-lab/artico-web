@@ -1,0 +1,195 @@
+/* Letter formation demonstration: original SVG pen strokes, not a video. */
+.hw-animator {
+  width: min(100%, 840px);
+  margin: 24px auto 32px;
+  padding: clamp(15px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--surface);
+}
+.hw-animator-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 19px;
+}
+.hw-animator-heading h3 {
+  margin: 0 0 6px;
+  font-size: clamp(18px, 2.1vw, 22px);
+  font-weight: 650;
+  line-height: 1.4;
+}
+.hw-animator-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.hw-animator-forms {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 3px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 3px;
+  background: var(--paper);
+}
+.hw-animator-forms button {
+  min-height: 36px;
+  min-width: 69px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.hw-animator-forms button[aria-pressed="true"] {
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow: 0 1px 4px rgb(33 59 53 / 6%);
+  color: var(--ink);
+  font-weight: 650;
+}
+.hw-animator-stage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 285px;
+  overflow: hidden;
+  background: #f9faf9;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.hw-animator-svg {
+  display: block;
+  height: clamp(240px, 37vw, 310px);
+  width: min(100%, 335px);
+  overflow: visible;
+}
+.hw-animator-guide-outer,
+.hw-animator-guide-middle {
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  stroke: #9eaead;
+}
+.hw-animator-guide-middle {
+  stroke: #99b2b4;
+  stroke-dasharray: 3 5;
+}
+.hw-animator-ghost {
+  fill: none;
+  stroke: #dbe2e0;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hw-animator-stroke {
+  fill: none;
+  stroke: #2b61c3;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation-name: artico-stroke-draw;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes artico-stroke-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+.hw-animator-start circle {
+  fill: #fffefb;
+  stroke: #547eab;
+  stroke-width: 1.3;
+}
+.hw-animator-start text {
+  fill: #27558d;
+  font-family: Arial, sans-serif;
+  font-size: 8.5px;
+  font-weight: 650;
+}
+.hw-animator-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 15px 0 20px;
+}
+.hw-animator-actions .ip-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  white-space: nowrap;
+  min-width: 135px;
+}
+.hw-animator-actions p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: right;
+  margin: 0;
+}
+.hw-animator-select {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.hw-animator-select > p { margin: 0 0 11px; }
+.hw-animator-letters {
+  display: grid;
+  grid-template-columns: repeat(13, minmax(0, 1fr));
+  gap: 6px;
+}
+.hw-animator-letters button {
+  min-width: 0;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.hw-animator-letters button:hover:not([aria-pressed="true"]) {
+  border-color: var(--ip-blue);
+  background: var(--surface-strong);
+}
+.hw-animator-letters button[aria-pressed="true"] {
+  border-color: var(--forest);
+  color: #fff;
+  background: var(--forest);
+}
+.hw-animator-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  min-height: 35px;
+  color: var(--ip-blue);
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 650px) {
+  .hw-animator-heading { flex-direction: column; align-items: stretch; gap: 14px; }
+  .hw-animator-forms { align-self: flex-start; }
+  .hw-animator-stage { min-height: 250px; }
+  .hw-animator-letters { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .hw-animator-actions { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .hw-animator-actions p { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hw-animator-stroke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+}

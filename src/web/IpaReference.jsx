@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import { Glyph } from './LessonExperience'
+import IpaHamburgPilot from './IpaHamburgPilot'
 import { ipaGroups, allIpaSounds, IPA_SOURCE_BASE, IPA_LICENSE_NOTE } from './ipaSounds'
 import './ipa-reference.css'
 
@@ -186,6 +187,7 @@ export default function IpaReference({ mode = 'study' }) {
         <h3>{l.title}</h3>
         <p>{l.intro}</p>
       </div>
+      <IpaHamburgPilot />
       {ipaGroups.map(group => (
         <section className="ipa-table-section" key={group.id}>
           <h4>{language === 'ja' ? group.ja : group.title}</h4>

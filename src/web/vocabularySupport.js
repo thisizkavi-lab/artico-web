@@ -100,6 +100,40 @@ const contextual = {
  '7:business card':'名刺', '15:take off':'（服を）脱ぐ', '39:take off':'（事業などが）急に成功する'
 };
 
+// Disambiguate identical English spellings in their specific lesson context.
+// Otherwise a dictionary could incorrectly teach "Polish" instead of "polish".
+Object.assign(contextual, {
+ '3:second':'秒', '3:date':'日付',
+ '4:bath':'入浴・お風呂', '9:bath':'浴槽・お風呂',
+ '11:polish':'磨く・つやを出す',
+ '14:leg':'脚', '28:leg':'肉の脚部分・もも肉',
+ '21:date':'デート・交際の約束',
+ '29:date':'デーツ（ナツメヤシの実）',
+ '28:chicken':'鶏肉', '54:chicken':'ニワトリ', '56:chicken':'ニワトリ',
+ '28:fish':'魚肉・魚料理', '54:fish':'魚', '57:fish':'魚',
+ '28:crab':'カニ（食材）', '50:crab':'カニ（生き物）', '57:crab':'カニ',
+ '12:nuts':'ナット（金具）', '28:nuts':'ナッツ（食材）', '29:nuts':'ナッツ',
+ '5:light':'軽い', '9:light':'照明・明かり',
+ '14:burn':'やけど', '68:burn':'やけど', '78:burn':'燃える・燃やす',
+ '44:coach':'長距離バス', '60:coach':'コーチ・指導者',
+ '27:court':'裁判所', '62:court':'スポーツのコート',
+ '27:ticket':'違反切符', '44:ticket':'乗車券', '48:ticket':'乗車券', '65:ticket':'入場券',
+ '34:interview':'面接', '42:interview':'採用面接', '66:interview':'インタビュー', '67:interview':'インタビュー',
+ '55:bat':'コウモリ', '62:bat':'バット（スポーツ用具）',
+ '18:mean':'意地悪な', '25:mean':'意味する',
+ '39:train':'指導・訓練する', '44:train':'電車・列車', '71:train':'トレーニングする',
+ '64:record':'音楽のレコード・録音', '66:record':'録画する', '78:record':'記録する',
+ '4:eat breakfast / have breakfast':'朝食を食べる・朝食をとる',
+ '4:eat lunch / have lunch':'昼食を食べる・昼食をとる',
+ '4:eat dinner / have dinner':'夕食を食べる・夕食をとる',
+ '4:do the dishes / wash the dishes':'皿を洗う',
+ '4:drink tea or coffee / have tea or coffee':'お茶かコーヒーを飲む',
+ '4:check your emails / check email':'メールを確認する',
+ '8:be on the fence / on the fence / sit on the fence':'どちらにするか決めかねている',
+ '8:cold feet / get cold feet':'怖じ気づく',
+ '8:have a heart of gold / heart of gold':'とても優しい心の持ち主である',
+})
+
 const groupNames = {
   3:['時間帯と時計','曜日','月の名前','季節','時間の単位と期間','頻度','過去・現在・未来','予定・カレンダー・時差'],
   4:['起床と身支度','食事と飲み物','仕事・学校・移動','家事と用事','自由時間・家族・就寝'],

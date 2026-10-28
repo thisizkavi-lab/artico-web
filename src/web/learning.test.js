@@ -261,7 +261,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['smalltalk','interviews','storytelling','academic'].includes(track.id) ? 0 : (track.id === 'ideas' ? 3 : 2))
+    assert.equal(track.tasks.length, ['smalltalk','interviews','storytelling','academic','reading','ideas'].includes(track.id) ? 0 : 2)
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
@@ -272,7 +272,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),11)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),6)
   const jobs=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   assert.match(jobs, /route\.id === 'interviews'.*JobsCourse/)
 })
@@ -321,8 +321,11 @@ test('Academic and Ideas remain in Application; Humor is moved to Social Fluency
   assert.ok(applicationTracks.some(track=>track.id==='academic'))
   assert.equal(applicationTracks.some(track=>track.id==='humor'), false)
   const ideas=applicationTracks.find(track=>track.id==='ideas')
-  assert.equal(ideas.tasks.length,3)
-  assert.match(ideas.enSummary,/meaningful conversations/)
+  assert.equal(ideas.tasks.length,0)
+  assert.equal(applicationTracks.find(track=>track.id==='reading').tasks.length,0)
+  assert.equal(parseRoute('#/application/reading/short/study?text=red-umbrella').id,'reading')
+  assert.equal(parseRoute('#/application/ideas/home/study').id,'ideas')
+  assert.match(ideas.enSummary,/express your own thinking/)
   assert.equal(parseRoute('#/application/humor').path,'/lesson/34/study')
   assert.equal(sanitizeLearning({...emptyLearning,responses:{'application-humor-0':'My previous answer'}}).responses['application-humor-0'],'My previous answer')
 })

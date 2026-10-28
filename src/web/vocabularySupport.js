@@ -1,0 +1,127 @@
+import aToM from './vocabularyJapaneseAM.json'
+import nToZ from './vocabularyJapaneseNZ.json'
+import reviewed from './vocabularyJapaneseOverrides.json'
+
+// Prefer editorial translations to ambiguous dictionary senses. The underlying
+// historical dictionaries were not always sense-aware (e.g., "fall" and "light").
+const glossary = { ...aToM, ...nToZ, ...reviewed };
+const contextual = {
+ '3:morning / in the morning':'朝／午前に',
+ '3:noon':'正午', '3:midday':'正午ごろ', '3:afternoon / in the afternoon':'午後／午後に',
+ '3:evening / in the evening':'夕方・夜／夕方に',
+ '3:night / at night':'夜／夜に', '3:midnight':'真夜中・午前0時',
+ '3:a.m.':'午前', '3:p.m.':'午後', '3:dawn':'夜明け', '3:sunrise':'日の出',
+ '3:sunset':'日没', '3:dusk':'夕暮れ', '3:o’clock':'〜時ちょうど',
+ '3:o\'clock':'〜時ちょうど',
+ '3:time':'時間', '3:weekday':'平日', '3:weekend':'週末',
+ '3:seasons / a season':'季節', '3:fall (season) / autumn':'秋',
+ '3:day':'日・一日', '3:second':'秒', '3:minute':'分', '3:hour':'時間',
+ '3:week':'週', '3:month':'月', '3:year':'年',
+ '3:decade':'10年間', '3:century':'100年間',
+ '3:millennium / millennia':'千年紀／複数の千年紀',
+ '3:rarely / seldom':'めったに〜ない',
+ '3:always':'いつも', '3:usually':'普段は', '3:often':'よく',
+ '3:sometimes':'ときどき', '3:never':'決して〜ない',
+ '3:hourly / every hour':'1時間ごとに',
+ '3:daily / every day':'毎日',
+ '3:every other day':'一日おきに',
+ '3:weekly / every week':'毎週', '3:monthly / every month':'毎月',
+ '3:yearly / every year':'毎年',
+ '3:now / right now':'今／今すぐ',
+ '3:earlier / later':'もっと前に／あとで',
+ '3:before / after':'〜の前に／〜の後に',
+ '3:yesterday / today / tomorrow':'昨日／今日／明日',
+ '3:this morning / this afternoon / this evening':'今朝／今日の午後／今晩',
+ '3:tonight':'今夜', '3:last week / this week / next week':'先週／今週／来週',
+ '3:ago':'〜前に', '3:soon':'まもなく',
+ '3:calendar':'カレンダー', '3:date':'日付',
+ '3:schedule':'予定・スケジュール',
+ '3:on time / late / early':'時間どおりに／遅れて／早く',
+ '4:alarm goes off':'アラームが鳴る',
+ '4:wake up':'目が覚める', '4:get up':'起床する',
+ '4:get ready':'支度をする', '4:get dressed':'服を着る',
+ '4:brush your hair':'髪をとかす', '4:brush your teeth':'歯を磨く',
+ '4:dry your hair':'髪を乾かす', '4:shave':'ひげをそる',
+ '4:commute':'通勤・通学する',
+ '4:have a break':'休憩する', '4:arrive late':'遅れて到着する',
+ '4:go out':'外出する', '4:go home':'家に帰る',
+ '4:take out the trash':'ごみを出す',
+ '4:check your emails':'メールを確認する',
+ '4:check email':'メールを確認する',
+ '4:put the children to bed':'子どもを寝かせる',
+ '5:colors':'色', '5:color':'色',
+ '5:cream (color)':'クリーム色',
+ '5:orange (color)':'オレンジ色',
+ '5:light':'軽い', '5:heavy':'重い',
+ '5:high':'高い', '5:low':'低い',
+ '5:thick':'厚い・太い', '5:thin':'薄い・細い',
+ '5:loose':'ゆるい', '5:tight':'きつい',
+ '5:loud':'音が大きい', '5:quiet':'静かな',
+ '5:glass':'ガラス', '5:paper':'紙',
+ '5:sharp':'鋭い・よく切れる',
+ '5:near':'近い', '5:far':'遠い',
+ '5:shape':'形', '5:weight':'重さ', '5:size':'大きさ',
+ '5:price':'価格',
+ '6:good':'良い', '6:great':'とても良い',
+ '6:nice':'感じの良い', '6:pretty':'きれいな・かわいい',
+ '6:brilliant':'すばらしい',
+ '6:fantastic':'すばらしい', '6:incredible':'信じられないほどすごい',
+ '6:fun':'楽しい', '6:mediocre':'平凡な・いまひとつの',
+ '6:nasty':'不快な', '6:odd':'変わった',
+ '6:respectable':'立派な・まずまずの',
+ '6:worth it':'それだけの価値がある',
+ '6:in my opinion':'私の意見では',
+ '6:favorite':'お気に入りの',
+ '7:attachment':'添付ファイル', '7:draft':'下書き',
+ '7:mail':'郵便・メール',
+ '7:forward (email action)':'メールを転送する',
+ '7:subject':'件名',
+ '7:title':'敬称・肩書き',
+ '7:post':'投稿する・郵送する',
+ '7:print':'印刷する',
+ '7:trash':'ごみ箱', '7:spam':'迷惑メール',
+ '7:contact':'連絡先', '7:note':'メモ',
+ '7:signature':'署名', '7:letter':'手紙',
+ '7:reply':'返信する', '7:send':'送る',
+ '7:notification':'通知',
+ '7:street address':'住所',
+ '7:ZIP code':'郵便番号（米国）',
+ '7:email address':'メールアドレス',
+ '7:job title':'職名・役職名',
+ '7:online chat':'オンラインチャット',
+ '7:voicemail':'留守番電話',
+ '7:username':'ユーザー名',
+ '7:password':'パスワード',
+ '7:link':'リンク',
+ '7:house number':'番地',
+ '7:company name':'会社名',
+ '7:business card':'名刺'
+};
+
+const groupNames = {
+  3:['時間帯と時計','曜日','月の名前','季節','時間の単位と期間','頻度','過去・現在・未来','予定・カレンダー・時差'],
+  4:['起床と身支度','食事と飲み物','仕事・学校・移動','家事と用事','自由時間・家族・就寝'],
+  5:['色','大きさ・寸法・重さ・距離','素材と布地','その他の物理的特徴','識別に使う情報'],
+  6:['肯定的な評価と印象','否定的な評価と印象','その他の説明と反応','意見を伝える'],
+  7:['名前・役職・連絡先','住所','メール・オンラインメッセージ・電話','書面や印刷物'],
+};
+export const vocabularyGroupJapanese = (lesson, index) => groupNames[lesson]?.[index] || '';
+
+function cleanJapanese(value) {
+ if (!value || typeof value !== 'string') return '';
+ // Long historical dictionary glosses often contain etymologies and examples
+ // not useful on a compact learning card. Never present those as a definition.
+ const first = value.split(/[;；]/)[0].replace(/\([^)]{30,}\)/g, '').trim();
+ return first.length > 66 ? '' : first;
+}
+export function vocabularyJapanese(term, lesson) {
+ const exact=contextual[lesson + ':' + term];
+ if (exact) return exact;
+ const choices=[term,term.replace(/^the /i,''),term.split(' / ')[0],
+   term.split(' / ')[0].replace(/\s*\([^)]*\)/g,''), term.replace(/\s*\([^)]*\)/g,'')];
+ for(const text of choices){
+   const result=cleanJapanese(glossary[text]);
+   if(result) return result;
+ }
+ return '';
+}

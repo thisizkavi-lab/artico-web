@@ -38,7 +38,14 @@ English item first, hides the lesson context until Reveal, and asks the
 learner to judge actual recall. Context is not presented as an authoritative
 translation, and there is no automatic speaking assessment.
 
-**Included:** the dedicated 78-topic vocabulary library, with Japanese-to-English\nrecall for items with a usable Japanese cue. Chapters 1 and 2 use country/\nnationality relations and number terms; the other 76 topics use the existing\norganized card data and deduplication. The first saved meaning retains its\nFSRS history if the same normalized, sense-aware term is added again.\n**Not yet covered:** independently graded production cards, audio-based recall,\nmanual review of uncertain semantic aliases, automatic translations,\naccount sync, and backup. Don't claim
+**Included:** the dedicated 78-topic vocabulary library, with Japanese-to-English
+recall for items with a usable Japanese cue. Chapters 1 and 2 use country/
+nationality relations and number terms; the other 76 topics use the existing
+organized card data and deduplication. The first saved meaning retains its
+FSRS history if the same normalized, sense-aware term is added again.
+**Not yet covered:** independently graded production cards, audio-based recall,
+manual review of uncertain semantic aliases, automatic translations,
+account sync, and backup. Don't claim
 these capabilities until their respective content and tests are ready.
 
 ## Persistence and safety

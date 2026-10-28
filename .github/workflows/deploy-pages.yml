@@ -82,6 +82,17 @@ jobs:
       - name: Generate all Lesson 3 time PNG diagrams
         run: python3 scripts/build_vocab_time_png.py
 
+      - name: Cache licensed General American IPA audio
+        id: ipa-audio-cache
+        uses: actions/cache@v4
+        with:
+          path: public/audio/ipa
+          key: artico-ipa-audio-v1-${{ hashFiles('src/web/ipaSounds.js', 'scripts/cache_ipa_audio.py') }}
+
+      - name: Collect U.S.-English example audio
+        if: steps.ipa-audio-cache.outputs.cache-hit != 'true'
+        run: python3 scripts/cache_ipa_audio.py
+
       - name: Test course and learning progress
         run: pnpm test
 

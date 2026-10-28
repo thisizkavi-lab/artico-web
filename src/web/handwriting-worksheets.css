@@ -1,0 +1,56 @@
+/* Artico Level Zero handwriting PDFs: small, print-first library. */
+.hw-library { max-width: 900px; margin: 0 auto; }
+.hw-heading { margin-bottom: 30px; }
+.hw-heading h2 { font-size: clamp(24px, 2.5vw, 31px); font-weight: 650; margin: 8px 0; }
+.hw-heading .ip-context { color: var(--muted); }
+.hw-section { padding: 23px 0 28px; border-top: 1px solid var(--line); }
+.hw-section h3 { font-size: 18px; font-weight: 650; line-height: 1.45; }
+.hw-section-hint, .hw-overview-main p { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 7px 0 20px; }
+.hw-overview { display: flex; align-items: center; gap: 26px; }
+.hw-overview-symbol {
+  flex: 0 0 160px;
+  min-height: 154px; display: grid; place-items: center;
+  background: var(--surface-strong); border: 1px solid var(--line);
+  border-radius: 17px; color: var(--ink); font-size: 31px; font-weight: 700; letter-spacing: -.025em;
+}
+.hw-overview-main { flex: 1; min-width: 0; }
+.hw-overview-main .ip-primary { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
+.hw-alternates { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin-top: 14px; color: var(--muted); font-size: 13px; }
+.hw-alternates a { color: var(--ip-blue); text-decoration: underline; text-underline-offset: 3px; }
+.hw-letters { display: grid; grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 7px; }
+.hw-letter-choice { min-width: 0; min-height: 43px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; font-size: 17px; font-weight: 600; }
+.hw-letter-choice:hover:not(.is-selected) { border-color: var(--ip-blue); background: var(--surface-strong); }
+.hw-letter-choice.is-selected { border-color: var(--forest); background: var(--forest); color: white; }
+.hw-selected { display: grid; grid-template-columns: minmax(160px, .78fr) minmax(0, 1.4fr); gap: 20px; margin-top: 18px; padding: 18px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); }
+.hw-selected-preview { display: flex; flex-direction: column; justify-content: center; text-align: center; min-width: 0; background: var(--paper); border-radius: 12px; padding: 16px 11px; }
+.hw-selected-preview > span { color: var(--muted); font-size: 13px; font-weight: 600; }
+.hw-selected-preview small { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.hw-visual { display: block; width: 100%; max-width: 200px; height: auto; margin: 13px auto; }
+.hw-selected-documents { display: flex; flex-direction: column; justify-content: center; gap: 12px; min-width: 0; }
+.hw-document { min-width: 0; border: 1px solid var(--line); border-radius: 12px; padding: 15px; background: white; }
+.hw-document-copy { display: flex; flex-direction: column; gap: 5px; }
+.hw-document-copy strong { font-size: 15px; font-weight: 650; }
+.hw-document-copy span { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.hw-document-actions { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 12px; }
+.hw-document-actions a { display: inline-flex; align-items: center; gap: 7px; min-height: 35px; font-size: 13px; text-decoration: none; }
+.hw-open { color: var(--ip-blue); font-weight: 650; }
+.hw-download { color: var(--muted); }
+.hw-document-actions a:hover, .hw-book-links a:hover, .hw-zip-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.hw-book-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.hw-book-links a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; padding: 9px 13px; background: var(--surface); color: var(--ip-blue); font-size: 13px; }
+.hw-zip-link { display: inline-flex; margin-top: 14px; color: var(--ip-blue); font-size: 13px; }
+.hw-print-note { font-size: 12px; color: var(--muted); line-height: 1.6; margin: 0 0 22px; }
+@media (max-width: 740px) {
+  .hw-letters { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 7px; }
+  .hw-selected { grid-template-columns: 1fr; }
+  .hw-selected-preview { padding: 8px 12px; }
+  .hw-visual { max-width: 160px; margin: 7px auto; }
+}
+@media (max-width: 500px) {
+  .hw-overview { align-items: flex-start; gap: 14px; }
+  .hw-overview-symbol { flex-basis: 92px; min-height: 106px; font-size: 21px; }
+  .hw-letters { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+  .hw-letter-choice { min-height: 44px; }
+  .hw-selected { padding: 11px; gap: 11px; }
+  .hw-document { padding: 12px; }
+}

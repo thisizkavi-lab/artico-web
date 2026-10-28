@@ -1550,3 +1550,35 @@
   }
   .ip-scene-pair .ip-scene-setting img { max-height: 160px; }
 }
+
+
+/* The second card may carry a brief heading from between the two scenes. */
+.ip-scene-pair-second { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.ip-scene-pair-second > :not(.ip-scene) { margin: 0 2px; }
+.ip-scene-pair-second > .ip-scene {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr;
+  align-items: start;
+  align-content: start;
+  gap: 10px;
+  padding: 18px;
+  flex: 1;
+}
+@media (min-width: 1021px) {
+  .ip-scene-pair-second > .ip-scene .ip-scene-audio-row { grid-column: 1; }
+}
+@media (min-width: 601px) and (max-width: 1020px) {
+  .ip-scene-pair-second > .ip-scene {
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+    grid-template-rows: auto 1fr;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .ip-scene-pair-second > .ip-scene {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    padding: 15px;
+  }
+}

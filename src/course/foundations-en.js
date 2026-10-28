@@ -102,7 +102,6 @@ export const foundationReading = {
           'Watch how the letters are formed, then try them on paper. Trace a letter a few times, copy it, and finally write it without looking. Practice uppercase and lowercase forms.',
         ],
         {
-          video: ['DnNqoEXoGdg', 'Writing the English alphabet', 'DorufaVSArt / YouTube', 0],
           items: [
             'Trace the shape a few times.',
             'Write it from memory and compare.',

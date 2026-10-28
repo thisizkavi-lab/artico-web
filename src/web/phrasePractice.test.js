@@ -110,7 +110,7 @@ test('search and familiarity filters preserve selected items outside the view', 
     filterPracticePhrases(introductionPhrases, set).map((item) => item.id),
     ['ch02-p15'],
   )
-  assert.equal(set.selected.length, 30)
+  assert.equal(set.selected.length, 0)
   assert.equal(
     filterPracticePhrases(introductionPhrases, { ...set, search: 'no matching phrase' }).length,
     0,

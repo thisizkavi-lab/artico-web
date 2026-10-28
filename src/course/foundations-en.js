@@ -123,13 +123,8 @@ export const foundationReading = {
           'A pencil makes corrections easy. Lined paper or a beginner’s guide sheet helps you judge size and position. Typing and tapping do not replace this particular handwriting exercise.',
           'Focus on ordinary print letters first. Cursive connects letters in a flowing style, but it is optional and can come later.',
           'Do not rush toward a fixed deadline. Return for short sessions and aim for clear, recognizable forms.',
+          'In Practice, you can open Artico’s own printable A–Z, letter tracing, and word writing worksheets. Print at 100% on A4 paper.',
         ],
-        {
-          link: [
-            'https://teachprints.com/letter-tracing-worksheets/',
-            'Open the existing letter-tracing worksheets',
-          ],
-        },
       ),
     ],
   },

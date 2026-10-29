@@ -30,6 +30,10 @@ test('the public URL always opens Landing before Home, without breaking direct l
   const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
   assert.match(landing, /const startHref = '\/home'/)
   assert.match(landing, /const startLabel = copy\.open/)
+  const app = readFileSync(new URL('./ArticoApp.jsx', import.meta.url), 'utf8')
+  assert.match(app, /initialPath === '\/home'/)
+  assert.match(app, /useState\(readInitialEntry\)/)
+  assert.match(app, /window\.history\.replaceState\(/)
 })
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {

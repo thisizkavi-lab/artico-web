@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Generate the entire Artico General American example-word audio library.
+"""Generate locally hosted US-English example-word audio for the Artico IPA chart.
 
-The ONE speaker is Piper en_US-ljspeech-medium, based on LJ Speech.
-This is offline build-time inference; the app hosts generated WAV files,
-not a voice model, and never uses device/remote audio. Audio is unreviewed
-synthetic example-word speech, not isolated phonemes.
+A single Piper voice is used for the entire chart. Files are complete-word
+synthesis, not verified isolated phoneme pronunciations, particularly for
+borrowed words such as loch and challah.
 """
 from pathlib import Path
 import json
@@ -17,35 +16,54 @@ SOURCE = ROOT / "src/web/ipaSounds.js"
 DEST = ROOT / "public/audio/ipa-one-voice"
 EXAMPLES = ROOT / "src/web/ipaExamples.json"
 MODEL = "en_US-ljspeech-medium"
-# These are the source entries in the curriculum: don't guess phoneme count.
 ENTRY = re.compile(r"\bc\('([^']+)','([A-Za-z]+)'")
 EXPECTED_ENTRIES = 41
+
+
+def audio_key(word):
+    key = re.sub(r"[^a-z]", "", word.lower())
+    if not key:
+        raise RuntimeError(f"Invalid audio filename for {word!r}")
+    return key
+
+
+def clean_example(marked):
+    if not isinstance(marked, str):
+        raise RuntimeError(f"Invalid example {marked!r}")
+    if not re.fullmatch(r"(?:[a-z]|\[[a-z]+\])+", marked):
+        if marked not in ("uh-oh", "a’a"):
+            raise RuntimeError(f"Invalid highlighted example {marked!r}")
+    return marked.replace("[", "").replace("]", "")
+
 
 def inventory():
     text = SOURCE.read_text(encoding="utf-8")
     entries = ENTRY.findall(text)
-    if len(entries) != EXPECTED_ENTRIES or len(set(ipa for ipa, _ in entries)) != len(entries):
-        raise RuntimeError(f"Expected {EXPECTED_ENTRIES} unique IPA entries; found {len(entries)}")
+    if len(entries) != EXPECTED_ENTRIES or len({ipa for ipa, _ in entries}) != EXPECTED_ENTRIES:
+        raise RuntimeError(f"Expected {EXPECTED_ENTRIES} unique IPA sound entries; found {len(entries)}")
+
     examples = json.loads(EXAMPLES.read_text(encoding="utf-8"))
-    if set(examples) != {ipa for ipa, _ in entries}:
-        raise RuntimeError("IPA example map must cover every sound exactly once")
+    expected_symbols = {ipa for ipa, _ in entries} | {"x", "ʔ"}
+    if set(examples) != expected_symbols:
+        raise RuntimeError(f"IPA example symbols differ: {sorted(set(examples) ^ expected_symbols)}")
+
+    # Include original study words even when a reference table uses different words.
+    words = {audio_key(word): word.lower() for _, word in entries}
     annotated = {}
-    words = {word.lower() for _, word in entries}
-    for ipa, primary in entries:
-        marked_words = examples[ipa]
-        if not isinstance(marked_words, list) or len(marked_words) != 2:
-            raise RuntimeError(f"Exactly two examples required for /{ipa}/")
+    for ipa, marked_words in examples.items():
+        if not isinstance(marked_words, list) or not (2 <= len(marked_words) <= 4):
+            raise RuntimeError(f"Expected 2–4 examples for /{ipa}/")
         resolved = []
         for marked in marked_words:
-            if not isinstance(marked, str) or not re.fullmatch(r"[a-z]*\[[a-z]+\][a-z]*", marked):
-                raise RuntimeError(f"Missing single highlighted spelling in {marked!r}")
-            word = marked.replace("[", "").replace("]", "")
+            word = clean_example(marked)
+            key = audio_key(word)
+            if key in words and words[key] != word:
+                raise RuntimeError(f"Audio filename collision: {words[key]} vs {word}")
+            words[key] = word
             resolved.append(word)
-            words.add(word)
-        if primary.lower() not in resolved:
-            raise RuntimeError(f"Original audio word {primary} missing from /{ipa}/ examples")
         annotated[ipa] = resolved
-    return entries, sorted(words), annotated
+    return entries, words, annotated
+
 
 def main():
     if len(sys.argv) != 2:
@@ -58,31 +76,30 @@ def main():
         if old.stem not in words:
             old.unlink()
     durations = {}
-    for word in words:
-        path = DEST / f"{word}.wav"
+    for name, spoken_word in sorted(words.items()):
+        path = DEST / f"{name}.wav"
         if not path.exists() or path.stat().st_size < 8000:
             with wave.open(str(path), "wb") as out:
-                voice.synthesize_wav(word + ".", out)
+                voice.synthesize_wav(spoken_word + ".", out)
         with wave.open(str(path), "rb") as audio:
             sample_rate, frames, channels = audio.getframerate(), audio.getnframes(), audio.getnchannels()
             if channels != 1 or sample_rate < 16000 or frames < 3000:
                 raise RuntimeError(f"Invalid WAV: {path.name}")
-            durations[word] = round(frames / sample_rate, 3)
+            durations[name] = round(frames / sample_rate, 3)
     manifest = {
         "model": MODEL,
         "voice": "One US-English synthetic voice for all examples",
         "model_source": "https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/ljspeech/medium",
         "training_dataset": "https://keithito.com/LJ-Speech-Dataset/",
-        "note": "Word recordings, not isolated phonemes. Review vowel distinctions and pronunciation before release as authoritative phonetics.",
-        "entries": [{"ipa": ipa, "word": word, "file": f"{word.lower()}.wav"} for ipa, word in entries],
-        "examples": {ipa: [{"word": word, "file": f"{word}.wav"} for word in words_for_sound] for ipa, words_for_sound in examples.items()},
+        "note": "Whole-word synthesized speech; rare loanword and glottal-stop examples require pronunciation review.",
+        "entries": [{"ipa": ipa, "word": word, "file": f"{audio_key(word)}.wav"} for ipa, word in entries],
+        "examples": {ipa: [{"word": word, "file": f"{audio_key(word)}.wav"} for word in sounds] for ipa, sounds in examples.items()},
         "unique_audio_count": len(words),
         "durations_seconds": durations,
     }
     (DEST / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Artico consistent US voice: {len(entries)} IPA entries, {len(words)} local WAV files")
-    for ipa, word in entries:
-        print(f"/{ipa}/ — {word}: {word.lower()}.wav")
+    print(f"Artico IPA: {len(entries)} original entries, {len(examples)} chart rows, {len(words)} WAV files")
+
 
 if __name__ == "__main__":
     main()

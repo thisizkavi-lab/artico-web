@@ -1088,8 +1088,8 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
             <button type="button" className="tt-transport-previous"
               disabled={navigation.previousDisabled}
               onClick={navigation.onPrevious}
-              aria-label={language === 'ja' ? '前の早口言葉' : 'Previous tongue twister'}
-              title={language === 'ja' ? '前の早口言葉' : 'Previous tongue twister'}>
+              aria-label={navigation.labelType === 'chunk' ? (language === 'ja' ? '前の部分' : 'Previous chunk') : (language === 'ja' ? '前の早口言葉' : 'Previous tongue twister')}
+              title={navigation.labelType === 'chunk' ? (language === 'ja' ? '前の部分' : 'Previous chunk') : (language === 'ja' ? '前の早口言葉' : 'Previous tongue twister')}>
               <span aria-hidden="true">◀</span>
             </button>
             <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
@@ -1097,8 +1097,8 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
               <PlayIcon pause={playing} />
             </button>
             <button type="button" className="tt-transport-next" onClick={navigation.onNext} disabled={navigation.nextDisabled}
-              aria-label={language === 'ja' ? '次の早口言葉' : 'Next tongue twister'}
-              title={language === 'ja' ? '次の早口言葉' : 'Next tongue twister'}>
+              aria-label={navigation.labelType === 'chunk' ? (language === 'ja' ? '次の部分' : 'Next chunk') : (language === 'ja' ? '次の早口言葉' : 'Next tongue twister')}
+              title={navigation.labelType === 'chunk' ? (language === 'ja' ? '次の部分' : 'Next chunk') : (language === 'ja' ? '次の早口言葉' : 'Next tongue twister')}>
               <span aria-hidden="true">▶</span>
             </button>
             <button type="button" className="tt-transport-speed" onClick={cycleSpeed} disabled={!src}

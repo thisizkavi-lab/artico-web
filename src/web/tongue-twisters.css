@@ -361,3 +361,77 @@
   .rf-page .tt-practice-gallery .tt-transport-main .tt-transport-speed { width: 54px; font-size: 11px; }
   .tt-practice-gallery .tt-practice-soundnote { margin-top: 12px; font-size: 10.5px; }
 }
+
+/* Two independent learning levels: audio/chunk transport and chapter browse. */
+.tt-practice-gallery .tt-chunk-current {
+  width: min(100%, 650px);
+  margin: 2px auto 14px;
+  padding: 12px 18px 11px;
+  text-align: center;
+  border: 1px solid #e3eaf4;
+  border-radius: 13px;
+  background: #f8faff;
+}
+.tt-practice-gallery .tt-chunk-current span {
+  display: block;
+  margin-bottom: 5px;
+  color: #7890b5;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .035em;
+}
+.tt-practice-gallery .tt-chunk-current p {
+  margin: 0;
+  white-space: pre-line;
+  color: #1f3657;
+  font-size: clamp(21px, 3vw, 27px);
+  font-weight: 700;
+  line-height: 1.38;
+}
+.tt-practice-gallery .tt-twister-switcher {
+  width: min(100%, 650px);
+  margin: 21px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.tt-practice-gallery .tt-twister-switcher button {
+  min-height: 49px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #dfe6f0;
+  background: #fff;
+  color: #304663;
+  font: inherit;
+  font-weight: 650;
+  font-size: 13px;
+  cursor: pointer;
+}
+.tt-practice-gallery .tt-twister-switcher .tt-switcher-next {
+  color: #fff;
+  background: #3180ef;
+  border-color: #3180ef;
+}
+.tt-practice-gallery .tt-twister-switcher button:disabled { opacity: .38; cursor: default; }
+.tt-practice-gallery .tt-twister-switcher button:focus-visible {
+  outline: 3px solid #3180ef;
+  outline-offset: 3px;
+}
+.tt-practice-gallery .tt-practice-verse {
+  margin-bottom: 14px;
+}
+@media (max-width: 650px) {
+  .tt-practice-gallery .tt-chunk-current { padding: 10px; }
+  .tt-practice-gallery .tt-chunk-current p { font-size: 20px; }
+  .tt-practice-gallery .tt-twister-switcher { gap: 7px; }
+  .tt-practice-gallery .tt-twister-switcher button {
+    padding: 9px 6px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+}

@@ -1,7 +1,16 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import { TheoryAudioSample } from './FoundationContent'
-import { twisterCards, twisterLevels, twisterAudioSource } from './twisterCollection'
+import { twisterCards, twisterLevels, twisterAudioSource, twisterAudioClip, twisterAudioGroups } from './twisterCollection'
+
+function AudioChoice({ text, active, disabled, onClick, listenLabel }) {
+  return <button type="button" className="tt-audio-choice" aria-pressed={active} disabled={disabled} onClick={onClick} aria-label={listenLabel}>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="m11 5-6 4H2v6h3l6 4V5Z" /><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
+    </svg>
+    <span lang="en">{text}</span>
+  </button>
+}
 
 // Carefully authored **keyword** emphasis, rendered as React text (never HTML injection).
 function emphasizeReason(copy) {
@@ -47,6 +56,7 @@ export function TongueTwisterStudy() {
       <section className="tt-library" id="tt-collection">
         <h2>{ja ? '早口言葉を聞いてみよう' : 'Explore the tongue twisters'}</h2>
         <p>{ja ? '気になるものから聞いてみましょう。' : 'Pick one and listen.'}</p>
+        <p className="tt-recording-note">{ja ? 'アメリカ英語のAI音声 · 全文を自然な速さで聞けます。' : 'General American AI audio · Complete recordings at a natural pace.'}</p>
         {twisterLevels.map(level => (
           <section className="tt-level" key={level.number}>
             <header className="tt-level-heading"><span>LEVEL {level.number}</span><h3>{ja ? level.ja : level.en}</h3></header>
@@ -56,7 +66,7 @@ export function TongueTwisterStudy() {
                   <header className="tt-card-label"><span>{item.number}</span><h4 lang="en">{twisterHeading(item.phrase)}</h4></header>
                   <div className="tt-study-card">
                     <p className="tt-verse" lang="en">{item.phrase}</p>
-                    <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact />
+                    <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact preload="none" />
                   </div>
                   <p className="tt-why">{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
                 </article>
@@ -70,18 +80,43 @@ export function TongueTwisterStudy() {
 }
 
 export function TongueTwisterPractice({ initialId }) {
-  const { language } = useLanguage()
+  const { language, t } = useLanguage()
   const ja = language === 'ja'
   const [index, setIndex] = useState(Math.max(0, twisterCards.findIndex(card => card.id === initialId)))
   const [chunkIndex, setChunkIndex] = useState(0)
+  const [delivery, setDelivery] = useState('careful')
+  const [extraSelection, setExtraSelection] = useState(null)
+  const [playRequest, setPlayRequest] = useState(0)
+  const requestSequence = useRef(0)
   const item = twisterCards[index]
   const chunk = item.buildSteps[chunkIndex] || item.phrase
+  const selection = extraSelection ?? { kind: 'practice', step: chunkIndex, delivery }
+  const clip = twisterAudioClip(item, selection)
+  const groups = twisterAudioGroups(item)
+  const currentText = clip?.text ?? chunk
+  const finalStep = chunkIndex === item.buildSteps.length - 1
+  const selectionKey = `${item.id}:${selection.kind}:${selection.index ?? chunkIndex}:${selection.delivery ?? ''}`
+
+  const selectStep = (step) => {
+    setChunkIndex(step)
+    setDelivery('careful')
+    setExtraSelection(null)
+    setPlayRequest(0)
+  }
+
+  const playExtra = (kind, extraIndex) => {
+    setExtraSelection({ kind, index: extraIndex })
+    setPlayRequest(++requestSequence.current)
+  }
 
   // Two independent layers of navigation: chunks inside the current twister,
   // and full tongue twisters in the collection.
   const changeTwister = (delta) => {
     setIndex(current => Math.max(0, Math.min(twisterCards.length - 1, current + delta)))
     setChunkIndex(0)
+    setDelivery('careful')
+    setExtraSelection(null)
+    setPlayRequest(0)
   }
 
   return (
@@ -105,7 +140,6 @@ export function TongueTwisterPractice({ initialId }) {
           {twisterHeading(item.phrase)}
         </h2>
         <img
-          key={item.id}
           className="tt-practice-illustration"
           src={`${import.meta.env.BASE_URL}assets/illustrations/twisters/${item.id}.png`}
           alt={ja ? item.meaningJa : `Illustration of ${item.title}`}
@@ -120,23 +154,39 @@ export function TongueTwisterPractice({ initialId }) {
               aria-current={step === chunkIndex ? 'step' : undefined}
               aria-label={ja ? `部分${step + 1} / ${item.buildSteps.length}` : `Part ${step + 1} of ${item.buildSteps.length}`}
               title={ja ? `部分${step + 1}` : `Part ${step + 1}`}
-              onClick={() => setChunkIndex(step)}
+              onClick={() => selectStep(step)}
             />
           ))}
         </div>
         <div className="tt-chunk-current" aria-live="polite">
-          <p className={chunk.length > 160 ? 'tt-chunk-long' : undefined} lang="en">{chunk}</p>
+          {extraSelection && <span className="tt-current-kind">{extraSelection.kind === 'focus'
+            ? (ja ? '単語・短いフレーズ' : 'Focus word or phrase')
+            : (ja ? '日常のフレーズ' : 'Everyday example')}</span>}
+          <p className={currentText.length > 160 ? 'tt-chunk-long' : undefined} lang="en">{currentText}</p>
         </div>
+        {extraSelection ? <button type="button" className="tt-return-step" onClick={() => {
+          setExtraSelection(null)
+          setPlayRequest(0)
+        }}>{ja ? '部分の練習に戻る' : 'Back to practice step'}</button> : finalStep && (
+          <div className="tt-delivery-choices" role="group" aria-label={ja ? '全文の読み方' : 'Full recording delivery'}>
+            {['careful', 'natural'].map(value => <button type="button" key={value} aria-pressed={delivery === value} onClick={() => {
+              setDelivery(value)
+              setPlayRequest(0)
+            }}>{value === 'careful' ? (ja ? 'ゆっくり' : 'Careful') : (ja ? '自然な速さ' : 'Natural')}</button>)}
+          </div>
+        )}
         <TheoryAudioSample
           key={item.id}
-          phrase={chunk}
+          phrase={currentText}
           target={item.target}
-          src={twisterAudioSource(item, chunkIndex)}
+          src={clip?.src ?? null}
+          selectionKey={selectionKey}
+          playRequest={playRequest}
           compact
           navigation={{
             previousDisabled: chunkIndex === 0,
-            onPrevious: () => setChunkIndex(n => Math.max(0, n - 1)),
-            onNext: () => setChunkIndex(n => (n + 1) % item.buildSteps.length),
+            onPrevious: () => selectStep(Math.max(0, chunkIndex - 1)),
+            onNext: () => selectStep((chunkIndex + 1) % item.buildSteps.length),
             nextLabel: chunkIndex === item.buildSteps.length - 1 ? (ja ? '最初から' : 'Start again') : (ja ? '次の部分' : 'Next chunk'),
             labelType: 'chunk'
           }}
@@ -151,6 +201,33 @@ export function TongueTwisterPractice({ initialId }) {
         </span>
         <p>{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
       </aside>
+      <div className="tt-extra-audio">
+        <section aria-labelledby="tt-focus-title">
+          <h3 id="tt-focus-title">{ja ? '単語・短いフレーズから練習' : 'Practice the words and short phrases'}</h3>
+          <div className="tt-audio-choices">
+            {groups.focusUnits.map((unit, extraIndex) => <AudioChoice
+              key={unit.assetId} text={unit.text}
+              active={extraSelection?.kind === 'focus' && extraSelection.index === extraIndex}
+              disabled={!twisterAudioClip(item, { kind: 'focus', index: extraIndex })}
+              listenLabel={t('Listen to: {phrase}', { phrase: unit.text })}
+              onClick={() => playExtra('focus', extraIndex)}
+            />)}
+          </div>
+        </section>
+        <section aria-labelledby="tt-transfer-title">
+          <h3 id="tt-transfer-title">{ja ? '日常のフレーズで試そう' : 'Try the sounds in everyday phrases'}</h3>
+          <div className="tt-audio-choices tt-transfer-choices">
+            {groups.transfer.map((unit, extraIndex) => <AudioChoice
+              key={unit.assetId} text={unit.text}
+              active={extraSelection?.kind === 'transfer' && extraSelection.index === extraIndex}
+              disabled={!twisterAudioClip(item, { kind: 'transfer', index: extraIndex })}
+              listenLabel={t('Listen to: {phrase}', { phrase: unit.text })}
+              onClick={() => playExtra('transfer', extraIndex)}
+            />)}
+          </div>
+        </section>
+        <p className="tt-recording-note">{ja ? 'アメリカ英語のAI音声 · 単語やフレーズを押すと再生します。もう一度押すと最初から聞けます。' : 'General American AI audio · Tap a word or phrase to play it; tap again to replay.'}</p>
+      </div>
     </section>
   )
 }

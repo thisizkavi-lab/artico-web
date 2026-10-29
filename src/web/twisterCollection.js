@@ -1,6 +1,8 @@
 // Single source of truth for the merged Tongue Twisters Study and Practice.
 // Selected classic texts and order: Artico revised collection, 29 October 2026.
-import { allTwisters as legacyTwisters } from '../data'
+import { allTwisters as legacyTwisters } from '../data.js'
+import audioManifest from './twisterAudioManifest.json' with { type: 'json' }
+import { createTwisterAudioResolver } from './twisterAudioResolver.js'
 
 const originals = new Map(legacyTwisters.map(item => [item.id, item]))
 const selected = [
@@ -415,8 +417,6 @@ const newBuilds = {
   'betty-botter': selected[23].phrase.split('\n').map((_,i,arr)=>arr.slice(0,i+1).join('\n')),
 }
 
-const recordedWhole = new Set(['ice-cream','big-black-bug','seashells','unique-new-york','red-lorry','free-throws','slippery-snails','fresh-flesh','two-witches'])
-
 // Plain-language context shown next to the complete line in Study.
 // These explain what the learner can notice; they don't promise fluency from repetition.
 const practiceReasons = {
@@ -521,11 +521,10 @@ const practiceReasons = {
 export const twisterCards = selected.map(item => {
   const old = originals.get(item.id)
   const buildSteps = newBuilds[item.id] || (old && old.phrase === item.phrase ? old.buildSteps : [item.phrase])
-  return { ...item, whyEn: practiceReasons[item.id].en, whyJa: practiceReasons[item.id].ja, buildSteps, hasFullAudio: recordedWhole.has(item.id), hasChunkAudio: Boolean(old && old.phrase === item.phrase && recordedWhole.has(item.id)) }
+  return { ...item, whyEn: practiceReasons[item.id].en, whyJa: practiceReasons[item.id].ja, buildSteps }
 })
 
-export function twisterAudioSource(item, step = null) {
-  if (step === null || step === item.buildSteps.length - 1)
-    return item.hasFullAudio ? `${import.meta.env.BASE_URL}audio/${item.id}.wav` : null
-  return item.hasChunkAudio ? `${import.meta.env.BASE_URL}audio/segments/${item.id}-${step+1}.wav` : null
-}
+const recordings = createTwisterAudioResolver(audioManifest, import.meta.env?.BASE_URL ?? '/')
+export const twisterAudioSource = recordings.source
+export const twisterAudioClip = recordings.clip
+export const twisterAudioGroups = recordings.groups

@@ -10,8 +10,21 @@ function readEntry() {
   return { landing: shouldShowLanding(window.location.hash) }
 }
 
+// A bookmarked Home URL should still introduce the public landing page on a
+// fresh visit. In-app navigation to #/home remains unchanged.
+function readInitialEntry() {
+  if (/^#\\/home\\/?(?:\\?.*)?$/.test(window.location.hash)) {
+    window.history.replaceState(
+      window.history.state,
+      '',
+      `${window.location.pathname}${window.location.search}#/landing`,
+    )
+  }
+  return readEntry()
+}
+
 export default function ArticoApp() {
-  const [entry, setEntry] = useState(readEntry)
+  const [entry, setEntry] = useState(readInitialEntry)
   const { t } = useLanguage()
   useEffect(() => {
     const change = () => setEntry(readEntry())

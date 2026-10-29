@@ -936,3 +936,87 @@ a.al-journey-card:hover {
   .al-language-popover { animation: none !important; opacity: 1; transform: none; filter: none; }
   .al-language-trigger { transition: none; }
 }
+
+
+/* Japanese landing typography: preserve the same visual hierarchy without
+   forcing Latin fonts onto Japanese glyphs or clipping longer translations. */
+.aw-landing[data-language="ja"] :is(
+  .al-splash-title, .al-splash-description, .al-splash-cta,
+  .al-why-heading h2, .al-why-story p,
+  .al-journey-card h3, .al-journey-card .al-journey-tagline,
+  .al-journey-card > p:not(.al-journey-tagline), .al-journey-vision,
+  .al-final-cta h2, .al-final-cta-button,
+  .al-footer-directory, .al-footer-tagline, .al-route-art text
+) {
+  font-family: 'Noto Sans JP', 'Hanken Grotesk', sans-serif;
+  letter-spacing: -.025em;
+}
+.aw-landing[data-language="ja"] .al-splash-title {
+  font-size: clamp(43px, 4.65vw, 73px);
+  line-height: 1.35;
+  font-weight: 800;
+}
+.aw-landing[data-language="ja"] .al-splash-description {
+  max-width: 790px;
+  font-size: clamp(17px, 1.35vw, 22px);
+  line-height: 1.9;
+  font-weight: 400;
+}
+.aw-landing[data-language="ja"] .al-why-heading h2 {
+  font-size: clamp(36px, 3.65vw, 60px);
+  line-height: 1.4;
+  font-weight: 750;
+}
+.aw-landing[data-language="ja"] .al-why-story p {
+  line-height: 2;
+  letter-spacing: -.012em;
+}
+.aw-landing[data-language="ja"] .al-why-story .al-why-lead {
+  font-size: clamp(20px, 1.7vw, 25px);
+  line-height: 1.95;
+}
+.aw-landing[data-language="ja"] .al-route-art text {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.aw-landing[data-language="ja"] .al-journey-card {
+  padding-block: 19px;
+}
+.aw-landing[data-language="ja"] .al-journey-card h3 {
+  font-size: clamp(17px, 1.3vw, 21px);
+  line-height: 1.5;
+}
+.aw-landing[data-language="ja"] .al-journey-card .al-journey-tagline {
+  font-size: clamp(15px, 1.07vw, 18px);
+  line-height: 1.7;
+  font-style: normal;
+}
+.aw-landing[data-language="ja"] .al-journey-card > p:not(.al-journey-tagline) {
+  font-size: clamp(12px, .87vw, 14px);
+  line-height: 1.8;
+}
+.aw-landing[data-language="ja"] .al-final-cta h2 {
+  font-size: clamp(33px, 3.8vw, 61px);
+  line-height: 1.45;
+}
+.aw-landing[data-language="ja"] .al-footer-column h3 { line-height: 1.6; }
+@media (max-width: 740px) {
+  .aw-landing[data-language="ja"] .al-splash-title {
+    font-size: clamp(32px, 8vw, 47px);
+    line-height: 1.42;
+  }
+  .aw-landing[data-language="ja"] .al-splash-title span { display: block; }
+  .aw-landing[data-language="ja"] .al-splash-description {
+    font-size: 15px;
+    line-height: 1.85;
+    margin-top: 24px !important;
+  }
+  .aw-landing[data-language="ja"] .al-why-heading h2 { font-size: clamp(32px, 8vw, 46px); }
+  .aw-landing[data-language="ja"] .al-why-story .al-why-lead { font-size: 19px; line-height: 1.9; }
+  .aw-landing[data-language="ja"] .al-why-story p { font-size: 17px; line-height: 1.85; }
+  .aw-landing[data-language="ja"] .al-journey-card h3 { font-size: 19px; }
+  .aw-landing[data-language="ja"] .al-journey-card .al-journey-tagline { font-size: 16px; }
+  .aw-landing[data-language="ja"] .al-journey-card > p:not(.al-journey-tagline) { font-size: 13px; }
+  .aw-landing[data-language="ja"] .al-final-cta h2 { font-size: clamp(30px, 7.5vw, 43px); }
+}

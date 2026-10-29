@@ -129,41 +129,41 @@ export const foundationReading = {
   },
   sounds: {
     title: 'Letters & sounds',
-    subtitle: 'Meet the sounds behind English spelling.',
+    subtitle: 'You know what English looks like. Now discover what it sounds like.',
     sections: [
-      section(
-        'sounds-difference',
-        'A letter is not a sound.',
-        [
-          'English has 26 letters. It has more speech sounds than letters, and different accents use slightly different sound systems.',
-          'The same letter can represent different sounds. Several letters can represent one sound. Sometimes a written letter is silent.',
+      section('sounds-difference', 'A letter is not a sound.', [
+        'English has **26 letters**. We use them to write words. But when we speak, we use **sounds** — and there are more sounds than letters.',
+        'A letter does not always make the same sound. Sometimes, two letters work together to make just one.',
+        'So knowing the alphabet is only the beginning. To speak and understand English, we also need to get to know its sounds.',
+      ], {
+        examples: [
+          ['cat / city', 'The letter c represents different sounds.'],
+          ['ship', 'The letters sh represent one sound.'],
+          ['know', 'We write k, but we do not pronounce it.'],
         ],
-        {
-          examples: [
-            ['know', 'The initial k is silent.'],
-            ['knife', 'The written k is not a separate sound.'],
-          ],
-        },
-      ),
-      section(
-        'sounds-listen',
-        'Hear the sounds of English.',
-        [
-          'The chart below shows common consonants, vowels, and vowel glides in General American English. Each row has an IPA symbol, a familiar word, and a short note.',
-          'Select Listen to hear the example word. Listen, say it aloud, and notice the sound marked by the symbol. You do not need to memorize the whole chart.',
-        ],
-      ),
-      section(
-        'sounds-ipa',
-        'IPA is a pronunciation map.',
-        [
-          'The International Phonetic Alphabet (IPA) represents speech sounds, not English letters. For example, cat has three letters and the pronunciation /kæt/.',
-          'The chart is a guide, not a list of sounds that all Americans pronounce identically. Accent differences and dictionary transcription conventions matter.',
-        ],
-      ),
-      section('sounds-routine', 'Listen. Say. Compare.', [
-        'Choose one sound, listen to its example word, and say it aloud. Then try a contrasting sound, such as /i/ in seat and /ɪ/ in sit.',
-        'The useful discovery is that spelling and sound do not always match. Return to this chart whenever a pronunciation is unclear.',
+      }),
+      section('sounds-reference', 'Which English sounds will we learn?', [
+        'English is spoken in many countries, and people do not all pronounce it in exactly the same way. Even within the United States, pronunciation can vary from one speaker or region to another.',
+        'In Artico, we follow **General American English** — a broad, widely recognizable pattern of American pronunciation. It gives us one clear reference to learn from and practise consistently.',
+        'This does not mean every American sounds identical, or that other accents are wrong. We are simply **choosing one model to guide our learning**.',
+      ]),
+      section('sounds-ipa', 'How do we write a sound?', [
+        'The ordinary alphabet tells us how to **spell** a word. It does not always tell us how to **pronounce** it.',
+        'That is where the **International Phonetic Alphabet (IPA)** comes in. IPA uses symbols to represent speech sounds. For example, the first sound in **ship** is /ʃ/, and the first sound in **thin** is /θ/. The marks / / tell us we are looking at a sound, not a spelling.',
+        '**Why do some symbols look so strange?** Some IPA symbols are familiar Latin letters. Others come from or are adapted from other alphabets, or were shaped to represent particular sounds. They are not new English letters. They simply help us write down what we hear.',
+        'The sound /ʃ/ appears in **ship**, **sugar**, and **machine**, even though those words spell it differently. IPA can also show when the same word is pronounced differently in another accent.',
+        'You do not need to memorize every symbol now. Think of IPA as a **map**: each symbol helps you recognize a sound when you hear it.',
+      ]),
+      section('sounds-listen', 'The sounds we will explore.', [
+        'For our General American reference, we have organized the sounds into three groups: **consonants**, **vowels**, and **vowel glides**.',
+        'The chart has **24 consonant entries**, **12 vowel entries**, and **5 vowel glides** — 41 useful entries to explore. This is a learning chart, not a rule that every American has exactly 41 separate sounds. Different accents and dictionaries sometimes group sounds differently.',
+        'Read a little about each group, then use the buttons to listen to its example words.',
+      ]),
+      section('sounds-routine', 'Listen, notice, and try.', [
+        'You do not need to master every sound today. Start with one example word. Listen, say it aloud, then try another word with a similar sound.',
+        'For example, compare **seat** and **sit**, or **thin** and **this**. Focus on the small difference you hear.',
+        'These sounds are our starting point. As you continue, you will also learn how sounds work together in words and sentences — through **syllables, stress, rhythm, and connected speech**.',
+        '**For now, let us get familiar with the sounds themselves.**',
       ]),
     ],
   },

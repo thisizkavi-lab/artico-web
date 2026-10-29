@@ -11,7 +11,27 @@
 .ar-page *, .ar-page *::before,.ar-page *::after{box-sizing:border-box}
 .ar-page :is(button){font-family:inherit;cursor:pointer}
 .ar-section{display:flex;flex-direction:column;gap:16px;scroll-margin-top:110px}
-.ar-section + .ar-section{padding-top:35px;border-top:1px solid #e0e8f5}
+/* Each subtopic has its own softly tinted surface. The palette moves from
+   cool blue to sea-glass, lilac and warm paper as the learner scrolls. */
+.ip-page .ar-page{gap:12px;padding:14px;background:#f5f7fa}
+.ar-page > .ar-section{
+  position:relative;
+  padding:24px 25px 26px;
+  border:1px solid rgba(42,61,96,.09);
+  border-radius:22px;
+  background:linear-gradient(155deg,var(--ar-section-top) 0%,var(--ar-section-bottom) 80%);
+  box-shadow:0 5px 20px rgba(20,33,61,.025);
+}
+.ar-page > .ar-section + .ar-section{padding-top:24px;border-top:1px solid rgba(42,61,96,.09)}
+.ar-page > #study-open{--ar-section-top:#edf3fe;--ar-section-bottom:#f8faff;--ar-section-accent:#5c7fbe}
+.ar-page > #study-check-in{--ar-section-top:#eaf6f4;--ar-section-bottom:#f8fbfa;--ar-section-accent:#4a988c}
+.ar-page > #study-reunion{--ar-section-top:#f0eef9;--ar-section-bottom:#faf9fd;--ar-section-accent:#8b7ab6}
+.ar-page > #study-casual{--ar-section-top:#faf2ea;--ar-section-bottom:#fdfaf7;--ar-section-accent:#bc8b68}
+.ar-page .ar-section-heading{
+  padding-left:14px;
+  border-left:3px solid var(--ar-section-accent);
+  margin-bottom:2px;
+}
 .ar-section-heading{margin-bottom:2px}
 .ar-section-heading h2{font-size:clamp(24px,2.5vw,29px);line-height:1.24;margin:0;font-weight:850;letter-spacing:-.025em;color:var(--ar-ink)}
 .ar-section-heading h2 span{color:var(--ar-blue)}
@@ -118,9 +138,11 @@
   .ar-honest{grid-column:1;grid-row:2}
 }
 @media(max-width:620px){
-  .ip-page .ar-page{padding:12px 10px 22px;gap:18px;border-radius:12px}
+  .ip-page .ar-page{padding:7px;gap:9px;border-radius:12px}
   .ar-section{gap:12px}
-  .ar-section+.ar-section{padding-top:26px}
+  .ar-page > .ar-section,
+  .ar-page > .ar-section + .ar-section{padding:17px 12px 18px;border-radius:16px}
+  .ar-page .ar-section-heading{padding-left:10px;border-left-width:3px}
   .ar-section-heading h2{font-size:21px}
   .ar-section-heading p{font-size:12px;line-height:1.5}
   .ar-card{padding:12px;border-radius:16px}

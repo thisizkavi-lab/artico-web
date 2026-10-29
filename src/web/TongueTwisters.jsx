@@ -226,7 +226,6 @@ export function TongueTwisterPractice({ initialId }) {
             />)}
           </div>
         </section>
-        <p className="tt-recording-note">{ja ? 'アメリカ英語のAI音声 · 単語やフレーズを押すと再生します。もう一度押すと最初から聞けます。' : 'General American AI audio · Tap a word or phrase to play it; tap again to replay.'}</p>
       </div>
     </section>
   )

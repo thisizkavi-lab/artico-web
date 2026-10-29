@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:turn left" data-archetype="spatial-direction">
+  <!-- Landscaped City Block Park Lawn Backdrop -->
+  <rect width="304" height="192" fill="#DCEAD6"/>
+
+  <!-- Sidewalk Aprons Framing a Clean 3-Way / 4-Way Street Intersection -->
+  <path d="M 0 54 L 122 54 L 122 0 L 222 0 L 222 54 L 304 54 L 304 138 L 222 138 L 222 192 L 122 192 L 122 138 L 0 138 Z"
+        fill="#EFECE4" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Asphalt Road Surface -->
+  <path d="M 0 64 L 132 64 L 132 0 L 212 0 L 212 64 L 304 64 L 304 128 L 212 128 L 212 192 L 132 192 L 132 128 L 0 128 Z"
+        fill="#556274" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Dashed Road Lane Dividers -->
+  <g stroke="#FAF8F3" stroke-width="2.6" stroke-dasharray="9 8" stroke-linecap="round">
+    <line x1="172" y1="6" x2="172" y2="52"/>
+    <line x1="172" y1="140" x2="172" y2="188"/>
+    <line x1="8" y1="96" x2="118" y2="96"/>
+    <line x1="226" y1="96" x2="298" y2="96"/>
+  </g>
+
+  <!-- Crisp Zebra Crosswalk Bars on Left Branch -->
+  <g fill="#FAF8F3" opacity="0.9">
+    <rect x="114" y="69" width="12" height="6" rx="1.5"/>
+    <rect x="114" y="80" width="12" height="6" rx="1.5"/>
+    <rect x="114" y="91" width="12" height="6" rx="1.5"/>
+    <rect x="114" y="102" width="12" height="6" rx="1.5"/>
+    <rect x="114" y="113" width="12" height="6" rx="1.5"/>
+  </g>
+
+  <!-- Small Trees & Rooftop Corner Cues for Immediate Street Context -->
+  <circle cx="48" cy="28" r="14" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/>
+  <circle cx="44" cy="24" r="5" fill="#A3CE9E"/>
+  <circle cx="72" cy="166" r="13" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/>
+  <rect x="242" y="14" width="44" height="28" rx="4" fill="#E6C9A8" stroke="#1E2A3B" stroke-width="2.2"/>
+  <rect x="242" y="152" width="44" height="28" rx="4" fill="#D8E2EE" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Small Top-Down Vehicle Approaching from Bottom Right-Hand/Center Lane -->
+  <rect x="178" y="148" width="22" height="32" rx="6" fill="#F4C152" stroke="#1E2A3B" stroke-width="2.2"/>
+  <rect x="181" y="154" width="16" height="9" rx="2.5" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.5"/>
+  <rect x="182" y="168" width="14" height="6" rx="2" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.4"/>
+
+  <!-- SIGNATURE ARTICO BLUE 90-DEGREE LEFT-TURN ARROW -->
+  <!-- Crisp White Halo + Dark Ink Outline + Artico Blue Fill for Maximum Thumbnail Contrast -->
+  <path d="M 189 142
+           L 189 96
+           C 189 82, 179 78, 164 78
+           L 68 78"
+        fill="none" stroke="#FAF8F3" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 189 142
+           L 189 96
+           C 189 82, 179 78, 164 78
+           L 68 78"
+        fill="none" stroke="#1E2A3B" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 189 142
+           L 189 96
+           C 189 82, 179 78, 164 78
+           L 68 78"
+        fill="none" stroke="#4A72B2" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Crisp Left-Pointing Arrowhead -->
+  <path d="M 74 60 L 42 78 L 74 96 Z"
+        fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M 70 67 L 52 77" stroke="#8EB0DE" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

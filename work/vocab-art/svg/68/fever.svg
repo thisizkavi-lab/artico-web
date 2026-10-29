@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:fever" data-archetype="symptom-bust">
+  <defs>
+    <clipPath id="fever-face-clip">
+      <path d="M 96 68 C 96 42, 172 42, 172 68 L 170 98 C 170 120, 152 132, 134 132 C 116 132, 98 120, 98 98 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Soft Warm Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="136" cy="96" r="74" fill="#FDF2EE"/>
+
+  <!-- Cozy Blanket Wrapped Around Shoulders -->
+  <path d="M 58 178 C 64 140, 92 126, 134 126 C 176 126, 204 140, 210 178 Z"
+        fill="#84A98C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M 78 178 C 84 148, 106 136, 134 136 C 162 136, 184 148, 190 178"
+        fill="#A3C4A8" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Neck & Ears -->
+  <rect x="122" y="120" width="24" height="20" rx="6" fill="#EBAA8A" stroke="#1E2A3B" stroke-width="2.2"/>
+  <circle cx="96" cy="92" r="9" fill="#F3B89A" stroke="#1E2A3B" stroke-width="2.4"/>
+  <circle cx="172" cy="92" r="9" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.4"/>
+
+  <!-- Head & Feverish Rosy Flush (Clipped cleanly to face contour) -->
+  <g clip-path="url(#fever-face-clip)">
+    <rect x="90" y="38" width="90" height="100" fill="#F6C2A6"/>
+    <!-- Warm fever flush across upper cheeks & nose bridge -->
+    <ellipse cx="134" cy="95" rx="34" ry="13" fill="#F47272" opacity="0.45"/>
+    <circle cx="111" cy="98" r="11" fill="#EF5A68" opacity="0.5"/>
+    <circle cx="157" cy="98" r="11" fill="#EF5A68" opacity="0.5"/>
+    <!-- Subtle chin/jaw shadow -->
+    <path d="M 96 116 C 116 130, 152 130, 172 116 L 172 136 L 96 136 Z" fill="#E5A283" opacity="0.55"/>
+  </g>
+  <path d="M 96 68 C 96 42, 172 42, 172 68 L 170 98 C 170 120, 152 132, 134 132 C 116 132, 98 120, 98 98 Z"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Tousled Dark Navy-Charcoal Hair (Ren Cast) -->
+  <path d="M 92 76 C 88 46, 108 26, 136 26 C 164 26, 182 46, 176 76 C 172 58, 158 48, 134 48 C 110 48, 98 58, 92 76 Z"
+        fill="#27364B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Forehead Cooling Gel Patch -->
+  <rect x="108" y="54" width="52" height="16" rx="5" fill="#E8F3FC" stroke="#1E2A3B" stroke-width="2.1"/>
+  <rect x="112" y="58" width="44" height="5" rx="2.5" fill="#BAE0FD"/>
+
+  <!-- Tired Droopy Eyes & Worried Brows -->
+  <path d="M 108 78 L 123 75 M 160 78 L 145 75" fill="none" stroke="#1E2A3B" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M 109 87 Q 117 91 125 87" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M 143 87 Q 151 91 159 87" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/>
+
+  <!-- Sweat Drop on Temple -->
+  <path d="M 164 73 C 164 73, 169 81, 169 84 C 169 87, 166.8 89, 164 89 C 161.2 89, 159 87, 159 84 C 159 81, 164 73, 164 73 Z"
+        fill="#7CC4FA" stroke="#1E2A3B" stroke-width="1.6"/>
+
+  <!-- Mouth + Oral Thermometer Angled Out -->
+  <path d="M 126 113 Q 134 110 144 113" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  <g transform="rotate(-18 142 112)">
+    <rect x="140" y="108" width="48" height="8" rx="4" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2"/>
+    <rect x="144" y="110.5" width="32" height="3" rx="1.5" fill="#E11D48"/>
+  </g>
+
+  <!-- Wavy Rising Heat Lines Above Head -->
+  <g fill="none" stroke="#E11D48" stroke-width="2.2" stroke-linecap="round">
+    <path d="M 74 68 C 70 61, 78 55, 74 47"/>
+    <path d="M 84 56 C 80 49, 88 43, 84 35"/>
+    <path d="M 188 58 C 184 51, 192 45, 188 37"/>
+  </g>
+
+  <!-- Large Crisp Thermometer Gauge Badge on Right (Unmistakable High Temperature Cue) -->
+  <circle cx="242" cy="96" r="44" fill="#FDE8E8" stroke="#F8B4B4" stroke-width="1.8"/>
+  <!-- Thermometer Glass Tube & Bulb -->
+  <path d="M 234 48 C 234 43.5, 250 43.5, 250 48 L 250 118 C 256 122, 258 130, 255 137 C 252 144, 242 147, 235 143 C 228 139, 227 129, 234 118 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- High Crimson Mercury Column & Bulb -->
+  <circle cx="242" cy="131" r="9.5" fill="#E11D48"/>
+  <rect x="238.5" y="58" width="7" height="68" rx="3.5" fill="#E11D48"/>
+  <circle cx="239" cy="128" r="2.6" fill="#FDA4AF"/>
+  <!-- Graduation Tick Marks (pure geometry, zero text!) -->
+  <g stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round">
+    <line x1="254" y1="60" x2="261" y2="60"/>
+    <line x1="254" y1="72" x2="259" y2="72"/>
+    <line x1="254" y1="84" x2="261" y2="84"/>
+    <line x1="254" y1="96" x2="259" y2="96"/>
+    <line x1="254" y1="108" x2="261" y2="108"/>
+  </g>
+</svg>

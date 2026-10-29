@@ -1,4 +1,4 @@
-import { vocabularyCourseArt } from './vocabularyCourseArt'
+import { vocabularyCourseArt, vocabularyCourseTextOnly } from './vocabularyCourseArt'
 import { vocabularyAiGrooming } from './vocabularyAiGrooming'
 import { vocabularyAiFood } from './vocabularyAiFood'
 import { vocabularyAiScene } from './vocabularyAiScene'
@@ -13,6 +13,7 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
 // Dedicated course illustrations take precedence over all legacy art.
 function artworkFor(term, chapter) {
+  if (vocabularyCourseTextOnly(term, chapter)) return null
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
   const grooming = vocabularyAiGrooming(term, chapter)

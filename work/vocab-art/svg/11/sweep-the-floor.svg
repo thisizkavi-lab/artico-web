@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="11:sweep the floor" data-archetype="action-tool">
+  <defs>
+    <clipPath id="bristle-clip">
+      <path d="M 154 96 L 204 108 L 214 148 C 190 156, 152 146, 130 132 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Warm Room Wall & Wooden Plank Floor -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <rect x="0" y="106" width="304" height="86" fill="#EAD8BE"/>
+  <rect x="0" y="98" width="304" height="8" fill="#F3ECE1"/>
+  <line x1="0" y1="106" x2="304" y2="106" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Subtle Wooden Floorboard Plank Seams -->
+  <g stroke="#CCA97E" stroke-width="1.5" stroke-linecap="round">
+    <line x1="0" y1="128" x2="304" y2="128"/>
+    <line x1="0" y1="154" x2="304" y2="154"/>
+    <line x1="0" y1="180" x2="304" y2="180"/>
+    <line x1="78" y1="106" x2="62" y2="128"/>
+    <line x1="214" y1="128" x2="202" y2="154"/>
+    <line x1="118" y1="154" x2="104" y2="180"/>
+  </g>
+
+  <!-- Ground Contact Shadows -->
+  <ellipse cx="128" cy="156" rx="92" ry="12" fill="#D4BA96" opacity="0.75"/>
+
+  <!-- Angled Slate-Blue Dustpan Resting Flat on Floor (Left) -->
+  <path d="M 30 96 L 56 124" stroke="#1E2A3B" stroke-width="7.5" stroke-linecap="round"/>
+  <path d="M 30 96 L 56 124" stroke="#4A72B2" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 48 122 L 104 114 L 118 154 L 54 162 Z"
+        fill="#5C84C4" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Dustpan Inner Tray Recess & Rubber Lip -->
+  <path d="M 58 128 L 100 122 L 110 150 L 62 156 Z" fill="#3D5F94"/>
+  <path d="M 104 114 L 118 154" stroke="#1E2A3B" stroke-width="3.6" stroke-linecap="round"/>
+
+  <!-- Dust Bunnies & Crumbs Being Swept Into Dustpan -->
+  <g fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.6">
+    <path d="M 102 140 C 98 134, 108 129, 113 135 C 119 133, 122 142, 115 146 C 110 150, 100 147, 102 140 Z"/>
+    <path d="M 122 148 C 119 143, 126 139, 131 143 C 136 142, 138 149, 132 152 C 127 155, 121 152, 122 148 Z"/>
+  </g>
+  <circle cx="94" cy="146" r="2.2" fill="#64748B"/>
+  <circle cx="118" cy="132" r="2.0" fill="#78716C"/>
+  <circle cx="138" cy="153" r="2.2" fill="#64748B"/>
+
+  <!-- Angled Wooden Broom Handle Entering from Upper Right -->
+  <path d="M 244 18 L 180 98" stroke="#1E2A3B" stroke-width="10.5" stroke-linecap="round"/>
+  <path d="M 244 18 L 180 98" stroke="#C88242" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M 242 19 L 179 97" stroke="#E5A568" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Broom Shoulder Cap (Red/Coral Binding Band) -->
+  <path d="M 160 86 L 202 98 L 199 110 L 154 97 Z"
+        fill="#D64550" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Splayed Golden-Straw Broom Bristles Flexing Mid-Sweep -->
+  <g clip-path="url(#bristle-clip)">
+    <rect x="125" y="92" width="95" height="68" fill="#F2C14E"/>
+    <!-- Shadow along trailing right side & stitched band -->
+    <path d="M 188 100 L 218 106 L 218 160 L 182 154 Z" fill="#D49B2A"/>
+    <!-- Straw bristle texture lines curving left in motion -->
+    <g fill="none" stroke="#9E6B14" stroke-width="1.6" stroke-linecap="round">
+      <path d="M 164 100 C 158 116, 148 128, 138 136"/>
+      <path d="M 174 103 C 168 120, 160 134, 150 142"/>
+      <path d="M 184 106 C 180 122, 174 136, 164 146"/>
+      <path d="M 194 108 C 192 126, 188 140, 180 150"/>
+    </g>
+    <!-- Red Twine Stitching Across Broom Bristles -->
+    <path d="M 148 110 L 206 123" stroke="#C83E4D" stroke-width="3" stroke-dasharray="5 3"/>
+  </g>
+  <path d="M 154 96 L 204 108 L 214 148 C 190 156, 152 146, 130 132 Z"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Dynamic Sweeping Motion Arcs Pushing Toward Dustpan -->
+  <g fill="none" stroke="#4A72B2" stroke-width="2.6" stroke-linecap="round">
+    <path d="M 224 140 C 198 158, 164 162, 138 156"/>
+    <path d="M 212 154 C 188 168, 158 170, 132 165"/>
+  </g>
+  <path d="M 142 151 L 132 155 L 140 161 Z" fill="#4A72B2"/>
+</svg>

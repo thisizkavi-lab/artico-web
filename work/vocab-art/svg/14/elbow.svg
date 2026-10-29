@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:elbow" data-archetype="part-focus">
+  <defs>
+    <!-- Full Bent Arm + Clear Hand Silhouette used for both Muted Context & Clipped Focus Highlight -->
+    <path id="bent-arm-shape"
+          d="M 102 36
+             L 138 48
+             L 145 106
+             L 202 72
+             C 203 62, 209 54, 215 56
+             C 220 58, 217 65, 215 69
+             L 232 61
+             C 242 58, 246 76, 234 84
+             L 214 96
+             L 142 144
+             C 125 154, 108 146, 106 128
+             L 100 56 Z"/>
+    <clipPath id="elbow-focus-clip">
+      <circle cx="126" cy="130" r="29"/>
+    </clipPath>
+  </defs>
+
+  <!-- Clean Warm Paper Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Golden Focus Halo Behind Elbow Joint -->
+  <circle cx="126" cy="130" r="44" fill="#FEF3C7"/>
+  <circle cx="126" cy="130" r="35" fill="#FDE68A" opacity="0.65"/>
+
+  <!-- Muted Context Whole Arm & Hand (so learner never confuses ELBOW with ARM or HAND) -->
+  <use href="#bent-arm-shape" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 145 106 L 135 116" fill="none" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M 224 69 L 237 64 M 225 76 L 238 71 M 224 83 L 235 78"
+        fill="none" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Muted Short T-Shirt Sleeve at Top Shoulder -->
+  <path d="M 88 22 L 150 38 L 144 68 L 94 56 Z"
+        fill="#CBD5E1" stroke="#64748B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 94 52 L 144 64" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- FULL-COLOR TARGET PART: The Elbow Joint (Clipped cleanly to focus circle) -->
+  <g clip-path="url(#elbow-focus-clip)">
+    <use href="#bent-arm-shape" fill="#F3B391"/>
+    <path d="M 102 118 C 106 140, 122 148, 148 134 L 154 152 L 98 156 Z" fill="#DF8B68"/>
+    <ellipse cx="118" cy="136" rx="8" ry="5" transform="rotate(22 118 136)" fill="#FDE4D4"/>
+    <use href="#bent-arm-shape" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M 145 106 L 134 118" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 116 128 C 118 134, 123 137, 129 136" fill="none" stroke="#B85D3B" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Crisp Amber Focus Callout Ring -->
+  <circle cx="126" cy="130" r="29" fill="none" stroke="#D97706" stroke-width="2.2" stroke-dasharray="5 4"/>
+
+  <!-- Signature Artico Blue Pointer Arrow Aimed Directly at Elbow Tip -->
+  <g>
+    <path d="M 52 154 L 84 142" fill="none" stroke="#1E2A3B" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M 52 154 L 84 142" fill="none" stroke="#4A72B2" stroke-width="3.8" stroke-linecap="round"/>
+    <path d="M 79 134 L 93 139 L 84 151 Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>

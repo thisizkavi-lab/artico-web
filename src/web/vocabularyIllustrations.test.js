@@ -155,6 +155,13 @@ test('dedicated vocabulary course art manifest entries are valid and verified',(
     const stat=statSync(filePath)
     assert.ok(stat.size<=80*1024,'Course art file exceeds 80 KB: '+slug+' ('+stat.size+' B)')
   }
+  const allowedReasons=new Set(['ABSTRACT','FUNCTION','IDIOM','SENSE','SENSITIVE'])
+  for(const [key,reason] of Object.entries(manifest.textOnly||{})){
+    assert.ok(validTerms.has(key),'Text-only key not in vocabulary: '+key)
+    assert.ok(!manifest.entries[key],'Key cannot be both illustrated and textOnly: '+key)
+    assert.ok(allowedReasons.has(reason),'Invalid textOnly reason for '+key+': '+reason)
+  }
   assert.ok(load('vocabularyVisual.js').includes('vocabularyCourseArt(term, chapter)'))
+  assert.ok(load('vocabularyVisual.js').includes('vocabularyCourseTextOnly(term, chapter)'))
 })
 

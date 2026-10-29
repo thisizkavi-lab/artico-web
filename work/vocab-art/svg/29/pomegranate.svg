@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:pomegranate" data-archetype="hero-object">
+  <defs>
+    <clipPath id="pom-body-clip">
+      <path d="M 118 54 C 82 54, 62 80, 64 112 C 66 144, 92 162, 124 162 C 156 162, 180 140, 178 108 C 176 78, 152 54, 118 54 Z"/>
+    </clipPath>
+    <clipPath id="pom-wedge-clip">
+      <path d="M 146 116 C 166 96, 208 94, 236 110 C 242 138, 218 164, 184 166 C 156 166, 140 142, 146 116 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <ellipse cx="154" cy="164" rx="104" ry="14" fill="#EAE3D5"/>
+  <ellipse cx="122" cy="160" rx="54" ry="9" fill="#DDD4C3"/>
+  <ellipse cx="192" cy="165" rx="46" ry="8" fill="#DDD4C3"/>
+
+  <!-- Crown Calyx on Whole Pomegranate -->
+  <path d="M 102 56 L 95 36 L 109 45 L 117 31 L 125 45 L 139 36 L 133 56 Z"
+        fill="#B83344" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 107 55 C 112 48, 123 48, 128 55" fill="#7D1D2B" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Whole Pomegranate Body (3-tone cel shaded inside clipPath) -->
+  <g clip-path="url(#pom-body-clip)">
+    <rect x="55" y="48" width="135" height="125" fill="#CE3D4E"/>
+    <!-- Crescent shadow on right & bottom -->
+    <path d="M 132 48 C 154 76, 152 126, 102 152 C 84 158, 72 156, 64 152 L 185 168 L 185 48 Z" fill="#9E2636"/>
+    <!-- Subtle vertical rib facets -->
+    <path d="M 96 58 C 84 86, 86 130, 104 158" fill="none" stroke="#DF5B69" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+    <path d="M 142 58 C 154 88, 152 128, 136 158" fill="none" stroke="#851D2B" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+    <!-- Upper-left warm specular highlight -->
+    <ellipse cx="92" cy="84" rx="15" ry="22" transform="rotate(-24 92 84)" fill="#EA7580" opacity="0.75"/>
+    <ellipse cx="87" cy="77" rx="6" ry="10" transform="rotate(-24 87 77)" fill="#FBE0E3"/>
+  </g>
+  <!-- Crisp outer contour stamped on top -->
+  <path d="M 103 55 C 76 61, 62 84, 64 112 C 66 144, 92 162, 124 162 C 156 162, 180 140, 178 108 C 176 81, 158 60, 132 55"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cut Cross-Section Wedge in Foreground Right -->
+  <g clip-path="url(#pom-wedge-clip)">
+    <!-- Outer red rind rim -->
+    <rect x="136" y="90" width="112" height="82" fill="#B82D3E"/>
+    <!-- Cream-white spongy pith interior -->
+    <path d="M 152 117 C 170 101, 206 100, 229 113 C 232 135, 212 156, 184 158 C 160 158, 147 139, 152 117 Z"
+          fill="#FCF5E6"/>
+    <!-- Left Aril Chamber -->
+    <path d="M 158 121 C 168 110, 185 111, 187 124 C 188 138, 178 150, 165 148 C 155 146, 153 131, 158 121 Z"
+          fill="#8F162B"/>
+    <!-- Right Aril Chamber -->
+    <path d="M 195 116 C 206 108, 222 112, 223 125 C 224 139, 211 151, 197 149 C 190 146, 189 125, 195 116 Z"
+          fill="#8F162B"/>
+    <!-- Cream septum membrane between chambers -->
+    <path d="M 189 104 C 191 124, 190 142, 186 157" fill="none" stroke="#F4E7CE" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Jewel-like Ruby Aril Seeds inside Left & Right Chambers -->
+  <g stroke="#6E0F20" stroke-width="1.1">
+    <circle cx="166" cy="122" r="5.5" fill="#E11D48"/>
+    <circle cx="177" cy="119" r="5.5" fill="#BE123C"/>
+    <circle cx="163" cy="133" r="5.8" fill="#BE123C"/>
+    <circle cx="174" cy="130" r="6.0" fill="#F43F5E"/>
+    <circle cx="182" cy="138" r="5.2" fill="#E11D48"/>
+    <circle cx="169" cy="142" r="5.4" fill="#E11D48"/>
+
+    <circle cx="201" cy="120" r="5.5" fill="#F43F5E"/>
+    <circle cx="213" cy="119" r="5.5" fill="#BE123C"/>
+    <circle cx="200" cy="131" r="5.8" fill="#E11D48"/>
+    <circle cx="212" cy="129" r="6.0" fill="#F43F5E"/>
+    <circle cx="217" cy="139" r="5.0" fill="#BE123C"/>
+    <circle cx="204" cy="142" r="5.5" fill="#E11D48"/>
+  </g>
+  <!-- Crisp glistening white seed highlights -->
+  <g fill="#FFF5F7">
+    <circle cx="164" cy="120" r="1.5"/>
+    <circle cx="172" cy="128" r="1.7"/>
+    <circle cx="167" cy="140" r="1.4"/>
+    <circle cx="199" cy="118" r="1.5"/>
+    <circle cx="210" cy="127" r="1.7"/>
+    <circle cx="202" cy="140" r="1.4"/>
+  </g>
+
+  <!-- Wedge Outer Contour -->
+  <path d="M 146 116 C 166 96, 208 94, 236 110 C 242 138, 218 164, 184 166 C 156 166, 140 142, 146 116 Z"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M 152 117 C 170 101, 206 100, 229 113" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Loose Fallen Ruby Arils on Table for Scale & Texture -->
+  <g stroke="#1E2A3B" stroke-width="1.6">
+    <ellipse cx="140" cy="167" rx="5.5" ry="4.2" fill="#E11D48"/>
+    <ellipse cx="153" cy="171" rx="5.2" ry="4.0" fill="#F43F5E"/>
+    <ellipse cx="236" cy="162" rx="5.2" ry="4.0" fill="#BE123C"/>
+  </g>
+  <circle cx="138.5" cy="165.5" r="1.3" fill="#FFF5F7"/>
+  <circle cx="151.5" cy="169.5" r="1.3" fill="#FFF5F7"/>
+</svg>

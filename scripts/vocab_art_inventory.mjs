@@ -64,7 +64,7 @@ for (const lesson of organized.lessons) {
 
   for (let gIndex = 0; gIndex < lesson.groups.length; gIndex++) {
     const group = lesson.groups[gIndex]
-    const groupName = group.name || `Group ${gIndex + 1}`
+    const groupName = group.title || group.name || `Group ${gIndex + 1}`
     const groupTerms = group.items.map(item => item[0])
 
     for (const item of group.items) {

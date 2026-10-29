@@ -833,7 +833,7 @@ function Experience({ route, learning, update, save, notify }) {
           </div>
         </div>
       ) : (
-        {id === '01' ? <GreetingsReferenceStudy audioProps={audioProps} phrases={introductionPhrases} /> : <Study audioProps={audioProps} focusedId={focusedId} />}
+        <>{id === '01' ? <GreetingsReferenceStudy audioProps={audioProps} phrases={introductionPhrases} /> : <Study audioProps={audioProps} focusedId={focusedId} />}</>
       )}
       <LessonFooter route={route} practice={practice} />
     </div>

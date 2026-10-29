@@ -212,3 +212,28 @@ test('Lesson 03 displays twelve months with their written abbreviations but no d
   assert.match(style, /vlt-month-table/)
   assert.match(style, /@media\(max-width:620px\)/)
 })
+
+
+test('Lesson 03 displays every original time span as a coherent equivalence table', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  const terms = lesson.groups[4].items.map(([term]) => term)
+  assert.deepEqual(terms, [
+    'second', 'minute', 'hour', 'day', 'week',
+    'two weeks / a fortnight', 'month', 'year', 'decade',
+    'century', 'millennium / millennia',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const table = view.slice(view.indexOf('const timeSpanEquivalents'), view.indexOf('function Visual({visual})'))
+  for (const term of terms) assert.ok(table.includes(term), 'Missing unit: ' + term)
+  for (const equivalent of ['60 seconds', '60 minutes', '24 hours', '7 days',
+    '14 days', '28–31 days', '12 months', '10 years', '100 years', '1,000 years',
+  ]) assert.ok(table.includes(equivalent), 'Missing equivalence: ' + equivalent)
+  assert.match(table, /items\.map\(\(\[term\]\)/)
+  assert.match(table, /<th scope="row"/)
+  assert.match(view, /isTimeSpansTable && mode === 'study'/)
+  assert.match(view, /<TimeSpansTable items=\{cards\} japanese=\{japanese\}/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-span-table/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})

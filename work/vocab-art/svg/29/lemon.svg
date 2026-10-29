@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:lemon" data-archetype="hero-object">
+  <defs>
+    <!-- Lemon: pointed tips, yellow citrus peel, green leaf, round cut slice with pale segments and seeds -->
+    <clipPath id="lemon-body-clip">
+      <path d="M 64 104 C 64 80 92 64 126 64 C 158 64 176 82 178 104 C 178 126 156 144 124 144 C 92 144 64 128 64 104 Z" />
+    </clipPath>
+    <clipPath id="lemon-slice-clip">
+      <circle cx="214" cy="116" r="38" />
+    </clipPath>
+  </defs>
+
+  <!-- Background & Floor Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="118" cy="160" rx="52" ry="9" fill="#DDD4C3" />
+  <ellipse cx="214" cy="162" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Green Stem & Fresh Leaf on Whole Lemon -->
+  <!-- Stem -->
+  <path d="M 66 102 C 58 100 52 94 48 90" stroke="#4D7C0F" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M 66 102 C 58 100 52 94 48 90" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+  <!-- Glossy Green Leaf -->
+  <path d="M 50 90 C 44 70 60 56 80 58 C 76 74 64 86 50 90 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 50 90 Q 64 74 80 58" stroke="#365314" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Whole Lemon Body -->
+  <!-- Pointed Tip Left (nipple / mammilla) -->
+  <path d="M 66 98 C 58 101 58 107 66 110" fill="#EAB308" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Pointed Tip Right -->
+  <path d="M 176 98 C 184 101 184 107 176 110" fill="#EAB308" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Main Oval Silhouette -->
+  <g clip-path="url(#lemon-body-clip)">
+    <!-- Base vibrant lemon yellow -->
+    <rect x="60" y="60" width="124" height="90" fill="#FACC15" />
+    <!-- Underside shadow -->
+    <path d="M 64 120 C 80 142 144 146 178 122 L 178 146 L 64 146 Z" fill="#CA8A04" />
+    <!-- Specular highlight -->
+    <ellipse cx="112" cy="84" rx="28" ry="10" transform="rotate(-6 112 84)" fill="#FEF08A" />
+    <!-- Citrus dimples -->
+    <circle cx="86" cy="98" r="1.2" fill="#CA8A04" />
+    <circle cx="104" cy="112" r="1.2" fill="#CA8A04" />
+    <circle cx="138" cy="92" r="1.2" fill="#CA8A04" />
+    <circle cx="152" cy="108" r="1.2" fill="#CA8A04" />
+  </g>
+  <!-- Lemon Contour -->
+  <path d="M 66 98 C 60 101 60 107 66 110 C 72 132 102 144 124 144 C 156 144 172 128 176 110 C 182 107 182 101 176 98 C 170 78 146 64 126 64 C 98 64 74 78 66 98 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Cut Round Lemon Slice on Right -->
+  <!-- Outer yellow rind ring -->
+  <circle cx="214" cy="116" r="38" fill="#FACC15" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#lemon-slice-clip)">
+    <!-- Inner white pith ring -->
+    <circle cx="214" cy="116" r="34" fill="#FEF9C3" />
+    <!-- Center core hub -->
+    <circle cx="214" cy="116" r="4.5" fill="#FEF9C3" stroke="#FDE047" stroke-width="1" />
+
+    <!-- 8 Segments in Translucent Lemon Yellow -->
+    <path d="M 212 110 L 206 88 C 211 87 217 87 222 88 L 216 110 Z" fill="#FDE047" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 219 112 L 235 95 C 239 99 242 103 244 108 L 222 116 Z" fill="#FACC15" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 221 118 L 244 121 C 244 126 242 131 239 135 L 219 122 Z" fill="#FDE047" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 216 122 L 232 138 C 228 142 222 145 217 146 L 212 124 Z" fill="#EAB308" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 210 122 L 205 146 C 200 144 194 141 190 137 L 206 121 Z" fill="#EAB308" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 207 116 L 184 121 C 184 116 186 111 190 106 L 209 113 Z" fill="#FDE047" stroke="#FEF9C3" stroke-width="2" />
+    <path d="M 210 111 L 194 96 C 198 92 203 89 208 88 L 213 109 Z" fill="#FDE047" stroke="#FEF9C3" stroke-width="2" />
+
+    <!-- 2 Small lemon seeds near center -->
+    <ellipse cx="222" cy="110" rx="3.5" ry="1.8" transform="rotate(-30 222 110)" fill="#FDF4DC" stroke="#CA8A04" stroke-width="0.8" />
+    <ellipse cx="206" cy="122" rx="3.5" ry="1.8" transform="rotate(45 206 122)" fill="#FDF4DC" stroke="#CA8A04" stroke-width="0.8" />
+  </g>
+</svg>

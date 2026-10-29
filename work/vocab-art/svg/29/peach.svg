@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:peach" data-archetype="hero-object">
+  <defs>
+    <!-- Peach: velvety fuzzy pastel pink-and-yellow peach with deep characteristic cleft, green leaf on twig, cut half with furrowed brain-like pit -->
+    <clipPath id="peach-body-clip">
+      <path d="M 112 70 C 130 68 158 84 158 114 C 158 144 130 160 112 160 C 94 160 66 144 66 114 C 66 84 94 68 112 70 Z" />
+    </clipPath>
+    <clipPath id="peach-half-clip">
+      <ellipse cx="204" cy="118" rx="38" ry="36" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Twig & Long Slender Peach Leaves -->
+  <g transform="translate(112, 70)">
+    <path d="M 0 0 C -2 -10 4 -20 12 -26" stroke="#78350F" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C -2 -10 4 -20 12 -26" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Leaf 1 (curving left) -->
+    <path d="M 4 -12 C -14 -22 -26 -16 -34 -4 C -22 0 -10 -4 4 -12 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Leaf 2 (slender, curving right) -->
+    <path d="M 10 -20 C 26 -28 42 -22 50 -10 C 36 -6 22 -10 10 -20 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Whole Velvety Peach on Left -->
+  <g clip-path="url(#peach-body-clip)">
+    <!-- Base sunny cream yellow -->
+    <rect x="60" y="65" width="105" height="100" fill="#FEF08A" />
+    <!-- Soft fuzzy coral-pink blush cheek -->
+    <ellipse cx="120" cy="112" rx="36" ry="36" fill="#FB7185" opacity="0.85" />
+    <ellipse cx="128" cy="116" rx="22" ry="24" fill="#F43F5E" opacity="0.6" />
+    <!-- Underside shadow -->
+    <path d="M 68 130 C 82 156 138 156 156 130 L 156 162 L 68 162 Z" fill="#E11D48" opacity="0.6" />
+    <!-- Soft matte velvety bloom highlight -->
+    <ellipse cx="94" cy="94" rx="16" ry="20" transform="rotate(-20 94 94)" fill="#FFFBEB" opacity="0.8" />
+  </g>
+  <!-- Contour -->
+  <path d="M 112 70 C 130 68 158 84 158 114 C 158 144 130 160 112 160 C 94 160 66 144 66 114 C 66 84 94 68 112 70 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Iconic Deep Peach Cleft/Furrow Line -->
+  <path d="M 112 70 C 106 92 106 138 112 160" stroke="#E11D48" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <ellipse cx="112" cy="71" rx="6" ry="2" fill="#BE123C" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Peach Half in Foreground Right (Showing Furrowed Craggy Pit) -->
+  <ellipse cx="204" cy="118" rx="38" ry="36" fill="#FB7185" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#peach-half-clip)">
+    <!-- Pale blush-cream interior flesh -->
+    <ellipse cx="204" cy="118" rx="34" ry="32" fill="#FEF3C7" />
+    <!-- Red starburst rays surrounding pit -->
+    <ellipse cx="204" cy="118" rx="22" ry="22" fill="#F43F5E" opacity="0.75" />
+
+    <!-- Craggy Furrowed Woody Peach Stone Pit -->
+    <path d="M 204 96 C 218 102 222 120 216 132 C 210 142 196 142 192 132 C 186 120 190 102 204 96 Z" fill="#854D0E" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Brain-like deeply pitted convoluted stone texture -->
+    <path d="M 198 106 C 204 110 200 118 206 122 M 210 104 C 206 112 212 118 208 128 M 202 128 Q 206 134 204 136" stroke="#451A03" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

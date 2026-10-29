@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:starfruit" data-archetype="hero-object">
+  <defs>
+    <!-- Starfruit (Carambola): 5 longitudinal ribs with green edges, cut slice creating iconic 5-pointed star -->
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="52" ry="9" fill="#DDD4C3" />
+  <ellipse cx="216" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole 5-Ribbed Starfruit Lying on Left -->
+  <g transform="translate(112, 114) rotate(-15)">
+    <!-- Base waxy yellow elongated fruit -->
+    <path d="M -54 0 C -40 -28 30 -28 50 -10 C 58 4 48 24 30 26 C -10 28 -40 22 -54 0 Z" fill="#FACC15" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Top Longitudinal Wing / Rib with Green Edge -->
+    <path d="M -54 0 C -36 -24 24 -24 48 -10" stroke="#65A30D" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M -54 0 C -36 -24 24 -24 48 -10" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Center Longitudinal Ridge Facing Viewer -->
+    <path d="M -54 0 C -30 -4 14 0 42 16" stroke="#65A30D" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M -54 0 C -30 -4 14 0 42 16" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Bottom Wing Rib -->
+    <path d="M -54 0 C -34 20 14 26 30 26" stroke="#4D7C0F" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Translucent waxy yellow shading facets between ribs -->
+    <path d="M -48 -2 C -28 -16 18 -16 42 -6 L 38 6 C 14 -4 -26 -4 -48 -2 Z" fill="#FEF08A" opacity="0.85" />
+    <path d="M -48 2 C -24 4 14 4 36 16 L 26 22 C 8 20 -28 14 -48 2 Z" fill="#EAB308" />
+
+    <!-- Specular gleam on waxy skin -->
+    <ellipse cx="-4" cy="-8" rx="16" ry="4" transform="rotate(4 -4 -8)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+
+  <!-- Cut Star Slice in Foreground Right (Perfect 5-Pointed Star Silhouette!) -->
+  <g transform="translate(216, 120)">
+    <!-- 5-Pointed Star Cross Section Path -->
+    <!-- Star points: (0,-36), (24,-12), (36,18), (-8,36), (-34,10) with concave indentations between -->
+    <path d="M 0 -36 C 4 -20 16 -18 24 -12 C 14 -4 16 8 36 18 C 22 18 12 24 6 36 C -2 24 -12 22 -22 32 C -18 20 -26 12 -36 10 C -22 4 -20 -6 -24 -20 C -12 -16 -4 -24 0 -36 Z" fill="#FACC15" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Translucent interior yellow star pulp -->
+    <path d="M 0 -31 C 3 -18 13 -15 20 -10 C 12 -3 14 6 30 15 C 19 15 10 20 5 30 C -1 20 -10 18 -18 26 C -15 17 -21 10 -30 8 C -18 3 -16 -5 -20 -16 C -10 -13 -3 -20 0 -31 Z" fill="#FEF08A" />
+
+    <!-- Green tips on each of the 5 points -->
+    <polygon points="0,-36 -4,-28 4,-28" fill="#65A30D" />
+    <polygon points="24,-12 18,-8 20,-16" fill="#65A30D" />
+    <polygon points="36,18 28,14 30,22" fill="#65A30D" />
+    <polygon points="6,36 1,28 9,28" fill="#65A30D" />
+    <polygon points="-22,32 -16,26 -24,26" fill="#65A30D" />
+    <polygon points="-36,10 -28,8 -30,14" fill="#65A30D" />
+    <polygon points="-24,-20 -18,-16 -24,-12" fill="#65A30D" />
+
+    <!-- Central translucent core star with 2 tiny seeds -->
+    <circle cx="0" cy="2" r="5" fill="#ECFCCB" stroke="#84CC16" stroke-width="1.2" />
+    <ellipse cx="-2" cy="0" rx="1.2" ry="2.2" transform="rotate(-30 -2 0)" fill="#78350F" />
+    <ellipse cx="2" cy="3" rx="1.2" ry="2.2" transform="rotate(40 2 3)" fill="#78350F" />
+  </g>
+</svg>

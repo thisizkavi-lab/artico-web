@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:walnut" data-archetype="hero-object">
+  <defs>
+    <!-- Walnut: deeply furrowed wrinkly woody shell with central seam, cracked half showing brain-like convoluted kernel -->
+    <clipPath id="wn-shell-clip">
+      <ellipse cx="110" cy="114" rx="44" ry="46" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="110" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="206" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Furrowed Woody Walnut Shell on Left -->
+  <g clip-path="url(#wn-shell-clip)">
+    <!-- Base golden woody brown -->
+    <rect x="60" y="60" width="105" height="110" fill="#B45309" />
+    <!-- Underside shadow -->
+    <path d="M 68 132 C 82 158 136 158 154 132 L 154 165 L 68 165 Z" fill="#451A03" />
+
+    <!-- Deep Convoluted Brain-like Shell Furrows & Grooves -->
+    <!-- Left lobe furrows -->
+    <path d="M 88 84 C 76 96 82 110 74 124 M 94 92 C 86 104 92 118 84 132 M 102 80 C 94 98 98 126 96 148" stroke="#451A03" stroke-width="2.4" stroke-linecap="round" fill="none" />
+    <!-- Right lobe furrows -->
+    <path d="M 132 84 C 144 96 138 110 146 124 M 126 92 C 134 104 128 118 136 132 M 118 80 C 126 98 122 126 124 148" stroke="#451A03" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+    <!-- Specular highlight ridges -->
+    <path d="M 86 86 C 80 94 84 106 80 114" stroke="#FDE68A" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M 104 90 C 102 108 102 124 104 136" stroke="#FDE68A" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+  <!-- Shell Outer Contour -->
+  <ellipse cx="110" cy="114" rx="44" ry="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Prominent Raised Equatorial Seam Ridge dividing the two shell halves -->
+  <path d="M 110 68 C 108 92 108 138 110 160" stroke="#78350F" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <path d="M 110 68 C 108 92 108 138 110 160" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+  <!-- Small pointed shell tip at top and bottom -->
+  <polygon points="110,68 106,64 114,64" fill="#78350F" stroke="#1E2A3B" stroke-width="1.5" />
+  <polygon points="110,160 106,164 114,164" fill="#78350F" stroke="#1E2A3B" stroke-width="1.5" />
+
+  <!-- Cracked Open Shell Half with Intricate Brain-Like Walnut Kernel on Right -->
+  <!-- Outer shell cradle underneath -->
+  <g transform="translate(206, 122)">
+    <ellipse cx="0" cy="0" rx="40" ry="38" fill="#78350F" stroke="#1E2A3B" stroke-width="2.6" />
+    <ellipse cx="0" cy="0" rx="35" ry="34" fill="#451A03" />
+
+    <!-- Two-Lobed Convoluted Walnut Kernel (Brain-like lobes!) -->
+    <!-- Left lobe -->
+    <path d="M -6 -24 C -22 -24 -32 -10 -26 8 C -22 18 -10 16 -12 24 C -14 30 -6 30 -2 26 C -4 14 -4 -6 -6 -24 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Right lobe -->
+    <path d="M 6 -24 C 22 -24 32 -10 26 8 C 22 18 10 16 12 24 C 14 30 6 30 2 26 C 4 14 4 -6 6 -24 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Central woody septum dividing wall -->
+    <rect x="-2" y="-28" width="4" height="54" rx="2" fill="#78350F" stroke="#1E2A3B" stroke-width="1.5" />
+
+    <!-- Convoluted butterfly / brain ripples on kernel lobes -->
+    <path d="M -18 -14 Q -10 -8 -16 2 Q -22 12 -12 18" stroke="#92400E" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 18 -14 Q 10 -8 16 2 Q 22 12 12 18" stroke="#92400E" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Rich roasted highlight sheen -->
+    <ellipse cx="-16" cy="-8" rx="4" ry="7" transform="rotate(-20 -16 -8)" fill="#FDE68A" opacity="0.8" />
+    <ellipse cx="16" cy="-8" rx="4" ry="7" transform="rotate(20 16 -8)" fill="#FDE68A" opacity="0.8" />
+  </g>
+</svg>

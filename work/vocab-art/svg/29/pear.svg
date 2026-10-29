@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:pear" data-archetype="hero-object">
+  <defs>
+    <!-- Pear: European pyriform teardrop bell silhouette, curved woody stem, vertical cut half showing slender core and seeds -->
+    <clipPath id="pear-body-clip">
+      <path d="M 112 60 C 122 60 128 72 126 90 C 126 102 152 114 154 136 C 156 156 136 166 112 166 C 88 166 68 156 70 136 C 72 114 98 102 98 90 C 96 72 102 60 112 60 Z" />
+    </clipPath>
+    <clipPath id="pear-half-clip">
+      <path d="M 212 70 C 220 70 224 80 222 96 C 222 106 244 116 246 134 C 248 152 232 160 212 160 C 192 160 176 152 178 134 C 180 116 202 106 202 96 C 200 80 204 70 212 70 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="46" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="162" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Curved Woody Stem & Green Leaf on Whole Pear -->
+  <g transform="translate(112, 60)">
+    <!-- Gracefully curved woody stem -->
+    <path d="M 0 0 C 4 -14 16 -24 30 -28" stroke="#78350F" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C 4 -14 16 -24 30 -28" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Leaf -->
+    <path d="M 12 -14 C 26 -22 42 -16 48 -4 C 36 2 22 -2 12 -14 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Whole Pyriform Pear on Left -->
+  <g clip-path="url(#pear-body-clip)">
+    <!-- Base chartreuse yellow-green skin -->
+    <rect x="65" y="55" width="95" height="115" fill="#D9F99D" />
+    <!-- Sunny golden-amber wash on bulbous base -->
+    <ellipse cx="106" cy="134" rx="42" ry="30" fill="#FACC15" opacity="0.7" />
+    <!-- Subtle warm orange-red blush cheek -->
+    <ellipse cx="94" cy="128" rx="24" ry="22" fill="#FB923C" opacity="0.4" />
+    <!-- Underside shade -->
+    <path d="M 70 144 C 84 164 136 166 154 144 L 154 168 L 70 168 Z" fill="#65A30D" />
+    <!-- Pear freckles / russet lenticel dots -->
+    <circle cx="88" cy="122" r="1" fill="#78350F" />
+    <circle cx="102" cy="142" r="1" fill="#78350F" />
+    <circle cx="126" cy="132" r="1" fill="#78350F" />
+    <circle cx="118" cy="104" r="1" fill="#78350F" />
+    <circle cx="106" cy="80" r="1" fill="#78350F" />
+    <!-- Soft specular highlight -->
+    <ellipse cx="96" cy="94" rx="10" ry="14" transform="rotate(-15 96 94)" fill="#FFFFFF" opacity="0.65" />
+  </g>
+  <!-- Pear Contour -->
+  <path d="M 112 60 C 122 60 128 72 126 90 C 126 102 152 114 154 136 C 156 156 136 166 112 166 C 88 166 68 156 70 136 C 72 114 98 102 98 90 C 96 72 102 60 112 60 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Cut Pear Half in Foreground Right (Showing Slender Core & Seeds) -->
+  <path d="M 212 70 C 220 70 224 80 222 96 C 222 106 244 116 246 134 C 248 152 232 160 212 160 C 192 160 176 152 178 134 C 180 116 202 106 202 96 C 200 80 204 70 212 70 Z" fill="#D9F99D" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <g clip-path="url(#pear-half-clip)">
+    <!-- Pale juicy white-cream pear interior flesh -->
+    <rect x="175" y="65" width="75" height="100" fill="#FFFBEB" />
+
+    <!-- Slender central vascular core line -->
+    <line x1="212" y1="74" x2="212" y2="124" stroke="#D97706" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Core seed cavity bulb at bottom -->
+    <ellipse cx="212" cy="132" rx="12" ry="14" fill="#FEF3C7" stroke="#CA8A04" stroke-width="1.5" />
+
+    <!-- Two black teardrop pear seeds inside core -->
+    <path d="M 208 132 C 206 128 209 126 211 129 C 211 133 209 135 208 135 C 207 135 207 133 208 132 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="0.8" />
+    <path d="M 216 132 C 218 128 215 126 213 129 C 213 133 215 135 216 135 C 217 135 217 133 216 132 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="0.8" />
+  </g>
+</svg>

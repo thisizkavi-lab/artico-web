@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:lychees" data-archetype="hero-object">
+  <defs>
+    <!-- Lychees: bumpy textured pinkish-red brittle shell on twig, plus peeled lychee showing translucent pearl-white aril and dark seed -->
+    <clipPath id="lychee-whole-clip">
+      <circle cx="108" cy="116" r="38" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="108" cy="162" rx="44" ry="8" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Twig & Glossy Lanceolate Green Leaves in Background -->
+  <g transform="translate(108, 48)">
+    <path d="M 0 30 C 0 10 14 -4 28 -8" stroke="#78350F" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 30 C 0 10 14 -4 28 -8" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Leaf 1 (Left) -->
+    <path d="M 6 18 C -8 10 -20 12 -28 22 C -18 28 -6 26 6 18 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Leaf 2 (Right) -->
+    <path d="M 18 4 C 32 -4 46 -2 52 10 C 38 12 26 10 18 4 Z" fill="#166534" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Whole Bumpy Textured Lychee on Left -->
+  <g clip-path="url(#lychee-whole-clip)">
+    <!-- Base vibrant rose-red shell -->
+    <circle cx="108" cy="116" r="38" fill="#E11D48" />
+    <!-- Upper brighter rose cheek -->
+    <ellipse cx="100" cy="106" rx="28" ry="26" fill="#F43F5E" />
+    <!-- Underside shade -->
+    <path d="M 70 128 C 82 152 134 154 146 130 L 146 156 L 70 156 Z" fill="#9F1239" />
+
+    <!-- Polygonal / pebbled bumpy shell texture scales -->
+    <circle cx="86" cy="100" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="98" cy="94" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="114" cy="92" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="128" cy="102" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="84" cy="116" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="98" cy="112" r="2.8" fill="#FB7185" stroke="#9F1239" stroke-width="1" />
+    <circle cx="114" cy="110" r="2.8" fill="#FB7185" stroke="#9F1239" stroke-width="1" />
+    <circle cx="128" cy="118" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="92" cy="130" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="106" cy="128" r="2.8" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="120" cy="130" r="2.5" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+    <circle cx="106" cy="142" r="2.2" fill="#BE123C" stroke="#9F1239" stroke-width="1" />
+  </g>
+  <!-- Contour -->
+  <circle cx="108" cy="116" r="38" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Stem attachment button -->
+  <circle cx="108" cy="78" r="3" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Peeled Lychee in Foreground Right (Cracked Shell + Translucent Pearl-White Aril + Seed) -->
+  <!-- Broken brittle shell cup in lower half -->
+  <g transform="translate(204, 122)">
+    <!-- Translucent Pearl-White Glistening Aril Fruit Body -->
+    <ellipse cx="0" cy="-6" rx="28" ry="30" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.4" />
+    <!-- Soft gelatinous translucency shading -->
+    <ellipse cx="0" cy="-6" rx="22" ry="24" fill="#E2E8F0" opacity="0.6" />
+    <ellipse cx="-4" cy="-12" rx="14" ry="16" fill="#FFFFFF" />
+
+    <!-- Dark Mahogany Brown Seed visible inside translucence -->
+    <ellipse cx="0" cy="-6" rx="10" ry="15" fill="#451A03" stroke="#1E2A3B" stroke-width="1.8" />
+    <ellipse cx="-2" cy="-9" rx="3" ry="5" fill="#78350F" />
+    <circle cx="-3" cy="-10" r="1.2" fill="#FFFFFF" />
+
+    <!-- Glistening fruit highlight -->
+    <ellipse cx="-12" cy="-16" rx="5" ry="8" transform="rotate(-25 -12 -16)" fill="#FFFFFF" />
+
+    <!-- Cracked Red Shell Cupping the Bottom Half -->
+    <path d="M -30 2 C -32 20 -18 34 0 34 C 18 34 32 20 30 2 L 24 8 L 16 0 L 8 6 L 0 0 L -8 6 L -16 0 L -24 8 Z" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+    <!-- Bumpy texture on cracked shell cup -->
+    <circle cx="-16" cy="18" r="2.2" fill="#BE123C" />
+    <circle cx="0" cy="22" r="2.2" fill="#BE123C" />
+    <circle cx="16" cy="18" r="2.2" fill="#BE123C" />
+  </g>
+</svg>

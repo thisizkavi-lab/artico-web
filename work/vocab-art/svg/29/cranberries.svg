@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:cranberries" data-archetype="hero-object">
+  <defs>
+    <!-- Cranberries: glossy firm deep crimson-red berries on slender twig with tiny oval leaves, 4-lobed calyx eye at tip -->
+    <clipPath id="cran-main-clip">
+      <circle cx="120" cy="116" r="40" />
+    </clipPath>
+    <clipPath id="cran-sec-clip">
+      <circle cx="196" cy="126" r="32" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="120" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="196" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Delicate Woody Cranberry Twig with Tiny Evergreen Leaves -->
+  <g transform="translate(100, 48)">
+    <!-- Thin wiry vine stem -->
+    <path d="M -10 16 C 8 4 32 -4 54 8 C 76 20 98 16 112 4" stroke="#78350F" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    <path d="M -10 16 C 8 4 32 -4 54 8 C 76 20 98 16 112 4" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+    <!-- Tiny Leathery Oval Leaves along the sprig -->
+    <!-- Leaf 1 -->
+    <path d="M 12 6 C 8 -4 16 -12 26 -6 C 26 4 18 8 12 6 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <!-- Leaf 2 -->
+    <path d="M 34 2 C 34 -8 44 -14 50 -6 C 48 4 40 6 34 2 Z" fill="#166534" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <!-- Leaf 3 -->
+    <path d="M 72 16 C 80 8 92 10 94 20 C 86 24 76 22 72 16 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+
+  <!-- Primary Cranberry (Whole, Center-Left) -->
+  <g clip-path="url(#cran-main-clip)">
+    <!-- Base rich scarlet/ruby red -->
+    <circle cx="120" cy="116" r="40" fill="#DC2626" />
+    <!-- Upper glossy bright red zone -->
+    <ellipse cx="112" cy="104" rx="32" ry="26" fill="#EF4444" />
+    <!-- Deep burgundy underside shadow -->
+    <path d="M 80 130 C 92 154 140 156 160 134 L 160 156 L 80 156 Z" fill="#7F1D1D" />
+    <!-- Glossy high-contrast specular reflections (firm taut skin) -->
+    <ellipse cx="104" cy="94" rx="14" ry="18" transform="rotate(-28 104 94)" fill="#FCA5A5" opacity="0.85" />
+    <ellipse cx="100" cy="88" rx="5" ry="8" transform="rotate(-28 100 88)" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  <!-- Contour -->
+  <circle cx="120" cy="116" r="40" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Calyx star eye at top/front -->
+  <g transform="translate(132, 92) rotate(20)">
+    <circle cx="0" cy="0" rx="4" ry="2.5" fill="#450A0A" stroke="#1E2A3B" stroke-width="1.4" />
+    <polygon points="0,-4 -1,-6 1,-6" fill="#450A0A" />
+    <polygon points="4,0 6,-1 6,1" fill="#450A0A" />
+    <polygon points="0,4 -1,6 1,6" fill="#450A0A" />
+    <polygon points="-4,0 -6,-1 -6,1" fill="#450A0A" />
+  </g>
+
+  <!-- Second Cranberry in Foreground Right -->
+  <g clip-path="url(#cran-sec-clip)">
+    <!-- Base deep crimson -->
+    <circle cx="196" cy="126" r="32" fill="#B91C1C" />
+    <ellipse cx="190" cy="116" rx="24" ry="20" fill="#DC2626" />
+    <path d="M 164 136 C 174 154 212 156 228 138 L 228 158 L 164 158 Z" fill="#7F1D1D" />
+    <!-- Glossy reflection -->
+    <ellipse cx="184" cy="110" rx="10" ry="12" transform="rotate(-25 184 110)" fill="#F87171" opacity="0.85" />
+    <ellipse cx="182" cy="106" rx="3.5" ry="5" transform="rotate(-25 182 106)" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  <!-- Contour -->
+  <circle cx="196" cy="126" r="32" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Calyx eye -->
+  <g transform="translate(210, 134) rotate(-35)">
+    <circle cx="0" cy="0" rx="3.5" ry="2" fill="#450A0A" stroke="#1E2A3B" stroke-width="1.2" />
+  </g>
+
+  <!-- Third Small Baby Cranberry Tucked Behind -->
+  <circle cx="164" cy="144" r="18" fill="#991B1B" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="160" cy="138" r="3" fill="#F87171" opacity="0.8" />
+  <circle cx="159" cy="137" r="1" fill="#FFFFFF" />
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:watermelon" data-archetype="hero-object">
+  <defs>
+    <!-- Watermelon: dark green wavy jagged stripes over pale green rind, thick cut crescent slice with ruby red flesh and black seeds -->
+    <clipPath id="wm-whole-clip">
+      <ellipse cx="106" cy="110" r="46" />
+    </clipPath>
+    <clipPath id="wm-wedge-clip">
+      <path d="M 172 138 C 182 98 220 88 252 108 C 256 138 228 158 196 158 C 182 158 176 150 172 138 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="106" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="164" rx="44" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Striped Watermelon on Left -->
+  <g clip-path="url(#wm-whole-clip)">
+    <!-- Base light green melon rind -->
+    <circle cx="106" cy="110" r="46" fill="#86EFAC" />
+    <path d="M 60 124 C 74 152 126 158 152 136 L 152 158 L 60 158 Z" fill="#4ADE80" opacity="0.6" />
+
+    <!-- Dark Green Jagged / Wavy Watermelon Stripes -->
+    <!-- Stripe 1 (Left) -->
+    <path d="M 72 84 Q 68 110 74 136 Q 78 126 76 110 Q 80 94 72 84 Z" fill="#15803D" />
+    <!-- Stripe 2 -->
+    <path d="M 88 68 Q 84 94 90 120 Q 86 140 92 154 L 98 152 Q 92 136 96 116 Q 90 92 94 68 Z" fill="#15803D" />
+    <!-- Stripe 3 (Center) -->
+    <path d="M 106 64 Q 102 90 108 116 Q 104 138 108 156 L 114 156 Q 110 136 114 114 Q 108 88 112 64 Z" fill="#15803D" />
+    <!-- Stripe 4 -->
+    <path d="M 124 68 Q 120 92 126 118 Q 122 138 126 152 L 132 150 Q 128 134 132 114 Q 126 90 130 68 Z" fill="#15803D" />
+    <!-- Stripe 5 (Right) -->
+    <path d="M 142 82 Q 138 108 144 134 Q 146 122 144 108 Q 148 94 142 82 Z" fill="#15803D" />
+  </g>
+  <!-- Contour -->
+  <circle cx="106" cy="110" r="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Curly green vine stem on top -->
+  <path d="M 106 64 C 104 52 114 44 118 48 C 122 52 116 58 110 56" stroke="#15803D" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <path d="M 106 64 C 104 52 114 44 118 48 C 122 52 116 58 110 56" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+  <!-- Thick Cut Watermelon Wedge in Foreground Right (Ruby Red Flesh + Black Seeds) -->
+  <g clip-path="url(#wm-wedge-clip)">
+    <!-- Dark green outer rind layer -->
+    <rect x="168" y="90" width="90" height="72" fill="#15803D" />
+    <!-- White-green inner rind border -->
+    <path d="M 178 138 C 185 106 218 98 246 112 C 250 136 226 152 198 152 C 186 152 182 146 178 138 Z" fill="#ECFCCB" />
+    <!-- Ruby red juicy watermelon flesh -->
+    <path d="M 182 136 C 188 110 214 104 242 116 C 245 134 224 148 200 148 C 190 148 186 144 182 136 Z" fill="#EF4444" />
+    <path d="M 186 134 C 192 116 212 110 236 120 C 238 130 222 144 202 144 Z" fill="#DC2626" />
+
+    <!-- Teardrop Black Watermelon Seeds Scattered in Red Flesh -->
+    <!-- Seed 1 -->
+    <ellipse cx="196" cy="128" rx="2" ry="3.5" transform="rotate(-35 196 128)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Seed 2 -->
+    <ellipse cx="206" cy="122" rx="2" ry="3.5" transform="rotate(-15 206 122)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Seed 3 -->
+    <ellipse cx="218" cy="120" rx="2" ry="3.5" transform="rotate(20 218 120)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Seed 4 -->
+    <ellipse cx="228" cy="124" rx="2" ry="3.5" transform="rotate(40 228 124)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Seed 5 (Lower) -->
+    <ellipse cx="212" cy="132" rx="2" ry="3.5" transform="rotate(10 212 132)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Seed 6 -->
+    <ellipse cx="202" cy="136" rx="2" ry="3.5" transform="rotate(-20 202 136)" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+
+    <!-- Seed specular glints -->
+    <circle cx="205" cy="121" r="0.8" fill="#FFFFFF" />
+    <circle cx="217" cy="119" r="0.8" fill="#FFFFFF" />
+  </g>
+  <!-- Wedge Contour -->
+  <path d="M 172 138 C 182 98 220 88 252 108 C 256 138 228 158 196 158 C 182 158 176 150 172 138 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+</svg>

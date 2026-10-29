@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:redcurrants" data-archetype="hero-object">
+  <defs>
+    <!-- Redcurrants: translucent glowing ruby-red spherical berries hanging in a raceme stem, tiny calyx star at the tip of each berry, 3-lobed currant leaf -->
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="144" cy="162" rx="60" ry="9" fill="#DDD4C3" />
+
+  <!-- Tri-lobed Currant Leaf in Upper Left -->
+  <g transform="translate(64, 44)">
+    <path d="M 28 28 C 12 18 -4 20 -8 34 C -12 48 4 60 18 56 C 14 70 28 84 42 78 C 56 82 72 70 66 54 C 80 56 94 44 90 30 C 86 16 70 18 56 26 C 46 14 36 14 28 28 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <path d="M 40 46 L -2 36 M 40 46 L 36 74 M 40 46 L 84 34" stroke="#365314" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Currant Sprig Central Stem Arching Gracefully Across -->
+  <path d="M 104 68 C 120 72 144 88 162 118 C 172 136 186 150 200 154" stroke="#84CC16" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 104 68 C 120 72 144 88 162 118 C 172 136 186 150 200 154" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Individual Glowing Translucent Ruby Berries on Little Pedicels -->
+  <!-- Berry 1 (Top left) -->
+  <line x1="120" y1="74" x2="114" y2="90" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="112" cy="98" r="14" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Inner translucent glow & seed -->
+  <ellipse cx="110" cy="98" rx="3" ry="4" fill="#9F1239" opacity="0.6" />
+  <circle cx="108" cy="94" r="3" fill="#FDA4AF" opacity="0.85" />
+  <circle cx="107" cy="93" r="1.2" fill="#FFFFFF" />
+  <circle cx="112" cy="110" r="1.8" fill="#450A0A" />
+
+  <!-- Berry 2 (Upper center) -->
+  <line x1="138" y1="84" x2="148" y2="94" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="154" cy="102" r="16" fill="#F43F5E" stroke="#1E2A3B" stroke-width="2.4" />
+  <ellipse cx="152" cy="102" rx="3.5" ry="4.5" fill="#BE123C" opacity="0.6" />
+  <circle cx="148" cy="96" r="3.5" fill="#FECDD3" opacity="0.9" />
+  <circle cx="147" cy="95" r="1.4" fill="#FFFFFF" />
+  <circle cx="160" cy="116" r="2" fill="#450A0A" />
+
+  <!-- Berry 3 (Center large prominent glowing ruby berry) -->
+  <line x1="148" y1="102" x2="136" y2="116" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="130" cy="128" r="18" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Luminous translucent red core -->
+  <circle cx="128" cy="126" r="14" fill="#FB7185" opacity="0.8" />
+  <!-- Suspended seeds -->
+  <ellipse cx="126" cy="126" rx="4" ry="5" transform="rotate(-15 126 126)" fill="#881337" opacity="0.7" />
+  <circle cx="122" cy="118" r="4" fill="#FFF1F2" opacity="0.9" />
+  <circle cx="121" cy="117" r="1.6" fill="#FFFFFF" />
+  <!-- Dried flower remnant dot -->
+  <circle cx="134" cy="144" r="2.2" fill="#450A0A" stroke="#1E2A3B" stroke-width="1.2" />
+
+  <!-- Berry 4 (Center right) -->
+  <line x1="162" y1="118" x2="176" y2="124" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="186" cy="128" r="15" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.4" />
+  <circle cx="182" cy="122" r="3" fill="#FECDD3" />
+  <circle cx="181" cy="121" r="1.2" fill="#FFFFFF" />
+  <circle cx="192" cy="140" r="1.8" fill="#450A0A" />
+
+  <!-- Berry 5 (Lower center) -->
+  <line x1="166" y1="134" x2="156" y2="144" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="152" cy="154" r="14" fill="#BE123C" stroke="#1E2A3B" stroke-width="2.4" />
+  <circle cx="148" cy="150" r="2.8" fill="#FDA4AF" />
+  <circle cx="147" cy="149" r="1.1" fill="#FFFFFF" />
+
+  <!-- Berry 6 (Tip of stem) -->
+  <circle cx="206" cy="156" r="12" fill="#F43F5E" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="202" cy="152" r="2.5" fill="#FECDD3" />
+  <circle cx="201" cy="151" r="1" fill="#FFFFFF" />
+
+  <!-- Loose berry on table in foreground left -->
+  <circle cx="92" cy="158" r="13" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.4" />
+  <circle cx="88" cy="154" r="3" fill="#FECDD3" />
+  <circle cx="87" cy="153" r="1.2" fill="#FFFFFF" />
+  <circle cx="94" cy="170" r="1.8" fill="#450A0A" />
+</svg>

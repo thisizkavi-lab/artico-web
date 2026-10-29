@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:pistachio" data-archetype="hero-object">
+  <defs>
+    <!-- Pistachio: pale beige shell smiling open, revealing vibrant green and purple-blush kernel, plus one shelled green kernel -->
+    <clipPath id="pst-kernel-clip">
+      <ellipse cx="120" cy="114" rx="26" ry="22" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="118" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="214" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Primary Smiling Open Pistachio Shell on Left -->
+  <!-- Vibrant Green Kernel Peeking through Shell Aperture -->
+  <g clip-path="url(#pst-kernel-clip)">
+    <!-- Base emerald green roasted nutmeat -->
+    <ellipse cx="120" cy="114" rx="26" ry="22" fill="#84CC16" />
+    <!-- Purple-mauve papery skin blush at top/sides -->
+    <path d="M 96 100 C 104 90 134 90 142 100 C 132 106 106 106 96 100 Z" fill="#9333EA" opacity="0.8" />
+    <ellipse cx="120" cy="118" rx="18" ry="12" fill="#A3E635" />
+    <!-- Kernel crease line -->
+    <path d="M 104 114 Q 120 120 136 114" stroke="#4D7C0F" stroke-width="1.6" fill="none" />
+    <!-- Specular highlight on kernel -->
+    <circle cx="114" cy="108" r="2.5" fill="#ECFCCB" />
+  </g>
+
+  <!-- Left Half-Shell (Pale Ivory/Beige, Framing Kernel) -->
+  <path d="M 82 120 C 76 96 104 74 126 84 C 114 96 106 114 112 136 C 96 142 84 136 82 120 Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 84 124 C 92 136 104 140 112 136" stroke="#CA8A04" stroke-width="2" fill="none" />
+
+  <!-- Right Half-Shell (Open Wing of the "Smile") -->
+  <path d="M 154 120 C 160 96 132 74 110 84 C 122 96 130 114 124 136 C 140 142 152 136 154 120 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 152 124 C 144 136 132 140 124 136" stroke="#CA8A04" stroke-width="2" fill="none" />
+
+  <!-- Shell Base Hinge Junction at Bottom -->
+  <ellipse cx="118" cy="144" rx="10" ry="6" fill="#FDE68A" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Fully Shelled Roasted Green Pistachio Kernel in Foreground Right -->
+  <g transform="translate(214, 126) rotate(-20)">
+    <!-- Oval kernel shape with characteristic notch -->
+    <path d="M -24 6 C -26 -12 -6 -24 14 -18 C 28 -12 28 8 16 20 C 2 28 -20 22 -24 6 Z" fill="#84CC16" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Purple/Reddish-Violet Papery Pellicle Skin Patch -->
+    <path d="M -18 0 C -22 -10 -4 -20 10 -16 C 4 -6 -10 -4 -18 0 Z" fill="#7E22CE" opacity="0.85" />
+    <path d="M 8 -16 C 22 -10 24 6 14 16 C 12 6 2 -4 8 -16 Z" fill="#9333EA" opacity="0.75" />
+
+    <!-- Emerald core highlight -->
+    <ellipse cx="-2" cy="6" rx="14" ry="10" fill="#A3E635" />
+    <!-- Kernel longitudinal natural cleft -->
+    <path d="M -14 6 Q 0 12 14 6" stroke="#4D7C0F" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Specular gleam -->
+    <circle cx="-6" cy="2" r="2.5" fill="#ECFCCB" />
+    <circle cx="-7" cy="1" r="1.2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Empty Shelled Half Cup Lying beside it -->
+  <g transform="translate(244, 148) rotate(45)">
+    <path d="M -12 0 C -12 14 8 20 18 10 C 24 4 20 -8 8 -8 C -4 -8 -12 -6 -12 0 Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+</svg>

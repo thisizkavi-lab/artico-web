@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:coconut" data-archetype="hero-object">
+  <defs>
+    <!-- Coconut: hairy fibrous brown shell with 3 dark eyes, cracked half with pristine white meat and coconut water -->
+    <clipPath id="coco-whole-clip">
+      <ellipse cx="108" cy="112" rx="46" ry="48" />
+    </clipPath>
+    <clipPath id="coco-half-clip">
+      <ellipse cx="206" cy="118" rx="42" ry="42" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="108" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="206" cy="164" rx="44" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Fibrous Hairy Coconut on Left -->
+  <g clip-path="url(#coco-whole-clip)">
+    <!-- Base fibrous brown shell -->
+    <rect x="55" y="60" width="110" height="110" fill="#78350F" />
+    <!-- Underside shadow -->
+    <path d="M 64 130 C 78 158 134 160 154 132 L 154 165 L 64 165 Z" fill="#451A03" />
+    <!-- Lighter warm amber-brown upper zone -->
+    <ellipse cx="98" cy="98" rx="34" ry="32" fill="#92400E" />
+
+    <!-- Coarse coconut fiber strands across shell -->
+    <path d="M 82 78 Q 96 112 88 144" stroke="#451A03" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 104 70 Q 112 110 106 150" stroke="#451A03" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 124 74 Q 132 108 126 142" stroke="#451A03" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 94 90 Q 118 96 138 92" stroke="#451A03" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <path d="M 86 120 Q 114 126 134 118" stroke="#451A03" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  </g>
+  <!-- Coconut Contour -->
+  <ellipse cx="108" cy="112" rx="46" ry="48" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Hairy Bristles Sprouting from the Shell Edge -->
+  <path d="M 66 94 L 58 92 M 64 112 L 56 114 M 68 132 L 60 138 M 150 94 L 158 90 M 154 114 L 162 116 M 150 134 L 158 140" stroke="#78350F" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Iconic 3 Germ Pore "Eyes" on Top of Coconut -->
+  <g transform="translate(104, 82)">
+    <circle cx="-8" cy="0" r="4.5" fill="#291205" stroke="#1E2A3B" stroke-width="1.6" />
+    <circle cx="8" cy="-2" r="4.5" fill="#291205" stroke="#1E2A3B" stroke-width="1.6" />
+    <circle cx="0" cy="10" r="5" fill="#291205" stroke="#1E2A3B" stroke-width="1.6" />
+  </g>
+
+  <!-- Cracked Coconut Half in Foreground Right (Pristine White Meat + Water) -->
+  <!-- Outer jagged brown shell rim -->
+  <ellipse cx="206" cy="118" rx="42" ry="42" fill="#78350F" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#coco-half-clip)">
+    <!-- Dark brown inner shell lining -->
+    <ellipse cx="206" cy="118" rx="39" ry="39" fill="#451A03" />
+
+    <!-- Thick Ring of Pure White Coconut Meat -->
+    <ellipse cx="206" cy="118" rx="36" ry="36" fill="#FFFFFF" />
+
+    <!-- Inner Cavity with Refreshing Coconut Water Pool -->
+    <ellipse cx="206" cy="118" rx="24" ry="24" fill="#E0F2FE" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Water translucence & surface meniscus reflection -->
+    <ellipse cx="206" cy="122" rx="20" ry="16" fill="#BAE6FD" opacity="0.6" />
+    <ellipse cx="200" cy="112" rx="10" ry="5" transform="rotate(-15 200 112)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+</svg>

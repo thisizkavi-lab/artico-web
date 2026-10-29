@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:avocado" data-archetype="hero-object">
+  <defs>
+    <!-- Avocado: pebbled dark green skin, cut half with creamy gradient flesh and large spherical brown pit -->
+    <clipPath id="avo-whole-clip">
+      <path d="M 112 62 C 124 62 130 76 130 96 C 130 110 156 122 156 142 C 156 160 136 168 112 168 C 88 168 68 160 68 142 C 68 122 94 110 94 96 C 94 76 100 62 112 62 Z" />
+    </clipPath>
+    <clipPath id="avo-half-clip">
+      <path d="M 212 66 C 222 66 226 78 226 96 C 226 110 248 120 248 138 C 248 156 232 164 212 164 C 192 164 176 156 176 138 C 176 120 198 110 198 96 C 198 78 202 66 212 66 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="46" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="162" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Whole Dark-Skinned Pebbled Avocado on Left -->
+  <g clip-path="url(#avo-whole-clip)">
+    <!-- Base dark alligator green -->
+    <rect x="65" y="55" width="95" height="120" fill="#14532D" />
+    <!-- Underside shadow -->
+    <path d="M 68 144 C 82 166 136 166 156 142 L 156 170 L 68 170 Z" fill="#052E16" />
+    <!-- Lighter olive green highlight patch on neck -->
+    <ellipse cx="106" cy="94" rx="20" ry="24" fill="#166534" />
+    <!-- Pebbled alligator skin bumps -->
+    <circle cx="86" cy="132" r="1.5" fill="#052E16" />
+    <circle cx="104" cy="144" r="1.5" fill="#052E16" />
+    <circle cx="124" cy="138" r="1.5" fill="#052E16" />
+    <circle cx="138" cy="126" r="1.5" fill="#052E16" />
+    <circle cx="120" cy="106" r="1.5" fill="#052E16" />
+    <circle cx="104" cy="80" r="1.5" fill="#052E16" />
+    <circle cx="116" cy="74" r="1.5" fill="#052E16" />
+    <!-- Subtle specular sheen -->
+    <ellipse cx="98" cy="90" rx="10" ry="14" transform="rotate(-15 98 90)" fill="#22C55E" opacity="0.4" />
+  </g>
+  <!-- Avocado Contour -->
+  <path d="M 112 62 C 124 62 130 76 130 96 C 130 110 156 122 156 142 C 156 160 136 168 112 168 C 88 168 68 160 68 142 C 68 122 94 110 94 96 C 94 76 100 62 112 62 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Small woody stem button -->
+  <circle cx="112" cy="62" r="3" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Avocado Half in Foreground Right (Creamy Flesh + Large Spherical Pit) -->
+  <path d="M 212 66 C 222 66 226 78 226 96 C 226 110 248 120 248 138 C 248 156 232 164 212 164 C 192 164 176 156 176 138 C 176 120 198 110 198 96 C 198 78 202 66 212 66 Z" fill="#14532D" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <g clip-path="url(#avo-half-clip)">
+    <!-- Thin lime green outer ring -->
+    <path d="M 212 70 C 220 70 223 80 223 96 C 223 110 244 120 244 136 C 244 152 230 160 212 160 C 194 160 180 152 180 136 C 180 120 201 110 201 96 C 201 80 204 70 212 70 Z" fill="#84CC16" />
+    <!-- Rich creamy yellow-lime interior flesh -->
+    <path d="M 212 74 C 218 74 220 82 220 96 C 220 110 238 120 238 134 C 238 148 226 156 212 156 C 198 156 186 148 186 134 C 186 120 204 110 204 96 C 204 82 206 74 212 74 Z" fill="#ECFCCB" />
+    <ellipse cx="212" cy="134" rx="28" ry="24" fill="#FEF08A" opacity="0.8" />
+
+    <!-- Pit socket depression shadow -->
+    <circle cx="212" cy="134" r="18" fill="#65A30D" />
+
+    <!-- Large Spherical Smooth Brown Seed Pit -->
+    <circle cx="212" cy="134" r="16" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" />
+    <!-- Pit specular sheen and 3D spherical shading -->
+    <path d="M 200 138 C 206 148 220 148 226 138 C 228 144 220 150 212 150 C 204 150 198 144 200 138 Z" fill="#451A03" />
+    <circle cx="206" cy="128" r="3.5" fill="#B45309" />
+    <circle cx="205" cy="127" r="1.4" fill="#FFFFFF" />
+  </g>
+</svg>

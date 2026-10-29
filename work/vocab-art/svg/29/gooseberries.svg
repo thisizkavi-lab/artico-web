@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:gooseberries" data-archetype="hero-object">
+  <defs>
+    <!-- Gooseberries: translucent striped pale-green skin with longitudinal ribs, dry bristly tail, cut half showing seed pulp -->
+    <clipPath id="gb-whole-clip">
+      <ellipse cx="114" cy="114" rx="42" ry="46" />
+    </clipPath>
+    <clipPath id="gb-half-clip">
+      <circle cx="206" cy="122" r="34" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="114" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="206" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Short Slender Stem & Spiny Branch -->
+  <g transform="translate(114, 68)">
+    <path d="M 0 0 C -4 -12 -2 -22 6 -28" stroke="#65A30D" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C -4 -12 -2 -22 6 -28" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Small thorny spur -->
+    <path d="M 2 -18 L 8 -16" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- Whole Gooseberry (Left) -->
+  <g clip-path="url(#gb-whole-clip)">
+    <!-- Base luminous pale-green flesh -->
+    <ellipse cx="114" cy="114" rx="42" ry="46" fill="#BEF264" />
+    <!-- Underside shadow -->
+    <path d="M 72 130 C 84 156 138 158 156 134 L 156 160 L 72 160 Z" fill="#65A30D" />
+
+    <!-- Iconic Longitudinal Vein Rib Stripes (From stem to blossom end) -->
+    <!-- Center stripe -->
+    <path d="M 114 68 C 112 94 112 134 114 160" stroke="#ECFCCB" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Left stripe 1 -->
+    <path d="M 114 68 C 96 92 96 136 114 160" stroke="#ECFCCB" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Left stripe 2 (outer) -->
+    <path d="M 114 68 C 80 94 80 134 114 160" stroke="#ECFCCB" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    <!-- Right stripe 1 -->
+    <path d="M 114 68 C 132 92 132 136 114 160" stroke="#A3E635" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Right stripe 2 (outer) -->
+    <path d="M 114 68 C 148 94 148 134 114 160" stroke="#84CC16" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+    <!-- Translucent interior seeds glowing through the thin skin -->
+    <ellipse cx="106" cy="108" rx="3" ry="4" fill="#65A30D" opacity="0.6" />
+    <ellipse cx="122" cy="116" rx="3.5" ry="4.5" fill="#65A30D" opacity="0.6" />
+    <ellipse cx="102" cy="126" rx="3" ry="4" fill="#4D7C0F" opacity="0.7" />
+
+    <!-- Specular glow -->
+    <ellipse cx="100" cy="94" rx="14" ry="18" transform="rotate(-20 100 94)" fill="#FFFFFF" opacity="0.6" />
+  </g>
+  <!-- Contour -->
+  <ellipse cx="114" cy="114" rx="42" ry="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Bristly dried brown calyx tail at bottom blossom end -->
+  <g transform="translate(114, 160)">
+    <path d="M -3 0 L -6 6 M 0 0 L 0 8 M 3 0 L 5 6" stroke="#78350F" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Cut Gooseberry Half in Foreground Right -->
+  <circle cx="206" cy="122" r="34" fill="#BEF264" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#gb-half-clip)">
+    <!-- Outer skin rim -->
+    <circle cx="206" cy="122" r="31" fill="#D9F99D" />
+    <!-- Soft gelatinous center -->
+    <circle cx="206" cy="122" r="22" fill="#ECFCCB" />
+
+    <!-- Little brown seeds suspended in translucent green pulp -->
+    <ellipse cx="198" cy="114" rx="3.5" ry="4" transform="rotate(-20 198 114)" fill="#4D7C0F" stroke="#365314" stroke-width="1" />
+    <ellipse cx="214" cy="112" rx="3.5" ry="4" transform="rotate(30 214 112)" fill="#4D7C0F" stroke="#365314" stroke-width="1" />
+    <ellipse cx="216" cy="126" rx="3.5" ry="4" transform="rotate(-15 216 126)" fill="#4D7C0F" stroke="#365314" stroke-width="1" />
+    <ellipse cx="202" cy="132" rx="3.5" ry="4" transform="rotate(40 202 132)" fill="#4D7C0F" stroke="#365314" stroke-width="1" />
+
+    <!-- Pulp radiating lines -->
+    <path d="M 206 122 L 206 96 M 206 122 L 228 110 M 206 122 L 222 136 M 206 122 L 190 136 M 206 122 L 186 112" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+</svg>

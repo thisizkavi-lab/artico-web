@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:kiwi fruit" data-archetype="hero-object">
+  <defs>
+    <!-- Kiwi fruit: fuzzy brown barrel skin with fine bristles, cut cross section with radiant emerald green flesh, white center star, and black seed ring -->
+    <clipPath id="kiwi-body-clip">
+      <ellipse cx="112" cy="114" rx="44" ry="46" />
+    </clipPath>
+    <clipPath id="kiwi-slice-clip">
+      <circle cx="204" cy="118" rx="38" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Fuzzy Brown Kiwi Fruit on Left -->
+  <g clip-path="url(#kiwi-body-clip)">
+    <!-- Base fuzzy brown skin -->
+    <rect x="60" y="60" width="105" height="110" fill="#78350F" />
+    <ellipse cx="102" cy="104" rx="36" ry="34" fill="#92400E" />
+    <path d="M 68 132 C 82 158 136 158 156 132 L 156 165 L 68 165 Z" fill="#451A03" />
+
+    <!-- Fuzzy brown skin bristles / hair texture across surface -->
+    <line x1="84" y1="92" x2="88" y2="90" stroke="#B45309" stroke-width="1.4" stroke-linecap="round" />
+    <line x1="102" y1="84" x2="106" y2="82" stroke="#B45309" stroke-width="1.4" stroke-linecap="round" />
+    <line x1="124" y1="96" x2="128" y2="94" stroke="#B45309" stroke-width="1.4" stroke-linecap="round" />
+    <line x1="92" y1="120" x2="96" y2="118" stroke="#451A03" stroke-width="1.4" stroke-linecap="round" />
+    <line x1="116" y1="130" x2="120" y2="128" stroke="#451A03" stroke-width="1.4" stroke-linecap="round" />
+    <line x1="136" y1="114" x2="140" y2="112" stroke="#451A03" stroke-width="1.4" stroke-linecap="round" />
+  </g>
+  <!-- Contour -->
+  <ellipse cx="112" cy="114" rx="44" ry="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Fine Fuzz Sprouting from Outer Edge of Whole Kiwi -->
+  <path d="M 68 94 L 62 92 M 66 112 L 60 114 M 70 132 L 64 136 M 154 94 L 160 92 M 156 114 L 162 116 M 152 134 L 158 138" stroke="#78350F" stroke-width="1.8" stroke-linecap="round" />
+  <!-- Small dried stem nub on top -->
+  <ellipse cx="112" cy="68" rx="6" ry="2.5" fill="#451A03" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Round Kiwi Slice in Foreground Right (Iconic Emerald Flesh + Seed Ring) -->
+  <circle cx="204" cy="118" rx="38" fill="#78350F" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#kiwi-slice-clip)">
+    <!-- Thin brown fuzzy skin rim -->
+    <circle cx="204" cy="118" rx="35" fill="#65A30D" />
+    <!-- Radiant emerald green translucent pulp -->
+    <circle cx="204" cy="118" rx="32" fill="#84CC16" />
+
+    <!-- Radiating Fine White Ray Fibers -->
+    <path d="M 204 118 L 204 90 M 204 118 L 222 96 M 204 118 L 232 118 M 204 118 L 222 138 M 204 118 L 204 146 M 204 118 L 186 138 M 204 118 L 176 118 M 204 118 L 186 96" stroke="#D9F99D" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Creamy Oval Center Core Hub -->
+    <ellipse cx="204" cy="118" rx="11" ry="8" fill="#ECFCCB" stroke="#D9F99D" stroke-width="1.2" />
+
+    <!-- Ring of Tiny Elongated Black Kiwi Seeds Radiating around the Core -->
+    <ellipse cx="194" cy="106" rx="1.4" ry="2.4" transform="rotate(-40 194 106)" fill="#1C1917" />
+    <ellipse cx="204" cy="102" rx="1.4" ry="2.4" fill="#1C1917" />
+    <ellipse cx="214" cy="106" rx="1.4" ry="2.4" transform="rotate(40 214 106)" fill="#1C1917" />
+    <ellipse cx="220" cy="114" rx="1.4" ry="2.4" transform="rotate(75 220 114)" fill="#1C1917" />
+    <ellipse cx="218" cy="124" rx="1.4" ry="2.4" transform="rotate(110 218 124)" fill="#1C1917" />
+    <ellipse cx="210" cy="130" rx="1.4" ry="2.4" transform="rotate(145 210 130)" fill="#1C1917" />
+    <ellipse cx="200" cy="132" rx="1.4" ry="2.4" transform="rotate(180 200 132)" fill="#1C1917" />
+    <ellipse cx="192" cy="126" rx="1.4" ry="2.4" transform="rotate(-135 192 126)" fill="#1C1917" />
+    <ellipse cx="188" cy="116" rx="1.4" ry="2.4" transform="rotate(-80 188 116)" fill="#1C1917" />
+  </g>
+</svg>

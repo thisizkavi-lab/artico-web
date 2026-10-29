@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:pineapple" data-archetype="hero-object">
+  <defs>
+    <!-- Pineapple: textured diamond scales, spiky green crown, round cut pineapple ring with center hole -->
+    <clipPath id="pa-body-clip">
+      <path d="M 82 86 C 80 120 84 154 112 154 C 140 154 144 120 142 86 C 142 80 82 80 82 86 Z" />
+    </clipPath>
+    <clipPath id="pa-ring-clip">
+      <circle cx="212" cy="120" r="38" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="160" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="212" cy="162" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Spiky Crown Leaves Bursting Upward -->
+  <g transform="translate(112, 82)">
+    <!-- Back layer darker leaves -->
+    <path d="M 0 0 L -14 -38 L -4 -26 L 0 -48 L 4 -26 L 14 -38 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Flaring left leaves -->
+    <path d="M -8 -4 L -32 -32 L -20 -18 L -38 -18 L -16 -4 Z" fill="#166534" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Flaring right leaves -->
+    <path d="M 8 -4 L 32 -32 L 20 -18 L 38 -18 L 16 -4 Z" fill="#166534" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Front layer brighter leaves -->
+    <path d="M -6 0 L -18 -26 L -6 -14 L 0 -36 L 6 -14 L 18 -26 L 6 0 Z" fill="#22C55E" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <path d="M -12 2 L -24 -12 L -12 -4" fill="#4ADE80" stroke="#1E2A3B" stroke-width="1.8" />
+    <path d="M 12 2 L 24 -12 L 12 -4" fill="#4ADE80" stroke="#1E2A3B" stroke-width="1.8" />
+  </g>
+
+  <!-- Whole Pineapple Barrel on Left -->
+  <g clip-path="url(#pa-body-clip)">
+    <!-- Base golden yellow barrel -->
+    <rect x="75" y="75" width="75" height="85" fill="#F59E0B" />
+    <ellipse cx="106" cy="116" rx="28" ry="32" fill="#FBBF24" />
+    <!-- Underside shadow -->
+    <path d="M 80 134 C 88 156 136 156 144 134 L 144 160 L 80 160 Z" fill="#B45309" />
+
+    <!-- Diamond Pattern Lattice Grooves -->
+    <path d="M 74 94 L 148 144 M 74 108 L 148 158 M 74 122 L 138 165 M 82 82 L 148 130" stroke="#B45309" stroke-width="2" />
+    <path d="M 150 94 L 76 144 M 150 108 L 76 158 M 150 122 L 86 165 M 142 82 L 76 130" stroke="#B45309" stroke-width="2" />
+
+    <!-- Center Spiky Bract Dots on Each Diamond Eye -->
+    <polygon points="112,106 108,110 116,110" fill="#78350F" />
+    <polygon points="98,118 94,122 102,122" fill="#78350F" />
+    <polygon points="126,118 122,122 130,122" fill="#78350F" />
+    <polygon points="112,130 108,134 116,134" fill="#78350F" />
+    <polygon points="98,94 94,98 102,98" fill="#78350F" />
+    <polygon points="126,94 122,98 130,98" fill="#78350F" />
+    <polygon points="112,82 108,86 116,86" fill="#78350F" />
+    <polygon points="112,144 108,148 116,148" fill="#78350F" />
+  </g>
+  <!-- Barrel Contour -->
+  <path d="M 82 86 C 80 120 84 154 112 154 C 140 154 144 120 142 86 C 142 80 82 80 82 86 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Cut Round Pineapple Ring Slice in Foreground Right (Iconic Center Hole) -->
+  <circle cx="212" cy="120" r="38" fill="#FACC15" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#pa-ring-clip)">
+    <!-- Radiating radial segments -->
+    <circle cx="212" cy="120" r="34" fill="#FDE047" />
+    <path d="M 212 120 L 212 84 M 212 120 L 238 94 M 212 120 L 248 120 M 212 120 L 238 146 M 212 120 L 212 156 M 212 120 L 186 146 M 212 120 L 176 120 M 212 120 L 186 94" stroke="#EAB308" stroke-width="1.8" />
+
+    <!-- Center Cut Core Hole -->
+    <circle cx="212" cy="120" r="14" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.4" />
+    <!-- Ground shadow visible through the hole -->
+    <ellipse cx="212" cy="122" rx="10" ry="4" fill="#DDD4C3" />
+  </g>
+</svg>

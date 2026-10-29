@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:date" data-archetype="hero-object">
+  <defs>
+    <!-- Date: wrinkled dark-amber Medjool date fruit, cut half showing soft sweet amber flesh and elongated stone pit -->
+    <clipPath id="date-whole-clip">
+      <ellipse cx="112" cy="116" rx="46" ry="32" transform="rotate(-15 112 116)" />
+    </clipPath>
+    <clipPath id="date-half-clip">
+      <ellipse cx="206" cy="120" rx="38" ry="26" transform="rotate(10 206 120)" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="160" rx="48" ry="8" fill="#DDD4C3" />
+  <ellipse cx="206" cy="162" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Wrinkled Medjool Date on Left -->
+  <g clip-path="url(#date-whole-clip)">
+    <!-- Base dark caramel/amber tone -->
+    <rect x="55" y="70" width="115" height="90" fill="#78350F" />
+    <ellipse cx="106" cy="110" rx="38" ry="22" transform="rotate(-15 106 110)" fill="#92400E" />
+    <!-- Underside shade -->
+    <path d="M 68 126 C 88 152 144 146 156 122 L 156 156 L 68 156 Z" fill="#451A03" />
+
+    <!-- Glossy translucent wrinkle skin folds -->
+    <path d="M 78 114 Q 106 104 138 110" stroke="#451A03" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M 84 122 Q 112 114 144 120" stroke="#451A03" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M 86 104 Q 112 96 136 100" stroke="#B45309" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 96 96 Q 118 90 142 94" stroke="#B45309" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+    <!-- Specular gleam on sticky skin -->
+    <ellipse cx="102" cy="100" rx="14" ry="6" transform="rotate(-15 102 100)" fill="#D97706" opacity="0.8" />
+    <ellipse cx="100" cy="98" rx="5" ry="2.5" transform="rotate(-15 100 98)" fill="#FDE68A" opacity="0.9" />
+  </g>
+  <!-- Contour -->
+  <ellipse cx="112" cy="116" rx="46" ry="32" transform="rotate(-15 112 116)" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Small calyx button at stem end -->
+  <circle cx="68" cy="128" r="4" fill="#451A03" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Halved Date in Foreground Right (Showing Soft Amber Meat + Slender Pit) -->
+  <ellipse cx="206" cy="120" rx="38" ry="26" transform="rotate(10 206 120)" fill="#78350F" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#date-half-clip)">
+    <!-- Sticky sweet golden-amber fruit flesh -->
+    <ellipse cx="206" cy="120" rx="34" ry="22" transform="rotate(10 206 120)" fill="#B45309" />
+    <ellipse cx="206" cy="120" rx="28" ry="16" transform="rotate(10 206 120)" fill="#D97706" />
+
+    <!-- Elongated Pit Cavity -->
+    <ellipse cx="206" cy="120" rx="20" ry="8" transform="rotate(10 206 120)" fill="#451A03" />
+
+    <!-- Slender Elongated Woody Date Stone Pit -->
+    <ellipse cx="206" cy="120" rx="18" ry="6" transform="rotate(10 206 120)" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6" />
+    <!-- Longitudinal groove along the date pit -->
+    <line x1="192" y1="118" x2="220" y2="122" stroke="#451A03" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:papaya" data-archetype="hero-object">
+  <defs>
+    <!-- Papaya: elongated pear-shaped tropical fruit, cut half showing radiant orange flesh and inner cavity packed with round black caviar-like seeds -->
+    <clipPath id="papaya-body-clip">
+      <path d="M 112 58 C 124 58 132 72 130 94 C 130 110 156 122 156 142 C 156 160 136 168 112 168 C 88 168 68 160 68 142 C 68 122 94 110 94 94 C 92 72 100 58 112 58 Z" />
+    </clipPath>
+    <clipPath id="papaya-half-clip">
+      <path d="M 212 66 C 222 66 226 78 226 96 C 226 110 248 120 248 138 C 248 156 232 164 212 164 C 192 164 176 156 176 138 C 176 120 198 110 198 96 C 198 78 202 66 212 66 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="46" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="162" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Whole Tropical Papaya on Left -->
+  <g clip-path="url(#papaya-body-clip)">
+    <!-- Base golden-orange skin -->
+    <rect x="65" y="50" width="95" height="125" fill="#FBBF24" />
+    <!-- Tropical green mottled shoulder patches -->
+    <ellipse cx="106" cy="80" rx="24" ry="22" fill="#84CC16" opacity="0.8" />
+    <ellipse cx="120" cy="94" rx="20" ry="26" fill="#F59E0B" />
+    <!-- Underside shade -->
+    <path d="M 68 144 C 82 166 136 166 156 142 L 156 170 L 68 170 Z" fill="#D97706" />
+    <!-- Specular highlight -->
+    <ellipse cx="98" cy="94" rx="10" ry="16" transform="rotate(-15 98 94)" fill="#FEF08A" opacity="0.85" />
+  </g>
+  <!-- Contour -->
+  <path d="M 112 58 C 124 58 132 72 130 94 C 130 110 156 122 156 142 C 156 160 136 168 112 168 C 88 168 68 160 68 142 C 68 122 94 110 94 94 C 92 72 100 58 112 58 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Stem button on top -->
+  <circle cx="112" cy="58" r="3.5" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Halved Papaya in Foreground Right (Orange Flesh + Black Seeds Cavity) -->
+  <path d="M 212 66 C 222 66 226 78 226 96 C 226 110 248 120 248 138 C 248 156 232 164 212 164 C 192 164 176 156 176 138 C 176 120 198 110 198 96 C 198 78 202 66 212 66 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <g clip-path="url(#papaya-half-clip)">
+    <!-- Thin green outer rind border -->
+    <path d="M 212 70 C 220 70 223 80 223 96 C 223 110 244 120 244 136 C 244 152 230 160 212 160 C 194 160 180 152 180 136 C 180 120 201 110 201 96 C 201 80 204 70 212 70 Z" fill="#84CC16" />
+    <!-- Deep radiant orange-red papaya flesh -->
+    <path d="M 212 74 C 218 74 220 82 220 96 C 220 110 238 120 238 134 C 238 148 226 156 212 156 C 198 156 186 148 186 134 C 186 120 204 110 204 96 C 204 82 206 74 212 74 Z" fill="#EA580C" />
+
+    <!-- Central Elongated Seed Cavity -->
+    <ellipse cx="212" cy="120" rx="15" ry="34" fill="#9A3412" stroke="#7C2D12" stroke-width="1.5" />
+
+    <!-- Innumerable Round Shiny Black Caviar-like Papaya Seeds inside Cavity -->
+    <!-- Row 1 -->
+    <circle cx="212" cy="94" r="2.8" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="216" cy="98" r="2.8" fill="#27272A" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="208" cy="100" r="2.8" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Row 2 -->
+    <circle cx="214" cy="106" r="3" fill="#27272A" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="206" cy="108" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="218" cy="110" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Row 3 (center density) -->
+    <circle cx="210" cy="116" r="3.2" fill="#27272A" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="218" cy="118" r="3.2" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="204" cy="120" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="212" cy="124" r="3.2" fill="#27272A" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="220" cy="126" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Row 4 -->
+    <circle cx="206" cy="130" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="214" cy="132" r="3.2" fill="#27272A" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="210" cy="138" r="3" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <circle cx="216" cy="142" r="2.8" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+    <!-- Row 5 (bottom) -->
+    <circle cx="212" cy="148" r="2.8" fill="#18181B" stroke="#09090B" stroke-width="0.8" />
+
+    <!-- Glistening wet specular sparkles on seeds -->
+    <circle cx="213" cy="105" r="0.8" fill="#FFFFFF" />
+    <circle cx="209" cy="115" r="0.8" fill="#FFFFFF" />
+    <circle cx="211" cy="123" r="0.8" fill="#FFFFFF" />
+    <circle cx="213" cy="131" r="0.8" fill="#FFFFFF" />
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:mandarin" data-archetype="hero-object">
+  <defs>
+    <!-- Mandarin: oblate squat citrus, partially peeled open from top showing segmented lobes, plus one loose peeled crescent wedge -->
+    <clipPath id="mandarin-body-clip">
+      <ellipse cx="120" cy="118" rx="52" ry="40" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="120" cy="162" rx="54" ry="9" fill="#DDD4C3" />
+  <ellipse cx="218" cy="162" rx="36" ry="7" fill="#DDD4C3" />
+
+  <!-- Green Stem & Double Leaf on Top -->
+  <g transform="translate(118, 76)">
+    <!-- Tiny green button / calyx -->
+    <circle cx="0" cy="2" r="3.5" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" />
+    <!-- Leaf Left -->
+    <path d="M 0 2 C -10 -4 -16 -16 -8 -26 C 2 -18 4 -6 0 2 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <path d="M 0 2 Q -4 -12 -8 -24" stroke="#365314" stroke-width="1.4" fill="none" />
+    <!-- Leaf Right (small) -->
+    <path d="M 0 2 C 8 -2 14 -10 16 -16 C 10 -18 4 -12 0 2 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+
+  <!-- Oblate Mandarin Body -->
+  <g clip-path="url(#mandarin-body-clip)">
+    <!-- Base deep warm orange rind -->
+    <ellipse cx="120" cy="118" rx="52" ry="40" fill="#F97316" />
+    <!-- Deep bottom shadow -->
+    <path d="M 68 128 C 82 154 158 154 172 128 L 172 160 L 68 160 Z" fill="#C2410C" />
+    <!-- Segment bulge ribs (the puffy segments showing through thin peel) -->
+    <path d="M 94 84 C 86 104 86 132 94 152" stroke="#EA580C" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M 120 80 C 118 104 118 132 120 156" stroke="#FB923C" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
+    <path d="M 146 84 C 154 104 154 132 146 152" stroke="#C2410C" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" />
+    <!-- Specular highlight -->
+    <ellipse cx="106" cy="98" rx="14" ry="8" transform="rotate(-15 106 98)" fill="#FDBA74" />
+    <!-- Peel pores -->
+    <circle cx="86" cy="112" r="1.2" fill="#C2410C" />
+    <circle cx="108" cy="126" r="1.2" fill="#C2410C" />
+    <circle cx="134" cy="106" r="1.2" fill="#C2410C" />
+    <circle cx="154" cy="122" r="1.2" fill="#C2410C" />
+  </g>
+  <!-- Outer Contour -->
+  <ellipse cx="120" cy="118" rx="52" ry="40" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Peel Curl at Top revealing segment lobes inside! -->
+  <g transform="translate(120, 80)">
+    <!-- Peeling flap left -->
+    <path d="M -12 2 C -24 -2 -32 8 -26 14 C -18 14 -12 6 -12 2 Z" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <path d="M -26 14 C -32 8 -24 -2 -12 2" fill="#FB923C" stroke="#1E2A3B" stroke-width="1.8" />
+    <!-- Peeling flap right -->
+    <path d="M 12 2 C 24 -2 30 6 26 12 C 20 14 14 6 12 2 Z" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Detached Single Plump Peeled Mandarin Wedge in Foreground Right -->
+  <g transform="translate(216, 128) rotate(-18)">
+    <!-- Crescent segment body -->
+    <path d="M -24 16 C -20 -10 14 -16 26 -2 C 28 8 16 26 -6 26 C -18 26 -24 22 -24 16 Z" fill="#FB923C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+    <!-- Juicy pulpy interior highlight -->
+    <path d="M -18 12 C -15 -4 10 -10 20 0 C 14 16 0 20 -8 20 C -15 20 -18 16 -18 12 Z" fill="#FDBA74" />
+    <!-- Translucent white pith threads (albedo / pith network) -->
+    <path d="M -14 6 Q 0 2 12 4" stroke="#FFF7ED" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <path d="M -8 14 Q 4 12 10 14" stroke="#FFF7ED" stroke-width="1.4" stroke-linecap="round" fill="none" />
+    <!-- Glistening juice vesicle beads -->
+    <circle cx="2" cy="6" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="-6" cy="8" r="1.2" fill="#FFFFFF" opacity="0.8" />
+  </g>
+</svg>

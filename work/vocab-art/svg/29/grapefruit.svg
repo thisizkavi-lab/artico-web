@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:grapefruit" data-archetype="hero-object">
+  <defs>
+    <clipPath id="gf-whole-clip">
+      <circle cx="106" cy="106" r="46" />
+    </clipPath>
+    <clipPath id="gf-half-clip">
+      <circle cx="196" cy="114" r="42" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="106" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="196" cy="164" rx="44" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Grapefruit on Left -->
+  <g clip-path="url(#gf-whole-clip)">
+    <!-- Base golden-yellow rind -->
+    <circle cx="106" cy="106" r="46" fill="#FBBF24" />
+    <!-- Vibrant coral/ruby blush across center-right -->
+    <ellipse cx="120" cy="100" rx="36" ry="32" fill="#F87171" opacity="0.8" />
+    <!-- Deep bottom shadow -->
+    <path d="M 60 116 C 70 148 116 160 152 144 L 152 154 L 60 154 Z" fill="#D97706" opacity="0.6" />
+    <!-- Speckled citrus peel texture -->
+    <circle cx="92" cy="86" r="1.2" fill="#D97706" />
+    <circle cx="112" cy="80" r="1.2" fill="#B91C1C" />
+    <circle cx="126" cy="94" r="1.2" fill="#B91C1C" />
+    <circle cx="102" cy="116" r="1.2" fill="#B91C1C" />
+    <!-- Specular highlight -->
+    <ellipse cx="88" cy="82" rx="12" ry="16" transform="rotate(-30 88 82)" fill="#FEF08A" opacity="0.6" />
+  </g>
+  <!-- Contour & tiny stem button -->
+  <circle cx="106" cy="106" r="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <circle cx="82" cy="74" r="3" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Cut Half in Foreground Right (Showing Ruby-Pink Wedges & White Pith) -->
+  <!-- Outer yellow rind ring -->
+  <circle cx="196" cy="114" r="42" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#gf-half-clip)">
+    <!-- White spongy pith inner layer -->
+    <circle cx="196" cy="114" r="38" fill="#FEF9C3" />
+    <!-- Center white core dot -->
+    <circle cx="196" cy="114" r="5" fill="#FEF9C3" stroke="#FDE047" stroke-width="1" />
+
+    <!-- 8 Ruby-Pink Triangular Segments -->
+    <!-- Segment 1: Top -->
+    <path d="M 194 107 L 188 82 C 193 81 199 81 204 82 L 198 107 Z" fill="#E11D48" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 2: Top Right -->
+    <path d="M 201 109 L 219 90 C 223 94 227 99 229 104 L 205 113 Z" fill="#F43F5E" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 3: Right -->
+    <path d="M 203 116 L 230 119 C 230 125 228 131 224 136 L 201 121 Z" fill="#E11D48" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 4: Bottom Right -->
+    <path d="M 198 121 L 217 138 C 212 143 206 146 200 148 L 194 123 Z" fill="#BE123C" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 5: Bottom Left -->
+    <path d="M 192 121 L 186 148 C 180 146 174 142 170 137 L 188 120 Z" fill="#BE123C" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 6: Left -->
+    <path d="M 189 114 L 163 120 C 163 114 165 108 169 103 L 191 110 Z" fill="#E11D48" stroke="#FEF9C3" stroke-width="2" />
+    <!-- Segment 7: Top Left -->
+    <path d="M 192 108 L 174 91 C 178 86 183 83 189 81 L 195 106 Z" fill="#F43F5E" stroke="#FEF9C3" stroke-width="2" />
+
+    <!-- Juice vesicle texture specks -->
+    <circle cx="196" cy="94" r="1.5" fill="#FFE4E6" opacity="0.8" />
+    <circle cx="214" cy="102" r="1.5" fill="#FFE4E6" opacity="0.8" />
+    <circle cx="212" cy="126" r="1.5" fill="#FFE4E6" opacity="0.8" />
+    <circle cx="180" cy="126" r="1.5" fill="#FFE4E6" opacity="0.8" />
+  </g>
+</svg>

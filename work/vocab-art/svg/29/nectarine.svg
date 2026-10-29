@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:nectarine" data-archetype="hero-object">
+  <defs>
+    <!-- Nectarine: smooth glossy skin (NO FUZZ!), brilliant red/yellow flame gradient, cleft seam, cut half with golden flesh and clingstone pit -->
+    <clipPath id="nec-body-clip">
+      <ellipse cx="112" cy="114" rx="46" ry="44" />
+    </clipPath>
+    <clipPath id="nec-half-clip">
+      <ellipse cx="204" cy="118" rx="38" ry="36" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Smooth Glossy Whole Nectarine on Left -->
+  <g clip-path="url(#nec-body-clip)">
+    <!-- Base golden yellow -->
+    <rect x="60" y="65" width="105" height="95" fill="#FACC15" />
+    <!-- Flaming scarlet red blush covering right 2/3 of fruit -->
+    <path d="M 88 70 C 130 68 158 84 158 114 C 158 144 130 158 98 158 L 160 160 L 160 70 Z" fill="#DC2626" />
+    <path d="M 104 74 C 140 76 156 94 156 120 C 156 146 138 156 114 156 L 160 160 L 160 74 Z" fill="#991B1B" opacity="0.6" />
+    <!-- Glossy high-shine specular reflection (identifying smooth skin vs velvety peach!) -->
+    <ellipse cx="88" cy="90" rx="14" ry="18" transform="rotate(-25 88 90)" fill="#FEF08A" opacity="0.85" />
+    <ellipse cx="84" cy="84" rx="5" ry="9" transform="rotate(-25 84 84)" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  <!-- Nectarine Contour -->
+  <ellipse cx="112" cy="114" rx="46" ry="44" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Prominent Cleft Seam Line -->
+  <path d="M 112 70 C 108 92 108 136 112 158" stroke="#7F1D1D" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <ellipse cx="112" cy="71" rx="6" ry="2" fill="#7F1D1D" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Nectarine Half in Foreground Right (Golden Flesh + Clingstone Pit) -->
+  <ellipse cx="204" cy="118" rx="38" ry="36" fill="#DC2626" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#nec-half-clip)">
+    <!-- Thin red skin rim -->
+    <ellipse cx="204" cy="118" rx="35" ry="33" fill="#FDE047" />
+    <!-- Golden sweet flesh interior -->
+    <ellipse cx="204" cy="118" rx="28" ry="26" fill="#FACC15" />
+    <!-- Red bleed rays from the pit into flesh -->
+    <ellipse cx="204" cy="118" rx="22" ry="22" fill="#EF4444" opacity="0.6" />
+
+    <!-- Rough Woody Clingstone Stone Pit in Center -->
+    <path d="M 204 96 C 216 102 220 120 216 130 C 212 140 196 140 192 130 C 188 120 192 102 204 96 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Deep craggy furrows on pit -->
+    <path d="M 200 102 Q 206 116 202 132 M 208 106 Q 212 118 208 128" stroke="#451A03" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:banana" data-archetype="hero-object">
+  <defs>
+    <!-- Banana: bunch of bananas joined at green-brown stalk, plus one peeled banana in foreground showing creamy fruit -->
+    <clipPath id="peeled-fruit-clip">
+      <path d="M 188 126 C 182 108 190 82 208 68 C 218 60 226 64 226 72 C 224 88 214 116 208 136 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="58" ry="9" fill="#DDD4C3" />
+  <ellipse cx="208" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Shared Stalk Crown / Stem Junction on Left Bunch -->
+  <g transform="translate(68, 62)">
+    <polygon points="0,0 24,-6 32,8 6,14" fill="#65A30D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <path d="M 0 0 L 6 14" stroke="#365314" stroke-width="3" />
+    <polygon points="24,-6 32,8 26,12 18,-2" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" />
+  </g>
+
+  <!-- Whole Bananas in Bunch (Back Banana) -->
+  <path d="M 88 64 C 114 62 144 82 158 116 C 164 130 162 146 156 156" stroke="#CA8A04" stroke-width="20" stroke-linecap="round" fill="none" />
+  <path d="M 88 64 C 114 62 144 82 158 116 C 164 130 162 146 156 156" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <!-- Banana 2 (Middle Primary Curved Banana) -->
+  <path d="M 78 70 C 98 74 130 96 142 128 C 146 142 142 154 134 162" stroke="#FACC15" stroke-width="24" stroke-linecap="round" fill="none" />
+  <path d="M 78 70 C 98 74 130 96 142 128 C 146 142 142 154 134 162" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <!-- Central ridge facet line on middle banana -->
+  <path d="M 82 72 C 102 78 126 98 136 128" stroke="#EAB308" stroke-width="3" stroke-linecap="round" fill="none" />
+  <!-- Dark tip on middle banana -->
+  <circle cx="134" cy="162" r="3" fill="#78350F" />
+
+  <!-- Banana 3 (Lower Banana in Bunch) -->
+  <path d="M 72 74 C 84 84 104 108 118 138 C 122 148 118 158 112 164" stroke="#FACC15" stroke-width="22" stroke-linecap="round" fill="none" />
+  <path d="M 72 74 C 84 84 104 108 118 138 C 122 148 118 158 112 164" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <circle cx="112" cy="164" r="3" fill="#78350F" />
+
+  <!-- Peeled Banana in Foreground Right -->
+  <!-- Lower unpeeled yellow base -->
+  <path d="M 204 136 C 210 148 214 156 226 162 C 234 166 244 164 250 156" stroke="#FACC15" stroke-width="22" stroke-linecap="round" fill="none" />
+  <path d="M 204 136 C 210 148 214 156 226 162 C 234 166 244 164 250 156" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <circle cx="250" cy="156" r="3.5" fill="#78350F" />
+
+  <!-- The Creamy Edible White Banana Fruit Inside -->
+  <g clip-path="url(#peeled-fruit-clip)">
+    <!-- Base cream fruit -->
+    <rect x="175" y="55" width="60" height="90" fill="#FEF9C3" />
+    <!-- Rounded tip shading -->
+    <ellipse cx="218" cy="68" rx="8" ry="6" fill="#FDE047" opacity="0.6" />
+    <path d="M 194 116 Q 204 90 216 72" stroke="#FFFBEB" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 188 124 C 182 108 190 82 208 68" stroke="#CA8A04" stroke-width="2" fill="none" opacity="0.4" />
+  </g>
+  <!-- Fruit Contour -->
+  <path d="M 188 126 C 182 108 190 82 208 68 C 218 60 226 64 226 72 C 224 88 214 116 208 136" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Peeling Flaps Curling Outward in 3 Directions -->
+  <!-- Left peeling flap -->
+  <path d="M 188 126 C 172 120 162 130 166 142 C 172 144 186 136 196 134 Z" fill="#FFFBEB" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 166 142 C 162 130 172 120 188 126" stroke="#FACC15" stroke-width="2" fill="none" />
+
+  <!-- Right peeling flap -->
+  <path d="M 216 128 C 234 118 244 126 242 138 C 234 142 222 138 210 136 Z" fill="#FFFBEB" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 242 138 C 244 126 234 118 216 128" stroke="#FACC15" stroke-width="2" fill="none" />
+
+  <!-- Front peeling flap curling downward -->
+  <path d="M 198 132 C 196 146 198 156 204 158 C 208 158 210 148 206 134 Z" fill="#FFFBEB" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+</svg>

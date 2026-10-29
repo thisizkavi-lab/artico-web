@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:melon" data-archetype="hero-object">
+  <defs>
+    <!-- Melon (Cantaloupe / Muskmelon): beige reticulated netting over pale green rind, cut wedge showing rich orange cantaloupe flesh and seed cavity -->
+    <clipPath id="melon-body-clip">
+      <circle cx="108" cy="110" r="46" />
+    </clipPath>
+    <clipPath id="melon-wedge-clip">
+      <path d="M 174 136 C 182 100 216 90 248 108 C 252 136 226 156 196 156 C 184 156 178 148 174 136 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="108" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Cantaloupe Melon with Netted Rind on Left -->
+  <g clip-path="url(#melon-body-clip)">
+    <!-- Base pale sage-green rind -->
+    <circle cx="108" cy="110" r="46" fill="#D9F99D" />
+    <circle cx="108" cy="110" r="46" fill="#BEF264" opacity="0.6" />
+    <path d="M 62 124 C 76 152 128 158 154 136 L 154 158 L 62 158 Z" fill="#65A30D" />
+
+    <!-- Iconic Reticulated Corky Netting Texture (Cross-hatching lattice over rind) -->
+    <!-- Latitudinal netting curves -->
+    <path d="M 64 96 Q 108 84 152 96" stroke="#FEF9C3" stroke-width="1.8" fill="none" />
+    <path d="M 62 110 Q 108 98 154 110" stroke="#FEF9C3" stroke-width="2" fill="none" />
+    <path d="M 64 124 Q 108 114 152 124" stroke="#FEF9C3" stroke-width="1.8" fill="none" />
+    <path d="M 72 138 Q 108 128 144 138" stroke="#FEF9C3" stroke-width="1.8" fill="none" />
+
+    <!-- Longitudinal netting ribs -->
+    <path d="M 80 72 Q 72 110 80 148" stroke="#FEF9C3" stroke-width="1.8" fill="none" />
+    <path d="M 94 66 Q 88 110 94 154" stroke="#FEF9C3" stroke-width="2" fill="none" />
+    <path d="M 108 64 Q 106 110 108 156" stroke="#FEF9C3" stroke-width="2" fill="none" />
+    <path d="M 122 66 Q 126 110 122 154" stroke="#FEF9C3" stroke-width="2" fill="none" />
+    <path d="M 136 72 Q 144 110 136 148" stroke="#FEF9C3" stroke-width="1.8" fill="none" />
+
+    <!-- Cross-knot netting texture specks -->
+    <circle cx="94" cy="98" r="1.5" fill="#FEF08A" />
+    <circle cx="108" cy="98" r="1.5" fill="#FEF08A" />
+    <circle cx="122" cy="98" r="1.5" fill="#FEF08A" />
+    <circle cx="94" cy="112" r="1.5" fill="#FEF08A" />
+    <circle cx="108" cy="112" r="1.5" fill="#FEF08A" />
+    <circle cx="122" cy="112" r="1.5" fill="#FEF08A" />
+  </g>
+  <!-- Contour -->
+  <circle cx="108" cy="110" r="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Green corky stem button -->
+  <g transform="translate(108, 64)">
+    <circle cx="0" cy="0" r="4" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+    <line x1="0" y1="0" x2="-2" y2="-6" stroke="#78350F" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Thick Cut Cantaloupe Wedge in Foreground Right (Orange Flesh + Seed Pocket) -->
+  <g clip-path="url(#melon-wedge-clip)">
+    <!-- Pale green outer rind rim -->
+    <rect x="170" y="90" width="86" height="70" fill="#BEF264" />
+    <!-- White-green rind border -->
+    <path d="M 178 136 C 185 106 214 98 242 112 C 246 134 224 150 198 150 C 188 150 182 144 178 136 Z" fill="#ECFCCB" />
+    <!-- Rich juicy orange cantaloupe flesh -->
+    <path d="M 182 134 C 188 110 212 104 238 116 C 241 132 222 146 200 146 C 190 146 186 142 182 134 Z" fill="#FB923C" />
+    <path d="M 186 132 C 192 114 210 110 232 120 C 234 130 220 142 202 142 Z" fill="#F97316" />
+
+    <!-- Seed Cavity Depression & Cream Seeds along Inner Curve -->
+    <ellipse cx="208" cy="124" rx="20" ry="10" transform="rotate(-15 208 124)" fill="#FBBF24" opacity="0.6" />
+    <!-- Oval melon seeds -->
+    <ellipse cx="198" cy="126" rx="2" ry="3.5" transform="rotate(-40 198 126)" fill="#FFFBEB" stroke="#CA8A04" stroke-width="0.8" />
+    <ellipse cx="206" cy="123" rx="2" ry="3.5" transform="rotate(-20 206 123)" fill="#FFFBEB" stroke="#CA8A04" stroke-width="0.8" />
+    <ellipse cx="214" cy="122" rx="2" ry="3.5" transform="rotate(10 214 122)" fill="#FFFBEB" stroke="#CA8A04" stroke-width="0.8" />
+    <ellipse cx="222" cy="124" rx="2" ry="3.5" transform="rotate(30 222 124)" fill="#FFFBEB" stroke="#CA8A04" stroke-width="0.8" />
+  </g>
+  <!-- Wedge Contour -->
+  <path d="M 174 136 C 182 100 216 90 248 108 C 252 136 226 156 196 156 C 184 156 178 148 174 136 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+</svg>

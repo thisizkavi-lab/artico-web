@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:guava" data-archetype="hero-object">
+  <defs>
+    <!-- Guava: yellow-green tropical fruit with calyx crown at blossom end, cut half showing radiant salmon-pink pulp with tiny seeds -->
+    <clipPath id="guava-body-clip">
+      <path d="M 112 70 C 138 70 156 88 156 114 C 156 142 136 158 112 158 C 88 158 68 142 68 114 C 68 88 86 70 112 70 Z" />
+    </clipPath>
+    <clipPath id="guava-half-clip">
+      <path d="M 204 80 C 226 80 242 96 242 118 C 242 140 226 156 204 156 C 182 156 166 140 166 118 C 166 96 182 80 204 80 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Yellow-Green Guava on Left -->
+  <g clip-path="url(#guava-body-clip)">
+    <!-- Base chartreuse yellow-green -->
+    <rect x="60" y="65" width="105" height="100" fill="#A3E635" />
+    <path d="M 76 96 C 88 78 126 78 138 96 C 146 114 134 136 118 138 C 96 140 70 120 76 96 Z" fill="#BEF264" />
+    <!-- Underside shadow -->
+    <path d="M 70 130 C 84 156 136 156 154 130 L 154 162 L 70 162 Z" fill="#65A30D" />
+    <!-- Specular highlight -->
+    <ellipse cx="94" cy="92" rx="12" ry="16" transform="rotate(-20 94 92)" fill="#ECFCCB" opacity="0.85" />
+    <ellipse cx="90" cy="86" rx="4" ry="8" transform="rotate(-20 90 86)" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  <!-- Contour -->
+  <path d="M 112 70 C 138 70 156 88 156 114 C 156 142 136 158 112 158 C 88 158 68 142 68 114 C 68 88 86 70 112 70 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Prominent Crown-Like Dried Calyx Lobes at Apex of Whole Guava -->
+  <g transform="translate(112, 70)">
+    <path d="M 0 0 C -4 -6 -10 -8 -14 -6 C -10 -2 -6 -2 0 0 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M 0 0 C 4 -6 10 -8 14 -6 C 10 -2 6 -2 0 0 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M 0 0 C -2 -8 2 -12 0 -14 C -2 -12 -2 -8 0 0 Z" fill="#365314" stroke="#1E2A3B" stroke-width="1.6" />
+    <circle cx="0" cy="0" r="3" fill="#365314" />
+  </g>
+
+  <!-- Cut Guava Half in Foreground Right (Vibrant Salmon-Pink Pulp + Seeds) -->
+  <path d="M 204 80 C 226 80 242 96 242 118 C 242 140 226 156 204 156 C 182 156 166 140 166 118 C 166 96 182 80 204 80 Z" fill="#A3E635" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <g clip-path="url(#guava-half-clip)">
+    <!-- Thin white-green outer rind ring -->
+    <path d="M 204 83 C 223 83 239 98 239 118 C 239 138 223 153 204 153 C 185 153 169 138 169 118 C 169 98 185 83 204 83 Z" fill="#ECFCCB" />
+    <!-- Vibrant radiant salmon-pink pulp interior -->
+    <path d="M 204 88 C 220 88 234 102 234 118 C 234 134 220 148 204 148 C 188 148 174 134 174 118 C 174 102 188 88 204 88 Z" fill="#FB7185" />
+    <path d="M 204 96 C 216 96 226 106 226 118 C 226 130 216 140 204 140 C 192 140 182 130 182 118 C 182 106 192 96 204 96 Z" fill="#F43F5E" />
+
+    <!-- Innumerable small hard yellowish-tan guava seeds scattered in pulp -->
+    <circle cx="194" cy="108" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="208" cy="106" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="218" cy="114" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="214" cy="126" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="202" cy="130" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="192" cy="122" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+    <circle cx="204" cy="118" r="2.2" fill="#FEF08A" stroke="#B45309" stroke-width="0.8" />
+
+    <!-- Extra seed cluster -->
+    <circle cx="198" cy="114" r="1.8" fill="#FEF08A" />
+    <circle cx="210" cy="120" r="1.8" fill="#FEF08A" />
+  </g>
+</svg>

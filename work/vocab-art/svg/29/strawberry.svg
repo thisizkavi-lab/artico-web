@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:strawberry / strawberries" data-archetype="hero-object">
+  <defs>
+    <!-- Strawberry: heart-conical berry with golden seed achenes, fresh green leafy crown, sliced half showing white center core -->
+    <clipPath id="sb-whole-clip">
+      <path d="M 112 68 C 144 68 156 86 148 120 C 142 144 120 162 112 162 C 104 162 82 144 76 120 C 68 86 80 68 112 68 Z" />
+    </clipPath>
+    <clipPath id="sb-half-clip">
+      <path d="M 204 78 C 230 78 238 94 232 122 C 228 142 210 156 204 156 C 198 156 180 142 176 122 C 170 94 178 78 204 78 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="204" cy="162" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Whole Strawberry on Left -->
+  <g clip-path="url(#sb-whole-clip)">
+    <!-- Base vibrant rich strawberry red -->
+    <rect x="65" y="65" width="95" height="100" fill="#EF4444" />
+    <!-- Center specular sunny sheen -->
+    <ellipse cx="102" cy="100" rx="26" ry="22" fill="#F87171" />
+    <!-- Underside & right shade -->
+    <path d="M 118 68 C 148 84 152 136 128 158 L 158 158 L 158 68 Z" fill="#B91C1C" />
+
+    <!-- Achene Golden Seeds in Indented Pits -->
+    <!-- Row 1 -->
+    <ellipse cx="94" cy="86" rx="1.8" ry="2.6" transform="rotate(-15 94 86)" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="112" cy="84" rx="1.8" ry="2.6" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="130" cy="86" rx="1.8" ry="2.6" transform="rotate(15 130 86)" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <!-- Row 2 -->
+    <ellipse cx="86" cy="102" rx="1.8" ry="2.6" transform="rotate(-20 86 102)" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="102" cy="100" rx="1.8" ry="2.6" fill="#FEF08A" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="120" cy="100" rx="1.8" ry="2.6" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <ellipse cx="138" cy="104" rx="1.8" ry="2.6" transform="rotate(20 138 104)" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <!-- Row 3 -->
+    <ellipse cx="84" cy="120" rx="1.8" ry="2.6" transform="rotate(-25 84 120)" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="98" cy="118" rx="1.8" ry="2.6" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="114" cy="118" rx="1.8" ry="2.6" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <ellipse cx="130" cy="122" rx="1.8" ry="2.6" transform="rotate(20 130 122)" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <!-- Row 4 -->
+    <ellipse cx="96" cy="136" rx="1.6" ry="2.4" transform="rotate(-15 96 136)" fill="#FDE047" stroke="#991B1B" stroke-width="0.8" />
+    <ellipse cx="112" cy="136" rx="1.6" ry="2.4" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <ellipse cx="124" cy="138" rx="1.6" ry="2.4" transform="rotate(15 124 138)" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <!-- Row 5 (Tip) -->
+    <ellipse cx="106" cy="148" rx="1.5" ry="2.2" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+    <ellipse cx="116" cy="148" rx="1.5" ry="2.2" fill="#FDE047" stroke="#7F1D1D" stroke-width="0.8" />
+  </g>
+  <!-- Strawberry Contour -->
+  <path d="M 112 68 C 144 68 156 86 148 120 C 142 144 120 162 112 162 C 104 162 82 144 76 120 C 68 86 80 68 112 68 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Calyx Leafy Green Crown & Stem on Left Strawberry -->
+  <g transform="translate(112, 68)">
+    <!-- Slender curved stem -->
+    <path d="M 0 0 C 0 -12 8 -22 18 -26" stroke="#4D7C0F" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C 0 -12 8 -22 18 -26" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Spreading green crown sepals -->
+    <path d="M 0 0 C -12 4 -26 0 -32 -6 C -24 10 -14 10 0 2 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <path d="M 0 0 C -6 8 -14 20 -8 26 C -2 18 2 12 0 2 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <path d="M 0 0 C 6 8 14 20 8 26 C 2 18 -2 12 0 2 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <path d="M 0 0 C 12 4 26 0 32 -6 C 24 10 14 10 0 2 Z" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Cut Sliced Strawberry Half on Right (Showing Pale Heart Core & Rays) -->
+  <g clip-path="url(#sb-half-clip)">
+    <!-- Red outer flesh rim -->
+    <rect x="165" y="75" width="80" height="90" fill="#EF4444" />
+    <!-- Pale cream-white pith core -->
+    <path d="M 204 88 C 218 88 222 100 218 118 C 214 132 208 144 204 144 C 200 144 194 132 190 118 C 186 100 190 88 204 88 Z" fill="#FFFBEB" />
+    <!-- Soft pink transition blend -->
+    <path d="M 204 94 C 214 94 216 104 214 116 C 210 128 206 138 204 138 C 202 138 198 128 194 116 C 192 104 194 94 204 94 Z" fill="#FEE2E2" />
+
+    <!-- Radiating red vascular strands connecting core to seeds -->
+    <path d="M 204 114 L 180 102 M 204 114 L 178 120 M 204 114 L 184 138 M 204 114 L 228 102 M 204 114 L 230 120 M 204 114 L 224 138" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+  <!-- Contour -->
+  <path d="M 204 78 C 230 78 238 94 232 122 C 228 142 210 156 204 156 C 198 156 180 142 176 122 C 170 94 178 78 204 78 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Small green crown on cut half -->
+  <g transform="translate(204, 78)">
+    <polygon points="0,0 -16,-2 -8,4" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+    <polygon points="0,0 16,-2 8,4" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.8" />
+    <polygon points="0,0 0,-10 4,-2" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+  </g>
+</svg>

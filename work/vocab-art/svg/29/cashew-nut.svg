@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:cashew nut" data-archetype="hero-object">
+  <defs>
+    <!-- Cashew nut: iconic creamy kidney / comma-shaped nut, toasted golden highlights, curved crescent contours -->
+    <clipPath id="cashew-main-clip">
+      <path d="M 92 68 C 124 66 148 86 146 114 C 144 140 120 158 96 158 C 76 158 64 144 68 126 C 72 108 96 112 104 104 C 112 96 102 82 88 80 C 82 78 84 70 92 68 Z" />
+    </clipPath>
+    <clipPath id="cashew-sec-clip">
+      <path d="M 194 88 C 220 86 240 102 238 126 C 236 148 216 162 196 162 C 180 162 170 150 174 136 C 176 122 196 124 202 118 C 208 112 200 100 190 98 C 186 96 188 90 194 88 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="106" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="206" cy="164" rx="40" ry="7" fill="#DDD4C3" />
+
+  <!-- Primary Large Creamy-Ivory Cashew Nut on Left -->
+  <g clip-path="url(#cashew-main-clip)">
+    <!-- Base smooth ivory nutmeat -->
+    <rect x="60" y="60" width="95" height="105" fill="#FEF3C7" />
+    <!-- Toasted golden roasted blush along outer curve -->
+    <path d="M 94 66 C 130 68 150 92 148 118 C 146 142 124 160 98 160 L 155 160 L 155 66 Z" fill="#FBBF24" opacity="0.8" />
+    <path d="M 112 74 C 142 80 152 100 148 128 C 144 148 126 158 108 158 L 155 160 L 155 74 Z" fill="#D97706" opacity="0.6" />
+    <!-- Underside shadow -->
+    <path d="M 68 136 C 80 160 126 160 142 140 L 142 165 L 68 165 Z" fill="#B45309" opacity="0.6" />
+    <!-- Creamy smooth highlight -->
+    <ellipse cx="94" cy="88" rx="14" ry="10" transform="rotate(-20 94 88)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+  <!-- Primary Cashew Contour (iconic kidney/comma curve) -->
+  <path d="M 92 68 C 124 66 148 86 146 114 C 144 140 120 158 96 158 C 76 158 64 144 68 126 C 72 108 96 112 104 104 C 112 96 102 82 88 80 C 82 78 84 70 92 68 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Inner seam cleft curve -->
+  <path d="M 88 80 C 96 82 104 92 102 100 C 98 108 82 112 76 122" stroke="#B45309" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Second Cashew Nut in Foreground Right (Tilted, Roasted) -->
+  <g clip-path="url(#cashew-sec-clip)">
+    <rect x="165" y="80" width="80" height="90" fill="#FEF3C7" />
+    <path d="M 194 86 C 224 88 242 106 240 128 C 238 148 220 164 198 164 L 245 164 L 245 86 Z" fill="#FBBF24" opacity="0.8" />
+    <path d="M 208 92 C 234 98 242 114 240 134 C 236 152 222 160 206 160 L 245 164 L 245 92 Z" fill="#D97706" opacity="0.6" />
+    <!-- Highlight -->
+    <ellipse cx="194" cy="104" rx="10" ry="8" transform="rotate(-20 194 104)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+  <!-- Contour -->
+  <path d="M 194 88 C 220 86 240 102 238 126 C 236 148 216 162 196 162 C 180 162 170 150 174 136 C 176 122 196 124 202 118 C 208 112 200 100 190 98 C 186 96 188 90 194 88 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 190 98 C 196 100 202 108 200 114 C 196 120 184 124 180 132" stroke="#B45309" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+  <!-- Third Cashew Half / Nib Resting in Foreground Center -->
+  <g transform="translate(148, 148) rotate(45)">
+    <path d="M 0 0 C 12 0 18 10 16 18 C 14 24 6 26 0 24 C -4 16 2 6 0 0 Z" fill="#FDE68A" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:apricot" data-archetype="hero-object">
+  <defs>
+    <!-- Apricot: velvety golden-orange stone fruit with cleft seam, paired with cut half revealing the smooth brown stone pit -->
+    <clipPath id="apricot-body-clip">
+      <ellipse cx="112" cy="114" rx="44" ry="42" />
+    </clipPath>
+    <clipPath id="apricot-half-clip">
+      <ellipse cx="204" cy="118" rx="38" ry="36" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Tiny Stem & Green Leaf on Whole Apricot -->
+  <g transform="translate(112, 72)">
+    <line x1="0" y1="0" x2="-4" y2="-12" stroke="#78350F" stroke-width="3" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="-4" y2="-12" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Leaf -->
+    <path d="M -4 -8 C -16 -16 -24 -12 -28 -2 C -18 2 -10 -2 -4 -8 Z" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+
+  <!-- Whole Golden-Orange Apricot on Left -->
+  <g clip-path="url(#apricot-body-clip)">
+    <!-- Base rich apricot gold -->
+    <ellipse cx="112" cy="114" rx="44" ry="42" fill="#F59E0B" />
+    <!-- Soft velvety rose/coral blush on left cheek -->
+    <ellipse cx="98" cy="106" rx="28" ry="26" fill="#F97316" opacity="0.8" />
+    <ellipse cx="92" cy="102" rx="16" ry="16" fill="#FB7185" opacity="0.55" />
+    <!-- Underside shadow -->
+    <path d="M 70 126 C 84 154 136 156 156 130 L 156 158 L 70 158 Z" fill="#D97706" />
+    <!-- Soft velvety highlight -->
+    <ellipse cx="90" cy="90" rx="12" ry="14" transform="rotate(-20 90 90)" fill="#FEF08A" opacity="0.75" />
+  </g>
+  <!-- Apricot Contour with top notch -->
+  <ellipse cx="112" cy="114" rx="44" ry="42" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Side Cleft Seam Line (defining stone fruit furrow) -->
+  <path d="M 112 72 C 108 92 108 136 112 156" stroke="#D97706" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 112 72 C 110 84 110 100 112 110" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.6" />
+
+  <!-- Cut Apricot Half in Foreground Right (Showing Smooth Stone Pit) -->
+  <ellipse cx="204" cy="118" rx="38" ry="36" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#apricot-half-clip)">
+    <!-- Soft golden-peach interior pulp -->
+    <ellipse cx="204" cy="118" rx="34" ry="32" fill="#FBBF24" />
+    <!-- Pit hollow indentation shadow -->
+    <ellipse cx="204" cy="118" rx="18" ry="22" fill="#D97706" />
+
+    <!-- Smooth Almond-Shaped Brown Stone Pit (apricot kernel) -->
+    <path d="M 204 98 C 214 104 218 120 214 130 C 210 138 198 138 194 130 C 190 120 194 104 204 98 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Stone pit ridge/texture line -->
+    <path d="M 204 102 C 208 112 208 126 204 134" stroke="#92400E" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <circle cx="200" cy="112" r="1.5" fill="#B45309" />
+  </g>
+</svg>

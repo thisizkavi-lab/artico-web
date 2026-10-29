@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:raspberries" data-archetype="hero-object">
+  <defs>
+    <!-- Raspberries: ruby-red aggregate drupelets, and crucially ONE HOLLOW BERRY showing the empty receptacle cavity that defines a picked raspberry! -->
+    <clipPath id="rb-hollow-clip">
+      <ellipse cx="204" cy="132" rx="26" ry="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="116" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Green Stem & Five Star Sepals on Whole Raspberry -->
+  <g transform="translate(116, 70)">
+    <!-- Slender green stem -->
+    <path d="M 0 0 C 4 -12 14 -22 26 -28" stroke="#4D7C0F" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C 4 -12 14 -22 26 -28" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- 5 star sepals curving over the top of the berry -->
+    <polygon points="0,0 -8,-8 0,-5 8,-8" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+    <polygon points="0,0 -12,2 -8,-3" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+    <polygon points="0,0 12,2 8,-3" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.8" />
+    <polygon points="0,0 -4,6 -2,3" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.6" />
+    <polygon points="0,0 4,6 2,3" fill="#4D7C0F" stroke="#1E2A3B" stroke-width="1.6" />
+  </g>
+
+  <!-- Upright Primary Raspberry on Left (Composed of Velvet Crimson Drupelets) -->
+  <g transform="translate(116, 112)">
+    <!-- Row 1: Top drupelets (5 beads) -->
+    <circle cx="-20" cy="-24" r="9.5" fill="#BE123C" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="-8" cy="-26" r="10.5" fill="#E11D48" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="8" cy="-26" r="10.5" fill="#E11D48" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="20" cy="-24" r="9.5" fill="#9F1239" stroke="#1E2A3B" stroke-width="2" />
+
+    <!-- Row 2: Upper mid (4 beads) -->
+    <circle cx="-24" cy="-8" r="11" fill="#BE123C" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="-8" cy="-9" r="12" fill="#F43F5E" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="8" cy="-9" r="12" fill="#E11D48" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="24" cy="-8" r="11" fill="#9F1239" stroke="#1E2A3B" stroke-width="2.2" />
+
+    <!-- Row 3: Lower mid (3 beads) -->
+    <circle cx="-16" cy="10" r="11.5" fill="#BE123C" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="0" cy="11" r="12.5" fill="#F43F5E" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="16" cy="10" r="11" fill="#9F1239" stroke="#1E2A3B" stroke-width="2.2" />
+
+    <!-- Row 4: Lower tip (2 beads) -->
+    <circle cx="-8" cy="28" r="10" fill="#BE123C" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="8" cy="28" r="10" fill="#9F1239" stroke="#1E2A3B" stroke-width="2.2" />
+
+    <!-- Row 5: Tip bead (1 bead) -->
+    <circle cx="0" cy="38" r="8" fill="#881337" stroke="#1E2A3B" stroke-width="2" />
+
+    <!-- Velvety soft raspberry sheen highlights on each bead -->
+    <circle cx="-9" cy="-12" r="2.5" fill="#FDA4AF" />
+    <circle cx="-10" cy="-13" r="1" fill="#FFFFFF" />
+    <circle cx="7" cy="-12" r="2.5" fill="#FDA4AF" />
+    <circle cx="6" cy="-13" r="1" fill="#FFFFFF" />
+    <circle cx="-1" cy="7" r="3" fill="#FDA4AF" />
+    <circle cx="-2" cy="6" r="1.2" fill="#FFFFFF" />
+    <circle cx="-17" cy="8" r="2.2" fill="#FDA4AF" />
+  </g>
+
+  <!-- Hollow Raspberry in Foreground Right (Tilted showing the empty core cavity!) -->
+  <g transform="translate(204, 126) rotate(15)">
+    <!-- Back row drupelets forming the conical thimble shape -->
+    <circle cx="-18" cy="-14" r="8.5" fill="#BE123C" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="0" cy="-22" r="9" fill="#E11D48" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="18" cy="-14" r="8.5" fill="#9F1239" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="-14" cy="2" r="9.5" fill="#BE123C" stroke="#1E2A3B" stroke-width="2" />
+    <circle cx="14" cy="2" r="9.5" fill="#9F1239" stroke="#1E2A3B" stroke-width="2" />
+
+    <!-- Front Drupelet Ring framing the opening -->
+    <ellipse cx="0" cy="12" rx="26" ry="16" fill="#881337" stroke="#1E2A3B" stroke-width="2.4" />
+    <!-- Empty Hollow Core Cavity (characteristic of picked raspberry!) -->
+    <ellipse cx="0" cy="12" rx="18" ry="10" fill="#4C0519" stroke="#1E2A3B" stroke-width="1.8" />
+    <!-- Creamy inner receptacle tissue remnant inside hole -->
+    <ellipse cx="0" cy="10" rx="10" ry="5" fill="#FFF1F2" opacity="0.4" />
+
+    <!-- Highlights on drupelet rim -->
+    <circle cx="-14" cy="10" r="2" fill="#FDA4AF" />
+    <circle cx="14" cy="10" r="2" fill="#FDA4AF" />
+    <circle cx="0" cy="22" r="2" fill="#FDA4AF" />
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:passion fruit" data-archetype="hero-object">
+  <defs>
+    <!-- Passion fruit: wrinkled dark purple-maroon rind, cut half with thick pale pith and cup filled with golden jelly pulp and black seeds -->
+    <clipPath id="pf-whole-clip">
+      <ellipse cx="112" cy="114" rx="44" ry="44" />
+    </clipPath>
+    <clipPath id="pf-half-clip">
+      <circle cx="204" cy="118" rx="38" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="112" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="204" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Whole Dark Purple Wrinkly Passion Fruit on Left -->
+  <g clip-path="url(#pf-whole-clip)">
+    <!-- Base deep purple-maroon rind -->
+    <rect x="60" y="65" width="105" height="100" fill="#4A044E" />
+    <ellipse cx="102" cy="102" rx="36" ry="34" fill="#701A75" />
+    <!-- Underside shade -->
+    <path d="M 70 132 C 84 158 136 158 154 132 L 154 165 L 70 165 Z" fill="#2E1065" />
+    <!-- Surface dimples / indentations of ripe passion fruit -->
+    <path d="M 86 98 Q 92 108 88 116" stroke="#2E1065" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M 124 92 Q 132 102 128 112" stroke="#2E1065" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <ellipse cx="108" cy="126" rx="14" ry="6" fill="#2E1065" opacity="0.6" />
+    <!-- Specular gleam -->
+    <ellipse cx="94" cy="88" rx="12" ry="16" transform="rotate(-20 94 88)" fill="#C084FC" opacity="0.5" />
+    <ellipse cx="90" cy="82" rx="4" ry="8" transform="rotate(-20 90 82)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+  <!-- Contour -->
+  <ellipse cx="112" cy="114" rx="44" ry="44" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Small woody stem nub on top -->
+  <circle cx="112" cy="70" r="3" fill="#65A30D" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cut Passion Fruit Half in Foreground Right (Golden Gelatinous Pulp + Seeds) -->
+  <circle cx="204" cy="118" rx="38" fill="#4A044E" stroke="#1E2A3B" stroke-width="2.6" />
+  <g clip-path="url(#pf-half-clip)">
+    <!-- Thick spongy white-cream pith wall -->
+    <circle cx="204" cy="118" rx="35" fill="#FEF9C3" />
+    <circle cx="204" cy="118" rx="31" fill="#FFFBEB" />
+
+    <!-- Lush Golden-Orange Jelly Pulp Cup -->
+    <circle cx="204" cy="118" rx="27" fill="#F59E0B" />
+    <circle cx="204" cy="118" rx="22" fill="#FBBF24" />
+
+    <!-- Edible Dark Teardrop Seeds in Gel Sacs -->
+    <!-- Seed 1 -->
+    <g transform="translate(192, 106) rotate(-25)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <!-- Seed 2 -->
+    <g transform="translate(210, 104) rotate(15)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <!-- Seed 3 -->
+    <g transform="translate(220, 116) rotate(60)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <!-- Seed 4 -->
+    <g transform="translate(214, 128) rotate(-40)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <!-- Seed 5 -->
+    <g transform="translate(198, 130) rotate(10)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <!-- Seed 6 (Center) -->
+    <g transform="translate(202, 118) rotate(-15)">
+      <ellipse cx="0" cy="0" rx="4" ry="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1" />
+      <ellipse cx="-1" cy="-2" rx="1" ry="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+
+    <!-- Translucent pulp jelly sacs enclosing seeds -->
+    <circle cx="188" cy="116" r="3" fill="#FDE047" opacity="0.8" />
+    <circle cx="218" cy="124" r="3" fill="#FDE047" opacity="0.8" />
+  </g>
+</svg>

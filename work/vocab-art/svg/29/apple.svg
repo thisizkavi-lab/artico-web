@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:apple" data-archetype="hero-object">
+  <defs>
+    <!-- Apple: dimpled top basin, woody curved stem, green leaf, crisp cut crescent slice with teardrop seed -->
+    <clipPath id="apple-body-clip">
+      <path d="M 112 66 C 130 66 156 74 158 106 C 160 136 138 162 118 162 C 114 162 110 160 106 160 C 102 160 98 162 94 162 C 74 162 52 136 54 106 C 56 74 82 66 100 66 C 106 70 108 70 112 66 Z" />
+    </clipPath>
+    <clipPath id="apple-slice-clip">
+      <path d="M 184 146 C 190 106 220 94 246 112 C 250 136 228 156 204 156 C 194 156 188 152 184 146 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="106" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="216" cy="164" rx="38" ry="7" fill="#DDD4C3" />
+
+  <!-- Woody Curved Stem & Glossy Green Leaf -->
+  <g transform="translate(106, 68)">
+    <!-- Stem rooted in apple stem cavity -->
+    <path d="M 0 0 C 2 -16 12 -26 22 -32" stroke="#78350F" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 0 0 C 2 -16 12 -26 22 -32" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Leaf -->
+    <path d="M 10 -16 C 26 -24 44 -18 52 -6 C 38 0 22 -4 10 -16 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+    <path d="M 10 -16 Q 28 -14 50 -6" stroke="#14532D" stroke-width="1.6" fill="none" />
+  </g>
+
+  <!-- Whole Crisp Red Apple on Left -->
+  <g clip-path="url(#apple-body-clip)">
+    <!-- Base crimson red -->
+    <rect x="50" y="60" width="115" height="105" fill="#DC2626" />
+    <!-- Golden-amber sunny cheek wash -->
+    <ellipse cx="88" cy="98" rx="32" ry="34" fill="#EF4444" />
+    <ellipse cx="82" cy="94" rx="18" ry="24" fill="#F87171" opacity="0.6" />
+    <!-- Underside shade -->
+    <path d="M 54 126 C 70 156 136 158 158 132 L 158 165 L 54 165 Z" fill="#991B1B" />
+    <!-- Specular highlight arc -->
+    <ellipse cx="80" cy="84" rx="12" ry="16" transform="rotate(-25 80 84)" fill="#FFFFFF" opacity="0.65" />
+    <ellipse cx="78" cy="80" rx="4" ry="7" transform="rotate(-25 78 80)" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  <!-- Apple Contour with dimpled top cleft -->
+  <path d="M 106 68 C 110 66 112 66 118 66 C 136 66 156 76 158 106 C 160 136 138 162 118 162 C 114 162 110 160 106 160 C 102 160 98 162 94 162 C 74 162 52 136 54 106 C 56 76 76 66 94 66 C 100 66 102 66 106 68 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Apple Stem Well Basin Depression -->
+  <ellipse cx="106" cy="69" rx="12" ry="4" fill="#7F1D1D" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Crisp Cut Crescent Apple Slice in Foreground Right -->
+  <g clip-path="url(#apple-slice-clip)">
+    <!-- Red outer skin rim -->
+    <rect x="180" y="90" width="75" height="70" fill="#DC2626" />
+    <!-- Pale crisp white-cream flesh -->
+    <path d="M 188 144 C 194 110 218 102 240 116 C 244 134 224 150 204 150 C 196 150 190 146 188 144 Z" fill="#FFFDF0" />
+
+    <!-- Core boundary & dark seed in center -->
+    <path d="M 212 140 C 218 130 220 122 216 116" stroke="#FEF08A" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Teardrop black apple seed -->
+    <path d="M 216 130 C 219 126 223 126 224 130 C 224 134 220 136 217 136 C 215 136 214 133 216 130 Z" fill="#292524" stroke="#1E2A3B" stroke-width="1" />
+  </g>
+  <!-- Slice Contour -->
+  <path d="M 184 146 C 190 106 220 94 246 112 C 250 136 228 156 204 156 C 194 156 188 152 184 146 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+</svg>

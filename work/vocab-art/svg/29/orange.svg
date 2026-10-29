@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:orange (fruit)" data-archetype="hero-object">
+  <defs>
+    <!-- Orange: spherical bright orange citrus, textured peel, leaf, crescent cut wedge showing pulpy orange wedges -->
+    <clipPath id="orange-body-clip">
+      <circle cx="108" cy="110" r="46" />
+    </clipPath>
+    <clipPath id="orange-wedge-clip">
+      <path d="M 174 136 C 182 100 216 90 248 108 C 252 136 226 156 196 156 C 184 156 178 148 174 136 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Floor Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="108" cy="162" rx="48" ry="9" fill="#DDD4C3" />
+  <ellipse cx="212" cy="164" rx="42" ry="8" fill="#DDD4C3" />
+
+  <!-- Wooden Twig & Glossy Dark Green Leaf on Whole Orange -->
+  <!-- Short woody twig -->
+  <line x1="108" y1="64" x2="108" y2="52" stroke="#78350F" stroke-width="4" stroke-linecap="round" />
+  <line x1="108" y1="64" x2="108" y2="52" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <!-- Glossy Leaf -->
+  <path d="M 108 54 C 122 44 142 46 154 58 C 140 68 122 66 108 54 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 108 54 Q 130 56 152 58" stroke="#166534" stroke-width="1.6" fill="none" />
+
+  <!-- Whole Orange on Left -->
+  <g clip-path="url(#orange-body-clip)">
+    <!-- Base vibrant rich orange -->
+    <circle cx="108" cy="110" r="46" fill="#EA580C" />
+    <!-- Center-left sunny highlight zone -->
+    <ellipse cx="96" cy="96" rx="36" ry="32" fill="#F97316" />
+    <!-- Underside shadow -->
+    <path d="M 62 124 C 76 152 128 158 154 136 L 154 158 L 62 158 Z" fill="#9A3412" />
+    <!-- Specular highlight -->
+    <ellipse cx="88" cy="88" rx="14" ry="18" transform="rotate(-25 88 88)" fill="#FDBA74" opacity="0.85" />
+    <ellipse cx="84" cy="82" rx="5" ry="8" transform="rotate(-25 84 82)" fill="#FFEDD5" opacity="0.9" />
+    <!-- Dimpled peel texture -->
+    <circle cx="82" cy="114" r="1.3" fill="#9A3412" />
+    <circle cx="104" cy="128" r="1.3" fill="#9A3412" />
+    <circle cx="126" cy="102" r="1.3" fill="#9A3412" />
+    <circle cx="138" cy="122" r="1.3" fill="#9A3412" />
+  </g>
+  <!-- Orange Contour -->
+  <circle cx="108" cy="110" r="46" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Thick Cut Orange Wedge in Foreground Right -->
+  <g clip-path="url(#orange-wedge-clip)">
+    <!-- Outer orange peel curve -->
+    <rect x="170" y="90" width="86" height="70" fill="#EA580C" />
+    <!-- White pith layer inside peel -->
+    <path d="M 178 136 C 185 106 214 98 242 112 C 246 134 224 150 198 150 C 188 150 182 144 178 136 Z" fill="#FFF7ED" />
+    <!-- Juicy orange meat interior -->
+    <path d="M 182 134 C 188 110 212 104 238 116 C 241 132 222 146 200 146 C 190 146 186 142 182 134 Z" fill="#F97316" />
+
+    <!-- Radiating pulp segment rays -->
+    <path d="M 194 142 L 202 110" stroke="#FFF7ED" stroke-width="1.8" stroke-linecap="round" />
+    <path d="M 208 144 L 218 112" stroke="#FFF7ED" stroke-width="1.8" stroke-linecap="round" />
+    <path d="M 222 138 L 228 118" stroke="#FFF7ED" stroke-width="1.8" stroke-linecap="round" />
+
+    <!-- Glistening juice droplets -->
+    <circle cx="206" cy="126" r="2" fill="#FED7AA" />
+    <circle cx="218" cy="130" r="1.8" fill="#FED7AA" />
+    <circle cx="196" cy="128" r="1.6" fill="#FED7AA" />
+  </g>
+  <!-- Wedge Contour -->
+  <path d="M 174 136 C 182 100 216 90 248 108 C 252 136 226 156 196 156 C 184 156 178 148 174 136 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+</svg>

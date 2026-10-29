@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:nuts" data-archetype="hero-object">
+  <defs>
+    <!-- Nuts: wooden bowl filled with assorted mixed nuts (walnut, peanut, hazelnut, cashew, pistachio) with a nutcracker tool -->
+    <clipPath id="nut-bowl-clip">
+      <ellipse cx="140" cy="116" rx="66" ry="26" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="138" cy="160" rx="66" ry="9" fill="#DDD4C3" />
+  <ellipse cx="236" cy="160" rx="32" ry="6" fill="#DDD4C3" />
+
+  <!-- Wooden Bowl Body (Lower Half) -->
+  <path d="M 72 116 C 72 148 100 156 140 156 C 180 156 208 148 208 116 Z" fill="#92400E" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Wood grain rings on bowl -->
+  <path d="M 88 126 C 98 144 140 148 188 132" stroke="#78350F" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.6" />
+  <ellipse cx="140" cy="116" rx="68" ry="26" fill="#78350F" stroke="#1E2A3B" stroke-width="2.6" />
+  <ellipse cx="140" cy="116" rx="62" ry="23" fill="#451A03" />
+
+  <!-- Piled Assorted Nuts Inside Bowl -->
+  <g clip-path="url(#nut-bowl-clip)">
+    <!-- Base mound fill -->
+    <ellipse cx="140" cy="120" rx="58" ry="22" fill="#B45309" />
+
+    <!-- 1. Furrowed Walnut in Shell (Left-Center) -->
+    <g transform="translate(112, 106)">
+      <ellipse cx="0" cy="0" rx="16" ry="15" fill="#78350F" stroke="#1E2A3B" stroke-width="2" />
+      <path d="M 0 -15 C -2 -6 -2 6 0 15" stroke="#451A03" stroke-width="2" fill="none" />
+      <path d="M -8 -8 C -4 -4 -6 6 -10 10" stroke="#451A03" stroke-width="1.6" fill="none" />
+      <path d="M 8 -8 C 4 -4 6 6 10 10" stroke="#451A03" stroke-width="1.6" fill="none" />
+    </g>
+
+    <!-- 2. Figure-8 Peanut in Shell (Center-Right) -->
+    <g transform="translate(156, 104) rotate(15)">
+      <path d="M -18 0 C -20 -8 -10 -12 0 -6 C 8 -12 18 -8 16 0 C 18 8 8 12 0 6 C -10 12 -20 8 -18 0 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+      <path d="M -14 -2 L 14 -2 M -14 2 L 14 2" stroke="#D97706" stroke-width="1.2" />
+    </g>
+
+    <!-- 3. Round Hazelnut (Upper Center) -->
+    <g transform="translate(136, 96)">
+      <circle cx="0" cy="0" r="12" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8" />
+      <ellipse cx="0" cy="-6" rx="6" ry="2.5" fill="#FDE68A" />
+    </g>
+
+    <!-- 4. Kidney-Shaped Cashew Nut (Front Left) -->
+    <g transform="translate(100, 122) rotate(-20)">
+      <path d="M -12 0 C -4 -10 12 -8 14 2 C 16 10 4 14 -4 10 C -10 6 -14 6 -12 0 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+      <path d="M -4 10 C 6 10 12 4 8 -2" stroke="#FBBF24" stroke-width="1.5" fill="none" />
+    </g>
+
+    <!-- 5. Smiling Open Pistachio (Front Right) -->
+    <g transform="translate(172, 120) rotate(20)">
+      <ellipse cx="0" cy="0" rx="12" ry="9" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.8" />
+      <path d="M -6 -2 Q 0 4 6 -2" stroke="#84CC16" stroke-width="3" fill="none" />
+      <circle cx="0" cy="0" r="2.5" fill="#9333EA" />
+    </g>
+
+    <!-- 6. Almond (Front Center) -->
+    <g transform="translate(136, 124) rotate(10)">
+      <path d="M -14 0 C -8 -8 8 -8 14 0 C 8 8 -8 8 -14 0 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+      <path d="M -8 -2 L 8 -2" stroke="#B45309" stroke-width="1.2" />
+    </g>
+  </g>
+
+  <!-- Front Rim of Wooden Bowl -->
+  <path d="M 72 116 C 72 134 102 142 140 142 C 178 142 208 134 208 116" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Metal Hinged Nutcracker Tool Resting Beside Bowl on Right -->
+  <g transform="translate(236, 126) rotate(40)">
+    <!-- Top arm -->
+    <path d="M 0 0 C 4 -12 28 -18 36 -14 C 28 -8 10 -2 0 0 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Bottom arm -->
+    <path d="M 0 0 C 4 12 28 18 36 14 C 28 8 10 2 0 0 Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Center hinge rivet -->
+    <circle cx="2" cy="0" r="3.5" fill="#475569" stroke="#1E2A3B" stroke-width="1.6" />
+    <!-- Gripping teeth inside jaws -->
+    <path d="M 8 -4 L 10 -2 L 12 -4 L 14 -2 M 8 4 L 10 2 L 12 4 L 14 2" stroke="#1E2A3B" stroke-width="1.5" />
+  </g>
+
+  <!-- One Shelled Walnut Half Resting on Table in Foreground Left -->
+  <g transform="translate(74, 150) rotate(-15)">
+    <path d="M -10 -4 C -14 4 -6 10 0 8 C 8 10 14 4 10 -4 C 4 -8 -4 -8 -10 -4 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <path d="M -4 0 Q 0 4 4 0" stroke="#92400E" stroke-width="1.2" fill="none" />
+  </g>
+</svg>

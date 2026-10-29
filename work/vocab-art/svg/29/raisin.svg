@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:raisin" data-archetype="hero-object">
+  <defs>
+    <!-- Raisin: classic dark brownish-purple wrinkled dried grapes in a ceramic ramekin dish and scattered on table -->
+    <clipPath id="raisin-dish-clip">
+      <ellipse cx="148" cy="120" rx="54" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="148" cy="158" rx="68" ry="10" fill="#DDD4C3" />
+
+  <!-- Ceramic Ramekin Dish Body -->
+  <path d="M 88 120 L 96 150 C 98 156 122 160 148 160 C 174 160 198 156 200 150 L 208 120 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <ellipse cx="148" cy="120" rx="60" ry="26" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2.6" />
+  <ellipse cx="148" cy="120" rx="54" ry="24" fill="#E2E8F0" />
+
+  <!-- Heap of Dark Wrinkled Raisins inside Ramekin -->
+  <g clip-path="url(#raisin-dish-clip)">
+    <!-- Base dark purple-brown heap mound -->
+    <ellipse cx="148" cy="124" rx="50" ry="22" fill="#2E1065" />
+
+    <!-- Individual Wrinkled Dark Raisins -->
+    <!-- Back row -->
+    <ellipse cx="118" cy="112" rx="9" ry="6.5" transform="rotate(-15 118 112)" fill="#4A044E" stroke="#1E1B4B" stroke-width="1.2" />
+    <ellipse cx="134" cy="108" rx="9.5" ry="7" transform="rotate(20 134 108)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.2" />
+    <ellipse cx="150" cy="106" rx="10" ry="7.5" transform="rotate(-10 150 106)" fill="#4A044E" stroke="#1E1B4B" stroke-width="1.2" />
+    <ellipse cx="166" cy="110" rx="9.5" ry="7" transform="rotate(25 166 110)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.2" />
+    <ellipse cx="178" cy="114" rx="8.5" ry="6.5" transform="rotate(-20 178 114)" fill="#3B0764" stroke="#1E1B4B" stroke-width="1.2" />
+
+    <!-- Middle row -->
+    <ellipse cx="114" cy="122" rx="10" ry="7.5" transform="rotate(30 114 122)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="130" cy="118" rx="10.5" ry="8" transform="rotate(-15 130 118)" fill="#6B21A8" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="148" cy="116" rx="11" ry="8.5" transform="rotate(10 148 116)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="166" cy="120" rx="10.5" ry="8" transform="rotate(-25 166 120)" fill="#4A044E" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="182" cy="124" rx="9" ry="7" transform="rotate(15 182 124)" fill="#3B0764" stroke="#1E1B4B" stroke-width="1.4" />
+
+    <!-- Front row -->
+    <ellipse cx="126" cy="130" rx="10.5" ry="8" transform="rotate(-20 126 130)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="144" cy="128" rx="11" ry="8.5" transform="rotate(15 144 128)" fill="#6B21A8" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="162" cy="128" rx="10.5" ry="8" transform="rotate(-10 162 128)" fill="#581C87" stroke="#1E1B4B" stroke-width="1.4" />
+    <ellipse cx="174" cy="132" rx="9" ry="7" transform="rotate(25 174 132)" fill="#4A044E" stroke="#1E1B4B" stroke-width="1.4" />
+
+    <!-- Deep wrinkle folds on dark raisins -->
+    <path d="M 126 116 Q 132 122 136 118" stroke="#2E1065" stroke-width="1.4" fill="none" />
+    <path d="M 144 114 Q 150 120 154 116" stroke="#2E1065" stroke-width="1.4" fill="none" />
+    <path d="M 140 126 Q 146 132 150 128" stroke="#2E1065" stroke-width="1.4" fill="none" />
+    <path d="M 158 126 Q 164 132 168 128" stroke="#2E1065" stroke-width="1.4" fill="none" />
+
+    <!-- Soft powdery frosted highlights -->
+    <ellipse cx="130" cy="116" rx="3.5" ry="2" fill="#C084FC" opacity="0.6" />
+    <ellipse cx="148" cy="114" rx="3.5" ry="2" fill="#C084FC" opacity="0.6" />
+    <ellipse cx="144" cy="126" rx="3.5" ry="2" fill="#C084FC" opacity="0.6" />
+  </g>
+
+  <!-- Front Rim Contour of Ramekin -->
+  <path d="M 88 120 C 88 136 114 146 148 146 C 182 146 208 136 208 120" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Loose Scattered Dark Raisins on Table in Foreground -->
+  <g transform="translate(224, 150) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="9.5" ry="7" fill="#4A044E" stroke="#1E2A3B" stroke-width="1.8" />
+    <path d="M -4 -1 Q 0 3 4 -1" stroke="#2E1065" stroke-width="1.2" fill="none" />
+    <circle cx="1" cy="-2" r="1.2" fill="#C084FC" opacity="0.7" />
+  </g>
+  <g transform="translate(240, 154) rotate(25)">
+    <ellipse cx="0" cy="0" rx="9" ry="6.5" fill="#581C87" stroke="#1E2A3B" stroke-width="1.8" />
+    <path d="M -3 0 Q 0 3 3 0" stroke="#2E1065" stroke-width="1.2" fill="none" />
+  </g>
+  <g transform="translate(74, 150) rotate(20)">
+    <ellipse cx="0" cy="0" rx="9" ry="6.5" fill="#4A044E" stroke="#1E2A3B" stroke-width="1.8" />
+    <path d="M -3 -1 Q 0 2 3 -1" stroke="#2E1065" stroke-width="1.2" fill="none" />
+  </g>
+</svg>

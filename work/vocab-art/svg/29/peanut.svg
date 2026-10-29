@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:peanut" data-archetype="hero-object">
+  <defs>
+    <!-- Peanut: figure-8 reticulated textured shell with waffle ridges, cracked open pod showing two reddish-skin peanut kernels -->
+    <clipPath id="pn-whole-clip">
+      <path d="M 76 112 C 72 90 96 74 116 86 C 126 92 134 92 142 86 C 160 74 184 90 180 112 C 184 134 160 150 142 138 C 134 132 126 132 116 138 C 96 150 72 134 76 112 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="128" cy="158" rx="60" ry="9" fill="#DDD4C3" />
+  <ellipse cx="224" cy="162" rx="36" ry="7" fill="#DDD4C3" />
+
+  <!-- Whole Figure-8 Reticulated Peanut Shell in Background/Left -->
+  <g clip-path="url(#pn-whole-clip)">
+    <!-- Base golden-tan shell color -->
+    <rect x="65" y="70" width="125" height="85" fill="#FBBF24" />
+    <path d="M 70 126 C 90 152 160 152 180 126 L 180 155 L 70 155 Z" fill="#D97706" />
+
+    <!-- Reticulated Mesh / Waffle Net Texture on Peanut Shell -->
+    <!-- Longitudinal wavy grooves -->
+    <path d="M 76 102 C 104 96 150 96 180 102" stroke="#B45309" stroke-width="1.8" fill="none" />
+    <path d="M 76 112 C 104 108 150 108 180 112" stroke="#B45309" stroke-width="2" fill="none" />
+    <path d="M 76 122 C 104 126 150 126 180 122" stroke="#B45309" stroke-width="1.8" fill="none" />
+
+    <!-- Cross-grid waffle ridges -->
+    <path d="M 90 82 Q 88 112 90 142" stroke="#B45309" stroke-width="1.8" fill="none" />
+    <path d="M 104 80 Q 102 112 104 144" stroke="#B45309" stroke-width="1.8" fill="none" />
+    <path d="M 118 86 Q 116 112 118 138" stroke="#B45309" stroke-width="2.2" fill="none" />
+    <path d="M 132 88 Q 134 112 132 136" stroke="#B45309" stroke-width="2.2" fill="none" />
+    <path d="M 148 82 Q 150 112 148 142" stroke="#B45309" stroke-width="1.8" fill="none" />
+    <path d="M 164 82 Q 166 112 164 142" stroke="#B45309" stroke-width="1.8" fill="none" />
+
+    <!-- Raised grid texture flecks -->
+    <circle cx="104" cy="98" r="1.5" fill="#FEF3C7" />
+    <circle cx="104" cy="112" r="1.5" fill="#FEF3C7" />
+    <circle cx="148" cy="98" r="1.5" fill="#FEF3C7" />
+    <circle cx="148" cy="112" r="1.5" fill="#FEF3C7" />
+  </g>
+  <!-- Figure-8 Peanut Shell Contour -->
+  <path d="M 76 112 C 72 90 96 74 116 86 C 126 92 134 92 142 86 C 160 74 184 90 180 112 C 184 134 160 150 142 138 C 134 132 126 132 116 138 C 96 150 72 134 76 112 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Small pointed beak at tip -->
+  <path d="M 76 112 L 70 113" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" />
+
+  <!-- Cracked Open Peanut Pod Half in Foreground Right (Two Red-Skin Kernels) -->
+  <g transform="translate(196, 126) rotate(-10)">
+    <!-- Shell bottom half cradle -->
+    <path d="M -44 0 C -48 20 -28 32 -10 22 C -2 18 6 18 14 22 C 34 32 52 18 48 0 C 44 14 28 20 12 12 C 4 8 -4 8 -12 12 C -28 20 -40 14 -44 0 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+    <!-- White spongy pith inner lining of shell -->
+    <ellipse cx="-22" cy="6" rx="20" ry="12" fill="#FEF9C3" stroke="#D97706" stroke-width="1.2" />
+    <ellipse cx="22" cy="6" rx="20" ry="12" fill="#FEF9C3" stroke="#D97706" stroke-width="1.2" />
+
+    <!-- First Peanut Kernel (Left Cavity) with reddish-brown papery skin -->
+    <ellipse cx="-22" cy="0" rx="16" ry="11" fill="#991B1B" stroke="#1E2A3B" stroke-width="2.2" />
+    <ellipse cx="-22" cy="0" rx="13" ry="8" fill="#B91C1C" />
+    <path d="M -32 -2 Q -22 6 -12 -2" stroke="#7F1D1D" stroke-width="1.4" fill="none" />
+    <!-- Specular highlight on kernel skin -->
+    <ellipse cx="-24" cy="-4" rx="5" ry="3" fill="#FCA5A5" opacity="0.8" />
+    <circle cx="-25" cy="-5" r="1.2" fill="#FFFFFF" />
+
+    <!-- Second Peanut Kernel (Right Cavity) -->
+    <ellipse cx="22" cy="0" rx="16" ry="11" fill="#991B1B" stroke="#1E2A3B" stroke-width="2.2" />
+    <ellipse cx="22" cy="0" rx="13" ry="8" fill="#B91C1C" />
+    <path d="M 12 -2 Q 22 6 32 -2" stroke="#7F1D1D" stroke-width="1.4" fill="none" />
+    <ellipse cx="20" cy="-4" rx="5" ry="3" fill="#FCA5A5" opacity="0.8" />
+    <circle cx="19" cy="-5" r="1.2" fill="#FFFFFF" />
+  </g>
+</svg>

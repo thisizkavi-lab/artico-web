@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="29:grape / grapes" data-archetype="hero-object">
+  <defs>
+    <!-- Grapes: lush cone cluster of purple grapes, woody vine stem, curling tendril, lobed vine leaf -->
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="150" cy="162" rx="48" ry="8" fill="#DDD4C3" />
+
+  <!-- Woody Vine Stem & Twisting Vine Tendril -->
+  <g transform="translate(140, 24)">
+    <!-- Woody main branch -->
+    <path d="M -30 20 C -10 16 10 20 20 36 L 24 48" stroke="#78350F" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <path d="M -30 20 C -10 16 10 20 20 36 L 24 48" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Curling green vine tendril spiral -->
+    <path d="M -8 18 C -14 6 -4 -4 8 2 C 16 8 14 16 8 14" stroke="#65A30D" stroke-width="2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Broad Lobed Grape Vine Leaf on Left -->
+  <g transform="translate(76, 36)">
+    <path d="M 50 40 C 34 30 14 36 8 50 C 4 64 20 74 34 70 C 26 86 44 98 58 90 C 72 96 88 84 80 68 C 96 70 108 58 102 44 C 94 30 74 32 60 40 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+    <!-- Leaf veins -->
+    <path d="M 54 48 L 18 54 M 54 48 L 48 84 M 54 48 L 94 50" stroke="#14532D" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Lush Conical Grape Cluster (Arranged in overlapping depth tiers) -->
+  <g transform="translate(152, 70)">
+    <!-- Tier 1: Top wide row (5 grapes) -->
+    <circle cx="-34" cy="14" r="14" fill="#581C87" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="-16" cy="10" r="14.5" fill="#6B21A8" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="4" cy="8" r="15" fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="22" cy="12" r="14.5" fill="#6B21A8" stroke="#1E2A3B" stroke-width="2.2" />
+    <circle cx="38" cy="18" r="13.5" fill="#581C87" stroke="#1E2A3B" stroke-width="2.2" />
+
+    <!-- Tier 2: Second row (4 grapes) -->
+    <circle cx="-26" cy="32" r="14.5" fill="#6B21A8" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="-8" cy="28" r="15.5" fill="#8B5CF6" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="12" cy="28" r="15.5" fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="30" cy="34" r="14" fill="#581C87" stroke="#1E2A3B" stroke-width="2.4" />
+
+    <!-- Tier 3: Third row (3 grapes) -->
+    <circle cx="-16" cy="50" r="15" fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="4" cy="48" r="16" fill="#9333EA" stroke="#1E2A3B" stroke-width="2.6" />
+    <circle cx="22" cy="52" r="14.5" fill="#6B21A8" stroke="#1E2A3B" stroke-width="2.4" />
+
+    <!-- Tier 4: Fourth row (2 grapes) -->
+    <circle cx="-6" cy="68" r="14.5" fill="#8B5CF6" stroke="#1E2A3B" stroke-width="2.4" />
+    <circle cx="12" cy="70" r="14" fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.4" />
+
+    <!-- Tier 5: Bottom tip grape (1 grape) -->
+    <circle cx="2" cy="88" r="13" fill="#6B21A8" stroke="#1E2A3B" stroke-width="2.4" />
+
+    <!-- Specular Frosted Highlights on Prominent Grapes -->
+    <!-- Center top -->
+    <circle cx="1" cy="5" r="3.5" fill="#C4B5FD" />
+    <circle cx="0" cy="4" r="1.4" fill="#FFFFFF" />
+    <!-- Center mid -->
+    <circle cx="-11" cy="24" r="3.5" fill="#C4B5FD" />
+    <circle cx="-12" cy="23" r="1.4" fill="#FFFFFF" />
+    <circle cx="9" cy="24" r="3.5" fill="#C4B5FD" />
+    <circle cx="8" cy="23" r="1.4" fill="#FFFFFF" />
+    <!-- Hero centerpiece grape -->
+    <circle cx="1" cy="44" r="4" fill="#DDD6FE" />
+    <circle cx="0" cy="43" r="1.6" fill="#FFFFFF" />
+    <!-- Lower grapes -->
+    <circle cx="-9" cy="65" r="3" fill="#C4B5FD" />
+    <circle cx="-10" cy="64" r="1.2" fill="#FFFFFF" />
+    <circle cx="0" cy="84" r="2.8" fill="#C4B5FD" />
+    <circle cx="-1" cy="83" r="1.1" fill="#FFFFFF" />
+  </g>
+
+  <!-- One Plump Loose Grape Resting on Floor beside cluster -->
+  <circle cx="214" cy="156" r="13" fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.4" />
+  <circle cx="211" cy="152" r="3" fill="#DDD6FE" />
+  <circle cx="210" cy="151" r="1.2" fill="#FFFFFF" />
+</svg>

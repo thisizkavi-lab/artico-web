@@ -7,7 +7,7 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 // A reusable teaching panel for Chapters 02–96. Every phrase retains its
 // original ID, context and translation; this component changes only its view.
 export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId }) {
-  const { language, t } = useLanguage()
+  const { language } = useLanguage()
   const items = ids.map(id => byId[id]).filter(Boolean)
   const [selected, setSelected] = useState(() => Math.max(0, ids.indexOf(focusedId)))
   const speechRef = useRef(null)
@@ -51,7 +51,7 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
         {current.art
           ? <img src={art(current.art)} alt="" loading="lazy" />
           : <div className="ar-reference-figures"><i/><i/></div>}
-        <small>{language === 'ja' ? '場面イラスト（準備中）' : 'Placeholder art'}</small>
+        {!current.art && <small>{language === 'ja' ? '場面イラスト（準備中）' : 'Placeholder art'}</small>}
       </div>
       <div className="ar-reference-shelf-main">
         <h3>{title || (language === 'ja' ? '表現を選んで聞く' : 'Choose an expression')}</h3>

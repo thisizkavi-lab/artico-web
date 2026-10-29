@@ -3,38 +3,32 @@ import './GreetingsReferenceStudy.css'
 import { approvedAudio } from './components'
 
 // Chapter 01 study artwork follows the approved five-page Artico reference.
-// Illustrations intentionally remain placeholders until the artwork pass.
+// Seven original transparent Chapter 01 greeting illustrations.
 const VOICE_RATE = 0.91
 
 function Speaker({ name }) {
   return <span className={'ar-avatar ' + (name === 'Casey' ? 'ar-casey' : '')}>{name === 'Casey' ? 'C' : 'A'}</span>
 }
 
+const SCENE_ASSETS = {
+  people: 'everyday.png',
+  time: 'time.png',
+  morning: 'morning.png',
+  group: 'group.png',
+  reunion: 'reunion.png',
+  apart: 'apart.png',
+  friendly: 'friendly.png',
+}
 function PeopleScene({ kind = 'people', compact = false }) {
   return (
-    <div className={'ar-scene ar-scene-' + kind + (compact ? ' ar-compact' : '')}>
-      <span className="ar-placeholder">placeholder art</span>
-      {kind === 'morning' && <span className="ar-sun" aria-hidden="true">☀</span>}
-      {kind === 'time' && <span className="ar-times" aria-hidden="true"><i /><i /><i /></span>}
-      {kind === 'reunion' && <span className="ar-reunion-line" aria-hidden="true"><i /><i /></span>}
-      {kind === 'question' && <span className="ar-question" aria-hidden="true">?</span>}
-      <svg className="ar-people" viewBox={kind === 'group' ? '0 0 300 145' : '0 0 260 160'} aria-hidden="true">
-        <g transform={kind === 'group' ? 'translate(10 0)' : 'translate(44 0)'}>
-          <rect x="0" y="78" width="65" height="81" rx="28" fill="#2f5bea"/>
-          <circle cx="32" cy="59" r="24" fill="#f0c7a5"/>
-          <path d="M8 54 C8 19 58 19 57 54 Q35 41 8 54" fill="#14213d"/>
-          <circle cx="24" cy="61" r="2.7" fill="#14213d"/><circle cx="42" cy="61" r="2.7" fill="#14213d"/>
-          <path d="M26 71 Q33 78 41 70" fill="none" stroke="#14213d" strokeWidth="2.4" strokeLinecap="round"/>
-        </g>
-        {kind === 'group' ? [101,170,239].map((x,i)=><g transform={'translate('+x+' 35)'} key={i}><circle cx="24" cy="51" r="18" fill="#ebc9aa"/><rect x="0" y="73" width="48" height="72" rx="22" fill="#93a4c7"/></g>) :
-          <g transform="translate(145 0)">
-            <rect x="0" y="78" width="65" height="81" rx="28" fill="#c4452c"/>
-            <circle cx="32" cy="59" r="24" fill="#eab58b"/>
-            <path d="M8 54 Q7 23 31 26 L31 17 Q31 13 37 13 L48 13 Q52 13 52 18 L52 27 Q59 32 57 54 Q31 41 8 54" fill="#3b2c24"/>
-            <circle cx="24" cy="61" r="2.7" fill="#14213d"/><circle cx="42" cy="61" r="2.7" fill="#14213d"/>
-            <path d="M26 71 Q33 78 41 70" fill="none" stroke="#14213d" strokeWidth="2.4" strokeLinecap="round"/>
-          </g>}
-      </svg>
+    <div className={'ar-scene ar-illustrated-scene ar-scene-' + kind + (compact ? ' ar-compact' : '')}>
+      <img
+        className="ar-scene-illustration"
+        src={`${import.meta.env.BASE_URL}assets/greetings/${SCENE_ASSETS[kind] || SCENE_ASSETS.people}`}
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
     </div>
   )
 }
@@ -197,7 +191,7 @@ export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
     <section id="study-reunion" className="ar-section" aria-labelledby="ar-head-3">
       <SectionHead index="03" title="Meet again" description={'“Good to see you” expresses pleasure at seeing someone again. “It’s been a while” acknowledges time apart, and “How have you been?” asks about the period since your earlier contact. Learn it as a single usable phrase—you do not need to explain present-perfect grammar to use it.'}/>
       <PhraseShelf title="Seeing someone again" scene="reunion" options={shelfReunion} play={play}/>
-      <PhraseShelf title="Ask about the time apart" scene="reunion" options={shelfApart} play={play}/>
+      <PhraseShelf title="Ask about the time apart" scene="apart" options={shelfApart} play={play}/>
       <aside className="ar-note ar-full-note"><strong>A little nuance · Good to see you vs. Nice to meet you</strong><b>“Good to see you”</b> is common when you meet someone you already know. <b>“Nice to meet you”</b> is the usual expression when meeting someone for the first time. You will practise introductions in Chapter 02.</aside>
     </section>
     <section id="study-casual" className="ar-section" aria-labelledby="ar-head-4">

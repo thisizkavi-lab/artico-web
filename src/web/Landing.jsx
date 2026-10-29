@@ -6,15 +6,16 @@ import CurriculumIcon, { stageIcon } from './CurriculumIcon'
 import { landingCopy } from './landingCopy'
 import './landing.css'
 
-export default function Landing({ last }) {
+export default function Landing() {
   const { language, setLanguage } = useLanguage()
   const copy = landingCopy[language]
   const methodRef = useRef(null)
   const pathRef = useRef(null)
   const mainRef = useRef(null)
   const [selected, setSelected] = useState([false, true])
-  const startHref = last ?? learningStages[0].start
-  const startLabel = last ? copy.resume : copy.start
+  // Enter the app through Home; learners choose their next step there.
+  const startHref = '/home'
+  const startLabel = copy.open
 
   useEffect(() => {
     document.title = 'Artico — One language. Infinite possibilities.'
@@ -46,7 +47,7 @@ export default function Landing({ last }) {
           </button>
           <Button className="al-nav-start" href={startHref}>
             <span className="al-wide-label">{startLabel}</span>
-            <span className="al-short-label">{last ? copy.shortResume : copy.shortStart}</span>
+            <span className="al-short-label">{copy.shortStart}</span>
           </Button>
         </nav>
       </header>

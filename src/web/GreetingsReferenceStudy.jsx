@@ -151,7 +151,7 @@ function CheckInFlow({ play }) {
   const neutral = ["I'm okay.",'Not great.'].map((text,i)=>({text,label:i===0?'3. Neutral or honest replies when things are difficult':null}))
   const back = ['How about you?','You?'].map((text,i)=>({text,label:i===0?'4. Return the question':null,extra:i===0?'Add after your answer':null}))
   return <article className="ar-card ar-flow-card">
-    <div className="ar-flow-header"><p className="ar-overline">YOUR SAMPLE · NOT A SOURCE DIALOGUE</p><button className="ar-play" type="button" onClick={()=>play(['How are you?',selected,'How about you?'])} aria-label="Play sample exchange"><PlaySymbol full/></button></div>
+    <div className="ar-flow-header"><p className="ar-overline">BUILD A SHORT CHECK-IN</p><button className="ar-play" type="button" onClick={()=>play([selectedAsk,selected,selectedReturn])} aria-label="Play your check-in"><PlaySymbol full/></button></div>
     <div className="ar-flow-layout">
       <div className="ar-flow-question-side"><div className="ar-flow-avatar"><Speaker name="Alex"/><b>Alex</b></div><FlowGroup color="blue" options={ask} selected={selectedAsk} onSelect={setSelectedAsk} play={play}/></div>
       <div className="ar-flow-arrow">↓</div>

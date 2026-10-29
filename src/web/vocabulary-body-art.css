@@ -37,8 +37,8 @@
 @keyframes bv-nod{0%,11%,30%,100%{transform:translateY(0) rotate(0)}17%,23%{transform:translateY(7px) rotate(4deg)}}
 @keyframes bv-shake{0%,12%,28%,100%{transform:translateX(0)}15%,23%{transform:translateX(-7px)}19%,26%{transform:translateX(7px)}}
 @keyframes bv-bow{0%,12%,40%,100%{transform:rotate(0)}22%,31%{transform:rotate(19deg)}}
-@keyframes bv-clap-left{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(30px)}}
-@keyframes bv-clap-right{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(-30px)}}
+@keyframes bv-clap-left{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(46px)}}
+@keyframes bv-clap-right{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(-46px)}}
 @keyframes bv-blush{0%,12%,40%,100%{opacity:.22}23%,31%{opacity:1}}
 @keyframes bv-tears{0%,13%,43%,100%{transform:translateY(0);opacity:.5}25%,34%{transform:translateY(15px);opacity:1}}
 @keyframes bv-lick{0%,15%,40%,100%{transform:scaleY(.45)}24%,29%{transform:scaleY(1.15)}}

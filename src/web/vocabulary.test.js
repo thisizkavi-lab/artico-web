@@ -186,3 +186,29 @@ test('Lesson 03 groups weekdays and weekend with their written abbreviations', (
   assert.match(style, /vlt-week-section\.is-weekend/)
   assert.match(style, /@media\(max-width:620px\)/)
 })
+
+
+test('Lesson 03 displays twelve months with their written abbreviations but no day counts', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  const months = lesson.groups[2].items.map(([name]) => name)
+  assert.deepEqual(months, [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const chart = view.slice(view.indexOf('const yearMonths'), view.indexOf('function Visual({visual})'))
+  for (const [name, short] of [
+    ['January', 'Jan.'], ['February', 'Feb.'], ['March', 'Mar.'],
+    ['April', 'Apr.'], ['May', 'May'], ['June', 'Jun.'],
+    ['July', 'Jul.'], ['August', 'Aug.'], ['September', 'Sep.'],
+    ['October', 'Oct.'], ['November', 'Nov.'], ['December', 'Dec.'],
+  ]) assert.ok(chart.includes(`name: '${name}', short: '${short}'`))
+  assert.match(chart, /<th scope="col">#<\/th>/)
+  assert.match(chart, /<MonthsOfYearChart|function MonthsOfYearChart/)
+  assert.doesNotMatch(chart, /daysInMonth|daysPerMonth|28\/29|31 days|30 days/)
+  assert.match(view, /isMonthsChart && mode === 'study'/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-month-table/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})

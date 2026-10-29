@@ -1,3 +1,4 @@
+import { vocabularyAiScene } from './vocabularyAiScene'
 import { vocabularyActionPng } from './vocabularyActionPng'
 import { combinedVocabulary } from './vocabularyDedup'
 import { vocabularyTimePng } from './vocabularyTimePng'
@@ -9,6 +10,8 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
 // Original educational PNGs take precedence over third-party raster art.
 function artworkFor(term, chapter) {
+  const painted = vocabularyAiScene(term, chapter)
+  if (painted) return painted
   const action = vocabularyActionPng(term, chapter)
   if (action) return action
   const time = vocabularyTimePng(term, chapter)

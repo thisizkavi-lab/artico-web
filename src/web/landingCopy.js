@@ -107,8 +107,8 @@ export const landingPageCopy = {
       },
     ],
     journeyTitle: 'The Artico learning journey',
-    journeyAria: 'Four illustrated steps connected by a winding path: Raw mechanics, Social fluency, Application, Apex communicator',
-    illustrationLabels: ['Raw mechanics', 'Social fluency', 'Application', 'Apex communicator'],
+    journeyAria: 'Four illustrated steps connected by a winding path: Raw mechanics, Social fluency, Application, Well-versed communicator',
+    illustrationLabels: ['Raw mechanics', 'Social fluency', 'Application', 'Well-versed communicator'],
     stages: [
       {
         title: '[ Foundations / Raw mechanics ]',
@@ -126,10 +126,9 @@ export const landingPageCopy = {
         description: 'train for what matters: job interviews, storytelling, debates, public speaking, writing — whatever your world needs.',
       },
       {
-        title: '[ Apex Communicator ]',
+        title: '[ Well-Versed Communicator ]',
         tagline: 'language becomes art.',
         description: 'go beyond fluency. think clearly, speak with flow, and express truth with precision. English becomes part of who you are.',
-        note: 'the destination, not a separate course',
       },
     ],
     closing: 'your English journey starts now...',
@@ -237,7 +236,6 @@ export const landingPageCopy = {
         title: '［ 表現の達人 ］',
         tagline: '言葉を、自分の表現に。',
         description: '流暢さの先へ。明確に考え、自然な流れで話し、伝えたいことを正確に表現する。英語が自分の一部になっていきます。',
-        note: '独立したコースではなく、目指す姿です',
       },
     ],
     closing: 'あなたの英語の旅は、ここから。',

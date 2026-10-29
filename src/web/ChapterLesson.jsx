@@ -6,6 +6,7 @@ import { SourceContent } from './ContentBlocks'
 import './chapter.css'
 import './readable-course.css'
 import { sourceChapterId } from './chapterNumbers.js'
+import { selectTeachingNotes } from './teachingNotes.js'
 
 const lessons = import.meta.glob('../course/lessons/*.json', { import: 'default' })
 const japaneseLessons = import.meta.glob('../course/locales/ja/lessons/*.json', { import: 'default' })
@@ -13,11 +14,12 @@ const pending = new Map(),
   resolved = new Map()
 
 function makeModel(source, t) {
-  const sections = source.study.map((section) => ({
+  const teachingNotes = selectTeachingNotes(source.study)
+  const sections = source.study.map((section, sectionIndex) => ({
     id: section.id,
     title: section.title,
     short: section.title,
-    blocks: section.blocks.map((block) =>
+    blocks: section.blocks.map((block, blockIndex) =>
       block.type === 'conversation'
         ? {
             type: 'conversation',
@@ -27,7 +29,13 @@ function makeModel(source, t) {
             alt: `${block.people.join(', ')} — ${section.title}`,
             phrases: block.phraseIds,
           }
-        : { type: 'source', id: block.id, source: block },
+        : {
+            type: 'source',
+            id: block.id,
+            source: teachingNotes[`${sectionIndex}:${blockIndex}`]
+              ? { ...block, teachingNote: teachingNotes[`${sectionIndex}:${blockIndex}`] }
+              : block,
+          },
     ),
   }))
   // Show the complete email and its purpose before the delivery vocabulary.

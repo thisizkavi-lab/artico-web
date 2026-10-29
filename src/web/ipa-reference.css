@@ -1,87 +1,200 @@
-/* The interactive sound tables live inside F03's guided study section. */
-.ipa-reference { width: min(100%, 870px); margin: 15px auto 25px; }
-.ipa-table-heading { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
-.ipa-table-heading h3 { margin: 0; font-weight: 680; font-size: 18px; }
-.ipa-table-count { font-size: 12px; color: var(--muted); font-weight: 630; }
-.ipa-group-description { margin: 0 0 11px; font-size: 13px; line-height: 1.76; max-width: 76ch; color: var(--muted); }
-.ipa-group-description + .ipa-group-description { margin-top: 8px; }
-.ipa-table-section { margin: 20px 0 24px; }
-.ipa-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); }
-.ipa-table-scroll:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 3px; }
-.ipa-table { border-spacing: 0; border-collapse: collapse; width: 100%; text-align: left; }
-.ipa-table th, .ipa-table td { padding: 11px 13px; vertical-align: middle; border-bottom: 1px solid var(--line); font-size: 13px; }
-.ipa-table tr:last-child th, .ipa-table tr:last-child td { border-bottom: 0; }
-.ipa-table thead th { background: var(--paper); color: var(--muted); font-size: 11px; font-weight: 680; white-space: nowrap; }
-.ipa-table tbody .ipa-sound-row { cursor: pointer; }
+/* The reference chart intentionally mirrors the provided IPA table layout. */
+.ipa-reference {
+  --ipa-blue: #0777b9;
+  --ipa-heading: #0641a7;
+  --ipa-green: #20ac09;
+  --ipa-gray: #c4cfd7;
+  width: 100%;
+  max-width: 1100px;
+  margin: 4px auto 25px;
+}
+.ipa-chart-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: clamp(28px, 5vw, 70px);
+  align-items: start;
+}
+.ipa-chart-right { min-width: 0; display: flex; flex-direction: column; gap: 42px; }
+.ipa-table-section { min-width: 0; margin: 0; }
+.ipa-table-heading {
+  margin: 0 0 10px;
+  text-align: center;
+  font-family: Arial, system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ipa-heading);
+}
+.ipa-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 4px #202f380d;
+}
+.ipa-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  table-layout: fixed;
+  font-family: Arial, system-ui, sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+.ipa-table th, .ipa-table td { padding: 8px 9px; }
+.ipa-table thead th {
+  padding: 11px 9px;
+  background: var(--ipa-gray);
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  border-bottom: 1px solid #333;
+}
+.ipa-table tr > :first-child {
+  width: 112px;
+  border-right: 5px solid #9ba0a4;
+}
+.ipa-table tbody tr { border-bottom: 1px solid #373737; }
+.ipa-table tbody tr:last-child { border-bottom: none; }
+.ipa-table tbody .ipa-sound-row { cursor: pointer; height: 46px; }
 .ipa-table tbody .ipa-sound-row:hover,
-.ipa-table tbody .ipa-sound-row:focus-within { background: var(--surface-strong); }
-.ipa-table .ipa-symbol-cell { font-family: Arial, 'Noto Sans', sans-serif; font-size: 21px; font-weight: 650; color: var(--ink); width: 96px; white-space: nowrap; }
-.ipa-table .ipa-word { font-weight: 650; font-size: 14px; min-width: 74px; }
-.ipa-table .ipa-hint { color: var(--muted); line-height: 1.52; }
-.ipa-table .ipa-button-cell, .ipa-table .ipa-audio-heading { width: 66px; text-align: center; }
-.ipa-play { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ip-blue); padding: 0; font: inherit; cursor: pointer; }
-.ipa-play svg { display: block; flex: none; }
-.ipa-play:hover { border-color: var(--ip-blue); background: var(--surface-strong); }
-.ipa-play:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
-.ipa-status { min-height: 22px; font-size: 12px; color: var(--muted); margin: 7px 0 15px; }
+.ipa-table tbody .ipa-sound-row:focus-within { background: #f5faff; }
+.ipa-table .ipa-symbol-cell {
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: middle;
+}
+.ipa-symbol-cell > span { vertical-align: middle; }
+.ipa-table .ipa-word {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.ipa-reference .ipa-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  padding: 0;
+  color: var(--ipa-blue);
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.ipa-reference .ipa-play svg { display: block; flex: none; }
+.ipa-reference .ipa-play:hover { background: #e4f4ff; color: #005a95; }
+.ipa-reference .ipa-play:focus-visible,
+.ipa-reference .ipa-example:focus-visible { outline: 2px solid var(--ipa-blue); outline-offset: 2px; }
+.ipa-examples { display: block; }
+.ipa-example-entry { display: inline; white-space: nowrap; }
+.ipa-comma { white-space: pre; }
+.ipa-reference .ipa-example {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #333;
+  font: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.ipa-reference .ipa-example:hover { text-decoration: underline; text-decoration-color: var(--ipa-blue); }
+.ipa-reference .ipa-example mark {
+  color: var(--ipa-green);
+  background: transparent;
+  font-weight: 750;
+  padding: 0;
+}
+.ipa-context-note { margin-left: 5px; font-weight: 400; white-space: normal; }
+.ipa-study-hint {
+  margin: 14px 0 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted, #5a6670);
+}
+.ipa-study-caveat { font-style: italic; }
+.ipa-status { min-height: 20px; font-size: 12px; color: var(--muted, #5a6670); margin: 8px 0; }
+
+/* The practice player uses the same type and highlighting, not pill words. */
 .ipa-practice { max-width: 740px; }
 .ipa-practice > h2 { margin: 7px 0 9px; }
 .ipa-practice > .ip-context { max-width: 65ch; margin-bottom: 22px; }
-.ipa-focus { display: flex; flex-direction: column; align-items: center; gap: 13px; padding: 26px 20px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); }
-.ipa-focus-top { display: flex; align-items: center; justify-content: center; gap: 25px; }
+.ipa-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  padding: 26px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.ipa-focus-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 25px; }
 .ipa-focus-top .ip-kicker { font-size: 10px; }
-.ipa-focus-symbol { min-width: 115px; text-align: center; font-family: Arial, 'Noto Sans', sans-serif; font-size: clamp(42px, 7vw, 66px); font-weight: 600; color: var(--ink); }
-.ipa-focus-top h3 { margin: 5px 0 0; font-size: 23px; font-weight: 620; }
+.ipa-focus-symbol {
+  min-width: 100px;
+  text-align: center;
+  font-family: Arial, system-ui, sans-serif;
+  font-size: clamp(42px, 7vw, 62px);
+  font-weight: 600;
+  color: var(--ipa-heading);
+}
 .ipa-focus > p { margin: 0; font-size: 13px; line-height: 1.7; text-align: center; color: var(--muted); }
-.ipa-focus .ipa-main-play { margin: 7px 0; width: 46px; height: 46px; }
+.ipa-focus .ipa-main-play { margin: 3px 0; width: 46px; height: 46px; }
+.ipa-focus .ipa-main-play svg { width: 27px; height: 27px; }
+.ipa-focus .ipa-examples { margin-top: 8px; }
+.ipa-focus .ipa-example { font-size: 18px; }
 .ipa-focus--playable { cursor: pointer; }
-.ipa-focus--playable:hover, .ipa-focus--playable:focus-within { border-color: var(--ip-blue); }
+.ipa-focus--playable:hover, .ipa-focus--playable:focus-within { border-color: var(--ipa-blue); }
 .ipa-focus .ipa-instruction { font-size: 12px; }
 .ipa-pick { border-top: 1px solid var(--line); padding-top: 22px; }
 .ipa-pick h3 { margin: 0 0 17px; font-size: 18px; font-weight: 650; }
 .ipa-pick section { margin: 15px 0 20px; }
 .ipa-pick h4 { margin: 0 0 8px; font-size: 12px; color: var(--muted); font-weight: 650; }
 .ipa-symbol-selector { display: flex; flex-wrap: wrap; gap: 7px; }
-.ipa-symbol-selector button { min-width: 58px; min-height: 42px; padding: 6px 8px; border-radius: 9px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); font-size: 16px; font-weight: 620; cursor: pointer; }
-.ipa-symbol-selector button:hover:not([aria-pressed="true"]) { border-color: var(--ip-blue); background: var(--surface-strong); }
-.ipa-symbol-selector button[aria-pressed="true"] { background: var(--forest); color: white; border-color: var(--forest); }
-.ipa-symbol-selector button:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
-@media (max-width: 640px) {
-  .ipa-table th, .ipa-table td { padding: 10px 9px; }
-  .ipa-table .ipa-symbol-cell { font-size: 19px; width: 67px; }
-  .ipa-table .ipa-word { font-size: 12px; min-width: 47px; }
-  .ipa-table .ipa-hint { font-size: 12px; }
-  .ipa-table .ipa-button-cell, .ipa-table .ipa-audio-heading { width: 50px; }
-  .ipa-play { width: 36px; height: 36px; }
+.ipa-symbol-selector button {
+  min-width: 58px;
+  min-height: 42px;
+  padding: 6px 8px;
+  border-radius: 9px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 620;
+  cursor: pointer;
+}
+.ipa-symbol-selector button:hover:not([aria-pressed="true"]) { border-color: var(--ipa-blue); background: var(--surface-strong); }
+.ipa-symbol-selector button[aria-pressed="true"] { background: var(--ipa-heading); color: #fff; border-color: var(--ipa-heading); }
+.ipa-symbol-selector button:focus-visible { outline: 2px solid var(--ipa-blue); outline-offset: 2px; }
+@media (max-width: 870px) {
+  .ipa-chart-grid { grid-template-columns: 1fr; row-gap: 32px; max-width: 580px; margin: 0 auto; }
+  .ipa-chart-right { gap: 32px; }
+}
+@media (max-width: 480px) {
+  .ipa-table tr > :first-child { width: 82px; border-right-width: 4px; }
+  .ipa-table th, .ipa-table td { padding: 8px 5px; }
+  .ipa-table .ipa-word { font-size: 13px; }
+  .ipa-table thead th { font-size: 14px; }
+  .ipa-reference .ipa-play { width: 23px; height: 26px; margin-right: 4px; }
+  .ipa-reference .ipa-play svg { width: 19px; height: 19px; }
+  .ipa-table .ipa-symbol-cell { font-size: 14px; }
+  .ipa-table-heading { font-size: 23px; }
   .ipa-focus { padding: 22px 12px; }
   .ipa-symbol-selector button { min-width: 53px; }
-}
-/* Reference-style sound → highlighted spelling → recorded examples. */
-.ipa-study-hint { margin: 4px 0 14px; font-size: 13px; line-height: 1.7; color: var(--muted); }
-.ipa-table-section { margin: 24px 0 29px; }
-.ipa-table-heading h3 { font-size: 19px; }
-.ipa-table th, .ipa-table td { padding: 12px 16px; }
-.ipa-table .ipa-symbol-cell { width: 153px; min-width: 135px; font-size: 20px; }
-.ipa-symbol-cell > span { display: inline-block; min-width: 64px; }
-.ipa-symbol-cell .ipa-play { vertical-align: middle; margin-left: 6px; width: 32px; height: 32px; }
-.ipa-table .ipa-word { width: auto; font-size: 15px; }
-.ipa-examples { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
-.ipa-example { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; border: 1px solid var(--line); border-radius: 9px; padding: 5px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: 16px; font-weight: 600; line-height: 1.4; cursor: pointer; transition: background 120ms, border-color 120ms; }
-.ipa-example mark { padding: 1px 2px; border-radius: 3px; color: inherit; background: #f9e59a; font-weight: 800; }
-.ipa-example svg { opacity: 0.65; color: var(--ip-blue); flex: none; }
-.ipa-example:hover { background: var(--surface-strong); border-color: var(--ip-blue); }
-.ipa-example:hover svg { opacity: 1; }
-.ipa-example:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
-.ipa-focus .ipa-examples { justify-content: flex-start; margin-top: 8px; }
-.ipa-focus-top { align-self: stretch; justify-content: center; flex-wrap: wrap; }
-.ipa-focus-symbol { min-width: 95px; }
-.ipa-practice .ipa-example { min-height: 43px; }
-@media (max-width: 640px) {
-  .ipa-table th, .ipa-table td { padding: 11px 9px; }
-  .ipa-table .ipa-symbol-cell { width: 96px; min-width: 92px; }
-  .ipa-symbol-cell > span { min-width: 0; display: block; margin-bottom: 5px; }
-  .ipa-symbol-cell .ipa-play { margin-left: 0; }
-  .ipa-examples { gap: 6px; }
-  .ipa-example { font-size: 14px; padding: 5px 8px; min-height: 36px; }
-  .ipa-example svg { width: 12px; }
 }

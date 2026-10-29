@@ -402,7 +402,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.match(shell, /<Application route=\{route\}/)
   assert.match(shell, /href="#\/home" aria-label=\{t\("Home"\)\}/)
   assert.match(progress, /aw-progress-resume/)
-  assert.match(landing, /al-footer-logo artico-wordmark" href="#\/home"/)
+  assert.match(landing, /al-footer-logo artico-wordmark" href="#\/landing"/)
   assert.equal((home.match(/id:'(?:orientation|foundation|social|application)'/g) ?? []).length, 4)
   for(const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/application'])
     assert.ok(home.includes("href:'" + href + "'"), href)

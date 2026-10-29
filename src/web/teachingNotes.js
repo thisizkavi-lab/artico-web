@@ -26,6 +26,26 @@ const editorialTitles = {
   'ch96-b5': 'An idiom is never required',
 }
 
+const editorialJapaneseTitles = {
+  'ch03-b2': '短い言葉にも、それぞれの役割がある',
+  'ch03-b11': '聞いていることと、賛成することは別',
+  'ch04-b2': '表現の意味を確認する',
+  'ch05-b4': '“I’m good” の二つの使い方',
+  'ch06-b8': '理解と賛成は同じではない',
+  'ch08-b11': '“You shouldn’t have” は感謝も表す',
+  'ch10-b6': '“Good evening” と “Good night” の違い',
+  'ch14-b4': 'step- と half- の違い',
+  'ch21-b6': '“For here” と “To go” の違い',
+  'ch21-b11': '好みとアレルギーは違う質問',
+  'ch24-b10': '材料とアレルゲンの混入は別の問題',
+  'ch24-b19': '割り勘の二つの頼み方',
+  'ch52-b5': '相談中と承認済みは別',
+  'ch68-b5': '出発時刻・搭乗時刻・ゲート閉鎖',
+  'ch80-b6': '症状と原因を区別する',
+  'ch90-b7': '電話での “breaking up” の意味',
+  'ch96-b5': 'イディオムを使わなくても伝えられる',
+}
+
 const strongEnglish = /\b(?:not|doesn't|don't|isn't|aren't|cannot|can't|rather than|instead|different|depends?|not always|never|without|not every|not the same|does not|do not|not a|unless|but|however)\b/i
 const weakEnglish = /\b(?:means?|can also|may|might|often|sometimes|usually|in this (?:case|scene|exchange)|here)\b/i
 const specialEnglish = /\b(?:has different uses|have different uses|the same words|different meaning|two uses|depends on the (?:context|situation)|not interchangeable)\b/i
@@ -60,7 +80,9 @@ function scoreExplanation(block, previous) {
 function defaultTitle(block, previous, language) {
   const text = toText(block)
   const isJapanese = language === 'ja' || /[\u3040-\u30ff\u3400-\u9fff]/.test(text)
-  if (editorialTitles[block.id]) return editorialTitles[block.id]
+  if (editorialTitles[block.id]) return isJapanese
+    ? editorialJapaneseTitles[block.id] || '覚えておきたいポイント'
+    : editorialTitles[block.id]
   if (specialEnglish.test(text) || specialJapanese.test(text))
     return isJapanese ? '同じ表現でも意味が変わる' : 'The meaning depends on context'
   if (/(?:\bdifferent\b|\bnot the same\b|\bnot interchangeable\b|区別|異な|別の|違い)/i.test(text))

@@ -90,7 +90,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: public/audio/ipa-one-voice
-          key: artico-ipa-one-voice-v1-${{ hashFiles('scripts/generate_ipa_single_voice.py', 'src/web/ipaSounds.js') }}
+          key: artico-ipa-one-voice-v1-${{ hashFiles('scripts/generate_ipa_single_voice.py', 'src/web/ipaSounds.js', 'src/web/ipaExamples.json') }}
 
       - name: Generate every IPA word with one American voice
         if: steps.ipa-one-voice-cache.outputs.cache-hit != 'true'
@@ -110,10 +110,10 @@ jobs:
           entries=manifest['entries']
           assert len(entries)==41, f"Wrong entry count: {len(entries)}"
           examples=manifest['examples']
-          assert len(examples)==41
+          assert len(examples)==43
           files={e['file'] for e in entries}
           for ipa, words in examples.items():
-              assert len(words)==2, ipa
+              assert 2 <= len(words) <= 4, ipa
               files.update(example['file'] for example in words)
           assert len(files)==manifest['unique_audio_count']
           for filename in files:

@@ -13,7 +13,8 @@ function readEntry() {
 // A bookmarked Home URL should still introduce the public landing page on a
 // fresh visit. In-app navigation to #/home remains unchanged.
 function readInitialEntry() {
-  if (/^#\\/home\\/?(?:\\?.*)?$/.test(window.location.hash)) {
+  const initialPath = window.location.hash.slice(1).split('?')[0].replace(/\/$/, '')
+  if (initialPath === '/home') {
     window.history.replaceState(
       window.history.state,
       '',

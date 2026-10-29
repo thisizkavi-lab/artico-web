@@ -31,7 +31,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF', resultTitle:'英語を話す、未来の自分。',
     why:'あなたが英語を学ぶ理由（仮）', imagine:'こんな会話をしている自分を想像してみて。',
     you:'YOU', other:'THEM', otherSelves:'ほかの可能性も見てみる',
-    suggested:'おすすめ',
+    suggested:'おすすめ', edit:'回答を変更する',
   },
   en: {
     intro:'Meet your English-speaking self.',start:'YOUR ENGLISH SELF',counter:'STEP',
@@ -39,7 +39,7 @@ const copy = {
     resultEyebrow:'IMAGINE YOURSELF',resultTitle:'A future you, speaking English.',
     why:'A possible reason to learn',imagine:'Picture yourself saying this.',
     you:'YOU',other:'THEM',otherSelves:'Explore other possibilities',
-    suggested:'Suggested',
+    suggested:'Suggested', edit:'Edit my answers',
   },
 }
 
@@ -204,6 +204,7 @@ export default function OrientationPractice({ learning, update }) {
             <span>{l.why}</span>
             <p>{language==='ja' ? result.tentativeWhyJa : result.tentativeWhyEn}</p>
           </div>
+          <button type="button" className="rf-persona-edit" onClick={() => setStep(0)}>{l.edit} →</button>
           <div className="rf-persona-collection">
             <h4>{l.otherSelves}</h4>
             <div className="rf-persona-strip" role="group" aria-label={l.otherSelves}>

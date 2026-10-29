@@ -417,10 +417,111 @@ const newBuilds = {
 
 const recordedWhole = new Set(['ice-cream','big-black-bug','seashells','unique-new-york','red-lorry','free-throws','slippery-snails','fresh-flesh','two-witches'])
 
+// Plain-language context shown next to the complete line in Study.
+// These explain what the learner can notice; they don't promise fluency from repetition.
+const practiceReasons = {
+  "ice-cream": {
+    "en": "“I scream” and “ice cream” can sound almost the same. Practice moving from the S sound straight into the C and R in “scream.”",
+    "ja": "「I scream」と「ice cream」は、つなげるとよく似た音になります。「scream」の s・c・r を、間に余分な音を入れずにつなぐ練習です。"
+  },
+  "big-black-bug": {
+    "en": "Words such as “big,” “black,” and “bug” all start with B, but the sounds that follow change. Practice saying each word clearly without mixing them up.",
+    "ja": "「big」「black」「bug」は全部 b で始まりますが、その後の音が違います。似た言葉を続けても、一つずつはっきり言う練習です。"
+  },
+  "seashells": {
+    "en": "“See” and “she” begin with different sounds. This line helps you switch between the S in “see” and the SH in “she.”",
+    "ja": "「see」と「she」は、最初の音が違います。この早口言葉では、s と sh を何度も切り替える練習ができます。"
+  },
+  "buggy-bumpers": {
+    "en": "In words like “rubber” and “baby,” your mouth keeps changing between R and B sounds. Practice switching without muddling the words.",
+    "ja": "「rubber」と「baby」など、r と b の音が続きます。似た言葉が並んでも、口の動きを切り替える練習です。"
+  },
+  "unique-new-york": {
+    "en": "This short line is surprisingly easy to tangle. Try keeping the end of “unique” clear as you move into “New York.”",
+    "ja": "「unique」の最後の音から「New York」へ移るとき、音が混ざりやすくなります。言葉の終わりを消さずにつなげる練習です。"
+  },
+  "red-lorry": {
+    "en": "If “right” and “light” are hard to tell apart, this line helps you practice R and L back to back. “Lorry” is British English for “truck.”",
+    "ja": "「right」と「light」の違いが難しい人向けの r と l の練習です。ちなみに「lorry」は主にイギリス英語で、アメリカでは普通「truck」と言います。"
+  },
+  "red-leather": {
+    "en": "You switch between the R in “red,” the L in “leather,” and the TH sound in “leather.” That same TH sound appears in “this.”",
+    "ja": "「red」の r、「leather」の l と th を切り替える練習です。この th は「this」にも出てくる音です。"
+  },
+  "toy-boat": {
+    "en": "“Toy” changes vowel sound as you say it; so does “boat,” but in a different way. Practice keeping them distinct as you repeat the phrase.",
+    "ja": "「toy」と「boat」は、どちらも途中で母音の響きが変わりますが、変わり方が違います。二つを混ぜずに言う練習です。"
+  },
+  "elephants": {
+    "en": "“Eleven” has a V sound, while “elephants” has an F sound. Listen for the difference, as in everyday words “very” and “fun.”",
+    "ja": "「eleven」には v、「elephants」には f の音があります。「very」と「fun」のように、声を出す音と息だけの音を意識する練習です。"
+  },
+  "oyster": {
+    "en": "“Noisy,” “noise,” and “annoys” share similar sounds. Keep the OY sound, as in “boy,” and the Z sound clear as the words change.",
+    "ja": "「noisy」「noise」「annoys」には似た音が続きます。「boy」にもある oy の音と、z の音をはっきり言う練習です。"
+  },
+  "free-throws": {
+    "en": "The first sounds in “three” and “free” are different. Practice moving between the TH in “three” and the F in “free.”",
+    "ja": "「three」と「free」は、最初の音が違います。th と f を同じ音にせず、切り替える練習です。"
+  },
+  "slippery-snails": {
+    "en": "English puts consonants together, as in “sleep” and “snow.” Practice moving from S straight into L or N without adding an extra vowel.",
+    "ja": "英語の「sleep」や「snow」は、s のすぐ後に l や n が続きます。間に余分な「ウ」を入れずにつなぐ練習です。"
+  },
+  "fresh-flesh": {
+    "en": "“Fresh” starts with FR, while “flesh” starts with FL. Practice keeping R and L different even after an F sound.",
+    "ja": "「fresh」は fr、「flesh」は fl で始まります。f の後でも r と l をきちんと区別する練習です。"
+  },
+  "rural-repeater": {
+    "en": "R and L keep appearing in “truly rural.” It helps you practice the switching you also need in common words such as “really.”",
+    "ja": "「truly rural」では r と l が何度も出てきます。「really」のような普段使う言葉でも役立つ音の切り替え練習です。"
+  },
+  "clam-cream-can": {
+    "en": "“Clean” starts with CL and “cream” with CR. This question makes you switch between L and R without losing the first C sound.",
+    "ja": "「clean」は cl、「cream」は cr で始まります。最初の c の音を保ちながら、l と r を切り替える練習です。"
+  },
+  "coffee-cup": {
+    "en": "“Cup” and “coffee” start with different sounds. Practice switching C and P in words like “copper” and “proper,” without swapping the words.",
+    "ja": "「cup」「coffee」「proper」「copper」には、c と p で始まる言葉が続きます。最初の音を取り違えずに言う練習です。"
+  },
+  "bear-rhyme": {
+    "en": "The rhyme repeats F, W and Z sounds, as in “fun,” “we,” and “zoo.” Practice moving through them while keeping the joke easy to follow.",
+    "ja": "「fun」の f、「we」の w、「zoo」の z が繰り返し出てきます。音を切り替えながら、三つの文を自然につなぐ練習です。"
+  },
+  "two-witches": {
+    "en": "“Which” and “witch” sound the same for many American speakers. The challenge is keeping “witch,” “watch,” and “watches” in the right order, with clear W and CH sounds.",
+    "ja": "多くのアメリカ英語では「which」と「witch」は同じ発音です。「witch」「watch」「watches」を取り違えず、w と ch をはっきり言う練習です。"
+  },
+  "menagerie": {
+    "en": "“Imagine,” “imaginary,” and “manager” look and sound similar, but each has its own rhythm. Practice keeping long words clear without swapping their parts.",
+    "ja": "「imagine」「imaginary」「manager」は似ていますが、強く読むところやリズムが違います。長い言葉を混ぜずに言う練習です。"
+  },
+  "thursday-challenge": {
+    "en": "The TH in “three” is different from the TH in “that.” This line puts both kinds close together, so you can practice switching between them.",
+    "ja": "「three」の th と「that」の th は違う音です。この文には両方が続けて出てくるので、切り替える練習になります。"
+  },
+  "weather-verse": {
+    "en": "“Weather” and “whether” sound the same for many speakers, even though they mean different things. Practice the W and TH sounds while keeping the long sentence flowing.",
+    "ja": "「weather」と「whether」は、つづりと意味が違っても同じ発音です。w と th の音を保ちながら、長い文を自然につなぐ練習です。"
+  },
+  "peter-piper": {
+    "en": "“Pick” and “peck” start alike but have different vowel sounds. This classic also helps you keep the ends of words like “picked” and “pickled” clear.",
+    "ja": "「pick」と「peck」は最初が似ていますが、母音が違います。「picked」「pickled」の語尾も消さずに言う練習です。"
+  },
+  "woodchuck": {
+    "en": "“Wood” and “would” sound the same. “Could” has the same short vowel, too. Practice these familiar words while keeping the W and CH sounds clear.",
+    "ja": "「wood」と「would」は同じ発音で、「could」にも同じ短い母音があります。よく使う言葉の音を保ちながら、w と ch を練習します。"
+  },
+  "betty-botter": {
+    "en": "“Butter,” “bitter,” “batter,” and “better” look similar but don't all sound alike. Practice their different vowels and the natural American rhythm.",
+    "ja": "「butter」「bitter」「batter」「better」は、見た目が似ていても母音が違います。その違いと、自然なアメリカ英語のリズムを練習します。"
+  }
+}
+
 export const twisterCards = selected.map(item => {
   const old = originals.get(item.id)
   const buildSteps = newBuilds[item.id] || (old && old.phrase === item.phrase ? old.buildSteps : [item.phrase])
-  return { ...item, buildSteps, hasFullAudio: recordedWhole.has(item.id), hasChunkAudio: Boolean(old && old.phrase === item.phrase && recordedWhole.has(item.id)) }
+  return { ...item, whyEn: practiceReasons[item.id].en, whyJa: practiceReasons[item.id].ja, buildSteps, hasFullAudio: recordedWhole.has(item.id), hasChunkAudio: Boolean(old && old.phrase === item.phrase && recordedWhole.has(item.id)) }
 })
 
 export function twisterAudioSource(item, step = null) {

@@ -33,11 +33,15 @@ export function TongueTwisterStudy() {
             <header className="tt-level-heading"><span>LEVEL {level.number}</span><h3>{ja ? level.ja : level.en}</h3></header>
             <div className="tt-card-grid">
               {twisterCards.filter(item => item.level === level.number).map(item => (
-                <article key={item.id} className={`tt-study-card${item.phrase.length > 165 ? ' tt-long' : ''}`}>
-                  <div className="tt-card-label"><span>{item.number}</span><h4>{item.title}</h4></div>
-                  <p className="tt-verse" lang="en">{item.phrase}</p>
-                  <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} />
-                  {!item.hasFullAudio && <p className="tt-pending-audio">{ja ? 'この全文の音声は準備中です。' : 'Full recording coming soon.'}</p>}
+                <article key={item.id} className={`tt-study-item${item.phrase.length > 165 ? ' tt-long' : ''}`}>
+                  <header className="tt-card-label"><span>{item.number}</span><h4>{item.title}</h4></header>
+                  <div className="tt-study-card">
+                    <p className="tt-verse" lang="en">{item.phrase}</p>
+                    {twisterAudioSource(item) && (
+                      <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact />
+                    )}
+                    <p className="tt-why">{ja ? item.whyJa : item.whyEn}</p>
+                  </div>
                 </article>
               ))}
             </div>
@@ -73,8 +77,7 @@ export function TongueTwisterPractice({ initialId }) {
         <h3 lang="en">{phrase}</h3>
         {ja && <p className="tt-practice-meaning">{item.meaningJa}</p>}
         <p>{ja ? item.tipJa : item.tipEn}</p>
-        {src ? <TheoryAudioSample key={`${id}-${step}`} phrase={phrase} target={item.target} src={src} />
-          : <p className="tt-pending-audio" role="status">{ja ? '音声は準備中です。テキストを見ながら練習できます。' : 'Recording coming soon. You can still practice with the text.'}</p>}
+        {src && <TheoryAudioSample key={`${id}-${step}`} phrase={phrase} target={item.target} src={src} compact />}
       </div>
       <div className="ip-session-nav">
         <button className="ip-secondary" type="button" disabled={step === 0} onClick={() => setStep(n => n - 1)}>

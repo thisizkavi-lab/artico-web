@@ -961,7 +961,7 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
-export function TheoryAudioSample({ phrase, target, src }) {
+export function TheoryAudioSample({ phrase, target, src, compact = false }) {
   const { t, language } = useLanguage()
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
@@ -1032,6 +1032,14 @@ export function TheoryAudioSample({ phrase, target, src }) {
     }
   }
 
+  const seek = (value) => {
+    const audio = audioRef.current
+    if (!audio || !Number.isFinite(audio.duration) || audio.duration <= 0) return
+    const next = Math.max(0, Math.min(100, value))
+    audio.currentTime = (next / 100) * audio.duration
+    setProgress(next)
+  }
+
   const cycleSpeed = () => {
     if (!src) return
     const speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
@@ -1055,7 +1063,7 @@ export function TheoryAudioSample({ phrase, target, src }) {
   }
 
   return (
-    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}`}>
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}`}>
       {src && <audio ref={audioRef} src={src} preload="metadata" />}
       <div className="theory-audio-head">
         <button
@@ -1067,22 +1075,40 @@ export function TheoryAudioSample({ phrase, target, src }) {
         >
           <PlayIcon pause={playing} />
         </button>
-        <div className="theory-audio-waveform" aria-hidden="true">
-          {[
-            20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32,
-            46, 26,
-          ].map((height, index) => (
-            <i key={index} style={{ height }} />
-          ))}
-        </div>
-        <div className="theory-audio-times">
-          <span>{formatTime((progress / 100) * duration)}</span>
-          <span>{duration ? formatTime(duration) : '--:--'}</span>
-        </div>
+        {compact ? (
+          <input
+            className="tt-audio-progress"
+            type="range"
+            min="0"
+            max="100"
+            step="0.1"
+            value={progress}
+            onChange={(event) => seek(Number(event.target.value))}
+            style={{ '--tt-audio-progress': `${progress}%` }}
+            aria-label={language === 'ja' ? '再生位置' : 'Playback progress'}
+          />
+        ) : (
+          <>
+            <div className="theory-audio-waveform" aria-hidden="true">
+              {[
+                20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32,
+                46, 26,
+              ].map((height, index) => (
+                <i key={index} style={{ height }} />
+              ))}
+            </div>
+            <div className="theory-audio-times">
+              <span>{formatTime((progress / 100) * duration)}</span>
+              <span>{duration ? formatTime(duration) : '--:--'}</span>
+            </div>
+          </>
+        )}
       </div>
-      <div className="theory-audio-track">
-        <span style={{ width: `${progress}%` }} />
-      </div>
+      {!compact && (
+        <div className="theory-audio-track">
+          <span style={{ width: `${progress}%` }} />
+        </div>
+      )}
       <div className="theory-audio-controls">
         <button type="button" onClick={rewind} disabled={!src} aria-label={t('Replay')}>
           ↶ <span>{t('Replay')}</span>
@@ -1105,7 +1131,7 @@ export function TheoryAudioSample({ phrase, target, src }) {
         >
           ↻ <span>{t("Loop")}</span>
         </button>
-        <small>{src ? t("Existing audio sample") : t("Recording coming soon")}</small>
+        {!compact && <small>{src ? t("Existing audio sample") : t("Recording coming soon")}</small>}
       </div>
     </div>
   )

@@ -176,7 +176,7 @@ test('English and Japanese landing copy translates every visible area with match
   assert.notEqual(landingPageCopy.en.start, landingPageCopy.ja.start)
   for (const token of [
     'copy.heroTitle[0]', 'copy.heroTitle[1]', 'copy.heroDescription',
-    'copy.whyParagraphs.map', 'copy.stages.map', 'copy.illustrationLabels[0]',
+    'copy.whyParagraphs.map', 'copy.stages.map', 'copy.illustrationLabels[index]',
     'copy.whyLink', 'copy.journeyLink', 'copy.closing', 'copy.footerTagline',
     'copy.footerHowTo', 'copy.footerFeedback', 'copy.pageTitle',
   ]) assert.ok(landing.includes(token), token)

@@ -470,25 +470,10 @@ a.al-journey-card:hover {
 
 /* Closing CTA and footer inspired by the supplied reference. */
 .al-final-cta {
-  position: relative;
-  isolation: isolate;
   display: grid;
   align-items: center;
-  overflow: hidden;
   min-height: 270px;
   background: #fff;
-}
-.al-final-cta::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: -180px;
-  left: 3%;
-  width: 68%;
-  height: 490px;
-  background: radial-gradient(ellipse, rgba(42, 42, 42, .18) 0%, rgba(80, 80, 80, .10) 38%, transparent 74%);
-  filter: blur(22px);
-  pointer-events: none;
 }
 .al-final-cta-inner {
   width: min(100%, 1600px);
@@ -507,6 +492,7 @@ a.al-journey-card:hover {
   letter-spacing: -.04em;
   font-weight: 800;
   color: #060606;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .14);
 }
 .al-final-cta-button {
   flex: 0 0 auto;
@@ -637,7 +623,6 @@ a.al-journey-card:hover {
   .al-journey-card > p:not(.al-journey-tagline) { font-size: 13px; }
   .al-journey-footnote { margin-top: 25px !important; padding: 0 8px; }
   .al-final-cta { min-height: 0; }
-  .al-final-cta::before { left: -60%; width: 170%; height: 340px; top: -120px; }
   .al-final-cta-inner { display: flex; flex-direction: column; align-items: flex-start; gap: 35px; padding: 72px 24px 62px; }
   .al-final-cta h2 { font-size: clamp(33px, 8vw, 49px); }
   .al-final-cta-button { min-width: 190px; min-height: 58px; font-size: 19px; }

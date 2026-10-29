@@ -57,6 +57,29 @@ test('landing uses a full-height illustrated hero with a working blue entry and 
   assert.equal((landing.match(/<mark>/g) ?? []).length, 9)
 })
 
+test('landing journey maps active stages to real routes and identifies the aspirational destination', () => {
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
+  for (const href of ['#/courses?foundation', '#/courses?social', '#/application']) {
+    assert.ok(landing.includes('href="' + href + '"'), href)
+  }
+  assert.match(landing, /The Artico learning journey/)
+  assert.match(landing, /Foundations \/ Raw mechanics/)
+  assert.match(landing, /Social Fluency/)
+  assert.match(landing, /Apex Communicator/)
+  assert.match(landing, /the destination, not a separate course/)
+  assert.match(landing, /className="al-journey-illustration"/)
+  assert.match(css, /\.al-journey-cards/)
+  assert.match(css, /\.al-journey-card/)
+  assert.match(css, /@media \(max-width: 740px\)/)
+  assert.match(landing, /your English journey starts now\.\.\./)
+  assert.match(landing, /className="al-final-cta-button">Get Started/)
+  assert.match(css, /\.al-final-cta-button[^]*?background: #285bcc/)
+  assert.match(landing, /english but better\.\.\./)
+  assert.match(landing, /© \{new Date\(\)\.getFullYear\(\)\} Artico/)
+  assert.doesNotMatch(landing, /Android|iOS|Terms of service|Artico, Inc\./)
+})
+
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {
   const steps = learningStages.flatMap((stage) => stage.lessonIds)
   assert.equal(new Set(steps).size, steps.length)
@@ -257,7 +280,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.match(shell, /<Application route=\{route\}/)
   assert.match(shell, /href="#\/home" aria-label=\{t\("Home"\)\}/)
   assert.match(progress, /aw-progress-resume/)
-  assert.match(landing, /al-wordmark artico-wordmark" href="#\/home"/)
+  assert.match(landing, /al-footer-logo artico-wordmark" href="#\/home"/)
   assert.equal((home.match(/id:'(?:orientation|foundation|social|application)'/g) ?? []).length, 4)
   for(const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/application'])
     assert.ok(home.includes("href:'" + href + "'"), href)

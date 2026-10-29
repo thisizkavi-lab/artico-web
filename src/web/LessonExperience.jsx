@@ -17,6 +17,7 @@ import {
 import Chapter01Illustrated from './Chapter01Illustrated'
 import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
+import Chapter03StudySection from './Chapter03Context'
 import './social-reference-study.css'
 import './introductions.css'
 import './learning-flow.css'
@@ -215,7 +216,7 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {(lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
+          {lessonId === '03' ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} /> : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent

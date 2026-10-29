@@ -23,6 +23,42 @@
 .hm-contents button span{font-size:10px;font-weight:760;color:#8c9eb5;padding-top:2px}
 .hm-section{scroll-margin-top:95px;border-bottom:1px solid #e5e8eb;padding:26px 0 37px;margin:0 0 6px}
 .hm-section:first-of-type{padding-top:7px}
+/* Chapter 34 uses its own layout; give its study subtopics the same soft
+   four-color progression as the other Social Fluency chapters. */
+.hm-study > .hm-section{
+  min-width:0;
+  margin:0 0 10px;
+  padding:24px 25px 26px;
+  border:1px solid rgba(42,61,96,.09);
+  border-radius:22px;
+  background:linear-gradient(155deg,var(--hm-section-top) 0%,var(--hm-section-bottom) 80%);
+  box-shadow:0 5px 20px rgba(20,33,61,.025);
+}
+.hm-study > .hm-section:first-of-type{padding-top:24px}
+.hm-study > .hm-section:nth-of-type(4n + 1){
+  --hm-section-top:#edf3fe;
+  --hm-section-bottom:#f8faff;
+  --hm-accent:#5c7fbe;
+}
+.hm-study > .hm-section:nth-of-type(4n + 2){
+  --hm-section-top:#eaf6f4;
+  --hm-section-bottom:#f8fbfa;
+  --hm-accent:#4a988c;
+}
+.hm-study > .hm-section:nth-of-type(4n + 3){
+  --hm-section-top:#f0eef9;
+  --hm-section-bottom:#faf9fd;
+  --hm-accent:#8b7ab6;
+}
+.hm-study > .hm-section:nth-of-type(4n){
+  --hm-section-top:#faf2ea;
+  --hm-section-bottom:#fdfaf7;
+  --hm-accent:#bc8b68;
+}
+.hm-study > .hm-section > h2{
+  padding-left:14px;
+  border-left:3px solid var(--hm-accent);
+}
 .hm-section h2,.hm-practice h2{font-family:'Newsreader',Georgia,serif;font-size:clamp(26px,3.5vw,33px);font-weight:500;line-height:1.2;letter-spacing:-.025em;color:#26334a;margin:0 0 16px}
 .hm-section h3,.hm-practice h3{color:#2f405b;letter-spacing:-.012em}
 .hm-section>p,.hm-practice-heading p,.hm-branch-wrap>p,.hm-open>p{font-size:14.5px;line-height:1.85;color:#5f687a;max-width:73ch;margin:0 0 19px}
@@ -181,6 +217,14 @@
   .hm-page{padding-bottom:34px}
   .hm-mode{margin-bottom:20px}
   .hm-section{padding:23px 0 32px}
+  .hm-study > .hm-section,
+  .hm-study > .hm-section:first-of-type{
+    padding:17px 12px 18px;
+    border-radius:16px;
+  }
+  .hm-study > .hm-section > h2{
+    padding-left:10px;
+  }
   .hm-contents{padding:13px}
   .hm-contents>div{grid-template-columns:1fr 1fr}
   .hm-contents button{font-size:11px;min-height:45px}

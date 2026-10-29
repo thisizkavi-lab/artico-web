@@ -202,11 +202,10 @@ export default function Landing() {
             </div>
             <div className="al-journey-cards">
               {copy.stages.map((stage, index) => (
-                <div key={index} className={`al-journey-card${stage.note ? ' al-journey-card-future' : ''}`}>
+                <div key={index} className={`al-journey-card${index === 3 ? ' al-journey-card-future' : ''}`}>
                   <h3>{stage.title}</h3>
                   <p className="al-journey-tagline">{stage.tagline}</p>
                   <p>{stage.description}</p>
-                  {stage.note && <span className="al-journey-vision">{stage.note}</span>}
                 </div>
               ))}
             </div>

@@ -12,7 +12,7 @@ test('Single-voice generator derives the whole chart from current source symbols
   assert.match(source, /EXPECTED_ENTRIES = 41/)
   assert.match(workflow, /python3 -m piper\.download_voices en_US-ljspeech-medium/)
   assert.match(workflow, /generate_ipa_single_voice\.py/)
-  assert.match(workflow, /Verify every IPA entry has its locally hosted WAV/)
+  assert.match(workflow, /Verify every IPA word example has its locally hosted WAV/)
   assert.match(workflow, /len\(entries\)==41/)
   assert.equal(new Set(allIpaSounds.map(sound => sound.word.toLowerCase())).size,
     new Set(allIpaSounds.map(sound => sound.audioFile)).size)

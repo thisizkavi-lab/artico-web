@@ -142,7 +142,7 @@ function SoundExamples({ sound, l, play }) {
 function SoundTable({ group, l, play }) {
   return (
     <section className="ipa-table-section" id={`ipa-${group.id}`}>
-      <h3 className="ipa-table-heading">{group.id === 'less-common' ? (l === copy.ja ? group.ja : group.title) : (l === copy.ja ? group.ja : group.title)}</h3>
+      <h3 className="ipa-table-heading">{l === copy.ja ? group.ja : group.title}</h3>
       <div className="ipa-table-scroll">
         <table className="ipa-table">
           <thead><tr><th scope="col">{l.symbol}</th><th scope="col">{l.word}</th></tr></thead>

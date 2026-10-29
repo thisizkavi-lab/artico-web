@@ -40,7 +40,7 @@ function makeModel(source, t) {
   }))
   // Chapter 03 teaches each expression inside the exchange that gives it meaning.
   if (source.id === '03') {
-    const chapter03Titles = source.title.includes('会話') || source.title.includes('考える')
+    const chapter03Titles = /[\u3040-\u30ff\u3400-\u9fff]/.test(source.study?.[0]?.title || '')
       ? ['返事を始め、話を進める', '言いたいことを調整する', '聞き手として反応する', '短い質問で確認する']
       : ['Start and guide your answer', 'Shape what you mean', 'Respond as a listener', 'Check with the listener']
     sections.forEach((section, index) => {

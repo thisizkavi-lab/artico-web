@@ -1020,3 +1020,173 @@ a.al-journey-card:hover {
   .aw-landing[data-language="ja"] .al-journey-card > p:not(.al-journey-tagline) { font-size: 13px; }
   .aw-landing[data-language="ja"] .al-final-cta h2 { font-size: clamp(30px, 7.5vw, 43px); }
 }
+
+
+/* Stable bilingual composition: keep the same heading nodes and line boxes
+   while language changes so the entrance animation cannot overlap new copy. */
+.al-splash-title {
+  display: grid;
+  justify-items: center;
+  grid-auto-flow: row;
+  align-content: center;
+  row-gap: 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  line-height: 1.24;
+}
+.al-splash-title > span,
+.aw-landing[data-language="ja"] .al-splash-title > span {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  min-width: 0;
+  width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: inherit;
+  transform-origin: center center;
+}
+.aw-landing[data-language="ja"] .al-splash-title {
+  line-height: 1.36;
+}
+.al-splash-description {
+  flex-shrink: 0;
+  min-height: 0;
+}
+.al-splash-content > :is(h1, p, a) { flex-shrink: 0; }
+@media (max-width: 700px) {
+  .al-splash-title,
+  .aw-landing[data-language="ja"] .al-splash-title {
+    display: grid;
+    width: 100%;
+  }
+  .al-splash-title > span,
+  .aw-landing[data-language="ja"] .al-splash-title > span {
+    display: block;
+  }
+}
+
+/* Simplified footer: About, How-to, Feedback. */
+.al-footer-directory { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.al-footer-column button {
+  min-height: 30px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #282828;
+  font: inherit;
+  font-size: clamp(14px, 1.1vw, 19px);
+  line-height: 1.35;
+  text-align: left;
+}
+.al-footer-column button:hover {
+  color: #285bcc;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 740px) {
+  .al-footer-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .al-footer-column button { font-size: 16px; }
+}
+@media (max-width: 420px) {
+  .al-footer-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .al-footer-column:last-child { grid-column: 1 / -1; }
+}
+
+/* Feedback is client-side sharing, not a fake server submission. */
+.al-feedback-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgb(16 26 39 / 46%);
+}
+.al-feedback-dialog {
+  width: min(100%, 490px);
+  max-height: min(90vh, 700px);
+  overflow: auto;
+  padding: 27px;
+  border: 1px solid #dce3e9;
+  border-radius: 18px;
+  background: #fff;
+  color: #26383e;
+  box-shadow: 0 22px 70px rgb(0 0 0 / 18%);
+}
+.al-feedback-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.al-feedback-head h2 { font-size: clamp(22px, 2vw, 27px); line-height: 1.35; }
+.al-feedback-close {
+  display: grid;
+  place-items: center;
+  flex: 0 0 37px;
+  width: 37px;
+  height: 37px;
+  border: 1px solid #dce3e9;
+  border-radius: 50%;
+  background: #fff;
+  color: #425960;
+  font-size: 24px;
+}
+.al-feedback-description {
+  margin: 16px 0 21px !important;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5f6e73;
+}
+.al-feedback-dialog label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.al-feedback-dialog textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 135px;
+  padding: 14px 15px;
+  resize: vertical;
+  border: 1px solid #cad5df;
+  border-radius: 10px;
+  background: #fff;
+  color: #26383e;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.al-feedback-dialog textarea:focus-visible {
+  outline: 2px solid #285bcc;
+  outline-offset: 2px;
+}
+.al-feedback-share {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 9px 19px;
+  border: 0;
+  border-radius: 10px;
+  background: #285bcc;
+  color: #fff;
+  font-weight: 700;
+}
+.al-feedback-share:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+.al-feedback-status {
+  margin-top: 12px !important;
+  font-size: 13px;
+  color: #3a6574;
+}
+@media (max-width: 740px) {
+  .al-feedback-dialog { padding: 21px; }
+}

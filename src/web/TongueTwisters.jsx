@@ -56,7 +56,6 @@ export function TongueTwisterStudy() {
       <section className="tt-library" id="tt-collection">
         <h2>{ja ? '早口言葉を聞いてみよう' : 'Explore the tongue twisters'}</h2>
         <p>{ja ? '気になるものから聞いてみましょう。' : 'Pick one and listen.'}</p>
-        <p className="tt-recording-note">{ja ? 'アメリカ英語のAI音声 · 全文を自然な速さで聞けます。' : 'General American AI audio · Complete recordings at a natural pace.'}</p>
         {twisterLevels.map(level => (
           <section className="tt-level" key={level.number}>
             <header className="tt-level-heading"><span>LEVEL {level.number}</span><h3>{ja ? level.ja : level.en}</h3></header>

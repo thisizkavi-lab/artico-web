@@ -68,10 +68,12 @@
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+/* Free-standing topic icons; the row itself is the target, not a card. */
 .vl-lesson-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  column-gap: 24px;
+  row-gap: 5px;
   list-style: none;
   margin: 18px 0 0;
   padding: 0;
@@ -79,33 +81,40 @@
 .vl-lesson-list li { min-width: 0; }
 .vl-lesson-link {
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) 20px;
+  grid-template-columns: 35px minmax(0, 1fr) 18px;
   align-items: center;
   gap: 15px;
-  min-height: 92px;
-  padding: 16px;
-  border: 1px solid #d7dfed;
-  border-radius: 12px;
-  background: var(--surface, #fff);
+  min-height: 78px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
   color: inherit;
   text-decoration: none;
-  transition: border-color .16s ease, background-color .16s ease;
+  transition: background-color .18s ease;
 }
-.vl-lesson-link:hover {
-  border-color: #99a6bc;
-  background: #f6f8fc;
+.vl-lesson-link:hover,
+.vl-lesson-link:focus-visible {
+  background: #f0f4fa;
 }
-.vl-lesson-number {
+.vl-lesson-icon {
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 11px;
-  background: #e9eef6;
-  color: #395a90;
-  font-size: 14px;
-  font-weight: 750;
-  font-variant-numeric: tabular-nums;
+  width: 35px;
+  height: 35px;
+  color: #6d809b;
+  transition: color .18s ease, transform .18s ease;
+}
+.vl-lesson-icon .curriculum-icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+  stroke-width: 1.7;
+}
+.vl-lesson-link:hover .vl-lesson-icon,
+.vl-lesson-link:focus-visible .vl-lesson-icon {
+  color: #315fb3;
+  transform: translateY(-1px);
 }
 .vl-lesson-titles { display: grid; gap: 4px; min-width: 0; }
 .vl-lesson-titles strong {
@@ -121,7 +130,19 @@
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
-.vl-lesson-arrow { color: #687c9d; font-size: 20px; line-height: 1; text-align: right; }
+.vl-lesson-arrow {
+  color: #647b9b;
+  opacity: .42;
+  font-size: 20px;
+  line-height: 1;
+  text-align: right;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.vl-lesson-link:hover .vl-lesson-arrow,
+.vl-lesson-link:focus-visible .vl-lesson-arrow {
+  opacity: .85;
+  transform: translateX(2px);
+}
 .vl-bottom-nav {
   display: flex;
   justify-content: space-between;
@@ -430,8 +451,8 @@
   .vl-heading h1 { font-size: 32px; }
   .vl-directory { margin-top: 32px; }
   .vl-directory-heading h2 { font-size: 18px; }
-  .vl-lesson-list { grid-template-columns: minmax(0, 1fr); gap: 10px; margin-top: 14px; }
-  .vl-lesson-link { min-height: 82px; padding: 13px; }
+  .vl-lesson-list { grid-template-columns: minmax(0, 1fr); gap: 3px; margin-top: 14px; }
+  .vl-lesson-link { min-height: 72px; padding: 10px 12px; }
   .vl-placeholder { min-height: 300px; margin-top: 28px; padding: 36px 20px; }
   .vl-placeholder h2 { font-size: 19px; }
   .vl-lesson-navigation { grid-template-columns: minmax(0, 1fr); gap: 10px; margin-top: 24px; padding-top: 18px; }
@@ -460,7 +481,11 @@
   .vl01-phrase-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .vl-lesson-link, .vl01-country-card { transition: none; }
+  .vl-lesson-link, .vl-lesson-icon, .vl-lesson-arrow, .vl01-country-card { transition: none; }
+  .vl-lesson-link:hover .vl-lesson-icon,
+  .vl-lesson-link:focus-visible .vl-lesson-icon,
+  .vl-lesson-link:hover .vl-lesson-arrow,
+  .vl-lesson-link:focus-visible .vl-lesson-arrow { transform: none; }
 }
 
 /* Lesson 02: numbers for everyday use */

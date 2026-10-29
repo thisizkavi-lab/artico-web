@@ -16,6 +16,8 @@ import {
 } from './phrasePractice'
 import Chapter01Illustrated from './Chapter01Illustrated'
 import GreetingsReferenceStudy from './GreetingsReferenceStudy'
+import ReferencePhraseShelf from './ReferencePhraseShelf'
+import './social-reference-study.css'
 import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
@@ -185,7 +187,7 @@ function Study({ audioProps, focusedId }) {
     window.speechSynthesis.speak(utterance)
   }
   return (
-    <div className="ip-reading">
+    <div className="ip-reading ar-shared-study">
       {introductionSections.map((section, index) => (
         <section
           className="ip-section"
@@ -304,9 +306,12 @@ function Study({ audioProps, focusedId }) {
                 />
               )
             }
-            return (
+            return block.type === 'phrases' ? (
+              <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
+                byId={introductionById} audioProps={audioProps} focusedId={focusedId} />
+            ) : (
               <div className="ip-phrase-grid" key={blockIndex}>
-                {block.phrases.map((id) => (
+                {block.phrases?.map((id) => (
                   <PhraseCard key={id} id={id} audioProps={audioProps} focusedId={focusedId} />
                 ))}
               </div>
@@ -705,6 +710,7 @@ function Experience({ route, learning, update, save, notify }) {
   const audioProps = {
     audio,
     activeId,
+    byId: introductionById,
     onPlay: (id, restart = false) => {
       setActiveId(id)
       audio.play(id, 1, restart)

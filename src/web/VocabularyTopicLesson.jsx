@@ -7,6 +7,65 @@ import './vocabulary-topic.css'
 
 const lessons = new Map(organized.lessons.map(lesson => [lesson.sourceLesson, lesson]))
 
+const weekDays = [
+  { name: 'Monday', short: 'Mon' },
+  { name: 'Tuesday', short: 'Tue' },
+  { name: 'Wednesday', short: 'Wed' },
+  { name: 'Thursday', short: 'Thu' },
+  { name: 'Friday', short: 'Fri' },
+  { name: 'Saturday', short: 'Sat' },
+  { name: 'Sunday', short: 'Sun' },
+]
+
+function WeekDaysChart({ japanese }) {
+  const sections = [
+    { key: 'weekday', title: 'weekdays', japanese: '平日', days: weekDays.slice(0, 5) },
+    { key: 'weekend', title: 'weekend', japanese: '週末', days: weekDays.slice(5) },
+  ]
+
+  return (
+    <div className="vlt-week-chart" role="group" aria-label={japanese ? '一週間の曜日と略語' : 'Days of the week and abbreviations'}>
+      <header className="vlt-week-chart-header">
+        <div>
+          <span className="vlt-week-chart-overline">{japanese ? '1週間 · 7日間' : 'ONE WEEK · 7 DAYS'}</span>
+          <h4 lang="en">Days of the week</h4>
+        </div>
+        <span className="vlt-week-chart-legend">{japanese ? '正式名 → 略語' : 'FULL NAME → SHORT FORM'}</span>
+      </header>
+      <div className="vlt-week-chart-body">
+        {sections.map(section => (
+          <section key={section.key} className={'vlt-week-section is-' + section.key} aria-label={section.title}>
+            <div className="vlt-week-section-label">
+              <div>
+                <strong lang="en">{section.title}</strong>
+                {japanese && <span lang="ja">{section.japanese}</span>}
+              </div>
+              <span className="vlt-week-count">{section.days.length} {japanese ? '日' : 'days'}</span>
+            </div>
+            <ol className="vlt-week-days">
+              {section.days.map(day => (
+                <li key={day.name}>
+                  <span className="vlt-week-day-name">
+                    <strong lang="en">{day.name}</strong>
+                    {japanese && <small lang="ja">{vocabularyJapanese(day.name, 3)}</small>}
+                  </span>
+                  <abbr className="vlt-week-day-short" title={day.name} lang="en">{day.short}</abbr>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
+      <p className="vlt-week-chart-footnote">
+        {japanese
+          ? '略語はカレンダーや予定表などで使います。Tues.（Tuesday）、Thurs.（Thursday）という形もあります。話すときは曜日の名前を省略せずに読みます。'
+          : 'These short forms appear in calendars and schedules. You may also see Tues. (Tuesday) and Thurs. (Thursday). When speaking, say the full day names.'}
+      </p>
+    </div>
+  )
+}
+
+
 function Visual({visual}) {
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
@@ -126,6 +185,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
         {shownGroups.map(group => {
           const {fresh,revisited} = organizeVocabularyGroup(group.items, topic.sourceLesson)
           const cards = mode === 'study' ? fresh : fresh.filter(([term]) => canRecall(term))
+          const isDaysChart = topic.sourceLesson === 3 && group.index === 1
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -141,14 +201,16 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                 <span className="vlt-group-count">{cards.length}</span>
               </div>
               {cards.length > 0
-                ? <div className="vlt-grid">
+                ? (isDaysChart && mode === 'study'
+                  ? <WeekDaysChart japanese={japanese} />
+                  : <div className="vlt-grid">
                     {cards.map((entry, index) => {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}
                         practice={mode === 'practice'} revealed={revealed.has(key)}
                         onReveal={() => toggleReveal(key)} japanese={japanese} />
                     })}
-                  </div>
+                  </div>)
                 : <p className="vlt-empty">{japanese
                   ? 'このグループは学習用のカードで確認できます。'
                   : 'Explore these words in Study mode.'}</p>}

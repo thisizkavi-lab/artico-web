@@ -40,6 +40,7 @@ const contextual = {
  '3:schedule':'予定・スケジュール',
  '3:on time / late / early':'時間どおりに／遅れて／早く',
  // Lesson 14: contextual senses, not unrelated dictionary homographs.
+ '14:eyelid':'まぶた', '14:pupil':'瞳孔', '14:iris':'虹彩',
  '14:head':'頭',
  '14:face':'顔',
  '14:forehead':'額',

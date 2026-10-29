@@ -242,3 +242,7 @@
  .vlt-frequency-note{padding:13px 15px}
  .vlt-frequency-study{gap:20px}
 }
+
+/* Lesson 14: original raster teaching assets, cropped from a single hosted sprite sheet. */
+.vlt-body-sprite{display:block;width:100%;height:100%;background-repeat:no-repeat;background-size:800% 400%;background-color:#fff}
+.vlt-image-card .vlt-visual:has(.vlt-body-sprite){background:#fff}

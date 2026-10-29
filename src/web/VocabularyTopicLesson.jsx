@@ -180,6 +180,14 @@ function TimeSpansTable({ items, japanese }) {
 }
 
 function Visual({visual}) {
+  if (visual?.type === 'body-sprite') {
+    const col = visual.index % 8
+    const row = Math.floor(visual.index / 8)
+    return <span className="vlt-body-sprite" aria-hidden="true" style={{
+      backgroundImage: 'url("' + visual.src + '")',
+      backgroundPosition: (col * 100 / 7) + '% ' + (row * 100 / 3) + '%',
+    }} />
+  }
   if (visual?.type === 'body-art') return <VocabularyBodyArt term={visual.term} />
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
@@ -281,7 +289,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   // Source stays intact for editorial traceability; this heading is not a word.
   const groups = useMemo(() => (lesson?.groups || []).map((group, index) =>
     topic.sourceLesson === 14 && index === 0
-      ? { ...group, items: group.items.filter(([term]) => term !== 'body, parts of') }
+      ? { ...group, items: group.items.filter(([term]) => term !== 'body, parts of')
+          .flatMap(entry => entry[0] === 'eyelashes'
+            ? [entry, ['eyelid'], ['pupil'], ['iris']] : [entry]) }
       : group), [lesson, topic.sourceLesson])
   const activeGroups = groups.map((group,index)=>({...group,index}))
     .filter(group=>organizeVocabularyGroup(group.items,topic.sourceLesson).fresh.length>0)

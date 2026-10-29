@@ -8,12 +8,15 @@ import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 import { vocabularyBodyIllustration } from './VocabularyBodyArt'
+import { vocabularyBodySprite } from './vocabularyBodySprite'
 
 // Most vocabulary cards use reviewed PNG illustrations. Lesson 14 is the
 // intentional exception: semantic vector drawings allow subtle, accessible
 // motions for gestures and breathing without raster/GIF sprite artifacts.
 // No cross-topic guessed picture reaches a card.
 function artworkFor(term, chapter) {
+  const approvedBody = vocabularyBodySprite(term, chapter)
+  if (approvedBody) return approvedBody
   const body = vocabularyBodyIllustration(term, chapter)
   if (body) return body
   const grooming = vocabularyAiGrooming(term, chapter)

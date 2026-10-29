@@ -163,3 +163,20 @@ test('Lesson 14 body vocabulary has intentional art for every previously unillus
   assert.match(motion,/@keyframes bv-shiver/)
   assert.match(motion,/@keyframes bv-bow/)
 })
+
+
+test('Lesson 14 uses approved raster body art and keeps eye anatomy precise',()=>{
+  const sprite=load('vocabularyBodySprite.js')
+  const names=["head","face","forehead","eyes","eyebrow","eyelashes","eyelid","pupil","iris","nose","nostrils","cheek","mouth","lips","chin","tooth / teeth (plural)","neck","shoulder (body)","arm","elbow","wrist","hand","finger","thumb","leg","thigh","knee","shin","ankle","foot","toe"]
+  for(const word of names)
+    assert.ok(sprite.includes(JSON.stringify(word)),'Missing curated asset mapping: '+word)
+  assert.match(visual,/vocabularyBodySprite\(term, chapter\)/)
+  assert.match(view,/visual\?\.type === 'body-sprite'/)
+  assert.match(view,/\['eyelid'\], \['pupil'\], \['iris'\]/)
+  assert.match(japanese,/'14:pupil':'瞳孔'/)
+  assert.match(japanese,/'14:iris':'虹彩'/)
+  const file=readFileSync(new URL('../../public/vocabulary-art/body-14.webp',import.meta.url))
+  assert.ok(file.length>12000)
+  assert.equal(file.subarray(0,4).toString(),'RIFF')
+  assert.equal(file.subarray(8,12).toString(),'WEBP')
+})

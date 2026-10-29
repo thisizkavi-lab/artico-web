@@ -176,9 +176,8 @@ function Speak({ lines, audioProps, kind = 'exchange' }) {
 
 function ChatTurn({ speaker, text, mark }) {
   return <div className={`ar-c03-chat-turn ar-c03-chat-${speaker === 'A' ? 'incoming' : 'outgoing'}`}>
-    <img className="ar-c03-avatar" src={portrait(speaker)} width="35" height="35" alt="" loading="lazy"/>
+    <img className="ar-c03-avatar" src={portrait(speaker)} width="35" height="35" alt={speaker === 'A' ? 'First speaker' : 'Second speaker'} loading="lazy"/>
     <div className="ar-c03-chat-bubble">
-      <span className="ar-c03-chat-speaker">{speaker}</span>
       <p lang="en">{mark ? <Highlight text={text} match={mark}/> : text}</p>
     </div>
   </div>
@@ -226,10 +225,10 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
   useEffect(() => () => {
     if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
   }, [])
-  if (sectionIndex === 0) return <div className="ar-c03">
+  if (sectionIndex === 0) return <div className="ar-c03 ar-c03-section-0">
     <SectionIntro>{language === 'ja'
       ? '相手の言葉を読んでから、返事の中で短い表現が何をしているか見てみましょう。'
-      : 'First read what A says. Then see why B uses the highlighted expression.'}</SectionIntro>
+      : 'Read the first message, then notice the highlighted expression in the reply.'}</SectionIntro>
     <div className="ar-c03-grid">
       {opening.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
     </div>
@@ -238,7 +237,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
       <Dialogue rows={concert} audioProps={audioProps} label={language === 'ja' ? 'コンサートの感想を話す' : 'Talking about a concert'}/>
     </details>
   </div>
-  if (sectionIndex === 1) return <div className="ar-c03">
+  if (sectionIndex === 1) return <div className="ar-c03 ar-c03-section-1">
     <SectionIntro>{language === 'ja'
       ? '短い表現で、言い方や意味合いがどう変わるかを確かめましょう。'
       : 'See how these expressions change what the speaker means.'}</SectionIntro>
@@ -246,7 +245,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
       {adjusting.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
     </div>
   </div>
-  if (sectionIndex === 2) return <div className="ar-c03">
+  if (sectionIndex === 2) return <div className="ar-c03 ar-c03-section-2">
     <SectionIntro>{language === 'ja'
       ? '相手の出来事に合う短い反応を選びましょう。'
       : 'A short reaction should match what the other person just said.'}</SectionIntro>
@@ -262,7 +261,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
       </div>
     </details>
   </div>
-  if (sectionIndex === 3) return <div className="ar-c03 ar-c03-tag-study">
+  if (sectionIndex === 3) return <div className="ar-c03 ar-c03-tag-study ar-c03-section-3">
     <SectionIntro>{language === 'ja'
       ? '付加疑問（tag question）は、文のあとに短い確認の質問をつなげる形です。上の問いかけから矢印に沿って、状況に合った返事へ進んでみましょう。'
       : 'A tag question adds a short check to a statement. Follow each question down to the possible replies. The answer depends on what is true, not on how the question is phrased.'}</SectionIntro>
@@ -280,7 +279,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
           <div className="ar-c03-question-wrap">
             <div className="ar-c03-question-bubble">
               <div className="ar-c03-bubble-head">
-                <span className="ar-c03-bubble-speaker">A</span>
+                <img className="ar-c03-bubble-avatar" src={portrait('A')} width="27" height="27" alt={language === 'ja' ? '質問する人' : 'Asking speaker'}/>
                 <span className="ar-c03-bubble-caption">{language === 'ja' ? '確認する' : 'Check'}</span>
                 <Speak lines={[question]} audioProps={audioProps}/>
               </div>
@@ -290,7 +289,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
           <div className="ar-c03-flow-arrow" aria-hidden="true"/>
           <div className="ar-c03-response-bubble">
             <div className="ar-c03-bubble-head ar-c03-response-head">
-              <span className="ar-c03-bubble-speaker">B</span>
+              <img className="ar-c03-bubble-avatar" src={portrait('B')} width="27" height="27" alt={language === 'ja' ? '答える人' : 'Replying speaker'}/>
               <span className="ar-c03-bubble-caption">{language === 'ja' ? '実際の状況に合わせて答える' : 'Reply according to the facts'}</span>
             </div>
             <div className="ar-c03-response-paths">

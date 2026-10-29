@@ -8,19 +8,6 @@ import './vocabulary.css'
 const vocabularyIndex = '#/lesson/98/study'
 const topicHref = (number) => `${vocabularyIndex}/${String(number).padStart(2, '0')}`
 
-function VocabularyArtCredits({ japanese }) {
-  return <p className="vl-art-credit">
-    {japanese ? '一部のイラスト：' : 'Selected illustrations: '}
-    <a href="https://mulberrysymbols.org/" target="_blank" rel="noreferrer">Mulberry Symbols</a>
-    {' (Steve Lee) · '}
-    <a href="https://openmoji.org/" target="_blank" rel="noreferrer">OpenMoji</a>
-    {' (OpenMoji Contributors) · '}
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>
-    {' · '}
-    {japanese ? '画像はPNG形式に変換' : 'Converted to PNG for Artico'}
-  </p>
-}
-
 function LessonLink({ topic, japanese }) {
   const number = String(topic.sourceLesson).padStart(2, '0')
   return (
@@ -68,7 +55,6 @@ function VocabularyIndex({ japanese }) {
         <a href="#/lesson/97/study">← {japanese ? '第97課' : 'Chapter 97'}</a>
         <a href="#/progress">{japanese ? '進捗を見る' : 'My Progress'} →</a>
       </nav>
-      <VocabularyArtCredits japanese={japanese} />
     </div>
   )
 }
@@ -112,7 +98,6 @@ function VocabularyLesson({ topic, japanese }) {
           </a>
         ) : <span aria-hidden="true" />}
       </nav>
-      <VocabularyArtCredits japanese={japanese} />
     </div>
   )
 }

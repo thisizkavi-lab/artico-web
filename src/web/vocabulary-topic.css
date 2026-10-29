@@ -189,3 +189,28 @@
  .vlt-month-abbreviation abbr{font-size:13px}
  .vlt-month-chart-footnote{padding:12px 15px}
 }
+
+
+/* Lesson 03: one coherent reference table for time units and spans. */
+.vlt-span-chart{overflow:hidden;border:1px solid #d9e4f1;border-radius:15px;background:#fff}
+.vlt-span-chart-header{padding:19px 22px;border-bottom:1px solid #dde6f1}
+.vlt-span-chart-overline{display:block;color:#6681a0;font-size:10px;font-weight:800;letter-spacing:.11em}
+.vlt-span-chart-header h4{margin:5px 0 0;color:#203854;font-size:21px;line-height:1.35;font-weight:750}
+.vlt-span-table{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed;background:#fff}
+.vlt-span-table thead th{width:50%;padding:12px 15px;background:#315d94;color:#fff;font-size:12px;line-height:1.5;font-weight:800;text-align:left}
+.vlt-span-table tbody tr>*{padding:13px 15px;background:#f2f5fc;vertical-align:middle;text-align:left}
+.vlt-span-table tbody tr:nth-child(even)>*{background:#f9fbff}
+.vlt-span-name strong{display:block;color:#243b59;font-size:15px;font-weight:750;line-height:1.45;overflow-wrap:anywhere}
+.vlt-span-name small{display:block;margin-top:3px;color:#71849e;font-size:11px;font-weight:550}
+.vlt-span-equivalent{color:#315d94;font-size:15px;font-weight:750;line-height:1.5;overflow-wrap:anywhere}
+.vlt-span-footnote{margin:0;padding:14px 22px;border-top:1px solid #e0e7f0;color:#657992;font-size:11px;line-height:1.7}
+@media(max-width:620px){
+ .vlt-span-chart-header{padding:15px}
+ .vlt-span-chart-header h4{font-size:19px}
+ .vlt-span-table{border-spacing:3px}
+ .vlt-span-table thead th{padding:9px 10px;font-size:11px}
+ .vlt-span-table tbody tr>*{padding:11px 10px}
+ .vlt-span-name strong,.vlt-span-equivalent{font-size:12px}
+ .vlt-span-name small{font-size:10px}
+ .vlt-span-footnote{padding:12px 15px}
+}

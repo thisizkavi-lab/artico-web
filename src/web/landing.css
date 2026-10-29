@@ -1295,66 +1295,65 @@ a.al-journey-card:hover {
 }
 
 
-/* Short editorial booklet in the landing footer. */
-.al-footer-story {
-  max-width: 1510px;
-  margin: 46px auto 0;
-  padding-top: 25px;
-  border-top: 1px solid #e2e7e1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+
+/* A quiet, keyboard-accessible language picker inside Resources. */
+.al-footer-booklet {
+  width: 100%;
+  min-width: 0;
 }
-.al-footer-story-copy h3 {
-  margin: 0;
-  color: #24352e;
-  font-family: 'Newsreader', Georgia, serif;
-  font-weight: 500;
-  font-size: clamp(24px, 2.2vw, 30px);
-  line-height: 1.2;
-}
-.al-footer-story-copy p {
-  color: #66716b;
-  font-size: 13px;
-  line-height: 1.6;
-  margin-top: 6px;
-}
-.al-footer-story-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.al-footer-story-links a {
+.al-footer-booklet summary {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 11px 16px;
-  border: 1px solid #d5ded5;
-  border-radius: 999px;
-  color: #24352e;
+  gap: 12px;
+  list-style: none;
+  cursor: pointer;
+  color: #282828;
+  font-size: clamp(14px, 1.1vw, 19px);
+  line-height: 1.35;
+  padding: 2px 0;
+}
+.al-footer-booklet summary::-webkit-details-marker { display: none; }
+.al-footer-booklet summary::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 150ms ease;
+  opacity: .65;
+}
+.al-footer-booklet[open] summary::after {
+  transform: translateY(1px) rotate(225deg);
+}
+.al-footer-booklet summary:hover {
+  color: #285bcc;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.al-footer-booklet summary:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 4px;
+}
+.al-footer-booklet-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  border-left: 1px solid #d5ddd5;
+  margin: 12px 0 2px 3px;
+  padding: 0 0 0 17px;
+}
+.al-footer-column .al-footer-booklet-options a {
   font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: border-color 150ms, background-color 150ms;
-}
-.al-footer-story-links a span {
-  color: #76857b;
-  font-size: 11px;
-}
-.al-footer-story-links a:hover {
-  border-color: #a64732;
-  background: #f8f5ef;
+  line-height: 1.4;
+  color: #66716b;
 }
 @media (max-width: 740px) {
-  .al-footer-story {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 36px;
-  }
+  .al-footer-booklet summary { font-size: 16px; }
+  .al-footer-column .al-footer-booklet-options a { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .al-footer-story-links a { transition: none; }
+  .al-footer-booklet summary::after { transition: none; }
 }

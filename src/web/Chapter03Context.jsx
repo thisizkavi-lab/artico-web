@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useLanguage } from './Language'
 import Glyph from './Glyph'
 import './chapter03-context.css'
@@ -113,7 +114,7 @@ const story = [
 
 const concert = [
   ['Ari', 'Did you enjoy the concert?', ''],
-  ['Lee', 'Well, the music was great. The room was just too crowded.', 'Well,'],
+  ['Lee', 'Well, the music was great. The room was just too crowded.', 'Well'],
   ['Ari', 'Oh, right.', 'Oh, right.'],
   ['Lee', "I mean, I enjoyed it, but I wouldn't choose that venue again.", 'I mean,'],
 ]
@@ -222,6 +223,9 @@ function SectionIntro({ children }) { return <p className="ar-c03-intro">{childr
 
 export default function Chapter03StudySection({ sectionIndex, audioProps }) {
   const { language } = useLanguage()
+  useEffect(() => () => {
+    if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+  }, [])
   if (sectionIndex === 0) return <div className="ar-c03">
     <SectionIntro>{language === 'ja'
       ? '相手の言葉を読んでから、返事の中で短い表現が何をしているか見てみましょう。'

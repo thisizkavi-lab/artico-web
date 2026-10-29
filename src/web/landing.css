@@ -273,7 +273,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
-  color: #66727a;
+  color: #d94b4b;
   margin-bottom: 24px !important;
 }
 .al-why-heading h2 {
@@ -283,6 +283,13 @@
   letter-spacing: -0.055em;
   font-weight: 750;
   text-wrap: balance;
+}
+/* Clip the red to the bottom dot of the question-mark glyph, retaining its typeface. */
+.al-why-question-mark {
+  background: linear-gradient(to bottom, #172126 0 79%, #d94b4b 79% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .al-why-accent {
   display: block;

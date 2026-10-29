@@ -27,5 +27,5 @@ test('Entire study and practice use one WAV path with no TTS or preview override
   assert.doesNotMatch(ui, /<IpaVoicePilot|<IpaHamburgPilot|speechSynthesis|commons\.wikimedia/)
   assert.doesNotMatch(ui, /synthetic word examples|Piper|LJ Speech|合成音声|source recording|voice model/i)
   assert.match(ui, /ipa-chart-grid/)
-  assert.match(ui, /<SoundTable group=\\{lessCommon\\}/)
+  assert.match(ui, /<SoundTable group=\{lessCommon\}/)
 })

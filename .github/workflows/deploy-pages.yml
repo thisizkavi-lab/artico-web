@@ -120,6 +120,9 @@ jobs:
           print(f"Verified {len(entries)} IPA example entries, {len(files)} unique WAVs, one US voice")
           PY
 
+      - name: Crop original AI food picture sheets into local PNGs
+        run: python3 scripts/build_vocab_food_sheets.py
+
       - name: Test course and learning progress
         run: pnpm test
 
@@ -135,6 +138,13 @@ jobs:
           test -f dist/vocabulary-ai/ch04/do-homework.png
           test -f dist/vocabulary-ai/ch04/go-home.png
           test -f dist/vocabulary-ai/ch03/03-000.png
+
+      - name: Verify original AI-painted vocabulary images reached the site
+        run: |
+          test "$(find dist/vocabulary-ai/ch04/sheet -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 25
+          test "$(find dist/vocabulary-ai/food -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
+          test -s dist/vocabulary-ai/ch04/sheet/catch-the-bus.png
+          test -s dist/vocabulary-ai/food/tomato.png
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

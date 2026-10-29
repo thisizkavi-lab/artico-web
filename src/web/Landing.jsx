@@ -1,21 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
-import { asset, Button, Portrait } from './components'
+import { useEffect, useRef } from 'react'
 import { useLanguage } from './Language'
-import { learningStages } from './pathway'
-import CurriculumIcon, { stageIcon } from './CurriculumIcon'
 import { landingCopy } from './landingCopy'
 import './landing.css'
 
 export default function Landing() {
   const { language, setLanguage } = useLanguage()
   const copy = landingCopy[language]
-  const methodRef = useRef(null)
   const pathRef = useRef(null)
   const mainRef = useRef(null)
-  const [selected, setSelected] = useState([false, true])
-  // Enter the app through Home; learners choose their next step there.
-  const startHref = '/home'
-  const startLabel = copy.open
 
   useEffect(() => {
     document.title = 'Artico — One language. Infinite possibilities.'
@@ -33,6 +25,28 @@ export default function Landing() {
   return (
     <div className="aw-landing" data-language={language}>
       <a className="al-skip" href="#al-content" onClick={(event) => { event.preventDefault(); scrollTo(mainRef) }}>{copy.skip}</a>
+      <header className="al-site-header">
+        <div className="al-site-header-inner">
+          <a className="al-header-logo artico-wordmark" href="#/landing"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Artico — back to landing page">
+            artico<span className="artico-wordmark-dot" aria-hidden="true">.</span>
+          </a>
+          <nav className="al-header-nav" aria-label="Landing page sections">
+            <button type="button" onClick={() => document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' })}>Why Artico</button>
+            <button type="button" onClick={() => scrollTo(pathRef)}>Learning path</button>
+          </nav>
+          <div className="al-header-actions">
+            <div className="al-header-languages" role="group" aria-label="Explanation language">
+              <button type="button" lang="ja" aria-pressed={language === 'ja'}
+                onClick={() => setLanguage('ja')}>日本語</button>
+              <button type="button" lang="en" aria-pressed={language === 'en'}
+                onClick={() => setLanguage('en')}>EN</button>
+            </div>
+            <a className="al-header-start" href="#/home">Get Started</a>
+          </div>
+        </div>
+      </header>
       <main ref={mainRef} id="al-content" tabIndex={-1}>
         <section className="al-splash" aria-labelledby="al-title">
           <img
@@ -75,56 +89,6 @@ export default function Landing() {
               <p className="al-why-finish">
                 this app doesn’t just teach you English. it shapes how you <mark>speak, think, and carry yourself</mark> — so that when you talk, <mark>people feel it</mark>.
               </p>
-            </div>
-          </div>
-        </section>
-        <section className="al-method" aria-labelledby="al-method-title">
-          <div className="al-container al-method-inner">
-            <header className="al-section-heading">
-              <p className="al-kicker" lang="en">TWO MODES. ONE CONTINUOUS LESSON.</p>
-              <h2 ref={methodRef} tabIndex={-1} id="al-method-title">{copy.methodTitle.map((line) => <span key={line}>{line}</span>)}</h2>
-              <p className="al-section-intro">{copy.methodIntro}</p>
-            </header>
-            <div className="al-previews">
-              <article className="al-preview" aria-labelledby="al-study-title">
-                <p className="al-kicker" lang="en">01 / STUDY</p>
-                <h3 id="al-study-title">{copy.study}</h3>
-                <div className="al-conversation">
-                  {[
-                    { name: 'Maya', phrase: 'Hi, I’m Maya.', support: copy.maya },
-                    { name: 'Eli', phrase: 'Nice to meet you.', support: copy.eli },
-                  ].map((turn) => (
-                    <div className="al-turn" key={turn.name}>
-                      <Portrait name={turn.name} size={32} />
-                      <div className="al-turn-copy">
-                        <p className="al-kicker" lang="en">{turn.name.toUpperCase()}</p>
-                        <p className="al-spoken" lang="en">{turn.phrase}</p>
-                        <p className="al-support">{turn.support}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <p className="al-note al-study-note">{copy.studyNote}</p>
-              </article>
-              <article className="al-preview" aria-labelledby="al-practice-title">
-                <p className="al-kicker" lang="en">02 / PRACTICE</p>
-                <h3 id="al-practice-title">{copy.practice.map((line) => <span key={line}>{line}</span>)}</h3>
-                <fieldset className="al-choices">
-                  <legend className="al-sr-only">{copy.choose}</legend>
-                  {[
-                    { phrase: 'Hi, I’m Maya.', support: copy.introduce },
-                    { phrase: 'Nice to meet you.', support: copy.greet },
-                  ].map((item, index) => (
-                    <label key={item.phrase} className={`al-choice ${selected[index] ? 'is-selected' : ''}`}>
-                      <input type="checkbox" checked={selected[index]}
-                        onChange={() => setSelected((previous) => previous.map((value, i) => i === index ? !value : value))} />
-                      <span className="al-checkbox" aria-hidden="true"><img src={asset('203e3.svg')} width="10.4667" height="7.8" alt="" /></span>
-                      <span className="al-choice-copy"><span lang="en">{item.phrase}</span><span className="al-support">{item.support}</span></span>
-                    </label>
-                  ))}
-                </fieldset>
-                <p className="al-note">{copy.practiceNote}</p>
-              </article>
             </div>
           </div>
         </section>
@@ -217,7 +181,6 @@ export default function Landing() {
               </div>
             </div>
           </div>
-          <p className="al-journey-footnote"><a href="#/foundation/orientation/study">New here? Begin with Orientation.</a> Or choose the stage that fits you.</p>
         </section>
         <section className="al-final-cta" aria-labelledby="al-closing-title">
           <div className="al-final-cta-inner">
@@ -249,7 +212,7 @@ export default function Landing() {
             <div className="al-footer-column">
               <h3>About us</h3>
               <a href="#al-why-title" onClick={(event) => { event.preventDefault(); document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' }) }}>Why Artico</a>
-              <a href="#al-method-title" onClick={(event) => { event.preventDefault(); scrollTo(methodRef) }}>How it works</a>
+              <a href="#al-path-title" onClick={(event) => { event.preventDefault(); scrollTo(pathRef) }}>Learning path</a>
             </div>
             <div className="al-footer-column">
               <h3>Resources</h3>

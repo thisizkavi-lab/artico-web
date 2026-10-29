@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useLanguage } from './Language'
 import Glyph from './Glyph'
 import './chapter03-context.css'
@@ -224,28 +223,40 @@ function SectionIntro({ children }) { return <p className="ar-c03-intro">{childr
 export default function Chapter03StudySection({ sectionIndex, audioProps }) {
   const { language } = useLanguage()
   if (sectionIndex === 0) return <div className="ar-c03">
-    <SectionIntro>{language === 'ja' ? '短い表現は、単独では役割が分かりにくいものです。まず相手の発言を読み、次に返事の中でどのように使われたか確かめましょう。毎文につける必要はありません。' : 'The same short expression can do different jobs. Read what the other person said first; then notice what the expression does in the reply. You do not need one in every sentence.'}</SectionIntro>
-    <div className="ar-c03-grid">{opening.map((item,i) => <ContextCard key={item.word} item={item} index={i} audioProps={audioProps} language={language}/>)}</div>
-    <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? '覚えておきたいこと' : 'Notice'}</strong><p>{language === 'ja' ? 'ここで示した役割は、決まった日本語訳ではありません。同じ表現でも、場面や声の調子によって意味合いが変わります。' : 'These are uses, not permanent translations. Context and tone can change what an expression communicates.'}</p></div>
-    <Dialogue rows={concert} audioProps={audioProps} language={language} label={language === 'ja' ? 'まとめて聞く：よかった点と気になる点' : 'Together in a conversation · Making a choice'}/>
-    <p className="ar-c03-after">{language === 'ja' ? 'Lee は単に「はい」「いいえ」と答えていません。Well で複雑な答えを始め、I mean で言いたいことをさらに明確にしています。' : 'Lee does not simply say yes or no. Well introduces a mixed answer; I mean then clarifies it.'}</p>
+    <SectionIntro>{language === 'ja'
+      ? '相手の言葉を読んでから、返事の中で短い表現が何をしているか見てみましょう。'
+      : 'First read what A says. Then see why B uses the highlighted expression.'}</SectionIntro>
+    <div className="ar-c03-grid">
+      {opening.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
+    </div>
+    <details className="ar-c03-extra">
+      <summary>{language === 'ja' ? '会話全体でも見てみる' : 'See the expressions in a longer conversation'}</summary>
+      <Dialogue rows={concert} audioProps={audioProps} label={language === 'ja' ? 'コンサートの感想を話す' : 'Talking about a concert'}/>
+    </details>
   </div>
   if (sectionIndex === 1) return <div className="ar-c03">
-    <SectionIntro>{language === 'ja' ? '言葉の途中や終わりの短い表現は、どれくらい確信しているか、どう受け取ってほしいかを伝えます。特に like のこれらの使い方は、くだけた会話でよく見られます。' : 'These expressions shape the strength, precision, or tone of what you say. Informal like is useful to recognize, but you do not have to imitate it in every sentence.'}</SectionIntro>
-    <div className="ar-c03-grid">{adjusting.map((item,i) => <ContextCard key={item.word + i} item={item} index={i} audioProps={audioProps} language={language}/>)}</div>
-    <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? 'ポイント' : 'Remember'}</strong><p>{language === 'ja' ? '「くだけた言葉をたくさん入れる」ことが自然さではありません。伝えたい意味があるときだけ使います。' : 'Natural speech is not speech crowded with fillers. Use an expression when it communicates something.'}</p></div>
+    <SectionIntro>{language === 'ja'
+      ? '短い表現で、言い方や意味合いがどう変わるかを確かめましょう。'
+      : 'See how these expressions change what the speaker means.'}</SectionIntro>
+    <div className="ar-c03-grid">
+      {adjusting.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
+    </div>
   </div>
   if (sectionIndex === 2) return <div className="ar-c03">
-    <SectionIntro>{language === 'ja' ? '相づちは一言でも十分です。ただし、直前の出来事に合うものを選びます。' : 'A listening response can be one word, but it needs to fit the event that came before it.'}</SectionIntro>
-    <div className="ar-c03-reactions">{reactions.map((item,i) => <div className="ar-c03-reaction" key={item.word}>
-      <span className="ar-c03-reaction-no">{String(i+1).padStart(2,'0')}</span>
-      <p className="ar-c03-cue" lang="en">{item.a}</p>
-      <p className="ar-c03-response" lang="en">{item.b}</p>
-      <p className="ar-c03-reaction-note">{language === 'ja' ? item.ja : item.en}</p>
-      <Speak lines={[item.a,item.b]} audioProps={audioProps}/>
-    </div>)}</div>
-    <Dialogue rows={story} audioProps={audioProps} language={language} label={language === 'ja' ? '出来事の流れに合わせて反応する' : 'Follow a whole story'}/>
-    <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? '聞くことと賛成することは別' : 'Following is not agreeing'}</strong><p>{language === 'ja' ? 'Uh-huh は「聞いているよ」という合図です。相手の判断に賛成しているとは限りません。' : 'Uh-huh shows that you are following. It does not automatically mean you approve of the other person’s decision.'}</p></div>
+    <SectionIntro>{language === 'ja'
+      ? '相手の出来事に合う短い反応を選びましょう。'
+      : 'A short reaction should match what the other person just said.'}</SectionIntro>
+    <div className="ar-c03-grid">
+      {reactions.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
+    </div>
+    <details className="ar-c03-extra">
+      <summary>{language === 'ja' ? '会話全体でも見てみる' : 'Follow a whole story'}</summary>
+      <Dialogue rows={story} audioProps={audioProps} label={language === 'ja' ? '旅行の話に反応する' : 'Reacting to a travel story'}/>
+      <div className="ar-c03-lesson-tip">
+        <strong>{language === 'ja' ? '聞くことと賛成することは別' : 'Listening is not agreeing'}</strong>
+        <p>{language === 'ja' ? 'Uh-huh は「聞いているよ」という合図です。相手の判断に賛成しているとは限りません。' : 'Uh-huh shows that you are following the story. It does not automatically mean you agree.'}</p>
+      </div>
+    </details>
   </div>
   if (sectionIndex === 3) return <div className="ar-c03 ar-c03-tag-study">
     <SectionIntro>{language === 'ja'

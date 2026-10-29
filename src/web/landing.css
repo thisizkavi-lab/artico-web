@@ -743,7 +743,7 @@ a.al-journey-card:hover {
   min-height: calc(100vh - 78px);
   min-height: calc(100svh - 78px);
 }
-.al-why-heading h2, #al-path-title { scroll-margin-top: 105px; }
+.al-why-heading h2, .al-journey { scroll-margin-top: 105px; }
 @media (max-width: 760px) {
   .al-site-header-inner { min-height: 68px; width: min(100% - 32px, 1530px); gap: 12px; }
   .al-header-logo.artico-wordmark { font-size: 30px; }
@@ -752,7 +752,7 @@ a.al-journey-card:hover {
   .al-header-languages button { min-height: 33px; min-width: 37px; padding: 5px 7px; font-size: 12px; }
   .al-header-start { min-height: 38px; padding: 8px 13px; font-size: 12px; }
   .aw-landing .al-splash { min-height: calc(100svh - 68px); }
-  .al-why-heading h2, #al-path-title { scroll-margin-top: 88px; }
+  .al-why-heading h2, .al-journey { scroll-margin-top: 88px; }
 }
 @media (max-width: 380px) {
   .al-header-logo.artico-wordmark { font-size: 26px; }

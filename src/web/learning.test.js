@@ -14,18 +14,22 @@ import { getFoundationNavigation, getLearningStage, getLessonNavigation, learnin
 import { applicationTracks, applicationResponseKey } from './applicationTracks.js'
 import { publicChapterId, sourceChapterId, migrateLegacyLessonPath } from './chapterNumbers.js'
 
-test('the public entry welcomes new guests without blocking returning learners or direct lesson links', () => {
+test('the public URL always opens Landing before Home, without breaking direct lesson links', () => {
   const returning = visit(emptyLearning, '/lesson/02/practice/friend')
   for (const hash of ['', '#', '#/', '#/?ref=shared']) {
     assert.equal(shouldShowLanding(hash, emptyLearning), true)
-    assert.equal(shouldShowLanding(hash, returning), false)
+    assert.equal(shouldShowLanding(hash, returning), true)
   }
   for (const hash of ['#/home', '#/courses?foundation', '#/lesson/02/practice/friend', '#course']) {
     assert.equal(shouldShowLanding(hash, emptyLearning), false)
+    assert.equal(shouldShowLanding(hash, returning), false)
   }
   assert.equal(shouldShowLanding('#/landing', returning), true)
   assert.equal(shouldShowLanding('#/landing/', emptyLearning), true)
   assert.equal(shouldShowLanding('', loadLearning({ getItem: () => '{bad json' })), true)
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  assert.match(landing, /const startHref = '\/home'/)
+  assert.match(landing, /const startLabel = copy\.open/)
 })
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {

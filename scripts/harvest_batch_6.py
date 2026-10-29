@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""Harvest Batch 6: Around the House (9), Around Town (72), Shopping (73), Supermarket (74)."""
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from harvest_wikipedia_art import harvest_items
+
+ITEMS = [
+    # Lesson 9: Around the house
+    (9, "apartment", "Apartment", "apartment", False),
+    (9, "apartment building / apartment block (uk)", "Apartment", "apartment-building", False),
+    (9, "attic", "Attic", "attic", False),
+    (9, "basement", "Basement", "basement", False),
+    (9, "bathroom", "Bathroom", "bathroom", False),
+    (9, "bedroom", "Bedroom", "bedroom", False),
+    (9, "dining room", "Dining room", "dining-room", False),
+    (9, "kitchen", "Kitchen", "kitchen", False),
+    (9, "laundry room", "Laundry room", "laundry-room", False),
+    (9, "living room", "Living room", "living-room", False),
+    (9, "balcony (building)", "Balcony", "balcony", False),
+    (9, "backyard", "Backyard", "backyard", False),
+    (9, "driveway", "Driveway", "driveway", False),
+    (9, "lawn", "Lawn", "lawn", False),
+    (9, "porch", "Porch", "porch", False),
+    (9, "roof", "Roof", "roof", False),
+    (9, "armchair", "Armchair", "armchair", False),
+    (9, "bedside table", "Nightstand", "bedside-table", False),
+    (9, "closet", "Closet", "closet", False),
+    (9, "couch / sofa", "Couch", "couch", False),
+    (9, "refrigerator / fridge (short form)", "Refrigerator", "refrigerator", False),
+    (9, "sink (household fixture)", "Sink", "sink", False),
+    (9, "stove", "Kitchen stove", "stove", False),
+    (9, "trash can", "Waste container", "trash-can", False),
+
+    # Lesson 72: Around town
+    (72, "city", "City", "city", False),
+    (72, "downtown", "Downtown", "downtown", False),
+    (72, "neighborhood", "Neighbourhood", "neighborhood", False),
+    (72, "street", "Street", "street", False),
+    (72, "street map", "Road map", "street-map", False),
+    (72, "town square", "Town square", "town-square", False),
+    (72, "village", "Village", "village", False),
+    (72, "bridge", "Bridge", "bridge", False),
+    (72, "bus station", "Bus station", "bus-station", False),
+    (72, "fountain", "Fountain", "fountain", False),
+    (72, "skyscraper", "Skyscraper", "skyscraper", False),
+    (72, "bank", "Bank", "bank", False),
+    (72, "movie theater / cinema (also used in the u.s.)", "Movie theater", "cinema", False),
+    (72, "hospital", "Hospital", "hospital", False),
+    (72, "library", "Public library", "library", False),
+    (72, "museum", "Museum", "museum", False),
+    (72, "police station", "Police station", "police-station", False),
+    (72, "post office", "Post office", "post-office", False),
+    (72, "fire station", "Fire station", "fire-station", False),
+    (72, "pharmacy", "Pharmacy", "pharmacy", False),
+    (72, "town hall", "City hall", "town-hall", False),
+    (72, "school", "School", "school", False),
+    (72, "castle", "Castle", "castle", False),
+    (72, "cemetery", "Cemetery", "cemetery", False),
+    (72, "church", "Church (building)", "church", False),
+    (72, "concert hall", "Concert hall", "concert-hall", False),
+    (72, "mosque", "Mosque", "mosque", False),
+    (72, "synagogue", "Synagogue", "synagogue", False),
+    (72, "temple", "Temple", "temple", False),
+    (72, "theater", "Theater (structure)", "theater", False),
+    (72, "factory", "Factory", "factory", False),
+    (72, "office building", "Office", "office-building", False),
+
+    # Lesson 73: Shopping
+    (73, "baker", "Bakery", "baker", False),
+    (73, "bookstore / bookshop", "Bookstore", "bookstore", False),
+    (73, "boutique", "Boutique", "boutique", False),
+    (73, "butcher", "Butcher shop", "butcher", False),
+    (73, "delicatessen", "Delicatessen", "delicatessen", False),
+    (73, "dry cleaners", "Dry cleaning", "dry-cleaners", False),
+    (73, "fishmonger", "Fishmonger", "fishmonger", False),
+    (73, "flea market", "Flea market", "flea-market", False),
+    (73, "florist", "Floristry", "florist", False),
+    (73, "greengrocer", "Greengrocer", "greengrocer", False),
+    (73, "hardware store", "Hardware store", "hardware-store", False),
+    (73, "jewelers", "Jewellery", "jewelers", False),
+    (73, "mall", "Shopping mall", "mall", False),
+    (73, "shoe store / shoe shop", "Shoe", "shoe-store", False),
+    (73, "street market", "Market (place)", "street-market", False),
+    (73, "toy store / toy shop", "Toy", "toy-store", False),
+    (73, "fitting room", "Changing room", "fitting-room", False),
+    (73, "receipt", "Receipt", "receipt", False),
+
+    # Lesson 74: At the supermarket
+    (74, "supermarket", "Supermarket", "supermarket", False),
+    (74, "department store", "Department store", "department-store", False),
+    (74, "canned food", "Canned food", "canned-food", False),
+    (74, "frozen food", "Frozen food", "frozen-food", False),
+    (74, "grocery store", "Grocery store", "grocery-store", False),
+    (74, "produce", "Produce", "produce", False),
+    (74, "aisle", "Aisle", "aisle", False),
+    (74, "elevator", "Elevator", "elevator", False),
+    (74, "escalator", "Escalator", "escalator", False),
+    (74, "food court", "Food court", "food-court", False),
+    (74, "shelves", "Retail", "shelves", False),
+    (74, "shopping bag", "Shopping bag", "shopping-bag", False),
+    (74, "shopping cart", "Shopping cart", "shopping-cart", False),
+    (74, "cashier", "Cashier", "cashier", False),
+    (74, "changing room", "Changing room", "changing-room", False),
+    (74, "self-checkout", "Self-checkout", "self-checkout", False),
+    (74, "cash register", "Cash register", "cash-register", False),
+    (74, "loyalty card", "Loyalty program", "loyalty-card", False),
+    (74, "price tag", "Price tag", "price-tag", False),
+]
+
+if __name__ == "__main__":
+    print(f"Starting harvest for Batch 6 ({len(ITEMS)} items)...")
+    harvest_items(ITEMS)

@@ -147,13 +147,12 @@ def harvest_items(items):
 
             webp_bytes = crop_to_course_ratio(img_resp.content)
             if len(webp_bytes) > 78 * 1024:
-                # compress further to strictly adhere to <80KB limit
                 img = Image.open(io.BytesIO(webp_bytes))
-                for q in (75, 70, 65, 60):
+                for q in (75, 70, 65, 60, 50, 40, 30):
                     buf = io.BytesIO()
                     img.save(buf, format="WEBP", quality=q, method=6)
-                    if len(buf.getvalue()) <= 78 * 1024:
-                        webp_bytes = buf.getvalue()
+                    webp_bytes = buf.getvalue()
+                    if len(webp_bytes) <= 78 * 1024:
                         break
 
             out_file.write_bytes(webp_bytes)

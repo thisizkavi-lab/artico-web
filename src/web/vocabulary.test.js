@@ -109,8 +109,15 @@ test('Lesson 2 presents the complete everyday-number categories with Japanese cl
   assert.match(numberGroups.find(group=>group.id==='decimals').intro.ja,/一桁ずつ/)
   const ui=readFileSync(new URL('./VocabularyNumbersLesson.jsx',import.meta.url),'utf8')
   assert.match(ui,/Practice recall/)
-  assert.match(ui,/タップして答えを確認/)
+  assert.match(ui,/NumberTable group=\{group\}/)
+  assert.match(ui,/VocabularyNumberVisual/)
+  assert.match(ui,/答えを見る/)
   assert.match(ui,/aria-pressed=\{practice\}/)
+  assert.doesNotMatch(ui,/vl02-card-grid/)
+  const illustrations=readFileSync(new URL('./VocabularyNumberVisual.jsx',import.meta.url),'utf8')
+  assert.match(illustrations,/FractionDisc/)
+  assert.match(illustrations,/PercentGrid/)
+  assert.match(illustrations,/ComparisonLine/)
 })
 
 test('Lesson 1 preserves the organized country, nationality and place vocabulary',()=>{

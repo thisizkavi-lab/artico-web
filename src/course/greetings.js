@@ -342,6 +342,27 @@ export const greetingPhrases = [
     'casual',
     { register: 'Optional · very casual' },
   ),
+  phrase(
+    48,
+    'Good night.',
+    'A closing at night or before sleep; usually not a greeting when you first meet.',
+    'open',
+    { register: 'Night · when parting or before sleep' },
+  ),
+  phrase(
+    49,
+    'Hello, everyone.',
+    'A neutral way to greet several people at once.',
+    'open',
+    { register: 'Group greeting · neutral' },
+  ),
+  phrase(
+    50,
+    'Good morning, everyone.',
+    'A friendly morning greeting to a group.',
+    'open',
+    { register: 'Group greeting · morning' },
+  ),
 ]
 
 export const greetingById = Object.fromEntries(greetingPhrases.map((item) => [item.id, item]))
@@ -351,46 +372,39 @@ export const greetingSections = [
   {
     id: 'open',
     title: 'Start the conversation',
-    short: 'Open contact',
+    short: 'Say hello',
     blocks: [
       {
         type: 'text',
-        text: 'Choose one greeting that fits your relationship, the time of day, and the feeling you want to convey. A workplace does not automatically require one single greeting.',
+        text: 'Most conversations begin with something small: a greeting. It is a simple way to acknowledge someone and open the door to a conversation. Sometimes, all you need is a friendly “Hi.” Greetings can change depending on who you are talking to and when you meet.',
+      },
+      { type: 'label', text: 'Everyday greetings' },
+      { type: 'phrases', phrases: ids(3, 4, 5) },
+      {
+        type: 'note',
+        title: 'A little nuance',
+        text: '“Hi” is friendly and works in most situations. “Hello” is neutral and can feel slightly more formal. “Hey” is more casual, especially with people you know.',
+      },
+      { type: 'label', text: 'Greetings throughout the day' },
+      { type: 'phrases', phrases: ids(6, 7, 8, 9, 48) },
+      {
+        type: 'note',
+        title: 'Good evening ≠ Good night',
+        text: 'Say “Good evening” when you meet someone in the evening. Say “Good night” when you are leaving or going to bed. We do not normally use “Good night” to start a conversation.',
       },
       {
         type: 'conversation',
-        title: 'At work, meeting a familiar colleague',
+        title: 'A morning greeting',
         art: 'greetings-morning.svg',
-        alt: 'Alex and Casey greeting each other at work in the morning.',
+        alt: 'Alex and Casey greeting each other in the morning.',
         phrases: ids(1, 2),
       },
       {
         type: 'text',
         text: '“Morning” is a shortened morning greeting. You can also answer with the full “Good morning.”',
       },
-      { type: 'label', text: 'Everyday greetings for any time of day' },
-      { type: 'phrases', phrases: ids(3, 4, 5) },
-      { type: 'label', text: 'Greetings by time of day' },
-      { type: 'phrases', phrases: ids(6, 7, 8, 9) },
-      { type: 'label', text: 'Addressing a group (optional)' },
-      { type: 'phrases', phrases: ids(10, 11) },
-      {
-        type: 'comparison',
-        title: 'Evening greetings: opening vs. closing contact',
-        items: [
-          {
-            badge: 'When you meet in the evening',
-            en: 'Good evening.',
-            text: 'Use this to open a conversation when you arrive or meet someone in the evening.',
-          },
-          {
-            badge: 'When you part or go to bed',
-            en: 'Good night.',
-            text: 'Usually closes contact at night or comes before sleep—not an opening greeting. Chapter 10 develops closings.',
-            contrast: true,
-          },
-        ],
-      },
+      { type: 'label', text: 'Greeting a group' },
+      { type: 'phrases', phrases: ids(10, 49, 50, 11) },
     ],
   },
   {
@@ -619,7 +633,7 @@ export const greetingAliases = {
 export const greetingsModel = {
   id: '01',
   title: 'Greetings',
-  subtitle: 'Open an interaction, answer a short check-in, and greet someone again after time apart.',
+  subtitle: 'Learn to say hello, check in with someone, and reconnect after time apart.',
   phrases: greetingPhrases,
   sections: greetingSections,
   starterIds: greetingStarterIds,

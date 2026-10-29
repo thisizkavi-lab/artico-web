@@ -7,8 +7,6 @@ import './ipa-reference.css'
 
 const copy = {
   en: {
-    title: 'Hear the sounds of General American English',
-    intro: 'Listen to each example word and notice the sound shown by its symbol. You do not need to memorize the whole chart at once.',
     symbol: 'IPA', word: 'Example', clue: 'How it sounds', listen: 'Listen',
     playingRecording: 'Playing example word',
     unavailable: 'This example could not play. Please try again.',
@@ -18,8 +16,6 @@ const copy = {
     sample: 'Example word',
   },
   ja: {
-    title: '一般米語の音を聞いてみよう',
-    intro: '例の単語を聞き、記号が表す音に注目しましょう。表を一度に全部覚える必要はありません。',
     symbol: 'IPA', word: '単語', clue: '音のヒント', listen: '聞く',
     playingRecording: '例の単語を再生中',
     unavailable: 'この音声を再生できませんでした。もう一度お試しください。',
@@ -125,34 +121,15 @@ export default function IpaReference({ mode = 'study' }) {
 
   return (
     <div className="ipa-reference ipa-study">
-      <header className="ipa-intro">
-        <p className="ip-kicker">{scope.eyebrow}</p>
-        <h3>{scope.heading}</h3>
-        {scope.overview.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
-      </header>
-      <section className="ipa-scope" aria-label={scope.inventoryHeading}>
-        <h3>{scope.inventoryHeading}</h3>
-        <p>{scope.inventoryIntro}</p>
-        <div className="ipa-scope-counts">
-          {ipaGroups.map(group =>
-            <div className="ipa-scope-count" key={group.id}>
-              <strong>{group.sounds.length}</strong>
-              <span>{language === 'ja' ? group.ja : group.title}</span>
-            </div>
-          )}
-        </div>
-        <p className="ipa-scope-footnote">{scope.countsNote}</p>
-        <h4>{scope.howToTitle}</h4>
-        <p>{scope.howToText}</p>
-      </section>
-      <div className="ipa-chart-intro">
-        <h3>{l.title}</h3>
-        <p>{l.intro}</p>
-      </div>
       {ipaGroups.map(group => (
-        <section className="ipa-table-section" key={group.id}>
-          <h4>{language === 'ja' ? group.ja : group.title}</h4>
-          <p className="ipa-group-description">{scope.groupDescriptions[group.id]}</p>
+        <section className="ipa-table-section" key={group.id} id={`ipa-${group.id}`}>
+          <div className="ipa-table-heading">
+            <h3>{language === 'ja' ? group.ja : group.title}</h3>
+            <span className="ipa-table-count">{group.sounds.length}</span>
+          </div>
+          {scope.groupDescriptions[group.id].map((paragraph, index) => (
+            <p className="ipa-group-description" key={index}>{paragraph}</p>
+          ))}
           <div className="ipa-table-scroll" role="region"
             aria-label={language === 'ja' ? group.ja : group.title} tabIndex={0}>
             <table className="ipa-table">
@@ -175,19 +152,6 @@ export default function IpaReference({ mode = 'study' }) {
         </section>
       ))}
       <p className="ipa-status" role="status" aria-live="polite">{message}</p>
-      <section className="ipa-beyond" aria-labelledby="ipa-beyond-heading">
-        <h3 id="ipa-beyond-heading">{scope.beyondTitle}</h3>
-        <p>{scope.beyondIntro}</p>
-        <div className="ipa-beyond-list">
-          {scope.beyond.map(item => (
-            <div className="ipa-beyond-item" key={item.title}>
-              <h4>{item.title}</h4>
-              <p>{item.text}</p>
-            </div>
-          ))}
-        </div>
-        <p className="ipa-beyond-closing">{scope.closing}</p>
-      </section>
     </div>
   )
 }

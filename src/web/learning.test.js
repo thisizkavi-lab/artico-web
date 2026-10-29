@@ -13,6 +13,7 @@ import {
 import { getFoundationNavigation, getLearningStage, getLessonNavigation, learningStages } from './pathway.js'
 import { applicationTracks, applicationResponseKey } from './applicationTracks.js'
 import { publicChapterId, sourceChapterId, migrateLegacyLessonPath } from './chapterNumbers.js'
+import { landingPageCopy } from './landingCopy.js'
 
 test('the public URL always opens Landing before Home, without breaking direct lesson links', () => {
   const returning = visit(emptyLearning, '/lesson/02/practice/friend')
@@ -28,8 +29,8 @@ test('the public URL always opens Landing before Home, without breaking direct l
   assert.equal(shouldShowLanding('#/landing/', emptyLearning), true)
   assert.equal(shouldShowLanding('', loadLearning({ getItem: () => '{bad json' })), true)
   const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
-  assert.match(landing, /className="al-header-start" href="#\/home"/)
-  assert.match(landing, /className="al-splash-cta" href="#\/home"/)
+  assert.match(landing, /className="al-header-start" href="#\/home">\{copy\.start\}/)
+  assert.match(landing, /className="al-splash-cta" href="#\/home">\{copy\.start\}/)
   const app = readFileSync(new URL('./ArticoApp.jsx', import.meta.url), 'utf8')
   assert.match(app, /initialPath === '\/home'/)
   assert.match(app, /useState\(readInitialEntry\)/)
@@ -43,18 +44,20 @@ test('landing uses a full-height illustrated hero with a working blue entry and 
   const art = readFileSync(new URL('../../public/landing-hero-background.svg', import.meta.url), 'utf8')
   assert.match(landing, /className="al-splash"/)
   assert.match(landing, /landing-hero-background\.svg/)
-  assert.match(landing, /href="#\/home">Get Started/)
+  assert.match(landing, /href="#\/home">\{copy\.start\}/)
   assert.match(css, /\.al-splash\s*\{/)
   assert.match(css, /min-height: 100svh/)
   assert.match(css, /\.al-splash-cta\s*\{/)
   assert.match(css, /background: #285bcc/)
   assert.match(art, /Abstract-Conversation-Illustration/)
   assert.match(index, /family=Poppins/)
-  assert.match(landing, /id="al-why-title">why artico\?/)
+  assert.match(landing, /id="al-why-title">\{copy\.whyTitle\}/)
+  const source = landingPageCopy.en.whyParagraphs.flatMap(paragraph => paragraph.runs)
   for (const phrase of ['real learning needs effort', 'flow', 'perfect middle', 'trained like a skill',
     'sound, rhythm, movement', 'train expression', 'communication', 'universal interface',
-    'people feel it']) assert.ok(landing.includes(phrase), phrase)
-  assert.equal((landing.match(/<mark>/g) ?? []).length, 9)
+    'people feel it']) assert.ok(source.some(run => typeof run === 'string' ? run.includes(phrase) : run.mark.includes(phrase)), phrase)
+  assert.equal(source.filter(run => typeof run !== 'string').length, 9)
+  assert.match(landing, /<mark key=\{runIndex\}>\{run\.mark\}<\/mark>/)
 })
 
 test('landing drops the study/practice mockup and introduction footnote and has a working header', () => {
@@ -75,40 +78,45 @@ test('landing drops the study/practice mockup and introduction footnote and has 
   assert.match(landing, /document\.addEventListener\('pointerdown', closeOnOutside\)/)
   assert.match(landing, /event\.key === 'Escape'/)
   assert.match(language, /window\.localStorage\.setItem\(LANGUAGE_KEY, value\)/)
-  assert.match(landing, /className="al-header-start" href="#\/home">Get Started/)
+  assert.match(landing, /className="al-header-start" href="#\/home">\{copy\.start\}/)
   assert.match(css, /\.al-site-header\s*\{/)
   assert.match(css, /\.al-language-popover button\[aria-pressed="true"\]/)
   assert.doesNotMatch(landing, /className="al-method"|TWO MODES\. ONE CONTINUOUS LESSON\.|al-previews|className="al-conversation"|al-choices/)
   assert.doesNotMatch(landing, /New here\? Begin with Orientation\.|Or choose the stage that fits you\.|al-journey-footnote/)
   assert.doesNotMatch(landing, /Login|Sign Up|Sign in/)
-  assert.match(landing, /Learning path<\/a>/)
+  assert.match(landing, /\{copy\.journeyLink\}<\/a>/)
 })
 
 test('landing journey maps active stages to real routes and identifies the aspirational destination', () => {
   const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
   const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
   // Learning-stage descriptions are informational, never routing links.
-  assert.equal((landing.match(/<div className="al-journey-card"/g) ?? []).length, 3)
+  assert.match(landing, /copy\.stages\.map\(\(stage, index\)/)
+  assert.equal(landingPageCopy.en.stages.length, 4)
+  assert.equal(landingPageCopy.ja.stages.length, 4)
   assert.doesNotMatch(landing, /<a href="#\/(?:courses|application)"[^>]*className="al-journey-card"/)
   assert.doesNotMatch(landing, /href="#\/courses\?foundation" className="al-journey-card"/)
-  assert.match(landing, /The Artico learning journey/)
-  assert.match(landing, /Foundations \/ Raw mechanics/)
-  assert.match(landing, /Social Fluency/)
-  assert.match(landing, /Apex Communicator/)
-  assert.match(landing, /the destination, not a separate course/)
+  assert.equal(landingPageCopy.en.journeyTitle, 'The Artico learning journey')
+  assert.match(landing, /\{copy\.journeyTitle\}/)
+  assert.match(landingPageCopy.en.stages[0].title, /Foundations \/ Raw mechanics/)
+  assert.match(landingPageCopy.en.stages[1].title, /Social Fluency/)
+  assert.match(landingPageCopy.en.stages[3].title, /Apex Communicator/)
+  assert.match(landingPageCopy.en.stages[3].note, /the destination, not a separate course/)
   assert.match(landing, /className="al-journey-illustration"/)
   assert.match(landing, /className="al-route-art" viewBox="0 0 780 640"/)
-  assert.match(landing, /Raw mechanics<\/text>/)
-  assert.match(landing, /Social fluency<\/text>/)
-  assert.match(landing, /Application<\/text>/)
-  assert.match(landing, /Apex communicator<\/text>/)
+  for (let i = 0; i < 4; i++) {
+    assert.ok(landing.includes('{copy.illustrationLabels[' + i + ']}'))
+    assert.ok(landingPageCopy.ja.illustrationLabels[i].length > 0)
+  }
   assert.match(css, /\.al-journey-cards/)
   assert.match(css, /\.al-journey-card/)
   assert.match(css, /@media \(max-width: 740px\)/)
-  assert.match(landing, /your English journey starts now\.\.\./)
-  assert.match(landing, /className="al-final-cta-button">Get Started/)
+  assert.equal(landingPageCopy.en.closing, 'your English journey starts now...')
+  assert.match(landing, /\{copy\.closing\}/)
+  assert.match(landing, /className="al-final-cta-button">\{copy\.start\}/)
   assert.match(css, /\.al-final-cta-button[^]*?background: #285bcc/)
-  assert.match(landing, /english but better\.\.\./)
+  assert.equal(landingPageCopy.en.footerTagline, 'english but better...')
+  assert.match(landing, /\{copy\.footerTagline\}/)
   assert.match(landing, /© \{new Date\(\)\.getFullYear\(\)\} Artico/)
   assert.doesNotMatch(landing, /Android|iOS|Terms of service|Artico, Inc\./)
   assert.doesNotMatch(landing, /English for everyday life\./)
@@ -123,6 +131,47 @@ test('landing uses one-time motion with reduced-motion support and aligned route
   assert.match(css, /\.al-journey-card, \.al-journey-card:nth-child\(n\)/)
   assert.match(css, /cursor: default/)
   assert.match(css, /\.al-journey-illustration svg[^{]*\{[^}]*overflow: hidden/s)
+})
+
+test('English and Japanese landing copy translates every visible area with matching highlight structure', () => {
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
+  const needed = [
+    'pageTitle', 'skip', 'open', 'backToLanding', 'navigation', 'whyLink',
+    'journeyLink', 'selectLanguage', 'languageTrigger', 'start', 'heroTitle',
+    'heroDescription', 'whyEyebrow', 'whyTitle', 'journeyTitle', 'journeyAria',
+    'closing', 'footerTagline', 'footerNavigation', 'footerExplore', 'footerOrientation',
+    'footerLevelZero', 'footerAbout', 'footerResources', 'footerSocial',
+    'footerApplication', 'footerSupport', 'footerGithub', 'footerIssue',
+  ]
+  for (const key of needed) {
+    assert.ok(landingPageCopy.en[key], 'Missing English ' + key)
+    assert.ok(landingPageCopy.ja[key], 'Missing Japanese ' + key)
+  }
+  for (const locale of ['en', 'ja']) {
+    const page = landingPageCopy[locale]
+    assert.equal(page.heroTitle.length, 2)
+    assert.equal(page.whyParagraphs.length, 4)
+    assert.equal(page.illustrationLabels.length, 4)
+    assert.equal(page.stages.length, 4)
+    assert.ok(page.stages.every(stage => stage.title && stage.tagline && stage.description))
+    assert.ok(page.whyParagraphs.every(paragraph => paragraph.runs.length >= 3))
+    assert.equal(page.whyParagraphs.flatMap(paragraph => paragraph.runs).filter(run => typeof run !== 'string').length, 9)
+    assert.ok(page.stages[3].note)
+  }
+  assert.notEqual(landingPageCopy.en.heroTitle[0], landingPageCopy.ja.heroTitle[0])
+  assert.notEqual(landingPageCopy.en.whyTitle, landingPageCopy.ja.whyTitle)
+  assert.notEqual(landingPageCopy.en.closing, landingPageCopy.ja.closing)
+  assert.notEqual(landingPageCopy.en.start, landingPageCopy.ja.start)
+  for (const token of [
+    'copy.heroTitle[0]', 'copy.heroTitle[1]', 'copy.heroDescription',
+    'copy.whyParagraphs.map', 'copy.stages.map', 'copy.illustrationLabels[0]',
+    'copy.whyLink', 'copy.journeyLink', 'copy.closing', 'copy.footerTagline',
+    'copy.footerOrientation', 'copy.footerIssue', 'copy.pageTitle',
+  ]) assert.ok(landing.includes(token), token)
+  assert.match(landing, /lang=\{language\}/)
+  assert.match(css, /\.aw-landing\[data-language="ja"\]/)
+  assert.match(css, /Noto Sans JP/)
 })
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {

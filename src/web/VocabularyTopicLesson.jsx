@@ -184,6 +184,63 @@ function Visual({visual}) {
     src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async" />
 }
 
+
+const relativeFrequency = [
+  {term:'always', label:'Always', width:'100%', bg:'#d95462', ink:'#ffffff'},
+  {term:'usually', label:'Usually', width:'90%', bg:'#f0c044', ink:'#2e3545'},
+  {term:'often', label:'Often', width:'78%', bg:'#91b278', ink:'#263d3c'},
+  {term:'sometimes', label:'Sometimes', width:'65%', bg:'#efa657', ink:'#303849'},
+  {term:'rarely / seldom', label:'Rarely / seldom', width:'52%', bg:'#8678c8', ink:'#ffffff'},
+  {term:'never', label:'Never', width:'35%', bg:'#7094b3', ink:'#ffffff'},
+]
+
+function FrequencyScale({items,japanese}) {
+  const terms = new Set(items.map(([term])=>term))
+  const levels = relativeFrequency.filter(level=>terms.has(level.term))
+  const intervals = items.filter(([term])=>!relativeFrequency.some(level=>level.term===term))
+  return (
+    <div className="vlt-frequency-study">
+      <section className="vlt-frequency-scale" aria-label={japanese?'頻度の目安':'Relative frequency of common adverbs'}>
+        <header className="vlt-frequency-scale-header">
+          <span className="vlt-frequency-eyebrow">{japanese?'頻度を表す言葉':'ADVERBS OF FREQUENCY'}</span>
+          <h4>{japanese?'どのくらいよく起こる？':'How often does it happen?'}</h4>
+          <p>{japanese?'上ほど頻度が高く、下ほど低くなります。':'From most frequent to least frequent.'}</p>
+        </header>
+        <ol className="vlt-frequency-bars">
+          {levels.map(level=>(
+            <li key={level.term}>
+              <div className="vlt-frequency-bar" style={{
+                '--vlt-frequency-width':level.width,
+                '--vlt-frequency-background':level.bg,
+                '--vlt-frequency-foreground':level.ink,
+              }}>
+                <span lang="en">{level.label}</span>
+                {japanese&&<small lang="ja">{vocabularyJapanese(level.term,3)}</small>}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p className="vlt-frequency-note">{japanese
+          ? 'これは大まかな順序です。usually、often、sometimes などに決まった割合はありません。never は「一度もない」という意味です。'
+          : 'This is a general guide, not a percentage scale. “Usually,” “often,” and “sometimes” have no fixed percentages; “never” means not at all.'}</p>
+      </section>
+      {intervals.length>0&&(
+        <section className="vlt-frequency-intervals" aria-label={japanese?'具体的な頻度':'Specific intervals'}>
+          <div className="vlt-frequency-interval-heading">
+            <h4>{japanese?'具体的な頻度':'Specific intervals'}</h4>
+            <p>{japanese?'「毎日」「週に1回」など、回数や間隔をはっきり伝える表現。':'Use these when you can name the interval or number of times.'}</p>
+          </div>
+          <div className="vlt-grid">
+            {intervals.map((entry,index)=>(
+              <VocabCard key={index} entry={entry} lesson={3} practice={false} japanese={japanese}/>
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  )
+}
+
 function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
   const [term, note] = entry
   const ja = vocabularyJapanese(term, lesson)
@@ -300,6 +357,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
           const isDaysChart = topic.sourceLesson === 3 && group.index === 1
           const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
           const isTimeSpansTable = topic.sourceLesson === 3 && group.index === 4
+          const isFrequencyScale = topic.sourceLesson === 3 && group.index === 5
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -321,7 +379,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                     ? <MonthsOfYearChart japanese={japanese} />
                     : isTimeSpansTable && mode === 'study'
                       ? <TimeSpansTable items={cards} japanese={japanese} />
-                      : <div className="vlt-grid">
+                      : isFrequencyScale && mode === 'study'
+                        ? <FrequencyScale items={cards} japanese={japanese} />
+                        : <div className="vlt-grid">
                     {cards.map((entry, index) => {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}

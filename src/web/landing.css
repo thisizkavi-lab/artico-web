@@ -1285,14 +1285,20 @@ a.al-journey-card:hover {
   object-fit: cover;
   object-position: center center;
 }
-/* On desktop, place the headline about 2.5 cm below the header instead of
-   vertically centering the whole hero stack in the tall illustration. */
+/* Desktop: approximately 3 cm of space below the navigation, while the
+   hero's height follows its content instead of leaving a blank screen below.
+   Anchor the background to the bottom so the crop removes sky, not walkers. */
 @media (min-width: 761px) {
   .aw-landing .al-splash {
+    min-height: 0;
     align-items: start;
   }
   .aw-landing .al-splash-content {
-    padding-top: clamp(70px, 5.5vw, 84px);
+    padding-top: 113px;
+    padding-bottom: clamp(95px, 8vw, 125px);
+  }
+  .aw-landing .al-splash-art {
+    object-position: center bottom;
   }
 }
 @media (max-width: 740px) {

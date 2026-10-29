@@ -1180,3 +1180,35 @@
 @media (prefers-reduced-motion: reduce) {
   .rf-page .tt-study .tt-reader-audio-actions .tt-reader-control { transition: none; }
 }
+
+
+/* Calm gray type hierarchy for the Tongue Twisters reading lesson.
+   Primary text (the twisters themselves) deliberately keeps its existing
+   bold ink color. Supporting copy, headings, and notes step into gray. */
+.rf-page.rf-tongue-lesson .ip-lesson-heading .ip-heading-title h1 {
+  color: #5b6870;
+}
+.rf-page.rf-tongue-lesson .ip-lesson-heading > p:not(.ip-kicker) {
+  color: #77838c;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-library > h2 {
+  color: #68747d;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-level-heading h3 {
+  color: #757f88;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-level-heading > span {
+  color: #88949f;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-copy p {
+  color: #65717a;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-copy p strong {
+  color: #43515a;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-reader-notice-label {
+  color: #797f85;
+}
+.rf-page.rf-tongue-lesson .tt-study .tt-reader-notice p {
+  color: #6e767e;
+}

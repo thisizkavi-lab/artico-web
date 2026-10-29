@@ -45,6 +45,15 @@ function NumberTable({ group, japanese, practice, revealed, onReveal }) {
           })}
         </tbody>
       </table>
+      {illustrated && <p className="vl02-visual-key">
+        {group.id === 'fractions'
+          ? (japanese
+            ? '青い部分が表している量です。薄い部分は残りです。'
+            : 'Blue shows the portion being described; pale shows the rest.')
+          : (japanese
+            ? '100マスの図では1マスが1％です。数直線では白丸はその数を含まず、青丸は含みます。5は例です。'
+            : 'Each square represents 1%. On number lines, an open circle excludes the example value 5; a filled circle includes it.')}
+      </p>}
     </div>
   )
 }

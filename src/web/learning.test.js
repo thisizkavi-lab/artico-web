@@ -397,7 +397,11 @@ test('Home cards are compact grayscale and Foundations displays as Level Zero', 
   assert.equal(parseRoute('#/foundation/letters/study').page, 'foundation')
   assert.equal(parseRoute('#/courses?foundation').page, 'courses')
   assert.match(locale, /"Level Zero": "レベルゼロ"/)
-  assert.match(progress, /Orientation & Level Zero/)
+  // Progress no longer lists every opened Foundation or chapter.
+  assert.match(progress, /CONTINUE LEARNING/)
+  assert.match(progress, /My Space/)
+  assert.match(progress, /Self-assessment/)
+  assert.doesNotMatch(progress, /Chapters you have opened/)
   assert.match(css, /grid-template-columns:70px minmax\(0,1fr\) auto/)
   assert.match(css, /min-height:96px; box-sizing:border-box/)
   assert.match(css, /width:64px; height:64px/)

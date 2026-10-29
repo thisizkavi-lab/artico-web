@@ -34,7 +34,7 @@ test('the learning path crosses stage boundaries without skipping a foundation o
   assert.equal(getFoundationNavigation('orientation').previous, '/home')
   assert.equal(getFoundationNavigation('how-it-works').next, '/foundation/letters/study')
   assert.equal(getFoundationNavigation('letters').previous, '/foundation/how-it-works/study')
-  assert.equal(getFoundationNavigation('lr').next, '/lesson/01/study')
+  assert.equal(getFoundationNavigation('tongue-intro').next, '/lesson/01/study')
   steps.slice(0, -1).forEach((id, index) => {
     const next = getFoundationNavigation(id).next
     assert.equal(parseRoute(`#${next}`).id, steps[index + 1])
@@ -58,13 +58,13 @@ test('new guests start at Orientation and returning guests keep their actual stu
   assert.equal(parseRoute(`#${learningStages[0].start}`).id, 'orientation')
 })
 
-test('all 104 lessons have a reversible path from Orientation through Chapter 97 in both modes', () => {
+test('all 103 lessons have a reversible path from Orientation through Chapter 97 in both modes', () => {
   const chapters = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url)))
   const routes = [
     ...learningStages.flatMap((stage) => stage.lessonIds).map((id) => `/foundation/${id}/study`),
     ...['34', ...chapters.map(chapter => publicChapterId(chapter.id))].sort().map(id => `/lesson/${id}/study`),
   ]
-  assert.equal(routes.length, 104)
+  assert.equal(routes.length, 103)
   assert.equal(new Set(routes).size, routes.length)
   routes.forEach((path, index) => {
     const route = parseRoute(`#${path}`)
@@ -140,7 +140,7 @@ test('old course URLs, Foundation links, and all 97 chapter URLs resolve', () =>
     parseRoute('#/lesson/02/practice/first?phrase=phrase-coworker').phrase,
     'phrase-coworker',
   )
-  assert.equal(parseRoute('#/foundation/lr/chunks').view, 'chunks')
+  assert.equal(parseRoute('#/foundation/lr/chunks').view, 'practice')
   assert.deepEqual(parseRoute('#/foundation/hear/study'), parseRoute('#/foundation/letters/study'))
   assert.deepEqual(parseRoute('#/foundation/hear/practice'), parseRoute('#/foundation/letters/practice'))
   assert.equal(parseRoute('#/lesson/98/study').page, 'vocabulary')

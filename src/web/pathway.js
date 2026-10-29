@@ -46,7 +46,7 @@ export const learningStages = [
 export function getLearningStage(path) {
   if (/^\/lesson\//.test(path ?? '')) return learningStages[2]
   const id = path?.match(/^\/foundation\/([^/?]+)/)?.[1]
-  return learningStages.find((stage) => stage.lessonIds.includes(id))
+  return learningStages.find((stage) => stage.lessonIds.includes(id === 'lr' ? 'tongue-intro' : id))
 }
 
 export function getFoundationNavigation(id) {

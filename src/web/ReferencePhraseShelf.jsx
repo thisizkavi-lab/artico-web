@@ -6,10 +6,10 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
 // A reusable teaching panel for Chapters 02–96. Every phrase retains its
 // original ID, context and translation; this component changes only its view.
-export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title }) {
+export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId }) {
   const { language, t } = useLanguage()
   const items = ids.map(id => byId[id]).filter(Boolean)
-  const [selected, setSelected] = useState(0)
+  const [selected, setSelected] = useState(() => Math.max(0, ids.indexOf(focusedId)))
   const speechRef = useRef(null)
   const current = items[selected] || items[0]
   const visible = items.slice(0, 4)

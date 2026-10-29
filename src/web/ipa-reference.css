@@ -3,6 +3,29 @@
 .ipa-intro { margin-bottom: 19px; }
 .ipa-intro h3 { margin: 0 0 7px; font-size: 21px; font-weight: 670; }
 .ipa-intro p, .ipa-notes p { font-size: 14px; color: var(--muted); line-height: 1.72; }
+.ipa-intro .ip-kicker { margin: 0 0 8px; }
+.ipa-intro p + p { margin-top: 8px; }
+.ipa-scope { border: 1px solid var(--line); border-radius: 13px; background: var(--surface); padding: 20px 22px; margin: 20px 0 24px; }
+.ipa-scope h3, .ipa-chart-intro h3, .ipa-beyond h3 { margin: 0 0 9px; font-weight: 670; font-size: 19px; }
+.ipa-scope h4 { margin: 19px 0 6px; font-size: 14px; font-weight: 680; }
+.ipa-scope p, .ipa-chart-intro p, .ipa-group-description, .ipa-beyond p { font-size: 13px; color: var(--muted); line-height: 1.78; }
+.ipa-scope p { margin: 0; }
+.ipa-scope-counts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0; border-block: 1px solid var(--line); margin: 15px 0 9px; padding: 13px 0; }
+.ipa-scope-count { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; min-width: 0; border-right: 1px solid var(--line); }
+.ipa-scope-count:last-child { border-right: none; }
+.ipa-scope-count strong { font-size: 24px; font-weight: 670; color: var(--ink); }
+.ipa-scope-count span { font-size: 11px; font-weight: 580; color: var(--muted); text-align: center; }
+.ipa-scope .ipa-scope-footnote { font-size: 11px; }
+.ipa-chart-intro { margin: 24px 0 8px; }
+.ipa-chart-intro p { margin: 0; }
+.ipa-group-description { margin: 0 0 12px; max-width: 75ch; }
+.ipa-beyond { border-top: 1px solid var(--line); padding-top: 22px; margin: 30px 0 22px; }
+.ipa-beyond > p { margin: 0 0 16px; }
+.ipa-beyond-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px 24px; }
+.ipa-beyond-item { padding-top: 12px; border-top: 1px solid var(--line); }
+.ipa-beyond-item h4 { font-size: 14px; font-weight: 670; margin: 0 0 5px; color: var(--ink); }
+.ipa-beyond-item p { margin: 0; }
+.ipa-beyond .ipa-beyond-closing { margin: 21px 0 0; font-weight: 560; color: var(--ink); }
 .ipa-table-section { margin: 20px 0 24px; }
 .ipa-table-section h4 { margin: 0 0 9px; font-weight: 680; font-size: 17px; }
 .ipa-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); }
@@ -50,6 +73,8 @@
 .ipa-symbol-selector button[aria-pressed="true"] { background: var(--forest); color: white; border-color: var(--forest); }
 .ipa-symbol-selector button:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
 @media (max-width: 640px) {
+  .ipa-scope { padding: 16px; }
+  .ipa-beyond-list { grid-template-columns: 1fr; gap: 12px; }
   .ipa-table th, .ipa-table td { padding: 10px 9px; }
   .ipa-table .ipa-symbol-cell { font-size: 19px; width: 67px; }
   .ipa-table .ipa-word { font-size: 12px; min-width: 47px; }

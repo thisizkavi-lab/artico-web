@@ -92,8 +92,8 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="al-journey" aria-labelledby="al-path-title">
-          <h2 ref={pathRef} tabIndex={-1} id="al-path-title" className="al-sr-only">The Artico learning journey</h2>
+        <section className="al-journey" ref={pathRef} tabIndex={-1} aria-labelledby="al-path-title">
+          <h2 id="al-path-title" className="al-sr-only">The Artico learning journey</h2>
           <div className="al-journey-inner">
             <div className="al-journey-illustration">
               <svg viewBox="0 0 720 610" role="img" aria-label="A winding journey from letters to conversation, real-life English and expressive mastery" xmlns="http://www.w3.org/2000/svg">

@@ -235,6 +235,7 @@ export default function Landing() {
             <div className="al-footer-column">
               <h3>{copy.footerResources}</h3>
               <a href="#/foundation/how-it-works/study">{copy.footerHowTo}</a>
+              <a href="https://github.com/thisizkavi-lab/artico-web/blob/main/public/vocabulary-symbols/ATTRIBUTION.md" target="_blank" rel="noopener noreferrer">{copy.footerArtCredits}</a>
             </div>
             <div className="al-footer-column">
               <h3>{copy.footerSupport}</h3>

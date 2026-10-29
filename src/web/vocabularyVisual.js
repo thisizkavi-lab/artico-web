@@ -1,3 +1,4 @@
+import { vocabularyAiGrooming } from './vocabularyAiGrooming'
 import { vocabularyAiFood } from './vocabularyAiFood'
 import { vocabularyAiScene } from './vocabularyAiScene'
 import { vocabularyActionPng } from './vocabularyActionPng'
@@ -11,6 +12,8 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
 // Original educational PNGs take precedence over third-party raster art.
 function artworkFor(term, chapter) {
+  const grooming = vocabularyAiGrooming(term, chapter)
+  if (grooming) return grooming
   const painted = vocabularyAiScene(term, chapter)
   if (painted) return painted
   const food = vocabularyAiFood(term, chapter)

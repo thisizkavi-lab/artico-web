@@ -54,7 +54,9 @@ test('landing uses a full-height illustrated hero with a working blue entry and 
   assert.ok(art.length > 20000)
   assert.doesNotMatch(landing, /landing-hero-background\.svg/)
   assert.match(index, /family=Poppins/)
-  assert.match(landing, /id="al-why-title">\{copy\.whyTitle\}/)
+  assert.match(landing, /id="al-why-title">\{language ===/)
+  assert.match(landing, /className="al-why-question-mark">\?<\/span>/)
+  assert.match(css, /\.al-why-question-mark\s*\{/)
   const source = landingPageCopy.en.whyParagraphs.flatMap(paragraph => paragraph.runs)
   for (const phrase of ['real learning needs effort', 'flow', 'perfect middle', 'trained like a skill',
     'sound, rhythm, movement', 'train expression', 'communication', 'universal interface',

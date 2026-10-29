@@ -225,14 +225,54 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
     <Dialogue rows={story} audioProps={audioProps} language={language} label={language === 'ja' ? '出来事の流れに合わせて反応する' : 'Follow a whole story'}/>
     <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? '聞くことと賛成することは別' : 'Following is not agreeing'}</strong><p>{language === 'ja' ? 'Uh-huh は「聞いているよ」という合図です。相手の判断に賛成しているとは限りません。' : 'Uh-huh shows that you are following. It does not automatically mean you approve of the other person’s decision.'}</p></div>
   </div>
-  if (sectionIndex === 3) return <div className="ar-c03">
-    <SectionIntro>{language === 'ja' ? '付加疑問（tag question）は、文の最後に短い質問をつなげて確認する形です。短い部分だけを覚えるのではなく、文全体と返答をまとめて見てください。' : 'A tag question adds a short check to a complete statement. Read the statement, tag, and actual response together.'}</SectionIntro>
-    <div className="ar-c03-checks">{checks.map((item,i)=><article className="ar-c03-check" key={i}>
-      <div className="ar-c03-check-header"><span className="ar-c03-number">{String(i+1).padStart(2,'0')}</span><Speak lines={[item.statement + ' ' + item.tag, item.yes, item.no]} audioProps={audioProps}/></div>
-      <p className="ar-c03-check-sentence" lang="en">{item.statement} <mark className="ar-c03-mark">{item.tag}</mark></p>
-      <div className="ar-c03-answers"><span lang="en">{item.yes}</span><span lang="en">{item.no}</span></div>
-      <p className="ar-c03-check-note">{language === 'ja' ? item.ja : item.en}</p>
-    </article>)}</div>
+  if (sectionIndex === 3) return <div className="ar-c03 ar-c03-tag-study">
+    <SectionIntro>{language === 'ja'
+      ? '付加疑問（tag question）は、文のあとに短い確認の質問をつなげる形です。上の問いかけから矢印に沿って、状況に合った返事へ進んでみましょう。'
+      : 'A tag question adds a short check to a statement. Follow each question down to the possible replies. The answer depends on what is true, not on how the question is phrased.'}</SectionIntro>
+    <div className="ar-c03-flows">
+      {checks.map((item, i) => {
+        const question = item.statement + ' ' + item.tag
+        const positiveStatement = i !== 2
+        return <article className="ar-c03-flow" key={i} aria-label={question}>
+          <div className="ar-c03-flow-head">
+            <span className="ar-c03-flow-index">{String(i+1).padStart(2,'0')}</span>
+            <span className="ar-c03-polarity">{positiveStatement
+              ? (language === 'ja' ? '肯定文 → 否定の確認' : 'Positive statement → negative tag')
+              : (language === 'ja' ? '否定文 → 肯定の確認' : 'Negative statement → positive tag')}</span>
+          </div>
+          <div className="ar-c03-question-wrap">
+            <div className="ar-c03-question-bubble">
+              <div className="ar-c03-bubble-head">
+                <span className="ar-c03-bubble-speaker">A</span>
+                <span className="ar-c03-bubble-caption">{language === 'ja' ? '確認する' : 'Check'}</span>
+                <Speak lines={[question]} audioProps={audioProps}/>
+              </div>
+              <p lang="en" className="ar-c03-question-text">{item.statement} <mark className="ar-c03-mark">{item.tag}</mark></p>
+            </div>
+          </div>
+          <div className="ar-c03-flow-arrow" aria-hidden="true"/>
+          <div className="ar-c03-response-bubble">
+            <div className="ar-c03-bubble-head ar-c03-response-head">
+              <span className="ar-c03-bubble-speaker">B</span>
+              <span className="ar-c03-bubble-caption">{language === 'ja' ? '実際の状況に合わせて答える' : 'Reply according to the facts'}</span>
+            </div>
+            <div className="ar-c03-response-paths">
+              <div className="ar-c03-response-path">
+                <span className="ar-c03-response-label">{language === 'ja' ? 'はい' : 'Yes'}</span>
+                <p lang="en">{item.yes}</p>
+                <Speak lines={[question, item.yes]} audioProps={audioProps}/>
+              </div>
+              <div className="ar-c03-response-path">
+                <span className="ar-c03-response-label">{language === 'ja' ? 'いいえ' : 'No'}</span>
+                <p lang="en">{item.no}</p>
+                <Speak lines={[question, item.no]} audioProps={audioProps}/>
+              </div>
+            </div>
+          </div>
+          <p className="ar-c03-flow-explanation">{language === 'ja' ? item.ja : item.en}</p>
+        </article>
+      })}
+    </div>
     <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? 'もっと簡単に聞いてもよい' : 'A simpler alternative'}</strong><p>{language === 'ja' ? '付加疑問が難しければ、Does the class start at six? のように普通の質問でも確認できます。相手に合わせるより、事実を正しく答えることが大切です。' : 'If the tag feels difficult, ask a full question: “Does the class start at six?” Answer with the correct information even if the question suggests something else.'}</p></div>
   </div>
   return null

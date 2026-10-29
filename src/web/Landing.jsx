@@ -10,6 +10,10 @@ export default function Landing() {
   const mainRef = useRef(null)
   const languageMenuRef = useRef(null)
   const [languageOpen, setLanguageOpen] = useState(false)
+  const [feedbackOpen, setFeedbackOpen] = useState(false)
+  const [feedbackText, setFeedbackText] = useState('')
+  const [feedbackStatus, setFeedbackStatus] = useState('')
+  const feedbackInputRef = useRef(null)
 
   useEffect(() => {
     document.title = copy.pageTitle
@@ -33,6 +37,38 @@ export default function Landing() {
       document.removeEventListener('keydown', closeOnEscape)
     }
   }, [languageOpen])
+
+  useEffect(() => {
+    if (!feedbackOpen) return undefined
+    const onEscape = (event) => {
+      if (event.key === 'Escape') setFeedbackOpen(false)
+    }
+    document.addEventListener('keydown', onEscape)
+    feedbackInputRef.current?.focus()
+    return () => document.removeEventListener('keydown', onEscape)
+  }, [feedbackOpen])
+
+  async function shareFeedback() {
+    const message = feedbackText.trim()
+    if (!message) return
+    const body = `Artico feedback:\n\n${message}`
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Artico feedback', text: body })
+        setFeedbackStatus(copy.feedbackShared)
+        return
+      } catch (error) {
+        if (error?.name === 'AbortError') return
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(body)
+      setFeedbackStatus(copy.feedbackCopied)
+    } catch {
+      setFeedbackStatus(copy.feedbackCopyFailed)
+      feedbackInputRef.current?.select()
+    }
+  }
 
   function chooseLanguage(next) {
     setLanguage(next)
@@ -108,11 +144,11 @@ export default function Landing() {
             fetchPriority="high"
           />
           <div className="al-splash-content">
-            <h1 key={language} className="al-splash-title" id="al-title" lang={language}>
+            <h1 className="al-splash-title" id="al-title" lang={language}>
               <span>{copy.heroTitle[0]}</span>{' '}
               <span>{copy.heroTitle[1]}</span>
             </h1>
-            <p key={language} className="al-splash-description" lang={language}>{copy.heroDescription}</p>
+            <p className="al-splash-description" lang={language}>{copy.heroDescription}</p>
             <a className="al-splash-cta" href="#/home">{copy.start}</a>
           </div>
         </section>
@@ -233,16 +269,12 @@ export default function Landing() {
       <footer className="al-footer">
         <div className="al-footer-main">
           <div className="al-footer-brand">
-            <a className="al-footer-logo artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
+            <a className="al-footer-logo artico-wordmark" href="#/landing"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              aria-label={copy.backToLanding}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
             <p className="al-footer-tagline">{copy.footerTagline}</p>
           </div>
           <nav className="al-footer-directory" aria-label={copy.footerNavigation}>
-            <div className="al-footer-column">
-              <h3>{copy.footerExplore}</h3>
-              <a href="#/home">{copy.start}</a>
-              <a href="#/foundation/orientation/study">{copy.footerOrientation}</a>
-              <a href="#/courses?foundation">{copy.footerLevelZero}</a>
-            </div>
             <div className="al-footer-column">
               <h3>{copy.footerAbout}</h3>
               <a href="#al-why-title" onClick={(event) => { event.preventDefault(); document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' }) }}>{copy.whyLink}</a>
@@ -250,13 +282,11 @@ export default function Landing() {
             </div>
             <div className="al-footer-column">
               <h3>{copy.footerResources}</h3>
-              <a href="#/courses?social">{copy.footerSocial}</a>
-              <a href="#/application">{copy.footerApplication}</a>
+              <a href="#/foundation/how-it-works/study">{copy.footerHowTo}</a>
             </div>
             <div className="al-footer-column">
               <h3>{copy.footerSupport}</h3>
-              <a href="https://github.com/thisizkavi-lab/artico-web" target="_blank" rel="noopener noreferrer">{copy.footerGithub}</a>
-              <a href="https://github.com/thisizkavi-lab/artico-web/issues" target="_blank" rel="noopener noreferrer">{copy.footerIssue}</a>
+              <button type="button" onClick={() => { setFeedbackOpen(true); setFeedbackStatus('') }}>{copy.footerFeedback}</button>
             </div>
           </nav>
         </div>
@@ -264,6 +294,25 @@ export default function Landing() {
           <span>© {new Date().getFullYear()} Artico</span>
         </div>
       </footer>
+      {feedbackOpen && (
+        <div className="al-feedback-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setFeedbackOpen(false) }}>
+          <section className="al-feedback-dialog" role="dialog" aria-modal="true" aria-labelledby="al-feedback-title" lang={language}>
+            <div className="al-feedback-head">
+              <h2 id="al-feedback-title">{copy.feedbackTitle}</h2>
+              <button className="al-feedback-close" type="button" aria-label={copy.feedbackClose}
+                onClick={() => setFeedbackOpen(false)}>×</button>
+            </div>
+            <p className="al-feedback-description">{copy.feedbackNote}</p>
+            <label htmlFor="al-feedback-message">{copy.feedbackPrompt}</label>
+            <textarea id="al-feedback-message" ref={feedbackInputRef} rows={5}
+              value={feedbackText} onChange={(event) => { setFeedbackText(event.target.value); setFeedbackStatus('') }}
+              placeholder={copy.feedbackPlaceholder} />
+            <button type="button" className="al-feedback-share" disabled={!feedbackText.trim()}
+              onClick={shareFeedback}>{copy.feedbackShare}</button>
+            {feedbackStatus && <p role="status" className="al-feedback-status">{feedbackStatus}</p>}
+          </section>
+        </div>
+      )}
     </div>
   )
 }

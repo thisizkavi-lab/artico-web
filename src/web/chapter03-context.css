@@ -58,27 +58,29 @@
   border-color:#cbdcf2;background:#e8f0ff;
   border-radius:13px 13px 4px 13px
 }
-.ip-page .ar-c03-chat-speaker{
-  display:block;margin:0 0 3px;color:#71809a;font-size:10px;
-  line-height:1.3;font-weight:780
-}
 .ip-page .ar-c03-chat-bubble p{
   margin:0;overflow-wrap:anywhere;color:#243754;
   font-size:clamp(14px,1.65vw,16px);font-weight:640;line-height:1.5
 }
+/* One highlight tone per teaching section, shared by cards and diagrams. */
+.ip-page .ar-c03-section-0{--ar-c03-highlight:#dce8ff;--ar-c03-highlight-text:#234fa0}
+.ip-page .ar-c03-section-1{--ar-c03-highlight:#d5f2e7;--ar-c03-highlight-text:#226c58}
+.ip-page .ar-c03-section-2{--ar-c03-highlight:#eee0fb;--ar-c03-highlight-text:#71449a}
+.ip-page .ar-c03-section-3{--ar-c03-highlight:#ffe2d3;--ar-c03-highlight-text:#934b2d}
 .ip-page .ar-c03-mark{
-  background:#cfddff;color:#1e4eaa;padding:1px 3px;
-  border-radius:4px;font-weight:870
+  background:var(--ar-c03-highlight,#dce8ff);
+  color:var(--ar-c03-highlight-text,#234fa0);
+  padding:1px 3px;border-radius:4px;font-weight:870
 }
 .ip-page .ar-c03-idea{
-  flex:1;padding:13px 17px 14px;background:#fff3dc;color:#253850
+  flex:1;padding:9px 13px 10px;background:#fcf6e8;color:#566170
 }
 .ip-page .ar-c03-idea strong{
-  display:block;margin:0 0 4px;color:#233854;
-  font-size:12px;font-weight:820;line-height:1.4
+  display:block;margin:0 0 3px;color:#657080;
+  font-size:10.5px;font-weight:770;line-height:1.4
 }
 .ip-page .ar-c03-idea p{
-  margin:0;color:#45536b;font-size:13px;line-height:1.62
+  margin:0;color:#687384;font-size:12px;font-weight:430;line-height:1.55
 }
 .ip-page .ar-c03-extra{
   min-width:0;border:1px solid #dbe3f0;border-radius:13px;
@@ -131,10 +133,10 @@
   transform:rotate(45deg)
 }
 .ip-page .ar-c03-bubble-head{display:flex;align-items:center;gap:9px;min-height:29px}
-.ip-page .ar-c03-bubble-speaker{
-  display:inline-flex;align-items:center;justify-content:center;flex:none;
-  width:23px;height:23px;background:#fff;color:#8a5b34;border-radius:50%;
-  font-size:11px;font-weight:850
+.ip-page .ar-c03-bubble-avatar{
+  display:block;flex:none;width:27px;height:27px;
+  object-fit:cover;border-radius:50%;background:#fff;
+  border:1px solid rgba(131,110,93,.18)
 }
 .ip-page .ar-c03-bubble-caption{color:#7a6249;font-size:11px;font-weight:760;line-height:1.35}
 .ip-page .ar-c03-bubble-head>.ar-c03-listen{margin-left:auto;flex:none}
@@ -143,7 +145,8 @@
   font-weight:760;color:#1c2f4b;margin:10px 0 0;letter-spacing:-.014em
 }
 .ip-page .ar-c03-tag-study .ar-c03-mark{
-  background:#e4ecff;color:#2050a8;padding:2px 4px;border-radius:5px
+  background:var(--ar-c03-highlight);color:var(--ar-c03-highlight-text);
+  padding:2px 4px;border-radius:5px
 }
 .ip-page .ar-c03-flow-arrow{
   position:relative;height:46px;width:2px;background:#6b6971;margin:0 0 0 40%;
@@ -163,7 +166,6 @@
   background:#ffddc8;clip-path:polygon(0 0,100% 50%,0 100%)
 }
 .ip-page .ar-c03-response-head{margin:0 0 9px}
-.ip-page .ar-c03-response-head .ar-c03-bubble-speaker{color:#a35d42}
 .ip-page .ar-c03-response-head .ar-c03-bubble-caption{color:#885b46}
 .ip-page .ar-c03-response-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1.5px dashed #eca47e}
 .ip-page .ar-c03-response-path{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0;padding:13px 13px 3px 0}
@@ -185,7 +187,7 @@
  .ip-page .ar-c03-card-top{padding:12px 14px}
  .ip-page .ar-c03-exchange{padding:14px 12px}
  .ip-page .ar-c03-chat-turn{max-width:96%}
- .ip-page .ar-c03-idea{padding:12px 14px}
+ .ip-page .ar-c03-idea{padding:9px 12px 10px}
  .ip-page .ar-c03-flow{padding:15px 17px 16px}
  .ip-page .ar-c03-question-bubble{width:94%;padding:13px}
  .ip-page .ar-c03-question-wrap{padding-left:10px}

@@ -1,0 +1,56 @@
+/* Chapter 03: contextual language, not disconnected vocabulary tiles. */
+.ip-page .ar-c03{display:flex;flex-direction:column;gap:18px;min-width:0}
+.ip-page .ar-c03-intro{font-size:15px;line-height:1.72;color:#354761;margin:0 0 1px;max-width:77ch}
+.ip-page .ar-c03-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:stretch}
+.ip-page .ar-c03-card{min-width:0;display:flex;flex-direction:column;border:1px solid #d7e0ee;border-radius:17px;background:#fff;overflow:hidden;box-shadow:0 3px 14px rgba(25,47,89,.025)}
+.ip-page .ar-c03-card-top{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:15px 17px 11px}
+.ip-page .ar-c03-card-top>div{display:flex;align-items:center;gap:9px;min-width:0}
+.ip-page .ar-c03-number{font-size:11px;font-weight:800;color:#6880a3;letter-spacing:.03em}
+.ip-page .ar-c03-card h3{font-size:21px;letter-spacing:-.02em;color:#1b3356;line-height:1.25;margin:0}
+.ip-page .ar-c03-purpose{max-width:46%;text-align:right;font-size:11px;color:#44638c;line-height:1.45;font-weight:730}
+.ip-page .ar-c03-exchange{background:#f4f7fc;border-top:1px solid #e9eff8;border-bottom:1px solid #e9eff8;display:flex;flex-direction:column;padding:12px 16px;gap:9px}
+.ip-page .ar-c03-line{display:grid;grid-template-columns:23px minmax(0,1fr);align-items:start;gap:9px}
+.ip-page .ar-c03-speaker{display:inline-flex;align-items:center;justify-content:center;flex:none;background:#e2eafb;color:#456397;border-radius:50%;width:25px;height:25px;font-size:11px;font-weight:850}
+.ip-page .ar-c03-line-answer .ar-c03-speaker{background:#e4f2ee;color:#297768}
+.ip-page .ar-c03-line p{margin:2px 0 0;color:#273d5e;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+.ip-page .ar-c03-line-answer p{font-size:16px;font-weight:740;color:#152943}
+.ip-page .ar-c03-mark{background:#dfebff;color:#1d50aa;padding:1px 3px;border-radius:4px;font-weight:860}
+.ip-page .ar-c03-card-bottom{flex:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:12px;padding:13px 16px 15px}
+.ip-page .ar-c03-card-bottom p{font-size:12px;color:#425471;line-height:1.65;margin:0}
+.ip-page .ar-c03-card-bottom p strong{display:block;color:#1f3455;margin:0 0 3px;font-weight:820;font-size:11px}
+.ip-page .ar-c03-listen{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #d4e0f7;border-radius:999px;background:#fff;color:#2b56a5;min-height:29px;padding:5px 11px;font-size:11px;font-family:inherit;font-weight:790;cursor:pointer}
+.ip-page .ar-c03-listen:hover{background:#eaf1ff;border-color:#a9bfe9}
+.ip-page .ar-c03-listen:focus-visible{outline:3px solid #7da1ea;outline-offset:2px}
+.ip-page .ar-c03-lesson-tip{padding:14px 17px;border-radius:12px;background:#fff3dc;color:#25364f}
+.ip-page .ar-c03-lesson-tip strong{font-size:13px;font-weight:830}
+.ip-page .ar-c03-lesson-tip p{font-size:13px;line-height:1.65;margin:4px 0 0;color:#3b4a62}
+.ip-page .ar-c03-dialogue{background:#fff;border:1px solid #d7e0ee;border-radius:16px;padding:17px;min-width:0}
+.ip-page .ar-c03-dialogue-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px}
+.ip-page .ar-c03-dialogue-header h3{font-size:15px;line-height:1.4;color:#243c60;margin:0}
+.ip-page .ar-c03-timeline{display:flex;flex-direction:column;gap:9px;max-width:740px}
+.ip-page .ar-c03-turn{display:flex;align-items:flex-start;gap:11px;min-width:0}
+.ip-page .ar-c03-turn p{margin:0;padding:11px 14px;border-radius:11px;background:#f3f6fb;color:#233853;font-size:14px;line-height:1.6;flex:1;min-width:0}
+.ip-page .ar-c03-turn:nth-child(even) p{background:#eaf4f1}
+.ip-page .ar-c03-turn .ar-c03-speaker{width:35px;height:29px;border-radius:9px;background:#e3ecfb;color:#456397}
+.ip-page .ar-c03-after{font-size:13px;line-height:1.7;color:#415574;margin:-4px 0 0}
+.ip-page .ar-c03-reactions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ip-page .ar-c03-reaction{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#fff;border:1px solid #d7e0ee;border-radius:15px;padding:15px;min-width:0}
+.ip-page .ar-c03-reaction-no{font-size:10px;color:#7086a6;font-weight:840}
+.ip-page .ar-c03-cue{font-size:13px;color:#51637e;line-height:1.5;margin:0}
+.ip-page .ar-c03-response{font-size:20px;line-height:1.35;font-weight:840;color:#2857a6;background:#edf3ff;border-radius:8px;margin:0;padding:6px 10px}
+.ip-page .ar-c03-reaction-note{font-size:12px;color:#50617a;line-height:1.55;margin:0}
+.ip-page .ar-c03-reaction .ar-c03-listen{margin-top:auto}
+.ip-page .ar-c03-checks{display:grid;gap:12px}
+.ip-page .ar-c03-check{background:#fff;border:1px solid #d7e0ee;border-radius:15px;padding:17px;min-width:0}
+.ip-page .ar-c03-check-header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ip-page .ar-c03-check-sentence{font-size:clamp(16px,2vw,21px);font-weight:740;color:#233954;line-height:1.5;margin:13px 0}
+.ip-page .ar-c03-answers{display:flex;flex-wrap:wrap;gap:8px}
+.ip-page .ar-c03-answers span{display:block;border:1px solid #d5e2f1;border-radius:8px;padding:9px 12px;font-size:13px;color:#2a405f;background:#f7f9fd}
+.ip-page .ar-c03-check-note{font-size:12px;line-height:1.65;color:#52617a;margin:11px 0 0}
+@media(max-width:760px){
+ .ip-page .ar-c03-grid,.ip-page .ar-c03-reactions{grid-template-columns:1fr}
+ .ip-page .ar-c03-card h3{font-size:19px}
+ .ip-page .ar-c03-dialogue{padding:13px}
+ .ip-page .ar-c03-card-top{padding:14px}
+ .ip-page .ar-c03-card-top .ar-c03-purpose{max-width:52%}
+}

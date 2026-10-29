@@ -84,6 +84,15 @@
 .vl02-recall-answer:focus-visible { outline: 2px solid #3265b8; outline-offset: 2px; }
 .vl02-vocab-table tbody tr:has(.vl02-recall-answer.is-revealed) { background: #f6f9fe; }
 
+.vl02-visual-key {
+  margin: 0;
+  padding: 9px 17px 11px;
+  border-top: 1px solid #e3eaf4;
+  background: #f8fafc;
+  color: #6c7f9a;
+  font-size: 10px;
+  line-height: 1.65;
+}
 @media (max-width: 760px) {
   .vl02-vocab-table thead th { padding: 11px 12px; }
   .vl02-vocab-table tbody td { padding: 10px 12px; }

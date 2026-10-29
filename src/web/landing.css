@@ -475,7 +475,7 @@ a.al-journey-card:hover {
   display: grid;
   align-items: center;
   overflow: hidden;
-  min-height: 350px;
+  min-height: 270px;
   background: #fff;
 }
 .al-final-cta::before {
@@ -493,26 +493,26 @@ a.al-journey-card:hover {
 .al-final-cta-inner {
   width: min(100%, 1600px);
   margin-inline: auto;
-  padding: 80px clamp(36px, 5vw, 90px);
+  padding: 58px clamp(36px, 5vw, 90px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 36px;
 }
 .al-final-cta h2 {
   max-width: 930px;
   font-family: 'Poppins', 'Hanken Grotesk', sans-serif;
-  font-size: clamp(37px, 4.1vw, 67px);
-  line-height: 1.22;
+  font-size: clamp(34px, 3.35vw, 54px);
+  line-height: 1.2;
   letter-spacing: -.04em;
   font-weight: 800;
   color: #060606;
 }
 .al-final-cta-button {
   flex: 0 0 auto;
-  min-width: 235px;
-  min-height: 66px;
-  padding: 13px 28px;
+  min-width: 205px;
+  min-height: 56px;
+  padding: 11px 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -521,7 +521,7 @@ a.al-journey-card:hover {
   background: #285bcc;
   color: #fff;
   font-family: 'Poppins', 'Hanken Grotesk', sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
   transition: background-color 160ms, transform 160ms;
 }
@@ -534,7 +534,7 @@ a.al-journey-card:hover {
   max-width: none;
   display: block;
   margin: 0;
-  padding: 72px clamp(28px, 6vw, 100px) 35px;
+  padding: 50px clamp(28px, 6vw, 100px) 28px;
   background: #fff;
   color: #111;
 }
@@ -542,9 +542,10 @@ a.al-journey-card:hover {
   max-width: 1510px;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(230px, 1fr) minmax(0, 2fr);
-  column-gap: 65px;
-  row-gap: 54px;
+  grid-template-columns: minmax(220px, 1fr) minmax(0, 2fr);
+  column-gap: 52px;
+  row-gap: 36px;
+  align-items: start;
 }
 .al-footer-brand {
   display: flex;
@@ -555,15 +556,15 @@ a.al-journey-card:hover {
 .al-footer-logo.artico-wordmark {
   font-family: Georgia, 'Times New Roman', serif;
   color: #24352e;
-  font-size: clamp(47px, 4vw, 65px);
+  font-size: clamp(44px, 3.5vw, 58px);
   line-height: .95;
   font-weight: 700;
   letter-spacing: -0.055em;
 }
 .al-footer-tagline {
   padding-left: 4px;
-  padding-top: 14px;
-  font-size: 17px;
+  padding-top: 11px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: -.015em;
 }
@@ -573,21 +574,21 @@ a.al-journey-card:hover {
 .al-footer-directory {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(16px, 2.6vw, 45px);
+  gap: clamp(18px, 2.2vw, 36px);
   align-items: start;
 }
 .al-footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 11px;
   min-width: 0;
 }
 .al-footer-column h3 {
-  margin: 0 0 18px;
+  margin: 0 0 7px;
   color: #0b0b0b;
   font-family: 'Poppins', 'Hanken Grotesk', sans-serif;
-  font-size: clamp(17px, 1.4vw, 23px);
+  font-size: clamp(17px, 1.3vw, 21px);
   line-height: 1.4;
   font-weight: 750;
 }
@@ -605,7 +606,7 @@ a.al-journey-card:hover {
 }
 .al-footer-bottom {
   max-width: 1510px;
-  margin: 126px auto 0;
+  margin: 64px auto 0;
   display: flex;
   align-items: center;
   gap: 36px;

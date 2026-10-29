@@ -24,7 +24,15 @@
 .bv-shiver{animation:bv-shiver 6s ease-in-out infinite}
 .bv-snore{animation:bv-snore 6.9s ease-in-out infinite}
 .bv-sweat{animation:bv-sweat 7.1s ease-in-out infinite}
+.bv-scene[data-term="smile"] .bv-mouth{transform-origin:162px 119px;animation:bv-expression 6.4s ease-in-out infinite}
+.bv-scene[data-term="grin"] .bv-mouth{transform-origin:162px 117px;animation:bv-expression 6.7s ease-in-out infinite}
+.bv-scene[data-term="laugh"] .bv-mouth{transform-origin:162px 123px;animation:bv-laugh 5.8s ease-in-out infinite}
+.bv-scene[data-term="frown"] .bv-brows{animation:bv-frown 6.8s ease-in-out infinite}
 
+
+@keyframes bv-expression{0%,14%,38%,100%{transform:scaleX(1)}23%,29%{transform:scaleX(1.12)}}
+@keyframes bv-laugh{0%,14%,37%,100%{transform:scaleY(.85)}22%,28%{transform:scaleY(1.15)}}
+@keyframes bv-frown{0%,14%,41%,100%{transform:translateY(0)}23%,32%{transform:translateY(4px)}}
 @keyframes bv-blink{0%,15%,19%,22%,100%{transform:scaleY(1)}17%,20%{transform:scaleY(.13)}}
 @keyframes bv-nod{0%,11%,30%,100%{transform:translateY(0) rotate(0)}17%,23%{transform:translateY(7px) rotate(4deg)}}
 @keyframes bv-shake{0%,12%,28%,100%{transform:translateX(0)}15%,23%{transform:translateX(-7px)}19%,26%{transform:translateX(7px)}}

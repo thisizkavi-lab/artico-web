@@ -21,9 +21,21 @@ SYMBOLS = sorted(set(MANIFEST["entries"].values()))
 SAFE_EXT = ".svg"
 
 
+def _render_svg_bytes(svg_content, width=320):
+    try:
+        import resvg_py
+        if isinstance(svg_content, bytes):
+            svg_content = svg_content.decode("utf-8", errors="replace")
+        return resvg_py.svg_to_bytes(svg_content, width=width)
+    except ImportError:
+        import cairosvg
+        if isinstance(svg_content, str):
+            svg_content = svg_content.encode("utf-8")
+        return cairosvg.svg2png(bytestring=svg_content, output_width=width)
+
+
 def build():
     from PIL import Image
-    import cairosvg
 
     if MANIFEST["license"] != "CC-BY-SA-4.0":
         raise RuntimeError("Refusing to build assets with unreviewed license")
@@ -58,7 +70,8 @@ def build():
                 failures.append(f"missing: {symbol}")
                 continue
             try:
-                img_data = cairosvg.svg2png(url=str(source), output_width=320)
+                svg_data = source.read_text(encoding="utf-8")
+                img_data = _render_svg_bytes(svg_data, width=320)
                 picture = Image.open(io.BytesIO(img_data)).convert("RGBA")
                 picture.thumbnail((320, 220), Image.Resampling.LANCZOS)
                 # Quantize with adaptive palette and retain alpha where needed.
@@ -94,7 +107,6 @@ def build_openmoji():
     from concurrent.futures import ThreadPoolExecutor
     from urllib.request import Request, urlopen
     from PIL import Image
-    import cairosvg
 
     manifest = json.loads((ROOT / "src/web/vocabularyOpenmojiManifest.json").read_text(encoding="utf-8"))
     if manifest["license"] != "CC-BY-SA-4.0":
@@ -119,7 +131,7 @@ def build_openmoji():
                     svg = response.read()
                 if b"<svg" not in svg[:2500]:
                     raise ValueError("Expected SVG source")
-                png = cairosvg.svg2png(bytestring=svg, output_width=320)
+                png = _render_svg_bytes(svg, width=320)
                 picture = Image.open(io.BytesIO(png)).convert("RGBA")
                 picture.thumbnail((320, 220), Image.Resampling.LANCZOS)
                 picture.quantize(colors=160, method=Image.Quantize.FASTOCTREE).save(target, "PNG", optimize=True)

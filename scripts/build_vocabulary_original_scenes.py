@@ -10,7 +10,15 @@ import json
 from pathlib import Path
 from html import escape
 from PIL import Image
-import cairosvg
+try:
+    import resvg_py
+    def _render_svg(svg_text, width=640, height=397):
+        return resvg_py.svg_to_bytes(svg_text, width=width, height=height)
+except ImportError:
+    import cairosvg
+    def _render_svg(svg_text, width=640, height=397):
+        # cairosvg.svg2png fallback
+        return cairosvg.svg2png(bytestring=svg_text.encode(), output_width=width, output_height=height)
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = json.loads((ROOT / 'src/web/vocabularyOriginalScenes.json').read_text())
@@ -338,8 +346,7 @@ def build():
         filename = '13-'+info['kind']+'-'+info['scene']+'.png'
         target = OUTPUT / filename
         if not target.exists():
-            data = cairosvg.svg2png(bytestring=make_svg(info['kind'],info['scene']).encode(),
-                                   output_width=640, output_height=397)
+            data = _render_svg(make_svg(info['kind'],info['scene']), width=640, height=397)
             rgba = Image.open(io.BytesIO(data)).convert('RGBA')
             rgba.quantize(colors=220,method=Image.Quantize.FASTOCTREE).save(target,'PNG',optimize=True)
         with Image.open(target) as image:

@@ -4,7 +4,15 @@ import io
 import json
 from pathlib import Path
 from PIL import Image
-import cairosvg
+try:
+    import resvg_py
+    def _render_svg(svg_text, width=640, height=397):
+        return resvg_py.svg_to_bytes(svg_text, width=width, height=height)
+except ImportError:
+    import cairosvg
+    def _render_svg(svg_text, width=640, height=397):
+        # cairosvg.svg2png fallback
+        return cairosvg.svg2png(bytestring=svg_text.encode(), output_width=width, output_height=height)
 from build_vocabulary_original_scenes import (
     ROOT, rect, circle, path, line, label, group, person, document,
     box, coin, house, key, calendar, speech, sparkle, arrow,
@@ -177,7 +185,7 @@ def build():
         target=OUTPUT/('18-'+info['scene']+'.png')
         if not target.is_file():
             svg=scene_for(term)
-            png=cairosvg.svg2png(bytestring=svg.encode(),output_width=640,output_height=397)
+            png=_render_svg(svg,width=640,height=397)
             photo=Image.open(io.BytesIO(png)).convert('RGBA')
             photo.quantize(colors=220,method=Image.Quantize.FASTOCTREE).save(target,'PNG',optimize=True)
         with Image.open(target) as check:

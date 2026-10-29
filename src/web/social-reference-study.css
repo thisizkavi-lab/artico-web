@@ -1,6 +1,7 @@
 /* Social Fluency Chapters 02–96
    Shared chapter study presentation follows Chapter 01's approved blue/paper reference.
-   Every chapter retains its own data, scenes, source explanation and practice. */
+   Every chapter retains its own data, scenes, source explanation and practice.
+   Each section cycles through the four subtle Chapter 01 container colors. */
 .ip-page .ar-shared-study {
   --ar-ink:#14213d;
   --ar-blue:#2f5bea;
@@ -9,28 +10,62 @@
   --ar-muted:#53627d;
   display:flex;
   flex-direction:column;
-  gap:24px;
-  padding:24px 22px 34px;
-  background:#f3f6fc;
+  gap:12px;
+  padding:14px;
+  background:#f5f7fa;
   border-radius:15px;
   color:var(--ar-ink);
 }
 .ip-page .ar-shared-study *,
 .ip-page .ar-shared-study *::before,
 .ip-page .ar-shared-study *::after {box-sizing:border-box}
-.ip-page .ar-shared-study .ip-section{
+.ip-page .ar-shared-study > .ip-section{
   display:flex;
   flex-direction:column;
   gap:14px;
   margin:0;
-  padding:0;
+  padding:24px 25px 26px;
   scroll-margin-top:100px;
+  min-width:0;
+  position:relative;
+  border:1px solid rgba(42,61,96,.09);
+  border-radius:22px;
+  background:linear-gradient(155deg,var(--ar-section-top) 0%,var(--ar-section-bottom) 80%);
+  box-shadow:0 5px 20px rgba(20,33,61,.025);
 }
-.ip-page .ar-shared-study .ip-section+.ip-section{
-  padding-top:27px;
-  border-top:1px solid #dae4f3;
+.ip-page .ar-shared-study > .ip-section + .ip-section{
+  padding-top:24px;
+  border-top:1px solid rgba(42,61,96,.09);
 }
-.ip-page .ar-shared-study .ip-section-heading{gap:9px;margin:0 0 2px;align-items:baseline}
+/* A section's position—not the chapter ID—chooses the tint. Every chapter
+   gets a consistent, readable progression regardless of its section count. */
+.ip-page .ar-shared-study > .ip-section:nth-child(4n + 1){
+  --ar-section-top:#edf3fe;
+  --ar-section-bottom:#f8faff;
+  --ar-section-accent:#5c7fbe;
+}
+.ip-page .ar-shared-study > .ip-section:nth-child(4n + 2){
+  --ar-section-top:#eaf6f4;
+  --ar-section-bottom:#f8fbfa;
+  --ar-section-accent:#4a988c;
+}
+.ip-page .ar-shared-study > .ip-section:nth-child(4n + 3){
+  --ar-section-top:#f0eef9;
+  --ar-section-bottom:#faf9fd;
+  --ar-section-accent:#8b7ab6;
+}
+.ip-page .ar-shared-study > .ip-section:nth-child(4n){
+  --ar-section-top:#faf2ea;
+  --ar-section-bottom:#fdfaf7;
+  --ar-section-accent:#bc8b68;
+}
+.ip-page .ar-shared-study .ip-section-heading{
+  gap:9px;
+  margin:0 0 2px;
+  align-items:baseline;
+  padding-left:14px;
+  border-left:3px solid var(--ar-section-accent);
+}
 .ip-page .ar-shared-study .ip-section-heading>span{
   font-size:22px;
   font-weight:840;
@@ -575,11 +610,19 @@
 }
 @media(max-width:620px){
   .ip-page .ar-shared-study{
-    padding:12px 10px 20px;
-    gap:17px;
+    padding:7px;
+    gap:9px;
     border-radius:12px;
   }
-  .ip-page .ar-shared-study .ip-section+.ip-section{padding-top:22px}
+  .ip-page .ar-shared-study > .ip-section,
+  .ip-page .ar-shared-study > .ip-section + .ip-section{
+    padding:17px 12px 18px;
+    border-radius:16px;
+  }
+  .ip-page .ar-shared-study .ip-section-heading{
+    padding-left:10px;
+    border-left-width:3px;
+  }
   .ip-page .ar-shared-study .ip-section-heading h2{font-size:20px}
   .ip-page .ar-shared-study .ip-section-heading>span{font-size:20px}
   .ip-page .ar-shared-study .ip-prose{font-size:12px}

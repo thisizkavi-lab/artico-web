@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
+import { readFileSync, existsSync, statSync } from 'node:fs'
 
 const load=(file)=>readFileSync(new URL('./'+file,import.meta.url),'utf8')
 const source=JSON.parse(load('vocabularyOrganized.json'))
@@ -134,3 +134,27 @@ test('new commute illustrations and merged equivalent expression pictures stay c
   assert.ok(load('vocabularyVisual.js').includes("combinedVocabulary"))
   assert.ok(load('vocabularyVisual.js').includes("combined === term"))
 })
+
+test('dedicated vocabulary course art manifest entries are valid and verified',()=>{
+  const manifest=JSON.parse(load('vocabularyCourseArt.json'))
+  assert.equal(manifest.schema,1)
+  assert.ok(typeof manifest.style==='string')
+  const validTerms=new Set(source.lessons.flatMap(l=>l.groups.flatMap(g=>
+    g.items.map(item=>l.sourceLesson+':'+item[0].toLowerCase().trim()))))
+  const filesByLesson=new Map()
+
+  for(const [key,slug] of Object.entries(manifest.entries)){
+    assert.ok(validTerms.has(key),'Key not in vocabulary: '+key)
+    const [lessonStr]=key.split(':')
+    if(!filesByLesson.has(lessonStr)) filesByLesson.set(lessonStr,new Set())
+    assert.ok(!filesByLesson.get(lessonStr).has(slug),'Duplicate slug in lesson '+lessonStr+': '+slug)
+    filesByLesson.get(lessonStr).add(slug)
+
+    const filePath=new URL('../../public/vocabulary-course/'+slug+'.webp',import.meta.url)
+    assert.ok(existsSync(filePath),'Course art file missing: '+slug)
+    const stat=statSync(filePath)
+    assert.ok(stat.size<=80*1024,'Course art file exceeds 80 KB: '+slug+' ('+stat.size+' B)')
+  }
+  assert.ok(load('vocabularyVisual.js').includes('vocabularyCourseArt(term, chapter)'))
+})
+

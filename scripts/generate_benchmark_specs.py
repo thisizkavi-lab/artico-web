@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+"""Benchmark terms and visual prompt templates for the 3 candidate styles."""
+import json
+from pathlib import Path
+
+BENCHMARKS = [
+    {
+        "key": "29:pomegranate",
+        "term": "pomegranate",
+        "ja": "ザクロ",
+        "lesson": 29,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a ripe red whole pomegranate next to a neat cross-section showing ruby-red jewel-like seeds nestled in white pith chambers, on a clean warm off-white surface with soft ground shadow. Crisp dark line art, soft cel shading, bright natural lighting. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a ripe pomegranate and a neat geometric cross-section showing ruby-red seeds on a warm ivory paper background #fbfaf7. Clean geometric shapes, consistent medium-weight dark slate outlines, flat solid colors with no gradients, Artico blue #5479ac accents. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese children's picture-book illustration of a ripe red pomegranate fruit beside a halved pomegranate revealing bright red seeds, resting on cream textured paper. Soft gouache and colored pencil texture, rounded friendly shapes, warm nostalgic light. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "54:kitten",
+        "term": "kitten",
+        "ja": "子猫",
+        "lesson": 54,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a small, fluffy baby kitten with big curious round eyes, playfully batting at a small ball of yarn, showing clear tiny kitten scale and proportions. Warm off-white background with soft ground shadow, crisp dark line art, soft cel shading. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a tiny playful kitten with oversized ears and wide eyes sitting beside a ball of yarn, emphasizing baby animal scale. Flat solid colors, consistent dark outline, warm paper background #fbfaf7, Artico blue accents. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of an adorable tiny kitten curling up softly on a cozy knitted blanket, soft textured colored pencil and gouache, rounded sweet shapes, warm tender lighting. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "14:elbow",
+        "term": "elbow",
+        "ja": "ひじ",
+        "lesson": 14,
+        "style_a": "Clean contemporary Japanese anime educational illustration showing an arm bent at the elbow. The entire upper body and arm are rendered in muted soft neutral grey tones, while the pointed elbow joint is highlighted in full color with a subtle soft yellow focus halo indicating the specific joint. Crisp dark line art, soft cel shading. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a bent human arm in silhouette/muted blue-grey, with the elbow joint distinctly highlighted in vivid coral red with a clean circular indicator line. Flat solid vector shapes, no gradients, warm paper background #fbfaf7. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book educational illustration of a child bending their arm, touching their elbow playfully, with a soft warm pastel glow highlighting the elbow point. Soft colored pencil and watercolor texture, friendly characters. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "17:freckles",
+        "term": "freckles",
+        "ja": "そばかす",
+        "lesson": 17,
+        "style_a": "Clean contemporary Japanese anime educational illustration showing a close-up portrait of a smiling young person's face, clearly displaying a charming dusting of natural light-brown freckles across the bridge of the nose and upper cheeks. Crisp dark line art, soft cel shading, bright warm eyes, warm ivory background. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a stylized face profile and cheeks clearly showing distinct dotted freckles across the nose and cheeks. Flat clean geometric shapes, consistent dark outline, limited warm screenprint palette on #fbfaf7 paper. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a cheerful child with sweet freckles dotted across their nose and cheeks, soft colored pencil and watercolor wash, warm sunny smile, cozy cream paper. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "11:sweep the floor",
+        "term": "sweep the floor",
+        "ja": "床を掃く",
+        "lesson": 11,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a young person holding a traditional straw broom with both hands, actively sweeping a small neat pile of dust and paper scraps across a light wooden floor. Dynamic sweeping motion lines, crisp dark line art, soft cel shading, clean bright room. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a figure sweeping a wooden floor with an angled broom, pushing a tidy pile of dust. Clean vector silhouette, solid flat colors, Artico blue #5479ac shirt, warm paper background #fbfaf7. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a friendly character humming while sweeping the wooden kitchen floor with a broom, soft gouache textures, warm cozy home setting. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "11:mop the floor",
+        "term": "mop the floor",
+        "ja": "床をモップで拭く",
+        "lesson": 11,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a person pushing a wet string mop across a tile floor, leaving clean glistening wet streaks on the floor, with a yellow mop bucket with water beside them. Crisp dark line art, soft cel shading, bright airy utility space. Distinct from sweeping. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a person using a wet sponge mop on tile flooring, with a blue water bucket and shiny wet floor reflections. Flat geometric shapes, dark outline, screenprint palette on #fbfaf7 paper. Distinct from sweeping. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a character happily mopping the floor with a yarn mop and a bubbly bucket of soapy water, shiny clean patches on the floor. Soft colored pencil and watercolor texture. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "19:nervous",
+        "term": "nervous",
+        "ja": "不安でそわそわしている",
+        "lesson": 19,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a young person sitting on a bench outside an interview door, nervously fidgeting with their fingers, wide anxious eyes with small pupils, and a classic subtle anime sweat drop on the cheek. Crisp dark line art, soft cel shading, relatable emotional expression. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a seated person with hunched shoulders, nervously clasping their hands and trembling slightly, subtle expressive wavy lines indicating anxiety. Flat solid colors, dark outlines, Artico blue and ivory paper #fbfaf7. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a sweet character biting their lip and clutching their bag with wide worried eyes before stepping onto a stage, soft colored pencil and warm gouache texture. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "19:frustrated",
+        "term": "frustrated",
+        "ja": "いらだった",
+        "lesson": 19,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a young person at a desk clutching their hair in frustration, gritting teeth, eyes narrowed with exasperation, looking down at a hopelessly tangled ball of headphone wires. Crisp dark line art, soft cel shading, clean background. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a person with clenched fists and furrowed brow over a stubborn knot or broken pencil, sharp angled expressive lines denoting frustration. Solid flat colors, dark slate outlines, warm paper background. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a cute character puffing their cheeks in mild frustration trying to solve a puzzle, soft textured pencils and gouache, expressive friendly features. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "5:heavy",
+        "term": "heavy",
+        "ja": "重い",
+        "lesson": 5,
+        "style_a": "Clean contemporary Japanese anime educational illustration demonstrating 'heavy': a young person visibly straining with trembling arms and bent knees to lift a massive wooden shipping crate from the floor, sweat beads forming on forehead, contrasted with a single light feather floating effortlessly nearby. Crisp line art, cel shading. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a figure exerting effort to push or lift an enormous dense solid block, body angled in strong diagonal tension. Flat geometric shapes, limited bold palette of dark blue and warm ochre on ivory paper #fbfaf7. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a small animal or child trying with all their might to lift an oversized giant pumpkin, straining comically with rosy red cheeks. Soft colored pencil and gouache texture. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "72:pharmacy",
+        "term": "pharmacy",
+        "ja": "薬局",
+        "lesson": 72,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a modern pharmacy storefront and dispensary counter: a neat pharmacist in a white lab coat standing behind a counter with shelves neatly stocked with medicine boxes, amber glass syrup bottles, and an illuminated green cross emblem on the pillar. Crisp line art, bright clean lighting. Absolutely no text, letters, or words. Landscape 16:10.",
+        "style_b": "Modern flat vector-look educational illustration of a pharmacy storefront with a large green medical cross symbol, clean glass display windows, and neat shelves of medical supplies. Flat vector shapes, dark outline, Artico blue #5479ac, sage green and ivory #fbfaf7. Absolutely no text, letters, or words. Landscape 16:10.",
+        "style_c": "Gentle Japanese picture-book illustration of a cozy village apothecary and pharmacy shop, with neat jars and bottles on wooden shelves, a friendly apothecary welcoming visitors, warm watercolor and colored pencil. Absolutely no text, letters, or words. Landscape 16:10."
+    },
+    {
+        "key": "34:plumber",
+        "term": "plumber",
+        "ja": "配管工",
+        "lesson": 34,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a professional plumber wearing durable denim overalls and a utility belt, kneeling under a kitchen sink and carefully tightening a shiny silver pipe joint with a red pipe wrench. Clean organized toolbox beside them. Crisp dark line art, soft cel shading. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of a plumber in overalls holding an adjustable pipe wrench next to an S-bend drain pipe, with toolbox nearby. Flat solid shapes, dark slate outline, Artico blue and orange accents on ivory background #fbfaf7. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a cheerful handy plumber with a tool belt holding a wrench, fixing a water pipe under a sink, soft textured gouache and colored pencil. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "46:turn left",
+        "term": "turn left",
+        "ja": "左折する",
+        "lesson": 46,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a clean city road junction from a high angled isometric perspective. A friendly compact car on the road makes a clear, sharp 90-degree left turn at the intersection, accompanied by a clean bold Artico blue directional curved arrow indicating the left turn path. Crisp line art, cel shading. Absolutely no text, letters, or words. Landscape 16:10.",
+        "style_b": "Modern flat vector-look educational illustration of a road intersection with a prominent, elegant curved arrow indicating a sharp left turn. Flat clean vector layout, dark outlines, Artico blue #5479ac arrow on warm ivory #fbfaf7 ground. Absolutely no text, letters, or words. Landscape 16:10.",
+        "style_c": "Gentle Japanese picture-book illustration of a little blue car turning left at a scenic tree-lined crossroad, with a soft curved painted pathway. Soft colored pencil and watercolor wash. Absolutely no text, letters, or words. Landscape 16:10."
+    },
+    {
+        "key": "51:foggy",
+        "term": "foggy",
+        "ja": "霧の立ちこめた",
+        "lesson": 51,
+        "style_a": "Clean contemporary Japanese anime educational illustration of a quiet neighborhood street enveloped in thick, soft mist and fog. Streetlights cast soft diffused luminous halos through the dense fog, trees and distant houses fade into hazy pale silhouettes, and a person bundled in a warm coat walks forward into the mist. Crisp line art foreground, soft atmospheric depth. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_b": "Modern flat vector-look educational illustration of city buildings and trees gradually disappearing into horizontal layers of pale misty fog. Flat shapes with decreasing contrast, muted blue-grey and warm ivory palette on #fbfaf7 paper. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks.",
+        "style_c": "Gentle Japanese picture-book illustration of a cozy forest path covered in gentle morning fog and mist, soft watercolor wash and colored pencil, glowing amber lantern light diffusing in the haze. Landscape 16:10. Absolutely no text, letters, numbers, or watermarks."
+    },
+    {
+        "key": "8:break the ice",
+        "term": "break the ice",
+        "ja": "緊張をほぐす、初対面で場を和ませる",
+        "lesson": 8,
+        "style_a": "Clean contemporary Japanese anime educational illustration depicting the situation of 'break the ice': two people sitting at a cafe table who initially looked awkward now suddenly breaking into genuine warm smiles and shared laughter over coffee mugs, the stiff atmosphere completely melting away into friendly connection. Crisp line art, warm sunny cel shading. Depicting the situational meaning, NOT literal frozen ice. Absolutely no text, letters, numbers, or watermarks. Landscape 16:10.",
+        "style_b": "Modern flat vector-look educational illustration of two people at a small round table with warm drinks, transitioning from reserved to open smiling conversation, with warm radiating connection waves. Flat vector style, Artico blue #5479ac and warm peach accents on #fbfaf7 paper. Conceptual situational meaning. Absolutely no text, letters, numbers, or watermarks. Landscape 16:10.",
+        "style_c": "Gentle Japanese picture-book illustration of two shy woodland animals or friends sharing tea at a table, smiling and chatting warmly as the awkward chill gives way to friendship. Soft gouache and pencil texture. Absolutely no text, letters, numbers, or watermarks. Landscape 16:10."
+    }
+]
+
+if __name__ == "__main__":
+    out_dir = Path("/Users/kavi/Documents/kyoto/artico-web/work/vocab-art/bakeoff")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / "benchmarks.json", "w", encoding="utf-8") as f:
+        json.dump(BENCHMARKS, f, indent=2, ensure_ascii=False)
+    print("Saved 14 benchmarks to work/vocab-art/bakeoff/benchmarks.json")

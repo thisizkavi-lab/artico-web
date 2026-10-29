@@ -25,6 +25,10 @@ A smaller set of exact-match pictures of objects, animals, food and places comes
 
 The pre-existing PNG scenes and original educational SVG diagrams are Artico's own artwork. They take precedence over the pictogram matches.
 
+## Artico course illustrations
+
+Original AI-assisted educational artwork developed specifically for Artico vocabulary cards. These illustrations are owned by Artico and contain no third-party assets or external dependencies. All assets are compiled to static local WebP files and loaded directly from the course deployment.
+
 ## Explicitly excluded sources
 
 OpenSymbols mixes commercial and noncommercial licenses and requires an API credential. ARASAAC CC BY-NC-SA and Sclera CC BY-NC graphics are **not** imported. No Irodori graphics are copied. Openclipart assets with uncertain provenance or pending review are not automatically imported. Open Peeps CC0 may be considered for later original scene compositions.

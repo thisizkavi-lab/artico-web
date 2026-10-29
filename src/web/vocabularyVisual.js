@@ -1,3 +1,4 @@
+import { vocabularyCourseArt } from './vocabularyCourseArt'
 import { vocabularyAiGrooming } from './vocabularyAiGrooming'
 import { vocabularyAiFood } from './vocabularyAiFood'
 import { vocabularyAiScene } from './vocabularyAiScene'
@@ -10,8 +11,10 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 
 // Artwork for Lessons 3–78 is now image-only. No inline SVG, generated
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
-// Original educational PNGs take precedence over third-party raster art.
+// Dedicated course illustrations take precedence over all legacy art.
 function artworkFor(term, chapter) {
+  const course = vocabularyCourseArt(term, chapter)
+  if (course) return course
   const grooming = vocabularyAiGrooming(term, chapter)
   if (grooming) return grooming
   const painted = vocabularyAiScene(term, chapter)

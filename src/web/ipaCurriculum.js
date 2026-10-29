@@ -1,4 +1,4 @@
-// Learner-facing explanations placed beside the three interactive IPA tables.
+// Learner-facing explanations placed beside the two interactive IPA tables.
 // The five-part guided lesson itself is stored in foundationReading.sounds
 // and translated in src/course/locales/ja/02-foundations.md.
 export const ipaCurriculum = {

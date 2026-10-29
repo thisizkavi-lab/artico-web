@@ -1083,6 +1083,7 @@ export function TheoryAudioSample({ phrase, target, src, compact = false }) {
             max="100"
             step="0.1"
             value={progress}
+            disabled={!src}
             onChange={(event) => seek(Number(event.target.value))}
             style={{ '--tt-audio-progress': `${progress}%` }}
             aria-label={language === 'ja' ? '再生位置' : 'Playback progress'}

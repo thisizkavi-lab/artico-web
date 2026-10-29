@@ -4,6 +4,15 @@ import { TheoryAudioSample } from './FoundationContent'
 import { Glyph } from './LessonExperience'
 import { twisterCards, twisterLevels, twisterAudioSource } from './twisterCollection'
 
+// Carefully authored **keyword** emphasis, rendered as React text (never HTML injection).
+function emphasizeReason(copy) {
+  return copy.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, index) =>
+    part.startsWith('**') && part.endsWith('**')
+      ? <strong key={index}>{part.slice(2, -2)}</strong>
+      : part,
+  )
+}
+
 export function TongueTwisterStudy() {
   const { language } = useLanguage()
   const ja = language === 'ja'
@@ -37,11 +46,9 @@ export function TongueTwisterStudy() {
                   <header className="tt-card-label"><span>{item.number}</span><h4>{item.title}</h4></header>
                   <div className="tt-study-card">
                     <p className="tt-verse" lang="en">{item.phrase}</p>
-                    {twisterAudioSource(item) && (
-                      <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact />
-                    )}
-                    <p className="tt-why">{ja ? item.whyJa : item.whyEn}</p>
+                    <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact />
                   </div>
+                  <p className="tt-why">{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
                 </article>
               ))}
             </div>
@@ -77,7 +84,7 @@ export function TongueTwisterPractice({ initialId }) {
         <h3 lang="en">{phrase}</h3>
         {ja && <p className="tt-practice-meaning">{item.meaningJa}</p>}
         <p>{ja ? item.tipJa : item.tipEn}</p>
-        {src && <TheoryAudioSample key={`${id}-${step}`} phrase={phrase} target={item.target} src={src} compact />}
+        <TheoryAudioSample key={`${id}-${step}`} phrase={phrase} target={item.target} src={src} compact />
       </div>
       <div className="ip-session-nav">
         <button className="ip-secondary" type="button" disabled={step === 0} onClick={() => setStep(n => n - 1)}>

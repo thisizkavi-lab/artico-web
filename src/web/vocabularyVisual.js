@@ -7,11 +7,14 @@ import { vocabularyTimePng } from './vocabularyTimePng'
 import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
+import { vocabularyBodyIllustration } from './VocabularyBodyArt'
 
 // Artwork for Lessons 3–78 is now image-only. No inline SVG, generated
 // icon, procedural symbol, or cross-topic guessed image reaches a card.
 // Original educational PNGs take precedence over third-party raster art.
 function artworkFor(term, chapter) {
+  const body = vocabularyBodyIllustration(term, chapter)
+  if (body) return body
   const grooming = vocabularyAiGrooming(term, chapter)
   if (grooming) return grooming
   const painted = vocabularyAiScene(term, chapter)

@@ -106,10 +106,13 @@ const shelfTime = [
   {text:'Morning.',description:'A shortened morning greeting. It is friendly and natural with familiar people.'},
   {text:'Good afternoon.',description:'A greeting when meeting somebody during the afternoon.'},
   {text:'Good evening.',description:'Use this when you meet someone in the evening, not usually when saying goodbye.'},
+  {text:'Good night.',description:'Say this when leaving someone at night or going to bed—not when first meeting them.'},
 ]
 const shelfGroup = [
   {text:'Hi, everyone.',description:'A friendly, natural way to greet a group of colleagues, classmates, or friends.'},
-  {text:'Good evening, everyone.',description:'A polite way to open a conversation with a group during the evening.'},
+  {text:'Hello, everyone.',description:'A neutral way to greet several people at once.'},
+  {text:'Good morning, everyone.',description:'Greet a group in the morning.'},
+  {text:'Good evening, everyone.',description:'A polite way to greet a group in the evening.'},
 ]
 const shelfReunion = [
   {text:'Good to see you.',description:'Express pleasure at seeing someone you know.'},
@@ -190,15 +193,13 @@ export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
   },[audioProps,phrases])
   return <div className="ip-reading ar-page">
     <section id="study-open" className="ar-section" aria-labelledby="ar-head-1">
-      <SectionHead index="01" title="Start the conversation" description="Choose one greeting that fits your relationship, the time of day, and the feeling you want to convey. A workplace does not automatically require one single greeting."/>
-      <Conversation title="AT WORK, MEETING A FAMILIAR COLLEAGUE" scene="morning" lines={[{who:'Alex',text:'Good morning.'},{who:'Casey',text:'Morning.'}]} note={'“Morning” is a shortened morning greeting. You can also answer with the full “Good morning.”'} play={play}/>
+      <SectionHead index="01" title="Start the conversation" description={'Most conversations begin with something small: a greeting. It is a simple way to acknowledge someone and open the door to a conversation. Sometimes, all you need is a friendly “Hi.” Greetings can change depending on who you are talking to and when you meet.'}/>
       <PhraseShelf title="Everyday greetings" options={shelfEveryday} play={play}/>
-      <PhraseShelf title="Choose the time of day" options={shelfTime} scene="time" play={play}/>
+      <aside className="ar-note ar-full-note"><strong>A little nuance</strong><b>Hi</b> is friendly and works in most situations. <b>Hello</b> is neutral and can feel slightly more formal. <b>Hey</b> is more casual, especially with people you know.</aside>
+      <PhraseShelf title="Greetings throughout the day" options={shelfTime} scene="time" play={play}/>
+      <aside className="ar-note ar-full-note"><strong>Good evening ≠ Good night</strong>Say <b>“Good evening”</b> when you meet someone in the evening. Say <b>“Good night”</b> when you are leaving or going to bed. We do not normally use “Good night” to start a conversation.</aside>
+      <Conversation title="A MORNING GREETING" scene="morning" lines={[{who:'Alex',text:'Good morning.'},{who:'Casey',text:'Morning.'}]} note={'“Morning” is a shortened morning greeting. You can also answer with the full “Good morning.”'} play={play}/>
       <PhraseShelf title="Greeting a group" options={shelfGroup} scene="group" play={play}/>
-      <Comparison title="Evening greetings: opening vs. closing contact" items={[
-        {label:'When you meet in the evening',phrase:'Good evening.',description:'Use this to open a conversation when you arrive or meet someone in the evening.'},
-        {label:'When you part or go to bed',phrase:'Good night.',description:'Usually closes contact at night or comes before sleep—not an opening greeting. Chapter 10 develops closings.'}
-      ]}/>
     </section>
     <section id="study-check-in" className="ar-section" aria-labelledby="ar-head-2">
       <SectionHead index="02" title="Check in and answer" description={'“How are you?”, “How are you doing?”, and “How’s it going?” can be short social check-ins or genuine questions about someone’s situation. What happens next helps show the intention.'}/>

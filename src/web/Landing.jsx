@@ -55,6 +55,29 @@ export default function Landing() {
             <a className="al-splash-cta" href="#/home">Get Started</a>
           </div>
         </section>
+        <section className="al-why" aria-labelledby="al-why-title">
+          <div className="al-why-inner">
+            <header className="al-why-heading">
+              <p className="al-why-overline">THE IDEA BEHIND ARTICO</p>
+              <h2 id="al-why-title">why artico?</h2>
+              <span className="al-why-accent" aria-hidden="true" />
+            </header>
+            <div className="al-why-story">
+              <p className="al-why-lead">
+                real learning needs effort. but effort shouldn’t feel like pain — it should feel like <mark>flow</mark>. if something’s too easy, you don’t grow. if it’s too hard, you quit. this app sits in that <mark>perfect middle</mark> — where you’re challenged, but never lost. you grow without noticing you’re grinding.
+              </p>
+              <p>
+                English here isn’t taught like a subject. it’s <mark>trained like a skill</mark> — like an athlete sharpening control, or an artist refining craft. you build the mechanics first — <mark>sound, rhythm, movement</mark> — then you perform. you don’t memorize rules; you <mark>train expression</mark>.
+              </p>
+              <p>
+                and beyond all that, <mark>communication</mark> is the core of everything. it’s how you think, connect, and lead. English just happens to be the <mark>universal interface</mark> — the key that opens almost every door in today’s world.
+              </p>
+              <p className="al-why-finish">
+                this app doesn’t just teach you English. it shapes how you <mark>speak, think, and carry yourself</mark> — so that when you talk, <mark>people feel it</mark>.
+              </p>
+            </div>
+          </div>
+        </section>
         <section className="al-method" aria-labelledby="al-method-title">
           <div className="al-container al-method-inner">
             <header className="al-section-heading">

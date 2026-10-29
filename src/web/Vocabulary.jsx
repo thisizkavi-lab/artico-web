@@ -3,18 +3,33 @@ import topics from './vocabularyTopics.json'
 import VocabularyCountriesLesson from './VocabularyCountriesLesson'
 import VocabularyNumbersLesson from './VocabularyNumbersLesson'
 import VocabularyTopicLesson from './VocabularyTopicLesson'
+import { CurriculumIcon } from './CurriculumIcon'
 import './vocabulary.css'
+
+
+/** Match each of the 78 topic titles with an illustration-free, semantic vector icon.
+ * The title remains the accessible label; icons are decorative.
+ */
+const vocabularyTopicIcons = [
+  'globe', 'hash', 'clock', 'sunCloud', 'tag', 'thumbsUp', 'messages', 'quote', 'house', 'utensils',
+  'broom', 'hammer', 'truck', 'body', 'shirt', 'watch', 'eye', 'brain', 'smile', 'family',
+  'heart', 'baby', 'graduation', 'pencil', 'languages', 'message', 'scales', 'utensils', 'apple', 'carrot',
+  'cake', 'coffee', 'chef', 'briefcase', 'calendarCheck', 'building', 'laptop', 'wallet', 'briefcase', 'presentation',
+  'quote', 'interview', 'trophy', 'plane', 'car', 'mapPin', 'bed', 'camera', 'bike', 'waves',
+  'cloudSun', 'mountain', 'leaf', 'paw', 'rabbit', 'bird', 'fish', 'palette', 'activity', 'ball',
+  'soccer', 'dumbbell', 'book', 'music', 'film', 'tv', 'newspaper', 'thermometer', 'stethoscope', 'salad',
+  'activity', 'storefront', 'bag', 'basket', 'building', 'phone', 'cpu', 'atom'
+]
 
 const vocabularyIndex = '#/lesson/98/study'
 const topicHref = (number) => `${vocabularyIndex}/${String(number).padStart(2, '0')}`
 
 function LessonLink({ topic, japanese }) {
-  const number = String(topic.sourceLesson).padStart(2, '0')
   return (
     <li>
       <a className="vl-lesson-link" href={topicHref(topic.sourceLesson)}
         aria-label={japanese ? `レッスン${topic.sourceLesson}：${topic.ja}` : `Lesson ${topic.sourceLesson}: ${topic.topic}`}>
-        <span className="vl-lesson-number" aria-hidden="true">{number}</span>
+        <span className="vl-lesson-icon" aria-hidden="true"><CurriculumIcon name={vocabularyTopicIcons[topic.sourceLesson - 1] ?? 'book'} size={27} /></span>
         <span className="vl-lesson-titles">
           <strong lang={japanese ? 'ja' : 'en'}>{japanese ? topic.ja : topic.topic}</strong>
           <small lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</small>

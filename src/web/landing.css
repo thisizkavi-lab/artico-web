@@ -1518,3 +1518,44 @@ a.al-journey-card:hover {
     min-width: 44px;
   }
 }
+
+/* Editorial ink underline: one hand-drawn red gesture under each verb.
+   Each word stays intact across wrapping; glyphs remain plain selectable text. */
+.al-splash-ink {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 600;
+  color: inherit;
+}
+.al-splash-ink svg {
+  position: absolute;
+  left: -1.5%;
+  bottom: -0.17em;
+  width: 103%;
+  height: 0.52em;
+  overflow: visible;
+  pointer-events: none;
+}
+.al-splash-ink path {
+  fill: none;
+  stroke: #d94b4b;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: al-splash-ink-draw 670ms cubic-bezier(.19,.9,.32,1) forwards;
+  animation-delay: 950ms;
+}
+.al-splash-ink-1 path { animation-delay: 1130ms; }
+.al-splash-ink-2 path { animation-delay: 1310ms; }
+@keyframes al-splash-ink-draw {
+  to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .al-splash-ink path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}

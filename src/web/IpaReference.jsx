@@ -7,7 +7,7 @@ import './ipa-reference.css'
 
 const copy = {
   en: {
-    symbol: 'IPA', word: 'Example', clue: 'How it sounds', listen: 'Listen',
+    symbol: 'IPA', word: 'Example', clue: 'How it sounds', listen: 'Hear', audio: 'Audio',
     playingRecording: 'Playing example word',
     unavailable: 'This example could not play. Please try again.',
     choose: 'Choose a sound', practiceTitle: 'Listen. Say. Compare.',
@@ -16,7 +16,7 @@ const copy = {
     sample: 'Example word',
   },
   ja: {
-    symbol: 'IPA', word: '単語', clue: '音のヒント', listen: '聞く',
+    symbol: 'IPA', word: '単語', clue: '音のヒント', listen: '聞く', audio: '音声',
     playingRecording: '例の単語を再生中',
     unavailable: 'この音声を再生できませんでした。もう一度お試しください。',
     choose: '音を選ぶ', practiceTitle: '聞く・言う・比べる',
@@ -72,9 +72,15 @@ function useIpaPlayback() {
 
 function SoundButton({ sound, l, play, className = '' }) {
   return <button type="button" className={`ipa-play ${className}`}
-    onClick={() => play(sound, l)}
+    onClick={(event) => {
+      // Table rows and the practice card also play when clicked.
+      // Stop bubbling so the icon never starts the recording twice.
+      event.stopPropagation()
+      play(sound, l)
+    }}
+    title={`${l.listen}: /${sound.ipa}/ — ${sound.word}`}
     aria-label={`${l.listen}: /${sound.ipa}/, ${sound.word}`}>
-    <Glyph name="play" size={15}/><span>{l.listen}</span>
+    <Glyph name="speaker" size={19}/>
   </button>
 }
 
@@ -91,7 +97,7 @@ export default function IpaReference({ mode = 'study' }) {
       <p className="ip-kicker">{language === 'ja' ? 'レベルゼロ · 発音' : 'LEVEL ZERO · PRONUNCIATION'}</p>
       <h2>{l.practiceTitle}</h2>
       <p className="ip-context">{l.practiceIntro}</p>
-      <div className="ipa-focus">
+      <div className="ipa-focus ipa-focus--playable" onClick={() => play(sound, l)}>
         <div className="ipa-focus-top">
           <span className="ipa-focus-symbol" lang="en">/{sound.ipa}/</span>
           <div><span className="ip-kicker">{l.sample}</span><h3 lang="en">{sound.word}</h3></div>
@@ -109,7 +115,7 @@ export default function IpaReference({ mode = 'study' }) {
             <div className="ipa-symbol-selector">
               {group.sounds.map(item => <button key={item.ipa} type="button"
                 aria-pressed={sound.ipa === item.ipa}
-                onClick={() => { stop(); setSelected(item.ipa) }}>
+                onClick={() => { setSelected(item.ipa); play(item, l) }}>
                 /{item.ipa}/
               </button>)}
             </div>
@@ -135,11 +141,12 @@ export default function IpaReference({ mode = 'study' }) {
             <table className="ipa-table">
               <thead>
                 <tr><th scope="col">{l.symbol}</th><th scope="col">{l.word}</th>
-                  <th scope="col">{l.clue}</th><th scope="col">{l.listen}</th></tr>
+                  <th scope="col">{l.clue}</th><th scope="col" className="ipa-audio-heading">{l.audio}</th></tr>
               </thead>
               <tbody>
                 {group.sounds.map(item => (
-                  <tr key={item.ipa}>
+                  <tr key={item.ipa} className="ipa-sound-row"
+                    onClick={() => play(item, l)}>
                     <th scope="row" className="ipa-symbol-cell" lang="en">/{item.ipa}/</th>
                     <td className="ipa-word" lang="en">{item.word}</td>
                     <td className="ipa-hint">{language === 'ja' ? item.ja : item.clue}</td>

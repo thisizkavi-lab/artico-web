@@ -1,35 +1,51 @@
 import { useMemo, useState } from 'react'
 import { numberGroups, numberLessonNotes } from './vocabularyLesson02'
+import VocabularyNumberVisual from './VocabularyNumberVisual'
+import './vocabulary-numbers-table.css'
 
-function NumberCard({ item, groupId, japanese, practice, revealed, onReveal }) {
-  const titleId = `vl02-${groupId}-${item.cue.replace(/[^a-zA-Z0-9]/g, '-')}`
-  const englishHidden = practice && !revealed
-  const content = (
-    <>
-      <span className="vl02-card-cue" aria-hidden="true">{item.cue}</span>
-      <span className="vl02-card-copy">
-        <span className="vl02-card-overline">{japanese ? 'EN · 英語' : 'ENGLISH'}</span>
-        <strong id={titleId} className="vl02-card-term" lang="en" hidden={englishHidden}>{item.term}</strong>
-        {englishHidden && <span className="vl02-card-prompt">{japanese ? 'タップして答えを確認' : 'Tap to reveal the English'}</span>}
-        <span className="vl02-card-meaning" lang="ja">{item.ja}</span>
-      </span>
-      {practice && <span className="vl02-card-action" aria-hidden="true">{revealed ? '✓' : '↗'}</span>}
-    </>
-  )
-
-  return practice ? (
-    <button className={`vl02-term-card vl02-practice-card${revealed ? ' is-revealed' : ''}`} type="button"
-      onClick={onReveal} aria-expanded={revealed}
-      aria-controls={titleId}
-      aria-label={revealed
-        ? `${item.ja}: ${item.term}. ${japanese ? 'タップして答えを隠す' : 'Tap to hide the answer'}`
-        : `${item.ja}. ${japanese ? 'タップして英語の答えを表示' : 'Tap to reveal the English answer'}`}>
-      {content}
-    </button>
-  ) : (
-    <article className="vl02-term-card">
-      {content}
-    </article>
+function NumberTable({ group, japanese, practice, revealed, onReveal }) {
+  const illustrated = group.id === 'fractions' || group.id === 'percent'
+  return (
+    <div className="vl02-table-wrap">
+      <table className={'vl02-vocab-table' + (illustrated ? ' has-art' : '')}>
+        <thead>
+          <tr>
+            <th scope="col">{japanese ? '数字・記号' : 'Figure'}</th>
+            <th scope="col">{japanese ? '英語' : 'English'}</th>
+            <th scope="col">{japanese ? '日本語' : 'Japanese'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {group.items.map((item, index) => {
+            const id = group.id + '-' + index
+            const visible = revealed.has(id)
+            return (
+              <tr key={id}>
+                <td className="vl02-cue-cell">
+                  <span className={illustrated ? 'vl02-cue-with-art' : ''}>
+                    {illustrated && <VocabularyNumberVisual groupId={group.id} term={item.term} cue={item.cue} />}
+                    <span className="vl02-cue-value">{item.cue}</span>
+                  </span>
+                </td>
+                <td>
+                  {practice
+                    ? <button className={'vl02-recall-answer' + (visible ? ' is-revealed' : '')}
+                        type="button" aria-expanded={visible} onClick={() => onReveal(id)}
+                        aria-label={visible
+                          ? (japanese ? '英語の答えを隠す：' : 'Hide English answer: ') + item.term
+                          : (japanese ? '英語の答えを見る：' : 'Reveal English for ') + item.cue + ', ' + item.ja}>
+                        {visible ? item.term : (japanese ? '答えを見る' : 'Reveal English')}
+                      </button>
+                    : <strong className="vl02-en-value" lang="en">{item.term}</strong>}
+                  <span className="vl02-mobile-ja" lang="ja">{item.ja}</span>
+                </td>
+                <td className="vl02-ja-cell" lang="ja">{item.ja}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </div>
   )
 }
 
@@ -160,17 +176,8 @@ export default function VocabularyNumbersLesson({ japanese }) {
                 <span className="vl02-group-count">{group.items.length}</span>
               </div>
 
-              {group.id === 'counting' && <div className="vl02-counting-track" aria-hidden="true">
-                <span>0</span><i /><span>5</span><i /><span>10</span><i /><span>15</span><i /><span>20</span>
-              </div>}
-
-              <div className={`vl02-card-grid vl02-grid-${group.id}`}>
-                {group.items.map((item, itemIndex) => {
-                  const key = `${group.id}-${itemIndex}`
-                  return <NumberCard key={key} item={item} groupId={`${group.id}-${itemIndex}`} japanese={japanese}
-                    practice={practice} revealed={revealed.has(key)} onReveal={() => revealTerm(key)} />
-                })}
-              </div>
+              <NumberTable group={group} japanese={japanese} practice={practice}
+                revealed={revealed} onReveal={revealTerm} />
 
               {(group.note || group.example) && <div className="vl02-group-notes">
                 <LessonNote note={group.note} japanese={japanese} label={japanese ? '使い方のポイント' : 'Usage note'} />

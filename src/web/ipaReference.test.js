@@ -115,18 +115,19 @@ test('F03 reading remains five sections and explains the revised chart', () => {
   assert.match(doc, /Stage 6/)
 })
 
-test('Locally supplied IPA test ZIP maps 41 isolated sounds without publishing audio assets', () => {
-  const testLoader = readFileSync(new URL('./ipaTestAudio.js', import.meta.url), 'utf8')
+test('IPA speaker buttons play all 41 provided sounds immediately; word examples retain Artico WAV', () => {
   const ui = source('./IpaReference.jsx')
-  const filenames = [...testLoader.matchAll(/(?:consonants|vowels|less-common-sounds)\/[a-z_]+\.mp3/g)]
-  assert.ok(filenames.length >= 41)
-  assert.match(testLoader, /export function readIpaTestZip\(buffer\)/)
-  assert.match(testLoader, /export function restoreIpaTestZip\(\)/)
-  assert.match(testLoader, /localStorage\.setItem/)
-  assert.match(ui, /testUrlsRef\.current\?\.\[sound\.ipa\]/)
-  assert.match(ui, /<IpaAudioTestImporter/)
-  assert.match(ui, /const isolated = !word/)
-  assert.match(ui, /loadTestZip = async event/)
-  // Clicking an example must continue to play the entire example word.
+  const clips = source('./ipaIsolatedAudio.js')
+  const urls = Object.fromEntries([...clips.matchAll(/^\s*"([^"]+)": "([^"]+\.mp3)"/gm)].map(([,symbol, file]) => [symbol,file]))
+  assert.equal(Object.keys(urls).length, 41)
+  assert.equal(new Set(Object.values(urls)).size, 40)
+  assert.ok(allIpaSounds.every(item => item.ipa in urls), 'All original IPA symbols mapped')
+  assert.ok('x' in urls && 'ʔ' in urls)
+  assert.ok(urls.i.includes('/vowels/i-'))
+  assert.ok(urls['ɹ'].includes('/consonants/r-'))
+  assert.ok(urls['ɪ'].includes('/vowels/small_cap_i-'))
+  assert.match(ui, /ipaIsolatedAudio\[sound\.ipa\]/)
+  assert.match(ui, /audio\/ipa-one-voice\//)
   assert.match(ui, /play\(sound, l, word\)/)
+  assert.doesNotMatch(ui, /IpaAudioTestImporter|loadTestZip|testUrlsRef|readIpaTestZip/)
 })

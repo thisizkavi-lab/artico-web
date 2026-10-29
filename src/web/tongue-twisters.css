@@ -435,3 +435,120 @@
     line-height: 1.2;
   }
 }
+
+/*
+ * Practice refinement:
+ * - One readable line of current practice text; no duplicated full-verse block.
+ * - The art sits directly on the lesson surface instead of inside a white tile.
+ * - Grid layout reflows on item changes, including 1-line and 9-line rhymes.
+ */
+.rf-page .tt-practice-gallery {
+  min-width: 0;
+  overflow: visible;
+}
+.tt-practice-gallery .tt-practice-center {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  align-content: start;
+  gap: 0;
+  width: 100%;
+  min-width: 0;
+}
+.tt-practice-gallery .tt-practice-name {
+  max-width: 800px;
+  width: 100%;
+  min-width: 0;
+  margin: 12px auto 3px;
+  padding-inline: 8px;
+  font-size: clamp(24px, 3.1vw, 35px);
+  line-height: 1.33;
+  font-weight: 740;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.tt-practice-gallery .tt-practice-name.tt-title-long {
+  font-size: clamp(22px, 2.5vw, 29px);
+}
+.tt-practice-gallery .tt-practice-illustration {
+  display: block;
+  min-width: 0;
+  width: min(470px, 94%);
+  height: clamp(160px, 28vw, 250px);
+  margin: 5px auto 11px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(ellipse 76% 80% at 50% 48%, #000 62%, transparent 100%);
+  mask-image: radial-gradient(ellipse 76% 80% at 50% 48%, #000 62%, transparent 100%);
+}
+.tt-practice-gallery .tt-chunk-current {
+  box-sizing: border-box;
+  min-width: 0;
+  width: min(100%, 650px);
+  margin: 0 auto 14px;
+  padding: 13px 17px;
+  overflow: visible;
+}
+.tt-practice-gallery .tt-chunk-current p {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.48;
+  font-size: clamp(21px, 2.6vw, 26px);
+  text-wrap: pretty;
+}
+.tt-practice-gallery .tt-chunk-current p.tt-chunk-long {
+  font-size: clamp(17px, 2vw, 22px);
+}
+.tt-practice-gallery .tt-transport-main {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) 68px minmax(0, 1fr) minmax(0, 1.3fr);
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1vw, 10px);
+  width: 100%;
+}
+.rf-page .tt-practice-gallery .tt-transport-main button,
+.rf-page .tt-practice-gallery .tt-transport-main .tt-transport-next {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  grid-column: auto;
+  padding: 0 4px;
+}
+.rf-page .tt-practice-gallery .tt-transport-main .theory-audio-play {
+  justify-self: center;
+  width: 66px;
+  height: 66px;
+}
+.tt-practice-gallery .tt-transport-player {
+  min-width: 0;
+  overflow: visible;
+}
+@media (max-width: 650px) {
+  .tt-practice-gallery .tt-practice-name { font-size: clamp(22px, 5.4vw, 29px); margin-top: 13px; }
+  .tt-practice-gallery .tt-practice-name.tt-title-long { font-size: clamp(20px, 4.7vw, 25px); }
+  .tt-practice-gallery .tt-practice-illustration {
+    width: min(100%, 400px);
+    height: 180px;
+    margin: 4px auto 8px;
+  }
+  .tt-practice-gallery .tt-chunk-current { padding: 10px 12px; }
+  .tt-practice-gallery .tt-chunk-current p { font-size: 20px; }
+  .tt-practice-gallery .tt-chunk-current p.tt-chunk-long { font-size: 17px; }
+  .tt-practice-gallery .tt-transport-main {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) 55px minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 4px;
+  }
+  .rf-page .tt-practice-gallery .tt-transport-main button,
+  .rf-page .tt-practice-gallery .tt-transport-main .tt-transport-next { height: 42px; }
+  .rf-page .tt-practice-gallery .tt-transport-main .theory-audio-play { width: 55px; height: 55px; }
+  .rf-page .tt-practice-gallery .tt-transport-main .tt-transport-speed { width: 100%; font-size: 11px; }
+}

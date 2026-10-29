@@ -12,6 +12,17 @@ function emphasizeReason(copy) {
   )
 }
 
+// A readable, actual tongue twister serves as the title, not an arbitrary nickname.
+// Long rhymes use their opening line; long one-line twisters use the first clause.
+function twisterHeading(phrase) {
+  const firstLine = phrase.trim().split('\n')[0].trim()
+  if (firstLine.length <= 76) return firstLine
+  const comma = firstLine.indexOf(',')
+  if (comma > 18 && comma <= 76) return firstLine.slice(0, comma + 1)
+  const words = firstLine.slice(0, 76)
+  return words.replace(/\s+\S*$/, '') + '…'
+}
+
 export function TongueTwisterStudy() {
   const { language } = useLanguage()
   const ja = language === 'ja'
@@ -42,7 +53,7 @@ export function TongueTwisterStudy() {
             <div className="tt-card-grid">
               {twisterCards.filter(item => item.level === level.number).map(item => (
                 <article key={item.id} className={`tt-study-item${item.phrase.length > 165 ? ' tt-long' : ''}`}>
-                  <header className="tt-card-label"><span>{item.number}</span><h4>{item.title}</h4></header>
+                  <header className="tt-card-label"><span>{item.number}</span><h4 lang="en">{twisterHeading(item.phrase)}</h4></header>
                   <div className="tt-study-card">
                     <p className="tt-verse" lang="en">{item.phrase}</p>
                     <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact />
@@ -80,8 +91,10 @@ export function TongueTwisterPractice({ initialId }) {
         <span>{ja ? '早口言葉' : 'Tongue Twisters'}</span>
       </div>
 
-      <div className="tt-practice-center">
-        <h2 className="tt-practice-name">{item.title}</h2>
+      <div className="tt-practice-center" key={item.id}>
+        <h2 className={`tt-practice-name${twisterHeading(item.phrase).length > 65 ? ' tt-title-long' : ''}`} lang="en">
+          {twisterHeading(item.phrase)}
+        </h2>
         <img
           key={item.id}
           className="tt-practice-illustration"
@@ -89,11 +102,9 @@ export function TongueTwisterPractice({ initialId }) {
           alt={ja ? item.meaningJa : `Illustration of ${item.title}`}
           loading="eager"
         />
-        <p className={`tt-practice-verse${item.phrase.length > 165 ? ' tt-verse-long' : ''}`} lang="en">{item.phrase}</p>
-
         <div className="tt-chunk-current" aria-live="polite">
           <span>{ja ? '練習する部分' : 'Practice this part'} · {chunkIndex + 1} / {item.buildSteps.length}</span>
-          <p lang="en">{chunk}</p>
+          <p className={chunk.length > 160 ? 'tt-chunk-long' : undefined} lang="en">{chunk}</p>
         </div>
         <TheoryAudioSample
           key={item.id}

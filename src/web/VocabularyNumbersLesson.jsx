@@ -170,8 +170,8 @@ export default function VocabularyNumbersLesson({ japanese }) {
         </div>
 
         {practice && <p className="vl02-practice-hint" role="status">{japanese
-          ? '日本語の意味を見て英語を思い出し、カードをタップして答えを確認しましょう。'
-          : 'Use the Japanese meaning to recall the English, then tap a card to reveal the answer.'}</p>}
+          ? '数字や日本語の意味を見て英語を思い出し、「答えを見る」を押して確認しましょう。'
+          : 'Recall the English from the figure and Japanese meaning, then select Reveal English to check.'}</p>}
 
         <div className="vl02-groups">
           {visibleGroups.map((group) => (

@@ -645,3 +645,121 @@ a.al-journey-card:hover {
   .al-journey-card, .al-final-cta-button, .al-footer-column a { transition: none; }
   a.al-journey-card:hover, .al-final-cta-button:hover { transform: none; }
 }
+
+
+/* Landing navigation: a real entry header, without placeholder account buttons. */
+.al-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  background: rgba(255, 255, 255, .97);
+  border-bottom: 1px solid #e8e9e9;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.al-site-header-inner {
+  width: min(100% - 64px, 1530px);
+  min-height: 78px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(14px, 2.7vw, 44px);
+}
+.al-header-logo.artico-wordmark {
+  flex: 0 0 auto;
+  color: #24352e;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.055em;
+}
+.al-header-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(15px, 2.8vw, 42px);
+  margin-left: auto;
+}
+.al-header-nav button {
+  padding: 12px 0;
+  background: none;
+  color: #535d62;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 140ms ease;
+}
+.al-header-nav button:hover { color: #285bcc; }
+.al-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.al-header-languages {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #dfe4e9;
+  border-radius: 9px;
+  background: #f5f7fa;
+}
+.al-header-languages button {
+  min-height: 35px;
+  min-width: 46px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: transparent;
+  color: #617078;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.al-header-languages button[aria-pressed="true"] {
+  background: #fff;
+  color: #285bcc;
+  box-shadow: 0 1px 4px rgba(30, 44, 60, .13);
+}
+.al-header-start {
+  min-height: 42px;
+  padding: 9px 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #285bcc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background-color 140ms ease;
+}
+.al-header-start:hover { background: #204bae; }
+.aw-landing .al-splash {
+  min-height: calc(100vh - 78px);
+  min-height: calc(100svh - 78px);
+}
+.al-why-heading h2, #al-path-title { scroll-margin-top: 105px; }
+@media (max-width: 760px) {
+  .al-site-header-inner { min-height: 68px; width: min(100% - 32px, 1530px); gap: 12px; }
+  .al-header-logo.artico-wordmark { font-size: 30px; }
+  .al-header-nav { display: none; }
+  .al-header-actions { margin-left: auto; gap: 8px; }
+  .al-header-languages button { min-height: 33px; min-width: 37px; padding: 5px 7px; font-size: 12px; }
+  .al-header-start { min-height: 38px; padding: 8px 13px; font-size: 12px; }
+  .aw-landing .al-splash { min-height: calc(100svh - 68px); }
+  .al-why-heading h2, #al-path-title { scroll-margin-top: 88px; }
+}
+@media (max-width: 380px) {
+  .al-header-logo.artico-wordmark { font-size: 26px; }
+  .al-site-header-inner { width: min(100% - 24px, 1530px); gap: 7px; }
+  .al-header-languages button { min-width: 32px; padding: 5px; }
+  .al-header-start { padding-inline: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .al-header-start, .al-header-nav button { transition: none; }
+}

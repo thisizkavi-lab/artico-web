@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { socialFluencyChapterCount } from './socialFluencyCurriculum'
-import './socialFluencyReference.css'
 import { SourceBookLearnView, SourceBookPracticeView } from './sourceBookViews'
 import { IntroductionsInteractiveLearnView, IntroductionsInteractivePracticeView } from './greetingsInteractive'
 
@@ -66,100 +65,63 @@ function SocialSignalStrip() {
 }
 
 function GreetingVocabularySection({ section, speakWithBrowser, PlayIcon }) {
-  const items = section?.phrases || []
-  const recognition = section?.recognition || []
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const selected = items[selectedIndex] || items[0]
-  const featured = items.slice(0, 5)
-  const more = items.slice(5)
-
-  const choose = (item, index) => {
-    setSelectedIndex(index)
-    speakWithBrowser(item.phrase)
-  }
-
   return (
-    <article className="social-reference-shelf" aria-label={section.enTitle || section.title}>
-      <div className="social-reference-art">
-        {section.image
-          ? <GreetingSceneImage src={section.image} alt="" />
-          : <div className="social-reference-art-empty" aria-hidden="true">ILLUSTRATION</div>}
-        <small className="social-reference-art-caption">SCENE · PLACEHOLDER ART</small>
-      </div>
-      <div className="social-reference-shelf-content">
-        <header className="social-reference-shelf-heading">
-          <span className="section-kicker">{section.enTitle || section.title}</span>
+    <div className="greetings-vocab-section">
+      <div className="greetings-vocab-head">
+        <GreetingSceneImage src={section.image} alt="" />
+        <div>
+          <span className="section-kicker">{section.enTitle}</span>
           <h3>{section.title}</h3>
-          {section.intro && <p>{section.intro}</p>}
-        </header>
-        <div className="social-reference-bubbles" role="group" aria-label={section.title}>
-          {featured.map((item, index) => (
-            <button key={index} type="button"
-              className={'social-reference-phrase' + (selectedIndex === index ? ' is-selected' : '')}
-              aria-pressed={selectedIndex === index}
-              onClick={() => choose(item, index)}>
-              <span lang="en">{item.phrase}</span><PlayIcon />
-            </button>
+          <p>{section.intro}</p>
+        </div>
+      </div>
+      <div className="greetings-phrase-grid">
+        {section.phrases.map((item) => (
+          <GreetingPhraseCard key={item.phrase} item={item} speakWithBrowser={speakWithBrowser} PlayIcon={PlayIcon} />
+        ))}
+      </div>
+      <details className="greetings-recognition">
+        <summary>聞いたら分かればよい表現 <span>Recognition shelf</span></summary>
+        <div className="greetings-recognition-list">
+          {section.recognition.map((item) => (
+            <div key={item.phrase}>
+              <strong>{item.phrase}</strong>
+              <span>{item.meaning}</span>
+              {item.note && <small>{item.note}</small>}
+            </div>
           ))}
         </div>
-        {selected && <div className="social-reference-selected" aria-live="polite">
-          <strong lang="en">{selected.phrase}</strong>
-          <p lang="ja">{selected.meaning}</p>
-          {selected.context && <small lang="ja">{selected.context}</small>}
-        </div>}
-        {more.length > 0 && <details className="social-reference-more">
-          <summary>More phrases <span>{more.length}</span></summary>
-          <div className="social-reference-more-list">
-            {more.map((item, index) => (
-              <button key={index} type="button"
-                className={'social-reference-more-row' + (selectedIndex === index + featured.length ? ' is-selected' : '')}
-                aria-pressed={selectedIndex === index + featured.length}
-                onClick={() => choose(item, index + featured.length)}>
-                <span><strong lang="en">{item.phrase}</strong><small lang="ja">{item.meaning}</small></span><PlayIcon />
-              </button>
-            ))}
-          </div>
-        </details>}
-        {recognition.length > 0 && <details className="social-reference-more social-reference-recognition">
-          <summary>Recognition shelf · 聞いて分かる表現 <span>{recognition.length}</span></summary>
-          <div className="social-reference-more-list">
-            {recognition.map((item, index) => (
-              <button key={index} type="button" className="social-reference-more-row" onClick={() => speakWithBrowser(item.phrase)}>
-                <span><strong lang="en">{item.phrase}</strong><small lang="ja">{item.meaning}</small>{item.note && <small lang="ja">{item.note}</small>}</span><PlayIcon />
-              </button>
-            ))}
-          </div>
-        </details>}
-      </div>
-    </article>
+      </details>
+    </div>
   )
 }
 
 function GreetingDialogueCard({ pattern, speakWithBrowser, PlayIcon }) {
-  const lines = pattern.lines || []
   return (
-    <article className="social-reference-dialogue">
-      <header className="social-reference-dialogue-head">
-        <div><span className="section-kicker">{pattern.label || 'Conversation'}</span><h3>{pattern.title}</h3></div>
-        <button type="button" className="social-reference-play-all"
-          aria-label={'Play conversation: ' + pattern.title}
-          onClick={() => speakWithBrowser(lines.map((line) => line.en).join(' '))}><PlayIcon /></button>
-      </header>
-      <div className="social-reference-dialogue-turns">
-        {lines.map((line, index) => {
-          const speaker = String(line.speaker || (index % 2 ? 'B' : 'A'))
-          const right = speaker === 'B' || (speaker !== 'A' && index % 2 === 1)
-          return <div key={index} className={'social-reference-turn' + (right ? ' is-right' : '')}>
-            <span className={'social-reference-avatar' + (right ? ' is-coral' : '')}>{speaker}</span>
-            <div className="social-reference-turn-body">
-              <small>{speaker}</small>
-              <button type="button" className="social-reference-turn-bubble" onClick={() => speakWithBrowser(line.en)} aria-label={'Listen to: ' + line.en}>
-                <span lang="en">{line.en}</span>
-              </button>
-              {line.ja && <span className="social-reference-turn-ja" lang="ja">{line.ja}</span>}
+    <article className="greeting-dialogue-card">
+      <div className="greeting-dialogue-header">
+        <div>
+          <span className="section-kicker">{pattern.label}</span>
+          <h3>{pattern.title}</h3>
+        </div>
+        <button
+          type="button"
+          className="greeting-listen-dialogue"
+          onClick={() => speakWithBrowser(pattern.lines.map((line) => line.en).join(' '))}
+        >
+          <PlayIcon /> <span>会話を聞く</span>
+        </button>
+      </div>
+      <div className="greeting-dialogue-lines">
+        {pattern.lines.map((line, index) => (
+          <div key={`${pattern.id}-${index}`} className={`greeting-dialogue-line speaker-${line.speaker.toLowerCase()}`}>
+            <span className="greeting-speaker">{line.speaker}</span>
+            <div className="greeting-speech-bubble">
+              <strong>{line.en}</strong>
+              <small>{line.ja}</small>
             </div>
           </div>
-        })}
+        ))}
       </div>
     </article>
   )

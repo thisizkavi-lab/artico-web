@@ -1,3 +1,4 @@
+import { vocabularyAiFood } from './vocabularyAiFood'
 import { vocabularyAiScene } from './vocabularyAiScene'
 import { vocabularyActionPng } from './vocabularyActionPng'
 import { combinedVocabulary } from './vocabularyDedup'
@@ -12,6 +13,8 @@ import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 function artworkFor(term, chapter) {
   const painted = vocabularyAiScene(term, chapter)
   if (painted) return painted
+  const food = vocabularyAiFood(term, chapter)
+  if (food) return food
   const action = vocabularyActionPng(term, chapter)
   if (action) return action
   const time = vocabularyTimePng(term, chapter)

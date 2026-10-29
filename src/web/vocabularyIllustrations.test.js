@@ -249,3 +249,33 @@ test('reviewed relative-time illustrations are available locally for all nine ex
   }
   assert.match(client,/relativeTimeArt\[term\]/)
 })
+
+
+test('Lesson 14 animates all actions using distinct motion rigs and accessible playback',()=>{
+  const motion=load('VocabularyBodyMotion.jsx')
+  const css=load('vocabulary-body-motion.css')
+  const terms=[
+    'blink','blush (action)','bow (gesture)','clap','cry','frown','grin',
+    'laugh','lick','nod','shake your head','shrug','smile','suck',
+    'breathe','hold your breath','cough','shiver','sigh',
+    'sneeze','snore','sweat / perspire (formal verb)',
+  ]
+  for(const term of terms)assert.ok(motion.includes("'"+term+"'"),'Missing body motion: '+term)
+  assert.match(visual,/vocabularyBodyMotion\(term, chapter\)/)
+  assert.ok(visual.indexOf('vocabularyBodyMotion(term, chapter)')<visual.indexOf('vocabularyCourseArt(term, chapter)'),
+    'Moving actions must not be overridden by static artwork')
+  assert.match(view,/visual\?\.type === 'body-motion'/)
+  assert.match(view,/practice=\{practice\}/)
+  assert.match(motion,/!practice && <button/, 'Practice cards must not nest a button')
+  assert.match(motion,/IntersectionObserver/, 'Autoplay only after the picture is in view')
+  assert.match(motion,/prefers-reduced-motion/, 'Respect reduced motion preferences')
+  assert.match(css,/@media \(prefers-reduced-motion:reduce\)/)
+  assert.match(css,/@keyframes bm-blink/)
+  assert.match(css,/@keyframes bm-bow/)
+  assert.match(css,/@keyframes bm-clap-l/)
+  assert.match(css,/@keyframes bm-breathe/)
+  assert.match(css,/@keyframes bm-sneeze-head/)
+  assert.match(css,/@keyframes bm-sleep-breath/)
+  assert.match(motion,/onAnimationEnd/, 'Replay animations must stop, not loop forever')
+  assert.ok(!css.includes('infinite'),'Body motion should not loop endlessly')
+})

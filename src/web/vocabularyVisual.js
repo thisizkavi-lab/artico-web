@@ -10,12 +10,15 @@ import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 import { vocabularyBodyIllustration } from './VocabularyBodyArt'
 import { vocabularyBodySprite } from './vocabularyBodySprite'
+import { vocabularyBodyMotion } from './VocabularyBodyMotion'
 
 // Artwork for Lessons 3–78 uses dedicated course illustrations, approved raster sprites,
 // or reviewed PNG illustrations.
 // Dedicated course illustrations take precedence over all legacy art.
 function artworkFor(term, chapter) {
   if (vocabularyCourseTextOnly(term, chapter)) return null
+  const bodyMotion = vocabularyBodyMotion(term, chapter)
+  if (bodyMotion) return bodyMotion
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
   const approvedBody = vocabularyBodySprite(term, chapter)

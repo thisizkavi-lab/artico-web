@@ -3,6 +3,7 @@ import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
+import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
 
@@ -179,7 +180,8 @@ function TimeSpansTable({ items, japanese }) {
   )
 }
 
-function Visual({visual}) {
+function Visual({visual, practice, japanese}) {
+  if (visual?.type === 'body-motion') return <VocabularyBodyMotion term={visual.term} practice={practice} japanese={japanese} />
   if (visual?.type === 'body-sprite') {
     const col = visual.index % 8
     const row = Math.floor(visual.index / 8)
@@ -259,7 +261,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
   const answerHidden = practice && !revealed && canPractice
   const body = (
     <>
-      {visual && <span className="vlt-visual"><Visual visual={visual} /></span>}
+      {visual && <span className="vlt-visual"><Visual visual={visual} practice={practice} japanese={japanese} /></span>}
       <span className="vlt-card-copy">
         {practice && canPractice && <span className="vlt-card-kicker">{japanese ? '英語で何と言う？' : 'SAY IT IN ENGLISH'}</span>}
         {ja && <span className={'vlt-meaning' + (practice ? ' is-prompt' : '')} lang="ja">{ja}</span>}

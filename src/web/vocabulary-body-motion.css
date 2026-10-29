@@ -1,0 +1,167 @@
+/* Artico motion studies • restrained, anatomically staged, one-shot loops.
+   Frame stays sharp at every card size; the HTML replay button lives outside
+   SVG and is omitted inside Practice's reveal button (no nested buttons). */
+.bm-motion-frame{position:relative;display:block;width:100%;height:100%;background:#fff;overflow:hidden}
+.bm-scene{display:block;width:100%;height:100%;background:#fff}
+.vlt-image-card .vlt-visual:has(.bm-motion-frame){background:#fff}
+.bm-scene *{transform-box:view-box}
+.bm-replay{
+  position:absolute;right:7px;bottom:7px;z-index:1;
+  display:grid;place-items:center;width:29px;height:29px;
+  border:1px solid #dce4ec;border-radius:50%;background:#ffffffed;
+  box-shadow:0 1px 5px #233b5020;color:#395d7c;cursor:pointer;
+  padding:0;font-size:21px;line-height:1;
+}
+.bm-replay:hover{background:#eef5fa;border-color:#a3c1d6}
+.bm-replay:focus-visible{outline:3px solid #568dcc;outline-offset:2px}
+.bm-replay span{transform:translateY(-1px)}
+.bm-scene{--bm-dur:3s}
+.bm-scene[data-action="breathe"],.bm-scene[data-action="hold your breath"]{--bm-dur:4s}
+.bm-scene[data-action="snore"]{--bm-dur:3.7s}
+.bm-scene.is-playing .bm-animation-clock{animation:bm-complete var(--bm-dur) linear 1 both}
+@keyframes bm-complete{0%{opacity:0}100%{opacity:0}}
+
+/* Eye anatomy: upper lid and lashes descend over the stationary iris.
+   Deliberately no pupil-size scaling. */
+.bm-scene.is-playing[data-action="blink"] .bm-upper-eyelid{animation:bm-blink var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="sneeze"] .bm-upper-eyelid{animation:bm-sneeze-eyes var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-blink{
+  0%,10%,18%,38%,44%,100%{transform:translateY(0)}
+  13%,15%,41%{transform:translateY(17px)}
+}
+@keyframes bm-sneeze-eyes{0%,33%,51%,100%{transform:translateY(0)}39%,46%{transform:translateY(17px)}}
+
+/* Head motion derives from the neck joint, not the screen/card position. */
+.bm-head{transform-origin:160px 144px}
+.bm-scene.is-playing[data-action="nod"] .bm-head{animation:bm-nod var(--bm-dur) cubic-bezier(.45,0,.33,1) 1 both}
+.bm-scene.is-playing[data-action="shake your head"] .bm-head{animation:bm-shake var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-nod{
+  0%,12%,32%,45%,73%,100%{transform:translateY(0) rotate(0)}
+  22%,56%{transform:translateY(7px) rotate(8deg)}
+  26%,61%{transform:translateY(5px) rotate(5deg)}
+}
+@keyframes bm-shake{
+  0%,10%,33%,55%,78%,100%{transform:translateX(0) scaleX(1)}
+  19%,63%{transform:translateX(-8px) scaleX(.89)}
+  42%,69%{transform:translateX(8px) scaleX(.89)}
+}
+
+/* A bow is a waist hinge in side view. The legs and feet remain planted. */
+.bm-bow-upper{transform-origin:160px 140px}
+.bm-scene.is-playing[data-action="bow (gesture)"] .bm-bow-upper{animation:bm-bow var(--bm-dur) cubic-bezier(.35,0,.25,1) 1 both}
+@keyframes bm-bow{
+  0%,12%,78%,100%{transform:rotate(0)}
+  37%,58%{transform:rotate(31deg)}
+}
+
+/* Both forearms pivot around the elbows; palms meet in the centre. */
+.bm-clap-left{transform-origin:126px 151px}
+.bm-clap-right{transform-origin:194px 151px}
+.bm-scene.is-playing[data-action="clap"] .bm-clap-left{animation:bm-clap-l var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="clap"] .bm-clap-right{animation:bm-clap-r var(--bm-dur) ease-in-out 1 both}
+.bm-scene .bm-clap-lines{opacity:0}
+.bm-scene.is-playing[data-action="clap"] .bm-clap-lines{animation:bm-clap-emphasis var(--bm-dur) linear 1 both}
+@keyframes bm-clap-l{0%,10%,28%,42%,61%,100%{transform:rotate(0)}19%,34%,52%{transform:rotate(55deg)}}
+@keyframes bm-clap-r{0%,10%,28%,42%,61%,100%{transform:rotate(0)}19%,34%,52%{transform:rotate(-55deg)}}
+@keyframes bm-clap-emphasis{0%,16%,21%,31%,36%,49%,55%,100%{opacity:0}18%,33%,52%{opacity:.85}}
+
+/* Breath must visibly move the ribcage, not merely surrounding squiggles. */
+.bm-breath-torso{transform-origin:160px 204px}
+.bm-scene.is-playing[data-action="breathe"] .bm-breath-torso{animation:bm-breathe var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="hold your breath"] .bm-breath-torso{animation:bm-hold-chest var(--bm-dur) ease-in-out 1 both}
+.bm-scene .bm-chest-marks{opacity:.2}
+.bm-scene.is-playing[data-action="breathe"] .bm-chest-marks{animation:bm-chest-guide var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-breathe{0%,5%,95%,100%{transform:scaleX(1) scaleY(1)}39%,57%{transform:scaleX(1.07) scaleY(1.027)}}
+@keyframes bm-chest-guide{0%,10%,84%,100%{opacity:.18}38%,60%{opacity:.7}}
+@keyframes bm-hold-chest{0%,8%,100%{transform:scaleX(1)}29%,76%{transform:scaleX(1.085)}}
+.bm-scene .bm-held-cheeks{opacity:0}
+.bm-scene.is-playing[data-action="hold your breath"] .bm-held-cheeks{animation:bm-held-cheeks var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-held-cheeks{0%,20%,85%,100%{opacity:0}32%,74%{opacity:.5}}
+
+/* Face expressions are localized, leaving skull and features aligned. */
+.bm-sad-brows{transform-origin:160px 68px}
+.bm-mouth{transform-origin:161px 125px}
+.bm-scene.is-playing[data-action="frown"] .bm-sad-brows{animation:bm-frown-brow var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="frown"] .bm-mouth{animation:bm-frown-mouth var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="smile"] .bm-mouth{animation:bm-smile var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="grin"] .bm-mouth{animation:bm-grin var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="laugh"] .bm-mouth{animation:bm-laugh-mouth var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="laugh"] .bm-head{animation:bm-laugh-head var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="blush (action)"] .bm-cheeks{animation:bm-blush var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="blush (action)"] .bm-head{animation:bm-blush-head var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="cry"] .bm-tears{animation:bm-cry var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="cry"] .bm-mouth{animation:bm-cry-mouth var(--bm-dur) ease-in-out 1 both}
+.bm-tongue{transform-origin:165px 127px}
+.bm-scene.is-playing[data-action="lick"] .bm-tongue{animation:bm-lick var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-frown-brow{0%,15%,72%,100%{transform:translateY(0)}30%,55%{transform:translateY(4px)}}
+@keyframes bm-frown-mouth{0%,15%,72%,100%{transform:scaleX(1)}30%,55%{transform:scaleX(.86)}}
+@keyframes bm-smile{0%,12%,70%,100%{transform:scaleX(.8)}30%,55%{transform:scaleX(1.16)}}
+@keyframes bm-grin{0%,12%,70%,100%{transform:scaleX(.81) scaleY(.72)}30%,56%{transform:scaleX(1.13) scaleY(1.09)}}
+@keyframes bm-laugh-mouth{0%,10%,32%,44%,66%,100%{transform:scaleY(.65)}21%,37%,56%{transform:scaleY(1.3)}}
+@keyframes bm-laugh-head{0%,12%,65%,100%{transform:translateY(0)}24%,44%{transform:translateY(-4px)}}
+@keyframes bm-blush{0%,12%,76%,100%{opacity:.12}35%,61%{opacity:.9}}
+@keyframes bm-blush-head{0%,17%,73%,100%{transform:rotate(0)}37%,62%{transform:rotate(4deg)}}
+@keyframes bm-cry{0%,13%,36%,48%,73%,100%{opacity:0;transform:translateY(-4px)}22%,55%{opacity:1;transform:translateY(11px)}}
+@keyframes bm-cry-mouth{0%,15%,80%,100%{transform:scaleY(1)}36%,65%{transform:scaleY(1.22)}}
+@keyframes bm-lick{0%,13%,63%,100%{transform:scale(.45) translateX(0)}33%{transform:scale(1.03) translateX(1px)}46%{transform:scale(.98) translateX(-6px)}}
+
+/* Shrug: shoulders and hands rise together; head stays almost still. */
+.bm-shrug-left{transform-origin:121px 148px}
+.bm-shrug-right{transform-origin:200px 148px}
+.bm-scene.is-playing[data-action="shrug"] .bm-shrug-left{animation:bm-shrug-l var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="shrug"] .bm-shrug-right{animation:bm-shrug-r var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="shrug"] .bm-breath-torso{animation:bm-shrug-chest var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-shrug-l{0%,13%,75%,100%{transform:translateY(0) rotate(0)}35%,59%{transform:translateY(-12px) rotate(-8deg)}}
+@keyframes bm-shrug-r{0%,13%,75%,100%{transform:translateY(0) rotate(0)}35%,59%{transform:translateY(-12px) rotate(8deg)}}
+@keyframes bm-shrug-chest{0%,13%,75%,100%{transform:scaleY(1)}35%,59%{transform:scaleY(1.04)}}
+
+/* Cough/sneeze: prepare, brief contraction/jerk, recover. */
+.bm-scene.is-playing[data-action="cough"] .bm-head{animation:bm-cough-head var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="cough"] .bm-cough-arm{animation:bm-cough-arm var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="sneeze"] .bm-head{animation:bm-sneeze-head var(--bm-dur) ease-in-out 1 both}
+.bm-scene .bm-burst{opacity:0}
+.bm-scene.is-playing[data-action="sneeze"] .bm-burst{animation:bm-sneeze-burst var(--bm-dur) linear 1 both}
+@keyframes bm-cough-head{
+  0%,12%,30%,49%,69%,100%{transform:translateY(0) rotate(0)}
+  19%,40%,56%{transform:translateY(6px) rotate(7deg)}
+}
+@keyframes bm-cough-arm{0%,11%,80%,100%{transform:translateY(0)}21%,61%{transform:translateY(-7px)}}
+@keyframes bm-sneeze-head{0%,18%,60%,100%{transform:translateY(0) rotate(0)}34%{transform:translateY(-5px) rotate(-7deg)}43%{transform:translateY(11px) rotate(11deg)}}
+@keyframes bm-sneeze-burst{0%,37%,51%,100%{opacity:0;transform:scale(.75)}42%,47%{opacity:1;transform:scale(1.06)}}
+
+/* Soft physiological actions: small motion, distinct cause and result. */
+.bm-scene.is-playing[data-action="shiver"] .bm-head{animation:bm-shiver-head var(--bm-dur) linear 1 both}
+.bm-scene.is-playing[data-action="shiver"] .bm-breath-torso{animation:bm-shiver-body var(--bm-dur) linear 1 both}
+.bm-scene.is-playing[data-action="shiver"] .bm-shiver-marks{animation:bm-shiver-marks var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-shiver-head{
+  0%,12%,54%,100%{transform:translateX(0)}
+  16%,22%,28%,34%,40%,46%{transform:translateX(-2.5px)}
+  19%,25%,31%,37%,43%,49%{transform:translateX(2.5px)}
+}
+@keyframes bm-shiver-body{
+  0%,12%,54%,100%{transform:translateX(0)}
+  16%,22%,28%,34%,40%,46%{transform:translateX(2px)}
+  19%,25%,31%,37%,43%,49%{transform:translateX(-2px)}
+}
+@keyframes bm-shiver-marks{0%,13%,55%,100%{opacity:.15}22%,45%{opacity:.8}}
+.bm-scene .bm-air{opacity:0}
+.bm-scene.is-playing[data-action="sigh"] .bm-air{animation:bm-sigh-air var(--bm-dur) ease-out 1 both}
+.bm-scene.is-playing[data-action="sigh"] .bm-head{animation:bm-sigh-head var(--bm-dur) ease-out 1 both}
+@keyframes bm-sigh-air{0%,26%,75%,100%{opacity:0;transform:translateX(0)}46%,61%{opacity:.8;transform:translateX(14px)}}
+@keyframes bm-sigh-head{0%,15%,78%,100%{transform:translateY(0)}38%,62%{transform:translateY(5px)}}
+.bm-scene.is-playing[data-action="suck"] .bm-mouth{animation:bm-suck-mouth var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="suck"] .bm-drink-arm{animation:bm-drink-arm var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-suck-mouth{0%,16%,82%,100%{transform:scaleX(1)}31%,57%{transform:scaleX(.65)}}
+@keyframes bm-drink-arm{0%,16%,82%,100%{transform:translateY(0)}31%,57%{transform:translateY(-3px)}}
+.bm-scene.is-playing[data-action="snore"] .bm-blanket{animation:bm-sleep-breath var(--bm-dur) ease-in-out 1 both}
+.bm-scene.is-playing[data-action="snore"] .bm-zeds{animation:bm-sleep-zeds var(--bm-dur) ease-in-out 1 both}
+@keyframes bm-sleep-breath{0%,20%,90%,100%{transform:translateY(0)}50%,67%{transform:translateY(-5px)}}
+@keyframes bm-sleep-zeds{0%,16%,83%,100%{opacity:.25;transform:translateY(5px)}42%,62%{opacity:.9;transform:translateY(-8px)}}
+.bm-scene .bm-sweat{opacity:.7}
+.bm-scene.is-playing[data-action="sweat / perspire (formal verb)"] .bm-sweat{animation:bm-sweat var(--bm-dur) ease-in 1 both}
+@keyframes bm-sweat{0%,20%,81%,100%{opacity:.2;transform:translateY(-5px)}43%,65%{opacity:1;transform:translateY(11px)}}
+
+@media (prefers-reduced-motion:reduce) {
+ .bm-scene *, .bm-scene *::before,.bm-scene *::after{animation:none!important}
+ .bm-motion-frame .bm-replay{display:none}
+}

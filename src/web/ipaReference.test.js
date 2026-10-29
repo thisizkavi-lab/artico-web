@@ -2,6 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { ipaGroups, allIpaSounds, getIpaSound, IPA_VOICE, IPA_VOICE_SOURCE } from './ipaSounds.js'
+import { ipaCurriculum } from './ipaCurriculum.js'
 
 test('American IPA lesson has 41 symbols and one predictable local voice file per example', () => {
   assert.deepEqual(ipaGroups.map(group => group.id), ['consonants', 'vowels', 'diphthongs'])
@@ -44,4 +45,29 @@ test('Study and Practice use same local WAV playback without YouTube or fallback
   assert.doesNotMatch(en, /JwTDPu2TE6k/)
   assert.doesNotMatch(ja, /JwTDPu2TE6k/)
   assert.equal(jaData.sounds.sections.find(section => section.id === 'sounds-listen').video, undefined)
+})
+
+test('General American syllabus explains selection, chart counts, variants, and connected speech in both languages', () => {
+  for (const locale of ['en','ja']) {
+    const lesson = ipaCurriculum[locale]
+    assert.ok(lesson.heading && lesson.eyebrow && lesson.overview.length >= 2)
+    for (const group of ipaGroups) assert.ok(lesson.groupDescriptions[group.id])
+    assert.ok(lesson.countsNote && lesson.howToText && lesson.closing)
+    assert.equal(lesson.beyond.length, 5)
+    const readerText = JSON.stringify(lesson)
+    for (const ipa of ['/ə/', '/ɝ/', '/ɚ/', '/ɑ/', '/ɔ/', '[ɾ]']) {
+      assert.ok(readerText.includes(ipa), locale + ' missing ' + ipa)
+    }
+    assert.doesNotMatch(readerText, /piper|qwen|gemini|tts|synthesis|generated|huggingface|wav|model cards/i)
+  }
+  const ui = readFileSync(new URL('./IpaReference.jsx', import.meta.url), 'utf8')
+  assert.ok(ui.includes("scope.overview.map("))
+  assert.ok(ui.includes("scope.groupDescriptions[group.id]"))
+  assert.ok(ui.includes("scope.beyond.map("))
+  assert.ok(ui.includes("ipa-scope-counts"))
+  assert.doesNotMatch(ui, /SourceDisclosure|recordingNote|Piper|LJ Speech|IPA_VOICE_SOURCE|synthetic/i)
+  const doc = readFileSync(new URL('../../docs/general-american-pronunciation-syllabus.md', import.meta.url), 'utf8')
+  assert.match(doc, /24 foundational categories/)
+  assert.match(doc, /Stage 6/)
+  assert.match(doc, /cot.caught/i)
 })

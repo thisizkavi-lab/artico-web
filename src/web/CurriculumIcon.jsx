@@ -99,6 +99,28 @@ const iconPaths = {
   audio: 'M2 9v6h4l5 5V4L6 9H2ZM15 9a5 5 0 0 1 0 6M18 5a10 10 0 0 1 0 14',
   microphone: 'M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3ZM5 11a7 7 0 0 0 14 0M12 18v4M8 22h8',
   repeat: 'M20 7V3l-3 3-3 1M4 17v4l3-3 3-1M5 8a8 8 0 0 1 13-2M19 16a8 8 0 0 1-13 2',
+  // Vocabulary library: additional subject-specific, outline-only pictograms.
+  hash: 'M5 9h14M4 15h14M11 3 7 21M17 3l-4 18',
+  tag: 'M3 4h9l9 9-8 8-10-10V4ZM8 8h.01',
+  quote: 'M10 5H4v8h5l-3 4M20 5h-6v8h5l-3 4',
+  body: 'M12 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM4 12l8-3 8 3M12 9v7M12 16l-5 6M12 16l5 6',
+  watch: 'M9 2h6l1 4H8l1-4ZM9 22h6l1-4H8l1 4ZM12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM12 9v3l2 1',
+  eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z',
+  baby: 'M12 3a8 8 0 0 1 8 8v3a8 8 0 0 1-16 0v-3a8 8 0 0 1 8-8ZM9 12h.01M15 12h.01M9.5 16q2.5 2 5 0M9 4c0 3 4 4 5 0',
+  languages: 'M3 5h13M9 3v3M4 9h10M6 7c1 5 4 8 9 9M14 7c0 4-3 7-7 9M15 21l4-10 4 10M16.5 17h5',
+  apple: 'M12 7C5 3 2 8 4 15c1 5 5 7 8 6 3 1 7-1 8-6 2-7-1-12-8-8ZM12 7c0-3 1-5 4-5M12 7c2-4 5-4 7-3',
+  carrot: 'M14 6c4-3 8-2 8 3 0 5-9 11-17 12 1-8 6-16 9-15ZM16 6l1-4M18 5l4-2M7 15l2 2',
+  cake: 'M4 11h16v10H4zM4 15c3 3 5-2 8 0s5 3 8 0M12 3v5M10 8h4',
+  building: 'M4 22V3h16v19M2 22h20M8 7h2M14 7h2M8 12h2M14 12h2M9 22v-6h6v6',
+  mountain: 'M2 20 9 6l5 8 3-5 5 11H2ZM7 10l2 2 2-2',
+  rabbit: 'M8 11C5 7 6 2 8 2c2 0 3 5 4 8 1-3 2-8 4-8s3 5 0 9c4 2 5 6 3 9H5c-3-4-1-8 3-9ZM9 15h.01M15 15h.01M11 18h2',
+  bird: 'M22 12c-4 0-6-3-9-3-3 0-5 2-5 5s2 5 6 5c2 0 4-1 6-3M13 9l-3-5-2 4M9 14H4l-2-2M13 19l-2 3M18 19l-1 3',
+  fish: 'M2 12s5-7 11-7c4 0 8 3 9 7-1 4-5 7-9 7-6 0-11-7-11-7ZM2 12l5-4v8L2 12ZM17 11h.01',
+  soccer: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 7l4 3-1 5H9l-1-5 4-3ZM8 10 3 9M16 10l5-1M9 15l-2 5M15 15l2 5',
+  thermometer: 'M10 14V5a3 3 0 0 1 6 0v9a5 5 0 1 1-6 0ZM13 8v9M13 19h.01',
+  salad: 'M4 13h16c0 5-3 8-8 8s-8-3-8-8ZM5 13c-3-4 1-8 5-6 2-5 6-5 8 0 3-1 5 2 3 6M12 13V6',
+  cpu: 'M5 5h14v14H5zM9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3',
+  atom: 'M21 12c0 3-4 5-9 5s-9-2-9-5 4-5 9-5 9 2 9 5ZM17 4c3 1 3 6 1 11s-6 8-9 7-3-6-1-11S14 3 17 4ZM7 4c-3 1-3 6-1 11s6 8 9 7 3-6 1-11S10 3 7 4ZM12 12h.01',
 };
 
 const stageMap = { orientation: 'compass', foundation: 'levelZero', social: 'socialDuo' };

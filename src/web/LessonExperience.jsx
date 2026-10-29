@@ -14,6 +14,7 @@ import {
   stepPractice,
   togglePracticePhrase,
 } from './phrasePractice'
+import Chapter01Illustrated from './Chapter01Illustrated'
 import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
@@ -162,9 +163,26 @@ function Study({ audioProps, focusedId }) {
   const {
     sections: introductionSections,
     byId: introductionById,
+    id: lessonId,
     SourceContent,
     Diagram,
   } = useLesson()
+  const playIllustratedPhrase = (item) => {
+    if (approvedAudio[item.id]) {
+      if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+      audioProps.onPlay(item.id)
+      return
+    }
+    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
+    audioProps.audio.stop()
+    window.speechSynthesis.cancel()
+    const utterance = new window.SpeechSynthesisUtterance(item.en)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.9
+    const voice = window.speechSynthesis.getVoices().find((candidate) => candidate.lang.toLowerCase() === 'en-us')
+    if (voice) utterance.voice = voice
+    window.speechSynthesis.speak(utterance)
+  }
   return (
     <div className="ip-reading">
       {introductionSections.map((section, index) => (
@@ -274,6 +292,17 @@ function Study({ audioProps, focusedId }) {
                   })}
                 </div>
               )
+            if (lessonId === '01' && block.type === 'phrases') {
+              return (
+                <Chapter01Illustrated
+                  key={blockIndex}
+                  block={block}
+                  byId={introductionById}
+                  focusedId={focusedId}
+                  onPlay={playIllustratedPhrase}
+                />
+              )
+            }
             return (
               <div className="ip-phrase-grid" key={blockIndex}>
                 {block.phrases.map((id) => (

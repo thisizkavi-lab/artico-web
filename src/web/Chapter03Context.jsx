@@ -8,51 +8,51 @@ import './chapter03-context.css'
 // to explain why each expression is being used.
 const opening = [
   {
-    word: 'Well', mark: 'Well,',
+    word: 'Well', mark: 'Well',
     a: 'Did you enjoy the movie?',
     b: 'Well, I liked the ending, but the beginning was slow.',
-    en: 'The answer is mixed, not a simple yes or no. Well introduces a qualified opinion.',
-    ja: '「はい・いいえ」だけでは答えられません。Well は、よかった点と気になる点の両方を伝える答えを始めます。',
+    en: 'Lee liked the ending but not the beginning. Well helps introduce that mixed answer.',
+    ja: 'よかった点と気になる点の両方を答える前に、Well を使っています。',
     purposeEn: 'A qualified answer', purposeJa: '考えながら答える',
   },
   {
-    word: 'So', mark: 'So,',
+    word: 'So', mark: 'So',
     a: "We've looked at all the options.",
     b: 'So, what should we do next?',
-    en: 'The discussion has reached a point where a decision is needed. So moves it forward.',
-    ja: '選択肢を話し合ったあと、次に何をするかを考える場面です。So は次の段階へ話を進めます。',
+    en: 'They have discussed the options. So moves the conversation to the next step.',
+    ja: '選択肢を話し合った後、So で次の行動へ進みます。',
     purposeEn: 'Move to the next step', purposeJa: '次の段階へ進む',
   },
   {
-    word: 'Okay', mark: 'Okay,',
+    word: 'Okay', mark: 'Okay',
     a: 'Could you send the message now?',
     b: "Okay, I'll send the message.",
-    en: 'Okay acknowledges the request and leads into an action. It does not always mean enthusiastic agreement.',
-    ja: '頼まれたことを受け止め、行動に移ります。Okay は、必ずしも積極的な賛成を意味しません。',
+    en: 'Lee acknowledges the request and says what they will do next.',
+    ja: '頼まれたことを受け止め、次にすることを伝えています。',
     purposeEn: 'Acknowledge and act', purposeJa: '受け止めて行動する',
   },
   {
-    word: 'I mean', mark: 'I mean,',
+    word: 'I mean', mark: 'I mean',
     a: 'Was it expensive?',
     b: 'It was expensive. I mean, more than I expected.',
-    en: 'The second part makes the first statement more precise. I mean adjusts what the speaker just said.',
-    ja: '「高かった」という言い方を「予想より高かった」と具体的にしています。I mean は、自分の言葉を言い直す合図です。',
+    en: 'Lee explains what expensive means here: more than expected.',
+    ja: '「高かった」を「予想より高かった」と具体的に言い直しています。',
     purposeEn: 'Clarify a thought', purposeJa: '言い方を明確にする',
   },
   {
-    word: 'Actually', mark: 'Actually,',
+    word: 'Actually', mark: 'Actually',
     a: 'The meeting is on Friday, right?',
     b: 'Actually, the meeting is on Thursday.',
-    en: 'The other person has the wrong day. Actually introduces the correction; tone still matters.',
-    ja: '相手が曜日を間違えています。Actually で訂正を始めますが、言い方や声の調子にも気を配ります。',
+    en: 'The other person has the wrong day. Actually introduces the correction.',
+    ja: '相手の曜日の間違いを Actually で訂正しています。',
     purposeEn: 'Correct information', purposeJa: '情報を訂正する',
   },
   {
-    word: 'I guess', mark: 'I guess.',
+    word: 'I guess', mark: 'I guess',
     a: 'How was the movie?',
     b: 'The movie was okay, I guess.',
-    en: 'The speaker is not giving a strong positive judgment. I guess makes the evaluation less certain.',
-    ja: 'はっきり「よかった」と言うほどの評価ではありません。I guess で判断の確かさや強さを弱めます。',
+    en: 'Lee is unsure how strongly they liked the movie.',
+    ja: '映画について、強く言い切らずに感想を伝えています。',
     purposeEn: 'Make a judgment less certain', purposeJa: '断定を弱める',
   },
 ]
@@ -61,35 +61,35 @@ const adjusting = [
   {
     word: 'kind of', mark: 'kind of',
     a: 'Did you like it?', b: 'I kind of liked it.',
-    en: 'The speaker liked it to some degree, but is avoiding a strong claim.',
+    en: 'The opinion is positive, but not strongly positive.',
     ja: '「すごく好き」とまでは言わず、評価を少し曖昧にしています。',
     purposeEn: 'Soften an evaluation', purposeJa: '評価をやわらげる',
   },
   {
     word: 'to be honest', mark: 'to be honest',
     a: 'Are you coming tonight?', b: "I'm too tired to go, to be honest.",
-    en: 'The speaker signals a candid answer. The expression does not automatically make a refusal gentle.',
+    en: 'The speaker gives a direct, honest reason for not going.',
     ja: '率直な気持ちを伝える合図です。ただし、この表現だけで断り方が優しくなるわけではありません。',
     purposeEn: 'Signal a candid answer', purposeJa: '率直な気持ちを伝える',
   },
   {
-    word: 'like', mark: 'like,',
+    word: 'like', mark: 'like',
     a: 'How long did it take?', b: 'It took, like, twenty minutes.',
-    en: 'In this informal use, like signals an approximate number, not an exact measurement.',
+    en: 'Twenty minutes is an approximate amount, not an exact one.',
     ja: 'この like は、数字が正確ではなく「だいたい」という意味合いを出します。くだけた話し方です。',
     purposeEn: 'Give an approximation', purposeJa: 'おおよその数字を言う',
   },
   {
-    word: 'was like', mark: 'was like,',
+    word: 'was like', mark: 'was like',
     a: 'What did you think when you arrived?', b: 'I was like, “Are we at the right place?”',
-    en: 'The speaker recreates a reaction or thought. It need not be an exact quotation.',
+    en: 'The speaker retells their reaction, not necessarily their exact words.',
     ja: 'そのときの考えや反応を再現しています。一字一句そのまま言った言葉とは限りません。',
     purposeEn: 'Retell a reaction', purposeJa: 'そのときの反応を再現する',
   },
   {
-    word: 'you know', mark: 'you know?',
+    word: 'you know', mark: 'you know',
     a: 'Sounds like a difficult day.', b: 'It was one of those days, you know?',
-    en: 'The speaker invites shared understanding, but the listener may still need an explanation.',
+    en: 'The speaker invites the listener to relate to that feeling.',
     ja: '「こういう日ってあるよね」と共感を求めています。ただし、相手が同じ経験を知っているとは限りません。',
     purposeEn: 'Invite shared understanding', purposeJa: '相手の共感を求める',
   },
@@ -146,54 +146,76 @@ function Highlight({ text, match }) {
   return <>{text.slice(0,index)}<mark className="ar-c03-mark">{text.slice(index,index + match.length)}</mark>{text.slice(index + match.length)}</>
 }
 
-function Speak({ lines, audioProps }) {
+const portrait = (speaker) => `${import.meta.env.BASE_URL}assets/course/portrait-${speaker === 'A' ? '274641' : '284805'}.svg`
+
+function Speak({ lines, audioProps, kind = 'exchange' }) {
   const { language } = useLanguage()
   function play() {
     if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
     audioProps?.audio?.stop?.()
     window.speechSynthesis.cancel()
-    const voices = window.speechSynthesis.getVoices()
-    const voice = voices.find(v => v.lang.toLowerCase() === 'en-us') || voices.find(v => v.lang.toLowerCase().startsWith('en'))
-    lines.forEach(text => {
-      const utterance = new window.SpeechSynthesisUtterance(text)
+    const voice = window.speechSynthesis.getVoices().find(v => v.lang.toLowerCase() === 'en-us')
+      || window.speechSynthesis.getVoices().find(v => v.lang.toLowerCase().startsWith('en'))
+    for (const line of lines) {
+      const utterance = new window.SpeechSynthesisUtterance(line)
       utterance.lang = 'en-US'
-      utterance.rate = 0.89
+      utterance.rate = kind === 'word' ? 0.82 : 0.89
       if (voice) utterance.voice = voice
       window.speechSynthesis.speak(utterance)
-    })
+    }
   }
-  useEffect(() => () => { if (typeof window !== 'undefined') window.speechSynthesis?.cancel() }, [])
-  return <button type="button" className="ar-c03-listen" onClick={play} aria-label={language === 'ja' ? '会話を再生する' : 'Listen to the exchange'}>
-    <Glyph name="play" size={14}/>{language === 'ja' ? '会話を聞く' : 'Listen'}
+  return <button type="button" className={kind === 'word' ? 'ar-c03-sound' : 'ar-c03-listen'}
+    onClick={play}
+    title={kind === 'word' ? (language === 'ja' ? '表現だけを聞く' : 'Hear the expression') : (language === 'ja' ? '会話を聞く' : 'Play the exchange')}
+    aria-label={kind === 'word'
+      ? (language === 'ja' ? `${lines.join(' ')} の発音を聞く` : `Hear ${lines.join(' ')}`)
+      : (language === 'ja' ? '会話を再生する' : 'Play the exchange')}>
+    <Glyph name={kind === 'word' ? 'speaker' : 'play'} size={kind === 'word' ? 18 : 17}/>
   </button>
 }
 
-function ContextCard({ item, index, audioProps, language }) {
+function ChatTurn({ speaker, text, mark }) {
+  return <div className={`ar-c03-chat-turn ar-c03-chat-${speaker === 'A' ? 'incoming' : 'outgoing'}`}>
+    <img className="ar-c03-avatar" src={portrait(speaker)} width="35" height="35" alt="" loading="lazy"/>
+    <div className="ar-c03-chat-bubble">
+      <span className="ar-c03-chat-speaker">{speaker}</span>
+      <p lang="en">{mark ? <Highlight text={text} match={mark}/> : text}</p>
+    </div>
+  </div>
+}
+
+function ContextCard({ item, audioProps, language }) {
+  const mark = item.mark || item.word
   return <article className="ar-c03-card">
     <div className="ar-c03-card-top">
-      <div><span className="ar-c03-number">{String(index + 1).padStart(2,'0')}</span><h3 lang="en">{item.word}</h3></div>
-      <span className="ar-c03-purpose">{language === 'ja' ? item.purposeJa : item.purposeEn}</span>
+      <div className="ar-c03-title-sound">
+        <h3 lang="en">{item.word}</h3>
+        <Speak lines={[item.word]} audioProps={audioProps} kind="word"/>
+      </div>
+      <Speak lines={[item.a, item.b]} audioProps={audioProps}/>
     </div>
     <div className="ar-c03-exchange">
-      <div className="ar-c03-line"><span className="ar-c03-speaker">A</span><p lang="en">{item.a}</p></div>
-      <div className="ar-c03-line ar-c03-line-answer"><span className="ar-c03-speaker">B</span><p lang="en"><Highlight text={item.b} match={item.mark}/></p></div>
+      <ChatTurn speaker="A" text={item.a}/>
+      <ChatTurn speaker="B" text={item.b} mark={mark}/>
     </div>
-    <div className="ar-c03-card-bottom">
-      <p><strong>{language === 'ja' ? 'なぜこの表現？' : 'Why this expression?'}</strong>{language === 'ja' ? item.ja : item.en}</p>
-      <Speak lines={[item.a,item.b]} audioProps={audioProps}/>
+    <div className="ar-c03-idea">
+      <strong>{language === 'ja' ? 'なぜこの表現？' : 'Why this expression?'}</strong>
+      <p>{language === 'ja' ? item.ja : item.en}</p>
     </div>
   </article>
 }
 
-function Dialogue({ rows, audioProps, language, label }) {
+function Dialogue({ rows, audioProps, label }) {
   return <div className="ar-c03-dialogue">
-    <div className="ar-c03-dialogue-header"><h3>{label}</h3><Speak lines={rows.map(row => row[1])} audioProps={audioProps}/></div>
-    <div className="ar-c03-timeline">{rows.map(([who,line,focus], i) =>
-      <div className="ar-c03-turn" key={i}>
-        <span className="ar-c03-speaker">{who}</span>
-        <p lang="en"><Highlight text={line} match={focus || '\u0000'}/></p>
-      </div>
-    )}</div>
+    <div className="ar-c03-dialogue-header">
+      <h3>{label}</h3>
+      <Speak lines={rows.map(row => row[1])} audioProps={audioProps}/>
+    </div>
+    <div className="ar-c03-story">
+      {rows.map(([who,line,focus], i) =>
+        <ChatTurn key={i} speaker={who === 'Lee' ? 'B' : 'A'} text={line} mark={focus || undefined}/>
+      )}
+    </div>
   </div>
 }
 

@@ -86,10 +86,19 @@ export function TongueTwisterPractice({ initialId }) {
 
   return (
     <section className="rf-practice tt-practice tt-practice-gallery">
-      <div className="tt-practice-topline">
-        <span>{ja ? 'レベル' : 'Level'} {item.level} · {index + 1} / {twisterCards.length}</span>
-        <span>{ja ? '早口言葉' : 'Tongue Twisters'}</span>
-      </div>
+      <nav className="tt-practice-topline" aria-label={ja ? '早口言葉の切り替え' : 'Browse tongue twisters'}>
+        <button type="button" className="tt-top-previous" disabled={index === 0}
+          onClick={() => changeTwister(-1)}>
+          <span aria-hidden="true">←</span> <span>{ja ? '前へ' : 'Previous'}</span>
+        </button>
+        <span className="tt-collection-count" aria-label={ja ? `${twisterCards.length}個中${index + 1}個目` : `${index + 1} of ${twisterCards.length}`}>
+          {index + 1} <span aria-hidden="true">/</span> {twisterCards.length}
+        </span>
+        <button type="button" className="tt-top-next" disabled={index === twisterCards.length - 1}
+          onClick={() => changeTwister(1)}>
+          <span>{ja ? '次へ' : 'Next'}</span> <span aria-hidden="true">→</span>
+        </button>
+      </nav>
 
       <div className="tt-practice-center" key={item.id}>
         <h2 className={`tt-practice-name${twisterHeading(item.phrase).length > 65 ? ' tt-title-long' : ''}`} lang="en">
@@ -102,6 +111,19 @@ export function TongueTwisterPractice({ initialId }) {
           alt={ja ? item.meaningJa : `Illustration of ${item.title}`}
           loading="eager"
         />
+        <div className="tt-chunk-steps" role="group" aria-label={ja ? '練習の進み具合' : 'Practice steps'}>
+          {item.buildSteps.map((_, step) => (
+            <button
+              type="button"
+              key={step}
+              className={step <= chunkIndex ? 'is-complete' : ''}
+              aria-current={step === chunkIndex ? 'step' : undefined}
+              aria-label={ja ? `部分${step + 1} / ${item.buildSteps.length}` : `Part ${step + 1} of ${item.buildSteps.length}`}
+              title={ja ? `部分${step + 1}` : `Part ${step + 1}`}
+              onClick={() => setChunkIndex(step)}
+            />
+          ))}
+        </div>
         <div className="tt-chunk-current" aria-live="polite">
           <span>{ja ? '練習する部分' : 'Practice this part'} · {chunkIndex + 1} / {item.buildSteps.length}</span>
           <p className={chunk.length > 160 ? 'tt-chunk-long' : undefined} lang="en">{chunk}</p>
@@ -122,17 +144,14 @@ export function TongueTwisterPractice({ initialId }) {
         />
       </div>
 
-      <nav className="tt-twister-switcher" aria-label={ja ? '早口言葉を切り替える' : 'Browse tongue twisters'}>
-        <button type="button" className="tt-switcher-prev" disabled={index === 0}
-          onClick={() => changeTwister(-1)}>
-          <span aria-hidden="true">←</span> {ja ? '前の早口言葉' : 'Previous tongue twister'}
-        </button>
-        <button type="button" className="tt-switcher-next" disabled={index === twisterCards.length - 1}
-          onClick={() => changeTwister(1)}>
-          {ja ? '次の早口言葉' : 'Next tongue twister'} <span aria-hidden="true">→</span>
-        </button>
-      </nav>
-      <p className="tt-practice-soundnote">{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
+      <aside className="tt-practice-idea" aria-label={ja ? '発音のヒント' : 'Pronunciation tip'}>
+        <span className="tt-idea-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 18h6M10 21h4M9 14c-1.8-1.2-3-3.1-3-5a6 6 0 0 1 12 0c0 1.9-1.2 3.8-3 5-.7.5-1 1.3-1 2h-4c0-.7-.3-1.5-1-2Z" />
+          </svg>
+        </span>
+        <p>{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
+      </aside>
     </section>
   )
 }

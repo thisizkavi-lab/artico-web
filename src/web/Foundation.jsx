@@ -70,7 +70,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
               ))}
             </nav>
           </details>
-        ) : (
+        ) : route.id === 'tongue-intro' && practice ? null : (
           <span className="ip-mode-detail">{t(navigation.stage.title)}</span>
         )}
       </div>

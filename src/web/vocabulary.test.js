@@ -164,3 +164,25 @@ test('Grouped source vocabulary covers every remaining lesson with the original 
   assert.match(view,/aria-pressed=\{mode === 'practice'\}/)
   assert.match(style,/@media\(max-width:620px\)/)
 })
+
+
+test('Lesson 03 groups weekdays and weekend with their written abbreviations', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  assert.deepEqual(lesson.groups[1].items.map(item => item[0]), [
+    'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+    'Saturday', 'Sunday', 'weekday', 'weekend',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  for (const [day, short] of [
+    ['Monday', 'Mon'], ['Tuesday', 'Tue'], ['Wednesday', 'Wed'],
+    ['Thursday', 'Thu'], ['Friday', 'Fri'], ['Saturday', 'Sat'], ['Sunday', 'Sun'],
+  ]) assert.ok(view.includes(`name: '${day}', short: '${short}'`))
+  assert.match(view, /topic\.sourceLesson === 3 && group\.index === 1/)
+  assert.match(view, /isDaysChart && mode === 'study'/)
+  assert.match(view, /WeekDaysChart japanese=\{japanese\}/)
+  assert.match(view, /vlt-week-day-short/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-week-section\.is-weekend/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})

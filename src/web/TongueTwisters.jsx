@@ -71,8 +71,7 @@ export function TongueTwisterStudy() {
         </div>
       </section>
       <section className="tt-library" id="tt-collection">
-        <h2>{ja ? '早口言葉を聞いてみよう' : 'Explore the tongue twisters'}</h2>
-        <p>{ja ? '気になるものから聞いてみましょう。' : 'Pick one and listen.'}</p>
+        <h2>{ja ? '早口言葉' : 'Tongue Twisters'}</h2>
         {twisterLevels.map(level => (
           <section className="tt-level" key={level.number}>
             <header className="tt-level-heading">

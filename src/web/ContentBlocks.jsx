@@ -30,7 +30,7 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
     content = (
       <>
         <p className="ip-kicker">{block.header.map(plain).join(' · ')}</p>
-        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} title={block.header.map(plain).join(' · ')} />
+        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} focusedId={focusedId} title={block.header.map(plain).join(' · ')} />
         <details className="ar-reference-source-table">
           <summary>{language === 'ja' ? '元の表を表示' : 'View the full reference table'}</summary>
           <div className="rc-table" role="region" aria-label={block.header.map(plain).join(' / ')} tabIndex={0}>
@@ -140,7 +140,7 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
     <div className="rc-source" data-source-block={block.id}>
       {content}
       {examples && !phraseTable && block.phraseIds?.length > 0 && (
-        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} />
+        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} focusedId={focusedId} />
       )}
     </div>
   )

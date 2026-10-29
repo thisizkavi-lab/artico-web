@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:serious">
+  <defs>
+    <!-- Serious: dignified posture, level horizontal gaze, straight mouth, formal blazer and tie, composed -->
+  </defs>
+
+  <!-- Cool neutral background wash -->
+  <rect width="304" height="192" fill="#F8FAFC" rx="16" />
+
+  <!-- Torso: Crisp structured navy suit jacket / blazer -->
+  <path d="M 96 142 C 96 124 116 116 152 116 C 188 116 208 124 208 142 L 216 186 L 88 186 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- White dress shirt collar -->
+  <polygon points="152,146 138,116 166,116" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Crisp collar flaps -->
+  <polygon points="138,116 146,128 152,120" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="166,116 158,128 152,120" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Classic red necktie -->
+  <polygon points="149,122 155,122 157,130 152,132 147,130" fill="#DC2626" stroke="#1E2A3B" stroke-width="1.5" />
+  <polygon points="148,132 156,132 158,162 152,168 146,162" fill="#DC2626" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Jacket lapels -->
+  <path d="M 124 130 L 138 156 L 152 176" stroke="#334155" stroke-width="2" fill="none" />
+  <path d="M 180 130 L 166 156 L 152 176" stroke="#334155" stroke-width="2" fill="none" />
+
+  <!-- Neck -->
+  <rect x="144" y="104" width="16" height="16" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="78" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Clean, sharply parted formal hair -->
+  <path d="M 120 74 C 114 54 126 38 144 36 C 160 34 184 42 184 64 C 184 78 180 84 180 84 C 186 64 172 44 150 44 C 128 44 120 62 120 74 Z" fill="#0F172A" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Hair part line -->
+  <path d="M 134 40 L 140 48" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Eyebrows: completely level, straight, firm, unsmiling -->
+  <line x1="130" y1="64" x2="146" y2="64" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round" />
+  <line x1="158" y1="64" x2="174" y2="64" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round" />
+
+  <!-- Direct, steady, focused gaze -->
+  <circle cx="138" cy="76" r="4.5" fill="#1E2A3B" />
+  <circle cx="137" cy="74.5" r="1.4" fill="#FFFFFF" />
+  <circle cx="166" cy="76" r="4.5" fill="#1E2A3B" />
+  <circle cx="165" cy="74.5" r="1.4" fill="#FFFFFF" />
+
+  <!-- Defined straight nose bridge -->
+  <path d="M 152 74 L 150 84 L 154 84" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Perfectly straight, solemn, resolved mouth line (zero smile, completely serious) -->
+  <line x1="140" y1="96" x2="164" y2="96" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+</svg>

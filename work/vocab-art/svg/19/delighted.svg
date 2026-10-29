@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:delighted" data-archetype="expressive-bust">
+  <defs>
+    <path id="delighted-head" d="M 112 56 C 112 32, 192 32, 192 56 L 190 90 C 190 118, 170 132, 152 132 C 134 132, 114 118, 114 90 Z"/>
+    <clipPath id="delighted-head-clip">
+      <use href="#delighted-head"/>
+    </clipPath>
+    <clipPath id="delighted-torso-clip">
+      <path d="M 74 178 C 82 138, 108 124, 152 124 C 196 124, 222 138, 230 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Pink Radiant Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#FDF2F8"/>
+
+  <!-- Clapping Hands in Front of Chest (Delight!) -->
+  <!-- Left Hand Clapping -->
+  <path d="M 104 150 L 142 130 L 148 142 L 112 162 Z"
+        fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <ellipse cx="144" cy="132" rx="10" ry="7" transform="rotate(-30 144 132)" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Right Hand Clapping Against Left -->
+  <path d="M 200 150 L 162 130 L 156 142 L 192 162 Z"
+        fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <ellipse cx="160" cy="132" rx="10" ry="7" transform="rotate(30 160 132)" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Clapping Impact Sparkles -->
+  <path d="M 152 122 L 152 116 M 146 124 L 140 120 M 158 124 L 164 120" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Torso (Mia) -->
+  <g clip-path="url(#delighted-torso-clip)">
+    <rect x="70" y="120" width="164" height="64" fill="#F3ECE1"/>
+    <path d="M 140 126 L 152 142 L 164 126 Z" fill="#CE3D4E"/>
+    <path d="M 70 178 C 82 144, 100 130, 120 126 L 120 178 Z" fill="#E2DACD"/>
+  </g>
+  <path d="M 74 178 C 82 138, 108 124, 152 124 C 196 124, 222 138, 230 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="110" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head Contour & Shading -->
+  <g clip-path="url(#delighted-head-clip)">
+    <rect x="105" y="30" width="94" height="106" fill="#F5BFA3"/>
+    <ellipse cx="128" cy="94" rx="11" ry="7" fill="#F58D82" opacity="0.65"/>
+    <ellipse cx="176" cy="94" rx="11" ry="7" fill="#F58D82" opacity="0.65"/>
+    <path d="M 112 116 C 132 132, 172 132, 192 116 L 192 136 L 112 136 Z" fill="#E5A283" opacity="0.6"/>
+  </g>
+  <use href="#delighted-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Mia) -->
+  <path d="M 104 62 C 100 32, 122 16, 152 16 C 182 16, 204 32, 200 62 C 208 86, 210 120, 200 136 C 192 126, 188 94, 184 70 C 176 42, 128 42, 120 70 C 116 94, 112 126, 104 136 C 94 120, 96 86, 104 62 Z"
+        fill="#6E473B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- High Playful Eyebrows -->
+  <path d="M 124 64 Q 134 56 144 64" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 160 64 Q 170 56 180 64" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Closed Smiling Eyes (^ ^ Shape with Lashes) -->
+  <path d="M 126 78 Q 134 70 142 78" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 162 78 Q 170 70 178 78" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Wide Grinning Mouth with Glistening Teeth -->
+  <path d="M 134 94 C 134 114, 170 114, 170 94 Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 142 110 C 146 104, 158 104, 162 110 Z" fill="#F58D82"/>
+  <path d="M 136 95 Q 152 99 168 95" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Sparkling Golden Stars around Head -->
+  <path d="M 88 56 Q 92 56 92 50 Q 92 56 96 56 Q 92 56 92 62 Q 92 56 88 56 Z" fill="#F59E0B"/>
+  <path d="M 216 56 Q 220 56 220 50 Q 220 56 224 56 Q 220 56 220 62 Q 220 56 216 56 Z" fill="#F59E0B"/>
+</svg>

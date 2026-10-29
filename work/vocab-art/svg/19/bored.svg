@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:bored" data-archetype="expressive-bust">
+  <defs>
+    <path id="bored-head" d="M 102 58 C 102 34, 182 34, 182 58 L 180 94 C 180 120, 160 134, 142 134 C 124 134, 104 120, 104 94 Z"/>
+    <clipPath id="bored-head-clip">
+      <use href="#bored-head"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Table Surface -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <rect x="0" y="152" width="304" height="40" fill="#EAE2D3"/>
+  <line x1="0" y1="152" x2="304" y2="152" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Slumped Torso Leaning to Left (Sam) -->
+  <path d="M 80 178 C 84 140, 108 126, 148 126 C 188 126, 218 140, 226 178 Z"
+        fill="#7FA1CF" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="134" y="114" width="22" height="18" rx="5" fill="#B6784B" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head Contour Leaning into Left Hand -->
+  <g clip-path="url(#bored-head-clip)">
+    <rect x="95" y="32" width="94" height="106" fill="#D89A6C"/>
+    <path d="M 102 118 C 122 134, 162 134, 182 118 L 182 138 L 102 138 Z" fill="#B6784B" opacity="0.6"/>
+  </g>
+  <use href="#bored-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Left Arm Propping Up Head on Table -->
+  <path d="M 82 152 L 104 112" stroke="#1E2A3B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 82 152 L 104 112" stroke="#7FA1CF" stroke-width="13" stroke-linecap="round"/>
+  <!-- Hand Squishing Cheek Upward -->
+  <ellipse cx="106" cy="110" rx="12" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M 100 104 C 104 98, 114 98, 116 104" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Right Arm Resting Limp on Table -->
+  <path d="M 184 136 L 214 152 L 244 152" stroke="#1E2A3B" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 184 136 L 214 152 L 244 152" stroke="#7FA1CF" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="244" cy="152" r="7" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Loose Pencil Resting in Hand Beside Blank Paper -->
+  <rect x="220" y="146" width="36" height="22" rx="2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <line x1="236" y1="140" x2="260" y2="158" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+  <line x1="236" y1="140" x2="260" y2="158" stroke="#F2C14E" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hair (Sam) -->
+  <path d="M 98 64 C 94 36, 116 20, 142 20 C 168 20, 190 36, 186 64 C 182 50, 170 40, 142 40 C 114 40, 102 50, 98 64 Z"
+        fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Droopy Flat Half-Lidded Eyes (Boredom) -->
+  <line x1="118" y1="78" x2="136" y2="78" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 120 78 C 120 85, 134 85, 134 78 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="127" cy="80" r="2.5" fill="#1E2A3B"/>
+
+  <line x1="150" y1="78" x2="168" y2="78" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 152 78 C 152 85, 166 85, 166 78 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="159" cy="80" r="2.5" fill="#1E2A3B"/>
+
+  <!-- Flat Bored Horizontal Mouth -->
+  <line x1="130" y1="102" x2="154" y2="102" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Floating Spiral of Monotony / Boredom -->
+  <path d="M 198 52 C 204 46, 214 48, 214 56 C 214 64, 202 66, 198 58 C 196 52, 204 48, 208 50"
+        fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+</svg>

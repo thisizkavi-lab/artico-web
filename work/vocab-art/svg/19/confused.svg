@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:confused">
+  <defs>
+    <!-- Confused: head tilt, one raised brow, wavy squiggly mouth, scratching head, floating question mark -->
+  </defs>
+
+  <!-- Background -->
+  <rect width="304" height="192" fill="#FEFCE8" rx="16" />
+
+  <!-- Big floating Question mark next to tilted head -->
+  <g transform="translate(216, 54)">
+    <circle cx="20" cy="50" r="4.5" fill="#EAB308" stroke="#1E2A3B" stroke-width="2.2" />
+    <path d="M 6 16 C 6 2 34 2 34 18 C 34 28 20 28 20 38" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round" fill="none" />
+    <path d="M 6 16 C 6 2 34 2 34 18 C 34 28 20 28 20 38" stroke="#EAB308" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Small floating question mark on left -->
+  <g transform="translate(64, 46) scale(0.65)">
+    <circle cx="20" cy="46" r="4" fill="#FACC15" stroke="#1E2A3B" stroke-width="2" />
+    <path d="M 10 16 C 10 6 30 6 30 18 C 30 26 20 26 20 36" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round" fill="none" />
+    <path d="M 10 16 C 10 6 30 6 30 18 C 30 26 20 26 20 36" stroke="#FACC15" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Torso -->
+  <path d="M 106 142 C 106 128 122 122 150 122 C 178 122 196 128 196 142 L 204 186 L 96 186 Z" fill="#3B82F6" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Arm scratching back of head -->
+  <path d="M 112 142 C 96 130 92 86 116 66 C 122 62 130 68 128 74" stroke="#3B82F6" stroke-width="15" stroke-linecap="round" fill="none" />
+  <path d="M 112 142 C 96 130 92 86 116 66 C 122 62 130 68 128 74" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+  <!-- Hand scratching fingers behind hair -->
+  <circle cx="126" cy="68" r="7" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Tilted Neck & Head Group (rotated ~10 deg around center) -->
+  <g transform="rotate(10 150 96)">
+    <!-- Neck -->
+    <rect x="142" y="104" width="16" height="18" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+    <!-- Head Base -->
+    <circle cx="150" cy="78" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+    <!-- Hair (messy tuft) -->
+    <path d="M 120 74 C 114 54 126 38 144 36 C 158 34 176 42 182 58 C 188 72 182 86 182 86 C 188 66 172 44 148 44 C 128 44 120 62 120 74 Z" fill="#475569" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+    <path d="M 134 38 C 130 26 142 22 144 36" stroke="#1E2A3B" stroke-width="2.4" fill="#475569" />
+
+    <!-- Brows: One high arched brow, one low furrowed straight brow -->
+    <!-- Left eyebrow: arched high in perplexity -->
+    <path d="M 132 58 Q 138 48 146 56" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+    <!-- Right eyebrow: furrowed flat and low -->
+    <path d="M 156 68 L 168 64" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+
+    <!-- Eyes: one wide, one squinted -->
+    <!-- Left eye (wide open) -->
+    <circle cx="138" cy="74" r="5" fill="#1E2A3B" />
+    <circle cx="136.5" cy="72.5" r="1.5" fill="#FFFFFF" />
+    <!-- Right eye (narrowed / squinting) -->
+    <path d="M 156 74 Q 163 70 170 74" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+    <!-- Nose: small sideways hook -->
+    <path d="M 148 76 L 145 84 L 150 84" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Mouth: squiggly sideways wavy line -->
+    <path d="M 138 94 Q 144 98 149 92 Q 155 88 162 94" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Sweat drop of confusion -->
+    <circle cx="176" cy="74" r="3" fill="#67E8F9" stroke="#1E2A3B" stroke-width="1.5" />
+  </g>
+</svg>

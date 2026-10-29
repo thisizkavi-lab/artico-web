@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:disgusted">
+  <defs>
+    <!-- Disgusted: leaning back, wrinkled nose, sticking tongue out, smelling stink waves from bad food -->
+  </defs>
+
+  <!-- Background with pale murky greenish-cream wash -->
+  <rect width="304" height="192" fill="#F0FDF4" rx="16" />
+
+  <!-- Smelly bowl with green stink lines on table to the left -->
+  <g transform="translate(42, 118)">
+    <!-- Plate / bowl -->
+    <ellipse cx="28" cy="44" rx="28" ry="8" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2" />
+    <path d="M 6 44 C 6 56 50 56 50 44 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2" />
+    <!-- Disgusting smelly fish skeleton / green blob inside bowl -->
+    <ellipse cx="28" cy="42" rx="18" ry="5" fill="#84CC16" />
+    <!-- Fish skeleton head and bones -->
+    <path d="M 16 42 L 38 42 M 22 38 L 22 46 M 28 37 L 28 47 M 34 38 L 34 46" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+    <polygon points="12,42 16,38 16,46" fill="#1E2A3B" />
+
+    <!-- Stinky green wavy stink lines rising from food -->
+    <path d="M 18 34 Q 14 22 22 14 Q 28 6 22 -4" stroke="#65A30D" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M 30 32 Q 36 20 28 12 Q 22 4 30 -6" stroke="#65A30D" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M 40 34 Q 46 24 38 16 Q 32 8 40 -2" stroke="#65A30D" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.7" />
+  </g>
+
+  <!-- Person leaning strongly away toward the right in disgust -->
+  <!-- Torso (leaning right ~10 deg) -->
+  <g transform="rotate(8 180 140)">
+    <path d="M 144 136 C 144 122 160 116 186 116 C 212 116 226 122 226 136 L 232 186 L 136 186 Z" fill="#F97316" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Protective hand pushing away the stink -->
+    <path d="M 152 142 C 140 134 116 132 104 124" stroke="#F97316" stroke-width="14" stroke-linecap="round" fill="none" />
+    <path d="M 152 142 C 140 134 116 132 104 124" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+    <!-- Hand with palm forward stopping gesture -->
+    <g transform="translate(100, 118)">
+      <rect x="-4" y="-8" width="8" height="14" rx="3" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" transform="rotate(-15)" />
+      <rect x="2" y="-12" width="6" height="14" rx="2.5" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" transform="rotate(-10)" />
+      <rect x="8" y="-10" width="6" height="14" rx="2.5" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" transform="rotate(-5)" />
+    </g>
+
+    <!-- Neck leaning right -->
+    <rect x="178" y="104" width="16" height="18" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+    <!-- Head Base (pulled back in aversion) -->
+    <circle cx="186" cy="78" r="33" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+    <!-- Hair pulled back -->
+    <path d="M 156 74 C 150 54 162 38 180 36 C 196 34 216 44 218 64 C 220 80 216 88 216 88 C 222 68 206 46 184 46 C 164 46 156 64 156 74 Z" fill="#374151" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Disgusted Eyebrows: furrowed, angled down towards scrunched nose -->
+    <path d="M 166 68 L 178 72" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+    <path d="M 206 68 L 194 72" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+
+    <!-- Scrunched eyes squinting shut in revulsion -->
+    <path d="M 168 76 L 176 80 L 168 84" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M 204 76 L 196 80 L 204 84" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Wrinkled nose lines -->
+    <path d="M 182 76 Q 186 74 190 76" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 183 80 Q 186 78 189 80" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <!-- Nose tip -->
+    <circle cx="186" cy="84" r="3" fill="#ECCAB0" stroke="#1E2A3B" stroke-width="1.8" />
+
+    <!-- Disgusted mouth with tongue sticking out `blech` -->
+    <path d="M 174 94 Q 186 90 198 94" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+    <!-- Sticking tongue out -->
+    <path d="M 181 94 C 181 104 191 104 191 94 Z" fill="#F43F5E" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <line x1="186" y1="94" x2="186" y2="100" stroke="#E11D48" stroke-width="1.5" />
+
+    <!-- Slight greenish tint on forehead from nausea/grossness -->
+    <ellipse cx="186" cy="62" rx="16" ry="6" fill="#BEF264" opacity="0.4" />
+  </g>
+</svg>

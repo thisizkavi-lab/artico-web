@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:thrilled" data-archetype="expressive-bust">
+  <defs>
+    <path id="thrilled-head" d="M 112 56 C 112 32, 192 32, 192 56 L 190 90 C 190 118, 170 132, 152 132 C 134 132, 114 118, 114 90 Z"/>
+    <clipPath id="thrilled-head-clip">
+      <use href="#thrilled-head"/>
+    </clipPath>
+    <clipPath id="thrilled-torso-clip">
+      <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Electrifying Radiant Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#FEF3C7"/>
+
+  <!-- Hand Holding Golden Winning Ticket in Foreground (Thrilled!) -->
+  <path d="M 194 142 L 230 114 L 242 126 L 206 156 Z"
+        fill="#7FA1CF" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="236" cy="116" r="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- Gold Ticket with Star (Win!) -->
+  <rect x="226" y="86" width="34" height="20" rx="3" transform="rotate(-15 226 86)" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="244" cy="92" r="4" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.2"/>
+  <!-- Thrill Sparkles around Ticket -->
+  <path d="M 264 78 Q 268 78 268 72 Q 268 78 272 78 Q 268 78 268 84 Q 268 78 264 78 Z" fill="#F59E0B"/>
+
+  <!-- Left Fist Pumped High -->
+  <path d="M 106 142 L 72 108 L 62 118 L 96 156 Z"
+        fill="#7FA1CF" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="68" cy="110" r="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/>
+
+  <!-- Torso (Sam) -->
+  <g clip-path="url(#thrilled-torso-clip)">
+    <rect x="68" y="120" width="168" height="64" fill="#7FA1CF"/>
+    <path d="M 68 178 C 78 144, 98 130, 118 126 L 118 178 Z" fill="#5479AC"/>
+  </g>
+  <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="110" width="24" height="20" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head Contour & Excited Flush -->
+  <g clip-path="url(#thrilled-head-clip)">
+    <rect x="105" y="30" width="94" height="106" fill="#D89A6C"/>
+    <ellipse cx="128" cy="92" rx="10" ry="6" fill="#EF4444" opacity="0.35"/>
+    <ellipse cx="176" cy="92" rx="10" ry="6" fill="#EF4444" opacity="0.35"/>
+    <path d="M 112 116 C 132 132, 172 132, 192 116 L 192 136 L 112 136 Z" fill="#B6784B" opacity="0.6"/>
+  </g>
+  <use href="#thrilled-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Sam) -->
+  <path d="M 108 62 C 104 34, 126 18, 152 18 C 178 18, 200 34, 196 62 C 192 48, 180 38, 152 38 C 124 38, 112 48, 108 62 Z"
+        fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Eyebrows High with Thrill -->
+  <path d="M 124 64 L 144 60" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 180 64 L 160 60" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Glasses -->
+  <circle cx="134" cy="74" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="170" cy="74" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="144" y1="74" x2="160" y2="74" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Huge Wide Thrilled Star Eyes -->
+  <circle cx="134" cy="74" r="4.5" fill="#1E2A3B"/>
+  <polygon points="134,71 135,73 137,74 135,75 134,77 133,75 131,74 133,73" fill="#FFFFFF"/>
+  <circle cx="170" cy="74" r="4.5" fill="#1E2A3B"/>
+  <polygon points="170,71 171,73 173,74 171,75 170,77 169,75 167,74 169,73" fill="#FFFFFF"/>
+
+  <!-- Huge Open Cheering Smile -->
+  <path d="M 132 94 C 132 118, 172 118, 172 94 Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 140 112 C 146 106, 158 106, 164 112 Z" fill="#F58D82"/>
+  <path d="M 134 95 Q 152 99 170 95" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

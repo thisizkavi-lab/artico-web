@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:stressed">
+  <defs>
+    <!-- Stressed: dark warm background, chaotic paper stacks, hands on head, sweat drops -->
+    <clipPath id="stress-desk-clip">
+      <path d="M 30 148 L 274 148 L 274 186 L 30 186 Z" />
+    </clipPath>
+    <clipPath id="stress-body-clip">
+      <path d="M 104 128 C 104 116 120 108 152 108 C 184 108 200 116 200 128 L 210 186 L 94 186 Z" />
+    </clipPath>
+    <clipPath id="stress-head-clip">
+      <circle cx="152" cy="80" r="34" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="304" height="192" fill="#FFF7ED" rx="16" />
+
+  <!-- Chaos/stress rays -->
+  <path d="M 88 42 L 76 32 M 216 42 L 228 32 M 66 78 L 50 76 M 238 78 L 254 76 M 82 114 L 68 122 M 222 114 L 236 122" stroke="#FDBA74" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Flying messy paper sheets in background -->
+  <g opacity="0.85">
+    <rect x="52" y="108" width="34" height="42" rx="2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" transform="rotate(-15 69 129)" />
+    <line x1="59" y1="120" x2="79" y2="120" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" transform="rotate(-15 69 129)" />
+    <line x1="59" y1="128" x2="75" y2="128" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" transform="rotate(-15 69 129)" />
+
+    <rect x="218" y="104" width="36" height="44" rx="2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" transform="rotate(18 236 126)" />
+    <line x1="226" y1="116" x2="246" y2="116" stroke="#EF4444" stroke-width="2" stroke-linecap="round" transform="rotate(18 236 126)" />
+    <line x1="226" y1="124" x2="242" y2="124" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" transform="rotate(18 236 126)" />
+  </g>
+
+  <!-- Desk surface -->
+  <path d="M 24 148 L 280 148 L 280 186 L 24 186 Z" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <rect x="24" y="148" width="256" height="6" fill="#CBD5E1" />
+
+  <!-- Body / Torso -->
+  <g>
+    <path d="M 104 128 C 104 116 120 108 152 108 C 184 108 200 116 200 128 L 210 186 L 94 186 Z" fill="#EA580C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+    <path d="M 152 108 L 152 142 M 140 108 L 152 124 L 164 108" stroke="#1E2A3B" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Neck -->
+  <rect x="144" y="102" width="16" height="14" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="80" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+  <!-- Head shadow -->
+  <g clip-path="url(#stress-head-clip)">
+    <path d="M 118 46 Q 152 64 186 46 L 186 114 L 118 114 Z" fill="#ECCAB0" opacity="0.3" />
+  </g>
+
+  <!-- Spiky messy hair standing up from stress -->
+  <path d="M 120 72 C 114 54 124 42 136 40 C 138 32 148 28 156 34 C 164 26 178 30 180 42 C 190 46 192 60 184 72 C 184 56 172 48 152 48 C 132 48 122 58 120 72 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 148 30 L 152 18 L 158 30 M 164 28 L 174 20 L 172 32" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Stressed Face details -->
+  <!-- Eyebrows (pinched, angled up in center) -->
+  <path d="M 134 68 L 146 72" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+  <path d="M 170 68 L 158 72" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+  <!-- Forehead stress wrinkles -->
+  <path d="M 146 62 Q 152 64 158 62" stroke="#DC2626" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  <path d="M 148 58 Q 152 60 156 58" stroke="#DC2626" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes (strained tightly shut / spirals) -->
+  <path d="M 134 78 L 144 82 L 134 86" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M 170 78 L 160 82 L 170 86" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Grimacing / wavy stress mouth -->
+  <path d="M 138 98 Q 144 94 148 98 Q 152 102 156 96 Q 160 92 166 98" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+  <!-- Hands clutching head / temples -->
+  <!-- Left arm & hand -->
+  <path d="M 102 142 C 92 118 96 90 120 76" stroke="#EA580C" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 102 142 C 92 118 96 90 120 76" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+  <!-- Left hand fingers on forehead/temple -->
+  <path d="M 120 72 C 124 70 128 74 126 80 C 124 84 118 86 116 82 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Right arm & hand -->
+  <path d="M 202 142 C 212 118 208 90 184 76" stroke="#EA580C" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 202 142 C 212 118 208 90 184 76" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+  <!-- Right hand fingers on temple -->
+  <path d="M 184 72 C 180 70 176 74 178 80 C 180 84 186 86 188 82 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Flying sweat drops -->
+  <path d="M 112 56 C 110 52 116 46 118 46 C 120 46 122 52 118 56 C 116 58 114 58 112 56 Z" fill="#38BDF8" stroke="#1E2A3B" stroke-width="1.6" />
+  <path d="M 192 56 C 194 52 188 46 186 46 C 184 46 182 52 186 56 C 188 58 190 58 192 56 Z" fill="#38BDF8" stroke="#1E2A3B" stroke-width="1.6" />
+  <path d="M 198 78 C 204 76 206 82 204 84 C 202 86 198 84 198 78 Z" fill="#38BDF8" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Coffee mug on desk with steam -->
+  <rect x="246" y="136" width="16" height="20" rx="3" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+  <path d="M 262 140 C 266 140 266 150 262 150" stroke="#1E2A3B" stroke-width="2" fill="none" />
+</svg>

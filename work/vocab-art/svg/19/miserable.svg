@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:miserable" data-archetype="expressive-bust">
+  <!-- Cold Rainy Stage Canvas -->
+  <rect width="304" height="192" fill="#E2E8F0"/>
+  <rect x="0" y="156" width="304" height="36" fill="#CBD5E1"/>
+  <line x1="0" y1="156" x2="304" y2="156" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Puddle with Rain Ripples -->
+  <ellipse cx="152" cy="166" rx="64" ry="10" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.8"/>
+  <ellipse cx="152" cy="166" rx="42" ry="6" fill="#CBD5E1"/>
+
+  <!-- Inverted Broken Umbrella Drenched in Rain -->
+  <g transform="translate(152, 54)">
+    <!-- Umbrella Shaft -->
+    <line x1="0" y1="12" x2="0" y2="76" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0 76 C 0 84, -12 84, -12 76" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Inverted / Blown Inside-Out Canopy -->
+    <path d="M -54 8 C -36 28, 36 28, 54 8 C 36 18, -36 18, -54 8 Z"
+          fill="#3B82F6" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Broken Rib Struts Poking Out -->
+    <line x1="-54" y1="8" x2="-62" y2="2" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="54" y1="8" x2="62" y2="2" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="0" y1="22" x2="0" y2="8" stroke="#1E2A3B" stroke-width="2.2"/>
+  </g>
+
+  <!-- Soaked, Shivering Figure (Ren: Drenched Clothes Clinging) -->
+  <g transform="translate(152, 98)">
+    <!-- Slumped Shivering Torso -->
+    <path d="M -36 60 C -30 32, -18 24, 0 24 C 18 24, 30 32, 36 60 Z"
+          fill="#1E3A8A" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Head Drooping Down, Wet Clinging Hair -->
+    <circle cx="0" cy="14" r="18" fill="#FDE4D4" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M -18 10 C -16 -4, 16 -4, 18 10 C 14 6, 8 16, 4 8 C 0 16, -6 6, -12 14 C -16 10, -18 10, -18 10 Z"
+          fill="#1E2A3B"/>
+    <!-- Pale Shivering Face Expression -->
+    <path d="M -8 16 Q -4 14 0 16" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 4 16 Q 8 14 12 16" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/>
+    <!-- Shivering Chattering Teeth Mouth -->
+    <path d="M -6 24 Q -3 21 0 24 Q 3 21 6 24" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Shivering Vibration Waves around Person -->
+  <g stroke="#3B82F6" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M 104 116 Q 102 124 104 132"/>
+    <path d="M 200 116 Q 202 124 200 132"/>
+  </g>
+
+  <!-- Heavy Diagonal Rain Streaks Across Canvas -->
+  <g stroke="#93C5FD" stroke-width="2" stroke-linecap="round">
+    <line x1="48" y1="20" x2="40" y2="44"/>
+    <line x1="72" y1="36" x2="64" y2="60"/>
+    <line x1="96" y1="16" x2="88" y2="40"/>
+    <line x1="216" y1="20" x2="208" y2="44"/>
+    <line x1="244" y1="34" x2="236" y2="58"/>
+    <line x1="268" y1="18" x2="260" y2="42"/>
+  </g>
+</svg>

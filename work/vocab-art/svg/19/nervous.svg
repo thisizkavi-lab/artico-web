@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:nervous" data-archetype="expressive-bust">
+  <defs>
+    <path id="nervous-head" d="M 112 58 C 112 34, 192 34, 192 58 L 190 92 C 190 118, 170 132, 152 132 C 134 132, 114 118, 114 92 Z"/>
+    <clipPath id="nervous-head-clip">
+      <use href="#nervous-head"/>
+    </clipPath>
+    <clipPath id="nervous-torso-clip">
+      <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#F1F5F9"/>
+
+  <!-- Torso (Sam) -->
+  <g clip-path="url(#nervous-torso-clip)">
+    <rect x="68" y="120" width="168" height="64" fill="#7FA1CF"/>
+    <path d="M 68 178 C 78 144, 98 130, 118 126 L 118 178 Z" fill="#5479AC"/>
+  </g>
+  <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="110" width="24" height="20" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Ears -->
+  <circle cx="112" cy="88" r="8.5" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/>
+  <circle cx="192" cy="88" r="8.5" fill="#B6784B" stroke="#1E2A3B" stroke-width="2.3"/>
+
+  <!-- Head Contour & Pale Fidgety Shading -->
+  <g clip-path="url(#nervous-head-clip)">
+    <rect x="105" y="32" width="94" height="106" fill="#D89A6C"/>
+    <path d="M 112 116 C 132 132, 172 132, 192 116 L 192 136 L 112 136 Z" fill="#B6784B" opacity="0.6"/>
+  </g>
+  <use href="#nervous-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Sam) -->
+  <path d="M 108 64 C 104 36, 126 20, 152 20 C 178 20, 200 36, 196 64 C 192 50, 180 40, 152 40 C 124 40, 112 50, 108 64 Z"
+        fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Anxious Tilted Eyebrows (/ \) -->
+  <path d="M 124 68 Q 134 62 144 68" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 180 68 Q 170 62 160 68" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Round Glasses (Sam) -->
+  <circle cx="134" cy="78" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="170" cy="78" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="144" y1="78" x2="160" y2="78" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Shifty Looking Eyes Behind Glasses -->
+  <circle cx="132" cy="78" r="3.5" fill="#1E2A3B"/>
+  <circle cx="168" cy="78" r="3.5" fill="#1E2A3B"/>
+
+  <!-- Wobbly Wavy Anxious Mouth -->
+  <path d="M 136 104 Q 144 108 152 104 Q 160 100 168 104" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Huge Manga Sweat Drop Dripping from Temple -->
+  <path d="M 188 64 C 188 64, 195 73, 195 77 C 195 81, 192 84, 188 84 C 184 84, 181 81, 181 77 C 181 73, 188 64, 188 64 Z"
+        fill="#7CC4FA" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Vintage Stage Microphone on Stand in Foreground (Performance Anxiety Context) -->
+  <g stroke="#1E2A3B" stroke-width="2.2">
+    <line x1="84" y1="184" x2="84" y2="124" stroke-width="3"/>
+    <ellipse cx="84" cy="184" rx="18" ry="6" fill="#94A3B8"/>
+    <rect x="74" y="106" width="20" height="24" rx="10" fill="#CBD5E1" stroke-width="2.4"/>
+    <line x1="74" y1="118" x2="94" y2="118"/>
+    <line x1="84" y1="106" x2="84" y2="130"/>
+  </g>
+</svg>

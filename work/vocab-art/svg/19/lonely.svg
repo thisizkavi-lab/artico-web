@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:lonely" data-archetype="expressive-bust">
+  <!-- Cold Open Park / Dusk Stage Canvas -->
+  <rect width="304" height="192" fill="#EEF4FA"/>
+  <rect x="0" y="146" width="304" height="46" fill="#DDE5EE"/>
+  <line x1="0" y1="146" x2="304" y2="146" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Bare Solitary Tree in Background -->
+  <path d="M 48 146 L 52 64 L 38 46 M 52 74 L 66 52 M 52 92 L 36 82"
+        fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- A Long Empty Wooden Park Bench Spanning Across Canvas -->
+  <!-- Bench Backrest Slats -->
+  <rect x="74" y="108" width="198" height="8" rx="2" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/>
+  <rect x="74" y="120" width="198" height="8" rx="2" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- Bench Seat Planks -->
+  <rect x="68" y="132" width="206" height="8" rx="2" fill="#B57338" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- Cast Iron Bench Legs -->
+  <path d="M 84 140 L 80 168 M 98 140 L 102 168 M 244 140 L 240 168 M 258 140 L 262 168"
+        stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Solitary Figure Sitting Alone on the Far Left Edge of Bench -->
+  <g transform="translate(102, 78)">
+    <!-- Slumped Torso -->
+    <rect x="-14" y="32" width="28" height="34" rx="8" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+    <!-- Knees pulled up, hands clasping knees -->
+    <rect x="-18" y="44" width="14" height="24" rx="6" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/>
+    <!-- Head Drooping Down onto Chest -->
+    <circle cx="0" cy="18" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/>
+    <!-- Dark Hair -->
+    <path d="M -16 16 C -16 4, 16 4, 16 16 C 12 10, 0 8, -16 16 Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2"/>
+    <!-- Sad Downward Eye & Frown -->
+    <path d="M 6 18 Q 10 22 14 18" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 6 26 Q 10 23 14 26" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Empty Vast Bench Space on the Right Emphasizing Loneliness -->
+  <ellipse cx="204" cy="148" rx="24" ry="4" fill="#94A3B8" opacity="0.3"/>
+
+  <!-- Falling Autumn Leaf in Empty Space -->
+  <path d="M 218 84 C 224 80, 230 84, 230 90 C 224 94, 218 90, 218 84 Z" fill="#E28B38" stroke="#1E2A3B" stroke-width="1.6"/>
+  <path d="M 216 78 Q 222 82 224 92" fill="none" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 3"/>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:intrigued" data-archetype="expressive-bust">
+  <defs>
+    <path id="intrigued-head" d="M 112 58 C 112 34, 192 34, 192 58 L 190 92 C 190 120, 170 134, 152 134 C 134 134, 114 120, 114 92 Z"/>
+    <clipPath id="intrigued-head-clip">
+      <use href="#intrigued-head"/>
+    </clipPath>
+    <clipPath id="intrigued-torso-clip">
+      <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cool Sage Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#F0FDF4"/>
+
+  <!-- Torso (Sam) -->
+  <g clip-path="url(#intrigued-torso-clip)">
+    <rect x="68" y="120" width="168" height="64" fill="#7FA1CF"/>
+    <path d="M 68 178 C 78 144, 98 130, 118 126 L 118 178 Z" fill="#5479AC"/>
+  </g>
+  <path d="M 72 178 C 80 138, 108 124, 152 124 C 196 124, 224 138, 232 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="110" width="24" height="20" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head Contour & Shading -->
+  <g clip-path="url(#intrigued-head-clip)">
+    <rect x="105" y="32" width="94" height="106" fill="#D89A6C"/>
+    <path d="M 112 118 C 132 134, 172 134, 192 118 L 192 138 L 112 138 Z" fill="#B6784B" opacity="0.6"/>
+  </g>
+  <use href="#intrigued-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Sam) -->
+  <path d="M 108 64 C 104 36, 126 20, 152 20 C 178 20, 200 36, 196 64 C 192 50, 180 40, 152 40 C 124 40, 112 50, 108 64 Z"
+        fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Asymmetrical Eyebrows (One Arched High in Intrigue) -->
+  <path d="M 124 68 L 144 68" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- Right Eyebrow Arched Upward -->
+  <path d="M 160 62 Q 170 52 180 62" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Glasses -->
+  <circle cx="134" cy="76" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="170" cy="76" r="10" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="144" y1="76" x2="160" y2="76" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Sharp Inquiring Pupils -->
+  <circle cx="136" cy="76" r="3.5" fill="#1E2A3B"/>
+  <circle cx="172" cy="76" r="3.5" fill="#1E2A3B"/>
+
+  <!-- Tilted Inquiring Half-Smile -->
+  <path d="M 138 100 Q 152 102 166 96" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Hand Holding Magnifying Glass Examining Mystery Object -->
+  <path d="M 194 140 L 226 116" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 194 140 L 226 116" stroke="#7FA1CF" stroke-width="5" stroke-linecap="round"/>
+  <!-- Magnifying Glass Rim & Lens -->
+  <circle cx="238" cy="106" r="16" fill="#DCECFB" stroke="#1E2A3B" stroke-width="3"/>
+  <ellipse cx="233" cy="101" rx="8" ry="4" transform="rotate(-30 233 101)" fill="#FFFFFF" opacity="0.65"/>
+  <line x1="228" y1="117" x2="218" y2="128" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Question Mark Motif Float in Air -->
+  <g fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round">
+    <path d="M 76 60 C 76 52, 88 52, 88 60 C 88 66, 82 68, 82 74"/>
+    <circle cx="82" cy="82" r="1.5" fill="#F59E0B"/>
+  </g>
+</svg>

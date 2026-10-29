@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:exhausted">
+  <defs>
+    <!-- Exhausted: slumped face down on desk/pillow, limp dangling arms, flashing empty 0% battery icon overhead -->
+  </defs>
+
+  <!-- Cool slate background -->
+  <rect width="304" height="192" fill="#F1F5F9" rx="16" />
+
+  <!-- Empty 0% battery icon floating overhead -->
+  <g transform="translate(132, 24)">
+    <!-- Battery body -->
+    <rect x="0" y="4" width="38" height="20" rx="3" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+    <!-- Battery positive terminal nub -->
+    <path d="M 38 10 C 40 10 41 12 41 14 C 41 16 40 18 38 18 Z" fill="#1E2A3B" />
+    <!-- Empty critical red sliver -->
+    <rect x="3" y="7" width="5" height="14" rx="1.5" fill="#EF4444" />
+    <!-- Low battery flash rays -->
+    <line x1="-6" y1="14" x2="-2" y2="14" stroke="#EF4444" stroke-width="2" stroke-linecap="round" />
+    <line x1="44" y1="14" x2="48" y2="14" stroke="#EF4444" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Desk surface -->
+  <rect x="24" y="132" width="256" height="54" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.6" />
+  <rect x="24" y="132" width="256" height="6" fill="#CBD5E1" />
+
+  <!-- Soft fluffy pillow resting on desk -->
+  <path d="M 98 126 C 98 116 112 110 152 110 C 192 110 206 116 206 126 C 206 136 192 138 152 138 C 112 138 98 136 98 126 Z" fill="#E0E7FF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Slumped Torso behind pillow -->
+  <path d="M 86 172 C 86 136 108 120 152 120 C 196 120 218 136 218 172 Z" fill="#64748B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Limp dangling arms collapsed on desk -->
+  <!-- Left arm -->
+  <path d="M 98 140 C 82 144 68 150 56 160" stroke="#64748B" stroke-width="13" stroke-linecap="round" fill="none" />
+  <path d="M 98 140 C 82 144 68 150 56 160" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <ellipse cx="54" cy="162" rx="7" ry="5" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Right arm -->
+  <path d="M 206 140 C 222 144 236 150 248 160" stroke="#64748B" stroke-width="13" stroke-linecap="round" fill="none" />
+  <path d="M 206 140 C 222 144 236 150 248 160" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <ellipse cx="250" cy="162" rx="7" ry="5" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head turned sideways, collapsed flat into pillow -->
+  <!-- Head Base (oval resting sideways on pillow) -->
+  <ellipse cx="152" cy="106" rx="34" ry="26" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Messy flattened hair splayed across top -->
+  <path d="M 120 98 C 118 78 134 66 154 66 C 174 66 188 78 184 98 C 182 84 170 74 152 74 C 134 74 122 84 120 98 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Dark exhausted under-eye bags -->
+  <path d="M 134 104 Q 140 110 146 104" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <path d="M 158 104 Q 164 110 170 104" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+  <!-- Completely exhausted straight-line closed eyes `— —` -->
+  <line x1="134" y1="100" x2="146" y2="100" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="158" y1="100" x2="170" y2="100" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+
+  <!-- Limp flat mouth squished against pillow -->
+  <path d="M 146 114 Q 152 112 158 114" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+  <!-- Tiny weary exhale puff -->
+  <g transform="translate(178, 110)">
+    <path d="M 2 4 Q 8 0 14 4 Q 20 8 26 4" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

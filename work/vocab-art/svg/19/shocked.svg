@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:shocked">
+  <defs>
+    <!-- Shocked: hands pressed to cheeks, jaw dropped, lightning bolts, electric disbelief -->
+    <clipPath id="shock-mouth-clip">
+      <ellipse cx="152" cy="108" rx="8" ry="14" />
+    </clipPath>
+  </defs>
+
+  <!-- Background with pale electric yellow tint -->
+  <rect width="304" height="192" fill="#FEF08A" rx="16" />
+
+  <!-- Electric shock bolt lines in backdrop -->
+  <path d="M 64 36 L 54 54 L 66 58 L 56 78" stroke="#EAB308" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M 238 36 L 248 54 L 236 58 L 246 78" stroke="#EAB308" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M 94 28 L 86 40 L 96 44 L 90 56" stroke="#FDE047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M 210 28 L 218 40 L 208 44 L 214 56" stroke="#FDE047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Exclamation marks popping out -->
+  <g transform="translate(68, 92) rotate(-15)">
+    <rect x="0" y="0" width="4.5" height="14" rx="2" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.8" />
+    <circle cx="2.2" cy="19" r="2.2" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.8" />
+  </g>
+  <g transform="translate(232, 92) rotate(15)">
+    <rect x="0" y="0" width="4.5" height="14" rx="2" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.8" />
+    <circle cx="2.2" cy="19" r="2.2" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.8" />
+  </g>
+
+  <!-- Torso (rigid with shock) -->
+  <path d="M 106 148 C 106 132 122 126 152 126 C 182 126 198 132 198 148 L 206 186 L 98 186 Z" fill="#0284C7" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Neck -->
+  <rect x="144" y="116" width="16" height="16" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="84" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Hair standing slightly spiked from jolt -->
+  <path d="M 120 74 C 114 56 122 36 136 32 C 144 26 158 26 168 32 C 182 36 190 56 184 74 C 184 60 174 44 152 44 C 130 44 120 60 120 74 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Hair spikes -->
+  <path d="M 136 32 L 132 18 L 144 28 M 168 32 L 172 18 L 160 28" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Shocked Eyebrows: arched high and pinched up -->
+  <path d="M 132 64 Q 140 56 146 64" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <path d="M 172 64 Q 164 56 158 64" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes: wide circular white discs with tiny shocked pupils -->
+  <circle cx="136" cy="78" r="9" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="136" cy="78" r="2.5" fill="#1E2A3B" />
+  <circle cx="168" cy="78" r="9" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="168" cy="78" r="2.5" fill="#1E2A3B" />
+
+  <!-- Mouth: dropped open into a tall vertical oval of total shock -->
+  <ellipse cx="152" cy="108" rx="8" ry="14" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Tongue at bottom -->
+  <g clip-path="url(#shock-mouth-clip)">
+    <circle cx="152" cy="120" r="7" fill="#F43F5E" />
+  </g>
+
+  <!-- Arms coming up to frame face -->
+  <path d="M 104 152 C 96 128 100 102 118 90" stroke="#0284C7" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 104 152 C 96 128 100 102 118 90" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+
+  <path d="M 200 152 C 208 128 204 102 186 90" stroke="#0284C7" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 200 152 C 208 128 204 102 186 90" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+
+  <!-- Hands pressed firmly against cheeks (classic Home Alone / Scream pose) -->
+  <!-- Left hand clutching cheek -->
+  <g transform="translate(116, 82)">
+    <path d="M 2 12 C -2 8 -2 -2 6 -6 C 10 -4 12 2 10 10 L 14 6 C 18 8 18 14 14 18 L 12 24 C 6 24 2 18 2 12 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+
+  <!-- Right hand clutching cheek -->
+  <g transform="translate(174, 82)">
+    <path d="M 12 12 C 16 8 16 -2 8 -6 C 4 -4 2 2 4 10 L 0 6 C -4 8 -4 14 0 18 L 2 24 C 8 24 12 18 12 12 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  </g>
+</svg>

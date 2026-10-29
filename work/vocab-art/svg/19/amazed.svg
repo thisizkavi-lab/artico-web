@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:amazed">
+  <defs>
+    <!-- Amazed: starlight in eyes, jaw dropped in awe, glowing sparkle stars -->
+    <clipPath id="amazed-head-clip">
+      <circle cx="152" cy="86" r="35" />
+    </clipPath>
+  </defs>
+
+  <!-- Warm celestial night/indigo wash background -->
+  <rect width="304" height="192" fill="#F0FDF4" rx="16" />
+
+  <!-- Floating golden stars of wonder around the character -->
+  <!-- Big 4-point star top right -->
+  <path d="M 226 44 Q 226 54 236 54 Q 226 54 226 64 Q 226 54 216 54 Q 226 54 226 44 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.8" />
+  <!-- Medium 4-point star top left -->
+  <path d="M 76 56 Q 76 64 84 64 Q 76 64 76 72 Q 76 64 68 64 Q 76 64 76 56 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Small star right -->
+  <path d="M 238 96 Q 238 101 243 101 Q 238 101 238 106 Q 238 101 233 101 Q 238 101 238 96 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="1.5" />
+  <!-- Small twinkle left -->
+  <circle cx="86" cy="104" r="2.5" fill="#F59E0B" />
+  <circle cx="218" cy="120" r="2" fill="#F59E0B" />
+
+  <!-- Body / Shoulders leaning forward in fascination -->
+  <path d="M 106 148 C 106 132 122 126 152 126 C 182 126 198 132 198 148 L 206 186 L 98 186 Z" fill="#10B981" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 152 126 L 152 186" stroke="#059669" stroke-width="2" />
+
+  <!-- Neck -->
+  <rect x="144" y="112" width="16" height="18" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="86" r="35" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Voluminous soft wavy hair -->
+  <path d="M 118 84 C 114 60 126 44 144 42 C 158 40 178 44 184 62 C 190 76 186 92 182 96 C 188 80 178 52 152 52 C 128 52 120 74 120 90 Z" fill="#7C2D12" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Cute high curved brows of wonder -->
+  <path d="M 132 70 Q 140 62 148 70" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <path d="M 172 70 Q 164 62 156 70" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+  <!-- Huge sparkling eyes filled with starlight -->
+  <!-- Left Eye -->
+  <ellipse cx="138" cy="84" rx="9" ry="11" fill="#1E2A3B" />
+  <!-- Sparkle stars inside pupil -->
+  <path d="M 138 78 Q 138 82 142 82 Q 138 82 138 86 Q 138 82 134 82 Q 138 82 138 78 Z" fill="#FFFFFF" />
+  <circle cx="141" cy="88" r="1.8" fill="#FFFFFF" />
+
+  <!-- Right Eye -->
+  <ellipse cx="166" cy="84" rx="9" ry="11" fill="#1E2A3B" />
+  <!-- Sparkle stars inside pupil -->
+  <path d="M 166 78 Q 166 82 170 82 Q 166 82 166 86 Q 166 82 162 82 Q 166 82 166 78 Z" fill="#FFFFFF" />
+  <circle cx="169" cy="88" r="1.8" fill="#FFFFFF" />
+
+  <!-- Blushing cheeks of wonder -->
+  <ellipse cx="128" cy="94" rx="6" ry="3.5" fill="#FB7185" opacity="0.6" />
+  <ellipse cx="176" cy="94" rx="6" ry="3.5" fill="#FB7185" opacity="0.6" />
+
+  <!-- Mouth: perfect 'O' of awe -->
+  <ellipse cx="152" cy="104" rx="6.5" ry="9" fill="#881337" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="152" cy="107" rx="4" ry="4" fill="#F43F5E" />
+
+  <!-- Clasped hands held to heart in sheer amazement -->
+  <g transform="translate(136, 142)">
+    <path d="M 16 0 C 22 0 28 8 26 18 C 24 24 16 26 16 26 C 16 26 8 24 6 18 C 4 8 10 0 16 0 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+    <path d="M 16 6 L 16 22" stroke="#ECCAB0" stroke-width="1.8" />
+  </g>
+</svg>

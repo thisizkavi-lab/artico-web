@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:upset" data-archetype="expressive-bust">
+  <defs>
+    <path id="upset-head" d="M 112 58 C 112 34, 192 34, 192 58 L 190 92 C 190 120, 170 134, 152 134 C 134 134, 114 120, 114 92 Z"/>
+    <clipPath id="upset-head-clip">
+      <use href="#upset-head"/>
+    </clipPath>
+    <clipPath id="upset-torso-clip">
+      <path d="M 74 178 C 82 138, 108 124, 152 124 C 196 124, 222 138, 230 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Distressed Warm-Cool Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#FEE2E2"/>
+
+  <!-- Distressed Hand Clutched to Heart / Chest -->
+  <path d="M 194 178 L 164 140 L 154 150 L 184 178 Z"
+        fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="156" cy="142" rx="10" ry="8" transform="rotate(20 156 142)" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Torso (Mia: Coral top) -->
+  <g clip-path="url(#upset-torso-clip)">
+    <rect x="70" y="120" width="164" height="64" fill="#CE3D4E"/>
+    <path d="M 70 178 C 82 144, 100 130, 120 126 L 120 178 Z" fill="#9E2636"/>
+  </g>
+  <path d="M 74 178 C 82 138, 108 124, 152 124 C 196 124, 222 138, 230 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="112" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Ears -->
+  <circle cx="112" cy="88" r="8.5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/>
+  <circle cx="192" cy="88" r="8.5" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.3"/>
+
+  <!-- Head Contour & Distressed Flush -->
+  <g clip-path="url(#upset-head-clip)">
+    <rect x="105" y="32" width="94" height="106" fill="#F5BFA3"/>
+    <ellipse cx="128" cy="94" rx="10" ry="6" fill="#EF4444" opacity="0.35"/>
+    <ellipse cx="176" cy="94" rx="10" ry="6" fill="#EF4444" opacity="0.35"/>
+    <path d="M 112 118 C 132 134, 172 134, 192 118 L 192 138 L 112 138 Z" fill="#E5A283" opacity="0.6"/>
+  </g>
+  <use href="#upset-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Mia) -->
+  <path d="M 104 64 C 100 34, 122 18, 152 18 C 182 18, 204 34, 200 64 C 206 90, 206 126, 194 142 C 188 132, 186 96, 184 72 C 176 44, 128 44, 120 72 C 118 96, 116 132, 110 142 C 98 126, 98 90, 104 64 Z"
+        fill="#6E473B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Deeply Distressed Arched Eyebrows (/ \) -->
+  <path d="M 124 70 Q 134 64 144 72" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 180 70 Q 170 64 160 72" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Watery Glistening Upset Eyes with Teardrops -->
+  <circle cx="134" cy="80" r="7.5" fill="#1E2A3B"/>
+  <circle cx="132" cy="78" r="2.2" fill="#FFFFFF"/>
+  <circle cx="170" cy="80" r="7.5" fill="#1E2A3B"/>
+  <circle cx="168" cy="78" r="2.2" fill="#FFFFFF"/>
+  <!-- Tear rolling down right cheek -->
+  <path d="M 172 90 C 172 90, 170 95, 170 98 C 170 100, 172 102, 174 102 C 176 102, 178 100, 178 98 C 178 95, 172 90, 172 90 Z"
+        fill="#7CC4FA" stroke="#1E2A3B" stroke-width="1.5"/>
+
+  <!-- Trembling Distressed Wobbly Mouth -->
+  <path d="M 136 104 Q 144 108 152 102 Q 160 108 168 104" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Trembling Agitation Marks -->
+  <g stroke="#EF4444" stroke-width="1.8" stroke-linecap="round" fill="none">
+    <path d="M 96 82 Q 94 88 96 94"/>
+    <path d="M 206 82 Q 208 88 206 94"/>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:jealous" data-archetype="expressive-bust">
+  <defs>
+    <path id="jealous-head" d="M 82 58 C 82 34, 162 34, 162 58 L 160 92 C 160 120, 140 134, 122 134 C 104 134, 84 120, 84 92 Z"/>
+    <clipPath id="jealous-head-clip">
+      <use href="#jealous-head"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Wall on Right where Character Peeks Around -->
+  <rect x="188" y="0" width="116" height="192" fill="#E2E8F0"/>
+  <line x1="188" y1="0" x2="188" y2="192" stroke="#1E2A3B" stroke-width="2.6"/>
+
+  <!-- Golden Shiny Trophy Behind Wall (Object of Jealousy) -->
+  <g transform="translate(242, 80)">
+    <ellipse cx="0" cy="38" rx="18" ry="6" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/>
+    <rect x="-8" y="24" width="16" height="14" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M -16 0 L 16 0 C 16 18, -16 18, -16 0 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.2"/>
+    <!-- Trophy Handles -->
+    <path d="M -16 4 C -24 4, -24 14, -16 14" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M 16 4 C 24 4, 24 14, 16 14" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+    <!-- Glint Sparkle -->
+    <path d="M 4 -4 Q 8 -4 8 -10 Q 8 -4 12 -4 Q 8 -4 8 2 Q 8 -4 4 -4 Z" fill="#F59E0B"/>
+  </g>
+
+  <!-- Torso (Ren: Peeking around wall) -->
+  <path d="M 48 178 C 54 138, 78 124, 122 124 C 166 124, 188 138, 194 178 Z"
+        fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="110" y="112" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head with Greenish Tint (Green with Envy!) -->
+  <g clip-path="url(#jealous-head-clip)">
+    <rect x="75" y="32" width="94" height="106" fill="#F5BFA3"/>
+    <!-- Green-with-envy subtle tint on face -->
+    <path d="M 75 32 L 169 32 L 169 86 L 75 86 Z" fill="#86EFAC" opacity="0.3"/>
+    <path d="M 82 118 C 102 134, 142 134, 162 118 L 162 138 L 82 138 Z" fill="#E5A283" opacity="0.6"/>
+  </g>
+  <use href="#jealous-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Ren) -->
+  <path d="M 76 66 C 72 36, 94 20, 122 20 C 150 20, 172 36, 168 66 C 162 48, 146 38, 122 38 C 98 38, 84 48, 76 66 Z"
+        fill="#27364B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Narrow Glaring Side-Eye Eyebrows -->
+  <path d="M 96 68 L 116 72" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 130 72 L 150 68" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- Sharp Side-Eye Pupils Glaring Hard to the Right -->
+  <ellipse cx="106" cy="78" rx="8" ry="6" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/>
+  <circle cx="111" cy="78" r="3.2" fill="#15803D"/>
+  <circle cx="112" cy="78" r="1.5" fill="#1E2A3B"/>
+
+  <ellipse cx="140" cy="78" rx="8" ry="6" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/>
+  <circle cx="145" cy="78" r="3.2" fill="#15803D"/>
+  <circle cx="146" cy="78" r="1.5" fill="#1E2A3B"/>
+
+  <!-- Bitter Tight Bitter Gritted Mouth -->
+  <path d="M 104 104 Q 120 98 138 106" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Hands Gripping the Edge of the Wall -->
+  <g fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2">
+    <ellipse cx="188" cy="94" rx="6" ry="4"/>
+    <ellipse cx="188" cy="102" rx="6" ry="4"/>
+    <ellipse cx="188" cy="110" rx="6" ry="4"/>
+  </g>
+</svg>

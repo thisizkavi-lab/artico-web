@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:furious" data-archetype="expressive-bust">
+  <defs>
+    <path id="furious-head" d="M 112 60 C 112 36, 192 36, 192 60 L 190 94 C 190 120, 170 134, 152 134 C 134 134, 114 120, 114 94 Z"/>
+    <clipPath id="furious-head-clip">
+      <use href="#furious-head"/>
+    </clipPath>
+    <clipPath id="furious-torso-clip">
+      <path d="M 72 178 C 80 136, 106 122, 152 122 C 198 122, 224 136, 232 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Burning Red Backdrop Circle & Jagged Fury Aura -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="78" fill="#FEE2E2"/>
+  <path d="M 70 80 L 82 86 L 74 96 L 86 100 L 76 112 M 234 80 L 222 86 L 230 96 L 218 100 L 228 112"
+        fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Tense Torso (Ren) -->
+  <g clip-path="url(#furious-torso-clip)">
+    <rect x="68" y="118" width="168" height="66" fill="#3D5F91"/>
+    <path d="M 68 178 C 78 144, 98 130, 118 126 L 118 178 Z" fill="#243859"/>
+  </g>
+  <path d="M 72 178 C 80 136, 106 122, 152 122 C 198 122, 224 136, 232 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="110" width="24" height="20" rx="6" fill="#991B1B" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Ears with Horizontal Steam Jetting Out (Manga Fury!) -->
+  <circle cx="112" cy="88" r="8.5" fill="#DC2626" stroke="#1E2A3B" stroke-width="2.3"/>
+  <circle cx="192" cy="88" r="8.5" fill="#DC2626" stroke="#1E2A3B" stroke-width="2.3"/>
+
+  <!-- Steam Cloud Left -->
+  <path d="M 106 88 C 96 82, 86 82, 78 86 C 72 78, 62 82, 60 90 C 54 94, 58 102, 66 100 C 74 104, 86 98, 96 94 C 102 92, 104 90, 106 88 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Steam Cloud Right -->
+  <path d="M 198 88 C 208 82, 218 82, 226 86 C 232 78, 242 82, 244 90 C 250 94, 246 102, 238 100 C 230 104, 218 98, 208 94 C 202 92, 200 90, 198 88 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Deep Crimson Red Head (Furious Peak) -->
+  <g clip-path="url(#furious-head-clip)">
+    <rect x="105" y="34" width="94" height="106" fill="#EF4444"/>
+    <path d="M 105 34 L 199 34 L 199 70 L 105 70 Z" fill="#DC2626"/>
+    <path d="M 112 120 C 132 136, 172 136, 192 120 L 192 140 L 112 140 Z" fill="#991B1B" opacity="0.6"/>
+  </g>
+  <use href="#furious-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Disheveled Spiky Hair (Standing Up in Fury) -->
+  <path d="M 104 66 L 98 44 L 114 46 L 116 26 L 134 38 L 152 18 L 170 38 L 188 26 L 190 46 L 206 44 L 200 66 C 194 54, 180 44, 152 44 C 124 44, 110 54, 104 66 Z"
+        fill="#1E2A3B" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Extreme Eyebrow Slant & Burning White Eyes -->
+  <path d="M 120 74 L 146 82" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M 184 74 L 158 82" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round"/>
+  <circle cx="134" cy="85" r="4.5" fill="#FFFFFF"/>
+  <circle cx="134" cy="85" r="2" fill="#1E2A3B"/>
+  <circle cx="170" cy="85" r="4.5" fill="#FFFFFF"/>
+  <circle cx="170" cy="85" r="2" fill="#1E2A3B"/>
+
+  <!-- Giant Open Roaring Mouth -->
+  <path d="M 130 96 C 130 96, 152 92, 174 96 C 174 122, 130 122, 130 96 Z"
+        fill="#7F1D1D" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Top and Bottom Clenched Teeth -->
+  <rect x="135" y="96" width="34" height="6" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.4"/>
+  <rect x="138" y="112" width="28" height="5" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.4"/>
+
+  <!-- Multiple Crimson Anger Marks -->
+  <g stroke="#FEF2F2" stroke-width="2.2" stroke-linecap="round" fill="none">
+    <path d="M 120 54 Q 124 58 128 54 M 128 54 Q 132 58 128 62 M 128 62 Q 124 58 120 62 M 120 62 Q 116 58 120 54"/>
+    <path d="M 176 54 Q 180 58 184 54 M 184 54 Q 188 58 184 62 M 184 62 Q 180 58 176 62 M 176 62 Q 172 58 176 54"/>
+  </g>
+</svg>

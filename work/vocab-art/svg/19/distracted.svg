@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:distracted">
+  <defs>
+    <!-- Distracted: open notebook neglected on desk, chin on hand, looking dreamily away at flying butterfly/cloud -->
+  </defs>
+
+  <!-- Background -->
+  <rect width="304" height="192" fill="#F8FAFC" rx="16" />
+
+  <!-- Dreamy floating thought cloud in upper right corner -->
+  <g transform="translate(206, 26)">
+    <!-- Thought cloud bubble -->
+    <path d="M 18 28 C 6 28 0 20 6 12 C 4 4 14 -2 24 2 C 30 -4 44 -2 48 6 C 58 4 64 14 58 24 C 64 32 54 40 44 38 C 38 44 24 42 18 28 Z" fill="#E0E7FF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Mini thought bubbles leading to head -->
+    <circle cx="8" cy="46" r="4" fill="#E0E7FF" stroke="#1E2A3B" stroke-width="1.8" />
+    <circle cx="-2" cy="56" r="2.5" fill="#E0E7FF" stroke="#1E2A3B" stroke-width="1.6" />
+
+    <!-- Little fluttering butterfly inside the daydream -->
+    <g transform="translate(24, 16) scale(0.9)">
+      <path d="M 6 4 C 0 -4 -8 0 -4 8 C -8 14 0 16 6 8 Z" fill="#F472B6" stroke="#1E2A3B" stroke-width="1.5" />
+      <path d="M 6 4 C 12 -4 20 0 16 8 C 20 14 12 16 6 8 Z" fill="#F472B6" stroke="#1E2A3B" stroke-width="1.5" />
+      <line x1="6" y1="2" x2="6" y2="12" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Desk surface -->
+  <rect x="24" y="146" width="256" height="40" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.6" />
+  <rect x="24" y="146" width="256" height="6" fill="#CBD5E1" />
+
+  <!-- Open notebook lying unread on desk -->
+  <g transform="translate(48, 140)">
+    <!-- Left page -->
+    <polygon points="10,6 40,3 40,32 10,34" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <!-- Right page -->
+    <polygon points="40,3 70,6 70,34 40,32" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <line x1="40" y1="3" x2="40" y2="32" stroke="#1E2A3B" stroke-width="2" />
+    <!-- Notebook ruling lines -->
+    <line x1="16" y1="12" x2="34" y2="10" stroke="#CBD5E1" stroke-width="1.6" />
+    <line x1="16" y1="18" x2="34" y2="16" stroke="#CBD5E1" stroke-width="1.6" />
+    <line x1="16" y1="24" x2="34" y2="22" stroke="#CBD5E1" stroke-width="1.6" />
+    <!-- Neglected yellow pencil lying flat -->
+    <rect x="80" y="18" width="22" height="4" rx="1" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.5" transform="rotate(15 91 20)" />
+  </g>
+
+  <!-- Torso (turned toward desk, but leaning right) -->
+  <path d="M 112 136 C 112 122 130 116 156 116 C 182 116 198 122 198 136 L 206 186 L 102 186 Z" fill="#6366F1" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Arm propping chin up on desk -->
+  <!-- Forearm on desk -->
+  <path d="M 120 148 C 114 130 134 116 142 98" stroke="#6366F1" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 120 148 C 114 130 134 116 142 98" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+  <!-- Hand cradling cheek/chin -->
+  <path d="M 136 94 C 136 90 144 88 148 94 C 150 98 146 104 140 104 C 136 104 136 98 136 94 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Neck (tilted toward daydream) -->
+  <rect x="150" y="102" width="16" height="18" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" transform="rotate(12 158 111)" />
+
+  <!-- Head Base (gazing up and to the right) -->
+  <g transform="rotate(12 158 78)">
+    <circle cx="158" cy="74" r="32" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+    <!-- Wavy casual hair -->
+    <path d="M 130 70 C 126 50 138 34 158 34 C 176 34 192 46 190 66 C 190 80 186 86 186 86 C 192 68 180 44 160 44 C 140 44 132 60 130 70 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- Soft daydreaming eyebrows (gentle upward drift) -->
+    <path d="M 142 58 Q 148 54 154 57" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M 168 56 Q 174 52 180 55" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Vacant, dreamy wide pupils looking up at daydream -->
+    <ellipse cx="150" cy="68" rx="5" ry="6" fill="#1E2A3B" />
+    <circle cx="152" cy="65" r="2" fill="#FFFFFF" />
+    <ellipse cx="176" cy="66" rx="5" ry="6" fill="#1E2A3B" />
+    <circle cx="178" cy="63" r="2" fill="#FFFFFF" />
+
+    <!-- Absentminded dreamy smile -->
+    <path d="M 154 86 Q 164 92 172 87" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+    <!-- Dreamy cheek blush -->
+    <ellipse cx="144" cy="78" rx="5" ry="3" fill="#FDA4AF" opacity="0.6" />
+    <ellipse cx="182" cy="76" rx="5" ry="3" fill="#FDA4AF" opacity="0.6" />
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:tired" data-archetype="expressive-bust">
+  <defs>
+    <path id="tired-head" d="M 112 60 C 112 36, 192 36, 192 60 L 190 94 C 190 120, 170 134, 152 134 C 134 134, 114 120, 114 94 Z"/>
+    <clipPath id="tired-head-clip">
+      <use href="#tired-head"/>
+    </clipPath>
+    <clipPath id="tired-torso-clip">
+      <path d="M 72 178 C 80 140, 108 126, 152 126 C 196 126, 224 140, 232 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cool Evening Tinted Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#F1F5F9"/>
+
+  <!-- Slumped Torso (Ren) -->
+  <g clip-path="url(#tired-torso-clip)">
+    <rect x="68" y="122" width="168" height="62" fill="#5479AC"/>
+    <path d="M 68 178 C 78 144, 98 130, 118 126 L 118 178 Z" fill="#3D5F91"/>
+  </g>
+  <path d="M 72 178 C 80 140, 108 126, 152 126 C 196 126, 224 140, 232 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="112" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Ears -->
+  <circle cx="112" cy="88" r="8.5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/>
+  <circle cx="192" cy="88" r="8.5" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.3"/>
+
+  <!-- Head Contour & Under-Eye Dark Circles -->
+  <g clip-path="url(#tired-head-clip)">
+    <rect x="105" y="34" width="94" height="106" fill="#F5BFA3"/>
+    <!-- Dark under-eye tired bags -->
+    <path d="M 124 88 Q 134 94 144 88" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 160 88 Q 170 94 180 88" fill="none" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 112 118 C 132 134, 172 134, 192 118 L 192 138 L 112 138 Z" fill="#E5A283" opacity="0.6"/>
+  </g>
+  <use href="#tired-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Tousled Sleepy Hair -->
+  <path d="M 106 66 C 102 36, 124 20, 152 20 C 180 20, 202 36, 198 66 C 192 48, 176 38, 152 38 C 128 38, 114 48, 106 66 Z"
+        fill="#27364B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Squeezed Shut Yawning Eyes (> < Shape) -->
+  <path d="M 125 78 L 134 82 L 125 86" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 179 78 L 170 82 L 179 86" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Wide Yawning Mouth -->
+  <ellipse cx="152" cy="106" rx="14" ry="18" fill="#7F1D1D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M 142 114 C 146 108, 158 108, 162 114 Z" fill="#F58D82"/>
+
+  <!-- Hand Raised Covering Yawn Mid-Action -->
+  <g fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M 152 118 C 158 106, 172 106, 176 116 C 176 126, 164 134, 152 128 Z"/>
+    <ellipse cx="166" cy="120" rx="9" ry="7"/>
+  </g>
+
+  <!-- Gentle Floating Sleep / Snore Puff -->
+  <g fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round">
+    <path d="M 194 62 C 198 56, 206 58, 206 64 C 206 70, 198 72, 194 66"/>
+    <circle cx="186" cy="74" r="2.5" fill="#CBD5E1"/>
+    <circle cx="178" cy="84" r="1.5" fill="#CBD5E1"/>
+  </g>
+</svg>

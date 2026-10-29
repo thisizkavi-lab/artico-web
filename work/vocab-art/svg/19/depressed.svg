@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:depressed" data-archetype="expressive-bust">
+  <defs>
+    <!-- Heavy Gloomy Raincloud -->
+    <path id="depressed-cloud"
+          d="M 112 44 C 106 34, 118 24, 130 26 C 136 16, 154 14, 164 22 C 174 16, 190 20, 192 30 C 204 32, 206 46, 196 52 L 116 52 C 108 52, 106 46, 112 44 Z"/>
+    <clipPath id="depressed-torso-clip">
+      <path d="M 82 178 C 88 132, 114 116, 152 116 C 190 116, 216 132, 222 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cool Slate / Gloomy Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#F1F5F9"/>
+
+  <!-- Heavy Gloomy Cloud Directly Over Head -->
+  <use href="#depressed-cloud" fill="#64748B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Rain Streaks Falling Straight Down on Head -->
+  <g stroke="#94A3B8" stroke-width="2" stroke-linecap="round">
+    <line x1="126" y1="58" x2="124" y2="70"/>
+    <line x1="142" y1="56" x2="140" y2="72"/>
+    <line x1="158" y1="56" x2="156" y2="72"/>
+    <line x1="174" y1="58" x2="172" y2="70"/>
+  </g>
+
+  <!-- Heavily Slumped Shoulders (Ren) -->
+  <g clip-path="url(#depressed-torso-clip)">
+    <rect x="76" y="112" width="152" height="68" fill="#3D5F91"/>
+    <path d="M 76 178 C 86 142, 104 128, 124 124 L 124 178 Z" fill="#243859"/>
+  </g>
+  <path d="M 82 178 C 88 132, 114 116, 152 116 C 190 116, 216 132, 222 178"
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="106" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Drooping Head Looking Down -->
+  <path d="M 114 66 C 114 42, 190 42, 190 66 L 188 98 C 188 124, 168 136, 152 136 C 136 136, 116 124, 116 98 Z"
+        fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Dark Heavy Hair (Ren) -->
+  <path d="M 108 72 C 104 42, 126 28, 152 28 C 178 28, 200 42, 196 72 C 190 54, 176 44, 152 44 C 128 44, 114 54, 108 72 Z"
+        fill="#27364B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Hopeless Eyebrows Drooping at Outer Corners -->
+  <path d="M 126 78 Q 136 74 144 80" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 178 78 Q 168 74 160 80" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Eyes Closed / Cast Down in Gloom -->
+  <path d="M 128 88 Q 136 94 144 88" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 160 88 Q 168 94 176 88" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Downturned Gloomy Mouth -->
+  <path d="M 140 114 Q 152 106 164 114" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Gloom Shadow Band Across Upper Face -->
+  <path d="M 116 66 L 188 66 L 188 80 L 116 80 Z" fill="#64748B" opacity="0.35"/>
+</svg>

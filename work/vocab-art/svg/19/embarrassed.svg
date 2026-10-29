@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:embarrassed">
+  <defs>
+    <!-- Embarrassed: bright red blush cheeks, bashful hands covering mouth, sweat drop, bashful shy eyes -->
+    <clipPath id="blush-clip">
+      <circle cx="152" cy="80" r="34" />
+    </clipPath>
+  </defs>
+
+  <!-- Gentle soft pinkish wash background -->
+  <rect width="304" height="192" fill="#FFF1F2" rx="16" />
+
+  <!-- Torso (shrugging/hunching inward sheepishly) -->
+  <path d="M 104 136 C 104 122 120 114 152 114 C 184 114 200 122 200 136 L 208 186 L 96 186 Z" fill="#8B5CF6" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Neck -->
+  <rect x="144" y="104" width="16" height="16" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="80" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Big bright blushing cheeks & nose zone -->
+  <g clip-path="url(#blush-clip)">
+    <!-- Radiating red embarrassment glow -->
+    <ellipse cx="152" cy="88" rx="28" ry="14" fill="#FDA4AF" opacity="0.8" />
+    <!-- Deep hot pink cheek ovals -->
+    <ellipse cx="132" cy="86" rx="9" ry="6" fill="#FB7185" />
+    <ellipse cx="172" cy="86" rx="9" ry="6" fill="#FB7185" />
+    <!-- Diagonal blush hatch lines -->
+    <line x1="126" y1="84" x2="132" y2="90" stroke="#E11D48" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="131" y1="83" x2="137" y2="89" stroke="#E11D48" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="167" y1="84" x2="173" y2="90" stroke="#E11D48" stroke-width="1.6" stroke-linecap="round" />
+    <line x1="172" y1="83" x2="178" y2="89" stroke="#E11D48" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Cute bob / bangs hairstyle -->
+  <path d="M 120 78 C 114 56 124 40 144 38 C 160 38 184 46 184 68 C 184 84 180 88 180 88 C 186 66 174 46 150 46 C 128 46 120 64 120 78 Z" fill="#4B5563" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 126 54 C 138 48 152 48 162 56 C 170 50 178 52 180 58" fill="#4B5563" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Eyebrows: tilted inward high, apologetic/embarrassed -->
+  <path d="M 132 64 Q 138 60 144 65" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <path d="M 172 64 Q 166 60 160 65" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes: tightly squeezed shut in sheepish cute arcs `><` or `⌒⌒` looking away -->
+  <path d="M 130 74 Q 138 68 144 74" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <path d="M 160 74 Q 166 68 174 74" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Bashful blue sweat droplet on temple -->
+  <path d="M 182 66 C 186 64 188 68 186 72 C 184 74 180 72 182 66 Z" fill="#38BDF8" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Arms brought up with both hands covering mouth and lower cheeks -->
+  <!-- Left arm -->
+  <path d="M 112 142 C 112 120 126 108 140 102" stroke="#8B5CF6" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 112 142 C 112 120 126 108 140 102" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+  <!-- Right arm -->
+  <path d="M 192 142 C 192 120 178 108 164 102" stroke="#8B5CF6" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 192 142 C 192 120 178 108 164 102" stroke="#1E2A3B" stroke-width="2.6" fill="none" />
+
+  <!-- Hands covering mouth -->
+  <!-- Left hand mittens/fingers -->
+  <path d="M 136 94 C 134 90 142 88 146 92 C 148 94 148 102 142 104 C 136 104 136 98 136 94 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Right hand fingers overlapping -->
+  <path d="M 168 94 C 170 90 162 88 158 92 C 156 94 156 102 162 104 C 168 104 168 98 168 94 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Sheepish wavy little mouth seen just between fingers -->
+  <path d="M 148 98 Q 152 102 156 98" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>

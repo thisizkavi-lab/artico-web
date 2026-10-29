@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" width="100%" height="100%" data-vocab-key="19:unenthusiastic">
+  <defs>
+    <!-- Unenthusiastic: slouched posture, heavy drooping eyelids, flat mouth, limp half-hearted mini-wave while confetti falls -->
+  </defs>
+
+  <!-- Muted dull greige background -->
+  <rect width="304" height="192" fill="#F3F4F6" rx="16" />
+
+  <!-- Confetti falling around them (they couldn't care less) -->
+  <g opacity="0.6">
+    <rect x="58" y="42" width="6" height="3" rx="1" fill="#F43F5E" transform="rotate(25 61 43)" />
+    <rect x="74" y="68" width="5" height="3" rx="1" fill="#3B82F6" transform="rotate(-30 76 69)" />
+    <rect x="62" y="98" width="6" height="3" rx="1" fill="#10B981" transform="rotate(15 65 99)" />
+
+    <rect x="236" y="46" width="6" height="3" rx="1" fill="#F59E0B" transform="rotate(-20 239 47)" />
+    <rect x="224" y="74" width="5" height="3" rx="1" fill="#8B5CF6" transform="rotate(40 226 75)" />
+    <rect x="242" y="104" width="6" height="3" rx="1" fill="#EC4899" transform="rotate(-10 245 105)" />
+  </g>
+
+  <!-- Limp crooked party hat slipping off head to one side -->
+  <g transform="translate(170, 36) rotate(22)">
+    <polygon points="0,24 16,0 32,24" fill="#93C5FD" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+    <circle cx="16" cy="0" r="3" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.5" />
+    <line x1="8" y1="14" x2="24" y2="14" stroke="#60A5FA" stroke-width="2" />
+  </g>
+
+  <!-- Torso: heavily slouched, rounded shoulders -->
+  <path d="M 104 146 C 104 130 120 122 152 122 C 184 122 200 130 200 146 L 208 186 L 96 186 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Neck (slumped forward) -->
+  <rect x="144" y="108" width="16" height="18" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Head Base -->
+  <circle cx="152" cy="82" r="34" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Dull floppy hair hanging over forehead -->
+  <path d="M 120 76 C 114 56 126 40 146 38 C 162 36 182 46 182 66 C 182 82 178 88 178 88 C 184 66 172 46 150 46 C 128 46 120 64 120 76 Z" fill="#475569" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <path d="M 134 46 C 138 56 142 62 144 64" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Flat, bored, unenthusiastic eyebrows -->
+  <line x1="130" y1="68" x2="144" y2="70" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+  <line x1="160" y1="70" x2="174" y2="68" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Heavy half-shut drooping eyelids over deadpan pupils -->
+  <!-- Left Eye -->
+  <path d="M 130 78 Q 138 74 146 78" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <path d="M 132 78 A 6 6 0 0 0 144 78 Z" fill="#1E2A3B" />
+  <!-- Right Eye -->
+  <path d="M 158 78 Q 166 74 174 78" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <path d="M 160 78 A 6 6 0 0 0 172 78 Z" fill="#1E2A3B" />
+
+  <!-- Completely flat deadpan unenthusiastic mouth -->
+  <line x1="144" y1="96" x2="160" y2="96" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Limp, half-hearted tiny hand wave (fingers barely lifted) -->
+  <!-- Right arm bent slightly up -->
+  <path d="M 194 146 C 204 136 210 126 214 116" stroke="#94A3B8" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 194 146 C 204 136 210 126 214 116" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <!-- Limp hand waving with 0 energy -->
+  <g transform="translate(214, 114) rotate(-10)">
+    <path d="M 0 0 C 0 -4 4 -6 6 -2 L 10 -4 C 12 -4 13 -1 11 2 L 13 4 C 13 6 11 8 8 7 L 4 10 Z" fill="#FCE7D6" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+    <!-- Single limp wave arc -->
+    <path d="M 16 -2 Q 18 4 16 10" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:relaxed" data-archetype="expressive-bust">
+  <defs>
+    <path id="relaxed-head" d="M 112 58 C 112 34, 192 34, 192 58 L 190 92 C 190 120, 170 134, 152 134 C 134 134, 114 120, 114 92 Z"/>
+    <clipPath id="relaxed-head-clip">
+      <use href="#relaxed-head"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cool Sage Green Stage Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+  <circle cx="152" cy="96" r="76" fill="#DCFCE7"/>
+
+  <!-- Comfy Plump Armchair / Pillow Behind Shoulders -->
+  <path d="M 52 178 C 52 120, 78 98, 152 98 C 226 98, 252 120, 252 178 Z"
+        fill="#84A98C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M 72 178 C 72 134, 94 116, 152 116 C 210 116, 232 134, 232 178"
+        fill="#A3C4A8" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Hands Clasping Behind Head in Ultimate Relaxation -->
+  <ellipse cx="98" cy="74" rx="12" ry="16" transform="rotate(-25 98 74)" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/>
+  <ellipse cx="206" cy="74" rx="12" ry="16" transform="rotate(25 206 74)" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- Relaxed Elbows Splayed Wide -->
+  <path d="M 98 84 L 72 112 L 96 138" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 98 84 L 72 112 L 96 138" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 206 84 L 232 112 L 208 138" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 206 84 L 232 112 L 208 138" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Torso (Ren) -->
+  <path d="M 88 178 C 94 142, 114 126, 152 126 C 190 126, 210 142, 216 178 Z"
+        fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="140" y="112" width="24" height="20" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Head Contour & Serene Blush -->
+  <g clip-path="url(#relaxed-head-clip)">
+    <rect x="105" y="32" width="94" height="106" fill="#F5BFA3"/>
+    <ellipse cx="128" cy="94" rx="10" ry="6" fill="#F58D82" opacity="0.5"/>
+    <ellipse cx="176" cy="94" rx="10" ry="6" fill="#F58D82" opacity="0.5"/>
+    <path d="M 112 118 C 132 134, 172 134, 192 118 L 192 138 L 112 138 Z" fill="#E5A283" opacity="0.6"/>
+  </g>
+  <use href="#relaxed-head" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Hair (Ren) -->
+  <path d="M 106 66 C 102 36, 124 20, 152 20 C 180 20, 202 36, 198 66 C 192 48, 176 38, 152 38 C 128 38, 114 48, 106 66 Z"
+        fill="#27364B" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Soft Serene Eyebrows -->
+  <path d="M 124 68 Q 134 64 144 68" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M 160 68 Q 170 64 180 68" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/>
+
+  <!-- Closed Peaceful Relaxed Eyes (Gentle downward curves) -->
+  <path d="M 126 78 Q 134 84 142 78" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 162 78 Q 170 84 178 78" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Gentle Content Half-Smile -->
+  <path d="M 138 98 Q 152 106 166 98" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Floating Gentle Musical / Breeze Whistle Cue -->
+  <path d="M 226 50 Q 232 46 238 52 Q 244 58 250 54" fill="none" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="254" cy="53" r="2.5" fill="#16A34A"/>
+</svg>

@@ -25,5 +25,6 @@ test('Entire study and practice use one WAV path with no TTS or preview override
   assert.match(ui, /<SoundButton sound=\{item\}/)
   assert.match(ui, /audio\/ipa-one-voice/)
   assert.doesNotMatch(ui, /<IpaVoicePilot|<IpaHamburgPilot|speechSynthesis|commons\.wikimedia/)
-  assert.match(ui, /synthetic word examples|synthetic|合成音声/)
+  assert.doesNotMatch(ui, /synthetic word examples|Piper|LJ Speech|合成音声|source recording|voice model/i)
+  assert.match(ui, /ipaCurriculum/)
 })

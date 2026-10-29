@@ -151,3 +151,41 @@
  .vlt-week-day-short{min-width:52px;padding:5px 9px;font-size:12px}
  .vlt-week-chart-footnote{padding:12px 15px}
 }
+
+
+/* Lesson 03: twelve months and their common written short forms. */
+.vlt-month-chart{overflow:hidden;border:1px solid #d9e4f1;border-radius:15px;background:#fff}
+.vlt-month-chart-header{display:flex;align-items:end;justify-content:space-between;gap:15px;padding:19px 22px;border-bottom:1px solid #dde6f1;background:#fff}
+.vlt-month-chart-overline{display:block;color:#6681a0;font-size:10px;font-weight:800;letter-spacing:.11em}
+.vlt-month-chart-header h4{margin:5px 0 0;color:#203854;font-size:21px;line-height:1.35;font-weight:750}
+.vlt-month-chart-hint{padding-bottom:3px;color:#7288a2;font-size:10px;font-weight:750;letter-spacing:.04em;text-align:right}
+.vlt-month-table{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed;background:#fff}
+.vlt-month-number-column{width:13%}
+.vlt-month-name-column{width:53%}
+.vlt-month-short-column{width:34%}
+.vlt-month-table thead th{padding:12px 14px;background:#315d94;color:#fff;font-size:12px;font-weight:800;line-height:1.5;text-align:left}
+.vlt-month-table thead th:first-child,.vlt-month-table tbody td:first-child{text-align:center}
+.vlt-month-table tbody tr>*{padding:12px 14px;background:#fff4d8;vertical-align:middle}
+.vlt-month-table tbody tr:nth-child(even)>*{background:#fff8e9}
+.vlt-month-number{color:#557194;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums}
+.vlt-month-name{text-align:left}
+.vlt-month-name strong{display:block;color:#243b59;font-size:17px;font-weight:750;line-height:1.35}
+.vlt-month-name small{display:block;margin-top:2px;color:#7d8790;font-size:11px;font-weight:550}
+.vlt-month-abbreviation abbr{display:inline-block;color:#325c8c;font-size:16px;font-weight:800;text-decoration:none}
+.vlt-month-chart-footnote{margin:0;padding:14px 22px;border-top:1px solid #e0e7f0;color:#657992;font-size:11px;line-height:1.7}
+@media(max-width:620px){
+ .vlt-month-chart-header{flex-direction:column;align-items:start;gap:7px;padding:15px}
+ .vlt-month-chart-header h4{font-size:19px}
+ .vlt-month-chart-hint{text-align:left}
+ .vlt-month-table{border-spacing:3px}
+ .vlt-month-number-column{width:15%}
+ .vlt-month-name-column{width:51%}
+ .vlt-month-short-column{width:34%}
+ .vlt-month-table thead th{padding:9px 8px;font-size:11px}
+ .vlt-month-table tbody tr>*{padding:11px 8px}
+ .vlt-month-number{font-size:12px}
+ .vlt-month-name strong{font-size:14px;overflow-wrap:anywhere}
+ .vlt-month-name small{font-size:10px}
+ .vlt-month-abbreviation abbr{font-size:13px}
+ .vlt-month-chart-footnote{padding:12px 15px}
+}

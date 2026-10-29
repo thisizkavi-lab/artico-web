@@ -88,9 +88,9 @@
 .ar-flow-layout{padding:14px 18px;display:flex;flex-direction:column;gap:12px}
 .ar-flow-question-side,.ar-flow-response{display:flex;align-items:flex-start;gap:26px}
 .ar-flow-question-side .ar-flow-group{max-width:540px;flex:1}
-.ar-flow-reply-side{display:grid;grid-template-columns:1fr 220px;align-items:end;gap:24px}
-.ar-flow-response{grid-column:2;grid-row:1;flex-direction:row-reverse;align-items:center;justify-self:end;width:min(650px, 55vw)}
-.ar-flow-response .ar-flow-group{flex:1}
+.ar-flow-reply-side{display:grid;grid-template-columns:minmax(145px, 0.37fr) minmax(0,1fr);align-items:end;gap:24px}
+.ar-flow-response{grid-column:2;grid-row:1;flex-direction:row-reverse;align-items:center;justify-self:end;width:100%}
+.ar-flow-stacked{display:grid;gap:0;flex:1;min-width:0}.ar-flow-stacked .ar-flow-group + .ar-flow-group{margin-top:-2px;border-top-left-radius:0;border-top-right-radius:0}.ar-flow-response .ar-flow-group{flex:1}
 .ar-flow-avatar{display:flex;gap:7px;flex-direction:column;align-items:center;justify-content:center;font-size:12px}
 .ar-flow-avatar .ar-avatar{width:46px;height:46px;flex-basis:46px}
 .ar-flow-arrow{align-self:center;font-size:30px;color:var(--ar-ink);line-height:1.2}

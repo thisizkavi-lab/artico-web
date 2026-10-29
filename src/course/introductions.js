@@ -300,8 +300,7 @@ export const introductionSections = [
     ...self,
     blocks: [
       self.blocks[0],
-      phraseShelf([1], self.title),
-      namedShelf(self.blocks[3], self.blocks[4]),
+      phraseShelf([1, 4], self.blocks[3].text),
       namedShelf(self.blocks[5], self.blocks[6]),
       work.blocks[0],
       phraseShelf([11], work.title),
@@ -314,7 +313,7 @@ export const introductionSections = [
     title: 'Respond to an introduction',
     short: 'Respond',
     blocks: [
-      phraseShelf([2, 3], self.blocks[1].title),
+      phraseShelf([2, 3, 5], self.blocks[1].title),
       phraseShelf([12, 13, 14], work.blocks[1].title),
       namedShelf(work.blocks[3], work.blocks[4]),
       work.blocks[5],

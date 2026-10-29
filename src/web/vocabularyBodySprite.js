@@ -1,5 +1,6 @@
-// Cropped from the approved Artico body-vocabulary illustration sheet.
-// Each tile is raster art (not an SVG); labels remain separate for translation.
+// Curated HD raster drawings: individual cropped assets from four matching
+// educational illustration sheets, arranged in an 8x4 raster atlas.
+// Each 408x254 tile is about twice the old resolution, with labels separate.
 const terms = [
   "head",
   "face",
@@ -40,6 +41,6 @@ export function vocabularyBodySprite(term, chapter) {
   const index = positions.get(key)
   return index === undefined ? null : {
     type: 'body-sprite', term: key, index,
-    src: import.meta.env.BASE_URL + 'vocabulary-art/body-14.webp',
+    src: import.meta.env.BASE_URL + 'vocabulary-art/body-14-hd.webp',
   }
 }

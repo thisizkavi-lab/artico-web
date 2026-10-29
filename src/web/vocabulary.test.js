@@ -237,3 +237,26 @@ test('Lesson 03 displays every original time span as a coherent equivalence tabl
   assert.match(style, /vlt-span-table/)
   assert.match(style, /@media\(max-width:620px\)/)
 })
+
+
+test('Lesson 03 uses an ordered frequency chart and keeps specific-interval cards',()=>{
+  const lesson=JSON.parse(readFileSync(new URL('./vocabularyOrganized.json',import.meta.url),'utf8'))
+    .lessons.find(item=>item.sourceLesson===3)
+  const terms=lesson.groups[5].items.map(([term])=>term)
+  const relative=['always','usually','often','sometimes','rarely / seldom','never']
+  assert.deepEqual(terms.slice(0,6),relative)
+  assert.equal(terms.length,15)
+  const view=readFileSync(new URL('./VocabularyTopicLesson.jsx',import.meta.url),'utf8')
+  const chart=view.slice(view.indexOf('const relativeFrequency'),view.indexOf('function VocabCard('))
+  for(const term of relative) assert.ok(chart.includes("term:'"+term+"'"),'Missing frequency: '+term)
+  assert.match(chart,/From most frequent to least frequent/)
+  assert.match(chart,/not a percentage scale/)
+  assert.match(chart,/intervals\.map/)
+  assert.match(chart,/<VocabCard/)
+  assert.match(chart,/<span lang="en">\{level\.label\}<\/span>/)
+  assert.match(view,/isFrequencyScale && mode === 'study'/)
+  assert.match(view,/<FrequencyScale items=\{cards\} japanese=\{japanese\}/)
+  const style=readFileSync(new URL('./vocabulary-topic.css',import.meta.url),'utf8')
+  assert.match(style,/\.vlt-frequency-bars/)
+  assert.match(style,/@media\(max-width:620px\)/)
+})

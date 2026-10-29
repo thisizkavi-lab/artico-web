@@ -46,7 +46,7 @@ export default function Landing() {
           />
           <div className="al-splash-content">
             <h1 className="al-splash-title" id="al-title" lang="en">
-              <span>One language, infinite</span>
+              <span>One language, infinite</span>{' '}
               <span>possibilities.</span>
             </h1>
             <p className="al-splash-description" lang="en">
@@ -55,7 +55,7 @@ export default function Landing() {
             <a className="al-splash-cta" href="#/home">Get Started</a>
           </div>
         </section>
-        <section className="al-why" aria-labelledby="al-why-title">
+        <section className="al-why" lang="en" aria-labelledby="al-why-title">
           <div className="al-why-inner">
             <header className="al-why-heading">
               <p className="al-why-overline">THE IDEA BEHIND ARTICO</p>

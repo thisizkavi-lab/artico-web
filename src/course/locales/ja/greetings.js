@@ -6,6 +6,21 @@ import {
 } from '../../greetings.js'
 
 const phraseJa = {
+  'ch01-p48': {
+    context: '夜に別れるときや寝る前に使うあいさつ（「おやすみなさい」）です。初めて会うときのあいさつには通常使いません。',
+    register: '夜 · 別れるとき・寝る前',
+    ja: 'おやすみなさい。',
+  },
+  'ch01-p49': {
+    context: '何人かにまとめて声をかける、自然で標準的なあいさつです。',
+    register: 'グループ向け · 標準',
+    ja: 'みなさん、こんにちは。',
+  },
+  'ch01-p50': {
+    context: '朝に複数人へあいさつするときに使います。',
+    register: 'グループ向け · 朝',
+    ja: 'みなさん、おはようございます。',
+  },
   'ch01-p1': {
     context: '朝のあいさつ（「おはようございます」）。自分から声をかけるときにも、あいさつを返すときにも使えます。',
     ja: 'おはようございます。',
@@ -229,46 +244,39 @@ const phraseJa = {
 const sectionJa = {
   open: {
     title: '会話を始める',
-    short: '会話を始める',
+    short: 'あいさつする',
     blocks: [
       {
         type: 'text',
-        text: '相手との関係、時間帯、伝えたい気持ちに合わせて最初の一言を選びます。職場だからといって、あいさつが一つに決まるわけではありません。',
+        text: '会話の多くは、短いあいさつから始まります。あいさつは、相手の存在を認め、会話のきっかけを作る簡単な方法です。親しみを込めた Hi. の一言だけで十分なこともあります。相手や時間帯によって、自然な表現は少し変わります。',
+      },
+      { type: 'label', text: '毎日の基本のあいさつ' },
+      { type: 'phrases', phrases: ['ch01-p3', 'ch01-p4', 'ch01-p5'] },
+      {
+        type: 'note',
+        title: 'ちょっとしたニュアンス',
+        text: 'Hi は親しみがあり、幅広い場面で使えます。Hello は標準的で、少し丁寧に聞こえることがあります。Hey はよりくだけた表現で、特に知っている相手に自然です。',
+      },
+      { type: 'label', text: '時間帯に合わせたあいさつ' },
+      { type: 'phrases', phrases: ['ch01-p6', 'ch01-p7', 'ch01-p8', 'ch01-p9', 'ch01-p48'] },
+      {
+        type: 'note',
+        title: 'Good evening と Good night の違い',
+        text: '夕方や夜に会ったときは Good evening. と言います。夜に別れるときや寝る前は Good night. と言います。会話を始めるときに Good night. は通常使いません。',
       },
       {
         type: 'conversation',
-        title: '職場で、よく知っている同僚に会う場面',
+        title: '朝のあいさつ',
         art: 'greetings-morning.svg',
-        alt: '朝の職場でAlexとCaseyがあいさつを交わしている。',
+        alt: 'AlexとCaseyが朝のあいさつを交わしている。',
         phrases: ['ch01-p1', 'ch01-p2'],
       },
       {
         type: 'text',
-        text: 'Morning は朝のあいさつを短くした形です。Caseyは同じ朝のあいさつを気軽に返しています。省略せず Good morning と返しても自然です。',
+        text: 'Morning は Good morning を短くした形です。省略せず Good morning と返しても自然です。',
       },
-      { type: 'label', text: '時間帯を問わず使える基本のあいさつ' },
-      { type: 'phrases', phrases: ['ch01-p3', 'ch01-p4', 'ch01-p5'] },
-      { type: 'label', text: '時間帯に合わせたあいさつ' },
-      { type: 'phrases', phrases: ['ch01-p6', 'ch01-p7', 'ch01-p8', 'ch01-p9'] },
-      { type: 'label', text: '集団に向けるあいさつ（任意）' },
-      { type: 'phrases', phrases: ['ch01-p10', 'ch01-p11'] },
-      {
-        type: 'comparison',
-        title: '夜のあいさつ：会ったときと別れるときの違い',
-        items: [
-          {
-            badge: '夕方や夜に会ったとき（会話を始める）',
-            en: 'Good evening.',
-            text: '夕方から夜にかけて人と会ったときの「こんばんは」です。会話を始めるときに使います。',
-          },
-          {
-            badge: '別れるとき・寝る前（会話を終える）',
-            en: 'Good night.',
-            text: '通常、別れ際や寝る前のあいさつ（「おやすみなさい」）です。会った最初のあいさつには使いません（別れの表現は第10章で扱います）。',
-            contrast: true,
-          },
-        ],
-      },
+      { type: 'label', text: 'グループへのあいさつ' },
+      { type: 'phrases', phrases: ['ch01-p10', 'ch01-p49', 'ch01-p50', 'ch01-p11'] },
     ],
   },
   'check-in': {
@@ -426,7 +434,7 @@ export function localizeGreetings(base) {
   return {
     ...base,
     titleJa: 'あいさつ',
-    subtitle: '会話を始め、短い近況の質問に答え、しばらく会っていなかった人と再会したときにあいさつできます。',
+    subtitle: 'あいさつで会話を始め、近況を尋ね、久しぶりに会う人とも自然に話せるようになります。',
     phrases: greetingPhrases.map((item) => ({ ...item, ...phraseJa[item.id] })),
     sections: greetingSections.map((section) => ({ ...section, ...sectionJa[section.id] })),
     starterIds: greetingStarterIds,

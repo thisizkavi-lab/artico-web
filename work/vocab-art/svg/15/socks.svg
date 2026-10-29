@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:socks">
+  <defs>
+    <clipPath id="left-sock-clip">
+      <path d="M 88 40 L 126 40 L 126 116 C 126 128 132 136 150 144 L 166 152 C 176 156 178 168 168 174 C 158 180 144 176 130 168 L 100 148 C 88 138 88 126 88 116 Z"/>
+    </clipPath>
+    <clipPath id="right-sock-clip">
+      <path d="M 168 40 L 206 40 L 206 116 C 206 128 212 136 230 144 L 246 152 C 256 156 258 168 248 174 C 238 180 224 176 210 168 L 180 148 C 168 138 168 126 168 116 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft sporty aura -->
+  <ellipse cx="152" cy="112" rx="92" ry="60" fill="#FEF3C7" opacity="0.5"/>
+
+  <!-- LEFT SOCK (Standing Side Profile) -->
+  <path d="M 88 40 L 126 40 L 126 116 C 126 128 132 136 150 144 L 166 152 C 176 156 178 168 168 174 C 158 180 144 176 130 168 L 100 148 C 88 138 88 126 88 116 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Left Sock Details & Shading -->
+  <g clip-path="url(#left-sock-clip)">
+    <!-- Heel & Ankle Shadow -->
+    <path d="M 88 100 C 94 120 102 138 100 148 L 88 140 Z" fill="#E2E8F0"/>
+    <path d="M 126 40 L 126 116 C 126 136 140 150 168 174 L 140 174 Z" fill="#E2E8F0" opacity="0.6"/>
+
+    <!-- Contrast Toe Cap (Navy) -->
+    <path d="M 152 145 C 156 154 156 162 144 176 L 174 174 C 178 166 176 156 164 150 Z"
+          fill="#1E3A8A"/>
+    <!-- Contrast Heel Cap (Navy) -->
+    <path d="M 88 112 C 96 112 108 122 106 138 C 104 146 96 148 88 146 Z"
+          fill="#1E3A8A"/>
+
+    <!-- Ankle Rib Texture Lines -->
+    <line x1="98" y1="62" x2="98" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+    <line x1="107" y1="62" x2="107" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+    <line x1="116" y1="62" x2="116" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+  </g>
+
+  <!-- Left Sock Ribbed Cuff with Athletic Stripes -->
+  <rect x="88" y="40" width="38" height="20" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="88" y1="46" x2="126" y2="46" stroke="#EF4444" stroke-width="2.2"/>
+  <line x1="88" y1="52" x2="126" y2="52" stroke="#2563EB" stroke-width="2.2"/>
+
+  <!-- RIGHT SOCK (Matching Twin Pair) -->
+  <path d="M 168 40 L 206 40 L 206 116 C 206 128 212 136 230 144 L 246 152 C 256 156 258 168 248 174 C 238 180 224 176 210 168 L 180 148 C 168 138 168 126 168 116 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Right Sock Details & Shading -->
+  <g clip-path="url(#right-sock-clip)">
+    <path d="M 168 100 C 174 120 182 138 180 148 L 168 140 Z" fill="#E2E8F0"/>
+    <path d="M 206 40 L 206 116 C 206 136 220 150 248 174 L 220 174 Z" fill="#E2E8F0" opacity="0.6"/>
+
+    <!-- Contrast Toe Cap (Navy) -->
+    <path d="M 232 145 C 236 154 236 162 224 176 L 254 174 C 258 166 256 156 244 150 Z"
+          fill="#1E3A8A"/>
+    <!-- Contrast Heel Cap (Navy) -->
+    <path d="M 168 112 C 176 112 188 122 186 138 C 184 146 176 148 168 146 Z"
+          fill="#1E3A8A"/>
+
+    <line x1="178" y1="62" x2="178" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+    <line x1="187" y1="62" x2="187" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+    <line x1="196" y1="62" x2="196" y2="108" stroke="#CBD5E1" stroke-width="1.4"/>
+  </g>
+
+  <!-- Right Sock Ribbed Cuff with Athletic Stripes -->
+  <rect x="168" y="40" width="38" height="20" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="168" y1="46" x2="206" y2="46" stroke="#EF4444" stroke-width="2.2"/>
+  <line x1="168" y1="52" x2="206" y2="52" stroke="#2563EB" stroke-width="2.2"/>
+</svg>

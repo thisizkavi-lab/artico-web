@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:polka dot">
+  <defs>
+    <clipPath id="polkadot-swatch-clip">
+      <path d="M 48 36 L 256 36 L 256 156 L 48 156 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Presentation Shadow -->
+  <rect x="52" y="42" width="208" height="122" rx="8" fill="#E2E8F0"/>
+
+  <!-- Main Deep French Navy Fabric Swatch -->
+  <rect x="48" y="36" width="208" height="120" rx="6" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="2.6"/>
+
+  <!-- Perfectly Spaced White Polka Dots Grid & Fabric Drape Shading -->
+  <g clip-path="url(#polkadot-swatch-clip)">
+    <!-- Row 1 (y = 52) -->
+    <circle cx="68" cy="52" r="8" fill="#FAF8F3"/>
+    <circle cx="104" cy="52" r="8" fill="#FAF8F3"/>
+    <circle cx="140" cy="52" r="8" fill="#FAF8F3"/>
+    <circle cx="176" cy="52" r="8" fill="#FAF8F3"/>
+    <circle cx="212" cy="52" r="8" fill="#FAF8F3"/>
+    <circle cx="248" cy="52" r="8" fill="#FAF8F3"/>
+
+    <!-- Row 2 (y = 76, staggered) -->
+    <circle cx="50" cy="76" r="8" fill="#FAF8F3"/>
+    <circle cx="86" cy="76" r="8" fill="#FAF8F3"/>
+    <circle cx="122" cy="76" r="8" fill="#FAF8F3"/>
+    <circle cx="158" cy="76" r="8" fill="#FAF8F3"/>
+    <circle cx="194" cy="76" r="8" fill="#FAF8F3"/>
+    <circle cx="230" cy="76" r="8" fill="#FAF8F3"/>
+
+    <!-- Row 3 (y = 100) -->
+    <circle cx="68" cy="100" r="8" fill="#FAF8F3"/>
+    <circle cx="104" cy="100" r="8" fill="#FAF8F3"/>
+    <circle cx="140" cy="100" r="8" fill="#FAF8F3"/>
+    <circle cx="176" cy="100" r="8" fill="#FAF8F3"/>
+    <circle cx="212" cy="100" r="8" fill="#FAF8F3"/>
+    <circle cx="248" cy="100" r="8" fill="#FAF8F3"/>
+
+    <!-- Row 4 (y = 124, staggered) -->
+    <circle cx="50" cy="124" r="8" fill="#FAF8F3"/>
+    <circle cx="86" cy="124" r="8" fill="#FAF8F3"/>
+    <circle cx="122" cy="124" r="8" fill="#FAF8F3"/>
+    <circle cx="158" cy="124" r="8" fill="#FAF8F3"/>
+    <circle cx="194" cy="124" r="8" fill="#FAF8F3"/>
+    <circle cx="230" cy="124" r="8" fill="#FAF8F3"/>
+
+    <!-- Row 5 (y = 148) -->
+    <circle cx="68" cy="148" r="8" fill="#FAF8F3"/>
+    <circle cx="104" cy="148" r="8" fill="#FAF8F3"/>
+    <circle cx="140" cy="148" r="8" fill="#FAF8F3"/>
+    <circle cx="176" cy="148" r="8" fill="#FAF8F3"/>
+    <circle cx="212" cy="148" r="8" fill="#FAF8F3"/>
+    <circle cx="248" cy="148" r="8" fill="#FAF8F3"/>
+
+    <!-- Diagonal Fabric Drape Ripple Shadows Across Polka Dots -->
+    <path d="M 48 114 Q 152 74 256 120 L 256 138 Q 152 92 48 132 Z"
+          fill="#172554" opacity="0.45"/>
+    <path d="M 48 64 Q 152 24 256 70 L 256 82 Q 152 36 48 76 Z"
+          fill="#172554" opacity="0.35"/>
+
+    <!-- Folded Dog-Ear Corner at Bottom-Right showing plain underside -->
+    <polygon points="218,156 256,118 256,156" fill="#DBEAFE" stroke="#1E2A3B" stroke-width="2"/>
+    <polygon points="218,156 256,118 218,118" fill="#1E3A8A" opacity="0.4"/>
+  </g>
+
+  <!-- Pinking Shears Zig-Zag Cut Left Edge -->
+  <path d="M 48 36 L 43 41 L 48 46 L 43 51 L 48 56 L 43 61 L 48 66 L 43 71 L 48 76 L 43 81 L 48 86 L 43 91 L 48 96 L 43 101 L 48 106 L 43 111 L 48 116 L 43 121 L 48 126 L 43 131 L 48 136 L 43 141 L 48 146 L 43 151 L 48 156"
+        stroke="#1E2A3B" stroke-width="2" fill="none"/>
+</svg>

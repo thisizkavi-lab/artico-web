@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:raincoat">
+  <defs>
+    <clipPath id="raincoat-torso-clip">
+      <path d="M 118 46 L 76 62 L 64 144 L 86 148 L 96 112 L 92 166 L 212 166 L 208 112 L 218 148 L 240 144 L 228 62 L 186 46 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Rain Atmosphere: Soft Cool Cloud Backdrop -->
+  <ellipse cx="152" cy="110" rx="95" ry="65" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- Falling Raindrops (Crisp Diagonal Rain Streaks) -->
+  <path d="M 54 28 L 48 42 M 82 18 L 76 32 M 228 22 L 222 36 M 256 34 L 250 48 M 46 88 L 40 102 M 262 96 L 256 110 M 64 152 L 58 166 M 248 148 L 242 162"
+        stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Little water droplets bouncing off shoulders -->
+  <circle cx="82" cy="56" r="2" fill="#0284C7"/>
+  <circle cx="224" cy="56" r="2" fill="#0284C7"/>
+
+  <!-- Left Waterproof Sleeve -->
+  <path d="M 86 60 L 64 144 L 86 148 L 98 112 L 108 64 Z"
+        fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Sleeve Cuff Band -->
+  <path d="M 64 144 L 86 148 L 84 154 L 62 150 Z"
+        fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Right Sleeve -->
+  <path d="M 218 60 L 240 144 L 218 148 L 206 112 L 196 64 Z"
+        fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 218 148 L 240 144 L 242 150 L 220 154 Z"
+        fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Main Yellow Slicker Coat Body -->
+  <path d="M 120 46 L 86 60 L 92 166 L 212 166 L 218 60 L 184 46 Z"
+        fill="#FDE047" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Shading & Waterproof Gloss Reflections inside body -->
+  <g clip-path="url(#raincoat-torso-clip)">
+    <!-- Right side shadow -->
+    <path d="M 152 48 L 218 60 L 212 166 L 152 166 Z" fill="#F59E0B" opacity="0.35"/>
+    <!-- Glossy sheen streaks on slicker fabric -->
+    <path d="M 102 70 L 98 155" stroke="#FEF9C3" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 112 70 L 108 155" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Attached Waterproof Hood Resting on Shoulders / Neck -->
+  <path d="M 124 46 C 114 26 190 26 180 46 C 172 34 132 34 124 46 Z"
+        fill="#D97706" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 128 48 C 112 36 108 24 132 18 C 152 14 172 18 178 30 C 182 38 180 44 176 48"
+        fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Hood inside shadow -->
+  <path d="M 132 24 C 146 20 164 22 172 32 C 160 28 142 26 132 24 Z" fill="#B45309"/>
+
+  <!-- Hood Drawstrings with Toggles -->
+  <path d="M 136 48 C 134 58 132 70 134 80" stroke="#1E2A3B" stroke-width="2" fill="none"/>
+  <circle cx="134" cy="80" r="3" fill="#B45309" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <path d="M 168 48 C 170 58 172 70 170 80" stroke="#1E2A3B" stroke-width="2" fill="none"/>
+  <circle cx="170" cy="80" r="3" fill="#B45309" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Storm Flap Front Placket with Navy Snaps -->
+  <rect x="144" y="46" width="16" height="120" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="152" cy="58" r="3.2" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="82" r="3.2" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="106" r="3.2" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="130" r="3.2" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="154" r="3.2" fill="#1E3A8A" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Large Waterproof Flap Pockets -->
+  <!-- Left pocket -->
+  <rect x="100" y="122" width="30" height="26" rx="3" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M 98 122 L 132 122 L 130 129 L 100 129 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="115" cy="126" r="1.6" fill="#1E3A8A"/>
+
+  <!-- Right pocket -->
+  <rect x="174" y="122" width="30" height="26" rx="3" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M 172 122 L 206 122 L 204 129 L 174 129 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="189" cy="126" r="1.6" fill="#1E3A8A"/>
+</svg>

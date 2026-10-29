@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:shirt">
+  <defs>
+    <clipPath id="shirt-torso-clip">
+      <path d="M 120 44 L 72 58 L 56 132 L 78 136 L 90 98 L 94 156 C 114 164 190 164 210 156 L 214 98 L 226 136 L 248 132 L 232 58 L 184 44 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft blue aura -->
+  <ellipse cx="152" cy="108" rx="88" ry="60" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- Wooden Hanger Neck -->
+  <path d="M 152 24 C 158 24 162 28 160 34 C 158 38 153 40 152 44" fill="none" stroke="#9A6945" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Long Sleeve -->
+  <path d="M 84 56 L 56 132 L 78 136 L 92 98 L 104 62 Z"
+        fill="#BAE6FD" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Left Shirt Buttoned Cuff -->
+  <path d="M 56 132 L 78 136 L 76 146 L 54 142 Z"
+        fill="#E0F2FE" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="66" cy="139" r="1.6" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1"/>
+
+  <!-- Right Long Sleeve -->
+  <path d="M 220 56 L 248 132 L 226 136 L 212 98 L 200 62 Z"
+        fill="#93C5FD" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Right Shirt Buttoned Cuff -->
+  <path d="M 226 136 L 248 132 L 250 142 L 228 146 Z"
+        fill="#BAE6FD" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="238" cy="139" r="1.6" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1"/>
+
+  <!-- Main Dress Shirt Torso with Curved Shirttail Hem -->
+  <path d="M 120 44 L 84 56 L 94 156 C 114 164 190 164 210 156 L 220 56 L 184 44 Z"
+        fill="#E0F2FE" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Shading & Right Side Shadow inside torso -->
+  <g clip-path="url(#shirt-torso-clip)">
+    <path d="M 152 46 L 220 56 L 210 156 L 152 160 Z" fill="#BAE6FD" opacity="0.4"/>
+    <!-- Gentle vertical fabric crease folds -->
+    <path d="M 116 80 L 118 148" stroke="#7DD3FC" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 186 80 L 184 148" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Chest Patch Pocket -->
+  <path d="M 106 82 L 128 82 L 128 106 L 117 112 L 106 106 Z"
+        fill="#BAE6FD" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="106" y1="87" x2="128" y2="87" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+
+  <!-- Center Button Placket -->
+  <rect x="144" y="58" width="16" height="102" fill="#BAE6FD" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="152" cy="70" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="90" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="110" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="130" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="150" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Pointed Dress Shirt Collar -->
+  <!-- Inner collar band -->
+  <path d="M 124 44 C 136 38 168 38 180 44 L 174 60 L 130 60 Z"
+        fill="#0284C7" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Left Pointed Collar Leaf -->
+  <path d="M 124 44 L 152 64 L 128 78 L 110 56 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Right Pointed Collar Leaf -->
+  <path d="M 180 44 L 152 64 L 176 78 L 194 56 Z"
+        fill="#E0F2FE" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Collar top button -->
+  <circle cx="152" cy="56" r="1.8" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1"/>
+</svg>

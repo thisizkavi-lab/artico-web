@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:bra">
+  <defs>
+    <clipPath id="left-cup-clip">
+      <path d="M 94 88 C 94 62 120 54 138 66 C 146 72 148 84 148 98 C 148 116 128 126 108 122 C 98 118 94 104 94 88 Z"/>
+    </clipPath>
+    <clipPath id="right-cup-clip">
+      <path d="M 210 88 C 210 62 184 54 166 66 C 158 72 156 84 156 98 C 156 116 176 126 196 122 C 206 118 210 104 210 88 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft delicate aura -->
+  <ellipse cx="152" cy="104" rx="88" ry="58" fill="#FCE7F3" opacity="0.6"/>
+
+  <!-- Side Wings / Back Straps Extenders -->
+  <path d="M 64 96 C 74 96 92 104 98 112 L 96 122 C 86 116 70 106 64 102 Z"
+        fill="#F472B6" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Hook & eye clasps at left end -->
+  <line x1="64" y1="96" x2="64" y2="102" stroke="#1E2A3B" stroke-width="2.2"/>
+  <circle cx="68" cy="99" r="1.2" fill="#FAF8F3"/>
+
+  <path d="M 240 96 C 230 96 212 104 206 112 L 208 122 C 218 116 234 106 240 102 Z"
+        fill="#EC4899" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="240" y1="96" x2="240" y2="102" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Adjustable Shoulder Straps with Silver Slider Hardware -->
+  <!-- Left Strap -->
+  <path d="M 122 60 L 122 32 C 122 28 116 28 116 32 L 80 98"
+        stroke="#DB2777" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <!-- Silver slider ring on strap -->
+  <rect x="119" y="44" width="6" height="4" rx="1" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Right Strap -->
+  <path d="M 182 60 L 182 32 C 182 28 188 28 188 32 L 224 98"
+        stroke="#BE185D" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <rect x="179" y="44" width="6" height="4" rx="1" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Left Molded Sweetheart Cup -->
+  <path d="M 94 88 C 94 62 120 54 138 66 C 146 72 148 84 148 98 C 148 116 128 126 108 122 C 98 118 94 104 94 88 Z"
+        fill="#FBCFE8" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Left Cup Shading & Lace Trim -->
+  <g clip-path="url(#left-cup-clip)">
+    <!-- 3D Cup Volume Shadow -->
+    <path d="M 132 64 C 146 78 146 108 128 124 L 148 122 L 148 88 Z" fill="#F472B6"/>
+    <!-- Diagonal Molded Dart Seam -->
+    <path d="M 104 92 C 120 92 136 94 146 88" stroke="#DB2777" stroke-width="1.6" fill="none" stroke-dasharray="2 1.5"/>
+  </g>
+  <!-- Scalloped Lace Edge on Left Cup -->
+  <path d="M 96 82 C 100 80 104 80 108 76 C 112 72 116 72 120 68 C 124 64 128 64 132 66 C 136 68 140 70 144 74"
+        stroke="#BE185D" stroke-width="1.8" fill="none"/>
+  <!-- Left Rigid Underwire Contour -->
+  <path d="M 94 88 C 94 108 108 124 148 110"
+        stroke="#1E2A3B" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Right Molded Sweetheart Cup -->
+  <path d="M 210 88 C 210 62 184 54 166 66 C 158 72 156 84 156 98 C 156 116 176 126 196 122 C 206 118 210 104 210 88 Z"
+        fill="#F472B6" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Right Cup Shading & Lace Trim -->
+  <g clip-path="url(#right-cup-clip)">
+    <path d="M 172 64 C 158 78 158 108 176 124 L 156 122 L 156 88 Z" fill="#EC4899"/>
+    <path d="M 200 92 C 184 92 168 94 158 88" stroke="#BE185D" stroke-width="1.6" fill="none" stroke-dasharray="2 1.5"/>
+  </g>
+  <!-- Scalloped Lace Edge on Right Cup -->
+  <path d="M 208 82 C 204 80 200 80 196 76 C 192 72 188 72 184 68 C 180 64 176 64 172 66 C 168 68 164 70 160 74"
+        stroke="#BE185D" stroke-width="1.8" fill="none"/>
+  <!-- Right Rigid Underwire Contour -->
+  <path d="M 210 88 C 210 108 196 124 156 110"
+        stroke="#1E2A3B" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Center Bridge / Gore Connecting Cups -->
+  <polygon points="146,100 158,100 156,114 148,114" fill="#DB2777" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Tiny Satin Center Bow -->
+  <circle cx="152" cy="102" r="2.5" fill="#BE185D" stroke="#1E2A3B" stroke-width="1.2"/>
+  <ellipse cx="147" cy="101" rx="4" ry="2.5" transform="rotate(-15 147 101)" fill="#F472B6" stroke="#1E2A3B" stroke-width="1"/>
+  <ellipse cx="157" cy="101" rx="4" ry="2.5" transform="rotate(15 157 101)" fill="#F472B6" stroke="#1E2A3B" stroke-width="1"/>
+  <path d="M 151 104 L 148 111 M 153 104 L 156 111" stroke="#BE185D" stroke-width="1.2"/>
+</svg>

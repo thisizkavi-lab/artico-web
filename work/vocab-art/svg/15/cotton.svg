@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:cotton">
+  <defs>
+    <clipPath id="boll-main-clip">
+      <circle cx="128" cy="92" r="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Soft Botanical Warm Glow -->
+  <ellipse cx="152" cy="108" rx="94" ry="60" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Presentation Surface Shadow -->
+  <ellipse cx="152" cy="158" rx="100" ry="12" fill="#E2E8F0"/>
+
+  <!-- Woody Cotton Plant Branch / Stem -->
+  <path d="M 42 154 C 84 136 108 116 128 92 C 146 70 178 52 208 42"
+        stroke="#78350F" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Branch Twigs -->
+  <path d="M 88 126 C 96 112 94 98 84 84"
+        stroke="#78350F" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 152 76 C 166 84 176 96 182 108"
+        stroke="#78350F" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- SECONDARY BOLL (Left Twig) -->
+  <!-- Dried brown calyx sepals -->
+  <polygon points="84,84 76,72 88,78" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8"/>
+  <polygon points="84,84 70,88 80,92" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8"/>
+  <polygon points="84,84 94,92 98,82" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- Fluffy Cloud Puffs -->
+  <circle cx="78" cy="74" r="12" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="90" cy="76" r="10" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2"/>
+  <circle cx="82" cy="84" r="11" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- MAIN FLUFFY COTTON BOLL (Center) -->
+  <!-- Dried Sepals Behind Boll -->
+  <path d="M 128 92 L 102 64 L 114 80 L 92 88 L 112 98 L 98 120 L 122 110 L 132 134 L 138 110 L 160 114 L 144 96 L 166 82 L 142 80 L 146 58 Z"
+        fill="#B45309" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- 4 Rounded Cloud Lobes of Pure White Cotton -->
+  <!-- Top Lobe -->
+  <ellipse cx="128" cy="72" rx="16" ry="14" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Left Lobe -->
+  <ellipse cx="110" cy="88" rx="16" ry="15" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Bottom Lobe -->
+  <ellipse cx="126" cy="106" rx="17" ry="15" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Right Lobe -->
+  <ellipse cx="144" cy="90" rx="16" ry="15" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.2"/>
+
+  <!-- Center fluffy crests -->
+  <ellipse cx="128" cy="88" rx="14" ry="13" fill="#FFFFFF"/>
+  <path d="M 118 78 C 124 84 132 84 138 78" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+  <path d="M 118 98 C 124 94 132 94 138 98" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+
+  <!-- Dried brown calyx sepals grasping over the lobes -->
+  <polygon points="128,88 122,64 128,74" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6"/>
+  <polygon points="128,88 98,86 112,88" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6"/>
+  <polygon points="128,88 124,116 130,102" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6"/>
+  <polygon points="128,88 152,94 140,90" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6"/>
+
+  <!-- WOODEN SPOOL OF 100% COTTON THREAD (Right) -->
+  <!-- Spool Top Rim -->
+  <ellipse cx="228" cy="98" rx="20" ry="8" fill="#D4A373" stroke="#1E2A3B" stroke-width="2.2"/>
+  <ellipse cx="228" cy="98" rx="16" ry="6" fill="#C59B75"/>
+  <circle cx="228" cy="98" r="4" fill="#78350F"/>
+
+  <!-- Spool Barrel with White Cotton Thread Wound -->
+  <rect x="214" y="104" width="28" height="36" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- Thread winding grooves -->
+  <line x1="214" y1="109" x2="242" y2="109" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="214" y1="115" x2="242" y2="115" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="214" y1="121" x2="242" y2="121" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="214" y1="127" x2="242" y2="127" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="214" y1="133" x2="242" y2="133" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Spool Bottom Rim -->
+  <path d="M 208 140 C 208 136 216 134 228 134 C 240 134 248 136 248 140 L 248 148 C 248 152 240 156 228 156 C 216 156 208 152 208 148 Z"
+        fill="#D4A373" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <ellipse cx="228" cy="148" rx="20" ry="7" fill="#C59B75" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Trailing Cotton Thread Strand -->
+  <path d="M 242 133 C 256 142 268 152 254 162 C 244 168 226 166 210 162"
+        stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <path d="M 242 133 C 256 142 268 152 254 162 C 244 168 226 166 210 162"
+        stroke="#1E2A3B" stroke-width="0.8" stroke-dasharray="2 2" fill="none"/>
+</svg>

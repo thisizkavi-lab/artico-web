@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:size">
+  <defs>
+    <clipPath id="torso-s-clip">
+      <path d="M 68 84 L 52 94 L 46 138 L 58 140 L 64 122 L 64 154 L 92 154 L 92 122 L 98 140 L 110 138 L 104 94 L 88 84 Z"/>
+    </clipPath>
+    <clipPath id="torso-m-clip">
+      <path d="M 152 66 L 130 78 L 122 136 L 138 138 L 146 114 L 144 158 L 180 158 L 178 114 L 186 138 L 202 136 L 194 78 L 172 66 Z"/>
+    </clipPath>
+    <clipPath id="torso-l-clip">
+      <path d="M 236 48 L 208 62 L 198 134 L 216 136 L 226 106 L 224 162 L 268 162 L 266 106 L 276 136 L 294 134 L 284 62 L 256 48 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Presentation Ground Shadow -->
+  <ellipse cx="152" cy="168" rx="114" ry="12" fill="#E2E8F0"/>
+
+  <!-- SIZE COMPARISON: 3 Graduated Mannequins / Tailored Garments (S -> M -> L) -->
+
+  <!-- 1. SMALL (Left, compact scale) -->
+  <!-- Mannequin finial S -->
+  <circle cx="78" cy="74" r="3.5" fill="#C59B75" stroke="#1E2A3B" stroke-width="1.6"/>
+  <path d="M 78 74 L 78 84" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- Torso S -->
+  <path d="M 68 84 L 52 94 L 46 138 L 58 140 L 64 122 L 64 154 L 92 154 L 92 122 L 98 140 L 110 138 L 104 94 L 88 84 Z"
+        fill="#93C5FD" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <g clip-path="url(#torso-s-clip)">
+    <path d="M 78 84 L 104 94 L 92 154 L 78 154 Z" fill="#60A5FA"/>
+  </g>
+  <line x1="78" y1="154" x2="78" y2="168" stroke="#9A6945" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 2. MEDIUM (Center, mid-size scale) -->
+  <!-- Mannequin finial M -->
+  <circle cx="162" cy="56" r="4.5" fill="#C59B75" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M 162 56 L 162 66" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- Torso M -->
+  <path d="M 152 66 L 130 78 L 122 136 L 138 138 L 146 114 L 144 158 L 180 158 L 178 114 L 186 138 L 202 136 L 194 78 L 172 66 Z"
+        fill="#3B82F6" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <g clip-path="url(#torso-m-clip)">
+    <path d="M 162 66 L 194 78 L 180 158 L 162 158 Z" fill="#2563EB"/>
+  </g>
+  <line x1="162" y1="158" x2="162" y2="168" stroke="#9A6945" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- 3. LARGE (Right, broad expansive scale) -->
+  <!-- Mannequin finial L -->
+  <circle cx="246" cy="38" r="5.5" fill="#C59B75" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M 246 38 L 246 48" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Torso L -->
+  <path d="M 236 48 L 208 62 L 198 134 L 216 136 L 226 106 L 224 162 L 268 162 L 266 106 L 276 136 L 294 134 L 284 62 L 256 48 Z"
+        fill="#1D4ED8" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <g clip-path="url(#torso-l-clip)">
+    <path d="M 246 48 L 284 62 L 268 162 L 246 162 Z" fill="#1E3A8A"/>
+  </g>
+  <line x1="246" y1="162" x2="246" y2="168" stroke="#9A6945" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Yellow Tailor Measuring Tape Measuring Across the Sizing Spectrum -->
+  <path d="M 32 108 C 88 126 174 126 274 96"
+        stroke="#F59E0B" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Tape Measure Tick Marks -->
+  <path d="M 32 108 C 88 126 174 126 274 96"
+        stroke="#1E2A3B" stroke-width="1.8" stroke-dasharray="2 3" fill="none"/>
+
+  <!-- Size Dimension Dimension Caliper Bracket (Spanning Top) -->
+  <path d="M 46 34 L 46 26 L 276 26 L 276 34" stroke="#1E2A3B" stroke-width="2" fill="none"/>
+  <polygon points="46,26 52,23 52,29" fill="#1E2A3B"/>
+  <polygon points="276,26 270,23 270,29" fill="#1E2A3B"/>
+  <circle cx="161" cy="26" r="4" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.5"/>
+</svg>

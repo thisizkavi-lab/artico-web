@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:jockey shorts">
+  <defs>
+    <clipPath id="jockey-brief-clip">
+      <path d="M 104 52 L 200 52 L 204 76 C 196 102 184 128 166 148 L 138 148 C 120 128 108 102 100 76 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft clean aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="60" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Main Briefs Silhouette (High Cut Leg Curves) -->
+  <path d="M 104 52 L 200 52 L 204 76 C 196 102 184 128 166 148 L 138 148 C 120 128 108 102 100 76 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Shading on Right Side -->
+  <g clip-path="url(#jockey-brief-clip)">
+    <path d="M 152 52 L 200 52 L 204 76 C 196 102 184 128 166 148 L 152 148 Z" fill="#E2E8F0"/>
+    <path d="M 170 80 C 185 105 180 135 166 148 L 166 148 Z" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Wide Athletic Elastic Waistband -->
+  <path d="M 104 52 L 200 52 L 201 64 L 103 64 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Contrast Navy & Red Sport Stripe on Waistband -->
+  <line x1="104" y1="56" x2="200" y2="56" stroke="#2563EB" stroke-width="2"/>
+  <line x1="104" y1="60" x2="200" y2="60" stroke="#EF4444" stroke-width="1.4"/>
+
+  <!-- Inverted Y-Front Fly Seam (The Signature Jockey Shorts Detail) -->
+  <!-- Upper Left Fly Seam -->
+  <path d="M 132 64 C 136 78 144 88 152 94"
+        fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 134 64 C 138 78 144 86 150 92"
+        fill="none" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+
+  <!-- Upper Right Fly Seam -->
+  <path d="M 172 64 C 168 78 160 88 152 94"
+        fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 170 64 C 166 78 160 86 154 92"
+        fill="none" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+
+  <!-- Vertical Lower Stem of Inverted Y -->
+  <line x1="152" y1="94" x2="152" y2="148" stroke="#1E2A3B" stroke-width="2.4"/>
+  <line x1="150" y1="94" x2="150" y2="148" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+  <line x1="154" y1="94" x2="154" y2="148" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+
+  <!-- Elastic Ribbed Leg Openings (Bound Piping) -->
+  <!-- Left leg opening binding -->
+  <path d="M 100 76 C 108 102 120 128 138 148"
+        stroke="#1E2A3B" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M 102 78 C 110 102 122 126 138 146"
+        stroke="#3B82F6" stroke-width="1.6" fill="none"/>
+
+  <!-- Right leg opening binding -->
+  <path d="M 204 76 C 196 102 184 128 166 148"
+        stroke="#1E2A3B" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M 202 78 C 194 102 182 126 166 146"
+        stroke="#2563EB" stroke-width="1.6" fill="none"/>
+
+  <!-- Bottom Crotch Gusset Seam -->
+  <line x1="138" y1="146" x2="166" y2="146" stroke="#94A3B8" stroke-width="2"/>
+</svg>

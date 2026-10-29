@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:pants">
+  <defs>
+    <clipPath id="pants-clip">
+      <path d="M 108 36 L 196 36 L 202 70 L 194 168 L 160 168 L 152 80 L 144 168 L 110 168 L 102 70 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop warm neutral aura -->
+  <ellipse cx="152" cy="110" rx="88" ry="64" fill="#FEF3C7" opacity="0.5"/>
+
+  <!-- Main Chino/Trouser Pants Silhouette -->
+  <path d="M 108 36 L 196 36 L 202 70 L 194 168 L 160 168 L 152 80 L 144 168 L 110 168 L 102 70 Z"
+        fill="#E7C8A4" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Shading & Tailored Crease Structure -->
+  <g clip-path="url(#pants-clip)">
+    <!-- Right leg tonal shade -->
+    <path d="M 152 36 L 202 70 L 194 168 L 152 80 Z" fill="#D4A373"/>
+    <!-- Inner crotch shadow -->
+    <path d="M 148 76 L 156 76 L 162 168 L 142 168 Z" fill="#B07D4C" opacity="0.4"/>
+
+    <!-- Left Leg Sharp Pressed Front Center Crease -->
+    <line x1="127" y1="52" x2="127" y2="168" stroke="#FAF8F3" stroke-width="2"/>
+    <line x1="128" y1="52" x2="128" y2="168" stroke="#C28E5C" stroke-width="1.8"/>
+
+    <!-- Right Leg Sharp Pressed Front Center Crease -->
+    <line x1="177" y1="52" x2="177" y2="168" stroke="#FAF8F3" stroke-width="1.8" opacity="0.8"/>
+    <line x1="178" y1="52" x2="178" y2="168" stroke="#9A6945" stroke-width="1.8"/>
+  </g>
+
+  <!-- Tailored Waistband with Belt Loops -->
+  <path d="M 108 36 L 196 36 L 198 48 L 106 48 Z"
+        fill="#C28E5C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Leather Dress Belt -->
+  <rect x="106" y="38" width="92" height="8" rx="1.5" fill="#58311E" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- Polished Brass Belt Buckle -->
+  <rect x="144" y="36" width="16" height="12" rx="2" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.8"/>
+  <rect x="148" y="38" width="8" height="8" rx="1" fill="#58311E"/>
+  <line x1="152" y1="37" x2="152" y2="47" stroke="#F59E0B" stroke-width="1.8"/>
+
+  <!-- Belt loops -->
+  <rect x="114" y="35" width="4" height="14" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="134" y="35" width="4" height="14" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="170" y="35" width="4" height="14" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="190" y="35" width="4" height="14" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Clean Slanted Slash Pockets (Distinct Trouser marker) -->
+  <path d="M 112 48 L 126 68" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 192 48 L 178 68" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Front Zip Fly Placket -->
+  <path d="M 152 48 L 152 72" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Tailored Ankle Hem Turned Break -->
+  <line x1="110" y1="162" x2="144" y2="162" stroke="#B07D4C" stroke-width="1.5"/>
+  <line x1="160" y1="162" x2="194" y2="162" stroke="#9A6945" stroke-width="1.5"/>
+</svg>

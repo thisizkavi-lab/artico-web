@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:boxer shorts">
+  <defs>
+    <clipPath id="boxers-clip">
+      <path d="M 98 46 L 206 46 L 214 78 L 206 148 L 160 148 L 152 98 L 144 148 L 98 148 L 90 78 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft comfort aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="60" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- Main Loose Boxer Shorts Silhouette -->
+  <path d="M 98 46 L 206 46 L 214 78 L 206 148 L 160 148 L 152 98 L 144 148 L 98 148 L 90 78 Z"
+        fill="#BAE6FD" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Windowpane Check Plaid Pattern & Shading -->
+  <g clip-path="url(#boxers-clip)">
+    <!-- Right leg shadow -->
+    <path d="M 152 46 L 206 46 L 214 78 L 206 148 L 152 98 Z" fill="#93C5FD" opacity="0.45"/>
+
+    <!-- Horizontal Check Grid Lines -->
+    <line x1="80" y1="72" x2="220" y2="72" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="80" y1="92" x2="220" y2="92" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="80" y1="112" x2="220" y2="112" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="80" y1="132" x2="220" y2="132" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+
+    <!-- Vertical Check Grid Lines -->
+    <line x1="114" y1="46" x2="114" y2="152" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="132" y1="46" x2="132" y2="152" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="172" y1="46" x2="172" y2="152" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+    <line x1="190" y1="46" x2="190" y2="152" stroke="#0284C7" stroke-width="1.6" opacity="0.5"/>
+
+    <!-- Inner Crotch Shadow -->
+    <path d="M 148 94 L 156 94 L 162 148 L 142 148 Z" fill="#0369A1" opacity="0.3"/>
+  </g>
+
+  <!-- Gathered Ruched Elastic Waistband (Classic Boxer Waist) -->
+  <path d="M 98 46 L 206 46 L 208 58 L 96 58 Z"
+        fill="#E0F2FE" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Elastic Ruching Stitch Lines -->
+  <line x1="97" y1="50" x2="207" y2="50" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+  <line x1="97" y1="54" x2="207" y2="54" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="2 1.5"/>
+  <!-- Little gathered wrinkles along top -->
+  <path d="M 106 46 L 106 58 M 120 46 L 120 58 M 136 46 L 136 58 M 168 46 L 168 58 M 184 46 L 184 58 M 198 46 L 198 58"
+        stroke="#7DD3FC" stroke-width="1.2"/>
+
+  <!-- Woven Label on Center Front Waistband -->
+  <rect x="146" y="48" width="12" height="8" rx="1.5" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="148" y1="52" x2="156" y2="52" stroke="#0284C7" stroke-width="1"/>
+
+  <!-- Button Fly Placket -->
+  <rect x="147" y="58" width="10" height="38" fill="#E0F2FE" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- Single Pearl Fly Button -->
+  <circle cx="152" cy="74" r="2.2" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Side Notches / Leg Vents at Outer Hems -->
+  <polygon points="98,148 98,140 102,148" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.5"/>
+  <polygon points="206,148 206,140 202,148" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.5"/>
+
+  <!-- Hem Double Stitching on Leg Openings -->
+  <line x1="98" y1="144" x2="144" y2="144" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="2 2"/>
+  <line x1="160" y1="144" x2="206" y2="144" stroke="#0284C7" stroke-width="1.4" stroke-dasharray="2 2"/>
+</svg>

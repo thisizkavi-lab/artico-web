@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:underwear">
+  <defs>
+    <clipPath id="vest-clip">
+      <path d="M 88 42 C 94 40 102 46 102 54 L 98 142 L 146 142 L 142 54 C 142 46 150 40 156 42 L 160 74 C 152 78 144 80 122 80 C 100 80 92 78 84 74 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft clean aura -->
+  <ellipse cx="152" cy="110" rx="94" ry="62" fill="#E0F2FE" opacity="0.6"/>
+
+  <!-- Presentation Surface / Shadow -->
+  <ellipse cx="152" cy="158" rx="100" ry="14" fill="#E2E8F0"/>
+
+  <!-- ITEM 1: Ribbed Cotton Undershirt / Tank Top (Left) -->
+  <path d="M 88 42 C 94 40 102 46 102 54 L 98 146 L 148 146 L 144 54 C 144 46 152 40 158 42 L 162 72 C 154 78 144 80 123 80 C 102 80 92 78 84 72 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Undershirt Shading & Fine Rib Lines -->
+  <g clip-path="url(#vest-clip)">
+    <path d="M 123 80 L 148 80 L 148 146 L 123 146 Z" fill="#F1F5F9"/>
+    <!-- Fine vertical ribbing -->
+    <line x1="94" y1="80" x2="94" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="102" y1="80" x2="102" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="110" y1="80" x2="110" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="118" y1="80" x2="118" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="126" y1="80" x2="126" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="134" y1="80" x2="134" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+    <line x1="142" y1="80" x2="142" y2="146" stroke="#E2E8F0" stroke-width="1.2"/>
+  </g>
+  <!-- Scoop Neck Binding -->
+  <path d="M 102 54 C 102 76 144 76 144 54" stroke="#1E2A3B" stroke-width="2.2" fill="none"/>
+  <!-- Hem double stitch -->
+  <line x1="98" y1="142" x2="148" y2="142" stroke="#CBD5E1" stroke-width="1.4"/>
+
+  <!-- ITEM 2: Neat Pair of Cotton Briefs (Right, Overlapping) -->
+  <path d="M 154 84 L 226 84 L 228 104 C 222 124 212 144 198 158 L 180 158 C 166 144 156 124 150 104 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Briefs Shading & Elastic Band -->
+  <path d="M 189 84 L 226 84 L 228 104 C 222 124 212 144 198 158 L 189 158 Z"
+        fill="#E2E8F0"/>
+  <!-- Elastic Waistband -->
+  <path d="M 154 84 L 226 84 L 227 94 L 153 94 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="154" y1="88" x2="226" y2="88" stroke="#3B82F6" stroke-width="1.8"/>
+
+  <!-- Front Contour Fly Stitch -->
+  <path d="M 189 94 C 193 112 191 138 189 158" stroke="#1E2A3B" stroke-width="2" fill="none"/>
+  <path d="M 186 94 C 190 112 188 138 186 158" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 1.5" fill="none"/>
+
+  <!-- Leg Opening Bound Edges -->
+  <path d="M 150 104 C 156 124 166 144 180 158" stroke="#1E2A3B" stroke-width="2.4" fill="none"/>
+  <path d="M 228 104 C 222 124 212 144 198 158" stroke="#1E2A3B" stroke-width="2.4" fill="none"/>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:sneakers">
+  <defs>
+    <clipPath id="sneaker-upper-clip">
+      <path d="M 52 110 C 52 82 72 74 94 74 L 118 78 L 166 94 C 182 100 216 114 240 126 C 248 130 252 136 248 142 L 52 142 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Ground Plane Shadow & Backdrop Glow -->
+  <ellipse cx="152" cy="162" rx="108" ry="12" fill="#E2E8F0"/>
+  <ellipse cx="152" cy="110" rx="92" ry="54" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Padded Heel Collar Lining Peeking Out -->
+  <path d="M 70 78 C 82 70 102 70 114 78 L 110 88 C 100 82 82 82 74 88 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Heel Pull Tab -->
+  <rect x="58" y="70" width="8" height="16" rx="2" fill="#B91C1C" stroke="#1E2A3B" stroke-width="1.6"/>
+
+  <!-- Sneaker Main Canvas Upper -->
+  <path d="M 52 110 C 52 82 72 74 94 74 L 118 78 L 166 94 C 182 100 216 114 240 126 C 248 130 252 136 248 142 L 52 142 Z"
+        fill="#EF4444" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Upper 3-Tone Shading & Canvas Stitching -->
+  <g clip-path="url(#sneaker-upper-clip)">
+    <!-- Heel & Lower Quarter Shadow -->
+    <path d="M 52 74 L 118 78 L 100 142 L 52 142 Z" fill="#DC2626"/>
+    <!-- Quarter Vamp Overlay Stitch Line -->
+    <path d="M 126 80 C 134 100 134 122 124 142" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+    <path d="M 68 84 C 64 104 64 124 68 142" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+
+    <!-- Retro Chevron / Side Stripe Logo Accent -->
+    <path d="M 96 112 L 142 122 L 138 130 L 94 122 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.6"/>
+  </g>
+
+  <!-- Padded Sneaker Tongue -->
+  <path d="M 118 78 L 136 74 C 146 72 154 78 152 88 L 146 98 L 126 94 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Woven Label on Tongue -->
+  <rect x="132" y="76" width="10" height="8" rx="1.5" fill="#3B82F6" stroke="#1E2A3B" stroke-width="1"/>
+
+  <!-- Metal Eyelets for Laces -->
+  <circle cx="132" cy="94" r="3" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="152" cy="102" r="3" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="172" cy="110" r="3" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="192" cy="118" r="3" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.4"/>
+
+  <!-- Crisp White Criss-Cross Shoelaces -->
+  <path d="M 132 94 L 156 90 L 152 102 L 132 94 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M 152 102 L 176 98 L 172 110 L 152 102 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M 172 110 L 196 106 L 192 118 L 172 110 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- Tied shoelace bow loops at top -->
+  <ellipse cx="126" cy="86" rx="8" ry="4" transform="rotate(-30 126 86)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <ellipse cx="140" cy="84" rx="8" ry="4" transform="rotate(25 140 84)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="133" cy="86" r="3" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.5"/>
+
+  <!-- White Rubber Toe Cap / Bumper -->
+  <path d="M 218 120 C 232 122 246 130 252 142 L 210 142 C 212 134 214 126 218 120 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 226 126 C 236 130 244 136 248 142" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+
+  <!-- Thick Vulcanized White Rubber Midsole -->
+  <path d="M 48 142 L 256 142 C 258 148 256 156 250 158 L 48 158 C 46 154 46 146 48 142 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Classic Navy Foxing Stripe through Midsole -->
+  <line x1="48" y1="150" x2="254" y2="150" stroke="#1E3A8A" stroke-width="2.5"/>
+  <!-- Rubber Heel License Plate Tag -->
+  <rect x="47" y="145" width="8" height="10" rx="1.5" fill="#EF4444" stroke="#1E2A3B" stroke-width="1"/>
+
+  <!-- Textured Gum Rubber Outsole Tread Underneath -->
+  <path d="M 48 158 L 250 158 L 246 163 L 52 163 Z"
+        fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <line x1="70" y1="160" x2="74" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="90" y1="160" x2="94" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="110" y1="160" x2="114" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="130" y1="160" x2="134" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="150" y1="160" x2="154" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="170" y1="160" x2="174" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="190" y1="160" x2="194" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+  <line x1="210" y1="160" x2="214" y2="163" stroke="#1E2A3B" stroke-width="1.2"/>
+</svg>

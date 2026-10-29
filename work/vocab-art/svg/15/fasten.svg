@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:fasten">
+  <defs>
+    <clipPath id="fasten-belt-clip">
+      <path d="M 38 88 L 134 88 L 134 116 L 38 116 Z"/>
+    </clipPath>
+    <clipPath id="fasten-strap-clip">
+      <path d="M 130 92 L 264 92 L 264 112 L 130 112 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft golden focus halo -->
+  <ellipse cx="152" cy="102" rx="90" ry="58" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Coat / Waist Fabric in Background -->
+  <path d="M 32 40 L 272 40 L 272 164 L 32 164 Z" fill="#E2E8F0" opacity="0.5"/>
+  <line x1="148" y1="40" x2="148" y2="164" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- LEFT LEATHER BELT (Anchored with Buckle) -->
+  <rect x="36" y="88" width="102" height="28" rx="2" fill="#9A6945" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- Top & Bottom Edge Saddle Stitching -->
+  <line x1="36" y1="92" x2="136" y2="92" stroke="#FEF3C7" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="36" y1="112" x2="136" y2="112" stroke="#FEF3C7" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+  <!-- Belt Keeper Loop -->
+  <rect x="100" y="85" width="12" height="34" rx="2" fill="#78350F" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- SOLID POLISHED BRASS BUCKLE FRAME -->
+  <!-- Outer Frame -->
+  <rect x="132" y="78" width="44" height="48" rx="7" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.8"/>
+  <!-- Inner Cutout Opening -->
+  <rect x="142" y="88" width="24" height="28" rx="3" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Buckle Gold Sheen Highlights -->
+  <path d="M 136 82 L 172 82 L 172 86 L 136 86 Z" fill="#FEF3C7"/>
+
+  <!-- RIGHT LEATHER STRAP (Being Threaded Through Buckle) -->
+  <!-- Strap Pointed Tongue -->
+  <path d="M 148 92 L 254 92 C 262 92 268 98 268 102 C 268 106 262 112 254 112 L 148 112 Z"
+        fill="#C59B75" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Belt Eyelet Holes -->
+  <circle cx="184" cy="102" r="3" fill="#1E2A3B"/>
+  <circle cx="206" cy="102" r="3" fill="#1E2A3B"/>
+  <circle cx="228" cy="102" r="3" fill="#1E2A3B"/>
+  <circle cx="250" cy="102" r="3" fill="#1E2A3B"/>
+
+  <!-- Stitched edges on right strap -->
+  <line x1="152" y1="95" x2="252" y2="95" stroke="#FEF3C7" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <line x1="152" y1="109" x2="252" y2="109" stroke="#FEF3C7" stroke-width="1.4" stroke-dasharray="3 2"/>
+
+  <!-- Buckle Center Hinge Bar & Rotating Tongue (Prong) Snapping In -->
+  <line x1="154" y1="88" x2="154" y2="116" stroke="#B45309" stroke-width="3"/>
+  <!-- Metal Prong Fastening into Eyelet Hole at x=184 -->
+  <path d="M 154 102 L 186 102" stroke="#B45309" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 154 102 L 186 102" stroke="#FEF3C7" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- HANDS PERFORMING THE FASTENING ACTION -->
+  <!-- Left Hand Stabilizing Buckle (Thumb & Fingers) -->
+  <path d="M 78 52 C 90 48 114 62 124 74 L 114 84 C 104 74 92 64 78 60 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="120" cy="78" r="7" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Right Hand Pulling Strap Forward to Fasten (Fingers Grasping Tip) -->
+  <path d="M 248 128 C 240 138 226 148 214 154 L 206 142 C 218 136 230 126 238 118 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Thumb grasping strap -->
+  <path d="M 224 88 C 220 80 232 74 240 82 L 236 94 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Fingers curling under strap -->
+  <rect x="230" y="106" width="16" height="8" rx="3" fill="#E8B896" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Dynamic Fastening Action Arrows (Pulling & Clicking In) -->
+  <path d="M 194 72 C 178 70 168 76 162 82"
+        fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="160,76 160,86 169,82" fill="#2563EB" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Fastening Snap Sparkles / Impact Click Lines -->
+  <line x1="184" y1="88" x2="184" y2="82" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="194" y1="92" x2="200" y2="88" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="194" y1="112" x2="200" y2="116" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+</svg>

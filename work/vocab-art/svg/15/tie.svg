@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:tie (clothing)" data-archetype="part-focus">
+  <defs>
+    <clipPath id="tie-blade-clip">
+      <path d="M 144 68 L 160 68 L 168 152 L 152 172 L 136 152 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Soft Golden Focus Halo Behind Tie Zone -->
+  <ellipse cx="152" cy="104" rx="70" ry="64" fill="#FEF3C7"/>
+  <ellipse cx="152" cy="104" rx="58" ry="50" fill="#FDE68A" opacity="0.6"/>
+
+  <!-- GHOSTED CONTEXT: Dress Shirt Collar & Shoulders -->
+  <path d="M 104 36 L 68 54 L 62 140 L 94 146 L 98 174 L 206 174 L 210 146 L 242 140 L 236 54 L 200 36 Z"
+        fill="#E6ECF2" stroke="#7B8A9E" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Ghosted Shirt Button Placket -->
+  <rect x="144" y="66" width="16" height="108" fill="#DCE3EC" stroke="#7B8A9E" stroke-width="1.6"/>
+  <circle cx="152" cy="120" r="2.2" fill="#94A3B8"/>
+  <circle cx="152" cy="148" r="2.2" fill="#94A3B8"/>
+
+  <!-- Ghosted Crisp Shirt Collar Leaves Framing Neck -->
+  <!-- Inner neckband -->
+  <path d="M 120 34 C 136 26 168 26 184 34 L 176 56 L 128 56 Z"
+        fill="#CBD5E1" stroke="#7B8A9E" stroke-width="2"/>
+  <!-- Left Collar Leaf -->
+  <path d="M 120 34 L 148 56 L 118 78 L 98 52 Z"
+        fill="#FFFFFF" stroke="#7B8A9E" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Right Collar Leaf -->
+  <path d="M 184 34 L 156 56 L 186 78 L 206 52 Z"
+        fill="#FFFFFF" stroke="#7B8A9E" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- FULL-COLOR TARGET PART: Silk Jacquard Necktie -->
+  <!-- Tie Tail Peeking Out Behind Blade -->
+  <polygon points="149,150 155,150 157,164 152,168 147,164" fill="#991B1B"/>
+
+  <!-- Main Front Tie Blade -->
+  <path d="M 144 68 L 160 68 L 168 152 L 152 172 L 136 152 Z"
+        fill="#DC2626" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- 3-Tone Shading & Diagonal Jacquard Silk Stripes -->
+  <g clip-path="url(#tie-blade-clip)">
+    <!-- Right side shadow -->
+    <path d="M 152 68 L 160 68 L 168 152 L 152 172 Z" fill="#B91C1C"/>
+
+    <!-- Diagonal Gold Jacquard Accent Stripes -->
+    <line x1="124" y1="84" x2="180" y2="100" stroke="#F59E0B" stroke-width="4.5"/>
+    <line x1="124" y1="88" x2="180" y2="104" stroke="#FEF3C7" stroke-width="1.5"/>
+
+    <line x1="124" y1="108" x2="180" y2="124" stroke="#F59E0B" stroke-width="4.5"/>
+    <line x1="124" y1="112" x2="180" y2="128" stroke="#FEF3C7" stroke-width="1.5"/>
+
+    <line x1="124" y1="132" x2="180" y2="148" stroke="#F59E0B" stroke-width="4.5"/>
+    <line x1="124" y1="136" x2="180" y2="152" stroke="#FEF3C7" stroke-width="1.5"/>
+
+    <!-- Silk Sheen Highlight Ridge down Left Center -->
+    <line x1="146" y1="70" x2="142" y2="154" stroke="#EF4444" stroke-width="2.5" opacity="0.6"/>
+  </g>
+
+  <!-- Triangular Windsor Tie Knot (Sculpted with Dimple) -->
+  <path d="M 140 44 L 164 44 L 158 68 L 146 68 Z"
+        fill="#B91C1C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Knot Volume Highlight & Side Shadow -->
+  <polygon points="140,44 152,44 150,68 146,68" fill="#DC2626"/>
+  <polygon points="152,44 164,44 158,68 150,68" fill="#991B1B"/>
+
+  <!-- Elegant Tie Dimple (Fold Under the Knot) -->
+  <path d="M 149 68 C 151 72 153 72 155 68" stroke="#7F1D1D" stroke-width="2" fill="none"/>
+
+  <!-- Polished Gold Tie Bar / Tie Clip -->
+  <rect x="142" y="106" width="22" height="4" rx="1.5" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.4"/>
+  <line x1="143" y1="108" x2="163" y2="108" stroke="#FEF3C7" stroke-width="1.2"/>
+</svg>

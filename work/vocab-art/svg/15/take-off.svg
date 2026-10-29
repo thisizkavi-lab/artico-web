@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:take off">
+  <defs>
+    <clipPath id="takeoff-jacket-clip">
+      <path d="M 104 92 L 68 116 L 44 148 L 64 154 L 84 130 L 80 166 L 224 166 L 220 130 L 240 154 L 260 148 L 236 116 L 200 92 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Presentation Ground Shadow -->
+  <ellipse cx="152" cy="172" rx="88" ry="10" fill="#E2E8F0"/>
+
+  <!-- Backdrop soft warm aura -->
+  <ellipse cx="152" cy="100" rx="92" ry="58" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Character Head & Hair (Facing Forward/3/4) -->
+  <!-- Neck -->
+  <path d="M 144 54 L 144 74 L 160 74 L 160 54 Z" fill="#E8B896" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- Head Face Shape -->
+  <ellipse cx="152" cy="44" rx="16" ry="18" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- Hair -->
+  <path d="M 136 40 C 136 24 168 24 168 40 C 168 34 160 28 152 28 C 144 28 138 34 136 40 Z"
+        fill="#1E2A3B"/>
+  <!-- Relaxed facial expression -->
+  <path d="M 144 44 C 146 46 148 46 150 44" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 154 44 C 156 46 158 46 160 44" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M 148 52 C 152 56 156 56 160 52" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Inner T-Shirt (Revealed underneath as outer jacket slips off) -->
+  <path d="M 130 70 L 114 84 L 120 162 L 184 162 L 190 84 L 174 70 Z"
+        fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Crew neck of inner T-shirt -->
+  <path d="M 136 70 C 142 80 162 80 168 70" stroke="#1E2A3B" stroke-width="2" fill="none"/>
+
+  <!-- Character Arms Slipping Out of the Sleeves -->
+  <!-- Left Bare Arm / Forearm -->
+  <path d="M 114 84 L 88 126 L 102 130 L 126 94 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="86" cy="130" r="5.5" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Right Arm Slipping Out of Sleeve -->
+  <path d="M 190 84 L 216 126 L 202 130 L 178 94 Z"
+        fill="#E8B896" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="218" cy="130" r="5.5" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Jacket Slumping Down Off Shoulders (Action of Removal) -->
+  <path d="M 104 92 L 68 116 L 44 148 L 64 154 L 84 130 L 80 166 L 224 166 L 220 130 L 240 154 L 260 148 L 236 116 L 200 92 Z"
+        fill="#3B82F6" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Shading on Dropped Jacket -->
+  <g clip-path="url(#takeoff-jacket-clip)">
+    <!-- Right side dropped jacket shadow -->
+    <path d="M 152 92 L 236 116 L 224 166 L 152 166 Z" fill="#2563EB"/>
+    <!-- Folded lapels flopping open -->
+    <path d="M 104 92 L 126 138 L 96 142 Z" fill="#1D4ED8"/>
+    <path d="M 200 92 L 178 138 L 208 142 Z" fill="#1E3A8A"/>
+  </g>
+
+  <!-- Open Front Zipper Teeth Separated / Falling Aside -->
+  <path d="M 104 92 C 98 118 94 146 90 166" stroke="#1E2A3B" stroke-width="2.2" stroke-dasharray="3 2" fill="none"/>
+  <path d="M 200 92 C 206 118 210 146 214 166" stroke="#1E2A3B" stroke-width="2.2" stroke-dasharray="3 2" fill="none"/>
+
+  <!-- Lower Pants / Trousers -->
+  <path d="M 120 162 L 184 162 L 188 172 L 116 172 Z" fill="#334155" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Dynamic Curved Motion Arrows (Slipping OFF and Downward) -->
+  <path d="M 52 104 C 42 120 44 136 50 144"
+        fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="52,148 45,138 59,140" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <path d="M 252 104 C 262 120 260 136 254 144"
+        fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="252,148 245,140 259,138" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.2"/>
+</svg>

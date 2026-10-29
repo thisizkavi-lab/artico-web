@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:shorts">
+  <defs>
+    <clipPath id="shorts-clip">
+      <path d="M 104 42 L 200 42 L 206 72 L 200 134 L 160 134 L 152 88 L 144 134 L 104 134 L 98 72 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop warm aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="60" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Exposed Skin Tone Legs below shorts -->
+  <path d="M 110 132 C 110 152 114 170 120 178 L 134 178 C 140 170 144 152 144 132 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 160 132 C 160 152 164 170 170 178 L 184 178 C 190 170 194 152 194 132 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Knee cap contour hints -->
+  <path d="M 124 162 C 127 166 131 166 134 162" stroke="#E8B896" stroke-width="1.8" fill="none"/>
+  <path d="M 174 162 C 177 166 181 166 184 162" stroke="#E8B896" stroke-width="1.8" fill="none"/>
+
+  <!-- Main Chino Shorts Silhouette (Short Cut) -->
+  <path d="M 104 42 L 200 42 L 206 72 L 200 134 L 160 134 L 152 88 L 144 134 L 104 134 L 98 72 Z"
+        fill="#E7C8A4" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Shading on right leg -->
+  <g clip-path="url(#shorts-clip)">
+    <path d="M 152 42 L 200 42 L 206 72 L 200 134 L 152 88 Z" fill="#D4A373"/>
+    <path d="M 148 84 L 156 84 L 162 134 L 142 134 Z" fill="#B07D4C" opacity="0.4"/>
+  </g>
+
+  <!-- Waistband with Belt Loops -->
+  <path d="M 104 42 L 200 42 L 202 54 L 102 54 Z"
+        fill="#C28E5C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Webbing Belt Detail -->
+  <rect x="102" y="44" width="100" height="7" rx="1.5" fill="#3B82F6" stroke="#1E2A3B" stroke-width="1.6"/>
+  <!-- D-ring buckle -->
+  <rect x="144" y="43" width="14" height="9" rx="2" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="152" cy="47.5" r="2" fill="#3B82F6"/>
+
+  <rect x="110" y="40" width="4" height="15" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="132" y="40" width="4" height="15" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="172" y="40" width="4" height="15" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+  <rect x="194" y="40" width="4" height="15" rx="1" fill="#C28E5C" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Front Slash Pockets -->
+  <path d="M 108 54 L 122 72" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M 196 54 L 182 72" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Fly Placket -->
+  <path d="M 152 54 L 152 82 C 152 86 148 88 144 87" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Rolled-up Cuffs / Turned Hems at Leg Bottoms -->
+  <path d="M 102 124 L 146 124 L 144 134 L 104 134 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="103" y1="129" x2="145" y2="129" stroke="#C28E5C" stroke-width="1.2" stroke-dasharray="2 2"/>
+
+  <path d="M 158 124 L 202 124 L 200 134 L 160 134 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="159" y1="129" x2="201" y2="129" stroke="#C28E5C" stroke-width="1.2" stroke-dasharray="2 2"/>
+</svg>

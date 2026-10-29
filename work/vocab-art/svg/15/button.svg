@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:button" data-archetype="part-focus">
+  <defs>
+    <clipPath id="button-rim-clip">
+      <circle cx="152" cy="96" r="46"/>
+    </clipPath>
+    <clipPath id="button-inner-clip">
+      <circle cx="152" cy="96" r="34"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Fabric Background Swatch (Ghosted Canvas Texture) -->
+  <rect x="36" y="24" width="232" height="144" rx="12" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1.8"/>
+  <!-- Fabric Weave Texture Grid Hints -->
+  <line x1="56" y1="24" x2="56" y2="168" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+  <line x1="86" y1="24" x2="86" y2="168" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+  <line x1="218" y1="24" x2="218" y2="168" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+  <line x1="248" y1="24" x2="248" y2="168" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+  <line x1="36" y1="54" x2="268" y2="54" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+  <line x1="36" y1="138" x2="268" y2="138" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+
+  <!-- Soft Golden Focus Halo Behind Target Button -->
+  <circle cx="152" cy="96" r="62" fill="#FEF3C7" opacity="0.7"/>
+
+  <!-- Cast Shadow of the Button onto Fabric -->
+  <ellipse cx="155" cy="104" rx="48" ry="46" fill="#94A3B8" opacity="0.45"/>
+
+  <!-- Main Mother-of-Pearl Button Disc -->
+  <circle cx="152" cy="96" r="46" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.8"/>
+
+  <!-- Button Rim Shading -->
+  <g clip-path="url(#button-rim-clip)">
+    <!-- Crescent Rim Shadow -->
+    <path d="M 198 96 C 198 121 177 142 152 142 C 127 142 106 121 106 96 C 106 126 130 146 156 146 C 182 146 202 124 198 96 Z"
+          fill="#CBD5E1"/>
+    <!-- Crescent Rim Highlight -->
+    <path d="M 106 96 C 106 71 127 50 152 50 C 177 50 198 71 198 96 C 198 66 174 46 148 46 C 122 46 102 68 106 96 Z"
+          fill="#FFFFFF"/>
+  </g>
+
+  <!-- Recessed Inner Cup Basin of the Button -->
+  <circle cx="152" cy="96" r="34" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Inner Recess Shading & Pearlescent Sheen -->
+  <g clip-path="url(#button-inner-clip)">
+    <path d="M 118 96 C 118 114 133 130 152 130 C 171 130 186 114 186 96 C 186 118 166 133 148 133 C 130 133 116 116 118 96 Z"
+          fill="#E2E8F0"/>
+    <ellipse cx="140" cy="80" rx="18" ry="10" transform="rotate(-30 140 80)" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Pearlescent Color Glow Accents -->
+    <path d="M 144 88 C 154 84 164 88 168 96" stroke="#FDE68A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M 136 104 C 142 110 152 112 160 108" stroke="#BAE6FD" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Four Button Thread Holes (Pierced Insets) -->
+  <circle cx="140" cy="84" r="5" fill="#1E2A3B"/>
+  <circle cx="164" cy="84" r="5" fill="#1E2A3B"/>
+  <circle cx="140" cy="108" r="5" fill="#1E2A3B"/>
+  <circle cx="164" cy="108" r="5" fill="#1E2A3B"/>
+
+  <!-- Red Cross-Stitched Heavy Thread Threading the 4 Holes -->
+  <!-- Diagonal Stitch 1: Top-Left to Bottom-Right -->
+  <line x1="140" y1="84" x2="164" y2="108" stroke="#DC2626" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="140" y1="84" x2="164" y2="108" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Diagonal Stitch 2: Bottom-Left to Top-Right (Crossing Over) -->
+  <line x1="140" y1="108" x2="164" y2="84" stroke="#B91C1C" stroke-width="5" stroke-linecap="round"/>
+  <line x1="140" y1="108" x2="164" y2="84" stroke="#DC2626" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="140" y1="108" x2="164" y2="84" stroke="#FCA5A5" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Thread Knot in Center of Stitch -->
+  <circle cx="152" cy="96" r="2.5" fill="#7F1D1D"/>
+</svg>

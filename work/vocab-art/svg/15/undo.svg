@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:undo">
+  <defs>
+    <clipPath id="undo-placket-clip">
+      <path d="M 68 34 L 136 34 L 132 164 L 68 164 Z"/>
+    </clipPath>
+    <clipPath id="undo-buttonhole-clip">
+      <path d="M 168 34 L 236 34 L 236 164 L 172 164 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Soft Golden Focus Halo Behind Center Action Zone -->
+  <ellipse cx="152" cy="100" rx="90" ry="60" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- BACKGROUND: Heavy Navy Coat Opening Apart -->
+  <!-- Left Side Coat Placket (With Button) -->
+  <path d="M 44 34 L 140 34 L 132 164 L 44 164 Z"
+        fill="#1E3A8A" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Left Placket Edge Topstitching -->
+  <line x1="134" y1="36" x2="126" y2="162" stroke="#60A5FA" stroke-width="1.6" stroke-dasharray="3 2"/>
+
+  <!-- Right Side Coat Placket (With Buttonhole, Pulled Open) -->
+  <path d="M 164 34 L 260 34 L 260 164 L 172 164 Z"
+        fill="#172554" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- Right Placket Edge Topstitching -->
+  <line x1="170" y1="36" x2="178" y2="162" stroke="#3B82F6" stroke-width="1.6" stroke-dasharray="3 2"/>
+
+  <!-- Garment Inner Cavity (Opening Apart in Center Gap) -->
+  <polygon points="140,34 164,34 172,164 132,164" fill="#0F172A"/>
+  <!-- Inner White Dress Shirt Revealed by Undoing -->
+  <polygon points="141,34 163,34 171,164 133,164" fill="#F1F5F9" opacity="0.9"/>
+  <line x1="152" y1="34" x2="152" y2="164" stroke="#CBD5E1" stroke-width="1.6"/>
+
+  <!-- TARGET ACTION: Button Being Undone / Slipped Out of Buttonhole -->
+  <!-- Buttonhole Slit on Right Flap (Stitched Keyhole Opening) -->
+  <rect x="180" y="88" width="28" height="6" rx="3" transform="rotate(-15 194 91)"
+        fill="#0F172A" stroke="#60A5FA" stroke-width="1.5"/>
+  <circle cx="178" cy="95" r="3.5" fill="#0F172A" stroke="#60A5FA" stroke-width="1.2"/>
+
+  <!-- Four-Hole Horn Button Released / Emerging from Slit (At x=142, y=94) -->
+  <!-- Thread Shank Tethering Button to Left Placket -->
+  <line x1="128" y1="94" x2="142" y2="94" stroke="#FAF8F3" stroke-width="3"/>
+  <line x1="128" y1="94" x2="142" y2="94" stroke="#1E2A3B" stroke-width="1" stroke-dasharray="2 1.5"/>
+
+  <!-- Button Cast Shadow -->
+  <circle cx="144" cy="96" r="15" fill="#0F172A" opacity="0.4"/>
+  <!-- Main Button Disc -->
+  <circle cx="142" cy="94" r="15" fill="#D97706" stroke="#1E2A3B" stroke-width="2.4"/>
+  <circle cx="142" cy="94" r="11" fill="#B45309" stroke="#78350F" stroke-width="1.4"/>
+  <!-- 4 Button Thread Holes & Cross Stitch -->
+  <circle cx="138" cy="90" r="1.6" fill="#1E2A3B"/>
+  <circle cx="146" cy="90" r="1.6" fill="#1E2A3B"/>
+  <circle cx="138" cy="98" r="1.6" fill="#1E2A3B"/>
+  <circle cx="146" cy="98" r="1.6" fill="#1E2A3B"/>
+  <line x1="138" y1="90" x2="146" y2="98" stroke="#FEF3C7" stroke-width="1.2"/>
+  <line x1="138" y1="98" x2="146" y2="90" stroke="#FEF3C7" stroke-width="1.2"/>
+
+  <!-- EXPRESSIVE HANDS PERFORMING THE UNDO ACTION -->
+  <!-- Left Hand / Fingers (Thumb & Forefinger Easing Button Outward) -->
+  <path d="M 88 134 C 98 126 112 114 122 108 L 132 118 C 122 126 108 140 96 148 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Left Thumb Tip Touching Lower Rim of Button -->
+  <ellipse cx="132" cy="108" rx="8" ry="6" transform="rotate(-20 132 108)"
+           fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Right Hand / Fingers (Pulling Buttonhole Flap to the Right) -->
+  <path d="M 226 138 C 214 128 202 116 194 108 L 186 118 C 196 126 208 140 218 150 Z"
+        fill="#FBD8B5" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Right Thumb Tip Peeling Fabric Edge Back -->
+  <ellipse cx="188" cy="108" rx="8" ry="6" transform="rotate(20 188 108)"
+           fill="#E8B896" stroke="#1E2A3B" stroke-width="2"/>
+
+  <!-- Dynamic Outward Separation Arrows (Indicating UNDO / Release) -->
+  <!-- Leftward Arrow on Button Flap -->
+  <path d="M 124 64 L 96 64" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="90,64 100,58 100,70" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.2"/>
+
+  <!-- Rightward Arrow on Buttonhole Flap -->
+  <path d="M 180 64 L 208 64" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="214,64 204,58 204,70" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:tights">
+  <defs>
+    <clipPath id="tights-legs-clip">
+      <path d="M 116 34 L 188 34 C 196 66 194 96 186 130 C 182 148 180 164 186 172 C 188 174 184 176 178 176 C 170 176 164 172 162 164 C 158 148 158 126 156 96 C 154 86 152 82 152 80 C 152 82 150 86 148 96 C 146 126 146 148 142 164 C 140 172 134 176 126 176 C 120 176 116 174 118 172 C 124 164 122 148 118 130 C 110 96 108 66 116 34 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft violet aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="60" fill="#EDE9FE" opacity="0.6"/>
+
+  <!-- Main Opaque Knit Tights Silhouette (Footed with Toes Enclosed) -->
+  <path d="M 116 34 L 188 34 C 196 66 194 96 186 130 C 182 148 180 164 186 172 C 188 174 184 176 178 176 C 170 176 164 172 162 164 C 158 148 158 126 156 96 C 154 86 152 82 152 80 C 152 82 150 86 148 96 C 146 126 146 148 142 164 C 140 172 134 176 126 176 C 120 176 116 174 118 172 C 124 164 122 148 118 130 C 110 96 108 66 116 34 Z"
+        fill="#7C3AED" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Knit Texture & 3-Tone Shading -->
+  <g clip-path="url(#tights-legs-clip)">
+    <!-- Right leg darker side shadow -->
+    <path d="M 152 34 L 188 34 C 196 66 194 96 186 130 C 182 148 180 164 186 176 L 160 176 Z"
+          fill="#5B21B6"/>
+
+    <!-- Left Leg Knit Highlight Sheen -->
+    <path d="M 132 58 C 136 78 134 110 130 144" stroke="#A78BFA" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 172 58 C 176 78 174 110 170 144" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Subtle Knit Rib Lines along high waistband -->
+    <line x1="120" y1="38" x2="184" y2="38" stroke="#A78BFA" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+    <line x1="120" y1="44" x2="184" y2="44" stroke="#A78BFA" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+  </g>
+
+  <!-- High-Waisted Elastic Band -->
+  <path d="M 116 34 L 188 34 L 187 46 L 117 46 Z"
+        fill="#6D28D9" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Enclosed Ballerina Foot & Toe Profile Contour Lines -->
+  <path d="M 118 168 C 124 168 128 172 128 176 L 120 176" stroke="#1E2A3B" stroke-width="1.8" fill="none"/>
+  <path d="M 186 168 C 180 168 176 172 176 176 L 184 176" stroke="#1E2A3B" stroke-width="1.8" fill="none"/>
+</svg>

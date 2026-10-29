@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:checked / checkered">
+  <defs>
+    <clipPath id="swatch-clip">
+      <path d="M 52 38 L 244 38 C 248 38 252 42 252 46 L 252 146 C 252 150 248 154 244 154 L 52 154 C 48 154 44 150 44 146 L 44 46 C 44 42 48 38 52 38 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Presentation Shadow -->
+  <rect x="48" y="44" width="212" height="120" rx="8" fill="#E2E8F0"/>
+
+  <!-- Main Checkered Fabric Swatch -->
+  <rect x="44" y="38" width="208" height="116" rx="6" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/>
+
+  <!-- Checkerboard Gingham Grid Pattern (Alternating Red, Crimson, Light Pink) -->
+  <g clip-path="url(#swatch-clip)">
+    <!-- Column 1 -->
+    <rect x="44" y="38" width="26" height="29" fill="#EF4444"/>
+    <rect x="44" y="67" width="26" height="29" fill="#FCA5A5"/>
+    <rect x="44" y="96" width="26" height="29" fill="#EF4444"/>
+    <rect x="44" y="125" width="26" height="29" fill="#FCA5A5"/>
+
+    <!-- Column 2 -->
+    <rect x="70" y="38" width="26" height="29" fill="#991B1B"/>
+    <rect x="70" y="67" width="26" height="29" fill="#EF4444"/>
+    <rect x="70" y="96" width="26" height="29" fill="#991B1B"/>
+    <rect x="70" y="125" width="26" height="29" fill="#EF4444"/>
+
+    <!-- Column 3 -->
+    <rect x="96" y="38" width="26" height="29" fill="#EF4444"/>
+    <rect x="96" y="67" width="26" height="29" fill="#FCA5A5"/>
+    <rect x="96" y="96" width="26" height="29" fill="#EF4444"/>
+    <rect x="96" y="125" width="26" height="29" fill="#FCA5A5"/>
+
+    <!-- Column 4 -->
+    <rect x="122" y="38" width="26" height="29" fill="#991B1B"/>
+    <rect x="122" y="67" width="26" height="29" fill="#EF4444"/>
+    <rect x="122" y="96" width="26" height="29" fill="#991B1B"/>
+    <rect x="122" y="125" width="26" height="29" fill="#EF4444"/>
+
+    <!-- Column 5 -->
+    <rect x="148" y="38" width="26" height="29" fill="#EF4444"/>
+    <rect x="148" y="67" width="26" height="29" fill="#FCA5A5"/>
+    <rect x="148" y="96" width="26" height="29" fill="#EF4444"/>
+    <rect x="148" y="125" width="26" height="29" fill="#FCA5A5"/>
+
+    <!-- Column 6 -->
+    <rect x="174" y="38" width="26" height="29" fill="#991B1B"/>
+    <rect x="174" y="67" width="26" height="29" fill="#EF4444"/>
+    <rect x="174" y="96" width="26" height="29" fill="#991B1B"/>
+    <rect x="174" y="125" width="26" height="29" fill="#EF4444"/>
+
+    <!-- Column 7 -->
+    <rect x="200" y="38" width="26" height="29" fill="#EF4444"/>
+    <rect x="200" y="67" width="26" height="29" fill="#FCA5A5"/>
+    <rect x="200" y="96" width="26" height="29" fill="#EF4444"/>
+    <rect x="200" y="125" width="26" height="29" fill="#FCA5A5"/>
+
+    <!-- Column 8 -->
+    <rect x="226" y="38" width="26" height="29" fill="#991B1B"/>
+    <rect x="226" y="67" width="26" height="29" fill="#EF4444"/>
+    <rect x="226" y="96" width="26" height="29" fill="#991B1B"/>
+    <rect x="226" y="125" width="26" height="29" fill="#EF4444"/>
+
+    <!-- Diagonal Fabric Fold Shadow -->
+    <path d="M 44 110 L 252 50 L 252 80 L 44 140 Z" fill="#1E2A3B" opacity="0.12"/>
+
+    <!-- Folded Dog-Ear Corner at Bottom-Right showing plain lining -->
+    <polygon points="216,154 252,118 252,154" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/>
+    <polygon points="216,154 252,118 216,118" fill="#CBD5E1" opacity="0.5"/>
+  </g>
+
+  <!-- Pinking Shears Zig-Zag Cut Edge on Bottom -->
+  <path d="M 44 154 L 50 159 L 56 154 L 62 159 L 68 154 L 74 159 L 80 154 L 86 159 L 92 154 L 98 159 L 104 154 L 110 159 L 116 154 L 122 159 L 128 154 L 134 159 L 140 154 L 146 159 L 152 154 L 158 159 L 164 154 L 170 159 L 176 154 L 182 159 L 188 154 L 194 159 L 200 154 L 206 159 L 212 154"
+        stroke="#1E2A3B" stroke-width="2" fill="none"/>
+
+  <!-- Yellow Tailor Tape Measure Draped Over Swatch -->
+  <path d="M 32 86 C 80 84 140 102 210 96 C 240 94 266 84 274 78"
+        stroke="#F59E0B" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M 32 86 C 80 84 140 102 210 96 C 240 94 266 84 274 78"
+        stroke="#1E2A3B" stroke-width="1.8" stroke-dasharray="2 3" fill="none"/>
+</svg>

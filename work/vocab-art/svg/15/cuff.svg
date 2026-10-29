@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:cuff" data-archetype="part-focus">
+  <defs>
+    <clipPath id="cuff-band-clip">
+      <path d="M 136 62 L 216 78 C 224 80 230 88 228 98 L 222 136 C 220 146 212 152 202 150 L 122 134 C 112 132 106 124 108 114 L 114 76 C 116 66 124 60 136 62 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Soft Golden Focus Halo Behind Sleeve Cuff Zone -->
+  <ellipse cx="172" cy="108" rx="72" ry="52" fill="#FEF3C7"/>
+  <ellipse cx="172" cy="108" rx="60" ry="40" fill="#FDE68A" opacity="0.6"/>
+
+  <!-- GHOSTED CONTEXT: Forearm & Shirt Sleeve Entering from Left -->
+  <path d="M 38 42 L 128 60 L 114 132 L 24 114 Z"
+        fill="#E6ECF2" stroke="#7B8A9E" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Ghosted Sleeve Pleat Folds -->
+  <path d="M 52 74 L 124 84" stroke="#94A3B8" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <path d="M 44 96 L 118 104" stroke="#94A3B8" stroke-width="1.6" stroke-dasharray="3 2"/>
+
+  <!-- Ghosted Sleeve Gauntlet Placket & Gauntlet Button -->
+  <path d="M 124 60 L 88 53 L 94 88 L 104 90 Z" fill="#DCE3EC" stroke="#7B8A9E" stroke-width="1.5"/>
+  <circle cx="98" cy="74" r="2.2" fill="#94A3B8" stroke="#7B8A9E" stroke-width="1"/>
+
+  <!-- Ghosted Hand / Wrist Peeking out of Cuff Opening on Right -->
+  <path d="M 218 80 C 242 84 258 92 268 98 C 274 102 278 110 274 118 C 268 126 248 132 206 148 Z"
+        fill="#FBD8B5" stroke="#E8B896" stroke-width="2" stroke-linejoin="round" opacity="0.7"/>
+
+  <!-- FULL-COLOR TARGET PART: Structured Crisp Dress Shirt Cuff -->
+  <path d="M 136 62 L 216 78 C 224 80 230 88 228 98 L 222 136 C 220 146 212 152 202 150 L 122 134 C 112 132 106 124 108 114 L 114 76 C 116 66 124 60 136 62 Z"
+        fill="#2563EB" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- Cuff Volume 3-Tone Shading & Highlights -->
+  <g clip-path="url(#cuff-band-clip)">
+    <!-- Lower & Inner Cuff Shade -->
+    <path d="M 106 114 L 122 134 L 202 150 L 222 136 L 218 152 L 118 152 Z" fill="#1D4ED8"/>
+    <path d="M 180 72 L 230 82 L 222 140 L 172 130 Z" fill="#1E3A8A" opacity="0.35"/>
+    <!-- Top Edge Highlight Crease -->
+    <path d="M 136 62 L 216 78 L 214 84 L 134 68 Z" fill="#60A5FA"/>
+
+    <!-- Crisp Tailored Edge Topstitching Around Cuff Perimeter -->
+    <path d="M 134 66 L 214 82 C 220 84 224 90 222 98 L 216 132 C 214 140 208 144 200 142 L 124 128 C 116 126 112 120 114 112 L 118 78 C 120 70 126 66 134 66 Z"
+          fill="none" stroke="#DBEAFE" stroke-width="1.4" stroke-dasharray="3 2"/>
+  </g>
+
+  <!-- Buttonhole Slit with Keyhole Eyelet -->
+  <rect x="180" y="104" width="22" height="4" rx="2" transform="rotate(11 191 106)"
+        fill="#1E2A3B" stroke="#60A5FA" stroke-width="1.2"/>
+
+  <!-- Mother-of-Pearl Cuff Button Fastened Through Buttonhole -->
+  <!-- Cast shadow of button -->
+  <circle cx="158" cy="103" r="7.5" fill="#1D4ED8" opacity="0.5"/>
+  <!-- Button disc -->
+  <circle cx="156" cy="101" r="7" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="156" cy="101" r="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <!-- Button thread cross -->
+  <circle cx="154.5" cy="99.5" r="0.8" fill="#1E2A3B"/>
+  <circle cx="157.5" cy="99.5" r="0.8" fill="#1E2A3B"/>
+  <circle cx="154.5" cy="102.5" r="0.8" fill="#1E2A3B"/>
+  <circle cx="157.5" cy="102.5" r="0.8" fill="#1E2A3B"/>
+  <line x1="154.5" y1="99.5" x2="157.5" y2="102.5" stroke="#2563EB" stroke-width="1"/>
+  <line x1="154.5" y1="102.5" x2="157.5" y2="99.5" stroke="#2563EB" stroke-width="1"/>
+</svg>

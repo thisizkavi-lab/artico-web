@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:silk">
+  <defs>
+    <clipPath id="silk-ribbon-clip">
+      <path d="M 44 146 C 72 136 94 92 126 84 C 160 76 182 120 216 110 C 244 102 258 66 266 52 L 254 44 C 242 58 230 88 206 96 C 176 106 150 64 116 72 C 86 80 62 122 36 132 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft iridescent lavender/pink aura -->
+  <ellipse cx="152" cy="108" rx="94" ry="60" fill="#F5F3FF" opacity="0.8"/>
+
+  <!-- Fluid Flowing Silk Ribbon Fabric Waves (Cascading S-Curve) -->
+  <!-- Layer 1: Back Under-Drape Shadow Wave -->
+  <path d="M 38 152 C 70 144 94 98 128 92 C 164 86 188 132 222 122 C 252 114 266 74 274 58 L 260 48 C 248 64 236 98 210 106 C 178 116 154 74 118 80 C 86 88 64 132 32 140 Z"
+        fill="#C4B5FD" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- Layer 2: Main Lustrous Flowing Silk Wave -->
+  <path d="M 44 146 C 72 136 94 92 126 84 C 160 76 182 120 216 110 C 244 102 258 66 266 52 L 254 44 C 242 58 230 88 206 96 C 176 106 150 64 116 72 C 86 80 62 122 36 132 Z"
+        fill="#DDD6FE" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+
+  <!-- High-Luster Silk Sheen Highlights along Wave Crests -->
+  <g clip-path="url(#silk-ribbon-clip)">
+    <!-- Deep Valley Shadow -->
+    <path d="M 112 68 C 132 68 150 96 168 112 L 152 118 C 136 102 122 78 106 76 Z" fill="#8B5CF6" opacity="0.45"/>
+    <path d="M 200 92 C 220 92 238 72 256 50 L 244 44 C 226 66 212 84 192 86 Z" fill="#8B5CF6" opacity="0.45"/>
+
+    <!-- Brilliant Liquid Silk Crest Highlights (Satin Shimmer) -->
+    <path d="M 40 140 C 66 128 88 88 122 78" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 124 78 C 158 70 178 112 212 104" stroke="#EDE9FE" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 214 104 C 238 96 250 68 262 50" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Secondary Billowing Silk Swatch Peeking Out Below -->
+  <path d="M 68 140 C 104 128 132 148 168 142 C 196 138 214 122 228 114"
+        stroke="#1E2A3B" stroke-width="2.2" fill="none"/>
+  <path d="M 68 140 C 104 128 132 148 168 142 C 196 138 214 122 228 114 L 218 126 C 188 136 166 154 130 156 C 96 158 76 148 68 140 Z"
+        fill="#EDE9FE" opacity="0.8"/>
+
+  <!-- NATURAL BOTANICAL ORIGIN: Mulberry Leaf & Golden Silkworm Cocoon (Bottom-Left) -->
+  <!-- Green Mulberry Leaf -->
+  <path d="M 52 158 C 42 146 48 128 66 128 C 84 128 92 146 82 162 C 68 166 56 164 52 158 Z"
+        fill="#34D399" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Leaf main vein -->
+  <path d="M 54 160 C 64 150 72 140 76 132" stroke="#059669" stroke-width="1.6" fill="none"/>
+
+  <!-- Golden Silkworm Cocoon Resting on Leaf -->
+  <ellipse cx="80" cy="146" rx="14" ry="10" transform="rotate(-25 80 146)"
+           fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2"/>
+  <ellipse cx="80" cy="146" rx="11" ry="7" transform="rotate(-25 80 146)"
+           fill="#FDE68A"/>
+  <!-- Fine Spun Silk Filament Wrapped Around Cocoon -->
+  <path d="M 72 144 C 76 138 84 138 88 144 M 74 148 C 78 142 86 142 90 148 M 76 152 C 80 146 88 146 92 152"
+        stroke="#D97706" stroke-width="1.2" fill="none"/>
+  <!-- Unraveling Silk Thread Connecting Cocoon to Flowing Silk Ribbon -->
+  <path d="M 88 140 C 96 132 94 116 112 110"
+        stroke="#8B5CF6" stroke-width="1.6" stroke-dasharray="2 1.5" fill="none"/>
+</svg>

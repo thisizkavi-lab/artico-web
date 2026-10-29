@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:striped">
+  <defs>
+    <clipPath id="striped-swatch-clip">
+      <path d="M 48 36 L 256 36 L 256 156 L 48 156 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Presentation Shadow -->
+  <rect x="52" y="42" width="208" height="122" rx="8" fill="#E2E8F0"/>
+
+  <!-- Main Striped Fabric Swatch Base (Cream) -->
+  <rect x="48" y="36" width="208" height="120" rx="6" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/>
+
+  <!-- Alternating Bold French Navy Horizontal Stripes -->
+  <g clip-path="url(#striped-swatch-clip)">
+    <!-- Stripe 1 -->
+    <rect x="48" y="36" width="208" height="12" fill="#1E3A8A"/>
+    <!-- Stripe 2 -->
+    <rect x="48" y="60" width="208" height="12" fill="#1E3A8A"/>
+    <!-- Stripe 3 -->
+    <rect x="48" y="84" width="208" height="12" fill="#1E3A8A"/>
+    <!-- Stripe 4 -->
+    <rect x="48" y="108" width="208" height="12" fill="#1E3A8A"/>
+    <!-- Stripe 5 -->
+    <rect x="48" y="132" width="208" height="12" fill="#1E3A8A"/>
+
+    <!-- Red Pin-Stripe Accent Line Running Between Center Stripes -->
+    <line x1="48" y1="78" x2="256" y2="78" stroke="#EF4444" stroke-width="2"/>
+    <line x1="48" y1="126" x2="256" y2="126" stroke="#EF4444" stroke-width="2"/>
+
+    <!-- Diagonal Fabric Drape Folds (Shadow Waves Across Stripes) -->
+    <path d="M 48 94 Q 152 54 256 100 L 256 118 Q 152 72 48 112 Z"
+          fill="#1E2A3B" opacity="0.25"/>
+    <path d="M 48 54 Q 152 14 256 60 L 256 72 Q 152 26 48 66 Z"
+          fill="#1E2A3B" opacity="0.2"/>
+
+    <!-- Folded Dog-Ear Corner at Bottom-Right -->
+    <polygon points="218,156 256,118 256,156" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2"/>
+    <polygon points="218,156 256,118 218,118" fill="#CBD5E1" opacity="0.5"/>
+  </g>
+
+  <!-- Pinking Shears Zig-Zag Cut Top Edge -->
+  <path d="M 48 36 L 54 31 L 60 36 L 66 31 L 72 36 L 78 31 L 84 36 L 90 31 L 96 36 L 102 31 L 108 36 L 114 31 L 120 36 L 126 31 L 132 36 L 138 31 L 144 36 L 150 31 L 156 36 L 162 31 L 168 36 L 174 31 L 180 36 L 186 31 L 192 36 L 198 31 L 204 36 L 210 31 L 216 36 L 222 31 L 228 36 L 234 31 L 240 36 L 246 31 L 252 36 L 256 36"
+        stroke="#1E2A3B" stroke-width="2" fill="none"/>
+</svg>

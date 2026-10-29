@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:pantyhose">
+  <defs>
+    <clipPath id="pantyhose-legs-clip">
+      <path d="M 116 32 L 188 32 C 194 60 192 90 186 124 C 182 144 180 162 186 172 C 188 174 186 176 180 176 C 172 176 166 172 164 164 C 160 148 160 126 156 94 C 154 84 152 80 152 78 C 152 80 150 84 148 94 C 144 126 144 148 140 164 C 138 172 132 176 124 176 C 118 176 116 174 118 172 C 124 162 122 144 118 124 C 112 90 110 60 116 32 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop soft golden aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="60" fill="#FEF3C7" opacity="0.6"/>
+
+  <!-- Retail Hosiery Cardboard Packaging Sleeve in Background -->
+  <rect x="52" y="36" width="62" height="96" rx="4" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/>
+  <rect x="52" y="36" width="62" height="22" rx="4" fill="#E28743"/>
+  <rect x="52" y="54" width="62" height="4" fill="#B45309"/>
+  <!-- Gold foil brand band -->
+  <line x1="58" y1="46" x2="88" y2="46" stroke="#FEF3C7" stroke-width="2"/>
+  <line x1="58" y1="50" x2="74" y2="50" stroke="#FEF3C7" stroke-width="1.4"/>
+  <!-- Leg silhouette icon on pack -->
+  <path d="M 94 70 C 96 82 98 94 102 108 L 106 108 C 104 96 102 82 100 70 Z" fill="#D97706" opacity="0.5"/>
+
+  <!-- Main Pantyhose Silhouette (Sheer Translucent Skin Tone) -->
+  <path d="M 116 32 L 188 32 C 194 60 192 90 186 124 C 182 144 180 162 186 172 C 188 174 186 176 180 176 C 172 176 166 172 164 164 C 160 148 160 126 156 94 C 154 84 152 80 152 78 C 152 80 150 84 148 94 C 144 126 144 148 140 164 C 138 172 132 176 124 176 C 118 176 116 174 118 172 C 124 162 122 144 118 124 C 112 90 110 60 116 32 Z"
+        fill="#FDE68A" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Sheer Shimmer Highlights and Shading -->
+  <g clip-path="url(#pantyhose-legs-clip)">
+    <!-- Opaque Reinforced Control-Top Panty Area (Key Pantyhose Marker) -->
+    <path d="M 110 32 L 194 32 L 190 74 C 172 78 152 82 152 82 C 152 82 132 78 114 74 Z"
+          fill="#D97706" stroke="#1E2A3B" stroke-width="1.8"/>
+    <!-- Waistband elastic ribbing -->
+    <rect x="110" y="32" width="84" height="8" fill="#B45309"/>
+    <line x1="112" y1="36" x2="192" y2="36" stroke="#FEF3C7" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+
+    <!-- Right Leg Sheer Shading -->
+    <path d="M 152 78 L 190 74 C 194 92 190 120 186 148 L 186 176 L 160 176 Z"
+          fill="#F59E0B" opacity="0.35"/>
+
+    <!-- Sheer Nylon Gloss Sheen Running Down Shins -->
+    <path d="M 130 84 C 134 106 132 134 128 156"
+          stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 174 84 C 178 106 176 134 172 156"
+          stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+    <!-- Reinforced Toe Caps at Feet -->
+    <path d="M 118 166 C 124 166 128 170 128 176 L 118 176 Z" fill="#D97706"/>
+    <path d="M 176 166 C 182 166 186 170 186 176 L 176 176 Z" fill="#D97706"/>
+  </g>
+
+  <!-- Toe Seam Lines -->
+  <line x1="120" y1="168" x2="128" y2="174" stroke="#1E2A3B" stroke-width="1.5"/>
+  <line x1="178" y1="168" x2="186" y2="174" stroke="#1E2A3B" stroke-width="1.5"/>
+</svg>

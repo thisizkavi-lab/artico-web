@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:pajamas / pyjamas (uk spelling)">
+  <defs>
+    <clipPath id="pj-top-clip">
+      <path d="M 120 42 L 72 58 L 58 126 L 80 130 L 92 96 L 90 142 C 114 146 190 146 214 142 L 212 96 L 224 130 L 246 126 L 232 58 L 184 42 Z"/>
+    </clipPath>
+    <clipPath id="pj-pants-clip">
+      <path d="M 112 124 L 192 124 L 198 178 L 162 178 L 152 148 L 142 178 L 106 178 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop cozy sleep aura -->
+  <ellipse cx="152" cy="110" rx="92" ry="62" fill="#EDE9FE" opacity="0.6"/>
+
+  <!-- Crescent moon & star night sleep vibe in top corner -->
+  <path d="M 238 28 C 234 36 238 46 248 48 C 242 52 232 50 228 42 C 224 34 228 26 238 28 Z"
+        fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.6"/>
+  <polygon points="256,36 258,40 262,40 259,42 260,46 256,43 252,46 253,42 250,40 254,40" fill="#FDE68A"/>
+
+  <!-- Matching Pajama Bottoms (Pants) Peeking Below Top -->
+  <path d="M 112 124 L 192 124 L 198 178 L 162 178 L 152 148 L 142 178 L 106 178 Z"
+        fill="#DDD6FE" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Pants vertical sleep stripes -->
+  <g clip-path="url(#pj-pants-clip)">
+    <line x1="116" y1="120" x2="116" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="128" y1="120" x2="128" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="140" y1="120" x2="140" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="164" y1="120" x2="164" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="176" y1="120" x2="176" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="188" y1="120" x2="188" y2="180" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+  </g>
+  <!-- Pants piped ankle cuffs -->
+  <path d="M 106 170 L 142 170 L 142 178 L 106 178 Z" fill="#C4B5FD" stroke="#1E2A3B" stroke-width="1.8"/>
+  <line x1="106" y1="170" x2="142" y2="170" stroke="#6D28D9" stroke-width="1.6"/>
+  <path d="M 162 170 L 198 170 L 198 178 L 162 178 Z" fill="#C4B5FD" stroke="#1E2A3B" stroke-width="1.8"/>
+  <line x1="162" y1="170" x2="198" y2="170" stroke="#6D28D9" stroke-width="1.6"/>
+
+  <!-- Pajama Top Left Sleeve -->
+  <path d="M 84 58 L 58 126 L 80 130 L 94 96 L 104 62 Z"
+        fill="#DDD6FE" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Left Sleeve Piped Cuff -->
+  <path d="M 58 120 L 80 124 L 78 132 L 56 128 Z"
+        fill="#C4B5FD" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <line x1="58" y1="120" x2="80" y2="124" stroke="#6D28D9" stroke-width="1.8"/>
+
+  <!-- Pajama Top Right Sleeve -->
+  <path d="M 220 58 L 246 126 L 224 130 L 210 96 L 200 62 Z"
+        fill="#C4B5FD" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Right Sleeve Piped Cuff -->
+  <path d="M 224 130 L 246 126 L 248 134 L 226 138 Z"
+        fill="#A78BFA" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <line x1="224" y1="130" x2="246" y2="126" stroke="#6D28D9" stroke-width="1.8"/>
+
+  <!-- Main Pajama Top Body -->
+  <path d="M 120 42 L 84 58 L 90 142 C 114 146 190 146 214 142 L 220 58 L 184 42 Z"
+        fill="#DDD6FE" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Vertical Sleep Stripes & Shading on Top -->
+  <g clip-path="url(#pj-top-clip)">
+    <path d="M 152 42 L 220 58 L 214 142 L 152 144 Z" fill="#C4B5FD" opacity="0.35"/>
+    <line x1="102" y1="50" x2="102" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="116" y1="50" x2="116" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="130" y1="50" x2="130" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="174" y1="50" x2="174" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="188" y1="50" x2="188" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+    <line x1="202" y1="50" x2="202" y2="150" stroke="#8B5CF6" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- Piped Chest Pocket -->
+  <rect x="100" y="86" width="22" height="24" rx="2" fill="#EDE9FE" stroke="#1E2A3B" stroke-width="1.8"/>
+  <line x1="100" y1="89" x2="122" y2="89" stroke="#6D28D9" stroke-width="2"/>
+
+  <!-- Pajama Camp / Notch Collar with White Satin Piping -->
+  <!-- Left Notch Collar Lapel -->
+  <path d="M 124 40 L 106 62 L 126 66 L 116 86 L 152 92 L 152 48 Z"
+        fill="#EDE9FE" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 124 40 L 106 62 L 126 66 L 116 86 L 152 92"
+        fill="none" stroke="#6D28D9" stroke-width="1.8"/>
+
+  <!-- Right Notch Collar Lapel -->
+  <path d="M 180 40 L 198 62 L 178 66 L 188 86 L 152 92 L 152 48 Z"
+        fill="#C4B5FD" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M 180 40 L 198 62 L 178 66 L 188 86 L 152 92"
+        fill="none" stroke="#6D28D9" stroke-width="1.8"/>
+
+  <!-- Front Center Placket with Mother-of-Pearl Buttons -->
+  <line x1="152" y1="92" x2="152" y2="144" stroke="#1E2A3B" stroke-width="2"/>
+  <line x1="151" y1="92" x2="151" y2="144" stroke="#6D28D9" stroke-width="1.6"/>
+  <circle cx="152" cy="104" r="2.4" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="118" r="2.4" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+  <circle cx="152" cy="132" r="2.4" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.2"/>
+</svg>

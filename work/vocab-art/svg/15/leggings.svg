@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:leggings">
+  <defs>
+    <clipPath id="leggings-clip">
+      <path d="M 116 34 L 188 34 C 196 66 194 96 186 130 C 182 148 178 168 174 172 L 158 172 C 160 156 162 136 156 100 C 154 90 152 86 152 84 C 152 86 150 90 148 100 C 142 136 144 156 146 172 L 130 172 C 126 168 122 148 118 130 C 110 96 108 66 116 34 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop athletic aura -->
+  <ellipse cx="152" cy="110" rx="84" ry="62" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Skin Tone Feet at Ankle Opening -->
+  <ellipse cx="138" cy="176" rx="6" ry="4" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="1.8"/>
+  <ellipse cx="166" cy="176" rx="6" ry="4" fill="#FBD8B5" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Main Leggings Silhouette -->
+  <path d="M 116 34 L 188 34 C 196 66 194 96 186 130 C 182 148 178 168 174 172 L 158 172 C 160 156 162 136 156 100 C 154 90 152 86 152 84 C 152 86 150 90 148 100 C 142 136 144 156 146 172 L 130 172 C 126 168 122 148 118 130 C 110 96 108 66 116 34 Z"
+        fill="#334155" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- High-Rise Wide Crossover Waistband -->
+  <path d="M 116 34 L 188 34 L 186 52 C 168 56 152 64 152 64 C 152 64 136 56 118 52 Z"
+        fill="#1E293B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Right Leg Shadow & Anatomical Contouring -->
+  <g clip-path="url(#leggings-clip)">
+    <!-- Right leg darker side -->
+    <path d="M 152 34 L 188 34 C 196 66 194 96 186 130 C 182 148 178 168 174 172 L 158 172 Z"
+          fill="#1E293B" opacity="0.45"/>
+
+    <!-- Left thigh subtle matte sheen highlight -->
+    <path d="M 132 58 C 136 78 134 110 130 134" stroke="#475569" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 172 58 C 176 78 174 110 170 134" stroke="#475569" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Ergonomic Curved Side Flatlock Seams (Distinct Legging marker) -->
+    <path d="M 120 48 C 134 76 132 118 124 168"
+          stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="3 1.5" fill="none"/>
+    <path d="M 184 48 C 170 76 172 118 180 168"
+          stroke="#64748B" stroke-width="1.8" stroke-dasharray="3 1.5" fill="none"/>
+
+    <!-- Calf ergonomic diagonal style panel seam -->
+    <path d="M 124 126 C 130 132 138 134 144 132"
+          stroke="#94A3B8" stroke-width="1.6" stroke-dasharray="2 1.5" fill="none"/>
+    <path d="M 180 126 C 174 132 166 134 160 132"
+          stroke="#64748B" stroke-width="1.6" stroke-dasharray="2 1.5" fill="none"/>
+  </g>
+
+  <!-- Ankle Hem Cuffs -->
+  <line x1="130" y1="168" x2="146" y2="168" stroke="#1E2A3B" stroke-width="1.6"/>
+  <line x1="158" y1="168" x2="174" y2="168" stroke="#1E2A3B" stroke-width="1.6"/>
+</svg>

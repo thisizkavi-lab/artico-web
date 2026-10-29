@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:hood (clothing)" data-archetype="part-focus">
+  <defs>
+    <clipPath id="hood-outer-clip">
+      <path d="M 104 104 C 92 84 96 38 126 22 C 142 14 164 14 178 22 C 208 38 212 84 200 104 L 188 114 C 172 108 132 108 116 114 Z"/>
+    </clipPath>
+    <clipPath id="hood-inner-clip">
+      <path d="M 120 100 C 114 80 118 48 138 36 C 146 32 158 32 166 36 C 186 48 190 80 184 100 C 172 96 132 96 120 100 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Soft Focus Halo Behind Hood -->
+  <ellipse cx="152" cy="74" rx="72" ry="52" fill="#FEF3C7"/>
+  <ellipse cx="152" cy="74" rx="60" ry="42" fill="#FDE68A" opacity="0.6"/>
+
+  <!-- GHOSTED CONTEXT: Sweatshirt Shoulders & Chest Below -->
+  <path d="M 86 116 L 44 142 L 32 178 L 86 178 L 96 142 L 96 178 L 208 178 L 208 142 L 218 178 L 272 178 L 260 142 L 218 116 Z"
+        fill="#E6ECF2" stroke="#7B8A9E" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Ghosted Kangaroo Pocket Outline -->
+  <path d="M 112 156 L 192 156 L 184 178 L 120 178 Z"
+        fill="#DCE3EC" stroke="#7B8A9E" stroke-width="1.6"/>
+
+  <!-- FULL-COLOR TARGET PART: Heavy Cotton Pullover Hood -->
+  <!-- Outer Hood Shell -->
+  <path d="M 104 104 C 92 84 96 38 126 22 C 142 14 164 14 178 22 C 208 38 212 84 200 104 L 188 116 C 172 108 132 108 116 116 Z"
+        fill="#DC2626" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- Outer Hood 3-Tone Shading -->
+  <g clip-path="url(#hood-outer-clip)">
+    <!-- Right side shadow -->
+    <path d="M 152 14 C 184 24 212 56 200 104 L 188 116 L 152 116 Z" fill="#991B1B"/>
+    <!-- Top Crown Highlight -->
+    <path d="M 126 22 C 142 14 164 14 178 22 L 170 32 C 158 26 146 26 134 32 Z" fill="#EF4444"/>
+    <!-- Center Top Seam of the Hood -->
+    <path d="M 152 16 C 152 40 152 70 152 108" stroke="#7F1D1D" stroke-width="2"/>
+  </g>
+
+  <!-- Inner Contrast Lining of the Hood Opening -->
+  <path d="M 118 102 C 112 80 116 46 136 34 C 146 28 158 28 168 34 C 188 46 192 80 186 102 C 172 96 132 96 118 102 Z"
+        fill="#FEE2E2" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Inner Hood Deep Cavity Shadow -->
+  <g clip-path="url(#hood-inner-clip)">
+    <path d="M 118 102 C 124 72 136 50 152 50 C 168 50 180 72 186 102 Z" fill="#7F1D1D" opacity="0.85"/>
+  </g>
+
+  <!-- Tubular Drawstring Channel Rim Stitching along Opening Face -->
+  <path d="M 106 102 C 96 82 100 40 128 26 C 144 18 160 18 176 26 C 204 40 208 82 198 102"
+        stroke="#FCA5A5" stroke-width="1.6" stroke-dasharray="3 2" fill="none"/>
+
+  <!-- Metal Grommets / Eyelets for Drawstrings -->
+  <circle cx="128" cy="112" r="4.2" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="128" cy="112" r="2" fill="#1E2A3B"/>
+
+  <circle cx="176" cy="112" r="4.2" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.8"/>
+  <circle cx="176" cy="112" r="2" fill="#1E2A3B"/>
+
+  <!-- Braided Hood Drawstrings Dangling Down with Metal Aglets -->
+  <!-- Left Cord -->
+  <path d="M 128 114 C 126 128 122 144 126 160"
+        stroke="#FAF8F3" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M 128 114 C 126 128 122 144 126 160"
+        stroke="#1E2A3B" stroke-width="1.2" stroke-dasharray="2 2" fill="none"/>
+  <!-- Left Aglet -->
+  <rect x="123" y="160" width="6" height="12" rx="1.5" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.4"/>
+
+  <!-- Right Cord -->
+  <path d="M 176 114 C 178 128 182 144 178 160"
+        stroke="#FAF8F3" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+  <path d="M 176 114 C 178 128 182 144 178 160"
+        stroke="#1E2A3B" stroke-width="1.2" stroke-dasharray="2 2" fill="none"/>
+  <!-- Right Aglet -->
+  <rect x="175" y="160" width="6" height="12" rx="1.5" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.4"/>
+</svg>

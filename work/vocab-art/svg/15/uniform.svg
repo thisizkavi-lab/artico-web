@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:uniform">
+  <defs>
+    <clipPath id="uniform-jacket-clip">
+      <path d="M 124 38 L 74 54 L 62 134 L 84 138 L 94 100 L 92 148 C 114 152 190 152 212 148 L 210 100 L 220 138 L 242 134 L 230 54 L 180 38 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="304" height="192" fill="#FAF8F3"/>
+
+  <!-- Backdrop dignified aura -->
+  <ellipse cx="152" cy="110" rx="90" ry="62" fill="#DBEAFE" opacity="0.6"/>
+
+  <!-- Wooden Stand Hanger -->
+  <path d="M 152 20 C 158 20 162 24 160 30 C 158 34 153 36 152 40" fill="none" stroke="#9A6945" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Uniform Sleeve -->
+  <path d="M 84 54 L 62 134 L 84 138 L 96 100 L 106 60 Z"
+        fill="#1E3A8A" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Gold Braid Cuff Trim (Uniform insignia) -->
+  <line x1="65" y1="126" x2="81" y2="129" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="70" cy="132" r="1.6" fill="#F59E0B"/>
+  <circle cx="75" cy="133" r="1.6" fill="#F59E0B"/>
+
+  <!-- Right Uniform Sleeve -->
+  <path d="M 220 54 L 242 134 L 220 138 L 208 100 L 198 60 Z"
+        fill="#172554" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Gold Braid Cuff Trim -->
+  <line x1="223" y1="129" x2="239" y2="126" stroke="#D97706" stroke-width="2"/>
+  <circle cx="229" cy="133" r="1.6" fill="#F59E0B"/>
+  <circle cx="234" cy="132" r="1.6" fill="#F59E0B"/>
+
+  <!-- Main Blazer Torso -->
+  <path d="M 124 38 L 84 54 L 92 148 C 114 152 190 152 212 148 L 220 54 L 180 38 Z"
+        fill="#1E3A8A" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- Shading on right side -->
+  <g clip-path="url(#uniform-jacket-clip)">
+    <path d="M 152 38 L 220 54 L 212 148 L 152 150 Z" fill="#172554" opacity="0.45"/>
+  </g>
+
+  <!-- Inner Crisp White Shirt Collar & Striped School Tie -->
+  <path d="M 134 38 L 152 86 L 170 38 Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.8"/>
+
+  <!-- Striped Tie -->
+  <polygon points="149,46 155,46 153,54 151,54" fill="#DC2626" stroke="#1E2A3B" stroke-width="1.2"/>
+  <polygon points="151,54 153,54 156,92 152,98 148,92" fill="#B91C1C" stroke="#1E2A3B" stroke-width="1.6"/>
+  <!-- Diagonal Gold & Navy Stripes on Tie -->
+  <line x1="150" y1="62" x2="154" y2="66" stroke="#F59E0B" stroke-width="1.8"/>
+  <line x1="149" y1="74" x2="155" y2="78" stroke="#1E3A8A" stroke-width="1.8"/>
+  <line x1="149" y1="84" x2="155" y2="88" stroke="#F59E0B" stroke-width="1.8"/>
+
+  <!-- Blazer Lapels -->
+  <!-- Left Lapel -->
+  <path d="M 124 38 L 108 66 L 122 70 L 112 96 L 152 108 L 152 48 Z"
+        fill="#2563EB" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Right Lapel -->
+  <path d="M 180 38 L 196 66 L 182 70 L 192 96 L 152 108 L 152 48 Z"
+        fill="#1D4ED8" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- School / Service Crest Shield on Chest Pocket (Distinct Uniform Insignia) -->
+  <path d="M 104 84 L 124 84 L 124 100 C 124 106 114 112 114 112 C 114 112 104 106 104 100 Z"
+        fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Heraldic Shield Quartering -->
+  <path d="M 106 86 L 114 86 L 114 96 L 106 96 Z" fill="#DC2626"/>
+  <path d="M 114 86 L 122 86 L 122 96 L 114 96 Z" fill="#F59E0B"/>
+  <path d="M 106 96 L 114 96 L 114 104 C 114 104 108 102 106 99 Z" fill="#1E3A8A"/>
+  <path d="M 114 96 L 122 96 L 122 99 C 120 102 114 104 114 104 Z" fill="#166534"/>
+  <!-- Golden crest star / chevron -->
+  <polygon points="114,92 115.5,95 119,95 116,97 117,100 114,98 111,100 112,97 109,95 112.5,95" fill="#FEF3C7"/>
+
+  <!-- Polished Brass Front Uniform Buttons -->
+  <circle cx="152" cy="116" r="3.2" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="152" cy="116" r="1.4" fill="#FEF3C7"/>
+  <circle cx="152" cy="130" r="3.2" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="152" cy="130" r="1.4" fill="#FEF3C7"/>
+
+  <!-- Lower Flap Pockets -->
+  <rect x="98" y="122" width="24" height="6" rx="1.5" fill="#172554" stroke="#1E2A3B" stroke-width="1.6"/>
+  <rect x="182" y="122" width="24" height="6" rx="1.5" fill="#0F172A" stroke="#1E2A3B" stroke-width="1.6"/>
+</svg>

@@ -989,14 +989,11 @@
   padding-top: clamp(30px, 4vw, 48px);
 }
 .tt-study .tt-library > h2 {
+  margin: 0 0 clamp(28px, 4vw, 44px);
+  color: #91594f;
   font-size: clamp(25px, 3vw, 34px);
   font-weight: 750;
   letter-spacing: -.025em;
-}
-.tt-study .tt-library > p {
-  margin: 5px 0 36px;
-  font-size: 13px;
-  line-height: 1.65;
 }
 .tt-study .tt-level {
   margin: 0 0 clamp(52px, 7vw, 88px);
@@ -1007,6 +1004,7 @@
   border-color: var(--border, #e9e5df);
 }
 .tt-study .tt-level-heading h3 {
+  color: #53717d;
   font-size: clamp(19px, 2vw, 23px);
   font-weight: 700;
 }

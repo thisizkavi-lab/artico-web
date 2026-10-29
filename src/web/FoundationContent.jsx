@@ -961,7 +961,7 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
-export function TheoryAudioSample({ phrase, target, src, compact = false, navigation = null, playRequest = 0, selectionKey = null, preload = 'metadata' }) {
+export function TheoryAudioSample({ phrase, target, src, compact = false, readerControls = false, navigation = null, playRequest = 0, selectionKey = null, preload = 'metadata' }) {
   const { t, language } = useLanguage()
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
@@ -1100,9 +1100,33 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
   }
 
   return (
-    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${navigation ? ' tt-transport-player tt-modern-player' : ''}`}>
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${readerControls ? ' tt-study-reader-player' : ''}${navigation ? ' tt-transport-player tt-modern-player' : ''}`}>
       {src && <audio ref={audioRef} src={src} preload={preload} />}
-      {navigation ? (
+      {readerControls ? (
+        <div className="tt-reader-audio-actions" role="group" aria-label={language === 'ja' ? '早口言葉の音声操作' : 'Tongue twister audio controls'}>
+          <button type="button" className="tt-reader-control tt-reader-listen" onClick={toggle} disabled={!src}
+            aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
+            <PlayIcon pause={playing} />
+            <span>{language === 'ja' ? (playing ? '一時停止' : '聞く') : (playing ? 'Pause' : 'Listen')}</span>
+          </button>
+          <button type="button" className="tt-reader-control" onClick={() => startPlayback(true)} disabled={!src}
+            aria-label={language === 'ja' ? '最初からもう一度聞く' : 'Repeat from the beginning'}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3.5 10a9 9 0 1 1 2.4 8" /><path d="M3.5 4.8V10h5.4" />
+            </svg>
+            <span>{language === 'ja' ? 'もう一度' : 'Repeat'}</span>
+          </button>
+          <button type="button" className={`tt-reader-control tt-reader-loop${looping ? ' is-active' : ''}`}
+            onClick={toggleLoop} disabled={!src} aria-pressed={looping}
+            aria-label={language === 'ja' ? (looping ? 'ループをオフにする' : 'ループをオンにする') : (looping ? 'Turn loop off' : 'Turn loop on')}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m17 3.5 3 3-3 3" /><path d="M20 6.5H8a5 5 0 0 0-5 5" />
+              <path d="m7 20.5-3-3 3-3" /><path d="M4 17.5h12a5 5 0 0 0 5-5" />
+            </svg>
+            <span>{language === 'ja' ? 'ループ' : 'Loop'}</span>
+          </button>
+        </div>
+      ) : navigation ? (
         <>
           <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '音声と練習の操作' : 'Audio and practice controls'}>
             <button type="button" className="tt-transport-replay" onClick={rewind} disabled={!src}

@@ -123,6 +123,9 @@ jobs:
       - name: Crop original AI food picture sheets into local PNGs
         run: python3 scripts/build_vocab_food_sheets.py
 
+      - name: Crop original AI grooming sheets to local PNGs
+        run: python3 scripts/build_vocab_grooming_sheets.py
+
       - name: Test course and learning progress
         run: pnpm test
 
@@ -145,6 +148,8 @@ jobs:
           test "$(find dist/vocabulary-ai/food -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
           test -s dist/vocabulary-ai/ch04/sheet/catch-the-bus.png
           test -s dist/vocabulary-ai/food/tomato.png
+          test "$(find dist/vocabulary-ai/grooming -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 16
+          test -s dist/vocabulary-ai/grooming/brush-your-hair.png
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

@@ -110,3 +110,44 @@
 .vlt-image-card .vlt-library-png{object-fit:contain;object-position:center;padding:10px 12px;background:#fff}
 .vlt-hero-preview .vlt-library-png{object-fit:contain;padding:4px;background:#fff}
 @media(max-width:520px){.vlt-image-card .vlt-library-png{padding:7px}}
+
+
+/* Lesson 03: show the whole week as one readable hierarchy, not nine isolated cards. */
+.vlt-week-chart{overflow:hidden;border:1px solid #d9e4f1;border-radius:15px;background:#fff}
+.vlt-week-chart-header{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:19px 22px;border-bottom:1px solid #dde6f1}
+.vlt-week-chart-overline{display:block;color:#6681a0;font-size:10px;font-weight:800;letter-spacing:.11em}
+.vlt-week-chart-header h4{margin:5px 0 0;color:#203854;font-size:21px;line-height:1.35;font-weight:750}
+.vlt-week-chart-legend{padding-bottom:3px;color:#7288a2;font-size:10px;font-weight:750;letter-spacing:.04em;text-align:right}
+.vlt-week-section{display:grid;grid-template-columns:minmax(145px,28%) minmax(0,1fr)}
+.vlt-week-section + .vlt-week-section{border-top:3px solid #fff}
+.vlt-week-section-label{display:flex;flex-direction:column;justify-content:center;gap:14px;min-width:0;padding:19px 22px;background:#e7eefa;color:#294b73}
+.vlt-week-section-label>div{display:flex;flex-direction:column;gap:3px}
+.vlt-week-section-label strong{font-size:19px;font-weight:800;line-height:1.25}
+.vlt-week-section-label [lang=ja]{font-size:12px;color:#58759a}
+.vlt-week-count{font-size:12px;font-weight:650;color:#577497}
+.vlt-week-days{margin:0;padding:0;list-style:none}
+.vlt-week-days li{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:55px;padding:11px 21px;border-bottom:2px solid #fff;background:#f2f5fc}
+.vlt-week-days li:last-child{border-bottom:0}
+.vlt-week-day-name{display:flex;flex-direction:column;gap:3px;min-width:0}
+.vlt-week-day-name strong{color:#243c5d;font-size:17px;font-weight:750;line-height:1.3}
+.vlt-week-day-name small{font-size:11px;color:#617995}
+.vlt-week-day-short{display:inline-block;flex:0 0 auto;min-width:58px;padding:6px 10px;border:1px solid #d0dceb;border-radius:7px;background:#fff;color:#42648c;font-size:13px;font-weight:800;text-align:center;text-decoration:none}
+.vlt-week-section.is-weekend .vlt-week-section-label{background:#f9e3e8;color:#904656}
+.vlt-week-section.is-weekend .vlt-week-section-label [lang=ja],
+.vlt-week-section.is-weekend .vlt-week-count{color:#ad6878}
+.vlt-week-section.is-weekend .vlt-week-days li{background:#fff0f3}
+.vlt-week-section.is-weekend .vlt-week-day-short{border-color:#edccd3;color:#995468}
+.vlt-week-chart-footnote{margin:0;padding:15px 22px;border-top:1px solid #e0e7f0;color:#657992;font-size:11px;line-height:1.7}
+@media(max-width:620px){
+ .vlt-week-chart-header{align-items:start;flex-direction:column;gap:7px;padding:15px}
+ .vlt-week-chart-header h4{font-size:19px}
+ .vlt-week-chart-legend{text-align:left}
+ .vlt-week-section{grid-template-columns:minmax(0,1fr)}
+ .vlt-week-section-label{flex-direction:row;align-items:center;justify-content:space-between;gap:9px;padding:12px 15px}
+ .vlt-week-section-label strong{font-size:15px}
+ .vlt-week-section-label>div{gap:2px}
+ .vlt-week-days li{min-height:48px;padding:9px 15px}
+ .vlt-week-day-name strong{font-size:15px}
+ .vlt-week-day-short{min-width:52px;padding:5px 9px;font-size:12px}
+ .vlt-week-chart-footnote{padding:12px 15px}
+}

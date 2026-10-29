@@ -33,49 +33,27 @@ export default function Landing() {
   return (
     <div className="aw-landing" data-language={language}>
       <a className="al-skip" href="#al-content" onClick={(event) => { event.preventDefault(); scrollTo(mainRef) }}>{copy.skip}</a>
-      <header className="al-header">
-        <nav className="al-container al-nav" aria-label={copy.navigation}>
-          <a className="al-wordmark artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
-          <div className="al-nav-links">
-            <button type="button" onClick={() => scrollTo(methodRef)}>{copy.how}</button>
-            <button type="button" onClick={() => scrollTo(pathRef)}>{copy.course}</button>
-          </div>
-          <button className="al-language" type="button" lang={language === 'ja' ? 'en' : 'ja'}
-            aria-label={language === 'ja' ? 'Switch to English' : '日本語に切り替える'}
-            onClick={() => setLanguage(language === 'ja' ? 'en' : 'ja')}>
-            {language === 'ja' ? 'EN' : '日本語'}
-          </button>
-          <Button className="al-nav-start" href={startHref}>
-            <span className="al-wide-label">{startLabel}</span>
-            <span className="al-short-label">{copy.shortStart}</span>
-          </Button>
-        </nav>
-      </header>
       <main ref={mainRef} id="al-content" tabIndex={-1}>
-        <section className="al-container al-hero" aria-labelledby="al-title">
-          <div className="al-hero-copy">
-            <p className="al-kicker" lang="en">ENGLISH FOR EVERYDAY LIFE</p>
-            <h1 id="al-title" className="al-title" lang="en">
-              <span>One language.</span><span>Infinite possibilities.</span>
+        <section className="al-splash" aria-labelledby="al-title">
+          <img
+            className="al-splash-art"
+            src={`${import.meta.env.BASE_URL}landing-hero-background.svg`}
+            width="2048"
+            height="996"
+            alt=""
+            aria-hidden="true"
+            fetchPriority="high"
+          />
+          <div className="al-splash-content">
+            <h1 className="al-splash-title" id="al-title" lang="en">
+              <span>One language, infinite</span>
+              <span>possibilities.</span>
             </h1>
-            <p className="al-subtitle">{copy.subtitle}</p>
-            <p className="al-intro">{copy.intro.map((line) => <span key={line}>{line}</span>)}</p>
-            <div className="al-actions">
-              <Button href={startHref}>{startLabel}</Button>
-              <Button variant="quiet" onClick={() => scrollTo(methodRef)}>{copy.seeHow}</Button>
-            </div>
-            <p className="al-fine">{copy.reassurance}</p>
+            <p className="al-splash-description" lang="en">
+              Turn English from a barrier into a multiplier — giving people in the world, the freedom to communicate, connect, and create in the most powerful language of our age.
+            </p>
+            <a className="al-splash-cta" href="#/home">Get Started</a>
           </div>
-          <figure className="al-vignette">
-            <div className="al-scene">
-              <img src={asset('e0652.svg')} width="520" height="260" alt={copy.sceneAlt} fetchPriority="high" />
-            </div>
-            <div className="al-phrase">
-              <p lang="en">Nice to meet you.</p>
-              <p>{copy.phraseSupport}</p>
-            </div>
-            <figcaption className="al-fine">{copy.caption}</figcaption>
-          </figure>
         </section>
         <section className="al-method" aria-labelledby="al-method-title">
           <div className="al-container al-method-inner">
@@ -152,8 +130,13 @@ export default function Landing() {
         </section>
       </main>
       <footer className="al-container al-footer">
-        <p className="al-wordmark artico-wordmark">artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></p>
+        <a className="al-wordmark artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
         <p className="al-fine">© {new Date().getFullYear()} Artico</p>
+        <button className="al-footer-language" type="button" lang={language === 'ja' ? 'en' : 'ja'}
+          aria-label={language === 'ja' ? 'Switch to English' : '日本語に切り替える'}
+          onClick={() => setLanguage(language === 'ja' ? 'en' : 'ja')}>
+          {language === 'ja' ? 'EN' : '日本語'}
+        </button>
         <div className="al-footer-links">
           <a href={`#${learningStages[0].start}`}>{copy.startHere}</a>
           <a href="#/home">{copy.open}</a>

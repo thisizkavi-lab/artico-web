@@ -21,6 +21,23 @@ function emphasizeReason(copy) {
   )
 }
 
+// Preserve the original teaching copy; highlight only the authored key expressions.
+// Quoted expressions get separate background marks, not a different text color.
+function highlightStudyReason(copy) {
+  return copy.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, index) => {
+    if (!part.startsWith('**') || !part.endsWith('**')) return part
+    const highlighted = part.slice(2, -2)
+    const quotedParts = highlighted.split(/(“[^”]+”|「[^」]+」)/g)
+    const hasQuotes = quotedParts.some((piece) => piece.startsWith('“') || piece.startsWith('「'))
+    if (!hasQuotes) return <mark className="tt-reader-mark" key={index}>{highlighted}</mark>
+    return <span key={index}>{quotedParts.map((piece, pieceIndex) =>
+      piece.startsWith('“') || piece.startsWith('「')
+        ? <mark className="tt-reader-mark" key={pieceIndex}>{piece}</mark>
+        : piece
+    )}</span>
+  })
+}
+
 // A readable, actual tongue twister serves as the title, not an arbitrary nickname.
 // Long rhymes use their opening line; long one-line twisters use the first clause.
 function twisterHeading(phrase) {
@@ -58,16 +75,29 @@ export function TongueTwisterStudy() {
         <p>{ja ? '気になるものから聞いてみましょう。' : 'Pick one and listen.'}</p>
         {twisterLevels.map(level => (
           <section className="tt-level" key={level.number}>
-            <header className="tt-level-heading"><span>LEVEL {level.number}</span><h3>{ja ? level.ja : level.en}</h3></header>
-            <div className="tt-card-grid">
+            <header className="tt-level-heading">
+              <span>LEVEL {level.number}</span>
+              <h3>{ja ? level.ja : level.en}</h3>
+            </header>
+            <div className="tt-reader-list">
               {twisterCards.filter(item => item.level === level.number).map(item => (
-                <article key={item.id} className={`tt-study-item${item.phrase.length > 165 ? ' tt-long' : ''}`}>
-                  <header className="tt-card-label"><span>{item.number}</span><h4 lang="en">{twisterHeading(item.phrase)}</h4></header>
-                  <div className="tt-study-card">
-                    <p className="tt-verse" lang="en">{item.phrase}</p>
-                    <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} compact preload="none" />
+                <article key={item.id} className={`tt-reader-entry${item.phrase.length > 165 ? ' tt-reader-long' : ''}`}>
+                  <div className="tt-reader-entry-meta">
+                    <span className="tt-reader-number">{item.number}</span>
+                    <span className="tt-reader-rule" aria-hidden="true" />
+                    <span className="tt-reader-target" lang="en">{item.target}</span>
                   </div>
-                  <p className="tt-why">{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
+                  <h4 className="tt-reader-phrase" lang="en">{item.phrase}</h4>
+                  <TheoryAudioSample phrase={item.phrase} target={item.title} src={twisterAudioSource(item)} readerControls preload="none" />
+                  <aside className="tt-reader-notice" aria-label={ja ? '発音のヒント' : 'Pronunciation note'}>
+                    <div className="tt-reader-notice-label">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M9 18h6M10 21h4M9 14c-1.8-1.2-3-3.1-3-5a6 6 0 0 1 12 0c0 1.9-1.2 3.8-3 5-.7.5-1 1.3-1 2h-4c0-.7-.3-1.5-1-2Z" />
+                      </svg>
+                      <span>{ja ? 'ここに注目' : 'Notice'}</span>
+                    </div>
+                    <p>{highlightStudyReason(ja ? item.whyJa : item.whyEn)}</p>
+                  </aside>
                 </article>
               ))}
             </div>

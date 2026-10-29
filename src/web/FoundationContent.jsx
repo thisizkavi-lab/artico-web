@@ -961,7 +961,7 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
-export function TheoryAudioSample({ phrase, target, src, compact = false }) {
+export function TheoryAudioSample({ phrase, target, src, compact = false, navigation = null }) {
   const { t, language } = useLanguage()
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
@@ -1006,6 +1006,13 @@ export function TheoryAudioSample({ phrase, target, src, compact = false }) {
   useEffect(() => {
     if (audioRef.current) audioRef.current.loop = looping
   }, [looping, src])
+
+  // When advancing a chunk, reset its progress but retain loop and speed choices.
+  useEffect(() => {
+    setProgress(0)
+    setDuration(0)
+    setPlaying(false)
+  }, [src])
 
   const toggle = async () => {
     const audio = audioRef.current
@@ -1063,77 +1070,92 @@ export function TheoryAudioSample({ phrase, target, src, compact = false }) {
   }
 
   return (
-    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}`}>
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${navigation ? ' tt-transport-player' : ''}`}>
       {src && <audio ref={audioRef} src={src} preload="metadata" />}
-      <div className="theory-audio-head">
-        <button
-          type="button"
-          className="theory-audio-play"
-          onClick={toggle}
-          disabled={!src}
-          aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}
-        >
-          <PlayIcon pause={playing} />
-        </button>
-        {compact ? (
-          <input
-            className="tt-audio-progress"
-            type="range"
-            min="0"
-            max="100"
-            step="0.1"
-            value={progress}
-            disabled={!src}
-            onChange={(event) => seek(Number(event.target.value))}
+      {navigation ? (
+        <>
+          <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '練習の操作' : 'Practice controls'}>
+            <button type="button" className="tt-transport-previous"
+              disabled={navigation.previousDisabled}
+              onClick={navigation.onPrevious}
+              aria-label={language === 'ja' ? '前の部分' : 'Previous chunk'}
+              title={language === 'ja' ? '前の部分' : 'Previous chunk'}>
+              <span aria-hidden="true">←</span>
+            </button>
+            <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
+              aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
+              <PlayIcon pause={playing} />
+            </button>
+            <button type="button" className="tt-transport-replay" onClick={rewind} disabled={!src}
+              aria-label={t('Replay')} title={t('Replay')}>
+              <span aria-hidden="true">↶</span>
+            </button>
+            <button type="button" className={`tt-transport-loop${looping ? ' active' : ''}`} onClick={toggleLoop}
+              disabled={!src} aria-pressed={looping}
+              aria-label={looping ? t('Turn loop off') : t('Turn loop on')}
+              title={language === 'ja' ? 'くり返す' : 'Loop'}>
+              <span aria-hidden="true">↻</span>
+            </button>
+            <button type="button" className="tt-transport-speed" onClick={cycleSpeed} disabled={!src}
+              aria-label={t('Playback speed {speed}', { speed: speedLabel })} title={language === 'ja' ? '再生速度' : 'Speed'}>
+              {speedLabel}
+            </button>
+            <button type="button" className="tt-transport-next" onClick={navigation.onNext}>
+              <span>{navigation.nextLabel}</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <input type="range" className="tt-audio-progress tt-transport-progress" min="0" max="100" step="0.1"
+            value={progress} disabled={!src} onChange={(event) => seek(Number(event.target.value))}
             style={{ '--tt-audio-progress': `${progress}%` }}
-            aria-label={language === 'ja' ? '再生位置' : 'Playback progress'}
-          />
-        ) : (
-          <>
-            <div className="theory-audio-waveform" aria-hidden="true">
-              {[
-                20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32,
-                46, 26,
-              ].map((height, index) => (
-                <i key={index} style={{ height }} />
-              ))}
+            aria-label={language === 'ja' ? '再生位置' : 'Playback progress'} />
+        </>
+      ) : (
+        <>
+          <div className="theory-audio-head">
+            <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
+              aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
+              <PlayIcon pause={playing} />
+            </button>
+            {compact ? (
+              <input className="tt-audio-progress" type="range" min="0" max="100" step="0.1"
+                value={progress} disabled={!src} onChange={(event) => seek(Number(event.target.value))}
+                style={{ '--tt-audio-progress': `${progress}%` }}
+                aria-label={language === 'ja' ? '再生位置' : 'Playback progress'} />
+            ) : (
+              <>
+                <div className="theory-audio-waveform" aria-hidden="true">
+                  {[
+                    20, 33, 47, 28, 55, 38, 64, 34, 50, 26, 43, 58, 31, 48, 37, 54, 29, 44, 22, 39, 52, 32,
+                    46, 26,
+                  ].map((height, index) => <i key={index} style={{ height }} />)}
+                </div>
+                <div className="theory-audio-times">
+                  <span>{formatTime((progress / 100) * duration)}</span>
+                  <span>{duration ? formatTime(duration) : '--:--'}</span>
+                </div>
+              </>
+            )}
+          </div>
+          {!compact && (
+            <div className="theory-audio-track">
+              <span style={{ width: `${progress}%` }} />
             </div>
-            <div className="theory-audio-times">
-              <span>{formatTime((progress / 100) * duration)}</span>
-              <span>{duration ? formatTime(duration) : '--:--'}</span>
-            </div>
-          </>
-        )}
-      </div>
-      {!compact && (
-        <div className="theory-audio-track">
-          <span style={{ width: `${progress}%` }} />
-        </div>
+          )}
+          <div className="theory-audio-controls">
+            <button type="button" onClick={rewind} disabled={!src} aria-label={t('Replay')}>
+              ↶ <span>{t('Replay')}</span>
+            </button>
+            <button type="button" onClick={cycleSpeed} disabled={!src}
+              aria-label={t('Playback speed {speed}', { speed: speedLabel })}>{speedLabel}</button>
+            <button type="button" className={looping ? 'active' : ''} onClick={toggleLoop} disabled={!src}
+              aria-label={looping ? t("Turn loop off") : t("Turn loop on")} aria-pressed={looping}>
+              ↻ <span>{t("Loop")}</span>
+            </button>
+            {!compact && <small>{src ? t("Existing audio sample") : t("Recording coming soon")}</small>}
+          </div>
+        </>
       )}
-      <div className="theory-audio-controls">
-        <button type="button" onClick={rewind} disabled={!src} aria-label={t('Replay')}>
-          ↶ <span>{t('Replay')}</span>
-        </button>
-        <button
-          type="button"
-          onClick={cycleSpeed}
-          disabled={!src}
-          aria-label={t('Playback speed {speed}', { speed: speedLabel })}
-        >
-          {speedLabel}
-        </button>
-        <button
-          type="button"
-          className={looping ? 'active' : ''}
-          onClick={toggleLoop}
-          disabled={!src}
-          aria-label={looping ? t("Turn loop off") : t("Turn loop on")}
-          aria-pressed={looping}
-        >
-          ↻ <span>{t("Loop")}</span>
-        </button>
-        {!compact && <small>{src ? t("Existing audio sample") : t("Recording coming soon")}</small>}
-      </div>
     </div>
   )
 }

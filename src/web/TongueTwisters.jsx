@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useLanguage } from './Language'
 import { TheoryAudioSample } from './FoundationContent'
-import { Glyph } from './LessonExperience'
 import { twisterCards, twisterLevels, twisterAudioSource } from './twisterCollection'
 
 // Carefully authored **keyword** emphasis, rendered as React text (never HTML injection).
@@ -81,24 +80,25 @@ export function TongueTwisterPractice({ initialId }) {
       </label>
       <div className="rf-focus">
         <span className="ip-register">{item.target} · {step + 1} / {item.buildSteps.length}</span>
-        <h3 lang="en">{phrase}</h3>
+        <TheoryAudioSample
+          phrase={phrase}
+          target={item.target}
+          src={src}
+          compact
+          navigation={{
+            previousDisabled: step === 0,
+            onPrevious: () => setStep(n => Math.max(0, n - 1)),
+            onNext: () => setStep(n => (n + 1) % item.buildSteps.length),
+            nextLabel: whole ? (ja ? '最初から' : 'Start again') : (ja ? '次へ' : 'Next'),
+          }}
+        />
+        <h3 lang="en" className={phrase.includes("\n") ? "tt-long-verse" : undefined}>{phrase}</h3>
+      </div>
+      <div className="tt-practice-notes">
         {ja && <p className="tt-practice-meaning">{item.meaningJa}</p>}
-        <p>{ja ? item.tipJa : item.tipEn}</p>
-        <TheoryAudioSample key={`${id}-${step}`} phrase={phrase} target={item.target} src={src} compact />
+        <p className="tt-practice-tip">{ja ? item.tipJa : item.tipEn}</p>
+        <p className="tt-practice-transfer">{ja ? '普段の英語でも：' : 'Try it in everyday English: '}{item.transfer.join(' / ')}</p>
       </div>
-      <div className="ip-session-nav">
-        <button className="ip-secondary" type="button" disabled={step === 0} onClick={() => setStep(n => n - 1)}>
-          <Glyph name="back" /> {ja ? '前に戻る' : 'Previous chunk'}
-        </button>
-        <button className="ip-primary" type="button" onClick={() => setStep(n => (n + 1) % item.buildSteps.length)}>
-          {whole ? (ja ? '最初から' : 'Start again') : (ja ? '次を足す' : 'Add the next part')} <Glyph name="arrow" />
-        </button>
-      </div>
-      <aside className="ip-note">
-        <strong>{ja ? '今度は普段の英語で試してみよう。' : 'Now, try an everyday phrase.'}</strong>
-        <p>{item.transfer.join(' / ')}</p>
-        <p>{ja ? '速さより、はっきり言うことを大切に。' : 'Keep the same movement. Clarity comes before speed.'}</p>
-      </aside>
     </section>
   )
 }

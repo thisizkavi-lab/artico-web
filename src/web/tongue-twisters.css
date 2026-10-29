@@ -981,3 +981,204 @@
 @media (prefers-reduced-motion: reduce) {
   .rf-page .tt-practice-gallery .tt-modern-player .tt-transport-main button { transition: none; }
 }
+
+
+/* Artico Study reader — editorial layout, all 24 twisters on one scrollable page.
+   No flashcards: the sentence is the headline; the controls and notice are secondary. */
+.tt-study .tt-library {
+  padding-top: clamp(30px, 4vw, 48px);
+}
+.tt-study .tt-library > h2 {
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+.tt-study .tt-library > p {
+  margin: 5px 0 36px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.tt-study .tt-level {
+  margin: 0 0 clamp(52px, 7vw, 88px);
+}
+.tt-study .tt-level-heading {
+  margin-bottom: clamp(20px, 3vw, 35px);
+  padding-bottom: 12px;
+  border-color: var(--border, #e9e5df);
+}
+.tt-study .tt-level-heading h3 {
+  font-size: clamp(19px, 2vw, 23px);
+  font-weight: 700;
+}
+.tt-study .tt-reader-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(34px, 5vw, 55px);
+  max-width: 850px;
+  margin: 0 auto;
+}
+.tt-study .tt-reader-entry {
+  min-width: 0;
+  padding: 0 0 clamp(34px, 5vw, 52px);
+  border-bottom: 1px solid var(--border, #eceae5);
+}
+.tt-study .tt-reader-entry:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.tt-study .tt-reader-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 750px;
+  margin-bottom: 13px;
+}
+.tt-study .tt-reader-number {
+  color: #89919c;
+  font-size: 12px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+.tt-study .tt-reader-rule {
+  width: 26px;
+  height: 1px;
+  background: #d9dee4;
+}
+.tt-study .tt-reader-target {
+  color: #89919c;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.tt-study .tt-reader-phrase {
+  margin: 0;
+  max-width: 820px;
+  color: var(--ink, #262b32);
+  font-size: clamp(27px, 3.35vw, 39px);
+  font-weight: 760;
+  letter-spacing: -.028em;
+  line-height: 1.37;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+.tt-study .tt-reader-long .tt-reader-phrase {
+  font-size: clamp(24px, 2.85vw, 33px);
+  line-height: 1.46;
+}
+.rf-page .tt-study .tt-study-reader-player {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
+  margin: 13px 0 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.tt-study .tt-reader-audio-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 24px);
+}
+.rf-page .tt-study .tt-reader-audio-actions .tt-reader-control {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 7px 9px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  box-shadow: none;
+  color: #68768a;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 550;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease;
+}
+.tt-study .tt-reader-control svg {
+  display: block;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+}
+.rf-page .tt-study .tt-reader-audio-actions .tt-reader-control:hover:not(:disabled) {
+  background: #f1f5fa;
+  color: #355e90;
+}
+.rf-page .tt-study .tt-reader-audio-actions .tt-reader-control.is-active {
+  background: #ecf3fd;
+  color: #245db3;
+}
+.rf-page .tt-study .tt-reader-audio-actions .tt-reader-control:disabled {
+  opacity: .38;
+  cursor: not-allowed;
+}
+.rf-page .tt-study .tt-reader-audio-actions .tt-reader-control:focus-visible {
+  outline: 2px solid var(--ip-blue, #285bcc);
+  outline-offset: 2px;
+}
+.tt-study .tt-reader-notice {
+  box-sizing: border-box;
+  width: min(100%, 750px);
+  margin-top: 16px;
+  padding: 12px 16px 13px;
+  border: 1px solid rgba(210, 175, 92, .16);
+  border-radius: 12px;
+  background: rgba(250, 197, 74, .09);
+}
+.tt-study .tt-reader-notice-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 6px;
+  color: #9c8655;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.tt-study .tt-reader-notice-label svg {
+  flex: 0 0 15px;
+  width: 15px;
+  height: 15px;
+}
+.tt-study .tt-reader-notice p {
+  margin: 0;
+  color: #716e65;
+  font-size: 12.5px;
+  font-weight: 440;
+  letter-spacing: .005em;
+  line-height: 1.75;
+}
+.tt-study .tt-reader-mark {
+  color: inherit;
+  font: inherit;
+  font-weight: 650;
+  padding: .04em .2em;
+  background: rgba(225, 184, 91, .29);
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+@media (max-width: 740px) {
+  .tt-study .tt-reader-list { gap: 31px; }
+  .tt-study .tt-reader-entry { padding-bottom: 32px; }
+  .tt-study .tt-reader-phrase { font-size: clamp(24px, 6.3vw, 32px); line-height: 1.4; }
+  .tt-study .tt-reader-long .tt-reader-phrase { font-size: clamp(22px, 5.4vw, 28px); }
+  .tt-study .tt-reader-notice { padding: 11px 12px; }
+  .tt-study .tt-reader-notice p { font-size: 12px; }
+  .tt-study .tt-reader-audio-actions { gap: 8px; }
+  .rf-page .tt-study .tt-reader-audio-actions .tt-reader-control { padding: 8px 9px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rf-page .tt-study .tt-reader-audio-actions .tt-reader-control { transition: none; }
+}

@@ -211,3 +211,41 @@ test('Lesson 14 uses approved raster body art and keeps eye anatomy precise',()=
   assert.equal(file.readUInt16LE(26) & 0x3fff,3264, 'HD sprite width')
   assert.equal(file.readUInt16LE(28) & 0x3fff,1016, 'HD sprite height')
 })
+
+
+test('reviewed relative-time illustrations are available locally for all nine expressions',()=>{
+  const lesson=source.lessons.find(x=>x.sourceLesson===3)
+  const expressions=lesson.groups[6].items.map(([term])=>term)
+  assert.deepEqual(expressions,[
+    'now / right now',
+    'earlier / later',
+    'before / after',
+    'yesterday / today / tomorrow',
+    'this morning / this afternoon / this evening',
+    'tonight',
+    'last week / this week / next week',
+    'ago',
+    'soon',
+  ])
+  const expected=[
+    'now-right-now',
+    'earlier-later',
+    'before-after',
+    'yesterday-today-tomorrow',
+    'this-morning-this-afternoon-this-evening',
+    'tonight',
+    'last-week-this-week-next-week',
+    'ago',
+    'soon',
+  ]
+  const client=load('vocabularyTimePng.js')
+  assert.match(client,/const relativeTimeArt/)
+  for(const slug of expected){
+    assert.ok(client.includes("'"+slug+"'"),'Missing artwork mapping for '+slug)
+    const file=readFileSync(new URL('../../public/vocabulary-ai/ch03/relative-time/'+slug+'.webp',import.meta.url))
+    assert.ok(file.length>12000,'Undersized illustration: '+slug)
+    assert.equal(file.toString('ascii',0,4),'RIFF')
+    assert.equal(file.toString('ascii',8,12),'WEBP')
+  }
+  assert.match(client,/relativeTimeArt\[term\]/)
+})

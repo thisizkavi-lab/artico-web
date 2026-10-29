@@ -1190,3 +1190,80 @@ a.al-journey-card:hover {
 @media (max-width: 740px) {
   .al-feedback-dialog { padding: 21px; }
 }
+
+
+/* Transparent PNG learning-stage cutouts on a separate SVG route.
+   No circular background, pill frame or backplate belongs to the art. */
+.al-journey-illustration {
+  overflow: visible;
+}
+.al-route-scene {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 780 / 640;
+  isolation: isolate;
+}
+.al-journey-illustration svg.al-route-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  aspect-ratio: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+.al-route-lines-mobile { display: none !important; }
+.al-route-stop {
+  position: absolute;
+  z-index: 1;
+  width: 24%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.al-route-stop-1 { left: 18%; top: 74%; }
+.al-route-stop-2 { left: 39.2%; top: 57%; }
+.al-route-stop-3 { left: 60.4%; top: 40.5%; }
+.al-route-stop-4 { left: 81.4%; top: 23.5%; }
+.al-route-stop img {
+  display: block;
+  width: 100%;
+  max-width: 195px;
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+.al-route-stop figcaption {
+  margin-top: 6px;
+  max-width: 100%;
+  color: #263735;
+  font: 700 clamp(12px, 1.08vw, 16px)/1.4 'Hanken Grotesk', 'Noto Sans JP', sans-serif;
+  text-align: center;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.aw-landing[data-language="ja"] .al-route-stop figcaption {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(12px, 1vw, 15px);
+  letter-spacing: -.015em;
+}
+@media (max-width: 740px) {
+  .al-route-scene { aspect-ratio: 1 / 1; }
+  .al-route-lines-desktop { display: none !important; }
+  .al-journey-illustration svg.al-route-lines-mobile { display: block !important; }
+  .al-route-stop { width: 37%; }
+  .al-route-stop-1 { left: 26%; top: 25%; }
+  .al-route-stop-2 { left: 74%; top: 25%; }
+  .al-route-stop-3 { left: 26%; top: 75%; }
+  .al-route-stop-4 { left: 74%; top: 75%; }
+  .al-route-stop img { max-width: 180px; }
+  .al-route-stop figcaption { font-size: 13px; margin-top: 3px; }
+  .aw-landing[data-language="ja"] .al-route-stop figcaption { font-size: 12px; }
+}

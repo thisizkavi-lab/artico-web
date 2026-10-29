@@ -125,7 +125,6 @@ export function TongueTwisterPractice({ initialId }) {
           ))}
         </div>
         <div className="tt-chunk-current" aria-live="polite">
-          <span>{ja ? '練習する部分' : 'Practice this part'} · {chunkIndex + 1} / {item.buildSteps.length}</span>
           <p className={chunk.length > 160 ? 'tt-chunk-long' : undefined} lang="en">{chunk}</p>
         </div>
         <TheoryAudioSample

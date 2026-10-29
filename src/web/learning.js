@@ -121,10 +121,11 @@ export function loadLearning(storage) {
   }
 }
 
-// Keep direct lesson links intact. Only the public entry point depends on progress.
-export function shouldShowLanding(hash, learning) {
+// The public website always starts on Landing, even for returning learners.
+// Explicit app and lesson hashes still open their requested pages.
+export function shouldShowLanding(hash) {
   const path = hash.replace(/^#/, '').split('?')[0].replace(/\/$/, '')
-  return path === '/landing' || (path === '' && !learning.last)
+  return path === '/landing' || path === ''
 }
 
 export function parseRoute(hash) {

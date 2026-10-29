@@ -152,7 +152,7 @@ export const introductionById = Object.fromEntries(
   introductionPhrases.map((item) => [item.id, item]),
 )
 const ids = (...numbers) => numbers.map((number) => `ch02-p${number}`)
-export const introductionSections = [
+const originalIntroductionSections = [
   {
     id: 'introduce',
     title: 'Say who you are',
@@ -268,6 +268,86 @@ export const introductionSections = [
         text: 'You do not need to pretend you heard everything. Ask for the name again, or ask for its spelling. Chapter 04 develops these repair skills further.',
       },
       { type: 'phrases', phrases: ids(25, 26) },
+    ],
+  },
+]
+
+
+/*
+ * Chapter 02 presents the original teaching material in conversational order:
+ * identify yourself → respond → introduce others → clarify a name.
+ *
+ * The source blocks above remain verbatim. This view only reuses/repositions
+ * them and gives the original scenes an expandable presentation. Phrase IDs,
+ * source wording, dialogue lines, practice scenarios and aliases are unchanged.
+ */
+const [self, work, connect, names] = originalIntroductionSections
+const sceneInContext = (scene, explanation) => ({
+  ...scene,
+  collapsed: true,
+  contextText: explanation?.text,
+})
+// Headings from the original source become titles within their phrase cards,
+// rather than an extra heading above another generic "Choose an expression".
+const namedShelf = (heading, shelf) => ({ ...shelf, title: heading.text })
+const phraseShelf = (numbers, title) => ({
+  type: 'phrases',
+  phrases: numbers.map(number => `ch02-p${number}`),
+  title,
+})
+export const introductionSections = [
+  {
+    ...self,
+    blocks: [
+      self.blocks[0],
+      phraseShelf([1, 4], self.blocks[3].text),
+      namedShelf(self.blocks[5], self.blocks[6]),
+      work.blocks[0],
+      phraseShelf([11], work.title),
+      self.blocks[7],
+      self.blocks[8],
+    ],
+  },
+  {
+    ...work,
+    title: 'Respond to an introduction',
+    short: 'Respond',
+    blocks: [
+      phraseShelf([2, 3, 5], self.blocks[1].title),
+      phraseShelf([12, 13, 14], work.blocks[1].title),
+      namedShelf(work.blocks[3], work.blocks[4]),
+      work.blocks[5],
+      namedShelf(work.blocks[6], work.blocks[7]),
+      work.blocks[8],
+      sceneInContext(self.blocks[1], self.blocks[2]),
+      sceneInContext(work.blocks[1], work.blocks[2]),
+    ],
+  },
+  {
+    ...connect,
+    blocks: [
+      connect.blocks[0],
+      phraseShelf([17, 18, 19, 20], connect.blocks[1].title),
+      connect.blocks[2],
+      connect.blocks[3],
+      connect.blocks[4],
+      phraseShelf([22, 23], connect.blocks[5].title),
+      connect.blocks[6],
+      namedShelf(connect.blocks[7], connect.blocks[8]),
+      connect.blocks[9],
+      sceneInContext(connect.blocks[1]),
+      sceneInContext(connect.blocks[5]),
+    ],
+  },
+  {
+    ...names,
+    blocks: [
+      ...names.blocks,
+      {
+        type: 'vocabulary',
+        title: 'Words in this chapter',
+        phrases: ['ch02-v0', 'ch02-v1', 'ch02-v2', 'ch02-v3'],
+      },
     ],
   },
 ]

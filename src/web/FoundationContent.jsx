@@ -961,18 +961,21 @@ export function SoundsLesson({ onPrevious, previousLabel, onNext }) {
   )
 }
 
-export function TheoryAudioSample({ phrase, target, src, compact = false, navigation = null }) {
+export function TheoryAudioSample({ phrase, target, src, compact = false, readerControls = false, navigation = null, playRequest = 0, selectionKey = null, preload = 'metadata' }) {
   const { t, language } = useLanguage()
   const audioRef = useRef(null)
   const playbackToken = useRef({ stop: () => {} })
+  const playbackSequence = useRef(0)
   const [playing, setPlaying] = useState(false)
   const [progress, setProgress] = useState(0)
   const [duration, setDuration] = useState(0)
   const [playbackRate, setPlaybackRate] = useState(1)
   const [looping, setLooping] = useState(false)
+  const [mediaError, setMediaError] = useState(false)
   const playbackSpeeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
 
   const stopPlayback = () => {
+    playbackSequence.current += 1
     const audio = audioRef.current
     if (audio) audio.pause()
     setPlaying(false)
@@ -981,7 +984,12 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
 
   useEffect(() => {
     const audio = audioRef.current
+    setProgress(0)
+    setDuration(0)
+    setPlaying(false)
+    setMediaError(false)
     if (!audio || !src) return undefined
+    audio.currentTime = 0
     const updateProgress = () =>
       setProgress(audio.duration ? (audio.currentTime / audio.duration) * 100 : 0)
     const updateDuration = () => setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
@@ -989,16 +997,25 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
       setPlaying(false)
       releasePlayback(playbackToken.current)
     }
+    const fail = () => {
+      stopPlayback()
+      setMediaError(true)
+    }
     audio.addEventListener('timeupdate', updateProgress)
     audio.addEventListener('loadedmetadata', updateDuration)
     audio.addEventListener('ended', finish)
+    audio.addEventListener('error', fail)
+    updateDuration()
     return () => {
-      stopPlayback()
+      playbackSequence.current += 1
+      audio.pause()
+      releasePlayback(playbackToken.current)
       audio.removeEventListener('timeupdate', updateProgress)
       audio.removeEventListener('loadedmetadata', updateDuration)
       audio.removeEventListener('ended', finish)
+      audio.removeEventListener('error', fail)
     }
-  }, [src])
+  }, [src, selectionKey])
 
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = playbackRate
@@ -1008,29 +1025,42 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
     if (audioRef.current) audioRef.current.loop = looping
   }, [looping, src])
 
-  // When advancing a chunk, reset its progress but retain loop and speed choices.
-  useEffect(() => {
-    setProgress(0)
-    setDuration(0)
-    setPlaying(false)
-  }, [src])
-
-  const toggle = async () => {
+  const startPlayback = async (restart = false) => {
     const audio = audioRef.current
     if (!audio || !src) return
-    if (audio.paused) {
-      claimPlayback(playbackToken.current, stopPlayback)
-      try {
-        await audio.play()
-        if (activePlayback === playbackToken.current && !audio.paused) setPlaying(true)
-      } catch {
-        releasePlayback(playbackToken.current)
-        setPlaying(false)
-      }
-    } else {
-      stopPlayback()
+    const sequence = ++playbackSequence.current
+    if (restart) {
+      audio.pause()
+      audio.currentTime = 0
+      setProgress(0)
+    }
+    if (audio.error) audio.load()
+    setMediaError(false)
+    claimPlayback(playbackToken.current, stopPlayback)
+    try {
+      await audio.play()
+      if (sequence === playbackSequence.current && activePlayback === playbackToken.current && !audio.paused) setPlaying(true)
+    } catch (error) {
+      // An old play() promise must never change the new clip's UI or playback lane.
+      if (sequence !== playbackSequence.current) return
+      releasePlayback(playbackToken.current)
+      setPlaying(false)
+      if (error.name !== 'AbortError') setMediaError(true)
     }
   }
+
+  const toggle = () => {
+    const audio = audioRef.current
+    if (!audio || !src) return
+    if (audio.paused) startPlayback()
+    else stopPlayback()
+  }
+
+  // Only an explicit focus/transfer tap starts a newly selected clip. Changing
+  // routes, cards, or practice steps does not autoplay anything.
+  useEffect(() => {
+    if (playRequest > 0) startPlayback(true)
+  }, [playRequest])
 
   const rewind = () => {
     const audio = audioRef.current
@@ -1070,9 +1100,33 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
   }
 
   return (
-    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${navigation ? ' tt-transport-player tt-modern-player' : ''}`}>
-      {src && <audio ref={audioRef} src={src} preload="metadata" />}
-      {navigation ? (
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${readerControls ? ' tt-study-reader-player' : ''}${navigation ? ' tt-transport-player tt-modern-player' : ''}`}>
+      {src && <audio ref={audioRef} src={src} preload={preload} />}
+      {readerControls ? (
+        <div className="tt-reader-audio-actions" role="group" aria-label={language === 'ja' ? '早口言葉の音声操作' : 'Tongue twister audio controls'}>
+          <button type="button" className="tt-reader-control tt-reader-listen" onClick={toggle} disabled={!src}
+            aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
+            <PlayIcon pause={playing} />
+            <span>{language === 'ja' ? (playing ? '一時停止' : '聞く') : (playing ? 'Pause' : 'Listen')}</span>
+          </button>
+          <button type="button" className="tt-reader-control" onClick={() => startPlayback(true)} disabled={!src}
+            aria-label={language === 'ja' ? '最初からもう一度聞く' : 'Repeat from the beginning'}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3.5 10a9 9 0 1 1 2.4 8" /><path d="M3.5 4.8V10h5.4" />
+            </svg>
+            <span>{language === 'ja' ? 'もう一度' : 'Repeat'}</span>
+          </button>
+          <button type="button" className={`tt-reader-control tt-reader-loop${looping ? ' is-active' : ''}`}
+            onClick={toggleLoop} disabled={!src} aria-pressed={looping}
+            aria-label={language === 'ja' ? (looping ? 'ループをオフにする' : 'ループをオンにする') : (looping ? 'Turn loop off' : 'Turn loop on')}>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m17 3.5 3 3-3 3" /><path d="M20 6.5H8a5 5 0 0 0-5 5" />
+              <path d="m7 20.5-3-3 3-3" /><path d="M4 17.5h12a5 5 0 0 0 5-5" />
+            </svg>
+            <span>{language === 'ja' ? 'ループ' : 'Loop'}</span>
+          </button>
+        </div>
+      ) : navigation ? (
         <>
           <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '音声と練習の操作' : 'Audio and practice controls'}>
             <button type="button" className="tt-transport-replay" onClick={rewind} disabled={!src}
@@ -1192,6 +1246,9 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
           </div>
         </>
       )}
+      {mediaError && <p className="theory-audio-error" role="status">
+        {language === 'ja' ? '音声を再生できませんでした。接続を確認して、再生ボタンを押してください。' : 'Audio could not play. Check your connection and press Play to try again.'}
+      </p>}
     </div>
   )
 }

@@ -19,6 +19,14 @@
   flex-basis: 60px;
   border-bottom: 1px solid var(--line);
 }
+/* Language and profile controls keep their right alignment without the
+   removed storage-status label. */
+.is-english-pilot .aw-topbar > .aw-language {
+  margin-left: auto;
+}
+.is-english-pilot .aw-topbar > .aw-icon-button {
+  margin-left: 0;
+}
 .is-english-pilot .aw-tagline,
 .is-english-pilot .aw-destinations a,
 .is-english-pilot .aw-course-status,

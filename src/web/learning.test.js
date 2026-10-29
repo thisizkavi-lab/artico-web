@@ -14,18 +14,47 @@ import { getFoundationNavigation, getLearningStage, getLessonNavigation, learnin
 import { applicationTracks, applicationResponseKey } from './applicationTracks.js'
 import { publicChapterId, sourceChapterId, migrateLegacyLessonPath } from './chapterNumbers.js'
 
-test('the public entry welcomes new guests without blocking returning learners or direct lesson links', () => {
+test('the public URL always opens Landing before Home, without breaking direct lesson links', () => {
   const returning = visit(emptyLearning, '/lesson/02/practice/friend')
   for (const hash of ['', '#', '#/', '#/?ref=shared']) {
     assert.equal(shouldShowLanding(hash, emptyLearning), true)
-    assert.equal(shouldShowLanding(hash, returning), false)
+    assert.equal(shouldShowLanding(hash, returning), true)
   }
   for (const hash of ['#/home', '#/courses?foundation', '#/lesson/02/practice/friend', '#course']) {
     assert.equal(shouldShowLanding(hash, emptyLearning), false)
+    assert.equal(shouldShowLanding(hash, returning), false)
   }
   assert.equal(shouldShowLanding('#/landing', returning), true)
   assert.equal(shouldShowLanding('#/landing/', emptyLearning), true)
   assert.equal(shouldShowLanding('', loadLearning({ getItem: () => '{bad json' })), true)
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  assert.match(landing, /const startHref = '\/home'/)
+  assert.match(landing, /const startLabel = copy\.open/)
+  const app = readFileSync(new URL('./ArticoApp.jsx', import.meta.url), 'utf8')
+  assert.match(app, /initialPath === '\/home'/)
+  assert.match(app, /useState\(readInitialEntry\)/)
+  assert.match(app, /window\.history\.replaceState\(/)
+})
+
+test('landing uses a full-height illustrated hero with a working blue entry and preserved philosophy', () => {
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
+  const index = readFileSync(new URL('../../index.html', import.meta.url), 'utf8')
+  const art = readFileSync(new URL('../../public/landing-hero-background.svg', import.meta.url), 'utf8')
+  assert.match(landing, /className="al-splash"/)
+  assert.match(landing, /landing-hero-background\.svg/)
+  assert.match(landing, /href="#\/home">Get Started/)
+  assert.match(css, /\.al-splash\s*\{/)
+  assert.match(css, /min-height: 100svh/)
+  assert.match(css, /\.al-splash-cta\s*\{/)
+  assert.match(css, /background: #285bcc/)
+  assert.match(art, /Abstract-Conversation-Illustration/)
+  assert.match(index, /family=Poppins/)
+  assert.match(landing, /id="al-why-title">why artico\?/)
+  for (const phrase of ['real learning needs effort', 'flow', 'perfect middle', 'trained like a skill',
+    'sound, rhythm, movement', 'train expression', 'communication', 'universal interface',
+    'people feel it']) assert.ok(landing.includes(phrase), phrase)
+  assert.equal((landing.match(/<mark>/g) ?? []).length, 9)
 })
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {
@@ -397,7 +426,11 @@ test('Home cards are compact grayscale and Foundations displays as Level Zero', 
   assert.equal(parseRoute('#/foundation/letters/study').page, 'foundation')
   assert.equal(parseRoute('#/courses?foundation').page, 'courses')
   assert.match(locale, /"Level Zero": "レベルゼロ"/)
-  assert.match(progress, /Orientation & Level Zero/)
+  // Progress no longer lists every opened Foundation or chapter.
+  assert.match(progress, /CONTINUE LEARNING/)
+  assert.match(progress, /My Space/)
+  assert.match(progress, /Self-assessment/)
+  assert.doesNotMatch(progress, /Chapters you have opened/)
   assert.match(css, /grid-template-columns:70px minmax\(0,1fr\) auto/)
   assert.match(css, /min-height:96px; box-sizing:border-box/)
   assert.match(css, /width:64px; height:64px/)

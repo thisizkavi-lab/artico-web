@@ -341,21 +341,10 @@ export default function ArticoWeb() {
               ? `${language === 'ja' ? lastFoundation.ja : lastFoundation.en} · ${/\/(practice|chunks|whole)(\/|$)/.test(learning.last) ? t("Practice") : t("Study")}`
               : t("Start at your own pace.")}
         </p>
-        <button
-          className="aw-sync"
-          type="button"
-          aria-label={t("About local saving and device sync")}
-          onClick={() => setModal(true)}
-        >
-          <Icon name="cloud" />
-          <strong>{t("Your learning, saved here")}</strong>
-          <span>{t("Device sync is coming later.")}</span>
-        </button>
       </aside>
       <div className="aw-main">
         <header className="aw-topbar">
           <p>{crumb}</p>
-          <span>{storageAvailable ? t("Saved on this device") : t("Saved for this visit")}</span>
           <LanguageSelector />
           <IconButton name="user" label={t("Your guest profile")} onClick={() => setModal(true)} />
         </header>

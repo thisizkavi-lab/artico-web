@@ -143,6 +143,9 @@ jobs:
           test "$(find public/assets/illustrations/twisters -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 24
           test -s public/assets/illustrations/twisters/woodchuck.png
 
+      - name: Verify all 267 tongue-twister recordings and exact-text mappings
+        run: pnpm run test:twister-audio
+
       - name: Test course and learning progress
         run: pnpm test
 
@@ -173,6 +176,8 @@ jobs:
           test "$(find dist/assets/illustrations/twisters -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
           test -s dist/assets/illustrations/twisters/woodchuck.png
           test -s dist/assets/illustrations/twisters/betty-botter.png
+          test "$(find dist/audio/tongue-twisters/ga-v01 -maxdepth 1 -name '*.mp3' -type f | wc -l)" -eq 267
+          test -s dist/audio/tongue-twisters/ga-v01/tt-24-betty-botter--study-full--natural--en-us--v01.mp3
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

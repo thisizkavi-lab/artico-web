@@ -6,6 +6,8 @@ const copy = {
   'Maya introducing her colleague Sam to Eli.': 'Mayaが同僚のSamをEliに紹介しています。',
   'A name, a connection, and a way to keep talking.': '名前と、つながりと、会話を続けるきっかけ。',
   'Say who you are': '自分が誰かを伝える',
+  'Respond to an introduction': '紹介のあいさつに応える',
+  'Respond': 'あいさつに応える',
   'Introduce yourself': '自分を紹介する',
   'Meet someone at work': '仕事の場で、初めて会う',
   'At work': '仕事の場で',
@@ -100,7 +102,7 @@ export function japaneseIntroduction(model) {
     language: 'ja',
     subtitle: translate(model.subtitle),
     phrases: model.phrases.map((item) => ({ ...item, context: translate(item.context), register: translate(item.register), ja: meaning[item.id] })),
-    sections: model.sections.map((section) => ({ ...section, title: translate(section.title), short: translate(section.short), blocks: section.blocks.map((block) => ({ ...block, title: translate(block.title), text: translate(block.text), alt: translate(block.alt) })) })),
+    sections: model.sections.map((section) => ({ ...section, title: translate(section.title), short: translate(section.short), blocks: section.blocks.map((block) => ({ ...block, title: translate(block.title), text: translate(block.text), alt: translate(block.alt), contextText: translate(block.contextText) })) })),
     scenarios: model.scenarios.map((item) => ({ ...item, prompt: translate(item.prompt), sample: translate(item.sample) })),
   }
 }

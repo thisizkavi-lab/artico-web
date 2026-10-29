@@ -8,14 +8,20 @@ import { vocabularyTimePng } from './vocabularyTimePng'
 import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
+import { vocabularyBodyIllustration } from './VocabularyBodyArt'
+import { vocabularyBodySprite } from './vocabularyBodySprite'
 
-// Artwork for Lessons 3–78 is now image-only. No inline SVG, generated
-// icon, procedural symbol, or cross-topic guessed image reaches a card.
+// Artwork for Lessons 3–78 uses dedicated course illustrations, approved raster sprites,
+// or reviewed PNG illustrations.
 // Dedicated course illustrations take precedence over all legacy art.
 function artworkFor(term, chapter) {
   if (vocabularyCourseTextOnly(term, chapter)) return null
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
+  const approvedBody = vocabularyBodySprite(term, chapter)
+  if (approvedBody) return approvedBody
+  const body = vocabularyBodyIllustration(term, chapter)
+  if (body) return body
   const grooming = vocabularyAiGrooming(term, chapter)
   if (grooming) return grooming
   const painted = vocabularyAiScene(term, chapter)

@@ -1,18 +1,31 @@
 import { lazy, Suspense, useEffect, useLayoutEffect, useState } from 'react'
 import { useLanguage } from './Language'
-import { loadLearning, shouldShowLanding } from './learning'
+import { shouldShowLanding } from './learning'
 import Landing from './Landing'
 import './english-shell.css'
 
 const LearningApp = lazy(() => import('./ArticoWeb'))
 
 function readEntry() {
-  const learning = loadLearning({ getItem: (key) => window.localStorage.getItem(key) })
-  return { landing: shouldShowLanding(window.location.hash, learning), last: learning.last }
+  return { landing: shouldShowLanding(window.location.hash) }
+}
+
+// A bookmarked Home URL should still introduce the public landing page on a
+// fresh visit. In-app navigation to #/home remains unchanged.
+function readInitialEntry() {
+  const initialPath = window.location.hash.slice(1).split('?')[0].replace(/\/$/, '')
+  if (initialPath === '/home') {
+    window.history.replaceState(
+      window.history.state,
+      '',
+      `${window.location.pathname}${window.location.search}#/landing`,
+    )
+  }
+  return readEntry()
 }
 
 export default function ArticoApp() {
-  const [entry, setEntry] = useState(readEntry)
+  const [entry, setEntry] = useState(readInitialEntry)
   const { t } = useLanguage()
   useEffect(() => {
     const change = () => setEntry(readEntry())
@@ -27,7 +40,7 @@ export default function ArticoApp() {
     // The landing page uses document scrolling; lessons keep their own viewport.
     window.scrollTo({ top: 0, behavior: 'instant' })
   }, [entry.landing])
-  if (entry.landing) return <Landing last={entry.last} />
+  if (entry.landing) return <Landing />
   return (
     <Suspense fallback={<div className="aw-landing al-loading" role="status">{t('Loading your lesson…')}</div>}>
       <LearningApp />

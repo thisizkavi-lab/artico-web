@@ -1,0 +1,205 @@
+/* Chapter 03 · One expression, one example, one reason. */
+.ip-page .ar-c03{display:flex;flex-direction:column;gap:15px;min-width:0}
+.ip-page .ar-c03-intro{
+  max-width:72ch;margin:0 0 2px;color:#4c5c75;font-size:14px;line-height:1.7
+}
+.ip-page .ar-c03-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:stretch
+}
+.ip-page .ar-c03-card{
+  min-width:0;display:flex;flex-direction:column;overflow:hidden;
+  border:1px solid #d8e0ee;border-radius:17px;background:#fff;
+  box-shadow:0 3px 14px rgba(24,46,85,.024)
+}
+.ip-page .ar-c03-card-top{
+  display:flex;align-items:center;justify-content:space-between;gap:13px;
+  padding:13px 17px 12px
+}
+.ip-page .ar-c03-title-sound{display:flex;align-items:center;gap:6px;min-width:0}
+.ip-page .ar-c03-card h3{
+  color:#1c2d4b;font-size:clamp(19px,2vw,23px);font-weight:840;
+  letter-spacing:-.02em;line-height:1.3;margin:0
+}
+.ip-page .ar-c03-sound{
+  flex:none;display:grid;place-items:center;cursor:pointer;
+  width:31px;height:31px;padding:0;border:0;border-radius:50%;
+  background:transparent;color:#315be0
+}
+.ip-page .ar-c03-sound:hover{background:#eaf0ff}
+.ip-page .ar-c03-listen{
+  flex:none;display:grid;place-items:center;cursor:pointer;
+  width:38px;height:38px;min-width:38px;min-height:38px;
+  margin:0;padding:0;border:0;border-radius:50%;
+  background:#315de6;color:#fff;box-shadow:0 2px 6px rgba(49,93,230,.13)
+}
+.ip-page .ar-c03-listen:hover{background:#244dc8}
+.ip-page .ar-c03-listen:focus-visible,.ip-page .ar-c03-sound:focus-visible{
+  outline:3px solid #7da1ea;outline-offset:2px
+}
+.ip-page .ar-c03-exchange,.ip-page .ar-c03-story{
+  display:flex;flex-direction:column;gap:12px;min-width:0;
+  background:#f5f7fb;padding:17px 15px
+}
+/* Let the conversation occupy any extra card height, not the explanation. */
+.ip-page .ar-c03-card>.ar-c03-exchange{flex:1;justify-content:center}
+.ip-page .ar-c03-chat-turn{
+  display:flex;align-items:flex-end;gap:8px;min-width:0;max-width:94%;
+  align-self:flex-start
+}
+.ip-page .ar-c03-chat-outgoing{align-self:flex-end;flex-direction:row-reverse}
+.ip-page .ar-c03-avatar{
+  width:35px;height:35px;flex:0 0 35px;display:block;
+  border:1px solid #cfdbed;border-radius:50%;background:#e9f0fc;object-fit:cover
+}
+.ip-page .ar-c03-chat-bubble{
+  min-width:0;max-width:100%;padding:9px 13px 11px;
+  background:#fff;border:1px solid #dce5f0;
+  border-radius:13px 13px 13px 4px
+}
+.ip-page .ar-c03-chat-outgoing .ar-c03-chat-bubble{
+  border-color:#cbdcf2;background:#e8f0ff;
+  border-radius:13px 13px 4px 13px
+}
+.ip-page .ar-c03-chat-bubble p{
+  margin:0;overflow-wrap:anywhere;color:#243754;
+  font-size:clamp(14px,1.65vw,16px);font-weight:640;line-height:1.5
+}
+/* One highlight tone per teaching section, shared by cards and diagrams. */
+.ip-page .ar-c03-section-0{--ar-c03-highlight:#dce8ff;--ar-c03-highlight-text:#234fa0}
+.ip-page .ar-c03-section-1{--ar-c03-highlight:#d5f2e7;--ar-c03-highlight-text:#226c58}
+.ip-page .ar-c03-section-2{--ar-c03-highlight:#eee0fb;--ar-c03-highlight-text:#71449a}
+.ip-page .ar-c03-section-3{--ar-c03-highlight:#ffe2d3;--ar-c03-highlight-text:#934b2d}
+.ip-page .ar-c03-mark{
+  background:var(--ar-c03-highlight,#dce8ff);
+  color:var(--ar-c03-highlight-text,#234fa0);
+  padding:1px 3px;border-radius:4px;font-weight:870
+}
+.ip-page .ar-c03-idea{
+  flex:none;padding:9px 13px 10px;background:#fcf6e8;color:#566170
+}
+.ip-page .ar-c03-idea strong{
+  display:block;margin:0 0 3px;color:#657080;
+  font-size:10.5px;font-weight:770;line-height:1.4
+}
+.ip-page .ar-c03-idea p{
+  margin:0;color:#687384;font-size:12px;font-weight:430;line-height:1.55
+}
+.ip-page .ar-c03-extra{
+  min-width:0;border:1px solid #dbe3f0;border-radius:13px;
+  background:#fff;overflow:hidden
+}
+.ip-page .ar-c03-extra>summary{
+  padding:14px 17px;cursor:pointer;color:#37558b;font-size:13px;font-weight:760;
+  list-style-position:inside
+}
+.ip-page .ar-c03-extra>summary:hover{background:#f5f7fc}
+.ip-page .ar-c03-extra[open]>summary{border-bottom:1px solid #e5ecf6}
+.ip-page .ar-c03-dialogue{
+  min-width:0;background:#fff;padding:15px;border:0;border-radius:0
+}
+.ip-page .ar-c03-dialogue-header{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;margin:0 0 12px
+}
+.ip-page .ar-c03-dialogue-header h3{margin:0;color:#253b60;font-size:14px;font-weight:800}
+.ip-page .ar-c03-dialogue .ar-c03-story{border-radius:11px}
+.ip-page .ar-c03-lesson-tip{
+  margin:0 15px 15px;padding:12px 15px;border-radius:11px;
+  background:#fff3dc;color:#25364f
+}
+.ip-page .ar-c03-lesson-tip strong{font-size:12px;font-weight:830}
+.ip-page .ar-c03-lesson-tip p{
+  font-size:13px;line-height:1.6;margin:4px 0 0;color:#3b4a62
+}
+/* Conversation-flow diagrams adapted to Artico's compact visual language. */
+.ip-page .ar-c03-flows{display:flex;flex-direction:column;gap:18px}
+.ip-page .ar-c03-flow{
+  min-width:0;position:relative;padding:16px clamp(17px,3.5vw,32px) 17px;
+  border:1px solid #dfe5ed;border-radius:18px;background:rgba(255,255,255,.78)
+}
+.ip-page .ar-c03-flow-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.ip-page .ar-c03-flow-index{
+  display:inline-flex;align-items:center;justify-content:center;width:30px;height:27px;
+  border-radius:7px;background:#e8efff;color:#2855b4;font-weight:860;font-size:12px
+}
+.ip-page .ar-c03-polarity{font-size:11px;font-weight:760;color:#607391;letter-spacing:.005em}
+.ip-page .ar-c03-question-wrap{display:flex;padding-left:12px}
+.ip-page .ar-c03-question-bubble{
+  position:relative;box-sizing:border-box;width:75%;max-width:670px;min-width:0;
+  padding:15px 19px 18px;border:2px solid #f4ae7d;border-radius:17px;
+  background:#fff8cf;color:#202d44
+}
+.ip-page .ar-c03-question-bubble::before{
+  content:"";position:absolute;z-index:0;left:-12px;top:38px;width:19px;height:19px;
+  background:#fff8cf;border-left:2px solid #f4ae7d;border-bottom:2px solid #f4ae7d;
+  transform:rotate(45deg)
+}
+.ip-page .ar-c03-bubble-head{display:flex;align-items:center;gap:9px;min-height:29px}
+.ip-page .ar-c03-bubble-avatar{
+  display:block;flex:none;width:27px;height:27px;
+  object-fit:cover;border-radius:50%;background:#fff;
+  border:1px solid rgba(131,110,93,.18)
+}
+.ip-page .ar-c03-bubble-caption{color:#7a6249;font-size:11px;font-weight:760;line-height:1.35}
+.ip-page .ar-c03-bubble-head>.ar-c03-listen{margin-left:auto;flex:none}
+.ip-page .ar-c03-question-text{
+  position:relative;font-size:clamp(18px,2.15vw,23px);line-height:1.47;
+  font-weight:760;color:#1c2f4b;margin:10px 0 0;letter-spacing:-.014em
+}
+.ip-page .ar-c03-tag-study .ar-c03-mark{
+  background:var(--ar-c03-highlight);color:var(--ar-c03-highlight-text);
+  padding:2px 4px;border-radius:5px
+}
+.ip-page .ar-c03-flow-arrow{
+  position:relative;height:46px;width:2px;background:#6b6971;margin:0 0 0 40%;
+}
+.ip-page .ar-c03-flow-arrow::after{
+  content:"";position:absolute;bottom:-2px;left:-5px;width:0;height:0;
+  border-left:6px solid transparent;border-right:6px solid transparent;
+  border-top:9px solid #6b6971
+}
+.ip-page .ar-c03-response-bubble{
+  position:relative;box-sizing:border-box;width:83%;margin-left:auto;margin-right:13px;
+  border:2px solid #f5af87;border-radius:17px;background:#ffddc8;
+  padding:14px 17px 13px;color:#202d44
+}
+.ip-page .ar-c03-response-bubble::after{
+  content:"";position:absolute;right:-21px;top:34px;width:23px;height:25px;
+  background:#ffddc8;clip-path:polygon(0 0,100% 50%,0 100%)
+}
+.ip-page .ar-c03-response-head{margin:0 0 9px}
+.ip-page .ar-c03-response-head .ar-c03-bubble-caption{color:#885b46}
+.ip-page .ar-c03-response-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1.5px dashed #eca47e}
+.ip-page .ar-c03-response-path{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0;padding:13px 13px 3px 0}
+.ip-page .ar-c03-response-path+.ar-c03-response-path{border-left:1.5px dashed #eca47e;padding-left:16px;padding-right:0}
+.ip-page .ar-c03-response-label{font-size:10px;font-weight:850;letter-spacing:.04em;text-transform:uppercase;color:#8b604c}
+.ip-page .ar-c03-response-path p{margin:0;font-size:clamp(16px,1.85vw,20px);line-height:1.4;font-weight:780;color:#26324a;overflow-wrap:anywhere}
+.ip-page .ar-c03-response-path .ar-c03-listen{margin-top:auto}
+.ip-page .ar-c03-question-bubble .ar-c03-listen,.ip-page .ar-c03-response-bubble .ar-c03-listen{
+  width:34px;height:34px;min-width:34px;min-height:34px;
+  padding:0;border:0;border-radius:50%;background:#315de6;color:#fff
+}
+.ip-page .ar-c03-flow-explanation{
+  color:#53637e;font-size:12px;line-height:1.6;
+  margin:14px 12px 0;max-width:70ch
+}
+@media(max-width:760px){
+ .ip-page .ar-c03-grid{grid-template-columns:1fr}
+ .ip-page .ar-c03-card h3{font-size:21px}
+ .ip-page .ar-c03-card-top{padding:12px 14px}
+ .ip-page .ar-c03-exchange{padding:14px 12px}
+ .ip-page .ar-c03-chat-turn{max-width:96%}
+ .ip-page .ar-c03-idea{padding:9px 12px 10px}
+ .ip-page .ar-c03-flow{padding:15px 17px 16px}
+ .ip-page .ar-c03-question-bubble{width:94%;padding:13px}
+ .ip-page .ar-c03-question-wrap{padding-left:10px}
+ .ip-page .ar-c03-flow-arrow{margin-left:46%;height:35px}
+ .ip-page .ar-c03-response-bubble{width:94%;margin-right:5px;padding:12px}
+ .ip-page .ar-c03-response-paths{grid-template-columns:1fr}
+ .ip-page .ar-c03-response-path{padding:12px 0}
+ .ip-page .ar-c03-response-path+.ar-c03-response-path{
+   border-left:0;border-top:1.5px dashed #eca47e;padding:12px 0 3px
+ }
+ .ip-page .ar-c03-question-text{font-size:18px}
+ .ip-page .ar-c03-response-path p{font-size:17px}
+}

@@ -31,7 +31,7 @@ export function FoundationShell({ route, title, subtitle, sections = [], childre
   const practice = route.view !== 'study'
   const contents = useRef(null)
   return (
-    <div className={`ip-page rf-page${['orientation', 'how-it-works'].includes(route.id) ? ' rf-orientation-lesson' : route.id === 'letters' ? ' rf-alphabet-lesson' : ''}`} lang={language}>
+    <div className={`ip-page rf-page${['orientation', 'how-it-works'].includes(route.id) ? ' rf-orientation-lesson' : route.id === 'letters' ? ' rf-alphabet-lesson' : route.id === 'tongue-intro' ? ' rf-tongue-lesson' : ''}`} lang={language}>
       <header className="ip-lesson-heading">
         <p className="ip-kicker">
           {t(navigation.stage.title)} <span>/</span> {language === 'ja' ? 'レッスン' : 'LESSON'}{' '}

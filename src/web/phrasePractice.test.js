@@ -56,7 +56,14 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   const ids = introductionPhrases.map((item) => item.id)
   const spoken = introductionPhrases.filter((item) => item.section !== 'words')
   assert.equal(new Set(ids).size, 30)
-  assert.deepEqual(displayed, spoken.map((item) => item.id))
+  // Study now deliberately reuses some phrases in collapsible example scenes
+  // and includes a vocabulary shelf. Repetition and presentation order are
+  // teaching choices; every spoken phrase still needs a shared practice record.
+  assert.ok(displayed.every(id => ids.includes(id)))
+  assert.deepEqual(
+    new Set(displayed.filter(id => spoken.some(item => item.id === id))),
+    new Set(spoken.map(item => item.id)),
+  )
   for (const item of spoken) {
     assert.ok(item.en && item.context)
     assert.ok(introductionSections.some((section) => section.id === item.section))

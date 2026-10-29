@@ -17,6 +17,7 @@ import {
 import Chapter01Illustrated from './Chapter01Illustrated'
 import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
+import Chapter03StudySection from './Chapter03Context'
 import './social-reference-study.css'
 import './introductions.css'
 import './learning-flow.css'
@@ -215,7 +216,7 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {groupConversationScenes(section.blocks).map((block, blockIndex) => {
+          {lessonId === '03' ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} /> : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -279,6 +280,20 @@ function Study({ audioProps, focusedId }) {
                   </div>
                 </div>
               )
+            if (block.type === 'conversation' && lessonId === '02' && block.collapsed)
+              return (
+                <details className="ar-study-example" key={blockIndex} open={Boolean(focusedId && block.phrases.includes(focusedId)) || undefined}>
+                  <summary>
+                    <span className="ar-study-example-label">{language === 'ja' ? '会話で確認する' : 'See it in context'}</span>
+                    <strong>{block.title}</strong>
+                    <span className="ar-study-example-chevron" aria-hidden="true" />
+                  </summary>
+                  <div className="ar-study-example-content">
+                    <Conversation block={block} audioProps={audioProps} focusedId={focusedId} />
+                    {block.contextText && <p className="ip-prose">{block.contextText}</p>}
+                  </div>
+                </details>
+              )
             if (block.type === 'conversation')
               return (
                 <Conversation
@@ -287,6 +302,34 @@ function Study({ audioProps, focusedId }) {
                   audioProps={audioProps}
                   focusedId={focusedId}
                 />
+              )
+            if (block.type === 'vocabulary' && lessonId === '02')
+              return (
+                <details className="ar-study-example ar-study-vocabulary" key={blockIndex}>
+                  <summary>
+                    <span className="ar-study-example-label">{language === 'ja' ? '参考' : 'Reference'}</span>
+                    <strong>{block.title}</strong>
+                    <span className="ar-study-example-chevron" aria-hidden="true" />
+                  </summary>
+                  <div className="ar-study-example-content">
+                    <div className="ip-words">
+                      {block.phrases.map((id) => {
+                        const item = introductionById[id]
+                        return (
+                          <article id={`study-${id}`} data-phrase-id={id}
+                            className={`ip-word ${id === focusedId ? 'is-focused' : ''}`} key={id}>
+                            <img src={art(item.art)} width="140" height="110" alt="" loading="lazy" />
+                            <div>
+                              <h3 lang="en">{item.en}</h3>
+                              <PhraseAudio item={item} {...audioProps} />
+                            </div>
+                            <p>{item.context}</p>
+                          </article>
+                        )
+                      })}
+                    </div>
+                  </div>
+                </details>
               )
             if (block.type === 'words')
               return (
@@ -324,7 +367,8 @@ function Study({ audioProps, focusedId }) {
             }
             return block.type === 'phrases' ? (
               <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
-                byId={introductionById} audioProps={audioProps} focusedId={focusedId} />
+                byId={introductionById} audioProps={audioProps} focusedId={focusedId}
+                title={lessonId === '02' ? block.title : undefined} />
             ) : (
               <div className="ip-phrase-grid" key={blockIndex}>
                 {block.phrases?.map((id) => (

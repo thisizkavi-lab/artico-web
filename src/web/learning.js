@@ -64,7 +64,7 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1[0-5])|location)|application-smalltalk-(?:note|reflection|done)-(?:0[1-9]|1[0-2])|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|progress-self-check|progress-calendar-schedule|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1[0-5])|location)|application-smalltalk-(?:note|reflection|done)-(?:0[1-9]|1[0-2])|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role))$/.test(
             id,
           ) &&
           typeof value === 'string' &&
@@ -121,10 +121,11 @@ export function loadLearning(storage) {
   }
 }
 
-// Keep direct lesson links intact. Only the public entry point depends on progress.
-export function shouldShowLanding(hash, learning) {
+// The public website always starts on Landing, even for returning learners.
+// Explicit app and lesson hashes still open their requested pages.
+export function shouldShowLanding(hash) {
   const path = hash.replace(/^#/, '').split('?')[0].replace(/\/$/, '')
-  return path === '/landing' || (path === '' && !learning.last)
+  return path === '/landing' || path === ''
 }
 
 export function parseRoute(hash) {

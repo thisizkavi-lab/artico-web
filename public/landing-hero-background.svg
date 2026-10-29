@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="996" viewBox="0 156 2048 996" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <title>Soft abstract scene of people communicating</title>
+  <defs>
+    <style>.muted { fill: #D8DAD6; }</style>
+    <pattern id="shirtGrid" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <path d="M0 0V36M18 0V36M0 0H36M0 18H36" stroke="#FFFFFF" stroke-opacity=".32" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect fill="#F1F2F0" x="0" y="156" width="2048" height="996"/>
+    <g id="Abstract-Conversation-Illustration" opacity=".56" transform="translate(0 156)">
+      <g id="Center-Speaker" class="muted">
+        <path d="M858 156c0-52 59-90 142-90 96 0 168 53 168 121 0 61-58 111-141 120l-46 46 7-51c-78-15-130-71-130-146Z"/>
+        <circle cx="1000" cy="472" r="74"/>
+        <path d="M817 764c33-134 99-212 190-212 95 0 165 80 202 212v232H817V764Z"/>
+        <path d="M841 703h329v293H841z" fill="url(#shirtGrid)"/>
+      </g>
+
+      <g id="Left-Listener" class="muted">
+        <circle cx="492" cy="544" r="75"/>
+        <path d="M270 841c53-143 137-219 250-219 91 0 161 52 214 155l-146 219H307l-37-155Z"/>
+        <path d="M475 626l146 216-61 41-152-216z" fill="#F1F2F0" opacity=".72"/>
+      </g>
+
+      <g id="Right-Listener" class="muted">
+        <circle cx="1395" cy="514" r="74"/>
+        <path d="M1210 803c31-129 97-205 198-205 106 0 190 82 251 245l-83 153h-329l-37-193Z"/>
+        <path d="M1284 654h210v342h-210z" fill="url(#shirtGrid)" opacity=".9"/>
+      </g>
+
+      <g id="Outer-Participants" class="muted">
+        <circle cx="182" cy="716" r="66"/>
+        <path d="M-40 975c44-132 122-199 235-199 78 0 144 42 198 127l-98 93H0l-40-21Z"/>
+        <circle cx="1772" cy="684" r="66"/>
+        <path d="M1600 875c47-88 112-132 194-132 103 0 185 72 246 217l-20 36h-345l-75-121Z"/>
+      </g>
+
+      <g id="Conversation-Lines" fill="none" stroke="#A6A8A5" stroke-width="3" stroke-linecap="round" opacity=".45">
+        <path d="M693 405c49-53 96-79 141-78M1176 352c45-54 89-82 132-83M1542 548c67-35 128-44 183-27M353 561c-62-35-121-42-176-19"/>
+        <path d="M1102 708l113 186M1064 739l86 142M1357 688l155 161M480 757l127 117"/>
+      </g>
+    </g>
+
+</svg>

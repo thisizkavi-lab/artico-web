@@ -205,3 +205,7 @@
   .rf-persona-confetti { display:none; }
   .rf-persona-confetti-piece { animation:none; }
 }
+
+/* Allow a returning learner to revise their target instead of locking the result. */
+.rf-persona-edit { font: inherit; font-size: 13px; font-weight: 650; color: #285bcc; background: none; border: 0; padding: 4px 0; margin: 0 0 22px; cursor: pointer; text-underline-offset: 3px; }
+.rf-persona-edit:hover { text-decoration: underline; }

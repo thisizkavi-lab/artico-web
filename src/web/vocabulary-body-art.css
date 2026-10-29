@@ -1,0 +1,63 @@
+/* Lesson 14: clinically clear, low-amplitude motion instead of decorative GIFs.
+   Each short demonstration rests most of the cycle. A still image remains
+   legible if animation is unavailable or reduced motion is requested. */
+.bv-scene{display:block;width:100%;height:100%;background:#f4f8fb}
+.vlt-image-card .vlt-visual:has(.bv-scene){background:#f4f8fb}
+.vlt-hero-preview .bv-scene{width:100%;height:100%}
+.bv-scene g{transform-box:view-box}
+.bv-eyes-blink{transform-origin:161px 80px;animation:bv-blink 6.6s ease-in-out infinite}
+.bv-nod{transform-origin:160px 137px;animation:bv-nod 6.3s ease-in-out infinite}
+.bv-shake{animation:bv-shake 6.1s ease-in-out infinite}
+.bv-bow{transform-origin:160px 177px;animation:bv-bow 7.4s ease-in-out infinite}
+.bv-clap-left{transform-origin:130px 145px;animation:bv-clap-left 6.2s ease-in-out infinite}
+.bv-clap-right{transform-origin:195px 145px;animation:bv-clap-right 6.2s ease-in-out infinite}
+.bv-blush{animation:bv-blush 7s ease-in-out infinite}
+.bv-tears{animation:bv-tears 5.9s ease-in-out infinite}
+.bv-tongue{transform-origin:162px 118px;animation:bv-lick 7.2s ease-in-out infinite}
+.bv-shrug-arms{animation:bv-shrug 6.1s ease-in-out infinite}
+.bv-straw{animation:bv-straw 6.3s ease-in-out infinite}
+.bv-breath-lines{animation:bv-breath 6.4s ease-in-out infinite}
+.bv-hold{animation:bv-hold 6.4s ease-in-out infinite}
+.bv-cough{animation:bv-cough 6.7s ease-in-out infinite}
+.bv-burst{animation:bv-burst 7s ease-in-out infinite}
+.bv-sigh{animation:bv-sigh 6.2s ease-in-out infinite}
+.bv-shiver{animation:bv-shiver 6s ease-in-out infinite}
+.bv-snore{animation:bv-snore 6.9s ease-in-out infinite}
+.bv-sweat{animation:bv-sweat 7.1s ease-in-out infinite}
+.bv-scene[data-term="smile"] .bv-mouth{transform-origin:162px 119px;animation:bv-expression 6.4s ease-in-out infinite}
+.bv-scene[data-term="grin"] .bv-mouth{transform-origin:162px 117px;animation:bv-expression 6.7s ease-in-out infinite}
+.bv-scene[data-term="laugh"] .bv-mouth{transform-origin:162px 123px;animation:bv-laugh 5.8s ease-in-out infinite}
+.bv-scene[data-term="frown"] .bv-brows{animation:bv-frown 6.8s ease-in-out infinite}
+
+
+@keyframes bv-expression{0%,14%,38%,100%{transform:scaleX(1)}23%,29%{transform:scaleX(1.12)}}
+@keyframes bv-laugh{0%,14%,37%,100%{transform:scaleY(.85)}22%,28%{transform:scaleY(1.15)}}
+@keyframes bv-frown{0%,14%,41%,100%{transform:translateY(0)}23%,32%{transform:translateY(4px)}}
+@keyframes bv-blink{0%,15%,19%,22%,100%{transform:scaleY(1)}17%,20%{transform:scaleY(.13)}}
+@keyframes bv-nod{0%,11%,30%,100%{transform:translateY(0) rotate(0)}17%,23%{transform:translateY(7px) rotate(4deg)}}
+@keyframes bv-shake{0%,12%,28%,100%{transform:translateX(0)}15%,23%{transform:translateX(-7px)}19%,26%{transform:translateX(7px)}}
+@keyframes bv-bow{0%,12%,40%,100%{transform:rotate(0)}22%,31%{transform:rotate(19deg)}}
+@keyframes bv-clap-left{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(46px)}}
+@keyframes bv-clap-right{0%,14%,35%,100%{transform:translateX(0)}19%,29%{transform:translateX(-46px)}}
+@keyframes bv-blush{0%,12%,40%,100%{opacity:.22}23%,31%{opacity:1}}
+@keyframes bv-tears{0%,13%,43%,100%{transform:translateY(0);opacity:.5}25%,34%{transform:translateY(15px);opacity:1}}
+@keyframes bv-lick{0%,15%,40%,100%{transform:scaleY(.45)}24%,29%{transform:scaleY(1.15)}}
+@keyframes bv-shrug{0%,12%,35%,100%{transform:translateY(0)}21%,28%{transform:translateY(-9px)}}
+@keyframes bv-straw{0%,13%,38%,100%{transform:translateX(0)}23%,30%{transform:translateX(-4px)}}
+@keyframes bv-breath{0%,12%,51%,100%{opacity:.25;transform:translateX(0)}29%{opacity:1;transform:translateX(10px)}}
+@keyframes bv-hold{0%,15%,48%,100%{opacity:.35;transform:scale(.96)}24%,40%{opacity:1;transform:scale(1.08)}}
+@keyframes bv-cough{0%,12%,18%,27%,36%,100%{opacity:0}14%,24%,30%{opacity:1}}
+@keyframes bv-burst{0%,15%,43%,100%{opacity:0;transform:scale(.9)}22%,29%{opacity:1;transform:scale(1.08)}}
+@keyframes bv-sigh{0%,11%,45%,100%{opacity:0;transform:translateX(-7px)}24%,32%{opacity:1;transform:translateX(10px)}}
+@keyframes bv-shiver{0%,13%,35%,100%{transform:translateX(0)}16%,23%,29%{transform:translateX(-3px)}19%,26%,32%{transform:translateX(3px)}}
+@keyframes bv-snore{0%,12%,47%,100%{opacity:.2;transform:translateY(3px)}26%,35%{opacity:1;transform:translateY(-7px)}}
+@keyframes bv-sweat{0%,12%,47%,100%{opacity:.4;transform:translateY(0)}29%,38%{opacity:1;transform:translateY(7px)}}
+
+.vlt-body-note{margin:-4px 0 14px;padding:10px 13px;border-left:3px solid #b7ccde;border-radius:0 7px 7px 0;background:#f5f8fb;color:#526b85;font-size:12px;line-height:1.55}
+@media(max-width:620px){.vlt-body-note{font-size:11px;padding:9px 11px}}
+@media(prefers-reduced-motion:reduce){
+  .bv-scene *, .bv-scene *::before, .bv-scene *::after{
+    animation:none!important;transition:none!important;
+  }
+  .bv-eyes-blink,.bv-tongue,.bv-cough,.bv-burst,.bv-breath-lines,.bv-sigh,.bv-snore,.bv-sweat{opacity:1}
+}

@@ -1,115 +1,141 @@
-.aw-progress {
-  max-width: 1080px;
-}
-.aw-progress .aw-heading h1 {
-  font-size: 38px;
-}
-.aw-progress-intro {
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-  max-width: 64ch;
-}
+/* Progress: where to resume, what matters, and a repeatable speaking check-in. */
+.aw-progress { max-width: 1080px; }
+.aw-progress .aw-heading h1 { font-size: clamp(30px, 4vw, 38px); }
+.aw-progress-intro { max-width: 64ch; color: var(--muted); font-size: 15px; line-height: 1.65; margin: 0 0 29px; }
+.aw-progress h2, .aw-progress h3 { margin: 0; font-weight: 550; letter-spacing: -.025em; }
+.aw-progress h2 { font-size: 23px; }
+.aw-progress .aw-button { font-family: inherit; }
+.aw-progress-kicker { display: block; font-size: 11px; line-height: 1.4; font-weight: 700; letter-spacing: .09em; color: #637682; }
 .aw-progress-resume {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  align-items: center;
-  background: white;
-  border: 1px solid var(--line);
-  padding: 28px;
-  border-radius: 16px;
+  display: flex; justify-content: space-between; align-items: center; gap: 24px;
+  background: #fff; border: 1px solid var(--line); border-radius: 16px;
+  padding: 27px 30px; box-shadow: 0 8px 26px #263b3b07;
 }
-.aw-progress-resume span {
-  color: var(--muted);
-  font-size: 11px;
-  letter-spacing: 0.08em;
+.aw-progress-resume h2 { margin: 9px 0 7px; font-size: clamp(21px, 3vw, 27px); }
+.aw-progress-resume p, .aw-progress-space-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.aw-progress-resume .aw-button { flex: 0 0 auto; white-space: nowrap; }
+.aw-progress-space { margin-top: 40px; }
+.aw-progress-space > h2 { margin: 0 0 17px; }
+.aw-progress-space-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+.aw-progress-space-card {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start;
+  min-width: 0; min-height: 185px; padding: 22px;
+  border: 1px solid var(--line); border-radius: 14px; background: #fff;
 }
-.aw-progress-resume h2 {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 8px 0;
+.aw-progress-space-card h3 { margin: 13px 0 16px; font-size: clamp(16px, 2vw, 20px); line-height: 1.4; overflow-wrap: anywhere; }
+.aw-progress-space-card a {
+  margin-top: auto; font-size: 12px; font-weight: 650; color: var(--brand);
+  text-decoration: none; line-height: 1.55; text-underline-offset: 3px;
 }
-.aw-progress-resume p,
-.aw-progress-phrases p,
-.aw-progress-opened p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.7;
+.aw-progress-space-card a:hover { text-decoration: underline; }
+.aw-progress-space-card a > span { margin-left: 3px; }
+.aw-progress-space-card p { margin: -5px 0 15px; }
+.aw-progress-persona { overflow: hidden; background: #f4f8f5; border-color: #dae6dc; }
+.aw-progress-space-card-copy { position: relative; z-index: 1; width: 75%; flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+.aw-progress-persona img {
+  position: absolute; right: -18px; bottom: 13px; width: 40%; height: 125px; object-fit: contain;
+  pointer-events: none;
 }
-.aw-progress h2 {
-  font-size: 22px;
-  font-weight: 500;
+.aw-progress-persona img[hidden] { display: none; }
+.aw-progress-checkin {
+  margin-top: 40px; padding: 28px 30px 25px;
+  border: 1px solid var(--line); border-radius: 16px; background: #fff;
 }
-.aw-progress .aw-button {
-  font-family: inherit;
+.aw-progress-checkin h2 { margin-top: 8px; }
+.aw-progress-checkin-instruction { margin: 9px 0 19px; font-size: 14px; line-height: 1.7; color: var(--muted); }
+.aw-progress-challenge {
+  padding: 15px 19px; background: #f5f7fb; border-left: 3px solid #6d92dc;
+  border-radius: 2px 9px 9px 2px; font-size: 17px; line-height: 1.6; font-weight: 550;
 }
-.aw-progress-phrases {
-  display: grid;
-  gap: 14px;
+.aw-progress-answer { margin-top: 24px; }
+.aw-progress-answer > p { margin: 0 0 11px; font-size: 13px; font-weight: 650; }
+.aw-progress-answer-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.aw-progress-answer-options button {
+  font: inherit; font-size: 14px; line-height: 1.4; padding: 13px 10px; cursor: pointer;
+  border: 1px solid #dce3e8; border-radius: 10px; background: #fff; color: var(--ink);
+  transition: background .15s, border-color .15s;
 }
-.aw-progress-phrases > .aw-button {
-  justify-self: start;
+.aw-progress-answer-options button:hover { background: #f5f8ff; border-color: #9eb5ea; }
+.aw-progress-answer-options button.is-selected { background: #eef3ff; border-color: var(--brand); color: #204da8; }
+.aw-progress-checkin-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 13px 19px; margin-top: 19px; }
+.aw-progress-save {
+  font: inherit; font-size: 13px; font-weight: 650; padding: 12px 20px;
+  border-radius: 10px; background: var(--brand); border: 1px solid var(--brand); color: #fff; cursor: pointer;
 }
-.aw-progress-ratings {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: white;
-}
-.aw-progress-ratings > div {
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.aw-progress-ratings > div + div {
-  border-left: 1px solid var(--line);
-}
-.aw-progress-ratings strong {
-  font-size: 30px;
-  font-weight: 500;
-}
-.aw-progress-ratings span {
-  font-size: 13px;
-  color: var(--muted);
-}
-.aw-progress-opened > h2 {
-  margin-bottom: 15px;
-}
-.aw-progress-opened > a {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 14px;
-}
-.aw-progress-opened > a strong {
-  font-weight: 500;
-  flex: 1;
-}
-.aw-progress-opened > a > span {
-  color: var(--muted);
-  font-size: 12px;
-}
+.aw-progress-save:disabled { opacity: .42; cursor: default; }
+.aw-progress-checkin-actions > span { font-size: 12px; line-height: 1.55; color: var(--muted); }
+.aw-progress-history { display: flex; flex-wrap: wrap; gap: 6px 22px; padding-top: 18px; border-top: 1px solid var(--line); margin-top: 20px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.aw-progress-history strong { color: var(--ink); font-weight: 650; }
 .aw-progress-saved {
-  display: flex;
-  justify-content: space-between;
-  color: var(--brand);
-  font-size: 15px;
+  margin-top: 25px; display: flex; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 12px 1px; font-size: 14px; color: var(--brand);
+  border-bottom: 1px solid var(--line); text-decoration: none;
+}
+.aw-progress-saved:hover { text-decoration: underline; }
+.aw-progress a:focus-visible, .aw-progress button:focus-visible { outline: 3px solid #95b2f4; outline-offset: 3px; }
+@media (max-width: 800px) {
+  .aw-progress-space-grid { grid-template-columns: 1fr; }
+  .aw-progress-space-card { min-height: 130px; }
+  .aw-progress-persona img { width: 130px; right: 7px; }
 }
 @media (max-width: 600px) {
-  .aw-progress-resume {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .aw-progress-ratings > div {
-    padding: 18px 14px;
-  }
-  .aw-progress .aw-heading h1 {
-    font-size: 32px;
-  }
+  .aw-progress-resume { flex-direction: column; align-items: stretch; padding: 22px; gap: 19px; }
+  .aw-progress-resume .aw-button { align-self: flex-start; }
+  .aw-progress-space { margin-top: 31px; }
+  .aw-progress-checkin { margin-top: 31px; padding: 22px 19px; }
+  .aw-progress-answer-options { gap: 7px; }
+  .aw-progress-answer-options button { font-size: 12px; padding: 12px 6px; }
+  .aw-progress-challenge { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aw-progress-answer-options button { transition: none; }
+}
+
+
+/* An optional calendar editor inside My Space; never another dashboard. */
+.aw-progress-calendar-trigger {
+  margin-top: 13px; padding: 0; border: 0; background: transparent;
+  color: var(--ink); cursor: pointer; font: inherit; font-size: 12px;
+  font-weight: 650; text-align: left; text-decoration: underline; text-underline-offset: 3px;
+}
+.aw-progress-calendar-trigger span { display: inline-block; margin-left: 2px; }
+.aw-calendar-planner {
+  margin-top: 13px; padding: 24px 26px 21px; border: 1px solid #dbe3e8;
+  border-radius: 14px; background: #fcfdfd; box-shadow: 0 6px 18px #263b3b05;
+}
+.aw-calendar-planner-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.aw-calendar-planner-heading h3 { font-size: 20px; line-height: 1.4; }
+.aw-calendar-planner-heading p { margin: 5px 0 0; max-width: 60ch; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.aw-calendar-planner-length { padding: 7px 11px; border-radius: 30px; background: #edf4fc; white-space: nowrap; color: #245c9b; font-size: 12px; font-weight: 700; }
+.aw-calendar-planner-fields { display: flex; align-items: end; flex-wrap: wrap; gap: 19px 28px; margin-top: 21px; }
+.aw-calendar-planner-days { flex: 1 1 310px; min-width: 0; }
+.aw-calendar-label { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 700; color: var(--ink); }
+.aw-calendar-days { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 6px; max-width: 460px; }
+.aw-calendar-days button { min-width: 0; height: 40px; border: 1px solid #dfe5e8; border-radius: 9px; background: #fff; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.aw-calendar-days button:hover { border-color: #93aae1; }
+.aw-calendar-days button.is-active { color: #fff; border-color: var(--brand); background: var(--brand); }
+.aw-calendar-time { flex: 0 0 auto; }
+.aw-calendar-time input { width: 130px; height: 40px; padding: 0 10px; box-sizing: border-box; border: 1px solid #dfe5e8; border-radius: 9px; background: #fff; font: inherit; color: var(--ink); }
+.aw-calendar-plan-hint { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; margin-top: 15px; font-size: 12px; color: var(--muted); }
+.aw-calendar-plan-hint strong { color: var(--ink); }
+.aw-calendar-plan-hint a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+.aw-calendar-hint { margin: 12px 0 0; color: #735628; font-size: 12px; line-height: 1.6; }
+.aw-calendar-planner-footer { display: flex; gap: 12px 18px; flex-wrap: wrap; align-items: center; margin-top: 23px; }
+.aw-calendar-google {
+  display: inline-flex; gap: 8px; align-items: center; justify-content: center;
+  padding: 11px 15px; border-radius: 10px; background: var(--brand); color: #fff;
+  font-weight: 650; font-size: 13px; text-decoration: none; white-space: nowrap;
+}
+.aw-calendar-google:hover { filter: brightness(.95); }
+.aw-calendar-google.is-disabled { opacity: .45; cursor: not-allowed; }
+.aw-calendar-google svg { flex-shrink: 0; }
+.aw-calendar-note { max-width: 380px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.aw-calendar-saved { color: #26714b; margin: 13px 0 0; font-size: 12px; }
+.aw-calendar-footer-note { margin: 17px 0 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+@media (max-width: 600px) {
+  .aw-calendar-planner { padding: 20px 17px; }
+  .aw-calendar-planner-heading h3 { font-size: 18px; }
+  .aw-calendar-days { max-width: none; }
+  .aw-calendar-days button { font-size: 11px; }
+  .aw-calendar-time { width: 100%; }
 }

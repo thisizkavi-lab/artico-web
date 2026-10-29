@@ -109,8 +109,15 @@ test('Lesson 2 presents the complete everyday-number categories with Japanese cl
   assert.match(numberGroups.find(group=>group.id==='decimals').intro.ja,/一桁ずつ/)
   const ui=readFileSync(new URL('./VocabularyNumbersLesson.jsx',import.meta.url),'utf8')
   assert.match(ui,/Practice recall/)
-  assert.match(ui,/タップして答えを確認/)
+  assert.match(ui,/NumberTable group=\{group\}/)
+  assert.match(ui,/VocabularyNumberVisual/)
+  assert.match(ui,/答えを見る/)
   assert.match(ui,/aria-pressed=\{practice\}/)
+  assert.doesNotMatch(ui,/vl02-card-grid/)
+  const illustrations=readFileSync(new URL('./VocabularyNumberVisual.jsx',import.meta.url),'utf8')
+  assert.match(illustrations,/FractionDisc/)
+  assert.match(illustrations,/PercentGrid/)
+  assert.match(illustrations,/ComparisonLine/)
 })
 
 test('Lesson 1 preserves the organized country, nationality and place vocabulary',()=>{
@@ -162,5 +169,101 @@ test('Grouped source vocabulary covers every remaining lesson with the original 
   assert.match(view,/vocabularyVisual\(term, lesson\)/)
   assert.match(view,/aria-pressed=\{mode === 'study'\}/)
   assert.match(view,/aria-pressed=\{mode === 'practice'\}/)
+  assert.match(style,/@media\(max-width:620px\)/)
+})
+
+
+test('Lesson 03 groups weekdays and weekend with their written abbreviations', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  assert.deepEqual(lesson.groups[1].items.map(item => item[0]), [
+    'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+    'Saturday', 'Sunday', 'weekday', 'weekend',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  for (const [day, short] of [
+    ['Monday', 'Mon'], ['Tuesday', 'Tue'], ['Wednesday', 'Wed'],
+    ['Thursday', 'Thu'], ['Friday', 'Fri'], ['Saturday', 'Sat'], ['Sunday', 'Sun'],
+  ]) assert.ok(view.includes(`name: '${day}', short: '${short}'`))
+  assert.match(view, /topic\.sourceLesson === 3 && group\.index === 1/)
+  assert.match(view, /isDaysChart && mode === 'study'/)
+  assert.match(view, /WeekDaysChart japanese=\{japanese\}/)
+  assert.match(view, /vlt-week-day-short/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-week-section\.is-weekend/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})
+
+
+test('Lesson 03 displays twelve months with their written abbreviations but no day counts', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  const months = lesson.groups[2].items.map(([name]) => name)
+  assert.deepEqual(months, [
+    'January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const chart = view.slice(view.indexOf('const yearMonths'), view.indexOf('const timeSpanEquivalents'))
+  for (const [name, short] of [
+    ['January', 'Jan.'], ['February', 'Feb.'], ['March', 'Mar.'],
+    ['April', 'Apr.'], ['May', 'May'], ['June', 'Jun.'],
+    ['July', 'Jul.'], ['August', 'Aug.'], ['September', 'Sep.'],
+    ['October', 'Oct.'], ['November', 'Nov.'], ['December', 'Dec.'],
+  ]) assert.ok(chart.includes(`name: '${name}', short: '${short}'`))
+  assert.match(chart, /<th scope="col">#<\/th>/)
+  assert.match(chart, /<MonthsOfYearChart|function MonthsOfYearChart/)
+  assert.doesNotMatch(chart, /daysInMonth|daysPerMonth|28\/29|31 days|30 days/)
+  assert.match(view, /isMonthsChart && mode === 'study'/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-month-table/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})
+
+
+test('Lesson 03 displays every original time span as a coherent equivalence table', () => {
+  const lesson = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+    .lessons.find(item => item.sourceLesson === 3)
+  const terms = lesson.groups[4].items.map(([term]) => term)
+  assert.deepEqual(terms, [
+    'second', 'minute', 'hour', 'day', 'week',
+    'two weeks / a fortnight', 'month', 'year', 'decade',
+    'century', 'millennium / millennia',
+  ])
+  const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const table = view.slice(view.indexOf('const timeSpanEquivalents'), view.indexOf('function Visual({visual})'))
+  for (const term of terms) assert.ok(table.includes(term), 'Missing unit: ' + term)
+  for (const equivalent of ['60 seconds', '60 minutes', '24 hours', '7 days',
+    '14 days', '28–31 days', '12 months', '10 years', '100 years', '1,000 years',
+  ]) assert.ok(table.includes(equivalent), 'Missing equivalence: ' + equivalent)
+  assert.match(table, /items\.map\(\(\[term\]\)/)
+  assert.match(table, /<th scope="row"/)
+  assert.match(view, /isTimeSpansTable && mode === 'study'/)
+  assert.match(view, /<TimeSpansTable items=\{cards\} japanese=\{japanese\}/)
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(style, /vlt-span-table/)
+  assert.match(style, /@media\(max-width:620px\)/)
+})
+
+
+test('Lesson 03 uses an ordered frequency chart and keeps specific-interval cards',()=>{
+  const lesson=JSON.parse(readFileSync(new URL('./vocabularyOrganized.json',import.meta.url),'utf8'))
+    .lessons.find(item=>item.sourceLesson===3)
+  const terms=lesson.groups[5].items.map(([term])=>term)
+  const relative=['always','usually','often','sometimes','rarely / seldom','never']
+  assert.deepEqual(terms.slice(0,6),relative)
+  assert.equal(terms.length,15)
+  const view=readFileSync(new URL('./VocabularyTopicLesson.jsx',import.meta.url),'utf8')
+  const chart=view.slice(view.indexOf('const relativeFrequency'),view.indexOf('function VocabCard('))
+  for(const term of relative) assert.ok(chart.includes("term:'"+term+"'"),'Missing frequency: '+term)
+  assert.match(chart,/From most frequent to least frequent/)
+  assert.match(chart,/not a percentage scale/)
+  assert.match(chart,/intervals\.map/)
+  assert.match(chart,/<VocabCard/)
+  assert.match(chart,/<span lang="en">\{level\.label\}<\/span>/)
+  assert.match(view,/isFrequencyScale && mode === 'study'/)
+  assert.match(view,/<FrequencyScale items=\{cards\} japanese=\{japanese\}/)
+  const style=readFileSync(new URL('./vocabulary-topic.css',import.meta.url),'utf8')
+  assert.match(style,/\.vlt-frequency-bars/)
   assert.match(style,/@media\(max-width:620px\)/)
 })

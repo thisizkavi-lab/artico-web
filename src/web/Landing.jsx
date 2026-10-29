@@ -136,9 +136,9 @@ export default function Landing() {
         <section className="al-splash" aria-labelledby="al-title">
           <img
             className="al-splash-art"
-            src={`${import.meta.env.BASE_URL}landing-hero-background.svg`}
-            width="2048"
-            height="996"
+            src={`${import.meta.env.BASE_URL}assets/landing/artico-mountain-journey.webp`}
+            width="1672"
+            height="941"
             alt=""
             aria-hidden="true"
             fetchPriority="high"

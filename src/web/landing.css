@@ -1267,3 +1267,20 @@ a.al-journey-card:hover {
   .al-route-stop figcaption { font-size: 13px; margin-top: 3px; }
   .aw-landing[data-language="ja"] .al-route-stop figcaption { font-size: 12px; }
 }
+
+
+/* Approved mountain-journey hero. The scenery is a background-only WebP:
+   live text and CTA remain accessible, translated, animated and clickable. */
+.aw-landing .al-splash {
+  background-color: #f7f7f5;
+}
+.aw-landing .al-splash-art {
+  object-fit: cover;
+  object-position: center center;
+}
+@media (max-width: 740px) {
+  /* Keep the ascending mountain path and summit visible in tall layouts. */
+  .aw-landing .al-splash-art {
+    object-position: 57% center;
+  }
+}

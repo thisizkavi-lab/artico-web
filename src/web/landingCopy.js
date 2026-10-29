@@ -61,7 +61,7 @@ export const landingPageCopy = {
     languageTrigger: 'Choose language (current: English)',
     start: 'Get Started',
     heroTitle: ['One language, infinite', 'possibilities.'],
-    heroDescription: 'Turn English from a barrier into a multiplier — giving people in the world, the freedom to communicate, connect, and create in the most powerful language of our age.',
+    heroDescription: 'Turn English from a barrier into a multiplier, giving people everywhere the freedom to communicate, connect, and create in a language shared across borders.',
     whyEyebrow: 'THE IDEA BEHIND ARTICO',
     whyTitle: 'why artico?',
     whyParagraphs: [

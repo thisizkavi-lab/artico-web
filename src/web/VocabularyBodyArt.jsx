@@ -137,6 +137,11 @@ function MotionPerson({ action }) {
     <g className={action === 'nod' ? 'bv-nod' : action === 'shake your head' ? 'bv-shake' : ''}>
       <PersonFace action={action}/>
     </g>
+    {action === 'hold your breath' && <g strokeLinecap="round" strokeLinejoin="round">
+      <path d="M190 146 Q184 125 174 109" fill="none" stroke={skin} strokeWidth="13"/>
+      <ellipse cx="170" cy="105" rx="11" ry="9" fill={skin} stroke={ink} strokeWidth="2"/>
+      <path d="M161 103 L169 100 L175 105" fill="none" stroke={ink} strokeWidth="2"/>
+    </g>}
     {action === 'suck' && <g>
       <path d="M199 126 L221 126 L214 166 L205 166Z" fill="#9ac7de" stroke={ink} strokeWidth="2"/>
       <path className="bv-straw" d="M210 130 L188 108 L176 110" fill="none" stroke={accent} strokeWidth="4" strokeLinecap="round"/>
@@ -166,6 +171,22 @@ function MotionPerson({ action }) {
   </g>
 }
 
+function SleepArt() {
+  return <g strokeLinecap="round" strokeLinejoin="round">
+    <path d="M39 74 L39 171 M38 153 L282 153 L282 175" fill="none" stroke={ink} strokeWidth="8"/>
+    <rect x="56" y="113" width="219" height="39" rx="9" fill="#91b7cc" stroke={ink} strokeWidth="3"/>
+    <rect x="67" y="92" width="79" height="39" rx="15" fill="white" stroke="#a6c3d1" strokeWidth="3"/>
+    <ellipse cx="144" cy="109" rx="38" ry="32" fill={skin} stroke={ink} strokeWidth="3"/>
+    <path d="M109 99 Q111 75 140 76 Q168 74 177 97" fill="#4d6273"/>
+    <path d="M130 108 Q137 113 143 108 M156 108 Q163 113 170 108" fill="none" stroke={ink} strokeWidth="3"/>
+    <path d="M145 124 Q152 128 160 124" fill="none" stroke={ink} strokeWidth="2.5"/>
+    <path d="M181 111 Q229 95 266 116 L275 145 L165 145 Q168 124 181 111Z" fill="#b0cce0" stroke={ink} strokeWidth="3"/>
+    <g className="bv-snore" fill="#6388ad" fontFamily="sans-serif" fontWeight="800">
+      <text x="180" y="86" fontSize="22">z</text><text x="214" y="60" fontSize="30">z</text><text x="252" y="34" fontSize="37">Z</text>
+    </g>
+  </g>
+}
+
 function SymptomArt({ type }) {
   return <g strokeLinecap="round" strokeLinejoin="round">
     <rect x="64" y="66" width="190" height="86" rx="43" fill={skin} stroke={ink} strokeWidth="3"/>
@@ -188,6 +209,6 @@ export default function VocabularyBodyArt({ term }) {
     <rect width="320" height="190" fill="#f4f8fb"/>
     <path d="M22 177 H298" stroke="#e1eaf2" strokeWidth="2"/>
     {isHead ? <HeadArt part={term}/> : isBody ? <WholeBodyArt part={term}/> :
-      isSymptom ? <SymptomArt type={term}/> : <MotionPerson action={term}/>}
+      isSymptom ? <SymptomArt type={term}/> : term === 'snore' ? <SleepArt/> : <MotionPerson action={term}/>}
   </svg>
 }

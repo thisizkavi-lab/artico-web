@@ -85,17 +85,6 @@ function PhraseShelf({ title, options, scene = 'people', initial = 0, captions =
   </article>
 }
 
-function Comparison({ title, items }) {
-  return <div className="ar-comparison">
-    <h4>{title}</h4>
-    <div className="ar-comparison-grid">{items.map((item,i)=><article className="ar-card" key={item.phrase}>
-      <p className="ar-overline">{item.label}</p>
-      <div className={'ar-compare-mark '+(i?'ar-warm':'')}>{item.mark || (i?'⟵':'⟶')}</div>
-      <h3>{item.phrase}</h3><p>{item.description}</p>
-    </article>)}</div>
-  </div>
-}
-
 const shelfEveryday = [
   {text:'Hi.',description:'A short, natural greeting to open contact in almost any everyday or workplace situation.'},
   {text:'Hello.',description:'A neutral greeting that works in almost any situation.'},
@@ -203,30 +192,17 @@ export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
     </section>
     <section id="study-check-in" className="ar-section" aria-labelledby="ar-head-2">
       <SectionHead index="02" title="Check in and answer" description={'“How are you?”, “How are you doing?”, and “How’s it going?” can be short social check-ins or genuine questions about someone’s situation. What happens next helps show the intention.'}/>
-      <div className="ar-two-conversations">
-        <Conversation compact title="FAMILIAR ACQUAINTANCES" lines={[{who:'Alex',text:"Hey. How's it going?"},{who:'Casey',text:'Pretty good. You?'},{who:'Alex',text:'Not bad.'}]} play={play}/>
-        <Conversation compact title="A DIFFERENT ANSWER" lines={[{who:'Alex',text:'Hello. How are you?'},{who:'Casey',text:'Good, thanks. How about you?'},{who:'Alex',text:"I'm okay."}]} play={play}/>
-      </div>
       <CheckInFlow play={play}/>
     </section>
     <section id="study-reunion" className="ar-section" aria-labelledby="ar-head-3">
       <SectionHead index="03" title="Meet again" description={'“Good to see you” expresses pleasure at seeing someone again. “It’s been a while” acknowledges time apart, and “How have you been?” asks about the period since your earlier contact. Learn it as a single usable phrase—you do not need to explain present-perfect grammar to use it.'}/>
-      <Conversation title="TWO ACQUAINTANCES RECONNECT" scene="reunion" lines={[{who:'Alex',text:'Hi! Good to see you.'},{who:'Casey',text:"You too. It's been a while."},{who:'Alex',text:'How have you been?'},{who:'Casey',text:"I've been okay. How about you?"},{who:'Alex',text:"I've been good."}]} note={'Here Casey returns the greeting with “You too” and gives a restrained account of that period with “I’ve been okay.”'} play={play}/>
       <PhraseShelf title="Seeing someone again" scene="reunion" options={shelfReunion} play={play}/>
       <PhraseShelf title="Ask about the time apart" scene="reunion" options={shelfApart} play={play}/>
-      <Comparison title="Reunions vs. first-time introductions" items={[
-        {label:'Meeting again · Chapter 01 focus',mark:'••••••',phrase:'Good to see you.',description:'Expresses pleasure at seeing someone you know again (though it is not impossible at a first encounter).'},
-        {label:'First meeting · Chapter 02 focus',mark:'••',phrase:'Nice to meet you.',description:'Standard when being introduced for the first time. Chapter 02 develops first-meeting introductions.'}
-      ]}/>
+      <aside className="ar-note ar-full-note"><strong>A little nuance · Good to see you vs. Nice to meet you</strong><b>“Good to see you”</b> is common when you meet someone you already know. <b>“Nice to meet you”</b> is the usual expression when meeting someone for the first time. You will practise introductions in Chapter 02.</aside>
     </section>
     <section id="study-casual" className="ar-section" aria-labelledby="ar-head-4">
       <SectionHead index="04" title="Optional: Casual choices" description={'With friends and close peers, “What’s up?” can work as an informal greeting or as a real question about what is happening.'}/>
-      <div className="ar-two-conversations">
-        <Conversation compact title="GREETING A FRIEND CASUALLY" scene="friendly" lines={[{who:'Alex',text:"Hey, what's up?"},{who:'Casey',text:'Not much. You?'},{who:'Alex',text:'Not much.'}]} note={'Here “Not much” means there is little new to report.'} play={play}/>
-        <Conversation compact title="ASKING WHAT IS HAPPENING OR WRONG" scene="question" lines={[{who:'Alex',text:"Hey, what's up?"},{who:'Casey',text:'I lost my phone.'}]} play={play}/>
-      </div>
-      <p className="ar-note ar-full-note"><strong>Two uses of “What's up?”</strong><br/>The second scene is a real question about a problem. “I lost my phone” is there only to show the situation—you do not need to memorize it as a greeting.</p>
-      <PhraseShelf title="Casual choices" scene="friendly" options={shelfCasual} captions play={play}/>
+      <PhraseShelf title="Casual greetings and replies" scene="friendly" options={shelfCasual} play={play}/>
     </section>
   </div>
 }

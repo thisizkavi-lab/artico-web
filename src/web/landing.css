@@ -346,7 +346,6 @@
   .al-splash-content { padding: 60px 22px 90px; transform: none; }
   .al-splash-title { font-size: clamp(38px, 9.1vw, 54px); line-height: 1.19; letter-spacing: -0.04em; }
   .al-splash-title span { display: inline; }
-  .al-splash-title span + span::before { content: ' '; }
   .al-splash-description { margin-top: 28px !important; font-size: 17px; line-height: 1.6; letter-spacing: 0; }
   .al-splash-cta { margin-top: 34px; min-height: 58px; min-width: 198px; font-size: 20px; border-width: 1.5px; }
   .al-why { padding-block: 72px 86px; }

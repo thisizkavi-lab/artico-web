@@ -1,0 +1,136 @@
+/* Chapter 34 Humor & Banter follows the same Artico paper-and-blue
+   presentation system while keeping its special visual examples and practice. */
+.hm-page .hm-study{
+  --hm-blue:#2f5bea;
+  --hm-navy:#14213d;
+  --hm-border:#d6dfed;
+  --hm-coral:#c4452c;
+  padding:18px 18px 28px;
+  border-radius:16px;
+  background:#f3f6fc;
+}
+.hm-page .hm-study .hm-contents{
+  margin:0 0 16px;
+  border:1px solid var(--hm-border);
+  border-radius:13px;
+  background:#fff;
+  padding:14px;
+}
+.hm-page .hm-study .hm-contents button{
+  color:#334f83;
+  font-weight:740;
+  border:1px solid #e0e8f4;
+  background:#f7f9ff;
+}
+.hm-page .hm-study .hm-contents button:hover{
+  color:#fff;
+  border-color:var(--hm-blue);
+  background:var(--hm-blue);
+}
+.hm-page .hm-study .hm-section{
+  margin:0 0 12px;
+  padding:22px 0 25px;
+  border-bottom:1px solid #dce4f0;
+}
+.hm-page .hm-study .hm-section:first-of-type{padding-top:6px}
+.hm-page .hm-study .hm-section h2{
+  font-family:'Hanken Grotesk','Segoe UI',sans-serif;
+  font-size:clamp(23px,2.5vw,29px);
+  line-height:1.28;
+  font-weight:800;
+  color:var(--hm-navy);
+  letter-spacing:-.025em;
+}
+.hm-page .hm-study .hm-kicker{color:var(--hm-blue);font-weight:850}
+.hm-page .hm-study .hm-scene{
+  background:#fff;
+  border-color:var(--hm-border);
+  border-radius:18px;
+  padding:14px;
+  gap:18px;
+}
+.hm-page .hm-study .hm-scene-visual{
+  background:#e7effc;
+  border-radius:12px;
+}
+.hm-page .hm-study .hm-scene-copy{padding:10px 0}
+.hm-page .hm-study .hm-conversation{gap:12px}
+.hm-page .hm-study .hm-turn{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  max-width:92%;
+  gap:4px;
+}
+.hm-page .hm-study .hm-turn:nth-child(even){
+  align-self:flex-end;
+  align-items:flex-end;
+}
+.hm-page .hm-study .hm-turn>p{
+  padding:9px 12px;
+  border:2px solid var(--hm-navy);
+  border-radius:13px;
+  background:#f1f4fa;
+  color:var(--hm-navy);
+  font-size:14px;
+  font-weight:700;
+  line-height:1.45;
+}
+.hm-page .hm-study .hm-turn>small{margin:0;font-size:11px;color:#6e7f98}
+.hm-page .hm-study .hm-turn:nth-child(even)>small{text-align:right}
+.hm-page .hm-study .hm-speaker{font-size:11px;color:#445c85}
+.hm-page .hm-study .hm-concept{
+  border-left:3px solid var(--hm-blue);
+  border-radius:10px;
+  background:#e8efff;
+  padding:14px 17px;
+}
+.hm-page .hm-study .hm-concept strong{color:var(--hm-navy)}
+.hm-page .hm-study .hm-move,
+.hm-page .hm-study .hm-chat-card,
+.hm-page .hm-study .hm-meme-card,
+.hm-page .hm-study .hm-safety article,
+.hm-page .hm-study .hm-timeline>div,
+.hm-page .hm-study .hm-study-end{
+  background:#fff;
+  border:1px solid var(--hm-border);
+  border-radius:14px;
+}
+.hm-page .hm-study .hm-move .hm-quote{color:var(--hm-navy);font-weight:700}
+.hm-page .hm-study .hm-chat-line p{
+  border:1.7px solid var(--hm-navy);
+  background:#fff;
+  color:var(--hm-navy);
+  border-radius:12px;
+  font-weight:650;
+}
+.hm-page .hm-study .hm-chat-right p{
+  background:#e7eeff;
+  border-color:var(--hm-blue);
+}
+.hm-page .hm-study .hm-chat-log{background:#f5f8ff}
+.hm-page .hm-study .hm-meme-visual{background:#eaf1ff}
+.hm-page .hm-study .hm-expressions{
+  border:1px solid var(--hm-border);
+  background:#e0e8f4;
+  border-radius:13px;
+}
+.hm-page .hm-study .hm-note{
+  background:#fff4df;
+  border:0;
+  border-radius:10px;
+  padding:12px 15px;
+  color:var(--hm-navy)!important;
+}
+.hm-page .hm-study .hm-primary{
+  border-color:var(--hm-blue);
+  background:var(--hm-blue);
+  color:#fff;
+}
+@media(max-width:620px){
+  .hm-page .hm-study{padding:12px 10px 22px}
+  .hm-page .hm-study .hm-contents>div{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hm-page .hm-study .hm-scene{grid-template-columns:1fr}
+  .hm-page .hm-study .hm-turn{max-width:98%}
+  .hm-page .hm-study .hm-turn>p{font-size:13px}
+}

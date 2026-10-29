@@ -90,7 +90,7 @@ function PersonFace({ action, breathing = false }) {
   return <g>
     <ellipse cx="160" cy="83" rx="45" ry="54" fill={skin} stroke={ink} strokeWidth="3"/>
     <path d="M116 74 Q107 33 145 27 Q184 10 205 53 L205 67 Q182 57 171 42 Q145 66 116 74Z" fill="#526678"/>
-    <g stroke={ink} strokeWidth="3" strokeLinecap="round">
+    <g className="bv-brows" stroke={ink} strokeWidth="3" strokeLinecap="round">
       <path d={sad ? 'M131 69 L146 65 M176 65 L190 69' : 'M131 65 L146 65 M176 65 L190 65'} fill="none"/>
     </g>
     <g className={closed ? 'bv-eyes-blink' : ''} fill={ink}>
@@ -98,9 +98,9 @@ function PersonFace({ action, breathing = false }) {
       <ellipse cx="182" cy="80" rx="4.4" ry="5.4"/>
     </g>
     <path d="M159 84 L156 101 L166 103" fill="none" stroke={ink} strokeWidth="2.7" strokeLinecap="round"/>
-    {grin && <path d="M138 111 Q161 140 185 111Z" fill="white" stroke={ink} strokeWidth="3"/>}
-    {laugh && <ellipse cx="162" cy="122" rx="18" ry="16" fill="#8e4c52" stroke={ink} strokeWidth="3"/>}
-    {!grin && !laugh && <path d={
+    {grin && <path className="bv-mouth" d="M138 111 Q161 140 185 111Z" fill="white" stroke={ink} strokeWidth="3"/>}
+    {laugh && <ellipse className="bv-mouth" cx="162" cy="122" rx="18" ry="16" fill="#8e4c52" stroke={ink} strokeWidth="3"/>}
+    {!grin && !laugh && <path className="bv-mouth" d={
       sad ? 'M145 127 Q161 114 178 127' :
       sneeze ? 'M156 116 Q162 111 168 116 Q174 123 166 131 Q155 132 156 116Z' :
       action === 'lick' ? 'M145 115 Q161 120 178 115' :

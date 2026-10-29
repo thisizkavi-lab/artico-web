@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
+import VocabularyBodyArt from './VocabularyBodyArt'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
 
@@ -179,6 +180,7 @@ function TimeSpansTable({ items, japanese }) {
 }
 
 function Visual({visual}) {
+  if (visual?.type === 'body-art') return <VocabularyBodyArt term={visual.term} />
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
     src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async" />
@@ -276,7 +278,11 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   const [groupIndex, setGroupIndex] = useState(-1)
   const [mode, setMode] = useState('study')
   const [revealed, setRevealed] = useState(() => new Set())
-  const groups = lesson?.groups || []
+  // Source stays intact for editorial traceability; this heading is not a word.
+  const groups = useMemo(() => (lesson?.groups || []).map((group, index) =>
+    topic.sourceLesson === 14 && index === 0
+      ? { ...group, items: group.items.filter(([term]) => term !== 'body, parts of') }
+      : group), [lesson, topic.sourceLesson])
   const activeGroups = groups.map((group,index)=>({...group,index}))
     .filter(group=>organizeVocabularyGroup(group.items,topic.sourceLesson).fresh.length>0)
   const counts = useMemo(() => groups.reduce((acc,group) => {
@@ -354,6 +360,11 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
         {shownGroups.map(group => {
           const {fresh,revisited} = organizeVocabularyGroup(group.items, topic.sourceLesson)
           const cards = mode === 'study' ? fresh : fresh.filter(([term]) => canRecall(term))
+          const bodyNote = topic.sourceLesson === 14 && mode === 'study' ? ([
+            japanese ? 'head（頭）の前側が face（顔）です。額、目、鼻、口は顔の部位です。' : 'Your face is the front of your head. Your forehead, eyes, nose, and mouth are parts of your face.',
+            japanese ? '腕は手首から手につながります。指と親指は手の一部です。' : 'Your arm connects to your hand at the wrist. Fingers and the thumb are parts of your hand.',
+            japanese ? '脚には太もも、ひざ、すねがあります。足首の下が foot（足）で、その先に toe（足の指）があります。' : 'Your leg has a thigh, knee, and shin. Below the ankle is the foot, which has toes.',
+          ][group.index] || null) : null
           const isDaysChart = topic.sourceLesson === 3 && group.index === 1
           const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
           const isTimeSpansTable = topic.sourceLesson === 3 && group.index === 4
@@ -372,6 +383,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                 </div>
                 <span className="vlt-group-count">{cards.length}</span>
               </div>
+              {bodyNote && <p className="vlt-body-note">{bodyNote}</p>}
               {cards.length > 0
                 ? (isDaysChart && mode === 'study'
                   ? <WeekDaysChart japanese={japanese} />

@@ -113,3 +113,31 @@ test('Each IPA example is clickable across its entire row while retaining one ac
   assert.match(ui, /onClick=\{\(\) => \{ setSelected\(item\.ipa\); play\(item, l\) \}\}/)
   assert.match(ui, /ipa-focus ipa-focus--playable" onClick=\{\(\) => play\(sound, l\)\}/)
 })
+
+test('IPA reference shows two groups and every highlighted word can play its own recording', () => {
+  const ui = readFileSync(new URL('./IpaReference.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./ipa-reference.css', import.meta.url), 'utf8')
+  const annotations = JSON.parse(readFileSync(new URL('./ipaExamples.json', import.meta.url), 'utf8'))
+  assert.deepEqual(Object.keys(annotations).sort(), allIpaSounds.map(item => item.ipa).sort())
+  assert.match(ui, /const ipaDisplayGroups = \[/)
+  assert.match(ui, /sounds: \[\.\.\.ipaGroups\[1\]\.sounds, \.\.\.ipaGroups\[2\]\.sounds\]/)
+  assert.match(ui, /<HighlightedExample key=\{example\}/)
+  assert.match(ui, /event\.stopPropagation\(\); play\(sound, l, word\)/)
+  assert.match(ui, /<mark>\{parts\[2\]\}<\/mark>/)
+  assert.match(css, /\.ipa-example mark/)
+  const audioFiles = new Set()
+  for (const item of allIpaSounds) {
+    const examples = annotations[item.ipa]
+    assert.equal(examples.length, 2, item.ipa)
+    const words = examples.map(marked => {
+      assert.match(marked, /^[a-z]*\[[a-z]+\][a-z]*$/)
+      const word = marked.replace(/[\[\]]/g, '')
+      audioFiles.add(word + '.wav')
+      return word
+    })
+    assert.ok(words.includes(item.word), item.ipa)
+  }
+  assert.ok(audioFiles.size > 41)
+  assert.deepEqual(annotations.i, ['s[ea]t', 'b[ee]t'])
+  assert.deepEqual(annotations['ɪ'], ['s[i]t', 'l[i]p'])
+})

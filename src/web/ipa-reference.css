@@ -56,3 +56,32 @@
   .ipa-focus { padding: 22px 12px; }
   .ipa-symbol-selector button { min-width: 53px; }
 }
+/* Reference-style sound → highlighted spelling → recorded examples. */
+.ipa-study-hint { margin: 4px 0 14px; font-size: 13px; line-height: 1.7; color: var(--muted); }
+.ipa-table-section { margin: 24px 0 29px; }
+.ipa-table-heading h3 { font-size: 19px; }
+.ipa-table th, .ipa-table td { padding: 12px 16px; }
+.ipa-table .ipa-symbol-cell { width: 153px; min-width: 135px; font-size: 20px; }
+.ipa-symbol-cell > span { display: inline-block; min-width: 64px; }
+.ipa-symbol-cell .ipa-play { vertical-align: middle; margin-left: 6px; width: 32px; height: 32px; }
+.ipa-table .ipa-word { width: auto; font-size: 15px; }
+.ipa-examples { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.ipa-example { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; border: 1px solid var(--line); border-radius: 9px; padding: 5px 10px; background: var(--surface); color: var(--ink); font: inherit; font-size: 16px; font-weight: 600; line-height: 1.4; cursor: pointer; transition: background 120ms, border-color 120ms; }
+.ipa-example mark { padding: 1px 2px; border-radius: 3px; color: inherit; background: #f9e59a; font-weight: 800; }
+.ipa-example svg { opacity: 0.65; color: var(--ip-blue); flex: none; }
+.ipa-example:hover { background: var(--surface-strong); border-color: var(--ip-blue); }
+.ipa-example:hover svg { opacity: 1; }
+.ipa-example:focus-visible { outline: 2px solid var(--ip-blue); outline-offset: 2px; }
+.ipa-focus .ipa-examples { justify-content: flex-start; margin-top: 8px; }
+.ipa-focus-top { align-self: stretch; justify-content: center; flex-wrap: wrap; }
+.ipa-focus-symbol { min-width: 95px; }
+.ipa-practice .ipa-example { min-height: 43px; }
+@media (max-width: 640px) {
+  .ipa-table th, .ipa-table td { padding: 11px 9px; }
+  .ipa-table .ipa-symbol-cell { width: 96px; min-width: 92px; }
+  .ipa-symbol-cell > span { min-width: 0; display: block; margin-bottom: 5px; }
+  .ipa-symbol-cell .ipa-play { margin-left: 0; }
+  .ipa-examples { gap: 6px; }
+  .ipa-example { font-size: 14px; padding: 5px 8px; min-height: 36px; }
+  .ipa-example svg { width: 12px; }
+}

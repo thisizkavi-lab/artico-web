@@ -243,6 +243,24 @@ export default function Landing() {
             </div>
           </nav>
         </div>
+        <section className="al-footer-story" aria-labelledby="al-footer-story-title">
+          <div className="al-footer-story-copy">
+            <h3 id="al-footer-story-title">{language === 'ja' ? 'Articoをつくった理由' : 'Why We Built Artico'}</h3>
+            <p>{language === 'ja' ? '学ぶこと、努力すること、そしてArticoの考え方。' : 'On learning, effort, and the thinking behind Artico.'}</p>
+          </div>
+          <div className="al-footer-story-links">
+            <a href={`${import.meta.env.BASE_URL}booklets/why-we-built-artico-en.pdf`}
+              target="_blank" rel="noopener noreferrer" lang="en"
+              aria-label={language === 'ja' ? '英語版PDFを開く' : 'Read Why We Built Artico in English (PDF)'}>
+              English <span>PDF ↗</span>
+            </a>
+            <a href={`${import.meta.env.BASE_URL}booklets/why-we-built-artico-ja.pdf`}
+              target="_blank" rel="noopener noreferrer" lang="ja"
+              aria-label={language === 'ja' ? '日本語版PDFを開く' : 'Read Why We Built Artico in Japanese (PDF)'}>
+              日本語 <span>PDF ↗</span>
+            </a>
+          </div>
+        </section>
         <div className="al-footer-bottom">
           <span>© {new Date().getFullYear()} Artico</span>
         </div>

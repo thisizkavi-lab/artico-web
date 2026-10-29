@@ -1074,18 +1074,7 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
       {src && <audio ref={audioRef} src={src} preload="metadata" />}
       {navigation ? (
         <>
-          <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '練習の操作' : 'Practice controls'}>
-            <button type="button" className="tt-transport-previous"
-              disabled={navigation.previousDisabled}
-              onClick={navigation.onPrevious}
-              aria-label={language === 'ja' ? '前の部分' : 'Previous chunk'}
-              title={language === 'ja' ? '前の部分' : 'Previous chunk'}>
-              <span aria-hidden="true">←</span>
-            </button>
-            <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
-              aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
-              <PlayIcon pause={playing} />
-            </button>
+          <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '早口言葉の操作' : 'Tongue twister controls'}>
             <button type="button" className="tt-transport-replay" onClick={rewind} disabled={!src}
               aria-label={t('Replay')} title={t('Replay')}>
               <span aria-hidden="true">↶</span>
@@ -1096,13 +1085,25 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
               title={language === 'ja' ? 'くり返す' : 'Loop'}>
               <span aria-hidden="true">↻</span>
             </button>
+            <button type="button" className="tt-transport-previous"
+              disabled={navigation.previousDisabled}
+              onClick={navigation.onPrevious}
+              aria-label={language === 'ja' ? '前の早口言葉' : 'Previous tongue twister'}
+              title={language === 'ja' ? '前の早口言葉' : 'Previous tongue twister'}>
+              <span aria-hidden="true">◀</span>
+            </button>
+            <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
+              aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
+              <PlayIcon pause={playing} />
+            </button>
+            <button type="button" className="tt-transport-next" onClick={navigation.onNext} disabled={navigation.nextDisabled}
+              aria-label={language === 'ja' ? '次の早口言葉' : 'Next tongue twister'}
+              title={language === 'ja' ? '次の早口言葉' : 'Next tongue twister'}>
+              <span aria-hidden="true">▶</span>
+            </button>
             <button type="button" className="tt-transport-speed" onClick={cycleSpeed} disabled={!src}
               aria-label={t('Playback speed {speed}', { speed: speedLabel })} title={language === 'ja' ? '再生速度' : 'Speed'}>
               {speedLabel}
-            </button>
-            <button type="button" className="tt-transport-next" onClick={navigation.onNext}>
-              <span>{navigation.nextLabel}</span>
-              <span aria-hidden="true">→</span>
             </button>
           </div>
           <input type="range" className="tt-audio-progress tt-transport-progress" min="0" max="100" step="0.1"

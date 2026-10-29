@@ -165,3 +165,199 @@
   .tt-practice .rf-focus h3.tt-long-verse { font-size: clamp(24px, 6.5vw, 30px); }
   .rf-page .tt-practice .tt-transport-player { padding: 10px; }
 }
+
+/* Selected concept A: the complete tongue twister, not the transport, is the hero. */
+.tt-practice-gallery {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 15px clamp(12px, 3vw, 30px) 25px;
+  text-align: center;
+}
+.tt-practice-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  color: #8a95a8;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .025em;
+}
+.tt-practice-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tt-practice-gallery .tt-practice-name {
+  margin: 8px 0 3px;
+  color: #152a4b;
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+  text-align: center;
+}
+.tt-practice-illustration {
+  display: block;
+  width: min(440px, 88%);
+  height: clamp(170px, 28vw, 245px);
+  object-fit: contain;
+  margin: 0 auto 9px;
+}
+.tt-practice-gallery .tt-practice-verse {
+  margin: 8px auto 18px;
+  max-width: 790px;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  text-align: center;
+  color: #192b49;
+  font-size: clamp(28px, 3.6vw, 41px);
+  font-weight: 740;
+  line-height: 1.33;
+  letter-spacing: -.025em;
+}
+.tt-practice-gallery .tt-practice-verse.tt-verse-long {
+  font-size: clamp(22px, 2.7vw, 29px);
+  line-height: 1.43;
+}
+.rf-page .tt-practice-gallery .tt-transport-player {
+  position: static;
+  width: min(100%, 650px);
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.tt-practice-gallery .tt-transport-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(7px, 1.7vw, 15px);
+}
+.rf-page .tt-practice-gallery .tt-transport-main button {
+  flex: 0 0 auto;
+  width: clamp(40px, 6vw, 52px);
+  height: clamp(40px, 6vw, 52px);
+  padding: 0;
+  border-radius: 15px;
+  border: 1px solid #e1e5ed;
+  background: #fff;
+  color: #304766;
+  font-size: 17px;
+}
+.rf-page .tt-practice-gallery .tt-transport-main .theory-audio-play {
+  width: clamp(58px, 7.5vw, 69px);
+  height: clamp(58px, 7.5vw, 69px);
+  border-radius: 50%;
+  background: #3180ef;
+  border: 0;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(49,128,239,.17);
+}
+.rf-page .tt-practice-gallery .tt-transport-main .theory-audio-play svg {
+  width: 25px;
+  height: 25px;
+  stroke-width: 2.1;
+}
+.rf-page .tt-practice-gallery .tt-transport-main .tt-transport-next {
+  width: clamp(40px, 6vw, 52px);
+  min-width: 0;
+  padding: 0;
+  background: #fff;
+  border-color: #e1e5ed;
+  color: #304766;
+}
+.rf-page .tt-practice-gallery .tt-transport-main .tt-transport-speed {
+  width: clamp(55px, 7vw, 69px);
+  color: #2d4161;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.tt-practice-gallery .tt-transport-main .tt-transport-loop.active {
+  background: #ecf4ff;
+  color: #285bcc;
+  border-color: #c9dcf9;
+}
+.rf-page .tt-practice-gallery .tt-transport-player .tt-transport-progress {
+  width: min(100%, 590px);
+  height: 6px;
+  margin: 13px auto 0;
+}
+.tt-practice-gallery .tt-practice-soundnote {
+  max-width: 720px;
+  margin: 14px auto 0;
+  font-size: 11px;
+  line-height: 1.65;
+  color: rgba(85,100,126,.67);
+  text-align: left;
+}
+.tt-practice-gallery .tt-practice-soundnote strong {
+  color: inherit;
+  font-weight: 730;
+}
+.tt-practice-chunks {
+  margin: 22px auto 0;
+  max-width: 640px;
+  border-top: 1px solid #e8edf2;
+  padding-top: 13px;
+  text-align: left;
+  color: #798496;
+  font-size: 12px;
+}
+.tt-practice-chunks summary {
+  cursor: pointer;
+  display: inline-block;
+  color: #5a7297;
+  font-size: 12px;
+}
+.tt-chunk-inside {
+  margin: 15px 0 0;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  padding: 17px;
+  background: #fafbfd;
+}
+.tt-chunk-inside > span {
+  font-size: 11px;
+  color: #8b96a4;
+}
+.tt-chunk-inside > p {
+  white-space: pre-line;
+  font-size: 21px;
+  font-weight: 650;
+  line-height: 1.5;
+  color: #273954;
+  margin: 12px 0;
+}
+.tt-chunk-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.tt-chunk-actions button {
+  font: inherit;
+  min-width: 80px;
+  min-height: 37px;
+  padding: 8px 12px;
+  border: 1px solid #dbe4ee;
+  border-radius: 9px;
+  color: #2c5faa;
+  background: #fff;
+  cursor: pointer;
+}
+.tt-chunk-actions button:disabled { opacity: .4; cursor: not-allowed; }
+@media (max-width: 650px) {
+  .tt-practice-gallery { padding-inline: 8px; }
+  .tt-practice-gallery .tt-practice-name { margin-top: 16px; }
+  .tt-practice-illustration { width: 94%; height: 180px; }
+  .tt-practice-gallery .tt-practice-verse { font-size: clamp(25px, 6.2vw, 34px); }
+  .tt-practice-gallery .tt-practice-verse.tt-verse-long { font-size: clamp(19px, 4.9vw, 25px); }
+  .tt-practice-gallery .tt-transport-main { display: flex; gap: 5px; }
+  .rf-page .tt-practice-gallery .tt-transport-main button { width: 38px; height: 42px; font-size: 14px; }
+  .rf-page .tt-practice-gallery .tt-transport-main .theory-audio-play { width: 55px; height: 55px; }
+  .rf-page .tt-practice-gallery .tt-transport-main .tt-transport-next { width: 38px; }
+  .rf-page .tt-practice-gallery .tt-transport-main .tt-transport-speed { width: 54px; font-size: 11px; }
+  .tt-practice-gallery .tt-practice-soundnote { margin-top: 12px; font-size: 10.5px; }
+}

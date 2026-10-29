@@ -61,44 +61,76 @@ export function TongueTwisterStudy() {
 export function TongueTwisterPractice({ initialId }) {
   const { language } = useLanguage()
   const ja = language === 'ja'
-  const [id, setId] = useState(initialId || twisterCards[0].id)
-  const [step, setStep] = useState(0)
-  const item = twisterCards.find(card => card.id === id) || twisterCards[0]
-  const phrase = item.buildSteps[step] ?? item.phrase
-  const whole = step === item.buildSteps.length - 1
-  const src = twisterAudioSource(item, step)
+  const [index, setIndex] = useState(Math.max(0, twisterCards.findIndex(card => card.id === initialId)))
+  const [chunkIndex, setChunkIndex] = useState(0)
+  const [showChunks, setShowChunks] = useState(false)
+  const [usePng, setUsePng] = useState(true)
+  const item = twisterCards[index]
+  const photoBase = `${import.meta.env.BASE_URL}assets/illustrations/twisters/${item.id}`
+  const changeItem = (delta) => {
+    setIndex(current => Math.max(0, Math.min(twisterCards.length - 1, current + delta)))
+    setChunkIndex(0)
+    setShowChunks(false)
+    setUsePng(true)
+  }
   return (
-    <section className="rf-practice tt-practice">
-      <p className="ip-kicker">ONE MOVEMENT AT A TIME</p>
-      <h2>{ja ? '短く分けて、少しずつつなげよう。' : 'Build a clear phrase.'}</h2>
-      <p className="ip-prose">{ja ? '聞いて、言って、次を足してみましょう。速さよりも、はっきり言うことが大切です。' : 'Listen, say one short part, then add the next when it feels clear.'}</p>
-      <label className="rf-select">
-        {ja ? '早口言葉を選ぶ' : 'Choose a tongue twister'}
-        <select value={id} onChange={event => { setId(event.target.value); setStep(0) }}>
-          {twisterCards.map(card => <option key={card.id} value={card.id}>{card.number} · {card.title}</option>)}
-        </select>
-      </label>
-      <div className="rf-focus">
-        <span className="ip-register">{item.target} · {step + 1} / {item.buildSteps.length}</span>
+    <section className="rf-practice tt-practice tt-practice-gallery">
+      <div className="tt-practice-topline">
+        <span>Level {item.level} · {index + 1} / {twisterCards.length}</span>
+        <span>{ja ? '早口言葉' : 'Tongue Twisters'}</span>
+      </div>
+
+      <div className="tt-practice-center">
+        <h2 className="tt-practice-name">{item.title}</h2>
+        <img
+          key={item.id}
+          className="tt-practice-illustration"
+          src={`${photoBase}${usePng ? '.png' : '-source.svg'}`}
+          alt={ja ? item.meaningJa : `An illustration for ${item.title}`}
+          onError={() => { if (usePng) setUsePng(false) }}
+        />
+        <p className={`tt-practice-verse${item.phrase.length > 165 ? ' tt-verse-long' : ''}`} lang="en">{item.phrase}</p>
+
         <TheoryAudioSample
-          phrase={phrase}
+          key={item.id}
+          phrase={item.phrase}
           target={item.target}
-          src={src}
+          src={twisterAudioSource(item)}
           compact
           navigation={{
-            previousDisabled: step === 0,
-            onPrevious: () => setStep(n => Math.max(0, n - 1)),
-            onNext: () => setStep(n => (n + 1) % item.buildSteps.length),
-            nextLabel: whole ? (ja ? '最初から' : 'Start again') : (ja ? '次へ' : 'Next'),
+            previousDisabled: index === 0,
+            nextDisabled: index === twisterCards.length - 1,
+            onPrevious: () => changeItem(-1),
+            onNext: () => changeItem(1),
+            nextLabel: ja ? '次へ' : 'Next',
           }}
         />
-        <h3 lang="en" className={phrase.includes("\n") ? "tt-long-verse" : undefined}>{phrase}</h3>
       </div>
-      <div className="tt-practice-notes">
-        {ja && <p className="tt-practice-meaning">{item.meaningJa}</p>}
-        <p className="tt-practice-tip">{ja ? item.tipJa : item.tipEn}</p>
-        <p className="tt-practice-transfer">{ja ? '普段の英語でも：' : 'Try it in everyday English: '}{item.transfer.join(' / ')}</p>
-      </div>
+
+      <p className="tt-practice-soundnote">{emphasizeReason(ja ? item.whyJa : item.whyEn)}</p>
+
+      <details className="tt-practice-chunks" open={showChunks} onToggle={event => setShowChunks(event.currentTarget.open)}>
+        <summary>{ja ? '短く分けて練習' : 'Build it in chunks'}</summary>
+        <div className="tt-chunk-inside">
+          <span>{chunkIndex + 1} / {item.buildSteps.length}</span>
+          <p lang="en">{item.buildSteps[chunkIndex]}</p>
+          <TheoryAudioSample
+            key={`${item.id}-${chunkIndex}`}
+            phrase={item.buildSteps[chunkIndex]}
+            target={item.target}
+            src={twisterAudioSource(item, chunkIndex)}
+            compact
+          />
+          <div className="tt-chunk-actions">
+            <button type="button" disabled={chunkIndex === 0} onClick={() => setChunkIndex(n => Math.max(0,n - 1))}>
+              {ja ? '戻る' : 'Back'}
+            </button>
+            <button type="button" onClick={() => setChunkIndex(n => (n + 1) % item.buildSteps.length)}>
+              {chunkIndex === item.buildSteps.length - 1 ? (ja ? 'もう一度' : 'Again') : (ja ? '次の部分' : 'Add a part')}
+            </button>
+          </div>
+        </div>
+      </details>
     </section>
   )
 }

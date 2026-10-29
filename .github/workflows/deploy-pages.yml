@@ -131,6 +131,12 @@ jobs:
       - name: Crop original AI grooming sheets to local PNGs
         run: python3 scripts/build_vocab_grooming_sheets.py
 
+      - name: Generate twenty-four tongue-twister illustrations
+        run: |
+          python3 scripts/build_tongue_twister_png.py
+          test "$(find public/assets/illustrations/twisters -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
+          test -s public/assets/illustrations/twisters/woodchuck.png
+
       - name: Test course and learning progress
         run: pnpm test
 
@@ -155,6 +161,12 @@ jobs:
           test -s dist/vocabulary-ai/food/tomato.png
           test "$(find dist/vocabulary-ai/grooming -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 16
           test -s dist/vocabulary-ai/grooming/brush-your-hair.png
+
+      - name: Verify illustrated tongue-twister practice assets
+        run: |
+          test "$(find dist/assets/illustrations/twisters -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
+          test -s dist/assets/illustrations/twisters/woodchuck.png
+          test -s dist/assets/illustrations/twisters/betty-botter.png
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

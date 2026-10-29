@@ -3,7 +3,6 @@ import { useLanguage } from './Language'
 import { Glyph } from './LessonExperience'
 import { ipaGroups, allIpaSounds } from './ipaSounds'
 import ipaExamples from './ipaExamples.json'
-import { ipaCurriculum } from './ipaCurriculum'
 import './ipa-reference.css'
 
 // The reference uses two main tables, with the less-common sounds below Vowels.
@@ -166,7 +165,6 @@ function SoundTable({ group, l, play }) {
 export default function IpaReference({ mode = 'study' }) {
   const { language } = useLanguage()
   const l = copy[language] ?? copy.en
-  const scope = ipaCurriculum[language] ?? ipaCurriculum.en
   const [selected, setSelected] = useState('i')
   const { play, message } = useIpaPlayback()
   const sound = displayGroups.flatMap(group => group.sounds).find(item => item.ipa === selected) || vowels.sounds[0]

@@ -173,15 +173,9 @@ export const foundationSteps = [
   },
   {
     id: 'tongue-intro',
-    en: 'Why tongue twisters?',
-    description: 'Learn how to practice clearly, one movement at a time.',
+    en: 'Tongue Twisters',
+    description: 'Listen to complete classics, then build them in Practice.',
     ja: '口とリズムを練習する',
-  },
-  {
-    id: 'lr',
-    en: 'L & R, in rhythm.',
-    description: 'Build a tongue twister in short, clear chunks.',
-    ja: 'ゆっくり、はっきり言う',
   },
 ]
 

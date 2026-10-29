@@ -21,8 +21,8 @@ export const learningStages = [
     description: 'Get a feel for the sounds.',
     support: '文字を知り、耳で聞き、口を動かす。',
     topics: ['The alphabet · writing', 'Sounds · tongue twisters'],
-    lessonIds: ['letters', 'write', 'sounds', 'tongue-intro', 'lr'],
-    count: '5 lessons',
+    lessonIds: ['letters', 'write', 'sounds', 'tongue-intro'],
+    count: '4 lessons',
     overview: '/courses?foundation',
     start: '/foundation/letters/study',
     action: 'Explore Level Zero',
@@ -72,7 +72,7 @@ export function getLessonNavigation({ page, id }) {
     return {
       previous: navigation.previous,
       next: navigation.next,
-      practice: `/foundation/${id}/${id === 'lr' ? 'chunks' : 'practice'}`,
+      practice: `/foundation/${id}/practice`,
     }
   }
   if (page !== 'lesson' || !/^(?:0[1-9]|[1-8]\d|9[0-7])$/.test(id)) return null

@@ -17,6 +17,8 @@ import HandwritingWorksheets from './HandwritingWorksheets.jsx'
 import IpaReference from './IpaReference.jsx'
 import HandwritingAnimator from './HandwritingAnimator.jsx'
 import './foundation-readable.css'
+import './tongue-twisters.css'
+import { TongueTwisterStudy, TongueTwisterPractice } from './TongueTwisters'
 
 const scrollTo = (id) =>
   document.getElementById(id)?.scrollIntoView({
@@ -339,75 +341,9 @@ function Reflection({ id, learning, update, label }) {
     </label>
   )
 }
-function TwisterPractice() {
+function FoundationPractice({ id, learning, update, initialTwister }) {
   const { t, language } = useLanguage()
-  const [id, setId] = useState(allTwisters[0].id)
-  const [step, setStep] = useState(0)
-  const item = allTwisters.find((item) => item.id === id)
-  const phrase = item.buildSteps[step]
-  const japaneseTwister = japaneseFoundation['tongue-intro'].sections.flatMap((section) => section.blocks).find((block) => block.id === id)
-  const japaneseTip = japaneseTwister?.blocks.find((block) => /^口と耳の目印[:：]/.test(block.runs?.[0]?.text ?? ''))?.runs.slice(1).map((run) => run.text).join('')
-  const whole = step === item.buildSteps.length - 1
-  return (
-    <section className="rf-practice">
-      <p className="ip-kicker">{t("ONE MOVEMENT AT A TIME")}</p>
-      <h2>{t("Build a clear phrase.")}</h2>
-      <p className="ip-prose"> {t("Choose a sound to work on. Repeat one short chunk, then add the next part when it feels clear.")} </p>
-      <label className="rf-select"> {t("Choose a tongue twister")} <select
-          value={id}
-          onChange={(event) => {
-            setId(event.target.value)
-            setStep(0)
-          }}
-        >
-          {allTwisters.map((item) => (
-            <option key={item.id} value={item.id}>
-              {item.target} · {item.phrase}
-            </option>
-          ))}
-        </select>
-      </label>
-      <div className="rf-focus">
-        <span className="ip-register">
-          {item.target} · {step + 1} / {item.buildSteps.length}
-        </span>
-        <h3 lang="en">{phrase}</h3>
-        <p>{language === 'ja' ? japaneseTip : twisterGuidance[id][1]}</p>
-        <TheoryAudioSample
-          key={`${id}-${step}`}
-          phrase={phrase}
-          target={item.target}
-          src={`${import.meta.env.BASE_URL}audio/${whole ? id : `segments/${id}-${step + 1}`}.wav`}
-        />
-      </div>
-      <div className="ip-session-nav">
-        <button
-          className="ip-secondary"
-          type="button"
-          disabled={step === 0}
-          onClick={() => setStep((value) => value - 1)}
-        >
-          <Glyph name="back" /> {t("Previous chunk")} </button>
-        <button
-          className="ip-primary"
-          type="button"
-          onClick={() => setStep((value) => (value + 1) % item.buildSteps.length)}
-        >
-          {whole ? t("Start again") : t("Add the next part")}
-          <Glyph name="arrow" />
-        </button>
-      </div>
-      <aside className="ip-note">
-        <strong>{t("Now, try an everyday phrase.")}</strong>
-        <p>{item.transfer.join(' / ')}</p>
-        <p>{t("Keep the same movement. Clarity comes before speed.")}</p>
-      </aside>
-    </section>
-  )
-}
-function FoundationPractice({ id, learning, update }) {
-  const { t, language } = useLanguage()
-  if (id === 'tongue-intro') return <TwisterPractice />
+  if (id === 'tongue-intro') return <TongueTwisterPractice initialId={initialTwister} />
   if (id === 'orientation') return <OrientationPractice learning={learning} update={update} />
   if (id === 'how-it-works') return <StudyPlan learning={learning} update={update} />
   if (id === 'letters') return <AlphabetRecognition />
@@ -430,7 +366,8 @@ function FoundationPractice({ id, learning, update }) {
 
 export default function Foundation({ route, learning, update }) {
   const { t, language } = useLanguage()
-  const model = language === 'ja' ? japaneseFoundation[route.id] : foundationReading[route.id]
+  const sourceModel = language === 'ja' ? japaneseFoundation[route.id] : foundationReading[route.id]
+  const model = route.id === 'tongue-intro' ? { title: 'Tongue Twisters', subtitle: language === 'ja' ? 'ちょっと言いにくい言葉で、英語の音に慣れよう。' : 'A playful way to practice speaking clearly.', sections: [{ id: 'tt-intro', title: language === 'ja' ? '早口言葉って何？' : 'Why tongue twisters?' }, { id: 'tt-collection', title: language === 'ja' ? '24の早口言葉' : '24 classics' }] } : sourceModel
   return (
     <FoundationShell
       route={route}
@@ -439,17 +376,10 @@ export default function Foundation({ route, learning, update }) {
       sections={model.sections}
     >
       {route.view === 'study' ? (
-        <>
-          {route.id === 'tongue-intro' && <aside className="rf-quick-start">
-            <h2>{t('Clarity before speed.')}</h2>
-            <p>{t('Choose one sound. Listen, repeat a short chunk, and add the next part when it feels comfortable.')}</p>
-            <a className="ip-primary" href="#/foundation/tongue-intro/practice">{t('Try one tongue twister')}<Glyph name="arrow" /></a>
-            <p className="ip-context">{t('The complete guide and all examples are below.')}</p>
-          </aside>}
-          {route.id === 'letters' ? <AlphabetLessonStudy model={model} /> : <Reading model={model} />}
-        </>
+        route.id === 'tongue-intro' ? <TongueTwisterStudy /> :
+          route.id === 'letters' ? <AlphabetLessonStudy model={model} /> : <Reading model={model} />
       ) : (
-        <FoundationPractice id={route.id} learning={learning} update={update} />
+        <FoundationPractice id={route.id} learning={learning} update={update} initialTwister={route.legacyTwister} />
       )}
     </FoundationShell>
   )

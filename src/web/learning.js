@@ -19,13 +19,15 @@ export const emptyLearning = {
 }
 const validView =
   /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?)$/
+const normalizeLrPath = (path) => typeof path === 'string' && path.startsWith('/foundation/lr/')
+  ? (path.endsWith('/study') ? '/foundation/tongue-intro/study' : '/foundation/tongue-intro/practice') : path
 const isPractice = (path) =>
   /\/practice(?:[/?]|$)/.test(path) || /\/foundation\/lr\/(?:chunks|whole)/.test(path)
 
 export function sanitizeLearning(input) {
   if (!input || input.version !== 1) return { ...emptyLearning }
   const positions = Object.fromEntries(
-    Object.entries(input.positions ?? {}).filter(
+    Object.entries(input.positions ?? {}).map(([path, top]) => [normalizeLrPath(path), top]).filter(
       ([path, value]) =>
         validView.test(path) && Number.isFinite(value) && value >= 0 && value < 1000000,
     ),
@@ -72,12 +74,12 @@ export function sanitizeLearning(input) {
   )
   return {
     version: 1,
-    last: typeof input.last === 'string' && validView.test(input.last) ? input.last : null,
+    last: typeof input.last === 'string' && validView.test(input.last) ? normalizeLrPath(input.last) : null,
     lastPractice:
       typeof input.lastPractice === 'string' &&
       validView.test(input.lastPractice) &&
       isPractice(input.lastPractice)
-        ? input.lastPractice
+        ? normalizeLrPath(input.lastPractice)
         : null,
     positions,
     indices,
@@ -136,6 +138,15 @@ export function parseRoute(hash) {
   if (path === '/courses?orientation') return { path: '/home', page: 'home' }
   const segments = path.split('?')[0].split('/').filter(Boolean)
   const [page, id, view, scene] = segments
+  // Legacy L/R links open the unified lesson, preserving the R/L practice focus.
+  if (page === 'foundation' && id === 'lr') {
+    const targetView = view === 'study' ? 'study' : 'practice'
+    return {
+      path: `/foundation/tongue-intro/${targetView}`,
+      page: 'foundation', id: 'tongue-intro', view: targetView,
+      ...(targetView === 'practice' ? { legacyTwister: 'red-lorry' } : {}),
+    }
+  }
   // Old Hear the Alphabet bookmarks now open the combined Alphabet lesson.
   if (page === 'foundation' && id === 'hear')
     return parseRoute(`#/foundation/letters/${view === 'practice' ? 'practice' : 'study'}`)

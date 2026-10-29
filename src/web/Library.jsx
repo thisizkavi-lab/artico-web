@@ -195,7 +195,7 @@ export function PracticeLibrary({ learning }) {
           <strong>{t("Conversation phrases")}</strong>
           <Icon name="next" />
         </a>
-        <a href="#/foundation/lr/chunks">
+        <a href="#/foundation/tongue-intro/practice">
           <strong>{t("Sounds & tongue twisters")}</strong>
           <Icon name="next" />
         </a>

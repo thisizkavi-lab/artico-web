@@ -14,7 +14,6 @@ import { isStaleAssetFailure, shouldRefreshStaleAssets } from './routeRecovery.j
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
-const Twister = lazy(() => import('./SoundLesson').then((module) => ({ default: module.Twister })))
 const ChapterLesson = lazy(() => import('./ChapterLesson'))
 const HumorLesson = lazy(() => import('./HumorLesson'))
 const GreetingsLesson = lazy(() => import('./GreetingsLesson'))
@@ -274,18 +273,7 @@ export default function ArticoWeb() {
   else if (route.page === 'saved')
     screen = <Saved learning={learning} save={save} notify={notify} />
   else if (route.page === 'foundation')
-    screen =
-      route.id === 'lr' ? (
-        <Twister
-          key={route.path}
-          route={route}
-          learning={learning}
-          update={update}
-          notify={notify}
-        />
-      ) : (
-        <Foundation key={route.path} route={route} learning={learning} update={update} />
-      )
+    screen = <Foundation key={route.path} route={route} learning={learning} update={update} />
   else if (route.page === 'lesson') {
     const Lesson =
       route.id === '01'

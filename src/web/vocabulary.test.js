@@ -197,7 +197,7 @@ test('Lesson 03 displays twelve months with their written abbreviations but no d
     'August', 'September', 'October', 'November', 'December',
   ])
   const view = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
-  const chart = view.slice(view.indexOf('const yearMonths'), view.indexOf('function Visual({visual})'))
+  const chart = view.slice(view.indexOf('const yearMonths'), view.indexOf('const timeSpanEquivalents'))
   for (const [name, short] of [
     ['January', 'Jan.'], ['February', 'Feb.'], ['March', 'Mar.'],
     ['April', 'Apr.'], ['May', 'May'], ['June', 'Jun.'],

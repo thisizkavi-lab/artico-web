@@ -137,6 +137,12 @@ jobs:
           test "$(find public/assets/illustrations/twisters -maxdepth 1 -name '*.png' -type f | wc -l)" -eq 24
           test -s public/assets/illustrations/twisters/woodchuck.png
 
+      - name: Install the approved twenty-four generated PNG illustrations
+        run: |
+          python3 scripts/extract_generated_twister_art.py
+          test "$(find public/assets/illustrations/twisters -maxdepth 1 -type f -name '*.png' | wc -l)" -eq 24
+          test -s public/assets/illustrations/twisters/woodchuck.png
+
       - name: Test course and learning progress
         run: pnpm test
 

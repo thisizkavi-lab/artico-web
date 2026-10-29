@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import { landingCopy } from './landingCopy'
 import './landing.css'
@@ -8,10 +8,37 @@ export default function Landing() {
   const copy = landingCopy[language]
   const pathRef = useRef(null)
   const mainRef = useRef(null)
+  const languageMenuRef = useRef(null)
+  const [languageOpen, setLanguageOpen] = useState(false)
 
   useEffect(() => {
     document.title = 'Artico — One language. Infinite possibilities.'
   }, [])
+
+  useEffect(() => {
+    if (!languageOpen) return undefined
+    const closeOnOutside = (event) => {
+      if (!languageMenuRef.current?.contains(event.target)) setLanguageOpen(false)
+    }
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') {
+        setLanguageOpen(false)
+        languageMenuRef.current?.querySelector('.al-language-trigger')?.focus()
+      }
+    }
+    document.addEventListener('pointerdown', closeOnOutside)
+    document.addEventListener('keydown', closeOnEscape)
+    return () => {
+      document.removeEventListener('pointerdown', closeOnOutside)
+      document.removeEventListener('keydown', closeOnEscape)
+    }
+  }, [languageOpen])
+
+  function chooseLanguage(next) {
+    setLanguage(next)
+    setLanguageOpen(false)
+    languageMenuRef.current?.querySelector('.al-language-trigger')?.focus()
+  }
 
   function scrollTo(ref) {
     const target = ref.current
@@ -37,11 +64,33 @@ export default function Landing() {
             <button type="button" onClick={() => scrollTo(pathRef)}>Learning path</button>
           </nav>
           <div className="al-header-actions">
-            <div className="al-header-languages" role="group" aria-label="Explanation language">
-              <button type="button" lang="ja" aria-pressed={language === 'ja'}
-                onClick={() => setLanguage('ja')}>日本語</button>
-              <button type="button" lang="en" aria-pressed={language === 'en'}
-                onClick={() => setLanguage('en')}>EN</button>
+            <div className="al-language-picker" ref={languageMenuRef}>
+              <button className="al-language-trigger" type="button"
+                aria-label={`Choose language (current: ${language === 'ja' ? 'Japanese' : 'English'})`}
+                aria-expanded={languageOpen} aria-controls="al-language-options"
+                onClick={() => setLanguageOpen((open) => !open)}>
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18M12 3c-2.6 2.5-3.9 5.5-3.9 9s1.3 6.5 3.9 9M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9" />
+                </svg>
+                <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"><path d="m3 6 5 5 5-5" /></svg>
+              </button>
+              {languageOpen && (
+                <div className="al-language-popover" id="al-language-options" role="group" aria-label="Select explanation language">
+                  <button type="button" lang="ja" aria-pressed={language === 'ja'}
+                    onClick={() => chooseLanguage('ja')}>
+                    <span className="al-language-flag" aria-hidden="true">🇯🇵</span>
+                    <span>日本語</span>
+                    {language === 'ja' && <span className="al-language-check" aria-hidden="true">✓</span>}
+                  </button>
+                  <button type="button" lang="en" aria-pressed={language === 'en'}
+                    onClick={() => chooseLanguage('en')}>
+                    <span className="al-language-flag" aria-hidden="true">🇺🇸</span>
+                    <span>English</span>
+                    {language === 'en' && <span className="al-language-check" aria-hidden="true">✓</span>}
+                  </button>
+                </div>
+              )}
             </div>
             <a className="al-header-start" href="#/home">Get Started</a>
           </div>
@@ -96,83 +145,95 @@ export default function Landing() {
           <h2 id="al-path-title" className="al-sr-only">The Artico learning journey</h2>
           <div className="al-journey-inner">
             <div className="al-journey-illustration">
-              <svg viewBox="0 0 720 610" role="img" aria-label="A winding journey from letters to conversation, real-life English and expressive mastery" xmlns="http://www.w3.org/2000/svg">
-                <path d="M95 490 C180 565 265 552 270 416 C273 314 343 290 412 337 C500 399 578 430 638 235" fill="none" stroke="#252725" strokeWidth="5.5" strokeLinecap="round" strokeDasharray="13 13"/>
-                <g transform="translate(35 405)">
-                  <rect x="37" y="48" width="98" height="68" rx="34" fill="#f8e6c7" opacity=".6"/>
-                  <path d="M49 90Q68 70 92 90L102 152H42Z" fill="#f2c957" stroke="#29302d" strokeWidth="2.5"/>
-                  <path d="M56 151v40m27-40 4 40" stroke="#253b39" strokeWidth="9" strokeLinecap="round"/>
-                  <circle cx="69" cy="53" r="23" fill="#f8d0ac" stroke="#29302d" strokeWidth="2"/>
-                  <path d="M45 52q-5-33 30-30 22 1 18 24-21-9-29-18-2 19-19 24Z" fill="#33333b"/>
-                  <path d="M63 55h2m15 0h2M69 65q7 6 12-1" stroke="#29302d" strokeWidth="2" strokeLinecap="round" fill="none"/>
-                  <path d="M47 97 23 122m69-21 25 14" stroke="#f2c957" strokeWidth="12" strokeLinecap="round"/>
-                  <g stroke="#46554a" strokeWidth="1.3"><rect x="104" y="132" width="30" height="24" fill="#d7e2f2"/><rect x="124" y="106" width="29" height="25" fill="#f8df81"/><rect x="149" y="133" width="31" height="25" fill="#a9d1c7"/><rect x="134" y="158" width="32" height="23" fill="#eaa995"/></g>
-                  <text x="112" y="150" fontSize="13" fontWeight="700" fill="#38555f">A</text><text x="133" y="124" fontSize="13" fontWeight="700" fill="#38555f">B</text><text x="158" y="150" fontSize="13" fontWeight="700" fill="#38555f">C</text>
-                  <text x="100" y="215" fontSize="17" fontWeight="700" textAnchor="middle" fill="#30332e">raw mechanics</text>
+              <svg className="al-route-art" viewBox="0 0 780 640" role="img"
+                aria-label="Four evenly proportioned illustrated steps connected by a winding path: Raw mechanics, Social fluency, Application, Apex communicator"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M140 476 C224 470 232 387 304 365 S399 290 470 257 S555 188 635 152"
+                  fill="none" stroke="#3c4541" strokeWidth="5" strokeLinecap="round" strokeDasharray="11 13" />
+                <g transform="translate(140 476)">
+                  <circle r="84" fill="#e4edf4" stroke="#adc5d7" strokeWidth="2"/>
+                  <circle r="67" fill="#f9fcff" opacity=".6"/>
+                  <path d="M-43 29V-17q23-12 43 0v46q-20-12-43 0Zm43 0v-46q20-12 43 0v46q-23-12-43 0Z"
+                    fill="#fff9df" stroke="#394b57" strokeWidth="3" strokeLinejoin="round"/>
+                  <path d="M0-16V30M-34-7h25M9-7h25" stroke="#b8b2a2" strokeWidth="2" strokeLinecap="round"/>
+                  <rect x="-49" y="-59" width="32" height="31" rx="5" fill="#f4ce73" stroke="#374a54" strokeWidth="2"/>
+                  <text x="-33" y="-37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#35475a">A</text>
+                  <rect x="-12" y="-68" width="32" height="31" rx="5" fill="#afd5c1" stroke="#374a54" strokeWidth="2"/>
+                  <text x="4" y="-46" textAnchor="middle" fontSize="20" fontWeight="700" fill="#35475a">B</text>
+                  <rect x="25" y="-59" width="32" height="31" rx="5" fill="#b1cdeb" stroke="#374a54" strokeWidth="2"/>
+                  <text x="41" y="-37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#35475a">C</text>
+                  <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Raw mechanics</text>
                 </g>
-                <g transform="translate(225 221)">
-                  <rect x="28" y="0" width="64" height="31" rx="10" fill="#d0e7da"/>
-                  <circle cx="45" cy="15" r="3" fill="#649b86"/><circle cx="61" cy="15" r="3" fill="#649b86"/><circle cx="77" cy="15" r="3" fill="#649b86"/>
-                  <path d="M48 30 40 39v-9" fill="#d0e7da"/>
-                  <rect x="102" y="-8" width="64" height="30" rx="10" fill="#d0e7da"/>
-                  <circle cx="119" cy="7" r="3" fill="#649b86"/><circle cx="136" cy="7" r="3" fill="#649b86"/><circle cx="151" cy="7" r="3" fill="#649b86"/>
-                  <path d="M143 21 152 29v-8" fill="#d0e7da"/>
-                  <path d="M35 99Q41 67 74 72Q106 73 107 110v29H35Z" fill="#5a9787"/>
-                  <path d="M100 105Q105 78 134 80Q163 81 165 110v29h-65Z" fill="#4a7998"/>
-                  <circle cx="75" cy="58" r="23" fill="#dfaa7c"/><circle cx="135" cy="66" r="22" fill="#e7b88b"/>
-                  <path d="M52 53Q50 26 71 29Q95 26 98 52 75 45 65 36 63 48 52 53Z" fill="#382e29"/>
-                  <path d="M113 61Q110 35 132 37Q154 35 157 60 139 51 130 44 128 56 113 61Z" fill="#342f2c"/>
-                  <path d="M72 63q7 7 13 0m47 9q7 7 12 0" fill="none" stroke="#513b32" strokeWidth="2.5" strokeLinecap="round"/>
-                  <text x="103" y="169" fontSize="17" fontWeight="700" textAnchor="middle" fill="#30332e">social fluency</text>
+                <g transform="translate(305 364)">
+                  <circle r="84" fill="#e4f1e8" stroke="#b4d5c4" strokeWidth="2"/>
+                  <circle r="67" fill="#fafffb" opacity=".65"/>
+                  <path d="M-53-60h48q11 0 11 11v23q0 11-11 11h-19l-13 13v-13h-16q-10 0-10-11v-23q0-11 10-11Z"
+                    fill="#c0e3d2" stroke="#49675b" strokeWidth="2.3"/>
+                  <path d="M19-75h40q11 0 11 11v21q0 10-11 10H44l-13 13v-13H19q-10 0-10-10v-21q0-11 10-11Z"
+                    fill="#d1e4fa" stroke="#49675b" strokeWidth="2.3"/>
+                  <path d="M-47-36h32M25-52h29M32-61h22" stroke="#6d9889" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M-59 56v-15q0-30 28-32 29 2 29 32v15Z" fill="#5c9b8d"/>
+                  <circle cx="-31" cy="-13" r="23" fill="#d9ac89"/>
+                  <path d="M-53-15q-4-25 19-28 25-4 26 27-14-5-22-15-10 12-23 16Z" fill="#40332e"/>
+                  <path d="M5 56v-15q0-30 28-32 29 2 29 32v15Z" fill="#6d89b4"/>
+                  <circle cx="33" cy="-13" r="23" fill="#e7bb96"/>
+                  <path d="M11-16q0-28 23-29 26 0 25 30-15-6-22-17-12 13-26 16Z" fill="#383333"/>
+                  <path d="M-40-10h2m13 0h2m45 0h2m13 0h2" stroke="#3b3d39" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M-39 1q8 7 15 0M24 1q8 7 15 0" stroke="#734f42" strokeWidth="2" fill="none" strokeLinecap="round"/>
+                  <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Social fluency</text>
                 </g>
-                <g transform="translate(438 257)">
-                  <path d="M60 58q-36 7-38 62l-10 40h102l-10-40q-6-55-44-62Z" fill="#8b99b3"/>
-                  <path d="M46 57 60 99 74 57l-9-8H56Z" fill="#fff"/>
-                  <path d="M59 85 52 121h18L63 85Z" fill="#e3ab69"/>
-                  <path d="M42 152l-5 53m48-53 5 53" stroke="#37485d" strokeWidth="14" strokeLinecap="round"/>
-                  <path d="M27 205h25m28 0h28" stroke="#202729" strokeWidth="8" strokeLinecap="round"/>
-                  <circle cx="60" cy="32" r="25" fill="#edc1a0"/>
-                  <path d="M36 24Q36 -2 61 5Q91 2 84 32l-7-5-9-16q-12 12-32 13Z" fill="#353538"/>
-                  <path d="M54 37h2m16 0h2m-17 9q6 5 11 0" stroke="#42362f" strokeWidth="2" fill="none"/>
-                  <path d="M21 83-3 121m101-38 25 40" stroke="#8b99b3" strokeWidth="13" strokeLinecap="round"/>
-                  <rect x="105" y="112" width="39" height="38" rx="5" fill="#7a5c3e" stroke="#463b34" strokeWidth="2"/>
-                  <path d="M116 112v-10q9-9 17 0v10" stroke="#463b34" strokeWidth="3" fill="none"/>
-                  <text x="63" y="233" fontSize="17" fontWeight="700" textAnchor="middle" fill="#30332e">application</text>
+                <g transform="translate(470 257)">
+                  <circle r="84" fill="#fff0d8" stroke="#e5ca9d" strokeWidth="2"/>
+                  <circle r="67" fill="#fffbf3" opacity=".7"/>
+                  <rect x="22" y="-10" width="42" height="41" rx="6" fill="#b7cadd" stroke="#4f6476" strokeWidth="2.5"/>
+                  <path d="M32 3h23M32 13h18M32 23h13" stroke="#718da7" strokeWidth="2.4" strokeLinecap="round"/>
+                  <path d="M-53 64v-28q0-34 29-43l18 13L12-7q31 9 31 43v28Z" fill="#7185a5" stroke="#465469" strokeWidth="2"/>
+                  <path d="M-16 7l11 15L5 7l-4-12h-13Z" fill="#fff"/>
+                  <path d="M-5 22-12 54h15Z" fill="#e9ac67"/>
+                  <circle cx="-6" cy="-34" r="26" fill="#ebbc94"/>
+                  <path d="M-30-36q-5-29 26-31 28 1 26 33-15-4-23-18-11 12-29 16Z" fill="#43352e"/>
+                  <path d="M-16-29h2m18 0h2m-14 12q6 5 13 0" stroke="#44362f" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
+                  <rect x="22" y="40" width="42" height="32" rx="5" fill="#8d6d4e" stroke="#564431" strokeWidth="2.5"/>
+                  <path d="M32 40v-8q10-11 20 0v8" stroke="#564431" strokeWidth="3" fill="none"/>
+                  <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Application</text>
                 </g>
-                <g transform="translate(568 70)">
-                  <path d="M30 99Q45 72 81 72Q117 72 134 100l8 69H18Z" fill="#f3c451" stroke="#59472a" strokeWidth="2"/>
-                  <circle cx="80" cy="52" r="33" fill="#ecc29d"/>
-                  <path d="M47 51q-3-39 33-39 41 2 34 43-13-6-23-21-10 12-41 17Z" fill="#332c28"/>
-                  <path d="M47 55q-10-34 12-44m51 7q17 16 8 40" fill="none" stroke="#25282e" strokeWidth="9" strokeLinecap="round"/>
-                  <rect x="34" y="46" width="17" height="39" rx="8" fill="#4e5964"/><rect x="112" y="45" width="17" height="39" rx="8" fill="#4e5964"/>
-                  <path d="M112 76q0 19-25 22" fill="none" stroke="#4e5964" strokeWidth="4"/>
-                  <circle cx="84" cy="98" r="6" fill="#4e5964"/>
-                  <path d="M68 62h3m23 0h3m-19 14q10 5 17-2" fill="none" stroke="#503c32" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M18 115-7 134m144-20 22 20" stroke="#f3c451" strokeWidth="14" strokeLinecap="round"/>
-                  <g transform="translate(-30 80)" stroke="#32373b" strokeWidth="3" fill="#3d444d">
-                    <rect x="0" y="0" width="25" height="37" rx="11"/><path d="M12 37v15m-13 0h26" fill="none"/>
-                    <path d="M25 10h20l16 7" fill="none"/>
-                  </g>
-                  <text x="80" y="203" fontSize="17" fontWeight="700" textAnchor="middle" fill="#30332e">apex communicator</text>
+                <g transform="translate(635 152)">
+                  <circle r="84" fill="#e9e7f4" stroke="#cec6e5" strokeWidth="2"/>
+                  <circle r="67" fill="#fdfbff" opacity=".7"/>
+                  <path d="M-51 63v-20q2-33 37-38h29q35 5 37 38v20Z" fill="#eebf63" stroke="#856b3d" strokeWidth="2"/>
+                  <circle cx="0" cy="-29" r="30" fill="#e9bd97"/>
+                  <path d="M-29-31q-2-37 31-37 34 1 30 37-14-7-22-20-14 14-39 20Z" fill="#3c322e"/>
+                  <path d="M-30-30q-11-29 8-43M29-73q20 14 11 43" fill="none" stroke="#52596a" strokeWidth="8" strokeLinecap="round"/>
+                  <rect x="-38" y="-35" width="14" height="35" rx="6" fill="#52596a"/>
+                  <rect x="24" y="-35" width="14" height="35" rx="6" fill="#52596a"/>
+                  <path d="M30-3q-2 15-23 18" fill="none" stroke="#52596a" strokeWidth="3.5"/>
+                  <circle cx="7" cy="15" r="4" fill="#52596a"/>
+                  <path d="M-11-25h3m18 0h3m-17 12q9 7 17 0" stroke="#5b4339" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+                  <path d="M-55-10h-14V23h26V-10h-12ZM-56 23v24m-17 0h34" fill="#5c6570" stroke="#343b45" strokeWidth="2.5" strokeLinecap="round"/>
+                  <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Apex communicator</text>
                 </g>
               </svg>
             </div>
             <div className="al-journey-cards">
-              <a href="#/courses?foundation" className="al-journey-card">
+              <div className="al-journey-card">
                 <h3>[ Foundations / Raw mechanics ]</h3>
                 <p className="al-journey-tagline">build the base before the voice</p>
                 <p>learn from zero — sounds, letters, words, and rhythm. master the mechanics of English like a craftsperson sharpening tools.</p>
-              </a>
-              <a href="#/courses?social" className="al-journey-card">
+              </div>
+              <div className="al-journey-card">
                 <h3>[ Social Fluency ]</h3>
                 <p className="al-journey-tagline">talk like a human, not a textbook</p>
                 <p>practice real conversations. greetings, emotions, everyday talk. learn to connect — not just translate.</p>
-              </a>
-              <a href="#/application" className="al-journey-card">
+              </div>
+              <div className="al-journey-card">
                 <h3>[ Application ]</h3>
                 <p className="al-journey-tagline">English that works in real life</p>
                 <p>train for what matters: job interviews, storytelling, debates, public speaking, writing — whatever your world needs.</p>
-              </a>
+              </div>
               <div className="al-journey-card al-journey-card-future">
                 <h3>[ Apex Communicator ]</h3>
                 <p className="al-journey-tagline">language becomes art.</p>
@@ -194,13 +255,6 @@ export default function Landing() {
           <div className="al-footer-brand">
             <a className="al-footer-logo artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
             <p className="al-footer-tagline">english but better...</p>
-            <div className="al-footer-lang-wrap">
-              <button className="al-footer-language" type="button" lang={language === 'ja' ? 'en' : 'ja'}
-                aria-label={language === 'ja' ? 'Switch to English' : '日本語に切り替える'}
-                onClick={() => setLanguage(language === 'ja' ? 'en' : 'ja')}>
-                {language === 'ja' ? 'EN' : '日本語'}
-              </button>
-            </div>
           </div>
           <nav className="al-footer-directory" aria-label="Footer navigation">
             <div className="al-footer-column">
@@ -228,7 +282,6 @@ export default function Landing() {
         </div>
         <div className="al-footer-bottom">
           <span>© {new Date().getFullYear()} Artico</span>
-          <span>English for everyday life.</span>
         </div>
       </footer>
     </div>

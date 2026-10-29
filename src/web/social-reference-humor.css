@@ -80,12 +80,26 @@
 .hm-page .hm-study .hm-turn:nth-child(even)>small{text-align:right}
 .hm-page .hm-study .hm-speaker{font-size:11px;color:#445c85}
 .hm-page .hm-study .hm-concept{
-  border-left:3px solid var(--hm-blue);
-  border-radius:10px;
-  background:#e8efff;
-  padding:14px 17px;
+  border:0;
+  border-radius:13px;
+  background:#fff3dc;
+  padding:15px 20px 16px;
+  margin:15px 0;
 }
-.hm-page .hm-study .hm-concept strong{color:var(--hm-navy)}
+.hm-page .hm-study .hm-concept strong{
+  display:block;
+  margin:0 0 5px;
+  font-size:17px;
+  line-height:1.35;
+  font-weight:830;
+  color:#182743;
+}
+.hm-page .hm-study .hm-concept p{
+  font-size:14px;
+  line-height:1.6;
+  color:#182743;
+  margin:0;
+}
 .hm-page .hm-study .hm-move,
 .hm-page .hm-study .hm-chat-card,
 .hm-page .hm-study .hm-meme-card,
@@ -116,11 +130,11 @@
   border-radius:13px;
 }
 .hm-page .hm-study .hm-note{
-  background:#fff4df;
+  background:#fff3dc;
   border:0;
-  border-radius:10px;
-  padding:12px 15px;
-  color:var(--hm-navy)!important;
+  border-radius:13px;
+  padding:14px 19px;
+  color:#182743!important;
 }
 .hm-page .hm-study .hm-primary{
   border-color:var(--hm-blue);

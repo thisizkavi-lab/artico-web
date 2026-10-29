@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
-import { landingCopy } from './landingCopy'
+import { landingPageCopy } from './landingCopy'
 import './landing.css'
 
 export default function Landing() {
   const { language, setLanguage } = useLanguage()
-  const copy = landingCopy[language]
+  const copy = landingPageCopy[language]
   const pathRef = useRef(null)
   const mainRef = useRef(null)
   const languageMenuRef = useRef(null)
   const [languageOpen, setLanguageOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'Artico — One language. Infinite possibilities.'
-  }, [])
+    document.title = copy.pageTitle
+  }, [copy.pageTitle])
 
   useEffect(() => {
     if (!languageOpen) return undefined
@@ -56,17 +56,17 @@ export default function Landing() {
         <div className="al-site-header-inner">
           <a className="al-header-logo artico-wordmark" href="#/landing"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            aria-label="Artico — back to landing page">
+            aria-label={copy.backToLanding}>
             artico<span className="artico-wordmark-dot" aria-hidden="true">.</span>
           </a>
-          <nav className="al-header-nav" aria-label="Landing page sections">
-            <button type="button" onClick={() => document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' })}>Why Artico</button>
-            <button type="button" onClick={() => scrollTo(pathRef)}>Learning path</button>
+          <nav className="al-header-nav" aria-label={copy.navigation}>
+            <button type="button" onClick={() => document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' })}>{copy.whyLink}</button>
+            <button type="button" onClick={() => scrollTo(pathRef)}>{copy.journeyLink}</button>
           </nav>
           <div className="al-header-actions">
             <div className="al-language-picker" ref={languageMenuRef}>
               <button className="al-language-trigger" type="button"
-                aria-label={`Choose language (current: ${language === 'ja' ? 'Japanese' : 'English'})`}
+                aria-label={copy.languageTrigger}
                 aria-expanded={languageOpen} aria-controls="al-language-options"
                 onClick={() => setLanguageOpen((open) => !open)}>
                 <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -76,7 +76,7 @@ export default function Landing() {
                 <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"><path d="m3 6 5 5 5-5" /></svg>
               </button>
               {languageOpen && (
-                <div className="al-language-popover" id="al-language-options" role="group" aria-label="Select explanation language">
+                <div className="al-language-popover" id="al-language-options" role="group" aria-label={copy.selectLanguage}>
                   <button type="button" lang="ja" aria-pressed={language === 'ja'}
                     onClick={() => chooseLanguage('ja')}>
                     <span className="al-language-flag" aria-hidden="true">🇯🇵</span>
@@ -92,7 +92,7 @@ export default function Landing() {
                 </div>
               )}
             </div>
-            <a className="al-header-start" href="#/home">Get Started</a>
+            <a className="al-header-start" href="#/home">{copy.start}</a>
           </div>
         </div>
       </header>
@@ -108,45 +108,38 @@ export default function Landing() {
             fetchPriority="high"
           />
           <div className="al-splash-content">
-            <h1 className="al-splash-title" id="al-title" lang="en">
-              <span>One language, infinite</span>{' '}
-              <span>possibilities.</span>
+            <h1 key={language} className="al-splash-title" id="al-title" lang={language}>
+              <span>{copy.heroTitle[0]}</span>{' '}
+              <span>{copy.heroTitle[1]}</span>
             </h1>
-            <p className="al-splash-description" lang="en">
-              Turn English from a barrier into a multiplier — giving people in the world, the freedom to communicate, connect, and create in the most powerful language of our age.
-            </p>
-            <a className="al-splash-cta" href="#/home">Get Started</a>
+            <p key={language} className="al-splash-description" lang={language}>{copy.heroDescription}</p>
+            <a className="al-splash-cta" href="#/home">{copy.start}</a>
           </div>
         </section>
-        <section className="al-why" lang="en" aria-labelledby="al-why-title">
+        <section className="al-why" lang={language} aria-labelledby="al-why-title">
           <div className="al-why-inner">
             <header className="al-why-heading">
-              <p className="al-why-overline">THE IDEA BEHIND ARTICO</p>
-              <h2 id="al-why-title">why artico?</h2>
+              <p className="al-why-overline">{copy.whyEyebrow}</p>
+              <h2 id="al-why-title">{copy.whyTitle}</h2>
               <span className="al-why-accent" aria-hidden="true" />
             </header>
             <div className="al-why-story">
-              <p className="al-why-lead">
-                real learning needs effort. but effort shouldn’t feel like pain — it should feel like <mark>flow</mark>. if something’s too easy, you don’t grow. if it’s too hard, you quit. this app sits in that <mark>perfect middle</mark> — where you’re challenged, but never lost. you grow without noticing you’re grinding.
-              </p>
-              <p>
-                English here isn’t taught like a subject. it’s <mark>trained like a skill</mark> — like an athlete sharpening control, or an artist refining craft. you build the mechanics first — <mark>sound, rhythm, movement</mark> — then you perform. you don’t memorize rules; you <mark>train expression</mark>.
-              </p>
-              <p>
-                and beyond all that, <mark>communication</mark> is the core of everything. it’s how you think, connect, and lead. English just happens to be the <mark>universal interface</mark> — the key that opens almost every door in today’s world.
-              </p>
-              <p className="al-why-finish">
-                this app doesn’t just teach you English. it shapes how you <mark>speak, think, and carry yourself</mark> — so that when you talk, <mark>people feel it</mark>.
-              </p>
+              {copy.whyParagraphs.map((paragraph, index) => (
+                <p key={index} className={paragraph.kind === 'lead' ? 'al-why-lead' : paragraph.kind === 'finish' ? 'al-why-finish' : undefined}>
+                  {paragraph.runs.map((run, runIndex) =>
+                    typeof run === 'string' ? run : <mark key={runIndex}>{run.mark}</mark>
+                  )}
+                </p>
+              ))}
             </div>
           </div>
         </section>
         <section className="al-journey" ref={pathRef} tabIndex={-1} aria-labelledby="al-path-title">
-          <h2 id="al-path-title" className="al-sr-only">The Artico learning journey</h2>
+          <h2 id="al-path-title" className="al-sr-only">{copy.journeyTitle}</h2>
           <div className="al-journey-inner">
             <div className="al-journey-illustration">
               <svg className="al-route-art" viewBox="0 0 780 640" role="img"
-                aria-label="Four evenly proportioned illustrated steps connected by a winding path: Raw mechanics, Social fluency, Application, Apex communicator"
+                aria-label={copy.journeyAria}
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M140 476 C224 470 232 387 304 365 S399 290 470 257 S555 188 635 152"
                   fill="none" stroke="#3c4541" strokeWidth="5" strokeLinecap="round" strokeDasharray="11 13" />
@@ -163,7 +156,7 @@ export default function Landing() {
                   <rect x="25" y="-59" width="32" height="31" rx="5" fill="#b1cdeb" stroke="#374a54" strokeWidth="2"/>
                   <text x="41" y="-37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#35475a">C</text>
                   <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
-                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Raw mechanics</text>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">{copy.illustrationLabels[0]}</text>
                 </g>
                 <g transform="translate(305 364)">
                   <circle r="84" fill="#e4f1e8" stroke="#b4d5c4" strokeWidth="2"/>
@@ -182,7 +175,7 @@ export default function Landing() {
                   <path d="M-40-10h2m13 0h2m45 0h2m13 0h2" stroke="#3b3d39" strokeWidth="3" strokeLinecap="round"/>
                   <path d="M-39 1q8 7 15 0M24 1q8 7 15 0" stroke="#734f42" strokeWidth="2" fill="none" strokeLinecap="round"/>
                   <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
-                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Social fluency</text>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">{copy.illustrationLabels[1]}</text>
                 </g>
                 <g transform="translate(470 257)">
                   <circle r="84" fill="#fff0d8" stroke="#e5ca9d" strokeWidth="2"/>
@@ -198,7 +191,7 @@ export default function Landing() {
                   <rect x="22" y="40" width="42" height="32" rx="5" fill="#8d6d4e" stroke="#564431" strokeWidth="2.5"/>
                   <path d="M32 40v-8q10-11 20 0v8" stroke="#564431" strokeWidth="3" fill="none"/>
                   <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
-                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Application</text>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">{copy.illustrationLabels[2]}</text>
                 </g>
                 <g transform="translate(635 152)">
                   <circle r="84" fill="#e9e7f4" stroke="#cec6e5" strokeWidth="2"/>
@@ -214,39 +207,26 @@ export default function Landing() {
                   <path d="M-11-25h3m18 0h3m-17 12q9 7 17 0" stroke="#5b4339" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
                   <path d="M-55-10h-14V23h26V-10h-12ZM-56 23v24m-17 0h34" fill="#5c6570" stroke="#343b45" strokeWidth="2.5" strokeLinecap="round"/>
                   <rect x="-100" y="94" width="200" height="38" rx="19" fill="#fffefa" stroke="#d9d8cf" strokeWidth="1.5"/>
-                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">Apex communicator</text>
+                  <text x="0" y="119" textAnchor="middle" fontSize="17" fontWeight="700" fill="#273637">{copy.illustrationLabels[3]}</text>
                 </g>
               </svg>
             </div>
             <div className="al-journey-cards">
-              <div className="al-journey-card">
-                <h3>[ Foundations / Raw mechanics ]</h3>
-                <p className="al-journey-tagline">build the base before the voice</p>
-                <p>learn from zero — sounds, letters, words, and rhythm. master the mechanics of English like a craftsperson sharpening tools.</p>
-              </div>
-              <div className="al-journey-card">
-                <h3>[ Social Fluency ]</h3>
-                <p className="al-journey-tagline">talk like a human, not a textbook</p>
-                <p>practice real conversations. greetings, emotions, everyday talk. learn to connect — not just translate.</p>
-              </div>
-              <div className="al-journey-card">
-                <h3>[ Application ]</h3>
-                <p className="al-journey-tagline">English that works in real life</p>
-                <p>train for what matters: job interviews, storytelling, debates, public speaking, writing — whatever your world needs.</p>
-              </div>
-              <div className="al-journey-card al-journey-card-future">
-                <h3>[ Apex Communicator ]</h3>
-                <p className="al-journey-tagline">language becomes art.</p>
-                <p>go beyond fluency. think clearly, speak with flow, and express truth with precision. English becomes part of who you are.</p>
-                <span className="al-journey-vision">the destination, not a separate course</span>
-              </div>
+              {copy.stages.map((stage, index) => (
+                <div key={index} className={`al-journey-card${stage.note ? ' al-journey-card-future' : ''}`}>
+                  <h3>{stage.title}</h3>
+                  <p className="al-journey-tagline">{stage.tagline}</p>
+                  <p>{stage.description}</p>
+                  {stage.note && <span className="al-journey-vision">{stage.note}</span>}
+                </div>
+              ))}
             </div>
           </div>
         </section>
         <section className="al-final-cta" aria-labelledby="al-closing-title">
           <div className="al-final-cta-inner">
-            <h2 id="al-closing-title">your English journey starts now...</h2>
-            <a href="#/home" className="al-final-cta-button">Get Started</a>
+            <h2 id="al-closing-title">{copy.closing}</h2>
+            <a href="#/home" className="al-final-cta-button">{copy.start}</a>
           </div>
         </section>
       </main>
@@ -254,29 +234,29 @@ export default function Landing() {
         <div className="al-footer-main">
           <div className="al-footer-brand">
             <a className="al-footer-logo artico-wordmark" href="#/home" aria-label={copy.open}>artico<span className="artico-wordmark-dot" aria-hidden="true">.</span></a>
-            <p className="al-footer-tagline">english but better...</p>
+            <p className="al-footer-tagline">{copy.footerTagline}</p>
           </div>
-          <nav className="al-footer-directory" aria-label="Footer navigation">
+          <nav className="al-footer-directory" aria-label={copy.footerNavigation}>
             <div className="al-footer-column">
-              <h3>Explore</h3>
-              <a href="#/home">Get Started</a>
-              <a href="#/foundation/orientation/study">Orientation</a>
-              <a href="#/courses?foundation">Level Zero</a>
+              <h3>{copy.footerExplore}</h3>
+              <a href="#/home">{copy.start}</a>
+              <a href="#/foundation/orientation/study">{copy.footerOrientation}</a>
+              <a href="#/courses?foundation">{copy.footerLevelZero}</a>
             </div>
             <div className="al-footer-column">
-              <h3>About us</h3>
-              <a href="#al-why-title" onClick={(event) => { event.preventDefault(); document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' }) }}>Why Artico</a>
-              <a href="#al-path-title" onClick={(event) => { event.preventDefault(); scrollTo(pathRef) }}>Learning path</a>
+              <h3>{copy.footerAbout}</h3>
+              <a href="#al-why-title" onClick={(event) => { event.preventDefault(); document.getElementById('al-why-title')?.scrollIntoView({ behavior: 'smooth' }) }}>{copy.whyLink}</a>
+              <a href="#al-path-title" onClick={(event) => { event.preventDefault(); scrollTo(pathRef) }}>{copy.journeyLink}</a>
             </div>
             <div className="al-footer-column">
-              <h3>Resources</h3>
-              <a href="#/courses?social">Social Fluency</a>
-              <a href="#/application">Application</a>
+              <h3>{copy.footerResources}</h3>
+              <a href="#/courses?social">{copy.footerSocial}</a>
+              <a href="#/application">{copy.footerApplication}</a>
             </div>
             <div className="al-footer-column">
-              <h3>Support</h3>
-              <a href="https://github.com/thisizkavi-lab/artico-web" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://github.com/thisizkavi-lab/artico-web/issues" target="_blank" rel="noopener noreferrer">Report an issue</a>
+              <h3>{copy.footerSupport}</h3>
+              <a href="https://github.com/thisizkavi-lab/artico-web" target="_blank" rel="noopener noreferrer">{copy.footerGithub}</a>
+              <a href="https://github.com/thisizkavi-lab/artico-web/issues" target="_blank" rel="noopener noreferrer">{copy.footerIssue}</a>
             </div>
           </nav>
         </div>

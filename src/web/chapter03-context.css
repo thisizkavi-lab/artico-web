@@ -40,6 +40,8 @@
   display:flex;flex-direction:column;gap:12px;min-width:0;
   background:#f5f7fb;padding:17px 15px
 }
+/* Let the conversation occupy any extra card height, not the explanation. */
+.ip-page .ar-c03-card>.ar-c03-exchange{flex:1;justify-content:center}
 .ip-page .ar-c03-chat-turn{
   display:flex;align-items:flex-end;gap:8px;min-width:0;max-width:94%;
   align-self:flex-start
@@ -73,7 +75,7 @@
   padding:1px 3px;border-radius:4px;font-weight:870
 }
 .ip-page .ar-c03-idea{
-  flex:1;padding:9px 13px 10px;background:#fcf6e8;color:#566170
+  flex:none;padding:9px 13px 10px;background:#fcf6e8;color:#566170
 }
 .ip-page .ar-c03-idea strong{
   display:block;margin:0 0 3px;color:#657080;

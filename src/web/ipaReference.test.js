@@ -94,3 +94,22 @@ test('Study places exactly three narrated sound groups inline, with no duplicate
   assert.match(doc, /24 foundational categories/)
   assert.match(doc, /Stage 6/)
 })
+
+test('Each IPA example is clickable across its entire row while retaining one accessible speaker control', () => {
+  const ui = readFileSync(new URL('./IpaReference.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./ipa-reference.css', import.meta.url), 'utf8')
+  const glyph = readFileSync(new URL('./Glyph.jsx', import.meta.url), 'utf8')
+  assert.match(ui, /<tr key=\{item\.ipa\} className="ipa-sound-row"\s+onClick=\{\(\) => play\(item, l\)\}/)
+  assert.match(ui, /<SoundButton sound=\{item\} l=\{l\} play=\{play\}\/>/)
+  assert.match(ui, /event\.stopPropagation\(\)/)
+  assert.match(ui, /<Glyph name="speaker"/)
+  assert.doesNotMatch(ui, /<Glyph name="play"/)
+  assert.match(glyph, /speaker:/)
+  assert.match(css, /\.ipa-table tbody \.ipa-sound-row \{ cursor: pointer;/)
+  assert.match(css, /\.ipa-table tbody \.ipa-sound-row:hover/)
+  assert.match(css, /\.ipa-play:focus-visible/)
+  assert.match(ui, /aria-label=\{\x60\$\{l\.listen\}/)
+  // Practice selectors immediately pronounce the selected sound.
+  assert.match(ui, /onClick=\{\(\) => \{ setSelected\(item\.ipa\); play\(item, l\) \}\}/)
+  assert.match(ui, /ipa-focus ipa-focus--playable" onClick=\{\(\) => play\(sound, l\)\}/)
+})

@@ -140,9 +140,11 @@ test('English and Japanese landing copy translates every visible area with match
     'pageTitle', 'skip', 'open', 'backToLanding', 'navigation', 'whyLink',
     'journeyLink', 'selectLanguage', 'languageTrigger', 'start', 'heroTitle',
     'heroDescription', 'whyEyebrow', 'whyTitle', 'journeyTitle', 'journeyAria',
-    'closing', 'footerTagline', 'footerNavigation', 'footerExplore', 'footerOrientation',
-    'footerLevelZero', 'footerAbout', 'footerResources', 'footerSocial',
-    'footerApplication', 'footerSupport', 'footerGithub', 'footerIssue',
+    'closing', 'footerTagline', 'footerNavigation', 'footerAbout',
+    'footerResources', 'footerSupport', 'footerHowTo', 'footerFeedback',
+    'feedbackTitle', 'feedbackClose', 'feedbackNote', 'feedbackPrompt',
+    'feedbackPlaceholder', 'feedbackShare', 'feedbackShared',
+    'feedbackCopied', 'feedbackCopyFailed',
   ]
   for (const key of needed) {
     assert.ok(landingPageCopy.en[key], 'Missing English ' + key)
@@ -167,11 +169,37 @@ test('English and Japanese landing copy translates every visible area with match
     'copy.heroTitle[0]', 'copy.heroTitle[1]', 'copy.heroDescription',
     'copy.whyParagraphs.map', 'copy.stages.map', 'copy.illustrationLabels[0]',
     'copy.whyLink', 'copy.journeyLink', 'copy.closing', 'copy.footerTagline',
-    'copy.footerOrientation', 'copy.footerIssue', 'copy.pageTitle',
+    'copy.footerHowTo', 'copy.footerFeedback', 'copy.pageTitle',
   ]) assert.ok(landing.includes(token), token)
   assert.match(landing, /lang=\{language\}/)
   assert.match(css, /\.aw-landing\[data-language="ja"\]/)
   assert.match(css, /Noto Sans JP/)
+})
+
+test('language changes preserve the hero layout and the footer points to working destinations', () => {
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
+  assert.match(landing, /<h1 className="al-splash-title"/)
+  assert.match(landing, /<p className="al-splash-description"/)
+  assert.doesNotMatch(landing, /<h1 key=\{language\}|<p key=\{language\}/)
+  assert.match(css, /\.al-splash-title\s*\{\s*display: grid;/)
+  assert.match(css, /\.al-splash-title > span,\s*\.aw-landing\[data-language="ja"\] \.al-splash-title > span/)
+  assert.match(css, /\.al-splash-title > span[^{]*\{[^}]*display: block;/s)
+  assert.match(landing, /className="al-footer-logo artico-wordmark" href="#\/landing"/)
+  assert.match(landing, /onClick=\{\(\) => window\.scrollTo\(\{ top: 0, behavior: 'smooth' \}\)\}/)
+  assert.match(landing, /className="al-footer-directory"/)
+  assert.doesNotMatch(landing, /copy\.footerExplore|copy\.footerSocial|copy\.footerApplication|copy\.footerGithub|copy\.footerIssue/)
+  assert.match(landing, /href="#\/foundation\/how-it-works\/study">\{copy\.footerHowTo\}/)
+  assert.equal(parseRoute('#/foundation/how-it-works/study').id, 'how-it-works')
+  assert.match(landing, /setFeedbackOpen\(true\)/)
+  assert.match(landing, /role="dialog" aria-modal="true"/)
+  assert.match(landing, /navigator\.share/)
+  assert.match(landing, /navigator\.clipboard\.writeText/)
+  for (const language of ['en', 'ja']) {
+    const copy = landingPageCopy[language]
+    assert.ok(copy.footerHowTo && copy.footerFeedback && copy.feedbackNote)
+    assert.match(copy.feedbackNote, language === 'ja' ? /直接送信はできません/ : /does not collect messages directly/)
+  }
 })
 
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {

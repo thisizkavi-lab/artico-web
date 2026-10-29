@@ -90,3 +90,52 @@
 @media (prefers-reduced-motion: reduce) {
   .aw-progress-answer-options button { transition: none; }
 }
+
+
+/* An optional calendar editor inside My Space; never another dashboard. */
+.aw-progress-calendar-trigger {
+  margin-top: 13px; padding: 0; border: 0; background: transparent;
+  color: var(--ink); cursor: pointer; font: inherit; font-size: 12px;
+  font-weight: 650; text-align: left; text-decoration: underline; text-underline-offset: 3px;
+}
+.aw-progress-calendar-trigger span { display: inline-block; margin-left: 2px; }
+.aw-calendar-planner {
+  margin-top: 13px; padding: 24px 26px 21px; border: 1px solid #dbe3e8;
+  border-radius: 14px; background: #fcfdfd; box-shadow: 0 6px 18px #263b3b05;
+}
+.aw-calendar-planner-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.aw-calendar-planner-heading h3 { font-size: 20px; line-height: 1.4; }
+.aw-calendar-planner-heading p { margin: 5px 0 0; max-width: 60ch; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.aw-calendar-planner-length { padding: 7px 11px; border-radius: 30px; background: #edf4fc; white-space: nowrap; color: #245c9b; font-size: 12px; font-weight: 700; }
+.aw-calendar-planner-fields { display: flex; align-items: end; flex-wrap: wrap; gap: 19px 28px; margin-top: 21px; }
+.aw-calendar-planner-days { flex: 1 1 310px; min-width: 0; }
+.aw-calendar-label { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 700; color: var(--ink); }
+.aw-calendar-days { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 6px; max-width: 460px; }
+.aw-calendar-days button { min-width: 0; height: 40px; border: 1px solid #dfe5e8; border-radius: 9px; background: #fff; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.aw-calendar-days button:hover { border-color: #93aae1; }
+.aw-calendar-days button.is-active { color: #fff; border-color: var(--brand); background: var(--brand); }
+.aw-calendar-time { flex: 0 0 auto; }
+.aw-calendar-time input { width: 130px; height: 40px; padding: 0 10px; box-sizing: border-box; border: 1px solid #dfe5e8; border-radius: 9px; background: #fff; font: inherit; color: var(--ink); }
+.aw-calendar-plan-hint { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; margin-top: 15px; font-size: 12px; color: var(--muted); }
+.aw-calendar-plan-hint strong { color: var(--ink); }
+.aw-calendar-plan-hint a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+.aw-calendar-hint { margin: 12px 0 0; color: #735628; font-size: 12px; line-height: 1.6; }
+.aw-calendar-planner-footer { display: flex; gap: 12px 18px; flex-wrap: wrap; align-items: center; margin-top: 23px; }
+.aw-calendar-google {
+  display: inline-flex; gap: 8px; align-items: center; justify-content: center;
+  padding: 11px 15px; border-radius: 10px; background: var(--brand); color: #fff;
+  font-weight: 650; font-size: 13px; text-decoration: none; white-space: nowrap;
+}
+.aw-calendar-google:hover { filter: brightness(.95); }
+.aw-calendar-google.is-disabled { opacity: .45; cursor: not-allowed; }
+.aw-calendar-google svg { flex-shrink: 0; }
+.aw-calendar-note { max-width: 380px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.aw-calendar-saved { color: #26714b; margin: 13px 0 0; font-size: 12px; }
+.aw-calendar-footer-note { margin: 17px 0 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+@media (max-width: 600px) {
+  .aw-calendar-planner { padding: 20px 17px; }
+  .aw-calendar-planner-heading h3 { font-size: 18px; }
+  .aw-calendar-days { max-width: none; }
+  .aw-calendar-days button { font-size: 11px; }
+  .aw-calendar-time { width: 100%; }
+}

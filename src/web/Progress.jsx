@@ -5,6 +5,7 @@ import { chapterById, foundationSteps } from './content'
 import { ORIENTATION_RESPONSE_KEY, choices, buildOrientationResult, parseOrientationAnswers } from './orientationProfile'
 import { PLAN_RESPONSE_KEY, buildStudyPlan, readStudyPlan } from './studyPlan'
 import { personaArtwork } from './personaArtwork'
+import CalendarPlanner from './CalendarPlanner'
 import { CHECKIN_RESPONSE_KEY, checkinOptions, parseCheckins, saveCheckin } from './progressCheckin'
 import './progress.css'
 
@@ -15,7 +16,7 @@ const copy = {
     resume: 'CONTINUE LEARNING', continue: 'Continue →',
     study: 'Study', practice: 'Practice', start: 'Start with Orientation',
     mySpace: 'My Space', target: 'MY TARGET', alterEgo: 'MY ENGLISH SELF',
-    plan: 'MY PLAN', addTarget: 'Choose my target', editTarget: 'Review my target',
+    plan: 'MY PLAN', calendar: 'Schedule in Google Calendar', closeCalendar: 'Close schedule', addTarget: 'Choose my target', editTarget: 'Review my target',
     addSelf: 'Discover my English self', editSelf: 'Explore my English self',
     addPlan: 'Make a study plan', editPlan: 'Adjust my plan',
     noPlan: 'Make a routine you can keep.',
@@ -35,7 +36,7 @@ const copy = {
     resume: '学習を再開', continue: '続きから →',
     study: '学ぶ', practice: '練習', start: 'オリエンテーションから始める',
     mySpace: 'マイスペース', target: '目標', alterEgo: '英語を話す未来の自分',
-    plan: '学習プラン', addTarget: '目標を決める', editTarget: '目標を確認・変更する',
+    plan: '学習プラン', calendar: 'Googleカレンダーに予定を追加', closeCalendar: '予定の設定を閉じる', addTarget: '目標を決める', editTarget: '目標を確認・変更する',
     addSelf: '未来の自分を見つける', editSelf: '未来の自分を見る・変更する',
     addPlan: '学習プランを作る', editPlan: 'プランを調整する',
     noPlan: '続けられる学習習慣を決めましょう。',
@@ -98,6 +99,7 @@ const displayDate = (day, language) =>
 export default function Progress({ learning, update }) {
   const { language } = useLanguage()
   const l = copy[language] ?? copy.en
+  const [calendarOpen, setCalendarOpen] = useState(false)
   const chapter = chapterById[learning.last?.match(/\/lesson\/(\d+)/)?.[1]]
   const foundation = foundationSteps.find(step => learning.last?.startsWith('/foundation/' + step.id + '/'))
   const app = learning.last?.match(/^\/application\/([^/]+)/)?.[1]
@@ -185,8 +187,14 @@ export default function Progress({ learning, update }) {
               </>
             ) : <h3>{l.noPlan}</h3>}
             <a href="#/foundation/how-it-works/practice">{plan ? l.editPlan : l.addPlan} <span aria-hidden="true">→</span></a>
+            <button type="button" className="aw-progress-calendar-trigger"
+              aria-expanded={calendarOpen} aria-controls="aw-progress-calendar-editor"
+              onClick={() => setCalendarOpen(open => !open)}>
+              {calendarOpen ? l.closeCalendar : l.calendar} <span aria-hidden="true">{calendarOpen ? '↑' : '↗'}</span>
+            </button>
           </article>
         </div>
+        {calendarOpen && <CalendarPlanner learning={learning} update={update} plan={plan} />}
       </section>
 
       <section className="aw-progress-checkin" aria-labelledby="aw-progress-checkin-title">

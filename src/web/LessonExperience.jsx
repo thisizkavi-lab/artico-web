@@ -106,19 +106,35 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
 // A single play control belongs to the complete exchange, not each turn.
 function ConversationAudio({ block, audioProps }) {
   const { t } = useLanguage()
+  const { byId } = useLesson()
   const id = block.audioId ?? block.id ?? `dialogue-${block.phrases[0]}`
   const ready = Boolean(approvedAudio[id])
   const playing = ready && audioProps.activeId === id && audioProps.audio.playing
+  const listen = () => {
+    if (ready) {
+      if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+      audioProps.onPlay(id)
+      return
+    }
+    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
+    const lines = block.phrases.map(phraseId => byId[phraseId]?.en).filter(Boolean)
+    if (!lines.length) return
+    audioProps.audio.stop()
+    window.speechSynthesis.cancel()
+    const speech = new window.SpeechSynthesisUtterance(lines.join('  '))
+    speech.lang = 'en-US'
+    speech.rate = 0.91
+    const voice = window.speechSynthesis.getVoices().find(candidate => candidate.lang.toLowerCase() === 'en-us')
+    if (voice) speech.voice = voice
+    window.speechSynthesis.speak(speech)
+  }
   return (
     <button
       type="button"
       className="ip-conversation-audio"
-      aria-label={ready
-        ? (playing ? t('Pause conversation audio') : t('Play full conversation'))
-        : t('Conversation recording not yet available')}
-      title={ready ? t('Listen to the full conversation') : t('Recording coming soon')}
-      disabled={!ready}
-      onClick={() => audioProps.onPlay(id)}
+      aria-label={playing ? t('Pause conversation audio') : t('Play full conversation')}
+      title={ready ? t('Listen to the full conversation') : t('Listen using browser voice')}
+      onClick={listen}
     >
       <Glyph name={playing ? 'pause' : 'play'} size={16} />
     </button>

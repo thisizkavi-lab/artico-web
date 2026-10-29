@@ -36,6 +36,27 @@ test('the public URL always opens Landing before Home, without breaking direct l
   assert.match(app, /window\.history\.replaceState\(/)
 })
 
+test('landing uses a full-height illustrated hero with a working blue entry and preserved philosophy', () => {
+  const landing = readFileSync(new URL('./Landing.jsx', import.meta.url), 'utf8')
+  const css = readFileSync(new URL('./landing.css', import.meta.url), 'utf8')
+  const index = readFileSync(new URL('../../index.html', import.meta.url), 'utf8')
+  const art = readFileSync(new URL('../../public/landing-hero-background.svg', import.meta.url), 'utf8')
+  assert.match(landing, /className="al-splash"/)
+  assert.match(landing, /landing-hero-background\.svg/)
+  assert.match(landing, /href="#\/home">Get Started/)
+  assert.match(css, /\.al-splash\s*\{/)
+  assert.match(css, /min-height: 100svh/)
+  assert.match(css, /\.al-splash-cta\s*\{/)
+  assert.match(css, /background: #285bcc/)
+  assert.match(art, /Abstract-Conversation-Illustration/)
+  assert.match(index, /family=Poppins/)
+  assert.match(landing, /id="al-why-title">why artico\?/)
+  for (const phrase of ['real learning needs effort', 'flow', 'perfect middle', 'trained like a skill',
+    'sound, rhythm, movement', 'train expression', 'communication', 'universal interface',
+    'people feel it']) assert.ok(landing.includes(phrase), phrase)
+  assert.equal((landing.match(/<mark>/g) ?? []).length, 9)
+})
+
 test('the learning path crosses stage boundaries without skipping a foundation or trapping the last lesson', () => {
   const steps = learningStages.flatMap((stage) => stage.lessonIds)
   assert.equal(new Set(steps).size, steps.length)

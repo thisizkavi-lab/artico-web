@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import './GreetingsReferenceStudy.css'
+import { approvedAudio } from './components'
 
 // Chapter 01 study artwork follows the approved five-page Artico reference.
 // Illustrations intentionally remain placeholders until the artwork pass.
@@ -64,7 +65,7 @@ function Conversation({ title, lines, scene = 'people', note, compact = false, p
 }
 
 function SectionHead({ index, title, description }) {
-  return <header className="ar-section-heading"><h2><span>{index}</span> {title}</h2><p>{description}</p></header>
+  return <header className="ar-section-heading"><h2 id={"ar-head-"+Number(index)}><span>{index}</span> {title}</h2><p>{description}</p></header>
 }
 
 function PhraseShelf({ title, options, scene = 'people', initial = 0, captions = false, play }) {
@@ -138,6 +139,8 @@ function FlowGroup({ color, title, options, selected, onSelect, play, labels }) 
 
 function CheckInFlow({ play }) {
   const [selected, setSelected]=useState("I'm okay.")
+  const [selectedAsk, setSelectedAsk]=useState("How are you?")
+  const [selectedReturn, setSelectedReturn]=useState("How about you?")
   const descriptions = {
     'How are you?':'A neutral, common way to ask how someone is doing.',
     'How are you doing?':'Another natural everyday check-in.',
@@ -158,10 +161,10 @@ function CheckInFlow({ play }) {
   return <article className="ar-card ar-flow-card">
     <div className="ar-flow-header"><p className="ar-overline">YOUR SAMPLE · NOT A SOURCE DIALOGUE</p><button className="ar-play" type="button" onClick={()=>play(['How are you?',selected,'How about you?'])} aria-label="Play sample exchange"><PlaySymbol full/></button></div>
     <div className="ar-flow-layout">
-      <div className="ar-flow-question-side"><div className="ar-flow-avatar"><Speaker name="Alex"/><b>Alex</b></div><FlowGroup color="blue" options={ask} selected={selected} onSelect={setSelected} play={play}/></div>
+      <div className="ar-flow-question-side"><div className="ar-flow-avatar"><Speaker name="Alex"/><b>Alex</b></div><FlowGroup color="blue" options={ask} selected={selectedAsk} onSelect={setSelectedAsk} play={play}/></div>
       <div className="ar-flow-arrow">↓</div>
       <div className="ar-flow-reply-side">
-        <div className="ar-flow-response"><FlowGroup color="coral" options={[...answer,...neutral,...back]} selected={selected} onSelect={setSelected} play={play}/><div className="ar-flow-avatar"><b>Casey</b><Speaker name="Casey"/></div></div>
+        <div className="ar-flow-response"><div className="ar-flow-stacked"><FlowGroup color="coral" options={[...answer,...neutral]} selected={selected} onSelect={setSelected} play={play}/><FlowGroup color="coral" options={back} selected={selectedReturn} onSelect={setSelectedReturn} play={play}/></div><div className="ar-flow-avatar"><b>Casey</b><Speaker name="Casey"/></div></div>
         <aside className="ar-note ar-honest"><strong>You do not have to say everything is good.</strong><br/>These replies are not a fixed scale of emotions. “Not great” is a valid honest answer. Someone who stops and makes time for you may invite more explanation, or you can keep your answer short without sharing private details.</aside>
       </div>
     </div>
@@ -169,19 +172,22 @@ function CheckInFlow({ play }) {
   </article>
 }
 
-export default function GreetingsReferenceStudy({ audioProps }) {
+export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
   const utteranceRef=useRef(null)
   useEffect(()=>()=>{if(typeof window!=='undefined')window.speechSynthesis?.cancel()},[])
   const play=useCallback((texts)=>{
     if(typeof window==='undefined'||!('speechSynthesis' in window))return
     const lines=(Array.isArray(texts)?texts:[texts]).filter(Boolean)
     if(!lines.length)return
+    // Prefer Artico's approved phrase recordings before the TTS fallback.
+    if(lines.length===1){const match=phrases.find(p=>p.en===lines[0]);if(match&&approvedAudio[match.id]){window.speechSynthesis.cancel();audioProps?.onPlay(match.id);return}}
+    audioProps?.audio?.stop?.()
     window.speechSynthesis.cancel()
     const voices=window.speechSynthesis.getVoices()
     const voice=voices.find(v=>v.lang.toLowerCase()==='en-us')||voices.find(v=>v.lang.toLowerCase().startsWith('en'))
     const next=(i)=>{if(i>=lines.length)return;const u=new SpeechSynthesisUtterance(lines[i]);utteranceRef.current=u;u.lang='en-US';u.rate=VOICE_RATE;if(voice)u.voice=voice;u.onend=()=>{if(utteranceRef.current===u)next(i+1)};window.speechSynthesis.speak(u)}
     next(0)
-  },[])
+  },[audioProps,phrases])
   return <div className="ip-reading ar-page">
     <section id="study-open" className="ar-section" aria-labelledby="ar-head-1">
       <SectionHead index="01" title="Start the conversation" description="Choose one greeting that fits your relationship, the time of day, and the feeling you want to convey. A workplace does not automatically require one single greeting."/>

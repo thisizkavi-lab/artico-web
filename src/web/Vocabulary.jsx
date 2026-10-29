@@ -84,19 +84,27 @@ function VocabularyLesson({ topic, japanese }) {
 
       <nav className="vl-lesson-navigation" aria-label={japanese ? '語彙レッスンの移動' : 'Vocabulary lesson navigation'}>
         {previous ? (
-          <a href={topicHref(previous.sourceLesson)}>
-            <span aria-hidden="true">←</span>
-            <span><small>{japanese ? '前のレッスン' : 'Previous lesson'}</small>
-              <strong>{japanese ? previous.ja : previous.topic}</strong></span>
+          <a className="vl-step-card vl-step-previous" href={topicHref(previous.sourceLesson)}>
+            <span className="vl-step-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5m7 7-7-7 7-7" /></svg>
+            </span>
+            <span className="vl-step-copy">
+              <small>{japanese ? '前のレッスン' : 'Previous lesson'} <span className="vl-step-separator">·</span> {String(previous.sourceLesson).padStart(2, '0')}</small>
+              <strong lang={japanese ? 'ja' : 'en'}>{japanese ? previous.ja : previous.topic}</strong>
+            </span>
           </a>
-        ) : <span aria-hidden="true" />}
+        ) : <span className="vl-step-spacer" aria-hidden="true" />}
         {next ? (
-          <a className="vl-next-lesson" href={topicHref(next.sourceLesson)}>
-            <span><small>{japanese ? '次のレッスン' : 'Next lesson'}</small>
-              <strong>{japanese ? next.ja : next.topic}</strong></span>
-            <span aria-hidden="true">→</span>
+          <a className="vl-step-card vl-step-next" href={topicHref(next.sourceLesson)}>
+            <span className="vl-step-copy">
+              <small>{japanese ? '次のレッスン' : 'Next lesson'} <span className="vl-step-separator">·</span> {String(next.sourceLesson).padStart(2, '0')}</small>
+              <strong lang={japanese ? 'ja' : 'en'}>{japanese ? next.ja : next.topic}</strong>
+            </span>
+            <span className="vl-step-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14m-7-7 7 7-7 7" /></svg>
+            </span>
           </a>
-        ) : <span aria-hidden="true" />}
+        ) : <span className="vl-step-spacer" aria-hidden="true" />}
       </nav>
     </div>
   )

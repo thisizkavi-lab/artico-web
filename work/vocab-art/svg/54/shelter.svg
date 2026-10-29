@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:shelter" data-archetype="scene">
+  <defs>
+    <!-- Animal Shelter: welcoming cottage building, heart & paw emblem on gable, adoption paddock fence, warm light -->
+    <clipPath id="shelter-window-clip">
+      <rect x="74" y="92" width="28" height="34" rx="4" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="122" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="72" ry="8" fill="#DDD4C3" />
+
+  <!-- Green Lawn Mound -->
+  <path d="M 38 164 Q 152 148 266 164 Q 152 178 38 164 Z" fill="#86EFAC" stroke="#22C55E" stroke-width="1.8" />
+
+  <!-- Main Shelter Building Facade (Warm Cream & White Trim) -->
+  <polygon points="62,78 152,28 242,78 242,158 62,158" fill="#FFFBEB" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Pitched Gable Shingle Roof (Warm Terracotta Red) -->
+  <polygon points="50,78 152,22 254,78 244,84 152,32 60,84" fill="#DC2626" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <polygon points="60,84 152,32 244,84 240,90 152,38 64,90" fill="#B91C1C" />
+
+  <!-- Chimney on Roof with Gentle Smoke Puff -->
+  <polygon points="196,44 212,44 212,68 196,60" fill="#B45309" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <rect x="194" y="42" width="20" height="4" rx="1" fill="#78350F" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Gentle Chimney Smoke Path -->
+  <path d="M 204 38 Q 200 30 206 24 Q 212 18 206 12" fill="none" stroke="#CBD5E1" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Big Circular Heart & Paw Emblem on Gable (Shelter Insignia) -->
+  <circle cx="152" cy="62" r="18" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.2" />
+  <path d="M 152 56 C 148 50 142 50 142 54 C 142 60 152 66 152 66 C 152 66 162 60 162 54 C 162 50 156 50 152 56 Z" fill="#EF4444" />
+  <!-- Paw print inside heart -->
+  <ellipse cx="152" cy="68" rx="4" ry="3" fill="#DC2626" />
+  <circle cx="148" cy="63" r="1.3" fill="#DC2626" />
+  <circle cx="151" cy="62" r="1.3" fill="#DC2626" />
+  <circle cx="153" cy="62" r="1.3" fill="#DC2626" />
+  <circle cx="156" cy="63" r="1.3" fill="#DC2626" />
+
+  <!-- Double Front Entrance Doors (Welcoming Warm Gold Interior) -->
+  <rect x="132" y="96" width="40" height="62" rx="4" fill="#FDE047" stroke="#1E2A3B" stroke-width="2.4" />
+  <line x1="152" y1="96" x2="152" y2="158" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Door window panes -->
+  <rect x="136" y="102" width="12" height="18" rx="2" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.6" />
+  <rect x="156" y="102" width="12" height="18" rx="2" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Door handles -->
+  <circle cx="148" cy="130" r="2" fill="#B45309" />
+  <circle cx="156" cy="130" r="2" fill="#B45309" />
+  <!-- Entrance door mat -->
+  <rect x="130" y="156" width="44" height="4" rx="2" fill="#78350F" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Left Window with Cat Silhouette Peeking Out -->
+  <rect x="74" y="96" width="32" height="36" rx="4" fill="#93C5FD" stroke="#1E2A3B" stroke-width="2.2" />
+  <line x1="90" y1="96" x2="90" y2="132" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="74" y1="114" x2="106" y2="114" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Cat silhouette path -->
+  <path d="M 80 132 C 80 120 84 116 86 116 C 88 116 92 120 92 132 Z" fill="#1E293B" />
+  <path d="M 83 116 L 81 110 L 86 114 Z M 89 116 L 91 110 L 86 114 Z" fill="#1E293B" />
+  <!-- Window sill with flower box -->
+  <rect x="70" y="132" width="40" height="6" rx="2" fill="#B45309" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="78" cy="130" r="3" fill="#F43F5E" />
+  <circle cx="90" cy="130" r="3" fill="#FACC15" />
+  <circle cx="102" cy="130" r="3" fill="#F43F5E" />
+
+  <!-- Right Window with Dog Silhouette Peeking Out -->
+  <rect x="198" y="96" width="32" height="36" rx="4" fill="#93C5FD" stroke="#1E2A3B" stroke-width="2.2" />
+  <line x1="214" y1="96" x2="214" y2="132" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="198" y1="114" x2="230" y2="114" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Dog silhouette path -->
+  <path d="M 204 132 C 204 120 208 116 214 116 C 220 116 224 120 224 132 Z" fill="#1E293B" />
+  <path d="M 206 118 C 202 122 202 126 206 128 M 222 118 C 226 122 226 126 222 128" stroke="#1E293B" stroke-width="2" stroke-linecap="round" fill="none" />
+  <!-- Window sill with flower box -->
+  <rect x="194" y="132" width="40" height="6" rx="2" fill="#B45309" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="202" cy="130" r="3" fill="#F43F5E" />
+  <circle cx="214" cy="130" r="3" fill="#FACC15" />
+  <circle cx="226" cy="130" r="3" fill="#F43F5E" />
+
+  <!-- Paddock Picket Fence in Foreground (Left & Right) -->
+  <g fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round">
+    <polygon points="36,134 42,126 48,134 48,160 36,160" />
+    <polygon points="50,134 56,126 62,134 62,160 50,160" />
+    <polygon points="242,134 248,126 254,134 254,160 242,160" />
+    <polygon points="256,134 262,126 268,134 268,160 256,160" />
+  </g>
+  <line x1="32" y1="142" x2="66" y2="142" stroke="#1E2A3B" stroke-width="2" />
+  <line x1="238" y1="142" x2="272" y2="142" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Little Bush Greenery on Lawn -->
+  <path d="M 28 160 Q 36 150 44 160 Z" fill="#16A34A" stroke="#1E2A3B" stroke-width="1.6" />
+  <path d="M 260 160 Q 268 150 276 160 Z" fill="#16A34A" stroke="#1E2A3B" stroke-width="1.6" />
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:terrarium" data-archetype="hero-object">
+  <defs>
+    <!-- Reptile Terrarium / Vivarium: glass enclosure, overhead heat lamp dome, climbing driftwood, tropical plants, bark substrate -->
+    <clipPath id="terrarium-interior-clip">
+      <rect x="56" y="60" width="192" height="92" rx="4" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="170" rx="116" ry="12" fill="#EAE3D5" />
+  <ellipse cx="152" cy="168" rx="64" ry="7" fill="#DDD4C3" />
+
+  <!-- Overhead Aluminum Heat Lamp Dome (Top Left) -->
+  <!-- Hanging cord / clamp -->
+  <line x1="110" y1="20" x2="110" y2="34" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Dome shade -->
+  <path d="M 94 48 C 94 36 126 36 126 48 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="90" y="48" width="40" height="4" rx="1.5" fill="#64748B" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Warm glowing basking light cone shining into terrarium -->
+  <polygon points="90,52 130,52 170,140 70,140" fill="#FEF08A" opacity="0.22" />
+
+  <!-- Terrarium Glass Enclosure Interior -->
+  <g clip-path="url(#terrarium-interior-clip)">
+    <!-- Warm terrarium ambient air tint -->
+    <rect x="50" y="55" width="204" height="100" fill="#FEFCE8" />
+    <!-- Rear rock background / slate backdrop -->
+    <rect x="50" y="55" width="204" height="25" fill="#E2E8F0" opacity="0.6" />
+
+    <!-- Reptile Bark / Coconut Coir Substrate Floor -->
+    <rect x="50" y="132" width="204" height="24" fill="#78350F" />
+    <!-- Bark mulch nuggets texture -->
+    <ellipse cx="74" cy="142" rx="6" ry="3" fill="#5A280B" />
+    <ellipse cx="96" cy="144" rx="8" ry="3.5" fill="#451A03" />
+    <ellipse cx="124" cy="142" rx="7" ry="3" fill="#5A280B" />
+    <ellipse cx="154" cy="144" rx="8" ry="3.5" fill="#451A03" />
+    <ellipse cx="182" cy="142" rx="7" ry="3" fill="#5A280B" />
+    <ellipse cx="214" cy="144" rx="8" ry="3.5" fill="#451A03" />
+    <ellipse cx="236" cy="142" rx="6" ry="3" fill="#5A280B" />
+
+    <!-- Shallow Stone Water Dish on substrate -->
+    <ellipse cx="214" cy="144" rx="18" ry="7" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.6" />
+    <ellipse cx="214" cy="143" rx="14" ry="4.5" fill="#38BDF8" />
+
+    <!-- Gnarled Climbing Driftwood Branch -->
+    <path d="M 72 138 C 94 122 118 94 148 90 C 172 86 196 102 216 112" stroke="#B45309" stroke-width="12" stroke-linecap="round" fill="none" />
+    <path d="M 72 138 C 94 122 118 94 148 90 C 172 86 196 102 216 112" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <!-- Driftwood side knot branch -->
+    <path d="M 128 98 Q 140 114 152 120" stroke="#B45309" stroke-width="7" stroke-linecap="round" fill="none" />
+    <path d="M 128 98 Q 140 114 152 120" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Lush Terrarium Fern & Pothos Greenery -->
+    <!-- Fern leaves on left -->
+    <path d="M 68 134 Q 62 102 72 82 Q 78 108 76 134 Z" fill="#16A34A" stroke="#14532D" stroke-width="1.2" />
+    <path d="M 78 134 Q 86 112 80 94 Q 74 114 78 134 Z" fill="#22C55E" stroke="#14532D" stroke-width="1.2" />
+    <!-- Pothos leaf on branch -->
+    <path d="M 166 94 C 180 84 190 92 186 102 C 178 106 168 104 166 94 Z" fill="#22C55E" stroke="#14532D" stroke-width="1.2" />
+    <path d="M 174 88 L 180 102" stroke="#15803D" stroke-width="1.2" />
+
+    <!-- Round Thermometer / Hygrometer Gauge mounted on back glass -->
+    <circle cx="82" cy="74" r="8" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.4" />
+    <circle cx="82" cy="74" r="5" fill="none" stroke="#EF4444" stroke-width="1.2" />
+    <line x1="82" y1="74" x2="85" y2="70" stroke="#1E2A3B" stroke-width="1.2" />
+  </g>
+
+  <!-- Rectangular Glass Terrarium Outer Frame -->
+  <rect x="56" y="60" width="192" height="92" rx="4" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Diagonal Glass Glare Reflection Line -->
+  <path d="M 64 66 L 76 66 L 66 146 L 60 146 Z" fill="#FFFFFF" opacity="0.35" />
+
+  <!-- Heavy-Duty Black Metal Top Screen Lid Frame -->
+  <rect x="50" y="54" width="204" height="8" rx="2" fill="#1E293B" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Screen mesh cross-hatch pattern on top lid -->
+  <line x1="56" y1="58" x2="248" y2="58" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3 3" />
+</svg>

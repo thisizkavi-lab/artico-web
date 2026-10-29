@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:iguana" data-archetype="hero-object">
+  <defs>
+    <!-- Green Iguana: spiny dorsal crest, throat dewlap, subtympanic scale, long whip tail, clawed feet on branch -->
+    <clipPath id="iguana-body-clip">
+      <path d="M 100 114 C 98 84 130 76 182 82 C 220 86 236 108 232 136 C 222 148 194 150 162 146 C 122 142 104 130 100 114 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="154" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Thick Wooden Terrarium Log Branch -->
+  <path d="M 40 162 C 100 148 190 148 268 160 L 264 174 C 186 162 96 162 38 174 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 46 166 C 102 154 186 154 260 166" stroke="#92400E" stroke-width="2" fill="none" />
+
+  <!-- Long Whip-like Tail (Banded Green & Dark Olive) -->
+  <path d="M 230 128 C 254 130 274 122 278 106 C 282 92 268 84 256 90 C 248 94 246 104 252 110" fill="none" stroke="#16A34A" stroke-width="9" stroke-linecap="round" />
+  <path d="M 230 128 C 254 130 274 122 278 106 C 282 92 268 84 256 90 C 248 94 246 104 252 110" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" />
+  <!-- Tail dark bands -->
+  <path d="M 242 126 L 244 135 M 256 122 L 258 131 M 270 114 L 273 122 M 273 98 L 268 104" stroke="#14532D" stroke-width="2.5" />
+
+  <!-- Dorsal Spiny Crest (Comb spines along neck and back) -->
+  <polygon points="106,94 110,80 114,94" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="118,90 122,74 126,90" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="130,86 136,70 140,86" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="144,84 150,68 154,84" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="158,84 164,70 168,84" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="172,84 178,72 182,84" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="186,86 192,76 196,86" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="200,90 204,80 208,90" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <polygon points="212,96 216,88 220,96" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Iguana Body -->
+  <g clip-path="url(#iguana-body-clip)">
+    <!-- Base Emerald Green -->
+    <rect x="90" y="70" width="150" height="85" fill="#22C55E" />
+    <!-- Yellowish green lime belly -->
+    <path d="M 105 132 Q 160 144 215 136 L 220 152 L 100 152 Z" fill="#BEF264" />
+    <!-- Transverse dark green stripes -->
+    <path d="M 132 86 Q 140 108 136 132 M 156 84 Q 164 108 160 134 M 180 84 Q 188 108 184 134 M 204 88 Q 212 110 208 134" stroke="#15803D" stroke-width="5" fill="none" stroke-linecap="round" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 100 114 C 98 84 130 76 182 82 C 220 86 236 108 232 136 C 222 148 194 150 162 146 C 122 142 104 130 100 114 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Powerful Hind Leg Clasping Branch -->
+  <ellipse cx="204" cy="132" rx="16" ry="12" fill="#16A34A" stroke="#1E2A3B" stroke-width="2" />
+  <path d="M 204 136 Q 214 148 206 156" stroke="#22C55E" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 204 136 Q 214 148 206 156" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+  <!-- Sharp Claws -->
+  <line x1="202" y1="158" x2="200" y2="164" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <line x1="206" y1="158" x2="206" y2="165" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <line x1="210" y1="158" x2="212" y2="164" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Front Leg Clasping Branch -->
+  <path d="M 122 126 Q 112 142 120 156" stroke="#22C55E" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 122 126 Q 112 142 120 156" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <!-- Sharp Claws -->
+  <line x1="116" y1="158" x2="114" y2="164" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <line x1="120" y1="158" x2="120" y2="165" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <line x1="124" y1="158" x2="126" y2="164" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Large Throat Dewlap (Flap of skin with spiny edge) -->
+  <path d="M 92 118 C 86 138 104 146 112 140 C 114 130 110 120 106 116 Z" fill="#BEF264" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Dewlap serrations -->
+  <circle cx="92" cy="138" r="2" fill="#84CC16" />
+  <circle cx="98" cy="144" r="2" fill="#84CC16" />
+  <circle cx="106" cy="144" r="2" fill="#84CC16" />
+
+  <!-- Rugged Iguana Head -->
+  <path d="M 112 96 C 104 78 86 78 70 86 C 58 94 56 108 66 116 C 80 122 104 120 112 108 Z" fill="#22C55E" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Subtympanic Scale (Large circular shield scale on jowl) -->
+  <circle cx="96" cy="110" r="7" fill="#BEF264" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="96" cy="110" r="4" fill="#A3E635" />
+
+  <!-- Stern Prehistoric Iguana Eye -->
+  <circle cx="78" cy="90" r="6" fill="#F59E0B" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="78" cy="90" r="3.2" fill="#1E2A3B" />
+  <circle cx="76.5" cy="88.5" r="1.1" fill="#FFFFFF" />
+
+  <!-- Jowl & Mouth Line -->
+  <path d="M 60 106 Q 76 114 90 106" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <circle cx="62" cy="98" r="1.4" fill="#1E2A3B" />
+</svg>

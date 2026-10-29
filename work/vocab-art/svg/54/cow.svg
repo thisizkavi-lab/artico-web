@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:cow" data-archetype="hero-object">
+  <defs>
+    <!-- Dairy Cow: Holstein black and white patched, pink udder with teats, yellow ear tag, gentle face -->
+    <clipPath id="cow-body-clip">
+      <path d="M 98 84 C 98 68 132 66 172 68 C 210 70 234 84 232 130 C 230 148 206 152 166 150 C 122 148 100 120 98 84 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="162" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Swishing Tail with Fluffy Tuft -->
+  <path d="M 230 108 C 246 116 250 134 246 148" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+  <path d="M 230 108 C 246 116 250 134 246 148" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 246 146 C 250 152 254 160 248 164 C 242 162 244 154 246 146 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Pink Udder with Teats (Distinctive Dairy Cow Feature) -->
+  <path d="M 172 138 C 172 152 188 154 198 152 C 206 150 206 138 204 134 Z" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Teats -->
+  <rect x="178" y="150" width="3.5" height="6" rx="1.5" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+  <rect x="186" y="151" width="3.5" height="6" rx="1.5" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+  <rect x="194" y="150" width="3.5" height="6" rx="1.5" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+
+  <!-- Hind Legs & Hooves -->
+  <path d="M 200 126 L 198 162 L 212 162 L 218 128 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="198" y="156" width="14" height="6" fill="#475569" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <path d="M 216 126 L 220 160 L 230 160 L 232 130 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="220" y="154" width="10" height="6" fill="#334155" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Front Legs & Hooves -->
+  <path d="M 112 114 L 110 162 L 124 162 L 130 118 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="110" y="156" width="14" height="6" fill="#475569" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <path d="M 128 116 L 132 160 L 144 160 L 144 120 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="132" y="154" width="12" height="6" fill="#334155" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Holstein Patched Cow Body -->
+  <g clip-path="url(#cow-body-clip)">
+    <!-- Base White Coat -->
+    <rect x="90" y="60" width="150" height="95" fill="#FFFFFF" />
+    <!-- Big Black Patches -->
+    <path d="M 116 68 C 112 84 126 102 142 96 C 158 90 148 70 134 68 Z" fill="#1E293B" />
+    <path d="M 166 70 C 182 86 174 116 196 114 C 218 112 228 88 214 72 Z" fill="#1E293B" />
+    <path d="M 104 120 C 114 130 126 142 140 140 C 146 146 122 152 108 144 Z" fill="#1E293B" />
+    <path d="M 216 116 C 226 124 232 140 226 148 L 234 148 L 234 116 Z" fill="#1E293B" />
+    <!-- Lower body shadow tone -->
+    <rect x="90" y="146" width="150" height="10" fill="#E2E8F0" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 98 84 C 98 68 132 66 172 68 C 210 70 234 84 232 130 C 230 148 206 152 166 150 C 122 148 100 120 98 84 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Cow Head -->
+  <path d="M 102 68 C 98 54 86 54 74 60 C 64 68 62 84 72 96 C 82 104 100 102 106 88 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <!-- Black patch over eye -->
+  <path d="M 88 56 C 82 64 80 78 88 84 C 96 82 98 68 96 60 Z" fill="#1E293B" />
+
+  <!-- Small Curved Cow Horns -->
+  <path d="M 94 54 C 94 42 88 40 84 46" stroke="#FEF3C7" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 94 54 C 94 42 88 40 84 46" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  <path d="M 78 56 C 76 44 70 44 68 50" stroke="#FEF3C7" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 78 56 C 76 44 70 44 68 50" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+  <!-- Floppy Ears with Yellow Identification Tag -->
+  <ellipse cx="106" cy="74" rx="10" ry="5" transform="rotate(15 106 74)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="106" cy="74" rx="6" ry="2.5" transform="rotate(15 106 74)" fill="#FDA4AF" />
+  <!-- Yellow ear tag on right ear -->
+  <polygon points="112,74 118,72 120,78 114,80" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round" />
+
+  <!-- Gentle Liquid Brown Eye with Long Lashes -->
+  <circle cx="84" cy="72" r="4.5" fill="#1E2A3B" />
+  <circle cx="82.5" cy="70.5" r="1.4" fill="#FFFFFF" />
+
+  <!-- Large Pink Muzzle (Chewing Cud) -->
+  <ellipse cx="68" cy="88" rx="14" ry="10" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="2.2" />
+  <!-- Nostrils -->
+  <ellipse cx="64" cy="86" rx="2.5" ry="3.5" fill="#F43F5E" />
+  <ellipse cx="72" cy="86" rx="2.5" ry="3.5" fill="#F43F5E" />
+  <path d="M 64 94 Q 68 97 72 94" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Blade of sweet green grass in mouth -->
+  <path d="M 68 94 Q 54 98 44 92" stroke="#22C55E" stroke-width="2.4" stroke-linecap="round" fill="none" />
+</svg>

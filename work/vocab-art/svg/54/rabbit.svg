@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:rabbit" data-archetype="hero-object">
+  <defs>
+    <!-- Domestic pet rabbit: long tall upright pink-lined ears, round fluffy body, cottontail, carrot -->
+    <clipPath id="rabbit-body-clip">
+      <path d="M 116 120 C 114 96 142 84 176 84 C 214 84 234 108 230 144 C 224 160 196 162 156 162 C 122 162 118 144 116 120 Z" />
+    </clipPath>
+    <clipPath id="rabbit-head-clip">
+      <ellipse cx="134" cy="98" rx="22" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="110" ry="14" fill="#EAE3D5" />
+  <ellipse cx="164" cy="164" rx="60" ry="8" fill="#DDD4C3" />
+
+  <!-- Fluffy White Cottontail Puff at the rear -->
+  <circle cx="236" cy="136" r="14" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="234" cy="138" r="10" fill="#F1F5F9" />
+
+  <!-- Powerful Folded Hind Leg Haunch -->
+  <ellipse cx="196" cy="138" rx="24" ry="20" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Rabbit Body -->
+  <g clip-path="url(#rabbit-body-clip)">
+    <!-- Base soft warm white/cream fur -->
+    <rect x="105" y="75" width="135" height="95" fill="#F8FAFC" />
+    <!-- Warm fawn/tan back shading -->
+    <path d="M 120 84 Q 175 78 228 104 L 234 160 L 105 160 Z" fill="#E2E8F0" />
+    <!-- Pure white chest & belly -->
+    <ellipse cx="140" cy="136" rx="22" ry="26" fill="#FFFFFF" />
+    <!-- Lower shadow -->
+    <rect x="105" y="152" width="135" height="12" fill="#CBD5E1" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 116 120 C 114 96 142 84 176 84 C 214 84 234 108 230 144 C 224 160 196 162 156 162 C 122 162 118 144 116 120 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Large Elongated Hind Foot (Flat on ground) -->
+  <ellipse cx="190" cy="162" rx="20" ry="6.5" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+  <line x1="176" y1="160" x2="182" y2="163" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Front Paws -->
+  <ellipse cx="132" cy="162" rx="9" ry="6" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="146" cy="162" rx="9" ry="6" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Long Upright Velvety Ears -->
+  <!-- Left Ear (Far) -->
+  <path d="M 126 80 C 116 54 118 28 132 26 C 142 26 146 50 140 78 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 128 72 C 122 52 124 34 133 32 C 139 32 141 48 137 70 Z" fill="#FDA4AF" />
+
+  <!-- Right Ear (Near, slightly tilted) -->
+  <path d="M 142 82 C 140 52 148 26 162 28 C 170 30 168 56 156 84 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 145 74 C 144 52 150 36 159 36 C 163 38 162 54 154 76 Z" fill="#FDA4AF" />
+
+  <!-- Head -->
+  <g clip-path="url(#rabbit-head-clip)">
+    <ellipse cx="134" cy="98" rx="22" ry="24" fill="#F8FAFC" />
+    <path d="M 128 74 Q 150 82 156 104 L 156 124 L 112 124 Z" fill="#E2E8F0" />
+    <ellipse cx="124" cy="108" rx="12" ry="12" fill="#FFFFFF" />
+  </g>
+  <ellipse cx="134" cy="98" rx="22" ry="24" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Big Dark Liquid Rabbit Eye -->
+  <ellipse cx="142" cy="94" rx="4.5" ry="6" fill="#1E2A3B" />
+  <circle cx="140.5" cy="92" r="1.6" fill="#FFFFFF" />
+
+  <!-- Twitchy Pink Nose & Mouth -->
+  <polygon points="112,106 117,105 115,110" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+  <path d="M 115 110 Q 118 115 122 112" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Long Whiskers -->
+  <line x1="116" y1="108" x2="92" y2="100" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="116" y1="111" x2="88" y2="112" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="116" y1="114" x2="94" y2="124" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Orange Carrot with Lush Green Tops on the ground -->
+  <polygon points="86,158 122,154 90,146" fill="#F97316" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Carrot ridges -->
+  <line x1="98" y1="150" x2="100" y2="156" stroke="#EA580C" stroke-width="1.4" />
+  <line x1="108" y1="151" x2="110" y2="155" stroke="#EA580C" stroke-width="1.4" />
+  <!-- Carrot green foliage -->
+  <path d="M 86 150 C 74 144 68 148 64 142 M 86 150 C 72 152 64 154 58 150 M 86 150 C 76 156 70 162 66 164" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" fill="none" />
+</svg>

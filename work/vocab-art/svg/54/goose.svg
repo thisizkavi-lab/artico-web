@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:goose" data-archetype="hero-object">
+  <defs>
+    <!-- Farm Goose: long tall upright neck, prominent orange basal knob on forehead, proud standing pose on orange webbed feet -->
+    <clipPath id="goose-body-clip">
+      <path d="M 120 106 C 120 86 146 76 186 76 C 224 76 242 98 238 136 C 234 154 206 156 164 154 C 128 152 122 132 120 106 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="168" rx="110" ry="12" fill="#EAE3D5" />
+  <ellipse cx="162" cy="166" rx="58" ry="7" fill="#DDD4C3" />
+
+  <!-- Upturned Tail Feathers -->
+  <path d="M 230 118 C 248 108 262 96 258 88 C 250 90 240 102 232 116 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Tall Sturdy Orange Legs & Large Webbed Feet -->
+  <line x1="162" y1="148" x2="160" y2="166" stroke="#FB923C" stroke-width="5" stroke-linecap="round" />
+  <line x1="162" y1="148" x2="160" y2="166" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <!-- Left Webbed Foot -->
+  <polygon points="144,168 164,164 166,170" fill="#FB923C" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <line x1="184" y1="148" x2="182" y2="166" stroke="#FB923C" stroke-width="5" stroke-linecap="round" />
+  <line x1="184" y1="148" x2="182" y2="166" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <!-- Right Webbed Foot -->
+  <polygon points="168,168 186,164 188,170" fill="#FB923C" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Pure White Heavy Body -->
+  <g clip-path="url(#goose-body-clip)">
+    <rect x="110" y="70" width="135" height="90" fill="#FFFFFF" />
+    <path d="M 125 80 Q 180 88 232 114 L 238 155 L 110 155 Z" fill="#F1F5F9" />
+    <rect x="110" y="142" width="135" height="15" fill="#E2E8F0" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 120 106 C 120 86 146 76 186 76 C 224 76 242 98 238 136 C 234 154 206 156 164 154 C 128 152 122 132 120 106 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Layered White Wing with Feather Ribs -->
+  <path d="M 140 96 C 160 88 194 92 204 118 C 204 136 180 146 154 142 C 142 134 136 110 140 96 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 154 108 Q 182 112 194 126 M 150 120 Q 178 124 188 134" stroke="#CBD5E1" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Long, Elegant, Tall Upright Neck -->
+  <path d="M 124 116 C 120 80 124 48 134 32 C 146 30 154 42 144 78 C 138 98 136 112 134 124" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Goose Head -->
+  <ellipse cx="132" cy="34" rx="14" ry="12" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Prominent Orange Basal Knob (Iconic Goose Feature) -->
+  <circle cx="120" cy="28" r="4.5" fill="#F97316" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Powerful Orange Tapered Bill -->
+  <polygon points="124,32 96,36 122,42" fill="#FB923C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <line x1="124" y1="37" x2="102" y2="37" stroke="#EA580C" stroke-width="1.6" />
+  <circle cx="114" cy="35" r="1.2" fill="#EA580C" />
+
+  <!-- Keen Alert Goose Eye -->
+  <circle cx="132" cy="32" r="3.5" fill="#38BDF8" stroke="#1E2A3B" stroke-width="1.4" />
+  <circle cx="132" cy="32" r="2" fill="#1E2A3B" />
+  <circle cx="131.2" cy="31.2" r="0.8" fill="#FFFFFF" />
+
+  <!-- Soft White Feather Crest fluff -->
+  <path d="M 136 24 Q 142 22 140 28" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>

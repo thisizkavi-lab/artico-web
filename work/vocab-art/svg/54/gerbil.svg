@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:gerbil" data-archetype="hero-object">
+  <defs>
+    <!-- Gerbil: standing upright on hind legs, sandy agouti fur, long furry tail with a tufted brush tip -->
+    <clipPath id="gerbil-body-clip">
+      <path d="M 122 84 C 122 66 148 66 156 80 C 168 100 174 130 166 156 L 118 156 C 112 134 116 102 122 84 Z" />
+    </clipPath>
+    <clipPath id="gerbil-head-clip">
+      <ellipse cx="140" cy="62" rx="18" ry="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="98" ry="12" fill="#EAE3D5" />
+  <ellipse cx="148" cy="162" rx="46" ry="8" fill="#DDD4C3" />
+
+  <!-- Long Furry Tail with Distinct Tufted Brush at Tip -->
+  <!-- Tail curve -->
+  <path d="M 162 148 C 188 154 216 148 232 134 C 242 126 248 112 242 102" fill="none" stroke="#D97706" stroke-width="7" stroke-linecap="round" />
+  <path d="M 162 148 C 188 154 216 148 232 134 C 242 126 248 112 242 102" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+  <!-- Fluffy tufted brush at tip of tail -->
+  <path d="M 242 102 C 240 92 246 84 254 84 C 258 92 256 102 248 108 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 246 98 L 252 88 M 248 102 L 254 94" stroke="#451A03" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Upright Body (Sandy Agouti Coat) -->
+  <g clip-path="url(#gerbil-body-clip)">
+    <!-- Base golden sand -->
+    <rect x="105" y="60" width="75" height="100" fill="#F59E0B" />
+    <!-- White creamy belly and chest -->
+    <ellipse cx="132" cy="118" rx="14" ry="26" fill="#FFFBEB" />
+    <!-- Flank shadow -->
+    <path d="M 152 80 Q 170 115 166 156 L 176 156 L 176 80 Z" fill="#D97706" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 124 80 C 114 102 110 134 116 156 L 168 156 C 174 130 166 98 154 78" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Hind Sitting Feet (Elongated for hopping/periscoping) -->
+  <ellipse cx="120" cy="160" rx="14" ry="6" fill="#FDE68A" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="156" cy="160" rx="14" ry="6" fill="#FDE68A" stroke="#1E2A3B" stroke-width="2.2" />
+  <line x1="110" y1="159" x2="114" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="146" y1="159" x2="150" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Cute Front Paws Folded on Chest -->
+  <ellipse cx="126" cy="106" rx="5" ry="4" fill="#FDE68A" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="134" cy="106" rx="5" ry="4" fill="#FDE68A" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Rounded Perked Ears -->
+  <circle cx="134" cy="48" r="7" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="134" cy="48" r="4" fill="#FDA4AF" />
+  <circle cx="152" cy="50" r="7" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="152" cy="50" r="4" fill="#FDA4AF" />
+
+  <!-- Gerbil Head -->
+  <g clip-path="url(#gerbil-head-clip)">
+    <ellipse cx="140" cy="62" rx="18" ry="16" fill="#F59E0B" />
+    <ellipse cx="130" cy="66" rx="8" ry="6" fill="#FFFBEB" />
+  </g>
+  <ellipse cx="140" cy="62" rx="18" ry="16" fill="none" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Big Dark Shiny Eye with White Highlight -->
+  <ellipse cx="134" cy="58" rx="4.5" ry="5" fill="#1E2A3B" />
+  <circle cx="132.5" cy="56.5" r="1.6" fill="#FFFFFF" />
+
+  <!-- Tiny Pink Nose & Whiskers -->
+  <circle cx="124" cy="66" r="2" fill="#F43F5E" />
+  <line x1="124" y1="65" x2="106" y2="60" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="124" y1="67" x2="104" y2="68" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="124" y1="69" x2="108" y2="76" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

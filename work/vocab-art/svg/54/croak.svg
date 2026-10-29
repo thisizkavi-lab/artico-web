@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:croak" data-archetype="dynamic-action">
+  <defs>
+    <!-- Croak: green frog on pond lily pad with giant inflated vocal throat sac balloon, undulating bass sound waves -->
+    <clipPath id="vocal-sac-clip">
+      <circle cx="166" cy="116" r="32" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Pond Water -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="118" ry="16" fill="#BAE6FD" />
+  <ellipse cx="152" cy="164" rx="76" ry="10" fill="#7DD3FC" />
+
+  <!-- Water Surface Ripples -->
+  <path d="M 52 164 Q 80 158 108 164 Q 136 170 164 164 Q 192 158 220 164" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Floating Green Lily Pad with Notch -->
+  <path d="M 152 166 C 96 166 60 152 64 142 C 68 132 110 128 152 128 C 194 128 238 132 242 142 C 246 150 216 162 174 164 L 152 146 Z" fill="#15803D" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 152 146 L 86 138 M 152 146 L 120 132 M 152 146 L 196 134 M 152 146 L 224 142" stroke="#16A34A" stroke-width="1.8" fill="none" />
+
+  <!-- Low-Frequency Deep Bass Undulating Sound Vibrations (Croak Waves) -->
+  <path d="M 212 90 Q 224 102 220 118 Q 216 132 224 144" fill="none" stroke="#16A34A" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M 212 90 Q 224 102 220 118 Q 216 132 224 144" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <path d="M 234 76 Q 252 94 246 118 Q 240 142 250 156" fill="none" stroke="#65A30D" stroke-width="4" stroke-linecap="round" />
+  <path d="M 234 76 Q 252 94 246 118 Q 240 142 250 156" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+
+  <path d="M 258 64 Q 280 88 274 118 Q 268 148 280 166" fill="none" stroke="#A3E635" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" />
+
+  <!-- Frog Folded Hind Legs (Powerful Thighs) -->
+  <ellipse cx="98" cy="138" rx="20" ry="12" transform="rotate(-20 98 138)" fill="#16A34A" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="92" cy="148" rx="14" ry="5" fill="#22C55E" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Frog Body (Hunched forward while croaking) -->
+  <path d="M 98 134 C 92 106 114 88 144 88 C 160 88 174 96 178 112 C 172 136 142 148 112 146 Z" fill="#22C55E" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Dark green spots on back -->
+  <circle cx="116" cy="104" r="3.5" fill="#14532D" />
+  <circle cx="132" cy="98" r="4" fill="#14532D" />
+  <circle cx="128" cy="116" r="3" fill="#14532D" />
+
+  <!-- Front Webbed Foot Planted on Lily Pad -->
+  <path d="M 134 130 L 132 146" stroke="#22C55E" stroke-width="6" stroke-linecap="round" />
+  <path d="M 134 130 L 132 146" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <circle cx="126" cy="147" r="2.5" fill="#4ADE80" stroke="#1E2A3B" stroke-width="1.4" />
+  <circle cx="132" cy="149" r="2.5" fill="#4ADE80" stroke="#1E2A3B" stroke-width="1.4" />
+  <circle cx="138" cy="147" r="2.5" fill="#4ADE80" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Giant Inflated Vocal Throat Sac (The Star of Croak!) -->
+  <g clip-path="url(#vocal-sac-clip)">
+    <!-- Translucent Pale Yellow-Green Balloon -->
+    <circle cx="166" cy="116" r="32" fill="#FEF08A" />
+    <ellipse cx="166" cy="116" rx="28" ry="28" fill="#FACC15" opacity="0.6" />
+    <!-- Stretched skin vascular lines -->
+    <path d="M 148 104 Q 166 116 182 106 M 146 118 Q 166 128 186 118 M 150 130 Q 166 138 180 130" stroke="#EAB308" stroke-width="2" fill="none" opacity="0.7" />
+    <!-- Giant balloon shine highlight -->
+    <ellipse cx="178" cy="106" rx="8" ry="12" transform="rotate(25 178 106)" fill="#FFFFFF" opacity="0.8" />
+  </g>
+  <circle cx="166" cy="116" r="32" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Frog Head & Eyes -->
+  <path d="M 136 92 C 132 78 148 70 162 76 C 176 82 180 94 176 102 Z" fill="#22C55E" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Giant Golden Bulging Frog Eyes on top of head -->
+  <!-- Left Eye -->
+  <circle cx="140" cy="74" r="9" fill="#22C55E" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="140" cy="74" r="6" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="140" cy="74" rx="4.5" ry="2" fill="#1E2A3B" />
+  <circle cx="138" cy="72" r="1.3" fill="#FFFFFF" />
+
+  <!-- Right Eye -->
+  <circle cx="160" cy="78" r="9" fill="#22C55E" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="160" cy="78" r="6" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="160" cy="78" rx="4.5" ry="2" fill="#1E2A3B" />
+  <circle cx="158" cy="76" r="1.3" fill="#FFFFFF" />
+
+  <!-- Mouth Line (Tightly clamped around inflated sac) -->
+  <path d="M 144 98 Q 164 102 184 94" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" />
+</svg>

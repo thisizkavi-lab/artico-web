@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:legs" data-archetype="part-of-whole">
+  <defs>
+    <!-- Animal Legs: athletic quadruped legs with knees, hocks, ankles, and hooves in glowing focus halo -->
+    <clipPath id="legs-focus-clip">
+      <ellipse cx="152" cy="138" rx="100" ry="46" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Focus Spotlight Halo Highlighting the Four Legs -->
+  <ellipse cx="152" cy="138" rx="104" ry="44" fill="#FEF3C7" opacity="0.6" />
+  <ellipse cx="152" cy="138" rx="104" ry="44" fill="none" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="6 4" />
+
+  <!-- Ghosted / Subdued Animal Torso & Head Above -->
+  <path d="M 96 82 C 96 66 128 64 168 68 C 206 70 228 82 226 104 L 96 104 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+  <!-- Ghosted neck & head -->
+  <path d="M 98 82 L 80 52 C 72 62 70 74 80 82 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.8" />
+  <!-- Ghosted tail -->
+  <path d="M 226 84 C 238 92 244 104 240 114" stroke="#94A3B8" stroke-width="3" fill="none" />
+
+  <!-- Hero Animal Legs (Four Defined Athletic Limbs) -->
+  <!-- Left Foreleg (Far) -->
+  <path d="M 126 102 L 130 134 L 128 160 L 138 160 L 140 134 L 138 102 Z" fill="#92400E" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <rect x="128" y="156" width="10" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Left Hindleg (Far) -->
+  <path d="M 204 102 L 208 128 L 202 160 L 212 160 L 218 128 L 216 102 Z" fill="#92400E" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <rect x="202" y="156" width="10" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Right Foreleg (Near, in crisp focus) -->
+  <path d="M 108 98 L 106 124 L 110 144 L 108 162 L 122 162 L 122 144 L 120 124 L 122 98 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Knee Joint Bulge -->
+  <circle cx="114" cy="126" r="7" fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" />
+  <!-- White ankle sock -->
+  <rect x="108" y="152" width="14" height="6" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Dark Hoof -->
+  <rect x="108" y="158" width="14" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Right Hindleg (Near, in crisp focus, showing muscular thigh and hock) -->
+  <path d="M 186 98 C 196 104 200 114 196 126 L 188 144 L 186 162 L 200 162 L 200 144 L 208 124 C 210 112 204 102 198 98 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Hock Joint Angle (Elbow of rear leg) -->
+  <circle cx="198" cy="126" r="6" fill="#D97706" stroke="#1E2A3B" stroke-width="1.8" />
+  <!-- White ankle sock -->
+  <rect x="186" y="152" width="14" height="6" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.6" />
+  <!-- Dark Hoof -->
+  <rect x="186" y="158" width="14" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Joint Anatomy Callout Rings -->
+  <circle cx="114" cy="126" r="10" fill="none" stroke="#F59E0B" stroke-width="1.4" stroke-dasharray="2 2" />
+  <circle cx="198" cy="126" r="10" fill="none" stroke="#F59E0B" stroke-width="1.4" stroke-dasharray="2 2" />
+</svg>

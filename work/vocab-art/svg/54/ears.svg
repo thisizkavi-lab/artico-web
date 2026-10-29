@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:ears" data-archetype="part-of-whole">
+  <defs>
+    <!-- Animal Ears: expressive perked-up furry ears in golden focus halo, sound listening waves -->
+    <clipPath id="ears-focus-clip">
+      <circle cx="152" cy="74" r="64" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="172" rx="100" ry="12" fill="#EAE3D5" />
+
+  <!-- Focus Halo Highlighting the Animal Ears -->
+  <circle cx="152" cy="74" r="68" fill="#FEF3C7" opacity="0.6" />
+  <circle cx="152" cy="74" r="68" fill="none" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="6 4" />
+
+  <!-- Acoustic Sound Listening Waves Concentrating into Ears -->
+  <path d="M 72 44 Q 84 56 82 72" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-linecap="round" />
+  <path d="M 62 38 Q 78 54 74 76" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" />
+
+  <path d="M 232 44 Q 220 56 222 72" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-linecap="round" />
+  <path d="M 242 38 Q 226 54 230 76" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Ghosted / Subdued Animal Head Silhouette Below -->
+  <ellipse cx="152" cy="144" rx="42" ry="34" fill="#CBD5E1" stroke="#94A3B8" stroke-width="2" />
+  <!-- Muzzle & nose in subdued outline -->
+  <ellipse cx="152" cy="156" rx="20" ry="14" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.6" />
+  <circle cx="152" cy="152" r="4" fill="#64748B" />
+  <!-- Eyes looking up attentively -->
+  <ellipse cx="138" cy="138" rx="4" ry="5" fill="#64748B" />
+  <ellipse cx="166" cy="138" rx="4" ry="5" fill="#64748B" />
+
+  <!-- Left Upright Perked Ear (Hero Focus) -->
+  <path d="M 126 120 L 102 36 C 100 28 112 24 118 30 L 144 112 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Left Inner Ear Pink Flap -->
+  <path d="M 124 112 L 108 42 C 106 38 114 36 118 40 L 138 106 Z" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round" />
+  <!-- Inner ear fur tufts -->
+  <path d="M 112 60 Q 124 64 122 72 M 116 76 Q 128 80 126 88" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Right Upright Perked Ear (Hero Focus) -->
+  <path d="M 178 120 L 202 36 C 204 28 192 24 186 30 L 160 112 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Right Inner Ear Pink Flap -->
+  <path d="M 180 112 L 196 42 C 198 38 190 36 186 40 L 166 106 Z" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round" />
+  <!-- Inner ear fur tufts -->
+  <path d="M 192 60 Q 180 64 182 72 M 188 76 Q 176 80 178 88" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Ear Base Fur Tufts on Crown of Head -->
+  <path d="M 136 116 Q 152 110 168 116" stroke="#D97706" stroke-width="3" fill="none" stroke-linecap="round" />
+</svg>

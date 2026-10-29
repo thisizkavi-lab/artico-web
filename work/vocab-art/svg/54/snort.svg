@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:snort" data-archetype="dynamic-action">
+  <defs>
+    <!-- Bull / Horse Snorting: wide flared nostrils violently expelling turbulent steam jets, shaking head vibration lines -->
+    <clipPath id="snort-cloud-clip">
+      <ellipse cx="64" cy="138" rx="36" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Violent Jet of Steam Puffs Blasting Forward from Nostrils (Snort Vapor!) -->
+  <!-- Left Steam Puff Stream -->
+  <path d="M 94 116 C 80 114 62 120 54 130 C 44 142 54 156 70 154 C 84 152 96 142 96 132" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+  <circle cx="56" cy="136" r="10" fill="#F1F5F9" />
+  <circle cx="44" cy="144" r="8" fill="#F1F5F9" />
+  <circle cx="68" cy="146" r="9" fill="#F1F5F9" />
+
+  <!-- Steam blast lines -->
+  <line x1="102" y1="120" x2="74" y2="128" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <line x1="98" y1="128" x2="68" y2="140" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" />
+  <line x1="94" y1="134" x2="76" y2="150" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Snort Vibration Head Shake Marks -->
+  <path d="M 124 44 Q 118 40 120 34" fill="none" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 132 40 Q 128 34 132 28" fill="none" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 144 40 Q 142 34 146 28" fill="none" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+
+  <!-- Powerful Muscular Bull / Steer Torso (Right side) -->
+  <path d="M 148 76 C 160 58 190 56 226 66 C 254 74 270 96 264 142 L 172 152 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Muscular shoulder highlight -->
+  <ellipse cx="186" cy="88" rx="26" ry="20" fill="#57534E" />
+
+  <!-- Strong Foreleg Planted -->
+  <path d="M 166 126 L 164 162 L 180 162 L 184 132 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="164" y="156" width="16" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Strong Forward Horn (Sharp Curved) -->
+  <path d="M 132 50 C 122 32 104 32 94 40 C 102 44 116 52 122 60 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Bull Head Tilted Aggressively (Snorting Posture) -->
+  <path d="M 148 64 C 140 46 122 48 112 56 C 100 66 98 84 108 98 C 118 110 140 108 152 94 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Fierce Alert Snorting Eye with Wrinkled Brow -->
+  <circle cx="124" cy="74" r="5.5" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="122.5" cy="72.5" r="1.4" fill="#FFFFFF" />
+  <!-- Angry brow wrinkles -->
+  <path d="M 116 66 Q 124 64 130 68" stroke="#1C1917" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 118 70 Q 124 68 128 72" stroke="#1C1917" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Huge Flared Moist Snorting Muzzle (Hero Action Center) -->
+  <ellipse cx="106" cy="106" rx="18" ry="14" fill="#292524" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Wide Flared Nostril Expelling Air Forcefully -->
+  <ellipse cx="98" cy="106" rx="6" ry="8" transform="rotate(-15 98 106)" fill="#0C0A09" stroke="#1E2A3B" stroke-width="1.8" />
+  <!-- Red mucous membrane inside flared nostril -->
+  <ellipse cx="99" cy="106" rx="3.5" ry="5" transform="rotate(-15 99 106)" fill="#7F1D1D" />
+
+  <!-- Brass Septum Ring Shaking from the Snort Blast -->
+  <ellipse cx="94" cy="118" rx="6" ry="8" fill="none" stroke="#FACC15" stroke-width="2.6" />
+  <ellipse cx="94" cy="118" rx="6" ry="8" fill="none" stroke="#1E2A3B" stroke-width="1.2" />
+</svg>

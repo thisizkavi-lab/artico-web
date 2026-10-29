@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:tail (animal)" data-archetype="part-of-whole">
+  <defs>
+    <!-- Animal Tail: fluffy golden tail wagging with motion arcs in focus halo ring, ghosted dog hindquarters -->
+    <clipPath id="tail-focus-clip">
+      <circle cx="184" cy="92" r="68" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Focus Spotlight Halo Highlighting the Wagging Tail -->
+  <circle cx="188" cy="94" r="70" fill="#FEF3C7" opacity="0.6" />
+  <circle cx="188" cy="94" r="70" fill="none" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="6 4" />
+
+  <!-- Wagging Tail Dynamic Motion Arcs -->
+  <path d="M 234 46 C 252 58 260 76 254 94" fill="none" stroke="#CBD5E1" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 244 54 C 260 66 268 84 262 102" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+  <path d="M 188 32 C 204 36 218 44 228 54" fill="none" stroke="#CBD5E1" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Ghosted / Subdued Animal Hindquarters (Dog Back & Legs) -->
+  <path d="M 72 108 C 72 90 94 88 126 94 C 152 98 168 112 164 140 C 160 156 138 158 116 156 L 72 156 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" stroke-linejoin="round" />
+  <ellipse cx="140" cy="138" rx="16" ry="18" fill="#CBD5E1" />
+  <rect x="130" y="148" width="14" height="14" fill="#94A3B8" rx="3" />
+
+  <!-- Hero Magnificent Fluffy Golden Tail (Arching Up and Plumed) -->
+  <!-- Base Tail Curve -->
+  <path d="M 152 110 C 176 102 206 90 226 72 C 242 56 248 38 238 28 C 224 22 206 36 190 56 C 172 78 158 98 144 114 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Tail Feathering / Plumed Fur Fringe Along Underside and Top -->
+  <!-- White creamy tip of tail -->
+  <path d="M 226 40 C 236 32 244 32 238 28 C 224 22 216 28 208 38 Z" fill="#FFFBEB" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Fluffy tufts along spine of tail -->
+  <path d="M 160 98 Q 166 84 174 86 M 176 82 Q 184 68 192 72 M 194 66 Q 204 52 212 56 M 214 50 Q 224 38 232 42" stroke="#D97706" stroke-width="2.8" stroke-linecap="round" fill="none" />
+
+  <!-- Plumed soft under-fringe -->
+  <path d="M 154 114 Q 166 116 170 108 M 172 106 Q 186 106 188 96 M 190 94 Q 206 92 208 80 M 210 78 Q 226 72 226 60" stroke="#FDE68A" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 154 114 Q 166 116 170 108 M 172 106 Q 186 106 188 96 M 190 94 Q 206 92 208 80 M 210 78 Q 226 72 226 60" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+
+  <!-- Golden Fur Shading Band -->
+  <path d="M 162 104 C 182 96 204 82 220 64" stroke="#B45309" stroke-width="3.5" fill="none" stroke-linecap="round" />
+</svg>

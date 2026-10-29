@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:horse" data-archetype="hero-object">
+  <defs>
+    <!-- Horse: athletic chestnut coat, flowing dark mane, long silky tail, alert ears, white forehead star -->
+    <clipPath id="horse-body-clip">
+      <path d="M 104 84 C 104 66 136 64 176 68 C 214 70 236 84 234 130 C 230 148 206 150 168 148 C 124 146 106 118 104 84 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="164" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Long Flowing Silky Tail -->
+  <path d="M 232 104 C 248 116 256 138 252 160 C 248 162 242 160 240 152 C 238 136 234 120 228 112 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 246 122 Q 252 140 248 156" stroke="#44403C" stroke-width="1.8" fill="none" />
+
+  <!-- Muscular Athletic Hind Legs & Hooves (with white sock) -->
+  <path d="M 200 120 L 198 162 L 210 162 L 218 126 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- White ankle sock -->
+  <rect x="198" y="152" width="12" height="6" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.4" />
+  <!-- Hoof -->
+  <rect x="198" y="158" width="12" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <path d="M 216 122 L 220 160 L 228 160 L 232 128 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="220" y="156" width="8" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Front Legs & Hooves -->
+  <path d="M 114 110 L 112 162 L 124 162 L 128 116 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- White ankle sock -->
+  <rect x="112" y="152" width="12" height="6" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.4" />
+  <!-- Hoof -->
+  <rect x="112" y="158" width="12" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <path d="M 126 114 L 130 160 L 140 160 L 142 118 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="130" y="156" width="10" height="4" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Horse Body (Glossy Rich Chestnut) -->
+  <g clip-path="url(#horse-body-clip)">
+    <!-- Base Warm Chestnut -->
+    <rect x="95" y="60" width="145" height="95" fill="#B45309" />
+    <!-- Glossy shoulder and flank highlight -->
+    <ellipse cx="140" cy="88" rx="26" ry="18" fill="#D97706" />
+    <ellipse cx="200" cy="94" rx="22" ry="16" fill="#D97706" />
+    <!-- Lower body shadow tone -->
+    <rect x="95" y="140" width="145" height="15" fill="#78350F" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 104 84 C 104 66 136 64 176 68 C 214 70 236 84 234 130 C 230 148 206 150 168 148 C 124 146 106 118 104 84 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Arched Muscular Neck & Flowing Mane -->
+  <!-- Neck -->
+  <path d="M 106 86 C 104 62 108 44 118 36 C 126 34 134 46 128 72 C 126 86 126 98 126 108" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Flowing Dark Mane -->
+  <path d="M 120 36 C 128 42 138 52 136 74 C 134 90 128 102 124 110 L 120 106 C 126 92 130 80 128 66 C 126 50 118 42 116 38 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 118 48 Q 126 58 122 76 M 122 62 Q 130 72 126 92" stroke="#44403C" stroke-width="1.8" fill="none" />
+
+  <!-- Compact Alert Pricked Ears (Horse Proportions) -->
+  <polygon points="106,36 102,22 110,26" fill="#B45309" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="105,34 103,24 108,27" fill="#FDA4AF" />
+  <polygon points="114,38 116,24 122,30" fill="#B45309" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Noble Head -->
+  <path d="M 110 40 C 102 34 88 40 76 52 C 64 64 62 76 72 84 C 84 90 98 86 106 72 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- White Star / Blaze on Forehead -->
+  <polygon points="92,48 94,54 90,58 86,52" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.2" stroke-linejoin="round" />
+
+  <!-- Large Intelligent Eye -->
+  <circle cx="94" cy="56" r="4.5" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="92.5" cy="54.5" r="1.4" fill="#FFFFFF" />
+
+  <!-- Tapered Muzzle with Flared Nostril -->
+  <ellipse cx="70" cy="76" rx="9" ry="8" fill="#78350F" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Nostril -->
+  <ellipse cx="68" cy="74" rx="2.2" ry="3" fill="#1C1917" />
+  <path d="M 68 80 Q 72 82 76 78" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+</svg>

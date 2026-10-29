@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:ferret" data-archetype="hero-object">
+  <defs>
+    <!-- Domestic pet ferret: long elongated slinky arched body, bandit eye mask, curious face -->
+    <clipPath id="ferret-body-clip">
+      <path d="M 94 136 C 88 106 120 78 174 84 C 218 88 238 116 232 144 C 224 154 194 150 170 144 C 130 134 104 146 94 136 Z" />
+    </clipPath>
+    <clipPath id="ferret-head-clip">
+      <ellipse cx="88" cy="116" rx="22" ry="18" transform="rotate(-15 88 116)" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="162" cy="162" rx="64" ry="9" fill="#DDD4C3" />
+
+  <!-- Long Furry Tapered Tail -->
+  <path d="M 230 138 C 248 140 262 134 266 122 C 268 112 258 110 252 116 C 244 124 236 130 224 132" stroke="#475569" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 230 138 C 248 140 262 134 266 122 C 268 112 258 110 252 116 C 244 124 236 130 224 132" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Back Hind Legs (Short, sturdy) -->
+  <ellipse cx="218" cy="148" rx="12" ry="16" fill="#334155" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="222" cy="160" rx="8" ry="5" fill="#475569" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Slinky Elongated Body -->
+  <g clip-path="url(#ferret-body-clip)">
+    <!-- Base sable/grey-brown fur -->
+    <rect x="80" y="70" width="170" height="90" fill="#64748B" />
+    <!-- Creamy beige undercoat highlight on top arch -->
+    <path d="M 110 82 Q 170 76 220 96 L 220 120 Q 170 94 110 98 Z" fill="#F1F5F9" opacity="0.6" />
+    <!-- Darker sable saddle and belly -->
+    <path d="M 120 124 Q 170 120 216 136 L 224 160 L 100 160 Z" fill="#334155" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 94 136 C 88 106 120 78 174 84 C 218 88 238 116 232 144 C 224 154 194 150 170 144 C 130 134 104 146 94 136 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Front Little Legs -->
+  <ellipse cx="116" cy="150" rx="9" ry="14" fill="#334155" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="114" cy="160" rx="7" ry="5" fill="#475569" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Rounded Little Ears -->
+  <circle cx="98" cy="98" r="7" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="98" cy="98" r="4" fill="#F472B6" />
+  <circle cx="82" cy="96" r="6" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="82" cy="96" r="3.5" fill="#F472B6" />
+
+  <!-- Ferret Head -->
+  <g clip-path="url(#ferret-head-clip)">
+    <!-- Cream/white head base -->
+    <rect x="60" y="90" width="60" height="50" fill="#F8FAFC" />
+    <!-- Classic dark sable bandit mask across eyes -->
+    <path d="M 66 112 Q 90 106 108 118 L 106 128 Q 88 120 66 122 Z" fill="#1E293B" />
+  </g>
+  <ellipse cx="88" cy="116" rx="22" ry="18" transform="rotate(-15 88 116)" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Dark Eyes with Twinkle -->
+  <circle cx="82" cy="116" r="3.5" fill="#0F172A" />
+  <circle cx="81" cy="115" r="1.2" fill="#FFFFFF" />
+
+  <circle cx="96" cy="118" r="3.5" fill="#0F172A" />
+  <circle cx="95" cy="117" r="1.2" fill="#FFFFFF" />
+
+  <!-- Cute Pink Snout and Whiskers -->
+  <polygon points="66,122 72,120 71,125" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+  <path d="M 70 125 Q 73 129 76 126" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Whiskers -->
+  <line x1="68" y1="121" x2="48" y2="116" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="68" y1="124" x2="46" y2="126" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="68" y1="127" x2="52" y2="134" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:basket" data-archetype="hero-object">
+  <defs>
+    <!-- Woven wicker pet sleeping basket bed with plush cushion and fleece blanket -->
+    <clipPath id="basket-pillow-clip">
+      <ellipse cx="152" cy="120" rx="92" ry="34" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Rear Woven Rim of Basket -->
+  <ellipse cx="152" cy="98" rx="100" ry="32" fill="#B45309" stroke="#1E2A3B" stroke-width="2.6" />
+  <ellipse cx="152" cy="98" rx="94" ry="28" fill="#78350F" />
+
+  <!-- Plush Padded Pillow / Cushion Inside Basket -->
+  <g clip-path="url(#basket-pillow-clip)">
+    <!-- Base Warm Cream Cushion -->
+    <rect x="50" y="80" width="204" height="80" fill="#FEF3C7" />
+    <!-- Quilted tufting dimples -->
+    <circle cx="120" cy="116" r="3.5" fill="#F59E0B" />
+    <circle cx="152" cy="118" r="3.5" fill="#F59E0B" />
+    <circle cx="184" cy="116" r="3.5" fill="#F59E0B" />
+    <circle cx="136" cy="128" r="3" fill="#F59E0B" />
+    <circle cx="168" cy="128" r="3" fill="#F59E0B" />
+    <!-- Tufting crease lines -->
+    <path d="M 116 114 Q 120 116 124 118 M 148 116 Q 152 118 156 120 M 180 114 Q 184 116 188 118" stroke="#D97706" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  </g>
+  <ellipse cx="152" cy="120" rx="92" ry="34" fill="none" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Cozy Plaid Blanket Draped over Rim -->
+  <path d="M 76 114 C 76 138 88 152 98 152 C 108 152 112 134 112 118 Z" fill="#EF4444" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <line x1="84" y1="120" x2="104" y2="148" stroke="#FEE2E2" stroke-width="2.2" />
+  <line x1="80" y1="138" x2="108" y2="128" stroke="#FEE2E2" stroke-width="2.2" />
+
+  <!-- Front Wicker Basket Wall (with lowered step-in entrance dip) -->
+  <path d="M 52 98 C 50 134 84 162 152 162 C 220 162 254 134 252 98 C 248 118 226 128 194 130 C 182 138 168 140 152 140 C 136 140 122 138 110 130 C 78 128 56 118 52 98 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Wicker Weave Texture Hatching on Front Wall -->
+  <!-- Horizontal woven cane strands -->
+  <path d="M 60 116 Q 152 148 244 116" fill="none" stroke="#B45309" stroke-width="2.2" />
+  <path d="M 68 132 Q 152 154 236 132" fill="none" stroke="#B45309" stroke-width="2.2" />
+  <path d="M 84 148 Q 152 160 220 148" fill="none" stroke="#B45309" stroke-width="2.2" />
+
+  <!-- Vertical cross stakes -->
+  <line x1="82" y1="110" x2="90" y2="150" stroke="#78350F" stroke-width="2" />
+  <line x1="106" y1="120" x2="114" y2="155" stroke="#78350F" stroke-width="2" />
+  <line x1="134" y1="138" x2="136" y2="159" stroke="#78350F" stroke-width="2" />
+  <line x1="168" y1="138" x2="166" y2="159" stroke="#78350F" stroke-width="2" />
+  <line x1="196" y1="120" x2="190" y2="155" stroke="#78350F" stroke-width="2" />
+  <line x1="222" y1="110" x2="214" y2="150" stroke="#78350F" stroke-width="2" />
+
+  <!-- Braided Wicker Rim Trim -->
+  <path d="M 52 98 C 74 118 106 128 136 138 C 146 141 158 141 168 138 C 198 128 230 118 252 98" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" />
+  <path d="M 52 98 C 74 118 106 128 136 138 C 146 141 158 141 168 138 C 198 128 230 118 252 98" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Little Plush Bone Toy Resting in Basket -->
+  <path d="M 172 130 C 168 124 162 124 162 128 C 162 132 166 134 164 136 C 162 138 158 138 158 142 C 158 146 164 146 168 142 C 172 146 178 146 178 142 C 178 138 174 138 176 136 C 178 134 182 132 182 128 C 182 124 176 124 172 130 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+</svg>

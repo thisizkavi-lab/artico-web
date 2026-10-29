@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:parrot" data-archetype="hero-object">
+  <defs>
+    <!-- Scarlet Macaw parrot: hooked beak, white bare eye patch, bright red/yellow/blue plumage, long tail -->
+    <clipPath id="parrot-body-clip">
+      <path d="M 126 54 C 146 44 172 54 174 84 C 176 116 160 142 142 142 C 124 142 118 120 120 86 Z" />
+    </clipPath>
+    <clipPath id="parrot-wing-clip">
+      <path d="M 126 80 C 144 74 164 84 164 108 C 164 130 144 146 128 140 C 120 134 118 96 126 80 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="172" rx="94" ry="12" fill="#EAE3D5" />
+  <ellipse cx="152" cy="170" rx="44" ry="7" fill="#DDD4C3" />
+
+  <!-- Brass Perch Ring / Bar -->
+  <path d="M 152 24 C 196 24 228 64 228 116 C 228 148 214 164 198 164" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" />
+  <path d="M 152 24 C 196 24 228 64 228 116 C 228 148 214 164 198 164" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+  <!-- Horizontal wooden crossbar -->
+  <rect x="94" y="132" width="124" height="10" rx="4" fill="#D97706" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Long Dramatic Tail Feathers (Scarlet & Deep Blue) -->
+  <path d="M 130 136 L 98 178 L 112 180 L 140 142 Z" fill="#EF4444" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 124 138 L 104 182 L 114 182 L 134 142 Z" fill="#2563EB" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Parrot Body -->
+  <g clip-path="url(#parrot-body-clip)">
+    <!-- Base vibrant scarlet red -->
+    <rect x="110" y="44" width="75" height="105" fill="#EF4444" />
+    <!-- Golden breast tone -->
+    <ellipse cx="160" cy="98" rx="18" ry="32" fill="#DC2626" />
+    <!-- Lower body shadow -->
+    <ellipse cx="140" cy="140" rx="28" ry="10" fill="#991B1B" />
+  </g>
+  <!-- Body Outline -->
+  <path d="M 126 54 C 146 44 172 54 174 84 C 176 116 160 142 142 142 C 124 142 118 120 120 86 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Multicolored Layered Wing (Red -> Yellow -> Blue) -->
+  <g clip-path="url(#parrot-wing-clip)">
+    <!-- Base deep blue bottom feathers -->
+    <rect x="115" y="70" width="60" height="80" fill="#2563EB" />
+    <!-- Middle bright yellow band -->
+    <path d="M 115 88 Q 148 84 170 102 L 170 118 Q 146 102 115 106 Z" fill="#FACC15" />
+    <!-- Top shoulder red -->
+    <path d="M 115 70 Q 150 72 170 96 L 170 88 Q 146 72 115 76 Z" fill="#EF4444" />
+    <!-- Flight feather split strokes -->
+    <line x1="130" y1="120" x2="148" y2="136" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" />
+    <line x1="124" y1="128" x2="140" y2="142" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <path d="M 126 80 C 144 74 164 84 164 108 C 164 130 144 146 128 140 C 120 134 118 96 126 80 Z" fill="none" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Zygodactyl Parrot Feet Clasping Perch (2 toes forward, 2 back) -->
+  <ellipse cx="144" cy="132" rx="6" ry="4" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="158" cy="132" rx="6" ry="4" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- White Bare Facial Skin Patch -->
+  <path d="M 152 56 C 166 54 176 62 174 74 C 172 82 158 84 150 78 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  <!-- Delicate skin wrinkle lines -->
+  <path d="M 156 68 Q 164 70 168 76" stroke="#E2E8F0" stroke-width="1.2" fill="none" />
+
+  <!-- Dark Intelligent Parrot Eye -->
+  <circle cx="162" cy="66" r="4" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.4" />
+  <circle cx="162" cy="66" r="2.4" fill="#1E2A3B" />
+  <circle cx="161.2" cy="65.2" r="0.9" fill="#FFFFFF" />
+
+  <!-- Massive Curved Hooked Beak -->
+  <!-- Upper ivory hooked mandible -->
+  <path d="M 168 62 C 182 62 196 74 192 92 C 188 92 182 86 172 80 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 186 80 C 190 86 192 92 192 92 C 188 92 186 88 186 80 Z" fill="#1E2A3B" />
+  <!-- Lower dark mandible -->
+  <path d="M 172 80 C 178 84 184 86 182 90 C 176 90 170 86 168 82 Z" fill="#334155" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Head Feather Crest Curve -->
+  <path d="M 134 50 Q 146 42 160 48" stroke="#EF4444" stroke-width="3" stroke-linecap="round" fill="none" />
+</svg>

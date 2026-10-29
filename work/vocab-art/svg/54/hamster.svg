@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:hamster" data-archetype="hero-object">
+  <defs>
+    <!-- Chubby round hamster: puffed stuffed cheek pouches, holding a striped sunflower seed, tiny ears -->
+    <clipPath id="hamster-body-clip">
+      <ellipse cx="152" cy="116" rx="42" ry="46" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="88" ry="12" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="46" ry="7" fill="#DDD4C3" />
+
+  <!-- Tiny Rounded Ears -->
+  <circle cx="126" cy="68" r="10" fill="#D97706" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="126" cy="68" r="6" fill="#FDA4AF" />
+  <circle cx="178" cy="68" r="10" fill="#D97706" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="178" cy="68" r="6" fill="#FDA4AF" />
+
+  <!-- Hamster Round Body with Chubby Stuffed Cheeks -->
+  <g clip-path="url(#hamster-body-clip)">
+    <!-- Base Golden Brown Fur -->
+    <rect x="100" y="60" width="105" height="110" fill="#F59E0B" />
+    <!-- White tummy & bib -->
+    <ellipse cx="152" cy="126" rx="28" ry="34" fill="#FFFBEB" />
+    <!-- Flank brown stripes/arcs -->
+    <path d="M 112 100 Q 124 116 116 142" stroke="#B45309" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 192 100 Q 180 116 188 142" stroke="#B45309" stroke-width="4" stroke-linecap="round" fill="none" />
+    <!-- Lower shadow -->
+    <ellipse cx="152" cy="160" rx="36" ry="10" fill="#D97706" />
+  </g>
+  <!-- Body Outline with Cheek Bulges -->
+  <path d="M 132 74 C 112 74 114 96 112 112 C 108 128 120 158 136 162 L 168 162 C 184 158 196 128 192 112 C 190 96 192 74 172 74 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Tiny Pink Hind Feet -->
+  <ellipse cx="132" cy="164" rx="8" ry="4" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="172" cy="164" rx="8" ry="4" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Striped Sunflower Seed held in front -->
+  <path d="M 152 114 C 142 124 142 142 152 146 C 162 142 162 124 152 114 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 152 116 L 152 144 M 147 122 Q 146 132 149 142 M 157 122 Q 158 132 155 142" stroke="#94A3B8" stroke-width="1.6" fill="none" stroke-linecap="round" />
+
+  <!-- Tiny Cute Front Paws Grasping Seed -->
+  <circle cx="143" cy="132" r="5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="161" cy="132" r="5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Dark Twinkling Hamster Eyes -->
+  <ellipse cx="134" cy="94" rx="4.5" ry="5.5" fill="#1E2A3B" />
+  <circle cx="132.5" cy="92.5" r="1.6" fill="#FFFFFF" />
+
+  <ellipse cx="170" cy="94" rx="4.5" ry="5.5" fill="#1E2A3B" />
+  <circle cx="168.5" cy="92.5" r="1.6" fill="#FFFFFF" />
+
+  <!-- Tiny Pink Nose & Twitchy Mouth -->
+  <circle cx="152" cy="101" r="2.5" fill="#F43F5E" />
+  <path d="M 148 106 Q 152 109 152 104 Q 152 109 156 106" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Whiskers -->
+  <line x1="138" y1="102" x2="114" y2="98" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="138" y1="106" x2="112" y2="108" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="166" y1="102" x2="190" y2="98" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="166" y1="106" x2="192" y2="108" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

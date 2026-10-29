@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:fur" data-archetype="part-of-whole">
+  <defs>
+    <!-- Animal Fur: macro close-up of thick plush pelage with gentle grooming brush parting soft fibers -->
+    <clipPath id="fur-swatch-clip">
+      <rect x="42" y="32" width="220" height="128" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="170" rx="114" ry="12" fill="#EAE3D5" />
+
+  <!-- Macro Fur Swatch Frame -->
+  <g clip-path="url(#fur-swatch-clip)">
+    <!-- Deep base undercoat (Warm chocolate brown) -->
+    <rect x="40" y="30" width="224" height="132" fill="#78350F" />
+
+    <!-- Flowing Layers of Soft Fur Guard Hairs (Golden Amber, Tawny, Cream) -->
+    <!-- Layer 1 -->
+    <path d="M 40 30 Q 152 70 264 30 L 264 70 Q 152 110 40 70 Z" fill="#92400E" />
+    <!-- Layer 2 -->
+    <path d="M 40 60 Q 152 100 264 60 L 264 100 Q 152 140 40 100 Z" fill="#B45309" />
+    <!-- Layer 3 -->
+    <path d="M 40 90 Q 152 130 264 90 L 264 130 Q 152 170 40 130 Z" fill="#D97706" />
+    <!-- Layer 4 -->
+    <path d="M 40 120 Q 152 160 264 120 L 264 164 L 40 164 Z" fill="#F59E0B" />
+
+    <!-- Fine Hair Strands & Soft Tufts (Individual Fiber Strokes) -->
+    <!-- Top Row Strands -->
+    <path d="M 60 40 Q 80 70 70 94 M 90 36 Q 110 66 102 96 M 120 42 Q 140 72 134 100 M 150 38 Q 170 68 162 98 M 180 40 Q 200 70 194 100 M 210 36 Q 230 66 222 96" stroke="#FDE68A" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+    <!-- Middle Row Strands -->
+    <path d="M 74 70 Q 94 100 86 124 M 104 66 Q 124 96 118 126 M 134 72 Q 154 102 148 130 M 164 68 Q 184 98 178 128 M 194 70 Q 214 100 208 130 M 224 66 Q 244 96 238 126" stroke="#FEF3C7" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Bottom Row Silky Highlights -->
+    <path d="M 88 100 Q 108 130 102 154 M 118 96 Q 138 126 132 156 M 148 102 Q 168 132 162 160 M 178 98 Q 198 128 192 158 M 208 100 Q 228 130 224 160" stroke="#FFFBEB" stroke-width="2.4" stroke-linecap="round" fill="none" />
+
+    <!-- Silky Sheen Sweep Glow across center -->
+    <path d="M 50 100 Q 152 135 254 90" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.4" />
+  </g>
+
+  <!-- Swatch Outer Frame Contour -->
+  <rect x="42" y="32" width="220" height="128" rx="16" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Wooden Pet Grooming Slicker Brush Gently Combing Fur -->
+  <!-- Brush Handle -->
+  <path d="M 230 40 L 268 18 C 272 16 276 20 274 24 L 246 56 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Brush Head Backing -->
+  <rect x="188" y="38" width="56" height="34" rx="6" transform="rotate(-25 216 55)" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Wire Tines / Bristles combing through fur fibers -->
+  <g stroke="#CBD5E1" stroke-width="1.6" stroke-linecap="round">
+    <line x1="184" y1="62" x2="176" y2="76" />
+    <line x1="192" y1="66" x2="184" y2="80" />
+    <line x1="200" y1="70" x2="192" y2="84" />
+    <line x1="208" y1="74" x2="200" y2="88" />
+  </g>
+</svg>

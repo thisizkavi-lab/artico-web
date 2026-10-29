@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:doghouse" data-archetype="hero-object">
+  <defs>
+    <!-- Outdoor Doghouse: pitched red gable roof, arched doorway entrance, bone plaque nameplate, cedar plank siding -->
+    <clipPath id="doghouse-door-clip">
+      <path d="M 124 158 L 124 104 C 124 88 152 88 152 88 C 152 88 180 88 180 104 L 180 158 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="118" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Green Grass Lawn Mound Patch -->
+  <ellipse cx="152" cy="164" rx="110" ry="10" fill="#86EFAC" />
+  <ellipse cx="152" cy="164" rx="110" ry="10" fill="none" stroke="#22C55E" stroke-width="1.8" />
+
+  <!-- Wooden House Front & Side Walls -->
+  <!-- Left wall (perspective facet) -->
+  <polygon points="82,78 108,68 108,154 82,154" fill="#B45309" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <line x1="82" y1="94" x2="108" y2="84" stroke="#78350F" stroke-width="1.6" />
+  <line x1="82" y1="114" x2="108" y2="104" stroke="#78350F" stroke-width="1.6" />
+  <line x1="82" y1="134" x2="108" y2="124" stroke="#78350F" stroke-width="1.6" />
+
+  <!-- Main Front Gable Wall (Warm Cedar / Pine Planks) -->
+  <polygon points="108,68 152,36 196,68 196,154 108,154" fill="#D97706" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Horizontal Wood Plank Siding Grooves -->
+  <line x1="108" y1="138" x2="196" y2="138" stroke="#B45309" stroke-width="2" />
+  <line x1="108" y1="120" x2="196" y2="120" stroke="#B45309" stroke-width="2" />
+  <line x1="108" y1="102" x2="196" y2="102" stroke="#B45309" stroke-width="2" />
+  <line x1="112" y1="84" x2="192" y2="84" stroke="#B45309" stroke-width="2" />
+  <line x1="126" y1="64" x2="178" y2="64" stroke="#B45309" stroke-width="2" />
+
+  <!-- Arched Doorway Entrance -->
+  <g clip-path="url(#doghouse-door-clip)">
+    <!-- Deep cozy dark interior -->
+    <rect x="115" y="80" width="75" height="85" fill="#1E293B" />
+    <!-- Warm straw bedding peeking out on floor -->
+    <ellipse cx="152" cy="156" rx="26" ry="8" fill="#FACC15" />
+    <line x1="136" y1="154" x2="168" y2="154" stroke="#CA8A04" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <!-- Arched Doorway Molding Trim -->
+  <path d="M 124 158 L 124 104 C 124 88 152 88 152 88 C 152 88 180 88 180 104 L 180 158" fill="none" stroke="#FEF3C7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 124 158 L 124 104 C 124 88 152 88 152 88 C 152 88 180 88 180 104 L 180 158" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- White Bone-Shaped Plaque / Nameplate over entrance -->
+  <path d="M 142 70 C 140 66 134 66 134 70 C 134 74 138 76 136 78 C 134 80 130 80 130 84 C 130 88 136 88 140 84 L 164 84 C 168 88 174 88 174 84 C 174 80 170 80 168 78 C 166 76 170 74 170 70 C 170 66 164 66 162 70 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  <!-- Mounting brass nails -->
+  <circle cx="140" cy="77" r="1.2" fill="#B45309" />
+  <circle cx="164" cy="77" r="1.2" fill="#B45309" />
+
+  <!-- Pitched Red Shingle Gable Roof -->
+  <!-- Left roof eaves (perspective) -->
+  <polygon points="68,76 148,28 156,36 80,84" fill="#B91C1C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <!-- Front roof fascias -->
+  <polygon points="148,28 152,24 206,66 198,74 152,36" fill="#DC2626" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Raised Wooden Foundation Base / Porch Step -->
+  <rect x="98" y="152" width="108" height="10" rx="3" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Dog Food Bowl on Lawn beside Doghouse -->
+  <ellipse cx="224" cy="160" rx="18" ry="7" fill="#EF4444" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="224" cy="158" rx="14" ry="5" fill="#B91C1C" />
+  <!-- Bone treats in bowl -->
+  <ellipse cx="224" cy="158" rx="8" ry="3" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.2" />
+</svg>

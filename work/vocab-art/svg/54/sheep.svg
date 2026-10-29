@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:sheep" data-archetype="hero-object">
+  <defs>
+    <!-- Farm Sheep: cloud-scalloped thick woolly fleece, dark face and ears, slender legs, cloven hooves -->
+    <clipPath id="sheep-body-clip">
+      <path d="M 110 90 C 110 68 142 66 182 66 C 220 66 242 86 240 128 C 236 152 206 156 164 154 C 122 152 110 126 110 90 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="162" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Slender Dark Hind Legs & Cloven Hooves -->
+  <path d="M 196 128 L 194 162 L 208 162 L 214 130 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="194" y="156" width="14" height="6" fill="#0F172A" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="201" y1="156" x2="201" y2="162" stroke="#FAF8F3" stroke-width="1.2" />
+
+  <path d="M 212 130 L 216 160 L 226 160 L 228 134 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="216" y="154" width="10" height="6" fill="#0F172A" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Slender Dark Front Legs & Cloven Hooves -->
+  <path d="M 126 122 L 124 162 L 138 162 L 142 126 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="124" y="156" width="14" height="6" fill="#0F172A" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="131" y1="156" x2="131" y2="162" stroke="#FAF8F3" stroke-width="1.2" />
+
+  <path d="M 142 124 L 146 160 L 156 160 L 156 128 Z" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="146" y="154" width="10" height="6" fill="#0F172A" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Super Fluffy Cloud Scallop Fleece Silhouette -->
+  <!-- Base Silhouette Backing -->
+  <g clip-path="url(#sheep-body-clip)">
+    <rect x="100" y="60" width="150" height="100" fill="#F8FAFC" />
+    <ellipse cx="170" cy="80" rx="46" ry="16" fill="#FFFFFF" />
+    <rect x="100" y="142" width="150" height="16" fill="#E2E8F0" />
+  </g>
+
+  <!-- Puffy Scalloped Cloud Perimeter -->
+  <path d="M 112 100 
+           A 12 12 0 0 1 120 80 
+           A 14 14 0 0 1 144 68 
+           A 16 16 0 0 1 176 66 
+           A 15 15 0 0 1 206 70 
+           A 14 14 0 0 1 230 84 
+           A 14 14 0 0 1 242 108 
+           A 14 14 0 0 1 238 132 
+           A 14 14 0 0 1 220 148 
+           A 14 14 0 0 1 192 154 
+           A 14 14 0 0 1 164 154 
+           A 14 14 0 0 1 138 150 
+           A 14 14 0 0 1 118 136 
+           A 14 14 0 0 1 112 116 Z" 
+        fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Interior Fluffy Cloud Swirls -->
+  <path d="M 136 94 A 8 8 0 0 1 148 102 M 168 88 A 8 8 0 0 1 180 96 M 204 96 A 8 8 0 0 1 216 104 M 150 120 A 8 8 0 0 1 162 128 M 184 122 A 8 8 0 0 1 196 130" fill="none" stroke="#CBD5E1" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Horizontal Droopy Dark Ears -->
+  <ellipse cx="88" cy="82" rx="12" ry="5" transform="rotate(-15 88 82)" fill="#1E293B" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="114" cy="84" rx="12" ry="5" transform="rotate(15 114 84)" fill="#1E293B" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Dark Slate/Black Sheep Face -->
+  <path d="M 106 82 C 104 68 96 66 88 70 C 80 74 76 88 82 100 C 88 110 102 110 108 98 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Woolly Forehead Cap (Fleece on top of head) -->
+  <path d="M 88 68 C 86 60 104 60 106 68 C 108 72 88 72 88 68 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <circle cx="92" cy="65" r="4" fill="#FFFFFF" />
+  <circle cx="98" cy="64" r="4.5" fill="#FFFFFF" />
+  <circle cx="104" cy="66" r="4" fill="#FFFFFF" />
+
+  <!-- Gentle Kind Sheep Eye with Horizontal Pupil -->
+  <circle cx="92" cy="84" r="4.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+  <rect x="89.5" cy="83" width="5" height="2.2" rx="0.8" fill="#1E2A3B" />
+
+  <!-- Soft Muzzle & Mouth -->
+  <ellipse cx="82" cy="98" rx="8" ry="6" fill="#1E293B" />
+  <circle cx="79" cy="97" r="1.5" fill="#475569" />
+  <path d="M 80 102 Q 83 105 86 102" fill="none" stroke="#475569" stroke-width="1.4" stroke-linecap="round" />
+
+  <!-- Fresh Green Grass Blade in mouth -->
+  <path d="M 80 102 Q 68 108 58 100" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round" fill="none" />
+</svg>

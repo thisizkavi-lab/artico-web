@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:squeak" data-archetype="dynamic-action">
+  <defs>
+    <!-- Tiny Mouse Squeaking: mouse on hind legs with open mouth, sharp high-frequency zig-zag acoustic squeak shockwaves -->
+    <clipPath id="squeak-mouse-clip">
+      <path d="M 108 92 C 108 74 136 74 144 88 C 154 108 160 134 154 158 L 102 158 C 98 138 102 108 108 92 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="140" cy="166" rx="104" ry="12" fill="#EAE3D5" />
+  <ellipse cx="136" cy="164" rx="52" ry="7" fill="#DDD4C3" />
+
+  <!-- High-Frequency Sharp Zig-Zag Squeak Soundwaves (Piercing Mouse Voice!) -->
+  <!-- Wave 1 -->
+  <path d="M 166 66 L 174 60 L 172 72 L 180 66 L 178 78 L 186 72" fill="none" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Wave 2 (Larger outer pulse) -->
+  <path d="M 194 52 L 204 44 L 202 58 L 212 50 L 210 66 L 220 58 L 218 74 L 228 66" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Wave 3 (High-pitch shockwave) -->
+  <path d="M 234 40 L 246 32 L 244 48 L 256 40 L 254 58 L 266 50 L 264 68 L 276 60" fill="none" stroke="#EC4899" stroke-width="2.6" stroke-dasharray="6 4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Piercing Sound Accent Flash Sparks -->
+  <polygon points="190,38 194,32 196,38 202,40 196,42 194,48 190,42 184,40" fill="#FACC15" />
+  <polygon points="230,28 233,24 235,28 240,30 235,32 233,36 230,32 226,30" fill="#FACC15" />
+
+  <!-- Long Curling Hairless Pink Tail Extending Back -->
+  <path d="M 104 150 C 80 152 62 144 58 126 C 54 110 70 106 68 116 C 66 126 56 130 64 138 C 72 144 88 144 102 142" fill="none" stroke="#FDA4AF" stroke-width="4" stroke-linecap="round" />
+  <path d="M 104 150 C 80 152 62 144 58 126 C 54 110 70 106 68 116 C 66 126 56 130 64 138 C 72 144 88 144 102 142" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Tiny Mouse Body Standing Upright (Heather Grey) -->
+  <g clip-path="url(#squeak-mouse-clip)">
+    <rect x="95" y="70" width="70" height="95" fill="#94A3B8" />
+    <ellipse cx="120" cy="124" rx="14" ry="24" fill="#F1F5F9" />
+    <rect x="95" y="150" width="70" height="12" fill="#64748B" />
+  </g>
+  <path d="M 110 88 C 102 108 98 136 102 158 L 152 158 C 158 134 152 104 142 86" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Little Pink Hind Feet (Flat on ground) -->
+  <ellipse cx="106" cy="160" rx="12" ry="5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="142" cy="160" rx="12" ry="5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Excited Raised Front Paws (Clutched at chest) -->
+  <ellipse cx="132" cy="112" rx="4.5" ry="3.5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="140" cy="110" rx="4.5" ry="3.5" fill="#FDA4AF" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Giant Round Translucent Pink Ears (Iconic Mouse Feature) -->
+  <!-- Left Ear (Far) -->
+  <circle cx="116" cy="54" r="15" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2" />
+  <circle cx="116" cy="54" r="10" fill="#FDA4AF" />
+  <!-- Right Ear (Near) -->
+  <circle cx="136" cy="58" r="16" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="136" cy="58" r="11" fill="#FDA4AF" />
+
+  <!-- Pointed Mouse Head & Snout (Tilted up calling "Squeak!") -->
+  <path d="M 132 72 L 158 84 C 162 86 160 92 154 94 L 126 88 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 130 84 Q 146 90 152 90" stroke="#F1F5F9" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Dark Bead Mouse Eye (Wide with excitement) -->
+  <circle cx="136" cy="76" r="3.5" fill="#1E2A3B" />
+  <circle cx="135" cy="74.5" r="1.2" fill="#FFFFFF" />
+
+  <!-- Tiny Pink Button Nose -->
+  <circle cx="160" cy="86" r="2.2" fill="#F43F5E" />
+
+  <!-- Open Little Squeaking Mouth -->
+  <polygon points="152,88 158,92 148,93" fill="#881337" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round" />
+
+  <!-- Long Springy Whiskers Quivering from Squeak -->
+  <line x1="156" y1="84" x2="174" y2="76" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="156" y1="86" x2="176" y2="86" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="156" y1="88" x2="172" y2="96" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

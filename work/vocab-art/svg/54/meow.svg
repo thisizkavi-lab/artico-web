@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:meow" data-archetype="dynamic-action">
+  <defs>
+    <!-- Cat Meowing: cute cat looking up with open pink mouth, musical sound notes and cheerful vocal arcs -->
+    <clipPath id="meow-cat-clip">
+      <ellipse cx="120" cy="120" rx="36" ry="40" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="132" cy="166" rx="100" ry="14" fill="#EAE3D5" />
+  <ellipse cx="132" cy="164" rx="54" ry="8" fill="#DDD4C3" />
+
+  <!-- Playful Tail Curling Upward -->
+  <path d="M 88 152 C 68 148 54 132 58 116 C 60 106 70 108 68 118 C 66 128 76 138 94 142" stroke="#F97316" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 88 152 C 68 148 54 132 58 116 C 60 106 70 108 68 118 C 66 128 76 138 94 142" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Seated Ginger Cat Body -->
+  <g clip-path="url(#meow-cat-clip)">
+    <rect x="80" y="75" width="80" height="90" fill="#F97316" />
+    <ellipse cx="120" cy="128" rx="18" ry="26" fill="#FFF7ED" />
+    <rect x="80" y="152" width="80" height="12" fill="#EA580C" />
+  </g>
+  <path d="M 94 100 C 90 120 86 142 84 158 L 154 158 C 152 142 148 120 144 100" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Front Paws Neatly Seated -->
+  <ellipse cx="112" cy="158" rx="8" ry="5.5" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="130" cy="158" rx="8" ry="5.5" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Pointed Upright Ears -->
+  <polygon points="106,62 98,34 116,48" fill="#F97316" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <polygon points="106,60 101,40 113,49" fill="#FDA4AF" />
+  <polygon points="138,62 146,34 128,48" fill="#F97316" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <polygon points="138,60 143,40 131,49" fill="#FDA4AF" />
+
+  <!-- Cat Head (Tilted Upwards In Sweet Plea) -->
+  <circle cx="122" cy="68" r="22" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- White muzzle bib -->
+  <ellipse cx="126" cy="74" rx="12" ry="9" fill="#FFF7ED" />
+
+  <!-- Wide Big Curious Sparkling Cat Eyes -->
+  <ellipse cx="114" cy="62" rx="4.5" ry="5.5" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="114" cy="62" rx="2" ry="4.5" fill="#1E2A3B" />
+  <circle cx="113" cy="60.5" r="1.2" fill="#FFFFFF" />
+
+  <ellipse cx="132" cy="62" rx="4.5" ry="5.5" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="132" cy="62" rx="2" ry="4.5" fill="#1E2A3B" />
+  <circle cx="131" cy="60.5" r="1.2" fill="#FFFFFF" />
+
+  <!-- Little Pink Nose -->
+  <polygon points="123,69 127,69 125,72" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+
+  <!-- Open Pink Triangular Mouth (Singing "Meow!") -->
+  <path d="M 121 74 Q 125 71 129 74 C 128 80 122 80 121 74 Z" fill="#881337" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+  <ellipse cx="125" cy="76" rx="2.5" ry="1.8" fill="#F43F5E" />
+
+  <!-- Whiskers -->
+  <line x1="114" y1="72" x2="94" y2="68" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="114" y1="75" x2="92" y2="76" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="134" y1="72" x2="154" y2="68" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="134" y1="75" x2="156" y2="76" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Musical Vocal Sound Waves & Floating Eighth Notes (Friendly Meow) -->
+  <!-- Sound vibration arcs -->
+  <path d="M 152 64 Q 166 72 164 88" fill="none" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 166 54 Q 186 66 182 96" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <path d="M 180 44 Q 206 60 200 104" fill="none" stroke="#F43F5E" stroke-width="3" stroke-dasharray="6 4" stroke-linecap="round" />
+
+  <!-- Playful Floating Musical Notes -->
+  <!-- Note 1 -->
+  <path d="M 188 52 L 188 34 L 198 38 L 198 56 M 188 40 L 198 44" stroke="#0284C7" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="184" cy="52" rx="4" ry="3" transform="rotate(-20 184 52)" fill="#0284C7" />
+  <ellipse cx="194" cy="56" rx="4" ry="3" transform="rotate(-20 194 56)" fill="#0284C7" />
+
+  <!-- Note 2 -->
+  <path d="M 224 64 L 224 46 Q 232 44 236 50" stroke="#EC4899" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="220" cy="64" rx="4" ry="3" transform="rotate(-20 220 64)" fill="#EC4899" />
+
+  <!-- Tiny Heart of Affection in Voice -->
+  <path d="M 240 76 C 236 70 228 72 228 76 C 228 82 240 88 240 88 C 240 88 252 82 252 76 C 252 72 244 70 240 76 Z" fill="#F43F5E" />
+</svg>

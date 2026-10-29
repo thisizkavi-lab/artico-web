@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:hop" data-archetype="dynamic-action">
+  <defs>
+    <!-- Bunny Hopping: rabbit leaping at crest of parabolic hop trajectory arc, trailing ears, ground bounce puffs -->
+    <clipPath id="hop-bunny-clip">
+      <ellipse cx="164" cy="78" rx="34" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="118" ry="12" fill="#EAE3D5" />
+
+  <!-- Parabolic Hop Trajectory Bounce Curves (Dashed Action Arc) -->
+  <path d="M 44 158 Q 104 158 116 156" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" />
+  <!-- Main High Leaping Bounce Arc -->
+  <path d="M 106 156 Q 146 36 214 156" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round" />
+  <!-- Bounce arrow indicator -->
+  <polygon points="214,152 220,158 210,160" fill="#F59E0B" />
+
+  <!-- Ground Launch Dust Impact Puffs at Takeoff Point (Left) -->
+  <circle cx="106" cy="156" r="6" fill="#DDD4C3" opacity="0.8" />
+  <circle cx="96" cy="154" r="8" fill="#DDD4C3" opacity="0.7" />
+  <circle cx="116" cy="158" r="5" fill="#DDD4C3" opacity="0.8" />
+  <line x1="88" y1="156" x2="74" y2="156" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Target Landing Ring on Right -->
+  <ellipse cx="224" cy="162" rx="14" ry="5" fill="none" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="3 3" />
+
+  <!-- Fluffy White Cottontail in Air -->
+  <circle cx="120" cy="80" r="11" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" />
+  <circle cx="118" cy="82" r="8" fill="#F1F5F9" />
+
+  <!-- Powerful Extended Hind Legs Kicking Back in Mid-Hop -->
+  <path d="M 132 86 C 122 96 112 112 104 122 C 100 128 106 132 112 128 C 122 120 132 104 140 92 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <ellipse cx="106" cy="126" rx="8" ry="4" transform="rotate(-35 106 126)" fill="#FDA4AF" />
+
+  <!-- Bunny Body Airborne at Crest of Hop -->
+  <g clip-path="url(#hop-bunny-clip)">
+    <rect x="120" y="50" width="80" height="60" fill="#F8FAFC" />
+    <path d="M 125 55 Q 165 60 195 75 L 195 105 L 125 105 Z" fill="#E2E8F0" />
+    <ellipse cx="164" cy="86" rx="20" ry="14" fill="#FFFFFF" />
+  </g>
+  <ellipse cx="164" cy="78" rx="34" ry="24" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Front Paws Tucked In Joyful Flight -->
+  <ellipse cx="186" cy="94" rx="7" ry="5" transform="rotate(20 186 94)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="196" cy="92" rx="7" ry="5" transform="rotate(20 196 92)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Bunny Head Airborne -->
+  <ellipse cx="186" cy="64" rx="18" ry="16" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Long Ears Streaming Backwards in the Breeze of the Hop -->
+  <!-- Left Ear (Far) -->
+  <path d="M 174 54 C 160 38 136 32 124 38 C 120 44 142 56 166 60 Z" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 166 54 C 154 42 136 38 128 42 C 126 46 142 54 160 58 Z" fill="#FDA4AF" />
+
+  <!-- Right Ear (Near, dynamic wind-blown curve) -->
+  <path d="M 180 56 C 168 36 144 26 130 30 C 124 36 148 50 172 58 Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 172 54 C 162 38 144 32 134 34 C 130 38 148 48 166 56 Z" fill="#FDA4AF" />
+
+  <!-- Happy Squinting Leaping Eye (Joy arc) -->
+  <path d="M 188 60 Q 192 56 196 60" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Pink Nose & Twitchy Mouth -->
+  <circle cx="202" cy="66" r="2.5" fill="#F43F5E" />
+  <path d="M 200 70 Q 203 73 206 70" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Flying Whiskers -->
+  <line x1="202" y1="68" x2="218" y2="64" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="202" y1="70" x2="216" y2="74" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

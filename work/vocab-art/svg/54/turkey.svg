@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:turkey" data-archetype="hero-object">
+  <defs>
+    <!-- Farm Turkey: magnificent fanned tail plumage wheel, red fleshy snood and wattles, blue bare head -->
+    <clipPath id="turkey-body-clip">
+      <path d="M 108 94 C 104 74 130 64 166 74 C 198 84 212 110 206 142 C 200 156 168 158 136 154 C 110 150 106 124 108 94 Z" />
+    </clipPath>
+    <clipPath id="turkey-fan-clip">
+      <path d="M 166 140 L 166 40 C 220 40 274 74 274 140 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="162" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Spectacular Fanned Tail Plumage Wheel (Behind body) -->
+  <!-- Fan base rays / feather blades -->
+  <path d="M 166 138 L 184 46 L 198 48 L 172 138 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 170 138 L 206 54 L 218 58 L 176 138 Z" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 172 138 L 226 68 L 236 74 L 178 138 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 174 138 L 244 88 L 252 96 L 180 138 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 176 138 L 256 110 L 260 120 L 180 138 Z" fill="#92400E" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 176 138 L 258 132 L 258 142 L 178 138 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Outer Fan Edge Scallop Band (Buff / Cream Tips) -->
+  <path d="M 178 44 C 230 46 270 86 264 144" stroke="#FDE68A" stroke-width="8" fill="none" stroke-linecap="round" />
+  <path d="M 178 44 C 230 46 270 86 264 144" stroke="#1E2A3B" stroke-width="2.2" fill="none" stroke-linecap="round" />
+  <!-- Dark sub-terminal bar on fan -->
+  <path d="M 176 52 C 224 54 260 90 256 142" stroke="#1E293B" stroke-width="5" fill="none" />
+
+  <!-- Sturdy Scaly Legs & Claws -->
+  <line x1="140" y1="148" x2="138" y2="166" stroke="#FB923C" stroke-width="5" stroke-linecap="round" />
+  <line x1="140" y1="148" x2="138" y2="166" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 138 166 L 126 168 M 138 166 L 136 172 M 138 166 L 146 168" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <line x1="162" y1="148" x2="160" y2="166" stroke="#FB923C" stroke-width="5" stroke-linecap="round" />
+  <line x1="162" y1="148" x2="160" y2="166" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 160 166 L 148 168 M 160 166 L 158 172 M 160 166 L 168 168" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Plump Iridescent Turkey Body -->
+  <g clip-path="url(#turkey-body-clip)">
+    <!-- Base Bronze / Dark Brown -->
+    <rect x="100" y="65" width="115" height="95" fill="#451A03" />
+    <!-- Feather Scallop Bands -->
+    <path d="M 106 102 Q 136 108 156 94 M 106 116 Q 140 122 170 106 M 108 130 Q 146 136 182 118 M 116 144 Q 150 148 190 130" stroke="#B45309" stroke-width="4" stroke-linecap="round" fill="none" />
+    <!-- Greenish / bronze iridescence sheen -->
+    <ellipse cx="146" cy="112" rx="26" ry="16" fill="#15803D" opacity="0.35" />
+    <!-- Lower shadow -->
+    <rect x="100" y="146" width="115" height="15" fill="#1C1917" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 108 94 C 104 74 130 64 166 74 C 198 84 212 110 206 142 C 200 156 168 158 136 154 C 110 150 106 124 108 94 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Folded Bronze Wing -->
+  <path d="M 124 104 C 142 96 172 102 178 126 C 178 142 154 150 134 144 C 124 136 120 114 124 104 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 134 116 Q 156 120 166 132 M 132 128 Q 152 132 160 142" stroke="#D97706" stroke-width="2.2" fill="none" stroke-linecap="round" />
+
+  <!-- Bare Red & Blue Head/Neck with Caruncles -->
+  <!-- Neck -->
+  <path d="M 108 98 C 102 78 108 58 118 48 C 128 46 134 56 126 84 C 122 96 122 106 120 114" fill="#EF4444" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Bumpy Caruncles on Neck (Texture nodules) -->
+  <circle cx="112" cy="74" r="3.5" fill="#DC2626" />
+  <circle cx="116" cy="84" r="4" fill="#DC2626" />
+  <circle cx="120" cy="94" r="4.5" fill="#DC2626" />
+
+  <!-- Pale Blue Bare Head Skin (Classic Male Turkey) -->
+  <ellipse cx="116" cy="46" rx="12" ry="14" fill="#60A5FA" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Fleshy Red Snood Hanging Over Beak -->
+  <path d="M 112 38 C 108 34 102 36 102 44 C 102 56 94 66 92 78 C 96 78 100 70 102 60 C 104 52 108 48 112 44 Z" fill="#DC2626" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Beak -->
+  <polygon points="108,44 92,48 108,52" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Turkey Eye -->
+  <circle cx="116" cy="44" r="3.5" fill="#1E2A3B" />
+  <circle cx="115" cy="43" r="1.1" fill="#FFFFFF" />
+
+  <!-- Throat Wattles / Dewlap -->
+  <path d="M 112 56 C 104 64 106 76 112 74 Z" fill="#EF4444" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round" />
+</svg>

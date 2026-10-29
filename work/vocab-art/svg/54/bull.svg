@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:bull" data-archetype="hero-object">
+  <defs>
+    <!-- Bull: powerful muscular bovine, forward curved horns, neck hump, dark coat, brass nose ring -->
+    <clipPath id="bull-body-clip">
+      <path d="M 94 92 C 90 64 126 56 168 64 C 206 72 232 86 230 134 C 228 152 208 156 168 154 C 120 152 98 128 94 92 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="116" ry="14" fill="#EAE3D5" />
+  <ellipse cx="164" cy="164" rx="66" ry="8" fill="#DDD4C3" />
+
+  <!-- Swishing Tail with Dark Brush Tip -->
+  <path d="M 226 112 C 242 120 248 138 244 152" fill="none" stroke="#292524" stroke-width="5" stroke-linecap="round" />
+  <path d="M 226 112 C 242 120 248 138 244 152" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 244 150 C 248 156 252 164 246 168 C 240 166 242 158 244 150 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Muscular Hind Legs & Cloven Hooves -->
+  <path d="M 194 124 L 192 162 L 208 162 L 214 128 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="192" y="156" width="16" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="200" y1="156" x2="200" y2="162" stroke="#FAF8F3" stroke-width="1.2" />
+
+  <path d="M 212 126 L 216 160 L 228 160 L 230 134 Z" fill="#292524" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="216" y="154" width="12" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Muscular Front Legs & Cloven Hooves -->
+  <path d="M 112 118 L 110 162 L 126 162 L 132 122 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="110" y="156" width="16" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="118" y1="156" x2="118" y2="162" stroke="#FAF8F3" stroke-width="1.2" />
+
+  <path d="M 130 120 L 134 160 L 148 160 L 148 126 Z" fill="#292524" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <rect x="134" y="154" width="14" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Powerful Muscular Torso with Shoulder Hump -->
+  <g clip-path="url(#bull-body-clip)">
+    <!-- Base dark charcoal brown -->
+    <rect x="85" y="55" width="155" height="105" fill="#44403C" />
+    <!-- Muscular shoulder highlight -->
+    <ellipse cx="136" cy="80" rx="34" ry="24" fill="#57534E" />
+    <!-- Underbelly shadow -->
+    <path d="M 90 134 Q 160 156 230 138 L 230 160 L 90 160 Z" fill="#292524" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 94 92 C 90 64 126 56 168 64 C 206 72 232 86 230 134 C 228 152 208 156 168 154 C 120 152 98 128 94 92 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Left Forward-Curving Horn (Behind) -->
+  <path d="M 88 56 C 84 36 68 34 62 42 C 68 46 80 54 84 62 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Broad Bull Head -->
+  <path d="M 98 64 C 94 48 78 48 68 56 C 58 64 56 82 66 94 C 76 104 96 102 104 88 Z" fill="#44403C" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Forehead curl texture -->
+  <path d="M 78 58 Q 84 64 80 70 M 84 56 Q 90 62 86 68" stroke="#292524" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Ears (Horizontal) -->
+  <ellipse cx="102" cy="74" rx="10" ry="5" transform="rotate(20 102 74)" fill="#44403C" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="102" cy="74" rx="6" ry="2.5" transform="rotate(20 102 74)" fill="#FDA4AF" />
+
+  <!-- Right Forward-Curving Sharp Horn (In front) -->
+  <path d="M 76 54 C 72 32 52 28 44 38 C 52 42 66 52 70 60 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 44 38 L 48 44" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Fierce Bull Eye -->
+  <circle cx="76" cy="74" r="5" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="75" cy="72.5" r="1.4" fill="#FFFFFF" />
+
+  <!-- Broad Muzzle -->
+  <ellipse cx="64" cy="88" rx="12" ry="9" fill="#292524" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Nostril with Brass Bull Nose Ring -->
+  <circle cx="60" cy="88" r="2.5" fill="#1C1917" />
+  <!-- Golden Brass Ring Through Septum -->
+  <ellipse cx="58" cy="95" rx="5" ry="6" fill="none" stroke="#FACC15" stroke-width="2.4" />
+  <ellipse cx="58" cy="95" rx="5" ry="6" fill="none" stroke="#1E2A3B" stroke-width="1.2" />
+</svg>

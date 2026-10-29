@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:hiss" data-archetype="dynamic-action">
+  <defs>
+    <!-- Cat Hissing: high arched bristling back, pinned back ears, open bared fangs, sharp acoustic hiss lines -->
+    <clipPath id="hiss-cat-clip">
+      <path d="M 88 152 L 96 112 C 104 70 148 58 184 76 C 206 88 214 116 210 152 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="148" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="148" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Sharp Acoustic Hissing Vapor Lines Emanating from Open Bared Fangs -->
+  <path d="M 72 84 Q 54 78 40 84 Q 28 90 20 86" fill="none" stroke="#EF4444" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 70 94 Q 48 94 36 102 Q 24 110 14 104" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+  <path d="M 74 106 Q 58 114 44 112 Q 30 110 22 118" fill="none" stroke="#EF4444" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Spiky Hiss Action Starlet Bursts -->
+  <polygon points="46,74 50,68 54,74 60,76 54,78 50,84 46,78 40,76" fill="#FACC15" />
+  <polygon points="32,96 36,92 40,96 44,98 40,100 36,104 32,100 28,98" fill="#FACC15" />
+
+  <!-- Bristling Fluffy Bottle-Brush Tail Held in Inverted U-Shape -->
+  <path d="M 206 120 C 228 104 246 88 238 68 C 234 58 222 62 222 74 C 222 92 208 114 196 126" stroke="#1E293B" stroke-width="14" stroke-linecap="round" fill="none" />
+  <!-- Spiky fur tufts along bristling tail -->
+  <path d="M 226 62 L 234 54 M 238 72 L 248 68 M 236 86 L 246 86 M 228 100 L 238 104" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" />
+
+  <!-- High-Arched Spiky Cat Back (Halloween / Defense Arch) -->
+  <g clip-path="url(#hiss-cat-clip)">
+    <!-- Base black / charcoal fur -->
+    <rect x="80" y="50" width="140" height="110" fill="#1E293B" />
+    <path d="M 90 60 Q 146 54 200 76 L 204 155 L 85 155 Z" fill="#334155" />
+  </g>
+  <!-- Spiky Bristling Spine Outline -->
+  <path d="M 88 152 
+           L 96 112 
+           L 100 102 L 106 106 L 112 94 L 118 98 L 126 84 L 132 90 L 142 74 L 148 80 L 160 70 L 166 78 L 178 76 L 184 84 L 194 92 L 200 100 L 206 116 
+           L 210 152" 
+        fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Stiff Tense Legs Standing Tall -->
+  <line x1="104" y1="126" x2="102" y2="158" stroke="#1E293B" stroke-width="9" stroke-linecap="round" />
+  <line x1="104" y1="126" x2="102" y2="158" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" />
+  <ellipse cx="102" cy="158" rx="8" ry="5" fill="#334155" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <line x1="196" y1="126" x2="198" y2="158" stroke="#1E293B" stroke-width="9" stroke-linecap="round" />
+  <line x1="196" y1="126" x2="198" y2="158" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" />
+  <ellipse cx="198" cy="158" rx="8" ry="5" fill="#334155" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Flattened "Airplane" Ears Pinned Back Flat Against Head -->
+  <polygon points="98,82 78,74 94,92" fill="#1E293B" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="94,84 82,78 92,90" fill="#FDA4AF" />
+  <polygon points="122,82 142,74 126,92" fill="#1E293B" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Hissing Cat Head -->
+  <circle cx="106" cy="94" r="22" fill="#1E293B" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Narrowed Slit Slanted Defensive Eyes -->
+  <polygon points="94,88 102,86 100,92 92,92" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.4" />
+  <line x1="97" y1="87" x2="97" y2="92" stroke="#1E2A3B" stroke-width="2" />
+
+  <polygon points="112,88 120,86 118,92 110,92" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.4" />
+  <line x1="115" y1="87" x2="115" y2="92" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Wide Open Snarling Hissing Mouth Cavity & Fangs -->
+  <ellipse cx="98" cy="104" rx="14" ry="10" fill="#881337" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Sharp Upper Fangs -->
+  <polygon points="92,96 95,104 90,102" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+  <polygon points="104,96 106,104 101,102" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+  <!-- Sharp Lower Fangs -->
+  <polygon points="93,112 96,106 91,108" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+  <polygon points="103,112 105,106 101,108" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+  <!-- Arched Tongue inside mouth -->
+  <ellipse cx="98" cy="108" rx="6" ry="3.5" fill="#F43F5E" />
+
+  <!-- Whisker Pads Pulled Back Aggressively -->
+  <line x1="90" y1="102" x2="70" y2="98" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="90" y1="105" x2="68" y2="108" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" />
+</svg>

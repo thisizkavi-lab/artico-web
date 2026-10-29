@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:gallop" data-archetype="dynamic-action">
+  <defs>
+    <!-- Horse at Full Gallop: full suspension phase (all 4 legs off ground), wind-whipped mane and tail, speed streaks and dust -->
+    <clipPath id="gallop-body-clip">
+      <path d="M 106 82 C 104 64 140 60 178 64 C 214 66 234 78 230 114 C 224 130 198 132 164 130 C 124 128 108 108 106 82 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Line -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="118" ry="12" fill="#EAE3D5" />
+
+  <!-- Speed Motion Streaks & Wind Lines (Horizontal Dynamic Movement) -->
+  <line x1="36" y1="62" x2="72" y2="62" stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="28" y1="78" x2="80" y2="78" stroke="#94A3B8" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="44" y1="94" x2="90" y2="94" stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="32" y1="110" x2="84" y2="110" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Kicked-Up Ground Dust Puffs Behind Trailing Hooves -->
+  <circle cx="236" cy="144" r="8" fill="#DDD4C3" opacity="0.8" />
+  <circle cx="248" cy="138" r="11" fill="#DDD4C3" opacity="0.8" />
+  <circle cx="262" cy="142" r="9" fill="#DDD4C3" opacity="0.7" />
+  <circle cx="242" cy="150" r="6" fill="#DDD4C3" />
+
+  <!-- Streaming Horizontal Silky Tail (Whipping in High Speed Wind) -->
+  <path d="M 226 94 C 248 88 274 86 284 94 C 278 102 258 112 228 108 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M 232 98 Q 262 94 278 98" stroke="#44403C" stroke-width="2" fill="none" />
+
+  <!-- Trailing Hind Legs (Stretched Far Back in Gallop Extension) -->
+  <!-- Left Hindleg (Far) -->
+  <path d="M 206 106 L 228 126 L 250 134 L 246 138 L 222 130 L 198 112 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <rect x="246" y="132" width="6" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Right Hindleg (Near, powerfully extended airborne) -->
+  <path d="M 194 98 C 210 106 226 116 238 128 L 240 134 L 232 136 L 220 124 C 208 114 198 108 186 102 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <rect x="234" y="130" width="8" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Galloping Horse Body (Chestnut Bay) -->
+  <g clip-path="url(#gallop-body-clip)">
+    <rect x="100" y="55" width="135" height="85" fill="#B45309" />
+    <!-- Flank muscular highlight -->
+    <ellipse cx="152" cy="84" rx="34" ry="16" fill="#D97706" />
+    <rect x="100" y="120" width="135" height="15" fill="#78350F" />
+  </g>
+  <path d="M 106 82 C 104 64 140 60 178 64 C 214 66 234 78 230 114 C 224 130 198 132 164 130 C 124 128 108 108 106 82 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Reaching Forelegs (Extended Forward in Air, Cleared from Ground) -->
+  <!-- Left Foreleg (Far) -->
+  <path d="M 124 96 L 102 118 L 86 138 L 82 134 L 96 114 L 116 92 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <rect x="80" y="132" width="6" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.4" />
+
+  <!-- Right Foreleg (Near, reaching far ahead in full stride) -->
+  <path d="M 116 92 L 94 116 L 76 138 L 70 134 L 86 112 L 108 88 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+  <!-- Knee Joint -->
+  <circle cx="92" cy="116" r="5" fill="#D97706" />
+  <rect x="70" y="132" width="8" height="6" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Muscular Stretched Neck & Wind-Blown Mane -->
+  <path d="M 108 82 C 102 64 96 52 82 48 C 76 54 84 72 100 88" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <!-- Flowing Black Mane Blown Back by Speed -->
+  <path d="M 88 48 C 98 42 120 46 126 64 C 114 62 104 60 96 54 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <path d="M 98 56 C 110 52 128 58 132 72 C 122 70 114 68 104 64 Z" fill="#1C1917" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Pinned-Back Galloping Ears -->
+  <polygon points="78,48 68,40 76,42" fill="#B45309" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Extended Head with Flared Nostrils and Determinded Eye -->
+  <path d="M 82 48 C 74 44 64 50 56 60 C 50 68 52 74 60 76 C 70 78 80 72 84 64 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <!-- Eye -->
+  <circle cx="72" cy="56" r="3.5" fill="#1C1917" stroke="#1E2A3B" stroke-width="1.2" />
+  <circle cx="71" cy="55" r="1" fill="#FFFFFF" />
+  <!-- Flared Nostril for Heavy Gallop Breathing -->
+  <ellipse cx="58" cy="68" rx="3" ry="2" fill="#1C1917" />
+</svg>

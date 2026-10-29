@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:cat" data-archetype="hero-object">
+  <defs>
+    <!-- Cat: adult sleek domestic cat sitting upright, long tail wrapped around paws, pointed ears, whiskers -->
+    <clipPath id="cat-body-clip">
+      <path d="M 118 90 C 118 78 136 72 152 72 C 168 72 186 78 186 90 L 194 158 L 110 158 Z" />
+    </clipPath>
+    <clipPath id="cat-head-clip">
+      <ellipse cx="152" cy="68" rx="26" ry="22" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="162" rx="52" ry="9" fill="#DDD4C3" />
+
+  <!-- Long Elegant Cat Tail Wrapped Around to the Front -->
+  <path d="M 184 150 C 206 148 218 132 216 118 C 214 108 206 108 206 116 C 206 130 196 142 178 144" stroke="#F97316" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 184 150 C 206 148 218 132 216 118 C 214 108 206 108 206 116 C 206 130 196 142 178 144" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  <path d="M 178 144 C 160 144 140 152 118 152" stroke="#F97316" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 178 144 C 160 144 140 152 118 152" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Adult Cat Body (Upright, Slender) -->
+  <g clip-path="url(#cat-body-clip)">
+    <!-- Base ginger tabby orange -->
+    <rect x="100" y="70" width="105" height="95" fill="#F97316" />
+    <!-- White chest and bib -->
+    <ellipse cx="152" cy="122" rx="18" ry="28" fill="#FFF7ED" />
+    <!-- Tabby flank stripes -->
+    <path d="M 120 106 Q 134 110 138 102 M 116 122 Q 132 126 136 118 M 118 138 Q 132 140 136 134" stroke="#C2410C" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 184 106 Q 170 110 166 102 M 188 122 Q 172 126 168 118 M 186 138 Q 172 140 168 134" stroke="#C2410C" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Underside shadow -->
+    <rect x="100" y="152" width="105" height="10" fill="#EA580C" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 124 90 C 120 114 116 142 112 158 L 192 158 C 188 142 184 114 180 90" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Front Paws (Seated Side-by-Side) -->
+  <ellipse cx="140" cy="158" rx="9" ry="6" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="164" cy="158" rx="9" ry="6" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2.2" />
+  <!-- Paw toe lines -->
+  <line x1="137" y1="156" x2="137" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="143" y1="156" x2="143" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="161" y1="156" x2="161" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="167" y1="156" x2="167" y2="162" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Red Collar with Golden Bell -->
+  <path d="M 132 86 Q 152 92 172 86" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none" />
+  <path d="M 132 86 Q 152 92 172 86" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  <!-- Golden bell hanging from collar -->
+  <circle cx="152" cy="94" r="5" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="152" cy="95" r="1.5" fill="#78350F" />
+
+  <!-- Pointed Upright Ears -->
+  <polygon points="132,60 124,32 144,48" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <polygon points="132,58 127,38 141,49" fill="#FDA4AF" />
+  <polygon points="172,60 180,32 160,48" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <polygon points="172,58 177,38 163,49" fill="#FDA4AF" />
+
+  <!-- Adult Cat Head -->
+  <g clip-path="url(#cat-head-clip)">
+    <ellipse cx="152" cy="68" rx="26" ry="22" fill="#F97316" />
+    <!-- White muzzle -->
+    <ellipse cx="152" cy="76" rx="14" ry="10" fill="#FFF7ED" />
+    <!-- Forehead tabby M stripes -->
+    <path d="M 146 52 L 148 60 M 152 50 L 152 60 M 158 52 L 156 60" stroke="#C2410C" stroke-width="2.4" stroke-linecap="round" />
+  </g>
+  <!-- Head Contour -->
+  <ellipse cx="152" cy="68" rx="26" ry="22" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Eyes: Almond-shaped serene emerald green eyes -->
+  <ellipse cx="140" cy="64" rx="5" ry="4" transform="rotate(-10 140 64)" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="140" cy="64" rx="1.8" ry="3.5" fill="#1E2A3B" />
+  <circle cx="139" cy="62" r="1" fill="#FFFFFF" />
+
+  <ellipse cx="164" cy="64" rx="5" ry="4" transform="rotate(10 164 64)" fill="#84CC16" stroke="#1E2A3B" stroke-width="1.8" />
+  <ellipse cx="164" cy="64" rx="1.8" ry="3.5" fill="#1E2A3B" />
+  <circle cx="163" cy="62" r="1" fill="#FFFFFF" />
+
+  <!-- Pink Nose & Cute Mouth -->
+  <polygon points="150,72 154,72 152,75" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.2" />
+  <path d="M 148 78 Q 152 82 152 75 Q 152 82 156 78" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+  <!-- Long Elegant Whiskers -->
+  <line x1="138" y1="74" x2="114" y2="70" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="138" y1="77" x2="112" y2="78" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="138" y1="80" x2="116" y2="86" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+
+  <line x1="166" y1="74" x2="190" y2="70" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="166" y1="77" x2="192" y2="78" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+  <line x1="166" y1="80" x2="188" y2="86" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+</svg>

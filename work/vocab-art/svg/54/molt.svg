@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:molt" data-archetype="dynamic-action">
+  <defs>
+    <!-- Molt: bird shedding old weathered plumage with loose feathers drifting away in breeze, fresh new glossy feathers emerging -->
+    <clipPath id="molt-bird-clip">
+      <path d="M 94 60 C 118 52 144 64 148 94 C 150 124 134 146 112 146 C 94 146 88 126 90 94 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="12" fill="#EAE3D5" />
+
+  <!-- Wooden Perch Branch -->
+  <path d="M 40 148 C 90 142 160 144 260 154 L 256 166 C 158 156 88 154 38 160 Z" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Gentle Breeze Wind Trails (Carrying Shed Molted Feathers Away) -->
+  <path d="M 152 74 Q 186 64 220 74 Q 254 84 278 76" fill="none" stroke="#BAE6FD" stroke-width="2" stroke-linecap="round" />
+  <path d="M 166 98 Q 200 90 234 100 Q 266 110 286 102" fill="none" stroke="#BAE6FD" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M 148 122 Q 180 116 212 124 Q 244 132 268 126" fill="none" stroke="#BAE6FD" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Loose Old Molted Feathers Drifting Gently in the Air (Right) -->
+  <!-- Drifting Feather 1 (High) -->
+  <g transform="translate(204, 52) rotate(25)">
+    <path d="M 0 0 C 12 -6 24 2 30 14 C 20 16 8 8 0 0 Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round" />
+    <line x1="0" y1="0" x2="32" y2="15" stroke="#94A3B8" stroke-width="1.4" stroke-linecap="round" />
+  </g>
+
+  <!-- Drifting Feather 2 (Mid-air) -->
+  <g transform="translate(242, 84) rotate(-15)">
+    <path d="M 0 0 C 14 -8 28 0 34 16 C 22 18 10 10 0 0 Z" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round" />
+    <line x1="0" y1="0" x2="36" y2="18" stroke="#94A3B8" stroke-width="1.4" stroke-linecap="round" />
+  </g>
+
+  <!-- Drifting Feather 3 (Lower) -->
+  <g transform="translate(192, 116) rotate(40)">
+    <path d="M 0 0 C 10 -6 20 2 26 12 C 16 14 6 6 0 0 Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round" />
+    <line x1="0" y1="0" x2="28" y2="13" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" />
+  </g>
+
+  <!-- Fluffy Downy Plumules Detaching from Bird's Flank -->
+  <circle cx="152" cy="94" r="4" fill="#F1F5F9" opacity="0.8" />
+  <circle cx="160" cy="106" r="3" fill="#F1F5F9" opacity="0.8" />
+  <circle cx="168" cy="88" r="3.5" fill="#F1F5F9" opacity="0.8" />
+
+  <!-- Tail Feathers Extending Down (Showing Pin Feathers & Shedding) -->
+  <path d="M 96 138 L 74 168 L 84 170 L 104 144 Z" fill="#0284C7" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Old ragged shed tail feather falling away -->
+  <path d="M 90 144 L 62 176 L 68 178 L 94 148 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.6" stroke-dasharray="3 2" stroke-linejoin="round" />
+
+  <!-- Bird Feet Gripping Branch -->
+  <path d="M 106 144 C 106 142 110 140 114 140 C 116 144 114 148 108 148" fill="#F97316" stroke="#1E2A3B" stroke-width="1.8" />
+  <path d="M 118 144 C 118 142 122 140 126 140 C 128 144 126 148 120 148" fill="#F97316" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Molting Bird Body -->
+  <g clip-path="url(#molt-bird-clip)">
+    <!-- Base vibrant new teal/blue plumage -->
+    <rect x="80" y="50" width="75" height="100" fill="#0284C7" />
+    <ellipse cx="128" cy="104" rx="16" ry="28" fill="#38BDF8" />
+    <!-- Patch of old scruffy faded feathers waiting to molt -->
+    <path d="M 85 86 Q 106 90 112 116 L 90 124 Z" fill="#64748B" opacity="0.5" />
+  </g>
+  <path d="M 94 60 C 118 52 144 64 148 94 C 150 124 134 146 112 146 C 94 146 88 126 90 94 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Wing with Emerging Glossy Pin Feathers -->
+  <path d="M 98 90 C 114 84 134 92 134 114 C 134 132 116 144 104 140 Z" fill="#0369A1" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Glossy new flight feather growing with golden sheath base -->
+  <path d="M 116 94 Q 138 98 142 116" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" fill="none" />
+  <circle cx="116" cy="94" r="2.5" fill="#FACC15" />
+
+  <!-- Bird Head & Eye -->
+  <circle cx="132" cy="74" r="3.5" fill="#1E2A3B" />
+  <circle cx="131" cy="73" r="1.1" fill="#FFFFFF" />
+
+  <!-- Conical Beak Preening / Observing Feathers -->
+  <polygon points="142,74 158,80 142,84" fill="#FB923C" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- New Growth Sparkles (Renewal / Molting Life Cycle) -->
+  <path d="M 148 104 L 150 98 L 152 104 L 158 106 L 152 108 L 150 114 L 148 108 L 142 106 Z" fill="#FACC15" />
+</svg>

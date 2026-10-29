@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:litter box / litter tray (often uk)" data-archetype="hero-object">
+  <defs>
+    <!-- Cat Litter Box: low-rim plastic tray with clean clumping litter granules and slotted scoop -->
+    <clipPath id="litter-granules-clip">
+      <polygon points="68,98 236,98 226,144 78,144" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Rear Wall of the Plastic Litter Tray -->
+  <polygon points="56,86 248,86 242,106 62,106" fill="#0284C7" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Granulated Clumping Clay Litter Bedding -->
+  <g clip-path="url(#litter-granules-clip)">
+    <!-- Base Sand/Clay Gray-Beige -->
+    <rect x="60" y="90" width="184" height="60" fill="#E2E8F0" />
+    <!-- Depth shadow at back -->
+    <rect x="60" y="90" width="184" height="12" fill="#CBD5E1" />
+
+    <!-- Litter Granule Speckles -->
+    <circle cx="86" cy="112" r="1.5" fill="#94A3B8" />
+    <circle cx="104" cy="122" r="1.8" fill="#64748B" />
+    <circle cx="124" cy="108" r="1.5" fill="#94A3B8" />
+    <circle cx="142" cy="128" r="2" fill="#64748B" />
+    <circle cx="162" cy="114" r="1.6" fill="#94A3B8" />
+    <circle cx="180" cy="124" r="1.8" fill="#64748B" />
+    <circle cx="202" cy="110" r="1.5" fill="#94A3B8" />
+    <circle cx="218" cy="120" r="1.8" fill="#64748B" />
+
+    <circle cx="94" cy="132" r="1.6" fill="#94A3B8" />
+    <circle cx="116" cy="138" r="1.8" fill="#64748B" />
+    <circle cx="152" cy="136" r="2" fill="#94A3B8" />
+    <circle cx="174" cy="134" r="1.6" fill="#64748B" />
+    <circle cx="196" cy="138" r="1.8" fill="#94A3B8" />
+
+    <!-- Odor-control blue and green moisture crystals -->
+    <circle cx="110" cy="116" r="1.5" fill="#38BDF8" />
+    <circle cx="150" cy="112" r="1.5" fill="#34D399" />
+    <circle cx="188" cy="118" r="1.5" fill="#38BDF8" />
+    <circle cx="132" cy="124" r="1.5" fill="#34D399" />
+  </g>
+  <polygon points="68,98 236,98 226,144 78,144" fill="none" stroke="#1E2A3B" stroke-width="1.8" />
+
+  <!-- Slotted Plastic Litter Scoop Leaning in Box -->
+  <!-- Scoop handle -->
+  <path d="M 194 56 C 196 46 208 48 206 58 L 188 108 L 178 106 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <circle cx="201" cy="52" r="2.5" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.4" />
+  <!-- Scoop shovel head -->
+  <polygon points="168,104 200,108 190,138 158,134" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Shovel sifting slots -->
+  <line x1="174" y1="112" x2="168" y2="128" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+  <line x1="182" y1="114" x2="176" y2="130" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+  <line x1="190" y1="116" x2="184" y2="132" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Front Wall of the Plastic Litter Tray (with low step-in dip) -->
+  <path d="M 46 102 L 78 144 L 226 144 L 258 102 C 254 116 234 122 208 122 C 194 130 174 132 152 132 C 130 132 110 130 96 122 C 70 122 50 116 46 102 Z" fill="#0284C7" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Outer Wide Plastic Rim Overhang Lip -->
+  <polygon points="46,102 258,102 264,110 40,110" fill="#38BDF8" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+
+  <!-- Cute White Paw Print Motif on Tray Front -->
+  <ellipse cx="152" cy="140" rx="3.5" ry="2.8" fill="#FFFFFF" />
+  <circle cx="148" cy="134" r="1.2" fill="#FFFFFF" />
+  <circle cx="151" cy="133" r="1.2" fill="#FFFFFF" />
+  <circle cx="153" cy="133" r="1.2" fill="#FFFFFF" />
+  <circle cx="156" cy="134" r="1.2" fill="#FFFFFF" />
+
+  <!-- A couple of stray granules outside on the floor -->
+  <circle cx="70" cy="158" r="1.5" fill="#94A3B8" />
+  <circle cx="76" cy="162" r="1.8" fill="#64748B" />
+  <circle cx="236" cy="158" r="1.5" fill="#94A3B8" />
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:scratch" data-archetype="dynamic-action">
+  <defs>
+    <!-- Cat Scratching: cat stretching up against sisal rope post, claws digging in, shredded rope fibers flying -->
+    <clipPath id="scratch-cat-clip">
+      <path d="M 88 152 L 100 86 C 104 68 126 64 140 76 L 152 152 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="168" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="166" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Heavy Wooden Cat Scratching Post Base -->
+  <rect x="180" y="154" width="76" height="14" rx="4" fill="#78350F" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Vertical Sisal Rope Scratching Post Pole -->
+  <rect x="194" y="36" width="36" height="120" rx="3" fill="#D3C7B3" stroke="#1E2A3B" stroke-width="2.4" />
+  <!-- Coiled Sisal Rope Grooves -->
+  <g stroke="#B8A992" stroke-width="2.4">
+    <line x1="194" y1="46" x2="230" y2="46" />
+    <line x1="194" y1="56" x2="230" y2="56" />
+    <line x1="194" y1="66" x2="230" y2="66" />
+    <line x1="194" y1="76" x2="230" y2="76" />
+    <line x1="194" y1="86" x2="230" y2="86" />
+    <line x1="194" y1="96" x2="230" y2="96" />
+    <line x1="194" y1="106" x2="230" y2="106" />
+    <line x1="194" y1="116" x2="230" y2="116" />
+    <line x1="194" y1="126" x2="230" y2="126" />
+    <line x1="194" y1="136" x2="230" y2="136" />
+    <line x1="194" y1="146" x2="230" y2="146" />
+  </g>
+  <!-- Wooden Top Cap on Post -->
+  <ellipse cx="212" cy="36" rx="20" ry="6" fill="#B45309" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Shredded Sisal Fibers & Flying Debris from Scratching -->
+  <path d="M 196 68 Q 186 64 180 70 M 198 78 Q 188 74 184 82 M 196 88 Q 184 86 182 94" stroke="#D97706" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="178" cy="74" r="1.8" fill="#B45309" />
+  <circle cx="182" cy="86" r="1.5" fill="#B45309" />
+  <circle cx="186" cy="62" r="1.5" fill="#B45309" />
+
+  <!-- Downward Scratch Action Motion Streaks -->
+  <line x1="202" y1="64" x2="202" y2="88" stroke="#EF4444" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="206" y1="62" x2="206" y2="92" stroke="#EF4444" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="210" y1="66" x2="210" y2="86" stroke="#EF4444" stroke-width="2.6" stroke-linecap="round" />
+
+  <!-- Cat Standing Stretched to Full Height (Left of Post) -->
+  <!-- Long Arching Tail -->
+  <path d="M 94 148 C 76 144 66 128 70 114 C 72 104 80 106 78 116 C 76 126 86 136 102 140" stroke="#F97316" stroke-width="12" stroke-linecap="round" fill="none" />
+  <path d="M 94 148 C 76 144 66 128 70 114 C 72 104 80 106 78 116 C 76 126 86 136 102 140" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Cat Hindlegs & Paws Planted Solidly on Floor -->
+  <path d="M 92 136 L 90 160 L 106 160 L 110 138 Z" fill="#F97316" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <ellipse cx="98" cy="160" rx="9" ry="5.5" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+
+  <path d="M 120 138 L 122 160 L 138 160 L 136 138 Z" fill="#F97316" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <ellipse cx="130" cy="160" rx="9" ry="5.5" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Stretched Slender Torso -->
+  <g clip-path="url(#scratch-cat-clip)">
+    <rect x="80" y="60" width="80" height="100" fill="#F97316" />
+    <path d="M 104 80 Q 130 90 126 150 L 90 150 Z" fill="#FFF7ED" />
+    <path d="M 98 102 Q 112 106 108 118 M 102 120 Q 116 124 112 136" stroke="#C2410C" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+  <path d="M 94 146 L 104 86 C 108 72 124 70 136 80 L 144 146" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Stretched Forelimbs Reaching High onto Sisal Post -->
+  <path d="M 128 78 L 194 66 L 194 76 L 136 86 Z" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 132 86 L 196 74 L 196 84 L 140 94 Z" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Front Paws Hooked Deeply into Sisal Rope with Extended Claws -->
+  <!-- Top Paw -->
+  <ellipse cx="196" cy="70" rx="8" ry="6" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+  <path d="M 200 68 L 208 66 M 202 71 L 210 70 M 200 74 L 208 75" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Bottom Paw -->
+  <ellipse cx="198" cy="78" rx="8" ry="6" fill="#FFF7ED" stroke="#1E2A3B" stroke-width="2" />
+  <path d="M 202 76 L 210 74 M 204 79 L 212 78 M 202 82 L 210 83" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Cat Head (Turned Upwards in Delightful Stretch) -->
+  <circle cx="120" cy="62" r="18" fill="#F97316" stroke="#1E2A3B" stroke-width="2.4" />
+  <ellipse cx="126" cy="66" rx="9" ry="7" fill="#FFF7ED" />
+
+  <!-- Pointed Ears -->
+  <polygon points="106,56 100,34 116,46" fill="#F97316" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <polygon points="106,54 102,40 113,48" fill="#FDA4AF" />
+  <polygon points="132,56 142,36 128,48" fill="#F97316" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Happy Satisfied Squint Eyes (Ecstatic Stretch) -->
+  <path d="M 112 58 Q 116 62 120 58" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 126 58 Q 130 62 134 58" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Nose & Whiskers -->
+  <polygon points="124,64 128,64 126,67" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1" />
+  <line x1="116" y1="65" x2="100" y2="62" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="116" y1="67" x2="98" y2="69" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:gecko" data-archetype="hero-object">
+  <defs>
+    <!-- Leopard gecko: spotted yellow lizard, plump fat tail, suction toe pads, smiling face on terrarium slate -->
+    <clipPath id="gecko-body-clip">
+      <path d="M 106 108 C 104 88 128 78 174 82 C 208 86 226 102 222 128 C 218 144 194 148 162 144 C 124 140 108 126 106 108 Z" />
+    </clipPath>
+    <clipPath id="gecko-tail-clip">
+      <path d="M 218 124 C 236 120 258 122 264 134 C 270 148 252 160 236 156 C 224 152 216 138 218 124 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="160" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="164" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Natural Terrarium Slate Rock Platform -->
+  <polygon points="56,158 248,154 262,170 42,172" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <polygon points="56,158 248,154 246,150 62,154" fill="#CBD5E1" />
+
+  <!-- Distinctive Plump Fat Tail of Leopard Gecko -->
+  <g clip-path="url(#gecko-tail-clip)">
+    <!-- Base cream/yellow -->
+    <rect x="210" y="115" width="60" height="50" fill="#FDE047" />
+    <!-- Segmented dark leopard spots -->
+    <circle cx="238" cy="132" r="4.5" fill="#581C87" />
+    <circle cx="250" cy="138" r="4" fill="#581C87" />
+    <circle cx="242" cy="146" r="3.5" fill="#581C87" />
+    <circle cx="228" cy="138" r="3" fill="#581C87" />
+    <!-- Segment bands -->
+    <path d="M 230 122 Q 240 138 232 152 M 244 124 Q 254 138 246 154" stroke="#7E22CE" stroke-width="2" fill="none" opacity="0.6" />
+  </g>
+  <path d="M 218 124 C 236 120 258 122 264 134 C 270 148 252 160 236 156 C 224 152 216 138 218 124 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Hind Splayed Leg with Spatulate Suction Toes -->
+  <path d="M 194 130 Q 212 144 206 154" stroke="#FBBF24" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 194 130 Q 212 144 206 154" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <!-- Round toe pads -->
+  <circle cx="198" cy="156" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="206" cy="158" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="214" cy="156" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Gecko Body (Yellow with Leopard Spots) -->
+  <g clip-path="url(#gecko-body-clip)">
+    <rect x="95" y="75" width="135" height="75" fill="#FBBF24" />
+    <!-- Soft cream belly line -->
+    <path d="M 110 134 Q 160 144 210 138 L 210 150 L 110 150 Z" fill="#FEF9C3" />
+    <!-- Scattered leopard rosettes / spots -->
+    <circle cx="128" cy="100" r="4.5" fill="#475569" />
+    <circle cx="146" cy="94" r="5" fill="#475569" />
+    <circle cx="168" cy="98" r="4.5" fill="#475569" />
+    <circle cx="190" cy="106" r="5" fill="#475569" />
+    <circle cx="136" cy="120" r="4" fill="#475569" />
+    <circle cx="158" cy="116" r="4.5" fill="#475569" />
+    <circle cx="180" cy="124" r="4" fill="#475569" />
+    <circle cx="202" cy="122" r="3.5" fill="#475569" />
+    <!-- Spot inner highlights -->
+    <circle cx="145" cy="93" r="1.5" fill="#FBBF24" />
+    <circle cx="167" cy="97" r="1.5" fill="#FBBF24" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 106 108 C 104 88 128 78 174 82 C 208 86 226 102 222 128 C 218 144 194 148 162 144 C 124 140 108 126 106 108 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Front Leg with Suction Toes -->
+  <path d="M 118 124 Q 106 138 114 154" stroke="#FBBF24" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M 118 124 Q 106 138 114 154" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <circle cx="106" cy="156" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="114" cy="158" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="122" cy="156" r="3.5" fill="#FDE047" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Gecko Head (Broad triangular rounded) -->
+  <path d="M 116 94 C 112 78 92 78 76 86 C 64 94 62 108 72 118 C 84 126 106 124 116 112 Z" fill="#FBBF24" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <!-- Pale chin/throat -->
+  <path d="M 72 118 Q 88 122 106 114" stroke="#FEF9C3" stroke-width="4" fill="none" stroke-linecap="round" />
+
+  <!-- Head spots -->
+  <circle cx="94" cy="88" r="3" fill="#475569" />
+  <circle cx="104" cy="94" r="3" fill="#475569" />
+  <circle cx="86" cy="98" r="2.5" fill="#475569" />
+
+  <!-- Big Gold Eyelidless Gecko Eye with Slit Pupil -->
+  <circle cx="86" cy="90" r="7.5" fill="#EAB308" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Vertical undulating slit pupil -->
+  <path d="M 86 84 C 84 87 88 90 86 93 C 84 95 86 96 86 96" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" fill="none" />
+  <circle cx="84" cy="87" r="1.2" fill="#FFFFFF" />
+
+  <!-- Smiling Gecko Mouth Line -->
+  <path d="M 66 106 Q 78 116 96 110" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <!-- Little nostril -->
+  <circle cx="68" cy="100" r="1.2" fill="#1E2A3B" />
+</svg>

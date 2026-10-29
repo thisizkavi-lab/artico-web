@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:dog" data-archetype="hero-object">
+  <defs>
+    <!-- Adult dog: friendly golden retriever sitting, floppy ears, red collar, wagging tail -->
+    <clipPath id="dog-body-clip">
+      <path d="M 112 88 C 112 70 140 68 156 68 C 174 68 198 72 200 90 L 208 158 L 104 158 Z" />
+    </clipPath>
+    <clipPath id="dog-head-clip">
+      <ellipse cx="140" cy="62" rx="28" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="164" rx="118" ry="14" fill="#EAE3D5" />
+  <ellipse cx="156" cy="162" rx="60" ry="9" fill="#DDD4C3" />
+
+  <!-- Wagging Fluffy Tail -->
+  <path d="M 196 142 C 224 136 244 116 238 92 C 234 82 224 84 226 96 C 228 112 216 128 192 136" stroke="#D97706" stroke-width="14" stroke-linecap="round" fill="none" />
+  <path d="M 196 142 C 224 136 244 116 238 92 C 234 82 224 84 226 96 C 228 112 216 128 192 136" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" fill="none" />
+
+  <!-- Seated Body -->
+  <g clip-path="url(#dog-body-clip)">
+    <!-- Base golden fur -->
+    <rect x="95" y="65" width="120" height="100" fill="#F59E0B" />
+    <!-- Chest / bib lighter golden -->
+    <ellipse cx="140" cy="120" rx="22" ry="32" fill="#FEF3C7" />
+    <!-- Flank shadow -->
+    <path d="M 180 75 Q 210 115 198 160 L 210 160 L 210 75 Z" fill="#D97706" />
+    <!-- Underside shadow -->
+    <rect x="95" y="152" width="120" height="10" fill="#B45309" />
+  </g>
+  <!-- Body Contour -->
+  <path d="M 122 86 C 114 112 108 140 106 158 L 202 158 C 200 138 194 108 184 86" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Back Leg Bulge (Sitting) -->
+  <path d="M 186 116 C 204 126 206 146 196 158" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- Front Paws -->
+  <ellipse cx="128" cy="158" rx="10" ry="7" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="154" cy="158" rx="10" ry="7" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" />
+  <!-- Toe divisions -->
+  <line x1="125" y1="156" x2="125" y2="163" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="131" y1="156" x2="131" y2="163" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="151" y1="156" x2="151" y2="163" stroke="#1E2A3B" stroke-width="1.6" />
+  <line x1="157" y1="156" x2="157" y2="163" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Red Collar with Brass Tag -->
+  <path d="M 120 84 Q 142 92 164 84" stroke="#DC2626" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 120 84 Q 142 92 164 84" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <circle cx="142" cy="94" r="5" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="142" cy="94" r="2" fill="#B45309" />
+
+  <!-- Dog Head & Floppy Ears -->
+  <!-- Left Floppy Ear (Behind) -->
+  <path d="M 118 52 C 102 54 94 72 98 90 C 102 98 114 98 116 88 L 122 62 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Head Base -->
+  <g clip-path="url(#dog-head-clip)">
+    <ellipse cx="140" cy="62" rx="28" ry="24" fill="#F59E0B" />
+    <path d="M 120 40 Q 140 48 160 40 L 168 62 L 112 62 Z" fill="#D97706" opacity="0.3" />
+  </g>
+  <ellipse cx="140" cy="62" rx="28" ry="24" fill="none" stroke="#1E2A3B" stroke-width="2.6" />
+
+  <!-- Right Floppy Ear (In Front) -->
+  <path d="M 160 52 C 176 56 184 74 180 92 C 176 100 164 98 162 88 L 158 62 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Snout / Muzzle -->
+  <ellipse cx="140" cy="70" rx="16" ry="12" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Happy Black Nose -->
+  <path d="M 134 65 C 134 62 146 62 146 65 C 146 70 140 73 140 73 C 140 73 134 70 134 65 Z" fill="#1E2A3B" />
+  <circle cx="137" cy="64" r="1.2" fill="#FFFFFF" />
+
+  <!-- Smiling Mouth with Pink Tongue -->
+  <path d="M 140 73 L 140 78 M 134 77 Q 140 81 146 77" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <path d="M 138 78 C 138 86 144 86 144 78 Z" fill="#F43F5E" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Warm Loyal Eyes with Highlights -->
+  <ellipse cx="129" cy="57" rx="3.5" ry="4.5" fill="#1E2A3B" />
+  <circle cx="127.5" cy="55.5" r="1.3" fill="#FFFFFF" />
+
+  <ellipse cx="151" cy="57" rx="3.5" ry="4.5" fill="#1E2A3B" />
+  <circle cx="149.5" cy="55.5" r="1.3" fill="#FFFFFF" />
+
+  <!-- Eyebrow expression dots -->
+  <circle cx="128" cy="50" r="1.8" fill="#D97706" />
+  <circle cx="152" cy="50" r="1.8" fill="#D97706" />
+</svg>

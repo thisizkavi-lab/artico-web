@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:bark" data-archetype="dynamic-action">
+  <defs>
+    <!-- Dog Bark: alert dog with open mouth barking, acoustic sound vibration concentric arcs expanding outward -->
+    <clipPath id="bark-dog-clip">
+      <ellipse cx="116" cy="118" rx="44" ry="46" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="132" cy="166" rx="104" ry="14" fill="#EAE3D5" />
+  <ellipse cx="132" cy="164" rx="56" ry="8" fill="#DDD4C3" />
+
+  <!-- Acoustic Sound Vibration Shockwaves (Radiating from Open Barking Muzzle) -->
+  <!-- Arc 1 -->
+  <path d="M 180 58 C 196 66 206 82 204 102 C 202 118 190 132 176 138" fill="none" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 180 58 C 196 66 206 82 204 102 C 202 118 190 132 176 138" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- Arc 2 (Larger outer pulse) -->
+  <path d="M 204 42 C 228 56 242 80 238 110 C 234 134 216 154 196 162" fill="none" stroke="#EF4444" stroke-width="5" stroke-linecap="round" />
+  <path d="M 204 42 C 228 56 242 80 238 110 C 234 134 216 154 196 162" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Arc 3 (Outer shockwave pulse) -->
+  <path d="M 232 30 C 262 48 278 80 274 116 C 270 148 246 172 220 180" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-dasharray="8 6" stroke-linecap="round" />
+
+  <!-- Bark Sound Burst Callout Rays -->
+  <line x1="184" y1="52" x2="198" y2="44" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+  <line x1="198" y1="92" x2="216" y2="92" stroke="#EF4444" stroke-width="3" stroke-linecap="round" />
+  <line x1="182" y1="134" x2="196" y2="144" stroke="#F59E0B" stroke-width="2.6" stroke-linecap="round" />
+
+  <!-- Dog Body Seated Firmly -->
+  <g clip-path="url(#bark-dog-clip)">
+    <rect x="70" y="65" width="95" height="100" fill="#F59E0B" />
+    <ellipse cx="116" cy="128" rx="20" ry="26" fill="#FFFBEB" />
+    <rect x="70" y="152" width="95" height="12" fill="#D97706" />
+  </g>
+  <path d="M 88 92 C 84 114 78 140 76 158 L 158 158 C 156 138 150 114 144 92" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Front Paws Planted Solidly on Ground -->
+  <ellipse cx="100" cy="158" rx="10" ry="7" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" />
+  <ellipse cx="128" cy="158" rx="10" ry="7" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" />
+
+  <!-- Red Collar with Bell -->
+  <path d="M 94 90 Q 118 98 140 90" stroke="#DC2626" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 94 90 Q 118 98 140 90" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <circle cx="118" cy="100" r="4.5" fill="#FACC15" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Alert Pricked Ears (Thrown Back in Barking Excitement) -->
+  <path d="M 78 52 C 60 48 50 64 56 82 C 60 90 70 88 74 78 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M 108 48 C 104 30 118 24 126 30 C 130 40 124 52 116 60 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Dog Head (Raised Proudly at Upward Angle) -->
+  <path d="M 88 64 C 84 50 98 42 114 46 C 128 50 134 62 136 76 L 96 82 Z" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!-- Intense Alert Barking Eye -->
+  <ellipse cx="110" cy="58" rx="4.5" ry="5.5" fill="#1E2A3B" />
+  <circle cx="108.5" cy="56.5" r="1.6" fill="#FFFFFF" />
+
+  <!-- Open Jaws (Barking Acoustic Mouth!) -->
+  <!-- Upper Snout -->
+  <path d="M 130 56 L 162 58 C 166 60 166 66 160 70 L 132 76 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Black Nose -->
+  <polygon points="156,58 164,59 160,65" fill="#1E2A3B" />
+
+  <!-- Open Dark Throat Cavity & Sharp White Canine Teeth -->
+  <polygon points="132,74 158,70 148,94 126,88" fill="#881337" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Upper canine tooth -->
+  <polygon points="152,70 156,76 150,73" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+  <!-- Pink tongue vibrating inside mouth -->
+  <ellipse cx="140" cy="84" rx="8" ry="5" fill="#F43F5E" />
+
+  <!-- Lower Jaw (Dropped wide open) -->
+  <path d="M 124 88 L 150 94 C 154 96 152 102 146 100 L 120 94 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Lower canine tooth -->
+  <polygon points="144,95 147,89 142,93" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2" />
+</svg>

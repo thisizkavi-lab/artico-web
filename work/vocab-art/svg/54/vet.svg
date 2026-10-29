@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:vet" data-archetype="scene">
+  <defs>
+    <!-- Veterinarian Clinic: vet in scrubs with stethoscope examining calm pet dog on stainless steel exam table -->
+    <clipPath id="vet-scrubs-clip">
+      <path d="M 64 96 C 64 78 84 74 104 74 C 124 74 144 78 144 96 L 148 168 L 60 168 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Clinic Wall -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <rect x="0" y="0" width="304" height="136" fill="#F0FDFA" />
+  <line x1="0" y1="136" x2="304" y2="136" stroke="#CCFBF1" stroke-width="2" />
+
+  <!-- Veterinary Medical Cross with Paw Print on Wall -->
+  <rect x="226" y="24" width="44" height="44" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="2.2" />
+  <!-- Teal medical cross -->
+  <rect x="242" y="30" width="12" height="32" rx="3" fill="#14B8A6" />
+  <rect x="232" y="40" width="32" height="12" rx="3" fill="#14B8A6" />
+  <!-- White paw in center of cross -->
+  <circle cx="248" cy="46" r="3" fill="#FFFFFF" />
+  <circle cx="245" cy="42" r="1" fill="#FFFFFF" />
+  <circle cx="248" cy="41" r="1" fill="#FFFFFF" />
+  <circle cx="251" cy="42" r="1" fill="#FFFFFF" />
+
+  <!-- Stainless Steel Examination Table -->
+  <polygon points="120,116 276,116 264,152 110,152" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round" />
+  <rect x="110" y="112" width="166" height="6" rx="2" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Heavy steel central table pillar -->
+  <rect x="180" y="152" width="22" height="24" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2" />
+  <ellipse cx="191" cy="176" rx="42" ry="6" fill="#64748B" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Calm Pet Dog Patient Standing on Exam Table -->
+  <!-- Dog body -->
+  <ellipse cx="204" cy="102" rx="28" ry="18" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2.2" />
+  <!-- Dog legs on table -->
+  <line x1="184" y1="110" x2="184" y2="124" stroke="#D97706" stroke-width="6" stroke-linecap="round" />
+  <line x1="184" y1="110" x2="184" y2="124" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <line x1="220" y1="110" x2="220" y2="124" stroke="#D97706" stroke-width="6" stroke-linecap="round" />
+  <line x1="220" y1="110" x2="220" y2="124" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" />
+  <!-- Paws flat on stainless steel -->
+  <ellipse cx="184" cy="124" rx="5" ry="3" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.6" />
+  <ellipse cx="220" cy="124" rx="5" ry="3" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Wagging calm tail -->
+  <path d="M 230 96 C 244 90 252 82 248 76" stroke="#D97706" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 230 96 C 244 90 252 82 248 76" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Dog Head (Looking towards vet gratefully) -->
+  <ellipse cx="172" cy="84" rx="14" ry="12" fill="#F59E0B" stroke="#1E2A3B" stroke-width="2" />
+  <!-- Floppy ear -->
+  <path d="M 180 78 C 188 82 190 94 186 100" stroke="#D97706" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 180 78 C 188 82 190 94 186 100" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <!-- Snout & Nose -->
+  <ellipse cx="162" cy="88" rx="8" ry="6" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.6" />
+  <circle cx="158" cy="86" r="2" fill="#1E2A3B" />
+  <!-- Kind patient eye -->
+  <circle cx="170" cy="80" r="2.8" fill="#1E2A3B" />
+  <circle cx="169" cy="79" r="1" fill="#FFFFFF" />
+
+  <!-- Veterinarian (Teal scrubs, leaning gently over patient) -->
+  <!-- Vet Head & Hair -->
+  <circle cx="94" cy="46" r="16" fill="#FED7AA" stroke="#1E2A3B" stroke-width="2.2" />
+  <!-- Dark neat hair bun -->
+  <path d="M 80 44 C 80 28 108 28 108 44 C 104 38 88 38 80 44 Z" fill="#334155" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <circle cx="76" cy="40" r="6" fill="#334155" stroke="#1E2A3B" stroke-width="1.6" />
+
+  <!-- Gentle Focused Vet Eye & Smile -->
+  <path d="M 98 48 Q 102 52 106 48" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M 100 56 Q 104 60 108 56" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Vet Scrubs Torso -->
+  <g clip-path="url(#vet-scrubs-clip)">
+    <!-- Base Medical Teal Scrubs -->
+    <rect x="55" y="70" width="95" height="100" fill="#0D9488" />
+    <!-- V-neck collar fold -->
+    <polygon points="94,74 104,90 84,74" fill="#0F766E" />
+    <!-- Undershirt white collar -->
+    <polygon points="90,74 96,82 86,74" fill="#F8FAFC" />
+  </g>
+  <!-- Scrubs Outline -->
+  <path d="M 74 76 C 84 74 104 74 114 76 L 138 106 L 126 122 L 110 102 L 108 168 L 68 168 L 66 102 L 50 122 L 38 106 Z" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round" />
+
+  <!-- Stethoscope (Hanging from neck, checking dog's heartbeat) -->
+  <!-- Stethoscope tubing -->
+  <path d="M 86 64 C 82 82 84 106 104 108 C 118 110 128 98 132 88" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+  <path d="M 86 64 C 82 82 84 106 104 108 C 118 110 128 98 132 88" fill="none" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round" />
+  <!-- Extension tube to chest piece -->
+  <path d="M 106 108 C 122 118 152 112 178 104" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+  <!-- Silver chest piece / diaphragm held against dog's chest -->
+  <circle cx="180" cy="103" r="5" fill="#E2E8F0" stroke="#1E2A3B" stroke-width="1.8" />
+  <circle cx="180" cy="103" r="2.5" fill="#0D9488" />
+
+  <!-- Vet's Gentle Hands -->
+  <!-- Left hand holding chest piece against dog -->
+  <ellipse cx="174" cy="98" rx="6" ry="4" transform="rotate(-20 174 98)" fill="#FED7AA" stroke="#1E2A3B" stroke-width="1.8" />
+  <!-- Right hand gently petting dog's back -->
+  <ellipse cx="206" cy="84" rx="7" ry="4" fill="#FED7AA" stroke="#1E2A3B" stroke-width="1.8" />
+</svg>

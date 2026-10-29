@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="54:bird seed" data-archetype="hero-object">
+  <defs>
+    <!-- Bird Seed: burlap feed sack rolled open at rim, overflowing mixed millet & sunflower seeds, wooden scoop -->
+    <clipPath id="seed-sack-clip">
+      <path d="M 94 92 L 102 162 L 202 162 L 210 92 Z" />
+    </clipPath>
+    <clipPath id="seed-pile-clip">
+      <ellipse cx="152" cy="90" rx="60" ry="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Stage Canvas & Ground Shadows -->
+  <rect width="304" height="192" fill="#FAF8F3" rx="16" />
+  <ellipse cx="152" cy="166" rx="114" ry="14" fill="#EAE3D5" />
+  <ellipse cx="152" cy="164" rx="64" ry="8" fill="#DDD4C3" />
+
+  <!-- Burlap Sack Body -->
+  <g clip-path="url(#seed-sack-clip)">
+    <!-- Natural burlap beige -->
+    <rect x="90" y="80" width="124" height="90" fill="#E2D9C8" />
+    <!-- Burlap weave shading -->
+    <path d="M 90 90 L 214 90 L 214 110 L 90 110 Z" fill="#D3C7B3" opacity="0.4" />
+    <path d="M 180 90 L 214 90 L 204 164 L 180 164 Z" fill="#C5B69F" opacity="0.5" />
+    <!-- Bird silhouette emblem printed on burlap sack -->
+    <path d="M 144 126 C 148 122 156 122 160 128 C 162 134 158 138 152 138 C 146 138 142 132 144 126 Z" fill="#B45309" opacity="0.7" />
+    <polygon points="144,127 138,129 144,131" fill="#B45309" opacity="0.7" />
+    <line x1="160" y1="134" x2="166" y2="140" stroke="#B45309" stroke-width="2" opacity="0.7" />
+  </g>
+  <!-- Sack Outline -->
+  <path d="M 94 92 L 102 162 L 202 162 L 210 92" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Rolled Canvas Hem / Cuff of the Sack -->
+  <path d="M 88 90 C 88 78 216 78 216 90 C 216 102 88 102 88 90 Z" fill="#D3C7B3" stroke="#1E2A3B" stroke-width="2.4" />
+
+  <!-- Heaped Bird Seed Mound -->
+  <g clip-path="url(#seed-pile-clip)">
+    <!-- Base golden millet mix -->
+    <rect x="88" y="66" width="128" height="48" fill="#FBBF24" />
+    <!-- Individual Seeds & Grains Texture -->
+    <!-- Black oil sunflower seeds -->
+    <ellipse cx="120" cy="88" rx="4" ry="2" transform="rotate(30 120 88)" fill="#1E293B" />
+    <ellipse cx="136" cy="82" rx="4.5" ry="2.2" transform="rotate(-40 136 82)" fill="#1E293B" />
+    <ellipse cx="154" cy="94" rx="4" ry="2" transform="rotate(15 154 94)" fill="#1E293B" />
+    <ellipse cx="172" cy="86" rx="4.5" ry="2.2" transform="rotate(-20 172 86)" fill="#1E293B" />
+    <ellipse cx="186" cy="90" rx="4" ry="2" transform="rotate(45 186 90)" fill="#1E293B" />
+    <ellipse cx="144" cy="98" rx="4" ry="2" transform="rotate(-60 144 98)" fill="#1E293B" />
+
+    <!-- Red milo seeds -->
+    <circle cx="112" cy="92" r="2.2" fill="#DC2626" />
+    <circle cx="130" cy="94" r="2.2" fill="#DC2626" />
+    <circle cx="166" cy="96" r="2.2" fill="#DC2626" />
+    <circle cx="180" cy="82" r="2.2" fill="#DC2626" />
+    <circle cx="148" cy="84" r="2.2" fill="#DC2626" />
+
+    <!-- Cream / White millet grains -->
+    <circle cx="126" cy="86" r="2" fill="#FFFBEB" />
+    <circle cx="142" cy="90" r="2" fill="#FFFBEB" />
+    <circle cx="160" cy="86" r="2" fill="#FFFBEB" />
+    <circle cx="176" cy="92" r="2" fill="#FFFBEB" />
+    <circle cx="194" cy="86" r="2" fill="#FFFBEB" />
+    <circle cx="116" cy="82" r="2" fill="#FFFBEB" />
+
+    <!-- Golden cracked corn -->
+    <polygon points="138,76 142,74 140,80" fill="#F59E0B" />
+    <polygon points="164,78 168,76 166,82" fill="#F59E0B" />
+  </g>
+  <ellipse cx="152" cy="90" rx="60" ry="24" fill="none" stroke="#1E2A3B" stroke-width="2" />
+
+  <!-- Wooden Grain Scoop Resting in Seed Mound -->
+  <!-- Scoop handle -->
+  <path d="M 186 64 L 222 36 C 226 32 232 36 228 40 L 192 68 Z" fill="#B45309" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round" />
+  <!-- Scoop bowl -->
+  <path d="M 166 74 C 160 62 178 54 192 64 L 184 84 C 174 86 168 82 166 74 Z" fill="#D97706" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round" />
+  <ellipse cx="178" cy="74" rx="7" ry="5" fill="#FBBF24" />
+  <!-- Seeds inside scoop -->
+  <circle cx="176" cy="73" r="1.5" fill="#1E293B" />
+  <circle cx="180" cy="75" r="1.3" fill="#DC2626" />
+  <circle cx="177" cy="76" r="1.2" fill="#FFFBEB" />
+
+  <!-- Spilled Seeds on Ground around Sack Base -->
+  <ellipse cx="82" cy="162" rx="3" ry="1.5" transform="rotate(20 82 162)" fill="#1E293B" />
+  <circle cx="74" cy="164" r="2" fill="#FBBF24" />
+  <circle cx="90" cy="165" r="1.8" fill="#DC2626" />
+  <circle cx="86" cy="161" r="1.5" fill="#FFFBEB" />
+
+  <ellipse cx="224" cy="162" rx="3.5" ry="1.8" transform="rotate(-30 224 162)" fill="#1E293B" />
+  <circle cx="216" cy="164" r="2" fill="#FBBF24" />
+  <circle cx="232" cy="163" r="1.8" fill="#DC2626" />
+  <circle cx="228" cy="166" r="1.6" fill="#FFFBEB" />
+</svg>

@@ -3,6 +3,7 @@ import { useLanguage } from './Language'
 import { Glyph } from './LessonExperience'
 import { ipaGroups, allIpaSounds } from './ipaSounds'
 import ipaExamples from './ipaExamples.json'
+import { readIpaTestZip, restoreIpaTestZip, saveIpaTestZip, clearIpaTestZip, discardIpaUrls } from './ipaTestAudio'
 import './ipa-reference.css'
 
 // The reference uses two main tables, with the less-common sounds below Vowels.
@@ -28,12 +29,13 @@ const displaySymbol = ipa => ipa === 'ɹ' ? 'r' : ipa === 'eɪ' ? 'e / eɪ' : ip
 const copy = {
   en: {
     symbol: 'IPA', word: 'Examples', listen: 'Hear',
-    playingRecording: 'Playing example word',
+    playingRecording: 'Playing audio',
+    loadSounds: 'Load IPA sound ZIP for testing', loadedSounds: '41 IPA sounds loaded locally', resetSounds: 'Reset',
     unavailable: 'Audio could not play. Please try again.',
     choose: 'Choose a sound', practiceTitle: 'Listen. Say. Compare.',
     practiceIntro: 'Tap a symbol or word to hear it. Green letters show the sound inside each example.',
     practiceStep: 'Listen to the examples, then repeat them aloud.',
-    studyNote: 'Tap a blue speaker to hear the first example, or click any word to hear that word. The recording plays the complete word.',
+    studyNote: 'Blue speakers play the isolated IPA sound when your test ZIP is loaded. Click an example to hear the complete word.',
     sourceNote: 'The r row represents the American /ɹ/ sound. Actual pronunciation can vary by accent; /ɑ/ and /ɔ/ are merged for many speakers.',
     specialNote: 'Less-common sounds and loanwords may not be pronounced reliably by a standard American synthetic voice.',
     stress: '(stressed positions)', unstress: '(unstressed positions)',
@@ -41,12 +43,13 @@ const copy = {
   },
   ja: {
     symbol: 'IPA', word: 'Examples', listen: '聞く',
-    playingRecording: '単語の音声を再生中',
+    playingRecording: '音声を再生中',
+    loadSounds: 'IPA音声ZIPを試す', loadedSounds: 'IPA音声41個を読み込み済み', resetSounds: 'リセット',
     unavailable: '音声を再生できませんでした。もう一度お試しください。',
     choose: '音を選ぶ', practiceTitle: '聞く・言う・比べる',
     practiceIntro: 'IPA記号や単語を押すと発音を聞けます。緑色の文字が、その音を表すつづりです。',
     practiceStep: '例の単語を聞き、声に出してみましょう。',
-    studyNote: '青いスピーカーを押すと最初の例の単語、各単語を押すとその単語全体の発音が聞けます。',
+    studyNote: 'テスト音声ZIPを読み込むと、青いスピーカーからIPAの音が流れます。単語を押すと単語全体の発音が聞けます。',
     sourceNote: 'r はアメリカ英語の /ɹ/ を表します。発音は地域や話者によって異なり、/ɑ/ と /ɔ/ を区別しない人も多くいます。',
     specialNote: '珍しい音や借用語は、一般米語の合成音声では正確に再現されないことがあります。',
     stress: '（強勢のある位置）', unstress: '（強勢のない位置）',
@@ -57,6 +60,8 @@ const copy = {
 function useIpaPlayback() {
   const audioRef = useRef(null)
   const [message, setMessage] = useState('')
+  const testUrlsRef = useRef(null)
+  const [testReady, setTestReady] = useState(false)
   const stop = () => {
     if (!audioRef.current) return
     const audio = audioRef.current
@@ -68,21 +73,54 @@ function useIpaPlayback() {
     audio.removeAttribute('src')
     audio.load()
   }
-  useEffect(() => () => {
-    if (audioRef.current) {
-      audioRef.current.pause()
-      audioRef.current.removeAttribute('src')
+  useEffect(() => {
+    const restored = restoreIpaTestZip()
+    if (restored) {
+      testUrlsRef.current = restored
+      setTestReady(true)
+    }
+    return () => {
+      if (audioRef.current) audioRef.current.pause()
+      discardIpaUrls(testUrlsRef.current)
+      testUrlsRef.current = null
     }
   }, [])
-  // All audio is offline-generated word audio from one US voice; a blue
-  // speaker plays the first example word, not an isolated IPA phoneme.
+  const loadTestZip = async event => {
+    const file = event.target.files?.[0]
+    if (!file) return
+    try {
+      const bytes = await file.arrayBuffer()
+      const urls = readIpaTestZip(bytes)
+      stop()
+      discardIpaUrls(testUrlsRef.current)
+      testUrlsRef.current = urls
+      saveIpaTestZip(bytes)
+      setTestReady(true)
+      setMessage('')
+    } catch (error) {
+      setMessage(error?.message || 'Could not read IPA ZIP')
+    } finally {
+      event.target.value = ''
+    }
+  }
+  const resetTestZip = () => {
+    stop()
+    discardIpaUrls(testUrlsRef.current)
+    testUrlsRef.current = null
+    clearIpaTestZip()
+    setTestReady(false)
+    setMessage('')
+  }
+  // IPA speakers use isolated audio when the user's test ZIP is loaded;
+  // examples continue to use the existing separately generated word WAVs.
   const play = (sound, l, word = null) => {
     stop()
     setMessage('')
     const first = (ipaExamples[sound.ipa] || [sound.word])[0]
     const spoken = word || first.replace(/[\[\]]/g, '')
     const filename = spoken.toLowerCase().replace(/[^a-z]/g, '') + '.wav'
-    const audio = new Audio(`${import.meta.env.BASE_URL}audio/ipa-one-voice/${filename}`)
+    const isolated = !word && testUrlsRef.current?.[sound.ipa]
+    const audio = new Audio(isolated || `${import.meta.env.BASE_URL}audio/ipa-one-voice/${filename}`)
     audioRef.current = audio
     const failed = () => {
       if (audioRef.current !== audio) return
@@ -100,7 +138,21 @@ function useIpaPlayback() {
     audio.onerror = failed
     try { audio.play().catch(failed) } catch { failed() }
   }
-  return { play, message }
+  return { play, message, testReady, loadTestZip, resetTestZip }
+}
+
+function IpaAudioTestImporter({ l, testReady, loadTestZip, resetTestZip }) {
+  return <div className="ipa-test-importer">
+    <label className="ipa-test-import-button">
+      <Glyph name="speaker" size={17}/>
+      <span>{testReady ? l.loadedSounds : l.loadSounds}</span>
+      <input type="file" accept=".zip,application/zip" onChange={loadTestZip}
+        aria-label={l.loadSounds}/>
+    </label>
+    {testReady && <button type="button" className="ipa-test-reset" onClick={resetTestZip}>
+      {l.resetSounds}
+    </button>}
+  </div>
 }
 
 function SoundButton({ sound, l, play, className = '' }) {
@@ -166,7 +218,7 @@ export default function IpaReference({ mode = 'study' }) {
   const { language } = useLanguage()
   const l = copy[language] ?? copy.en
   const [selected, setSelected] = useState('i')
-  const { play, message } = useIpaPlayback()
+  const { play, message, testReady, loadTestZip, resetTestZip } = useIpaPlayback()
   const sound = displayGroups.flatMap(group => group.sounds).find(item => item.ipa === selected) || vowels.sounds[0]
 
   if (mode === 'practice') return (
@@ -174,6 +226,7 @@ export default function IpaReference({ mode = 'study' }) {
       <p className="ip-kicker">{language === 'ja' ? 'レベルゼロ · 発音' : 'LEVEL ZERO · PRONUNCIATION'}</p>
       <h2>{l.practiceTitle}</h2>
       <p className="ip-context">{l.practiceIntro}</p>
+      <IpaAudioTestImporter l={l} testReady={testReady} loadTestZip={loadTestZip} resetTestZip={resetTestZip}/>
       <div className="ipa-focus ipa-focus--playable" onClick={() => play(sound, l)}>
         <div className="ipa-focus-top">
           <span className="ipa-focus-symbol" lang="en">{displaySymbol(sound.ipa)}</span>
@@ -207,6 +260,7 @@ export default function IpaReference({ mode = 'study' }) {
 
   return (
     <div className="ipa-reference ipa-study">
+      <IpaAudioTestImporter l={l} testReady={testReady} loadTestZip={loadTestZip} resetTestZip={resetTestZip}/>
       <div className="ipa-chart-grid">
         <SoundTable group={consonants} l={l} play={play}/>
         <div className="ipa-chart-right">

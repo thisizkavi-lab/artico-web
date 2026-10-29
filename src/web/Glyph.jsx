@@ -6,6 +6,13 @@ export default function Glyph({ name, size = 20 }) {
         <path d="M8 5v14M16 5v14" />
       </>
     ),
+    speaker: (
+      <>
+        <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+        <path d="M15 9a4 4 0 0 1 0 6" />
+        <path d="M18 6a8 8 0 0 1 0 12" />
+      </>
+    ),
     arrow: <path d="M4 12h15m-6-6 6 6-6 6" />,
     back: <path d="M20 12H5m6-6-6 6 6 6" />,
     repeat: (

@@ -155,9 +155,9 @@ export const foundationReading = {
         'You do not need to memorize every symbol now. Think of IPA as a **map**: each symbol helps you recognize a sound when you hear it.',
       ]),
       section('sounds-listen', 'The sounds we will explore.', [
-        'For our General American reference, we have organized the sounds into three groups: **consonants**, **vowels**, and **vowel glides**.',
-        'The chart has **24 consonant entries**, **12 vowel entries**, and **5 vowel glides** — 41 useful entries to explore. This is a learning chart, not a rule that every American has exactly 41 separate sounds. Different accents and dictionaries sometimes group sounds differently.',
-        'Read a little about each group, then use the buttons to listen to its example words.',
+        'We use two groups: **consonants** and **vowels**. Moving vowels (vowel glides) are part of the Vowels section.',
+        'The chart has **24 consonant entries**, **12 vowel entries**, and **5 vowel glides** under Vowels — 41 useful entries to explore. This is a learning chart, not a claim that every American has 41 distinct sounds.',
+        'Tap an IPA symbol or an example word to hear it. The highlighted letters show one spelling of that sound. Each recording plays the whole word.',
       ]),
       section('sounds-routine', 'Listen, notice, and try.', [
         'You do not need to master every sound today. Start with one example word. Listen, say it aloud, then try another word with a similar sound.',

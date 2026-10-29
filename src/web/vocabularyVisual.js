@@ -9,9 +9,10 @@ import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 import { vocabularyBodyIllustration } from './VocabularyBodyArt'
 
-// Artwork for Lessons 3–78 is now image-only. No inline SVG, generated
-// icon, procedural symbol, or cross-topic guessed image reaches a card.
-// Original educational PNGs take precedence over third-party raster art.
+// Most vocabulary cards use reviewed PNG illustrations. Lesson 14 is the
+// intentional exception: semantic vector drawings allow subtle, accessible
+// motions for gestures and breathing without raster/GIF sprite artifacts.
+// No cross-topic guessed picture reaches a card.
 function artworkFor(term, chapter) {
   const body = vocabularyBodyIllustration(term, chapter)
   if (body) return body

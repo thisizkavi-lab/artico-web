@@ -59,6 +59,40 @@
   font-weight:800;
   color:#334f84;
 }
+/* Deliberate emphasis only: selected clarifications use the quiet yellow
+   style from the Chapter 01 “Two uses of What's up?” reference. */
+.ip-page .ar-shared-study .ar-teaching-note {
+  margin:0;
+  padding:15px 20px 16px;
+  border:0;
+  border-radius:13px;
+  background:#fff3dc;
+  color:#182743;
+  box-shadow:none;
+  max-width:none;
+}
+.ip-page .ar-shared-study .ar-teaching-note-title {
+  display:block;
+  margin:0 0 5px;
+  color:#182743;
+  font-family:"Hanken Grotesk","Avenir Next",system-ui,sans-serif;
+  font-size:clamp(15px,1.65vw,18px);
+  line-height:1.3;
+  font-weight:830;
+  letter-spacing:-.015em;
+}
+.ip-page .ar-shared-study .ar-teaching-note-copy {
+  margin:0;
+  color:#182743;
+  font-size:clamp(13px,1.35vw,15px);
+  line-height:1.6;
+  font-weight:430;
+  letter-spacing:0;
+}
+.ip-page .ar-shared-study .ar-teaching-note-copy strong {
+  color:inherit;
+  font-weight:760;
+}
 .ip-page .ar-shared-study .ip-note{
   max-width:none;
   margin:0;

@@ -15,6 +15,7 @@ import {
   togglePracticePhrase,
 } from './phrasePractice'
 import Chapter01Illustrated from './Chapter01Illustrated'
+import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
@@ -832,7 +833,7 @@ function Experience({ route, learning, update, save, notify }) {
           </div>
         </div>
       ) : (
-        <Study audioProps={audioProps} focusedId={focusedId} />
+        {id === '01' ? <GreetingsReferenceStudy audioProps={audioProps} /> : <Study audioProps={audioProps} focusedId={focusedId} />}
       )}
       <LessonFooter route={route} practice={practice} />
     </div>

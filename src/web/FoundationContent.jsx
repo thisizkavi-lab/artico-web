@@ -970,6 +970,7 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
   const [duration, setDuration] = useState(0)
   const [playbackRate, setPlaybackRate] = useState(1)
   const [looping, setLooping] = useState(false)
+  const playbackSpeeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
 
   const stopPlayback = () => {
     const audio = audioRef.current
@@ -1049,8 +1050,7 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
 
   const cycleSpeed = () => {
     if (!src) return
-    const speeds = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
-    setPlaybackRate((rate) => speeds[(speeds.indexOf(rate) + 1) % speeds.length])
+    setPlaybackRate((rate) => playbackSpeeds[(playbackSpeeds.indexOf(rate) + 1) % playbackSpeeds.length])
   }
 
   const toggleLoop = () => {
@@ -1070,41 +1070,76 @@ export function TheoryAudioSample({ phrase, target, src, compact = false, naviga
   }
 
   return (
-    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${navigation ? ' tt-transport-player' : ''}`}>
+    <div className={`theory-audio-sample ${src ? '' : 'is-pending'}${compact ? ' tt-audio-compact' : ''}${navigation ? ' tt-transport-player tt-modern-player' : ''}`}>
       {src && <audio ref={audioRef} src={src} preload="metadata" />}
       {navigation ? (
         <>
-          <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '早口言葉の操作' : 'Tongue twister controls'}>
+          <div className="tt-transport-main" role="group" aria-label={language === 'ja' ? '音声と練習の操作' : 'Audio and practice controls'}>
             <button type="button" className="tt-transport-replay" onClick={rewind} disabled={!src}
               aria-label={t('Replay')} title={t('Replay')}>
-              <span aria-hidden="true">↶</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3.5 10A9 9 0 1 1 5.5 17.8" />
+                <path d="M3.5 4.7V10h5.3" />
+              </svg>
             </button>
             <button type="button" className={`tt-transport-loop${looping ? ' active' : ''}`} onClick={toggleLoop}
               disabled={!src} aria-pressed={looping}
               aria-label={looping ? t('Turn loop off') : t('Turn loop on')}
               title={language === 'ja' ? 'くり返す' : 'Loop'}>
-              <span aria-hidden="true">↻</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 3.5 20 6.5l-3 3" />
+                <path d="M20 6.5H8a5 5 0 0 0-5 5" />
+                <path d="M7 20.5 4 17.5l3-3" />
+                <path d="M4 17.5h12a5 5 0 0 0 5-5" />
+              </svg>
             </button>
             <button type="button" className="tt-transport-previous"
               disabled={navigation.previousDisabled}
               onClick={navigation.onPrevious}
               aria-label={navigation.labelType === 'chunk' ? (language === 'ja' ? '前の部分' : 'Previous chunk') : (language === 'ja' ? '前の早口言葉' : 'Previous tongue twister')}
               title={navigation.labelType === 'chunk' ? (language === 'ja' ? '前の部分' : 'Previous chunk') : (language === 'ja' ? '前の早口言葉' : 'Previous tongue twister')}>
-              <span aria-hidden="true">◀</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <rect x="4" y="5" width="2.1" height="14" rx="1" />
+                <path d="M18.7 5.8 7.2 12l11.5 6.2Z" />
+              </svg>
             </button>
             <button type="button" className="theory-audio-play" onClick={toggle} disabled={!src}
               aria-label={src ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase }) : t('Audio not yet available: {phrase}', { phrase })}>
-              <PlayIcon pause={playing} />
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                {playing ? (
+                  <>
+                    <rect x="6.5" y="5.5" width="4" height="13" rx="1" />
+                    <rect x="13.5" y="5.5" width="4" height="13" rx="1" />
+                  </>
+                ) : (
+                  <path d="M8 5.4a1 1 0 0 1 1.55-.83l10.1 6.6a1 1 0 0 1 0 1.66l-10.1 6.6A1 1 0 0 1 8 18.6Z" />
+                )}
+              </svg>
             </button>
             <button type="button" className="tt-transport-next" onClick={navigation.onNext} disabled={navigation.nextDisabled}
               aria-label={navigation.labelType === 'chunk' ? (language === 'ja' ? '次の部分' : 'Next chunk') : (language === 'ja' ? '次の早口言葉' : 'Next tongue twister')}
               title={navigation.labelType === 'chunk' ? (language === 'ja' ? '次の部分' : 'Next chunk') : (language === 'ja' ? '次の早口言葉' : 'Next tongue twister')}>
-              <span aria-hidden="true">▶</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M5.3 5.8 16.8 12 5.3 18.2Z" />
+                <rect x="17.9" y="5" width="2.1" height="14" rx="1" />
+              </svg>
             </button>
-            <button type="button" className="tt-transport-speed" onClick={cycleSpeed} disabled={!src}
-              aria-label={t('Playback speed {speed}', { speed: speedLabel })} title={language === 'ja' ? '再生速度' : 'Speed'}>
-              {speedLabel}
-            </button>
+            <label className="tt-transport-speed-picker">
+              <span className="tt-visually-hidden">{language === 'ja' ? '再生速度' : 'Playback speed'}</span>
+              <select
+                value={playbackRate}
+                disabled={!src}
+                onChange={(event) => setPlaybackRate(Number(event.target.value))}
+                aria-label={language === 'ja' ? '再生速度' : 'Playback speed'}
+              >
+                {playbackSpeeds.map((speed) => (
+                  <option value={speed} key={speed}>{speed.toFixed(2).replace(/0$/, '')}x</option>
+                ))}
+              </select>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </label>
           </div>
           <input type="range" className="tt-audio-progress tt-transport-progress" min="0" max="100" step="0.1"
             value={progress} disabled={!src} onChange={(event) => seek(Number(event.target.value))}

@@ -366,7 +366,8 @@ function Study({ audioProps, focusedId }) {
             }
             return block.type === 'phrases' ? (
               <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
-                byId={introductionById} audioProps={audioProps} focusedId={focusedId} />
+                byId={introductionById} audioProps={audioProps} focusedId={focusedId}
+                title={lessonId === '02' ? block.title : undefined} />
             ) : (
               <div className="ip-phrase-grid" key={blockIndex}>
                 {block.phrases?.map((id) => (

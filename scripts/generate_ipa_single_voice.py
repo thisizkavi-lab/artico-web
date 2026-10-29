@@ -37,7 +37,7 @@ def inventory():
             raise RuntimeError(f"Exactly two examples required for /{ipa}/")
         resolved = []
         for marked in marked_words:
-            if not isinstance(marked, str) or not re.fullmatch(r"[a-z]*\\[[a-z]+\\][a-z]*", marked):
+            if not isinstance(marked, str) or not re.fullmatch(r"[a-z]*\[[a-z]+\][a-z]*", marked):
                 raise RuntimeError(f"Missing single highlighted spelling in {marked!r}")
             word = marked.replace("[", "").replace("]", "")
             resolved.append(word)

@@ -3,6 +3,37 @@ import { useLanguage } from './Language'
 import { landingPageCopy } from './landingCopy'
 import './landing.css'
 
+/* Three slightly different pen gestures, not a standard CSS underline. */
+const HERO_INK_PATHS = [
+  'M3 12 C29 8.2 54 10.5 75 9.9 S124 11.3 157 7.5',
+  'M3 10.3 C29 12.7 45 8.2 70 9.6 S127 7.3 157 10.8',
+  'M3 11.4 C34 8 54 12.8 83 10.2 S133 8.8 157 8',
+]
+
+function InkWord({ children, order }) {
+  return (
+    <span className={`al-splash-ink al-splash-ink-${order}`}>
+      {children}
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 160 20" preserveAspectRatio="none">
+        <path d={HERO_INK_PATHS[order]} pathLength="100" />
+      </svg>
+    </span>
+  )
+}
+
+function renderHeroDescription(description, language) {
+  const words = language === 'ja'
+    ? ['話し', 'つながり', '新しいものを生み出す']
+    : ['communicate', 'connect', 'create']
+  const pattern = language === 'ja'
+    ? /(話し|つながり|新しいものを生み出す)/g
+    : /(communicate|connect|create)/g
+  return description.split(pattern).map((part, index) => {
+    const order = words.indexOf(part)
+    return order === -1 ? part : <InkWord key={index} order={order}>{part}</InkWord>
+  })
+}
+
 export default function Landing() {
   const { language, setLanguage } = useLanguage()
   const copy = landingPageCopy[language]
@@ -148,7 +179,7 @@ export default function Landing() {
               <span>{copy.heroTitle[0]}</span>{' '}
               <span>{copy.heroTitle[1]}</span>
             </h1>
-            <p className="al-splash-description" lang={language}>{copy.heroDescription}</p>
+            <p className="al-splash-description" lang={language}>{renderHeroDescription(copy.heroDescription, language)}</p>
             <a className="al-splash-cta" href="#/home">{copy.start}</a>
           </div>
         </section>

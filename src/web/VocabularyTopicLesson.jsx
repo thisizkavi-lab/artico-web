@@ -66,6 +66,68 @@ function WeekDaysChart({ japanese }) {
 }
 
 
+const yearMonths = [
+  { name: 'January', short: 'Jan.', ja: '1月' },
+  { name: 'February', short: 'Feb.', ja: '2月' },
+  { name: 'March', short: 'Mar.', ja: '3月' },
+  { name: 'April', short: 'Apr.', ja: '4月' },
+  { name: 'May', short: 'May', ja: '5月' },
+  { name: 'June', short: 'Jun.', ja: '6月' },
+  { name: 'July', short: 'Jul.', ja: '7月' },
+  { name: 'August', short: 'Aug.', ja: '8月' },
+  { name: 'September', short: 'Sep.', ja: '9月' },
+  { name: 'October', short: 'Oct.', ja: '10月' },
+  { name: 'November', short: 'Nov.', ja: '11月' },
+  { name: 'December', short: 'Dec.', ja: '12月' },
+]
+
+function MonthsOfYearChart({ japanese }) {
+  return (
+    <section className="vlt-month-chart" aria-label={japanese ? '12か月の英語名と略語' : 'Months of the year and abbreviations'}>
+      <header className="vlt-month-chart-header">
+        <div>
+          <span className="vlt-month-chart-overline">{japanese ? '1年 · 12か月' : 'ONE YEAR · 12 MONTHS'}</span>
+          <h4 lang="en">Months of the year</h4>
+        </div>
+        <span className="vlt-month-chart-hint">{japanese ? '正式名と短縮形' : 'FULL NAME & SHORT FORM'}</span>
+      </header>
+      <table className="vlt-month-table">
+        <colgroup>
+          <col className="vlt-month-number-column" />
+          <col className="vlt-month-name-column" />
+          <col className="vlt-month-short-column" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">{japanese ? '月の名前' : 'Month'}</th>
+            <th scope="col">{japanese ? '略語' : 'Short form'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {yearMonths.map((month, index) => (
+            <tr key={month.name}>
+              <td className="vlt-month-number">{index + 1}</td>
+              <th scope="row" className="vlt-month-name">
+                <strong lang="en">{month.name}</strong>
+                {japanese && <small lang="ja">{month.ja}</small>}
+              </th>
+              <td className="vlt-month-abbreviation">
+                <abbr title={month.name} lang="en">{month.short}</abbr>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="vlt-month-chart-footnote">
+        {japanese
+          ? 'May は通常短くしません。September は Sept. とも書きます。カレンダーなどではピリオドを省くこともあります。'
+          : 'May is usually written in full. Sept. is also common for September. Calendars sometimes omit the periods.'}
+      </p>
+    </section>
+  )
+}
+
 function Visual({visual}) {
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
@@ -186,6 +248,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
           const {fresh,revisited} = organizeVocabularyGroup(group.items, topic.sourceLesson)
           const cards = mode === 'study' ? fresh : fresh.filter(([term]) => canRecall(term))
           const isDaysChart = topic.sourceLesson === 3 && group.index === 1
+          const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -203,7 +266,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
               {cards.length > 0
                 ? (isDaysChart && mode === 'study'
                   ? <WeekDaysChart japanese={japanese} />
-                  : <div className="vlt-grid">
+                  : isMonthsChart && mode === 'study'
+                    ? <MonthsOfYearChart japanese={japanese} />
+                    : <div className="vlt-grid">
                     {cards.map((entry, index) => {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}

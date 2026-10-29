@@ -128,6 +128,56 @@ function MonthsOfYearChart({ japanese }) {
   )
 }
 
+
+const timeSpanEquivalents = {
+  second: '1/60 of a minute',
+  minute: '60 seconds',
+  hour: '60 minutes',
+  day: '24 hours',
+  week: '7 days',
+  'two weeks / a fortnight': '14 days',
+  month: '28–31 days',
+  year: '12 months',
+  decade: '10 years',
+  century: '100 years',
+  'millennium / millennia': '1,000 years',
+}
+
+function TimeSpansTable({ items, japanese }) {
+  return (
+    <section className="vlt-span-chart" aria-label={japanese ? '時間の単位と長さの一覧' : 'Units and spans of time'}>
+      <header className="vlt-span-chart-header">
+        <div>
+          <span className="vlt-span-chart-overline">{japanese ? '秒から千年紀まで' : 'FROM SECONDS TO MILLENNIA'}</span>
+          <h4 lang="en">Units and spans of time</h4>
+        </div>
+      </header>
+      <table className="vlt-span-table">
+        <thead>
+          <tr>
+            <th scope="col">{japanese ? '時間の単位' : 'Unit or span'}</th>
+            <th scope="col">{japanese ? '長さ・意味' : 'How long?'}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map(([term]) => (
+            <tr key={term}>
+              <th scope="row" className="vlt-span-name">
+                <strong lang="en">{term}</strong>
+                {japanese && <small lang="ja">{vocabularyJapanese(term, 3)}</small>}
+              </th>
+              <td className="vlt-span-equivalent" lang="en">{timeSpanEquivalents[term]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="vlt-span-footnote">{japanese
+        ? '月の日数は28～31日です。fortnight は「2週間」の意味ですが、日常のアメリカ英語では two weeks のほうが一般的です。millennia は millennium の複数形です。'
+        : 'Months vary from 28 to 31 days. In everyday American English, “two weeks” is more common than “a fortnight.” “Millennia” is the plural of “millennium.”'}</p>
+    </section>
+  )
+}
+
 function Visual({visual}) {
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
@@ -249,6 +299,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
           const cards = mode === 'study' ? fresh : fresh.filter(([term]) => canRecall(term))
           const isDaysChart = topic.sourceLesson === 3 && group.index === 1
           const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
+          const isTimeSpansTable = topic.sourceLesson === 3 && group.index === 4
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -268,7 +319,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                   ? <WeekDaysChart japanese={japanese} />
                   : isMonthsChart && mode === 'study'
                     ? <MonthsOfYearChart japanese={japanese} />
-                    : <div className="vlt-grid">
+                    : isTimeSpansTable && mode === 'study'
+                      ? <TimeSpansTable items={cards} japanese={japanese} />
+                      : <div className="vlt-grid">
                     {cards.map((entry, index) => {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}

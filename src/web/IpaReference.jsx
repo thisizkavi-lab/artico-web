@@ -40,7 +40,7 @@ const copy = {
     soundIn: 'Hear the word',
   },
   ja: {
-    symbol: 'IPA', word: '単語の例', listen: '聞く',
+    symbol: 'IPA', word: 'Examples', listen: '聞く',
     playingRecording: '単語の音声を再生中',
     unavailable: '音声を再生できませんでした。もう一度お試しください。',
     choose: '音を選ぶ', practiceTitle: '聞く・言う・比べる',
@@ -141,7 +141,7 @@ function SoundExamples({ sound, l, play }) {
 function SoundTable({ group, l, play }) {
   return (
     <section className="ipa-table-section" id={`ipa-${group.id}`}>
-      <h3 className="ipa-table-heading">{l === copy.ja ? group.ja : group.title}</h3>
+      <h3 className="ipa-table-heading">{group.title}</h3>
       <div className="ipa-table-scroll">
         <table className="ipa-table">
           <thead><tr><th scope="col">{l.symbol}</th><th scope="col">{l.word}</th></tr></thead>

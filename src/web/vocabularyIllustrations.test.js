@@ -134,3 +134,32 @@ test('new commute illustrations and merged equivalent expression pictures stay c
   assert.ok(load('vocabularyVisual.js').includes("combinedVocabulary"))
   assert.ok(load('vocabularyVisual.js').includes("combined === term"))
 })
+
+
+test('Lesson 14 body vocabulary has intentional art for every previously unillustrated concept',()=>{
+  const lesson=source.lessons.find(l=>l.sourceLesson===14)
+  const words=lesson.groups.flatMap(g=>g.items.map(item=>item[0]))
+  assert.equal(words.length,62,'Keep the editorial source corpus intact')
+  assert.ok(words.includes('body, parts of'))
+  assert.match(view,/term !== 'body, parts of'/,'Do not show a category heading as a flashcard')
+  assert.match(view,/vlt-body-note/,'Explain whole-part relationships for head, hand and leg')
+
+  const report=JSON.parse(readFileSync(new URL('../../reports/vocabulary-static-png-coverage.json',import.meta.url),'utf8'))
+  const missing=report.entries_without_static_png['14']
+  assert.equal(missing.length,38)
+  const art=load('VocabularyBodyArt.jsx')
+  const motion=load('vocabulary-body-art.css')
+  const actual=missing.filter(term=>term!=='body, parts of')
+  assert.equal(actual.length,37)
+  for(const term of actual)
+    assert.ok(art.includes("'"+term+"'"),'Missing lesson 14 drawing: '+term)
+  for(const term of ['blink','nod','smile'])
+    assert.ok(art.includes("'"+term+"'"),'Existing static art should also move: '+term)
+  assert.match(visual,/vocabularyBodyIllustration\(term, chapter\)/)
+  assert.match(view,/visual\?\.type === 'body-art'/)
+  assert.match(motion,/@media\(prefers-reduced-motion:reduce\)/)
+  assert.match(motion,/@keyframes bv-blink/)
+  assert.match(motion,/@keyframes bv-breath/)
+  assert.match(motion,/@keyframes bv-shiver/)
+  assert.match(motion,/@keyframes bv-bow/)
+})

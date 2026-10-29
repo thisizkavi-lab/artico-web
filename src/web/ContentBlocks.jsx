@@ -1,6 +1,6 @@
 import './readable-course.css'
 import { useLanguage } from './Language'
-import { PhraseCard } from './LessonExperience'
+import ReferencePhraseShelf from './ReferencePhraseShelf'
 const plain = (runs) => runs.map((run) => run.text).join('')
 export function RichText({ runs = [] }) {
   return runs.map((run, index) =>
@@ -30,11 +30,18 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
     content = (
       <>
         <p className="ip-kicker">{block.header.map(plain).join(' · ')}</p>
-        <div className="ip-phrase-grid rc-examples">
-          {block.phraseIds.map((id) => (
-            <PhraseCard key={id} id={id} audioProps={audioProps} focusedId={focusedId} />
-          ))}
-        </div>
+        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} title={block.header.map(plain).join(' · ')} />
+        <details className="ar-reference-source-table">
+          <summary>{language === 'ja' ? '元の表を表示' : 'View the full reference table'}</summary>
+          <div className="rc-table" role="region" aria-label={block.header.map(plain).join(' / ')} tabIndex={0}>
+            <table>
+              <thead><tr>{block.header.map((cell, i) => <th scope="col" key={i}><RichText runs={cell} /></th>)}</tr></thead>
+              <tbody>{block.rows.map((row, i) => <tr key={i}>{row.map((cell,j) => j===0
+                ? <th scope="row" key={j}><RichText runs={cell} /></th>
+                : <td key={j}><RichText runs={cell} /></td>)}</tr>)}</tbody>
+            </table>
+          </div>
+        </details>
       </>
     )
   else if (block.type === 'table')
@@ -133,11 +140,7 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
     <div className="rc-source" data-source-block={block.id}>
       {content}
       {examples && !phraseTable && block.phraseIds?.length > 0 && (
-        <div className="ip-phrase-grid rc-examples">
-          {block.phraseIds.map((id) => (
-            <PhraseCard key={id} id={id} audioProps={audioProps} focusedId={focusedId} />
-          ))}
-        </div>
+        <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} />
       )}
     </div>
   )

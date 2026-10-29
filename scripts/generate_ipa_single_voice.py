@@ -15,6 +15,7 @@ import wave
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "src/web/ipaSounds.js"
 DEST = ROOT / "public/audio/ipa-one-voice"
+EXAMPLES = ROOT / "src/web/ipaExamples.json"
 MODEL = "en_US-ljspeech-medium"
 # These are the source entries in the curriculum: don't guess phoneme count.
 ENTRY = re.compile(r"\bc\('([^']+)','([A-Za-z]+)'")
@@ -25,14 +26,32 @@ def inventory():
     entries = ENTRY.findall(text)
     if len(entries) != EXPECTED_ENTRIES or len(set(ipa for ipa, _ in entries)) != len(entries):
         raise RuntimeError(f"Expected {EXPECTED_ENTRIES} unique IPA entries; found {len(entries)}")
-    words = sorted({word.lower() for _, word in entries})
-    return entries, words
+    examples = json.loads(EXAMPLES.read_text(encoding="utf-8"))
+    if set(examples) != {ipa for ipa, _ in entries}:
+        raise RuntimeError("IPA example map must cover every sound exactly once")
+    annotated = {}
+    words = {word.lower() for _, word in entries}
+    for ipa, primary in entries:
+        marked_words = examples[ipa]
+        if not isinstance(marked_words, list) or len(marked_words) != 2:
+            raise RuntimeError(f"Exactly two examples required for /{ipa}/")
+        resolved = []
+        for marked in marked_words:
+            if not isinstance(marked, str) or not re.fullmatch(r"[a-z]*\\[[a-z]+\\][a-z]*", marked):
+                raise RuntimeError(f"Missing single highlighted spelling in {marked!r}")
+            word = marked.replace("[", "").replace("]", "")
+            resolved.append(word)
+            words.add(word)
+        if primary.lower() not in resolved:
+            raise RuntimeError(f"Original audio word {primary} missing from /{ipa}/ examples")
+        annotated[ipa] = resolved
+    return entries, sorted(words), annotated
 
 def main():
     if len(sys.argv) != 2:
         raise SystemExit("usage: python scripts/generate_ipa_single_voice.py /path/to/en_US-ljspeech-medium.onnx")
     from piper import PiperVoice
-    entries, words = inventory()
+    entries, words, examples = inventory()
     voice = PiperVoice.load(sys.argv[1])
     DEST.mkdir(parents=True, exist_ok=True)
     for old in DEST.glob("*.wav"):
@@ -56,6 +75,7 @@ def main():
         "training_dataset": "https://keithito.com/LJ-Speech-Dataset/",
         "note": "Word recordings, not isolated phonemes. Review vowel distinctions and pronunciation before release as authoritative phonetics.",
         "entries": [{"ipa": ipa, "word": word, "file": f"{word.lower()}.wav"} for ipa, word in entries],
+        "examples": {ipa: [{"word": word, "file": f"{word}.wav"} for word in words_for_sound] for ipa, words_for_sound in examples.items()},
         "unique_audio_count": len(words),
         "durations_seconds": durations,
     }

@@ -156,7 +156,9 @@ export default function Landing() {
           <div className="al-why-inner">
             <header className="al-why-heading">
               <p className="al-why-overline">{copy.whyEyebrow}</p>
-              <h2 id="al-why-title">{copy.whyTitle}</h2>
+              <h2 id="al-why-title">{language === 'en' && copy.whyTitle.endsWith('?')
+                ? <>{copy.whyTitle.slice(0, -1)}<span className="al-why-question-mark">?</span></>
+                : copy.whyTitle}</h2>
               <span className="al-why-accent" aria-hidden="true" />
             </header>
             <div className="al-why-story">

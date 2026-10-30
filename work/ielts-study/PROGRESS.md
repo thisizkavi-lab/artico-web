@@ -11,7 +11,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 ## Batch Summary
 
 - [x] **Batch 1 — Core Engine, Reference Banks (`8`), SVG Diagrams (`23`), Media Slots (`10`), Reader UI & Linter**
-- [ ] **Batch 2 — Module 1A: Everything about IELTS · Parts 1.1 & 1.2 (`12` units · `Preamble`, `§1.1–1.7`, `§2.1–2.9`)**
+- [x] **Batch 2 — Module 1A: Everything about IELTS · Parts 1.1 & 1.2 (`12` units · `Preamble`, `§1.1–1.7`, `§2.1–2.9`)**
 - [ ] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
 - [ ] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
 - [ ] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
@@ -37,18 +37,18 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 ## All 85 Study Units Checklist
 
 ### Module 1 · `overview` (`21` units)
-- [ ] `ov-how-to-read` (`Preamble`)
-- [ ] `ov-what-ielts-measures` (`1.1`)
-- [ ] `ov-choose-correct-test` (`1.2`)
-- [ ] `ov-format-and-timing` (`1.3`)
-- [ ] `ov-delivery-modes-2026` (`1.4`)
-- [ ] `ov-scores-and-raw-marks` (`1.5`, `1.6`)
-- [ ] `ov-assessment-terms` (`1.7`)
-- [ ] `ov-preparation-cycle` (`2.1`)
-- [ ] `ov-diagnose-and-error-log` (`2.2`, `2.3`)
-- [ ] `ov-usable-vocabulary` (`2.4`, `2.5`, `2.6`)
-- [ ] `ov-synonym-checks` (`2.7`)
-- [ ] `ov-grammar-and-clear-meaning` (`2.8`, `2.9`)
+- [x] `ov-how-to-read` (`Preamble`)
+- [x] `ov-what-ielts-measures` (`1.1`)
+- [x] `ov-choose-correct-test` (`1.2`)
+- [x] `ov-format-and-timing` (`1.3`)
+- [x] `ov-delivery-modes-2026` (`1.4`)
+- [x] `ov-scores-and-raw-marks` (`1.5`, `1.6`)
+- [x] `ov-assessment-terms` (`1.7`)
+- [x] `ov-preparation-cycle` (`2.1`)
+- [x] `ov-diagnose-and-error-log` (`2.2`, `2.3`)
+- [x] `ov-usable-vocabulary` (`2.4`, `2.5`, `2.6`)
+- [x] `ov-synonym-checks` (`2.7`)
+- [x] `ov-grammar-and-clear-meaning` (`2.8`, `2.9`)
 - [ ] `ov-lang-50-concepts` (`10.1`, `10.2`)
 - [ ] `ov-lang-precision-distinctions` (`10.3`)
 - [ ] `ov-lang-59-patterns` (`10.4`)

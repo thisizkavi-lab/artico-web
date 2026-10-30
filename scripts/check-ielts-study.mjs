@@ -151,22 +151,44 @@ function extractInstructionalText(unit) {
         pieces.push(seg.note)
       }
     } else if (block.type === 'contrastPair') {
-      pieces.push(block.weak.whyItFails, block.controlled.whyItWorks)
+      if (block.weak) pieces.push(block.weak.text, block.weak.whyItFails)
+      if (block.controlled) pieces.push(block.controlled.text, block.controlled.whyItWorks)
+    } else if (block.type === 'comparisonTable') {
+      if (block.caption) pieces.push(block.caption)
+      if (Array.isArray(block.rows)) {
+        for (const row of block.rows) {
+          for (const cell of row) pieces.push(cell)
+        }
+      }
+    } else if (block.type === 'trackCompare') {
+      if (block.academic?.points) pieces.push(...block.academic.points)
+      if (block.generalTraining?.points) pieces.push(...block.generalTraining.points)
+    } else if (block.type === 'mythBuster') {
+      if (Array.isArray(block.items)) {
+        for (const item of block.items) {
+          pieces.push(item.claim, item.reality, item.takeaway)
+        }
+      }
     } else if (block.type === 'decisionTree') {
       pieces.push(block.question)
       for (const b of block.branches) {
         pieces.push(b.condition, b.outcome, b.detail || '')
       }
     } else if (block.type === 'diagnosticCheck') {
+      if (block.prompt) pieces.push(block.prompt)
       for (const opt of block.options) {
-        pieces.push(opt.rationale)
+        pieces.push(opt.label, opt.rationale)
       }
     } else if (block.type === 'selfCheck') {
       pieces.push(...block.items)
     }
   }
 
-  return pieces.filter(Boolean).join(' ')
+  return pieces
+    .filter(Boolean)
+    .map((p) => p.trim())
+    .map((p) => (/[.!?:]$/.test(p) ? p : `${p}.`))
+    .join(' ')
 }
 
 export function auditUnit(unit, validateUnitFn) {

@@ -23,8 +23,8 @@ export const MODULE_METADATA = [
     fact: 'Assessment framework · Strategy · Language reference',
     scope: 'Understand the test format, official band scoring, preparation routines, and core language reference banks.',
     parts: [
-      { id: 'ov-part-1-1', title: 'Part 1.1 · Test Architecture & Conditions', count: 6 },
-      { id: 'ov-part-1-2', title: 'Part 1.2 · The Preparation Method', count: 6 },
+      { id: 'ov-part-1-1', title: 'Part 1.1 · Test Architecture & Conditions', count: 7 },
+      { id: 'ov-part-1-2', title: 'Part 1.2 · The Preparation Method', count: 5 },
       { id: 'ov-part-1-3', title: 'Part 1.3 · Reference Language Banks', count: 5 },
       { id: 'ov-part-1-4', title: 'Part 1.4 · Diagnosis, Plan & Quality Control', count: 4 },
     ],

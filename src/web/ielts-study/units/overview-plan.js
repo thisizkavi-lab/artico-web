@@ -9,7 +9,7 @@
  *   - ov-claims-checklists-sources (12.1–12.3, A.1–A.4)
  */
 
-import { WORD_BANKS } from '../wordBanks'
+import { WORD_BANKS } from '../wordBanks.js'
 
 export const overviewPlanUnits = [
   // 18. ov-targets-evidence-cycle (11.1–11.5)

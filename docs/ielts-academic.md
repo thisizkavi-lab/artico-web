@@ -4,12 +4,30 @@ Entry: `#/application/tests` → `#/application/tests/ielts/home/study`.
 
 ## Released structure
 
-Eight directories reuse Artico’s existing visual system: Overview, Speaking,
-Writing, Listening, Reading, Guided Sets, Individual Skill Mocks, Full Simulations.
-The IELTS Study / Practice control and all instructional content are English-only.
-Other courses retain their existing explanation language.
+The IELTS track provides two complementary, non-overlapping modes accessible via the top-level mode toggle:
 
-## Content in this release
+1. **Study Mode (`artico-ielts-study-v1`):** An uncompromised, 85-unit pedagogical reference manual structured into five modules:
+   - Module 1: Everything about IELTS (`overview`, 21 units) covering test structure, delivery modes, 9-band scale, language reference banks, and study planning.
+   - Module 2: Listening (`listening`, 11 units) covering all 4 section contexts, question types, distractor analysis, and recovery techniques.
+   - Module 3: Reading (`reading`, 14 units) covering passage mapping, claim analysis, all question types, pacing, and separated General Training reading.
+   - Module 4: Writing (`writing`, 29 units) covering writing foundations, Academic Task 1 data/process/map reporting, Task 2 essay architecture, and separated General Training Task 1 letters.
+   - Module 5: Speaking (`speaking`, 10 units) covering the 3-part face-to-face interview, long turn preparation, abstract discussion, pronunciation, and criteria.
+   Zero gamification: no streaks, XP, points, badges, confetti, or locked units.
+
+2. **Practice Mode:** Interactive rehearsal workspaces across eight directories: Overview, Speaking, Writing, Listening, Reading, Guided Sets, Individual Skill Mocks, Full Simulations.
+
+The IELTS Study / Practice control and all instructional content are English-only. Other courses retain their existing explanation language.
+
+## Study Course Architecture (`artico-ielts-study-v1`)
+
+- **Full Reference Coverage:** All 173 source sections (`1.1–12.3`, `A.1–A.4`, and Preamble) from the 25,825-word syllabus are faithfully authored into 85 units without simplification, truncation, or superficial summaries.
+- **Artico Study English (ASE):** Every unit follows strict instructional writing standards (320–1,150 explanation words per unit, short sentences, paragraph bounds, zero hype or empty promises, clear condition-before-action methods).
+- **Constructive SVG Diagrams:** 23 technical SVG diagrams (`IeltsStudyDiagrams.jsx`) illustrating band scales, score calculation, pacing timelines, essay structures, question workflows, and speaking phases, visually inspected for label clarity.
+- **Media Slots:** 10 media slots (`mediaManifest.js`) including 2 active synthetic audio listening workshops and 8 reserved curriculum audio slots containing verbatim scripts.
+- **Reference Word Banks:** Comprehensive reference banks in `wordBanks.js` containing 50 common concepts, 59 vocabulary patterns, 16 topic phrases, 18 optional idioms, 10 register expressions, 19 grammar repairs, a filterable 29-claim myth buster, and 19 official reference URLs.
+- **General Training Separation:** General Training units are explicitly tagged (`track: 'gt'`) and quarantined from the primary Academic curriculum.
+
+## Practice Content in this release
 
 - Four skill introductions with criteria, working methods, decoded examples, and reflection workbooks.
 - Six Speaking Part 2 workshops with general follow-up questions.
@@ -49,10 +67,12 @@ uses the committed files and does not call an external speech API.
 
 ## Verification
 
-`pnpm test` includes `src/web/ielts.test.js`: deep links, content/evidence references,
-asset existence, storage round trips, exposure, deadlines, pauses, shared Writing time,
-post-deadline answer rejection, and idempotent completion. `pnpm run build` verifies
-the production GitHub Pages base path. Browser QA covers the actual interaction loop.
+- `npm test` runs both test suites:
+  - `src/web/ielts.test.js`: Practice Mode verification (162 tests covering deep links, content/evidence references, asset existence, storage round trips, exposure, deadlines, pauses, shared Writing time, post-deadline answer rejection, and idempotent completion).
+  - `src/web/ieltsStudy.test.js`: Study Mode verification (8 test suites asserting coverage COV01–06 of all 85 units, visual diagrams VIS01, media slots VIS03, anti-gamification NOGAME01–03, and routing / GT separation).
+  - Total: 170 passing tests.
+- `node scripts/check-ielts-study.mjs --strict`: Full static analysis enforcing schema integrity, glossary cross-references, ASE writing rules, word count boundaries, paragraph limits, and zero gamification.
+- `npm run build`: Production Vite build validation.
 
 Official sources are linked from Overview and Skill Mocks. Provider examples stay
 on their own sites; book pages, proprietary question banks, and private research

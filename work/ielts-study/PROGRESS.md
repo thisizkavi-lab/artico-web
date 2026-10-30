@@ -17,7 +17,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
 - [x] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
 - [x] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
-- [ ] **Batch 8 — Module 5: Speaking (`10` units · `§9.1–9.24`) + `ieltsStudy.test.js` + Full `npm test && npm run build`**
+- [x] **Batch 8 — Module 5: Speaking (`10` units · `§9.1–9.24`) + `ieltsStudy.test.js` + Full `npm test && npm run build`**
 
 ---
 
@@ -120,13 +120,13 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `w-gt-conventions-informal-check` (`[GT]`, `7.6`, `7.7`, `7.8`, `7.9`)
 
 ### Module 5 · `speaking` (`10` units)
-- [ ] `s-interview-and-criteria` (`9.1`, `9.2`)
-- [ ] `s-procedural-and-part1` (`9.3`, `9.4`, `9.5`)
-- [ ] `s-part2-decode-and-prepare` (`9.6`, `9.7`)
-- [ ] `s-part2-long-turn-and-timeframes` (`9.8`, `9.9`)
-- [ ] `s-part3-operations-and-development` (`9.10`, `9.11`)
-- [ ] `s-frameworks-unfamiliar-pauses` (`9.12`, `9.13`, `9.14`)
-- [ ] `s-natural-language-and-functions` (`9.15`, `9.16`)
-- [ ] `s-pronunciation-stress-pace` (`9.17`, `9.18`, `9.19`)
-- [ ] `s-self-correction-and-review` (`9.20`, `9.21`)
-- [ ] `s-models-shadowing-ai-myths` (`9.22`, `9.23`, `9.24`)
+- [x] `s-interview-and-criteria` (`9.1`, `9.2`)
+- [x] `s-procedural-and-part1` (`9.3`, `9.4`, `9.5`)
+- [x] `s-part2-decode-and-prepare` (`9.6`, `9.7`)
+- [x] `s-part2-long-turn-and-timeframes` (`9.8`, `9.9`)
+- [x] `s-part3-operations-and-development` (`9.10`, `9.11`)
+- [x] `s-frameworks-unfamiliar-pauses` (`9.12`, `9.13`, `9.14`)
+- [x] `s-natural-language-and-functions` (`9.15`, `9.16`)
+- [x] `s-pronunciation-stress-pace` (`9.17`, `9.18`, `9.19`)
+- [x] `s-self-correction-and-review` (`9.20`, `9.21`)
+- [x] `s-models-shadowing-ai-myths` (`9.22`, `9.23`, `9.24`)

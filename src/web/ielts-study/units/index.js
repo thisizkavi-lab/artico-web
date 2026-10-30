@@ -3,16 +3,16 @@
  * Connects all 85 modular units across the 5 Study Modules.
  */
 
-import { overviewBasicsUnits } from './overview-basics'
-import { overviewLanguageUnits } from './overview-language'
-import { overviewPlanUnits } from './overview-plan'
-import { listeningUnits } from './listening'
-import { readingUnits } from './reading'
-import { writingFoundationsUnits } from './writing-foundations'
-import { writingAcademicTask1Units } from './writing-academic-task1'
-import { writingTask2Units } from './writing-task2'
-import { writingGtTask1Units } from './writing-gt-task1'
-import { speakingUnits } from './speaking'
+import { overviewBasicsUnits } from './overview-basics.js'
+import { overviewLanguageUnits } from './overview-language.js'
+import { overviewPlanUnits } from './overview-plan.js'
+import { listeningUnits } from './listening.js'
+import { readingUnits } from './reading.js'
+import { writingFoundationsUnits } from './writing-foundations.js'
+import { writingAcademicTask1Units } from './writing-academic-task1.js'
+import { writingTask2Units } from './writing-task2.js'
+import { writingGtTask1Units } from './writing-gt-task1.js'
+import { speakingUnits } from './speaking.js'
 
 export const MODULE_METADATA = [
   {

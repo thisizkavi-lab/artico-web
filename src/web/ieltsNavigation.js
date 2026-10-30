@@ -16,3 +16,6 @@ export function ieltsPath(area = 'home', mode = 'study', task, attempt) {
   if (attempt) query.set('attempt', attempt)
   return `${IELTS_BASE}/${area}/${mode}${query.size ? `?${query}` : ''}`
 }
+export function ieltsStudyPath(area = 'overview', unit) {
+  return `${IELTS_BASE}/${area}/study${unit ? `?unit=${encodeURIComponent(unit)}` : ''}`
+}

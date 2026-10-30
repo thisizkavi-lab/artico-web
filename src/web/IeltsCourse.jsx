@@ -5,6 +5,7 @@ import { ieltsAreas, ieltsArea, ieltsPath } from './ieltsNavigation'
 import { guidedSets, officialResources, skillInfo, skillTasks, taskById, writingMock } from './ieltsContent'
 import { IELTS_STORAGE_KEY, emptyIelts, exposeTask, hasSeenTask, loadIelts, sanitiseIelts, updateAttempt } from './ieltsState'
 import IeltsWorkspace from './IeltsWorkspace'
+import IeltsStudyView from './ielts-study/IeltsStudyView'
 import './ielts.css'
 
 const go = (path) => { window.location.hash = path }
@@ -194,6 +195,6 @@ export default function IeltsCourse({ route }) {
       if (isRunning) return
       go(ieltsPath(route.area, mode, route.task))
     }}/>{isRunning ? <span>Finish or leave this attempt before changing modes.</span> : <a href={`#${ieltsPath('home', route.view)}`}>All IELTS sections</a>}</div>
-    {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.area === 'home' ? <IeltsHome route={route} store={store}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store}/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
+    {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.view === 'study' && ['home', 'overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area) ? <IeltsStudyView route={route} store={store} /> : route.area === 'home' ? <IeltsHome route={route} store={store}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store}/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
   </div>
 }

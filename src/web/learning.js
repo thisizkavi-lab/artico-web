@@ -178,11 +178,13 @@ export function parseRoute(hash) {
         return { path: '/application/tests', page: 'application', id: 'tests' }
       const input = new URLSearchParams(path.split('?')[1] ?? '')
       const query = new URLSearchParams()
-      for (const key of ['task', 'attempt']) {
+      for (const key of ['task', 'attempt', 'unit']) {
         if (/^[a-zA-Z0-9-]{1,100}$/.test(input.get(key) ?? '')) query.set(key, input.get(key))
       }
       return { path: `/application/tests/ielts/${area}/${mode}${query.size ? `?${query}` : ''}`, page: 'application', id: 'tests', exam: 'ielts', area, view: mode,
-        ...(query.has('task') ? { task: query.get('task') } : {}), ...(query.has('attempt') ? { attempt: query.get('attempt') } : {}) }
+        ...(query.has('task') ? { task: query.get('task') } : {}),
+        ...(query.has('attempt') ? { attempt: query.get('attempt') } : {}),
+        ...(query.has('unit') ? { unit: query.get('unit') } : {}) }
     }
     if (id === 'ideas' && /^(?:home|0[1-8])$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       const given = new URLSearchParams(path.split('?')[1] ?? '').get('task')

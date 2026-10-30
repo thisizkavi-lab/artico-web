@@ -14,3 +14,10 @@
      2. `/Users/kavi/Documents/kyoto/artico-web/work/vocab-art/GEMINI_TASK.md`
    - **Never** scrape Wikipedia/Wikimedia/Unsplash photos or call external image generation APIs.
    - Author clean constructive `.svg` files in `artico-web/work/vocab-art/svg/<NN>/<slug>.svg`, compile them via `scripts/svg_vocab_compiler.py`, and **visually inspect** every rendered `work/vocab-art/review/lesson-<NN>-grid.png` sheet with `read_file` before committing.
+
+4. **IELTS Study Course System (`artico-ielts-study-v1`):**
+   - Whenever working on the IELTS Study Mode (`#/application/tests/ielts/*/study` or `src/web/ielts-study/`), you **MUST** first read:
+     1. `/Users/kavi/Documents/kyoto/.agents/skills/artico-ielts-study-course/SKILL.md` (and all 4 files in its `references/` folder)
+     2. `/Users/kavi/Documents/kyoto/artico-web/work/ielts-study/GEMINI_TASK.md`
+   - **Zero gamification** (no streaks, XP, points, badges, confetti, locked units, or patronizing praise).
+   - **Never modify Practice Mode** (`src/web/IeltsWorkspace.jsx`, `src/web/ieltsContent.js`, `src/web/ieltsState.js`). Keep General Training (`[GT]`) sections complete and explicitly separated from the primary Academic track.

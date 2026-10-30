@@ -22,7 +22,13 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
       ['#/application/tests','English Tests'],
       ['#/application/tests/ielts/home/study','IELTS Academic'],
       ['#/application/tests/ielts/overview/study','Everything about IELTS'],
+      ['#/application/tests/ielts/listening/study','Listening'],
+      ['#/application/tests/ielts/reading/study','Reading'],
+      ['#/application/tests/ielts/writing/study','Writing'],
       ['#/application/tests/ielts/speaking/study','Speaking'],
+      ['#/application/tests/ielts/overview/study?unit=ov-how-to-read','How this study manual works'],
+      ['#/application/tests/ielts/writing/study?unit=w-a1-line-bar-table','Line graphs, bar charts, and tables'],
+      ['#/application/tests/ielts/reading/study?unit=r-gt-reading-comparison','General Training Reading'],
       ['#/application/tests/ielts/writing/practice','Writing'],
     ]) {
       const route = parseRoute(hash)

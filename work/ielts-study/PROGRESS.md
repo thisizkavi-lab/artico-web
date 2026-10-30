@@ -16,7 +16,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
 - [x] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
 - [x] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
-- [ ] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
+- [x] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
 - [ ] **Batch 8 — Module 5: Speaking (`10` units · `§9.1–9.24`) + `ieltsStudy.test.js` + Full `npm test && npm run build`**
 
 ---
@@ -105,19 +105,19 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `w-a1-maps-and-plans` (`6.18`)
 - [x] `w-a1-process-diagrams` (`6.19`)
 - [x] `w-a1-review-and-subskills` (`6.20`, `6.21`)
-- [ ] `w-t2-prompt-layers-and-plan` (`8.1`, `8.2`)
-- [ ] `w-t2-opinion-and-discussion` (`8.3`, `8.4`)
-- [ ] `w-t2-advantages-and-evaluations` (`8.5`)
-- [ ] `w-t2-causes-solutions-two-part` (`8.6`, `8.7`)
-- [ ] `w-t2-generate-and-select-ideas` (`8.8`, `8.9`)
-- [ ] `w-t2-plan-and-introduction` (`8.10`, `8.11`)
-- [ ] `w-t2-body-paragraphs-and-mechanisms` (`8.12`, `8.13`)
-- [ ] `w-t2-examples-position-qualification` (`8.14`, `8.15`, `8.16`)
-- [ ] `w-t2-conclusion-and-cohesion` (`8.17`, `8.18`)
-- [ ] `w-t2-review-models-feedback-myths` (`8.19`, `8.20`, `8.21`, `8.22`)
-- [ ] `w-gt-purpose-reader-register` (`[GT]`, `7.1`, `7.2`)
-- [ ] `w-gt-structure-openings-details` (`[GT]`, `7.3`, `7.4`, `7.5`)
-- [ ] `w-gt-conventions-informal-check` (`[GT]`, `7.6`, `7.7`, `7.8`, `7.9`)
+- [x] `w-t2-prompt-layers-and-plan` (`8.1`, `8.2`)
+- [x] `w-t2-opinion-and-discussion` (`8.3`, `8.4`)
+- [x] `w-t2-advantages-and-evaluations` (`8.5`)
+- [x] `w-t2-causes-solutions-two-part` (`8.6`, `8.7`)
+- [x] `w-t2-generate-and-select-ideas` (`8.8`, `8.9`)
+- [x] `w-t2-plan-and-introduction` (`8.10`, `8.11`)
+- [x] `w-t2-body-paragraphs-and-mechanisms` (`8.12`, `8.13`)
+- [x] `w-t2-examples-position-qualification` (`8.14`, `8.15`, `8.16`)
+- [x] `w-t2-conclusion-and-cohesion` (`8.17`, `8.18`)
+- [x] `w-t2-review-models-feedback-myths` (`8.19`, `8.20`, `8.21`, `8.22`)
+- [x] `w-gt-purpose-reader-register` (`[GT]`, `7.1`, `7.2`)
+- [x] `w-gt-structure-openings-details` (`[GT]`, `7.3`, `7.4`, `7.5`)
+- [x] `w-gt-conventions-informal-check` (`[GT]`, `7.6`, `7.7`, `7.8`, `7.9`)
 
 ### Module 5 · `speaking` (`10` units)
 - [ ] `s-interview-and-criteria` (`9.1`, `9.2`)

@@ -14,7 +14,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] **Batch 2 — Module 1A: Everything about IELTS · Parts 1.1 & 1.2 (`12` units · `Preamble`, `§1.1–1.7`, `§2.1–2.9`)**
 - [x] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
 - [x] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
-- [ ] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
+- [x] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
 - [ ] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
 - [ ] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
 - [ ] **Batch 8 — Module 5: Speaking (`10` units · `§9.1–9.24`) + `ieltsStudy.test.js` + Full `npm test && npm run build`**
@@ -73,20 +73,20 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `l-diagnosis-microlistening-pitfalls` (`3.16`, `3.17`, `3.18`, `3.19`)
 
 ### Module 3 · `reading` (`14` units)
-- [ ] `r-task-and-five-operations` (`4.1`, `4.2`)
-- [ ] `r-passage-map` (`4.3`)
-- [ ] `r-full-claim-anatomy` (`4.4`)
-- [ ] `r-true-false-not-given` (`4.5`)
-- [ ] `r-yes-no-not-given` (`4.6`)
-- [ ] `r-matching-headings` (`4.7`)
-- [ ] `r-matching-information` (`4.8`)
-- [ ] `r-matching-features-and-endings` (`4.9`, `4.10`)
-- [ ] `r-sentence-summary-completion` (`4.11`, `4.12`)
-- [ ] `r-tables-flowcharts-diagrams` (`4.13`, `4.14`)
-- [ ] `r-short-answers-multiple-choice` (`4.15`, `4.16`)
-- [ ] `r-order-and-unfamiliar-words` (`4.17`, `4.18`)
-- [ ] `r-pacing-diagnosis-speed` (`4.19`, `4.20`, `4.21`, `4.22`)
-- [ ] `r-gt-reading-comparison` (`[GT]`, `4.1`, `1.6`)
+- [x] `r-task-and-five-operations` (`4.1`, `4.2`)
+- [x] `r-passage-map` (`4.3`)
+- [x] `r-full-claim-anatomy` (`4.4`)
+- [x] `r-true-false-not-given` (`4.5`)
+- [x] `r-yes-no-not-given` (`4.6`)
+- [x] `r-matching-headings` (`4.7`)
+- [x] `r-matching-information` (`4.8`)
+- [x] `r-matching-features-and-endings` (`4.9`, `4.10`)
+- [x] `r-sentence-summary-completion` (`4.11`, `4.12`)
+- [x] `r-tables-flowcharts-diagrams` (`4.13`, `4.14`)
+- [x] `r-short-answers-multiple-choice` (`4.15`, `4.16`)
+- [x] `r-order-and-unfamiliar-words` (`4.17`, `4.18`)
+- [x] `r-pacing-diagnosis-speed` (`4.19`, `4.20`, `4.21`, `4.22`)
+- [x] `r-gt-reading-comparison` (`[GT]`, `4.1`, `1.6`)
 
 ### Module 4 · `writing` (`29` units)
 - [ ] `w-purposes-and-criteria` (`5.1`, `5.2`)

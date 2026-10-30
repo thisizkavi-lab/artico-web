@@ -12,7 +12,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 
 - [x] **Batch 1 — Core Engine, Reference Banks (`8`), SVG Diagrams (`23`), Media Slots (`10`), Reader UI & Linter**
 - [x] **Batch 2 — Module 1A: Everything about IELTS · Parts 1.1 & 1.2 (`12` units · `Preamble`, `§1.1–1.7`, `§2.1–2.9`)**
-- [ ] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
+- [x] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
 - [ ] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
 - [ ] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
 - [ ] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
@@ -49,15 +49,15 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `ov-usable-vocabulary` (`2.4`, `2.5`, `2.6`)
 - [x] `ov-synonym-checks` (`2.7`)
 - [x] `ov-grammar-and-clear-meaning` (`2.8`, `2.9`)
-- [ ] `ov-lang-50-concepts` (`10.1`, `10.2`)
-- [ ] `ov-lang-precision-distinctions` (`10.3`)
-- [ ] `ov-lang-59-patterns` (`10.4`)
-- [ ] `ov-lang-phrases-idioms-register` (`10.5`, `10.6`, `10.7`)
-- [ ] `ov-lang-grammar-repairs-editing` (`10.8`, `10.9`)
-- [ ] `ov-targets-evidence-cycle` (`11.1`, `11.2`, `11.3`, `11.4`, `11.5`)
-- [ ] `ov-patterns-practice-input` (`11.6`, `11.7`, `11.8`, `11.9`, `11.10`)
-- [ ] `ov-materials-stress-readiness-testday` (`11.11`, `11.12`, `11.13`, `11.14`)
-- [ ] `ov-claims-checklists-sources` (`12.1`, `12.2`, `12.3`, `A.1`, `A.2`, `A.3`, `A.4`)
+- [x] `ov-lang-50-concepts` (`10.1`, `10.2`)
+- [x] `ov-lang-precision-distinctions` (`10.3`)
+- [x] `ov-lang-59-patterns` (`10.4`)
+- [x] `ov-lang-phrases-idioms-register` (`10.5`, `10.6`, `10.7`)
+- [x] `ov-lang-grammar-repairs-editing` (`10.8`, `10.9`)
+- [x] `ov-targets-evidence-cycle` (`11.1`, `11.2`, `11.3`, `11.4`, `11.5`)
+- [x] `ov-patterns-practice-input` (`11.6`, `11.7`, `11.8`, `11.9`, `11.10`)
+- [x] `ov-materials-stress-readiness-testday` (`11.11`, `11.12`, `11.13`, `11.14`)
+- [x] `ov-claims-checklists-sources` (`12.1`, `12.2`, `12.3`, `A.1`, `A.2`, `A.3`, `A.4`)
 
 ### Module 2 · `listening` (`11` units)
 - [ ] `l-four-contexts` (`3.1`)

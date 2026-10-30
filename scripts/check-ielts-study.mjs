@@ -163,10 +163,14 @@ function extractInstructionalText(unit) {
     } else if (block.type === 'trackCompare') {
       if (block.academic?.points) pieces.push(...block.academic.points)
       if (block.generalTraining?.points) pieces.push(...block.generalTraining.points)
+    } else if (block.type === 'wordBank') {
+      pieces.push(block.title, block.instructions || '')
     } else if (block.type === 'mythBuster') {
       if (Array.isArray(block.items)) {
         for (const item of block.items) {
-          pieces.push(item.claim, item.reality, item.takeaway)
+          // Note: item.claim is the external false claim being refuted;
+          // instructional text consists of the verified reality and takeaway.
+          pieces.push(item.reality, item.takeaway)
         }
       }
     } else if (block.type === 'decisionTree') {

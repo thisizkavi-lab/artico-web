@@ -993,7 +993,7 @@ export const commonClaims29 = [
   },
   {
     "claim": "The examiner will switch a topic if you say it is unfamiliar",
-    "reality": "No switch is guaranteed. Attempt a relevant response."
+    "reality": "Examiners will not switch a topic upon request. Candidates must attempt a relevant response."
   },
   {
     "claim": "Three good practice results guarantee the official result",
@@ -1157,6 +1157,48 @@ export const WORD_BANKS = {
     data: commonClaims29,
   },
   'references-19-official': {
+    id: 'references-19-official',
+    title: 'Official references checked for this edition',
+    data: officialReferences19,
+  },
+  // CamelCase aliases
+  commonConcepts50: {
+    id: 'common-50-concepts',
+    title: 'Fifty common concepts: alternatives and limits',
+    data: commonConcepts50,
+  },
+  vocabPatterns59: {
+    id: 'vocab-59-patterns',
+    title: 'Fifty-nine vocabulary entries with patterns',
+    data: vocabPatterns59,
+  },
+  topicPhrases16: {
+    id: 'topic-16-phrases',
+    title: 'Useful topic phrases from short lessons',
+    data: topicPhrases16,
+  },
+  optionalIdioms18: {
+    id: 'idioms-18-optional',
+    title: 'Eighteen optional idioms',
+    data: optionalIdioms18,
+  },
+  registerExpressions10: {
+    id: 'register-10-expressions',
+    title: 'Additional fixed expressions and register',
+    data: registerExpressions10,
+    notes: registerNotes,
+  },
+  grammarRepairs19: {
+    id: 'grammar-19-repairs',
+    title: 'Grammar repairs that recur in the reference',
+    data: grammarRepairs19,
+  },
+  commonClaims29: {
+    id: 'claims-29-limits',
+    title: 'Common claims and their limits',
+    data: commonClaims29,
+  },
+  officialReferences19: {
     id: 'references-19-official',
     title: 'Official references checked for this edition',
     data: officialReferences19,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce 16 meaning-specific local PNGs from original AI-painted grooming sheet."""
+"""Preserve dedicated AI illustrations; generate missing grooming fallback crops."""
 from pathlib import Path
 from PIL import Image
 
@@ -20,10 +20,19 @@ for row in range(4):
     if image.size!=(1280,213):raise RuntimeError(f'Unexpected sheet size: {image.size}')
     for col in range(4):
         asset=WORDS[row*4+col]
+        path=OUT/(asset+'.png')
+        # Never overwrite approved full-resolution AI illustrations tracked in Git.
+        # The sheet crop is only a fallback for vocabulary without a dedicated PNG.
+        if path.exists():
+            with Image.open(path) as existing:
+                existing.verify()
+            if path.stat().st_size<1500:
+                raise RuntimeError('Broken existing PNG '+str(path))
+            print(f'Preserved existing illustration: {path.name}')
+            continue
         cropped=image.crop((col*320,0,(col+1)*320,213))
         cropped=cropped.resize((360,222),Image.Resampling.LANCZOS)
-        path=OUT/(asset+'.png')
         cropped.quantize(colors=128,method=Image.Quantize.FASTOCTREE).save(path,format='PNG',optimize=True)
         with Image.open(path) as img:img.verify()
         if path.stat().st_size<1500:raise RuntimeError('Broken generated PNG '+str(path))
-print(f'Generated {len(WORDS)} original AI-painted grooming PNGs')
+print(f'Verified {len(WORDS)} AI grooming PNGs (approved originals preserved)')

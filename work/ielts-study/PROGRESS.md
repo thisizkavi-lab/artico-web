@@ -13,7 +13,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] **Batch 1 — Core Engine, Reference Banks (`8`), SVG Diagrams (`23`), Media Slots (`10`), Reader UI & Linter**
 - [x] **Batch 2 — Module 1A: Everything about IELTS · Parts 1.1 & 1.2 (`12` units · `Preamble`, `§1.1–1.7`, `§2.1–2.9`)**
 - [x] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
-- [ ] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
+- [x] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
 - [ ] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
 - [ ] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
 - [ ] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
@@ -60,17 +60,17 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `ov-claims-checklists-sources` (`12.1`, `12.2`, `12.3`, `A.1`, `A.2`, `A.3`, `A.4`)
 
 ### Module 2 · `listening` (`11` units)
-- [ ] `l-four-contexts` (`3.1`)
-- [ ] `l-preview-period` (`3.2`)
-- [ ] `l-complete-message-paraphrase` (`3.3`, `3.4`)
-- [ ] `l-eight-distractors` (`3.5`)
-- [ ] `l-forms-notes-tables-summaries` (`3.6`, `3.7`)
-- [ ] `l-sentences-short-answers` (`3.8`)
-- [ ] `l-multiple-choice-matching` (`3.9`, `3.10`)
-- [ ] `l-maps-plans-diagrams` (`3.11`)
-- [ ] `l-discussions-and-lectures` (`3.12`, `3.13`)
-- [ ] `l-entry-and-recovery` (`3.14`, `3.15`)
-- [ ] `l-diagnosis-microlistening-pitfalls` (`3.16`, `3.17`, `3.18`, `3.19`)
+- [x] `l-four-contexts` (`3.1`)
+- [x] `l-preview-period` (`3.2`)
+- [x] `l-complete-message-paraphrase` (`3.3`, `3.4`)
+- [x] `l-eight-distractors` (`3.5`)
+- [x] `l-forms-notes-tables-summaries` (`3.6`, `3.7`)
+- [x] `l-sentences-short-answers` (`3.8`)
+- [x] `l-multiple-choice-matching` (`3.9`, `3.10`)
+- [x] `l-maps-plans-diagrams` (`3.11`)
+- [x] `l-discussions-and-lectures` (`3.12`, `3.13`)
+- [x] `l-entry-and-recovery` (`3.14`, `3.15`)
+- [x] `l-diagnosis-microlistening-pitfalls` (`3.16`, `3.17`, `3.18`, `3.19`)
 
 ### Module 3 · `reading` (`14` units)
 - [ ] `r-task-and-five-operations` (`4.1`, `4.2`)

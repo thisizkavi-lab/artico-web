@@ -91,6 +91,12 @@ export const overviewPlanUnits = [
         },
       },
       {
+        type: 'workbookPrompt',
+        noteId: 'study-target-plan',
+        rows: 3,
+        label: 'Behavioural Study Target: State one specific operational target and how you will verify it on fresh unassisted material.',
+      },
+      {
         type: 'selfCheck',
         title: 'Target and Evidence Audit',
         items: [
@@ -251,6 +257,12 @@ export const overviewPlanUnits = [
         sourceLabel: 'Official IELTS test-day guidance',
       },
       {
+        type: 'workbookPrompt',
+        noteId: 'study-readiness-audit',
+        rows: 3,
+        label: 'Readiness & Test-Day Check: Record your lowest current skill evidence and confirm your physical ID and delivery arrangement.',
+      },
+      {
         type: 'selfCheck',
         title: 'Readiness and Test-Day Audit',
         items: [
@@ -296,9 +308,11 @@ export const overviewPlanUnits = [
       },
       {
         type: 'mythBuster',
+        filterable: true,
         title: 'Twenty-Nine Common IELTS Claims and Their Working Limits',
         items: WORD_BANKS.commonClaims29.data.map((item) => ({
           claim: item.claim,
+          category: item.category,
           reality: item.reality,
           takeaway: 'Retain the method; reject the false rule.',
         })),
@@ -320,7 +334,11 @@ export const overviewPlanUnits = [
         type: 'comparisonTable',
         caption: 'Nineteen Official IELTS References and Research Provenance',
         headers: ['Official Resource', 'Official URL', 'Core Test Information Verified'],
-        rows: WORD_BANKS.officialReferences19.data.map((item) => [item.title, item.url, item.description]),
+        rows: WORD_BANKS.officialReferences19.data.map((item) => [
+          item.title,
+          `[${item.url}](${item.url})`,
+          item.description,
+        ]),
       },
       {
         type: 'callout',

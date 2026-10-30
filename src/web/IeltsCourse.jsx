@@ -189,7 +189,8 @@ export default function IeltsCourse({ route }) {
   const task = taskById[route.task]
   const area = ieltsArea(route.area)
   const isRunning = activeAttempt?.status === 'active'
-  return <div className={`aw-page ie-page ${route.task ? 'ie-page-wide' : ''}`} lang="en">
+  const isStudyReader = route.view === 'study' && ['overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area)
+  return <div className={`aw-page ie-page ${route.task || isStudyReader ? 'ie-page-wide' : ''}`} lang="en">
     <nav className="ie-breadcrumb" aria-label="IELTS breadcrumb"><a href="#/application/tests">English Tests</a><span aria-hidden="true">/</span><a href={`#${ieltsPath('home', route.view)}`}>IELTS Academic</a>{area ? <><span aria-hidden="true">/</span><span>{area.title}</span></> : null}</nav>
     <div className="ie-modebar"><Segments items={[{ value: 'study', label: 'Study' }, { value: 'practice', label: 'Practice' }]} label="IELTS Study or Practice" active={route.view} disabled={isRunning} onChange={(mode) => {
       if (isRunning) return

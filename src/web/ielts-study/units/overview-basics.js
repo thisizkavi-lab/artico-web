@@ -24,7 +24,14 @@ export const overviewBasicsUnits = [
         type: 'lead',
         summary: 'This study manual uses a plain technical style inspired by Simplified Technical English. Sentences are short, terms remain consistent, and advice separates official requirements from coaching options.',
         whyItMatters: 'Understanding how the manual is written ensures you extract exact test requirements without confusing them with optional coaching choices.',
-        whatYouWillDo: 'Learn the three advisory labels, distinguish Study Mode from Practice Mode, and establish your core study routine.',
+        whatYouWillDo: 'Learn the three advisory labels, review the manual design principles, distinguish Study Mode from Practice Mode, and establish your core study routine.',
+      },
+      {
+        type: 'prose',
+        paragraphs: [
+          'This reference manual (Edition: 30 October 2026) guides your preparation from first principles to detailed task methods, language choices, error diagnosis, and final readiness. It consolidates the processed course blueprint, the distilled summary, and all 39 detailed source syntheses while retaining the practical limits of every recommendation.',
+          'The prose follows a plain technical style inspired by [Simplified Technical English](https://www.asd-ste100.org/STE_faq.html). Each procedural step states one main action, and conditions appear before the action whenever a condition governs your decision. Worked examples illustrate how a decision works rather than supplying memorised model answers.',
+        ],
       },
       {
         type: 'callout',
@@ -219,7 +226,10 @@ export const overviewBasicsUnits = [
             'Listening & Speaking: Shared identical format with Academic.',
             'Target audience: Migration, secondary education, vocational training, and employment visas.',
           ],
+          linkUnit: 'w-gt-purpose-reader-register',
+          linkLabel: 'Open General Training Task 1 Letter units',
         },
+        shared: 'Listening and Speaking are identical across both versions, and core language and reasoning skills transfer directly.',
       },
       {
         type: 'steps',
@@ -304,7 +314,7 @@ export const overviewBasicsUnits = [
         type: 'callout',
         variant: 'trap',
         title: 'Task 1 Cannot Be Omitted',
-        body: 'One excellent Task 2 essay cannot replace a missing or incomplete Task 1 response. Leaving Task 1 unfinished caps your overall Writing score at Band 5.0 or lower regardless of Task 2 quality.',
+        body: 'One strong Task 2 essay cannot replace a missing or incomplete Task 1 response. Leaving Task 1 unfinished severely penalizes Task Achievement and pulls down your overall Writing band regardless of Task 2 quality.',
       },
       {
         type: 'steps',
@@ -715,6 +725,12 @@ export const overviewBasicsUnits = [
         body: 'Always preserve your original incorrect response alongside your revision. If you overwrite your original draft, you cannot analyze the linguistic shift that produced the improvement.',
       },
       {
+        type: 'workbookPrompt',
+        noteId: 'study-error-log',
+        rows: 4,
+        label: 'Personal Error Log Entry: Record one recent failed question across the eight diagnostic fields (Work, Conditions, Original response, Evidence, Cause, Repair, Transfer check, Result).',
+      },
+      {
         type: 'selfCheck',
         title: 'Error Logging Discipline',
         items: [
@@ -776,16 +792,17 @@ export const overviewBasicsUnits = [
         type: 'annotatedSpecimen',
         kind: 'word-record',
         title: 'Sample Complete Word Record: "allocate"',
+        provenance: 'Original reference specimen · 9-element productive vocabulary card',
         segments: [
-          { text: 'Word: allocate (verb)', note: 'Headword and grammatical part of speech' },
-          { text: 'Pronunciation: /ˈæləkeɪt/ (stress on first syllable)', note: 'Phonemic transcription with primary stress marker' },
-          { text: 'Meaning: to officially give resources, funds, or time to a specific purpose', note: 'Precise contextual definition in simple English' },
-          { text: 'Collocations: allocate resources, allocate funds, allocate sufficient time', note: 'High-frequency verb-noun pairings' },
-          { text: 'Preposition pattern: allocate [something] to [someone/something]; allocate [resources] for [a project]', note: 'Essential dependent preposition structures' },
-          { text: 'Related forms: allocation (noun), allocated (adjective)', note: 'Word family derivatives for grammatical flexibility' },
-          { text: 'Model sentence: The local government allocated substantial funding to public transport modernization.', note: 'Original controlled specimen sentence' },
-          { text: 'Common error trap: Do not say "allocate for maintenance of roads" without specifying the resource given.', note: 'Warning against frequent learner mistake' },
-          { text: 'Personal translation: (optional native language equivalent)', note: 'Optional memory bridge' },
+          { id: '1', label: 'Headword & Class', text: 'Word: allocate (verb)', note: 'Headword and grammatical part of speech' },
+          { id: '2', label: 'Word Stress', text: 'Pronunciation: /ˈæləkeɪt/ (stress on first syllable)', note: 'Phonemic transcription with primary stress marker' },
+          { id: '3', label: 'Core Meaning', text: 'Meaning: to officially give resources, funds, or time to a specific purpose', note: 'Precise contextual definition in simple English' },
+          { id: '4', label: 'Collocations', text: 'Collocations: allocate resources, allocate funds, allocate sufficient time', note: 'High-frequency verb-noun pairings' },
+          { id: '5', label: 'Preposition Pattern', text: 'Preposition pattern: allocate [something] to [someone/something]; allocate [resources] for [a project]', note: 'Essential dependent preposition structures' },
+          { id: '6', label: 'Word Family', text: 'Related forms: allocation (noun), allocated (adjective)', note: 'Word family derivatives for grammatical flexibility' },
+          { id: '7', label: 'Model Sentence', text: 'Model sentence: The local government allocated substantial funding to public transport modernization.', note: 'Original controlled specimen sentence' },
+          { id: '8', label: 'Error Trap', text: 'Common error trap: Do not say "allocate for maintenance of roads" without specifying the resource given.', note: 'Warning against frequent learner mistake' },
+          { id: '9', label: 'Memory Bridge', text: 'Personal translation: (optional native language equivalent)', note: 'Optional memory bridge' },
         ],
       },
       {
@@ -799,6 +816,12 @@ export const overviewBasicsUnits = [
         variant: 'trap',
         title: 'Reject Daily Word Quotas',
         body: 'There is no universal quota of new words that every candidate must memorize daily. Learning five words deeply with verified collocations and grammar patterns is vastly superior to memorizing 30 isolated definitions.',
+      },
+      {
+        type: 'workbookPrompt',
+        noteId: 'study-word-record',
+        rows: 4,
+        label: 'Personal Word Record: Build one 9-field productive word record for a recurring academic verb or noun from your recent reading.',
       },
       {
         type: 'selfCheck',
@@ -827,7 +850,7 @@ export const overviewBasicsUnits = [
       {
         type: 'lead',
         summary: 'Paraphrasing is essential in IELTS, but reckless synonym replacement destroys precision. Swapping words merely to avoid repetition frequently introduces factual inaccuracies and grammatical errors.',
-        whyItMatters: 'Using an inappropriate synonym changes the scope of an argument or creates an unnatural collocation, immediately dropping your Lexical Resource score to Band 5.0 or 6.0.',
+        whyItMatters: 'Using an inappropriate synonym changes the scope of an argument or creates an unnatural collocation, directly weakening your Lexical Resource control.',
         whatYouWillDo: 'Apply the Five-Gate Synonym Verification Filter, inspect six common false synonym traps, and learn when to repeat the original word.',
       },
       {
@@ -944,7 +967,7 @@ export const overviewBasicsUnits = [
         type: 'callout',
         variant: 'method',
         title: 'Developing the Habit of Proofreading',
-        body: 'Reserve three to five minutes at the end of every writing task specifically for sentence-level editing. Systematically check subject-verb agreement, noun countability, and article usage. Catching four minor slips can raise your grammatical accuracy score by an entire band.',
+        body: 'Reserve three to five minutes at the end of every writing task specifically for sentence-level editing. Systematically check subject-verb agreement, noun countability, and article usage. Catching recurring slips protects your proportion of error-free sentences.',
       },
       {
         type: 'callout',

@@ -31,6 +31,7 @@ export const writingFoundationsUnits = [
         type: 'trackCompare',
         title: 'Comparing the Three IELTS Writing Tasks',
         academic: {
+          label: 'IELTS Academic Writing',
           points: [
             'Academic Task 1: Objective factual report of supplied visual data (charts, graphs, maps, diagrams).',
             'Minimum length: 150 words. Recommended timing: approximately 20 minutes.',
@@ -38,11 +39,13 @@ export const writingFoundationsUnits = [
           ],
         },
         generalTraining: {
+          label: 'IELTS General Training & Shared Task 2',
           points: [
             'General Training Task 1: Practical letter answering three bullet points for a specified situation and reader.',
             'Task 2 (Shared across both tracks): Formal discursive essay evaluating a specific social, educational, or environmental issue.',
             'Task 2 minimum length: 250 words. Recommended timing: approximately 40 minutes.',
           ],
+          linkUnit: 'w-gt-purpose-reader-register',
         },
       },
       {
@@ -61,7 +64,8 @@ export const writingFoundationsUnits = [
         variant: 'requirement',
         title: 'Task 2 Carries Double Weight',
         body: 'The four criteria carry equal weight within each task. However, Task 2 contributes twice as much as Task 1 toward your final overall Writing band score. Both tasks must be completed to achieve a competitive score.',
-        link: { url: 'https://ielts.org/cdn/Guides/ielts-writing-key-assessment-criteria.pdf', text: 'Official IELTS Writing Key Assessment Criteria PDF' },
+        sourceUrl: 'https://ielts.org/cdn/Guides/ielts-writing-key-assessment-criteria.pdf',
+        sourceLabel: 'Official IELTS Writing Key Assessment Criteria PDF',
       },
       {
         type: 'callout',
@@ -78,11 +82,6 @@ export const writingFoundationsUnits = [
           'I evaluate my drafts against all four criteria rather than focusing only on vocabulary.',
           'I ensure every prompt question receives explicit, balanced development.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-criteria-plan',
-        label: 'Identify which of the four assessment criteria represents your primary area for improvement.',
       },
     ],
   },
@@ -154,11 +153,6 @@ export const writingFoundationsUnits = [
           'I verify that every pronoun has a clear antecedent noun.',
           'I let grammatical structure carry logical relationships naturally.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-cohesion-check',
-        label: 'Audit a recent essay paragraph and replace two mechanical linkers with demonstratives or pronouns.',
       },
     ],
   },
@@ -233,11 +227,6 @@ export const writingFoundationsUnits = [
           'I check that every subordinate clause is attached to a complete main clause.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-lexical-grammar',
-        label: 'Identify a sentence from your recent writing that felt awkward and revise it using one of the six clause structures.',
-      },
     ],
   },
 
@@ -306,11 +295,6 @@ export const writingFoundationsUnits = [
           'I verify that my word count exceeds the 150-word and 250-word thresholds.',
           'I reserve 3 to 5 minutes at the end of each task to execute the review funnel.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-review-funnel',
-        label: 'Write down your personal time allocation for planning, drafting, and checking Task 1 and Task 2.',
       },
     ],
   },

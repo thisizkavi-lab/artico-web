@@ -31,7 +31,8 @@ export const writingAcademicTask1Units = [
         variant: 'requirement',
         title: 'The Golden Reporting Rule',
         body: 'Always ask: "Can the supplied visual support this exact sentence?" If the graphic shows sales rising in 2020, you can state that sales increased. You cannot claim that sales grew because of marketing campaigns.',
-        link: { url: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing', text: 'Official IELTS Academic Writing Format' },
+        sourceUrl: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing',
+        sourceLabel: 'Official IELTS Academic Writing Format',
       },
       {
         type: 'comparisonTable',
@@ -41,7 +42,7 @@ export const writingAcademicTask1Units = [
           ['Dynamic', 'Shows change over time across dates or years.', 'Line graphs, multi-year bar charts, pie chart pairs, time tables.', 'Describe trends, phases of movement, rates of change, and crossing points.'],
           ['Static', 'Compares categories at one fixed point in time.', 'Single-year bar charts, single pie charts, static comparison tables.', 'Compare relative shares, rankings, extremes, and percentage proportions.'],
           ['Sequential', 'Illustrates ordered procedural stages or natural cycles.', 'Linear manufacturing flows, biological life cycles, recycling loops.', 'Describe stages in sequence, transformations, inputs, and cyclical loops.'],
-          ['Spatial', 'Depicts physical layouts, geographical maps, or building plans.', 'Past vs present maps, proposed redevelopment site plans.', 'Report physical additions, removals, relocations, conversions, and directions.'],
+          ['Spatial', 'Depicts physical layouts, geographical maps, or building plans.', 'Past versus present maps, proposed redevelopment site plans.', 'Report physical additions, removals, relocations, conversions, and directions.'],
         ],
       },
       {
@@ -72,11 +73,6 @@ export const writingAcademicTask1Units = [
           'I determine whether the graphic is dynamic, static, sequential, or spatial.',
           'I verify that every sentence can be proven from the graphic.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-reporting-principle',
-        label: 'Inspect a Task 1 prompt and verify that no sentence in your draft speculates about causes.',
       },
     ],
   },
@@ -149,16 +145,11 @@ export const writingAcademicTask1Units = [
         type: 'selfCheck',
         title: 'Decoding and Feature Selection Checklist',
         items: [
-          'I verify units (percentages vs headcounts vs currency amounts).',
+          'I verify units (percentages versus headcounts versus currency amounts).',
           'I check whether the timeline includes historical facts or projected estimates.',
           'I identify broad trends rather than focusing on isolated data points.',
           'I distinguish the highest final value from the largest net increase.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-decode-features',
-        label: 'Audit a chart and write answers to the eight macro-feature discovery questions.',
       },
     ],
   },
@@ -192,11 +183,11 @@ export const writingAcademicTask1Units = [
         type: 'steps',
         title: 'Five Essential Introduction Components',
         items: [
-          { action: 'Identify the visual graphic type (e.g. line graph, bar chart, table).', condition: 'Component 1', why: 'Establishes the exact media format being analyzed.' },
-          { action: 'Select a natural reporting verb (e.g. compares, illustrates, shows).', condition: 'Component 2', why: 'Specifies the informational purpose of the visual presentation.' },
-          { action: 'Define the measured subject and metric (e.g. proportion of households).', condition: 'Component 3', why: 'Ensures the reader understands what data values represent.' },
+          { action: 'Identify the visual graphic type (such as line graph, bar chart, or table).', condition: 'Component 1', why: 'Establishes the exact media format being analyzed.' },
+          { action: 'Select a natural reporting verb (such as compares, illustrates, or shows).', condition: 'Component 2', why: 'Specifies the informational purpose of the visual presentation.' },
+          { action: 'Define the measured subject and metric (such as proportion of households).', condition: 'Component 3', why: 'Ensures the reader understands what data values represent.' },
           { action: 'Name the geographic location or surveyed groups.', condition: 'Component 4', why: 'Anchors the data to its specific institutional or national boundary.' },
-          { action: 'State the precise temporal timeframe (e.g. between 2010 and 2020).', condition: 'Component 5', why: 'Establishes the chronological window and governs report tenses.' },
+          { action: 'State the precise temporal timeframe (for example, between 2010 and 2020).', condition: 'Component 5', why: 'Establishes the chronological window and governs report tenses.' },
         ],
       },
       {
@@ -240,11 +231,6 @@ export const writingAcademicTask1Units = [
           'I recognize that an overview replaces the need for an essay conclusion.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-intro-draft',
-        label: 'Write an introduction for a Task 1 prompt using all five essential components.',
-      },
     ],
   },
 
@@ -280,7 +266,7 @@ export const writingAcademicTask1Units = [
           ['Time-series chart', 'Overall growth or decline, contrasting outliers, and ranking changes.', '"Overall, while wind and solar generation expanded, coal consumption declined."'],
           ['Static chart', 'Dominant categories, significant contrasts, and smallest shares.', '"Overall, manufacturing accounted for the largest share of GDP across all four regions."'],
           ['Map or layout', 'Major expansions, new facilities, and primary unchanged areas.', '"Overall, the western sector underwent extensive commercial redevelopment, while the park remained intact."'],
-          ['Process diagram', 'Total transformation, number of stages, and linear vs cyclical shape.', '"Overall, the process comprises eight distinct stages, forming a closed recycling loop."'],
+          ['Process diagram', 'Total transformation, number of stages, and linear versus cyclical shape.', '"Overall, the process comprises eight distinct stages, forming a closed recycling loop."'],
         ],
       },
       {
@@ -310,11 +296,6 @@ export const writingAcademicTask1Units = [
           'I avoid turning my overview into a dense list of individual statistics.',
           'I verify that the overarching trends stated in my overview are factually correct.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-overview-draft',
-        label: 'Write an overview for a multi-line graph without writing a single numerical digit.',
       },
     ],
   },
@@ -349,13 +330,13 @@ export const writingAcademicTask1Units = [
         caption: 'Seven Logical Detail Grouping Strategies',
         headers: ['Grouping Principle', 'Best Suited Visuals', 'How Details Are Divided'],
         rows: [
-          ['Similar vs opposing trends', 'Multi-line graphs with divergent lines.', 'Body 1: Increasing categories. Body 2: Decreasing or stable categories.'],
-          ['High vs low magnitudes', 'Bar charts or tables with wide ranges.', 'Body 1: Dominant market leaders. Body 2: Minor niche contributors.'],
-          ['Earlier vs later phases', 'Time-series graphs spanning decades.', 'Body 1: Initial growth era. Body 2: Post-peak contraction era.'],
-          ['Visual 1 vs Visual 2', 'Two combined charts (e.g. bar + table).', 'Body 1: Full report on Visual 1. Body 2: Related metrics from Visual 2.'],
-          ['Input vs output stages', 'Multi-stage manufacturing flow charts.', 'Body 1: Raw material preparation. Body 2: Fabrication and packaging.'],
+          ['Similar versus opposing trends', 'Multi-line graphs with divergent lines.', 'Body 1: Increasing categories. Body 2: Decreasing or stable categories.'],
+          ['High versus low magnitudes', 'Bar charts or tables with wide ranges.', 'Body 1: Dominant market leaders. Body 2: Minor niche contributors.'],
+          ['Earlier versus later phases', 'Time-series graphs spanning decades.', 'Body 1: Initial growth era. Body 2: Post-peak contraction era.'],
+          ['Visual 1 versus Visual 2', 'Two combined charts (such as bar chart and table).', 'Body 1: Full report on Visual 1. Body 2: Related metrics from Visual 2.'],
+          ['Input versus output stages', 'Multi-stage manufacturing flow charts.', 'Body 1: Raw material preparation. Body 2: Fabrication and packaging.'],
           ['Geographic / spatial sectors', 'Redevelopment maps and site layouts.', 'Body 1: Northern commercial zone. Body 2: Southern recreational facilities.'],
-          ['Core vs exception category', 'Datasets where one group behaves unusually.', 'Body 1: Standard parallel groups. Body 2: The single divergent outlier.'],
+          ['Core versus exception category', 'Datasets where one group behaves unusually.', 'Body 1: Standard parallel groups. Body 2: The single divergent outlier.'],
         ],
       },
       {
@@ -385,11 +366,6 @@ export const writingAcademicTask1Units = [
           'I reserve the word "fluctuated" for repeated, erratic ups and downs.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-chunking-practice',
-        label: 'Partition a 20-year line graph into distinct phases and note the exact turning point years.',
-      },
     ],
   },
 
@@ -409,7 +385,7 @@ export const writingAcademicTask1Units = [
         type: 'lead',
         summary: 'Reporting quantitative data accurately requires distinguishing percentages from percentage points and using calibrated approximation qualifiers. Decimal precision must reflect the resolution of the supplied graphic.',
         whyItMatters: 'Confusing a 10 percentage point increase with a 10 percent increase is a mathematical error that undermines Task Achievement. Inventing fake decimals damages data credibility.',
-        whatYouWillDo: 'Study the percentages vs percentage points SVG diagram, master approximation qualifiers, complete a diagnostic check, and use "respectively" correctly.',
+        whatYouWillDo: 'Study the percentages versus percentage points SVG diagram, master approximation qualifiers, complete a diagnostic check, and use "respectively" correctly.',
       },
       {
         type: 'svgDiagram',
@@ -434,9 +410,9 @@ export const writingAcademicTask1Units = [
         title: 'Diagnostic Check: Percentage Point Precision',
         prompt: 'In 2010, 20% of households owned solar panels. By 2020, this share reached 30%. How should this change be reported?',
         options: [
-          { text: 'Solar panel ownership increased by 10%.', correct: false, rationale: 'Incorrect: A change from 20% to 30% is a 50% relative increase, not a 10% increase.' },
-          { text: 'Solar panel ownership rose by 10 percentage points.', correct: true, rationale: 'Correct: The difference between 30% and 20% is exactly 10 percentage points.' },
-          { text: 'Solar panel ownership grew by 30 percent.', correct: false, rationale: 'Incorrect: 30% is the final level, not the amount of change.' },
+          { label: 'Solar panel ownership increased by 10%.', correct: false, rationale: 'Incorrect: A change from 20% to 30% is a 50% relative increase, not a 10% increase.' },
+          { label: 'Solar panel ownership rose by 10 percentage points.', correct: true, rationale: 'Correct: The difference between 30% and 20% is exactly 10 percentage points.' },
+          { label: 'Solar panel ownership grew by 30 percent.', correct: false, rationale: 'Incorrect: 30% is the final level, not the amount of change.' },
         ],
       },
       {
@@ -467,11 +443,6 @@ export const writingAcademicTask1Units = [
           'I use "just under" for values below benchmarks and "just over" for values above.',
           'I verify that pairs connected by "respectively" match order precisely.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-math-precision',
-        label: 'Calculate the percentage point change and relative percentage change for two data points from a practice chart.',
       },
     ],
   },
@@ -547,11 +518,6 @@ export const writingAcademicTask1Units = [
           'I verify that "overtook" is used only when an actual change in rank occurred.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-trend-grammar',
-        label: 'Write two sentences describing the same trend, one using a verb pattern and one using a noun pattern.',
-      },
     ],
   },
 
@@ -594,10 +560,11 @@ export const writingAcademicTask1Units = [
         type: 'annotatedSpecimen',
         kind: 'report',
         title: 'Annotated Table Synthesis Excerpt',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: 'Across all four educational sectors, funding expanded substantially over the five-year period.', note: 'Synthesizes the overall direction before detailing individual rows.' },
-          { text: 'Secondary education received the largest allocation, rising from £45 million to £62 million.', note: 'Selects the dominant row and supports it with start and end figures.' },
-          { text: 'In contrast, vocational training recorded the lowest investment throughout, remaining under £15 million annually.', note: 'Contrasts the dominant category with the lowest outlier without reporting every single cell.' },
+          { id: '1', label: 'Macro Synthesis', text: 'Across all four educational sectors, funding expanded substantially over the five-year period.', note: 'Synthesizes the overall direction before detailing individual rows.' },
+          { id: '2', label: 'Dominant Category', text: 'Secondary education received the largest allocation, rising from £45 million to £62 million.', note: 'Selects the dominant row and supports it with start and end figures.' },
+          { id: '3', label: 'Lowest Outlier', text: 'In contrast, vocational training recorded the lowest investment throughout, remaining under £15 million annually.', note: 'Contrasts the dominant category with the lowest outlier without reporting every single cell.' },
         ],
       },
       {
@@ -629,11 +596,6 @@ export const writingAcademicTask1Units = [
           'I distinguish total summary rows from individual component subgroups.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-line-bar-table',
-        label: 'Select five anchor figures from a complex table that adequately summarize its core patterns.',
-      },
     ],
   },
 
@@ -658,7 +620,7 @@ export const writingAcademicTask1Units = [
       {
         type: 'svgDiagram',
         diagramId: 'diag-task1-pie-pair',
-        title: 'Comparative Pie Chart Pair (2015 vs 2025)',
+        title: 'Comparative Pie Chart Pair (2015 versus 2025)',
         caption: 'Two pie charts showing shifts in energy generation market share: Renewable share expands from 22% to 41%, while Coal contracts from 48% to 26%.',
         alt: 'Pair of pie charts comparing energy source market shares in 2015 and 2025 with highlighted shifts.',
       },
@@ -708,11 +670,6 @@ export const writingAcademicTask1Units = [
           'I allocate balanced paragraph space to both visuals in the body.',
           'I refrain from claiming that a trend in Visual 1 caused a trend in Visual 2.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-dual-visuals',
-        label: 'Write an integrated overview sentence covering both a bar chart and a table from a practice task.',
       },
     ],
   },
@@ -784,11 +741,6 @@ export const writingAcademicTask1Units = [
           'I verify compass bearings against the supplied north arrow before writing.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-map-tenses',
-        label: 'Write two sentences describing a map transformation, one in past passive and one in future passive.',
-      },
     ],
   },
 
@@ -832,7 +784,7 @@ export const writingAcademicTask1Units = [
         items: [
           { action: 'Trace arrows from beginning to end to verify all branches.', condition: 'Step 1 of 5', why: 'Ensures no stage, byproduct, or secondary feedback loop is omitted.' },
           { action: 'Formulate an overview stating broad transformation and process shape.', condition: 'Step 2 of 5', why: 'Fulfills Task Achievement by summarizing the overarching manufacturing operation.' },
-          { action: 'Divide the stages logically between two body paragraphs.', condition: 'Step 3 of 5', why: 'E.g. Body 1: collection, sorting, and cleaning; Body 2: processing and distribution.' },
+          { action: 'Divide the stages logically between two body paragraphs.', condition: 'Step 3 of 5', why: 'For example, Body 1 covers collection, sorting, and cleaning; Body 2 covers processing and distribution.' },
           { action: 'Deploy present simple passive voice for mechanical actions.', condition: 'Step 4 of 5', why: 'Focuses objective attention on the materials ("bottles are washed, crushed, and melted").' },
           { action: 'Connect sequential stages with varied chronological discourse markers.', condition: 'Step 5 of 5', why: 'Uses "initially", "following this", "subsequently", and "after being heated".' },
         ],
@@ -852,11 +804,6 @@ export const writingAcademicTask1Units = [
           'I divide stages into two balanced paragraphs at a natural operational milestone.',
           'I refrain from inventing unshown human agents or technical machinery names.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-process-steps',
-        label: 'Write an overview sentence and the first two body stages for a recycling or manufacturing diagram.',
       },
     ],
   },
@@ -909,7 +856,7 @@ export const writingAcademicTask1Units = [
           ['Overview isolation', 'Draft an overview without looking at any model answers or writing body details.', 'Macro-feature synthesis.'],
           ['Grouping comparison', 'Write down two competing ways to divide a chart details into two paragraphs.', 'Logical coherence planning.'],
           ['Conversion precision', 'Convert two raw data points into an accurate comparative sentence.', 'Mathematical grammar control.'],
-          ['Percentage correction', 'Fix deliberate percentage vs percentage point errors in flawed sample sentences.', 'Quantitative accuracy.'],
+          ['Percentage correction', 'Fix deliberate percentage versus percentage point errors in flawed sample sentences.', 'Quantitative accuracy.'],
           ['Phase chunking', 'Partition a complex multi-line graph into three chronological movement phases.', 'Trend chunking mastery.'],
           ['Inference scrubbing', 'Review a sample report and delete all unproven causal speculations.', 'Objective reporting discipline.'],
         ],
@@ -923,11 +870,6 @@ export const writingAcademicTask1Units = [
           'I practice standalone overview and introduction sprints between full test runs.',
           'I confirm that all prepositions (to, by, at, from) match mathematical facts.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-subskill-drills',
-        label: 'Select two of the eight subskill drills above and complete a 5-minute timed sprint.',
       },
     ],
   },

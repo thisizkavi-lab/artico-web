@@ -905,118 +905,147 @@ export const grammarRepairs19 = [
 export const commonClaims29 = [
   {
     "claim": "Clear communication is all that IELTS measures",
+    "category": "General",
     "reality": "It is a useful aim. The test still has four skills, task conditions, and published criteria."
   },
   {
     "claim": "One general trick solves every question",
+    "category": "General",
     "reality": "Each family requires a particular operation and evidence check."
   },
   {
     "claim": "The final Listening parts each correspond to a fixed band",
+    "category": "Listening",
     "reality": "Parts have different contexts and demands. They are not separate published band filters."
   },
   {
     "claim": "A precise proportion of Reading time should be skimming",
+    "category": "Reading",
     "reality": "Choose the operation and time from the task. The source does not establish universal percentages."
   },
   {
     "claim": "Rare or C1/C2 words create a high band",
+    "category": "Language",
     "reality": "Accurate, appropriate, flexible use matters. There is no word-level quota."
   },
   {
     "claim": "Never repeat a word",
+    "category": "Language",
     "reality": "Repeat a precise word when the alternatives change the meaning."
   },
   {
     "claim": "Add a linker to every sentence",
+    "category": "Writing",
     "reality": "Use cohesion to express genuine relationships."
   },
   {
     "claim": "Never use idioms",
+    "category": "Language",
     "reality": "Register, meaning, and accuracy determine suitability. There is no idiom quota or universal ban."
   },
   {
     "claim": "Use only short simple sentences",
+    "category": "Language",
     "reality": "Clear sentences help, but grammatical range also matters."
   },
   {
     "claim": "Passive voice is always wrong",
+    "category": "Language",
     "reality": "Use it when it serves the information focus accurately."
   },
   {
     "claim": "Every essay needs the same four paragraphs",
+    "category": "Writing",
     "reality": "Paragraph jobs and task demands determine the organization."
   },
   {
     "claim": "Every Task 1 overview must contain exactly three features and no numbers",
+    "category": "Writing",
     "reality": "Select accurate main features. Counts and the usual number-free format are scaffolds."
   },
   {
     "claim": "Task 2 must always come first",
+    "category": "Writing",
     "reality": "Order is a tested personal strategy. Complete both tasks."
   },
   {
     "claim": "200 words is a Task 1 maximum",
+    "category": "Writing",
     "reality": "The official instruction is a minimum of 150 words."
   },
   {
     "claim": "300 words is a Task 2 maximum",
+    "category": "Writing",
     "reality": "The official instruction is a minimum of 250 words. Control relevance, time, and development."
   },
   {
     "claim": "A hook or familiar phrase automatically earns zero",
+    "category": "Writing",
     "reality": "The whole response is assessed. Do not turn memorisation warnings into invented automatic penalties."
   },
   {
     "claim": "The weakest Writing criterion becomes the complete Writing band",
+    "category": "Writing",
     "reality": "Criteria contribute to task scores; Task 2 has greater task weight."
   },
   {
     "claim": "A fixed error-free percentage guarantees a band",
+    "category": "Language",
     "reality": "The source's numerical thresholds are not official scoring formulas."
   },
   {
     "claim": "Speaking fluency is worth 75%",
+    "category": "Speaking",
     "reality": "The four Speaking criteria have equal weight."
   },
   {
     "claim": "A British or American accent is required",
+    "category": "Speaking",
     "reality": "Work on intelligibility and pronunciation features."
   },
   {
     "claim": "Smiling, eye contact, or clothing directly earns language marks",
+    "category": "Speaking",
     "reality": "They are not separate criteria. Be comfortable and respond to the task."
   },
   {
     "claim": "A difficult Speaking question proves a high band",
+    "category": "Speaking",
     "reality": "Question difficulty and examiner behaviour are not a reliable score signal."
   },
   {
     "claim": "The examiner will switch a topic if you say it is unfamiliar",
+    "category": "Speaking",
     "reality": "Examiners will not switch a topic upon request. Candidates must attempt a relevant response."
   },
   {
     "claim": "Three good practice results guarantee the official result",
+    "category": "Study & Scoring",
     "reality": "They provide limited evidence, not certainty."
   },
   {
     "claim": "Only a paid former examiner can provide feedback",
+    "category": "Study & Scoring",
     "reality": "Feedback quality and calibration matter. A specific credential or service is not compulsory."
   },
   {
     "claim": "An AI score is an official assessment",
+    "category": "Study & Scoring",
     "reality": "Treat it as an uncalibrated suggestion unless independently validated for the use."
   },
   {
     "claim": "One learner's rapid score increase proves the method",
+    "category": "Study & Scoring",
     "reality": "Starting ability, prior exposure, conditions, and unreported factors can differ."
   },
   {
     "claim": "Predicted monthly topics remove the need for broad preparation",
+    "category": "Study & Scoring",
     "reality": "Prepare transferable skills and the full task range."
   },
   {
     "claim": "Nothing about IELTS can change",
+    "category": "General",
     "reality": "Skills, task requirements, delivery, and local administration are distinct. Check current official updates."
   }
 ]

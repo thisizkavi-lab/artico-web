@@ -191,6 +191,8 @@ export function CalloutBlock({ block }) {
     option: 'Option',
     trap: 'Trap',
   }
+  const sourceUrl = block.sourceUrl || block.link?.url
+  const sourceLabel = block.sourceLabel || block.link?.text || 'Check official source'
 
   return (
     <aside className={`ies-callout ies-callout-${variant}`} role="note">
@@ -201,13 +203,27 @@ export function CalloutBlock({ block }) {
       <p className="ies-callout-body">
         <StudyRichText text={block.body} />
       </p>
-      {block.sourceUrl && (
-        <a className="ies-callout-source" href={block.sourceUrl} target="_blank" rel="noreferrer">
-          {block.sourceLabel || 'Check official source'} →
+      {sourceUrl && (
+        <a className="ies-callout-source" href={sourceUrl} target="_blank" rel="noreferrer">
+          {sourceLabel} →
         </a>
       )}
     </aside>
   )
+}
+
+function cleanStepCondition(raw) {
+  if (!raw || typeof raw !== 'string') return ''
+  return raw
+    .replace(/^(?:Step|Move|Point|Rule|Pass|Stage|Phase|Pillar|Source|Condition|Gate)\s+\d+(?:\s+of\s+\d+)?\s*(?::\s*)?/i, '')
+    .trim()
+}
+
+function cleanStepAction(raw) {
+  if (!raw || typeof raw !== 'string') return ''
+  return raw
+    .replace(/^(?:\d+[.)]\s+|(?:Step|Move|Point)\s+\d+\s*:\s*)/i, '')
+    .trim()
 }
 
 export function StepsBlock({ block }) {
@@ -215,24 +231,28 @@ export function StepsBlock({ block }) {
     <div className="ies-steps">
       <h4 className="ies-steps-title">{block.title}</h4>
       <ol className="ies-steps-list">
-        {block.items.map((item, i) => (
-          <li key={i} className="ies-step-item">
-            {item.condition && (
-              <span className="ies-step-condition">
-                <StudyRichText text={item.condition} />:{' '}
+        {block.items.map((item, i) => {
+          const cond = cleanStepCondition(item.condition)
+          const act = cleanStepAction(item.action)
+          return (
+            <li key={i} className="ies-step-item">
+              {cond && (
+                <span className="ies-step-condition">
+                  <StudyRichText text={cond} />:{' '}
+                </span>
+              )}
+              <span className="ies-step-action">
+                <StudyRichText text={act} />
               </span>
-            )}
-            <span className="ies-step-action">
-              <StudyRichText text={item.action} />
-            </span>
-            {item.why && (
-              <small className="ies-step-why">
-                {' '}
-                (<StudyRichText text={item.why} />)
-              </small>
-            )}
-          </li>
-        ))}
+              {item.why && (
+                <small className="ies-step-why">
+                  {' '}
+                  (<StudyRichText text={item.why} />)
+                </small>
+              )}
+            </li>
+          )
+        })}
       </ol>
     </div>
   )
@@ -269,6 +289,11 @@ export function ComparisonTableBlock({ block }) {
 }
 
 export function TrackCompareBlock({ block }) {
+  const acadLabel = block.academic.label || block.academic.title || ''
+  const gtLabel = block.generalTraining.label || block.generalTraining.title || ''
+  const gtLinkUnit = block.generalTraining.linkUnit
+  const gtTargetArea = gtLinkUnit ? STUDY_UNIT_BY_ID[gtLinkUnit]?.area || 'writing' : 'writing'
+
   return (
     <div className="ies-track-compare">
       <h4 className="ies-track-compare-title">{block.title}</h4>
@@ -276,7 +301,7 @@ export function TrackCompareBlock({ block }) {
         <div className="ies-track-card ies-track-academic">
           <div className="ies-track-header">
             <span className="ies-badge ies-badge-academic">Academic</span>
-            <strong>{block.academic.label}</strong>
+            {acadLabel && <strong>{acadLabel}</strong>}
           </div>
           <ul>
             {block.academic.points.map((pt, i) => (
@@ -289,7 +314,7 @@ export function TrackCompareBlock({ block }) {
         <div className="ies-track-card ies-track-gt">
           <div className="ies-track-header">
             <span className="ies-badge ies-badge-gt">General Training</span>
-            <strong>{block.generalTraining.label}</strong>
+            {gtLabel && <strong>{gtLabel}</strong>}
           </div>
           <ul>
             {block.generalTraining.points.map((pt, i) => (
@@ -298,12 +323,12 @@ export function TrackCompareBlock({ block }) {
               </li>
             ))}
           </ul>
-          {block.generalTraining.linkUnit && (
+          {gtLinkUnit && (
             <a
               className="ies-track-gt-link"
-              href={`#${ieltsStudyPath('writing', block.generalTraining.linkUnit)}`}
+              href={`#${ieltsStudyPath(gtTargetArea, gtLinkUnit)}`}
             >
-              {block.generalTraining.linkLabel || 'Open GT units'} →
+              {block.generalTraining.linkLabel || 'Open General Training unit'} →
             </a>
           )}
         </div>
@@ -375,13 +400,16 @@ export function AnnotatedSpecimenBlock({ block }) {
 }
 
 export function ContrastPairBlock({ block }) {
+  const weakTag = block.weak.tag || block.weak.label || 'Weak / Misleading'
+  const controlledTag = block.controlled.tag || block.controlled.label || 'Controlled / Accurate'
+
   return (
     <div className="ies-contrast-pair">
       <h4 className="ies-contrast-title">{block.title}</h4>
       <div className="ies-contrast-grid">
         <div className="ies-contrast-card ies-contrast-weak">
           <div className="ies-contrast-header">
-            <span className="ies-contrast-tag ies-tag-weak">{block.weak.tag || 'Weak / Misleading'}</span>
+            <span className="ies-contrast-tag ies-tag-weak">{weakTag}</span>
           </div>
           <blockquote className="ies-contrast-text">
             <StudyRichText text={block.weak.text} />
@@ -392,7 +420,7 @@ export function ContrastPairBlock({ block }) {
         </div>
         <div className="ies-contrast-card ies-contrast-controlled">
           <div className="ies-contrast-header">
-            <span className="ies-contrast-tag ies-tag-controlled">{block.controlled.tag || 'Controlled / Accurate'}</span>
+            <span className="ies-contrast-tag ies-tag-controlled">{controlledTag}</span>
           </div>
           <blockquote className="ies-contrast-text">
             <StudyRichText text={block.controlled.text} />
@@ -521,21 +549,42 @@ export function MediaSlotBlock({ block }) {
   )
 }
 
+function getWordBankCategory(item, bankId) {
+  if (item.category) return item.category
+  if ((bankId === 'vocab-59-patterns' || bankId === 'vocabPatterns59') && item.meaningAndUse) {
+    const m = item.meaningAndUse.toLowerCase()
+    if (m.startsWith('verb')) return 'Verb'
+    if (m.startsWith('adjective')) return 'Adjective'
+    if (m.includes('noun')) return 'Noun'
+    return 'Other'
+  }
+  return null
+}
+
 export function WordBankBlock({ block }) {
   const bank = WORD_BANKS[block.bankId]
   const [query, setQuery] = useState('')
+  const [activeCat, setActiveCat] = useState('All')
 
   if (!bank) {
     return <p className="ies-error">Word bank "{block.bankId}" not found.</p>
   }
 
   const items = bank.data || []
-  const filtered = query.trim()
-    ? items.filter((item) => {
-        const text = JSON.stringify(item).toLowerCase()
-        return text.includes(query.toLowerCase())
-      })
-    : items
+  const categories = Array.from(
+    new Set(items.map((it) => getWordBankCategory(it, block.bankId)).filter(Boolean))
+  )
+
+  const filtered = items.filter((item) => {
+    if (activeCat !== 'All' && getWordBankCategory(item, block.bankId) !== activeCat) {
+      return false
+    }
+    if (query.trim()) {
+      const text = JSON.stringify(item).toLowerCase()
+      return text.includes(query.toLowerCase())
+    }
+    return true
+  })
 
   return (
     <div className="ies-word-bank">
@@ -554,6 +603,21 @@ export function WordBankBlock({ block }) {
           />
         </div>
       </div>
+
+      {categories.length > 1 && (
+        <div className="ies-filter-pills" role="group" aria-label="Filter entries by category">
+          {['All', ...categories].map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              className={`ies-filter-pill ${activeCat === cat ? 'ies-active' : ''}`}
+              onClick={() => setActiveCat(cat)}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="ies-bank-count">
         Showing {filtered.length} of {items.length} entries
@@ -618,14 +682,71 @@ export function WordBankBlock({ block }) {
 }
 
 export function MythBusterBlock({ block }) {
+  const [query, setQuery] = useState('')
+  const [activeCat, setActiveCat] = useState('All')
+
+  const showFilter = Boolean(block.filterable || block.items.length >= 10)
+  const categories = Array.from(new Set(block.items.map((it) => it.category).filter(Boolean)))
+
+  const filteredItems = showFilter
+    ? block.items.filter((item) => {
+        if (activeCat !== 'All' && item.category !== activeCat) return false
+        if (query.trim()) {
+          const q = query.toLowerCase()
+          return (
+            item.claim.toLowerCase().includes(q) ||
+            item.reality.toLowerCase().includes(q) ||
+            (item.category && item.category.toLowerCase().includes(q))
+          )
+        }
+        return true
+      })
+    : block.items
+
   return (
     <div className="ies-myth-buster">
-      <h4 className="ies-myth-title">{block.title}</h4>
+      <div className="ies-myth-header">
+        <h4 className="ies-myth-title">{block.title}</h4>
+        {showFilter && (
+          <div className="ies-bank-search">
+            <input
+              type="search"
+              placeholder="Filter claims…"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              aria-label="Filter common claims"
+            />
+          </div>
+        )}
+      </div>
+
+      {showFilter && categories.length > 1 && (
+        <div className="ies-filter-pills" role="group" aria-label="Filter claims by skill">
+          {['All', ...categories].map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              className={`ies-filter-pill ${activeCat === cat ? 'ies-active' : ''}`}
+              onClick={() => setActiveCat(cat)}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {showFilter && (
+        <div className="ies-bank-count">
+          Showing {filteredItems.length} of {block.items.length} claims
+        </div>
+      )}
+
       <div className="ies-myth-list">
-        {block.items.map((item, i) => (
+        {filteredItems.map((item, i) => (
           <div key={i} className="ies-myth-card">
             <div className="ies-myth-row">
               <span className="ies-myth-badge">Common Claim</span>
+              {item.category && <span className="ies-myth-cat">{item.category}</span>}
               <strong className="ies-myth-claim">"{item.claim}"</strong>
             </div>
             <div className="ies-reality-row">
@@ -634,6 +755,14 @@ export function MythBusterBlock({ block }) {
                 <StudyRichText text={item.reality} />
               </p>
             </div>
+            {item.takeaway && (
+              <div className="ies-takeaway-row">
+                <span className="ies-takeaway-badge">Action</span>
+                <p className="ies-takeaway-text">
+                  <StudyRichText text={item.takeaway} />
+                </p>
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -664,7 +793,7 @@ export function DiagnosticCheckBlock({ block }) {
               className={`ies-diag-option ${isSelected ? 'ies-selected' : ''}`}
               onClick={() => setSelectedIndex(i)}
             >
-              <span className="ies-opt-label">{opt.label}</span>
+              <span className="ies-opt-label">{opt.label || opt.text}</span>
             </button>
           )
         })}

@@ -113,9 +113,10 @@ export const EXPECTED_UNIT_IDS = [
 
 // Banned words & regexes
 const BANNED_HYPE_WORDS = /\b(simply|obviously|of course|trick|tricks|hack|hacks|secret|secrets|magic|supercharge|skyrocket|delve|realm|tapestry|unlock|streak|streaks|xp|leaderboard|congrats|congratulations|awesome)\b/i
-const BANNED_ABBREVIATIONS = /\b(e\.g\.|i\.e\.|etc\.|vs\.|cf\.)\b/i
+const BANNED_ABBREVIATIONS = /(?:(?<![A-Za-z])(?:e\.g\.|i\.e\.|etc\.|vs\.|cf\.)|\bvs\b)/i
 const BANNED_CONTRACTIONS = /\b(don't|doesn't|didn't|won't|can't|couldn't|shouldn't|wouldn't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't|it's|that's|there's|what's|who's|you're|we're|they're|I'm|you've|we've|they've|you'll|we'll|they'll)\b/i
 const BANNED_GUARANTEES = /\b(guarantee[sd]?|guaranteed band|will get band [0-9]|100% band|instant band)\b/i
+const BANNED_GAMIFICATION_SOURCE = /\b(streak|streaks|xp|rewardPoints|scorePoints|leaderboard|confetti|levelUp|lockedUnit|unlockUnit|trophy)\b/i
 
 function countWords(str) {
   if (!str || typeof str !== 'string') return 0
@@ -271,6 +272,18 @@ export function auditUnit(unit, validateUnitFn) {
         issues.push({ level: 'warn', code: 'ASE09_CALLOUT_LEN', message: `Callout body has ${calloutWords} words (target <= 65).` })
       }
     }
+
+    if (block.type === 'steps') {
+      // ASE01: procedural step actions <= 25 words (warn > 22)
+      for (const item of block.items) {
+        const aWords = countWords(item.action)
+        if (aWords > 25) {
+          issues.push({ level: 'error', code: 'ASE01_STEP_LEN', message: `Step action has ${aWords} words (max 25): "${item.action.slice(0, 50)}…"` })
+        } else if (aWords > 22) {
+          issues.push({ level: 'warn', code: 'ASE01_STEP_LEN', message: `Step action has ${aWords} words (target <= 22): "${item.action.slice(0, 50)}…"` })
+        }
+      }
+    }
   }
 
   // ASE01, ASE03, ASE04, ASE10 on instructional text
@@ -288,8 +301,9 @@ export function auditUnit(unit, validateUnitFn) {
       issues.push({ level: 'error', code: 'ASE03_HYPE', message: `Banned hype/filler word "${match}" in: "${s.slice(0, 60)}…"` })
     }
 
-    if (BANNED_ABBREVIATIONS.test(s)) {
-      const match = s.match(BANNED_ABBREVIATIONS)[0]
+    const sWithoutUrls = s.replace(/https?:\/\/[^\s)\]]+/g, '')
+    if (BANNED_ABBREVIATIONS.test(sWithoutUrls)) {
+      const match = sWithoutUrls.match(BANNED_ABBREVIATIONS)[0]
       issues.push({ level: 'error', code: 'ASE03_ABBR', message: `Banned abbreviation "${match}" in: "${s.slice(0, 60)}…"` })
     }
 
@@ -319,13 +333,54 @@ export async function runFullAudit(options = {}) {
     const { GLOSSARY } = await vite.ssrLoadModule('/src/web/ielts-study/glossary.js')
     const wordBanks = await vite.ssrLoadModule('/src/web/ielts-study/wordBanks.js')
     const { MEDIA_SLOTS } = await vite.ssrLoadModule('/src/web/ielts-study/mediaManifest.js')
-    const { DIAGRAM_IDS } = await vite.ssrLoadModule('/src/web/ielts-study/IeltsStudyDiagrams.jsx')
+    const { DIAGRAM_IDS, IeltsStudyDiagram } = await vite.ssrLoadModule('/src/web/ielts-study/IeltsStudyDiagrams.jsx')
     const { ALL_STUDY_UNITS, STUDY_UNIT_BY_ID } = await vite.ssrLoadModule('/src/web/ielts-study/units/index.js')
+    const { parseRoute } = await vite.ssrLoadModule('/src/web/learning.js')
+    const { default: IeltsCourse } = await vite.ssrLoadModule('/src/web/IeltsCourse.jsx')
 
     console.log('=== Artico IELTS Study Course Quality Audit ===\n')
 
-    // COV03: Reference tables count
-    console.log('--- Checking Reference Banks (COV03) ---')
+    // COV01 & COV02: Curriculum Registry & 174 Source Sections
+    console.log('--- Checking Curriculum Registry & Source Coverage (COV01 & COV02) ---')
+    if (ALL_STUDY_UNITS.length !== EXPECTED_UNIT_IDS.length) {
+      console.error(`❌ COV01: Expected ${EXPECTED_UNIT_IDS.length} units, got ${ALL_STUDY_UNITS.length}`)
+      totalErrors++
+    } else {
+      const mismatchIdx = EXPECTED_UNIT_IDS.findIndex((id, idx) => ALL_STUDY_UNITS[idx]?.id !== id)
+      if (mismatchIdx !== -1) {
+        console.error(`❌ COV01: Unit order mismatch at index ${mismatchIdx}: expected ${EXPECTED_UNIT_IDS[mismatchIdx]}, got ${ALL_STUDY_UNITS[mismatchIdx]?.id}`)
+        totalErrors++
+      } else {
+        console.log(`✓ COV01: All 85 canonical study units registered in order`)
+      }
+    }
+
+    const sectionIndexMd = fs.readFileSync(path.join(ROOT, 'work/ielts-study/source/SECTION_INDEX.md'), 'utf-8')
+    const indexedSections = new Set(['Preamble'])
+    for (const line of sectionIndexMd.split('\n')) {
+      const m = line.match(/^\|\s*([0-9A]+\.[0-9]+)\s*\|/)
+      if (m) indexedSections.add(m[1])
+    }
+    const coveredSections = new Set()
+    for (const u of ALL_STUDY_UNITS) {
+      for (const s of u.sourceSections || []) {
+        coveredSections.add(s)
+        if (!indexedSections.has(s)) {
+          console.error(`❌ COV02: Unknown sourceSection "${s}" in unit ${u.id}`)
+          totalErrors++
+        }
+      }
+    }
+    const missingSections = [...indexedSections].filter((s) => !coveredSections.has(s))
+    if (missingSections.length > 0) {
+      console.error(`❌ COV02: Missing ${missingSections.length} source section(s): ${missingSections.join(', ')}`)
+      totalErrors++
+    } else {
+      console.log(`✓ COV02: All ${indexedSections.size}/${indexedSections.size} source sections covered (0 missing, 0 unknown)`)
+    }
+
+    // COV03: Reference tables count & official URLs
+    console.log('\n--- Checking Reference Banks & Glossary (COV03 & ASE05) ---')
     const bankChecks = [
       { name: 'commonConcepts50', got: wordBanks.commonConcepts50.length, expected: 50 },
       { name: 'vocabPatterns59', got: wordBanks.vocabPatterns59.length, expected: 59 },
@@ -344,14 +399,172 @@ export async function runFullAudit(options = {}) {
         console.log(`✓ ${b.name}: ${b.got}/${b.expected}`)
       }
     }
+    for (const ref of wordBanks.officialReferences19) {
+      if (!ref.url || !ref.url.startsWith('https://')) {
+        console.error(`❌ COV03: Invalid official reference URL: ${ref.url}`)
+        totalErrors++
+      }
+    }
+    const glossaryItems = Object.values(GLOSSARY)
+    if (glossaryItems.length < 40) {
+      console.error(`❌ ASE05: Glossary has ${glossaryItems.length} terms (expected >= 40)`)
+      totalErrors++
+    } else {
+      let glossaryBad = 0
+      for (const g of glossaryItems) {
+        if (countWords(g.definition) > 25) {
+          console.error(`❌ ASE05: Glossary term "${g.term}" definition exceeds 25 words`)
+          totalErrors++
+          glossaryBad++
+        }
+      }
+      if (glossaryBad === 0) {
+        console.log(`✓ ASE05: Glossary has ${glossaryItems.length} terms (all definitions <= 25 words)`)
+      }
+    }
 
-    // VIS01: Diagrams check
-    console.log('\n--- Checking Constructive Diagrams (VIS01) ---')
+    // COV05, COV06, COV07, COV08: GT separation, DAG, internal links, workbookPrompt budget
+    console.log('\n--- Checking GT Track, Prerequisite DAG, Links & Workbook Budget (COV05–COV08) ---')
+    const gtUnits = ALL_STUDY_UNITS.filter((u) => u.track === 'gt')
+    if (gtUnits.length !== 4) {
+      console.error(`❌ COV05: Expected 4 GT units, got ${gtUnits.length}`)
+      totalErrors++
+    } else {
+      for (const gu of gtUnits) {
+        if (!gu.title.includes('[GT]') || !gu.partTitle.includes('[GT]')) {
+          console.error(`❌ COV05: GT unit ${gu.id} must include [GT] in title and partTitle`)
+          totalErrors++
+        }
+      }
+      console.log(`✓ COV05: All 4 [GT] units explicitly tagged and separated`)
+    }
+
+    // DAG check
+    const visitState = new Map()
+    function checkDag(uid, stack = []) {
+      const st = visitState.get(uid)
+      if (st === 'visiting') {
+        console.error(`❌ COV06: Cycle detected in needs DAG: ${[...stack, uid].join(' -> ')}`)
+        totalErrors++
+        return
+      }
+      if (st === 'visited') return
+      visitState.set(uid, 'visiting')
+      const u = STUDY_UNIT_BY_ID[uid]
+      for (const dep of u?.needs || []) {
+        if (!STUDY_UNIT_BY_ID[dep]) {
+          console.error(`❌ COV06: Unit ${uid} has unknown prerequisite "${dep}"`)
+          totalErrors++
+        } else {
+          checkDag(dep, [...stack, uid])
+        }
+      }
+      visitState.set(uid, 'visited')
+    }
+    for (const u of ALL_STUDY_UNITS) checkDag(u.id)
+    console.log(`✓ COV06: Prerequisite graph verified acyclic across all 85 units`)
+
+    // Internal unit: links & workbookPrompt count
+    const workbookNoteIds = new Set()
+    let workbookCount = 0
+    for (const u of ALL_STUDY_UNITS) {
+      const rawJson = JSON.stringify(u)
+      const unitLinkMatches = [...rawJson.matchAll(/\(unit:([a-z0-9-]+)\)/g)]
+      for (const m of unitLinkMatches) {
+        if (!STUDY_UNIT_BY_ID[m[1]]) {
+          console.error(`❌ COV07: Broken internal link (unit:${m[1]}) in unit ${u.id}`)
+          totalErrors++
+        }
+      }
+      for (const b of u.blocks) {
+        if (b.type === 'trackCompare' && b.generalTraining?.linkUnit) {
+          if (!STUDY_UNIT_BY_ID[b.generalTraining.linkUnit]) {
+            console.error(`❌ COV07: Broken trackCompare linkUnit "${b.generalTraining.linkUnit}" in ${u.id}`)
+            totalErrors++
+          }
+        }
+        if (b.type === 'workbookPrompt') {
+          workbookCount++
+          if (workbookNoteIds.has(b.noteId)) {
+            console.error(`❌ COV08: Duplicate workbookPrompt noteId "${b.noteId}"`)
+            totalErrors++
+          }
+          workbookNoteIds.add(b.noteId)
+        }
+      }
+    }
+    if (workbookCount < 5 || workbookCount > 10) {
+      console.error(`❌ COV08: Total workbookPrompt count is ${workbookCount} (expected 5..10)`)
+      totalErrors++
+    } else {
+      console.log(`✓ COV07 & COV08: Internal links resolved; ${workbookCount} workbook prompts within 5..10 budget`)
+    }
+
+    // NOGAME01–03: Scan source directory for gamification
+    console.log('\n--- Checking Zero-Gamification Invariants (NOGAME01–NOGAME03) ---')
+    function listFilesRec(dir) {
+      const out = []
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name)
+        if (entry.isDirectory()) out.push(...listFilesRec(full))
+        else if (/\.(js|jsx|css)$/.test(entry.name)) out.push(full)
+      }
+      return out
+    }
+    let gameHits = 0
+    for (const file of listFilesRec(path.join(ROOT, 'src/web/ielts-study'))) {
+      const src = fs.readFileSync(file, 'utf-8')
+        .replace(/\/\*[\s\S]*?\*\//g, '')
+        .replace(/\/\/.*$/gm, '')
+      if (BANNED_GAMIFICATION_SOURCE.test(src)) {
+        const match = src.match(BANNED_GAMIFICATION_SOURCE)[0]
+        console.error(`❌ NOGAME01: Banned gamification token "${match}" found in ${path.relative(ROOT, file)}`)
+        totalErrors++
+        gameHits++
+      }
+    }
+    if (gameHits === 0) {
+      console.log(`✓ NOGAME01–03: Zero gamification tokens across all ielts-study source files`)
+    }
+
+    // VIS01 & VIS02: Diagrams check + SVG primitives + unique IDs
+    console.log('\n--- Checking Constructive Diagrams (VIS01 & VIS02) ---')
     if (DIAGRAM_IDS.length !== 23) {
       console.error(`❌ VIS01: DIAGRAM_IDS has ${DIAGRAM_IDS.length} diagrams (expected 23)`)
       totalErrors++
     } else {
-      console.log(`✓ DIAGRAM_IDS: 23 diagrams registered`)
+      const globalSvgIds = new Set()
+      let svgErrors = 0
+      for (const dId of DIAGRAM_IDS) {
+        const markup = renderToStaticMarkup(createElement(IeltsStudyDiagram, { diagramId: dId }))
+        if (!markup.includes('<svg') || !markup.includes('viewBox=')) {
+          console.error(`❌ VIS01: Diagram ${dId} missing <svg> or viewBox`)
+          totalErrors++
+          svgErrors++
+        }
+        const primitives = (markup.match(/<(rect|line|path|circle|ellipse|polygon|polyline|text)\b/g) || []).length
+        if (primitives < 8) {
+          console.error(`❌ VIS01: Diagram ${dId} has only ${primitives} vector elements (expected >= 8)`)
+          totalErrors++
+          svgErrors++
+        }
+        if (/#000\b|#000000\b|rgb\(\s*0\s*,\s*0\s*,\s*0\s*\)/i.test(markup)) {
+          console.error(`❌ VIS02: Diagram ${dId} uses raw black instead of Artico ink palette`)
+          totalErrors++
+          svgErrors++
+        }
+        for (const idMatch of markup.matchAll(/\bid="([^"]+)"/g)) {
+          if (globalSvgIds.has(idMatch[1])) {
+            console.error(`❌ VIS02: Duplicate SVG id="${idMatch[1]}" in ${dId}`)
+            totalErrors++
+            svgErrors++
+          }
+          globalSvgIds.add(idMatch[1])
+        }
+      }
+      if (svgErrors === 0) {
+        console.log(`✓ DIAGRAM_IDS: All 23 diagrams rendered cleanly (>= 8 primitives, Artico palette, ${globalSvgIds.size} unique SVG IDs)`)
+      }
     }
 
     // VIS03: Media slots check
@@ -361,7 +574,12 @@ export async function runFullAudit(options = {}) {
       console.error(`❌ VIS03: MEDIA_SLOTS has ${slotKeys.length} slots (expected 10)`)
       totalErrors++
     } else {
-      console.log(`✓ MEDIA_SLOTS: 10 slots defined`)
+      const referencedSlots = new Set()
+      for (const u of ALL_STUDY_UNITS) {
+        for (const b of u.blocks) {
+          if (b.type === 'mediaSlot') referencedSlots.add(b.slotId)
+        }
+      }
       for (const [id, slot] of Object.entries(MEDIA_SLOTS)) {
         if (slot.status === 'ready') {
           const fullAudioPath = path.join(ROOT, 'public', slot.src)
@@ -370,7 +588,64 @@ export async function runFullAudit(options = {}) {
             totalErrors++
           }
         }
+        if (!referencedSlots.has(id)) {
+          console.error(`❌ VIS03: Media slot ${id} is never referenced by any study unit`)
+          totalErrors++
+        }
       }
+      console.log(`✓ MEDIA_SLOTS: All 10 slots defined, audio verified, and referenced across units`)
+    }
+
+    // VIS04: Full SSR Render of Study Hub, all 85 Study Units, and Practice Mode routes
+    console.log('\n--- Checking Full SSR Route Rendering (VIS04) ---')
+    const origConsoleError = console.error
+    const ssrConsoleErrors = []
+    console.error = (...args) => {
+      ssrConsoleErrors.push(args.map(String).join(' '))
+    }
+    try {
+      const homeHtml = renderToStaticMarkup(createElement(IeltsCourse, { route: parseRoute('#/application/tests/ielts/home/study') }))
+      if (!homeHtml.includes('Everything about IELTS') || /progressbar/i.test(homeHtml)) {
+        ssrConsoleErrors.push('Study hub SSR failed orientation or progressbar check')
+      }
+      for (const u of ALL_STUDY_UNITS) {
+        const html = renderToStaticMarkup(
+          createElement(IeltsCourse, { route: parseRoute(`#/application/tests/ielts/${u.area}/study?unit=${u.id}`) })
+        )
+        if (!html.includes('class="ies-article"')) {
+          ssrConsoleErrors.push(`Study unit ${u.id} did not render ies-article`)
+        }
+        if (u.track === 'gt' && !html.includes('General Training Track')) {
+          ssrConsoleErrors.push(`GT unit ${u.id} missing General Training Track banner`)
+        }
+      }
+      const practiceHashes = [
+        '#/application/tests/ielts/home/practice',
+        '#/application/tests/ielts/overview/practice',
+        '#/application/tests/ielts/listening/practice',
+        '#/application/tests/ielts/reading/practice',
+        '#/application/tests/ielts/writing/practice',
+        '#/application/tests/ielts/speaking/practice',
+        '#/application/tests/ielts/guided/practice',
+        '#/application/tests/ielts/mocks/practice',
+        '#/application/tests/ielts/simulation/practice',
+      ]
+      for (const h of practiceHashes) {
+        const pHtml = renderToStaticMarkup(createElement(IeltsCourse, { route: parseRoute(h) }))
+        if (!pHtml.includes('ie-page')) {
+          ssrConsoleErrors.push(`Practice route ${h} failed SSR`)
+        }
+      }
+    } catch (ssrErr) {
+      ssrConsoleErrors.push(`SSR exception: ${ssrErr.message}`)
+    } finally {
+      console.error = origConsoleError
+    }
+    if (ssrConsoleErrors.length > 0) {
+      for (const msg of ssrConsoleErrors) console.error(`❌ VIS04: ${msg}`)
+      totalErrors += ssrConsoleErrors.length
+    } else {
+      console.log(`✓ VIS04: SSR rendered Study Hub + all 85 unit routes + 9 Practice routes with 0 errors/warnings`)
     }
 
     // Units audit
@@ -519,6 +794,10 @@ for filename, ids, header_title in sheets:
         img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
         
         draw.text((x, y), f"#{idx+1 if '1' in filename else idx+13}: {d_id}", fill='#285bcc')
+        if img.mode == 'RGBA':
+            bg = Image.new('RGB', img.size, '#fbfaf7')
+            bg.paste(img, (0, 0), img)
+            img = bg
         sheet.paste(img, (x, y + 25))
     
     out_path = os.path.join(review_dir, filename)

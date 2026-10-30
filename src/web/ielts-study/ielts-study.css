@@ -148,11 +148,20 @@
 .ies-home-masthead {
   margin-bottom: 24px;
 }
+.ies-home-masthead h1 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(28px, 3.6vw, 38px);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ie-ink);
+  margin: 0;
+}
 .ies-home-lead {
   font-size: 17px;
   line-height: 1.55;
   color: var(--ie-muted);
-  margin-top: 6px;
+  margin-top: 8px;
   max-width: 68ch;
 }
 .ies-track-legend {
@@ -172,6 +181,41 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+}
+
+.ies-orientation-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid var(--ie-border);
+  border-left: 3px solid var(--ie-accent);
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ie-ink);
+}
+.ies-inline-pill {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.ies-orientation-link {
+  font-weight: 700;
+  color: var(--ie-accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ies-orientation-link:hover {
+  text-decoration: underline;
 }
 
 .ies-bookmark-bar {
@@ -236,6 +280,13 @@
   color: var(--ie-ink);
   margin: 0;
 }
+.ies-mod-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .ies-mod-fact {
   font-size: 12px;
   font-weight: 600;
@@ -244,6 +295,16 @@
   color: var(--ie-muted);
   border-radius: 4px;
   white-space: nowrap;
+}
+.ies-mod-start {
+  font-size: 12.5px;
+  font-weight: 650;
+  color: var(--ie-accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ies-mod-start:hover {
+  text-decoration: underline;
 }
 .ies-mod-scope {
   font-size: 14px;
@@ -416,6 +477,7 @@
 
 /* Mobile TOC drawer */
 .ies-mobile-toc {
+  display: none;
   margin-bottom: 18px;
   background: #ffffff;
   border: 1px solid var(--ie-border);
@@ -427,6 +489,22 @@
   font-weight: 600;
   color: var(--ie-ink);
   cursor: pointer;
+}
+.ies-mobile-toc-body {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--ie-border);
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+@media (max-width: 880px) {
+  .ies-outline {
+    display: none;
+  }
+  .ies-mobile-toc {
+    display: block;
+  }
 }
 
 /* Right Column: Main Unit Article */
@@ -1167,6 +1245,32 @@
   border: 1px solid var(--ie-border);
   border-radius: 4px;
 }
+.ies-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.ies-filter-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--ie-border);
+  background: var(--ie-paper);
+  color: var(--ie-ink);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ies-filter-pill:hover {
+  border-color: var(--ie-accent);
+  color: var(--ie-accent);
+}
+.ies-filter-pill.ies-active {
+  background: var(--ie-tint);
+  border-color: var(--ie-accent);
+  color: var(--ie-accent);
+}
 .ies-bank-count {
   font-size: 11.5px;
   color: var(--ie-muted);
@@ -1239,11 +1343,28 @@
 .ies-myth-buster {
   margin: 22px 0;
 }
+.ies-myth-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
 .ies-myth-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--ie-ink);
-  margin: 0 0 10px 0;
+  margin: 0;
+}
+.ies-myth-cat {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--ie-paper-inset);
+  color: var(--ie-muted);
+  padding: 1px 6px;
+  border-radius: 3px;
 }
 .ies-myth-list {
   display: flex;
@@ -1500,4 +1621,25 @@
 }
 .ies-nav-card-next {
   text-align: right;
+}
+.ies-module-practice-bridge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--ie-paper);
+  border: 1px solid var(--ie-border);
+  border-radius: 6px;
+  font-size: 12.5px;
+  color: var(--ie-muted);
+}
+.ies-module-practice-bridge a {
+  font-weight: 650;
+  color: var(--ie-accent);
+  text-decoration: none;
+}
+.ies-module-practice-bridge a:hover {
+  text-decoration: underline;
 }

@@ -28,7 +28,7 @@ export const writingTask2Units = [
         type: 'svgDiagram',
         diagramId: 'diag-task2-3layers',
         title: 'The Three Layers of a Task 2 Prompt',
-        caption: 'Anatomy of a prompt: Layer 1 Broad Topic (e.g. Higher education) → Layer 2 Specific Focus (e.g. Government funding for adult tuition) → Layer 3 Instruction & Limiting Qualifiers.',
+        caption: 'Anatomy of a prompt: Layer 1 Broad Topic (such as Higher education) → Layer 2 Specific Focus (such as Government funding for adult tuition) → Layer 3 Instruction & Limiting Qualifiers.',
         alt: 'Diagram showing three concentric layers of a Task 2 prompt from general theme to exact analytical instruction.',
       },
       {
@@ -89,11 +89,6 @@ export const writingTask2Units = [
           'I verify that my planned response answers the precise question asked.',
           'I choose an essay structure that matches the prompt family.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-prompt-decode',
-        label: 'Break down a Task 2 prompt into its topic, specific focus, limiting qualifiers, and instructional command.',
       },
     ],
   },
@@ -171,11 +166,6 @@ export const writingTask2Units = [
           'I ensure my personal position remains consistent from introduction to conclusion.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-opinion-discussion',
-        label: 'Write an outline for a "Discuss both views" prompt showing three explicit obligations.',
-      },
     ],
   },
 
@@ -246,11 +236,6 @@ export const writingTask2Units = [
           'I state an explicit evaluative position in the introduction and conclusion.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-outweigh-eval',
-        label: 'Select a controversial development and explain why its benefits outweigh its harms using the five qualitative criteria.',
-      },
     ],
   },
 
@@ -319,11 +304,6 @@ export const writingTask2Units = [
           'I explain the exact causal mechanism connecting my solution to the problem.',
           'In two-part tasks, I allocate balanced paragraph space to both questions.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-causes-solutions',
-        label: 'Write one cause and one mechanism-backed solution for a municipal environmental challenge.',
       },
     ],
   },
@@ -397,11 +377,6 @@ export const writingTask2Units = [
           'I test whether I can explain the complete mechanism in English I control.',
           'I avoid assembling lists of superficial claims without supporting explanation.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-idea-screening',
-        label: 'Select a Task 2 topic and screen two candidate ideas using the five screening questions.',
       },
     ],
   },
@@ -477,11 +452,6 @@ export const writingTask2Units = [
           'I paraphrase the prompt parameters accurately without altering meaning.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-intro-drafting',
-        label: 'Write a 2-sentence introduction for an agree/disagree prompt including an explicit thesis.',
-      },
     ],
   },
 
@@ -527,11 +497,12 @@ export const writingTask2Units = [
         type: 'annotatedSpecimen',
         kind: 'essay',
         title: 'Annotated Body Paragraph: Municipal Public Transport',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: 'Expanding municipal bus networks allows lower-income workers to access employment opportunities across wider geographic areas.', note: 'Topic Sentence: Establishes a focused, supportable central claim immediately.' },
-          { text: 'Frequent and reliable services eliminate uncertainty regarding arrival schedules, making longer daily commutes viable for individuals without private automobiles.', note: 'Mechanism: Explains how schedule reliability alters practical commuting possibilities.' },
-          { text: 'For example, a shift worker living in an outer suburb can accept manufacturing employment in an industrial zone if early morning bus connections are established.', note: 'Concrete Support: Provides a realistic, plausible scenario illustrating the mechanism.' },
-          { text: 'Consequently, investment in transport infrastructure directly reduces geographic barriers to employment.', note: 'Impact & Relevance: Ties the concrete illustration back to the overarching topic sentence.' },
+          { id: '1', label: 'Topic Sentence', text: 'Expanding municipal bus networks allows lower-income workers to access employment opportunities across wider geographic areas.', note: 'Topic Sentence: Establishes a focused, supportable central claim immediately.' },
+          { id: '2', label: 'Mechanism', text: 'Frequent and reliable services eliminate uncertainty regarding arrival schedules, making longer daily commutes viable for individuals without private automobiles.', note: 'Mechanism: Explains how schedule reliability alters practical commuting possibilities.' },
+          { id: '3', label: 'Concrete Support', text: 'For example, a shift worker living in an outer suburb can accept manufacturing employment in an industrial zone if early morning bus connections are established.', note: 'Concrete Support: Provides a realistic, plausible scenario illustrating the mechanism.' },
+          { id: '4', label: 'Impact & Relevance', text: 'Consequently, investment in transport infrastructure directly reduces geographic barriers to employment.', note: 'Impact & Relevance: Ties the concrete illustration back to the overarching topic sentence.' },
         ],
       },
       {
@@ -561,11 +532,6 @@ export const writingTask2Units = [
           'My example illustrates the mechanism rather than introducing an unrelated point.',
           'I verify that no missing logical leaps remain between sentences.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-body-chain',
-        label: 'Draft a 4-sentence body paragraph using the Point → Mechanism → Support → Relevance pattern.',
       },
     ],
   },
@@ -636,11 +602,6 @@ export const writingTask2Units = [
           'I replace absolute claims ("always", "all people") with qualified language ("often", "many").',
           'I avoid cultural, national, or generational stereotypes in my explanations.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-qualification',
-        label: 'Rewrite three over-generalized claims into appropriately qualified academic statements.',
       },
     ],
   },
@@ -714,11 +675,6 @@ export const writingTask2Units = [
           'I vary my sentence structures rather than starting every sentence with a linker.',
           'I verify that connectors like "however" and "therefore" are punctuated properly.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-w-conclusion-drafting',
-        label: 'Write a 2-sentence conclusion for a practice essay synthesizing two body arguments.',
       },
     ],
   },

@@ -88,39 +88,40 @@ function DiagScoreRounding() {
 function DiagRawToBand() {
   return (
     <svg viewBox="0 0 720 250" width="100%" role="img" aria-label="Raw marks to band score comparison across Listening, Academic Reading, and General Training Reading" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="250" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="230" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="32" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Raw Marks (out of 40) Required for Key Bands</text>
 
       {/* Gap highlight bar at Band 7 */}
-      <rect x="475" y="45" width="125" height="150" fill="#fff6ee" rx="6" stroke="#e5b899" strokeWidth="1" strokeDasharray="3 3" />
-      <text x="537" y="60" textAnchor="middle" fontSize="11" fontWeight="700" fill="#b84a14">CRITICAL BAND 7 GAP</text>
+      <rect x="495" y="45" width="118" height="150" fill="#fff6ee" rx="6" stroke="#e5b899" strokeWidth="1" strokeDasharray="3 3" />
+      <text x="554" y="60" textAnchor="middle" fontSize="11" fontWeight="700" fill="#b84a14">BAND 7 RAW MARK GAP</text>
 
       {/* Track 1: Listening */}
       <text x="30" y="85" fontSize="12" fontWeight="600" fill="#263b3b">Listening</text>
-      <line x1="140" y1="80" x2="660" y2="80" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
-      <circle cx="335" cy="80" r="5" fill="#5c6f7e" /><text x="335" y="72" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (16)</text>
-      <circle cx="426" cy="80" r="5" fill="#5c6f7e" /><text x="426" y="72" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (23)</text>
-      <circle cx="517" cy="80" r="6" fill="#285bcc" /><text x="517" y="72" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">B7 (30)</text>
-      <circle cx="582" cy="80" r="5" fill="#275d3c" /><text x="582" y="72" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (35)</text>
+      <line x1="145" y1="80" x2="675" y2="80" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="330" cy="80" r="5" fill="#5c6f7e" /><text x="330" y="71" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (16)</text>
+      <circle cx="425" cy="80" r="5" fill="#5c6f7e" /><text x="425" y="71" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (23)</text>
+      <circle cx="520" cy="80" r="6" fill="#285bcc" /><text x="520" y="71" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">B7 (30)</text>
+      <circle cx="590" cy="80" r="5" fill="#275d3c" /><text x="590" y="71" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (35)</text>
 
       {/* Track 2: Academic Reading */}
       <text x="30" y="135" fontSize="12" fontWeight="600" fill="#285bcc">Academic Reading</text>
-      <line x1="140" y1="130" x2="660" y2="130" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
-      <circle cx="322" cy="130" r="5" fill="#5c6f7e" /><text x="322" y="122" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (15)</text>
-      <circle cx="426" cy="130" r="5" fill="#5c6f7e" /><text x="426" y="122" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (23)</text>
-      <circle cx="517" cy="130" r="6" fill="#285bcc" /><text x="517" y="122" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">B7 (30)</text>
-      <circle cx="582" cy="130" r="5" fill="#275d3c" /><text x="582" y="122" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (35)</text>
+      <line x1="145" y1="130" x2="675" y2="130" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="316" cy="130" r="5" fill="#5c6f7e" /><text x="316" y="121" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (15)</text>
+      <circle cx="425" cy="130" r="5" fill="#5c6f7e" /><text x="425" y="121" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (23)</text>
+      <circle cx="520" cy="130" r="6" fill="#285bcc" /><text x="520" y="121" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">B7 (30)</text>
+      <circle cx="590" cy="130" r="5" fill="#275d3c" /><text x="590" y="121" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (35)</text>
 
       {/* Track 3: GT Reading */}
       <text x="30" y="185" fontSize="12" fontWeight="600" fill="#4a3f6b">[GT] Reading</text>
-      <line x1="140" y1="180" x2="660" y2="180" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
-      <circle cx="361" cy="180" r="5" fill="#5c6f7e" /><text x="361" y="172" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (18)</text>
-      <circle cx="478" cy="180" r="5" fill="#5c6f7e" /><text x="478" y="172" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (27)</text>
-      <circle cx="582" cy="180" r="7" fill="#b84a14" /><text x="582" y="172" textAnchor="middle" fontSize="12" fontWeight="700" fill="#b84a14">B7 (35)</text>
-      <circle cx="621" cy="180" r="5" fill="#275d3c" /><text x="621" y="172" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (38)</text>
+      <line x1="145" y1="180" x2="675" y2="180" stroke="#e2e6e5" strokeWidth="6" strokeLinecap="round" />
+      <circle cx="358" cy="180" r="5" fill="#5c6f7e" /><text x="358" y="171" textAnchor="middle" fontSize="11" fill="#5c6f7e">B5 (18)</text>
+      <circle cx="478" cy="180" r="5" fill="#5c6f7e" /><text x="478" y="171" textAnchor="middle" fontSize="11" fill="#5c6f7e">B6 (27)</text>
+      <circle cx="590" cy="180" r="7" fill="#b84a14" /><text x="582" y="170" textAnchor="middle" fontSize="12" fontWeight="700" fill="#b84a14">B7 (35)</text>
+      <circle cx="648" cy="180" r="5" fill="#275d3c" /><text x="652" y="171" textAnchor="middle" fontSize="11" fill="#275d3c">B8 (38)</text>
 
       {/* Summary note */}
-      <text x="360" y="222" textAnchor="middle" fontSize="12" fill="#657273">General Training Reading requires 5 more raw marks (35/40 vs 30/40) for Band 7 due to simpler everyday texts.</text>
+      <text x="360" y="222" textAnchor="middle" fontSize="12" fill="#657273">General Training Reading requires roughly 5 more raw marks (35/40 vs 30/40) for Band 7 due to everyday texts.</text>
     </svg>
   )
 }
@@ -237,35 +238,36 @@ function DiagSynonym5gate() {
 function DiagListeningTimeline() {
   return (
     <svg viewBox="0 0 720 210" width="100%" role="img" aria-label="Listening audio timeline showing first mention distractor, pivot signal, and final target decision" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="210" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="190" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="32" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Audio Stream: Tracking Self-Correction and Pivot Signals</text>
 
       {/* Timeline track */}
       <line x1="50" y1="95" x2="670" y2="95" stroke="#263b3b" strokeWidth="3" />
 
-      {/* Point 1: 0:08 First mention (Distractor) */}
-      <circle cx="160" cy="95" r="7" fill="#b84a14" />
-      <text x="160" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#b84a14">0:08</text>
-      <rect x="75" y="42" width="170" height="38" rx="5" fill="#fff6ee" stroke="#b84a14" strokeWidth="1" />
-      <text x="160" y="58" textAnchor="middle" fontSize="11" textDecoration="line-through" fill="#b84a14">"Originally Room 14"</text>
-      <text x="160" y="73" textAnchor="middle" fontSize="10" fontWeight="700" fill="#b84a14">DISTRACTOR (Cancelled)</text>
+      {/* Point 1: 0:18 First mention (Distractor) */}
+      <circle cx="155" cy="95" r="7" fill="#b84a14" />
+      <text x="155" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#b84a14">0:18</text>
+      <rect x="65" y="42" width="180" height="38" rx="5" fill="#fff6ee" stroke="#b84a14" strokeWidth="1" />
+      <text x="155" y="58" textAnchor="middle" fontSize="11" textDecoration="line-through" fill="#b84a14">"Originally Room 14"</text>
+      <text x="155" y="73" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#b84a14">DISTRACTOR (Cancelled)</text>
 
-      {/* Point 2: 0:14 Pivot signal */}
+      {/* Point 2: 0:21 Pivot signal */}
       <circle cx="360" cy="95" r="7" fill="#285bcc" />
-      <text x="360" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">0:14</text>
-      <rect x="275" y="42" width="170" height="38" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1" />
-      <text x="360" y="58" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">"However, broken fan"</text>
-      <text x="360" y="73" textAnchor="middle" fontSize="10" fill="#285bcc">PIVOT SIGNAL (Alert)</text>
+      <text x="360" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">0:21</text>
+      <rect x="265" y="42" width="190" height="38" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1" />
+      <text x="360" y="58" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">"However, projector repair"</text>
+      <text x="360" y="73" textAnchor="middle" fontSize="10.5" fill="#285bcc">PIVOT SIGNAL (Alert)</text>
 
-      {/* Point 3: 0:19 Final decision (Target) */}
-      <circle cx="560" cy="95" r="8" fill="#275d3c" />
-      <text x="560" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#275d3c">0:19</text>
-      <rect x="475" y="42" width="170" height="38" rx="5" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" />
-      <text x="560" y="58" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">"Use Room 18 upstairs"</text>
-      <text x="560" y="73" textAnchor="middle" fontSize="10" fontWeight="700" fill="#275d3c">✓ TARGET ANSWER</text>
+      {/* Point 3: 0:25 Final decision (Target) */}
+      <circle cx="565" cy="95" r="8" fill="#275d3c" />
+      <text x="565" y="115" textAnchor="middle" fontSize="12" fontWeight="700" fill="#275d3c">0:25</text>
+      <rect x="475" y="42" width="180" height="38" rx="5" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" />
+      <text x="565" y="58" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">"Come to Room 18 instead"</text>
+      <text x="565" y="73" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#275d3c">✓ TARGET ANSWER</text>
 
       <text x="360" y="155" textAnchor="middle" fontSize="12" fill="#263b3b">Do not write the first number you hear. Listen through pivot words (however, actually, instead).</text>
-      <text x="360" y="175" textAnchor="middle" fontSize="11" fill="#657273">Practice data based on Bellford Workshop audio recording.</text>
+      <text x="360" y="175" textAnchor="middle" fontSize="11" fill="#657273">Practice data matched to the Bellford Community Workshop audio recording.</text>
     </svg>
   )
 }
@@ -274,58 +276,69 @@ function DiagListeningTimeline() {
 function DiagListeningMapBellford() {
   return (
     <svg viewBox="0 0 720 380" width="100%" role="img" aria-label="Architectural ground plan of Bellford Study Centre with lettered rooms A through F and Compass Rose" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <defs>
+        <marker id="d06-arr-ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M1,1 L7,4 L1,7 Z" fill="#263b3b" />
+        </marker>
+      </defs>
+      <rect x="0" y="0" width="720" height="380" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="360" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Bellford Study Centre Ground Plan</text>
 
       {/* Compass Rose */}
-      <g transform="translate(640, 55)">
-        <circle cx="0" cy="0" r="22" fill="#fbfaf7" stroke="#657273" strokeWidth="1" />
-        <line x1="0" y1="-18" x2="0" y2="18" stroke="#263b3b" strokeWidth="1.5" />
-        <line x1="-18" y1="0" x2="18" y2="0" stroke="#263b3b" strokeWidth="1.5" />
-        <text x="0" y="-8" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">N</text>
-        <text x="12" y="4" textAnchor="middle" fontSize="10" fill="#657273">E</text>
-        <text x="0" y="15" textAnchor="middle" fontSize="10" fill="#657273">S</text>
-        <text x="-12" y="4" textAnchor="middle" fontSize="10" fill="#657273">W</text>
+      <g transform="translate(652, 85)">
+        <circle cx="0" cy="0" r="32" fill="#fbfaf7" stroke="#657273" strokeWidth="1.2" />
+        <line x1="0" y1="-10" x2="0" y2="10" stroke="#263b3b" strokeWidth="1.5" />
+        <line x1="-10" y1="0" x2="10" y2="0" stroke="#263b3b" strokeWidth="1.5" />
+        <polygon points="0,-14 -4,-6 4,-6" fill="#285bcc" />
+        <text x="0" y="-18" textAnchor="middle" fontSize="11.5" fontWeight="700" fill="#285bcc">N</text>
+        <text x="21" y="4" textAnchor="middle" fontSize="11" fontWeight="600" fill="#657273">E</text>
+        <text x="0" y="25" textAnchor="middle" fontSize="11" fontWeight="600" fill="#657273">S</text>
+        <text x="-21" y="4" textAnchor="middle" fontSize="11" fontWeight="600" fill="#657273">W</text>
       </g>
 
       {/* Centre Outer Wall */}
-      <rect x="50" y="45" width="550" height="260" fill="#fbfaf7" stroke="#263b3b" strokeWidth="2" />
+      <rect x="45" y="45" width="555" height="260" fill="#fbfaf7" stroke="#263b3b" strokeWidth="2" />
 
-      {/* West Wing */}
-      <rect x="65" y="60" width="110" height="70" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
-      <text x="120" y="100" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[B]</text>
+      {/* West Wing: Rooms B (north-west) & A (south-west) */}
+      <rect x="60" y="60" width="108" height="72" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
+      <text x="114" y="101" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[B]</text>
 
-      <rect x="65" y="150" width="110" height="70" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
-      <text x="120" y="190" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[A]</text>
+      <rect x="60" y="152" width="108" height="72" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
+      <text x="114" y="193" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[A]</text>
+
+      {/* Room C (Former Bookshop, closed) */}
+      <rect x="180" y="60" width="58" height="72" fill="#fff6ee" stroke="#b84a14" strokeWidth="1.2" strokeDasharray="3 3" />
+      <text x="209" y="96" textAnchor="middle" fontSize="13" fontWeight="700" fill="#b84a14">[C]</text>
+      <text x="209" y="114" textAnchor="middle" fontSize="10" fill="#b84a14">Closed</text>
+
+      {/* Room D (North of Courtyard Garden) */}
+      <rect x="250" y="60" width="210" height="48" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
+      <text x="355" y="88" textAnchor="middle" fontSize="13" fontWeight="700" fill="#285bcc">[D] <tspan fontSize="11" fontWeight="500" fill="#657273">Seminar Room</tspan></text>
 
       {/* Courtyard Garden (Central) */}
-      <rect x="235" y="60" width="180" height="110" rx="8" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" strokeDasharray="4 3" />
-      <text x="325" y="115" textAnchor="middle" fontSize="12" fontWeight="600" fill="#275d3c">Courtyard Garden</text>
-      <text x="325" y="132" textAnchor="middle" fontSize="10" fill="#657273">(Open to sky)</text>
+      <rect x="250" y="118" width="210" height="86" rx="8" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" strokeDasharray="4 3" />
+      <text x="355" y="158" textAnchor="middle" fontSize="12" fontWeight="600" fill="#275d3c">Courtyard Garden</text>
+      <text x="355" y="176" textAnchor="middle" fontSize="10.5" fill="#657273">(Open to sky)</text>
 
-      {/* Room C (Former Bookshop) */}
-      <rect x="185" y="60" width="40" height="70" fill="#fff6ee" stroke="#b84a14" strokeWidth="1.2" strokeDasharray="3 3" />
-      <text x="205" y="100" textAnchor="middle" fontSize="13" fontWeight="700" fill="#b84a14">[C]</text>
-      <text x="205" y="145" textAnchor="middle" fontSize="9" fill="#b84a14">Former shop</text>
+      {/* East Wing: Room E (IT Workshop, north-east) & Room F (Cafe, east) */}
+      <rect x="475" y="60" width="110" height="72" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.5" />
+      <text x="530" y="92" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[E]</text>
+      <text x="530" y="112" textAnchor="middle" fontSize="11" fill="#285bcc">IT Workshop</text>
 
-      {/* East Wing */}
-      <rect x="475" y="60" width="110" height="70" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.5" />
-      <text x="530" y="95" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">[E]</text>
-      <text x="530" y="112" textAnchor="middle" fontSize="10" fill="#285bcc">IT Workshop</text>
-
-      <rect x="475" y="150" width="110" height="70" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
-      <text x="530" y="185" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">Café</text>
-      <text x="530" y="202" textAnchor="middle" fontSize="13" fontWeight="700" fill="#285bcc">[F]</text>
+      <rect x="475" y="152" width="110" height="72" fill="#ffffff" stroke="#263b3b" strokeWidth="1.5" />
+      <text x="530" y="184" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">Café</text>
+      <text x="530" y="205" textAnchor="middle" fontSize="13" fontWeight="700" fill="#285bcc">[F]</text>
 
       {/* Reception Desk */}
-      <rect x="260" y="220" width="130" height="40" rx="4" fill="#5c6f7e" />
-      <text x="325" y="245" textAnchor="middle" fontSize="12" fontWeight="600" fill="#ffffff">Reception Desk</text>
+      <rect x="285" y="220" width="140" height="38" rx="4" fill="#5c6f7e" />
+      <text x="355" y="244" textAnchor="middle" fontSize="12" fontWeight="600" fill="#ffffff">Reception Desk</text>
 
       {/* Main Entrance (South) */}
-      <path d="M325,335 L325,310" stroke="#263b3b" strokeWidth="2.5" markerEnd="url(#d01-arr-ink)" />
-      <text x="325" y="352" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">▲ Main Entrance · You Are Here</text>
+      <path d="M355,335 L355,310" stroke="#263b3b" strokeWidth="2.5" markerEnd="url(#d06-arr-ink)" />
+      <text x="355" y="353" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">▲ Main Entrance · You Are Here</text>
 
-      <text x="325" y="290" textAnchor="middle" fontSize="11" fill="#657273">Foyer Corridor</text>
+      <text x="355" y="288" textAnchor="middle" fontSize="11" fill="#657273">Foyer Corridor</text>
     </svg>
   )
 }
@@ -587,30 +600,36 @@ function DiagTask1LinePhases() {
 function DiagPctVsPoints() {
   return (
     <svg viewBox="0 0 720 290" width="100%" role="img" aria-label="Comparison between absolute percentage points and relative percentage change with base population doubling" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <defs>
+        <marker id="d12-arr-amber" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+          <path d="M1,1 L6,3.5 L1,6 Z" fill="#b84a14" />
+        </marker>
+      </defs>
+      <rect x="0" y="0" width="720" height="290" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="270" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Percentages against Percentage Points (Practice Data, Invented)</text>
 
       {/* Bar 1: 2015 (60%) */}
-      <g transform="translate(60, 60)">
-        <rect x="0" y="20" width="65" height="145" rx="4" fill="#285bcc" />
-        <text x="32" y="12" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">60%</text>
-        <text x="32" y="180" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">2015</text>
+      <g transform="translate(52, 68)">
+        <rect x="0" y="20" width="64" height="138" rx="4" fill="#285bcc" />
+        <text x="32" y="13" textAnchor="middle" fontSize="14" fontWeight="700" fill="#285bcc">60%</text>
+        <text x="32" y="175" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">2015</text>
       </g>
 
       {/* Bar 2: 2025 (40%) */}
-      <g transform="translate(205, 60)">
-        <rect x="0" y="68" width="65" height="97" rx="4" fill="#5c6f7e" />
-        <text x="32" y="60" textAnchor="middle" fontSize="14" fontWeight="700" fill="#5c6f7e">40%</text>
-        <text x="32" y="180" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">2025</text>
+      <g transform="translate(218, 68)">
+        <rect x="0" y="66" width="64" height="92" rx="4" fill="#5c6f7e" />
+        <text x="32" y="57" textAnchor="middle" fontSize="14" fontWeight="700" fill="#5c6f7e">40%</text>
+        <text x="32" y="175" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">2025</text>
       </g>
 
       {/* Bracket 1: Percentage Points (60 - 40 = 20 pts) */}
-      <path d="M130,80 L145,80 L145,108 L158,108 L145,108 L145,128 L130,128" fill="none" stroke="#285bcc" strokeWidth="2" />
-      <text x="164" y="112" fontSize="11" fontWeight="700" fill="#285bcc">−20 pts</text>
+      <path d="M122,88 L138,88 L138,111 L150,111 L138,111 L138,134 L122,134" fill="none" stroke="#285bcc" strokeWidth="2" />
+      <text x="155" y="115" fontSize="11.5" fontWeight="700" fill="#285bcc">−20 pts</text>
 
-      {/* Bracket 2: Relative percentage change (20 / 60 = 33.3%) */}
-      <path d="M92,72 C125,35 175,35 235,115" fill="none" stroke="#b84a14" strokeWidth="1.8" strokeDasharray="3 3" />
-      <text x="165" y="42" textAnchor="middle" fontSize="11" fontWeight="700" fill="#b84a14">−33.3% relative drop</text>
+      {/* Arc 2: Relative percentage change (20 / 60 = 33.3%) routed cleanly to left shoulder of 2025 bar */}
+      <path d="M112,78 C148,46 188,52 214,130" fill="none" stroke="#b84a14" strokeWidth="1.8" strokeDasharray="3 3" markerEnd="url(#d12-arr-amber)" />
+      <text x="168" y="50" textAnchor="middle" fontSize="11" fontWeight="700" fill="#b84a14">−33.3% relative drop</text>
 
       {/* Right panel: Base doubling trap */}
       <rect x="330" y="52" width="360" height="165" rx="6" fill="#fbfaf7" stroke="#263b3b" strokeWidth="1.2" />
@@ -619,10 +638,10 @@ function DiagPctVsPoints() {
       <text x="350" y="122" fontSize="11" fill="#263b3b">• In 2025: Total visits doubled to 2,000</text>
       <text x="350" y="144" fontSize="11" fill="#263b3b">• In 2025: 40% of 2,000 visitors = <tspan fontWeight="700" fill="#275d3c">800 visitors</tspan></text>
       <rect x="345" y="158" width="330" height="45" rx="4" fill="#fff6ee" stroke="#b84a14" strokeWidth="1" />
-      <text x="510" y="174" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#b84a14">A falling share does NOT mean fewer people!</text>
-      <text x="510" y="190" textAnchor="middle" fontSize="10" fill="#b84a14">Headcount rose (600 → 800) even as percentage fell (60% → 40%).</text>
+      <text x="510" y="174" textAnchor="middle" fontSize="11" fontWeight="700" fill="#b84a14">A falling share does NOT mean fewer people.</text>
+      <text x="510" y="191" textAnchor="middle" fontSize="10.5" fill="#b84a14">Headcount rose (600 → 800) even as percentage fell (60% → 40%).</text>
 
-      <text x="360" y="272" textAnchor="middle" fontSize="11" fill="#657273">Never write "fell by 20%" when you mean "fell by 20 percentage points".</text>
+      <text x="360" y="268" textAnchor="middle" fontSize="11.5" fill="#657273">Never write "fell by 20%" when you mean "fell by 20 percentage points".</text>
     </svg>
   )
 }
@@ -692,59 +711,70 @@ function DiagTask1BarStaticDynamic() {
 function DiagTask1PiePair() {
   return (
     <svg viewBox="0 0 720 290" width="100%" role="img" aria-label="Two pie charts comparing energy mix in 2014 and 2024 with groupings for major shifts and stable shares" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="290" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="270" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Pair of Pie Charts: National Energy Mix (Practice Data, Invented)</text>
 
-      {/* 2014 Pie (Coal 48%, Gas 30%, Renewables 12%, Other 10%) */}
-      <g transform="translate(160, 115)">
-        <circle cx="0" cy="0" r="65" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.5" />
-        {/* Coal 48% (172.8 deg) */}
-        <path d="M0,0 L0,-65 A65,65 0 0,1 64,8 Z" fill="#263b3b" />
-        {/* Gas 30% (108 deg) */}
-        <path d="M0,0 L64,8 A65,65 0 0,1 -64,12 Z" fill="#5c6f7e" />
-        {/* Renewables 12% (43.2 deg) */}
-        <path d="M0,0 L-64,12 A65,65 0 0,1 -43,-48 Z" fill="#275d3c" />
-        {/* Other 10% (36 deg) */}
-        <path d="M0,0 L-43,-48 A65,65 0 0,1 0,-65 Z" fill="#dfe3e2" />
-        <circle cx="0" cy="0" r="15" fill="#ffffff" />
-        <text x="0" y="95" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">2014</text>
+      {/* 2014 Pie (Coal 48%, Gas 30%, Renewables 12%, Other 10%; r=64) */}
+      <g transform="translate(135, 128)">
+        {/* Coal 48% (0 -> 172.8 deg) */}
+        <path d="M0,0 L0,-64 A64,64 0 0,1 8.02,63.50 Z" fill="#263b3b" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Gas 30% (172.8 -> 280.8 deg) */}
+        <path d="M0,0 L8.02,63.50 A64,64 0 0,1 -62.87,-11.99 Z" fill="#5c6f7e" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Renewables 12% (280.8 -> 324 deg) */}
+        <path d="M0,0 L-62.87,-11.99 A64,64 0 0,1 -37.62,-51.78 Z" fill="#275d3c" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Other 10% (324 -> 360 deg) */}
+        <path d="M0,0 L-37.62,-51.78 A64,64 0 0,1 0,-64 Z" fill="#c8d0cf" stroke="#ffffff" strokeWidth="1.5" />
+        <circle cx="0" cy="0" r="16" fill="#ffffff" />
+        <text x="38" y="4" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">48%</text>
+        <text x="-30" y="32" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">30%</text>
+        <text x="-40" y="-22" textAnchor="middle" fontSize="10" fontWeight="700" fill="#ffffff">12%</text>
+        <text x="-15" y="-44" textAnchor="middle" fontSize="10" fontWeight="700" fill="#263b3b">10%</text>
+        <text x="0" y="88" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">2014</text>
       </g>
 
-      {/* 2024 Pie (Renewables 37%, Gas 31%, Coal 22%, Other 10%) */}
-      <g transform="translate(360, 115)">
-        <circle cx="0" cy="0" r="65" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.5" />
-        {/* Renewables 37% */}
-        <path d="M0,0 L0,-65 A65,65 0 0,1 47,44 Z" fill="#275d3c" />
-        {/* Gas 31% */}
-        <path d="M0,0 L47,44 A65,65 0 0,1 -61,21 Z" fill="#5c6f7e" />
-        {/* Coal 22% */}
-        <path d="M0,0 L-61,21 A65,65 0 0,1 -40,-51 Z" fill="#263b3b" />
-        {/* Other 10% */}
-        <path d="M0,0 L-40,-51 A65,65 0 0,1 0,-65 Z" fill="#dfe3e2" />
-        <circle cx="0" cy="0" r="15" fill="#ffffff" />
-        <text x="0" y="95" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">2024</text>
+      {/* 2024 Pie (Coal 22%, Gas 31%, Renewables 37%, Other 10%; r=64) */}
+      <g transform="translate(335, 128)">
+        {/* Coal 22% (0 -> 79.2 deg) */}
+        <path d="M0,0 L0,-64 A64,64 0 0,1 62.87,-11.99 Z" fill="#263b3b" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Gas 31% (79.2 -> 190.8 deg) */}
+        <path d="M0,0 L62.87,-11.99 A64,64 0 0,1 -11.99,62.87 Z" fill="#5c6f7e" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Renewables 37% (190.8 -> 324 deg) */}
+        <path d="M0,0 L-11.99,62.87 A64,64 0 0,1 -37.62,-51.78 Z" fill="#275d3c" stroke="#ffffff" strokeWidth="1.5" />
+        {/* Other 10% (324 -> 360 deg) */}
+        <path d="M0,0 L-37.62,-51.78 A64,64 0 0,1 0,-64 Z" fill="#c8d0cf" stroke="#ffffff" strokeWidth="1.5" />
+        <circle cx="0" cy="0" r="16" fill="#ffffff" />
+        <text x="28" y="-25" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">22%</text>
+        <text x="26" y="30" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">31%</text>
+        <text x="-38" y="8" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">37%</text>
+        <text x="-15" y="-44" textAnchor="middle" fontSize="10" fontWeight="700" fill="#263b3b">10%</text>
+        <text x="0" y="88" textAnchor="middle" fontSize="13" fontWeight="700" fill="#263b3b">2024</text>
       </g>
 
       {/* Legend & Grouping Card */}
-      <g transform="translate(470, 50)">
-        <rect x="0" y="0" width="220" height="175" rx="6" fill="#fbfaf7" stroke="#dfe3e2" strokeWidth="1" />
-        <text x="110" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">Overview Groupings</text>
+      <g transform="translate(450, 50)">
+        <rect x="0" y="0" width="242" height="175" rx="6" fill="#fbfaf7" stroke="#dfe3e2" strokeWidth="1" />
+        <text x="121" y="20" textAnchor="middle" fontSize="11.5" fontWeight="700" fill="#263b3b">Overview Groupings</text>
 
         {/* Group 1: Major Shifts */}
-        <rect x="10" y="32" width="200" height="60" rx="4" fill="#eaf0fc" />
-        <text x="18" y="48" fontSize="10.5" fontWeight="700" fill="#285bcc">Group 1 · Major Shift (Rank Swap)</text>
-        <text x="18" y="64" fontSize="10" fill="#263b3b">• Coal plummeted: 48% → 22%</text>
-        <text x="18" y="79" fontSize="10" fill="#275d3c">• Renewables surged: 12% → 37%</text>
+        <rect x="10" y="30" width="222" height="62" rx="4" fill="#eaf0fc" />
+        <text x="18" y="46" fontSize="11" fontWeight="700" fill="#285bcc">Group 1 · Major Shift (Rank Swap)</text>
+        <circle cx="24" cy="60" r="4.5" fill="#263b3b" />
+        <text x="34" y="64" fontSize="10.5" fill="#263b3b">Coal fell sharply: 48% → 22%</text>
+        <circle cx="24" cy="78" r="4.5" fill="#275d3c" />
+        <text x="34" y="82" fontSize="10.5" fill="#275d3c">Renewables tripled: 12% → 37%</text>
 
         {/* Group 2: Stable */}
-        <rect x="10" y="98" width="200" height="65" rx="4" fill="#f4f5f2" />
-        <text x="18" y="114" fontSize="10.5" fontWeight="700" fill="#5c6f7e">Group 2 · Stable Shares</text>
-        <text x="18" y="130" fontSize="10" fill="#263b3b">• Gas barely changed: 30% → 31%</text>
-        <text x="18" y="146" fontSize="10" fill="#263b3b">• Other remained constant at 10%</text>
+        <rect x="10" y="99" width="222" height="64" rx="4" fill="#f4f5f2" />
+        <text x="18" y="115" fontSize="11" fontWeight="700" fill="#5c6f7e">Group 2 · Stable Shares</text>
+        <circle cx="24" cy="130" r="4.5" fill="#5c6f7e" />
+        <text x="34" y="134" fontSize="10.5" fill="#263b3b">Gas barely changed: 30% → 31%</text>
+        <circle cx="24" cy="148" r="4.5" fill="#c8d0cf" stroke="#657273" strokeWidth="0.8" />
+        <text x="34" y="152" fontSize="10.5" fill="#263b3b">Other stayed constant: 10% → 10%</text>
       </g>
 
       {/* Footnote */}
-      <text x="260" y="248" textAnchor="middle" fontSize="11" fill="#657273">Structure the overview by grouping the major shift against the stable components.</text>
+      <text x="235" y="252" textAnchor="middle" fontSize="11.5" fill="#657273">Group the major rank swap against the stable components.</text>
     </svg>
   )
 }
@@ -753,21 +783,22 @@ function DiagTask1PiePair() {
 function DiagTask1DualVisual() {
   return (
     <svg viewBox="0 0 720 270" width="100%" role="img" aria-label="Paired dual visual comparing museum visitors and cafe spend with valid independent reporting vs invalid causation" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="270" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="250" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Handling Dual Visuals: Independent Metrics vs. False Causation</text>
 
       {/* Visual 1: Bar Chart (Visitors) */}
       <g transform="translate(35, 50)">
         <rect x="0" y="0" width="190" height="135" rx="5" fill="#fbfaf7" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="95" y="20" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">Chart 1: Annual Visitors</text>
-        <text x="95" y="34" textAnchor="middle" fontSize="10" fill="#657273">(thousands)</text>
+        <text x="95" y="19" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">Chart 1: Annual Visitors</text>
+        <text x="95" y="32" textAnchor="middle" fontSize="10" fill="#657273">(thousands)</text>
         {/* Bars */}
-        <rect x="35" y="70" width="40" height="50" fill="#285bcc" />
-        <text x="55" y="62" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">120k</text>
+        <rect x="35" y="75" width="40" height="42" fill="#285bcc" />
+        <text x="55" y="68" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">120k</text>
         <text x="55" y="130" textAnchor="middle" fontSize="10" fill="#263b3b">2018</text>
 
-        <rect x="115" y="45" width="40" height="75" fill="#285bcc" />
-        <text x="135" y="37" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">190k</text>
+        <rect x="115" y="53" width="40" height="64" fill="#285bcc" />
+        <text x="135" y="46" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">190k</text>
         <text x="135" y="130" textAnchor="middle" fontSize="10" fill="#263b3b">2024</text>
       </g>
 
@@ -809,19 +840,19 @@ function DiagTask1DualVisual() {
 // 16. diag-task1-map-before-after (720x330)
 function DiagTask1MapBeforeAfter() {
   return (
-    <svg viewBox="0 0 720 330" width="100%" role="img" aria-label="Side-by-side site plans of Riverbend Town Square in 2005 past and proposed future redevelopment" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+    <svg viewBox="0 0 720 330" width="100%" role="img" aria-label="Side-by-side site plans of Bellford Park and Town Square in 2005 past and proposed future redevelopment" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="330" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="310" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
-      <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Map Comparison: Riverbend Town Square Redevelopment</text>
+      <text x="340" y="31" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Map Comparison: Bellford Park &amp; Square Redevelopment</text>
 
-      {/* Compass Rose */}
-      <g transform="translate(650, 45)">
-        <circle cx="0" cy="0" r="16" fill="#fbfaf7" stroke="#657273" strokeWidth="1" />
-        <line x1="0" y1="-12" x2="0" y2="12" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="0" y="-4" textAnchor="middle" fontSize="10" fontWeight="700" fill="#263b3b">N</text>
+      {/* Compass badge */}
+      <g transform="translate(656, 28)">
+        <rect x="-32" y="-12" width="64" height="24" rx="12" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1" />
+        <text x="0" y="4" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">▲ N · Top</text>
       </g>
 
       {/* Left Map: 2005 (Past) */}
-      <g transform="translate(40, 50)">
+      <g transform="translate(40, 52)">
         <rect x="0" y="0" width="300" height="210" fill="#fbfaf7" stroke="#263b3b" strokeWidth="1.5" />
         <text x="150" y="22" textAnchor="middle" fontSize="12" fontWeight="700" fill="#263b3b">2005 (Past Layout)</text>
 
@@ -843,34 +874,34 @@ function DiagTask1MapBeforeAfter() {
       </g>
 
       {/* Right Map: Proposed Future */}
-      <g transform="translate(380, 50)">
+      <g transform="translate(380, 52)">
         <rect x="0" y="0" width="300" height="210" fill="#fbfaf7" stroke="#285bcc" strokeWidth="1.5" />
         <text x="150" y="22" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">Proposed Future Redevelopment</text>
 
         {/* NW: Pedestrian Plaza (Conversion) */}
         <rect x="20" y="38" width="115" height="70" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.5" />
-        <text x="77" y="70" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">Pedestrian Plaza</text>
-        <text x="77" y="86" textAnchor="middle" fontSize="9" fill="#285bcc">(Converted car park)</text>
+        <text x="77" y="69" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">Pedestrian Plaza</text>
+        <text x="77" y="86" textAnchor="middle" fontSize="10" fill="#285bcc">(Converted car park)</text>
 
         {/* NE: Community Library (Replacement) */}
         <rect x="165" y="38" width="115" height="70" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" />
-        <text x="222" y="70" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">Community Library</text>
-        <text x="222" y="86" textAnchor="middle" fontSize="9" fill="#275d3c">(Replaced warehouse)</text>
+        <text x="222" y="69" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">Community Library</text>
+        <text x="222" y="86" textAnchor="middle" fontSize="10" fill="#275d3c">(Replaced warehouse)</text>
 
         {/* SW: Bus Stop (Unchanged) */}
         <rect x="20" y="130" width="115" height="60" fill="#ffffff" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="77" y="160" textAnchor="middle" fontSize="11" fill="#263b3b">Bus Stop</text>
-        <text x="77" y="174" textAnchor="middle" fontSize="9" fill="#657273">(Unchanged)</text>
+        <text x="77" y="158" textAnchor="middle" fontSize="11" fontWeight="600" fill="#263b3b">Bus Stop</text>
+        <text x="77" y="175" textAnchor="middle" fontSize="10" fill="#657273">(Unchanged)</text>
 
         {/* SE: Expanded Park (Expansion) */}
-        <rect x="165" y="130" width="125" height="60" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" strokeDasharray="3 2" />
-        <text x="227" y="160" textAnchor="middle" fontSize="11" fontWeight="600" fill="#275d3c">Expanded Park</text>
-        <text x="227" y="174" textAnchor="middle" fontSize="9" fill="#275d3c">(Enlarged eastwards)</text>
+        <rect x="160" y="130" width="128" height="60" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" strokeDasharray="3 2" />
+        <text x="224" y="158" textAnchor="middle" fontSize="11" fontWeight="600" fill="#275d3c">Expanded Park</text>
+        <text x="224" y="175" textAnchor="middle" fontSize="10" fill="#275d3c">(Enlarged eastwards)</text>
       </g>
 
       {/* Vocabulary strip */}
-      <text x="360" y="285" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">Language: converted into · replaced by · remained unchanged · expanded eastwards</text>
-      <text x="360" y="304" textAnchor="middle" fontSize="11" fill="#657273">Use directional compass words (north-west, south-east) rather than "top-left" or "bottom-right".</text>
+      <text x="360" y="286" textAnchor="middle" fontSize="12" fontWeight="600" fill="#263b3b">Language: converted into · replaced by · remained unchanged · expanded eastwards</text>
+      <text x="360" y="305" textAnchor="middle" fontSize="11" fill="#657273">Use directional compass words (north-west, south-east) when a north indicator is supplied.</text>
     </svg>
   )
 }
@@ -887,60 +918,64 @@ function DiagTask1ProcessCycle() {
           <path d="M1,1 L7,4 L1,7 Z" fill="#285bcc" />
         </marker>
       </defs>
+      <rect x="0" y="0" width="720" height="320" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="300" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
-      <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Cyclical Process: Glass Container Recycling & Remanufacturing</text>
+      <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Cyclical Process: Glass Container Recycling &amp; Remanufacturing</text>
 
-      {/* Row 1: Collection & Sorting */}
-      <g transform="translate(30, 50)">
-        <rect x="0" y="0" width="140" height="50" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="70" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">1. Used Bottles</text>
-        <text x="70" y="38" textAnchor="middle" fontSize="10" fill="#657273">Discarded by consumers</text>
+      {/* Row 1: Collection & Sorting (x=72..632) */}
+      <g transform="translate(72, 50)">
+        <rect x="0" y="0" width="150" height="52" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
+        <text x="75" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">1. Used Bottles</text>
+        <text x="75" y="39" textAnchor="middle" fontSize="10" fill="#657273">Discarded by consumers</text>
 
-        <line x1="140" y1="25" x2="178" y2="25" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
+        <line x1="150" y1="26" x2="188" y2="26" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
-        <rect x="185" y="0" width="140" height="50" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="255" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">2. Collection Point</text>
-        <text x="255" y="38" textAnchor="middle" fontSize="10" fill="#657273">Deposited in bottle banks</text>
+        <rect x="195" y="0" width="150" height="52" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
+        <text x="270" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">2. Collection Point</text>
+        <text x="270" y="39" textAnchor="middle" fontSize="10" fill="#657273">Deposited in bottle banks</text>
 
-        <line x1="325" y1="25" x2="363" y2="25" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
+        <line x1="345" y1="26" x2="383" y2="26" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
-        <rect x="370" y="0" width="150" height="50" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
-        <text x="445" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">3. Sorting Plant</text>
-        <text x="445" y="38" textAnchor="middle" fontSize="10" fill="#657273">Separated by colour</text>
+        <rect x="390" y="0" width="168" height="52" rx="5" fill="#f4f5f2" stroke="#263b3b" strokeWidth="1.2" />
+        <text x="474" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">3. Sorting Plant</text>
+        <text x="474" y="39" textAnchor="middle" fontSize="10" fill="#657273">Branch: Clear / Green glass</text>
       </g>
 
-      {/* Downward transition to processing */}
-      <path d="M570,75 L620,75 L620,135 L570,135" fill="none" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
+      {/* Right-hand downward transition to Row 2 */}
+      <path d="M630,76 L672,76 L672,158 L636,158" fill="none" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
-      {/* Row 2: Remanufacturing */}
-      <g transform="translate(30, 135)">
-        <rect x="440" y="0" width="135" height="50" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
-        <text x="507" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">4. Crushing</text>
-        <text x="507" y="38" textAnchor="middle" fontSize="10" fill="#285bcc">Broken into cullet</text>
+      {/* Row 2: Remanufacturing (right to left) */}
+      <g transform="translate(72, 132)">
+        <rect x="418" y="0" width="140" height="52" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
+        <text x="488" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">4. Crushing</text>
+        <text x="488" y="39" textAnchor="middle" fontSize="10" fill="#285bcc">Broken into cullet</text>
 
-        <line x1="440" y1="25" x2="402" y2="25" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
+        <line x1="418" y1="26" x2="380" y2="26" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
-        <rect x="260" y="0" width="135" height="50" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
-        <text x="327" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">5. Furnace</text>
-        <text x="327" y="38" textAnchor="middle" fontSize="10" fill="#285bcc">Melted at high temp</text>
+        <rect x="234" y="0" width="140" height="52" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
+        <text x="304" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">5. Furnace</text>
+        <text x="304" y="39" textAnchor="middle" fontSize="10" fill="#285bcc">Melted at high heat</text>
 
-        <line x1="260" y1="25" x2="222" y2="25" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
+        <line x1="234" y1="26" x2="196" y2="26" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
-        <rect x="80" y="0" width="135" height="50" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
-        <text x="147" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">6. Moulding</text>
-        <text x="147" y="38" textAnchor="middle" fontSize="10" fill="#285bcc">Blown into new shape</text>
+        <rect x="50" y="0" width="140" height="52" rx="5" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.2" />
+        <text x="120" y="22" textAnchor="middle" fontSize="11" fontWeight="700" fill="#285bcc">6. Moulding</text>
+        <text x="120" y="39" textAnchor="middle" fontSize="10" fill="#285bcc">Shaped into bottles</text>
       </g>
+
+      {/* Downward step from 6 to 7 */}
+      <line x1="192" y1="184" x2="192" y2="210" stroke="#263b3b" strokeWidth="1.8" markerEnd="url(#d17-arr)" />
 
       {/* Stage 7: Retail */}
-      <rect x="30" y="215" width="180" height="42" rx="5" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" />
-      <text x="120" y="235" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">7. Retail Filling & Sale</text>
-      <text x="120" y="249" textAnchor="middle" fontSize="10" fill="#275d3c">Refilled with drinks for sale</text>
+      <rect x="72" y="216" width="210" height="44" rx="5" fill="#eef7f1" stroke="#275d3c" strokeWidth="1.5" />
+      <text x="177" y="236" textAnchor="middle" fontSize="11" fontWeight="700" fill="#275d3c">7. Retail Filling &amp; Sale</text>
+      <text x="177" y="251" textAnchor="middle" fontSize="10" fill="#275d3c">Refilled with drinks for consumers</text>
 
-      {/* Bold blue cycle return arrow */}
-      <path d="M210,235 C380,235 680,235 680,55 L170,55" fill="none" stroke="#285bcc" strokeWidth="2.5" strokeDasharray="6 3" markerEnd="url(#d17-arr-cycle)" />
-      <text x="450" y="275" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">↺ Closed Loop: New bottles are consumed, restarting Stage 1</text>
+      {/* Bold blue closed-loop return arrow along clean left channel (zero box crossings) */}
+      <path d="M72,238 L34,238 L34,76 L66,76" fill="none" stroke="#285bcc" strokeWidth="2.5" strokeDasharray="6 3" markerEnd="url(#d17-arr-cycle)" />
+      <text x="485" y="242" textAnchor="middle" fontSize="12" fontWeight="700" fill="#285bcc">↺ Closed Loop: Consumed bottles return to Stage 1</text>
 
-      <text x="360" y="298" textAnchor="middle" fontSize="11" fill="#657273">Use passive voice for automated industrial stages: "the glass is crushed", "cullet is melted", "bottles are delivered".</text>
+      <text x="360" y="294" textAnchor="middle" fontSize="11" fill="#657273">Use passive voice for automated industrial stages: "the glass is crushed", "cullet is melted", "bottles are filled".</text>
     </svg>
   )
 }
@@ -949,31 +984,32 @@ function DiagTask1ProcessCycle() {
 function DiagTask23layers() {
   return (
     <svg viewBox="0 0 720 240" width="100%" role="img" aria-label="Three concentric layers of a Task 2 essay prompt: Broad Topic, Specific Focus, and Instruction" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="240" rx="10" fill="#fbfaf7" />
       <rect x="10" y="10" width="700" height="220" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="600" fill="#263b3b">Task 2 Prompt Analysis: The Three Concentric Layers</text>
 
       {/* Layer 1: Broad Topic */}
       <g transform="translate(40, 48)">
         <rect x="0" y="0" width="640" height="50" rx="6" fill="#fff6ee" stroke="#b84a14" strokeWidth="1.5" />
-        <text x="20" y="24" fontSize="12" fontWeight="700" fill="#b84a14">Layer 1 · Broad Topic</text>
-        <text x="175" y="24" fontSize="12" fontWeight="600" fill="#263b3b">"Higher education and universities"</text>
-        <text x="20" y="42" fontSize="10.5" fill="#b84a14">TRAP: Writing only about education in general fails Task Response (Band 5 ceiling).</text>
+        <text x="20" y="23" fontSize="12" fontWeight="700" fill="#b84a14">Layer 1 · Broad Topic</text>
+        <text x="175" y="23" fontSize="12" fontWeight="600" fill="#263b3b">"Higher education and universities"</text>
+        <text x="20" y="41" fontSize="10.5" fill="#b84a14">TRAP: Writing only about education in general misses the specific task focus.</text>
       </g>
 
       {/* Layer 2: Specific Focus */}
       <g transform="translate(90, 106)">
         <rect x="0" y="0" width="540" height="50" rx="6" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.8" />
-        <text x="20" y="24" fontSize="12" fontWeight="700" fill="#285bcc">Layer 2 · Specific Focus</text>
-        <text x="175" y="24" fontSize="12" fontWeight="600" fill="#263b3b">"Government funding for <tspan fontWeight="800" fill="#285bcc">adult</tspan> university tuition"</text>
-        <text x="20" y="42" fontSize="10.5" fill="#285bcc">CORE: Every body paragraph must address public funding specifically for adult learners.</text>
+        <text x="20" y="23" fontSize="12" fontWeight="700" fill="#285bcc">Layer 2 · Specific Focus</text>
+        <text x="175" y="23" fontSize="12" fontWeight="600" fill="#263b3b">"Government funding for <tspan fontWeight="800" fill="#285bcc">adult</tspan> university tuition"</text>
+        <text x="20" y="41" fontSize="10.5" fill="#285bcc">CORE: Every body paragraph must address public funding specifically for adult learners.</text>
       </g>
 
       {/* Layer 3: Instruction */}
       <g transform="translate(140, 164)">
         <rect x="0" y="0" width="440" height="46" rx="6" fill="#eef7f1" stroke="#275d3c" strokeWidth="2" />
-        <text x="20" y="22" fontSize="12" fontWeight="700" fill="#275d3c">Layer 3 · Instruction</text>
-        <text x="155" y="22" fontSize="12" fontWeight="700" fill="#275d3c">"To what extent do you agree or disagree?"</text>
-        <text x="20" y="38" fontSize="10.5" fill="#275d3c">ACTION: State a clear position in the introduction and defend it throughout.</text>
+        <text x="20" y="21" fontSize="12" fontWeight="700" fill="#275d3c">Layer 3 · Instruction</text>
+        <text x="155" y="21" fontSize="12" fontWeight="700" fill="#275d3c">"To what extent do you agree or disagree?"</text>
+        <text x="20" y="38" fontSize="10.5" fill="#275d3c">ACTION: State a clear position in the introduction and support it throughout.</text>
       </g>
     </svg>
   )
@@ -1124,58 +1160,62 @@ function DiagTask2ParagraphChain() {
 
       {/* Jumping arc trap */}
       <path d="M100,120 C100,165 630,165 630,123" fill="none" stroke="#b84a14" strokeWidth="1.5" strokeDasharray="4 4" markerEnd="url(#d20-arr-jump)" />
-      <rect x="110" y="148" width="500" height="24" rx="4" fill="#fff6ee" stroke="#b84a14" strokeWidth="1" />
-      <text x="360" y="164" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#b84a14">TRAP: Jumping from 1 straight to 4 leaves the idea undeveloped (Band 6 limit)</text>
+      <rect x="105" y="148" width="510" height="24" rx="4" fill="#fff6ee" stroke="#b84a14" strokeWidth="1" />
+      <text x="360" y="164" textAnchor="middle" fontSize="10.5" fontWeight="700" fill="#b84a14">TRAP: Jumping from 1 straight to 4 leaves the claim asserted rather than explained</text>
 
-      <text x="360" y="200" textAnchor="middle" fontSize="11" fill="#657273">The examiner awards Task Response Band 7+ for the explicit explanation of the mechanism.</text>
+      <text x="360" y="200" textAnchor="middle" fontSize="11" fill="#657273">Explicitly explaining how and why a claim holds strengthens Task Response and logical coherence.</text>
     </svg>
   )
 }
 
-// 21. diag-gt-letter-registers (720x250)
+// 21. diag-gt-letter-registers (720x255)
 function DiagGtLetterRegisters() {
   return (
-    <svg viewBox="0 0 720 250" width="100%" role="img" aria-label="Three register bands for General Training Task 1 letters: Informal, Semi-formal, and Formal" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
-      <rect x="10" y="10" width="700" height="230" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
+    <svg viewBox="0 0 720 255" width="100%" role="img" aria-label="Three register bands for General Training Task 1 letters: Informal, Semi-formal, and Formal" style={{ height: 'auto', display: 'block', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+      <rect x="0" y="0" width="720" height="255" rx="10" fill="#fbfaf7" />
+      <rect x="10" y="10" width="700" height="235" rx="10" fill="#ffffff" stroke="#dfe3e2" strokeWidth="1.5" />
       <text x="360" y="30" textAnchor="middle" fontSize="13" fontWeight="700" fill="#4a3f6b">[GT] General Training Task 1: The Three Letter Registers</text>
 
       {/* Band 1: Personal / Informal */}
-      <g transform="translate(25, 48)">
-        <rect x="0" y="0" width="215" height="155" rx="6" fill="#fbfaf7" stroke="#263b3b" strokeWidth="1.2" />
+      <g transform="translate(25, 46)">
+        <rect x="0" y="0" width="215" height="162" rx="6" fill="#fbfaf7" stroke="#263b3b" strokeWidth="1.2" />
         <rect x="0" y="0" width="215" height="28" rx="6" fill="#f4f5f2" />
         <text x="107" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="#263b3b">1. Personal / Informal</text>
-        <text x="15" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Close friend, peer</text>
-        <text x="15" y="70" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Sam,"</text>
-        <text x="15" y="92" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Natural ("I'm", "won't")</text>
-        <text x="15" y="114" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Warm, conversational</text>
-        <text x="15" y="136" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Best wishes," / "All the best,"</text>
+        <text x="14" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Close friend, peer</text>
+        <text x="14" y="69" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Sam,"</text>
+        <text x="14" y="90" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Natural ("I'm", "won't")</text>
+        <text x="14" y="111" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Warm, conversational</text>
+        <text x="14" y="132" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Best wishes,"</text>
+        <text x="64" y="148" fontSize="10.5" fill="#657273">or "All the best,"</text>
       </g>
 
       {/* Band 2: Semi-Formal */}
-      <g transform="translate(250, 48)">
-        <rect x="0" y="0" width="220" height="155" rx="6" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.5" />
+      <g transform="translate(250, 46)">
+        <rect x="0" y="0" width="220" height="162" rx="6" fill="#eaf0fc" stroke="#285bcc" strokeWidth="1.5" />
         <rect x="0" y="0" width="220" height="28" rx="6" fill="#285bcc" />
         <text x="110" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">2. Semi-Formal</text>
-        <text x="15" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Known landlord, manager</text>
-        <text x="15" y="70" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Mr Tan,"</text>
-        <text x="15" y="92" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Avoid or use sparingly</text>
-        <text x="15" y="114" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Polite, direct, respectful</text>
-        <text x="15" y="136" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Kind regards," / "Yours sincerely,"</text>
+        <text x="14" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Known landlord, manager</text>
+        <text x="14" y="69" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Mr Tan,"</text>
+        <text x="14" y="90" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Avoid or use sparingly</text>
+        <text x="14" y="111" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Polite, direct, respectful</text>
+        <text x="14" y="132" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Kind regards,"</text>
+        <text x="64" y="148" fontSize="10.5" fill="#285bcc">or "Yours sincerely,"</text>
       </g>
 
       {/* Band 3: Formal */}
-      <g transform="translate(480, 48)">
-        <rect x="0" y="0" width="215" height="155" rx="6" fill="#fbfaf7" stroke="#4a3f6b" strokeWidth="1.2" />
+      <g transform="translate(480, 46)">
+        <rect x="0" y="0" width="215" height="162" rx="6" fill="#fbfaf7" stroke="#4a3f6b" strokeWidth="1.2" />
         <rect x="0" y="0" width="215" height="28" rx="6" fill="#4a3f6b" />
         <text x="107" y="18" textAnchor="middle" fontSize="11" fontWeight="700" fill="#ffffff">3. Formal</text>
-        <text x="15" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Unknown official, company</text>
-        <text x="15" y="70" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Sir or Madam,"</text>
-        <text x="15" y="92" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Zero ("I cannot", "do not")</text>
-        <text x="15" y="114" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Professional, objective</text>
-        <text x="15" y="136" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Yours faithfully,"</text>
+        <text x="14" y="48" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Recipient:</tspan> Unknown official, firm</text>
+        <text x="14" y="69" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Salutation:</tspan> "Dear Sir or Madam,"</text>
+        <text x="14" y="90" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Contractions:</tspan> Zero ("I cannot", "do not")</text>
+        <text x="14" y="111" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Tone:</tspan> Professional, objective</text>
+        <text x="14" y="132" fontSize="11" fill="#263b3b"><tspan fontWeight="700">Sign-off:</tspan> "Yours faithfully,"</text>
+        <text x="64" y="148" fontSize="10.5" fill="#657273">(Unnamed addressee)</text>
       </g>
 
-      <text x="360" y="222" textAnchor="middle" fontSize="11" fill="#657273">Rule: "Dear Sir or Madam" pairs strictly with "Yours faithfully". Named addressee "Dear Mr..." pairs with "Yours sincerely".</text>
+      <text x="360" y="227" textAnchor="middle" fontSize="11" fill="#657273">Rule: "Dear Sir or Madam" pairs strictly with "Yours faithfully". Named addressee "Dear Mr..." pairs with "Yours sincerely".</text>
     </svg>
   )
 }

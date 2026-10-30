@@ -3,6 +3,10 @@
  * Enforces the 16-block schema, track discipline, and prerequisite DAG.
  */
 
+import { DIAGRAM_IDS } from './diagramManifest.js'
+import { MEDIA_SLOTS } from './mediaManifest.js'
+import { WORD_BANKS } from './wordBanks.js'
+
 export const STUDY_AREAS = ['overview', 'listening', 'reading', 'writing', 'speaking']
 export const STUDY_TRACKS = ['academic', 'shared', 'gt']
 
@@ -79,6 +83,12 @@ export function validateBlock(block, index, unitId = 'unknown') {
       if (!block.body || typeof block.body !== 'string') {
         throw new Error(`Unit ${unitId} callout block requires a body string.`)
       }
+      if (block.link !== undefined) {
+        throw new Error(`Unit ${unitId} callout block must use sourceUrl and sourceLabel instead of link.`)
+      }
+      if (block.sourceUrl !== undefined && (typeof block.sourceUrl !== 'string' || !block.sourceUrl.startsWith('https://'))) {
+        throw new Error(`Unit ${unitId} callout sourceUrl must be a valid https:// URL.`)
+      }
       break
 
     case 'steps':
@@ -132,6 +142,9 @@ export function validateBlock(block, index, unitId = 'unknown') {
       }
       for (let i = 0; i < block.segments.length; i++) {
         const seg = block.segments[i]
+        if (!seg.id || typeof seg.id !== 'string' || !seg.label || typeof seg.label !== 'string') {
+          throw new Error(`Unit ${unitId} annotatedSpecimen segment[${i}] requires explicit id and label strings.`)
+        }
         if (!seg.text || !seg.note) {
           throw new Error(`Unit ${unitId} annotatedSpecimen segment[${i}] requires text and note.`)
         }
@@ -166,6 +179,9 @@ export function validateBlock(block, index, unitId = 'unknown') {
       if (!block.diagramId || typeof block.diagramId !== 'string') {
         throw new Error(`Unit ${unitId} svgDiagram requires a diagramId string.`)
       }
+      if (!DIAGRAM_IDS.includes(block.diagramId)) {
+        throw new Error(`Unit ${unitId} svgDiagram "${block.diagramId}" is not registered in DIAGRAM_IDS.`)
+      }
       if (!block.title || typeof block.title !== 'string') {
         throw new Error(`Unit ${unitId} svgDiagram requires a title string.`)
       }
@@ -181,11 +197,17 @@ export function validateBlock(block, index, unitId = 'unknown') {
       if (!block.slotId || typeof block.slotId !== 'string') {
         throw new Error(`Unit ${unitId} mediaSlot requires a slotId string.`)
       }
+      if (!MEDIA_SLOTS[block.slotId]) {
+        throw new Error(`Unit ${unitId} mediaSlot "${block.slotId}" is not registered in MEDIA_SLOTS.`)
+      }
       break
 
     case 'wordBank':
       if (!block.bankId || typeof block.bankId !== 'string') {
         throw new Error(`Unit ${unitId} wordBank requires a bankId string.`)
+      }
+      if (!WORD_BANKS[block.bankId]) {
+        throw new Error(`Unit ${unitId} wordBank "${block.bankId}" is not registered in WORD_BANKS.`)
       }
       if (!block.title || typeof block.title !== 'string') {
         throw new Error(`Unit ${unitId} wordBank requires a title string.`)
@@ -198,6 +220,12 @@ export function validateBlock(block, index, unitId = 'unknown') {
       }
       if (!Array.isArray(block.items) || block.items.length < 1) {
         throw new Error(`Unit ${unitId} mythBuster requires at least 1 item.`)
+      }
+      for (let i = 0; i < block.items.length; i++) {
+        const it = block.items[i]
+        if (!it.claim || typeof it.claim !== 'string' || !it.reality || typeof it.reality !== 'string') {
+          throw new Error(`Unit ${unitId} mythBuster item[${i}] requires claim and reality strings.`)
+        }
       }
       break
 
@@ -216,8 +244,16 @@ export function validateBlock(block, index, unitId = 'unknown') {
         throw new Error(`Unit ${unitId} diagnosticCheck must have exactly 1 correct option (found ${correctCount}).`)
       }
       for (let i = 0; i < block.options.length; i++) {
-        if (!block.options[i].rationale || typeof block.options[i].rationale !== 'string') {
+        const opt = block.options[i]
+        if (!opt.label || typeof opt.label !== 'string' || !opt.label.trim()) {
+          throw new Error(`Unit ${unitId} diagnosticCheck option[${i}] requires a non-empty label string.`)
+        }
+        if (!opt.rationale || typeof opt.rationale !== 'string') {
           throw new Error(`Unit ${unitId} diagnosticCheck option[${i}] requires a rationale string.`)
+        }
+        const rWords = opt.rationale.trim().split(/\s+/).filter(Boolean).length
+        if (rWords < 10) {
+          throw new Error(`Unit ${unitId} diagnosticCheck option[${i}] rationale must have >= 10 words (got ${rWords}).`)
         }
       }
       break

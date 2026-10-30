@@ -363,12 +363,13 @@ export const overviewLanguageUnits = [
         type: 'annotatedSpecimen',
         kind: 'essay',
         title: 'Eight-Step Sentence Editing Walkthrough',
+        provenance: 'Original editing specimen · progressive repair from draft to controlled sentence',
         segments: [
-          { text: 'Flawed draft: In recent years, more easier access to the internet have resulted in that most of people spends less time on reading books.', note: 'Contains multiple comparative, agreement, preposition, and quantifier errors.' },
-          { text: 'Step 1 & 2: Identify core meaning: Increased internet access has reduced the time people spend reading books.', note: 'Simplifies the core proposition into a single clear active clause.' },
-          { text: 'Step 3 & 4: Correct agreement and quantifiers: "easier" replaces "more easier"; "has resulted" matches singular subject; "most people" replaces "most of people".', note: 'Fixes double comparative, verb number, and non-specific quantifier.' },
-          { text: 'Step 5 & 6: Refine prepositions and clauses: "spending less time on reading" becomes "spending less time reading books".', note: 'Applies natural verb-gerund pattern without redundant prepositions.' },
-          { text: 'Final edited sentence: In recent years, easier access to digital media has led most people to spend less time reading books.', note: 'Polished, completely error-free complex sentence preserving original scope.' },
+          { id: '1', label: 'Flawed Draft', text: 'Flawed draft: In recent years, more easier access to the internet have resulted in that most of people spends less time on reading books.', note: 'Contains multiple comparative, agreement, preposition, and quantifier errors.' },
+          { id: '2', label: 'Core Proposition', text: 'Step 1 & 2: Identify core meaning: Increased internet access has reduced the time people spend reading books.', note: 'Simplifies the core proposition into a single clear active clause.' },
+          { id: '3', label: 'Agreement & Quantifiers', text: 'Step 3 & 4: Correct agreement and quantifiers: "easier" replaces "more easier"; "has resulted" matches singular subject; "most people" replaces "most of people".', note: 'Fixes double comparative, verb number, and non-specific quantifier.' },
+          { id: '4', label: 'Gerund Pattern', text: 'Step 5 & 6: Refine prepositions and clauses: "spending less time on reading" becomes "spending less time reading books".', note: 'Applies natural verb-gerund pattern without redundant prepositions.' },
+          { id: '5', label: 'Controlled Revision', text: 'Final edited sentence: In recent years, easier access to digital media has led most people to spend less time reading books.', note: 'Polished, completely error-free complex sentence preserving original scope.' },
         ],
       },
       {

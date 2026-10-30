@@ -76,11 +76,6 @@ export const speakingUnits = [
           'I know that examiners evaluate intelligibility rather than native accents.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-criteria-audit',
-        label: 'Review the four official Speaking criteria and identify which area represents your primary diagnostic weakness.',
-      },
     ],
   },
 
@@ -118,18 +113,15 @@ export const speakingUnits = [
         type: 'steps',
         title: 'The "Answer First, Then Add Detail" Protocol',
         items: [
-          { action: 'Listen for the primary question trigger (e.g. How often, Which, Do you prefer, Why).', condition: 'Step 1: Identify Trigger', why: 'Ensures your opening phrase delivers the precise information requested.' },
-          { action: 'State your direct response immediately in the first clause.', condition: 'Step 2: Direct Answer', why: 'Satisfies the question immediately without beating around the bush.' },
-          { action: 'Add one supporting reason, concrete detail, or personal elaboration.', condition: 'Step 3: Relevant Detail', why: 'Demonstrates conversational fluency and grammatical subordination naturally.' },
-          { action: 'Stop talking calmly once you have answered; do not ramble into unrelated topics.', condition: 'Step 4: Controlled Finish', why: 'Prevents repetitive filler and signals confidence to the examiner.' },
+          { action: 'Listen for the primary question trigger (such as How often, Which, Do you prefer, Why).', condition: 'Identify Trigger', why: 'Ensures your opening phrase delivers the precise information requested.' },
+          { action: 'State your direct response immediately in the first clause.', condition: 'Direct Answer', why: 'Satisfies the question immediately without beating around the bush.' },
+          { action: 'Add one supporting reason, concrete detail, or personal elaboration.', condition: 'Relevant Detail', why: 'Demonstrates conversational fluency and grammatical subordination naturally.' },
+          { action: 'Stop talking calmly once you have answered; do not ramble into unrelated topics.', condition: 'Controlled Finish', why: 'Prevents repetitive filler and signals confidence to the examiner.' },
         ],
       },
       {
         type: 'mediaSlot',
-        slotId: 'slot-s-interview-part1',
-        title: 'Part 1 Authentic Audio Model: Walking Routine',
-        caption: 'Listen to a candidate answering a Part 1 prompt on daily habits using the Answer First plus Detail formula.',
-        transcript: 'Examiner: Do you usually walk or take public transport to work? Candidate: I usually walk to work. It takes about fifteen minutes, and the route runs beside a quiet park, which helps me clear my mind before meetings begin.',
+        slotId: 'slot-s-part1-direct',
       },
       {
         type: 'comparisonTable',
@@ -159,11 +151,6 @@ export const speakingUnits = [
           'I select one favorite item when asked for a preference rather than listing many.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-part1-practice',
-        label: 'Answer three common Part 1 questions using the Answer First plus Detail formula.',
-      },
     ],
   },
 
@@ -189,22 +176,23 @@ export const speakingUnits = [
         type: 'steps',
         title: '5-Point Task Card Decoding Protocol',
         items: [
-          { action: 'Identify the exact core category (person, place, object, event, or experience).', condition: 'Point 1: Core Subject', why: 'Prevents confusing an event with an object or a person with an organization.' },
-          { action: 'Check every category restriction (e.g. "a famous person" vs "someone you know").', condition: 'Point 2: Restriction', why: 'Selecting a local family member for a card asking for a famous person fails the task.' },
-          { action: 'Note the primary temporal status (past experience, current habit, or future aspiration).', condition: 'Point 3: Time Frame', why: 'Governs your predominant verb tenses throughout the 2-minute talk.' },
-          { action: 'Scan all three bullet cues to understand the expected narrative progression.', condition: 'Point 4: Cue Points', why: 'Helps structure the beginning, middle, and peak of your spoken account.' },
-          { action: 'Read the final prompt line (e.g. "and explain why this was memorable").', condition: 'Point 5: The Climax', why: 'Represents the most important analytical component where you develop deep meaning.' },
+          { action: 'Identify the exact core category (person, place, object, event, or experience).', condition: 'Core Subject', why: 'Prevents confusing an event with an object or a person with an organization.' },
+          { action: 'Check every category restriction (such as "a famous person" versus "someone you know").', condition: 'Restriction', why: 'Selecting a local family member for a card asking for a famous person fails the task.' },
+          { action: 'Note the primary temporal status (past experience, current habit, or future aspiration).', condition: 'Time Frame', why: 'Governs your predominant verb tenses throughout the 2-minute talk.' },
+          { action: 'Scan all three bullet cues to understand the expected narrative progression.', condition: 'Cue Points', why: 'Helps structure the beginning, middle, and peak of your spoken account.' },
+          { action: 'Read the final prompt line (such as "and explain why this was memorable").', condition: 'Final Explanation', why: 'Represents the most important analytical component where you develop deep meaning.' },
         ],
       },
       {
         type: 'annotatedSpecimen',
         kind: 'note-card',
         title: 'Keyword Note Card versus Doomed Script',
+        provenance: 'Original practice specimen · 12-keyword Part 2 preparation notes',
         segments: [
-          { text: 'Setting: Kyoto, ancient temple garden, autumn 2022', note: 'Keywords 1–3: Anchors time and spatial setting without full sentences.' },
-          { text: 'Visual: stone pathways, vivid red maple foliage, pond reflection', note: 'Keywords 4–6: Triggers rich descriptive sensory vocabulary during speech.' },
-          { text: 'Action: early morning walk, silence, wooden pavilion tea', note: 'Keywords 7–9: Provides sequential verbs for the narrative middle.' },
-          { text: 'Impact: profound stillness, mental recovery after thesis deadline', note: 'Keywords 10–12: Supplies emotional and psychological reflection for the final explanation prompt.' },
+          { id: '1', label: 'Setting Keywords', text: 'Setting: Kyoto, ancient temple garden, autumn 2022', note: 'Keywords 1–3: Anchors time and spatial setting without full sentences.' },
+          { id: '2', label: 'Sensory Triggers', text: 'Visual: stone pathways, vivid red maple foliage, pond reflection', note: 'Keywords 4–6: Triggers rich descriptive sensory vocabulary during speech.' },
+          { id: '3', label: 'Action Sequence', text: 'Action: early morning walk, silence, wooden pavilion tea', note: 'Keywords 7–9: Provides sequential verbs for the narrative middle.' },
+          { id: '4', label: 'Impact Reflection', text: 'Impact: profound stillness, mental recovery after thesis deadline', note: 'Keywords 10–12: Supplies emotional and psychological reflection for the final explanation prompt.' },
         ],
       },
       {
@@ -235,11 +223,6 @@ export const speakingUnits = [
           'I plan to spend substantial time on the final "and explain why" prompt.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-note-card',
-        label: 'Take a practice Part 2 task card and write a 12-keyword note card in exactly 60 seconds.',
-      },
     ],
   },
 
@@ -265,21 +248,18 @@ export const speakingUnits = [
         type: 'steps',
         title: 'Seven Rich Detail Sources for Part 2 Expansion',
         items: [
-          { action: 'Physical Appearance: Describe physical dimensions, colors, architecture, or materials.', condition: 'Source 1: Sensory', why: 'Evokes vivid imagery and demonstrates high-level descriptive vocabulary.' },
-          { action: 'Setting & Background: Explain what prompted the event or how you obtained the item.', condition: 'Source 2: Origin', why: 'Establishes clear narrative context before detailing the main experience.' },
-          { action: 'Action Sequence: Detail two or three sequential steps that occurred.', condition: 'Source 3: Sequence', why: 'Provides narrative momentum and natural temporal transition markers.' },
-          { action: 'Memorable Dialogue: Recall a brief interaction or comment made by someone present.', condition: 'Source 4: Interaction', why: 'Adds authentic human color and conversational authenticity to the account.' },
-          { action: 'An Obstacle or Challenge: Mention a minor problem encountered and how it was resolved.', condition: 'Source 5: Complication', why: 'Creates authentic narrative interest and extends the duration of the talk.' },
-          { action: 'Emotional Impact: Explain how your mood shifted before, during, and after.', condition: 'Source 6: Emotion', why: 'Directly addresses the final prompt requirement for personal reflection.' },
-          { action: 'Lasting Consequence: Reflect on how this experience influences you today.', condition: 'Source 7: Reflection', why: 'Bridges past experience with present reality naturally when appropriate.' },
+          { action: 'Describe physical dimensions, colors, architecture, or materials.', condition: 'Physical Appearance', why: 'Evokes vivid imagery and demonstrates high-level descriptive vocabulary.' },
+          { action: 'Explain what prompted the event or how you obtained the item.', condition: 'Setting and Origin', why: 'Establishes clear narrative context before detailing the main experience.' },
+          { action: 'Detail two or three sequential steps that occurred.', condition: 'Action Sequence', why: 'Provides narrative momentum and natural temporal transition markers.' },
+          { action: 'Recall a brief interaction or comment made by someone present.', condition: 'Memorable Dialogue', why: 'Adds authentic human color and conversational authenticity to the account.' },
+          { action: 'Mention a minor problem encountered and how it was resolved.', condition: 'Obstacle or Challenge', why: 'Creates authentic narrative interest and extends the duration of the talk.' },
+          { action: 'Explain how your mood shifted before, during, and after.', condition: 'Emotional Impact', why: 'Directly addresses the final prompt requirement for personal reflection.' },
+          { action: 'Reflect on how this experience influences you today.', condition: 'Lasting Consequence', why: 'Bridges past experience with present reality naturally when appropriate.' },
         ],
       },
       {
         type: 'mediaSlot',
-        slotId: 'slot-s-part2-cuecard',
-        title: 'Part 2 Cue Card Long Turn Model: Community Project',
-        caption: 'Model demonstration of a candidate delivering a connected 110-second talk from keyword notes.',
-        transcript: 'I would like to talk about a community clean-up project that took place in my hometown two summers ago. The initiative was organized by a local neighborhood association after our community park had suffered from neglected maintenance over the winter...',
+        slotId: 'slot-s-part2-longturn',
       },
       {
         type: 'comparisonTable',
@@ -309,11 +289,6 @@ export const speakingUnits = [
           'My verb tenses match the actual timeline of the events described.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-long-turn',
-        label: 'Record yourself giving a 2-minute Part 2 talk and check whether you sustained speech calmly for at least 100 seconds.',
-      },
     ],
   },
 
@@ -332,7 +307,7 @@ export const speakingUnits = [
       {
         type: 'lead',
         summary: 'Part 3 shifts from personal storytelling to abstract societal discussion. Success requires identifying the cognitive thinking operation demanded by the examiner question and developing your answer through a 4-move analytical chain.',
-        whyItMatters: 'Answering an abstract question about urban development with personal stories about your brother violates the expected register, keeping your score trapped at Band 5 or 6.',
+        whyItMatters: 'Answering an abstract question about urban development with personal stories about your brother violates the expected register, leading to underdeveloped analytical responses.',
         whatYouWillDo: 'Identify seven Part 3 cognitive thinking operations, execute the 4-move development chain, analyze an annotated remote-work specimen, and listen to a reserved abstract audio slot.',
       },
       {
@@ -353,29 +328,27 @@ export const speakingUnits = [
         type: 'steps',
         title: 'The 4-Move Spoken Development Chain',
         items: [
-          { action: 'Move 1: State your direct analytical viewpoint in the opening sentence.', condition: 'Move 1: Direct View', why: 'Establishes clear position and answers the examiner question immediately.' },
-          { action: 'Move 2: Explain the underlying societal mechanism or reason.', condition: 'Move 2: Mechanism', why: 'Provides depth and avoids superficial assertions.' },
-          { action: 'Move 3: Offer a concrete, broad real-world scenario as evidence.', condition: 'Move 3: Evidence', why: 'Grounds the theoretical principle in observable social reality.' },
-          { action: 'Move 4: Add a nuanced qualification, limitation, or alternative perspective.', condition: 'Move 4: Qualification', why: 'Demonstrates analytical maturity and high-level complex grammar.' },
+          { action: 'State your direct analytical viewpoint in the opening sentence.', condition: 'Direct View', why: 'Establishes clear position and answers the examiner question immediately.' },
+          { action: 'Explain the underlying societal mechanism or reason.', condition: 'Mechanism', why: 'Provides depth and avoids superficial assertions.' },
+          { action: 'Offer a concrete, broad real-world scenario as evidence.', condition: 'Evidence', why: 'Grounds the theoretical principle in observable social reality.' },
+          { action: 'Add a nuanced qualification, limitation, or alternative perspective.', condition: 'Qualification', why: 'Demonstrates analytical maturity and high-level complex grammar.' },
         ],
       },
       {
         type: 'annotatedSpecimen',
         kind: 'transcript',
         title: 'Annotated Part 3 Development: Remote Employment',
+        provenance: 'Original practice specimen · four-move Part 3 analytical answer',
         segments: [
-          { text: 'In my view, widespread remote work fundamentally benefits regional communities by decentralizing economic activity.', note: 'Move 1 (Direct View): States an explicit, abstract societal perspective.' },
-          { text: 'When professionals are not required to commute daily to capital cities, their disposable income is spent on local services, cafes, and housing in smaller towns.', note: 'Move 2 (Mechanism): Explains the economic mechanism of regional wealth distribution.' },
-          { text: 'For example, many coastal villages have experienced commercial revitalization over the past three years as remote workers relocated.', note: 'Move 3 (Evidence): Provides a plausible societal observation without personal trivia.' },
-          { text: 'However, this development can also inflate local property prices, making housing less affordable for traditional residents.', note: 'Move 4 (Qualification): Adds a critical, balanced economic caveat.' },
+          { id: '1', label: 'Direct View', text: 'In my view, widespread remote work fundamentally benefits regional communities by decentralizing economic activity.', note: 'Move 1 (Direct View): States an explicit, abstract societal perspective.' },
+          { id: '2', label: 'Causal Mechanism', text: 'When professionals are not required to commute daily to capital cities, their disposable income is spent on local services, cafes, and housing in smaller towns.', note: 'Move 2 (Mechanism): Explains the economic mechanism of regional wealth distribution.' },
+          { id: '3', label: 'Societal Evidence', text: 'For example, many coastal villages have experienced commercial revitalization over the past three years as remote workers relocated.', note: 'Move 3 (Evidence): Provides a plausible societal observation without personal trivia.' },
+          { id: '4', label: 'Balanced Qualification', text: 'However, this development can also inflate local property prices, making housing less affordable for traditional residents.', note: 'Move 4 (Qualification): Adds a critical, balanced economic caveat.' },
         ],
       },
       {
         type: 'mediaSlot',
-        slotId: 'slot-s-part3-abstract',
-        title: 'Part 3 Abstract Discussion Model: Automation & Society',
-        caption: 'Audio demonstration of a candidate responding to a high-level Part 3 question on technological disruption.',
-        transcript: 'Examiner: Some people believe that automation will eliminate more jobs than it creates. What is your view on this? Candidate: While technological transitions inevitably cause temporary dislocations in manufacturing and clerical sectors, historical precedent suggests that automation ultimately creates higher-value specialized industries...',
+        slotId: 'slot-s-part3-chain',
       },
       {
         type: 'callout',
@@ -392,11 +365,6 @@ export const speakingUnits = [
           'I support my direct view with an underlying causal mechanism.',
           'I qualify my claims by acknowledging conditions or potential trade-offs.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-part3-development',
-        label: 'Deliver a 4-move response to a Part 3 question on whether governments should subsidize electric vehicles.',
       },
     ],
   },
@@ -468,11 +436,6 @@ export const speakingUnits = [
           'I maintain a steady, comfortable pace rather than rushing frantically.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-unfamiliar-prompts',
-        label: 'Practice responding to a question about an activity you have never done using a cautious hypothetical.',
-      },
     ],
   },
 
@@ -491,7 +454,7 @@ export const speakingUnits = [
       {
         type: 'lead',
         summary: 'High lexical scores in Speaking stem from natural conversational collocations and topic-appropriate vocabulary rather than forced archaic idioms. Controlling nine essential spoken sentence functions provides the grammatical flexibility needed across all three parts.',
-        whyItMatters: 'Shoehorning colorful proverbs ("every cloud has a silver lining") into technical answers sounds artificial and unacademic. Grammatical errors in common functions like expressing duration cap your score.',
+        whyItMatters: 'Shoehorning colorful proverbs ("every cloud has a silver lining") into technical answers sounds artificial and unacademic. Grammatical errors in common functions like expressing duration limit your accuracy.',
         whatYouWillDo: 'Deploy six natural spoken discourse frames, master the 9-row sentence function table, distinguish completed stays from continuing residence, and eliminate forced proverbs.',
       },
       {
@@ -551,11 +514,6 @@ export const speakingUnits = [
           'I ensure singular profession nouns include an article ("I am an engineer").',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-sentence-functions',
-        label: 'Record yourself producing six of the nine sentence functions using accurate grammar.',
-      },
     ],
   },
 
@@ -574,25 +532,29 @@ export const speakingUnits = [
       {
         type: 'lead',
         summary: 'Pronunciation assessment focuses on overall intelligibility and natural phonological features rather than imitating a British or American accent. Controlling word stress, sentence focus, thought-group chunking, and measured pace ensures your message is understood without strain.',
-        whyItMatters: 'Shifting word stress (such as saying "PHO-to-graph" versus "pho-TO-gra-pher") can obscure meaning completely. Speaking too fast causes final consonant clusters to disappear, damaging pronunciation marks.',
-        whatYouWillDo: 'Study the stress contrast SVG diagram, master thought-group chunking, control syllable stress, and adjust speaking tempo for maximum listener ease.',
+        whyItMatters: 'Shifting word stress (such as saying "PHO-to-graph" versus "pho-TOG-ra-pher") can obscure meaning completely. Speaking too fast causes final consonant clusters to disappear, damaging pronunciation marks.',
+        whatYouWillDo: 'Study the stress contrast SVG diagram, inspect annotated stress and pacing scripts, master thought-group chunking, and adjust speaking tempo for maximum listener ease.',
       },
       {
         type: 'svgDiagram',
         diagramId: 'diag-speaking-stress-contrast',
         title: 'Word Stress, Sentence Focus, and Intonation Contours',
-        caption: 'Phonological architecture: Syllable stress shifts (ECON-omy vs eco-NOM-ic), sentence focus stress highlighting new information, and thought-group chunking with terminal intonation falls.',
-        alt: 'Acoustic diagram showing pitch contours, syllable stress peaks, and thought-group pauses in connected speech.',
+        caption: 'Phonological architecture: contrastive focus stress highlighting intended meaning and thought-group chunking with terminal intonation falls.',
+        alt: 'Acoustic diagram showing contrastive sentence stress and phrasing pause boundaries in connected speech.',
       },
       {
         type: 'steps',
         title: 'Four Core Phonological Pillars in IELTS Pronunciation',
         items: [
-          { action: 'Individual Sound Clarity: Pronounce vowel and consonant contrasts distinctly.', condition: 'Pillar 1: Sounds', why: 'Prevents confusing minimal pairs like "ship" and "sheep" or "tree" and "three".' },
-          { action: 'Word Stress: Place emphasis on the correct syllable within multi-syllable words.', condition: 'Pillar 2: Syllable Stress', why: 'Incorrect syllable stress forces the listener to decode words with difficulty.' },
-          { action: 'Sentence Focus Stress: Emphasize the core content word carrying new information.', condition: 'Pillar 3: Sentence Focus', why: 'Signals contrast and key meaning (e.g. "I wanted the RED folder, not the blue one").' },
-          { action: 'Thought-Group Chunking: Pause at natural grammatical boundaries between clauses.', condition: 'Pillar 4: Chunking', why: 'Divides speech into digestible meaning units rather than breathless rambling.' },
+          { action: 'Pronounce vowel and consonant contrasts distinctly.', condition: 'Sound Clarity', why: 'Prevents confusing minimal pairs like "ship" and "sheep" or "tree" and "three".' },
+          { action: 'Place emphasis on the correct syllable within multi-syllable words.', condition: 'Word Stress', why: 'Incorrect syllable stress forces the listener to decode words with difficulty.' },
+          { action: 'Emphasize the core content word carrying new information.', condition: 'Sentence Focus', why: 'Signals contrast and key meaning (for example, "I wanted the BLUE folder, not the red one").' },
+          { action: 'Pause at natural grammatical boundaries between clauses.', condition: 'Thought-Group Chunking', why: 'Divides speech into digestible meaning units rather than breathless rambling.' },
         ],
+      },
+      {
+        type: 'mediaSlot',
+        slotId: 'slot-s-stress-contrast',
       },
       {
         type: 'comparisonTable',
@@ -619,6 +581,10 @@ export const speakingUnits = [
         },
       },
       {
+        type: 'mediaSlot',
+        slotId: 'slot-s-pacing-chunks',
+      },
+      {
         type: 'callout',
         variant: 'trap',
         title: 'Accent Is Not Pronunciation',
@@ -633,11 +599,6 @@ export const speakingUnits = [
           'I pause briefly at natural grammatical boundaries between clauses.',
           'I speak loudly and clearly at a controlled, comfortable tempo.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-pronunciation-drills',
-        label: 'Read a paragraph aloud focusing on pausing at clause boundaries and placing stress on contrasting content words.',
       },
     ],
   },
@@ -745,6 +706,16 @@ export const speakingUnits = [
         ],
       },
       {
+        type: 'comparisonTable',
+        caption: 'Using Spoken Models, AI Tools, and Human Review Safely',
+        headers: ['Feedback Source', 'Useful Preparation Role', 'Operational Limit to Respect'],
+        rows: [
+          ['Spoken model answer', 'Attempt the question yourself first, then compare directness, detail, organization, phrasing, and stress.', 'Do not copy another candidate biography, personal stories, or accent as your own identity.'],
+          ['AI speech or text tool', 'Generate practice prompts, simulate follow-up turns, and inspect transcript wording.', 'Band estimates are uncalibrated, and text-only analysis cannot judge actual pronunciation.'],
+          ['Calibrated human review', 'Point to specific spoken evidence and explain a criterion-aligned repair before high-stakes bookings.', 'Optional rather than compulsory; paid former-examiner coaching is never required to improve.'],
+        ],
+      },
+      {
         type: 'callout',
         variant: 'trap',
         title: 'The Limits of AI Speech Scoring',
@@ -795,11 +766,6 @@ export const speakingUnits = [
           'I remain calm if the examiner interrupts me during the interview.',
           'I focus my preparation on the four official criteria rather than exam myths.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-s-final-sprint',
-        label: 'Conduct a complete 14-minute simulated interview, recording all three parts without pausing.',
       },
     ],
   },

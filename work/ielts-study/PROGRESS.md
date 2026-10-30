@@ -130,3 +130,18 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `s-pronunciation-stress-pace` (`9.17`, `9.18`, `9.19`)
 - [x] `s-self-correction-and-review` (`9.20`, `9.21`)
 - [x] `s-models-shadowing-ai-myths` (`9.22`, `9.23`, `9.24`)
+
+---
+
+## Post-Audit Quality & Verification Gate (Passed 30 Oct 2026)
+
+- [x] **Audit Suite (`node scripts/check-ielts-study.mjs --strict`)**:
+  - `COV01`–`COV08`: 85 canonical units, 174/174 source sections covered (0 missing, 0 unknown), 8 reference banks complete, 4 [GT] units strictly separated, prerequisite DAG acyclic, internal links resolved, 9 workbook prompts within 5..10 budget.
+  - `ASE01`–`ASE10`: Zero banned hype words, abbreviations, or contractions; all sentences <= 32 words; step actions <= 25 words; glossary 49 terms with <= 25-word definitions.
+  - `NOGAME01`–`NOGAME03`: Zero gamification tokens across all ielts-study source files; diagnosticCheck rationales >= 10 words.
+  - `VIS01`–`VIS04`: All 23 diagrams have >= 8 primitives and unique IDs; all 10 media slots defined; SSR rendered Study Hub + all 85 unit routes + 9 Practice routes with 0 errors/warnings.
+  - Result: **0 errors, 0 warnings**.
+- [x] **Automated Test Suite (`npm test`)**: All 172 tests passing (including 10 comprehensive tests in `src/web/ieltsStudy.test.js`).
+- [x] **Production Bundle (`npm run build`)**: Vite v8.1.5 production build clean in 2.76s.
+- [x] **Practice Mode Quarantine**: Zero modifications to `IeltsWorkspace.jsx`, `ieltsContent.js`, `ieltsState.js`, or `ieltsAreas`.
+

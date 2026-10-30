@@ -23,32 +23,47 @@ import './ielts-study.css'
 export function StudyHome({ store }) {
   const lastUnitId = store?.state?.notes?.['study-last-unit']
   const lastUnit = lastUnitId ? STUDY_UNIT_BY_ID[lastUnitId] : null
+  const lastMod = lastUnit ? MODULE_METADATA.find((m) => m.id === lastUnit.area) : null
 
   return (
     <div className="ies-home">
       <header className="ies-home-masthead">
         <h1>IELTS Academic</h1>
         <p className="ies-home-lead">
-          A complete technical reference for IELTS Academic, with General Training differences marked side by side.
-          Read in order or open the exact skill you need.
+          A technical study manual for IELTS Academic, with General Training differences marked side by side. Read in
+          order or open the exact skill you need.
         </p>
         <div className="ies-track-legend" role="note" aria-label="Track designations">
           <span className="ies-legend-item">
             <span className="ies-badge ies-badge-academic">Academic</span> Primary track
           </span>
           <span className="ies-legend-item">
-            <span className="ies-badge ies-badge-shared">Shared</span> Both Academic & General Training
+            <span className="ies-badge ies-badge-shared">Shared</span> Both Academic &amp; General Training
           </span>
           <span className="ies-legend-item">
             <span className="ies-badge ies-badge-gt">[GT]</span> Separated General Training sections
           </span>
+        </div>
+
+        <div className="ies-orientation-bar" role="region" aria-label="Manual orientation">
+          <div>
+            <strong>New to this manual?</strong> Learn how{' '}
+            <span className="ies-inline-pill ies-pill-requirement">Requirement</span>,{' '}
+            <span className="ies-inline-pill ies-pill-method">Method</span>, and{' '}
+            <span className="ies-inline-pill ies-pill-option">Option</span> labels distinguish official test rules from
+            coaching procedures.
+          </div>
+          <a className="ies-orientation-link" href={`#${ieltsStudyPath('overview', 'ov-how-to-read')}`}>
+            Start here: How this manual works →
+          </a>
         </div>
       </header>
 
       {lastUnit && (
         <aside className="ies-bookmark-bar" aria-label="Last opened study unit">
           <span>
-            <strong>Last opened:</strong> {lastUnit.partTitle} · {lastUnit.title}
+            <strong>Last opened:</strong> {lastMod ? `${lastMod.title} · ` : ''}
+            {lastUnit.title}
           </span>
           <a className="ies-bookmark-link" href={`#${ieltsStudyPath(lastUnit.area, lastUnit.id)}`}>
             Continue reading →
@@ -73,7 +88,14 @@ export function StudyHome({ store }) {
                     </h2>
                   </div>
                 </div>
-                <span className="ies-mod-fact">{mod.fact}</span>
+                <div className="ies-mod-head-actions">
+                  <span className="ies-mod-fact">{mod.fact}</span>
+                  {firstUnit && (
+                    <a className="ies-mod-start" href={`#${ieltsStudyPath(mod.id, firstUnit.id)}`}>
+                      Start module →
+                    </a>
+                  )}
+                </div>
               </div>
 
               <p className="ies-mod-scope">{mod.scope}</p>
@@ -137,8 +159,47 @@ export function StudyReader({ area, unitId, store }) {
 
   const prevUnit = currentUnit ? getPrevUnit(currentUnit.id) : null
   const nextUnit = currentUnit ? getNextUnit(currentUnit.id) : null
+  const unitIndex = currentUnit ? areaUnits.findIndex((u) => u.id === currentUnit.id) : -1
+  const isLastInModule = unitIndex >= 0 && unitIndex === areaUnits.length - 1
 
   const isRead = currentUnit ? Boolean(store?.state?.notes?.[`study-read-${currentUnit.id}`]) : false
+
+  const renderTocParts = () =>
+    modMeta.parts.map((part) => {
+      const partUnits = filteredUnits.filter((u) => u.partId === part.id)
+      if (partUnits.length === 0 && filterQuery.trim()) return null
+
+      return (
+        <div key={part.id} className={`ies-toc-part ${part.isGt ? 'ies-toc-part-gt' : ''}`}>
+          <div className="ies-toc-part-title">
+            {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '4px' }}>GT</span>}
+            {part.title}
+          </div>
+          <ul className="ies-toc-list">
+            {partUnits.map((u) => {
+              const isActive = currentUnit && currentUnit.id === u.id
+              const unitRead = Boolean(store?.state?.notes?.[`study-read-${u.id}`])
+
+              return (
+                <li key={u.id} className={`ies-toc-item ${isActive ? 'ies-active' : ''}`}>
+                  <a
+                    href={`#${ieltsStudyPath(area, u.id)}`}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    <span>{u.title}</span>
+                    {unitRead && (
+                      <span className="ies-toc-read-mark" title="Marked read" aria-label="Marked read">
+                        ✓
+                      </span>
+                    )}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )
+    })
 
   return (
     <div className="ies-reader">
@@ -151,6 +212,16 @@ export function StudyReader({ area, unitId, store }) {
           <span>{modMeta.fact}</span>
         </div>
       </header>
+
+      {/* Mobile / Narrow-Tablet Compact Contents Drawer (< 880px) */}
+      {currentUnit && (
+        <details className="ies-mobile-toc">
+          <summary>
+            Contents · Unit {unitIndex + 1} of {areaUnits.length}: {currentUnit.title}
+          </summary>
+          <div className="ies-mobile-toc-body">{renderTocParts()}</div>
+        </details>
+      )}
 
       <div className="ies-reader-grid">
         {/* Left Column: Outline Table of Contents */}
@@ -168,46 +239,7 @@ export function StudyReader({ area, unitId, store }) {
             />
           )}
 
-          {modMeta.parts.map((part) => {
-            const partUnits = filteredUnits.filter((u) => u.partId === part.id)
-            if (partUnits.length === 0 && filterQuery.trim()) return null
-
-            return (
-              <div key={part.id} className={`ies-toc-part ${part.isGt ? 'ies-toc-part-gt' : ''}`}>
-                <div className="ies-toc-part-title">
-                  {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '4px' }}>GT</span>}
-                  {part.title}
-                </div>
-                <ul className="ies-toc-list">
-                  {partUnits.map((u) => {
-                    const isActive = currentUnit && currentUnit.id === u.id
-                    const unitRead = Boolean(store?.state?.notes?.[`study-read-${u.id}`])
-
-                    return (
-                      <li key={u.id} className={`ies-toc-item ${isActive ? 'ies-active' : ''}`}>
-                        <a
-                          href={`#${ieltsStudyPath(area, u.id)}`}
-                          aria-current={isActive ? 'page' : undefined}
-                        >
-                          <span>{u.title}</span>
-                          {unitRead && (
-                            <span className="ies-toc-read-mark" title="Marked read" aria-label="Marked read">
-                              ✓
-                            </span>
-                          )}
-                        </a>
-                      </li>
-                    )
-                  })}
-                  {partUnits.length === 0 && (
-                    <li className="ies-toc-item" style={{ fontSize: '11px', color: 'var(--ie-muted)', padding: '4px 8px' }}>
-                      <em>Units in production</em>
-                    </li>
-                  )}
-                </ul>
-              </div>
-            )
-          })}
+          {renderTocParts()}
         </nav>
 
         {/* Right Column: Main Unit Article */}
@@ -216,6 +248,10 @@ export function StudyReader({ area, unitId, store }) {
             <article className="ies-article" aria-labelledby={`ies-unit-h2-${currentUnit.id}`}>
               <header className="ies-unit-header">
                 <div className="ies-unit-kicker">
+                  <span>
+                    Unit {unitIndex + 1} of {areaUnits.length}
+                  </span>
+                  <span>·</span>
                   <span>{currentUnit.partTitle}</span>
                   <span>·</span>
                   <span>~{currentUnit.minutes} min study</span>
@@ -300,16 +336,25 @@ export function StudyReader({ area, unitId, store }) {
 
                   {nextUnit ? (
                     <a className="ies-nav-card ies-nav-card-next" href={`#${ieltsStudyPath(nextUnit.area, nextUnit.id)}`}>
-                      <span className="ies-nav-card-label">Next Unit →</span>
+                      <span className="ies-nav-card-label">
+                        {nextUnit.area !== area ? 'Next Module →' : 'Next Unit →'}
+                      </span>
                       <span className="ies-nav-card-title">{nextUnit.title}</span>
                     </a>
                   ) : (
                     <a className="ies-nav-card ies-nav-card-next" href={`#${ieltsPath(area, 'practice')}`}>
-                      <span className="ies-nav-card-label">Complete Module →</span>
+                      <span className="ies-nav-card-label">End of Manual →</span>
                       <span className="ies-nav-card-title">Practise {modMeta.title}</span>
                     </a>
                   )}
                 </div>
+
+                {isLastInModule && area !== 'overview' && nextUnit && (
+                  <div className="ies-module-practice-bridge">
+                    <span>Finished reading {modMeta.title}?</span>
+                    <a href={`#${ieltsPath(area, 'practice')}`}>Practise {modMeta.title} under timed conditions →</a>
+                  </div>
+                )}
               </footer>
             </article>
           ) : (

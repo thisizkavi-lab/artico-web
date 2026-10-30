@@ -37,7 +37,8 @@ export const readingUnits = [
         variant: 'requirement',
         title: 'Zero Separate Transfer Time',
         body: 'Academic Reading contains 3 sections and 40 questions in exactly 60 minutes. This total time includes entering all answers on your screen or paper sheet. There is zero extra transfer time at the end.',
-        link: { url: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading', text: 'Official IELTS Academic Reading Format' },
+        sourceUrl: 'https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading',
+        sourceLabel: 'Official IELTS Academic Reading Format',
       },
       {
         type: 'section',
@@ -85,11 +86,6 @@ export const readingUnits = [
           'I apply close reading to the sentences surrounding an anchor keyword.',
           'I recognize that Academic Reading uses longer analytical texts than General Training.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-operations-routine',
-        label: 'Record how you divide your attention between scanning for location and reading closely for decisions.',
       },
     ],
   },
@@ -143,11 +139,12 @@ export const readingUnits = [
         type: 'annotatedSpecimen',
         kind: 'passage',
         title: 'Passage Mapping Specimen with Functional Margin Labels',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: 'Paragraph A: For decades, municipal planners struggled with urban water drainage in coastal lowlands.', note: 'Margin label: "Introduces drainage problem"' },
-          { text: 'Paragraph B: The conventional solution involved constructing concrete culverts to divert stormwater directly into estuaries.', note: 'Margin label: "Describes old method"' },
-          { text: 'Paragraph C: However, these rigid culverts prevented natural sediment filtration and destroyed estuarine oyster habitats.', note: 'Margin label: "Explains ecological limitation"' },
-          { text: 'Paragraph D: In 2018, engineers evaluated permeable pavement swales across four trial districts.', note: 'Margin label: "Evaluates new trial"' },
+          { id: '1', label: 'Problem Introduction', text: 'Paragraph A: For decades, municipal planners struggled with urban water drainage in coastal lowlands.', note: 'Margin label: "Introduces drainage problem"' },
+          { id: '2', label: 'Conventional Method', text: 'Paragraph B: The conventional solution involved constructing concrete culverts to divert stormwater directly into estuaries.', note: 'Margin label: "Describes old method"' },
+          { id: '3', label: 'Ecological Limitation', text: 'Paragraph C: However, these rigid culverts prevented natural sediment filtration and destroyed estuarine oyster habitats.', note: 'Margin label: "Explains ecological limitation"' },
+          { id: '4', label: 'New Trial', text: 'Paragraph D: In 2018, engineers evaluated permeable pavement swales across four trial districts.', note: 'Margin label: "Evaluates new trial"' },
         ],
       },
       {
@@ -165,11 +162,6 @@ export const readingUnits = [
           'I keep margin notes strictly concise to preserve examination time.',
           'I use paragraph functional maps to accelerate heading and information matching.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-map-practice',
-        label: 'Practice writing 3-word functional labels for the first three paragraphs of a practice passage.',
       },
     ],
   },
@@ -218,9 +210,9 @@ export const readingUnits = [
         title: 'Diagnostic Check: Claim Anatomy Verification',
         prompt: 'Passage: Trials showed timber multi-storey buildings withstood sub-zero temperatures. Statement: Timber buildings are the most reliable method for cold climates. What is the status?',
         options: [
-          { text: 'True', correct: false, rationale: 'The passage only confirms that timber buildings could withstand sub-zero temperatures, not that they are the most reliable method.' },
-          { text: 'False', correct: false, rationale: 'The passage does not state that timber buildings are unreliable or that another method is superior.' },
-          { text: 'Not Given', correct: true, rationale: 'The passage reports that timber withstood cold temperatures in trial conditions. It makes no comparative claim regarding whether it is the "most reliable" method.' },
+          { label: 'True', correct: false, rationale: 'The passage only confirms that timber buildings could withstand sub-zero temperatures, not that they are the most reliable method.' },
+          { label: 'False', correct: false, rationale: 'The passage does not state that timber buildings are unreliable or that another method is superior.' },
+          { label: 'Not Given', correct: true, rationale: 'The passage reports that timber withstood cold temperatures in trial conditions. It makes no comparative claim regarding whether it is the "most reliable" method.' },
         ],
       },
       {
@@ -233,16 +225,11 @@ export const readingUnits = [
         type: 'selfCheck',
         title: 'Claim Anatomy Checklist',
         items: [
-          'I check the subject scope (all vs some, one group vs entire population).',
-          'I check the strength modal (must vs may, always vs often).',
+          'I check the subject scope (all versus some, one group versus entire population).',
+          'I check the strength modal (must versus may, always versus often).',
           'I check whether causality is explicitly stated or merely assumed from sequence.',
           'I verify that comparative superlatives (most, best) have direct textual support.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-claim-anatomy',
-        label: 'Deconstruct a recent difficult True/False statement into its six anatomical parts.',
       },
     ],
   },
@@ -288,11 +275,12 @@ export const readingUnits = [
         type: 'annotatedSpecimen',
         kind: 'passage',
         title: 'The 1998 Museum Worked Specimen',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: 'Passage: "The museum opened in 1998. It now receives about 50,000 visitors each year."', note: 'Source evidence establishes two facts: opening year (1998) and current annual attendance (about 50,000).' },
-          { text: 'Statement 1: "The museum opened before 2000." → TRUE', note: 'Supported: 1998 is chronologically before 2000.' },
-          { text: 'Statement 2: "The museum opened in 2001." → FALSE', note: 'Contradicted: the text directly asserts opening in 1998, which is incompatible with 2001.' },
-          { text: 'Statement 3: "The museum received 50,000 visitors in its first year." → NOT GIVEN', note: 'Insufficient: the text reports 50,000 visitors now, but provides zero information about attendance in 1998.' },
+          { id: '1', label: 'Passage Evidence', text: 'Passage: "The museum opened in 1998. It now receives about 50,000 visitors each year."', note: 'Source evidence establishes two facts: opening year (1998) and current annual attendance (about 50,000).' },
+          { id: '2', label: 'Supported (True)', text: 'Statement 1: "The museum opened before 2000." → TRUE', note: 'Supported: 1998 is chronologically before 2000.' },
+          { id: '3', label: 'Contradicted (False)', text: 'Statement 2: "The museum opened in 2001." → FALSE', note: 'Contradicted: the text directly asserts opening in 1998, which is incompatible with 2001.' },
+          { id: '4', label: 'Insufficient (Not Given)', text: 'Statement 3: "The museum received 50,000 visitors in its first year." → NOT GIVEN', note: 'Insufficient: the text reports 50,000 visitors now, but provides zero information about attendance in 1998.' },
         ],
       },
       {
@@ -310,11 +298,6 @@ export const readingUnits = [
           'I evaluate comparisons by checking whether the comparison itself is proven.',
           'I write TRUE, FALSE, or NOT GIVEN without substituting YES, NO, or NOT GIVEN.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-tfng-drills',
-        label: 'Audit your last TFNG practice test and identify whether any Not Given error was mislabeled as False.',
       },
     ],
   },
@@ -352,10 +335,11 @@ export const readingUnits = [
         type: 'annotatedSpecimen',
         kind: 'passage',
         title: 'Tracking Three Levels of Authorial Attribution',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: '"Some critics argue that electric vehicle subsidies unfairly benefit wealthier households."', note: 'Attribution Level 1: Reports a cited third-party view ("Some critics argue"). Does not reflect the author stance.' },
-          { text: '"However, this argument is unconvincing when long-term public health dividends are calculated."', note: 'Attribution Level 2: Author explicitly evaluates and rejects the cited view ("unconvincing").' },
-          { text: '"The empirical evidence suggests that clean transport infrastructure benefits all urban residents."', note: 'Attribution Level 3: Author states a qualified personal conclusion ("The empirical evidence suggests").' },
+          { id: '1', label: 'Cited Third-Party View', text: '"Some critics argue that electric vehicle subsidies unfairly benefit wealthier households."', note: 'Attribution Level 1: Reports a cited third-party view ("Some critics argue"). Does not reflect the author stance.' },
+          { id: '2', label: 'Author Rejection', text: '"However, this argument is unconvincing when long-term public health dividends are calculated."', note: 'Attribution Level 2: Author explicitly evaluates and rejects the cited view ("unconvincing").' },
+          { id: '3', label: 'Author Conclusion', text: '"The empirical evidence suggests that clean transport infrastructure benefits all urban residents."', note: 'Attribution Level 3: Author states a qualified personal conclusion ("The empirical evidence suggests").' },
         ],
       },
       {
@@ -385,11 +369,6 @@ export const readingUnits = [
           'I write YES, NO, or NOT GIVEN as requested by task instructions.',
           'I confirm that the writer actually expresses a stance before ruling out Not Given.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-ynng-attribution',
-        label: 'Extract an example of third-party quotation vs author evaluation from a recent reading passage.',
       },
     ],
   },
@@ -445,7 +424,7 @@ export const readingUnits = [
       },
       {
         type: 'contrastPair',
-        title: 'Selecting a Heading: Example vs Main Job',
+        title: 'Selecting a Heading: Example versus Main Job',
         weak: {
           text: 'Selecting "The failure of the 1994 Thames flood barriers" because the paragraph discusses the 1994 Thames barrier event in sentences 3 and 4.',
           whyItFails: 'Mistakes an illustrative historical example for the paragraph central thesis.',
@@ -464,11 +443,6 @@ export const readingUnits = [
           'I check whether a heading describes a single detail rather than the whole paragraph.',
           'I verify that I do not reuse any Roman numeral heading across paragraphs.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-headings-review',
-        label: 'Identify a heading question where an example distractor was nearly chosen and record why it failed.',
       },
     ],
   },
@@ -536,11 +510,6 @@ export const readingUnits = [
           'I check the prompt for the "NB You may use any letter more than once" instruction.',
           'I consider completing detail matching after mapping the passage through other tasks.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-matching-info',
-        label: 'Note the order in which you tackled question families on your last reading passage.',
       },
     ],
   },
@@ -614,11 +583,6 @@ export const readingUnits = [
           'I read back the completed sentence to confirm logic, causality, and syntax.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-features-endings',
-        label: 'Review your last feature matching drill and note whether any multi-appearance name caused confusion.',
-      },
     ],
   },
 
@@ -667,7 +631,7 @@ export const readingUnits = [
         type: 'callout',
         variant: 'requirement',
         title: 'Exact Words and Hyphen Rules',
-        body: 'When instructions specify words from the passage, copy the exact form without modification. Official guidelines treat hyphenated words (e.g. "long-term") as single words. Do not insert artificial hyphens to bypass word limits.',
+        body: 'When instructions specify words from the passage, copy the exact form without modification. Official guidelines treat hyphenated words (such as "long-term") as single words. Do not insert artificial hyphens to bypass word limits.',
       },
       {
         type: 'contrastPair',
@@ -690,11 +654,6 @@ export const readingUnits = [
           'I check whether articles or prepositions are already printed outside the gap.',
           'I read back the completed sentence to confirm grammatical agreement.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-completion-mode',
-        label: 'Record a summary completion item and confirm whether it required exact text or an option bank.',
       },
     ],
   },
@@ -745,10 +704,11 @@ export const readingUnits = [
         type: 'annotatedSpecimen',
         kind: 'prompt',
         title: 'Diagram Pointer Line Precision Specimen',
+        provenance: 'Original instructional specimen authored for Artico IELTS Study.',
         segments: [
-          { text: 'Diagram: Cross-section of a wave-power generator.', note: 'Whole apparatus: wave-power generator.' },
-          { text: 'Pointer arrow 1 points directly to the rotating curved blades inside the chamber.', note: 'Correct label: "turbine" or "blades". Trap: writing "generator" labels the whole apparatus rather than the component.' },
-          { text: 'Pointer arrow 2 points to the oscillating water column below the chamber.', note: 'Correct label: "water column". Pre-printed label below confirms fluid dynamics terminology.' },
+          { id: '1', label: 'Apparatus Context', text: 'Diagram: Cross-section of a wave-power generator.', note: 'Whole apparatus: wave-power generator.' },
+          { id: '2', label: 'Component Pointer 1', text: 'Pointer arrow 1 points directly to the rotating curved blades inside the chamber.', note: 'Correct label: "turbine" or "blades". Trap: writing "generator" labels the whole apparatus rather than the component.' },
+          { id: '3', label: 'Component Pointer 2', text: 'Pointer arrow 2 points to the oscillating water column below the chamber.', note: 'Correct label: "water column". Pre-printed label below confirms fluid dynamics terminology.' },
         ],
       },
       {
@@ -766,11 +726,6 @@ export const readingUnits = [
           'I verify that diagram labels name the specific component indicated by arrow lines.',
           'I copy exact words from the passage without adding external technical jargon.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-visual-completion',
-        label: 'Audit a diagram completion task and verify whether pointer lines were checked to their exact endpoints.',
       },
     ],
   },
@@ -845,11 +800,6 @@ export const readingUnits = [
           'I disqualify distractors that state true facts but fail to answer the stem.',
           'I verify whether multiple-choice items require choosing one, two, or three letters.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-mc-distractors',
-        label: 'Review your last multiple-choice drill and identify an option that was disqualified as "true statement, wrong answer".',
       },
     ],
   },
@@ -926,11 +876,6 @@ export const readingUnits = [
           'I use surrounding context, examples, and contrast markers to infer essential vocabulary.',
         ],
       },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-vocabulary-inference',
-        label: 'Record an unfamiliar word from your last reading test and document the context clue that revealed its meaning.',
-      },
     ],
   },
 
@@ -982,7 +927,7 @@ export const readingUnits = [
         headers: ['Diagnostic Evidence from Attempt', 'Underlying Operational Weakness', 'Targeted Remedial Action'],
         rows: [
           ['Sentence could not be understood even untimed', 'Grammatical complexity or lexical deficiency', 'Study sentence clause relationships, reference markers, and core vocabulary.'],
-          ['Sentence understood, but wrong label selected', 'Flawed question-type decision logic', 'Review worked specimens and decision trees for that specific family (e.g. TFNG).'],
+          ['Sentence understood, but wrong label selected', 'Flawed question-type decision logic', 'Review worked specimens and decision trees for that specific family (such as True/False/Not Given).'],
           ['Correct fact identified, but exceeded word limit', 'Inattention to explicit task instructions', 'Drill strict adherence to word limits and strip conversational wrapper words.'],
           ['Searched repeatedly in the wrong paragraphs', 'Ineffective passage mapping or weak anchor selection', 'Practice 3-word functional paragraph mapping and scanning for invariant nouns.'],
           ['Found specific detail, but missed paragraph point', 'Confusing illustrative detail with central gist', 'Practice summarizing paragraph arguments before consulting heading options.'],
@@ -1047,6 +992,7 @@ export const readingUnits = [
         type: 'trackCompare',
         title: 'Academic Reading versus General Training Reading Text Profiles',
         academic: {
+          label: 'IELTS Academic Reading',
           points: [
             'Contains 3 extended, dense academic passages (700–900 words each).',
             'Texts sourced from academic journals, research reports, books, and scientific magazines.',
@@ -1055,17 +1001,19 @@ export const readingUnits = [
           ],
         },
         generalTraining: {
+          label: 'IELTS General Training Reading',
           points: [
             'Section 1 contains two or three short factual texts related to everyday social survival (notices, advertisements, timetables).',
             'Section 2 contains two workplace texts (staff handbooks, safety protocols, job descriptions, employee contracts).',
             'Section 3 contains one extended, more complex text on a general-interest topic (history, nature, biography).',
             'Raw score requirement: Band 6 requires approximately 30/40; Band 7 requires approximately 35/40.',
           ],
+          linkUnit: 'w-gt-purpose-reader-register',
         },
       },
       {
         type: 'comparisonTable',
-        caption: 'Official Average Raw Score Comparison: Academic vs General Training',
+        caption: 'Official Average Raw Score Comparison: Academic versus General Training',
         headers: ['Band Target', 'Academic Reading Raw Score (out of 40)', 'General Training Reading Raw Score (out of 40)'],
         rows: [
           ['Band 5.0', '15 correct answers', '23 correct answers'],
@@ -1079,7 +1027,8 @@ export const readingUnits = [
         variant: 'requirement',
         title: 'Stricter Margin for Error in General Training',
         body: 'In General Training Reading, you can afford only 5 mistakes across all 40 questions to secure Band 7.0 (35/40). In Academic Reading, you can afford 10 mistakes (30/40). Precision on everyday notices and workplace texts in Sections 1 and 2 is non-negotiable.',
-        link: { url: 'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading', text: 'Official IELTS General Training Reading Format' },
+        sourceUrl: 'https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading',
+        sourceLabel: 'Official IELTS General Training Reading Format',
       },
       {
         type: 'callout',
@@ -1096,11 +1045,6 @@ export const readingUnits = [
           'I apply the same 5-operation cycle and question-type decision procedures to GT texts.',
           'I treat Section 1 and 2 notices with high accuracy to protect my margin for Section 3.',
         ],
-      },
-      {
-        type: 'workbookPrompt',
-        noteId: 'study-r-gt-scoring',
-        label: 'If preparing for General Training, calculate your error margin for your target band.',
       },
     ],
   },

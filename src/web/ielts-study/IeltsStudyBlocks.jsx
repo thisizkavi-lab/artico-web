@@ -329,16 +329,17 @@ export function AnnotatedSpecimenBlock({ block }) {
       <div className="ies-specimen-layout">
         {/* Left Column: Highlighted Specimen Text */}
         <div className="ies-specimen-text">
-          {block.segments.map((seg) => {
-            const isActive = activeSegmentId === seg.id
+          {block.segments.map((seg, idx) => {
+            const segId = seg.id || String(idx + 1)
+            const isActive = activeSegmentId === segId
             return (
               <span
-                key={seg.id}
+                key={segId}
                 className={`ies-specimen-span ${isActive ? 'ies-active' : ''}`}
-                onMouseEnter={() => setActiveSegmentId(seg.id)}
-                onClick={() => setActiveSegmentId(isActive ? null : seg.id)}
+                onMouseEnter={() => setActiveSegmentId(segId)}
+                onClick={() => setActiveSegmentId(isActive ? null : segId)}
               >
-                <sup className="ies-span-num">[{seg.id}]</sup>
+                <sup className="ies-span-num">[{segId}]</sup>
                 {seg.text}{' '}
               </span>
             )
@@ -347,17 +348,19 @@ export function AnnotatedSpecimenBlock({ block }) {
 
         {/* Right Column: Margin Annotations */}
         <div className="ies-specimen-margin">
-          {block.segments.map((seg) => {
-            const isActive = activeSegmentId === seg.id
+          {block.segments.map((seg, idx) => {
+            const segId = seg.id || String(idx + 1)
+            const isActive = activeSegmentId === segId
+            const labelText = seg.label ? `[${segId}] ${seg.label}` : `[${segId}]`
             return (
               <div
-                key={seg.id}
+                key={segId}
                 className={`ies-margin-card ${isActive ? 'ies-active' : ''}`}
-                onMouseEnter={() => setActiveSegmentId(seg.id)}
-                onClick={() => setActiveSegmentId(isActive ? null : seg.id)}
+                onMouseEnter={() => setActiveSegmentId(segId)}
+                onClick={() => setActiveSegmentId(isActive ? null : segId)}
               >
                 <div className="ies-margin-head">
-                  <span className="ies-margin-tag">[{seg.id}] {seg.label}</span>
+                  <span className="ies-margin-tag">{labelText}</span>
                 </div>
                 <p className="ies-margin-note">
                   <StudyRichText text={seg.note} />

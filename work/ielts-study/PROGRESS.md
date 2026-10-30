@@ -15,7 +15,7 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] **Batch 3 — Module 1B: Everything about IELTS · Parts 1.3 & 1.4 (`9` units · `§10.1–10.9`, `§11.1–11.14`, `§12.1–12.3`, `§A.1–A.4`)**
 - [x] **Batch 4 — Module 2: Listening (`11` units · `§3.1–3.19`)**
 - [x] **Batch 5 — Module 3: Reading (`14` units · `§4.1–4.22` + `[GT]` Reading Comparison)**
-- [ ] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
+- [x] **Batch 6 — Module 4A: Writing Foundations & Academic Task 1 (`16` units · `§5.1–5.10`, `§6.1–6.21`)**
 - [ ] **Batch 7 — Module 4B: Writing Task 2 Essays & Separated `[GT]` Task 1 Letters (`13` units · `§8.1–8.22`, `§7.1–7.9`)**
 - [ ] **Batch 8 — Module 5: Speaking (`10` units · `§9.1–9.24`) + `ieltsStudy.test.js` + Full `npm test && npm run build`**
 
@@ -89,22 +89,22 @@ Update checkboxes immediately after verifying each batch with `node scripts/chec
 - [x] `r-gt-reading-comparison` (`[GT]`, `4.1`, `1.6`)
 
 ### Module 4 · `writing` (`29` units)
-- [ ] `w-purposes-and-criteria` (`5.1`, `5.2`)
-- [ ] `w-coherence-vs-cohesion` (`5.3`)
-- [ ] `w-words-and-grammar-for-meaning` (`5.4`, `5.5`)
-- [ ] `w-process-timing-length-review` (`5.6`, `5.7`, `5.8`, `5.9`, `5.10`)
-- [ ] `w-a1-reporting-principle-and-jobs` (`6.1`, `6.2`)
-- [ ] `w-a1-decode-and-main-features` (`6.3`, `6.4`)
-- [ ] `w-a1-plan-and-introduction` (`6.5`, `6.6`)
-- [ ] `w-a1-accurate-overview` (`6.7`)
-- [ ] `w-a1-grouping-and-chunking` (`6.8`, `6.9`)
-- [ ] `w-a1-numbers-and-percentages` (`6.10`, `6.11`)
-- [ ] `w-a1-trend-and-comparison-grammar` (`6.12`, `6.13`)
-- [ ] `w-a1-line-bar-table` (`6.14`, `6.15`)
-- [ ] `w-a1-pie-and-multiple-visuals` (`6.16`, `6.17`)
-- [ ] `w-a1-maps-and-plans` (`6.18`)
-- [ ] `w-a1-process-diagrams` (`6.19`)
-- [ ] `w-a1-review-and-subskills` (`6.20`, `6.21`)
+- [x] `w-purposes-and-criteria` (`5.1`, `5.2`)
+- [x] `w-coherence-vs-cohesion` (`5.3`)
+- [x] `w-words-and-grammar-for-meaning` (`5.4`, `5.5`)
+- [x] `w-process-timing-length-review` (`5.6`, `5.7`, `5.8`, `5.9`, `5.10`)
+- [x] `w-a1-reporting-principle-and-jobs` (`6.1`, `6.2`)
+- [x] `w-a1-decode-and-main-features` (`6.3`, `6.4`)
+- [x] `w-a1-plan-and-introduction` (`6.5`, `6.6`)
+- [x] `w-a1-accurate-overview` (`6.7`)
+- [x] `w-a1-grouping-and-chunking` (`6.8`, `6.9`)
+- [x] `w-a1-numbers-and-percentages` (`6.10`, `6.11`)
+- [x] `w-a1-trend-and-comparison-grammar` (`6.12`, `6.13`)
+- [x] `w-a1-line-bar-table` (`6.14`, `6.15`)
+- [x] `w-a1-pie-and-multiple-visuals` (`6.16`, `6.17`)
+- [x] `w-a1-maps-and-plans` (`6.18`)
+- [x] `w-a1-process-diagrams` (`6.19`)
+- [x] `w-a1-review-and-subskills` (`6.20`, `6.21`)
 - [ ] `w-t2-prompt-layers-and-plan` (`8.1`, `8.2`)
 - [ ] `w-t2-opinion-and-discussion` (`8.3`, `8.4`)
 - [ ] `w-t2-advantages-and-evaluations` (`8.5`)

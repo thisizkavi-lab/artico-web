@@ -194,7 +194,9 @@ export default function IeltsCourse({ route }) {
     <nav className="ie-breadcrumb" aria-label="IELTS breadcrumb"><a href="#/application/tests">English Tests</a><span aria-hidden="true">/</span><a href={`#${ieltsPath('home', route.view)}`}>IELTS Academic</a>{area ? <><span aria-hidden="true">/</span><span>{area.title}</span></> : null}</nav>
     <div className="ie-modebar"><Segments items={[{ value: 'study', label: 'Study' }, { value: 'practice', label: 'Practice' }]} label="IELTS Study or Practice" active={route.view} disabled={isRunning} onChange={(mode) => {
       if (isRunning) return
-      go(ieltsPath(route.area, mode, route.task))
+      const targetArea = mode === 'study' && ['mocks', 'simulation'].includes(route.area) ? 'home' : route.area
+      const targetTask = mode === 'practice' || route.area === 'guided' ? route.task : undefined
+      go(ieltsPath(targetArea, mode, targetTask))
     }}/>{isRunning ? <span>Finish or leave this attempt before changing modes.</span> : <a href={`#${ieltsPath('home', route.view)}`}>All IELTS sections</a>}</div>
     {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.view === 'study' && ['home', 'overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area) ? <IeltsStudyView route={route} store={store} /> : route.area === 'home' ? <IeltsHome route={route} store={store}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store}/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
   </div>

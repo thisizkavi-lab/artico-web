@@ -22,7 +22,7 @@
 **Dev:** What are you into?  
 **Riley:** **I'm into photography.** I'd rather go for a walk and take pictures.
 
-**メモ:** **Not really** は、やわらかく「そうでもない」と伝える表現です。**I can't stand it** は、ずっと強い嫌悪を表します。自分の本当の気持ちに合う強さの表現を選びましょう。
+**メモ:** **Not really** は、やわらかく「そうでもない」と伝える表現です。**I can't stand it** は、ずっと強い嫌悪を表します。**I'm good** は場面によって意味が変わります。**How are you?** の後なら「元気です」、何かを勧められた後の **No, I'm good, thanks** なら丁寧に断る表現です。
 
 <!-- source-heading: Study: Ask for and give an opinion -->
 ## 学習: 意見を尋ね、伝える
@@ -59,8 +59,8 @@
 | **Either is fine.** | Tea or coffee? **Either is fine.** | どちらの選択肢でもよいと伝えます。 |
 | **Both work for me.** | Tuesday or Wednesday? **Both work for me.** | どちらの日時でも都合がよいと伝えます。 |
 | **I don't have a preference.** | Which seat would you like? **I don't have a preference.** | 特に選びたいものはないと伝えます。 |
-| **I don't mind.** | Inside or outside? **I don't mind.** | どちらでも受け入れられると伝えます。 |
-| **I don't care.** | Where should we sit? **I don't care.** | 本当にどちらでも気にならないと伝えます。ぶっきらぼうに聞こえることがあります。 |
+| **I don't mind.** | Inside or outside? **I don't mind.** | どちらの選択肢でも問題ないと伝えます。くだけた自然な表現です。 |
+| **I don't care.** | Where should we sit? **I don't care.** | 選択が自分にとって重要ではないと伝えます。声の調子によっては、ぶっきらぼうに聞こえることがあります。 |
 
 **Dev:** Would you rather eat here or take the food home?  
 **Riley:** **I'd rather take it home.** It's quieter there.  

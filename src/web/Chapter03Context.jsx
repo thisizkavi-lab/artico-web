@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLanguage } from './Language'
 import Glyph from './Glyph'
+import { speakKokoroSpeech } from './kokoroSpeech'
 import './chapter03-context.css'
 
 // Chapter 03 teaches discourse functions through the preceding turn.
@@ -151,18 +152,8 @@ const portrait = (speaker) => `${import.meta.env.BASE_URL}assets/course/portrait
 function Speak({ lines, audioProps, kind = 'exchange' }) {
   const { language } = useLanguage()
   function play() {
-    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
     audioProps?.audio?.stop?.()
-    window.speechSynthesis.cancel()
-    const voice = window.speechSynthesis.getVoices().find(v => v.lang.toLowerCase() === 'en-us')
-      || window.speechSynthesis.getVoices().find(v => v.lang.toLowerCase().startsWith('en'))
-    for (const line of lines) {
-      const utterance = new window.SpeechSynthesisUtterance(line)
-      utterance.lang = 'en-US'
-      utterance.rate = kind === 'word' ? 0.82 : 0.89
-      if (voice) utterance.voice = voice
-      window.speechSynthesis.speak(utterance)
-    }
+    void speakKokoroSpeech(lines.join(' '), { rate: kind === 'word' ? 0.82 : 0.89 })
   }
   return <button type="button" className={kind === 'word' ? 'ar-c03-sound' : 'ar-c03-listen'}
     onClick={play}

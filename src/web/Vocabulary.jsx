@@ -1,8 +1,11 @@
 import { useLanguage } from './Language'
+import { lazy, Suspense } from 'react'
 import topics from './vocabularyTopics.json'
-import VocabularyCountriesLesson from './VocabularyCountriesLesson'
-import VocabularyNumbersLesson from './VocabularyNumbersLesson'
-import VocabularyTopicLesson from './VocabularyTopicLesson'
+// Chapter 98's directory should not load hundreds of vocabulary scenes,
+// country flags or number illustrations before a topic is selected.
+const VocabularyCountriesLesson = lazy(() => import('./VocabularyCountriesLesson'))
+const VocabularyNumbersLesson = lazy(() => import('./VocabularyNumbersLesson'))
+const VocabularyTopicLesson = lazy(() => import('./VocabularyTopicLesson'))
 import { CurriculumIcon } from './CurriculumIcon'
 import './vocabulary.css'
 
@@ -90,11 +93,13 @@ function VocabularyLesson({ topic, japanese }) {
         <p className="vl-subtitle" lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</p>
       </header>
 
-      {topic.sourceLesson === 1
-        ? <VocabularyCountriesLesson japanese={japanese} />
-        : topic.sourceLesson === 2
-          ? <VocabularyNumbersLesson japanese={japanese} />
-          : <VocabularyTopicLesson key={topic.sourceLesson} topic={topic} japanese={japanese} />}
+      <Suspense fallback={<p className="vlt-empty" role="status">{japanese ? 'レッスンを読み込んでいます…' : 'Loading vocabulary…'}</p>}>
+        {topic.sourceLesson === 1
+          ? <VocabularyCountriesLesson japanese={japanese} />
+          : topic.sourceLesson === 2
+            ? <VocabularyNumbersLesson japanese={japanese} />
+            : <VocabularyTopicLesson key={topic.sourceLesson} topic={topic} japanese={japanese} />}
+      </Suspense>
 
 
       <nav className="vl-lesson-navigation" aria-label={japanese ? '語彙レッスンの移動' : 'Vocabulary lesson navigation'}>

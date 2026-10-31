@@ -44,6 +44,30 @@ with zipfile.ZipFile(art_archive) as z:
         assert len(image_bytes) > 4000, name
 print("Installed and validated", len(meal_scenes), "original Artico meal illustrations")
 
+# Second approved batch: ten original Artico action/object scenes from
+# 'leave work' through 'buy groceries'. Extract before normal card validation.
+work_archive = target / "generated-work-errands-hd.zip"
+work_expected_hash = "812a448dfa427a573b22b97cb213f0527f2aaaa92031028312dfe04637270d39"
+if not work_archive.is_file() or hashlib.sha256(work_archive.read_bytes()).hexdigest() != work_expected_hash:
+    raise RuntimeError("Generated Work/School/Home illustrations archive missing or corrupt")
+work_terms = ["leave work","work from home","overtime","school","do homework","homework","have a break","leave the house","go home","buy groceries"]
+work_scenes = {catalog["entries"][term]["file"] + ".webp" for term in work_terms}
+assert len(work_scenes) == 10
+with zipfile.ZipFile(work_archive) as z:
+    bundle_manifest = json.loads(z.read("manifest.json"))
+    assert bundle_manifest["terms"] == work_terms
+    assert set(z.namelist()) == work_scenes | {"manifest.json"}, "Unexpected names in Work/School/Home archive"
+    for name in sorted(work_scenes):
+        image_bytes = z.read(name)
+        with Image.open(io.BytesIO(image_bytes)) as scene:
+            scene.verify()
+        with Image.open(io.BytesIO(image_bytes)) as scene:
+            assert scene.format == "WEBP" and scene.size == (608, 384), (name,scene.size,scene.format)
+        assert len(image_bytes)>4000,(name,len(image_bytes))
+        (target / name).write_bytes(image_bytes)
+print("Installed and validated", len(work_scenes), "original Artico Work/School/Home illustrations")
+
+
 # Batch 02: tea/coffee + nine Work/School/Commuting scenes. All are
 # 608x384, full landscape illustrations in the same art direction.
 work_archive = target / "generated-work-02.zip"

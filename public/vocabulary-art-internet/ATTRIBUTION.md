@@ -12,3 +12,8 @@ Another ten horizontal (608 × 384) original illustrations in the same character
 
 The generated WebP assets are stored in `public/vocabulary-curated-04/generated-work-02.zip` and extracted during the GitHub Pages build, with explicit file-name, size, dimension, and SHA-256 checks. Other vocabulary cards and the original English/Japanese lesson text are unchanged. Only the older, still-photographic cards continue to require Pexels attribution.
 
+
+
+## Additional original illustrated vocabulary scenes
+
+Ten original generated scenes have been added for **leave work**, **work from home**, **overtime**, **school**, **do homework**, **homework**, **have a break**, **leave the house**, **go home**, and **buy groceries**. The generated art was exported from a single coordinated cartoon sheet and centered in 608 × 384 landscape canvases. The reproducible binary asset bundle is `public/vocabulary-curated-04/generated-work-errands-hd.zip`, verified by SHA-256 in the site build. These scenes are original artwork; Pexels attribution is not applied to them. Existing vocabulary text is unchanged.

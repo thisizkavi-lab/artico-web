@@ -101,7 +101,7 @@ test('the introduction pilot translates the existing layout without replacing re
   assert(contextualExamples.every((example) => japanese.test(example.label) && japanese.test(example.hint)))
   assert.equal(reply.promptId, 'ch02-p30')
   assert.deepEqual(reply.choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
-  assert.deepEqual(reply.choices.map((choice) => choice.label), ['短い返事', '丁寧な返事'])
+  assert.deepEqual(reply.choices.map((choice) => choice.label), ['短い返事', '少し長い返事'])
   assert.equal(ja.phrases.find((item) => item.id === reply.promptId).ja, 'はじめまして。')
   assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
 })

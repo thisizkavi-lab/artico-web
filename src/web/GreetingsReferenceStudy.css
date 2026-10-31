@@ -348,3 +348,141 @@
   .ar-page .ar-note strong { font-size: 11.5px; }
   .ar-page .ar-context { font-size: 11.5px; }
 }
+
+/* Chapter 01 bilingual annotations and embedded supporting notes. */
+.ar-page .ar-section-heading .ar-section-ja {
+  display: block;
+  margin: 3px 0 0;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 450;
+  color: #718095;
+}
+.ar-page .ar-choice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  gap: 3px;
+}
+.ar-page .ar-choice-content > span {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+.ar-page .ar-choice-content > small {
+  display: block;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 11px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #65758b;
+  white-space: normal;
+}
+.ar-page .ar-speech.ar-selected .ar-choice-content > small { color: #536b88; }
+.ar-page .ar-flow-choice .ar-choice-content > small { color: #5f718b; }
+.ar-page .ar-shelf-heading h3 small,
+.ar-page .ar-conversation-heading small {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #8290a0;
+}
+.ar-page .ar-shelf-note {
+  width: 100%;
+  margin-top: 3px;
+  padding: 10px 12px;
+}
+.ar-page .ar-conversation-heading {
+  display: block;
+  margin-bottom: 12px;
+  padding-left: 11px;
+  border-left: 2px solid #cdd8e5;
+}
+.ar-page .ar-conversation-heading .ar-overline {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: none;
+  color: #53647a;
+  letter-spacing: .012em;
+}
+.ar-page .ar-conversation .ar-conversation-content { align-items: stretch; }
+.ar-page .ar-conversation .ar-dialogue { gap: 13px; }
+.ar-page .ar-conversation .ar-turns { padding-top: 6px; }
+.ar-page .ar-line-body .ar-translation {
+  display: block;
+  margin-top: 5px;
+  padding-left: 3px;
+  color: #66758b;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.ar-page .ar-conversation-note { margin-top: auto; }
+.ar-page .ar-flow-question-stack {
+  flex: 1;
+  min-width: 0;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ar-page .ar-flow-question-side .ar-flow-group { max-width: none; width: 100%; }
+.ar-page .ar-question-note { max-width: none; }
+.ar-page .ar-flow-reply-side {
+  grid-template-columns: minmax(0, 1fr) minmax(160px, .46fr);
+  align-items: stretch;
+  gap: 16px;
+}
+.ar-page .ar-flow-response {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  justify-self: stretch;
+}
+.ar-page .ar-honest {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  font-size: 12px;
+}
+.ar-page .ar-honest strong { margin-bottom: 4px; }
+.ar-page .ar-flow-choice { align-items: center; }
+.ar-page .ar-flow-choice .ar-choice-content { gap: 2px; }
+.ar-page .ar-flow-group .ar-flow-label { color: #5b6f87; }
+.ar-page .ar-flow-context { margin-top: 9px; }
+@media(max-width:1000px){
+  .ar-page .ar-flow-reply-side { grid-template-columns: minmax(0, 1fr); }
+  .ar-page .ar-flow-response { grid-column: 1; grid-row: 1; }
+  .ar-page .ar-honest { grid-column: 1; grid-row: 2; }
+}
+@media(max-width:620px){
+  .ar-page .ar-shelf-heading h3 small,
+  .ar-page .ar-conversation-heading small {
+    display: block;
+    margin: 3px 0 0;
+    font-size: 10.5px;
+  }
+  .ar-page .ar-section-heading .ar-section-ja { font-size: 11px; }
+  .ar-page .ar-choice-content > small { font-size: 10.5px; }
+  .ar-page .ar-conversation-heading { padding-left: 9px; margin-bottom: 9px; }
+  .ar-page .ar-conversation-heading .ar-overline { font-size: 11px; }
+  .ar-page .ar-line-body .ar-translation { font-size: 10.5px; }
+  .ar-page .ar-flow-question-stack { gap: 9px; }
+  .ar-page .ar-flow-reply-side { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .ar-page .ar-flow-response { grid-column: 1; grid-row: 1; }
+  .ar-page .ar-honest { grid-column: 1; grid-row: 2; }
+  .ar-page .ar-question-note,
+  .ar-page .ar-shelf-note { padding: 9px 11px; }
+}

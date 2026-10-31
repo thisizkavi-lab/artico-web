@@ -24,6 +24,7 @@ import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
 import { conversationSide, groupConversationScenes } from './conversationLayout'
+import { chapterPhraseIllustrations } from './chapterPhraseIllustrations'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -377,7 +378,9 @@ function Study({ audioProps, focusedId }) {
               ? <ChapterPhraseStudySection section={section} audioProps={audioProps} focusedId={focusedId} />
               : lessonId === '05'
                 ? <Chapter05PhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
-                : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
+                : ['06', '07', '08', '09', '10'].includes(lessonId)
+                  ? <ChapterIllustratedPhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
+                  : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -639,6 +642,116 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
           <SourceContent block={note.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
         </aside>
       ))}
+    </div>
+  )
+}
+
+function ChapterPhraseConversation({ block, audioProps, conversationIndex }) {
+  const { byId } = useLesson()
+  const { language } = useLanguage()
+  const speakers = [...new Set(block.turns.map((turn) => turn.speaker))]
+  return (
+    <section className="ar-phrase-example">
+      <h3>{language === 'ja'
+        ? (conversationIndex === 0 ? '会話例' : 'もう一つの会話例')
+        : (conversationIndex === 0 ? 'Example conversation' : 'Another example')}</h3>
+      <div className="ar-phrase-example-lines">
+        {block.turns.map((turn, index) => {
+          const item = byId[turn.id]
+          const english = turn.en ?? item?.en
+          if (!english) return null
+          const outgoing = conversationSide(speakers, turn.speaker, index) === 'outgoing'
+          return (
+            <div className={`ar-phrase-example-row ${outgoing ? 'is-outgoing' : 'is-incoming'}`} key={turn.id}>
+              {turn.portrait && <img className="ar-phrase-example-avatar" src={art(turn.portrait)} alt="" width="30" height="30" />}
+              <div className="ar-phrase-example-bubble">
+                <span className="ar-phrase-example-speaker">{turn.speaker}</span>
+                <p lang="en">{english}</p>
+                {language === 'ja' && (turn.ja ?? item?.ja) && (
+                  <p className="ar-phrase-example-ja" lang="ja">{turn.ja ?? item.ja}</p>
+                )}
+                {item && <PhraseAudio item={item} {...audioProps} />}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
+
+function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
+  const { byId, SourceContent } = useLesson()
+  const { language } = useLanguage()
+  const chapterId = section.id.slice(0, 2)
+  const illustration = chapterPhraseIllustrations[chapterId]?.[sectionIndex]
+  const leadBlock = section.blocks[0]?.type === 'source' && section.blocks[0].source.type === 'explanation'
+    ? section.blocks[0]
+    : null
+  const phraseIds = [...new Set(section.blocks.flatMap((block) =>
+    block.type === 'source' ? (block.source.phraseIds ?? []) : [],
+  ))].filter((id) => byId[id]?.section === section.id && !id.includes('-line'))
+  const fallbackFile = illustration?.fallbackFile ?? section.blocks.find((block) => block.type === 'conversation')?.art
+  let conversationIndex = 0
+  return (
+    <div className="ar-phrase-study ar-illustrated-phrase-study">
+      {leadBlock && (
+        <SourceContent block={leadBlock.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
+      )}
+      {illustration && (
+        <div className="ar-illustrated-phrase-card">
+          <div className="ar-illustrated-illustration">
+            <img
+              src={art(illustration.file)}
+              alt={illustration.alt}
+              width="1774"
+              height="887"
+              loading="lazy"
+              onError={(event) => {
+                if (!fallbackFile || event.currentTarget.dataset.fallback === 'true') return
+                event.currentTarget.dataset.fallback = 'true'
+                event.currentTarget.src = art(fallbackFile)
+              }}
+            />
+          </div>
+          <div
+            className="ar-illustrated-phrase-cloud"
+            aria-label={language === 'ja' ? 'このセクションで学ぶ表現' : 'Phrases in this section'}
+          >
+            {phraseIds.map((id) => {
+              const item = byId[id]
+              return (
+                <div className="ar-illustrated-phrase-chip" key={id}>
+                  <span lang="en">{item.en}</span>
+                  <PhraseAudio item={item} {...audioProps} />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
+      {section.blocks.filter((block) => block !== leadBlock).map((block) => {
+        if (block.type === 'source')
+          return (
+            <SourceContent
+              key={block.id}
+              block={block.source}
+              audioProps={audioProps}
+              focusedId={focusedId}
+              examples={false}
+            />
+          )
+        if (block.type === 'conversation')
+          return (
+            <ChapterPhraseConversation
+              key={block.id}
+              block={block}
+              audioProps={audioProps}
+              conversationIndex={conversationIndex++}
+            />
+          )
+        return null
+      })}
     </div>
   )
 }

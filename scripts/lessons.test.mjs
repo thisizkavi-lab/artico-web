@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFileSync, existsSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import designs from '../src/course/chapter-designs.js'
+import { chapterPhraseIllustrations } from '../src/web/chapterPhraseIllustrations.js'
 import { addPhraseBank } from './phrase-bank.mjs'
 import { parseLesson } from './lesson-parser.mjs'
 import { introductionAliases, introductionById, introductionSections } from '../src/course/introductions.js'
@@ -29,6 +30,24 @@ function blockText(block) {
     return block.items.map((item) => `${item.number ?? ''} ${runs(item.runs)}`).join('\n')
   return runs(block.runs)
 }
+test('Chapters 06–10 have one distinct vector illustration for every Study section', () => {
+  for (const id of ['06', '07', '08', '09', '10']) {
+    const model = readLesson(id)
+    const illustrations = chapterPhraseIllustrations[id]
+    assert.equal(illustrations.length, model.study.length, `Chapter ${id}: one illustration per section`)
+    for (const illustration of illustrations) {
+      const path = new URL(`public/assets/course/${illustration.file}`, root)
+      assert.ok(existsSync(path), illustration.file)
+      const source = readFileSync(path, 'utf8')
+      assert.match(source, /viewBox="0 0 1774 887"/, `${illustration.file}: wide vector canvas`)
+      assert.ok(source.includes('<desc'), `${illustration.file}: accessible scene description`)
+    }
+  }
+  const renderer = readFileSync(new URL('../src/web/LessonExperience.jsx', import.meta.url), 'utf8')
+  assert.ok(renderer.includes('ar-illustrated-phrase-cloud'))
+  assert.ok(renderer.includes("byId[id]?.section === section.id"))
+})
+
 test('all 96 chapters preserve every source block, not only the opening dialogue', () => {
   assert.equal(Object.keys(designs).length, 96)
   for (const chapter of catalog) {

@@ -6,6 +6,8 @@ const MODEL_ID = 'onnx-community/Kokoro-82M-v1.0-ONNX'
 const CACHE_LIMIT = 96
 const DECODED_LIMIT = 24
 const PREFETCH_LIMIT = 3
+// Uncached audio should not make the learner wait for expensive inference.
+const FIRST_SOUND_BUDGET_MS = 1000
 
 let modelPromise = null
 let engine = 'unknown'
@@ -18,40 +20,69 @@ let currentCallbacks = null
 let requestId = 0
 let runningJobs = false
 let jobSequence = 0
+let gpuProbe = null
+let nativeMode = false
+let slowClickCount = 0
+let fastGenerationObserved = false
+let modelReady = false
 const clipCache = new Map()
 const decodedCache = new Map()
 const pendingJobs = new Map()
 const jobQueue = []
 
+function hasDeviceVoice() {
+  return typeof window !== 'undefined' &&
+    Boolean(window.speechSynthesis?.speak && window.SpeechSynthesisUtterance)
+}
+
+function probeGpu() {
+  if (!gpuProbe) {
+    gpuProbe = (async () => {
+      if (typeof navigator === 'undefined' || !navigator.gpu || navigator.connection?.saveData) return false
+      try {
+        const adapter = await navigator.gpu.requestAdapter()
+        return Boolean(adapter && !adapter.isFallbackAdapter)
+      } catch {
+        return false
+      }
+    })()
+  }
+  return gpuProbe
+}
+
 async function loadKokoro() {
   if (!modelPromise) {
     modelPromise = (async () => {
       const { KokoroTTS } = await import(/* @vite-ignore */ MODULE_URL)
-      // GPU inference is much faster for uncached expressions. It requires
-      // a larger one-time model download than CPU q8.
-      if (typeof navigator !== 'undefined' && navigator.gpu && !navigator.connection?.saveData) {
-        let adapter = null
-        try { adapter = await navigator.gpu.requestAdapter() } catch { /* no usable adapter */ }
-        if (adapter) {
-          try {
-            const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
-              device: 'webgpu', dtype: 'fp32',
-            })
-            engine = 'webgpu'
-            return tts
-          } catch (error) {
-            console.warn('Artico: GPU speech unavailable; using CPU.', error)
-          }
+      // A GPU may exist yet be unavailable to WebGPU in this browser.
+      // In that case native speech avoids a costly CPU-model download.
+      if (await probeGpu()) {
+        try {
+          const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
+            device: 'webgpu', dtype: 'fp32',
+          })
+          engine = 'webgpu'
+          modelReady = true
+          return tts
+        } catch (error) {
+          console.warn('Artico: WebGPU speech unavailable.', error)
         }
       }
+      if (hasDeviceVoice()) {
+        nativeMode = true
+        throw new Error('WebGPU unavailable; prefer immediate device speech.')
+      }
+      // Only run CPU inference if the device has no usable system voice.
       const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
         device: 'wasm', dtype: 'q8',
       })
       engine = 'wasm'
+      modelReady = true
       return tts
     })().catch((error) => {
       modelPromise = null // Allow a later tap to retry the download.
       engine = 'unknown'
+      modelReady = false
       throw error
     })
   }
@@ -61,9 +92,12 @@ async function loadKokoro() {
 // Model loading begins on vocabulary/lesson entry, not on the first speaker tap.
 // Call this when a lesson is displayed, not on the landing page.
 export function warmKokoroSpeech() {
-  if (typeof window !== 'undefined' && !navigator.connection?.saveData) {
-    void loadKokoro().catch(() => {})
-  }
+  if (typeof window === 'undefined' || nativeMode || navigator.connection?.saveData) return
+  // No WebGPU: don't slow down the lesson by downloading CPU inference.
+  void probeGpu().then((usable) => {
+    if (usable && !nativeMode) void loadKokoro().catch(() => {})
+    else if (hasDeviceVoice()) nativeMode = true
+  })
 }
 
 function cachePut(cache, limit, key, value) {
@@ -87,7 +121,9 @@ async function processJobs() {
       jobQueue.sort((a, b) => b.priority - a.priority || a.sequence - b.sequence)
       const job = jobQueue.shift()
       try {
+        const start = performance.now()
         const result = await tts.generate(job.text, { voice: job.voice })
+        if (job.text.length <= 100 && performance.now() - start <= FIRST_SOUND_BUDGET_MS) fastGenerationObserved = true
         const blob = result.toBlob()
         cachePut(clipCache, CACHE_LIMIT, job.key, blob)
         job.resolve(blob)
@@ -136,7 +172,7 @@ function getClip(text, voice, priority = 1) {
 // Prepare at most a few likely next phrases. Playback requests have higher
 // priority and can jump in front of queued prefetch jobs.
 export function prefetchKokoroSpeech(texts, { voice = 'af_heart' } = {}) {
-  if (typeof window === 'undefined' || navigator.connection?.saveData) return
+  if (typeof window === 'undefined' || nativeMode || !modelReady || !fastGenerationObserved || navigator.connection?.saveData) return
   const phrases = [...new Set((Array.isArray(texts) ? texts : [texts])
     .filter((text) => typeof text === 'string' && text.trim())
     .map((text) => text.trim()))].slice(0, PREFETCH_LIMIT)
@@ -226,22 +262,43 @@ export async function speakKokoroSpeech(text, options = {}) {
 
   const { voice = 'af_heart', rate = 1, preferDevice = false, ...callbacks } = options
   stopKokoroSpeech()
-  // A narrow escape hatch for short words that Kokoro articulates incorrectly.
-  // The platform voice is fast and reliable for these known exceptions.
-  if (preferDevice && window.speechSynthesis?.speak && window.SpeechSynthesisUtterance) {
+  const key = clipKey(voice, phrase)
+  const cached = clipCache.has(key)
+  // A saved Kokoro clip is instantaneous even on old hardware. For an
+  // uncached phrase, let a slow machine use its native voice immediately.
+  if ((preferDevice || (nativeMode && !cached) ||
+      (!navigator.gpu && !cached)) && hasDeviceVoice()) {
     currentCallbacks = callbacks
     return fallbackSpeech(phrase, rate, callbacks)
   }
   const context = unlockAudio()
   const mine = requestId
-  const key = clipKey(voice, phrase)
-  const cached = clipCache.has(key)
   const started = performance.now()
   currentCallbacks = callbacks
   callbacks.onLoading?.()
 
   try {
-    const blob = await getClip(phrase, voice, 2)
+    let blob = clipCache.get(key)
+    if (!blob && hasDeviceVoice()) {
+      // Keep generation running to fill the cache, but switch to instant
+      // device pronunciation rather than trapping the learner in a spinner.
+      const generated = getClip(phrase, voice, 2)
+      const outcome = await Promise.race([
+        generated.then(value => ({ blob: value })),
+        new Promise(resolve => setTimeout(() => resolve({ delayed: true }), FIRST_SOUND_BUDGET_MS)),
+      ])
+      if (mine !== requestId) return false
+      if (outcome.delayed) {
+        slowClickCount += 1
+        // Two slow uncached requests indicate a poor learner experience;
+        // stop scheduling future inference and background prefetch.
+        if (slowClickCount >= 2) nativeMode = true
+        return fallbackSpeech(phrase, rate, callbacks)
+      }
+      blob = outcome.blob
+    } else if (!blob) {
+      blob = await getClip(phrase, voice, 2)
+    }
     if (mine !== requestId) return false
     if (context) {
       let buffer = decodedCache.get(key)

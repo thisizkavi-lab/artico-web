@@ -1788,6 +1788,13 @@
   line-height: 1.4;
   font-weight: 660;
 }
+.ip-page .ar-ch02-reply-question > .ar-ch02-reply-ja {
+  margin: 6px 0 0 42px;
+  color: #7c8191;
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.55;
+}
 .ip-page .ar-ch02-reply-connector {
   width: 1px;
   height: 30px;
@@ -1863,6 +1870,7 @@
   .ip-page .ar-ch02-study .ar-ch02-replies { padding:12px; }
   .ip-page .ar-ch02-reply-question { width: 95%; padding:11px 12px 15px; }
   .ip-page .ar-ch02-reply-question > p { margin-left: 0; }
+  .ip-page .ar-ch02-reply-question > .ar-ch02-reply-ja { margin-left: 0; }
   .ip-page .ar-ch02-reply-options { width: 96%; padding: 10px 11px 12px; }
   .ip-page .ar-ch02-reply-option { padding: 10px 8px 0; }
   .ip-page .ar-ch02-reply-option > p:not(.ar-ch02-reply-ja) {font-size:16px}

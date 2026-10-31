@@ -197,7 +197,10 @@ jobs:
           for term,e in j['entries'].items():
             f=pathlib.Path('dist/vocabulary-curated-04')/(e['file']+'.webp')
             assert f.is_file() and f.stat().st_size>4000, term
-          print(len(j['entries']),'selected illustrations verified')
+            if e.get('generationBatch') == 'work-errands-10':
+              versioned=pathlib.Path('dist/vocabulary-curated-04')/(e['file']+'-illustrated-v2.webp')
+              assert versioned.is_file() and versioned.stat().st_size>4000, term
+          print(len(j['entries']),'selected illustrations and refreshed work-scene assets verified')
           PY
 
       - name: Configure Pages

@@ -65,6 +65,8 @@ with zipfile.ZipFile(work_archive) as z:
             assert scene.format == "WEBP" and scene.size == (608, 384), (name,scene.size,scene.format)
         assert len(image_bytes)>4000,(name,len(image_bytes))
         (target / name).write_bytes(image_bytes)
+        # Distinct public filenames bypass stale cached Pexels images.
+        (target / name.replace(".webp", "-illustrated-v2.webp")).write_bytes(image_bytes)
 print("Installed and validated", len(work_scenes), "original Artico Work/School/Home illustrations")
 
 

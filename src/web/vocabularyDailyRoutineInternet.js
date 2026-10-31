@@ -9,8 +9,13 @@ export function vocabularyDailyRoutineInternet(term, chapter) {
   const original = manifest.aliases[key] || key
   const photo = manifest.entries[original]
   if (!photo) return null
+  // The ten original Work/School/Errands scenes reused older Pexels
+  // filenames, so browsers may still show a cached photograph.
+  const artFile = photo.generationBatch === 'work-errands-10'
+    ? photo.file + '-illustrated-v2.webp'
+    : photo.file + '.webp'
   return {
     type: 'png',
-    src: import.meta.env.BASE_URL + 'vocabulary-curated-04/' + photo.file + '.webp',
+    src: import.meta.env.BASE_URL + 'vocabulary-curated-04/' + artFile,
   }
 }

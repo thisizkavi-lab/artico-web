@@ -320,7 +320,8 @@ test('speech starts fast and only considers GPU inference after a deliberate cli
   assert.match(source, /navigator\.gpu\.requestAdapter\(\)/)
   assert.match(source, /if \(!vendor \|\| \/intel\/i\.test\(vendor\)\) return/)
   assert.match(source, /window\.requestIdleCallback/)
-  assert.match(source, /if \(!preferDevice && started\) tuneKokoroAfterUserAudio\(\)/)
+  // Tuning is triggered inside the audible onStart callback, not at click time.
+  assert.match(source, /onStart: \(source\) => \{[\s\S]*?if \(!preferDevice\) tuneKokoroAfterUserAudio\(\)/)
   assert.match(source, /Promise\.race\(\[/)
   assert.match(source, /if \(modelReady && phrase\.length <= 100\) slowClickCount \+= 1/)
   assert.match(source, /nativeMode && job\.priority === 0/)

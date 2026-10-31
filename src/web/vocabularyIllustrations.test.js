@@ -322,3 +322,19 @@ test('Lesson 05 SVG swatches are image-only and use the standard vocabulary card
   assert.ok(!load('vocabulary-topic.css').includes('vlt-color-card'))
   assert.ok(!load('vocabulary-topic.css').includes('vlt-color-grid'))
 })
+
+
+test('All 20 dimension cards use self-contained, text-free Kitbitz SVG artwork',()=>{
+  const words=["big","little","small","deep","shallow","high","low","long","short","narrow","thick","thin","heavy","light","far","near","height","size","weight","shape"]
+  const mapping=load('vocabularyDimensionsArt.js')
+  const visual=load('vocabularyVisual.js')
+  assert.ok(visual.includes('vocabularyDimensionsArt(term, chapter)'))
+  for(const term of words){
+    const file=load('../../public/vocabulary-dimensions/05/'+term+'.svg')
+    assert.ok(file.includes('viewBox="0 0 304 192"'),term)
+    assert.ok(file.includes('data-vocab-key="5:'+term+'"'),term)
+    assert.ok(file.includes('data-source="Kitbitz CC0'),term)
+    assert.ok(!/<text\b|<image\b/.test(file),term)
+    assert.ok(mapping.includes('"'+term+'"'),term)
+  }
+})

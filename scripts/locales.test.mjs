@@ -68,6 +68,15 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p11').ja, 'こんにちは、サトシです。プロジェクトマネージャーをしています。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p12').ja, 'ダニエル・リードです。普段はダンと呼ばれています。お会いできてうれしいです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p13').ja, 'こちらこそ。サトシと呼んでください。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p14').ja, 'ありがとうございます、サトシ。研究チームに所属しています。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p39').ja, 'こんにちは、サトシ・タナカです。プロジェクトマネージャーをしています。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p40').ja, 'こんにちは、ダニエル・リードです。ダンと呼ばれています。研究チームに所属しています。はじめまして。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p41').ja, 'こちらこそ、ダン。サトシと呼んでください。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p42').ja, 'ありがとう、サトシ。一緒に仕事ができるのを楽しみにしています。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p43').ja, 'こちらこそ。では、始めましょう。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p44').ja, '一緒に仕事ができるのを楽しみにしています。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p45').ja, '一緒に仕事ができるのを楽しみにしております。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p46').ja, 'それを楽しみにしています。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p27').ja, 'やあ、アレックスです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p4').ja, 'こんにちは、アレックスといいます。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p29').ja, '私はキャシーの友人です。')
@@ -82,7 +91,7 @@ test('the introduction pilot translates the existing layout without replacing re
     ...ja.sections.flatMap((section) => [
       section.title, section.short,
       ...section.blocks.flatMap((block) => [
-        block.title, block.text, block.alt, block.contextText,
+        block.title, block.text, block.alt, block.contextText, block.note?.text,
         ...(block.examples?.flatMap((example) => [example.label, example.hint]) ?? []),
         block.replyAlternatives?.title,
         ...(block.replyAlternatives?.choices?.map((choice) => choice.label) ?? []),
@@ -96,6 +105,12 @@ test('the introduction pilot translates the existing layout without replacing re
   const firstMeeting = ja.sections[0].blocks.find((block) => block.type === 'conversation' && block.title === '初対面の自然な会話')
   const reply = firstMeeting.replyAlternatives
   assert.equal(reply.title, '自然な返事の別の言い方')
+  const workplace = ja.sections.find((section) => section.id === 'work')
+  assert.deepEqual(workplace.blocks.filter((block) => block.type === 'phrases').map((block) => block.title), [
+    '名前と呼び方', '仕事や役割について話す', '一緒に仕事を始めるとき', 'より改まったあいさつ',
+  ])
+  assert(japanese.test(workplace.blocks.find((block) => block.title === '一緒に仕事を始めるとき').note.text))
+  assert.equal(workplace.blocks.find((block) => block.type === 'conversation').phrases.length, 5)
   const contextualExamples = ja.sections[0].blocks.find((block) => block.type === 'situations').examples
   assert.equal(contextualExamples.length, 4)
   assert(contextualExamples.every((example) => japanese.test(example.label) && japanese.test(example.hint)))

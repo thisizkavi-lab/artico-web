@@ -282,7 +282,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese, upco
   )
   const cardType = visual ? ' vlt-image-card' : ' vlt-text-card'
   // Keep "reveal" and "listen" as separate controls: never nest two buttons.
-  // The small speaker stays at the lower left in both Study and Practice.
+  // The small speaker stays at the lower right in both Study and Practice.
   return practice && canPractice
     ? <div className="vlt-recall-container">
         <button type="button"

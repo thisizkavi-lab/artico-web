@@ -349,3 +349,25 @@ test('Lesson 05 little shows a kitten beside an adult cat, not a repeated mug',(
   assert.ok(!little.includes('mug'), 'The little illustration must not reuse the mug comparison')
   assert.ok(!/<text\b|<image\b/.test(little), 'Keep labels in the standard vocabulary card')
 })
+
+
+test('Lesson 05 materials and fabrics use nine reviewed CC0 internet images',()=>{
+  const material=load('vocabularyMaterialArt.js')
+  const visual=load('vocabularyVisual.js')
+  const terms=['material / materials (plural)','denim','fabric','glass','leather','metal','paper','plastic','silk']
+  for(const term of terms)assert.ok(material.includes(term), 'Missing material image: '+term)
+  for(const url of [
+    'https://www.publicdomainpictures.net/pictures/780000/velka/material-texture-collage-1776848321uoZ.jpg',
+    'https://cdn.meshy.ai/landing-assets/textures/fabric/washed-blue-denim/washed-blue-denim-2k.jpg',
+    'https://cdn.meshy.ai/landing-assets/textures/fabric/natural-linen-weave/natural-linen-weave-2k.jpg',
+    'https://www.svgrepo.com/download/166157/drink-in-transparent-glass-bottle.svg',
+    'https://cdn.meshy.ai/landing-assets/textures/leather/brown-leather/brown-leather-2k.jpg',
+    'https://cdn.meshy.ai/landing-assets/textures/metal/brushed-stainless-steel/brushed-stainless-steel-2k.jpg',
+    'https://cdn.meshy.ai/landing-assets/textures/paper/crumpled-white-paper/crumpled-white-paper-2k.jpg',
+    'https://www.svgrepo.com/download/462300/plastic-bottle.svg',
+    'https://www.publicdomainpictures.net/pictures/620000/velka/textil-seide-hintergrund-textur-1717793189VVB.jpg',
+  ])assert.ok(material.includes(url), 'Missing source URL: '+url)
+  assert.match(visual,/vocabularyMaterialArt\(term, chapter\)/)
+  assert.ok(visual.indexOf('vocabularyMaterialArt(term, chapter)')<visual.indexOf('vocabularyDimensionsArt(term, chapter)'),
+    'Material images must override legacy Mulberry symbols before fallback artwork')
+})

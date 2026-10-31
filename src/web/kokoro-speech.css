@@ -30,7 +30,7 @@
   .artico-speak, .artico-speak svg { animation: none !important; transition: none; }
 }
 
-/* Lessons 03–78: the icon always sits in the bottom-left corner.
+/* Lessons 03–78: the icon always sits in the bottom-right corner.
    Reserve enough room so text, pictures and the icon never overlap.
    In Practice the reveal card is a button; the speaker is its sibling. */
 .vlt-lesson .vlt-card { position: relative; }
@@ -40,7 +40,7 @@
 .vlt-lesson .vlt-recall-container > .artico-speak {
   position: absolute;
   bottom: 7px;
-  left: 7px;
+  right: 7px;
   z-index: 2;
 }
 .vlt-recall-container { position: relative; display: flex; min-width: 0; }
@@ -55,7 +55,7 @@
 .vl01-word-grid > div > .artico-speak,
 .vl01-phrase-grid > div > .artico-speak {
   position: absolute;
-  left: 8px;
+  right: 8px;
   bottom: 7px;
   z-index: 2;
 }

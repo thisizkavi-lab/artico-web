@@ -18,7 +18,7 @@ test('all 78 vocabulary sources remain intact after non-destructive deduplicatio
   assert.equal(source.lessons.length,76)
   assert.deepEqual(source.lessons.map(x=>x.sourceLesson),Array.from({length:76},(_,i)=>i+3))
   const rawEntries=source.lessons.flatMap(l=>l.groups.flatMap(g=>g.items))
-  assert.equal(rawEntries.length,3950)
+  assert.equal(rawEntries.length,3951)
   assert.ok(source.lessons.every(l=>l.groups.every(g=>g.items.length>0)))
   assert.ok(rawEntries.every(x=>x[0]&&typeof x[0]==='string'))
   assert.ok(!rawEntries.some(x=>x[0].includes('](https://')))
@@ -38,11 +38,15 @@ test('polysemy is protected rather than deleting different concepts',()=>{
   assert.match(japanese,/'44:train':'電車/)
 })
 
-test('Vocabulary Lessons 3–78 render raster images only, never inline SVG art',()=>{
+test('Vocabulary artwork uses raster images except dedicated Lesson 05 SVG color swatches',()=>{
   for(const component of ['VocabularyTimeArt','VocabularySceneArt','VocabularyFoodArt','DimensionArt','MaterialArt','WeatherArt','DirectionArt','CurriculumIcon'])
     assert.ok(!view.includes(component),'Old inline vector in vocabulary renderer: '+component)
-  assert.ok(!view.includes('<svg'),'Vocabulary card must not render inline SVG')
+  assert.ok(!view.includes('<svg'),'The shared vocabulary renderer must not contain inline SVG artwork')
   assert.ok(view.includes('<img className='))
+  assert.ok(visual.includes("chapter === 5 && colorSwatches[term]"),'SVG swatches are reserved for Lesson 05 colors')
+  assert.ok(visual.includes("type: 'color-swatch'"))
+  const colorSwatch=load('VocabularyColorSwatch.jsx')
+  assert.ok(colorSwatch.includes('<svg className="vlt-color-swatch"'))
   assert.ok(!visual.includes('timeIllustration('))
   assert.ok(!visual.includes('routineScene('))
   assert.ok(!visual.includes('foodIllustration('))

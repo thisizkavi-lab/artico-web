@@ -510,3 +510,97 @@
     height: 34px;
   }
 }
+
+
+/* Chapter 01: fixed card-footer notes and quieter emphasis. */
+.ar-page .ar-phrase-shelf {
+  display: grid;
+  grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr);
+  grid-template-areas: "illustration content" "note note";
+  grid-template-rows: minmax(202px, auto) auto;
+  align-items: stretch;
+  column-gap: 18px;
+  row-gap: 9px;
+  padding: 52px 16px 13px;
+}
+.ar-page .ar-phrase-shelf > .ar-scene {
+  grid-area: illustration;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 178px;
+}
+.ar-page .ar-phrase-shelf > .ar-shelf-body {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.ar-page .ar-shelf-body > .ar-context {
+  min-height: 96px;
+  padding: 8px 11px;
+  background: #f7f8fa;
+  color: #738094;
+  font-size: 11.5px;
+}
+.ar-page .ar-phrase-shelf > .ar-shelf-note {
+  grid-area: note;
+  align-self: end;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 7px 11px 8px;
+  border: 1px solid rgba(218, 196, 144, .12);
+  border-radius: 9px;
+  background: #fffdf7;
+  color: #7a7b76;
+  font-size: 11.25px;
+  line-height: 1.48;
+  font-weight: 400;
+}
+.ar-page .ar-shelf-note .ar-note-label {
+  display: block;
+  margin-bottom: 2px;
+  color: #8b8577;
+  font-size: 10.5px;
+  font-weight: 550;
+  line-height: 1.25;
+}
+.ar-page .ar-shelf-note .ar-note-copy {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+}
+.ar-page .ar-shelf-note .ar-note-copy strong {
+  display: inline;
+  margin: 0;
+  color: #555d62;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+}
+@media (max-width:620px) {
+  .ar-page .ar-phrase-shelf {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "illustration" "content" "note";
+    grid-template-rows: 135px auto auto;
+    column-gap: 0;
+    row-gap: 8px;
+    padding: 48px 12px 11px;
+  }
+  .ar-page .ar-phrase-shelf > .ar-scene {
+    height: 135px;
+    min-height: 135px;
+  }
+  .ar-page .ar-shelf-body > .ar-context {
+    min-height: 76px;
+    font-size: 11px;
+  }
+  .ar-page .ar-phrase-shelf > .ar-shelf-note {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+}

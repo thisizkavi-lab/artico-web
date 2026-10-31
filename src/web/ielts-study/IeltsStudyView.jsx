@@ -128,7 +128,7 @@ export function StudyReader({ area, unitId, store }) {
         <div key={part.id} className={`ies-toc-part ${part.isGt ? 'ies-toc-part-gt' : ''}`}>
           <div className="ies-toc-part-title">
             {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '4px' }}>GT</span>}
-            {part.title.replace(/^Part \\d+\\.\\d+\\s*·\\s*/, '')}
+            {part.title.replace(/^Part \d+\.\d+\s*·\s*/, '')}
           </div>
           <ul className="ies-toc-list">
             {partUnits.map((u) => {

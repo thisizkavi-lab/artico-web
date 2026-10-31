@@ -224,6 +224,55 @@ function ReplyAlternatives({ block, audioProps, embedded = false }) {
 }
 
 
+// Context matters here: show the situation first and reveal meaning only on click.
+function SituationalPhrases({ block, audioProps }) {
+  const { language } = useLanguage()
+  const { byId } = useLesson()
+  const [openId, setOpenId] = useState(null)
+
+  return (
+    <section className="ar-ch02-situations" aria-label={block.title}>
+      <h3 className="ip-small-heading">{block.title}</h3>
+      <div className="ar-ch02-situation-grid">
+        {block.examples.map((example, exampleIndex) => (
+          <article className="ar-ch02-situation" key={exampleIndex}>
+            <h4>{example.label}</h4>
+            <p className="ar-ch02-situation-hint">{example.hint}</p>
+            <div className="ar-ch02-situation-phrases">
+              {example.phrases.map((id) => {
+                const item = byId[id]
+                if (!item) return null
+                const expanded = openId === id
+                return (
+                  <div className="ar-ch02-situation-phrase" key={id}>
+                    <div className="ar-ch02-situation-line">
+                      <button
+                        type="button"
+                        className="ar-ch02-situation-choice"
+                        aria-expanded={expanded}
+                        aria-controls={`ch02-situation-detail-${id}`}
+                        onClick={() => setOpenId((current) => current === id ? null : id)}
+                      >
+                        <span lang="en">{item.en}</span>
+                        <span className="ar-ch02-situation-chevron" aria-hidden="true">{expanded ? '−' : '+'}</span>
+                      </button>
+                      {approvedAudio[item.id] && <PhraseAudio item={item} {...audioProps} />}
+                    </div>
+                    <p id={`ch02-situation-detail-${id}`} className="ar-ch02-situation-detail" hidden={!expanded}
+                      lang={language === 'ja' && item.ja ? 'ja' : 'en'}>
+                      {language === 'ja' && item.ja ? item.ja : item.context}
+                    </p>
+                  </div>
+                )
+              })}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function Study({ audioProps, focusedId }) {
   const { t, language } = useLanguage()
   const {
@@ -260,6 +309,8 @@ function Study({ audioProps, focusedId }) {
                 />
               )
             if (block.type === 'diagram') return <Diagram key={blockIndex} type={block.diagram} />
+            if (lessonId === '02' && block.type === 'situations')
+              return <SituationalPhrases key={blockIndex} block={block} audioProps={audioProps} />
             if (block.type === 'text')
               return (
                 <p className="ip-prose" key={blockIndex}>

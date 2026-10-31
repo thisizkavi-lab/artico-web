@@ -53,6 +53,7 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   const displayed = introductionSections.flatMap((section) =>
     section.blocks.flatMap((block) => [
       ...(block.phrases ?? []),
+      ...(block.examples?.flatMap((example) => example.phrases) ?? []),
       ...(block.choices?.map((choice) => choice.id) ?? []),
       ...(block.promptId ? [block.promptId] : []),
       ...(block.replyAlternatives?.choices?.map((choice) => choice.id) ?? []),

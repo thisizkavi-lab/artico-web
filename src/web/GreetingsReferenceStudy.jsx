@@ -159,15 +159,16 @@ export function PhraseShelf({ title, titleJa, options, scene = 'people', initial
   const { language } = useLanguage()
   const [selected, setSelected] = useState(clickToExplain ? null : initial)
   const option = selected == null ? null : options[selected]
+  const plain = clickToExplain && !sceneArt
   const phraseArt = sceneArt
     ? `${import.meta.env.BASE_URL}assets/course/${sceneArt}`
     : null
-  return <article className={'ar-card ar-phrase-shelf' + (sceneArt ? ' ar-ch02-phrase-shelf' : '') + (clickToExplain ? ' ar-click-to-explain' : '')}>
+  return <article className={'ar-card ar-phrase-shelf' + (sceneArt ? ' ar-ch02-phrase-shelf' : '') + (clickToExplain ? ' ar-click-to-explain' : '') + (plain ? ' ar-ch02-plain-shelf' : '')}>
     {sceneArt
       ? <div className="ar-scene ar-illustrated-scene ar-ch02-phrase-art">
           <img className="ar-scene-illustration" src={phraseArt} alt="" loading="lazy" decoding="async" />
         </div>
-      : <PeopleScene kind={scene}/>}
+      : plain ? null : <PeopleScene kind={scene}/>}
     <div className="ar-shelf-body">
       <div className="ar-shelf-heading"><h3>{title}{language === 'ja' && titleJa && <small lang="ja">{titleJa}</small>}</h3>{captions && <span>{options.length} expressions</span>}</div>
       <div className="ar-speech-choices">

@@ -2,7 +2,7 @@
  * Artico IELTS Study View Component (`artico-ielts-study-v1`)
  * Renders:
  * - Screen A: 5-Module Study Manual Index (#/application/tests/ielts/home/study)
- * - Screen B: Two-Column Skill Study Reader (#/application/tests/ielts/<area>/study?unit=<unitId>)
+ * - Screen B: Single-column Skill Study Reader (#/application/tests/ielts/<area>/study?unit=<unitId>)
  */
 
 import React, { useState, useEffect } from 'react'
@@ -291,7 +291,7 @@ export function StudyReader({ area, unitId, store, toolbar }) {
               <div className="ies-prose">
                 <p>
                   This module contains {modMeta.parts.reduce((sum, p) => sum + p.count, 0)} units structured across{' '}
-                  {modMeta.parts.length} parts. Select any authored unit from the left outline to begin reading.
+                  {modMeta.parts.length} parts. Select a lesson from the contents above to begin reading.
                 </p>
               </div>
             </article>

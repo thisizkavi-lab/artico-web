@@ -100,3 +100,9 @@ uses the committed files and does not call an external speech API.
 Official sources are linked from Overview and Skill Mocks. Provider examples stay
 on their own sites; book pages, proprietary question banks, and private research
 screenshots are not included in this repository.
+
+### Editorial UI alignment — 31 October 2026
+
+Study now uses the same open reading layout as Orientation: a serif heading, Study/Practice controls below it, and searchable lesson contents above a single article. The course index introduces the learning sequence and groups all five sections by topic. Examples, annotations, diagrams, General Training distinctions, and all 85 authored units remain available. Source-section metadata sits at the end of each lesson. Skill practice uses the same heading and mode-control placement; task workspaces retain their existing behavior.
+
+Validation: 200 tests pass; the strict IELTS audit reports zero errors and warnings; production build passes. Playwright with local Chrome was used because the Browser plugin was unavailable. All 85 lessons were checked at 1440px and 390px, with no page overflow or uncaught browser errors. Search, empty search results, lesson selection, read-state persistence, resume links, General Training banners, audio playback, word-bank filtering, and all four Study/Practice switches were checked. Desktop and mobile screenshots were inspected. Deployment asset preparation was run locally before the full suite. Existing large-bundle build warnings remain.

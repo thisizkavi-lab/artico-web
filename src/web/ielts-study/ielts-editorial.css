@@ -108,3 +108,15 @@
   .ie-study-page .ies-specimen-margin { border-left: 0; border-top: 1px solid var(--ie-border); }
   .ie-study-page .ies-glossary-popover { left: 0; transform: none; width: min(260px, 75vw); }
 }
+/* Contain visually hidden link descriptions inside horizontally scrolling tables. */
+.ie-study-page .ies-table-wrap { position: relative; }
+.ie-study-page .ies-table a { overflow-wrap: anywhere; }
+/* Study and skill practice share a heading and mode switch, like other courses. */
+.ie-page.ie-course-landing { width: min(100%, 1008px); }
+.ie-course-landing .ie-modebar .aw-segments { background: #e9eded; border-radius: 12px; padding: 4px; }
+.ie-course-landing .ie-modebar .aw-segments button { min-height: 42px; border-radius: 8px; }
+.ie-course-landing .ie-modebar .aw-segments button[aria-pressed='true'] { color: #285bcc; background: #fff; }
+.ie-course-landing .ie-skill-heading h1 { display: flex; align-items: center; gap: 15px; font-size: clamp(32px, 3.8vw, 44px); margin: 12px 0; }
+.ie-course-landing .ie-skill-heading h1 .curriculum-icon { color: #466e5a; }
+.ie-course-landing .ie-skill-heading { margin-top: 0; }
+.ie-course-landing .ies-eyebrow { color: var(--muted); font-size: 12px; font-weight: 650; }

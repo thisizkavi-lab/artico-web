@@ -81,7 +81,7 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
     'This is ...', "I'd like you to meet ...",
   ]
   for (const expression of restoredExpressions)
-    assert.ok(introductionPhrases.some((item) => item.en === expression), \`Missing restored expression: \${expression}\`)
+    assert.ok(introductionPhrases.some((item) => item.en === expression), `Missing restored expression: ${expression}`)
   assert.ok(introductionPhrases.some((item) => item.en === 'Could you say your name again?'))
 })
 

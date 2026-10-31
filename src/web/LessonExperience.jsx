@@ -833,7 +833,7 @@ function Experience({ route, learning, update, save, notify }) {
   }
   return (
     <div className="ip-page" lang={language}>
-      <header className="ip-lesson-heading">
+      <header className={`ip-lesson-heading${id === '01' ? ' ip-lesson-heading-greetings' : ''}`}>
         <p className="ip-kicker">
           {eyebrow ?? (
             <> {t("SOCIAL FLUENCY")} <span>/</span> {t('CHAPTER {id}', { id: displayId ?? id })}

@@ -224,8 +224,14 @@ export async function speakKokoroSpeech(text, options = {}) {
   const phrase = String(text ?? '').trim()
   if (!phrase || typeof window === 'undefined') return false
 
-  const { voice = 'af_heart', rate = 1, ...callbacks } = options
+  const { voice = 'af_heart', rate = 1, preferDevice = false, ...callbacks } = options
   stopKokoroSpeech()
+  // A narrow escape hatch for short words that Kokoro articulates incorrectly.
+  // The platform voice is fast and reliable for these known exceptions.
+  if (preferDevice && window.speechSynthesis?.speak && window.SpeechSynthesisUtterance) {
+    currentCallbacks = callbacks
+    return fallbackSpeech(phrase, rate, callbacks)
+  }
   const context = unlockAudio()
   const mine = requestId
   const key = clipKey(voice, phrase)

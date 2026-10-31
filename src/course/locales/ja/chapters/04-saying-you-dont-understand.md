@@ -29,7 +29,7 @@
 | **Oh, I see.** | **Oh, I see.** Thanks! | 理解したことを伝える。 |
 
 **Maya:** Let's hang out after class.  
-**Sam:** What does "hang out" mean?  
+**Sam:** **What does "hang out" mean?**  
 **Maya:** Spend time together.  
 **Sam:** **Oh, I see!**
 

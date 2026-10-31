@@ -291,7 +291,8 @@ test('Social Fluency retains Kokoro playback while future recordings remain supp
   assert.match(speaker, /vocabularySpokenText\(text\)/)
   assert.match(speaker, /preferDevice/)
   const engine = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
-  assert.match(engine, /preferDevice && window\.speechSynthesis/)
+  assert.match(engine, /preferDevice \|\| \(nativeMode && !cached\)/)
+  assert.match(engine, /hasDeviceVoice\(\)/)
 })
 test('isolated tea uses a reliable native pronunciation without changing display text', () => {
   assert.equal(vocabularySpokenText('Tea'), 'Tea')

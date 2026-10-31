@@ -33,7 +33,9 @@
 /* Lessons 03–78: the icon always sits in the bottom-left corner.
    Reserve enough room so text, pictures and the icon never overlap.
    In Practice the reveal card is a button; the speaker is its sibling. */
-.vlt-lesson .vlt-card { position: relative; padding-bottom: 43px; }
+.vlt-lesson .vlt-card { position: relative; }
+.vlt-lesson .vlt-card.vlt-image-card,
+.vlt-lesson .vlt-card.vlt-text-card { padding-bottom: 43px; }
 .vlt-lesson .vlt-card > .artico-speak,
 .vlt-lesson .vlt-recall-container > .artico-speak {
   position: absolute;
@@ -58,8 +60,8 @@
   z-index: 2;
 }
 .vl01-card-item .vl01-country-card { padding-bottom: 45px; }
-.vl01-word-grid > div,
-.vl01-phrase-grid > div { padding-bottom: 45px; }
+.vl01-lesson .vl01-word-grid > div,
+.vl01-lesson .vl01-phrase-grid > div { padding-bottom: 45px; }
 
 /* Number/units/frequency tables are rows, not cards; their speaker
    remains next to the text rather than floating over table cells. */

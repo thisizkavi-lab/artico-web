@@ -6,6 +6,7 @@ Pexels asset ID, the matching headword and the intended visual meaning.
 Images are served locally by Artico; no external runtime hotlinks.
 """
 import io
+import base64
 import json
 import hashlib
 import zipfile
@@ -53,8 +54,17 @@ assert len(social_scenes) == 4
 for name in sorted(social_scenes):
     p = target / name
     assert p.is_file() and p.stat().st_size > 4000, name
-    with Image.open(p) as scene:
-        scene.verify()
+    raw = p.read_bytes()
+    try:
+        with Image.open(io.BytesIO(raw)) as scene:
+            scene.verify()
+    except Exception:
+        # Earlier upload stored the base64 text as the file body. Decode it
+        # once during the build, then publish the real WebP bytes.
+        decoded = base64.b64decode(raw, validate=True)
+        with Image.open(io.BytesIO(decoded)) as scene:
+            scene.verify()
+        p.write_bytes(decoded)
     with Image.open(p) as scene:
         assert scene.format == "WEBP" and scene.size == (608, 384), (name, scene.size, scene.format)
 print("Verified", len(social_scenes), "original Artico social-routine illustrations")

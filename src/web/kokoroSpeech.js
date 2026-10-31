@@ -1,6 +1,6 @@
 // Artico's shared, local-first speech player.
-// Prefer GPU inference on compatible browsers. CPU/WASM remains a fallback.
-// Cache clips and prepare the next words while the learner listens.
+// Audio starts instantly with the system voice on old hardware.
+// On capable GPUs, natural Kokoro speech is an optional on-demand upgrade.
 const MODULE_URL = 'https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/dist/kokoro.web.js'
 const MODEL_ID = 'onnx-community/Kokoro-82M-v1.0-ONNX'
 const CACHE_LIMIT = 96
@@ -21,7 +21,9 @@ let requestId = 0
 let runningJobs = false
 let jobSequence = 0
 let gpuProbe = null
-let nativeMode = false
+let nativeMode = true
+let autoTuneStarted = false
+let gpuAdapter = null
 let slowClickCount = 0
 let fastGenerationObserved = false
 let modelReady = false
@@ -41,7 +43,9 @@ function probeGpu() {
       if (typeof navigator === 'undefined' || !navigator.gpu || navigator.connection?.saveData) return false
       try {
         const adapter = await navigator.gpu.requestAdapter()
-        return Boolean(adapter && !adapter.isFallbackAdapter)
+        if (!adapter || adapter.isFallbackAdapter) return false
+        gpuAdapter = adapter
+        return true
       } catch {
         return false
       }
@@ -54,8 +58,7 @@ async function loadKokoro() {
   if (!modelPromise) {
     modelPromise = (async () => {
       const { KokoroTTS } = await import(/* @vite-ignore */ MODULE_URL)
-      // A GPU may exist yet be unavailable to WebGPU in this browser.
-      // In that case native speech avoids a costly CPU-model download.
+      // Only reached after the learner clicks audio and passes capability checks.
       if (await probeGpu()) {
         try {
           const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
@@ -89,15 +92,50 @@ async function loadKokoro() {
   return modelPromise
 }
 
-// Model loading begins on vocabulary/lesson entry, not on the first speaker tap.
-// Call this when a lesson is displayed, not on the landing page.
-export function warmKokoroSpeech() {
-  if (typeof window === 'undefined' || nativeMode || navigator.connection?.saveData) return
-  // No WebGPU: don't slow down the lesson by downloading CPU inference.
-  void probeGpu().then((usable) => {
-    if (usable && !nativeMode) void loadKokoro().catch(() => {})
-    else if (hasDeviceVoice()) nativeMode = true
-  })
+// The model must NEVER load on page entry. Probe only after a learner has
+// deliberately played audio. Cheap device signals can reject older hardware;
+// a short real inference checks the remaining candidates before Kokoro is used.
+function tuneKokoroAfterUserAudio() {
+  if (autoTuneStarted || typeof window === 'undefined') return
+  autoTuneStarted = true
+  const memory = Number(navigator.deviceMemory) || 0
+  const cores = Number(navigator.hardwareConcurrency) || 0
+  const connection = navigator.connection
+  if (!navigator.gpu || connection?.saveData ||
+      /^(slow-2g|2g|3g)$/.test(connection?.effectiveType || '') ||
+      (memory > 0 && memory < 8) || (cores > 0 && cores < 8)) return
+
+  const evaluate = async () => {
+    if (document.visibilityState === 'hidden') return
+    if (!(await probeGpu())) return
+    // Many older laptops advertise WebGPU but only have slow Intel iGPUs.
+    // Do not download a large model automatically for those machines.
+    if (/intel/i.test(gpuAdapter?.info?.vendor || '')) return
+    try {
+      const tts = await loadKokoro()
+      const started = performance.now()
+      const result = await tts.generate('Hello.', { voice: 'af_heart' })
+      const elapsed = performance.now() - started
+      if (elapsed > FIRST_SOUND_BUDGET_MS) {
+        nativeMode = true
+        return
+      }
+      cachePut(clipCache, CACHE_LIMIT, clipKey('af_heart', 'Hello.'), result.toBlob())
+      fastGenerationObserved = true
+      nativeMode = false
+    } catch (error) {
+      nativeMode = true
+      console.warn('Artico: automatic natural voice unavailable; staying with fast voice.', error)
+    }
+  }
+  const defer = () => {
+    if ('requestIdleCallback' in window)
+      window.requestIdleCallback(() => { void evaluate() }, { timeout: 4000 })
+    else window.setTimeout(() => { void evaluate() }, 600)
+  }
+  // The first audio response starts immediately; only then may model
+  // initialization run during idle time on promising hardware.
+  defer()
 }
 
 function cachePut(cache, limit, key, value) {
@@ -114,8 +152,7 @@ async function processJobs() {
   if (runningJobs) return
   runningJobs = true
   try {
-    // Wait for initialization before selecting a job. A user click arriving
-    // during startup can then jump ahead of background prefetch jobs.
+    // Enqueue only on actual click, or prefetch after a proven fast GPU.
     const tts = await loadKokoro()
     while (jobQueue.length) {
       jobQueue.sort((a, b) => b.priority - a.priority || a.sequence - b.sequence)
@@ -276,7 +313,9 @@ export async function speakKokoroSpeech(text, options = {}) {
   if ((preferDevice || (nativeMode && !cached) ||
       (!navigator.gpu && !cached)) && hasDeviceVoice()) {
     currentCallbacks = callbacks
-    return fallbackSpeech(phrase, rate, callbacks)
+    const started = fallbackSpeech(phrase, rate, callbacks)
+    if (!preferDevice && started) tuneKokoroAfterUserAudio()
+    return started
   }
   const context = unlockAudio()
   const mine = requestId

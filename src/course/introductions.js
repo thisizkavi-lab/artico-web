@@ -120,7 +120,7 @@ export const introductionPhrases = [
     context: 'Someone you know well and like.',
     section: 'words',
     kind: 'word',
-    art: 'word-friend.svg',
+    art: 'ch02-friend.png',
   },
   {
     id: 'ch02-v1',
@@ -128,7 +128,7 @@ export const introductionPhrases = [
     context: 'Someone you work with.',
     section: 'words',
     kind: 'word',
-    art: 'word-coworker.svg',
+    art: 'ch02-colleague.png',
   },
   {
     id: 'ch02-v2',
@@ -136,7 +136,7 @@ export const introductionPhrases = [
     context: 'What someone is called.',
     section: 'words',
     kind: 'word',
-    art: 'word-name-tag.svg',
+    art: 'ch02-name.png',
   },
   {
     id: 'ch02-v3',
@@ -144,7 +144,7 @@ export const introductionPhrases = [
     context: 'A class where you learn to take photographs.',
     section: 'words',
     kind: 'word',
-    art: 'word-camera.svg',
+    art: 'ch02-photography-class.png',
   },
 ]
 

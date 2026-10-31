@@ -94,7 +94,10 @@ export default function VocabularyCountriesLesson({ japanese }) {
         <div className="vl01-section-heading">
           <div>
             <p className="vl01-kicker">01 · COUNTRIES &amp; NATIONALITIES</p>
-            <h2 id="vl01-countries-heading">{japanese ? '国と国籍' : 'Countries & nationalities'}</h2>
+            <div className="vl01-topic-title-row">
+              <h2 id="vl01-countries-heading">{japanese ? '国と国籍' : 'Countries & nationalities'}</h2>
+              <KokoroSpeakButton text="Countries and nationalities" japanese={japanese} />
+            </div>
             <p>{japanese ? 'カードをタップして、国籍の言い方を隠したり、確認したりできます。' : 'Select a card to hide or reveal the nationality.'}</p>
           </div>
           <button type="button" className="vl01-hide-button" onClick={toggleAll}>
@@ -123,7 +126,10 @@ export default function VocabularyCountriesLesson({ japanese }) {
         <div className="vl01-section-heading">
           <div>
             <p className="vl01-kicker">02 · TALKING ABOUT WHERE YOU ARE FROM</p>
-            <h2 id="vl01-words-heading">{japanese ? '出身地について話す' : 'Talking about where you are from'}</h2>
+            <div className="vl01-topic-title-row">
+              <h2 id="vl01-words-heading">{japanese ? '出身地について話す' : 'Talking about where you are from'}</h2>
+              <KokoroSpeakButton text="Talking about where you are from" japanese={japanese} />
+            </div>
             <p>{japanese ? '場所や出身を伝えるときに使う言葉です。' : 'Words and phrases for talking about places and where you are from.'}</p>
           </div>
         </div>

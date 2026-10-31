@@ -181,7 +181,10 @@ export default function VocabularyNumbersLesson({ japanese }) {
               <div className="vl02-group-heading">
                 <span className="vl02-group-number">{String(numberGroups.indexOf(group) + 1).padStart(2, '0')}</span>
                 <div>
-                  <h3 id={`vl02-group-${group.id}`}>{japanese ? group.ja : group.en}</h3>
+                  <div className="vl02-group-title-row">
+                    <h3 id={`vl02-group-${group.id}`}>{japanese ? group.ja : group.en}</h3>
+                    <KokoroSpeakButton text={group.en} japanese={japanese} className="vl02-group-audio" />
+                  </div>
                   <p>{japanese ? group.intro.ja : group.intro.en}</p>
                 </div>
                 <span className="vl02-group-count">{group.items.length}</span>

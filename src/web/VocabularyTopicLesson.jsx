@@ -306,7 +306,9 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   const [revealed, setRevealed] = useState(() => new Set())
   // Source stays intact for editorial traceability; this heading is not a word.
   const groups = useMemo(() => (lesson?.groups || []).map((group, index) =>
-    topic.sourceLesson === 14 && index === 0
+    topic.sourceLesson === 5 && index === 0
+      ? { ...group, items: group.items.filter(([term]) => term !== 'colors') }
+      : topic.sourceLesson === 14 && index === 0
       ? { ...group, items: group.items.filter(([term]) => term !== 'body, parts of')
           .flatMap(entry => entry[0] === 'eyelashes'
             ? [entry, ['eyelid'], ['pupil'], ['iris']] : [entry]) }
@@ -394,6 +396,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
             japanese ? '腕は手首から手につながります。指と親指は手の一部です。' : 'Your arm connects to your hand at the wrist. Fingers and the thumb are parts of your hand.',
             japanese ? '脚には太もも、ひざ、すねがあります。足首の下が foot（足）で、その先に toe（足の指）があります。' : 'Your leg has a thigh, knee, and shin. Below the ankle is the foot, which has toes.',
           ][group.index] || null) : null
+          const groupJapanese = vocabularyGroupJapanese(topic.sourceLesson, group.index)
           const isDaysChart = topic.sourceLesson === 3 && group.index === 1
           const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
           const isTimeSpansTable = topic.sourceLesson === 3 && group.index === 4
@@ -403,12 +406,16 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
               <div className="vlt-group-heading">
                 <span className="vlt-group-index">{String(group.index + 1).padStart(2, '0')}</span>
                 <div>
-                  <h3 id={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
-                    {japanese && vocabularyGroupJapanese(topic.sourceLesson, group.index)
-                      ? vocabularyGroupJapanese(topic.sourceLesson, group.index) : group.title}
-                  </h3>
-                  {japanese && vocabularyGroupJapanese(topic.sourceLesson, group.index)
-                    ? <p lang="en">{group.title}</p> : null}
+                  <div className="vlt-group-title-row">
+                    <h3 id={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
+                      {japanese && groupJapanese ? groupJapanese : group.title}
+                    </h3>
+                    <KokoroSpeakButton text={group.title} japanese={japanese} className="vlt-group-audio" />
+                  </div>
+                  {japanese && groupJapanese
+                    ? <p lang="en">{group.title}</p>
+                    : topic.sourceLesson === 5 && group.index === 0
+                      ? <p lang="ja">色</p> : null}
                 </div>
                 <span className="vlt-group-count">{cards.length}</span>
               </div>

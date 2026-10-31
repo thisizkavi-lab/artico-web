@@ -38,3 +38,19 @@
 }
 .vlt-card:not(.vlt-recall-card) > .vlt-card-copy { padding-right: 30px; }
 .vl02-table-audio { margin-left: 3px; }
+
+/* Vocabulary country cards have a separate reveal button; never nest buttons. */
+.vl01-card-item { position: relative; }
+.vl01-card-item > .vl01-country-audio,
+.vl01-card-item > .vl01-nationality-audio {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+}
+.vl01-card-item > .vl01-country-audio { top: 9px; }
+.vl01-card-item > .vl01-nationality-audio { bottom: 8px; }
+.vl01-card-item .vl01-country-card { padding-right: 42px; }
+.vlt-week-days .artico-speak,
+.vlt-month-table .artico-speak,
+.vlt-span-table .artico-speak,
+.vlt-frequency-bars .artico-speak { width: 29px; height: 29px; padding: 5px; }

@@ -236,7 +236,7 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
   assert.match(experience, /block\.replyAlternatives\?\.choices\.some/)
   assert.match(experience, /ar-ch02-branch-choices/)
   assert.match(experience, /ar-ch02-branch-fork/)
-  assert.match(experience, /id={\`study-\${item.id}\`}/)
+  assert.match(experience, /data-phrase-id=\{item\.id\}/)
   assert.match(styles, /max-width: 320px/)
   assert.match(styles, /ar-ch02-branch-choice/)
   assert.match(styles, /ar-ch02-study \.ip-scene-setting img/)

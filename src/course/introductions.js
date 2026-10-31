@@ -294,16 +294,18 @@ export const introductionSections = [
     ...self,
     blocks: [
       self.blocks[0],
+      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.svg'),
+      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.svg', {
+        title: 'Keep it relevant.',
+        text: 'A friend, job, team, or reason for being there can be enough. You do not need to give your whole background.',
+      }),
+      self.blocks[7],
+      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.svg'),
       {
         ...self.blocks[1],
         title: 'At a friend’s gathering',
       },
       self.blocks[2],
-      phraseShelf([4, 10], 'Give your name', 'ch02-scene-self-introduction.svg'),
-      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.svg', {
-        title: 'Keep it relevant.',
-        text: 'A friend, job, team, or reason for being there can be enough. You do not need to give your whole background.',
-      }),
     ],
   },
   {

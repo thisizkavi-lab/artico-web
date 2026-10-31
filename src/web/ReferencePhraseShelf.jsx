@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLanguage } from './Language'
 import { approvedAudio } from './components'
-import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
+import { speakKokoroSpeech, stopKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
 
 const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
@@ -25,6 +25,7 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
     }
     audioProps?.audio?.stop?.()
     void speakKokoroSpeech(item.en, { rate: 0.91 })
+    prefetchKokoroSpeech(items.slice(index + 1, index + 3).map(next => next.en))
   }
 
   if (!items.length) return null
@@ -41,7 +42,7 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
           {items.map((item, index) => (
             <button type="button" key={item.id}
               className={'ar-reference-choice' + (selected === index ? ' is-selected' : '')}
-              aria-pressed={selected === index} onClick={() => play(item, index)}>
+              aria-pressed={selected === index} onClick={() => play(item, index)} onMouseEnter={() => prefetchKokoroSpeech([item.en])} onFocus={() => prefetchKokoroSpeech([item.en])}>
               <span lang="en">{item.en}</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z M15 9a5 5 0 0 1 0 6 M18 6a9 9 0 0 1 0 12"/></svg>
             </button>

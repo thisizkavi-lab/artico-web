@@ -1,4 +1,5 @@
 import { vocabularyCourseArt, vocabularyCourseTextOnly } from './vocabularyCourseArt'
+import { vocabularyMaterialArt } from './vocabularyMaterialArt'
 import { vocabularyDimensionsArt } from './vocabularyDimensionsArt'
 import { vocabularyAiGrooming } from './vocabularyAiGrooming'
 import { vocabularyAiFood } from './vocabularyAiFood'
@@ -42,6 +43,8 @@ function artworkFor(term, chapter) {
   if (bodyMotion) return bodyMotion
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
+  const material = vocabularyMaterialArt(term, chapter)
+  if (material) return material
   const dimension = vocabularyDimensionsArt(term, chapter)
   if (dimension) return dimension
   const curatedInternet = vocabularyDailyRoutineInternet(term, chapter)

@@ -38,7 +38,7 @@ function NumberTable({ group, japanese, practice, revealed, onReveal }) {
                         {visible ? item.term : (japanese ? '答えを見る' : 'Reveal English')}
                       </button>
                     : <strong className="vl02-en-value" lang="en">{item.term}</strong>}
-                  {(!practice || visible) && <KokoroSpeakButton text={item.term} japanese={japanese} className="vl02-table-audio" />}
+                  <KokoroSpeakButton text={item.term} japanese={japanese} className="vl02-table-audio" />
                   <span className="vl02-mobile-ja" lang="ja">{item.ja}</span>
                 </td>
                 <td className="vl02-ja-cell" lang="ja">{item.ja}</td>

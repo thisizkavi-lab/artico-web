@@ -1633,3 +1633,78 @@
   .ip-scene-pair > .ip-scene,
   .ip-scene-pair-second > .ip-scene { padding: 12px; }
 }
+
+
+/* Chapter 01 header harmonized with its quiet Social Fluency study cards. */
+.ip-page .ip-lesson-heading-greetings {
+  margin: 0 0 10px;
+  padding: 21px 25px 20px;
+  border: 1px solid rgba(62,83,112,.075);
+  border-radius: 19px;
+  background: linear-gradient(155deg, #edf3fe 0%, #f8faff 88%);
+  box-shadow: 0 2px 12px rgba(30,45,70,.018);
+  color: #293a53;
+}
+.ip-page .ip-lesson-heading-greetings .ip-kicker {
+  margin: 0 0 11px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #70839f;
+  letter-spacing: .065em;
+}
+.ip-page .ip-lesson-heading-greetings .ip-heading-title {
+  gap: 11px;
+  align-items: center;
+  padding-left: 12px;
+  border-left: 2px solid #c5d4e8;
+}
+.ip-page .ip-lesson-heading-greetings .ip-heading-title > .curriculum-icon {
+  width: 24px;
+  height: 24px;
+  color: #7693b4;
+}
+.ip-page .ip-lesson-heading-greetings h1 {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(27px, 2.8vw, 32px);
+  font-weight: 550;
+  line-height: 1.24;
+  letter-spacing: -.016em;
+  color: #293a53;
+}
+.ip-page .ip-lesson-heading-greetings .ip-title-ja {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #718095;
+}
+.ip-page .ip-lesson-heading-greetings > p:last-child {
+  margin: 12px 0 0 14px;
+  max-width: 78ch;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #66768b;
+}
+@media (max-width: 600px) {
+  .ip-page .ip-lesson-heading-greetings {
+    padding: 17px 15px 18px;
+    border-radius: 16px;
+  }
+  .ip-page .ip-lesson-heading-greetings .ip-kicker {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .ip-page .ip-lesson-heading-greetings .ip-heading-title {
+    gap: 9px;
+    padding-left: 10px;
+  }
+  .ip-page .ip-lesson-heading-greetings h1 { font-size: 26px; }
+  .ip-page .ip-lesson-heading-greetings .ip-title-ja { font-size: 12px; }
+  .ip-page .ip-lesson-heading-greetings > p:last-child {
+    margin: 10px 0 0 12px;
+    max-width: none;
+    font-size: 12px;
+  }
+}

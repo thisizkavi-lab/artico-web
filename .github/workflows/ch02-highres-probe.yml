@@ -15,8 +15,7 @@ jobs:
         run: |
           python - <<'PY'
           import os,urllib.request,urllib.error,re
-          from PIL import Image
-          from io import BytesIO
+          import struct
           src=os.environ['SRC']
           tests = [
             ('original-signed-thumbnail',src),
@@ -28,8 +27,8 @@ jobs:
               request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
               with urllib.request.urlopen(request,timeout=25) as r:
                 data=r.read()
-              im=Image.open(BytesIO(data))
-              print(label,im.size,len(data))
+              size=struct.unpack('>II',data[16:24]) if data[:8]==b'\x89PNG\r\n\x1a\n' else ('unexpected format',)
+              print(label,size,len(data))
             except Exception as exc:
               print(label,type(exc).__name__,str(exc)[:150])
           PY

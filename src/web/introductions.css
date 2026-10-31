@@ -1779,3 +1779,47 @@
   .ar-ch02-situation-grid { grid-template-columns: minmax(0, 1fr); }
   .ar-ch02-situation { padding: 13px; }
 }
+
+/* Plain Chapter 02 phrase alternatives: no generic scene or repeated artwork. */
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf {
+  display: block;
+  padding: 17px 20px;
+  border: 1px solid #e3e8ed;
+  border-radius: 14px;
+  background: #fff;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-shelf-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-shelf-heading {
+  position: static;
+  padding: 0;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-shelf-heading h3 {
+  font-size: 14px;
+  font-weight: 650;
+  color: #53647a;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-speech-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-speech {
+  margin: 0;
+  max-width: 100%;
+}
+.ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-context {
+  font-size: 12px;
+  color: #66788b;
+}
+@media (max-width: 620px) {
+  .ip-page .ar-ch02-study .ar-ch02-plain-shelf { padding: 13px; }
+  .ip-page .ar-ch02-study .ar-ch02-plain-shelf .ar-speech-choices {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

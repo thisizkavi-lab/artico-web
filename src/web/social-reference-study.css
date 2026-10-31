@@ -725,7 +725,7 @@
   --ar-blue: #557fbf;
   --ar-coral: #ae7a69;
   --ar-border: #e9edf3;
-  --ar-muted: #6e7b8e;
+  --ar-muted: #637084;
   background: #f8f9fb;
 }
 .ip-page .ar-shared-study > .ip-section {
@@ -753,7 +753,7 @@
 }
 .ip-page .ar-shared-study .ip-prose {
   font-size: 13px;
-  color: #69788b;
+  color: #637084;
   line-height: 1.66;
 }
 .ip-page .ar-shared-study .ip-prose strong { color: #43536a; font-weight: 650; }
@@ -779,7 +779,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 1.4;
-  color: #857d67;
+  color: #756d57;
   letter-spacing: 0;
   margin-bottom: 3px;
 }
@@ -809,7 +809,7 @@
 .ip-page .ar-shared-study .ip-scene-setting,
 .ip-page .ar-shared-study .ar-reference-stage { background: #f1f5fa; }
 .ip-page .ar-shared-study .ip-speaker {
-  color: #748095;
+  color: #637084;
   font-size: 11px;
   font-weight: 600;
 }
@@ -827,13 +827,13 @@
   font-weight: 580;
 }
 .ip-page .ar-shared-study .ip-conversation-audio { background: #5d83b7; }
-.ip-page .ar-shared-study .ip-phrase-support { color: #79879a; font-size: 11px; }
+.ip-page .ar-shared-study .ip-phrase-support { color: #637084; font-size: 11px; }
 .ip-page .ar-shared-study .ip-comparison-title,
-.ip-page .ar-shared-study .ip-comparison-badge { color: #7b8798; font-weight: 600; }
+.ip-page .ar-shared-study .ip-comparison-badge { color: #637084; font-weight: 600; }
 .ip-page .ar-shared-study .ip-comparison-phrase { color: #293a53; font-weight: 650; }
-.ip-page .ar-shared-study .ip-comparison-text { color: #748095; font-size: 12px; }
+.ip-page .ar-shared-study .ip-comparison-text { color: #637084; font-size: 12px; }
 .ip-page .ar-shared-study .ip-word h3 { color: #304158; font-weight: 650; }
-.ip-page .ar-shared-study .ip-word p { color: #748095; font-size: 12px; line-height: 1.55; }
+.ip-page .ar-shared-study .ip-word p { color: #637084; font-size: 12px; line-height: 1.55; }
 .ip-page .ar-shared-study .ar-reference-shelf {
   position: relative;
   padding: 62px 14px 14px;
@@ -876,7 +876,7 @@
 }
 .ip-page .ar-shared-study .ar-reference-detail {
   background: #f5f7fa;
-  color: #69788b;
+  color: #637084;
   padding: 9px 12px;
 }
 .ip-page .ar-shared-study .ar-reference-detail strong {
@@ -885,7 +885,7 @@
   font-weight: 600;
 }
 .ip-page .ar-shared-study .ar-reference-detail p {
-  color: #69788b;
+  color: #637084;
   font-size: 12px;
 }
 .ip-page .ar-shared-study .ar-reference-more,
@@ -894,14 +894,14 @@
 }
 .ip-page .ar-shared-study .ar-reference-more summary,
 .ip-page .ar-shared-study .ar-reference-source-table summary {
-  color: #687e9b;
+  color: #536783;
   font-weight: 600;
 }
 .ip-page .ar-shared-study .ar-study-example > summary strong {
   font-weight: 600;
   color: #43536a;
 }
-.ip-page .ar-shared-study .ar-study-example-label { color: #748095; font-weight: 600; }
+.ip-page .ar-shared-study .ar-study-example-label { color: #637084; font-weight: 600; }
 /* Chapter 03's custom conversation exercises use the same gentle hierarchy. */
 .ip-page .ar-shared-study .ar-c03-card,
 .ip-page .ar-shared-study .ar-c03-extra,
@@ -916,11 +916,11 @@
 }
 .ip-page .ar-shared-study .ar-c03-intro,
 .ip-page .ar-shared-study .ar-c03-idea p,
-.ip-page .ar-shared-study .ar-c03-flow-explanation { color: #748095; font-size: 12px; }
+.ip-page .ar-shared-study .ar-c03-flow-explanation { color: #637084; font-size: 12px; }
 .ip-page .ar-shared-study .ar-c03-idea,
 .ip-page .ar-shared-study .ar-c03-lesson-tip { background: #fffbf1; color: #74746d; }
 .ip-page .ar-shared-study .ar-c03-idea strong,
-.ip-page .ar-shared-study .ar-c03-lesson-tip strong { color: #857d67; font-size: 12px; font-weight: 600; }
+.ip-page .ar-shared-study .ar-c03-lesson-tip strong { color: #756d57; font-size: 12px; font-weight: 600; }
 .ip-page .ar-shared-study .ar-c03-lesson-tip p { color: #74746d; font-size: 12px; line-height: 1.58; }
 .ip-page .ar-shared-study .ar-c03-chat-bubble {
   border-color: #e4e9f0;

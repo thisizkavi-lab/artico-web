@@ -202,7 +202,7 @@ const originalIntroductionSections = [
       },
       {
         type: 'text',
-        text: 'Daniel’s greeting is a little more ceremonious. Satoshi returns the feeling, then tells him which name to use. Using her preferred name shows that he listened.',
+        text: 'Daniel’s greeting is a little more formal. Satoshi returns the greeting and tells Daniel what to call them. Daniel uses that name in his reply.',
       },
       { type: 'label', text: 'Give the name you use' },
       { type: 'phrases', phrases: ids(15) },

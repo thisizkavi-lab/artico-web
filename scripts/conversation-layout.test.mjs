@@ -33,11 +33,16 @@ test('adjacent illustrated conversations pair without swallowing text or changin
   assert.deepEqual(groupConversationScenes([a, longExplanation, b]), [a, longExplanation, b])
 })
 
-test('shared conversation UI has one dialogue-level audio control, not per-line controls', () => {
+test('shared conversation audio stays at the dialogue level except Chapter 02 inline phrase playback', () => {
   const source = readFileSync(new URL('../src/web/LessonExperience.jsx', import.meta.url), 'utf8')
+  const styles = readFileSync(new URL('../src/web/introductions.css', import.meta.url), 'utf8')
   assert.match(source, /<ConversationAudio block=\{block\} audioProps=\{audioProps\}/)
   assert.match(source, /!conversation && !individual\.length && <PhraseAudio/)
-  assert.match(source, /conversation \? <p className="ip-phrase-text"/)
+  assert.match(source, /conversation \? \(lessonId === '02'/)
+  assert.match(source, /<div className="ar-ch02-spoken-line">/)
+  assert.match(source, /<span className="ip-phrase-text" lang="en">\{item\.en\}<\/span>/)
+  assert.match(styles, /\.ar-ch02-expression \{\s*display: block;/)
+  assert.match(styles, /\.ar-ch02-expression \.ip-audio \{\s*display: inline-grid;/)
   assert.match(source, /<div className="ip-scene-pair"/)
 })
 

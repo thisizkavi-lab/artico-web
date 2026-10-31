@@ -44,6 +44,21 @@ with zipfile.ZipFile(art_archive) as z:
         assert len(image_bytes) > 4000, name
 print("Installed and validated", len(meal_scenes), "original Artico meal illustrations")
 
+# Social routines batch: four original 608x384 illustrations already mapped
+# in vocabularyDailyRoutineSources.json. Validate the exact assets so CI cannot
+# silently publish older placeholder photos in their place.
+social_terms = ["feed the dog", "walk the dog", "friends", "listen to the radio"]
+social_scenes = {catalog["entries"][term]["file"] + ".webp" for term in social_terms}
+assert len(social_scenes) == 4
+for name in sorted(social_scenes):
+    p = target / name
+    assert p.is_file() and p.stat().st_size > 4000, name
+    with Image.open(p) as scene:
+        scene.verify()
+    with Image.open(p) as scene:
+        assert scene.format == "WEBP" and scene.size == (608, 384), (name, scene.size, scene.format)
+print("Verified", len(social_scenes), "original Artico social-routine illustrations")
+
 # Second approved batch: ten original Artico action/object scenes from
 # 'leave work' through 'buy groceries'. Extract before normal card validation.
 work_archive = target / "generated-work-errands-hd.zip"

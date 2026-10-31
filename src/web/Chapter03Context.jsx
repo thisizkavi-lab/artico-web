@@ -183,7 +183,12 @@ function Speak({ lines, audioProps, kind = 'exchange' }) {
       ? (kind === 'word' ? (language === 'ja' ? '表現だけを聞く' : 'Hear the expression') : (language === 'ja' ? '会話を聞く' : 'Play the exchange'))
       : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}
     aria-label={ready ? (kind === 'word' ? `Hear ${phrase}` : 'Play the exchange') : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}>
-    <Glyph name={kind === 'word' ? 'speaker' : 'play'} size={kind === 'word' ? 18 : kind === 'compact' ? 14 : 17}/>
+    {kind === 'word'
+      ? <Glyph name="speaker" size={18}/>
+      : <svg className="ar-c03-play-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 5.5v13l11-6.5z" fill="currentColor"/>
+        </svg>}
+
   </button>
 }
 
@@ -233,7 +238,9 @@ function Dialogue({ rows, audioProps, label }) {
       <div className="ar-c03-transcript">
         {rows.map(([who, line, focus], i) =>
           <div className="ar-c03-transcript-line" key={i}>
-            <span className="ar-c03-transcript-speaker">{who}</span>
+            <img className="ar-c03-transcript-avatar"
+              src={portrait(who === 'Lee' ? 'B' : 'A')}
+              width="26" height="26" alt={who} title={who} loading="lazy"/>
             <p lang="en">{focus ? <Highlight text={line} match={focus}/> : line}</p>
           </div>
         )}

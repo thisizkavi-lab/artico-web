@@ -35,13 +35,19 @@
 .ip-page .ar-c03-listen:hover{background:#244dc8}
 /* Playback belongs inside the conversation, never as a competing header action. */
 .ip-page .ar-c03-listen-compact{
-  width:28px;height:28px;min-width:28px;min-height:28px;
-  border:1px solid #e0e6ef;background:#f2f5f9;color:#72839a;box-shadow:none
+  width:29px;height:29px;min-width:29px;min-height:29px;
+  border:1px solid #dce4ed;background:#eef2f7;color:#506b8a;box-shadow:none
+}
+.ip-page .ar-c03-listen-compact .ar-c03-play-icon{
+  display:block;width:17px;height:17px;flex:none;transform:translateX(1px)
 }
 .ip-page .ar-c03-listen-compact:hover:not(:disabled){
-  background:#e8eef6;color:#415a79
+  background:#e3ebf5;color:#345476
 }
-.ip-page .ar-c03-listen-compact:disabled{opacity:.62;cursor:not-allowed}
+/* Keep a solid, readable play triangle even before recordings are available. */
+.ip-page .ar-c03-listen-compact:disabled{
+  opacity:1;cursor:not-allowed;background:#f0f3f8;color:#667e99
+}
 
 .ip-page .ar-c03-listen:focus-visible,.ip-page .ar-c03-sound:focus-visible{
   outline:3px solid #7da1ea;outline-offset:2px
@@ -93,16 +99,16 @@
 }
 /* Yellow notes are annotations, never equal-weight cards. */
 .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea{
-  align-self:flex-start;flex:none;max-width:calc(100% - 22px);width:fit-content;
-  margin:0 11px 11px;padding:7px 10px;border-radius:8px;
-  background:#fffdf8;border:1px solid #f3eee2;color:#868273
+  align-self:flex-start;flex:none;max-width:calc(100% - 24px);width:fit-content;
+  margin:0 12px 11px;padding:5px 8px;border-radius:7px;
+  background:#fdfcf9;border:1px solid #f4f1eb;color:#8a8c89
 }
 .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea strong{
-  display:block;margin:0 0 2px;color:#958c79;
-  font-size:9.5px;font-weight:600;line-height:1.3
+  display:block;margin:0 0 1px;color:#a09d95;
+  font-size:9px;font-weight:550;line-height:1.3
 }
 .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea p{
-  margin:0;color:#7f817e;font-size:11px;font-weight:400;line-height:1.48
+  margin:0;color:#878983;font-size:10.5px;font-weight:400;line-height:1.45
 }
 .ip-page .ar-c03-dialogue{
   min-width:0;margin-top:8px;padding-top:17px;border-top:1px solid #e9edf3
@@ -127,12 +133,12 @@
   display:flex;flex-direction:column;gap:10px;max-width:76ch
 }
 .ip-page .ar-c03-transcript-line{
-  min-width:0;display:grid;grid-template-columns:32px minmax(0,1fr);
-  gap:14px;align-items:start
+  min-width:0;display:grid;grid-template-columns:26px minmax(0,1fr);
+  gap:12px;align-items:start
 }
-.ip-page .ar-c03-transcript-speaker{
-  padding-top:4px;font-size:10.5px;line-height:1.5;
-  font-weight:650;letter-spacing:.01em;color:#8997a8
+.ip-page .ar-c03-transcript-avatar{
+  display:block;width:26px;height:26px;object-fit:cover;
+  border:1px solid #dfe5ee;border-radius:50%;background:#eef2f7
 }
 .ip-page .ar-c03-transcript-line p{
   min-width:0;margin:0;color:#394b61;font-size:14px;
@@ -234,10 +240,10 @@
  .ip-page .ar-c03-card-top{padding:12px 14px}
  .ip-page .ar-c03-exchange{padding:13px 11px}
  .ip-page .ar-c03-chat-turn{max-width:96%}
- .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea{padding:7px 9px;margin:0 10px 10px}
+ .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea{padding:5px 8px;margin:0 10px 10px}
  .ip-page .ar-c03-dialogue-panel{padding:14px 13px 16px}
  .ip-page .ar-c03-transcript{gap:11px}
- .ip-page .ar-c03-transcript-line{grid-template-columns:29px minmax(0,1fr);gap:9px}
+ .ip-page .ar-c03-transcript-line{grid-template-columns:26px minmax(0,1fr);gap:9px}
  .ip-page .ar-c03-transcript-line p{font-size:13.5px}
  .ip-page .ar-c03-flow{padding:15px 17px 16px}
  .ip-page .ar-c03-question-bubble{width:94%;padding:13px}

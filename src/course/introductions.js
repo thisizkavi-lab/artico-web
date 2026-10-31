@@ -307,7 +307,7 @@ export const introductionSections = [
       work.blocks[0],
       phraseShelf([11], work.title, 'ch02-scene-office-handshake.png'),
       self.blocks[7],
-      self.blocks[8],
+      { ...self.blocks[8], sceneArt: 'ch02-scene-self-introduction.png' },
     ],
   },
   {
@@ -331,7 +331,7 @@ export const introductionSections = [
       connect.blocks[0],
       phraseShelf([17, 18, 19, 20], connect.blocks[1].title, 'ch02-scene-introduce-others.png'),
       connect.blocks[2],
-      connect.blocks[3],
+      { ...connect.blocks[3], sceneArt: 'ch02-scene-introduce-others.png' },
       connect.blocks[4],
       phraseShelf([22, 23], connect.blocks[5].title, 'ch02-scene-gathering.png'),
       connect.blocks[6],

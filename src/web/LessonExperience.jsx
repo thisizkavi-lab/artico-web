@@ -33,10 +33,15 @@ const portraits = {
   Maya: '8855619',
   Eli: '278299',
   Priya: '277786664',
-  Anna: '278299',
-  Satoshi: '277786664',
   Daniel: '3957303430',
   Sam: '291416',
+}
+const chapter02Portraits = {
+  Alex: 'portrait-ch02-alex.svg',
+  Anna: 'portrait-ch02-anna.svg',
+  Satoshi: 'portrait-ch02-satoshi.svg',
+  Daniel: 'portrait-ch02-daniel.svg',
+  Sam: 'portrait-ch02-sam.svg',
 }
 const familiarLabel = (value) => familiarityOptions.find((option) => option.value === value)?.label
 const scrollTo = (id) =>
@@ -146,7 +151,7 @@ function Conversation({ block, audioProps, focusedId }) {
         {block.phrases.map((id, index) => {
           const item = introductionById[id]
           const outgoing = conversationSide(speakers, item.speaker, index) === 'outgoing'
-          const portrait = item.portrait ?? (portraits[item.speaker] ? `portrait-${portraits[item.speaker]}.svg` : null)
+          const portrait = item.portrait ?? chapter02Portraits[item.speaker] ?? (portraits[item.speaker] ? `portrait-${portraits[item.speaker]}.svg` : null)
           return (
             <div key={id} className={`ip-turn ${outgoing ? 'is-outgoing' : 'is-incoming'}`}>
               {portrait && <img className="ip-person" src={art(portrait)} width="32" height="32" alt="" />}

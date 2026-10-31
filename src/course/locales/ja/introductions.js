@@ -100,10 +100,7 @@ const copy = {
   'Morgan, this is Avery. Avery, this is my colleague Morgan. — Nice to meet you. How do you know Taylor? — We work together.': 'モーガン、こちらはアベリーです。アベリー、こちらは同僚のモーガンです。— はじめまして。テイラーとはどういう知り合いですか。— 一緒に働いています。',
   'Oh, yes. Good to see you again.': 'ああ、そうでしたね。また会えてうれしいです。',
 
-  'Meet someone at work': '仕事の場で初めて会う',
-  'At work': '仕事の場で',
   'Introduce two people': '二人を引き合わせる',
-  'Introduce others': '人を紹介する',
   'Start with your name': 'まず名前を伝える',
   'Add one useful detail': '役立つ情報を一つ添える',
   'If you missed the name': '名前を聞き取れなかったとき',
@@ -146,6 +143,8 @@ const copy = {
   'You are Avery, a friend of Taylor’s. Introduce yourself to Morgan at a gathering. When Morgan says “Nice to meet you,” try both natural replies in separate attempts.': 'あなたはTaylorの友人、Averyです。集まりでMorganに自己紹介しましょう。Morganが「はじめまして」と言ったら、二つの自然な返事を別々に試してください。',
   'You are Daniel Reed, a researcher. You normally go by Dan. Meet Satoshi, a project manager. Introduce yourself, explain the name you use, and mention your team.': 'あなたは研究者のDaniel Reedです。普段はDanと呼ばれています。プロジェクトマネージャーのSatoshiに会い、自己紹介をして、普段使う名前と所属チームを伝えましょう。',
   "Daniel Reed. I go by Dan. It's a pleasure to meet you. — Likewise. Please call me Satoshi. — Thanks, Satoshi. I'm on the research team.": 'ダニエル・リードです。普段はダンと呼ばれています。お会いできてうれしいです。— こちらこそ。サトシと呼んでください。— ありがとうございます、サトシ。研究チームに所属しています。',
+  'This is a traditional greeting, not a question about your job. It is useful to recognize, but you do not need it for every introduction.': 'これは仕事について尋ねる質問ではなく、伝統的なあいさつです。知っておくと役立ちますが、すべての自己紹介で使う必要はありません。',
+  'Use this after speaking online when you are meeting face to face for the first time.': 'オンラインで話した相手と、初めて直接会うときに使います。',
 
 }
 const meaning = {

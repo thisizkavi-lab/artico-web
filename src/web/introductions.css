@@ -1942,6 +1942,15 @@
   cursor: not-allowed;
   background: transparent;
 }
+/* Keep a spoken line's audio immediately after the words, not at the bubble edge. */
+.ip-page .ar-ch02-study .ar-ch02-spoken-line .ip-phrase-text {
+  display: inline;
+}
+.ip-page .ar-ch02-study .ar-ch02-spoken-line .ip-audio {
+  display: inline-grid;
+  vertical-align: middle;
+  margin-left: 4px;
+}
 .ip-page .ar-ch02-study .ar-ch02-replies-embedded {
   margin-top: 5px;
   padding-top: 10px;
@@ -2052,11 +2061,14 @@
   line-height: 1.5;
 }
 .ip-page .ar-ch02-expression {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: block;
   min-width: 0;
-  gap: 8px;
+}
+/* Inline formatting lets the icon follow the final word even in a wide table cell. */
+.ip-page .ar-ch02-expression .ip-audio {
+  display: inline-grid;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 .ip-page .ar-ch02-english {
   color: #203852;
@@ -2236,8 +2248,17 @@
   line-height: 1.46;
   overflow-wrap: break-word;
 }
+.ip-page .ar-ch02-study .ar-ch02-branch-line {
+  display: block;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-line p {
+  display: inline;
+  flex: none;
+}
 .ip-page .ar-ch02-study .ar-ch02-branch-line .ip-audio {
-  margin: -1px -5px -4px 0;
+  display: inline-grid;
+  vertical-align: middle;
+  margin: 0 0 0 4px;
 }
 .ip-page .ar-ch02-study .ar-ch02-branch-ja {
   margin: 5px 0 0;

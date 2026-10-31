@@ -99,14 +99,18 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
       )}
       <div className="ip-phrase-copy">
         {item.register && <span className="ip-register">{item.register}</span>}
-        {conversation ? <p className="ip-phrase-text" lang="en">{item.en}</p> :
+        {conversation ? (lessonId === '02'
+            ? <div className="ar-ch02-spoken-line">
+                <span className="ip-phrase-text" lang="en">{item.en}</span>
+                <PhraseAudio item={item} {...audioProps} />
+              </div>
+            : <p className="ip-phrase-text" lang="en">{item.en}</p>) :
           individual.length ? <ul className="ip-word-alternatives">
             {individual.map((part) => <li key={part.id}><span className="ip-phrase-text" lang="en">{part.en}</span><PhraseAudio item={part} {...audioProps} /></li>)}
           </ul> : <p className="ip-phrase-text" lang="en">{item.en}</p>}
         {!conversation && <p className="ip-context">{item.context}</p>}
         {conversation && language === 'ja' && item.ja && <p className="ip-phrase-support" lang="ja">{item.ja}</p>}
       </div>
-      {conversation && lessonId === '02' && <PhraseAudio item={item} {...audioProps} />}
       {!conversation && !individual.length && <PhraseAudio item={item} {...audioProps} />}
     </article>
   )

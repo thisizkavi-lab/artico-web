@@ -59,6 +59,7 @@ export function addPhraseBank(lesson) {
             section: section.id,
             speaker: turn.speaker,
             portrait: turn.portrait,
+            ja: turn.ja ?? '',
             kind: 'phrase',
           })
           block.phraseIds.push(id)

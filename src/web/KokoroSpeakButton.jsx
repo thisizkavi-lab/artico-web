@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { speakKokoroSpeech, stopKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
 import { vocabularySpokenText, vocabularyPrefersDeviceVoice } from './vocabularySpokenText'
+import { readVocabularyVoiceMode } from './vocabularyVoiceMode'
 import './kokoro-speech.css'
 
 // Keeps a pronunciation control separate from cards' reveal/click actions.
@@ -46,9 +47,11 @@ export default function KokoroSpeakButton({ text, japanese = false, rate = 0.95,
       stopKokoroSpeech()
       return
     }
+    const useOfflineVoice = readVocabularyVoiceMode() === 'offline'
     void speakKokoroSpeech(spoken, {
       rate,
-      preferDevice,
+      preferDevice: !useOfflineVoice && preferDevice,
+      forceModel: useOfflineVoice,
       onLoading: () => setPhase('loading'),
       onStart: () => setPhase('playing'),
       onCancel: () => setPhase('idle'),

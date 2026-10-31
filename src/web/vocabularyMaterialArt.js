@@ -31,8 +31,8 @@ const art = {
     src: 'https://cdn.meshy.ai/landing-assets/textures/paper/crumpled-white-paper/crumpled-white-paper-2k.jpg',
   },
   plastic: {
-    type: 'library-png',
-    src: 'https://www.svgrepo.com/download/462300/plastic-bottle.svg',
+    type: 'png',
+    src: import.meta.env.BASE_URL + 'vocabulary-course/05/plastic-containers.webp',
   },
   silk: {
     type: 'png',

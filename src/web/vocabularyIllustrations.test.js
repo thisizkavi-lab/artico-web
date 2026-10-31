@@ -188,6 +188,9 @@ test('Lesson 14 body vocabulary has intentional art for every previously unillus
     assert.ok(art.includes("'"+term+"'"),'Missing lesson 14 drawing: '+term)
   for(const term of ['blink','nod','smile'])
     assert.ok(art.includes("'"+term+"'"),'Existing static art should also move: '+term)
+  const userPhoto = load('../../public/vocabulary-course/05/plastic-containers.webp')
+  assert.ok(userPhoto.length > 10000, 'Use the supplied real-world plastic containers photograph')
+  assert.match(material,/vocabulary-course\\/05\\/plastic-containers\\.webp/)
   assert.match(visual,/vocabularyBodyIllustration\(term, chapter\)/)
   assert.match(view,/visual\?\.type === 'body-art'/)
   assert.match(motion,/@media\(prefers-reduced-motion:reduce\)/)
@@ -364,7 +367,6 @@ test('Lesson 05 materials and fabrics use nine reviewed CC0 internet images',()=
     'https://cdn.meshy.ai/landing-assets/textures/leather/brown-leather/brown-leather-2k.jpg',
     'https://cdn.meshy.ai/landing-assets/textures/metal/brushed-stainless-steel/brushed-stainless-steel-2k.jpg',
     'https://cdn.meshy.ai/landing-assets/textures/paper/crumpled-white-paper/crumpled-white-paper-2k.jpg',
-    'https://www.svgrepo.com/download/462300/plastic-bottle.svg',
     'https://www.publicdomainpictures.net/pictures/620000/velka/textil-seide-hintergrund-textur-1717793189VVB.jpg',
   ])assert.ok(material.includes(url), 'Missing source URL: '+url)
   assert.match(visual,/vocabularyMaterialArt\(term, chapter\)/)

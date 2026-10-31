@@ -48,11 +48,11 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
   return (
     <section className={'ar-reference-shelf' + (hasCompleteArt ? '' : ' ar-reference-no-art') + (note ? ' ar-reference-with-note' : '')}
       aria-label={title || (language === 'ja' ? 'フレーズ' : 'Phrases')}>
+      <h3 className="ar-reference-heading">{title || (language === 'ja' ? 'フレーズ' : 'Phrases')}</h3>
       {hasCompleteArt && <div className="ar-reference-stage" aria-hidden="true">
         <img src={art(current.art)} alt="" loading="lazy" />
       </div>}
       <div className="ar-reference-shelf-main">
-        <h3>{title || (language === 'ja' ? 'フレーズ' : 'Phrases')}</h3>
         <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? 'フレーズを選んで発音を聞く' : 'Listen to a phrase'}>
           {items.map((item, index) => (
             <button type="button" key={item.id}

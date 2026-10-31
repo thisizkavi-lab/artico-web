@@ -351,7 +351,7 @@ test('Lesson 05 little shows a kitten beside an adult cat, not a repeated mug',(
 })
 
 
-test('Lesson 05 materials and fabrics use curated internet images and the supplied plastic photo',()=>{
+test('Lesson 05 materials use uploaded photos, curated images, and the supplied plastic photo',()=>{
   const material=load('vocabularyMaterialArt.js')
   const visual=load('vocabularyVisual.js')
   const terms=['material / materials (plural)','denim','fabric','glass','leather','metal','paper','plastic','silk']
@@ -360,14 +360,18 @@ test('Lesson 05 materials and fabrics use curated internet images and the suppli
   assert.ok(existsSync(userPhoto), 'Use the supplied real-world plastic containers photograph')
   assert.ok(statSync(userPhoto).size > 10000, 'Keep the locally bundled plastic photograph intact')
   assert.ok(material.includes('vocabulary-course/05/plastic-containers.webp'))
+  // Four user-supplied photos replaced the original external material URLs.
+  // Check each is actually embedded and selected for its matching vocabulary term.
+  for(const term of ['glass','leather','metal','paper']){
+    const embedded=material.match(new RegExp("^  "+term+": 'data:image/webp;base64,([A-Za-z0-9+/=]+)'", 'm'))
+    assert.ok(embedded && embedded[1].length>500, 'Missing uploaded WebP photo: '+term)
+    assert.ok(material.includes("src: uploadedPhotos."+term), 'Material card not using the uploaded photo: '+term)
+  }
+
   for(const url of [
     'https://www.publicdomainpictures.net/pictures/780000/velka/material-texture-collage-1776848321uoZ.jpg',
     'https://cdn.meshy.ai/landing-assets/textures/fabric/washed-blue-denim/washed-blue-denim-2k.jpg',
     'https://cdn.meshy.ai/landing-assets/textures/fabric/natural-linen-weave/natural-linen-weave-2k.jpg',
-    'https://www.svgrepo.com/download/166157/drink-in-transparent-glass-bottle.svg',
-    'https://cdn.meshy.ai/landing-assets/textures/leather/brown-leather/brown-leather-2k.jpg',
-    'https://cdn.meshy.ai/landing-assets/textures/metal/brushed-stainless-steel/brushed-stainless-steel-2k.jpg',
-    'https://cdn.meshy.ai/landing-assets/textures/paper/crumpled-white-paper/crumpled-white-paper-2k.jpg',
     'https://www.publicdomainpictures.net/pictures/620000/velka/textil-seide-hintergrund-textur-1717793189VVB.jpg',
   ])assert.ok(material.includes(url), 'Missing source URL: '+url)
   assert.match(visual,/vocabularyMaterialArt\(term, chapter\)/)

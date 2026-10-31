@@ -392,3 +392,20 @@ test('Lesson 05 age and brand use dedicated, full-scene course illustrations',()
     assert.ok(statSync(file).size<=80*1024,'Keep '+term+' illustration optimized for vocabulary cards')
   }
 })
+
+
+test('Lesson 06 positive opinions from amazing through good use ten optimized original WebP illustrations',()=>{
+  const manifest=JSON.parse(load('vocabularyCourseArt.json'))
+  const lesson=source.lessons.find(x=>x.sourceLesson===6)
+  const positive=lesson.groups.find(g=>g.title==='Positive opinions and impressions').items.map(x=>x[0])
+  const terms=['amazing','beautiful','breathtaking','brilliant','delicious','exciting','extraordinary','fantastic','fun','good']
+  assert.deepEqual(positive.slice(0,10),terms)
+  for(const term of terms){
+    assert.equal(manifest.entries['6:'+term],'06/'+term)
+    const file=readFileSync(new URL('../../public/vocabulary-course/06/'+term+'.webp',import.meta.url))
+    assert.ok(file.length>10000 && file.length<=80*1024,'Unexpected size for '+term+': '+file.length)
+    assert.equal(file.toString('ascii',0,4),'RIFF',term+' must be WebP')
+    assert.equal(file.toString('ascii',8,12),'WEBP',term+' must be WebP')
+  }
+  assert.ok(load('vocabularyCourseArt.js').includes("import.meta.env.BASE_URL"))
+})

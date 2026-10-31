@@ -52,6 +52,23 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
+      - name: Install ten Lesson 06 positive-opinion WebP illustrations
+        run: |
+          mkdir -p public/vocabulary-course/06
+          unzip -oq scripts/artico-lesson-06-positive-opinions-webp.zip -d public/vocabulary-course/06
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          terms = ["amazing","beautiful","breathtaking","brilliant","delicious","exciting","extraordinary","fantastic","fun","good"]
+          root = Path('public/vocabulary-course/06')
+          for term in terms:
+              path = root / f'{term}.webp'
+              assert path.is_file() and path.stat().st_size <= 80 * 1024, term
+              with Image.open(path) as image:
+                  assert image.size == (608, 384), (term, image.size)
+          print('Verified ten 608x384 Lesson 06 WebP illustrations')
+          PY
+
       - name: Install ten original Meals illustrations and validate remaining Lesson 04 artwork
         run: python3 scripts/fetch_lesson04_public_domain.py
 
@@ -164,6 +181,13 @@ jobs:
 
       - name: Build site
         run: pnpm run build
+
+      - name: Verify Lesson 06 positive-opinion WebP illustrations reach Pages
+        run: |
+          test "$(find dist/vocabulary-course/06 -maxdepth 1 -name '*.webp' -type f | wc -l)" -eq 10
+          for key in amazing beautiful breathtaking brilliant delicious exciting extraordinary fantastic fun good; do
+            test -s "dist/vocabulary-course/06/$key.webp"
+          done
 
       - name: Verify all sixteen Daily Routines PNGs reach Pages
         run: |

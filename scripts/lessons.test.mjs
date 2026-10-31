@@ -231,6 +231,9 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.match(phraseShelf, /if\(!clickToExplain\)play/)
   assert.match(phraseShelf, /!clickToExplain && language === 'ja'/)
   assert.match(experience, /clickToExplain/)
+  assert.match(experience, /contextJa: item\.context/)
+  assert.match(experience, /width="760" height="476"/)
+
 
   assert.match(experience, /GreetingsPhraseShelf/)
   assert.match(experience, /ar-ch02-study/)

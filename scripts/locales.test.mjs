@@ -68,7 +68,18 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p11').ja, 'こんにちは、サトシです。プロジェクトマネージャーをしています。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p13').ja, 'こちらこそ。サトシと呼んでください。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p15').ja, '普段はダンと呼ばれています。')
-  assert.doesNotMatch(JSON.stringify(ja), /\\b(Maya|Eli|Priya|Jordan)\\b/)
+  assert(ja.phrases.filter((item) => item.section !== 'words').every((item) => japanese.test(item.ja)))
+  const translatedCopy = [
+    ...ja.phrases.flatMap((item) => [item.context, item.register]),
+    ...ja.sections.flatMap((section) => [
+      section.title, section.short,
+      ...section.blocks.flatMap((block) => [block.title, block.text, block.alt, block.contextText]),
+    ]),
+    ...ja.scenarios.flatMap((item) => [item.title, item.prompt, item.sample]),
+  ].filter(Boolean).join('\n')
+  assert.doesNotMatch(translatedCopy, /\b(?:Alex|Anna|Cassie|Satoshi|Daniel|Sam|Dan|Avery|Taylor|Morgan)\b/)
+  assert.match(translatedCopy, /サトシ/)
+  assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
   assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
 })
 

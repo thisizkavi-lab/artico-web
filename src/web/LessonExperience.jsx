@@ -1,6 +1,7 @@
 import { useLanguage } from './Language'
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { approvedAudio, useAudio } from './components'
+import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
 import Glyph from './Glyph'
 import LessonFooter from './LessonFooter'
 import ScenarioQuiz from './ScenarioQuiz'
@@ -47,14 +48,14 @@ export { default as Glyph } from './Glyph'
 
 export function PhraseAudio({ item, audio, activeId, onPlay }) {
   const { t, language } = useLanguage()
-  const ready = Boolean(approvedAudio[item.id])
+  const ready = Boolean(approvedAudio[item.id] || item.en)
   const playing = activeId === item.id && audio.playing
   return (
     <button
       type="button"
       className="ip-audio"
       disabled={!ready}
-      title={ready ? t("Listen to this phrase") : t("Recording coming soon")}
+      title={ready ? t("Listen to this phrase") : t("Audio unavailable")}
       aria-label={
         ready
           ? t(playing ? 'Pause: {phrase}' : 'Listen to: {phrase}', { phrase: item.en })
@@ -113,28 +114,21 @@ function ConversationAudio({ block, audioProps }) {
   const playing = ready && audioProps.activeId === id && audioProps.audio.playing
   const listen = () => {
     if (ready) {
-      if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+      stopKokoroSpeech()
       audioProps.onPlay(id)
       return
     }
-    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
     const lines = block.phrases.map(phraseId => byId[phraseId]?.en).filter(Boolean)
     if (!lines.length) return
     audioProps.audio.stop()
-    window.speechSynthesis.cancel()
-    const speech = new window.SpeechSynthesisUtterance(lines.join('  '))
-    speech.lang = 'en-US'
-    speech.rate = 0.91
-    const voice = window.speechSynthesis.getVoices().find(candidate => candidate.lang.toLowerCase() === 'en-us')
-    if (voice) speech.voice = voice
-    window.speechSynthesis.speak(speech)
+    void speakKokoroSpeech(lines.join(' '), { rate: 0.91 })
   }
   return (
     <button
       type="button"
       className="ip-conversation-audio"
       aria-label={playing ? t('Pause conversation audio') : t('Play full conversation')}
-      title={ready ? t('Listen to the full conversation') : t('Listen using browser voice')}
+      title={ready ? t('Listen to the full conversation') : t('Listen with Kokoro')}
       onClick={listen}
     >
       <Glyph name={playing ? 'pause' : 'play'} size={16} />
@@ -187,19 +181,12 @@ function Study({ audioProps, focusedId }) {
   } = useLesson()
   const playIllustratedPhrase = (item) => {
     if (approvedAudio[item.id]) {
-      if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+      stopKokoroSpeech()
       audioProps.onPlay(item.id)
       return
     }
-    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
     audioProps.audio.stop()
-    window.speechSynthesis.cancel()
-    const utterance = new window.SpeechSynthesisUtterance(item.en)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.9
-    const voice = window.speechSynthesis.getVoices().find((candidate) => candidate.lang.toLowerCase() === 'en-us')
-    if (voice) utterance.voice = voice
-    window.speechSynthesis.speak(utterance)
+    void speakKokoroSpeech(item.en, { rate: 0.9 })
   }
   return (
     <div className="ip-reading ar-shared-study">
@@ -601,7 +588,7 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
     audioProps.audio.stop()
     headingRef.current?.focus({ preventScroll: true })
   }, [item.id])
-  const ready = Boolean(approvedAudio[item.id])
+  const ready = Boolean(approvedAudio[item.id] || item.en)
   const saved = learning.saved.includes(item.id)
   const move = (direction) => {
     audioProps.audio.stop()
@@ -771,7 +758,7 @@ function Experience({ route, learning, update, save, notify }) {
     byId: introductionById,
     onPlay: (id, restart = false) => {
       setActiveId(id)
-      audio.play(id, 1, restart)
+      audio.play(id, 1, restart, introductionById[id]?.en ?? practiceById[id]?.en ?? '')
     },
   }
   const rawFocus = introductionAliases[route.line] ?? route.line

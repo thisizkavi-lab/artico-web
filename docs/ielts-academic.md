@@ -2,6 +2,29 @@
 
 Entry: `#/application/tests` → `#/application/tests/ielts/home/study`.
 
+## Learner-facing navigation (October 2026 refresh)
+
+The IELTS landing page has **six destinations**: Everything about IELTS,
+Listening, Reading, Writing, Speaking, and Mock Tests. This matches Artico's
+Social Fluency principles: understated blue/paper surfaces, quiet context text,
+one clear action per card, and yellow notes beside worked examples.
+
+- **Study** opens the full existing curriculum. The manual-orientation unit
+  remains valid for old links but is not the learner's first lesson.
+- **Practice** gives each skill its own interactive drills and review.
+- **Mock Tests** groups **Guided test** (four short annotated workshop sets)
+  and **Simulated test** (full simulation not yet released).
+- The older `guided`, `mocks`, and `simulation` URLs remain reachable to
+  preserve existing bookmarks, history, and attempt references.
+- The two-task timed Writing rehearsal is available; Listening, Reading and
+  Speaking full-length forms remain incomplete. Never label shortened sets as
+  official or calibrated mocks.
+
+The current feature branch changes presentation and navigation, not the IELTS
+question pool, content grading, storage format, or running workspaces.
+It does not deploy to GitHub Pages until reviewed and merged through the
+repository's normal process.
+
 ## Released structure
 
 The IELTS track provides two complementary, non-overlapping modes accessible via the top-level mode toggle:
@@ -14,7 +37,7 @@ The IELTS track provides two complementary, non-overlapping modes accessible via
    - Module 5: Speaking (`speaking`, 10 units) covering the 3-part face-to-face interview, long turn preparation, abstract discussion, pronunciation, and criteria.
    Zero gamification: no streaks, XP, points, badges, confetti, or locked units.
 
-2. **Practice Mode:** Interactive rehearsal workspaces across eight directories: Overview, Speaking, Writing, Listening, Reading, Guided Sets, Individual Skill Mocks, Full Simulations.
+2. **Practice Mode:** Six visible learner destinations, with existing guided exercises, individual skill rehearsals, and a future full-simulation screen grouped under Mock Tests.
 
 The IELTS Study / Practice control and all instructional content are English-only. Other courses retain their existing explanation language.
 

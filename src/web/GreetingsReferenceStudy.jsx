@@ -78,8 +78,8 @@ const jpCheckinLabels = {
   'Add after your answer':'自分の返事の後に続ける',
 }
 const noteEveryday = {
-  en:'Hi is friendly and works in most situations. Hello is neutral and can feel slightly more formal. Hey is more casual, especially with people you know.',
-  ja:'Hi は親しみやすく幅広い場面で使えます。Hello は中立的で少し丁寧に響くこともあります。Hey はもっとくだけた言い方で、親しい相手に向いています。',
+  en:<><strong>Hi</strong> is friendly and works in most situations. <strong>Hello</strong> is neutral and can feel slightly more formal. <strong>Hey</strong> is more casual, especially with people you know.</>,
+  ja:<><strong>Hi</strong> は親しみやすく幅広い場面で使えます。<strong>Hello</strong> は中立的で少し丁寧に響くこともあります。<strong>Hey</strong> はもっとくだけた言い方で、親しい相手に向いています。</>,
 }
 const noteTime = {
   en:'Good evening is for meeting someone in the evening. Good night is usually for leaving or going to bed—not for starting a conversation.',
@@ -168,8 +168,8 @@ function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, c
         </button>)}
       </div>
       <div className="ar-context" aria-live="polite">{language === 'ja' ? jpContext[option.text] || option.description : option.description}</div>
-      {note && <aside className="ar-note ar-shelf-note"><strong>Note</strong>{language === 'ja' ? note.ja : note.en}</aside>}
     </div>
+    {note && <aside className="ar-note ar-shelf-note"><span className="ar-note-label">Note</span><p className="ar-note-copy">{language === 'ja' ? note.ja : note.en}</p></aside>}
   </article>
 }
 

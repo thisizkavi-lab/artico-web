@@ -31,7 +31,7 @@ const topicHref = (number) => `${vocabularyIndex}/${String(number).padStart(2, '
 function VoiceSettings({ japanese }) {
   const [mode, setMode] = useState(readVocabularyVoiceMode)
   const select = (event) => {
-    const next = event.target.value === 'offline' ? 'offline' : 'auto'
+    const next = event.target.value === 'device' ? 'device' : 'kokoro'
     setMode(next)
     writeVocabularyVoiceMode(next)
   }
@@ -41,12 +41,12 @@ function VoiceSettings({ japanese }) {
       <div className="vl-voice-settings-panel">
         <label htmlFor="vl-voice-mode">{japanese ? '単語の発音方法' : 'Vocabulary pronunciation'}</label>
         <select id="vl-voice-mode" value={mode} onChange={select}>
-          <option value="auto">{japanese ? '自動（推奨）' : 'Automatic (recommended)'}</option>
-          <option value="offline">{japanese ? 'オフラインモデルを使用' : 'Use offline voice model'}</option>
+          <option value="kokoro">{japanese ? 'Kokoro（標準）' : 'Kokoro (default)'}</option>
+          <option value="device">{japanese ? '端末の音声（高速）' : 'Device voice (faster)'}</option>
         </select>
-        <p>{mode === 'offline'
-          ? (japanese ? 'システムの音声を使わずに音声を生成します。初回は大きなモデルをダウンロードするため、時間がかかることがあります。' : 'Bypasses the system voice. First use downloads a large model, and older computers may synthesize slowly.')
-          : (japanese ? '高速なシステム音声を優先し、動かない場合はオフラインモデルを試します。' : 'Uses the fast system voice first; attempts offline synthesis if that fails.')}
+        <p>{mode === 'kokoro'
+          ? (japanese ? '初回の再生時にモデルを読み込みます。古い端末では音声の生成に時間がかかる場合があります。' : 'Loads Kokoro when you first play audio. Older laptops may generate speech slowly.')
+          : (japanese ? '端末の音声を優先します。音声が使えない場合はKokoroに切り替えます。' : 'Uses the built-in system voice. Falls back to Kokoro if it cannot speak.')}
         </p>
       </div>
     </details>

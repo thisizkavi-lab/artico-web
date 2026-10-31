@@ -349,3 +349,23 @@ test('Vocabulary topics and group headings have pronunciation controls', () => {
   assert.match(numbersUi,/KokoroSpeakButton text=\{group\.en\}/)
   assert.match(countriesUi,/KokoroSpeakButton text="Countries and nationalities"/)
 })
+
+
+test('Lesson 05 colors use reference-style SVG swatches only in the color group', () => {
+  const organized = JSON.parse(readFileSync(new URL('./vocabularyOrganized.json', import.meta.url), 'utf8'))
+  const colors = organized.lessons.find(lesson => lesson.sourceLesson === 5).groups[0].items
+  assert.ok(colors.some(([term]) => term === 'yellow'), 'yellow is included in the core color vocabulary')
+  const visual = readFileSync(new URL('./vocabularyVisual.js', import.meta.url), 'utf8')
+  const swatch = readFileSync(new URL('./VocabularyColorSwatch.jsx', import.meta.url), 'utf8')
+  const topic = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const support = readFileSync(new URL('./vocabularySupport.js', import.meta.url), 'utf8')
+  const style = readFileSync(new URL('./vocabulary-topic.css', import.meta.url), 'utf8')
+  assert.match(visual, /chapter === 5 && colorSwatches\[term\]/)
+  assert.match(visual, /type: 'color-swatch'/)
+  assert.match(swatch, /<svg[\s\S]*viewBox="0 0 240 200"/)
+  assert.match(swatch, /showLabel && \([\s\S]*<text/)
+  assert.match(topic, /showLabel=\{!answerHidden\}/)
+  assert.match(topic, /vlt-color-grid/)
+  assert.match(support, /'5:yellow':'黄色'/)
+  assert.match(style, /\.vlt-grid\.vlt-color-grid\{grid-template-columns:repeat\(2/)
+})

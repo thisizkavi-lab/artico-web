@@ -1,11 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
 import KokoroSpeakButton from './KokoroSpeakButton'
-import { prefetchKokoroSpeech, warmKokoroSpeech } from './kokoroSpeech'
-import { vocabularySpokenText } from './vocabularySpokenText'
 import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
@@ -323,15 +321,6 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   }, {fresh:0,revisited:0}), [groups,topic.sourceLesson])
   const shownGroups = groupIndex === -1 ? activeGroups : activeGroups.filter(group=>group.index===groupIndex)
   const canRecall = (term) => Boolean(vocabularyJapanese(term, topic.sourceLesson) || vocabularyVisual(term, topic.sourceLesson))
-  useEffect(() => {
-    if (mode !== 'study') return
-    warmKokoroSpeech()
-    // Only the first few visible terms. Do not synthesize an entire lesson.
-    const first = shownGroups.flatMap(group =>
-      organizeVocabularyGroup(group.items, topic.sourceLesson).fresh
-        .slice(0, 3).map(entry => entry[0])).slice(0, 3)
-    prefetchKokoroSpeech(first.map(vocabularySpokenText))
-  }, [topic.sourceLesson, groupIndex, mode])
 
 
   function chooseGroup(index) {

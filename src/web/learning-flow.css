@@ -114,3 +114,22 @@
 @media (max-width: 330px) {
   .ip-card-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Chapter 01 Japanese practice labels stay subordinate to English. */
+.ip-page .ip-card-translation {
+  display: block;
+  margin-top: 3px;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #66758b;
+}
+.ip-page .ip-focus-translation {
+  margin: 7px 0 0;
+  color: #66758b;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
+}

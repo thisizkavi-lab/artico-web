@@ -16,7 +16,9 @@ export const introductionPhrases = [
   phrase(2, "I'm Anna. Nice to meet you.", 'Give your name and greet the person you have just met.', 'introduce', {
     speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
   }),
-  phrase(3, 'You too.', 'A short, natural reply to “Nice to meet you.”', 'introduce'),
+  phrase(3, 'You too.', 'A short, natural reply to “Nice to meet you.”', 'introduce', {
+    speaker: 'Alex', portrait: 'portrait-ch02-alex.svg',
+  }),
   phrase(4, 'Hello, my name is Alex.', 'A clear, slightly more formal way to introduce yourself.', 'introduce'),
   phrase(5, 'Nice to meet you too.', 'A fuller reply to “Nice to meet you.”', 'introduce'),
   phrase(6, 'I work with Cassie.', 'Explain that you and Cassie are colleagues.', 'introduce'),
@@ -62,7 +64,9 @@ export const introductionPhrases = [
   phrase(24, "It's nice to finally meet you in person.", 'Meet face to face after talking online.', 'connect'),
   phrase(25, 'Could you say your name again?', 'Ask someone to repeat a name you did not catch.', 'introduce'),
   phrase(26, 'How do you spell it?', 'Ask which letters are in a name.', 'introduce'),
-  phrase(27, "Hi, I'm Alex.", 'A casual, natural way to give your name.', 'introduce'),
+  phrase(27, "Hi, I'm Alex.", 'A casual, natural way to give your name.', 'introduce', {
+    speaker: 'Alex', portrait: 'portrait-ch02-alex.svg',
+  }),
   phrase(29, "I'm a friend of Cassie's.", 'Explain your connection to the host: Cassie is your friend.', 'introduce'),
   phrase(30, 'Nice to meet you.', 'A common greeting when you are introduced to someone for the first time.', 'introduce'),
   phrase(31, "It's a pleasure to meet you.", 'A more formal way to say “Nice to meet you.”', 'work'),
@@ -127,24 +131,33 @@ const conversation = (title, numbers, art, alt, replyAlternatives) => ({
   ...(replyAlternatives ? { replyAlternatives } : {}),
 })
 
+const situationalExamples = (title, examples) => ({
+  type: 'situations',
+  title,
+  examples: examples.map(({ label, hint, numbers }) => ({
+    label,
+    hint,
+    phrases: ids(...numbers),
+  })),
+})
+
 export const introductionSections = [
   {
     id: 'introduce',
-    title: 'Say who you are',
+    title: 'Introduce yourself',
     short: 'Introduce yourself',
     blocks: [
       {
         type: 'text',
-        text: 'Choose an opening that fits the setting: a casual “Hi, I’m Alex,” a more explicit “Hello, my name is Alex,” or a greeting to a group. Then add one useful detail, such as a shared friend, your role, or why you are there.',
+        text: 'Start with your name. Listen to how the other person responds, then return the greeting. This simple exchange works in most everyday first meetings.',
       },
-      phraseShelf([27, 4, 38], 'Ways to introduce yourself', 'ch02-scene-self-introduction.webp'),
       conversation(
-        'At a friend’s gathering',
-        [1, 2],
-        'ch02-scene-gathering.webp',
-        'Alex and Anna talking at a friend’s gathering.',
+        'A natural first introduction',
+        [27, 2, 3],
+        'ch02-scene-self-introduction.webp',
+        'Alex and Anna meeting for the first time.',
         {
-          title: 'Two ways to reply',
+          title: 'Other natural replies',
           promptId: 'ch02-p30',
           choices: [
             { id: 'ch02-p3', label: 'Short' },
@@ -152,20 +165,29 @@ export const introductionSections = [
           ],
         },
       ),
-      phraseShelf([29, 6, 7, 8, 9], 'Add one useful detail', 'ch02-scene-gathering.webp', {
-        title: 'Keep it relevant.',
-        text: 'A friend, job, team, or reason for being there can be enough. Choose the detail that fits this meeting.',
-      }),
-      {
-        type: 'text',
-        text: 'If you are unsure whether you have met before, use a gentle opening that lets the other person recognize you.',
-      },
-      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.webp'),
-      {
-        type: 'text',
-        text: 'If you did not catch someone’s name, ask. You do not need to pretend you heard it.',
-      },
-      phraseShelf([25, 26], 'If you missed the name', 'ch02-scene-self-introduction.webp'),
+      phraseShelf([4, 38], 'Other ways to begin'),
+      situationalExamples('When the situation changes what you say', [
+        {
+          label: 'At a friend’s gathering',
+          hint: 'If Cassie is your connection, say whether you are her friend or coworker.',
+          numbers: [1, 29, 6],
+        },
+        {
+          label: 'At a workshop',
+          hint: 'Mention why you are there when it helps the conversation.',
+          numbers: [9],
+        },
+        {
+          label: 'Not sure you have met before',
+          hint: 'This can replace your usual opening.',
+          numbers: [10],
+        },
+        {
+          label: 'You did not catch their name',
+          hint: 'Ask them to repeat it or spell it.',
+          numbers: [25, 26],
+        },
+      ]),
     ],
   },
   {
@@ -175,7 +197,7 @@ export const introductionSections = [
     blocks: [
       {
         type: 'text',
-        text: 'At work, give your name and role. If you use a different everyday name, tell the other person naturally. A workplace introduction can still sound friendly.',
+        text: 'In a project meeting, people often give their name and role. The same everyday greetings still work; the setting does not require formal language.',
       },
       conversation(
         'At the start of a project meeting',
@@ -183,9 +205,21 @@ export const introductionSections = [
         'ch02-scene-project-meeting.webp',
         'Satoshi and Daniel introducing themselves at a project meeting.',
       ),
-      phraseShelf([15, 31, 32, 33, 37], 'Names and greetings at work', 'ch02-scene-self-introduction.webp'),
-      phraseShelf([16], 'One formal greeting you may hear', 'ch02-scene-formal-meeting.webp', {
-        text: 'This is a traditional greeting, not a question about your job. It is useful to recognize, but you do not need it for every introduction.',
+      phraseShelf([15, 31, 32, 33, 37], 'Other ways to greet and use names'),
+      situationalExamples('When your work is relevant', [
+        {
+          label: 'When your team matters',
+          hint: 'Tell the person which team you belong to.',
+          numbers: [7],
+        },
+        {
+          label: 'When someone asks what you do',
+          hint: 'Give your occupation, not your entire background.',
+          numbers: [8],
+        },
+      ]),
+      phraseShelf([16], 'A traditional formal greeting', undefined, {
+        text: '“How do you do?” is uncommon in everyday American English. Recognize it, but do not treat it as a required introduction.',
       }),
     ],
   },
@@ -196,7 +230,7 @@ export const introductionSections = [
     blocks: [
       {
         type: 'text',
-        text: 'Say both names so neither person is left out. Add a small detail about how the people know one another if it helps them continue talking.',
+        text: 'Say both names so neither person is left out. A shared connection can help them start talking, but it is not required.',
       },
       conversation(
         'Introducing a colleague to a friend',
@@ -204,10 +238,10 @@ export const introductionSections = [
         'ch02-scene-introduce-others.webp',
         'Alex introducing her colleague Sam to Anna.',
       ),
-      phraseShelf([21, 35, 36], 'Introduce someone', 'ch02-scene-introduce-others.webp'),
+      phraseShelf([21, 35, 36], 'Other ways to introduce someone'),
       {
         type: 'text',
-        text: 'If the people might already know each other, check first. Then respond to what the other person actually says.',
+        text: 'If the two people might already know one another, check before introducing them as strangers.',
       },
       conversation(
         'They have met before',
@@ -215,8 +249,8 @@ export const introductionSections = [
         'ch02-scene-reconnect.webp',
         'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       ),
-      phraseShelf([24], 'From online to in person', 'ch02-scene-online-to-person.webp', {
-        text: 'Use this after speaking online when you are meeting face to face for the first time.',
+      phraseShelf([24], 'After meeting online', undefined, {
+        text: 'Use this when you are meeting face to face after talking online.',
       }),
     ],
   },

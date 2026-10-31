@@ -104,12 +104,29 @@ for term, item in catalog["entries"].items():
     p = target / (item["file"] + ".webp")
     assert "/" not in item["file"] and ".." not in item["file"]
     if item.get("assetType") == "original-ai-generated":
-        # Original generated scene is committed to GitHub as a binary asset.
-        # Never fetch it from Pexels or misattribute it to a photographer.
+        # Original generated scenes are committed locally, never fetched from
+        # Pexels or misattributed. Recover the one damaged WebP from its
+        # approved, high-resolution PNG master when necessary.
+        try:
+            with Image.open(p) as generated:
+                generated.verify()
+        except Exception:
+            fallback = root / "public/vocabulary-art/04-feed-the-dog.png" if term == "feed the dog" else None
+            if fallback is None or not fallback.is_file():
+                raise RuntimeError(f"Original generated image missing or invalid in repository: {term}")
+            with Image.open(fallback) as master:
+                master.load()
+                restored = ImageOps.fit(
+                    ImageOps.exif_transpose(master).convert("RGB"),
+                    (608, 384),
+                    method=Image.Resampling.LANCZOS,
+                )
+            restored.save(p, "WEBP", quality=92, method=6)
+            with Image.open(p) as generated:
+                generated.verify()
+            print(f"Restored damaged generated scene from approved PNG master: {term}")
         if not p.is_file() or p.stat().st_size < 4000:
-            raise RuntimeError(f"Original generated image missing from repository: {term}")
-        with Image.open(p) as generated:
-            generated.verify()
+            raise RuntimeError(f"Original generated image is too small: {term}")
         print(f"Verified original generated scene: {term}")
         continue
     if p.is_file() and p.stat().st_size > 4000:

@@ -79,6 +79,15 @@
   padding: 0;
 }
 .vl-lesson-list li { min-width: 0; }
+.vl-lesson-item { position: relative; }
+.vl-lesson-item > .vl-directory-audio {
+  position: absolute;
+  right: 38px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.vl-lesson-item .vl-lesson-link { padding-right: 54px; }
 .vl-lesson-link {
   display: grid;
   grid-template-columns: 35px minmax(0, 1fr) 18px;
@@ -157,6 +166,15 @@
 }
 .vl-bottom-nav a:hover { text-decoration: underline; }
 .vl-detail-heading .vl-subtitle { color: #627697; }
+.vl-detail-title-row,
+.vl01-topic-title-row,
+.vl02-group-title-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.vl-detail-title-row h1,
+.vl01-topic-title-row h2,
+.vl02-group-title-row h3 { min-width: 0; }
+.vl-detail-title-row .artico-speak { width: 36px; height: 36px; padding: 9px; }
+.vl01-topic-title-row .artico-speak,
+.vl02-group-title-row .artico-speak { width: 30px; height: 30px; padding: 7px; }
 .vl-placeholder {
   display: flex;
   flex-direction: column;

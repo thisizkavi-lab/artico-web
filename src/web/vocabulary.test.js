@@ -334,3 +334,18 @@ test('Kokoro is the default; system voice is opt-in for Vocabulary only', () => 
   assert.doesNotMatch(button, /forceModel: useOfflineVoice/)
   assert.match(button, /Test speaker/)
 })
+
+test('Vocabulary topics and group headings have pronunciation controls', () => {
+  const topicUi=readFileSync(new URL('./VocabularyTopicLesson.jsx',import.meta.url),'utf8')
+  const overviewUi=readFileSync(new URL('./Vocabulary.jsx',import.meta.url),'utf8')
+  const numbersUi=readFileSync(new URL('./VocabularyNumbersLesson.jsx',import.meta.url),'utf8')
+  const countriesUi=readFileSync(new URL('./VocabularyCountriesLesson.jsx',import.meta.url),'utf8')
+  const groupJapanese=JSON.parse(readFileSync(new URL('./vocabularyGroupJapanese.json',import.meta.url),'utf8'))
+  assert.equal(groupJapanese['5'][0],'色')
+  assert.match(topicUi,/term !== 'colors'/)
+  assert.match(topicUi,/KokoroSpeakButton text=\{group\.title\}/)
+  assert.match(topicUi,/lang="ja">色<\/p>/)
+  assert.match(overviewUi,/KokoroSpeakButton text=\{topic\.topic\}/)
+  assert.match(numbersUi,/KokoroSpeakButton text=\{group\.en\}/)
+  assert.match(countriesUi,/KokoroSpeakButton text="Countries and nationalities"/)
+})

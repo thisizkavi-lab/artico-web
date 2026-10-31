@@ -8,6 +8,7 @@ const VocabularyCountriesLesson = lazy(() => import('./VocabularyCountriesLesson
 const VocabularyNumbersLesson = lazy(() => import('./VocabularyNumbersLesson'))
 const VocabularyTopicLesson = lazy(() => import('./VocabularyTopicLesson'))
 import { CurriculumIcon } from './CurriculumIcon'
+import KokoroSpeakButton from './KokoroSpeakButton'
 import './vocabulary.css'
 
 
@@ -56,7 +57,7 @@ function VoiceSettings({ japanese }) {
 
 function LessonLink({ topic, japanese }) {
   return (
-    <li>
+    <li className="vl-lesson-item">
       <a className="vl-lesson-link" href={topicHref(topic.sourceLesson)}
         aria-label={japanese ? `レッスン${topic.sourceLesson}：${topic.ja}` : `Lesson ${topic.sourceLesson}: ${topic.topic}`}>
         <span className="vl-lesson-icon" aria-hidden="true"><CurriculumIcon name={vocabularyTopicIcons[topic.sourceLesson - 1] ?? 'book'} size={27} /></span>
@@ -66,6 +67,7 @@ function LessonLink({ topic, japanese }) {
         </span>
         <span className="vl-lesson-arrow" aria-hidden="true">→</span>
       </a>
+      <KokoroSpeakButton text={topic.topic} japanese={japanese} className="vl-directory-audio" />
     </li>
   )
 }
@@ -116,7 +118,10 @@ function VocabularyLesson({ topic, japanese }) {
       </a>
       <header className="vl-heading vl-detail-heading">
         <p className="vl-eyebrow">VOCABULARY · LESSON {number}</p>
-        <h1 lang={japanese ? 'ja' : 'en'}>{japanese ? topic.ja : topic.topic}</h1>
+        <div className="vl-detail-title-row">
+          <h1 lang={japanese ? 'ja' : 'en'}>{japanese ? topic.ja : topic.topic}</h1>
+          <KokoroSpeakButton text={topic.topic} japanese={japanese} className="vl-topic-audio" />
+        </div>
         <p className="vl-subtitle" lang={japanese ? 'en' : 'ja'}>{japanese ? topic.topic : topic.ja}</p>
         <VoiceSettings japanese={japanese} />
       </header>

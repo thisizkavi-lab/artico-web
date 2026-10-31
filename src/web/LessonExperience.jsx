@@ -1,7 +1,7 @@
 import { useLanguage } from './Language'
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { approvedAudio, useAudio } from './components'
-import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
+import { speakKokoroSpeech, stopKokoroSpeech, warmKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
 import Glyph from './Glyph'
 import LessonFooter from './LessonFooter'
 import ScenarioQuiz from './ScenarioQuiz'
@@ -752,6 +752,7 @@ function Experience({ route, learning, update, save, notify }) {
   const set = getPracticeSet(learning.practiceSets?.[id], catalog.items, legacySet(learning), catalog)
   const [activeId, setActiveId] = useState(null)
   const audio = useAudio(notify)
+  useEffect(() => { warmKokoroSpeech() }, [id])
   const audioProps = {
     audio,
     activeId,
@@ -759,6 +760,8 @@ function Experience({ route, learning, update, save, notify }) {
     onPlay: (id, restart = false) => {
       setActiveId(id)
       audio.play(id, 1, restart, introductionById[id]?.en ?? practiceById[id]?.en ?? '')
+      const index = introductionPhrases.findIndex(item => item.id === id)
+      if (index >= 0) prefetchKokoroSpeech(introductionPhrases.slice(index + 1, index + 3).map(item => item.en))
     },
   }
   const rawFocus = introductionAliases[route.line] ?? route.line

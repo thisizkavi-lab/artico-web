@@ -55,11 +55,13 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
       ...(block.phrases ?? []),
       ...(block.choices?.map((choice) => choice.id) ?? []),
       ...(block.promptId ? [block.promptId] : []),
+      ...(block.replyAlternatives?.choices?.map((choice) => choice.id) ?? []),
+      ...(block.replyAlternatives?.promptId ? [block.replyAlternatives.promptId] : []),
     ]),
   )
   const ids = introductionPhrases.map((item) => item.id)
   const spoken = introductionPhrases.filter((item) => item.section !== 'words')
-  assert.equal(new Set(ids).size, 41)
+  assert.equal(new Set(ids).size, 40)
   // Conversations, phrase shelves and the reply prompt share one stable phrase bank.
   // Every spoken target must appear in Study and remain reachable in Practice.
   assert.ok(displayed.every(id => ids.includes(id)))
@@ -73,12 +75,12 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   }
   for (const target of Object.values(introductionAliases)) assert.ok(ids.includes(target))
   assert.ok(introductionPhrases.some((item) => item.en === 'I go by Dan.'))
-  assert.ok(introductionPhrases.some((item) => item.en === 'This is ...'))
+  assert.ok(introductionPhrases.some((item) => item.en === 'Hello, everyone. This is Alex.'))
   assert.ok(introductionPhrases.some((item) => item.en === 'What should I call you?'))
   const restoredExpressions = [
-    "I'm ...", 'My name is ...', "A friend of Cassie's", 'Nice to meet you.',
-    "It's a pleasure to meet you.", 'Likewise.', 'Please call me Satoshi.', 'Hi',
-    'This is ...', "I'd like you to meet ...",
+    "Hi, I'm Alex.", 'Hello, my name is Alex.', "Hello, everyone. I'm Alex.",
+    "I'm a friend of Cassie's.", 'Hello, everyone. This is Alex.', 'Let me introduce Alex.',
+    'Nice to meet you.', "It's a pleasure to meet you.", 'Likewise.', 'Please call me Satoshi.',
   ]
   for (const expression of restoredExpressions)
     assert.ok(introductionPhrases.some((item) => item.en === expression), `Missing restored expression: ${expression}`)

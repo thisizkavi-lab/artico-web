@@ -112,11 +112,32 @@ const story = [
   ['Ari', "Oh, that's good.", "Oh, that's good."],
 ]
 
+// The extended exchanges are always visible. Each target phrase has a
+// conversational reason to appear, rather than being recited in a list.
 const concert = [
   ['Ari', 'Did you enjoy the concert?', ''],
   ['Lee', 'Well, the music was great. The room was just too crowded.', 'Well'],
-  ['Ari', 'Oh, right.', 'Oh, right.'],
+  ['Ari', 'Oh, right.', ''],
   ['Lee', "I mean, I enjoyed it, but I wouldn't choose that venue again.", 'I mean,'],
+  ['Ari', 'Was that the show on Friday?', ''],
+  ['Lee', 'Actually, it was on Thursday.', 'Actually'],
+  ['Ari', 'Would you go again?', ''],
+  ['Lee', 'I guess I would, just not at that venue.', 'I guess'],
+  ['Ari', 'So, should we look for a smaller place next time?', 'So'],
+  ['Lee', "Okay, let's do that.", 'Okay'],
+]
+
+const casualStory = [
+  ['Ari', 'Are you coming to the meetup tonight?', ''],
+  ['Lee', "I'm kind of tired.", 'kind of'],
+  ['Ari', "It's only an hour. Why not come?", ''],
+  ['Lee', "To be honest, I've had a long day.", 'To be honest'],
+  ['Ari', 'What happened?', ''],
+  ['Lee', 'The train was, like, twenty minutes late.', 'like'],
+  ['Ari', 'Again? What did you do?', ''],
+  ['Lee', "I was like, “Seriously? Not again!”", 'was like'],
+  ['Ari', 'Sounds like a rough commute.', ''],
+  ['Lee', 'You know, just one of those days.', 'You know'],
 ]
 
 const checks = [
@@ -197,9 +218,13 @@ function ContextCard({ item, audioProps, language }) {
 }
 
 function Dialogue({ rows, audioProps, label }) {
-  return <div className="ar-c03-dialogue">
+  const { language } = useLanguage()
+  return <section className="ar-c03-dialogue" aria-label={label}>
     <div className="ar-c03-dialogue-header">
-      <h3>{label}</h3>
+      <div>
+        <span className="ar-c03-dialogue-eyebrow">{language === 'ja' ? '長い会話の中では' : 'In a longer conversation'}</span>
+        <h3>{label}</h3>
+      </div>
       <Speak lines={rows.map(row => row[1])} audioProps={audioProps}/>
     </div>
     <div className="ar-c03-story">
@@ -207,7 +232,7 @@ function Dialogue({ rows, audioProps, label }) {
         <ChatTurn key={i} speaker={who === 'Lee' ? 'B' : 'A'} text={line} mark={focus || undefined}/>
       )}
     </div>
-  </div>
+  </section>
 }
 
 function SectionIntro({ children }) { return <p className="ar-c03-intro">{children}</p> }
@@ -221,10 +246,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
     <div className="ar-c03-grid">
       {opening.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
     </div>
-    <details className="ar-c03-extra">
-      <summary>{language === 'ja' ? '会話全体でも見てみる' : 'See the expressions in a longer conversation'}</summary>
-      <Dialogue rows={concert} audioProps={audioProps} label={language === 'ja' ? 'コンサートの感想を話す' : 'Talking about a concert'}/>
-    </details>
+    <Dialogue rows={concert} audioProps={audioProps} label={language === 'ja' ? 'コンサートの感想を話す' : 'Talking about a concert'}/>
   </div>
   if (sectionIndex === 1) return <div className="ar-c03 ar-c03-section-1">
     <SectionIntro>{language === 'ja'
@@ -233,6 +255,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
     <div className="ar-c03-grid">
       {adjusting.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
     </div>
+    <Dialogue rows={casualStory} audioProps={audioProps} label={language === 'ja' ? '大変だった一日について話す' : 'Talking about a long day'}/>
   </div>
   if (sectionIndex === 2) return <div className="ar-c03 ar-c03-section-2">
     <SectionIntro>{language === 'ja'
@@ -241,14 +264,11 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
     <div className="ar-c03-grid">
       {reactions.map(item => <ContextCard key={item.word} item={item} audioProps={audioProps} language={language}/>)}
     </div>
-    <details className="ar-c03-extra">
-      <summary>{language === 'ja' ? '会話全体でも見てみる' : 'Follow a whole story'}</summary>
-      <Dialogue rows={story} audioProps={audioProps} label={language === 'ja' ? '旅行の話に反応する' : 'Reacting to a travel story'}/>
-      <div className="ar-c03-lesson-tip">
-        <strong>{language === 'ja' ? '聞くことと賛成することは別' : 'Listening is not agreeing'}</strong>
-        <p>{language === 'ja' ? 'Uh-huh は「聞いているよ」という合図です。相手の判断に賛成しているとは限りません。' : 'Uh-huh shows that you are following the story. It does not automatically mean you agree.'}</p>
-      </div>
-    </details>
+    <Dialogue rows={story} audioProps={audioProps} label={language === 'ja' ? '旅行の話に反応する' : 'Reacting to a travel story'}/>
+    <div className="ar-c03-lesson-tip">
+      <strong>{language === 'ja' ? '聞くことと賛成することは別' : 'Listening is not agreeing'}</strong>
+      <p>{language === 'ja' ? 'Uh-huh は「聞いているよ」という合図です。相手の判断に賛成しているとは限りません。' : 'Uh-huh shows that you are following the story. It does not automatically mean you agree.'}</p>
+    </div>
   </div>
   if (sectionIndex === 3) return <div className="ar-c03 ar-c03-tag-study ar-c03-section-3">
     <SectionIntro>{language === 'ja'

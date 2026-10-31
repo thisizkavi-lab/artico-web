@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import './GreetingsReferenceStudy.css'
 import { approvedAudio } from './components'
 import { useLanguage } from './Language'
+import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
 
 // Chapter 01 study artwork follows the approved five-page Artico reference.
 // Seven original transparent Chapter 01 greeting illustrations.
@@ -261,21 +262,21 @@ function CheckInFlow({ play }) {
 }
 
 export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
-  const utteranceRef=useRef(null)
-  useEffect(()=>()=>{if(typeof window!=='undefined')window.speechSynthesis?.cancel()},[])
-  const play=useCallback((texts)=>{
-    if(typeof window==='undefined'||!('speechSynthesis' in window))return
-    const lines=(Array.isArray(texts)?texts:[texts]).filter(Boolean)
-    if(!lines.length)return
-    // Prefer Artico's approved phrase recordings before the TTS fallback.
-    if(lines.length===1){const match=phrases.find(p=>p.en===lines[0]);if(match&&approvedAudio[match.id]){window.speechSynthesis.cancel();audioProps?.onPlay(match.id);return}}
+  useEffect(() => () => stopKokoroSpeech(), [])
+  const play = useCallback((texts) => {
+    const lines = (Array.isArray(texts) ? texts : [texts]).filter(Boolean)
+    if (!lines.length) return
+    if (lines.length === 1) {
+      const recorded = phrases.find(phrase => phrase.en === lines[0])
+      if (recorded && approvedAudio[recorded.id]) {
+        stopKokoroSpeech()
+        audioProps?.onPlay(recorded.id)
+        return
+      }
+    }
     audioProps?.audio?.stop?.()
-    window.speechSynthesis.cancel()
-    const voices=window.speechSynthesis.getVoices()
-    const voice=voices.find(v=>v.lang.toLowerCase()==='en-us')||voices.find(v=>v.lang.toLowerCase().startsWith('en'))
-    const next=(i)=>{if(i>=lines.length)return;const u=new SpeechSynthesisUtterance(lines[i]);utteranceRef.current=u;u.lang='en-US';u.rate=VOICE_RATE;if(voice)u.voice=voice;u.onend=()=>{if(utteranceRef.current===u)next(i+1)};window.speechSynthesis.speak(u)}
-    next(0)
-  },[audioProps,phrases])
+    void speakKokoroSpeech(lines.join(' '), { rate: VOICE_RATE })
+  }, [audioProps, phrases])
   return <div className="ip-reading ar-page">
     <section id="study-open" className="ar-section" aria-labelledby="ar-head-1">
       <SectionHead index="01" title="Start the conversation" titleJa="会話を始める" description={'Most conversations begin with something small: a greeting. It is a simple way to acknowledge someone and open the door to a conversation. Sometimes, all you need is a friendly “Hi.” Greetings can change depending on who you are talking to and when you meet.'} descriptionJa="会話は、小さなあいさつから始まることがよくあります。相手の存在を認めて、話し始めるきっかけを作る言葉です。Hi だけで十分なこともあります。相手との関係や時間帯によって表現を選びます。"/>

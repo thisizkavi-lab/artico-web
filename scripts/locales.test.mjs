@@ -80,7 +80,6 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.doesNotMatch(translatedCopy, /\b(?:Alex|Anna|Cassie|Satoshi|Daniel|Sam|Dan|Avery|Taylor|Morgan)\b/)
   assert.match(translatedCopy, /サトシ/)
   assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
-  assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
 })
 
 test('the greetings chapter curates Study and Practice presentation with full Japanese support', () => {

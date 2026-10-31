@@ -31,9 +31,9 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 const portraits = {
   Alex: '8508101',
   Casey: '265283458',
-  Maya: '8855619',
-  Eli: '278299',
-  Priya: '277786664',
+  Cassie: '265283458',
+  Anna: '8855619',
+  Satoshi: '278299',
   Daniel: '3957303430',
   Sam: '291416',
 }

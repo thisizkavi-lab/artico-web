@@ -280,13 +280,24 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese, upco
       </span>
     </>
   )
+  const cardType = visual ? ' vlt-image-card' : ' vlt-text-card'
+  // Keep "reveal" and "listen" as separate controls: never nest two buttons.
+  // The small speaker stays at the lower left in both Study and Practice.
   return practice && canPractice
-    ? <button type="button" className={'vlt-card vlt-recall-card' + (revealed ? ' is-revealed' : '') + (visual ? ' vlt-image-card' : ' vlt-text-card')}
-        onClick={onReveal} aria-label={(ja || (japanese ? '絵のカード' : 'Picture card')) + (revealed ? ': ' + term : (japanese ? '。答えを表示する' : '. Reveal answer'))}
-        aria-expanded={Boolean(revealed)}>
+    ? <div className="vlt-recall-container">
+        <button type="button"
+          className={'vlt-card vlt-recall-card' + (revealed ? ' is-revealed' : '') + cardType}
+          onClick={onReveal}
+          aria-label={(ja || (japanese ? '絵のカード' : 'Picture card')) + (revealed ? ': ' + term : (japanese ? '。答えを表示する' : '. Reveal answer'))}
+          aria-expanded={Boolean(revealed)}>
+          {body}
+        </button>
+        <KokoroSpeakButton text={term} japanese={japanese} upcoming={upcoming} />
+      </div>
+    : <article className={'vlt-card' + cardType}>
         {body}
-      </button>
-    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}<KokoroSpeakButton text={term} japanese={japanese} upcoming={upcoming} /></article>
+        <KokoroSpeakButton text={term} japanese={japanese} upcoming={upcoming} />
+      </article>
 }
 
 export default function VocabularyTopicLesson({ topic, japanese }) {

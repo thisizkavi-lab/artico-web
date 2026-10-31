@@ -385,7 +385,7 @@ function Study({ audioProps, focusedId }) {
 
 
 function PracticeChooser({ set, change, audioProps, onStart }) {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const { catalog: { items: introductionPhrases }, sections: introductionSections, studyPath, id: chapterId } = useLesson()
   const barRef = useRef(null)
   const frameRef = useRef(null)
@@ -482,7 +482,7 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
           return (
             <section key={section.id} aria-label={section.title} className="ip-card-section">
               <div className="ip-list-heading">
-                <h3>{section.title}</h3>
+                <h3>{chapterId === '01' && language === 'ja' ? ({ open: '会話を始める', 'check-in': '調子を尋ねて答える', reunion: '久しぶりに会う', casual: 'くだけた表現' }[section.id] || section.title) : section.title}</h3>
                 <span>{items.length}</span>
               </div>
               <div className="ip-card-grid">
@@ -504,6 +504,7 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
                             : <CurriculumIcon name={chapterIcon(chapterId)} size={46} />}
                         </span>
                         <span className="ip-card-phrase" lang="en">{item.en}</span>
+                        {chapterId === '01' && language === 'ja' && item.ja && <span className="ip-card-translation" lang="ja">{item.ja}</span>}
                       </label>
                       <div className="ip-card-footer">
                         {set.ratings[item.id] ? (
@@ -641,7 +642,7 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
       </div>
       <div className="ip-focus-card">
         <div className="ip-focus-top">
-          <span>{sectionById[item.section].short}</span>
+          <span>{chapterId === '01' && language === 'ja' ? ({ open: 'あいさつ', 'check-in': '調子を尋ねる', reunion: '再会', casual: 'くだけた表現' }[item.section] || sectionById[item.section].short) : sectionById[item.section].short}</span>
           <button
             type="button"
             className={`ip-save ${saved ? 'is-saved' : ''}`}
@@ -653,7 +654,8 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
             <span>{saved ? t("Saved") : t("Save")}</span>
           </button>
         </div>
-        <p className="ip-focus-context" id="practice-phrase-context">{item.context}</p>
+        <p className="ip-focus-context" id="practice-phrase-context">{chapterId === '01' && language === 'ja' && item.contextJa ? item.contextJa : item.context}</p>
+        {chapterId === '01' && language === 'ja' && item.ja && <p className="ip-focus-translation" lang="ja">{item.ja}</p>}
         {item.art && (
           <img className="ip-focus-art" src={art(item.art)} width="140" height="110" alt="" />
         )}

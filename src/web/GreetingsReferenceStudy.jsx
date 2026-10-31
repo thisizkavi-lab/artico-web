@@ -241,7 +241,7 @@ function CheckInFlow({ play }) {
   const neutral = ["I'm okay.",'Not great.'].map((text,i)=>({text,label:i===0?'3. Neutral or honest replies when things are difficult':null}))
   const back = ['How about you?','You?'].map((text,i)=>({text,label:i===0?'4. Return the question':null,extra:i===0?'Add after your answer':null}))
   return <article className="ar-card ar-flow-card">
-    <div className="ar-flow-header"><p className="ar-overline">{language === 'ja' ? '短い近況確認の会話を作る' : 'BUILD A SHORT CHECK-IN'}</p><button className="ar-play" type="button" onClick={()=>play([selectedAsk,selected,selectedReturn])} aria-label="Play your check-in"><PlaySymbol full/></button></div>
+    <div className="ar-flow-header"><p className="ar-overline">{language === 'ja' ? '短い近況確認' : 'A SHORT CHECK-IN'}</p><button className="ar-play" type="button" onClick={()=>play([selectedAsk,selected,selectedReturn])} aria-label="Play your check-in"><PlaySymbol full/></button></div>
     <div className="ar-flow-layout">
       <div className="ar-flow-question-side">
         <div className="ar-flow-avatar"><Speaker name="Alex"/><b>Alex</b></div>
@@ -256,7 +256,7 @@ function CheckInFlow({ play }) {
         <aside className="ar-note ar-honest"><strong>Note</strong>{language === 'ja' ? 'いつも「元気」と答える必要はありません。Not bad は多くの場合、前向きな返事です。I’m okay は「大丈夫」とも「まあまあ」とも受け取れます。Not great は正直に調子の悪さを伝えます。詳しい事情を話す必要はありません。' : 'You do not have to say everything is good. These replies are not a fixed scale of emotions. Not bad is usually positive; I’m okay depends on tone. Not great can be an honest short answer. You do not have to share private details.'}</aside>
       </div>
     </div>
-    <div className="ar-context ar-flow-context" aria-live="polite"><strong>{language === 'ja' ? '選択中' : 'SELECTED'} · {selected}</strong> {language === 'ja' ? jpCheckinContext[selected] : descriptions[selected]}</div>
+    <div className="ar-context ar-flow-context" aria-live="polite"><strong lang="en">{selected}</strong> {language === 'ja' ? jpCheckinContext[selected] : descriptions[selected]}</div>
   </article>
 }
 

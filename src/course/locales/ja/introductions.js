@@ -4,7 +4,7 @@ const copy = {
   'Alex and Anna talking at a friend’s gathering.': '友人の集まりで話すアレックスとアンナ。',
   'Satoshi and Daniel introducing themselves at a project meeting.': '会議で自己紹介するサトシとダニエル。',
   'Alex introducing her colleague Sam to Anna.': 'アレックスが同僚のサムをアンナに紹介しています。',
-  'Alex and Anna reconnecting after meeting at a workshop.': 'ワークショップで会った後、再会するアレックスとアンナ。',
+  'Alex checks whether Anna has met Sam before; Anna greets Sam again.': 'アレックスがアンナにサムと以前会ったことがあるか尋ね、アンナはサムに再会のあいさつをしています。',
   'A name, a connection, and a way to keep talking.': '名前と、つながりと、会話を続けるきっかけ。',
   'Say who you are': '自分が誰かを伝える',
   'Respond to an introduction': '紹介のあいさつに応える',

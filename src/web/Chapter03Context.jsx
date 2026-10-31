@@ -198,7 +198,7 @@ function ContextCard({ item, audioProps, language }) {
       <ChatTurn speaker="B" text={item.b} mark={mark}/>
     </div>
     <div className="ar-c03-idea">
-      <strong>{language === 'ja' ? 'なぜこの表現？' : 'Why this expression?'}</strong>
+      <strong>Note</strong>
       <p>{language === 'ja' ? item.ja : item.en}</p>
     </div>
   </article>

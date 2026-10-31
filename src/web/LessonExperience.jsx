@@ -15,7 +15,7 @@ import {
   togglePracticePhrase,
 } from './phrasePractice'
 import Chapter01Illustrated from './Chapter01Illustrated'
-import GreetingsReferenceStudy, { PhraseShelf as GreetingsPhraseShelf } from './GreetingsReferenceStudy'
+import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
 import Chapter03StudySection from './Chapter03Context'
 import './social-reference-study.css'
@@ -69,14 +69,14 @@ export function PhraseAudio({ item, audio, activeId, onPlay }) {
       }
       onClick={() => onPlay(item.id)}
     >
-      <Glyph name={playing ? 'pause' : 'play'} size={18} />
+      <Glyph name={playing ? 'pause' : 'speaker'} size={18} />
     </button>
   )
 }
 
 export function PhraseCard({ id, audioProps, conversation = false, focusedId }) {
   const { language } = useLanguage()
-  const { byId: introductionById, catalog } = useLesson()
+  const { byId: introductionById, catalog, id: lessonId } = useLesson()
   const item = introductionById[id]
   const parts = practiceParts(item)
   const individual = parts.length > 1 ? catalog.items.filter((part) => catalog.aliases[id]?.includes(part.id)) : []
@@ -106,6 +106,7 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
         {!conversation && <p className="ip-context">{item.context}</p>}
         {conversation && language === 'ja' && item.ja && <p className="ip-phrase-support" lang="ja">{item.ja}</p>}
       </div>
+      {conversation && lessonId === '02' && <PhraseAudio item={item} {...audioProps} />}
       {!conversation && !individual.length && <PhraseAudio item={item} {...audioProps} />}
     </article>
   )
@@ -120,6 +121,7 @@ function ConversationAudio({ block, audioProps }) {
   const listen = () => {
     if (ready) audioProps.onPlay(id)
   }
+  if (!ready) return null
   return (
     <button
       type="button"
@@ -210,7 +212,7 @@ function ReplyAlternatives({ block, audioProps, embedded = false }) {
                 <span className="ar-ch02-reply-label">{choice.label}</span>
                 <p lang="en">{item.en}</p>
                 {language === 'ja' && item.ja && <p className="ar-ch02-reply-ja" lang="ja">{item.ja}</p>}
-                {approvedAudio[item.id] && <PhraseAudio item={item} {...audioProps} />}
+                <PhraseAudio item={item} {...audioProps} />
               </div>
             )
           })}
@@ -224,50 +226,80 @@ function ReplyAlternatives({ block, audioProps, embedded = false }) {
 }
 
 
-// Context matters here: show the situation first and reveal meaning only on click.
+// Chapter 02: the expression is the lesson. Context stays in quiet table columns.
+function Chapter02Expression({ item, audioProps }) {
+  return (
+    <div className="ar-ch02-expression">
+      <span lang="en" className="ar-ch02-english">{item.en}</span>
+      <PhraseAudio item={item} {...audioProps} />
+    </div>
+  )
+}
+
+function Chapter02PhraseTable({ block, audioProps }) {
+  const { language } = useLanguage()
+  const { byId } = useLesson()
+  return (
+    <section className="ar-ch02-reference" aria-label={block.title}>
+      <h3 className="ip-small-heading">{block.title}</h3>
+      <div className="ar-ch02-table-scroll">
+        <table className="ar-ch02-table ar-ch02-alternatives-table">
+          <thead><tr>
+            <th scope="col">{language === 'ja' ? '英語のフレーズ' : 'English phrase'}</th>
+            <th scope="col">{language === 'ja' ? '使う場面・意味' : 'When to use it'}</th>
+          </tr></thead>
+          <tbody>
+            {block.phrases.map((id) => {
+              const item = byId[id]
+              if (!item) return null
+              return <tr key={id}>
+                <td className="ar-ch02-phrase-cell"><Chapter02Expression item={item} audioProps={audioProps} /></td>
+                <td className="ar-ch02-explanation-cell" lang={language === 'ja' ? 'ja' : 'en'}>
+                  {language === 'ja' ? item.ja : item.context}
+                </td>
+              </tr>
+            })}
+          </tbody>
+        </table>
+      </div>
+      {block.note && <p className="ar-ch02-table-note">
+        {block.note.title && <strong>{block.note.title} </strong>}{block.note.text}
+      </p>}
+    </section>
+  )
+}
+
 function SituationalPhrases({ block, audioProps }) {
   const { language } = useLanguage()
   const { byId } = useLesson()
-  const [openId, setOpenId] = useState(null)
-
   return (
     <section className="ar-ch02-situations" aria-label={block.title}>
       <h3 className="ip-small-heading">{block.title}</h3>
-      <div className="ar-ch02-situation-grid">
-        {block.examples.map((example, exampleIndex) => (
-          <article className="ar-ch02-situation" key={exampleIndex}>
-            <h4>{example.label}</h4>
-            <p className="ar-ch02-situation-hint">{example.hint}</p>
-            <div className="ar-ch02-situation-phrases">
-              {example.phrases.map((id) => {
-                const item = byId[id]
-                if (!item) return null
-                const expanded = openId === id
-                return (
-                  <div className="ar-ch02-situation-phrase" key={id}>
-                    <div className="ar-ch02-situation-line">
-                      <button
-                        type="button"
-                        className="ar-ch02-situation-choice"
-                        aria-expanded={expanded}
-                        aria-controls={`ch02-situation-detail-${id}`}
-                        onClick={() => setOpenId((current) => current === id ? null : id)}
-                      >
-                        <span lang="en">{item.en}</span>
-                        <span className="ar-ch02-situation-chevron" aria-hidden="true">{expanded ? '−' : '+'}</span>
-                      </button>
-                      {approvedAudio[item.id] && <PhraseAudio item={item} {...audioProps} />}
-                    </div>
-                    <p id={`ch02-situation-detail-${id}`} className="ar-ch02-situation-detail" hidden={!expanded}
-                      lang={language === 'ja' && item.ja ? 'ja' : 'en'}>
-                      {language === 'ja' && item.ja ? item.ja : item.context}
-                    </p>
-                  </div>
-                )
-              })}
-            </div>
-          </article>
-        ))}
+      <div className="ar-ch02-table-scroll">
+        <table className="ar-ch02-table ar-ch02-situation-table">
+          <thead><tr>
+            <th scope="col">{language === 'ja' ? '場面' : 'Situation'}</th>
+            <th scope="col">{language === 'ja' ? '英語のフレーズ' : 'English phrase'}</th>
+            <th scope="col">{language === 'ja' ? '使い方・意味' : 'When to use it'}</th>
+          </tr></thead>
+          {block.examples.map((example, index) => {
+            const items = example.phrases.map((id) => byId[id]).filter(Boolean)
+            return <tbody key={index}>
+              {items.map((item, itemIndex) => (
+                <tr key={item.id}>
+                  {itemIndex === 0 && <th scope="rowgroup" rowSpan={items.length} className="ar-ch02-situation-cell">
+                    <span>{example.label}</span>
+                    <small>{example.hint}</small>
+                  </th>}
+                  <td className="ar-ch02-phrase-cell"><Chapter02Expression item={item} audioProps={audioProps} /></td>
+                  <td className="ar-ch02-explanation-cell" lang={language === 'ja' ? 'ja' : 'en'}>
+                    {language === 'ja' ? item.ja : item.context}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          })}
+        </table>
       </div>
     </section>
   )
@@ -422,29 +454,8 @@ function Study({ audioProps, focusedId }) {
                   })}
                 </div>
               )
-            if (lessonId === '02' && block.type === 'phrases') {
-              const options = block.phrases
-                .map((id) => introductionById[id])
-                .filter(Boolean)
-                .map((item) => ({ ...item, text: item.en, description: item.context, contextJa: item.context }))
-              const noteBlock = block.note ?? (section.blocks[blockIndex + 1]?.type === 'note'
-                ? section.blocks[blockIndex + 1]
-                : undefined)
-              return (
-                <GreetingsPhraseShelf
-                  key={blockIndex}
-                  title={block.title}
-                  options={options}
-                  initial={Math.max(0, block.phrases.indexOf(focusedId))}
-                  clickToExplain
-                  sceneArt={block.sceneArt}
-                  note={noteBlock ? { title: noteBlock.title, en: noteBlock.text, ja: noteBlock.text } : undefined}
-                  play={(_text, item) => {
-                    if (item?.id && approvedAudio[item.id]) audioProps.onPlay(item.id)
-                  }}
-                />
-              )
-            }
+            if (lessonId === '02' && block.type === 'phrases')
+              return <Chapter02PhraseTable key={blockIndex} block={block} audioProps={audioProps} />
             if (lessonId === '01' && block.type === 'phrases') {
               return (
                 <Chapter01Illustrated

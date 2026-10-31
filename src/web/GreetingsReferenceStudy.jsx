@@ -155,14 +155,14 @@ function SectionHead({ index, title, titleJa, description, descriptionJa }) {
   </header>
 }
 
-export function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, captions = false, note, play, sceneArt }) {
+export function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, captions = false, note, play, sceneArt, clickToExplain = false }) {
   const { language } = useLanguage()
-  const [selected, setSelected] = useState(initial)
-  const option = options[selected] || options[0]
+  const [selected, setSelected] = useState(clickToExplain ? null : initial)
+  const option = selected == null ? null : options[selected]
   const phraseArt = sceneArt
     ? `${import.meta.env.BASE_URL}assets/course/${sceneArt}`
     : null
-  return <article className={'ar-card ar-phrase-shelf' + (sceneArt ? ' ar-ch02-phrase-shelf' : '')}>
+  return <article className={'ar-card ar-phrase-shelf' + (sceneArt ? ' ar-ch02-phrase-shelf' : '') + (clickToExplain ? ' ar-click-to-explain' : '')}>
     {sceneArt
       ? <div className="ar-scene ar-illustrated-scene ar-ch02-phrase-art">
           <img className="ar-scene-illustration" src={phraseArt} alt="" loading="lazy" decoding="async" />
@@ -171,13 +171,13 @@ export function PhraseShelf({ title, titleJa, options, scene = 'people', initial
     <div className="ar-shelf-body">
       <div className="ar-shelf-heading"><h3>{title}{language === 'ja' && titleJa && <small lang="ja">{titleJa}</small>}</h3>{captions && <span>{options.length} expressions</span>}</div>
       <div className="ar-speech-choices">
-        {options.map((item,i)=><button key={item.id || item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);play(item.text, item)}}>
-          <span className="ar-choice-content"><span lang="en">{item.text}</span>{language === 'ja' && (item.ja || jpPhrase[item.text]) && <small lang="ja">{item.ja || jpPhrase[item.text]}</small>}</span>
-          {(!item.id || approvedAudio[item.id]) && <PlaySymbol/>}
+        {options.map((item,i)=><button key={item.id || item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);if(!clickToExplain)play(item.text, item)}}>
+          <span className="ar-choice-content"><span lang="en">{item.text}</span>{!clickToExplain && language === 'ja' && (item.ja || jpPhrase[item.text]) && <small lang="ja">{item.ja || jpPhrase[item.text]}</small>}</span>
+          {!clickToExplain && (!item.id || approvedAudio[item.id]) && <PlaySymbol/>}
           <span className="ar-tail" aria-hidden="true"/>
         </button>)}
       </div>
-      <div className="ar-context" aria-live="polite">{language === 'ja' ? option.contextJa || jpContext[option.text] || option.description : option.description}</div>
+      {option && <div className="ar-context" aria-live="polite">{language === 'ja' ? option.contextJa || jpContext[option.text] || option.description : option.description}</div>}
     </div>
     {note && <aside className="ar-note ar-shelf-note"><span className="ar-note-label">Note</span><p className="ar-note-copy">{note.title && <strong>{note.title} </strong>}{language === 'ja' ? note.ja : note.en}</p></aside>}
   </article>

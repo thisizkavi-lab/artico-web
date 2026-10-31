@@ -279,3 +279,25 @@ test('Lesson 14 animates all actions using distinct motion rigs and accessible p
   assert.match(motion,/onAnimationEnd/, 'Replay animations must stop, not loop forever')
   assert.ok(!css.includes('infinite'),'Body motion should not loop endlessly')
 })
+
+
+test('Chapter 98 has independent, bottom-left sound controls in every card layout', () => {
+  const countries = load('VocabularyCountriesLesson.jsx')
+  const numbers = load('VocabularyNumbersLesson.jsx')
+  const speech = load('KokoroSpeakButton.jsx')
+  const css = load('kokoro-speech.css')
+
+  // A single renderer covers all 76 general vocabulary topics.
+  assert.match(view, /return practice && canPractice/)
+  assert.match(view, /className="vlt-recall-container"/)
+  assert.match(view, /<KokoroSpeakButton text=\{term\} japanese=\{japanese\} upcoming=\{upcoming\}/)
+  assert.match(view, /<article className=\{'vlt-card'/)
+  assert.match(css, /\.vlt-lesson \.vlt-recall-container > \.artico-speak/)
+  assert.match(css, /bottom: 7px;\s*left: 7px;/)
+  // The same speaker is available on both sides of Study/Practice.
+  assert.match(numbers, /<KokoroSpeakButton text=\{item\.term\}/)
+  assert.match(countries, /className="vl01-country-audio"/)
+  assert.match(countries, /<KokoroSpeakButton text=\{word\.en\}/)
+  assert.match(countries, /<KokoroSpeakButton text=\{phrase\.en\}/)
+  assert.match(speech, /speakKokoroSpeech\(text,/)
+})

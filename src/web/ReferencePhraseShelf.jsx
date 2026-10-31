@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLanguage } from './Language'
 import { approvedAudio } from './components'
+import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
 
 const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
@@ -10,37 +11,20 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
   const { language } = useLanguage()
   const items = ids.map(id => byId[id]).filter(Boolean)
   const [selected, setSelected] = useState(() => Math.max(0, ids.indexOf(focusedId)))
-  const speechRef = useRef(null)
   const current = items[selected] || items[0]
-  // Do not substitute generic placeholder figures for missing lesson artwork.
   const hasCompleteArt = items.length > 0 && items.every(item => Boolean(item.art))
 
-  useEffect(() => () => {
-    if (typeof window !== 'undefined' && speechRef.current)
-      window.speechSynthesis?.cancel()
-  }, [])
+  useEffect(() => () => stopKokoroSpeech(), [])
 
   function play(item, index) {
     setSelected(index)
     if (approvedAudio[item.id]) {
-      speechRef.current = null
-      if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+      stopKokoroSpeech()
       audioProps.onPlay(item.id)
       return
     }
-    if (typeof window === 'undefined' || !window.speechSynthesis || !window.SpeechSynthesisUtterance) return
     audioProps?.audio?.stop?.()
-    window.speechSynthesis.cancel()
-    const utterance = new window.SpeechSynthesisUtterance(item.en)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.91
-    const voices = window.speechSynthesis.getVoices()
-    const voice = voices.find(candidate => candidate.lang.toLowerCase() === 'en-us')
-      || voices.find(candidate => candidate.lang.toLowerCase().startsWith('en'))
-    if (voice) utterance.voice = voice
-    speechRef.current = utterance
-    utterance.onend = () => { if (speechRef.current === utterance) speechRef.current = null }
-    window.speechSynthesis.speak(utterance)
+    void speakKokoroSpeech(item.en, { rate: 0.91 })
   }
 
   if (!items.length) return null

@@ -29,7 +29,7 @@ if not art_archive.is_file() or hashlib.sha256(art_archive.read_bytes()).hexdige
 meal_scenes = {
     e["file"] + ".webp"
     for e in catalog["entries"].values()
-    if e.get("assetType") == "original-ai-generated" and e.get("section", "").startswith("02")
+    if e.get("assetType") == "original-ai-generated" and e.get("section", "").startswith("02") and e.get("illustrationBatch") != "work-02"
 }
 assert len(meal_scenes) == 10, meal_scenes
 with zipfile.ZipFile(art_archive) as z:
@@ -43,6 +43,33 @@ with zipfile.ZipFile(art_archive) as z:
         (target / name).write_bytes(image_bytes)
         assert len(image_bytes) > 4000, name
 print("Installed and validated", len(meal_scenes), "original Artico meal illustrations")
+
+# Batch 02: tea/coffee + nine Work/School/Commuting scenes. All are
+# 608x384, full landscape illustrations in the same art direction.
+work_archive = target / "generated-work-02.zip"
+work_sha256 = "a8e9191a852e2c10fcd0aa31ac2433b7b7ca893c3da4958668b82a32f443b5ce"
+if not work_archive.is_file() or hashlib.sha256(work_archive.read_bytes()).hexdigest() != work_sha256:
+    raise RuntimeError("Generated work-and-commute archive missing or SHA256 mismatch")
+work_scenes = {
+    e["file"] + ".webp"
+    for e in catalog["entries"].values()
+    if e.get("illustrationBatch") == "work-02"
+}
+assert len(work_scenes) == 10, work_scenes
+assert "drink-tea-or-coffee.webp" in work_scenes
+assert "finish-work.webp" in work_scenes
+with zipfile.ZipFile(work_archive) as z:
+    assert set(z.namelist()) == work_scenes, "Wrong files in generated-work-02.zip"
+    for name in sorted(work_scenes):
+        image_bytes = z.read(name)
+        with Image.open(io.BytesIO(image_bytes)) as image:
+            image.verify()
+        with Image.open(io.BytesIO(image_bytes)) as image:
+            assert image.format == "WEBP" and image.size == (608, 384), (name, image.size)
+        assert len(image_bytes) > 4000, name
+        (target / name).write_bytes(image_bytes)
+print("Installed and validated", len(work_scenes), "Artico drink/work/commute illustrations")
+
 assert catalog["schema"] == 2 and catalog["source"].startswith("Pexels")
 assert len(catalog["entries"]) >= 58, "Photo catalog is incomplete"
 pexels_entries = [v for v in catalog["entries"].values() if v.get("assetType") != "original-ai-generated"]

@@ -53,6 +53,7 @@ function WeekDaysChart({ japanese }) {
                     {japanese && <small lang="ja">{vocabularyJapanese(day.name, 3)}</small>}
                   </span>
                   <abbr className="vlt-week-day-short" title={day.name} lang="en">{day.short}</abbr>
+                  <KokoroSpeakButton text={day.name} japanese={japanese} />
                 </li>
               ))}
             </ol>
@@ -113,6 +114,7 @@ function MonthsOfYearChart({ japanese }) {
               <td className="vlt-month-number">{index + 1}</td>
               <th scope="row" className="vlt-month-name">
                 <strong lang="en">{month.name}</strong>
+                <KokoroSpeakButton text={month.name} japanese={japanese} />
                 {japanese && <small lang="ja">{month.ja}</small>}
               </th>
               <td className="vlt-month-abbreviation">
@@ -167,6 +169,7 @@ function TimeSpansTable({ items, japanese }) {
             <tr key={term}>
               <th scope="row" className="vlt-span-name">
                 <strong lang="en">{term}</strong>
+                <KokoroSpeakButton text={term} japanese={japanese} />
                 {japanese && <small lang="ja">{vocabularyJapanese(term, 3)}</small>}
               </th>
               <td className="vlt-span-equivalent" lang="en">{timeSpanEquivalents[term]}</td>
@@ -228,6 +231,7 @@ function FrequencyScale({items,japanese}) {
                 '--vlt-frequency-foreground':level.ink,
               }}>
                 <span lang="en">{level.label}</span>
+                <KokoroSpeakButton text={level.label} japanese={japanese} />
                 {japanese&&<small lang="ja">{vocabularyJapanese(level.term,3)}</small>}
               </div>
             </li>

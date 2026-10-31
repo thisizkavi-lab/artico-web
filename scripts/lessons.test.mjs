@@ -260,5 +260,10 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   const spoken = Object.values(introductionById).filter((item) => item.section !== 'words').map((item) => item.id)
   assert.deepEqual([...displayed].sort(), spoken.sort())
   const portraits = conversationBlocks.flatMap((block) => block.phrases).map((id) => introductionById[id])
-  assert.ok(portraits.every((item) => item.portrait?.startsWith('portrait-') && item.portrait.endsWith('.svg')))
+  assert.ok(portraits.every((item) => item.portrait?.startsWith('portrait-ch02-') && item.portrait.endsWith('.svg')))
+  for (const item of portraits) {
+    assert.ok(images(item.portrait), `Missing speaker portrait for ${item.speaker}`)
+    const portraitSvg = readFileSync(new URL(`public/assets/course/${item.portrait}`, root), 'utf8')
+    assert.ok(portraitSvg.includes(`<title>${item.speaker}</title>`), `Portrait name mismatch for ${item.speaker}`)
+  }
 })

@@ -30,7 +30,7 @@ const copy = {
   'Not sure whether you have met before? Leave room for the other person to recognize you.': '以前会ったか、確信がないときの言い方です。「まだ会っていないと思うのですが」と伝え、相手が覚えている可能性も残します。',
   'A full name and a role can be useful at a first meeting. Let the situation and the other person guide how formal you sound.': '初めての会議では、氏名と役割が役立ちます。どのくらい改まった言い方にするかは、その場と相手に合わせます。',
   'At the start of a project meeting': 'プロジェクトの会議が始まる場面',
-  'Daniel’s greeting is a little more ceremonious. Satoshi returns the feeling, then tells him which name to use. Using her preferred name shows that he listened.': 'Danielのあいさつは、少し改まった言い方です。Satoshiは気持ちを返し、呼んでほしい名前を伝えます。Danielはその名前を使って返答しています。',
+  'Daniel’s greeting is a little more formal. Satoshi returns the greeting and tells Daniel what to call them. Daniel uses that name in his reply.': 'Danielのあいさつは、少し改まった言い方です。Satoshiは気持ちを返し、呼んでほしい名前を伝えます。Danielはその名前を使って返答しています。',
   'Give the name you use': '普段、使っている名前を伝える',
   'Professional can still be friendly.': '仕事の場でも、親しみのあるあいさつを。',
   'The everyday greeting from the first scene also works in many workplaces. Respect someone’s preferred name or title; the location alone does not decide the level of formality.': '最初の場面のあいさつも、多くの職場で使えます。場所だけで改まり方は決まりません。相手が呼んでほしい名前や肩書を示したら、その情報を使いましょう。',

@@ -5,18 +5,10 @@ const blobShapes = [
   'M115 17 C138 11 160 17 177 30 C194 44 202 62 202 84 C201 107 202 130 187 149 C173 166 148 171 125 168 C101 165 79 159 62 144 C46 129 37 109 35 87 C33 65 46 49 63 35 C79 22 94 18 115 17Z',
 ]
 
-export default function VocabularyColorSwatch({ term, color, variant = 0, showLabel = true }) {
-  const label = term
+export default function VocabularyColorSwatch({ color, variant = 0 }) {
   return (
-    <svg className="vlt-color-swatch" viewBox="0 0 240 200" role="img"
-      aria-label={showLabel ? label : 'Color swatch'}>
+    <svg className="vlt-color-swatch" viewBox="0 0 240 200" aria-hidden="true" focusable="false">
       <path d={blobShapes[variant % blobShapes.length]} fill={color} />
-      {showLabel && (
-        <text x="120" y="187" textAnchor="middle" fill="#a6a6a6"
-          fontSize="20" fontWeight="400" fontFamily="Arial, Helvetica, sans-serif">
-          {label}
-        </text>
-      )}
     </svg>
   )
 }

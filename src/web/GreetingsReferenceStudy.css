@@ -486,3 +486,27 @@
   .ar-page .ar-question-note,
   .ar-page .ar-shelf-note { padding: 9px 11px; }
 }
+
+/* Keep the dialogue play control aligned with its title, not over a bubble. */
+.ar-page .ar-conversation-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ar-page .ar-conversation-heading .ar-overline { flex: 1; min-width: 0; }
+.ar-page .ar-conversation-heading .ar-play {
+  position: static;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+}
+@media(max-width:620px) {
+  .ar-page .ar-conversation-heading .ar-play {
+    position: static;
+    flex-basis: 34px;
+    width: 34px;
+    height: 34px;
+  }
+}

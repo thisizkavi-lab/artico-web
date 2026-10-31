@@ -1,8 +1,8 @@
 # Artico Workspace Rules (`AGENTS.md`)
 
-1. **Git Repository & Branch Safety:**
-   - The git repository lives in `/Users/kavi/Documents/kyoto/artico-web` on branch `vocab-art`.
-   - **NEVER push to `main`** (it auto-deploys to GitHub Pages). Never push any branch unless the user explicitly asks.
+1. **Repository context:**
+   - The main checkout is `/Users/kavi/Documents/kyoto/artico-web`. Work in the active checkout and check its current branch rather than assuming a fixed branch name.
+   - Updates to `main` automatically deploy to GitHub Pages.
 
 2. **Runtimes:**
    - **Python:** Always run `/Users/kavi/Documents/kyoto/.venv/bin/python3` (`resvg_py`, `Pillow`, `requests` installed; system `python3` lacks them).

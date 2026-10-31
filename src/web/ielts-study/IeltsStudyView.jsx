@@ -9,10 +9,8 @@ import React, { useState, useEffect } from 'react'
 import CurriculumIcon from '../CurriculumIcon'
 import {
   MODULE_METADATA,
-  ALL_STUDY_UNITS,
   STUDY_UNIT_BY_ID,
   getUnitsForArea,
-  getDefaultUnitForArea,
   getNextUnit,
   getPrevUnit,
 } from './units'
@@ -20,83 +18,72 @@ import { StudyBlock } from './IeltsStudyBlocks'
 import { ieltsStudyPath, ieltsPath } from '../ieltsNavigation'
 import './ielts-study.css'
 
+const partLabel = (title) => title.replace(/^Part [\d.]+ · /, '').replace('[GT] ', '')
 
-/* The Study landing screen follows the clarity and restrained color of Greetings. */
-export function StudyHome({ store }) {
-  const lastUnitId = store?.state?.notes?.['study-last-unit']
-  const lastUnit = lastUnitId && lastUnitId !== 'ov-how-to-read' ? STUDY_UNIT_BY_ID[lastUnitId] : null
-  const skills = MODULE_METADATA.filter((mod) => mod.id !== 'overview')
-  const descriptions = {
-    listening: 'Hear the answer and notice what changes.',
-    reading: 'Find evidence and understand the question types.',
-    writing: 'Study examples, then write with clarity.',
-    speaking: 'Learn the interview, then practise aloud.',
-  }
-
-  return <div className="ies-home ies-simple-home">
-    <header className="ies-simple-intro">
-      <span className="ies-simple-eyebrow">ARTICO · EXAM PREPARATION</span>
-      <h1>IELTS Academic</h1>
-      <p>Understand the exam. Learn each skill. Practise when you are ready.</p>
-      {lastUnit && <a className="ies-resume-link" href={'#' + ieltsStudyPath(lastUnit.area, lastUnit.id)}>
-        <span>Continue: {lastUnit.title}</span><span aria-hidden="true">→</span>
-      </a>}
-    </header>
-
-    <section className="ies-simple-overview" aria-labelledby="ies-start-heading">
-      <div className="ies-overview-mark"><CurriculumIcon name="compass" size={28}/></div>
-      <div className="ies-overview-copy">
-        <span className="ies-simple-eyebrow">START HERE</span>
-        <h2 id="ies-start-heading">Everything about IELTS</h2>
-        <p>What IELTS is, Academic and General Training, the format, band scores, and what to expect on test day.</p>
-        <a className="ies-simple-action" href={'#' + ieltsStudyPath('overview','ov-what-ielts-measures')}>Explore IELTS <span aria-hidden="true">→</span></a>
+export function StudyHome({ store, toolbar }) {
+  const lastUnit = STUDY_UNIT_BY_ID[store?.state?.notes?.['study-last-unit']]
+  return (
+    <div className="ies-home">
+      <header className="ies-home-masthead">
+        <span className="ies-eyebrow">English tests / Study course</span>
+        <h1><CurriculumIcon name="book" size={32} />IELTS Academic</h1>
+        <p className="ies-home-lead">Understand the test. Learn each skill. Put it into practice.</p>
+      </header>
+      {toolbar}
+      <section className="ies-start" aria-label="Start here">
+        <div>
+          <span className="ies-eyebrow">Start here</span>
+          <h2>A clear path through IELTS.</h2>
+          <p>Begin with the test format and scoring. Then work through Listening, Reading, Writing, and Speaking. Each lesson connects an explanation to examples, common errors, and a check of your understanding.</p>
+          <a className="ies-start-link" href={`#${ieltsStudyPath('overview', 'ov-how-to-read')}`}>How this course works <span aria-hidden="true">→</span></a>
+        </div>
+        <aside className="ies-course-note">
+          <strong>Study, then practise</strong>
+          <p>Use Study to understand a method. Switch to Practice within each skill to try it.</p>
+          <p>Academic is the main track. Shared lessons apply to both tests. General Training differences are marked separately.</p>
+        </aside>
+      </section>
+      {lastUnit && <aside className="ies-bookmark-bar" aria-label="Last opened study unit">
+        <span><strong>Continue reading</strong><br />{lastUnit.title}</span>
+        <a href={`#${ieltsStudyPath(lastUnit.area, lastUnit.id)}`}>Open lesson →</a>
+      </aside>}
+      <div className="ies-index-heading"><h2>Your course</h2><span>5 sections · 85 lessons</span></div>
+      <div className="ies-module-spine" aria-label="Five study modules">
+        {MODULE_METADATA.map((mod) => {
+          const units = getUnitsForArea(mod.id)
+          return <section key={mod.id} className={`ies-module-card ies-module-${mod.id}`} aria-labelledby={`ies-mod-${mod.id}`}>
+            <div className="ies-module-card-head">
+              <div className="ies-mod-title-group">
+                <CurriculumIcon name={mod.icon} size={25} />
+                <h2 id={`ies-mod-${mod.id}`}><a href={`#${ieltsStudyPath(mod.id, units[0].id)}`}>{mod.title}</a></h2>
+              </div>
+              <span className="ies-mod-num">{mod.num}</span>
+            </div>
+            <p className="ies-mod-scope">{mod.scope}</p>
+            <div className="ies-mod-parts">
+              {mod.parts.map((part) => <a key={part.id} className="ies-part-link" href={`#${ieltsStudyPath(mod.id, units.find(u => u.partId === part.id)?.id)}`}>
+                <span>{part.isGt && <span className="ies-badge ies-badge-gt">GT</span>} {partLabel(part.title)}</span>
+                <span className="ies-part-count">{part.count}<span className="ies-sr-only"> lessons</span> →</span>
+              </a>)}
+            </div>
+            <a className="ies-mod-start" href={`#${ieltsStudyPath(mod.id, units[0].id)}`}>Open {mod.id === 'overview' ? 'introduction' : mod.title.toLowerCase()} →</a>
+          </section>
+        })}
       </div>
-    </section>
-
-    <section className="ies-simple-group" aria-labelledby="ies-skills-heading">
-      <div className="ies-simple-group-head"><h2 id="ies-skills-heading">The four skills</h2>
-        <p>Choose any skill. Each has Study lessons and separate Practice exercises.</p></div>
-      <div className="ies-skill-grid">
-        {skills.map((mod, index) => <a key={mod.id} className={'ies-skill-card ies-skill-' + mod.id} href={'#' + ieltsStudyPath(mod.id)}>
-          <span className="ies-skill-icon"><CurriculumIcon name={mod.icon} size={26}/></span>
-          <span className="ies-skill-number">0{index + 1}</span>
-          <strong>{mod.title}</strong>
-          <span className="ies-skill-description">{descriptions[mod.id]}</span>
-          <span className="ies-skill-link">Study lessons <span aria-hidden="true">→</span></span>
-        </a>)}
-      </div>
-    </section>
-
-    <section className="ies-simple-group" aria-labelledby="ies-mock-heading">
-      <div className="ies-simple-group-head"><h2 id="ies-mock-heading">Mock tests</h2>
-        <p>Learn with help first. Test yourself without help later.</p></div>
-      <div className="ies-mock-grid">
-        <a className="ies-mock-tile" href={'#' + ieltsPath('guided','study')}>
-          <span className="ies-mock-icon"><CurriculumIcon name="lightbulb" size={24}/></span>
-          <strong>Guided test</strong><span>Short annotated workshops are available now.</span>
-          <em>Explore guided work <span aria-hidden="true">→</span></em>
-        </a>
-        <a className="ies-mock-tile" href={'#' + ieltsPath('simulation','practice')}>
-          <span className="ies-mock-icon"><CurriculumIcon name="clock" size={24}/></span>
-          <strong>Simulated test</strong><span>Full-length exam simulation is still in preparation.</span>
-          <em>See test format <span aria-hidden="true">→</span></em>
-        </a>
-      </div>
-    </section>
-    <p className="ies-simple-disclaimer">Artico is independent of the official IELTS providers.</p>
-  </div>
+      <p className="ies-home-footer-note">Ready to use what you have learned? <a href={`#${ieltsPath('home', 'practice')}`}>Explore practice →</a></p>
+    </div>
+  )
 }
 
-export function StudyReader({ area, unitId, store }) {
+export function StudyReader({ area, unitId, store, toolbar }) {
   const modMeta = MODULE_METADATA.find((m) => m.id === area) || MODULE_METADATA[0]
-  const allAreaUnits = getUnitsForArea(area)
-  // Keep the original editorial manual unit addressable by bookmarked links,
-  // but do not make it part of the learner-facing lesson sequence.
-  const areaUnits = allAreaUnits.filter((u) => u.id !== 'ov-how-to-read')
-  const requestedUnit = unitId && STUDY_UNIT_BY_ID[unitId]?.area === area ? STUDY_UNIT_BY_ID[unitId] : null
-  const currentUnit = requestedUnit || (area === 'overview' ? STUDY_UNIT_BY_ID['ov-what-ielts-measures'] : areaUnits[0]) || null
+  const areaUnits = getUnitsForArea(area)
+  const requestedUnit = unitId && STUDY_UNIT_BY_ID[unitId]
+  const currentUnit = (requestedUnit?.area === area ? requestedUnit : null) || areaUnits[0] || null
 
   const [filterQuery, setFilterQuery] = useState('')
+  const [contentsOpen, setContentsOpen] = useState(false)
+  useEffect(() => { setFilterQuery(''); setContentsOpen(false) }, [currentUnit?.id])
 
   // Persist last-read unit in store notes
   useEffect(() => {
@@ -115,10 +102,9 @@ export function StudyReader({ area, unitId, store }) {
     ? areaUnits.filter((u) => u.title.toLowerCase().includes(filterQuery.toLowerCase()))
     : areaUnits
 
-  const prevUnit = currentUnit?.id === 'ov-what-ielts-measures' ? null : currentUnit ? getPrevUnit(currentUnit.id) : null
+  const prevUnit = currentUnit ? getPrevUnit(currentUnit.id) : null
   const nextUnit = currentUnit ? getNextUnit(currentUnit.id) : null
   const unitIndex = currentUnit ? areaUnits.findIndex((u) => u.id === currentUnit.id) : -1
-  const lessonNumber = unitIndex < 0 ? 'Reference' : unitIndex + 1
   const isLastInModule = unitIndex >= 0 && unitIndex === areaUnits.length - 1
 
   const isRead = currentUnit ? Boolean(store?.state?.notes?.[`study-read-${currentUnit.id}`]) : false
@@ -132,7 +118,7 @@ export function StudyReader({ area, unitId, store }) {
         <div key={part.id} className={`ies-toc-part ${part.isGt ? 'ies-toc-part-gt' : ''}`}>
           <div className="ies-toc-part-title">
             {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '4px' }}>GT</span>}
-            {part.title.replace(/^Part \d+\.\d+\s*·\s*/, '')}
+            {partLabel(part.title)}
           </div>
           <ul className="ies-toc-list">
             {partUnits.map((u) => {
@@ -163,50 +149,52 @@ export function StudyReader({ area, unitId, store }) {
   return (
     <div className="ies-reader">
       <header className="ies-reader-header">
+        <span className="ies-eyebrow">IELTS / Section {modMeta.num}</span>
         <div className="ies-reader-module-title">
-          <CurriculumIcon name={modMeta.icon} size={28} />
+          <CurriculumIcon name={modMeta.icon} size={32} />
           <h1>{modMeta.title}</h1>
         </div>
-        {area !== 'overview' && <div className="ie-facts"><span>{modMeta.fact}</span></div>}
+        <p className="ies-reader-scope">{modMeta.scope}</p>
       </header>
-
-      {/* Mobile / Narrow-Tablet Compact Contents Drawer (< 880px) */}
-      {currentUnit && (
-        <details className="ies-mobile-toc">
-          <summary>
-            {unitIndex < 0 ? 'Contents · Course reference: ' : 'Contents · Lesson ' + lessonNumber + ' of ' + areaUnits.length + ': '}{currentUnit.title}
-          </summary>
-          <div className="ies-mobile-toc-body">{renderTocParts()}</div>
-        </details>
-      )}
-
-      <div className="ies-reader-grid">
-        {/* Left Column: Outline Table of Contents */}
-        <nav className="ies-outline" aria-label={`${modMeta.title} study units`}>
-          <div className="ies-outline-head">Module Contents</div>
-
-          {areaUnits.length >= 8 && (
-            <input
-              type="search"
-              className="ies-toc-filter"
-              placeholder="Filter units…"
-              value={filterQuery}
-              onChange={(e) => setFilterQuery(e.target.value)}
-              aria-label="Filter units in this module"
-            />
-          )}
-
-          {renderTocParts()}
+      {toolbar}
+      <details className="ies-contents" open={contentsOpen} onToggle={(event) => setContentsOpen(event.currentTarget.open)}>
+        <summary><span>Lessons in {modMeta.title === 'Everything about IELTS' ? 'this section' : modMeta.title}</span><span>{unitIndex + 1} / {areaUnits.length}</span></summary>
+        <nav aria-label={`${modMeta.title} study units`}>
+          <label className="ies-filter-label">Find a lesson
+            <input type="search" className="ies-toc-filter" placeholder="Search lesson titles…" value={filterQuery} onChange={event => setFilterQuery(event.target.value)} />
+          </label>
+          {filteredUnits.length ? <div className="ies-contents-parts">{renderTocParts()}</div> : <p role="status">No lessons match “{filterQuery}”. Try another word.</p>}
         </nav>
-
-        {/* Right Column: Main Unit Article */}
-        <main className="ies-main-content">
+      </details>
+      <div className="ies-reader-grid">
+        <div className="ies-main-content">
           {currentUnit ? (
             <article className="ies-article" aria-labelledby={`ies-unit-h2-${currentUnit.id}`}>
               <header className="ies-unit-header">
                 <div className="ies-unit-kicker">
-                  <span>{unitIndex < 0 ? 'Course reference' : 'Lesson ' + lessonNumber + ' of ' + areaUnits.length}</span>
-                  {currentUnit.track === 'gt' && <span className="ies-badge ies-badge-gt">General Training</span>}
+                  <span>
+                    Lesson {unitIndex + 1} of {areaUnits.length}
+                  </span>
+                  <span>·</span>
+                  <span>{partLabel(currentUnit.partTitle)}</span>
+                  <span>·</span>
+                  <span>~{currentUnit.minutes} min study</span>
+                  <span>·</span>
+                  <span
+                    className={`ies-badge ${
+                      currentUnit.track === 'gt'
+                        ? 'ies-badge-gt'
+                        : currentUnit.track === 'shared'
+                        ? 'ies-badge-shared'
+                        : 'ies-badge-academic'
+                    }`}
+                  >
+                    {currentUnit.track === 'gt'
+                      ? 'General Training'
+                      : currentUnit.track === 'shared'
+                      ? 'Shared'
+                      : 'Academic'}
+                  </span>
                 </div>
 
                 {currentUnit.track === 'gt' && (
@@ -228,15 +216,21 @@ export function StudyReader({ area, unitId, store }) {
                 <h2 id={`ies-unit-h2-${currentUnit.id}`} className="ies-unit-title">
                   {currentUnit.title}
                 </h2>
+
               </header>
 
               <div className="ies-unit-blocks">
                 {currentUnit.blocks.map((block, idx) => (
-                  <StudyBlock key={idx} block={block} store={store} />
+                  <StudyBlock key={`${currentUnit.id}-${idx}`} block={block} store={store} />
                 ))}
               </div>
 
               <footer className="ies-unit-footer">
+                <div className="ies-unit-provenance">
+                  Covers source section{currentUnit.sourceSections.length > 1 ? 's' : ''}{' '}
+                  {currentUnit.sourceSections.join(', ')}
+                </div>
+
                 <label className="ies-unit-read-toggle">
                   <input
                     type="checkbox"
@@ -252,13 +246,13 @@ export function StudyReader({ area, unitId, store }) {
                       }))
                     }}
                   />
-                  <span>Mark unit as read</span>
+                  <span>Mark lesson as read</span>
                 </label>
 
                 <div className="ies-nav-cards">
                   {prevUnit ? (
                     <a className="ies-nav-card ies-nav-card-prev" href={`#${ieltsStudyPath(prevUnit.area, prevUnit.id)}`}>
-                      <span className="ies-nav-card-label">← Previous Unit</span>
+                      <span className="ies-nav-card-label">← Previous lesson</span>
                       <span className="ies-nav-card-title">{prevUnit.title}</span>
                     </a>
                   ) : (
@@ -268,13 +262,13 @@ export function StudyReader({ area, unitId, store }) {
                   {nextUnit ? (
                     <a className="ies-nav-card ies-nav-card-next" href={`#${ieltsStudyPath(nextUnit.area, nextUnit.id)}`}>
                       <span className="ies-nav-card-label">
-                        {nextUnit.area !== area ? 'Next Module →' : 'Next Unit →'}
+                        {nextUnit.area !== area ? 'Next section →' : 'Next lesson →'}
                       </span>
                       <span className="ies-nav-card-title">{nextUnit.title}</span>
                     </a>
                   ) : (
                     <a className="ies-nav-card ies-nav-card-next" href={`#${ieltsPath(area, 'practice')}`}>
-                      <span className="ies-nav-card-label">End of Manual →</span>
+                      <span className="ies-nav-card-label">End of course →</span>
                       <span className="ies-nav-card-title">Practise {modMeta.title}</span>
                     </a>
                   )}
@@ -302,16 +296,16 @@ export function StudyReader({ area, unitId, store }) {
               </div>
             </article>
           )}
-        </main>
+        </div>
       </div>
     </div>
   )
 }
 
-export default function IeltsStudyView({ route, store }) {
+export default function IeltsStudyView({ route, store, toolbar }) {
   if (route.area === 'home') {
-    return <StudyHome store={store} />
+    return <StudyHome store={store} toolbar={toolbar} />
   }
 
-  return <StudyReader area={route.area} unitId={route.unit} store={store} />
+  return <StudyReader area={route.area} unitId={route.unit} store={store} toolbar={toolbar} />
 }

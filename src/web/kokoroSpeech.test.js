@@ -8,13 +8,26 @@ import { runInNewContext } from 'node:vm'
 const source = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
   .replaceAll('export async function ', 'async function ')
   .replaceAll('export function ', 'function ')
+  .replace('import(/* @vite-ignore */ MODULE_URL)', 'Promise.resolve({ KokoroTTS: testModel })')
 
 function speechHarness(behavior) {
   let cancelCount = 0
   let id = 0
   const timers = new Map()
   const spoken = []
+  const playedAudio = []
+  const modelCalls = []
   const events = []
+  const testModel = {
+    async from_pretrained(_model, config) {
+      modelCalls.push(config.device)
+      return {
+        async generate() {
+          return { toBlob: () => ({ arrayBuffer: async () => new ArrayBuffer(4) }) }
+        },
+      }
+    },
+  }
   const setTimeout = (fn) => { const key = ++id; timers.set(key, fn); return key }
   const clearTimeout = (key) => { timers.delete(key) }
   const synth = {
@@ -33,17 +46,28 @@ function speechHarness(behavior) {
     SpeechSynthesisUtterance: class {
       constructor(text) { this.text = text }
     },
+    AudioContext: class {
+      state = 'running'
+      destination = {}
+      resume() { return Promise.resolve() }
+      decodeAudioData() { return Promise.resolve({}) }
+      createBufferSource() {
+        return { playbackRate: { value: 1 }, connect() {}, disconnect() {}, stop() {}, start() { playedAudio.push('started') } }
+      }
+    },
   }
   const engine = runInNewContext(
     source + '\n({ speakKokoroSpeech, stopKokoroSpeech })',
-    { window, navigator: {}, setTimeout, clearTimeout, console, performance: { now: () => 0 } },
+    { window, navigator: {}, document: { visibilityState: 'visible' },
+      setTimeout, clearTimeout, console, testModel,
+      performance: { now: () => 0 } },
   )
   function flushTimers() {
     const queued = [...timers.values()]
     timers.clear()
     queued.forEach(fn => fn())
   }
-  return { engine, spoken, events, synth, flushTimers, get cancelCount() { return cancelCount } }
+  return { engine, spoken, events, synth, modelCalls, playedAudio, flushTimers, get cancelCount() { return cancelCount } }
 }
 
 test('first vocabulary click speaks without first cancelling the browser speech queue', async () => {
@@ -76,14 +100,20 @@ test('a silent first attempt retries another installed voice', async () => {
   assert.deepEqual(h.events, ['loading', 'start'])
 })
 
-test('a browser with permanently silent speech reports an error', async () => {
+test('a permanently silent system voice switches to real CPU audio playback', async () => {
   const h = speechHarness('silent')
   await h.engine.speakKokoroSpeech('orange', {
     onLoading: () => h.events.push('loading'),
-    onStart: () => h.events.push('start'),
+    onStart: source => h.events.push('start:' + source),
     onError: () => h.events.push('error'),
   })
-  for (let i = 0; i < 7; i++) h.flushTimers()
+  for (let i = 0; i < 7; i++) {
+    h.flushTimers()
+    for (let j = 0; j < 12; j++) await Promise.resolve()
+  }
   assert.equal(h.spoken.length, 3)
-  assert.deepEqual(h.events, ['loading', 'error'])
+  assert.deepEqual(h.modelCalls, ['wasm'])
+  assert.deepEqual(h.playedAudio, ['started'])
+  assert.ok(h.events.includes('start:kokoro'))
+  assert.ok(!h.events.includes('error'))
 })

@@ -232,6 +232,7 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.match(phraseShelf, /!clickToExplain && language === 'ja'/)
   assert.match(experience, /clickToExplain/)
   assert.match(experience, /contextJa: item\.context/)
+  assert.match(experience, /promptItem\?\.ja/)
   assert.match(experience, /width="760" height="476"/)
 
 
@@ -240,6 +241,7 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.doesNotMatch(experience, /ar-study-example/)
   assert.match(styles, /ar-ch02-phrase-shelf/)
   assert.match(styles, /ar-ch02-phrase-art/)
+  assert.match(styles, /ar-ch02-reply-question > \.ar-ch02-reply-ja/)
   const images = (filename) => existsSync(new URL(`public/assets/course/${filename}`, root))
   const blocks = introductionSections.flatMap((section) => section.blocks)
   const phraseBlocks = blocks.filter((block) => block.type === 'phrases')

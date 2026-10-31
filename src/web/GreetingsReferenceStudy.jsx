@@ -71,10 +71,10 @@ const jpCheckinContext = {
   'You?':'同じ質問を短く相手に返す。前の文脈が明らかなときに自然。',
 }
 const jpCheckinLabels = {
-  '1. Ask how someone is doing':'1. 相手の調子を尋ねる',
-  '2. Positive and everyday replies':'2. 前向きな日常の返事',
-  '3. Neutral or honest replies when things are difficult':'3. 中立的な返事・調子が悪いときの返事',
-  '4. Return the question':'4. 相手に質問を返す',
+  'Ask how someone is doing':'相手の調子を尋ねる',
+  'Positive and everyday replies':'前向きな日常の返事',
+  'Neutral or honest replies when things are difficult':'中立的な返事・調子が悪いときの返事',
+  'Return the question':'相手に質問を返す',
   'Add after your answer':'自分の返事の後に続ける',
 }
 const noteEveryday = {
@@ -211,7 +211,7 @@ function FlowGroup({ color, title, options, selected, onSelect, play, labels }) 
   const { language } = useLanguage()
   return <div className={'ar-flow-group ar-flow-'+color}>
     {labels && <p className="ar-overline">{title}</p>}
-    {options.map((item,i)=><div key={item.text}>
+    {options.map((item,i)=><div key={item.text} className={item.breakBefore ? 'ar-flow-category-break' : undefined}>
       {item.label && <p className="ar-flow-label">{language === 'ja' ? jpCheckinLabels[item.label] || item.label : item.label}{item.extra && <span>{language === 'ja' ? jpCheckinLabels[item.extra] || item.extra : item.extra}</span>}</p>}
       <button className={'ar-flow-choice'+(selected===item.text?' ar-on':'')} type="button" onClick={()=>{onSelect(item.text);play(item.text)}} aria-pressed={selected===item.text}><span className="ar-choice-content"><span lang="en">{item.text}</span>{language === 'ja' && <small lang="ja">{jpPhrase[item.text]}</small>}</span><PlaySymbol/></button>
     </div>)}
@@ -236,10 +236,10 @@ function CheckInFlow({ play }) {
     'How about you?':'Return the question to the other person.',
     'You?':'An even shorter way to return the question.',
   }
-  const ask = ["How are you?","How are you doing?","How's it going?"].map((text,i)=>({text,label:i===0?'1. Ask how someone is doing':null}))
-  const answer = ['Good, thanks.','Fine, thanks.','Pretty good.','Not bad.'].map((text,i)=>({text,label:i===0?'2. Positive and everyday replies':null}))
-  const neutral = ["I'm okay.",'Not great.'].map((text,i)=>({text,label:i===0?'3. Neutral or honest replies when things are difficult':null}))
-  const back = ['How about you?','You?'].map((text,i)=>({text,label:i===0?'4. Return the question':null,extra:i===0?'Add after your answer':null}))
+  const ask = ["How are you?","How are you doing?","How's it going?"].map((text,i)=>({text,label:i===0?'Ask how someone is doing':null}))
+  const answer = ['Good, thanks.','Fine, thanks.','Pretty good.','Not bad.'].map((text,i)=>({text,label:i===0?'Positive and everyday replies':null}))
+  const neutral = ["I'm okay.",'Not great.'].map((text,i)=>({text,label:i===0?'Neutral or honest replies when things are difficult':null,breakBefore:i===0}))
+  const back = ['How about you?','You?'].map((text,i)=>({text,label:i===0?'Return the question':null,extra:i===0?'Add after your answer':null}))
   return <article className="ar-card ar-flow-card">
     <div className="ar-flow-header"><p className="ar-overline">{language === 'ja' ? '短い近況確認' : 'A SHORT CHECK-IN'}</p><button className="ar-play" type="button" onClick={()=>play([selectedAsk,selected,selectedReturn])} aria-label="Play your check-in"><PlaySymbol full/></button></div>
     <div className="ar-flow-layout">

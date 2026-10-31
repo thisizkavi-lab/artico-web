@@ -229,7 +229,9 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
   assert.match(experience, /SituationalPhrases/)
   assert.match(experience, /ar-ch02-situation-table/)
   assert.match(experience, /<PhraseAudio item={item}/)
-  assert.match(experience, /conversation && lessonId === '02'/)
+  assert.match(experience, /conversation \? \(lessonId === '02'/)
+  assert.match(experience, /ar-ch02-spoken-line/)
+  assert.match(styles, /ar-ch02-expression \.ip-audio/)
   assert.match(experience, /scope="rowgroup"/)
   assert.match(experience, /scope="col"/)
   // The last turn is expressed as two genuine reply branches, not repeated above them.

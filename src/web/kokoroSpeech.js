@@ -12,6 +12,7 @@ const FIRST_SOUND_BUDGET_MS = 1000
 let modelPromise = null
 let cpuModelPromise = null
 let useOfflineModel = false
+let manuallyForcedOffline = false
 let engine = 'unknown'
 let currentAudio = null
 let currentSource = null
@@ -435,6 +436,18 @@ export async function speakKokoroSpeech(text, options = {}) {
   if (!phrase || typeof window === 'undefined') return false
 
   const { voice = 'af_heart', rate = 1, preferDevice = false, forceModel = false, ...callbacks } = options
+  // The explicit Vocabulary setting bypasses an unreliable OS voice entirely.
+  if (forceModel) {
+    useOfflineModel = true
+    manuallyForcedOffline = true
+    nativeMode = false
+    autoTuneStarted = true
+  } else if (manuallyForcedOffline) {
+    manuallyForcedOffline = false
+    useOfflineModel = false
+    nativeMode = true
+    autoTuneStarted = false
+  }
   stopKokoroSpeech()
   const key = clipKey(voice, phrase)
   const cached = clipCache.has(key)

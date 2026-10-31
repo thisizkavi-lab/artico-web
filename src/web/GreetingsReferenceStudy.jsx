@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import './GreetingsReferenceStudy.css'
 import { approvedAudio } from './components'
 import { useLanguage } from './Language'
-import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
+import { speakKokoroSpeech, stopKokoroSpeech, prefetchKokoroSpeech, warmKokoroSpeech } from './kokoroSpeech'
 
 // Chapter 01 study artwork follows the approved five-page Artico reference.
 // Seven original transparent Chapter 01 greeting illustrations.
@@ -164,7 +164,7 @@ function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, c
     <div className="ar-shelf-body">
       <div className="ar-shelf-heading"><h3>{title}{language === 'ja' && titleJa && <small lang="ja">{titleJa}</small>}</h3>{captions && <span>{options.length} expressions</span>}</div>
       <div className="ar-speech-choices">
-        {options.map((item,i)=><button key={item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);play(item.text)}}>
+        {options.map((item,i)=><button key={item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);play(item.text, options.slice(i+1,i+3).map(next=>next.text))}} onMouseEnter={()=>prefetchKokoroSpeech([item.text])}>
           <span className="ar-choice-content"><span lang="en">{item.text}</span>{language === 'ja' && jpPhrase[item.text] && <small lang="ja">{jpPhrase[item.text]}</small>}</span><PlaySymbol/><span className="ar-tail" aria-hidden="true"/>
         </button>)}
       </div>
@@ -262,8 +262,8 @@ function CheckInFlow({ play }) {
 }
 
 export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
-  useEffect(() => () => stopKokoroSpeech(), [])
-  const play = useCallback((texts) => {
+  useEffect(() => { warmKokoroSpeech(); prefetchKokoroSpeech(shelfEveryday.map(item=>item.text)); return () => stopKokoroSpeech() }, [])
+  const play = useCallback((texts, upcoming = []) => {
     const lines = (Array.isArray(texts) ? texts : [texts]).filter(Boolean)
     if (!lines.length) return
     if (lines.length === 1) {
@@ -276,6 +276,7 @@ export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
     }
     audioProps?.audio?.stop?.()
     void speakKokoroSpeech(lines.join(' '), { rate: VOICE_RATE })
+    prefetchKokoroSpeech(upcoming)
   }, [audioProps, phrases])
   return <div className="ip-reading ar-page">
     <section id="study-open" className="ar-section" aria-labelledby="ar-head-1">

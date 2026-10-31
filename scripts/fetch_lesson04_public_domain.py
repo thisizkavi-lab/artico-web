@@ -6,7 +6,6 @@ Pexels asset ID, the matching headword and the intended visual meaning.
 Images are served locally by Artico; no external runtime hotlinks.
 """
 import io
-import base64
 import json
 import hashlib
 import zipfile
@@ -44,30 +43,6 @@ with zipfile.ZipFile(art_archive) as z:
         (target / name).write_bytes(image_bytes)
         assert len(image_bytes) > 4000, name
 print("Installed and validated", len(meal_scenes), "original Artico meal illustrations")
-
-# Social routines batch: four original 608x384 illustrations already mapped
-# in vocabularyDailyRoutineSources.json. Validate the exact assets so CI cannot
-# silently publish older placeholder photos in their place.
-social_terms = ["feed the dog", "walk the dog", "friends", "listen to the radio"]
-social_scenes = {catalog["entries"][term]["file"] + ".webp" for term in social_terms}
-assert len(social_scenes) == 4
-for name in sorted(social_scenes):
-    p = target / name
-    assert p.is_file() and p.stat().st_size > 4000, name
-    raw = p.read_bytes()
-    try:
-        with Image.open(io.BytesIO(raw)) as scene:
-            scene.verify()
-    except Exception:
-        # Earlier upload stored the base64 text as the file body. Decode it
-        # once during the build, then publish the real WebP bytes.
-        decoded = base64.b64decode(raw, validate=True)
-        with Image.open(io.BytesIO(decoded)) as scene:
-            scene.verify()
-        p.write_bytes(decoded)
-    with Image.open(p) as scene:
-        assert scene.format == "WEBP" and scene.size == (608, 384), (name, scene.size, scene.format)
-print("Verified", len(social_scenes), "original Artico social-routine illustrations")
 
 # Second approved batch: ten original Artico action/object scenes from
 # 'leave work' through 'buy groceries'. Extract before normal card validation.

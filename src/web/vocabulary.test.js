@@ -363,7 +363,7 @@ test('Lesson 05 colors use reference-style SVG swatches only in the color group'
   assert.match(visual, /chapter === 5 && colorSwatches\[term\]/)
   assert.match(visual, /type: 'color-swatch'/)
   assert.match(swatch, /<svg[\s\S]*viewBox="0 0 240 200"/)
-  assert.match(swatch, /<text[\s\S]*showLabel/)
+  assert.match(swatch, /showLabel && \([\s\S]*<text/)
   assert.match(topic, /showLabel=\{!answerHidden\}/)
   assert.match(topic, /vlt-color-grid/)
   assert.match(support, /'5:yellow':'黄色'/)

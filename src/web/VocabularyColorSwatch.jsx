@@ -6,7 +6,7 @@ const blobShapes = [
 ]
 
 export default function VocabularyColorSwatch({ term, color, variant = 0, showLabel = true }) {
-  const label = term.replace(/\\s*\\(color\\)$/i, '')
+  const label = term
   return (
     <svg className="vlt-color-swatch" viewBox="0 0 240 200" role="img"
       aria-label={showLabel ? label : 'Color swatch'}>

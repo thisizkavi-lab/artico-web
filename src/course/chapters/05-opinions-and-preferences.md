@@ -20,7 +20,7 @@ Use these phrases to show how strongly you feel. A preference describes your tas
 **Dev:** What are you into?  
 **Riley:** **I'm into photography.** I'd rather go for a walk and take pictures.
 
-**Note:** **Not really** is a mild way to say no. **I can't stand it** is much stronger. Choose words that match how you actually feel.
+**Note:** **Not really** is a mild way to say no; **I can't stand it** is much stronger. **I'm good** depends on context: after **How are you?**, it means you're well; after an offer, **No, I'm good, thanks** politely declines it.
 
 ## Study: Ask for and give an opinion
 
@@ -55,8 +55,8 @@ Use **prefer** to compare choices. Use **would rather** to say which action you 
 | **Either is fine.** | Tea or coffee? **Either is fine.** | Say that both choices are acceptable. |
 | **Both work for me.** | Tuesday or Wednesday? **Both work for me.** | Say that either time suits you. |
 | **I don't have a preference.** | Which seat would you like? **I don't have a preference.** | Say you do not have a particular choice. |
-| **I don't mind.** | Inside or outside? **I don't mind.** | Say you are happy with either option. |
-| **I don't care.** | Where should we sit? **I don't care.** | Say the choice truly does not matter to you. This can sound dismissive. |
+| **I don't mind.** | Inside or outside? **I don't mind.** | Say either option is acceptable to you; this often sounds relaxed. |
+| **I don't care.** | Where should we sit? **I don't care.** | Say the choice does not matter to you. Depending on your tone, this can sound dismissive. |
 
 **Dev:** Would you rather eat here or take the food home?  
 **Riley:** **I'd rather take it home.** It's quieter there.  

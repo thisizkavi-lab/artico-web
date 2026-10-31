@@ -191,6 +191,17 @@ function Visual({visual, practice, japanese}) {
     }} />
   }
   if (visual?.type === 'body-art') return <VocabularyBodyArt term={visual.term} />
+  if (visual?.type === 'routine-web') {
+    return <span className={'vlt-routine-vector vlt-routine-' + visual.mode} aria-hidden="true">
+      {visual.icons.map((src, i) => (
+        <span className="vlt-routine-part" key={src + ':' + i}>
+          <img src={src} alt="" loading="lazy" decoding="async" />
+          {visual.mode === 'path' && i < visual.icons.length - 1 && <span className="vlt-routine-arrow">→</span>}
+        </span>
+      ))}
+    </span>
+  }
+
   if (!visual || (visual.type !== 'png' && visual.type !== 'library-png')) return null
   return <img className={'vlt-png' + (visual.type === 'library-png' ? ' vlt-library-png' : '')}
     src={visual.src} alt="" aria-hidden="true" loading="lazy" decoding="async" />

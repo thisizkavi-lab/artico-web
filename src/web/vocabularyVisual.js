@@ -7,6 +7,7 @@ import { combinedVocabulary } from './vocabularyDedup'
 import { vocabularyTimePng } from './vocabularyTimePng'
 import { vocabularyPngIllustration } from './vocabularyPngArtwork'
 import { vocabularyDailyRoutineExtra } from './vocabularyDailyRoutineExtra'
+import { vocabularyDailyRoutineInternet } from './vocabularyDailyRoutineInternet'
 import { vocabularyOriginalScene } from './vocabularyOriginalScenes'
 import { vocabularyLibraryIllustration } from './vocabularyLibraryArtwork'
 import { vocabularyBodyIllustration } from './VocabularyBodyArt'
@@ -22,6 +23,8 @@ function artworkFor(term, chapter) {
   if (bodyMotion) return bodyMotion
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
+  const curatedInternet = vocabularyDailyRoutineInternet(term, chapter)
+  if (curatedInternet) return curatedInternet
   const dailyEditorial = vocabularyDailyRoutineExtra(term, chapter)
   if (dailyEditorial) return dailyEditorial
   const approvedBody = vocabularyBodySprite(term, chapter)

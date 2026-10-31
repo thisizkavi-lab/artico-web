@@ -69,7 +69,7 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p12').ja, 'ダニエル・リードです。普段はダンと呼ばれています。お会いできてうれしいです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p13').ja, 'こちらこそ。サトシと呼んでください。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p27').ja, 'やあ、アレックスです。')
-  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p4').ja, 'こんにちは、私の名前はアレックスです。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p4').ja, 'こんにちは、アレックスといいます。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p29').ja, '私はキャシーの友人です。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p35').ja, '皆さん、こちらはアレックスです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p36').ja, 'アレックスを紹介します。')

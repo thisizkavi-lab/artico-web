@@ -5,6 +5,7 @@ import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
 import KokoroSpeakButton from './KokoroSpeakButton'
 import { prefetchKokoroSpeech, warmKokoroSpeech } from './kokoroSpeech'
+import { vocabularySpokenText } from './vocabularySpokenText'
 import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
@@ -329,7 +330,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
     const first = shownGroups.flatMap(group =>
       organizeVocabularyGroup(group.items, topic.sourceLesson).fresh
         .slice(0, 3).map(entry => entry[0])).slice(0, 3)
-    prefetchKokoroSpeech(first)
+    prefetchKokoroSpeech(first.map(vocabularySpokenText))
   }, [topic.sourceLesson, groupIndex, mode])
 
 

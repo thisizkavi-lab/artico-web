@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto'
 import designs from '../src/course/chapter-designs.js'
 import { addPhraseBank } from './phrase-bank.mjs'
 import { parseLesson } from './lesson-parser.mjs'
-import { introductionAliases, introductionById } from '../src/course/introductions.js'
+import { introductionAliases, introductionById, introductionSections } from '../src/course/introductions.js'
 import { foundationReading, twisterGuidance } from '../src/course/foundations-en.js'
 import { allTwisters } from '../src/data.js'
 
@@ -217,4 +217,32 @@ test('all foundation topics and existing pronunciation recordings remain availab
     for (let i = 0; i < item.buildSteps.length - 1; i++)
       assert.ok(existsSync(new URL(`public/audio/segments/${item.id}-${i + 1}.wav`, root)))
   }
+})
+
+test('Chapter 02 illustrations are wired to phrase cards and context conversations', () => {
+  const shelf = readFileSync(new URL('src/web/ReferencePhraseShelf.jsx', root), 'utf8')
+  const experience = readFileSync(new URL('src/web/LessonExperience.jsx', root), 'utf8')
+  assert.match(shelf, /note, sceneArt/)
+  assert.match(shelf, /Boolean\(sceneArt\)/)
+  assert.match(shelf, /art\(sceneArt \|\| current\.art\)/)
+  assert.match(experience, /sceneArt=\{lessonId === '02' \? block\.sceneArt : undefined\}/)
+  const images = (filename) => existsSync(new URL(`public/assets/course/${filename}`, root))
+  let phraseCards = 0
+  let contextScenes = 0
+  for (const section of introductionSections) {
+    for (const block of section.blocks) {
+      if (block.type === 'phrases') {
+        assert.ok(block.sceneArt?.endsWith('.png'), `Missing Chapter 02 phrase image: ${section.id}`)
+        assert.ok(images(block.sceneArt), `Missing on-disk image: ${block.sceneArt}`)
+        phraseCards++
+      }
+      if (block.type === 'conversation' && block.collapsed) {
+        assert.ok(block.art?.endsWith('.png'), `Missing Chapter 02 context image: ${section.id}`)
+        assert.ok(images(block.art), `Missing on-disk image: ${block.art}`)
+        contextScenes++
+      }
+    }
+  }
+  assert.ok(phraseCards >= 12)
+  assert.ok(contextScenes >= 4)
 })

@@ -68,7 +68,12 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p11').ja, 'こんにちは、サトシです。プロジェクトマネージャーをしています。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p12').ja, 'ダニエル・リードです。普段はダンと呼ばれています。お会いできてうれしいです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p13').ja, 'こちらこそ。サトシと呼んでください。')
-  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p27').ja, '私は……です。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p27').ja, 'やあ、アレックスです。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p4').ja, 'こんにちは、私の名前はアレックスです。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p29').ja, '私はキャシーの友人です。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p35').ja, '皆さん、こちらはアレックスです。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p36').ja, 'アレックスを紹介します。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p38').ja, 'こんにちは、皆さん。アレックスです。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p37').ja, '何とお呼びすればよいですか。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p15').ja, '普段はダンと呼ばれています。')
   assert(ja.phrases.filter((item) => item.section !== 'words').every((item) => japanese.test(item.ja)))
@@ -76,15 +81,23 @@ test('the introduction pilot translates the existing layout without replacing re
     ...ja.phrases.flatMap((item) => [item.context, item.register]),
     ...ja.sections.flatMap((section) => [
       section.title, section.short,
-      ...section.blocks.flatMap((block) => [block.title, block.text, block.alt, block.contextText]),
+      ...section.blocks.flatMap((block) => [
+        block.title, block.text, block.alt, block.contextText,
+        block.replyAlternatives?.title,
+        ...(block.replyAlternatives?.choices?.map((choice) => choice.label) ?? []),
+      ]),
     ]),
     ...ja.scenarios.flatMap((item) => [item.title, item.prompt, item.sample]),
   ].filter(Boolean).join('\n')
   assert.doesNotMatch(translatedCopy, /\b(?:Alex|Anna|Cassie|Satoshi|Daniel|Sam|Dan|Avery|Taylor|Morgan)\b/)
   assert.match(translatedCopy, /サトシ/)
   assert.deepEqual(ja.sections.map((section) => section.id), ['introduce', 'work', 'connect'])
-  const reply = ja.sections[0].blocks.find((block) => block.type === 'reply-alternatives')
+  const gathering = ja.sections[0].blocks.find((block) => block.type === 'conversation' && block.title === '友人の集まりで')
+  const reply = gathering.replyAlternatives
+  assert.equal(reply.title, '返事の二つの言い方')
   assert.equal(reply.promptId, 'ch02-p30')
+  assert.deepEqual(reply.choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
+  assert.deepEqual(reply.choices.map((choice) => choice.label), ['短い返事', '丁寧な返事'])
   assert.equal(ja.phrases.find((item) => item.id === reply.promptId).ja, 'はじめまして。')
   assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
 })

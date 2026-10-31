@@ -143,6 +143,29 @@ test('every shared practice item has exactly one Study anchor and a valid illust
   }
 })
 
+test('Chapter 04 teaches conversational repair in context without isolated phrase cards', () => {
+  const model = readLesson('04')
+  assert.equal(model.title, "When Something Isn't Clear")
+  assert.deepEqual(model.study.map((section) => section.title), [
+    "When you didn't catch something",
+    "When you heard it but don't understand",
+    "When you need a different explanation",
+  ])
+  assert.equal(model.vocabulary.length, 0)
+  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'table').length, 0)
+  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 3)
+  assert(model.study.every((section) => section.blocks.some((block) => block.type === 'conversation')))
+  const conversationIds = new Set(model.study.flatMap((section) =>
+    section.blocks.filter((block) => block.type === 'conversation').flatMap((block) => block.phraseIds),
+  ))
+  assert.equal(model.phraseBank.length, conversationIds.size)
+  assert(model.phraseBank.every((item) => conversationIds.has(item.id)))
+  assert.deepEqual(
+    model.study.flatMap((section) => section.blocks.filter((block) => block.type === 'explanation').flatMap((block) => block.phraseIds)),
+    [],
+  )
+})
+
 test('a Study subsection about practice keeps its teaching examples in Study', () => {
   const source = readFileSync(new URL('src/course/chapters/40-returning-goods.md', root), 'utf8')
   const lesson = parseLesson(source, '40')

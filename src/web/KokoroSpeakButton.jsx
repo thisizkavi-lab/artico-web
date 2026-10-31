@@ -29,11 +29,13 @@ export default function KokoroSpeakButton({ text, japanese = false, rate = 0.95,
     ? (japanese ? '音声の準備中。初回はダウンロードが必要です。' : 'Preparing voice. The first use downloads the model.')
     : phase === 'playing'
       ? (japanese ? '音声を停止' : 'Stop pronunciation')
-      : (japanese ? 'アメリカ英語の発音を聞く' : 'Hear American English pronunciation')
+      : phase === 'error'
+        ? (japanese ? '音声を再試行。聞こえない場合は端末の英語音声を確認してください。' : 'Retry pronunciation. If silent, check your system English speech voices.')
+        : (japanese ? 'アメリカ英語の発音を聞く' : 'Hear American English pronunciation')
   return (
     <button
       type="button"
-      className={'artico-speak ' + className + (phase === 'loading' ? ' is-loading' : '') + (phase === 'playing' ? ' is-playing' : '')}
+      className={'artico-speak ' + className + (phase === 'loading' ? ' is-loading' : '') + (phase === 'playing' ? ' is-playing' : '') + (phase === 'error' ? ' is-error' : '')}
       title={title}
       aria-label={title + ': ' + text}
       aria-busy={phase === 'loading'}

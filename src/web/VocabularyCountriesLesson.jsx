@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01'
+import KokoroSpeakButton from './KokoroSpeakButton'
 
 const asset = (path) => `${import.meta.env.BASE_URL}assets/vocabulary/${path}`
 
@@ -29,6 +30,8 @@ function CountryCard({ item, revealed, onToggle, japanese }) {
           {!revealed && <span className="vl01-reveal">{japanese ? 'タップして確認' : 'Tap to reveal'} <span aria-hidden="true">↗</span></span>}
         </span>
       </button>
+      <KokoroSpeakButton text={item.country} japanese={japanese} className="vl01-country-audio" />
+      {revealed && <KokoroSpeakButton text={item.nationality} japanese={japanese} className="vl01-nationality-audio" />}
     </li>
   )
 }
@@ -122,10 +125,10 @@ export default function VocabularyCountriesLesson({ japanese }) {
           </div>
         </div>
         <dl className="vl01-word-grid">
-          {placeWords.map((word) => <div key={word.en}><dt lang="en">{word.en}</dt><dd lang="ja">{word.ja}</dd></div>)}
+          {placeWords.map((word) => <div key={word.en}><dt lang="en">{word.en}<KokoroSpeakButton text={word.en} japanese={japanese} /></dt><dd lang="ja">{word.ja}</dd></div>)}
         </dl>
         <div className="vl01-phrase-grid">
-          {placePhrases.map((phrase) => <div key={phrase.en}><strong lang="en">{phrase.en}</strong><p lang="ja">{phrase.ja}</p></div>)}
+          {placePhrases.map((phrase) => <div key={phrase.en}><strong lang="en">{phrase.en}</strong><KokoroSpeakButton text={phrase.en} japanese={japanese} /><p lang="ja">{phrase.ja}</p></div>)}
         </div>
       </section>
     </div>

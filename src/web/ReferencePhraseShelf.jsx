@@ -7,12 +7,12 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
 // Shared visible phrase cards for Social Fluency Chapters 02–96.
 // English target phrases remain primary; explanatory text stays secondary.
-export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId, note }) {
+export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId, note, sceneArt }) {
   const { language } = useLanguage()
   const items = ids.map(id => byId[id]).filter(Boolean)
   const [selected, setSelected] = useState(() => Math.max(0, ids.indexOf(focusedId)))
   const current = items[selected] || items[0]
-  const hasCompleteArt = items.length > 0 && items.every(item => Boolean(item.art))
+  const hasCompleteArt = Boolean(sceneArt) || (items.length > 0 && items.every(item => Boolean(item.art)))
 
   useEffect(() => () => stopKokoroSpeech(), [])
 
@@ -35,7 +35,7 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
       aria-label={title || (language === 'ja' ? 'フレーズ' : 'Phrases')}>
       <h3 className="ar-reference-heading">{title || (language === 'ja' ? 'フレーズ' : 'Phrases')}</h3>
       {hasCompleteArt && <div className="ar-reference-stage" aria-hidden="true">
-        <img src={art(current.art)} alt="" loading="lazy" />
+        <img src={art(sceneArt || current.art)} alt="" loading="lazy" />
       </div>}
       <div className="ar-reference-shelf-main">
         <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? 'フレーズを選んで発音を聞く' : 'Listen to a phrase'}>

@@ -263,7 +263,8 @@
 }
 
 /* Chapter 05 uses a visual phrase board, not alternating chat bubbles. */
-.ip-page .ar-ch05-phrase-card {
+.ip-page .ar-ch05-phrase-card,
+.ip-page .ar-illustrated-phrase-card {
   display:flex;
   flex-direction:column;
   gap:14px;
@@ -273,7 +274,8 @@
   border-radius:16px;
   background:#f8fafc;
 }
-.ip-page .ar-ch05-illustration {
+.ip-page .ar-ch05-illustration,
+.ip-page .ar-illustrated-illustration {
   display:flex;
   align-items:center;
   justify-content:center;
@@ -282,7 +284,8 @@
   border-radius:12px;
   background:#f1f4f7;
 }
-.ip-page .ar-ch05-illustration img {
+.ip-page .ar-ch05-illustration img,
+.ip-page .ar-illustrated-illustration img {
   display:block;
   width:100%;
   height:auto;
@@ -290,7 +293,8 @@
   aspect-ratio:2/1;
   object-fit:contain;
 }
-.ip-page .ar-ch05-phrase-cloud {
+.ip-page .ar-ch05-phrase-cloud,
+.ip-page .ar-illustrated-phrase-cloud {
   display:flex;
   flex-wrap:wrap;
   align-items:center;
@@ -298,7 +302,8 @@
   gap:9px;
   min-width:0;
 }
-.ip-page .ar-ch05-phrase-chip {
+.ip-page .ar-ch05-phrase-chip,
+.ip-page .ar-illustrated-phrase-chip {
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -314,11 +319,13 @@
   font-weight:600;
   line-height:1.4;
 }
-.ip-page .ar-ch05-phrase-chip > span {
+.ip-page .ar-ch05-phrase-chip > span,
+.ip-page .ar-illustrated-phrase-chip > span {
   min-width:0;
   overflow-wrap:anywhere;
 }
-.ip-page .ar-ch05-phrase-chip .ip-audio {
+.ip-page .ar-ch05-phrase-chip .ip-audio,
+.ip-page .ar-illustrated-phrase-chip .ip-audio {
   flex:none;
   width:27px;
   height:27px;
@@ -327,18 +334,22 @@
   margin:0;
 }
 @media (max-width:700px) {
-  .ip-page .ar-ch05-phrase-card {
+  .ip-page .ar-ch05-phrase-card,
+  .ip-page .ar-illustrated-phrase-card {
     gap:11px;
     padding:10px;
     border-radius:13px;
   }
-  .ip-page .ar-ch05-illustration img {
+  .ip-page .ar-ch05-illustration img,
+  .ip-page .ar-illustrated-illustration img {
     max-height:230px;
   }
-  .ip-page .ar-ch05-phrase-cloud {
+  .ip-page .ar-ch05-phrase-cloud,
+  .ip-page .ar-illustrated-phrase-cloud {
     gap:7px;
   }
-  .ip-page .ar-ch05-phrase-chip {
+  .ip-page .ar-ch05-phrase-chip,
+  .ip-page .ar-illustrated-phrase-chip {
     min-height:37px;
     padding:7px 9px 7px 11px;
     gap:6px;

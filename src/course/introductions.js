@@ -135,7 +135,7 @@ export const introductionSections = [
     blocks: [
       {
         type: 'text',
-        text: 'At a first meeting, give your name and one detail that helps the other person place you. A shared friend, your role, or the reason you are there can be enough. A short introduction is usually better than a full biography.',
+        text: 'Choose an opening that fits the setting: a casual “Hi, I’m Alex,” a more explicit “Hello, my name is Alex,” or a greeting to a group. Then add one useful detail, such as a shared friend, your role, or why you are there.',
       },
       phraseShelf([27, 4, 38], 'Ways to introduce yourself', 'ch02-scene-self-introduction.webp'),
       conversation(

@@ -1,6 +1,5 @@
 import { useLanguage } from './Language'
 import { useEffect, useRef, useState } from 'react'
-import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
 
 const icons = {
   home: 'e1438.svg',
@@ -193,8 +192,8 @@ export function Turn({ turn, index, compact = false, onSelect, selected, onListe
   )
 }
 
-// Approved recordings take precedence when available; otherwise, words and
-// phrases are synthesized on-device with Kokoro using their actual English text.
+// Social Fluency is recording-only. Add local audio asset paths by phrase ID.
+// Vocabulary uses Kokoro separately; lesson audio never triggers model inference.
 export const approvedAudio = {}
 export function useAudio(notify) {
   const { t } = useLanguage()
@@ -202,44 +201,16 @@ export function useAudio(notify) {
   const currentId = useRef(null)
   const [playing, setPlaying] = useState(false)
   const stop = () => {
-    stopKokoroSpeech()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current.currentTime = 0
     }
     setPlaying(false)
   }
-  useEffect(() => () => {
-    audioRef.current?.pause()
-    stopKokoroSpeech()
-  }, [])
-  const play = async (id, speed = 1, restart = false, phrase = '') => {
+  useEffect(() => () => audioRef.current?.pause(), [])
+  const play = async (id, speed = 1, restart = false) => {
     const source = approvedAudio[id]
-    if (!source) {
-      if (!phrase) {
-        stop()
-        notify(t('No pronunciation text is available for this item.'))
-        return
-      }
-      if (currentId.current === id && playing && !restart) {
-        stop()
-        return
-      }
-      stop()
-      currentId.current = id
-      void speakKokoroSpeech(phrase, {
-        rate: speed,
-        onLoading: () => setPlaying(false),
-        onStart: () => setPlaying(true),
-        onCancel: () => setPlaying(false),
-        onEnd: () => setPlaying(false),
-        onError: () => {
-          setPlaying(false)
-          notify(t('Audio could not be played. Please try again.'))
-        },
-      })
-      return
-    }
+    if (!source) return // Recording has not been added; never synthesize it.
     if (currentId.current === id && audioRef.current && !audioRef.current.paused && !restart) {
       stop()
       return

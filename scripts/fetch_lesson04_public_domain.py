@@ -111,7 +111,12 @@ for term, item in catalog["entries"].items():
             with Image.open(p) as generated:
                 generated.verify()
         except Exception:
-            fallback = root / "public/vocabulary-art/04-feed-the-dog.png" if term == "feed the dog" else None
+            approved_png_masters = {
+                "feed the dog": root / "public/vocabulary-art/04-feed-the-dog.png",
+                "walk the dog": root / "public/vocabulary-art/04-walk-the-dog.png",
+                "listen to the radio": root / "public/vocabulary-art/04-listen-to-the-radio.png",
+            }
+            fallback = approved_png_masters.get(term)
             if fallback is None or not fallback.is_file():
                 raise RuntimeError(f"Original generated image missing or invalid in repository: {term}")
             with Image.open(fallback) as master:

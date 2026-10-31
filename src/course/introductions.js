@@ -15,17 +15,17 @@ export const introductionPhrases = [
     "Hi, I'm Alex. I'm a friend of Cassie's.",
     'Give your name and a connection at a gathering.',
     'introduce',
-    { speaker: 'Alex' },
+    { speaker: 'Alex', portrait: 'portrait-8855619.svg' },
   ),
   phrase(
     2,
     "I'm Anna. Nice to meet you.",
     'Introduce yourself and acknowledge the other person.',
     'introduce',
-    { speaker: 'Anna' },
+    { speaker: 'Anna', portrait: 'portrait-278299.svg' },
   ),
   phrase(3, 'You too.', 'Return the feeling after “Nice to meet you.”', 'introduce', {
-    speaker: 'Alex',
+    speaker: 'Alex', portrait: 'portrait-8855619.svg',
   }),
   phrase(4, 'My name is Alex.', 'Another way to give your name.', 'introduce'),
   phrase(5, 'Nice to meet you too.', 'A fuller reply to “Nice to meet you.”', 'introduce'),
@@ -44,24 +44,24 @@ export const introductionPhrases = [
     "Hello, I'm Satoshi. I'm the project manager.",
     'Give your full name and role at a project meeting.',
     'work',
-    { speaker: 'Satoshi' },
+    { speaker: 'Satoshi', portrait: 'portrait-277786664.svg' },
   ),
   phrase(12, "Daniel Reed. It's a pleasure to meet you.", 'A more formal introduction.', 'work', {
-    speaker: 'Daniel',
+    speaker: 'Daniel', portrait: 'portrait-3957303430.svg',
   }),
   phrase(
     13,
     'Likewise. Please call me Satoshi.',
     'Return the feeling and give your preferred name.',
     'work',
-    { speaker: 'Satoshi' },
+    { speaker: 'Satoshi', portrait: 'portrait-277786664.svg' },
   ),
   phrase(
     14,
     "Thanks, Satoshi. I'm on the research team.",
     'Acknowledge the preferred name and explain your role.',
     'work',
-    { speaker: 'Daniel' },
+    { speaker: 'Daniel', portrait: 'portrait-3957303430.svg' },
   ),
   phrase(15, 'I go by Dan.', 'Tell someone the name you normally use.', 'work'),
   phrase(
@@ -76,35 +76,35 @@ export const introductionPhrases = [
     'Anna, this is my colleague, Sam. Sam, this is Anna.',
     'Introduce both people to each other.',
     'connect',
-    { speaker: 'Alex' },
+    { speaker: 'Alex', portrait: 'portrait-8855619.svg' },
   ),
   phrase(
     18,
     'Nice to meet you, Sam.',
     'Greet the person you have just been introduced to.',
     'connect',
-    { speaker: 'Anna' },
+    { speaker: 'Anna', portrait: 'portrait-278299.svg' },
   ),
   phrase(
     19,
     'You too. How do you know Alex?',
     'Return the greeting, then ask about a shared connection.',
     'connect',
-    { speaker: 'Sam' },
+    { speaker: 'Sam', portrait: 'portrait-291416.svg' },
   ),
   phrase(20, 'We take a photography class together.', 'Explain a shared activity.', 'connect', {
-    speaker: 'Anna',
+    speaker: 'Anna', portrait: 'portrait-278299.svg',
   }),
   phrase(21, "I'd like you to meet Sam.", 'Another way to introduce someone.', 'connect'),
   phrase(22, 'Have you met Sam?', 'Check whether two people already know each other.', 'connect', {
-    speaker: 'Alex',
+    speaker: 'Alex', portrait: 'portrait-8855619.svg',
   }),
   phrase(
     23,
     'Yes, we met at the last workshop. Good to see you again, Sam.',
     'Acknowledge a previous meeting.',
     'connect',
-    { speaker: 'Anna' },
+    { speaker: 'Anna', portrait: 'portrait-278299.svg' },
   ),
   phrase(
     24,
@@ -282,32 +282,21 @@ const originalIntroductionSections = [
  * source wording, dialogue lines, practice scenarios and aliases are unchanged.
  */
 const [self, work, connect, names] = originalIntroductionSections
-const sceneInContext = (scene, explanation, sceneArt) => ({
-  ...scene,
-  ...(sceneArt ? { art: sceneArt } : {}),
-  collapsed: true,
-  contextText: explanation?.text,
-})
-// Headings from the original source become titles within their phrase cards,
-// rather than an extra heading above another generic "Choose an expression".
-const namedShelf = (heading, shelf, sceneArt) => ({ ...shelf, title: heading.text, sceneArt })
 const phraseShelf = (numbers, title, sceneArt) => ({
-  sceneArt,
   type: 'phrases',
   phrases: numbers.map(number => `ch02-p${number}`),
   title,
+  sceneArt,
 })
 export const introductionSections = [
   {
     ...self,
     blocks: [
       self.blocks[0],
-      phraseShelf([1, 4], self.blocks[3].text, 'ch02-scene-self-introduction.png'),
-      namedShelf(self.blocks[5], self.blocks[6], 'ch02-scene-gathering.png'),
-      work.blocks[0],
-      phraseShelf([11], work.title, 'ch02-scene-office-handshake.png'),
+      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.png'),
+      phraseShelf([6, 7, 8, 9], self.blocks[5].text, 'ch02-scene-gathering.png'),
       self.blocks[7],
-      { ...self.blocks[8], sceneArt: 'ch02-scene-self-introduction.png' },
+      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.png'),
     ],
   },
   {
@@ -315,37 +304,41 @@ export const introductionSections = [
     title: 'Respond to an introduction',
     short: 'Respond',
     blocks: [
-      phraseShelf([2, 3, 5], self.blocks[1].title, 'ch02-scene-gathering.png'),
-      phraseShelf([12, 13, 14], work.blocks[1].title, 'ch02-scene-project-meeting.png'),
-      namedShelf(work.blocks[3], work.blocks[4], 'ch02-scene-self-introduction.png'),
+      work.blocks[0],
+      self.blocks[1],
+      self.blocks[2],
+      phraseShelf([5], 'A fuller reply', 'ch02-scene-gathering.png'),
+      work.blocks[1],
+      work.blocks[2],
+      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.png'),
       work.blocks[5],
-      namedShelf(work.blocks[6], work.blocks[7], 'ch02-scene-formal-meeting.png'),
+      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.png'),
       work.blocks[8],
-      sceneInContext(self.blocks[1], self.blocks[2], 'ch02-scene-gathering.png'),
-      sceneInContext(work.blocks[1], work.blocks[2], 'ch02-scene-project-meeting.png'),
     ],
   },
   {
     ...connect,
     blocks: [
       connect.blocks[0],
-      phraseShelf([17, 18, 19, 20], connect.blocks[1].title, 'ch02-scene-introduce-others.png'),
+      connect.blocks[1],
       connect.blocks[2],
-      { ...connect.blocks[3], sceneArt: 'ch02-scene-introduce-others.png' },
+      phraseShelf([21], 'Another way to introduce someone', 'ch02-scene-introduce-others.png'),
       connect.blocks[4],
-      phraseShelf([22, 23], connect.blocks[5].title, 'ch02-scene-gathering.png'),
+      {
+        ...connect.blocks[5],
+        art: 'ch02-scene-gathering.png',
+        alt: 'Alex and Anna reconnecting after meeting at a workshop.',
+      },
       connect.blocks[6],
-      namedShelf(connect.blocks[7], connect.blocks[8], 'ch02-scene-online-to-person.png'),
+      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.png'),
       connect.blocks[9],
-      sceneInContext(connect.blocks[1], undefined, 'ch02-scene-introduce-others.png'),
-      sceneInContext(connect.blocks[5], undefined, 'ch02-scene-gathering.png'),
     ],
   },
   {
     ...names,
     blocks: [
-      {...names.blocks[0]},
-      {...names.blocks[1], sceneArt: 'ch02-scene-self-introduction.png'},
+      names.blocks[0],
+      phraseShelf([25, 26], 'Ask for a name again', 'ch02-scene-self-introduction.png'),
     ],
   },
 ]

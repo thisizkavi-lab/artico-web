@@ -326,8 +326,8 @@ export const introductionSections = [
       connect.blocks[4],
       {
         ...connect.blocks[5],
-        art: 'ch02-scene-gathering.svg',
-        alt: 'Alex and Anna reconnecting after meeting at a workshop.',
+        art: 'ch02-scene-reconnect.svg',
+        alt: 'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       },
       connect.blocks[6],
       phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.svg'),

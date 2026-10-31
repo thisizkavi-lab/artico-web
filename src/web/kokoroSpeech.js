@@ -8,6 +8,8 @@ const CACHE_LIMIT = 32
 let modelPromise = null
 let generationQueue = Promise.resolve()
 let currentAudio = null
+let currentSource = null
+let audioContext = null
 let currentUrl = null
 let currentUtterance = null
 let currentCallbacks = null
@@ -29,7 +31,26 @@ async function loadKokoro() {
   return modelPromise
 }
 
+function unlockAudio() {
+  try {
+    const Context = window.AudioContext || window.webkitAudioContext
+    if (!Context) return null
+    if (!audioContext) audioContext = new Context()
+    // Call resume directly during the speaker-button gesture, before awaits.
+    if (audioContext.state === 'suspended') void audioContext.resume().catch(() => {})
+    return audioContext
+  } catch {
+    return null
+  }
+}
+
 function clearAudio() {
+  if (currentSource) {
+    currentSource.onended = null
+    try { currentSource.stop() } catch { /* already stopped */ }
+    currentSource.disconnect()
+    currentSource = null
+  }
   if (currentAudio) {
     currentAudio.pause()
     currentAudio.onended = null
@@ -99,6 +120,7 @@ export async function speakKokoroSpeech(text, options = {}) {
 
   const { voice = 'af_heart', rate = 1, ...callbacks } = options
   stopKokoroSpeech()
+  const context = unlockAudio()
   const mine = requestId
   currentCallbacks = callbacks
   callbacks.onLoading?.()
@@ -118,6 +140,29 @@ export async function speakKokoroSpeech(text, options = {}) {
       storeClip(cacheKey, blob)
     }
     if (mine !== requestId) return false
+    if (context) {
+      // An unlocked AudioContext permits playback after a slow model download.
+      const pcm = await context.decodeAudioData(await blob.arrayBuffer())
+      if (mine !== requestId) return false
+      await context.resume()
+      if (mine !== requestId) return false
+      const source = context.createBufferSource()
+      source.buffer = pcm
+      source.playbackRate.value = rate
+      source.connect(context.destination)
+      currentSource = source
+      source.onended = () => {
+        if (mine !== requestId) return
+        clearAudio()
+        currentCallbacks = null
+        callbacks.onEnd?.()
+      }
+      source.start()
+      callbacks.onStart?.('kokoro')
+      return true
+    }
+
+    // Older browsers without Web Audio still get the standard audio element.
     currentUrl = URL.createObjectURL(blob)
     const audio = new Audio(currentUrl)
     currentAudio = audio

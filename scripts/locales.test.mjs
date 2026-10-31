@@ -63,6 +63,13 @@ test('the introduction pilot translates the existing layout without replacing re
   assert(ja.sections.every((section) => japanese.test(section.title)))
   assert(ja.scenarios.every((item) => japanese.test(item.prompt)))
   assert.deepEqual(ja.scenarios.map((item) => item.id), model.scenarios.map((item) => item.id))
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p1').ja, 'アレックスです。キャシーの友人です。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p2').ja, 'アンナです。はじめまして。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p11').ja, 'こんにちは、サトシです。プロジェクトマネージャーをしています。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p13').ja, 'こちらこそ。サトシと呼んでください。')
+  assert.equal(ja.phrases.find((item) => item.id === 'ch02-p15').ja, '普段はダンと呼ばれています。')
+  assert.doesNotMatch(JSON.stringify(ja), /\\b(Maya|Eli|Priya|Jordan)\\b/)
+  assert.equal(ja.sections.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 4)
 })
 
 test('the greetings chapter curates Study and Practice presentation with full Japanese support', () => {

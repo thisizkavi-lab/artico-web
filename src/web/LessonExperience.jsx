@@ -350,6 +350,7 @@ function Study({ audioProps, focusedId }) {
               <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
                 byId={introductionById} audioProps={audioProps} focusedId={focusedId}
                 title={lessonId === '02' ? block.title : undefined}
+                sceneArt={lessonId === '02' ? block.sceneArt : undefined}
                 note={lessonId === '02' && section.blocks[blockIndex + 1]?.type === 'note'
                   ? section.blocks[blockIndex + 1] : undefined} />
             ) : (

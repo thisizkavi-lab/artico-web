@@ -17,7 +17,7 @@ export const introductionPhrases = [
     speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
   }),
   phrase(3, 'You too.', 'A short, natural reply to “Nice to meet you.”', 'introduce'),
-  phrase(4, 'My name is Alex.', 'Another way to give your name.', 'introduce'),
+  phrase(4, 'Hello, my name is Alex.', 'A clear, slightly more formal way to introduce yourself.', 'introduce'),
   phrase(5, 'Nice to meet you too.', 'A fuller reply to “Nice to meet you.”', 'introduce'),
   phrase(6, 'I work with Cassie.', 'Explain that you and Cassie are colleagues.', 'introduce'),
   phrase(7, "I'm on the design team.", 'Identify the team you belong to.', 'introduce'),
@@ -62,16 +62,15 @@ export const introductionPhrases = [
   phrase(24, "It's nice to finally meet you in person.", 'Meet face to face after talking online.', 'connect'),
   phrase(25, 'Could you say your name again?', 'Ask someone to repeat a name you did not catch.', 'introduce'),
   phrase(26, 'How do you spell it?', 'Ask which letters are in a name.', 'introduce'),
-  phrase(27, "I'm ...", 'A natural everyday pattern for giving your name, role, or connection.', 'introduce'),
-  phrase(28, 'My name is ...', 'A direct way to give your name; a little more explicit than “I’m ...”.', 'introduce'),
-  phrase(29, "A friend of Cassie's", 'This explains your connection: Cassie is your friend.', 'introduce'),
+  phrase(27, "Hi, I'm Alex.", 'A casual, natural way to give your name.', 'introduce'),
+  phrase(29, "I'm a friend of Cassie's.", 'Explain your connection to the host: Cassie is your friend.', 'introduce'),
   phrase(30, 'Nice to meet you.', 'A common greeting when you are introduced to someone for the first time.', 'introduce'),
   phrase(31, "It's a pleasure to meet you.", 'A more formal way to say “Nice to meet you.”', 'work'),
   phrase(32, 'Likewise.', 'A concise way to say you feel the same way.', 'work'),
   phrase(33, 'Please call me Satoshi.', 'Tell someone which name you prefer them to use. Replace Satoshi with your own name.', 'work'),
-  phrase(34, 'Hi', 'A casual greeting you can use before giving your name. Chapter 01 introduces it; here it opens an introduction.', 'introduce'),
-  phrase(35, 'This is ...', 'A simple frame for introducing another person. Add their name after this.', 'connect'),
-  phrase(36, "I'd like you to meet ...", 'A polite way to introduce someone. Add the person’s name at the end.', 'connect'),
+  phrase(35, 'Hello, everyone. This is Alex.', 'Introduce another person to a group so everyone knows who they are.', 'connect'),
+  phrase(36, 'Let me introduce Alex.', 'A clear way to introduce someone before adding a little more detail.', 'connect'),
+  phrase(38, "Hello, everyone. I'm Alex.", 'Introduce yourself to a group.', 'introduce'),
   phrase(37, 'What should I call you?', 'Ask someone which name they prefer you to use.', 'work'),
   {
     id: 'ch02-v0',
@@ -119,12 +118,13 @@ const phraseShelf = (numbers, title, sceneArt, note) => ({
   sceneArt,
   ...(note ? { note } : {}),
 })
-const conversation = (title, numbers, art, alt) => ({
+const conversation = (title, numbers, art, alt, replyAlternatives) => ({
   type: 'conversation',
   title,
   phrases: ids(...numbers),
   art,
   alt,
+  ...(replyAlternatives ? { replyAlternatives } : {}),
 })
 
 export const introductionSections = [
@@ -137,26 +137,21 @@ export const introductionSections = [
         type: 'text',
         text: 'At a first meeting, give your name and one detail that helps the other person place you. A shared friend, your role, or the reason you are there can be enough. A short introduction is usually better than a full biography.',
       },
-      phraseShelf([34, 27, 28, 4], 'Start with your name', 'ch02-scene-self-introduction.webp'),
+      phraseShelf([27, 4, 38], 'Ways to introduce yourself', 'ch02-scene-self-introduction.webp'),
       conversation(
         'At a friend’s gathering',
         [1, 2],
         'ch02-scene-gathering.webp',
         'Alex and Anna talking at a friend’s gathering.',
+        {
+          title: 'Two ways to reply',
+          promptId: 'ch02-p30',
+          choices: [
+            { id: 'ch02-p3', label: 'Short' },
+            { id: 'ch02-p5', label: 'Fuller' },
+          ],
+        },
       ),
-      {
-        type: 'reply-alternatives',
-        title: 'Two ways to reply',
-        promptId: 'ch02-p30',
-        choices: [
-          { id: 'ch02-p3', label: 'Short' },
-          { id: 'ch02-p5', label: 'Fuller' },
-        ],
-      },
-      {
-        type: 'text',
-        text: 'Alex mentions Cassie to explain the connection. Anna gives her name and says “Nice to meet you.” Alex can return the greeting with either reply above.',
-      },
       phraseShelf([29, 6, 7, 8, 9], 'Add one useful detail', 'ch02-scene-gathering.webp', {
         title: 'Keep it relevant.',
         text: 'A friend, job, team, or reason for being there can be enough. Choose the detail that fits this meeting.',
@@ -209,7 +204,7 @@ export const introductionSections = [
         'ch02-scene-introduce-others.webp',
         'Alex introducing her colleague Sam to Anna.',
       ),
-      phraseShelf([21, 35, 36], 'Two ways to introduce someone', 'ch02-scene-introduce-others.webp'),
+      phraseShelf([21, 35, 36], 'Introduce someone', 'ch02-scene-introduce-others.webp'),
       {
         type: 'text',
         text: 'If the people might already know each other, check first. Then respond to what the other person actually says.',
@@ -244,7 +239,8 @@ export const introductionAliases = {
   'ch02-line50': 'ch02-p23',
   'ch02-v4': 'ch02-p6',
   'ch02-p112965777075329': 'ch02-p27',
-  'ch02-p244176047606341': 'ch02-p28',
+  'ch02-p244176047606341': 'ch02-p4',
+  'ch02-p28': 'ch02-p4',
   'ch02-p9762649518440': 'ch02-p29',
   'ch02-p113457497400069': 'ch02-p30',
   'ch02-p183395905865867': 'ch02-p3',
@@ -258,7 +254,8 @@ export const introductionAliases = {
   'ch02-p103546877069472': 'ch02-p32',
   'ch02-p167978653676711': 'ch02-p33',
   'ch02-p194692436570439': 'ch02-p15',
-  'ch02-p36675863763213': 'ch02-p34',
+  'ch02-p36675863763213': 'ch02-p27',
+  'ch02-p34': 'ch02-p27',
   'ch02-p252636359137330': 'ch02-p30',
   'ch02-p158049194780759': 'ch02-p16',
   'ch02-p162843841720073': 'ch02-p35',

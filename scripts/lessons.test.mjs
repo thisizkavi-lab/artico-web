@@ -240,43 +240,55 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.doesNotMatch(experience, /ar-study-example/)
   assert.match(styles, /ar-ch02-phrase-shelf/)
   assert.match(styles, /ar-ch02-phrase-art/)
-  const images = (filename) => existsSync(new URL(`public/assets/course/${filename}`, root))
+  const images = (filename) => existsSync(new URL(\`public/assets/course/\${filename}\`, root))
   const blocks = introductionSections.flatMap((section) => section.blocks)
   const phraseBlocks = blocks.filter((block) => block.type === 'phrases')
   const conversationBlocks = blocks.filter((block) => block.type === 'conversation')
   assert.equal(phraseBlocks.length, 8)
   assert.equal(conversationBlocks.length, 4)
-  const [introduceSection, respondSection, connectSection] = introductionSections
+  const [introduceSection, workSection, connectSection] = introductionSections
+  assert.deepEqual(introductionSections.map(({ id }) => id), ['introduce', 'work', 'connect'])
+  assert.equal(introduceSection.title, 'Say who you are')
+  assert.equal(workSection.title, 'Meet someone at work')
+  assert.equal(connectSection.title, 'Introduce two people')
   assert.equal(introduceSection.blocks.find((block) => block.type === 'conversation')?.title, 'At a friend’s gathering')
-  assert.equal(introduceSection.blocks.find((block) => block.type === 'phrases')?.title, 'Another way to give your name')
+  assert.equal(introduceSection.blocks.find((block) => block.type === 'phrases')?.title, 'Start with your name')
   assert.ok(introduceSection.blocks.findIndex((block) => block.type === 'phrases') <
     introduceSection.blocks.findIndex((block) => block.type === 'conversation'))
-  assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [1, 4, 1])
-  assert.equal(respondSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
+  assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [4, 5, 1, 2])
+  assert.equal(workSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
+  assert.ok(introductionById['ch02-p12'].en.includes('I go by Dan.'))
+  assert.ok(workSection.blocks.some((block) => block.type === 'phrases' && block.phrases.includes('ch02-p15')))
   assert.ok(connectSection.blocks.filter((block) => block.type === 'conversation').length === 2)
 
   assert.ok(blocks.every((block) => !block.collapsed), 'No Chapter 02 dropdown conversations')
   assert.ok(!blocks.some((block) => ['words', 'vocabulary'].includes(block.type)), 'No vocabulary-card section')
   for (const block of phraseBlocks) {
-    assert.ok(block.sceneArt?.endsWith('.webp'), `Missing phrase illustration: ${block.title}`)
-    assert.ok(images(block.sceneArt), `Missing on-disk phrase illustration: ${block.sceneArt}`)
+    assert.ok(block.sceneArt?.endsWith('.webp'), \`Missing phrase illustration: \${block.title}\`)
+    assert.ok(images(block.sceneArt), \`Missing on-disk phrase illustration: \${block.sceneArt}\`)
   }
   for (const block of conversationBlocks) {
-    assert.ok(block.art?.endsWith('.webp'), `Missing conversation illustration: ${block.title}`)
-    assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
+    assert.ok(block.art?.endsWith('.webp'), \`Missing conversation illustration: \${block.title}\`)
+    assert.ok(images(block.art), \`Missing on-disk conversation illustration: \${block.art}\`)
   }
   const replyBlocks = blocks.filter((block) => block.type === 'reply-alternatives')
   assert.equal(replyBlocks.length, 1)
+  assert.equal(replyBlocks[0].promptId, 'ch02-p30')
   assert.deepEqual(replyBlocks[0].choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
+  assert.ok(introduceSection.blocks.includes(replyBlocks[0]), 'Reply alternatives belong in the gathering introduction')
   assert.ok(blocks.every((block) => !block.collapsed))
-  const displayed = new Set(blocks.flatMap((block) => [...(block.phrases ?? []), ...(block.choices ?? []).map((choice) => choice.id)]))
+  const displayed = new Set(blocks.flatMap((block) => [
+    ...(block.phrases ?? []),
+    ...(block.choices ?? []).map((choice) => choice.id),
+    ...(block.promptId ? [block.promptId] : []),
+  ]))
   const spoken = Object.values(introductionById).filter((item) => item.section !== 'words').map((item) => item.id)
   assert.deepEqual([...displayed].sort(), spoken.sort())
   const portraits = conversationBlocks.flatMap((block) => block.phrases).map((id) => introductionById[id])
   assert.ok(portraits.every((item) => item.portrait?.startsWith('portrait-ch02-') && item.portrait.endsWith('.svg')))
   for (const item of portraits) {
-    assert.ok(images(item.portrait), `Missing speaker portrait for ${item.speaker}`)
-    const portraitSvg = readFileSync(new URL(`public/assets/course/${item.portrait}`, root), 'utf8')
-    assert.ok(portraitSvg.includes(`<title>${item.speaker}</title>`), `Portrait name mismatch for ${item.speaker}`)
+    assert.ok(images(item.portrait), \`Missing speaker portrait for \${item.speaker}\`)
+    const portraitSvg = readFileSync(new URL(\`public/assets/course/\${item.portrait}\`, root), 'utf8')
+    assert.ok(portraitSvg.includes(\`<title>\${item.speaker}</title>\`), \`Portrait name mismatch for \${item.speaker}\`)
   }
 })

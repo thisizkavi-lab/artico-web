@@ -1427,3 +1427,79 @@
     padding-left: 9px;
   }
 }
+
+
+/* Chapter 02 illustrations: no image backplates, like Greetings in Chapter 01. */
+.ip-page .ar-ch02-study .ar-reference-stage,
+.ip-page .ar-ch02-study .ip-scene-setting {
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+.ip-page .ar-ch02-study .ar-reference-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  min-height: 0;
+  height: auto;
+  max-height: none;
+  width: 100%;
+}
+.ip-page .ar-ch02-study .ar-reference-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 490px;
+  max-height: 330px;
+  object-fit: contain;
+  object-position: center bottom;
+  image-rendering: auto;
+  filter: none;
+  border: 0;
+  box-shadow: none;
+}
+.ip-page .ar-ch02-study .ip-scene-setting img {
+  display: block;
+  height: auto;
+  min-height: 0;
+  max-height: 305px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  image-rendering: auto;
+  mix-blend-mode: normal;
+  filter: none;
+}
+.ip-page .ar-ch02-study .ar-reference-shelf {
+  align-items: center;
+}
+.ip-page .ar-ch02-study .ar-reference-heading,
+.ip-page .ar-ch02-study .ar-reference-shelf-main,
+.ip-page .ar-ch02-study .ar-reference-note {
+  align-self: stretch;
+}
+@media(max-width:820px) {
+  .ip-page .ar-ch02-study .ar-reference-stage {
+    max-height: none;
+    min-height: 0;
+  }
+  .ip-page .ar-ch02-study .ar-reference-stage img {
+    max-height: 220px;
+    max-width: 420px;
+  }
+}
+@media(max-width:620px) {
+  .ip-page .ar-ch02-study .ar-reference-stage img {
+    max-height: 180px;
+  }
+  .ip-page .ar-ch02-study .ip-scene-setting img {
+    max-height: 210px;
+  }
+}

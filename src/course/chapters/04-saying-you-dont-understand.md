@@ -29,7 +29,7 @@ Use these when you hear the words but don't know what they mean.
 | **Oh, I see.** | **Oh, I see.** Thanks! | Show that you understand now. |
 
 **Maya:** Let's hang out after class.  
-**Sam:** What does "hang out" mean?  
+**Sam:** **What does "hang out" mean?**  
 **Maya:** Spend time together.  
 **Sam:** **Oh, I see!**
 

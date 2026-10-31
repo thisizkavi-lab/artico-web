@@ -10,6 +10,8 @@ const PREFETCH_LIMIT = 3
 const FIRST_SOUND_BUDGET_MS = 1000
 
 let modelPromise = null
+let cpuModelPromise = null
+let useOfflineModel = false
 let engine = 'unknown'
 let currentAudio = null
 let currentSource = null
@@ -57,7 +59,28 @@ function probeGpu() {
   return gpuProbe
 }
 
+async function loadOfflineKokoro() {
+  if (!cpuModelPromise) {
+    cpuModelPromise = (async () => {
+      const { KokoroTTS } = await import(/* @vite-ignore */ MODULE_URL)
+      const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
+        device: 'wasm', dtype: 'q8',
+      })
+      engine = 'wasm'
+      modelReady = true
+      return tts
+    })().catch(error => {
+      cpuModelPromise = null
+      throw error
+    })
+  }
+  return cpuModelPromise
+}
+
 async function loadKokoro() {
+  // A browser can expose speechSynthesis without having a working voice.
+  // When native speech fails, CPU synthesis is the required fallback.
+  if (useOfflineModel) return loadOfflineKokoro()
   if (!modelPromise) {
     modelPromise = (async () => {
       const { KokoroTTS } = await import(/* @vite-ignore */ MODULE_URL)
@@ -133,6 +156,7 @@ function tuneKokoroAfterUserAudio() {
     }
   }
   const defer = () => {
+    if (useOfflineModel) return
     if ('requestIdleCallback' in window)
       window.requestIdleCallback(() => { void evaluate() })
     else window.setTimeout(() => { void evaluate() }, 600)
@@ -218,7 +242,7 @@ function getClip(text, voice, priority = 1) {
 // Prepare at most a few likely next phrases. Playback requests have higher
 // priority and can jump in front of queued prefetch jobs.
 export function prefetchKokoroSpeech(texts, { voice = 'af_heart' } = {}) {
-  if (typeof window === 'undefined' || nativeMode || !modelReady || !fastGenerationObserved || navigator.connection?.saveData) return
+  if (typeof window === 'undefined' || useOfflineModel || nativeMode || !modelReady || !fastGenerationObserved || navigator.connection?.saveData) return
   const phrases = [...new Set((Array.isArray(texts) ? texts : [texts])
     .filter((text) => typeof text === 'string' && text.trim())
     .map((text) => text.trim()))].slice(0, PREFETCH_LIMIT)
@@ -298,8 +322,11 @@ export function stopKokoroSpeech() {
 function fallbackSpeech(text, rate, callbacks) {
   const synth = window.speechSynthesis
   if (!synth?.speak || !window.SpeechSynthesisUtterance) {
-    callbacks.onError?.(new Error('No browser speech engine is available.'))
-    return false
+    useOfflineModel = true
+    nativeMode = false
+    autoTuneStarted = true
+    void speakKokoroSpeech(text, { rate, forceModel: true, ...callbacks })
+    return true
   }
   callbacks.onLoading?.()
   // The first call must stay inside the original user click (autoplay rules).
@@ -318,8 +345,19 @@ function fallbackSpeech(text, rate, callbacks) {
     cleanUtterance(utterance)
     currentUtterance = null
     currentCallbacks = null
-    if (success) callbacks.onEnd?.()
-    else callbacks.onError?.(error || new Error('The browser did not start speaking.'))
+    if (success) {
+      callbacks.onEnd?.()
+    } else {
+      // Native speech is absent or silent. Do not retry the same API forever:
+      // generate actual audio using the CPU model and play it through WebAudio.
+      useOfflineModel = true
+      nativeMode = false
+      autoTuneStarted = true
+      callbacks.onLoading?.()
+      void speakKokoroSpeech(text, {
+        rate, forceModel: true, ...callbacks,
+      })
+    }
   }
   function scheduleRetry(utterance, attempt) {
     if (currentUtterance !== utterance) return
@@ -396,14 +434,18 @@ export async function speakKokoroSpeech(text, options = {}) {
   const phrase = String(text ?? '').trim()
   if (!phrase || typeof window === 'undefined') return false
 
-  const { voice = 'af_heart', rate = 1, preferDevice = false, ...callbacks } = options
+  const { voice = 'af_heart', rate = 1, preferDevice = false, forceModel = false, ...callbacks } = options
   stopKokoroSpeech()
   const key = clipKey(voice, phrase)
   const cached = clipCache.has(key)
   // A saved Kokoro clip is instantaneous even on old hardware. For an
   // uncached phrase, let a slow machine use its native voice immediately.
-  if ((preferDevice || (nativeMode && !cached) ||
-      (!navigator.gpu && !cached)) && hasDeviceVoice()) {
+  if (!forceModel && !useOfflineModel &&
+      (preferDevice || (nativeMode && !cached) || (!navigator.gpu && !cached))) {
+    // Unlock WebAudio while the user gesture is still active. If native voices
+    // prove unavailable, offline model audio can later play without autoplay
+    // blocking or depending on another click.
+    unlockAudio()
     const nativeCallbacks = {
       ...callbacks,
       onStart: (source) => {
@@ -497,7 +539,12 @@ export async function speakKokoroSpeech(text, options = {}) {
   } catch (error) {
     if (mine !== requestId) return false
     clearAudio()
-    console.warn('Artico: local speech unavailable; trying device voice.', error)
+    console.warn('Artico: speech playback failed.', error)
+    if (forceModel || useOfflineModel) {
+      currentCallbacks = null
+      callbacks.onError?.(error)
+      return false
+    }
     return fallbackSpeech(phrase, rate, callbacks)
   }
 }

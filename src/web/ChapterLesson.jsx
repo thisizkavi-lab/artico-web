@@ -28,6 +28,7 @@ function makeModel(source, t) {
             title: block.caption,
             alt: `${block.people.join(', ')} — ${section.title}`,
             phrases: block.phraseIds,
+            turns: block.turns,
           }
         : {
             type: 'source',

@@ -143,27 +143,29 @@ test('every shared practice item has exactly one Study anchor and a valid illust
   }
 })
 
-test('Chapter 04 teaches conversational repair in context without isolated phrase cards', () => {
+test('Chapter 04 presents phrase bubbles, phrase/example/meaning tables, and short conversations', () => {
   const model = readLesson('04')
   assert.equal(model.title, "When Something Isn't Clear")
   assert.deepEqual(model.study.map((section) => section.title), [
-    "When you didn't catch something",
-    "When you heard it but don't understand",
-    "When you need a different explanation",
+    "You didn't catch something",
+    "You heard it, but don't understand",
+    "You need a different explanation",
   ])
   assert.equal(model.vocabulary.length, 0)
-  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'table').length, 0)
-  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'conversation').length, 3)
-  assert(model.study.every((section) => section.blocks.some((block) => block.type === 'conversation')))
-  const conversationIds = new Set(model.study.flatMap((section) =>
-    section.blocks.filter((block) => block.type === 'conversation').flatMap((block) => block.phraseIds),
-  ))
-  assert.equal(model.phraseBank.length, conversationIds.size)
-  assert(model.phraseBank.every((item) => conversationIds.has(item.id)))
-  assert.deepEqual(
-    model.study.flatMap((section) => section.blocks.filter((block) => block.type === 'explanation').flatMap((block) => block.phraseIds)),
-    [],
-  )
+  assert.equal(model.study.length, 3)
+  for (const section of model.study) {
+    const tables = section.blocks.filter((block) => block.type === 'table')
+    const conversations = section.blocks.filter((block) => block.type === 'conversation')
+    assert.equal(tables.length, 1, section.title)
+    assert.equal(conversations.length, 1, section.title)
+    assert.deepEqual(tables[0].header.map(runs), ['Phrase', 'Example in use', 'What it means'])
+    assert.ok(tables[0].rows.length >= 3 && tables[0].rows.length <= 4)
+    assert.ok(tables[0].phraseCells.every((row) => row[0]), 'each row has a phrase bubble')
+    assert.ok(tables[0].rows.every((row) => row[1].some((run) => run.emphasis)), 'target phrase is highlighted in every example')
+    assert.ok(conversations[0].turns.length <= 4, 'example conversation stays short')
+    assert.ok(conversations[0].turns.some((turn) => turn.runs.some((run) => run.emphasis)), 'target expression is highlighted in the example conversation')
+  }
+  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'list').length, 0)
 })
 
 test('a Study subsection about practice keeps its teaching examples in Study', () => {

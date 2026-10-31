@@ -19,6 +19,7 @@ import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
 import Chapter03StudySection from './Chapter03Context'
 import './social-reference-study.css'
+import './chapter04-context.css'
 import './introductions.css'
 import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
@@ -370,7 +371,11 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {lessonId === '03' ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} /> : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
+          {lessonId === '03'
+            ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
+            : lessonId === '04'
+              ? <Chapter04StudySection section={section} audioProps={audioProps} focusedId={focusedId} />
+              : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -524,6 +529,71 @@ function Study({ audioProps, focusedId }) {
           })}
         </section>
       ))}
+    </div>
+  )
+}
+
+function Chapter04StudySection({ section, audioProps, focusedId }) {
+  const { byId, SourceContent } = useLesson()
+  const { language } = useLanguage()
+  const intro = section.blocks.find((block) => block.type === 'source' && block.source.type === 'explanation')
+  const table = section.blocks.find((block) => block.type === 'source' && block.source.type === 'table')
+  const conversation = section.blocks.find((block) => block.type === 'conversation')
+  if (!table || !conversation) return null
+  const phraseIds = (table.source.phraseCells ?? []).map((row) => row[0]).filter(Boolean)
+  const speakers = [...new Set(conversation.turns.map((turn) => turn.speaker))]
+  const portraits = conversation.turns.slice(0, 2).map((turn) => turn.portrait)
+  return (
+    <div className="ar-c04-section">
+      {intro && <SourceContent block={intro.source} audioProps={audioProps} focusedId={focusedId} examples={false} />}
+      <div className="ar-c04-phrase-scene">
+        <div className="ar-c04-scene-art">
+          <img src={art(conversation.art)} alt={conversation.alt} width="560" height="280" loading="lazy" />
+        </div>
+        <div className="ar-c04-phrase-bubbles" aria-label={language === 'ja' ? 'この場面で使える表現' : 'Phrases you can use'}>
+          {phraseIds.map((id, index) => {
+            const item = byId[id]
+            if (!item) return null
+            const portrait = portraits[index % Math.max(1, portraits.length)]
+            return (
+              <div className={`ar-c04-bubble-row ${index % 2 ? 'is-right' : 'is-left'}`} key={id}>
+                {portrait && <img className="ar-c04-bubble-avatar" src={art(portrait)} alt="" width="28" height="28" />}
+                <div className="ar-c04-bubble">
+                  <p lang="en">{item.en}</p>
+                  <PhraseAudio item={item} {...audioProps} />
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <section className="ar-c04-phrase-table">
+        <h3>{language === 'ja' ? '使えるフレーズ' : 'Useful phrases'}</h3>
+        <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
+      </section>
+      <section className="ar-c04-example">
+        <h3>{language === 'ja' ? '会話例' : 'Example conversation'}</h3>
+        <div className="ar-c04-example-lines">
+          {conversation.turns.map((turn, index) => {
+            const item = byId[turn.id]
+            if (!item) return null
+            const outgoing = conversationSide(speakers, turn.speaker, index) === 'outgoing'
+            return (
+              <div className={`ar-c04-example-row ${outgoing ? 'is-outgoing' : 'is-incoming'}`} key={turn.id}>
+                {turn.portrait && <img className="ar-c04-example-avatar" src={art(turn.portrait)} alt="" width="30" height="30" />}
+                <div className="ar-c04-example-bubble">
+                  <span className="ar-c04-example-speaker">{turn.speaker}</span>
+                  <p lang="en">{(turn.runs ?? [{ text: item.en }]).map((run, runIndex) => run.emphasis
+                    ? <strong key={runIndex}>{run.text}</strong>
+                    : <span key={runIndex}>{run.text}</span>)}</p>
+                  {language === 'ja' && item.ja && <p className="ar-c04-example-ja" lang="ja">{item.ja}</p>}
+                  <PhraseAudio item={item} {...audioProps} />
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </section>
     </div>
   )
 }

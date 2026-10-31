@@ -271,8 +271,9 @@ test('Lesson 03 uses an ordered frequency chart and keeps specific-interval card
 
 
 test('vocabulary pronunciation reads alternatives, never visual punctuation or editorial notes', () => {
-  assert.equal(vocabularySpokenText('U.S./USA, America'), 'the United States. U S A. America.')
-  assert.equal(vocabularySpokenText('U.S./USA'), 'the United States. U S A.')
+  assert.equal(vocabularySpokenText('U.S./USA, America'), 'U S. U S A. America.')
+  assert.equal(vocabularySpokenText('U.S./USA'), 'U S. U S A.')
+  assert.equal(vocabularySpokenText('U.S.'), 'U S.')
   assert.equal(vocabularySpokenText('morning / in the morning'), 'morning. in the morning')
   assert.equal(vocabularySpokenText('take a shower / have a shower (also common in UK)'), 'take a shower. have a shower')
   assert.equal(vocabularySpokenText('Human Resources / HR (department)'), 'Human Resources. H R')

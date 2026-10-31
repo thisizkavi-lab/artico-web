@@ -271,11 +271,11 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
   assert.deepEqual(introduce.blocks[3].examples[3].phrases, ['ch02-p25', 'ch02-p26'])
   assert.equal(work.blocks.filter((block) => block.type === 'phrases').length, 4)
   const workplaceConversation = conversations.find((block) => block.title === 'Meeting the project team')
-  assert.deepEqual(workplaceConversation.phrases, ['ch02-p11', 'ch02-p12', 'ch02-p13', 'ch02-p14', 'ch02-p39'])
-  assert.deepEqual(work.blocks[2].phrases, ['ch02-p15', 'ch02-p33', 'ch02-p37'])
-  assert.deepEqual(work.blocks[3].phrases, ['ch02-p44', 'ch02-p42', 'ch02-p7', 'ch02-p8'])
-  assert.deepEqual(work.blocks[4].phrases, ['ch02-p43', 'ch02-p40', 'ch02-p41', 'ch02-p32'])
-  assert.deepEqual(work.blocks[5].phrases, ['ch02-p31', 'ch02-p16'])
+  assert.deepEqual(workplaceConversation.phrases, ['ch02-p39', 'ch02-p40', 'ch02-p41', 'ch02-p42', 'ch02-p43'])
+  assert.deepEqual(work.blocks[2].phrases, ['ch02-p15', 'ch02-p33', 'ch02-p37', 'ch02-p13'])
+  assert.deepEqual(work.blocks[3].phrases, ['ch02-p11', 'ch02-p14', 'ch02-p7', 'ch02-p8'])
+  assert.deepEqual(work.blocks[4].phrases, ['ch02-p44', 'ch02-p45', 'ch02-p46', 'ch02-p32'])
+  assert.deepEqual(work.blocks[5].phrases, ['ch02-p12', 'ch02-p31', 'ch02-p16'])
   assert.equal(connect.blocks.filter((block) => block.type === 'conversation').length, 2)
 
   const first = introduce.blocks[1]

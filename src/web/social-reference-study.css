@@ -1875,3 +1875,40 @@
   .ip-page .ar-ch02-reply-option { padding: 10px 8px 0; }
   .ip-page .ar-ch02-reply-option > p:not(.ar-ch02-reply-ja) {font-size:16px}
 }
+
+/* Keep the two reply choices inside the gathering conversation card. */
+.ip-page .ar-shared-study .ar-ch02-replies-embedded {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 1px 0 0;
+  padding: 13px 0 0;
+  border: 0;
+  border-top: 1px solid #e5eaf0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.ip-page .ar-shared-study .ar-ch02-replies-embedded .ar-ch02-reply-heading h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  color: #617087;
+  font-size: 13px;
+  font-weight: 650;
+}
+.ip-page .ar-shared-study .ar-ch02-replies-embedded .ar-ch02-reply-options {
+  width: 100%;
+  margin: 0;
+  padding: 11px 14px 13px;
+}
+.ip-page .ar-shared-study .ar-ch02-replies-embedded .ar-ch02-reply-options-head {
+  margin-bottom: 8px;
+}
+@media (max-width:620px) {
+  .ip-page .ar-shared-study .ar-ch02-replies-embedded {
+    padding-top: 11px;
+  }
+  .ip-page .ar-shared-study .ar-ch02-replies-embedded .ar-ch02-reply-options {
+    padding: 10px 11px 12px;
+  }
+}

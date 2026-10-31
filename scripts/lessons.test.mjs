@@ -163,7 +163,7 @@ test('Chapter 05 uses four illustrated phrase-chip cards instead of alternating 
     'ch05-02-asking-opinions.png',
     'ch05-03-choosing-options.png',
     'ch05-04-strong-reactions.png',
-  ]) assert.ok(component.includes(file), file)
+  ]) assert.ok(source.includes(file), file)
 })
 
 test('Chapter 04 presents phrase bubbles, phrase/example/meaning tables, and short conversations', () => {

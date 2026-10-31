@@ -148,15 +148,13 @@ function Conversation({ block, audioProps, focusedId }) {
   const speakers = [...new Set(block.phrases.map((id) => introductionById[id]?.speaker).filter(Boolean))]
   return (
     <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}`}>
-      <div className="ip-scene-audio-row">
+      <header className="ar-scene-heading">
+        <h3>{block.title}</h3>
         <ConversationAudio block={block} audioProps={audioProps} />
-      </div>
-      <div className="ip-scene-setting">
-        {block.art && (
-          <img src={art(block.art)} alt={block.alt} width="560" height="280" loading="lazy" />
-        )}
-        <p className="ip-scene-caption">{block.title}</p>
-      </div>
+      </header>
+      {block.art && <div className="ip-scene-setting">
+        <img src={art(block.art)} alt={block.alt} width="560" height="280" loading="lazy" />
+      </div>}
       <div className="ip-conversation" aria-label={block.title}>
         {block.phrases.map((id, index) => {
           const item = introductionById[id]
@@ -239,13 +237,15 @@ function Study({ audioProps, focusedId }) {
                   {block.text}
                 </h3>
               )
-            if (block.type === 'note')
+            if (block.type === 'note') {
+              if (lessonId === '02' && section.blocks[blockIndex - 1]?.type === 'phrases') return null
               return (
                 <aside className="ip-note" key={blockIndex}>
-                  <strong>{block.title}</strong>
-                  <p>{block.text}</p>
+                  <span className="ar-note-label">Note</span>
+                  <p>{block.title && <strong>{block.title} </strong>}{block.text}</p>
                 </aside>
               )
+            }
             if (block.type === 'comparison')
               return (
                 <aside className="ip-comparison" key={blockIndex} aria-label={block.title}>
@@ -305,31 +305,25 @@ function Study({ audioProps, focusedId }) {
               )
             if (block.type === 'vocabulary' && lessonId === '02')
               return (
-                <details className="ar-study-example ar-study-vocabulary" key={blockIndex}>
-                  <summary>
-                    <span className="ar-study-example-label">{language === 'ja' ? '参考' : 'Reference'}</span>
-                    <strong>{block.title}</strong>
-                    <span className="ar-study-example-chevron" aria-hidden="true" />
-                  </summary>
-                  <div className="ar-study-example-content">
-                    <div className="ip-words">
-                      {block.phrases.map((id) => {
-                        const item = introductionById[id]
-                        return (
-                          <article id={`study-${id}`} data-phrase-id={id}
-                            className={`ip-word ${id === focusedId ? 'is-focused' : ''}`} key={id}>
-                            <img src={art(item.art)} width="140" height="110" alt="" loading="lazy" />
-                            <div>
-                              <h3 lang="en">{item.en}</h3>
-                              <PhraseAudio item={item} {...audioProps} />
-                            </div>
-                            <p>{item.context}</p>
-                          </article>
-                        )
-                      })}
-                    </div>
+                <section className="ar-word-section" key={blockIndex} aria-label={block.title}>
+                  <h3 className="ip-small-heading">{block.title}</h3>
+                  <div className="ip-words">
+                    {block.phrases.map((id) => {
+                      const item = introductionById[id]
+                      return (
+                        <article id={`study-${id}`} data-phrase-id={id}
+                          className={`ip-word ${id === focusedId ? 'is-focused' : ''}`} key={id}>
+                          <img src={art(item.art)} width="140" height="110" alt="" loading="lazy" />
+                          <div>
+                            <h3 lang="en">{item.en}</h3>
+                            <PhraseAudio item={item} {...audioProps} />
+                          </div>
+                          <p>{item.context}</p>
+                        </article>
+                      )
+                    })}
                   </div>
-                </details>
+                </section>
               )
             if (block.type === 'words')
               return (
@@ -368,7 +362,9 @@ function Study({ audioProps, focusedId }) {
             return block.type === 'phrases' ? (
               <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
                 byId={introductionById} audioProps={audioProps} focusedId={focusedId}
-                title={lessonId === '02' ? block.title : undefined} />
+                title={lessonId === '02' ? block.title : undefined}
+                note={lessonId === '02' && section.blocks[blockIndex + 1]?.type === 'note'
+                  ? section.blocks[blockIndex + 1] : undefined} />
             ) : (
               <div className="ip-phrase-grid" key={blockIndex}>
                 {block.phrases?.map((id) => (
@@ -833,7 +829,7 @@ function Experience({ route, learning, update, save, notify }) {
   }
   return (
     <div className="ip-page" lang={language}>
-      <header className={`ip-lesson-heading${id === '01' ? ' ip-lesson-heading-greetings' : ''}`}>
+      <header className="ip-lesson-heading ip-lesson-heading-social">
         <p className="ip-kicker">
           {eyebrow ?? (
             <> {t("SOCIAL FLUENCY")} <span>/</span> {t('CHAPTER {id}', { id: displayId ?? id })}

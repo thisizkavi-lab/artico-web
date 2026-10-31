@@ -165,7 +165,7 @@ const originalIntroductionSections = [
       {
         type: 'conversation',
         title: 'At a friend’s gathering',
-        art: 'ch02-scene-gathering.svg',
+        art: 'ch02-scene-gathering.webp',
         alt: 'Alex and Anna talking at a friend’s gathering.',
         phrases: ids(1, 2, 3),
       },
@@ -196,7 +196,7 @@ const originalIntroductionSections = [
       {
         type: 'conversation',
         title: 'At the start of a project meeting',
-        art: 'ch02-scene-project-meeting.svg',
+        art: 'ch02-scene-project-meeting.webp',
         alt: 'Satoshi and Daniel introducing themselves at a project meeting.',
         phrases: ids(11, 12, 13, 14),
       },
@@ -231,7 +231,7 @@ const originalIntroductionSections = [
       {
         type: 'conversation',
         title: 'Introducing a colleague to a friend',
-        art: 'ch02-scene-introduce-others.svg',
+        art: 'ch02-scene-introduce-others.webp',
         alt: 'Alex introducing her colleague Sam to Anna.',
         phrases: ids(17, 18, 19, 20),
       },
@@ -294,13 +294,13 @@ export const introductionSections = [
     ...self,
     blocks: [
       self.blocks[0],
-      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.svg'),
-      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.svg', {
+      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.webp'),
+      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.webp', {
         title: 'Keep it relevant.',
         text: 'A friend, job, team, or reason for being there can be enough. You do not need to give your whole background.',
       }),
       self.blocks[7],
-      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.svg'),
+      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.webp'),
       {
         ...self.blocks[1],
         title: 'At a friend’s gathering',
@@ -329,11 +329,11 @@ export const introductionSections = [
       work.blocks[0],
       work.blocks[1],
       work.blocks[2],
-      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.svg', {
+      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.webp', {
         title: work.blocks[5].title,
         text: work.blocks[5].text,
       }),
-      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.svg', {
+      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.webp', {
         text: work.blocks[8].text,
       }),
     ],
@@ -344,15 +344,15 @@ export const introductionSections = [
       connect.blocks[0],
       connect.blocks[1],
       connect.blocks[2],
-      phraseShelf([21], 'Another way to introduce someone', 'ch02-scene-introduce-others.svg'),
+      phraseShelf([21], 'Another way to introduce someone', 'ch02-scene-introduce-others.webp'),
       connect.blocks[4],
       {
         ...connect.blocks[5],
-        art: 'ch02-scene-reconnect.svg',
+        art: 'ch02-scene-reconnect.webp',
         alt: 'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       },
       connect.blocks[6],
-      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.svg', {
+      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.webp', {
         text: connect.blocks[9].text,
       }),
     ],
@@ -361,7 +361,7 @@ export const introductionSections = [
     ...names,
     blocks: [
       names.blocks[0],
-      phraseShelf([25, 26], 'Ask for a name again', 'ch02-scene-self-introduction.svg'),
+      phraseShelf([25, 26], 'Ask for a name again', 'ch02-scene-self-introduction.webp'),
     ],
   },
 ]

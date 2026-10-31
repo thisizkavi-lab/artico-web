@@ -258,11 +258,11 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.ok(blocks.every((block) => !block.collapsed), 'No Chapter 02 dropdown conversations')
   assert.ok(!blocks.some((block) => ['words', 'vocabulary'].includes(block.type)), 'No vocabulary-card section')
   for (const block of phraseBlocks) {
-    assert.ok(block.sceneArt?.endsWith('.svg'), `Missing phrase illustration: ${block.title}`)
+    assert.ok(block.sceneArt?.endsWith('.webp'), `Missing phrase illustration: ${block.title}`)
     assert.ok(images(block.sceneArt), `Missing on-disk phrase illustration: ${block.sceneArt}`)
   }
   for (const block of conversationBlocks) {
-    assert.ok(block.art?.endsWith('.svg'), `Missing conversation illustration: ${block.title}`)
+    assert.ok(block.art?.endsWith('.webp'), `Missing conversation illustration: ${block.title}`)
     assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
   }
   const replyBlocks = blocks.filter((block) => block.type === 'reply-alternatives')

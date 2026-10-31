@@ -542,11 +542,14 @@ export async function speakKokoroSpeech(text, options = {}) {
       if (mine !== requestId) return false
     }
     // Useful for inspecting actual device latency without logging every click.
-    if (typeof window.CustomEvent === 'function') {
-      window.dispatchEvent(new CustomEvent('artico:voice-latency', {
-        detail: { ms: Math.round(performance.now() - started), cached, engine },
-      }))
-    }
+    // Telemetry must never turn successful audio playback into an error.
+    try {
+      if (typeof window.CustomEvent === 'function' && typeof window.dispatchEvent === 'function') {
+        window.dispatchEvent(new window.CustomEvent('artico:voice-latency', {
+          detail: { ms: Math.round(performance.now() - started), cached, engine },
+        }))
+      }
+    } catch { /* optional browser event; audio has already started */ }
     callbacks.onStart?.('kokoro')
     return true
   } catch (error) {

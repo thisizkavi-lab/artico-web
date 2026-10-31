@@ -1,94 +1,71 @@
 <!-- chapter: 04 | source: 04-saying-you-dont-understand.md -->
-# CH04 — 分からないことを伝え、確かめる / Saying You Don't Understand
+# CH04 — 分からないときの聞き返し / When Something Isn't Clear
 
-**この章でできるようになること:** 何を聞き取れなかったか、何が分からないかを伝え、繰り返し、ゆっくりした話し方、または分かりやすい説明を頼めます。
+**この章でできるようになること:** 聞き逃した部分を尋ね、相手の言いたいことを確認し、自分の理解が合っているか確かめられます。
 
-<!-- source-heading: Study: Identify the problem -->
-## 学習: どこで困っているかを伝える
+<!-- source-heading: Study: When you didn't catch something -->
+## 学習: 聞き取れなかったとき
 
-理解しているふりをする必要はありません。会話を立て直すときは、どの助けが必要かを相手に知らせると役立ちます。
+文の大部分は分かっていても、時刻・名前・数字・場所など、一つの情報だけ聞き逃すことがあります。相手に全部を言い直してもらうのではなく、分からなかった部分を尋ねましょう。
 
-| 困っていること | 使える英語 |
-| --- | --- |
-| 相手の言葉が聞き取れませんでした。 | **Sorry, I didn't catch that.** |
-| 単語は聞こえましたが、その意味が分かりません。 | **What does “deadline” mean?** |
-| 文は聞こえましたが、意味がはっきりしません。 | **I'm not sure what you mean.** |
-| 話す速さについていけません。 | **Could you say that more slowly?** |
-| 手順をもう一度説明してほしいです。 | **Could you walk me through it again?** |
-| 一つの情報だけ確認したいです。 | **Did you say Tuesday or Thursday?** |
+**Maya:** The workshop starts at ten thirty in Room 214.  
+**Sam:** Sorry, I didn't catch the room number. Was that 214 or 240?  
+**Maya:** Room 214.  
+**Sam:** Okay, Room 214. Thanks. I'll see you there.  
+**Maya:** See you then.
 
-順に、「聞き取れませんでした」「deadlineはどういう意味ですか」「おっしゃる意味がまだはっきり分かりません」「もう少しゆっくり言ってもらえますか」「手順をもう一度説明してもらえますか」「火曜日と言いましたか、それとも木曜日ですか」という質問です。
+一つの情報だけ聞き逃したときは、その部分を尋ねます。聞こえた候補を示して 'Was that 214 or 240?' と聞くと、相手も訂正しやすくなります。短い部分をもう一度聞きたいときは、Sorry? だけでも通じます。What? は、声の調子や相手との関係によって、驚きやぶっきらぼうな印象になることがあります。
 
-**Catch** は、ここでは言われたことを聞き取る、または理解する意味です。**Walk me through it** は、手順に沿って説明する意味です。直接 **I don't understand** と言ってから、具体的な質問をしてもかまいません。自分の英語力について説明するかどうかは任意です。必ず謝罪として説明する必要はありません。
+<!-- source-heading: Study: When you heard it but don't understand -->
+## 学習: 聞こえたけれど意味が分からないとき
 
-<!-- source-heading: Study: Ask, receive help, and confirm -->
-## 学習: 質問し、説明を受け、確認する
+すべての言葉が聞こえていても、表現の意味が分からないことがあります。単語やフレーズそのものについて尋ねましょう。その後、自分の理解を言葉にして確かめます。
 
-<!-- source-scene: At a workshop -->
-**ワークショップでの会話**
+**Alex:** You'll need to turn in the form by Friday.  
+**Jordan:** Sorry, what does 'turn in' mean here?  
+**Alex:** It just means submit it—give the completed form to the office.  
+**Jordan:** Oh, so I can drop it off at the front desk?  
+**Alex:** Exactly. You can hand it to the receptionist.  
+**Jordan:** Got it. I'll drop it off tomorrow.  
+**Alex:** Perfect. Thanks.
 
-**Staff:** Please turn in the form at the front desk by three.  
-**Visitor:** Sorry, I didn't catch the time. Did you say three?  
-**Staff:** Yes, three o'clock.  
-**Visitor:** Okay, by three. Thank you.  
+Turn in は、フォームや課題などを提出するという意味です。Drop it off は、物をある場所へ持って行き、そこに置いてくるという意味です。この場面ではどちらも使えますが、turn in は「提出すること」、drop off は「届けて置いてくること」に焦点があります。
 
-スタッフは、用紙を受付に三時までに提出するよう伝えています。訪問者は時刻だけを聞き逃したので、すべてを繰り返してもらわず、その部分を質問しています。この指示の **By three** は、三時より遅くならないように、という期限です。訪問者は大切な情報を繰り返して確認しています。
+<!-- source-heading: Study: When you need a different explanation -->
+## 学習: 別の説明が必要なとき
 
-<!-- source-scene: A different problem -->
-**別の部分が分からない場合**
+説明が速すぎたり、分かりにくかったりするときは、どこから分からなくなったかを伝えます。ゆっくり話してもらう、一つの手順をもう一度説明してもらう、実際に見せてもらう、といった頼み方があります。最後に、自分の言葉で手順を確認しましょう。
 
-**Staff:** Please turn in the form at the front desk.  
-**Visitor:** What does “turn in” mean?  
-**Staff:** Give the completed form to the person at the desk.  
-**Visitor:** Got it. I give it to the person at the desk.  
+**Maya:** To submit the request, open the portal, sign in, choose 'New request', attach the PDF, and click Submit.  
+**Jordan:** Sorry, could you slow down a little? I got as far as 'New request', but I lost you after that.  
+**Maya:** Of course. After you choose 'New request', click 'Choose file' and select the PDF.  
+**Jordan:** I'm not sure I follow—where do I find the file?  
+**Maya:** It should be in your Downloads folder.  
+**Jordan:** Oh, I see. Then I click Submit?  
+**Maya:** Exactly. You'll get a confirmation email.  
+**Jordan:** So I don't need to email the PDF separately?  
+**Maya:** That's right. Uploading it here is enough.  
+**Jordan:** Got it. Thanks for walking me through it.
 
-この訪問者は、時刻ではなく **turn in** の意味を尋ねています。スタッフは、記入済みの用紙を受付の人に渡すことだと説明しています。訪問者は理解した内容を自分の言葉で確かめています。
-
-**Got it** は、「分かりました」という理解の合図です。説明で実際に分かったときに使います。まだ分からないなら、**I'm still not sure. Could you show me?** と言えます。「まだはっきり分かりません。実際に見せてもらえますか」という頼み方です。
-
-<!-- source-heading: Study: Short repair questions -->
-## 学習: 短い言葉で聞き直す
-
-**Excuse me?**、**Sorry?**、**What was that?**、**What?** は、もう一度言ってもらうために使えます。ただし、短い言葉は、場面や言い方によって驚きや相手への異議も伝えます。具体的な質問にすると、何を聞き直したいかが分かりやすくなることが多いです。
-
-<!-- source-scene: Friends making a plan -->
-**友人どうしで予定を立てる場面**
-
-**Jo:** Let's meet behind the building.  
-**Ren:** Wait, what? Behind it?  
-**Jo:** Yes, by the back entrance.  
-**Ren:** Oh, okay. The back entrance.  
-
-Joは建物の裏で会おうと提案しています。Renは驚くと同時に、場所を確認しています。Joが裏の入口だと説明し、Renはその場所を言い直して確認します。自分の意図により合うなら、**Could you say that again?** という、「もう一度言ってもらえますか」の質問を選べます。短い一語が、どの状況でも失礼だと決めつけないでください。
-
-繰り返し以外にも、次のような助けを頼めます。
-
-- **Could you write it down?** は、文字で書いてもらう頼み方です。
-- **How do you spell that?** は、名前や単語のつづりを確認します。
-- **Could you give me an example?** は、例を挙げて意味を説明してもらいます。
-- **Do you mean the blue folder?** は、「青いフォルダーのことですか」と、自分の解釈を確認します。
+Slow down は、話す速さを落としてもらう頼み方です。Go over that again はもう一度説明してもらうこと、walk me through it は手順を一つずつ説明してもらうことです。似ていますが、求めている助けは少し違います。分かったら、自分の言葉で手順を確かめて会話を続けましょう。
 
 <!-- source-heading: Practice: Repair the exchange -->
 ## 練習: 会話を立て直す
 
-以下の指示は架空の場面の設定です。一人で練習するときは、両方の役を声に出します。最初は上の表を見て、次に表を隠し、別の困り方で試してください。
+次の場面を声に出して練習しましょう。決まった一つの言い方を覚える必要はありません。何が分からないのかを特定し、必要な助けを頼み、最後に答えを確認します。
 
-1. 相手が **Meet me at the front desk at six** と言います。受付で会うことは分かりましたが、時刻を聞き逃しました。その情報だけ尋ねてください。相手は **Six o'clock** と繰り返します。時刻を確認してください。
-2. **The deadline is Friday** と聞きますが、**deadline** の意味が分かりません。質問してください。説明は **The last day to send it** です。「送ることができる最後の日」だと分かったら、理解した内容を伝えます。
-3. 相手が **Open the page, choose a time, and send the form** という三つの指示を速く言います。ゆっくり言ってほしいと頼んでください。相手のゆっくりした繰り返しも演じ、その後、三つの行動を確認します。
-4. **Bring that folder** と言われます。青いフォルダーと赤いフォルダーがあります。青い方を指しているか尋ねてください。相手は **No, the red one** と答えます。その訂正に合わせて返答します。
-5. 見本を隠します。いずれかの場面を選び、**I don't understand** だけで終わらずに、会話を立て直してください。相手が助けやすいよう、必要なことを具体的に頼みます。
+1. 相手が 'The train leaves at six forty from platform three.' と言います。時刻は聞き取れましたが、ホーム番号を聞き逃しました。ホーム番号だけを尋ねてください。相手は 'Platform three.' と答えます。確認して会話を続けましょう。
+2. 相手が 'The meeting has been pushed back to Friday.' と言います。pushed back の意味が分かりません。尋ねると、相手は 'It means moved to a later time.' と説明します。自分の理解を確かめましょう。
+3. 同僚が 'Open the file, choose Export, then save it as a PDF.' と説明しますが、話すのが速すぎます。ゆっくり話してもらうか、最後の手順をもう一度説明してもらい、順番を確認しましょう。
+4. 相手が 'I'll send it over after lunch.' と言います。send it over の意味が分かりません。尋ねると、相手は 'I'll email it to you.' と説明します。自然に返答しましょう。
+5. この章の会話を一つ選び、情報を変えて練習しましょう。見本を見ずに会話を続けてみてください。
 
 <!-- source-heading: Sample possibilities -->
 ### 返答例
 
-1. **Sorry, what time did you say? — Six o'clock. — Okay, at six.**  
-   時刻だけを聞き直し、六時に会うことを確認しています。
-2. **What does “deadline” mean? — The last day to send it. — Okay, I need to send it by Friday.**  
-   意味の説明を受けて、金曜日までに送る必要があると確認しています。
-3. **Could you say that more slowly? — Open the page. Choose a time. Send the form. — Got it: open, choose, and send.**  
-   ページを開く、時刻を選ぶ、用紙を送る、という三つの行動が分かったと伝えています。
-4. **Do you mean the blue folder? — No, the red one. — Oh, the red one. Okay.**  
-   最初の解釈を確認し、訂正後は赤い方だと理解したことを伝えています。
+1. **Sorry, what was the platform number? — Platform three. — Okay, platform three. Thanks.**
+2. **What do you mean by pushed back? — It means moved to a later time. — Oh, so it's happening later than planned? — Exactly.**
+3. **Could you slow down a little? — Sure. Open the file, choose Export, and save it as a PDF. — Got it: Export, then save as a PDF.**
+4. **What do you mean by send it over? — I'll email it to you. — Oh, okay. That works.**
 
-**確認:** 「聞こえなかったこと」と「意味が分からなかったこと」を区別できましたか。質問によって役立つ助けを得られましたか。最初の誤解を繰り返す代わりに、訂正された情報を確認できましたか。
+**確認:** 何が分からないのかを具体的に尋ねましたか。必要な種類の助けを頼みましたか。理解したことを確認し、その後も会話を続けられましたか。

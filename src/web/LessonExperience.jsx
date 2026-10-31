@@ -15,7 +15,7 @@ import {
   togglePracticePhrase,
 } from './phrasePractice'
 import Chapter01Illustrated from './Chapter01Illustrated'
-import GreetingsReferenceStudy from './GreetingsReferenceStudy'
+import GreetingsReferenceStudy, { PhraseShelf as GreetingsPhraseShelf } from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
 import Chapter03StudySection from './Chapter03Context'
 import './social-reference-study.css'
@@ -174,7 +174,7 @@ function Study({ audioProps, focusedId }) {
     if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
   return (
-    <div className="ip-reading ar-shared-study">
+    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
       {introductionSections.map((section, index) => (
         <section
           className="ip-section"
@@ -252,20 +252,6 @@ function Study({ audioProps, focusedId }) {
                   </div>
                 </div>
               )
-            if (block.type === 'conversation' && lessonId === '02' && block.collapsed)
-              return (
-                <details className="ar-study-example" key={blockIndex} open={Boolean(focusedId && block.phrases.includes(focusedId)) || undefined}>
-                  <summary>
-                    <span className="ar-study-example-label">{language === 'ja' ? '会話で確認する' : 'See it in context'}</span>
-                    <strong>{block.title}</strong>
-                    <span className="ar-study-example-chevron" aria-hidden="true" />
-                  </summary>
-                  <div className="ar-study-example-content">
-                    <Conversation block={block} audioProps={audioProps} focusedId={focusedId} />
-                    {block.contextText && <p className="ip-prose">{block.contextText}</p>}
-                  </div>
-                </details>
-              )
             if (block.type === 'conversation')
               return (
                 <Conversation
@@ -320,6 +306,28 @@ function Study({ audioProps, focusedId }) {
                   })}
                 </div>
               )
+            if (lessonId === '02' && block.type === 'phrases') {
+              const options = block.phrases
+                .map((id) => introductionById[id])
+                .filter(Boolean)
+                .map((item) => ({ ...item, text: item.en, description: item.context }))
+              const noteBlock = section.blocks[blockIndex + 1]?.type === 'note'
+                ? section.blocks[blockIndex + 1]
+                : undefined
+              return (
+                <GreetingsPhraseShelf
+                  key={blockIndex}
+                  title={block.title}
+                  options={options}
+                  initial={Math.max(0, block.phrases.indexOf(focusedId))}
+                  sceneArt={block.sceneArt}
+                  note={noteBlock ? { title: noteBlock.title, en: noteBlock.text, ja: noteBlock.text } : undefined}
+                  play={(_text, item) => {
+                    if (item?.id && approvedAudio[item.id]) audioProps.onPlay(item.id)
+                  }}
+                />
+              )
+            }
             if (lessonId === '01' && block.type === 'phrases') {
               return (
                 <Chapter01Illustrated
@@ -384,10 +392,10 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
     })
   }
   // A scene illustration supplies context when an individual phrase has no artwork.
-  const sceneArtBySection = Object.fromEntries(introductionSections.map((section) => [
-    section.id, section.blocks.find((block) => block.art || block.source?.art)?.art
-      ?? section.blocks.find((block) => block.source?.art)?.source?.art,
-  ]))
+  const sceneArtBySection = Object.fromEntries(introductionSections.map((section) => {
+    const scene = section.blocks.find((block) => block.art || block.sceneArt || block.source?.art)
+    return [section.id, scene?.art ?? scene?.sceneArt ?? scene?.source?.art]
+  }))
   const shown = filterPracticePhrases(introductionPhrases, set)
   const selected = new Set(set.selected)
   const hasFilter = set.filter !== 'all' || set.search.trim() !== ''

@@ -5,6 +5,7 @@ import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01.js'
 import { numberGroups } from './vocabularyLesson02.js'
+import { vocabularySpokenText } from './vocabularySpokenText.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
 const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
@@ -266,4 +267,26 @@ test('Lesson 03 uses an ordered frequency chart and keeps specific-interval card
   const style=readFileSync(new URL('./vocabulary-topic.css',import.meta.url),'utf8')
   assert.match(style,/\.vlt-frequency-bars/)
   assert.match(style,/@media\(max-width:620px\)/)
+})
+
+
+test('vocabulary pronunciation reads alternatives, never visual punctuation or editorial notes', () => {
+  assert.equal(vocabularySpokenText('U.S./USA, America'), 'the United States. U S A. America.')
+  assert.equal(vocabularySpokenText('U.S./USA'), 'the United States. U S A.')
+  assert.equal(vocabularySpokenText('morning / in the morning'), 'morning. in the morning')
+  assert.equal(vocabularySpokenText('take a shower / have a shower (also common in UK)'), 'take a shower. have a shower')
+  assert.equal(vocabularySpokenText('Human Resources / HR (department)'), 'Human Resources. H R')
+  assert.equal(vocabularySpokenText('bowl / bowl (container) (same sense)'), 'bowl')
+  assert.equal(vocabularySpokenText('yesterday / today / tomorrow'), 'yesterday. today. tomorrow')
+  assert.equal(vocabularySpokenText('1/2'), 'one half')
+  assert.equal(vocabularySpokenText('Hello!'), 'Hello!')
+})
+test('Social Fluency is recording-only; Kokoro remains a vocabulary feature', () => {
+  for (const name of ['components.jsx', 'LessonExperience.jsx', 'ReferencePhraseShelf.jsx', 'GreetingsReferenceStudy.jsx', 'Chapter03Context.jsx']) {
+    const source = readFileSync(new URL('./' + name, import.meta.url), 'utf8')
+    assert.ok(!source.includes('kokoroSpeech'), name + ' must not import the Kokoro engine')
+    assert.ok(!source.includes('speakKokoroSpeech'), name + ' must not trigger synthesized audio')
+  }
+  const speaker = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
+  assert.match(speaker, /vocabularySpokenText\(text\)/)
 })

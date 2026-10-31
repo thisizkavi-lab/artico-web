@@ -1,0 +1,35 @@
+name: Verify high-resolution Artico illustration source
+on:
+  push:
+    paths:
+      - .github/workflows/ch02-highres-probe.yml
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try original-size retrieval of the staged artwork
+        env:
+          SRC: "https://media.canva.com/v2/image-resize/format:PNG/height:125/quality:100/uri:ifs%3A%2F%2FM%2Fa0a7bded-4f62-476b-a7c6-6eb7867b5527/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAB-AMS9gWXNVS4Z-LZyte9SD_aSoIVcZ6xtROd3ctQkw&exp=1793427555&osig=AAAAAAAAAAAAAAAAAAAAAD0eBj_8nuorHzL__6chAomAs__gXfgt-E8cYXy1H4Di&signer=media-rpc&token=AAIAAU0AJGEwYTdiZGVkLTRmNjItNDc2Yi1hN2M2LTZlYjc4NjdiNTUyNwAAAAABoZCcwri0pAKs1hAFB2uvjjeLrMD3TonI5s6C9cHYa6opvjI6SA&x-canva-quality=thumbnail"
+        run: |
+          python - <<'PY'
+          import os,urllib.request,urllib.error,re
+          from PIL import Image
+          from io import BytesIO
+          src=os.environ['SRC']
+          tests = [
+            ('original-signed-thumbnail',src),
+            ('large-with-signature',src.replace('height:125','height:992').replace('width:200','width:1586')),
+            ('large-no-csig',re.sub(r'([&?])csig=[^&]+&?',r'\1',src.replace('height:125','height:992').replace('width:200','width:1586'))),
+          ]
+          for label,url in tests:
+            try:
+              request=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+              with urllib.request.urlopen(request,timeout=25) as r:
+                data=r.read()
+              im=Image.open(BytesIO(data))
+              print(label,im.size,len(data))
+            except Exception as exc:
+              print(label,type(exc).__name__,str(exc)[:150])
+          PY

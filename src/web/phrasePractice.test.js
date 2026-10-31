@@ -51,7 +51,10 @@ test('separate chapters and foundation notes survive reload without resetting pi
 
 test('every Chapter 02 spoken example is a shared Study and Practice record', () => {
   const displayed = introductionSections.flatMap((section) =>
-    section.blocks.flatMap((block) => block.phrases ?? []),
+    section.blocks.flatMap((block) => [
+      ...(block.phrases ?? []),
+      ...(block.choices?.map((choice) => choice.id) ?? []),
+    ]),
   )
   const ids = introductionPhrases.map((item) => item.id)
   const spoken = introductionPhrases.filter((item) => item.section !== 'words')

@@ -338,3 +338,14 @@ test('All 20 dimension cards use self-contained, text-free Kitbitz SVG artwork',
     assert.ok(mapping.includes('"'+term+'"'),term)
   }
 })
+
+
+test('Lesson 05 little shows a kitten beside an adult cat, not a repeated mug',()=>{
+  const little=load('../../public/vocabulary-dimensions/05/little.svg')
+  assert.match(little,/data-cat-role="kitten"/)
+  assert.match(little,/data-cat-role="adult-cat"/)
+  assert.equal((little.match(/data-cat-role=/g)||[]).length,2)
+  assert.match(little,/Black cat SVG/)
+  assert.ok(!little.includes('mug'), 'The little illustration must not reuse the mug comparison')
+  assert.ok(!/<text\b|<image\b/.test(little), 'Keep labels in the standard vocabulary card')
+})

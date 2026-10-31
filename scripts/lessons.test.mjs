@@ -98,7 +98,7 @@ test('vocabulary chapters rehearse a usable subset and introduction practice inc
   }
   const introduction = readLesson('02')
   const speakers = introduction.rehearsal.map((line) => line.speaker)
-  assert.ok(speakers.includes('Priya'))
+  assert.ok(speakers.includes('Satoshi'))
   assert.ok(speakers.includes('Daniel'))
   assert.ok(speakers.includes('Sam'))
   assert.equal(introduction.rehearsalAliases.friend, 7)

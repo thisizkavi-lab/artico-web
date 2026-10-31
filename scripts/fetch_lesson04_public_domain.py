@@ -50,20 +50,25 @@ for term, item in catalog["entries"].items():
                 if original.width < 500 or original.height < 500:
                     raise ValueError(f"Too small ({original.size})")
                 image = ImageOps.exif_transpose(original).convert("RGB")
-            # Preserve the full subject on vertical photos; no chopped faces,
-            # hands, shower heads or actions. A low-contrast photographic fill
-            # replaces empty bars while the real scene is kept intact.
+            # Landscape cards always have a 608:384 horizontal frame.
+            # Crop genuinely horizontal source photos edge-to-edge. For very
+            # tall portraits, retain the full subject against a soft
+            # photographic backdrop to avoid cutting off the taught action.
             size = (608, 384)
-            backdrop = ImageOps.fit(image, size, method=Image.Resampling.LANCZOS)
-            backdrop = backdrop.filter(ImageFilter.GaussianBlur(22)).convert("RGBA")
-            white = Image.new("RGBA", size, (250, 248, 245, 90))
-            backdrop.alpha_composite(white)
-            foreground = ImageOps.contain(image, size, method=Image.Resampling.LANCZOS)
-            if foreground.width < 608:
-                foreground.thumbnail((584, 376), Image.Resampling.LANCZOS)
-            offset = ((608 - foreground.width) // 2, (384 - foreground.height) // 2)
-            backdrop.alpha_composite(foreground.convert("RGBA"), offset)
-            backdrop.convert("RGB").save(p, "WEBP", quality=88, method=6)
+            ratio = image.width / image.height
+            crop_focus = (float(item.get("focusX", .5)), float(item.get("focusY", .5)))
+            if ratio >= 1.08 or item.get("fitMode") == "cover":
+                output = ImageOps.fit(image, size, method=Image.Resampling.LANCZOS, centering=crop_focus)
+            else:
+                backdrop = ImageOps.fit(image, size, method=Image.Resampling.LANCZOS)
+                backdrop = backdrop.filter(ImageFilter.GaussianBlur(18)).convert("RGBA")
+                white = Image.new("RGBA", size, (250, 248, 245, 100))
+                backdrop.alpha_composite(white)
+                foreground = ImageOps.contain(image, size, method=Image.Resampling.LANCZOS)
+                offset = ((608 - foreground.width) // 2, (384 - foreground.height) // 2)
+                backdrop.alpha_composite(foreground.convert("RGBA"), offset)
+                output = backdrop.convert("RGB")
+            output.save(p, "WEBP", quality=88, method=6)
             if p.stat().st_size < 4000:
                 raise ValueError("Small/corrupted output")
             with Image.open(p) as output:

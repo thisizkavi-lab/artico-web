@@ -1,9 +1,7 @@
-# Lesson 04 — Real-life photo sources
+# Artico Lesson 04 — source-tracked photos
 
-The vocabulary cards use **58 individually selected real photographs** from [Pexels](https://www.pexels.com/), under the [Pexels License](https://www.pexels.com/license/). Photographs may be used in websites and educational apps; we do not sell unaltered images as standalone stock.
+The daily-routines vocabulary uses a [source manifest](../../src/web/vocabularyDailyRoutineSources.json) containing each headword, intended visual meaning, photographer's Pexels photo page, asset ID, and local WebP filename. Pexels content follows the [Pexels License](https://www.pexels.com/license/).
 
-Every item has a recorded word, concept description, original Pexels photo page, photo ID, and local file name in [the source manifest](../../src/web/vocabularyDailyRoutineSources.json).
+The four context-problem cards have individually reviewed horizontal replacements: **put the children to bed**, **café**, **run errands**, and **have a break**. The production image converter uses full-bleed crops on landscape photos and preserves tall portrait source scenes where aggressive cropping could hide the action. Every resulting card asset is 608 × 384 and served locally.
 
-At deploy time, the original images are downloaded into the static build, converted to crisp 608 × 384 WebP with the subject preserved, and verified to exist. **Artico serves the images locally.** This replaces the earlier FreeSVG collages and OpenMoji symbol strips.
-
-English/Japanese teaching text remains unchanged.
+The teacher text stays unchanged. 

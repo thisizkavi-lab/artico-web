@@ -24,6 +24,9 @@
 }
 .artico-speak:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 .artico-speak.is-loading { color: #6484ad; cursor: progress; }
+.artico-speak.is-error { color: #ab6371; }
+.artico-speak.is-error:hover, .artico-speak.is-error:focus-visible { background: rgba(171,99,113,.09); }
+
 .artico-speak.is-loading svg { animation: artico-speech-pulse 1s ease-in-out infinite; }
 @keyframes artico-speech-pulse { 50% { opacity: .25; transform: scale(.9); } }
 @media (prefers-reduced-motion: reduce) {

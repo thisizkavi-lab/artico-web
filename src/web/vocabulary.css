@@ -708,3 +708,12 @@
   .vl02-practice-card:hover { transform: none; }
 }
 
+
+/* Optional recovery for machines whose Web Speech voice is silent. */
+.vl-voice-settings { margin-top: 12px; font-size: 12px; max-width: 310px; }
+.vl-voice-settings summary { color: #7c8998; cursor: pointer; width: fit-content; }
+.vl-voice-settings summary:hover { color: #3f6ca1; }
+.vl-voice-settings-panel { display: grid; gap: 7px; margin-top: 10px; padding: 12px; border: 1px solid #e2e6eb; border-radius: 10px; background: #fff; }
+.vl-voice-settings-panel label { font-weight: 600; font-size: 12px; }
+.vl-voice-settings-panel select { width: 100%; max-width: 260px; font: inherit; font-size: 12px; border: 1px solid #d8dee6; border-radius: 6px; padding: 7px; color: #394759; background: #fff; }
+.vl-voice-settings-panel p { margin: 0; line-height: 1.45; color: #778390; font-size: 11px; }

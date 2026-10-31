@@ -1,0 +1,40 @@
+/* Small standalone sound icon: no extra chrome until hover or focus. */
+.artico-speak {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border: 0;
+  border-radius: 50%;
+  color: #53697a;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+.artico-speak svg { width: 20px; height: 20px; }
+.artico-speak:hover,
+.artico-speak:focus-visible,
+.artico-speak.is-playing {
+  background: rgba(40, 112, 202, .10);
+  color: #2267b4;
+}
+.artico-speak:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.artico-speak.is-loading { opacity: .65; cursor: progress; }
+.artico-speak.is-loading svg { animation: artico-speech-pulse 1s ease-in-out infinite; }
+@keyframes artico-speech-pulse { 50% { opacity: .25; transform: scale(.9); } }
+@media (prefers-reduced-motion: reduce) {
+  .artico-speak, .artico-speak svg { animation: none !important; transition: none; }
+}
+.vlt-card { position: relative; }
+.vlt-card > .artico-speak {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 1;
+}
+.vlt-card:not(.vlt-recall-card) > .vlt-card-copy { padding-right: 30px; }
+.vl02-table-audio { margin-left: 3px; }

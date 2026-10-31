@@ -9,7 +9,7 @@ Use these when you didn't hear a word or detail clearly.
 | Phrase | Example in use | What it means |
 |---|---|---|
 | **Sorry?** | **Sorry?** | Ask someone to repeat a short part. |
-| **Sorry, I didn't catch that.** | Sorry, **I didn't catch your name.** | Say you didn't hear something clearly. |
+| **Sorry, I didn't catch that.** | **Sorry, I didn't catch your name.** | Say you didn't hear something clearly. |
 | **Could you say that again?** | **Could you say that again**, please? | Ask someone to repeat what they said. |
 | **Did you say ...?** | **Did you say eight?** | Check a word, number, or detail. |
 

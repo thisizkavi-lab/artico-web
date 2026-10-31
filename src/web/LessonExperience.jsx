@@ -1,7 +1,6 @@
 import { useLanguage } from './Language'
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { approvedAudio, useAudio } from './components'
-import { speakKokoroSpeech, stopKokoroSpeech, warmKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
 import Glyph from './Glyph'
 import LessonFooter from './LessonFooter'
 import ScenarioQuiz from './ScenarioQuiz'
@@ -31,9 +30,9 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 const portraits = {
   Alex: '8508101',
   Casey: '265283458',
-  Cassie: '265283458',
-  Anna: '8855619',
-  Satoshi: '278299',
+  Maya: '8855619',
+  Eli: '278299',
+  Priya: '277786664',
   Daniel: '3957303430',
   Sam: '291416',
 }
@@ -48,7 +47,7 @@ export { default as Glyph } from './Glyph'
 
 export function PhraseAudio({ item, audio, activeId, onPlay }) {
   const { t, language } = useLanguage()
-  const ready = Boolean(approvedAudio[item.id] || item.en)
+  const ready = Boolean(approvedAudio[item.id])
   const playing = activeId === item.id && audio.playing
   return (
     <button
@@ -108,28 +107,20 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
 // A single play control belongs to the complete exchange, not each turn.
 function ConversationAudio({ block, audioProps }) {
   const { t } = useLanguage()
-  const { byId } = useLesson()
   const id = block.audioId ?? block.id ?? `dialogue-${block.phrases[0]}`
   const ready = Boolean(approvedAudio[id])
   const playing = ready && audioProps.activeId === id && audioProps.audio.playing
   const listen = () => {
-    if (ready) {
-      stopKokoroSpeech()
-      audioProps.onPlay(id)
-      return
-    }
-    const lines = block.phrases.map(phraseId => byId[phraseId]?.en).filter(Boolean)
-    if (!lines.length) return
-    audioProps.audio.stop()
-    void speakKokoroSpeech(lines.join(' '), { rate: 0.91 })
+    if (ready) audioProps.onPlay(id)
   }
   return (
     <button
       type="button"
       className="ip-conversation-audio"
       aria-label={playing ? t('Pause conversation audio') : t('Play full conversation')}
-      title={ready ? t('Listen to the full conversation') : t('Listen with Kokoro')}
+      title={ready ? t('Listen to the full conversation') : t('Recording coming soon')}
       onClick={listen}
+      disabled={!ready}
     >
       <Glyph name={playing ? 'pause' : 'play'} size={16} />
     </button>
@@ -180,16 +171,10 @@ function Study({ audioProps, focusedId }) {
     Diagram,
   } = useLesson()
   const playIllustratedPhrase = (item) => {
-    if (approvedAudio[item.id]) {
-      stopKokoroSpeech()
-      audioProps.onPlay(item.id)
-      return
-    }
-    audioProps.audio.stop()
-    void speakKokoroSpeech(item.en, { rate: 0.9 })
+    if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
   return (
-    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
+    <div className="ip-reading ar-shared-study">
       {introductionSections.map((section, index) => (
         <section
           className="ip-section"
@@ -350,7 +335,6 @@ function Study({ audioProps, focusedId }) {
               <ReferencePhraseShelf key={blockIndex} ids={block.phrases}
                 byId={introductionById} audioProps={audioProps} focusedId={focusedId}
                 title={lessonId === '02' ? block.title : undefined}
-                sceneArt={lessonId === '02' ? block.sceneArt : undefined}
                 note={lessonId === '02' && section.blocks[blockIndex + 1]?.type === 'note'
                   ? section.blocks[blockIndex + 1] : undefined} />
             ) : (
@@ -589,7 +573,7 @@ function PracticeSession({ set, change, audioProps, learning, save }) {
     audioProps.audio.stop()
     headingRef.current?.focus({ preventScroll: true })
   }, [item.id])
-  const ready = Boolean(approvedAudio[item.id] || item.en)
+  const ready = Boolean(approvedAudio[item.id])
   const saved = learning.saved.includes(item.id)
   const move = (direction) => {
     audioProps.audio.stop()
@@ -753,16 +737,13 @@ function Experience({ route, learning, update, save, notify }) {
   const set = getPracticeSet(learning.practiceSets?.[id], catalog.items, legacySet(learning), catalog)
   const [activeId, setActiveId] = useState(null)
   const audio = useAudio(notify)
-  useEffect(() => { warmKokoroSpeech() }, [id])
   const audioProps = {
     audio,
     activeId,
     byId: introductionById,
     onPlay: (id, restart = false) => {
       setActiveId(id)
-      audio.play(id, 1, restart, introductionById[id]?.en ?? practiceById[id]?.en ?? '')
-      const index = introductionPhrases.findIndex(item => item.id === id)
-      if (index >= 0) prefetchKokoroSpeech(introductionPhrases.slice(index + 1, index + 3).map(item => item.en))
+      audio.play(id, 1, restart)
     },
   }
   const rawFocus = introductionAliases[route.line] ?? route.line

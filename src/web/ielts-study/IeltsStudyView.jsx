@@ -24,7 +24,7 @@ import './ielts-study.css'
 /* The Study landing screen follows the clarity and restrained color of Greetings. */
 export function StudyHome({ store }) {
   const lastUnitId = store?.state?.notes?.['study-last-unit']
-  const lastUnit = lastUnitId ? STUDY_UNIT_BY_ID[lastUnitId] : null
+  const lastUnit = lastUnitId && lastUnitId !== 'ov-how-to-read' ? STUDY_UNIT_BY_ID[lastUnitId] : null
   const skills = MODULE_METADATA.filter((mod) => mod.id !== 'overview')
   const descriptions = {
     listening: 'Hear the answer and notice what changes.',

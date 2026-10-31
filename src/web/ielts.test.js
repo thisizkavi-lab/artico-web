@@ -6,8 +6,9 @@ import { ieltsAreas, ieltsPath } from './ieltsNavigation.js'
 import { parseRoute } from './learning.js'
 import { IELTS_STORAGE_KEY, applyAttemptChange, clockSeconds, completeAttempt, emptyIelts, exposeTask, formatClock, hasSeenTask, loadIelts, makeAttempt, markQuestions, pauseAttempt, sanitiseIelts, updateAttempt, wordCount } from './ieltsState.js'
 
-test('English Tests branches to all eight IELTS areas in both modes and preserves direct task links', () => {
-  assert.equal(ieltsAreas.length, 8)
+test('English Tests branches to all six learner-facing IELTS areas in both modes and preserves direct task links', () => {
+  assert.equal(ieltsAreas.length, 6)
+  assert.deepEqual(ieltsAreas.map((area) => area.id), ['overview', 'listening', 'reading', 'writing', 'speaking', 'mock'])
   assert.equal(parseRoute('#/application/tests').id, 'tests')
   assert.equal(parseRoute('#/application/tests/ielts').area, 'home')
   for (const area of ['home', ...ieltsAreas.map((item) => item.id)]) for (const mode of ['study', 'practice']) {
@@ -17,6 +18,11 @@ test('English Tests branches to all eight IELTS areas in both modes and preserve
     assert.equal(route.exam, 'ielts')
     assert.equal(route.area, area)
     assert.equal(route.view, mode)
+  }
+  // Older saved routes remain valid, although they no longer crowd the home screen.
+  for (const area of ['guided', 'mocks', 'simulation']) {
+    const retainedRoute = parseRoute('#' + ieltsPath(area,'practice'))
+    assert.equal(retainedRoute.area, area)
   }
   const path = ieltsPath('reading', 'practice', 'r-tool-library', 'run-123')
   assert.equal(parseRoute(`#${path}`).task, 'r-tool-library')

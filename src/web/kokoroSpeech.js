@@ -110,7 +110,8 @@ function tuneKokoroAfterUserAudio() {
     if (!(await probeGpu())) return
     // Many older laptops advertise WebGPU but only have slow Intel iGPUs.
     // Do not download a large model automatically for those machines.
-    if (/intel/i.test(gpuAdapter?.info?.vendor || '')) return
+    const vendor = (gpuAdapter?.info?.vendor || '').toLowerCase()
+    if (!vendor || /intel/i.test(vendor)) return
     try {
       const tts = await loadKokoro()
       const started = performance.now()
@@ -130,7 +131,7 @@ function tuneKokoroAfterUserAudio() {
   }
   const defer = () => {
     if ('requestIdleCallback' in window)
-      window.requestIdleCallback(() => { void evaluate() }, { timeout: 4000 })
+      window.requestIdleCallback(() => { void evaluate() })
     else window.setTimeout(() => { void evaluate() }, 600)
   }
   // The first audio response starts immediately; only then may model

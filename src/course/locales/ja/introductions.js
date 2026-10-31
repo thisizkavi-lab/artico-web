@@ -72,6 +72,8 @@ const copy = {
   'Talking about your work': '仕事や役割について話す',
   'Starting a working relationship': '一緒に仕事を始めるとき',
   'More formal greetings': 'より改まったあいさつ',
+  'Use “I’m looking forward to working with you” when you are about to start working together. “I’m looking forward to it” refers to a specific plan or event already mentioned. This is a natural expression of goodwill, not a word-for-word translation of よろしくお願いします.': 'これから一緒に仕事を始める場面で、相手と働けることを楽しみにしていると伝える自然な表現です。「I’m looking forward to it」は、すでに話題に出ている具体的な予定やイベントを楽しみにしているときに使います。「よろしくお願いします」の直訳ではなく、場面に合う英語を選びましょう。',
+  '“It’s a pleasure to meet you” is a more formal alternative to “Nice to meet you.” “How do you do?” is traditional and uncommon in everyday American English; recognize it, but do not treat it as a required greeting.': '「It’s a pleasure to meet you」は「Nice to meet you」より改まった表現です。「How do you do?」は伝統的で、現代のアメリカ英語の日常会話ではあまり使われません。必須のあいさつとして覚える必要はありません。',
   'Daniel’s greeting is a little more formal. Satoshi returns the greeting and tells Daniel what to call them. Daniel uses that name in his reply.': 'ダニエルのあいさつは、少し改まった言い方です。サトシは気持ちを返し、呼んでほしい名前を伝えます。ダニエルはその名前を使って返答しています。',
   'Give the name you use': '普段、使っている名前を伝える',
   'Professional can still be friendly.': '仕事の場でも、親しみのあるあいさつを。',

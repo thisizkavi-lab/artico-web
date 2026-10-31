@@ -27,13 +27,13 @@ export const introductionPhrases = [
   phrase(11, "Hello, I'm Satoshi. I'm the project manager.", 'Give your name and role at a project meeting.', 'work', {
     speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
   }),
-  phrase(12, "Daniel Reed. It's a pleasure to meet you.", 'Give your full name and use a more formal first-meeting greeting.', 'work', {
+  phrase(12, "Daniel Reed. I go by Dan. It's a pleasure to meet you.", 'Give your full name, explain the name you normally use, and greet the other person.', 'work', {
     speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
   }),
   phrase(13, 'Likewise. Please call me Satoshi.', 'Return the greeting and tell the other person your preferred name.', 'work', {
     speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
   }),
-  phrase(14, "Thanks, Satoshi. I go by Dan. I'm on the research team.", 'Acknowledge the name Satoshi uses, give your own preferred name, and identify your team.', 'work', {
+  phrase(14, "Thanks, Satoshi. I'm on the research team.", 'Acknowledge the name Satoshi uses and identify your team.', 'work', {
     speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
   }),
   phrase(15, 'I go by Dan.', 'Tell someone the name you normally use, often after giving your full name.', 'work'),
@@ -286,7 +286,7 @@ export const introductionScenarios = [
   {
     id: 'ch02-b20-1',
     prompt: 'You are Daniel Reed, a researcher. You normally go by Dan. Meet Satoshi, a project manager. Introduce yourself, explain the name you use, and mention your team.',
-    sample: "Daniel Reed. It's a pleasure to meet you. — Likewise. Please call me Satoshi. — Thanks, Satoshi. I go by Dan. I'm on the research team.",
+    sample: "Daniel Reed. I go by Dan. It's a pleasure to meet you. — Likewise. Please call me Satoshi. — Thanks, Satoshi. I'm on the research team.",
   },
   {
     id: 'ch02-b20-2',

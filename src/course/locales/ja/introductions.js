@@ -84,6 +84,11 @@ const copy = {
   'Morgan tells you that you met before, at a workshop. Acknowledge that and continue.': 'モーガンが、以前ワークショップで会ったと伝えます。その情報を受け止め、会話を続けましょう。',
   'Put the examples away. Make a three-turn introduction using your own name or an invented identity. Ask for the name again if needed.': '例を隠します。自分の名前か架空の人物を使い、三つの発言からなる自己紹介をしましょう。必要なら名前を聞き直します。',
   'Many answers work. Check: did the other person learn who you are and how you are connected? Did you respond to what they said?': '答えは一つではありません。誰なのか、どんなつながりがあるかが伝わりましたか。相手の実際の発言に返答できましたか。',
+  "Hi, I'm Avery. I'm a friend of Taylor's. — I'm Morgan. Nice to meet you. — You too.": 'こんにちは、アベリーです。テイラーの友人です。— モーガンです。はじめまして。— こちらこそ。',
+  "I'm Taylor Brooks. I'm on the design team. — What should I call you? — Please call me Taylor.": 'テイラー・ブルックスです。デザインチームに所属しています。— 何とお呼びすればよいですか。— テイラーと呼んでください。',
+  'Morgan, this is Avery. Avery, this is my colleague Morgan. — Nice to meet you. How do you know Taylor? — We work together.': 'モーガン、こちらはアベリーです。アベリー、こちらは同僚のモーガンです。— はじめまして。テイラーとはどういう知り合いですか。— 一緒に働いています。',
+  'Oh, yes. Good to see you again.': 'ああ、そうでしたね。また会えてうれしいです。',
+
 }
 const meaning = {
   'ch02-p1': 'アレックスです。キャシーの友人です。',

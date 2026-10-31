@@ -145,7 +145,7 @@ export function StudyReader({ area, unitId, store }) {
                     href={`#${ieltsStudyPath(area, u.id)}`}
                     aria-current={isActive ? 'page' : undefined}
                   >
-                    <span>{u.id === 'ov-how-to-read' ? 'How to use these lessons' : u.title}</span>
+                    <span>{u.title}</span>
                     {unitRead && (
                       <span className="ies-toc-read-mark" title="Marked read" aria-label="Marked read">
                         ✓
@@ -167,16 +167,14 @@ export function StudyReader({ area, unitId, store }) {
           <CurriculumIcon name={modMeta.icon} size={28} />
           <h1>{modMeta.title}</h1>
         </div>
-        <div className="ie-facts">
-          <span>{modMeta.fact}</span>
-        </div>
+        {area !== 'overview' && <div className="ie-facts"><span>{modMeta.fact}</span></div>}
       </header>
 
       {/* Mobile / Narrow-Tablet Compact Contents Drawer (< 880px) */}
       {currentUnit && (
         <details className="ies-mobile-toc">
           <summary>
-            Contents · Lesson {lessonNumber} of {areaUnits.length}: {currentUnit.title}
+            {unitIndex < 0 ? 'Contents · Course reference: ' : 'Contents · Lesson ' + lessonNumber + ' of ' + areaUnits.length + ': '}{currentUnit.title}
           </summary>
           <div className="ies-mobile-toc-body">{renderTocParts()}</div>
         </details>
@@ -230,8 +228,6 @@ export function StudyReader({ area, unitId, store }) {
                 <h2 id={`ies-unit-h2-${currentUnit.id}`} className="ies-unit-title">
                   {currentUnit.title}
                 </h2>
-
-
               </header>
 
               <div className="ies-unit-blocks">

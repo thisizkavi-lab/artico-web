@@ -141,7 +141,7 @@ function Conversation({ block, audioProps, focusedId }) {
   // A person stays on the same side for the entire exchange.
   const speakers = [...new Set(block.phrases.map((id) => introductionById[id]?.speaker).filter(Boolean))]
   return (
-    <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}`}>
+    <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}${block.replyAlternatives ? ' ip-scene-branching' : ''}`}>
       <header className="ar-scene-heading">
         <h3>{block.title}</h3>
         <ConversationAudio block={block} audioProps={audioProps} />
@@ -151,6 +151,8 @@ function Conversation({ block, audioProps, focusedId }) {
       </div>}
       <div className="ip-conversation" aria-label={block.title}>
         {block.phrases.map((id, index) => {
+          // The final reply is displayed as one of the two branches below, not repeated as a fixed third turn.
+          if (block.replyAlternatives?.choices.some((choice) => choice.id === id)) return null
           const item = introductionById[id]
           const outgoing = conversationSide(speakers, item.speaker, index) === 'outgoing'
           const portrait = item.portrait ?? chapter02Portraits[item.speaker] ?? (portraits[item.speaker] ? `portrait-${portraits[item.speaker]}.svg` : null)
@@ -164,23 +166,57 @@ function Conversation({ block, audioProps, focusedId }) {
             </div>
           )
         })}
+        {block.replyAlternatives && (
+          <ReplyAlternatives
+            block={block.replyAlternatives}
+            audioProps={audioProps}
+            focusedId={focusedId}
+            embedded
+          />
+        )}
       </div>
-      {block.replyAlternatives && (
-        <ReplyAlternatives
-          block={block.replyAlternatives}
-          audioProps={audioProps}
-          embedded
-        />
-      )}
     </div>
   )
 }
 
 
-function ReplyAlternatives({ block, audioProps, embedded = false }) {
+function ReplyAlternatives({ block, audioProps, embedded = false, focusedId }) {
   const { language } = useLanguage()
   const { byId } = useLesson()
   const promptItem = block.promptId ? byId[block.promptId] : null
+
+  if (embedded) return (
+    <section className="ar-ch02-branch" aria-label={block.title}>
+      <div className="ar-ch02-branch-speaker">
+        <img src={art('portrait-ch02-alex.svg')} alt="" width="27" height="27" />
+        <span>{language === 'ja' ? 'アレックスはどちらでも答えられます' : 'Alex can reply either way'}</span>
+      </div>
+      <div className="ar-ch02-branch-fork" aria-hidden="true" />
+      <div className="ar-ch02-branch-choices">
+        {block.choices.map((choice) => {
+          const item = byId[choice.id]
+          if (!item) return null
+          return (
+            <article id={`study-${item.id}`} data-phrase-id={item.id} key={item.id}
+              className={`ar-ch02-branch-choice${focusedId === item.id ? ' is-focused' : ''}`}>
+              <span className="ar-ch02-branch-label">{choice.label}</span>
+              <div className="ar-ch02-branch-line">
+                <p lang="en">{item.en}</p>
+                <PhraseAudio item={item} {...audioProps} />
+              </div>
+              {language === 'ja' && item.ja && <p className="ar-ch02-branch-ja" lang="ja">{item.ja}</p>}
+            </article>
+          )
+        })}
+      </div>
+      <p className="ar-ch02-branch-note">
+        {language === 'ja'
+          ? 'どちらも自然な返事です。長さが違うだけです。'
+          : 'Both are natural. The second simply says it in full.'}
+      </p>
+    </section>
+  )
+
   return (
     <section className={`ar-ch02-replies${embedded ? ' ar-ch02-replies-embedded' : ''}`} aria-label={block.title}>
       <header className="ar-ch02-reply-heading">

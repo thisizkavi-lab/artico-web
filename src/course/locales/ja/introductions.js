@@ -56,7 +56,7 @@ const copy = {
   'Two ways to reply': '返事の二つの言い方',
   'Nice to meet you.': 'はじめまして。',
   'Short': '短い返事',
-  'Fuller': '丁寧な返事',
+  'Fuller': '少し長い返事',
   'Two natural replies': '自然な返事の二つの例',
   'The other person': '相手',
 

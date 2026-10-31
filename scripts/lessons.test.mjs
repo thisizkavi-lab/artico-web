@@ -232,6 +232,15 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
   assert.match(experience, /conversation && lessonId === '02'/)
   assert.match(experience, /scope="rowgroup"/)
   assert.match(experience, /scope="col"/)
+  // The last turn is expressed as two genuine reply branches, not repeated above them.
+  assert.match(experience, /block\.replyAlternatives\?\.choices\.some/)
+  assert.match(experience, /ar-ch02-branch-choices/)
+  assert.match(experience, /ar-ch02-branch-fork/)
+  assert.match(experience, /data-phrase-id=\{item\.id\}/)
+  assert.match(styles, /max-width: 320px/)
+  assert.match(styles, /ar-ch02-branch-choice/)
+  assert.match(styles, /ar-ch02-study \.ip-scene-setting img/)
+  assert.doesNotMatch(styles, /max-width: 130px/)
   assert.match(styles, /ar-ch02-table-scroll/)
   assert.match(styles, /ar-ch02-english/)
 

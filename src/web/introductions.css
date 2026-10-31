@@ -1860,18 +1860,27 @@
 }
 .ip-page .ar-ch02-study .ip-scene {
   max-width: none;
-  grid-template-columns: minmax(0, 140px) minmax(0, 1fr);
-  align-items: start;
-  gap: 14px;
-  padding: 13px 16px;
+  grid-template-columns: minmax(220px, 36%) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(14px, 2.4vw, 28px);
+  padding: clamp(16px, 2.4vw, 26px);
   background: #fafbfd;
   border: 1px solid #edf0f4;
-  border-radius: 12px;
+  border-radius: 14px;
+}
+.ip-page .ar-ch02-study .ip-scene-setting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
 }
 .ip-page .ar-ch02-study .ip-scene-setting img {
-  max-width: 130px;
-  opacity: .74;
-  filter: saturate(.72);
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  opacity: 1;
+  filter: none;
 }
 .ip-page .ar-ch02-study .ar-scene-heading {
   margin-bottom: 4px;
@@ -2072,7 +2081,16 @@
 .ip-page .ar-ch02-table-note strong { color: #778694; font-weight: 550; }
 @media (max-width: 720px) {
   .ip-page .ar-ch02-study .ip-scene { grid-template-columns: minmax(0, 1fr); }
-  .ip-page .ar-ch02-study .ip-scene-setting { display: none; }
+  .ip-page .ar-ch02-study .ip-scene-setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ip-page .ar-ch02-study .ip-scene-setting img {
+    width: min(100%, 300px);
+    max-height: 235px;
+    object-fit: contain;
+  }
   .ip-page .ar-ch02-study .ip-turn .ip-spoken .ip-phrase-text { font-size: 16px; }
   .ip-page .ar-ch02-study .ar-ch02-reply-columns { grid-template-columns: minmax(0, 1fr); }
   .ip-page .ar-ch02-table { min-width: 0; display: block; }
@@ -2101,4 +2119,169 @@
     font-size: 11.5px;
   }
   .ip-page .ar-ch02-english { font-size: 16px; }
+}
+
+
+/* CH02 dialogue: show two alternate replies as one conversational fork.
+   Based on the question-to-replies hierarchy used in Chapter 03 §04. */
+.ip-page .ar-ch02-study .ip-scene .ar-scene-heading {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin: 0;
+}
+.ip-page .ar-ch02-study .ip-scene .ip-scene-setting {
+  grid-column: 1;
+  grid-row: 2;
+}
+.ip-page .ar-ch02-study .ip-scene .ip-conversation {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  gap: 10px;
+  padding-top: 0;
+}
+.ip-page .ar-ch02-study .ip-scene-branching .ip-conversation {
+  gap: 12px;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch {
+  width: 100%;
+  min-width: 0;
+  padding: 3px 0 0;
+  border: 0;
+  background: transparent;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-speaker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #8392a4;
+  font-size: 11px;
+  font-weight: 540;
+  line-height: 1.45;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-speaker img {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-fork {
+  width: 100%;
+  position: relative;
+  height: 20px;
+  margin-top: 2px;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-fork::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 50%;
+  border-left: 1px solid #bac9dc;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-fork::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  width: 50%;
+  border-top: 1px solid #bac9dc;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-choice {
+  position: relative;
+  min-width: 0;
+  padding: 12px 11px;
+  border: 1px solid #dce5f4;
+  border-radius: 10px;
+  background: #f1f6ff;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-choice::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -11px;
+  height: 10px;
+  border-left: 1px solid #bac9dc;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-choice.is-focused {
+  outline: 2px solid #9ab4e5;
+  outline-offset: 2px;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-label {
+  display: block;
+  margin: 0 0 4px;
+  color: #8a9bb1;
+  font-size: 10px;
+  font-weight: 550;
+  line-height: 1.2;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-line p {
+  margin: 0;
+  flex: 1 1 auto;
+  color: #203751;
+  font-size: clamp(15px, 1.5vw, 17px);
+  font-weight: 620;
+  line-height: 1.46;
+  overflow-wrap: break-word;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-line .ip-audio {
+  margin: -1px -5px -4px 0;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-ja {
+  margin: 5px 0 0;
+  color: #8795a6;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.ip-page .ar-ch02-study .ar-ch02-branch-note {
+  margin: 8px 0 0;
+  color: #9aa7b4;
+  font-size: 11px;
+  line-height: 1.45;
+}
+@media (max-width: 880px) and (min-width: 721px) {
+  .ip-page .ar-ch02-study .ip-scene {
+    grid-template-columns: minmax(180px, 32%) minmax(0, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .ip-page .ar-ch02-study .ip-scene {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .ip-page .ar-ch02-study .ip-scene .ip-scene-setting {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .ip-page .ar-ch02-study .ip-scene .ip-conversation {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .ip-page .ar-ch02-study .ip-scene-setting img {
+    width: min(100%, 290px);
+    max-height: 220px;
+  }
+}
+@media (max-width: 430px) {
+  .ip-page .ar-ch02-study .ar-ch02-branch-choices {
+    gap: 7px;
+  }
+  .ip-page .ar-ch02-study .ar-ch02-branch-choice {
+    padding: 10px 8px;
+  }
+  .ip-page .ar-ch02-study .ar-ch02-branch-line p {
+    font-size: 15px;
+  }
 }

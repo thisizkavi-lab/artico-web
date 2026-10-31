@@ -363,9 +363,9 @@ function Study({ audioProps, focusedId }) {
                 .map((id) => introductionById[id])
                 .filter(Boolean)
                 .map((item) => ({ ...item, text: item.en, description: item.context, contextJa: item.context }))
-              const noteBlock = section.blocks[blockIndex + 1]?.type === 'note'
+              const noteBlock = block.note ?? (section.blocks[blockIndex + 1]?.type === 'note'
                 ? section.blocks[blockIndex + 1]
-                : undefined
+                : undefined)
               return (
                 <GreetingsPhraseShelf
                   key={blockIndex}

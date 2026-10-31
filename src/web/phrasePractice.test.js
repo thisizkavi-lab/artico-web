@@ -62,7 +62,7 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   )
   const ids = introductionPhrases.map((item) => item.id)
   const spoken = introductionPhrases.filter((item) => item.section !== 'words')
-  assert.equal(new Set(ids).size, 48)
+  assert.equal(new Set(ids).size, 52)
   // Conversations, phrase shelves and the reply prompt share one stable phrase bank.
   // Every spoken target must appear in Study and remain reachable in Practice.
   assert.ok(displayed.every(id => ids.includes(id)))
@@ -86,6 +86,10 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   assert.ok(introductionPhrases.some((item) => item.en === "Hi, I'm Daniel Reed, but I go by Dan. I'm on the research team. Nice to meet you."))
   assert.ok(introductionPhrases.some((item) => item.en === "Nice to meet you too, Dan. Please call me Satoshi."))
   assert.ok(introductionPhrases.some((item) => item.en === "Thanks, Satoshi. I'm looking forward to working with you."))
+  assert.ok(introductionPhrases.some((item) => item.en === "It's nice to meet you in person."))
+  assert.ok(introductionPhrases.some((item) => item.en === "It's great to put a face to the name."))
+  assert.ok(introductionPhrases.some((item) => item.en === 'Good to see you in person.'))
+  assert.ok(introductionPhrases.some((item) => item.en === "You too! I've been looking forward to this."))
   assert.ok(introductionPhrases.some((item) => item.en === "Likewise. Let's get started."))
   const restoredExpressions = [
     "Hi, I'm Alex.", 'Hello, my name is Alex.', "Hello, everyone. I'm Alex.",

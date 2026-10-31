@@ -1,17 +1,19 @@
-# Lesson 05 — Materials and fabrics: internet artwork sources
+# Lesson 05 — Materials and fabrics: artwork sources
 
-The nine cards use the following existing internet images. The normal Artico vocabulary cards remain in place: images contain no labels; English, Japanese, and audio stay in the card UI.
+The standard Artico vocabulary cards retain their English/Japanese labels and audio. For paper, glass, leather, and metal, the creator supplied specific reference photographs on 2026-10-31. Those photographs are embedded in `src/web/vocabularyMaterialArt.js` as optimized WebP data URLs so the four cards work without an external image host.
 
-| Vocabulary | Image | Source | License |
-|---|---|---|---|
-| material / materials (plural) | Material Texture Collage | [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=770960&picture=material-texture-collage) | CC0 |
-| denim | Washed blue denim | [Meshy texture](https://www.meshy.ai/textures/fabric/washed-blue-denim) | CC0 |
-| fabric | Natural linen weave | [Meshy texture](https://www.meshy.ai/textures/fabric/natural-linen-weave) | CC0 |
-| glass | Drink in transparent glass bottle | [SVG Repo](https://www.svgrepo.com/svg/166157/drink-in-transparent-glass-bottle) | CC0 |
-| leather | Brown leather | [Meshy texture](https://www.meshy.ai/textures/leather/brown-leather) | CC0 |
-| metal | Brushed stainless steel | [Meshy texture](https://www.meshy.ai/textures/metal/brushed-stainless-steel) | CC0 |
-| paper | Crumpled white paper | [Meshy texture](https://www.meshy.ai/textures/paper/crumpled-white-paper) | CC0 |
-| plastic | User-supplied photograph of a box filled with clear plastic bottles and food containers | `public/vocabulary-course/05/plastic-containers.webp` | User-provided; bundled locally |
-| silk | Textile silk background texture | [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=610688&picture=textile-silk-background-texture) | CC0 |
+| Vocabulary | Image | Provenance / license |
+|---|---|---|
+| material / materials (plural) | Material Texture Collage | [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=770960&picture=material-texture-collage), CC0 |
+| denim | Washed blue denim | [Meshy texture](https://www.meshy.ai/textures/fabric/washed-blue-denim), CC0 |
+| fabric | Natural linen weave | [Meshy texture](https://www.meshy.ai/textures/fabric/natural-linen-weave), CC0 |
+| glass | Stacked transparent glass sheets | Creator-supplied image; rights not verified |
+| leather | Rolls of brown leather | Creator-supplied image; rights not verified |
+| metal | Stacked metal rods and profiles | Creator-supplied image; rights not verified |
+| paper | Crumpled white paper | Creator-supplied watermarked stock image; **not cleared for public/commercial reuse** |
+| plastic | Clear plastic containers | Creator-supplied image at `public/vocabulary-course/05/plastic-containers.webp`; rights not independently verified |
+| silk | Silk textile texture | [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=610688&picture=textile-silk-background-texture), CC0 |
 
-Meshy confirms its texture images are CC0 and free for commercial use. Public Domain Pictures marks both photos CC0. The glass vector is CC0 from SVG Repo. The plastic card uses the photograph supplied by the Artico creator, converted to WebP and bundled locally. The remaining internet-sourced images are referenced directly from their public source hosts, so those cards need an internet connection to load.
+**Before commercial release:** replace the watermarked paper image with licensed or original art and verify reuse permission for the other creator-supplied photographs. Do not treat “creator supplied” as a license or as proof of ownership.
+
+The embedded uploads are converted to small WebP images for vocabulary-card display; the source uploads are not modified in the repository.

@@ -61,7 +61,7 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.deepEqual(ja.phrases.map(({ id, en, section }) => ({ id, en, section })), model.phrases.map(({ id, en, section }) => ({ id, en, section })))
   assert(ja.phrases.every((item) => japanese.test(item.context)))
   assert(ja.sections.every((section) => japanese.test(section.title)))
-  assert(ja.scenarios.every((item) => japanese.test(item.prompt)))
+  assert(ja.scenarios.every((item) => japanese.test(item.prompt) && japanese.test(item.sample)))
   assert.deepEqual(ja.scenarios.map((item) => item.id), model.scenarios.map((item) => item.id))
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p1').ja, 'アレックスです。キャシーの友人です。')
   assert.equal(ja.phrases.find((item) => item.id === 'ch02-p2').ja, 'アンナです。はじめまして。')

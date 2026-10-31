@@ -11,22 +11,22 @@
 <!-- source-scene: At a friend's gathering -->
 **友人の集まりでの会話**
 
-**Maya:** Hi, I'm Maya. I'm a friend of Jordan's.  
-**Eli:** I'm Eli. Nice to meet you.  
-**Maya:** You too.  
+**Alex:** Hi, I'm Alex. I'm a friend of Cassie's.  
+**Anna:** I'm Anna. Nice to meet you.  
+**Alex:** You too.  
 
-Mayaは名前に続けて、Jordanとのつながりを伝えています。**A friend of Jordan's** は「Jordanの友人」という意味です。**Nice to meet you** は、紹介を受けて「お会いできてうれしいです」という気持ちを伝えます。**You too** は「こちらも同じです」と、その気持ちを返す短い言い方です。全体の形の **Nice to meet you too** でも返せます。
+Alexは名前に続けて、Cassieとのつながりを伝えています。**A friend of Cassie's** は「Cassieの友人」という意味です。**Nice to meet you** は、紹介を受けて「お会いできてうれしいです」という気持ちを伝えます。**You too** は「こちらも同じです」と、その気持ちを返す短い言い方です。全体の形の **Nice to meet you too** でも返せます。
 
 自己紹介に添えられる情報には、次のようなものがあります。
 
-- **I work with Jordan.** は「Jordanと一緒に働いています」という意味です。同僚だと分かります。
+- **I work with Cassie.** は「Cassieと一緒に働いています」という意味です。同僚だと分かります。
 - **I'm on the design team.** は、デザインのチームに所属していると伝えます。
 - **I'm a teacher.** は、自分の仕事が教師だと伝えます。
 - **I'm here for the workshop.** は、その場に来た理由がワークショップへの参加だと伝えます。
 
-経歴をすべて話す必要はありません。以前会ったかどうか確信がない場合は、**I don't think we've met. I'm Maya** で自己紹介を始められます。「まだお会いしていないと思うのですが」と、相手が覚えている可能性も残す言い方です。
+経歴をすべて話す必要はありません。以前会ったかどうか確信がない場合は、**I don't think we've met. I'm Alex** で自己紹介を始められます。「まだお会いしていないと思うのですが」と、相手が覚えている可能性も残す言い方です。
 
-画面用原稿にも載っている関連例として、**My name is Maya.** は名前を伝えるもう一つの言い方です。**Nice to meet you too.** は、相手の初対面のあいさつに対する、より省略のない返答です。画面では **I don't think we've met. I'm Maya.** という、一文目と名前を最後の句点まで含めた形も示されています。
+画面用原稿にも載っている関連例として、**My name is Alex.** は名前を伝えるもう一つの言い方です。**Nice to meet you too.** は、相手の初対面のあいさつに対する、より省略のない返答です。画面では **I don't think we've met. I'm Alex.** という、一文目と名前を最後の句点まで含めた形も示されています。
 
 <!-- source-heading: Study: A professional introduction -->
 ## 学習: 仕事に関わる自己紹介
@@ -34,12 +34,12 @@ Mayaは名前に続けて、Jordanとのつながりを伝えています。**A 
 <!-- source-scene: At the start of a project meeting -->
 **プロジェクトの会議が始まる場面**
 
-**Priya:** Hello, I'm Priya Shah. I'm the project manager.  
+**Satoshi:** Hello, I'm Satoshi. I'm the project manager.  
 **Daniel:** Daniel Reed. It's a pleasure to meet you.  
-**Priya:** Likewise. Please call me Priya.  
-**Daniel:** Thanks, Priya. I'm on the research team.  
+**Satoshi:** Likewise. Please call me Satoshi.  
+**Daniel:** Thanks, Satoshi. I'm on the research team.  
 
-Priyaは氏名と役割を伝えています。Danielの **It's a pleasure to meet you** は、初対面のうれしさを少し改まった形で伝える表現です。**Likewise** は「私も同じ気持ちです」に当たります。**Please call me Priya** は、どの名前で呼んでほしいかを相手に知らせます。Danielはその名前を使い、研究チームに所属していると続けています。
+Satoshiは氏名と役割を伝えています。Danielの **It's a pleasure to meet you** は、初対面のうれしさを少し改まった形で伝える表現です。**Likewise** は「私も同じ気持ちです」に当たります。**Please call me Satoshi** は、どの名前で呼んでほしいかを相手に知らせます。Danielはその名前を使い、研究チームに所属していると続けています。
 
 **I go by Dan** も、普段使っている名前を伝える言い方です。「Danと呼ばれています」「普段はDanを使っています」という意味です。どこかへ行く意味ではありません。画面用原稿では、独立した関連例 **I go by Dan.** として示されています。
 
@@ -50,21 +50,21 @@ Priyaは氏名と役割を伝えています。Danielの **It's a pleasure to me
 <!-- source-heading: Study: Connect two people -->
 ## 学習: 二人を引き合わせる
 
-**Maya:** Eli, this is my colleague, Sam. Sam, this is Eli.  
-**Eli:** Nice to meet you, Sam.  
-**Sam:** You too. How do you know Maya?  
-**Eli:** We take a photography class together.  
+**Alex:** Anna, this is my colleague, Sam. Sam, this is Anna.  
+**Anna:** Nice to meet you, Sam.  
+**Sam:** You too. How do you know Alex?  
+**Anna:** We take a photography class together.  
 
-Mayaは、Eliには同僚のSamを、SamにはEliを紹介しています。両方の名前を言うことで、二人とも紹介を受けられます。**How do you know Maya?** は、Mayaとどのようなつながりがあるかを尋ねています。Eliは、一緒に写真の授業を受けていると答えています。
+Alexは、Annaには同僚のSamを、SamにはAnnaを紹介しています。両方の名前を言うことで、二人とも紹介を受けられます。**How do you know Alex?** は、Alexとどのようなつながりがあるかを尋ねています。Annaは、一緒に写真の授業を受けていると答えています。
 
 **This is...** は、「こちらは……です」という紹介の形です。友人、パートナー、親族、同僚などを紹介できます。**I'd like you to meet...** は「……を紹介したいです」という別の形です。画面用原稿の関連例 **I'd like you to meet Sam.** では、紹介する人の名前まで入れています。
 
 すでに知り合いかもしれない場合は、**Have you met Sam?** で、Samに会ったことがあるかを先に確認できます。
 
-**Maya:** Have you met Sam?  
-**Eli:** Yes, we met at the last workshop. Good to see you again, Sam.  
+**Alex:** Have you met Sam?  
+**Anna:** Yes, we met at the last workshop. Good to see you again, Sam.  
 
-Eliは、前のワークショップで会ったと答えています。その情報に合わせて、再会のあいさつに進みます。初対面だと決めつけて続けないことが大切です。
+Annaは、前のワークショップで会ったと答えています。その情報に合わせて、再会のあいさつに進みます。初対面だと決めつけて続けないことが大切です。
 
 紹介には、二人が会話を続けられる手掛かりを添えます。一緒にしている活動は、その一例です。紹介の直後に、個人的な質問をしなければならないわけではありません。
 

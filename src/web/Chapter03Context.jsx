@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 import { useLanguage } from './Language'
 import Glyph from './Glyph'
-import { approvedAudio } from './components'
+import { speakKokoroSpeech } from './kokoroSpeech'
 import './chapter03-context.css'
 
 // Chapter 03 teaches discourse functions through the preceding turn.
@@ -150,18 +151,16 @@ const portrait = (speaker) => `${import.meta.env.BASE_URL}assets/course/portrait
 
 function Speak({ lines, audioProps, kind = 'exchange' }) {
   const { language } = useLanguage()
-  // Future clips should be registered by phrase ID in approvedAudio.
-  // Until then, no device-generated speech is used in Social Fluency.
-  const phrase = lines.join(' ')
-  const matchingId = Object.keys(audioProps?.byId ?? {}).find(id => audioProps.byId[id]?.en === phrase)
-  const ready = Boolean(matchingId && approvedAudio[matchingId])
+  function play() {
+    audioProps?.audio?.stop?.()
+    void speakKokoroSpeech(lines.join(' '), { rate: kind === 'word' ? 0.82 : 0.89 })
+  }
   return <button type="button" className={kind === 'word' ? 'ar-c03-sound' : 'ar-c03-listen'}
-    disabled={!ready}
-    onClick={() => { if (ready) audioProps?.onPlay?.(matchingId) }}
-    title={ready
-      ? (kind === 'word' ? (language === 'ja' ? '表現だけを聞く' : 'Hear the expression') : (language === 'ja' ? '会話を聞く' : 'Play the exchange'))
-      : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}
-    aria-label={ready ? (kind === 'word' ? `Hear ${phrase}` : 'Play the exchange') : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}>
+    onClick={play}
+    title={kind === 'word' ? (language === 'ja' ? '表現だけを聞く' : 'Hear the expression') : (language === 'ja' ? '会話を聞く' : 'Play the exchange')}
+    aria-label={kind === 'word'
+      ? (language === 'ja' ? `${lines.join(' ')} の発音を聞く` : `Hear ${lines.join(' ')}`)
+      : (language === 'ja' ? '会話を再生する' : 'Play the exchange')}>
     <Glyph name={kind === 'word' ? 'speaker' : 'play'} size={kind === 'word' ? 18 : 17}/>
   </button>
 }
@@ -214,6 +213,9 @@ function SectionIntro({ children }) { return <p className="ar-c03-intro">{childr
 
 export default function Chapter03StudySection({ sectionIndex, audioProps }) {
   const { language } = useLanguage()
+  useEffect(() => () => {
+    if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+  }, [])
   if (sectionIndex === 0) return <div className="ar-c03 ar-c03-section-0">
     <SectionIntro>{language === 'ja'
       ? '相手の言葉を読んでから、返事の中で短い表現が何をしているか見てみましょう。'

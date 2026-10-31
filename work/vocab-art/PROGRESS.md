@@ -18,7 +18,7 @@
 | **6** | `34, 35, 36, 38, 39, 40, 42, 43` | 372 | 1 | 0 | Pending | `34:chef` anchored |
 | **7** | `13, 18, 20, 21, 23, 24, 25, 26, 27` | 388 | 0 | 0 | Pending | People, education & media |
 | **8** | `58, 59, 60, 61, 63, 64, 65, 66, 67` | 535 | 0 | 0 | Pending | Free time, music, movies & sports |
-| **9** | `3, 5, 6, 7, 8, 41, 53, 75, 76, 77, 78` | 498 | 0 | 0 | Pending | Time, dimensions, idioms, discourse, science |
+| **9** | `3, 5, 6, 7, 8, 41, 53, 75, 76, 77, 78` | 498 | 41 | 8 | **In Progress** | Lesson 07 complete; remaining lessons cover time, dimensions, idioms, discourse & science |
 | **10** | Legacy Art Cleanup | — | — | — | Pending | Run only after user approves completed course |
 
 ## Completed Lesson Log
@@ -26,3 +26,5 @@
 | Date | Lesson | SVG Count | Text-Only Count | Verified Contact Sheet | Notes |
 |---|---|---:|---:|---|---|
 | 2026-10-29 | Gold Showcase | 8 | 0 | `work/vocab-art/review/gold-showcase.png` | Anchors across 7 archetypes verified via `read_file` |
+
+| 2026-10-31 | 07 — Sharing Information | 41 | 8 | Local chapter bundle | 41 bespoke editorial SVGs; 8 text-only terms retained where imagery would be misleading; Pages workflow compiles and verifies 608×384 WebP assets |

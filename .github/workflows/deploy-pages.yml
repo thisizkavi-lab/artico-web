@@ -52,6 +52,16 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
+      - name: Compile Lesson 07 Sharing Information SVG illustrations
+        run: |
+          mkdir -p work/vocab-art/svg/07
+          for bundle in work/vocab-art/source-bundles/lesson07-svg-source-*.tar.gz; do
+            tar -xzf "$bundle" -C work/vocab-art/svg/07
+          done
+          python3 -m pip install --quiet resvg-py pillow
+          python3 scripts/svg_vocab_compiler.py build --lesson 7 --debug-grid
+          test "$(find public/vocabulary-course/07 -maxdepth 1 -name '*.webp' -type f | wc -l)" -eq 41
+
       - name: Install ten Lesson 06 positive-opinion WebP illustrations
         run: |
           mkdir -p public/vocabulary-course/06
@@ -181,6 +191,21 @@ jobs:
 
       - name: Build site
         run: pnpm run build
+
+      - name: Verify Lesson 07 Sharing Information illustrations reach Pages
+        run: |
+          test "$(find dist/vocabulary-course/07 -maxdepth 1 -name '*.webp' -type f | wc -l)" -eq 41
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          files = sorted(Path('dist/vocabulary-course/07').glob('*.webp'))
+          assert len(files) == 41, len(files)
+          for path in files:
+              assert path.stat().st_size <= 80 * 1024, path.name
+              with Image.open(path) as image:
+                  assert image.size == (608, 384), (path.name, image.size)
+          print('Verified 41 Lesson 07 illustrations at 608x384')
+          PY
 
       - name: Verify Lesson 06 positive-opinion WebP illustrations reach Pages
         run: |

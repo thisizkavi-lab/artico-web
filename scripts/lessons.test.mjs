@@ -242,6 +242,7 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.match(styles, /ar-ch02-phrase-shelf/)
   assert.match(styles, /ar-ch02-phrase-art/)
   assert.match(styles, /ar-ch02-reply-question > \.ar-ch02-reply-ja/)
+  assert.match(styles, /ar-ch02-replies-embedded/)
   const images = (filename) => existsSync(new URL(`public/assets/course/${filename}`, root))
   const blocks = introductionSections.flatMap((section) => section.blocks)
   const phraseBlocks = blocks.filter((block) => block.type === 'phrases')
@@ -254,10 +255,16 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.equal(workSection.title, 'Meet someone at work')
   assert.equal(connectSection.title, 'Introduce two people')
   assert.equal(introduceSection.blocks.find((block) => block.type === 'conversation')?.title, 'At a friend’s gathering')
-  assert.equal(introduceSection.blocks.find((block) => block.type === 'phrases')?.title, 'Start with your name')
+  assert.equal(introduceSection.blocks.find((block) => block.type === 'phrases')?.title, 'Ways to introduce yourself')
   assert.ok(introduceSection.blocks.findIndex((block) => block.type === 'phrases') <
     introduceSection.blocks.findIndex((block) => block.type === 'conversation'))
-  assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [4, 5, 1, 2])
+  assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [3, 5, 1, 2])
+  assert.deepEqual(introduceSection.blocks.find((block) => block.type === 'phrases')?.phrases, ['ch02-p27', 'ch02-p4', 'ch02-p38'])
+  assert.equal(introductionById['ch02-p27'].en, "Hi, I'm Alex.")
+  assert.equal(introductionById['ch02-p4'].en, 'Hello, my name is Alex.')
+  assert.equal(introductionById['ch02-p38'].en, 'Hello, everyone. I\'m Alex.')
+  assert.equal(introductionById['ch02-p35'].en, 'Hello, everyone. This is Alex.')
+  assert.equal(introductionById['ch02-p36'].en, 'Let me introduce Alex.')
   assert.equal(workSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
   assert.ok(introductionById['ch02-p12'].en.includes('I go by Dan.'))
   assert.ok(!introductionById['ch02-p14'].en.includes('I go by Dan.'), 'Preferred-name expression appears once in the dialogue')
@@ -275,15 +282,18 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
     assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
   }
   const replyBlocks = blocks.filter((block) => block.type === 'reply-alternatives')
-  assert.equal(replyBlocks.length, 1)
-  assert.equal(replyBlocks[0].promptId, 'ch02-p30')
-  assert.deepEqual(replyBlocks[0].choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
-  assert.ok(introduceSection.blocks.includes(replyBlocks[0]), 'Reply alternatives belong in the gathering introduction')
+  const gathering = conversationBlocks.find((block) => block.title === 'At a friend’s gathering')
+  assert.equal(replyBlocks.length, 0, 'Reply alternatives are not a separate card')
+  assert.equal(gathering.replyAlternatives.title, 'Two ways to reply')
+  assert.equal(gathering.replyAlternatives.promptId, 'ch02-p30')
+  assert.deepEqual(gathering.replyAlternatives.choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
   assert.ok(blocks.every((block) => !block.collapsed))
   const displayed = new Set(blocks.flatMap((block) => [
     ...(block.phrases ?? []),
     ...(block.choices ?? []).map((choice) => choice.id),
     ...(block.promptId ? [block.promptId] : []),
+    ...(block.replyAlternatives?.choices ?? []).map((choice) => choice.id),
+    ...(block.replyAlternatives?.promptId ? [block.replyAlternatives.promptId] : []),
   ]))
   const spoken = Object.values(introductionById).filter((item) => item.section !== 'words').map((item) => item.id)
   assert.deepEqual([...displayed].sort(), spoken.sort())

@@ -52,7 +52,7 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
-      - name: Fetch vetted CC0 Lesson 04 illustration files
+      - name: Download and verify 58 curated Pexels Lesson 04 photos
         run: python3 scripts/fetch_lesson04_public_domain.py
 
       - name: Cache Artico handwriting worksheets
@@ -182,14 +182,14 @@ jobs:
           test "$(find dist/audio/tongue-twisters/ga-v01 -maxdepth 1 -name '*.mp3' -type f | wc -l)" -eq 267
           test -s dist/audio/tongue-twisters/ga-v01/tt-24-betty-botter--study-full--natural--en-us--v01.mp3
 
-      - name: Verify all selected Lesson 04 artwork is published
+      - name: Verify all 58 curated Lesson 04 photos are included
         run: |
           python3 - <<'PY'
           import json,pathlib
           j=json.loads(pathlib.Path('src/web/vocabularyDailyRoutineSources.json').read_text())
           for term,e in j['entries'].items():
             f=pathlib.Path('dist/vocabulary-curated-04')/(e['file']+'.webp')
-            assert f.is_file() and f.stat().st_size>2500, term
+            assert f.is_file() and f.stat().st_size>4000, term
           print(len(j['entries']),'selected illustrations verified')
           PY
 

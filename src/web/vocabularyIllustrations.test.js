@@ -378,3 +378,17 @@ test('Lesson 05 materials use uploaded photos, curated images, and the supplied 
   assert.ok(visual.indexOf('vocabularyMaterialArt(term, chapter)')<visual.indexOf('vocabularyDimensionsArt(term, chapter)'),
     'Material images must override legacy Mulberry symbols before fallback artwork')
 })
+
+
+test('Lesson 05 age and brand use dedicated, full-scene course illustrations',()=>{
+  const manifest=JSON.parse(load('vocabularyCourseArt.json'))
+  assert.equal(manifest.entries['5:age'],'05/age')
+  assert.equal(manifest.entries['5:brand'],'05/brand')
+  const courseArt=load('vocabularyCourseArt.js')
+  assert.ok(courseArt.includes("type: chapter === 5 && (term === 'age' || term === 'brand') ? 'library-png' : 'png'"))
+  for(const term of ['age','brand']){
+    const file=new URL('../../public/vocabulary-course/05/'+term+'.webp',import.meta.url)
+    assert.ok(existsSync(file),'Missing '+term+' course illustration')
+    assert.ok(statSync(file).size<=80*1024,'Keep '+term+' illustration optimized for vocabulary cards')
+  }
+})

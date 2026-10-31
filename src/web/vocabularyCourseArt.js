@@ -15,7 +15,7 @@ export function vocabularyCourseArt(term, chapter) {
   const file = manifest.entries[key]
   if (!file) return null
   return {
-    type: 'png',
+    type: chapter === 5 && (term === 'age' || term === 'brand') ? 'library-png' : 'png',
     src: import.meta.env.BASE_URL + 'vocabulary-course/' + file + '.webp',
   }
 }

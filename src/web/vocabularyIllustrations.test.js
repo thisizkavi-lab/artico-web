@@ -299,5 +299,5 @@ test('Chapter 98 has independent, bottom-right sound controls in every card layo
   assert.match(countries, /className="vl01-country-audio"/)
   assert.match(countries, /<KokoroSpeakButton text=\{word\.en\}/)
   assert.match(countries, /<KokoroSpeakButton text=\{phrase\.en\}/)
-  assert.match(speech, /speakKokoroSpeech\(text,/)
+  assert.match(speech, /speakKokoroSpeech\(spoken,/)
 })

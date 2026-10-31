@@ -1456,8 +1456,8 @@
   display: block;
   width: 100%;
   height: auto;
-  max-width: 490px;
-  max-height: 330px;
+  max-width: 300px;
+  max-height: 205px;
   object-fit: contain;
   object-position: center bottom;
   image-rendering: auto;
@@ -1469,7 +1469,7 @@
   display: block;
   height: auto;
   min-height: 0;
-  max-height: 305px;
+  max-height: 215px;
   width: 100%;
   object-fit: contain;
   object-position: center bottom;
@@ -1491,15 +1491,15 @@
     min-height: 0;
   }
   .ip-page .ar-ch02-study .ar-reference-stage img {
-    max-height: 220px;
-    max-width: 420px;
+    max-height: 195px;
+    max-width: 290px;
   }
 }
 @media(max-width:620px) {
   .ip-page .ar-ch02-study .ar-reference-stage img {
-    max-height: 180px;
+    max-height: 170px;
   }
   .ip-page .ar-ch02-study .ip-scene-setting img {
-    max-height: 210px;
+    max-height: 190px;
   }
 }

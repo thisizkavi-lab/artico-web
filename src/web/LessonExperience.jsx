@@ -845,7 +845,7 @@ function Experience({ route, learning, update, save, notify }) {
             {language === 'ja' && titleJa && <span className="ip-title-ja" lang="ja">{titleJa}</span>}
           </h1>
         </div>
-        <p>{subtitle}</p>
+        <p>{id === '01' && language === 'ja' ? '英語であいさつをし、相手の調子を尋ね、久しぶりに会った人と話す練習をします。' : subtitle}</p>
       </header>
       <div className="ip-mode-bar">
         <nav className="ip-mode-switch" aria-label={t("Lesson mode")}>
@@ -869,7 +869,7 @@ function Experience({ route, learning, update, save, notify }) {
                   }}
                 >
                   {String(index + 1).padStart(2, '0')}
-                  <span>{section.short}</span>
+                  <span>{id === '01' && language === 'ja' ? ({ open: 'あいさつする', 'check-in': '調子を尋ねる', reunion: '再会する', casual: 'くだけた表現' }[section.id] || section.short) : section.short}</span>
                 </button>
               ))}
             </nav>

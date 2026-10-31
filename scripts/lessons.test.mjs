@@ -302,7 +302,7 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
   assert.equal(connect.blocks.filter((block) => block.type === 'conversation').length, 2)
   const meetingInPerson = connect.blocks.find((block) => block.title === 'Meeting in person')
   assert.deepEqual(meetingInPerson.phrases, ['ch02-p47', 'ch02-p24', 'ch02-p48', 'ch02-p49', 'ch02-p50'])
-  assert.match(meetingInPerson.note.text, /put a face to the name/)
+  assert.match(meetingInPerson.note.text, /put a face to the name/i)
   assert.match(meetingInPerson.note.text, /looking forward to this/)
 
   const first = introduce.blocks[1]

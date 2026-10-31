@@ -26,16 +26,16 @@ export const introductionPhrases = [
   phrase(8, "I'm a teacher.", 'Identify your job.', 'introduce'),
   phrase(9, "I'm here for the workshop.", 'Explain why you are at the event.', 'introduce'),
   phrase(10, "I don't think we've met. I'm Alex.", 'Start an introduction when you are unsure whether you have met before.', 'introduce'),
-  phrase(11, "Hi, I'm Satoshi Tanaka. I'm the project manager.", 'Introduce yourself and state your role at a project meeting.', 'work', {
+  phrase(11, "Hello, I'm Satoshi. I'm the project manager.", 'Give your name and role at a project meeting.', 'work', {
     speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
   }),
-  phrase(12, "Hi, I'm Daniel Reed, but I go by Dan. I'm on the research team. Nice to meet you.", 'Give your full name, explain the name you use, identify your team, and greet the other person.', 'work', {
+  phrase(12, "Daniel Reed. I go by Dan. It's a pleasure to meet you.", 'Give your full name, explain the name you normally use, and greet the other person.', 'work', {
     speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
   }),
-  phrase(13, 'Nice to meet you too, Dan. Please call me Satoshi.', 'Return the greeting and offer the name you prefer colleagues to use.', 'work', {
+  phrase(13, 'Likewise. Please call me Satoshi.', 'Return the greeting and tell the other person your preferred name.', 'work', {
     speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
   }),
-  phrase(14, "Thanks, Satoshi. I'm looking forward to working with you.", 'Thank Satoshi and express that you are pleased to begin working together.', 'work', {
+  phrase(14, "Thanks, Satoshi. I'm on the research team.", 'Acknowledge the name Satoshi uses and identify your team.', 'work', {
     speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
   }),
   phrase(15, 'I go by Dan.', 'Tell someone the name you normally use, often after giving your full name.', 'work'),
@@ -76,14 +76,24 @@ export const introductionPhrases = [
   phrase(36, 'Let me introduce Alex.', 'A clear way to introduce someone before adding a little more detail.', 'connect'),
   phrase(38, "Hello, everyone. I'm Alex.", 'Introduce yourself to a group.', 'introduce'),
   phrase(37, 'What should I call you?', 'Ask someone which name they prefer you to use.', 'work'),
-  phrase(39, "Likewise. Let's get started.", 'Return the positive feeling, then move into the work.', 'work', {
+  phrase(39, "Hi, I'm Satoshi Tanaka. I'm the project manager.", 'Introduce yourself and state your role at a project meeting.', 'work', {
     speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
   }),
-  phrase(40, 'I look forward to working with you.', 'A slightly more formal version, often used in professional messages.', 'work'),
-  phrase(41, "I'm looking forward to it.", 'Use this when the upcoming event or plan is already clear.', 'work'),
-  phrase(42, "I'm on the research team.", 'Identify the team you work on.', 'work'),
-  phrase(43, "I'm looking forward to working with you.", 'A natural way to express that you are pleased to begin working together.', 'work'),
-  phrase(44, "I'm the project manager.", 'State your role in a project.', 'work'),
+  phrase(40, "Hi, I'm Daniel Reed, but I go by Dan. I'm on the research team. Nice to meet you.", 'Give your full name, explain the name you use, identify your team, and greet the other person.', 'work', {
+    speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
+  }),
+  phrase(41, 'Nice to meet you too, Dan. Please call me Satoshi.', 'Return the greeting and offer the name you prefer colleagues to use.', 'work', {
+    speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
+  }),
+  phrase(42, "Thanks, Satoshi. I'm looking forward to working with you.", 'Thank Satoshi and express that you are pleased to begin working together.', 'work', {
+    speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
+  }),
+  phrase(43, "Likewise. Let's get started.", 'Return the positive feeling, then move into the work.', 'work', {
+    speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
+  }),
+  phrase(44, "I'm looking forward to working with you.", 'A natural way to express that you are pleased to begin working together.', 'work'),
+  phrase(45, 'I look forward to working with you.', 'A slightly more formal version, often used in professional messages.', 'work'),
+  phrase(46, "I'm looking forward to it.", 'Use this when the upcoming event or plan is already clear.', 'work'),
   {
     id: 'ch02-v0',
     en: 'friend',
@@ -209,16 +219,16 @@ export const introductionSections = [
       },
       conversation(
         'Meeting the project team',
-        [11, 12, 13, 14, 39],
+        [39, 40, 41, 42, 43],
         'ch02-scene-project-meeting.webp',
         'Satoshi and Daniel introducing themselves at a project meeting.',
       ),
-      phraseShelf([15, 33, 37], 'Names and introductions'),
-      phraseShelf([44, 42, 7, 8], 'Talking about your work'),
-      phraseShelf([43, 40, 41, 32], 'Starting a working relationship', undefined, {
+      phraseShelf([15, 33, 37, 13], 'Names and introductions'),
+      phraseShelf([11, 14, 7, 8], 'Talking about your work'),
+      phraseShelf([44, 45, 46, 32], 'Starting a working relationship', undefined, {
         text: 'Use “I’m looking forward to working with you” when you are about to start working together. “I’m looking forward to it” refers to a specific plan or event already mentioned. This is a natural expression of goodwill, not a word-for-word translation of よろしくお願いします.',
       }),
-      phraseShelf([31, 16], 'More formal greetings', undefined, {
+      phraseShelf([12, 31, 16], 'More formal greetings', undefined, {
         text: '“It’s a pleasure to meet you” is a more formal alternative to “Nice to meet you.” “How do you do?” is traditional and uncommon in everyday American English; recognize it, but do not treat it as a required greeting.',
       }),
     ],

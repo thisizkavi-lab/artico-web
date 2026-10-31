@@ -373,9 +373,11 @@ function Study({ audioProps, focusedId }) {
           </div>
           {lessonId === '03'
             ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
-            : (lessonId === '04' || lessonId === '05')
+            : lessonId === '04'
               ? <ChapterPhraseStudySection section={section} audioProps={audioProps} focusedId={focusedId} />
-              : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
+              : lessonId === '05'
+                ? <Chapter05PhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
+                : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -528,6 +530,114 @@ function Study({ audioProps, focusedId }) {
             )
           })}
         </section>
+      ))}
+    </div>
+  )
+}
+
+const chapter05PhraseIllustrations = [
+  {
+    file: 'ch05-01-likes-dislikes.png',
+    alt: 'A woman choosing between the outdoor photography and hiking she loves and an activity she dislikes',
+  },
+  {
+    file: 'ch05-02-asking-opinions.png',
+    alt: 'Three people looking at an interior design plan and sharing their opinions',
+  },
+  {
+    file: 'ch05-03-choosing-options.png',
+    alt: 'A woman comparing eating pasta at a restaurant with taking a burger meal home',
+  },
+  {
+    file: 'ch05-04-strong-reactions.png',
+    alt: 'One person delighted by a surprise gift while another reacts with shock',
+  },
+]
+
+function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
+  const { byId, SourceContent } = useLesson()
+  const { language } = useLanguage()
+  const intro = section.blocks.find((block) => block.type === 'source' && block.source.type === 'explanation')
+  const table = section.blocks.find((block) => block.type === 'source' && block.source.type === 'table')
+  const conversation = section.blocks.find((block) => block.type === 'conversation')
+  const notes = section.blocks.filter((block) =>
+    block.type === 'source' &&
+    block.source.type === 'explanation' &&
+    block !== intro,
+  )
+  if (!table || !conversation) return null
+  const illustration = chapter05PhraseIllustrations[sectionIndex] ?? chapter05PhraseIllustrations[0]
+  const phraseIds = (table.source.phraseCells ?? []).map((row) => row[0]).filter(Boolean)
+  return (
+    <div className="ar-phrase-study ar-ch05-phrase-study">
+      {intro && <SourceContent block={intro.source} audioProps={audioProps} focusedId={focusedId} examples={false} />}
+      <div className="ar-ch05-phrase-card">
+        <div className="ar-ch05-illustration">
+          <img
+            src={art(illustration.file)}
+            alt={illustration.alt}
+            width="1774"
+            height="887"
+            loading="lazy"
+            onError={(event) => {
+              if (!conversation.art || event.currentTarget.dataset.fallback === 'true') return
+              event.currentTarget.dataset.fallback = 'true'
+              event.currentTarget.src = art(conversation.art)
+            }}
+          />
+        </div>
+        <div
+          className="ar-ch05-phrase-cloud"
+          aria-label={language === 'ja' ? 'このセクションで学ぶ表現' : 'Phrases in this section'}
+        >
+          {phraseIds.map((id) => {
+            const item = byId[id]
+            if (!item) return null
+            return (
+              <div className="ar-ch05-phrase-chip" key={id}>
+                <span lang="en">{item.en}</span>
+                <PhraseAudio item={item} {...audioProps} />
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <section className="ar-phrase-table">
+        <h3>{language === 'ja' ? '使えるフレーズ' : 'Useful phrases'}</h3>
+        <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
+      </section>
+      <section className="ar-phrase-example">
+        <h3>{language === 'ja' ? '会話例' : 'Example conversation'}</h3>
+        <div className="ar-phrase-example-lines">
+          {conversation.turns.map((turn, index) => {
+            const item = byId[turn.id]
+            if (!item) return null
+            const outgoing = conversationSide(
+              [...new Set(conversation.turns.map((entry) => entry.speaker))],
+              turn.speaker,
+              index,
+            ) === 'outgoing'
+            return (
+              <div className={`ar-phrase-example-row ${outgoing ? 'is-outgoing' : 'is-incoming'}`} key={turn.id}>
+                {turn.portrait && <img className="ar-phrase-example-avatar" src={art(turn.portrait)} alt="" width="30" height="30" />}
+                <div className="ar-phrase-example-bubble">
+                  <span className="ar-phrase-example-speaker">{turn.speaker}</span>
+                  <p lang="en">{(turn.runs ?? [{ text: item.en }]).map((run, runIndex) => run.emphasis
+                    ? <strong key={runIndex}>{run.text}</strong>
+                    : <span key={runIndex}>{run.text}</span>)}</p>
+                  {language === 'ja' && item.ja && <p className="ar-phrase-example-ja" lang="ja">{item.ja}</p>}
+                  <PhraseAudio item={item} {...audioProps} />
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+      {notes.map((note, index) => (
+        <aside className="ar-phrase-note" key={note.id ?? index}>
+          <span className="ar-phrase-note-label">{language === 'ja' ? 'ポイント' : 'Keep in mind'}</span>
+          <SourceContent block={note.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
+        </aside>
       ))}
     </div>
   )

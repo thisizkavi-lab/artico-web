@@ -283,8 +283,8 @@ const originalIntroductionSections = [
  */
 const [self, work, connect, names] = originalIntroductionSections
 const sceneInContext = (scene, explanation, sceneArt) => ({
-  ...(sceneArt ? { art: sceneArt } : {}),
   ...scene,
+  ...(sceneArt ? { art: sceneArt } : {}),
   collapsed: true,
   contextText: explanation?.text,
 })

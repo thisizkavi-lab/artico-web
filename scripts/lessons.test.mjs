@@ -219,30 +219,37 @@ test('all foundation topics and existing pronunciation recordings remain availab
   }
 })
 
-test('Chapter 02 illustrations are wired to phrase cards and context conversations', () => {
-  const shelf = readFileSync(new URL('src/web/ReferencePhraseShelf.jsx', root), 'utf8')
+test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real conversations', () => {
+  const phraseShelf = readFileSync(new URL('src/web/GreetingsReferenceStudy.jsx', root), 'utf8')
   const experience = readFileSync(new URL('src/web/LessonExperience.jsx', root), 'utf8')
-  assert.match(shelf, /note, sceneArt/)
-  assert.match(shelf, /Boolean\(sceneArt\)/)
-  assert.match(shelf, /art\(sceneArt \|\| current\.art\)/)
-  assert.match(experience, /sceneArt=\{lessonId === '02' \? block\.sceneArt : undefined\}/)
+  const styles = readFileSync(new URL('src/web/social-reference-study.css', root), 'utf8')
+  assert.match(phraseShelf, /export function PhraseShelf/)
+  assert.match(phraseShelf, /sceneArt/)
+  assert.match(phraseShelf, /ar-ch02-phrase-shelf/)
+  assert.match(experience, /GreetingsPhraseShelf/)
+  assert.match(experience, /ar-ch02-study/)
+  assert.doesNotMatch(experience, /ar-study-example/)
+  assert.match(styles, /ar-ch02-phrase-shelf/)
+  assert.match(styles, /ar-ch02-phrase-art/)
   const images = (filename) => existsSync(new URL(`public/assets/course/${filename}`, root))
-  let phraseCards = 0
-  let contextScenes = 0
-  for (const section of introductionSections) {
-    for (const block of section.blocks) {
-      if (block.type === 'phrases') {
-        assert.ok(block.sceneArt?.endsWith('.png'), `Missing Chapter 02 phrase image: ${section.id}`)
-        assert.ok(images(block.sceneArt), `Missing on-disk image: ${block.sceneArt}`)
-        phraseCards++
-      }
-      if (block.type === 'conversation' && block.collapsed) {
-        assert.ok(block.art?.endsWith('.png'), `Missing Chapter 02 context image: ${section.id}`)
-        assert.ok(images(block.art), `Missing on-disk image: ${block.art}`)
-        contextScenes++
-      }
-    }
+  const blocks = introductionSections.flatMap((section) => section.blocks)
+  const phraseBlocks = blocks.filter((block) => block.type === 'phrases')
+  const conversationBlocks = blocks.filter((block) => block.type === 'conversation')
+  assert.equal(phraseBlocks.length, 9)
+  assert.equal(conversationBlocks.length, 4)
+  assert.ok(blocks.every((block) => !block.collapsed), 'No Chapter 02 dropdown conversations')
+  assert.ok(!blocks.some((block) => ['words', 'vocabulary'].includes(block.type)), 'No vocabulary-card section')
+  for (const block of phraseBlocks) {
+    assert.ok(block.sceneArt?.endsWith('.png'), `Missing phrase illustration: ${block.title}`)
+    assert.ok(images(block.sceneArt), `Missing on-disk phrase illustration: ${block.sceneArt}`)
   }
-  assert.ok(phraseCards >= 12)
-  assert.ok(contextScenes >= 4)
+  for (const block of conversationBlocks) {
+    assert.ok(block.art?.endsWith('.png'), `Missing conversation illustration: ${block.title}`)
+    assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
+  }
+  const displayed = new Set(blocks.flatMap((block) => block.phrases ?? []))
+  const spoken = Object.values(introductionById).filter((item) => item.section !== 'words').map((item) => item.id)
+  assert.deepEqual([...displayed].sort(), spoken.sort())
+  const portraits = conversationBlocks.flatMap((block) => block.phrases).map((id) => introductionById[id])
+  assert.ok(portraits.every((item) => item.portrait?.startsWith('portrait-') && item.portrait.endsWith('.svg')))
 })

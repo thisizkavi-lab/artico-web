@@ -1,134 +1,482 @@
 {
-  "schema": 1,
-  "license": "CC0-1.0 / public domain",
-  "source": "https://freesvg.org/",
-  "note": "Actual individually selected scenes; other Lesson 04 words use original Artico illustrations.",
+  "schema": 2,
+  "license": "Pexels License",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "source": "Pexels real-life photographs",
+  "editorialStandard": "Objects have object photographs. Actions show people doing the actions. No symbol compositions.",
+  "note": "SourcePage records the individually selected source photo. Some abstract words have representative contextual scenes.",
+  "aliases": {
+    "have breakfast": "eat breakfast",
+    "have lunch": "eat lunch",
+    "have dinner": "eat dinner",
+    "have tea or coffee": "drink tea or coffee",
+    "wash the dishes": "do the dishes",
+    "check email": "check your emails"
+  },
   "entries": {
     "bath": {
       "file": "bath",
-      "sourcePage": "https://freesvg.org/1545656045",
-      "sourceImage": "https://freesvg.org/img/1545656045.png",
-      "scene": "bathtub with bubbles"
+      "pexelsId": 19916732,
+      "sourcePage": "https://www.pexels.com/photo/bath-in-a-bathroom-19916732/",
+      "sourceImage": "https://images.pexels.com/photos/19916732/pexels-photo-19916732.jpeg",
+      "section": "01 — Bath and shower",
+      "scene": "Empty bathtub in a bathroom"
     },
     "shower": {
       "file": "shower",
-      "sourcePage": "https://freesvg.org/shower-cabin",
-      "sourceImage": "https://freesvg.org/img/1695631530shower-cabin.png",
-      "scene": "shower cabin"
+      "pexelsId": 4194866,
+      "sourcePage": "https://www.pexels.com/photo/close-up-photo-of-a-shower-head-4194866/",
+      "sourceImage": "https://images.pexels.com/photos/4194866/pexels-photo-4194866.jpeg",
+      "section": "01 — Bath and shower",
+      "scene": "Shower head spraying water"
+    },
+    "take a bath / have a bath (also common in uk)": {
+      "file": "take-a-bath-have-a-bath-also-common-in-uk",
+      "pexelsId": 10609529,
+      "sourcePage": "https://www.pexels.com/photo/woman-taking-bath-with-bubbles-10609529/",
+      "sourceImage": "https://images.pexels.com/photos/10609529/pexels-photo-10609529.jpeg",
+      "section": "01 — Bath and shower",
+      "scene": "Person sitting in a bubble bath"
+    },
+    "take a shower / have a shower (also common in uk)": {
+      "file": "take-a-shower-have-a-shower-also-common-in-uk",
+      "pexelsId": 7365362,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-in-a-bathing-suit-taking-a-shower-7365362/",
+      "sourceImage": "https://images.pexels.com/photos/7365362/pexels-photo-7365362.jpeg",
+      "section": "01 — Bath and shower",
+      "scene": "Person standing under running shower water, wearing swimsuit"
+    },
+    "breakfast": {
+      "file": "breakfast",
+      "pexelsId": 10720381,
+      "sourcePage": "https://www.pexels.com/photo/close-up-of-breakfast-on-restaurant-table-10720381/",
+      "sourceImage": "https://images.pexels.com/photos/10720381/pexels-photo-10720381.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Breakfast plate with eggs and toast"
     },
     "lunch": {
       "file": "lunch",
-      "sourcePage": "https://freesvg.org/lunch-vector-image",
-      "sourceImage": "https://freesvg.org/img/johnny_automatic_lunch.png",
-      "scene": "lunch box with sandwich and drink"
+      "pexelsId": 11115956,
+      "sourcePage": "https://www.pexels.com/photo/close-up-of-a-sandwich-on-a-table-11115956/",
+      "sourceImage": "https://images.pexels.com/photos/11115956/pexels-photo-11115956.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Sandwich prepared for lunch"
     },
     "dinner": {
       "file": "dinner",
-      "sourcePage": "https://freesvg.org/meal-plate",
-      "sourceImage": "https://freesvg.org/img/mealplate.png",
-      "scene": "cooked meal on a plate"
+      "pexelsId": 23961475,
+      "sourcePage": "https://www.pexels.com/photo/chicken-and-salad-on-a-plate-23961475/",
+      "sourceImage": "https://images.pexels.com/photos/23961475/pexels-photo-23961475.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Cooked meal with chicken and vegetables"
     },
     "coffee": {
       "file": "coffee",
-      "sourcePage": "https://freesvg.org/coffee-mug",
-      "sourceImage": "https://freesvg.org/img/160226_coffee_cup.png",
-      "scene": "coffee in a cup"
+      "pexelsId": 9146638,
+      "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-a-cup-of-coffee-9146638/",
+      "sourceImage": "https://images.pexels.com/photos/9146638/pexels-photo-9146638.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Cup of brewed coffee"
     },
     "tea": {
       "file": "tea",
-      "sourcePage": "https://freesvg.org/1537384731",
-      "sourceImage": "https://freesvg.org/img/1537384731.png",
-      "scene": "tea in a cup"
+      "pexelsId": 6653904,
+      "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-a-person-pouring-a-tea-on-a-cup-6653904/",
+      "sourceImage": "https://images.pexels.com/photos/6653904/pexels-photo-6653904.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Tea poured from a teapot into cup"
     },
     "eat breakfast": {
       "file": "eat-breakfast",
-      "sourcePage": "https://freesvg.org/child-eating-a-breakfast",
-      "sourceImage": "https://freesvg.org/img/kid-eating-breakfast_1786725427.png",
-      "scene": "person eating breakfast"
+      "pexelsId": 4867899,
+      "sourcePage": "https://www.pexels.com/photo/little-boy-eating-cereal-4867899/",
+      "sourceImage": "https://images.pexels.com/photos/4867899/pexels-photo-4867899.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Person eating breakfast cereal"
     },
     "eat lunch": {
       "file": "eat-lunch",
-      "sourcePage": "https://freesvg.org/man-eating-rice",
-      "sourceImage": "https://freesvg.org/img/manriceeat.png",
-      "scene": "person eating a meal"
+      "pexelsId": 4098888,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-sitting-at-the-table-while-eating-4098888/",
+      "sourceImage": "https://images.pexels.com/photos/4098888/pexels-photo-4098888.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Person eating lunch at table"
     },
     "eat dinner": {
       "file": "eat-dinner",
-      "sourcePage": "https://freesvg.org/eating-spaghetti",
-      "sourceImage": "https://freesvg.org/img/Eating-Spaghetti.png",
-      "scene": "person eating spaghetti"
+      "pexelsId": 11368700,
+      "sourcePage": "https://www.pexels.com/photo/a-family-having-dinner-at-a-table-11368700/",
+      "sourceImage": "https://images.pexels.com/photos/11368700/pexels-photo-11368700.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Family eating dinner at table"
+    },
+    "make breakfast": {
+      "file": "make-breakfast",
+      "pexelsId": 7282400,
+      "sourcePage": "https://www.pexels.com/photo/frying-of-an-egg-on-a-pan-7282400/",
+      "sourceImage": "https://images.pexels.com/photos/7282400/pexels-photo-7282400.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Person cracking egg into frying pan"
+    },
+    "cook dinner": {
+      "file": "cook-dinner",
+      "pexelsId": 5692183,
+      "sourcePage": "https://www.pexels.com/photo/senior-asian-woman-cooking-dinner-in-modern-kitchen-5692183/",
+      "sourceImage": "https://images.pexels.com/photos/5692183/pexels-photo-5692183.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "Person cooking food in saucepan"
+    },
+    "drink tea or coffee": {
+      "file": "drink-tea-or-coffee",
+      "pexelsId": 5585294,
+      "sourcePage": "https://www.pexels.com/photo/people-drinking-a-tea-in-a-cup-5585294/",
+      "sourceImage": "https://images.pexels.com/photos/5585294/pexels-photo-5585294.jpeg",
+      "section": "02 — Meals and drinks",
+      "scene": "People drinking hot beverages"
+    },
+    "arrive late": {
+      "file": "arrive-late",
+      "pexelsId": 13801602,
+      "sourcePage": "https://www.pexels.com/photo/businessman-with-a-briefcase-walking-fast-by-a-white-modern-building-13801602/",
+      "sourceImage": "https://images.pexels.com/photos/13801602/pexels-photo-13801602.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Worker rushing with a briefcase"
+    },
+    "catch the bus": {
+      "file": "catch-the-bus",
+      "pexelsId": 5481705,
+      "sourcePage": "https://www.pexels.com/photo/people-boarding-the-bus-in-the-bus-stop-5481705/",
+      "sourceImage": "https://images.pexels.com/photos/5481705/pexels-photo-5481705.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Passengers boarding a bus"
+    },
+    "catch the train": {
+      "file": "catch-the-train",
+      "pexelsId": 17719831,
+      "sourcePage": "https://www.pexels.com/photo/a-group-of-people-standing-in-a-train-station-17719831/",
+      "sourceImage": "https://images.pexels.com/photos/17719831/pexels-photo-17719831.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Passengers boarding train"
+    },
+    "commute": {
+      "file": "commute",
+      "pexelsId": 3680587,
+      "sourcePage": "https://www.pexels.com/photo/a-photo-inside-of-the-train-3680587/",
+      "sourceImage": "https://images.pexels.com/photos/3680587/pexels-photo-3680587.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "People commuting on public transit"
     },
     "drive": {
       "file": "drive",
-      "sourcePage": "https://freesvg.org/girl-driving-car-cartoon",
-      "sourceImage": "https://freesvg.org/img/Gerald_G_Girl_Driving_Car_Cartoon.png",
-      "scene": "person driving a car"
+      "pexelsId": 2061417,
+      "sourcePage": "https://www.pexels.com/photo/person-driving-2061417/",
+      "sourceImage": "https://images.pexels.com/photos/2061417/pexels-photo-2061417.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Driver's hands on steering wheel"
     },
     "go to school": {
       "file": "go-to-school",
-      "sourcePage": "https://freesvg.org/boy-and-girl-colour",
-      "sourceImage": "https://freesvg.org/img/1575741189Boy-And-Girl-Students-colour.png",
-      "scene": "children walking to school"
+      "pexelsId": 37031803,
+      "sourcePage": "https://www.pexels.com/photo/children-walking-to-school-on-a-sunny-day-37031803/",
+      "sourceImage": "https://images.pexels.com/photos/37031803/pexels-photo-37031803.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Children walking with backpacks"
     },
-    "school": {
-      "file": "school",
-      "sourcePage": "https://freesvg.org/school",
-      "sourceImage": "https://freesvg.org/img/School.png",
-      "scene": "school building and school bus"
+    "go to work": {
+      "file": "go-to-work",
+      "pexelsId": 7870074,
+      "sourcePage": "https://www.pexels.com/photo/man-wearing-a-coat-walking-with-a-briefcase-by-a-modern-building-7870074/",
+      "sourceImage": "https://images.pexels.com/photos/7870074/pexels-photo-7870074.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Person walking toward office with briefcase"
+    },
+    "start work": {
+      "file": "start-work",
+      "pexelsId": 17781869,
+      "sourcePage": "https://www.pexels.com/photo/man-working-on-a-laptop-at-an-office-desk-17781869/",
+      "sourceImage": "https://images.pexels.com/photos/17781869/pexels-photo-17781869.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Employee starting tasks on computer"
+    },
+    "finish work": {
+      "file": "finish-work",
+      "pexelsId": 8473763,
+      "sourcePage": "https://www.pexels.com/photo/person-opening-a-laptop-8473763/",
+      "sourceImage": "https://images.pexels.com/photos/8473763/pexels-photo-8473763.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Hand closing laptop at end of work"
+    },
+    "leave work": {
+      "file": "leave-work",
+      "pexelsId": 4945052,
+      "sourcePage": "https://www.pexels.com/photo/woman-walking-out-of-a-building-4945052/",
+      "sourceImage": "https://images.pexels.com/photos/4945052/pexels-photo-4945052.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Person exiting building"
     },
     "work from home": {
       "file": "work-from-home",
-      "sourcePage": "https://freesvg.org/person-working-at-computer-in-apartment-window",
-      "sourceImage": "https://freesvg.org/img/man-working-by-the-window_1792859414_f1cc4400.png",
-      "scene": "person working in a home"
+      "pexelsId": 7901763,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-using-her-laptop-7901763/",
+      "sourceImage": "https://images.pexels.com/photos/7901763/pexels-photo-7901763.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Person working on laptop in home"
     },
-    "buy groceries": {
-      "file": "buy-groceries",
-      "sourcePage": "https://freesvg.org/finished-grocery-shopping",
-      "sourceImage": "https://freesvg.org/img/1545613907.png",
-      "scene": "person carrying groceries"
+    "overtime": {
+      "file": "overtime",
+      "pexelsId": 6615073,
+      "sourcePage": "https://www.pexels.com/photo/man-working-in-the-office-6615073/",
+      "sourceImage": "https://images.pexels.com/photos/6615073/pexels-photo-6615073.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Worker at desk late at night"
     },
-    "dishes": {
-      "file": "dishes",
-      "sourcePage": "https://freesvg.org/clean-dishes",
-      "sourceImage": "https://freesvg.org/img/washed-dishes_1777233735.png",
-      "scene": "dishes"
+    "school": {
+      "file": "school",
+      "pexelsId": 5896836,
+      "sourcePage": "https://www.pexels.com/photo/exterior-of-school-building-in-daytime-5896836/",
+      "sourceImage": "https://images.pexels.com/photos/5896836/pexels-photo-5896836.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "School building and athletic field"
     },
-    "do the dishes": {
-      "file": "do-the-dishes",
-      "sourcePage": "https://freesvg.org/hands-washing-dishes",
-      "sourceImage": "https://freesvg.org/img/hands-washing-dishes_1741282716.png",
-      "scene": "hands washing dishes in a sink"
+    "do homework": {
+      "file": "do-homework",
+      "pexelsId": 5303516,
+      "sourcePage": "https://www.pexels.com/photo/a-child-doing-his-homework-5303516/",
+      "sourceImage": "https://images.pexels.com/photos/5303516/pexels-photo-5303516.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Child writing homework at desk"
     },
-    "iron a shirt": {
-      "file": "iron-a-shirt",
-      "sourcePage": "https://freesvg.org/lady-ironing",
-      "sourceImage": "https://freesvg.org/img/ironingonaniceday.png",
-      "scene": "person ironing clothes"
+    "homework": {
+      "file": "homework",
+      "pexelsId": 5303510,
+      "sourcePage": "https://www.pexels.com/photo/a-person-writing-on-a-notebook-5303510/",
+      "sourceImage": "https://images.pexels.com/photos/5303510/pexels-photo-5303510.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Schoolwork in notebook"
     },
     "have a break": {
       "file": "have-a-break",
-      "sourcePage": "https://freesvg.org/man-relaxing-in-the-sofa",
-      "sourceImage": "https://freesvg.org/img/man-relaxing-in-a-sofa_1762373560.png",
-      "scene": "person relaxing with coffee"
+      "pexelsId": 4427959,
+      "sourcePage": "https://www.pexels.com/photo/coworkers-taking-a-coffee-break-4427959/",
+      "sourceImage": "https://images.pexels.com/photos/4427959/pexels-photo-4427959.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Workers talking during coffee break"
+    },
+    "leave the house": {
+      "file": "leave-the-house",
+      "pexelsId": 8418018,
+      "sourcePage": "https://www.pexels.com/photo/woman-walking-out-of-a-building-8418018/",
+      "sourceImage": "https://images.pexels.com/photos/8418018/pexels-photo-8418018.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Person leaving a doorway"
+    },
+    "go home": {
+      "file": "go-home",
+      "pexelsId": 14806256,
+      "sourcePage": "https://www.pexels.com/photo/back-view-of-a-man-entering-through-a-doorway-14806256/",
+      "sourceImage": "https://images.pexels.com/photos/14806256/pexels-photo-14806256.jpeg",
+      "section": "03 — Work, school, and getting around",
+      "scene": "Person entering home doorway"
+    },
+    "buy groceries": {
+      "file": "buy-groceries",
+      "pexelsId": 4971925,
+      "sourcePage": "https://www.pexels.com/photo/woman-shopping-in-supermarket-4971925/",
+      "sourceImage": "https://images.pexels.com/photos/4971925/pexels-photo-4971925.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person grocery shopping with cart"
+    },
+    "run errands": {
+      "file": "run-errands",
+      "pexelsId": 25859197,
+      "sourcePage": "https://www.pexels.com/photo/woman-with-shopping-bags-on-a-street-25859197/",
+      "sourceImage": "https://images.pexels.com/photos/25859197/pexels-photo-25859197.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person walking through city carrying shopping bags"
+    },
+    "clear the table": {
+      "file": "clear-the-table",
+      "pexelsId": 10568357,
+      "sourcePage": "https://www.pexels.com/photo/stack-of-plates-in-kitchen-10568357/",
+      "sourceImage": "https://images.pexels.com/photos/10568357/pexels-photo-10568357.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Hand collecting and stacking plates"
+    },
+    "dishes": {
+      "file": "dishes",
+      "pexelsId": 5824840,
+      "sourcePage": "https://www.pexels.com/photo/various-dishes-on-shelves-in-kitchen-5824840/",
+      "sourceImage": "https://images.pexels.com/photos/5824840/pexels-photo-5824840.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Plates, bowls and cups on shelves"
+    },
+    "do the dishes": {
+      "file": "do-the-dishes",
+      "pexelsId": 7640977,
+      "sourcePage": "https://www.pexels.com/photo/a-person-washing-dishes-7640977/",
+      "sourceImage": "https://images.pexels.com/photos/7640977/pexels-photo-7640977.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Hands washing dish under faucet"
+    },
+    "do the housework": {
+      "file": "do-the-housework",
+      "pexelsId": 8055202,
+      "sourcePage": "https://www.pexels.com/photo/woman-cleaning-the-house-8055202/",
+      "sourceImage": "https://images.pexels.com/photos/8055202/pexels-photo-8055202.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person vacuuming living room"
+    },
+    "housework": {
+      "file": "housework",
+      "pexelsId": 12585524,
+      "sourcePage": "https://www.pexels.com/photo/orange-bucket-on-the-floor-12585524/",
+      "sourceImage": "https://images.pexels.com/photos/12585524/pexels-photo-12585524.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Cleaning supplies, mop and bucket"
+    },
+    "iron a shirt": {
+      "file": "iron-a-shirt",
+      "pexelsId": 7703649,
+      "sourcePage": "https://www.pexels.com/photo/person-ironing-white-shirt-with-design-7703649/",
+      "sourceImage": "https://images.pexels.com/photos/7703649/pexels-photo-7703649.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Iron pressing shirt on board"
+    },
+    "make the bed": {
+      "file": "make-the-bed",
+      "pexelsId": 9788327,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-fixing-her-bed-9788327/",
+      "sourceImage": "https://images.pexels.com/photos/9788327/pexels-photo-9788327.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person arranging pillows and sheets"
+    },
+    "take out the trash": {
+      "file": "take-out-the-trash",
+      "pexelsId": 14638265,
+      "sourcePage": "https://www.pexels.com/photo/man-walking-on-sidewalk-while-holding-garbage-bags-14638265/",
+      "sourceImage": "https://images.pexels.com/photos/14638265/pexels-photo-14638265.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person carrying garbage bags outside"
+    },
+    "feed the cat": {
+      "file": "feed-the-cat",
+      "pexelsId": 7980680,
+      "sourcePage": "https://www.pexels.com/photo/a-pet-owner-feeding-her-cats-7980680/",
+      "sourceImage": "https://images.pexels.com/photos/7980680/pexels-photo-7980680.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Cats eating from bowl beside owner"
+    },
+    "feed the dog": {
+      "file": "feed-the-dog",
+      "pexelsId": 6568944,
+      "sourcePage": "https://www.pexels.com/photo/a-person-petting-a-dog-eating-dog-food-6568944/",
+      "sourceImage": "https://images.pexels.com/photos/6568944/pexels-photo-6568944.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Dog eating from bowl beside owner"
+    },
+    "walk the dog": {
+      "file": "walk-the-dog",
+      "pexelsId": 37107267,
+      "sourcePage": "https://www.pexels.com/photo/person-walking-a-large-fluffy-dog-in-park-37107267/",
+      "sourceImage": "https://images.pexels.com/photos/37107267/pexels-photo-37107267.jpeg",
+      "section": "04 — Home and errands",
+      "scene": "Person walking dog on a leash"
     },
     "café": {
       "file": "cafe",
-      "sourcePage": "https://freesvg.org/coffee-shop",
-      "sourceImage": "https://freesvg.org/img/1575180751coffeeshoplady-j4p4n-1.png",
-      "scene": "coffee shop"
+      "pexelsId": 32117503,
+      "sourcePage": "https://www.pexels.com/photo/cozy-coffee-shop-scene-with-barista-and-customers-32117503/",
+      "sourceImage": "https://images.pexels.com/photos/32117503/pexels-photo-32117503.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Café interior with barista and customers"
+    },
+    "go to a café": {
+      "file": "go-to-a-cafe",
+      "pexelsId": 9623852,
+      "sourcePage": "https://www.pexels.com/photo/man-entering-a-cafe-9623852/",
+      "sourceImage": "https://images.pexels.com/photos/9623852/pexels-photo-9623852.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Person entering café through doorway"
     },
     "friends": {
       "file": "friends",
-      "sourcePage": "https://freesvg.org/two-friends-holding-hands",
-      "sourceImage": "https://freesvg.org/img/male-gay-couple_1792859337_ccae3eb2.png",
-      "scene": "two friends together"
+      "pexelsId": 5054659,
+      "sourcePage": "https://www.pexels.com/photo/a-group-of-friends-sitting-near-the-table-while-having-conversation-5054659/",
+      "sourceImage": "https://images.pexels.com/photos/5054659/pexels-photo-5054659.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Friends chatting together"
+    },
+    "call a friend": {
+      "file": "call-a-friend",
+      "pexelsId": 9052134,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-sitting-on-the-couch-9052134/",
+      "sourceImage": "https://images.pexels.com/photos/9052134/pexels-photo-9052134.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Person smiling on phone"
+    },
+    "call your family": {
+      "file": "call-your-family",
+      "pexelsId": 39219478,
+      "sourcePage": "https://www.pexels.com/photo/video-call-with-family-on-laptop-screen-39219478/",
+      "sourceImage": "https://images.pexels.com/photos/39219478/pexels-photo-39219478.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Family on a video call"
+    },
+    "check your emails": {
+      "file": "check-your-emails",
+      "pexelsId": 5744250,
+      "sourcePage": "https://www.pexels.com/photo/person-holding-a-smartphone-5744250/",
+      "sourceImage": "https://images.pexels.com/photos/5744250/pexels-photo-5744250.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Email inbox visible on smartphone"
+    },
+    "go out": {
+      "file": "go-out",
+      "pexelsId": 34054774,
+      "sourcePage": "https://www.pexels.com/photo/nightlife-in-kyoto-friends-strolling-the-streets-34054774/",
+      "sourceImage": "https://images.pexels.com/photos/34054774/pexels-photo-34054774.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Friends on night out in city"
+    },
+    "listen to the radio": {
+      "file": "listen-to-the-radio",
+      "pexelsId": 11222495,
+      "sourcePage": "https://www.pexels.com/photo/a-person-turning-on-the-car-radio-11222495/",
+      "sourceImage": "https://images.pexels.com/photos/11222495/pexels-photo-11222495.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Hand tuning car radio"
     },
     "read a newspaper": {
       "file": "read-a-newspaper",
-      "sourcePage": "https://freesvg.org/children-reading-newspaper-vector-illustration",
-      "sourceImage": "https://freesvg.org/img/johnny-automatic-children-reading-newspaper.png",
-      "scene": "children reading a newspaper"
+      "pexelsId": 6262966,
+      "sourcePage": "https://www.pexels.com/photo/person-reading-the-newspaper-6262966/",
+      "sourceImage": "https://images.pexels.com/photos/6262966/pexels-photo-6262966.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Person reading newspaper"
+    },
+    "bed": {
+      "file": "bed",
+      "pexelsId": 6603474,
+      "sourcePage": "https://www.pexels.com/photo/white-pillows-on-the-bed-6603474/",
+      "sourceImage": "https://images.pexels.com/photos/6603474/pexels-photo-6603474.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Made-up bed with pillows"
+    },
+    "go to bed": {
+      "file": "go-to-bed",
+      "pexelsId": 7445246,
+      "sourcePage": "https://www.pexels.com/photo/a-woman-sleeping-on-the-bed-7445246/",
+      "sourceImage": "https://images.pexels.com/photos/7445246/pexels-photo-7445246.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Person resting in bed"
+    },
+    "put the children to bed": {
+      "file": "put-the-children-to-bed",
+      "pexelsId": 12788610,
+      "sourcePage": "https://www.pexels.com/photo/mother-tucking-in-daughter-12788610/",
+      "sourceImage": "https://images.pexels.com/photos/12788610/pexels-photo-12788610.jpeg",
+      "section": "05 — Free time, family, and bedtime",
+      "scene": "Parent tucking child in for bedtime"
     }
   }
 }

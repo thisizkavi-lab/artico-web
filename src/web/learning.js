@@ -172,7 +172,7 @@ export function parseRoute(hash) {
       return {path:clean,page:'application',id:'reading',collection:view,view:scene,...(text?{text}:{})}
     }
     if (id === 'tests' && view === 'ielts') {
-      const area = /^(?:home|overview|speaking|writing|listening|reading|guided|mocks|simulation)$/.test(scene ?? '') ? scene : 'home'
+      const area = /^(?:home|overview|speaking|writing|listening|reading|mock|guided|mocks|simulation)$/.test(scene ?? '') ? scene : 'home'
       const mode = segments[4] === 'practice' ? 'practice' : 'study'
       if (segments.length > 5 || (scene && area !== scene) || (segments[4] && !['study', 'practice'].includes(segments[4])))
         return { path: '/application/tests', page: 'application', id: 'tests' }

@@ -629,6 +629,7 @@ export async function runFullAudit(options = {}) {
         '#/application/tests/ielts/guided/practice',
         '#/application/tests/ielts/mocks/practice',
         '#/application/tests/ielts/simulation/practice',
+        '#/application/tests/ielts/mock/practice',
       ]
       for (const h of practiceHashes) {
         const pHtml = renderToStaticMarkup(createElement(IeltsCourse, { route: parseRoute(h) }))
@@ -645,7 +646,7 @@ export async function runFullAudit(options = {}) {
       for (const msg of ssrConsoleErrors) console.error(`❌ VIS04: ${msg}`)
       totalErrors += ssrConsoleErrors.length
     } else {
-      console.log(`✓ VIS04: SSR rendered Study Hub + all 85 unit routes + 9 Practice routes with 0 errors/warnings`)
+      console.log(`✓ VIS04: SSR rendered Study Hub + all 85 unit routes + 10 Practice routes with 0 errors/warnings`)
     }
 
     // Units audit

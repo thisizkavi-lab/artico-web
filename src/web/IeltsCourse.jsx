@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import CurriculumIcon from './CurriculumIcon'
 import { Icon, Segments } from './components'
-import { ieltsAreas, ieltsArea, ieltsPath } from './ieltsNavigation'
+import { ieltsAreas, ieltsArea, ieltsPath, ieltsStudyPath } from './ieltsNavigation'
 import { guidedSets, officialResources, skillInfo, skillTasks, taskById, writingMock } from './ieltsContent'
 import { IELTS_STORAGE_KEY, emptyIelts, exposeTask, hasSeenTask, loadIelts, sanitiseIelts, updateAttempt } from './ieltsState'
 import IeltsWorkspace from './IeltsWorkspace'
 import IeltsStudyView from './ielts-study/IeltsStudyView'
 import './ielts.css'
+import './ielts-refresh.css'
 
 const go = (path) => { window.location.hash = path }
 function useWorkbook() {
@@ -55,7 +56,7 @@ function SaveNotice({ status }) {
     : status === 'saving' ? 'Saving on this device…' : 'Workbook saved on this device. Not synced to an account.'}</p>
 }
 function Directory({ items, mode = 'study' }) {
-  return <div className="ie-directory">{items.map((item, index) => <a className="ie-branch" key={item.id} href={`#${item.href ?? ieltsPath(item.id, ['mocks', 'simulation'].includes(item.id) ? 'practice' : mode)}`}>
+  return <div className="ie-directory">{items.map((item, index) => <a className={'ie-branch ie-branch-' + item.id} key={item.id} href={`#${item.href ?? ieltsPath(item.id, ['mocks', 'simulation'].includes(item.id) ? 'practice' : mode)}`}>
     <span className="ie-branch-icon" aria-hidden="true"><CurriculumIcon name={item.icon ?? 'book'} size={25}/></span>
     <span className="ie-branch-copy"><small>{String(index + 1).padStart(2, '0')}</small><strong>{item.title}</strong><span>{item.summary}</span></span>
     <Icon name="next"/>
@@ -90,11 +91,21 @@ function History({ state }) {
   })}</ul></section>
 }
 function IeltsHome({ route, store }) {
-  return <><header className="ie-heading"><h1>IELTS Academic</h1><p>Know what the test asks. Practise doing it. Use the evidence to improve.</p></header>
-    <Directory items={ieltsAreas} mode={route.view}/>
+  const tiles = ieltsAreas.map((item) => ({
+    ...item,
+    href: item.id === 'overview' ? ieltsStudyPath('overview','ov-what-ielts-measures')
+      : ieltsPath(item.id, 'practice'),
+  }))
+  return <div className="ie-practice-home">
+    <header className="ie-heading">
+      <span className="ie-eyebrow">ARTICO · IELTS</span>
+      <h1>IELTS Practice</h1>
+      <p>Choose a skill. Try the exercises. Review your answers.</p>
+    </header>
+    <Directory items={tiles} mode="practice"/>
     <History state={store.state}/>
-    <p className="ie-fineprint">An independent Artico preparation course. Not affiliated with IELTS. Original activities are training material, not official tests or a Band 9 guarantee.</p>
-  </>
+    <p className="ie-fineprint">These are original training activities, not official IELTS tests. Short exercises do not produce an IELTS band score.</p>
+  </div>
 }
 function Overview({ route, store }) {
   if (route.view === 'practice') return <>
@@ -150,8 +161,40 @@ function Skill({ route, store }) {
     </>}
   </>
 }
+function MockHub() {
+  return <>
+    <header className="ie-heading ie-mock-heading">
+      <span className="ie-eyebrow">IELTS · REHEARSAL</span>
+      <h1>Mock tests</h1>
+      <p>First see how an answer works. Then try the task without help.</p>
+    </header>
+    <div className="ie-mock-options">
+      <a className="ie-mock-option" href={'#' + ieltsPath('guided','study')}>
+        <span className="ie-mock-option-icon"><CurriculumIcon name="lightbulb" size={25}/></span>
+        <span className="ie-mock-option-copy"><strong>Guided test</strong>
+          <span>Study an example, try the task, and reveal the explanation.</span>
+          <small>Available: four short guided workshop sets. Not full mock exams.</small>
+          <b>Open guided exercises →</b>
+        </span>
+      </a>
+      <a className="ie-mock-option" href={'#' + ieltsPath('simulation','practice')}>
+        <span className="ie-mock-option-icon"><CurriculumIcon name="clock" size={25}/></span>
+        <span className="ie-mock-option-copy"><strong>Simulated test</strong>
+          <span>Use real exam conditions with no hints or teaching interruptions.</span>
+          <small>Full simulation is not available yet. See what it will contain.</small>
+          <b>See simulation details →</b>
+        </span>
+      </a>
+    </div>
+    <div className="ie-mock-rehearsal">
+      <strong>Already practising a skill?</strong>
+      <p>A full two-task timed Writing rehearsal is available. Listening, Reading, and Speaking still have shorter practice sets.</p>
+      <a href={'#' + ieltsPath('mocks','practice')}>See available skill rehearsals →</a>
+    </div>
+  </>
+}
 function Guided({ route, store }) {
-  return <><header className="ie-heading"><h1>Guided Sets</h1><p>Four workshops, not four compulsory exams. Open one skill at a time.</p></header><p className="ie-lead">{route.view === 'study' ? 'See the approach, try the work, and reveal annotations when you need them.' : 'Make your own decisions first. Sets C and D keep the coaching until review.'}</p>
+  return <><header className="ie-heading"><h1>Guided test</h1><p>Explore four annotated workshop sets. These are short exercises, not complete exams.</p></header><p className="ie-lead">{route.view === 'study' ? 'See the approach, try the work, and reveal annotations when you need them.' : 'Make your own decisions first. Sets C and D keep the coaching until review.'}</p>
     <div className="ie-guided-list">{guidedSets.map((set, index) => <section className="ie-guided-set" key={set.id}><span className="ie-set-letter" aria-hidden="true">{set.id.toUpperCase()}</span><div><h2>{set.title}</h2><p>{set.summary}</p><small>{set.support}</small><ul>{set.taskIds.map((id) => {
       const task = taskById[id]
       return <li key={id}><a href={`#${ieltsPath('guided', index < 2 ? 'study' : 'practice', id)}`}><strong>{skillInfo[task.skill].title}</strong><span>{task.title}</span><span>{task.minutes} min</span></a></li>
@@ -166,7 +209,7 @@ function Mocks({ route, store }) {
   </>
 }
 function Simulation({ route, store }) {
-  return <><header className="ie-heading"><h1>Full Simulations</h1><p>Rehearse the event, not just a collection of familiar questions.</p></header>
+  return <><header className="ie-heading"><h1>Simulated test</h1><p>Rehearse the event, not just a collection of familiar questions.</p></header>
     <section className="ie-prose"><h2>One linked rehearsal</h2><p>Listening, Reading, and Writing run in sequence without teaching explanations between them. Speaking is a complete separate session attached to the same rehearsal record. A standard simulation does not offer pause, hints, model answers, or audio replay.</p></section>
     <ol className="ie-simulation-steps">{['Listening', 'Reading', 'Writing', 'Speaking'].map((name) => <li key={name}><strong>{name}</strong><span>{skillInfo[name.toLowerCase()].duration}</span><small>{name === 'Speaking' ? 'Separate session' : 'No mid-test feedback'}</small></li>)}</ol>
     <section className="ie-availability" role="note"><h2>No complete simulation set is released yet.</h2><p>The navigation and preparation workbook are ready. A linked simulation will be enabled only when a complete, checked Reading and Listening form and its recordings are available. Starting a 2½-hour clock over a few sample questions would give you a misleading rehearsal.</p><a className="ie-button" href={`#${ieltsPath('mocks', 'practice')}`}>Open available skill practice</a></section>
@@ -194,10 +237,10 @@ export default function IeltsCourse({ route }) {
     <nav className="ie-breadcrumb" aria-label="IELTS breadcrumb"><a href="#/application/tests">English Tests</a><span aria-hidden="true">/</span><a href={`#${ieltsPath('home', route.view)}`}>IELTS Academic</a>{area ? <><span aria-hidden="true">/</span><span>{area.title}</span></> : null}</nav>
     <div className="ie-modebar"><Segments items={[{ value: 'study', label: 'Study' }, { value: 'practice', label: 'Practice' }]} label="IELTS Study or Practice" active={route.view} disabled={isRunning} onChange={(mode) => {
       if (isRunning) return
-      const targetArea = mode === 'study' && ['mocks', 'simulation'].includes(route.area) ? 'home' : route.area
+      const targetArea = mode === 'study' && ['mock', 'guided', 'mocks', 'simulation'].includes(route.area) ? 'home' : route.area
       const targetTask = mode === 'practice' || route.area === 'guided' ? route.task : undefined
       go(ieltsPath(targetArea, mode, targetTask))
     }}/>{isRunning ? <span>Finish or leave this attempt before changing modes.</span> : <a href={`#${ieltsPath('home', route.view)}`}>All IELTS sections</a>}</div>
-    {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.view === 'study' && ['home', 'overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area) ? <IeltsStudyView route={route} store={store} /> : route.area === 'home' ? <IeltsHome route={route} store={store}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store}/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
+    {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.view === 'study' && ['home', 'overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area) ? <IeltsStudyView route={route} store={store} /> : route.area === 'home' ? <IeltsHome route={route} store={store}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store}/> : route.area === 'mock' ? <MockHub/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
   </div>
 }

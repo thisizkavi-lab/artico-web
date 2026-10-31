@@ -20,123 +20,81 @@ import { StudyBlock } from './IeltsStudyBlocks'
 import { ieltsStudyPath, ieltsPath } from '../ieltsNavigation'
 import './ielts-study.css'
 
+
+/* The Study landing screen follows the clarity and restrained color of Greetings. */
 export function StudyHome({ store }) {
   const lastUnitId = store?.state?.notes?.['study-last-unit']
-  const lastUnit = lastUnitId ? STUDY_UNIT_BY_ID[lastUnitId] : null
-  const lastMod = lastUnit ? MODULE_METADATA.find((m) => m.id === lastUnit.area) : null
+  const lastUnit = lastUnitId && lastUnitId !== 'ov-how-to-read' ? STUDY_UNIT_BY_ID[lastUnitId] : null
+  const skills = MODULE_METADATA.filter((mod) => mod.id !== 'overview')
+  const descriptions = {
+    listening: 'Hear the answer and notice what changes.',
+    reading: 'Find evidence and understand the question types.',
+    writing: 'Study examples, then write with clarity.',
+    speaking: 'Learn the interview, then practise aloud.',
+  }
 
-  return (
-    <div className="ies-home">
-      <header className="ies-home-masthead">
-        <h1>IELTS Academic</h1>
-        <p className="ies-home-lead">
-          A technical study manual for IELTS Academic, with General Training differences marked side by side. Read in
-          order or open the exact skill you need.
-        </p>
-        <div className="ies-track-legend" role="note" aria-label="Track designations">
-          <span className="ies-legend-item">
-            <span className="ies-badge ies-badge-academic">Academic</span> Primary track
-          </span>
-          <span className="ies-legend-item">
-            <span className="ies-badge ies-badge-shared">Shared</span> Both Academic &amp; General Training
-          </span>
-          <span className="ies-legend-item">
-            <span className="ies-badge ies-badge-gt">[GT]</span> Separated General Training sections
-          </span>
-        </div>
+  return <div className="ies-home ies-simple-home">
+    <header className="ies-simple-intro">
+      <span className="ies-simple-eyebrow">ARTICO · EXAM PREPARATION</span>
+      <h1>IELTS Academic</h1>
+      <p>Understand the exam. Learn each skill. Practise when you are ready.</p>
+      {lastUnit && <a className="ies-resume-link" href={'#' + ieltsStudyPath(lastUnit.area, lastUnit.id)}>
+        <span>Continue: {lastUnit.title}</span><span aria-hidden="true">→</span>
+      </a>}
+    </header>
 
-        <div className="ies-orientation-bar" role="region" aria-label="Manual orientation">
-          <div>
-            <strong>New to this manual?</strong> Learn how{' '}
-            <span className="ies-inline-pill ies-pill-requirement">Requirement</span>,{' '}
-            <span className="ies-inline-pill ies-pill-method">Method</span>, and{' '}
-            <span className="ies-inline-pill ies-pill-option">Option</span> labels distinguish official test rules from
-            coaching procedures.
-          </div>
-          <a className="ies-orientation-link" href={`#${ieltsStudyPath('overview', 'ov-how-to-read')}`}>
-            Start here: How this manual works →
-          </a>
-        </div>
-      </header>
-
-      {lastUnit && (
-        <aside className="ies-bookmark-bar" aria-label="Last opened study unit">
-          <span>
-            <strong>Last opened:</strong> {lastMod ? `${lastMod.title} · ` : ''}
-            {lastUnit.title}
-          </span>
-          <a className="ies-bookmark-link" href={`#${ieltsStudyPath(lastUnit.area, lastUnit.id)}`}>
-            Continue reading →
-          </a>
-        </aside>
-      )}
-
-      <div className="ies-module-spine" aria-label="Five study modules">
-        {MODULE_METADATA.map((mod) => {
-          const modUnits = getUnitsForArea(mod.id)
-          const firstUnit = modUnits[0]
-
-          return (
-            <section key={mod.id} className="ies-module-card" aria-labelledby={`ies-mod-${mod.id}`}>
-              <div className="ies-module-card-head">
-                <div>
-                  <span className="ies-mod-num">MODULE {mod.num}</span>
-                  <div className="ies-mod-title-group">
-                    <CurriculumIcon name={mod.icon} size={24} />
-                    <h2 id={`ies-mod-${mod.id}`} className="ies-mod-title">
-                      {mod.title}
-                    </h2>
-                  </div>
-                </div>
-                <div className="ies-mod-head-actions">
-                  <span className="ies-mod-fact">{mod.fact}</span>
-                  {firstUnit && (
-                    <a className="ies-mod-start" href={`#${ieltsStudyPath(mod.id, firstUnit.id)}`}>
-                      Start module →
-                    </a>
-                  )}
-                </div>
-              </div>
-
-              <p className="ies-mod-scope">{mod.scope}</p>
-
-              <div className="ies-mod-parts">
-                {mod.parts.map((part) => {
-                  // Find first unit belonging to this part
-                  const partUnit = modUnits.find((u) => u.partId === part.id) || firstUnit
-                  const linkHref = partUnit
-                    ? `#${ieltsStudyPath(mod.id, partUnit.id)}`
-                    : `#${ieltsStudyPath(mod.id)}`
-
-                  return (
-                    <a key={part.id} className="ies-part-link" href={linkHref}>
-                      <span>
-                        {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '6px' }}>GT</span>}
-                        {part.title}
-                      </span>
-                      <span className="ies-part-count">{part.count} units →</span>
-                    </a>
-                  )
-                })}
-              </div>
-            </section>
-          )
-        })}
+    <section className="ies-simple-overview" aria-labelledby="ies-start-heading">
+      <div className="ies-overview-mark"><CurriculumIcon name="compass" size={28}/></div>
+      <div className="ies-overview-copy">
+        <span className="ies-simple-eyebrow">START HERE</span>
+        <h2 id="ies-start-heading">Everything about IELTS</h2>
+        <p>What IELTS is, Academic and General Training, the format, band scores, and what to expect on test day.</p>
+        <a className="ies-simple-action" href={'#' + ieltsStudyPath('overview','ov-what-ielts-measures')}>Explore IELTS <span aria-hidden="true">→</span></a>
       </div>
+    </section>
 
-      <div className="ies-home-footer-note">
-        <strong>Ready to test an operation under a clock?</strong> Switch to{' '}
-        <a href={`#${ieltsPath('home', 'practice')}`}>Practice mode</a> above for guided sets, skill rehearsals, and
-        workbooks.
+    <section className="ies-simple-group" aria-labelledby="ies-skills-heading">
+      <div className="ies-simple-group-head"><h2 id="ies-skills-heading">The four skills</h2>
+        <p>Choose any skill. Each has Study lessons and separate Practice exercises.</p></div>
+      <div className="ies-skill-grid">
+        {skills.map((mod, index) => <a key={mod.id} className={'ies-skill-card ies-skill-' + mod.id} href={'#' + ieltsStudyPath(mod.id)}>
+          <span className="ies-skill-icon"><CurriculumIcon name={mod.icon} size={26}/></span>
+          <span className="ies-skill-number">0{index + 1}</span>
+          <strong>{mod.title}</strong>
+          <span className="ies-skill-description">{descriptions[mod.id]}</span>
+          <span className="ies-skill-link">Study lessons <span aria-hidden="true">→</span></span>
+        </a>)}
       </div>
-    </div>
-  )
+    </section>
+
+    <section className="ies-simple-group" aria-labelledby="ies-mock-heading">
+      <div className="ies-simple-group-head"><h2 id="ies-mock-heading">Mock tests</h2>
+        <p>Learn with help first. Test yourself without help later.</p></div>
+      <div className="ies-mock-grid">
+        <a className="ies-mock-tile" href={'#' + ieltsPath('guided','study')}>
+          <span className="ies-mock-icon"><CurriculumIcon name="lightbulb" size={24}/></span>
+          <strong>Guided test</strong><span>Short annotated workshops are available now.</span>
+          <em>Explore guided work <span aria-hidden="true">→</span></em>
+        </a>
+        <a className="ies-mock-tile" href={'#' + ieltsPath('simulation','practice')}>
+          <span className="ies-mock-icon"><CurriculumIcon name="clock" size={24}/></span>
+          <strong>Simulated test</strong><span>Full-length exam simulation is still in preparation.</span>
+          <em>See test format <span aria-hidden="true">→</span></em>
+        </a>
+      </div>
+    </section>
+    <p className="ies-simple-disclaimer">Artico is independent of the official IELTS providers.</p>
+  </div>
 }
 
 export function StudyReader({ area, unitId, store }) {
   const modMeta = MODULE_METADATA.find((m) => m.id === area) || MODULE_METADATA[0]
-  const areaUnits = getUnitsForArea(area)
-  const currentUnit = (unitId && STUDY_UNIT_BY_ID[unitId]) || areaUnits[0] || null
+  const allAreaUnits = getUnitsForArea(area)
+  // Keep the original editorial manual unit addressable by bookmarked links,
+  // but do not make it part of the learner-facing lesson sequence.
+  const areaUnits = allAreaUnits.filter((u) => u.id !== 'ov-how-to-read')
+  const requestedUnit = unitId && STUDY_UNIT_BY_ID[unitId]?.area === area ? STUDY_UNIT_BY_ID[unitId] : null
+  const currentUnit = requestedUnit || (area === 'overview' ? STUDY_UNIT_BY_ID['ov-what-ielts-measures'] : areaUnits[0]) || null
 
   const [filterQuery, setFilterQuery] = useState('')
 
@@ -151,15 +109,16 @@ export function StudyReader({ area, unitId, store }) {
         },
       }))
     }
-  }, [currentUnit?.id, store])
+  }, [currentUnit?.id, store?.change])
 
   const filteredUnits = filterQuery.trim()
     ? areaUnits.filter((u) => u.title.toLowerCase().includes(filterQuery.toLowerCase()))
     : areaUnits
 
-  const prevUnit = currentUnit ? getPrevUnit(currentUnit.id) : null
+  const prevUnit = currentUnit?.id === 'ov-what-ielts-measures' ? null : currentUnit ? getPrevUnit(currentUnit.id) : null
   const nextUnit = currentUnit ? getNextUnit(currentUnit.id) : null
   const unitIndex = currentUnit ? areaUnits.findIndex((u) => u.id === currentUnit.id) : -1
+  const lessonNumber = unitIndex < 0 ? 'Reference' : unitIndex + 1
   const isLastInModule = unitIndex >= 0 && unitIndex === areaUnits.length - 1
 
   const isRead = currentUnit ? Boolean(store?.state?.notes?.[`study-read-${currentUnit.id}`]) : false
@@ -173,7 +132,7 @@ export function StudyReader({ area, unitId, store }) {
         <div key={part.id} className={`ies-toc-part ${part.isGt ? 'ies-toc-part-gt' : ''}`}>
           <div className="ies-toc-part-title">
             {part.isGt && <span className="ies-badge ies-badge-gt" style={{ marginRight: '4px' }}>GT</span>}
-            {part.title}
+            {part.title.replace(/^Part \d+\.\d+\s*·\s*/, '')}
           </div>
           <ul className="ies-toc-list">
             {partUnits.map((u) => {
@@ -208,16 +167,14 @@ export function StudyReader({ area, unitId, store }) {
           <CurriculumIcon name={modMeta.icon} size={28} />
           <h1>{modMeta.title}</h1>
         </div>
-        <div className="ie-facts">
-          <span>{modMeta.fact}</span>
-        </div>
+        {area !== 'overview' && <div className="ie-facts"><span>{modMeta.fact}</span></div>}
       </header>
 
       {/* Mobile / Narrow-Tablet Compact Contents Drawer (< 880px) */}
       {currentUnit && (
         <details className="ies-mobile-toc">
           <summary>
-            Contents · Unit {unitIndex + 1} of {areaUnits.length}: {currentUnit.title}
+            {unitIndex < 0 ? 'Contents · Course reference: ' : 'Contents · Lesson ' + lessonNumber + ' of ' + areaUnits.length + ': '}{currentUnit.title}
           </summary>
           <div className="ies-mobile-toc-body">{renderTocParts()}</div>
         </details>
@@ -248,29 +205,8 @@ export function StudyReader({ area, unitId, store }) {
             <article className="ies-article" aria-labelledby={`ies-unit-h2-${currentUnit.id}`}>
               <header className="ies-unit-header">
                 <div className="ies-unit-kicker">
-                  <span>
-                    Unit {unitIndex + 1} of {areaUnits.length}
-                  </span>
-                  <span>·</span>
-                  <span>{currentUnit.partTitle}</span>
-                  <span>·</span>
-                  <span>~{currentUnit.minutes} min study</span>
-                  <span>·</span>
-                  <span
-                    className={`ies-badge ${
-                      currentUnit.track === 'gt'
-                        ? 'ies-badge-gt'
-                        : currentUnit.track === 'shared'
-                        ? 'ies-badge-shared'
-                        : 'ies-badge-academic'
-                    }`}
-                  >
-                    {currentUnit.track === 'gt'
-                      ? 'General Training'
-                      : currentUnit.track === 'shared'
-                      ? 'Shared'
-                      : 'Academic'}
-                  </span>
+                  <span>{unitIndex < 0 ? 'Course reference' : 'Lesson ' + lessonNumber + ' of ' + areaUnits.length}</span>
+                  {currentUnit.track === 'gt' && <span className="ies-badge ies-badge-gt">General Training</span>}
                 </div>
 
                 {currentUnit.track === 'gt' && (
@@ -292,11 +228,6 @@ export function StudyReader({ area, unitId, store }) {
                 <h2 id={`ies-unit-h2-${currentUnit.id}`} className="ies-unit-title">
                   {currentUnit.title}
                 </h2>
-
-                <div className="ies-unit-provenance">
-                  Covers source section{currentUnit.sourceSections.length > 1 ? 's' : ''}{' '}
-                  {currentUnit.sourceSections.join(', ')}
-                </div>
               </header>
 
               <div className="ies-unit-blocks">

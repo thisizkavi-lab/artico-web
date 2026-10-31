@@ -264,7 +264,7 @@ export const introductionSections = [
         'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       ),
       phraseShelf([47, 24, 48, 49, 50], 'Meeting in person', undefined, {
-        text: 'Use “It’s nice to meet you in person” for a first face-to-face meeting. Add “finally” when you’ve been communicating for a while. “Put a face to the name” is a friendly idiom when you know someone’s name from messages but haven’t met. Say “Good to see you in person” when you’ve already interacted, such as on video calls. For example: “It’s nice to finally meet you in person.” — “You too! I’ve been looking forward to this.”',
+        text: 'Use “meet” for a first face-to-face meeting. “Finally” adds warmth after a period of online contact. “Put a face to the name” fits when you know someone’s name but haven’t met. Use “see” when you’ve already interacted, such as on video calls. Example: “It’s nice to finally meet you in person.” — “You too! I’ve been looking forward to this.”',
       }),
     ],
   },

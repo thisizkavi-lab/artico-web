@@ -168,6 +168,49 @@ function Conversation({ block, audioProps, focusedId }) {
 }
 
 
+function ReplyAlternatives({ block, audioProps }) {
+  const { language } = useLanguage()
+  const { byId } = useLesson()
+  return (
+    <section className="ar-ch02-replies" aria-label={block.title}>
+      <header className="ar-ch02-reply-heading">
+        <h3>{block.title}</h3>
+      </header>
+      <div className="ar-ch02-reply-question">
+        <div className="ar-ch02-reply-avatar">
+          <img src={art('portrait-ch02-anna.svg')} alt="" width="36" height="36" />
+          <span>{language === 'ja' ? '相手' : 'The other person'}</span>
+        </div>
+        <p lang="en">{block.prompt}</p>
+      </div>
+      <div className="ar-ch02-reply-connector" aria-hidden="true"><span>↓</span></div>
+      <div className="ar-ch02-reply-options">
+        <div className="ar-ch02-reply-options-head">
+          <img src={art('portrait-ch02-alex.svg')} alt="" width="36" height="36" />
+          <span>{language === 'ja' ? 'こう返せます' : 'Two natural replies'}</span>
+        </div>
+        <div className="ar-ch02-reply-columns">
+          {block.choices.map((choice) => {
+            const item = byId[choice.id]
+            return (
+              <div key={choice.id} className="ar-ch02-reply-option">
+                <span className="ar-ch02-reply-label">{choice.label}</span>
+                <p lang="en">{item.en}</p>
+                {language === 'ja' && item.ja && <p className="ar-ch02-reply-ja" lang="ja">{item.ja}</p>}
+                {approvedAudio[item.id] && <PhraseAudio item={item} {...audioProps} />}
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      <p className="ar-ch02-reply-foot">{language === 'ja'
+        ? 'どちらも「はじめまして」に気持ちを返す、自然な言い方です。'
+        : 'Both replies return the feeling. Choose the length that fits the conversation.'}</p>
+    </section>
+  )
+}
+
+
 function Study({ audioProps, focusedId }) {
   const { t, language } = useLanguage()
   const {
@@ -225,6 +268,8 @@ function Study({ audioProps, focusedId }) {
                 </aside>
               )
             }
+            if (block.type === 'reply-alternatives')
+              return <ReplyAlternatives key={blockIndex} block={block} audioProps={audioProps} />
             if (block.type === 'comparison')
               return (
                 <aside className="ip-comparison" key={blockIndex} aria-label={block.title}>

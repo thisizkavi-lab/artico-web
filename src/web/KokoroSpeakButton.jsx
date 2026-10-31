@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { speakKokoroSpeech, stopKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
-import { vocabularySpokenText, vocabularyPrefersDeviceVoice } from './vocabularySpokenText'
+import { vocabularySpokenText } from './vocabularySpokenText'
 import { readVocabularyVoiceMode } from './vocabularyVoiceMode'
 import './kokoro-speech.css'
 
@@ -40,25 +40,24 @@ export default function KokoroSpeakButton({ text, japanese = false, rate = 0.95,
     }
   }
   const spoken = vocabularySpokenText(text)
-  const preferDevice = vocabularyPrefersDeviceVoice(text)
   const play = (event) => {
     event.stopPropagation()
     if (phase === 'loading' || phase === 'playing') {
       stopKokoroSpeech()
       return
     }
-    const useOfflineVoice = readVocabularyVoiceMode() === 'offline'
+    const useDeviceVoice = readVocabularyVoiceMode() === 'device'
     void speakKokoroSpeech(spoken, {
       rate,
-      preferDevice: !useOfflineVoice && preferDevice,
-      forceModel: useOfflineVoice,
+      preferKokoro: !useDeviceVoice,
+      preferDevice: useDeviceVoice,
       onLoading: () => setPhase('loading'),
       onStart: () => setPhase('playing'),
       onCancel: () => setPhase('idle'),
       onEnd: () => setPhase('idle'),
       onError: () => setPhase('error'),
     })
-    prefetchKokoroSpeech(upcoming.filter(label => !vocabularyPrefersDeviceVoice(label)).map(vocabularySpokenText))
+    if (!useDeviceVoice) prefetchKokoroSpeech(upcoming.map(vocabularySpokenText))
   }
   const title = phase === 'loading'
     ? (japanese ? '音声の準備中。初回はダウンロードが必要です。' : 'Preparing voice. The first use downloads the model.')
@@ -76,8 +75,8 @@ export default function KokoroSpeakButton({ text, japanese = false, rate = 0.95,
       aria-label={title + ': ' + text}
       aria-busy={phase === 'loading'}
       onClick={play}
-      onMouseEnter={() => { if (!preferDevice) prefetchKokoroSpeech([spoken]) }}
-      onFocus={() => { if (!preferDevice) prefetchKokoroSpeech([spoken]) }}
+      onMouseEnter={() => { if (readVocabularyVoiceMode() !== 'device') prefetchKokoroSpeech([spoken]) }}
+      onFocus={() => { if (readVocabularyVoiceMode() !== 'device') prefetchKokoroSpeech([spoken]) }}
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M11 5 6 9H3v6h3l5 4V5Z" />

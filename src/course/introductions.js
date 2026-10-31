@@ -1,7 +1,7 @@
-// Chapter 02 pilot. IDs are permanent recording/progress keys, not manuscript line numbers.
-// The Study blocks and Practice collection refer to these same records.
+// Chapter 02 is a hand-curated lesson model. These IDs are permanent recording,
+// progress, saved-phrase and deep-link keys. Keep Study and Practice on the same records.
 const phrase = (number, en, context, section, extra = {}) => ({
-  id: `ch02-p${number}`,
+  id: 'ch02-p' + number,
   en,
   context,
   section,
@@ -10,110 +10,69 @@ const phrase = (number, en, context, section, extra = {}) => ({
 })
 
 export const introductionPhrases = [
-  phrase(
-    1,
-    "Hi, I'm Alex. I'm a friend of Cassie's.",
-    'Give your name and a connection at a gathering.',
-    'introduce',
-    { speaker: 'Alex', portrait: 'portrait-ch02-alex.svg' },
-  ),
-  phrase(
-    2,
-    "I'm Anna. Nice to meet you.",
-    'Introduce yourself and acknowledge the other person.',
-    'introduce',
-    { speaker: 'Anna', portrait: 'portrait-ch02-anna.svg' },
-  ),
-  phrase(3, 'You too.', 'Return the feeling after “Nice to meet you.”', 'introduce', {
+  phrase(1, "Hi, I'm Alex. I'm a friend of Cassie's.", 'Give your name and explain how you know the host.', 'introduce', {
     speaker: 'Alex', portrait: 'portrait-ch02-alex.svg',
   }),
+  phrase(2, "I'm Anna. Nice to meet you.", 'Give your name and greet the person you have just met.', 'introduce', {
+    speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
+  }),
+  phrase(3, 'You too.', 'A short, natural reply to “Nice to meet you.”', 'introduce'),
   phrase(4, 'My name is Alex.', 'Another way to give your name.', 'introduce'),
   phrase(5, 'Nice to meet you too.', 'A fuller reply to “Nice to meet you.”', 'introduce'),
-  phrase(6, 'I work with Cassie.', 'Explain that you are colleagues.', 'introduce'),
-  phrase(7, "I'm on the design team.", 'Identify your team.', 'introduce'),
+  phrase(6, 'I work with Cassie.', 'Explain that you and Cassie are colleagues.', 'introduce'),
+  phrase(7, "I'm on the design team.", 'Identify the team you belong to.', 'introduce'),
   phrase(8, "I'm a teacher.", 'Identify your job.', 'introduce'),
-  phrase(9, "I'm here for the workshop.", 'Explain why you are there.', 'introduce'),
-  phrase(
-    10,
-    "I don't think we've met. I'm Alex.",
-    'Open an introduction when you are unsure whether you have met.',
-    'introduce',
-  ),
-  phrase(
-    11,
-    "Hello, I'm Satoshi. I'm the project manager.",
-    'Give your name and role at a project meeting.',
-    'work',
-    { speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg' },
-  ),
-  phrase(12, "Daniel Reed. It's a pleasure to meet you.", 'A more formal introduction.', 'work', {
+  phrase(9, "I'm here for the workshop.", 'Explain why you are at the event.', 'introduce'),
+  phrase(10, "I don't think we've met. I'm Alex.", 'Start an introduction when you are unsure whether you have met before.', 'introduce'),
+  phrase(11, "Hello, I'm Satoshi. I'm the project manager.", 'Give your name and role at a project meeting.', 'work', {
+    speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
+  }),
+  phrase(12, "Daniel Reed. It's a pleasure to meet you.", 'Give your full name and use a more formal first-meeting greeting.', 'work', {
     speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
   }),
-  phrase(
-    13,
-    'Likewise. Please call me Satoshi.',
-    'Return the feeling and give your preferred name.',
-    'work',
-    { speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg' },
-  ),
-  phrase(
-    14,
-    "Thanks, Satoshi. I'm on the research team.",
-    'Acknowledge the preferred name and explain your role.',
-    'work',
-    { speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg' },
-  ),
-  phrase(15, 'I go by Dan.', 'Tell someone the name you normally use.', 'work'),
-  phrase(
-    16,
-    'How do you do?',
-    'A traditional formal greeting, usually answered with the same greeting.',
-    'work',
-    { register: 'Optional · formal' },
-  ),
-  phrase(
-    17,
-    'Anna, this is my colleague, Sam. Sam, this is Anna.',
-    'Introduce both people to each other.',
-    'connect',
-    { speaker: 'Alex', portrait: 'portrait-ch02-alex.svg' },
-  ),
-  phrase(
-    18,
-    'Nice to meet you, Sam.',
-    'Greet the person you have just been introduced to.',
-    'connect',
-    { speaker: 'Anna', portrait: 'portrait-ch02-anna.svg' },
-  ),
-  phrase(
-    19,
-    'You too. How do you know Alex?',
-    'Return the greeting, then ask about a shared connection.',
-    'connect',
-    { speaker: 'Sam', portrait: 'portrait-ch02-sam.svg' },
-  ),
+  phrase(13, 'Likewise. Please call me Satoshi.', 'Return the greeting and tell the other person your preferred name.', 'work', {
+    speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg',
+  }),
+  phrase(14, "Thanks, Satoshi. I go by Dan. I'm on the research team.", 'Acknowledge the name Satoshi uses, give your own preferred name, and identify your team.', 'work', {
+    speaker: 'Daniel', portrait: 'portrait-ch02-daniel.svg',
+  }),
+  phrase(15, 'I go by Dan.', 'Tell someone the name you normally use, often after giving your full name.', 'work'),
+  phrase(16, 'How do you do?', 'A traditional formal greeting, usually answered with the same greeting.', 'work', {
+    register: 'Optional · formal',
+  }),
+  phrase(17, 'Anna, this is my colleague, Sam. Sam, this is Anna.', 'Introduce both people to each other.', 'connect', {
+    speaker: 'Alex', portrait: 'portrait-ch02-alex.svg',
+  }),
+  phrase(18, 'Nice to meet you, Sam.', 'Greet the person you have just been introduced to.', 'connect', {
+    speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
+  }),
+  phrase(19, 'You too. How do you know Alex?', 'Return the greeting, then ask about a shared connection.', 'connect', {
+    speaker: 'Sam', portrait: 'portrait-ch02-sam.svg',
+  }),
   phrase(20, 'We take a photography class together.', 'Explain a shared activity.', 'connect', {
     speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
   }),
-  phrase(21, "I'd like you to meet Sam.", 'Another way to introduce someone.', 'connect'),
+  phrase(21, "I'd like you to meet Sam.", 'Introduce someone by saying that you want the other person to meet them.', 'connect'),
   phrase(22, 'Have you met Sam?', 'Check whether two people already know each other.', 'connect', {
     speaker: 'Alex', portrait: 'portrait-ch02-alex.svg',
   }),
-  phrase(
-    23,
-    'Yes, we met at the last workshop. Good to see you again, Sam.',
-    'Acknowledge a previous meeting.',
-    'connect',
-    { speaker: 'Anna', portrait: 'portrait-ch02-anna.svg' },
-  ),
-  phrase(
-    24,
-    "It's nice to finally meet in person.",
-    'Meet face to face after talking online.',
-    'connect',
-  ),
-  phrase(25, 'Could you say your name again?', 'Ask to hear a name again.', 'names'),
-  phrase(26, 'How do you spell it?', 'Ask for the letters in a name.', 'names'),
+  phrase(23, 'Yes, we met at the last workshop. Good to see you again, Sam.', 'Acknowledge a previous meeting and greet the person again.', 'connect', {
+    speaker: 'Anna', portrait: 'portrait-ch02-anna.svg',
+  }),
+  phrase(24, "It's nice to finally meet you in person.", 'Meet face to face after talking online.', 'connect'),
+  phrase(25, 'Could you say your name again?', 'Ask someone to repeat a name you did not catch.', 'introduce'),
+  phrase(26, 'How do you spell it?', 'Ask which letters are in a name.', 'introduce'),
+  phrase(27, "I'm ...", 'A natural everyday pattern for giving your name, role, or connection.', 'introduce'),
+  phrase(28, 'My name is ...', 'A direct way to give your name; a little more explicit than “I’m ...”.', 'introduce'),
+  phrase(29, "A friend of Cassie's", 'This explains your connection: Cassie is your friend.', 'introduce'),
+  phrase(30, 'Nice to meet you.', 'A common greeting when you are introduced to someone for the first time.', 'introduce'),
+  phrase(31, "It's a pleasure to meet you.", 'A more formal way to say “Nice to meet you.”', 'work'),
+  phrase(32, 'Likewise.', 'A concise way to say you feel the same way.', 'work'),
+  phrase(33, 'Please call me Satoshi.', 'Tell someone which name you prefer them to use. Replace Satoshi with your own name.', 'work'),
+  phrase(34, 'Hi', 'A casual greeting you can use before giving your name. Chapter 01 introduces it; here it opens an introduction.', 'introduce'),
+  phrase(35, 'This is ...', 'A simple frame for introducing another person. Add their name after this.', 'connect'),
+  phrase(36, "I'd like you to meet ...", 'A polite way to introduce someone. Add the person’s name at the end.', 'connect'),
+  phrase(37, 'What should I call you?', 'Ask someone which name they prefer you to use.', 'work'),
   {
     id: 'ch02-v0',
     en: 'friend',
@@ -151,8 +110,24 @@ export const introductionPhrases = [
 export const introductionById = Object.fromEntries(
   introductionPhrases.map((item) => [item.id, item]),
 )
-const ids = (...numbers) => numbers.map((number) => `ch02-p${number}`)
-const originalIntroductionSections = [
+
+const ids = (...numbers) => numbers.map((number) => 'ch02-p' + number)
+const phraseShelf = (numbers, title, sceneArt, note) => ({
+  type: 'phrases',
+  phrases: ids(...numbers),
+  title,
+  sceneArt,
+  ...(note ? { note } : {}),
+})
+const conversation = (title, numbers, art, alt) => ({
+  type: 'conversation',
+  title,
+  phrases: ids(...numbers),
+  art,
+  alt,
+})
+
+export const introductionSections = [
   {
     id: 'introduce',
     title: 'Say who you are',
@@ -160,28 +135,42 @@ const originalIntroductionSections = [
     blocks: [
       {
         type: 'text',
-        text: 'Start with your name. Then add one detail that helps the other person place you: a friend in common, your role, or why you are there. You do not need to give your whole background.',
+        text: 'At a first meeting, give your name and one detail that helps the other person place you. A shared friend, your role, or the reason you are there can be enough. A short introduction is usually better than a full biography.',
       },
+      phraseShelf([34, 27, 28, 4], 'Start with your name', 'ch02-scene-self-introduction.webp'),
+      conversation(
+        'At a friend’s gathering',
+        [1, 2],
+        'ch02-scene-gathering.webp',
+        'Alex and Anna talking at a friend’s gathering.',
+      ),
       {
-        type: 'conversation',
-        title: 'At a friend’s gathering',
-        art: 'ch02-scene-gathering.webp',
-        alt: 'Alex and Anna talking at a friend’s gathering.',
-        phrases: ids(1, 2, 3),
+        type: 'reply-alternatives',
+        title: 'Two ways to reply',
+        promptId: 'ch02-p30',
+        choices: [
+          { id: 'ch02-p3', label: 'Short' },
+          { id: 'ch02-p5', label: 'Fuller' },
+        ],
       },
       {
         type: 'text',
-        text: 'Alex mentions Cassie to explain the connection. Anna replies with a greeting, and Alex returns it naturally.',
+        text: 'Alex mentions Cassie to explain the connection. Anna gives her name and says “Nice to meet you.” Alex can return the greeting with either reply above.',
       },
-      { type: 'label', text: 'Two useful alternatives' },
-      { type: 'phrases', phrases: ids(4, 5) },
-      { type: 'label', text: 'Choose one detail that fits' },
-      { type: 'phrases', phrases: ids(6, 7, 8, 9) },
+      phraseShelf([29, 6, 7, 8, 9], 'Add one useful detail', 'ch02-scene-gathering.webp', {
+        title: 'Keep it relevant.',
+        text: 'A friend, job, team, or reason for being there can be enough. Choose the detail that fits this meeting.',
+      }),
       {
         type: 'text',
-        text: 'Not sure whether you have met before? Leave room for the other person to recognize you.',
+        text: 'If you are unsure whether you have met before, use a gentle opening that lets the other person recognize you.',
       },
-      { type: 'phrases', phrases: ids(10) },
+      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.webp'),
+      {
+        type: 'text',
+        text: 'If you did not catch someone’s name, ask. You do not need to pretend you heard it.',
+      },
+      phraseShelf([25, 26], 'If you missed the name', 'ch02-scene-self-introduction.webp'),
     ],
   },
   {
@@ -191,182 +180,54 @@ const originalIntroductionSections = [
     blocks: [
       {
         type: 'text',
-        text: 'A full name and a role can be useful at a first meeting. Let the situation and the other person guide how formal you sound.',
+        text: 'At work, give your name and role. If you use a different everyday name, tell the other person naturally. A workplace introduction can still sound friendly.',
       },
-      {
-        type: 'conversation',
-        title: 'At the start of a project meeting',
-        art: 'ch02-scene-project-meeting.webp',
-        alt: 'Satoshi and Daniel introducing themselves at a project meeting.',
-        phrases: ids(11, 12, 13, 14),
-      },
-      {
-        type: 'text',
-        text: 'Daniel’s greeting is a little more formal. Satoshi returns the greeting and tells Daniel what to call them. Daniel uses that name in his reply.',
-      },
-      { type: 'label', text: 'Give the name you use' },
-      { type: 'phrases', phrases: ids(15) },
-      {
-        type: 'note',
-        title: 'Professional can still be friendly.',
-        text: 'The everyday greeting from the first scene also works in many workplaces. Respect someone’s preferred name or title; the location alone does not decide the level of formality.',
-      },
-      { type: 'label', text: 'One formal greeting you may hear' },
-      { type: 'phrases', phrases: ids(16) },
-      {
-        type: 'text',
-        text: 'This is a greeting, not a question about your job. You can reply with the same greeting. It is useful to recognize, but you do not need it for every introduction.',
-      },
+      conversation(
+        'At the start of a project meeting',
+        [11, 12, 13, 14],
+        'ch02-scene-project-meeting.webp',
+        'Satoshi and Daniel introducing themselves at a project meeting.',
+      ),
+      phraseShelf([15, 31, 32, 33, 37], 'Names and greetings at work', 'ch02-scene-self-introduction.webp'),
+      phraseShelf([16], 'One formal greeting you may hear', 'ch02-scene-formal-meeting.webp', {
+        text: 'This is a traditional greeting, not a question about your job. It is useful to recognize, but you do not need it for every introduction.',
+      }),
     ],
   },
   {
     id: 'connect',
-    title: 'Connect two people',
+    title: 'Introduce two people',
     short: 'Introduce others',
     blocks: [
       {
         type: 'text',
-        text: 'Say both names so neither person is left out. A small detail about the connection gives them somewhere to take the conversation.',
+        text: 'Say both names so neither person is left out. Add a small detail about how the people know one another if it helps them continue talking.',
       },
-      {
-        type: 'conversation',
-        title: 'Introducing a colleague to a friend',
-        art: 'ch02-scene-introduce-others.webp',
-        alt: 'Alex introducing her colleague Sam to Anna.',
-        phrases: ids(17, 18, 19, 20),
-      },
-      {
-        type: 'text',
-        text: 'The same introduction frame works for a friend, partner, relative, or colleague. Here is another way to begin.',
-      },
-      { type: 'phrases', phrases: ids(21) },
+      conversation(
+        'Introducing a colleague to a friend',
+        [17, 18, 19, 20],
+        'ch02-scene-introduce-others.webp',
+        'Alex introducing her colleague Sam to Anna.',
+      ),
+      phraseShelf([21, 35, 36], 'Two ways to introduce someone', 'ch02-scene-introduce-others.webp'),
       {
         type: 'text',
-        text: 'If they might already know each other, check first. Respond to what the other person actually says.',
+        text: 'If the people might already know each other, check first. Then respond to what the other person actually says.',
       },
-      { type: 'conversation', title: 'They have met before', phrases: ids(22, 23) },
-      {
-        type: 'note',
-        title: 'Give the conversation room.',
-        text: 'A shared activity is one way to continue. You do not have to ask a personal question immediately after an introduction.',
-      },
-      { type: 'label', text: 'From online to in person' },
-      { type: 'phrases', phrases: ids(24) },
-      {
-        type: 'text',
-        text: 'Use this when you have spoken online and are now meeting face to face. Meeting and seeing expressions are flexible; they are not a rigid test of whether you have ever had contact before.',
-      },
-    ],
-  },
-  {
-    id: 'names',
-    title: 'Make sure you catch the name',
-    short: 'Catch a name',
-    blocks: [
-      {
-        type: 'text',
-        text: 'You do not need to pretend you heard everything. Ask for the name again, or ask for its spelling. Chapter 04 develops these repair skills further.',
-      },
-      { type: 'phrases', phrases: ids(25, 26) },
+      conversation(
+        'They have met before',
+        [22, 23],
+        'ch02-scene-reconnect.webp',
+        'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
+      ),
+      phraseShelf([24], 'From online to in person', 'ch02-scene-online-to-person.webp', {
+        text: 'Use this after speaking online when you are meeting face to face for the first time.',
+      }),
     ],
   },
 ]
 
-
-/*
- * Chapter 02 teaches three things, in this order:
- * introducing yourself → responding → introducing others → catching a name.
- * Each expression is a phrase, each real back-and-forth is a conversation.
- * A greeting response with two natural alternatives gets its own comparison.
- *
- * All 26 original spoken expressions keep their permanent IDs and practice links.
- */
-const [self, work, connect, names] = originalIntroductionSections
-const phraseShelf = (numbers, title, sceneArt, note) => ({
-  type: 'phrases',
-  phrases: numbers.map((number) => `ch02-p${number}`),
-  title,
-  sceneArt,
-  ...(note ? { note } : {}),
-})
-export const introductionSections = [
-  {
-    ...self,
-    blocks: [
-      self.blocks[0],
-      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.webp'),
-      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.webp', {
-        title: 'Keep it relevant.',
-        text: 'A friend, job, team, or reason for being there can be enough. You do not need to give your whole background.',
-      }),
-      self.blocks[7],
-      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.webp'),
-      {
-        ...self.blocks[1],
-        title: 'At a friend’s gathering',
-      },
-      self.blocks[2],
-    ],
-  },
-  {
-    ...work,
-    title: 'Respond to an introduction',
-    short: 'Respond',
-    blocks: [
-      {
-        type: 'text',
-        text: 'When someone says “Nice to meet you,” return the feeling. A short reply and a fuller reply are both natural.',
-      },
-      {
-        type: 'reply-alternatives',
-        title: 'Two ways to reply',
-        prompt: 'Nice to meet you.',
-        choices: [
-          { id: 'ch02-p3', label: 'Short' },
-          { id: 'ch02-p5', label: 'Fuller' },
-        ],
-      },
-      work.blocks[0],
-      work.blocks[1],
-      work.blocks[2],
-      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.webp', {
-        title: work.blocks[5].title,
-        text: work.blocks[5].text,
-      }),
-      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.webp', {
-        text: work.blocks[8].text,
-      }),
-    ],
-  },
-  {
-    ...connect,
-    blocks: [
-      connect.blocks[0],
-      connect.blocks[1],
-      connect.blocks[2],
-      phraseShelf([21], 'Another way to introduce someone', 'ch02-scene-introduce-others.webp'),
-      connect.blocks[4],
-      {
-        ...connect.blocks[5],
-        art: 'ch02-scene-reconnect.webp',
-        alt: 'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
-      },
-      connect.blocks[6],
-      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.webp', {
-        text: connect.blocks[9].text,
-      }),
-    ],
-  },
-  {
-    ...names,
-    blocks: [
-      names.blocks[0],
-      phraseShelf([25, 26], 'Ask for a name again', 'ch02-scene-self-introduction.webp'),
-    ],
-  },
-]
-
-// Keep existing saved phrases and shared links useful when entering the pilot.
+// Migrate old rehearsal IDs, saved phrases, and links to the stable curated records.
 export const introductionAliases = {
   'ch02-line10': 'ch02-p1',
   'ch02-line11': 'ch02-p2',
@@ -382,6 +243,30 @@ export const introductionAliases = {
   'ch02-line49': 'ch02-p22',
   'ch02-line50': 'ch02-p23',
   'ch02-v4': 'ch02-p6',
+  'ch02-p112965777075329': 'ch02-p27',
+  'ch02-p244176047606341': 'ch02-p28',
+  'ch02-p9762649518440': 'ch02-p29',
+  'ch02-p113457497400069': 'ch02-p30',
+  'ch02-p183395905865867': 'ch02-p3',
+  'ch02-p257606337646854': 'ch02-p5',
+  'ch02-p225668934901400': 'ch02-p6',
+  'ch02-p242254682004102': 'ch02-p7',
+  'ch02-p165814197450760': 'ch02-p8',
+  'ch02-p53930551993502': 'ch02-p9',
+  'ch02-p40546209141201': 'ch02-p10',
+  'ch02-p89377836719809': 'ch02-p31',
+  'ch02-p103546877069472': 'ch02-p32',
+  'ch02-p167978653676711': 'ch02-p33',
+  'ch02-p194692436570439': 'ch02-p15',
+  'ch02-p36675863763213': 'ch02-p34',
+  'ch02-p252636359137330': 'ch02-p30',
+  'ch02-p158049194780759': 'ch02-p16',
+  'ch02-p162843841720073': 'ch02-p35',
+  'ch02-p54316637154125': 'ch02-p36',
+  'ch02-p258819075097130': 'ch02-p22',
+  'ch02-p263898734650894': 'ch02-p24',
+  'ch02-p88747932635278': 'ch02-p25',
+  'ch02-p245678920191676': 'ch02-p26',
   'phrase-friend': 'ch02-p1',
   'phrase-coworker': 'ch02-p6',
   'first-0': 'ch02-p1',
@@ -395,23 +280,18 @@ export const introductionAliases = {
 export const introductionScenarios = [
   {
     id: 'ch02-b20-0',
-    prompt:
-      'You are Avery, a friend of Taylor’s. Introduce yourself to Morgan at a gathering. Speak both sides of the conversation.',
+    prompt: 'You are Avery, a friend of Taylor’s. Introduce yourself to Morgan at a gathering. When Morgan says “Nice to meet you,” try both natural replies in separate attempts.',
     sample: "Hi, I'm Avery. I'm a friend of Taylor's. — I'm Morgan. Nice to meet you. — You too.",
   },
   {
     id: 'ch02-b20-1',
-    prompt:
-      'You are Taylor Brooks, on the design team. Introduce yourself at a project meeting. Morgan asks what to call you. Give your preferred name.',
-    sample:
-      "I'm Taylor Brooks. I'm on the design team. — What should I call you? — Please call me Taylor.",
+    prompt: 'You are Daniel Reed, a researcher. You normally go by Dan. Meet Satoshi, a project manager. Introduce yourself, explain the name you use, and mention your team.',
+    sample: "Daniel Reed. It's a pleasure to meet you. — Likewise. Please call me Satoshi. — Thanks, Satoshi. I go by Dan. I'm on the research team.",
   },
   {
     id: 'ch02-b20-2',
-    prompt:
-      'Introduce Morgan, a researcher, and Avery to each other. Avery asks how Morgan knows Taylor. They work together.',
-    sample:
-      'Morgan, this is Avery. Avery, this is my colleague Morgan. — Nice to meet you. How do you know Taylor? — We work together.',
+    prompt: 'Introduce Morgan, a researcher, and Avery to each other. Avery asks how Morgan knows Taylor. They work together.',
+    sample: 'Morgan, this is Avery. Avery, this is my colleague Morgan. — Nice to meet you. How do you know Taylor? — We work together.',
   },
   {
     id: 'ch02-b20-3',
@@ -420,9 +300,7 @@ export const introductionScenarios = [
   },
   {
     id: 'ch02-b20-4',
-    prompt:
-      'Put the examples away. Make a three-turn introduction using your own name or an invented identity. Ask for the name again if needed.',
-    sample:
-      'Many answers work. Check: did the other person learn who you are and how you are connected? Did you respond to what they said?',
+    prompt: 'Put the examples away. Make a three-turn introduction using your own name or an invented identity. Ask for the name again if needed.',
+    sample: 'Many answers work. Check: did the other person learn who you are and how you are connected? Did you respond to what they said?',
   },
 ]

@@ -8,9 +8,9 @@ import { runInNewContext } from 'node:vm'
 const source = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
   .replaceAll('export async function ', 'async function ')
   .replaceAll('export function ', 'function ')
-  .replace('import(/* @vite-ignore */ MODULE_URL)', 'Promise.resolve({ KokoroTTS: testModel })')
+  .replaceAll('import(/* @vite-ignore */ MODULE_URL)', 'Promise.resolve({ KokoroTTS: testModel })')
 
-function speechHarness(behavior) {
+function speechHarness(behavior, { gpu = false } = {}) {
   let cancelCount = 0
   let id = 0
   const timers = new Map()
@@ -56,9 +56,12 @@ function speechHarness(behavior) {
       }
     },
   }
+  const navigator = gpu
+    ? { gpu: { requestAdapter: async () => ({ isFallbackAdapter: false }) } }
+    : {}
   const engine = runInNewContext(
     source + '\n({ speakKokoroSpeech, stopKokoroSpeech })',
-    { window, navigator: {}, document: { visibilityState: 'visible' },
+    { window, navigator, document: { visibilityState: 'visible' },
       setTimeout, clearTimeout, console, testModel,
       performance: { now: () => 0 } },
   )
@@ -116,4 +119,28 @@ test('a permanently silent system voice switches to real CPU audio playback', as
   assert.deepEqual(h.playedAudio, ['started'])
   assert.ok(h.events.includes('start:kokoro'))
   assert.ok(!h.events.includes('error'))
+})
+
+test('Kokoro-first Vocabulary on Mac-class WebGPU does not use robotic native speech', async () => {
+  const h = speechHarness('works', { gpu: true })
+  assert.equal(await h.engine.speakKokoroSpeech('good morning', {
+    preferKokoro: true,
+    onStart: source => h.events.push(source),
+  }), true)
+  assert.deepEqual(h.modelCalls, ['webgpu'])
+  assert.deepEqual(h.playedAudio, ['started'])
+  assert.deepEqual(h.events, ['kokoro'])
+  assert.equal(h.spoken.length, 0)
+})
+
+test('Kokoro-first Vocabulary uses CPU when no WebGPU is available', async () => {
+  const h = speechHarness('works')
+  assert.equal(await h.engine.speakKokoroSpeech('good morning', {
+    preferKokoro: true,
+    onStart: source => h.events.push(source),
+  }), true)
+  assert.deepEqual(h.modelCalls, ['wasm'])
+  assert.deepEqual(h.playedAudio, ['started'])
+  assert.deepEqual(h.events, ['kokoro'])
+  assert.equal(h.spoken.length, 0)
 })

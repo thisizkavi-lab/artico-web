@@ -3,6 +3,7 @@ import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
+import KokoroSpeakButton from './KokoroSpeakButton'
 import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
@@ -280,7 +281,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
         aria-expanded={Boolean(revealed)}>
         {body}
       </button>
-    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}</article>
+    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}<KokoroSpeakButton text={term} japanese={japanese} /></article>
 }
 
 export default function VocabularyTopicLesson({ topic, japanese }) {

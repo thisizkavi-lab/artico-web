@@ -89,7 +89,10 @@ export function StudyHome({ store }) {
 
 export function StudyReader({ area, unitId, store }) {
   const modMeta = MODULE_METADATA.find((m) => m.id === area) || MODULE_METADATA[0]
-  const areaUnits = getUnitsForArea(area)
+  const allAreaUnits = getUnitsForArea(area)
+  // Keep the original editorial manual unit addressable by bookmarked links,
+  // but do not make it part of the learner-facing lesson sequence.
+  const areaUnits = allAreaUnits.filter((u) => u.id !== 'ov-how-to-read')
   const requestedUnit = unitId && STUDY_UNIT_BY_ID[unitId]?.area === area ? STUDY_UNIT_BY_ID[unitId] : null
   const currentUnit = requestedUnit || (area === 'overview' ? STUDY_UNIT_BY_ID['ov-what-ielts-measures'] : areaUnits[0]) || null
 
@@ -112,9 +115,10 @@ export function StudyReader({ area, unitId, store }) {
     ? areaUnits.filter((u) => u.title.toLowerCase().includes(filterQuery.toLowerCase()))
     : areaUnits
 
-  const prevUnit = currentUnit ? getPrevUnit(currentUnit.id) : null
+  const prevUnit = currentUnit?.id === 'ov-what-ielts-measures' ? null : currentUnit ? getPrevUnit(currentUnit.id) : null
   const nextUnit = currentUnit ? getNextUnit(currentUnit.id) : null
   const unitIndex = currentUnit ? areaUnits.findIndex((u) => u.id === currentUnit.id) : -1
+  const lessonNumber = unitIndex < 0 ? 'Reference' : unitIndex + 1
   const isLastInModule = unitIndex >= 0 && unitIndex === areaUnits.length - 1
 
   const isRead = currentUnit ? Boolean(store?.state?.notes?.[`study-read-${currentUnit.id}`]) : false
@@ -172,7 +176,7 @@ export function StudyReader({ area, unitId, store }) {
       {currentUnit && (
         <details className="ies-mobile-toc">
           <summary>
-            Contents · Unit {unitIndex + 1} of {areaUnits.length}: {currentUnit.title}
+            Contents · Lesson {lessonNumber} of {areaUnits.length}: {currentUnit.title}
           </summary>
           <div className="ies-mobile-toc-body">{renderTocParts()}</div>
         </details>
@@ -203,7 +207,7 @@ export function StudyReader({ area, unitId, store }) {
             <article className="ies-article" aria-labelledby={`ies-unit-h2-${currentUnit.id}`}>
               <header className="ies-unit-header">
                 <div className="ies-unit-kicker">
-                  <span>Lesson {unitIndex + 1} of {areaUnits.length}</span>
+                  <span>{unitIndex < 0 ? 'Course reference' : 'Lesson ' + lessonNumber + ' of ' + areaUnits.length}</span>
                   {currentUnit.track === 'gt' && <span className="ies-badge ies-badge-gt">General Training</span>}
                 </div>
 

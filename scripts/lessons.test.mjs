@@ -258,6 +258,7 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [4, 5, 1, 2])
   assert.equal(workSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
   assert.ok(introductionById['ch02-p12'].en.includes('I go by Dan.'))
+  assert.ok(!introductionById['ch02-p14'].en.includes('I go by Dan.'), 'Preferred-name expression appears once in the dialogue')
   assert.ok(workSection.blocks.some((block) => block.type === 'phrases' && block.phrases.includes('ch02-p15')))
   assert.ok(connectSection.blocks.filter((block) => block.type === 'conversation').length === 2)
 

@@ -47,8 +47,9 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
   else if (block.type === 'explanation' && block.teachingNote)
     content = (
       <aside className="ar-teaching-note" aria-label={block.teachingNote}>
-        <strong className="ar-teaching-note-title">{block.teachingNote}</strong>
-        <p className="ar-teaching-note-copy"><RichText runs={block.runs} /></p>
+        <span className="ar-teaching-note-title">Note</span>
+        <p className="ar-teaching-note-copy">{block.teachingNote && block.teachingNote !== 'Note'
+          && <strong>{block.teachingNote} </strong>}<RichText runs={block.runs} /></p>
       </aside>
     )
   else if (block.type === 'table')

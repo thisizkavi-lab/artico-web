@@ -282,18 +282,19 @@ test('vocabulary pronunciation reads alternatives, never visual punctuation or e
   assert.equal(vocabularySpokenText('1/2'), 'one half')
   assert.equal(vocabularySpokenText('Hello!'), 'Hello!')
 })
-test('Social Fluency retains Kokoro playback while future recordings remain supported', () => {
+test('Social Fluency uses only owned recordings; Kokoro is confined to vocabulary', () => {
   for (const name of ['components.jsx', 'LessonExperience.jsx', 'ReferencePhraseShelf.jsx', 'GreetingsReferenceStudy.jsx', 'Chapter03Context.jsx']) {
     const source = readFileSync(new URL('./' + name, import.meta.url), 'utf8')
-    assert.ok(source.includes('kokoroSpeech'), name + ' must retain Kokoro playback')
+    assert.ok(!source.includes('kokoroSpeech'), name + ' must not import Kokoro')
+    assert.ok(!source.includes('speakKokoroSpeech'), name + ' must not synthesize speech')
   }
+  const socialAudio = readFileSync(new URL('./components.jsx', import.meta.url), 'utf8')
+  assert.match(socialAudio, /approvedAudio\[id\]/)
   const speaker = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
   assert.match(speaker, /vocabularySpokenText\(text\)/)
   assert.match(speaker, /preferDevice/)
-  const engine = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
-  assert.match(engine, /preferDevice \|\| \(nativeMode && !cached\)/)
-  assert.match(engine, /hasDeviceVoice\(\)/)
 })
+
 test('isolated tea uses a reliable native pronunciation without changing display text', () => {
   assert.equal(vocabularySpokenText('Tea'), 'Tea')
   assert.equal(vocabularySpokenText('tea'), 'tea')
@@ -306,14 +307,23 @@ test('isolated tea uses a reliable native pronunciation without changing display
 })
 
 
-test('speech adapts to older laptops instead of requiring slow CPU inference', () => {
+test('speech starts fast and only considers GPU inference after a deliberate click', () => {
   const source = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
+  const topicView = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
+  const app = readFileSync(new URL('./ArticoWeb.jsx', import.meta.url), 'utf8')
+  assert.match(source, /let nativeMode = true/)
   assert.match(source, /FIRST_SOUND_BUDGET_MS = 1000/)
+  assert.match(source, /function tuneKokoroAfterUserAudio\(\)/)
   assert.match(source, /navigator\.gpu\.requestAdapter\(\)/)
-  assert.match(source, /if \(usable && !nativeMode\) void loadKokoro\(\)/)
+  assert.match(source, /if \(!vendor \|\| \/intel\/i\.test\(vendor\)\) return/)
+  assert.match(source, /window\.requestIdleCallback/)
+  assert.match(source, /if \(!preferDevice && started\) tuneKokoroAfterUserAudio\(\)/)
   assert.match(source, /Promise\.race\(\[/)
   assert.match(source, /if \(modelReady && phrase\.length <= 100\) slowClickCount \+= 1/)
   assert.match(source, /nativeMode && job\.priority === 0/)
   assert.match(source, /item\.localService/)
-  assert.match(source, /const cached = clipCache\.has\(key\)/)
+  assert.doesNotMatch(topicView, /warmKokoroSpeech|prefetchKokoroSpeech/)
+  assert.match(app, /const Home = lazy\(/)
+  assert.match(app, /const Progress = lazy\(/)
+  assert.match(app, /const Courses = lazy\(/)
 })

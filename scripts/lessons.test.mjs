@@ -244,8 +244,13 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   const blocks = introductionSections.flatMap((section) => section.blocks)
   const phraseBlocks = blocks.filter((block) => block.type === 'phrases')
   const conversationBlocks = blocks.filter((block) => block.type === 'conversation')
-  assert.equal(phraseBlocks.length, 9)
+  assert.equal(phraseBlocks.length, 7)
   assert.equal(conversationBlocks.length, 4)
+  const [introduceSection, respondSection, connectSection] = introductionSections
+  assert.equal(introduceSection.blocks.find((block) => block.type === 'conversation')?.title, 'At a friend’s gathering')
+  assert.equal(respondSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
+  assert.ok(connectSection.blocks.filter((block) => block.type === 'conversation').length === 2)
+
   assert.ok(blocks.every((block) => !block.collapsed), 'No Chapter 02 dropdown conversations')
   assert.ok(!blocks.some((block) => ['words', 'vocabulary'].includes(block.type)), 'No vocabulary-card section')
   for (const block of phraseBlocks) {
@@ -256,7 +261,11 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
     assert.ok(block.art?.endsWith('.svg'), `Missing conversation illustration: ${block.title}`)
     assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
   }
-  const displayed = new Set(blocks.flatMap((block) => block.phrases ?? []))
+  const replyBlocks = blocks.filter((block) => block.type === 'reply-alternatives')
+  assert.equal(replyBlocks.length, 1)
+  assert.deepEqual(replyBlocks[0].choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
+  assert.ok(blocks.every((block) => !block.collapsed))
+  const displayed = new Set(blocks.flatMap((block) => [...(block.phrases ?? []), ...(block.choices ?? []).map((choice) => choice.id)]))
   const spoken = Object.values(introductionById).filter((item) => item.section !== 'words').map((item) => item.id)
   assert.deepEqual([...displayed].sort(), spoken.sort())
   const portraits = conversationBlocks.flatMap((block) => block.phrases).map((id) => introductionById[id])

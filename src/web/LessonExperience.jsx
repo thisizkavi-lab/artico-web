@@ -30,9 +30,8 @@ const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 const portraits = {
   Alex: '8508101',
   Casey: '265283458',
-  Maya: '8855619',
-  Eli: '278299',
-  Priya: '277786664',
+  Anna: '278299',
+  Satoshi: '277786664',
   Daniel: '3957303430',
   Sam: '291416',
 }
@@ -320,6 +319,7 @@ function Study({ audioProps, focusedId }) {
                   title={block.title}
                   options={options}
                   initial={Math.max(0, block.phrases.indexOf(focusedId))}
+                  clickToExplain
                   sceneArt={block.sceneArt}
                   note={noteBlock ? { title: noteBlock.title, en: noteBlock.text, ja: noteBlock.text } : undefined}
                   play={(_text, item) => {

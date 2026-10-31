@@ -38,19 +38,19 @@ chapter(
     sceneThemes: ['meeting', 'office', 'introducing', 'introducing'],
     approvedScenes: { 0: 'd5e3b.svg' },
     translations: {
-      "Hi, I'm Maya. I'm a friend of Jordan's.": 'マヤです。ジョーダンの友人です。',
-      "I'm Eli. Nice to meet you.": 'イーライです。はじめまして。',
+      "Hi, I'm Alex. I'm a friend of Cassie's.": 'アレックスです。キャシーの友人です。',
+      "I'm Anna. Nice to meet you.": 'アンナです。はじめまして。',
       'You too.': 'こちらこそ。',
-      "Hello, I'm Priya Shah. I'm the project manager.":
-        'プリヤ・シャーです。プロジェクトマネージャーです。',
+      "Hello, I'm Satoshi. I'm the project manager.":
+        'サトシです。プロジェクトマネージャーです。',
       "Daniel Reed. It's a pleasure to meet you.":
         'ダニエル・リードです。お会いできてうれしいです。',
-      'Likewise. Please call me Priya.': 'こちらこそ。プリヤと呼んでください。',
-      "Thanks, Priya. I'm on the research team.": 'ありがとう、プリヤ。私は調査チームにいます。',
-      'Eli, this is my colleague, Sam. Sam, this is Eli.':
-        'イーライ、同僚のサムです。サム、こちらはイーライです。',
+      'Likewise. Please call me Satoshi.': 'こちらこそ。サトシと呼んでください。',
+      "Thanks, Satoshi. I'm on the research team.": 'ありがとう、サトシ。私は調査チームにいます。',
+      'Anna, this is my colleague, Sam. Sam, this is Anna.':
+        'アンナ、同僚のサムです。サム、こちらはアンナです。',
       'Nice to meet you, Sam.': 'サム、はじめまして。',
-      'You too. How do you know Maya?': 'こちらこそ。マヤとはどんな知り合いですか？',
+      'You too. How do you know Alex?': 'こちらこそ。アレックスとはどんな知り合いですか？',
       'We take a photography class together.': '一緒に写真のクラスに通っています。',
       'Have you met Sam?': 'サムとは会ったことがありますか？',
       'Yes, we met at the last workshop. Good to see you again, Sam.':

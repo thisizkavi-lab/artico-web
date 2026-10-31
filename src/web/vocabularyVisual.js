@@ -1,6 +1,7 @@
 import { vocabularyCourseArt, vocabularyCourseTextOnly } from './vocabularyCourseArt'
 import { vocabularyMaterialArt } from './vocabularyMaterialArt'
 import { vocabularyDimensionsArt } from './vocabularyDimensionsArt'
+import { vocabularyPhysicalPropertiesArt } from './vocabularyPhysicalPropertiesArt'
 import { vocabularyAiGrooming } from './vocabularyAiGrooming'
 import { vocabularyAiFood } from './vocabularyAiFood'
 import { vocabularyAiScene } from './vocabularyAiScene'
@@ -43,6 +44,8 @@ function artworkFor(term, chapter) {
   if (bodyMotion) return bodyMotion
   const course = vocabularyCourseArt(term, chapter)
   if (course) return course
+  const physicalProperties = vocabularyPhysicalPropertiesArt(term, chapter)
+  if (physicalProperties) return physicalProperties
   const material = vocabularyMaterialArt(term, chapter)
   if (material) return material
   const dimension = vocabularyDimensionsArt(term, chapter)

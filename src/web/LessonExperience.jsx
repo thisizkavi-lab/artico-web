@@ -189,7 +189,7 @@ function Study({ audioProps, focusedId }) {
     void speakKokoroSpeech(item.en, { rate: 0.9 })
   }
   return (
-    <div className="ip-reading ar-shared-study">
+    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
       {introductionSections.map((section, index) => (
         <section
           className="ip-section"

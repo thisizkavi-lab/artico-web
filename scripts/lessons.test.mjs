@@ -168,6 +168,35 @@ test('Chapter 04 presents phrase bubbles, phrase/example/meaning tables, and sho
   assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'list').length, 0)
 })
 
+test('Chapter 05 presents likes, opinions, choices, and strong reactions with phrase/example/meaning tables', () => {
+  const model = readLesson('05')
+  assert.equal(model.title, 'Opinions and Preferences')
+  assert.deepEqual(model.study.map((section) => section.title), [
+    'Say what you like and dislike',
+    'Ask for and give an opinion',
+    'Choose between options',
+    'Optional: Strong reactions',
+  ])
+  assert.equal(model.vocabulary.length, 0)
+  assert.equal(model.study.length, 4)
+  for (const section of model.study) {
+    const tables = section.blocks.filter((block) => block.type === 'table')
+    const conversations = section.blocks.filter((block) => block.type === 'conversation')
+    assert.equal(tables.length, 1, section.title)
+    assert.equal(conversations.length, 1, section.title)
+    assert.deepEqual(tables[0].header.map(runs), ['Phrase', 'Example in use', 'What it means'])
+    assert.ok(tables[0].rows.length >= 2 && tables[0].rows.length <= 9)
+    assert.ok(tables[0].phraseCells.every((row) => row[0]), 'each row has a phrase bubble')
+    assert.ok(tables[0].rows.every((row) => row[1].some((run) => run.emphasis)), 'target expression is highlighted in every example')
+    assert.ok(conversations[0].turns.length >= 2 && conversations[0].turns.length <= 4, 'example conversation stays short')
+    assert.ok(conversations[0].turns.some((turn) => turn.runs.some((run) => run.emphasis)), 'target expression is highlighted in the example conversation')
+  }
+  assert.equal(model.study.flatMap((section) => section.blocks).filter((block) => block.type === 'list').length, 0)
+  assert.equal(model.study[0].blocks.filter((block) => block.type === 'explanation').length, 2)
+  assert.equal(model.study[1].blocks.filter((block) => block.type === 'explanation').length, 2)
+  assert.equal(model.study[2].blocks.filter((block) => block.type === 'explanation').length, 2)
+})
+
 test('a Study subsection about practice keeps its teaching examples in Study', () => {
   const source = readFileSync(new URL('src/course/chapters/40-returning-goods.md', root), 'utf8')
   const lesson = parseLesson(source, '40')

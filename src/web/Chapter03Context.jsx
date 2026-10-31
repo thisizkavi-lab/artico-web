@@ -176,14 +176,14 @@ function Speak({ lines, audioProps, kind = 'exchange' }) {
   const phrase = lines.join(' ')
   const matchingId = Object.keys(audioProps?.byId ?? {}).find(id => audioProps.byId[id]?.en === phrase)
   const ready = Boolean(matchingId && approvedAudio[matchingId])
-  return <button type="button" className={kind === 'word' ? 'ar-c03-sound' : 'ar-c03-listen'}
+  return <button type="button" className={kind === 'word' ? 'ar-c03-sound' : `ar-c03-listen${kind === 'compact' ? ' ar-c03-listen-compact' : ''}`}
     disabled={!ready}
     onClick={() => { if (ready) audioProps?.onPlay?.(matchingId) }}
     title={ready
       ? (kind === 'word' ? (language === 'ja' ? '表現だけを聞く' : 'Hear the expression') : (language === 'ja' ? '会話を聞く' : 'Play the exchange'))
       : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}
     aria-label={ready ? (kind === 'word' ? `Hear ${phrase}` : 'Play the exchange') : (language === 'ja' ? '録音は準備中です' : 'Recording coming soon')}>
-    <Glyph name={kind === 'word' ? 'speaker' : 'play'} size={kind === 'word' ? 18 : 17}/>
+    <Glyph name={kind === 'word' ? 'speaker' : 'play'} size={kind === 'word' ? 18 : kind === 'compact' ? 14 : 17}/>
   </button>
 }
 
@@ -204,9 +204,11 @@ function ContextCard({ item, audioProps, language }) {
         <h3 lang="en">{item.word}</h3>
         <Speak lines={[item.word]} audioProps={audioProps} kind="word"/>
       </div>
-      <Speak lines={[item.a, item.b]} audioProps={audioProps}/>
     </div>
     <div className="ar-c03-exchange">
+      <div className="ar-c03-exchange-audio">
+        <Speak lines={[item.a, item.b]} audioProps={audioProps} kind="compact"/>
+      </div>
       <ChatTurn speaker="A" text={item.a}/>
       <ChatTurn speaker="B" text={item.b} mark={mark}/>
     </div>
@@ -220,17 +222,22 @@ function ContextCard({ item, audioProps, language }) {
 function Dialogue({ rows, audioProps, label }) {
   const { language } = useLanguage()
   return <section className="ar-c03-dialogue" aria-label={label}>
-    <div className="ar-c03-dialogue-header">
-      <div>
-        <span className="ar-c03-dialogue-eyebrow">{language === 'ja' ? '長い会話の中では' : 'In a longer conversation'}</span>
-        <h3>{label}</h3>
+    <div className="ar-c03-dialogue-panel">
+      <div className="ar-c03-dialogue-header">
+        <div>
+          <span className="ar-c03-dialogue-eyebrow">{language === 'ja' ? '長い会話の中では' : 'In a longer conversation'}</span>
+          <h3>{label}</h3>
+        </div>
+        <Speak lines={rows.map(row => row[1])} audioProps={audioProps} kind="compact"/>
       </div>
-      <Speak lines={rows.map(row => row[1])} audioProps={audioProps}/>
-    </div>
-    <div className="ar-c03-story">
-      {rows.map(([who,line,focus], i) =>
-        <ChatTurn key={i} speaker={who === 'Lee' ? 'B' : 'A'} text={line} mark={focus || undefined}/>
-      )}
+      <div className="ar-c03-transcript">
+        {rows.map(([who, line, focus], i) =>
+          <div className="ar-c03-transcript-line" key={i}>
+            <span className="ar-c03-transcript-speaker">{who}</span>
+            <p lang="en">{focus ? <Highlight text={line} match={focus}/> : line}</p>
+          </div>
+        )}
+      </div>
     </div>
   </section>
 }

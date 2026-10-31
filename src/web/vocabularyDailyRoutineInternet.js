@@ -7,6 +7,13 @@ export function vocabularyDailyRoutineInternet(term, chapter) {
   if (chapter !== 4) return null
   const key = String(term).toLocaleLowerCase('en').trim()
   const original = manifest.aliases[key] || key
+  // Versioned original scene; preserve other cards' existing art.
+  if (original === 'run errands') {
+    return {
+      type: 'png',
+      src: import.meta.env.BASE_URL + 'vocabulary-curated-04/run-errands-artico-v3.webp',
+    }
+  }
   const photo = manifest.entries[original]
   if (!photo) return null
   // The ten original Work/School/Errands scenes reused older Pexels

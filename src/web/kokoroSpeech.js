@@ -1,6 +1,6 @@
 // Artico's shared, local-first speech player.
-// Audio starts instantly with the system voice on old hardware.
-// On capable GPUs, natural Kokoro speech is an optional on-demand upgrade.
+// Vocabulary uses Kokoro on click: GPU when supported, CPU/WASM otherwise.
+// The device voice remains an explicit optional fallback.
 const MODULE_URL = 'https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/dist/kokoro.web.js'
 const MODEL_ID = 'onnx-community/Kokoro-82M-v1.0-ONNX'
 const CACHE_LIMIT = 96
@@ -28,8 +28,6 @@ let runningJobs = false
 let jobSequence = 0
 let gpuProbe = null
 let nativeMode = true
-let autoTuneStarted = false
-let gpuAdapter = null
 let slowClickCount = 0
 let fastGenerationObserved = false
 let modelReady = false
@@ -50,7 +48,6 @@ function probeGpu() {
       try {
         const adapter = await navigator.gpu.requestAdapter()
         if (!adapter || adapter.isFallbackAdapter) return false
-        gpuAdapter = adapter
         return true
       } catch {
         return false
@@ -93,21 +90,20 @@ async function loadKokoro() {
           })
           engine = 'webgpu'
           modelReady = true
+          nativeMode = false
           return tts
         } catch (error) {
           console.warn('Artico: WebGPU speech unavailable.', error)
         }
       }
-      if (hasDeviceVoice()) {
-        nativeMode = true
-        throw new Error('WebGPU unavailable; prefer immediate device speech.')
-      }
-      // Only run CPU inference if the device has no usable system voice.
+      // Vocabulary defaults to Kokoro even without WebGPU. An older machine
+      // may be slower, but it must not silently switch to a robotic voice.
       const tts = await KokoroTTS.from_pretrained(MODEL_ID, {
         device: 'wasm', dtype: 'q8',
       })
       engine = 'wasm'
       modelReady = true
+      nativeMode = false
       return tts
     })().catch((error) => {
       modelPromise = null // Allow a later tap to retry the download.
@@ -119,53 +115,8 @@ async function loadKokoro() {
   return modelPromise
 }
 
-// The model must NEVER load on page entry. Probe only after a learner has
-// deliberately played audio. Cheap device signals can reject older hardware;
-// a short real inference checks the remaining candidates before Kokoro is used.
-function tuneKokoroAfterUserAudio() {
-  if (autoTuneStarted || typeof window === 'undefined') return
-  autoTuneStarted = true
-  const memory = Number(navigator.deviceMemory) || 0
-  const cores = Number(navigator.hardwareConcurrency) || 0
-  const connection = navigator.connection
-  if (!navigator.gpu || connection?.saveData ||
-      /^(slow-2g|2g|3g)$/.test(connection?.effectiveType || '') ||
-      (memory > 0 && memory < 8) || (cores > 0 && cores < 8)) return
-
-  const evaluate = async () => {
-    if (document.visibilityState === 'hidden') return
-    if (!(await probeGpu())) return
-    // Many older laptops advertise WebGPU but only have slow Intel iGPUs.
-    // Do not download a large model automatically for those machines.
-    const vendor = (gpuAdapter?.info?.vendor || '').toLowerCase()
-    if (!vendor || /intel/i.test(vendor)) return
-    try {
-      const tts = await loadKokoro()
-      const started = performance.now()
-      const result = await tts.generate('Hello.', { voice: 'af_heart' })
-      const elapsed = performance.now() - started
-      if (elapsed > FIRST_SOUND_BUDGET_MS) {
-        nativeMode = true
-        return
-      }
-      cachePut(clipCache, CACHE_LIMIT, clipKey('af_heart', 'Hello.'), result.toBlob())
-      fastGenerationObserved = true
-      nativeMode = false
-    } catch (error) {
-      nativeMode = true
-      console.warn('Artico: automatic natural voice unavailable; staying with fast voice.', error)
-    }
-  }
-  const defer = () => {
-    if (useOfflineModel) return
-    if ('requestIdleCallback' in window)
-      window.requestIdleCallback(() => { void evaluate() })
-    else window.setTimeout(() => { void evaluate() }, 600)
-  }
-  // The first audio response starts immediately; only then may model
-  // initialization run during idle time on promising hardware.
-  defer()
-}
+// Kokoro loads only after a vocabulary Play click; no background GPU probe
+// or model initialization happens when navigating through lessons.
 
 function cachePut(cache, limit, key, value) {
   cache.delete(key)
@@ -325,7 +276,6 @@ function fallbackSpeech(text, rate, callbacks) {
   if (!synth?.speak || !window.SpeechSynthesisUtterance) {
     useOfflineModel = true
     nativeMode = false
-    autoTuneStarted = true
     void speakKokoroSpeech(text, { rate, forceModel: true, ...callbacks })
     return true
   }
@@ -435,7 +385,7 @@ export async function speakKokoroSpeech(text, options = {}) {
   const phrase = String(text ?? '').trim()
   if (!phrase || typeof window === 'undefined') return false
 
-  const { voice = 'af_heart', rate = 1, preferDevice = false, forceModel = false, ...callbacks } = options
+  const { voice = 'af_heart', rate = 1, preferDevice = false, preferKokoro = false, forceModel = false, ...callbacks } = options
   // The explicit Vocabulary setting bypasses an unreliable OS voice entirely.
   if (forceModel) {
     useOfflineModel = true
@@ -453,7 +403,7 @@ export async function speakKokoroSpeech(text, options = {}) {
   const cached = clipCache.has(key)
   // A saved Kokoro clip is instantaneous even on old hardware. For an
   // uncached phrase, let a slow machine use its native voice immediately.
-  if (!forceModel && !useOfflineModel &&
+  if (!preferKokoro && !forceModel && !useOfflineModel &&
       (preferDevice || (nativeMode && !cached) || (!navigator.gpu && !cached))) {
     // Unlock WebAudio while the user gesture is still active. If native voices
     // prove unavailable, offline model audio can later play without autoplay
@@ -463,8 +413,7 @@ export async function speakKokoroSpeech(text, options = {}) {
       ...callbacks,
       onStart: (source) => {
         callbacks.onStart?.(source)
-        // Only start GPU probing after audible speech actually begins.
-        if (!preferDevice) tuneKokoroAfterUserAudio()
+        // Device voice was explicitly selected; don't load Kokoro behind it.
       },
     }
     currentCallbacks = nativeCallbacks
@@ -478,7 +427,7 @@ export async function speakKokoroSpeech(text, options = {}) {
 
   try {
     let blob = clipCache.get(key)
-    if (!blob && hasDeviceVoice()) {
+    if (!blob && !preferKokoro && hasDeviceVoice()) {
       // Keep generation running to fill the cache, but switch to instant
       // device pronunciation rather than trapping the learner in a spinner.
       const generated = getClip(phrase, voice, 2)

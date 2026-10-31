@@ -2,12 +2,12 @@
 // Preserve the visible card exactly; turn alternatives and editorial notes into
 // a separate, natural reading script for the vocabulary speaker only.
 const exactReadings = new Map([
-  ['u.s./usa, america', 'the United States. U S A. America.'],
-  ['u.s./usa', 'the United States. U S A.'],
-  ['u.s.', 'the United States.'],
+  ['u.s./usa, america', 'U S. U S A. America.'],
+  ['u.s./usa', 'U S. U S A.'],
+  ['u.s.', 'U S.'],
   ['usa', 'U S A.'],
-  ['u.k.', 'the United Kingdom.'],
-  ['uk', 'the United Kingdom.'],
+  ['u.k.', 'U K.'],
+  ['uk', 'U K.'],
   ['24/7', 'twenty-four seven'],
   ['1/2', 'one half'],
   ['1/3', 'one third'],
@@ -26,10 +26,10 @@ export function vocabularySpokenText(label) {
     // Parentheses explain spelling, register, or meaning; they aren't speech.
     .replace(/\s*\([^)]*\)/g, '')
     .replace(/\bU\.S\.A\.?(?=\W|$)/gi, 'U S A')
-    .replace(/\bU\.S\.(?=\W|$)/gi, 'the United States')
+    .replace(/\bU\.S\.(?=\W|$)/gi, 'U S')
     .replace(/\bUSA\b/gi, 'U S A')
-    .replace(/\bU\.K\.(?=\W|$)/gi, 'the United Kingdom')
-    .replace(/\bUK\b/g, 'the United Kingdom')
+    .replace(/\bU\.K\.(?=\W|$)/gi, 'U K')
+    .replace(/\bUK\b/g, 'U K')
     .replace(/\bR\s*&\s*D\b/gi, 'R and D')
     .replace(/\bHR\b/g, 'H R')
     // Slash means a list of alternatives, not the word "slash".

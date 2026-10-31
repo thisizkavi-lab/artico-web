@@ -251,20 +251,6 @@
 .vlt-image-card .vlt-visual:has(.vlt-body-sprite){background:#fff}
 
 
-/* Lesson 05: large, clean color swatches drawn as inline SVGs. */
-.vlt-grid.vlt-color-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 30px}
-.vlt-card.vlt-color-card{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0;padding:8px 12px 43px;border:0;border-radius:0;background:transparent;box-shadow:none}
-.vlt-color-card .vlt-visual{display:block;width:100%;height:auto;aspect-ratio:6/5;flex:0 0 auto;border:0;border-radius:0;background:#fff;overflow:hidden}
-.vlt-color-card .vlt-color-swatch{display:block;width:100%;height:100%}
-.vlt-color-card .vlt-card-copy{align-items:center;padding:0 4px 3px;text-align:center}
-.vlt-color-card .vlt-meaning{color:#9b9b9b;font-size:11px;text-align:center}
-.vlt-color-card .vlt-source-note{max-width:280px;text-align:center}
-.vlt-color-card .vlt-hidden-term{margin-top:2px}
-@media(max-width:620px){
-  .vlt-grid.vlt-color-grid{gap:12px 14px}
-  .vlt-card.vlt-color-card{padding:6px 6px 42px}
-  .vlt-color-card .vlt-meaning{font-size:10px}
-}
-@media(max-width:380px){
-  .vlt-grid.vlt-color-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
+/* Lesson 05: the SVG is only the picture; its card uses the standard image-card frame. */
+.vlt-color-swatch{display:block;width:100%;height:100%}
+.vlt-image-card .vlt-visual:has(.vlt-color-swatch){background:#fff}

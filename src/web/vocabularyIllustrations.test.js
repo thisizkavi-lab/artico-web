@@ -305,3 +305,20 @@ test('Chapter 98 has independent, bottom-right sound controls in every card layo
   assert.match(countries, /<KokoroSpeakButton text=\{phrase\.en\}/)
   assert.match(speech, /speakKokoroSpeech\(spoken,/)
 })
+
+
+test('Lesson 05 SVG swatches are image-only and use the standard vocabulary card layout',()=>{
+  const colorSwatch=load('VocabularyColorSwatch.jsx')
+  assert.ok(colorSwatch.includes('<svg className="vlt-color-swatch"'))
+  assert.ok(colorSwatch.includes('<path d={blobShapes[variant % blobShapes.length]} fill={color} />'))
+  assert.ok(!colorSwatch.includes('<text'),'The color name belongs in the normal card text, not inside the SVG')
+  assert.ok(!colorSwatch.includes('showLabel'))
+  assert.ok(colorSwatch.includes('aria-hidden="true"'))
+  assert.ok(!view.includes('isColorSwatch'))
+  assert.ok(!view.includes('vlt-color-card'))
+  assert.ok(!view.includes('vlt-color-grid'))
+  assert.ok(view.includes("const cardType = visual ? ' vlt-image-card' : ' vlt-text-card'"))
+  assert.ok(view.includes('{!answerHidden\n          ? <strong className="vlt-term" lang="en">{term}</strong>'))
+  assert.ok(!load('vocabulary-topic.css').includes('vlt-color-card'))
+  assert.ok(!load('vocabulary-topic.css').includes('vlt-color-grid'))
+})

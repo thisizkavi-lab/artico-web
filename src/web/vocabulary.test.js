@@ -5,7 +5,7 @@ import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01.js'
 import { numberGroups } from './vocabularyLesson02.js'
-import { vocabularySpokenText } from './vocabularySpokenText.js'
+import { vocabularySpokenText, vocabularyPrefersDeviceVoice } from './vocabularySpokenText.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
 const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
@@ -282,12 +282,24 @@ test('vocabulary pronunciation reads alternatives, never visual punctuation or e
   assert.equal(vocabularySpokenText('1/2'), 'one half')
   assert.equal(vocabularySpokenText('Hello!'), 'Hello!')
 })
-test('Social Fluency is recording-only; Kokoro remains a vocabulary feature', () => {
+test('Social Fluency retains Kokoro playback while future recordings remain supported', () => {
   for (const name of ['components.jsx', 'LessonExperience.jsx', 'ReferencePhraseShelf.jsx', 'GreetingsReferenceStudy.jsx', 'Chapter03Context.jsx']) {
     const source = readFileSync(new URL('./' + name, import.meta.url), 'utf8')
-    assert.ok(!source.includes('kokoroSpeech'), name + ' must not import the Kokoro engine')
-    assert.ok(!source.includes('speakKokoroSpeech'), name + ' must not trigger synthesized audio')
+    assert.ok(source.includes('kokoroSpeech'), name + ' must retain Kokoro playback')
   }
   const speaker = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
   assert.match(speaker, /vocabularySpokenText\(text\)/)
+  assert.match(speaker, /preferDevice/)
+  const engine = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
+  assert.match(engine, /preferDevice && window\.speechSynthesis/)
+})
+test('isolated tea uses a reliable native pronunciation without changing display text', () => {
+  assert.equal(vocabularySpokenText('Tea'), 'Tea')
+  assert.equal(vocabularySpokenText('tea'), 'tea')
+  assert.equal(vocabularyPrefersDeviceVoice('tea'), true)
+  assert.equal(vocabularyPrefersDeviceVoice('Tea.'), true)
+  assert.equal(vocabularyPrefersDeviceVoice('tea (drink)'), true)
+  assert.equal(vocabularyPrefersDeviceVoice('coffee'), false)
+  assert.equal(vocabularyPrefersDeviceVoice('iced tea'), false)
+  assert.equal(vocabularyPrefersDeviceVoice('teacher'), false)
 })

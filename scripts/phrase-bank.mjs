@@ -67,7 +67,7 @@ export function addPhraseBank(lesson) {
       } else if (block.type === 'table') {
         const headers = block.header.map(plain)
         const columns = headers.flatMap((header, index) =>
-          /^(?:words?|expression|reply|response|pattern|term|form|action|sport|tool|activity words|original example|example|useful phrase|phrase|spoken form|a clear way to say it|something you can say|possible response|place|at the table)$/i.test(
+          /^(?:words?|expression|reply|response|pattern|term|form|action|sport|tool|activity words|original example|example|useful phrase|phrase|spoken form|a clear way to say it|something you can say|possible response|place|at the table|表現|使い方の例|例文|英語のフレーズ)$/i.test(
             header,
           ) ||
           (header === 'Choice' && headers[1] === 'Meaning in this setting')

@@ -128,11 +128,11 @@ function Conversation({ title, titleJa, lines, scene = 'people', note, compact =
   return <article className={'ar-card ar-conversation' + (compact ? ' ar-compact-conversation' : '')}>
     <div className="ar-conversation-heading">
       <p className="ar-overline">{title}{language === 'ja' && titleJa && <small lang="ja">{titleJa}</small>}</p>
+      <button type="button" className="ar-play" onClick={() => play(lines.map(l=>l.text))} aria-label={'Play '+title}><PlaySymbol full/></button>
     </div>
     <div className="ar-conversation-content">
       <PeopleScene kind={scene} compact={compact}/>
       <div className="ar-dialogue">
-        <button type="button" className="ar-play" onClick={() => play(lines.map(l=>l.text))} aria-label={'Play '+title}><PlaySymbol full/></button>
         <div className="ar-turns">
           {lines.map((line,i)=><div className={'ar-turn'+(line.who === 'Casey'?' ar-right':'')} key={i}>
             <Speaker name={line.who}/>

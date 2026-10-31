@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useLanguage } from './Language'
 import { approvedAudio } from './components'
-import { speakKokoroSpeech, stopKokoroSpeech, prefetchKokoroSpeech } from './kokoroSpeech'
 
 const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
@@ -14,18 +13,9 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
   const current = items[selected] || items[0]
   const hasCompleteArt = items.length > 0 && items.every(item => Boolean(item.art))
 
-  useEffect(() => () => stopKokoroSpeech(), [])
-
   function play(item, index) {
     setSelected(index)
-    if (approvedAudio[item.id]) {
-      stopKokoroSpeech()
-      audioProps.onPlay(item.id)
-      return
-    }
-    audioProps?.audio?.stop?.()
-    void speakKokoroSpeech(item.en, { rate: 0.91 })
-    prefetchKokoroSpeech(items.slice(index + 1, index + 3).map(next => next.en))
+    if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
 
   if (!items.length) return null
@@ -38,13 +28,13 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
         <img src={art(current.art)} alt="" loading="lazy" />
       </div>}
       <div className="ar-reference-shelf-main">
-        <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? 'フレーズを選んで発音を聞く' : 'Listen to a phrase'}>
+        <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? 'フレーズを選ぶ' : 'Choose a phrase'}>
           {items.map((item, index) => (
             <button type="button" key={item.id}
               className={'ar-reference-choice' + (selected === index ? ' is-selected' : '')}
-              aria-pressed={selected === index} onClick={() => play(item, index)} onMouseEnter={() => prefetchKokoroSpeech([item.en])} onFocus={() => prefetchKokoroSpeech([item.en])}>
+              aria-pressed={selected === index} onClick={() => play(item, index)}>
               <span lang="en">{item.en}</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z M15 9a5 5 0 0 1 0 6 M18 6a9 9 0 0 1 0 12"/></svg>
+              {approvedAudio[item.id] && <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z M15 9a5 5 0 0 1 0 6 M18 6a9 9 0 0 1 0 12"/></svg>}
             </button>
           ))}
         </div>

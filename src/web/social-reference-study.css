@@ -1387,3 +1387,43 @@
   .ip-page .ar-shared-study .ip-word img { height: 100px; }
   .ip-page .ar-shared-study .ar-scene-heading h3 { font-size: 13px; }
 }
+
+
+/* Phrase headings participate in the grid instead of floating over content. */
+.ip-page .ar-shared-study .ar-reference-shelf {
+  grid-template-areas: "heading heading" "art phrases" "note note";
+  grid-template-rows: auto auto auto;
+  padding: 14px 16px 13px;
+  row-gap: 12px;
+}
+.ip-page .ar-shared-study .ar-reference-no-art {
+  grid-template-areas: "heading" "phrases" "note";
+}
+.ip-page .ar-shared-study .ar-reference-heading {
+  grid-area: heading;
+  margin: 0;
+  padding-left: 11px;
+  border-left: 2px solid #cdd8e5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #53647a;
+}
+@media(max-width:820px) {
+  .ip-page .ar-shared-study .ar-reference-shelf {
+    grid-template-areas: "heading" "art" "phrases" "note";
+  }
+  .ip-page .ar-shared-study .ar-reference-no-art {
+    grid-template-areas: "heading" "phrases" "note";
+  }
+}
+@media(max-width:620px) {
+  .ip-page .ar-shared-study .ar-reference-shelf {
+    padding: 12px 11px 11px;
+  }
+  .ip-page .ar-shared-study .ar-reference-heading {
+    font-size: 14px;
+    padding-left: 9px;
+  }
+}

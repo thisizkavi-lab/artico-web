@@ -254,3 +254,20 @@
 /* Lesson 05: the SVG is only the picture; its card uses the standard image-card frame. */
 .vlt-color-swatch{display:block;width:100%;height:100%}
 .vlt-image-card .vlt-visual:has(.vlt-color-swatch){background:#fff}
+
+
+/* Soft, luminous vocabulary flashcards.
+   Fade only the white card surface; keep illustrations, labels, and audio controls crisp. */
+.vlt-card.vlt-image-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(247,251,255,.70));
+  border-color:rgba(205,223,244,.78);
+  box-shadow:0 0 0 1px rgba(255,255,255,.66),0 0 19px rgba(158,201,248,.25),0 8px 24px rgba(42,77,116,.04);
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+}
+.vlt-card.vlt-recall-card.vlt-image-card:hover,
+.vlt-card.vlt-recall-card.vlt-image-card.is-revealed{
+  background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(241,248,255,.78));
+  border-color:rgba(152,187,230,.85);
+  box-shadow:0 0 0 1px rgba(255,255,255,.75),0 0 23px rgba(142,190,248,.33),0 9px 25px rgba(42,77,116,.05);
+}

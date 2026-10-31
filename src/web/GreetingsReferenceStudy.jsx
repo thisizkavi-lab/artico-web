@@ -155,24 +155,34 @@ function SectionHead({ index, title, titleJa, description, descriptionJa }) {
   </header>
 }
 
-function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, captions = false, note, play }) {
+export function PhraseShelf({ title, titleJa, options, scene = 'people', initial = 0, captions = false, note, play, sceneArt }) {
   const { language } = useLanguage()
   const [selected, setSelected] = useState(initial)
   const option = options[selected] || options[0]
-  return <article className="ar-card ar-phrase-shelf">
-    <PeopleScene kind={scene}/>
+  const phraseArt = sceneArt
+    ? `${import.meta.env.BASE_URL}assets/course/${sceneArt}`
+    : null
+  return <article className={'ar-card ar-phrase-shelf' + (sceneArt ? ' ar-ch02-phrase-shelf' : '')}>
+    {sceneArt
+      ? <div className="ar-scene ar-illustrated-scene ar-ch02-phrase-art">
+          <img className="ar-scene-illustration" src={phraseArt} alt="" loading="lazy" decoding="async" />
+        </div>
+      : <PeopleScene kind={scene}/>}
     <div className="ar-shelf-body">
       <div className="ar-shelf-heading"><h3>{title}{language === 'ja' && titleJa && <small lang="ja">{titleJa}</small>}</h3>{captions && <span>{options.length} expressions</span>}</div>
       <div className="ar-speech-choices">
-        {options.map((item,i)=><button key={item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);play(item.text)}}>
-          <span className="ar-choice-content"><span lang="en">{item.text}</span>{language === 'ja' && jpPhrase[item.text] && <small lang="ja">{jpPhrase[item.text]}</small>}</span><PlaySymbol/><span className="ar-tail" aria-hidden="true"/>
+        {options.map((item,i)=><button key={item.id || item.text} type="button" className={'ar-speech' + (selected===i?' ar-selected':'')} aria-pressed={selected===i} onClick={()=>{setSelected(i);play(item.text, item)}}>
+          <span className="ar-choice-content"><span lang="en">{item.text}</span>{language === 'ja' && (item.ja || jpPhrase[item.text]) && <small lang="ja">{item.ja || jpPhrase[item.text]}</small>}</span>
+          {(!item.id || approvedAudio[item.id]) && <PlaySymbol/>}
+          <span className="ar-tail" aria-hidden="true"/>
         </button>)}
       </div>
-      <div className="ar-context" aria-live="polite">{language === 'ja' ? jpContext[option.text] || option.description : option.description}</div>
+      <div className="ar-context" aria-live="polite">{language === 'ja' ? option.contextJa || jpContext[option.text] || option.description : option.description}</div>
     </div>
-    {note && <aside className="ar-note ar-shelf-note"><span className="ar-note-label">Note</span><p className="ar-note-copy">{language === 'ja' ? note.ja : note.en}</p></aside>}
+    {note && <aside className="ar-note ar-shelf-note"><span className="ar-note-label">Note</span><p className="ar-note-copy">{note.title && <strong>{note.title} </strong>}{language === 'ja' ? note.ja : note.en}</p></aside>}
   </article>
 }
+
 
 const shelfEveryday = [
   {text:'Hi.',description:'A short, natural greeting to open contact in almost any everyday or workplace situation.'},

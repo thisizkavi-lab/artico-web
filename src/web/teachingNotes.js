@@ -9,7 +9,9 @@
 const editorialTitles = {
   'ch03-b2': 'Small words, different jobs',
   'ch03-b11': 'Listening is not the same as agreeing',
-  'ch04-b2': 'What these expressions really mean',
+  'ch04-b2': 'Ask about the detail you missed',
+  'ch04-b5': 'Ask about the expression, not the whole sentence',
+  'ch04-b8': 'Confirm the steps before you move on',
   'ch05-b4': 'Two uses of “I’m good”',
   'ch06-b8': 'Understanding is not necessarily agreeing',
   'ch08-b11': '“You shouldn’t have” can express gratitude',
@@ -29,7 +31,9 @@ const editorialTitles = {
 const editorialJapaneseTitles = {
   'ch03-b2': '短い言葉にも、それぞれの役割がある',
   'ch03-b11': '聞いていることと、賛成することは別',
-  'ch04-b2': '表現の意味を確認する',
+  'ch04-b2': '聞き逃した部分だけを尋ねる',
+  'ch04-b5': '文全体ではなく、表現の意味を尋ねる',
+  'ch04-b8': '次に進む前に手順を確認する',
   'ch05-b4': '“I’m good” の二つの使い方',
   'ch06-b8': '理解と賛成は同じではない',
   'ch08-b11': '“You shouldn’t have” は感謝も表す',

@@ -137,7 +137,7 @@ function Conversation({ block, audioProps, focusedId }) {
         <ConversationAudio block={block} audioProps={audioProps} />
       </header>
       {block.art && <div className="ip-scene-setting">
-        <img src={art(block.art)} alt={block.alt} width="560" height="280" loading="lazy" />
+        <img src={art(block.art)} alt={block.alt} width="760" height="476" loading="lazy" />
       </div>}
       <div className="ip-conversation" aria-label={block.title}>
         {block.phrases.map((id, index) => {
@@ -309,7 +309,7 @@ function Study({ audioProps, focusedId }) {
               const options = block.phrases
                 .map((id) => introductionById[id])
                 .filter(Boolean)
-                .map((item) => ({ ...item, text: item.en, description: item.context }))
+                .map((item) => ({ ...item, text: item.en, description: item.context, contextJa: item.context }))
               const noteBlock = section.blocks[blockIndex + 1]?.type === 'note'
                 ? section.blocks[blockIndex + 1]
                 : undefined

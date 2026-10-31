@@ -52,7 +52,7 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
-      - name: Download and verify 58 curated Pexels Lesson 04 photos
+      - name: Install ten original Meals illustrations and validate remaining Lesson 04 artwork
         run: python3 scripts/fetch_lesson04_public_domain.py
 
       - name: Cache Artico handwriting worksheets
@@ -182,7 +182,7 @@ jobs:
           test "$(find dist/audio/tongue-twisters/ga-v01 -maxdepth 1 -name '*.mp3' -type f | wc -l)" -eq 267
           test -s dist/audio/tongue-twisters/ga-v01/tt-24-betty-botter--study-full--natural--en-us--v01.mp3
 
-      - name: Verify all 58 curated Lesson 04 photos are included
+      - name: Verify all 58 sourced and original Lesson 04 images are included
         run: |
           python3 - <<'PY'
           import json,pathlib

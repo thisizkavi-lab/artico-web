@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch and verify individually curated licensed Pexels photos for Lesson 04.
+"""Install original AI illustrations and verify licensed Pexels photos for Lesson 04.
 
 The source catalog contains the photographer's original photo-page URL, the
 Pexels asset ID, the matching headword and the intended visual meaning.
@@ -7,6 +7,8 @@ Images are served locally by Artico; no external runtime hotlinks.
 """
 import io
 import json
+import hashlib
+import zipfile
 import pathlib
 import time
 import urllib.error
@@ -17,6 +19,30 @@ root = pathlib.Path(__file__).resolve().parent.parent
 catalog = json.loads((root / "src/web/vocabularyDailyRoutineSources.json").read_text(encoding="utf-8"))
 target = root / "public/vocabulary-curated-04"
 target.mkdir(parents=True, exist_ok=True)
+# The ten approved illustrated Meal & Drinks scenes are packaged as a binary
+# archive in the repository. Hydrate them before validating the original
+# artwork or fetching unrelated Pexels photographs.
+art_archive = target / "generated-meals-hd.zip"
+expected_hash = "6c38991a42f3911999693cee7da36483a5fee00a1ee9af6ccea905478710777c"
+if not art_archive.is_file() or hashlib.sha256(art_archive.read_bytes()).hexdigest() != expected_hash:
+    raise RuntimeError("Generated meals archive is missing or its contents changed")
+meal_scenes = {
+    e["file"] + ".webp"
+    for e in catalog["entries"].values()
+    if e.get("assetType") == "original-ai-generated" and e.get("section", "").startswith("02")
+}
+assert len(meal_scenes) == 10, meal_scenes
+with zipfile.ZipFile(art_archive) as z:
+    assert set(z.namelist()) == meal_scenes, "Generated image assets do not match the manifest"
+    for name in sorted(meal_scenes):
+        image_bytes = z.read(name)
+        with Image.open(io.BytesIO(image_bytes)) as asset:
+            asset.verify()
+        with Image.open(io.BytesIO(image_bytes)) as asset:
+            assert asset.format == "WEBP" and asset.size == (608, 384), (name, asset.size, asset.format)
+        (target / name).write_bytes(image_bytes)
+        assert len(image_bytes) > 4000, name
+print("Installed and validated", len(meal_scenes), "original Artico meal illustrations")
 assert catalog["schema"] == 2 and catalog["source"].startswith("Pexels")
 assert len(catalog["entries"]) >= 58, "Photo catalog is incomplete"
 pexels_entries = [v for v in catalog["entries"].values() if v.get("assetType") != "original-ai-generated"]
@@ -93,4 +119,4 @@ for term, item in catalog["entries"].items():
                 time.sleep(attempt + 1)
     else:
         raise RuntimeError(f"Missing or invalid Pexels photo for {term}: {source}: {error}")
-print(f"Verified {len(catalog['entries'])} source-matched real photographs")
+print(f"Verified {len(catalog['entries'])} source-matched original scenes and real photographs")

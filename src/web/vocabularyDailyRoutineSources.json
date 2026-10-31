@@ -4,7 +4,7 @@
   "licenseUrl": "https://www.pexels.com/license/",
   "source": "Pexels real-life photographs plus one Artico original generated scene",
   "editorialStandard": "Objects have object photographs. Actions show people doing the actions. No symbol compositions.",
-  "note": "Pexels images are sourced and licensed individually. One original generated bedtime scene is stored locally, not attributed to Pexels. All asset files are local.",
+  "note": "47 source-tracked Pexels photographs and 11 original Artico generated scenes (ten Meals and drinks plus bedtime). Generated art is self-hosted, not attributed to Pexels.",
   "aliases": {
     "have breakfast": "eat breakfast",
     "have lunch": "eat lunch",
@@ -51,83 +51,123 @@
     },
     "breakfast": {
       "file": "breakfast",
-      "pexelsId": 10720381,
-      "sourcePage": "https://www.pexels.com/photo/close-up-of-breakfast-on-restaurant-table-10720381/",
-      "sourceImage": "https://images.pexels.com/photos/10720381/pexels-photo-10720381.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Breakfast plate with eggs and toast"
+      "scene": "A cooked breakfast plate with toast, eggs and juice",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "lunch": {
       "file": "lunch",
-      "pexelsId": 11115956,
-      "sourcePage": "https://www.pexels.com/photo/close-up-of-a-sandwich-on-a-table-11115956/",
-      "sourceImage": "https://images.pexels.com/photos/11115956/pexels-photo-11115956.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Sandwich prepared for lunch"
+      "scene": "A lunch sandwich plate with salad and fries",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "dinner": {
       "file": "dinner",
-      "pexelsId": 23961475,
-      "sourcePage": "https://www.pexels.com/photo/chicken-and-salad-on-a-plate-23961475/",
-      "sourceImage": "https://images.pexels.com/photos/23961475/pexels-photo-23961475.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Cooked meal with chicken and vegetables"
+      "scene": "A plated dinner with rice, vegetables and soup",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "coffee": {
       "file": "coffee",
-      "pexelsId": 9146638,
-      "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-a-cup-of-coffee-9146638/",
-      "sourceImage": "https://images.pexels.com/photos/9146638/pexels-photo-9146638.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Cup of brewed coffee"
+      "scene": "A steaming cup of coffee",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "tea": {
       "file": "tea",
-      "pexelsId": 6653904,
-      "sourcePage": "https://www.pexels.com/photo/close-up-shot-of-a-person-pouring-a-tea-on-a-cup-6653904/",
-      "sourceImage": "https://images.pexels.com/photos/6653904/pexels-photo-6653904.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Tea poured from a teapot into cup"
+      "scene": "A teacup and teapot",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "eat breakfast": {
       "file": "eat-breakfast",
-      "pexelsId": 4867899,
-      "sourcePage": "https://www.pexels.com/photo/little-boy-eating-cereal-4867899/",
-      "sourceImage": "https://images.pexels.com/photos/4867899/pexels-photo-4867899.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Person eating breakfast cereal"
+      "scene": "A person eating toast at the breakfast table",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "eat lunch": {
       "file": "eat-lunch",
-      "pexelsId": 4098888,
-      "sourcePage": "https://www.pexels.com/photo/a-woman-sitting-at-the-table-while-eating-4098888/",
-      "sourceImage": "https://images.pexels.com/photos/4098888/pexels-photo-4098888.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Person eating lunch at table"
+      "scene": "A person eating a sandwich beside a lunchbox",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "eat dinner": {
       "file": "eat-dinner",
-      "pexelsId": 11368700,
-      "sourcePage": "https://www.pexels.com/photo/a-family-having-dinner-at-a-table-11368700/",
-      "sourceImage": "https://images.pexels.com/photos/11368700/pexels-photo-11368700.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Family eating dinner at table"
+      "scene": "A person eating a cooked dinner with chopsticks",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "make breakfast": {
       "file": "make-breakfast",
-      "pexelsId": 7282400,
-      "sourcePage": "https://www.pexels.com/photo/frying-of-an-egg-on-a-pan-7282400/",
-      "sourceImage": "https://images.pexels.com/photos/7282400/pexels-photo-7282400.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Person cracking egg into frying pan"
+      "scene": "A person frying eggs for breakfast at a stove",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "cook dinner": {
       "file": "cook-dinner",
-      "pexelsId": 5692183,
-      "sourcePage": "https://www.pexels.com/photo/senior-asian-woman-cooking-dinner-in-modern-kitchen-5692183/",
-      "sourceImage": "https://images.pexels.com/photos/5692183/pexels-photo-5692183.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico / OpenAI image generation",
       "section": "02 — Meals and drinks",
-      "scene": "Person cooking food in saucepan"
+      "scene": "A person stirring dinner ingredients in a hot frying pan",
+      "pixelSize": "608x384",
+      "format": "webp",
+      "sourcePackage": "generated-meals-hd.zip",
+      "sourcePage": null,
+      "sourceImage": null
     },
     "drink tea or coffee": {
       "file": "drink-tea-or-coffee",

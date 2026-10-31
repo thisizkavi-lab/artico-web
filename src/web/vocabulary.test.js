@@ -331,3 +331,22 @@ test('speech starts fast and only considers GPU inference after a deliberate cli
   assert.match(app, /const Progress = lazy\(/)
   assert.match(app, /const Courses = lazy\(/)
 })
+
+
+test('Vocabulary provides an offline voice override for devices with silent system speech', () => {
+  const view = readFileSync(new URL('./Vocabulary.jsx', import.meta.url), 'utf8')
+  const button = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
+  const engine = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
+  const pref = readFileSync(new URL('./vocabularyVoiceMode.js', import.meta.url), 'utf8')
+  assert.match(view, /<VoiceSettings japanese=\{japanese\}/)
+  assert.match(view, /<option value="offline">/)
+  assert.match(pref, /window\.localStorage\.setItem/)
+  assert.match(button, /readVocabularyVoiceMode\(\) === 'offline'/)
+  assert.match(button, /forceModel: useOfflineVoice/)
+  assert.match(engine, /useOfflineModel = true/)
+  assert.match(engine, /function loadOfflineKokoro\(\)/)
+  assert.match(engine, /device: 'wasm', dtype: 'q8'/)
+  assert.match(engine, /void speakKokoroSpeech\(text, \{/)
+  assert.match(button, /Test speaker/)
+  assert.match(button, /Preparing offline voice/)
+})

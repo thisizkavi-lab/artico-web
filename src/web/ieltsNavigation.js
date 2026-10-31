@@ -1,15 +1,23 @@
 export const IELTS_BASE = '/application/tests/ielts'
+
+// Six learner-facing destinations. Older routes are retained for bookmarks and
+// saved practice attempts; they are not competing top-level menu choices.
 export const ieltsAreas = [
-  { id: 'overview', title: 'Everything about IELTS', icon: 'compass', summary: 'Understand the test, your target, and how to prepare.' },
-  { id: 'speaking', title: 'Speaking', icon: 'microphone', summary: 'Develop an answer. Listen to yourself. Try again.' },
-  { id: 'writing', title: 'Writing', icon: 'pencil', summary: 'Read the task, build a response, and revise with purpose.' },
-  { id: 'listening', title: 'Listening', icon: 'ear', summary: 'Follow meaning, notice corrections, and check the evidence.' },
-  { id: 'reading', title: 'Reading', icon: 'book', summary: 'Find the evidence. Separate what is said from what you assume.' },
-  { id: 'guided', title: 'Guided Sets', icon: 'lightbulb', summary: 'Four annotated workshops. Less help as you progress.' },
-  { id: 'mocks', title: 'Individual Skill Mocks', icon: 'clock', summary: 'Choose a skill and check the conditions before you begin.' },
-  { id: 'simulation', title: 'Full Simulations', icon: 'route', summary: 'Prepare for a linked exam rehearsal without teaching interruptions.' },
+  { id: 'overview', title: 'Everything about IELTS', icon: 'compass', summary: 'Understand the exam, test types, scores, and timing.' },
+  { id: 'listening', title: 'Listening', icon: 'ear', summary: 'Listen, find answers, and understand mistakes.' },
+  { id: 'reading', title: 'Reading', icon: 'book', summary: 'Read passages and find the evidence.' },
+  { id: 'writing', title: 'Writing', icon: 'pencil', summary: 'Learn from examples, then write your own responses.' },
+  { id: 'speaking', title: 'Speaking', icon: 'microphone', summary: 'Hear examples, speak, and review recordings.' },
+  { id: 'mock', title: 'Mock Tests', icon: 'clock', summary: 'Guided examples and realistic timed rehearsals.' },
 ]
-export const ieltsArea = (id) => ieltsAreas.find((area) => area.id === id)
+
+const retainedAreas = [
+  { id: 'guided', title: 'Guided Tests', icon: 'lightbulb' },
+  { id: 'mocks', title: 'Skill Rehearsals', icon: 'clock' },
+  { id: 'simulation', title: 'Simulated Test', icon: 'route' },
+]
+
+export const ieltsArea = (id) => [...ieltsAreas, ...retainedAreas].find((area) => area.id === id)
 export function ieltsPath(area = 'home', mode = 'study', task, attempt) {
   const query = new URLSearchParams()
   if (task) query.set('task', task)

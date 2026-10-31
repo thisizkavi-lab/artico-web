@@ -33,6 +33,16 @@
   background:#315de6;color:#fff;box-shadow:0 2px 6px rgba(49,93,230,.13)
 }
 .ip-page .ar-c03-listen:hover{background:#244dc8}
+/* Playback belongs inside the conversation, never as a competing header action. */
+.ip-page .ar-c03-listen-compact{
+  width:28px;height:28px;min-width:28px;min-height:28px;
+  border:1px solid #e0e6ef;background:#f2f5f9;color:#72839a;box-shadow:none
+}
+.ip-page .ar-c03-listen-compact:hover:not(:disabled){
+  background:#e8eef6;color:#415a79
+}
+.ip-page .ar-c03-listen-compact:disabled{opacity:.62;cursor:not-allowed}
+
 .ip-page .ar-c03-listen:focus-visible,.ip-page .ar-c03-sound:focus-visible{
   outline:3px solid #7da1ea;outline-offset:2px
 }
@@ -41,6 +51,10 @@
   background:#f7f9fc;padding:14px 12px
 }
 /* Let the conversation occupy any extra card height, not the explanation. */
+.ip-page .ar-c03-exchange-audio{
+  display:flex;justify-content:flex-end;align-items:center;
+  min-height:28px;margin:-4px 0 -5px
+}
 .ip-page .ar-c03-card>.ar-c03-exchange{
   flex:1;justify-content:center;margin:0 11px 10px;
   border:1px solid #f0f2f7;border-radius:12px
@@ -91,21 +105,44 @@
   margin:0;color:#7f817e;font-size:11px;font-weight:400;line-height:1.48
 }
 .ip-page .ar-c03-dialogue{
-  min-width:0;background:rgba(255,255,255,.97);padding:14px 16px 16px;
-  border:1px solid #e7ebf2;border-radius:16px;
-  box-shadow:0 1px 7px rgba(40,58,83,.018)
+  min-width:0;margin-top:8px;padding-top:17px;border-top:1px solid #e9edf3
+}
+/* A transcript, not another grid card: fewer surfaces, quieter reading rhythm. */
+.ip-page .ar-c03-dialogue-panel{
+  min-width:0;padding:17px clamp(15px,3vw,26px) 19px;
+  background:#f9fafc;border:1px solid #eef1f5;border-radius:13px
 }
 .ip-page .ar-c03-dialogue-header{
   display:flex;align-items:center;justify-content:space-between;
-  gap:12px;margin:0 0 12px
+  gap:12px;margin-bottom:14px
 }
 .ip-page .ar-c03-dialogue-eyebrow{
-  display:block;margin:0 0 4px;color:#8b95a4;
-  font-size:10.5px;line-height:1.35;font-weight:600
+  display:block;margin-bottom:3px;color:#96a0ae;
+  font-size:10px;line-height:1.4;font-weight:600
 }
-.ip-page .ar-c03-dialogue-header h3{margin:0;color:#394d68;font-size:15px;font-weight:680}
-.ip-page .ar-c03-dialogue .ar-c03-story{
-  border:1px solid #edf0f5;border-radius:11px
+.ip-page .ar-c03-dialogue-header h3{
+  margin:0;color:#506177;font-size:14px;line-height:1.5;font-weight:650
+}
+.ip-page .ar-c03-transcript{
+  display:flex;flex-direction:column;gap:10px;max-width:76ch
+}
+.ip-page .ar-c03-transcript-line{
+  min-width:0;display:grid;grid-template-columns:32px minmax(0,1fr);
+  gap:14px;align-items:start
+}
+.ip-page .ar-c03-transcript-speaker{
+  padding-top:4px;font-size:10.5px;line-height:1.5;
+  font-weight:650;letter-spacing:.01em;color:#8997a8
+}
+.ip-page .ar-c03-transcript-line p{
+  min-width:0;margin:0;color:#394b61;font-size:14px;
+  font-weight:450;line-height:1.65;overflow-wrap:anywhere
+}
+.ip-page .ar-c03-dialogue .ar-c03-mark{
+  padding:0;border-radius:0;background:none;
+  color:var(--ar-c03-highlight-text,#45638b);font-weight:700;
+  text-decoration:underline;text-decoration-color:var(--ar-c03-highlight,#dce8ff);
+  text-decoration-thickness:2px;text-underline-offset:3px
 }
 /* Separate teaching reminders use the same muted annotation treatment. */
 .ip-page .ar-shared-study .ar-c03-lesson-tip{
@@ -198,7 +235,10 @@
  .ip-page .ar-c03-exchange{padding:13px 11px}
  .ip-page .ar-c03-chat-turn{max-width:96%}
  .ip-page .ar-shared-study .ar-c03-card .ar-c03-idea{padding:7px 9px;margin:0 10px 10px}
- .ip-page .ar-c03-dialogue{padding:12px}
+ .ip-page .ar-c03-dialogue-panel{padding:14px 13px 16px}
+ .ip-page .ar-c03-transcript{gap:11px}
+ .ip-page .ar-c03-transcript-line{grid-template-columns:29px minmax(0,1fr);gap:9px}
+ .ip-page .ar-c03-transcript-line p{font-size:13.5px}
  .ip-page .ar-c03-flow{padding:15px 17px 16px}
  .ip-page .ar-c03-question-bubble{width:94%;padding:13px}
  .ip-page .ar-c03-question-wrap{padding-left:10px}

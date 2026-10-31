@@ -281,7 +281,7 @@ test('Lesson 14 animates all actions using distinct motion rigs and accessible p
 })
 
 
-test('Chapter 98 has independent, bottom-left sound controls in every card layout', () => {
+test('Chapter 98 has independent, bottom-right sound controls in every card layout', () => {
   const countries = load('VocabularyCountriesLesson.jsx')
   const numbers = load('VocabularyNumbersLesson.jsx')
   const speech = load('KokoroSpeakButton.jsx')
@@ -293,7 +293,7 @@ test('Chapter 98 has independent, bottom-left sound controls in every card layou
   assert.match(view, /<KokoroSpeakButton text=\{term\} japanese=\{japanese\} upcoming=\{upcoming\}/)
   assert.match(view, /<article className=\{'vlt-card'/)
   assert.match(css, /\.vlt-lesson \.vlt-recall-container > \.artico-speak/)
-  assert.match(css, /bottom: 7px;\s*left: 7px;/)
+  assert.match(css, /bottom: 7px;\s*right: 7px;/)
   // The same speaker is available on both sides of Study/Practice.
   assert.match(numbers, /<KokoroSpeakButton text=\{item\.term\}/)
   assert.match(countries, /className="vl01-country-audio"/)

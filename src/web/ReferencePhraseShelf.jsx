@@ -4,16 +4,16 @@ import { approvedAudio } from './components'
 
 const art = (file) => `${import.meta.env.BASE_URL}assets/course/${file}`
 
-// A reusable teaching panel for Chapters 02–96. Every phrase retains its
-// original ID, context and translation; this component changes only its view.
-export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId }) {
+// Shared visible phrase cards for Social Fluency Chapters 02–96.
+// English target phrases remain primary; explanatory text stays secondary.
+export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title, focusedId, note }) {
   const { language } = useLanguage()
   const items = ids.map(id => byId[id]).filter(Boolean)
   const [selected, setSelected] = useState(() => Math.max(0, ids.indexOf(focusedId)))
   const speechRef = useRef(null)
   const current = items[selected] || items[0]
-  const visible = items.slice(0, 4)
-  const additional = items.slice(4)
+  // Do not substitute generic placeholder figures for missing lesson artwork.
+  const hasCompleteArt = items.length > 0 && items.every(item => Boolean(item.art))
 
   useEffect(() => () => {
     if (typeof window !== 'undefined' && speechRef.current)
@@ -46,44 +46,36 @@ export default function ReferencePhraseShelf({ ids = [], byId, audioProps, title
   if (!items.length) return null
 
   return (
-    <section className="ar-reference-shelf" aria-label={title || (language === 'ja' ? 'フレーズの選択' : 'Choose a phrase')}>
-      <div className="ar-reference-stage" aria-hidden="true">
-        {current.art
-          ? <img src={art(current.art)} alt="" loading="lazy" />
-          : <div className="ar-reference-figures"><i/><i/></div>}
-        {!current.art && <small>{language === 'ja' ? '場面イラスト（準備中）' : 'Placeholder art'}</small>}
-      </div>
+    <section className={'ar-reference-shelf' + (hasCompleteArt ? '' : ' ar-reference-no-art') + (note ? ' ar-reference-with-note' : '')}
+      aria-label={title || (language === 'ja' ? 'フレーズ' : 'Phrases')}>
+      {hasCompleteArt && <div className="ar-reference-stage" aria-hidden="true">
+        <img src={art(current.art)} alt="" loading="lazy" />
+      </div>}
       <div className="ar-reference-shelf-main">
-        <h3>{title || (language === 'ja' ? '表現を選んで聞く' : 'Choose an expression')}</h3>
-        <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? '表現を選ぶ' : 'Select phrase'}>
-          {visible.map((item, index) => (
-            <button type="button" key={item.id} className={'ar-reference-choice' + (selected === index ? ' is-selected' : '')}
-              aria-pressed={selected === index}
-              onClick={() => play(item, index)}>
+        <h3>{title || (language === 'ja' ? 'フレーズ' : 'Phrases')}</h3>
+        <div className="ar-reference-choices" role="group" aria-label={language === 'ja' ? 'フレーズを選んで発音を聞く' : 'Listen to a phrase'}>
+          {items.map((item, index) => (
+            <button type="button" key={item.id}
+              className={'ar-reference-choice' + (selected === index ? ' is-selected' : '')}
+              aria-pressed={selected === index} onClick={() => play(item, index)}>
               <span lang="en">{item.en}</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z M15 9a5 5 0 0 1 0 6 M18 6a9 9 0 0 1 0 12"/></svg>
             </button>
           ))}
         </div>
-        {current && <div className="ar-reference-detail" aria-live="polite">
-          <strong lang="en">{current.en}</strong>
-          {language === 'ja' && current.ja && <p lang="ja">{current.ja}</p>}
-          {current.context && <p>{current.context}</p>}
-        </div>}
-        {additional.length > 0 && <details className="ar-reference-more">
-          <summary>{language === 'ja' ? 'その他の表現' : 'More phrases'} <span>+{additional.length}</span></summary>
-          <div className="ar-reference-more-list">
-            {additional.map((item,index)=><button type="button" key={item.id}
-                className={'ar-reference-more-item' + (selected === index + visible.length ? ' is-selected' : '')}
-                aria-pressed={selected === index + visible.length}
-                onClick={() => play(item, index + visible.length)}>
-                <span><strong lang="en">{item.en}</strong>
-                  {language === 'ja' && item.ja && <small lang="ja">{item.ja}</small>}</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z M15 9a5 5 0 0 1 0 6"/></svg>
-              </button>)}
+        {current && (current.context || (language === 'ja' && (current.ja || current.contextJa))) && (
+          <div className="ar-reference-detail" aria-live="polite">
+            {language === 'ja' && current.ja && <p lang="ja">{current.ja}</p>}
+            {language === 'ja' && current.contextJa
+              ? <p lang="ja">{current.contextJa}</p>
+              : current.context && <p>{current.context}</p>}
           </div>
-        </details>}
+        )}
       </div>
+      {note && <aside className="ar-reference-note">
+        <span className="ar-reference-note-label">Note</span>
+        <p>{note.title && <strong>{note.title} </strong>}{note.text}</p>
+      </aside>}
     </section>
   )
 }

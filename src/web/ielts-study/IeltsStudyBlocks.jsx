@@ -186,10 +186,10 @@ export function ProseBlock({ block }) {
 export function CalloutBlock({ block }) {
   const variant = block.variant || 'method'
   const pillLabels = {
-    requirement: 'Requirement',
-    method: 'Method',
-    option: 'Option',
-    trap: 'Trap',
+    requirement: 'IELTS rule',
+    method: 'How to',
+    option: 'Tip',
+    trap: 'Watch out',
   }
   const sourceUrl = block.sourceUrl || block.link?.url
   const sourceLabel = block.sourceLabel || block.link?.text || 'Check official source'

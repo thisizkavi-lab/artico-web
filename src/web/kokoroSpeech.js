@@ -120,6 +120,11 @@ async function processJobs() {
     while (jobQueue.length) {
       jobQueue.sort((a, b) => b.priority - a.priority || a.sequence - b.sequence)
       const job = jobQueue.shift()
+      if (nativeMode && job.priority === 0) {
+        pendingJobs.delete(job.key)
+        job.reject(new Error('Prefetch skipped in fast-speech mode.'))
+        continue
+      }
       try {
         const start = performance.now()
         const result = await tts.generate(job.text, { voice: job.voice })
@@ -236,8 +241,10 @@ function fallbackSpeech(text, rate, callbacks) {
   const utterance = new window.SpeechSynthesisUtterance(text)
   utterance.lang = 'en-US'
   utterance.rate = rate
-  const voice = window.speechSynthesis.getVoices().find((item) => /^en[-_]US$/i.test(item.lang))
-  if (voice) utterance.voice = voice
+  const voices = window.speechSynthesis.getVoices()
+  const american = voices.find(item => /^en[-_]US$/i.test(item.lang) && item.localService) ||
+    voices.find(item => /^en[-_]US$/i.test(item.lang))
+  if (american) utterance.voice = american
   currentUtterance = utterance
   utterance.onend = () => {
     if (currentUtterance !== utterance) return
@@ -289,9 +296,9 @@ export async function speakKokoroSpeech(text, options = {}) {
       ])
       if (mine !== requestId) return false
       if (outcome.delayed) {
-        slowClickCount += 1
-        // Two slow uncached requests indicate a poor learner experience;
-        // stop scheduling future inference and background prefetch.
+        // A first-time model download is not evidence of slow hardware.
+        // Only classify warmed-up inference on short expressions.
+        if (modelReady && phrase.length <= 100) slowClickCount += 1
         if (slowClickCount >= 2) nativeMode = true
         return fallbackSpeech(phrase, rate, callbacks)
       }

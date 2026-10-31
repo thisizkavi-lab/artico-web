@@ -8,31 +8,31 @@ After a greeting, **I'm** or **My name is** identifies you. A full name, first n
 
 **At a friend's gathering**
 
-**Maya:** Hi, I'm Maya. I'm a friend of Jordan's.  
-**Eli:** I'm Eli. Nice to meet you.  
-**Maya:** You too.  
+**Alex:** Hi, I'm Alex. I'm a friend of Cassie's.  
+**Anna:** I'm Anna. Nice to meet you.  
+**Alex:** You too.  
 
-**A friend of Jordan's** means Jordan is your friend. **Nice to meet you** acknowledges the introduction; **You too** returns that feeling. You can also say the full **Nice to meet you too**.
+**A friend of Cassie's** means Cassie is your friend. **Nice to meet you** acknowledges the introduction; **You too** returns that feeling. You can also say the full **Nice to meet you too**.
 
 Useful personal details:
 
-- **I work with Jordan.** You are colleagues.
+- **I work with Cassie.** You are colleagues.
 - **I'm on the design team.** You identify your team.
 - **I'm a teacher.** You identify your job.
 - **I'm here for the workshop.** You explain why you are there.
 
-You do not have to give your whole background. **I don't think we've met. I'm Maya** can open an introduction when you are unsure whether you have met before.
+You do not have to give your whole background. **I don't think we've met. I'm Alex** can open an introduction when you are unsure whether you have met before.
 
 ## Study: A professional introduction
 
 **At the start of a project meeting**
 
-**Priya:** Hello, I'm Priya Shah. I'm the project manager.  
+**Satoshi:** Hello, I'm Satoshi. I'm the project manager.  
 **Daniel:** Daniel Reed. It's a pleasure to meet you.  
-**Priya:** Likewise. Please call me Priya.  
-**Daniel:** Thanks, Priya. I'm on the research team.  
+**Satoshi:** Likewise. Please call me Satoshi.  
+**Daniel:** Thanks, Satoshi. I'm on the research team.  
 
-**It's a pleasure to meet you** offers a more ceremonious acknowledgment. **Likewise** means you share the feeling. **Please call me Priya** tells the other person how you want to be addressed. **I go by Dan** similarly explains the name you use.
+**It's a pleasure to meet you** offers a more ceremonious acknowledgment. **Likewise** means you share the feeling. **Please call me Satoshi** tells the other person how you want to be addressed. **I go by Dan** similarly explains the name you use.
 
 Professional introductions can also use **Hi** and **Nice to meet you**. The location does not prescribe one level of formality. If someone gives a preferred name or title, you can use that information rather than guessing their preference.
 
@@ -40,15 +40,15 @@ You may encounter **How do you do?** as a formal introductory greeting. It can b
 
 ## Study: Connect two people
 
-**Maya:** Eli, this is my colleague, Sam. Sam, this is Eli.  
-**Eli:** Nice to meet you, Sam.  
-**Sam:** You too. How do you know Maya?  
-**Eli:** We take a photography class together.  
+**Alex:** Anna, this is my colleague, Sam. Sam, this is Anna.  
+**Anna:** Nice to meet you, Sam.  
+**Sam:** You too. How do you know Alex?  
+**Anna:** We take a photography class together.  
 
 **This is...** works for a friend, partner, relative or colleague. **I'd like you to meet...** gives another introduction frame. **Have you met Sam?** checks first:
 
-**Maya:** Have you met Sam?  
-**Eli:** Yes, we met at the last workshop. Good to see you again, Sam.  
+**Alex:** Have you met Sam?  
+**Anna:** Yes, we met at the last workshop. Good to see you again, Sam.  
 
 An introduction should give both people a way to continue. A shared activity is one possibility; an immediate personal question is not required.
 

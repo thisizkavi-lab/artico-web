@@ -1,56 +1,70 @@
-/* Small standalone sound icon: no extra chrome until hover or focus. */
+/* Subtle pronunciation control shared by every Chapter 98 vocabulary card. */
 .artico-speak {
   display: inline-flex;
-  flex: none;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
-  padding: 7px;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
   border: 0;
   border-radius: 50%;
-  color: #53697a;
+  color: #8493a7;
   background: transparent;
   cursor: pointer;
   vertical-align: middle;
   transition: color 140ms ease, background-color 140ms ease;
 }
-.artico-speak svg { width: 20px; height: 20px; }
+.artico-speak svg { display: block; width: 16px; height: 16px; }
 .artico-speak:hover,
 .artico-speak:focus-visible,
 .artico-speak.is-playing {
-  background: rgba(40, 112, 202, .10);
-  color: #2267b4;
+  background: rgba(40, 112, 202, .09);
+  color: #285bcc;
 }
 .artico-speak:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
-.artico-speak.is-loading { opacity: .65; cursor: progress; }
+.artico-speak.is-loading { color: #6484ad; cursor: progress; }
 .artico-speak.is-loading svg { animation: artico-speech-pulse 1s ease-in-out infinite; }
 @keyframes artico-speech-pulse { 50% { opacity: .25; transform: scale(.9); } }
 @media (prefers-reduced-motion: reduce) {
   .artico-speak, .artico-speak svg { animation: none !important; transition: none; }
 }
-.vlt-card { position: relative; }
-.vlt-card > .artico-speak {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  z-index: 1;
-}
-.vlt-card:not(.vlt-recall-card) > .vlt-card-copy { padding-right: 30px; }
-.vl02-table-audio { margin-left: 3px; }
 
-/* Vocabulary country cards have a separate reveal button; never nest buttons. */
-.vl01-card-item { position: relative; }
-.vl01-card-item > .vl01-country-audio,
-.vl01-card-item > .vl01-nationality-audio {
+/* Lessons 03–78: the icon always sits in the bottom-left corner.
+   Reserve enough room so text, pictures and the icon never overlap.
+   In Practice the reveal card is a button; the speaker is its sibling. */
+.vlt-lesson .vlt-card { position: relative; padding-bottom: 43px; }
+.vlt-lesson .vlt-card > .artico-speak,
+.vlt-lesson .vlt-recall-container > .artico-speak {
   position: absolute;
+  bottom: 7px;
+  left: 7px;
   z-index: 2;
-  right: 8px;
 }
-.vl01-card-item > .vl01-country-audio { top: 9px; }
-.vl01-card-item > .vl01-nationality-audio { bottom: 8px; }
-.vl01-card-item .vl01-country-card { padding-right: 42px; }
+.vlt-recall-container { position: relative; display: flex; min-width: 0; }
+.vlt-recall-container > .vlt-recall-card { height: 100%; }
+
+/* Lesson 01: one sound button per country card (country + visible
+   nationality), and one per word or expression card. */
+.vl01-card-item,
+.vl01-word-grid > div,
+.vl01-phrase-grid > div { position: relative; }
+.vl01-card-item > .vl01-country-audio,
+.vl01-word-grid > div > .artico-speak,
+.vl01-phrase-grid > div > .artico-speak {
+  position: absolute;
+  left: 8px;
+  bottom: 7px;
+  z-index: 2;
+}
+.vl01-card-item .vl01-country-card { padding-bottom: 45px; }
+.vl01-word-grid > div,
+.vl01-phrase-grid > div { padding-bottom: 45px; }
+
+/* Number/units/frequency tables are rows, not cards; their speaker
+   remains next to the text rather than floating over table cells. */
+.vl02-table-audio { margin-left: 3px; }
 .vlt-week-days .artico-speak,
 .vlt-month-table .artico-speak,
 .vlt-span-table .artico-speak,
-.vlt-frequency-bars .artico-speak { width: 29px; height: 29px; padding: 5px; }
+.vlt-frequency-bars .artico-speak { width: 30px; height: 30px; padding: 7px; }

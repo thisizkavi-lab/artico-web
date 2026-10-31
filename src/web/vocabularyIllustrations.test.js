@@ -18,7 +18,7 @@ test('all 78 vocabulary sources remain intact after non-destructive deduplicatio
   assert.equal(source.lessons.length,76)
   assert.deepEqual(source.lessons.map(x=>x.sourceLesson),Array.from({length:76},(_,i)=>i+3))
   const rawEntries=source.lessons.flatMap(l=>l.groups.flatMap(g=>g.items))
-  assert.equal(rawEntries.length,3951)
+  assert.equal(rawEntries.length,3952)
   assert.ok(source.lessons.every(l=>l.groups.every(g=>g.items.length>0)))
   assert.ok(rawEntries.every(x=>x[0]&&typeof x[0]==='string'))
   assert.ok(!rawEntries.some(x=>x[0].includes('](https://')))
@@ -188,10 +188,6 @@ test('Lesson 14 body vocabulary has intentional art for every previously unillus
     assert.ok(art.includes("'"+term+"'"),'Missing lesson 14 drawing: '+term)
   for(const term of ['blink','nod','smile'])
     assert.ok(art.includes("'"+term+"'"),'Existing static art should also move: '+term)
-  const userPhoto = new URL('../../public/vocabulary-course/05/plastic-containers.webp', import.meta.url)
-  assert.ok(existsSync(userPhoto), 'Use the supplied real-world plastic containers photograph')
-  assert.ok(statSync(userPhoto).size > 10000, 'Keep the locally bundled plastic photograph intact')
-  assert.ok(material.includes('vocabulary-course/05/plastic-containers.webp'))
   assert.match(visual,/vocabularyBodyIllustration\(term, chapter\)/)
   assert.match(view,/visual\?\.type === 'body-art'/)
   assert.match(motion,/@media\(prefers-reduced-motion:reduce\)/)
@@ -355,11 +351,15 @@ test('Lesson 05 little shows a kitten beside an adult cat, not a repeated mug',(
 })
 
 
-test('Lesson 05 materials and fabrics use nine reviewed CC0 internet images',()=>{
+test('Lesson 05 materials and fabrics use curated internet images and the supplied plastic photo',()=>{
   const material=load('vocabularyMaterialArt.js')
   const visual=load('vocabularyVisual.js')
   const terms=['material / materials (plural)','denim','fabric','glass','leather','metal','paper','plastic','silk']
   for(const term of terms)assert.ok(material.includes(term), 'Missing material image: '+term)
+  const userPhoto = new URL('../../public/vocabulary-course/05/plastic-containers.webp', import.meta.url)
+  assert.ok(existsSync(userPhoto), 'Use the supplied real-world plastic containers photograph')
+  assert.ok(statSync(userPhoto).size > 10000, 'Keep the locally bundled plastic photograph intact')
+  assert.ok(material.includes('vocabulary-course/05/plastic-containers.webp'))
   for(const url of [
     'https://www.publicdomainpictures.net/pictures/780000/velka/material-texture-collage-1776848321uoZ.jpg',
     'https://cdn.meshy.ai/landing-assets/textures/fabric/washed-blue-denim/washed-blue-denim-2k.jpg',

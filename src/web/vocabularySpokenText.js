@@ -55,3 +55,14 @@ export function vocabularySpokenText(label) {
   }
   return cleaned
 }
+
+
+// Some extremely short, isolated words are unstable in Kokoro's generative
+// synthesis even when their phonemes are correct. These learner-critical
+// exceptions use the browser's en-US speech voice rather than guess a spelling.
+const deviceVoiceExceptions = new Set(['tea'])
+
+export function vocabularyPrefersDeviceVoice(label) {
+  const spoken = vocabularySpokenText(label).toLowerCase().replace(/[.!?]+$/, '').trim()
+  return deviceVoiceExceptions.has(spoken)
+}

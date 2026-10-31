@@ -9,7 +9,7 @@
 | 表現 | 使い方の例 | 意味 |
 |---|---|---|
 | **Sorry?** | **Sorry?** | もう一度言ってもらう。 |
-| **Sorry, I didn't catch that.** | Sorry, **I didn't catch your name.** | はっきり聞き取れなかったと伝える。 |
+| **Sorry, I didn't catch that.** | **Sorry, I didn't catch your name.** | はっきり聞き取れなかったと伝える。 |
 | **Could you say that again?** | **Could you say that again**, please? | もう一度言ってもらう。 |
 | **Did you say ...?** | **Did you say eight?** | 聞こえた言葉や数字を確認する。 |
 

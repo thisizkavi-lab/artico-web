@@ -1,5 +1,6 @@
 import { useLanguage } from './Language'
 import { useEffect, useRef, useState } from 'react'
+import { speakKokoroSpeech, stopKokoroSpeech } from './kokoroSpeech'
 
 const icons = {
   home: 'e1438.svg',
@@ -192,34 +193,59 @@ export function Turn({ turn, index, compact = false, onSelect, selected, onListe
   )
 }
 
-// Only approved, downloaded recordings belong here. No generation API is used.
+// Approved recordings take precedence when available; otherwise, words and
+// phrases are synthesized on-device with Kokoro using their actual English text.
 export const approvedAudio = {}
 export function useAudio(notify) {
-  const { t, language } = useLanguage()
+  const { t } = useLanguage()
   const audioRef = useRef(null)
   const currentId = useRef(null)
   const [playing, setPlaying] = useState(false)
   const stop = () => {
+    stopKokoroSpeech()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current.currentTime = 0
     }
     setPlaying(false)
   }
-  useEffect(() => () => audioRef.current?.pause(), [])
-  const play = async (id, speed = 1, restart = false) => {
+  useEffect(() => () => {
+    audioRef.current?.pause()
+    stopKokoroSpeech()
+  }, [])
+  const play = async (id, speed = 1, restart = false, phrase = '') => {
     const source = approvedAudio[id]
     if (!source) {
+      if (!phrase) {
+        stop()
+        notify(t('No pronunciation text is available for this item.'))
+        return
+      }
+      if (currentId.current === id && playing && !restart) {
+        stop()
+        return
+      }
       stop()
-      notify(t("Audio is coming soon. Recordings will be added after the phrases are finalized."))
+      currentId.current = id
+      void speakKokoroSpeech(phrase, {
+        rate: speed,
+        onLoading: () => setPlaying(false),
+        onStart: () => setPlaying(true),
+        onCancel: () => setPlaying(false),
+        onEnd: () => setPlaying(false),
+        onError: () => {
+          setPlaying(false)
+          notify(t('Audio could not be played. Please try again.'))
+        },
+      })
       return
     }
     if (currentId.current === id && audioRef.current && !audioRef.current.paused && !restart) {
       stop()
       return
     }
-    const audio = new Audio(`${import.meta.env.BASE_URL}${source}`)
-    audioRef.current?.pause()
+    stop()
+    const audio = new Audio(import.meta.env.BASE_URL + source)
     audioRef.current = audio
     currentId.current = id
     audio.playbackRate = speed
@@ -227,18 +253,19 @@ export function useAudio(notify) {
     audio.onended = () => setPlaying(false)
     audio.onerror = () => {
       setPlaying(false)
-      notify(t("The recording could not be loaded. Please try again."))
+      notify(t('The recording could not be loaded. Please try again.'))
     }
     try {
       await audio.play()
       if (audioRef.current === audio && !audio.paused) setPlaying(true)
     } catch {
       setPlaying(false)
-      notify(t("The recording could not be played. Please try again."))
+      notify(t('The recording could not be played. Please try again.'))
     }
   }
   return { playing, play, stop }
 }
+
 export function Player({ item, label, speed, setSpeed, next, audio }) {
   const { t, language } = useLanguage()
   const speeds = [0.75, 0.9, 1, 1.1]

@@ -83,6 +83,7 @@ test('the introduction pilot translates the existing layout without replacing re
       section.title, section.short,
       ...section.blocks.flatMap((block) => [
         block.title, block.text, block.alt, block.contextText,
+        ...(block.examples?.flatMap((example) => [example.label, example.hint]) ?? []),
         block.replyAlternatives?.title,
         ...(block.replyAlternatives?.choices?.map((choice) => choice.label) ?? []),
       ]),
@@ -92,9 +93,12 @@ test('the introduction pilot translates the existing layout without replacing re
   assert.doesNotMatch(translatedCopy, /\b(?:Alex|Anna|Cassie|Satoshi|Daniel|Sam|Dan|Avery|Taylor|Morgan)\b/)
   assert.match(translatedCopy, /サトシ/)
   assert.deepEqual(ja.sections.map((section) => section.id), ['introduce', 'work', 'connect'])
-  const gathering = ja.sections[0].blocks.find((block) => block.type === 'conversation' && block.title === '友人の集まりで')
-  const reply = gathering.replyAlternatives
-  assert.equal(reply.title, '返事の二つの言い方')
+  const firstMeeting = ja.sections[0].blocks.find((block) => block.type === 'conversation' && block.title === '初対面の自然な会話')
+  const reply = firstMeeting.replyAlternatives
+  assert.equal(reply.title, '自然な返事の別の言い方')
+  const contextualExamples = ja.sections[0].blocks.find((block) => block.type === 'situations').examples
+  assert.equal(contextualExamples.length, 4)
+  assert(contextualExamples.every((example) => japanese.test(example.label) && japanese.test(example.hint)))
   assert.equal(reply.promptId, 'ch02-p30')
   assert.deepEqual(reply.choices.map((choice) => choice.id), ['ch02-p3', 'ch02-p5'])
   assert.deepEqual(reply.choices.map((choice) => choice.label), ['短い返事', '丁寧な返事'])

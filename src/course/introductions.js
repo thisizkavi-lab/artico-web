@@ -94,6 +94,10 @@ export const introductionPhrases = [
   phrase(44, "I'm looking forward to working with you.", 'A natural way to express that you are pleased to begin working together.', 'work'),
   phrase(45, 'I look forward to working with you.', 'A slightly more formal version, often used in professional messages.', 'work'),
   phrase(46, "I'm looking forward to it.", 'Use this when the upcoming event or plan is already clear.', 'work'),
+  phrase(47, "It's nice to meet you in person.", 'A neutral, natural greeting for your first face-to-face meeting.', 'connect'),
+  phrase(48, "It's great to put a face to the name.", "A friendly idiom when you know someone's name from messages but have not met them.", 'connect'),
+  phrase(49, 'Good to see you in person.', 'Use this when you have already interacted online, such as on video calls.', 'connect'),
+  phrase(50, "You too! I've been looking forward to this.", 'A warm reply when you have also been looking forward to meeting.', 'connect'),
   {
     id: 'ch02-v0',
     en: 'friend',
@@ -259,8 +263,8 @@ export const introductionSections = [
         'ch02-scene-reconnect.webp',
         'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       ),
-      phraseShelf([24], 'After meeting online', undefined, {
-        text: 'Use this when you are meeting face to face after talking online.',
+      phraseShelf([47, 24, 48, 49, 50], 'Meeting in person', undefined, {
+        text: 'Use “It’s nice to meet you in person” for a first face-to-face meeting. Add “finally” when you’ve been communicating for a while. “Put a face to the name” is a friendly idiom when you know someone’s name from messages but haven’t met. Say “Good to see you in person” when you’ve already interacted, such as on video calls. For example: “It’s nice to finally meet you in person.” — “You too! I’ve been looking forward to this.”',
       }),
     ],
   },

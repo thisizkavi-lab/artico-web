@@ -282,15 +282,17 @@ const originalIntroductionSections = [
  * source wording, dialogue lines, practice scenarios and aliases are unchanged.
  */
 const [self, work, connect, names] = originalIntroductionSections
-const sceneInContext = (scene, explanation) => ({
+const sceneInContext = (scene, explanation, sceneArt) => ({
+  ...(sceneArt ? { art: sceneArt } : {}),
   ...scene,
   collapsed: true,
   contextText: explanation?.text,
 })
 // Headings from the original source become titles within their phrase cards,
 // rather than an extra heading above another generic "Choose an expression".
-const namedShelf = (heading, shelf) => ({ ...shelf, title: heading.text })
-const phraseShelf = (numbers, title) => ({
+const namedShelf = (heading, shelf, sceneArt) => ({ ...shelf, title: heading.text, sceneArt })
+const phraseShelf = (numbers, title, sceneArt) => ({
+  sceneArt,
   type: 'phrases',
   phrases: numbers.map(number => `ch02-p${number}`),
   title,
@@ -300,10 +302,10 @@ export const introductionSections = [
     ...self,
     blocks: [
       self.blocks[0],
-      phraseShelf([1, 4], self.blocks[3].text),
-      namedShelf(self.blocks[5], self.blocks[6]),
+      phraseShelf([1, 4], self.blocks[3].text, 'ch02-scene-self-introduction.png'),
+      namedShelf(self.blocks[5], self.blocks[6], 'ch02-scene-gathering.png'),
       work.blocks[0],
-      phraseShelf([11], work.title),
+      phraseShelf([11], work.title, 'ch02-scene-office-handshake.png'),
       self.blocks[7],
       self.blocks[8],
     ],
@@ -313,41 +315,37 @@ export const introductionSections = [
     title: 'Respond to an introduction',
     short: 'Respond',
     blocks: [
-      phraseShelf([2, 3, 5], self.blocks[1].title),
-      phraseShelf([12, 13, 14], work.blocks[1].title),
-      namedShelf(work.blocks[3], work.blocks[4]),
+      phraseShelf([2, 3, 5], self.blocks[1].title, 'ch02-scene-gathering.png'),
+      phraseShelf([12, 13, 14], work.blocks[1].title, 'ch02-scene-project-meeting.png'),
+      namedShelf(work.blocks[3], work.blocks[4], 'ch02-scene-self-introduction.png'),
       work.blocks[5],
-      namedShelf(work.blocks[6], work.blocks[7]),
+      namedShelf(work.blocks[6], work.blocks[7], 'ch02-scene-formal-meeting.png'),
       work.blocks[8],
-      sceneInContext(self.blocks[1], self.blocks[2]),
-      sceneInContext(work.blocks[1], work.blocks[2]),
+      sceneInContext(self.blocks[1], self.blocks[2], 'ch02-scene-gathering.png'),
+      sceneInContext(work.blocks[1], work.blocks[2], 'ch02-scene-project-meeting.png'),
     ],
   },
   {
     ...connect,
     blocks: [
       connect.blocks[0],
-      phraseShelf([17, 18, 19, 20], connect.blocks[1].title),
+      phraseShelf([17, 18, 19, 20], connect.blocks[1].title, 'ch02-scene-introduce-others.png'),
       connect.blocks[2],
       connect.blocks[3],
       connect.blocks[4],
-      phraseShelf([22, 23], connect.blocks[5].title),
+      phraseShelf([22, 23], connect.blocks[5].title, 'ch02-scene-gathering.png'),
       connect.blocks[6],
-      namedShelf(connect.blocks[7], connect.blocks[8]),
+      namedShelf(connect.blocks[7], connect.blocks[8], 'ch02-scene-online-to-person.png'),
       connect.blocks[9],
-      sceneInContext(connect.blocks[1]),
-      sceneInContext(connect.blocks[5]),
+      sceneInContext(connect.blocks[1], undefined, 'ch02-scene-introduce-others.png'),
+      sceneInContext(connect.blocks[5], undefined, 'ch02-scene-gathering.png'),
     ],
   },
   {
     ...names,
     blocks: [
-      ...names.blocks,
-      {
-        type: 'vocabulary',
-        title: 'Words in this chapter',
-        phrases: ['ch02-v0', 'ch02-v1', 'ch02-v2', 'ch02-v3'],
-      },
+      {...names.blocks[0]},
+      {...names.blocks[1], sceneArt: 'ch02-scene-self-introduction.png'},
     ],
   },
 ]

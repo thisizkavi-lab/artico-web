@@ -156,6 +156,9 @@ jobs:
       - name: Verify all 267 tongue-twister recordings and exact-text mappings
         run: pnpm run test:twister-audio
 
+      - name: Compile lesson content
+        run: pnpm lessons
+
       - name: Test course and learning progress
         run: pnpm test
 

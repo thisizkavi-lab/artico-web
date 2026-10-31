@@ -537,11 +537,15 @@
   min-width: 0;
 }
 .ar-page .ar-shelf-body > .ar-context {
-  min-height: 96px;
-  padding: 8px 11px;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 0;
+  padding: 7px 10px;
   background: #f7f8fa;
   color: #738094;
   font-size: 11.5px;
+  line-height: 1.5;
 }
 .ar-page .ar-phrase-shelf > .ar-shelf-note {
   grid-area: note;
@@ -596,11 +600,32 @@
     min-height: 135px;
   }
   .ar-page .ar-shelf-body > .ar-context {
-    min-height: 76px;
+    min-height: 0;
     font-size: 11px;
   }
   .ar-page .ar-phrase-shelf > .ar-shelf-note {
     padding: 7px 10px;
     font-size: 11px;
   }
+}
+
+/* Chapter 01: compact explanation text, never a fixed-height status strip. */
+.ar-page .ar-flow-context {
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 0;
+  padding: 8px 11px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.ar-page .ar-flow-context strong {
+  display: inline;
+  margin-right: 4px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 650;
+  color: #354b6a;
 }

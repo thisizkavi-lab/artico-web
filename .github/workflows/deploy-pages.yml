@@ -52,6 +52,9 @@ jobs:
           python3 -m pip install --quiet cairosvg pillow
           python3 scripts/build_vocabulary_library.py
 
+      - name: Fetch vetted CC0 Lesson 04 illustration files
+        run: python3 scripts/fetch_lesson04_public_domain.py
+
       - name: Cache Artico handwriting worksheets
         id: handwriting-cache
         uses: actions/cache@v4
@@ -178,6 +181,17 @@ jobs:
           test -s dist/assets/illustrations/twisters/betty-botter.png
           test "$(find dist/audio/tongue-twisters/ga-v01 -maxdepth 1 -name '*.mp3' -type f | wc -l)" -eq 267
           test -s dist/audio/tongue-twisters/ga-v01/tt-24-betty-botter--study-full--natural--en-us--v01.mp3
+
+      - name: Verify all selected Lesson 04 artwork is published
+        run: |
+          python3 - <<'PY'
+          import json,pathlib
+          j=json.loads(pathlib.Path('src/web/vocabularyDailyRoutineSources.json').read_text())
+          for term,e in j['entries'].items():
+            f=pathlib.Path('dist/vocabulary-curated-04')/(e['file']+'.webp')
+            assert f.is_file() and f.stat().st_size>2500, term
+          print(len(j['entries']),'selected illustrations verified')
+          PY
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

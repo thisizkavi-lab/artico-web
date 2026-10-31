@@ -1,7 +1,7 @@
-# Artico Lesson 04 — source-tracked photos
+# Artico Lesson 04 — visual sources
 
-The daily-routines vocabulary uses a [source manifest](../../src/web/vocabularyDailyRoutineSources.json) containing each headword, intended visual meaning, photographer's Pexels photo page, asset ID, and local WebP filename. Pexels content follows the [Pexels License](https://www.pexels.com/license/).
+The lesson has 57 source-tracked Pexels photographs and **one original AI-generated teaching scene**, the card **put the children to bed**. The full source and scene manifest is [vocabularyDailyRoutineSources.json](../../src/web/vocabularyDailyRoutineSources.json).
 
-The four context-problem cards have individually reviewed horizontal replacements: **put the children to bed**, **café**, **run errands**, and **have a break**. The production image converter uses full-bleed crops on landscape photos and preserves tall portrait source scenes where aggressive cropping could hide the action. Every resulting card asset is 608 × 384 and served locally.
+Pexels photographs are subject to the [Pexels License](https://www.pexels.com/license/). Their original photo pages and source IDs are documented per word. The original bedtime image was generated specifically for Artico using OpenAI image generation, cropped into a horizontal photograph-style scene, and committed to `public/vocabulary-curated-04/put-the-children-to-bed.webp`.
 
-The teacher text stays unchanged. 
+The vocabulary card size is 608:384. For landscape photos the build uses a full-bleed crop; extremely vertical photographs keep the entire subject in a soft horizontal frame so the action remains visible.

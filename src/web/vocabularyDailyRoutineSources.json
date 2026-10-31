@@ -2,9 +2,9 @@
   "schema": 2,
   "license": "Pexels License",
   "licenseUrl": "https://www.pexels.com/license/",
-  "source": "Pexels real-life photographs",
+  "source": "Pexels real-life photographs plus one Artico original generated scene",
   "editorialStandard": "Objects have object photographs. Actions show people doing the actions. No symbol compositions.",
-  "note": "SourcePage records the individually selected source photo. Some abstract words have representative contextual scenes.",
+  "note": "Pexels images are sourced and licensed individually. One original generated bedtime scene is stored locally, not attributed to Pexels. All asset files are local.",
   "aliases": {
     "have breakfast": "eat breakfast",
     "have lunch": "eat lunch",
@@ -475,11 +475,14 @@
     },
     "put the children to bed": {
       "file": "put-the-children-to-bed",
-      "pexelsId": 5801248,
-      "sourcePage": "https://www.pexels.com/photo/a-mother-putting-her-daughter-to-sleep-5801248/",
-      "sourceImage": "https://images.pexels.com/photos/5801248/pexels-photo-5801248.jpeg",
+      "assetType": "original-ai-generated",
+      "creator": "Artico — original image generated with OpenAI",
+      "sourcePage": null,
+      "sourceImage": null,
       "section": "05 — Free time, family, and bedtime",
-      "scene": "Parent visibly tucks child under the blanket in bed; landscape photograph",
+      "scene": "A parent tucking a child into bed and pulling the blanket up, bedside lamp and teddy bear",
+      "width": 320,
+      "height": 202,
       "fitMode": "cover"
     }
   }

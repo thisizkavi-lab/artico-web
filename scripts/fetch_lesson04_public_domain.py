@@ -19,10 +19,20 @@ target = root / "public/vocabulary-curated-04"
 target.mkdir(parents=True, exist_ok=True)
 assert catalog["schema"] == 2 and catalog["source"].startswith("Pexels")
 assert len(catalog["entries"]) >= 58, "Photo catalog is incomplete"
-assert len({v["pexelsId"] for v in catalog["entries"].values()}) == len(catalog["entries"]), "Repeated photo for distinct words"
+pexels_entries = [v for v in catalog["entries"].values() if v.get("assetType") != "original-ai-generated"]
+assert len({v["pexelsId"] for v in pexels_entries}) == len(pexels_entries), "Repeated Pexels photo for distinct words"
 for term, item in catalog["entries"].items():
     p = target / (item["file"] + ".webp")
     assert "/" not in item["file"] and ".." not in item["file"]
+    if item.get("assetType") == "original-ai-generated":
+        # Original generated scene is committed to GitHub as a binary asset.
+        # Never fetch it from Pexels or misattribute it to a photographer.
+        if not p.is_file() or p.stat().st_size < 4000:
+            raise RuntimeError(f"Original generated image missing from repository: {term}")
+        with Image.open(p) as generated:
+            generated.verify()
+        print(f"Verified original generated scene: {term}")
+        continue
     if p.is_file() and p.stat().st_size > 4000:
         try:
             with Image.open(p) as existing:

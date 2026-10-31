@@ -16,6 +16,9 @@ let currentSource = null
 let audioContext = null
 let currentUrl = null
 let currentUtterance = null
+let nativeStartTimer = null
+let nativeRetryTimer = null
+let nativeVoicesListener = null
 let currentCallbacks = null
 let requestId = 0
 let runningJobs = false
@@ -261,43 +264,131 @@ function clearAudio() {
   }
 }
 
+function clearNativeTimers() {
+  if (nativeStartTimer !== null) clearTimeout(nativeStartTimer)
+  if (nativeRetryTimer !== null) clearTimeout(nativeRetryTimer)
+  nativeStartTimer = null
+  nativeRetryTimer = null
+  if (nativeVoicesListener && typeof window !== 'undefined') {
+    window.speechSynthesis?.removeEventListener?.('voiceschanged', nativeVoicesListener)
+    nativeVoicesListener = null
+  }
+}
+
 export function stopKokoroSpeech() {
   requestId += 1
   const callbacks = currentCallbacks
   currentCallbacks = null
   clearAudio()
-  if (typeof window !== 'undefined') window.speechSynthesis?.cancel()
+  clearNativeTimers()
+  const utterance = currentUtterance
   currentUtterance = null
+  if (utterance) {
+    utterance.onstart = null
+    utterance.onboundary = null
+    utterance.onend = null
+    utterance.onerror = null
+    // Do NOT call cancel() on first click: some browser engines leave the
+    // freshly enqueued utterance silent after cancel() + speak() in one tick.
+    try { window.speechSynthesis?.cancel() } catch {}
+  }
   callbacks?.onCancel?.()
 }
 
 function fallbackSpeech(text, rate, callbacks) {
-  if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
-    callbacks.onError?.(new Error('Speech synthesis is unavailable on this device.'))
+  const synth = window.speechSynthesis
+  if (!synth?.speak || !window.SpeechSynthesisUtterance) {
+    callbacks.onError?.(new Error('No browser speech engine is available.'))
     return false
   }
-  const utterance = new window.SpeechSynthesisUtterance(text)
-  utterance.lang = 'en-US'
-  utterance.rate = rate
-  const voices = window.speechSynthesis.getVoices()
-  const american = voices.find(item => /^en[-_]US$/i.test(item.lang) && item.localService) ||
-    voices.find(item => /^en[-_]US$/i.test(item.lang))
-  if (american) utterance.voice = american
-  currentUtterance = utterance
-  utterance.onend = () => {
+  callbacks.onLoading?.()
+  // The first call must stay inside the original user click (autoplay rules).
+  // The second attempt runs only when the browser did not start speaking.
+  const MAX_ATTEMPTS = 3
+  const START_TIMEOUT_MS = 1900
+  const cleanUtterance = (utterance) => {
+    utterance.onstart = null
+    utterance.onboundary = null
+    utterance.onend = null
+    utterance.onerror = null
+  }
+  function finish(utterance, success, error) {
     if (currentUtterance !== utterance) return
+    clearNativeTimers()
+    cleanUtterance(utterance)
     currentUtterance = null
     currentCallbacks = null
-    callbacks.onEnd?.()
+    if (success) callbacks.onEnd?.()
+    else callbacks.onError?.(error || new Error('The browser did not start speaking.'))
   }
-  utterance.onerror = (error) => {
+  function scheduleRetry(utterance, attempt) {
     if (currentUtterance !== utterance) return
-    currentUtterance = null
-    currentCallbacks = null
-    callbacks.onError?.(error)
+    clearNativeTimers()
+    cleanUtterance(utterance)
+    if (attempt >= MAX_ATTEMPTS) {
+      finish(utterance, false, new Error('No voice started. Check that English speech voices are installed.'))
+      return
+    }
+    // Clear a stalled native queue before retrying. A brief gap matters on
+    // Chrome/Windows; never do cancel() immediately before the next speak().
+    try { synth.cancel() } catch {}
+    nativeRetryTimer = setTimeout(() => {
+      nativeRetryTimer = null
+      if (currentUtterance === utterance) startAttempt(attempt + 1)
+    }, 120)
   }
-  window.speechSynthesis.speak(utterance)
-  callbacks.onStart?.('device')
+  function startAttempt(attempt) {
+    if (currentCallbacks !== callbacks) return
+    const utterance = new window.SpeechSynthesisUtterance(text)
+    utterance.lang = 'en-US'
+    utterance.rate = rate
+    utterance.volume = 1
+    let voices = []
+    try { voices = synth.getVoices?.() || [] } catch {}
+    const localUS = voices.filter(v => /^en[-_]US$/i.test(v.lang) && v.localService)
+    const allUS = voices.filter(v => /^en[-_]US$/i.test(v.lang))
+    const english = voices.filter(v => /^en(?:[-_]|$)/i.test(v.lang))
+    const choices = [...new Set([...localUS, ...allUS, ...english])]
+    // On retry, try another English voice; finally let the OS pick its default.
+    const selected = attempt === MAX_ATTEMPTS ? null : choices[attempt - 1] || null
+    if (selected) utterance.voice = selected
+    currentUtterance = utterance
+    let started = false
+    const confirmStart = () => {
+      if (currentUtterance !== utterance || started) return
+      started = true
+      clearNativeTimers()
+      callbacks.onStart?.('device')
+    }
+    utterance.onstart = confirmStart
+    utterance.onboundary = confirmStart
+    utterance.onend = () => {
+      if (!started) confirmStart()
+      finish(utterance, true)
+    }
+    utterance.onerror = (event) => {
+      if (currentUtterance !== utterance) return
+      if (started || event?.error === 'not-allowed') finish(utterance, false, event)
+      else scheduleRetry(utterance, attempt)
+    }
+    if (!voices.length && typeof synth.addEventListener === 'function') {
+      nativeVoicesListener = () => {
+        if (currentUtterance === utterance && !started) scheduleRetry(utterance, attempt)
+      }
+      synth.addEventListener('voiceschanged', nativeVoicesListener)
+    }
+    try {
+      if (synth.paused) synth.resume?.()
+      synth.speak(utterance)
+    } catch (error) {
+      scheduleRetry(utterance, attempt)
+      return
+    }
+    nativeStartTimer = setTimeout(() => {
+      if (currentUtterance === utterance && !started) scheduleRetry(utterance, attempt)
+    }, START_TIMEOUT_MS)
+  }
+  startAttempt(1)
   return true
 }
 
@@ -313,10 +404,16 @@ export async function speakKokoroSpeech(text, options = {}) {
   // uncached phrase, let a slow machine use its native voice immediately.
   if ((preferDevice || (nativeMode && !cached) ||
       (!navigator.gpu && !cached)) && hasDeviceVoice()) {
-    currentCallbacks = callbacks
-    const started = fallbackSpeech(phrase, rate, callbacks)
-    if (!preferDevice && started) tuneKokoroAfterUserAudio()
-    return started
+    const nativeCallbacks = {
+      ...callbacks,
+      onStart: (source) => {
+        callbacks.onStart?.(source)
+        // Only start GPU probing after audible speech actually begins.
+        if (!preferDevice) tuneKokoroAfterUserAudio()
+      },
+    }
+    currentCallbacks = nativeCallbacks
+    return fallbackSpeech(phrase, rate, nativeCallbacks)
   }
   const context = unlockAudio()
   const mine = requestId

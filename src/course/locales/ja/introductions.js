@@ -108,7 +108,7 @@ const copy = {
   'If you missed the name': '名前を聞き取れなかったとき',
   'Names and greetings at work': '仕事の場で使う名前とあいさつ',
   'Two ways to introduce someone': '人を紹介する二つの言い方',
-  'Choose an opening that fits the setting: a casual “Hi, I’m Alex,” a more explicit “Hello, my name is Alex,” or a greeting to a group. Then add one useful detail, such as a shared friend, your role, or why you are there.': '場面に合う始め方を選びましょう。くだけた「Hi, I’m Alex.」、より明確な「Hello, my name is Alex.」、またはグループへのあいさつがあります。その後、共通の友人や自分の役割、その場に来た理由などを一つ添えます。',
+  'Choose an opening that fits the setting: a casual “Hi, I’m Alex,” a more explicit “Hello, my name is Alex,” or a greeting to a group. Then add one useful detail, such as a shared friend, your role, or why you are there.': '場面に合う始め方を選びましょう。くだけた「Hi, I’m ...」、より明確な「Hello, my name is ...」、またはグループへのあいさつがあります。その後、共通の友人や自分の役割、その場に来た理由などを一つ添えます。',
   'Alex mentions Cassie to explain the connection. Anna gives her name and says “Nice to meet you.” Alex can return the greeting with either reply above.': 'アレックスはキャシーとのつながりを伝えています。アンナは名前と「はじめまして」というあいさつを伝えます。アレックスは、上のどちらの返事でも自然に応えられます。',
   'A friend, job, team, or reason for being there can be enough. Choose the detail that fits this meeting.': '友人、仕事、チーム、その場に来た理由などで十分です。その出会いに合う情報を一つ選びましょう。',
   'If you are unsure whether you have met before, use a gentle opening that lets the other person recognize you.': '以前会ったか確信がないときは、相手が覚えている可能性も残す、やわらかな言い方で始めます。',

@@ -5,7 +5,7 @@ import { parseRoute } from './learning.js'
 import { getLessonNavigation } from './pathway.js'
 import { countries, placePhrases, placeWords, regions } from './vocabularyLesson01.js'
 import { numberGroups } from './vocabularyLesson02.js'
-import { vocabularySpokenText, vocabularyPrefersDeviceVoice } from './vocabularySpokenText.js'
+import { vocabularySpokenText } from './vocabularySpokenText.js'
 
 const source=JSON.parse(readFileSync(new URL('./vocabularyCatalog.json',import.meta.url),'utf8'))
 const topics=JSON.parse(readFileSync(new URL('./vocabularyTopics.json',import.meta.url),'utf8'))
@@ -298,55 +298,39 @@ test('Social Fluency uses only owned recordings; Kokoro is confined to vocabular
   assert.match(speaker, /preferDevice/)
 })
 
-test('isolated tea uses a reliable native pronunciation without changing display text', () => {
+test('tea remains a vocabulary word and Kokoro is the default playback', () => {
   assert.equal(vocabularySpokenText('Tea'), 'Tea')
   assert.equal(vocabularySpokenText('tea'), 'tea')
-  assert.equal(vocabularyPrefersDeviceVoice('tea'), true)
-  assert.equal(vocabularyPrefersDeviceVoice('Tea.'), true)
-  assert.equal(vocabularyPrefersDeviceVoice('tea (drink)'), true)
-  assert.equal(vocabularyPrefersDeviceVoice('coffee'), false)
-  assert.equal(vocabularyPrefersDeviceVoice('iced tea'), false)
-  assert.equal(vocabularyPrefersDeviceVoice('teacher'), false)
+  const button = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
+  assert.match(button, /preferKokoro: !useDeviceVoice/)
+  assert.doesNotMatch(button, /vocabularyPrefersDeviceVoice/)
 })
 
-
-test('speech starts fast and only considers GPU inference after a deliberate click', () => {
+test('Kokoro uses GPU first, CPU fallback, and never downloads on lesson entry', () => {
   const source = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
   const topicView = readFileSync(new URL('./VocabularyTopicLesson.jsx', import.meta.url), 'utf8')
   const app = readFileSync(new URL('./ArticoWeb.jsx', import.meta.url), 'utf8')
-  assert.match(source, /let nativeMode = true/)
-  assert.match(source, /FIRST_SOUND_BUDGET_MS = 1000/)
-  assert.match(source, /function tuneKokoroAfterUserAudio\(\)/)
-  assert.match(source, /navigator\.gpu\.requestAdapter\(\)/)
-  assert.match(source, /if \(!vendor \|\| \/intel\/i\.test\(vendor\)\) return/)
-  assert.match(source, /window\.requestIdleCallback/)
-  // Tuning is triggered inside the audible onStart callback, not at click time.
-  assert.match(source, /onStart: \(source\) => \{[\s\S]*?if \(!preferDevice\) tuneKokoroAfterUserAudio\(\)/)
-  assert.match(source, /Promise\.race\(\[/)
-  assert.match(source, /if \(modelReady && phrase\.length <= 100\) slowClickCount \+= 1/)
-  assert.match(source, /nativeMode && job\.priority === 0/)
-  assert.match(source, /v\.localService/)
+  assert.match(source, /device: 'webgpu', dtype: 'fp32'/)
+  assert.match(source, /device: 'wasm', dtype: 'q8'/)
+  assert.match(source, /preferKokoro = false/)
+  assert.match(source, /if \(!blob && !preferKokoro && hasDeviceVoice\(\)\)/)
+  assert.doesNotMatch(source, /tuneKokoroAfterUserAudio/)
   assert.doesNotMatch(topicView, /warmKokoroSpeech|prefetchKokoroSpeech/)
   assert.match(app, /const Home = lazy\(/)
   assert.match(app, /const Progress = lazy\(/)
   assert.match(app, /const Courses = lazy\(/)
 })
 
-
-test('Vocabulary provides an offline voice override for devices with silent system speech', () => {
+test('Kokoro is the default; system voice is opt-in for Vocabulary only', () => {
   const view = readFileSync(new URL('./Vocabulary.jsx', import.meta.url), 'utf8')
   const button = readFileSync(new URL('./KokoroSpeakButton.jsx', import.meta.url), 'utf8')
-  const engine = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
   const pref = readFileSync(new URL('./vocabularyVoiceMode.js', import.meta.url), 'utf8')
   assert.match(view, /<VoiceSettings japanese=\{japanese\}/)
-  assert.match(view, /<option value="offline">/)
-  assert.match(pref, /window\.localStorage\.setItem/)
-  assert.match(button, /readVocabularyVoiceMode\(\) === 'offline'/)
-  assert.match(button, /forceModel: useOfflineVoice/)
-  assert.match(engine, /useOfflineModel = true/)
-  assert.match(engine, /function loadOfflineKokoro\(\)/)
-  assert.match(engine, /device: 'wasm', dtype: 'q8'/)
-  assert.match(engine, /void speakKokoroSpeech\(text, \{/)
+  assert.match(view, /<option value="kokoro">/)
+  assert.match(view, /<option value="device">/)
+  assert.match(pref, /=== 'device' \? 'device' : 'kokoro'/)
+  assert.match(button, /readVocabularyVoiceMode\(\) === 'device'/)
+  assert.match(button, /preferKokoro: !useDeviceVoice/)
+  assert.doesNotMatch(button, /forceModel: useOfflineVoice/)
   assert.match(button, /Test speaker/)
-  assert.match(button, /Preparing offline voice/)
 })

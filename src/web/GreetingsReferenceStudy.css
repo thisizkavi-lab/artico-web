@@ -629,3 +629,18 @@
   font-weight: 650;
   color: #354b6a;
 }
+
+
+/* Quiet distinction between upbeat and neutral check-in replies. */
+.ar-page .ar-flow-group > .ar-flow-category-break {
+  border-top: 1px solid rgba(169, 112, 102, .29);
+  margin-top: 11px;
+  padding-top: 10px;
+}
+.ar-page .ar-flow-group > .ar-flow-category-break > .ar-flow-label {
+  margin-top: 2px;
+}
+.ar-page .ar-flow-group .ar-flow-label {
+  font-weight: 650;
+  color: #667489;
+}

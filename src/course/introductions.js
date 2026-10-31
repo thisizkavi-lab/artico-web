@@ -42,7 +42,7 @@ export const introductionPhrases = [
   phrase(
     11,
     "Hello, I'm Satoshi. I'm the project manager.",
-    'Give your full name and role at a project meeting.',
+    'Give your name and role at a project meeting.',
     'work',
     { speaker: 'Satoshi', portrait: 'portrait-ch02-satoshi.svg' },
   ),
@@ -171,7 +171,7 @@ const originalIntroductionSections = [
       },
       {
         type: 'text',
-        text: 'Alex connects her name to someone Anna may know. Anna acknowledges the introduction, and Alex returns the feeling with a short reply.',
+        text: 'Alex mentions Cassie to explain the connection. Anna replies with a greeting, and Alex returns it naturally.',
       },
       { type: 'label', text: 'Two useful alternatives' },
       { type: 'phrases', phrases: ids(4, 5) },
@@ -274,29 +274,36 @@ const originalIntroductionSections = [
 
 
 /*
- * Chapter 02 presents the original teaching material in conversational order:
- * identify yourself → respond → introduce others → clarify a name.
+ * Chapter 02 teaches three things, in this order:
+ * introducing yourself → responding → introducing others → catching a name.
+ * Each expression is a phrase, each real back-and-forth is a conversation.
+ * A greeting response with two natural alternatives gets its own comparison.
  *
- * The source blocks above remain verbatim. This view only reuses/repositions
- * them and gives the original scenes an expandable presentation. Phrase IDs,
- * source wording, dialogue lines, practice scenarios and aliases are unchanged.
+ * All 26 original spoken expressions keep their permanent IDs and practice links.
  */
 const [self, work, connect, names] = originalIntroductionSections
-const phraseShelf = (numbers, title, sceneArt) => ({
+const phraseShelf = (numbers, title, sceneArt, note) => ({
   type: 'phrases',
-  phrases: numbers.map(number => `ch02-p${number}`),
+  phrases: numbers.map((number) => `ch02-p${number}`),
   title,
   sceneArt,
+  ...(note ? { note } : {}),
 })
 export const introductionSections = [
   {
     ...self,
     blocks: [
       self.blocks[0],
-      phraseShelf([4], 'Another way to give your name', 'ch02-scene-self-introduction.svg'),
-      phraseShelf([6, 7, 8, 9], self.blocks[5].text, 'ch02-scene-gathering.svg'),
-      self.blocks[7],
-      phraseShelf([10], 'When you are unsure whether you have met', 'ch02-scene-gathering.svg'),
+      {
+        ...self.blocks[1],
+        title: 'At a friend’s gathering',
+      },
+      self.blocks[2],
+      phraseShelf([4, 10], 'Give your name', 'ch02-scene-self-introduction.svg'),
+      phraseShelf([6, 7, 8, 9], 'Choose one detail that fits', 'ch02-scene-gathering.svg', {
+        title: 'Keep it relevant.',
+        text: 'A friend, job, team, or reason for being there can be enough. You do not need to give your whole background.',
+      }),
     ],
   },
   {
@@ -304,16 +311,29 @@ export const introductionSections = [
     title: 'Respond to an introduction',
     short: 'Respond',
     blocks: [
+      {
+        type: 'text',
+        text: 'When someone says “Nice to meet you,” return the feeling. A short reply and a fuller reply are both natural.',
+      },
+      {
+        type: 'reply-alternatives',
+        title: 'Two ways to reply',
+        prompt: 'Nice to meet you.',
+        choices: [
+          { id: 'ch02-p3', label: 'Short' },
+          { id: 'ch02-p5', label: 'Fuller' },
+        ],
+      },
       work.blocks[0],
-      self.blocks[1],
-      self.blocks[2],
-      phraseShelf([5], 'A fuller reply', 'ch02-scene-gathering.svg'),
       work.blocks[1],
       work.blocks[2],
-      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.svg'),
-      work.blocks[5],
-      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.svg'),
-      work.blocks[8],
+      phraseShelf([15], work.blocks[3].text, 'ch02-scene-self-introduction.svg', {
+        title: work.blocks[5].title,
+        text: work.blocks[5].text,
+      }),
+      phraseShelf([16], work.blocks[6].text, 'ch02-scene-formal-meeting.svg', {
+        text: work.blocks[8].text,
+      }),
     ],
   },
   {
@@ -330,8 +350,9 @@ export const introductionSections = [
         alt: 'Alex checks whether Anna has met Sam before; Anna greets Sam again.',
       },
       connect.blocks[6],
-      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.svg'),
-      connect.blocks[9],
+      phraseShelf([24], connect.blocks[7].text, 'ch02-scene-online-to-person.svg', {
+        text: connect.blocks[9].text,
+      }),
     ],
   },
   {

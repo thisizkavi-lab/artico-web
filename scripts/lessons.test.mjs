@@ -226,6 +226,12 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.match(phraseShelf, /export function PhraseShelf/)
   assert.match(phraseShelf, /sceneArt/)
   assert.match(phraseShelf, /ar-ch02-phrase-shelf/)
+  assert.match(phraseShelf, /clickToExplain = false/)
+  assert.match(phraseShelf, /clickToExplain \? null : initial/)
+  assert.match(phraseShelf, /if\(!clickToExplain\)play/)
+  assert.match(phraseShelf, /!clickToExplain && language === 'ja'/)
+  assert.match(experience, /clickToExplain/)
+
   assert.match(experience, /GreetingsPhraseShelf/)
   assert.match(experience, /ar-ch02-study/)
   assert.doesNotMatch(experience, /ar-study-example/)
@@ -240,11 +246,11 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   assert.ok(blocks.every((block) => !block.collapsed), 'No Chapter 02 dropdown conversations')
   assert.ok(!blocks.some((block) => ['words', 'vocabulary'].includes(block.type)), 'No vocabulary-card section')
   for (const block of phraseBlocks) {
-    assert.ok(block.sceneArt?.endsWith('.png'), `Missing phrase illustration: ${block.title}`)
+    assert.ok(block.sceneArt?.endsWith('.svg'), `Missing phrase illustration: ${block.title}`)
     assert.ok(images(block.sceneArt), `Missing on-disk phrase illustration: ${block.sceneArt}`)
   }
   for (const block of conversationBlocks) {
-    assert.ok(block.art?.endsWith('.png'), `Missing conversation illustration: ${block.title}`)
+    assert.ok(block.art?.endsWith('.svg'), `Missing conversation illustration: ${block.title}`)
     assert.ok(images(block.art), `Missing on-disk conversation illustration: ${block.art}`)
   }
   const displayed = new Set(blocks.flatMap((block) => block.phrases ?? []))

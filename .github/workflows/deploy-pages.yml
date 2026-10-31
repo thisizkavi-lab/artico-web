@@ -79,6 +79,13 @@ jobs:
       - name: Generate original chapter-specific teaching scenes
         run: python3 scripts/build_vocabulary_original_scenes.py
 
+      - name: Generate Chapter 02 illustrated vocabulary PNG cards
+        run: |
+          python3 scripts/generate_ch02_vocabulary_png.py
+          for key in friend colleague name photography-class; do
+            test -s "public/assets/course/ch02-${key}.png"
+          done
+
       - name: Generate personality behavior-scene PNGs
         run: python3 scripts/build_vocabulary_personality_scenes.py
 

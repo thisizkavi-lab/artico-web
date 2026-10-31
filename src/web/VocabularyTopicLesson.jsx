@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
 import KokoroSpeakButton from './KokoroSpeakButton'
+import { prefetchKokoroSpeech, warmKokoroSpeech } from './kokoroSpeech'
 import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
 import './vocabulary-topic.css'
@@ -258,7 +259,7 @@ function FrequencyScale({items,japanese}) {
   )
 }
 
-function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
+function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese, upcoming = [] }) {
   const [term, note] = entry
   const ja = vocabularyJapanese(term, lesson)
   const visual = vocabularyVisual(term, lesson)
@@ -285,7 +286,7 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese }) {
         aria-expanded={Boolean(revealed)}>
         {body}
       </button>
-    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}<KokoroSpeakButton text={term} japanese={japanese} /></article>
+    : <article className={'vlt-card' + (visual ? ' vlt-image-card' : ' vlt-text-card')}>{body}<KokoroSpeakButton text={term} japanese={japanese} upcoming={upcoming} /></article>
 }
 
 export default function VocabularyTopicLesson({ topic, japanese }) {
@@ -310,6 +311,16 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
   }, {fresh:0,revisited:0}), [groups,topic.sourceLesson])
   const shownGroups = groupIndex === -1 ? activeGroups : activeGroups.filter(group=>group.index===groupIndex)
   const canRecall = (term) => Boolean(vocabularyJapanese(term, topic.sourceLesson) || vocabularyVisual(term, topic.sourceLesson))
+  useEffect(() => {
+    if (mode !== 'study') return
+    warmKokoroSpeech()
+    // Only the first few visible terms. Do not synthesize an entire lesson.
+    const first = shownGroups.flatMap(group =>
+      organizeVocabularyGroup(group.items, topic.sourceLesson).fresh
+        .slice(0, 3).map(entry => entry[0])).slice(0, 3)
+    prefetchKokoroSpeech(first)
+  }, [topic.sourceLesson, groupIndex, mode])
+
 
   function chooseGroup(index) {
     setGroupIndex(index)
@@ -415,7 +426,8 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}
                         practice={mode === 'practice'} revealed={revealed.has(key)}
-                        onReveal={() => toggleReveal(key)} japanese={japanese} />
+                        onReveal={() => toggleReveal(key)} japanese={japanese}
+                         upcoming={cards.slice(index + 1, index + 3).map(item => item[0])} />
                     })}
                   </div>)
                 : <p className="vlt-empty">{japanese

@@ -244,10 +244,14 @@ test('Chapter 02 uses Chapter 01 phrase shelves and always-visible chat for real
   const blocks = introductionSections.flatMap((section) => section.blocks)
   const phraseBlocks = blocks.filter((block) => block.type === 'phrases')
   const conversationBlocks = blocks.filter((block) => block.type === 'conversation')
-  assert.equal(phraseBlocks.length, 7)
+  assert.equal(phraseBlocks.length, 8)
   assert.equal(conversationBlocks.length, 4)
   const [introduceSection, respondSection, connectSection] = introductionSections
   assert.equal(introduceSection.blocks.find((block) => block.type === 'conversation')?.title, 'At a friend’s gathering')
+  assert.equal(introduceSection.blocks.find((block) => block.type === 'phrases')?.title, 'Another way to give your name')
+  assert.ok(introduceSection.blocks.findIndex((block) => block.type === 'phrases') <
+    introduceSection.blocks.findIndex((block) => block.type === 'conversation'))
+  assert.deepEqual(introduceSection.blocks.filter((block) => block.type === 'phrases').map((block) => block.phrases.length), [1, 4, 1])
   assert.equal(respondSection.blocks.find((block) => block.type === 'conversation')?.title, 'At the start of a project meeting')
   assert.ok(connectSection.blocks.filter((block) => block.type === 'conversation').length === 2)
 

@@ -203,3 +203,148 @@
   .ar-page .ar-scene-illustration { max-height: 150px; }
   .ar-page .ar-scene-time .ar-scene-illustration { max-height: 125px; }
 }
+
+/* Chapter 01 visual refinement: quiet hierarchy, subtle cards, notes. */
+.ip-page .ar-page {
+  --ar-ink: #293a53;
+  --ar-blue: #557fbf;
+  --ar-coral: #ae7a69;
+  --ar-border: #e9edf3;
+  --ar-muted: #6e7b8e;
+  background: #f8f9fb;
+}
+.ar-page > .ar-section {
+  border-color: rgba(62, 83, 112, .065);
+  box-shadow: 0 2px 12px rgba(30, 45, 70, .018);
+}
+.ar-page .ar-section-heading {
+  padding-left: 12px;
+  border-left-width: 2px;
+  border-left-color: color-mix(in srgb, var(--ar-section-accent) 70%, white);
+}
+.ar-page .ar-section-heading h2 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: clamp(21px, 2.05vw, 25px);
+  font-weight: 550;
+  line-height: 1.34;
+  letter-spacing: -.012em;
+  color: #2e4059;
+}
+.ar-page .ar-section-heading h2 span {
+  font-size: .85em;
+  font-weight: 600;
+  letter-spacing: .015em;
+  color: var(--ar-section-accent);
+}
+.ar-page .ar-section-heading p {
+  color: #748095;
+  font-size: 13px;
+  line-height: 1.58;
+}
+.ar-page .ar-card {
+  background: rgba(255,255,255,.86);
+  border: 1px solid #e9edf2;
+  box-shadow: 0 1px 5px rgba(40,58,83,.018);
+  border-radius: 18px;
+}
+.ar-page .ar-phrase-shelf {
+  padding: 58px 19px 18px;
+}
+.ar-page .ar-shelf-heading {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding-left: 11px;
+  border-left: 2px solid #cdd8e5;
+}
+.ar-page .ar-shelf-heading h3 {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: .005em;
+  color: #53647a;
+}
+.ar-page .ar-shelf-heading span {
+  color: #919bab;
+  font-size: 11px;
+}
+.ar-page .ar-shelf-body { padding: 0; }
+.ar-page .ar-speech {
+  border: 1px solid #dce4ee;
+  font-weight: 630;
+  color: #293a53;
+  background: #fff;
+  --ar-tail-border: #dce4ee;
+  box-shadow: none;
+}
+.ar-page .ar-speech.ar-selected {
+  background: #edf3fc;
+  color: #294e83;
+  border-color: #acc3e6;
+  --ar-tail-bg: #edf3fc;
+  --ar-tail-border: #acc3e6;
+}
+.ar-page .ar-speech:hover { border-color: #9db7d8; }
+.ar-page .ar-tail { border-right-width: 1px; border-bottom-width: 1px; }
+.ar-page .ar-context {
+  background: #f5f7fa;
+  color: #69788b;
+  font-size: 12px;
+  line-height: 1.55;
+  padding: 9px 12px;
+}
+.ar-page .ar-note {
+  background: #fffbf1;
+  border: 1px solid rgba(221, 192, 119, .15);
+  color: #74746d;
+  padding: 11px 14px;
+  border-radius: 11px;
+  font-size: 12px;
+  line-height: 1.58;
+  font-weight: 400;
+}
+.ar-page .ar-note strong {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #857d67;
+  margin-bottom: 3px;
+}
+.ar-page .ar-overline {
+  font-weight: 650;
+  color: #7a8799;
+}
+.ar-page .ar-dialogue-bubble {
+  border: 1px solid #dce4ed;
+  color: #304158;
+  font-weight: 580;
+  background: #f5f7fb;
+}
+.ar-page .ar-right .ar-dialogue-bubble {
+  background: #f9f1ec;
+  border-color: #eadbd4;
+}
+.ar-page .ar-play { background: #5d83b7; }
+.ar-page .ar-play:hover { background: #426da8; }
+.ar-page .ar-flow-group { border-width: 1px; border-color: #b8cbea; background: #f0f5fd; }
+.ar-page .ar-flow-coral { border-color: #e8c8c0; background: #fcf1ed; }
+.ar-page .ar-flow-choice { border-width: 1px; font-weight: 600; }
+.ar-page .ar-flow-choice.ar-on { border-color: #abc0df; }
+.ar-page .ar-flow-arrow { color: #8291a5; }
+@media(max-width:620px) {
+  .ar-page .ar-section-heading h2 { font-size: 19px; font-weight: 550; }
+  .ar-page .ar-section-heading p { font-size: 12px; }
+  .ar-page .ar-phrase-shelf { padding: 49px 12px 13px; }
+  .ar-page .ar-shelf-heading { top: 15px; left: 14px; right: 14px; padding-left: 9px; }
+  .ar-page .ar-shelf-heading h3 { font-size: 14px; }
+  .ar-page .ar-note { font-size: 11.5px; padding: 10px 12px; }
+  .ar-page .ar-note strong { font-size: 11.5px; }
+  .ar-page .ar-context { font-size: 11.5px; }
+}

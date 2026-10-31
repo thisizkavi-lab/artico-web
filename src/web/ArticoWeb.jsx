@@ -1,15 +1,20 @@
 import { LanguageSelector, useLanguage } from './Language'
 import { Component, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Button, Icon, IconButton, Modal } from './components'
-import { Courses, PracticeLibrary, Saved } from './Library'
-import Home from './Home'
 import { chapterById, foundationSteps } from './content'
 import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './learning'
-import Progress from './Progress'
 import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
 import { ieltsArea } from './ieltsNavigation'
 import { isStaleAssetFailure, shouldRefreshStaleAssets } from './routeRecovery.js'
+
+// Route-level chunks: old devices do not parse Home, Progress and the course
+// directory when opening a vocabulary lesson directly.
+const Home = lazy(() => import('./Home'))
+const Progress = lazy(() => import('./Progress'))
+const Courses = lazy(() => import('./Library').then(mod => ({ default: mod.Courses })))
+const PracticeLibrary = lazy(() => import('./Library').then(mod => ({ default: mod.PracticeLibrary })))
+const Saved = lazy(() => import('./Library').then(mod => ({ default: mod.Saved })))
 
 const Foundation = lazy(() => import('./Foundation'))
 const Application = lazy(() => import('./Application'))

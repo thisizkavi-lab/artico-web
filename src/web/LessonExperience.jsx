@@ -171,6 +171,7 @@ function Conversation({ block, audioProps, focusedId }) {
 function ReplyAlternatives({ block, audioProps }) {
   const { language } = useLanguage()
   const { byId } = useLesson()
+  const promptItem = block.promptId ? byId[block.promptId] : null
   return (
     <section className="ar-ch02-replies" aria-label={block.title}>
       <header className="ar-ch02-reply-heading">
@@ -181,7 +182,8 @@ function ReplyAlternatives({ block, audioProps }) {
           <img src={art('portrait-ch02-anna.svg')} alt="" width="36" height="36" />
           <span>{language === 'ja' ? '相手' : 'The other person'}</span>
         </div>
-        <p lang="en">{block.prompt}</p>
+        <p lang="en">{promptItem?.en ?? block.prompt}</p>
+        {language === 'ja' && promptItem?.ja && <p className="ar-ch02-reply-ja" lang="ja">{promptItem.ja}</p>}
       </div>
       <div className="ar-ch02-reply-connector" aria-hidden="true"><span>↓</span></div>
       <div className="ar-ch02-reply-options">

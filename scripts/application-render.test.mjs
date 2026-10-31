@@ -21,6 +21,10 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
     for (const [hash, text] of [
       ['#/application/tests','English Tests'],
       ['#/application/tests/ielts/home/study','IELTS Academic'],
+      ['#/application/tests/ielts/home/practice','IELTS Practice'],
+      ['#/application/tests/ielts/mock/practice','Mock tests'],
+      ['#/application/tests/ielts/guided/study','Guided test'],
+      ['#/application/tests/ielts/simulation/practice','Simulated test'],
       ['#/application/tests/ielts/overview/study','Everything about IELTS'],
       ['#/application/tests/ielts/listening/study','Listening'],
       ['#/application/tests/ielts/reading/study','Reading'],

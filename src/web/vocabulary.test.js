@@ -303,3 +303,16 @@ test('isolated tea uses a reliable native pronunciation without changing display
   assert.equal(vocabularyPrefersDeviceVoice('iced tea'), false)
   assert.equal(vocabularyPrefersDeviceVoice('teacher'), false)
 })
+
+
+test('speech adapts to older laptops instead of requiring slow CPU inference', () => {
+  const source = readFileSync(new URL('./kokoroSpeech.js', import.meta.url), 'utf8')
+  assert.match(source, /FIRST_SOUND_BUDGET_MS = 1000/)
+  assert.match(source, /navigator\.gpu\.requestAdapter\(\)/)
+  assert.match(source, /if \(usable && !nativeMode\) void loadKokoro\(\)/)
+  assert.match(source, /Promise\.race\(\[/)
+  assert.match(source, /if \(modelReady && phrase\.length <= 100\) slowClickCount \+= 1/)
+  assert.match(source, /nativeMode && job\.priority === 0/)
+  assert.match(source, /item\.localService/)
+  assert.match(source, /const cached = clipCache\.has\(key\)/)
+})

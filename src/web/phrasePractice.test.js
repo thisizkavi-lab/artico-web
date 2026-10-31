@@ -54,14 +54,14 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
     section.blocks.flatMap((block) => [
       ...(block.phrases ?? []),
       ...(block.choices?.map((choice) => choice.id) ?? []),
+      ...(block.promptId ? [block.promptId] : []),
     ]),
   )
   const ids = introductionPhrases.map((item) => item.id)
   const spoken = introductionPhrases.filter((item) => item.section !== 'words')
-  assert.equal(new Set(ids).size, 30)
-  // Study now deliberately reuses some phrases in collapsible example scenes
-  // and includes a vocabulary shelf. Repetition and presentation order are
-  // teaching choices; every spoken phrase still needs a shared practice record.
+  assert.equal(new Set(ids).size, 41)
+  // Conversations, phrase shelves and the reply prompt share one stable phrase bank.
+  // Every spoken target must appear in Study and remain reachable in Practice.
   assert.ok(displayed.every(id => ids.includes(id)))
   assert.deepEqual(
     new Set(displayed.filter(id => spoken.some(item => item.id === id))),
@@ -73,6 +73,8 @@ test('every Chapter 02 spoken example is a shared Study and Practice record', ()
   }
   for (const target of Object.values(introductionAliases)) assert.ok(ids.includes(target))
   assert.ok(introductionPhrases.some((item) => item.en === 'I go by Dan.'))
+  assert.ok(introductionPhrases.some((item) => item.en === 'This is ...'))
+  assert.ok(introductionPhrases.some((item) => item.en === 'What should I call you?'))
   assert.ok(introductionPhrases.some((item) => item.en === 'Could you say your name again?'))
 })
 

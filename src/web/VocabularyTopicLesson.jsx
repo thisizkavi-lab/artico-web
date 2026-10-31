@@ -3,6 +3,7 @@ import organized from './vocabularyOrganized.json'
 import { vocabularyGroupJapanese, vocabularyJapanese } from './vocabularySupport'
 import { vocabularyVisual } from './vocabularyVisual'
 import VocabularyBodyArt from './VocabularyBodyArt'
+import VocabularyColorSwatch from './VocabularyColorSwatch'
 import KokoroSpeakButton from './KokoroSpeakButton'
 import VocabularyBodyMotion from './VocabularyBodyMotion'
 import { organizeVocabularyGroup } from './vocabularyDedup'
@@ -184,7 +185,8 @@ function TimeSpansTable({ items, japanese }) {
   )
 }
 
-function Visual({visual, practice, japanese}) {
+function Visual({visual, practice, japanese, showLabel = true}) {
+  if (visual?.type === 'color-swatch') return <VocabularyColorSwatch term={visual.term} color={visual.color} variant={visual.variant} showLabel={showLabel} />
   if (visual?.type === 'body-motion') return <VocabularyBodyMotion term={visual.term} practice={practice} japanese={japanese} />
   if (visual?.type === 'body-sprite') {
     const col = visual.index % 8
@@ -264,22 +266,25 @@ function VocabCard({ entry, lesson, practice, revealed, onReveal, japanese, upco
   const visual = vocabularyVisual(term, lesson)
   const canPractice = Boolean(ja || visual)
   const answerHidden = practice && !revealed && canPractice
+  const isColorSwatch = visual?.type === 'color-swatch'
   const body = (
     <>
-      {visual && <span className="vlt-visual"><Visual visual={visual} practice={practice} japanese={japanese} /></span>}
+      {visual && <span className="vlt-visual"><Visual visual={visual} practice={practice} japanese={japanese} showLabel={!answerHidden} /></span>}
       <span className="vlt-card-copy">
         {practice && canPractice && <span className="vlt-card-kicker">{japanese ? '英語で何と言う？' : 'SAY IT IN ENGLISH'}</span>}
         {ja && <span className={'vlt-meaning' + (practice ? ' is-prompt' : '')} lang="ja">{ja}</span>}
         {!ja && practice && visual && <span className="vlt-meaning">{japanese ? '絵を見て答える' : 'Name what you see'}</span>}
-        {!answerHidden
+        {!answerHidden && !isColorSwatch
           ? <strong className="vlt-term" lang="en">{term}</strong>
-          : <span className="vlt-hidden-term" aria-hidden="true">{japanese ? 'タップして答えを見る' : 'Tap to reveal'}</span>}
+          : answerHidden
+            ? <span className="vlt-hidden-term" aria-hidden="true">{japanese ? 'タップして答えを見る' : 'Tap to reveal'}</span>
+            : null}
         {!practice && note && <span className="vlt-source-note" lang="en">{note}</span>}
         {practice && revealed && <span className="vlt-reveal-note">{japanese ? 'タップで隠す' : 'Tap to hide'}</span>}
       </span>
     </>
   )
-  const cardType = visual ? ' vlt-image-card' : ' vlt-text-card'
+  const cardType = isColorSwatch ? ' vlt-color-card' : visual ? ' vlt-image-card' : ' vlt-text-card'
   // Keep "reveal" and "listen" as separate controls: never nest two buttons.
   // The small speaker stays at the lower right in both Study and Practice.
   return practice && canPractice
@@ -401,6 +406,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
           const isMonthsChart = topic.sourceLesson === 3 && group.index === 2
           const isTimeSpansTable = topic.sourceLesson === 3 && group.index === 4
           const isFrequencyScale = topic.sourceLesson === 3 && group.index === 5
+          const isColorGroup = topic.sourceLesson === 5 && group.index === 0
           return (
             <section key={group.index} className="vlt-group" aria-labelledby={'vlt-group-' + topic.sourceLesson + '-' + group.index}>
               <div className="vlt-group-heading">
@@ -429,7 +435,7 @@ export default function VocabularyTopicLesson({ topic, japanese }) {
                       ? <TimeSpansTable items={cards} japanese={japanese} />
                       : isFrequencyScale && mode === 'study'
                         ? <FrequencyScale items={cards} japanese={japanese} />
-                        : <div className="vlt-grid">
+                        : <div className={'vlt-grid' + (isColorGroup ? ' vlt-color-grid' : '')}>
                     {cards.map((entry, index) => {
                       const key = group.index + '-' + index
                       return <VocabCard key={key} entry={entry} lesson={topic.sourceLesson}

@@ -114,7 +114,7 @@ const contextual = {
  '4:check your emails':'メールを確認する',
  '4:check email':'メールを確認する',
  '4:put the children to bed':'子どもを寝かせる',
- '5:colors':'色', '5:color':'色',
+ '5:colors':'色', '5:color':'色', '5:yellow':'黄色',
  '5:cream (color)':'クリーム色',
  '5:orange (color)':'オレンジ色',
  '5:light':'軽い', '5:heavy':'重い',

@@ -14,6 +14,24 @@ import { vocabularyBodyIllustration } from './VocabularyBodyArt'
 import { vocabularyBodySprite } from './vocabularyBodySprite'
 import { vocabularyBodyMotion } from './VocabularyBodyMotion'
 
+// Lesson 05 uses simple inline SVG swatches, matching the visual reference.
+const colorSwatches = {
+  black: { color: '#202124', variant: 0 },
+  blue: { color: '#2e6cf2', variant: 1 },
+  brown: { color: '#755030', variant: 3 },
+  'cream (color)': { color: '#f1e6d1', variant: 2 },
+  'dark green': { color: '#1e6847', variant: 0 },
+  gray: { color: '#9b9b9b', variant: 1 },
+  green: { color: '#258d50', variant: 2 },
+  'navy blue': { color: '#263c70', variant: 3 },
+  'orange (color)': { color: '#ee8b27', variant: 0 },
+  'pale green': { color: '#bdd7a7', variant: 1 },
+  pink: { color: '#e6a1b6', variant: 2 },
+  purple: { color: '#8354b5', variant: 3 },
+  red: { color: '#c02b2d', variant: 0 },
+  yellow: { color: '#f8d849', variant: 2 },
+}
+
 // Artwork for Lessons 3–78 uses dedicated course illustrations, approved raster sprites,
 // or reviewed PNG illustrations.
 // Dedicated course illustrations take precedence over all legacy art.
@@ -52,6 +70,10 @@ function artworkFor(term, chapter) {
 }
 
 export function vocabularyVisual(term, chapter) {
+  if (chapter === 5 && colorSwatches[term]) {
+    const swatch = colorSwatches[term]
+    return { type: 'color-swatch', term: term.replace(/ \(color\)$/i, ''), ...swatch }
+  }
   const direct = artworkFor(term, chapter)
   if (direct) return direct
 

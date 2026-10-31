@@ -968,3 +968,422 @@
   .ip-page .ar-shared-study .ip-note p { font-size: 11.5px; }
   .ip-page .ar-shared-study .ar-c03-card h3 { font-size: 19px; }
 }
+
+
+/* Social Fluency unified visual grammar: Chapter 01 is the reference. */
+.ip-page .ar-shared-study {
+  --ar-ink: #293a53;
+  --ar-blue: #557fbf;
+  --ar-coral: #ae7a69;
+  --ar-muted: #637084;
+  --ar-border: #e9edf2;
+  background: #f8f9fb;
+}
+.ip-page .ar-shared-study > .ip-section {
+  gap: 15px;
+  background: linear-gradient(155deg, var(--ar-section-top), var(--ar-section-bottom) 82%);
+}
+.ip-page .ar-shared-study .ip-section-heading {
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+.ip-page .ar-shared-study .ip-section-heading h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(21px, 2.05vw, 25px);
+  font-weight: 550;
+  line-height: 1.34;
+  letter-spacing: -.012em;
+  color: #2e4059;
+}
+.ip-page .ar-shared-study .ip-section-heading > span {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: .85em;
+  font-weight: 600;
+  color: var(--ar-section-accent);
+}
+.ip-page .ar-shared-study .ip-small-heading {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #53647a;
+  line-height: 1.35;
+  border-left: 2px solid #cdd8e5;
+  padding-left: 11px;
+}
+.ip-page .ar-shared-study .ip-prose {
+  color: #637084;
+  font-size: 13px;
+  line-height: 1.66;
+}
+.ip-page .ar-shared-study .ip-note,
+.ip-page .ar-shared-study .ar-teaching-note {
+  padding: 9px 12px;
+  border: 1px solid rgba(218,196,144,.14);
+  border-radius: 10px;
+  background: #fffdf7;
+  box-shadow: none;
+  color: #74746d;
+}
+.ip-page .ar-shared-study .ar-note-label,
+.ip-page .ar-shared-study .ar-teaching-note-title {
+  display: block;
+  margin: 0 0 3px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #827c6c;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+.ip-page .ar-shared-study .ip-note p,
+.ip-page .ar-shared-study .ar-teaching-note-copy {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.58;
+  color: #74746d;
+}
+.ip-page .ar-shared-study .ip-note p strong,
+.ip-page .ar-shared-study .ar-teaching-note-copy strong {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 650;
+  color: #5b625e;
+}
+.ip-page .ar-shared-study :is(.ip-scene, .ip-word, .ar-reference-shelf, .ar-study-example, .rc-example, .rc-table, .rc-sample-conversation) {
+  border: 1px solid #e9edf2;
+  border-radius: 17px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 1px 5px rgba(40,58,83,.018);
+}
+.ip-page .ar-shared-study .ar-reference-shelf {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
+  grid-template-areas: "art phrases" "note note";
+  grid-template-rows: auto auto;
+  align-items: stretch;
+  gap: 9px 18px;
+  min-height: 0;
+  padding: 57px 16px 13px;
+}
+.ip-page .ar-shared-study .ar-reference-no-art {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "phrases" "note";
+  grid-template-rows: auto auto;
+}
+.ip-page .ar-shared-study .ar-reference-stage {
+  grid-area: art;
+  min-height: 165px;
+  height: 100%;
+  background: #f1f5fa;
+}
+.ip-page .ar-shared-study .ar-reference-shelf-main {
+  grid-area: phrases;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  min-width: 0;
+  padding: 0;
+}
+.ip-page .ar-shared-study .ar-reference-shelf-main > h3 {
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  right: 19px;
+  margin: 0;
+  padding-left: 11px;
+  border-left: 2px solid #cdd8e5;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #53647a;
+}
+.ip-page .ar-shared-study .ar-reference-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: start;
+  gap: 13px 11px;
+  margin: 0;
+}
+.ip-page .ar-shared-study .ar-reference-choice {
+  max-width: 100%;
+  min-height: 43px;
+  padding: 9px 12px;
+  border: 1px solid #dce4ee;
+  border-radius: 13px;
+  background: #fff;
+  color: #293a53;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(14px,1.45vw,17px);
+  font-weight: 630;
+  line-height: 1.35;
+  box-shadow: none;
+}
+.ip-page .ar-shared-study .ar-reference-choice:is(.is-selected,:hover) {
+  border-color: #acc3e6;
+  background: #edf3fc;
+  color: #294e83;
+}
+.ip-page .ar-shared-study .ar-reference-choice::after {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #dce4ee;
+}
+.ip-page .ar-shared-study .ar-reference-choice:is(.is-selected,:hover)::after {
+  border-color: #acc3e6;
+  background: #edf3fc;
+}
+.ip-page .ar-shared-study .ar-reference-detail {
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 0;
+  margin: 2px 0 0;
+  padding: 7px 11px;
+  border-radius: 10px;
+  background: #f7f8fa;
+}
+.ip-page .ar-shared-study .ar-reference-detail p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #637084;
+}
+.ip-page .ar-shared-study .ar-reference-detail p + p { margin-top: 4px; }
+.ip-page .ar-shared-study .ar-reference-note {
+  grid-area: note;
+  align-self: end;
+  min-width: 0;
+  margin: 0;
+  padding: 7px 11px 8px;
+  border: 1px solid rgba(218,196,144,.14);
+  border-radius: 10px;
+  background: #fffdf7;
+  color: #74746d;
+}
+.ip-page .ar-shared-study .ar-reference-note-label {
+  display: block;
+  margin: 0 0 2px;
+  color: #827c6c;
+  font-size: 11px;
+  font-weight: 600;
+}
+.ip-page .ar-shared-study .ar-reference-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #74746d;
+}
+.ip-page .ar-shared-study .ar-reference-note p strong {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 650;
+  color: #5b625e;
+}
+.ip-page .ar-shared-study .ar-word-section {
+  display: grid;
+  gap: 11px;
+}
+.ip-page .ar-shared-study .ar-word-section > .ip-small-heading {
+  margin: 2px 0 0 !important;
+}
+.ip-page .ar-shared-study .ip-words {
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 12px;
+}
+.ip-page .ar-shared-study .ip-word {
+  padding: 12px;
+  overflow: hidden;
+}
+.ip-page .ar-shared-study .ip-word img {
+  width: 100%;
+  height: 118px;
+  max-width: none;
+  object-fit: contain;
+}
+.ip-page .ar-shared-study .ip-word h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 650;
+  color: #293a53;
+}
+.ip-page .ar-shared-study .ip-word p {
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #637084;
+}
+.ip-page .ar-shared-study .ip-scene {
+  grid-template-columns: minmax(0,.83fr) minmax(0,1.17fr);
+  gap: 13px 18px;
+  padding: 14px 15px 15px;
+}
+.ip-page .ar-shared-study .ip-scene-short {
+  grid-template-columns: minmax(0,1fr);
+}
+.ip-page .ar-shared-study .ar-scene-heading {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  padding: 0 0 0 10px;
+  border-left: 2px solid #cdd8e5;
+}
+.ip-page .ar-shared-study .ar-scene-heading h3 {
+  min-width: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #53647a;
+}
+.ip-page .ar-shared-study .ar-scene-heading .ip-conversation-audio {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  background: #5d83b7;
+}
+.ip-page .ar-shared-study .ip-scene-setting {
+  min-height: 0;
+  background: #f1f5fa;
+}
+.ip-page .ar-shared-study .ip-conversation {
+  min-width: 0;
+  padding: 2px 0 2px;
+  gap: 11px;
+}
+.ip-page .ar-shared-study .ip-turn .ip-phrase {
+  border: 1px solid #dce4ed;
+  background: #edf3fb;
+  box-shadow: none;
+}
+.ip-page .ar-shared-study .ip-turn.is-outgoing .ip-phrase {
+  border-color: #eadbd4;
+  background: #f9f1ec;
+}
+.ip-page .ar-shared-study .ip-turn .ip-phrase .ip-phrase-text {
+  font-size: clamp(14px,1.55vw,16px);
+  line-height: 1.52;
+  font-weight: 580;
+  color: #304158;
+}
+.ip-page .ar-shared-study .ip-turn .ip-speaker {
+  font-size: 11px;
+  font-weight: 600;
+  color: #637084;
+}
+.ip-page .ar-shared-study .ip-scene-pair .ip-scene {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.ip-page .ar-shared-study .ip-scene-pair .ip-conversation {
+  padding: 2px 0;
+}
+.ip-page .ar-shared-study .ip-scene-pair .ip-scene-setting { min-height: 0; }
+.ip-page .ar-shared-study .ar-study-example > summary {
+  min-height: 47px;
+  padding: 11px 14px;
+}
+.ip-page .ar-shared-study .ar-study-example-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #637084;
+}
+.ip-page .ar-shared-study .ar-study-example > summary strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: #53647a;
+}
+.ip-page .ar-shared-study .rc-source .ar-teaching-note {
+  margin: 0;
+}
+.ip-page .ar-shared-study .rc-table thead {
+  background: #f1f5fa;
+  color: #53647a;
+}
+.ip-page .ar-shared-study .rc-table :is(th,td) {
+  border-color: #e9edf2;
+}
+.ip-page .ar-shared-study .ar-c03-card h3 {
+  font-size: clamp(18px,1.8vw,21px);
+  font-weight: 650;
+}
+.ip-page .ar-shared-study .ar-c03-idea,
+.ip-page .ar-shared-study .ar-c03-lesson-tip {
+  background: #fffdf7;
+  border: 1px solid rgba(218,196,144,.14);
+  color: #74746d;
+}
+.ip-page .ar-shared-study .ar-c03-idea strong,
+.ip-page .ar-shared-study .ar-c03-lesson-tip strong {
+  color: #827c6c;
+  font-size: 11px;
+  font-weight: 600;
+}
+.ip-page .ar-shared-study .ar-c03-idea p,
+.ip-page .ar-shared-study .ar-c03-lesson-tip p {
+  color: #74746d;
+  font-size: 12px;
+  line-height: 1.58;
+}
+@media(max-width:820px) {
+  .ip-page .ar-shared-study .ar-reference-shelf {
+    grid-template-columns: minmax(0,1fr);
+    grid-template-areas: "art" "phrases" "note";
+    gap: 10px;
+  }
+  .ip-page .ar-shared-study .ar-reference-no-art {
+    grid-template-areas: "phrases" "note";
+  }
+  .ip-page .ar-shared-study .ar-reference-stage {
+    min-height: 125px;
+    max-height: 175px;
+  }
+  .ip-page .ar-shared-study .ip-scene {
+    grid-template-columns: minmax(0,1fr);
+  }
+  .ip-page .ar-shared-study .ar-scene-heading {
+    grid-column: 1;
+  }
+  .ip-page .ar-shared-study .ip-scene-setting {
+    max-height: 185px;
+  }
+}
+@media(max-width:620px) {
+  .ip-page .ar-shared-study .ip-section-heading h2 {
+    font-size: 19px;
+  }
+  .ip-page .ar-shared-study .ar-reference-shelf {
+    padding: 50px 11px 11px;
+    gap: 9px;
+  }
+  .ip-page .ar-shared-study .ar-reference-shelf-main > h3 {
+    top: 15px;
+    left: 14px;
+    right: 14px;
+    font-size: 14px;
+  }
+  .ip-page .ar-shared-study .ar-reference-choice {
+    font-size: 14px;
+    padding: 8px 11px;
+  }
+  .ip-page .ar-shared-study .ar-reference-detail p,
+  .ip-page .ar-shared-study .ar-reference-note p,
+  .ip-page .ar-shared-study .ip-note p {
+    font-size: 11.5px;
+  }
+  .ip-page .ar-shared-study .ip-word img { height: 100px; }
+  .ip-page .ar-shared-study .ar-scene-heading h3 { font-size: 13px; }
+}

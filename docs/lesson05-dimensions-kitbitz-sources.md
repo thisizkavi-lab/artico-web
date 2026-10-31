@@ -15,5 +15,6 @@ Source artwork:
 - bush: `kits/nature-kit/Bush 01.svg`
 - mug: `kits/food-kit/Mug.svg`
 - mountain: `kits/nature-kit/Mountain 1.svg`
+- little (kitten/adult cat comparison): `kits/halloween-kit/Black cat.svg` (same CC0 cat artwork scaled to show age/size contrast)
 
 Every `public/vocabulary-dimensions/05/*.svg` is self-contained; no CDN or remote assets are loaded by learners. The comparison highlights the target property in blue; the same object types are reused in antonym pairs to make meanings visually obvious.

@@ -73,3 +73,38 @@
 .vlt-month-table .artico-speak,
 .vlt-span-table .artico-speak,
 .vlt-frequency-bars .artico-speak { width: 30px; height: 30px; padding: 7px; }
+
+/* Only the active speaker shows progress/errors. Most cards stay unchanged. */
+.artico-speak-status {
+  position: absolute;
+  right: 6px;
+  bottom: 41px;
+  z-index: 5;
+  width: max-content;
+  max-width: min(220px, calc(100% - 12px));
+  padding: 9px 11px;
+  border: 1px solid #e2e7ee;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(30, 45, 60, .08);
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #526273;
+  text-align: left;
+}
+.artico-speak-status.is-error {
+  border-color: #e8cbd1;
+}
+.artico-speak-status button {
+  display: block;
+  margin-top: 6px;
+  padding: 3px 0;
+  border: 0;
+  background: transparent;
+  color: #386ca5;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.artico-speak-status button:hover { text-decoration: underline; }

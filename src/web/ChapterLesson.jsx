@@ -7,6 +7,7 @@ import './chapter.css'
 import './readable-course.css'
 import { sourceChapterId } from './chapterNumbers.js'
 import { selectTeachingNotes } from './teachingNotes.js'
+import { japaneseGlossFor } from './japanesePhraseGlosses.js'
 
 const lessons = import.meta.glob('../course/lessons/*.json', { import: 'default' })
 const japaneseLessons = import.meta.glob('../course/locales/ja/lessons/*.json', { import: 'default' })
@@ -28,7 +29,7 @@ function makeModel(source, t) {
             title: block.caption,
             alt: `${block.people.join(', ')} — ${section.title}`,
             phrases: block.phraseIds,
-            turns: block.turns,
+            turns: block.turns.map((turn) => ({ ...turn, ja: japaneseGlossFor(turn, source.id) })),
           }
         : {
             type: 'source',
@@ -62,7 +63,7 @@ function makeModel(source, t) {
     title: source.title,
     subtitle: source.goal,
     language: source.language ?? 'en',
-    phrases: source.phraseBank,
+    phrases: source.phraseBank.map((item) => ({ ...item, ja: japaneseGlossFor(item, source.id) })),
     legacyPhraseIds: source.rehearsal.map((item) => item.id),
     sections,
     SourceContent,

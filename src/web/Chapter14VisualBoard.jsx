@@ -8,8 +8,8 @@ const familyNodes = [
   [440, 12, 'grandmother', '祖母', 'woman'],
   [700, 12, 'grandfather', '祖父', 'man'],
   [860, 12, 'grandmother', '祖母', 'woman'],
-  [220, 135, 'uncle', 'おじ（叔父／伯父）', 'man'],
-  [440, 135, 'mother / mom', '母／お母さん', 'woman'],
+  [350, 135, 'uncle', 'おじ（叔父／伯父）', 'man'],
+  [500, 135, 'mother / mom', '母／お母さん', 'woman'],
   [700, 135, 'father / dad', '父／お父さん', 'man'],
   [900, 135, 'aunt', 'おば（叔母／伯母）', 'woman'],
   [1060, 135, 'uncle', 'おじ（叔父／伯父）', 'man'],
@@ -33,17 +33,17 @@ const familyNodes = [
 ]
 
 const familyLines = [
-  'M 280 58 H 440 M 360 58 V 105 H 220 V 125 M 360 105 H 440 V 125',
+  'M 280 58 H 440 M 360 58 V 105 H 350 V 125 M 360 105 H 500 V 125',
   'M 700 58 H 860 M 780 58 V 105 H 700 V 125 M 780 105 H 900 V 125',
   'M 900 180 H 1060 M 980 180 V 345 H 1080 V 375',
-  'M 440 180 H 700 M 570 180 V 225 H 640 V 245 M 570 225 H 780 V 245 M 570 225 H 920 V 245',
-  'M 80 305 H 220 M 150 305 V 225 H 360 V 245 M 150 225 H 500 V 245',
+  'M 500 180 H 700 M 600 180 V 225 H 640 V 245 M 600 225 H 780 V 245 M 600 225 H 920 V 245',
+  'M 80 180 H 220 M 150 180 V 225 H 360 V 245 M 150 225 H 500 V 245',
   'M 360 305 H 640 M 500 305 V 355 H 550 V 375 M 500 355 H 720 V 375',
   'M 920 305 H 1060 M 990 305 V 475 H 850 V 505 M 990 475 H 1010 V 505',
   'M 410 435 H 550 M 480 435 V 605 H 550 V 635 M 480 605 H 720 V 635',
   'M 720 435 H 860',
 ]
-const familyHearts = [[360,58],[780,58],[980,180],[570,180],[150,305],[500,305],[990,305],[480,435],[790,435]]
+const familyHearts = [[360,58],[780,58],[980,180],[600,180],[150,180],[500,305],[990,305],[480,435],[790,435]]
 
 const relationshipTerms = [
   ['siblings','兄弟姉妹','👫'], ['twins','双子','👭'], ['only child','一人っ子','🧒'],
@@ -199,10 +199,16 @@ function StepFamily({ language, onSpeak }) {
               <span className="ar-f14-mini-heart">♥</span>
               <MiniFamilyNode en="stepparent" ja="継親" language={language} onSpeak={onSpeak} />
             </div>
-            <span className="ar-f14-mini-stem" />
-            <div className="ar-f14-mini-children">
-              <MiniFamilyNode en="you" ja="あなた" language={language} onSpeak={onSpeak} kind="me" />
-              <MiniFamilyNode en="stepparent’s child" ja="継親の子" language={language} onSpeak={onSpeak} />
+            <div className="ar-f14-step-children">
+              <div className="ar-f14-step-child">
+                <MiniFamilyNode en="you" ja="あなた" language={language} onSpeak={onSpeak} kind="me" />
+                <small>{language === 'ja' ? 'あなたの親の子' : 'your parent’s child'}</small>
+              </div>
+              <span className="ar-f14-step-link">{language === 'ja' ? '義理の兄弟姉妹' : 'step-siblings'}</span>
+              <div className="ar-f14-step-child">
+                <MiniFamilyNode en="stepparent’s child" ja="継親の子" language={language} onSpeak={onSpeak} />
+                <small>{language === 'ja' ? '以前の関係で生まれた子' : 'from an earlier relationship'}</small>
+              </div>
             </div>
           </div>
           <p>{language === 'ja'

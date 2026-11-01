@@ -109,7 +109,7 @@ This table is the actual synthesis step: source concepts are mapped into origina
 | What makes a good research talk? | 01 | Define success by the audience's task; extend to teaching, decision, demonstration and ceremonial contexts |
 | Q1: personal learning goals | Saved course-goal reflection on the course overview | Capture what the learner wants to improve in speaking; keep this separate from the goal of the talk being planned |
 | First step; audience Q3–Q5 | 02; Blueprint 1–4 | Audience, prior knowledge, motivation, occasion and constraints; distinguish known facts from assumptions |
-| Goal Q6; core message Q7–Q9 | 03–04; Blueprint 5–9 | Separate topic, goal, message and significance; retain evidence boundary |
+| Goal Q6; core message Q7–Q9 | 03–04; Blueprint 5–9 | Separate topic, goal, message and significance; include the 15-word working-message constraint as a draft aid, then restore necessary qualifications |
 | Half-Life Your Message; Q8 | 04; four saved practice rounds | Preserve 60/30/15/8 as discovery, add reflection and safeguards against slogan-making |
 | Speaking style Q10 | 04 and 14; Blueprint 20 | Individual, sustainable delivery rather than one charismatic ideal |
 | Talks are not papers | 05 | Select material for live comprehension without concealing validity-critical evidence |

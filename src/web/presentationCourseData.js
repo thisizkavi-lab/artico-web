@@ -154,7 +154,7 @@ export const presentationLessons = [
     "title": "Build the reasoning path",
     "goal": "Choose a logical structure that matches the communication task.",
     "rule": "Structure is the order in which the audience needs to understand things.",
-    "teach": "An outline is a thinking tool, not a fixed template. Try question → investigation → answer; problem → evidence → recommendation; comparison → criteria → decision; demonstration → observation → explanation; or concept → example → practice. For research, a narrative can follow the question and how evidence changed the interpretation. Build the body first if that reveals what background the introduction needs. Check every transition: why does this part come next?",
+    "teach": "An outline is a thinking tool, not a fixed template. Try question → investigation → answer; problem → evidence → recommendation; comparison → criteria → decision; demonstration → observation → explanation; or concept → example → practice. For research, iBiology offers a useful arc: necessary background (exposition) → the research question (inciting incident) → experiments and results (rising action) → the discovery or main result (climax) → conclusions and implications (resolution). Treat this as a planning aid, not a demand for drama: if the evidence leaves the question unresolved, the ending should say so. A narrative can follow the question and how evidence changed the interpretation. Build the body first if that reveals what background the introduction needs. Check every transition: why does this part come next?",
     "before": "Introduction, three unrelated findings, and a conclusion.",
     "after": "Question → why current models are insufficient → sampling method → evidence for multiple clusters → limits of sampling → next test.",
     "note": "A story arc is a useful model for causal progression. It is not a demand for a dramatic climax or a happy ending.",
@@ -270,7 +270,7 @@ export const presentationLessons = [
     "title": "Slides that make a point",
     "goal": "Use visual material to support reasoning rather than compete with speech.",
     "rule": "A slide should make one useful part of the argument easier to see.",
-    "teach": "A strong technical-slide default is assertion–evidence: write the takeaway as a sentence, then show the graph, image, diagram or comparison that supports it. Avoid a vague heading plus a dense bullet list when a labelled visual would be clearer. This is not a ban on words: definitions, equations, quotations, tables and accessible notes can be appropriate. Keep labels close to the relevant visual, use consistent hierarchy, and remove decoration that competes with the point. Some talks need no slides.",
+    "teach": "A strong technical-slide default is assertion–evidence: write the takeaway as a sentence, then show the graph, image, diagram or comparison that supports it. Avoid a vague heading plus a dense bullet list when a labelled visual would be clearer. This is not a ban on words: definitions, equations, quotations, tables and accessible notes can be appropriate. Keep labels close to the relevant visual, use consistent hierarchy, high-resolution assets and accessible colour/contrast. Credit collaborators, funding, images and sources. Remove decoration that competes with the point. Some talks need no slides.",
     "before": "RESULTS. Five bullets, a screenshot of a paper figure, a decorative stock photo and a paragraph of explanation.",
     "after": "Title: 'The sampled trajectory visits three structural regions'. One clearly labelled projection, the sampling unit, the colour key and a brief caveat.",
     "note": "Garner and Alley tested a combined slide-design package with 110 engineering students. It supports the approach in that context; it does not prove one slide template is right for every talk.",
@@ -328,7 +328,7 @@ export const presentationLessons = [
     "title": "Words that travel",
     "goal": "Make spoken explanations precise and understandable in real time.",
     "rule": "Use the simplest words that preserve the exact meaning.",
-    "teach": "A listener cannot pause your sentence to look up an acronym. Define essential terms at the moment they become necessary. Use a concrete example before an abstract explanation when that helps. An analogy is a bridge, not proof; explain where it stops working. Keep spoken sentences short enough to follow, signpost transitions, and repeat a key term when it helps listeners track the argument. Avoid removing necessary technical language from an expert talk.",
+    "teach": "A listener cannot pause your sentence to look up an acronym. Define essential terms at the moment they become necessary. Use a concrete example before an abstract explanation when that helps. An analogy is a bridge, not proof; explain where it stops working. Keep spoken sentences short enough to follow, signpost transitions, and repeat a key term when it helps listeners track the argument. Ask a genuine or rhetorical question when it helps people think, and use an analogy only after checking that it preserves the important relationship. Avoid removing necessary technical language from an expert talk.",
     "before": "The ensemble exhibits conformational heterogeneity due to metastable basins in a multidimensional free-energy landscape.",
     "after": "The protein samples more than one shape. Some shapes appear more often than others under these conditions. The simulation suggests several structural groups, but we have not shown that each group has a distinct function.",
     "note": "Plain language is not vague language. Keep the scientific term when it is the most precise term, and define it.",
@@ -357,7 +357,7 @@ export const presentationLessons = [
     "title": "Story, attention and ethical persuasion",
     "goal": "Use narrative to create relevance while keeping evidence and audience agency intact.",
     "rule": "A story can help people care. Evidence must still show what is true.",
-    "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. In science communication, do not assume that a listener who disagrees simply lacks information: values, trust, lived experience and the decision context can shape how evidence is received. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
+    "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. Five optional techniques are useful to test: paint a scene, make the story personal, build empathy, create suspense around a genuine unresolved question, and show rather than merely tell. Choose only techniques that fit the audience, purpose and your own speaking style. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. In science communication, do not assume that a listener who disagrees simply lacks information: values, trust, lived experience and the decision context can shape how evidence is received. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
     "before": "I will tell a dramatic story and use it to prove that our intervention works.",
     "after": "I will use one real user example to explain the problem, then show the study data and limitations needed to judge whether the intervention helps.",
     "note": "The National Academies rejects a simple one-way deficit model of science communication. More facts are not always enough; listen for the audience's actual concern and distinguish evidence questions from value or policy disagreements.",
@@ -444,7 +444,7 @@ export const presentationLessons = [
     "title": "Nerves, stagecraft and contingencies",
     "goal": "Prepare for the conditions of delivery and recover when something goes wrong.",
     "rule": "Preparation is not the promise that nothing will go wrong; it is knowing what to do next.",
-    "teach": "Some speakers feel anxious; others do not. Anxiety varies and can be reduced by different approaches, including gradual exposure and cognitive strategies. This course can suggest low-stakes practice, realistic rehearsal, and preparation of the opening and transitions; it is not treatment. Check room, screen, microphone, remote setup, time limit and accessibility needs. Bring a PDF backup. Decide what you will cut if time is shortened and how to continue if a visual or live demo fails.",
+    "teach": "Some speakers feel anxious; others do not. Anxiety varies and can be reduced by different approaches, including gradual exposure and cognitive strategies. This course can suggest low-stakes practice, realistic rehearsal, and preparation of the opening and transitions; it is not treatment. Check room, screen, microphone, remote setup, time limit, accessibility needs and attire appropriate to the occasion. Before the talk, options include knowing the opening, light movement or breathing and a realistic run-through. During the talk, pause, breathe, use a slide cue or a supportive point of focus, and continue after a stumble. Humour is optional and only useful when it fits. Bring a PDF backup. Decide what you will cut if time is shortened and how to continue if a visual or live demo fails.",
     "before": "If the projector fails, my presentation is over.",
     "after": "I will test the setup, keep a PDF backup, prepare a spoken explanation of the key figure, and know which details to omit if time is cut.",
     "note": "For severe or life-limiting anxiety, a presentation course is not a substitute for appropriate professional support.",
@@ -1337,6 +1337,41 @@ export const presentationBlueprintFields = [
   [
     "revision",
     "Revisions made and next presentation goal"
+  ],
+  [
+    "acknowledgements",
+    "Acknowledgements, funding, collaborators and image/source credits"
   ]
 ]
 
+export const presentationDiscussionPrompts = [
+  {
+    "module": "FRAME",
+    "prompts": [
+      "Think of a talk that helped you understand something difficult. What did the speaker do that made the idea clear?",
+      "Which parts of your own speaking style feel natural, and which would you like to test?"
+    ]
+  },
+  {
+    "module": "ARCHITECT",
+    "prompts": [
+      "Recall a talk that held your attention. What was the question or change that gave it a logical path?",
+      "Which part of your own subject is hardest to turn into an outline? What could you build first: the body, the question, or the example?"
+    ]
+  },
+  {
+    "module": "RENDER",
+    "prompts": [
+      "Compare two openings you have heard. Which one earned attention without exaggerating?",
+      "Explain your core message to someone outside your field. Which term or assumption caused the most friction?"
+    ]
+  },
+  {
+    "module": "DELIVER & LEARN",
+    "prompts": [
+      "Which rehearsal method gives you useful information rather than just repetition?",
+      "What feedback do you want from an expert, and what feedback do you want from a representative audience member?",
+      "Which Q&A question do you find difficult, and what would an honest answer sound like?"
+    ]
+  }
+]

@@ -47,7 +47,7 @@ Useful event words are **birth**, **birthday**, **graduation** (completing a cou
 
 ## Practice: Retrieve a useful subset
 
-1. A parent starts a family with a new partner who already has a child from an earlier relationship. Later, they have a child together. How are the children related to one another? Explain the difference.
+1. Imagine you are the first child. Your parent forms a family with a partner who already has a child. They later have a child together. What is the relationship between you and each of the other two children?
 2. Your sister has a son, Leo. What is Leo's relationship to you? Your child has a daughter, Mia. What is Mia's relationship to you?
 3. A person says **My daughter is thirty**. Explain why daughter does not mean only a young child.
 4. Pick four words from different parts of Study. Describe an invented person or family using them. Support: **I have...**, **This is my...**, **She's my...**, **We work together**.
@@ -55,7 +55,7 @@ Useful event words are **birth**, **birthday**, **graduation** (completing a cou
 
 ### Sample possibilities
 
-1. **The child from the new partner’s earlier relationship is a step-sibling. The child they have together with your birth parent is a half-sibling because you share one birth parent.**
+1. **The partner’s child from the earlier relationship is your stepbrother or stepsister. The child your birth parent has with your stepparent is your half-brother or half-sister.**
 2. **Leo is your nephew. Mia is your granddaughter.**
 3. **Daughter describes her relationship to a parent, even when she is an adult.**
 4. **I'm the oldest. I have one sister. My colleague is also my friend.**

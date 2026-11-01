@@ -11,15 +11,19 @@ export function sectionPhraseIds(section, byId, preferredIds) {
   return [...new Set(ids)].filter((id) => byId[id] && !/-line\d+$/.test(id))
 }
 
-// Prefer curated art, then existing conversation scenes. Never request a
-// guessed asset: sections with no real illustration receive a placeholder.
+// Prefer curated art, then existing conversation scenes. An explicit null
+// fallback keeps section artwork separate from conversation artwork.
 export function sectionPhraseArtwork(section, sectionIndex, chapterId, override) {
   const scene = section.blocks.find((block) => block.type === 'conversation' && block.art)
   const existingScene = scene?.art || section.blocks.find((block) => block.sceneArt || block.source?.art)?.sceneArt ||
     section.blocks.find((block) => block.type === 'source' && block.source?.art)?.source.art
   const curated = override ?? chapterPhraseIllustrations[chapterId]?.[sectionIndex]
-  if (curated?.file)
-    return { file: curated.file, fallbackFile: curated.fallbackFile ?? existingScene, alt: curated.alt ?? section.title }
+  if (curated?.file) {
+    const fallbackFile = Object.prototype.hasOwnProperty.call(curated, 'fallbackFile')
+      ? curated.fallbackFile
+      : existingScene
+    return { file: curated.file, fallbackFile, alt: curated.alt ?? section.title }
+  }
   if (existingScene) return { file: existingScene, alt: scene?.alt ?? section.title }
   return null
 }

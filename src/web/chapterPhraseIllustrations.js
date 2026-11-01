@@ -1,9 +1,10 @@
 export const chapterPhraseIllustrations = {
+  // Dedicated PNGs: these section scenes are not borrowed by phrase cards or chat rows.
   '06': [
-    { file: 'ch06-01-agree-with-the-idea.svg', fallbackFile: 'ch06-scene-0.svg', alt: 'Two friends agree while reviewing a seating plan for a larger room' },
-    { file: 'ch06-02-understand-without-agreeing.svg', fallbackFile: 'ch06-scene-1.svg', alt: 'One friend listens empathetically while the other explains a concern about the cost of a larger room' },
-    { file: 'ch06-03-disagree-or-qualify.svg', fallbackFile: 'ch06-scene-2.svg', alt: 'Two friends compare opinions about a film while a movie screen and popcorn sit between them' },
-    { file: 'ch06-04-continue-or-close-the-disagreement.svg', fallbackFile: 'ch06-scene-2.svg', alt: 'Two friends calmly discuss information at a cafe table and decide whether to continue the discussion' },
+    { file: 'ch06-01-agree-with-the-idea.png', fallbackFile: null, alt: 'Nico and Harper agree on a larger workshop room while reviewing a seating plan' },
+    { file: 'ch06-02-understand-without-agreeing.png', fallbackFile: null, alt: 'Nico worries about the cost of a larger room while Harper listens empathetically and points to the seating plan' },
+    { file: 'ch06-03-disagree-or-qualify.png', fallbackFile: null, alt: 'Nico and Harper share different opinions about a film after the screening, while staying friendly' },
+    { file: 'ch06-04-continue-or-close-disagreement.png', fallbackFile: null, alt: 'Nico shows Harper a simple chart as they calmly consider whether to check the evidence further' },
   ],
   '07': [
     { file: 'ch07-01-put-forward-an-idea.svg', fallbackFile: 'ch07-scene-0.svg', alt: 'Two friends consider a lunch suggestion after class, with a menu and meal between them' },

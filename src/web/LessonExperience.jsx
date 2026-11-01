@@ -854,10 +854,11 @@ function PracticeChooser({ set, change, audioProps, onStart }) {
       else if (bounds.top < top) viewport.scrollBy({ top: bounds.top - top, behavior: 'instant' })
     })
   }
-  // A scene illustration supplies context when an individual phrase has no artwork.
+  // Chapter 06 keeps section art, phrase art, and conversation portraits separate.
+  // Do not reuse a conversation scene as a Practice phrase thumbnail in this chapter.
   const sceneArtBySection = Object.fromEntries(introductionSections.map((section) => {
     const scene = section.blocks.find((block) => block.art || block.sceneArt || block.source?.art)
-    return [section.id, scene?.art ?? scene?.sceneArt ?? scene?.source?.art]
+    return [section.id, chapterId === '06' ? undefined : scene?.art ?? scene?.sceneArt ?? scene?.source?.art]
   }))
   const shown = filterPracticePhrases(introductionPhrases, set)
   const selected = new Set(set.selected)

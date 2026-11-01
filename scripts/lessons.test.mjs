@@ -32,20 +32,43 @@ function blockText(block) {
   return runs(block.runs)
 }
 test('Chapters 06–10 have one distinct illustration for every Study section', () => {
+  const pngDimensions = {
+    '06': [[1821, 864], [1774, 887], [1796, 876], [1536, 1024]],
+    '08': [1800, 900],
+    '09': [1774, 887],
+    '10': [1400, 840],
+  }
   for (const id of ['06', '07', '08', '09', '10']) {
     const model = readLesson(id)
     const illustrations = chapterPhraseIllustrations[id]
     assert.equal(illustrations.length, model.study.length, `Chapter ${id}: one illustration per section`)
-    for (const illustration of illustrations) {
+    if (id === '06') {
+      assert.equal(new Set(illustrations.map((item) => item.file)).size, 4, 'Chapter 06 section scenes are all unique')
+      assert.ok(illustrations.every((item) => item.file.endsWith('.png')), 'Chapter 06 uses dedicated PNGs')
+      assert.ok(illustrations.every((item) => item.fallbackFile === null), 'Chapter 06 never falls back to conversation art')
+    }
+    for (const [index, illustration] of illustrations.entries()) {
       const path = new URL(`public/assets/course/${illustration.file}`, root)
       assert.ok(existsSync(path), illustration.file)
-      if (['08', '09', '10'].includes(id)) {
+      if (['06', '08', '09', '10'].includes(id)) {
         const png = readFileSync(path)
-        const [width, height] = ({ '08': [1800, 900], '09': [1774, 887], '10': [1400, 840] })[id]
+        const [width, height] = id === '06' ? pngDimensions[id][index] : pngDimensions[id]
         assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10], `${illustration.file}: PNG signature`)
         assert.equal(png.readUInt32BE(16), width, `${illustration.file}: image width`)
         assert.equal(png.readUInt32BE(20), height, `${illustration.file}: image height`)
-        assert.equal(png[25], 6, `${illustration.file}: RGBA image with transparency`)
+        if (png[25] === 3) {
+          let offset = 8
+          let hasTransparency = false
+          while (offset < png.length) {
+            const length = png.readUInt32BE(offset)
+            const type = png.toString('ascii', offset + 4, offset + 8)
+            if (type === 'tRNS') hasTransparency = true
+            offset += length + 12
+          }
+          assert.ok(hasTransparency, `${illustration.file}: indexed PNG carries alpha transparency`)
+        } else {
+          assert.equal(png[25], 6, `${illustration.file}: RGBA image with transparency`)
+        }
       } else {
         const source = readFileSync(path, 'utf8')
         assert.match(source, /viewBox="0 0 1774 887"/, `${illustration.file}: wide vector canvas`)
@@ -58,8 +81,11 @@ test('Chapters 06–10 have one distinct illustration for every Study section', 
   assert.ok(board.includes('ar-unified-phrase-stage'), 'all later chapters use one full-width illustration stage')
   assert.ok(board.includes('ar-unified-phrase-pills'), 'all later chapters use the shared pill set')
   assert.ok(board.includes('PhraseAudio'), 'each expression keeps its own audio control')
+  const practiceArt = renderer.slice(renderer.indexOf('const sceneArtBySection'), renderer.indexOf('const shown', renderer.indexOf('const sceneArtBySection')))
+  assert.match(practiceArt, /chapterId === '06' \? undefined/, 'Chapter 06 phrase cards do not borrow conversation scenes')
+  const phraseSceneData = readFileSync(new URL('../src/web/phraseSceneData.js', import.meta.url), 'utf8')
+  assert.match(phraseSceneData, /hasOwnProperty\.call\(curated, 'fallbackFile'\)/, 'explicitly disabled scene fallbacks remain disabled')
 })
-
 test('all 96 chapters preserve every source block, not only the opening dialogue', () => {
   assert.equal(Object.keys(designs).length, 96)
   for (const chapter of catalog) {

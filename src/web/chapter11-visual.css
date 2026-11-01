@@ -108,11 +108,14 @@
 .ar-ch11-inline-word:focus-visible {color:#277e98;text-decoration:underline;text-underline-offset:3px;outline:0;}
 .ar-ch11-inline-word small {color:#9ca9a4;font-size:10px;font-weight:400;line-height:1.2;text-decoration:none;}
 .ar-ch11-frequency-extra {flex-direction:row;align-items:center;gap:25px;}
-.ar-ch11-month-markers {display:grid;grid-template-columns:repeat(7,12px);gap:5px;}
-.ar-ch11-month-markers span {
-  width:12px;height:12px;border-radius:2px;background:#f2f6f0;border:1px solid #d5dfd3;
+.ar-ch11-month-mini {width:137px;flex:none;padding:5px;border:1px solid #d6e3d5;border-radius:7px;background:#fff;}
+.ar-ch11-month-mini strong {display:block;padding:1px 0 5px;color:#678173;font-size:10px;text-align:center;letter-spacing:.08em;}
+.ar-ch11-month-grid {display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+.ar-ch11-month-grid span {
+  display:grid;place-items:center;width:15px;height:15px;border:1px solid #e6eae5;border-radius:2px;
+  background:#f4f8f2;color:#88958a;font-size:7px;
 }
-.ar-ch11-month-markers .ar-ch11-marker-on {background:#bddbb0;border-color:#9cc58f;}
+.ar-ch11-month-grid span.is-visited {background:#b9dba9;border-color:#8ebc7a;color:#3c6c3a;font-weight:700;}
 .ar-ch11-audio-hint {
   margin:0;
   padding:10px 22px 14px;

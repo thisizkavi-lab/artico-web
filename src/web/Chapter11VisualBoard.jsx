@@ -769,9 +769,15 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
       )}
       {section.id === '11-study-4' && (
         <div className="ar-ch11-board-notes ar-ch11-frequency-extra">
-          <div className="ar-ch11-month-markers" aria-hidden="true">
-            <span className="ar-ch11-marker-on" /><span /><span className="ar-ch11-marker-on" />
-            <span /><span /><span className="ar-ch11-marker-on" /><span />
+          <div className="ar-ch11-month-mini" aria-hidden="true">
+            <strong>APRIL</strong>
+            <div className="ar-ch11-month-grid">
+              {Array.from({ length: 30 }, (_, index) => (
+                <span key={index} className={[5, 14, 23].includes(index + 1) ? 'is-visited' : ''}>
+                  {index + 1}
+                </span>
+              ))}
+            </div>
           </div>
           <button className="ar-ch11-inline-word" type="button" title="Hear three times a month"
             onClick={() => speak('three times a month')}>

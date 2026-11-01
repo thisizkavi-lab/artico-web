@@ -15,7 +15,7 @@ function speakEnglish(phrase, onFailure) {
   utterance.lang = 'en-US'
   utterance.rate = 0.9
   utterance.pitch = 1
-  utterance.onerror = onFailure
+  utterance.onerror = (event) => { if (!['canceled', 'interrupted'].includes(event.error)) onFailure() }
   const voices = speech.getVoices()
   const voice = voices.find((item) => /^en[-_]US$/i.test(item.lang) && item.localService)
     || voices.find((item) => /^en[-_]US$/i.test(item.lang))

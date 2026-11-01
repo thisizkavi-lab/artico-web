@@ -165,7 +165,8 @@ function HalfLifeLab({learning,update}) {
  return <section className="ps-half-life">
   <span className="ps-kicker">MESSAGE DISCOVERY · 3-MINUTE EXERCISE</span>
   <h3>Half-Life Your Message</h3>
-  <p>Choose one idea. Speak spontaneously for 60 seconds, then repeat the same idea in 30, 15 and 8 seconds. The timer moves directly between rounds. Do not stop to edit and do not simply speak faster. The point is to discover what you most want to say.</p>
+  <p>First, free-associate briefly about the topic without outlining or judging ideas. Then stand or move if comfortable and speak spontaneously for 60 seconds, followed by 30, 15 and 8 seconds. The timer moves directly between rounds. Do not stop to edit and do not simply speak faster. A partner can give time cues if you prefer. The point is to discover what you most want to say.</p>
+  <SavedText learning={learning} update={update} responseKey="application-presentations-half-life-brainstorm" label="Quick free-association (optional)" rows={2} placeholder="Jot down ideas without organising or editing them…"/>
   <div className="ps-half-life-timer">
    <div><span className="ps-kicker">ROUND {round+1} OF 4 · {durations[round]} SECONDS</span><strong aria-label={seconds+' seconds remaining'}>{format(seconds)}</strong><div className="ps-half-life-track"><i style={{width:((durations[round]-seconds)/durations[round]*100)+'%'}}/></div></div>
    <div className="ps-half-life-controls">

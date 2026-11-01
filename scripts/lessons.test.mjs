@@ -39,11 +39,12 @@ test('Chapters 06–10 have one distinct illustration for every Study section', 
     for (const illustration of illustrations) {
       const path = new URL(`public/assets/course/${illustration.file}`, root)
       assert.ok(existsSync(path), illustration.file)
-      if (id === '10') {
+      if (id === '10' || id === '08') {
         const png = readFileSync(path)
+        const [width, height] = id === '08' ? [1800, 900] : [1400, 840]
         assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10], `${illustration.file}: PNG signature`)
-        assert.equal(png.readUInt32BE(16), 1400, `${illustration.file}: image width`)
-        assert.equal(png.readUInt32BE(20), 840, `${illustration.file}: image height`)
+        assert.equal(png.readUInt32BE(16), width, `${illustration.file}: image width`)
+        assert.equal(png.readUInt32BE(20), height, `${illustration.file}: image height`)
         assert.equal(png[25], 6, `${illustration.file}: RGBA image with transparency`)
       } else {
         const source = readFileSync(path, 'utf8')

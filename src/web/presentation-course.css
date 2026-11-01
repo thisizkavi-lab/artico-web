@@ -193,3 +193,12 @@
 .ps-video-notes p a{font-weight:650}
 .ps-video-notes small{font-size:11px;color:#7386a0}
 @media(max-width:720px){.ps-audience-studio,.ps-question-lab{padding:18px 14px}.ps-audience-studio .ps-spoken{font-size:18px;padding:14px}.ps-audience-tabs button{font-size:11px}}
+
+.ps-phrases{max-width:940px;margin:0 auto 76px;border-top:1px solid var(--ps-line);padding-top:34px}
+.ps-phrases>p{max-width:680px;color:#6b7d93}
+.ps-phrase-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:22px}
+.ps-phrase-list>div{background:white;border:1px solid #dbe3ef;border-radius:8px;padding:16px 19px}
+.ps-phrase-list small{color:#6783aa;font-size:11px;font-weight:700}
+.ps-phrase-list blockquote{margin:10px 0;font:520 20px/1.42 Newsreader,Georgia,serif;color:#2e598f}
+.ps-phrase-list p{font-size:12px;color:#6c7d90;margin:0}
+@media(max-width:720px){.ps-phrase-list{grid-template-columns:1fr}}

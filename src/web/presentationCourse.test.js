@@ -60,6 +60,7 @@ test('Presenter drafts and Half-Life rounds survive local learning sanitization'
     'application-presentations-context':'science',
     'application-presentations-blueprint-science-message':'The takeaway is clear.',
     'application-presentations-blueprint-custom-audienceNeeds':'My lab group needs a method-level explanation.',
+    'application-presentations-blueprint-science-acknowledgements':'Lab colleagues and funding sources.',
     'application-presentations-half-life-60':'The one-minute version.',
     'application-presentations-half-life-8':'The short version.',
     'application-presentations-note-18':'Capstone reflection.',

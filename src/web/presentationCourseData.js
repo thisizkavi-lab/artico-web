@@ -959,9 +959,9 @@ export const presentationSources = [
     "title": "McWilliam et al. (2025) · Public-speaking-anxiety interventions",
     "url": "https://doi.org/10.1080/00223980.2025.2459662",
     "kind": "Systematic review and meta-analysis",
-    "summary": "26 studies and 2,253 participants; psychological interventions showed a positive average effect, with high heterogeneity.",
+    "summary": "26 studies and 2,253 participants; the pooled analysis used 21 studies and 42 interventions, reporting g=1.17 with very high heterogeneity.",
     "use": "Support gradual practice and evidence-informed anxiety strategies.",
-    "limit": "A presentation course is not therapy; intervention effects vary by person and method."
+    "limit": "The review required significant benefit for inclusion, so unsuccessful studies were excluded; its pooled estimate is success-selected, not an unbiased estimate of all interventions. Individual effects varied widely."
   },
   {
     "title": "Heiman et al. (2012) · Deliberate practice for oral presentations",
@@ -1047,9 +1047,9 @@ export const presentationSources = [
     "title": "Ebrahimi et al. (2019) · Psychological interventions for fear of public speaking",
     "url": "https://doi.org/10.3389/fpsyg.2019.00488",
     "kind": "Peer-reviewed meta-analysis of RCTs",
-    "summary": "30 randomized trials with 1,355 participants and 62 interventions; pooled Hedges g=.74 (95% CI .61–.87), with low-to-moderate heterogeneity.",
+    "summary": "30 randomized trials, 1,355 participants and 62 interventions; pooled Hedges g=.74 (95% CI .61–.87), with low-to-moderate heterogeneity.",
     "use": "Evidence that psychological interventions can reduce fear of public speaking.",
-    "limit": "Effects were larger on self-report than physiological or behavioural outcomes; this is not evidence that slide tips or one breathing trick treat anxiety."
+    "limit": "Participants had identified impairing fear of public speaking. Effects were larger on self-report than behavioural/physiological outcomes, and the authors noted possible publication bias; this is not evidence that ordinary stage nerves require treatment."
   }
 ]
 

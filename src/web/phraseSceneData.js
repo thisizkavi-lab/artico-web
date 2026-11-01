@@ -8,7 +8,7 @@ export function sectionPhraseIds(section, byId, preferredIds) {
     if (block.type === 'phrases') return block.phrases ?? []
     return []
   })
-  return [...new Set(ids)].filter((id) => byId[id] && !/-line\\d+$/.test(id))
+  return [...new Set(ids)].filter((id) => byId[id] && !/-line\d+$/.test(id))
 }
 
 // Prefer curated art, then existing conversation scenes. Never request a

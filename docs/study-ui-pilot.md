@@ -1,6 +1,6 @@
 # Chapter 06 study UI pilot
 
-Status: implemented for Chapter 06; ready for Kavi's visual review. These are candidate decisions, not an approved course-wide standard. Chapters 01–05 and 07–96 retain their existing lesson presentation.
+Status: Chapter 06 is the lesson-layout pilot. Compact note sizing is shared across all 96 Social Fluency chapters following Kavi's review. The other presentation decisions remain candidates for individual chapter review.
 
 ## Reading hierarchy
 
@@ -13,8 +13,8 @@ The English expression is the focal point. Supporting explanations, Japanese glo
 | Conversation | 15px, weight 450, line height 1.65; 14px on phones |
 | Table explanations / introductory prose | 12px, muted blue-grey |
 | Japanese glosses / row explanations | 11px, muted blue-grey, generous line height |
-| Notes | 11.5px, muted warm grey, line height 1.8 |
-| Note label | 9.5px; one simple “Note” / “メモ” label |
+| Notes | 10px, existing muted note color, line height 1.5; box padding 6px 9px |
+| Note label | 9px; one simple “Note” / “メモ” label |
 | Speaker / example labels | 10.5px, muted grey |
 
 Primary expressions retain their source wording. Dimness comes from explicit text colors and type size, rather than lowering the opacity of an entire component and fading its phrases and controls together.
@@ -25,9 +25,11 @@ Each section keeps its existing blue, green, lavender, or warm-paper tint. The i
 
 Chapter 06's four existing transparent illustrations fit their topics and are retained. Images use `object-fit: contain`, a transparent stage, and a bounded height: 190–255px on larger screens, 175px on phones. They must remain uncropped and undistorted. Image generation is reserved for a specific missing or misleading teaching illustration, after reviewing each chapter's content.
 
-The conversation uses consistent left/right positions for Nico and Harper, small names above each bubble, and related incoming/outgoing section tints. Quiet speaker initials replace old portraits that did not match the illustrated people. Audio controls retain their actual availability and behavior.
+The conversation uses consistent left/right positions for Nico and Harper, small names above each bubble, related incoming/outgoing section tints, and the original portrait images. Use the existing image icons rather than speaker initials. Audio controls retain their actual availability and behavior.
 
 Notes use a restrained yellow surface (`#fbf8ed`), subtle border, and no large heading or repeated “Good to know” prefix.
+
+Across the course, `social-study-notes.css` supplies the compact typography and padding for the different existing note components. It includes the custom notes in Chapters 01–03, phrase notes in early chapters, shared teaching notes in later chapters, and the family-board subnote. Chapter 03's already small card annotations use 4px 7px padding. Note colors and placement remain appropriate to each layout. Vocabulary boards whose class names contain “notes” still present primary learning content and retain their normal type size.
 
 ## Requested annotations
 
@@ -51,7 +53,7 @@ The Japanese source splits the reply examples into three lists, each followed by
 
 The remaining interpretive paragraphs following conversations receive the same quiet note treatment. In the first section, the reply pairs move out of the illustration's phrase pills and into their comparison table, avoiding long repeated pills. Phrase IDs, conversation turn IDs, and deep links remain available.
 
-Only the language selector and the two requested shell icons are shared across the application. Lesson structure, tables, notes, tint adjustments, and chat changes are scoped to Chapter 06. Practice and progress data are unchanged.
+The language selector and two requested shell icons are shared across the application. Note sizing is shared across all Social Fluency chapters. The pilot's lesson structure, tables, tint adjustments, note placement, and chat layout are scoped to Chapter 06. Practice and progress data are unchanged.
 
 ## Carrying this forward after review
 

@@ -8,6 +8,7 @@ import { introductionPhrases, introductionSections, introductionScenarios } from
 import { japaneseIntroduction } from '../src/course/locales/ja/introductions.js'
 import { greetingsModel } from '../src/course/greetings.js'
 import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
+import { chapter04JapaneseFor } from '../src/web/chapter04Japanese.js'
 import { chapter05JapaneseFor } from '../src/web/chapter05Japanese.js'
 
 const read = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
@@ -166,4 +167,22 @@ test('Chapter 05 translates every English table example, phrase, and dialogue tu
     const japanese = chapter05JapaneseFor(english)
     assert.match(japanese, /[\u3040-\u30ff\u3400-\u9fff]/, `Missing reviewed Japanese for: ${english}`)
   }
+})
+
+test('Chapter 04 provides Japanese for every phrase, full table example, and dialogue turn', async () => {
+  const source = await readFile(new URL('../src/course/locales/ja/chapters/04-saying-you-dont-understand.md', import.meta.url), 'utf8')
+  const clean = (text) => text.replace(/\\?\*\*/g, '').replace(/\s+/g, ' ').trim()
+  const rows = source.split('\n').filter((line) => /^\|\s*\*\*/.test(line))
+  assert.equal(rows.length, 11, 'all 11 phrase/example rows')
+  const turns = [...source.matchAll(/^\*\*(?:Maya|Sam):\*\*\s*(.+)$/gm)]
+  assert.equal(turns.length, 12, 'all 12 conversation turns')
+  for (const english of [...rows.flatMap((line) => line.split('|').slice(1, 3).map(clean)), ...turns.map((turn) => clean(turn[1]))]) {
+    assert.match(chapter04JapaneseFor(english), /[\u3040-\u30ff\u3400-\u9fff]/, `Missing Chapter 04 Japanese for: ${english}`)
+  }
+  for (const [english, expected] of [
+    ['Did you say ...?', '〜と言いましたか？'],
+    ['What does ... mean?', '〜はどういう意味ですか？'],
+    ['Could you slow down a little, please?', 'もう少しゆっくり話していただけますか？'],
+    ['Sorry, I didn\'t catch your name.', 'すみません、お名前が聞き取れませんでした。'],
+  ]) assert.equal(chapter04JapaneseFor(english), expected)
 })

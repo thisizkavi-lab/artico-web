@@ -62,3 +62,35 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
     else globalThis.window = originalWindow
   }
 })
+
+
+test('presentation course screens render with original lessons and blueprint', { timeout: 45000 }, async () => {
+  const originalWindow=globalThis.window
+  const storage=new Map()
+  globalThis.window={localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,val)=>storage.set(key,val)}}
+  let vite
+  try {
+    vite=await createServer({appType:'custom',server:{middlewareMode:true},logLevel:'error'})
+    const {default:PresentationCourse}=await vite.ssrLoadModule('/src/web/PresentationCourse.jsx')
+    const {emptyLearning}=await vite.ssrLoadModule('/src/web/learning.js')
+    for(const [hash,expected] of [
+      ['#/application/presentations','Public speaking'],
+      ['#/application/presentations/01/study','What a presentation actually does'],
+      ['#/application/presentations/08/study','Explain a figure'],
+      ['#/application/presentations/09/study','Make slides'],
+      ['#/application/presentations/13/practice','Answer questions'],
+      ['#/application/presentations/cases','Six ways to speak'],
+      ['#/application/presentations/blueprint','Your presentation blueprint'],
+    ]){
+      const route=parseRoute(hash)
+      const html=renderToStaticMarkup(createElement(PresentationCourse,{route,learning:emptyLearning,update:()=>{}}))
+      assert.ok(html.length>1200,hash+' has little content')
+      assert.ok(html.includes(expected),hash+' missing heading '+expected)
+      assert.ok(!html.includes('could not be loaded'),hash)
+    }
+  } finally {
+    await vite?.close()
+    if(originalWindow===undefined)delete globalThis.window
+    else globalThis.window=originalWindow
+  }
+})

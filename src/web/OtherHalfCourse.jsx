@@ -306,11 +306,11 @@ function ChapterNavigation({ current, mobile = false }) {
       <span className="oh-nav-group-title">{group.title}</span>
       {otherHalfChapters.filter(chapter => chapter.group === group.id).map(chapter => chapter.missing
         ? <span className="oh-nav-item is-missing" key={chapter.number}><small>{String(chapter.number).padStart(2, '0')}</small>{chapter.shortTitle}<em>Not supplied</em></span>
-        : <a className="oh-nav-item" href={'#' + chapterPath(chapter.number)} aria-current={current === chapter.number ? 'page' : undefined} key={chapter.number}>
+        : <a className="oh-nav-item" href={chapterPath(chapter.number)} aria-current={current === chapter.number ? 'page' : undefined} key={chapter.number}>
             <small>{String(chapter.number).padStart(2, '0')}</small>{chapter.shortTitle}
           </a>)}
     </div>)}
-    <a className="oh-nav-overview" href={'#' + root}>← Course overview</a>
+    <a className="oh-nav-overview" href={root}>← Course overview</a>
   </nav>
 }
 

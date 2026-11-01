@@ -320,7 +320,7 @@ function Blueprint({learning,update,caseId,setCaseId}) {
   <div className="ps-blueprint-tools"><CaseSwitcher caseId={caseId} onChange={setCaseId}/><BlueprintStatus learning={learning} caseId={caseId}/>
     <a className="ps-secondary" download={'artico-presentation-'+caseId+'.md'} href={'data:text/markdown;charset=utf-8,'+encodeURIComponent(download)}>Export Markdown ↓</a>
     <button className="ps-secondary" type="button" onClick={()=>window.print()}>Print</button></div>
-  <div className="ps-blueprint-grid">{fields.map(([key,label],index)=><section className="ps-field" key={key}><span className="ps-field-index">{String(index+1).padStart(2,'0')}</span><SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,key)} label={label} rows={3} placeholder={key==='occasion'?'Scientific talk, team update, product demonstration…':key==='message'?'One complete, defensible takeaway sentence…':key==='soWhat'?'Why should this audience care?':'Write a first working version…'} /></section>)}</div>
+  <div className="ps-blueprint-grid">{fields.map(([key,label],index)=><section className="ps-field" key={key}><span className="ps-field-index">{String(index+1).padStart(2,'0')}</span><SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,key)} label={label} rows={3} placeholder={key==='occasion'?'Scientific talk, team update, product demonstration…':key==='message'?'Try a 15-word working version; keep any qualification needed for accuracy…':key==='soWhat'?'Why should this audience care?':'Write a first working version…'} /></section>)}</div>
   <div className="ps-next"><a href={pathFor('01')}>Return to lessons →</a><a href={root+'/cases'}>See worked examples</a></div>
  </div>
 }

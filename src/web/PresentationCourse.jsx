@@ -333,7 +333,7 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
          <section className="ps-lesson-section"><span className="ps-kicker">YOUR TASK</span><h2>Try it in your own words.</h2><p className="ps-practice-prompt">{lesson.practice}</p><ul className="ps-checks">{lesson.criteria.map(t=><li key={t}>{t}</li>)}</ul><SavedText learning={learning} update={update} responseKey={noteKey(lesson.id)} label="Draft, outline, or reflection" placeholder="A short outline is enough. Say the full version aloud." /></section>
          <Decision lesson={lesson}/>
          {lesson.id==='04' && <HalfLifeLab learning={learning} update={update}/>}
-         {lesson.id==='15' && <FeedbackRubric learning={learning} update={update} caseId={caseId}/ >}
+         {lesson.id==='15' && <FeedbackRubric learning={learning} update={update} caseId={caseId}/>}
          <section className="ps-speak"><span className="ps-kicker">SPEAK IT ALOUD</span><h2>Deliver, then revise.</h2><p>{lesson.say}</p><p>Try a first version. Identify one thing your listener could not follow, revise, and speak again. This page does not pretend to assess your voice or speaking ability.</p></section>
          <section className="ps-blueprint-inline"><h3>Carry this into your blueprint.</h3><CaseSwitcher caseId={caseId} onChange={setCaseId}/><a href={root+'/blueprint'}>Open editable talk plan →</a></section>
          <button className={'ps-complete '+(completed?'is-complete':'')} onClick={()=>update(prev=>({...prev,responses:{...prev.responses,[doneKey(lesson.id)]:completed?'':'yes'}}))}>{completed?'✓ Marked complete · undo':'Mark complete after practising'}</button>

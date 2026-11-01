@@ -447,7 +447,7 @@ export const presentationLessons = [
     "teach": "Some speakers feel anxious; others do not. Anxiety varies and can be reduced by different approaches, including gradual exposure and cognitive strategies. This course can suggest low-stakes practice, realistic rehearsal, and preparation of the opening and transitions; it is not treatment. Check room, screen, microphone, remote setup, time limit, accessibility needs and attire appropriate to the occasion. Before the talk, options include knowing the opening, light movement or breathing and a realistic run-through. During the talk, pause, breathe, use a slide cue or a supportive point of focus, and continue after a stumble. Humour is optional and only useful when it fits. Bring a PDF backup. Decide what you will cut if time is shortened and how to continue if a visual or live demo fails.",
     "before": "If the projector fails, my presentation is over.",
     "after": "I will test the setup, keep a PDF backup, prepare a spoken explanation of the key figure, and know which details to omit if time is cut.",
-    "note": "The 2019 meta-analysis concerns people with identified, impairing fear of public speaking, not every nervous speaker; effects were larger on self-report than on behavioural or physiological measures. The 2025 review excluded interventions without significant benefits, so its pooled estimate is success-selected. A presentation course is not treatment for anxiety.",
+    "note": "The 2019 meta-analysis concerns people with identified, impairing fear of public speaking, not every nervous speaker; effects were larger on self-report than on behavioural or physiological measures. The 2025 review included only interventions reporting significant benefits, and only 42% of its studies measured speaking performance both before and after treatment. It is a guide to promising methods, not an unbiased estimate of what an average learner can expect. A presentation course is not anxiety treatment.",
     "contrast": "For a remote talk, test screen sharing and captions. For a live demo, prepare a clearly labelled fallback that does not pretend a failed action succeeded.",
     "question": "Your 15-minute slot becomes six minutes. What should you do?",
     "options": [
@@ -959,9 +959,9 @@ export const presentationSources = [
     "title": "McWilliam et al. (2025) · Public-speaking-anxiety interventions",
     "url": "https://doi.org/10.1080/00223980.2025.2459662",
     "kind": "Systematic review and meta-analysis",
-    "summary": "26 studies and 2,253 participants; the pooled analysis used 21 studies and 42 interventions, reporting g=1.17 with very high heterogeneity.",
+    "summary": "26 studies, 2,253 participants; pooled analysis of 21 studies/42 interventions reported g=1.17, I²=88%, with a wide prediction interval. Only 42% of studies measured speaking performance both before and after intervention.",
     "use": "Support gradual practice and evidence-informed anxiety strategies.",
-    "limit": "The review required significant benefit for inclusion, so unsuccessful studies were excluded; its pooled estimate is success-selected, not an unbiased estimate of all interventions. Individual effects varied widely."
+    "limit": "Only interventions with significant benefit were eligible; the authors acknowledge this biases the review. 92% of studies used one-size-fits-all interventions; six had no speaking task. Useful for promising methods, not an unbiased estimate of average efficacy."
   },
   {
     "title": "Heiman et al. (2012) · Deliberate practice for oral presentations",

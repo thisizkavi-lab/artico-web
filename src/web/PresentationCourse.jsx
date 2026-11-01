@@ -216,12 +216,14 @@ function ResourceLinks() {
    <p>Artico's explanations, examples and exercises are original. The research sources below are not treated as interchangeable: peer-reviewed findings, university teaching guidance and practitioner frameworks are labelled separately. iBiology's original materials are linked, not copied.</p>
    {sources.map(s=><div className="ps-resource" key={s.url}><div className="ps-resource-head"><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a><span>{s.kind}</span></div><p>{s.summary}</p><p><b>How Artico uses it:</b> {s.use}</p><small><b>Boundary:</b> {s.limit}</small></div>)}
    <div className="ps-original-pack">
+    <a href="https://www.youtube.com/watch?v=wf9QrrRzJys" target="_blank" rel="noopener noreferrer">Course platform orientation video ↗</a>
+    <a href="https://www.ibiology.org/educator-resources/syr/resources_how-to-use-this-website-transcript-ibiov2_RPGWAnY.txt" target="_blank" rel="noopener noreferrer">Orientation transcript ↗</a>
     <a href="https://docs.google.com/document/d/1N6aAm6vKYgmgPfdokhO4yc3o-3evuTjz00X_eFwkcfA/export?format=txt" target="_blank" rel="noopener noreferrer">Full course document ↗</a>
     <a href="https://www.ibiology.org/educators-resources/online-course/share-your-research/" target="_blank" rel="noopener noreferrer">Educator resource page ↗</a>
     <a href="https://www.youtube.com/playlist?list=PL5zi65Byv2hj3D0TYhy508qPwsTruwLUm" target="_blank" rel="noopener noreferrer">Full video playlist ↗</a>
    </div>
    <div className="ps-source-library">
-    <span className="ps-kicker">ORIGINAL iBIOLOGY COURSE · 22 VIDEOS</span><h3>Study the source material</h3>
+    <span className="ps-kicker">ORIGINAL iBIOLOGY COURSE · 22 CORE VIDEOS + ORIENTATION</span><h3>Study the source material</h3>
     <p>The full course has four modules. Each link opens the original video or its public transcript. Use it to compare the source's approach with Artico's independent exercises.</p>
     {Object.entries(moduleNames).map(([module,name])=><div className="ps-source-module" key={module}><h4>{name}</h4>{sourceVideos.filter(v=>v.module===module).map(v=><div className="ps-source-video" key={v.video}><span>{v.title}</span><div><a href={v.video} target="_blank" rel="noopener noreferrer">Video ↗</a><a href={v.transcript} target="_blank" rel="noopener noreferrer">Transcript ↗</a></div></div>)}</div>)}
    </div>

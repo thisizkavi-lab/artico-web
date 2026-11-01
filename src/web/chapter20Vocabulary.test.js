@@ -13,6 +13,7 @@ test('Chapter 20 has four vocabulary-first sections', () => {
 
 test('every vocabulary card has a unique ID and complete English/Japanese support', () => {
   assert.equal(items.length, chapter20VocabularyCount)
+  assert.equal(chapter20VocabularyCount, 86)
   assert.equal(new Set(items.map((item) => item.id)).size, items.length)
   for (const item of items) {
     assert.ok(item.en.trim(), 'English term is required')

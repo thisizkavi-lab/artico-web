@@ -29,6 +29,14 @@ export const chapterPhraseIllustrations = {
     { file: 'ch10-03-future-contact-specific-or-open.png', alt: 'Two friends talk about meeting again beside a calendar with a selected day' },
     { file: 'ch10-04-familiar-closings.png', alt: 'Two friends with backpacks wave goodbye casually' },
   ],
+  '11': [
+    null,
+    { file: 'ch11-calendar-words.svg', alt: 'An annotated April 2027 calendar showing the month, year, weekdays, weekend, one week, a date, yesterday, today and tomorrow' },
+    { file: 'ch11-writing-dates.svg', alt: 'Ordinal numbers, written and spoken date formats, and examples of how to say years' },
+    { file: 'ch11-telling-time.svg', alt: 'Twelve analogue clocks showing common ways to say times from one o’clock to five to two, with time units below' },
+    { file: 'ch11-frequency.svg', alt: 'Calendar diagrams showing once, twice and three times a week, every day, every week and every month' },
+    { file: 'ch11-weather.svg', alt: 'Illustrated weather conditions and extreme weather including storms, floods, heat waves, drought, hurricanes and blizzards' },
+  ],
   '12': [
     { file: 'ch12-phrase-0.png', fallbackFile: '', alt: 'Drew and Sasha turn a loose invitation into a plan by discussing the day, time, and place' },
     { file: 'ch12-phrase-1.png', fallbackFile: '', alt: 'Drew and Sasha make a plan precise by confirming the date, time, and meeting point' },

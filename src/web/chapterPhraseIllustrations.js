@@ -17,10 +17,10 @@ export const chapterPhraseIllustrations = {
     { file: 'ch08-04-same-words-different-intention.png', fallbackFile: 'ch08-scene-3.svg', alt: 'A person looks frustrated after being left without notice, showing how thanks can sound sarcastic' },
   ],
   '09': [
-    { file: 'ch09-01-say-what-happened.png', fallbackFile: 'ch09-scene-0.svg', alt: 'A friend apologizes for forgetting to send an address and shows the corrected map on a phone' },
-    { file: 'ch09-02-informal-responsibility-and-stronger-apologies.png', fallbackFile: 'ch09-scene-1.svg', alt: 'A friend acknowledges a wrong meeting time and corrects it on a phone calendar' },
-    { file: 'ch09-03-receive-an-apology.png', fallbackFile: 'ch09-scene-2.svg', alt: 'One friend apologizes for borrowing a charger without asking while the other calmly sets a boundary' },
-    { file: 'ch09-04-sympathy-is-a-different-use.png', fallbackFile: 'ch09-scene-3.svg', alt: 'A friend comforts someone who is grieving, offering a tissue and a supportive hand on the shoulder' },
+    { file: 'ch09-01-say-what-happened.png', alt: 'One friend looks apologetic while speaking with another' },
+    { file: 'ch09-02-informal-responsibility-and-stronger-apologies.png', alt: 'A person apologizes for being late beneath a clock while the other responds' },
+    { file: 'ch09-03-receive-an-apology.png', alt: 'A person apologizes while holding a borrowed charger, and a friend responds' },
+    { file: 'ch09-04-sympathy-is-a-different-use.png', alt: 'One friend comforts another who is crying, offering support' },
   ],
   '10': [
     { file: 'ch10-01-signal-that-you-are-leaving.png', alt: 'Two friends with bags wave goodbye as they part' },

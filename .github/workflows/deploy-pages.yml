@@ -186,20 +186,19 @@ jobs:
       - name: Compile lesson content
         run: pnpm lessons
 
-      - name: Generate Chapter 08 and 09 PNG illustrations before tests
-        run: |
-          python3 scripts/build_ch08_png_scenes.py
-          python3 scripts/build_ch09_illustrations.py
+      - name: Generate Chapter 08 PNG illustrations before tests
+        run: python3 scripts/build_ch08_png_scenes.py
 
       - name: Test course and learning progress
         run: pnpm test
 
-      - name: Render Chapter 09 apology illustrations as transparent PNGs
+      - name: Verify committed Chapter 09 native transparent PNGs
         run: |
-          python3 scripts/build_ch09_illustrations.py
           python3 - <<'PY'
           from pathlib import Path
           from PIL import Image
+          from hashlib import sha256
+          checksums = {"ch09-01-say-what-happened.png":"639d61e20e4920afb3f24264f8d575adddc12e3b115fd02393ba60071a31dfcf","ch09-02-informal-responsibility-and-stronger-apologies.png":"437b52a031b26677edec07539241073243f4218afaa0270f0676d25ab3e7e96b","ch09-03-receive-an-apology.png":"8a77081944c9a742ec1516b80ed53719c55dbdefd81d2c97055a309d4da2a869","ch09-04-sympathy-is-a-different-use.png":"e6dafe4c408221c5fbd3b31740e3c35924651d2ccef4d5201fb803945d3ccfca"}
           expected = [
               'ch09-01-say-what-happened.png',
               'ch09-02-informal-responsibility-and-stronger-apologies.png',
@@ -209,6 +208,7 @@ jobs:
           for name in expected:
               path = Path('public/assets/course') / name
               assert path.is_file(), name
+              assert sha256(path.read_bytes()).hexdigest() == checksums[name], name
               with Image.open(path) as picture:
                   assert picture.size == (1774, 887), (name, picture.size)
                   assert picture.mode == 'RGBA', (name, picture.mode)

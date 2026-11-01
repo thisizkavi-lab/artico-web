@@ -94,3 +94,45 @@ test('presentation course screens render with original lessons and blueprint', {
     else globalThis.window=originalWindow
   }
 })
+
+
+test('The Other Half of English overview and source chapters render as a visual reference course', { timeout: 45000 }, async () => {
+  let vite
+  try {
+    vite = await createServer({ appType:'custom', server:{ middlewareMode:true }, logLevel:'error' })
+    const { default:OtherHalfCourse } = await vite.ssrLoadModule('/src/web/OtherHalfCourse.jsx')
+    for (const [hash, expected] of [
+      ['#/application/other-half', 'The Other Half'],
+      ['#/application/other-half/01', 'The map of slang'],
+      ['#/application/other-half/02', 'Slang in everyday use'],
+      ['#/application/other-half/03', 'Adult &amp; explicit slang'],
+      ['#/application/other-half/04', 'Register &amp; social calibration'],
+      ['#/application/other-half/05', 'Meaning beyond words'],
+      ['#/application/other-half/06', 'The grammar of conversation'],
+      ['#/application/other-half/07', 'Humor, sarcasm &amp; playfulness'],
+      ['#/application/other-half/08', 'Taboo language &amp; swearing'],
+      ['#/application/other-half/09', 'Cultural references &amp; shared knowledge'],
+      ['#/application/other-half/10', 'Source gap'],
+      ['#/application/other-half/11', 'Language of domains &amp; subcultures'],
+      ['#/application/other-half/12', 'How language changes'],
+      ['#/application/other-half/13', 'Voice, gesture &amp; silence'],
+    ]) {
+      const route = parseRoute(hash)
+      assert.equal(route.page, 'application', hash)
+      assert.equal(route.id, 'other-half', hash)
+      const markup = renderToStaticMarkup(createElement(OtherHalfCourse, { route }))
+      assert.ok(markup.length > 900, hash + ': empty course screen')
+      assert.ok(markup.includes(expected), hash + ': missing heading or source-gap marker')
+      assert.ok(!markup.includes('This page could not be loaded'), hash)
+    }
+    const overview = renderToStaticMarkup(createElement(OtherHalfCourse, { route:parseRoute('#/application/other-half') }))
+    assert.ok(overview.includes('Recognition, not imitation.'), 'course purpose should be explicit')
+    assert.ok(overview.includes('NOT IN THE SUPPLIED SOURCE'), 'missing Chapter 10 should be visible in the chapter map')
+    const glossary = renderToStaticMarkup(createElement(OtherHalfCourse, { route:parseRoute('#/application/other-half/02') }))
+    assert.ok(glossary.includes('oh-glossary-card'), 'slang reference tables should render as searchable cards')
+    assert.ok(glossary.includes('SEARCH THE REFERENCE'), 'slang reference should expose its search control')
+    assert.ok(!glossary.includes('href="##/application'), 'chapter navigation should not contain malformed double-hash links')
+  } finally {
+    await vite?.close()
+  }
+})

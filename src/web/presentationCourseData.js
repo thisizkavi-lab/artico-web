@@ -41,7 +41,7 @@ export const presentationLessons = [
     "teach": "Audience analysis is practical research, not guessing from age or job title. Find out what listeners already know, what they need, why they are present, what decision or question matters to them, and what they may challenge. Ask the organiser; inspect the event programme; consider disciplines represented, language, venue, time, remote access and accessibility. Avoid demographic stereotypes. Write down what is known, what is assumed, and how to check each assumption.",
     "before": "My audience is scientists, so I can use technical language.",
     "after": "Most listeners know cell biology but not molecular simulation. I will define the ensemble idea, then use the technical vocabulary needed to assess the result.",
-    "note": "Audience adaptation is not dumbing down. It is choosing the right starting point and level of detail.",
+    "note": "More information alone does not guarantee agreement or action. The National Academies cautions against treating every audience as an uninformed group that only needs facts translated.",
     "contrast": "A domain expert may need controls and sampling diagnostics. A funder may need the research gap, potential value and risks. A student may need a concrete mental model.",
     "question": "Which is the best first audience question?",
     "options": [
@@ -59,7 +59,7 @@ export const presentationLessons = [
       "Name one way to verify your assumptions"
     ],
     "say": "You may already know… The part I want to examine today is…",
-    "sourceBasis": "iBiology audience framework; Stanford and general public-speaking audience-analysis guidance."
+    "sourceBasis": "iBiology audience framework; Stanford and general public-speaking audience-analysis guidance. National Academies (2017) on goals, trust, values, context and the limits of the deficit model."
   },
   {
     "id": "03",
@@ -357,10 +357,10 @@ export const presentationLessons = [
     "title": "Story, attention and ethical persuasion",
     "goal": "Use narrative to create relevance while keeping evidence and audience agency intact.",
     "rule": "A story can help people care. Evidence must still show what is true.",
-    "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
+    "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. In science communication, do not assume that a listener who disagrees simply lacks information: values, trust, lived experience and the decision context can shape how evidence is received. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
     "before": "I will tell a dramatic story and use it to prove that our intervention works.",
     "after": "I will use one real user example to explain the problem, then show the study data and limitations needed to judge whether the intervention helps.",
-    "note": "Anecdotes can illustrate an experience; they cannot establish how common it is or prove causation.",
+    "note": "The National Academies rejects a simple one-way deficit model of science communication. More facts are not always enough; listen for the audience's actual concern and distinguish evidence questions from value or policy disagreements.",
     "contrast": "A research seminar uses a narrative to explain the investigation. A proposal uses a fair argument to support a decision. A toast uses a truthful memory to honour someone.",
     "question": "Which combination is most responsible in a persuasive presentation?",
     "options": [
@@ -378,7 +378,7 @@ export const presentationLessons = [
       "Represent counterarguments fairly"
     ],
     "say": "Here is one example of the problem. The broader evidence shows…",
-    "sourceBasis": "Braddock & Dillard 2016; Zebregs et al. 2015; OpenStax ethics; Duarte as a practitioner framework."
+    "sourceBasis": "Braddock & Dillard 2016; Zebregs et al. 2015; OpenStax ethics; Duarte as a practitioner framework. National Academies (2017) on bidirectional science communication and audience context."
   },
   {
     "id": "14",

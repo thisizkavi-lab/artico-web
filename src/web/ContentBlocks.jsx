@@ -1,6 +1,7 @@
 import './readable-course.css'
 import { useLanguage } from './Language'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
+import { chapter04JapaneseFor } from './chapter04Japanese'
 import { chapter05JapaneseFor } from './chapter05Japanese'
 const plain = (runs) => runs.map((run) => run.text).join('')
 export function RichText({ runs = [] }) {
@@ -21,8 +22,13 @@ export function RichText({ runs = [] }) {
 
 export function SourceContent({ block, audioProps, focusedId, examples = true }) {
   const { t, language } = useLanguage()
-  const translateExamples = language === 'ja' && /^(?:ja-)?05-(?:study|practice)-|^ch05-/.test(block.id || '')
-  const exampleGloss = (runs) => translateExamples ? chapter05JapaneseFor(plain(runs)) : ''
+  const chapter04 = /^(?:ja-)?04-(?:study|practice)-|^ch04-/.test(block.id || '')
+  const chapter05 = /^(?:ja-)?05-(?:study|practice)-|^ch05-/.test(block.id || '')
+  const translate = language === 'ja'
+    ? (chapter04 ? chapter04JapaneseFor : chapter05 ? chapter05JapaneseFor : null)
+    : null
+  const exampleGlossForText = (text) => translate ? translate(text) : ''
+  const exampleGloss = (runs) => exampleGlossForText(plain(runs))
   let content
   const phraseTable =
     examples &&
@@ -108,8 +114,8 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
             <span className="ip-speaker">{turn.speaker}</span>
             <br />
             {turn.en}
-            {language === 'ja' && (turn.ja || (translateExamples ? chapter05JapaneseFor(turn.en) : '')) && (
-              <small className="ar-translation-inline" lang="ja">{turn.ja || chapter05JapaneseFor(turn.en)}</small>
+            {language === 'ja' && (turn.ja || exampleGlossForText(turn.en)) && (
+              <small className="ar-translation-inline" lang="ja">{turn.ja || exampleGlossForText(turn.en)}</small>
             )}
           </p>
         ))}

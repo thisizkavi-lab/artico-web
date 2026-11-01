@@ -34,7 +34,7 @@ function blockText(block) {
 test('Chapters 06–10 have one distinct illustration for every Study section', () => {
   const pngDimensions = {
     '06': [[1821, 864], [1774, 887], [1796, 876], [1536, 1024]],
-    '07': [[512, 341], [512, 341], [512, 341]],
+    '07': [[1536, 1024], [1536, 1024], [1536, 1024]],
     '08': [1800, 900],
     '09': [1774, 887],
     '10': [1400, 840],

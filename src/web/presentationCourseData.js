@@ -934,7 +934,7 @@ export const presentationSources = [
   {
     "title": "Aurbach et al. (2018) · Half-Life Your Message",
     "url": "https://doi.org/10.1177/1075547018781917",
-    "kind": "Open-access practice article",
+    "kind": "Open-access article commentary / practice tool",
     "summary": "Describes a 60/30/15/8-second message-discovery exercise and the need for reflection afterwards.",
     "use": "Message discovery and prioritisation.",
     "limit": "An experience-based teaching tool, not a randomized efficacy trial or sound-bite formula."

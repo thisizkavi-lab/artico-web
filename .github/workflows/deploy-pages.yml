@@ -192,6 +192,27 @@ jobs:
       - name: Build site
         run: pnpm run build
 
+      - name: Verify Chapter 10 transparent PNG illustrations reach Pages
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          names = [
+              'ch10-01-signal-that-you-are-leaving.png',
+              'ch10-02-choose-a-closing.png',
+              'ch10-03-future-contact-specific-or-open.png',
+              'ch10-04-familiar-closings.png',
+          ]
+          for name in names:
+              path = Path('dist/assets/course') / name
+              assert path.is_file(), f'Missing artwork: {name}'
+              with Image.open(path) as image:
+                  assert image.size == (1400, 840), (name, image.size)
+                  assert image.mode == 'RGBA', (name, image.mode)
+                  assert image.getchannel('A').getextrema() == (0, 255), name
+          print('Chapter 10: all 4 PNGs reached the Pages bundle with alpha intact')
+          PY
+
       - name: Verify Lesson 07 Sharing Information illustrations reach Pages
         run: |
           test "$(find dist/vocabulary-course/07 -maxdepth 1 -name '*.webp' -type f | wc -l)" -eq 41

@@ -23,9 +23,9 @@ export const chapterPhraseIllustrations = {
     { file: 'ch09-04-sympathy-is-a-different-use.svg', fallbackFile: 'ch09-scene-3.svg', alt: 'A friend comforts someone who is grieving, offering a tissue and a supportive hand on the shoulder' },
   ],
   '10': [
-    { file: 'ch10-01-signal-that-you-are-leaving.svg', fallbackFile: 'ch10-scene-0.svg', alt: 'A guest picks up a bag at the doorway while a friend waves goodbye' },
-    { file: 'ch10-02-choose-a-closing.svg', fallbackFile: 'ch10-scene-1.svg', alt: 'Two people finish a professional meeting with a handshake and a document on the table' },
-    { file: 'ch10-03-future-contact-specific-or-open.svg', fallbackFile: 'ch10-scene-2.svg', alt: 'Two friends arrange a future meeting on a phone calendar before saying goodbye' },
-    { file: 'ch10-04-familiar-closings.svg', fallbackFile: 'ch10-scene-2.svg', alt: 'Two friends casually wave goodbye on a city street with their backpacks' },
+    { file: 'ch10-01-signal-that-you-are-leaving.png', alt: 'Two friends with bags wave goodbye as they part' },
+    { file: 'ch10-02-choose-a-closing.png', alt: 'Two people shake hands to close a professional meeting' },
+    { file: 'ch10-03-future-contact-specific-or-open.png', alt: 'Two friends talk about meeting again beside a calendar with a selected day' },
+    { file: 'ch10-04-familiar-closings.png', alt: 'Two friends with backpacks wave goodbye casually' },
   ],
 }

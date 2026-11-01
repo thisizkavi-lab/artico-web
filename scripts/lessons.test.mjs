@@ -31,7 +31,7 @@ function blockText(block) {
     return block.items.map((item) => `${item.number ?? ''} ${runs(item.runs)}`).join('\n')
   return runs(block.runs)
 }
-test('Chapters 06–10 have one distinct vector illustration for every Study section', () => {
+test('Chapters 06–10 have one distinct illustration for every Study section', () => {
   for (const id of ['06', '07', '08', '09', '10']) {
     const model = readLesson(id)
     const illustrations = chapterPhraseIllustrations[id]
@@ -39,9 +39,17 @@ test('Chapters 06–10 have one distinct vector illustration for every Study sec
     for (const illustration of illustrations) {
       const path = new URL(`public/assets/course/${illustration.file}`, root)
       assert.ok(existsSync(path), illustration.file)
-      const source = readFileSync(path, 'utf8')
-      assert.match(source, /viewBox="0 0 1774 887"/, `${illustration.file}: wide vector canvas`)
-      assert.ok(source.includes('<desc'), `${illustration.file}: accessible scene description`)
+      if (id === '10') {
+        const png = readFileSync(path)
+        assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10], `${illustration.file}: PNG signature`)
+        assert.equal(png.readUInt32BE(16), 1400, `${illustration.file}: image width`)
+        assert.equal(png.readUInt32BE(20), 840, `${illustration.file}: image height`)
+        assert.equal(png[25], 6, `${illustration.file}: RGBA image with transparency`)
+      } else {
+        const source = readFileSync(path, 'utf8')
+        assert.match(source, /viewBox="0 0 1774 887"/, `${illustration.file}: wide vector canvas`)
+        assert.ok(source.includes('<desc'), `${illustration.file}: accessible scene description`)
+      }
     }
   }
   const renderer = readFileSync(new URL('../src/web/LessonExperience.jsx', import.meta.url), 'utf8')

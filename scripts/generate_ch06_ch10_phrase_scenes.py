@@ -19,10 +19,6 @@ SCENES = [
     ("ch09-02-informal-responsibility-and-stronger-apologies.svg", "Informal responsibility and stronger apologies", "A friend acknowledges a wrong meeting time and corrects it on a phone calendar", "clock", "apologize", "point", "#f3e7d7"),
     ("ch09-03-receive-an-apology.svg", "Receive an apology", "One friend apologizes for borrowing a charger without asking while the other calmly sets a boundary", "charger", "apologize", "open", "#e4e9f3"),
     ("ch09-04-sympathy-is-a-different-use.svg", "Sympathy is a different use", "A friend comforts someone who is grieving, offering a tissue and a supportive hand on the shoulder", "comfort", "comfort", "sad", "#e8e5f1"),
-    ("ch10-01-signal-that-you-are-leaving.svg", "Signal that you are leaving", "A guest picks up a bag at the doorway while a friend waves goodbye", "door", "wave", "wave", "#e6eee8"),
-    ("ch10-02-choose-a-closing.svg", "Choose a closing", "Two people finish a professional meeting with a handshake and a document on the table", "meeting", "offer", "agree", "#e3eaf2"),
-    ("ch10-03-future-contact-specific-or-open.svg", "Future contact can be specific or open", "Two friends arrange a future meeting on a phone calendar before saying goodbye", "phonecalendar", "phone", "agree", "#e4edf2"),
-    ("ch10-04-familiar-closings.svg", "Familiar closings", "Two friends casually wave goodbye on a city street with their backpacks", "street", "casual", "wave", "#f1e6d8"),
 ]
 
 DEFS = """<defs>

@@ -40,9 +40,10 @@ Reviewed the publicly accessible full course-content document, not just the educ
   https://docs.google.com/document/d/1N6aAm6vKYgmgPfdokhO4yc3o-3evuTjz00X_eFwkcfA/export?format=txt
 - Course / educator resource index:  
   https://www.ibiology.org/educators-resources/online-course/share-your-research/
-- Four modules, 22 core instructional video transcripts, course syllabus, all 26 open-response assessment prompts, and eight associated worksheets/handouts were examined.
+- Four modules, 22 core instructional video transcripts (plus the separate course-platform orientation video/transcript), the course syllabus, all 26 open-response assessment prompts, the module discussion prompts, and all eight associated worksheets/handouts were examined. The eight PDFs were opened and read, including the full eight-page My Talk Plan and two-page feedback checklist.
+- The educator page says the full course document contains all learning objectives, lessons, graphics, video links and assessments. I reviewed that public document and resource pack; I did **not** enrol in the logged-in learner platform or independently audit its interactive course UI, certificate flow or forum behaviour.
 - The original course describes a five-week self-paced programme of approximately 1.5–3 hours per week. It is designed for research-based scientific talks, especially life-science researchers, while noting that some methods transfer to other disciplines.
-- Its central cumulative artefact is **My Talk Plan**. Assessment responses are not isolated quizzes; they progressively construct a talk outline that the learner revises after feedback.
+- Its central cumulative artefact is **My Talk Plan**. The 26 course assessments include an initial course-goal reflection (Q1); the standalone My Talk Plan worksheet has 25 numbered talk-planning prompts corresponding to Q2–Q26. Assessment responses are not isolated quizzes; they progressively construct a talk outline that the learner revises after feedback.
 - The source materials state a **CC BY-NC-ND 3.0** licence. Artico must not reproduce or adapt its worksheets, transcripts, graphics or distinctive expression as derivative teaching material. Artico uses original explanations and examples, credits the source, and links learners to the original materials.
 
 #### iBiology's complete module map
@@ -53,6 +54,25 @@ Reviewed the publicly accessible full course-content document, not just the educ
 | 2. Start Building Your Talk | Talks are not papers; scientific narrative; story vignettes and storytelling techniques; outlining and storyboarding; slide design; selecting and explaining the body data | Q11–Q16: narrative elements, vignettes, technique, simplifying one complex visual, key results, and setup/show/learn/next-step notes for each result |
 | 3. Rounding Out a Strong Talk | Introduction; hook; “so what”; ending; talk title; iteration of the plan | Q17–Q21: essential background, two possible hooks, audience-specific significance, conclusion elements, two title options |
 | 4. Giving Your Talk | Connecting with an audience; language and jargon; rehearsal and feedback; presentation environment; anxiety; Q&A | Q22–Q26: jargon and translation, rehearsal plan, feedback observers, preferred anxiety strategies, anticipated questions and responses |
+
+#### The eight worksheets and handouts: what each adds
+
+| Resource | Actual function in the course | Artico response |
+|---|---|---|
+| Distilling Your Message | Starts with topic, audience and goal; a peer runs the 60/30/15/8 exercise; the learner records the 30- and 15-second versions, feedback, reflection and final core message | A timed four-round exercise with saved notes and a debrief that protects nuance |
+| Narrative Elements of Your Research Talk | Maps exposition, research question, experiments/results, discovery and resolution | Teach the same planning arc, but allow unresolved research questions and non-dramatic endings |
+| Storytelling Techniques | Offers scene-setting, personalisation, empathy, suspense and “show, don't tell”; asks the learner to fit techniques to audience, goal and speaking style | Teach as optional techniques for real vignettes, never as mandatory theatrical devices |
+| Do's and Don'ts of Slide Design | Simplicity, message titles, limiting text, simplifying data, colour, typography, high-resolution images, rights and restrained animation | Pair message-led slides with inspectable data, image credits and accessibility; avoid universal “no text” rules |
+| Strategies to Connect with Your Audience | Conversational delivery, clear language, defining key concepts, context, audience questions, analogies, repetition, audibility and pacing | Teach the listener's experience as active and dialogic, not passive receipt of information |
+| AGU Watch Your Words toolkit | Demonstrates words with different scientific and everyday meanings; gives a checklist for identifying jargon and prompts for alternatives | Teach ambiguity and dual meanings, not just acronym expansion |
+| Getting Feedback Checklist | Covers core message, audience fit, goals, delivery, pace, jargon, examples, timing, slide design, flow, story, title, introduction, body, ending and acknowledgements | Expand the Artico feedback rubric to include collaborators, funding and source/image credits |
+| My Talk Plan | Eight-page cumulative plan: framing, story, iterative outline/slides, body, introduction, hook, so what, ending/title, jargon, practice, feedback, nerves and Q&A | Build a larger, context-flexible 27-field plan; preserve the cumulative workflow, not the source worksheet's wording |
+
+The feedback checklist is particularly important: it asks reviewers to be told the intended audience, goal, talk duration and setting before they comment. Feedback is only useful when the reviewer knows what the talk is trying to achieve.
+
+#### Module discussion topics
+
+The educator resource page also supplies discussion prompts, not just videos and assessments. They ask learners to introduce themselves and compare speaking styles; recall memorable research talks and discuss the difficulty of translating ideas into an outline; compare hooks and titles; and exchange practical approaches to rehearsal, comfort, nerves and Q&A. Artico now includes original partner/journal prompts by module so this reflective, social layer is not lost.
 
 The 22 core video topics, in their source order:
 
@@ -87,6 +107,7 @@ This table is the actual synthesis step: source concepts are mapped into origina
 | iBiology source lesson / assessment | Artico destination | What is preserved or extended |
 |---|---|---|
 | What makes a good research talk? | 01 | Define success by the audience's task; extend to teaching, decision, demonstration and ceremonial contexts |
+| Q1: personal learning goals | Lesson 01 practice reflection | Capture what the learner wants to improve; this is course-level reflection, not a talk-plan field |
 | First step; audience Q3–Q5 | 02; Blueprint 1–4 | Audience, prior knowledge, motivation, occasion and constraints; distinguish known facts from assumptions |
 | Goal Q6; core message Q7–Q9 | 03–04; Blueprint 5–9 | Separate topic, goal, message and significance; retain evidence boundary |
 | Half-Life Your Message; Q8 | 04; four saved practice rounds | Preserve 60/30/15/8 as discovery, add reflection and safeguards against slogan-making |
@@ -101,7 +122,7 @@ This table is the actual synthesis step: source concepts are mapped into origina
 | Practice and feedback; Q23–Q24 | 15; Blueprint 21–22 | Timed rehearsal, audience-matched observers and behaviour-specific feedback |
 | Stage and nerves; Q25 | 16; Blueprint 4, 24 | Preparation and recovery; evidence-informed, non-clinical anxiety guidance |
 | Q&A; Q26 | 17; Blueprint 23 | Listen, classify, clarify, answer from evidence and mark unknowns |
-| My Talk Plan | 26-field Artico Blueprint | Preserve the cumulative project idea while expanding it for non-research talks, ethics, accessibility and revision |
+| My Talk Plan (25 numbered prompts, covering Q2–Q26) | 27-field Artico Blueprint | Preserve the cumulative project idea while expanding it for non-research talks, ethics, accessibility, acknowledgements and revision; Q1 course goals remain in Lesson 01 reflection |
 
 Artico adds general-purpose speech genres, listening and ethical argument, chart/statistical integrity, accessibility, context-specific case studies, and an explicit feedback rubric. Those additions come from the broader public-speaking curriculum, Stanford guidance, empirical research and standards—not from assuming that the iBiology course alone covers every presentation type.
 
@@ -422,7 +443,7 @@ A good slide is not necessarily minimal; it is *sufficient and legible*. A good 
 
 ### Cumulative Presentation Plan
 
-The existing simple blueprint should be expanded into a real working document with these fields:
+The existing simple blueprint should be expanded into a real working document with these 27 fields:
 
 1. Occasion, format and time limit
 2. Audience profile and prior knowledge
@@ -450,6 +471,7 @@ The existing simple blueprint should be expanded into a real working document wi
 24. Venue/technology fallback
 25. Feedback received
 26. Revisions made and next presentation goal
+27. Acknowledgements, funding, collaborators and image/source credits
 
 This plan is not just a form. It is the learner's evolving work product. It should support repeated presentations, context changes and revisions over time.
 

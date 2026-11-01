@@ -1050,6 +1050,14 @@ export const presentationSources = [
     "summary": "30 randomized trials, 1,355 participants and 62 interventions; pooled Hedges g=.74 (95% CI .61–.87), with low-to-moderate heterogeneity.",
     "use": "Evidence that psychological interventions can reduce fear of public speaking.",
     "limit": "Participants had identified impairing fear of public speaking. Effects were larger on self-report than behavioural/physiological outcomes, and the authors noted possible publication bias; this is not evidence that ordinary stage nerves require treatment."
+  },
+  {
+    "title": "Kahneman et al. (1993) · When More Pain Is Preferred to Less",
+    "url": "https://doi.org/10.1111/j.1467-9280.1993.tb00589.x",
+    "kind": "Experimental psychology study",
+    "summary": "A cold-water pain experiment helped establish the peak–end pattern in retrospective evaluation of an unpleasant experience.",
+    "use": "Useful historical analogy for why the ending of an experience may shape retrospective evaluation.",
+    "limit": "It did not test presentations, speech recall or learning. Do not cite it as direct evidence that a presentation's ending improves memory."
   }
 ]
 

@@ -455,7 +455,7 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['other-half','smalltalk','interviews','academic','reading','ideas'].includes(track.id) ? 0 : 2)
+    assert.equal(track.tasks.length, ['other-half','smalltalk','interviews','presentations','academic','reading','ideas'].includes(track.id) ? 0 : 2)
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])
@@ -466,7 +466,10 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
       assert.equal(saved.responses[responseKey], 'Original practice notes')
     })
   }
-  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),6)
+  assert.equal(applicationTracks.reduce((count,track)=>count+track.tasks.length,0),4)
+  assert.equal(applicationTracks.find(track=>track.id==='presentations').tasks.length,0)
+  const app=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
+  assert.match(app, /route\.id === 'presentations'.*PresentationCourse/)
   const jobs=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   assert.match(jobs, /route\.id === 'interviews'.*JobsCourse/)
 })

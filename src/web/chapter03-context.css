@@ -20,6 +20,22 @@
   color:#1c2d4b;font-size:clamp(19px,2vw,23px);font-weight:840;
   letter-spacing:-.02em;line-height:1.3;margin:0
 }
+/* Translation is a quiet aid, never the leading line of the lesson. */
+.ip-page .ar-c03-heading-copy{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:0}
+.ip-page .ar-c03-word-ja{color:#929cab;font-size:11px;font-weight:400;line-height:1.5}
+.ip-page .ar-c03-chat-bubble p.ar-c03-chat-ja{
+  margin:4px 0 0;color:#8b97aa;font-size:11px;font-weight:400;
+  line-height:1.55;overflow-wrap:anywhere
+}
+.ip-page .ar-c03-transcript-copy{min-width:0}
+.ip-page .ar-c03-transcript-copy p.ar-c03-transcript-ja{
+  margin:2px 0 0;color:#96a0af;font-size:11px;font-weight:400;line-height:1.55
+}
+.ip-page .ar-c03-question-bubble p.ar-c03-check-ja,
+.ip-page .ar-c03-response-path p.ar-c03-check-ja{
+  margin:5px 0 0;color:#947e70;font-size:11px;font-weight:400;
+  line-height:1.55;letter-spacing:0
+}
 .ip-page .ar-c03-sound{
   flex:none;display:grid;place-items:center;cursor:pointer;
   width:31px;height:31px;padding:0;border:0;border-radius:50%;

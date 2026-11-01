@@ -489,21 +489,27 @@ Avoid treating multiple-choice correctness as proof of speaking skill. The cours
 - Feedback from someone who represents the target audience.
 - A revision note explaining what changed and why.
 
-A useful assessment rubric:
+The rehearsal page now includes a reviewer brief populated from the learner's own blueprint. Before a practice run, the learner shares the audience, goal, occasion/format/time limit, and the area they want reviewed. This follows the iBiology checklist's important instruction: feedback is only meaningful when the reviewer knows the intended audience, goal, duration and setting.
+
+The original Artico reviewer checklist contains 13 prompts:
 
 | Dimension | What the reviewer should look for |
 |---|---|
-| Purpose and audience | Is the intended outcome clear and appropriate? |
-| Core message | Can the listener state the central claim accurately? |
-| Reasoning and evidence | Do the examples/data support the claim without overstatement? |
-| Structure | Can the listener follow why each part comes next? |
-| Explanation | Are necessary concepts defined and understandable? |
-| Visuals and accessibility | Are visuals legible, accurate and useful? |
-| Delivery | Can the listener hear and follow the speaker? |
-| Interaction / Q&A | Does the speaker respond honestly and usefully? |
-| Timing | Does the talk fit its real constraint? |
+| Audience and purpose | Can the listener identify why the talk matters, and whether it achieves its goal? |
+| Core message | Can the listener state the takeaway accurately in their own words? |
+| Title and opening | Does the title set an accurate expectation? Is the opening relevant, with enough background? |
+| Body and evidence | Are methods, data, controls, comparisons and limitations clear enough to judge the claim? |
+| Structure and flow | Does each section follow logically? Are transitions clear? |
+| Story and examples | Do vignettes, analogies and examples clarify without distorting or distracting? |
+| Language and jargon | Are essential terms defined? Is any wording ambiguous or too dense to follow aloud? |
+| Slides and figures | Are message titles, labels, units, scales, contrast and visual hierarchy clear and accessible? |
+| Delivery and connection | Can listeners hear and follow the speaker? Are pace, pauses, emphasis and interaction appropriate? |
+| Timing | Does the talk fit its actual limit and leave appropriate time for discussion? |
+| Ending and next step | Does the conclusion reinforce the message and state an implication, next question or requested action? |
+| Access, credits and readiness | Are captions, access needs, acknowledgements, funding, source/image credits and technical fallbacks handled? |
+| Q&A | Does the speaker listen, clarify, answer from evidence and acknowledge unknowns? |
 
-Use a rubric to guide specific feedback, not to pretend that a single number fully captures a speaker's ability.
+The learner can save reviewer feedback and the next revision directly into the same cumulative blueprint. Use the checklist to guide specific feedback, not to pretend that a single number fully captures a speaker's ability.
 
 ---
 

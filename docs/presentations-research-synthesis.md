@@ -168,6 +168,8 @@ The textbook is useful foundational coverage, not a current authority for every 
 
 This consensus report argues that science communication is more complex than translating jargon or supplying missing facts. People approach science with prior knowledge, values, beliefs, goals, skills and social context. A simple one-way “deficit model” assumes that more information will make people agree with the evidence; the report explains why that assumption is often inadequate. It identifies different communication goals, including sharing discoveries, increasing appreciation, helping people understand science relevant to a decision, and influencing opinions or behaviour. It also stresses trust, uncertainty, ethics and bidirectional engagement.
 
+The report's focus is science communication in complex and often contentious public contexts. It explicitly does not provide a full account of formal science education or presentation pedagogy; Artico therefore pairs it with the iBiology course, general public-speaking curriculum and learning-science research.
+
 **Artico implication:** audience analysis must ask not only “what do they know?” but also “what matters to them, what decision are they facing, what do they trust, and what concern should the speaker hear?” A public science talk is not automatically a lecture to uninformed people. It may be a dialogue with people who have relevant experience, values or legitimate questions.
 
 ### 2.4 Stanford Oral Communication Program
@@ -534,6 +536,7 @@ Use a rubric to guide specific feedback, not to pretend that a single number ful
 
 ### Peer-reviewed research and standards
 - National Academies of Sciences, Engineering, and Medicine (2017), *Communicating Science Effectively: A Research Agenda*, DOI: 10.17226/23674.
+- Kahneman, D., Fredrickson, B. L., Schreiber, C. A. & Redelmeier, D. A. (1993), *When More Pain Is Preferred to Less: Adding a Better End*, DOI: 10.1111/j.1467-9280.1993.tb00589.x. This is the cold-water peak–end experiment, not a presentation study.
 - Aurbach et al. (2018), Half-Life Your Message, DOI: 10.1177/1075547018781917.
 - Garner & Alley (2013), assertion–evidence slide comprehension study, *International Journal of Engineering Education*, 29(6), 1564–1579.
 - Mayer (2017), multimedia learning review, DOI: 10.1111/jcal.12197.

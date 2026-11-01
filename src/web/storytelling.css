@@ -142,3 +142,123 @@
 .st-footer a{flex:1;min-width:130px}
 }
 @media(prefers-reduced-motion:reduce){.st-page *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* The illustrated spoken-storytelling coursebook: screen adaptation. */
+.st-book{--sb-ink:#1b2a41;--sb-blue:#2a59c8;--sb-paper:#fbfaf7;--sb-wash:#eef3fb;--sb-marker:#fff0a3;color:var(--sb-ink);background:var(--sb-paper);padding-bottom:88px}
+.st-book a:focus-visible,.st-book button:focus-visible,.st-book textarea:focus-visible{outline:3px solid #88a7e5;outline-offset:3px}
+.st-book p{line-height:1.75}
+.st-book-back,.st-book-crumb{display:block;color:#506782;font-size:13px;text-decoration:none;margin:0 0 24px}
+.st-book-crumb{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.st-book-crumb a{color:var(--sb-blue);text-decoration:none}
+.st-book-cover{background:#f8f6f0;border-top:2px solid var(--sb-ink);border-bottom:1px solid #d9dfeb;padding:58px clamp(16px,6vw,65px) 38px;margin:16px auto 28px;max-width:1080px}
+.st-book-kicker,.st-book-label{color:#56718e;text-transform:uppercase;letter-spacing:.12em;font-size:11px!important;font-weight:750}
+.st-book-cover h1,.st-book-main h1{font-family:Newsreader,Georgia,serif!important;font-weight:550;letter-spacing:-.05em;color:var(--sb-ink);line-height:1.12}
+.st-book-cover h1{font-size:clamp(42px,7vw,78px)!important;margin:18px 0 16px}
+.st-book-cover h1 span{color:var(--sb-blue)}
+.st-book-lead{font-family:Newsreader,Georgia,serif;font-size:clamp(22px,3.2vw,30px);line-height:1.42!important;max-width:690px;color:#243b5c;margin:16px 0}
+.st-book mark{background:linear-gradient(transparent 55%,var(--sb-marker) 55%);color:inherit;padding:0 2px}
+.st-book-sub{font-size:15px;color:#52657c;max-width:620px;margin:12px 0 22px}
+.st-book-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.st-book-button,.st-book-button-alt{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;min-height:42px;font:650 13px/1.45 inherit;border-radius:7px;text-decoration:none;cursor:pointer}
+.st-book-button{background:var(--sb-blue);border:1px solid var(--sb-blue);color:white!important}
+.st-book-button:hover{background:#1945ac}
+.st-book-button:disabled{opacity:.45;cursor:not-allowed}
+.st-book-button-alt{border:1px solid #c7d2e4;color:#2d4d7a!important;background:#fff}
+.st-book-button-alt:hover{background:#f3f6fd}
+.st-book-tally{font-size:11px;color:#60738d;letter-spacing:.06em;display:flex;gap:15px;flex-wrap:wrap;margin:30px 0 0!important}
+.st-book-tally span{margin-left:auto}
+.st-book-loop{max-width:1080px;margin:0 auto 44px;padding:18px clamp(16px,5vw,65px);border-bottom:1px solid #dce3ed;display:flex;gap:20px;align-items:center;justify-content:space-between;color:#2e496d;font-size:11px;font-weight:750;letter-spacing:.085em}
+.st-book-loop i{color:#9dafc5;font-style:normal;font-size:18px}
+.st-book-overview-section{max-width:950px;margin:0 auto 58px;padding:0 20px}
+.st-book-overview-section>.st-book-label{padding:0 0 12px;border-bottom:1px solid #e1e6ed;margin-bottom:23px}
+.st-book-overview-section>h2{font-family:Newsreader,Georgia,serif;color:var(--sb-ink);font-weight:540;font-size:30px}
+.st-book-part{display:grid;grid-template-columns:minmax(180px,235px) 1fr;border-top:1px solid #d5deea;padding:22px 0;gap:32px}
+.st-book-part>div:first-child small{color:#617998;font-size:11px;font-weight:750;letter-spacing:.08em}
+.st-book-part h3{font:550 22px/1.27 Newsreader,Georgia,serif;margin:9px 0 0}
+.st-book-part>div:nth-child(2){display:grid;gap:2px}
+.st-book-part a{display:flex;align-items:center;gap:16px;text-decoration:none;color:#2c3f58;border-radius:6px;padding:10px 12px;min-height:42px}
+.st-book-part a:hover{background:#eef3fc}
+.st-book-part a span{font-size:12px;color:#587aa8;width:24px}
+.st-book-part a strong{font-size:14px;flex:1;font-weight:520;text-transform:capitalize}
+.st-book-part a b{color:#8194ac;font-weight:450}
+.st-book-layout{display:grid;grid-template-columns:204px minmax(0,1fr);gap:clamp(22px,4vw,58px);max-width:1130px;margin:0 auto}
+.st-book-sidebar{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 36px);overflow-y:auto;border-right:1px solid #e0e5ed;padding-right:14px}
+.st-book-sidebar>p{font-size:10px;color:#7586a1;font-weight:750;letter-spacing:.09em;margin:0 0 15px}
+.st-book-unit{display:block;font-size:12px;color:#637692;line-height:1.5;padding:9px 7px;text-decoration:none;border-radius:5px}
+.st-book-unit.active{color:#244f9d;background:#edf2fa;font-weight:700}
+.st-book-side-link{display:flex;gap:9px;align-items:flex-start;font-size:11px;line-height:1.5;text-decoration:none;color:#647792;padding:8px 6px 8px 13px;border-left:1px solid #d9e0ec;margin-left:7px}
+.st-book-side-link span{color:#7893b7;min-width:18px}
+.st-book-side-link.current{background:#eef4fd;color:#2856a5;font-weight:750;border-left:2px solid #3165cd}
+.st-book-main{width:100%;max-width:800px;min-width:0}
+.st-book-main>h1{font-size:clamp(32px,4.8vw,54px);text-transform:capitalize;margin:13px 0 16px}
+.st-book-goal{font-size:17px;color:#597088;max-width:680px}
+.st-book-tabs{display:inline-flex;border-bottom:1px solid #d7dfeb;margin:25px 0 37px;gap:10px}
+.st-book-tabs a{font-size:13px;text-decoration:none;padding:12px 22px;color:#71819a;font-weight:650;border-bottom:2px solid transparent}
+.st-book-tabs a[aria-current=page]{color:var(--sb-blue);border-color:var(--sb-blue)}
+.st-book-prose{font-size:15px;line-height:1.74;color:#293b52}
+.st-book-prose h2,.st-book-prose h3{font-family:Newsreader,Georgia,serif;font-weight:550;letter-spacing:-.025em;color:#1c304c}
+.st-book-prose h2{font-size:clamp(23px,3vw,29px);margin:42px 0 14px;border-top:1px solid #e0e5eb;padding-top:25px}
+.st-book-prose h3{font-size:21px;margin:30px 0 13px}
+.st-book-prose p{margin:11px 0 16px}
+.st-book-prose ul,.st-book-prose ol{padding-left:23px;margin:12px 0 22px}
+.st-book-prose li{padding-left:4px;margin:6px 0;line-height:1.7}
+.st-book-prose li::marker{color:#5d84c8}
+.st-book-mark{font-weight:700;background:linear-gradient(transparent 66%,#fff0a3 66%);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.st-book-example{background:#eaf2fd;border-left:4px solid #3268d7;border-radius:0 10px 10px 0;padding:18px 24px;margin:22px 0;color:#213c64}
+.st-book-example p{margin:4px 0 9px}
+.st-book-example p:last-child{margin-bottom:2px}
+.st-book-table-wrap{overflow-x:auto;margin:22px 0 27px;border-radius:8px;border:1px solid #d5deeb}
+.st-book-table-wrap table{width:100%;border-collapse:collapse;font-size:13px}
+.st-book-table-wrap th{background:#1a2942;color:white;font-weight:600;text-align:left;padding:13px 14px}
+.st-book-table-wrap td{padding:13px 14px;vertical-align:top;border-bottom:1px solid #dee5ef}
+.st-book-table-wrap tr:nth-child(even) td{background:#f2f5fa}
+.st-book-table-wrap tr:last-child td{border-bottom:none}
+.st-book-diagram{background:#f1f5fa;border:1px solid #d9e2f0;border-radius:12px;padding:24px;margin:18px 0 27px}
+.st-book-diagram>small{font-size:10px;letter-spacing:.09em;color:#627a9b;font-weight:800}
+.st-book-diagram p{font-size:13px;color:#58708e;margin:19px 0 0}
+.st-book-cells,.st-book-sequence{display:flex;align-items:stretch;gap:9px;margin-top:17px}
+.st-book-cells>div,.st-book-sequence>div{flex:1;min-width:0;background:white;border:1px solid #dce4ef;border-radius:7px;padding:16px 10px;display:grid;gap:5px;justify-items:center;text-align:center}
+.st-book-cells span{font-size:26px;color:#3265ca}
+.st-book-cells b,.st-book-sequence>div{font-size:13px;color:#243d61}
+.st-book-cells small{font-size:11px;color:#7185a1}
+.st-book-sequence>div span{display:block;font-size:11px;color:#4678d5}
+.st-book-next{background:#f5f3e9;border-left:3px solid #dec26c;border-radius:0 8px 8px 0;margin:44px 0 28px;padding:22px 24px}
+.st-book-next b{font-size:10px;letter-spacing:.08em;color:#846a2f}
+.st-book-next p{font-size:14px;color:#3c4b60}
+.st-book-work{margin:37px 0;padding:24px;border:1px solid #dce4ed;background:#fff;border-radius:10px}
+.st-book-work h2{font:550 26px/1.3 Newsreader,Georgia,serif;margin:0 0 10px}
+.st-book-work>p{font-size:13px;color:#65768d}
+.st-book-work>label:not(.st-book-attest){display:block;font-size:12px;font-weight:700;color:#415773;margin:22px 0 9px}
+.st-book-work textarea{width:100%;padding:14px;resize:vertical;border:1px solid #ced9e8;background:#fff;border-radius:7px;color:#283b56;font:14px/1.6 inherit;box-sizing:border-box}
+.st-book-recorder{display:grid;justify-items:start;gap:12px;margin-top:20px}
+.st-book-recorder audio{max-width:100%;width:320px}
+.st-book-recorder small,.st-book-privacy{font-size:11px;color:#75869e}
+.st-book-checks{display:grid;gap:12px;margin:17px 0 24px}
+.st-book-checks label,.st-book-attest{display:flex;gap:10px;align-items:center;font-size:13px;color:#455d7c}
+.st-book-attest{margin:20px 0!important;font-weight:600}
+.st-book-confirm{font-size:12px;color:#255e48}
+.st-book-footer{display:flex;justify-content:space-between;gap:12px;padding:24px 0;margin:42px 0;border-top:1px solid #dae2ec}
+.st-book-footer a{font-size:13px;color:var(--sb-blue);font-weight:650;text-decoration:none}
+.st-book-resources{margin-top:42px;padding-top:22px;border-top:2px solid #d9e1ec}
+.st-book-overview-section .st-book-prose>h2:first-child{margin-top:8px}
+@media(max-width:800px){
+ .st-book-layout{grid-template-columns:minmax(0,1fr)}
+ .st-book-sidebar{position:static;max-height:none;border-right:none;padding:0 0 12px;border-bottom:1px solid #dce3eb}
+ .st-book-sidebar>div:not(:has(.active)){display:none}
+ .st-book-sidebar .st-book-side-link{display:inline-flex;margin:2px;border-left:none;border-radius:5px;padding:6px}
+ .st-book-sidebar .st-book-side-link span{min-width:17px}
+ .st-book-part{grid-template-columns:1fr;gap:8px}
+ .st-book-loop{gap:6px;font-size:9px;padding:14px 9px}
+ .st-book-cover{padding:34px 20px}
+ .st-book-prose{font-size:14px}
+ .st-book-cells,.st-book-sequence{gap:5px}
+ .st-book-cells>div,.st-book-sequence>div{padding:12px 5px}
+}
+@media(max-width:480px){
+ .st-book-cover h1{font-size:40px!important}
+ .st-book-loop span{font-size:8px}
+ .st-book-prose h2{font-size:23px}
+ .st-book-example{padding:13px 16px}
+ .st-book-cells small{font-size:9px}
+}

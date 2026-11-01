@@ -8,6 +8,7 @@ import {
   presentationSources as sources,
   presentationSourceVideos as videos,
   presentationWorksheets as worksheets,
+  presentationDiscussionPrompts as discussions,
 } from './presentationCourseData.js'
 import { parseRoute, sanitizeLearning } from './learning.js'
 
@@ -30,7 +31,7 @@ test('Research-led curriculum has complete lesson, case and source coverage', ()
   assert.ok(cases.some(item => item.id === 'science' && item.evidence.includes('SYNTHETIC')))
   assert.equal(videos.length,22)
   assert.equal(worksheets.length,8)
-  assert.equal((await import('./presentationCourseData.js')).presentationDiscussionPrompts.length,4)
+  assert.equal(discussions.length,4)
   assert.equal(fields.length,27)
   assert.ok(situations.length >= 10)
   assert.ok(sources.some(item => item.title.includes('iBiology')))

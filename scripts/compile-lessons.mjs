@@ -32,7 +32,7 @@ for (const chapter of catalog) {
         ...new Set(block.turns.map((turn) => design.people?.[turn.speaker] ?? turn.speaker)),
       ]
       const theme = design.sceneThemes?.[sceneIndex] ?? design.theme
-      block.art = `ch${chapter.id}-scene-${sceneIndex}.svg`
+      block.art = `ch${chapter.id}-scene-${sceneIndex}.${chapter.id === '04' ? 'png' : 'svg'}`
       block.theme = theme
       block.people = people
       block.caption = `${section.title} · ${people.join(' & ')}`
@@ -52,7 +52,9 @@ for (const chapter of catalog) {
           portraits.add(turn.portrait)
         }
       }
-      if (design.approvedScenes?.[sceneIndex])
+      if (chapter.id === '04') {
+        // Preserve the approved transparent PNGs committed in public/assets/course.
+      } else if (design.approvedScenes?.[sceneIndex])
         await copyFile(
           resolve(root, 'public/assets/figma', design.approvedScenes[sceneIndex]),
           resolve(artDir, block.art),

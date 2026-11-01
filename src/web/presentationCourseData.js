@@ -1026,6 +1026,30 @@ export const presentationSources = [
     "summary": "Audience-centred persuasive storytelling, contrast between current and possible states, and a clear call to action.",
     "use": "Persuasive and change-oriented talks.",
     "limit": "Not a universal story formula for science updates, teaching or ceremonial speaking."
+  },
+  {
+    "title": "National Academies (2017) · Communicating Science Effectively",
+    "url": "https://doi.org/10.17226/23674",
+    "kind": "Consensus study report",
+    "summary": "A multidisciplinary consensus report rejects the simple deficit model: science communication depends on goals, audience knowledge, values, trust, social context and two-way engagement.",
+    "use": "Audience analysis beyond jargon level; science communication that helps people understand evidence in context.",
+    "limit": "Focused particularly on public science communication and contentious issues; not a slide-design manual."
+  },
+  {
+    "title": "Michael Alley · The Craft of Scientific Presentations (2nd ed.)",
+    "url": "https://doi.org/10.1007/978-1-4419-8279-7",
+    "kind": "Practitioner / technical textbook",
+    "summary": "A full technical-presentation guide that develops assertion–evidence slides, conference-talk planning, confidence and public science communication.",
+    "use": "Deeper practical reference for technical and research presentations.",
+    "limit": "Professional textbook; its advice should be distinguished from experimental findings and adapted to the occasion."
+  },
+  {
+    "title": "Ebrahimi et al. (2019) · Psychological interventions for fear of public speaking",
+    "url": "https://doi.org/10.3389/fpsyg.2019.00488",
+    "kind": "Peer-reviewed meta-analysis of RCTs",
+    "summary": "30 randomized trials with 1,355 participants and 62 interventions; pooled Hedges g=.74 (95% CI .61–.87), with low-to-moderate heterogeneity.",
+    "use": "Evidence that psychological interventions can reduce fear of public speaking.",
+    "limit": "Effects were larger on self-report than physiological or behavioural outcomes; this is not evidence that slide tips or one breathing trick treat anxiety."
   }
 ]
 

@@ -447,7 +447,7 @@ export const presentationLessons = [
     "teach": "Some speakers feel anxious; others do not. Anxiety varies and can be reduced by different approaches, including gradual exposure and cognitive strategies. This course can suggest low-stakes practice, realistic rehearsal, and preparation of the opening and transitions; it is not treatment. Check room, screen, microphone, remote setup, time limit, accessibility needs and attire appropriate to the occasion. Before the talk, options include knowing the opening, light movement or breathing and a realistic run-through. During the talk, pause, breathe, use a slide cue or a supportive point of focus, and continue after a stumble. Humour is optional and only useful when it fits. Bring a PDF backup. Decide what you will cut if time is shortened and how to continue if a visual or live demo fails.",
     "before": "If the projector fails, my presentation is over.",
     "after": "I will test the setup, keep a PDF backup, prepare a spoken explanation of the key figure, and know which details to omit if time is cut.",
-    "note": "For severe or life-limiting anxiety, a presentation course is not a substitute for appropriate professional support.",
+    "note": "The 2019 meta-analysis concerns people with identified, impairing fear of public speaking, not every nervous speaker; effects were larger on self-report than on behavioural or physiological measures. The 2025 review excluded interventions without significant benefits, so its pooled estimate is success-selected. A presentation course is not treatment for anxiety.",
     "contrast": "For a remote talk, test screen sharing and captions. For a live demo, prepare a clearly labelled fallback that does not pretend a failed action succeeded.",
     "question": "Your 15-minute slot becomes six minutes. What should you do?",
     "options": [
@@ -465,7 +465,7 @@ export const presentationLessons = [
       "Choose a recovery plan"
     ],
     "say": "We have less time, so I will focus on the finding and what it means.",
-    "sourceBasis": "McWilliam et al. 2025 PSA intervention review; Stanford speech-anxiety guidance; iBiology stage preparation."
+    "sourceBasis": "Ebrahimi et al. (2019) meta-analysis of 30 RCTs; McWilliam et al. (2025) systematic review, with explicit success-selection caveat; Stanford speech-anxiety guidance."
   },
   {
     "id": "17",

@@ -1,9 +1,9 @@
 .ar-f14-atlas{width:100%;min-width:0;display:grid;gap:18px}
-.ar-f14-board{--ar14:#2893bc;--ar14-light:#eff7fa;border:1px solid #d5e1e8;border-top:3px solid var(--ar14);border-radius:13px;background:#fbfcfd;padding:clamp(16px,2.2vw,28px);min-width:0}
-.ar-f14-board.ar-f14-purple{--ar14:#a977bb;--ar14-light:#f6f0f9}
-.ar-f14-board.ar-f14-orange{--ar14:#e39a2c;--ar14-light:#fff8ed}
-.ar-f14-board.ar-f14-green{--ar14:#72af4e;--ar14-light:#f2f9ed}
-.ar-f14-board.ar-f14-red{--ar14:#e66d4c;--ar14-light:#fff4f0}
+.ar-f14-board{--ar14-light:#eceff1;border:1px solid #e0e3e6;border-top:1px solid #e0e3e6;border-radius:13px;background:#f5f6f7;padding:clamp(16px,2.2vw,28px);min-width:0}
+.ar-f14-board.ar-f14-purple{--ar14-light:#eceff1}
+.ar-f14-board.ar-f14-orange{--ar14-light:#eceff1}
+.ar-f14-board.ar-f14-green{--ar14-light:#eceff1}
+.ar-f14-board.ar-f14-red{--ar14-light:#eceff1}
 .ar-f14-board-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 13px;margin:0 0 20px}
 .ar-f14-board-title h2{font-size:20px;font-weight:700;line-height:1.3;font-family:inherit;letter-spacing:.025em;margin:0;color:#243449}
 .ar-f14-board-title>span{font-size:14px;line-height:1.4;color:#64758a}
@@ -26,7 +26,7 @@
 .ar-f14-tree-node .ar-f14-japanese{font-size:10px}
 .ar-f14-hint{font-size:12px;line-height:1.65;color:#687b8c;margin:12px 0 0;text-align:center}
 .ar-f14-step-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.ar-f14-step-panel{min-width:0;background:#fff;border:1px solid #e1e8ed;border-radius:11px;padding:17px 15px}
+.ar-f14-step-panel{min-width:0;background:#eef0f2;border:1px solid #e1e4e7;border-radius:11px;padding:17px 15px}
 .ar-f14-step-panel h3{font-size:13px;line-height:1.4;letter-spacing:.045em;text-align:center;color:#6d5480;margin:0 0 15px}
 .ar-f14-step-panel>p{font-size:12px;line-height:1.65;color:#596f82;text-align:center;margin:13px 0 0}
 .ar-f14-mini-tree{display:flex;flex-direction:column;align-items:center;min-width:0}
@@ -39,7 +39,7 @@
 .ar-f14-mini-stem{height:27px;width:2px;background:#4fb0c7;display:block;position:relative}
 .ar-f14-mini-stem:after{content:"";position:absolute;left:-65px;bottom:0;width:132px;height:2px;background:#4fb0c7}
 .ar-f14-step-vocabulary{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:17px;padding-top:16px;border-top:1px solid #e1e8ed}
-.ar-f14-chip{background:#fff;border:1px solid #dce7ec;border-radius:9px;min-height:45px;padding:7px 10px;flex:0 1 auto}
+.ar-f14-chip{background:#eef0f2;border:1px solid #e1e4e7;border-radius:9px;min-height:45px;padding:7px 10px;flex:0 1 auto}
 .ar-f14-chip .ar-f14-word-line{gap:5px}
 .ar-f14-chip .ar-f14-label{font-size:12px;font-weight:600}
 .ar-f14-chip .ar-f14-japanese{font-size:11px}
@@ -47,7 +47,7 @@
 .ar-f14-vocabulary-sections{display:grid;gap:18px}
 .ar-f14-picture-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px 8px}
 .ar-f14-picture-word{width:100%;min-width:0;min-height:103px;padding:9px 4px;border-radius:9px;transition:background .15s}
-.ar-f14-picture-word:hover{background:var(--ar14-light)}
+.ar-f14-picture-word:hover{background:#e9ecef}
 .ar-f14-picture-icon{min-height:48px;display:grid;place-items:center;font-size:35px;line-height:1.2;filter:saturate(.82)}
 .ar-f14-picture-word .ar-f14-word-art{min-height:49px}
 .ar-f14-picture-word .ar-f14-label{font-size:13px}
@@ -83,4 +83,4 @@
 .ar-f14-step-children{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;width:100%;margin-top:13px}
 .ar-f14-step-child{display:grid;justify-items:center;min-width:0}
 .ar-f14-step-child small{font-size:10px;line-height:1.4;color:#718294;text-align:center;margin-top:3px}
-.ar-f14-step-link{font-size:10px;line-height:1.25;color:#795b89;font-weight:700;text-align:center;border-top:2px dashed #b78ac3;padding:5px 3px 0;white-space:nowrap}
+.ar-f14-step-link{font-size:10px;line-height:1.25;color:#66717c;font-weight:700;text-align:center;border-top:2px dashed #c7ccd1;padding:5px 3px 0;white-space:nowrap}

@@ -244,7 +244,7 @@ This is an open-access article describing a teaching/practice tool, based on its
 
 The article explicitly recommends preparation by free-association, then reflection afterwards: is the emerging message appropriate to the context, audience and goal? Does it preserve necessary nuance? What supporting ideas are needed? If not, repeat it with a better-defined purpose.
 
-**Artico implication:** include the exercise, but label it a discovery method. Do not treat the shortest version as the final scientific claim.
+**Artico implication:** include the exercise, but label it a discovery method. It is not an icebreaker, a judged performance or a sound-bite contest; a partner should keep time rather than critique the speaker during the rounds. Do not treat the shortest version as the final scientific claim.
 
 ### 2.9 Rehearsal, feedback and skill improvement
 

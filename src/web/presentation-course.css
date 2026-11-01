@@ -245,3 +245,6 @@
 .ps-half-life-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .ps-half-life-controls button{font:inherit}
 .ps-half-life-complete{font-size:12px;color:#2f7659;font-weight:700}
+
+.ps-original-pack{display:flex;flex-wrap:wrap;gap:10px 18px;padding:15px 0;border-block:1px solid var(--ps-line);margin:18px 0}
+.ps-original-pack a{font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}

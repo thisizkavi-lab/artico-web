@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: meet a deadline (Verb phrase)
+  CONTEXTUAL_DEFINITION: Submit required work by the due time.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a completed assignment being handed in before the clock reaches the final cutoff, distinct from the deadline object itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Assignment drop box near a classroom door.
+    - Context_Layer: Analog clock and due-date calendar.
+    - Focal_Layer: Student places a finished folder into the submission tray on time.
+    - Details_Layer: Neat finished pages and calm focused posture.
+    - Lighting_Layer: Bright highlight on the timely submission.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:meet a deadline" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="meet-deadline-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="meet-deadline-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#meet-deadline-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M235 24H286V143H235Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.5"/><path d="M250 24V143" stroke="#8D765A" stroke-width="2"/><path d="M250 24L284 34V140L250 143Z" fill="#E8DDC8" stroke="#8D765A" stroke-width="1.1"/><circle cx="277" cy="86" r="2.2" fill="#D9A441"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="208" cy="41" r="20" fill="#FFFEFA" stroke="#64748B" stroke-width="1.5"/><path d="M208 28V41L217 47" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/><path d="M33 119H83V139H33Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M39 124H76" stroke="#DCECFB" stroke-width="1.1"/><path d="M220 117H282V124H220Z" fill="#A98A64"/><path d="M227 124V149M274 124V149" stroke="#8D765A" stroke-width="2.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#meet-deadline-shadow)"><circle cx="111" cy="70" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M99 70Q100 55 112 56Q124 57 123 71L117 74Q114 63 108 64Q104 65 102 76Z" fill="#27364B"/><path d="M94 88Q111 80 128 88L135 112L122 122L99 115Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M100 91L119 101L151 98M126 90L145 96L161 94" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M100 91L119 101L151 98M126 90L145 96L161 94" fill="none" stroke="#C98961" stroke-width="2.6" stroke-linecap="round"/><path d="M102 117L97 149M120 118L133 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M158 81L186 76L196 92L166 98Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.5"/><path d="M164 85L184 81M165 91L185 87" stroke="#88A9D0" stroke-width="1.1"/><path d="M196 87L217 79L220 90L200 97Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M204 70L213 64L222 70L214 77Z" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M222 72L233 68" stroke="#91A77C" stroke-width="1.6" stroke-dasharray="3 3"/><path d="M218 52L223 49M193 26L196 21" stroke="#D9A441" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="91" rx="128" ry="69" fill="#FEF9C3" opacity=".1"/><path d="M235 24H286V143" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/><circle cx="208" cy="41" r="22" fill="#FEF9C3" opacity=".1"/></g>
+</svg>

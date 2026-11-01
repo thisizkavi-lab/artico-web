@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: channel
+ CONTEXTUAL_DEFINITION: A selected television channel indicated by a remote pointed at the chosen program on screen.
+ PEDAGOGICAL_ARCHETYPE: one highlighted TV program selection among several channel choices
+ SYNONYM_GUARD: Use a selected TV program choice; do not depict a waterway or the actual button-pressing action of changing channels.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A remote points toward a TV menu of three unlabeled program images, with one image clearly selected by a warm highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:channel" data-archetype="selected TV channel">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M68 26H275Q281 26 281 32V137H62V32Q62 26 68 26Z" fill="#26384A"/><path d="M71 34H272V128H71Z" fill="#405663"/><path d="M83 42H260V119H83Z" fill="#597D8B"/><path d="M152 137L158 146H184L191 137Z" fill="#64777C"/><path d="M141 146H203V151H141Z" fill="#26384A"/><ellipse cx="174" cy="155" rx="86" ry="4" fill="#9D8C75" opacity=".4"/>
+ </g>
+ <g id="layer-context">
+  <path d="M91 55H132V104H91Z" fill="#B85E5A"/><path d="M143 55H184V104H143Z" fill="#D6A64C"/><path d="M195 55H246V104H195Z" fill="#798C72"/>
+  <path d="M95 59H128V100H95Z" fill="#597D8B"/><path d="M147 59H180V100H147Z" fill="#A8B69A"/><path d="M199 59H242V100H199Z" fill="#6A8588"/>
+  <circle cx="112" cy="72" r="7" fill="#D29A78"/><path d="M105 80Q112 77 119 81L122 94H102Z" fill="#E7D6D1"/><path d="M154 87L162 70L170 87Z" fill="#D6A64C"/><path d="M206 87Q216 72 226 87L236 93H201Z" fill="#D29A78"/>
+  <path d="M90 52H133V107H90Z" fill="none" stroke="#F6E5CE" stroke-width="2.2"/>
+  <path d="M84 112H250" stroke="#F6E5CE" stroke-width="1.2"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M33 92Q29 92 28 97L28 135Q28 139 33 139H53Q58 139 59 134L63 100Q63 96 59 94Z" fill="#26384A"/><path d="M37 98Q44 95 53 99L51 107H36Z" fill="#B85E5A"/><circle cx="43" cy="114" r="3" fill="#D6A64C"/><circle cx="51" cy="114" r="3" fill="#D6A64C"/><circle cx="41" cy="124" r="2.4" fill="#F6E5CE"/><circle cx="49" cy="124" r="2.4" fill="#F6E5CE"/><circle cx="45" cy="132" r="2" fill="#798C72"/>
+  <path d="M59 96L76 83" stroke="#26384A" stroke-width="1.5"/><path d="M59 96L76 83" stroke="#D6A64C" stroke-width="1"/>
+  <path d="M70 86L83 81" stroke="#D6A64C" stroke-width="1.2" stroke-dasharray="2 3"/>
+ </g>
+ <g id="layer-details">
+  <path d="M103 94Q112 91 120 94M156 94Q164 91 172 94M205 94Q219 90 235 94" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="128" cy="47" r="1.7" fill="#D6A64C"/><circle cx="180" cy="47" r="1.7" fill="#D6A64C"/><circle cx="246" cy="47" r="1.7" fill="#D6A64C"/>
+  <path d="M75 39L86 44M259 39L249 44" stroke="#FFF1C7" stroke-width="1.2" opacity=".6"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="174" cy="53" rx="83" ry="25" fill="#E7C66B" opacity=".11"/><path d="M73 36L95 62M270 36L248 62" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M72 128H271" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: beautiful (Adjective)
+  CONTEXTUAL_DEFINITION: Having a pleasing, harmonious appearance.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Show a composed portrait with gentle light and balanced styling, without claiming one type is objectively best.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait studio.
+    - Context_Layer: Mirror with a fine floral corner detail.
+    - Focal_Layer: Person admiring a polished, harmonious look.
+    - Details_Layer: Neat hair and soft floral accent.
+    - Lighting_Layer: Gentle glow around face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:beautiful" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="94" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M48 145V63Q48 24 88 24H213Q253 24 253 63V145Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.5"/><path d="M59 138V64Q59 36 89 36H212Q242 36 242 64V138Z" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.5"/>
+  <ellipse cx="150" cy="91" rx="79" ry="70" fill="#FEF3C7" opacity=".58"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M104 160Q98 129 100 88Q103 49 150 45Q197 49 200 88Q202 129 196 160Z" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M97 88Q94 48 138 38Q173 34 196 55Q209 71 201 98L193 106Q189 77 174 69Q151 80 118 74Q106 79 102 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M117 98Q128 92 139 98M163 98Q174 92 184 98" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M121 105Q129 108 137 105M165 105Q173 108 181 105" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M150 103L146 120L154 122M137 140Q151 146 166 139" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M123 53Q129 40 141 44Q148 49 140 57Q132 60 123 53Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><circle cx="138" cy="46" r="3" fill="#D9A441"/>
+  <path d="M75 49Q80 41 85 49Q80 56 75 49M221 49Q226 41 231 49Q226 56 221 49" fill="#D9857F"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="150" cy="90" rx="65" ry="62" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".45"/>
+</svg>

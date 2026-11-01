@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: kitchen (Noun)
+  CONTEXTUAL_DEFINITION: A room where food is prepared and cooked.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: Make the cooking range and food-preparation counter unmistakable, distinct from a dining table.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright kitchen wall and tiled splashback.
+    - Context_Layer: Cabinetry, counter, and cooking range.
+    - Focal_Layer: A pot steams on the range beside a washbasin.
+    - Details_Layer: Hanging utensils and a chopping board.
+    - Lighting_Layer: Clear warm light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:kitchen" data-archetype="room-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 138 304 148 L304 192 L0 192Z" fill="#D7C5AA"/><path d="M43 52 L261 52 M43 78 L261 78" stroke="#D8CDAF" stroke-width="1.4"/><ellipse cx="153" cy="167" rx="108" ry="8" fill="#BCA889"/></g>
+  <g id="layer-context"><rect x="45" y="37" width="93" height="39" rx="3" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><path d="M91 38 L91 76" stroke="#FAF8F3" stroke-width="2"/><rect x="165" y="37" width="92" height="39" rx="3" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><path d="M210 38 L210 76" stroke="#FAF8F3" stroke-width="2"/><rect x="37" y="95" width="229" height="12" rx="4" fill="#B97840" stroke="#8A5A35" stroke-width="1.6"/><path d="M43 107 L43 151 M260 107 L260 151" stroke="#8A5A35" stroke-width="4"/><rect x="48" y="109" width="83" height="42" rx="2" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M55 116 L124 116 M55 123 L124 123 M55 130 L124 130" stroke="#FFFFFF" stroke-width="2"/><rect x="153" y="107" width="55" height="44" rx="3" fill="#33495F" stroke="#1E2A3B" stroke-width="2"/><circle cx="166" cy="114" r="2.3" fill="#F2C14E"/><circle cx="180" cy="114" r="2.3" fill="#F2C14E"/><circle cx="194" cy="114" r="2.3" fill="#F2C14E"/><rect x="161" y="127" width="39" height="16" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M66 90 L82 90 L82 95 M216 95 Q216 89 224 89 L224 95" fill="none" stroke="#5479AC" stroke-width="2.5"/><path d="M216 87 Q224 81 231 87" fill="none" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-details"><ellipse cx="181" cy="98" rx="19" ry="4.5" fill="#D59A55" stroke="#1E2A3B" stroke-width="1.5"/><path d="M164 98 L168 85 Q170 81 181 81 Q192 81 194 85 L198 98Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M168 88 L162 88 L159 92 L166 93 M194 88 L200 88 L203 92 L196 93" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round"/><path d="M172 80 Q166 75 171 70 M182 79 Q177 73 182 67 M191 80 Q187 74 192 70" fill="none" stroke="#A9BAC8" stroke-width="2.3" stroke-linecap="round"/><rect x="224" y="83" width="20" height="12" rx="2" fill="#E8D9B8" stroke="#8E7E60" stroke-width="1.2"/><path d="M230 83 L230 75 L238 75 L238 83" fill="none" stroke="#8A5A35" stroke-width="1.8"/><circle cx="80" cy="62" r="3" fill="#F2C14E"/><circle cx="124" cy="62" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><circle cx="273" cy="38" r="15" fill="#F2C14E" opacity="0.45"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: toys (Plural Noun)
+  CONTEXTUAL_DEFINITION: A varied collection of objects made for children to play with.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A tidy toy shelf displays several unmistakable playthings—blocks, a ball, a doll, and a small train—showing the broad plural category.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright shared playroom.
+    - Context_Layer: Low shelf and soft floor mat.
+    - Focal_Layer: Several different toys arranged together, not one game.
+    - Details_Layer: Blocks, doll, ball, and toy train.
+    - Lighting_Layer: Cheerful warm halo across the collection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:toys" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="toys-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="toys-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#toys-bg)"/><path d="M0 153Q78 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M26 43H278V157H26Z" fill="#E3E8F0"/><path d="M35 53H269V148H35Z" fill="#F3ECE1"/><path d="M39 114H265" stroke="#80513F" stroke-width="6"/><path d="M48 153V170M256 153V170" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M63 110H119V116H63Z" fill="#829A83"/><path d="M182 110H246V116H182Z" fill="#829A83"/><path d="M65 101L84 90L104 101L84 112Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><path d="M65 101V114L84 124V112M84 112L104 101V114L84 124" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="225" cy="99" r="15" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.7"/><path d="M213 94Q225 104 237 94M225 84V114" fill="none" stroke="#F3ECE1" stroke-width="1.5"/><path d="M125 138H182" stroke="#315782" stroke-width="4"/><circle cx="137" cy="146" r="8" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="171" cy="146" r="8" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#toys-shadow)"><path d="M132 61Q132 52 142 52H169Q179 52 179 62L188 91H124Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="155" cy="37" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M140 37Q142 22 155 22Q169 23 170 38L166 42Q162 28 154 29Q147 29 143 44Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M146 38Q149 40 152 38M158 38Q161 40 164 38M147 46Q155 50 163 46" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><path d="M133 71Q144 79 155 71Q166 79 177 71" fill="none" stroke="#F2C14E" stroke-width="2"/><path d="M192 72Q204 59 216 72V96Q204 106 192 96Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><circle cx="204" cy="68" r="10" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M201 57Q204 49 207 57" fill="none" stroke="#829A83" stroke-width="2"/><path d="M113 74L127 68L139 73L125 80Z" fill="#829A83" stroke="#1E2A3B" stroke-width="1.4"/><path d="M116 94H194" stroke="#80513F" stroke-width="4"/><circle cx="126" cy="94" r="7" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="181" cy="94" r="7" fill="#829A83" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M53 34Q151 18 249 34" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="108" cy="69" r="2.3" fill="#D9A441"/><circle cx="234" cy="122" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="100" rx="137" ry="75" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".25"/><path d="M78 29Q151 14 228 29" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

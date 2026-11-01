@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: hot air balloon (Noun)
+  CONTEXTUAL_DEFINITION: A large fabric balloon carrying a small basket, lifted by hot air from a visible burner.
+  PEDAGOGICAL_ART_DIRECTOR: Feature one large striped balloon with its hanging basket and a small flame from the burner into the envelope.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with mechanism
+  SYNONYM_GUARD: Show a tethered basket below a fabric balloon and a burner flame; do not draw a blimp or weather balloon.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A rounded colorful fabric envelope floats above a woven passenger basket, with ropes and a warm burner flame visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:hot air balloon" data-archetype="fabric-hot-air-balloon-and-basket">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="hb-sky" x2="0" y2="1"><stop stop-color="#98C7D8"/><stop offset="1" stop-color="#EEF1E5"/></linearGradient><linearGradient id="hb-red" x2="0" y2="1"><stop stop-color="#E28261"/><stop offset="1" stop-color="#B84945"/></linearGradient><linearGradient id="hb-blue" x2="0" y2="1"><stop stop-color="#6D9BAB"/><stop offset="1" stop-color="#456B82"/></linearGradient><linearGradient id="hb-gold" x2="0" y2="1"><stop stop-color="#F0C76C"/><stop offset="1" stop-color="#BF8747"/></linearGradient><linearGradient id="hb-flame" x2="0" y2="1"><stop stop-color="#FFF4AD"/><stop offset="1" stop-color="#EA843D"/></linearGradient><filter id="hb-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#304B52" flood-opacity=".2"/></filter><clipPath id="hb-envelope-clip"><path d="M152 22Q105 24 88 61Q73 92 92 119Q109 141 152 144Q195 141 212 119Q231 92 216 61Q199 24 152 22Z"/></clipPath></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hb-sky)"/><path d="M0 139Q75 121 151 139T304 130V192H0Z" fill="#A6B891"/><path d="M0 160H304V192H0Z" fill="#819174"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#9DAA8F" stroke-width="1.2"/><ellipse cx="151" cy="164" rx="68" ry="6" fill="#3C514C" opacity=".15"/><path d="M27 129q15-12 30 0m193-4q15-12 30 0" fill="none" stroke="#79977B" stroke-width="2" stroke-linecap="round"/><path d="M42 129v16m207-20v20m-5-12 5-6 5 6" fill="none" stroke="#6F8B72" stroke-width="1.8"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#hb-shadow)">
+  <path d="M152 22Q105 24 88 61Q73 92 92 119Q109 141 152 144Q195 141 212 119Q231 92 216 61Q199 24 152 22Z" fill="#D9E6D1" stroke="#4E6972" stroke-width="2"/>
+  <g clip-path="url(#hb-envelope-clip)"><rect x="76" y="19" width="38" height="130" fill="url(#hb-red)"/><rect x="114" y="19" width="38" height="130" fill="url(#hb-blue)"/><rect x="152" y="19" width="38" height="130" fill="url(#hb-gold)"/><rect x="190" y="19" width="38" height="130" fill="url(#hb-red)"/><path d="M114 22V144M152 22V144M190 22V144" fill="none" stroke="#F6F3DA" stroke-width="1.8"/><path d="M114 25Q126 60 132 132M190 25Q178 60 172 132" fill="none" stroke="#E7EBD8" stroke-width="1.2"/></g>
+  <path d="M152 22Q105 24 88 61Q73 92 92 119Q109 141 152 144Q195 141 212 119Q231 92 216 61Q199 24 152 22Z" fill="none" stroke="#4E6972" stroke-width="2"/>
+  <path d="M134 142L140 157m36-15-6 15m-23-14v17m-8-2h22" fill="none" stroke="#73543E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M129 157H175L171 177Q152 184 133 177Z" fill="url(#hb-gold)" stroke="#73543E" stroke-width="1.7"/><path d="M134 162H172M133 168H172M134 174H171" fill="none" stroke="#8E6544" stroke-width="1.3"/><path d="M141 156Q144 147 147 141Q151 133 152 125Q154 136 158 142Q162 148 163 156Z" fill="url(#hb-flame)" stroke="#D77E43" stroke-width="1.2"/><path d="M151 154Q153 145 153 139" fill="none" stroke="#FFF6CE" stroke-width="1.4" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/><circle cx="92" cy="83" r="1.3" fill="#FFF8E7"/><circle cx="211" cy="82" r="1.3" fill="#FFF8E7"/><path d="M115 53q5-12 19-20m56 20q-5-12-19-20" fill="none" stroke="#F6EBCB" stroke-width="1.3"/><path d="M118 145l4 11m64-11-4 11" fill="none" stroke="#C9D7B3" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M100 61q14-27 43-32m61 31q-12-25-40-30" fill="none" stroke="#F2F6DF" stroke-width="1.3" opacity=".85"/><path d="M146 142q5-11 6-18m7 18q-5-10-6-18" fill="none" stroke="#FFF8D4" stroke-width="1.2"/></g>
+</svg>

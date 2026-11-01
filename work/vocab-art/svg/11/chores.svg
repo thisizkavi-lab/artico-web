@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 11 - Chores and cleaning
+  WORD: chores (Noun)
+  CONTEXTUAL_DEFINITION: Small jobs that need doing around a home.
+  PEDAGOGICAL_ARCHETYPE: 1 (Category group)
+  SYNONYM_GUARD: Use several concrete task objects together as a category, without a single action dominating.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Home floor and quiet wall.
+    - Context_Layer: Small kitchen and laundry context cues.
+    - Focal_Layer: Broom, dish stack, and laundry basket grouped together.
+    - Details_Layer: Folded clothes and sponge.
+    - Lighting_Layer: Warm domestic daylight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="11:chores" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 143 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 143 H304" stroke="#B7AA94" stroke-width="2"/><path d="M0 48 H304" stroke="#E3DCCD" stroke-width="1.5"/><ellipse cx="153" cy="168" rx="108" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M50 86 H112 V135 H50Z" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M54 91 H108 V120 H54Z" fill="#FAF8F3"/><path d="M53 123 H109" stroke="#5479AC" stroke-width="2"/><path d="M191 113 Q195 101 208 101 H260 Q272 101 276 113 L269 153 H199Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.4"/><path d="M196 116 Q232 123 271 116" fill="none" stroke="#C8A6D4" stroke-width="1.7"/></g>
+  <g id="layer-focal"><path d="M83 121 L145 50" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M83 121 L145 50" stroke="#8A5A35" stroke-width="5.5" stroke-linecap="round"/><path d="M52 119 Q63 105 89 112 L100 131 Q83 140 58 135Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2"/><path d="M61 116 L72 128 M72 114 L81 130 M83 116 L89 130" stroke="#E7B68E" stroke-width="2"/><path d="M120 111 H175 V119 H120Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.5"/><path d="M126 103 H168 V111 H126Z" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.4"/><path d="M132 95 H162 V103 H132Z" fill="#CE7B55" stroke="#A9543F" stroke-width="1.4"/><path d="M124 133 V145 M168 133 V145" stroke="#647D8B" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M54 139 H95 M205 108 H264" fill="none" stroke="#AFC3DE" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

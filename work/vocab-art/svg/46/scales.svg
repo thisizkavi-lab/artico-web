@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: scales (measure)
+  CONTEXTUAL_DEFINITION: A weighing device used to measure the weight of travel baggage.
+  PEDAGOGICAL_ART_DIRECTOR: Show a suitcase resting on a portable analog weighing scale with its dial and pointer visible.
+  PEDAGOGICAL_ARCHETYPE: 2 - Object / tool still life
+  SYNONYM_GUARD: This is a physical baggage weighing scale, not a map scale or scale model.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact platform scale sits on the floor at center; a wheeled travel suitcase rests on it; a large circular dial at the front shows a pointer but no numbers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:scales (measure)" data-archetype="object-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="scales-ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9EFE7"/><stop offset="1" stop-color="#CFD9D0"/></linearGradient>
+  <linearGradient id="scales-case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7390B0"/><stop offset="1" stop-color="#456786"/></linearGradient>
+  <linearGradient id="scales-platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5F5EF"/><stop offset="1" stop-color="#B5C0C2"/></linearGradient>
+  <filter id="scales-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#scales-ground)"/><path d="M20 153H286" stroke="#89958D" stroke-width="2"/><path d="M28 165H278" stroke="#B2BDB5" stroke-width="1.2"/><path d="M45 31H258V150H45Z" fill="#E4E8E0" stroke="#97A49B" stroke-width="1.2"/><circle cx="69" cy="61" r="10" fill="#89AA80" stroke="#486750" stroke-width="1.2"/><circle cx="241" cy="49" r="11" fill="#89AA80" stroke="#486750" stroke-width="1.2"/><path d="M46 43H258M47 136H257" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+ <g id="layer-context"><rect x="225" y="105" width="33" height="33" rx="4" fill="#D6C09F" stroke="#766857" stroke-width="1.3"/><path d="M222 110L242 95L261 110Z" fill="#92745B" stroke="#1E2A3B" stroke-width="1.1"/><rect x="39" y="112" width="28" height="25" rx="3" fill="#B7C9CC" stroke="#60747D" stroke-width="1.2"/><circle cx="79" cy="141" r="8" fill="#73818C" stroke="#3A4B58" stroke-width="1.2"/><circle cx="222" cy="141" r="8" fill="#73818C" stroke="#3A4B58" stroke-width="1.2"/></g>
+ <g id="layer-focal" filter="url(#scales-shadow)"><path d="M66 118L81 101H223L239 118L230 144H76Z" fill="url(#scales-platform)" stroke="#526274" stroke-width="2"/><path d="M78 120H227L221 137H84Z" fill="#E7EBE7" stroke="#94A2A3" stroke-width="1.2"/><rect x="87" y="38" width="132" height="80" rx="14" fill="url(#scales-case)" stroke="#273A4B" stroke-width="2.2"/><path d="M127 40V29Q128 21 136 21H170Q178 21 179 29V40" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M132 40V30Q133 28 137 28H169Q173 28 174 31V40" fill="none" stroke="#D6E0E4" stroke-width="2.2"/><rect x="99" y="57" width="29" height="42" rx="3" fill="#B6D4D8" stroke="#263D4E" stroke-width="1.4"/><rect x="177" y="57" width="29" height="42" rx="3" fill="#B6D4D8" stroke="#263D4E" stroke-width="1.4"/><path d="M131 55H174" stroke="#B5C6CC" stroke-width="2"/><circle cx="153" cy="127" r="31" fill="#F4F1E8" stroke="#344758" stroke-width="2.2"/><circle cx="153" cy="127" r="23" fill="#D9E5E4" stroke="#83969A" stroke-width="1.3"/><g stroke="#526274" stroke-width="1.5"><path d="M153 105V111M153 143V149M131 127H137M169 127H175M137 111L141 115M165 139L169 143M169 111L165 115M141 139L137 143"/></g><path d="M153 127L164 111" stroke="#D45A4B" stroke-width="3" stroke-linecap="round"/><circle cx="153" cy="127" r="4" fill="#F2C14E" stroke="#344758" stroke-width="1.1"/></g>
+ <g id="layer-details"><path d="M98 47H207" stroke="#FFFFFF" stroke-width="1.2" opacity=".55"/><circle cx="105" cy="48" r="2" fill="#F2C14E"/><circle cx="201" cy="48" r="2" fill="#F2C14E"/><path d="M72 151H234" stroke="#829097" stroke-width="1.2"/><circle cx="51" cy="54" r="3" fill="#F2C14E"/><circle cx="256" cy="73" r="3" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="153" cy="120" rx="89" ry="53" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".4"/><path d="M89 40H217" stroke="#FFFFFF" stroke-width="1.4" opacity=".65"/></g>
+</svg>

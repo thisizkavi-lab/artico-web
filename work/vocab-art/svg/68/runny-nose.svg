@@ -1,0 +1,44 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: runny nose
+ CONTEXTUAL_DEFINITION: A nose that continually releases clear fluid, often during a cold.
+ PEDAGOGICAL_ARCHETYPE: a person dabbing beneath the nostrils with a tissue
+ SYNONYM_GUARD: Keep the tissue below the nose and the person calm; a sneeze covers nose and mouth in a sudden burst.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A tired person gently dabs under the nose with a folded tissue, with a tissue box and one small clear drip cue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:runny nose" data-archetype="nasal congestion and tissue">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="95" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M59 42H102V101H59Z" fill="#D9D0C2"/><path d="M65 48H96V95H65Z" fill="#A9B9B4"/><path d="M207 41H250V101H207Z" fill="#E3DDD2"/><path d="M214 47H243V95H214Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M80 145H224" stroke="#8C725A" stroke-width="1.1"/><circle cx="91" cy="145" r="2" fill="#D6A64C"/><circle cx="213" cy="145" r="2" fill="#B85E5A"/>
+  <path d="M190 126H226V145H190Z" fill="#D6A64C"/><path d="M193 122Q208 114 223 122L226 128H190Z" fill="#F6E5CE" stroke="#8C725A" stroke-width="1"/>
+  <path d="M203 121Q205 112 211 118M214 121Q217 111 220 117" fill="none" stroke="#F6E5CE" stroke-width="1.2"/>
+  <ellipse cx="151" cy="149" rx="70" ry="3" fill="#F6E5CE" opacity=".6"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="52" r="13" fill="#D29A78"/><path d="M138 51Q139 35 152 36Q165 37 164 54L158 44L140 47Z" fill="#26384A"/>
+  <path d="M132 69Q151 61 170 69L177 116H125Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M136 75L126 65L140 57M167 75L182 88L180 103" fill="none" stroke="#D29A78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140 59Q137 57 138 54L142 52L146 56L146 61L143 64Z" fill="#D29A78" stroke="#8F5F57" stroke-width=".8"/>
+  <path d="M130 114L127 146M171 114L176 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- tissue is held just below the nostrils -->
+  <path d="M141 62L151 58L161 62L158 68L144 68Z" fill="#F6E5CE" stroke="#8C725A" stroke-width="1"/>
+  <path d="M144 62L151 60L158 62M146 65L151 63L156 65" fill="none" stroke="#D6D0C4" stroke-width=".9"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 49Q149 51 152 49M156 49L160 48M145 60Q151 57 157 60" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M148 51Q151 49 154 51M150 54Q151 55 152 54" stroke="#8F5F57" stroke-width="1" fill="none"/>
+  <path d="M151 54Q149 57 152 59" stroke="#8FC5D0" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M154 54L155 57" stroke="#8FC5D0" stroke-width="1"/>
+  <path d="M136 76L142 80M166 76L161 80M132 108L139 112M169 108L163 112" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M142 120Q150 124 158 120M147 129L154 131" stroke="#A9C0C1" stroke-width="1" fill="none"/>
+  <circle cx="188" cy="111" r="1.6" fill="#D6A64C"/><circle cx="193" cy="116" r="1.2" fill="#B85E5A"/><path d="M138 64L142 66M160 64L164 66" stroke="#B85E5A" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="88" rx="91" ry="66" fill="#E7C66B" opacity=".065"/><path d="M52 34L67 49M251 32L236 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

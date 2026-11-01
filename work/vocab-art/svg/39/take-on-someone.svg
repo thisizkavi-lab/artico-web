@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: take on someone (phrasal verb; add an employee to a team)
+  CONTEXTUAL_DEFINITION: Agree to employ or bring someone into a work team.
+  PEDAGOGICAL_ART_DIRECTOR: Show a working team making space for a new colleague, using an open chair and a welcome badge rather than an interview table.
+  PEDAGOGICAL_ARCHETYPE: 3 - Team integration
+  SYNONYM_GUARD: Hiring and leaving context selects the employ sense, not fight/compete; avoid repeating the one-to-one interview composition used for hire.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show two coworkers already seated around a curved project table at x=50..170. A team lead at x=207 gestures toward a newly added chair and a newcomer entering from the right with a blue staff badge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:take on someone" data-archetype="team-integration">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="takeon-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6B477"/><stop offset="1" stop-color="#B6784B"/></linearGradient>
+    <linearGradient id="takeon-badge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="takeon-focus"><stop stop-color="#E5F0E1" stop-opacity=".72"/><stop offset="1" stop-color="#7FB07A" stop-opacity="0"/></radialGradient>
+    <filter id="takeon-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="takeon-newcomer" d="M218 130 Q219 111 231 105 L233 96 Q228 90 232 82 Q238 74 247 78 Q256 82 252 92 L249 101 Q262 107 264 128 L259 140 H222 Z"/>
+    <clipPath id="takeon-newcomer-clip"><use href="#takeon-newcomer"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Existing team and open spot at a shared project table -->
+  <g id="layer-context"><path d="M34 147 H271" stroke="#C88446" stroke-width="2"/><path d="M46 124 Q110 112 175 124 L166 137 H54 Z" fill="url(#takeon-table)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M58 137 V151 M157 137 V151" stroke="#965D28" stroke-width="2.5"/><path d="M59 113 V124 M76 113 V124 M59 124 H76 M126 113 V124 M143 113 V124 M126 124 H143" stroke="#64748B" stroke-width="1.4"/><rect x="75" y="92" width="48" height="27" rx="3" fill="#EEF4FA" stroke="#94A3B8" stroke-width="1.2"/><path d="M81 99 H117 M81 105 H111" stroke="#CBD5E1" stroke-width="1.1"/><rect x="171" y="106" width="31" height="34" rx="5" fill="#E5F0E1" stroke="#7FB07A" stroke-width="1.5"/><path d="M176 111 H196 V135 H176 Z" fill="#F8FBFE" stroke="#A8D4A2" stroke-width="1.1"/><path d="M185 140 V150 M177 150 H194" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/></g>
+  <!-- 3. Team lead welcomes the new colleague into the open place -->
+  <g id="layer-focal" filter="url(#takeon-shadow)"><circle cx="64" cy="77" r="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M54 76 Q55 65 64 65 Q73 66 74 75 Q68 69 61 71 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M48 111 Q49 91 64 91 Q79 92 80 111 L76 121 H52 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="142" cy="77" r="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M132 75 Q133 65 142 65 Q151 66 152 74 Q146 69 139 71 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1.1"/><path d="M126 111 Q127 91 142 91 Q157 92 158 111 L154 121 H130 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2"/><use href="#takeon-newcomer" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="2.3"/><g clip-path="url(#takeon-newcomer-clip)"><path d="M214 106 Q245 94 268 109 V144 H214Z" fill="#5479AC"/><path d="M226 108 Q241 101 255 107" fill="none" stroke="#BBD2EF" stroke-width="2.4"/></g><ellipse cx="242" cy="88" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M234 86 Q235 76 243 76 Q251 77 252 85 Q246 80 240 82 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1"/><use href="#takeon-newcomer" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M211 114 Q200 105 188 104 L181 110 L195 119 L216 126 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M183 105 Q177 103 173 108 L178 114 L185 112 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><path d="M158 109 Q168 102 180 106 L187 111 L183 117 L170 114 L159 119 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M182 107 Q188 106 191 111 L187 116 L181 114 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. Badge marks the person now joining the staff -->
+  <g id="layer-details"><rect x="211" y="99" width="15" height="21" rx="2" fill="url(#takeon-badge)" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="218" cy="105" r="2" fill="#F2C14E" stroke="#64748B" stroke-width=".8"/><path d="M215 111 H221 M215 115 H220" stroke="#64748B" stroke-width=".9"/><path d="M166 91 C184 86 199 88 211 98" fill="none" stroke="#7FB07A" stroke-width="2" stroke-dasharray="3 3"/><path d="M205 93 L213 99 L204 100 Z" fill="#7FB07A"/><circle cx="107" cy="119" r="3" fill="#F2C14E"/><path d="M105 118 Q107 114 109 118" fill="none" stroke="#965D28" stroke-width=".8"/></g>
+  <!-- 5. Soft green focus on making room for a new teammate -->
+  <g id="layer-lighting"><ellipse cx="205" cy="108" rx="53" ry="42" fill="url(#takeon-focus)"/><ellipse cx="204" cy="111" rx="38" ry="30" fill="none" stroke="#7FB07A" stroke-width="1.3" stroke-dasharray="4 4"/><path d="M239 77 H247" stroke="#F5BFA3" stroke-width="1.4" stroke-linecap="round"/></g>
+</svg>

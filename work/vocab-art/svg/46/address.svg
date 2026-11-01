@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: address
+  CONTEXTUAL_DEFINITION: The location details used to identify and find a destination.
+  PEDAGOGICAL_ART_DIRECTOR: Pair a specific house marked on a neighborhood map with a blank envelope pointing to that same location, without legible address text.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with functional context
+  SYNONYM_GUARD: Teach a physical destination address rather than an email address or an address in a speech.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Map panel occupies x=16..194, y=20..171, with highlighted home at (145,85); large unmarked envelope sits in foreground x=177..280, y=108..161, joined by a short route pin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:address" data-archetype="hero-object-context">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="address-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6EFDD"/><stop offset="1" stop-color="#C8DCC3"/></linearGradient>
+    <linearGradient id="address-envelope" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF4"/><stop offset="1" stop-color="#E8E3D7"/></linearGradient>
+    <radialGradient id="address-halo"><stop stop-color="#F2C14E" stop-opacity=".52"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="address-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 163H304V192H0Z" fill="#E7E0D4"/><path d="M0 163H304" stroke="#A79E8E" stroke-width="1.5"/></g>
+  <g id="layer-context"><path d="M16 20H196V159H16Z" fill="url(#address-map)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M22 58H190M22 113H190M72 24V156M131 23V157M177 23V156" stroke="#A8B8A5" stroke-width="1.4"/><path d="M17 88H195M101 20V159" stroke="#67798A" stroke-width="11"/><path d="M18 88H194M101 22V157" stroke="#F8F6EF" stroke-width="1.3" stroke-dasharray="6 7"/><rect x="31" y="31" width="26" height="19" rx="3" fill="#D6B996" stroke="#766554" stroke-width="1.4"/><rect x="151" y="124" width="31" height="22" rx="3" fill="#A5BFCE" stroke="#526A7A" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#address-shadow)"><ellipse cx="148" cy="81" rx="51" ry="52" fill="url(#address-halo)"/><path d="M122 73L148 55L174 73V110H122Z" fill="#DAB991" stroke="#1E2A3B" stroke-width="2.3"/><path d="M117 74L148 50L179 74Z" fill="#795F49" stroke="#1E2A3B" stroke-width="2"/><rect x="130" y="81" width="15" height="16" fill="#A8CEDB" stroke="#536A7D" stroke-width="1.2"/><rect x="153" y="81" width="14" height="29" fill="#5C483A" stroke="#1E2A3B" stroke-width="1.3"/><path d="M148 55C137 55 131 62 131 73C131 87 148 103 148 103C148 103 165 87 165 73C165 62 159 55 148 55Z" fill="none" stroke="#F2C14E" stroke-width="2.4"/><circle cx="148" cy="72" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M184 128L271 115L288 153L197 170Z" fill="url(#address-envelope)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M187 130L239 153L286 117M196 168L229 144M270 160L241 144" fill="none" stroke="#8393A0" stroke-width="1.6"/><path d="M207 135H233M205 142H224" stroke="#AAB4B6" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M167 89C186 93 191 102 201 114" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/><path d="M167 89C186 93 191 102 201 114" fill="none" stroke="#4A72B2" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="3 5"/><circle cx="184" cy="100" r="3" fill="#F2C14E"/><path d="M26 145H83M143 36H185" stroke="#FFFFFF" stroke-width="1.3" opacity=".75"/><ellipse cx="234" cy="173" rx="48" ry="5" fill="#AAA394" opacity=".48"/></g>
+  <g id="layer-lighting"><path d="M20 24H113" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="148" cy="81" rx="57" ry="58" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".62"/><path d="M188 132L239 156L282 118" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 65 - Movies and plays
+  WORD: plays (performance)
+  CONTEXTUAL_DEFINITION: Actors performing a scripted play on a theater stage before an audience.
+  PEDAGOGICAL_ARCHETYPE: Adapted exact-context performance or film scene.
+  SYNONYM_GUARD: The actors and stage action should read as a live play performance; do not depict a board game.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two stage performers in a curtained proscenium with seated audience silhouettes below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:plays (performance)" data-archetype="lesson65-plays">
+ <defs><style>:root{--c-bg-1:#3E4057;--c-bg-2:#514A5D;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#28384A;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="play-stage" x2="0" y2="1"><stop stop-color="#5B3549"/><stop offset="1" stop-color="#302E42"/></linearGradient><linearGradient id="play-curtain" x2="0" y2="1"><stop stop-color="#B75D61"/><stop offset="1" stop-color="#7D3749"/></linearGradient><filter id="seeplay-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#111D2B" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#play-stage)"/><path d="M0 150H304V192H0Z" fill="#202D3C"/><path d="M0 150H304" stroke="#D2A463" stroke-width="1.4" fill="none"/><path d="M17 21H287V130H17Z" fill="#C69362"/><path d="M25 31H279V128H25Z" fill="#394C5D"/><path d="M30 31Q49 50 68 31Q87 51 106 31Q125 51 144 31Q163 51 182 31Q201 51 220 31Q239 51 258 31Q269 43 279 31V48H25V31Z" fill="url(#play-curtain)"/><path d="M25 48Q49 65 72 48V126H25Z" fill="url(#play-curtain)"/><path d="M279 48Q255 65 232 48V126H279Z" fill="url(#play-curtain)"/><path d="M25 128H279V136H25Z" fill="#D6A968"/></g>
+ <g id="layer-context"><path d="M0 159Q15 143 31 159Q47 141 64 159Q81 143 97 159Q113 140 130 159Q146 142 163 159Q180 141 196 159Q213 143 230 159Q247 140 264 159Q281 142 304 157V192H0Z" fill="#182735"/><path d="M27 155V174M54 157V172M81 155V175M225 155V175M253 157V174M278 155V172" stroke="#273C4B" stroke-width="2" fill="none"/><circle cx="48" cy="152" r="8" fill="#182735"/><circle cx="252" cy="152" r="8" fill="#182735"/><ellipse cx="152" cy="153" rx="112" ry="5" fill="#111D2B" opacity=".2"/></g>
+ <g id="layer-focal" filter="url(#seeplay-shadow)">
+  <circle cx="113" cy="69" r="10" fill="#D79D79"/><path d="M104 69Q105 59 114 59Q123 60 123 70L117 65L107 66Z" fill="#43353B"/><path d="M99 81Q113 75 127 81L131 112H95Z" fill="#D4866D" stroke="#765748" stroke-width="1.1"/><path d="M102 87L89 97L94 102L105 96m18-9 12 10-5 5-12-8" fill="#D79D79" stroke="#744E45" stroke-width="1" stroke-linejoin="round"/><path d="M105 111L100 128m21-17 6 17" stroke="#28384A" stroke-width="2.5" fill="none"/><path d="M106 58L112 48L118 58Z" fill="#E4BB68" stroke="#9A7442" stroke-width=".8"/><path d="M105 57H119" stroke="#E4BB68" stroke-width="2" fill="none"/>
+  <circle cx="189" cy="70" r="10" fill="#B87862"/><path d="M180 70Q181 60 190 60Q199 61 199 71L193 66L183 67Z" fill="#493F3A"/><path d="M176 82Q189 76 202 82L207 112H172Z" fill="#718C84" stroke="#405B61" stroke-width="1.1"/><path d="M177 85L163 100L169 105L184 93m17-8 10 12-5 5-12-9" fill="#B87862" stroke="#6F4E49" stroke-width="1" stroke-linejoin="round"/><path d="M179 110L173 128m24-18 5 18" stroke="#28384A" stroke-width="2.5" fill="none"/><path d="M173 80Q190 72 207 82L212 105Q193 115 171 103Z" fill="#384A5D" opacity=".85"/><path d="M165 88l8-7m33 2 8 8" stroke="#D5B576" stroke-width="1.1" fill="none"/>
+  <path d="M42 137H262" stroke="#D5B071" stroke-width="1.6" fill="none"/><path d="M51 62q7-7 13 0m175 0q7-7 13 0" stroke="#E4BB68" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-details"><circle cx="83" cy="57" r="1.3" fill="#F4D57F"/><circle cx="221" cy="55" r="1.3" fill="#F4D57F"/><path d="M35 42h38m157 0h38" stroke="#E2B27A" stroke-width="1" fill="none" opacity=".7"/><circle cx="142" cy="52" r="1.4" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><ellipse cx="153" cy="88" rx="87" ry="53" fill="#E4BB68" opacity=".1"/><path d="M37 45q28 34 47 78m183-78q-28 34-47 78" stroke="#FFE5A8" stroke-width="1.4" fill="none" opacity=".4"/></g>
+</svg>

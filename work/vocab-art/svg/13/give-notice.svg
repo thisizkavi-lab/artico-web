@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: give notice (Verb phrase)
+  CONTEXTUAL_DEFINITION: Formally tell a landlord in advance that you plan to leave a rental home.
+  PEDAGOGICAL_ARCHETYPE: 4 — Communication action with time cue
+  SYNONYM_GUARD: Show the renter handing a written notice early enough to plan; move out is the later physical removal of belongings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Rental home doorway and small calendar with several future squares.
+    - Context_Layer: Landlord waits at the door.
+    - Focal_Layer: Tenant hands a blank formal notice sheet to landlord.
+    - Details_Layer: Forward calendar arrow signals advance warning.
+    - Lighting_Layer: Blue directional cue leads from notice to future calendar date.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:give notice" data-archetype="advance-notice-scene">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF2"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 147H304V192H0Z" fill="#D8C5A8"/><path d="M0 147H304" stroke="#8A5A35" stroke-width="2"/><path d="M31 37H92V102H31Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M31 37H92V49H31Z" fill="#A85B53"/><path d="M42 57H53V68H42ZM57 57H68V68H57ZM72 57H83V68H72ZM42 73H53V84H42ZM57 73H68V84H57ZM72 73H83V84H72Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width=".8"/><path d="M73 73H84V84H73Z" fill="#F2C14E"/><ellipse cx="151" cy="164" rx="112" ry="6" fill="#958977" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M226 39V145M284 39V145M226 39H284" stroke="#64748B" stroke-width="2"/><path d="M228 42H240V144H228Z" fill="#C88446" opacity=".6"/><path d="M221 144H291" stroke="#C88446" stroke-width="4"/><path d="M102 119H202V145H102Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="122" cy="82" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M112 80Q112 67 123 67Q133 68 132 81L127 74H116Z" fill="#3A2E2B"/><path d="M111 96Q122 89 133 96L139 120H105Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M115 98L138 107L154 106" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M115 98L138 107L154 106" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M116 119L112 148M131 119L137 148" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M116 119L112 148M131 119L137 148" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><circle cx="203" cy="82" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.7"/><path d="M193 80Q193 67 204 67Q214 68 213 81L208 74H197Z" fill="#57463E"/><path d="M192 96Q203 89 214 96L220 120H186Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M196 98L178 108L157 106" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M196 98L178 108L157 106" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M197 119L193 148M211 119L217 148" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M197 119L193 148M211 119L217 148" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M143 87L163 81L171 105L150 111Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.7"/><path d="M149 91L163 87M151 97L165 93" stroke="#94A3B8" stroke-width="1.1"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M91 51H101M103 56H113" stroke="#4A72B2" stroke-width="1.5"/><path d="M160 75L169 71M162 81L171 77" stroke="#F2C14E" stroke-width="1.4"/><path d="M152 113H197" stroke="#D89A6C" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M83 111Q116 129 151 112Q197 88 250 102" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M243 97L252 102L243 106" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="78" cy="79" r="26" fill="#FEF3C7" opacity=".1"/></g>
+</svg>

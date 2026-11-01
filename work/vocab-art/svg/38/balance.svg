@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: balance (noun; bank account balance)
+  CONTEXTUAL_DEFINITION: The amount of money currently remaining in an account after payments and deposits.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with remaining-funds focus
+  SYNONYM_GUARD: Japanese gloss lists scales, but finance siblings lock this entry to account funds; show one remaining amount rather than a weighing scale or full transaction history.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Number-free account screen over a passbook; incoming and outgoing mini arrows lead to one highlighted stack of remaining coins in an account tray.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:balance" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="balance-screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="balance-gold"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="balance-book" d="M60 70 Q60 62 69 62 H230 Q239 62 239 70 V137 Q239 144 230 144 H69 Q60 144 60 137 Z"/>
+    <clipPath id="balance-clip"><use href="#balance-book"/></clipPath>
+    <filter id="balance-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="152" width="304" height="40" fill="#EEE7DA"/><path d="M0 152 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="163" rx="91" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Personal banking passbook context -->
+  <g id="layer-context"><path d="M42 143 H263" stroke="#C88446" stroke-width="2.2"/><path d="M48 148 H257" stroke="#E3AC77" stroke-width="1.5"/><path d="M80 74 Q149 64 219 74 V133 Q151 124 80 134 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M84 81 Q151 72 215 81" fill="none" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 3. Primary account balance as funds remaining -->
+  <g id="layer-focal" filter="url(#balance-shadow)"><use href="#balance-book" fill="url(#balance-screen)" stroke="#1E2A3B" stroke-width="2.6"/><g clip-path="url(#balance-clip)"><rect x="69" y="74" width="162" height="60" rx="4" fill="#F8FBFE"/><path d="M82 89 H125 M82 97 H111 M82 106 H131" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round"/><path d="M158 116 H219 V124 H158 Z" fill="#E5E9F0"/><ellipse cx="181" cy="114" rx="13" ry="6" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.7"/><path d="M168 107 V114 C168 122 194 122 194 114 V107" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="181" cy="107" rx="13" ry="6" fill="url(#balance-gold)" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="208" cy="115" rx="9" ry="4.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M72 75 Q145 65 225 75" fill="none" stroke="#FFFFFF" stroke-width="2.5"/></g><path d="M144 76 V137" stroke="#5479AC" stroke-width="2" opacity=".55"/></g>
+  <!-- 4. One incoming and one outgoing transaction cue -->
+  <g id="layer-details"><path d="M42 96 H62" stroke="#7FB07A" stroke-width="3" stroke-linecap="round"/><path d="M58 91 L65 96 L58 101 Z" fill="#7FB07A"/><path d="M238 112 H260" stroke="#CE3D4E" stroke-width="3" stroke-linecap="round"/><path d="M256 107 L263 112 L256 117 Z" fill="#CE3D4E"/><circle cx="44" cy="96" r="7" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="267" cy="112" r="7" fill="#F2A472" stroke="#1E2A3B" stroke-width="1.4"/><path d="M45 85 L45 79 M258 127 L258 133" stroke="#94A3B8" stroke-width="1.6"/></g>
+  <!-- 5. Focus halo on available funds -->
+  <g id="layer-lighting"><ellipse cx="181" cy="109" rx="25" ry="23" fill="#FEF3C7" opacity=".45"/><ellipse cx="181" cy="109" rx="25" ry="23" fill="none" stroke="#D97706" stroke-width="1.7" stroke-dasharray="4 4"/><path d="M169 103 Q173 99 178 100" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M250 60 L250 69 M246 64 H254" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

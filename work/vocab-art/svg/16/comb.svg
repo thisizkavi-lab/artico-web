@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: comb (Noun)
+  CONTEXTUAL_DEFINITION: A flat grooming tool with a row of teeth used to arrange hair.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: A flat spine with a single row of rigid teeth distinguishes it from a brush.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper and shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Large tortoiseshell comb angled diagonally.
+    - Details_Layer: Even teeth and rounded handle end.
+    - Lighting_Layer: Warm glossy streak.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:comb" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="153" rx="103" ry="17" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="93" rx="112" ry="67" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M73 44Q75 36 84 39L236 91Q246 95 243 104L235 125Q232 134 222 130L69 77Q61 73 65 64Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M69 78L233 135L224 164Q221 171 214 168L59 113Q52 110 55 103Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g stroke="#1E2A3B" stroke-width="1.7"><path d="M66 113L60 135M78 117L72 139M90 121L84 143M102 125L96 148M114 129L108 152M126 133L120 156M138 137L132 160M150 141L144 164M162 145L156 168M174 149L168 171M186 153L180 175M198 157L192 172M210 161L204 169"/></g>
+  <path d="M77 53L217 101" stroke="#D5A17A" stroke-width="3" stroke-linecap="round"/><ellipse cx="78" cy="56" rx="8" ry="4" transform="rotate(20 78 56)" fill="#E8C59E" opacity=".7"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M57 92Q45 73 54 59" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

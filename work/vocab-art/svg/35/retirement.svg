@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="35:retirement" data-archetype="editorial-workplace-scene">
+<defs>
+<linearGradient id="wallWash" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9F0F5"/></linearGradient>
+<linearGradient id="workBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7395C5"/><stop offset="1" stop-color="#3E5F91"/></linearGradient>
+<linearGradient id="timber" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#E0A96C"/><stop offset="1" stop-color="#A96A3D"/></linearGradient>
+<filter id="softShadow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>
+<!-- 1. Stage Canvas & Ground Shadow -->
+<rect width="304" height="192" fill="url(#wallWash)"/><path d="M0 151H304V192H0Z" fill="#E8E0D3"/><path d="M0 151H304" stroke="#1E2A3B" stroke-width="2"/>
+<ellipse cx="152" cy="176" rx="112" ry="6" fill="#BFC7CE" opacity=".28" filter="url(#softShadow)"/>
+<!-- 2. Background Context / Muted Whole / Halo -->
+<path d="M34 145C52 124 79 122 100 145V166H34Z" fill="#9DBF9C" stroke="#1E2A3B" stroke-width="2"/><path d="M203 144C222 124 250 124 271 145V166H203Z" fill="#AFC59B" stroke="#1E2A3B" stroke-width="2"/><circle cx="61" cy="130" r="15" fill="#6F9878"/><circle cx="86" cy="134" r="12" fill="#8FB17F"/><circle cx="230" cy="130" r="15" fill="#6F9878"/><circle cx="254" cy="134" r="12" fill="#8FB17F"/>
+<!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+<path d="M107 166C110 137 122 121 147 118L168 127 177 166Z" fill="#9B6AA0" stroke="#1E2A3B" stroke-width="2.5"/><path d="M128 66C130 50 142 44 156 47 169 50 174 62 171 78L167 94C164 105 154 110 143 106 132 101 126 88 128 72Z" fill="#E0B08F" stroke="#1E2A3B" stroke-width="2.4"/><path d="M125 64C129 49 141 43 155 45 166 46 174 53 177 62L165 58 153 57 140 62Z" fill="#9C9B92" stroke="#1E2A3B" stroke-width="2.1"/><path d="M138 77Q143 74 148 77M156 77Q161 74 166 77M142 90Q150 94 158 90" fill="none" stroke="#1E2A3B" stroke-width="1.8"/>
+<!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+<path d="M54 137C57 118 69 109 87 108L102 116 105 145H52Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M58 117C62 106 72 101 83 102 93 103 100 110 102 119" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M68 132L61 114M81 132L90 112" stroke="#6F9878" stroke-width="3" stroke-linecap="round"/><path d="M195 114L208 104 221 114 217 130 195 130Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"/><path d="M201 119H215" stroke="#F8F5ED" stroke-width="2"/>
+<!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+<ellipse cx="150" cy="175" rx="101" ry="6" fill="#C6B9A7" opacity=".38"/><circle cx="183" cy="53" r="15" fill="#F4D98E"/><path d="M178 53H188M183 48V58" stroke="#F8F5ED" stroke-width="2"/>
+</svg>

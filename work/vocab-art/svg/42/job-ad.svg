@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: job ad
+  CONTEXTUAL_DEFINITION: A public notice advertising a job opening.
+  PEDAGOGICAL_ART_DIRECTOR: Show a printed vacancy advertisement on a community or career noticeboard with a clear work-role image.
+  PEDAGOGICAL_ARCHETYPE: 5 - Printed vacancy notice
+  SYNONYM_GUARD: Use a printed advertisement surface; distinguish it from the structured online job posting shown on a digital screen.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a wooden noticeboard at x=48..257, y=29..134. Pin one large white printed job notice at x=97..207 with a bold color band, simple briefcase icon, and several short non-readable bars; a small person at x=64..102 looks at it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:job ad" data-archetype="printed-job-ad">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ad-board" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="ad-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <radialGradient id="ad-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ad-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="43" y="24" width="219" height="116" rx="5" fill="url(#ad-board)" stroke="#71451F" stroke-width="1.7"/><path d="M55 37 H250 M55 47 H250 M55 57 H250 M55 67 H250 M55 77 H250 M55 87 H250 M55 97 H250 M55 107 H250 M55 117 H250" stroke="#965D28" stroke-opacity=".3" stroke-width="1"/><path d="M30 145 H274" stroke="#64748B" stroke-width="1.1"/><path d="M54 140 V155 M252 140 V155" stroke="#71451F" stroke-width="2.5"/></g>
+  <g id="layer-focal" filter="url(#ad-shadow)"><rect x="102" y="31" width="101" height="102" rx="2" fill="url(#ad-paper)" stroke="#1E2A3B" stroke-width="1.5"/><rect x="111" y="40" width="83" height="11" rx="2" fill="#5479AC"/><path d="M118 45 H186" stroke="#FFFFFF" stroke-width="1.1"/><rect x="119" y="60" width="30" height="27" rx="3" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1"/><path d="M125 68 H143 V81 H125 Z" fill="#8EB0DE" stroke="#3D5F91" stroke-width="1"/><path d="M130 68 V64 Q134 59 138 64 V68" fill="none" stroke="#3D5F91" stroke-width="1.2"/><path d="M157 62 H189 M157 68 H184 M157 74 H187 M157 80 H180" stroke="#94A3B8" stroke-width="1"/><path d="M113 96 H192 M113 102 H184 M113 109 H190 M113 115 H177" stroke="#64748B" stroke-width="1"/><circle cx="110" cy="40" r="3" fill="#F2C14E" stroke="#D99A2B" stroke-width=".7"/><circle cx="195" cy="40" r="3" fill="#F2C14E" stroke="#D99A2B" stroke-width=".7"/><path d="M60 126 Q62 105 73 100 L74 92 Q70 88 72 81 Q79 73 88 76 Q96 79 93 89 L90 96 Q103 101 105 124 L102 135 H64 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="84" cy="84" rx="7.5" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M76 82 Q78 75 85 75 Q93 76 95 82 Q88 79 82 80 Z" fill="#3D342D"/><path d="M93 107 L101 102" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M150 26 L154 21 M156 26 L160 21" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/><circle cx="152" cy="59" r="2" fill="#F2C14E"/><path d="M110 92 H194" stroke="#CBD5E1" stroke-width="1"/><path d="M111 126 H196" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="83" rx="100" ry="66" fill="url(#ad-halo)" opacity=".22"/><path d="M105 34 H200" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

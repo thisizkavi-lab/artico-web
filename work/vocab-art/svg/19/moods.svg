@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 19 — Feelings and moods
+  WORD: moods (Abstract Noun)
+  CONTEXTUAL_DEFINITION: The broader emotional atmosphere that colors how someone feels over time.
+  PEDAGOGICAL_ARCHETYPE: 6 — High-contrast geometric metaphor
+  SYNONYM_GUARD: One person sits beneath a broad sky changing from clear to overcast and rainy, making mood an overall atmosphere rather than several separate short feelings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: A single continuous outdoor ground and expansive sky.
+    - Context_Layer: Wide sunlit, cloudy, and rainy areas sharing one horizon.
+    - Focal_Layer: Calmly seated person centered under the shifting sky canopy.
+    - Details_Layer: Color transitions, rain, sun rays, and a softly shaded face.
+    - Lighting_Layer: Broad arch spanning most of the card to suggest atmosphere.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:moods" data-archetype="emotional-atmosphere-metaphor">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="moods-sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FEF3C7"/><stop offset=".48" stop-color="#EEF4FA"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient>
+    <linearGradient id="moods-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient>
+    <filter id="moods-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#moods-sky)"/><path d="M0 145Q69 139 152 145T304 141V192H0Z" fill="#DCEAD6"/><path d="M0 147Q80 141 152 147T304 143" fill="none" stroke="#7B8A9E" stroke-width="1.5"/><ellipse cx="152" cy="175" rx="116" ry="7" fill="#C3DAB9"/></g>
+  <g id="layer-context"><circle cx="60" cy="52" r="18" fill="#F2C14E" stroke="#D49B2A" stroke-width="2"/><path d="M60 24V16M60 88V80M32 52H24M96 52H88M40 32L34 26M80 78L86 84M80 32L86 26" stroke="#D49B2A" stroke-width="2.4" stroke-linecap="round"/><path d="M186 53Q186 43 198 43Q205 31 219 38Q228 33 237 41Q248 41 249 52L249 61H186Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2"/><path d="M232 48Q245 38 257 47Q269 46 271 57V64H231Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M222 72L219 81M239 70L236 82M256 72L253 81" stroke="#7CC4FA" stroke-width="2.4" stroke-linecap="round"/><path d="M51 109Q75 97 100 109" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#moods-shadow)"><ellipse cx="150" cy="113" rx="57" ry="56" fill="#FFFFFF" opacity=".38"/><path d="M110 178Q114 145 129 134Q150 125 172 134Q190 145 195 178Z" fill="url(#moods-shirt)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M132 138L151 151L170 138" fill="none" stroke="#8EB0DE" stroke-width="2"/><rect x="141" y="116" width="20" height="22" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2"/><circle cx="151" cy="88" r="31" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.6"/><path d="M121 83Q123 59 147 57Q174 57 181 81Q165 67 149 70Q132 69 123 87Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M135 87Q140 91 145 87M158 87Q163 91 168 87" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/><path d="M140 104Q151 108 162 104" fill="none" stroke="#1E2A3B" stroke-width="2.1" stroke-linecap="round"/><path d="M125 144Q110 152 104 165M176 144Q190 151 196 164" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M125 144Q110 152 104 165M176 144Q190 151 196 164" fill="none" stroke="#D89A6C" stroke-width="5.5" stroke-linecap="round"/><path d="M104 165Q111 168 116 165M191 164Q197 168 202 164" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M88 112Q99 103 111 112" fill="none" stroke="#FEF9C3" stroke-width="2.2" stroke-linecap="round"/><path d="M200 97Q203 101 200 105M217 95Q220 99 217 103M234 96Q237 100 234 104" fill="none" stroke="#7CC4FA" stroke-width="2" stroke-linecap="round"/><path d="M54 97Q60 94 67 97" fill="none" stroke="#D49B2A" stroke-width="1.7"/><path d="M129 65Q150 59 169 64" fill="none" stroke="#ECC09D" stroke-width="2"/><path d="M22 123Q64 109 101 116M202 120Q245 108 283 115" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".55"/></g>
+  <g id="layer-lighting"><path d="M29 121Q151 5 276 120" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity=".68"/><path d="M38 127Q152 19 266 126" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 6" opacity=".32"/><ellipse cx="151" cy="88" rx="36" ry="39" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".5"/></g>
+</svg>

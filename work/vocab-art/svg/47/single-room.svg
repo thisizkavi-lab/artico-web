@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: single room
+  CONTEXTUAL_DEFINITION: A hotel bedroom intended for one guest and furnished with one single bed.
+  PEDAGOGICAL_ART_DIRECTOR: Make one narrow single bed with one pillow dominate the compact guest room.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show one narrow bed for one person, not one wide double bed or two twin beds.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact hotel room contains a narrow single bed, one pillow, one nightstand, and one guest's suitcase, leaving open floor beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:single room" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="single-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEE9DF"/><stop offset="1" stop-color="#D4D1C7"/></linearGradient>
+  <linearGradient id="single-linen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#BFCFD5"/></linearGradient>
+  <linearGradient id="single-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8BA7B7"/><stop offset="1" stop-color="#506D84"/></linearGradient>
+  <filter id="single-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M18 17H286V149H18Z" fill="url(#single-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M18 149H286V184H18Z" fill="#B9B7AC"/><path d="M25 168H279" stroke="#EAE5DA" stroke-width="1.2"/><rect x="151" y="29" width="91" height="48" fill="#A9C8CF" stroke="#455E68" stroke-width="1.5"/><path d="M196 29V77M151 53H242" stroke="#526D77" stroke-width="1.2"/><path d="M143 27V82M250 27V82" stroke="#94785B" stroke-width="3.6"/><path d="M140 27H146V82H140M247 27H253V82H247" fill="#AD8D69"/></g>
+ <g id="layer-context"><path d="M29 35H68V148H29Z" fill="#84664D" stroke="#1E2A3B" stroke-width="1.5"/><path d="M35 42H63V145H35Z" fill="#9B7C5D" stroke="#D4BA92" stroke-width="1.1"/><circle cx="58" cy="96" r="2.4" fill="#F2C14E"/><rect x="226" y="107" width="48" height="39" fill="#917452" stroke="#1E2A3B" stroke-width="1.3"/><path d="M221 105H279" stroke="#D3B68D" stroke-width="3"/><path d="M233 146V154M267 146V154" stroke="#604A39" stroke-width="2.7"/><path d="M238 99H263V105H238Z" fill="#475B68"/><path d="M242 92H259V99H242Z" fill="#C5D9D9"/></g>
+ <g id="layer-focal" filter="url(#single-shadow)"><path d="M91 72H196V157H91Z" fill="#536C82" stroke="#1E2A3B" stroke-width="1.8"/><path d="M97 77H190V115H97Z" fill="url(#single-linen)" stroke="#758A91" stroke-width="1.2"/><path d="M101 84Q117 76 134 84V108H101Z" fill="#FFFDF5" stroke="#A1B0B2" stroke-width="1.1"/><path d="M97 116H190V151H97Z" fill="url(#single-cover)" stroke="#314D65" stroke-width="1.2"/><path d="M105 126H183M105 143H183" stroke="#BDD0D4" stroke-width="1.1"/><path d="M103 157V167M184 157V167" stroke="#624D3B" stroke-width="3.4"/><rect x="209" y="130" width="20" height="30" rx="3" fill="#526274" stroke="#1E2A3B" stroke-width="1.3"/><path d="M213 130V126Q213 121 219 121Q225 121 225 126V130" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M213 141H225M213 154H225" stroke="#93A2A5" stroke-width="1"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="169" rx="104" ry="5" fill="#526274" opacity=".17"/><path d="M154 32H240" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M29 147H276" stroke="#E8E2D7" stroke-width="1"/><circle cx="250" cy="92" r="2.2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="110" rx="121" ry="70" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M20 18H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: move out (Verb phrase)
+  CONTEXTUAL_DEFINITION: Leave a home and take your belongings away.
+  PEDAGOGICAL_ARCHETYPE: 4 — Outward carrying action
+  SYNONYM_GUARD: Show an almost empty room and a box crossing outward through the doorway; move in carries belongings into a furnished room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bare room with open exterior door.
+    - Context_Layer: Empty floor and a few faded wall marks show the home is being vacated.
+    - Focal_Layer: Resident carries the last box through the door toward outside.
+    - Details_Layer: Clear outward floor path and trailing empty shelf.
+    - Lighting_Layer: Blue arrow moves from room to outdoors.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:move out" data-archetype="move-out-action">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M233 28H296V145H233Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2.4"/><path d="M241 37H287V140H241Z" fill="#EAF2F7"/><path d="M18 32H209V145H18Z" fill="#F7F5EE" stroke="#CBD5E1" stroke-width="1.5"/><ellipse cx="154" cy="164" rx="106" ry="6" fill="#968977" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M45 57H116V93H45Z" fill="#CDE0E9" stroke="#94A3B8" stroke-width="1.4"/><path d="M50 64H111M50 70H104" stroke="#CBD5E1" stroke-width="1.1"/><path d="M23 119H203V145H23Z" fill="#E3E8F0" opacity=".35"/><path d="M254 140H296" stroke="#7FB07A" stroke-width="5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="188" cy="65" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.8"/><path d="M178 63Q178 50 189 50Q199 51 198 64L193 57H182Z" fill="#57463E"/><path d="M177 79Q188 72 199 79L205 113H171Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2"/><path d="M182 81L170 96L148 93" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M182 81L170 96L148 93" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M196 81L211 94L225 90" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M196 81L211 94L225 90" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M182 111L178 149M197 111L202 149" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M182 111L178 149M197 111L202 149" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M130 77H165V112H130Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="2"/><path d="M135 84H160M135 91H160" stroke="#C18B56" stroke-width="1.3"/><path d="M135 72H158V78H135Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M219 91L231 90M220 97L233 96" stroke="#F2C14E" stroke-width="1.5"/><path d="M43 109H104M43 117H89" stroke="#E3E8F0" stroke-width="1.3"/><path d="M236 144H293" stroke="#FFFFFF" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M97 156Q151 168 215 154Q254 145 270 127" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M265 128L273 124L271 133" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="267" cy="84" r="26" fill="#FEF3C7" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: life ring (Noun)
+  CONTEXTUAL_DEFINITION: A circular throwable flotation device with a rope, kept near water for rescue.
+  PEDAGOGICAL_ART_DIRECTOR: Make the circular shape and central opening unmistakable; include reflective white bands and a perimeter rope.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete safety object
+  SYNONYM_GUARD: This is a throwable ring, not the wearable flotation vest shown by life preserver.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Bright orange life ring lying on sandy shore, with cream panels, a visible rope loop, ocean behind it, and a clear central hole.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:life ring" data-archetype="throwable-life-ring">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="lr-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="lr-water" x2="0" y2="1"><stop stop-color="#83C9C4"/><stop offset="1" stop-color="#438DA1"/></linearGradient><linearGradient id="lr-ring" x2="1" y2="1"><stop stop-color="#F29B5E"/><stop offset="1" stop-color="#C45140"/></linearGradient><filter id="lr-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".25"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lr-sky)"/><path d="M0 92Q75 84 151 93T304 89V133H0Z" fill="url(#lr-water)"/><path d="M0 132Q82 126 160 134T304 129V192H0Z" fill="#E9D3A4"/></g>
+ <g id="layer-context"><circle cx="253" cy="39" r="14" fill="#EBC86F" opacity=".82"/><path d="M0 116Q72 105 143 116T304 112" fill="none" stroke="#DDF3EC" stroke-width="2.2"/><path d="M20 171H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><path d="M23 52q14-9 28 0m202 13q14-9 28 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#lr-shadow)">
+  <circle cx="151" cy="116" r="53" fill="url(#lr-ring)" stroke="#984B3D" stroke-width="2.4"/><circle cx="151" cy="116" r="29" fill="#E4CE9D" stroke="#984B3D" stroke-width="1.8"/>
+  <path d="M138 64Q151 61 164 64L160 87Q151 84 142 87Z" fill="#FFF1D4" stroke="#A85B43" stroke-width="1.3"/><path d="M138 168Q151 171 164 168L160 145Q151 148 142 145Z" fill="#FFF1D4" stroke="#A85B43" stroke-width="1.3"/>
+  <path d="M98 103Q101 91 108 83L127 96Q121 105 120 115Z" fill="#FFF1D4" stroke="#A85B43" stroke-width="1.3"/><path d="M204 103Q201 91 194 83L175 96Q181 105 182 115Z" fill="#FFF1D4" stroke="#A85B43" stroke-width="1.3"/>
+  <circle cx="151" cy="116" r="57" fill="none" stroke="#F8E8C9" stroke-width="2.3" stroke-dasharray="2 2"/><path d="M195 79Q212 72 222 83Q229 91 222 98L216 100" fill="none" stroke="#F4E6C9" stroke-width="3" stroke-linecap="round"/><path d="M218 96l-5 5m10-6-5 5m-4-2 4 5" fill="none" stroke="#B89468" stroke-width="1.3" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M114 77Q125 68 136 66M165 66q16 3 24 14M101 130q5 16 17 24m65 0q13-9 18-24" fill="none" stroke="#FFCF9A" stroke-width="1.4"/><path d="M124 115q0-27 27-27m8 2q17 4 22 20" fill="none" stroke="#F6B27B" stroke-width="1.2"/><circle cx="253" cy="39" r="1.4" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M72 154l8-2m153 4 8-3" fill="none" stroke="#C69F66" stroke-width="1"/></g>
+ <g id="layer-lighting"><path d="M110 79Q126 65 142 64M105 90Q109 83 116 78M164 66q12 2 18 8" fill="none" stroke="#FFF5DF" stroke-width="1.4" opacity=".75"/><circle cx="142" cy="97" r="1.2" fill="#FFF8E7"/><circle cx="253" cy="39" r="1.2" fill="#FFF8E7"/></g>
+</svg>

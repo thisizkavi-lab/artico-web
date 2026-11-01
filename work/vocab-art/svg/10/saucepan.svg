@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: saucepan (Noun)
+  CONTEXTUAL_DEFINITION: A deep cooking pan with a long handle, used to heat soup or sauce.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a deep round pot with straight sides and one long handle, distinct from a spouted kettle or shallow frying pan.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm stovetop.
+    - Context_Layer: Burner beneath the saucepan.
+    - Focal_Layer: Deep pot, long handle, and visible lid.
+    - Details_Layer: Soup, steam, and glass lid knob.
+    - Lighting_Layer: Warm heat glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:saucepan" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 150 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 150 H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="151" cy="168" rx="73" ry="7" fill="#BBAA92"/><ellipse cx="122" cy="151" rx="57" ry="7" fill="none" stroke="#647D8B" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M85 86 H177 V145 Q177 151 170 151 H92 Q85 151 85 145Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.6"/><path d="M91 96 H171 V142 H91Z" fill="#D69A62"/><path d="M176 96 L259 70 Q269 67 272 75 Q275 83 264 87 L180 115Z" fill="#1E2A3B" stroke="#1E2A3B" stroke-width="2"/><path d="M179 100 L264 74" stroke="#8A5A35" stroke-width="8" stroke-linecap="round"/><ellipse cx="131" cy="88" rx="52" ry="11" fill="#DCE3E4" stroke="#1E2A3B" stroke-width="2.3"/><ellipse cx="131" cy="89" rx="42" ry="7" fill="#D69A62"/><path d="M112 75 Q131 58 150 75Z" fill="#DCECFB" fill-opacity="0.65" stroke="#5479AC" stroke-width="1.8"/><circle cx="131" cy="71" r="5" fill="#8A5A35" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-focal"><path d="M113 57 Q108 48 114 42 M130 57 Q126 46 133 39 M147 57 Q149 48 154 44" fill="none" stroke="#CE7B55" stroke-width="2.1" stroke-linecap="round"/><path d="M100 109 Q131 115 163 109" fill="none" stroke="#F2C14E" stroke-width="2"/><path d="M94 151 V157 M168 151 V157" stroke="#647D8B" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M95 94 H167" stroke="#FFFFFF" stroke-width="1.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

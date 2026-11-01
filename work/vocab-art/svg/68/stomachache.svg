@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: stomachache / stomach ache
+ CONTEXTUAL_DEFINITION: Pain in the stomach or abdomen.
+ PEDAGOGICAL_ARCHETYPE: a person seated and pressing a sore abdomen
+ SYNONYM_GUARD: Keep the discomfort in the belly; sick is nausea and appendicitis is later localized to the lower-right side.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A seated person leans forward with both hands over the middle of the abdomen, marked by a gentle warm cramp cue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:stomachache / stomach ache" data-archetype="abdominal pain">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="152" rx="92" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M57 41H99V100H57Z" fill="#D9D0C2"/><path d="M63 47H93V94H63Z" fill="#A9B9B4"/><path d="M210 40H251V101H210Z" fill="#E3DDD2"/><path d="M217 47H244V95H217Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M75 121H227V145H75Z" fill="#8C725A"/><path d="M82 145V154M219 145V154" stroke="#725F4B" stroke-width="2"/>
+  <path d="M68 119H232" stroke="#F6E5CE" stroke-width="2"/><ellipse cx="151" cy="153" rx="77" ry="3" fill="#8C725A" opacity=".14"/>
+  <path d="M229 117H254V121H229Z" fill="#597D8B"/><circle cx="234" cy="115" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="48" r="13" fill="#D29A78"/><path d="M138 47Q139 31 152 32Q165 33 164 50L158 40L140 44Z" fill="#26384A"/>
+  <path d="M131 66Q151 58 171 66L178 121H124Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M136 73L124 88L137 101L151 94M167 73L178 88L166 101L152 94" stroke="#D29A78" stroke-width="3.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- both hands press over the center of the belly -->
+  <path d="M137 94Q142 88 148 92L153 98L149 105L142 102L137 106L132 101Z" fill="#D29A78" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M165 94Q160 88 154 92L149 98L153 105L160 102L165 106L170 101Z" fill="#D29A78" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M128 119L126 146M174 119L177 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M143 65L151 73L159 65" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 46Q149 49 153 46M156 46L160 45M145 56Q151 53 157 56" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <ellipse cx="151" cy="98" rx="22" ry="19" fill="#B85E5A" opacity=".13"/><ellipse cx="151" cy="98" rx="14" ry="12" fill="none" stroke="#B85E5A" stroke-width="1" opacity=".55"/>
+  <path d="M151 77Q143 84 151 91Q159 98 151 106M165 79Q159 85 166 91" stroke="#D6A64C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M132 77L138 81M169 77L164 81M139 111L145 114M163 111L157 114" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M141 122Q151 126 161 122M137 128L144 130M159 130L166 128" stroke="#A9C0C1" stroke-width="1" fill="none"/>
+  <circle cx="188" cy="117" r="1.4" fill="#D6A64C"/><circle cx="194" cy="121" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="67" fill="#E7C66B" opacity=".065"/><path d="M50 33L66 49M252 32L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

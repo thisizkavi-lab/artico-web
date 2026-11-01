@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 41 - Work and business idioms
+  WORD: in the red (idiom)
+  CONTEXTUAL_DEFINITION: A business is operating at a financial loss.
+  PEDAGOGICAL_ARCHETYPE: 6 - Declining business balance
+  SYNONYM_GUARD: The red downward trend and nearly empty coin tray show financial loss, not embarrassment, anger, or a red-colored object.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a large blank business chart at x=95..266, y=26..137. A thick crimson line drops into a shaded lower region; a small open coin tray at lower left contains just one coin, and a manager studies the result.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="41:in the red" data-archetype="business-loss">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#CE3D4E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="red-room" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="red-chart" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8FAFC"/></linearGradient>
+    <linearGradient id="red-loss-zone" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#F7D9DE" stop-opacity=".45"/><stop offset="1" stop-color="#CE3D4E" stop-opacity=".18"/></linearGradient>
+    <radialGradient id="red-warning"><stop stop-color="#F4B7C1" stop-opacity=".58"/><stop offset="1" stop-color="#CE3D4E" stop-opacity="0"/></radialGradient>
+    <filter id="red-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#red-room)"/><rect y="151" width="304" height="41" fill="#EAE3D5"/><path d="M0 151 H304" fill="none" stroke="#CFC5B7" stroke-width="1.2"/><ellipse cx="154" cy="170" rx="116" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="89" y="24" width="191" height="119" rx="5" fill="url(#red-chart)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M107 42 V123 H263" fill="none" stroke="#64748B" stroke-width="1.5"/><path d="M108 85 H263 M108 103 H263" fill="none" stroke="#E3E7EC" stroke-width="1"/><path d="M107 101 H263 V123 H107Z" fill="url(#red-loss-zone)"/><path d="M115 49 C145 50 158 61 181 66 C207 72 214 87 237 94 C249 99 255 108 262 116" fill="none" stroke="#CE3D4E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M253 108 L263 118 L265 104" fill="#CE3D4E"/><path d="M134 119 V124 M163 119 V124 M192 119 V124 M221 119 V124 M250 119 V124" fill="none" stroke="#64748B" stroke-width="1"/><ellipse cx="231" cy="105" rx="40" ry="31" fill="url(#red-warning)"/><path d="M105 32 H153" fill="none" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#red-shadow)"><path d="M26 148 Q29 125 43 119 L44 108 Q40 104 42 96 Q46 86 58 87 Q70 88 72 98 L70 110 Q85 116 88 148Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="57" cy="97" rx="9" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M48 95 Q49 85 58 86 Q67 87 67 95 Q58 91 48 95Z" fill="#3A2E2B"/><path d="M62 112 Q76 108 91 102" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/><circle cx="93" cy="101" r="4" fill="#D89A6C" stroke="#1E2A3B" stroke-width=".9"/><path d="M25 134 Q51 124 80 134 L77 148 H29Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.5"/><path d="M30 135 Q52 144 76 135" fill="none" stroke="#64748B" stroke-width="1.2"/><ellipse cx="53" cy="133" rx="7" ry="3" fill="#F2C14E" stroke="#965D28" stroke-width="1.1"/><path d="M33 141 H72" fill="none" stroke="#94A3B8" stroke-width="1"/><path d="M264 68 l-7 13 h7 l-4 12 13-16 h-7 l5-9Z" fill="#CE3D4E" opacity=".75"/></g>
+  <g id="layer-details"><circle cx="134" cy="58" r="2" fill="#CE3D4E"/><circle cx="184" cy="70" r="2" fill="#CE3D4E"/><circle cx="238" cy="95" r="2" fill="#CE3D4E"/><path d="M114 50 H129 M142 61 H154 M191 74 H202" fill="none" stroke="#F3A8B4" stroke-width="1.2"/><path d="M106 137 H264" fill="none" stroke="#CBD5E1" stroke-width=".9"/><path d="M50 92 Q57 88 64 92" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M22 128 Q50 121 83 129" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><path d="M95 29 H188" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/><path d="M112 48 Q146 47 176 65" fill="none" stroke="#FFFFFF" stroke-width="1"/><ellipse cx="232" cy="101" rx="30" ry="23" fill="#FFFFFF" opacity=".05"/></g>
+</svg>

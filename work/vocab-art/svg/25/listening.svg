@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: listening (Noun / gerund)
+  CONTEXTUAL_DEFINITION: Giving attention to sounds or speech in order to hear what is said.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: Focus on the learner actively receiving a spoken message, without yet showing comprehension or a correct response.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language lesson conversation table.
+    - Context_Layer: Speaker talks while learner faces them.
+    - Focal_Layer: Listener leans in with cupped ear as sound waves travel across.
+    - Details_Layer: Speaker mouth and a headphone/ear detail.
+    - Lighting_Layer: Soft focus on the listener's attentive face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:listening" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="listening-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="listening-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#listening-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M53 122H252V130H53Z" fill="#A98A64"/><path d="M64 130V149M241 130V149" stroke="#8D765A" stroke-width="2.7"/><circle cx="73" cy="86" r="11" fill="#80513F" stroke="#1E2A3B" stroke-width="1.2"/><path d="M62 86Q63 72 74 73Q85 74 84 87" fill="#27364B"/><path d="M57 103Q73 96 89 103L94 122L83 131L63 124Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><path d="M66 105L55 114L46 111M86 105L98 111L109 107" fill="none" stroke="#1E2A3B" stroke-width="4.1" stroke-linecap="round"/><circle cx="229" cy="84" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.2"/><path d="M218 84Q219 70 230 71Q241 72 240 85" fill="#27364B"/><path d="M213 101Q229 94 245 101L250 121L239 130L219 123Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#listening-shadow)"><path d="M115 43C128 34 139 53 151 43S174 34 187 43" fill="none" stroke="#D9857F" stroke-width="3" stroke-linecap="round"/><path d="M114 52C128 45 138 58 151 52S174 45 188 52" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/><circle cx="176" cy="81" r="13" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.4"/><path d="M163 81Q164 65 177 66Q190 67 189 82L182 85Q179 74 173 75Q168 76 166 87Z" fill="#27364B"/><path d="M158 100Q176 91 194 100L201 125L187 137L165 128Z" fill="#91A77C" stroke="#54765A" stroke-width="1.6"/><path d="M165 103L153 110L142 105M192 103L204 111L216 106" fill="none" stroke="#1E2A3B" stroke-width="4.6" stroke-linecap="round"/><path d="M165 103L153 110L142 105M192 103L204 111L216 106" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M168 132L163 149M186 133L198 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M182 81Q191 77 195 84Q191 91 182 88Z" fill="#E7B99B" stroke="#80513F" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M224 97Q230 101 236 97" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><path d="M121 64Q130 59 139 64M131 72Q138 68 145 72" fill="none" stroke="#D9A441" stroke-width="1.5" stroke-linecap="round"/><circle cx="148" cy="80" r="2.2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="89" rx="133" ry="73" fill="#FEF9C3" opacity=".09"/><path d="M115 43C128 34 139 53 151 43S174 34 187 43" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

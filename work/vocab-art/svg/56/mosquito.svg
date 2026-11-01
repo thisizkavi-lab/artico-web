@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: mosquito (noun)
+  CONTEXTUAL_DEFINITION: A very slender flying insect with long legs and a needle-like proboscis.
+  PEDAGOGICAL_ARCHETYPE: 1 - Small creature in habitat
+  SYNONYM_GUARD: Use a narrow banded abdomen, long dangling legs, clear wings, and a straight piercing proboscis; do not make it resemble the stockier bee.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Hover a slim dark mosquito from x=91..225 y=55..145; head with proboscis pointing right, narrow segmented abdomen angled back, two translucent wings, six very long legs, and a quiet marsh backdrop.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:mosquito" data-archetype="long-legged-mosquito">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#6B5741;--c-secondary:#3B3540;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="mosquito-sky" x2="0" y2="1"><stop stop-color="#D9E8ED"/><stop offset="1" stop-color="#F1EFE3"/></linearGradient>
+  <linearGradient id="mosquito-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#816A52"/><stop offset="1" stop-color="#493F39"/></linearGradient>
+  <linearGradient id="mosquito-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8FBF3" stop-opacity=".9"/><stop offset="1" stop-color="#A9C4C3" stop-opacity=".4"/></linearGradient>
+  <filter id="mosquito-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mosquito-sky)"/><path d="M0 135Q78 125 151 136T304 129V192H0Z" fill="#DDE5D5"/><path d="M0 157Q82 146 159 158T304 151V192H0Z" fill="#C8D7BE"/><circle cx="248" cy="42" r="22" fill="#F1D78F" opacity=".5"/><path d="M38 155V107m0 25-13-15m13 5 11-15m199 48v-42m0 26-12-14m12 6 12-13" fill="none" stroke="#7E946F" stroke-width="2.4" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M38 151q25-8 44 0m148-1q27-8 45 0" fill="none" stroke="#D7EBE2" stroke-width="1.7"/><ellipse cx="153" cy="152" rx="47" ry="5" fill="#667561" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#mosquito-shadow)"><ellipse cx="133" cy="93" rx="18" ry="8" fill="url(#mosquito-body)" stroke="#493D37" stroke-width="1.1"/><circle cx="160" cy="89" r="10" fill="#57473D" stroke="#403530" stroke-width="1.2"/><ellipse cx="113" cy="105" rx="35" ry="7" transform="rotate(-16 113 105)" fill="#78624C" stroke="#493D37" stroke-width="1.1"/><path d="M86 112l-20 8 19-4 15-5Z" fill="#A0845D"/><path d="M169 88L223 81L170 92Z" fill="#38363A" stroke="#252B32" stroke-width=".8"/><circle cx="163" cy="86" r="1.8" fill="#1E2A3B"/><path d="M153 82Q145 69 137 71m18 10Q150 64 154 59" fill="none" stroke="#55493D" stroke-width="1.4" stroke-linecap="round"/><path d="M126 90Q115 64 126 55Q140 58 142 86Z" fill="url(#mosquito-wing)" stroke="#91ACAA" stroke-width="1"/><path d="M137 90Q138 65 153 60Q164 68 151 89Z" fill="url(#mosquito-wing)" stroke="#91ACAA" stroke-width="1"/><path d="M137 99l-13 25-18 10m24-31-2 25 8 12m5-38-8 18-17 5m31-18 10 21 20 8m-23-31 17 17 18 0m-27-13 23 3 15-8" fill="none" stroke="#514338" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 101l8-2m-3 7 8-2m-3 6 8-2" fill="none" stroke="#D7C19A" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M114 70q7-9 13-7m24-8q7-6 13-4" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75" stroke-linecap="round"/><circle cx="198" cy="117" r="1.2" fill="#D7C8A3"/><ellipse cx="208" cy="121" rx="7" ry="1.7" fill="#D9E9E2" opacity=".7"/><path d="M45 146l-4-7m223 8 4-8" fill="none" stroke="#81936F" stroke-width="1.3"/></g>
+ <g id="layer-lighting"><path d="M121 86q9-12 17-10m24 11q6-5 10-4" fill="none" stroke="#C9D8D0" stroke-width="1.5" opacity=".78" stroke-linecap="round"/><ellipse cx="135" cy="91" rx="31" ry="20" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

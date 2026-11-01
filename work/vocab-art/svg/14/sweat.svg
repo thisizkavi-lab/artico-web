@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: sweat / perspire (Verb)
+  CONTEXTUAL_DEFINITION: To produce beads of moisture on the skin, often after effort or in warmth.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust / body function
+  SYNONYM_GUARD: Show droplets on skin after activity; do not confuse with rain or crying.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person after a gentle run, shoulders and forehead visible.
+    - Context_Layer: Shirt and hair are slightly tousled but calm.
+    - Focal_Layer: Several clear sweat drops sit at temples and neck.
+    - Details_Layer: Towel around shoulders hints at exertion.
+    - Lighting_Layer: Tiny motion ticks show warmth without a sun icon or text.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:sweat / perspire (formal verb)" data-archetype="expressive-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="175" rx="94" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M82 178Q87 145 114 137H189Q216 145 222 178Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M98 77Q94 40 126 24Q158 8 189 27Q212 45 203 90L191 122Q175 144 150 140Q122 138 108 117Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M98 71Q94 39 125 21Q159 5 191 26Q212 42 203 73L189 59Q163 68 144 52Q119 69 98 71Z" fill="#596C70" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 151Q113 141 134 150L148 164Q126 173 101 165ZM214 151Q192 141 171 150L157 164Q179 173 204 165Z" fill="#F8FAFC" stroke="#64748B" stroke-width="1.7"/><path d="M91 151Q112 160 134 150M214 151Q193 160 171 150" fill="none" stroke="#CBD5E1" stroke-width="1.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M111 67Q116 58 121 67Q120 75 116 78Q111 76 111 67ZM185 82Q191 72 196 81Q195 89 190 93Q185 91 185 82ZM107 112Q113 103 118 112Q117 120 112 123Q107 121 107 112ZM177 126Q182 117 187 126Q186 134 181 137Q177 135 177 126Z" fill="#6D9FC7" stroke="#4A72B2" stroke-width="1.3"/><path d="M109 67Q116 58 121 67M183 82Q191 72 196 81" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="2 2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M124 87Q134 82 143 87M163 87Q173 82 181 87" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="136" cy="92" rx="2.7" ry="3.6" fill="#1E2A3B"/><ellipse cx="173" cy="92" rx="2.7" ry="3.6" fill="#1E2A3B"/><path d="M142 114Q151 117 160 113" fill="none" stroke="#8E5B4A" stroke-width="1.6"/><path d="M100 62L96 55M200 61L204 54M93 96L85 94M210 97L218 95" stroke="#4A72B2" stroke-width="1.5" stroke-linecap="round"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="97" rx="60" ry="45" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".35"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: pestle (Noun)
+  CONTEXTUAL_DEFINITION: A heavy rounded-ended tool pressed and rotated to crush ingredients in a mortar.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a single stone grinding club with a rounded broad end; the paired card includes the mortar bowl.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter.
+    - Context_Layer: A small scatter of spice seeds.
+    - Focal_Layer: Heavy stone pestle laid diagonally.
+    - Details_Layer: Rounded grinding end and polished highlight.
+    - Lighting_Layer: Cool stone reflection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:pestle" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 146 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 146 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="169" rx="79" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><circle cx="72" cy="132" r="4" fill="#CE7B55"/><circle cx="86" cy="121" r="3" fill="#8FB987"/><circle cx="99" cy="135" r="4" fill="#CE7B55"/><circle cx="216" cy="129" r="3.5" fill="#8FB987"/><circle cx="230" cy="118" r="4" fill="#CE7B55"/></g>
+  <g id="layer-focal"><path d="M82 123 L184 51 Q198 41 210 56 L230 82 Q241 96 225 106 L118 144 Q103 148 94 138Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="2.8"/><path d="M90 122 L190 56 Q200 50 208 61" fill="none" stroke="#AEBFC6" stroke-width="4" stroke-linecap="round"/><path d="M112 137 L219 101" stroke="#27364B" stroke-width="1.6"/><ellipse cx="104" cy="133" rx="12" ry="7" transform="rotate(-21 104 133)" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M113 121 L196 64" stroke="#DCE3E4" stroke-width="1.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

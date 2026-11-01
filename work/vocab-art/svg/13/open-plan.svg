@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: open-plan (Adjective)
+  CONTEXTUAL_DEFINITION: Describes a home layout with few or no walls separating living areas.
+  PEDAGOGICAL_ARCHETYPE: 5 — Cutaway spatial diagram
+  SYNONYM_GUARD: Show the kitchen, dining, and sitting spaces flowing together without internal partition walls.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Top-down angled cutaway of one large interior.
+    - Context_Layer: Only outer walls remain; one long window spans the rear.
+    - Focal_Layer: Kitchen counter, dining table, and sofa share one continuous floor plane.
+    - Details_Layer: Rugs and furniture group zones without dividing walls.
+    - Lighting_Layer: Blue flow path sweeps through the connected plan.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:open-plan" data-archetype="spatial-layout">
+  <defs><linearGradient id="floor" x2="0" y2="1"><stop stop-color="#F3ECE1"/><stop offset="1" stop-color="#E7D7C0"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M33 32H270V157H33Z" fill="url(#floor)" stroke="#1E2A3B" stroke-width="3"/><path d="M33 32H270V43H33ZM33 32H44V157H33ZM259 32H270V157H259ZM33 146H270V157H33Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.2"/><path d="M89 34V42M151 34V42M214 34V42" stroke="#C88446" stroke-width="1"/><ellipse cx="151" cy="164" rx="110" ry="6" fill="#9B8E7B" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M48 75Q74 60 99 76V118Q74 126 48 112Z" fill="#FEF3C7" opacity=".55"/><path d="M113 57Q158 43 196 59V119Q159 132 113 116Z" fill="#E8F0E5" opacity=".65"/><path d="M202 77Q230 62 254 79V122Q229 132 202 119Z" fill="#E4ECF3" opacity=".7"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M48 54H102V77H48Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M53 43H97V54H53Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M58 44V53M68 44V53M79 44V53M89 44V53" stroke="#64748B" stroke-width="1.1"/><path d="M117 83H166V112H117Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2"/><path d="M112 92H171" stroke="#8A5A35" stroke-width="2"/><path d="M134 74V82M151 74V82M134 113V123M151 113V123" stroke="#1E2A3B" stroke-width="2"/><path d="M201 92Q201 82 211 82H239Q249 82 249 92V108H201Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M205 108V117M245 108V117" stroke="#1E2A3B" stroke-width="2.5"/><path d="M202 89Q205 78 216 78H231" fill="none" stroke="#8FA9CD" stroke-width="2"/><path d="M39 126H261" stroke="#D6C3A5" stroke-width="1.4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><circle cx="78" cy="99" r="3" fill="#F2C14E"/><circle cx="144" cy="98" r="3" fill="#F2C14E"/><circle cx="226" cy="99" r="3" fill="#F2C14E"/><path d="M102 97H114M171 97H196" stroke="#4A72B2" stroke-width="2" stroke-dasharray="3 3"/><path d="M55 61H96M207 97H245" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M72 133Q151 144 231 131" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M226 127L233 131L226 136" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="151" cy="129" r="4" fill="#F2C14E" opacity=".8"/></g>
+</svg>

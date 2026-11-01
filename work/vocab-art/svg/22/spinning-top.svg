@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: spinning top (Noun)
+  CONTEXTUAL_DEFINITION: A small pointed toy that spins when set in motion.
+  PEDAGOGICAL_ARCHETYPE: 4 — Conceptual metaphor
+  SYNONYM_GUARD: A balanced striped cone on a sharp tip with circular motion marks identifies a spinning top, not a ball.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean tabletop and playroom wall.
+    - Context_Layer: Low table line and a child's fingertip just beyond frame.
+    - Focal_Layer: Bright conical top balanced on its point.
+    - Details_Layer: Colored bands, pull peg, and rotational streaks.
+    - Lighting_Layer: Circular glow around the spinning toy.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:spinning top" data-archetype="conceptual-metaphor">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="top-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="top-shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#top-bg)"/><path d="M0 153Q76 148 152 153T304 151V192H0Z" fill="#E8DDC8"/><path d="M22 31H100V84H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M61 32V83M23 58H99" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 154H304" stroke="#9B7D5E" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M18 119H73" stroke="#A98A64" stroke-width="3" stroke-linecap="round"/><path d="M26 120V153M65 120V153" stroke="#A98A64" stroke-width="4"/><path d="M242 116H289" stroke="#A98A64" stroke-width="3" stroke-linecap="round"/><path d="M249 117V153M282 117V153" stroke="#A98A64" stroke-width="4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#top-shadow)"><path d="M153 27Q158 21 165 27L164 54Q183 60 191 76Q198 92 188 106Q177 123 159 137L154 155L148 137Q124 122 113 105Q103 89 112 73Q121 58 145 53L145 28Q149 21 153 27Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M113 76Q150 90 191 76L193 91Q153 108 108 91Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M122 111Q151 124 181 111Q171 126 159 137L154 155L148 137Q134 127 122 111Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"/><path d="M146 32L146 53M163 31L163 54" stroke="#88A9D0" stroke-width="2"/><ellipse cx="151" cy="47" rx="8" ry="3" fill="#D9A441" stroke="#A96B46" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M91 74Q80 90 91 106M82 65Q65 89 82 115M208 74Q220 90 208 106M217 65Q234 89 217 115" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round" opacity=".75"/><path d="M117 61Q151 47 187 61M107 120Q151 149 198 120" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-dasharray="4 5" opacity=".6"/><circle cx="93" cy="58" r="2.5" fill="#D9A441"/><circle cx="212" cy="56" r="2.5" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="93" rx="81" ry="79" fill="#FEF9C3" opacity=".12"/><path d="M120 48Q151 36 181 48" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".85"/></g>
+</svg>

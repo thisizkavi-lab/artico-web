@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: book a vacation
+  CONTEXTUAL_DEFINITION: Arrange and reserve a complete leisure trip before leaving.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler actively choosing a getaway with transport, lodging, and destination pictured together on a blank screen.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: The traveler is planning a whole holiday, not just reserving a hotel room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A seated traveler uses a tablet with simple plane, hotel, and sunny beach pictograms while a suitcase waits nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:book a vacation" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="book-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEE9DF"/><stop offset="1" stop-color="#D3D1C7"/></linearGradient>
+  <linearGradient id="book-screen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D8ECE7"/><stop offset="1" stop-color="#8FC0C6"/></linearGradient>
+  <linearGradient id="book-table" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B58B61"/><stop offset="1" stop-color="#795B42"/></linearGradient>
+  <filter id="book-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M17 17H287V145H17Z" fill="url(#book-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M17 145H287V184H17Z" fill="#B8B6AB"/><rect x="35" y="31" width="77" height="48" fill="#A9C8CF" stroke="#455D68" stroke-width="1.4"/><path d="M73 31V79M35 55H112" stroke="#526D77" stroke-width="1.1"/><path d="M28 167H278" stroke="#EAE4D8" stroke-width="1.1"/><path d="M201 21H274V24H201Z" fill="#D0C8B8"/></g>
+ <g id="layer-context"><path d="M38 105H222V116H38Z" fill="url(#book-table)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M49 116V157M211 116V157" stroke="#624D3B" stroke-width="4"/><path d="M25 160H237" stroke="#765940" stroke-width="2"/><rect x="239" y="126" width="29" height="37" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M245 126V121Q245 116 253.5 116Q262 116 262 121V126" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M244 139H263M244 155H263" stroke="#93A2A5" stroke-width="1.1"/><rect x="228" y="93" width="38" height="28" fill="#87909A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M232 98H262V116H232Z" fill="#D8E4DF" stroke="#586A70" stroke-width="1"/></g>
+ <g id="layer-focal" filter="url(#book-shadow)"><circle cx="99" cy="81" r="9" fill="#D8A17B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M86 92Q99 86 112 92L117 114H82Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M88 110L86 134H96L101 113M104 113L109 134H119L115 109" fill="#394F61" stroke="#1E2A3B" stroke-width="1.2"/><path d="M87 96L109 101L127 106" fill="none" stroke="#4A72B2" stroke-width="8" stroke-linecap="round"/><ellipse cx="128" cy="106" rx="4" ry="3" fill="#D8A17B"/><path d="M119 102L190 89L199 112L128 124Z" fill="#243746" stroke="#1E2A3B" stroke-width="1.6"/><path d="M126 103L187 92L194 108L131 119Z" fill="url(#book-screen)" stroke="#516973" stroke-width="1"/><path d="M138 115Q150 107 161 111T185 108V117L132 126Z" fill="#54A7B6"/><path d="M135 111L146 102L156 111" fill="#7C9A76"/><path d="M140 104L147 98L154 104V110H140Z" fill="#F6F0E5" stroke="#4F6970" stroke-width=".8"/><path d="M143 106V108M149 106V108" stroke="#60777B" stroke-width="1"/><path d="M164 100L172 98L179 94L181 95L177 100L187 102L187 104L176 103L172 107L170 107L171 103L164 102Z" fill="#FFFDF6" stroke="#445A66" stroke-width=".6"/><circle cx="178" cy="98" r="2.5" fill="#F2C14E"/><path d="M152 106V112M149 109H155" stroke="#526274" stroke-width=".8"/></g>
+ <g id="layer-details"><path d="M43 33H110" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="151" cy="166" rx="116" ry="5" fill="#526274" opacity=".16"/><path d="M36 106H222" stroke="#D9B88F" stroke-width="1"/><circle cx="77" cy="86" r="1.8" fill="#1E2A3B"/><path d="M188 83L199 112" stroke="#71828A" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="107" rx="127" ry="74" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

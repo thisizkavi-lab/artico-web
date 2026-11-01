@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: daughter (Noun)
+  CONTEXTUAL_DEFINITION: A girl or woman in relation to her parent.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A school-age girl and her parent share a quiet garden discovery; their attentive interaction makes the family relation distinct from the age-only word girl.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Home garden with a low flowering plant.
+    - Context_Layer: Leaves and one open flower at the girl's eye level.
+    - Focal_Layer: Parent and daughter kneel together, looking at a small sprout.
+    - Details_Layer: Gently cupped hand, exchanged gaze, and new leaves.
+    - Lighting_Layer: Soft green-gold ring.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:daughter" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#568552;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="daughter-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="daughter-dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8B5CA8"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <filter id="daughter-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#daughter-sky)"/><path d="M0 148Q72 141 152 148T304 146V192H0Z" fill="#DCEAD6"/><ellipse cx="151" cy="174" rx="127" ry="7" fill="#C3DAB9"/><path d="M17 125Q26 100 39 125M259 124Q271 96 286 125" fill="#829A83" stroke="#568552" stroke-width="1.4"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="150" rx="23" ry="8" fill="#C88446" opacity=".55"/><path d="M151 150L151 123M150 137Q137 128 132 131Q136 140 150 142M152 134Q164 124 170 128Q166 137 152 139" fill="none" stroke="#568552" stroke-width="3" stroke-linecap="round"/><path d="M151 124Q146 115 151 109Q156 114 151 124Z" fill="#7FB07A" stroke="#568552" stroke-width="1.2"/><path d="M150 111Q140 108 141 102Q148 101 151 109Q154 100 161 103Q162 110 152 113Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><circle cx="151" cy="108" r="2.5" fill="#F2C14E"/><path d="M185 121Q194 114 203 121" fill="none" stroke="#D9A441" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#daughter-shadow)"><path d="M50 177Q55 147 74 139Q97 129 118 141L127 177Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><rect x="83" y="116" width="20" height="23" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2"/><circle cx="93" cy="88" r="29" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.5"/><path d="M64 86Q65 59 91 58Q121 59 123 88L116 94Q111 70 91 71Q74 71 67 94Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M77 87Q83 91 88 87M99 87Q105 91 111 87M81 101Q92 107 104 101" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/><path d="M121 149Q134 141 145 139" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M121 149Q134 141 145 139" fill="none" stroke="#D89A6C" stroke-width="5.5" stroke-linecap="round"/><path d="M128 177Q133 150 149 144Q166 137 184 147L190 177Z" fill="url(#daughter-dress)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M144 145L155 155L167 146" fill="#E3E8F0" stroke="#633B7D" stroke-width="1.5"/><rect x="150" y="126" width="17" height="20" rx="5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="158" cy="106" r="22" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M136 104Q137 83 159 83Q181 84 181 107Q177 127 173 137L164 141L166 121Q157 113 147 120L144 138L135 132Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M145 105Q150 109 154 105M162 105Q167 109 171 105M149 116Q158 121 167 116" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M142 151Q148 145 151 137M179 152Q173 146 171 138" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M142 151Q148 145 151 137M179 152Q173 146 171 138" fill="none" stroke="#F5BFA3" stroke-width="4.5" stroke-linecap="round"/><path d="M149 139Q150 133 156 135L162 137Q165 142 158 144Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M73 62Q87 54 102 59M144 83Q156 78 170 83" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/><circle cx="127" cy="116" r="3" fill="#D9A441"/><path d="M176 97L181 92M190 99L195 96" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M140 120Q146 115 151 119" fill="none" stroke="#7FB07A" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="135" cy="109" rx="101" ry="75" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".36"/><path d="M58 49Q78 39 96 45" fill="none" stroke="#FFFFFF" stroke-width="3"/></g>
+</svg>

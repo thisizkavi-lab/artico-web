@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: generous (Adjective)
+  CONTEXTUAL_DEFINITION: Willing to give or share more than is required.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person deliberately gives a generous extra portion to a peer, distinguishing giving from general kindness.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared meal table with two seats.
+    - Context_Layer: Friend holds a nearly empty plate at x=234.
+    - Focal_Layer: Person at x=125 offers a heaping bowl and a second helping.
+    - Details_Layer: Overfilled fruit, open sharing hand and grateful smile.
+    - Lighting_Layer: Warm accent on the shared food and hands.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:generous" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9A441;--c-secondary:#B9875D;--c-accent:#5479AC;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="bowl" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D9A441"/><stop offset="1" stop-color="#B9875D"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q80 143 152 150T304 148V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="167" rx="130" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M25 119H280L273 132H32Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="2"/><path d="M44 132L42 160M258 132L262 160" stroke="#805333" stroke-width="6" stroke-linecap="round"/><circle cx="245" cy="61" r="16" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M229 61Q230 44 246 45Q262 46 261 62L255 66H232Z" fill="#35404B"/><path d="M226 84Q245 77 263 84L269 114H220Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M232 60L238 60M247 60L253 60M237 70Q245 75 253 70" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="242" cy="111" rx="18" ry="5" fill="#FAF8F3" stroke="#7B8A9E" stroke-width="1.6"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="116" cy="98" rx="70" ry="71" fill="#FEF3C7" opacity=".55"/><circle cx="113" cy="56" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M93 56Q94 34 113 35Q134 36 133 58L126 63Q122 47 111 47Q101 47 95 63Z" fill="#6F665F" stroke="#1E2A3B" stroke-width="2"/><path d="M88 82Q112 75 136 82L145 123H79Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M94 91L76 104L69 98M133 91L153 103L165 99" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M94 91L77 104L70 98M133 91L153 103L163 99" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M167 98Q191 84 214 98L211 115Q189 127 167 115Z" fill="url(#bowl)" stroke="#1E2A3B" stroke-width="2.5"/><ellipse cx="190" cy="98" rx="23" ry="7" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="181" cy="91" r="7" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><circle cx="194" cy="90" r="7" fill="#829A83" stroke="#56725E" stroke-width="1.3"/><circle cx="204" cy="94" r="6" fill="#D9A441" stroke="#805333" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M103 57Q107 60 111 57M118 57Q122 60 126 57" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M104 68Q113 75 122 68" fill="none" stroke="#805333" stroke-width="1.7"/><path d="M166 89Q158 83 154 87M169 105L163 111" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M187 76L187 70M198 79L202 73M177 78L173 73" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="159" cy="88" r="2" fill="#D9A441"/><path d="M226 94Q233 87 239 94" fill="none" stroke="#4A72B2" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M103 40Q113 36 123 40" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="153" cy="96" rx="77" ry="68" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

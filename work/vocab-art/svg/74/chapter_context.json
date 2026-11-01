@@ -1,0 +1,515 @@
+{
+  "chapter": 74,
+  "chapter_title": "At the supermarket",
+  "domain_setting": "A busy supermarket and department-store retail setting; distinguish store types, floors and areas, displayed goods, customer services, shopping containers, staffed checkout, self-checkout, prices and promotions.",
+  "palette": {
+    "background": "#FAF8F3",
+    "halo": "#E4EBD9",
+    "ink": "#1E2A3B",
+    "blue": "#5479AC",
+    "red": "#D94854",
+    "gold": "#D9A441",
+    "wood": "#C78958",
+    "line": "#8AA1B2"
+  },
+  "recurring_scale_anchors": [
+    "304x192 viewBox",
+    "five required layer groups: layer-backdrop, layer-context, layer-focal, layer-details, layer-lighting",
+    "exact data-vocab-key for lesson 74",
+    "no readable words or numerals; diagram-like symbols and price dots only",
+    "show a purposeful retail context when a word denotes a department, service or store area",
+    "use human shoppers for action/role cards and recognizable products for category cards"
+  ],
+  "polysemy_resolution_table": {
+    "beauty": "A beauty and personal-care department within a retailer, despite the abstract Japanese gloss; not attractiveness.",
+    "dairy": "A supermarket category of milk-based foods, not a farm or dairy factory.",
+    "produce": "The fresh fruit-and-vegetable section, not the verb meaning to make or grow.",
+    "line": "A queue of shoppers waiting at a checkout, not a drawn mark.",
+    "first floor / ground floor": "The street-level entrance floor. The glossary pairs the regional names; show the ground-level store entrance without using building-number text.",
+    "cart": "A utility store cart for moving boxes and stock; distinguish from the wire shopping cart used by customers.",
+    "bag": "A generic grocery carry bag. Carrier bag is one store-provided handled bag, while shopping bag is a shopper carrying purchases.",
+    "cash register": "The complete checkout machine and money drawer.",
+    "checkout": "A staffed checkout lane with cashier, goods and conveyor; distinguish from the separate self-checkout kiosk.",
+    "till": "Cash drawer/register in the checkout group, despite the Japanese gloss meaning “until”; show the open money tray as the part of the till.",
+    "sale": "A retail promotion with multiple goods reduced, despite the general Japanese sales gloss.",
+    "bargain": "A single good-value purchase; distinguish from bargain-hunting across several shops.",
+    "department store": "One large retailer organized into departments; not a mall of independent shops.",
+    "convenient": "An easy one-stop store visit with needed everyday products on an unobstructed, nearby route."
+  },
+  "batch_plan": [
+    [
+      "beauty",
+      "children’s department",
+      "cosmetics",
+      "department store",
+      "designer labels"
+    ],
+    [
+      "electrical appliances",
+      "home furnishings",
+      "kitchenware",
+      "lighting",
+      "lingerie"
+    ],
+    [
+      "men’s wear",
+      "perfumery",
+      "supermarket",
+      "canned food",
+      "dairy"
+    ],
+    [
+      "frozen food",
+      "grocery store",
+      "produce",
+      "aisle",
+      "basement"
+    ],
+    [
+      "elevator",
+      "escalator",
+      "exit",
+      "first floor / ground floor",
+      "food court"
+    ],
+    [
+      "second floor",
+      "shelves",
+      "line",
+      "bag",
+      "basket"
+    ],
+    [
+      "carrier bag",
+      "cart",
+      "shopping bag",
+      "shopping cart",
+      "baby changing facilities"
+    ],
+    [
+      "cashier",
+      "changing room",
+      "customer",
+      "customer service",
+      "guarantee"
+    ],
+    [
+      "online shopping",
+      "open",
+      "closed",
+      "convenient",
+      "self-checkout"
+    ],
+    [
+      "bargain",
+      "cash register",
+      "checkout",
+      "loyalty card",
+      "price tag"
+    ],
+    [
+      "receipt",
+      "sale",
+      "special offer",
+      "till",
+      "coupon"
+    ],
+    [
+      "out of stock",
+      "upmarket"
+    ]
+  ],
+  "existing_asset_triage": {
+    "lesson_74": "Scanned keyed lesson SVGs for exact and semantic candidates. Retain only direct same-sense scenes; reject exact-key images when the image context is misleading or too narrow.",
+    "reviewed_candidates": [
+      {
+        "term": "beauty",
+        "source": "16/beauty.svg",
+        "decision": "reject",
+        "reason": "A reflective portrait teaches personal attractiveness, not the beauty-products department."
+      },
+      {
+        "term": "dairy",
+        "source": "28/dairy.svg",
+        "decision": "keep",
+        "reason": "Milk, cheese and other dairy foods are clear; use once. 70/dairy.svg is a duplicate still life."
+      },
+      {
+        "term": "dairy",
+        "source": "70/dairy.svg",
+        "decision": "duplicate",
+        "reason": "Same dairy-product image as 28/dairy; use one copy."
+      },
+      {
+        "term": "grocery store",
+        "source": "72/grocery-store.svg",
+        "decision": "keep",
+        "reason": "Food shelves and a shopping basket identify a grocery retailer; use for the small grocery-store sense, while supermarket will be larger."
+      },
+      {
+        "term": "basement",
+        "source": "09/basement.svg",
+        "decision": "replace",
+        "reason": "Clear residential storage basement, but target is the lower retail floor within store navigation; author a store cross-section."
+      },
+      {
+        "term": "bag",
+        "source": "32/bag.svg",
+        "decision": "keep",
+        "reason": "A simple grocery bag with bread and greens is a direct generic bag match."
+      },
+      {
+        "term": "basket",
+        "source": "54/basket.svg",
+        "decision": "reject",
+        "reason": "Low decorative basket with unclear contents; does not read as a shopper hand basket."
+      },
+      {
+        "term": "basket",
+        "source": "49/basket.svg",
+        "decision": "reject",
+        "reason": "Basket mounted on a bicycle, not a store basket."
+      },
+      {
+        "term": "changing room",
+        "source": "71/changing-room.svg",
+        "decision": "reject",
+        "reason": "Gym locker-room scene rather than a retail fitting booth."
+      },
+      {
+        "term": "customer service",
+        "source": "43/customer-service.svg",
+        "decision": "keep",
+        "reason": "Direct face-to-face assistance at a service desk; use this over the phone-support variant."
+      },
+      {
+        "term": "customer service",
+        "source": "36/customer-service.svg",
+        "decision": "reject",
+        "reason": "Call-center headset and monitor show phone support, not the supermarket service desk."
+      },
+      {
+        "term": "open",
+        "source": "59/open.svg",
+        "decision": "reject",
+        "reason": "Shows a toy chest lid opening, not a store open to customers."
+      },
+      {
+        "term": "cash register",
+        "source": "38/cash-register.svg",
+        "decision": "keep",
+        "reason": "Clear retail register with open money drawer; direct exact/synonym match."
+      },
+      {
+        "term": "checkout",
+        "source": "73/checkout.svg",
+        "decision": "reject",
+        "reason": "Self-checkout lane would duplicate the separate self-checkout term; author a staffed lane."
+      },
+      {
+        "term": "receipt",
+        "source": "38/receipt.svg",
+        "decision": "keep",
+        "reason": "Clear completed-sale thermal receipt at checkout; use one."
+      },
+      {
+        "term": "receipt",
+        "source": "33/receipt.svg",
+        "decision": "reject",
+        "reason": "More generic/less contextual duplicate of the completed-purchase receipt."
+      },
+      {
+        "term": "receipt",
+        "source": "73/receipt.svg",
+        "decision": "duplicate",
+        "reason": "Copied from the same 38 receipt source; no need for a second duplicate."
+      },
+      {
+        "term": "sale",
+        "source": "73/sale.svg",
+        "decision": "keep",
+        "reason": "Retail sale event across multiple reduced goods; direct context remains valid in a supermarket."
+      },
+      {
+        "term": "online shopping",
+        "source": "73/online-shopping.svg",
+        "decision": "keep",
+        "reason": "Laptop and product imagery directly show shopping online."
+      },
+      {
+        "term": "price tag",
+        "source": "73/price.svg",
+        "decision": "adapt",
+        "reason": "A tag attached to a product with coin cues fits; adapt to grocery merchandise."
+      },
+      {
+        "term": "home furnishings",
+        "source": "09/furniture.svg",
+        "decision": "keep",
+        "reason": "Sofa, table and chair clearly represent home furnishings, even without a shop setting."
+      },
+      {
+        "term": "kitchenware",
+        "source": "10/kitchen-implements.svg",
+        "decision": "reject",
+        "reason": "Only three cooking utensils; too narrow for the broad kitchenware department."
+      },
+      {
+        "term": "lighting",
+        "source": "09/lamp.svg",
+        "decision": "reject",
+        "reason": "One home table lamp, not a lighting department or fixture display."
+      },
+      {
+        "term": "lingerie",
+        "source": "15/underwear.svg",
+        "decision": "reject",
+        "reason": "Generic undergarments, including briefs, do not clearly teach women's lingerie or a department."
+      },
+      {
+        "term": "perfumery",
+        "source": "16/perfume.svg",
+        "decision": "reject",
+        "reason": "One perfume bottle shows the product, not a perfume shop or department."
+      },
+      {
+        "term": "frozen food",
+        "source": "09/freezer.svg",
+        "decision": "reject",
+        "reason": "Home chest freezer shows the appliance rather than frozen food in a supermarket freezer case."
+      },
+      {
+        "term": "frozen food",
+        "source": "09/refrigerator.svg",
+        "decision": "reject",
+        "reason": "General refrigerator with ordinary chilled foods; no frozen section cue."
+      },
+      {
+        "term": "elevator",
+        "source": "59/lift.svg",
+        "decision": "reject",
+        "reason": "Person lifting a box; not a lift/elevator."
+      },
+      {
+        "term": "baby changing facilities",
+        "source": "22/changing-table.svg",
+        "decision": "reject",
+        "reason": "Standalone changing table lacks a public restroom and baby-care context."
+      },
+      {
+        "term": "department store",
+        "source": "72/shopping-mall.svg",
+        "decision": "reject",
+        "reason": "Multiple independent shops in a mall, not one multi-department store."
+      },
+      {
+        "term": "designer labels",
+        "source": "34/fashion-designer.svg",
+        "decision": "reject",
+        "reason": "Designer at work does not show branded garment labels."
+      },
+      {
+        "term": "bargain",
+        "source": "73/bargain-hunting.svg",
+        "decision": "reject",
+        "reason": "Compares multiple similar offers; target bargain is one good-value purchase."
+      },
+      {
+        "term": "men’s wear",
+        "source": "15/suit.svg",
+        "decision": "reject",
+        "reason": "A single formal suit is a good suit illustration but too narrow for a men’s wear department; author a rail with several garments."
+      },
+      {
+        "term": "produce",
+        "source": "30/vegetables.svg",
+        "decision": "reject",
+        "reason": "A very small still life of several vegetables with no supermarket display; authored a contextual fresh-produce department."
+      },
+      {
+        "term": "produce",
+        "source": "70/vegetables.svg",
+        "decision": "reject",
+        "reason": "A clearer vegetable still life, but still no fruit assortment or retail section context; authored a produce display."
+      },
+      {
+        "term": "cashier",
+        "source": "38/cash-register.svg",
+        "decision": "reject",
+        "reason": "Shows a payment terminal, not the person working as cashier; a person-centered role illustration is needed."
+      },
+      {
+        "term": "customer",
+        "source": "35/client.svg",
+        "decision": "reject",
+        "reason": "Business consultation between clients, not a person shopping in a supermarket."
+      },
+      {
+        "term": "customer service",
+        "source": "43/customer-service.svg",
+        "decision": "keep",
+        "reason": "Clear face-to-face help across a service desk; use for the retail customer-service counter."
+      },
+      {
+        "term": "customer service",
+        "source": "36/customer-service.svg",
+        "decision": "reject",
+        "reason": "Call-center headset support, not in-store customer service."
+      },
+      {
+        "term": "changing room",
+        "source": "71/changing-room.svg",
+        "decision": "reject",
+        "reason": "A gym locker-room changing scene; not a retail fitting booth."
+      },
+      {
+        "term": "online shopping",
+        "source": "73/online-shopping.svg",
+        "decision": "keep",
+        "reason": "Clear shopper-at-laptop scene with a digital product bag; direct same-sense candidate."
+      },
+      {
+        "term": "self-checkout",
+        "source": "73/checkout.svg",
+        "decision": "keep",
+        "reason": "Cashier-free supermarket kiosk, payment terminal and scanning action; correct for self-checkout, not staffed checkout."
+      },
+      {
+        "term": "open",
+        "source": "59/open.svg",
+        "decision": "reject",
+        "reason": "Shows opening a toy chest, not a supermarket open to customers."
+      },
+      {
+        "term": "bargain",
+        "source": "73/good-deal.svg",
+        "decision": "keep",
+        "reason": "Single desirable product, price tag and positive value cues directly teach a good-value purchase."
+      },
+      {
+        "term": "bargain",
+        "source": "73/bargain-hunting.svg",
+        "decision": "reject",
+        "reason": "Compares two offers while shopping around; the target is one good-value purchase."
+      },
+      {
+        "term": "bargain",
+        "source": "73/discount.svg",
+        "decision": "reject",
+        "reason": "Shows a general price discount, not a shopper buying one good-value item."
+      },
+      {
+        "term": "cash register",
+        "source": "38/cash-register.svg",
+        "decision": "keep",
+        "reason": "A clear retail register machine with display and payment controls; direct same-sense match."
+      },
+      {
+        "term": "checkout",
+        "source": "73/checkout.svg",
+        "decision": "reject",
+        "reason": "Cashier-free kiosk; correct for self-checkout but wrong for the separately listed staffed checkout."
+      },
+      {
+        "term": "loyalty card",
+        "source": "38/credit-card.svg",
+        "decision": "reject",
+        "reason": "Bank credit card and payment terminal, not a store rewards card."
+      },
+      {
+        "term": "loyalty card",
+        "source": "38/debit-card.svg",
+        "decision": "reject",
+        "reason": "Bank debit card, not a store rewards card."
+      },
+      {
+        "term": "loyalty card",
+        "source": "73/card.svg",
+        "decision": "reject",
+        "reason": "Generic payment card with chip/stripe; no store membership or rewards context."
+      },
+      {
+        "term": "loyalty card",
+        "source": "58/collect-stamps.svg",
+        "decision": "reject",
+        "reason": "Collecting postage stamps in an album; unrelated to store loyalty rewards."
+      },
+      {
+        "term": "price tag",
+        "source": "73/price.svg",
+        "decision": "keep",
+        "reason": "A tag visibly attached to a retail item, a direct price-tag scene."
+      },
+      {
+        "term": "receipt",
+        "source": "38/receipt.svg",
+        "decision": "keep",
+        "reason": "Clear checkout receipt printing beside payment equipment and purchase bag; direct supermarket match."
+      },
+      {
+        "term": "receipt",
+        "source": "73/receipt.svg",
+        "decision": "duplicate",
+        "reason": "Visually identical to 38/receipt; keep one copy."
+      },
+      {
+        "term": "receipt",
+        "source": "33/receipt.svg",
+        "decision": "reject",
+        "reason": "Generic payment document with bank-card association; less clearly a supermarket purchase receipt."
+      },
+      {
+        "term": "sale",
+        "source": "73/sale.svg",
+        "decision": "keep",
+        "reason": "Several store items and retail shelf form a direct retail sale/promotion scene."
+      },
+      {
+        "term": "special offer",
+        "source": "35/promotion.svg",
+        "decision": "reject",
+        "reason": "Workplace career promotion and award scene, not a store product offer."
+      },
+      {
+        "term": "customer service",
+        "source": "43/customer-service.svg",
+        "decision": "kept/rekeyed at final audit",
+        "reason": "The face-to-face store-service desk is direct and clear; final plan audit caught the missing lesson-local copy, now present as 74/customer-service.svg."
+      },
+      {
+        "term": "out of stock",
+        "source": "candidate scan: matching shelf/stock scenes",
+        "decision": "none retained",
+        "reason": "No course asset showed a mostly stocked supermarket shelf with one unavailable product slot; authored a contextual shelf gap."
+      },
+      {
+        "term": "upmarket",
+        "source": "06/expensive.svg",
+        "decision": "reject",
+        "reason": "A single expensive jewel and coins suggest price, not a premium shop or customer segment."
+      },
+      {
+        "term": "upmarket",
+        "source": "73/boutique.svg",
+        "decision": "reject",
+        "reason": "A standard boutique storefront does not by itself communicate the upscale market segment."
+      }
+    ]
+  },
+  "glossary_context_notes": [
+    "The catalogue lists 57 items, all initially TODO. The groups set the intended shopping senses where Japanese glosses conflict.",
+    "The “bag”, “carrier bag”, “shopping bag”, “basket”, “cart” and “shopping cart” terms are close; use different forms and use contexts to teach their contrast.",
+    "Batch 1 rejected the abstract beauty portrait, mall-of-independent-stores candidate and fashion-designer-at-work candidate. The department store uses a shared facade and visible product displays across several floors; the beauty counter emphasizes skincare/face care, cosmetics shows makeup products, and the children’s department is an apparel section with a parent and child.",
+    "Batch 2 reused the direct living-room furniture group for home furnishings. Rejected the utensils-only kitchenware candidate and the single table lamp because the targets are broader departments; the generic underwear image did not clearly teach lingerie. The new appliance shelf has powered household devices, kitchenware has unpowered cookware/dishes, and lighting shows multiple fixtures.",
+    "Batch 3 reused the clear dairy-food assortment. The larger supermarket has multiple stocked aisles and a self-service cart; the small grocery-store facade candidate is saved for its exact term. Rejected the single suit and single perfume bottle as insufficient department scenes; authored a clothing rail and multi-bottle perfumery counter.",
+    "Batch 4 reused the small grocery-store facade. Rejected the chest freezer and residential basement candidates because the chapter calls for supermarket sections; the new freezer is a commercial glass case and the basement is below street level inside a store. Reviewed two vegetable still lifes for produce; the authored counter and seller make the fresh-produce section explicit.",
+    "Batch 5 pairs street-level first floor/ground floor with the lower retail basement and later upper second floor; the highlighted entrance sits on the sidewalk level. Food court shows several food counters around shared tables. Elevator uses sliding doors and buttons; escalator uses an angled moving tread belt; exit shows a shopper leaving through an open door.",
+    "Batch 6 reused the clear handled grocery bag, and authored a hand basket without wheels to keep basket distinct from later carts. The second floor highlights the upper retail level above the street-level floor; shelves show multiple stocked tiers; line shows shoppers queued at the checkout.",
+    "Batch 7 draws the carrier bag being filled at checkout, a staff stock cart, a shopper carrying two purchase bags, and a separate wire shopping cart with groceries. Rejected the standalone changing table candidate because it lacked public restroom and caregiver context; the final baby-changing-facilities card shows a fold-down wall table, diapered infant and caregiver in a restroom.",
+    "Batch 8 reused the in-person customer-service desk; rejected phone support, the business-client consultation and a gym locker-room changing scene. Cashier centers a worker at the checkout, customer shows a shopper with a hand basket, changing room is a curtained retail fitting booth with mirror, and guarantee uses a product shield/check and receipt at the store counter.",
+    "Batch 9 reused the laptop online-shopping scene and cashier-free checkout kiosk. Rejected the toy-chest open candidate. The paired open/closed cards show the market entrance open with a customer entering versus its roller shutter fully down; convenient shows a shopper with several everyday product types close at hand along a clear one-stop route.",
+    "Batch 10 reuses the single-purchase good-deal scene as bargain, plus the register machine and attached product tag. Reject bargain-hunting and general discount scenes for bargain; reject the self-checkout kiosk for staffed checkout; bank cards and the postage-stamp album do not teach a store loyalty card. The new staffed checkout shows cashier, customer, conveyor and till, while loyalty card is presented at checkout with reward stamps/stars.",
+    "Batch 11 reused the clear thermal purchase receipt and multi-product retail sale image. The other receipt file is a duplicate; the business promotion scene does not mean a retail promotion. The new special offer highlights one featured item, the coupon is a perforated discount voucher, and till shows the register’s pulled-out coin tray.",
+    "Batch 12 authored the specific empty supermarket slot for out of stock and a premium retail boutique for upmarket. A final exact-key audit found customer service had been visually approved but not copied to the lesson; the face-to-face desk illustration is now rekeyed locally, and the final 57-card plan/build is complete with zero TODO."
+  ]
+}

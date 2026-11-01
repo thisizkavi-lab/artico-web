@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: respectable (Adjective)
+  CONTEXTUAL_DEFINITION: Worthy of respect and considered proper, shown by a trusted teacher warmly greeted by former students.
+  PEDAGOGICAL_ARCHETYPE: 3 (Social standing shown through respectful interaction)
+  SYNONYM_GUARD: Students greet their well-presented teacher with appreciation; the scene signals respectability, not just friendly niceness.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School courtyard with a quiet garden bed.
+    - Context_Layer: Older teacher stands neatly dressed at center.
+    - Focal_Layer: Two students greet the teacher with a respectful bow.
+    - Details_Layer: Book held carefully, tidy clothes and attentive posture.
+    - Lighting_Layer: Clear morning light and warm paper rim.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:respectable" data-archetype="expressive-bust">
+  <defs><linearGradient id="yard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#yard)"/><path d="M0 145 Q151 138 304 146 L304 192 L0 192Z" fill="#DCEAD6"/><path d="M23 145 Q32 117 46 113 Q60 118 64 145Z" fill="#7FB07A" stroke="#527748" stroke-width="1.5"/><path d="M242 145 Q250 116 265 112 Q280 117 285 145Z" fill="#7FB07A" stroke="#527748" stroke-width="1.5"/><ellipse cx="152" cy="162" rx="108" ry="8" fill="#BFD3B5"/></g>
+  <g id="layer-context"><path d="M25 152 Q28 128 46 125 Q64 128 66 152Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="46" cy="110" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M32 109 Q33 93 47 94 Q61 95 60 110 Q52 102 45 103Z" fill="#27364B"/><path d="M39 112 Q43 108 46 112 M50 112 Q54 108 57 112" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M245 152 Q248 128 266 125 Q284 128 286 152Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="266" cy="110" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M252 109 Q253 93 267 94 Q281 95 280 110 Q272 102 265 103Z" fill="#6B4B35"/><path d="M259 112 Q263 108 266 112 M270 112 Q274 108 277 112" fill="none" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal"><path d="M112 151 Q115 114 150 111 Q186 114 189 151Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.5"/><path d="M137 113 L136 99 L163 99 L162 115" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="149" cy="78" r="21" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2"/><path d="M128 77 Q129 55 150 56 Q170 57 170 78 Q159 67 148 68 Q139 73 128 77Z" fill="#D9DDE2" stroke="#1E2A3B" stroke-width="1.5"/><path d="M139 80 Q143 76 147 80 M153 80 Q157 76 161 80" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M139 89 Q149 96 159 89" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/><path d="M182 125 Q201 119 217 111 L222 117 Q211 132 188 141" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M136 121 L163 121 L163 146 L136 146Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.7"/><path d="M142 127 L157 127 M142 133 L157 133 M142 139 L155 139" stroke="#94A3B8" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M75 130 Q79 137 85 130 M219 128 Q222 136 228 128" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M93 63 L98 53 L103 63 L113 68 L103 73 L98 83 L93 73 L83 68Z" fill="#F2C14E"/><path d="M193 71 L197 63 L201 71 L209 75 L201 79 L197 87 L193 79 L185 75Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M132 67 Q146 59 161 65 M139 124 Q150 121 161 124" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

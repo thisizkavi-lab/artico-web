@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: bad (Adjective)
+  CONTEXTUAL_DEFINITION: Poor in quality, shown by a defective mug that leaks through a cracked side.
+  PEDAGOGICAL_ARCHETYPE: 4 (Concrete quality contrast)
+  SYNONYM_GUARD: The leaking cracked mug beside an intact neutral cup shows poor quality, separate from awful weather or food taste.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream kitchen counter and pale tile wall.
+    - Context_Layer: Owner frowns at the faulty mug.
+    - Focal_Layer: Cracked mug leaking tea beside an intact cup.
+    - Details_Layer: Crack line, drip, puddle and chipped rim.
+    - Lighting_Layer: Soft highlights on glazed surfaces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:bad" data-archetype="contrast-reference">
+  <defs><linearGradient id="kitchen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#kitchen)"/><path d="M0 139 Q150 134 304 141 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="22" y="30" width="260" height="63" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><path d="M22 61 L282 61 M88 30 L88 93 M155 30 L155 93 M222 30 L222 93" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="155" cy="162" rx="99" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M30 146 Q33 121 53 118 Q74 121 76 146Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><circle cx="53" cy="102" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M36 101 Q37 82 54 84 Q70 85 70 102 Q61 93 52 94Z" fill="#27364B"/><path d="M43 104 Q47 100 50 104 M56 104 Q60 100 63 104" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M45 113 Q53 109 61 113" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/><path d="M68 124 Q84 117 96 111 Q102 109 105 114 Q104 119 98 122 L76 138" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M115 110 Q115 95 131 95 L159 95 Q175 95 175 110 L170 146 Q167 155 145 155 Q122 155 119 146Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.6"/><path d="M174 107 Q195 103 194 122 Q193 137 172 132" fill="none" stroke="#1E2A3B" stroke-width="8"/><path d="M176 109 Q190 107 189 121 Q188 132 174 130" fill="none" stroke="#CE3D4E" stroke-width="4"/><path d="M132 96 L128 106 L136 113 L129 123 L136 131 L131 141" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M130 105 Q145 110 160 105 M130 136 Q145 141 161 137" fill="none" stroke="#F5BFA3" stroke-width="1.8"/><path d="M198 121 Q202 128 200 135 Q198 141 195 144" fill="none" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><path d="M204 146 Q217 140 230 146 Q217 152 204 146Z" fill="#8EB0DE"/><path d="M239 113 L249 113 L249 124 L239 124Z" fill="#F1F5F9" stroke="#64748B" stroke-width="1.4"/><path d="M237 112 Q244 107 251 112" fill="none" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M181 83 L187 73 L193 83 L203 88 L193 93 L187 103 L181 93 L171 88Z" fill="#D97706"/><path d="M109 83 L116 76 M161 81 L168 74" stroke="#8B5CA8" stroke-width="2.1" stroke-linecap="round"/><circle cx="144" cy="99" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M121 102 Q141 97 162 103 M241 115 Q245 113 248 115" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

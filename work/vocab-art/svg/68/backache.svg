@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: backache
+ CONTEXTUAL_DEFINITION: A dull or persistent pain in the back, especially the lower back.
+ PEDAGOGICAL_ARCHETYPE: seated person holding lower back with a lumbar pain highlight
+ SYNONYM_GUARD: Make the lower back the unmistakable location; do not reuse a general shoulder ache or headache pose.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A person sits forward on a low stool and presses both hands to the lumbar area, with a warm soft ring around the lower spine.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:backache" data-archetype="lower-back pain">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M38 151H266" stroke="#8C725A" stroke-width="1.2"/><ellipse cx="148" cy="152" rx="68" ry="5" fill="#8C725A" opacity=".18"/>
+  <path d="M98 121H191V131H98Z" fill="#8C725A"/><path d="M105 131V153M184 131V153" stroke="#725F4B" stroke-width="2"/>
+  <path d="M53 43H91V96H53Z" fill="#E5DDD0"/><path d="M59 49H85V90H59Z" fill="#A9B9B4"/>
+ </g>
+ <g id="layer-context">
+  <path d="M211 49H256V113H211Z" fill="#E4DDD1"/><path d="M219 57H248V105H219Z" fill="#C8B89E"/><path d="M224 104V116M243 104V116" stroke="#8C725A" stroke-width="2"/>
+  <path d="M84 145H215" stroke="#F6E5CE" stroke-width="1"/><circle cx="91" cy="149" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="51" r="10" fill="#D29A78"/><path d="M141 50Q142 37 152 38Q162 39 162 52L157 45H143Z" fill="#26384A"/>
+  <!-- body turned to expose the lower spine -->
+  <path d="M137 65Q151 59 166 65L176 109Q168 121 151 122Q134 119 127 108Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M139 69L121 80L115 96M164 69L181 81L186 96" stroke="#D29A78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M129 107L123 130M171 107L177 130" stroke="#26384A" stroke-width="2.7"/>
+  <!-- both hands press the lumbar area -->
+  <path d="M111 90Q107 87 111 82L119 77L129 81L130 89L123 95L120 103Q116 106 112 102Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M181 90Q185 87 181 82L173 77L164 81L163 89L170 95L173 103Q177 106 181 102Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M146 67L151 73L157 67" fill="#F6E5CE"/>
+  <path d="M146 83Q151 80 156 83M146 88Q151 85 156 88M146 93Q151 90 156 93" stroke="#26384A" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <ellipse cx="151" cy="96" rx="35" ry="24" fill="#D6A64C" opacity=".18"/><ellipse cx="151" cy="96" rx="27" ry="18" fill="none" stroke="#B85E5A" stroke-width="1.2" opacity=".6"/>
+  <path d="M115 68Q121 64 127 67M175 67Q181 64 187 68" stroke="#D6A64C" stroke-width="1.4" fill="none"/>
+  <circle cx="151" cy="78" r="1.4" fill="#B85E5A"/><path d="M145 101H157" stroke="#F6E5CE" stroke-width="1.1"/>
+  <path d="M130 122L125 126M172 121L178 126" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="89" rx="85" ry="63" fill="#E7C66B" opacity=".07"/><path d="M47 37L67 55M257 37L239 55" stroke="#FFF1C7" stroke-width="1.1" opacity=".5"/>
+  <path d="M40 151H265" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

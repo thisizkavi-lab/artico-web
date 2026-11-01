@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:wildfire" data-archetype="uncontrolled-fire-crossing-a-forested-hillside">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; wildfire. Show an uncontrolled forest fire moving across a hillside with burning trees, flames, and smoke; non-graphic, no text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fire-sky" x2="0" y2="1"><stop stop-color="#D8D9CF"/><stop offset="1" stop-color="#B6AA91"/></linearGradient>
+  <linearGradient id="fire-hill" x2="0" y2="1"><stop stop-color="#756E56"/><stop offset="1" stop-color="#474F42"/></linearGradient>
+  <linearGradient id="fire-trunk" x2="1" y2="0"><stop stop-color="#67503E"/><stop offset="1" stop-color="#392F2B"/></linearGradient>
+  <linearGradient id="fire-flame" x2="0" y2="1"><stop stop-color="#F4CD69"/><stop offset=".55" stop-color="#E58B45"/><stop offset="1" stop-color="#B84938"/></linearGradient>
+  <filter id="fire-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#342D28" flood-opacity=".24"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#fire-sky)"/><circle cx="252" cy="37" r="13" fill="#E7B657" opacity=".4"/><path d="M0 116L44 76 86 108 132 55 178 102 221 66 270 106 304 80V192H0Z" fill="#92917A"/><path d="M0 142Q62 124 125 139T236 132Q273 125 304 136V192H0Z" fill="url(#fire-hill)"/></g>
+<g id="layer-context">
+  <path d="M0 145Q57 128 114 144T230 138Q270 129 304 141V170H0Z" fill="#515B47"/>
+  <path d="M29 150V91L42 72 55 93V150Z" fill="url(#fire-trunk)" stroke="#373A32" stroke-width="1.4"/><path d="M19 99Q23 78 36 81Q38 58 48 72Q62 75 63 98Q51 91 42 100Q31 90 19 99Z" fill="#52674E"/>
+  <path d="M109 148V82L123 61 136 85V148Z" fill="url(#fire-trunk)" stroke="#373A32" stroke-width="1.4"/><path d="M98 90Q102 68 116 72Q119 48 130 64Q143 68 145 90Q132 85 123 95Q111 82 98 90Z" fill="#475D49"/>
+  <path d="M217 146V92L230 70 245 94V146Z" fill="url(#fire-trunk)" stroke="#373A32" stroke-width="1.4"/><path d="M207 99Q210 78 224 81Q227 58 238 75Q251 78 254 101Q240 95 230 104Q219 91 207 99Z" fill="#4C6149"/>
+  <path d="M0 167Q56 155 110 166T211 164Q264 153 304 164V192H0Z" fill="#625744"/>
+</g>
+<g id="layer-focal" filter="url(#fire-shadow)">
+  <path d="M45 156Q32 143 40 129Q45 119 45 106Q58 119 57 132Q68 119 72 107Q84 124 75 141Q69 153 57 158Z" fill="url(#fire-flame)"/>
+  <path d="M124 157Q109 141 118 125Q124 115 124 98Q139 112 138 128Q150 115 154 103Q166 122 157 141Q151 153 137 159Z" fill="url(#fire-flame)"/>
+  <path d="M230 154Q216 138 225 122Q231 111 230 97Q244 111 244 126Q256 114 260 102Q273 121 264 139Q257 152 244 157Z" fill="url(#fire-flame)"/>
+  <path d="M52 149Q47 140 53 132L58 143 65 132Q68 145 59 152Z" fill="#FFE18A"/><path d="M132 148Q128 139 134 130L139 142 146 130Q149 143 140 151Z" fill="#FFE18A"/>
+  <path d="M153 65Q145 52 154 41Q162 31 174 37Q182 22 194 30Q205 38 196 50Q209 55 204 66Q198 75 184 70L169 71Z" fill="#77786E" opacity=".82"/>
+</g>
+<g id="layer-details">
+  <path d="M169 38Q156 25 166 13Q174 6 184 13Q192 3 203 13Q213 23 204 34" fill="#818176" opacity=".65"/>
+  <path d="M18 173q15-6 28 0m63 8q14-6 28 0m83-9q13-6 24 0m37 14q14-6 26 0" fill="none" stroke="#9D8D68" stroke-width="1.5"/>
+  <path d="M14 139l9-8 8 2m83-17 10-8 8 3m104 21 9-8 8 2m-160 57 13-9 11 2" fill="none" stroke="#807252" stroke-width="1.5"/>
+  <circle cx="88" cy="165" r="2" fill="#D2C092"/><circle cx="191" cy="174" r="1.8" fill="#D2C092"/><circle cx="277" cy="160" r="1.7" fill="#D2C092"/>
+  <path d="M82 77q8-8 16-3m76-24q8-7 16-2" fill="none" stroke="#A19D88" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M43 109Q47 94 55 88m75 23q6-16 12-21m77 28q6-14 12-19" fill="none" stroke="#D98A4D" stroke-width="1.5"/><path d="M158 50q11-9 23-4" fill="none" stroke="#A5A396" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,277 @@
+{
+  "chapter": 73,
+  "chapter_title": "Shopping",
+  "domain_setting": "A friendly neighborhood retail district and checkout setting. Use storefronts, market stalls, service counters, online ordering, price comparison, payment and clothing fitting as appropriate.",
+  "palette": [
+    "#FAF8F3",
+    "#EAE3D5",
+    "#DDD4C3",
+    "#1E2A3B",
+    "#5479AC",
+    "#78A95F",
+    "#D9A441",
+    "#D94854",
+    "#F0C6A6",
+    "#E7EEF0",
+    "#8AA1B2"
+  ],
+  "recurring_scale_anchors": [
+    "Use 304×192 scenes with one clear shopping action, service or retail venue as the central cue; avoid readable text and numerals.",
+    "Distinguish store types by their signature goods: bread, books, fashion, meat, prepared foods, cleaning, fish, flowers, produce, tools, jewelry, shoes and toys.",
+    "Keep butcher and fish seller scenes calm and non-graphic; a seller, display counter and merchandise teach the shop role.",
+    "Flea market is a casual secondhand market with mixed wares; street market is a row of outdoor vendor stalls with produce or goods.",
+    "Store is a larger general retailer with broad merchandise and cart; shop is a smaller focused storefront; mall is a multi-store indoor complex.",
+    "Separate action direction: buy/pay to seller, sell from vendor, return/refund back to shop, exchange one item for another, pickup versus delivery.",
+    "Differentiate price concepts: bargain hunting/shop around compare offers; haggle is a buyer and seller negotiating; discount, fifty percent off, sale and slash prices show price reductions; rip-off is unfair overcharging.",
+    "For checkout, distinguish bank as financial institution, bank card/card as payment card, cash as notes and coins, receipt as proof of purchase, checkout as payment lane, refund as money returned.",
+    "Clothing group should show color swatches, fitting-room curtain, garment size measurement, try-on and whether a garment fits properly.",
+    "Use calm, ethical retail scenes; no readable signage, prices, branded logos or distressed customers."
+  ],
+  "polysemy_resolution_table": {
+    "baker": "A person who bakes or sells bread and pastries; show the baker with finished goods, not just a loaf.",
+    "butcher": "A meat seller working at a counter; keep the scene non-graphic and avoid slaughter.",
+    "fish dealer": "A fish supplier/vendor in a market context, distinct from a fishmonger serving customers at a retail counter.",
+    "fishmonger": "A seller at a fish shop counter with fresh whole fish on ice; not a fisherman or a cooked seafood plate.",
+    "flea market": "An outdoor or indoor market for secondhand goods and mixed small wares; not an insect infestation.",
+    "florist": "A flower seller arranging bouquets; distinguish from a greengrocer selling produce.",
+    "greengrocer": "A retailer selling fresh fruits and vegetables; show produce and a market stall/shop.",
+    "hardware store": "A shop selling tools and household hardware; not an electronics shop or factory.",
+    "jewelers": "A jewelry shop with a display case and fine items; avoid a lone person wearing jewelry.",
+    "mall": "A shopping center with multiple stores and shared walkways, following the shop-seller group context even though the source Japanese gloss points to a shaded promenade.",
+    "store": "A large general retailer with broad aisles or a shopping cart; distinguish from the small focused shop.",
+    "street market": "Outdoor rows of seller stalls and shoppers; distinguish from the secondhand flea market.",
+    "bargain-hunting": "A shopper comparing offers to find a good price; not haggling with a seller.",
+    "buy": "A customer gives payment and receives an item.",
+    "sell": "A seller hands merchandise to a buyer and receives payment; opposite direction from buy.",
+    "choose": "Selecting one item from several similar options.",
+    "delivery": "Goods sent to the customer by courier; distinct from a customer collecting an order.",
+    "exchange": "Replace one purchased item with another; not a currency exchange.",
+    "fit": "A garment is the correct size and shape for a person; show the clothing fit, not a furniture installation.",
+    "haggle": "A buyer and seller negotiate the price; not simply browse or compare prices.",
+    "online shopping": "A person orders items on a digital screen for delivery or pickup.",
+    "pickup": "Collect a prepared order at a counter or locker; distinguish from delivery.",
+    "shop around": "Compare several shops or offers before deciding; related to but distinct from bargaining over one price.",
+    "try on": "A person tests clothing in a fitting room; distinguish from whether it fits properly.",
+    "want": "Desire for an item, shown by attention/choice; avoid readable thought bubbles or text.",
+    "return": "Take an item back to the shop after purchase; distinct from a refund of money.",
+    "fifty percent off": "Exactly half-price concept shown with a half/paired price tag visual, with no numerals or text.",
+    "good deal": "A purchase that offers strong value; distinguish from an explicit percentage reduction.",
+    "on a tight budget": "Carefully choosing affordable necessities with a limited set of coins; no hardship stereotype.",
+    "overpriced": "An item priced higher than comparable alternatives; show price comparison without text or numbers.",
+    "percentages": "A percentage idea as a mathematical price fraction; use a pie/fraction visual, not digits.",
+    "rip-off": "Unfair overcharging for an item; show a suspiciously mismatched price comparison without depicting criminal threat.",
+    "slash prices": "A retailer reducing prices across merchandise; use crossed-down tags without numerals or readable text.",
+    "discount": "A reduced price on a single item; distinguish from a broad sale and the exact half-off term.",
+    "price": "Money amount requested for an item; no readable numerals or text.",
+    "sale": "A retail event with multiple reduced items; distinct from the action of selling.",
+    "bank": "A financial institution in the paying group, not a river bank.",
+    "card": "A bank/payment card used at checkout, not a playing or greeting card.",
+    "cash": "Paper notes and coins used directly for payment.",
+    "checkout": "A shop payment lane with register and goods; not merely a counter.",
+    "pay": "Hand money or tap a card to settle a purchase.",
+    "receipt": "A printed proof of a completed purchase; not an invoice or price list.",
+    "refund": "Money returned to a customer after a return; distinct from returning the item.",
+    "color": "Clothing color choices shown by garments or swatches; no written color names.",
+    "fitting room": "A private changing booth in a clothing shop, with curtain and mirror.",
+    "size": "The measurement/scale of clothing, shown with size comparisons or a measuring tape; distinguish from color."
+  },
+  "existing_asset_triage": {
+    "lesson_73": "Scanned 3,618 keyed SVGs. The exact-key candidate sheet contained 13 files across 10 terms; four additional semantic/near-duplicate candidates were visually considered. Retain 11 useful exact or synonym assets; reject the narrower split-bill, business-sales and duplicate shopping scenes.",
+    "reviewed_candidates": [
+      {
+        "term": "bookstore / bookshop",
+        "source": "63/bookstore.svg",
+        "decision": "keep",
+        "reason": "A retail storefront with books on display is a direct bookstore match."
+      },
+      {
+        "term": "butcher",
+        "source": "34/butcher.svg",
+        "decision": "keep",
+        "reason": "A butcher in an apron preparing meat at a counter; no gore and appropriate to the seller sense."
+      },
+      {
+        "term": "store",
+        "source": "11/store.svg",
+        "decision": "keep",
+        "reason": "Large general retailer with a broad display and shopping cart; use once."
+      },
+      {
+        "term": "store",
+        "source": "72/store.svg",
+        "decision": "duplicate",
+        "reason": "Near-identical copy of 11/store; avoid duplicate use."
+      },
+      {
+        "term": "fit",
+        "source": "15/fit.svg",
+        "decision": "keep",
+        "reason": "A suit being measured and marked as fitting correctly; appropriate to clothing context."
+      },
+      {
+        "term": "shopping",
+        "source": "58/shopping.svg",
+        "decision": "keep",
+        "reason": "A shopper carrying bags past storefront displays is a direct match."
+      },
+      {
+        "term": "bank",
+        "source": "38/bank.svg",
+        "decision": "keep",
+        "reason": "Financial institution with a secure vault motif, matching the Paying and checkout group."
+      },
+      {
+        "term": "bank",
+        "source": "72/bank.svg",
+        "decision": "duplicate",
+        "reason": "Same financial-bank illustration as 38/bank; use one candidate."
+      },
+      {
+        "term": "cash",
+        "source": "38/cash.svg",
+        "decision": "keep",
+        "reason": "Cash notes and coins held in a hand are clear."
+      },
+      {
+        "term": "pay",
+        "source": "35/pay.svg",
+        "decision": "keep",
+        "reason": "People exchange money with a bill/receipt visible; direct payment action."
+      },
+      {
+        "term": "receipt",
+        "source": "38/receipt.svg",
+        "decision": "keep",
+        "reason": "Printed receipt beside a card terminal and shopping bag, clear checkout context."
+      },
+      {
+        "term": "receipt",
+        "source": "33/receipt.svg",
+        "decision": "duplicate",
+        "reason": "A more generic receipt-and-card slip; prefer the clearer 38/receipt checkout scene."
+      },
+      {
+        "term": "size",
+        "source": "15/size.svg",
+        "decision": "keep",
+        "reason": "Several clothing sizes compared with measuring tape, direct clothing context."
+      },
+      {
+        "term": "mall",
+        "source": "72/shopping-mall.svg",
+        "decision": "keep",
+        "reason": "Semantic synonym candidate: a multi-level indoor shopping complex with several storefronts and shared escalator."
+      },
+      {
+        "term": "pay",
+        "source": "33/pay-separately.svg",
+        "decision": "reject",
+        "reason": "Shows splitting a bill, which is narrower than the general pay action."
+      },
+      {
+        "term": "sale",
+        "source": "36/sales.svg",
+        "decision": "reject",
+        "reason": "Business sales handoff, not a retail sale or price event."
+      },
+      {
+        "term": "shopping",
+        "source": "58/go-shopping.svg",
+        "decision": "reject",
+        "reason": "A near-duplicate shopping action; prefer the direct shopping-key scene."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "baker",
+      "bookstore / bookshop",
+      "boutique",
+      "butcher",
+      "delicatessen"
+    ],
+    [
+      "dry cleaners",
+      "fish dealer",
+      "fishmonger",
+      "flea market",
+      "florist"
+    ],
+    [
+      "greengrocer",
+      "hardware store",
+      "jewelers",
+      "mall",
+      "shoe store / shoe shop"
+    ],
+    [
+      "store",
+      "street market",
+      "toy store / toy shop",
+      "bargain-hunting",
+      "buy"
+    ],
+    [
+      "choose",
+      "delivery",
+      "exchange",
+      "fit",
+      "haggle"
+    ],
+    [
+      "online shopping",
+      "pickup",
+      "sell",
+      "shop around",
+      "shopping"
+    ],
+    [
+      "try on",
+      "want",
+      "return",
+      "fifty percent off",
+      "good deal"
+    ],
+    [
+      "on a tight budget",
+      "overpriced",
+      "percentages",
+      "rip-off",
+      "slash prices"
+    ],
+    [
+      "discount",
+      "price",
+      "sale",
+      "bank",
+      "card"
+    ],
+    [
+      "cash",
+      "checkout",
+      "pay",
+      "receipt",
+      "refund"
+    ],
+    [
+      "color",
+      "fitting room",
+      "size"
+    ]
+  ],
+  "glossary_context_notes": [
+    "Live course groups establish shopping-context senses for bank (Paying and checkout) and mall (Types of shops and sellers), despite source Japanese glosses that suggest river bank and a shaded promenade.",
+    "Exact-key and near-synonym candidate renders were reviewed at work/vocab-art/review/lesson-73-candidates.png; asset decisions are documented in existing_asset_triage.",
+    "Batch 1 retained the clear bookshop storefront and butcher counter; the baker is shown working beside oven and bread, boutique has a fashion mannequin/handbag, and delicatessen has a staffed prepared-food display. Replaced a misleading cross-shaped boutique mark after review.",
+    "Batch 2 distinguishes dry cleaning/pressing from home laundry, fish dealer at a market crate stall from fishmonger serving a retail customer, secondhand flea-market wares from fresh-goods street market, and florist flowers from greengrocer produce. Replaced a cross-shaped flea-market object with a vintage clock after review.",
+    "Batch 3 used the previously reviewed indoor shopping-mall atrium for mall; authored a produce seller with scales, hardware tools, jewelry display and shoe shop. Redesigned the shoes after review for clear side-profile silhouettes. Rejected the grocery-store aisle as a greengrocer match because it did not show a seller.",
+    "Batch 4 reused the reviewed large general-store cart scene. Street market is fresh stalls while flea market is secondhand wares; toy store has toys; bargain hunting compares matching goods and coin-count price tags; buy shows goods moving to the customer during payment.",
+    "Batch 5 reused the reviewed suit-fit illustration. Choose shows selection from several products; delivery shows a parcel being handed to a recipient at the door; exchange swaps one garment for another; haggle now shows buyer and seller making different coin offers with a back-and-forth arrow.",
+    "Batch 6 reused the reviewed shopping-street activity scene. Online shopping is shown on a laptop; pickup is collection of a prepared bag at the shop counter; sell focuses on the shopkeeper receiving coins as goods go to a customer; shop around compares the same bag at two stores with different coin-count prices.",
+    "Batch 7 follows the shopping sense of return as taking an item back to the shop, distinct from a refund. Try on shows clothing being checked in a fitting-room mirror; want focuses attention on one desired shop item. Fifty percent off compares four coin marks to two and includes a split-coin cue; good deal pairs a quality item and modest coin price with approval marks, without implying a percentage.",
+    "Batch 8 shows budget-conscious essential shopping with three coins and a small wallet, bread and an apple; overpriced uses matching goods with two versus six coins; percentages use a 100-cell grid and a fractional circle; rip-off shows a tiny item weighed against many coins with a wary shopper; slash prices shows a retailer striking through multiple tags.",
+    "Batch 9 keeps bank as the financial institution (the payment group overrides its conflicting riverbank Japanese gloss); the direct bank art has the secure vault/teller cues. Discount is a coupon-style reduction for one item; price is a plain attached tag; sale is a retail event with multiple reduced goods; card is a payment card at a checkout terminal.",
+    "Batch 10 reused the reviewed physical-cash, general pay and completed-sale receipt scenes. Checkout is a self-service payment lane with conveyor, scanner and terminal; refund shows the item going to the clerk while coins flow back to the customer, distinct from the item-return action alone.",
+    "Batch 11 added the same three shirt styles in different colors and a curtained fitting-room booth. Reused the measuring-tape size comparison after recoloring all three garments uniformly blue so the scale cue does not compete with color."
+  ]
+}

@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: hurt
+ CONTEXTUAL_DEFINITION: To cause physical pain or injury to someone.
+ PEDAGOGICAL_ARCHETYPE: a gentle accidental shoulder bump and an apologetic reaction
+ SYNONYM_GUARD: Show the action that causes pain; do not depict a severe injury or deliberate attack.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: In a quiet hallway, one person accidentally bumps a passerby's shoulder with a soft bag; the passerby winces and rubs the spot while the other person reacts with concern.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:hurt" data-archetype="accidentally causing mild physical pain">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 153H304V192H0Z" fill="#C8B89E"/><path d="M0 153H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="153" cy="151" rx="100" ry="6" fill="#8C725A" opacity=".18"/><path d="M44 147H260" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M57 38H101V112H57Z" fill="#D5C9B7"/><path d="M63 44H95V106H63Z" fill="#A9B9B4"/><path d="M218 37H257V112H218Z" fill="#D5C9B7"/><path d="M224 43H251V106H224Z" fill="#E8E1D4"/>
+ </g>
+ <g id="layer-context">
+  <path d="M119 49H184V111H119Z" fill="#E5DDD0"/><path d="M126 56H177V105H126Z" fill="#F6E5CE"/><path d="M151 56V105M126 81H177" stroke="#D6CBB9" stroke-width="1.2"/>
+  <path d="M47 150H260" stroke="#8C725A" stroke-width="1"/><ellipse cx="99" cy="146" rx="22" ry="3" fill="#D6A64C" opacity=".23"/>
+ </g>
+ <g id="layer-focal">
+  <!-- person who bumps the passerby -->
+  <circle cx="103" cy="65" r="10" fill="#D29A78"/><path d="M93 64Q94 51 104 52Q114 53 113 66L108 59L96 61Z" fill="#26384A"/>
+  <path d="M90 78Q103 71 116 79L120 119H86Z" fill="#798C72" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M91 84L83 99L104 107L119 98M112 84L130 95L144 93" fill="none" stroke="#D29A78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M92 117L91 145M115 117L118 145" stroke="#26384A" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M141 87Q154 81 166 88L175 100L161 107L143 102Z" fill="#C8B89E" stroke="#725F4B" stroke-width="1.2"/>
+  <path d="M145 89L160 104M151 85L168 98M144 87Q143 80 151 79Q158 79 160 85" stroke="#F6E5CE" stroke-width="1" fill="none"/>
+  <!-- passerby recoils and holds the bumped shoulder -->
+  <circle cx="193" cy="63" r="11" fill="#C88F6C"/><path d="M182 62Q184 48 195 50Q205 52 204 64L199 57L184 59Z" fill="#26384A"/>
+  <path d="M180 78Q193 71 207 79L216 119H174Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M181 84L176 90L185 96M206 83L216 96L211 107" fill="none" stroke="#C88F6C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M181 84Q177 81 180 77L184 75L188 79L186 85Z" fill="#C88F6C" stroke="#8F5F57" stroke-width=".8"/>
+  <path d="M181 117L178 145M207 117L212 145" stroke="#26384A" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M188 76L194 83L200 76" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M99 62Q102 59 105 62M107 62L111 61" stroke="#654E43" stroke-width="1" fill="none"/><path d="M189 60L193 62M197 62L201 60" stroke="#654E43" stroke-width="1.2" fill="none"/>
+  <path d="M188 70Q194 66 200 70" stroke="#8F5F57" stroke-width="1.2" fill="none"/><path d="M197 79L202 84L207 79" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <circle cx="174" cy="91" r="8" fill="#D6A64C" opacity=".2"/><circle cx="174" cy="91" r="4" fill="none" stroke="#B85E5A" stroke-width="1.2" opacity=".8"/>
+  <path d="M168 83L165 79M175 81V77M181 84L185 80M166 94L161 95M182 98L187 100" stroke="#D6A64C" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M109 81L116 85M110 88L117 92M183 94L188 97" stroke="#A8B9A2" stroke-width="1"/>
+  <circle cx="133" cy="114" r="1.5" fill="#D6A64C"/><circle cx="139" cy="118" r="1.2" fill="#B85E5A"/><path d="M97 74L101 77M201 74L205 77" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="91" rx="103" ry="66" fill="#E7C66B" opacity=".06"/><path d="M51 29L66 44M254 29L239 44" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M45 148H260" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

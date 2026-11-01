@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: baby carriage / pram (UK) (Noun)
+  CONTEXTUAL_DEFINITION: A deep covered wheeled carriage for carrying a baby while lying down.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The classic pram has a deep bassinet body, curved hood, and large wheels, distinguishing it from a compact stroller with a seated child.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet neighborhood path.
+    - Context_Layer: Soft lawn edge and a small canopy tree.
+    - Focal_Layer: Deep covered baby carriage with large wheels.
+    - Details_Layer: Raised hood, bassinet body, handle, and axle.
+    - Lighting_Layer: Pale highlight on the hood fabric.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:baby carriage / pram (uk)" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="pram-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="pram-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pram-bg)"/><path d="M0 151Q75 144 153 151T304 148V192H0Z" fill="#DCEAD6"/><path d="M36 124Q44 91 60 120M248 124Q262 89 278 121" fill="#829A83"/><path d="M49 122V149M263 120V149" stroke="#80513F" stroke-width="4"/><circle cx="70" cy="111" r="4" fill="#D9857F"/><circle cx="251" cy="105" r="4" fill="#F2C14E"/></g>
+  <g id="layer-context"><path d="M78 159H237" stroke="#64748B" stroke-width="3"/><circle cx="112" cy="155" r="20" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="3"/><circle cx="214" cy="155" r="20" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="3"/><circle cx="112" cy="155" r="6" fill="#64748B"/><circle cx="214" cy="155" r="6" fill="#64748B"/><path d="M215 105L267 62" fill="none" stroke="#80513F" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#pram-shadow)"><path d="M76 97Q76 86 87 86H218Q229 86 229 98V133H76Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.8"/><path d="M92 89Q92 51 151 46Q207 50 210 89Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.8"/><path d="M100 87Q110 56 151 55Q190 55 202 87" fill="#DCECFB" stroke="#315782" stroke-width="1.8"/><path d="M100 98H202V123H100Z" fill="#EAA9A1" stroke="#A95059" stroke-width="1.6"/><path d="M76 133H229" stroke="#80513F" stroke-width="5"/><path d="M94 135L106 149M211 135L219 149M225 104L246 111" stroke="#80513F" stroke-width="4" stroke-linecap="round"/><path d="M245 111Q255 105 267 112" fill="none" stroke="#80513F" stroke-width="4" stroke-linecap="round"/><path d="M116 93Q151 88 188 93" fill="none" stroke="#FFFFFF" stroke-width="2.2"/></g>
+  <g id="layer-details"><path d="M107 47Q151 36 198 47" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="83" cy="76" r="2.4" fill="#D9A441"/><circle cx="218" cy="76" r="2.4" fill="#D9A441"/><path d="M119 102Q151 97 185 102" fill="none" stroke="#F3ECE1" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="158" cy="104" rx="118" ry="73" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M86 34Q151 20 223 34" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

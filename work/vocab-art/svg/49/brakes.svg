@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: brakes (Noun)
+  CONTEXTUAL_DEFINITION: Bicycle levers and calipers that grip the wheel rims to slow the bicycle.
+  PEDAGOGICAL_ART_DIRECTOR: Show both the hand lever at the handlebar and the caliper pads closing on a wheel rim.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: These are bicycle rim brakes, not a car brake pedal or a general stopping action.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Close detail of a bicycle front wheel, fork, curved caliper arms with paired pads, and a cable leading toward a hand lever.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:brakes" data-archetype="bicycle-brakes">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="br-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="br-metal" x2="1" y2="1"><stop stop-color="#8CA7A8"/><stop offset="1" stop-color="#3F5B62"/></linearGradient><linearGradient id="br-ground" x2="0" y2="1"><stop stop-color="#A48E6B"/><stop offset="1" stop-color="#755D48"/></linearGradient><filter id="br-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#253640" flood-opacity=".23"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#br-sky)"/><path d="M0 128Q82 111 159 125T304 119V192H0Z" fill="#A9B994"/><path d="M0 154H304V192H0Z" fill="url(#br-ground)"/></g>
+ <g id="layer-context"><path d="M22 127L39 82L56 127ZM250 125L269 73L288 125Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="156" cy="158" rx="84" ry="5" fill="#34483D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#br-shadow)">
+  <circle cx="155" cy="126" r="48" fill="none" stroke="#344A50" stroke-width="4"/><circle cx="155" cy="126" r="42" fill="none" stroke="#B7C7BD" stroke-width="1.8"/><circle cx="155" cy="126" r="3" fill="#536E70"/>
+  <path d="M155 126L183 65L202 65M155 126L125 62" fill="none" stroke="url(#br-metal)" stroke-width="4" stroke-linecap="round"/><path d="M195 65h13l4-6h12" fill="none" stroke="#425D60" stroke-width="3" stroke-linecap="round"/>
+  <path d="M171 71Q155 74 145 88L149 102Q158 88 170 85L181 97Q184 81 174 73Z" fill="#789294" stroke="#344A50" stroke-width="2"/><circle cx="154" cy="82" r="2" fill="#D7834B"/><circle cx="175" cy="83" r="2" fill="#D7834B"/>
+  <rect x="143" y="99" width="10" height="5" rx="1.5" fill="#D7834B" stroke="#704D3A" stroke-width=".8"/><rect x="178" y="95" width="10" height="5" rx="1.5" fill="#D7834B" stroke="#704D3A" stroke-width=".8"/>
+  <path d="M181 71Q207 74 220 89L222 103M208 65Q222 66 232 72" fill="none" stroke="#344A50" stroke-width="1.8"/><path d="M228 70l-4 7 8 3 5-7" fill="#D7834B" stroke="#344A50" stroke-width="1.3"/><path d="M229 76l6-4" fill="none" stroke="#FFF0D1" stroke-width="1"/>
+  <path d="M117 81L138 94M117 89L139 102M174 112L190 126M173 119L190 133M145 126L165 126" fill="none" stroke="#C9D4CE" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M117 121A39 39 0 0 1 145 82M166 86A39 39 0 0 1 192 113" fill="none" stroke="#F6F4E8" stroke-width="1.3"/><path d="M151 106l-5 9m24-26 6-4m37-7 5 2" fill="none" stroke="#E6C678" stroke-width="1.2"/><circle cx="155" cy="126" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M118 120A39 39 0 0 1 144 83M116 81l17 11" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".55"/><path d="M143 99h9m26-4h9" fill="none" stroke="#FFD89A" stroke-width="1.1"/><circle cx="231" cy="75" r="1.3" fill="#FFF8E7"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: confident
+  CONTEXTUAL_DEFINITION: Certain of one's ability and willing to act or speak without excessive doubt.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker presenting a clear idea with a steady, self-assured posture.
+  PEDAGOGICAL_ARCHETYPE: 8 - Self-assured presentation
+  SYNONYM_GUARD: Show trust in one's ability during an action; determination is persistence toward an endpoint despite setbacks.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a presenter at x=101..155 standing upright beside a simple plan board at x=174..241. The presenter gestures with an open hand toward the finished plan while two colleagues watch attentively below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:confident" data-archetype="self-assured-presentation">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="confident-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="confident-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="confident-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="confident-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="170" y="38" width="76" height="63" rx="3" fill="url(#confident-board)" stroke="#547A56" stroke-width="1.1"/><path d="M180 85 L193 70 L205 78 L220 54 L236 61" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M180 91 H236" stroke="#CBD5E1" stroke-width="1"/><path d="M43 135 H261 V145 H43 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M57 145 V155 M247 145 V155" stroke="#965D28" stroke-width="2"/><path d="M181 104 H234" stroke="#64748B" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#confident-shadow)"><path d="M92 126 Q94 99 108 92 L109 82 Q105 78 107 70 Q115 61 126 64 Q136 67 133 78 L131 86 Q145 92 147 123 L144 136 H96 Z" fill="url(#confident-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="121" cy="73" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M112 71 Q114 63 122 63 Q130 64 134 71 Q126 67 119 68 Z" fill="#3D342D"/><path d="M105 99 Q121 93 137 99" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M98 105 L83 116 M141 105 L158 83" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M83 116 L73 119 M158 83 L168 77" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M51 132 Q53 116 62 111 L63 104 Q60 101 62 95 Q68 89 77 91 Q84 93 82 101 L80 106 Q89 111 90 129 L88 136 H54 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="72" cy="99" rx="6" ry="7" fill="#C7835C"/><path d="M213 132 Q215 116 224 111 L225 104 Q222 101 224 95 Q230 89 239 91 Q246 93 244 101 L242 106 Q251 111 252 129 L250 136 H216 Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="234" cy="99" rx="6" ry="7" fill="#D89A6C"/></g>
+  <g id="layer-details"><path d="M116 59 L121 52 L126 59" fill="none" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="163" cy="65" r="2" fill="#A8D4A2"/><circle cx="151" cy="116" r="2" fill="#8EB0DE"/><path d="M177 45 H238" stroke="#FFFFFF" stroke-width=".9"/><path d="M60 134 H84 M222 134 H246" stroke="#DCE8D9" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="81" rx="100" ry="66" fill="url(#confident-halo)" opacity=".16"/><path d="M170 41 H246" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: caterpillar (noun)
+  CONTEXTUAL_DEFINITION: A soft segmented larva crawling on and chewing a leaf before it becomes a moth or butterfly.
+  PEDAGOGICAL_ARCHETYPE: 1 - Small creature interacting with habitat
+  SYNONYM_GUARD: Use a long series of rounded body segments, tiny prolegs, and a nibbled leaf; do not show a winged butterfly.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a bright green arched segmented caterpillar x=74..220 y=94..134 on a broad leaf, small head at right with two short antennae, repeated round segments, multiple tiny feet, and a bite-shaped leaf edge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:caterpillar" data-archetype="leaf-eating-caterpillar">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#84B76A;--c-secondary:#4D8049;--c-accent:#DFA84D;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="caterpillar-sky" x2="0" y2="1"><stop stop-color="#DBEAF0"/><stop offset="1" stop-color="#F6F1E5"/></linearGradient>
+  <linearGradient id="caterpillar-leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AAC97E"/><stop offset="1" stop-color="#6F9D5A"/></linearGradient>
+  <linearGradient id="caterpillar-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B4D86E"/><stop offset="1" stop-color="#6BA553"/></linearGradient>
+  <filter id="caterpillar-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#caterpillar-sky)"/><path d="M0 137Q78 127 150 138T304 131V192H0Z" fill="#DDE6D5"/><path d="M0 156Q88 147 158 158T304 151V192H0Z" fill="#C8D7BD"/><circle cx="253" cy="42" r="22" fill="#F5D88F" opacity=".5"/></g>
+ <g id="layer-context"><path d="M46 147Q111 123 174 124Q227 124 259 106Q246 147 192 153Q111 162 46 147Z" fill="url(#caterpillar-leaf)" stroke="#5D864F" stroke-width="1.5"/><path d="M58 147Q150 138 245 112" fill="none" stroke="#D5E6B0" stroke-width="2" stroke-linecap="round"/><path d="M115 139l-6-15m42 10 3-16m34 11 12-15" fill="none" stroke="#8EB270" stroke-width="1.3"/></g>
+ <g id="layer-focal" filter="url(#caterpillar-shadow)"><circle cx="93" cy="116" r="16" fill="url(#caterpillar-body)" stroke="#4D814A" stroke-width="1.3"/><circle cx="116" cy="107" r="17" fill="url(#caterpillar-body)" stroke="#4D814A" stroke-width="1.3"/><circle cx="139" cy="101" r="17" fill="url(#caterpillar-body)" stroke="#4D814A" stroke-width="1.3"/><circle cx="162" cy="98" r="16" fill="url(#caterpillar-body)" stroke="#4D814A" stroke-width="1.3"/><circle cx="184" cy="101" r="15" fill="url(#caterpillar-body)" stroke="#4D814A" stroke-width="1.3"/><circle cx="205" cy="105" r="13" fill="#9BC96C" stroke="#4D814A" stroke-width="1.3"/><circle cx="214" cy="100" r="2.2" fill="#1E2A3B"/><circle cx="215" cy="99" r=".7" fill="#FFFFFF"/><path d="M217 105q8 3 12-1" fill="none" stroke="#526F3D" stroke-width="1.2" stroke-linecap="round"/><path d="M211 94q5-9 9-7m-7 8q9-8 12-4" fill="none" stroke="#578448" stroke-width="1.4" stroke-linecap="round"/><path d="M91 130l-3 7m20-20-2 12m20-21 1 13m21-14 3 13m17-12 3 13m14-10 4 13m-82-4-6 4m38-1 7 3m39 1 7 4" fill="none" stroke="#588449" stroke-width="1.8" stroke-linecap="round"/><circle cx="116" cy="105" r="2" fill="#E5D98B"/><circle cx="139" cy="99" r="2" fill="#E5D98B"/><circle cx="162" cy="96" r="2" fill="#E5D98B"/><circle cx="184" cy="99" r="2" fill="#E5D98B"/></g>
+ <g id="layer-details"><path d="M44 150l-3-9m210-31 8-8m-13 12 8 1" fill="none" stroke="#80946D" stroke-width="1.4"/><circle cx="67" cy="135" r="1.2" fill="#D5E7B1"/><path d="M104 97q6-6 13-5m26-8q6-2 11 1" fill="none" stroke="#E5F1B7" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M92 107q7-13 18-11m23-8q8-4 14-1" fill="none" stroke="#F2FFD0" stroke-width="1.5" opacity=".78" stroke-linecap="round"/><ellipse cx="151" cy="108" rx="69" ry="26" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

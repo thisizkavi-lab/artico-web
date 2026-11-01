@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: blond hair (Noun phrase)
+  CONTEXTUAL_DEFINITION: Hair in a pale golden or yellow-blond color.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Use light wheat-gold strands, distinct from copper-red and brown hair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Muted neckline.
+    - Focal_Layer: Long pale-gold hair over shoulders.
+    - Details_Layer: Flowing wheat-colored locks.
+    - Lighting_Layer: Bright warm highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:blond hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="99" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="89" rx="110" ry="73" fill="#FEF3C7" opacity=".45"/><path d="M76 165Q83 131 121 122H183Q220 132 228 165Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M105 157Q97 121 99 81Q101 43 152 39Q203 43 205 81Q207 121 199 157Z" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M96 104Q88 55 116 39Q150 18 184 37Q214 54 207 110L224 161Q204 169 188 156L184 92Q152 80 117 91L113 157Q94 168 76 159Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M121 96Q131 91 140 96M164 96Q174 91 183 96" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M123 103Q131 106 139 103M166 103Q174 106 182 103" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 101L148 117L155 120M138 137Q152 144 167 137" fill="none" stroke="#A86F45" stroke-width="1.7"/>
+  <path d="M109 48Q132 29 160 35M180 44Q198 59 198 84M88 153Q103 144 111 120M216 151Q199 142 194 119" fill="none" stroke="#F4DBA0" stroke-width="3" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M91 67Q77 94 87 124M215 77Q228 101 218 123" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5"/>
+</svg>

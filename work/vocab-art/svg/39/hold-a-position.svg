@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: hold a position (workplace phrase)
+  CONTEXTUAL_DEFINITION: Keep or occupy a particular job or role in an organization.
+  PEDAGOGICAL_ART_DIRECTOR: Anchor the worker to one recognizable desk role while workplace pressure swirls around them; communicate staying in the role rather than a physical pose.
+  PEDAGOGICAL_ARCHETYPE: 3 - Expressive professional role with contextual stability cue
+  SYNONYM_GUARD: Do not depict sports rank, military stance, or simply holding an object; show a person occupying a stable work role.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center an office professional seated at x=132..179, y=65..136, behind a fixed desk at y=139. Place a simple unlettered identity badge on the jacket and a chair back framing the shoulders. Let two pale moving-paper arcs pass outside, while a gold focus ring stays centered on the worker and desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:hold a position" data-archetype="professional-role">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="hold-chair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="hold-jacket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F93C5"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="hold-focus"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="hold-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="hold-bust" d="M118 128 Q120 104 138 99 L140 91 Q134 85 136 75 Q138 61 153 60 Q168 61 170 76 Q171 86 164 92 L168 101 Q185 106 187 129 L177 140 H127 Z"/>
+    <clipPath id="hold-bust-clip"><use href="#hold-bust"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="165" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Stable office chair and role-focused workspace -->
+  <g id="layer-context"><path d="M49 146 H258" stroke="#C88446" stroke-width="2"/><path d="M128 112 Q128 105 135 105 H170 Q177 105 177 113 V132 H128 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M137 111 H168 V126 H137 Z" fill="#F8FBFE" stroke="#94A3B8" stroke-width="1.2"/><path d="M143 132 V145 M162 132 V145 M135 144 H169" stroke="#64748B" stroke-width="2.1" stroke-linecap="round"/><path d="M38 139 H266 V151 H38 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="2"/><path d="M47 143 H256" stroke="#F1C48F" stroke-width="1.8"/><path d="M53 151 V159 M249 151 V159" stroke="#965D28" stroke-width="3" stroke-linecap="round"/><rect x="221" y="76" width="35" height="47" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.5"/><path d="M227 85 H250 M227 91 H246 M227 109 H248" stroke="#94A3B8" stroke-width="1.3"/><circle cx="237" cy="100" r="5" fill="#F2C14E" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 3. Professional occupies and keeps the same role -->
+  <g id="layer-focal" filter="url(#hold-shadow)"><path d="M122 102 Q122 79 137 76 Q141 57 153 56 Q166 57 171 76 Q185 80 184 103 L177 114 H129 Z" fill="url(#hold-chair)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M127 95 Q120 90 120 102 V127 H133 V105 M179 95 Q186 90 186 102 V127 H174 V105" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><use href="#hold-bust" fill="url(#hold-jacket)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><g clip-path="url(#hold-bust-clip)"><path d="M116 103 Q151 89 190 105 V144 H116Z" fill="#3D5F91"/><path d="M128 104 Q150 97 175 104" fill="none" stroke="#8EB0DE" stroke-width="3"/></g><ellipse cx="153" cy="79" rx="12" ry="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M141 77 Q142 61 153 62 Q165 62 166 76 Q158 69 151 70 Q147 77 141 77 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.3"/><use href="#hold-bust" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><circle cx="149" cy="79" r="1.2" fill="#1E2A3B"/><circle cx="158" cy="79" r="1.2" fill="#1E2A3B"/><path d="M149 85 Q153 88 158 85" fill="none" stroke="#1E2A3B" stroke-width="1.1" stroke-linecap="round"/><path d="M147 101 L154 110 L161 101 L159 127 H149 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.3"/><path d="M133 123 Q125 128 118 138 L124 143 Q136 140 143 132" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M170 123 Q178 128 185 137 L180 143 Q168 140 161 132" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <!-- 4. Identity badge and outside work pressure -->
+  <g id="layer-details"><path d="M169 112 L178 114 L176 128 L166 125 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="171" cy="118" r="2.2" fill="#F8FBFE"/><path d="M174 122 L171 127" stroke="#64748B" stroke-width="1.1"/><path d="M51 68 C76 58 86 67 93 79" fill="none" stroke="#8EB0DE" stroke-width="2" stroke-dasharray="4 4"/><path d="M88 75 L95 82 L86 83 Z" fill="#8EB0DE"/><path d="M250 56 C230 51 222 59 216 70" fill="none" stroke="#8EB0DE" stroke-width="2" stroke-dasharray="4 4"/><path d="M217 64 L214 73 L223 70 Z" fill="#8EB0DE"/><path d="M64 74 L81 69 L86 83 L69 88 Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M70 77 L80 74" stroke="#94A3B8" stroke-width="1.1"/></g>
+  <!-- 5. Unmoved ring marks continued occupancy of the role -->
+  <g id="layer-lighting"><ellipse cx="153" cy="105" rx="76" ry="63" fill="url(#hold-focus)"/><ellipse cx="153" cy="106" rx="51" ry="54" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 5" opacity=".72"/><path d="M145 69 H154" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M101 102 V111 M205 101 V110" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

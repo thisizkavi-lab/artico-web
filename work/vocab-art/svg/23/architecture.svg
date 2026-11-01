@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: architecture (Noun)
+  CONTEXTUAL_DEFINITION: The school subject and practice of planning and designing buildings.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: A student studies building plans and a scale model, distinguishing architecture from engineering or general art.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright design classroom with pale window and drafting desk.
+    - Context_Layer: Shelves with small architectural models.
+    - Focal_Layer: Open architectural plan beside a three-dimensional house model.
+    - Details_Layer: Triangle ruler, compass, and unlettered plan lines.
+    - Lighting_Layer: Warm highlights on paper and model roof.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:architecture" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="arch-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="arch-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#arch-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 29H91V84H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 30V83M22 56H90" stroke="#FFFFFF" stroke-width="2.5"/><path d="M213 40H275V105H213Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.5"/><path d="M220 50H267M220 60H267" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M0 146H304" stroke="#A98A64" stroke-width="3"/><rect x="30" y="107" width="83" height="8" rx="3" fill="#A98A64"/><rect x="38" y="115" width="7" height="27" fill="#8D765A"/><rect x="98" y="115" width="7" height="27" fill="#8D765A"/><path d="M42 105L53 91L64 105ZM78 105L91 83L103 105Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#arch-shadow)"><path d="M36 132L142 106L194 117L92 150Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="2"/><path d="M45 130L143 110L183 118L92 145Z" fill="#F5F0E5" stroke="#5479AC" stroke-width="1.3"/><path d="M62 126L88 135M78 122L104 132M94 119L120 128M109 116L137 125M61 135L112 121M80 141L132 124M99 146L151 128" stroke="#88A9D0" stroke-width="1.2"/><path d="M168 108L209 84L250 107L250 143L168 143Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.2"/><path d="M160 108L209 78L258 107L250 113L209 89L168 115Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M179 118H195V135H179ZM204 117H217V129H204ZM225 117H239V129H225Z" fill="#DCECFB" stroke="#315782" stroke-width="1.3"/><path d="M218 143V127Q231 119 242 127V143" fill="#E8DDC8" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M122 148L145 104L153 108L131 152Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.3"/><path d="M148 104L153 98L157 104L153 110Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M178 111L201 96M178 116L201 101" stroke="#F3B9A8" stroke-width="1.5"/><circle cx="51" cy="119" r="2" fill="#D9A441"/><path d="M34 160Q141 143 257 158" fill="none" stroke="#C9B99F" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="97" rx="125" ry="78" fill="#FEF9C3" opacity=".08"/><path d="M160 107L209 78L258 107" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linejoin="round" opacity=".78"/></g>
+</svg>

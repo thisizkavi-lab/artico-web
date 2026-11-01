@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: pedestrians
+  CONTEXTUAL_DEFINITION: People traveling on foot along a street or pedestrian path.
+  PEDAGOGICAL_ART_DIRECTOR: Show several walkers on a sidewalk and zebra crossing while road traffic waits in a separate lane.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + spatial cue
+  SYNONYM_GUARD: They are outside vehicles and moving on foot; no luggage queue or home-to-work repeated-route cue.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Sidewalk at y=128..150, zebra crossing spans x=28..174; show three adult walkers between x=67..190; muted car waits behind a curb at x=207..280.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:pedestrians" data-archetype="people-on-foot">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="pedestrian-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#344E78"/></linearGradient>
+    <linearGradient id="pedestrian-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D6E0E4"/><stop offset="1" stop-color="#A6B6BE"/></linearGradient>
+    <radialGradient id="pedestrian-halo"><stop stop-color="#F5E6BB" stop-opacity=".56"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="pedestrian-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="126" width="304" height="66" fill="#E4E2DC"/><path d="M0 126 H304" stroke="#1E2A3B" stroke-width="1.7"/><path d="M14 158 H289" stroke="#C5C6C0" stroke-width="1.5"/><path d="M23 128 H45 V147 H23 Z M54 128 H76 V147 H54 Z M85 128 H107 V147 H85 Z M116 128 H138 V147 H116 Z M147 128 H169 V147 H147 Z" fill="#FFFFFF"/><ellipse cx="150" cy="157" rx="132" ry="8" fill="#D2CEC5" opacity=".7"/></g>
+  <g id="layer-context"><path d="M22 60 H280" stroke="#D8E4E5" stroke-width="1"/><circle cx="53" cy="42" r="13" fill="#F2C14E" opacity=".7"/><path d="M16 111 H294" stroke="#64748B" stroke-width="1.4"/><path d="M196 92 L207 76 Q213 69 224 69 H262 Q275 71 281 84 L287 105 H194 Z" fill="url(#pedestrian-car)" stroke="#7B8991" stroke-width="1.6"/><path d="M212 77 H232 V92 H202 Z M236 77 H259 Q267 79 271 92 H236 Z" fill="#CEDFE6" stroke="#8A9AA1" stroke-width="1"/><circle cx="216" cy="105" r="9" fill="#46515C"/><circle cx="269" cy="105" r="9" fill="#46515C"/><path d="M190 89 H194" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#pedestrian-shadow)"><path d="M78 94 Q78 84 87 84 Q96 84 96 94 V113 H78 Z" fill="url(#pedestrian-coat)" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="87" cy="78" r="7" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M82 113 L78 136 M91 113 L100 136" stroke="#1E2A3B" stroke-width="4.2" stroke-linecap="round"/><path d="M80 95 L69 105 M94 95 L103 104" stroke="#DCA47D" stroke-width="4" stroke-linecap="round"/><path d="M112 101 Q112 91 121 91 Q130 91 130 101 V118 H112 Z" fill="#D17F62" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="121" cy="85" r="7" fill="#C99270" stroke="#1E2A3B" stroke-width="1.1"/><path d="M116 118 L113 139 M126 118 L133 139" stroke="#1E2A3B" stroke-width="4.2" stroke-linecap="round"/><path d="M115 101 L105 111 M127 101 L137 109" stroke="#C99270" stroke-width="4" stroke-linecap="round"/><path d="M145 91 Q145 81 154 81 Q163 81 163 91 V111 H145 Z" fill="#7DAA78" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="154" cy="75" r="7" fill="#D9A27B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M150 111 L146 136 M159 111 L167 136" stroke="#1E2A3B" stroke-width="4.2" stroke-linecap="round"/><path d="M148 91 L139 101 M160 91 L171 99" stroke="#D9A27B" stroke-width="4" stroke-linecap="round"/><path d="M70 137 H178" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M65 71 Q83 62 101 71 M110 65 Q127 58 141 66 M145 59 Q161 55 175 62" fill="none" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M84 76 H90 M118 83 H124 M151 73 H157" stroke="#1E2A3B" stroke-width="1"/><circle cx="102" cy="123" r="2" fill="#F2C14E"/><path d="M207 98 H282" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><path d="M41 150 H69 M178 150 H196" stroke="#A6A69F" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="147" cy="84" rx="119" ry="74" fill="url(#pedestrian-halo)" opacity=".13"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M22 124 H294" stroke="#1E2A3B" stroke-width=".8" opacity=".3"/></g>
+</svg>

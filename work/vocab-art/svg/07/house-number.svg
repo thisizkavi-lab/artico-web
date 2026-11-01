@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 07 - Sharing information
+  WORD: house number (Noun)
+  CONTEXTUAL_DEFINITION: The number identifying a particular home on a street, shown on a plaque beside its front door.
+  PEDAGOGICAL_ARCHETYPE: 4 (One specific identifying detail in its real-world setting)
+  SYNONYM_GUARD: A visitor points directly to the home's small identifying plaque; its dots stand in for digits without showing numerals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Residential facade and short walkway.
+    - Context_Layer: Visitor stands outside the entrance.
+    - Focal_Layer: House door with a plaque at eye level.
+    - Details_Layer: Three colored pips on the plaque, no digits or letters.
+    - Lighting_Layer: Warm highlight around the plaque.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="7:house number" data-archetype="contrast-reference">
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 149 Q152 142 304 149 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="160" cy="165" rx="110" ry="8" fill="#DDD4C3"/><path d="M18 68 L18 151 M286 68 L286 151" stroke="#CBD5E1" stroke-width="2"/><path d="M34 70 L152 27 L272 70" fill="#B97840" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-context"><path d="M23 151 Q25 129 42 126 Q59 129 61 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><circle cx="42" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M27 110 Q28 93 43 94 Q57 96 57 111 Q49 104 40 105Z" fill="#27364B"/><path d="M35 114 Q42 119 49 114" fill="none" stroke="#A34F47" stroke-width="1.5"/><path d="M56 133 Q69 124 78 115 L84 120 Q78 135 63 144" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M77 116 Q83 108 90 111 L94 115 L87 122 L80 122Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-focal"><path d="M86 150 L86 68 L274 68 L274 150Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2.3"/><rect x="187" y="92" width="63" height="58" rx="4" fill="#8D552E" stroke="#1E2A3B" stroke-width="2"/><path d="M194 95 L194 150 M244 95 L244 150" stroke="#C88446" stroke-width="2"/><circle cx="238" cy="122" r="3" fill="#F2C14E"/><rect x="133" y="80" width="47" height="25" rx="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="145" cy="92" r="3" fill="#CE3D4E"/><circle cx="156" cy="92" r="3" fill="#5479AC"/><circle cx="167" cy="92" r="3" fill="#7FB07A"/><path d="M145 84 Q156 79 168 84" fill="none" stroke="#FFF6D6" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M116 61 L121 51 L126 61 L136 66 L126 71 L121 81 L116 71 L106 66Z" fill="#F2C14E"/><path d="M129 77 L129 67 M178 78 L178 67" stroke="#D49B2A" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M89 70 L270 70 M134 83 Q156 77 178 83" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.78"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

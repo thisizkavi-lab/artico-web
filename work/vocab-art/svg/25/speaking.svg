@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: speaking (Noun / gerund)
+  CONTEXTUAL_DEFINITION: The activity of producing spoken language.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Focus on a person actively forming speech for another listener; distinguish speaking from listening and from fluent quality.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language classroom conversation area.
+    - Context_Layer: Listener faces the speaker.
+    - Focal_Layer: Speaker uses an open mouth and a single speech bubble.
+    - Details_Layer: Hand gesture and clear outward sound waves.
+    - Lighting_Layer: Bright focus on speaker's face and voice.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:speaking" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="speaking-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="speaking-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#speaking-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M41 122H266V130H41Z" fill="#A98A64"/><path d="M52 130V149M255 130V149" stroke="#8D765A" stroke-width="2.8"/><circle cx="247" cy="96" r="10" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M237 96Q238 83 248 84Q258 85 257 97" fill="#27364B"/><path d="M232 112Q247 105 262 112L266 127L256 135L236 129Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#speaking-shadow)"><circle cx="116" cy="77" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M103 77Q104 61 117 62Q130 63 129 78L122 81Q119 70 113 71Q108 72 106 83Z" fill="#27364B"/><path d="M97 96Q116 87 135 96L142 120L128 132L103 123Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M105 99L89 108L79 101M132 99L149 104L164 94" fill="none" stroke="#1E2A3B" stroke-width="4.7" stroke-linecap="round"/><path d="M105 99L89 108L79 101M132 99L149 104L164 94" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/><path d="M106 125L100 149M126 126L138 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M147 35Q147 24 160 24H208Q221 24 221 36V52Q221 64 208 64H185L175 73L177 63H160Q147 63 147 52Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M159 43L168 37L177 48L187 34L197 44L207 38" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M160 80Q168 72 176 80M164 88Q172 81 180 88" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M111 86Q116 93 122 86" fill="#A95059" stroke="#1E2A3B" stroke-width="1.2"/><path d="M110 83L115 84M119 84L124 83" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="226" cy="44" r="2" fill="#D9857F"/><path d="M66 93L72 89M68 103L75 102" stroke="#D9A441" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="89" rx="137" ry="75" fill="#FEF9C3" opacity=".09"/><path d="M147 35Q147 24 160 24H208" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

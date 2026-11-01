@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: bus stop
+  CONTEXTUAL_DEFINITION: A marked roadside place where people wait for a bus to board.
+  PEDAGOGICAL_ART_DIRECTOR: Center the waiting shelter, bench, route marker icon, and a passenger looking toward an approaching bus.
+  PEDAGOGICAL_ARCHETYPE: 5 - Place diagram with approach cue
+  SYNONYM_GUARD: The shelter and waiting passenger define the stop; do not depict only a bus or a rail platform.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Shelter occupies x=35..177, y=55..141; waiting person at x=113..141; bus approaches from x=202..290 y=94..143; a pole marker with a bus pictogram stands near x=190.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:bus stop" data-archetype="place-diagram-transport">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="stop-shelter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D9E5EA"/><stop offset="1" stop-color="#AFC3CE"/></linearGradient>
+    <linearGradient id="stop-bus" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EAAD0"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="stop-halo"><stop stop-color="#E5F0F4" stop-opacity=".65"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="stop-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="145" width="304" height="47" fill="#EEE7DA"/><path d="M0 145 H304" stroke="#1E2A3B" stroke-width="1.8"/><path d="M170 163 H301" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="16 11"/><ellipse cx="151" cy="154" rx="129" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M28 76 H183" stroke="#D9E3E5" stroke-width="1"/><circle cx="52" cy="45" r="14" fill="#F2C14E" opacity=".72"/><path d="M17 145 V102 M15 102 H31 M22 100 Q40 96 54 101" stroke="#8FA17F" stroke-width="2"/><path d="M192 91 V141" stroke="#64748B" stroke-width="3"/><rect x="181" y="76" width="23" height="31" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M186 82 H199 V92 H186 Z" fill="#EEF6F8" stroke="#D8E6EC" stroke-width="1"/><path d="M187 97 H198" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#stop-shadow)"><path d="M36 77 L100 50 H166 L183 76 V136 H36 Z" fill="url(#stop-shelter)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M43 78 L103 57 H161 L176 79 V127 H43 Z" fill="#EFF6F7" stroke="#64748B" stroke-width="1.4"/><path d="M48 81 L104 61 V125 H48 Z M109 61 H158 L171 81 V125 H109 Z" fill="#C9DCE4" stroke="#7D929E" stroke-width="1.2"/><path d="M40 127 H179 V136 H40 Z" fill="#7D9099" stroke="#1E2A3B" stroke-width="1.4"/><path d="M55 119 H101 V124 H55 Z" fill="#A67E55" stroke="#1E2A3B" stroke-width="1.5"/><path d="M58 124 V135 M98 124 V135" stroke="#1E2A3B" stroke-width="2"/><path d="M120 111 Q120 101 128 101 Q136 101 136 111 V121 H120 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="128" cy="96" r="6" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.2"/><path d="M130 111 L143 118 M143 118 L145 126" stroke="#1E2A3B" stroke-width="3.5" stroke-linecap="round"/><path d="M128 119 L123 132 M130 119 L136 132" stroke="#1E2A3B" stroke-width="3.5" stroke-linecap="round"/><path d="M206 116 L215 98 Q219 94 228 94 H267 Q278 96 282 108 L286 130 H205 Z" fill="url(#stop-bus)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M220 101 H242 V114 H214 Z M246 101 H266 Q272 103 275 114 H246 Z" fill="#DCECF2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M243 100 V127" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="224" cy="132" r="8" fill="#263548" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="268" cy="132" r="8" fill="#263548" stroke="#1E2A3B" stroke-width="1.4"/><path d="M280 117 H286 V124 H280 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M53 80 L104 62 M113 65 H154" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><path d="M66 115 H92" stroke="#D6B484" stroke-width="1.2"/><circle cx="128" cy="94" r="1.3" fill="#1E2A3B"/><path d="M188 111 L197 107 M287 119 L296 121" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/><path d="M191 152 H208 M282 152 H296" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="81" rx="119" ry="74" fill="url(#stop-halo)" opacity=".2"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M36 143 H288" stroke="#1E2A3B" stroke-width="1" opacity=".35"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: bow (Verb, greeting gesture)
+  CONTEXTUAL_DEFINITION: To bend forward politely as a greeting or sign of respect.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment human action
+  SYNONYM_GUARD: Use a person bending from the waist, not a bow-and-arrow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Polite greeting scene with a single figure.
+    - Context_Layer: Upright legs and simple clothing ground the person.
+    - Focal_Layer: Torso and head angle forward in a clear bow.
+    - Details_Layer: One hand rests over the abdomen; a faint upright ghost indicates the motion.
+    - Lighting_Layer: A blue curved arrow follows the forward arc.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:bow (gesture)" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="157" cy="169" rx="91" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M174 70Q190 62 204 75L214 124L205 166H171L179 125Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M172 72L196 70L204 54Q211 48 218 55Q224 63 216 70L204 91L183 100Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M177 164L172 179H152L155 165M197 164L202 179H220L211 163" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M129 53Q130 35 148 30Q164 26 171 43L174 67L149 73L132 66Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="2" opacity=".7"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="164" cy="88" rx="52" ry="34" transform="rotate(-20 164 88)" fill="#FEF3C7" opacity=".45"/><path d="M99 76Q118 60 142 66L178 91Q191 101 187 116Q183 127 170 122L131 101Q117 94 104 105L87 92Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><path d="M89 90Q75 81 79 66Q82 52 97 48Q111 44 119 57Q125 68 116 78L107 88Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M100 79Q114 70 130 79M108 104Q123 97 132 101" fill="none" stroke="#3D5F91" stroke-width="1.6"/><path d="M91 91Q74 80 77 64Q80 49 97 45Q114 41 123 56Q131 68 120 81L108 92Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M91 65Q100 60 109 66" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M91 108Q83 115 82 123" fill="none" stroke="#4A72B2" stroke-width="1.7"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M113 39Q146 19 176 40" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 4"/><path d="M168 34L178 41L166 45" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+</svg>

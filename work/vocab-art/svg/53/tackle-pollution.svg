@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:tackle pollution" data-archetype="people-cleaning-plastic-from-a-stream">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; tackle pollution. Show two people actively removing plastic litter from a stream bank, with cleanup tools, a filled collection sack, and clearer water where they have worked; calm, no text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="cleanup-sky" x2="0" y2="1"><stop stop-color="#DDECE8"/><stop offset="1" stop-color="#B8D3CE"/></linearGradient>
+  <linearGradient id="cleanup-water" x2="0" y2="1"><stop stop-color="#6AADB7"/><stop offset="1" stop-color="#3F7F91"/></linearGradient>
+  <linearGradient id="cleanup-bank" x2="0" y2="1"><stop stop-color="#9EAD78"/><stop offset="1" stop-color="#647958"/></linearGradient>
+  <linearGradient id="cleanup-vest" x2="0" y2="1"><stop stop-color="#F1D875"/><stop offset="1" stop-color="#D39D50"/></linearGradient>
+  <linearGradient id="cleanup-bag" x2="0" y2="1"><stop stop-color="#738C70"/><stop offset="1" stop-color="#405A50"/></linearGradient>
+  <filter id="cleanup-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#cleanup-sky)"/><circle cx="256" cy="35" r="13" fill="#EBC86F" opacity=".68"/><path d="M0 111L43 70 83 107 128 53 174 105 221 67 266 106 304 78V192H0Z" fill="#A4B8A7"/><path d="M0 132Q60 118 116 132T225 127Q274 117 304 131V192H0Z" fill="#78906D"/></g>
+<g id="layer-context">
+  <path d="M0 150Q50 136 103 147T207 144Q258 134 304 147V192H0Z" fill="url(#cleanup-bank)"/>
+  <path d="M0 156Q44 149 80 157Q119 166 157 153Q202 137 242 151Q276 160 304 151V192H0Z" fill="url(#cleanup-water)"/>
+  <path d="M0 163Q39 157 73 164Q111 174 151 160" fill="none" stroke="#394E50" stroke-width="1.4" opacity=".7"/>
+  <path d="M172 157q16-7 33 0m25 8q15-6 28 0m-65 16q17-6 32 0" fill="none" stroke="#C6E3D8" stroke-width="1.8"/>
+  <path d="M21 147l9-10 9 10-5 5h-9Z" fill="#CC7554" stroke="#6F5548" stroke-width="1.1"/><path d="M61 154l9-8 12 4-3 6-14 1Z" fill="#E0CE9A" stroke="#746C52" stroke-width="1"/><path d="M103 156l6-7 8 4-2 6h-9Z" fill="#5C9AA5" stroke="#49676A" stroke-width="1"/>
+  <path d="M18 132v-13m0 8-7-7m7 9 7-10m250 12v-16m0 9-8-8m8 9 8-11" fill="none" stroke="#54785B" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#cleanup-shadow)">
+  <circle cx="112" cy="83" r="8" fill="#D5A477"/><path d="M104 80q2-11 10-11 8 1 9 10l-4-3h-11Z" fill="#3E5149"/>
+  <path d="M103 93Q112 88 122 94L128 118 99 119Z" fill="url(#cleanup-vest)" stroke="#52685B" stroke-width="1.4"/><path d="M104 116L112 117 109 139Q107 143 101 141L100 137Z" fill="#42565A"/><path d="M116 117L124 116 129 137Q129 142 122 142L118 138Z" fill="#42565A"/>
+  <path d="M105 96Q101 94 98 99L90 110Q88 114 92 117L96 115 105 104 110 101Z" fill="#D5A477"/><path d="M119 96Q124 94 127 99L135 108Q138 112 134 115L130 114 120 105 116 101Z" fill="#D5A477"/>
+  <path d="M91 112L66 143" fill="none" stroke="#435D54" stroke-width="2.2"/><path d="M64 140l-5 7m5-7 7 5" fill="none" stroke="#435D54" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="207" cy="91" r="8" fill="#BE8D69"/><path d="M199 88q2-11 10-10 8 1 8 11l-5-4h-11Z" fill="#4B5147"/>
+  <path d="M198 101Q207 96 216 102L223 124 194 125Z" fill="#789B8A" stroke="#4E685F" stroke-width="1.4"/><path d="M198 122L207 123 203 141Q201 144 195 142L194 138Z" fill="#46595B"/><path d="M210 122L219 121 225 139Q225 143 218 144L213 140Z" fill="#46595B"/>
+  <path d="M199 104Q195 102 192 107L185 115Q183 119 187 121L191 119 199 112 204 109Z" fill="#BE8D69"/><path d="M215 104Q220 102 223 107L230 114Q233 118 229 121L225 119 217 112 213 109Z" fill="#BE8D69"/>
+  <path d="M222 112Q236 105 248 111L252 143Q239 151 226 143Z" fill="url(#cleanup-bag)" stroke="#3D554C" stroke-width="1.5"/><path d="M229 112q7-11 14 0m-10 12 9 0m-9 6 9 0" fill="none" stroke="#D7DDC9" stroke-width="1.5"/>
+  <path d="M54 146q8-4 16 0m12 4q7-4 14 0" fill="none" stroke="#D7E6D0" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M22 177q12-5 23 0m42 8q11-5 21 0m98-4q11-5 22 0m60-7q11-5 21 0" fill="none" stroke="#B8CB8F" stroke-width="1.4"/>
+  <circle cx="43" cy="165" r="1.8" fill="#E9DDB7"/><circle cx="174" cy="178" r="1.7" fill="#E9DDB7"/><circle cx="279" cy="169" r="1.6" fill="#E9DDB7"/>
+  <path d="M33 110q9-5 17 0m84-37q8-5 16 0m69 27q8-5 16 0" fill="none" stroke="#F4F2DD" stroke-width="1.4"/>
+  <path d="M96 124l-4 8m31-5 5 8m61-18 6 7m-30-47q7-4 13 1" fill="none" stroke="#C9D8C7" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M91 115l-26 29m138-23 13 17" fill="none" stroke="#FFF4CF" stroke-width="1.2" opacity=".65"/><path d="M178 159q17-7 31-1" fill="none" stroke="#D4EEE0" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

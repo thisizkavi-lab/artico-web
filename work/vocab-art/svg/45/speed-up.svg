@@ -1,0 +1,18 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 45 - Driving a car
+  WORD: speed up
+  CONTEXTUAL_DEFINITION: Increase the speed of a moving car.
+  PEDAGOGICAL_ART_DIRECTOR: Show a car accelerating away on open road, with long backward motion streaks and progressively elongated lane marks.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + tool
+  SYNONYM_GUARD: The car is gaining speed, not slowing for an obstacle or parked.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Blue car faces right at x=88..264 y=83..146. Three long blue motion streaks extend left from the rear, lane dashes stretch backward; front points toward open road with no obstacle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="45:speed up" data-archetype="peak-moment-speed-change">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style><linearGradient id="fast-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9CBAD0"/><stop offset="1" stop-color="#456A92"/></linearGradient><linearGradient id="fast-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C6CDCA"/><stop offset="1" stop-color="#A6B0AE"/></linearGradient><radialGradient id="fast-halo"><stop stop-color="#8EB0DE" stop-opacity=".35"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient><filter id="fast-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="145" width="304" height="47" fill="url(#fast-road)"/><path d="M0 145 H304" stroke="#1E2A3B" stroke-width="1.4"/><path d="M14 168 H291" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="17 12"/><ellipse cx="174" cy="153" rx="105" ry="6" fill="#C2C9C7"/></g>
+  <g id="layer-context"><path d="M18 75 H90 M29 87 H79 M38 99 H74" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><path d="M11 65 H53 M22 112 H75" stroke="#8EB0DE" stroke-width="1.8" stroke-linecap="round"/><path d="M39 145 L113 101 M53 145 L133 101" stroke="#D5DBD8" stroke-width="1.4"/><ellipse cx="171" cy="109" rx="109" ry="69" fill="url(#fast-halo)" opacity=".24"/></g>
+  <g id="layer-focal" filter="url(#fast-shadow)"><path d="M97 122 L108 99 Q116 91 136 89 L153 73 H217 Q231 76 241 96 L260 102 Q269 106 273 119 L270 143 H97Z" fill="url(#fast-car)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M157 76 H213 Q224 79 232 99 H145Z" fill="#E6F0F1" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="129" cy="143" r="15" fill="#25384A" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="235" cy="143" r="15" fill="#25384A" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="129" cy="143" r="7" fill="#DCE4E3"/><circle cx="235" cy="143" r="7" fill="#DCE4E3"/><path d="M261 111 L270 113 L269 121 L259 119Z" fill="#FFF2D4" stroke="#1E2A3B" stroke-width="1.1"/><path d="M102 127 H267" stroke="#D6E2E6" stroke-width="1.2"/><path d="M26 130 H82 M15 123 H54" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M22 54 H98 M16 62 H62 M38 119 H87" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round"/><path d="M209 89 L221 88 M214 83 L227 82" stroke="#F2C14E" stroke-width="1.7" stroke-linecap="round"/><path d="M280 107 H297" stroke="#D97706" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="178" cy="108" rx="103" ry="65" fill="url(#fast-halo)" opacity=".13"/><path d="M159 79 H211" stroke="#FFFFFF" stroke-width="1.2"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/></g>
+</svg>

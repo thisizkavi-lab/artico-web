@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: apartments / flats (UK) (Noun)
+  CONTEXTUAL_DEFINITION: Multiple separate homes arranged inside one multi-storey residential building.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero building with repeated apartment units
+  SYNONYM_GUARD: A single duplex has only two joined homes; this block has many vertically stacked flats and balconies.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale neighborhood sky and a simple sidewalk.
+    - Context_Layer: Small trees frame a tall, multi-storey block.
+    - Focal_Layer: Building facade divided into distinct stacked homes with windows and balconies.
+    - Details_Layer: A few curtains, planters, and separate doors imply independent residents.
+    - Lighting_Layer: Upper-left sun catches projecting balconies.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:apartments / flats (uk)" data-archetype="hero-building">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="facade" x2="1" y2="1"><stop stop-color="#D9E4EF"/><stop offset="1" stop-color="#B6C8DB"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 158H304V192H0Z" fill="#D8C5A8"/><path d="M0 158H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="153" cy="165" rx="102" ry="6" fill="#9B8E7B" opacity=".28"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M28 154V123Q28 112 39 112Q50 112 50 123V154Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M257 155V126Q257 114 269 114Q281 114 281 126V155Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M17 155H60M248 155H291" stroke="#8A5A35" stroke-width="2"/><path d="M24 136Q40 120 55 136M252 138Q269 120 286 138" fill="none" stroke="#4F8455" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path id="block" d="M76 30L94 20H221L240 31V159H76Z" fill="url(#facade)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="building-clip"><use href="#block"/></clipPath><g clip-path="url(#building-clip)"><path d="M78 125H239V159H78Z" fill="#AFC1D4"/><path d="M91 32V156M228 31V156" stroke="#E9F0F5" stroke-width="3"/><path d="M76 73H240M76 115H240" stroke="#7B8A9E" stroke-width="2"/><path d="M82 70H237M82 112H237" stroke="#F7F8F8" stroke-width="1"/></g><use href="#block" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M71 30H244" stroke="#5479AC" stroke-width="5"/><g fill="#DCEAF0" stroke="#1E2A3B" stroke-width="1.8"><path d="M94 42H119V63H94Z"/><path d="M143 42H168V63H143Z"/><path d="M193 42H218V63H193Z"/><path d="M94 84H119V105H94Z"/><path d="M143 84H168V105H143Z"/><path d="M193 84H218V105H193Z"/><path d="M94 126H119V147H94Z"/><path d="M143 126H168V147H143Z"/><path d="M193 126H218V147H193Z"/></g><g stroke="#5479AC" stroke-width="2"><path d="M106 42V63M155 42V63M205 42V63M106 84V105M155 84V105M205 84V105M106 126V147M155 126V147M205 126V147"/></g><path d="M87 68H126V72H87ZM136 68H175V72H136ZM186 68H225V72H186ZM87 110H126V114H87ZM136 110H175V114H136ZM186 110H225V114H186Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M100 151H119V128H100ZM149 151H168V128H149ZM199 151H218V128H199Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M104 49H116M153 49H165M203 49H215" stroke="#FFFFFF" stroke-width="2"/><path d="M25 165H55M249 165H282" stroke="#F3ECE1" stroke-width="1.4"/><path d="M89 28H228" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M85 34L96 28" stroke="#FFFFFF" stroke-width="2"/><circle cx="230" cy="25" r="10" fill="#F2C14E" opacity=".2"/></g>
+</svg>

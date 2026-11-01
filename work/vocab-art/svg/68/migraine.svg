@@ -1,0 +1,45 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: migraine
+ CONTEXTUAL_DEFINITION: A severe headache often paired with one-sided throbbing and sensitivity to light.
+ PEDAGOGICAL_ARCHETYPE: a person shielding from light while pressing one side of the head
+ SYNONYM_GUARD: Emphasize one-sided head pain and light sensitivity; keep ordinary headache bilateral and milder.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: In a dim quiet room, a person presses one temple and shields closed eyes from a narrow bright window beam; a concentrated pulse stays on that side.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:migraine" data-archetype="one-sided light-sensitive headache">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><rect x="7" y="7" width="290" height="178" rx="2" fill="#26384A"/><path d="M7 157H297V185H7Z" fill="#53606B"/><path d="M7 157H297" stroke="#A8A28F" stroke-width="1.2"/>
+  <ellipse cx="151" cy="153" rx="101" ry="5" fill="#101D2C" opacity=".35"/><path d="M40 150H264" stroke="#BFC4C2" stroke-width=".9" opacity=".5"/>
+  <path d="M40 30H94V112H40Z" fill="#77828A"/><path d="M46 36H88V106H46Z" fill="#B9C7C4"/><path d="M67 36V106" stroke="#748891" stroke-width="2"/>
+  <path d="M94 30L129 48V119L94 112Z" fill="#F6E5CE" opacity=".65"/><path d="M99 37L120 49V108L99 104Z" fill="#D6A64C" opacity=".25"/>
+  <path d="M215 47H253V105H215Z" fill="#43515F"/><path d="M220 53H248V98H220Z" fill="#64737D"/>
+ </g>
+ <g id="layer-context">
+  <path d="M50 139H242" stroke="#A8A28F" stroke-width="1"/><path d="M64 140V151M231 140V151" stroke="#8C725A" stroke-width="2"/>
+  <path d="M194 121Q218 114 246 121V141H194Z" fill="#597D8B"/><path d="M190 136H251" stroke="#26384A" stroke-width="2"/>
+  <ellipse cx="153" cy="150" rx="79" ry="3" fill="#A8A28F" opacity=".16"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="69" r="15" fill="#C98F70"/><path d="M136 68Q137 48 152 48Q168 49 166 71L158 57Q148 65 138 64Z" fill="#101D2C"/>
+  <path d="M132 86Q151 77 170 86L179 129H123Z" fill="#597D8B" stroke="#101D2C" stroke-width="1.3"/>
+  <path d="M137 91L127 80L132 68M166 91Q160 78 148 68" stroke="#C98F70" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M127 127L125 147M175 127L178 147" stroke="#101D2C" stroke-width="3" stroke-linecap="round"/>
+  <!-- one hand presses the painful temple; the other shields the eyes -->
+  <path d="M132 72Q126 71 126 65L129 57Q132 54 135 59L136 64L141 67Q139 72 132 72Z" fill="#C98F70" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M148 68Q142 70 139 66L136 64Q134 61 138 60Q142 60 148 62L159 63Q163 64 161 67Q156 70 148 68Z" fill="#C98F70" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M145 101L151 107L157 101" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 68Q149 71 153 68M157 68L161 67M144 78Q151 74 158 78" stroke="#342B2C" stroke-width="1.2" fill="none"/>
+  <ellipse cx="132" cy="67" rx="13" ry="19" fill="#B85E5A" opacity=".18"/><ellipse cx="132" cy="67" rx="9" ry="14" fill="none" stroke="#D6A64C" stroke-width="1.1" opacity=".8"/>
+  <path d="M119 51Q115 58 120 62M115 70L121 70M121 82L125 78" stroke="#B85E5A" stroke-width="1.5" fill="none"/>
+  <path d="M51 39L59 42M52 48L60 50M54 58L62 59" stroke="#FFF1C7" stroke-width="1.4" opacity=".8"/>
+  <path d="M128 111L134 115M171 112L165 116M143 119L148 122" stroke="#A9C0C1" stroke-width="1"/>
+  <circle cx="210" cy="131" r="1.5" fill="#D6A64C"/><circle cx="217" cy="133" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="94" rx="91" ry="66" fill="#91A7B5" opacity=".06"/><path d="M48 152H253" stroke="#FFF1C7" stroke-width=".8" opacity=".5"/>
+  <path d="M40 31H94V112" stroke="#D8D4C8" stroke-width="1" opacity=".5" fill="none"/>
+ </g>
+</svg>

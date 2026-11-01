@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: essay (Noun)
+  CONTEXTUAL_DEFINITION: A short piece of student writing that develops ideas about a topic.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: One small stack of handwritten pages and a student editing a draft shows an essay, distinct from a long research thesis or textbook.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet school desk with window and lamp.
+    - Context_Layer: Closed reference books.
+    - Focal_Layer: Student writes a short paper on a single sheet.
+    - Details_Layer: Several paragraph-like lines, pencil, and revision marks without letters.
+    - Lighting_Layer: Reading-lamp pool over the paper.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:essay" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="essay-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="essay-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#essay-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 29H95V81H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V80M22 54H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M221 144V92M221 92Q236 82 250 92L247 102Q234 96 221 104" fill="none" stroke="#8D765A" stroke-width="3" stroke-linecap="round"/><path d="M204 144H258" stroke="#A98A64" stroke-width="3"/><rect x="39" y="124" width="45" height="15" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><rect x="44" y="111" width="45" height="15" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M48 116H83M43 129H78" stroke="#DCECFB" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#essay-shadow)"><path d="M83 39L207 33L215 131L91 139Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2"/><path d="M94 54L184 49M95 63L192 58M96 72L181 68M97 85L192 79M98 94L185 90M100 107L168 103M101 117L181 111" stroke="#88A9D0" stroke-width="1.5" stroke-linecap="round"/><path d="M115 45L186 41" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M180 119L201 96" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M180 119L201 96" stroke="#D9A441" stroke-width="2.6" stroke-linecap="round"/><path d="M135 142Q143 123 158 120L179 125L184 143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="146" cy="106" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M135 106Q136 94 147 94Q157 95 157 107L153 110Q151 101 146 101Q141 101 138 114Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M151 128L164 121L178 126" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M151 128L164 121L178 126" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M87 61L89 65M194 73L199 70M164 105L171 102" stroke="#D9857F" stroke-width="2" stroke-linecap="round"/><circle cx="199" cy="142" r="2" fill="#D9A441"/><path d="M95 145H188" stroke="#C9B99F" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="94" rx="121" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M83 39L207 33L215 131" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".72"/></g>
+</svg>

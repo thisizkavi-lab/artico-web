@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: nose (Noun)
+  CONTEXTUAL_DEFINITION: The projecting part of the face used for smelling and breathing.
+  PEDAGOGICAL_ARCHETYPE: 2 — Face-part callout
+  SYNONYM_GUARD: Highlight the whole nose bridge and tip; nostrils are only the two openings at its base.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm face crop.
+    - Context_Layer: Eyes, mouth, and cheeks are muted.
+    - Focal_Layer: Nose shape is warm and fully outlined from bridge to tip.
+    - Details_Layer: Gentle nostril curves remain secondary.
+    - Lighting_Layer: Blue pointer to the nose bridge and tip.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:nose" data-archetype="part-callout">
+  <defs><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="96" rx="121" ry="84" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M64 56Q152 18 240 56L230 151Q152 175 74 151Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M93 72Q110 63 127 72M177 72Q194 63 211 72" fill="none" stroke="#64748B" stroke-width="2.6"/><ellipse cx="109" cy="86" rx="7" ry="4" fill="#94A3B8"/><ellipse cx="195" cy="86" rx="7" ry="4" fill="#94A3B8"/><path d="M121 144Q152 152 183 144" fill="none" stroke="#94A3B8" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="111" rx="43" ry="45" fill="#FEF3C7" opacity=".56"/><path d="M145 68Q151 63 158 68L163 112Q168 119 182 124Q180 135 165 137H141Q127 134 123 125Q139 118 142 111Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M149 73L153 109Q155 117 169 123" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M130 126Q136 121 142 124M166 124Q173 120 180 125" fill="none" stroke="#9C6656" stroke-width="1.7" stroke-linecap="round"/><path d="M146 73Q152 68 157 73" fill="none" stroke="#F7D8C5" stroke-width="1.4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M53 105L118 108" stroke="#4A72B2" stroke-width="2.1"/><path d="M111 103L119 108L111 113" fill="none" stroke="#4A72B2" stroke-width="2.1"/><path d="M139 66L151 59L163 66" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="3 3"/><path d="M128 143Q152 150 177 142" fill="none" stroke="#CBD5E1" stroke-width="1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="152" cy="111" r="35" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".6"/></g>
+</svg>

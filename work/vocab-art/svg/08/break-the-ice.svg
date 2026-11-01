@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: break the ice (Phrase)
+  CONTEXTUAL_DEFINITION: To make a first social interaction less awkward and help people begin talking.
+  PEDAGOGICAL_ARCHETYPE: 3 (Connection between people)
+  SYNONYM_GUARD: Two new acquaintances smile and reach toward one another as a cracked ice barrier opens between them.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cool-toned first-meeting room.
+    - Context_Layer: Two strangers stand on opposite sides of a translucent ice wall.
+    - Focal_Layer: A friendly handshake reaches through the new crack.
+    - Details_Layer: The ice pieces fall away and warm sparkles appear.
+    - Lighting_Layer: Cool edges around the ice shift to warm light at the connection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:break the ice" data-archetype="social-connection">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E7F0F6"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 149 Q152 138 304 149 L304 192 L0 192Z" fill="#D9E2E8"/><ellipse cx="151" cy="165" rx="108" ry="8" fill="#BCCBD5"/></g>
+  <g id="layer-context"><path d="M48 151 Q51 128 68 125 Q86 128 89 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="68" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M53 110 Q54 93 69 95 Q82 96 83 111 Q75 104 67 105Z" fill="#27364B"/><path d="M216 151 Q219 128 237 125 Q255 128 258 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="237" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M222 110 Q223 93 238 95 Q251 96 252 111 Q244 104 236 105Z" fill="#27364B"/></g>
+  <g id="layer-focal"><path d="M136 75 L151 48 L166 75 L158 91 L166 109 L151 126 L136 109 L144 91Z" fill="#B9DFF1" fill-opacity="0.78" stroke="#6D9BB8" stroke-width="2.2"/><path d="M137 75 L120 72 L126 88 L112 101 L130 106 L136 119 M165 75 L180 71 L175 87 L188 99 L172 104 L166 119" fill="none" stroke="#6D9BB8" stroke-width="2.3" stroke-linejoin="round"/><path d="M84 137 Q103 132 120 116" fill="none" stroke="#D89A6C" stroke-width="6" stroke-linecap="round"/><path d="M219 137 Q199 132 184 116" fill="none" stroke="#F5BFA3" stroke-width="6" stroke-linecap="round"/><path d="M120 116 Q126 111 132 115 L149 124 Q155 127 151 132 Q148 136 143 134 L129 128 Q124 132 118 129 Q114 124 120 116Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M184 116 Q178 111 172 115 L155 124 Q149 127 153 132 Q156 136 161 134 L175 128 Q180 132 186 129 Q190 124 184 116Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/><path d="M59 114 Q65 120 72 114 M228 114 Q235 120 242 114" fill="none" stroke="#A34F47" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M103 81 L95 71 M197 78 L205 68 M113 111 L103 118 M193 109 L202 117" stroke="#8EB0DE" stroke-width="4" stroke-linecap="round"/><path d="M151 37 L156 27 L161 37 L171 42 L161 47 L156 57 L151 47 L141 42Z" fill="#F2C14E"/><circle cx="103" cy="58" r="3" fill="#F2C14E"/><circle cx="202" cy="52" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><circle cx="152" cy="119" r="33" fill="#F2C14E" opacity="0.12"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

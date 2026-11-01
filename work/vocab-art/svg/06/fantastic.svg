@@ -1,0 +1,64 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: fantastic (Adjective)
+  CONTEXTUAL_DEFINITION: Exceptionally enjoyable and impressive, shown by a live performance that leaves an audience cheering.
+  PEDAGOGICAL_ARCHETYPE: 3 (Strong positive reaction to a specific experience)
+  SYNONYM_GUARD: A joyful theater audience separates this from breathtaking scenery and from the literal 'strange' sense of fantastic.
+  MODE: STATIC (The Artico course compiles a still WebP card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Ivory theater stage with plum curtain panels and warm footlights.
+    - Context_Layer: Audience faces and raised hands across the lower corners.
+    - Focal_Layer: Singer-dancer at x=154,y=91 under a gold spotlight, arms open in a finishing pose.
+    - Details_Layer: Stage boards, applause arcs, costume folds, star-shaped lights, curtain tassels.
+    - Lighting_Layer: Cream highlight across the stage and a soft upper-left beam.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:fantastic" data-archetype="expressive-bust">
+  <defs>
+    <style>:root { --c-bg-1:#FAF8F3; --c-bg-2:#F2ECE1; --c-surface:#EAE3D5; --c-primary:#8B5CA8; --c-secondary:#633B7D; --c-accent:#F2C14E; --c-highlight:#FFFFFF; }</style>
+    <linearGradient id="stage-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#EDE5DB"/></linearGradient>
+    <linearGradient id="curtain" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#633B7D"/><stop offset="0.5" stop-color="#B792CF"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <radialGradient id="spotlight"><stop offset="0" stop-color="#FFF5CC" stop-opacity="0.92"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="stage-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity="0.22"/></filter>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#stage-paper)"/>
+    <path d="M0 0 H59 Q50 55 63 132 L0 145Z M304 0 H245 Q254 55 241 132 L304 145Z" fill="url(#curtain)"/>
+    <path d="M52 0 Q69 52 59 136 M70 0 Q82 56 69 137 M252 0 Q235 53 246 136 M234 0 Q221 56 235 137" fill="none" stroke="#B792CF" stroke-width="3" opacity="0.62"/>
+    <path d="M0 140 Q150 133 304 140 L304 192 L0 192Z" fill="#C88446"/>
+    <path d="M0 151 Q151 146 304 151 M0 177 Q150 172 304 177" stroke="#965D28" stroke-width="1.6" opacity="0.55"/>
+  </g>
+  <g id="layer-context">
+    <ellipse cx="152" cy="94" rx="105" ry="77" fill="url(#spotlight)"/>
+    <circle cx="41" cy="119" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M22 155 Q25 135 41 134 Q58 135 61 155Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="265" cy="116" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M246 155 Q249 134 265 133 Q282 134 285 155Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M30 130 Q34 126 38 130 M44 130 Q48 126 52 130 M255 127 Q259 123 263 127 M269 127 Q273 123 277 127" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M35 137 Q42 144 49 136 M259 136 Q266 144 273 136" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="layer-focal" filter="url(#stage-shadow)">
+    <path d="M126 145 Q129 115 151 111 Q174 115 178 145Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.5"/>
+    <path d="M145 111 L143 100 L162 100 L160 112" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="152" cy="80" r="23" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M129 79 Q127 56 149 55 Q173 56 175 79 Q166 68 154 68 Q141 77 129 79Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M139 82 Q143 78 147 82 M157 82 Q161 78 165 82" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M143 91 Q152 101 163 90" fill="none" stroke="#A34F47" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M130 116 Q112 103 100 89 Q96 84 101 81 Q107 78 112 85 L139 103" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M174 116 Q193 99 204 82 Q208 77 213 81 Q218 86 212 93 L184 119" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M125 139 Q150 147 180 138" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M142 122 Q152 129 163 122" fill="none" stroke="#F3ECE1" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M29 106 L29 91 M37 101 L43 88 M52 104 L61 94 M245 101 L239 88 M263 99 L263 84 M278 105 L288 95" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M96 62 L101 52 L106 62 L116 67 L106 72 L101 82 L96 72 L86 67Z" fill="#F2C14E"/>
+    <path d="M210 56 L214 48 L218 56 L226 60 L218 64 L214 72 L210 64 L202 60Z" fill="#F2C14E"/>
+    <circle cx="74" cy="115" r="3" fill="#F2C14E"/><circle cx="228" cy="113" r="3" fill="#F2C14E"/>
+    <path d="M48 161 L48 178 M57 162 L57 179 M248 162 L248 179 M257 162 L257 179" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M110 150 Q151 157 194 150" fill="none" stroke="#FDE68A" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M142 61 Q151 57 161 61 M131 71 Q130 80 133 88" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.68"/>
+    <path d="M61 143 Q151 138 243 143" fill="none" stroke="#FDE68A" stroke-width="2.5" opacity="0.75"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: departure gate
+  CONTEXTUAL_DEFINITION: The airport boarding area where passengers wait before entering a plane.
+  PEDAGOGICAL_ART_DIRECTOR: Make the boarding doorway and jet bridge visible, with waiting chairs and an aircraft outside.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show the airport's departure boarding point rather than a hotel door or generic terminal.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A glass airport gate lounge with a row of seats leads through an open boarding doorway to the jet bridge and parked aircraft.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:departure gate" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gate-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6ECE9"/><stop offset="1" stop-color="#C6D1CE"/></linearGradient>
+  <linearGradient id="gate-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A6CCD3"/><stop offset="1" stop-color="#DCEAE6"/></linearGradient>
+  <linearGradient id="gate-bridge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DDE5E0"/><stop offset="1" stop-color="#9CAEB0"/></linearGradient>
+  <filter id="gate-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DCE6E6"/><path d="M17 17H287V151H17Z" fill="url(#gate-wall)" stroke="#63757A" stroke-width="1.4"/><path d="M17 151H287V184H17Z" fill="#B7B6AB"/><rect x="26" y="28" width="162" height="81" fill="url(#gate-glass)" stroke="#49636D" stroke-width="1.4"/><path d="M67 28V109M108 28V109M149 28V109M26 69H188" stroke="#526D77" stroke-width="1.1"/><path d="M20 169H286" stroke="#EAE4D8" stroke-width="1.1"/><path d="M188 53H281V103H188Z" fill="url(#gate-bridge)" stroke="#4F646A" stroke-width="1.4"/><path d="M195 60H281V96H195Z" fill="#AFCBCF" stroke="#70858A" stroke-width="1"/><path d="M205 60V96M225 60V96M245 60V96M265 60V96" stroke="#8DA3A5" stroke-width=".9"/></g>
+ <g id="layer-context"><g transform="translate(-8 15)"><path d="M234 37Q252 20 273 30L290 40L276 48H235Z" fill="#F7F6EF" stroke="#1E2A3B" stroke-width="1.3"/><path d="M250 30L243 18L249 17L264 30" fill="#DDE4DF" stroke="#1E2A3B" stroke-width=".9"/><path d="M275 37L287 32L294 38L286 43Z" fill="#D9E1DC" stroke="#1E2A3B" stroke-width=".9"/></g><path d="M184 53V115" stroke="#314A57" stroke-width="2.5"/><path d="M190 53V108" stroke="#F8F6EE" stroke-width="1.1"/></g>
+ <g id="layer-focal" filter="url(#gate-shadow)"><path d="M45 124H161V139H45Z" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M52 139V153M154 139V153" stroke="#354B58" stroke-width="3"/><path d="M55 119H76V124H55ZM85 119H106V124H85ZM115 119H136V124H115Z" fill="#E6EBE5" stroke="#405761" stroke-width="1"/><path d="M60 124V139M93 124V139M126 124V139" stroke="#9BAEAE" stroke-width="1"/><path d="M195 57H223V101H195Z" fill="#394F5A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M202 57V101" stroke="#D7E3DF" stroke-width="1.1"/><path d="M209 71L216 68L223 71L216 74L212 79H210L213 74L209 73Z" fill="#F6F3E9" stroke="#455B66" stroke-width=".7"/><rect x="173" y="111" width="25" height="9" rx="1" fill="#A9B5B0" stroke="#3D5560" stroke-width="1"/><path d="M178 120V135M193 120V135" stroke="#536A72" stroke-width="2"/><path d="M168 135H201" stroke="#536A72" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M27 29H187" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><path d="M193 54H280" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><ellipse cx="151" cy="169" rx="111" ry="5" fill="#526274" opacity=".15"/><circle cx="175" cy="50" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="103" rx="129" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

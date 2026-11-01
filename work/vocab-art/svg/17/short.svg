@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: short (Adjective)
+  CONTEXTUAL_DEFINITION: A person of noticeably low height compared with others.
+  PEDAGOGICAL_ARCHETYPE: 6 — Contrast pair
+  SYNONYM_GUARD: Show a clearly shorter adult beside a much taller adult, following the height group.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale studio wall and floor.
+    - Context_Layer: Faint height guides.
+    - Focal_Layer: Short adult in front, taller adult as reference.
+    - Details_Layer: Shared ground line.
+    - Lighting_Layer: Focus halo around the shorter person.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:short" data-archetype="contrast-pair">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M26 166H278" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="152" cy="167" rx="125" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M52 45V166M252 30V166" stroke="#D3DBE5" stroke-width="1.4" stroke-dasharray="4 5"/><ellipse cx="103" cy="113" rx="49" ry="61" fill="#FEF3C7" opacity=".58"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <circle cx="104" cy="91" r="11" fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M89 108Q104 100 119 108L124 143H84Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M87 141L99 141L98 166H88ZM109 141L121 141L123 166H113Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.8"/><path d="M89 83Q90 70 104 68Q117 70 119 83L113 87Q103 81 93 88Z" fill="#35404B" stroke="#1E2A3B" stroke-width="1.8"/>
+  <g fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.8"><circle cx="214" cy="52" r="11"/><path d="M199 69Q214 62 229 69L234 143H194Z"/><path d="M197 141L209 141L208 166H198ZM219 141L231 141L233 166H223Z"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M98 90Q103 87 108 90M208 52Q214 49 220 52" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M93 116L117 116" stroke="#AAB5C3" stroke-width="1.4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M75 57V43M75 43L70 50M75 43L80 50" stroke="#4A72B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,95 @@
+{
+  "chapter": 57,
+  "chapter_title": "Fish, whales, and sea creatures",
+  "domain_setting": "A connected marine natural-history world spanning open ocean, shallow reef, rocky shore, kelp bed, and polar water. Keep sea life in water or on an appropriate shore; show aquarium entries as a public viewing habitat rather than a fishbowl.",
+  "ambient_palette": {
+    "surface_sky": "mist blue fading to warm ivory",
+    "open_water": "blue teal with deeper navy below",
+    "reef_and_kelp": "sea-glass green, muted kelp, and warm rock",
+    "marine_animals": "species-specific natural charcoal, blue-grey, silver, coral, and cream",
+    "ink": "deep blue slate"
+  },
+  "recurring_scale_anchors": [
+    "A thin waterline with small wave marks for surface swimmers and breaching animals",
+    "Bubbles and suspended particles for underwater depth",
+    "A few kelp blades, coral heads, or rock shapes for habitat and scale",
+    "A faint seabed or distant horizon to separate open water from the reef"
+  ],
+  "polysemy_resolution_table": {
+    "whale": "The general marine mammal; avoid the throat grooves of a blue whale, long humpback flippers, or the square sperm-whale head so the species cards stay distinct.",
+    "blue whale": "An immense, streamlined blue-grey whale with fine ventral throat pleats and a small dorsal fin set far back; no humpback-length pectoral flippers.",
+    "humpback whale": "A robust whale with very long pectoral flippers, a small knobbly head, and a low hump near the dorsal fin.",
+    "sperm whale": "A deep-diving whale with an unmistakable large square block-shaped head and narrow lower jaw.",
+    "killer whale": "An orca with a black back, white eye patch and belly, and tall dorsal fin; it remains a dolphin-family mammal, not a fish.",
+    "dolphin": "A streamlined dolphin with a distinct long beak, curved dorsal fin, and playful surface leap.",
+    "porpoise": "A compact porpoise with a blunt rounded snout and short triangular dorsal fin; do not give it the dolphin's long beak.",
+    "sea lion": "A sea lion with visible external ear flaps and large front flippers, upright on a rocky shore.",
+    "seal": "A true seal with no external ear flaps, short fore-flippers, and a rounded resting body at the water's edge.",
+    "walrus": "An Arctic pinniped with two unmistakable long ivory tusks, whiskers, and a broad muzzle.",
+    "otter": "A small sea otter floating on its back with paws near its chest; distinguish it from a seal by its visible paws and fur.",
+    "ray": "The fish in this chapter is a flattened ray such as a stingray or manta, not a beam of light.",
+    "school of fish": "Several similar small fish swim tightly together in the same direction as one coordinated school.",
+    "shrimp": "A live small crustacean with a curled segmented body, long antennae, and swimmerets; not a plated food serving.",
+    "squid": "An elongated mantle with triangular side fins, eight shorter arms, and two distinctly longer feeding tentacles; distinguish it from the round-headed octopus.",
+    "starfish": "A sea star with five broad radiating arms resting on the reef; it is not a fish.",
+    "scale (fish)": "A single reflective fish scale or patch of scales, not a weighing device or a balance.",
+    "fin": "A fish fin stays attached to the body and uses visible rays or a fan shape; do not use a bird wing.",
+    "gill": "Show the feathery respiratory gill structure beneath a fish's gill cover, not human lungs.",
+    "claw(s)": "A jointed marine-crab or lobster claw shown attached to its animal, not a mammal paw or bird talons.",
+    "shell": "A ridged marine shell, preferably with a living clam or mollusk context; do not show a plated shellfish meal.",
+    "anemone": "A sea anemone with a central mouth and radiating soft tentacles attached to a submerged rock; not a terrestrial flower.",
+    "aquarium": "A public aquarium viewing tank with glass, marine exhibits, and a visitor scale cue; not a round home fishbowl.",
+    "ocean": "The vast open body of salt water reaching a distant horizon, with no nearby shore dominating the scene.",
+    "reef": "A shallow submerged reef habitat with coral structure and marine life; distinguish the underwater reef from the broad open ocean."
+  },
+  "existing_asset_triage": {
+    "lesson_57": "No chapter-local SVGs existed before this pass. Five exact-term candidates from other lessons are clear and retained; the aquarium scene is structurally regrouped while preserving its recognizable exhibit artwork.",
+    "reviewed_candidates": [
+      {
+        "source": "50/crab.svg",
+        "verdict": "KEEP",
+        "reason": "The shore crab has a clear domed carapace, raised paired claws, and jointed legs; it already uses the current five-layer format and suits the coastal setting."
+      },
+      {
+        "source": "50/shell.svg",
+        "verdict": "KEEP",
+        "reason": "The ridged seashell silhouette is immediately recognizable and already meets the current layered SVG format."
+      },
+      {
+        "source": "52/ocean.svg",
+        "verdict": "KEEP",
+        "reason": "The broad open-water horizon directly teaches ocean and avoids the sailboat-focused framing of the other older ocean card."
+      },
+      {
+        "source": "55/whale.svg",
+        "verdict": "KEEP",
+        "reason": "The large marine mammal, horizontal tail flukes, side fin, and blowhole spray clearly read as a whale; its prompt is generalized for this chapter."
+      },
+      {
+        "source": "54/aquarium.svg",
+        "verdict": "KEEP / ADAPT STRUCTURE",
+        "reason": "The public viewing tank, marine exhibits, glass frame, and visitor silhouettes clearly teach aquarium; the old source lacked the current layer groups, so its existing composition is retained and organized into the five required layers."
+      },
+      {
+        "source": "54/fish.svg",
+        "verdict": "REPLACE",
+        "reason": "A goldfish in a small home bowl points to a pet fish and overlaps the aquarium idea; the chapter teaches wild and marine fish."
+      },
+      {
+        "source": "54/claw.svg",
+        "verdict": "REPLACE",
+        "reason": "The close-up is a mammal paw claw scratching wood, not a crab or lobster claw."
+      },
+      {
+        "source": "28/{crab,fish,lobster,mussel,octopus,oyster,salmon,shell,shrimp,squid}.svg",
+        "verdict": "REPLACE",
+        "reason": "These older market/food cards present sea animals or seafood on trays and counters rather than in the live marine habitats used by this chapter."
+      },
+      {
+        "source": "50/ocean.svg",
+        "verdict": "REPLACE",
+        "reason": "The sailboat makes the card about sailing or a day at sea; the clearer 52/ocean open-horizon illustration is retained instead."
+      }
+    ]
+  }
+}

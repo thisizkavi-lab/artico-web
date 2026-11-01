@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: qualification (Noun)
+  CONTEXTUAL_DEFINITION: An officially recognized educational achievement or demonstrated ability that makes a person suitable for a role.
+  PEDAGOGICAL_ARCHETYPE: 3 — Achievement and role
+  SYNONYM_GUARD: A learner completes a practical skills assessment and receives a credential badge, distinguishing qualification from a diploma document alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: College skills-training room with worktable.
+    - Context_Layer: Tools and assessment station.
+    - Focal_Layer: Student demonstrates a practiced skill to an assessor.
+    - Details_Layer: Approved credential badge and completed checklist marks without text.
+    - Lighting_Layer: Warm highlight on badge and demonstrated work.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:qualification" data-archetype="achievement">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="qual-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="qual-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#qual-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H95V80H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V79M23 54H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="223" y="39" width="60" height="89" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M231 49H275M231 59H275M231 69H275" stroke="#F7EBCF" stroke-width="1.8"/><path d="M35 144H274" stroke="#8D765A" stroke-width="3"/><rect x="36" y="111" width="42" height="33" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M42 119H72M42 126H68" stroke="#DCECFB" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#qual-shadow)"><circle cx="123" cy="62" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M110 62Q111 48 124 48Q137 49 137 63L132 66Q130 56 123 56Q118 56 114 69Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M104 81Q122 74 140 82L147 111L135 121L112 116L99 97Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M109 84L91 100L78 101M136 84L156 101L169 91" fill="none" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M109 84L91 100L78 101M136 84L156 101L169 91" fill="none" stroke="#C98961" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M83 90L107 93L102 107L79 104Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.4"/><circle cx="94" cy="98" r="5" fill="#FEF9C3" stroke="#8D6138" stroke-width="1"/><circle cx="185" cy="63" r="13" fill="#80513F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M172 63Q173 49 186 49Q199 50 199 64L194 67Q192 57 185 57Q180 57 176 70Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M169 82Q185 76 201 83L206 110L196 120L177 116L164 99Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/><path d="M175 87L162 100" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M175 87L162 100" stroke="#80513F" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M234 83L240 89L250 77M234 99L240 105L250 93" fill="none" stroke="#91A77C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M256 82H274M256 98H274" stroke="#F7EBCF" stroke-width="1.6"/><path d="M153 138L170 138M179 138L196 138" stroke="#D9A441" stroke-width="2"/><circle cx="214" cy="115" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="96" rx="122" ry="73" fill="#FEF9C3" opacity=".07"/><circle cx="94" cy="98" r="14" fill="#FEF9C3" opacity=".16"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: detached houses (Noun)
+  CONTEXTUAL_DEFINITION: Separate homes that do not share walls with neighboring homes.
+  PEDAGOGICAL_ARCHETYPE: 6 — Clear spatial comparison
+  SYNONYM_GUARD: Show visible open air between two stand-alone houses; semi-detached houses share one wall and row houses share several walls.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Suburban sky and continuous garden ground.
+    - Context_Layer: Two separate plots with lawns and short paths.
+    - Focal_Layer: Two standalone homes with a wide visible gap between their side walls.
+    - Details_Layer: Each home has its own roof, entrance, and windows.
+    - Lighting_Layer: A blue open-space cue through the gap links the separation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:detached houses" data-archetype="spatial-comparison">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F0D8B3"/><stop offset="1" stop-color="#D9B98C"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 144H304V192H0Z" fill="#B7D3A8"/><path d="M0 171H304" stroke="#D8C5A8" stroke-width="18"/><path d="M0 145H304" stroke="#7B9E6A" stroke-width="2"/><ellipse cx="75" cy="160" rx="49" ry="5" fill="#72815F" opacity=".23"/><ellipse cx="229" cy="160" rx="49" ry="5" fill="#72815F" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M129 96V145" stroke="#FFFFFF" stroke-width="9" opacity=".65"/><path d="M132 99V142" stroke="#4A72B2" stroke-width="2.2" stroke-dasharray="4 5"/><path d="M139 112L145 119L139 126" fill="none" stroke="#4A72B2" stroke-width="2.2"/><path d="M21 145V130Q29 123 37 130V145M267 145V129Q276 121 285 130V145" fill="#7FB07A" stroke="#4F8455" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path id="left-home" d="M25 95L70 66L116 95V146H25Z" fill="url(#wall)" stroke="#1E2A3B" stroke-width="2.5"/><clipPath id="left-clip"><use href="#left-home"/></clipPath><g clip-path="url(#left-clip)"><path d="M24 97H117V147H24Z" fill="#E8CEA7"/><path d="M28 116H114M28 131H114" stroke="#CFAD7C" stroke-width="1.2"/></g><use href="#left-home" fill="none" stroke="#1E2A3B" stroke-width="2.5"/><path d="M19 96L69 61L122 96L116 103L70 73L25 103Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.4"/><path d="M38 104H58V123H38Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M48 105V122M39 113H57" stroke="#5479AC" stroke-width="1.5"/><path d="M79 116Q79 111 84 111H100V146H79Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M83 146V153" stroke="#8A5A35" stroke-width="3"/><path id="right-home" d="M188 95L234 66L279 95V146H188Z" fill="url(#wall)" stroke="#1E2A3B" stroke-width="2.5"/><clipPath id="right-clip"><use href="#right-home"/></clipPath><g clip-path="url(#right-clip)"><path d="M187 97H280V147H187Z" fill="#E8CEA7"/><path d="M191 116H278M191 131H278" stroke="#CFAD7C" stroke-width="1.2"/></g><use href="#right-home" fill="none" stroke="#1E2A3B" stroke-width="2.5"/><path d="M181 96L233 61L285 96L279 103L234 73L188 103Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M201 104H221V123H201Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M211 105V122M202 113H220" stroke="#5479AC" stroke-width="1.5"/><path d="M242 116Q242 111 247 111H263V146H242Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M246 146V153" stroke="#8A5A35" stroke-width="3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M30 152H66M238 152H274" stroke="#F3ECE1" stroke-width="2"/><path d="M134 86V98M146 86V98M158 86V98" stroke="#4A72B2" stroke-width="1.6" stroke-linecap="round"/><path d="M39 103H57M202 103H220" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="112" rx="20" ry="38" fill="#FEF3C7" opacity=".35"/><path d="M141 91H163" stroke="#4A72B2" stroke-width="1.5" opacity=".75"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: sink (Noun)
+  CONTEXTUAL_DEFINITION: A fixed basin with a drain and faucet for washing hands or dishes.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a bathroom pedestal basin with taps, visibly smaller and shallower than a bathtub.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled bathroom wall and floor.
+    - Context_Layer: Wall-mounted taps and pipe.
+    - Focal_Layer: Wide shallow porcelain washbasin.
+    - Details_Layer: Faucet, water stream, drain, and pedestal.
+    - Lighting_Layer: Clean porcelain highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:sink (household fixture)" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V153 M122 0 V153 M183 0 V153 M244 0 V153" stroke="#B8CDD1" stroke-width="1.2"/><path d="M0 154 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 154 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="169" rx="60" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M144 117 V152 H160 V117" fill="#FAF8F3" stroke="#647D8B" stroke-width="2"/><path d="M90 91 Q95 79 111 79 H193 Q209 79 214 91 L205 113 Q201 122 190 122 H114 Q103 122 99 113Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.7"/><path d="M99 91 Q151 99 205 91" fill="none" stroke="#DCECFB" stroke-width="4"/><path d="M118 79 V68 Q118 59 128 59 H152" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M152 59 Q160 59 160 67 V73" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M105 70 V79 M177 70 V79" stroke="#CE7B55" stroke-width="4" stroke-linecap="round"/><path d="M101 73 H110 M173 73 H182" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M158 74 V86" stroke="#79C7DF" stroke-width="2.5" stroke-linecap="round"/><circle cx="152" cy="110" r="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/><path d="M108 91 Q151 98 198 91" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M150 130 V146" stroke="#647D8B" stroke-width="2.5"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

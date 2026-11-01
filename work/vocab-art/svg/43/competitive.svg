@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: competitive
+  CONTEXTUAL_DEFINITION: Eager to perform well compared with a standard or other people.
+  PEDAGOGICAL_ART_DIRECTOR: Show healthy effort to meet and exceed a work benchmark alongside a peer.
+  PEDAGOGICAL_ARCHETYPE: 7 - Performance benchmark
+  SYNONYM_GUARD: Depict striving against a comparable standard or peer, not a distant personal ambition or hostile rivalry.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show two workers at adjacent workstations, each completing a similar task. Put one shared benchmark meter across the upper center, with both progress bars close and one worker edging ahead by a small amount.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:competitive" data-archetype="performance-benchmark">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="competitive-meter" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="competitive-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="competitive-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="competitive-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="91" y="36" width="122" height="34" rx="4" fill="url(#competitive-meter)" stroke="#64748B" stroke-width="1"/><path d="M105 52 H199" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/><path d="M105 52 H172" stroke="#8EB0DE" stroke-width="4" stroke-linecap="round"/><path d="M105 62 H168" stroke="#A8D4A2" stroke-width="4" stroke-linecap="round"/><path d="M178 45 L184 52 L178 59" fill="none" stroke="#D99A2B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 116 H144 V132 H35 Z M160 116 H269 V132 H160 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.1"/><path d="M47 132 V145 M133 132 V145 M172 132 V145 M257 132 V145" stroke="#965D28" stroke-width="2"/><rect x="52" y="92" width="76" height="24" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width=".9"/><path d="M59 109 L68 99 L77 104 L87 96 L100 101" fill="none" stroke="#5479AC" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/><rect x="176" y="89" width="62" height="27" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width=".9"/><path d="M182 109 L192 100 L201 103 L212 94 L229 98" fill="none" stroke="#547A56" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#competitive-shadow)"><path d="M60 113 Q62 94 73 88 L74 80 Q70 76 72 69 Q79 62 89 64 Q98 67 96 76 L94 83 Q105 88 107 112 L104 124 H64 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="85" cy="71" rx="8" ry="9" fill="#C7835C" stroke="#1E2A3B" stroke-width=".9"/><path d="M77 69 Q79 62 86 62 Q94 63 98 69 Q90 65 83 66 Z" fill="#3D342D"/><path d="M63 91 Q84 85 103 91" fill="none" stroke="#FFFFFF" stroke-width="1"/><path d="M192 113 Q194 94 205 88 L206 80 Q202 76 204 69 Q211 62 221 64 Q230 67 228 76 L226 83 Q237 88 239 112 L236 124 H196 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="217" cy="71" rx="8" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width=".9"/><path d="M209 69 Q211 62 218 62 Q226 63 230 69 Q222 65 215 66 Z" fill="#3D342D"/><path d="M195 91 Q216 85 235 91" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-details"><circle cx="139" cy="84" r="4" fill="#F2C14E"/><path d="M135 84 H143 M139 80 V88" stroke="#C88446" stroke-width=".8"/><path d="M44 76 L50 72 M253 77 L259 73" stroke="#8EB0DE" stroke-width="1.2" stroke-linecap="round"/><circle cx="152" cy="99" r="2" fill="#A8D4A2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="80" rx="104" ry="66" fill="url(#competitive-halo)" opacity=".14"/><path d="M94 38 H211" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

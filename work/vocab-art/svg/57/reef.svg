@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: reef (noun)
+  CONTEXTUAL_DEFINITION: A shallow underwater ridge of coral and rock that forms a habitat for many sea creatures.
+  PEDAGOGICAL_ARCHETYPE: 5 - Habitat panorama
+  SYNONYM_GUARD: Show an extensive submerged coral-and-rock habitat with many marine animals and shallow sunlight; avoid a bare open-ocean horizon or one isolated coral specimen.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Wide underwater cross section of a shallow tropical reef: rippled sunlit surface above, a raised irregular band of coral and rock across the seabed, branching and rounded coral forms, small fish, and sand around the reef.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:reef" data-archetype="shallow-underwater-coral-reef-ecosystem">
+ <defs>
+  <style>:root{--c-bg-1:#DBEEEA;--c-bg-2:#94C8C7;--c-surface:#3F7988;--c-primary:#D78A72;--c-secondary:#526E59;--c-accent:#E8C274;--c-highlight:#FFF2D9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="reef-water" x2="0" y2="1"><stop stop-color="#B8DCD5"/><stop offset=".55" stop-color="#67AEB0"/><stop offset="1" stop-color="#3D7484"/></linearGradient>
+  <linearGradient id="reef-sand" x2="0" y2="1"><stop stop-color="#CFB995"/><stop offset="1" stop-color="#907F6D"/></linearGradient>
+  <linearGradient id="reef-coral" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9AB86"/><stop offset="1" stop-color="#AC685F"/></linearGradient>
+  <filter id="reef-shadow" x="-10%" y="-12%" width="120%" height="135%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#reef-water)"/><path d="M0 25q22-7 43 0t43 0t43 0t43 0t43 0t43 0t43 0" fill="none" stroke="#E9F5E8" stroke-width="2" opacity=".85"/><path d="M0 151Q42 146 77 151Q107 136 144 145Q180 153 215 141Q255 135 304 147V192H0Z" fill="url(#reef-sand)"/><path d="M0 157Q42 150 77 156Q111 140 145 150Q181 157 216 146Q260 139 304 151" fill="none" stroke="#796E61" stroke-width="1.4" opacity=".8"/></g>
+ <g id="layer-context"><path d="M24 189l8-28m-8 15-10-12m10 5 10-18m229 38 7-29m-7 12-10-13m10 4 10-18" fill="none" stroke="#64866A" stroke-width="2" stroke-linecap="round"/><path d="M41 148q6-20 14-1m-9 2q10-25 18-4m178 1q10-24 18-5m-10 6q12-27 21-4" fill="none" stroke="#648D70" stroke-width="2" stroke-linecap="round"/><circle cx="54" cy="54" r="1.8" fill="#F6FCED"/><circle cx="64" cy="46" r="1" fill="#F6FCED"/><circle cx="236" cy="61" r="1.5" fill="#F6FCED"/><circle cx="247" cy="52" r="1" fill="#F6FCED"/><path d="M72 30L100 115m34-84 9 99m52-98-18 89m58-83-24 87" fill="none" stroke="#F8E5B1" stroke-width="7" opacity=".09"/></g>
+ <g id="layer-focal" filter="url(#reef-shadow)">
+  <path d="M0 148Q22 145 39 138Q56 136 70 145Q87 146 102 133Q117 126 133 141Q148 147 164 138Q183 128 198 134Q212 136 221 144Q239 144 254 134Q278 130 292 144L304 142V164Q274 158 248 162Q220 167 196 160Q176 155 156 162Q130 166 111 158Q90 153 72 164Q42 159 19 168L0 170Z" fill="#756F61" stroke="#555E57" stroke-width="1.3"/>
+  <path d="M22 149Q29 138 31 124Q34 117 38 123L38 136L47 119Q52 115 55 121L51 140L61 130Q66 128 68 134L61 151Z" fill="#B97962" stroke="#815E54" stroke-width="1.1"/>
+  <ellipse cx="91" cy="139" rx="24" ry="13" fill="#B29878" stroke="#655F53" stroke-width="1.2"/><path d="M70 138q6-10 12 0t12 0t12 0t12 0t12 0" fill="none" stroke="#E2C19A" stroke-width="1.2"/><path d="M75 143q6-8 12 0t12 0t12 0t12 0" fill="none" stroke="#7A7463" stroke-width="1" opacity=".8"/>
+  <path d="M137 153Q139 141 143 132L140 121Q142 116 147 118L151 132L156 116Q160 112 164 118L160 133L170 122Q175 120 177 126L168 141L171 153Z" fill="#C47C68" stroke="#865E54" stroke-width="1.2"/>
+  <path d="M125 124Q144 118 163 122Q157 128 144 130Q132 130 125 124Z" fill="#D58D72" stroke="#8B6155" stroke-width="1.1"/><path d="M132 137Q153 130 175 136Q168 143 152 144Q139 144 132 137Z" fill="#D99977" stroke="#8B6155" stroke-width="1.1"/>
+  <path d="M218 148Q215 137 220 129Q227 123 234 131L236 141Q243 121 252 124Q259 127 255 141Q266 128 274 134Q280 140 270 151Z" fill="#A77D69" stroke="#6F6055" stroke-width="1.2"/><ellipse cx="246" cy="143" rx="24" ry="10" fill="#927965" stroke="#685D53" stroke-width="1.1"/><path d="M225 142q6-8 12 0t12 0t12 0t12 0" fill="none" stroke="#D6B99A" stroke-width="1.1"/>
+  <path d="M51 84Q61 76 72 82Q78 86 71 91Q61 95 51 84Z" fill="#E7C46B" stroke="#6D766A" stroke-width=".8"/><path d="M52 84l-9-6v12Z" fill="#D29B5C" stroke="#6D766A" stroke-width=".8"/><path d="M103 105Q112 98 122 104Q128 108 121 112Q112 114 103 105Z" fill="#D9E4D4" stroke="#57747A" stroke-width=".8"/><path d="M104 105l-7-5v10Z" fill="#91B5AE" stroke="#57747A" stroke-width=".8"/><path d="M182 73Q193 65 205 71Q211 75 203 80Q192 83 182 73Z" fill="#E8BA67" stroke="#667770" stroke-width=".8"/><path d="M183 73l-8-5v10Z" fill="#CC9656" stroke="#667770" stroke-width=".8"/><path d="M254 94Q264 86 276 92Q282 96 275 101Q263 104 254 94Z" fill="#DCE9DC" stroke="#57747A" stroke-width=".8"/><path d="M255 94l-8-5v11Z" fill="#8EB1AA" stroke="#57747A" stroke-width=".8"/>
+  <path d="M62 83l4 1 2 3m47 18 3 1 2 3m85-34 4 1 2 3m67 15 4 1 2 3" fill="none" stroke="#F5E6B9" stroke-width=".8" stroke-linecap="round"/>
+  <circle cx="72" cy="84" r=".9" fill="#263D46"/><circle cx="122" cy="104" r=".8" fill="#263D46"/><circle cx="205" cy="72" r=".9" fill="#263D46"/><circle cx="276" cy="93" r=".8" fill="#263D46"/>
+ </g>
+ <g id="layer-details"><circle cx="23" cy="68" r="1.3" fill="#F4FCF0"/><circle cx="84" cy="74" r="1" fill="#F4FCF0"/><circle cx="127" cy="62" r="1.4" fill="#F4FCF0"/><circle cx="183" cy="75" r="1" fill="#F4FCF0"/><circle cx="270" cy="74" r="1.4" fill="#F4FCF0"/><path d="M13 131q9-4 17-2m91 22q14-4 25 0m101-1q13-4 23 0" fill="none" stroke="#C8AF8B" stroke-width="1.2" stroke-linecap="round"/><circle cx="102" cy="132" r="1.2" fill="#F2D5B3"/><circle cx="271" cy="140" r="1" fill="#F2D5B3"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="91" rx="107" ry="58" fill="#E7E4AC" opacity=".07"/><path d="M80 31q19 37 36 76m28-77q-4 44 0 70m37-74q-10 42-20 73" fill="none" stroke="#FFF1C9" stroke-width="1.5" opacity=".45"/><path d="M45 119q7-8 15 0m83-23q5-7 10 0m72 27q6-9 13-1" fill="none" stroke="#FFF0D9" stroke-width="1.3" opacity=".75" stroke-linecap="round"/></g>
+</svg>

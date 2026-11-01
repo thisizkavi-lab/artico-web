@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: net (goal net)
+ CONTEXTUAL_DEFINITION: The mesh attached behind a soccer goal that catches the ball after a shot scores.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (mesh panel with ball caught against it)
+ SYNONYM_GUARD: Emphasize the woven mesh behind the goal mouth; the frame is muted and the net is the target.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Close goal view with pale muted posts around a deep green net panel, white criss-cross mesh stretched by a ball.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:net" data-archetype="goal-net-mesh-catching-soccer-ball">
+ <defs><linearGradient id="net-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><linearGradient id="net-fill" x2="0" y2="1"><stop stop-color="#718C84"/><stop offset="1" stop-color="#405B61"/></linearGradient><radialGradient id="net-ball"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#CBD5E1"/></radialGradient><filter id="net-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#net-sky)"/><path d="M0 142H304V192H0Z" fill="#91A686"/><path d="M0 143h304" stroke="#E7EEE4" stroke-width="2"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="168" rx="106" ry="7" fill="#405B61" opacity=".18"/><path d="M58 43h188v106H58Z" fill="#E5E9F0" opacity=".28"/><path d="M58 43h188v106H58m0-106 188 106m0-106L58 149M95 43l151 84M132 43l114 63M169 43l77 42M58 64l151 85M58 85l113 64M58 106l75 43M58 127l38 22" fill="none" stroke="#CBD5E1" stroke-width="1.5"/><path d="M54 40h196v7H54Zm-3 0h7v112h-7Zm192 0h7v112h-7Z" fill="#E5E9F0" stroke="#7B8A9E" stroke-width="1.5"/></g>
+ <g id="layer-focal" filter="url(#net-shadow)"><path d="M63 48h178v98H63Z" fill="url(#net-fill)" opacity=".88"/><path d="M63 48h178v98H63m0-98 178 98m0-98L63 146M93 48l148 81m-118-81 118 65M63 72l137 74M63 97l91 49M63 122l46 24M93 146l148-74m-118 74 118-59M63 122l115-74m-115 99 178-89M93 146l148-65" fill="none" stroke="#F1F5F9" stroke-width="1.4" opacity=".85"/><circle cx="158" cy="99" r="23" fill="url(#net-ball)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M158 88l7 5-3 9h-9l-3-8Z" fill="#27364B"/><path d="M137 99q9-11 21-11m22 11q10 1 19 10m-41 12q-9 10-18 13" fill="none" stroke="#F4F6FA" stroke-width="2.4"/></g>
+ <g id="layer-details"><ellipse cx="157" cy="98" rx="42" ry="37" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="5 4"/><path d="M104 55l11 7m81 54 14 9M102 131l13-8m83-52 13-8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><circle cx="78" cy="61" r="2" fill="#F2C14E"/><circle cx="224" cy="133" r="2" fill="#F2C14E"/><path d="M75 48v98" stroke="#DCECFB" stroke-width=".9" opacity=".54"/><path d="M96 48v98" stroke="#DCECFB" stroke-width=".9" opacity=".54"/><path d="M207 48v98" stroke="#DCECFB" stroke-width=".9" opacity=".54"/><path d="M229 48v98" stroke="#DCECFB" stroke-width=".9" opacity=".54"/><path d="M65 59h176" stroke="#DCECFB" stroke-width=".9" opacity=".54"/><path d="M65 136h176" stroke="#DCECFB" stroke-width=".9" opacity=".54"/></g>
+ <g id="layer-lighting"><ellipse cx="111" cy="67" rx="42" ry="18" fill="#FFFFFF" opacity=".07"/><path d="M65 49h174" stroke="#FFFFFF" stroke-width="1.3"/></g>
+</svg>

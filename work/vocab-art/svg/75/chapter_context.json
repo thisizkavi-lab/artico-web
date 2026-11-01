@@ -1,0 +1,86 @@
+{
+  "chapter_title": "Urban life",
+  "domain_setting": "A lively but legible city guide, balancing dense streets, shared community spaces, daily movement, housing, and public safety.",
+  "palette": {
+    "paper": "#F7F5EF",
+    "sky": "#DCE7EB",
+    "distant": "#A9B8BC",
+    "stone": "#788994",
+    "brick": "#B8805B",
+    "transit": "#4E7891",
+    "park": "#718B6C",
+    "warm light": "#E9C66F",
+    "ink": "#273744"
+  },
+  "global_art_direction": [
+    "Use clear editorial city scenes with strong silhouettes, inhabited architecture, and human-scale details; avoid anonymous box skylines as the only cue.",
+    "Keep urban life welcoming and varied. Represent different people naturally without caricature, labels, flags, logos, readable signs, or stereotypes.",
+    "Differentiate density and movement terms: crowded is people packed together, overcrowding is too many residents for limited housing or space, traffic moves, a traffic jam is stopped, and rush hour is a predictable peak flow.",
+    "Distinguish place terms by urban form: downtown is dense commercial center, suburb is lower-density housing at the city edge, neighborhood is a walkable local area, and green spaces are public parks within the built grid.",
+    "Show urban challenges in a humane, non-sensational way. Crime rate and vandalism should not depict violence, victims, readable charts, or graphic damage.",
+    "No lettering, numbers, brands, flags, readable shop signs, or unexplained icons. Use pictorial cues and spatial relationships instead."
+  ],
+  "reviewed_existing_art": {
+    "course_svgs_found_in_lesson": 0,
+    "mapped_lesson_art_found": 0,
+    "legacy_fallback_art_found": 0,
+    "same-term_course_art_reviewed": [
+      {"term": "apartment", "source": "09:apartment", "decision": "keep", "reason": "The overhead floor plan clearly shows one family's apartment unit and fits this chapter's sense."},
+      {"term": "city", "source": "07:city", "decision": "keep", "reason": "The skyline silhouette reads immediately as a city."},
+      {"term": "local", "source": "13:local", "decision": "keep", "reason": "A person connected to nearby homes and services gives a clear local-area cue."},
+      {"term": "restaurant", "source": "33:restaurant", "decision": "replace", "reason": "The table setting lacks a recognizable restaurant exterior or dining context."},
+      {"term": "tourist attraction", "source": "48:tourist attraction", "decision": "keep", "reason": "A large landmark with small visitors conveys an attraction and its scale."},
+      {"term": "commute", "source": "44:commute", "decision": "keep", "reason": "A bus visibly connects home and workplace, making the regular journey clear."},
+      {"term": "traffic jam", "source": "45:traffic jam", "decision": "keep", "reason": "A queue of cars stopped bumper-to-bumper reads clearly as a traffic jam."},
+      {"term": "rent", "source": "13:rent", "decision": "keep", "reason": "A tenant and landlord exchange payment beside a home."},
+      {"term": "safe", "source": "47:safe", "decision": "replace", "reason": "The hotel-room setting is too specific for safety in everyday urban life."},
+      {"term": "vandalism", "source": "27:vandalism", "decision": "replace", "reason": "A broken indoor object could suggest an accident rather than deliberate damage to public property."},
+      {"term": "pollution", "source": "53:pollution", "decision": "keep", "reason": "Smog over an inhabited city makes urban air pollution easy to recognize."}
+    ],
+    "related_course_art_reviewed": [
+      {"term": "parking", "source": "45:parking lot", "decision": "keep", "reason": "The overhead marked bays and cars depict the urban parking area clearly."}
+    ],
+    "copied_same-term_assets": [
+      "apartment", "city", "local", "tourist attraction", "commute", "traffic jam", "rent", "pollution", "parking"
+    ],
+    "replaced": ["restaurant", "safe", "vandalism"],
+    "reason": "No artwork was mapped to Lesson 75 itself. Exact-term cards from related lessons were visually reviewed; clear matches are reused, and ambiguous or context-mismatched cards are replaced with scenes specific to urban life."
+  },
+  "entries": {
+    "apartment": "A clear view into one family's apartment unit, including distinct rooms and a shared-building entrance.",
+    "city": "A recognizable urban skyline with buildings of varied heights grouped around streets and public space.",
+    "community": "Neighbors gathering in a shared civic courtyard with homes, a local service, and a small public space around them.",
+    "cosmopolitan": "People from varied backgrounds sharing a busy city square and transit hub, shown naturally and without national stereotypes.",
+    "downtown": "A dense commercial center with tall office buildings, storefronts, and a busy central street.",
+    "green spaces": "A welcoming public park with trees, lawn, paths, and a small green opening inside a dense city block.",
+    "historic buildings": "Preserved older stone or brick facades with distinctive arches and rooflines beside a modern city street.",
+    "infrastructure": "A coherent cutaway of city systems: roadway and bridge above water and utility conduits, visibly serving buildings.",
+    "local": "Nearby shops and services within easy walking distance of a home; emphasize proximity.",
+    "neighborhood": "A connected, walkable block of homes and small shops with neighbors using its shared street.",
+    "restaurant": "A street-facing restaurant with a visible dining room, tables, warm interior light, and guests eating.",
+    "suburb": "Low-rise houses, gardens, and a quieter road at the edge of a distant city skyline.",
+    "tourist attraction": "A distinctive landmark with visitors nearby to show that it draws people to see it.",
+    "urban life": "A broad but readable street scene joining apartment homes, people, transit, shops, and a public park.",
+    "commute": "A regular journey between home and work, with a person riding public transportation along a clear route.",
+    "parking": "Marked city parking bays with several cars and a clear car entering or leaving a space.",
+    "public transportation": "A city bus or tram picking up passengers at a marked stop, with people boarding and alighting.",
+    "road work / roadworks": "Workers repairing a street with a patch of fresh pavement, tools, and a safe, clearly marked work area.",
+    "rush hour": "A peak-time flow of commuters converging at a transit stop while buses arrive and pedestrians stream past.",
+    "traffic": "Cars, a bus, cyclists, and pedestrians moving through an orderly city intersection.",
+    "traffic jam": "A line of cars stopped bumper-to-bumper on a city road, with visible gaps closed and no forward motion.",
+    "carnival": "A lively street parade with a decorated float, dancing participants, music cues, and drifting confetti.",
+    "fast-paced": "A hurried commuter striding past a departing bus with strong directional motion and an energetic city backdrop.",
+    "greater choice": "A person at a city junction with several distinct nearby options: transit, shops, food, and a park, shown without signs or text.",
+    "lively nightlife": "A safe, active evening street with warmly lit restaurants, pedestrians, and cultural venues under a deep-blue sky.",
+    "pace of life": "A visual contrast between a brisk downtown flow and a slower shaded side street, showing different daily tempos.",
+    "quiet": "A peaceful residential street with few people, leafy trees, and a resting cat, separated from the busy city center.",
+    "rent": "A tenant hands payment to a landlord while receiving apartment keys, with the rented home in view.",
+    "crime rate": "A non-graphic visual comparison of repeated property incidents across a city block, using a clustered group of affected buildings to suggest frequency without numbers or readable charts.",
+    "crowded": "Many passengers packed closely inside a bus or at its boarding door, with little personal space.",
+    "derelict buildings": "An abandoned urban block with boarded windows, weathered brick, a damaged roofline, and weeds, without people in danger.",
+    "overcrowding": "A densely occupied apartment block around an undersized shared courtyard, emphasizing too many residents for the available space.",
+    "pollution": "City air pollution visible as haze and exhaust over buildings and busy roads.",
+    "safe": "A well-lit pedestrian crossing in a calm neighborhood, with a protected sidewalk and a driver yielding to a walker.",
+    "vandalism": "Fresh paint sprayed across a public wall and a damaged bench, with the deliberate property damage visible but no perpetrator or readable tags."
+  }
+}

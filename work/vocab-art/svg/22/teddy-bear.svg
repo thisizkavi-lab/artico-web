@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: teddy bear (Noun)
+  CONTEXTUAL_DEFINITION: A soft toy bear, often with round ears, paws, and a stitched nose.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Clearly recognizable bear ears, muzzle, and paws distinguish the teddy bear from other stuffed animals or soft toys.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm bedroom wall and wooden floor.
+    - Context_Layer: Small cushion and rug ground the toy.
+    - Focal_Layer: Seated honey-brown plush bear with round ears and paws.
+    - Details_Layer: Muzzle, stitched nose, seams, and bow tie.
+    - Lighting_Layer: Golden glow on the plush fur.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:teddy bear" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="teddy-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="teddy-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#teddy-bg)"/><path d="M0 152Q78 146 152 152T304 150V192H0Z" fill="#E8DDC8"/><path d="M22 31H99V87H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M60 32V86M23 59H98" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 153H304" stroke="#C4B79F" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="162" rx="86" ry="9" fill="#C9B99F" opacity=".65"/><path d="M54 150Q69 143 85 150V158H54Z" fill="#D9857F"/><path d="M220 52H273V96H220Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M227 59H265M227 69H265" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#teddy-shadow)"><circle cx="126" cy="45" r="17" fill="#B9824F" stroke="#65472F" stroke-width="2.2"/><circle cx="177" cy="45" r="17" fill="#B9824F" stroke="#65472F" stroke-width="2.2"/><circle cx="126" cy="45" r="8" fill="#D99F72"/><circle cx="177" cy="45" r="8" fill="#D99F72"/><circle cx="151" cy="74" r="34" fill="#B9824F" stroke="#65472F" stroke-width="2.4"/><ellipse cx="151" cy="86" rx="20" ry="15" fill="#E8C79F" stroke="#8D6138" stroke-width="1.7"/><circle cx="140" cy="72" r="3" fill="#1E2A3B"/><circle cx="162" cy="72" r="3" fill="#1E2A3B"/><path d="M146 82Q151 76 156 82L151 87Z" fill="#65472F" stroke="#1E2A3B" stroke-width="1"/><path d="M151 87Q145 94 139 91M151 87Q157 94 163 91" fill="none" stroke="#65472F" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="151" cy="126" rx="41" ry="34" fill="#B9824F" stroke="#65472F" stroke-width="2.4"/><ellipse cx="151" cy="129" rx="22" ry="18" fill="#E8C79F" stroke="#8D6138" stroke-width="1.4"/><ellipse cx="111" cy="124" rx="18" ry="26" transform="rotate(28 111 124)" fill="#B9824F" stroke="#65472F" stroke-width="2.2"/><ellipse cx="191" cy="124" rx="18" ry="26" transform="rotate(-28 191 124)" fill="#B9824F" stroke="#65472F" stroke-width="2.2"/><ellipse cx="126" cy="153" rx="23" ry="13" fill="#B9824F" stroke="#65472F" stroke-width="2"/><ellipse cx="176" cy="153" rx="23" ry="13" fill="#B9824F" stroke="#65472F" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M138 105L151 114L164 105L162 123H140Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><circle cx="151" cy="113" r="4" fill="#D9A441" stroke="#A96B46" stroke-width="1.1"/><path d="M118 58Q125 52 132 58M170 58Q177 52 184 58M111 133Q121 140 131 134M171 134Q181 140 191 133" fill="none" stroke="#D9A06A" stroke-width="1.5" stroke-dasharray="2 3"/><path d="M137 105Q151 98 165 105" fill="none" stroke="#E8C79F" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="99" rx="79" ry="75" fill="#FEF9C3" opacity=".12"/><path d="M121 48Q151 27 181 48" fill="none" stroke="#F5D0A4" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+</svg>

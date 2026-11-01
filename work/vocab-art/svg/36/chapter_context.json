@@ -1,0 +1,93 @@
+{
+  "lesson": 36,
+  "chapter_title": "Industries and departments",
+  "domain_setting": "A connected economy: farms, mines, energy sites, factories, service businesses, transport and trade, plus the distinct teams inside a company. Use a clear site or tool silhouette for each industry and a recognisable office task for each department.",
+  "ambient_palette": {
+    "paper": "#FAF8F3",
+    "wall": "#EEF4FA",
+    "timber": "#C88446",
+    "ink": "#1E2A3B",
+    "workwear": "#5479AC",
+    "care": "#65A30D",
+    "warmth": "#D9A441",
+    "alert": "#CE3D4E"
+  },
+  "recurring_scale_anchors": [
+    "304x192 card with essential subject inside x24..280 and y16..176",
+    "No readable text, numerals, logos, signs, labels, or faux letterforms",
+    "Differentiate similar sectors through their actual materials, site equipment, products, and work tasks",
+    "Show safe, respectful workplaces; no smoke clouds, explosions, hazardous exposure, or unsafe practices"
+  ],
+  "polysemy_resolution_table": {
+    "agriculture": "The broad crop-growing and land-based sector, distinct from a single farmer at work.",
+    "farming": "Hands-on cultivation and care of crops or livestock, distinct from agriculture as a sector.",
+    "construction": "The active process of assembling or building a structure, distinct from the construction industry as a sector.",
+    "construction industry": "The sector and its many building sites, distinct from one act of construction.",
+    "company": "A business organization. The supplied Japanese gloss says visitors/guests, but the industries and departments group selects the organization sense.",
+    "property": "Movable property/assets or possessions, matching the supplied Japanese gloss; distinct from land and buildings in real estate.",
+    "real estate": "Land and buildings as property, distinct from movable possessions.",
+    "hospitality": "Welcoming and serving guests in accommodation or food service, not a feeling of being hospitable in the abstract.",
+    "department / departments (workplace)": "A distinct division within a company, not a government ministry.",
+    "administration (department)": "The office team coordinating records, procedures, and operations, not government rule.",
+    "accounts (department)": "Workplace accounting records and invoices, not online user accounts.",
+    "finance (department)": "The internal company team overseeing budgets and funds, distinct from finance as an industry.",
+    "marketing (department)": "A company team researching customers and presenting products, distinct from one advertisement.",
+    "sales (department)": "The workplace team helping customers buy products, distinct from the act or industry of sales.",
+    "production (department)": "A company team coordinating output on a production line, distinct from production as a broad sector.",
+    "industry / industries": "A broad economic sector made up of businesses, not a single factory or individual worker."
+  },
+  "contrast_notes": {
+    "agriculture / farming / food industry / fishing industry / mining industry / petroleum engineering / energy industry / recycling industry": "Show crop landscape and agronomy, active crop tending, food processing, commercial fishing vessel and net, ore extraction, engineer planning an oil well, power generation, and sorted reusable materials on an industrial line.",
+    "aerospace industry / chemical industry / electronics industry / manufacturing industry / pharmaceutical industry / technology": "Show aircraft or spacecraft assembly, enclosed tanks and lab glass, circuit-board production, an assembly line, medicine production in a clean plant, and an engineering prototype/circuit system.",
+    "construction / construction industry": "Show one partially assembled building with a crane and workers for construction; use several structures, workers, and equipment to suggest the whole construction sector.",
+    "advertising industry / journalism / public relations / marketing / sales": "Separate ad campaign production, reporters documenting news, an organization briefing the public, customer research/product positioning, and a direct product purchase.",
+    "catering industry / hospitality / food industry / retail / tourism industry / transportation industry / shipping industry": "Show event food service, a guest welcomed at accommodation, packaged food processing, a stocked shop with a customer, travel sightseeing, passenger transport, and cargo freight by sea.",
+    "healthcare / education / entertainment industry / fashion industry / finance industry / real estate": "Show clinical care, teaching, studio/stage production, garment design and runway, commercial banking/financial service, and land/building brokerage respectively.",
+    "accounts / administration / customer service / facilities / finance / human resources / information technology / legal / marketing / office services / production / purchasing / research and development / sales": "Give each department its own desk or work object: invoices, filing and coordinating, customer support headset, building maintenance plan, budget ledger, hiring/benefits meeting, network/computer support, legal case file, product research, office supplies/services, factory output board, purchasing order with goods, lab prototype, and customer sale.",
+    "company / industry / department / property": "Use a complete business building with teams, a connected network of sector sites, a clearly separated team within an office, and portable managed assets such as furniture/equipment. Keep property away from real-estate house imagery."
+  },
+  "existing_asset_triage": {
+    "reviewed_candidates": [
+      {
+        "term": "finance (department)",
+        "source": "36/finance.svg",
+        "decision": "retain for general finance; reject for department",
+        "reason": "The single analyst, line graph and money box suggest finance generally, but not the internal company team."
+      },
+      {
+        "term": "finance (department)",
+        "source": "38/finance.svg",
+        "decision": "reject",
+        "reason": "A household finance plan with house, document and briefcase, not an internal company budget team."
+      },
+      {
+        "term": "finance (department)",
+        "source": "36/finance-industry.svg",
+        "decision": "reject",
+        "reason": "Bank building and coins show the finance industry, not the department inside a company."
+      },
+      {
+        "term": "marketing (department)",
+        "source": "36/marketing.svg",
+        "decision": "retain for general marketing; reject for department",
+        "reason": "Abstract target graphic and people are too ambiguous to teach the internal team or its work."
+      },
+      {
+        "term": "marketing (department)",
+        "source": "36/advertising-industry.svg",
+        "decision": "reject",
+        "reason": "Megaphone and media campaign depict advertising, a separate industry."
+      },
+      {
+        "term": "marketing (department)",
+        "source": "36/sales-department.svg",
+        "decision": "reject",
+        "reason": "Sales team and purchase pipeline depict the sales department, not customer research and product positioning."
+      }
+    ],
+    "resolution": "General finance and marketing artwork remains under its original keys and output paths. New department-specific scenes use separate exact keys and output paths."
+  },
+  "glossary_context_notes": [
+    "Final department review replaced the one-person generic finance scene and abstract marketing target for the company-team senses. The original finance and marketing illustrations remain on their general-term entries. New finance art shows colleagues reviewing a budget; new marketing art shows a team using shopper research and a product sample."
+  ]
+}

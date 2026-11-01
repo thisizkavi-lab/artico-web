@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: go out (verb phrase; money goes out as an expense)
+  CONTEXTUAL_DEFINITION: For money to leave a household or business account as payment.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action plus tool
+  SYNONYM_GUARD: Japanese gloss is social “go out,” but the finance-expenses group selects money outflow; show cash leaving a purse to settle an expense.
+  MODE: STATIC peak payment moment
+  COORDINATE_BLUEPRINT: Open wallet at left, hand passes coins across a counter to an unpaid bill at right; bold outward arrow conveys money leaving the budget.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:go out" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="goout-wallet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#965D28"/></linearGradient>
+    <radialGradient id="goout-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="goout-hand" d="M55 112 C66 99 78 98 91 105 L116 117 L108 133 L84 124 L66 132 Z"/>
+    <clipPath id="goout-hand-clip"><use href="#goout-hand"/></clipPath>
+    <filter id="goout-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="164" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Everyday expenses counter -->
+  <g id="layer-context"><path d="M26 131 H277 V146 H26 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M35 136 H268" stroke="#E3AC77" stroke-width="2"/><rect x="202" y="51" width="51" height="74" rx="4" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2"/><path d="M210 64 H243 M210 72 H240 M210 81 H244 M210 90 H236" stroke="#94A3B8" stroke-width="1.6"/><path d="M210 102 H244" stroke="#CE3D4E" stroke-width="2"/><path d="M211 110 H232" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 3. Primary wallet releases cash to pay an expense -->
+  <g id="layer-focal" filter="url(#goout-shadow)"><path d="M43 93 Q45 85 54 85 H130 Q139 85 141 94 L147 124 Q148 131 141 132 H47 Q39 130 40 123 Z" fill="url(#goout-wallet)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M45 96 Q93 105 143 96" fill="none" stroke="#F2A472" stroke-width="3"/><rect x="85" y="99" width="21" height="15" rx="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><g clip-path="url(#goout-hand-clip)"><rect x="49" y="94" width="73" height="55" fill="#D89A6C"/><path d="M54 128 Q83 112 118 128 V151 H49Z" fill="#B6784B"/></g><use href="#goout-hand" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <!-- 4. Coins leave the available funds and reach the expense -->
+  <g id="layer-details"><ellipse cx="151" cy="120" rx="9" ry="5" fill="url(#goout-coin)" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="171" cy="121" rx="8" ry="4.5" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="187" cy="118" rx="8" ry="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M143 78 H195" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/><path d="M188 71 L198 78 L188 85 Z" fill="#4A72B2"/><path d="M212 117 H242" stroke="#CE3D4E" stroke-width="2" stroke-dasharray="3 3"/><circle cx="191" cy="60" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 5. Outflow accent -->
+  <g id="layer-lighting"><path d="M54 92 H86" stroke="#FFD0B0" stroke-width="2" stroke-linecap="round"/><path d="M152 94 L152 102 M148 98 H156" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M261 55 L261 64 M257 59 H265" stroke="#4A72B2" stroke-width="2.1" stroke-linecap="round"/></g>
+</svg>

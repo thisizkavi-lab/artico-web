@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: project (verb; plan a piece of work)
+  CONTEXTUAL_DEFINITION: Plan or design a substantial piece of work that a team will carry out.
+  PEDAGOGICAL_ART_DIRECTOR: Show colleagues turning a drawn plan into a small physical model, emphasizing preparation before execution.
+  PEDAGOGICAL_ARCHETYPE: 4 - Planning action with physical work model
+  SYNONYM_GUARD: Lesson gloss and task group select the verb plan, not a school assignment, a film, or projecting light.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set a paper blueprint on a broad table at x=54..184,y=88..136, with a small block-built office model at x=204..256. A planner at x=115..162 points from the plan toward the model; a teammate leans in to review.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:project" data-archetype="project-planning">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="project-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <linearGradient id="project-model" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5F0E1"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <radialGradient id="project-focus"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="project-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Planning room and the work table -->
+  <g id="layer-context"><path d="M31 148 H273" stroke="#C88446" stroke-width="2"/><path d="M38 126 H267 V139 H38 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="1.8"/><path d="M51 139 V153 M253 139 V153" stroke="#965D28" stroke-width="2.7"/><rect x="42" y="45" width="45" height="52" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.3"/><path d="M49 53 H80 M49 60 H75 M49 68 H80" stroke="#94A3B8" stroke-width="1.1"/><circle cx="64" cy="82" r="8" fill="#A8D4A2" stroke="#64748B" stroke-width="1.1"/><path d="M53 92 Q54 83 64 83 Q74 83 75 92" fill="#DCECFB" stroke="#64748B" stroke-width="1.1"/><rect x="220" y="39" width="47" height="42" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M227 49 H260 M227 56 H255 M227 64 H259" stroke="#94A3B8" stroke-width="1.1"/><path d="M239 81 V93 M248 81 V93" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 3. Two colleagues design a project from plan to model -->
+  <g id="layer-focal" filter="url(#project-shadow)"><path d="M50 83 L169 76 L190 118 L69 125 Z" fill="url(#project-paper)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M61 92 L166 86 M65 101 L171 95 M70 111 L177 104 M84 82 L100 122 M111 80 L127 119 M140 78 L156 116" stroke="#A9C6E8" stroke-width="1"/><path d="M82 109 L107 97 L127 105 L151 87" fill="none" stroke="#5479AC" stroke-width="2"/><rect x="202" y="101" width="58" height="26" rx="2" fill="url(#project-model)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M207 101 V74 L226 65 L245 74 V101 Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.8"/><path d="M226 65 V101 M207 82 L226 74 L245 82" fill="none" stroke="#64748B" stroke-width="1.3"/><rect x="213" y="86" width="7" height="10" fill="#F8FBFE" stroke="#64748B" stroke-width=".9"/><rect x="231" y="86" width="7" height="10" fill="#F8FBFE" stroke="#64748B" stroke-width=".9"/><circle cx="121" cy="56" r="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M112 55 Q113 45 121 45 Q130 46 130 54 Q124 49 118 51 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1"/><path d="M108 84 Q109 65 121 65 Q134 65 135 83 L131 91 H113 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M129 75 L150 92 L155 89 L139 68" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M151 88 Q157 85 161 90 L157 96 L151 94 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="175" cy="56" r="8" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/><path d="M167 54 Q168 45 176 46 Q184 47 184 54" fill="#7B5D4A" stroke="#64748B" stroke-width="1"/><path d="M163 82 Q164 64 175 64 Q187 64 188 82 L184 91 H168 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.8"/><path d="M168 76 L153 91 L159 96 L176 84" fill="#E5F0E1" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 4. Route arrows join the plan to the prototype -->
+  <g id="layer-details"><path d="M177 90 C188 80 196 78 207 78" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="3 3"/><path d="M201 74 L210 78 L202 83 Z" fill="#4A72B2"/><circle cx="187" cy="81" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M89 115 L95 109 M97 117 L102 111" stroke="#5479AC" stroke-width="1.4"/><path d="M194 97 H199" stroke="#7FB07A" stroke-width="2" stroke-linecap="round"/><circle cx="248" cy="55" r="4" fill="#F2C14E" stroke="#64748B" stroke-width="1"/></g>
+  <!-- 5. Focus on thoughtful design before work begins -->
+  <g id="layer-lighting"><ellipse cx="155" cy="97" rx="84" ry="61" fill="url(#project-focus)"/><ellipse cx="125" cy="96" rx="60" ry="38" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".64"/><path d="M54 87 H76" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M196 45 L202 39 M202 51 H210" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+</svg>

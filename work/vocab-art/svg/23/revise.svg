@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: revise (Verb)
+  CONTEXTUAL_DEFINITION: To study and improve notes or knowledge in preparation for an examination.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Student actively adds corrections and reorganizes notes before an exam, distinct from review's quiet rereading of completed material.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School study desk and exam calendar with no numerals.
+    - Context_Layer: Closed textbook and timer.
+    - Focal_Layer: Student rewrites and improves a set of notes.
+    - Details_Layer: Eraser, colored sticky tabs, and inserted correction marks.
+    - Lighting_Layer: Focused bright light on the edited pages.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:revise" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="revise-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="revise-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#revise-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 28H95V81H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 29V80M22 54H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="225" y="38" width="54" height="75" fill="#FFFEFA" stroke="#64748B" stroke-width="1.4"/><path d="M232 49H272M232 60H272M232 71H272M232 82H272M232 93H272" stroke="#AFC5DA" stroke-width="1.3"/><path d="M36 123H77V139H36Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M41 127H72" stroke="#DCECFB" stroke-width="1.2"/><circle cx="202" cy="122" r="15" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M202 112V122L209 126" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#revise-shadow)"><path d="M42 113H212V122H42Z" fill="#A98A64" stroke="#65472F" stroke-width="1.4"/><path d="M54 122V148M201 122V148" stroke="#8D765A" stroke-width="3"/><path d="M68 91L135 86L141 132L74 139Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.5"/><path d="M80 101L128 97M81 111L129 106M83 121L124 116" stroke="#AFC5DA" stroke-width="1.3"/><path d="M145 86L213 91L207 136L140 131Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M154 99L200 103M153 109L196 113" stroke="#88A9D0" stroke-width="1.4"/><path d="M152 121L160 125L169 113M177 121L184 125L193 113" fill="none" stroke="#91A77C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M175 77L200 68" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/><path d="M175 77L200 68" stroke="#8D6138" stroke-width="1.4" stroke-linecap="round"/><circle cx="116" cy="63" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M104 63Q105 50 117 50Q129 51 129 64L124 67Q122 58 116 58Q111 58 107 70Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M98 82Q116 76 134 83L139 107L127 116L105 110L93 95Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M103 85L122 100L143 112" fill="none" stroke="#1E2A3B" stroke-width="5.2" stroke-linecap="round"/><path d="M103 85L122 100L143 112" fill="none" stroke="#C98961" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M90 86L102 76L109 83L97 93Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M102 76L106 71L112 77L109 83Z" fill="#F9CED0"/><path d="M167 88L172 84L185 87L180 92Z" fill="#D9A441"/><path d="M230 47L239 38L248 47L239 56Z" fill="#D9857F"/><path d="M242 114Q251 105 260 114V128H242Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="96" rx="122" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M145 86L213 91L207 136" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/></g>
+</svg>

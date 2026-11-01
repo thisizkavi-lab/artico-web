@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: stay in a hotel
+  CONTEXTUAL_DEFINITION: To spend one or more nights as a guest in a hotel.
+  PEDAGOGICAL_ART_DIRECTOR: Show a guest settled into a hotel room at night, with a bed, bedside lamp, and unpacked travel case.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show overnight lodging in a guest room, not checking in at the lobby or describing the hotel building itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A comfortable hotel bedroom has a made bed, warm bedside lamp, moon at the window, and an opened suitcase with clothes beside the bed.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:stay in a hotel" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="stay-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E8E7E0"/><stop offset="1" stop-color="#D6D4C9"/></linearGradient>
+  <linearGradient id="stay-linen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF6"/><stop offset="1" stop-color="#D6E1E3"/></linearGradient>
+  <linearGradient id="stay-lamp" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7DE9A"/><stop offset="1" stop-color="#D89D50"/></linearGradient>
+  <filter id="stay-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#D8E3E5"/><path d="M17 20H287V151H17Z" fill="url(#stay-wall)" stroke="#65777D" stroke-width="1.5"/><path d="M17 151H287V184H17Z" fill="#B7B7AB" stroke="#65777D" stroke-width="1.3"/><path d="M28 166H276" stroke="#E8E3D7" stroke-width="1.2"/><rect x="206" y="35" width="58" height="50" fill="#708594" stroke="#314B5B" stroke-width="1.5"/><rect x="212" y="40" width="46" height="40" fill="#9FC4CF"/><path d="M235 40V80M212 60H258" stroke="#516A76" stroke-width="1.4"/><path d="M239 47A12 12 0 1 0 252 62A10 10 0 0 1 239 47Z" fill="#F7E4AB"/><circle cx="221" cy="49" r="1.5" fill="#F8F5EA"/><circle cx="251" cy="71" r="1.5" fill="#F8F5EA"/></g>
+ <g id="layer-context"><rect x="40" y="52" width="13" height="99" fill="#81664D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M36 56H61M36 64H61" stroke="#C6AD8E" stroke-width="2"/><rect x="266" y="61" width="10" height="90" fill="#81664D" stroke="#1E2A3B" stroke-width="1.2"/><path d="M52 151H279" stroke="#6E5A46" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#stay-shadow)"><path d="M70 111H263V151H70Z" fill="#667E8E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M83 78H254V123H83Z" fill="url(#stay-linen)" stroke="#526274" stroke-width="1.5"/><path d="M83 100H254V143H83Z" fill="#DDE8E6" stroke="#526274" stroke-width="1.4"/><path d="M85 103Q107 92 130 103V124H85Z" fill="#FFFDF6" stroke="#A0B0B1" stroke-width="1.2"/><path d="M130 100Q179 108 254 96V141H130Z" fill="#4A72B2" stroke="#314E78" stroke-width="1.4"/><path d="M70 143H263" stroke="#304656" stroke-width="3"/><path d="M78 151V165M254 151V165" stroke="#57483A" stroke-width="4"/><rect x="164" y="146" width="24" height="18" rx="3" fill="#526274" stroke="#1E2A3B" stroke-width="1.3"/><path d="M169 146V141Q169 138 176 138Q183 138 183 141V146" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M263 129H285V136H263Z" fill="#8C7156" stroke="#1E2A3B" stroke-width="1.2"/><path d="M267 136V151M281 136V151" stroke="#604C3D" stroke-width="2.2"/><path d="M275 111V128" stroke="#80654B" stroke-width="2.8"/><path d="M264 112Q275 93 286 112Z" fill="url(#stay-lamp)" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="275" cy="116" rx="12" ry="20" fill="#F2C14E" opacity=".13"/></g>
+ <g id="layer-details"><path d="M79 74H252" stroke="#F9F7EF" stroke-width="1.2"/><path d="M98 133H119M151 133H213" stroke="#A6C5D8" stroke-width="1.2"/><circle cx="178" cy="155" r="2" fill="#F2C14E"/><ellipse cx="151" cy="169" rx="108" ry="6" fill="#526274" opacity=".18"/><circle cx="69" cy="43" r="3" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="176" cy="119" rx="102" ry="54" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".38"/><path d="M20 22H283" stroke="#FFFFFF" stroke-width="1.2" opacity=".65"/></g>
+</svg>

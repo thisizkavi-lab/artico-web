@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: stage
+ CONTEXTUAL_DEFINITION: The raised platform in a theater where performers perform.
+ PEDAGOGICAL_ARCHETYPE: empty proscenium stage
+ SYNONYM_GUARD: Show the physical performance platform, curtains and wings without a particular show, actor or movie screen.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: An empty raised stage fills the lower center beneath a proscenium arch, framed by open wings and velvet curtains.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:stage" data-archetype="empty proscenium stage">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M21 22H283V151H21Z" fill="#26384A"/><path d="M30 30H274V146H30Z" fill="#405663"/>
+  <path d="M52 42H252V137H52Z" fill="#F1E2C8"/>
+  <path d="M36 38H74V138H36Z M268 38H230V138H268Z" fill="#B85E5A"/>
+  <path d="M39 47Q55 56 72 45V136H39Z M265 47Q249 56 232 45V136H265Z" fill="#D17A6B"/>
+  <path d="M50 136H254V145H50Z" fill="#D6A64C"/><path d="M39 145H265V153H39Z" fill="#8C725A"/>
+  <path d="M44 35H260" stroke="#D6A64C" stroke-width="3" fill="none"/>
+  <path d="M52 32Q80 45 108 32Q151 46 196 32Q228 44 252 32" stroke="#B85E5A" stroke-width="5" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M50 43V136m11-94v94m11-94v94m160-94v94m11-94v94m11-94v94" stroke="#A84F4B" stroke-width="1.1" fill="none"/>
+  <path d="M81 52H223" stroke="#D3C2A6" stroke-width="1" fill="none"/>
+  <path d="M26 151H278" stroke="#E8DCC5" stroke-width="1" fill="none"/>
+  <circle cx="43" cy="31" r="2" fill="#E8C76A"/><circle cx="261" cy="31" r="2" fill="#E8C76A"/>
+  <path d="M73 143H231" stroke="#F5EBD9" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M42 137H262V146H42Z" fill="#D6A64C"/>
+  <path d="M33 146H271V154H33Z" fill="#8C725A"/>
+  <path d="M58 135H246" stroke="#F6EAD3" stroke-width="1.2" fill="none"/>
+  <path d="M65 130H239" stroke="#E7D5B4" stroke-width="1" fill="none"/>
+  <path d="M68 124H236" stroke="#F4E8D1" stroke-width=".8" fill="none"/>
+  <path d="M89 49V131m126-82v82" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M42 40Q54 48 68 40m168 0q14 8 26 0" stroke="#E7A092" stroke-width="1.2" fill="none"/>
+  <path d="M24 24H280" stroke="#8FA0A2" stroke-width="1" fill="none"/>
+  <circle cx="47" cy="29" r="1.5" fill="#D6A64C"/><circle cx="257" cy="29" r="1.5" fill="#D6A64C"/>
+  <path d="M56 154H248" stroke="#F2E5CB" stroke-width="1" fill="none"/>
+  <path d="M29 157H275" stroke="#E5D6BB" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="96" rx="102" ry="64" fill="#E7C66B" opacity=".1"/>
+  <path d="M88 29L116 126m127-97-42 97" stroke="#FFF1C7" stroke-width="1.3" opacity=".58" fill="none"/>
+  <path d="M52 136H252" stroke="#FFF6E3" stroke-width="1" opacity=".65" fill="none"/>
+ </g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: signpost
+  CONTEXTUAL_DEFINITION: A post with directional boards that points travelers toward different routes.
+  PEDAGOGICAL_ART_DIRECTOR: Make a wooden multi-arrow signpost the focal object at a countryside path fork, with blank boards and a small traveler.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Use physical directional boards fixed to a post; include no lettering or map symbols.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A sturdy post stands at (154,105) with three blank arrow boards pointing left, right, and upper right; three paths diverge around it and a traveler approaches.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:signpost" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="signpost-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4EDD8"/><stop offset="1" stop-color="#C6D9B7"/></linearGradient>
+  <linearGradient id="signpost-wood" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#AB7951"/><stop offset=".5" stop-color="#D1A16C"/><stop offset="1" stop-color="#936443"/></linearGradient>
+  <linearGradient id="signpost-path" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D7C6A6"/><stop offset="1" stop-color="#B7A385"/></linearGradient>
+  <filter id="signpost-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#signpost-land)"/><path d="M116 178L139 111H168L192 178Z" fill="url(#signpost-path)" stroke="#907E64" stroke-width="1.3"/><path d="M151 112L102 179H77L128 107Z" fill="url(#signpost-path)" stroke="#907E64" stroke-width="1.2"/><path d="M164 110L209 178H232L175 104Z" fill="url(#signpost-path)" stroke="#907E64" stroke-width="1.2"/><path d="M13 51Q44 21 78 43V111Q45 127 16 105Z" fill="#A6C493"/><path d="M226 33Q263 17 292 47V112Q264 126 229 103Z" fill="#A6C493"/><path d="M22 144L47 129M261 142L286 126" stroke="#8CA77E" stroke-width="2"/></g>
+ <g id="layer-context"><circle cx="48" cy="60" r="18" fill="#7FA87A" stroke="#486750" stroke-width="1.5"/><circle cx="251" cy="62" r="20" fill="#7FA87A" stroke="#486750" stroke-width="1.5"/><circle cx="62" cy="143" r="13" fill="#85A97B" stroke="#486750" stroke-width="1.4"/><circle cx="244" cy="144" r="14" fill="#85A97B" stroke="#486750" stroke-width="1.4"/><path d="M28 72L66 72M238 72L278 72" stroke="#A6C591" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#signpost-shadow)"><path d="M149 50H160V151H149Z" fill="url(#signpost-wood)" stroke="#674B36" stroke-width="1.8"/><path d="M144 147H166L171 158H138Z" fill="#8F6545" stroke="#674B36" stroke-width="1.4"/><path d="M152 58H85L75 68L85 78H152Z" fill="#D6B27D" stroke="#644C37" stroke-width="1.8"/><path d="M157 86H229L240 96L229 106H157Z" fill="#83A0B3" stroke="#435A6A" stroke-width="1.8"/><path d="M157 115H201L212 125L201 135H157Z" fill="#D6B27D" stroke="#644C37" stroke-width="1.8"/><path d="M95 64H141M168 92H220M168 121H192" stroke="#F0DFC0" stroke-width="2" opacity=".8"/><path d="M146 48H163" stroke="#F1D4A9" stroke-width="2"/></g>
+ <g id="layer-details"><ellipse cx="119" cy="166" rx="10" ry="4" fill="#66736B" opacity=".4"/><circle cx="119" cy="146" r="5.5" fill="#D9A77D" stroke="#1E2A3B" stroke-width="1"/><path d="M112 153Q119 149 126 153L129 166L125 175H114L109 165Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4"/><path d="M114 174L111 183M124 174L128 183M111 156L106 164M126 156L132 162" stroke="#354A5D" stroke-width="2.8" stroke-linecap="round"/><circle cx="153" cy="78" r="3" fill="#F2C14E"/><circle cx="153" cy="108" r="3" fill="#F2C14E"/><path d="M141 158H169" stroke="#A27A56" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M87 60H148M159 88H228M159 117H199" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/><ellipse cx="155" cy="99" rx="53" ry="73" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".45"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: only child (Noun)
+  CONTEXTUAL_DEFINITION: A child who has no brothers or sisters.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: One child stands between two loving parents with no other children in the scene; the quiet open space reinforces that this child has no siblings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm, uncluttered family room.
+    - Context_Layer: One child's toy and two adult family members.
+    - Focal_Layer: The sole child takes the center while both parents lean toward them.
+    - Details_Layer: Paired hands and a single child-sized seat.
+    - Lighting_Layer: Warm circle focused on the one-child family.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:only child" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="only-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="only-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2C14E"/><stop offset="1" stop-color="#D49B2A"/></linearGradient>
+    <filter id="only-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#only-bg)"/><path d="M0 150Q75 144 152 150T304 148V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="127" ry="7" fill="#DDD4C3"/><path d="M21 41H283" stroke="#E3E8F0" stroke-width="2"/><path d="M22 119Q22 101 39 101H69Q86 101 86 119V136H22Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.8"/><path d="M26 121H82M31 136V146M78 136V146" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="111" rx="128" ry="74" fill="#FEF3C7" opacity=".3"/><circle cx="68" cy="68" r="21" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M47 66Q49 45 69 46Q91 47 89 70L82 75Q77 57 67 58Q55 58 50 76Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M50 95Q68 85 85 96L98 143H39Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="237" cy="68" r="21" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M216 66Q217 45 238 46Q260 48 258 70L252 77Q247 57 237 58Q225 58 219 76Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M218 95Q237 85 255 96L267 143H207Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M78 111Q97 120 117 126M223 112Q204 121 185 126" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M78 111Q97 120 117 126M223 112Q204 121 185 126" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M184 126L174 135L168 129" fill="none" stroke="#F5BFA3" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#only-shadow)"><path d="M116 177Q118 142 135 134Q153 127 172 136L185 177Z" fill="url(#only-top)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M133 138L151 151L170 138" fill="none" stroke="#FCE29C" stroke-width="2"/><rect x="143" y="113" width="19" height="22" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2"/><circle cx="152" cy="86" r="28" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M124 84Q125 60 151 59Q180 60 181 87L174 93Q170 71 152 72Q135 71 127 94Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.1"/><path d="M137 85Q142 89 147 85M157 85Q162 89 168 85M140 101Q152 107 164 101" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/><path d="M110 148Q119 139 127 137M190 148Q183 138 176 136" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M110 148Q119 139 127 137M190 148Q183 138 176 136" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M145 177V160H160V177Z" fill="#FAF8F3" stroke="#315782" stroke-width="1.7"/><path d="M148 161V174M157 161V174" stroke="#D49B2A" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M136 64Q151 58 167 63M59 57Q67 53 75 57M228 57Q236 53 244 57" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/><circle cx="106" cy="83" r="2.7" fill="#D9A441"/><circle cx="198" cy="83" r="2.7" fill="#D9A441"/><path d="M108 95Q115 90 121 95M184 95Q191 90 197 95" fill="none" stroke="#D9A441" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="109" rx="132" ry="79" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".37"/><path d="M114 51Q151 33 190 49" fill="none" stroke="#FFFFFF" stroke-width="3"/></g>
+</svg>

@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: beach
+  CONTEXTUAL_DEFINITION: The sandy or pebbled shore beside the sea.
+  PEDAGOGICAL_ARCHETYPE: 1 - Distinctive shore location
+  SYNONYM_GUARD: Show sand, shoreline, and water as the place itself; distinguish from the outing phrase that shows people arriving.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A broad sunny shore with sand, gentle waves, and a beach umbrella planted near the water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:beach" data-archetype="sunlit-shore-with-sand-and-sea">
+
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="beach-sky" x2="0" y2="1"><stop stop-color="#D9EBE7"/><stop offset="1" stop-color="#F5E8C9"/></linearGradient>
+  <linearGradient id="beach-sea" x2="0" y2="1"><stop stop-color="#5E9EAD"/><stop offset="1" stop-color="#377B91"/></linearGradient>
+  <linearGradient id="beach-sand" x2="0" y2="1"><stop stop-color="#E6CB92"/><stop offset="1" stop-color="#C39B61"/></linearGradient>
+  <linearGradient id="beach-umbrella" x2="0" y2="1"><stop stop-color="#E88F65"/><stop offset="1" stop-color="#B95148"/></linearGradient>
+  <filter id="beach-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#beach-sky)"/><circle cx="250" cy="37" r="16" fill="#F1C968"/><path d="M0 81Q67 70 136 78T304 75V128H0Z" fill="#6FA7AD"/><path d="M0 97Q51 88 98 96T180 94Q247 84 304 94V145H0Z" fill="url(#beach-sea)"/><path d="M0 124Q53 112 102 126T197 121Q249 108 304 119V152H0Z" fill="#4C8EA0"/><path d="M0 137Q68 124 129 138T250 130Q278 128 304 135V192H0Z" fill="url(#beach-sand)"/></g>
+<g id="layer-context">
+  <path d="M0 135Q43 123 82 137T152 136Q191 122 228 132T304 127" fill="none" stroke="#EFF7E9" stroke-width="3"/>
+  <path d="M0 145Q42 135 85 146T166 144Q208 134 250 143T304 139" fill="none" stroke="#D2EEE4" stroke-width="2"/>
+  <path d="M0 155Q62 143 120 156T238 150Q272 147 304 153V192H0Z" fill="#D8B77C"/>
+  <path d="M195 84Q229 56 270 81Q253 82 240 92Z" fill="#758C7B"/><path d="M215 84Q233 69 250 83" fill="none" stroke="#BAC9A4" stroke-width="1.4"/>
+  <path d="M26 177q16-7 31 0m182-13q14-5 26 0m-114 17q11-4 21 0" fill="none" stroke="#EBD3A1" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#beach-shadow)">
+  <path d="M76 143L95 83" stroke="#6F513F" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M55 88Q74 61 98 58Q123 61 140 89Q119 82 98 86Q75 82 55 88Z" fill="url(#beach-umbrella)" stroke="#81494A" stroke-width="1.6"/>
+  <path d="M98 59V86m-42 2q20-6 42-2m0 0q21-4 42 3" fill="none" stroke="#F2C99B" stroke-width="1.4"/>
+  <path d="M48 144q24-9 49 0v18H48Z" fill="#4D7281" stroke="#324C57" stroke-width="1.5"/><path d="M58 147v14m18-16v16m17-16v16" fill="none" stroke="#EAD6A9" stroke-width="1.5"/>
+  <path d="M147 161q10-7 21-2m9 9q9-6 18-2" fill="none" stroke="#A88759" stroke-width="1.5"/>
+  <path d="M144 169q6-9 11 0m-8-1q5 4 9 0" fill="none" stroke="#F6E4BB" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M18 125q18-6 34 0m81-21q17-5 31 0m82 17q19-6 35 0" fill="none" stroke="#C4E4DD" stroke-width="1.5"/>
+  <circle cx="42" cy="168" r="1.5" fill="#F9E9C6"/><circle cx="119" cy="177" r="1.8" fill="#F9E9C6"/><circle cx="207" cy="174" r="1.6" fill="#F9E9C6"/><circle cx="272" cy="164" r="1.4" fill="#F9E9C6"/>
+  <path d="M37 116q7-7 14-1m171-13q6-6 13-1m-109 24q9-4 17 0" fill="none" stroke="#E7F3E7" stroke-width="1.3"/>
+  <path d="M45 171q6-3 12 0m117 5q6-3 12 0m57-18q5-3 10 0" fill="none" stroke="#B58F5F" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M0 136Q43 124 82 138T152 137" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M66 68q13-13 28-14m69 36q9-3 17 0" fill="none" stroke="#FFF5D8" stroke-width="1.5"/><path d="M91 85v59" fill="none" stroke="#F6D59E" stroke-width="1" opacity=".6"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

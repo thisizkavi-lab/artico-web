@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: student (Noun)
+  CONTEXTUAL_DEFINITION: A person who is learning at a school, college, or university.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive role
+  SYNONYM_GUARD: One learner actively studies at a desk with an open book and a shoulder bag, emphasizing the student rather than teacher or classroom.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet school study room with window and shelf.
+    - Context_Layer: Chair and extra books.
+    - Focal_Layer: Student leans over an open book to take notes.
+    - Details_Layer: Book bag, pencil, and paper sheets without writing.
+    - Lighting_Layer: Warm focused light on learner and page.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:student" data-archetype="expressive-role">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="student-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="student-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#student-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 28H95V81H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 29V80M22 54H94" stroke="#FFFFFF" stroke-width="2.5"/><rect x="228" y="42" width="49" height="87" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 148H304" stroke="#A98A64" stroke-width="3"/><rect x="232" y="51" width="12" height="22" fill="#5479AC"/><rect x="248" y="47" width="11" height="26" fill="#D9857F"/><rect x="262" y="54" width="10" height="19" fill="#D9A441"/><path d="M218 129H280M225 129V144M273 129V144" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#student-shadow)"><path d="M76 111H231V122H76Z" fill="#A98A64" stroke="#65472F" stroke-width="1.5"/><path d="M86 122V151M220 122V151" stroke="#8D765A" stroke-width="3.4"/><circle cx="142" cy="56" r="14" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M128 56Q129 41 143 41Q157 42 157 57L152 60Q150 49 142 49Q136 49 132 63Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M120 76Q140 69 160 77L166 104L154 114L128 109L115 92Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M128 79L148 94L164 98" fill="none" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M128 79L148 94L164 98" fill="none" stroke="#C98961" stroke-width="3.1" stroke-linecap="round"/><path d="M111 118L148 96L188 118L149 135Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M149 131L180 118" stroke="#88A9D0" stroke-width="1.3"/><path d="M124 108L118 123M163 107L175 120" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M84 84Q73 87 71 101L84 106L96 94Z" fill="#D9857F" stroke="#A95059" stroke-width="1.6"/><path d="M75 85Q88 77 98 89" fill="none" stroke="#A95059" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M182 92L196 82L207 86L198 99Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/><path d="M204 88L218 78" stroke="#315782" stroke-width="2.2" stroke-linecap="round"/><path d="M118 126L133 119M140 131L155 124" stroke="#5479AC" stroke-width="1.2"/><path d="M60 120Q69 111 79 118V143H59Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M64 120Q69 111 76 120" fill="none" stroke="#F9CED0" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M111 118L148 96L188 118L149 135Z" fill="#FEF9C3" opacity=".18"/><ellipse cx="152" cy="97" rx="120" ry="74" fill="#FEF9C3" opacity=".06"/></g>
+</svg>

@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: dead-end job (noun phrase)
+  CONTEXTUAL_DEFINITION: A job offering little or no chance of future advancement.
+  PEDAGOGICAL_ART_DIRECTOR: Use an employee working at an ordinary desk while the visible promotion route literally stops at a wall, not a road or death image.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / career diagram
+  SYNONYM_GUARD: Focus on the lack of advancement, not unemployment, a dangerous job, or a physical alley.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put an employee and repetitive desk in the foreground, x=102..215 and y=76..151. Behind them build a blue ascending career stair at x=43..115 that ends flush against a tall brick partition at x=119, with an empty blocked arrow tip; mute any route beyond it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:dead-end job" data-archetype="career-diagram">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="dead-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCE6F1"/><stop offset="1" stop-color="#9CB0C8"/></linearGradient>
+    <linearGradient id="dead-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D79B61"/><stop offset="1" stop-color="#965D28"/></linearGradient>
+    <radialGradient id="dead-focus"><stop stop-color="#F2C14E" stop-opacity=".42"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="dead-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="dead-worker" d="M137 112 Q137 97 147 91 L151 80 Q148 72 155 68 Q163 65 168 72 L166 82 Q176 88 178 101 L183 120 L171 136 L153 123 L144 139 L128 135 Z"/>
+    <clipPath id="dead-worker-clip"><use href="#dead-worker"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="157" cy="164" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Routine office, blocked upward path -->
+  <g id="layer-context"><path d="M29 144 H274" stroke="#C88446" stroke-width="2"/><rect x="42" y="83" width="28" height="64" rx="3" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M48 94 H64 M48 101 H64 M48 108 H64 M48 115 H64 M48 122 H64" stroke="#94A3B8" stroke-width="1.2"/><path d="M225 41 H263 V72 H225 Z" fill="#EEF4FA" stroke="#64748B" stroke-width="1.4"/><path d="M232 50 H256 M232 57 H251" stroke="#94A3B8" stroke-width="1.4"/><path d="M190 52 V44 H211 V52" fill="none" stroke="#CBD5E1" stroke-width="1.4"/></g>
+  <!-- 3. Climbing route ends against a solid barrier -->
+  <g id="layer-focal" filter="url(#dead-shadow)"><path d="M37 140 H57 V127 H75 V114 H93 V101 H111 V88 H128 V84" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linejoin="round"/><path d="M37 140 H57 V127 H75 V114 H93 V101 H111 V88 H128 V84" fill="none" stroke="#8EB0DE" stroke-width="3.4" stroke-linejoin="round"/><rect x="126" y="48" width="15" height="98" rx="2" fill="url(#dead-wall)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M127 67 H140 M127 86 H140 M127 105 H140 M127 124 H140" stroke="#64748B" stroke-width="1.2"/><path d="M132 51 V63 M136 70 V82 M132 89 V101 M136 108 V120 M132 127 V140" stroke="#94A3B8" stroke-width="1.1"/><path d="M147 142 H245 V150 H147 Z" fill="url(#dead-desk)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M159 150 V158 M232 150 V158" stroke="#965D28" stroke-width="4" stroke-linecap="round"/><use href="#dead-worker" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><g clip-path="url(#dead-worker-clip)"><path d="M130 104 Q154 91 181 108 L190 144 H126Z" fill="#3D5F91"/><path d="M140 88 Q157 85 171 95" fill="none" stroke="#8EB0DE" stroke-width="3.5"/></g><ellipse cx="161" cy="78" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M152 77 Q153 66 162 67 Q169 68 171 76 Q164 71 158 74 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="164" cy="79" r="1.1" fill="#1E2A3B"/><path d="M163 84 Q166 85 168 83" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><use href="#dead-worker" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M174 130 Q185 132 191 141 L186 147 Q174 144 167 138 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M176 125 L184 119 L190 125 L184 132 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <!-- 4. Repetitive desk work with no opening beyond the wall -->
+  <g id="layer-details"><rect x="177" y="110" width="41" height="25" rx="3" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.7"/><rect x="180" y="113" width="35" height="17" rx="2" fill="#F8FBFE" stroke="#94A3B8" stroke-width="1"/><path d="M184 119 H201 M184 124 H209" stroke="#94A3B8" stroke-width="1.2"/><path d="M188 136 V141 M208 136 V141" stroke="#64748B" stroke-width="1.7"/><rect x="225" y="118" width="17" height="20" rx="2" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M229 124 H238 M229 128 H238 M229 132 H235" stroke="#965D28" stroke-width="1.1"/><path d="M103 83 H118" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/><path d="M115 79 L121 83 L115 87 Z" fill="#4A72B2"/><path d="M119 75 L149 75" stroke="#64748B" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M144 70 L151 75 L144 80 Z" fill="#64748B"/></g>
+  <!-- 5. Barrier focus and closed advancement route -->
+  <g id="layer-lighting"><ellipse cx="133" cy="86" rx="23" ry="32" fill="url(#dead-focus)"/><ellipse cx="133" cy="86" rx="14" ry="27" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M119 79 H124 M119 85 H124 M119 91 H124" stroke="#CE3D4E" stroke-width="2" stroke-linecap="round"/><path d="M154 105 Q164 100 173 106" fill="none" stroke="#FFFFFF" stroke-width="1.7"/><path d="M261 89 L261 98 M257 93 H265" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/></g>
+</svg>

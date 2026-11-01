@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: optimistic (Adjective)
+  CONTEXTUAL_DEFINITION: Expecting a good outcome and looking hopefully toward what can improve.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: After a rainy setback, the focal person points toward a bright break in the clouds and a sprout emerging from wet soil.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Rain-cleared community garden.
+    - Context_Layer: A small cloud and receding rain over one side.
+    - Focal_Layer: Person smiles toward a sunlit sprout and hopeful horizon.
+    - Details_Layer: New leaf, warm opening in clouds and upward gaze.
+    - Lighting_Layer: Gold light grows from the bright side of the scene.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:optimistic" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9A441;--c-secondary:#B9875D;--c-accent:#829A83;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#E3E8F0"/><stop offset="100%" stop-color="#FEF3C7"/></linearGradient><linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#829A83"/><stop offset="1" stop-color="#56725E"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 148Q78 138 151 148T304 145V192H0Z" fill="#D8E2D7"/><ellipse cx="153" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M31 44Q40 30 56 39Q66 23 82 36Q96 35 98 48Q96 60 82 60H44Q30 58 31 44Z" fill="#C9D4DF"/><circle cx="247" cy="42" r="16" fill="#FEF3C7" stroke="#D9A441" stroke-width="1.5"/><path d="M247 18V10M247 74V66M223 42H215M279 42H271M230 25L224 19M265 59L271 65" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M218 151Q236 141 254 151L251 160H220Z" fill="#B9875D" stroke="#805333" stroke-width="1.7"/><path d="M236 150V124M236 133Q225 126 220 130M236 132Q245 122 252 127" fill="none" stroke="#56725E" stroke-width="2.2" stroke-linecap="round"/><path d="M220 130Q227 124 234 132Q227 136 220 130ZM237 132Q244 121 252 127Q247 135 237 132Z" fill="#829A83" stroke="#56725E" stroke-width="1.2"/><path d="M28 72L32 81M56 72L60 81M78 70L82 79" stroke="#7B8A9E" stroke-width="1.8" stroke-linecap="round"/><circle cx="71" cy="100" r="14" fill="#80513F" stroke="#1E2A3B" stroke-width="1.8"/><path d="M57 100Q58 85 71 86Q85 87 85 101L80 104H60Z" fill="#35404B"/><path d="M54 120Q71 114 88 120L91 143H51Z" fill="#7B8A9E" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="165" cy="98" rx="74" ry="70" fill="#FEF3C7" opacity=".49"/><circle cx="151" cy="57" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M131 57Q132 35 151 36Q172 37 171 59L164 64Q160 48 149 48Q139 49 133 65Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M127 83Q151 76 175 83L181 126H121Z" fill="url(#coat)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M134 91L123 104L112 100M170 91L188 78L199 74" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M134 91L123 104L113 100M170 91L188 78L198 74" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M123 126L122 159H139L147 128M157 128L165 159H182L178 126" fill="#56725E" stroke="#1E2A3B" stroke-width="2"/><path d="M143 57Q147 60 151 57M157 57Q161 60 165 57M142 69Q151 77 161 69" fill="none" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M105 79Q114 72 123 79M111 88Q118 84 125 88" fill="none" stroke="#D9A441" stroke-width="1.8"/><path d="M184 55L191 50M196 58L205 56" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="210" cy="45" r="2.5" fill="#D9A441"/><path d="M225 112L232 106M237 115L244 109" stroke="#829A83" stroke-width="1.6"/><path d="M139 40Q149 36 159 40" fill="none" stroke="#FEF9C3" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M141 40Q151 36 161 40" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".69"/><ellipse cx="165" cy="98" rx="74" ry="70" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

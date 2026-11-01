@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: changing mat (Noun)
+  CONTEXTUAL_DEFINITION: A portable padded surface for changing a baby's diaper.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A foldable padded mat with raised soft side edges lies on a low counter, clearly portable and distinct from a full changing table.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean nursery counter and warm wall.
+    - Context_Layer: Folded cloth and small cream jar.
+    - Focal_Layer: One padded changing mat with raised protective edges.
+    - Details_Layer: Quilted center, flexible corners, and wipe-clean surface.
+    - Lighting_Layer: Soft oval under the mat.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:changing mat" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="mat-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><linearGradient id="mat-surface" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient><filter id="mat-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mat-bg)"/><path d="M0 151Q77 144 152 151T304 148V192H0Z" fill="#EADFCC"/><path d="M34 45H270V151H34Z" fill="#E3E8F0"/><path d="M45 56H259V141H45Z" fill="#F3ECE1"/><path d="M50 151V167M254 151V167" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M48 112H89V138H48Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/><path d="M52 117H84M52 122H84" stroke="#D9857F" stroke-width="1.3"/><rect x="217" y="111" width="23" height="27" rx="3" fill="#829A83" stroke="#64748B" stroke-width="1.5"/><path d="M222 111V106H235V111" fill="none" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#mat-shadow)"><path d="M74 91Q74 82 84 82H220Q230 82 230 91L242 123Q244 132 233 135H71Q60 132 63 123Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M86 94H218L227 122Q229 127 221 128H83Q74 127 77 121Z" fill="url(#mat-surface)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M96 103Q151 96 207 103M91 114Q151 108 213 114M99 122Q151 117 206 122" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".75"/><path d="M80 89Q79 100 71 121M224 89Q225 100 235 121" fill="none" stroke="#D9857F" stroke-width="2.2"/></g>
+  <g id="layer-details"><path d="M101 69Q151 58 203 69" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="58" cy="96" r="2.5" fill="#D9A441"/><circle cx="245" cy="96" r="2.5" fill="#D9A441"/><path d="M113 100Q151 93 190 100" fill="none" stroke="#5479AC" stroke-width="1.1" stroke-dasharray="2 5" opacity=".6"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="106" rx="112" ry="65" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/><path d="M81 38Q151 25 222 38" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

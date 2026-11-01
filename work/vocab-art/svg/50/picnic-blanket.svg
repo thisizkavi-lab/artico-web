@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: picnic blanket (Noun)
+  CONTEXTUAL_DEFINITION: A large blanket spread outdoors with food set on top for a picnic.
+  PEDAGOGICAL_ART_DIRECTOR: Let the broad patterned cloth dominate and place a small picnic meal on it.
+  PEDAGOGICAL_ARCHETYPE: 1 - Material and use
+  SYNONYM_GUARD: This is a spread-out picnic cloth with food, not a small drying towel or woven basket.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Wide coral-and-cream checked blanket on beach sand, with fruit, bread, and cups resting on top.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:picnic blanket" data-archetype="picnic-blanket">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="bln-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="bln-cloth" x2="1" y2="1"><stop stop-color="#F1D9A7"/><stop offset="1" stop-color="#D7834B"/></linearGradient><linearGradient id="bln-sand" x2="0" y2="1"><stop stop-color="#EAD3A0"/><stop offset="1" stop-color="#C7A16A"/></linearGradient><filter id="bln-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bln-sky)"/><path d="M0 116Q79 101 154 116T304 110V192H0Z" fill="#B6C6A2"/><path d="M0 147H304V192H0Z" fill="url(#bln-sand)"/></g>
+ <g id="layer-context"><circle cx="250" cy="41" r="15" fill="#EBC86F" opacity=".8"/><path d="M21 114L38 70L55 114ZM254 109L273 60L292 109Z" fill="#66836F"/><path d="M24 169H280" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="151" cy="158" rx="107" ry="5" fill="#90734D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#bln-shadow)">
+  <path d="M38 109L251 103L266 151L52 160Z" fill="url(#bln-cloth)" stroke="#9D633F" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M44 118L255 112M47 130L259 124M50 142L263 136M53 153L266 147" fill="none" stroke="#FFF1D2" stroke-width="2.3"/>
+  <path d="M70 108L81 158M106 107L117 157M142 106L152 155M178 105L188 154M214 104L224 152M247 103L257 151" fill="none" stroke="#B66B48" stroke-width="1.6"/>
+  <path d="M94 117L109 102L123 117Z" fill="#E9D1A2" stroke="#A78353" stroke-width="1"/><path d="M134 114V96Q134 92 138 92H145Q149 92 149 97V114Z" fill="#4F7F9D" stroke="#315F73" stroke-width="1"/><path d="M136 98h11" fill="none" stroke="#D8E8E0" stroke-width="1.2"/>
+  <circle cx="171" cy="113" r="9" fill="#D7834B" stroke="#9D573B" stroke-width="1"/><circle cx="197" cy="115" r="8" fill="#77AA66" stroke="#54784B" stroke-width="1"/><path d="M169 109q4-4 7 0" fill="none" stroke="#F5D198" stroke-width="1"/>
+  <path d="M43 109l-6-5m214-2 6-6m7 52 7 4" fill="none" stroke="#E8D09E" stroke-width="1.4"/>
+ </g>
+ <g id="layer-details"><path d="M57 115l6-2m61 5 6-2m57 4 6-2m-126 38 6-1m100-6 6-1" fill="none" stroke="#B56C48" stroke-width="1.1"/><circle cx="171" cy="113" r="1.1" fill="#FFF8E7"/><circle cx="197" cy="115" r="1" fill="#E6F2DF"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M42 111L250 105M45 118L250 112" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".5"/><path d="M95 116l14-13m29 10V96" fill="none" stroke="#FFF5D9" stroke-width="1.1"/><circle cx="250" cy="41" r="1.3" fill="#FFF8E7"/></g>
+</svg>

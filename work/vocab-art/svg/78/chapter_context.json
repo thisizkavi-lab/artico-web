@@ -1,0 +1,197 @@
+{
+  "chapter_title": "Science",
+  "domain_setting": "A safe, welcoming teaching and research laboratory where learners study living systems, materials, experiments, physical processes, electricity, and magnetism.",
+  "palette": {
+    "paper": "#FAF8F3",
+    "sky": "#EEF4FA",
+    "glass": "#DCECFB",
+    "metal": "#CBD5E1",
+    "science": "#5479AC",
+    "biology": "#7FB07A",
+    "chemistry": "#8B5CA8",
+    "heat": "#F2C14E",
+    "ink": "#1E2A3B"
+  },
+  "global_art_direction": [
+    "Keep all work grounded in recognizable classroom and laboratory scenes with clear glassware, apparatus, specimens, and safe procedures.",
+    "Differentiate neighboring science terms by showing the defining object or physical change, not only a generic scientist or beaker.",
+    "Screens, charts, notebook pages, and models may use geometric marks but must contain no letters or numerals.",
+    "Show biological and genetic concepts through plants, cells, and transparent models; avoid human subjects or sensational framing.",
+    "For material-state verbs, show a visible before/after change in the same vessel or specimen.",
+    "Use rounded five-layer SVGs in the Artico palette with clear silhouettes and no text."
+  ],
+  "reviewed_existing_art": {
+    "same_term_course_art_reviewed": [
+      {
+        "term": "biology",
+        "source": "23:biology",
+        "decision": "keep",
+        "reason": "A microscope, living plant, and magnified sample clearly depict biology and fit science study."
+      },
+      {
+        "term": "chemistry",
+        "source": "23:chemistry",
+        "decision": "keep",
+        "reason": "Laboratory glassware and reagents clearly depict chemistry."
+      },
+      {
+        "term": "physics",
+        "source": "23:physics",
+        "decision": "keep",
+        "reason": "The inclined plane, force vectors, and moving sphere clearly depict physics."
+      },
+      {
+        "term": "science",
+        "source": "23:science",
+        "decision": "keep",
+        "reason": "Magnified plants and observation tools communicate general science."
+      },
+      {
+        "term": "scientist",
+        "source": "34:scientist",
+        "decision": "keep",
+        "reason": "A lab-coated researcher working beside glassware and scientific models clearly depicts a scientist."
+      },
+      {
+        "term": "battery",
+        "source": "45:battery",
+        "decision": "replace",
+        "reason": "The source is a vehicle battery, while this lab chapter needs dry-cell electrical apparatus."
+      },
+      {
+        "term": "battery",
+        "source": "76:battery",
+        "decision": "replace",
+        "reason": "The portable technology battery does not show the lab circuit meaning; a dry-cell circuit scene will fit the chapter."
+      },
+      {
+        "term": "mortar",
+        "source": "10:mortar",
+        "decision": "replace",
+        "reason": "The source contains food and belongs to a kitchen; the chemistry lesson needs a porcelain lab mortar."
+      },
+      {
+        "term": "pestle",
+        "source": "10:pestle",
+        "decision": "replace",
+        "reason": "The source is an isolated kitchen pestle; redraw it crushing laboratory powder in a mortar."
+      },
+      {
+        "term": "test",
+        "source": "23:test",
+        "decision": "replace",
+        "reason": "The source depicts a school exam, not testing a scientific sample."
+      },
+      {
+        "term": "evidence",
+        "source": "26:evidence",
+        "decision": "replace",
+        "reason": "The source concerns physical evidence in a field investigation, not scientific evidence."
+      },
+      {
+        "term": "evidence",
+        "source": "27:evidence",
+        "decision": "replace",
+        "reason": "The source presents legal evidence and is out of context for science."
+      },
+      {
+        "term": "boil",
+        "source": "33:boil",
+        "decision": "replace",
+        "reason": "The source is a cooking pot; redraw boiling liquid in laboratory glassware above a burner."
+      },
+      {
+        "term": "burn",
+        "source": "14:burn",
+        "decision": "replace",
+        "reason": "The source depicts a skin injury; this science process needs a supervised sample combusting safely."
+      },
+      {
+        "term": "cool",
+        "source": "51:cool",
+        "decision": "replace",
+        "reason": "The source depicts cool outdoor weather, not cooling a laboratory sample."
+      },
+      {
+        "term": "pour",
+        "source": "33:pour",
+        "decision": "replace",
+        "reason": "The source is a beverage pour; redraw a gloved scientist transferring solution between vessels."
+      }
+    ],
+    "copied_same_term_assets": [
+      "biology",
+      "chemistry",
+      "physics",
+      "science",
+      "scientist"
+    ],
+    "replaced": [
+      "battery",
+      "mortar",
+      "pestle",
+      "test",
+      "evidence",
+      "boil",
+      "burn",
+      "cool",
+      "pour"
+    ],
+    "reason": "Five clear same-term scientific subject scenes are reused; nine candidate images are replaced because they depict a different chapter sense or setting. New art will be authored for all remaining concepts."
+  },
+  "entries": {
+    "biologist": "A biologist in a white coat studies a fresh leaf and prepared slide beneath a microscope; frame the work around living organisms.",
+    "biology": "A living plant, leaf cross-section, and tiny cells under magnification represent the study of life.",
+    "chemist": "A chemist in safety goggles carefully pipettes liquids into a flask at a clean laboratory bench.",
+    "chemistry": "A safe color-changing reaction in clear glassware shows substances combining and changing.",
+    "physicist": "A physicist studies a suspended pendulum beside a magnet and an optical lens, emphasizing measurable physical forces.",
+    "physics": "A ramp, rolling sphere, light ray, and magnet visualize matter, energy, motion, and forces.",
+    "science": "A welcoming laboratory combines plant, glassware, microscope, and orbit/force models as ways of studying the natural world.",
+    "scientist": "Reuse the clear scientist-at-a-laboratory-bench scene from Lesson 34.",
+    "battery": "A pair of dry-cell batteries powers a simple lamp circuit, making this scientific electrical cell context clear and avoiding a car battery.",
+    "beaker": "A broad clear laboratory beaker with a pouring lip and measured liquid level on a clean bench.",
+    "bunsen burner": "A laboratory gas burner with a controlled blue flame beneath a wire gauze and flask.",
+    "laboratory / lab": "A bright science lab with a long workbench, sink, microscope, glassware, and safety equipment.",
+    "microscope": "A laboratory microscope with eyepiece, objective lenses, stage, slide, and focus knobs.",
+    "mortar": "A laboratory porcelain mortar containing ground mineral powder, clearly set among chemistry apparatus.",
+    "pestle": "A thick laboratory pestle presses dry chemical powder in a porcelain mortar.",
+    "safety goggles": "Protective wraparound goggles with a clear lens and elastic strap placed beside a lab coat.",
+    "test tubes": "A rack holds several narrow glass test tubes with different colored solutions and rounded bottoms.",
+    "experiment": "A controlled plant-growth experiment compares two seedlings receiving different measured conditions.",
+    "hypothesis": "A researcher forms a tentative cause-and-effect idea before a test, linking a water drop to a possible taller seedling with a dotted prediction path.",
+    "observe": "A scientist carefully looks through a microscope at a prepared living sample.",
+    "record": "A researcher records observations as simple sketches, dots, and a blank chart in a lab notebook, with no writing.",
+    "result / results": "Two finished seedlings and a blank comparison chart show the outcome of an experiment.",
+    "test": "A gloved hand applies a reagent to a sample strip in a lab test, with a visible color response.",
+    "theory": "A physical model connects repeated observations into one explanatory system, such as a stable orbit model matching measured paths.",
+    "evidence": "A labeled-free specimen slide, microscope view, and observation sketch visually support a scientific conclusion.",
+    "cell / cells": "A plant cell cross-section with membrane, wall, nucleus, and organelles; use the biology sense, not a prison cell.",
+    "chemicals": "Several clearly distinct reagent bottles with hazard-safe caps and different colored contents on a chemistry bench.",
+    "cloning": "Two matching plantlets grow from tissue culture in separate sterile jars, showing identical copies in a safe botanical context.",
+    "dna": "A large colored double helix with paired rungs represents DNA without letters.",
+    "genetic engineering": "A scientist uses a pipette to insert a highlighted gene segment into a plant cell model, framed as careful agricultural research.",
+    "molecule / molecules": "A ball-and-stick molecule with bonded colored atoms, clear and number-free.",
+    "reaction": "Two clear reagents mix and produce visible bubbles and a new color in a flask.",
+    "crystals": "A cluster of translucent geometric mineral crystals grows from a shallow solution dish.",
+    "boil": "Water bubbles vigorously in a beaker held above a controlled laboratory burner flame.",
+    "burn": "A small safe lab sample combusts in a heat-resistant dish with flame, ash, and rising smoke under supervision.",
+    "cool": "A warm beaker is lowered into an ice bath as its thermometer level falls; no numerals.",
+    "dissolve": "Solid crystals disappear into stirred water, leaving a clear uniform solution.",
+    "evaporate": "Water vapor leaves a shallow heated dish and disperses into the air as a liquid-level drop is visible.",
+    "float": "A cork remains at the surface of water while a denser metal sphere rests below, demonstrating floating.",
+    "freeze": "A water droplet becomes a faceted ice cube in a cold laboratory dish, with frost forming around it.",
+    "gas": "Widely spaced particles spread through a transparent chamber, representing a gas state.",
+    "heat": "A controlled burner warms a flask; heat shimmer and a rising thermometer column show increasing temperature without digits.",
+    "liquid": "A vivid blue liquid flows to take the shape of a glass vessel while retaining a clear surface level.",
+    "melt": "An ice cube visibly shrinks into a puddle on a gently warmed dish.",
+    "pour": "A gloved scientist pours measured blue liquid from a beaker into a receiving flask.",
+    "sink (action)": "A dense metal sphere descends to the bottom of a transparent water vessel, leaving bubbles above.",
+    "solid": "A solid crystal block keeps a firm fixed shape beside liquid and gas comparison cues.",
+    "steam": "Visible water vapor curls upward from a hot beaker as droplets condense on a cool glass surface.",
+    "attract": "Opposite magnet poles draw steel filings and a second magnet toward one another.",
+    "electric shock": "A small static spark jumps between a protected test probe and a metal terminal in a supervised circuit; no injury.",
+    "magnet": "A horseshoe magnet lifts several iron paperclips from the bench.",
+    "repel": "Like poles of two bar magnets push away from one another, shown by their separated ends and outward arrows.",
+    "static electricity": "A rubbed plastic rod attracts lightweight paper bits and makes a few hairs stand, showing static charge."
+  }
+}

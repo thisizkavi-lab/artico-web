@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: up to your eyeballs (work idiom)
+  CONTEXTUAL_DEFINITION: Extremely overwhelmed or busy with work.
+  PEDAGOGICAL_ART_DIRECTOR: Make this more intense than ear-height overload: a worker is almost submerged in paperwork, with just eyes visible above it.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrast / maximum workload level
+  SYNONYM_GUARD: Use a static near-submersion of the face, distinct from ear-level files and the falling-paper avalanche of snowed under.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Fill the foreground from y=111 to 153 with a dense mound of forms and folders. Place one exhausted worker's forehead and eyes just above the mound at x=133..169,y=83..112; one hand emerges holding an additional sheet.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:up to your eyeballs" data-archetype="maximum-workload-level">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="eyes-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <linearGradient id="eyes-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="eyes-focus"><stop stop-color="#DCECFB" stop-opacity=".75"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="eyes-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Office wall crowded with documents -->
+  <g id="layer-context"><path d="M31 149 H273" stroke="#C88446" stroke-width="2"/><rect x="39" y="50" width="47" height="35" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.3"/><path d="M46 58 H80 M46 65 H76 M46 72 H81" stroke="#CBD5E1" stroke-width="1.1"/><rect x="220" y="44" width="48" height="40" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M227 52 H261 M227 59 H257 M227 66 H261" stroke="#A8D4A2" stroke-width="1.1"/><path d="M49 91 H84 M224 90 H264" stroke="#94A3B8" stroke-width="1.2"/><path d="M45 102 H259 V151 H45 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 3. Only the overwhelmed employee's eyes remain above the work -->
+  <g id="layer-focal" filter="url(#eyes-shadow)"><path d="M130 119 Q130 91 151 86 Q173 91 173 119 L168 137 H135 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><ellipse cx="152" cy="99" rx="19" ry="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M133 97 Q134 82 151 82 Q169 82 171 96 Q162 89 151 90 Q143 95 133 97 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.6"/><path d="M139 99 Q145 94 151 99 Q146 105 139 99 Z M153 99 Q159 94 165 99 Q159 105 153 99 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="146" cy="99" r="2" fill="#1E2A3B"/><circle cx="159" cy="99" r="2" fill="#1E2A3B"/><path d="M130 120 Q98 111 69 120 L63 151 H240 L234 121 Q202 110 173 120 Z" fill="url(#eyes-folder)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M75 127 H220 M74 134 H218 M85 141 H229" stroke="#DCECFB" stroke-width="1.2"/><rect x="46" y="112" width="56" height="31" rx="2" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.5"/><rect x="199" y="109" width="62" height="34" rx="2" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M52 120 H96 M52 126 H91 M205 117 H255 M205 124 H249" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <!-- 4. One more file waits above the paper wall -->
+  <g id="layer-details"><path d="M179 122 Q190 108 203 100 L211 106 L197 126 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M205 101 Q210 96 216 100 L213 108 L208 110 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M207 84 L244 77 L250 96 L213 103 Z" fill="url(#eyes-paper)" stroke="#64748B" stroke-width="1.3"/><path d="M214 88 H239 M216 93 H242" stroke="#94A3B8" stroke-width="1"/><path d="M201 101 L209 96" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="2 3"/><circle cx="113" cy="91" r="3" fill="#F2C14E"/><path d="M193 72 L199 66 M198 81 H206" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+  <!-- 5. Halo marks the work piled almost to eye level -->
+  <g id="layer-lighting"><ellipse cx="151" cy="119" rx="87" ry="53" fill="url(#eyes-focus)"/><ellipse cx="152" cy="119" rx="70" ry="39" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 5" opacity=".68"/><path d="M140 87 H163" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/></g>
+</svg>

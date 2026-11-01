@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: gardening (Noun/activity)
+  CONTEXTUAL_DEFINITION: The activity of caring for and planting a garden.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person carrying out a contextual task
+  SYNONYM_GUARD: Show a broad garden scene with several planted beds and a kneeling gardener; the next card isolates pulling weeds.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale outdoor sky and a low warm timber fence behind garden beds.
+    - Context_Layer: Three growing plants, a small watering can, and a distant shrub establish a tended garden.
+    - Focal_Layer: Gardener kneels at x=119..178, tending a seedling in a dark soil bed.
+    - Details_Layer: Leaf pairs, seedling pot, glove, soil clods, fence boards, and garden bed edging.
+    - Lighting_Layer: Upper-left highlights on leaves and a soft sunlit ground band.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:gardening" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+    <linearGradient id="soil-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A5A35"/><stop offset="1" stop-color="#68442F"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 100H304V145H0Z" fill="#DCEAD6"/><path d="M0 145H304V192H0Z" fill="#EAD8BE"/><path d="M14 86H290V104H14Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M31 87V104M58 87V104M85 87V104M112 87V104M139 87V104M166 87V104M193 87V104M220 87V104M247 87V104M273 87V104" stroke="#965D28" stroke-width="2"/><path d="M26 141H278V171H26Z" fill="url(#soil-grad)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M19 138H285V146H19Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-context"><path d="M50 139V116M49 121Q35 110 34 119Q40 129 50 126M51 126Q64 111 67 120Q62 131 51 131" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M253 139V115M252 122Q239 110 237 119Q242 130 253 127M254 126Q269 111 271 121Q266 131 254 132" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M81 133V112M81 119Q71 108 68 114Q71 124 81 124M82 123Q93 109 96 116Q92 127 82 129" fill="#568552" stroke="#1E2A3B" stroke-width="1.4"/><path d="M207 136Q207 120 223 120L235 136Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M216 120V115Q216 109 223 109Q230 109 230 116" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M206 130L201 125" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><circle cx="145" cy="70" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M128 68Q128 48 145 49Q162 50 163 65L155 61L148 55L138 63Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2"/><path d="M132 89Q145 82 160 91L170 112L151 121L124 111Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M128 99L113 122L126 132L145 112" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M128 99L113 122L126 132L145 112" fill="none" stroke="#D89A6C" stroke-width="6.5" stroke-linecap="round"/><path d="M160 97L178 119L167 130L151 112" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M160 97L178 119L167 130L151 112" fill="none" stroke="#F5BFA3" stroke-width="6.5" stroke-linecap="round"/><path d="M127 112L155 119L151 143L120 143Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><path d="M152 119L179 126L194 143L161 143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M169 121L181 126L191 138L180 140Z" fill="#E8AC55" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M106 154L112 149M129 161L134 156M150 153L156 148M184 160L190 155" stroke="#C88446" stroke-width="2" stroke-linecap="round"/><path d="M38 117L43 114M61 117L65 121M239 116L244 113M266 119L270 115" stroke="#A8D4A2" stroke-width="2" stroke-linecap="round"/><circle cx="113" cy="141" r="2.2" fill="#C88446"/><circle cx="187" cy="149" r="2" fill="#C88446"/><path d="M132 70Q137 68 141 70" fill="none" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round"/><path d="M151 72Q155 74 157 71" fill="none" stroke="#1E2A3B" stroke-width="1.3"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M132 58Q139 51 149 53" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".65"/><path d="M37 118Q42 113 47 116M243 117Q249 112 254 116" fill="none" stroke="#A8D4A2" stroke-width="1.8"/><path d="M28 144H92" stroke="#FFFFFF" stroke-width="1.3" opacity=".45"/></g>
+</svg>

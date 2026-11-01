@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: duplex (Noun)
+  CONTEXTUAL_DEFINITION: One residential building divided into two attached homes.
+  PEDAGOGICAL_ARCHETYPE: 6 — Spatial paired comparison
+  SYNONYM_GUARD: Only two homes share this central wall; an apartment block contains many stacked homes and row houses continue across several units.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared neighborhood sky and ground plane.
+    - Context_Layer: Central party wall visibly connects the two halves.
+    - Focal_Layer: One symmetrical building with two separate doors and paired roof halves.
+    - Details_Layer: Each household has its own windows, path, and garden strip.
+    - Lighting_Layer: A subtle highlight traces the single shared central wall.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:duplex" data-archetype="paired-building">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F1D9B4"/><stop offset="1" stop-color="#D9B98C"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 151H304V192H0Z" fill="#B7D3A8"/><path d="M0 169H304" stroke="#D8C5A8" stroke-width="18"/><ellipse cx="151" cy="161" rx="108" ry="6" fill="#72815F" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M20 148V131Q27 124 35 131V148M270 148V131Q277 124 285 131V148" fill="#7FB07A" stroke="#4F8455" stroke-width="1.5"/><path d="M22 148H40M266 148H286" stroke="#8A5A35" stroke-width="2"/><path d="M148 48V153" stroke="#FFFFFF" stroke-width="8" opacity=".6"/><path d="M152 50V151" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="3 4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path id="home" d="M37 86L151 39L267 86V151H37Z" fill="url(#wall)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="home-clip"><use href="#home"/></clipPath><g clip-path="url(#home-clip)"><path d="M38 87H266V152H38Z" fill="#E8CEA7"/><path d="M42 116H263M42 133H263" stroke="#CFAD7C" stroke-width="1.2"/><path d="M151 42V150" stroke="#A7825C" stroke-width="3" opacity=".55"/></g><use href="#home" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M25 87L149 33L276 86L269 96L151 46L33 96Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M44 85L149 39M164 40L262 85" stroke="#D88979" stroke-width="2"/><path d="M60 99H103V126H60Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M81 100V125M61 112H102" stroke="#5479AC" stroke-width="1.8"/><path d="M202 99H244V126H202Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M223 100V125M203 112H243" stroke="#5479AC" stroke-width="1.8"/><path d="M122 118Q122 111 129 111H145V151H122Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M160 118Q160 111 167 111H183V151H160Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><circle cx="141" cy="132" r="2" fill="#F2C14E"/><circle cx="164" cy="132" r="2" fill="#F2C14E"/><path d="M111 151H151M154 151H194" stroke="#C88446" stroke-width="4"/><path d="M128 151V158M176 151V158" stroke="#8A5A35" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M62 105H101M204 105H242" stroke="#FFFFFF" stroke-width="1.5"/><path d="M116 89L151 74L187 89" fill="none" stroke="#F2C14E" stroke-width="1.5" opacity=".8"/><path d="M131 119V148M173 119V148" stroke="#1E2A3B" stroke-width="1" opacity=".6"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="100" rx="8" ry="40" fill="#FEF3C7" opacity=".25"/><path d="M148 84V118" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="2 4"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: lingua franca (Noun)
+  CONTEXTUAL_DEFINITION: A shared language used so people with different first languages can communicate.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: Show several people with different speech styles joining around one shared, mutually understood conversation channel, without using any flag or written script.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: International community table.
+    - Context_Layer: Three people initially have distinct speech patterns.
+    - Focal_Layer: Their speech converges into one common central bubble with a shared picture cue.
+    - Details_Layer: All faces turn toward the shared message.
+    - Lighting_Layer: Shared warm glow at the center.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:lingua franca" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="lingua-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="lingua-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lingua-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M62 122H243V130H62Z" fill="#A98A64"/><path d="M75 130V149M230 130V149" stroke="#8D765A" stroke-width="2.7"/><circle cx="49" cy="97" r="10" fill="#C98961"/><path d="M39 97Q40 84 50 85Q60 86 59 98" fill="#27364B"/><path d="M34 113Q49 106 64 113L67 126L57 133L38 127Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><circle cx="153" cy="103" r="10" fill="#80513F"/><path d="M143 103Q144 90 154 91Q164 92 163 104" fill="#27364B"/><path d="M138 119Q153 112 168 119L171 130L161 137L142 131Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><circle cx="255" cy="97" r="10" fill="#E7B99B"/><path d="M245 97Q246 84 256 85Q266 86 265 98" fill="#27364B"/><path d="M240 113Q255 106 270 113L273 126L263 133L244 127Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#lingua-shadow)"><path d="M92 25Q92 14 105 14H201Q214 14 214 27V59Q214 72 201 72H160L151 82L152 72H105Q92 72 92 59Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.7"/><path d="M119 45H187" stroke="#5479AC" stroke-width="2.2" stroke-linecap="round"/><circle cx="135" cy="39" r="6" fill="#D9A441"/><path d="M155 32L163 47L171 32Z" fill="#D9857F"/><path d="M181 33L189 39L181 45" fill="none" stroke="#91A77C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M66 64C86 71 93 61 103 56M150 85V73M238 61C222 70 214 61 203 56" fill="none" stroke="#5479AC" stroke-width="2.3" stroke-linecap="round"/><path d="M68 64L76 61M234 64L226 61" stroke="#D9857F" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="79" cy="48" r="2.2" fill="#D9A441"/><circle cx="224" cy="48" r="2.2" fill="#D9A441"/><path d="M130 110Q137 114 144 110M160 110Q167 114 174 110" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><path d="M111 93L117 89M191 92L197 88" stroke="#D9A441" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="80" rx="138" ry="76" fill="#FEF9C3" opacity=".1"/><path d="M92 25Q92 14 105 14H201" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/></g>
+</svg>

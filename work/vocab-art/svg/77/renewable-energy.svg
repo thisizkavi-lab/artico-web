@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="77:renewable energy" data-archetype="natural-water-cycle-replenishing-a-hydroelectric-turbine">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; renewable energy. Show sunlight replenishing a water cycle whose returning river turns a small turbine to make electricity; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="renew-sky" x2="0" y2="1"><stop stop-color="#DCEEE8"/><stop offset="1" stop-color="#BBD6D4"/></linearGradient>
+  <linearGradient id="renew-water" x2="0" y2="1"><stop stop-color="#78B9C3"/><stop offset="1" stop-color="#3F7F91"/></linearGradient>
+  <linearGradient id="renew-hill" x2="0" y2="1"><stop stop-color="#8FAA7B"/><stop offset="1" stop-color="#5E7E5B"/></linearGradient>
+  <linearGradient id="renew-turbine" x2="1" y2="1"><stop stop-color="#D6E7D7"/><stop offset="1" stop-color="#708B81"/></linearGradient>
+  <filter id="renew-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".16"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#renew-sky)"/><circle cx="49" cy="35" r="14" fill="#EBC86F"/><path d="M53 55Q77 63 88 81M53 55l29-2m-29 2 8 28" fill="none" stroke="#DDA34C" stroke-width="1.8"/><path d="M0 116L61 66 105 112 159 53 202 103 251 66 304 111V192H0Z" fill="#A7BDAE"/><path d="M0 133L61 86 105 127 159 72 202 117 251 87 304 132V192H0Z" fill="#7D9788"/><path d="M0 150Q66 132 125 149T243 145Q277 138 304 147V192H0Z" fill="url(#renew-hill)"/></g>
+<g id="layer-context">
+  <path d="M0 170Q44 158 79 170T154 166Q202 153 241 168T304 163V192H0Z" fill="url(#renew-water)"/>
+  <path d="M67 146Q90 134 111 137L126 147 118 156 75 159Z" fill="#76877B"/><path d="M67 143h59" fill="none" stroke="#4D6667" stroke-width="2"/>
+  <path d="M131 142V112L143 100 155 112V142Z" fill="#9A9F8D"/><path d="M126 112l17-18 18 18Z" fill="#697A73"/>
+  <path d="M143 135V112" fill="none" stroke="#52696B" stroke-width="3"/><circle cx="143" cy="112" r="11" fill="#91A7A1" stroke="#486266" stroke-width="1.5"/>
+  <path d="M143 112l-7-8m7 8 9-6m-9 6 6 9m-6-9-9 7" fill="none" stroke="#E7F0E6" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#renew-shadow)">
+  <path d="M162 142Q179 127 191 111Q202 98 216 86" fill="none" stroke="#79B7BF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M161 141Q178 128 190 112Q202 98 217 86" fill="none" stroke="#D9F0E6" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M208 83Q219 67 230 76Q236 87 227 96Q216 101 208 92Z" fill="#F1F4E9"/><path d="M217 80q8-5 14 2m-13 7q8-4 13 1" fill="none" stroke="#B2D8D6" stroke-width="1.3"/>
+  <path d="M215 83Q226 73 237 82" fill="none" stroke="#EAF5EB" stroke-width="1.4"/>
+  <path d="M143 151v23m-8-15 8 2 8-4" fill="none" stroke="#EDF3E6" stroke-width="2"/>
+  <path d="M177 175l14-8 13 8" fill="none" stroke="#F2F4E8" stroke-width="2"/>
+</g>
+<g id="layer-details">
+  <path d="M20 181q13-5 25 0m59-3q12-5 24 0m100-1q13-5 24 0m33 8q11-4 21 0" fill="none" stroke="#B4DCD5" stroke-width="1.4"/>
+  <circle cx="92" cy="170" r="1.7" fill="#F3EFD5"/><circle cx="167" cy="179" r="1.7" fill="#F3EFD5"/><circle cx="245" cy="163" r="1.6" fill="#F3EFD5"/>
+  <path d="M67 89q9-6 17 0m90-17q9-6 17 0m55 31q8-5 15 0" fill="none" stroke="#E9F5EE" stroke-width="1.4"/>
+  <path d="M218 98l-3 9m10-9-3 10m10-9-3 10" fill="none" stroke="#94C6C6" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M104 128q8-6 16-1m62 2q7-5 14-1m-90 25q10-4 19 0" fill="none" stroke="#BFD897" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M53 55l27-2m-27 2 7 25" fill="none" stroke="#FFF8E7" stroke-width="1.1"/><path d="M162 142Q180 127 191 111T216 86" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: bottle (Noun)
+  CONTEXTUAL_DEFINITION: A small capped container for storing a liquid.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A plain glass storage bottle with a screw cap and broad neck contrasts with the narrow-necked feeding bottle fitted with a teat.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Nursery shelf with pale tile wall.
+    - Context_Layer: Folded towel on the shelf.
+    - Focal_Layer: One clear glass bottle with a simple lid.
+    - Details_Layer: Rounded shoulders, visible liquid line, and cap.
+    - Lighting_Layer: Cool highlight along the glass.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:bottle" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bottle-glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DCECFB"/><stop offset=".45" stop-color="#FFFFFF"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient><filter id="bottle-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#EEF4FA"/><path d="M0 152Q78 145 152 152T304 149V192H0Z" fill="#EADFCC"/><path d="M37 41H267V148H37Z" fill="#E3E8F0"/><path d="M47 52H257V139H47Z" fill="#FAF8F3"/><path d="M67 151V166M237 151V166" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M53 135Q77 126 103 135V148H53Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.5"/><path d="M58 137Q77 132 98 137" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M193 133H240V147H193Z" fill="#829A83" stroke="#64748B" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#bottle-shadow)"><path d="M126 57H178V75Q178 83 187 90Q197 98 197 112V139Q197 149 187 149H117Q107 149 107 139V112Q107 98 117 90Q126 83 126 75Z" fill="url(#bottle-glass)" stroke="#1E2A3B" stroke-width="2.7"/><path d="M132 76V59H172V76Q172 86 184 94" fill="none" stroke="#64748B" stroke-width="2"/><path d="M126 57V47H178V57Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M127 51H177" stroke="#F3ECE1" stroke-width="1.5"/><path d="M112 119Q151 112 192 119V138Q192 143 186 143H118Q112 143 112 138Z" fill="#DCECFB" opacity=".75"/><path d="M120 89V130M128 89V101M128 109V124" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/><path d="M142 103Q151 98 161 103" fill="none" stroke="#5479AC" stroke-width="1.5" opacity=".65"/></g>
+  <g id="layer-details"><path d="M121 31Q152 22 184 31" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="99" cy="84" r="2.4" fill="#D9A441"/><circle cx="207" cy="85" r="2.4" fill="#D9A441"/><path d="M203 52Q211 47 219 52" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="104" rx="66" ry="79" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/><path d="M104 27Q152 13 201 27" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

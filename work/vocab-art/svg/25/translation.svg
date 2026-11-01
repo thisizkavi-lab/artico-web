@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: translation (Noun)
+  CONTEXTUAL_DEFINITION: The result of changing meaning from one language into another.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show source and translated pages side by side with the same picture meaning and distinct abstract line patterns; depict the resulting translation, not the action of translating.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language-study table.
+    - Context_Layer: Two open book pages.
+    - Focal_Layer: A shared image passes from one page to a second page with transformed nonverbal line patterns.
+    - Details_Layer: Bridge arrow and matching illustration on both pages.
+    - Lighting_Layer: Clear light on the completed pair of texts.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:translation" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="translation-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="translation-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#translation-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M31 119H86V137H31Z" fill="#5479AC" stroke="#315782" stroke-width="1.1"/><path d="M36 124H80" stroke="#DCECFB" stroke-width="1.1"/><path d="M216 119H270V137H216Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/><path d="M222 124H264" stroke="#F9CED0" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#translation-shadow)"><path d="M43 49L139 44L144 125L47 130Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.6"/><path d="M160 44L258 49L253 130L156 125Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.6"/><path d="M55 61L120 58M55 69L117 66" stroke="#88A9D0" stroke-width="1.3"/><path d="M169 59L238 63M169 67L229 71" stroke="#D9857F" stroke-width="1.3"/><path d="M70 94L87 74L104 94Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/><path d="M188 98L205 78L222 98Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/><circle cx="87" cy="103" r="7" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><circle cx="205" cy="107" r="7" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M121 94C138 76 165 76 182 94" fill="none" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><path d="M175 87L184 94L174 98" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 82L83 82M56 87L77 87M170 81L197 83M170 87L191 88" stroke="#AFC5DA" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M141 49L144 124M156 49L153 124" stroke="#D9A441" stroke-width="1.2" opacity=".8"/><path d="M49 126L140 121M158 121L252 126" stroke="#AFC5DA" stroke-width="1"/><circle cx="151" cy="94" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="88" rx="135" ry="71" fill="#FEF9C3" opacity=".09"/><path d="M43 49L139 44L144 125M160 44L258 49L253 130" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

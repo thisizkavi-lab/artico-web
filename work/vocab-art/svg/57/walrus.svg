@@ -1,0 +1,38 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: walrus (noun)
+  CONTEXTUAL_DEFINITION: A heavy Arctic walrus resting at the edge of ice, with a pair of long ivory tusks and thick whiskers.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with distinctive paired tusks
+  SYNONYM_GUARD: Keep both long downward tusks and the broad whiskered muzzle prominent; do not draw a tuskless seal or sea lion.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Broad rusty-brown walrus faces right on an ice shelf; body x=89..225 y=93..144, rounded head x=203,y=98, two pale tusks descend toward x=219,y=145 and x=232,y=143, whiskers fan from muzzle, short flippers on ice.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:walrus" data-archetype="walrus-paired-tusks-whiskers">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#8B654C;--c-secondary:#4A423B;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="walrus-sky" x2="0" y2="1"><stop stop-color="#E2EDF0"/><stop offset="1" stop-color="#F5F0E6"/></linearGradient>
+  <linearGradient id="walrus-water" x2="0" y2="1"><stop stop-color="#72AAB7"/><stop offset="1" stop-color="#3A7186"/></linearGradient>
+  <linearGradient id="walrus-ice" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4F5EC"/><stop offset="1" stop-color="#B6CFD2"/></linearGradient>
+  <linearGradient id="walrus-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A27A5C"/><stop offset="1" stop-color="#6A4E3D"/></linearGradient>
+  <filter id="walrus-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#walrus-sky)"/><path d="M0 104Q73 97 151 105T304 100V192H0Z" fill="url(#walrus-water)"/><path d="M0 155Q77 147 153 156T304 151V192H0Z" fill="#4A8292"/><circle cx="56" cy="38" r="16" fill="#F1D991" opacity=".4"/></g>
+ <g id="layer-context"><path d="M0 105Q76 98 151 106T304 101" fill="none" stroke="#E5F2EF" stroke-width="1.7"/><path d="M29 139L57 116L99 121L129 112L169 121L202 112L249 122L280 141L270 157L40 157Z" fill="url(#walrus-ice)" stroke="#A8C1C6" stroke-width="1.3"/><path d="M46 146q23-7 45 0m75-20 21 8m24-5 30 10" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/><circle cx="37" cy="91" r="2" fill="#E6F4F1"/><circle cx="46" cy="83" r="1.2" fill="#E6F4F1"/><ellipse cx="162" cy="151" rx="85" ry="5" fill="#203D47" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#walrus-shadow)">
+  <path d="M118 126Q99 122 90 135Q99 145 122 143L142 133Z" fill="#78573F" stroke="#554132" stroke-width="1.3"/>
+  <path d="M111 113Q117 94 147 91Q180 88 208 101Q225 110 225 127Q214 143 186 148Q151 151 124 138Q110 132 111 113Z" fill="url(#walrus-hide)" stroke="#554132" stroke-width="1.5"/>
+  <path d="M122 128Q151 143 187 140Q208 136 218 126Q213 145 185 151Q148 153 127 141Z" fill="#C3AA8A" stroke="#70543F" stroke-width="1"/>
+  <path d="M192 108Q194 90 209 85Q225 85 234 97Q239 108 230 120Q216 128 202 120Z" fill="#987052" stroke="#5C4433" stroke-width="1.4"/>
+  <path d="M203 118Q209 128 214 149Q210 154 206 148L199 122Z" fill="#F0E6CE" stroke="#B6A990" stroke-width="1"/>
+  <path d="M215 117Q224 126 231 144Q227 149 223 143L211 121Z" fill="#F0E6CE" stroke="#B6A990" stroke-width="1"/>
+  <ellipse cx="231" cy="107" rx="10" ry="7" fill="#C0A387" stroke="#69503E" stroke-width="1"/>
+  <ellipse cx="239" cy="106" rx="2.3" ry="1.7" fill="#352A22"/>
+  <circle cx="218" cy="99" r="1.7" fill="#1E2A3B"/>
+  <path d="M227 110q6 4 11 1" fill="none" stroke="#614B3A" stroke-width="1" stroke-linecap="round"/>
+  <path d="M233 104l15-5m-14 7 16-1m-17 2 14 4m-16-5 14 8m-18-7 10 11m-16-10-8 10m10-13-13 7" fill="none" stroke="#E3D6C4" stroke-width=".9" stroke-linecap="round"/>
+  <path d="M204 128Q192 132 187 148Q196 154 206 141L214 128Z" fill="#947253" stroke="#604936" stroke-width="1"/>
+  <path d="M127 98q19-8 35-5m22 2q8 2 13 6" fill="none" stroke="#C29A77" stroke-width="1.3" opacity=".75" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M42 126l8-5 9 4m172-45 6-4 7 3" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><circle cx="75" cy="111" r="1.5" fill="#E9F6F2"/><path d="M138 142q17 5 34 2m-70-12q8-4 14 0" fill="none" stroke="#C9B59B" stroke-width="1.2" stroke-linecap="round"/><circle cx="263" cy="91" r="1.5" fill="#EAF6F2"/></g>
+ <g id="layer-lighting"><path d="M129 99q10-8 23-6m51-4q10 1 15 7" fill="none" stroke="#F8EBD3" stroke-width="1.5" opacity=".58" stroke-linecap="round"/><ellipse cx="177" cy="112" rx="42" ry="22" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

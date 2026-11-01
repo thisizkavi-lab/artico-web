@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: stairs (Noun)
+  CONTEXTUAL_DEFINITION: A set of steps leading from one level of a building to another.
+  PEDAGOGICAL_ARCHETYPE: 5 (Spatial structure diagram)
+  SYNONYM_GUARD: Show a full staircase with many treads and a continuous handrail, with no person or direction arrow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two-level home interior section.
+    - Context_Layer: Upper and lower floor landings.
+    - Focal_Layer: Repeated treads rise between levels.
+    - Details_Layer: Handrail follows the diagonal slope.
+    - Lighting_Layer: Warm light on the staircase.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:stairs" data-archetype="spatial-structure">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#ECE8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 L72 148 L72 126 L92 126 L92 104 L112 104 L112 82 L132 82 L132 60 L152 60 L152 38 L235 38 L235 60 L304 60 L304 192 L0 192Z" fill="#D7C5AA"/><path d="M0 148 L72 148 M152 60 L304 60" stroke="#B97840" stroke-width="2"/><ellipse cx="153" cy="168" rx="110" ry="8" fill="#BCA889"/></g>
+  <g id="layer-context"><path d="M72 148 L72 126 L92 126 L92 104 L112 104 L112 82 L132 82 L132 60 L152 60 L152 38 L172 38" fill="#C88446" stroke="#8A5A35" stroke-width="2.3" stroke-linejoin="round"/><path d="M67 126 L87 126 M87 104 L107 104 M107 82 L127 82 M127 60 L147 60 M147 38 L167 38" stroke="#D59A55" stroke-width="2"/><path d="M57 148 L57 116 L77 94 L97 72 L117 50 L137 28 L182 28" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M57 148 L66 148 M77 94 L84 100 M97 72 L104 78 M117 50 L124 56 M137 28 L144 34" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M33 148 L33 111 M45 148 L45 103" stroke="#8A5A35" stroke-width="3"/><rect x="210" y="78" width="46" height="45" rx="3" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.7"/><path d="M221 78 L221 123 M245 78 L245 123" stroke="#D8CDAF" stroke-width="2"/><path d="M224 38 L224 60" stroke="#8A5A35" stroke-width="3"/></g>
+  <g id="layer-lighting"><path d="M57 148 L57 115 L137 31 L182 31" fill="none" stroke="#F2C14E" stroke-width="1.3" opacity="0.58"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

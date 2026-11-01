@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:high tide" data-archetype="high-waterline-reaching-upper-coastal-rocks">
+<!-- SELF_PROMPT: Lesson 52 geographical features; high tide. Show the sea raised to a high coastal waterline, nearly covering the narrow shore and wetting the upper rock ledge; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="tide-sky" x2="0" y2="1"><stop stop-color="#DCEAE7"/><stop offset="1" stop-color="#BACBC8"/></linearGradient>
+  <linearGradient id="tide-water" x2="0" y2="1"><stop stop-color="#78B6BF"/><stop offset="1" stop-color="#36798E"/></linearGradient>
+  <linearGradient id="tide-rock" x2="0" y2="1"><stop stop-color="#A89A7D"/><stop offset="1" stop-color="#596960"/></linearGradient>
+  <linearGradient id="tide-cliff" x2=".7" y2="1"><stop stop-color="#B8AD8E"/><stop offset="1" stop-color="#7B7966"/></linearGradient>
+  <filter id="tide-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#tide-sky)"/><circle cx="244" cy="37" r="14" fill="#EBC86F" opacity=".68"/><path d="M0 100Q77 83 153 96T304 88V192H0Z" fill="url(#tide-water)"/><path d="M0 116Q50 106 101 116T201 112Q250 104 304 111" fill="none" stroke="#B2D9D1" stroke-width="1.5"/></g>
+<g id="layer-context">
+  <path d="M0 60Q39 53 73 67Q98 76 120 98L144 126V158Q109 165 73 152T0 160Z" fill="url(#tide-cliff)"/>
+  <path d="M0 106Q36 98 68 111Q97 124 120 144L145 157V176Q112 182 76 169T0 177Z" fill="url(#tide-rock)" stroke="#53615A" stroke-width="1.6"/>
+  <path d="M0 103Q37 94 69 108Q98 121 120 140L143 152" fill="none" stroke="#E0D4B4" stroke-width="2.2"/>
+  <path d="M156 90Q194 78 224 89T304 83V192H151Z" fill="#47899A" opacity=".45"/>
+  <path d="M0 51Q25 40 44 54Q58 37 76 54Q92 46 105 66" fill="#708D6A"/>
+</g>
+<g id="layer-focal" filter="url(#tide-shadow)">
+  <path d="M0 114Q38 103 67 117Q97 132 121 151L145 162Q166 154 184 158T221 160Q259 149 304 158V192H0Z" fill="url(#tide-water)"/>
+  <path d="M0 112Q39 101 69 115Q98 129 122 148L146 158Q166 151 184 155T220 157Q259 146 304 154" fill="none" stroke="#F3F5E8" stroke-width="2.7"/>
+  <path d="M0 124Q39 114 69 128Q97 142 120 159L145 169Q166 163 184 166T222 168Q264 157 304 166" fill="none" stroke="#C7E7DF" stroke-width="2"/>
+  <path d="M18 97q13-5 25-1m37 15q13-4 24 2m157 16q15-6 29-1" fill="none" stroke="#B9D7CB" stroke-width="1.5"/>
+  <path d="M132 82v38m-5-27h10m-10 8h10m-10 8h10" fill="none" stroke="#715D45" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <path d="M10 145q17-6 30-1m45 19q11-3 19 2m-82 4q12-4 23 1" fill="none" stroke="#B4D9CF" stroke-width="1.4"/>
+  <circle cx="51" cy="132" r="2" fill="#F5F2DE"/><circle cx="112" cy="151" r="1.8" fill="#F5F2DE"/><circle cx="179" cy="166" r="1.7" fill="#F5F2DE"/><circle cx="260" cy="161" r="1.8" fill="#F5F2DE"/>
+  <path d="M8 83l8-7 9 4m22 2 7-7 8 4m71 43 8-7 7 4" fill="none" stroke="#9D9277" stroke-width="1.5"/>
+  <path d="M174 139q17-5 30 1m44-6q17-5 31 1" fill="none" stroke="#8DCDD1" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M1 112Q39 101 67 115M221 157q41-11 80-1" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".78"/><path d="M21 59q20-8 37 3m94 38q14-4 24 2" fill="none" stroke="#E7E6CE" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

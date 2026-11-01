@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: puppet (Noun)
+  CONTEXTUAL_DEFINITION: A toy figure moved by a hand or strings to perform for an audience.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A hand puppet with a visible mouth is worn on a performer's hand, distinguishing it from a standing doll or stuffed toy.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small home puppet stage with red curtains.
+    - Context_Layer: Puppeteer's forearm enters from below.
+    - Focal_Layer: Sock-style animal puppet with open mouth and felt features.
+    - Details_Layer: Button eyes, ears, and a tiny cloth collar.
+    - Lighting_Layer: Stage spot gives the puppet a lively presence.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:puppet" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="puppet-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="puppet-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#puppet-bg)"/><path d="M0 150H304V192H0Z" fill="#DCCFB9"/><rect x="34" y="26" width="236" height="117" rx="7" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M47 34Q65 47 56 66Q49 80 64 98Q70 115 54 135H38V31Z" fill="#A95059"/><path d="M257 33Q240 49 249 67Q256 83 241 100Q235 117 252 136H267V31Z" fill="#A95059"/><path d="M64 40H240V130H64Z" fill="#DCECFB"/><path d="M65 106Q151 84 239 106V131H65Z" fill="#91A77C"/><path d="M39 142H266" stroke="#D9A441" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M119 191Q115 169 124 151Q132 138 148 144L160 162L174 145Q189 139 198 153Q205 169 196 192Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M145 183Q138 160 147 146L154 134L161 146Q169 161 162 183Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/><path d="M154 143V109" stroke="#C98961" stroke-width="8" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#puppet-shadow)"><path d="M116 57L104 35L128 43Q143 33 164 43L188 34L180 59Q193 73 188 99Q183 121 152 128Q121 120 116 98Q111 77 116 57Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M119 93Q151 105 185 91Q179 118 152 123Q126 118 119 93Z" fill="#A95059" stroke="#1E2A3B" stroke-width="2"/><path d="M127 93Q152 97 177 91" fill="none" stroke="#FEF9C3" stroke-width="3" stroke-linecap="round"/><path d="M126 59Q141 47 153 59Q141 72 126 59ZM157 59Q172 47 183 59Q170 72 157 59Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="141" cy="59" r="3.3" fill="#315782"/><circle cx="169" cy="59" r="3.3" fill="#315782"/><path d="M143 77Q152 70 161 77Q157 86 152 86Q147 86 143 77Z" fill="#A95059" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M134 112L151 120L169 112L165 128H138Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M138 115L151 122L165 115" fill="none" stroke="#DCECFB" stroke-width="1.4"/><circle cx="152" cy="128" r="3.5" fill="#D9857F" stroke="#A95059" stroke-width="1"/><path d="M115 34L127 50M180 35L174 50" stroke="#F0C971" stroke-width="2.3" stroke-linecap="round"/><path d="M108 72Q99 81 106 90M195 72Q204 81 197 90" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="83" rx="75" ry="72" fill="#FEF9C3" opacity=".13"/><path d="M111 27Q151 14 192 27" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".85"/></g>
+</svg>

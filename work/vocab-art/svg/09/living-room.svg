@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: living room (Noun)
+  CONTEXTUAL_DEFINITION: A room in a home for sitting, relaxing, and spending time together.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: Show a comfortable sofa and shared seating area, not a bedroom or dining room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cozy home wall, window, and rug.
+    - Context_Layer: Wide sofa faces a low coffee table.
+    - Focal_Layer: Cushions and relaxed seating define the room.
+    - Details_Layer: Floor lamp, plant, and a small side table.
+    - Lighting_Layer: Warm lamp glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:living room" data-archetype="room-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF2E7"/><stop offset="1" stop-color="#F0E8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 138 304 148 L304 192 L0 192Z" fill="#D7C5AA"/><ellipse cx="153" cy="166" rx="109" ry="8" fill="#BCA889"/><rect x="31" y="32" width="49" height="45" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M56 32 L56 77 M31 54 L80 54" stroke="#FAF8F3" stroke-width="1.8"/></g>
+  <g id="layer-context"><rect x="72" y="94" width="163" height="47" rx="12" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><rect x="82" y="87" width="143" height="31" rx="12" fill="#A983B8" stroke="#5F3E71" stroke-width="1.5"/><path d="M83 120 L83 151 M224 120 L224 151" stroke="#5F3E71" stroke-width="4"/><rect x="122" y="145" width="67" height="8" rx="3" fill="#B97840"/><path d="M127 153 L125 161 M184 153 L186 161" stroke="#8A5A35" stroke-width="3"/><path d="M41 146 L54 146 L54 107 L68 107 L68 146" fill="none" stroke="#8A5A35" stroke-width="3"/><path d="M48 108 L61 108 L68 119 L42 119Z" fill="#F2C14E"/><path d="M254 149 L254 117 M267 149 L267 124" stroke="#8A5A35" stroke-width="3"/><circle cx="260" cy="112" r="13" fill="#7FB07A"/><circle cx="246" cy="125" r="9" fill="#8FB987"/><circle cx="271" cy="130" r="9" fill="#7FB07A"/></g>
+  <g id="layer-details"><rect x="95" y="98" width="40" height="21" rx="8" fill="#F2C14E" opacity="0.72"/><rect x="160" y="98" width="43" height="21" rx="8" fill="#5479AC" opacity="0.8"/><ellipse cx="155" cy="149" rx="37" ry="7" fill="#D8CDAF"/><circle cx="258" cy="82" r="26" fill="#F2C14E" opacity="0.16"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

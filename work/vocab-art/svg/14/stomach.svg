@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: stomach (Noun)
+  CONTEXTUAL_DEFINITION: The digestive organ in the upper abdomen.
+  PEDAGOGICAL_ARCHETYPE: 2 — Body-region focus with gentle organ inset
+  SYNONYM_GUARD: Mark the upper abdomen and show a simple stomach-shaped organ inset; waist is the narrower region below the ribs.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Muted front torso crop.
+    - Context_Layer: Ribs and waist provide gentle location cues.
+    - Focal_Layer: Upper abdomen is haloed, with a soft stomach organ silhouette inside.
+    - Details_Layer: No clinical labels or graphic anatomy.
+    - Lighting_Layer: Blue pointer reaches the upper belly region.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:stomach" data-archetype="organ-location-callout">
+  <defs><linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#E3E8F0"/><stop offset="1" stop-color="#CBD5E1"/><stop offset="1" stop-color="#F0C5A7"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="105" rx="120" ry="80" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M99 18H205L225 65Q234 106 218 171H86Q70 106 79 65Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M97 60Q152 78 207 60M91 81Q152 102 213 81" fill="none" stroke="#94A3B8" stroke-width="1.4"/><path d="M100 151Q152 160 204 151" fill="none" stroke="#64748B" stroke-width="1.4"/><path d="M115 34Q152 48 189 34" fill="none" stroke="#CBD5E1" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="153" cy="106" rx="48" ry="43" fill="#FEF3C7" opacity=".52"/><path d="M133 76Q150 68 160 77Q169 85 164 94Q160 101 170 103Q185 106 183 119Q181 131 164 133Q146 135 136 124Q124 111 130 98Q133 90 125 85Q121 80 133 76Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M137 81Q148 75 156 81M134 103Q140 107 140 117M166 111Q173 109 177 114" fill="none" stroke="#F4B4AE" stroke-width="1.5"/><path d="M128 75Q149 67 164 77Q174 85 168 96Q165 102 176 104Q190 108 187 121Q184 135 164 137Q144 139 133 126Q121 112 125 98Q128 91 120 85Q117 79 128 75Z" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/><path d="M49 105L103 105" stroke="#4A72B2" stroke-width="2"/><path d="M96 100L104 105L96 110" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="153" cy="105" r="33" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4" opacity=".6"/></g>
+</svg>

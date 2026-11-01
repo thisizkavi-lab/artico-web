@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: college (Noun)
+  CONTEXTUAL_DEFINITION: A tertiary educational institution where students take courses after secondary school.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: A single mid-sized academic institution with students arriving distinguishes a college from an entire university campus.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Town street and sky around a college building.
+    - Context_Layer: Shrubs, path, and a small student group.
+    - Focal_Layer: Collegiate building with entrance, windows, and central portico.
+    - Details_Layer: Steps, open book held by student, and plain flags.
+    - Lighting_Layer: Bright daylight on the entrance.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:college" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="college-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="college-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#college-bg)"/><circle cx="258" cy="29" r="15" fill="#FEF9C3" opacity=".86"/><path d="M0 129Q76 117 152 129T304 126V192H0Z" fill="#91A77C"/><path d="M0 166Q72 154 151 166T304 162V192H0Z" fill="#7E956F"/></g>
+  <g id="layer-context"><path d="M0 134Q69 126 139 134T304 131" fill="none" stroke="#D9C9A7" stroke-width="8"/><path d="M0 134Q69 126 139 134T304 131" fill="none" stroke="#F7EBCF" stroke-width="4"/><circle cx="39" cy="114" r="11" fill="#91A77C"/><circle cx="270" cy="111" r="13" fill="#91A77C"/><path d="M39 124V137M270 124V136" stroke="#55704D" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#college-shadow)"><path d="M66 60L151 34L237 60V132H66Z" fill="#E8DDC8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M56 60L151 27L247 60L237 68L151 43L66 68Z" fill="#5479AC" stroke="#315782" stroke-width="2"/><path d="M98 58L151 46L205 58V71H98Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><path d="M113 78H130V98H113ZM138 78H155V98H138ZM164 78H181V98H164ZM190 78H207V98H190Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M137 99H166V132H137Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M127 133H177M120 139H184" stroke="#D9A441" stroke-width="3"/><path d="M70 73H232" stroke="#F7EBCF" stroke-width="1.4"/></g>
+  <g id="layer-details"><circle cx="106" cy="151" r="4" fill="#C98961"/><path d="M102 155L106 163L110 155" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><circle cx="202" cy="150" r="4" fill="#80513F"/><path d="M198 154L202 162L206 154" stroke="#D9857F" stroke-width="2.5" stroke-linecap="round"/><path d="M151 30V16M151 18L166 22L151 26" fill="none" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M56 60L151 27L247 60" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity=".72"/><ellipse cx="151" cy="103" rx="130" ry="80" fill="#FEF9C3" opacity=".06"/></g>
+</svg>

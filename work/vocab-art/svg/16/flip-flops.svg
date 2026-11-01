@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: flip-flops (Noun, plural)
+  CONTEXTUAL_DEFINITION: Flat open sandals held on by Y-shaped straps between the toes.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Make the toe-post Y straps visible to distinguish them from strapped sandals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and soft shadow.
+    - Context_Layer: Light beach-like ground wash.
+    - Focal_Layer: Two separate bright-soled flip-flops.
+    - Details_Layer: Toe posts and Y-shaped straps.
+    - Lighting_Layer: Gentle upper-left highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:flip-flops" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="150" cy="156" rx="111" ry="19" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M28 148Q99 133 152 148Q217 164 278 143V176H28Z" fill="#F3ECE1"/><ellipse cx="150" cy="92" rx="118" ry="67" fill="#FEF3C7" opacity=".3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g transform="rotate(-18 105 103)"><path d="M68 46Q104 35 133 55Q145 68 144 111Q144 146 106 150Q70 145 66 113Q62 72 68 46Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.6"/><path d="M82 61Q104 53 125 64Q132 76 130 111Q128 133 106 137Q83 133 79 111Z" fill="#EAA5A0" stroke="#F3C5C0" stroke-width="1.5"/></g>
+  <g transform="rotate(17 202 105)"><path d="M167 48Q201 38 228 57Q241 72 239 112Q237 146 202 150Q168 146 165 113Q162 74 167 48Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><path d="M179 63Q201 54 221 66Q228 78 226 112Q224 135 202 138Q181 134 177 112Z" fill="#7294BE" stroke="#C1D3E9" stroke-width="1.5"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"><path d="M87 101L106 89L124 104M106 89L105 111"/><path d="M187 102L202 88L220 102M202 88L204 110"/></g>
+  <g fill="none" stroke="#D9A441" stroke-width="2.4" stroke-linecap="round"><path d="M87 101L106 89L124 104M106 89L105 111"/><path d="M187 102L202 88L220 102M202 88L204 110"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <circle cx="105" cy="101" r="3.5" fill="#D9A441"/><circle cx="203" cy="100" r="3.5" fill="#D9A441"/>
+</svg>

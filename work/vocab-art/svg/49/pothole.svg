@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: pothole (Noun)
+  CONTEXTUAL_DEFINITION: A deep broken hole in a road surface that a cyclist needs to avoid.
+  PEDAGOGICAL_ART_DIRECTOR: Make the damaged crater in the paved road prominent and show the cyclist steering around it.
+  PEDAGOGICAL_ARCHETYPE: 3 - Contextual scene
+  SYNONYM_GUARD: This is road damage caused by traffic and weather, not a natural river-rock pothole.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Paved road with a jagged dark crater and cracked asphalt; cyclist leans to steer safely around the hole.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:pothole" data-archetype="road-hazard-pothole">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="po-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="po-road" x2="0" y2="1"><stop stop-color="#657478"/><stop offset="1" stop-color="#536064"/></linearGradient><linearGradient id="po-shirt" x2="0" y2="1"><stop stop-color="#D98855"/><stop offset="1" stop-color="#A95D43"/></linearGradient><filter id="po-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.3" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#po-sky)"/><path d="M0 104Q63 88 122 105T240 102T304 100V145H0Z" fill="#A9B994"/><path d="M0 136Q90 129 159 137T304 132V192H0Z" fill="url(#po-road)"/></g>
+ <g id="layer-context"><path d="M18 105L35 61L52 105ZM260 102L278 55L296 102Z" fill="#527764"/><path d="M28 155H276" fill="none" stroke="#E9DDB8" stroke-width="1.4" stroke-dasharray="18 12"/><path d="M0 135Q83 129 153 136T304 133" fill="none" stroke="#839194" stroke-width="1.2"/><ellipse cx="140" cy="178" rx="76" ry="5" fill="#25363B" opacity=".25"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#po-shadow)">
+  <path d="M33 163L48 150L62 152L75 143L91 146L104 137L121 140L133 134L147 139L157 153L150 165L130 169L116 165L99 171L81 167L63 173L47 168Z" fill="#202B30" stroke="#D0C4A5" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M43 157L57 155L68 149L82 152L94 144L107 148L119 140L135 146L144 156L136 162L119 159L102 165L86 160L71 165L54 161Z" fill="#111B21" stroke="#34474C" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M38 150l-8-5m28 9-3-8m34 3 4-8m28 7 5-8m26 22 6 5" fill="none" stroke="#AAB5AD" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="196" cy="117" r="17" fill="none" stroke="#344A50" stroke-width="2.7"/><circle cx="249" cy="117" r="17" fill="none" stroke="#344A50" stroke-width="2.7"/><path d="M196 117L224 117L215 97L196 117M215 97L238 97L224 117L196 117M224 117L249 117M238 97L242 83L254 83" fill="none" stroke="#4F7F9D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="221" cy="77" r="5.5" fill="#D39A72" stroke="#714E3E" stroke-width=".8"/><path d="M216 77Q216 71 222 71Q228 72 227 78Q221 75 216 77Z" fill="#394648"/>
+  <path d="M215 85Q221 82 227 86L232 97L224 102L213 95Z" fill="url(#po-shirt)" stroke="#8D563D" stroke-width=".8"/>
+  <path d="M218 87L230 91L241 83M216 88L207 95" fill="none" stroke="#D39A72" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M217 96L209 103L207 114M225 97L235 105L238 115" fill="none" stroke="#344A50" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240 83l5-4" fill="none" stroke="#D39A72" stroke-width="2.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M197 105A12 12 0 0 1 207 100M249 105A12 12 0 0 1 259 110" fill="none" stroke="#E8F0E8" stroke-width="1.1"/><path d="M44 156l8 2m29 2 9 2m36 2 7 2m-11-19 6-4" fill="none" stroke="#839194" stroke-width="1.2"/><path d="M202 79l3 2m23 10 4-2" fill="none" stroke="#F4D8B7" stroke-width="1.1"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M197 105A12 12 0 0 1 207 101M249 105A12 12 0 0 1 258 110" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".5"/><path d="M40 153l9 1m41-9 9-3m27 4 9 3" fill="none" stroke="#E5D8B5" stroke-width="1.2"/><circle cx="221" cy="77" r="1" fill="#FFF8E7"/></g>
+</svg>

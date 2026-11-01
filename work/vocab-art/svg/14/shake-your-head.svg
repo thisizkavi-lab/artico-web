@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: shake your head (Verb)
+  CONTEXTUAL_DEFINITION: To turn the head from side to side.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment human action
+  SYNONYM_GUARD: Use a horizontal movement arc; nod uses vertical movement.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front-facing head and shoulders.
+    - Context_Layer: Two pale side positions show the head turning left and right.
+    - Focal_Layer: Central head stays connected to a steady neck.
+    - Details_Layer: Eyes glance sideways and brows remain visible.
+    - Lighting_Layer: Broad horizontal arrow guides the side-to-side motion.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:shake your head" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="175" rx="96" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M86 178Q92 145 121 138H184Q213 145 218 178Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M123 120L123 150H181L179 120Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M98 81Q91 44 120 29Q150 11 179 30Q200 45 193 86L181 118Q164 135 140 131Q114 126 102 105Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="2.2" opacity=".65"/><path d="M120 83Q130 77 140 83M158 83Q168 77 179 83" fill="none" stroke="#94A3B8" stroke-width="1.7"/><path d="M108 57Q116 34 139 27" fill="none" stroke="#94A3B8" stroke-width="1.3"/><path d="M206 82Q213 45 184 29Q154 11 125 30Q104 45 111 86L123 118Q140 135 164 131Q190 126 202 105Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="2.2" opacity=".45"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M127 120L125 151H179L177 120Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M104 81Q100 44 130 29Q158 14 187 33Q207 49 198 87L185 120Q169 138 144 133Q117 129 106 105Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M104 74Q101 43 130 26Q160 11 188 31Q207 48 198 75L184 62Q158 71 143 55Q121 71 104 74Z" fill="#536B63" stroke="#1E2A3B" stroke-width="2.2"/><path d="M124 89Q135 84 143 89M164 89Q174 83 184 89" fill="none" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="139" cy="94" rx="3" ry="4" fill="#1E2A3B"/><ellipse cx="177" cy="94" rx="3" ry="4" fill="#1E2A3B"/><path d="M143 116Q152 119 162 116" fill="none" stroke="#8E5B4A" stroke-width="1.7"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M63 80L100 80M241 80L204 80" stroke="#4A72B2" stroke-width="2.1"/><path d="M72 75L61 80L72 85M232 75L243 80L232 85" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M100 65Q151 47 203 65" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4" opacity=".58"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M116 44Q151 25 188 44" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4" opacity=".65"/></g>
+</svg>

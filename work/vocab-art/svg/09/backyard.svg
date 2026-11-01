@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: backyard (Noun)
+  CONTEXTUAL_DEFINITION: The outdoor area behind a house.
+  PEDAGOGICAL_ARCHETYPE: 5 (Place shown in its home setting)
+  SYNONYM_GUARD: Show the private enclosed space behind the back of a house rather than a front lawn or planted garden.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Rear wall of a home facing a fenced outdoor area.
+    - Context_Layer: Back door opens onto a grassy yard.
+    - Focal_Layer: Rear fence encloses the space behind the home.
+    - Details_Layer: Patio stones, a ball, and a small tree.
+    - Lighting_Layer: Gentle afternoon sun.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:backyard" data-archetype="home-place">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 127 Q152 117 304 127 L304 192 L0 192Z" fill="#AFC99F"/><ellipse cx="153" cy="166" rx="108" ry="8" fill="#91AE83"/></g>
+  <g id="layer-context"><rect x="17" y="39" width="72" height="97" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2"/><path d="M17 39 L53 20 L89 39Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2"/><rect x="41" y="78" width="30" height="58" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="65" cy="106" r="1.8" fill="#F2C14E"/><path d="M116 58 L116 138 M135 58 L135 138 M154 58 L154 138 M173 58 L173 138 M192 58 L192 138 M211 58 L211 138 M230 58 L230 138 M249 58 L249 138 M268 58 L268 138" stroke="#B97840" stroke-width="4"/><path d="M109 58 L276 58 M109 82 L276 82 M109 106 L276 106 M109 130 L276 130" stroke="#8A5A35" stroke-width="2.4"/><path d="M105 56 L280 56" stroke="#D59A55" stroke-width="4"/><path d="M103 139 L280 139" stroke="#8A5A35" stroke-width="4"/><path d="M44 148 L116 148 M49 158 L108 158" stroke="#D8CDAF" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M245 146 L245 113 M255 146 L255 118" stroke="#8A5A35" stroke-width="4"/><circle cx="250" cy="108" r="19" fill="#7FB07A"/><circle cx="178" cy="149" r="8" fill="#CE3D4E" stroke="#A92D3C" stroke-width="1.5"/><path d="M172 144 L178 147 L184 144 M177 142 L177 149" stroke="#FAF8F3" stroke-width="1.2"/><path d="M202 146 Q208 138 214 146 M210 144 Q216 136 222 144" fill="none" stroke="#7FB07A" stroke-width="2"/><circle cx="269" cy="36" r="15" fill="#F2C14E" opacity="0.45"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

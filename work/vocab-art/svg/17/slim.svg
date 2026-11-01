@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: slim (Adjective)
+  CONTEXTUAL_DEFINITION: A slender, lightly built body shape.
+  PEDAGOGICAL_ARCHETYPE: 3 — Full-body portrait
+  SYNONYM_GUARD: Use a naturally slender person in balanced posture, without a comparison of worth.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft portrait studio.
+    - Context_Layer: Ground line and subtle halo.
+    - Focal_Layer: Slender upright figure in a simple outfit.
+    - Details_Layer: Narrow but proportionate arms, waist, and legs.
+    - Lighting_Layer: Warm studio light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:slim" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M40 166H264" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="152" cy="167" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="97" rx="81" ry="72" fill="#FEF3C7" opacity=".4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <circle cx="151" cy="39" r="16" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M137 34Q138 19 152 19Q166 20 167 34L159 38L145 37Z" fill="#35404B" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M141 57Q151 52 161 57L169 88L164 117L171 151L162 160L151 120L140 160L131 151L138 117L133 88Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M135 72L120 104L125 109L142 91M163 72L178 104L173 109L157 91" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/>
+  <path d="M139 116L163 116M139 61Q151 67 163 61" fill="none" stroke="#315782" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M145 38Q151 35 157 38M146 45Q152 48 158 45" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M144 79Q151 83 159 79" fill="none" stroke="#C7D9E8" stroke-width="2"/>
+  <path d="M135 161L148 161M155 161L168 161" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M89 76Q78 96 86 116M216 76Q227 96 219 116" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

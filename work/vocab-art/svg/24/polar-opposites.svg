@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: polar opposites (Noun phrase)
+  CONTEXTUAL_DEFINITION: Two things at the extreme opposite ends of a scale or spectrum.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Place day and night at the far ends of one continuous balance beam to express extremes, rather than just two noticeably different items.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open sky transitioning from day to night.
+    - Context_Layer: Sun on one side, moon and stars on the other.
+    - Focal_Layer: A long balanced beam spans the opposing ends.
+    - Details_Layer: Two small markers sit at the far endpoints.
+    - Lighting_Layer: Warm and cool halves meet at a clear center.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:polar opposites" data-archetype="object-in-environment">
+  <defs><linearGradient id="polar-bg" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#F7E4D8"/><stop offset=".5" stop-color="#F2F0E9"/><stop offset="1" stop-color="#CBD9E8"/></linearGradient><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><filter id="polar-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#polar-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="39" cy="44" r="19" fill="#F6D777"/><path d="M39 17V10M39 78V71M12 44H5M73 44H66M20 25L15 20M63 68L58 63" stroke="#D9A441" stroke-width="2"/><path d="M255 41Q267 27 278 41Q286 52 275 61Q266 68 255 59Q264 54 264 47Q264 43 255 41Z" fill="#5479AC"/><circle cx="285" cy="30" r="2" fill="#FFFFFF"/><circle cx="237" cy="59" r="2" fill="#FFFFFF"/><circle cx="286" cy="74" r="2" fill="#FFFFFF"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#polar-shadow)"><path d="M151 89L161 146H143Z" fill="#A98A64" stroke="#65472F" stroke-width="1.4"/><path d="M27 89L277 89" stroke="#315782" stroke-width="7" stroke-linecap="round"/><path d="M27 89L277 89" stroke="#5479AC" stroke-width="3.6" stroke-linecap="round"/><path d="M29 89V115M275 89V115" stroke="#8D765A" stroke-width="2"/><path d="M19 117H39V123H19ZM265 117H285V123H265Z" fill="#A98A64"/><path d="M28 83L35 69L42 83Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/><path d="M267 83L274 69L281 83Z" fill="#5479AC" stroke="#315782" stroke-width="1.1"/><circle cx="29" cy="89" r="4" fill="#D9A441"/><circle cx="275" cy="89" r="4" fill="#D9A441"/></g>
+  <g id="layer-details"><path d="M150 63V55M154 63V55" stroke="#64748B" stroke-width="1.3"/><path d="M40 104H56M248 104H264" stroke="#FFFFFF" stroke-width="1.4" opacity=".7"/><circle cx="210" cy="41" r="1.5" fill="#FFFFFF"/></g>
+  <g id="layer-lighting"><ellipse cx="52" cy="53" rx="50" ry="42" fill="#FEF9C3" opacity=".16"/><ellipse cx="258" cy="50" rx="46" ry="40" fill="#5479AC" opacity=".07"/><path d="M27 89H277" stroke="#FFFFFF" stroke-width="1" opacity=".5"/></g>
+</svg>

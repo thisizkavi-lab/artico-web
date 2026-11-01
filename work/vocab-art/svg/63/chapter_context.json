@@ -1,0 +1,307 @@
+{
+  "chapter": 63,
+  "chapter_title": "Books and reading",
+  "domain_setting": "A welcoming bookshop, library, reading desk and publishing world. Each card should make the exact reading term clear through book form, paper, people or a restrained editorial setting.",
+  "ambient_palette": {
+    "paper": "warm ivory, cream and soft page shadows",
+    "books": "muted teal, blue, coral, ochre and plum covers without text or logos",
+    "reading spaces": "pale sage, warm wood, quiet shelf colors",
+    "people": "small calm figures with varied hair and clothing, keeping the book or action legible"
+  },
+  "recurring_scale_anchors": [
+    "Canvas 304×192; show covers, pages, spines and hands at a readable size.",
+    "No lettering, readable titles, numbers, logos, brands or publisher marks.",
+    "When two terms are related, vary the physical format and composition so the distinction is immediate.",
+    "Avoid using the same open-book icon for every title or genre.",
+    "For biographies, visibly distinguish the person who writes from the person whose life is described."
+  ],
+  "polysemy_resolution_table": {
+    "article": "A written newspaper or magazine piece shown on a printed page with columns and a small photo, not a physical item or grammar article.",
+    "autobiography / biography": "Autobiography: the subject writes their own life story; biography: a separate writer documents another person’s life. Keep author and subject identities distinct.",
+    "bestseller": "A book selling in many copies, shown as a popular multi-copy display or busy shop stack; no readable bestseller badge or title.",
+    "book": "A general physical book with a visible cover and pages, distinct from formats and named reference books.",
+    "novel": "Fictional long-form story in a bound book, distinct from the adjective sense in the Japanese gloss.",
+    "plot": "A small, clearly bounded piece of land, shown as a surveyed lot with corner stakes and nearby plots; follow the Japanese gloss rather than the story-structure sense.",
+    "cover": "The outer cover of a book, not the verb meaning to put something over another object.",
+    "spine": "The human spinal column, shown as a centered chain of vertebrae within a simplified back-view torso; follow the Japanese gloss rather than the book-binding sense.",
+    "romance": "A love-story literary genre, shown as a book with a couple and heart motif; not the Romance-language family listed in the Japanese gloss.",
+    "highbrow": "An intellectual or culturally sophisticated reader in a quiet study, represented respectfully with scholarly books and art; avoid a literal raised eyebrow.",
+    "coloring book": "A bound activity book with blank outlined pictures meant to be colored, accompanied by crayons or colored pencils.",
+    "comic": "A printed comic book or graphic story with sequential panels, distinct from the adjective meaning funny.",
+    "cookbook": "A collection of recipes in a book, shown with food illustrations and cooking ingredients.",
+    "course book": "A textbook assigned as the principal reading or reference for a particular class.",
+    "dictionary": "A reference book organized into many short word-and-definition entries, suggested by indexed pages and guide tabs without visible letters.",
+    "e-reader / e-book": "E-reader is the dedicated electronic device with a screen and controls; e-book is digital book content, shown as a file or digital page.",
+    "encyclopedia": "A multi-volume or richly illustrated reference work covering many subjects, distinguished from the compact entries of a dictionary.",
+    "gossip magazine": "Glossy publication about public figures and social news, suggested with a celebrity collage and paparazzi camera, without readable covers.",
+    "guidebook": "Printed illustrated reference used to explore a destination; maps and landmarks should dominate over phrase translations.",
+    "hardcover / hardback": "A book with stiff protective boards and a visible rigid spine, contrasted with the flexible cover of a paperback.",
+    "newspaper": "A complete folded, multi-section daily or weekly news publication, shown as overlapping broadsheet pages; visually distinct from one standalone article.",
+    "paperback": "A book bound in a flexible paper cover, distinguished by its curled, thin cover edges from the rigid board cover of a hardcover.",
+    "puzzles": "Printed word or logic puzzles for readers to solve on a page, shown as a puzzle book with grids and pencil rather than a loose jigsaw-board toy.",
+    "textbook": "A school subject book with instructional diagrams and study tools; distinct from the course book illustration already adapted for a separate card.",
+    "tv guide": "A printed schedule for television programs, shown as a booklet with a color-block program grid and a small TV cue, not a TV set or transit timetable.",
+    "audiobook": "A book whose text is recorded and narrated aloud, shown by a book paired with headphones and sound waves.",
+    "e-book": "Digital book content shown as a downloadable book file on a screen, distinct from the dedicated e-reader device.",
+    "crime fiction": "A mystery or detective story as a book genre, with the book prominent and investigation clues secondary; not an actual crime scene.",
+    "fantasy": "A literary genre shown through an imaginative magical world emerging from a book; keep the book focal and avoid confusing it with science fiction.",
+    "fiction": "Writing that invents characters and events, illustrated by a storybook with a created character emerging from its page; broad category distinct from the specific novel form.",
+    "humor": "Writing intended to amuse, shown as a funny book illustration with a harmless visual gag rather than a comic strip or stand-up performance.",
+    "nature writing": "Literary writing inspired by close observation of the natural world, shown with a field notebook, writer’s pencil and living plants or wildlife.",
+    "nonfiction / non-fiction": "Writing about real people, places or events, suggested with documentary photographs and research tools, contrasting with invented stories.",
+    "science fiction": "A book genre imagining future science, technology or space travel, shown with a spacecraft and alien worlds; distinct from fantasy creatures and real laboratory science.",
+    "self-help": "Nonfiction advice that helps a reader improve their life or skills, shown as a book with a person progressing up clear steps.",
+    "travel writing": "Literary writing based on journeys and places, shown with a travel journal, map route, ticket and destination scene; distinct from travel directions.",
+    "genre": "A category of writing or literature, represented by different book types with clearly contrasting cover imagery.",
+    "chapter": "One major section of a longer book, suggested by a highlighted group of pages and a section marker within a thicker volume.",
+    "headline": "A prominent heading at the top of a newspaper or magazine story, shown as the largest band of a printed front page above smaller article columns.",
+    "horoscope": "An astrology forecast for a sign or period, shown as a magazine page with a zodiac wheel and constellation symbols.",
+    "illustration": "A picture printed within a book to accompany its content, distinct from a photo-led article page or the act of giving an example.",
+    "page": "One physical side of a leaf in a book or publication, shown as a single sheet with a lifted corner and a visible book edge.",
+    "story": "A narrative account of connected events, shown as a telling or an illustrated book scene; this chapter’s glossary emphasizes factual stories.",
+    "author": "The person who creates and writes a book, shown working on a manuscript beside a finished copy.",
+    "reader": "A person engaged with a book, with the person as the focal subject rather than the general reading activity.",
+    "bookstore": "A retail shop where customers browse and buy books; distinguish it from a library with a storefront display, shelves and a shopping bag.",
+    "library": "A public or school place for borrowing and reading books, shown with shelves and study space rather than sales displays.",
+    "reading": "The activity of reading a book, with the reader engaged at a desk and the open book visible; distinguish the setting from the reader-person card.",
+    "flick through": "Browse a publication rapidly by flicking and fanning several pages in quick succession.",
+    "flip through": "Browse a publication by lifting and turning its pages; use a single clearly curled page to distinguish the action from rapid page-fanning.",
+    "glowing reviews": "Several enthusiastic positive evaluations of a book, shown by the book beside multiple radiant star-rating cards; no readable words or numbers.",
+    "page-turner": "A highly absorbing book that keeps its reader engrossed, shown as the focal book with an excited late-night reader and pages in motion; distinguish the gripping book from the act of browsing pages."
+  },
+  "existing_asset_triage": {
+    "lesson_63": "Check exact and cross-lesson book, publication, reading and story candidates visually; keep only art that directly teaches the assigned publication or sense.",
+    "reviewed_candidates": [
+      {
+        "source": "23/textbook.svg",
+        "verdict": "REJECT for generic book",
+        "reason": "It is a school atlas/textbook with globe and lesson diagrams; too specific for the general physical book term and useful for the later textbook sense."
+      },
+      {
+        "source": "47/guidebook.svg",
+        "verdict": "REJECT for generic book",
+        "reason": "It is a travel guide with maps and destination illustrations; it is not a general book and remains relevant to guidebook."
+      },
+      {
+        "source": "25/reading.svg",
+        "verdict": "KEEP / ADAPT for reading",
+        "reason": "The person is clearly reading a large open book at a desk; action and book are legible without a distracting alternate sense."
+      },
+      {
+        "source": "23/history.svg",
+        "verdict": "REJECT for biography or autobiography",
+        "reason": "It is an abstract history lesson scene, with no life-story subject or author relationship."
+      },
+      {
+        "source": "36/journalism.svg",
+        "verdict": "REJECT for article",
+        "reason": "The presenter and chart are focal; no printed article page is shown."
+      },
+      {
+        "source": "34/journalist.svg",
+        "verdict": "REJECT for article",
+        "reason": "It depicts a journalist and camera/reporting activity rather than a published piece of writing."
+      },
+      {
+        "source": "23/textbook.svg",
+        "verdict": "KEEP / ADAPT for course book",
+        "reason": "The bound instructional book has a visible spine, pages and lesson diagrams, making it a direct class-book example; it was too specific for the generic book card."
+      },
+      {
+        "source": "76/e-reader.svg",
+        "verdict": "KEEP / ADAPT for e-reader",
+        "reason": "The dedicated device has a visible e-paper book spread and a page-shaped reading screen, clearly distinct from a phone or general tablet."
+      },
+      {
+        "source": "48/guidebook.svg",
+        "verdict": "KEEP / ADAPT for guidebook",
+        "reason": "The open book shows a destination map and landscape illustrations, a clear travel reference rather than a phrasebook."
+      },
+      {
+        "source": "47/guidebook.svg",
+        "verdict": "REJECT in favor of 48/guidebook.svg",
+        "reason": "It is also a destination book but its imagery is more abstract; the Lesson 48 scene has a clearer route map and landmark landscape."
+      },
+      {
+        "source": "22/jigsaw-puzzle.svg",
+        "verdict": "REJECT for puzzles",
+        "reason": "It depicts a standalone map jigsaw board and loose pieces, a toy puzzle rather than the printed puzzle publication in this reading chapter."
+      },
+      {
+        "source": "58/puzzles.svg",
+        "verdict": "REJECT for puzzles",
+        "reason": "It shows a jigsaw board with loose pieces, not printed word or logic problems on a page."
+      },
+      {
+        "source": "23/textbook.svg",
+        "verdict": "REJECT as a duplicate for textbook",
+        "reason": "This art is already adapted for course book in this lesson; reusing it would make the two related terms visually identical. A separate subject textbook with instructional diagrams was authored."
+      },
+      {
+        "source": "09/tv.svg",
+        "verdict": "REJECT for tv guide",
+        "reason": "It depicts a television set showing a landscape, not a printed schedule of programs."
+      },
+      {
+        "source": "44/schedule.svg",
+        "verdict": "REJECT for tv guide",
+        "reason": "It is a transit departure board with a clock, not a television-program guide."
+      },
+      {
+        "source": "35/schedule.svg",
+        "verdict": "REJECT for tv guide",
+        "reason": "It is a work timeline board rather than a TV listing publication."
+      },
+      {
+        "source": "25/listening.svg",
+        "verdict": "REJECT for audiobook",
+        "reason": "It depicts a group listening to a person, with no recorded book, playback source or headphones."
+      },
+      {
+        "source": "76/download.svg",
+        "verdict": "REJECT for e-book",
+        "reason": "It shows a generic file download to a laptop; there is no book content, so it is not a direct e-book illustration."
+      },
+      {
+        "source": "27/crime.svg",
+        "verdict": "REJECT for crime fiction",
+        "reason": "It shows a real-world crime and investigation diagram without a storybook or fictional genre cue."
+      },
+      {
+        "source": "63/novel.svg",
+        "verdict": "REJECT as a duplicate for fiction",
+        "reason": "The novel card shows a specific long-form storybook landscape. Fiction is the broader invented-writing category, so a separate created-character image will teach the distinction without repeating the novel art."
+      },
+      {
+        "source": "23/science.svg",
+        "verdict": "REJECT for science fiction",
+        "reason": "It shows a plant experiment and laboratory tools; it is real-world school science, not speculative fiction."
+      },
+      {
+        "source": "78/science.svg",
+        "verdict": "REJECT for science fiction",
+        "reason": "It repeats the real plant-lab illustration from Lesson 23 and has no fictional space, future or speculative-story cue."
+      },
+      {
+        "source": "44/travel.svg",
+        "verdict": "REJECT for travel writing",
+        "reason": "It shows a passenger boarding transit, without a book, journal or writing activity."
+      },
+      {
+        "source": "48/travel.svg",
+        "verdict": "REJECT for travel writing",
+        "reason": "It is a train and destination landscape, not literary writing about a journey."
+      },
+      {
+        "source": "58/travel.svg",
+        "verdict": "REJECT for travel writing",
+        "reason": "It shows a traveler moving with luggage, with no written travel account or journal."
+      },
+      {
+        "source": "25/make-yourself-understood.svg",
+        "verdict": "REJECT for self-help",
+        "reason": "It depicts communicating an idea to other people rather than advice for personal development."
+      },
+      {
+        "source": "63/book.svg",
+        "verdict": "REJECT for chapter",
+        "reason": "It is a generic open book without a visibly selected section or chapter marker."
+      },
+      {
+        "source": "63/hardcover.svg",
+        "verdict": "REJECT for cover",
+        "reason": "The rigid closed book teaches the hardcover format, not the outer book cover as a separate part."
+      },
+      {
+        "source": "42/cover-letter.svg",
+        "verdict": "REJECT for book cover",
+        "reason": "It is a job application letter inside an envelope, unrelated to a book cover."
+      },
+      {
+        "source": "63/article.svg",
+        "verdict": "REJECT for headline",
+        "reason": "It shows the body of a feature article with an image and columns, not a prominent headline heading."
+      },
+      {
+        "source": "63/newspaper.svg",
+        "verdict": "REJECT for headline",
+        "reason": "It shows an entire folded broadsheet publication rather than the headline of one story."
+      },
+      {
+        "source": "63/gossip-magazine.svg",
+        "verdict": "REJECT for horoscope",
+        "reason": "It shows celebrity gossip and paparazzi imagery, with no astrology forecast or zodiac chart."
+      },
+      {
+        "source": "63/book.svg",
+        "verdict": "REJECT for page",
+        "reason": "It shows the whole open book rather than one individual page or sheet."
+      },
+      {
+        "source": "23/history.svg",
+        "verdict": "REJECT for plot",
+        "reason": "It shows an abstract classroom history timeline and symbols, not a small bounded piece of land."
+      },
+      {
+        "source": "23/history.svg",
+        "verdict": "REJECT for story",
+        "reason": "It is an abstract history lesson scene rather than a narrative account or person telling a story."
+      },
+      {
+        "source": "34/journalist.svg",
+        "verdict": "REJECT for author",
+        "reason": "It shows a reporter working with a camera and interviewee; it does not depict a book author writing a manuscript."
+      },
+      {
+        "source": "63/book.svg",
+        "verdict": "REJECT for spine",
+        "reason": "It shows an open book rather than the human spinal column named in the lesson gloss."
+      },
+      {
+        "source": "58/reading.svg",
+        "verdict": "REJECT for reader or reading",
+        "reason": "The person is asleep in bed with a book, so the art shows sleeping with a book rather than an active reader or the act of reading."
+      },
+      {
+        "source": "23/library.svg",
+        "verdict": "KEEP / ADAPT for library",
+        "reason": "The scene clearly shows book-filled shelves and a quiet reading table in a library; it is a direct same-term match."
+      },
+      {
+        "source": "25/reading.svg",
+        "verdict": "KEEP / ADAPT for reading",
+        "reason": "A person is actively reading an open book at a desk; this fits the activity and differs from Lesson 63 reader, which focuses on the person in an armchair."
+      },
+      {
+        "source": "58/reading.svg",
+        "verdict": "REJECT for reading",
+        "reason": "It shows a person asleep with a book on the bed, not the activity of reading."
+      },
+      {
+        "source": "58/read.svg",
+        "verdict": "REJECT for book reading",
+        "reason": "It shows a person holding a loose sheet rather than reading a book; the Lesson 25 reading scene is a clearer exact-context candidate."
+      },
+      {
+        "source": "11/shop.svg",
+        "verdict": "REJECT for bookstore",
+        "reason": "It is a generic storefront with abstract merchandise and no visible books or book-shopping cues."
+      },
+      {
+        "source": "23/review.svg",
+        "verdict": "REJECT for glowing reviews",
+        "reason": "It shows a student checking or grading written work, not enthusiastic reviews of a book."
+      },
+      {
+        "source": "24/review.svg",
+        "verdict": "REJECT for glowing reviews",
+        "reason": "It shows a student marking an exercise page; no positive book review or praise is depicted."
+      },
+      {
+        "source": "18/critical.svg",
+        "verdict": "REJECT for highbrow",
+        "reason": "It depicts close evaluation of another person, not a cultured or intellectual reader in the book context."
+      }
+    ]
+  }
+}

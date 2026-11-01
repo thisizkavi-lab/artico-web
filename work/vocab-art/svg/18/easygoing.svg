@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: easygoing (Adjective)
+  CONTEXTUAL_DEFINITION: Relaxed and flexible when plans change or small problems arise.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: When rain changes an outdoor picnic plan, the focal person smiles and cheerfully carries the food indoors; unlike laid-back, this shows flexibility.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Window with rain outside and a cozy indoor table.
+    - Context_Layer: Friend holds the picnic basket with concern.
+    - Focal_Layer: Easygoing person casually opens an indoor picnic cloth.
+    - Details_Layer: Rain drops, relaxed shrug, basket and adaptable smile.
+    - Lighting_Layer: Warm indoor light contrasts with rain outside.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:easygoing" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#56725E;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="basket" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D9A441"/><stop offset="1" stop-color="#B9875D"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="130" ry="8" fill="#EAE3D5"/><rect x="219" y="24" width="63" height="57" rx="5" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><path d="M250 25V80M220 52H281" stroke="#AAB5C3" stroke-width="1.5"/><path d="M232 34L228 42M257 35L253 43M274 42L270 50M240 61L236 69M269 61L265 69" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="70" cy="68" r="16" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M54 68Q55 50 70 51Q86 52 86 69L80 73H57Z" fill="#805333"/><path d="M51 90Q70 83 89 90L95 119H46Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M58 68H64M75 68H80M61 78Q69 74 77 78" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M56 96L46 108M83 96L96 108" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M34 128Q55 120 76 128L72 151H38Z" fill="url(#basket)" stroke="#805333" stroke-width="2"/><path d="M37 128Q55 112 73 128" fill="none" stroke="#805333" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="166" cy="96" rx="67" ry="69" fill="#FEF3C7" opacity=".56"/><circle cx="167" cy="54" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M147 54Q148 32 167 33Q188 34 187 56L180 61Q176 45 165 45Q155 46 149 62Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M143 80Q167 73 191 80L197 122H135Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.5"/><path d="M150 89L135 102L125 96M187 89L201 104L214 99" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M150 89L136 102L126 96M187 89L201 104L213 99" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M137 122L135 158H152L160 124M167 124L175 158H193L190 122" fill="#56725E" stroke="#1E2A3B" stroke-width="2"/><path d="M201 106Q220 101 236 111L230 126L211 124Z" fill="#D9D2C7" stroke="#7B8A9E" stroke-width="1.5"/><path d="M202 110L233 116" stroke="#D9A441" stroke-width="1.5"/><path d="M157 54Q162 57 166 54M172 54Q176 57 181 54M158 66Q167 73 176 66" fill="none" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M111 96Q105 90 111 85M118 103Q113 98 118 93" fill="none" stroke="#D9A441" stroke-width="1.8"/><path d="M130 76L136 72M197 72L203 76" stroke="#D9A441" stroke-width="1.8"/><circle cx="115" cy="116" r="2" fill="#D9A441"/><path d="M232 88Q240 84 247 88" fill="none" stroke="#829A83" stroke-width="2" stroke-linecap="round"/><path d="M151 41Q161 37 170 41" fill="none" stroke="#FEF9C3" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><path d="M157 37Q167 33 177 37" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="166" cy="96" rx="67" ry="69" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

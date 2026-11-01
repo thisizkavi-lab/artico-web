@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: tooth / teeth (plural) (Noun)
+  CONTEXTUAL_DEFINITION: A hard white structure in the mouth used to bite and chew.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole oral callout
+  SYNONYM_GUARD: Highlight one tooth within a visible row; mouth is the opening, lips are its outer soft edges.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Friendly close smile with muted lips and skin.
+    - Context_Layer: Full tooth row is visible within the mouth.
+    - Focal_Layer: One front tooth is warm highlighted while adjacent teeth stay pale.
+    - Details_Layer: Rounded tooth crown and narrow root contours.
+    - Lighting_Layer: Gold target ring and small glint on highlighted tooth.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:tooth / teeth (plural)" data-archetype="part-callout">
+  <defs><linearGradient id="tooth" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E8EEF3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="95" rx="119" ry="82" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M47 87Q152 47 257 87Q241 147 152 160Q63 147 47 87Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.1"/><path d="M60 94Q152 61 244 94Q230 111 152 116Q74 111 60 94Z" fill="#6C4148"/><path d="M63 93Q152 62 241 93Q225 107 152 111Q79 107 63 93Z" fill="#F7FAFC"/><path d="M79 97L83 108M99 91L102 110M121 87L123 112M144 85L146 113M168 85L170 113M191 88L193 111M214 93L217 108" stroke="#94A3B8" stroke-width="1.1"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M133 84Q133 78 139 78H151Q157 78 157 84V102Q157 109 145 113Q133 109 133 102Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.9"/><path d="M135 84Q135 80 140 80H150Q155 80 155 84V101Q155 106 145 110Q135 106 135 101Z" fill="#FFF7D6"/><path d="M138 84Q139 81 143 81" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><path d="M128 80Q145 74 162 81" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="3 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M132 81Q145 76 158 81" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M58 88Q152 50 246 88" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5"/><path d="M105 133Q152 147 200 133" fill="none" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="145" cy="96" rx="20" ry="25" fill="#FEF3C7" opacity=".42"/><path d="M84 64L119 78" stroke="#4A72B2" stroke-width="1.8"/><path d="M112 72L120 79L110 80" fill="none" stroke="#4A72B2" stroke-width="1.8"/></g>
+</svg>

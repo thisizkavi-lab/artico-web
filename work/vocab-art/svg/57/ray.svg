@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: ray (noun)
+  CONTEXTUAL_DEFINITION: A flat-bodied ray gliding close to the sandy seabed, with broad wing-like fins and a long tail.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with distinctive flattened silhouette
+  SYNONYM_GUARD: This is a marine ray (such as a stingray), not a beam of light; emphasize the broad disc and tapering tail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A mottled blue-grey ray faces toward the viewer and slightly left, broad diamond disc x=80..226 y=78..132, two visible eyes on top, long whip tail to x=264,y=145, resting above pale sand.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:ray" data-archetype="stingray-flat-disc-and-whip-tail">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#668E96;--c-secondary:#344F5A;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="ray-water" x2="0" y2="1"><stop stop-color="#91C3C6"/><stop offset="1" stop-color="#4C8792"/></linearGradient>
+  <linearGradient id="ray-sand" x2="0" y2="1"><stop stop-color="#C9BE9F"/><stop offset="1" stop-color="#A3987B"/></linearGradient>
+  <linearGradient id="ray-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#93ABB0"/><stop offset="1" stop-color="#536F79"/></linearGradient>
+  <filter id="ray-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ray-water)"/><path d="M0 144Q72 135 151 145T304 140V192H0Z" fill="url(#ray-sand)"/><path d="M0 35q68-7 135 0m69 1q44-5 82 0" fill="none" stroke="#DFF1E8" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M19 159l10-9 9 9m206-1 10-9 9 9" fill="none" stroke="#858F70" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 128q17-7 34-2m207-6q16-6 31-1" fill="none" stroke="#D4EAE2" stroke-width="1.4" stroke-linecap="round"/><circle cx="45" cy="83" r="2" fill="#EAF8EF"/><circle cx="53" cy="74" r="1.3" fill="#EAF8EF"/><ellipse cx="157" cy="143" rx="72" ry="6" fill="#263E43" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#ray-shadow)">
+  <path d="M151 115Q123 77 96 80Q82 82 76 98Q87 111 109 123Q129 135 151 130Q173 135 195 123Q217 111 228 98Q222 82 208 80Q181 77 151 115Z" fill="url(#ray-body)" stroke="#3C5C66" stroke-width="1.6"/>
+  <path d="M150 115Q124 85 99 84Q86 85 80 98Q95 108 112 119Q132 131 150 125Z" fill="#A4B7B7" opacity=".5"/>
+  <path d="M151 124Q158 136 166 146Q181 157 205 165Q184 152 173 142Q164 131 157 119Z" fill="#556F78" stroke="#3C5C66" stroke-width="1.3"/>
+  <path d="M117 110Q126 120 137 121M185 110Q176 120 165 121" fill="none" stroke="#D0DEDA" stroke-width="1.1" opacity=".75" stroke-linecap="round"/>
+  <circle cx="137" cy="107" r="2.2" fill="#182E37"/><circle cx="165" cy="107" r="2.2" fill="#182E37"/>
+  <path d="M145 118q6 4 12 0" fill="none" stroke="#344F58" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M142 124q-5 8-7 13m13-12q-1 8 0 13m6-13q3 8 6 12" fill="none" stroke="#48656D" stroke-width="1" stroke-linecap="round"/>
+  <path d="M95 96q6-4 12-1m92 0q7-3 11 1" fill="none" stroke="#CBD7D3" stroke-width="1.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="100" cy="102" r="1.2" fill="#DCEAE5"/><circle cx="201" cy="102" r="1.2" fill="#DCEAE5"/><path d="M46 144q13-5 24 0m159 0q13-5 26 0m-107 30q13-4 26 0" fill="none" stroke="#D3D4BB" stroke-width="1.2" stroke-linecap="round"/><circle cx="239" cy="60" r="1.4" fill="#E7F6F1"/><circle cx="269" cy="111" r="1.1" fill="#E8F6F0"/></g>
+ <g id="layer-lighting"><path d="M102 89q15-9 28 2m44 0q13-11 24-2" fill="none" stroke="#F4F8EE" stroke-width="1.5" opacity=".55" stroke-linecap="round"/><ellipse cx="152" cy="103" rx="58" ry="20" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

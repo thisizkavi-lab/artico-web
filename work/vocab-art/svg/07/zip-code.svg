@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 07 - Sharing information
+  WORD: zip code (Noun)
+  CONTEXTUAL_DEFINITION: A postal code that helps sort and deliver mail to the correct area.
+  PEDAGOGICAL_ARCHETYPE: 2 (A practical label used to route an object)
+  SYNONYM_GUARD: A row of five blank color-coded blocks on an envelope feeds into a postal sorting route; no numerals appear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Postal sorting room with a conveyor and route bins.
+    - Context_Layer: Mail worker guides an envelope toward the right bin.
+    - Focal_Layer: Large envelope with a dedicated postal-code block row.
+    - Details_Layer: Five colored squares and diverging route arrows.
+    - Lighting_Layer: Highlight on the code blocks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="7:zip code" data-archetype="action-tool">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 149 Q152 142 304 149 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="156" cy="165" rx="108" ry="8" fill="#DDD4C3"/><path d="M24 42 L281 42 M29 45 L29 58 M277 45 L277 58" stroke="#B97840" stroke-width="5" stroke-linecap="round"/><path d="M32 140 L273 140 L260 157 L47 157Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><circle cx="86" cy="150" r="6" fill="#94A3B8"/><circle cx="152" cy="150" r="6" fill="#94A3B8"/><circle cx="218" cy="150" r="6" fill="#94A3B8"/></g>
+  <g id="layer-context"><path d="M28 151 Q30 127 48 124 Q66 127 68 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="48" cy="109" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M32 108 Q33 90 49 92 Q64 93 64 109 Q56 101 47 102Z" fill="#6B4B35"/><path d="M40 111 Q44 107 47 111 M52 111 Q56 107 59 111" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M39 119 Q48 125 57 119" fill="none" stroke="#A34F47" stroke-width="1.6"/><path d="M61 132 Q77 126 90 116 L96 121 Q88 137 69 144" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M88 117 Q94 110 100 113 L104 117 L97 124 L91 124Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-focal"><path d="M89 67 L231 67 L260 98 L260 133 L89 133Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M90 68 L175 99 L259 68" fill="#DCECFB" stroke="#5479AC" stroke-width="2" stroke-linejoin="round"/><path d="M105 111 L163 111 M105 119 L158 119" stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round"/><rect x="178" y="105" width="66" height="16" rx="3" fill="#F2ECE1" stroke="#D49B2A" stroke-width="1.5"/><g><rect x="183" y="108" width="8" height="10" rx="1" fill="#CE3D4E"/><rect x="195" y="108" width="8" height="10" rx="1" fill="#5479AC"/><rect x="207" y="108" width="8" height="10" rx="1" fill="#7FB07A"/><rect x="219" y="108" width="8" height="10" rx="1" fill="#F2C14E"/><rect x="231" y="108" width="8" height="10" rx="1" fill="#8B5CA8"/></g></g>
+  <g id="layer-details"><path d="M119 79 L126 71 L133 79 M125 72 L125 61 M148 78 L155 70 L162 78 M155 71 L155 60" fill="none" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M190 99 L194 91 L198 99 L206 103 L198 107 L194 115 L190 107 L182 103Z" fill="#F2C14E"/><path d="M187 104 Q210 98 235 104" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8"/></g>
+  <g id="layer-lighting"><path d="M94 71 L228 71 M178 106 L243 106" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.76"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

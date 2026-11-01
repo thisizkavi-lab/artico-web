@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: subway
+  CONTEXTUAL_DEFINITION: An urban underground railway and the train that runs through its tunnels.
+  PEDAGOGICAL_ART_DIRECTOR: Show the broad front of a modern train emerging from a rounded underground tunnel beside a platform.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero vehicle with place context
+  SYNONYM_GUARD: Tunnel darkness and platform signal this as subway; avoid overhead wires, which belong to the street tram.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Draw a tunnel arch centered at (151,99), opening x=57..247 and y=43..139; put a frontal train at x=101..203 and track at y=146.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:subway" data-archetype="hero-vehicle-place">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="subway-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#88A9D0"/><stop offset="1" stop-color="#45658F"/></linearGradient>
+    <linearGradient id="subway-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E8F4F8"/><stop offset="1" stop-color="#ABC6D9"/></linearGradient>
+    <radialGradient id="subway-halo"><stop stop-color="#B5C9DF" stop-opacity=".6"/><stop offset="1" stop-color="#5479AC" stop-opacity="0"/></radialGradient>
+    <filter id="subway-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 149 H304 V192 H0 Z" fill="#EEE7DA"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="158" rx="116" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M45 146 V94 Q49 45 99 33 H205 Q254 46 259 94 V146 Z" fill="#364458" stroke="#1E2A3B" stroke-width="3"/><path d="M61 144 V96 Q65 59 104 48 H200 Q240 59 243 96 V144 Z" fill="#253448" stroke="#6B7786" stroke-width="2"/><path d="M72 141 V102 Q77 68 108 59 H196 Q228 69 232 102 V141" fill="none" stroke="#8E9CAA" stroke-width="2"/><path d="M29 137 H275 V148 H29 Z" fill="#C8D0D4" stroke="#64748B" stroke-width="1.4"/><path d="M36 137 V149 M269 137 V149" stroke="#1E2A3B" stroke-width="1.5"/><path d="M38 137 H51 M253 137 H266" stroke="#F2C14E" stroke-width="4"/></g>
+  <g id="layer-focal" filter="url(#subway-shadow)"><path d="M107 133 V83 Q108 70 119 64 H185 Q196 70 197 83 V133 Z" fill="url(#subway-shell)" stroke="#1E2A3B" stroke-width="2.8"/><path d="M118 80 Q119 70 128 69 H176 Q185 70 186 80 V101 H118 Z" fill="url(#subway-glass)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M152 69 V101" stroke="#64748B" stroke-width="1.4"/><path d="M110 107 H194 V128 H110 Z" fill="#E7EEF2" stroke="#1E2A3B" stroke-width="1.8"/><path d="M152 108 V127" stroke="#64748B" stroke-width="1.4"/><path d="M116 108 H126 V126 H116 Z M178 108 H188 V126 H178 Z" fill="#B7CDDB" stroke="#64748B" stroke-width="1"/><path d="M110 103 H194" stroke="#F2C14E" stroke-width="4"/><circle cx="119" cy="113" r="2.8" fill="#F2C14E"/><circle cx="188" cy="113" r="2.8" fill="#F2C14E"/><path d="M107 132 H197" stroke="#263548" stroke-width="4"/><path d="M67 151 L92 148 M212 148 L238 151" stroke="#46515C" stroke-width="3"/><path d="M80 153 L98 149 M206 149 L224 153" stroke="#8C969C" stroke-width="2"/><path d="M102 140 Q151 133 202 140" fill="none" stroke="#8EB0DE" stroke-width="1.6" opacity=".8"/></g>
+  <g id="layer-details"><path d="M122 75 H143 M161 75 H178" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><path d="M121 115 H132 M172 115 H183" stroke="#5479AC" stroke-width="1.2"/><path d="M33 128 L41 128 M263 128 L271 128" stroke="#F2C14E" stroke-width="2"/><circle cx="99" cy="131" r="2" fill="#FFFFFF"/><circle cx="205" cy="131" r="2" fill="#FFFFFF"/><path d="M53 154 H80 M225 154 H251" stroke="#263548" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="75" rx="112" ry="74" fill="url(#subway-halo)" opacity=".3"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M27 146 H277" stroke="#1E2A3B" stroke-width="1.2"/></g>
+</svg>

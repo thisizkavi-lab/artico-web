@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: towel (Noun)
+  CONTEXTUAL_DEFINITION: A thick absorbent cloth used to dry the body or hands.
+  PEDAGOGICAL_ARCHETYPE: 7 (Draped material / swatch)
+  SYNONYM_GUARD: Emphasize looped fabric and a hanging drape over a rail, rather than a flat garment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom wall.
+    - Context_Layer: Horizontal towel rail.
+    - Focal_Layer: Folded-over plush towel hanging down.
+    - Details_Layer: Woven bands and soft loop texture.
+    - Lighting_Layer: Gentle cloth highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:towel" data-archetype="textile-swatch">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="169" rx="72" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M91 54 H213" stroke="#647D8B" stroke-width="6" stroke-linecap="round"/><circle cx="91" cy="54" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="213" cy="54" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M99 53 Q99 46 108 46 H196 Q205 46 205 53 V143 Q205 151 196 151 H108 Q99 151 99 143Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.5"/><path d="M99 58 H205 V82 H99Z" fill="#AFC8D2" stroke="#5479AC" stroke-width="1.5"/><path d="M99 129 H205 V145 Q205 151 196 151 H108 Q99 151 99 145Z" fill="#AFC8D2" stroke="#5479AC" stroke-width="1.5"/><path d="M109 63 V77 M117 63 V77 M125 63 V77 M133 63 V77 M141 63 V77 M149 63 V77 M157 63 V77 M165 63 V77 M173 63 V77 M181 63 V77 M189 63 V77" stroke="#FFFFFF" stroke-width="1.1" opacity="0.8"/><path d="M109 134 V145 M117 134 V145 M125 134 V145 M133 134 V145 M141 134 V145 M149 134 V145 M157 134 V145 M165 134 V145 M173 134 V145 M181 134 V145 M189 134 V145" stroke="#FFFFFF" stroke-width="1.1" opacity="0.8"/></g>
+  <g id="layer-details"><path d="M108 88 Q151 94 196 88 M108 119 Q151 125 196 119" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

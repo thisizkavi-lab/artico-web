@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: booties (Plural Noun)
+  CONTEXTUAL_DEFINITION: Tiny soft shoes or knitted coverings for a baby's feet.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A clearly visible pair of soft knitted infant booties has rounded toes and folded cuffs, distinguishing them from adult boots or socks.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Nursery shelf in soft light.
+    - Context_Layer: Folded baby blanket.
+    - Focal_Layer: Two small knitted booties side by side.
+    - Details_Layer: Ribbed cuffs, yarn texture, and curved soles.
+    - Lighting_Layer: Gentle pool of warm light below the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:booties" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="booties-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><linearGradient id="booties-knit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#EAA9A1"/></linearGradient><filter id="booties-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#booties-bg)"/><path d="M0 151Q81 144 153 151T304 148V192H0Z" fill="#EADFCC"/><path d="M34 52H270V149H34Z" fill="#E3E8F0"/><path d="M43 65H260V139H43Z" fill="#FFFFFF" opacity=".7"/><path d="M55 151V168M249 151V168" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M213 111L246 102L257 109L224 118Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.5"/><path d="M220 110L248 103" stroke="#64748B" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#booties-shadow)"><path d="M73 109Q76 91 91 88L109 91L121 105Q129 114 123 128Q119 139 99 139H69Q61 136 64 126Z" fill="url(#booties-knit)" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M82 93Q84 76 101 76Q117 76 120 94L113 104H84Z" fill="#EAA9A1" stroke="#1E2A3B" stroke-width="2.2"/><path d="M85 84H116M84 89H118M83 94H118M87 99H115" stroke="#A95059" stroke-width="1.6"/><path d="M69 127Q93 135 122 126" fill="none" stroke="#F3ECE1" stroke-width="2"/><path d="M178 113Q181 94 196 91L214 94L227 108Q235 117 229 131Q225 142 205 142H174Q167 139 170 129Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M187 96Q189 79 206 79Q222 79 225 97L218 107H189Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="2.2"/><path d="M190 87H221M189 92H223M188 97H223M192 102H220" stroke="#315782" stroke-width="1.6"/><path d="M175 131Q199 139 228 130" fill="none" stroke="#F3ECE1" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M97 112Q104 106 111 112M202 116Q209 110 216 116" fill="none" stroke="#FFFFFF" stroke-width="2"/><circle cx="93" cy="115" r="2" fill="#F2C14E"/><circle cx="198" cy="119" r="2" fill="#F2C14E"/><path d="M65 65Q151 50 238 65" fill="none" stroke="#FFFFFF" stroke-width="2.6"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="115" rx="113" ry="68" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".28"/><path d="M78 39Q152 25 226 39" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

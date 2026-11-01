@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: boiling point (Noun)
+  CONTEXTUAL_DEFINITION: The temperature at which liquid water changes to gas and boils.
+  PEDAGOGICAL_ART_DIRECTOR: Emphasize the exact threshold on a thermometer as water begins its rolling boil.
+  PEDAGOGICAL_ARCHETYPE: 1 - Measurement threshold
+  SYNONYM_GUARD: Show the measured transition point, not only a generic boiling pot.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Glass thermometer beside a clear beaker of water; the red column meets a marked upper threshold while bubbles and steam form.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:boiling point" data-archetype="boiling-temperature-threshold">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="bp-wall" x2="0" y2="1"><stop stop-color="#EAF3EF"/><stop offset="1" stop-color="#C4D7D7"/></linearGradient><linearGradient id="bp-glass" x2="0" y2="1"><stop stop-color="#DAF1EE"/><stop offset="1" stop-color="#86C8C6"/></linearGradient><linearGradient id="bp-red" x2="0" y2="1"><stop stop-color="#EB8B5E"/><stop offset="1" stop-color="#C65045"/></linearGradient><filter id="bp-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bp-wall)"/><path d="M0 150H304V192H0Z" fill="#B99B72"/></g>
+ <g id="layer-context"><path d="M26 35H278M26 54H278" fill="none" stroke="#F9FBF3" stroke-width="1.2"/><path d="M26 35v19m50-19v19m50-19v19m50-19v19m50-19v19" fill="none" stroke="#C8D6D1" stroke-width="1"/><circle cx="248" cy="73" r="20" fill="#E8F3EF" stroke="#9AB6B7" stroke-width="1.4"/><path d="M238 73q10-17 20 0q-10 17-20 0Z" fill="url(#bp-glass)" stroke="#72AEB5" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="83" ry="6" fill="#5B4B3B" opacity=".17"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#bp-shadow)">
+  <path d="M68 82L153 82L145 151H78Z" fill="url(#bp-glass)" stroke="#547F8A" stroke-width="2"/><path d="M68 82H153M78 151H145" fill="none" stroke="#EFFAF6" stroke-width="2.4"/><path d="M77 115Q111 110 148 115V150H78Z" fill="#8ACCC6" opacity=".84"/><circle cx="94" cy="137" r="3.5" fill="#EAFBF4" stroke="#57A4A9" stroke-width="1"/><circle cx="117" cy="126" r="4.5" fill="#EAFBF4" stroke="#57A4A9" stroke-width="1"/><circle cx="132" cy="141" r="3" fill="#EAFBF4" stroke="#57A4A9" stroke-width="1"/><path d="M93 112q-6-8 0-14m32 13q7-9 0-16" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/>
+  <rect x="183" y="49" width="24" height="103" rx="12" fill="#F8F7EC" stroke="#68858C" stroke-width="1.8"/><rect x="190" y="73" width="10" height="70" rx="5" fill="url(#bp-red)"/><circle cx="195" cy="146" r="11" fill="url(#bp-red)" stroke="#A94E45" stroke-width="1.3"/><path d="M178 69H214M178 73H188M178 85H188M178 97H188M178 109H188M178 121H188M178 133H188" fill="none" stroke="#637E84" stroke-width="1.6"/><path d="M174 69H218" fill="none" stroke="#D7834B" stroke-width="3.5"/><circle cx="221" cy="69" r="5" fill="#EBC86F" stroke="#C59542" stroke-width="1.2"/>
+  <path d="M194 42q-8-8 0-16m16 23q8-8 1-16" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M73 88v56m8-1h60m49-67h-7m0 12h7m-7 12h7m-7 12h7m-7 12h7m-7 12h7" fill="none" stroke="#D6EBE6" stroke-width="1.3"/><path d="M87 102q17-4 31 0m-34 7q13-3 25 0" fill="none" stroke="#F7FFFA" stroke-width="1.3"/><circle cx="195" cy="64" r="1.4" fill="#FFF8E7"/><path d="M24 24H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M225 66l8-5m-8 11 8 5" fill="none" stroke="#D7834B" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M71 84h76m41-29q11-6 18 1" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="195" cy="146" r="2" fill="#F7B48A"/><circle cx="248" cy="73" r="1.2" fill="#FFF8E7"/></g>
+</svg>

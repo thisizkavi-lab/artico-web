@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: volunteer
+  CONTEXTUAL_DEFINITION: A person who freely offers time and work without expecting payment.
+  PEDAGOGICAL_ART_DIRECTOR: Show a willing helper contributing effort at a community project with a friendly, service-minded cue.
+  PEDAGOGICAL_ARCHETYPE: 4 - Voluntary service
+  SYNONYM_GUARD: Make the unpaid, freely offered help visible through community context and an unmarked donation box; avoid suggesting a paid job role.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show one adult helper at x=103..161 carrying a stack of clean blankets or food packages toward a community table at y=130. Two neighbors at x=45..89 and x=204..251 receive the help; a heart icon on an open box signals voluntary community service, with no currency.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:volunteer" data-archetype="voluntary-service">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="volunteer-box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7E8BF"/><stop offset="1" stop-color="#E8B765"/></linearGradient>
+    <linearGradient id="volunteer-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#547A56"/></linearGradient>
+    <radialGradient id="volunteer-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="volunteer-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="106" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="32" y="130" width="240" height="14" rx="2" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M47 144 V155 M256 144 V155" stroke="#965D28" stroke-width="2.3"/><rect x="62" y="106" width="38" height="24" rx="3" fill="url(#volunteer-box)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M71 106 V100 Q81 93 91 100 V106" fill="none" stroke="#965D28" stroke-width="1.4"/><path d="M81 116 C75 111 69 117 81 125 C93 117 87 111 81 116 Z" fill="#D97706"/></g>
+  <g id="layer-focal" filter="url(#volunteer-shadow)"><path d="M111 124 Q113 98 128 91 L129 82 Q125 78 127 70 Q135 61 146 64 Q156 67 153 79 L150 87 Q165 93 167 122 L164 133 H115 Z" fill="url(#volunteer-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="141" cy="73" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M132 71 Q134 63 142 63 Q150 64 154 71 Q146 67 139 68 Z" fill="#3D342D"/><circle cx="138" cy="74" r=".9" fill="#1E2A3B"/><circle cx="145" cy="74" r=".9" fill="#1E2A3B"/><path d="M113 108 L99 118 L105 124 L128 113 M163 107 L178 117 L173 124 L151 114" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.5"/><path d="M102 115 L119 101 L143 103 L158 117 L154 124 H107 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.2"/><path d="M109 109 H146 M109 114 H152" stroke="#CBD5E1" stroke-width="1"/><path d="M39 126 Q41 105 52 100 L53 92 Q49 88 51 81 Q58 73 67 76 Q75 79 72 89 L69 96 Q82 101 84 124 L81 134 H43 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="62" cy="84" rx="7" ry="9" fill="#B97851" stroke="#1E2A3B" stroke-width="1"/><path d="M54 82 Q56 75 63 75 Q70 76 73 82 Q66 79 60 80 Z" fill="#242C3B"/><path d="M215 126 Q217 105 228 100 L229 92 Q225 88 227 81 Q234 73 243 76 Q251 79 248 89 L245 96 Q258 101 260 124 L257 134 H219 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="239" cy="84" rx="7" ry="9" fill="#C98562" stroke="#1E2A3B" stroke-width="1"/><path d="M231 82 Q233 75 240 75 Q247 76 249 82 Q242 79 236 80 Z" fill="#3D342D"/><path d="M77 111 L96 113 M218 111 L199 115" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M129 95 Q140 90 152 95" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M92 90 L98 85 M102 92 L108 87" stroke="#A8D4A2" stroke-width="1.7" stroke-linecap="round"/><circle cx="190" cy="91" r="2.3" fill="#F2C14E"/><path d="M134 133 H150" stroke="#547A56" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="145" cy="98" rx="96" ry="63" fill="url(#volunteer-halo)" opacity=".2"/><path d="M113 33 H169" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

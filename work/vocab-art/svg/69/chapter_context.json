@@ -1,0 +1,393 @@
+{
+  "chapter": 69,
+  "chapter_title": "Medicine and treatment",
+  "palette": [
+    "#F0EEE8",
+    "#C8B89E",
+    "#26384A",
+    "#597D8B",
+    "#B85E5A",
+    "#D6A64C",
+    "#798C72",
+    "#F6E5CE",
+    "#E7D6D1"
+  ],
+  "recurring_scale_anchors": [
+    "304×192 canvas; keep treatment scenes respectful, clear and non-graphic.",
+    "No readable words, letters, labels, brands or numbers; use marks and simple icons only.",
+    "Resolve vocabulary conflicts by the lesson group: operation is surgery, patient is a person receiving care, clinic is a care facility, medicine can mean the medical field, and tablet is a medication form.",
+    "Differentiate small adhesive strips from gauze wraps, cotton pads from loose cotton wool, medicine from medication, and urgent transport from outpatient care.",
+    "Use only mild first-aid scenes; no visible blood, invasive close-ups or alarming patient distress."
+  ],
+  "polysemy_resolution_table": {
+    "ambulance": "Emergency vehicle used to carry a patient to hospital; include a stretcher or medical cross, not a generic delivery van.",
+    "clinic": "A place that provides medical care; show a small outpatient clinic, not a clinical lecture.",
+    "doctor": "A medical professional examining or treating a patient.",
+    "doctor's office": "A small private practice with an exam room and doctor, not a general office desk.",
+    "hospital": "A large healthcare facility with treatment rooms and inpatient beds.",
+    "nurse": "A healthcare professional giving bedside care or checking a patient.",
+    "paramedic": "An emergency medical professional treating or transporting a patient in the field.",
+    "patient (hospital)": "A person receiving medical care; use the hospital noun sense, not patient as an adjective.",
+    "pharmacist": "A trained professional preparing or dispensing medicine behind a pharmacy counter.",
+    "pharmacy": "A place where medicines are dispensed; include shelves and a pharmacist counter.",
+    "waiting room": "A clinic or hospital area where patients wait for appointments.",
+    "appointment": "A scheduled medical visit, implied by a patient and clinician meeting at a calendar or check-in desk; no readable writing.",
+    "blood test": "A small blood sample being collected into a test tube; keep it clean and non-graphic.",
+    "injection": "A clinician administering a simple injection with a syringe; avoid graphic needle detail.",
+    "medical treatment": "A clinician actively providing care, broader than one medicine or procedure.",
+    "operation": "A surgical procedure in an operating room, not the functioning of a machine.",
+    "physical therapy / physiotherapy": "A therapist guiding a patient through a controlled rehabilitation movement.",
+    "prescription": "A clinician providing a medicine order on a blank or mark-only sheet; no readable text or dosage.",
+    "stitches": "Sutures closing a small clean wound; show only a close, non-graphic skin detail.",
+    "test results": "A clinician and patient reviewing a simple chart with marks but no legible numbers or words.",
+    "treatment": "Care or therapy given for a condition; distinguish from the broad medical system and a single medication.",
+    "vaccine": "A vaccine vial and a clinician preparing a routine immunization.",
+    "antiseptic": "A topical liquid used to clean skin before first aid; distinguish from ordinary soap.",
+    "antiseptic wipes": "Individually wrapped cleaning wipes used on skin before treatment.",
+    "inhaler": "A handheld metered-dose medicine device, focused as an object rather than an asthma scene.",
+    "medication / medicine (healthcare)": "Medicine taken to prevent or treat a health problem; use pills or a bottle, not the academic subject.",
+    "medication": "A drug or medicine used in care; draw a distinct medicine container or dose from the broader medical subject.",
+    "medicine": "The field of medical science and care, as distinct from a particular medication.",
+    "ointment": "A small tube or jar of topical medicated cream applied to skin.",
+    "painkillers": "Pain-relieving medicines as a group, shown as several tablets or capsules with no labels.",
+    "pain reliever": "A single medicine that reduces pain; show one clear dose or bottle, distinct from the plural category.",
+    "pill / pills (tablets)": "Solid oral medicine tablets or capsules, not an electronic tablet.",
+    "tablet": "A single flat solid medicine dose in the healthcare sense, not a digital device.",
+    "dose": "One measured amount of medicine at a time, shown with a spoon or single marked cup but no readable numbers.",
+    "side effect": "An unintended mild effect after medicine, such as drowsiness; distinguish from an allergy rash.",
+    "allergy": "An immune reaction to a trigger such as pollen or an animal; show a mild reaction without labeling.",
+    "adhesive bandage": "A small adhesive strip placed over a minor cut; distinguish from a gauze wrap.",
+    "adhesive tape": "Medical tape securing gauze to skin, not office or packing tape.",
+    "bandage": "A gauze wrap supporting or covering an injured area; distinguish from a small adhesive strip.",
+    "cotton pads": "Flat, round absorbent pads used for cleaning or applying medicine.",
+    "cotton wool": "Loose, fluffy absorbent cotton used in first aid; not cotton fabric or a cotton plant.",
+    "first aid kit": "A compact box containing simple supplies such as gauze, tape and scissors.",
+    "safety pin": "A clasping pin used to secure a bandage or sling; keep the point covered.",
+    "scales (measure)": "A personal weighing scale used to check body weight, not luggage or a map scale.",
+    "scissors": "Small blunt-ended medical scissors used to trim gauze or tape, not kitchen or office cutting.",
+    "stethoscope": "A flexible listening instrument with chest piece and earpieces used by a clinician.",
+    "syringe": "A calibrated medical syringe without readable numbers; do not confuse it with the needle alone.",
+    "thermometer": "A clinical thermometer measuring body temperature, with no readable numbers.",
+    "tweezers": "A small paired-tip first-aid tool for grasping a splinter; draw the tool clearly.",
+    "drink water": "A patient drinking water during recovery; use a clear glass or bottle.",
+    "exercise": "Gentle, regular movement as part of health and recovery, not intense gym training.",
+    "feel better": "A clear improvement in comfort after rest or care, shown by relieved expression and upright posture.",
+    "gain weight": "A neutral, nonjudgmental increase in body weight; imply it with a scale and an upward trend, no numbers.",
+    "heal": "A wound or injury gradually closing; show a clean healing process without graphic detail.",
+    "lie down": "A person moving into or resting in a horizontal position for care.",
+    "lose weight": "A neutral, nonjudgmental decrease in body weight; imply it with a scale and a downward trend, no numbers.",
+    "recover": "A gradual return of strength after illness, distinct from one moment of feeling better.",
+    "rest": "A quiet pause that supports health; distinguish from being unable to sleep.",
+    "resuscitate": "A trained responder performing CPR on a practice manikin or fully clothed patient; non-graphic and respectful."
+  },
+  "glossary_context_notes": [
+    "Use the group title to override inaccurate Japanese glosses when the listed term is clearly a healthcare word.",
+    "“Medication / medicine (healthcare)” and “medication” are separate vocabulary keys; use distinct SVG source filenames to avoid a shared output path.",
+    "“Medication / medicine (healthcare)” and “medication” both normalize to the medication slug; name their source files medication-healthcare.svg and medication.svg.",
+    "When illustrating dose or syringe, omit readable measurements.",
+    "No medical card should imply guaranteed weight loss or weight gain; keep both concepts neutral."
+  ],
+  "existing_asset_triage": {
+    "lesson_69": "Reviewed prior same-term and directly related course assets across the SVG library. Reuse clear medical-role art; reject mismatched senses and adapt only when the target object remains unmistakable.",
+    "reviewed_candidates": [
+      {
+        "source": "34/doctor.svg",
+        "verdict": "KEEP / ADAPT for doctor",
+        "reason": "A clinician with a stethoscope and patient clearly teaches the healthcare noun."
+      },
+      {
+        "source": "68/doctor.svg",
+        "verdict": "KEEP / ADAPT for doctor",
+        "reason": "Same clear consultation; use one doctor source rather than duplicating both candidates."
+      },
+      {
+        "source": "34/nurse.svg",
+        "verdict": "KEEP / ADAPT for nurse",
+        "reason": "A uniformed bedside clinician with a stethoscope is a clear nursing-care scene."
+      },
+      {
+        "source": "34/paramedic.svg",
+        "verdict": "KEEP / ADAPT for paramedic",
+        "reason": "A red-uniformed emergency responder with a medical bag and stretcher shows field care."
+      },
+      {
+        "source": "18/patient.svg",
+        "verdict": "REJECT for patient (hospital)",
+        "reason": "It teaches the adjective patient through calm waiting, not a person receiving care."
+      },
+      {
+        "source": "43/patient.svg",
+        "verdict": "REJECT for patient (hospital)",
+        "reason": "It teaches a patient mentor giving a learner time, not a hospital patient."
+      },
+      {
+        "source": "23/medicine.svg",
+        "verdict": "KEEP / ADAPT for medicine",
+        "reason": "A medical classroom with anatomy models and books correctly teaches medicine as a field of study; it does not teach medication."
+      },
+      {
+        "source": "76/tablet.svg",
+        "verdict": "REJECT for tablet",
+        "reason": "It is an electronic tablet computer, not a medicine tablet."
+      },
+      {
+        "source": "37/adhesive-tape.svg",
+        "verdict": "REJECT for adhesive tape",
+        "reason": "It shows office tape attaching paper, not medical tape securing gauze."
+      },
+      {
+        "source": "46/scales.svg",
+        "verdict": "REJECT for scales (measure)",
+        "reason": "It shows luggage on a baggage scale; the healthcare group calls for a personal body-weight scale."
+      },
+      {
+        "source": "10/scissors.svg",
+        "verdict": "REJECT for scissors",
+        "reason": "It is a generic grooming or craft cutting scene, not a first-aid instrument."
+      },
+      {
+        "source": "37/scissors.svg",
+        "verdict": "REJECT for scissors",
+        "reason": "It repeats a nonmedical scissors scene with an unrelated clipping cue."
+      },
+      {
+        "source": "58/exercise.svg",
+        "verdict": "REJECT / ADAPT for exercise",
+        "reason": "It depicts a gym equipment set for fitness; the recovery group needs gentle health exercise."
+      },
+      {
+        "source": "58/do-exercise.svg",
+        "verdict": "REJECT for exercise",
+        "reason": "It teaches jumping-jack exercise as a leisure activity, not gentle health recovery."
+      },
+      {
+        "source": "68/asthma.svg",
+        "verdict": "REJECT as a full-card inhaler match",
+        "reason": "The inhaler is visible, but the whole card teaches asthma and lung symptoms; use its device only as reference."
+      },
+      {
+        "source": "68/allergies.svg",
+        "verdict": "KEEP / ADAPT for allergy",
+        "reason": "The person reacts to a nearby animal trigger, directly illustrating an allergy."
+      },
+      {
+        "source": "68/splinter.svg",
+        "verdict": "KEEP / ADAPT for tweezers",
+        "reason": "The clear tweezer tool is removing a splinter; adapt by making the tool the focal object."
+      },
+      {
+        "source": "15/cotton.svg",
+        "verdict": "REJECT for cotton wool",
+        "reason": "It shows a cotton plant and thread, not loose absorbent cotton used in first aid."
+      },
+      {
+        "source": "68/eczema.svg",
+        "verdict": "REJECT as an ointment match",
+        "reason": "The small treatment object is too ambiguous and the scene teaches eczema rather than ointment."
+      },
+      {
+        "source": "(none)",
+        "verdict": "DRAW for operation, physical therapy / physiotherapy, prescription, stitches and test results",
+        "reason": "No matching same-term or direct-context SVG candidates were found; the chapter-specific medical contexts are required."
+      },
+      {
+        "source": "(none)",
+        "verdict": "DRAW for treatment, vaccine, antiseptic and antiseptic wipes",
+        "reason": "No matching direct-context prior cards were found; each needs a specific medical care object or action."
+      },
+      {
+        "source": "68/asthma.svg",
+        "verdict": "REJECT as a full-card inhaler match; draw a device-focused card",
+        "reason": "The device appears only as a secondary prop while the scene teaches asthma and symptoms."
+      },
+      {
+        "source": "76/tablet.svg",
+        "verdict": "REJECT for 69:tablet",
+        "reason": "It clearly depicts an electronic tablet computer, while the healthcare term means a solid medicine dose."
+      },
+      {
+        "source": "68/eczema.svg",
+        "verdict": "REJECT for ointment",
+        "reason": "The topical object is too ambiguous and the full card teaches a skin condition rather than the medicine form."
+      },
+      {
+        "source": "23/medicine.svg",
+        "verdict": "KEEP / ADAPT for 69:medicine",
+        "reason": "The medical students, anatomy model and books clearly teach medicine as an academic field; adapted with the exact Lesson 69 key."
+      },
+      {
+        "source": "68/allergies.svg",
+        "verdict": "KEEP / ADAPT for 69:allergy",
+        "reason": "A person visibly reacts to a nearby animal trigger, which directly teaches the medical noun allergy."
+      },
+      {
+        "source": "37/adhesive-tape.svg",
+        "verdict": "REJECT for 69:adhesive tape",
+        "reason": "It uses office tape to attach paper and does not show medical tape securing gauze."
+      },
+      {
+        "source": "15/cotton.svg",
+        "verdict": "REJECT for 69:cotton wool",
+        "reason": "It shows cotton as a plant/textile material rather than loose absorbent first-aid cotton."
+      },
+      {
+        "source": "46/scales.svg",
+        "verdict": "REJECT for 69:scales (measure)",
+        "reason": "It shows luggage on a baggage scale; this lesson requires a personal body-weight scale."
+      },
+      {
+        "source": "10/scissors.svg; 37/scissors.svg",
+        "verdict": "REJECT for 69:scissors",
+        "reason": "These scenes use general grooming/craft or office contexts, not first-aid scissors."
+      },
+      {
+        "source": "68/splinter.svg",
+        "verdict": "KEEP / ADAPT for 69:tweezers",
+        "reason": "The pointed tweezer tool is clearly visible removing a splinter in a medical first-aid context."
+      },
+      {
+        "source": "32/drink.svg",
+        "verdict": "KEEP / ADAPT for 69:drink water",
+        "reason": "The scene clearly shows a person drinking from a glass of water; the exact Lesson 69 key adds the healthcare context."
+      },
+      {
+        "source": "68/fever.svg",
+        "verdict": "REJECT as a full-card thermometer match",
+        "reason": "The thermometer appears as a prop while the card teaches fever; a standalone clinical thermometer is clearer."
+      },
+      {
+        "source": "34/doctor.svg",
+        "verdict": "REJECT as a full-card stethoscope match",
+        "reason": "The stethoscope is a secondary detail on a doctor card, so it cannot teach the tool clearly enough."
+      },
+      {
+        "source": "(none)",
+        "verdict": "DRAW for syringe",
+        "reason": "No prior same-term medical syringe illustration was found; the injection card teaches an action rather than the complete instrument."
+      },
+      {
+        "source": "58/exercise.svg; 58/do-exercise.svg",
+        "verdict": "REJECT for 69:exercise",
+        "reason": "The prior scenes depict gym or leisure fitness, while this chapter needs gentle health and recovery movement."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "ambulance",
+      "clinic",
+      "doctor",
+      "doctor's office",
+      "hospital"
+    ],
+    [
+      "nurse",
+      "paramedic",
+      "patient (hospital)",
+      "pharmacist",
+      "pharmacy"
+    ],
+    [
+      "waiting room",
+      "appointment",
+      "blood test",
+      "injection",
+      "medical treatment"
+    ],
+    [
+      "operation",
+      "physical therapy / physiotherapy",
+      "prescription",
+      "stitches",
+      "test results"
+    ],
+    [
+      "treatment",
+      "vaccine",
+      "antiseptic",
+      "antiseptic wipes",
+      "inhaler"
+    ],
+    [
+      "medication / medicine (healthcare)",
+      "medication",
+      "medicine",
+      "ointment",
+      "painkillers"
+    ],
+    [
+      "pain reliever",
+      "pill / pills (tablets)",
+      "tablet",
+      "dose",
+      "side effect"
+    ],
+    [
+      "allergy",
+      "adhesive bandage",
+      "adhesive tape",
+      "bandage",
+      "cotton pads"
+    ],
+    [
+      "cotton wool",
+      "first aid kit",
+      "safety pin",
+      "scales (measure)",
+      "scissors"
+    ],
+    [
+      "stethoscope",
+      "syringe",
+      "thermometer",
+      "tweezers",
+      "drink water"
+    ],
+    [
+      "exercise",
+      "feel better",
+      "gain weight",
+      "heal",
+      "lie down"
+    ],
+    [
+      "lose weight",
+      "recover",
+      "rest",
+      "resuscitate"
+    ]
+  ],
+  "batch_review_notes": [
+    {
+      "batch": 1,
+      "terms": [
+        "ambulance",
+        "clinic",
+        "doctor",
+        "doctor's office",
+        "hospital"
+      ],
+      "candidate_search": "A clear doctor consultation was available in Lessons 34 and 68. No same-term sources were available for ambulance, clinic, doctor’s office or hospital.",
+      "visual_decisions": [
+        "Reused the clear Lesson 34 doctor consultation.",
+        "Separated a small walk-in clinic, private exam room and larger hospital building.",
+        "Used a cross, red stripe and flashing roof lights for an ambulance; removed an irrelevant smiling-sun decoration after full-size review."
+      ]
+    },
+    {
+      "batch": 2,
+      "terms": [
+        "nurse",
+        "paramedic",
+        "patient (hospital)",
+        "pharmacist",
+        "pharmacy"
+      ],
+      "candidate_search": "Kept clear Lesson 34 nurse and paramedic illustrations; rejected both patient adjective illustrations from Lessons 18 and 43. No pharmacist or pharmacy candidates were available.",
+      "visual_decisions": [
+        "Created a person receiving inpatient care in bed.",
+        "Separated pharmacist as a medicine-dispensing worker from pharmacy as shelves and counter."
+      ]
+    }
+  ]
+}

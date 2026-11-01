@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: female (Adjective / Noun)
+  CONTEXTUAL_DEFINITION: A female animal, following the Japanese gloss; shown with her ducklings.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive natural-family scene
+  SYNONYM_GUARD: A brown female mallard leads two ducklings at a pond, while the male drake appears as a muted context bird; this teaches biological sex without a human gender stereotype.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet pond edge in the family garden world.
+    - Context_Layer: Muted green-headed drake at a respectful distance.
+    - Focal_Layer: Female brown duck with two small ducklings.
+    - Details_Layer: Mottled feather pattern, webbed feet, and ripples.
+    - Lighting_Layer: Pale gold focus around the hen and her ducklings.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:female" data-archetype="expressive-natural-family-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#C88446;--c-secondary:#965D28;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="female-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="female-water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <filter id="female-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#female-sky)"/><path d="M0 135Q73 128 152 135T304 133V192H0Z" fill="#DCEAD6"/><ellipse cx="151" cy="158" rx="148" ry="35" fill="url(#female-water)" opacity=".78"/><path d="M0 137Q80 131 153 138T304 135" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M12 128Q26 104 40 127M265 127Q279 101 294 126" fill="#829A83" opacity=".7"/></g>
+  <g id="layer-context"><ellipse cx="250" cy="114" rx="37" ry="20" fill="#E3E8F0"/><ellipse cx="250" cy="105" rx="25" ry="17" fill="#6E8B86" stroke="#64748B" stroke-width="2"/><path d="M231 101Q234 82 251 82Q269 83 270 103L265 111L235 111Z" fill="#568552" stroke="#64748B" stroke-width="1.8"/><path d="M234 90Q250 77 266 91Q261 102 250 103Q239 102 234 90Z" fill="#829A83"/><path d="M268 103L282 107L269 111Z" fill="#C88446" stroke="#64748B" stroke-width="1.5"/><path d="M228 117Q250 123 273 117M232 125Q251 130 269 125" fill="none" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#female-shadow)"><ellipse cx="129" cy="110" rx="101" ry="72" fill="#FEF3C7" opacity=".35"/><ellipse cx="114" cy="132" rx="57" ry="23" fill="#A98255" stroke="#1E2A3B" stroke-width="2.5"/><path d="M70 127Q72 105 93 102Q111 95 129 105Q147 108 156 125Q144 137 118 141Q91 141 70 127Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.5"/><path d="M85 112Q96 104 107 110Q100 119 87 119ZM110 126Q122 116 134 122Q127 131 114 133M135 116Q145 111 151 120Q144 125 136 125" fill="#E3AC77" stroke="#965D28" stroke-width="1.2"/><path d="M82 118Q89 114 95 118M104 130Q111 125 118 128M129 119Q137 115 143 119" fill="none" stroke="#80513F" stroke-width="1.4"/><circle cx="63" cy="123" r="2.4" fill="#1E2A3B"/><path d="M51 125L37 130L52 133Z" fill="#D49B2A" stroke="#965D28" stroke-width="1.3"/><path d="M84 146L80 153M125 149L130 155" stroke="#C88446" stroke-width="6" stroke-linecap="round"/><path d="M78 153Q70 155 68 151M130 155Q138 157 142 153" fill="none" stroke="#D49B2A" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="187" cy="137" rx="26" ry="16" fill="#E3AC77" stroke="#1E2A3B" stroke-width="2"/><circle cx="174" cy="127" r="13" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="177" cy="126" r="1.8" fill="#1E2A3B"/><path d="M163 129L154 132L163 135Z" fill="#D49B2A"/><path d="M177 150L174 155M197 151L201 155" stroke="#D49B2A" stroke-width="4" stroke-linecap="round"/><ellipse cx="224" cy="145" rx="24" ry="15" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="212" cy="136" r="12" fill="#F5D27B" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="215" cy="135" r="1.7" fill="#1E2A3B"/><path d="M201 138L193 141L201 144Z" fill="#D49B2A"/><path d="M215 158L212 163M233 158L237 162" stroke="#D49B2A" stroke-width="3.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M81 102Q109 89 138 101" fill="none" stroke="#F2A472" stroke-width="2"/><path d="M164 111Q175 107 184 111M206 116Q216 112 225 117M153 146Q169 151 184 148M210 155Q225 159 241 156" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".8"/><circle cx="145" cy="95" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="130" cy="112" rx="108" ry="76" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".34"/><path d="M69 71Q111 52 151 63" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

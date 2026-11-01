@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: disgusting (Adjective)
+  CONTEXTUAL_DEFINITION: So unpleasant to see or smell that someone recoils, shown by mold-covered bread.
+  PEDAGOGICAL_ARCHETYPE: 3 (Repulsive object paired with a clear recoil)
+  SYNONYM_GUARD: Green mold and a hand over the nose show disgust, distinct from the broken but merely poor-quality mug.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple pale kitchen counter and tile wall.
+    - Context_Layer: Person leans away with palm covering nose.
+    - Focal_Layer: Moldy bread slice on a plate with visible green patches.
+    - Details_Layer: Tiny harmless flies and recoiling motion marks.
+    - Lighting_Layer: Cool counter shadow, no graphic detail.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:disgusting" data-archetype="expressive-bust">
+  <defs><linearGradient id="kitchen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#kitchen)"/><path d="M0 140 Q151 134 304 141 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="18" y="27" width="268" height="62" rx="7" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><path d="M18 58 L286 58 M85 27 L85 89 M152 27 L152 89 M219 27 L219 89" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="156" cy="161" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M32 150 Q35 124 57 120 Q79 124 81 150Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="57" cy="104" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M39 103 Q40 82 58 84 Q76 86 75 105 Q66 94 56 95Z" fill="#27364B"/><path d="M47 105 Q51 101 54 105 M60 105 Q64 101 67 105" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="59" cy="116" rx="4" ry="4.5" fill="#A34F47"/><path d="M46 111 Q36 106 33 97" fill="none" stroke="#F5BFA3" stroke-width="7" stroke-linecap="round"/><path d="M76 120 Q92 112 99 103 Q103 98 108 102 Q111 106 107 112 L84 136" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><ellipse cx="190" cy="146" rx="72" ry="11" fill="#CBD5E1"/><path d="M126 138 Q137 122 163 118 Q184 107 217 116 Q238 123 251 139 Q218 152 183 151 Q151 152 126 138Z" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/><path d="M148 139 L148 110 Q149 99 161 98 L195 98 Q207 100 208 111 L208 139 Q178 145 148 139Z" fill="#C88446" stroke="#8D552E" stroke-width="2.6"/><path d="M153 136 L153 111 Q154 104 163 103 L193 103 Q202 104 203 112 L203 137 Q178 141 153 136Z" fill="#E3AC77" stroke="#F5D9A7" stroke-width="1.4"/><path d="M157 117 Q166 109 175 115 M182 121 Q191 112 199 119 M165 131 Q174 124 182 131" fill="none" stroke="#7FB07A" stroke-width="5" stroke-linecap="round"/><circle cx="160" cy="119" r="3.5" fill="#527748"/><circle cx="190" cy="129" r="4" fill="#527748"/><circle cx="178" cy="111" r="2.7" fill="#527748"/><path d="M147 107 Q153 101 160 106 M196 106 Q204 101 209 109" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M116 83 L122 73 L128 83 L138 88 L128 93 L122 103 L116 93 L106 88Z" fill="#7FB07A"/><path d="M235 79 Q239 73 243 79 M243 78 L248 74 M228 86 L233 82" fill="none" stroke="#27364B" stroke-width="1.7" stroke-linecap="round"/><path d="M110 97 Q101 93 104 87 M114 102 Q105 101 106 96" fill="none" stroke="#8B5CA8" stroke-width="2.4" stroke-linecap="round"/><circle cx="249" cy="92" r="2.4" fill="#27364B"/></g>
+  <g id="layer-lighting"><path d="M141 139 Q183 148 225 137 M145 122 Q151 113 163 112" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

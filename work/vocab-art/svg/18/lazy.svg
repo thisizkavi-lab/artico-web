@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: lazy (Adjective)
+  CONTEXTUAL_DEFINITION: Avoiding effort or work that needs to be done.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The person lounges while an unvacuumed rug, laundry basket, and untouched broom show chores being neglected; unlike laid-back, there is work waiting.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Living room with rumpled rug and chore items.
+    - Context_Layer: Broom, laundry basket, dusty rug and untouched dishes.
+    - Focal_Layer: Person sprawls on a sofa with one hand dangling.
+    - Details_Layer: Dust bunnies, unmade cushion, folded arms and idle gaze.
+    - Lighting_Layer: Soft, slightly muted light over the neglected chores.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:lazy" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#7B8A9E;--c-secondary:#526173;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="sofa" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#7B8A9E"/><stop offset="1" stop-color="#526173"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M19 129Q21 90 51 90H196Q221 90 223 128V149H19Z" fill="url(#sofa)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M35 111H201M48 130H190" stroke="#AAB5C3" stroke-width="1.5"/><path d="M36 148V160M206 148V160" stroke="#526173" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M247 132L273 59" stroke="#805333" stroke-width="6" stroke-linecap="round"/><path d="M269 56L286 56L280 76H260Z" fill="#D9A441" stroke="#805333" stroke-width="1.8"/><path d="M25 154Q55 143 89 154L86 163H26Z" fill="#B9C9D3" opacity=".8"/><path d="M37 149Q43 145 47 150M57 149Q62 144 67 150M75 151Q80 146 84 151" stroke="#7B8A9E" stroke-width="2"/><rect x="218" y="126" width="36" height="30" rx="4" fill="#D9857F" stroke="#A95059" stroke-width="2"/><path d="M223 126Q223 116 236 116Q249 116 249 126M219 134H254" fill="none" stroke="#A95059" stroke-width="1.8"/><path d="M233 40H284" stroke="#7B8A9E" stroke-width="2"/><circle cx="232" cy="37" r="3" fill="#7B8A9E"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="129" cy="105" rx="84" ry="60" fill="#FEF3C7" opacity=".35"/><circle cx="110" cy="73" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.4"/><path d="M90 73Q91 51 110 52Q131 53 130 75L123 80Q119 64 108 64Q98 65 92 81Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M91 96Q111 88 134 96L169 116L151 139L104 126Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M98 102L82 115L71 113M132 100L152 108L164 102" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M98 102L83 115L72 113M132 100L152 108L163 102" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M110 126L106 150H124L139 130M148 134L175 148H190L167 119" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M95 71Q101 74 105 71M113 71Q118 74 122 71M99 83Q110 86 121 82" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M74 107Q67 106 64 110" stroke="#C98961" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M260 92Q267 87 273 92M265 99Q272 94 278 99" fill="none" stroke="#D9A441" stroke-width="1.7"/><path d="M43 78L52 78M47 73L47 83M175 76L184 76M179 71L179 81" stroke="#7B8A9E" stroke-width="1.8"/><path d="M195 144Q202 139 208 144M198 150Q204 146 210 150" fill="none" stroke="#7B8A9E" stroke-width="2"/><circle cx="205" cy="83" r="2.4" fill="#D9A441"/><path d="M85 59Q94 54 102 59" fill="none" stroke="#FEF9C3" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><path d="M99 57Q109 53 119 57" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".58"/><ellipse cx="129" cy="105" rx="84" ry="60" fill="none" stroke="#7B8A9E" stroke-width="1.1" stroke-dasharray="3 5" opacity=".28"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: jigsaw puzzle (Noun)
+  CONTEXTUAL_DEFINITION: A picture divided into interlocking pieces that are fitted together.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Separate shaped cardboard pieces and one clear gap show a jigsaw puzzle, not a flat picture or generic board game.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet table and softly lit playroom.
+    - Context_Layer: Child's hands sort puzzle pieces at the edge.
+    - Focal_Layer: Partly assembled rectangular image made from interlocking pieces.
+    - Details_Layer: One vacant socket and loose pieces.
+    - Lighting_Layer: Soft light highlights the fitted edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:jigsaw puzzle" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="jigsaw-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="jigsaw-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#jigsaw-bg)"/><path d="M0 151Q78 146 152 151T304 149V192H0Z" fill="#DCCFB9"/><path d="M20 29H90V81H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 30V80M21 55H89" stroke="#FFFFFF" stroke-width="2.4"/><path d="M0 152H304" stroke="#9B7D5E" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M4 111Q21 102 38 109L57 123L46 132L24 121L7 127Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M13 116L30 126" stroke="#C98961" stroke-width="4" stroke-linecap="round"/><path d="M300 112Q283 101 267 108L249 122L260 132L281 121L297 127Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.7"/><path d="M291 116L274 126" stroke="#C98961" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#jigsaw-shadow)"><rect x="75" y="37" width="154" height="112" rx="5" fill="#F5E6BD" stroke="#1E2A3B" stroke-width="2.4"/><path d="M81 130L81 92L109 72L134 85L155 56L190 70L222 53V143H81Z" fill="#AFC5DA" stroke="#5479AC" stroke-width="1.4"/><circle cx="184" cy="98" r="15" fill="#F0C971" stroke="#A96B46" stroke-width="1.5"/><path d="M81 121L107 99L127 112L148 94L169 110L187 97L222 117V143H81Z" fill="#91A77C" stroke="#5479AC" stroke-width="1.4"/><path d="M118 38V72Q118 78 124 78Q130 78 130 72V38M173 38V71Q173 77 179 77Q185 77 185 71V38M75 91H108Q114 91 114 97Q114 103 108 103H75M190 102H229M147 117V149" fill="none" stroke="#315782" stroke-width="2.3" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M47 124L57 115L70 121L70 135L58 141L47 135Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="57" cy="121" r="4" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.2"/><path d="M235 116L244 108L254 113L255 124L244 129L235 125Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="254" cy="119" r="3.5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.1"/><path d="M108 63L109 70M110 69L117 70M165 105L172 106M181 124L182 131" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="93" rx="98" ry="70" fill="#FEF9C3" opacity=".1"/><path d="M85 31Q151 18 219 31" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 7" opacity=".55"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: camel (noun)
+  CONTEXTUAL_DEFINITION: A free-ranging two-humped camel native to cold, rocky Central Asian steppe.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in natural habitat
+  SYNONYM_GUARD: Two humps and a shaggy coat distinguish this wild Bactrian camel from the one-humped travel camel in existing Lesson 44 art; no rider, saddle, or reins appear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Side profile facing right; body x=69..203 y=81..127, two rounded humps at x=112 and 158 y=55..91, long narrow neck rises to head at x=232,y=60, four long legs reach y=157. Use rocky steppe, no human or tack.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:camel" data-archetype="wild-bactrian-camel">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#C88446;--c-secondary:#8B5E3C;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="camel-steppe" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#EAF1F2"/><stop offset="1" stop-color="#F7EEDB"/></linearGradient>
+    <linearGradient id="camel-wild-coat" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D6A16C"/><stop offset="1" stop-color="#875A3B"/></linearGradient>
+    <filter id="camel-wild-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.4" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#camel-steppe)"/><path d="M0 118 L50 76 L96 117 L147 66 L196 116 L244 80 L304 118 V192 H0Z" fill="#BFC7B7"/><path d="M0 139 Q68 127 138 139 T252 137 Q283 132 304 138 V192 H0Z" fill="#E5D1AD"/><path d="M0 157 Q72 149 148 157 T304 154 V192 H0Z" fill="#D1BA91"/><ellipse cx="149" cy="164" rx="111" ry="8" fill="#BCA77F" opacity=".48"/></g>
+  <g id="layer-context"><path d="M42 139 L59 120 L73 140 M231 139 L246 117 L262 140" fill="#AFAC9B" stroke="#8E927F" stroke-width="1.3"/><path d="M25 146 l5-20 m-5 13-7-6 m7 10 7-8 M277 145 l4-19 m-4 13-6-6 m6 10 8-8" fill="none" stroke="#819069" stroke-width="1.7" stroke-linecap="round"/><path d="M28 50 Q78 42 115 50 M181 45 Q228 39 274 49" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".7"/></g>
+  <g id="layer-focal" filter="url(#camel-wild-shadow)"><path d="M69 101 Q81 84 105 82 Q116 69 127 69 Q143 69 151 83 Q163 70 177 74 Q192 78 196 96 Q210 92 219 98 L229 81 Q232 71 240 67 L252 68 L247 75 L240 76 L235 95 Q231 105 220 109 Q216 126 197 132 L103 134 Q80 129 69 115Z" fill="url(#camel-wild-coat)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M105 84 Q106 62 119 53 Q130 48 138 58 Q145 66 146 88 Q129 98 105 84Z" fill="#B98052" stroke="#1E2A3B" stroke-width="2"/><path d="M149 85 Q152 61 165 54 Q177 50 184 61 Q191 71 188 90 Q169 98 149 85Z" fill="#B98052" stroke="#1E2A3B" stroke-width="2"/><path d="M92 125 L89 151 Q88 159 78 158 L70 155 L75 150 L82 151 L84 124 M113 130 L111 153 Q112 160 121 159 L128 156 L123 151 L119 152 L120 131 M181 130 L185 153 Q188 160 197 158 L204 154 L199 150 L193 152 L190 128 M204 120 L215 146 Q219 152 228 148 L234 143 L228 141 L223 143 L214 115" fill="none" stroke="#875A3B" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M71 156 Q79 160 89 156 M111 157 Q120 161 130 156 M187 156 Q196 161 205 155 M217 148 Q225 152 234 146" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/><path d="M239 68 Q246 66 251 69" fill="none" stroke="#1E2A3B" stroke-width="1.3" stroke-linecap="round"/><circle cx="241" cy="72" r="1.7" fill="#1E2A3B"/><path d="M244 79 Q249 82 254 78" fill="none" stroke="#70482F" stroke-width="1.2" stroke-linecap="round"/><path d="M118 58 Q125 53 132 58 M163 60 Q170 55 177 60" fill="none" stroke="#E4BD91" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M77 93 Q91 84 103 87 M192 95 Q204 93 213 99" fill="none" stroke="#E3BC8E" stroke-width="1.3"/><path d="M105 111 Q114 120 124 117 M149 112 Q159 122 170 118" fill="none" stroke="#D5AA7A" stroke-width="1.2"/><path d="M53 146 l5-4 m201 1 5-4" fill="none" stroke="#9F967D" stroke-width="1.2"/><circle cx="139" cy="104" r="1.5" fill="#F2D1A4"/></g>
+  <g id="layer-lighting"><path d="M106 82 Q113 66 121 58" fill="none" stroke="#E5BE94" stroke-width="1.5" opacity=".85"/><path d="M153 84 Q159 67 168 59" fill="none" stroke="#E5BE94" stroke-width="1.4" opacity=".8"/><ellipse cx="144" cy="83" rx="49" ry="22" fill="#FFFFFF" opacity=".07"/></g>
+</svg>

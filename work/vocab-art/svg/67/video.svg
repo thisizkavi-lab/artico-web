@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: video
+ CONTEXTUAL_DEFINITION: Moving visual footage displayed as a series of images on a screen.
+ PEDAGOGICAL_ARCHETYPE: screen showing sequential motion frames from a video
+ SYNONYM_GUARD: Make moving footage clear through a play symbol, filmstrip frames and motion cues; distinguish it from a single still photograph.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A large player screen shows a runner in different positions across a short filmstrip of sequential frames, with a simple play triangle and a small recording camera beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:video" data-archetype="moving footage displayed on a screen">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M37 26H244V128H37Z" fill="#26384A"/><path d="M46 35H235V117H46Z" fill="#597D8B"/>
+  <path d="M47 93Q85 76 120 91T234 88V117H47Z" fill="#798C72"/><circle cx="205" cy="52" r="8" fill="#D6A64C"/>
+  <path d="M120 128L127 137H154L161 128Z" fill="#64777C"/><path d="M105 137H176V143H105Z" fill="#26384A"/>
+  <path d="M48 148H265V176H48Z" fill="#26384A"/><path d="M55 153H258V171H55Z" fill="#E6DED1"/>
+ </g>
+ <g id="layer-context">
+  <!-- frame-by-frame progression below the player -->
+  <path d="M62 156H99V168H62Z" fill="#597D8B"/><path d="M104 156H141V168H104Z" fill="#B85E5A"/><path d="M146 156H183V168H146Z" fill="#798C72"/><path d="M188 156H225V168H188Z" fill="#D6A64C"/>
+  <path d="M69 164L76 159L82 163L90 157M111 164L118 158L124 162L132 156M153 165L160 159L166 162L174 156M195 164L202 158L208 162L216 157" stroke="#F6E5CE" stroke-width="1" fill="none"/>
+  <path d="M244 45H256L270 35V61L256 51H244Z" fill="#26384A" stroke="#D6A64C" stroke-width="1"/><path d="M250 68L255 73L250 78M261 68L266 73L261 78" fill="none" stroke="#B85E5A" stroke-width="1.4"/>
+  <path d="M51 41H226" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-focal">
+  <!-- play control -->
+  <circle cx="140" cy="75" r="20" fill="#26384A" opacity=".75" stroke="#F6E5CE" stroke-width="1.2"/><path d="M135 64L151 75L135 86Z" fill="#D6A64C"/>
+  <!-- same runner appears at successive positions in the video -->
+  <circle cx="76" cy="103" r="4" fill="#D29A78"/><path d="M72 103Q73 97 77 98Q81 99 80 104L77 101H73Z" fill="#26384A"/><path d="M72 108L80 108L82 120H70Z" fill="#B85E5A"/><path d="M72 111L67 115M79 111L84 107M73 119L68 124M80 119L86 121" stroke="#26384A" stroke-width="1.5"/>
+  <circle cx="111" cy="102" r="4" fill="#D29A78"/><path d="M107 102Q108 96 112 97Q116 98 115 103L112 100H108Z" fill="#26384A"/><path d="M107 107L115 107L117 119H105Z" fill="#B85E5A"/><path d="M107 110L102 113M114 110L120 106M108 118L103 123M115 118L121 120" stroke="#26384A" stroke-width="1.5"/>
+  <circle cx="191" cy="101" r="4" fill="#D29A78"/><path d="M187 101Q188 95 192 96Q196 97 195 102L192 99H188Z" fill="#26384A"/><path d="M187 106L195 106L197 118H185Z" fill="#B85E5A"/><path d="M187 109L182 113M194 109L200 105M188 117L183 122M195 117L201 119" stroke="#26384A" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details">
+  <path d="M73 47H102M73 51H92M174 45H194" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="62" cy="42" r="1.6" fill="#D6A64C"/><circle cx="217" cy="69" r="1.7" fill="#B85E5A"/>
+  <path d="M62 126H108M177 126H225" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M87 99L93 96M123 96L129 93M168 94L174 91" stroke="#D6A64C" stroke-width="1.2"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="142" cy="78" rx="93" ry="61" fill="#E7C66B" opacity=".08"/><path d="M43 30L60 49M240 30L222 50" stroke="#FFF1C7" stroke-width="1.1" opacity=".55"/>
+  <path d="M49 174H258" stroke="#FFF7E4" stroke-width="1" opacity=".6"/>
+ </g>
+</svg>

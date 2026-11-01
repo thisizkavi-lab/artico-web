@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: set your sights on something (idiom; career goal)
+  CONTEXTUAL_DEFINITION: Decide that you want to achieve a particular professional goal.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker deliberately focusing on a clearly higher career target, with a route connecting them to it.
+  PEDAGOGICAL_ARCHETYPE: 5 - Goal / progression diagram
+  SYNONYM_GUARD: This is an ambition, not a shooting scene or merely noticing something; keep the target a prestigious work role.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place an aspirant worker with compact binoculars at x=72..135,y=83..145, aimed toward a gold-lit executive office/briefcase emblem at x=217,y=50. Connect their gaze to the goal with a clean dashed blue arc that rises through two small career steps.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:set your sights on something" data-archetype="career-goal">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="sights-lens" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#6F93C5"/></linearGradient>
+    <linearGradient id="sights-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="sights-goal"><stop stop-color="#FFF1B9" stop-opacity=".9"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="sights-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="sights-folder" d="M204 75 H246 Q250 75 250 79 V111 H199 V82 Q199 75 204 75 Z"/>
+    <clipPath id="sights-folder-clip"><use href="#sights-folder"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="165" rx="105" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Stepped route toward a senior workspace -->
+  <g id="layer-context"><path d="M35 151 H265" stroke="#C88446" stroke-width="2"/><path d="M39 150 H87 V140 H122 V128 H157 V116 H194 V104 H236 V151 Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M49 146 H77 M97 136 H113 M132 124 H148 M168 112 H185" stroke="#FFFFFF" stroke-width="1.8"/><rect x="226" y="46" width="38" height="58" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.6"/><path d="M232 57 H258 M232 64 H253" stroke="#94A3B8" stroke-width="1.2"/><path d="M237 104 V149 M254 104 V149" stroke="#64748B" stroke-width="2"/><path d="M228 48 Q245 36 262 48" fill="#DCECFB" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 3. Worker deliberately sights a defined professional goal -->
+  <g id="layer-focal" filter="url(#sights-shadow)"><path d="M82 134 Q83 111 98 106 L101 95 Q96 89 99 80 Q103 70 114 72 Q125 74 125 85 Q125 94 118 99 L121 108 Q137 113 139 134 L134 149 H89 Z" fill="url(#sights-suit)" stroke="#1E2A3B" stroke-width="2.4"/><ellipse cx="112" cy="85" rx="9" ry="12" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M103 83 Q104 71 114 72 Q123 73 124 83 Q117 77 111 79 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="116" cy="85" r="1.1" fill="#1E2A3B"/><path d="M114 90 Q117 91 119 89" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><path d="M105 105 L112 113 L119 105 L118 130 H107 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.4"/><path d="M118 107 Q131 99 145 87 L151 93 Q140 109 124 117 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M143 87 Q150 82 156 86 L158 92 L151 97 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><rect x="149" y="74" width="21" height="17" rx="5" transform="rotate(-24 149 74)" fill="url(#sights-lens)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="153" cy="83" rx="7" ry="9" transform="rotate(-24 153 83)" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="168" cy="76" rx="7" ry="9" transform="rotate(-24 168 76)" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.6"/><path d="M158 74 L163 70" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><use href="#sights-folder" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.2"/><g clip-path="url(#sights-folder-clip)"><path d="M197 89 Q223 77 253 90 V114 H197Z" fill="#D49B2A"/><path d="M205 81 H239" stroke="#FFF1B9" stroke-width="2"/></g><use href="#sights-folder" fill="none" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <!-- 4. The intended job goal is distinct from the route itself -->
+  <g id="layer-details"><path d="M174 73 C191 62 202 57 221 56" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-dasharray="4 4"/><path d="M215 51 L224 56 L215 61 Z" fill="#4A72B2"/><circle cx="246" cy="54" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M246 48 L248 52 L252 52 L249 55 L250 59 L246 57 L243 59 L244 55 L241 52 L245 52 Z" fill="#FFFFFF" stroke="#965D28" stroke-width=".7"/><path d="M204 120 V134 H216 V120" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M207 123 H213 M207 127 H213" stroke="#7FB07A" stroke-width="1.2"/></g>
+  <!-- 5. Gold halo marks the chosen career destination -->
+  <g id="layer-lighting"><ellipse cx="245" cy="70" rx="45" ry="40" fill="url(#sights-goal)"/><ellipse cx="245" cy="74" rx="26" ry="32" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M232 45 H244" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M179 64 L185 58 M190 53 L194 49" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

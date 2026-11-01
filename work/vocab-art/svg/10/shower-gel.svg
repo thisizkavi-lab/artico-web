@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: shower gel (Noun)
+  CONTEXTUAL_DEFINITION: A liquid soap used on the body while taking a shower.
+  PEDAGOGICAL_ARCHETYPE: 1 (Product with use cue)
+  SYNONYM_GUARD: Use a clear pump bottle containing colored gel with a shower puff beside it; shampoo stays paired with hair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale shower tiles.
+    - Context_Layer: Small water drops and a bath pouf.
+    - Focal_Layer: Transparent pump bottle with visible shower gel.
+    - Details_Layer: Foam bubbles and pump spout.
+    - Lighting_Layer: Watery clear highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:shower gel" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="151" cy="168" rx="74" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><circle cx="220" cy="107" r="25" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M220 82 Q210 99 220 106 Q230 112 220 132 M196 107 Q213 96 220 107 Q227 118 244 107 M204 89 Q219 101 220 107 Q221 113 236 125 M236 89 Q221 101 220 107 Q219 113 204 125" fill="none" stroke="#FFFFFF" stroke-width="2.2"/><path d="M217 132 V143 M223 132 V143" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M74 67 Q74 59 83 59 H149 Q158 59 158 67 V139 Q158 147 149 147 H83 Q74 147 74 139Z" fill="#A8D2E5" fill-opacity="0.62" stroke="#1E2A3B" stroke-width="2.5"/><path d="M82 94 H150 V133 Q150 140 143 140 H89 Q82 140 82 133Z" fill="#8B5CA8" fill-opacity="0.62"/><path d="M86 59 V48 H146 V59" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M103 48 V37 H142 V43 H121 V48" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M107 38 H145" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><path d="M90 101 H143" stroke="#D9B8E4" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M85 69 H147 M85 76 H147" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="166" cy="67" r="3" fill="#FFFFFF"/><circle cx="174" cy="80" r="2.5" fill="#FFFFFF"/><circle cx="166" cy="91" r="2" fill="#FFFFFF"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

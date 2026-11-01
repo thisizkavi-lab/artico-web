@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: once in a blue moon (Phrase)
+  CONTEXTUAL_DEFINITION: Something that happens very rarely.
+  PEDAGOGICAL_ARCHETYPE: 4 (An exceptional event contrasted with ordinary repeats)
+  SYNONYM_GUARD: One vivid blue full moon appears among faded ordinary moon phases while observers react to the rare sight.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Deep evening sky and low hills.
+    - Context_Layer: Two stargazers point toward the sky.
+    - Focal_Layer: Single bright blue moon among pale crescent phases.
+    - Details_Layer: Sparse stars and a rare-event glow.
+    - Lighting_Layer: Blue halo around the full moon.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:once in a blue moon" data-archetype="contrast-reference">
+  <defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#27364B"/><stop offset="1" stop-color="#5479AC"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect x="14" y="13" width="276" height="166" rx="18" fill="url(#night)"/><path d="M14 145 L48 120 L91 142 L144 112 L195 144 L244 119 L290 144 L290 179 L14 179Z" fill="#3D5F91"/><path d="M14 151 Q152 145 290 151 L290 179 L14 179Z" fill="#27364B"/><ellipse cx="152" cy="166" rx="112" ry="8" fill="#1E2A3B" opacity="0.75"/></g>
+  <g id="layer-context"><path d="M31 151 Q34 129 51 126 Q68 129 70 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="51" cy="112" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M36 111 Q37 94 52 96 Q65 97 66 112 Q58 105 50 106Z" fill="#27364B"/><path d="M68 137 Q84 129 97 115" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M91 116 Q98 109 103 112 L107 117 L100 123 L94 123Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/><path d="M221 151 Q224 129 241 126 Q258 129 260 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="241" cy="112" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M226 111 Q227 94 242 96 Q255 97 256 112 Q248 105 240 106Z" fill="#27364B"/></g>
+  <g id="layer-focal"><circle cx="152" cy="66" r="36" fill="#8EB0DE" opacity="0.22"/><circle cx="152" cy="66" r="28" fill="#6799D0" stroke="#DCECFB" stroke-width="2.5"/><path d="M151 41 C138 45 133 57 137 69 C141 81 153 88 165 86 C150 77 148 53 159 43Z" fill="#9CC0E8" opacity="0.72"/><path d="M126 48 C117 55 117 68 126 76 M178 48 C187 55 187 68 178 76" fill="none" stroke="#CBD5E1" stroke-width="3" opacity="0.42"/></g>
+  <g id="layer-details"><circle cx="59" cy="39" r="2.4" fill="#F2C14E"/><circle cx="89" cy="61" r="1.8" fill="#FFFFFF"/><circle cx="196" cy="42" r="2" fill="#F2C14E"/><circle cx="213" cy="81" r="2.2" fill="#FFFFFF"/><path d="M111 47 Q118 34 125 47 Q131 58 138 47" fill="none" stroke="#CBD5E1" stroke-width="3" opacity="0.55"/><path d="M167 105 Q174 94 181 105 Q188 116 195 105" fill="none" stroke="#CBD5E1" stroke-width="3" opacity="0.4"/><path d="M148 27 L153 17 L158 27 L168 32 L158 37 L153 47 L148 37 L138 32Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><circle cx="152" cy="66" r="35" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.9"/></g>
+</svg>

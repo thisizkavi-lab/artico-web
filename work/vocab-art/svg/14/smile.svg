@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: smile (Verb)
+  CONTEXTUAL_DEFINITION: To make a friendly happy expression with the corners of the mouth lifted.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust
+  SYNONYM_GUARD: A small closed-mouth smile; grin shows teeth and laugh has an open mouth.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft front-facing character portrait.
+    - Context_Layer: Hair and clothing remain quiet.
+    - Focal_Layer: Closed lips curve gently upward at both corners.
+    - Details_Layer: Relaxed bright eyes keep the mood friendly.
+    - Lighting_Layer: Warm halo sits behind the lower face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:smile" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="174" rx="92" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M84 178Q91 144 117 137H187Q213 145 220 178Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M96 78Q92 35 126 20Q159 5 192 26Q214 43 205 89L192 129Q177 151 151 150Q123 147 108 122Z" fill="#F0C5A7" stroke="#64748B" stroke-width="2.3"/><path d="M96 72Q93 36 125 18Q160 1 193 24Q215 39 205 74L191 58Q162 69 144 52Q119 68 96 72Z" fill="#6F625B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M113 88Q124 79 137 86M166 86Q180 78 192 88" fill="none" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="126" cy="92" rx="3.1" ry="4" fill="#1E2A3B"/><ellipse cx="180" cy="92" rx="3.1" ry="4" fill="#1E2A3B"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="113" rx="40" ry="23" fill="#FEF3C7" opacity=".38"/><path d="M136 114Q152 123 169 113" fill="none" stroke="#8E5B4A" stroke-width="3" stroke-linecap="round"/><path d="M135 112Q152 122 170 111" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M107 97L113 101M194 97L188 101" stroke="#C88E74" stroke-width="1.8"/><path d="M146 96Q151 104 149 108" fill="none" stroke="#C88E74" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="114" rx="33" ry="17" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

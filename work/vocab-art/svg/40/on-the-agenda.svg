@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: on the agenda
+  CONTEXTUAL_DEFINITION: Included as a topic planned for discussion at the meeting.
+  PEDAGOGICAL_ART_DIRECTOR: Show one agenda topic currently being discussed, visibly highlighted within the planned list.
+  PEDAGOGICAL_ARCHETYPE: 5 - Scheduled topic in focus
+  SYNONYM_GUARD: The topic is already listed and selected for discussion; it is not a later action item or an unplanned AOB topic.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a wall agenda board at x=73..221, y=34..121 with four rows; highlight the second row with a gold band and one simple topic icon. Put a standing presenter at x=38..77 pointing toward that row and two seated listeners, the right one inset near x=240..282, behind a table at y=132.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:on the agenda" data-archetype="scheduled-topic-focus">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="agenda-focus-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="agenda-focus-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="agenda-focus-halo"><stop stop-color="#FFF1B9" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="agenda-focus-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="25" y="25" width="254" height="101" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M28 132 H276 V145 H28 Z" fill="url(#agenda-focus-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M42 145 V155 M262 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#agenda-focus-shadow)"><rect x="73" y="34" width="148" height="88" rx="3" fill="url(#agenda-focus-board)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M85 45 H210 M85 51 H197" stroke="#94A3B8" stroke-width="1.1"/><path d="M82 57 H212 V73 H82 Z" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1"/><circle cx="94" cy="65" r="4" fill="#F2C14E" stroke="#D99A2B" stroke-width=".8"/><path d="M104 63 H199 M104 68 H189" stroke="#64748B" stroke-width="1"/><path d="M87 81 H208 M87 96 H208 M87 111 H208" stroke="#CBD5E1" stroke-width="1"/><circle cx="95" cy="88" r="3.5" fill="#8EB0DE"/><path d="M104 87 H192" stroke="#64748B" stroke-width="1"/><circle cx="95" cy="103" r="3.5" fill="#A8D4A2"/><path d="M104 102 H192" stroke="#64748B" stroke-width="1"/><circle cx="47" cy="114" r="8" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M38 130 Q39 119 47 118 Q56 120 57 131 H39 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M52 122 L70 109 L74 112 L60 127" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M205 127 Q207 109 217 105 L218 97 Q214 93 216 86 Q223 78 232 81 Q240 84 237 94 L235 101 Q247 106 249 127 L246 135 H209 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="228" cy="88" rx="7" ry="9" fill="#B97851" stroke="#1E2A3B" stroke-width="1"/><path d="M221 86 Q223 79 229 79 Q237 80 239 86 Q232 83 226 84 Z" fill="#242C3B"/><path d="M258 127 Q260 109 270 105 L271 97 Q267 93 269 86 Q276 78 285 81 Q293 84 290 94 L288 101 Q300 106 302 127 L299 135 H262 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.5" transform="translate(-18 0)"/><ellipse cx="281" cy="88" rx="7" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1" transform="translate(-18 0)"/><path d="M274 86 Q276 79 282 79 Q290 80 292 86 Q285 83 279 84 Z" fill="#3D342D" transform="translate(-18 0)"/></g>
+  <g id="layer-details"><path d="M66 110 L81 65" stroke="#D97706" stroke-width="1.6" stroke-dasharray="3 3"/><circle cx="81" cy="65" r="2.4" fill="#F2C14E"/><path d="M70 49 L74 45 M220 47 L224 43" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/><path d="M114 131 H181" stroke="#FFE2A8" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="147" cy="72" rx="83" ry="58" fill="url(#agenda-focus-halo)" opacity=".22"/><path d="M84 40 H210" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

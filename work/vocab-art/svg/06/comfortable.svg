@@ -1,0 +1,44 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: comfortable (Adjective)
+  CONTEXTUAL_DEFINITION: Physically relaxed and well supported, shown by someone settling into a cushioned armchair with slippers.
+  PEDAGOGICAL_ARCHETYPE: 3 (Supportive setting plus a loose, at-ease posture)
+  SYNONYM_GUARD: A cushioned chair, tucked blanket and slippers make comfort concrete, distinct from the outdoor calm in relaxing.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cozy living room with pale rug and warm floor.
+    - Context_Layer: Person reclines inside a large cushioned armchair.
+    - Focal_Layer: Bent legs rest on a soft footstool.
+    - Details_Layer: Small mug, blanket folds and soft lamp glow.
+    - Lighting_Layer: Warm highlights across the upholstery.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:comfortable" data-archetype="expressive-bust">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 145 Q151 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="154" cy="165" rx="111" ry="8" fill="#DDD4C3"/><path d="M245 59 L252 31 L259 59 M241 60 L264 60" stroke="#8D552E" stroke-width="3" stroke-linecap="round"/><path d="M234 59 Q252 49 270 59 L268 95 L236 95Z" fill="#F2C14E" opacity="0.22"/></g>
+  <g id="layer-context">
+    <path d="M82 144 L82 91 Q83 65 107 64 L154 64 Q181 66 183 92 L183 144Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.6"/>
+    <path d="M92 112 Q130 101 173 113 L179 141 Q139 151 96 141Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.1"/>
+    <path d="M77 122 Q93 116 111 123 L112 144 Q95 151 78 143Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M158 122 Q177 116 195 124 L196 143 Q178 151 160 143Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M95 136 L91 157 M180 138 L184 157" stroke="#8D552E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="128" cy="71" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M110 70 Q111 51 129 52 Q146 53 146 72 Q137 62 127 63 Q118 68 110 70Z" fill="#6B4B35"/>
+    <path d="M119 72 Q123 68 126 72 M132 72 Q136 68 139 72" fill="none" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M121 81 Q128 87 136 80" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M124 89 L122 101 L143 105 L148 91" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M119 101 Q139 96 158 109 L172 126 Q160 135 144 131 L122 122Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M157 112 Q174 112 187 124 L183 130 Q166 127 151 121" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M141 127 Q160 127 175 136 L195 139 Q204 141 203 147 Q199 153 190 150 L166 148 Q149 146 137 139Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M190 138 Q198 134 207 139 L215 146 Q208 152 197 151 L188 147Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M89 131 Q116 127 141 136 L138 146 Q111 149 92 143Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.6"/>
+    <path d="M206 151 L257 151 L253 160 L203 160Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M214 160 L211 166 M248 160 L251 166" stroke="#8D552E" stroke-width="2.7" stroke-linecap="round"/>
+    <path d="M40 145 L73 145 L71 152 L38 152Z" fill="#B97840" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M44 145 Q46 132 56 131 Q66 133 67 145Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M46 140 Q56 136 65 140" fill="none" stroke="#8EB0DE" stroke-width="1.4"/>
+  </g>
+  <g id="layer-details"><path d="M92 78 Q109 72 121 77 M99 87 Q110 83 120 87" fill="none" stroke="#D8CDAF" stroke-width="2"/><path d="M55 88 L60 78 L65 88 L75 93 L65 98 L60 108 L55 98 L45 93Z" fill="#F2C14E"/><path d="M188 74 L193 64 L198 74 L208 79 L198 84 L193 94 L188 84 L178 79Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M115 61 Q128 56 140 61 M90 115 Q102 110 113 115 M250 36 Q256 33 261 37" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.78"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

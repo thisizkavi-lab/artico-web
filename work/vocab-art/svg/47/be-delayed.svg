@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: be delayed
+  CONTEXTUAL_DEFINITION: A traveler must wait because the plane has not departed on time.
+  PEDAGOGICAL_ART_DIRECTOR: Show the passenger waiting in the terminal with bags while a plane remains parked outside.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Focus on the passenger's experience of waiting, not merely on the aircraft's delayed status.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A seated traveler waits beside a rolling case and a quiet analog clock; through the large terminal glass a plane is still at its gate.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:be delayed" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="bd-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6ECE9"/><stop offset="1" stop-color="#C8D1CE"/></linearGradient>
+  <linearGradient id="bd-seat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#718899"/><stop offset="1" stop-color="#425B70"/></linearGradient>
+  <linearGradient id="bd-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9DC6CE"/><stop offset="1" stop-color="#DDE8E4"/></linearGradient>
+  <filter id="bd-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DCE6E6"/><path d="M17 17H287V147H17Z" fill="url(#bd-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M17 147H287V184H17Z" fill="#B7B7AD"/><rect x="111" y="28" width="163" height="75" fill="url(#bd-glass)" stroke="#405A66" stroke-width="1.5"/><path d="M165 28V103M220 28V103M111 67H274" stroke="#526D77" stroke-width="1.2"/><path d="M19 168H285" stroke="#EAE4D8" stroke-width="1.1"/><path d="M146 91H237" stroke="#657B83" stroke-width="3"/><path d="M161 88L171 85L180 88L171 91L166 96H164L168 91L161 90Z" fill="#526274" stroke="#304854" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M35 103H132V132H35Z" fill="url(#bd-seat)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M40 97H128V107H40Z" fill="#8195A1" stroke="#1E2A3B" stroke-width="1"/><path d="M43 132V148M124 132V148" stroke="#3A4F5D" stroke-width="3"/><path d="M27 93V139M27 94H39" stroke="#526274" stroke-width="2.5"/><circle cx="251" cy="43" r="19" fill="#F4F1E7" stroke="#394E59" stroke-width="1.5"/><path d="M251 28V32M266 43H262M251 58V54M236 43H240" stroke="#536A72" stroke-width="1.4"/><path d="M251 43L251 32M251 43L259 47" stroke="#344B59" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-focal" filter="url(#bd-shadow)"><circle cx="78" cy="71" r="9" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M65 83Q78 77 91 83L95 111H61Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M67 106L65 125H75L80 110M83 110L87 125H97L93 105" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><path d="M67 91L57 101M89 91L101 100" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><rect x="101" y="116" width="21" height="34" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M106 116V111Q106 107 111.5 107Q117 107 117 111V116" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M106 127H117M106 143H117" stroke="#99A6A8" stroke-width="1"/><path d="M114 153H232" stroke="#6E7E83" stroke-width="2.5"/><path d="M126 153V164M221 153V164" stroke="#53656D" stroke-width="2.5"/><circle cx="143" cy="148" r="4" fill="#263D49"/><circle cx="204" cy="148" r="4" fill="#263D49"/><path d="M125 143L142 134H205L222 143" fill="#819BA9" stroke="#263D49" stroke-width="1.2"/><path d="M130 141H214" stroke="#DCE9E5" stroke-width="1"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="169" rx="111" ry="5" fill="#526274" opacity=".16"/><path d="M112 31H273" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="78" cy="71" r="2" fill="#1E2A3B"/><path d="M49 108H120" stroke="#A9BCC4" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="105" rx="129" ry="76" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

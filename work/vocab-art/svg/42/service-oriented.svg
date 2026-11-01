@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: service-oriented
+  CONTEXTUAL_DEFINITION: Focused on helping customers and responding to their needs.
+  PEDAGOGICAL_ART_DIRECTOR: Show a staff member listening carefully and giving practical help to a customer.
+  PEDAGOGICAL_ARCHETYPE: 21 - Customer care
+  SYNONYM_GUARD: Emphasize attentive helpful behavior toward a customer, not a business category or a service machine.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a service worker behind a help counter on the right and a customer on the left. The worker leans forward with an open listening gesture and offers a neatly packed item; a small heart/check icon sits above the interaction.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:service-oriented" data-archetype="customer-care">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="service-counter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="service-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="service-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="service-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="170" y="42" width="73" height="57" rx="3" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><path d="M179 55 H234 M179 62 H225 M179 70 H232" stroke="#CBD5E1" stroke-width="1"/><path d="M184 82 L190 88 L201 76" fill="none" stroke="#547A56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M37 119 H267 V135 H37 Z" fill="url(#service-counter)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M50 135 V146 M254 135 V146" stroke="#965D28" stroke-width="2.2"/><rect x="122" y="99" width="37" height="24" rx="3" fill="#E5F0E1" stroke="#547A56" stroke-width="1"/><path d="M127 99 L140 91 L153 99" fill="#FFFFFF" stroke="#547A56" stroke-width="1"/><path d="M132 108 H149 M132 113 H146" stroke="#8EB0DE" stroke-width=".9"/></g>
+  <g id="layer-focal" filter="url(#service-shadow)"><path d="M49 120 Q51 99 63 92 L64 83 Q60 79 62 72 Q70 64 81 66 Q90 69 88 80 L86 87 Q97 92 99 118 L96 131 H53 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="75" cy="76" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M67 74 Q69 66 76 66 Q84 67 88 74 Q80 70 73 71 Z" fill="#3D342D"/><path d="M55 98 Q75 92 94 98" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M57 88 Q49 81 57 75 M62 89 Q58 82 64 78" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-linecap="round"/><path d="M196 119 Q198 97 210 90 L211 81 Q207 77 209 70 Q217 62 228 64 Q237 67 235 78 L233 85 Q245 91 247 117 L244 130 H200 Z" fill="url(#service-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="222" cy="74" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M214 72 Q216 64 223 64 Q231 65 235 72 Q227 68 220 69 Z" fill="#3D342D"/><path d="M201 96 Q222 90 243 96" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M203 100 L181 109 M239 100 L249 108" stroke="#5479AC" stroke-width="3.7" stroke-linecap="round"/><path d="M181 109 L159 113 M249 108 L241 109" stroke="#D89A6C" stroke-width="3.4" stroke-linecap="round"/><path d="M165 103 H184 V117 H165 Z" fill="#F7E8BF" stroke="#C88446" stroke-width=".9"/><path d="M165 103 L174 110 L184 103" fill="none" stroke="#C88446" stroke-width=".9"/></g>
+  <g id="layer-details"><path d="M127 52 C127 46 135 45 138 51 C141 45 149 46 149 52 C149 58 138 65 138 65 C138 65 127 58 127 52 Z" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/><circle cx="111" cy="69" r="2" fill="#8EB0DE"/><circle cx="157" cy="78" r="2" fill="#A8D4A2"/><path d="M104 112 L111 106 M117 115 L121 109" stroke="#64748B" stroke-width="1.1" stroke-linecap="round"/><path d="M207 128 H238" stroke="#DCE8D9" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="82" rx="101" ry="66" fill="url(#service-halo)" opacity=".16"/><path d="M171 43 H241" stroke="#FFFFFF" stroke-width=".9"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

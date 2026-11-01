@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: deposit (verb; put money into a bank account)
+  CONTEXTUAL_DEFINITION: To place cash into a bank account, increasing its funds.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action plus tool
+  SYNONYM_GUARD: Japanese gloss selects banking; show bills moving into a bank deposit slot, opposite to an ATM withdrawal and distinct from a rented-property security deposit.
+  MODE: STATIC peak deposit moment
+  COORDINATE_BLUEPRINT: Secure bank deposit box at left with one-way slot; thick sleeve and hand slide a blank note inward; adjacent account book shows funds arriving via green arrow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:deposit" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="deposit-box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="deposit-note" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <path id="deposit-hand" d="M251 107 C237 98 224 96 211 102 L187 115 C181 119 182 125 187 128 C193 131 201 124 208 122 L226 118 L209 131 C203 136 206 143 213 143 C220 143 231 134 240 130 L261 123 Z"/>
+    <clipPath id="deposit-hand-clip"><use href="#deposit-hand"/></clipPath>
+    <filter id="deposit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="154" cy="164" rx="99" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Bank counter and personal account context -->
+  <g id="layer-context"><path d="M25 128 H279 V145 H25 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M34 133 H271" stroke="#E3AC77" stroke-width="2"/><rect x="227" y="57" width="49" height="67" rx="5" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M235 70 H268 M235 78 H266" stroke="#94A3B8" stroke-width="1.8"/><path d="M235 93 H264" stroke="#7FB07A" stroke-width="2.4"/><circle cx="266" cy="108" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 3. Primary bank deposit box and money being inserted -->
+  <g id="layer-focal" filter="url(#deposit-shadow)"><path d="M47 43 Q47 36 55 36 H175 Q183 36 183 44 V126 H47 Z" fill="url(#deposit-box)" stroke="#1E2A3B" stroke-width="2.6"/><rect x="62" y="51" width="105" height="39" rx="4" fill="#F8FBFE" stroke="#64748B" stroke-width="1.8"/><path d="M73 62 H156 M73 70 H151 M73 78 H130" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round"/><rect x="60" y="96" width="112" height="12" rx="3" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M69 102 H163" stroke="#1E2A3B" stroke-width="2.2"/><rect x="89" y="90" width="75" height="27" rx="3" transform="rotate(-4 89 90)" fill="url(#deposit-note)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M99 98 H150 M99 104 H135" stroke="#568552" stroke-width="1.6"/><path d="M177 77 H204 V126 H177 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M181 85 H200" stroke="#8EB0DE" stroke-width="2"/></g>
+  <!-- 4. Thick-sleeved hand pushes note inward -->
+  <g id="layer-details"><path d="M197 126 L219 110 L236 123 L214 143 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><g clip-path="url(#deposit-hand-clip)"><rect x="179" y="95" width="88" height="55" fill="#D89A6C"/><path d="M186 132 Q219 113 264 118 V151 H182Z" fill="#B6784B"/><path d="M211 119 Q224 112 237 117" fill="none" stroke="#ECC09D" stroke-width="2.4"/></g><use href="#deposit-hand" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M201 103 H180" stroke="#4A72B2" stroke-width="2.3"/><path d="M184 99 L177 103 L184 107 Z" fill="#4A72B2"/></g>
+  <!-- 5. Green inward money-flow cue -->
+  <g id="layer-lighting"><path d="M193 63 C207 60 215 65 224 72" fill="none" stroke="#7FB07A" stroke-width="2.6" stroke-linecap="round"/><path d="M219 66 L227 74 L217 74 Z" fill="#7FB07A"/><path d="M67 45 H112" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".8"/><path d="M191 49 L191 57 M187 53 H195" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

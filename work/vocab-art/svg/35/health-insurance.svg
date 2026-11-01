@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="35:health insurance" data-archetype="editorial-workplace-scene">
+<defs>
+<linearGradient id="wallWash" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9F0F5"/></linearGradient>
+<linearGradient id="workBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7395C5"/><stop offset="1" stop-color="#3E5F91"/></linearGradient>
+<linearGradient id="timber" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#E0A96C"/><stop offset="1" stop-color="#A96A3D"/></linearGradient>
+<filter id="softShadow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>
+<!-- 1. Stage Canvas & Ground Shadow -->
+<rect width="304" height="192" fill="url(#wallWash)"/><path d="M0 151H304V192H0Z" fill="#E8E0D3"/><path d="M0 151H304" stroke="#1E2A3B" stroke-width="2"/>
+<ellipse cx="152" cy="176" rx="112" ry="6" fill="#BFC7CE" opacity=".28" filter="url(#softShadow)"/>
+<!-- 2. Background Context / Muted Whole / Halo -->
+<circle cx="154" cy="84" r="57" fill="#F6F2E9" stroke="#D1DCE4" stroke-width="2"/><path d="M82 63C82 47 95 35 111 35H197C212 35 225 47 225 63V108H82Z" fill="#DCE9F0" stroke="#8799AA" stroke-width="2.2"/><path d="M82 62H225" stroke="#8799AA" stroke-width="2"/>
+<!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+<path d="M119 166C122 134 136 117 161 114L183 124 193 166Z" fill="#6F9878" stroke="#1E2A3B" stroke-width="2.5"/><path d="M141 61C143 46 155 40 169 43 182 46 187 58 184 74L180 90C177 101 167 106 156 102 145 97 139 84 141 68Z" fill="#E2B08E" stroke="#1E2A3B" stroke-width="2.4"/><path d="M138 59C142 44 154 38 168 40 179 41 187 48 190 57L178 53 166 52 153 57Z" fill="#524038" stroke="#1E2A3B" stroke-width="2.1"/><path d="M151 72Q156 69 161 72M169 72Q174 69 179 72M155 85Q163 89 171 85" fill="none" stroke="#1E2A3B" stroke-width="1.8"/>
+<!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+<path d="M148 115L163 129 177 115" fill="#F4D98E" stroke="#1E2A3B" stroke-width="2"/><path d="M155 129L179 121 193 134 189 155 163 163 137 155 134 134 149 121Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M163 137V151M156 144H170" stroke="#F8F5ED" stroke-width="3.5" stroke-linecap="round"/><path d="M93 82H125V104H93Z" rx="4" fill="#F8F5ED" stroke="#1E2A3B" stroke-width="1.8"/><path d="M100 89H118M100 96H115" stroke="#8A9BAF" stroke-width="1.6" stroke-linecap="round"/><circle cx="108" cy="104" r="7" fill="#F4D98E" stroke="#1E2A3B" stroke-width="1.4"/>
+<!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+<ellipse cx="154" cy="175" rx="58" ry="6" fill="#C6B9A7" opacity=".4"/><path d="M105 48L111 40 117 48M201 48L207 40 213 48" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

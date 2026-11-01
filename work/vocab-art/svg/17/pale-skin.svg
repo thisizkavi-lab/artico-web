@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: pale skin (Noun phrase)
+  CONTEXTUAL_DEFINITION: Very light, cool-toned skin.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Use a lighter, cooler ivory-peach tone than fair skin, without illness cues.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cool light portrait paper.
+    - Context_Layer: Muted shoulders.
+    - Focal_Layer: Face with very light cool skin.
+    - Details_Layer: Soft neutral features and gentle natural blush.
+    - Lighting_Layer: Cool soft daylight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:pale skin" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#F8F9FA"/><ellipse cx="152" cy="166" rx="90" ry="10" fill="#E3E8F0"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="90" rx="106" ry="73" fill="#E4EDF2" opacity=".7"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 158Q99 126 102 87Q105 48 152 44Q199 48 202 87Q205 126 198 158Z" fill="#F2E0D8" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M99 87Q95 48 139 38Q175 35 198 56Q210 72 202 98L194 105Q189 77 175 70Q151 81 119 74Q107 79 103 99Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 98Q129 93 139 98M164 98Q174 93 184 98" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 105Q130 108 138 105M166 105Q174 108 181 105" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 103L148 120L155 123M138 140Q152 146 167 139" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M111 121Q119 117 126 121M178 121Q185 117 193 121" stroke="#D9857F" stroke-width="2.2" stroke-linecap="round" opacity=".62"/><path d="M128 131Q152 137 176 131" fill="none" stroke="#D4B9AD" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="96" rx="71" ry="66" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="4 5" opacity=".44"/>
+</svg>

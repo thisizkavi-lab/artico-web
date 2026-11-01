@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: shrug (Verb)
+  CONTEXTUAL_DEFINITION: To raise the shoulders to show uncertainty or indifference.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment human gesture
+  SYNONYM_GUARD: Raise both shoulders and turn both palms upward; do not just tilt the head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Chest-up person with both arms bent outward.
+    - Context_Layer: Neck, shirt, and open hands provide the whole gesture.
+    - Focal_Layer: Shoulders lifted near the ears and elbows bent.
+    - Details_Layer: Raised brows and tilted palms add the familiar uncertain pose.
+    - Lighting_Layer: Short up arrows flank the shoulders.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:shrug" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="175" rx="108" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M76 178Q81 144 111 133H193Q223 144 228 178Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M126 111L125 143H179L178 111Z" fill="#E2B99B" stroke="#64748B" stroke-width="2"/><path d="M84 142Q69 131 61 116L51 97Q48 87 57 84Q66 81 71 91L85 108L78 90Q75 80 84 77Q94 75 98 86L112 110L118 134Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M220 142Q235 131 243 116L253 97Q256 87 247 84Q238 81 233 91L219 108L226 90Q229 80 220 77Q210 75 206 86L192 110L186 134Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M117 67Q115 35 139 24Q162 13 184 28Q202 42 196 73L185 104Q169 122 148 117Q126 113 119 91Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M118 63Q116 35 140 22Q166 10 187 29Q202 43 196 65L183 52Q160 59 148 46Q132 60 118 63Z" fill="#64748B" stroke="#1E2A3B" stroke-width="2.1"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M118 139Q103 133 93 117L82 99Q77 89 85 85Q94 81 99 91L112 108L105 91Q102 81 111 78Q121 75 125 87L139 109L142 132Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M186 139Q201 133 211 117L222 99Q227 89 219 85Q210 81 205 91L192 108L199 91Q202 81 193 78Q183 75 179 87L165 109L162 132Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M117 78Q116 42 140 28Q164 13 185 32Q201 47 192 79L181 105Q166 121 147 117Q126 113 119 94Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M117 69Q115 39 139 24Q165 9 187 30Q201 44 193 69L181 56Q160 63 146 49Q131 64 117 69Z" fill="#7B655A" stroke="#1E2A3B" stroke-width="2.2"/><path d="M130 77Q139 73 146 78M163 78Q171 73 179 78" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M144 101Q152 104 160 100" fill="none" stroke="#8E5B4A" stroke-width="1.7"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M81 87Q95 80 107 88M197 88Q209 80 223 87" fill="none" stroke="#4A72B2" stroke-width="1.6"/><path d="M63 72L63 55M241 72L241 55" stroke="#4A72B2" stroke-width="2"/><path d="M58 63L63 53L68 63M236 63L241 53L246 63" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M94 134Q105 145 120 148M210 134Q199 145 184 148" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: row houses / terraced houses (UK) (Noun phrase)
+  CONTEXTUAL_DEFINITION: Several narrow homes attached side by side in one continuous street row.
+  PEDAGOGICAL_ARCHETYPE: 1 — Repeated attached building silhouettes
+  SYNONYM_GUARD: Show at least four joined homes with shared side walls, unlike a two-home semi-detached pair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet sidewalk and street.
+    - Context_Layer: Continuous facade establishes one long joined row.
+    - Focal_Layer: Four attached narrow homes with alternating doors and roofs.
+    - Details_Layer: Shared walls, repeated windows, small stoops and varied muted colors.
+    - Lighting_Layer: Blue line follows the continuous row of connected walls.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:row houses / terraced houses (uk)" data-archetype="repeated-building-row">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 151H304V192H0Z" fill="#D8C5A8"/><path d="M0 169H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="153" cy="160" rx="125" ry="6" fill="#8C8171" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M0 47H304" stroke="#D7E0E6" stroke-width="1.4"/><path d="M10 155H294" stroke="#F3ECE1" stroke-width="2"/><path d="M24 142V132Q36 122 48 132V147M254 146V133Q266 123 278 133V151" fill="#7FB07A" stroke="#4F8455" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M19 82L53 59L87 82V151H19Z" fill="#E8C5A4" stroke="#1E2A3B" stroke-width="2.1"/><path d="M13 82L53 54L93 82" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M87 76L123 53L160 76V151H87Z" fill="#E7D3B2" stroke="#1E2A3B" stroke-width="2.1"/><path d="M82 76L123 48L165 76" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.3"/><path d="M160 81L195 57L230 81V151H160Z" fill="#D8E2E8" stroke="#1E2A3B" stroke-width="2.1"/><path d="M154 81L195 51L237 81" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M230 76L266 53L295 76V151H230Z" fill="#E8C5A4" stroke="#1E2A3B" stroke-width="2.1"/><path d="M225 76L267 47L301 76" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.3"/><g fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.6"><path d="M28 92H47V111H28Z"/><path d="M58 92H77V111H58Z"/><path d="M98 87H118V106H98Z"/><path d="M130 87H150V106H130Z"/><path d="M171 92H190V111H171Z"/><path d="M201 92H220V111H201Z"/><path d="M239 87H257V106H239Z"/><path d="M270 87H288V106H270Z"/></g><g stroke="#5479AC" stroke-width="1.5"><path d="M37 93V110M67 93V110M108 88V105M140 88V105M180 93V110M210 93V110M248 88V105M279 88V105"/></g><g fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"><path d="M33 122Q33 117 38 117H52V151H33Z"/><path d="M112 122Q112 117 117 117H131V151H112Z"/><path d="M184 122Q184 117 189 117H203V151H184Z"/><path d="M256 122Q256 117 261 117H275V151H256Z"/></g></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M21 151H295" stroke="#1E2A3B" stroke-width="1.5"/><path d="M88 79V149M160 83V149M230 79V149" stroke="#1E2A3B" stroke-width="1.2" opacity=".7"/><path d="M28 96H46M98 91H118M171 96H189M239 91H256" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M28 73H275" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="5 4" opacity=".8"/><path d="M268 68L276 73L268 78" fill="none" stroke="#4A72B2" stroke-width="1.5"/></g>
+</svg>

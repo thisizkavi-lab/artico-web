@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: grow your hair (Verb phrase)
+  CONTEXTUAL_DEFINITION: Let hair become longer over time.
+  PEDAGOGICAL_ARCHETYPE: 6 — Progress comparison
+  SYNONYM_GUARD: Show the same hairstyle at short, shoulder, and long stages with clear forward arrows.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Three evenly spaced portrait stages.
+    - Focal_Layer: Hair increases from cropped to shoulder to long.
+    - Details_Layer: Arrows connect the successive hair lengths.
+    - Lighting_Layer: Soft studio halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:grow your hair" data-archetype="contrast-pair">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="128" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="94" rx="136" ry="69" fill="#FEF3C7" opacity=".3"/><path d="M106 42V165M198 42V165" stroke="#D3DBE5" stroke-width="1.4" stroke-dasharray="4 5"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g fill="#D8DCE2" stroke="#7B8A9E" stroke-width="1.8"><path d="M23 165Q27 130 53 126Q79 130 83 165Z"/><path d="M119 165Q123 130 149 126Q175 130 179 165Z"/><path d="M215 165Q219 130 245 126Q271 130 275 165Z"/></g>
+  <g fill="#35404B" stroke="#1E2A3B" stroke-width="2"><path d="M32 87Q29 50 53 46Q78 49 76 85L70 94Q64 70 53 68Q42 71 37 94Z"/><path d="M127 88Q126 49 150 46Q175 49 174 88L181 145Q174 152 166 144L164 91Q151 83 138 91L136 144Q128 152 121 145Z"/><path d="M223 87Q222 47 246 44Q271 47 270 87L282 166Q274 175 264 166L260 90Q247 82 234 90L232 166Q223 175 215 166Z"/></g>
+  <g fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.8"><path d="M34 79Q34 62 53 61Q72 62 72 79L70 111Q66 122 53 123Q40 122 36 111Z"/><path d="M130 79Q130 62 149 61Q168 62 168 79L166 111Q162 122 149 123Q136 122 132 111Z"/><path d="M226 79Q226 60 245 59Q264 60 264 79L262 111Q258 122 245 123Q232 122 228 111Z"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g fill="none" stroke="#1E2A3B" stroke-width="1.7"><path d="M43 88Q48 85 52 88M57 88Q62 85 67 88M139 88Q144 85 148 88M153 88Q158 85 163 88M235 86Q240 83 244 86M249 86Q254 83 259 86"/></g>
+  <path d="M53 89V101L58 103M149 89V101L154 103M245 87V100L250 102" fill="none" stroke="#A86F45" stroke-width="1.4"/><path d="M47 111Q53 115 59 111M143 111Q149 115 155 111M239 111Q245 115 251 111" fill="none" stroke="#A95059" stroke-width="1.5"/>
+  <path d="M87 77H113L107 71M113 77L107 83M183 77H209L203 71M209 77L203 83" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M38 153Q53 158 68 153M134 153Q149 158 164 153M230 153Q245 158 260 153" fill="none" stroke="#C1CCD8" stroke-width="1.4"/>
+</svg>

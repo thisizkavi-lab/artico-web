@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: soap (Noun)
+  CONTEXTUAL_DEFINITION: A bar of cleansing material that lathers when rubbed with water.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a solid bar on a draining dish with suds, unlike liquid shower gel in a pump bottle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom sink edge.
+    - Context_Layer: Small soap dish with drain grooves.
+    - Focal_Layer: Rounded bar of soap with bubbles and lather.
+    - Details_Layer: Moist sheen and tiny foam bubbles.
+    - Lighting_Layer: Clean soft highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:soap" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 147 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 147 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="168" rx="72" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M79 129 Q84 120 96 120 H211 Q223 120 228 129 L218 145 H89Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.8"/><path d="M101 133 H205 M108 139 H198" stroke="#AFC3DE" stroke-width="1.4"/><path d="M104 151 H202" stroke="#647D8B" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M93 86 Q94 72 108 69 L188 69 Q202 72 204 86 L199 112 Q196 121 185 122 H111 Q99 121 96 112Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2.5"/><path d="M105 79 Q148 71 190 79" fill="none" stroke="#F1B08F" stroke-width="2"/><path d="M101 106 Q147 115 196 106" fill="none" stroke="#A9543F" stroke-width="1.5"/><circle cx="82" cy="90" r="7" fill="#FFFFFF" stroke="#DCECFB" stroke-width="1.2"/><circle cx="217" cy="83" r="5" fill="#FFFFFF" stroke="#DCECFB" stroke-width="1.1"/><circle cx="226" cy="97" r="3" fill="#FFFFFF"/><circle cx="76" cy="108" r="3" fill="#FFFFFF"/><path d="M117 65 Q128 58 136 65 M155 63 Q164 56 173 64" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M116 90 Q150 96 184 89" fill="none" stroke="#F7D2C1" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

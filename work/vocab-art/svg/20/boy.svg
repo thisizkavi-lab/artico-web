@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: boy (Noun)
+  CONTEXTUAL_DEFINITION: A male child, shown as a school-age child with no parent role implied.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: One child flies a small kite in the family garden; the child's age and masculine presentation distinguish boy from the relational term son.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open garden and grass path.
+    - Context_Layer: Kite overhead and a low bench for scale.
+    - Focal_Layer: School-age boy holding the kite string by himself.
+    - Details_Layer: Short hair, youthful proportions, and wind motion.
+    - Lighting_Layer: Clear soft sky around the child.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:boy" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="boy-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="boy-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2C14E"/><stop offset="1" stop-color="#D49B2A"/></linearGradient>
+    <filter id="boy-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#boy-sky)"/><path d="M0 146Q73 139 152 146T304 144V192H0Z" fill="#DCEAD6"/><ellipse cx="151" cy="174" rx="126" ry="7" fill="#C3DAB9"/><path d="M17 121H82M23 133H76M27 133V151M72 133V151" stroke="#C88446" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M219 38L242 25L263 39L241 55Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M219 38L263 39M242 25L241 55" stroke="#DCECFB" stroke-width="1.5"/><path d="M241 55Q208 76 181 99Q159 116 136 130" fill="none" stroke="#64748B" stroke-width="1.6"/><path d="M229 58Q222 66 215 68M210 71Q204 79 198 79M192 85Q186 93 181 94" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#boy-shadow)"><path d="M89 177Q94 143 113 135Q133 127 153 139L160 177Z" fill="url(#boy-shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M110 139L128 152L147 139" fill="none" stroke="#D49B2A" stroke-width="2"/><rect x="120" y="114" width="19" height="22" rx="6" fill="#C98961" stroke="#1E2A3B" stroke-width="2"/><circle cx="130" cy="87" r="27" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M103 85Q104 60 130 59Q158 60 158 87L152 93Q148 71 130 72Q116 71 107 94Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.1"/><path d="M116 87Q121 91 126 87M134 87Q139 91 145 87M118 101Q130 107 142 101" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M111 146Q97 135 91 124" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M111 146Q97 135 91 124" stroke="#C98961" stroke-width="5.5" stroke-linecap="round"/><path d="M92 125Q88 117 95 114L102 118L100 129Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M148 146Q162 136 174 127" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M148 146Q162 136 174 127" stroke="#C98961" stroke-width="5.5" stroke-linecap="round"/><path d="M172 128Q174 119 181 119L187 126L180 133Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M111 65Q128 58 145 64" fill="none" stroke="#FFFFFF" stroke-width="2.5"/><path d="M88 98L81 94M166 97L173 93" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="92" cy="87" r="2.4" fill="#D9A441"/><path d="M78 108Q86 104 93 108" fill="none" stroke="#568552" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="130" cy="105" rx="73" ry="80" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".32"/><path d="M106 50Q128 43 149 48" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

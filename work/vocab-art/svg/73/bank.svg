@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: bank (noun; financial institution)
+  CONTEXTUAL_DEFINITION: A business that keeps people's money and provides financial services.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero place
+  SYNONYM_GUARD: Japanese gloss lists a riverbank, but money/finance siblings select the financial institution; use secure vault door, teller window and a customer depositing funds.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Small classical bank façade x55..248, recessed entry, two teller windows and round secure vault door; customer approaches holding a blank bankbook.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="73:bank" data-archetype="hero-place">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bank-stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F8FBFE"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient>
+    <radialGradient id="bank-vault"><stop stop-color="#E5E9F0"/><stop offset="1" stop-color="#64748B"/></radialGradient>
+    <path id="bank-front" d="M50 79 L151 34 L254 79 V148 H50 Z"/>
+    <clipPath id="bank-clip"><use href="#bank-front"/></clipPath>
+    <filter id="bank-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="150" width="304" height="42" fill="#EAE3D5"/><path d="M0 150 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="161" rx="111" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Financial district sidewalk -->
+  <g id="layer-context"><rect x="25" y="126" width="34" height="23" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M29 131 H55 M29 136 H52" stroke="#94A3B8" stroke-width="1.5"/><rect x="253" y="105" width="27" height="44" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M260 115 H273 M260 122 H273 M260 129 H273" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary bank building with teller hall -->
+  <g id="layer-focal" filter="url(#bank-shadow)"><use href="#bank-front" fill="url(#bank-stone)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M43 81 L151 29 L261 81 L251 87 L151 41 L53 87 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><g clip-path="url(#bank-clip)"><rect x="51" y="89" width="203" height="60" fill="#E5E9F0"/><rect x="63" y="91" width="41" height="30" rx="3" fill="#DCECFB" stroke="#64748B" stroke-width="1.8"/><rect x="198" y="91" width="41" height="30" rx="3" fill="#DCECFB" stroke="#64748B" stroke-width="1.8"/><path d="M69 113 H98 M204 113 H233" stroke="#5479AC" stroke-width="2"/><path d="M119 146 V109 Q120 93 151 93 Q182 93 183 109 V146 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M126 146 V111 Q127 100 151 100 Q175 100 176 111 V146 Z" fill="#EEF4FA" stroke="#3D5F91" stroke-width="1.7"/></g><path d="M44 148 H260" stroke="#1E2A3B" stroke-width="2.5"/><path d="M57 153 H247" stroke="#C88446" stroke-width="3"/></g>
+  <!-- 4. Secure vault and teller details -->
+  <g id="layer-details"><circle cx="151" cy="123" r="14" fill="url(#bank-vault)" stroke="#1E2A3B" stroke-width="2"/><circle cx="151" cy="123" r="8" fill="none" stroke="#F8FBFE" stroke-width="1.7"/><path d="M151 115 V131 M143 123 H159 M146 118 L156 128 M156 118 L146 128" stroke="#64748B" stroke-width="1.4"/><path d="M64 94 H103 M199 94 H238" stroke="#FFFFFF" stroke-width="2"/><circle cx="82" cy="104" r="2" fill="#4A72B2"/><circle cx="217" cy="104" r="2" fill="#4A72B2"/><path d="M56 84 H247" stroke="#DCECFB" stroke-width="2"/></g>
+  <!-- 5. Secure institution glints -->
+  <g id="layer-lighting"><path d="M74 67 L151 34 L230 67" fill="none" stroke="#8EB0DE" stroke-width="2.3" stroke-linecap="round"/><path d="M267 55 L267 64 M263 59 H271" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><path d="M129 105 Q151 95 173 105" fill="none" stroke="#FFFFFF" stroke-width="1.8"/></g>
+</svg>

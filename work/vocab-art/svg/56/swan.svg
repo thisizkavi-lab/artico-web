@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: swan (noun)
+  CONTEXTUAL_DEFINITION: A large white water bird with a graceful long S-shaped neck and orange bill.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Give it a smooth white body, upright S-curved neck, and orange bill with a dark base; distinguish it from the gray, straighter-necked goose.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Float a large white swan from x=80..206 y=95..146; its long curved neck rises to head x=185 y=48, orange bill, folded white wing, and calm pond with a faint reflection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:swan" data-archetype="white-swan">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#F1F0E9;--c-secondary:#A9B2B1;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="swan-sky" x2="0" y2="1"><stop stop-color="#D8EAF3"/><stop offset="1" stop-color="#F6F1E7"/></linearGradient>
+  <linearGradient id="swan-water" x2="0" y2="1"><stop stop-color="#AACBCC"/><stop offset="1" stop-color="#80AFB1"/></linearGradient>
+  <linearGradient id="swan-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8DEDA"/></linearGradient>
+  <filter id="swan-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#swan-sky)"/><path d="M0 111Q77 103 149 112T304 107V192H0Z" fill="#DEE5D8"/><path d="M0 132Q78 123 153 134T304 128V192H0Z" fill="url(#swan-water)"/><path d="M0 159Q79 151 156 160T304 156V192H0Z" fill="#94BCB9"/><circle cx="251" cy="39" r="23" fill="#F4D996" opacity=".5"/></g>
+ <g id="layer-context"><path d="M21 133V83m0 34-11-15m11 4 11-17m247 44V77m0 38-12-17m12 4 12-17" fill="none" stroke="#7D926F" stroke-width="3" stroke-linecap="round"/><path d="M8 102q8-11 15-4m-19 12q8-8 16-1m238-16q9-12 17-5m-14 14q9-8 17-1" fill="none" stroke="#829671" stroke-width="2.1" stroke-linecap="round"/><path d="M27 151q26-6 49 0m160-1q24-6 43 0" fill="none" stroke="#DDF0E9" stroke-width="1.6"/><ellipse cx="146" cy="153" rx="73" ry="5" fill="#4E7779" opacity=".16"/></g>
+ <g id="layer-focal" filter="url(#swan-shadow)"><path d="M76 120Q85 100 116 97Q153 91 184 106Q202 116 191 136Q174 150 132 147Q93 144 78 134Z" fill="url(#swan-feather)" stroke="#A7B0AF" stroke-width="1.5"/><path d="M99 117Q120 101 151 107Q169 111 173 129Q150 141 119 135Z" fill="#F8F7F1"/><path d="M165 107Q176 93 176 80Q173 65 181 56Q189 46 198 51Q206 56 200 64Q193 67 192 78Q199 97 182 116Z" fill="url(#swan-feather)" stroke="#A1AAA9" stroke-width="1.4"/><circle cx="192" cy="54" r="11" fill="#FAF9F3" stroke="#A1AAA9" stroke-width="1.1"/><path d="M199 55Q213 52 223 58L207 63Q201 62 199 55Z" fill="#E4A23A" stroke="#9A6B2E" stroke-width="1"/><path d="M198 51Q204 49 208 52L207 57L200 57Z" fill="#30373D"/><circle cx="195" cy="51" r="1.8" fill="#1E2A3B"/><path d="M107 113Q129 97 155 107Q176 114 173 132Q149 140 124 132Z" fill="#EBEEE9" stroke="#B6BFBB" stroke-width="1.1"/><path d="M82 155q25-5 49 0m32 0q26-5 48 0m-113 9q19-4 35 0" fill="none" stroke="#DDF0E9" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M116 112q18-10 35-4m-27 9q19-7 37-1m19-42q5-10 13-11" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".82" stroke-linecap="round"/><path d="M134 121q18-8 31-2" fill="none" stroke="#C8D0CB" stroke-width="1.2" stroke-linecap="round"/><path d="M23 144l-4 7m252-8 5 7" fill="none" stroke="#7F936E" stroke-width="1.4"/><circle cx="62" cy="147" r="1.3" fill="#D2C49D"/></g>
+ <g id="layer-lighting"><path d="M88 109q14-14 33-9m58-43q3-8 10-9" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".9" stroke-linecap="round"/><ellipse cx="136" cy="116" rx="56" ry="27" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

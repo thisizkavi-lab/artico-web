@@ -1,0 +1,58 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: extraordinary (Adjective)
+  CONTEXTUAL_DEFINITION: Far beyond the ordinary in size or quality, shown by a record-sized pumpkin beside normal pumpkins.
+  PEDAGOGICAL_ARCHETYPE: 4 (Measurable contrast with a stunned human reaction)
+  SYNONYM_GUARD: One enormous, ribbed pumpkin dwarfs two ordinary ones; this is exceptional scale, not a pretty butterfly.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft ivory farm stand, straw-colored ground, pale green hill.
+    - Context_Layer: Farmer in a green apron at the left, leaning back with open palms.
+    - Focal_Layer: Huge pumpkin centered on a wooden crate, towering over two small pumpkins.
+    - Details_Layer: Smooth pumpkin ribs, curling vine and leaf, crate slats, tiny pumpkins.
+    - Lighting_Layer: Upper-left gloss, warm edge light, halo of surprise around the giant.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:extraordinary" data-archetype="contrast-reference">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient>
+    <linearGradient id="pumpkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7AF4A"/><stop offset="0.56" stop-color="#E97832"/><stop offset="1" stop-color="#B64E26"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#paper)"/>
+    <path d="M0 135 Q90 123 164 132 Q241 119 304 130 L304 192 L0 192Z" fill="#DCEAD6"/>
+    <path d="M0 155 Q142 148 304 156 L304 192 L0 192Z" fill="#EAE3D5"/>
+    <ellipse cx="176" cy="163" rx="86" ry="10" fill="#DDD4C3"/>
+  </g>
+  <g id="layer-context">
+    <path d="M23 145 Q27 119 49 116 Q72 119 75 145Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M37 118 L36 108 Q48 101 59 108 L58 120" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="47" cy="87" r="20" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M27 85 Q28 64 48 64 Q68 65 69 85 Q59 76 47 77 Q37 82 27 85Z" fill="#6B4B35" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M40 89 Q43 85 46 89 M52 89 Q55 85 58 89" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <ellipse cx="43" cy="96" rx="2.8" ry="3.5" fill="#FFFFFF"/><ellipse cx="55" cy="96" rx="2.8" ry="3.5" fill="#FFFFFF"/>
+    <path d="M46 102 Q49 106 52 102" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M65 130 Q82 113 89 102 Q93 98 97 102 Q100 107 96 111 L82 136" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M99 148 L250 148 L242 163 L108 163Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M106 153 L242 153 M122 150 L121 161 M152 150 L151 161 M183 150 L182 161 M214 150 L213 161" stroke="#8D552E" stroke-width="1.5"/>
+    <path d="M111 109 C106 96 115 82 129 79 C141 68 160 72 167 79 C184 68 204 76 209 87 C222 87 232 100 226 113 C231 127 221 141 205 143 L128 143 C111 141 102 126 111 109Z" fill="url(#pumpkin)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M142 77 C135 95 135 126 145 142 M165 75 C157 96 158 126 165 142 M187 78 C180 99 182 127 190 141 M207 88 C199 105 202 128 208 137" fill="none" stroke="#A84927" stroke-width="2.5" opacity="0.74"/>
+    <path d="M169 77 Q165 68 170 61 Q177 57 181 62 L178 79Z" fill="#527748" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M177 72 Q191 59 202 65 Q197 77 181 79 M171 74 Q157 61 148 67 Q154 78 170 80" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M251 145 C247 138 251 129 260 128 C269 125 278 131 279 139 C284 146 276 154 265 154 L258 153Z" fill="#E97832" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M261 130 Q257 140 261 152 M271 130 Q267 140 271 152" fill="none" stroke="#B64E26" stroke-width="1.8"/>
+    <path d="M82 149 C78 143 81 136 89 134 C97 132 104 137 104 144 C107 150 101 156 93 156 L87 155Z" fill="#F2A244" stroke="#1E2A3B" stroke-width="1.8"/>
+  </g>
+  <g id="layer-details">
+    <path d="M127 88 Q138 82 148 87 M194 91 Q205 84 215 91" fill="none" stroke="#FFD17B" stroke-width="3" stroke-linecap="round" opacity="0.82"/>
+    <path d="M92 70 L97 60 L102 70 L112 75 L102 80 L97 90 L92 80 L82 75Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/>
+    <path d="M233 78 L237 70 L241 78 L249 82 L241 86 L237 94 L233 86 L225 82Z" fill="#F2C14E"/>
+    <path d="M69 112 L76 108 M74 119 L82 118 M83 106 L88 100" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M116 105 Q118 91 129 86 M124 116 Q126 99 132 92" fill="none" stroke="#FFF3D7" stroke-width="2.4" stroke-linecap="round" opacity="0.78"/>
+    <path d="M111 166 Q180 172 247 166" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.65"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.68"/>
+  </g>
+</svg>

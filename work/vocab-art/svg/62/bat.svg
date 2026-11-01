@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: bat (sports implement)
+ CONTEXTUAL_DEFINITION: A broad wooden blade and short handle used to strike a ball, shown as a cricket-style bat.
+ PEDAGOGICAL_ARCHETYPE: Hero object with a red cricket ball and wicket stumps for sport context.
+ SYNONYM_GUARD: This is the sports implement specified for Lesson 62; do not depict the winged animal from Lesson 55 or the narrow baseball bat.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Broad flat bat with straight shoulders and wrapped handle stands beside red ball and three stumps; smooth field.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:bat" data-archetype="broad-cricket-bat-object">
+ <defs><linearGradient id="bat-wood" x2="1" y2="0"><stop stop-color="#A7784E"/><stop offset=".45" stop-color="#E4C28E"/><stop offset="1" stop-color="#C49969"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2EE"/><path d="M0 125h304v67H0Z" fill="#879C83"/><path d="M0 127h304M0 169h304" stroke="#E7EEE4" stroke-width="1.4"/><path d="M18 149h48m186 0h34" stroke="#DDE8DC" stroke-width="1.1"/></g>
+ <g id="layer-context"><ellipse cx="150" cy="175" rx="91" ry="5" fill="#344F5A" opacity=".17"/><path d="M218 96v54m10-54v54m10-54v54m-20-51h10m10 0h10" fill="none" stroke="#E9E7D9" stroke-width="2.3"/><path d="M39 105h54m-27-20v40" stroke="#DDE8DC" stroke-width="1.1"/><circle cx="64" cy="35" r="10" fill="#E4BB68"/></g>
+ <g id="layer-focal"><path d="M126 134q-5-3-5-12l4-54q1-12 8-15h29q8 5 8 15l-3 55q-1 9-7 12Z" fill="url(#bat-wood)" stroke="#563D30" stroke-width="2"/><path d="M133 54V34q0-9 9-9h6q9 0 9 9v21Z" fill="#775844" stroke="#3D3533" stroke-width="1.7"/><path d="M134 29h23m-23 6h23m-23 6h23" stroke="#D8C8AE" stroke-width="1.5"/><path d="M130 72q18 7 35 0m-36 9q18 7 35 0" fill="none" stroke="#F2DAB0" stroke-width="1.2"/><circle cx="80" cy="133" r="12" fill="#CE3D4E" stroke="#7E303B" stroke-width="1.7"/><path d="M74 125q7 5 4 9m8-7q-5 5-3 10m-8 3q4-4 10-3" fill="none" stroke="#FFF6E7" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M39 179h43m140 0h40" stroke="#DDE8DC" stroke-width="1.2"/><path d="M119 137h48m-44 4h40" stroke="#624633" stroke-width="1" opacity=".7"/><circle cx="97" cy="124" r="1.7" fill="#FFF6E7"/><path d="M203 79q7-5 14 0m-14 6q7-5 14 0" fill="none" stroke="#E4BB68" stroke-width="1.3"/><path d="M134 83q11 3 24 0m-24 8q11 3 24 0m-12-54v9m6-9v9" fill="none" stroke="#B58D62" stroke-width="1" opacity=".8"/><path d="M130 99q14 5 31 0" fill="none" stroke="#D1AC7B" stroke-width="1" opacity=".8"/><path d="M129 111q14 5 31 0" fill="none" stroke="#D1AC7B" stroke-width="1" opacity=".8"/><path d="M132 116h23" fill="none" stroke="#F2DAB0" stroke-width=".8"/></g>
+ <g id="layer-lighting"><ellipse cx="148" cy="87" rx="40" ry="52" fill="#FFF6E7" opacity=".05"/><path d="M136 57q11-6 23 0" fill="none" stroke="#FFF6E7" stroke-width="1.4"/></g>
+</svg>

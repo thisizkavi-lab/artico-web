@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: purse (Noun)
+  CONTEXTUAL_DEFINITION: A small pouch for coins or cards, often carried in a handbag.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with scale cue
+  SYNONYM_GUARD: Keep it palm-sized and zippered; handbag is larger with top handles.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small rounded coin purse resting beside a coin.
+    - Context_Layer: Ground ellipse and a single scale coin.
+    - Focal_Layer: Compact zip pouch with a curved zipper.
+    - Details_Layer: A few coins peek from the opening.
+    - Lighting_Layer: Warm halo fits around the small object.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:purse" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="158" rx="100" ry="17" fill="#EAE3D5"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><ellipse cx="148" cy="98" rx="88" ry="64" fill="#FEF3C7" opacity=".38"/><circle cx="229" cy="129" r="19" fill="#D9A441" stroke="#64748B" stroke-width="2.2"/><circle cx="229" cy="129" r="12" fill="none" stroke="#F8DDCC" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M63 76Q63 60 80 56L188 51Q209 53 211 71L218 132Q218 148 201 151L84 153Q66 151 65 135Z" fill="#7D75A8" stroke="#1E2A3B" stroke-width="2.6"/><path d="M71 76Q137 82 211 68" fill="none" stroke="#1E2A3B" stroke-width="5"/><path d="M71 76Q137 82 211 68" fill="none" stroke="#D9A441" stroke-width="1.7"/><path d="M121 80L136 80L135 92Q127 96 120 91Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.3"/><path d="M63 76Q63 60 80 56L188 51Q209 53 211 71L218 132Q218 148 201 151L84 153Q66 151 65 135Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><circle cx="148" cy="111" r="8" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="168" cy="109" r="7" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.4"/><path d="M130 112Q136 102 142 112" fill="none" stroke="#E2B99B" stroke-width="2"/><path d="M92 132Q143 139 193 132" fill="none" stroke="#B8B1D5" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="144" cy="100" rx="79" ry="48" fill="none" stroke="#D97706" stroke-width=".9" stroke-dasharray="4 4" opacity=".36"/></g>
+</svg>

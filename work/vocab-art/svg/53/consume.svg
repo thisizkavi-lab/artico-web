@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:consume" data-archetype="household-using-water-and-electricity-as-resources-fall">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; consume. Show household water and electricity in use while a limited water store runs low, linking consumption to resources; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="consume-sky" x2="0" y2="1"><stop stop-color="#E3EEE8"/><stop offset="1" stop-color="#C5D6CC"/></linearGradient>
+  <linearGradient id="consume-house" x2="0" y2="1"><stop stop-color="#D0B37D"/><stop offset="1" stop-color="#956F4D"/></linearGradient>
+  <linearGradient id="consume-water" x2="0" y2="1"><stop stop-color="#82B8BC"/><stop offset="1" stop-color="#456F78"/></linearGradient>
+  <linearGradient id="consume-ground" x2="0" y2="1"><stop stop-color="#93A47E"/><stop offset="1" stop-color="#667956"/></linearGradient>
+  <filter id="consume-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#consume-sky)"/><circle cx="248" cy="37" r="13" fill="#EBC86F" opacity=".7"/><path d="M0 124Q67 110 132 124T248 120Q279 115 304 122V192H0Z" fill="#9EAE95"/><path d="M0 162Q61 149 119 162T225 159Q272 150 304 158V192H0Z" fill="url(#consume-ground)"/></g>
+<g id="layer-context">
+  <path d="M34 153V97L91 61 151 97V153Z" fill="url(#consume-house)" stroke="#4E5B52" stroke-width="1.5"/><path d="M25 99l66-46 68 46Z" fill="#805D49" stroke="#4E5B52" stroke-width="1.5"/>
+  <rect x="58" y="113" width="18" height="18" fill="#F1D98E"/><rect x="111" y="113" width="18" height="18" fill="#F1D98E"/><rect x="86" y="118" width="17" height="35" fill="#566A68"/>
+  <path d="M197 111V73Q197 67 204 67H240Q247 67 247 73V111Z" fill="#95A7A1" stroke="#4D6667" stroke-width="1.7"/><path d="M200 98h44v11h-44Z" fill="url(#consume-water)"/>
+  <path d="M0 171Q51 160 103 171T204 169Q253 157 304 168V192H0Z" fill="#56775B"/>
+</g>
+<g id="layer-focal" filter="url(#consume-shadow)">
+  <path d="M78 79h21v6H78Z" fill="#A3AAA0"/><path d="M85 85v10m8-10v10m-12 0h17" fill="none" stroke="#6B7A75" stroke-width="2" stroke-linecap="round"/>
+  <path d="M87 96v13" fill="none" stroke="#76B4BC" stroke-width="2.5" stroke-linecap="round"/><path d="M87 109q-5 7 0 9 5-2 0-9Z" fill="#6FB0B9"/>
+  <path d="M176 101Q188 91 201 99L202 108Q189 116 176 108Z" fill="url(#consume-water)" stroke="#506F73" stroke-width="1.5"/><path d="M177 104q12-5 23 0" fill="none" stroke="#D7E9E5" stroke-width="1.4"/>
+  <path d="M235 76v15m-4-5 4 5 4-5m-39 11h5m-5 6h5" fill="none" stroke="#D7834B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="layer-details">
+  <path d="M213 158v-27m0 15-8-12m8 7 9-14m53 30v-22m0 12-7-11m7 8 8-13" fill="none" stroke="#72875F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M19 181q13-5 24 0m113-2q12-5 23 0m87 5q12-5 22 0" fill="none" stroke="#B8CE8E" stroke-width="1.4"/>
+  <circle cx="169" cy="169" r="1.8" fill="#F0EBD0"/><circle cx="262" cy="175" r="1.7" fill="#F0EBD0"/>
+  <path d="M7 145q13-5 22 0m160-35q8-4 14 0" fill="none" stroke="#E4F0E5" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M28 98l63-43 64 43" fill="none" stroke="#D9C69C" stroke-width="1.2"/><path d="M201 73q21-10 42 0" fill="none" stroke="#DCE9E5" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

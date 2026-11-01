@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: terrible (Adjective)
+  CONTEXTUAL_DEFINITION: Extremely bad or frightening, shown by a fierce storm that leaves travelers huddled for shelter.
+  PEDAGOGICAL_ARCHETYPE: 3 (Severe conditions paired with a frightened response)
+  SYNONYM_GUARD: A violent thunderstorm is terrible weather; it differs from the smaller surprise of an owl shadow.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Slate storm sky and wind-bent trees.
+    - Context_Layer: Two travelers huddle under a small shelter.
+    - Focal_Layer: Dense rain, lightning and bent tree canopy.
+    - Details_Layer: Puddles and flying leaves.
+    - Lighting_Layer: White lightning flash against cool blue gray.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:terrible" data-archetype="expressive-bust">
+  <defs><linearGradient id="storm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64748B"/><stop offset="1" stop-color="#A9B8C7"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#storm)"/><path d="M0 146 Q152 136 304 147 L304 192 L0 192Z" fill="#7B8A9E"/><ellipse cx="153" cy="164" rx="111" ry="8" fill="#64748B"/><path d="M15 69 Q22 38 45 43 Q67 24 86 47 Q102 38 115 64 Q95 74 75 66 Q49 79 31 68Z M191 61 Q203 30 226 39 Q247 20 268 44 Q284 35 296 61 Q276 71 254 63 Q229 76 208 63Z" fill="#3D5F91"/></g>
+  <g id="layer-context"><path d="M55 151 Q58 127 78 124 Q98 127 100 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="78" cy="108" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M62 107 Q63 89 79 90 Q95 91 94 108 Q85 99 77 100Z" fill="#27364B"/><ellipse cx="72" cy="108" rx="2.8" ry="3.6" fill="#FFFFFF"/><ellipse cx="83" cy="108" rx="2.8" ry="3.6" fill="#FFFFFF"/><ellipse cx="78" cy="118" rx="3.2" ry="4" fill="#A34F47"/><path d="M51 131 Q61 122 68 118 M97 131 Q105 121 111 116" stroke="#1E2A3B" stroke-width="3.5" stroke-linecap="round"/><path d="M210 151 Q213 128 231 125 Q250 128 253 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="231" cy="109" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M215 108 Q216 90 232 91 Q248 92 247 109 Q238 100 230 101Z" fill="#6B4B35"/><ellipse cx="225" cy="109" rx="2.8" ry="3.6" fill="#FFFFFF"/><ellipse cx="236" cy="109" rx="2.8" ry="3.6" fill="#FFFFFF"/><ellipse cx="231" cy="119" rx="3.2" ry="4" fill="#A34F47"/></g>
+  <g id="layer-focal"><path d="M32 127 Q55 86 82 78 Q108 84 132 127Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M39 127 Q61 95 82 91 Q106 97 125 127Z" fill="#E9EFF5" stroke="#1E2A3B" stroke-width="1.8"/><path d="M82 78 L82 127" stroke="#1E2A3B" stroke-width="2"/><path d="M135 24 L122 53 L139 48 L126 76" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linejoin="round"/><path d="M135 24 L122 53 L139 48 L126 76" fill="none" stroke="#F2C14E" stroke-width="4" stroke-linejoin="round"/><path d="M0 111 Q23 103 45 108 M170 91 Q191 84 207 90 M248 87 Q271 79 297 88" fill="none" stroke="#E9EFF5" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M156 95 L149 86 M177 116 L169 107 M190 78 L184 69 M114 96 L108 87" stroke="#E9EFF5" stroke-width="2.4" stroke-linecap="round"/><path d="M145 78 L151 68 L157 78 L167 83 L157 88 L151 98 L145 88 L135 83Z" fill="#CBD5E1"/><path d="M38 49 Q45 43 52 49 M265 73 Q272 67 279 73" fill="none" stroke="#A9B8C7" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M42 95 Q61 86 79 89 M137 27 L124 50" fill="none" stroke="#FFFFFF" stroke-width="2.4" opacity="0.78"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#CBD5E1" stroke-width="1" opacity="0.7"/></g>
+</svg>

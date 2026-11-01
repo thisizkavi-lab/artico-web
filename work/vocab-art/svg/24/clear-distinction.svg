@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: clear distinction (Noun phrase)
+  CONTEXTUAL_DEFINITION: An obvious difference that separates two categories or ideas.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Use a bold clean divider between two visibly different groups; show a clear boundary, not the process of comparing two similar objects.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Plain pale display board.
+    - Context_Layer: Two trays at equal height.
+    - Focal_Layer: Blue circles grouped on one side and gold triangles on the other, separated by a crisp barrier.
+    - Details_Layer: Distinct color fields and a magnifying lens on the boundary.
+    - Lighting_Layer: Clear, sharp contrast emphasizes separation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:clear distinction" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="distinction-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="distinction-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#distinction-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M29 45H141V136H29Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M163 45H275V136H163Z" fill="#F8E9C7" stroke="#D9A441" stroke-width="1.4"/><path d="M25 137H145V145H25ZM159 137H279V145H159Z" fill="#A98A64"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#distinction-shadow)"><path d="M151 35V148" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><circle cx="63" cy="77" r="15" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><circle cx="103" cy="109" r="13" fill="#6F91BE" stroke="#315782" stroke-width="1.4"/><circle cx="116" cy="65" r="11" fill="#315782" stroke="#1E2A3B" stroke-width="1.2"/><path d="M186 92L202 61L218 92Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.4"/><path d="M225 120L238 95L251 120Z" fill="#E9B94E" stroke="#8D6138" stroke-width="1.4"/><path d="M177 57L187 37L197 57Z" fill="#C98934" stroke="#8D6138" stroke-width="1.2"/><circle cx="149" cy="89" r="17" fill="#FFFEFA" stroke="#5479AC" stroke-width="3"/><path d="M161 101L177 117" stroke="#315782" stroke-width="5" stroke-linecap="round"/><path d="M149 72V106" stroke="#D9857F" stroke-width="1.2" opacity=".8"/></g>
+  <g id="layer-details"><path d="M39 50H133M171 50H265" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><path d="M151 25V34M151 149V158" stroke="#D9857F" stroke-width="2"/><circle cx="151" cy="32" r="3" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="150" cy="86" rx="128" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M29 45H141V136M163 45H275V136" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

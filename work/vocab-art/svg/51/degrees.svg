@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: degrees (temperature) (Noun plural)
+  CONTEXTUAL_DEFINITION: The measured divisions used to state how hot or cold something is.
+  PEDAGOGICAL_ART_DIRECTOR: Focus on the scale divisions and one interval on a thermometer; do not add numbers or a degree glyph.
+  PEDAGOGICAL_ARCHETYPE: 1 - Unit and measurement
+  SYNONYM_GUARD: This is a temperature unit on a scale, not an angle measurement.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Large glass thermometer with graduated marks and a magnifying lens isolating one interval between adjacent ticks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:degrees (temperature)" data-archetype="temperature-degrees-unit">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="dg-sky" x2="0" y2="1"><stop stop-color="#EAF3EF"/><stop offset="1" stop-color="#C4D7D7"/></linearGradient><linearGradient id="dg-glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8EAE7"/></linearGradient><linearGradient id="dg-mercury" x2="0" y2="1"><stop stop-color="#ED9A65"/><stop offset="1" stop-color="#C54F46"/></linearGradient><filter id="dg-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dg-sky)"/><path d="M0 151H304V192H0Z" fill="#B99B72"/></g>
+ <g id="layer-context"><circle cx="251" cy="39" r="15" fill="#EBC86F" opacity=".82"/><path d="M24 173H281" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="146" cy="163" rx="62" ry="5" fill="#5B4B3B" opacity=".15"/><path d="M24 30H280" fill="none" stroke="#F9FBF3" stroke-width="1.2" opacity=".8"/><path d="M39 51q12-8 24 0m187 18q12-8 24 0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#dg-shadow)">
+  <rect x="112" y="29" width="51" height="126" rx="24" fill="url(#dg-glass)" stroke="#66858B" stroke-width="2"/><rect x="131" y="45" width="13" height="92" rx="6.5" fill="url(#dg-mercury)"/><circle cx="137.5" cy="145" r="17" fill="url(#dg-mercury)" stroke="#A94E45" stroke-width="1.4"/>
+  <path d="M101 45H128M101 57H121M101 69H128M101 81H121M101 93H128M101 105H121M101 117H128M101 129H121M101 141H128" fill="none" stroke="#54717A" stroke-width="1.8"/><path d="M98 81H132" fill="none" stroke="#D7834B" stroke-width="2.8"/>
+  <circle cx="210" cy="82" r="36" fill="#F4F8F3" stroke="#63818A" stroke-width="2.2"/><path d="M183 105L164 124" fill="none" stroke="#63818A" stroke-width="6" stroke-linecap="round"/><path d="M190 82H230" fill="none" stroke="#E8ECE2" stroke-width="2"/><path d="M192 73v18m12-18v11m13-11v18m12-18v11" fill="none" stroke="#526E78" stroke-width="2"/><circle cx="211" cy="82" r="6" fill="#EBC86F" opacity=".85"/><path d="M207 82h8" fill="none" stroke="#C78349" stroke-width="1.6"/>
+  <path d="M193 57q15-9 30 0m-36 48q22 13 46 0" fill="none" stroke="#D4E5E2" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M117 36q15-7 28-1m-21 8v80m-14-31 16 0" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="137" cy="145" r="2" fill="#F8B383"/><circle cx="251" cy="39" r="1.2" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M185 82l7 0m35 0h7" fill="none" stroke="#D7834B" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M116 34q16-7 27-1m55 18q14-7 27 0" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".75"/><circle cx="208" cy="76" r="1.3" fill="#FFF8E7"/><path d="M124 154h27" fill="none" stroke="#FFF7E5" stroke-width="1.2"/></g>
+</svg>

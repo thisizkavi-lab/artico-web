@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: determined
+  CONTEXTUAL_DEFINITION: Firmly decided to achieve something and unwilling to give up when it is difficult.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker persisting through one obstacle to finish an important task.
+  PEDAGOGICAL_ARCHETYPE: 10 - Persistence through a setback
+  SYNONYM_GUARD: Show commitment continuing after a setback, rather than a distant ambitious goal or general hard work.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put one worker at x=91..145 bracing against a tipped stack of project folders at x=160..194, then reaching toward a finished task board at x=215..258. Add a clear forward path around the obstacle and a steady posture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:determined" data-archetype="persistence-through-setback">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="determined-finish" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="determined-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="determined-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="determined-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="214" y="65" width="46" height="62" rx="3" fill="url(#determined-finish)" stroke="#547A56" stroke-width="1.1"/><path d="M221 77 H252 M221 84 H246" stroke="#CBD5E1" stroke-width="1"/><path d="M224 107 L231 114 L250 93" fill="none" stroke="#547A56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 134 H267 V145 H49 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M62 145 V155 M254 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="161" y="105" width="38" height="23" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M166 110 L173 115 L169 121 M177 109 H194 M177 115 H189" fill="none" stroke="#8EB0DE" stroke-width="1"/><rect x="158" y="90" width="36" height="18" rx="2" fill="#F7E8BF" stroke="#C88446" stroke-width=".9"/><path d="M163 97 H188 M163 102 H183" stroke="#D6B869" stroke-width=".8"/><path d="M191 52 C209 47 221 49 232 58" fill="none" stroke="#547A56" stroke-width="1.4" stroke-dasharray="2 2"/></g>
+  <g id="layer-focal" filter="url(#determined-shadow)"><path d="M83 126 Q85 101 98 94 L99 84 Q95 80 97 72 Q105 64 116 67 Q125 70 123 81 L121 88 Q134 94 136 123 L133 136 H87 Z" fill="url(#determined-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="110" cy="76" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M101 74 Q103 66 111 66 Q119 67 123 74 Q115 70 108 71 Z" fill="#3D342D"/><path d="M92 100 Q110 94 128 100" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M95 108 L117 116 M130 107 L154 100" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M117 116 L130 120 M154 100 L168 94" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M156 96 L165 87 L176 91 L171 103 Z" fill="#E5F0E1" stroke="#5479AC" stroke-width="1"/><path d="M188 84 L198 80" stroke="#D89A2B" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M68 82 L75 76 M71 91 L79 88 M143 76 L149 72" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/><circle cx="203" cy="59" r="2" fill="#8EB0DE"/><circle cx="244" cy="55" r="2" fill="#A8D4A2"/><path d="M217 121 H257" stroke="#FFFFFF" stroke-width=".8"/><path d="M89 132 H131" stroke="#DCE8D9" stroke-width=".9"/></g>
+  <g id="layer-lighting"><ellipse cx="156" cy="81" rx="102" ry="66" fill="url(#determined-halo)" opacity=".16"/><path d="M214 66 H260" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

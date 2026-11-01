@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:pollution" data-archetype="urban-smog-and-contaminated-water">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; pollution. Show widespread contaminated air and water around an industrial town, using brown haze and a discolored stream rather than a single leaking object; no text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="poll-sky" x2="0" y2="1"><stop stop-color="#D8DFD8"/><stop offset="1" stop-color="#B8B8A6"/></linearGradient>
+  <linearGradient id="poll-haze" x2="0" y2="1"><stop stop-color="#938E79" stop-opacity=".3"/><stop offset="1" stop-color="#777562" stop-opacity=".72"/></linearGradient>
+  <linearGradient id="poll-water" x2="0" y2="1"><stop stop-color="#738C84"/><stop offset="1" stop-color="#495D58"/></linearGradient>
+  <linearGradient id="poll-building" x2="0" y2="1"><stop stop-color="#929486"/><stop offset="1" stop-color="#62675F"/></linearGradient>
+  <filter id="poll-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#poll-sky)"/><circle cx="249" cy="38" r="13" fill="#D9C47C" opacity=".55"/><path d="M0 97Q65 87 132 97T304 91V192H0Z" fill="#959B89"/><path d="M0 140Q71 128 141 141T304 137V192H0Z" fill="url(#poll-water)"/><path d="M0 0H304V103Q237 116 176 103T0 108Z" fill="url(#poll-haze)"/></g>
+<g id="layer-context">
+  <path d="M28 143V98H63V143Zm39 0V84H95V143Zm42 0V105H134V143Zm86 0V96H224V143Zm39 0V82H271V143Z" fill="url(#poll-building)" stroke="#4C5955" stroke-width="1.3"/>
+  <path d="M39 98V72L48 70V98Zm47-14V58L96 56V84Z" fill="#73786D" stroke="#49534E" stroke-width="1.2"/>
+  <path d="M0 157Q44 145 88 157T176 154Q230 143 304 156V192H0Z" fill="#6A7466"/>
+  <path d="M0 147Q69 137 139 150T304 146" fill="none" stroke="#A9B2A0" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#poll-shadow)">
+  <path d="M44 67Q33 57 40 45Q46 36 58 42Q64 29 76 36Q86 42 80 54Q95 57 92 69Q88 79 75 75L59 75Z" fill="#7C8176" opacity=".86"/>
+  <path d="M87 56Q78 44 86 34Q93 25 104 31Q111 19 123 26Q133 33 126 44Q141 48 137 60Q132 69 119 64L102 64Z" fill="#747B73" opacity=".82"/>
+  <path d="M198 83Q185 71 193 60Q201 50 213 56Q220 41 233 49Q243 56 237 68Q252 71 249 83Q243 91 230 87L214 89Z" fill="#828578" opacity=".77"/>
+  <path d="M0 163Q47 152 92 163T177 160Q240 149 304 161" fill="none" stroke="#A7A17D" stroke-width="2.5"/>
+  <path d="M8 174q20-6 40 0m85-5q19-6 35 0m83 3q20-7 39 0" fill="none" stroke="#8D9A89" stroke-width="1.7"/>
+  <path d="M34 117h8m29-19h10m-2 37h10m37-28h9m91 25h8m27-35h10" fill="none" stroke="#CFCBAF" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <rect x="48" y="111" width="8" height="9" fill="#C7BC98"/><rect x="77" y="99" width="9" height="11" fill="#C7BC98"/><rect x="235" y="108" width="9" height="10" fill="#C7BC98"/><rect x="279" y="96" width="8" height="11" fill="#C7BC98"/>
+  <path d="M18 132q12-5 22-1m100-11q10-5 20 0m95-14q9-5 18-1" fill="none" stroke="#B8B8A6" stroke-width="1.4"/>
+  <circle cx="18" cy="178" r="1.8" fill="#D7D0B5"/><circle cx="114" cy="180" r="1.6" fill="#D7D0B5"/><circle cx="275" cy="173" r="1.7" fill="#D7D0B5"/>
+</g>
+<g id="layer-lighting"><path d="M39 74q17-5 34 0m15-21q18-7 33 0" fill="none" stroke="#B6B4A4" stroke-width="1.2"/><path d="M0 146Q69 136 139 149" fill="none" stroke="#D5D4C2" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

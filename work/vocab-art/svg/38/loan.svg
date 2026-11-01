@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: loan (noun; general sum of money lent temporarily)
+  CONTEXTUAL_DEFINITION: Money given temporarily to a borrower with an agreement to return it.
+  PEDAGOGICAL_ARCHETYPE: 3 - Role exchange with time cue
+  SYNONYM_GUARD: Use an informal peer-to-peer lending scene, unlike “bank loan,” which specifically shows a financial institution lending.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two friends across a small table; lender passes an envelope of notes, borrower accepts; a return arrow loops later toward lender beside a small blank calendar with untallied squares.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:loan" data-archetype="role-exchange">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="loan-envelope" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <radialGradient id="loan-coin-highlight"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="loan-friend-hand" d="M75 112 C87 101 101 101 113 109 L136 122 L129 137 L106 127 L87 132 Z"/>
+    <clipPath id="loan-friend-clip"><use href="#loan-friend-hand"/></clipPath>
+    <filter id="loan-peer-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="152" width="304" height="40" fill="#EEE7DA"/><path d="M0 152 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="113" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Friendly private setting, not a bank -->
+  <g id="layer-context"><path d="M30 134 H275 V147 H30 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M37 139 H268" stroke="#E3AC77" stroke-width="1.7"/><rect x="235" y="36" width="43" height="43" rx="4" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8"/><path d="M235 46 H278 M249 37 V78 M264 37 V78" stroke="#CBD5E1" stroke-width="1.4"/><path d="M244 58 H251 M259 66 H267" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Two friends lend and receive a temporary sum -->
+  <g id="layer-focal" filter="url(#loan-peer-shadow)"><circle cx="57" cy="76" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M35 128 Q37 101 57 101 Q77 101 80 128 Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/><path d="M50 79 Q57 83 64 78" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><circle cx="244" cy="77" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M221 129 Q223 102 244 102 Q266 102 269 129 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M236 80 Q244 84 252 79" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M76 117 C87 105 102 105 114 112 L139 126 L132 141 L107 131 L88 137 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><g clip-path="url(#loan-friend-clip)"><rect x="71" y="102" width="75" height="50" fill="#D89A6C"/><path d="M76 138 Q105 119 141 135 V155 H72Z" fill="#B6784B"/></g><use href="#loan-friend-hand" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M167 126 C180 111 195 110 208 118 L229 130 L222 144 L201 135 L181 141 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/></g>
+  <!-- 4. Lent amount, handoff and repayment loop -->
+  <g id="layer-details"><rect x="123" y="105" width="48" height="28" rx="3" transform="rotate(-4 123 105)" fill="url(#loan-envelope)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M129 113 H164 M129 119 H154" stroke="#568552" stroke-width="1.4"/><ellipse cx="145" cy="126" rx="8" ry="4.1" fill="url(#loan-coin-highlight)" stroke="#1E2A3B" stroke-width="1.1"/><path d="M173 99 Q199 86 218 95" fill="none" stroke="#4A72B2" stroke-width="2.1" stroke-dasharray="4 4"/><path d="M213 90 L221 96 L212 99 Z" fill="#4A72B2"/><path d="M212 94 Q197 71 172 76" fill="none" stroke="#7FB07A" stroke-width="1.8" stroke-dasharray="3 4"/><path d="M175 72 L168 76 L176 80 Z" fill="#7FB07A"/></g>
+  <!-- 5. Exchange glints -->
+  <g id="layer-lighting"><path d="M126 110 H147" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M193 49 L193 57 M189 53 H197" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M48 59 Q57 55 66 59" fill="none" stroke="#ECC09D" stroke-width="1.6"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: toothpaste (Noun)
+  CONTEXTUAL_DEFINITION: A paste squeezed onto a brush for cleaning the teeth.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Focus on the squeeze tube and striped paste ribbon; the toothbrush card focuses on bristles and handle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale bathroom tile and counter.
+    - Context_Layer: Short toothbrush behind the tube.
+    - Focal_Layer: Soft squeeze tube with nozzle and striped paste.
+    - Details_Layer: Curl of paste resting on brush head.
+    - Lighting_Layer: Clean gloss on tube.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:toothpaste" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="169" rx="78" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M174 132 H261" stroke="#5479AC" stroke-width="7" stroke-linecap="round"/><path d="M228 128 V111 M235 128 V111 M242 128 V111 M249 128 V111" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M183 137 V145 M252 137 V145" stroke="#647D8B" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M70 60 Q73 52 84 53 L169 65 L164 126 L79 137 Q69 138 67 129Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2.6"/><path d="M76 65 L161 76 M75 126 L158 116" stroke="#F1B08F" stroke-width="2"/><path d="M85 57 L151 66 M82 132 L153 123" stroke="#DCECFB" stroke-width="2.5"/><path d="M163 82 L182 85 L180 101 L162 99Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="1.7"/><path d="M179 88 Q193 82 203 90 Q209 95 203 101 Q195 106 186 99Z" fill="#FAF8F3" stroke="#D8DCE0" stroke-width="1.3"/><path d="M198 91 Q207 88 213 93" fill="none" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M80 80 L155 89 M78 92 L154 100" stroke="#A9543F" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

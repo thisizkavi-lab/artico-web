@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: temperature (Noun)
+  CONTEXTUAL_DEFINITION: The measurement of how hot or cold the air or an object is.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person checking a thermometer outdoors; keep the instrument and reading central without numbers.
+  PEDAGOGICAL_ARCHETYPE: 1 - Measurement
+  SYNONYM_GUARD: This is the measured condition itself, broader than a particular unit such as Celsius or Fahrenheit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Hand holding a large glass thermometer upright against a partly cloudy outdoor scene, with the liquid level visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:temperature" data-archetype="temperature-measurement">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="tm-sky" x2="0" y2="1"><stop stop-color="#EAF3EF"/><stop offset="1" stop-color="#BFDADB"/></linearGradient><linearGradient id="tm-glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D2E7E6"/></linearGradient><linearGradient id="tm-red" x2="0" y2="1"><stop stop-color="#EF9A68"/><stop offset="1" stop-color="#C54F45"/></linearGradient><filter id="tm-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tm-sky)"/><path d="M0 118Q76 105 152 118T304 112V192H0Z" fill="#A7BA9C"/><path d="M0 153H304V192H0Z" fill="#BDAA82"/></g>
+ <g id="layer-context"><circle cx="251" cy="39" r="15" fill="#EBC86F" opacity=".82"/><path d="M20 174H282" fill="none" stroke="#A99874" stroke-width="1.2"/><path d="M20 71Q34 60 48 71Q62 82 76 71Q90 60 104 71" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M219 118L231 79L243 118M258 118L269 82L280 118" fill="#728F6D"/><ellipse cx="148" cy="163" rx="62" ry="5" fill="#5C523D" opacity=".13"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#tm-shadow)">
+  <rect x="118" y="29" width="53" height="126" rx="25" fill="url(#tm-glass)" stroke="#64828A" stroke-width="2"/><rect x="138" y="44" width="13" height="94" rx="6.5" fill="#E7F0EF"/><rect x="138" y="82" width="13" height="57" rx="6" fill="url(#tm-red)"/><circle cx="144.5" cy="146" r="16" fill="url(#tm-red)" stroke="#AA5349" stroke-width="1.4"/>
+  <path d="M107 48H136M107 61H128M107 74H136M107 87H128M107 100H136M107 113H128M107 126H136" fill="none" stroke="#56727B" stroke-width="1.7"/><path d="M102 82H139" fill="none" stroke="#D7834B" stroke-width="2.8"/><path d="M147 35q9-5 17 0m-23 16v20" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/>
+  <path d="M164 115Q178 108 190 116L199 135L192 153H168L160 139Z" fill="#D39A72" stroke="#805A46" stroke-width="1.3"/><path d="M171 121L165 115L158 107L153 111L164 131" fill="#D39A72" stroke="#805A46" stroke-width="1.2" stroke-linejoin="round"/><path d="M171 120q9-4 17 0" fill="none" stroke="#F0C8A9" stroke-width="1.4"/>
+ </g>
+ <g id="layer-details"><path d="M123 35q12-6 24 0m-21 14v60m-19-22h20" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/><circle cx="144" cy="146" r="1.6" fill="#FFF8E7"/><circle cx="251" cy="39" r="1.2" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M183 120l9 11m-25 12h21" fill="none" stroke="#AA725A" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M122 33q12-7 22-2m-19 20v43" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><circle cx="251" cy="39" r="1.2" fill="#FFF8E7"/><path d="M165 116q11-5 19 1" fill="none" stroke="#F0D1B8" stroke-width="1.2"/></g>
+</svg>

@@ -1,0 +1,50 @@
+{
+  "chapter_title": "Meeting and presenting",
+  "domain_setting": "A modern boardroom and presentation space, with seated participants, agenda boards, meeting records, conference-call equipment, and a shared screen.",
+  "ambient_palette": {
+    "background": "#FAF8F3",
+    "floor": "#EEE7DA",
+    "ink": "#1E2A3B",
+    "context_ink": "#64748B",
+    "meeting_blue": "#5479AC",
+    "decision_gold": "#F2C14E",
+    "agreement_green": "#7FB07A",
+    "warm_skin": "#D89A6C",
+    "focus_halo": "#FEF3C7"
+  },
+  "recurring_scale_anchors": [
+    "adult meeting participants are busts or seated figures centered near x=152, with heads around y=55..90",
+    "boardroom tables and podiums sit around y=132..145, leaving floor visible below y=154",
+    "meeting tables, unlettered agenda boards, minutes pages, clocks, microphones, laptops, and projection screens recur as props",
+    "all essential silhouettes stay within x=24..280 and y=16..176 on a 304x192 stage"
+  ],
+  "polysemy_resolution_table": {
+    "absent": "not present at a scheduled meeting; not absent-minded or missing in an abstract list",
+    "attend a meeting / attendee": "participate in or be present at a work meeting; distinguish action from participant",
+    "board of directors": "the company's governing group of directors around a boardroom table; not a writing board",
+    "action item / action points": "specific follow-up tasks agreed in a meeting; distinguish one assigned task from a compact list of decisions or tasks",
+    "agenda / on the agenda / any other business (AOB)": "planned meeting topics and the final open slot for additional items; no written labels or acronym in the art",
+    "main objective": "the primary intended outcome of a meeting; not a military target or sports goal",
+    "meeting minutes / take minutes / review the minutes": "written meeting record; distinguish the document, the note-taking action, and colleagues checking the record; not units of time",
+    "strategy": "a business plan for achieving a goal; not military tactics or a battlefield",
+    "conference call": "a remote meeting with several people connected by devices; not a personal phone call",
+    "presentation / give a presentation": "a prepared visual explanation delivered to an audience; distinguish the delivered material from the speaker's act; not a gift or formal presentation ceremony",
+    "slide": "one visual page in a presentation, displayed on a screen; not the action of sliding",
+    "answer / question": "a response to a question and a request for information in a meeting; distinguish statement from inquiry",
+    "follow-up": "a later check or next contact after a meeting; not pursuit or physical following",
+    "interrupt": "cut into another person's speaking turn; not a technical interruption",
+    "reach a consensus / unanimous agreement / agree": "shared decision and common assent; distinguish gradual consensus, everyone aligned, and the act of agreeing",
+    "show of hands": "participants visibly raise hands to indicate a vote or preference; not a count of hands as body parts",
+    "run out of time": "a meeting reaches its end before all planned work is finished; not time running physically away",
+    "sum up": "briefly state the main points at the end of a discussion; not arithmetic",
+    "take questions": "invite and respond to audience questions after a presentation; not physically carry questions"
+  },
+  "sibling_contrasts": {
+    "meeting roles": "absent shows an empty chair; attendee shows a person present; attend a meeting shows entering or participating; board of directors emphasizes a formal governing group.",
+    "meeting records": "agenda is a forward-looking plan; action item is one assigned task; action points are a short set of resulting tasks; meeting minutes are the written record; take minutes shows note-taking; review the minutes shows later checking.",
+    "presentation": "presentation is the visual material; give a presentation is a speaker addressing an audience; slide is one individual screen page; conference call is a distributed remote meeting.",
+    "decision making": "discussion shows exchange, agree shows two people aligned, consensus shows a group arriving at one choice, unanimous agreement shows every participant signaling assent, and show of hands is a visible voting gesture.",
+    "closing a meeting": "follow-up happens later; sum up condenses what was said; take questions invites audience inquiry; run out of time shows an unfinished agenda at the clock boundary; any other business is an open final slot."
+  },
+  "art_direction": "Constructive editorial boardroom scenes with warm paper, navy ink, compact blue meeting props, and restrained green/gold signals. Use icon marks only, never letters, words, numerals, logos, or readable slide content. Keep similar meeting records and decision actions compositionally distinct."
+}

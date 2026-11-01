@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: any other business / AOB
+  CONTEXTUAL_DEFINITION: The final part of a meeting where participants can raise additional topics not already listed.
+  PEDAGOGICAL_ART_DIRECTOR: Show the planned topics already checked off and one final open slot receiving a new idea from a participant.
+  PEDAGOGICAL_ARCHETYPE: 5 - Open agenda slot
+  SYNONYM_GUARD: Use a last-positioned empty slot and a newly raised topic; do not show an unrelated business company or a generic meeting plan only.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set an agenda sheet at x=104..202, y=43..128. Show three muted completed rows above and one large dashed open row at the bottom; a participant at x=224..263 raises a hand while a small idea card moves toward that final slot. Include no letters or acronym.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:any other business / aob" data-archetype="open-agenda-slot">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="aob-sheet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="aob-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="aob-halo"><stop stop-color="#FFF1B9" stop-opacity=".78"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="aob-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="29" y="25" width="246" height="100" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 131 H274 V145 H30 Z" fill="url(#aob-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/><rect x="41" y="38" width="44" height="28" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.1"/><path d="M48 47 H77 M48 54 H72" stroke="#A8D4A2" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#aob-shadow)"><rect x="102" y="37" width="99" height="90" rx="3" fill="url(#aob-sheet)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M113 48 H188 M113 54 H180" stroke="#94A3B8" stroke-width="1.1"/><path d="M111 62 H192 M111 77 H192 M111 92 H192" stroke="#CBD5E1" stroke-width="1"/><rect x="115" y="66" width="72" height="10" rx="2" fill="#E5F0E1"/><path d="M121 71 L124 74 L129 68 M121 86 L124 89 L129 83 M121 101 L124 104 L129 98" fill="none" stroke="#547A56" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M134 70 H179 M134 85 H179 M134 100 H179" stroke="#64748B" stroke-width="1"/><rect x="110" y="108" width="83" height="13" rx="2" fill="#FFF8E6" stroke="#D99A2B" stroke-width="1.2" stroke-dasharray="3 2"/><circle cx="118" cy="114.5" r="2.3" fill="#F2C14E"/><path d="M126 113 H184 M126 117 H176" stroke="#D6B869" stroke-width=".9" stroke-dasharray="2 3"/><path d="M218 124 Q220 102 231 97 L232 88 Q228 84 230 77 Q237 69 246 72 Q254 75 251 86 L248 93 Q261 98 263 121 L260 132 H222 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="242" cy="80" rx="7.5" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M234 78 Q236 71 243 71 Q250 72 252 78 Q245 75 239 76 Z" fill="#3D342D"/><path d="M225 106 L219 80 L223 78 L233 105" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M217 78 L214 68 L219 65 L224 78" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><rect x="68" y="94" width="21" height="15" rx="2" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1.1"/><path d="M72 100 H85 M72 104 H82" stroke="#D6B869" stroke-width=".9"/><path d="M89 101 Q100 98 110 109" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="2 3"/></g>
+  <g id="layer-details"><circle cx="212" cy="67" r="2.3" fill="#F2C14E"/><path d="M208 64 L212 59 L216 64" fill="none" stroke="#D99A2B" stroke-width="1.2"/><circle cx="198" cy="79" r="2" fill="#8EB0DE"/><path d="M49 114 H61" stroke="#64748B" stroke-width="1.1"/><path d="M132 125 H177" stroke="#FFE2A8" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="99" rx="78" ry="58" fill="url(#aob-halo)" opacity=".24"/><path d="M109 42 H193" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

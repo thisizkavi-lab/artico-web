@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: moisturizer (Noun)
+  CONTEXTUAL_DEFINITION: A cream or lotion applied to prevent skin from becoming dry.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with texture cue
+  SYNONYM_GUARD: Show a cream jar with a soft lotion dollop, distinct from liquid fragrance.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and product shadow.
+    - Context_Layer: Cool sage halo.
+    - Focal_Layer: Open wide jar of cream.
+    - Details_Layer: Cream swirl and clean lid.
+    - Lighting_Layer: Gloss on creamy surface.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:moisturizer" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="157" rx="99" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="153" cy="93" rx="112" ry="68" fill="#E4EEE9" opacity=".7"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M78 79H207L201 146Q199 157 187 157H97Q84 155 83 145Z" fill="#D9E2E1" stroke="#1E2A3B" stroke-width="2.7"/><path d="M84 110H202L199 145Q198 152 188 152H97Q89 151 89 144Z" fill="#C5D4D0"/>
+  <ellipse cx="142" cy="80" rx="71" ry="18" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/><ellipse cx="142" cy="79" rx="57" ry="11" fill="#F2EADF" stroke="#AAB5C3" stroke-width="1.5"/>
+  <path d="M224 67H261V81H224Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.1"/><path d="M218 77H267V87H218Z" fill="#C5CCD4" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M104 80Q124 65 145 78Q156 87 169 73Q178 65 189 78Q172 90 151 87Q126 95 104 80Z" fill="#FFFFFF" stroke="#D5C9BB" stroke-width="1.5"/><path d="M127 78Q140 71 150 79" fill="none" stroke="#E8E1D7" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M96 122Q141 128 193 120" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M230 104Q217 105 206 107" fill="none" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="3 4"/>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: home improvements (Noun phrase)
+  CONTEXTUAL_DEFINITION: Work that repairs, updates, or makes a home more useful and attractive.
+  PEDAGOGICAL_ARCHETYPE: 1 — Home setting with several concrete improvement cues
+  SYNONYM_GUARD: A house is visibly being upgraded with a fresh exterior, new window, and a worker on a ladder; later cards isolate each repair task.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small house with roof and front wall against a pale outdoor sky.
+    - Context_Layer: New window, repainting zone, ladder, and a toolbox indicate a renovation project.
+    - Focal_Layer: Worker at x=89..137 stands on a ladder using a paint roller on the home's exterior wall.
+    - Details_Layer: Paint can, roller tray, window trim, roof tiles, ladder rungs, and tool belt.
+    - Lighting_Layer: Sunlit trim and a clean fresh-paint edge on the wall.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:home improvements" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6D6;--c-surface:#C88446;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="wall-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3ECE1"/><stop offset="1" stop-color="#E3AC77"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 149H304V192H0Z" fill="#EAD8BE"/><path d="M37 76L155 28L272 76V155H37Z" fill="url(#wall-grad)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M27 78L155 23L282 78L275 88L155 38L34 88Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.2"/><path d="M37 155H273" stroke="#8A5A35" stroke-width="2.2"/><path d="M0 166H304" stroke="#A27652" stroke-width="2"/><ellipse cx="160" cy="168" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M177 88H241V137H177Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.2"/><path d="M207 89V137M178 112H240" stroke="#C88446" stroke-width="3"/><path d="M182 93H202M213 93H236" stroke="#FFFFFF" stroke-width="2"/><path d="M20 143H68V158H20Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M25 139H62V144H25Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.2"/><path d="M47 142V138" stroke="#1E2A3B" stroke-width="1.5"/><path d="M244 146Q250 132 261 136Q268 142 257 148Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M89 97L66 163M128 96L148 163" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M89 97L66 163M128 96L148 163" stroke="#C88446" stroke-width="3" stroke-linecap="round"/><path d="M80 121L137 121M75 142L143 142" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M80 121L137 121M75 142L143 142" stroke="#5479AC" stroke-width="2.6" stroke-linecap="round"/><circle cx="106" cy="74" r="12" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M95 73Q96 59 107 60Q119 61 118 74L112 68L100 68Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M94 91Q106 84 118 91L126 112L107 120L89 108Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M98 96L87 106L101 113" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M98 96L87 106L101 113" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M119 98L139 82L148 86" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M119 98L139 82L148 86" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M143 83V71" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M136 70H151V83H136Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M105 119L103 135L116 135L119 117" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M103 135L99 144M115 135L122 144" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M103 135L99 144M115 135L122 144" stroke="#D89A6C" stroke-width="4.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M91 78Q103 74 117 78" fill="none" stroke="#5479AC" stroke-width="1.5"/><path d="M32 80L42 83M49 73L59 76M75 62L86 65M119 47L129 50M178 149H196" stroke="#F2A472" stroke-width="1.4"/><path d="M21 144H68M24 151H63" stroke="#8EB0DE" stroke-width="1.5"/><path d="M64 93V117M151 97V119" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="151" cy="84" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M39 80L153 32L269 80" fill="none" stroke="#F5C6A1" stroke-width="1.5" opacity=".75"/><path d="M140 75L147 72" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M180 90H202" stroke="#FFFFFF" stroke-width="1.6" opacity=".7"/></g>
+</svg>

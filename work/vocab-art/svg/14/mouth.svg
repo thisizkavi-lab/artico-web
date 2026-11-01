@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: mouth (Noun)
+  CONTEXTUAL_DEFINITION: The opening in the face used for eating and speaking.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole callout
+  SYNONYM_GUARD: Show the whole oral opening with lips, visible teeth, and tongue; lips card isolates only the outer lip shape.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close lower-face crop.
+    - Context_Layer: Nose and chin are muted.
+    - Focal_Layer: Open mouth with surrounding lips, teeth, and tongue.
+    - Details_Layer: Dark oral cavity clearly distinguishes the opening.
+    - Lighting_Layer: Warm halo surrounds the entire mouth region.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:mouth" data-archetype="part-callout">
+  <defs><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="98" rx="120" ry="80" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M57 31Q152 13 247 31L235 167Q152 181 69 167Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M141 54Q152 62 163 54" fill="none" stroke="#94A3B8" stroke-width="2"/><path d="M137 157Q152 162 167 157" fill="none" stroke="#94A3B8" stroke-width="1.4"/><ellipse cx="152" cy="116" rx="69" ry="35" fill="#FEF3C7" opacity=".57"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M89 112Q119 84 152 98Q185 84 215 112Q207 150 152 152Q97 150 89 112Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.6"/><path d="M99 111Q126 96 152 105Q178 96 205 111Q192 123 152 123Q112 123 99 111Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.5"/><path d="M102 111Q152 101 202 111" fill="none" stroke="#F8DDCA" stroke-width="1.1"/><path d="M119 133Q152 120 185 133Q177 146 152 146Q128 146 119 133Z" fill="#D9857F" stroke="#743F48" stroke-width="1.4"/><path d="M122 138Q151 131 180 138" fill="none" stroke="#F1B7B2" stroke-width="1.1"/><path d="M95 112Q117 87 151 100Q185 87 209 112" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M103 109Q124 98 149 105" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><path d="M84 110L73 108M220 110L231 108" stroke="#4A72B2" stroke-width="1.4"/><path d="M147 155H157" stroke="#94A3B8" stroke-width="1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="117" rx="76" ry="43" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4" opacity=".55"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: owl (noun)
+  CONTEXTUAL_DEFINITION: A compact nocturnal owl with a round facial disk, forward-facing eyes, and feather ear tufts.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: The two large forward eyes and round face are the primary cues; avoid a parrot's hooked bill or a daytime songbird pose.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perch a plump owl front-facing at x=96..209 y=50..141; round head with two eyes and subtle ear tufts; folded wings; feet clasp a branch at y=144; moonlit branches behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:owl" data-archetype="perched-owl">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#9A7451;--c-secondary:#594534;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="owl-sky" x2="0" y2="1"><stop stop-color="#C8D8E3"/><stop offset="1" stop-color="#EDE9DC"/></linearGradient>
+  <linearGradient id="owl-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AD855D"/><stop offset="1" stop-color="#71513B"/></linearGradient>
+  <radialGradient id="owl-face"><stop stop-color="#F1E7D0"/><stop offset="1" stop-color="#CBB896"/></radialGradient>
+  <filter id="owl-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#owl-sky)"/><circle cx="249" cy="43" r="25" fill="#F8E9B1" opacity=".72"/><circle cx="249" cy="43" r="34" fill="#F8E9B1" opacity=".12"/><path d="M0 127Q83 117 157 128T304 121V192H0Z" fill="#D7DFD3"/><path d="M0 151Q89 141 164 152T304 147V192H0Z" fill="#C4D0BF"/><path d="M33 132V63m0 36L17 83m16 19 16-19m206 47V59m0 42 17-19m-17 7-14-18" fill="none" stroke="#786149" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M25 139Q112 133 186 139T281 134" fill="none" stroke="#755439" stroke-width="8" stroke-linecap="round"/><path d="M42 133l-9-11m9 11 10-12m177 13 7-11" fill="none" stroke="#755439" stroke-width="3" stroke-linecap="round"/><ellipse cx="152" cy="153" rx="57" ry="5" fill="#53604D" opacity=".18"/></g>
+ <g id="layer-focal" filter="url(#owl-shadow)"><path d="M100 97Q101 70 119 55L128 42L141 56Q151 51 165 56L179 42L186 62Q205 77 205 101Q207 128 186 140Q153 151 119 137Q98 124 100 97Z" fill="url(#owl-coat)" stroke="#60452F" stroke-width="1.6"/><path d="M108 88Q111 65 135 64Q153 64 155 91Q151 111 132 116Q112 108 108 88Z" fill="url(#owl-face)" stroke="#A58E6A" stroke-width="1.1"/><path d="M151 90Q154 63 177 64Q198 70 197 90Q194 109 176 116Q158 109 151 90Z" fill="url(#owl-face)" stroke="#A58E6A" stroke-width="1.1"/><circle cx="134" cy="88" r="10" fill="#DFAF55" stroke="#795B35" stroke-width="1.2"/><circle cx="173" cy="88" r="10" fill="#DFAF55" stroke="#795B35" stroke-width="1.2"/><circle cx="134" cy="88" r="4" fill="#1E2A3B"/><circle cx="173" cy="88" r="4" fill="#1E2A3B"/><circle cx="135" cy="86" r="1.2" fill="#FFFFFF"/><circle cx="174" cy="86" r="1.2" fill="#FFFFFF"/><path d="M151 96L144 105L153 109L160 103Z" fill="#DFA33B" stroke="#94652C" stroke-width="1"/><path d="M109 102Q120 117 137 119M194 102Q184 117 170 119" fill="none" stroke="#E1CDA9" stroke-width="2" stroke-linecap="round"/><path d="M118 122q12 4 22 2m22 0q12 2 23-3m-56 8q10 3 17 2m22-1q10 2 17-2" fill="none" stroke="#C9AA7B" stroke-width="1.2"/><path d="M137 136l-2 8m29-8 2 8m-29 0-6 4m35-4 6 4" fill="none" stroke="#D9A73D" stroke-width="2.8" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M21 121l-4-9m9 9 6-10m213 11 4-8m9 8 5-10" fill="none" stroke="#7F936F" stroke-width="1.4"/><path d="M118 76q7-8 15-8m32 0q8 0 13 7" fill="none" stroke="#FFF5DE" stroke-width="1.5" opacity=".75" stroke-linecap="round"/><circle cx="215" cy="113" r="1.4" fill="#D3C19B"/></g>
+ <g id="layer-lighting"><path d="M116 64q8-9 17-8m34 1q8-2 13 4" fill="none" stroke="#F2D9AE" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="153" cy="92" rx="57" ry="40" fill="#FFF7E7" opacity=".04"/></g>
+</svg>

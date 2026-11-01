@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: fail (Verb)
+  CONTEXTUAL_DEFINITION: To receive an unsuccessful result on a school exam or assessment.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive state and outcome
+  SYNONYM_GUARD: A student looks disappointed at a returned assessment with a clear red correction mark, contrasted with the successful paper nearby.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Classroom desk and pale board.
+    - Context_Layer: A successful classmate's paper sits softly in the background.
+    - Focal_Layer: Student receives a returned paper marked with a large red cross.
+    - Details_Layer: Drooped posture, eraser, and teacher's hand passing the page.
+    - Lighting_Layer: Muted cool tone around the failed paper.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:fail" data-archetype="outcome">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="fail-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="fail-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fail-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="22" y="28" width="95" height="54" rx="3" fill="#E3E8F0" stroke="#64748B" stroke-width="1.5"/><path d="M33 43H106M33 51H102" stroke="#AFC5DA" stroke-width="1.6"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M212 109H277V118H212Z" fill="#A98A64"/><path d="M220 118V144M269 118V144" stroke="#8D765A" stroke-width="3"/><path d="M226 96L255 92L258 103L228 106Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M231 99L236 102L243 95" fill="none" stroke="#91A77C" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#fail-shadow)"><circle cx="102" cy="61" r="14" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M88 61Q89 47 103 47Q116 48 116 62L111 65Q109 55 102 55Q96 55 92 68Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M83 79Q102 72 121 80L128 117L116 129L91 123L78 98Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M85 85L69 103L57 116M118 85L138 103L151 109" fill="none" stroke="#1E2A3B" stroke-width="5.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M85 85L69 103L57 116M118 85L138 103L151 109" fill="none" stroke="#C98961" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M91 124L88 148M115 125L122 148" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M91 124L88 148M115 125L122 148" stroke="#315782" stroke-width="3" stroke-linecap="round"/><path d="M150 112L207 103L214 144L156 152Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M164 121L192 116M165 129L195 124" stroke="#88A9D0" stroke-width="1.5"/><path d="M168 114L197 139M197 114L168 139" stroke="#D9857F" stroke-width="4" stroke-linecap="round"/><path d="M227 110Q217 104 211 110L208 117" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M227 110Q217 104 211 110L208 117" fill="none" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M94 68Q102 72 110 68" fill="none" stroke="#8D3B43" stroke-width="1.5"/><path d="M79 76Q101 68 125 78" fill="none" stroke="#D9857F" stroke-width="2" opacity=".75"/><rect x="54" y="133" width="19" height="8" rx="3" fill="#E3E8F0" stroke="#64748B" stroke-width="1"/><path d="M199 153H222" stroke="#A98A64" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="150" cy="94" rx="122" ry="74" fill="#FEF9C3" opacity=".05"/><path d="M150 112L207 103L214 144L156 152Z" fill="#D9857F" opacity=".08"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: ferry
+  CONTEXTUAL_DEFINITION: A scheduled passenger vessel carrying people, and sometimes vehicles, between shores.
+  PEDAGOGICAL_ART_DIRECTOR: Show a large multi-deck passenger ferry moving between two close shores, with people on deck and a car aboard.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero vehicle with place context
+  SYNONYM_GUARD: This is a frequent shore-to-shore crossing vessel, larger than a boat but not a distant ocean ship.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Draw water below y=114; ferry hull from x=50..255 and y=81..145; two passenger decks and bridge above; show low shore silhouettes at x=18..47 and x=258..285, and one small car in the lower deck.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:ferry" data-archetype="hero-water-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ferry-hull" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9EEF0"/><stop offset="1" stop-color="#B9C8D1"/></linearGradient>
+    <linearGradient id="ferry-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A9CBE0"/><stop offset="1" stop-color="#6897B5"/></linearGradient>
+    <radialGradient id="ferry-halo"><stop stop-color="#E6F0F5" stop-opacity=".7"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="ferry-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><circle cx="56" cy="45" r="16" fill="#F2C14E" opacity=".72"/><path d="M0 99 Q38 86 74 98 T148 99 T222 97 T304 99 V192 H0 Z" fill="#EEF2F1"/><path d="M0 123 Q40 114 80 123 T160 123 T240 121 T304 123 V192 H0 Z" fill="url(#ferry-water)"/><path d="M0 99 Q20 91 43 96 L48 119 H0 Z" fill="#7FA381"/><path d="M257 117 L262 93 Q278 87 304 98 V123 H257 Z" fill="#8BAE83"/><path d="M22 97 V78 M28 97 V74 M275 99 V79 M281 99 V73" stroke="#647D66" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M21 143 H50 M252 145 H286" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M57 157 Q84 151 110 157 M198 158 Q225 152 252 158" fill="none" stroke="#E7F2F4" stroke-width="2" stroke-linecap="round"/><path d="M99 167 H203" stroke="#4E829F" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#ferry-shadow)"><path d="M48 111 H254 L237 143 Q227 151 196 153 H86 Q63 151 56 140 Z" fill="url(#ferry-hull)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M63 122 H242" stroke="#5479AC" stroke-width="3"/><path d="M72 83 H217 V115 H69 Z" fill="#E7ECEF" stroke="#1E2A3B" stroke-width="2.2"/><path d="M83 88 H103 V106 H83 Z M110 88 H130 V106 H110 Z M137 88 H157 V106 H137 Z M164 88 H184 V106 H164 Z M191 88 H209 V106 H191 Z" fill="#BBD5E5" stroke="#64748B" stroke-width="1.1"/><path d="M80 67 H193 V84 H77 Z" fill="#D7E1E6" stroke="#1E2A3B" stroke-width="2"/><path d="M90 71 H108 V80 H90 Z M116 71 H134 V80 H116 Z M142 71 H160 V80 H142 Z M168 71 H185 V80 H168 Z" fill="#BBD5E5" stroke="#64748B" stroke-width="1"/><path d="M171 57 H205 V68 H169 Z" fill="#D7E1E6" stroke="#1E2A3B" stroke-width="1.8"/><path d="M179 59 H188 V65 H179 Z M192 59 H201 V65 H192 Z" fill="#BBD5E5"/><path d="M205 72 V111 M215 84 V111" stroke="#1E2A3B" stroke-width="1.5"/><path d="M57 115 H244" stroke="#FFFFFF" stroke-width="1.5"/><path d="M139 124 H189 V143 H139 Z" fill="#D4A45F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M145 128 H160 V136 H145 Z M164 128 H183 V136 H164 Z" fill="#C3DDE9" stroke="#64748B" stroke-width=".9"/><circle cx="150" cy="143" r="4" fill="#263548"/><circle cx="179" cy="143" r="4" fill="#263548"/><path d="M51 112 H62 V132 H51 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1"/><path d="M238 111 H250 V131 H238 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><circle cx="91" cy="111" r="3" fill="#F2C14E"/><circle cx="111" cy="111" r="3" fill="#D48765"/><circle cx="151" cy="111" r="3" fill="#7DAA78"/><circle cx="177" cy="111" r="3" fill="#D48765"/><path d="M66 54 H218" stroke="#FFFFFF" stroke-width="1" opacity=".9"/><path d="M67 80 H219" stroke="#5479AC" stroke-width="1.4"/><path d="M34 132 H48 M256 133 H275" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M70 151 Q90 147 108 151 M211 151 Q231 147 248 151" fill="none" stroke="#E9F4F6" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="81" rx="117" ry="74" fill="url(#ferry-halo)" opacity=".18"/><path d="M31 30 H275" stroke="#FFFFFF" stroke-width=".7"/><path d="M55 153 Q144 164 239 151" fill="none" stroke="#1E2A3B" stroke-width="1" opacity=".35"/></g>
+</svg>

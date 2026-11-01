@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: duck (noun)
+  CONTEXTUAL_DEFINITION: A wild mallard duck floating at the edge of a marsh.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Show the male mallard's glossy green head and broad flat bill, chestnut breast, blue wing patch, and floating body; keep the long-necked goose silhouette for another card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set a broad floating body x=84..206 y=95..143, green head at x=202 y=79, flattened orange bill to x=231, chestnut chest, blue speculum on wing, low waterline and reeds.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:duck" data-archetype="mallard-at-marsh">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#527E66;--c-secondary:#805334;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="duck-sky" x2="0" y2="1"><stop stop-color="#DCEAF2"/><stop offset="1" stop-color="#F4F1E6"/></linearGradient>
+  <linearGradient id="duck-water" x2="0" y2="1"><stop stop-color="#9FC5C4"/><stop offset="1" stop-color="#78A9AA"/></linearGradient>
+  <linearGradient id="duck-plumage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B98A5C"/><stop offset="1" stop-color="#79543B"/></linearGradient>
+  <filter id="duck-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#duck-sky)"/><path d="M0 112Q55 104 107 111T202 108T304 110V192H0Z" fill="#DCE4D5"/><path d="M0 132Q76 123 151 134T304 128V192H0Z" fill="url(#duck-water)"/><path d="M0 160Q74 153 146 161T304 156V192H0Z" fill="#90B6B4"/><circle cx="52" cy="42" r="22" fill="#F5D98E" opacity=".48"/></g>
+ <g id="layer-context"><path d="M23 132V83m0 25-12-13m12 25 11-18m246 19V75m0 33-10-14m10 25 12-17" fill="none" stroke="#78916E" stroke-width="3" stroke-linecap="round"/><path d="M13 93q8-12 15-5m-18 8q9-7 16-1m240-16q8-11 16-5m-12 12q9-8 17-1" fill="none" stroke="#77926F" stroke-width="2.4" stroke-linecap="round"/><path d="M28 146q25-7 46-2m177 1q24-6 42-1" fill="none" stroke="#D3E5DE" stroke-width="2" opacity=".8"/><ellipse cx="145" cy="152" rx="77" ry="5" fill="#416F78" opacity=".2"/></g>
+ <g id="layer-focal" filter="url(#duck-shadow)"><path d="M71 119Q83 99 119 97Q157 92 183 105Q199 113 194 132Q184 149 137 150Q94 150 75 136Z" fill="url(#duck-plumage)" stroke="#65472F" stroke-width="1.6"/><path d="M99 114Q128 103 159 111Q175 116 174 133Q151 146 119 140Q101 134 99 114Z" fill="#E7E0C9"/><path d="M164 104Q181 96 194 103Q201 108 194 119Q185 124 172 119Z" fill="#3E6D8A" stroke="#2D536D" stroke-width="1.1"/><path d="M178 106l8-3m-6 7 9-2" fill="none" stroke="#E9E0C7" stroke-width="2" stroke-linecap="round"/><path d="M181 99Q181 83 195 74Q209 66 221 78Q230 90 220 102Q209 110 193 106Z" fill="#3C715C" stroke="#315640" stroke-width="1.5"/><path d="M215 82Q231 78 243 85L226 92Q219 91 215 82Z" fill="#E2A948" stroke="#986B35" stroke-width="1.1"/><circle cx="211" cy="79" r="2.3" fill="#1E2A3B"/><circle cx="212" cy="78" r=".7" fill="#FFFFFF"/><path d="M88 137l-10 7 14-2m-1 3 9 1" fill="#B9783A" stroke="#8B572D" stroke-width="1.2" stroke-linejoin="round"/></g>
+ <g id="layer-details"><path d="M75 157q23-5 42 0m74-1q22-5 39 0m-143 10q18-4 33 0m126-2q13-4 25 0" fill="none" stroke="#D6EBE5" stroke-width="1.6" stroke-linecap="round"/><path d="M110 121q17-9 34-4m-33 8q12 5 23 5" fill="none" stroke="#F1EBDD" stroke-width="1.3" stroke-linecap="round"/><path d="M23 145l-4 7m260-9 5 8" fill="none" stroke="#78916E" stroke-width="1.5"/><ellipse cx="58" cy="166" rx="17" ry="2.5" fill="#D5E9E3" opacity=".75"/></g>
+ <g id="layer-lighting"><path d="M94 109q25-14 52-8m44-23q8-5 15 0" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".6" stroke-linecap="round"/><ellipse cx="139" cy="122" rx="59" ry="25" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

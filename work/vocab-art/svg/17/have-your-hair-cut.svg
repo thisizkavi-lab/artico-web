@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: have your hair cut (Verb phrase)
+  CONTEXTUAL_DEFINITION: Sit while a hairdresser cuts your hair.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action + tool
+  SYNONYM_GUARD: Focus on the actual snipping action, distinct from the consultation moment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm salon wall.
+    - Context_Layer: Chair and cape.
+    - Focal_Layer: Hairdresser's scissors trimming the seated client's hair.
+    - Details_Layer: Short cut locks falling onto cape.
+    - Lighting_Layer: Salon mirror light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:have your hair cut" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="166" rx="124" ry="12" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="21" y="24" width="100" height="110" rx="12" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><rect x="30" y="32" width="82" height="93" rx="8" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.4"/>
+  <path d="M109 131V160M87 160H132" stroke="#64748B" stroke-width="5" stroke-linecap="round"/><ellipse cx="165" cy="87" rx="118" ry="72" fill="#FEF3C7" opacity=".31"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M86 154Q89 121 113 111Q142 108 169 117L192 159H79Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M106 119Q109 96 130 92Q151 95 155 120L145 136L113 134Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M106 105Q109 81 132 80Q151 81 157 101L151 110Q132 101 112 111Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.2"/>
+  <path d="M195 108Q209 91 226 96Q239 102 236 121L249 154H184Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M202 101Q205 83 222 82Q239 84 241 104" fill="#805333" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M157 78L177 68M177 68L184 76M177 68L184 61" fill="none" stroke="#D9A441" stroke-width="2.8" stroke-linecap="round"/><circle cx="157" cy="78" r="4" fill="#D9A441"/><circle cx="181" cy="73" r="4" fill="none" stroke="#805A19" stroke-width="2"/>
+  <path d="M169 59L178 50M173 65L184 63" stroke="#805333" stroke-width="3" stroke-linecap="round"/><path d="M142 137Q152 129 162 137M151 145Q161 137 171 145" stroke="#805333" stroke-width="2.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M171 92Q177 85 184 88" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

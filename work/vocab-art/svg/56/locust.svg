@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: locust (noun)
+  CONTEXTUAL_DEFINITION: A grasshopper-like insect with a long body, folded wings, and powerful jumping hind legs.
+  PEDAGOGICAL_ARCHETYPE: 1 - Small creature in habitat
+  SYNONYM_GUARD: Show oversized bent hind legs and folded narrow wings on a green grasshopper form; do not use the soft many-segment caterpillar body.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set a green locust in profile x=73..211 y=78..135 on a grass blade; narrow body, small head and long antennae, folded wings along back, six legs including huge bent rear legs extending to y=158.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:locust" data-archetype="long-legged-locust">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#8AAE59;--c-secondary:#526F3D;--c-accent:#D8A749;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="locust-sky" x2="0" y2="1"><stop stop-color="#DBEAF0"/><stop offset="1" stop-color="#F7F1E5"/></linearGradient>
+  <linearGradient id="locust-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AFC96A"/><stop offset="1" stop-color="#6F9648"/></linearGradient>
+  <linearGradient id="locust-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9D7A0"/><stop offset="1" stop-color="#92A765"/></linearGradient>
+  <filter id="locust-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#locust-sky)"/><path d="M0 137Q80 126 154 138T304 130V192H0Z" fill="#DEE6D4"/><path d="M0 158Q88 147 162 159T304 151V192H0Z" fill="#CAD9BE"/><circle cx="250" cy="42" r="22" fill="#F4D88F" opacity=".48"/></g>
+ <g id="layer-context"><path d="M30 153Q102 149 157 141Q215 132 276 111" fill="none" stroke="#78935F" stroke-width="3" stroke-linecap="round"/><path d="M63 151l-5-19m8 18 9-15m142-8 5-17m-1 17 12-13" fill="none" stroke="#7D9663" stroke-width="2" stroke-linecap="round"/><path d="M55 133q11-13 18-4q-5 13-18 4Zm169-15q9-12 18-4q-5 12-18 4Z" fill="#8EAA6A"/><ellipse cx="154" cy="158" rx="68" ry="4" fill="#637A53" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#locust-shadow)"><ellipse cx="147" cy="106" rx="46" ry="17" fill="url(#locust-body)" stroke="#526D3D" stroke-width="1.4"/><circle cx="101" cy="102" r="14" fill="#99B65E" stroke="#526D3D" stroke-width="1.2"/><circle cx="98" cy="99" r="2.2" fill="#1E2A3B"/><path d="M94 91Q84 74 75 77m18 14Q87 71 91 66" fill="none" stroke="#657B45" stroke-width="1.5" stroke-linecap="round"/><path d="M123 92Q157 76 187 93Q197 104 185 119Q154 124 127 113Z" fill="url(#locust-wing)" stroke="#668047" stroke-width="1.2"/><path d="M130 97l50-4m-44 11 42-5m-35 12 33-6" fill="none" stroke="#A9B47A" stroke-width="1.2"/><path d="M127 113l-14 17-18 9m27-25-1 18 8 9m50-35 8 16 22 12m-24-23 17-15 20-3m-24 13 7 18 17 8" fill="none" stroke="#5D7642" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M132 104l-13 10m31-10-1 12" fill="none" stroke="#5D7642" stroke-width="1.8" stroke-linecap="round"/><path d="M188 107q8 3 14-1" fill="none" stroke="#546E3D" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M44 153l-4-9m225-36 6-10m-10 12 10-1" fill="none" stroke="#81946E" stroke-width="1.4"/><path d="M61 146l-4-10" fill="none" stroke="#8CA36E" stroke-width="1.2"/><circle cx="217" cy="141" r="1.3" fill="#D4C59B"/><circle cx="229" cy="126" r="1.1" fill="#D4C59B"/><path d="M135 89q18-7 31 0" fill="none" stroke="#E7EDBB" stroke-width="1.4" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M112 98q15-12 29-8m20-1q11-3 18 4" fill="none" stroke="#EAF3C7" stroke-width="1.6" opacity=".8" stroke-linecap="round"/><ellipse cx="150" cy="104" rx="51" ry="25" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

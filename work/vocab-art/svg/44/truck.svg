@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: truck
+  CONTEXTUAL_DEFINITION: A large motor road vehicle for transporting freight.
+  PEDAGOGICAL_ART_DIRECTOR: Show a heavy freight truck with a tall cargo box and visible load at its open rear.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with cargo scale cue
+  SYNONYM_GUARD: This is a motor truck, not the hand trolley or mine cart in an alternate gloss; make the powered cab and road wheels clear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Build cargo body from x=48..194 and cab x=194..256, y=64..139; wheels centered at (92,143), (204,143), (244,143); show rear door open and stacked freight at left.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:truck" data-archetype="hero-freight-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="truck-box" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <linearGradient id="truck-cab" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F6C96B"/><stop offset="1" stop-color="#D38E43"/></linearGradient>
+    <radialGradient id="truck-halo"><stop stop-color="#DCE9F2" stop-opacity=".65"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="truck-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><path d="M12 168 H292" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="18 13"/><ellipse cx="155" cy="158" rx="119" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="25" y="25" width="254" height="119" rx="5" fill="#F0EEE8" stroke="#D4CCBD" stroke-width="1.2"/><path d="M45 140 H266" stroke="#B9C2CE" stroke-width="1.2"/><path d="M45 72 V132" stroke="#6B7786" stroke-width="4"/><path d="M39 73 H50 M39 88 H50 M39 103 H50 M39 118 H50" stroke="#D1B780" stroke-width="1.2"/></g>
+  <g id="layer-focal" filter="url(#truck-shadow)"><path d="M51 63 H194 V136 H51 Z" fill="url(#truck-box)" stroke="#1E2A3B" stroke-width="2.8"/><path d="M57 69 H183 V130 H57 Z" fill="#E8EEF3" stroke="#3D5F91" stroke-width="1.5"/><path d="M63 76 H178 V126 H63 Z" fill="#F7F4ED" stroke="#64748B" stroke-width="1.2"/><path d="M194 91 L211 76 H239 Q249 78 253 91 L260 112 V137 H194 Z" fill="url(#truck-cab)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M211 82 H236 Q242 83 245 91 L251 105 H211 Z" fill="#D9EBF5" stroke="#1E2A3B" stroke-width="1.8"/><path d="M206 108 V134 M194 107 H258" stroke="#1E2A3B" stroke-width="2"/><path d="M62 125 H178" stroke="#5479AC" stroke-width="2"/><path d="M71 111 L85 95 L100 111 Z" fill="#D59A59" stroke="#1E2A3B" stroke-width="1.5"/><rect x="73" y="111" width="25" height="14" rx="2" fill="#E7B875" stroke="#1E2A3B" stroke-width="1.5"/><path d="M104 106 L118 88 L137 106 Z" fill="#83A887" stroke="#1E2A3B" stroke-width="1.5"/><rect x="107" y="106" width="28" height="19" rx="2" fill="#A8C69F" stroke="#1E2A3B" stroke-width="1.5"/><rect x="139" y="99" width="28" height="26" rx="2" fill="#E8C078" stroke="#1E2A3B" stroke-width="1.5"/><path d="M143 106 H163 M143 112 H162" stroke="#B77A3D" stroke-width="1.2"/><circle cx="92" cy="143" r="18" fill="#263548" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="92" cy="143" r="9" fill="#E7EDF3" stroke="#8A97A7" stroke-width="1.8"/><circle cx="204" cy="143" r="18" fill="#263548" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="204" cy="143" r="9" fill="#E7EDF3" stroke="#8A97A7" stroke-width="1.8"/><circle cx="244" cy="143" r="18" fill="#263548" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="244" cy="143" r="9" fill="#E7EDF3" stroke="#8A97A7" stroke-width="1.8"/><path d="M254 113 H260 V126 H254 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.2"/><path d="M198 132 H255" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M58 72 H186" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M54 58 H191" stroke="#F2C14E" stroke-width="1.6"/><path d="M31 84 H43 M31 101 H43 M31 118 H43" stroke="#5479AC" stroke-width="1.6"/><path d="M267 111 L273 108 M267 117 L276 117" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><circle cx="229" cy="122" r="3" fill="#1E2A3B"/><path d="M92 140 L92 146 M204 140 L204 146 M244 140 L244 146" stroke="#BFC9D3" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="75" rx="112" ry="72" fill="url(#truck-halo)" opacity=".2"/><path d="M30 37 H274" stroke="#FFFFFF" stroke-width=".7"/><path d="M28 146 H276" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

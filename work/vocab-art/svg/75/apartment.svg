@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: apartment (Noun)
+  CONTEXTUAL_DEFINITION: A home made up of rooms within a larger building.
+  PEDAGOGICAL_ARCHETYPE: 5 (Spatial layout diagram)
+  SYNONYM_GUARD: Show one complete dwelling unit as a compact floor plan with its own entrance and several rooms, distinct from the whole apartment building.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Neutral architectural sheet.
+    - Context_Layer: One bounded home unit with a single entry door.
+    - Focal_Layer: Living, sleeping, and kitchen areas inside the same unit.
+    - Details_Layer: Minimal furniture shapes and a small balcony.
+    - Lighting_Layer: One warm highlight over the individual unit.
+; reviewed and reused for Lesson 75. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:apartment" data-archetype="spatial-layout">
+  <defs><linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#ECE8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#paper)"/><ellipse cx="152" cy="165" rx="112" ry="8" fill="#D8CDAF"/><rect x="44" y="36" width="216" height="114" rx="5" fill="#E7EEF2" stroke="#1E2A3B" stroke-width="2.4"/></g>
+  <g id="layer-context"><rect x="51" y="43" width="89" height="99" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><rect x="143" y="43" width="109" height="51" fill="#FAF2E7" stroke="#5479AC" stroke-width="2"/><rect x="143" y="97" width="109" height="45" fill="#E9EFEA" stroke="#5479AC" stroke-width="2"/><path d="M140 102 L140 123 Q140 132 149 132" fill="none" stroke="#CE3D4E" stroke-width="2.3"/><path d="M157 46 L157 54 Q157 61 164 61 M146 46 L146 54" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M253 52 L280 52 L280 91 L253 91Z" fill="#B9DFF1" stroke="#1E2A3B" stroke-width="2"/><path d="M253 52 L280 52" stroke="#F2C14E" stroke-width="3"/></g>
+  <g id="layer-details"><rect x="68" y="98" width="49" height="15" rx="6" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.5"/><path d="M74 113 L74 126 M111 113 L111 126" stroke="#5F3E71" stroke-width="2.5"/><circle cx="93" cy="80" r="10" fill="#7FB07A"/><path d="M75 138 L122 138" stroke="#B97840" stroke-width="4"/><rect x="153" y="53" width="25" height="23" rx="3" fill="#5479AC"/><rect x="183" y="52" width="51" height="12" rx="3" fill="#C88446"/><path d="M193 64 L193 81 M225 64 L225 81" stroke="#8A5A35" stroke-width="2"/><rect x="160" y="111" width="54" height="19" rx="5" fill="#D89A6C"/><path d="M164 130 L162 140 M208 130 L210 140" stroke="#8A5A35" stroke-width="3"/><circle cx="227" cy="119" r="7" fill="#7FB07A"/></g>
+  <g id="layer-lighting"><rect x="48" y="40" width="207" height="105" rx="3" fill="none" stroke="#F2C14E" stroke-width="2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

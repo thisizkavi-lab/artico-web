@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 59 - Abilities and actions
+  WORD: play (verb)
+  CONTEXTUAL_DEFINITION: Take part in a recreational activity; friends play a board game together.
+  PEDAGOGICAL_ARCHETYPE: Person actively makes an object / people actively take part in recreation
+  SYNONYM_GUARD: Show the visible making or recreational activity, not a finished object or unused game alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two friends take turns moving pieces around a colorful board game at a table.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="59:play (action)" data-archetype="friends-take-turns-around-tabletop-board-game">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="playboard-room" x2="0" y2="1"><stop stop-color="#EFF2EC"/><stop offset="1" stop-color="#E1E3D9"/></linearGradient>
+  <linearGradient id="playboard-table" x2="0" y2="1"><stop stop-color="#C59767"/><stop offset="1" stop-color="#926641"/></linearGradient>
+  <filter id="playboard-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#playboard-room)"/><path d="M0 151H304V192H0Z" fill="#D5C3A5"/><path d="M0 151H304" stroke="#987858" stroke-width="1.5" fill="none"/><rect x="20" y="22" width="58" height="48" rx="3" fill="#C4D8D1" stroke="#6C8279" stroke-width="1.8"/><path d="M49 23V68M22 45H76" stroke="#F7F2E6" stroke-width="2.5" fill="none"/></g>
+ <g id="layer-context"><path d="M228 42H287V48H228ZM233 48V85M282 48V85" stroke="#806B55" stroke-width="2" fill="none"/><path d="M240 57h34v20h-34Z" fill="#DCD0B6"/><path d="M245 74l7-10 8 10" stroke="#82967C" stroke-width="1.2" fill="none"/><ellipse cx="151" cy="153" rx="108" ry="5" fill="#6A5038" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#playboard-shadow)">
+  <path d="M34 77Q40 64 56 65L72 73L77 101H31Z" fill="#6E8A82" stroke="#405B61" stroke-width="1.3"/><circle cx="54" cy="56" r="13" fill="#D79D79" stroke="#744E45" stroke-width="1.1"/><path d="M42 56q0-13 12-14q12 0 13 13l-6-5-12 1Z" fill="#51433D"/><path d="M50 58h1m8 0h1" stroke="#263C45" stroke-width="1.5" fill="none"/><path d="M214 77Q220 64 236 65L252 73L257 101H211Z" fill="#708A84" stroke="#405B61" stroke-width="1.3"/><circle cx="234" cy="56" r="13" fill="#B87862" stroke="#6F4E49" stroke-width="1.1"/><path d="M222 56q0-13 12-14q12 0 13 13l-6-5-12 1Z" fill="#493F3A"/><path d="M230 58h1m8 0h1" stroke="#263C45" stroke-width="1.5" fill="none"/>
+  <path d="M31 89Q17 94 16 105L23 111L42 100" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/><path d="M252 90Q269 96 274 107L268 112L251 100" fill="#B87862" stroke="#6F4E49" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M39 108H265V119H39Z" fill="url(#playboard-table)" stroke="#75563E" stroke-width="1.2"/><path d="M51 119v21m202-21v21" stroke="#76583F" stroke-width="2.5" fill="none"/>
+  <path d="M79 79H222V107H79Z" fill="#F0E5CB" stroke="#586E69" stroke-width="1.3"/><path d="M91 101H116V85H142V100H168V85H200V101" fill="none" stroke="#D77D68" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="91" cy="101" r="3.4" fill="#E5C26F"/><circle cx="116" cy="85" r="3.4" fill="#E5C26F"/><circle cx="142" cy="100" r="3.4" fill="#E5C26F"/><circle cx="168" cy="85" r="3.4" fill="#E5C26F"/><circle cx="200" cy="101" r="3.4" fill="#E5C26F"/>
+  <path d="M116 82q-4-6 1-10h8q5 4 1 10Z" fill="#5B8391"/><path d="M176 98q-4-6 1-10h8q5 4 1 10Z" fill="#D6866F"/><path d="M215 91l10-6 10 6-10 7Z" fill="#7F9C8A" stroke="#50685F" stroke-width="1"/><circle cx="223" cy="89" r="1" fill="#263E47"/><circle cx="230" cy="91" r="1" fill="#263E47"/>
+ </g>
+ <g id="layer-details"><path d="M44 75q8-5 15-2m169 3q9-5 17-2" stroke="#E9D7B8" stroke-width="1" fill="none"/><circle cx="84" cy="59" r="1.3" fill="#FFFFFF"/><circle cx="93" cy="51" r="1" fill="#FFFFFF"/><path d="M44 114h216" stroke="#E4CFAD" stroke-width=".9" fill="none"/><path d="M17 102q7-6 13-2m236 4q8-6 13-2" stroke="#F1C7A7" stroke-width="1" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="153" cy="92" rx="81" ry="40" fill="#EFCB78" opacity=".09"/><path d="M45 45q7-5 14-2m172 2q7-5 14-2" stroke="#FFF8E9" stroke-width="1.4" fill="none" opacity=".65" stroke-linecap="round"/></g>
+</svg>

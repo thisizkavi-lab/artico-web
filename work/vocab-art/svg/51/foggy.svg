@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: foggy (Adjective)
+  CONTEXTUAL_DEFINITION: Covered with dense fog so nearby things are clear but distant things fade from view.
+  PEDAGOGICAL_ART_DIRECTOR: Show a whole landscape or street in reduced visibility with foreground crisp and distance gradually obscured.
+  PEDAGOGICAL_ARCHETYPE: 3 - Atmospheric condition
+  SYNONYM_GUARD: This describes the surrounding conditions, unlike the single mass of fog in the noun card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Foreground road and person clear, with trees and a small car disappearing into layered white-gray haze.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:foggy" data-archetype="foggy-visibility-condition">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fy-sky" x2="0" y2="1"><stop stop-color="#C6D4D7"/><stop offset="1" stop-color="#E4EBE8"/></linearGradient><linearGradient id="fy-ground" x2="0" y2="1"><stop stop-color="#9EAEAA"/><stop offset="1" stop-color="#72857F"/></linearGradient><linearGradient id="fy-road" x2="0" y2="1"><stop stop-color="#849492"/><stop offset="1" stop-color="#5D6F70"/></linearGradient><filter id="fy-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.1" flood-color="#33464D" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fy-sky)"/><path d="M0 112L44 75L83 113L129 69L174 114L220 76L262 112L304 82V192H0Z" fill="#9EADAA"/><path d="M0 124Q76 111 152 124T304 116V192H0Z" fill="url(#fy-ground)"/><path d="M99 192L139 122H165L210 192Z" fill="url(#fy-road)"/></g>
+ <g id="layer-context"><path d="M20 174H282" fill="none" stroke="#A5B2AD" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="71" ry="5" fill="#475B5B" opacity=".14"/><path d="M0 92Q74 80 150 92T304 85" fill="none" stroke="#F2F5F1" stroke-width="5" opacity=".38"/><path d="M0 102Q74 91 150 102T304 95" fill="none" stroke="#FFFFFF" stroke-width="4" opacity=".48"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fy-shadow)">
+  <path d="M27 114V83m-11 31V94m11-25Q42 54 57 69V114m-30-18Q13 85 1 99m56-22q12-12 24 0" fill="none" stroke="#5B7574" stroke-width="3.2" stroke-linecap="round"/><circle cx="27" cy="63" r="13" fill="#738D88"/><circle cx="57" cy="68" r="10" fill="#829B94"/><path d="M217 118V91m-9 27V100m9-20q12-13 24 0V118" fill="none" stroke="#728782" stroke-width="2.4" opacity=".52"/><circle cx="217" cy="76" r="10" fill="#91A39F" opacity=".55"/><circle cx="241" cy="81" r="8" fill="#A2B2AE" opacity=".5"/>
+  <path d="M109 147L137 118H169L198 147Z" fill="#A7B6B2" stroke="#657A79" stroke-width="1.5"/><path d="M127 135H178" fill="none" stroke="#EFF4F0" stroke-width="2"/><circle cx="136" cy="137" r="3" fill="#EBC86F"/><circle cx="170" cy="137" r="3" fill="#EBC86F"/>
+  <circle cx="80" cy="83" r="11" fill="#D39A72" stroke="#795744" stroke-width="1"/><path d="M70 82Q72 70 82 71Q91 72 91 82Q80 77 70 82Z" fill="#56605E"/><path d="M72 95L63 101L61 126L78 137L94 125L90 101L82 95Z" fill="#607E83" stroke="#455E64" stroke-width="1.3"/><path d="M65 102L51 112L54 121L67 115M89 101L99 110" fill="none" stroke="#D39A72" stroke-width="4.2" stroke-linecap="round"/><path d="M76 137L73 153M89 137L94 153" fill="none" stroke="#414F52" stroke-width="3.8" stroke-linecap="round"/><path d="M67 153h11m12 0h11" fill="none" stroke="#414F52" stroke-width="2.7" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M105 192l42-69m58 69-45-69m-9 32 1 9m-9 10 1 7" fill="none" stroke="#D4DEDA" stroke-width="1.4"/><path d="M12 74q12-10 24-2m15 28q13-9 25-1" fill="none" stroke="#E9EFEC" stroke-width="1.2"/><circle cx="80" cy="82" r="1.2" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M67 98q9-7 17 0m-24 7 10 4" fill="none" stroke="#D9E7E4" stroke-width="1.3" opacity=".8"/><circle cx="80" cy="82" r="1" fill="#FFF8E7"/><path d="M117 145l22-25m43 3 18 24" fill="none" stroke="#E8EFEC" stroke-width="1.2"/></g>
+</svg>

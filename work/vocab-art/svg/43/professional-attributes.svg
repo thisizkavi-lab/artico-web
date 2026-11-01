@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: professional attributes
+  CONTEXTUAL_DEFINITION: Personal qualities and habits that make someone effective at work.
+  PEDAGOGICAL_ART_DIRECTOR: Show a compact profile of varied useful workplace qualities around a candidate.
+  PEDAGOGICAL_ARCHETYPE: 24 - Work-ready qualities set
+  SYNONYM_GUARD: Present several complementary traits as a set, not one professional identity, a qualification document, or a single polite manner.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a candidate beside a profile board with four equal icon badges for accuracy, dependability, communication, and teamwork. Give each badge similar size and weight so they read as a balanced set of qualities.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:professional attributes" data-archetype="work-ready-qualities-set">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="attributes-badge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="attributes-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="attributes-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="attributes-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M34 135 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.1"/><rect x="62" y="41" width="42" height="34" rx="4" fill="url(#attributes-badge)" stroke="#5479AC" stroke-width="1.1"/><path d="M73 58 L78 63 L91 49" fill="none" stroke="#547A56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="200" y="41" width="42" height="34" rx="4" fill="url(#attributes-badge)" stroke="#5479AC" stroke-width="1.1"/><circle cx="213" cy="52" r="4" fill="#8EB0DE"/><circle cx="228" cy="52" r="4" fill="#A8D4A2"/><path d="M207 67 Q220 57 235 67" fill="none" stroke="#5479AC" stroke-width="1.2"/><rect x="62" y="93" width="42" height="34" rx="4" fill="url(#attributes-badge)" stroke="#5479AC" stroke-width="1.1"/><path d="M69 110 H96 M69 116 H91" stroke="#8EB0DE" stroke-width="1.1"/><path d="M69 104 H96" stroke="#5479AC" stroke-width="1.1"/><rect x="200" y="93" width="42" height="34" rx="4" fill="url(#attributes-badge)" stroke="#5479AC" stroke-width="1.1"/><circle cx="214" cy="105" r="4" fill="#D89A6C"/><circle cx="228" cy="105" r="4" fill="#C7835C"/><path d="M207 119 Q214 110 221 119 Q228 110 235 119" fill="none" stroke="#547A56" stroke-width="1.2"/><path d="M111 58 H125 M179 58 H193 M111 110 H125 M179 110 H193" stroke="#D4CCBD" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#attributes-shadow)"><path d="M120 128 Q122 103 136 96 L137 86 Q133 82 135 74 Q143 66 154 69 Q164 72 161 83 L159 90 Q173 96 175 125 L172 136 H124 Z" fill="url(#attributes-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="151" cy="78" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M142 76 Q144 68 152 68 Q160 69 164 76 Q156 72 149 73 Z" fill="#3D342D"/><path d="M130 102 Q151 96 170 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M132 108 L119 117 M170 108 L184 117" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M119 117 L110 119 M184 117 L193 119" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="152" cy="49" r="2" fill="#F2C14E"/><path d="M74 80 H92 M210 80 H232" stroke="#DCE8D9" stroke-width=".8"/><path d="M74 131 H92 M210 131 H232" stroke="#DCE8D9" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="100" ry="66" fill="url(#attributes-halo)" opacity=".15"/><path d="M62 43 H103 M200 43 H241" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

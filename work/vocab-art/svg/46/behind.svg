@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: behind
+  CONTEXTUAL_DEFINITION: At the rear of a traveler relative to the direction they are facing.
+  PEDAGOGICAL_ART_DIRECTOR: Set a traveler facing up a northbound path; place a brightly marked suitcase clearly behind, below the traveler, with an orientation arrow pointing forward.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Use the traveler's facing direction to establish front and rear; do not show a bag merely beside the figure.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Vertical path rises from bottom to top; traveler centered at (151,99), facing y=59; suitcase at (151,157), directly to the rear; gold rear halo and dotted link.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:behind" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="behind-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#647588"/><stop offset="1" stop-color="#46586D"/></linearGradient>
+    <linearGradient id="behind-bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8B85B"/><stop offset="1" stop-color="#C88345"/></linearGradient>
+    <radialGradient id="behind-halo"><stop stop-color="#F2C14E" stop-opacity=".5"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="behind-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E2EBD9"/><path d="M0 0H304V192H0Z" fill="#DCEAD6"/><path d="M8 52H296M8 139H296" stroke="#A8B9A5" stroke-width="1.5"/><path d="M93 0H211V192H93Z" fill="url(#behind-road)"/><path d="M99 0H205V192" fill="none" stroke="#F8F6EF" stroke-width="1.5" stroke-dasharray="8 9"/><path d="M151 5V187" stroke="#FAF8F3" stroke-width="1.4" stroke-dasharray="10 9" opacity=".6"/></g>
+  <g id="layer-context"><circle cx="48" cy="41" r="16" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="257" cy="48" r="13" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><rect x="23" y="110" width="45" height="29" rx="4" fill="#D5B596" stroke="#716254" stroke-width="1.8"/><rect x="240" y="111" width="41" height="31" rx="4" fill="#9AB6C9" stroke="#536B7F" stroke-width="1.8"/><path d="M20 158H70M235 158H285" stroke="#F6F3EA" stroke-width="3"/><ellipse cx="151" cy="166" rx="45" ry="8" fill="#34475B" opacity=".35"/></g>
+  <g id="layer-focal" filter="url(#behind-shadow)"><path d="M133 105C132 93 134 81 141 74L151 68L162 74C168 81 170 93 169 105L174 124H160L152 108L145 124H129Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><circle cx="151" cy="61" r="10" fill="#D9AB82" stroke="#1E2A3B" stroke-width="1.8"/><path d="M139 86L125 101L130 106L146 96M164 86L178 101L173 106L158 96" fill="#D9AB82" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M141 121L135 136H149L153 122M160 121L165 136H179L169 120" fill="#364B62" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="151" cy="155" rx="35" ry="29" fill="url(#behind-halo)"/><path d="M131 142Q151 131 171 142L177 169H125Z" fill="url(#behind-bag)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M139 142V136Q151 127 163 136V142" fill="none" stroke="#1E2A3B" stroke-width="2.5"/><path d="M151 148V162M142 151L160 159" stroke="#F9E0A0" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M151 68V37" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><path d="M151 68V37" stroke="#4A72B2" stroke-width="5.5" stroke-linecap="round"/><path d="M141 45L151 26L161 45Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.5"/><path d="M151 119V137" stroke="#F2C14E" stroke-width="2.5" stroke-dasharray="3 4" stroke-linecap="round"/><path d="M134 159Q151 168 168 159" fill="none" stroke="#FFF4D2" stroke-width="1.7"/><circle cx="151" cy="142" r="2.5" fill="#F2C14E"/><path d="M31 89H68M237 88H277" stroke="#FFFFFF" stroke-width="1.5" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M101 9H203" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="151" cy="151" rx="41" ry="34" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/></g>
+</svg>

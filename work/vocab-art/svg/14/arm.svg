@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: arm (Noun)
+  CONTEXTUAL_DEFINITION: The full upper limb from shoulder to wrist.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Highlight the whole limb, not only the elbow joint or hand.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cropped torso and one relaxed, slightly bent arm.
+    - Context_Layer: Body and opposite arm stay cool slate blue.
+    - Focal_Layer: One complete arm from shoulder through wrist is in warm skin color.
+    - Details_Layer: A soft elbow crease shows the limb's full length.
+    - Lighting_Layer: Long halo tracks the arm from shoulder to wrist.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:arm" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="105" rx="120" ry="78" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M101 35Q117 23 151 26Q183 24 200 39L204 113Q182 129 155 126Q126 130 101 113Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M108 46Q152 57 194 44M109 72Q153 82 196 72" fill="none" stroke="#94A3B8" stroke-width="1.4"/><path d="M101 48Q82 58 78 83L72 147Q72 159 83 160Q94 161 97 149L108 91" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M201 44Q222 55 229 79L235 143Q236 158 224 160Q213 160 211 147L201 91" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M97 43Q85 55 82 78L77 143Q75 155 84 157Q93 159 96 147L106 92Q110 78 116 69L115 54Q108 47 97 43Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M92 57Q98 62 102 64M86 83Q94 87 101 86M81 137Q87 139 94 139" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M96 39Q81 50 77 77L72 143Q70 160 83 162Q98 163 101 148L111 94Q114 81 121 71L120 51Q111 42 96 39Z" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M85 67Q91 71 101 72M81 112Q89 115 97 114" fill="none" stroke="#F8DDCC" stroke-width="1.4"/><path d="M51 102L73 102" stroke="#4A72B2" stroke-width="2.2"/><path d="M65 97L74 102L65 107" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M95 46Q78 84 82 145" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".45"/></g>
+</svg>

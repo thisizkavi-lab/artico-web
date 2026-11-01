@@ -1,0 +1,70 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: swoop (verb)
+  CONTEXTUAL_DEFINITION: A hawk making a fast, steep dive toward a mouse in the meadow.
+  PEDAGOGICAL_ARCHETYPE: 5 - Action shown by trajectory, body pose, and target
+  SYNONYM_GUARD: Angle the hawk sharply down toward the mouse with swept-back wings and a steep descending path; this is a quick dive, not level flight or a shallow glide.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open sky above a low meadow. A brown hawk dives from upper right toward a small mouse near x=164, y=151; folded wings sweep behind the body, head and talons aim down, several short diagonal speed strokes trace a steep path from x=240,y=30 to x=170,y=124. Keep subject and all ink clear of canvas edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:swoop" data-archetype="hawk-diving-toward-prey">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#9A6041;--c-secondary:#38484A;--c-accent:#7DA66F;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="swoop-sky" x2="0" y2="1"><stop stop-color="#D7EAF1"/><stop offset="1" stop-color="#F7F0E4"/></linearGradient>
+  <linearGradient id="swoop-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B57C51"/><stop offset="1" stop-color="#684735"/></linearGradient>
+  <linearGradient id="swoop-belly" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1DEC0"/><stop offset="1" stop-color="#D7B993"/></linearGradient>
+  <filter id="swoop-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="url(#swoop-sky)"/>
+  <circle cx="61" cy="42" r="22" fill="#F4D991" opacity=".52"/>
+  <path d="M0 127Q63 114 132 128T304 119V192H0Z" fill="#DCE5D6"/>
+  <path d="M0 150Q72 139 152 151T304 145V192H0Z" fill="#BCCCAC"/>
+  <path d="M0 166Q78 156 160 166T304 160V192H0Z" fill="#9EB68A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M26 160v-25m0 15-8-9m8 4 9-11m57 32v-18m0 9-7-7m7 4 8-10m158 24v-21m0 11-8-7m8 3 8-12" fill="none" stroke="#728B68" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M26 168q65-11 132 0m-120-4 4-6m28 8 4-7m22 7 5-6m133 5 4-7" fill="none" stroke="#82956D" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M240 29Q220 48 203 68T174 112" fill="none" stroke="#73919A" stroke-width="1.5" stroke-dasharray="4 5" opacity=".72" stroke-linecap="round"/>
+  <path d="M252 34l-10 11m-1-1 2-10m-2 10 10-2M230 46l-9 10m-1-1 2-9m-2 9 9-2" fill="none" stroke="#8EA4A5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="165" cy="168" rx="22" ry="3" fill="#40584A" opacity=".12"/>
+ </g>
+ <g id="layer-focal" filter="url(#swoop-shadow)">
+  <!-- swept-back far wing -->
+  <path d="M170 76Q185 54 203 38Q216 31 229 34L222 48L235 43L224 57L230 56L215 69L204 84L188 96Z" fill="#644633" stroke="#49362D" stroke-width="1.4"/>
+  <!-- swept-back near wing with separated flight feathers -->
+  <path d="M164 78Q151 61 135 47Q123 39 111 42L120 55L108 51L119 65L111 64L126 78L137 92L154 101Z" fill="url(#swoop-feather)" stroke="#634632" stroke-width="1.4"/>
+  <path d="M135 54L117 45m24 17-22-8m28 17-23-5m75-11 17-18m-22 26 23-16m-29 23 21-12" fill="none" stroke="#D2A77B" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M180 66Q194 49 211 43L203 58L222 50Q214 67 195 83L181 94Z" fill="#8D5B3E" stroke="#5A4031" stroke-width="1.2"/>
+  <!-- body pitches steeply downward toward the mouse -->
+  <path d="M186 49Q174 52 164 66L151 91Q145 101 147 111Q151 119 160 114Q171 104 180 89L196 67Q203 54 194 49Z" fill="url(#swoop-feather)" stroke="#513A30" stroke-width="1.5"/>
+  <path d="M172 77Q160 91 155 103Q155 108 160 109Q170 99 178 86Z" fill="url(#swoop-belly)" stroke="#A27B58" stroke-width="1"/>
+  <!-- head, hooked beak, and eye point into the dive -->
+  <path d="M157 93Q146 91 140 100Q137 108 146 115Q154 117 161 109L166 99Z" fill="#9E6948" stroke="#594133" stroke-width="1.3"/>
+  <path d="M142 105L130 112Q135 115 141 111Q145 109 145 106Z" fill="#E3B84D" stroke="#71522F" stroke-width=".9"/>
+  <path d="M132 111Q134 114 132 117" fill="none" stroke="#64452E" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="147" cy="101" r="2.1" fill="#F1D36D"/>
+  <circle cx="147" cy="101" r=".85" fill="#1E2A3B"/>
+  <!-- forward talons reach toward the prey -->
+  <path d="M157 111L159 122L164 130L161 132L155 127L152 117Z" fill="#B48243" stroke="#67482E" stroke-width="1.2"/>
+  <path d="M167 105L170 116L175 124L172 126L166 121L162 112Z" fill="#B48243" stroke="#67482E" stroke-width="1.2"/>
+  <path d="M161 131l-3-1m15-5-3 1" fill="none" stroke="#4D3C2E" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- small mouse gives the dive a clear target -->
+  <ellipse cx="162" cy="151" rx="12" ry="6.5" fill="#9A8B79" stroke="#62594F" stroke-width="1.2"/>
+  <circle cx="173" cy="148" r="5.1" fill="#AA9A86" stroke="#62594F" stroke-width="1.1"/>
+  <circle cx="171" cy="143" r="2.5" fill="#D6AFA0" stroke="#756052" stroke-width=".7"/>
+  <circle cx="175" cy="147" r=".9" fill="#1E2A3B"/>
+  <path d="M151 152Q140 151 137 158Q145 159 151 155" fill="none" stroke="#796D60" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M176 150l6 2m-6-4 6-1" fill="none" stroke="#76675B" stroke-width=".8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details">
+  <path d="M155 87q8-12 16-18m-11 26q7-10 13-14" fill="none" stroke="#D9B58D" stroke-width="1.2" opacity=".8" stroke-linecap="round"/>
+  <path d="M148 121l-5 5m11-4 1 7m-16-26-5 3" fill="none" stroke="#E5C38E" stroke-width="1.1" stroke-linecap="round"/>
+  <circle cx="184" cy="56" r="1.2" fill="#E8D7B6"/>
+  <path d="M145 146q5-3 10-1m21-6 5-3" fill="none" stroke="#F5E5D2" stroke-width="1" opacity=".8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-lighting">
+  <path d="M173 59q7-8 13-9m-47 54q2 5 7 7" fill="none" stroke="#F0CF9A" stroke-width="1.5" opacity=".82" stroke-linecap="round"/>
+  <ellipse cx="165" cy="82" rx="38" ry="28" transform="rotate(-42 165 82)" fill="#FFFFFF" opacity=".035"/>
+ </g>
+</svg>

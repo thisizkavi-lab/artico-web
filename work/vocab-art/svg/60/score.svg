@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 60 - Sports
+ WORD: score (sports points)
+ CONTEXTUAL_DEFINITION: The points earned and recorded during a sports game.
+ PEDAGOGICAL_ARCHETYPE: A visible nonverbal scoreboard records separate tallies for both teams
+ SYNONYM_GUARD: Use clear tally marks or ball symbols as points; no readable numbers, letters, or unrelated score sheet.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large scoreboard at top with two panels, four tally marks on one side and two on the other; players on court below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:score" data-archetype="nonverbal-match-scoreboard">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="score-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#score-sky)"/><path d="M0 118H304V192H0Z" fill="#90A686"/><path d="M0 151h304m-152-33v74" stroke="#E7EEE4" stroke-width="1.4"/><path d="M53 20H251V82H53Z" fill="#405B61" stroke="#263E48" stroke-width="2"/><path d="M151 21v60" stroke="#718C84" stroke-width="1.4"/><path d="M70 38h42m-42 26h42m56-26h65m-65 26h65" stroke="#718C84" stroke-width="1"/></g>
+ <g id="layer-context"><path d="M98 82v12m108-12v12m-108-9h108" stroke="#405B61" stroke-width="2"/><ellipse cx="151" cy="174" rx="115" ry="5" fill="#405B61" opacity=".15"/><circle cx="30" cy="44" r="11" fill="#E4BB68"/></g>
+ <g id="layer-focal"><path d="M75 35l14 0m8 0h14m-45 20h14m8 0h14m8 0h14m-41 20 14-14" stroke="#E4BB68" stroke-width="3" stroke-linecap="round"/><path d="M173 35h14m9 0h14m-36 20h14m9 0h14" stroke="#D4866D" stroke-width="3" stroke-linecap="round"/><circle cx="104" cy="110" r="7" fill="#D99F7C"/><path d="M97 109q2-8 7-8q6 0 7 7l-4 2-9-1Z" fill="#344F5A"/><path d="M98 119l-8 16 13 9 14-7-5-15Z" fill="#D4866D"/><path d="M96 124l-11-5m28 3 10-10m-24 30-4 13m14-14 7 13" stroke="#263E48" stroke-width="4" stroke-linecap="round"/><circle cx="210" cy="109" r="7" fill="#D99F7C"/><path d="M203 108q2-8 7-8q6 0 7 7l-4 2-9-1Z" fill="#344F5A"/><path d="M204 118l-8 16 13 9 14-7-5-15Z" fill="#405B61"/><path d="M202 123l-10-8m28 4 10-11m-24 30-4 13m14-14 7 13" stroke="#263E48" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M19 180h40m196 0h31" stroke="#DFE9DC" stroke-width="1.2"/><path d="M82 97q8-5 15 0m126-1q8-5 15 0" stroke="#F7F5EC" stroke-width="1.2" fill="none"/><circle cx="272" cy="40" r="1.3" fill="#FFF"/></g><g id="layer-lighting"><ellipse cx="153" cy="51" rx="103" ry="39" fill="#FFF6E7" opacity=".06"/><path d="M59 20h185" stroke="#AFC3B9" stroke-width="1"/></g>
+</svg>

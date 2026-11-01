@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: trowel (Noun; garden sense)
+  CONTEXTUAL_DEFINITION: A small hand tool with a narrow scoop-shaped blade for digging and moving soil around plants.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero tool with functional context
+  SYNONYM_GUARD: Show a short one-hand wooden grip and pointed scoop blade beside a seedling; it is much smaller than the long-handled shovel.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Raised garden bed with soil and a seedling at right.
+    - Context_Layer: Small flower pot and loose soil clumps establish planting work.
+    - Focal_Layer: Red wooden handle at x=168,y=42 and curved metal scoop from x=150,y=90 to x=102,y=145.
+    - Details_Layer: Ferrule, blade bevel, soil scoop, handle grain, and seedling leaves.
+    - Lighting_Layer: White glint on the blade's upper-left edge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:trowel" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6D6;--c-surface:#7FB07A;--c-primary:#CE3D4E;--c-secondary:#9E2636;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="blade-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F5F9"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 113H304V145H0Z" fill="#DCEAD6"/><path d="M0 145H304V192H0Z" fill="#EAD8BE"/><path d="M30 136H277V171H30Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.2"/><path d="M26 132H281V142H26Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="146" cy="163" rx="53" ry="6" fill="#DDD4C3" opacity=".7"/></g>
+  <g id="layer-context"><path d="M222 136V111M222 120Q210 108 207 116Q211 126 222 126M223 124Q237 109 241 118Q237 129 223 131" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M220 137L215 148L224 153L230 146Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M195 151L203 147M247 158L258 153" stroke="#A27652" stroke-width="1.5"/><path d="M207 139L214 133M236 140L243 135" stroke="#7FB07A" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M181 45L165 97" stroke="#1E2A3B" stroke-width="13" stroke-linecap="round"/><path d="M181 45L165 97" stroke="#CE3D4E" stroke-width="8" stroke-linecap="round"/><path d="M178 52L166 91" stroke="#EA7580" stroke-width="2" stroke-linecap="round"/><path d="M155 91L176 98L161 113L146 109Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2"/><path d="M149 106Q137 115 119 130L103 149Q98 156 105 160L129 156Q147 144 163 116L161 111Z" fill="url(#blade-grad)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M150 111Q135 124 113 148Q128 151 143 139L160 114Z" fill="#CBD5E1"/><path d="M151 112Q134 128 112 151" fill="none" stroke="#64748B" stroke-width="1.5"/><path d="M155 112L162 116" stroke="#1E2A3B" stroke-width="2"/><path d="M104 151L97 154" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><circle cx="97" cy="149" r="2.2" fill="#C88446"/><circle cx="94" cy="157" r="2.5" fill="#965D28"/><circle cx="110" cy="164" r="2" fill="#C88446"/><path d="M162 102L171 105" stroke="#F1F5F9" stroke-width="1.4"/><path d="M175 43L184 47M170 58L178 61" stroke="#9E2636" stroke-width="1.4"/><path d="M221 111L225 105M235 115L240 111" stroke="#A8D4A2" stroke-width="1.7"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M149 119Q132 132 115 150" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".78"/><path d="M174 48L168 68" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".65"/><path d="M32 135H70" stroke="#F2C14E" stroke-width="1.2" opacity=".4"/></g>
+</svg>

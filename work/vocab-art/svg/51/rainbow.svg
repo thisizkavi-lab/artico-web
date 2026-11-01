@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: rainbow (Noun)
+  CONTEXTUAL_DEFINITION: A curved band of several colors appearing in the sky after rain.
+  PEDAGOGICAL_ART_DIRECTOR: Make the multicolored arch the unmistakable hero, rising from wet green hills after a shower.
+  PEDAGOGICAL_ARCHETYPE: 3 - Weather phenomenon
+  SYNONYM_GUARD: The rainbow is the colored arc, not the rain or cloud itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A broad six-band rainbow bridges two grassy hills, with small retreating clouds and droplets on leaves.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:rainbow" data-archetype="multicolored-rainbow-arch">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="rb-sky" x2="0" y2="1"><stop stop-color="#AED3DF"/><stop offset="1" stop-color="#F4EEDF"/></linearGradient><linearGradient id="rb-hill" x2="0" y2="1"><stop stop-color="#A7C292"/><stop offset="1" stop-color="#62856D"/></linearGradient><radialGradient id="rb-glow"><stop stop-color="#FFF5CF" stop-opacity=".9"/><stop offset="1" stop-color="#FFF5CF" stop-opacity="0"/></radialGradient><filter id="rb-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#324E5A" flood-opacity=".16"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rb-sky)"/><circle cx="249" cy="47" r="48" fill="url(#rb-glow)"/><path d="M0 141Q47 112 93 139T181 132T304 139V192H0Z" fill="#9AB38D"/><path d="M0 157Q68 130 128 156T245 148T304 156V192H0Z" fill="url(#rb-hill)"/></g>
+ <g id="layer-context"><circle cx="250" cy="45" r="15" fill="#EBC86F" opacity=".92"/><path d="M20 174H284" fill="none" stroke="#95A886" stroke-width="1.2"/><ellipse cx="151" cy="164" rx="110" ry="5" fill="#385B4C" opacity=".13"/><path d="M44 75Q48 65 60 64Q67 52 80 58Q91 54 96 66Q109 63 114 74Q117 82 109 86H53Q44 83 44 75Z" fill="#A8B8BE"/><path d="M210 91Q213 82 224 82Q230 72 242 77Q253 74 258 85Q269 82 274 91Q277 98 270 101H218Q210 98 210 91Z" fill="#BBC7C8"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#rb-shadow)">
+  <path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#E45D4C" stroke-width="42" stroke-linecap="butt"/><path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#E99448" stroke-width="35" stroke-linecap="butt"/><path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#EBC95F" stroke-width="28" stroke-linecap="butt"/><path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#73A86F" stroke-width="21" stroke-linecap="butt"/><path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#5D9DB2" stroke-width="14" stroke-linecap="butt"/><path d="M37 144C58 74 102 39 152 39C202 39 246 74 267 144" fill="none" stroke="#837FB1" stroke-width="7" stroke-linecap="butt"/>
+  <path d="M0 145Q47 116 93 143T181 136T304 143V192H0Z" fill="url(#rb-hill)"/>
+ </g>
+ <g id="layer-details"><path d="M25 138q9-19 18 0m-9-7v-6m235 10q10-18 19 0m-10-7v-6" fill="none" stroke="#52765D" stroke-width="2.2" stroke-linecap="round"/><path d="M28 137l-4-5m20 5 4-6m226 4-4-6m19 7 4-6" fill="none" stroke="#71976D" stroke-width="1.4" stroke-linecap="round"/><circle cx="253" cy="94" r="1.4" fill="#E7F6F2"/><circle cx="55" cy="89" r="1.4" fill="#E7F6F2"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".45"/></g>
+ <g id="layer-lighting"><path d="M39 143C62 74 104 42 152 42C201 42 242 76 264 140" fill="none" stroke="#FFF8E7" stroke-width="1.2" opacity=".55"/><circle cx="250" cy="45" r="1.3" fill="#FFF8E7"/><path d="M227 45q7-5 14 0" fill="none" stroke="#F8E3A4" stroke-width="1.3"/></g>
+</svg>

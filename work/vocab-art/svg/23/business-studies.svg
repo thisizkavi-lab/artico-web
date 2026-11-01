@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: business studies (Noun)
+  CONTEXTUAL_DEFINITION: A school subject about how businesses are organized and run.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Students plan a small shop with inventory, a cash drawer, and a simple rising chart, so the school-subject context is clear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Business classroom with pale window and table.
+    - Context_Layer: Three students collaborate around a project.
+    - Focal_Layer: Miniature shop counter, goods, and unlettered planning chart.
+    - Details_Layer: Coins, folders, and a simple chart with no labels.
+    - Lighting_Layer: Light on the planning materials.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:business studies" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="business-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="business-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#business-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H98V83H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M60 30V82M23 56H97" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 151H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M30 108H274V118H30Z" fill="#A98A64"/><path d="M39 118V148M264 118V148" stroke="#8D765A" stroke-width="4"/><rect x="207" y="38" width="62" height="58" rx="4" fill="#F5F0E5" stroke="#64748B" stroke-width="1.5"/><path d="M218 84L231 70L242 76L258 53" fill="none" stroke="#5479AC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M217 88H260M217 48V88" stroke="#AFC5DA" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#business-shadow)"><rect x="66" y="78" width="123" height="51" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><rect x="74" y="88" width="106" height="33" fill="#FEF9C3" stroke="#315782" stroke-width="1.4"/><path d="M66 79H189V91H66Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M88 77V60H111V77M137 77V53H162V77" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M92 64H107M141 58H158" stroke="#FFFFFF" stroke-width="2"/><rect x="135" y="94" width="35" height="20" rx="3" fill="#E8DDC8" stroke="#8D765A" stroke-width="1.4"/><circle cx="144" cy="104" r="3" fill="#D9A441" stroke="#A96B46" stroke-width="1"/><circle cx="155" cy="104" r="3" fill="#D9A441" stroke="#A96B46" stroke-width="1"/><path d="M92 129V141M158 129V141" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M197 135Q211 129 227 136V149H197Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M226 136L238 129L251 136V149H226Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><circle cx="210" cy="137" r="3" fill="#D9A441"/><circle cx="219" cy="137" r="3" fill="#D9A441"/><path d="M244 56V80M249 52V80" stroke="#D9A441" stroke-width="2"/><path d="M49 132L61 128L72 132V145H49Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="95" rx="121" ry="71" fill="#FEF9C3" opacity=".08"/><path d="M69 77H189" stroke="#FFFFFF" stroke-width="2" opacity=".7"/></g>
+</svg>

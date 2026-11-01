@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: coral (noun)
+  CONTEXTUAL_DEFINITION: A living branching coral colony fixed to a small piece of reef, with tiny polyps along its branches.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with habitat context
+  SYNONYM_GUARD: Make one branching coral colony the clear subject; avoid a flower, terrestrial plant, or a broad panorama that would teach reef instead.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A close view of a branching pale orange stony coral colony growing from a small rock, with short rounded branch tips, tiny polyp dots, blue water and only a little surrounding reef.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:coral" data-archetype="single-branching-coral-colony">
+ <defs>
+  <style>:root{--c-bg-1:#E5F0EE;--c-bg-2:#BCD7D4;--c-surface:#4B8087;--c-primary:#D88470;--c-secondary:#805C54;--c-accent:#E9C477;--c-highlight:#FFF3E4;--c-ink:#1E2A3B}</style>
+  <linearGradient id="coral-water" x2="0" y2="1"><stop stop-color="#B8D8D5"/><stop offset="1" stop-color="#4A7F8A"/></linearGradient>
+  <linearGradient id="coral-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1B18D"/><stop offset="1" stop-color="#BD6E64"/></linearGradient>
+  <filter id="coral-shadow" x="-18%" y="-12%" width="136%" height="135%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#coral-water)"/><path d="M0 160Q79 149 154 158T304 152V192H0Z" fill="#4D7D80"/><path d="M0 32q43-6 84 0m142-3q40-6 78 0" fill="none" stroke="#DDEFE6" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M17 187l8-27m-8 15-10-12m10 5 10-18m238 37 7-29m-7 12-10-13m10 4 10-18" fill="none" stroke="#638B77" stroke-width="2" stroke-linecap="round"/><path d="M46 159q12-17 24 0m-14 1q12-21 25-1m159 1q14-18 27 0" fill="#6D9A7E" opacity=".8"/><ellipse cx="153" cy="150" rx="61" ry="5" fill="#183B40" opacity=".13"/><circle cx="39" cy="68" r="1.7" fill="#F1FAF1"/><circle cx="48" cy="59" r="1" fill="#F1FAF1"/><circle cx="267" cy="72" r="1.4" fill="#F1FAF1"/></g>
+ <g id="layer-focal" filter="url(#coral-shadow)">
+  <path d="M88 153Q101 142 121 145Q133 136 151 142Q172 135 193 144Q212 139 222 153L210 162H94Z" fill="#89766A" stroke="#5D655C" stroke-width="1.4"/>
+  <path d="M150 149Q148 131 151 116Q153 103 148 92" fill="none" stroke="url(#coral-stone)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M151 125Q137 117 133 103Q129 97 124 91M138 108Q138 98 144 91" fill="none" stroke="url(#coral-stone)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M152 122Q167 112 171 98Q175 92 182 87M166 107Q160 98 160 86" fill="none" stroke="url(#coral-stone)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M149 140Q135 137 124 127Q118 122 111 121M132 133Q129 124 130 116" fill="none" stroke="url(#coral-stone)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M155 138Q176 135 189 124Q195 119 201 113M179 132Q178 123 179 117" fill="none" stroke="url(#coral-stone)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M151 145Q149 130 153 116m-3 8q-13-8-17-20m19 18q14-10 19-24m-42 35q8 5 17 7m11-3q19-5 30-17" fill="none" stroke="#F5C6A5" stroke-width="1.3" opacity=".88" stroke-linecap="round"/>
+  <circle cx="148" cy="91" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/><circle cx="124" cy="90" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/><circle cx="144" cy="90" r="2.5" fill="#F1B293"/><circle cx="182" cy="86" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/><circle cx="160" cy="85" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/><circle cx="111" cy="121" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/><circle cx="201" cy="113" r="3" fill="#F1B293" stroke="#9A6256" stroke-width=".8"/>
+ </g>
+ <g id="layer-details"><circle cx="136" cy="111" r="1.4" fill="#FFE0C4"/><circle cx="148" cy="102" r="1.2" fill="#FFE0C4"/><circle cx="159" cy="112" r="1.2" fill="#FFE0C4"/><circle cx="174" cy="120" r="1.2" fill="#FFE0C4"/><circle cx="125" cy="119" r="1.2" fill="#FFE0C4"/><circle cx="188" cy="128" r="1.2" fill="#FFE0C4"/><circle cx="129" cy="130" r="1.1" fill="#FFE0C4"/><circle cx="184" cy="131" r="1.1" fill="#FFE0C4"/><path d="M94 156q23-5 39 0m42 0q17-5 30 0" fill="none" stroke="#C4A28A" stroke-width="1" stroke-linecap="round"/><circle cx="53" cy="88" r="1.2" fill="#EFF9F0"/><circle cx="251" cy="84" r="1.4" fill="#EFF9F0"/></g>
+ <g id="layer-lighting"><ellipse cx="153" cy="119" rx="49" ry="42" fill="#FFD79E" opacity=".12"/><path d="M131 99q-2-6 2-7m16-4q-3-6 1-8m28 12q2-5 7-4" fill="none" stroke="#FFF2DF" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><path d="M100 158q29-8 54-3" fill="none" stroke="#E7D0AF" stroke-width="1.3" opacity=".55" stroke-linecap="round"/></g>
+</svg>

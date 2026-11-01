@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: personal statement
+  CONTEXTUAL_DEFINITION: A short first-person description of a candidate's motivations, strengths, and aims.
+  PEDAGOGICAL_ART_DIRECTOR: Show a candidate presenting a personal self-description and a clear career aim, with a human-centered profile cue.
+  PEDAGOGICAL_ARCHETYPE: 4 - Personal introduction
+  SYNONYM_GUARD: Emphasize the candidate's own voice and motivation, distinct from a factual career summary or addressed cover letter.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a candidate bust at x=81..132, y=67..134. To the right, show a profile page at x=145..224 with a portrait circle, heart-shaped motivation cue, and one gold arrow pointing toward a small future-goal icon; use a blank speech cloud with icon marks rather than text.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:personal statement" data-archetype="candidate-self-description">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="statement-page" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="statement-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="statement-halo"><stop stop-color="#FFF1B9" stop-opacity=".74"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="statement-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="109" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 134 H274 V145 H30 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#statement-shadow)"><path d="M70 125 Q72 100 86 94 L87 85 Q83 81 85 73 Q93 64 103 67 Q112 70 109 81 L106 89 Q120 95 122 123 L119 134 H74 Z" fill="url(#statement-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="99" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M91 74 Q93 66 100 66 Q108 67 111 74 Q104 70 97 71 Z" fill="#3D342D"/><path d="M85 108 L111 112" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><rect x="137" y="39" width="92" height="90" rx="3" fill="url(#statement-page)" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="154" cy="55" r="9" fill="#E5F0E1" stroke="#64748B" stroke-width=".9"/><circle cx="154" cy="52" r="3.2" fill="#D89A6C"/><path d="M148 62 Q149 57 154 57 Q159 57 160 62 Z" fill="#5479AC"/><path d="M169 49 H218 M169 55 H210 M146 72 H219 M146 79 H214 M146 87 H217" stroke="#94A3B8" stroke-width="1"/><path d="M153 99 C147 93 141 100 153 108 C165 100 159 93 153 99 Z" fill="#D96E67" stroke="#AF504B" stroke-width=".8"/><path d="M169 101 C180 91 191 92 199 98" fill="none" stroke="#D97706" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M195 93 L201 98 L193 101" fill="none" stroke="#D97706" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="210" cy="98" r="8" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1"/><path d="M207 99 L210 95 L213 99" fill="none" stroke="#547A56" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M85 92 Q99 87 112 92" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="131" cy="57" r="2" fill="#F2C14E"/><circle cx="235" cy="55" r="2" fill="#8EB0DE"/><path d="M148 116 H217" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="156" cy="88" rx="91" ry="66" fill="url(#statement-halo)" opacity=".22"/><path d="M140 43 H226" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

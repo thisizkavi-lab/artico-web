@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:overcrowding" data-archetype="many-residents-in-an-apartment-block-around-a-small-courtyard">
+<!-- SELF_PROMPT: Lesson 75 urban life; overcrowding. Show an overfilled apartment block surrounding a very small shared courtyard, with residents visible close together at windows and outside. No text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="over-sky" x2="0" y2="1"><stop stop-color="#D6E4E5"/><stop offset="1" stop-color="#BFCAC4"/></linearGradient>
+  <linearGradient id="over-wall" x2="0" y2="1"><stop stop-color="#A99A85"/><stop offset="1" stop-color="#776D61"/></linearGradient>
+  <linearGradient id="over-ground" x2="0" y2="1"><stop stop-color="#A09A82"/><stop offset="1" stop-color="#73756A"/></linearGradient>
+  <linearGradient id="over-window" x2="0" y2="1"><stop stop-color="#DCC48E"/><stop offset="1" stop-color="#9A785B"/></linearGradient>
+  <filter id="over-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#over-sky)"/><circle cx="258" cy="32" r="11" fill="#E9C66F" opacity=".52"/><path d="M0 126V50h39v76Zm39 0V27h46v99Zm218 0V43h39v83Zm39 0V20h44v106Z" fill="#849497"/><path d="M0 129H304V192H0Z" fill="url(#over-ground)"/></g>
+<g id="layer-context">
+  <path d="M17 143V54h104v89Z" fill="url(#over-wall)" stroke="#615A50" stroke-width="1.5"/><path d="M17 55h104v8H17Zm0 28h104v7H17Zm0 29h104v7H17Z" fill="#71685E"/>
+  <path d="M29 67h19v12H29Zm34 0h19v12H63Zm34 0h18v12H97Zm-68 29h19v13H29Zm34 0h19v13H63Zm34 0h18v13H97Zm-68 29h19v14H29Zm34 0h19v14H63Zm34 0h18v14H97Z" fill="#667C81" stroke="#D9C6A5" stroke-width="1.1"/>
+  <path d="M183 143V49h105v94Z" fill="#A58F75" stroke="#5F5951" stroke-width="1.5"/><path d="M183 51h105v8H183Zm0 29h105v7H183Zm0 30h105v7H183Z" fill="#6E655A"/>
+  <path d="M196 63h18v13h-18Zm34 0h18v13h-18Zm34 0h18v13h-18Zm-68 30h18v13h-18Zm34 0h18v13h-18Zm34 0h18v13h-18Zm-68 29h18v14h-18Zm34 0h18v14h-18Zm34 0h18v14h-18Z" fill="#677E82" stroke="#D8C5A4" stroke-width="1.1"/>
+  <path d="M0 148Q59 138 121 148T238 147Q277 139 304 148V192H0Z" fill="#7C7D6D"/>
+</g>
+<g id="layer-focal" filter="url(#over-shadow)">
+  <circle cx="38" cy="71" r="3.5" fill="#D29A76"/><path d="M34 75h8v4h-8Z" fill="#52778A"/><circle cx="72" cy="71" r="3.5" fill="#A9785D"/><path d="M68 75h8v4h-8Z" fill="#B77759"/>
+  <circle cx="38" cy="100" r="3.5" fill="#D9A47D"/><path d="M34 104h8v5h-8Z" fill="#6D8768"/><circle cx="106" cy="100" r="3.5" fill="#BB825F"/><path d="M102 104h8v5h-8Z" fill="#4E7891"/>
+  <circle cx="205" cy="67" r="3.5" fill="#C88D69"/><path d="M201 71h8v5h-8Z" fill="#52778A"/><circle cx="239" cy="67" r="3.5" fill="#D9A47D"/><path d="M235 71h8v5h-8Z" fill="#B77759"/><circle cx="273" cy="67" r="3.5" fill="#A9785D"/><path d="M269 71h8v5h-8Z" fill="#6D8768"/>
+  <circle cx="205" cy="96" r="3.5" fill="#D9A47D"/><path d="M201 100h8v6h-8Z" fill="#4E7891"/><circle cx="239" cy="96" r="3.5" fill="#BB825F"/><path d="M235 100h8v6h-8Z" fill="#627D8A"/>
+  <path d="M127 155V115h53v40Z" fill="#9B876D" stroke="#67584B" stroke-width="1.3"/><path d="M133 122h16v22h-16Zm24 0h16v22h-16Z" fill="url(#over-window)" stroke="#715F4F" stroke-width="1.2"/>
+  <circle cx="141" cy="127" r="3" fill="#C58968"/><circle cx="165" cy="127" r="3" fill="#A9775B"/><circle cx="141" cy="138" r="3" fill="#D5A07B"/><circle cx="165" cy="138" r="3" fill="#C18B68"/>
+  <path d="M136 149h34m-17-9v17" fill="none" stroke="#D7C6A9" stroke-width="1.2"/>
+  <path d="M8 158h56v9H8Zm232-1h56v9h-56Z" fill="#A37A5B"/><path d="M9 155h54m178 0h55" fill="none" stroke="#D5B487" stroke-width="2.2"/>
+  <circle cx="78" cy="150" r="5" fill="#C58B68"/><path d="M73 148q1-7 6-7 5 1 6 7l-3-2h-7Z" fill="#4A413C"/><path d="M72 157Q78 153 84 157L87 168 69 168Z" fill="#51788D"/>
+  <circle cx="220" cy="150" r="5" fill="#D4A079"/><path d="M215 148q1-7 6-7 5 1 6 7l-3-2h-7Z" fill="#51433D"/><path d="M214 157Q220 153 226 157L229 168 211 168Z" fill="#B87959"/>
+</g>
+<g id="layer-details">
+  <path d="M12 182q12-5 23 0m74 7q12-5 23 0m94-3q12-5 23 0m50-8q12-5 22 0" fill="none" stroke="#BFC78F" stroke-width="1.4"/>
+  <circle cx="113" cy="169" r="1.7" fill="#E9C66F"/><circle cx="191" cy="173" r="1.7" fill="#E9C66F"/><circle cx="265" cy="175" r="1.7" fill="#E9C66F"/>
+  <path d="M25 46h31m50 0h14m79-8h32m48-2h13" fill="none" stroke="#E6ECE3" stroke-width="1.3"/>
+  <path d="M132 115q9-7 18 0m7 0q9-7 18 0" fill="none" stroke="#E7D5B5" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M22 53h94m70-3h98" fill="none" stroke="#CBB797" stroke-width="1.2"/><path d="M14 145h103m70-2h97" fill="none" stroke="#D8CAB0" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

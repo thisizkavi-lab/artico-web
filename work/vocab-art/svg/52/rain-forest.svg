@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:rain forest / rainforest" data-archetype="dense-tropical-forest-canopy-and-vines">
+<!-- SELF_PROMPT: Lesson 52 geographical features; rainforest. Show a humid, layered tropical forest with broad leaves, lianas, and dense canopy; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="rain-sky" x2="0" y2="1"><stop stop-color="#D8E8D9"/><stop offset="1" stop-color="#92B39D"/></linearGradient>
+  <linearGradient id="rain-leaf" x2=".8" y2="1"><stop stop-color="#88A96C"/><stop offset="1" stop-color="#365F50"/></linearGradient>
+  <linearGradient id="rain-trunk" x2="1" y2="0"><stop stop-color="#775B4A"/><stop offset=".55" stop-color="#B18B66"/><stop offset="1" stop-color="#604E43"/></linearGradient>
+  <linearGradient id="rain-floor" x2="0" y2="1"><stop stop-color="#77966D"/><stop offset="1" stop-color="#486B52"/></linearGradient>
+  <filter id="rain-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#rain-sky)"/><circle cx="248" cy="35" r="12" fill="#EBC86F" opacity=".62"/><path d="M0 80Q43 50 81 73T161 65Q210 45 304 70V139H0Z" fill="#557A61"/><path d="M0 114Q55 86 103 111T201 103Q247 83 304 103V174H0Z" fill="#70936D"/><path d="M0 153Q75 135 149 150T304 143V192H0Z" fill="url(#rain-floor)"/></g>
+<g id="layer-context">
+  <path d="M48 161Q49 123 44 76L58 72Q67 122 67 165Z" fill="url(#rain-trunk)" stroke="#253640" stroke-width="1.5"/>
+  <path d="M227 164Q238 119 230 63L245 61Q252 111 248 164Z" fill="url(#rain-trunk)" stroke="#253640" stroke-width="1.5"/>
+  <path d="M129 163Q135 113 127 48L144 45Q155 108 149 164Z" fill="url(#rain-trunk)" stroke="#253640" stroke-width="1.8"/>
+  <path d="M20 80Q30 51 64 56Q79 30 109 50Q130 24 157 49Q178 24 204 48Q236 24 262 54Q286 46 298 77V101H6Z" fill="url(#rain-leaf)"/>
+  <path d="M72 99Q82 75 113 82Q130 61 151 82Q177 64 195 87Q224 72 241 100V126H60Z" fill="#5E815E"/>
+  <path d="M18 172Q47 157 75 170T129 167Q161 154 192 171T250 166Q276 156 304 168V192H0Z" fill="#53735E"/>
+  <path d="M92 54C79 78 104 84 91 111S104 143 88 165" fill="none" stroke="#B6C780" stroke-width="3" stroke-linecap="round"/>
+  <path d="M204 48C216 72 191 84 208 104S190 137 210 162" fill="none" stroke="#A7BD79" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#rain-shadow)">
+  <path d="M75 143Q59 127 72 112Q82 105 88 119Q99 101 111 113Q122 125 104 143Q91 151 75 143Z" fill="#9AAE61" stroke="#405F4B" stroke-width="1.4"/>
+  <path d="M101 157Q82 145 94 129Q107 120 114 137Q126 116 139 130Q149 146 130 159Q114 166 101 157Z" fill="#77A363" stroke="#405F4B" stroke-width="1.4"/>
+  <path d="M167 139Q153 122 168 108Q181 104 185 120Q197 101 210 115Q219 130 201 143Q181 149 167 139Z" fill="#A2B969" stroke="#405F4B" stroke-width="1.4"/>
+  <path d="M196 160Q183 144 197 131Q209 124 216 141Q231 120 243 135Q252 151 234 163Q214 169 196 160Z" fill="#71955B" stroke="#405F4B" stroke-width="1.4"/>
+  <path d="M30 134Q21 116 37 107Q49 105 52 120Q66 104 76 116Q83 131 67 138Q46 145 30 134Z" fill="#8EAA5B"/>
+  <path d="M224 54Q206 37 219 24Q233 20 239 35Q252 16 264 29Q274 43 257 56Q240 62 224 54Z" fill="#83A65F"/>
+</g>
+<g id="layer-details">
+  <path d="M84 125Q92 129 99 141M106 140Q116 143 126 154M176 124Q186 129 194 139M204 145Q216 149 226 158" fill="none" stroke="#D2D99A" stroke-width="1.4"/>
+  <path d="M76 161q-12-10-21-6m17 9q-14 1-23 9m37-8q-2-11 4-17m111 16q13-10 24-8m-12 13q15 2 24 10" fill="none" stroke="#6A8F58" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="151" cy="174" rx="4" ry="2" fill="#D7B975"/><ellipse cx="163" cy="180" rx="3" ry="1.7" fill="#D7B975"/><circle cx="183" cy="169" r="2" fill="#E8D49B"/>
+  <path d="M41 91q9-8 18-2m179 11q9-7 16-1M126 72q8-6 14-1" fill="none" stroke="#BCD0A7" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M18 75Q69 35 109 52M160 48Q184 26 204 50M226 54Q250 29 271 59" fill="none" stroke="#C6D7A6" stroke-width="2" opacity=".62"/><path d="M116 49Q131 45 145 48" fill="none" stroke="#F4F2D7" stroke-width="1.6" opacity=".7"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

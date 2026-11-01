@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: renting (Noun / gerund)
+  CONTEXTUAL_DEFINITION: The arrangement and activity of living in a home in exchange for payment.
+  PEDAGOGICAL_ARCHETYPE: 6 — Complete rental relationship
+  SYNONYM_GUARD: Show owner, resident, home, and ongoing exchange together; rent is the specific payment for use of one place.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: One home centered between an owner and resident.
+    - Context_Layer: Key handover and lease sheet identify a rental arrangement.
+    - Focal_Layer: Tenant lives inside the home while rent and key move between two parties.
+    - Details_Layer: Small recurring circular arrow connects home, payment, and key.
+    - Lighting_Layer: Blue loop encloses the rental relationship.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:renting" data-archetype="rental-relationship">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 153H304V192H0Z" fill="#D8C5A8"/><path d="M0 153H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="153" cy="165" rx="119" ry="6" fill="#958977" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M31 128H273V147H31Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M46 147V158M257 147V158" stroke="#8A5A35" stroke-width="3.5" stroke-linecap="round"/><path d="M32 51H65V88H32Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.4"/><path d="M37 59H60M37 65H59M37 71H55" stroke="#CBD5E1" stroke-width="1.1"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M116 72L152 48L188 72V130H116Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M109 73L152 42L195 73" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M128 83H146V101H128Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M158 98Q158 92 164 92H180V130H158Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="175" cy="112" r="2" fill="#F2C14E"/><circle cx="74" cy="90" r="9" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.6"/><path d="M65 88Q65 76 75 76Q85 77 84 90L79 84H68Z" fill="#57463E"/><path d="M64 102Q74 96 84 102L87 124H61Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.7"/><path d="M216 90V121" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M216 90V121" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><circle cx="216" cy="84" r="9" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.6"/><path d="M207 83Q207 71 217 71Q227 72 226 84L221 78H210Z" fill="#3A2E2B"/><path d="M205 98Q216 92 227 98L232 124H200Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M211 99L196 105L187 103" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M211 99L196 105L187 103" fill="none" stroke="#F0C5A7" stroke-width="4" stroke-linecap="round"/><path d="M74 124L70 147M82 124L86 147M208 123L204 147M223 123L228 147" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M74 124L70 147M82 124L86 147M208 123L204 147M223 123L228 147" stroke="#344254" stroke-width="4" stroke-linecap="round"/><path d="M134 58L140 58L140 65L134 65Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="140" cy="61" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M94 64L106 72M190 72L201 64" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M131 87H144M55 111H84" stroke="#FFFFFF" stroke-width="1.2"/><path d="M145 144H160" stroke="#F3ECE1" stroke-width="1.2"/><path d="M104 52Q151 28 200 52" fill="none" stroke="#4A72B2" stroke-width="1.4" opacity=".65"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M78 62Q151 18 222 62Q272 94 232 139Q151 180 70 139Q31 119 55 77" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M48 78L55 72L59 81" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="152" cy="100" r="47" fill="#FEF3C7" opacity=".1"/></g>
+</svg>

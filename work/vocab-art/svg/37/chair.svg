@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: chair (Noun)
+  CONTEXTUAL_DEFINITION: A single seat with a back and four legs, without padded arms.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Keep the seat narrow and arm-free so it contrasts with the upholstered armchair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm interior floor.
+    - Context_Layer: Plain wall.
+    - Focal_Layer: Simple wooden dining chair.
+    - Details_Layer: Slatted back and four legs.
+    - Lighting_Layer: Soft top-left edge light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="37:chair" data-reused-from="09:chair" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 153 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 153 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="167" rx="49" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M71 153 V40 H233 V153" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M111 48 Q111 42 117 42 H187 Q193 42 193 48 V112 H111Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.6"/><path d="M122 54 V101 M152 54 V101 M182 54 V101" stroke="#D69A62" stroke-width="6" stroke-linecap="round"/><path d="M95 111 Q95 106 101 106 H203 Q209 106 209 112 V123 H95Z" fill="#C98B54" stroke="#1E2A3B" stroke-width="2.6"/><path d="M101 122 L95 158 M203 122 L209 158 M113 122 L119 158 M191 122 L185 158" stroke="#8A5A35" stroke-width="5.5" stroke-linecap="round"/><path d="M104 112 H200" stroke="#E6B17B" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M119 48 H185" stroke="#E6B17B" stroke-width="1.6"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

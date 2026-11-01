@@ -1,0 +1,184 @@
+{
+  "chapter": 61,
+  "chapter_title": "Soccer",
+  "domain_setting": "A clear association-football match in a green stadium: visible touchlines, halfway and penalty markings, goal frames with nets, a patterned round soccer ball, and distinct player roles. Use safe fair play and respectful crowd and officiating scenes.",
+  "ambient_palette": {
+    "field": "fresh grass green, chalk white, quiet stadium sage",
+    "players": "two contrasting kit colors with dark slate outlines",
+    "equipment": "warm ivory ball, pale net, amber corner flag and cards",
+    "time_and_results": "cool field tones, restrained board marks and bright whistle/referee details"
+  },
+  "recurring_scale_anchors": [
+    "Canvas 304×192; keep goal frames, players, balls, and flags within the safe area.",
+    "A soccer ball should be round and visibly patterned, distinct from the oval American-football ball.",
+    "Use readable full-size goal frames and nets; distinguish field lines, touchline, penalty box, center circle, and corner arc.",
+    "Player-role cards should show soccer context and different positions relative to a goal; do not rely on uniforms or readable numbers.",
+    "For cards and discipline, depict calm officiating and safe exits; avoid rough contact, injury detail, or humiliating behavior.",
+    "Use no text, readable numbers, logos, or club marks."
+  ],
+  "polysemy_resolution_table": {
+    "soccer": "Association football with round ball, rectangular goal and net; distinct from American football in Lesson 60.",
+    "ball": "Round patterned soccer ball, not a basketball or American-football oval.",
+    "field / pitch": "Marked grass soccer playing surface; pitch means the soccer field, not tar residue.",
+    "goal / score a goal": "Goal is the scoring target/result; score a goal is the action of sending the ball into the net.",
+    "corner / corner kick": "Corner is the field corner arc/flag area; corner kick is the restart taken from that arc.",
+    "penalty / penalty spot": "Penalty is the awarded kick after a foul; penalty spot is the marked location from which it is taken.",
+    "tie / draw": "Equal-score soccer match result, not tying a knot.",
+    "lose": "Lose the match respectfully, not lose an object.",
+    "forward / striker / midfielder / defender": "Distinct soccer positions: midfield between boxes, defender closer to own goal, forward in attacking third, striker central nearest opponent goal.",
+    "manager": "Soccer team manager directing team tactics, not a shop or company manager.",
+    "net / bar / goalpost": "Net is the mesh behind the goal opening; bar is the crossbar; goalpost is either vertical upright.",
+    "full time / halftime / injury time / stoppage time": "Separate match periods and time additions: halftime break, full time/end, injury time added for injury delays, stoppage time broader added time for match delays.",
+    "be booked / booked / red card / be sent off / sent off": "Yellow card is a caution/booked; red card is the object; be sent off is the referee action, sent off is the player leaving after dismissal.",
+    "kick / kickoff / throw-in / free kick": "Separate soccer actions and restarts: kick contacts the ball, kickoff starts/restarts at center, throw-in restarts from touchline, free kick follows a foul.",
+    "goalkeeper / goalie": "Keeper guarding the goal mouth with gloves and body positioned to block a shot.",
+    "linesman / referee": "Linesman assistant follows the touchline with a flag; referee is central official with whistle and cards.",
+    "fans / mascot / steward / security": "Fans watch and cheer from stands; mascot is a costumed team character; steward guides spectators; security staff calmly protect the venue.",
+    "substitutes": "Players waiting at sideline/bench to replace an on-field teammate."
+  },
+  "existing_asset_triage": {
+    "lesson_61": "Compiler plan reported zero Lesson 61 SVGs at start. Reviewed cross-lesson soccer and football candidates by image and exact role/sense; keep or adapt only direct soccer-context matches.",
+    "reviewed_candidates": [
+      {
+        "source": "60/soccer.svg",
+        "verdict": "KEEP / ADAPT for soccer",
+        "reason": "The image clearly shows association football with a round patterned ball, goal and net, and marked pitch; exact sport match."
+      },
+      {
+        "source": "59/kick.svg",
+        "verdict": "KEEP / ADAPT for kick",
+        "reason": "A player clearly kicks a ball; adapt the ball and surroundings to soccer context."
+      },
+      {
+        "source": "22/ball.svg",
+        "verdict": "REJECT for soccer ball",
+        "reason": "It is an orange basketball with court markings, not a soccer ball."
+      },
+      {
+        "source": "52/field.svg",
+        "verdict": "REJECT for field / pitch",
+        "reason": "It shows a pasture fence and open meadow, not a marked soccer field."
+      },
+      {
+        "source": "60/lose.svg",
+        "verdict": "REJECT as direct art; adapt the respectful-loss concept",
+        "reason": "The seated losing player and score comparison are useful concepts, but the scene uses an American-football goalpost and lacks soccer cues; re-authored with a soccer goal, ball, field lines, and composed players."
+      },
+      {
+        "source": "60/tie.svg",
+        "verdict": "REVIEWED candidate for tie / draw",
+        "reason": "It shows equal sports tallies and a handshake, matching the drawn-game sense; adapt to soccer if reused."
+      },
+      {
+        "source": "60/coach.svg",
+        "verdict": "REVIEWED candidate for manager",
+        "reason": "Sports instructor with tactics board is a near-match to soccer team manager; decide per-role clarity and duplicate use."
+      },
+      {
+        "source": "60/player.svg",
+        "verdict": "KEEP / ADAPT for forward",
+        "reason": "The single soccer attacker is advancing with a ball toward the opposing goal; adapt the context to make the attacking-third position explicit."
+      },
+      {
+        "source": "07/forward.svg",
+        "verdict": "REJECT for forward",
+        "reason": "It depicts forwarding an email to a contact, not a soccer position."
+      },
+      {
+        "source": "75/crowded.svg",
+        "verdict": "REJECT for fans",
+        "reason": "It shows passengers waiting at a transit stop, not spectators cheering at a match."
+      },
+      {
+        "source": "75/overcrowding.svg",
+        "verdict": "REJECT for fans",
+        "reason": "It depicts crowded housing and urban density, not a stadium crowd."
+      },
+      {
+        "source": "34/manager.svg",
+        "verdict": "REJECT for soccer manager",
+        "reason": "It shows a workplace manager with a business chart, not a soccer sideline or team tactics scene."
+      },
+      {
+        "source": "35/manager.svg",
+        "verdict": "REJECT for soccer manager",
+        "reason": "It uses a generic workplace presenter composition and lacks a soccer team setting."
+      },
+      {
+        "source": "42/manager.svg",
+        "verdict": "REJECT for soccer manager",
+        "reason": "It depicts a hiring interview/manager context rather than managing a team during a match."
+      },
+      {
+        "source": "34/security-guard.svg",
+        "verdict": "KEEP / ADAPT for stadium security",
+        "reason": "The uniformed guard and entry-control scene are clear; adapted the checkpoint into a stadium access scanner and monitoring setting."
+      },
+      {
+        "source": "50/lifeguard.svg",
+        "verdict": "REJECT for soccer security",
+        "reason": "It is a beach/pool rescue role, not venue security."
+      },
+      {
+        "source": "33/bar.svg",
+        "verdict": "REJECT for bar (goalpost)",
+        "reason": "It depicts a restaurant counter/bar, not the horizontal goal crossbar."
+      },
+      {
+        "source": "16/boots.svg",
+        "verdict": "REJECT for cleats",
+        "reason": "The pair are rubber rain boots; they have no soccer upper or studded sole."
+      },
+      {
+        "source": "15/shirt.svg",
+        "verdict": "REJECT for jersey",
+        "reason": "It shows a long-sleeved collared button-up shirt, not a short-sleeved soccer jersey."
+      },
+      {
+        "source": "46/corner.svg",
+        "verdict": "REJECT for field corner",
+        "reason": "It is a road intersection diagram, not the corner of a soccer pitch."
+      },
+      {
+        "source": "60/soccer.svg",
+        "verdict": "REJECT as sole source for net / goalpost",
+        "reason": "The goal and net are background props in a player-focused match scene, too small to teach either equipment term in isolation."
+      },
+      {
+        "source": "46/corner.svg",
+        "verdict": "REJECT for soccer corner",
+        "reason": "It is a road-intersection diagram; the field-corner card needs pitch boundary lines and the corner arc."
+      },
+      {
+        "source": "60/player.svg",
+        "verdict": "REJECT as primary art for jersey",
+        "reason": "The scene is focused on a player advancing with the ball, so the shirt is a secondary detail."
+      },
+      {
+        "source": "60/soccer.svg",
+        "verdict": "REJECT as primary art for pitch (sports)",
+        "reason": "The player and goal are focal; the playing surface is only background and does not teach the pitch itself."
+      },
+      {
+        "source": "60/score.svg",
+        "verdict": "REJECT for score a goal",
+        "reason": "The scoreboard and celebrating players show a result after play but not the action of sending the ball into the net; the lesson needs a visible shot and goal line."
+      },
+      {
+        "source": "15/tie.svg",
+        "verdict": "REJECT for tie / draw",
+        "reason": "It depicts neckwear, the clothing sense of tie, not an equal sports result."
+      },
+      {
+        "source": "34/full-time.svg",
+        "verdict": "REJECT for full time",
+        "reason": "It depicts an employment schedule and completed work calendar, not the end of a soccer match."
+      },
+      {
+        "source": "58/draw.svg",
+        "verdict": "REJECT for draw / tie",
+        "reason": "It depicts an artist drawing a picture, not a drawn match result."
+      }
+    ]
+  }
+}

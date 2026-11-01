@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: serious doubts (Noun phrase)
+  CONTEXTUAL_DEFINITION: Strong uncertainty about whether something is true or will work.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept as unresolved balance
+  SYNONYM_GUARD: Depict the unsettled state itself with two equally plausible claims, distinct from actively having doubts or feeling misgivings about a choice.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale discussion-room wall with a low display shelf.
+    - Context_Layer: Two equal claim cards contain incompatible visual outcomes.
+    - Focal_Layer: A balanced scale remains level with no side winning.
+    - Details_Layer: An unresolved fork hovers between the cards.
+    - Lighting_Layer: Cool, even light makes the uncertainty feel weighty rather than angry.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:serious doubts" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="doubts-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="doubts-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#doubts-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="2.8"/><path d="M35 124H269V133H35Z" fill="#C88446" stroke="#965D28" stroke-width="1.2"/><path d="M45 133V151M259 133V151" stroke="#965D28" stroke-width="2.6"/></g>
+  <g id="layer-context"><path d="M37 33Q37 25 46 25H105Q114 25 114 34V61H37Z" fill="#FCFEFF" stroke="#5479AC" stroke-width="1.3"/><path d="M192 33Q192 25 201 25H260Q269 25 269 34V61H192Z" fill="#FFF9F3" stroke="#D9857F" stroke-width="1.3"/><circle cx="62" cy="45" r="7" fill="#F2C14E"/><path d="M85 53L94 39L103 53Z" fill="#7FB07A"/><circle cx="217" cy="45" r="7" fill="#F2C14E"/><path d="M240 39L249 53L258 39Z" fill="#7FB07A"/><path d="M76 72L93 83M228 72L211 83" stroke="#94A3B8" stroke-width="1.7" stroke-dasharray="2 4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#doubts-shadow)"><path d="M151 56V125" stroke="#64748B" stroke-width="5" stroke-linecap="round"/><path d="M107 77Q151 63 195 77" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M111 78L100 106M191 78L202 106" stroke="#64748B" stroke-width="1.8"/><path d="M84 105Q101 99 117 105L114 116H87Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M186 105Q202 99 218 105L215 116H189Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M131 125L151 104L171 125Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.6"/><circle cx="151" cy="102" r="7" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/><path d="M144 137H158L166 145H136Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M127 51L151 39L175 51L151 63Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M151 63V80M151 80L139 91M151 80L163 91" fill="none" stroke="#94A3B8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M137 91L140 85M137 91L144 90M165 91L162 85M165 91L158 90" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/><circle cx="151" cy="25" r="10" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.2"/><path d="M151 19V26M151 31V32" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M72 47L78 44M224 47L230 44" stroke="#94A3B8" stroke-width="1.4"/><path d="M103 115H199" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 4"/><ellipse cx="151" cy="151" rx="64" ry="4" fill="#DDD4C3" opacity=".65"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="89" rx="128" ry="74" fill="#E3E8F0" opacity=".11"/><path d="M37 33Q37 25 46 25H105" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".8"/></g>
+</svg>

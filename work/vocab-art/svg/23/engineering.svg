@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: engineering (Noun)
+  CONTEXTUAL_DEFINITION: The school subject and discipline of designing and building structures or machines.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with scale cue
+  SYNONYM_GUARD: Students test a truss bridge model under a load, distinguishing engineering from architecture's building plans.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Engineering classroom with workbench and high window.
+    - Context_Layer: Tool board with wrench and safety goggles.
+    - Focal_Layer: Truss bridge model spans a small test gap.
+    - Details_Layer: Triangular braces, support blocks, and weight test.
+    - Lighting_Layer: Highlights trace the bridge's load-bearing structure.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:engineering" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="eng-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="eng-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#eng-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H95V82H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V81M23 55H94" stroke="#FFFFFF" stroke-width="2.5"/><rect x="225" y="40" width="53" height="82" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M35 89H81M42 88V68M55 88V71M68 88V65M80 88V74" stroke="#64748B" stroke-width="2.4"/><path d="M232 55L245 68L239 74L226 61ZM251 77Q267 72 270 83Q267 91 254 89L247 85Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M30 145H277" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#eng-shadow)"><rect x="41" y="119" width="20" height="25" fill="#D9A441" stroke="#65472F" stroke-width="1.5"/><rect x="245" y="119" width="20" height="25" fill="#D9A441" stroke="#65472F" stroke-width="1.5"/><path d="M52 116L86 74L116 116L151 74L185 116L220 74L254 116" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 116L116 116L151 74L185 116L254 116" fill="none" stroke="#D9857F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 116H254" stroke="#1E2A3B" stroke-width="3"/><path d="M68 116L86 74M101 116L116 116M133 96L151 116M168 96L185 116M202 96L220 116M237 96L254 116" stroke="#315782" stroke-width="2.2"/><path d="M93 67H208V77H93Z" fill="#D9A441" stroke="#65472F" stroke-width="1.4"/><rect x="140" y="45" width="26" height="21" rx="3" fill="#E3E8F0" stroke="#64748B" stroke-width="1.4"/><path d="M153 66V74" stroke="#64748B" stroke-width="2.2"/></g>
+  <g id="layer-details"><circle cx="86" cy="74" r="3" fill="#FEF9C3" stroke="#315782" stroke-width="1"/><circle cx="151" cy="74" r="3" fill="#FEF9C3" stroke="#315782" stroke-width="1"/><circle cx="220" cy="74" r="3" fill="#FEF9C3" stroke="#315782" stroke-width="1"/><path d="M78 62Q93 55 108 62M196 61Q213 54 229 61" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M66 132H240" stroke="#F0C971" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="100" rx="126" ry="72" fill="#FEF9C3" opacity=".08"/><path d="M53 113L86 74L116 113L151 74L185 113L220 74L253 113" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".68"/></g>
+</svg>

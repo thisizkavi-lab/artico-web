@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: schedule
+  CONTEXTUAL_DEFINITION: A timetable showing when public transportation services depart and arrive.
+  PEDAGOGICAL_ART_DIRECTOR: Show a station departure board with orderly route rows and a nearby analog clock with no numerals.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero information object with context
+  SYNONYM_GUARD: Use repeated service rows and a transit clock; avoid a personal calendar or appointment diary.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Board x=47..244, y=46..127 with five horizontal rows of route dots, color bars, and blank time marks; clock centered at (260,55), radius 22, with hands and no numbers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:schedule" data-archetype="hero-travel-information">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="schedule-board" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#33465A"/><stop offset="1" stop-color="#1E2A3B"/></linearGradient>
+    <linearGradient id="schedule-clock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DFE8E9"/></linearGradient>
+    <radialGradient id="schedule-halo"><stop stop-color="#F7E9C0" stop-opacity=".56"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="schedule-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="151" cy="159" rx="103" ry="8" fill="#DDD4C3"/><path d="M25 41 H277" stroke="#E4E9E5" stroke-width="1"/></g>
+  <g id="layer-context"><path d="M34 151 V131 H270 V151" fill="#D7DFE0" stroke="#64748B" stroke-width="1.5"/><path d="M42 138 H262" stroke="#AEBBC0" stroke-width="1.2"/><path d="M246 83 V131 M272 83 V131" stroke="#7F8D96" stroke-width="2"/><path d="M239 131 H280" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#schedule-shadow)"><rect x="39" y="42" width="202" height="89" rx="5" fill="url(#schedule-board)" stroke="#1E2A3B" stroke-width="2.4"/><rect x="48" y="51" width="184" height="71" rx="2" fill="#43566A" stroke="#81909A" stroke-width="1"/><path d="M51 65 H229 M51 79 H229 M51 93 H229 M51 107 H229" stroke="#8D9CA5" stroke-width=".9" opacity=".75"/><circle cx="62" cy="58" r="3" fill="#F2C14E"/><circle cx="62" cy="72" r="3" fill="#7EBC9A"/><circle cx="62" cy="86" r="3" fill="#E28666"/><circle cx="62" cy="100" r="3" fill="#86AEDD"/><circle cx="62" cy="114" r="3" fill="#F2C14E"/><path d="M74 58 H124 M74 72 H110 M74 86 H131 M74 100 H116 M74 114 H102" stroke="#DFE8EA" stroke-width="3" stroke-linecap="round"/><path d="M145 58 H179 M145 72 H184 M145 86 H170 M145 100 H188 M145 114 H176" stroke="#CBD7DB" stroke-width="2.2" stroke-linecap="round"/><path d="M197 55 H220 M197 69 H220 M197 83 H220 M197 97 H220 M197 111 H220" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><circle cx="263" cy="54" r="23" fill="url(#schedule-clock)" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="263" cy="54" r="17" fill="none" stroke="#9AA8AD" stroke-width="1"/><path d="M263 39 V42 M278 54 H275 M263 69 V66 M248 54 H251" stroke="#64748B" stroke-width="1.3"/><path d="M263 54 L263 43 M263 54 L272 58" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/><circle cx="263" cy="54" r="2.2" fill="#F2C14E"/></g>
+  <g id="layer-details"><path d="M72 59 H103 M72 73 H96 M72 87 H109 M72 101 H101" stroke="#FFFFFF" stroke-width=".8" opacity=".55"/><path d="M44 136 H231" stroke="#FFFFFF" stroke-width="1"/><circle cx="233" cy="58" r="2" fill="#F2C14E"/><path d="M250 26 L254 22 M278 33 L282 29" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="83" rx="122" ry="77" fill="url(#schedule-halo)" opacity=".14"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M38 130 H241" stroke="#1E2A3B" stroke-width=".9" opacity=".35"/></g>
+</svg>

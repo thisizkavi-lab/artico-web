@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT: CHAPTER: 74 — At the supermarket. WORD: receipt. CONTEXTUAL_DEFINITION: a printed record of a completed supermarket purchase. CONTEXT_GUARD: Show a thermal receipt beside checkout payment equipment and purchased groceries. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="74:receipt" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="receipt-paper" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#E7EEF5"/><stop offset=".25" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></linearGradient>
+    <radialGradient id="receipt-seal"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#568552"/></radialGradient>
+    <path id="receipt-slip" d="M119 39 H190 V150 L184 145 L177 151 L170 145 L163 151 L156 145 L149 151 L142 145 L135 151 L128 145 L119 150 Z"/>
+    <clipPath id="receipt-clip"><use href="#receipt-slip"/></clipPath>
+    <filter id="receipt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="164" rx="72" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Completed retail transaction context -->
+  <g id="layer-context"><path d="M29 137 H276 V150 H29 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M38 142 H267" stroke="#E3AC77" stroke-width="2"/><rect x="47" y="91" width="55" height="44" rx="6" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><rect x="54" y="98" width="41" height="16" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.3"/><path d="M57 122 H92" stroke="#94A3B8" stroke-width="2"/><path d="M207 112 Q230 101 250 112 L251 137 H207 Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><path d="M212 111 Q229 92 246 111" fill="none" stroke="#568552" stroke-width="2.4"/></g>
+  <!-- 3. Primary narrow receipt strip -->
+  <g id="layer-focal" filter="url(#receipt-shadow)"><use href="#receipt-slip" fill="url(#receipt-paper)" stroke="#1E2A3B" stroke-width="2.5"/><g clip-path="url(#receipt-clip)"><path d="M120 44 H190 V73 Q155 61 120 73Z" fill="#F4F6FA"/><path d="M130 55 H179 M130 62 H174" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/><path d="M131 80 H177 M131 88 H168 M131 96 H177 M131 104 H162" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/><path d="M131 114 H179" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M131 124 H158 M131 131 H174" stroke="#64748B" stroke-width="1.8" stroke-linecap="round"/></g></g>
+  <!-- 4. Paid transaction cue and printer slot -->
+  <g id="layer-details"><circle cx="171" cy="55" r="12" fill="url(#receipt-seal)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M165 55 L169 59 L177 50" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="113" y="36" width="83" height="12" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M126 43 H183" stroke="#1E2A3B" stroke-width="2"/><path d="M131 138 L137 143 L143 138 L149 143 L155 138 L161 143 L167 138 L173 143 L179 138" fill="none" stroke="#CBD5E1" stroke-width="1.4"/></g>
+  <!-- 5. Directional emphasis on the proof slip -->
+  <g id="layer-lighting"><path d="M204 63 Q219 74 213 93" fill="none" stroke="#4A72B2" stroke-width="2.4" stroke-dasharray="4 4" stroke-linecap="round"/><path d="M209 88 L213 96 L218 89 Z" fill="#4A72B2"/><path d="M124 45 H146" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M91 67 L91 75 M87 71 H95" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

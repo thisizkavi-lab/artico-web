@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: front desk
+  CONTEXTUAL_DEFINITION: The hotel counter where guests ask for service and collect room access items.
+  PEDAGOGICAL_ART_DIRECTOR: Make the physical reception counter the hero, with a service bell, blank monitor, lamp, and room-key cubbies.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Emphasize the long guest-facing counter and service tools, not a person greeting guests or a bedroom.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A substantial wood-front counter spans the foreground; behind it sit a small blank terminal, brass bell, desk lamp, and organized card slots.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:front desk" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="front-lobby" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E3E8E5"/><stop offset="1" stop-color="#C7CFCA"/></linearGradient>
+  <linearGradient id="front-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B58B61"/><stop offset="1" stop-color="#795B42"/></linearGradient>
+  <linearGradient id="front-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1E9D9"/><stop offset="1" stop-color="#D8C8AE"/></linearGradient>
+  <filter id="front-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#front-lobby)"/><path d="M16 18H288V137H16Z" fill="#E9E7DE" stroke="#65767A" stroke-width="1.5"/><path d="M16 137H288V183H16Z" fill="#B8B8AD"/><path d="M22 164H281" stroke="#EEEAE0" stroke-width="1.3"/><path d="M42 18V137M261 18V137" stroke="#C3C5BD" stroke-width="1.2"/><path d="M95 18H209V73H95Z" fill="#B6D1D7" stroke="#506B76" stroke-width="1.5"/><path d="M152 18V73M95 46H209" stroke="#58717A" stroke-width="1.3"/></g>
+ <g id="layer-context"><rect x="25" y="34" width="37" height="66" rx="3" fill="#71848A" stroke="#435761" stroke-width="1.4"/><path d="M31 43H56M31 55H56M31 67H56M31 79H56M31 91H56" stroke="#D9E5E4" stroke-width="1.3"/><circle cx="44" cy="43" r="3" fill="#F2C14E"/><circle cx="44" cy="67" r="3" fill="#F2C14E"/><circle cx="44" cy="91" r="3" fill="#F2C14E"/><circle cx="274" cy="49" r="15" fill="#80A879" stroke="#486750" stroke-width="1.4"/><path d="M263 71H285V106H263Z" fill="#7FA87A" stroke="#486750" stroke-width="1.2"/></g>
+ <g id="layer-focal" filter="url(#front-shadow)"><path d="M30 106H274V168H30Z" fill="url(#front-wood)" stroke="#1E2A3B" stroke-width="2"/><path d="M25 98H279V113H25Z" fill="url(#front-stone)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M39 126H266M39 150H266" stroke="#D3B489" stroke-width="1.4"/><rect x="82" y="57" width="44" height="36" rx="4" fill="#334653" stroke="#1E2A3B" stroke-width="1.5"/><rect x="87" y="62" width="34" height="25" fill="#B9D7DB"/><path d="M94 91H114" stroke="#263C4B" stroke-width="3"/><rect x="202" y="50" width="7" height="47" fill="#71563E"/><path d="M188 58Q206 37 224 58Z" fill="#E0B665" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="206" cy="95" rx="8" ry="3" fill="#A37A4E"/><path d="M211 76Q216 76 216 82V85H211Z" fill="#F2C14E" stroke="#8A663A" stroke-width="1.1"/><path d="M205 91Q205 86 208 84" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M88 66H120M90 71H112" stroke="#E9F2EF" stroke-width="1.1"/><circle cx="206" cy="93" r="2.5" fill="#F2C14E"/><path d="M32 114H272" stroke="#F7F2E7" stroke-width="1.1" opacity=".7"/><ellipse cx="152" cy="172" rx="111" ry="6" fill="#526274" opacity=".18"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="110" rx="130" ry="74" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".35"/><path d="M18 20H286" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

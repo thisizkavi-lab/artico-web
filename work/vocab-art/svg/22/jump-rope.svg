@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: jump rope / skipping rope (UK) (Noun)
+  CONTEXTUAL_DEFINITION: A rope held at both ends and swung over the body while jumping.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A child is caught mid-jump inside one continuous curved rope, so the image reads as the activity and its rope rather than a loose cord.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Sunny playground court with distant fence.
+    - Context_Layer: Child jumps with feet lifted above the ground.
+    - Focal_Layer: Rope curves up over the head and down to both hands.
+    - Details_Layer: Rope handles, flying feet, and motion marks.
+    - Lighting_Layer: Bright outdoor glow and an oval ground shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:jump rope / skipping rope (uk)" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="jumprope-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="jumprope-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#jumprope-bg)"/><path d="M0 146Q76 141 152 146T304 144V192H0Z" fill="#91A77C"/><path d="M0 171H304" stroke="#D9CBB6" stroke-width="2"/><path d="M21 105V145M29 105V145M37 105V145M21 111H37M21 124H37M21 137H37M266 103V144M274 103V144M282 103V144M266 110H282M266 123H282M266 136H282" stroke="#A98A64" stroke-width="1.4"/><path d="M19 105H39M264 103H284" stroke="#315782" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="176" rx="45" ry="7" fill="#526C4A" opacity=".34"/><path d="M91 131L104 115M211 131L198 115" stroke="#D9A441" stroke-width="2" stroke-linecap="round" opacity=".8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#jumprope-shadow)"><path d="M107 119Q67 86 92 48Q119 10 151 18Q187 9 213 46Q238 84 197 119" fill="none" stroke="#D9857F" stroke-width="4" stroke-linecap="round"/><path d="M108 119L101 129M196 119L203 129" stroke="#315782" stroke-width="7" stroke-linecap="round"/><circle cx="151" cy="48" r="14" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/><path d="M137 48Q139 32 153 33Q164 34 166 48L161 52Q157 40 151 40Q144 40 141 53Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M135 66Q151 58 167 68L177 102L162 111L141 108L128 95Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M136 69L115 82L107 116M165 69L186 82L196 116" fill="none" stroke="#C98961" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M142 106L132 131L119 139M161 108L171 130L184 138" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M119 139L106 136M184 138L198 134" stroke="#D9857F" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M127 56Q151 62 175 56M116 75L122 80M181 75L188 80" fill="none" stroke="#88A9D0" stroke-width="2" stroke-linecap="round"/><path d="M85 63L77 58M220 63L228 57M81 81L72 81M225 81L234 80" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><circle cx="101" cy="129" r="3" fill="#D9A441"/><circle cx="203" cy="129" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="90" rx="91" ry="76" fill="#FEF9C3" opacity=".08"/><path d="M107 40Q151 2 194 39" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".74"/></g>
+</svg>

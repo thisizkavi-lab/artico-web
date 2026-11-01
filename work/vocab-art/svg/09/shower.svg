@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: shower (Noun)
+  CONTEXTUAL_DEFINITION: A bathroom fixture that sprays water from an overhead showerhead.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a wall-mounted showerhead and falling spray inside an upright stall, distinct from a bathtub basin.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled bathroom stall.
+    - Context_Layer: Vertical enclosure and shower controls.
+    - Focal_Layer: Overhead angled showerhead with water streams.
+    - Details_Layer: Drain and cool water splashes.
+    - Lighting_Layer: Clean bathroom reflections.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:shower" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 42 H304 M0 84 H304 M0 126 H304 M51 0 V157 M102 0 V157 M153 0 V157 M204 0 V157 M255 0 V157" stroke="#B8CDD1" stroke-width="1.2"/><path d="M0 157 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 157 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="171" rx="74" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M76 21 V156 M236 21 V156 M76 21 H236" fill="none" stroke="#647D8B" stroke-width="3"/><path d="M77 143 H235" stroke="#5479AC" stroke-width="2.5"/><path d="M228 40 Q205 38 193 50 L183 60" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M171 59 Q183 51 196 59 L191 70 Q181 65 168 70Z" fill="#DCE3E4" stroke="#1E2A3B" stroke-width="2"/><path d="M80 100 H97 V120 H80Z" fill="#DCE3E4" stroke="#5479AC" stroke-width="1.6"/><circle cx="88" cy="108" r="2.5" fill="#CE7B55"/><path d="M75 155 H238" stroke="#647D8B" stroke-width="4"/></g>
+  <g id="layer-focal"><path d="M170 72 L158 92 M180 72 L175 96 M188 72 L190 98 M196 71 L205 94" stroke="#79C7DF" stroke-width="3" stroke-linecap="round"/><path d="M159 100 L163 105 M176 105 L180 111 M194 104 L198 110 M208 99 L212 104" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/><path d="M134 149 Q152 145 170 149" fill="none" stroke="#5479AC" stroke-width="2"/><circle cx="152" cy="149" r="2.7" fill="#5479AC"/></g>
+  <g id="layer-details"><path d="M172 62 Q183 56 193 62" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

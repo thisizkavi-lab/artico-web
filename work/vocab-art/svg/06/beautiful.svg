@@ -1,0 +1,64 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: beautiful (Adjective)
+  CONTEXTUAL_DEFINITION: Pleasing in appearance, shown by a carefully arranged bouquet admired at a quiet table.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object with contextual admirer)
+  SYNONYM_GUARD: The detailed floral arrangement communicates visual beauty; a single gifted flower is reserved for lovely.
+  MODE: STATIC (The Artico course compiles a still WebP card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper interior with a pale window and grounded table.
+    - Context_Layer: Vase and leafy bouquet stem cluster centered around x=151.
+    - Focal_Layer: Three large, distinct flowers at (105,69), (155,53), and (202,73).
+    - Details_Layer: Smaller blossoms, veined leaves, water in glass vase, and table grain.
+    - Lighting_Layer: Cream highlights on petals and a soft halo behind the bouquet.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:beautiful" data-archetype="hero-object">
+  <defs>
+    <style>:root { --c-bg-1:#FAF8F3; --c-bg-2:#F2ECE1; --c-surface:#EAE3D5; --c-primary:#5479AC; --c-secondary:#3D5F91; --c-accent:#F2C14E; --c-highlight:#FFFFFF; }</style>
+    <linearGradient id="beaut-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFDF8"/><stop offset="1" stop-color="#F3E9D6"/></linearGradient>
+    <linearGradient id="beaut-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAF7F5" stop-opacity=".9"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".35"/><stop offset="1" stop-color="#9CCBCB" stop-opacity=".65"/></linearGradient>
+    <radialGradient id="beaut-halo"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#F7DCAA" stop-opacity="0"/></radialGradient>
+    <filter id="beaut-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#beaut-bg)"/>
+    <rect x="214" y="22" width="58" height="64" rx="7" fill="#DCEAF0" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M243 23V84M215 53H271" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M0 147 Q151 141 304 147V192H0Z" fill="#D7B98C"/>
+    <path d="M0 159H304M0 180H304" stroke="#B48C60" stroke-width="1.4" opacity=".5"/>
+    <ellipse cx="151" cy="170" rx="75" ry="8" fill="#BFAF98" opacity=".55"/>
+  </g>
+  <g id="layer-context">
+    <ellipse cx="151" cy="83" rx="110" ry="74" fill="url(#beaut-halo)"/>
+    <path d="M151 145 C148 126 126 112 107 92 M151 145 C153 118 155 95 155 67 M151 145 C164 121 184 101 206 86 M146 123 C129 112 117 105 97 104 M158 129 C179 119 193 112 216 110" fill="none" stroke="#477B54" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M134 153 L169 153 L163 175 Q152 181 140 175Z" fill="url(#beaut-glass)" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M140 163 Q153 166 166 163" fill="none" stroke="#78B9C1" stroke-width="2"/>
+    <path d="M142 154V170M151 154V174M160 154V169" stroke="#477B54" stroke-width="2"/>
+  </g>
+  <g id="layer-focal" filter="url(#beaut-shadow)">
+    <g fill="#E56D83" stroke="#9B4257" stroke-width="1.4">
+      <ellipse cx="105" cy="69" rx="10" ry="23" transform="rotate(-45 105 69)"/><ellipse cx="105" cy="69" rx="10" ry="23" transform="rotate(0 105 69)"/><ellipse cx="105" cy="69" rx="10" ry="23" transform="rotate(45 105 69)"/><ellipse cx="105" cy="69" rx="10" ry="23" transform="rotate(90 105 69)"/>
+    </g>
+    <circle cx="105" cy="69" r="8" fill="#F2C14E" stroke="#965D28" stroke-width="1.5"/>
+    <g fill="#FFF9F0" stroke="#C5AA81" stroke-width="1.2">
+      <ellipse cx="155" cy="53" rx="9" ry="22"/><ellipse cx="155" cy="53" rx="9" ry="22" transform="rotate(60 155 53)"/><ellipse cx="155" cy="53" rx="9" ry="22" transform="rotate(120 155 53)"/>
+    </g>
+    <circle cx="155" cy="53" r="7" fill="#F2C14E" stroke="#965D28" stroke-width="1.4"/>
+    <g fill="#E88991" stroke="#9B4257" stroke-width="1.3">
+      <ellipse cx="202" cy="73" rx="9" ry="19"/><ellipse cx="202" cy="73" rx="9" ry="19" transform="rotate(45 202 73)"/><ellipse cx="202" cy="73" rx="9" ry="19" transform="rotate(90 202 73)"/><ellipse cx="202" cy="73" rx="9" ry="19" transform="rotate(135 202 73)"/>
+    </g>
+    <circle cx="202" cy="73" r="6.5" fill="#F2C14E" stroke="#965D28" stroke-width="1.3"/>
+  </g>
+  <g id="layer-details">
+    <path d="M82 103 C72 94 67 82 71 69 C82 75 89 86 88 99Z M123 104 C126 91 136 82 149 79 C147 94 138 104 125 108Z M177 116 C179 102 188 94 203 91 C200 105 191 114 179 120Z M204 115 C215 106 228 104 239 109 C231 120 219 123 207 119Z" fill="#7FAE79" stroke="#477B54" stroke-width="1.5"/>
+    <path d="M75 73Q80 86 85 96M142 82Q135 94 126 103M198 94Q190 106 180 115M234 110Q222 113 209 117" fill="none" stroke="#DCECCF" stroke-width="1.5"/>
+    <circle cx="128" cy="86" r="4" fill="#A97AB3"/><circle cx="133" cy="82" r="3.5" fill="#A97AB3"/><circle cx="137" cy="88" r="3" fill="#A97AB3"/>
+    <circle cx="177" cy="96" r="3.5" fill="#F3B849"/><circle cx="183" cy="92" r="3" fill="#F3B849"/>
+    <path d="M129 157 Q150 160 171 157" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".9"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M97 57Q103 52 109 57M149 42Q154 38 160 43M198 62Q204 58 208 64" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity=".9"/>
+    <path d="M112 21L115 13L118 21L126 24L118 27L115 35L112 27L104 24Z M190 37L192 31L194 37L200 39L194 41L192 47L190 41L184 39Z" fill="#F2C14E"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity=".65"/>
+  </g>
+</svg>

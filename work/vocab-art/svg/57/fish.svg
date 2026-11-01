@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: fish (noun)
+  CONTEXTUAL_DEFINITION: A living fish swimming underwater, with fins, gill cover, scales, and a tail.
+  PEDAGOGICAL_ARCHETYPE: 1 - Generic class member with defining anatomy
+  SYNONYM_GUARD: Show a live fish in water, not a fishbowl pet or food on a market tray; keep the tail vertical and show side fins and gill lines.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: One medium silvery teal fish faces right in open water, body x=86..218 y=72..127, upright forked tail at left, dorsal fin, pectoral fin, gill arcs behind eye, and a few visible scales.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:fish" data-archetype="generic-live-fish-with-fins-and-gills">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#5D9B9E;--c-secondary:#365D65;--c-accent:#E8B34D;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="fish-water" x2="0" y2="1"><stop stop-color="#A5D1D0"/><stop offset="1" stop-color="#47899A"/></linearGradient>
+  <linearGradient id="fish-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91C2BE"/><stop offset="1" stop-color="#4E858A"/></linearGradient>
+  <filter id="fish-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E1ECE8"/><path d="M0 25Q76 18 152 27T304 22V192H0Z" fill="url(#fish-water)"/><path d="M0 159Q76 152 152 160T304 154V192H0Z" fill="#528F98"/><circle cx="56" cy="43" r="18" fill="#F4D991" opacity=".27"/></g>
+ <g id="layer-context"><path d="M0 34q44-5 82 0m140-3q35-5 64 0" fill="none" stroke="#D7EBE5" stroke-width="1.4"/><path d="M23 125q16-6 31 0m199-12q15-6 29 0m-171 44q17-5 35 0" fill="none" stroke="#A5D4D1" stroke-width="1.5" stroke-linecap="round"/><circle cx="61" cy="100" r="2" fill="#EAF8F3"/><circle cx="68" cy="91" r="1.2" fill="#EAF8F3"/><circle cx="247" cy="130" r="2" fill="#DDF2EB"/><ellipse cx="151" cy="139" rx="75" ry="6" fill="#17434D" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#fish-shadow)">
+  <path d="M88 99Q71 88 61 75Q61 96 76 107Q64 116 60 129Q77 125 93 113Z" fill="#4B7F84" stroke="#335A61" stroke-width="1.5"/>
+  <path d="M83 91Q103 72 142 73Q181 72 211 87Q225 95 229 104Q222 116 204 123Q169 135 129 127Q100 122 83 109Z" fill="url(#fish-body)" stroke="#355B63" stroke-width="1.6"/>
+  <path d="M97 93Q125 82 157 83Q189 84 213 96Q201 105 184 108Q141 112 101 103Z" fill="#A8CFBF" opacity=".45"/>
+  <path d="M121 77Q128 64 138 68L147 75Z" fill="#4B8182" stroke="#355B63" stroke-width="1.1"/>
+  <path d="M123 123Q136 136 149 134L158 128Z" fill="#52858A" stroke="#355B63" stroke-width="1"/>
+  <path d="M161 108Q173 113 181 124Q170 125 160 118Z" fill="#498086" stroke="#355B63" stroke-width="1"/>
+  <path d="M206 96Q213 100 215 106Q211 111 205 111" fill="none" stroke="#315863" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="216" cy="96" r="2.1" fill="#1E2A3B"/>
+  <path d="M214 108q7 2 12-1" fill="none" stroke="#315863" stroke-width="1" stroke-linecap="round"/>
+  <path d="M194 92Q185 102 190 115m-5-20q-8 10-4 22" fill="none" stroke="#3E6D73" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M111 88q4 4 0 8m11-9q4 4 0 8m11-8q4 4 0 8m11-8q4 4 0 8m11-7q4 4 0 8m11-7q4 4 0 8m11-6q4 4 0 8" fill="none" stroke="#D9E7D9" stroke-width="1" opacity=".82" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M105 117q10 4 18 3m-32-15q6-5 11-5m-60 28q10-4 19 0" fill="none" stroke="#C4E0D8" stroke-width="1.2" stroke-linecap="round"/><circle cx="121" cy="119" r="1.1" fill="#EBF7EF"/><circle cx="237" cy="71" r="1.6" fill="#F8FBF1"/></g>
+ <g id="layer-lighting"><path d="M101 88q17-12 34-11m32 2q14 1 25 8" fill="none" stroke="#F4FAEE" stroke-width="1.6" opacity=".58" stroke-linecap="round"/><ellipse cx="152" cy="94" rx="62" ry="20" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

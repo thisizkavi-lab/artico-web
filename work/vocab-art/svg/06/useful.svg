@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: useful (Adjective)
+  CONTEXTUAL_DEFINITION: Helpful for a practical task, shown by a sturdy step stool that lets someone reach a high shelf.
+  PEDAGOGICAL_ARCHETYPE: 2 (Object used successfully to solve an everyday problem)
+  SYNONYM_GUARD: The stool is visibly doing a job by safely extending a person's reach, not simply sitting in a room.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pantry wall with a high shelf and storage jars.
+    - Context_Layer: Person stands securely on the stool.
+    - Focal_Layer: Hand reaches a jar that was otherwise out of reach.
+    - Details_Layer: Stool legs, shelf brackets and balanced posture.
+    - Lighting_Layer: Clear window light on the helper object.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:useful" data-archetype="action-tool">
+  <defs><linearGradient id="pantry" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pantry)"/><path d="M0 146 Q151 140 304 147 L304 192 L0 192Z" fill="#EAE3D5"/><path d="M16 57 L288 57 M16 108 L288 108" stroke="#B97840" stroke-width="7" stroke-linecap="round"/><path d="M31 61 L31 72 M273 61 L273 72 M31 112 L31 123 M273 112 L273 123" stroke="#8D552E" stroke-width="3"/><ellipse cx="151" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M111 147 Q113 117 137 113 Q160 117 163 147Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M127 116 L125 102 L146 102 L145 119" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="135" cy="82" r="20" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1"/><path d="M115 81 Q116 60 136 62 Q155 64 155 83 Q145 73 134 74 Q125 79 115 81Z" fill="#27364B"/><path d="M124 84 Q128 80 132 84 M138 84 Q142 80 146 84" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M126 93 Q135 99 144 92" fill="none" stroke="#A34F47" stroke-width="1.9" stroke-linecap="round"/><path d="M151 110 Q168 93 180 77 Q184 72 189 76 Q191 80 187 85 L163 119" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M88 144 L186 144 L180 155 L94 155Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.4"/><path d="M105 155 L102 164 M168 155 L172 164" stroke="#8D552E" stroke-width="4" stroke-linecap="round"/><path d="M112 146 L114 121 L124 121 L126 146 M149 146 L151 121 L161 121 L163 146" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M106 121 L170 121" stroke="#1E2A3B" stroke-width="3"/><path d="M186 47 Q191 38 203 39 Q215 40 215 51 L213 57 L190 57Z" fill="#D7C7A2" stroke="#8D7958" stroke-width="1.7"/><path d="M191 48 Q200 44 210 48" stroke="#F1F5F9" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M169 72 L175 62 L181 72 L191 77 L181 82 L175 92 L169 82 L159 77Z" fill="#F2C14E"/><path d="M93 127 L98 117 L103 127 L113 132 L103 137 L98 147 L93 137 L83 132Z" fill="#F2C14E"/><path d="M192 65 Q197 60 202 65 M199 64 Q206 58 211 64" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M118 72 Q134 66 148 72 M191 42 Q202 39 211 43" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.78"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: accessories (Noun)
+  CONTEXTUAL_DEFINITION: Small wearable items added to complete an outfit.
+  PEDAGOGICAL_ARCHETYPE: 1 — Coordinated hero assortment
+  SYNONYM_GUARD: Show a small group of wearable additions, not clothing itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Dressing table with a tidy accessory grouping.
+    - Context_Layer: Soft tray and mirror base establish the setting.
+    - Focal_Layer: Scarf, sunglasses, and bracelet form distinct items.
+    - Details_Layer: Materials differ clearly: cloth, glass, and metal.
+    - Lighting_Layer: Warm halo unifies the set.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:accessories" data-archetype="hero-assortment">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="160" rx="115" ry="19" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M49 112Q152 95 255 112L242 164H62Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M67 127Q152 115 237 127" fill="none" stroke="#CBD5E1" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="92" rx="94" ry="67" fill="#FEF3C7" opacity=".36"/><path d="M67 66Q87 53 108 63L123 91L103 105L80 95Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M74 68Q89 74 104 91M81 79Q95 86 111 98" fill="none" stroke="#9CB5D5" stroke-width="1.5"/><path d="M131 70Q144 57 159 70L155 96Q145 107 134 97Z" fill="#263447" stroke="#1E2A3B" stroke-width="2.2"/><path d="M126 72Q145 63 164 72M132 77Q146 72 158 77" fill="none" stroke="#D9A441" stroke-width="1.5"/><path d="M199 71Q219 65 228 83Q234 96 222 105Q208 112 198 99Q192 84 199 71Z" fill="none" stroke="#D9A441" stroke-width="5"/><circle cx="215" cy="88" r="3" fill="#D9A441"/><path d="M67 66Q87 53 108 63L123 91L103 105L80 95Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M42 159H261" stroke="#64748B" stroke-width="2"/><path d="M49 112Q152 95 255 112" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="151" cy="88" rx="81" ry="49" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".36"/></g>
+</svg>

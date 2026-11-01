@@ -1,0 +1,49 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 68 - Sickness
+  WORD: cut (wound)
+  CONTEXTUAL_DEFINITION: A small superficial opening in the skin made by a sharp edge.
+  PEDAGOGICAL_ARCHETYPE: 3 — Gentle symptom close-up
+  SYNONYM_GUARD: Use one narrow superficial line with no blood; scrape is a broader rubbed patch.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close view of a forearm and clean bandage held nearby.
+    - Context_Layer: Skin is intact around a tiny mark.
+    - Focal_Layer: A short straight superficial line identifies the cut.
+    - Details_Layer: Plaster strip sits ready beside the skin, no sharp tool present.
+    - Lighting_Layer: Small ring avoids magnifying severity.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:cut (wound)" data-archetype="symptom-closeup">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#F0EEE8"/><ellipse cx="153" cy="155" rx="116" ry="25" fill="#E7D6D1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M28 73Q40 60 57 69L248 121Q266 126 262 141Q257 156 240 151L45 101Q25 96 28 73Z" fill="#D29A78" stroke="#26384A" stroke-width="2.4"/><path d="M45 81Q127 106 221 133" fill="none" stroke="#A86E58" stroke-width="1.4"/><path d="M179 45Q191 38 203 47L236 69Q245 76 238 85L230 95L185 66Q175 58 179 45Z" fill="#F6E5CE" stroke="#26384A" stroke-width="2.1"/><path d="M193 53L226 75M189 62L219 82" stroke="#F6E5CE" stroke-width="1.3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="127" cy="104" rx="38" ry="25" transform="rotate(16 127 104)" fill="#D6A64C" opacity=".42"/><path d="M118 98L136 104" stroke="#C96F70" stroke-width="2.4" stroke-linecap="round"/><path d="M115 95L139 103" stroke="#D6A64C" stroke-width="1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M154 101L139 104" stroke="#597D8B" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="124" cy="100" r="1.2" fill="#F4B4AE"/>
+    <path d="M190 49L201 57" stroke="#A9C0C1" stroke-width="1"/>
+
+    <path d="M201 45L214 54" stroke="#A9C0C1" stroke-width="1"/>
+
+    <path d="M215 52L229 62" stroke="#A9C0C1" stroke-width="1"/>
+
+    <path d="M198 66L210 74" stroke="#A9C0C1" stroke-width="1"/>
+
+    <path d="M214 72L227 80" stroke="#A9C0C1" stroke-width="1"/>
+
+    <path d="M47 74Q57 70 67 74" stroke="#E5B79E" stroke-width="1" fill="none"/>
+
+    <path d="M70 91Q92 98 110 104" stroke="#A86E58" stroke-width=".9" fill="none"/>
+
+    <path d="M149 119Q176 128 201 135" stroke="#E5B79E" stroke-width="1" fill="none"/>
+
+    <path d="M163 115Q186 124 211 129" stroke="#A86E58" stroke-width=".9" fill="none"/>
+
+    <path d="M105 89L101 84" stroke="#D6A64C" stroke-width="1.1"/>
+
+    <path d="M137 111L143 112" stroke="#D6A64C" stroke-width="1.1"/>
+
+    <circle cx="117" cy="109" r="1" fill="#C96F70"/>
+
+    <path d="M235 103L240 105" stroke="#597D8B" stroke-width="1"/>
+
+    <path d="M205 99L210 101" stroke="#597D8B" stroke-width="1"/>
+</g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="127" cy="104" rx="26" ry="14" transform="rotate(16 127 104)" fill="none" stroke="#D6A64C" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

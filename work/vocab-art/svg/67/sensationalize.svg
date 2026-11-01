@@ -1,0 +1,50 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: sensationalize
+ CONTEXTUAL_DEFINITION: To present an ordinary event as far more shocking or important than it really is.
+ PEDAGOGICAL_ARCHETYPE: small harmless event exaggerated into oversized news coverage
+ SYNONYM_GUARD: Show media exaggeration of a minor event, not genuine sensational news or a dangerous incident.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A small spilled cup sits on a table beside a huge newspaper-like media panel magnifying the same tiny spill into a dramatic spotlight image with oversized burst rays.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:sensationalize" data-archetype="media exaggerating a minor event">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 157H304V192H0Z" fill="#C8B89E"/><path d="M0 157H304" stroke="#796B59" stroke-width="1.4"/>
+  <!-- tiny ordinary spill -->
+  <path d="M25 111H101V135H25Z" fill="#8C725A"/><path d="M34 135V145M92 135V145" stroke="#725F4B" stroke-width="2"/>
+  <path d="M48 87H69L67 111H50Z" fill="#597D8B"/><path d="M50 87H67" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M43 111Q58 105 73 111L77 116Q59 120 40 116Z" fill="#9CB8B4" opacity=".85"/>
+  <!-- oversized coverage panel -->
+  <path d="M127 30H279V141H127Z" fill="#26384A"/><path d="M135 38H271V133H135Z" fill="#F6E5CE"/>
+  <path d="M143 49H263V118H143Z" fill="#B85E5A"/><path d="M144 108L178 61L211 100L240 54L263 74V118H143Z" fill="#D6A64C"/>
+  <path d="M146 119H258" stroke="#26384A" stroke-width="3"/><path d="M146 125H237" stroke="#597D8B" stroke-width="1.5"/>
+ </g>
+ <g id="layer-context">
+  <!-- lens enlarges the very small spill into dramatic coverage -->
+  <circle cx="112" cy="85" r="22" fill="#D6A64C" opacity=".22"/><circle cx="112" cy="85" r="17" fill="none" stroke="#26384A" stroke-width="2.2"/><path d="M125 99L139 113" stroke="#26384A" stroke-width="4"/>
+  <path d="M100 85L106 80L111 86L117 77L124 86" fill="none" stroke="#B85E5A" stroke-width="2"/>
+  <path d="M21 145H104M133 145H280" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M147 42H259" stroke="#FFF1C7" stroke-width="1"/>
+ </g>
+ <g id="layer-focal">
+  <!-- same little tipped cup repeated, now blown up on the cover -->
+  <path d="M183 79H212L209 107H186Z" fill="#597D8B" stroke="#26384A" stroke-width="1.4"/><path d="M186 80H209" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M178 108Q197 98 218 108L225 116Q201 121 173 116Z" fill="#9CB8B4" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M197 66L202 57L207 66L216 70L207 74L202 83L197 74L188 70Z" fill="#F6E5CE"/><path d="M235 89L240 82L245 89L252 92L245 95L240 102L235 95L228 92Z" fill="#F6E5CE"/>
+  <!-- shocked editor presents the exaggerated image -->
+  <circle cx="98" cy="61" r="8" fill="#D29A78"/><path d="M90 60Q91 49 99 50Q107 51 107 62L102 56H92Z" fill="#26384A"/>
+  <path d="M84 73Q98 66 112 73L116 102H80Z" fill="#597D8B"/><path d="M87 76L77 65M109 76L119 66" stroke="#D29A78" stroke-width="2.5"/>
+  <path d="M92 61Q98 57 104 61M95 66Q98 72 101 66" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M85 100L83 113M112 100L114 113" stroke="#26384A" stroke-width="2.4"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 44L150 39L155 44M160 44L165 39L170 44M178 44L183 39L188 44" stroke="#D6A64C" stroke-width="1.4"/>
+  <path d="M69 93Q79 88 86 93" stroke="#B85E5A" stroke-width="1.2" fill="none"/><circle cx="58" cy="101" r="1.6" fill="#D6A64C"/>
+  <path d="M153 128H219" stroke="#D6A64C" stroke-width="1"/><circle cx="258" cy="126" r="1.5" fill="#B85E5A"/>
+  <path d="M79 54L84 49M116 48L121 43M109 36L112 30" stroke="#B85E5A" stroke-width="1.5"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="209" cy="85" rx="82" ry="62" fill="#E7C66B" opacity=".1"/><path d="M131 32L156 50M276 32L253 50" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M22 148H281" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

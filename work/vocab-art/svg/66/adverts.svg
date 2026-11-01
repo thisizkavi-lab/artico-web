@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: adverts
+ CONTEXTUAL_DEFINITION: A sequence of television advertising spots presenting different consumer products.
+ PEDAGOGICAL_ARCHETYPE: a row of distinct TV product advertisement scenes
+ SYNONYM_GUARD: Show several different product ads as a sequence; don't show one shopping-channel demonstration or an interruption between programs.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A television displays three separate product spot images in a row: a drink, a pair of shoes and a small appliance.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:adverts" data-archetype="sequence of TV advertisements">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M25 22Q25 18 31 18H273Q279 18 279 24V145H25Z" fill="#26384A"/><path d="M34 28H270V139H34Z" fill="#405663"/><path d="M43 36H261V130H43Z" fill="#D9DECA"/>
+  <path d="M126 145L133 153H171L178 145Z" fill="#64777C"/><path d="M112 153H192V159H112Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M52 50H111V116H52Z" fill="#B85E5A"/><path d="M122 50H181V116H122Z" fill="#D6A64C"/><path d="M192 50H251V116H192Z" fill="#597D8B"/>
+  <path d="M58 56H105V109H58Z" fill="#E5D9C3"/><path d="M128 56H175V109H128Z" fill="#CBD7CA"/><path d="M198 56H245V109H198Z" fill="#D5DED8"/>
+  <path d="M48 44H115V122H48Z" fill="none" stroke="#F6E5CE" stroke-width="1.2"/><path d="M118 44H185V122H118Z" fill="none" stroke="#F6E5CE" stroke-width="1.2"/><path d="M188 44H255V122H188Z" fill="none" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M45 125H258" stroke="#D6A64C" stroke-width="1.5"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M69 82Q67 76 73 73L85 68L97 74L96 94Q82 100 69 94Z" fill="#B85E5A"/><path d="M73 73L75 65H88L92 73" fill="#D6A64C"/><path d="M72 82H96" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M136 89L145 69L154 89Z" fill="#26384A"/><path d="M141 87L145 77L150 87Z" fill="#F6E5CE"/><path d="M155 89L163 69L171 89Z" fill="#B85E5A"/><path d="M138 91H169" stroke="#26384A" stroke-width="2"/>
+  <path d="M211 89Q211 82 218 82H227Q234 82 234 89V97H211Z" fill="#D6A64C" stroke="#26384A" stroke-width="1.3"/><path d="M216 82V77H229V82M214 97V101M231 97V101" stroke="#26384A" stroke-width="1.5" fill="none"/><circle cx="222" cy="90" r="3" fill="#F6E5CE"/>
+  <path d="M114 83H121M184 83H191" stroke="#D6A64C" stroke-width="1.8" stroke-dasharray="2 2"/>
+ </g>
+ <g id="layer-details">
+  <path d="M56 61H105M126 61H177M196 61H247" stroke="#FFF7E4" stroke-width="1" opacity=".75"/><circle cx="105" cy="117" r="2" fill="#D6A64C"/><circle cx="175" cy="117" r="2" fill="#B85E5A"/><circle cx="245" cy="117" r="2" fill="#798C72"/>
+  <path d="M44 37L60 53M260 37L244 53" stroke="#FFF1C7" stroke-width="1.2" opacity=".6"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="64" rx="88" ry="33" fill="#E7C66B" opacity=".1"/><path d="M44 37L67 73M260 37L238 73" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M44 131H260" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

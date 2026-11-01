@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: kettle (Noun)
+  CONTEXTUAL_DEFINITION: A lidded vessel with a spout and handle for boiling water.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a clear body, pouring spout, lid, and arched handle, distinct from a straight-sided saucepan.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter.
+    - Context_Layer: Pale tile and countertop.
+    - Focal_Layer: Rounded metal kettle with spout and handle.
+    - Details_Layer: Lid knob and rising steam.
+    - Lighting_Layer: Bright upper-left highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:kettle" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 147 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 147 H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="151" cy="167" rx="78" ry="7" fill="#BBAA92"/></g>
+  <g id="layer-context"><path d="M103 88 Q103 65 127 61 H177 Q201 65 201 88 V139 Q201 148 190 148 H114 Q103 148 103 139Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.7"/><path d="M105 91 Q95 82 77 87 L51 104 Q44 109 51 115 L99 111Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.6"/><path d="M111 85 Q85 50 151 47 Q217 50 191 85" fill="none" stroke="#1E2A3B" stroke-width="7"/><path d="M111 85 Q85 50 151 47 Q217 50 191 85" fill="none" stroke="#647D8B" stroke-width="3.5"/><path d="M124 61 Q151 55 180 61" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M126 64 H178 L183 70 H121Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="152" cy="63" rx="7" ry="4" fill="#CE7B55" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal"><path d="M143 42 Q135 32 144 25 M154 42 Q148 29 158 21 M166 43 Q163 31 173 26" fill="none" stroke="#79C7DF" stroke-width="2.2" stroke-linecap="round"/><path d="M114 100 Q118 90 120 81 M185 78 Q190 87 190 99" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.8"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

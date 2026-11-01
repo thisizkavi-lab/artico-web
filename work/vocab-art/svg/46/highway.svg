@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: highway
+  CONTEXTUAL_DEFINITION: A major public road that carries traffic between towns and cities.
+  PEDAGOGICAL_ART_DIRECTOR: Show a broad two-lane public road stretching between distant towns, with ordinary at-grade access and a passing side road to distinguish it from a controlled-access freeway.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make the setting intercity and public, but keep a visible same-level junction and avoid freeway-style overpasses.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two-lane road recedes from x=31..273 near y=183 to x=112..192 near y=50; low hills and two distant town clusters sit at opposite horizons; a side road joins at-grade at (202,112).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:highway" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="highway-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCECF0"/><stop offset="1" stop-color="#F6F1E5"/></linearGradient>
+    <linearGradient id="highway-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6E8090"/><stop offset="1" stop-color="#46596C"/></linearGradient>
+    <radialGradient id="highway-horizon"><stop stop-color="#FFF1B2" stop-opacity=".65"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="highway-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#highway-sky)"/><path d="M0 81L56 51L102 72L140 43L180 74L229 51L304 80V126H0Z" fill="#91B18E"/><path d="M0 92L62 72L105 86L148 62L194 88L250 66L304 91V132H0Z" fill="#759B78"/><path d="M99 62H205L281 192H23Z" fill="url(#highway-road)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M108 64L38 192M196 64L266 192" stroke="#FAF8F3" stroke-width="2.5"/><path d="M152 67V190" stroke="#FAF8F3" stroke-width="1.6" stroke-dasharray="11 10" opacity=".75"/><ellipse cx="151" cy="65" rx="62" ry="27" fill="url(#highway-horizon)"/></g>
+  <g id="layer-context"><rect x="10" y="62" width="23" height="24" rx="2" fill="#D5B694" stroke="#725F4D" stroke-width="1.3"/><path d="M7 63L22 51L36 63Z" fill="#7D6953" stroke="#1E2A3B" stroke-width="1.2"/><rect x="271" y="60" width="24" height="27" rx="2" fill="#ADC3CD" stroke="#576D7A" stroke-width="1.3"/><path d="M268 62L283 49L299 62Z" fill="#687B87" stroke="#1E2A3B" stroke-width="1.2"/><path d="M204 95L273 116L245 134L201 122Z" fill="#A9B696" stroke="#6E806E" stroke-width="1.6"/><path d="M201 122L236 138" stroke="#F8F5EA" stroke-width="1.4" stroke-dasharray="4 5"/><circle cx="42" cy="105" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="266" cy="142" r="13" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#highway-shadow)"><path d="M203 116C215 114 221 110 226 104" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><path d="M203 116C215 114 221 110 226 104" fill="none" stroke="#4A72B2" stroke-width="4" stroke-linecap="round"/><path d="M221 102L231 99L229 110Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M141 155Q145 146 155 146H168Q177 147 181 157L184 174H137Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2"/><path d="M149 152H170L174 164H145Z" fill="#B5D5DF" stroke="#536A7A" stroke-width="1.3"/><circle cx="147" cy="173" r="4" fill="#34485B" stroke="#1E2A3B" stroke-width=".9"/><circle cx="175" cy="173" r="4" fill="#34485B" stroke="#1E2A3B" stroke-width=".9"/></g>
+  <g id="layer-details"><path d="M116 77L70 154M187 77L233 154" stroke="#F4F0E7" stroke-width="1.4"/><path d="M145 84V101M145 112V126M145 137V145" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><circle cx="54" cy="69" r="8" fill="#7FA87B" stroke="#486750" stroke-width="1.3"/><circle cx="252" cy="72" r="8" fill="#7FA87B" stroke="#486750" stroke-width="1.3"/><path d="M35 91H78M227 91H276" stroke="#A8C6A7" stroke-width="2"/><path d="M200 109L213 113M214 119L228 124" stroke="#F3F0E8" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M102 64H202" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><ellipse cx="151" cy="65" rx="69" ry="31" fill="none" stroke="#FFF8D8" stroke-width="1.2" opacity=".7"/><ellipse cx="160" cy="179" rx="30" ry="4" fill="#26384B" opacity=".3"/></g>
+</svg>

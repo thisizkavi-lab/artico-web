@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hat (Noun)
+  CONTEXTUAL_DEFINITION: Headwear with a crown and a brim around it.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Broad brim encircles the crown, distinct from the projecting visor of a cap.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Honey-colored sun hat with broad circular brim.
+    - Details_Layer: Crown band and woven arcs.
+    - Lighting_Layer: Upper-left straw highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hat" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="151" rx="119" ry="20" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="120" ry="67" fill="#FEF3C7" opacity=".28"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M30 111Q54 82 93 82Q123 51 152 51Q183 51 211 82Q251 81 275 111Q280 123 266 128Q151 146 39 128Q23 124 30 111Z" fill="#E7C783" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M92 85Q95 49 121 34Q152 18 182 34Q208 50 212 85Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M92 78Q151 87 212 78L212 91Q151 101 92 91Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M39 112Q151 132 266 112M105 51Q150 62 198 51M104 64Q152 77 200 64" fill="none" stroke="#B48331" stroke-width="1.6"/>
+  <path d="M61 108Q91 101 116 105" fill="none" stroke="#FFF1B8" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="109" rx="111" ry="29" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5" opacity=".5"/>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: campus (Noun)
+  CONTEXTUAL_DEFINITION: The grounds and buildings of a university or college.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: A broad outdoor view links several academic buildings with paths and walking students, distinguishing campus grounds from one school building.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open university grounds with sky, lawns, and trees.
+    - Context_Layer: Small path, trees, and benches give scale.
+    - Focal_Layer: Two connected academic buildings around a courtyard.
+    - Details_Layer: Clockless tower, windows, and walking students.
+    - Lighting_Layer: Late-morning sunlight over the lawn.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:campus" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="campus-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="campus-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#campus-bg)"/><circle cx="255" cy="28" r="15" fill="#FEF9C3" opacity=".88"/><path d="M0 117Q54 105 103 117T204 113Q254 103 304 116V192H0Z" fill="#91A77C"/><path d="M0 164Q80 153 156 164T304 160V192H0Z" fill="#7E956F"/></g>
+  <g id="layer-context"><path d="M0 125Q58 117 113 125T216 123T304 125" fill="none" stroke="#D9C9A7" stroke-width="8"/><path d="M0 125Q58 117 113 125T216 123T304 125" fill="none" stroke="#F7EBCF" stroke-width="4"/><path d="M41 116V85M34 93Q40 80 50 89Q59 98 47 104M243 117V82M235 91Q241 77 251 86Q261 95 248 102" stroke="#55704D" stroke-width="3" stroke-linecap="round"/><circle cx="39" cy="78" r="15" fill="#91A77C"/><circle cx="246" cy="77" r="17" fill="#91A77C"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#campus-shadow)"><path d="M40 67L101 43L162 67V122H40Z" fill="#E8DDC8" stroke="#1E2A3B" stroke-width="2"/><path d="M33 67L101 35L169 67L162 74L101 49L40 74Z" fill="#5479AC" stroke="#315782" stroke-width="2"/><path d="M57 82H74V100H57ZM84 82H101V100H84ZM112 82H129V100H112ZM139 82H153V100H139Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M88 102H114V122H88Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M185 70L234 52L283 70V120H185Z" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2"/><path d="M179 70L234 45L289 70L283 77L234 58L185 77Z" fill="#D9857F" stroke="#A95059" stroke-width="1.8"/><path d="M198 82H212V98H198ZM220 82H234V98H220ZM244 82H258V98H244ZM265 82H277V98H265Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.1"/><path d="M225 98H244V120H225Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M72 131Q78 123 85 131V144H72Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M70 131H87" stroke="#D9A441" stroke-width="2"/><circle cx="124" cy="130" r="4" fill="#C98961"/><path d="M121 134L124 140L127 134" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/><circle cx="173" cy="137" r="4" fill="#80513F"/><path d="M170 141L173 147L176 141" stroke="#D9857F" stroke-width="2.4" stroke-linecap="round"/><path d="M260 106Q267 102 274 106" fill="none" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><path d="M38 67L101 35L169 67M179 70L234 45L289 70" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".72"/><ellipse cx="154" cy="127" rx="136" ry="50" fill="#FEF9C3" opacity=".06"/></g>
+</svg>

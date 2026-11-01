@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hairbrush (Noun)
+  CONTEXTUAL_DEFINITION: A handled grooming tool with a padded head and many bristles.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Use a broad oval bristle pad rather than the single row of teeth on a comb.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper and low shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Oval paddle brush at a diagonal.
+    - Details_Layer: Many small bristles on cushion and a broad handle.
+    - Lighting_Layer: Warm wood highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hairbrush" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="157" rx="95" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="92" rx="111" ry="68" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M177 111L214 149Q220 156 214 163L201 176Q194 182 187 175L148 135Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M188 142L210 164" stroke="#D8A17A" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="127" cy="79" rx="57" ry="41" transform="rotate(-34 127 79)" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.8"/><ellipse cx="127" cy="79" rx="47" ry="31" transform="rotate(-34 127 79)" fill="#C7D9E8" stroke="#315782" stroke-width="1.7"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g fill="#1E2A3B">
+    <circle cx="94" cy="61" r="2.2"/><circle cx="107" cy="52" r="2.2"/><circle cx="121" cy="47" r="2.2"/><circle cx="136" cy="45" r="2.2"/><circle cx="150" cy="47" r="2.2"/>
+    <circle cx="83" cy="73" r="2.2"/><circle cx="98" cy="69" r="2.2"/><circle cx="113" cy="64" r="2.2"/><circle cx="128" cy="61" r="2.2"/><circle cx="143" cy="62" r="2.2"/><circle cx="158" cy="66" r="2.2"/>
+    <circle cx="82" cy="87" r="2.2"/><circle cx="97" cy="83" r="2.2"/><circle cx="112" cy="79" r="2.2"/><circle cx="127" cy="77" r="2.2"/><circle cx="142" cy="80" r="2.2"/><circle cx="155" cy="85" r="2.2"/>
+    <circle cx="88" cy="101" r="2.2"/><circle cx="103" cy="98" r="2.2"/><circle cx="118" cy="94" r="2.2"/><circle cx="133" cy="93" r="2.2"/><circle cx="146" cy="99" r="2.2"/>
+  </g>
+  <path d="M174 117L194 137" stroke="#1E2A3B" stroke-width="1.4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M69 117Q92 135 123 132" fill="none" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="4 5"/>
+</svg>

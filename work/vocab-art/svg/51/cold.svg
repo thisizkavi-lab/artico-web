@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: cold (temperature) (Adjective)
+  CONTEXTUAL_DEFINITION: Having a low temperature that makes a person feel cold and bundle up.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person in a thick coat and scarf with visible breath in a wintry setting.
+  PEDAGOGICAL_ARCHETYPE: 5 - Temperature sensation
+  SYNONYM_GUARD: This is clearly cold, stronger than chilly, with winter clothing but no extreme ice danger.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Bundled pedestrian in a heavy coat, hat, and scarf with breath clouds and scattered snow under a gray sky.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:cold (temperature)" data-archetype="cold-weather-sensation">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="co-sky" x2="0" y2="1"><stop stop-color="#DCE8EC"/><stop offset="1" stop-color="#AFC2CE"/></linearGradient><linearGradient id="co-coat" x2="1" y2="1"><stop stop-color="#597D91"/><stop offset="1" stop-color="#354F66"/></linearGradient><linearGradient id="co-snow" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9E7E9"/></linearGradient><filter id="co-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#co-sky)"/><path d="M0 124Q78 111 154 124T304 118V192H0Z" fill="#8EA4A6"/><path d="M0 151Q76 144 151 151T304 148V192H0Z" fill="url(#co-snow)"/></g>
+ <g id="layer-context"><path d="M0 117Q57 106 111 117T221 116T304 109" fill="none" stroke="#F8FBF8" stroke-width="1.6"/><path d="M28 81q6-10 13 0m210 16q6-10 13 0M33 172h245" fill="none" stroke="#F5FAF6" stroke-width="1.6"/><circle cx="38" cy="53" r="2.3" fill="#FFFFFF"/><circle cx="78" cy="95" r="2" fill="#FFFFFF"/><circle cx="234" cy="57" r="2.2" fill="#FFFFFF"/><ellipse cx="151" cy="161" rx="48" ry="5" fill="#405964" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#co-shadow)">
+  <circle cx="151" cy="54" r="17" fill="#D39A72" stroke="#795744" stroke-width="1.3"/><path d="M133 55Q135 32 153 34Q172 36 170 56L164 62H139Z" fill="#41596B" stroke="#293F4F" stroke-width="1.5"/><path d="M139 48Q152 42 167 49" fill="none" stroke="#D8E7E9" stroke-width="2"/>
+  <path d="M136 70L119 79L114 126L140 144L163 126L159 78L151 70Z" fill="url(#co-coat)" stroke="#293F4F" stroke-width="1.8"/><path d="M136 72Q151 84 161 72L169 90L152 104L132 89Z" fill="#E4E8DF" stroke="#81929A" stroke-width="1.2"/><path d="M146 82V133" fill="none" stroke="#CEDFE1" stroke-width="2.2"/><circle cx="146" cy="98" r="1.7" fill="#F6F7EC"/><circle cx="146" cy="111" r="1.7" fill="#F6F7EC"/><circle cx="146" cy="124" r="1.7" fill="#F6F7EC"/>
+  <path d="M123 82L103 94L98 119L109 124L129 109M157 82L177 94L181 119L171 124L157 108" fill="none" stroke="#D39A72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M101 117Q108 112 114 120L109 128Q103 130 99 125M177 117Q170 112 165 120L170 128Q176 130 180 125" fill="#D39A72" stroke="#795744" stroke-width="1"/>
+  <path d="M139 143L134 159M161 143L168 159" fill="none" stroke="#344A58" stroke-width="5" stroke-linecap="round"/><path d="M127 159h15m22 0h16" fill="none" stroke="#344A58" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M166 56q18-7 28 0m-14 7q11-2 16 3" fill="none" stroke="#F6FFFF" stroke-width="3" stroke-linecap="round"/><path d="M131 107l5 4m26-4-5 4" fill="none" stroke="#B9CDD4" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M121 83l-9 30m47-31 10 30m-31-33q13 10 25 0" fill="none" stroke="#9DB6C1" stroke-width="1.2"/><path d="M186 53q10-4 16 0" fill="none" stroke="#E8F3F5" stroke-width="1.3"/><circle cx="151" cy="53" r="1.2" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><circle cx="266" cy="131" r="2" fill="#FFFFFF"/><circle cx="54" cy="140" r="1.8" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M137 72q13 8 23 0m-37 10 11 7m36-7-8 7" fill="none" stroke="#EDF7F5" stroke-width="1.3" opacity=".75"/><circle cx="145" cy="52" r="1.2" fill="#FFF8E7"/><path d="M173 55q11-5 17-1" fill="none" stroke="#FFFFFF" stroke-width="1.4"/></g>
+</svg>

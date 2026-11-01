@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: expenditure (noun)
+  CONTEXTUAL_DEFINITION: Money spent, especially the total amount used for goods or services.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrastive outflow state
+  SYNONYM_GUARD: Show multiple purchases and accumulated spending flowing out of a household fund, distinct from one specific bill or single outlay.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open household budget box at left, several coins exit in a broad arrow toward grocery bag, transit ticket-shape and utility object at right; receipts accumulate below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:expenditure" data-archetype="contrast-outflow">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="spending-box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="spending-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="spending-envelope" d="M26 69 Q26 62 34 62 H108 Q116 62 116 70 V129 H26 Z"/>
+    <clipPath id="spending-clip"><use href="#spending-envelope"/></clipPath>
+    <filter id="spending-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="163" rx="117" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Household spending context -->
+  <g id="layer-context"><path d="M151 135 H279 V151 H151 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M157 140 H273" stroke="#E3AC77" stroke-width="1.7"/><path d="M204 82 L216 72 H254 L266 82 V124 H204 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="2"/><path d="M207 83 L235 101 L263 83" fill="none" stroke="#568552" stroke-width="1.8"/><path d="M216 73 Q235 60 253 73" fill="none" stroke="#568552" stroke-width="2.2"/><path d="M239 113 V91 H252 V113" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.4"/><path d="M239 99 H252" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary fund box and aggregate expenses leaving -->
+  <g id="layer-focal" filter="url(#spending-shadow)"><use href="#spending-envelope" fill="url(#spending-box)" stroke="#1E2A3B" stroke-width="2.5"/><g clip-path="url(#spending-clip)"><rect x="31" y="77" width="80" height="47" fill="#F8FBFE"/><path d="M31 79 L71 107 L111 79" fill="none" stroke="#5479AC" stroke-width="2.4"/><path d="M31 123 L59 100 M111 123 L83 100" fill="none" stroke="#8EB0DE" stroke-width="1.8"/></g><path d="M117 95 H187" fill="none" stroke="#FAF8F3" stroke-width="14" stroke-linecap="round"/><path d="M117 95 H187" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M117 95 H187" fill="none" stroke="#CE3D4E" stroke-width="4.5" stroke-linecap="round"/><path d="M178 86 L194 95 L178 104 Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 4. Several coins and purchase records show cumulative spend -->
+  <g id="layer-details"><ellipse cx="132" cy="92" rx="8" ry="4.3" fill="url(#spending-coin)" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="151" cy="99" rx="8" ry="4.3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="169" cy="92" rx="8" ry="4.3" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.3"/><path d="M81 135 H140" stroke="#64748B" stroke-width="1.8"/><path d="M88 139 H147" stroke="#94A3B8" stroke-width="1.6"/><path d="M36 133 L44 128 L52 133 L51 144 H37 Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M58 134 L66 129 L74 134 L73 145 H59 Z" fill="#F7DDE0" stroke="#CE3D4E" stroke-width="1.4"/><circle cx="37" cy="66" r="5" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M34 66 H40" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <!-- 5. Repeated outflow marks -->
+  <g id="layer-lighting"><path d="M125 74 L125 81 M121 78 H129" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M137 117 Q154 125 173 117" fill="none" stroke="#CE3D4E" stroke-width="1.7" stroke-dasharray="3 3"/><path d="M222 87 L240 87" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/></g>
+</svg>

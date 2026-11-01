@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: armchair (Noun)
+  CONTEXTUAL_DEFINITION: A comfortable chair with broad padded arms.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Make the two upholstered armrests prominent so it cannot read as a plain chair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and ground shadow.
+    - Context_Layer: Minimal wall and floor.
+    - Focal_Layer: Broad cushioned armchair.
+    - Details_Layer: Seamed back cushion and sturdy legs.
+    - Lighting_Layer: Upper-left highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:armchair" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 148 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 148 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="153" cy="165" rx="76" ry="9" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M45 148 V49 H259 V148" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M91 54 Q91 43 104 43 H190 Q203 43 203 55 V108 H91Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M102 54 Q102 50 108 50 H185 Q192 50 192 57 V96 H102Z" fill="#7191BC" stroke="#365D91" stroke-width="1.5"/><path d="M78 103 Q64 103 64 118 V139 Q64 147 73 147 H231 Q240 147 240 138 V117 Q240 103 226 103 H203 V128 H91 V103Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2.7"/><path d="M83 119 Q83 110 93 110 H211 Q221 110 221 119 V132 H83Z" fill="#E59770" stroke="#A9543F" stroke-width="1.6"/><path d="M83 145 V158 M222 145 V158" stroke="#8A5A35" stroke-width="6" stroke-linecap="round"/><path d="M101 103 V128 M203 103 V128" stroke="#A9543F" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M111 59 Q147 53 184 59 M111 89 Q147 96 184 89" fill="none" stroke="#AFC3DE" stroke-width="1.4"/><path d="M93 112 Q99 119 103 127 M201 127 Q207 119 211 112" fill="none" stroke="#F1B08F" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

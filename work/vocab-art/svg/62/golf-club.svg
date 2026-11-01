@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: golf club
+ CONTEXTUAL_DEFINITION: A long-shafted club with an angled head used to strike a golf ball.
+ PEDAGOGICAL_ARCHETYPE: Hero object with a small golf ball on a tee and putting green context.
+ SYNONYM_GUARD: Show the club head and long shaft, not a walking stick or a baseball bat.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Slender metal shaft runs diagonally from grip to compact angled iron head; golf ball and tee sit beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:golf club" data-archetype="golf-club-shaft-and-head">
+ <defs><linearGradient id="gc-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient><linearGradient id="gc-shaft" x2="1" y2="0"><stop stop-color="#718C84"/><stop offset=".5" stop-color="#D8E0DD"/><stop offset="1" stop-color="#52636A"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gc-sky)"/><path d="M0 129h304v63H0Z" fill="#879C83"/><path d="M0 132h304m-304 37h304" stroke="#E7EEE4" stroke-width="1.3"/><path d="M22 153h42m177 0h41" stroke="#DDE8DC" stroke-width="1.1"/><circle cx="44" cy="35" r="10" fill="#E4BB68"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="175" rx="99" ry="5" fill="#344F5A" opacity=".15"/><circle cx="234" cy="132" r="12" fill="#F8F6EF" stroke="#AAB6B5" stroke-width="1.3"/><path d="M231 145l-2 9m6-9 2 9m-9 0h12" stroke="#B28B60" stroke-width="1.8" stroke-linecap="round"/><path d="M202 113q11-10 19-4" fill="none" stroke="#E4BB68" stroke-width="1.5"/></g>
+ <g id="layer-focal"><path d="M83 155 213 48" stroke="url(#gc-shaft)" stroke-width="5.5" stroke-linecap="round"/><path d="m202 53 17-14 8 8-16 17Z" fill="#344F5A" stroke="#1E2A3B" stroke-width="1.4"/><path d="m214 54 13-7 9 11-5 8-17-1Z" fill="#AEBCC0" stroke="#52636A" stroke-width="1.3"/><path d="M80 151l13 16m-17-11 13 16m-20-11 12 16" stroke="#405B61" stroke-width="2.2" stroke-linecap="round"/><path d="M228 56q8 2 12 8" stroke="#F4EFE2" stroke-width="1.4" fill="none"/></g>
+ <g id="layer-details"><path d="M68 180h48m118 0h35" stroke="#DDE8DC" stroke-width="1.2"/><path d="M128 117 181 73m-37 56 19-16" fill="none" stroke="#9DAEAC" stroke-width="1"/><circle cx="236" cy="129" r="1.3" fill="#D3D8D3"/><circle cx="230" cy="132" r="1.2" fill="#D3D8D3"/><circle cx="238" cy="135" r="1.2" fill="#D3D8D3"/><circle cx="232" cy="138" r="1.2" fill="#D3D8D3"/><path d="m210 55 13 9" stroke="#70818A" stroke-width="1.1"/><path d="m216 51 13 9" stroke="#70818A" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="106" rx="74" ry="48" fill="#FFF6E7" opacity=".04"/><path d="M208 48l8-7" stroke="#F7F3E8" stroke-width="1.4"/></g>
+</svg>

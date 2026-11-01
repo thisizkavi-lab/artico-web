@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: glasses (Noun, plural)
+  CONTEXTUAL_DEFINITION: Eyeglasses worn on the face in front of the eyes.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Place visible clear lenses and frame arms on a face, distinct from bare eyewear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Muted face and shoulders.
+    - Focal_Layer: Dark blue rounded eyeglass frames.
+    - Details_Layer: Bridge, temples, and eye reflections.
+    - Lighting_Layer: Pale lens glints.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:glasses" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="91" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="106" ry="73" fill="#FEF3C7" opacity=".35"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#D8DCE2" stroke="#7B8A9E" stroke-width="2.3"/>
+  <path d="M106 158Q99 126 102 87Q105 48 152 44Q199 48 202 87Q205 126 198 158Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M99 87Q95 48 139 38Q175 35 198 56Q210 72 202 98L194 105Q189 77 175 70Q151 81 119 74Q107 79 103 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 91L145 89Q151 90 150 99L146 116Q145 121 140 120L111 118Q105 117 105 111Z" fill="#C7D9E8" fill-opacity=".4" stroke="#315782" stroke-width="3"/><path d="M154 99Q153 90 159 89L198 91L199 111Q199 117 193 118L164 120Q159 121 158 116Z" fill="#C7D9E8" fill-opacity=".4" stroke="#315782" stroke-width="3"/>
+  <path d="M150 98Q152 95 154 98M105 97L92 92M199 97L212 92" fill="none" stroke="#315782" stroke-width="3" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M112 96L132 95M168 95L189 96" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M93 90Q97 91 101 93M203 93Q207 91 211 90" stroke="#D9A441" stroke-width="2"/>
+  <path d="M119 103Q125 106 132 103M170 103Q177 106 183 103" stroke="#1E2A3B" stroke-width="1.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="104" rx="63" ry="27" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5" opacity=".44"/>
+</svg>

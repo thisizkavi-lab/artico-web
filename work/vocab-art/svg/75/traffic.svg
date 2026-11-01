@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:traffic" data-archetype="orderly-moving-mix-of-city-road-users">
+<!-- SELF_PROMPT: Lesson 75 urban life; traffic. Show ordinary moving city traffic with cars, a bus, a cyclist, and pedestrians sharing a controlled intersection. Leave clear gaps between vehicles to distinguish from a traffic jam. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="traffic-sky" x2="0" y2="1"><stop stop-color="#DCE8E9"/><stop offset="1" stop-color="#B9C9C8"/></linearGradient>
+  <linearGradient id="traffic-road" x2="0" y2="1"><stop stop-color="#777F7E"/><stop offset="1" stop-color="#4E5B5E"/></linearGradient>
+  <linearGradient id="traffic-car" x2="0" y2="1"><stop stop-color="#7C9DA3"/><stop offset="1" stop-color="#4E7180"/></linearGradient>
+  <linearGradient id="traffic-bus" x2="0" y2="1"><stop stop-color="#E8C978"/><stop offset="1" stop-color="#C88954"/></linearGradient>
+  <filter id="traffic-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".21"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#traffic-sky)"/><path d="M0 105V37h48v68Zm48 0V21h45v84Zm173 0V39h40v66Zm40 0V18h43v87Z" fill="#839599"/><path d="M0 108H304V192H0Z" fill="#A19D88"/></g>
+<g id="layer-context">
+  <path d="M0 119H304V192H0Z" fill="url(#traffic-road)"/><path d="M0 116H304" fill="none" stroke="#E0D3B3" stroke-width="3"/><path d="M0 162H304" fill="none" stroke="#E0D3B3" stroke-width="2"/>
+  <path d="M152 119v15m0 9v15m0 10v13" fill="none" stroke="#F0D98B" stroke-width="2.5"/>
+  <path d="M22 114V77m-6 4h12" fill="none" stroke="#4D646C" stroke-width="2.5"/><rect x="12" y="65" width="20" height="40" rx="6" fill="#516A72" stroke="#344B51" stroke-width="1.3"/><circle cx="22" cy="76" r="5" fill="#D87857"/><circle cx="22" cy="86" r="5" fill="#E9C66F"/><circle cx="22" cy="96" r="5" fill="#83A875"/>
+  <path d="M52 127h24m97 38h24m26-43h24" fill="none" stroke="#E9E0C9" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#traffic-shadow)">
+  <path d="M47 129Q50 122 58 122h36q8 0 11 8l3 13H44Z" fill="url(#traffic-car)" stroke="#3F5965" stroke-width="1.4"/><path d="M59 124h14v10H59Zm18 0h13v10H77Z" fill="#D0DDDA" stroke="#536E75" stroke-width="1"/><circle cx="59" cy="143" r="5" fill="#36494F"/><circle cx="95" cy="143" r="5" fill="#36494F"/><circle cx="59" cy="143" r="1.8" fill="#DDE0D6"/><circle cx="95" cy="143" r="1.8" fill="#DDE0D6"/>
+  <path d="M188 169Q191 162 200 162h39q8 0 11 8l3 13h-68Z" fill="#B97859" stroke="#664D43" stroke-width="1.4"/><path d="M201 164h14v10h-14Zm18 0h14v10h-14Z" fill="#D4DFDA" stroke="#6E6658" stroke-width="1"/><circle cx="201" cy="183" r="5" fill="#36494F"/><circle cx="238" cy="183" r="5" fill="#36494F"/>
+  <path d="M201 103Q204 95 214 95h57q9 0 12 9l3 17h-88Z" fill="url(#traffic-bus)" stroke="#72583F" stroke-width="1.4"/><path d="M211 98h19v12h-19Zm23 0h18v12h-18Zm22 0h20v12h-20Z" fill="#6E9097" stroke="#F0E0BD" stroke-width="1.1"/><circle cx="219" cy="124" r="5" fill="#36494F"/><circle cx="274" cy="124" r="5" fill="#36494F"/>
+  <circle cx="133" cy="123" r="5" fill="#C98E69"/><path d="M128 120q1-8 6-8 6 1 6 8l-3-2h-7Z" fill="#473E39"/><path d="M126 130Q133 126 140 130L143 145 123 146Z" fill="#718B6C"/><path d="M128 144l-4 14 6 1 5-13m3-1 4 13 6 0-4-14" fill="#43535A"/><path d="M126 132l-6 7 4 4 8-6m8-5 6 7-3 4-8-6" fill="#C98E69"/>
+  <circle cx="169" cy="127" r="6" fill="none" stroke="#3F5660" stroke-width="1.8"/><circle cx="188" cy="127" r="6" fill="none" stroke="#3F5660" stroke-width="1.8"/><path d="M169 127l7-11 8 11h-15m7-11h7m-3-4 4 2" fill="none" stroke="#3F5660" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<g id="layer-details">
+  <path d="M14 183q12-5 23 0m83 7q12-5 23 0m94-2q12-5 23 0m43-11q12-5 22 0" fill="none" stroke="#B9C68F" stroke-width="1.4"/>
+  <circle cx="36" cy="174" r="1.8" fill="#E9C66F"/><circle cx="167" cy="174" r="1.8" fill="#E9C66F"/><circle cx="278" cy="148" r="1.7" fill="#E9C66F"/>
+  <path d="M53 105q10-6 20 0m107 31q10-6 20 0m29-56q10-6 20 0" fill="none" stroke="#EEF0E5" stroke-width="1.3"/>
+  <path d="M44 118h16m126 43h16m25-42h17" fill="none" stroke="#E3D7B8" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M50 126h55m94-21h87m-94 61h47" fill="none" stroke="#E9D68F" stroke-width="1.3"/><path d="M28 92h-12" fill="none" stroke="#F3E5BE" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

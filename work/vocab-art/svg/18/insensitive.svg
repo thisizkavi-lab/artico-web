@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: insensitive (Adjective)
+  CONTEXTUAL_DEFINITION: Not noticing or caring about another person's feelings.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A visibly upset friend seeks comfort while the focal person continues an unrelated activity without looking up; unlike unfriendly, the harm comes from failing to notice.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared lounge with a bench.
+    - Context_Layer: Sad friend on the left with dropped shoulders.
+    - Focal_Layer: Person on the right absorbed in a game-like puzzle and turned away.
+    - Details_Layer: Tear, ignored reaching hand, diverted gaze and gap.
+    - Lighting_Layer: Cool muted emphasis on the lack of connection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:insensitive" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#7B8A9E;--c-secondary:#526173;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#7B8A9E"/><stop offset="1" stop-color="#526173"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="129" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><circle cx="72" cy="66" r="17" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M55 66Q56 48 72 49Q88 50 89 67L82 72H58Z" fill="#805333"/><path d="M51 89Q72 82 90 89L97 127H46Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M56 94L47 109L40 105" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M66 66Q70 68 74 66M80 66Q84 69 87 66M65 78Q72 73 79 78" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M75 80Q70 85 75 89Q80 86 75 80Z" fill="#4A72B2"/><path d="M22 127H282" stroke="#7B8A9E" stroke-width="4"/><path d="M38 128L35 150M263 128L267 150" stroke="#7B8A9E" stroke-width="4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="220" cy="98" rx="65" ry="69" fill="#E3E8F0" opacity=".65"/><circle cx="220" cy="58" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M200 58Q200 36 220 37Q240 38 240 59L233 64Q229 48 218 48Q208 49 202 65Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M195 84Q219 77 243 84L249 124H188Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M201 92L185 103M239 91L252 101" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M194 124L192 158H209L217 126M223 126L229 158H246L242 124" fill="#526173" stroke="#1E2A3B" stroke-width="2"/><rect x="213" y="90" width="32" height="23" rx="4" transform="rotate(-10 229 101)" fill="#35404B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M219 98L228 93L236 100L231 107L223 105Z" fill="#D9A441" stroke="#FEF9C3" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M213 58Q217 61 221 58M228 58Q232 61 236 58" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M211 70Q219 72 225 70" fill="none" stroke="#805333" stroke-width="1.5"/><path d="M101 102H132" stroke="#7B8A9E" stroke-width="2" stroke-dasharray="3 5"/><path d="M130 96L138 102L130 108" fill="none" stroke="#7B8A9E" stroke-width="1.8"/><path d="M198 67L192 71M243 67L249 71" stroke="#526173" stroke-width="1.8"/><circle cx="143" cy="92" r="2" fill="#AAB5C3"/><circle cx="149" cy="111" r="2.5" fill="#AAB5C3"/></g>
+  <g id="layer-lighting"><path d="M210 43Q220 39 230 43" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".58"/><ellipse cx="220" cy="98" rx="65" ry="69" fill="none" stroke="#7B8A9E" stroke-width="1.3" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: flap (verb)
+  CONTEXTUAL_DEFINITION: A bird repeatedly raises and lowers its wings to beat the air.
+  PEDAGOGICAL_ARCHETYPE: 5 - Repeated action shown through overlapping positions
+  SYNONYM_GUARD: Show the same pair of wings in high and low positions with curved up/down trajectories; a single outstretched wing pair belongs to wings, not flap.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a dark songbird body x=125..177 y=92..133. Show upper translucent wing positions reaching y=48 and lower ghosted wing positions reaching y=148, with paired curved motion paths above and below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:flap" data-archetype="bird-wingbeat-action">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#738F9C;--c-secondary:#425965;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="flap-sky" x2="0" y2="1"><stop stop-color="#D7E8F0"/><stop offset="1" stop-color="#F7F1E6"/></linearGradient>
+  <linearGradient id="flap-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D4E5E6"/><stop offset="1" stop-color="#779AAA"/></linearGradient>
+  <linearGradient id="flap-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#87969A"/><stop offset="1" stop-color="#52636C"/></linearGradient>
+  <filter id="flap-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#flap-sky)"/><path d="M0 137Q81 126 151 138T304 130V192H0Z" fill="#DEE6D7"/><path d="M0 158Q83 148 160 159T304 152V192H0Z" fill="#CBD8C2"/><circle cx="250" cy="42" r="22" fill="#F3D893" opacity=".48"/></g>
+ <g id="layer-context"><path d="M37 150Q115 144 183 150T278 145" fill="none" stroke="#819470" stroke-width="2"/><path d="M52 148l-4-11m10 11 5-9m196 9 5-11" fill="none" stroke="#819470" stroke-width="1.4"/><ellipse cx="150" cy="153" rx="58" ry="5" fill="#68765F" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#flap-shadow)"><path d="M135 111Q138 95 156 93Q177 94 184 108Q181 126 162 133Q142 130 135 111Z" fill="url(#flap-body)" stroke="#465963" stroke-width="1.4"/><path d="M177 101Q189 92 197 96L207 102L190 108Z" fill="#D59C42"/><circle cx="176" cy="99" r="2" fill="#1E2A3B"/><path d="M143 111L113 78L77 55Q83 82 112 105L141 119Z" fill="url(#flap-wing)" stroke="#617D8C" stroke-width="1.1" opacity=".92"/><path d="M165 104L193 70L226 50Q222 80 194 104L168 119Z" fill="url(#flap-wing)" stroke="#617D8C" stroke-width="1.1" opacity=".92"/><path d="M142 115L113 132L83 158Q105 160 131 142L151 124Z" fill="#A8BBC0" stroke="#738B94" stroke-width="1.1" opacity=".56"/><path d="M165 115L194 132L223 158Q201 161 175 143L157 124Z" fill="#A8BBC0" stroke="#738B94" stroke-width="1.1" opacity=".56"/><path d="M86 61l35 39m-27-32 35 39m85-48-32 39m26-32-32 39m-84 46 31-27m-20 29 27-23m71 20-29-27m18 29-25-23" fill="none" stroke="#EAF2EB" stroke-width="1.2" stroke-linecap="round"/><path d="M124 84Q102 66 96 47m105 34q21-18 27-36m-129 85q-13 14-17 29m94-30q13 14 17 29" fill="none" stroke="#7E9BA1" stroke-width="1.5" stroke-dasharray="3 4" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M45 148l-4-7m239 6 5-8" fill="none" stroke="#819370" stroke-width="1.3"/><path d="M90 54q11 5 19 14" fill="none" stroke="#A3BEC1" stroke-width="1.2" stroke-linecap="round"/><path d="M213 48q-11 5-19 14" fill="none" stroke="#A3BEC1" stroke-width="1.2" stroke-linecap="round"/><circle cx="83" cy="114" r="1.4" fill="#FFFFFF"/><circle cx="221" cy="111" r="1.3" fill="#FFFFFF"/><path d="M145 108q6-8 14-7" fill="none" stroke="#D9E6E4" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M142 102q6-11 18-8" fill="none" stroke="#E9F2EE" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="158" cy="110" rx="42" ry="26" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

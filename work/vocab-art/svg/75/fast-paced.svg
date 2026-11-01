@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:fast-paced" data-archetype="commuter-striding-quickly-past-an-arriving-bus">
+<!-- SELF_PROMPT: Lesson 75 urban life; fast-paced. Show a commuter hurrying past city buildings toward a departing bus, with clear forward motion, no text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="fast-sky" x2="0" y2="1"><stop stop-color="#D6E4E7"/><stop offset="1" stop-color="#C0D0CE"/></linearGradient>
+  <linearGradient id="fast-bus" x2="0" y2="1"><stop stop-color="#6D99A1"/><stop offset="1" stop-color="#456C79"/></linearGradient>
+  <linearGradient id="fast-ground" x2="0" y2="1"><stop stop-color="#9D9A82"/><stop offset="1" stop-color="#697369"/></linearGradient>
+  <linearGradient id="fast-coat" x2="0" y2="1"><stop stop-color="#D28A60"/><stop offset="1" stop-color="#A85F4E"/></linearGradient>
+  <filter id="fast-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".21"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#fast-sky)"/><circle cx="259" cy="35" r="12" fill="#E9C66F" opacity=".6"/><path d="M0 120V42h49v78Zm49 0V24h45v96Zm174 0V43h40v77Zm40 0V22h41v98Z" fill="#819499"/><path d="M0 123H304V192H0Z" fill="url(#fast-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 151H304" fill="none" stroke="#505A59" stroke-width="3"/><path d="M10 155h284" fill="none" stroke="#D7CBAA" stroke-width="1.4"/>
+  <path d="M215 111Q218 99 230 99h53q11 0 14 12l3 30h-88Z" fill="url(#fast-bus)" stroke="#3C5B64" stroke-width="1.4"/><path d="M226 105h20v17h-20Zm25 0h20v17h-20Zm25 0h13v17h-13Z" fill="#C4D9D4" stroke="#557984" stroke-width="1.1"/><path d="M219 126h77" fill="none" stroke="#E7C96D" stroke-width="2"/><circle cx="237" cy="141" r="6" fill="#36484D"/><circle cx="280" cy="141" r="6" fill="#36484D"/>
+  <path d="M19 176h46m11 0h37m71 0h28" fill="none" stroke="#D8D1B5" stroke-width="1.3"/>
+  <path d="M75 103q14-9 26 0m86-22q14-9 28 0" fill="none" stroke="#EDF1E7" stroke-width="1.3"/>
+</g>
+<g id="layer-focal" filter="url(#fast-shadow)">
+  <circle cx="144" cy="76" r="8" fill="#C88D68"/><path d="M136 73q1-11 9-11 8 1 9 11l-4-3h-11Z" fill="#493E3A"/>
+  <path d="M135 87Q144 82 153 87L158 111 131 112Z" fill="url(#fast-coat)" stroke="#744D40" stroke-width="1.3"/><path d="M139 109Q144 111 149 108L140 131 132 129Z" fill="#46545A"/><path d="M149 108Q154 109 158 105L170 122 164 128Z" fill="#46545A"/><path d="M133 91Q128 89 125 96L117 109 122 113 133 102m18-12q5-2 9 4l8 8-4 5-11-7" fill="#C88D68"/>
+  <path d="M153 89q15-6 19-15m-19 18q18-1 25-10" fill="none" stroke="#E9C66F" stroke-width="2.2"/>
+  <path d="M128 125l-10 11m40-7 12 8m-51-31-11 4m81 13 11 0" fill="none" stroke="#D6C6A4" stroke-width="2"/>
+  <path d="M115 108l-12-8 3-5 14 6m49 17 9-7 5 4-9 12" fill="#5F6870" stroke="#3E5057" stroke-width="1.2"/>
+</g>
+<g id="layer-details">
+  <path d="M14 183q12-5 23 0m52 6q12-5 23 0m112-3q12-5 22 0m50-8q12-5 22 0" fill="none" stroke="#C6CE97" stroke-width="1.4"/>
+  <circle cx="59" cy="162" r="1.8" fill="#E9C66F"/><circle cx="201" cy="165" r="1.8" fill="#E9C66F"/><circle cx="290" cy="160" r="1.7" fill="#E9C66F"/>
+  <path d="M27 92q10-6 20 0m140-33q10-6 20 0m60 20q10-6 19 0" fill="none" stroke="#EEF0E5" stroke-width="1.3"/>
+  <path d="M117 71q9-5 17 0m14-3q8-5 15 0" fill="none" stroke="#E5D19B" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M215 109h82m-165-19q15-12 30-3" fill="none" stroke="#F0D996" stroke-width="1.2"/><path d="M125 126q11-13 28-17" fill="none" stroke="#EDC970" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

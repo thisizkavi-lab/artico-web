@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: claw(s) (noun)
+  CONTEXTUAL_DEFINITION: The sharp curved talons at the end of a bird's foot, gripping a branch.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole highlight
+  SYNONYM_GUARD: Keep the leg and foot muted but make several hooked pointed talons bright gold; this is bird anatomy, not a mammal paw or insect leg.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a large gray bird lower leg descending to three toes wrapped around a thick branch; light the amber curved tips, soften the leg, add dotted callout arc around claws.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:claw(s)" data-archetype="bird-talon-highlight">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#E4AC3A;--c-secondary:#92642D;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="claw-sky" x2="0" y2="1"><stop stop-color="#DCEBF1"/><stop offset="1" stop-color="#F6F0E5"/></linearGradient>
+  <linearGradient id="claw-branch" x2="0" y2="1"><stop stop-color="#9A7049"/><stop offset="1" stop-color="#5D4332"/></linearGradient>
+  <linearGradient id="claw-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3D269"/><stop offset="1" stop-color="#C88731"/></linearGradient>
+  <filter id="claw-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#claw-sky)"/><path d="M0 133Q79 123 153 134T304 128V192H0Z" fill="#DDE5D6"/><path d="M0 157Q84 147 158 158T304 151V192H0Z" fill="#C8D5BE"/><circle cx="248" cy="42" r="22" fill="#F3D890" opacity=".49"/></g>
+ <g id="layer-context"><path d="M31 145Q112 139 189 145T280 140" fill="none" stroke="url(#claw-branch)" stroke-width="20" stroke-linecap="round"/><path d="M39 139q14-5 28-1m152 1q20-6 36-1" fill="none" stroke="#BD9A70" stroke-width="1.6" stroke-linecap="round"/><path d="M51 136l-7-11m8 11 9-12m171 12 8-11" fill="none" stroke="#75563B" stroke-width="3" stroke-linecap="round"/><ellipse cx="152" cy="158" rx="64" ry="5" fill="#55654F" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#claw-shadow)"><path d="M142 58Q139 82 142 104L136 118M162 57Q165 82 160 103L154 116" fill="none" stroke="#899399" stroke-width="12" stroke-linecap="round"/><path d="M140 104Q123 105 114 117Q109 127 117 133Q124 134 132 126L145 120M157 105Q175 105 186 116Q193 126 185 132Q177 133 168 125L153 120M145 111Q145 127 152 136Q158 141 163 135Q164 129 157 118" fill="none" stroke="#8C9697" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M116 129Q108 136 107 128Q107 120 115 118M184 128Q192 136 194 128Q194 121 186 118M159 135Q160 145 154 142Q149 140 151 133" fill="none" stroke="url(#claw-gold)" stroke-width="4.3" stroke-linecap="round"/><path d="M116 118q7-6 14-5m36-1q8 0 14 5" fill="none" stroke="#BBC2BF" stroke-width="1.4" opacity=".8"/><circle cx="110" cy="130" r="2" fill="#E4B549"/><circle cx="191" cy="130" r="2" fill="#E4B549"/><circle cx="154" cy="141" r="1.7" fill="#E4B549"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="126" rx="52" ry="27" fill="none" stroke="#E4B549" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M42 153l-4-7m240 5 5-8" fill="none" stroke="#80936E" stroke-width="1.3"/><path d="M111 127q-2 6 2 8" fill="none" stroke="#F6D978" stroke-width="1.2"/><path d="M190 127q3 5 0 8" fill="none" stroke="#F6D978" stroke-width="1.2"/><path d="M154 133q-1 5-5 7" fill="none" stroke="#F6D978" stroke-width="1.2"/><path d="M137 100q-4 2-5 6" fill="none" stroke="#C7D0CD" stroke-width="1.1"/><circle cx="206" cy="105" r="1.2" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M138 67q2 20 0 34m25-33q4 17 1 28" fill="none" stroke="#E0E6E4" stroke-width="1.6" opacity=".8" stroke-linecap="round"/><ellipse cx="151" cy="113" rx="47" ry="38" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

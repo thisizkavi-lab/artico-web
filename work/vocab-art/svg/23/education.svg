@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: education (Noun)
+  CONTEXTUAL_DEFINITION: The process of teaching and learning in a school or other learning setting.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive role and activity
+  SYNONYM_GUARD: A teacher guides a student through an open book, making education visible as learning and instruction together.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm classroom with pale window and chalkboard.
+    - Context_Layer: Simple desk and muted chairs.
+    - Focal_Layer: Teacher leans beside student and points to an open book.
+    - Details_Layer: Abstract diagrams on chalkboard without letters or numbers.
+    - Lighting_Layer: Light falls across the shared book.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:education" data-archetype="role-and-activity">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="edu-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="edu-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#edu-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="24" y="27" width="94" height="64" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M38 42Q61 31 80 42T105 42M40 69Q61 57 81 68T104 68" fill="none" stroke="#DCECFB" stroke-width="2"/><path d="M0 148H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M42 128H260V137H42Z" fill="#A98A64"/><path d="M51 137V152M251 137V152" stroke="#8D765A" stroke-width="4"/><rect x="180" y="93" width="90" height="48" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M188 104H262M188 114H257" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#edu-shadow)"><path d="M101 119Q105 97 119 92Q136 89 147 103L151 129L137 137L112 132Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="125" cy="79" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M112 79Q113 65 126 65Q139 66 139 80L134 83Q132 72 125 72Q119 72 115 86Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M138 104Q149 112 160 115" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M138 104Q149 112 160 115" fill="none" stroke="#C98961" stroke-width="3.4" stroke-linecap="round"/><path d="M165 106Q175 91 188 96L204 119L194 134L169 128Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="186" cy="79" r="12" fill="#80513F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M174 79Q175 66 187 66Q199 67 199 80L194 83Q192 73 186 73Q181 73 177 86Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M142 139L165 120L184 139L163 149Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.7"/><path d="M163 143L183 135" stroke="#88A9D0" stroke-width="1.4"/><path d="M47 137V151M78 137V151" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M146 117L167 109M157 114L174 116" stroke="#C98961" stroke-width="4" stroke-linecap="round"/><path d="M194 104Q211 98 226 104M196 110Q214 105 231 111" fill="none" stroke="#F7EBCF" stroke-width="1.8"/><circle cx="126" cy="82" r="1.6" fill="#1E2A3B"/><circle cx="187" cy="82" r="1.6" fill="#1E2A3B"/></g>
+  <g id="layer-lighting"><path d="M138 120L164 111L184 139L163 148Z" fill="#FEF9C3" opacity=".15"/><ellipse cx="153" cy="104" rx="116" ry="77" fill="#FEF9C3" opacity=".07"/></g>
+</svg>

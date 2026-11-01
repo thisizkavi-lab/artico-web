@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: apartments
+  CONTEXTUAL_DEFINITION: Multiple self-contained homes within a shared multi-story residential building.
+  PEDAGOGICAL_ART_DIRECTOR: Show a tall apartment block with stacked, repeated windows, balconies, and a shared entrance.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make several separate homes inside one building visible, not a single villa, hotel tower, or detached house.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A four-story residential block fills the central frame; repeated window pairs and small balconies form distinct units, with a common entry and path below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:apartments" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="apart-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D7E9EF"/><stop offset="1" stop-color="#F4F0E6"/></linearGradient>
+  <linearGradient id="apart-building" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6D6BD"/><stop offset="1" stop-color="#C3B095"/></linearGradient>
+  <linearGradient id="apart-glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D2E8EB"/><stop offset="1" stop-color="#A3C4CE"/></linearGradient>
+  <filter id="apart-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#apart-sky)"/><path d="M0 154H304V192H0Z" fill="#B8C7B4"/><path d="M17 168H287" stroke="#85958A" stroke-width="2"/><path d="M27 177H277" stroke="#D7DDD3" stroke-width="1.2"/></g>
+ <g id="layer-context"><circle cx="27" cy="113" r="16" fill="#7FA87A" stroke="#486750" stroke-width="1.4"/><circle cx="277" cy="106" r="18" fill="#7FA87A" stroke="#486750" stroke-width="1.4"/><circle cx="25" cy="146" r="9" fill="#8DB17F" stroke="#486750" stroke-width="1.1"/><circle cx="278" cy="147" r="10" fill="#8DB17F" stroke="#486750" stroke-width="1.1"/></g>
+ <g id="layer-focal" filter="url(#apart-shadow)"><path d="M60 42L152 22L246 42V163H60Z" fill="url(#apart-building)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M52 44L152 18L254 44Z" fill="#72818A" stroke="#1E2A3B" stroke-width="2"/><path d="M70 48H236M70 77H236M70 107H236M70 136H236" stroke="#A38D73" stroke-width="1.4"/><g fill="url(#apart-glass)" stroke="#44596A" stroke-width="1.5"><rect x="78" y="51" width="25" height="19" rx="2"/><rect x="117" y="51" width="25" height="19" rx="2"/><rect x="161" y="51" width="25" height="19" rx="2"/><rect x="200" y="51" width="25" height="19" rx="2"/><rect x="78" y="81" width="25" height="19" rx="2"/><rect x="117" y="81" width="25" height="19" rx="2"/><rect x="161" y="81" width="25" height="19" rx="2"/><rect x="200" y="81" width="25" height="19" rx="2"/><rect x="78" y="111" width="25" height="19" rx="2"/><rect x="117" y="111" width="25" height="19" rx="2"/><rect x="161" y="111" width="25" height="19" rx="2"/><rect x="200" y="111" width="25" height="19" rx="2"/></g><g fill="#D7C2A7" stroke="#6F6354" stroke-width="1.2"><path d="M76 72H105V77H76ZM115 72H144V77H115ZM159 72H188V77H159ZM198 72H227V77H198Z"/><path d="M76 102H105V107H76ZM115 102H144V107H115ZM159 102H188V107H159ZM198 102H227V107H198Z"/></g><path d="M139 133H164V163H139Z" fill="#765C49" stroke="#1E2A3B" stroke-width="1.5"/><path d="M146 141H157V157H146Z" fill="#BBD7DC" stroke="#526274" stroke-width="1"/><path d="M53 163H252" stroke="#1E2A3B" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M89 55V66M128 55V66M172 55V66M211 55V66M89 85V96M128 85V96M172 85V96M211 85V96M89 115V126M128 115V126M172 115V126M211 115V126" stroke="#F8F5EA" stroke-width="1" opacity=".75"/><circle cx="184" cy="145" r="2.2" fill="#F2C14E"/><path d="M67 44H237" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M43 166V178M260 166V178" stroke="#899A8D" stroke-width="1.5"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="166" rx="103" ry="8" fill="#526274" opacity=".18"/><path d="M64 44L152 21L243 44" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".72"/></g>
+</svg>

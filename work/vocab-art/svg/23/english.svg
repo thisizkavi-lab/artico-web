@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: English (Noun)
+  CONTEXTUAL_DEFINITION: The school subject involving English language, reading, and literature.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A student studies an open storybook and a reference dictionary while practicing spoken language, rather than merely reading for leisure.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet language classroom with window and book shelf.
+    - Context_Layer: Muted stack of books and a small desk.
+    - Focal_Layer: Learner reads an open book and speaks to a partner.
+    - Details_Layer: Abstract line marks on paper, no visible letters.
+    - Lighting_Layer: Warm focus on book pages and conversation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:english" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="english-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="english-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#english-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 29H94V82H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 30V81M21 55H93" stroke="#FFFFFF" stroke-width="2.5"/><rect x="226" y="40" width="54" height="75" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 147H304" stroke="#A98A64" stroke-width="3"/><path d="M34 145V111M87 145V111M30 112H92" stroke="#8D765A" stroke-width="3"/><rect x="35" y="95" width="18" height="14" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><rect x="54" y="90" width="19" height="19" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><rect x="74" y="98" width="15" height="11" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#english-shadow)"><path d="M101 118Q105 94 121 91Q138 90 148 105L150 131L136 139L112 132Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="126" cy="78" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M113 78Q114 64 127 64Q139 65 140 79L135 82Q133 71 126 71Q120 71 116 85Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M143 108L163 105" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M143 108L163 105" stroke="#C98961" stroke-width="3.3" stroke-linecap="round"/><circle cx="199" cy="82" r="12" fill="#80513F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M187 82Q188 69 200 69Q211 70 212 83L207 86Q205 76 199 76Q194 76 190 89Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M182 96Q199 89 214 98L220 129L207 137L186 130L178 112Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/><path d="M137 140L158 124L179 140L158 151Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.7"/><path d="M158 145L176 136" stroke="#88A9D0" stroke-width="1.5"/><path d="M116 150H208" stroke="#A98A64" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M171 63Q178 55 187 61Q192 69 185 74L183 79" fill="none" stroke="#5479AC" stroke-width="2"/><circle cx="183" cy="84" r="1.6" fill="#5479AC"/><path d="M143 141L154 137M163 143L173 139M230 53H271M230 61H263" stroke="#F7EBCF" stroke-width="1.7"/><path d="M118 101Q128 96 139 101" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><path d="M138 139L158 124L179 140L158 151Z" fill="#FEF9C3" opacity=".22"/><ellipse cx="153" cy="103" rx="120" ry="74" fill="#FEF9C3" opacity=".07"/></g>
+</svg>

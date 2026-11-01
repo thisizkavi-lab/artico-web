@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: thrilling (Adjective)
+  CONTEXTUAL_DEFINITION: Producing a strong rush of excitement, shown by a rider zooming on a zipline high above a canyon.
+  PEDAGOGICAL_ARCHETYPE: 2 (Physical action with an unmistakable movement cue)
+  SYNONYM_GUARD: The rider hangs safely from a trolley over a deep valley, distinct from the lesson's seated roller-coaster ride.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Layered red-rock canyon far below a clear sky.
+    - Context_Layer: Harnessed rider with helmet, open smile and bent legs.
+    - Focal_Layer: Diagonal zipline cable and trolley above the rider.
+    - Details_Layer: Wind marks and rushing cliff silhouettes.
+    - Lighting_Layer: Bright cable edge and sun flash on the trolley.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:thrilling" data-archetype="action-tool">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EFF5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 137 L47 92 L88 131 L139 82 L191 131 L244 94 L304 136 L304 192 L0 192Z" fill="#8B5CA8"/><path d="M0 151 L56 112 L96 147 L148 101 L198 145 L252 109 L304 150 L304 192 L0 192Z" fill="#5479AC"/><path d="M0 162 Q151 154 304 163 L304 192 L0 192Z" fill="#3D5F91"/><ellipse cx="203" cy="165" rx="51" ry="6" fill="#27364B"/></g>
+  <g id="layer-context"><path d="M33 29 L271 80" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M33 29 L271 80" stroke="#CBD5E1" stroke-width="3.2" stroke-linecap="round"/><rect x="194" y="59" width="21" height="11" rx="5" transform="rotate(12 204 64)" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="204" cy="63" r="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/><path d="M205 69 L207 85" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M189 88 C190 77 199 71 210 73 C220 75 225 85 222 95 C219 104 208 108 198 102 C191 99 188 94 189 88Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/><path d="M190 88 Q190 73 204 72 Q216 73 219 85 Q208 80 199 83Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M198 90 Q202 86 205 90 M209 91 Q213 87 216 91" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M200 97 Q207 103 214 97" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M194 103 Q205 98 217 104 L228 127 Q214 137 195 127Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M198 106 Q208 111 218 106 L220 119 Q209 124 197 119Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M197 107 Q185 95 178 90 Q173 86 169 90 Q168 95 174 99 L194 117" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M215 107 Q225 96 231 88 Q235 84 239 88 Q242 92 237 97 L224 118" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M200 128 Q190 140 185 148 L194 151 L208 136 M219 130 Q229 139 235 146 L228 151 L213 138" fill="#27364B" stroke="#1E2A3B" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g id="layer-focal"><path d="M171 81 L178 73 M237 76 L244 68" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><circle cx="204" cy="63" r="1.7" fill="#FFFFFF"/></g>
+  <g id="layer-details"><path d="M52 48 L75 53 M94 55 L112 59 M253 77 L269 80" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/><path d="M160 112 L166 101 L172 112 L183 118 L172 124 L166 135 L160 124 L149 118Z" fill="#F2C14E"/><path d="M181 84 L185 78 M240 100 L246 96" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M35 28 L128 48 M194 59 Q203 57 210 61" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" opacity="0.78"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

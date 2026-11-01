@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: on the left
+  CONTEXTUAL_DEFINITION: Located on the traveler's left-hand side while facing forward along the route.
+  PEDAGOGICAL_ART_DIRECTOR: Place a north-facing traveler on a central path, with a highlighted destination clearly on the left side of that path and the right side left quiet.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Establish the traveler's forward orientation so page-left is unambiguously their left.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Upward path runs through x=133..171; traveler faces up at (152,136); amber landmark sits to the traveler's left at (73,94), joined by a short blue lateral pointer.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:on the left" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ontheleft-ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5EEDC"/><stop offset="1" stop-color="#C9DCC3"/></linearGradient>
+    <linearGradient id="ontheleft-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#65768A"/><stop offset="1" stop-color="#45586D"/></linearGradient>
+    <radialGradient id="ontheleft-halo"><stop stop-color="#F2C14E" stop-opacity=".52"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ontheleft-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ontheleft-ground)"/><path d="M126 0H179V192H126Z" fill="url(#ontheleft-road)"/><path d="M132 0V192M173 0V192" stroke="#FAF8F3" stroke-width="2"/><path d="M152 0V192" stroke="#FAF8F3" stroke-width="1.4" stroke-dasharray="9 9" opacity=".7"/><path d="M12 57H123M181 57H292M12 152H123M181 152H292" stroke="#A9B9A5" stroke-width="1.4"/></g>
+  <g id="layer-context"><rect x="15" y="75" width="54" height="40" rx="4" fill="#B9CDDA" stroke="#6F8492" stroke-width="1.7" opacity=".72"/><path d="M22 83H60M22 91H54" stroke="#8FA1AA" stroke-width="1.3"/><rect x="221" y="78" width="66" height="38" rx="4" fill="#B7C7C6" stroke="#778A88" stroke-width="1.6" opacity=".68"/><path d="M230 87H277M230 96H268" stroke="#8F9E9A" stroke-width="1.3"/><circle cx="251" cy="137" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="45" cy="144" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#ontheleft-shadow)"><ellipse cx="72" cy="95" rx="52" ry="51" fill="url(#ontheleft-halo)"/><path d="M152 111V65" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><path d="M152 111V65" stroke="#4A72B2" stroke-width="4.5" stroke-linecap="round"/><path d="M144 73L152 58L160 73Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M39 72H104V116H39Z" fill="#E9B96A" stroke="#1E2A3B" stroke-width="2.3"/><path d="M34 74L72 52L109 74Z" fill="#856B53" stroke="#1E2A3B" stroke-width="1.9"/><rect x="49" y="84" width="16" height="15" fill="#A8CEDB" stroke="#536A7D" stroke-width="1.3"/><rect x="78" y="84" width="17" height="32" fill="#5E493A" stroke="#1E2A3B" stroke-width="1.3"/><path d="M135 130C129 122 132 113 140 110C148 113 150 122 145 130L148 153H136Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="140" cy="107" r="7" fill="#D7A47B" stroke="#1E2A3B" stroke-width="1.4"/><path d="M136 151L133 166H141L144 153L148 166H157L147 150" fill="#364B62" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M136 119H91" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><path d="M136 119H91" stroke="#4A72B2" stroke-width="4.8" stroke-linecap="round"/><path d="M99 110L82 119L99 128Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="94" cy="119" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M202 120H176" stroke="#99A8A8" stroke-width="2" stroke-dasharray="3 5"/><ellipse cx="73" cy="136" rx="33" ry="4" fill="#8B9C87" opacity=".45"/></g>
+  <g id="layer-lighting"><path d="M130 5V43M172 5V43" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M42 78L72 59L103 78" fill="none" stroke="#FAE7C6" stroke-width="1.4"/><ellipse cx="72" cy="95" rx="58" ry="56" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".68"/></g>
+</svg>

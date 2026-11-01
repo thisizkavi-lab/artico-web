@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: gear (Noun)
+  CONTEXTUAL_DEFINITION: A bicycle sprocket or selected drivetrain setting that changes the resistance while pedaling.
+  PEDAGOGICAL_ART_DIRECTOR: Show a close-up of the rear cassette's several toothed sprockets with the chain engaging one.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a toothed bicycle drivetrain gear, not clothing, luggage, or general equipment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Rear wheel hub with a stack of nested toothed cogs, a gold chain wrapped around one sprocket, and a derailleur below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:gear" data-archetype="bicycle-gear">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="ge-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="ge-steel" x2="1" y2="1"><stop stop-color="#B8C7C1"/><stop offset="1" stop-color="#52686C"/></linearGradient><linearGradient id="ge-gold" x2="0" y2="1"><stop stop-color="#F1D38B"/><stop offset="1" stop-color="#B87935"/></linearGradient><filter id="ge-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.3" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ge-sky)"/><path d="M0 127Q78 110 154 126T304 119V192H0Z" fill="#A9B994"/><path d="M0 155H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M20 126L38 80L56 126ZM249 124L269 69L289 124Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="153" cy="158" rx="94" ry="5" fill="#34483D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ge-shadow)">
+  <path d="M67 66L130 113L235 70L211 150L130 113Z" fill="none" stroke="url(#ge-steel)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="203" cy="108" r="38" fill="none" stroke="#344A50" stroke-width="3.2"/><circle cx="203" cy="108" r="32" fill="none" stroke="#B8C7C1" stroke-width="1.2"/>
+  <path d="M203 82L211 85L218 83L223 90L230 93L229 101L235 108L231 115L232 123L224 127L220 134L212 132L203 139L196 133L188 135L185 127L178 123L180 115L174 108L180 101L179 93L187 90L191 83L198 85Z" fill="url(#ge-steel)" stroke="#344A50" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="203" cy="108" r="22" fill="none" stroke="#52686C" stroke-width="2"/><circle cx="203" cy="108" r="11" fill="none" stroke="#83999A" stroke-width="2"/><circle cx="203" cy="108" r="4" fill="#D7834B"/>
+  <circle cx="203" cy="108" r="16" fill="none" stroke="url(#ge-gold)" stroke-width="4"/>
+  <path d="M76 66L188 74Q210 77 220 89L230 126Q232 139 211 147L128 124" fill="none" stroke="url(#ge-gold)" stroke-width="4.5" stroke-linejoin="round"/>
+  <path d="M129 120L144 134L133 146L119 137Z" fill="#536E70" stroke="#344A50" stroke-width="1.6"/><path d="M144 134l7 8m-18-6-8 9" fill="none" stroke="#344A50" stroke-width="2.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M178 106A25 25 0 0 1 199 83M189 71l8 3m30 13 4 8m-32 62 7-2" fill="none" stroke="#E8F0E8" stroke-width="1.2"/><path d="M80 68l10 3m121 6 6 2m16 42-5 5" fill="none" stroke="#F5DEA0" stroke-width="1.1"/><circle cx="203" cy="108" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M179 105A24 24 0 0 1 199 84" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".52"/><path d="M78 66L184 73" fill="none" stroke="#F8E7BC" stroke-width="1"/><circle cx="203" cy="108" r="1.2" fill="#FFE5A8"/></g>
+</svg>

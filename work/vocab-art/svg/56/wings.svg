@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: wings (noun)
+  CONTEXTUAL_DEFINITION: The paired feathered limbs a bird uses to fly, highlighted against its muted body.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole highlight
+  SYNONYM_GUARD: Highlight two separate extended wings attached to a dimmed bird body; the single-feather card has one detached plume.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a small muted bird torso in center at x=126..180 y=97..135; two broad highlighted wings sweep upward left and right to x=55 and x=249, with layered feather shafts and a faint tail.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:wings" data-archetype="paired-wing-highlight">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#7A9EB0;--c-secondary:#4E7185;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="wings-sky" x2="0" y2="1"><stop stop-color="#DCEBF2"/><stop offset="1" stop-color="#F7F2E7"/></linearGradient>
+  <linearGradient id="wings-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#BCD5DD"/><stop offset="1" stop-color="#6F9BAD"/></linearGradient>
+  <linearGradient id="wings-muted" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AEB9B7"/><stop offset="1" stop-color="#788786"/></linearGradient>
+  <filter id="wings-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wings-sky)"/><path d="M0 136Q78 126 151 138T304 130V192H0Z" fill="#DDE5D7"/><path d="M0 157Q82 147 158 158T304 151V192H0Z" fill="#C8D6BE"/><circle cx="248" cy="41" r="22" fill="#F3D892" opacity=".48"/></g>
+ <g id="layer-context"><path d="M35 150Q111 144 177 150T277 145" fill="none" stroke="#82936F" stroke-width="2"/><path d="M51 148l-4-10m11 10 5-9m198 8 5-10" fill="none" stroke="#82936F" stroke-width="1.4"/><ellipse cx="152" cy="153" rx="62" ry="5" fill="#66745F" opacity=".11"/></g>
+ <g id="layer-focal" filter="url(#wings-shadow)"><path d="M143 109Q111 76 80 59Q59 49 46 55Q59 80 88 101Q114 121 146 128Z" fill="url(#wings-highlight)" stroke="#4F7487" stroke-width="1.5"/><path d="M161 109Q193 76 224 59Q245 49 258 55Q245 80 216 101Q190 121 158 128Z" fill="url(#wings-highlight)" stroke="#4F7487" stroke-width="1.5"/><path d="M146 107Q132 83 108 70Q87 61 72 64Q84 83 105 99Q126 117 147 123Z" fill="#D1E0E0" stroke="#7895A0" stroke-width="1"/><path d="M158 107Q172 83 196 70Q217 61 232 64Q220 83 199 99Q178 117 157 123Z" fill="#D1E0E0" stroke="#7895A0" stroke-width="1"/><path d="M143 115Q126 103 128 90Q136 79 152 85Q166 79 175 91Q176 106 162 116Q153 120 143 115Z" fill="url(#wings-muted)" stroke="#657774" stroke-width="1.3"/><circle cx="152" cy="85" r="10" fill="#96A6A1"/><circle cx="155" cy="83" r="1.7" fill="#28343A"/><path d="M149 114L137 129L152 124L165 131L159 114Z" fill="#818F88"/><path d="M60 60l72 45m-62-38 65 45m-54-35 54 40m143-57-72 45m62-38-65 45m54-35-54 40" fill="none" stroke="#E5F0EB" stroke-width="1.2" stroke-linecap="round"/><path d="M127 110l-4 19m55-19 4 19" fill="none" stroke="#798B86" stroke-width="1.7" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M41 151l-4-8m236 8 4-9" fill="none" stroke="#83946F" stroke-width="1.3"/><circle cx="76" cy="129" r="1.4" fill="#FFFFFF"/><circle cx="225" cy="127" r="1.4" fill="#FFFFFF"/><path d="M91 58q10 2 19 8m84-1q10-6 19-8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><path d="M82 69l47 32" fill="none" stroke="#D6E5E4" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M62 62q25 12 44 30m137-30q-25 12-44 30" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".75" stroke-linecap="round"/><ellipse cx="152" cy="104" rx="57" ry="38" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

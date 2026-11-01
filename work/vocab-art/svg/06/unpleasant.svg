@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: unpleasant (Adjective)
+  CONTEXTUAL_DEFINITION: Causing discomfort, shown by a commuter stepping in a cold slushy puddle with wet shoes.
+  PEDAGOGICAL_ARCHETYPE: 3 (Uncomfortable situation paired with a clearly displeased reaction)
+  SYNONYM_GUARD: Cold wet shoes and a wrinkled nose show discomfort, distinct from the foul-smelling trash in nasty.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cool rainy sidewalk and blurred curb.
+    - Context_Layer: Commuter lifts one dripping shoe, shoulders tense.
+    - Focal_Layer: Brown slushy puddle and soaked hem.
+    - Details_Layer: Water drops, puddle rings and damp sock.
+    - Lighting_Layer: Cool daylight with small wet highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:unpleasant" data-archetype="expressive-bust">
+  <defs><linearGradient id="rain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EFF5"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rain)"/><path d="M0 142 Q152 135 304 145 L304 192 L0 192Z" fill="#94A3B8"/><path d="M0 166 L304 166" stroke="#CBD5E1" stroke-width="3"/><ellipse cx="153" cy="168" rx="108" ry="7" fill="#64748B"/></g>
+  <g id="layer-context"><path d="M85 151 Q88 122 112 118 Q136 122 139 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M101 122 L100 109 L121 109 L120 124" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="111" cy="89" r="20" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1"/><path d="M91 88 Q92 66 112 68 Q131 70 131 89 Q121 79 110 80 Q101 85 91 88Z" fill="#27364B"/><path d="M100 90 Q104 86 108 90 M114 90 Q118 86 122 90" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M102 101 Q111 96 120 101" fill="none" stroke="#A34F47" stroke-width="2.1" stroke-linecap="round"/><path d="M95 124 L84 116 M130 125 L143 114" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M105 151 L99 160 M127 149 L136 157" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M96 160 L108 161 M132 158 L145 159" stroke="#27364B" stroke-width="4.8" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M157 146 Q177 134 205 137 Q234 139 260 151 Q237 161 207 159 Q178 158 157 146Z" fill="#7B8A9E" stroke="#1E2A3B" stroke-width="2.3"/><path d="M172 146 Q193 138 218 145 Q228 149 221 153 Q194 154 172 146Z" fill="#B97840" opacity="0.86"/><path d="M166 136 Q187 132 204 138 L200 144 Q181 141 169 145Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M202 138 Q210 129 219 133 Q227 137 224 145 L213 150 L201 146Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="1.6"/><path d="M212 141 L216 138 L220 142" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M24 51 L20 62 M43 38 L39 49 M68 59 L64 70 M233 83 L229 94 M267 63 L263 74" stroke="#7B8A9E" stroke-width="2.3" stroke-linecap="round"/><path d="M176 150 Q184 158 194 150 M217 153 Q226 160 238 153" fill="none" stroke="#DCEAF4" stroke-width="2"/><circle cx="245" cy="140" r="2.4" fill="#E9EFF5"/><path d="M153 111 L159 101 L165 111 L175 116 L165 121 L159 131 L153 121 L143 116Z" fill="#CBD5E1"/></g>
+  <g id="layer-lighting"><path d="M93 72 Q107 66 121 71 M168 144 Q191 138 214 145" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: fit a carpet (Verb phrase)
+  CONTEXTUAL_DEFINITION: Lay and secure a carpet so it covers a room's floor neatly.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, material, and visible action
+  SYNONYM_GUARD: A person unrolls a wall-to-wall carpet and presses its edge into the room; a finished rug would not show an installation roll.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Interior room with pale wall, baseboard, and floor.
+    - Context_Layer: Carpet roll at x=70,y=134 and a smooth fitted section across the right side.
+    - Focal_Layer: Kneeling fitter at x=119,y=89 pushes the carpet edge toward the baseboard.
+    - Details_Layer: Carpet pile texture, backing, seam, knee pads, hand pressure, and small trimming knife.
+    - Lighting_Layer: Soft highlight follows the carpet's rolled edge and finished surface.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:fit a carpet" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#8B5CA8;--c-secondary:#633B7D;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="carpet-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B792CF"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 116H304V158H0Z" fill="#D9C6AB"/><path d="M0 111H304V121H0Z" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M0 158H304V192H0Z" fill="#C88446"/><path d="M0 158H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="159" cy="162" rx="104" ry="7" fill="#A27652" opacity=".5"/></g>
+  <g id="layer-context"><path d="M175 123H286V158H175Z" fill="url(#carpet-grad)" stroke="#1E2A3B" stroke-width="2"/><path d="M183 132H282M183 140H282M183 148H282" stroke="#B792CF" stroke-width="1.4" opacity=".7"/><path d="M187 124V158M218 124V158M249 124V158" stroke="#633B7D" stroke-width="1" opacity=".55"/><path d="M84 149Q105 145 128 149M135 153Q151 149 169 151" stroke="#A27652" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M46 137H107V153H46Z" fill="#633B7D" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="75" cy="136" rx="30" ry="13" fill="#B792CF" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="75" cy="136" rx="19" ry="8" fill="#633B7D" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="75" cy="136" rx="7" ry="3.5" fill="#B792CF"/><path d="M103 142Q132 119 164 121L181 127L175 156H104Z" fill="url(#carpet-grad)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M115 133Q140 124 171 128" fill="none" stroke="#D7C1E5" stroke-width="1.6"/><circle cx="128" cy="91" r="13" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M116 90Q117 76 129 77Q142 78 141 91L134 84L121 84Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M113 107Q127 100 140 108L151 127L131 138L107 126Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M118 112L102 128L117 143" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M118 112L102 128L117 143" fill="none" stroke="#D89A6C" stroke-width="5.5" stroke-linecap="round"/><path d="M137 114L157 128L175 131" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M137 114L157 128L175 131" fill="none" stroke="#D89A6C" stroke-width="5.5" stroke-linecap="round"/><path d="M118 130L121 150L140 150L144 129" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M121 150L112 156M137 150L148 156" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M121 150L112 156M137 150L148 156" stroke="#D89A6C" stroke-width="4.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M93 136Q101 130 109 132" stroke="#1E2A3B" stroke-width="3"/><path d="M97 132L105 127L109 132Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.3"/><path d="M151 140L160 140M151 146L161 146" stroke="#D7C1E5" stroke-width="1.2"/><path d="M151 109Q161 102 171 108" fill="none" stroke="#5479AC" stroke-width="1.8"/><circle cx="183" cy="128" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M49 133Q73 124 99 133" fill="none" stroke="#D7C1E5" stroke-width="1.8"/><path d="M185 127H232" stroke="#F3E9F8" stroke-width="1.3" opacity=".8"/><path d="M108 120L121 108" stroke="#FFFFFF" stroke-width="1.3" opacity=".55"/></g>
+</svg>

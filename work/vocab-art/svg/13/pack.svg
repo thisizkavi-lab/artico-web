@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: pack (Verb)
+  CONTEXTUAL_DEFINITION: Put belongings into a container and prepare them to be moved.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak action with box
+  SYNONYM_GUARD: Show objects going into an open carton and the flaps beginning to fold closed; boxes are empty cartons and unpack removes items.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Moving day floor with an open carton.
+    - Context_Layer: Rolled cloth and dishes wait beside the box.
+    - Focal_Layer: Person lowers a wrapped object into the open carton.
+    - Details_Layer: Box flaps open and hands guide item inside.
+    - Lighting_Layer: Downward motion arcs into box.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:pack" data-archetype="packing-action">
+  <defs><linearGradient id="cardboard" x2="0" y2="1"><stop stop-color="#D9B98C"/><stop offset="1" stop-color="#B98552"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 148H304V192H0Z" fill="#D8C5A8"/><path d="M0 148H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="152" cy="162" rx="110" ry="7" fill="#938675" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M27 111L69 98L86 127L46 140Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M32 114L68 103" stroke="#AFC1D4" stroke-width="1.4"/><path d="M229 97H266V126H229Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.6"/><path d="M235 103H260V120H235Z" fill="#FFFDF8" stroke="#94A3B8" stroke-width="1"/><path d="M27 146H279" stroke="#F3ECE1" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M95 91L152 101L152 153L95 143Z" fill="url(#cardboard)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M152 101L211 89V141L152 153Z" fill="#B98552" stroke="#1E2A3B" stroke-width="2.6"/><path d="M95 91L152 101L132 77L80 66Z" fill="#E7D0AD" stroke="#1E2A3B" stroke-width="2"/><path d="M152 101L211 89L233 67L177 78Z" fill="#E7D0AD" stroke="#1E2A3B" stroke-width="2"/><path d="M110 90L152 98L193 89" fill="none" stroke="#8A5A35" stroke-width="2"/><path d="M139 48L161 41L178 59L167 81L145 87L127 67Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2.2"/><path d="M142 53L161 47L172 60L164 75L147 80L133 66Z" fill="#FFFFFF" opacity=".65"/><path d="M146 69L135 92" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M146 69L135 92" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M176 73L168 95" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M176 73L168 95" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M85 49L114 56M193 48L218 41" stroke="#C88446" stroke-width="2"/><path d="M91 51L114 56M195 49L218 42" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M109 103L144 110M158 108L197 100" stroke="#E8CEA7" stroke-width="1.3"/><path d="M144 83L151 90M169 81L166 90" stroke="#F2C14E" stroke-width="1.3"/><path d="M79 66L131 77M178 78L231 67" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M130 34Q119 53 136 75M178 34Q185 51 174 68" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 4"/><path d="M130 68L136 76L140 67M169 65L174 72L180 65" fill="none" stroke="#4A72B2" stroke-width="1.6"/><ellipse cx="153" cy="109" rx="52" ry="36" fill="#FEF3C7" opacity=".12"/></g>
+</svg>

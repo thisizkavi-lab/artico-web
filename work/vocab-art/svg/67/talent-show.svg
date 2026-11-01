@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: talent show
+ CONTEXTUAL_DEFINITION: A staged competition where performers demonstrate skills for judges and an audience.
+ PEDAGOGICAL_ARCHETYPE: performer on a talent-show stage with judges
+ SYNONYM_GUARD: Make the skill performance and judging panel visible; distinguish from reality TV and a first-night theater audience.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A singer performs under a spotlight on a simple stage while three judges watch from a table with small star-shaped score paddles.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:talent show" data-archetype="judged performance competition">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 157H304V192H0Z" fill="#C8B89E"/><path d="M0 157H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M22 26H282V133H22Z" fill="#26384A"/><path d="M31 34H273V126H31Z" fill="#405663"/>
+  <path d="M42 46Q82 23 122 46V126H42Z" fill="#B85E5A"/><path d="M262 46Q222 23 182 46V126H262Z" fill="#B85E5A"/><path d="M51 48Q82 31 111 48V126H51Z" fill="#D89084" opacity=".56"/><path d="M253 48Q222 31 193 48V126H253Z" fill="#D89084" opacity=".56"/>
+  <path d="M31 128H273V139H31Z" fill="#D6A64C"/><path d="M0 145H304" stroke="#E8DCC5" stroke-width="1"/>
+ </g>
+ <g id="layer-context">
+  <!-- three judges at a panel -->
+  <path d="M18 104H102V117H18Z" fill="#26384A"/><path d="M25 117L22 136M95 117L98 136" stroke="#26384A" stroke-width="2"/>
+  <circle cx="40" cy="88" r="6" fill="#D29A78"/><path d="M34 97Q40 93 46 97L49 108H31Z" fill="#597D8B"/>
+  <circle cx="61" cy="88" r="6" fill="#A77D68"/><path d="M55 97Q61 93 67 97L70 108H52Z" fill="#798C72"/>
+  <circle cx="82" cy="88" r="6" fill="#C18A6B"/><path d="M76 97Q82 93 88 97L91 108H73Z" fill="#D6A64C"/>
+  <path d="M41 77V69M62 77V69M83 77V69" stroke="#26384A" stroke-width="2"/><path d="M38 73L41 68L44 73M59 73L62 68L65 73M80 73L83 68L86 73" fill="#D6A64C"/>
+  <path d="M108 122H196" stroke="#F6E5CE" stroke-width="1.2"/><circle cx="111" cy="130" r="2" fill="#D6A64C"/><circle cx="194" cy="130" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <!-- singer performing -->
+  <circle cx="165" cy="65" r="9" fill="#D29A78"/><path d="M156 64Q157 52 166 53Q175 54 175 66L170 59H158Z" fill="#26384A"/>
+  <path d="M151 79Q165 71 179 79L183 112H147Z" fill="#597D8B" stroke="#26384A" stroke-width="1"/>
+  <path d="M154 83L143 95L136 90M177 83L187 92L193 84" stroke="#D29A78" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M152 110L150 129M179 110L181 129" stroke="#26384A" stroke-width="2.7"/>
+  <path d="M160 78L165 86L171 78" fill="#F6E5CE"/><path d="M162 60L168 59M161 70Q165 73 170 69" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M140 90L139 77" stroke="#26384A" stroke-width="1.8"/><ellipse cx="139" cy="75" rx="3" ry="5" fill="#D6A64C" stroke="#26384A" stroke-width=".8"/>
+  <path d="M142 132H188V140H142Z" fill="#8C725A"/><path d="M131 140H198V145H131Z" fill="#26384A"/>
+ </g>
+ <g id="layer-details">
+  <path d="M123 51L128 42L133 51L142 55L133 59L128 68L123 59L114 55Z" fill="#D6A64C"/>
+  <path d="M196 48L200 41L204 48L211 51L204 54L200 61L196 54L189 51Z" fill="#D6A64C"/>
+  <circle cx="211" cy="74" r="2" fill="#B85E5A"/><circle cx="117" cy="79" r="2" fill="#D6A64C"/>
+  <path d="M147 45H181" stroke="#F6E5CE" stroke-width="1"/><path d="M45 115H76" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <path d="M148 20L162 49L164 109L178 49L197 20" fill="#F3D889" opacity=".16"/><ellipse cx="165" cy="72" rx="51" ry="65" fill="#E7C66B" opacity=".1"/>
+  <path d="M37 140H267" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

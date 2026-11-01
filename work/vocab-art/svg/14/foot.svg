@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: foot (Noun)
+  CONTEXTUAL_DEFINITION: The part of the leg below the ankle, used for standing and walking.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Show the complete foot from ankle to heel and toes; ankle remains muted above it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Side profile of a bare foot resting on the floor.
+    - Context_Layer: A short section of lower leg is muted slate.
+    - Focal_Layer: Heel, sole, arch, and toes form one warm foot silhouette.
+    - Details_Layer: Toe divisions and arch line make the foot recognizable.
+    - Lighting_Layer: Broad ring follows the whole foot silhouette.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:foot" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="157" cy="165" rx="111" ry="16" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M111 19Q145 12 177 21L174 92Q171 105 182 116L224 135Q246 145 246 153Q245 160 232 161H106Q92 160 98 148L127 131Q141 123 138 106L128 91Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.4"/><path d="M143 34L145 89Q146 105 158 119M124 142Q172 148 221 141" fill="none" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="168" cy="143" rx="82" ry="38" fill="#FEF3C7" opacity=".46"/><path d="M139 94Q146 104 151 116Q159 128 181 133L222 138Q244 144 246 153Q245 161 231 162H105Q91 160 98 148L128 131Q141 122 138 106Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.6"/><path d="M123 149Q164 156 224 149M171 138Q174 145 171 152M189 139Q193 145 190 152M207 141Q211 146 208 153" fill="none" stroke="#C88E74" stroke-width="1.5"/><path d="M136 91Q145 102 148 115Q157 126 182 130L224 135Q249 143 250 154Q249 165 231 165H104Q86 162 95 146L126 128Q138 120 134 105Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M68 119L118 133" stroke="#4A72B2" stroke-width="2.1"/><path d="M109 127L120 134L108 137" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M92 168H239" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="172" cy="145" rx="72" ry="24" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".48"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: strategy
+  CONTEXTUAL_DEFINITION: A carefully chosen plan for reaching a business goal.
+  PEDAGOGICAL_ART_DIRECTOR: Show a team arranging connected steps on a planning board that lead to a useful business outcome.
+  PEDAGOGICAL_ARCHETYPE: 6 - Plan / route to a goal
+  SYNONYM_GUARD: Keep the scene in a workplace planning session; do not use a battlefield, weapons, chess pieces, or military uniforms even though one glossary gloss refers to tactics.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a large planning board at x=80..230, y=30..116. Lay three blue and green route blocks across it, connected by an angled line toward a small gold building/result icon at the upper right. Two coworkers at x=45..84 and x=224..263 discuss the route over a table at y=132.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:strategy" data-archetype="business-plan">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="strategy-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="strategy-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="strategy-halo"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="strategy-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="27" y="25" width="250" height="99" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 132 H274 V145 H30 Z" fill="url(#strategy-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/><rect x="39" y="37" width="31" height="23" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1"/><path d="M45 45 H64 M45 51 H61" stroke="#CBD5E1" stroke-width=".9"/></g>
+  <g id="layer-focal" filter="url(#strategy-shadow)"><rect x="79" y="31" width="151" height="88" rx="4" fill="url(#strategy-board)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M91 44 H216 M91 50 H206" stroke="#CBD5E1" stroke-width="1"/><rect x="92" y="65" width="26" height="22" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="1.2"/><circle cx="105" cy="76" r="4" fill="#8EB0DE" stroke="#3D5F91" stroke-width=".9"/><rect x="137" y="68" width="26" height="22" rx="3" fill="#E5F0E1" stroke="#547A56" stroke-width="1.2"/><circle cx="150" cy="79" r="4" fill="#A8D4A2" stroke="#547A56" stroke-width=".9"/><rect x="180" y="51" width="32" height="26" rx="3" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1.2"/><path d="M186 70 V60 H192 V70 M196 70 V56 H204 V70" fill="#E8B765" stroke="#965D28" stroke-width=".9"/><path d="M118 76 L137 79 M163 76 L178 66" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M174 66 L180 64 L178 70" fill="#5479AC"/><path d="M50 121 Q52 101 64 96 L65 87 Q61 83 63 76 Q70 68 79 71 Q87 74 84 84 L81 91 Q94 96 96 120 L93 131 H54 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="75" cy="79" rx="7.5" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M67 77 Q69 70 76 70 Q84 71 86 77 Q79 74 73 75 Z" fill="#3D342D"/><path d="M214 121 Q216 101 228 96 L229 87 Q225 83 227 76 Q234 68 243 71 Q251 74 248 84 L245 91 Q258 96 260 120 L257 131 H218 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="239" cy="79" rx="7.5" ry="9" fill="#B97851" stroke="#1E2A3B" stroke-width="1"/><path d="M231 77 Q233 70 240 70 Q248 71 250 77 Q243 74 237 75 Z" fill="#242C3B"/><path d="M92 108 Q111 99 132 104 M167 104 Q185 95 203 96" fill="none" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="118" cy="97" r="2" fill="#F2C14E"/><circle cx="165" cy="95" r="2" fill="#8EB0DE"/><path d="M96 58 L100 54 M211 43 L215 39" stroke="#D99A2B" stroke-width="1.5" stroke-linecap="round"/><path d="M103 125 H205" stroke="#FFE2A8" stroke-width="1.2"/><path d="M95 57 Q105 53 115 57" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="159" cy="73" rx="86" ry="57" fill="url(#strategy-halo)" opacity=".23"/><path d="M84 36 H225" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

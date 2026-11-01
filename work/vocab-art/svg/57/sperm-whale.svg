@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: sperm whale (noun)
+  CONTEXTUAL_DEFINITION: A sperm whale swimming below the surface, identified by its enormous squared forehead and narrow lower jaw.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining head shape
+  SYNONYM_GUARD: Make the high block-shaped head unmistakable; do not use a rounded blue-whale forehead or show a swordfish-like bill.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Large dark-grey whale faces left underwater; long tapered body extends from square head x=79..143,y=59..117 to tail at x=250,y=99, narrow lower jaw, small side fin, and an offset blowhole near the front of the head.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:sperm whale" data-archetype="sperm-whale-block-head">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#657C83;--c-secondary:#344A55;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="sperm-sky" x2="0" y2="1"><stop stop-color="#D6E9EE"/><stop offset="1" stop-color="#E9F0E9"/></linearGradient>
+  <linearGradient id="sperm-water" x2="0" y2="1"><stop stop-color="#76AFBA"/><stop offset="1" stop-color="#36778B"/></linearGradient>
+  <linearGradient id="sperm-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84999A"/><stop offset="1" stop-color="#4D626B"/></linearGradient>
+  <filter id="sperm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sperm-sky)"/><path d="M0 52Q74 46 151 53T304 49V192H0Z" fill="url(#sperm-water)"/><path d="M0 84Q78 77 151 85T304 81" fill="none" stroke="#D9EFEC" stroke-width="1.7"/><path d="M0 151Q75 144 151 152T304 148V192H0Z" fill="#4A8999"/></g>
+ <g id="layer-context"><path d="M0 117q18-5 36 0m220-15q21-5 43 0M23 172q18-5 35 0m173-6q17-5 33 0" fill="none" stroke="#A8D2D5" stroke-width="1.4" stroke-linecap="round"/><circle cx="42" cy="98" r="2" fill="#E5F7F2"/><circle cx="50" cy="90" r="1.3" fill="#E5F7F2"/><circle cx="258" cy="127" r="2" fill="#D8F0ED"/><ellipse cx="165" cy="137" rx="91" ry="7" fill="#153947" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#sperm-shadow)">
+  <path d="M248 94Q260 84 270 75Q263 90 252 99Q262 108 267 118Q252 114 239 105Z" fill="#4F6670" stroke="#354B54" stroke-width="1.5"/>
+  <path d="M88 69Q95 57 118 58L146 63Q169 65 190 75Q218 86 248 93L246 106Q220 113 193 122Q166 132 143 134L112 130Q99 126 93 115L83 110L79 94L83 78Z" fill="url(#sperm-hide)" stroke="#354B54" stroke-width="1.7"/>
+  <path d="M83 78Q87 68 98 65L137 68L139 103L94 106L81 101Z" fill="#9BACAA" stroke="#536971" stroke-width="1.3"/>
+  <path d="M82 101Q108 102 138 106Q156 112 173 115L173 123Q149 126 124 119L96 114Q87 111 82 105Z" fill="#D8DCD2" stroke="#5F7479" stroke-width="1.2"/>
+  <path d="M88 106Q105 109 125 111" fill="none" stroke="#465D67" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M168 119Q174 125 179 137Q172 139 165 131L157 122Z" fill="#536B74" stroke="#354B54" stroke-width="1.1"/>
+  <path d="M96 61Q99 52 105 53Q108 55 106 61Z" fill="#455F69"/>
+  <circle cx="89" cy="88" r="2" fill="#1B303B"/>
+  <path d="M91 59q-6-8-10-12m8 12q0-10 5-14m-4 14q9-9 14-10" fill="none" stroke="#E8F3EF" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M144 72q29 6 55 17m-51-10q25 7 43 16m-37-5q26 8 43 17" fill="none" stroke="#A9C0BF" stroke-width="1.2" opacity=".8" stroke-linecap="round"/>
+  <path d="M198 81q8 5 13 7m-16 24q8-3 14-1" fill="none" stroke="#D1DDDA" stroke-width="1.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M119 71q7-3 13-1m11 38q11 4 20 3m68-9q8-3 14 0" fill="none" stroke="#D1E0DC" stroke-width="1.2" stroke-linecap="round"/><circle cx="203" cy="102" r="1.2" fill="#D8ECE9"/><path d="M67 139q15-5 29 0m142-3q16-5 29 0" fill="none" stroke="#C4E1DF" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M96 67q10-7 23-5m25 4q17 3 27 8" fill="none" stroke="#F6F8EF" stroke-width="1.5" opacity=".55" stroke-linecap="round"/><ellipse cx="131" cy="84" rx="35" ry="17" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

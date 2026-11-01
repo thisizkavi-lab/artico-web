@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: parking space (Noun phrase)
+  CONTEXTUAL_DEFINITION: One designated place where a car can be parked.
+  PEDAGOGICAL_ARCHETYPE: 5 — Spatial diagram / single marked bay
+  SYNONYM_GUARD: Emphasize one outlined car-sized slot beside a home, not a multi-storey car park or street.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Short driveway beside a residential wall.
+    - Context_Layer: Green edge and house entrance.
+    - Focal_Layer: One bright outlined parking bay with one car centered inside it.
+    - Details_Layer: Clear bay boundaries and wheel stops.
+    - Lighting_Layer: Blue focus ring around the single slot.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:parking space" data-archetype="spatial-slot">
+  <defs><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#E8E5DB"/><stop offset="1" stop-color="#D5C9B6"/></linearGradient><linearGradient id="car" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 54H304V192H0Z" fill="url(#ground)"/><path d="M0 54H304" stroke="#C88446" stroke-width="4"/><path d="M0 149H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="155" cy="157" rx="104" ry="7" fill="#807564" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M23 69H76V150H23Z" fill="#F0D8B3" stroke="#64748B" stroke-width="1.8"/><path d="M39 86H60V122H39Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.5"/><path d="M83 58V151" stroke="#D1C5B1" stroke-width="1.5"/><path d="M241 64H291V150H241Z" fill="#D7E4D0"/><path d="M244 121Q259 107 275 121V150H244Z" fill="#7FB07A" stroke="#4F8455" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M111 69L211 69L229 148H94Z" fill="#FAF8F3" opacity=".42" stroke="#4A72B2" stroke-width="2.5"/><path d="M102 75L119 145M220 75L204 145" stroke="#F7F5EE" stroke-width="4"/><path id="car" d="M122 96Q127 82 143 79H187Q201 81 208 97L217 119V139H111V119Z" fill="url(#car)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="car-clip"><use href="#car"/></clipPath><g clip-path="url(#car-clip)"><path d="M136 86H188Q197 88 201 101H128Q130 91 136 86Z" fill="#CDE0E9"/><path d="M114 119H216V140H114Z" fill="#5479AC"/><path d="M115 119H212" stroke="#91A9CE" stroke-width="2"/></g><use href="#car" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M122 104H207" stroke="#1E2A3B" stroke-width="1.7"/><path d="M120 129H137M191 129H208" stroke="#F2C14E" stroke-width="2.2"/><circle cx="132" cy="139" r="10" fill="#344254" stroke="#1E2A3B" stroke-width="2"/><circle cx="195" cy="139" r="10" fill="#344254" stroke="#1E2A3B" stroke-width="2"/><circle cx="132" cy="139" r="4" fill="#CBD5E1"/><circle cx="195" cy="139" r="4" fill="#CBD5E1"/><path d="M108 149H221" stroke="#F2C14E" stroke-width="3"/><path d="M113 146L119 143M211 143L217 146" stroke="#1E2A3B" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M102 68V150M230 68V150" stroke="#4A72B2" stroke-width="1.6" stroke-dasharray="4 4"/><path d="M143 83H183" stroke="#FFFFFF" stroke-width="1.5"/><path d="M112 162H218" stroke="#F3ECE1" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="166" cy="107" rx="78" ry="58" fill="none" stroke="#4A72B2" stroke-width="1.2" opacity=".35"/><circle cx="166" cy="107" r="40" fill="#FEF3C7" opacity=".12"/></g>
+</svg>

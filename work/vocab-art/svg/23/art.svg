@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: art (Noun)
+  CONTEXTUAL_DEFINITION: The school subject in which students make pictures and visual work.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Student painting a canvas with brushes and a palette makes this an art class rather than a display of finished art alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Art classroom with window and low supply shelf.
+    - Context_Layer: Easel and stool establish the classroom.
+    - Focal_Layer: Student paints a colorful canvas at an easel.
+    - Details_Layer: Palette with paint dabs and brush cup.
+    - Lighting_Layer: Soft daylight on the canvas and raised brush.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:art" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="art-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="art-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#art-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H98V86H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M60 30V85M23 57H97" stroke="#FFFFFF" stroke-width="2.5"/><path d="M212 42H275V110H212Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M151 72V145M128 145H174" stroke="#8D765A" stroke-width="4" stroke-linecap="round"/><path d="M114 149H187" stroke="#A98A64" stroke-width="3"/><rect x="235" y="112" width="23" height="31" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M239 112L243 105H251L255 112" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#art-shadow)"><rect x="108" y="34" width="89" height="78" rx="3" fill="#F7F3E8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M116 103Q127 82 143 87Q153 61 168 71Q185 78 191 53V105Z" fill="#91A77C" stroke="#55704D" stroke-width="1.4"/><circle cx="166" cy="53" r="9" fill="#D9A441"/><path d="M113 99Q134 88 155 101M117 45Q141 39 154 47" fill="none" stroke="#D9857F" stroke-width="3" stroke-linecap="round"/><path d="M56 110Q57 94 69 89Q81 87 91 97L96 126L82 134L61 129Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="72" cy="78" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.7"/><path d="M59 78Q60 62 73 64Q86 64 86 79L81 82Q78 71 72 71Q66 71 62 84Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M87 100Q102 86 113 78" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M87 100Q102 86 113 78" fill="none" stroke="#C98961" stroke-width="3.6" stroke-linecap="round"/><path d="M113 78L118 68" stroke="#A96B46" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M34 112Q47 104 59 111L57 127Q43 135 31 125Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="41" cy="114" r="3" fill="#D9857F"/><circle cx="50" cy="113" r="3" fill="#5479AC"/><circle cx="44" cy="122" r="3" fill="#D9A441"/><path d="M230 95H263M231 102H265" stroke="#F7EBCF" stroke-width="2"/><path d="M65 139L87 141M91 148H121" stroke="#A98A64" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M109 38H195" stroke="#FFFFFF" stroke-width="2" opacity=".9"/><ellipse cx="146" cy="91" rx="111" ry="71" fill="#FEF9C3" opacity=".08"/></g>
+</svg>

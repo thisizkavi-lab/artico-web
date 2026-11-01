@@ -1,0 +1,49 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: exclusive interview
+ CONTEXTUAL_DEFINITION: A private one-to-one media interview granted to a single reporter or outlet.
+ PEDAGOGICAL_ARCHETYPE: closed-room one-reporter one-guest interview
+ SYNONYM_GUARD: Show a private meeting with one interviewer and one source, without a press crowd or panel; exclusivity comes from the solitary, closed setting.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: One journalist and one guest sit across a small table in a closed quiet room, speaking into a single recorder with only one camera present.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:exclusive interview" data-archetype="private one-to-one media interview">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M18 28H286V146H18Z" fill="#E6DED1"/><path d="M30 40H274V146H30Z" fill="#D3D6CC"/>
+  <path d="M40 50H84V101H40Z" fill="#E9E1D2"/><path d="M46 56H78V95H46Z" fill="#A9B9B4"/><path d="M62 56V95M46 75H78" stroke="#F0EEE8" stroke-width="1.2"/>
+  <path d="M215 40H259V113H215Z" fill="#B9AA94"/><path d="M221 47H253V109H221Z" fill="#8E9F97"/><path d="M231 83H243V113H231Z" fill="#26384A"/>
+  <path d="M105 112H198V125H105Z" fill="#8C725A"/><path d="M113 125V147M190 125V147" stroke="#725F4B" stroke-width="2"/>
+ </g>
+ <g id="layer-context">
+  <!-- single camera, no press crowd -->
+  <path d="M249 119L262 111H277L285 117V129H250Z" fill="#26384A"/><circle cx="277" cy="120" r="5" fill="#597D8B" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M259 129L256 145M276 129L280 145M267 129V145M253 145H283" stroke="#26384A" stroke-width="1.8"/>
+  <path d="M106 107H198" stroke="#D6A64C" stroke-width="1.2"/><circle cx="151" cy="108" r="2" fill="#B85E5A"/>
+  <path d="M28 149H276" stroke="#F6E5CE" stroke-width="1"/><path d="M204 51V107" stroke="#9C8A71" stroke-width="1"/>
+ </g>
+ <g id="layer-focal">
+  <!-- journalist -->
+  <circle cx="83" cy="76" r="8" fill="#D29A78"/><path d="M75 75Q76 64 84 65Q92 66 92 77L87 71H77Z" fill="#26384A"/>
+  <path d="M70 88Q83 81 96 88L100 116H66Z" fill="#597D8B"/><path d="M73 92L91 98L102 105" fill="none" stroke="#D29A78" stroke-width="2.5"/>
+  <path d="M72 114L70 131M95 114L98 131" stroke="#26384A" stroke-width="2.5"/>
+  <!-- sole guest -->
+  <circle cx="222" cy="77" r="8" fill="#A77D68"/><path d="M214 76Q215 65 223 66Q231 67 231 78L226 72H216Z" fill="#405663"/>
+  <path d="M207 89Q222 82 237 89L241 117H203Z" fill="#B85E5A"/><path d="M210 94L200 103M234 94L202 104" stroke="#A77D68" stroke-width="2.5" fill="none"/>
+  <path d="M209 115L207 132M236 115L239 132" stroke="#26384A" stroke-width="2.5"/>
+  <!-- microphone and recorder shared between them -->
+  <path d="M139 92Q144 87 149 92V105Q144 111 139 105Z" fill="#26384A"/><path d="M144 108V119M137 119H151" stroke="#26384A" stroke-width="1.8"/>
+  <path d="M148 117H161V124H148Z" fill="#D6A64C"/><circle cx="158" cy="120" r="1.2" fill="#B85E5A"/>
+  <path d="M99 103L137 99M150 99L201 103" stroke="#D6A64C" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details">
+  <path d="M79 75Q83 73 88 75M78 82Q83 85 88 82M218 76Q223 74 228 76M217 83Q222 86 227 83" stroke="#654E43" stroke-width="1" fill="none"/>
+  <path d="M121 81L126 76M178 82L183 77" stroke="#D6A64C" stroke-width="1.3"/><circle cx="153" cy="85" r="1.5" fill="#B85E5A"/>
+  <path d="M38 44H79" stroke="#F6E5CE" stroke-width="1.2"/><circle cx="264" cy="106" r="1.6" fill="#D6A64C"/>
+  <path d="M64 138H245" stroke="#8C725A" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="91" rx="116" ry="67" fill="#E7C66B" opacity=".08"/><path d="M32 34L58 59M272 33L246 57" stroke="#FFF1C7" stroke-width="1.1" opacity=".5"/>
+  <path d="M28 150H276" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

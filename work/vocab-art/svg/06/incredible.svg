@@ -1,0 +1,71 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: incredible (Adjective)
+  CONTEXTUAL_DEFINITION: So astonishing that it is difficult to believe, shown by an impossible magic trick.
+  PEDAGOGICAL_ARCHETYPE: 3 (Experience plus a visible reaction)
+  SYNONYM_GUARD: A tiny top hat yields an implausibly long silk ribbon and rabbit; it is a magical impossibility, not a sports accomplishment.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Ivory street-performance square with a soft stone floor.
+    - Context_Layer: Two audience members lean in, wide-eyed and open-mouthed.
+    - Focal_Layer: Magician in a plum jacket beside a tiny black hat and an impossible ribbon loop.
+    - Details_Layer: Rabbit ears, curled ribbon, star glints, small coin and table.
+    - Lighting_Layer: Warm spotlight on the trick, cool rim on the hat.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:incredible" data-archetype="expressive-bust">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4B8EE"/><stop offset="0.55" stop-color="#8B5CA8"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#paper)"/>
+    <path d="M0 143 Q144 136 304 144 L304 192 L0 192Z" fill="#E9EFF5"/>
+    <ellipse cx="154" cy="160" rx="113" ry="10" fill="#DDD4C3"/>
+    <path d="M20 145 L284 145" stroke="#D1DCE8" stroke-width="2"/>
+  </g>
+  <g id="layer-context">
+    <path d="M22 151 Q25 127 43 125 Q61 127 64 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/>
+    <circle cx="43" cy="105" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M26 103 Q28 85 44 87 Q60 89 60 104 Q50 96 42 98Z" fill="#27364B"/>
+    <ellipse cx="37" cy="106" rx="3" ry="4" fill="#FFFFFF"/><ellipse cx="49" cy="106" rx="3" ry="4" fill="#FFFFFF"/>
+    <circle cx="91" cy="113" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M73 151 Q76 132 91 132 Q106 132 109 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M83 114 Q86 110 89 114 M94 114 Q97 110 100 114" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <ellipse cx="90" cy="121" rx="4" ry="5" fill="#A34F47"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M153 131 C121 112 131 77 159 65 C185 53 210 70 201 92 C194 109 176 111 168 95 C161 80 181 73 193 83 C206 96 214 118 233 121 C249 124 256 109 246 100" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M153 131 C121 112 131 77 159 65 C185 53 210 70 201 92 C194 109 176 111 168 95 C161 80 181 73 193 83 C206 96 214 118 233 121 C249 124 256 109 246 100" fill="none" stroke="url(#silk)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M125 151 Q128 120 151 117 Q175 120 178 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.5"/>
+    <path d="M143 118 L141 106 L161 106 L159 119" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="151" cy="87" r="22" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M129 86 Q129 65 151 64 Q174 65 173 86 Q163 76 152 77 Q140 83 129 86Z" fill="#27364B"/>
+    <path d="M138 89 Q142 85 146 89 M156 89 Q160 85 164 89" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M145 98 Q151 103 158 98" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M136 128 Q119 115 111 108 Q107 104 111 100 Q115 96 120 101 L144 115" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M167 128 Q181 117 188 104 Q191 99 196 102 Q201 106 197 111 L178 135" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <ellipse cx="160" cy="153" rx="52" ry="6" fill="#C9D3DF"/>
+    <path d="M131 150 L131 137 Q133 131 151 131 Q169 131 171 137 L171 150Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.2"/>
+    <ellipse cx="151" cy="137" rx="20" ry="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M134 136 L136 119 Q151 125 167 118 L169 136Z" fill="#1E2A3B" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M229 99 C223 89 220 76 225 69 Q231 65 237 75 L243 94Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M246 94 C247 81 251 69 258 67 Q264 70 260 82 L255 100Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M229 89 Q224 78 227 73 Q232 74 235 88Z M251 89 Q254 76 258 73 Q261 78 256 91Z" fill="#E9A7B8"/>
+    <path d="M224 110 C222 101 228 91 238 90 Q251 88 259 98 Q267 107 260 117 Q253 126 240 125 Q228 123 224 110Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M236 105 Q239 101 242 105 M249 105 Q252 101 255 105" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M243 109 Q247 106 250 109 L247 113Z" fill="#E27F8C" stroke="#A34F47" stroke-width="0.8"/>
+    <path d="M247 113 Q245 117 241 116 M247 113 Q250 117 254 115" fill="none" stroke="#A34F47" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M235 111 L226 109 M235 114 L226 115 M255 111 L264 108 M256 114 L265 116" fill="none" stroke="#7B8A9E" stroke-width="1.3" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M109 75 L114 65 L119 75 L129 80 L119 85 L114 95 L109 85 L99 80Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/>
+    <path d="M211 58 L215 50 L219 58 L227 62 L219 66 L215 74 L211 66 L203 62Z" fill="#F2C14E"/>
+    <path d="M101 98 L97 92 M104 91 L105 84 M204 112 L211 108" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="150" cy="83" rx="4" ry="3" fill="#1E2A3B"/><ellipse cx="160" cy="82" rx="4" ry="3" fill="#1E2A3B"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M138 76 Q148 66 160 69 M137 85 Q136 92 139 96" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.76"/>
+    <path d="M133 153 Q152 157 171 153" fill="none" stroke="#FDE68A" stroke-width="2.2" stroke-linecap="round"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.68"/>
+  </g>
+</svg>

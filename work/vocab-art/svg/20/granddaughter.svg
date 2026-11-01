@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: granddaughter (Noun)
+  CONTEXTUAL_DEFINITION: A girl who is the daughter of someone's child.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A silver-haired grandmother helps one girl steer a kite while the girl's parent stands farther behind; the three visible ages show the granddaughter relation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open family garden and pale sky.
+    - Context_Layer: Kite aloft and parent in the distance.
+    - Focal_Layer: Older woman and girl hold the kite string together.
+    - Details_Layer: Wind arc, shared grip, and clear age contrast.
+    - Lighting_Layer: Soft sunny halo around the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:granddaughter" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#568552;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="gd-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="gd-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#829A83"/><stop offset="1" stop-color="#568552"/></linearGradient>
+    <filter id="gd-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gd-sky)"/><path d="M0 146Q74 139 152 146T304 144V192H0Z" fill="#DCEAD6"/><ellipse cx="153" cy="174" rx="127" ry="7" fill="#C3DAB9"/><path d="M220 104Q227 84 242 86Q258 87 260 108V133H220Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="240" cy="71" r="15" fill="#C98961" stroke="#1E2A3B" stroke-width="1.7"/><path d="M225 70Q226 56 240 56Q255 57 255 73" fill="#27364B" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-context"><path d="M177 45L214 26L233 53L198 72Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.1"/><path d="M177 45L233 53M214 26L198 72" stroke="#F3ECE1" stroke-width="1.7"/><path d="M177 45Q158 76 143 100Q135 114 125 130" fill="none" stroke="#64748B" stroke-width="1.6"/><path d="M188 69Q184 78 176 80M202 70Q204 81 211 83M192 72Q193 84 190 88" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#gd-shadow)"><ellipse cx="117" cy="113" rx="81" ry="63" fill="#FEF3C7" opacity=".3"/><path d="M37 178Q41 149 61 141Q82 133 102 144L107 178Z" fill="url(#gd-coat)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M65 145L78 157L93 145" fill="#F3ECE1" stroke="#568552" stroke-width="1.5"/><rect x="67" y="119" width="22" height="23" rx="6" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><circle cx="78" cy="90" r="28" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M50 88Q50 61 78 60Q106 61 107 88L101 99Q97 73 79 74Q60 73 53 99Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M62 89Q68 93 73 89M83 89Q88 93 94 89M66 104Q78 110 90 104" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M103 151Q120 143 131 130M96 158Q115 153 129 141" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M103 151Q120 143 131 130M96 158Q115 153 129 141" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M127 134Q131 126 139 128L145 134L140 141Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M121 178Q123 148 138 141Q155 134 172 144L178 178Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="149" cy="116" r="22" fill="#C98961" stroke="#1E2A3B" stroke-width="2.3"/><path d="M127 114Q128 94 149 94Q172 95 172 117L167 121Q161 106 149 106Q138 106 130 122Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M138 115Q143 118 147 115M152 115Q157 118 161 115M140 128Q149 133 158 128" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M135 149Q148 140 158 130M161 151Q171 143 177 132" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M135 149Q148 140 158 130M161 151Q171 143 177 132" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M157 130Q160 123 167 126L171 131L164 137Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M60 63Q75 55 90 60M134 91Q144 86 154 91" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/><path d="M200 20L195 14M236 25L242 20" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="116" cy="103" r="2.5" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="117" cy="108" rx="85" ry="67" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".36"/><path d="M42 50Q75 33 108 42" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".75"/></g>
+</svg>

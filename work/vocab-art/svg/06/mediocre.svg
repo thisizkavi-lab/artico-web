@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: mediocre (Adjective)
+  CONTEXTUAL_DEFINITION: Only average, shown by a plain ceramic bowl beside more carefully finished examples.
+  PEDAGOGICAL_ARCHETYPE: 4 (Neutral middle-of-the-road result against clear alternatives)
+  SYNONYM_GUARD: The central bowl is usable but unremarkable, between a polished one and a visibly unfinished one; it is not broken or terrible.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pottery studio with three bowls on a counter.
+    - Context_Layer: Evaluator gives the middle bowl a mild shrug.
+    - Focal_Layer: Plain middle bowl with no decoration, flanked by better and rougher examples.
+    - Details_Layer: Glaze differences, kiln shelf and clay tools.
+    - Lighting_Layer: Even light over all three, no dramatic halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:mediocre" data-archetype="contrast-reference">
+  <defs><linearGradient id="studio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#studio)"/><path d="M0 143 Q151 138 304 145 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="0" y="141" width="304" height="16" fill="#B97840"/><path d="M0 149 L304 149" stroke="#8D552E" stroke-width="1.7"/><ellipse cx="153" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M31 140 Q34 117 52 114 Q71 117 74 140Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><circle cx="52" cy="99" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M36 98 Q37 80 53 82 Q68 83 68 99 Q60 90 51 91Z" fill="#27364B"/><path d="M43 101 Q47 98 50 101 M55 101 Q59 98 62 101" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M44 109 Q52 108 59 109" fill="none" stroke="#A34F47" stroke-width="1.6" stroke-linecap="round"/><path d="M67 119 Q77 111 85 105" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M81 101 L89 105 L82 110" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M107 116 Q113 105 128 104 Q143 105 148 116 L143 139 Q127 145 112 139Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M110 115 Q127 108 145 115" fill="none" stroke="#8EB0DE" stroke-width="2.2"/><path d="M155 116 Q161 105 176 104 Q191 105 196 116 L191 139 Q175 145 160 139Z" fill="#C8B9A4" stroke="#8D7958" stroke-width="2.3"/><path d="M158 116 Q176 112 193 116" fill="none" stroke="#E1D7C7" stroke-width="2"/><path d="M208 116 Q214 105 229 104 Q244 105 249 116 L244 139 Q228 145 213 139Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="2.3"/><path d="M215 116 L227 109 L240 117 L234 139 L218 140Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/><path d="M128 104 L128 101 M176 104 L176 101 M228 104 L228 101" stroke="#1E2A3B" stroke-width="2"/><path d="M135 83 L151 83 M135 88 L151 88" stroke="#CBD5E1" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M145 74 L150 64 L155 74 L165 79 L155 84 L150 94 L145 84 L135 79Z" fill="#CBD5E1"/><path d="M93 116 L98 107 M198 116 L203 107" stroke="#8D552E" stroke-width="2"/><circle cx="100" cy="114" r="2.4" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M111 120 Q127 116 144 120 M159 120 Q176 116 193 120 M212 120 Q228 116 245 120" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.72"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

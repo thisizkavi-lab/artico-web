@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: boxes (Noun, plural)
+  CONTEXTUAL_DEFINITION: Multiple cardboard containers used to hold belongings while moving.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object group
+  SYNONYM_GUARD: Show empty or open cardboard cartons as objects; pack fills a box and unpack removes belongings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clear floor and warm paper background.
+    - Context_Layer: Soft drop shadow grounds a small group of cartons.
+    - Focal_Layer: Three different box sizes with open flaps and corrugated edges.
+    - Details_Layer: Tape strip, folded flaps, and handholds establish cardboard boxes.
+    - Lighting_Layer: Upper-left paper highlights on the box faces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:boxes" data-archetype="hero-object-group">
+  <defs><linearGradient id="cardboard" x2="0" y2="1"><stop stop-color="#D9B98C"/><stop offset="1" stop-color="#B98552"/></linearGradient><linearGradient id="side" x2="0" y2="1"><stop stop-color="#C18B56"/><stop offset="1" stop-color="#9A653D"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 151H304V192H0Z" fill="#D8C5A8"/><path d="M0 151H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="152" cy="161" rx="103" ry="8" fill="#8D7E68" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M38 149H270" stroke="#F3ECE1" stroke-width="1.6"/><path d="M71 44L108 44L120 55L84 55Z" fill="#E3E8F0" opacity=".5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M45 86L96 70L144 86V149H45Z" fill="url(#cardboard)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M96 70L144 86V149L96 133Z" fill="url(#side)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M45 86L96 70L79 56L34 70Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="2"/><path d="M96 70L144 86L155 67L111 52Z" fill="#E7D0AD" stroke="#1E2A3B" stroke-width="2"/><path d="M51 95L91 83V128L51 140Z" fill="#D9B98C" opacity=".65"/><path d="M48 89L92 75" stroke="#F2C14E" stroke-width="3"/><path d="M156 108L193 96L227 108V149H156Z" fill="url(#cardboard)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M193 96L227 108V149L193 137Z" fill="url(#side)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M156 108L193 96L180 84L148 96Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M193 96L227 108L237 92L202 81Z" fill="#E7D0AD" stroke="#1E2A3B" stroke-width="1.8"/><path d="M153 149H233" stroke="#1E2A3B" stroke-width="2"/><path d="M151 104L190 91" stroke="#F2C14E" stroke-width="2.5"/><path d="M96 77L96 133" stroke="#8A5A35" stroke-width="1.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M66 108L82 103V116L66 121Z" fill="#9A653D"/><path d="M173 121L186 117V126L173 130Z" fill="#9A653D"/><path d="M55 91L86 81M167 112L188 105" stroke="#EAD2AE" stroke-width="1.4"/><path d="M110 51L117 55M38 69L78 55" stroke="#FFFFFF" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="95" cy="73" rx="33" ry="13" fill="#FEF3C7" opacity=".17"/><path d="M44 85L94 69L143 85" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/></g>
+</svg>

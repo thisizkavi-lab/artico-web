@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: attic (Noun)
+  CONTEXTUAL_DEFINITION: The room or storage space directly under a home's roof.
+  PEDAGOGICAL_ARCHETYPE: 5 (Space shown in a building cross-section)
+  SYNONYM_GUARD: Despite the Japanese gloss conflict, the lesson category is rooms and levels; depict the house loft beneath sloping roof rafters.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cutaway view of the upper house beneath a peaked roof.
+    - Context_Layer: Sloping roof beams enclose the storage room.
+    - Focal_Layer: Boxes and a round window sit in the attic.
+    - Details_Layer: Trunk, dust cloth, and a small lamp.
+    - Lighting_Layer: Skylight illuminates the usable space.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:attic" data-archetype="spatial-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EDE0"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><ellipse cx="152" cy="167" rx="112" ry="8" fill="#D8CDAF"/><path d="M47 67 L152 24 L257 67 L257 150 L47 150Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.5"/><path d="M47 67 L152 24 L257 67 L247 75 L152 39 L57 75Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M74 69 L90 74 L90 150 M230 69 L214 74 L214 150" stroke="#8A5A35" stroke-width="5"/><path d="M90 74 L152 42 L214 74" fill="none" stroke="#B97840" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="152" cy="80" r="17" fill="#DCECFB" stroke="#5479AC" stroke-width="2.3"/><path d="M152 64 L152 96 M136 80 L168 80" stroke="#FAF8F3" stroke-width="2"/><rect x="100" y="108" width="49" height="35" rx="4" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M100 117 L149 117 M110 108 L110 143 M139 108 L139 143" stroke="#8A5A35" stroke-width="1.5"/><rect x="163" y="118" width="39" height="25" rx="3" fill="#D8CDAF" stroke="#8E7E60" stroke-width="1.7"/><path d="M163 125 L202 125 M170 118 L170 143" stroke="#8E7E60" stroke-width="1.2"/><path d="M193 92 L201 86 L209 92 L209 106 L193 106Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M67 103 Q75 97 83 103 L83 111 L67 111Z M218 101 Q226 95 234 101 L234 109 L218 109Z" fill="#7FB07A"/><path d="M74 94 L80 87 L86 94" fill="none" stroke="#557A53" stroke-width="2"/><path d="M106 155 L200 155" stroke="#B97840" stroke-width="4" stroke-linecap="round"/><circle cx="174" cy="54" r="4" fill="#F2C14E"/><circle cx="183" cy="48" r="2" fill="#F2C14E"/><circle cx="126" cy="93" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M139 80 Q152 68 165 80 Q152 92 139 80Z" fill="#F2C14E" opacity="0.24"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

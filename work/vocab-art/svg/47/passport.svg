@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: passport
+  CONTEXTUAL_DEFINITION: An official travel booklet that identifies a traveler crossing national borders.
+  PEDAGOGICAL_ART_DIRECTOR: Make one closed passport booklet the hero, with a simple globe emblem and airplane beside it.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: Show a physical passport booklet without words, letters, numbers, or a readable country name.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A deep blue passport cover rests on a pale travel desk with a blank gold globe emblem and a small plane pictogram.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:passport" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="pass-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DEE9E8"/><stop offset="1" stop-color="#C4CDC7"/></linearGradient>
+  <linearGradient id="pass-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#527CA0"/><stop offset="1" stop-color="#294E6E"/></linearGradient>
+  <linearGradient id="pass-gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5D783"/><stop offset="1" stop-color="#C69743"/></linearGradient>
+  <filter id="pass-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pass-bg)"/><path d="M24 20H280V171H24Z" fill="#E9EBE4" stroke="#65777B" stroke-width="1.4"/><path d="M32 150H272" stroke="#C6C5B9" stroke-width="1.1"/><rect x="225" y="30" width="43" height="37" fill="#A9C9CF" stroke="#526873" stroke-width="1"/><path d="M246 30V67M225 49H268" stroke="#526873" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M38 127H267V152H38Z" fill="#A9825B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M51 152V160M253 152V160" stroke="#624D3B" stroke-width="3"/><path d="M199 130H230V142H199Z" fill="#E7E6DE" stroke="#526274" stroke-width="1"/><path d="M205 135H224" stroke="#829394" stroke-width="1"/></g>
+ <g id="layer-focal" filter="url(#pass-shadow)"><path d="M76 43H207Q219 43 219 55V127H88Q76 127 76 115Z" fill="url(#pass-cover)" stroke="#1D3548" stroke-width="2"/><path d="M87 52H203V117H87Z" fill="none" stroke="#8FB0C0" stroke-width="1.1" opacity=".8"/><path d="M103 96Q127 76 151 96Q175 116 199 96" fill="none" stroke="url(#pass-gold)" stroke-width="2.3"/><path d="M103 96Q127 77 151 96Q175 115 199 96" fill="none" stroke="url(#pass-gold)" stroke-width="2.3" transform="rotate(90 151 96)"/><circle cx="151" cy="96" r="21" fill="none" stroke="url(#pass-gold)" stroke-width="1.8"/><path d="M136 88L141 84L146 85L149 89L145 92L146 97L142 100L140 96L136 95L133 91Z" fill="url(#pass-gold)" opacity=".9"/><path d="M156 101L161 99L166 102L165 106L161 108L159 105L155 105Z" fill="url(#pass-gold)" opacity=".9"/><path d="M144 95L151 92L158 95L151 98L147 103H145L148 98L144 97Z" fill="url(#pass-gold)"/><path d="M149 43V127" stroke="#A8C0C7" stroke-width="1.2" opacity=".6"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="160" rx="94" ry="4" fill="#526274" opacity=".16"/><path d="M80 47H206" stroke="#A7C2CF" stroke-width="1" opacity=".7"/><path d="M230 91L237 89L242 83L244 89L251 88L255 90L247 92L245 98L241 93L234 95Z" fill="url(#pass-gold)" stroke="#C69743" stroke-width=".45"/><path d="M29 22H277" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="94" rx="128" ry="73" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M25 21H279" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

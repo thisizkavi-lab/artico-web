@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: eel (noun)
+  CONTEXTUAL_DEFINITION: A long, narrow eel bending in an S-curve over the seabed.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with a distinctive body silhouette
+  SYNONYM_GUARD: Make the continuous ribbon-like body the main cue; avoid a short ordinary fish body with a separate fan tail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Olive-brown eel swims from left seabed toward the upper right in a long S-curve, head small and pointed at x=226,y=72, body narrowing back to x=74,y=128, with one continuous fin ridge and tiny pectoral fin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:eel" data-archetype="eel-long-undulating-body">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#738269;--c-secondary:#3D514B;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="eel-water" x2="0" y2="1"><stop stop-color="#9BC7C7"/><stop offset="1" stop-color="#477F8B"/></linearGradient>
+  <linearGradient id="eel-sand" x2="0" y2="1"><stop stop-color="#C7B58E"/><stop offset="1" stop-color="#A08A68"/></linearGradient>
+  <linearGradient id="eel-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#899175"/><stop offset="1" stop-color="#526455"/></linearGradient>
+  <filter id="eel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E0EBE8"/><path d="M0 36Q75 28 151 37T304 33V192H0Z" fill="url(#eel-water)"/><path d="M0 143Q77 133 151 144T304 139V192H0Z" fill="url(#eel-sand)"/><circle cx="58" cy="49" r="17" fill="#F3D58B" opacity=".3"/></g>
+ <g id="layer-context"><path d="M0 151q46-10 90-2t82 1q66-10 132 0v42H0Z" fill="#AC9872" opacity=".48"/><path d="M24 156l15-12m5 13 12-17m177 17 16-12m8 14 12-18" fill="none" stroke="#8A8B68" stroke-width="1.5" stroke-linecap="round"/><path d="M13 116q15-7 30-2m210-10q18-7 36-2" fill="none" stroke="#C7E1D8" stroke-width="1.4" stroke-linecap="round"/><circle cx="42" cy="82" r="2" fill="#EAF8EF"/><circle cx="49" cy="73" r="1.3" fill="#EAF8EF"/><ellipse cx="151" cy="153" rx="87" ry="6" fill="#27484B" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#eel-shadow)">
+  <path d="M79 126Q98 101 125 111Q144 118 163 102Q186 82 209 91Q223 96 232 81Q238 72 232 66Q225 63 219 69" fill="none" stroke="#394E47" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M79 123Q99 99 125 108Q144 115 163 99Q186 79 209 88Q222 93 229 80Q235 72 231 67" fill="none" stroke="url(#eel-hide)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M94 116Q110 99 125 105Q145 111 165 94Q184 77 204 83" fill="none" stroke="#A8AD8B" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M84 124Q91 120 97 117M117 107Q125 110 132 111M154 102Q162 99 167 94M190 83Q198 81 205 84" fill="none" stroke="#5C6B54" stroke-width="1.2" opacity=".8" stroke-linecap="round"/>
+  <path d="M222 70Q230 62 239 66Q246 71 241 78Q235 84 226 80Z" fill="#75846D" stroke="#394E47" stroke-width="1.3"/>
+  <circle cx="236" cy="70" r="1.8" fill="#1E2A3B"/>
+  <path d="M237 78q5 2 8-1" fill="none" stroke="#3C5149" stroke-width="1" stroke-linecap="round"/>
+  <path d="M220 77Q213 83 216 91Q222 87 224 81Z" fill="#A7B09B" stroke="#526454" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M104 125q7 2 13 0m46-15q6-4 11-8m-72-18q10-4 19-1" fill="none" stroke="#C5D3B6" stroke-width="1.2" opacity=".8" stroke-linecap="round"/><circle cx="137" cy="80" r="1.4" fill="#E9F6EF"/><circle cx="200" cy="119" r="1.8" fill="#D7EADF"/><path d="M264 133l5-9m6 10 6-7" fill="none" stroke="#80906C" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M104 103q13-8 24-3m46-17q11-7 20-4" fill="none" stroke="#F0F2DF" stroke-width="1.5" opacity=".55" stroke-linecap="round"/><ellipse cx="163" cy="96" rx="63" ry="22" transform="rotate(-20 163 96)" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

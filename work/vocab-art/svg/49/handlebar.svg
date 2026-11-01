@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: handlebar (Noun)
+  CONTEXTUAL_DEFINITION: The crosswise steering bar at the front of a bicycle, with hand grips and brake levers.
+  PEDAGOGICAL_ART_DIRECTOR: Make the crossbar and its two grips dominant, with a small fork and front wheel to establish bicycle context.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a bicycle steering bar, not a door handle or motorcycle control.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Head-on handlebar with two textured grips, brake levers, and a center stem leading to a bicycle fork and front tire.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:handlebar" data-archetype="bicycle-handlebar">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="hb-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="hb-metal" x2="1" y2="1"><stop stop-color="#91B3B5"/><stop offset="1" stop-color="#456B7D"/></linearGradient><linearGradient id="hb-grip" x2="0" y2="1"><stop stop-color="#495A5A"/><stop offset="1" stop-color="#26363A"/></linearGradient><filter id="hb-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.3" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hb-sky)"/><path d="M0 125Q76 107 154 123T304 117V192H0Z" fill="#A9B994"/><path d="M0 154H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M21 124L39 78L57 124ZM251 121L270 67L289 121Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="152" cy="157" rx="60" ry="5" fill="#34483D" opacity=".13"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#hb-shadow)">
+  <circle cx="152" cy="146" r="28" fill="none" stroke="#344A50" stroke-width="3.3"/><circle cx="152" cy="146" r="22" fill="none" stroke="#B8C7C1" stroke-width="1.2"/>
+  <path d="M152 146L152 94M148 113L105 72Q91 57 74 64L56 73M156 113L199 72Q213 57 230 64L248 73" fill="none" stroke="url(#hb-metal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 73L40 79M248 73L264 79" fill="none" stroke="url(#hb-grip)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M75 64Q68 61 65 69L69 85M229 64Q236 61 239 69L235 85" fill="none" stroke="#344A50" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M66 70L70 83M238 70L234 83" fill="none" stroke="#D7834B" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="143" y="108" width="18" height="12" rx="3" fill="#536E70" stroke="#344A50" stroke-width="1.4"/><path d="M144 114h16M152 120v24" fill="none" stroke="#D4E6E0" stroke-width="1.3"/>
+  <path d="M37 79l-8 5m238-5 8 5" fill="none" stroke="#344A50" stroke-width="2.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="55" cy="73" r="1.2" fill="#F2D6B1"/><circle cx="249" cy="73" r="1.2" fill="#F2D6B1"/><path d="M61 71l12-4m158 4-12-4M136 112h8m32 0h-8" fill="none" stroke="#E5F0E8" stroke-width="1.2"/><path d="M46 74v8m5-10v8m198-6v8m5-10v8" fill="none" stroke="#95A7A3" stroke-width="1.2"/><path d="M124 108v8m56-8v8" fill="none" stroke="#E1C675" stroke-width="1.1"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M61 70l11-4m159 4-11-4" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".6"/><path d="M144 109h16" fill="none" stroke="#EAF5EE" stroke-width="1.2"/><circle cx="152" cy="146" r="1.2" fill="#FFF8E7"/></g>
+</svg>

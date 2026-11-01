@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: corkscrew (Noun)
+  CONTEXTUAL_DEFINITION: A spiral-tipped tool used to pull a cork from a bottle.
+  PEDAGOGICAL_ARCHETYPE: 4 (Action tool)
+  SYNONYM_GUARD: Make the twisted metal worm visibly embedded in a cork above a wine bottle, not a cap opener.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter.
+    - Context_Layer: Dark green glass bottle with exposed neck.
+    - Focal_Layer: T-shaped corkscrew handle and spiral through cork.
+    - Details_Layer: Cork and circular motion cue.
+    - Lighting_Layer: Small glass glints.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:corkscrew" data-archetype="action-tool">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 145 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 145 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="153" cy="167" rx="77" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M125 86 H181 V105 Q181 111 187 119 L197 143 H108 L119 119 Q125 111 125 105Z" fill="#537D50" stroke="#1E2A3B" stroke-width="2.5"/><path d="M131 88 H175 V105 H131Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.4"/><path d="M128 92 Q151 99 179 92 M116 128 H190" fill="none" stroke="#A8D2A8" stroke-width="1.6"/><path d="M124 143 V151 M181 143 V151" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal"><rect x="139" y="65" width="29" height="15" rx="4" fill="#C98B54" stroke="#8A5A35" stroke-width="1.8"/><path d="M153 35 V85" stroke="#1E2A3B" stroke-width="3"/><path d="M153 35 C141 35 141 45 153 45 C165 45 165 55 153 55 C141 55 141 65 153 65" fill="none" stroke="#AEBFC6" stroke-width="3.5" stroke-linecap="round"/><path d="M105 42 H199" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M105 42 H199" stroke="#B97840" stroke-width="4.5" stroke-linecap="round"/><path d="M119 31 Q103 40 109 55 M186 31 Q201 40 195 55" fill="none" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M131 69 H163" stroke="#E9B47E" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

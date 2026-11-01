@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: efficient
+  CONTEXTUAL_DEFINITION: Achieving a good result with little wasted time, effort, or material.
+  PEDAGOGICAL_ART_DIRECTOR: Show a clean, direct workflow turning one task into a finished result with minimal steps.
+  PEDAGOGICAL_ARCHETYPE: 11 - Streamlined process
+  SYNONYM_GUARD: Emphasize a short, orderly process with little waste; hardworking is sustained effort, not necessarily the fastest route.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show one worker at x=106..158 guiding a single document through a short three-stage flow at x=167..244: input tray, one compact processing step, and finished checked result. Keep the flow direct and uncluttered.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:efficient" data-archetype="streamlined-process">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="efficient-result" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="efficient-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="efficient-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="efficient-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="165" y="77" width="29" height="42" rx="2" fill="#EAE3D5" stroke="#64748B" stroke-width=".9"/><path d="M170 70 H189 V77 H170 Z" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M171 85 H187 M171 91 H185" stroke="#CBD5E1" stroke-width=".8"/><circle cx="211" cy="98" r="14" fill="#EEF4FA" stroke="#5479AC" stroke-width="1.2"/><path d="M211 88 L213 95 L221 95 L215 100 L217 108 L211 103 L205 108 L207 100 L201 95 L209 95 Z" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/><rect x="233" y="77" width="28" height="42" rx="2" fill="url(#efficient-result)" stroke="#547A56" stroke-width="1"/><path d="M238 104 L243 109 L255 93" fill="none" stroke="#547A56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M194 98 H197 M226 98 H230" stroke="#D99A2B" stroke-width="1.5"/><path d="M34 135 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#efficient-shadow)"><path d="M99 127 Q101 103 114 96 L115 86 Q111 82 113 74 Q121 66 132 69 Q141 72 139 83 L137 90 Q150 96 152 124 L149 136 H103 Z" fill="url(#efficient-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="128" cy="78" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M119 76 Q121 68 129 68 Q137 69 141 76 Q133 72 126 73 Z" fill="#3D342D"/><path d="M108 102 Q127 96 146 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M105 106 L129 111 M146 106 L161 101" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M129 111 L142 113 M161 101 L169 99" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M48 136 H256" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-details"><circle cx="70" cy="54" r="2" fill="#A8D4A2"/><circle cx="149" cy="61" r="2" fill="#8EB0DE"/><path d="M83 75 H105 M83 81 H100" stroke="#CBD5E1" stroke-width="1"/><path d="M170 123 H190 M238 123 H257" stroke="#DCE8D9" stroke-width=".9"/><path d="M153 72 L158 67 M198 72 L203 67" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="81" rx="102" ry="66" fill="url(#efficient-halo)" opacity=".15"/><path d="M164 78 H194 M233 78 H261" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

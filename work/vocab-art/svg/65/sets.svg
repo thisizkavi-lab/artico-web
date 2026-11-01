@@ -1,0 +1,50 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: sets
+ CONTEXTUAL_DEFINITION: The constructed scenery and backdrop pieces arranged for a stage production.
+ PEDAGOGICAL_ARCHETYPE: stage scenery flats being positioned
+ SYNONYM_GUARD: Show large scenic flats and a painted backdrop being moved into place; not handheld props or a set of objects.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Two stagehands position tall painted scenery flats on a theater stage, with a distant backdrop and floor-level braces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:sets" data-archetype="stage scenery flats being positioned">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 159H304V192H0Z" fill="#C8B89E"/><path d="M0 159H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M20 22H284V151H20Z" fill="#26384A"/><path d="M29 30H275V147H29Z" fill="#405663"/>
+  <path d="M42 39H262V133H42Z" fill="#E9DDC8"/>
+  <path d="M44 48Q92 28 145 49V131H44Z" fill="#798C72"/>
+  <path d="M44 80Q89 65 145 80V131H44Z" fill="#597D8B"/>
+  <path d="M45 109Q92 90 145 109V131H45Z" fill="#405663"/>
+  <path d="M43 132H264V144H43Z" fill="#D6A64C"/><path d="M35 144H269V152H35Z" fill="#8C725A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M50 43L98 34L101 128L51 132Z" fill="#D6A64C" stroke="#8F7752" stroke-width="1.3"/>
+  <path d="M59 51L92 45L94 120L59 124Z" fill="#B85E5A"/>
+  <path d="M63 114L76 87L87 114Z" fill="#798C72"/><path d="M62 78L75 58L91 78Z" fill="#E5C66F"/>
+  <path d="M201 43L249 34L252 128L202 132Z" fill="#D6A64C" stroke="#8F7752" stroke-width="1.3"/>
+  <path d="M210 51L243 45L245 120L210 124Z" fill="#597D8B"/>
+  <path d="M213 109L227 72L241 109Z" fill="#798C72"/><path d="M217 68L228 53L239 68Z" fill="#B85E5A"/>
+  <path d="M53 134L49 150m44-21 4 21m111-16-4 16m46-18 4 18" stroke="#8A745A" stroke-width="2" fill="none"/>
+  <path d="M25 37H279" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="160" cy="90" r="6" fill="#D29A78"/><path d="M153 97Q160 93 167 97L171 124H149Z" fill="#B85E5A"/>
+  <path d="M153 102L140 111m24-9 12 7" stroke="#D29A78" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M153 122L150 140m14-18 4 18" stroke="#26384A" stroke-width="2.5" fill="none"/>
+  <circle cx="136" cy="83" r="6" fill="#D29A78"/><path d="M129 90Q136 86 143 90L146 116H126Z" fill="#597D8B"/>
+  <path d="M131 96L119 103m24-7 8 4" stroke="#D29A78" stroke-width="2.3" fill="none"/>
+  <path d="M114 124L132 118" stroke="#8C725A" stroke-width="2.2" fill="none"/>
+  <path d="M102 41V133m98-92v92" stroke="#E6D6BB" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M104 47H144m-42 5v75m101-79h34m-34 5v76" stroke="#F3E7D1" stroke-width="1" fill="none"/>
+  <circle cx="57" cy="134" r="2" fill="#E8C76A"/><circle cx="246" cy="134" r="2" fill="#E8C76A"/>
+  <path d="M30 149H274" stroke="#F4E5CA" stroke-width="1.1" fill="none"/>
+  <path d="M145 49l5-8m7 8 5-8" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="105" ry="58" fill="#E7C66B" opacity=".09"/>
+  <path d="M101 30L124 105m109-75-36 76" stroke="#FFF1C7" stroke-width="1.2" opacity=".54" fill="none"/>
+  <path d="M43 132H262" stroke="#FFF6DF" stroke-width="1" opacity=".6" fill="none"/>
+ </g>
+</svg>

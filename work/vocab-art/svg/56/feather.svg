@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: feather / feathers (noun)
+  CONTEXTUAL_DEFINITION: A single bird feather with a central quill and fine branching barbs.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object in habitat
+  SYNONYM_GUARD: Show a detached vane with a visible central shaft and many paired barbs; do not show a whole wing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place one large feather diagonally from x=84 y=147 to x=218 y=46; narrow pointed tip, broad soft vane, curved quill and fine paired barbs; faint bird outline and quiet ground.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:feather / feathers" data-archetype="single-feather">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#6F91A4;--c-secondary:#49697C;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="feather-sky" x2="0" y2="1"><stop stop-color="#DCEAF1"/><stop offset="1" stop-color="#F8F2E7"/></linearGradient>
+  <linearGradient id="feather-vane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8C5D2"/><stop offset=".5" stop-color="#6F9BB0"/><stop offset="1" stop-color="#4E7087"/></linearGradient>
+  <radialGradient id="feather-glow"><stop stop-color="#FFFFFF" stop-opacity=".4"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  <filter id="feather-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#feather-sky)"/><circle cx="76" cy="46" r="37" fill="url(#feather-glow)"/><path d="M0 136Q79 125 153 137T304 130V192H0Z" fill="#DFE6D9"/><path d="M0 158Q86 147 157 159T304 152V192H0Z" fill="#CAD7C2"/><circle cx="248" cy="43" r="21" fill="#F2D891" opacity=".45"/></g>
+ <g id="layer-context"><path d="M29 151Q103 145 170 151T279 146" fill="none" stroke="#7D936F" stroke-width="2"/><path d="M42 150l-4-11m9 11 5-9m204 9 5-12" fill="none" stroke="#819671" stroke-width="1.5"/><path d="M48 141q18-2 30 0m146 1q20-3 33 0" fill="none" stroke="#E0EADB" stroke-width="1.2"/><ellipse cx="148" cy="154" rx="58" ry="4" fill="#67765F" opacity=".1"/></g>
+ <g id="layer-focal" filter="url(#feather-shadow)"><path d="M216 43Q226 58 216 77Q204 101 183 118Q157 138 92 153Q106 129 123 104Q142 76 172 58Q195 45 216 43Z" fill="url(#feather-vane)" stroke="#496A7D" stroke-width="1.5"/><path d="M210 51Q199 68 180 84Q151 109 101 145Q117 117 138 91Q170 61 210 51Z" fill="#93B6C7" opacity=".72"/><path d="M215 48Q199 76 175 98Q143 127 95 151" fill="none" stroke="#E9F1EE" stroke-width="3.2" stroke-linecap="round"/><path d="M202 61L177 57m21 13-32-5m24 17-39-8m29 22-42-10m29 23-39-10m25 22-37-9m21 19-31-7m56-55 9-25m-20 37 9-28m-21 42 8-31m-20 47 7-31m-19 47 6-30m-20 43 5-28m-19 39 5-25" fill="none" stroke="#D6E7EA" stroke-width="1.3" stroke-linecap="round"/><path d="M92 153l-9 13" fill="none" stroke="#E6D3B3" stroke-width="2.4" stroke-linecap="round"/><path d="M85 164q-4 4-7 6" fill="none" stroke="#D6D3C7" stroke-width="1.3"/></g>
+ <g id="layer-details"><path d="M188 72l22-16" fill="none" stroke="#D6E7EA" stroke-width="1.3" stroke-linecap="round"/><path d="M175 85l24-18" fill="none" stroke="#D6E7EA" stroke-width="1.3" stroke-linecap="round"/><path d="M160 99l24-18" fill="none" stroke="#D6E7EA" stroke-width="1.3" stroke-linecap="round"/><path d="M146 112l24-18" fill="none" stroke="#D6E7EA" stroke-width="1.3" stroke-linecap="round"/><circle cx="237" cy="81" r="1.2" fill="#FFFFFF"/><circle cx="76" cy="125" r="1.3" fill="#FFFFFF"/><path d="M44 152l-4-7m227 5 5-8" fill="none" stroke="#83956F" stroke-width="1.3"/></g>
+ <g id="layer-lighting"><path d="M191 63q12-10 25-11m-49 30q9-10 18-14" fill="none" stroke="#F5F8EE" stroke-width="1.6" opacity=".85" stroke-linecap="round"/><ellipse cx="161" cy="99" rx="62" ry="47" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

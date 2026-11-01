@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: tiring (Adjective)
+  CONTEXTUAL_DEFINITION: Requiring enough effort to make someone tired, shown by a person slowly carrying groceries upstairs.
+  PEDAGOGICAL_ARCHETYPE: 2 (Physical effort with a visible fatigue cue)
+  SYNONYM_GUARD: Slumped shoulders, heavy bags and sweat after climbing steps show physical exhaustion, not boredom.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Apartment stairwell with broad steps.
+    - Context_Layer: Shopper leans forward under a heavy load.
+    - Focal_Layer: Two full grocery bags, bent knees and stair edges.
+    - Details_Layer: Sweat drops and a slow-motion foot drag.
+    - Lighting_Layer: Soft indoor light on the landing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:tiring" data-archetype="action-tool">
+  <defs><linearGradient id="hall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hall)"/><path d="M0 159 L90 159 L90 143 L145 143 L145 126 L202 126 L202 109 L304 109 L304 192 L0 192Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><path d="M0 159 L90 159 M90 143 L145 143 M145 126 L202 126 M202 109 L304 109" stroke="#FFFFFF" stroke-width="3"/><ellipse cx="153" cy="169" rx="112" ry="7" fill="#AEBBC9"/></g>
+  <g id="layer-context"><path d="M113 151 Q114 123 139 119 Q163 124 165 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M132 122 L127 109 L148 105 L153 123" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="135" cy="88" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.1"/><path d="M116 87 Q117 66 136 68 Q154 69 154 88 Q145 78 134 79 Q126 84 116 87Z" fill="#27364B"/><path d="M125 89 Q129 86 132 89 M138 88 Q142 85 146 88" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M127 100 Q135 96 144 100" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/><path d="M118 121 L107 131 M159 125 L172 133" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M116 148 L105 158 M154 148 L168 153" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M102 159 L117 159 M162 155 L176 157" stroke="#27364B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M85 89 Q98 82 111 90 L118 118 Q102 124 90 116Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 88 Q98 75 105 88 M90 95 L113 94" fill="none" stroke="#8D552E" stroke-width="2.2"/><path d="M164 94 Q177 85 190 92 L197 120 Q181 126 169 119Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/><path d="M170 91 Q177 78 184 91 M170 99 L192 97" fill="none" stroke="#527748" stroke-width="2.2"/><path d="M110 71 Q117 64 124 71 M151 69 Q158 62 165 69" fill="none" stroke="#8B5CA8" stroke-width="2.4" stroke-linecap="round"/><path d="M177 144 Q188 140 198 144 L204 150 L184 152Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M148 67 Q154 60 160 67 M113 76 L118 70 M158 74 L164 68" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><circle cx="149" cy="104" r="3.2" fill="#8EB0DE"/><circle cx="158" cy="110" r="2.6" fill="#8EB0DE"/><path d="M81 129 L88 125 M203 97 L209 93" stroke="#64748B" stroke-width="2" stroke-linecap="round"/><path d="M71 71 L76 61 L81 71 L91 76 L81 81 L76 91 L71 81 L61 76Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M118 72 Q132 66 145 72 M89 92 Q101 88 112 92" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

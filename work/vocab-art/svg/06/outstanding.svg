@@ -1,0 +1,61 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: outstanding (Adjective)
+  CONTEXTUAL_DEFINITION: Exceptionally noticeable and singled out from similar things, shown by one award-winning sculpture in a gallery.
+  PEDAGOGICAL_ARCHETYPE: 5 (One focal object distinguished from muted comparators)
+  SYNONYM_GUARD: One vivid, unusually crafted vase is illuminated and receives a rosette while ordinary vases recede into the background.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale gallery wall with a low display plinth.
+    - Context_Layer: Visitors pause to regard the standout sculpture.
+    - Focal_Layer: Tall cobalt vase with a sculpted silhouette, rosette and soft halo.
+    - Details_Layer: Muted companion vases, glaze highlights, rosette ribbons.
+    - Lighting_Layer: Narrow spotlight from upper-left.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:outstanding" data-archetype="contrast-reference">
+  <defs>
+    <linearGradient id="gallery" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#F2C14E" stop-opacity="0.5"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <linearGradient id="glaze" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8EB0DE"/><stop offset="0.52" stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#gallery)"/>
+    <path d="M0 143 Q152 138 304 144 L304 192 L0 192Z" fill="#EAE3D5"/>
+    <rect x="34" y="31" width="236" height="90" rx="12" fill="#F7F9FC" stroke="#D8E0E8" stroke-width="1.5"/>
+    <ellipse cx="152" cy="112" rx="83" ry="65" fill="url(#halo)"/>
+  </g>
+  <g id="layer-context">
+    <path d="M26 151 Q29 128 45 126 Q62 128 65 151Z" fill="#7B8A9E" stroke="#64748B" stroke-width="2"/>
+    <circle cx="45" cy="109" r="15" fill="#D89A6C" stroke="#64748B" stroke-width="1.7"/>
+    <path d="M30 108 Q31 91 47 93 Q61 94 60 109 Q51 100 44 101Z" fill="#64748B"/>
+    <path d="M39 111 Q42 107 45 111 M49 111 Q52 107 55 111" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M242 151 Q245 128 261 126 Q278 128 281 151Z" fill="#7B8A9E" stroke="#64748B" stroke-width="2"/>
+    <circle cx="261" cy="109" r="15" fill="#F5BFA3" stroke="#64748B" stroke-width="1.7"/>
+    <path d="M246 108 Q247 91 263 93 Q277 94 276 109 Q267 100 260 101Z" fill="#64748B"/>
+    <path d="M254 111 Q257 107 260 111 M264 111 Q267 107 270 111" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M55 129 Q72 121 88 115 M250 129 Q231 119 218 115" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="layer-focal">
+    <rect x="72" y="137" width="160" height="18" rx="5" fill="#B7C5D3" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M86 155 L83 163 M218 155 L221 163" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M133 129 C137 119 139 108 138 97 C137 86 125 79 127 66 C129 53 143 50 151 50 C159 50 173 53 175 66 C177 79 164 86 164 97 C163 108 166 119 170 129 Q153 137 133 129Z" fill="url(#glaze)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+    <path d="M142 54 Q152 48 162 54" fill="none" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M139 68 C143 75 142 82 137 89 M163 68 C159 76 161 83 166 89" fill="none" stroke="#3D5F91" stroke-width="2.2" opacity="0.8"/>
+    <path d="M138 104 Q153 111 165 104" fill="none" stroke="#8EB0DE" stroke-width="2" opacity="0.9"/>
+    <path d="M179 71 Q188 57 201 64 Q207 73 197 81 L188 88 L178 82Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.7"/>
+    <path d="M183 80 L178 101 M194 80 L199 99" stroke="#CE3D4E" stroke-width="2.5"/>
+  </g>
+  <g id="layer-details">
+    <path d="M58 130 Q58 119 67 117 Q78 117 79 128 Q80 138 69 140 Q60 138 58 130Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M76 137 Q76 127 85 126 Q94 127 95 136 Q95 145 85 146 Q78 145 76 137Z" fill="#D7DEE5" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M210 133 Q210 121 220 120 Q230 121 230 132 Q231 142 220 143 Q212 142 210 133Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M225 139 Q225 129 234 128 Q244 129 244 138 Q245 147 234 148 Q227 147 225 139Z" fill="#D7DEE5" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M146 67 Q151 62 156 67 M141 75 Q146 71 150 75" fill="none" stroke="#E6F1FB" stroke-width="2.3" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="188" cy="68" r="3.4" fill="#FFF3C7"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M116 39 Q141 25 162 32 M183 38 L200 29" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M118 132 L140 126 M166 127 L185 132" fill="none" stroke="#F2C14E" stroke-width="2.5" opacity="0.72"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

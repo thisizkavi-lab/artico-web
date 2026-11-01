@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: career summary
+  CONTEXTUAL_DEFINITION: A short overview of a candidate's professional background and strongest qualifications.
+  PEDAGOGICAL_ART_DIRECTOR: Show a concise top-level profile page that compresses a longer work history into a few highlights.
+  PEDAGOGICAL_ARCHETYPE: 5 - Concise profile document
+  SYNONYM_GUARD: Keep this shorter and more overview-like than a full résumé, personal statement, or cover letter.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a one-page profile sheet at x=91..210, y=35..139. Place a small candidate portrait at the top, then exactly three short gold/blue highlight bars and a compact work-history timeline beneath; leave broad whitespace so the summary reads concise.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:career summary" data-archetype="concise-career-profile">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="summary-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="summary-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="summary-halo"><stop stop-color="#FFF1B9" stop-opacity=".73"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="summary-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="29" y="25" width="246" height="111" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M31 133 H273 V145 H31 Z" fill="url(#summary-desk)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M45 145 V155 M259 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#summary-shadow)"><rect x="89" y="32" width="126" height="103" rx="3" fill="url(#summary-paper)" stroke="#1E2A3B" stroke-width="1.5"/><rect x="101" y="43" width="28" height="27" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1"/><circle cx="115" cy="52" r="5" fill="#D89A6C"/><path d="M107 66 Q108 57 115 57 Q122 57 123 66 Z" fill="#5479AC"/><path d="M138 46 H200 M138 52 H192 M138 58 H186" stroke="#94A3B8" stroke-width="1"/><rect x="100" y="77" width="102" height="15" rx="3" fill="#F7E8BF" stroke="#D99A2B" stroke-width=".9"/><circle cx="109" cy="84.5" r="2.6" fill="#F2C14E"/><path d="M117 83 H191 M117 87 H182" stroke="#64748B" stroke-width=".9"/><rect x="100" y="97" width="102" height="15" rx="3" fill="#DCECFB" stroke="#8EB0DE" stroke-width=".9"/><circle cx="109" cy="104.5" r="2.6" fill="#8EB0DE"/><path d="M117 103 H191 M117 107 H182" stroke="#64748B" stroke-width=".9"/><path d="M103 121 H132 M142 121 H171 M181 121 H201" stroke="#A8D4A2" stroke-width="3" stroke-linecap="round"/><circle cx="103" cy="121" r="3" fill="#547A56"/><circle cx="142" cy="121" r="3" fill="#547A56"/><circle cx="181" cy="121" r="3" fill="#547A56"/></g>
+  <g id="layer-details"><path d="M107 73 H197" stroke="#FFFFFF" stroke-width="1"/><circle cx="201" cy="43" r="4" fill="#A8D4A2"/><path d="M198 43 L200 45 L204 40" fill="none" stroke="#547A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M81 53 L86 48 M218 57 L223 52" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/><path d="M96 131 H209" stroke="#CBD5E1" stroke-width=".9"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="85" rx="91" ry="66" fill="url(#summary-halo)" opacity=".22"/><path d="M93 36 H211" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

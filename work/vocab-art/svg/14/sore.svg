@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: sore (Adjective)
+  CONTEXTUAL_DEFINITION: A part of the body is tender and painful when touched.
+  PEDAGOGICAL_ARCHETYPE: 3 — Gentle symptom close-up
+  SYNONYM_GUARD: Show someone guarding a tender spot with a careful hand, not a visible cut.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person gently holding one shoulder close to the body.
+    - Context_Layer: Head, neck, and shirt remain calm and muted.
+    - Focal_Layer: Soft warm circle marks tenderness under the hand.
+    - Details_Layer: A small sympathetic expression conveys discomfort.
+    - Lighting_Layer: One warm halo localizes the ache.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:sore" data-archetype="symptom-closeup">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="176" rx="97" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M72 178Q78 145 107 137H197Q225 145 231 178Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M126 116L126 146H179L177 116Z" fill="#E2B99B" stroke="#64748B" stroke-width="2"/><path d="M103 77Q100 39 130 24Q159 8 188 28Q211 46 202 89L190 119Q175 141 150 138Q123 136 109 117Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M103 71Q101 38 130 21Q161 4 190 27Q211 43 202 72L188 58Q163 67 144 51Q120 67 103 71Z" fill="#687B85" stroke="#1E2A3B" stroke-width="2.2"/><path d="M81 151Q95 140 112 143L141 161L127 178H76Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M224 151Q210 140 193 143L164 161L178 178H229Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="196" cy="147" rx="36" ry="29" fill="#FEF3C7" opacity=".5"/><path d="M183 128Q197 117 210 125Q221 132 216 145L205 161Q193 164 183 153Q177 142 183 128Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.3"/><path d="M181 130Q197 114 214 123Q227 132 221 148L207 165Q190 168 178 155Q172 143 181 130Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/><path d="M101 90Q112 84 123 90M164 90Q175 84 185 90" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M140 118Q152 113 163 118" fill="none" stroke="#8E5B4A" stroke-width="1.8"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M222 92L236 87M228 101L242 99" stroke="#4A72B2" stroke-width="1.8" stroke-linecap="round"/><path d="M183 143Q193 136 205 141" fill="none" stroke="#C88E74" stroke-width="1.4"/><path d="M232 136L241 131" stroke="#D97706" stroke-width="1.2" stroke-dasharray="3 3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="196" cy="146" rx="28" ry="22" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".42"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: exercise book (Noun)
+  CONTEXTUAL_DEFINITION: A school notebook in which students complete written exercises.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: A compact ruled notebook with practice marks and a pencil is the focus, distinguishing it from an essay sheet or printed textbook.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Classroom desk and pale window.
+    - Context_Layer: Closed textbook and pencil case.
+    - Focal_Layer: Open stitched exercise book with ruled pages and practice shapes.
+    - Details_Layer: Pencil, eraser, and checked worked lines without text.
+    - Lighting_Layer: Warm highlight along the notebook fold.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:exercise book" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="exercise-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="exercise-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#exercise-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H95V81H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V80M23 55H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="35" y="119" width="44" height="20" rx="3" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><path d="M42 124H73M42 130H69" stroke="#F9CED0" stroke-width="1.4"/><rect x="225" y="118" width="41" height="22" rx="4" fill="#5479AC" stroke="#315782" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#exercise-shadow)"><path d="M57 46L149 38V139L57 148Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2.1"/><path d="M149 38L246 46V148L149 139Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2.1"/><path d="M149 39V139" stroke="#D9A441" stroke-width="3"/><path d="M66 59L140 53M66 70L140 64M66 81L140 75M66 92L140 86M66 103L140 97M66 114L140 108M66 126L140 119" stroke="#88A9D0" stroke-width="1.3"/><path d="M157 59L235 64M157 70L234 75M157 82L233 86M157 94L233 97M157 106L233 109M157 119L233 121" stroke="#88A9D0" stroke-width="1.3"/><path d="M72 65L78 70L87 59M74 87L81 91L91 80M171 68L181 68M173 80L193 80M171 92L186 92" fill="none" stroke="#91A77C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M198 135L224 108" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/><path d="M198 135L204 133L200 127Z" fill="#D9A441" stroke="#8D6138" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M271 114L277 109L283 114L277 119Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><path d="M282 114L288 110V116L282 119Z" fill="#5479AC" stroke="#315782" stroke-width="1"/><path d="M62 48L149 40L240 48" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".88"/><path d="M136 147H160" stroke="#C9B99F" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="95" rx="123" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M57 46L149 38V139" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".72"/></g>
+</svg>

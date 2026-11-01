@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:green energy sources" data-archetype="wind-solar-and-hydro-installations-in-a-living-landscape">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; green energy sources. Present several low-impact energy sources—wind, sunlight, and flowing water—working in a healthy landscape; no text or logos. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="green-sky" x2="0" y2="1"><stop stop-color="#DCEFE7"/><stop offset="1" stop-color="#BED9CC"/></linearGradient>
+  <linearGradient id="green-hill" x2="0" y2="1"><stop stop-color="#8FAF78"/><stop offset="1" stop-color="#5F835E"/></linearGradient>
+  <linearGradient id="green-water" x2="0" y2="1"><stop stop-color="#79BBC1"/><stop offset="1" stop-color="#40808C"/></linearGradient>
+  <linearGradient id="green-panel" x2="1" y2="1"><stop stop-color="#77A6AD"/><stop offset="1" stop-color="#385D6B"/></linearGradient>
+  <filter id="green-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".16"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#green-sky)"/><circle cx="252" cy="36" r="14" fill="#EBC86F"/><path d="M0 116Q65 99 127 113T244 110Q278 101 304 109V192H0Z" fill="url(#green-hill)"/><path d="M0 158Q63 145 127 158T236 155Q274 146 304 154V192H0Z" fill="#688B60"/></g>
+<g id="layer-context">
+  <path d="M0 153Q57 143 109 154T208 152Q263 141 304 151V192H0Z" fill="url(#green-water)"/><path d="M0 158Q56 148 109 159T208 157Q261 147 304 156" fill="none" stroke="#E6F3E7" stroke-width="1.8"/>
+  <path d="M126 116L167 108 202 116 162 125Z" fill="url(#green-panel)" stroke="#385B66" stroke-width="1.5"/><path d="M138 114l25 7m-10-9-4 10m18-12-4 11" fill="none" stroke="#BBD9D7" stroke-width="1.2"/>
+  <path d="M147 125l-3 17m41-19 8 18m-47 0h48" fill="none" stroke="#65785D" stroke-width="1.8"/>
+  <path d="M20 150V102L27 94 34 102V150Z" fill="#F1F4E9" stroke="#67807A" stroke-width="1.3"/><path d="M27 95V62" fill="none" stroke="#71877F" stroke-width="2.5"/>
+</g>
+<g id="layer-focal" filter="url(#green-shadow)">
+  <circle cx="27" cy="62" r="4" fill="#F5F4E7" stroke="#59746D" stroke-width="1.3"/>
+  <path d="M27 62L11 47Q8 43 11 41Q14 39 17 43L27 59M27 62L43 45Q47 43 49 46Q50 49 47 52L28 64M27 62L29 84Q27 88 24 86L24 65Z" fill="#F2F5EB" stroke="#59746D" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M225 150Q237 143 247 150T278 149V160H225Z" fill="#779A84"/>
+  <circle cx="257" cy="139" r="14" fill="#BDD0C2" stroke="#52736D" stroke-width="1.7"/><circle cx="257" cy="139" r="4" fill="#6C9186" stroke="#476861" stroke-width="1.1"/>
+  <path d="M257 125v28m-14-14h28m-24-10 20 20m0-20-20 20" fill="none" stroke="#EAF4E8" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M188 151Q206 145 220 153" fill="none" stroke="#B5DCD0" stroke-width="1.7"/>
+</g>
+<g id="layer-details">
+  <path d="M54 127q13-6 25 0m65-22q13-6 24 0m104 17q11-6 20 0" fill="none" stroke="#E9F4E5" stroke-width="1.4"/>
+  <path d="M10 177q13-5 24 0m83 4q13-5 25 0m89-3q14-6 25 0" fill="none" stroke="#B4CA83" stroke-width="1.4"/>
+  <circle cx="68" cy="151" r="1.8" fill="#F3ECD0"/><circle cx="114" cy="167" r="1.6" fill="#F3ECD0"/><circle cx="270" cy="166" r="1.7" fill="#F3ECD0"/>
+  <path d="M90 146l-3-11m4 10 7-10m-7 9-9-6m138 9 4-11m-2 9 8-9" fill="none" stroke="#7FA36B" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M27 62l-15-18m15 18 20-16m-20 16 2 21" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M128 141l36-7 31 8" fill="none" stroke="#D6EBE0" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:downtown" data-archetype="dense-commercial-center-street-canyon">
+<!-- SELF_PROMPT: Lesson 75 urban life; downtown. Show a dense commercial core with tall buildings close around a busy central street and ground-level shops. No signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="downtown-sky" x2="0" y2="1"><stop stop-color="#C9DCE1"/><stop offset="1" stop-color="#E5E3D7"/></linearGradient>
+  <linearGradient id="downtown-tower" x2="0" y2="1"><stop stop-color="#617D8B"/><stop offset="1" stop-color="#394F5C"/></linearGradient>
+  <linearGradient id="downtown-road" x2="0" y2="1"><stop stop-color="#69737A"/><stop offset="1" stop-color="#424D54"/></linearGradient>
+  <linearGradient id="downtown-transit" x2="0" y2="1"><stop stop-color="#EBCB75"/><stop offset="1" stop-color="#C88B53"/></linearGradient>
+  <filter id="downtown-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#downtown-sky)"/><path d="M7 112V14h57v98Zm52 0V34l44-18 39 18v78Zm137 0V24l44-14 35 14v88Zm70 0V37h32v75Z" fill="url(#downtown-tower)"/><path d="M14 27h13v16H14Zm24 0h13v16H38Zm-24 27h13v16H14Zm24 0h13v16H38Zm47-7h13v16H85Zm23 0h13v16h-13Zm-23 27h13v16H85Zm23 0h13v16h-13Zm102-35h14v17h-14Zm25 0h14v17h-14Zm-25 28h14v17h-14Zm25 0h14v17h-14Zm39-16h13v17h-13Z" fill="#C2D1D0" opacity=".88"/><path d="M0 111H304V192H0Z" fill="#B8AE96"/></g>
+<g id="layer-context">
+  <path d="M0 128H304V192H0Z" fill="#827D6C"/><path d="M91 121L211 121 276 192H28Z" fill="url(#downtown-road)"/><path d="M145 127h4v13h-4m-2 12h4v13h-4m-4 12h4v11h-4" fill="#F1D992"/>
+  <path d="M7 119h77v24H7Zm219-2h72v27h-72Z" fill="#A46F55"/><path d="M13 124h18v12H13Zm28 0h18v12H41Zm28 0h11v12H69Zm163-1h16v16h-16Zm25 0h16v16h-16Zm25 0h12v16h-12Z" fill="#F0D9A7"/>
+  <path d="M14 110V85l11-17 12 17v25m224 0V81l10-19 12 19v29" fill="#6E875F"/><circle cx="25" cy="74" r="13" fill="#718B6C"/><circle cx="261" cy="70" r="15" fill="#6C886D"/>
+  <path d="M73 144H99m107 1h28" fill="none" stroke="#E7DDBD" stroke-width="2.2"/>
+</g>
+<g id="layer-focal" filter="url(#downtown-shadow)">
+  <path d="M108 106Q110 99 119 99H188Q197 99 199 108L204 131Q204 138 195 139H111Q103 138 104 131Z" fill="url(#downtown-transit)" stroke="#514E4A" stroke-width="1.6"/><path d="M116 105h24v15h-24Zm31 0h25v15h-25Zm32 0h13v15h-13Z" fill="#6A909B" stroke="#F4E6C5" stroke-width="1.2"/><path d="M108 124h91" fill="none" stroke="#765D4A" stroke-width="2"/><circle cx="124" cy="139" r="6" fill="#39474B"/><circle cx="183" cy="139" r="6" fill="#39474B"/><circle cx="124" cy="139" r="2.5" fill="#D5D8CC"/><circle cx="183" cy="139" r="2.5" fill="#D5D8CC"/>
+  <circle cx="76" cy="123" r="6" fill="#BD8868"/><path d="M70 121q1-9 7-9 7 1 7 9l-4-2h-8Z" fill="#453D39"/><path d="M69 131Q76 127 83 131L86 149 65 150Z" fill="#527B91" stroke="#405969" stroke-width="1.2"/><path d="M70 148l-4 14 7 1 4-13m4-2 4 14 7 0-5-15" fill="#3B4E58"/><path d="M69 132l-6 10 4 3 8-9m8-4 6 9-4 3-8-8" fill="#BD8868"/>
+  <circle cx="225" cy="124" r="6" fill="#D8A47D"/><path d="M219 121q1-9 7-9 6 1 7 9l-4-2h-8Z" fill="#5C4A43"/><path d="M218 132Q225 128 233 132L236 150 214 151Z" fill="#718B6C" stroke="#526B54" stroke-width="1.2"/><path d="M219 149l-4 13 7 1 4-13m4-1 4 13 7-1-5-13" fill="#46545A"/><path d="M218 133l-6 8 4 4 8-8m9-4 7 7-4 4-9-7" fill="#D8A47D"/>
+</g>
+<g id="layer-details">
+  <path d="M16 177q11-5 22 0m53 8q12-5 24 0m91-4q12-5 24 0m44-8q12-5 22 0" fill="none" stroke="#C6B589" stroke-width="1.4"/>
+  <path d="M25 101h20m38-42h19m112-9h20m32 2h18" fill="none" stroke="#E7D9A7" stroke-width="1.4"/>
+  <circle cx="55" cy="148" r="1.7" fill="#E9C66F"/><circle cx="246" cy="154" r="1.7" fill="#E9C66F"/><circle cx="91" cy="169" r="1.5" fill="#E9C66F"/>
+  <path d="M110 128h14m54 2h12" fill="none" stroke="#F5E6B9" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M7 115h65m162-3h64" fill="none" stroke="#F4E7C4" stroke-width="1.2" opacity=".75"/><path d="M59 18q24-13 41-7m118 4q19-10 33-5" fill="none" stroke="#E9F0E9" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

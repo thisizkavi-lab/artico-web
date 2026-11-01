@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: strange (Adjective)
+  CONTEXTUAL_DEFINITION: Unusual in a way that seems hard to explain, shown by an upside-down teapot pouring water upward.
+  PEDAGOGICAL_ARCHETYPE: 3 (Impossible occurrence plus a puzzled observer)
+  SYNONYM_GUARD: The liquid flows against gravity from an inverted floating teapot; this is more bizarre than the mild mismatch in odd.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet ivory room with a low side table.
+    - Context_Layer: Observer tilts their head and squints at the sight.
+    - Focal_Layer: Teapot floats upside down while a stream arcs upward.
+    - Details_Layer: Tea droplets suspended above the spout.
+    - Lighting_Layer: Cool glow around the floating objects.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:strange" data-archetype="contrast-reference">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 146 Q151 140 304 147 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="21" y="131" width="83" height="17" rx="4" fill="#B97840" stroke="#1E2A3B" stroke-width="1.8"/><path d="M29 148 L27 161 M95 148 L98 161" stroke="#8D552E" stroke-width="3"/><ellipse cx="165" cy="163" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M28 151 Q31 127 50 124 Q70 127 73 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="50" cy="108" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M33 107 Q34 89 51 90 Q67 91 67 108 Q58 99 49 100Z" fill="#27364B"/><path d="M40 108 Q44 105 47 108 M53 108 Q57 105 61 108" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M42 117 Q50 115 58 119" fill="none" stroke="#A34F47" stroke-width="1.9" stroke-linecap="round"/><path d="M57 90 L62 86 M64 98 L70 95" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M161 94 Q152 87 154 78 Q157 68 169 67 L192 70 Q203 72 203 83 L199 98 Q180 104 161 94Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.5"/><path d="M155 79 Q143 72 136 79 Q131 84 139 90 L158 89" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M170 68 L169 58 L188 61 L190 71" fill="#7B4A34" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="179" cy="58" rx="10" ry="3" fill="#7B4A34" stroke="#1E2A3B" stroke-width="1.4"/><path d="M151 85 C144 69 158 59 160 47 C162 38 155 31 151 26" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M151 85 C144 69 158 59 160 47 C162 38 155 31 151 26" fill="none" stroke="#DCEAF4" stroke-width="3.1" stroke-linecap="round"/><path d="M151 27 Q146 19 151 15 Q156 20 151 27Z M160 42 Q155 35 160 31 Q165 36 160 42Z M153 59 Q148 53 153 49 Q158 54 153 59Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M206 83 Q220 86 220 97 Q219 109 205 111" fill="none" stroke="#8B5CA8" stroke-width="3.2" stroke-linecap="round"/><path d="M217 91 L225 84 M220 98 L229 98 M216 105 L224 111" stroke="#8B5CA8" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M104 73 L109 63 L114 73 L124 78 L114 83 L109 93 L104 83 L94 78Z" fill="#F2C14E"/><path d="M238 61 L243 51 L248 61 L258 66 L248 71 L243 81 L238 71 L228 66Z" fill="#CBD5E1"/><circle cx="133" cy="47" r="3.2" fill="#5479AC"/><circle cx="143" cy="39" r="2.5" fill="#5479AC"/></g>
+  <g id="layer-lighting"><path d="M158 69 Q169 64 181 68 M148 82 Q154 77 158 79" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

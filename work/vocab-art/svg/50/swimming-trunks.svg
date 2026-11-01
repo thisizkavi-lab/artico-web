@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: swimming trunks (Noun)
+  CONTEXTUAL_DEFINITION: Men's short swimwear with an elastic waist, worn for swimming.
+  PEDAGOGICAL_ART_DIRECTOR: Show the garment by itself as a clear pair of short swim shorts, with an elastic waistband, drawstring, and leg openings.
+  PEDAGOGICAL_ARCHETYPE: 1 - Clothing object
+  SYNONYM_GUARD: These are shorts laid out as clothing, not bare legs or a swimmer in a pool.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Front-facing turquoise swim trunks laid on the sand with gathered waistband, drawstring knot, two hems, and small wave print.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:swimming trunks" data-archetype="swimming-trunks-garment">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="st-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="st-cloth" x2="1" y2="1"><stop stop-color="#65B8B7"/><stop offset="1" stop-color="#347C91"/></linearGradient><linearGradient id="st-sand" x2="0" y2="1"><stop stop-color="#F1DDAA"/><stop offset="1" stop-color="#C9A267"/></linearGradient><filter id="st-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#st-sky)"/><path d="M0 102Q77 90 153 102T304 97V132H0Z" fill="#76BFC0"/><path d="M0 130H304V192H0Z" fill="url(#st-sand)"/></g>
+ <g id="layer-context"><circle cx="251" cy="39" r="15" fill="#EBC86F" opacity=".84"/><path d="M0 118Q75 108 151 118T304 114" fill="none" stroke="#DDF2EA" stroke-width="1.8"/><path d="M20 173H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="151" cy="160" rx="75" ry="6" fill="#8A6C43" opacity=".15"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#st-shadow)">
+  <path d="M80 58Q151 68 224 58L213 117Q207 146 177 151L153 125L141 151Q105 150 96 127Z" fill="url(#st-cloth)" stroke="#315F73" stroke-width="2"/>
+  <path d="M80 58Q151 67 224 58L221 76Q151 86 83 76Z" fill="#2F6F85" stroke="#315F73" stroke-width="1.4"/><path d="M87 66Q151 75 218 66m-132 5q66 9 129 0m-129 0v5m13-4v5m13-4v5m13-4v5m13-4v5m13-4v5m13-4v5m13-4v5m13-4v5m13-4v5" fill="none" stroke="#C9E7DC" stroke-width="1.2"/>
+  <path d="M148 77L145 91L151 96L157 91L154 77" fill="none" stroke="#F8EBD0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M145 91L139 103M157 91L164 103" fill="none" stroke="#F8EBD0" stroke-width="1.7" stroke-linecap="round"/><circle cx="151" cy="91" r="2.6" fill="#F8EBD0"/><circle cx="139" cy="103" r="1.4" fill="#FFF8E7"/><circle cx="164" cy="103" r="1.4" fill="#FFF8E7"/>
+  <path d="M98 127Q118 137 141 136M165 136Q188 139 210 125" fill="none" stroke="#D4F0E3" stroke-width="2.2"/><path d="M110 92q9-6 18 0m-8 12q9-6 18 0m23-8q9-6 18 0m-6 16q9-6 18 0m-58 9q9-6 18 0" fill="none" stroke="#F3E9C5" stroke-width="1.6" stroke-linecap="round"/><path d="M102 132l-2 8m107-9 2 8" fill="none" stroke="#F4EAD3" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details"><path d="M91 80l-5 42m126-43-7 41m-70 8 15 15m9-15 13 16" fill="none" stroke="#B5E0D4" stroke-width="1.2"/><circle cx="251" cy="39" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M115 111q7 3 14 0m42 1q7 3 14 0" fill="none" stroke="#E5D69F" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M82 60q67 10 138-1m-122 17 25 3m45 0 34-4" fill="none" stroke="#D3F1E7" stroke-width="1.3" opacity=".7"/><circle cx="151" cy="91" r="1.1" fill="#FFF8E7"/><circle cx="251" cy="39" r="1.2" fill="#FFF8E7"/></g>
+</svg>

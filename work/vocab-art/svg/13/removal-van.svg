@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: removal van (Noun phrase)
+  CONTEXTUAL_DEFINITION: An enclosed van used to carry furniture and possessions during a move.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero vehicle with compact enclosed body
+  SYNONYM_GUARD: Draw a smaller rounded van with an integrated front cab, unlike a larger cab-over box truck.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Residential curb and garden edge.
+    - Context_Layer: Open rear doors reveal neatly stacked household belongings.
+    - Focal_Layer: Compact high-roof cargo van with enclosed body and sloping front.
+    - Details_Layer: Rear doors, bumper, two wheels, and small side window.
+    - Lighting_Layer: Highlights trace the curved roof and front hood.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:removal van" data-archetype="hero-vehicle">
+  <defs><linearGradient id="van" x2="0" y2="1"><stop stop-color="#F3ECE1"/><stop offset="1" stop-color="#C9D7E1"/></linearGradient><linearGradient id="front" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2F7"/><path d="M0 143H304V192H0Z" fill="#D8C5A8"/><path d="M0 159H304" stroke="#8A5A35" stroke-width="2"/><path d="M24 97H69V142H24Z" fill="#F0D8B3" stroke="#94A3B8" stroke-width="1.4"/><path d="M20 98L46 79L72 98" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.4"/><ellipse cx="152" cy="163" rx="114" ry="8" fill="#827765" opacity=".28"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M16 143H287" stroke="#F3ECE1" stroke-width="1.2"/><path d="M27 151V147M278 151V147" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M32 88Q32 74 47 74H204Q215 74 220 87L237 111V145H32Z" fill="url(#van)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="van-clip"><path d="M32 88Q32 74 47 74H204Q215 74 220 87L237 111V145H32Z"/></clipPath><g clip-path="url(#van-clip)"><path d="M35 80H216V95H35Z" fill="#FFFFFF" opacity=".7"/><path d="M33 127H237V145H33Z" fill="#B8C9D7"/></g><path d="M32 88Q32 74 47 74H204Q215 74 220 87L237 111V145H32Z" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M35 87Q36 80 46 80H64V111H35Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.7"/><path d="M43 83H59V107H43Z" fill="#EAF2F7"/><path d="M73 81H185V140H73Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="1.7"/><path d="M80 88H178V136H80Z" fill="#F7F5EE"/><path d="M80 88H126V136H80Z" fill="#CBD5E1"/><path d="M130 96L150 91L168 101V120H130Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M167 99L181 95L191 104V120H167Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M194 114H234V140H194Z" fill="url(#front)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M218 88L237 111V117H216Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M220 96L232 111H219Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.3"/><path d="M32 140H239V148H32Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="77" cy="148" r="13" fill="#344254" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="77" cy="148" r="5.5" fill="#CBD5E1"/><circle cx="205" cy="148" r="13" fill="#344254" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="205" cy="148" r="5.5" fill="#CBD5E1"/><path d="M238 127H246V139H238Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M48 77H194" stroke="#FFFFFF" stroke-width="1.4"/><path d="M76 87V137M183 86V138" stroke="#94A3B8" stroke-width="1.1"/><path d="M129 96H164" stroke="#AFC1D4" stroke-width="1.1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M41 72Q61 66 78 73" fill="none" stroke="#F2C14E" stroke-width="1.5"/><ellipse cx="143" cy="158" rx="100" ry="4" fill="#807564" opacity=".18"/></g>
+</svg>

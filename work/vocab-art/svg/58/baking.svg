@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: baking (noun/gerund)
+  CONTEXTUAL_DEFINITION: The enjoyable activity of preparing dough and mixing ingredients for baked food.
+  PEDAGOGICAL_ARCHETYPE: 4 - Activity shown through hands, tools, and material
+  SYNONYM_GUARD: Show dough being mixed or rolled before it goes into the oven; distinguish the activity from the already-baking muffins in the bake card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: At a warm home counter, hands roll pastry on a floured board beside a mixing bowl, whisk, flour jar, and tray of shaped dough portions.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:baking" data-archetype="hands-prepare-dough-at-home-counter">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="baking-room" x2="0" y2="1"><stop stop-color="#F1F1E9"/><stop offset="1" stop-color="#E2DDCF"/></linearGradient>
+  <linearGradient id="baking-bowl" x2="0" y2="1"><stop stop-color="#D6E3DC"/><stop offset="1" stop-color="#8BA9A2"/></linearGradient>
+  <filter id="baking-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#baking-room)"/><path d="M0 142H304V192H0Z" fill="#C79E70"/><path d="M0 142H304" stroke="#8E6B4B" stroke-width="2" fill="none"/><rect x="22" y="25" width="54" height="44" rx="3" fill="#C3D5CD" stroke="#70867B" stroke-width="2"/><path d="M49 26v42M23 47h52" stroke="#F6F1E6" stroke-width="2.5" fill="none"/></g>
+ <g id="layer-context"><path d="M247 142V78q0-10 10-10h24q9 0 9 10v64" fill="#7A6755" stroke="#5B5147" stroke-width="1.5"/><path d="M255 84h36v44h-36z" fill="#514B45"/><path d="M259 89h28v34h-28z" fill="#A65C46"/><circle cx="282" cy="76" r="2" fill="#E8B866"/><circle cx="55" cy="112" r="2" fill="#FFF3D7"/><circle cx="64" cy="104" r="1.3" fill="#FFF3D7"/><ellipse cx="153" cy="146" rx="95" ry="5" fill="#74553A" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#baking-shadow)">
+  <path d="M89 98Q102 82 119 89L133 101L130 122L103 128L85 116Z" fill="#728D83" stroke="#405B61" stroke-width="1.4"/><circle cx="105" cy="72" r="13" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M93 72q0-14 13-15q12 1 13 13l-6-5-13 1Z" fill="#51423C"/><path d="M100 75h1m8 0h1" stroke="#263C45" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M99 81q5 4 10 0" fill="none" stroke="#91594B" stroke-width="1.1"/>
+  <path d="M96 98Q81 108 71 119L68 131Q73 135 78 129L92 116L109 108" fill="#D79D79" stroke="#744E45" stroke-width="1.2" stroke-linejoin="round"/><path d="M116 99Q136 104 154 112L164 122Q162 128 155 124L141 117L123 112" fill="#D79D79" stroke="#744E45" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M43 131H262V142H43Z" fill="#B88658" stroke="#75563D" stroke-width="1.2"/><path d="M51 142v13m203-13v13" stroke="#75563D" stroke-width="2.5" fill="none"/>
+  <ellipse cx="196" cy="121" rx="25" ry="8" fill="#788F89" stroke="#506A69" stroke-width="1.3"/><path d="M171 119Q174 139 196 140Q219 138 221 119" fill="url(#baking-bowl)" stroke="#506A69" stroke-width="1.4"/><path d="M174 121Q196 126 218 121" fill="none" stroke="#F8F1DF" stroke-width="1.3"/>
+  <path d="M173 116l18-28m-10 31 18-29m-25 20 22 3" fill="none" stroke="#805A3E" stroke-width="2" stroke-linecap="round"/><path d="M180 115q-4-3-3-8m8 10q-2-5 1-9m5 11q-1-5 3-9" fill="none" stroke="#CEDBD4" stroke-width="1.2"/>
+  <ellipse cx="137" cy="130" rx="30" ry="7" fill="#D7AF79" stroke="#967147" stroke-width="1.2"/><path d="M111 129q26-17 52 0" fill="#F2D7A8" stroke="#B48A57" stroke-width="1.2"/><path d="M119 126q17-5 35 0" fill="none" stroke="#FFF0D0" stroke-width="1.2"/>
+  <path d="M63 115Q93 109 118 118" fill="none" stroke="#8B6442" stroke-width="3" stroke-linecap="round"/><circle cx="62" cy="115" r="4" fill="#D5B486" stroke="#8B6442" stroke-width="1"/><circle cx="119" cy="118" r="4" fill="#D5B486" stroke="#8B6442" stroke-width="1"/><path d="M61 124q6-3 12 0m-8 4q5-2 9 0m92-15q10-10 19-7" fill="none" stroke="#F3E5C8" stroke-width="1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M157 108q5-5 10-3m-91-9q7-3 13 0" fill="none" stroke="#FFF2D8" stroke-width="1.2" stroke-linecap="round"/><circle cx="160" cy="95" r="1.5" fill="#FFF8E8"/><circle cx="165" cy="90" r="1" fill="#FFF8E8"/><circle cx="68" cy="92" r="1.5" fill="#FFF8E8"/><path d="M183 130q13 4 26 0" fill="none" stroke="#E3EEE7" stroke-width="1" opacity=".8"/><circle cx="130" cy="108" r="1.3" fill="#F9EAD1"/></g>
+ <g id="layer-lighting"><ellipse cx="189" cy="119" rx="55" ry="38" fill="#F3D88E" opacity=".1"/><path d="M175 116q10 3 20 2m-78-46q5-5 10-3" fill="none" stroke="#FFF9EA" stroke-width="1.5" opacity=".65" stroke-linecap="round"/></g>
+</svg>

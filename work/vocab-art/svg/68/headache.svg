@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: headache
+ CONTEXTUAL_DEFINITION: Pain in the head, often felt as pressure or throbbing around the temples.
+ PEDAGOGICAL_ARCHETYPE: person pressing both temples with mild headache pulses
+ SYNONYM_GUARD: Show head pain with temple pressure; keep light sensitivity and stronger one-sided cues for migraine.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A person closes their eyes and presses each temple with fingertips while two soft pulse rings mark a common headache.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:headache" data-archetype="head pain with temple pressure">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="91" ry="5" fill="#8C725A" opacity=".18"/><path d="M42 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M67 44H104V98H67Z" fill="#E4DDD1"/><path d="M73 50H98V92H73Z" fill="#A9B9B4"/>
+  <path d="M202 45H242V98H202Z" fill="#E5DDD0"/><path d="M209 52H235V91H209Z" fill="#C8B89E"/>
+ </g>
+ <g id="layer-context">
+  <path d="M75 147H228" stroke="#8C725A" stroke-width="1.3"/><circle cx="88" cy="147" r="2" fill="#D6A64C"/><circle cx="216" cy="147" r="2" fill="#B85E5A"/>
+  <path d="M52 112Q62 106 72 112V140H52Z" fill="#597D8B"/><path d="M230 111Q240 105 250 111V140H230Z" fill="#798C72"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="62" r="15" fill="#D29A78"/><path d="M136 61Q137 42 151 43Q167 44 166 62L158 51Q149 60 138 59Z" fill="#26384A"/>
+  <path d="M132 77Q151 67 170 77L178 125H124Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M136 82L126 72L136 62M166 82L176 72L166 62" stroke="#D29A78" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 123L126 146M174 123L177 146" stroke="#26384A" stroke-width="2.8"/>
+  <!-- palms rest against both temples -->
+  <path d="M136 68Q131 66 132 61L135 55Q138 53 140 57L140 62L144 65Q142 69 136 68Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M166 68Q171 66 170 61L167 55Q164 53 162 57L162 62L158 65Q160 69 166 68Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M142 68Q151 64 160 68" stroke="#654E43" stroke-width="1.2" fill="none"/>
+  <path d="M141 74Q151 78 161 74" stroke="#8F5F57" stroke-width="1.2" fill="none"/>
+  <path d="M145 85L151 91L157 85" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <ellipse cx="137" cy="64" rx="11" ry="16" fill="#D6A64C" opacity=".15"/><ellipse cx="165" cy="64" rx="11" ry="16" fill="#D6A64C" opacity=".15"/>
+  <path d="M123 50Q119 57 124 61M179 50Q183 57 178 61M121 72L127 72M175 72L181 72" stroke="#B85E5A" stroke-width="1.4" fill="none"/>
+  <path d="M136 58Q141 54 146 56M157 56Q162 54 166 58" stroke="#26384A" stroke-width="1.1"/>
+  <path d="M123 97L129 101M173 97L167 101" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="88" rx="89" ry="67" fill="#E7C66B" opacity=".07"/><path d="M72 35L90 52M235 35L217 52" stroke="#FFF1C7" stroke-width="1.1" opacity=".5"/>
+  <path d="M42 150H260" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

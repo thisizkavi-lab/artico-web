@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: hitchhike
+  CONTEXTUAL_DEFINITION: To ask passing drivers for a free lift by standing safely beside a road and signaling with a raised thumb.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler with thumb raised at a safe roadside pull-off as a car approaches on the road.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + route cue
+  SYNONYM_GUARD: Use an outstretched thumb and passing road vehicle; no rideshare phone or taxi markings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Safe verge along x=29..153, road across x=151..295 y=127..166; traveler at x=77..128 with raised thumb; unmarked car approaches from x=184..274, y=91..139.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:hitchhike" data-archetype="peak-moment-action-roadside">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="hitch-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91AEB5"/><stop offset="1" stop-color="#547988"/></linearGradient>
+    <linearGradient id="hitch-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D17F62"/><stop offset="1" stop-color="#A85648"/></linearGradient>
+    <radialGradient id="hitch-halo"><stop stop-color="#F3E2B9" stop-opacity=".58"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="hitch-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 130 Q75 117 150 130 V192 H0 Z" fill="#DDE7D7"/><path d="M151 122 H304 V192 H151 Z" fill="#737D83"/><path d="M151 122 H304" stroke="#1E2A3B" stroke-width="1.7"/><path d="M171 154 H294" stroke="#F8F4E9" stroke-width="2" stroke-dasharray="17 13"/><path d="M0 130 Q72 120 151 130" fill="none" stroke="#92A779" stroke-width="2"/><ellipse cx="151" cy="167" rx="142" ry="8" fill="#DDD4C3" opacity=".55"/></g>
+  <g id="layer-context"><circle cx="61" cy="45" r="15" fill="#F2C14E" opacity=".7"/><path d="M21 116 H132" stroke="#B9C7B1" stroke-width="1.2"/><path d="M36 98 Q57 91 77 98 M44 106 Q64 100 87 105" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/><path d="M151 135 H168 M147 142 H157" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <g id="layer-focal" filter="url(#hitch-shadow)"><path d="M185 118 L196 99 Q201 91 213 90 H249 Q261 92 268 105 L281 126 L279 139 H182 Z" fill="url(#hitch-car)" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M208 99 H229 V115 H198 Z M233 99 H249 Q258 102 262 115 H233 Z" fill="#DCEBF0" stroke="#1E2A3B" stroke-width="1.3"/><path d="M230 97 V135" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="207" cy="139" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="259" cy="139" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="207" cy="139" r="4.5" fill="#E7EDF3"/><circle cx="259" cy="139" r="4.5" fill="#E7EDF3"/><path d="M83 94 Q83 84 92 84 Q101 84 101 94 V121 H83 Z" fill="url(#hitch-coat)" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="92" cy="78" r="7" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M88 121 L83 151 M97 121 L107 150" stroke="#1E2A3B" stroke-width="4.2" stroke-linecap="round"/><path d="M84 96 L74 106 M99 95 L111 102" stroke="#DCA47D" stroke-width="4" stroke-linecap="round"/><path d="M101 94 L113 88 Q119 85 123 89 L127 95 L123 99 L118 94 L108 100" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round"/><path d="M117 90 L119 78 Q121 74 124 76 L126 89 L128 80 Q130 77 133 80 L132 95 Q131 103 123 103" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.7" stroke-linejoin="round"/><rect x="63" y="112" width="17" height="24" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M67 116 H76 M68 120 H75" stroke="#D6E4EB" stroke-width="1"/><path d="M147 76 H180 M151 84 H170" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M181 72 L186 76 L180 81" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M72 66 Q90 58 107 67" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/><path d="M211 104 H225 M237 103 H250" stroke="#FFFFFF" stroke-width="1.1"/><path d="M189 121 L198 118 M273 121 L281 124" stroke="#FEF3C7" stroke-width="1.5"/><path d="M55 147 H78 M111 151 H122" stroke="#A2AE95" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="88" rx="119" ry="75" fill="url(#hitch-halo)" opacity=".13"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M182 147 H281" stroke="#1E2A3B" stroke-width=".8" opacity=".5"/></g>
+</svg>

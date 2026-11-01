@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: mile
+  CONTEXTUAL_DEFINITION: An imperial unit used to measure a long distance along a route.
+  PEDAGOGICAL_ART_DIRECTOR: Show a long countryside road span between distant places, a roadside milestone, and a broad measuring bar with no numerals.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: This is a long route measurement in an imperial-distance context; do not use printed mile labels or numerals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A winding road crosses a broad countryside between distant homes and hills; two destination markers frame a long scale bar and a stone milestone stands by the road.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:mile" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="mile-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4ECD9"/><stop offset="1" stop-color="#BFD3B5"/></linearGradient>
+  <linearGradient id="mile-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#758595"/><stop offset="1" stop-color="#526476"/></linearGradient>
+  <linearGradient id="mile-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6E2D6"/><stop offset="1" stop-color="#AFAE9F"/></linearGradient>
+  <filter id="mile-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.4" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mile-land)"/><path d="M0 46L47 20L91 42L125 16L163 43L206 18L257 41L304 18V91H0Z" fill="#91AE8B"/><path d="M0 62L51 39L98 61L138 36L184 64L236 39L304 62V102H0Z" fill="#7C9D7B"/><path d="M21 105C45 77 72 78 92 102S132 131 154 100S198 71 219 100S263 133 285 104" fill="none" stroke="#EDEAE0" stroke-width="22" stroke-linecap="round"/><path d="M21 105C45 77 72 78 92 102S132 131 154 100S198 71 219 100S263 133 285 104" fill="none" stroke="url(#mile-road)" stroke-width="15" stroke-linecap="round"/><path d="M21 105C45 77 72 78 92 102S132 131 154 100S198 71 219 100S263 133 285 104" fill="none" stroke="#F8F5EA" stroke-width="1.6" stroke-dasharray="7 8"/><path d="M0 139Q58 127 110 140T217 137T304 143V192H0Z" fill="#A7C398"/></g>
+ <g id="layer-context"><rect x="26" y="48" width="32" height="23" rx="3" fill="#D6C09E" stroke="#766857" stroke-width="1.2"/><path d="M22 52L42 36L62 52Z" fill="#92745B" stroke="#1E2A3B" stroke-width="1.1"/><rect x="246" y="45" width="34" height="25" rx="3" fill="#B5C8CA" stroke="#60747D" stroke-width="1.2"/><path d="M242 49L263 32L284 49Z" fill="#697D85" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="67" cy="151" r="12" fill="#7FA87A" stroke="#486750" stroke-width="1.3"/><circle cx="235" cy="151" r="12" fill="#7FA87A" stroke="#486750" stroke-width="1.3"/><path d="M12 166H290" stroke="#89A781" stroke-width="1.3"/></g>
+ <g id="layer-focal" filter="url(#mile-shadow)"><path d="M40 86L51 117L40 112L29 117Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="40" cy="88" r="6" fill="#F2C14E" stroke="#8A663A" stroke-width="1.3"/><path d="M270 86L281 117L270 112L259 117Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="270" cy="88" r="6" fill="#78A0D8" stroke="#314E78" stroke-width="1.3"/><path d="M40 158V166H270V158" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M40 162H270" stroke="#4A72B2" stroke-width="9" stroke-linecap="round"/><path d="M40 153V171M270 153V171" stroke="#1E2A3B" stroke-width="2"/><path d="M155 156V168" stroke="#F2C14E" stroke-width="2.4"/><path d="M183 112L192 85H211L219 112Z" fill="url(#mile-stone)" stroke="#596B70" stroke-width="1.6"/><path d="M181 112H221V118H181Z" fill="#8C958E" stroke="#596B70" stroke-width="1.2"/><path d="M194 94H208" stroke="#F8F5EA" stroke-width="2"/></g>
+ <g id="layer-details"><circle cx="111" cy="58" r="8" fill="#7FA87A" stroke="#486750" stroke-width="1.2"/><circle cx="202" cy="55" r="9" fill="#7FA87A" stroke="#486750" stroke-width="1.2"/><path d="M90 143H118M192 146H221" stroke="#8CA980" stroke-width="1.4"/><circle cx="146" cy="69" r="2.5" fill="#F2C14E"/><circle cx="153" cy="133" r="2.5" fill="#F2C14E"/><path d="M19 19L45 9M257 14L285 25" stroke="#FFFFFF" stroke-width="1.3" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="98" rx="133" ry="56" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".4"/><path d="M23 104C48 80 72 82 91 104" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".65"/></g>
+</svg>

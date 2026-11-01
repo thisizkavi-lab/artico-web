@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: blender (Noun)
+  CONTEXTUAL_DEFINITION: An electric kitchen appliance that mixes ingredients in a tall jug with rotating blades.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a tall transparent lidded jug seated on a motor base, with visible fruit swirling inside.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale kitchen tile and counter.
+    - Context_Layer: Blender base and jug.
+    - Focal_Layer: Fruit pieces and blending whirl inside the clear jar.
+    - Details_Layer: Lid, handle, blade hub, and controls.
+    - Lighting_Layer: Cool glass reflection and warm fruit tones.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:blender" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 144 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 144 H304" stroke="#8A5A35" stroke-width="2"/><path d="M0 48 H304 M0 96 H304" stroke="#E1D8C8" stroke-width="1.2"/><ellipse cx="152" cy="167" rx="54" ry="7" fill="#BBAA92"/></g>
+  <g id="layer-context"><path d="M113 45 L120 128 Q121 136 130 137 H174 Q183 136 184 128 L191 45Z" fill="#DCECFB" fill-opacity="0.65" stroke="#1E2A3B" stroke-width="2.6"/><path d="M119 51 H185" stroke="#5479AC" stroke-width="4"/><path d="M120 70 H184 L180 124 H124Z" fill="#A8D2E5" fill-opacity="0.45"/><path d="M190 59 Q218 56 218 81 V105 Q218 112 209 112 H184" fill="none" stroke="#5479AC" stroke-width="5"/><path d="M103 137 H201 L193 156 H111Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M110 139 H194 L190 149 H114Z" fill="#AEBFC6"/><rect x="136" y="145" width="11" height="5" rx="2" fill="#5479AC"/><rect x="152" y="145" width="11" height="5" rx="2" fill="#CE7B55"/></g>
+  <g id="layer-focal"><path d="M132 108 Q142 93 151 105 Q159 117 169 99 Q176 90 181 100 L179 121 Q154 132 127 119Z" fill="#CE7B55" opacity="0.9"/><circle cx="140" cy="83" r="7" fill="#8FB987" stroke="#537D50" stroke-width="1.3"/><path d="M162 74 Q171 69 177 77 L171 87 H160Z" fill="#F2C14E" stroke="#A66A2E" stroke-width="1.2"/><path d="M138 128 H165 L151 119Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.5"/><path d="M151 118 L144 125 M151 118 L159 125" stroke="#DCE3E4" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M127 59 V99 M179 59 V92" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

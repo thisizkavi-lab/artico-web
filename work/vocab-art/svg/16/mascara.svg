@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: mascara (Noun)
+  CONTEXTUAL_DEFINITION: A cosmetic liquid brushed onto eyelashes to darken and define them.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object and applicator
+  SYNONYM_GUARD: The narrow spiral wand and lash-like bristles distinguish mascara from eyeliner.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper and shadow.
+    - Context_Layer: Soft lilac halo.
+    - Focal_Layer: Open mascara tube and upright brush wand.
+    - Details_Layer: Spiral bristles and glossy tube.
+    - Lighting_Layer: Bright highlight on cap.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:mascara" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="158" rx="99" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="153" cy="95" rx="112" ry="68" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M68 92H151V151Q150 158 142 158H77Q68 157 68 149Z" fill="#263447" stroke="#1E2A3B" stroke-width="2.7"/><path d="M74 108H145V149H74Z" fill="#475366"/>
+  <path d="M95 42H129V62H121V104H103V62H95Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M102 38H137V49H102Z" fill="#E3B95D" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M112 103L103 87L117 78L106 69L120 59" fill="none" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M108 92L100 89M112 88L124 82M107 81L98 77M115 75L127 70M110 68L102 64M117 63L127 57" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/>
+  <path d="M80 115H136" stroke="#8F9AAA" stroke-width="1.5"/><path d="M108 46V59" stroke="#FFF1B8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M165 62Q180 82 176 103" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

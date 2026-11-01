@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: sandals (Noun, plural)
+  CONTEXTUAL_DEFINITION: Open footwear held on the foot by straps.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Use broad instep and heel straps, not the toe-post Y straps of flip-flops.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and shadow.
+    - Context_Layer: Soft ground wash.
+    - Focal_Layer: Two open tan sandals at crossing angles.
+    - Details_Layer: Broad crossing straps and ankle loops.
+    - Lighting_Layer: Leather highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:sandals" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="155" rx="111" ry="20" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M28 145Q98 131 155 146Q215 162 276 143V177H28Z" fill="#F3ECE1"/><ellipse cx="151" cy="96" rx="119" ry="68" fill="#FEF3C7" opacity=".28"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g transform="rotate(-20 103 100)"><path d="M69 42Q105 32 133 53Q145 69 143 111Q141 145 106 151Q71 146 66 112Q62 70 69 42Z" fill="#C9A878" stroke="#1E2A3B" stroke-width="2.6"/><path d="M70 49Q102 40 130 57" fill="none" stroke="#E7D2B0" stroke-width="3"/></g>
+  <g transform="rotate(17 201 105)"><path d="M167 47Q201 37 229 56Q241 71 239 112Q236 146 202 151Q168 146 165 113Q162 73 167 47Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.6"/><path d="M170 54Q201 45 225 60" fill="none" stroke="#D4A17A" stroke-width="3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"><path d="M80 82Q102 104 127 80M82 93Q103 112 128 92M184 81Q204 102 225 79M184 94Q204 112 225 91"/></g>
+  <g fill="none" stroke="#D9A441" stroke-width="5.5" stroke-linecap="round"><path d="M80 82Q102 104 127 80M82 93Q103 112 128 92M184 81Q204 102 225 79M184 94Q204 112 225 91"/></g>
+  <path d="M84 69Q103 59 124 67M187 69Q205 59 225 68" fill="none" stroke="#805333" stroke-width="6" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M55 139Q151 163 248 138" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 5"/>
+</svg>

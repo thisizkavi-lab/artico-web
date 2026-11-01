@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: avenue
+  CONTEXTUAL_DEFINITION: A broad urban street, often lined with trees.
+  PEDAGOGICAL_ART_DIRECTOR: Use a wide straight city boulevard receding toward the horizon, with evenly spaced rows of mature trees and buildings along both sides.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make the boulevard wide and tree-lined; avoid a narrow rural road or private driveway.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perspective boulevard widens from x=100..204 near y=54 to x=23..281 at the lower edge; paired trees line both verges at y=82,119,157.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:avenue" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="avenue-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5F0F2"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient>
+    <linearGradient id="avenue-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#758598"/><stop offset="1" stop-color="#475A6F"/></linearGradient>
+    <radialGradient id="avenue-light"><stop stop-color="#FFF1BA" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="avenue-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#avenue-sky)"/><path d="M0 57H304V192H0Z" fill="#C7D9BE"/><path d="M100 54H204L281 192H23Z" fill="url(#avenue-road)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M110 56L46 192M194 56L259 192" stroke="#FAF8F3" stroke-width="2.5"/><path d="M152 58V190" stroke="#FAF8F3" stroke-width="1.7" stroke-dasharray="10 10" opacity=".75"/><ellipse cx="152" cy="54" rx="53" ry="32" fill="url(#avenue-light)"/></g>
+  <g id="layer-context"><path d="M8 46L19 31L32 46V67H8ZM42 41L55 24L69 42V67H42ZM237 42L251 23L267 42V67H237ZM273 45L286 28L298 45V67H273Z" fill="#D7BEA4" stroke="#6F665B" stroke-width="1.6"/><path d="M8 67H69M237 67H298" stroke="#8F9D84" stroke-width="3"/><path d="M29 69L11 69L6 83L30 83Z M77 67L61 68L53 84L78 84Z" fill="#947554" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="18" cy="73" r="14" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="65" cy="75" r="14" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M276 67L294 69L300 84L274 84Z M227 67L244 68L251 84L225 84Z" fill="#947554" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="286" cy="73" r="14" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="238" cy="75" r="14" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="8" cy="117" r="20" fill="#80A87B" stroke="#486750" stroke-width="1.7"/><circle cx="56" cy="122" r="19" fill="#80A87B" stroke="#486750" stroke-width="1.7"/><circle cx="295" cy="117" r="20" fill="#80A87B" stroke="#486750" stroke-width="1.7"/><circle cx="248" cy="122" r="19" fill="#80A87B" stroke="#486750" stroke-width="1.7"/><path d="M0 136H41M0 176H30M263 136H304M274 176H304" stroke="#D9E8D4" stroke-width="3"/></g>
+  <g id="layer-focal" filter="url(#avenue-shadow)"><path d="M142 73C143 65 148 61 153 61C158 61 163 65 164 73L167 83H139Z" fill="#C47B54" stroke="#1E2A3B" stroke-width="1.6"/><path d="M145 75H161L158 83H148Z" fill="#43596E" stroke="#1E2A3B" stroke-width="1"/><path d="M149 57L153 48L157 57" fill="#E7AD7D" stroke="#1E2A3B" stroke-width="1.2"/><path d="M140 58L153 51L165 58L169 67L136 67Z" fill="#608BB8" stroke="#1E2A3B" stroke-width="1.5"/><path d="M143 65L131 71L134 75L146 71M163 65L174 71L171 75L160 71" fill="#D7A47B" stroke="#1E2A3B" stroke-width="1.3" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M129 74Q152 81 177 74" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><path d="M97 93H120M184 93H207" stroke="#F5F2E9" stroke-width="1.6"/><path d="M79 131H103M201 131H225" stroke="#F5F2E9" stroke-width="1.7"/><path d="M58 171H88M216 171H246" stroke="#F5F2E9" stroke-width="2"/><path d="M20 61L27 64M279 61L287 64" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><path d="M103 55H201" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="152" cy="71" rx="22" ry="7" fill="#F7E1B6" opacity=".28"/><path d="M11 42L19 34L27 43M278 42L286 34L294 43" fill="none" stroke="#E7F1DD" stroke-width="1.3"/></g>
+</svg>

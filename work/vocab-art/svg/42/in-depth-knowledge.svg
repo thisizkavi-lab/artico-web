@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: in-depth knowledge
+  CONTEXTUAL_DEFINITION: Very thorough understanding of a subject or specialized area.
+  PEDAGOGICAL_ART_DIRECTOR: Show someone examining layered reference material closely, revealing detailed structure beneath the surface.
+  PEDAGOGICAL_ARCHETYPE: 6 - Depth / expertise
+  SYNONYM_GUARD: Use magnification and multiple layers to show depth of understanding, distinct from broad skills, practical experience, or formal education.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Stack three open technical reference books at x=73..221, y=104..136, with a layered cross-section diagram rising above them. Place a large magnifying glass over the smallest detailed layer at x=151..203, y=47..99; show the expert's attentive face to one side.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:in-depth knowledge" data-archetype="specialized-depth">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="depth-books" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <linearGradient id="depth-layer" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5F0E1"/><stop offset="1" stop-color="#A8D4A2"/></linearGradient>
+    <radialGradient id="depth-halo"><stop stop-color="#FFF1B9" stop-opacity=".78"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="depth-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="109" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M83 132 Q151 123 221 132 L216 142 Q151 148 88 142 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.2"/><path d="M77 122 Q151 113 227 122 L222 132 Q151 138 82 132 Z" fill="#E5F0E1" stroke="#547A56" stroke-width="1.2"/><path d="M72 112 Q151 103 232 112 L227 122 Q151 128 77 122 Z" fill="url(#depth-books)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M92 117 H214 M91 127 H209 M100 137 H203" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#depth-shadow)"><path d="M47 125 Q49 103 61 97 L62 88 Q58 84 60 76 Q68 67 78 70 Q87 73 84 84 L81 92 Q95 98 97 123 L94 133 H51 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="72" cy="79" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M64 77 Q66 69 73 69 Q81 70 84 77 Q77 73 70 74 Z" fill="#3D342D"/><circle cx="69" cy="80" r=".9" fill="#1E2A3B"/><circle cx="75" cy="80" r=".9" fill="#1E2A3B"/><circle cx="158" cy="72" r="27" fill="#FFFFFF" fill-opacity=".45" stroke="#5479AC" stroke-width="3"/><path d="M178 92 L199 114" stroke="#3D5F91" stroke-width="6" stroke-linecap="round"/><path d="M143 70 L151 62 L159 68 L167 58" fill="none" stroke="#547A56" stroke-width="1.4"/><circle cx="151" cy="62" r="2.1" fill="#F2C14E"/><circle cx="159" cy="68" r="2.1" fill="#8EB0DE"/><circle cx="167" cy="58" r="2.1" fill="#A8D4A2"/><path d="M144 78 H174 M144 83 H168" stroke="#64748B" stroke-width="1"/><path d="M131 49 H168 M131 55 H161" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M99 55 L105 49 M108 64 H115" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/><path d="M202 51 L208 45 M206 62 H214" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/><path d="M95 100 Q105 95 115 100" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="126" cy="94" r="2" fill="#F2C14E"/><circle cx="130" cy="103" r="1.7" fill="#8EB0DE"/></g>
+  <g id="layer-lighting"><ellipse cx="158" cy="80" rx="96" ry="65" fill="url(#depth-halo)" opacity=".22"/><path d="M130 46 H170" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

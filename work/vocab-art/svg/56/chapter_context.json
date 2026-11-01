@@ -1,0 +1,77 @@
+{
+  "chapter": 56,
+  "chapter_title": "Birds and bugs",
+  "domain_setting": "A calm outdoor natural-history setting that moves between woodland branches, open sky, marsh edge, meadow flowers, and leaf litter. Bird and insect cards share soft blue-green light, quiet earth surfaces, and small habitat cues rather than cages or labels.",
+  "ambient_palette": {
+    "sky": "mist blue fading to warm ivory",
+    "ground": "sage and muted meadow green",
+    "wood": "warm bark brown",
+    "bird_materials": "natural chestnut, charcoal, cream, and species-specific accents",
+    "insect_materials": "leaf green, ochre, amber, and restrained red",
+    "ink": "deep blue slate"
+  },
+  "recurring_scale_anchors": [
+    "A thin forked branch for perching birds, feathers, and beaks",
+    "A low marsh-waterline with a few reeds for water birds",
+    "A small leaf and flower pair for insects and their relative scale",
+    "A small pebble or grass tuft for ground birds and crawling creatures"
+  ],
+  "polysemy_resolution_table": {
+    "bird / birds": "A small wild songbird as a generic member of the bird group; distinguish it from the parrot card with restrained natural plumage and an ordinary straight beak.",
+    "chicken": "A young chick, following the lesson gloss that begins with chick/young bird; do not show cooked chicken or an adult hen.",
+    "crow (bird)": "The black corvid bird. The Japanese gloss mentions the Crow people, but the lesson group resolves the intended bird sense; do not show a rooster crowing.",
+    "dove": "A smaller, pale dove with a smooth rounded head and gentle build; separate it from the larger, darker pigeon card.",
+    "duck": "A wild mallard-type duck at a marsh edge, with a broad bill and male green head cue; not a domestic Pekin duck.",
+    "goose": "A long-necked goose in a marsh/grass setting, clearly larger and taller than the duck.",
+    "bug / bugs": "The broad everyday category of small crawling or flying creatures; show a varied tiny group without claiming every bug is taxonomically an insect.",
+    "insect / insects": "A clear six-legged insect with three body regions and antennae, as a taxonomic example distinct from the broader bug card.",
+    "fly": "The verb for a bird or insect moving through air, shown with a clear airborne trajectory; distinguish the action from the noun fly.",
+    "glide": "A bird moving smoothly through air with extended wings and little/no flapping, shown on a shallow descending path.",
+    "hatch": "A chick emerging from a cracked egg, with a visible shell split and emergence action.",
+    "nest": "A compact woven bird nest holding eggs on a branch; avoid confusing it with a mammal den or bee hive.",
+    "sting": "A bee using its abdominal stinger to prick a fingertip, with the point and small reaction mark at contact; distinguish from biting or pecking.",
+    "swoop": "A raptor making a steep, rapid descent toward prey, with folded swept-back wings, a clear dive trajectory, and a target below; distinguish from level flight or a shallow glide.",
+    "claw(s)": "Curved bird talons gripping a branch, with the bird foot visible as context.",
+    "wings": "Two feathered bird wings extended from a dimmed torso so the part is the focus."
+  },
+  "existing_asset_triage": {
+    "lesson_56": "No chapter-local SVGs were present.",
+    "reviewed_candidates": [
+      {
+        "source": "54/bird.svg",
+        "verdict": "REPLACE",
+        "reason": "A pet budgie on a perch is technically an older flat asset, too specific for the generic wild-bird card, and visually overlaps the separate parrot entry."
+      },
+      {
+        "source": "54/chicken.svg",
+        "verdict": "REPLACE",
+        "reason": "Adult farm hen conflicts with this chapter's chick/young-bird gloss and lacks the current layered/prompted source structure."
+      },
+      {
+        "source": "28/chicken.svg",
+        "verdict": "REPLACE",
+        "reason": "Roasted chicken on a platter is the food sense, not the live young bird in this chapter."
+      },
+      {
+        "source": "54/crow.svg",
+        "verdict": "REPLACE",
+        "reason": "This is a rooster crowing, not a crow bird; wrong sense."
+      },
+      {
+        "source": "54/duck.svg and 54/goose.svg",
+        "verdict": "REPLACE",
+        "reason": "The old farm-art silhouettes are recognizable, but their flat legacy structure fails the current layered SVG audit; redraw as distinct wild marsh birds in the chapter's visual language."
+      },
+      {
+        "source": "54/parrot.svg",
+        "verdict": "REPLACE",
+        "reason": "The pet-perch macaw is clear in isolation but does not match the natural-history context, and its legacy SVG structure fails the current audit."
+      },
+      {
+        "source": "29/kiwi-fruit.svg",
+        "verdict": "REPLACE",
+        "reason": "Fruit, not the flightless New Zealand bird."
+      }
+    ]
+  }
+}

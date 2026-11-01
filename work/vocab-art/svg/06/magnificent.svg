@@ -1,0 +1,61 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: magnificent (Adjective)
+  CONTEXTUAL_DEFINITION: Impressive in beauty and scale, shown by an ornate grand hall that inspires awe.
+  PEDAGOGICAL_ARCHETYPE: 6 (A prominent place viewed against a small human scale anchor)
+  SYNONYM_GUARD: Architectural splendor with rich detail, distinct from breathtaking open-air mountain scenery.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream gallery hall with a tiled floor and high arched dome.
+    - Context_Layer: Small visitor stands near the bottom, looking up.
+    - Focal_Layer: Sweeping dome, columns and an ornate chandelier.
+    - Details_Layer: Arches, gilded ribs, hanging glass drops, floor tiles.
+    - Lighting_Layer: Golden light from the upper-left dome.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:magnificent" data-archetype="hero-object">
+  <defs>
+    <linearGradient id="hall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#EAE3D5"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5D278"/><stop offset="0.6" stop-color="#D49B2A"/><stop offset="1" stop-color="#A87522"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#hall)"/>
+    <path d="M22 148 L22 89 C22 48 73 24 152 24 C231 24 282 48 282 89 L282 148Z" fill="#F2ECE1" stroke="#5479AC" stroke-width="2.2"/>
+    <path d="M38 147 L38 91 C38 59 84 39 152 39 C220 39 266 59 266 91 L266 147" fill="#FBF7EC" stroke="#D49B2A" stroke-width="2"/>
+    <path d="M0 148 Q154 140 304 148 L304 192 L0 192Z" fill="#E9EFF5"/>
+    <path d="M0 168 L304 168 M76 148 L52 192 M151 145 L151 192 M228 148 L252 192" stroke="#CBD5E1" stroke-width="1.6"/>
+  </g>
+  <g id="layer-context">
+    <path d="M47 151 L47 91 M257 151 L257 91" stroke="#5479AC" stroke-width="8" stroke-linecap="round"/>
+    <path d="M38 107 Q47 97 56 107 M248 107 Q257 97 266 107" fill="none" stroke="#D49B2A" stroke-width="3"/>
+    <path d="M77 151 Q79 131 96 129 Q113 131 115 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M90 130 L89 122 L103 122 L102 132" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/>
+    <circle cx="96" cy="111" r="13" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M83 110 Q84 95 97 98 Q109 99 109 112 Q102 105 94 105Z" fill="#27364B"/>
+    <ellipse cx="91" cy="111" rx="2.7" ry="3.8" fill="#FFFFFF"/><ellipse cx="101" cy="111" rx="2.7" ry="3.8" fill="#FFFFFF"/>
+    <circle cx="92" cy="109" r="1.5" fill="#1E2A3B"/><circle cx="102" cy="109" r="1.5" fill="#1E2A3B"/>
+    <ellipse cx="96" cy="119" rx="3.2" ry="4" fill="#A34F47"/>
+    <path d="M87 132 Q81 122 77 116 M108 132 Q113 122 116 116" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M42 94 C47 57 92 32 152 32 C212 32 257 57 262 94" fill="none" stroke="url(#gold)" stroke-width="5"/>
+    <path d="M63 81 C83 51 111 41 152 41 C193 41 221 51 241 81" fill="none" stroke="#8B5CA8" stroke-width="3.5"/>
+    <path d="M89 66 Q101 42 112 39 M215 66 Q203 42 192 39 M151 40 L151 30" fill="none" stroke="#D49B2A" stroke-width="2.3"/>
+    <path d="M152 35 L152 50" stroke="#D49B2A" stroke-width="2.5"/>
+    <ellipse cx="152" cy="52" rx="18" ry="5" fill="url(#gold)" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M135 54 Q152 62 169 54 L164 66 Q152 73 140 66Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M138 57 L128 67 L140 70 M166 57 L176 67 L164 70 M146 61 L140 78 M158 61 L164 78" fill="none" stroke="#D49B2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M126 67 L132 77 L138 67 M166 67 L172 77 L178 67 M137 76 L142 84 L147 76 M157 76 L162 84 L167 76" fill="#FFF8E7" stroke="#8B5CA8" stroke-width="1.2" stroke-linejoin="round"/>
+    <circle cx="152" cy="67" r="3.3" fill="#FFFFFF" stroke="#D49B2A" stroke-width="1"/>
+  </g>
+  <g id="layer-details">
+    <path d="M78 98 L78 132 M226 98 L226 132" stroke="#D49B2A" stroke-width="2"/>
+    <path d="M68 111 Q78 102 88 111 M216 111 Q226 102 236 111" fill="none" stroke="#D49B2A" stroke-width="2.2"/>
+    <path d="M121 92 L126 82 L131 92 L141 97 L131 102 L126 112 L121 102 L111 97Z" fill="#F2C14E"/>
+    <path d="M176 92 L181 82 L186 92 L196 97 L186 102 L181 112 L176 102 L166 97Z" fill="#F2C14E"/>
+    <circle cx="152" cy="28" r="3" fill="#F2C14E"/><circle cx="103" cy="48" r="2.5" fill="#F2C14E"/><circle cx="201" cy="48" r="2.5" fill="#F2C14E"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M80 59 Q109 35 143 35 M56 100 L56 136" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

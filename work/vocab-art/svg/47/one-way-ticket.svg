@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: one-way ticket
+  CONTEXTUAL_DEFINITION: A travel ticket that covers a single outward journey without a return trip.
+  PEDAGOGICAL_ART_DIRECTOR: Make a physical ticket the hero and show one arrow from the origin to a plane destination icon.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: The document is the focal object and contains one outward direction only, not a return arrow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A large blank perforated ticket has one simple route arrow from a hotel icon toward an airplane icon with no lettering or numbers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:one-way ticket" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="owt-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#D8E1DC"/></linearGradient>
+  <linearGradient id="owt-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7294BC"/><stop offset="1" stop-color="#3E6496"/></linearGradient>
+  <linearGradient id="owt-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCE8E7"/><stop offset="1" stop-color="#BFC9C4"/></linearGradient>
+  <filter id="owt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#owt-bg)"/><path d="M24 20H280V171H24Z" fill="#E7EAE3" stroke="#65777B" stroke-width="1.4"/><path d="M31 151H273" stroke="#C6C5B9" stroke-width="1.2"/><circle cx="50" cy="44" r="13" fill="#E8CF9C"/><circle cx="249" cy="47" r="10" fill="#E8CF9C"/></g>
+ <g id="layer-context"><path d="M43 104L65 94L87 104V131H43Z" fill="#D8C3A1" stroke="#455967" stroke-width="1.1"/><path d="M40 105H90" stroke="#735A43" stroke-width="2.5"/><rect x="51" y="112" width="8" height="8" fill="#9EC2CA" stroke="#455D68" stroke-width=".7"/><rect x="69" y="112" width="8" height="8" fill="#9EC2CA" stroke="#455D68" stroke-width=".7"/><path d="M60 119H70V131H60Z" fill="#765A42"/><path d="M216 99H262V132H216Z" fill="#A8C8CF" stroke="#455D68" stroke-width="1.2"/><path d="M239 99V132M216 115H262" stroke="#526D77" stroke-width=".9"/><path d="M230 107L240 103L249 107L240 110L234 116L231 116L235 110L230 109Z" fill="#FAF8F0" stroke="#455D68" stroke-width=".7"/></g>
+ <g id="layer-focal" filter="url(#owt-shadow)"><path d="M72 59H228L239 69V137L228 147H72L61 137V69Z" fill="url(#owt-paper)" stroke="#273D4B" stroke-width="2.2"/><path d="M85 59V147M216 59V147" stroke="#6F8590" stroke-width="1.2" stroke-dasharray="3 3"/><circle cx="74" cy="103" r="5" fill="#64777E"/><circle cx="226" cy="103" r="5" fill="#64777E"/><circle cx="101" cy="103" r="12" fill="#D9C49E" stroke="#526274" stroke-width="1"/><path d="M95 102L102 99L108 102L102 105Z" fill="#745B42"/><path d="M119 103H179" stroke="#4A72B2" stroke-width="5" stroke-linecap="round"/><path d="M168 91L190 103L168 115Z" fill="url(#owt-blue)" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="197" cy="103" r="8" fill="#E8C15E"/><path d="M197 99L199 102L197 107L195 102Z" fill="#86664B"/></g>
+ <g id="layer-details"><path d="M97 78H203" stroke="#B6C1BC" stroke-width="1"/><path d="M99 128H204" stroke="#B6C1BC" stroke-width="1"/><circle cx="104" cy="103" r="2.2" fill="#F2C14E"/><ellipse cx="151" cy="157" rx="93" ry="4" fill="#526274" opacity=".15"/><path d="M33 22H278" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="103" rx="128" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M24 21H280" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

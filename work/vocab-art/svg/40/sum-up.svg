@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: sum up
+  CONTEXTUAL_DEFINITION: Briefly state the main points of a discussion at its conclusion.
+  PEDAGOGICAL_ART_DIRECTOR: Show a facilitator gathering several discussion points into one concise closing summary card.
+  PEDAGOGICAL_ARCHETYPE: 7 - Summary / closure
+  SYNONYM_GUARD: Use condensation and recap, not arithmetic, a business objective, or the act of recording every meeting detail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put three small idea cards along the top of a board at x=66..235, y=47..75. Thin lines converge downward to a single compact summary card at x=126..179, y=95..123 with three short marks. A facilitator at x=130..176 gestures toward that card as the meeting closes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:sum up" data-archetype="discussion-summary">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="sum-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="sum-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F6F8FA"/><stop offset="1" stop-color="#DCE6F2"/></linearGradient>
+    <radialGradient id="sum-halo"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="sum-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="26" y="23" width="252" height="111" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M0 137 H304" stroke="#64748B" stroke-width="1.1"/><rect x="38" y="39" width="228" height="93" rx="3" fill="url(#sum-board)" stroke="#64748B" stroke-width="1.3"/><path d="M42 125 H262" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#sum-shadow)"><rect x="55" y="46" width="47" height="25" rx="3" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1.1"/><circle cx="66" cy="58" r="4" fill="#F2C14E"/><path d="M75 56 H94 M75 61 H90" stroke="#64748B" stroke-width=".9"/><rect x="129" y="42" width="47" height="25" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="1.1"/><path d="M137 57 L145 49 L153 57 L161 49 L168 57" fill="none" stroke="#5479AC" stroke-width="1.2"/><rect x="202" y="46" width="47" height="25" rx="3" fill="#E5F0E1" stroke="#547A56" stroke-width="1.1"/><path d="M211 57 L218 63 L235 50" fill="none" stroke="#547A56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M79 72 L134 92 M152 68 V89 M225 72 L170 92" fill="none" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3 3"/><path d="M144 84 L152 91 L160 84" fill="none" stroke="#D97706" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="121" y="92" width="62" height="34" rx="4" fill="url(#sum-card)" stroke="#547A56" stroke-width="1.4"/><circle cx="132" cy="102" r="2.2" fill="#F2C14E"/><circle cx="132" cy="109" r="2.2" fill="#8EB0DE"/><circle cx="132" cy="116" r="2.2" fill="#A8D4A2"/><path d="M139 101 H170 M139 108 H168 M139 115 H162" stroke="#64748B" stroke-width="1"/><path d="M128 132 Q130 111 142 105 L143 96 Q139 92 141 85 Q149 77 158 80 Q166 83 163 93 L160 100 Q173 105 175 130 L172 137 H132 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="153" cy="88" rx="7" ry="9" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M145 86 Q147 79 154 79 Q161 80 164 86 Q157 83 151 84 Z" fill="#3D342D"/><path d="M168 111 L190 101" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M188 102 L194 97" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M59 78 H104 M205 78 H248" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="113" cy="80" r="2" fill="#F2C14E"/><circle cx="191" cy="80" r="2" fill="#8EB0DE"/><path d="M119 130 H184" stroke="#FFE2A8" stroke-width="1.1"/><path d="M185 106 L192 103" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="90" rx="95" ry="66" fill="url(#sum-halo)" opacity=".22"/><path d="M60 49 H98 M134 45 H171 M207 49 H246" stroke="#FFFFFF" stroke-width=".9"/></g>
+</svg>

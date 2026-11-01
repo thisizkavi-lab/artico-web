@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: salmon (noun)
+  CONTEXTUAL_DEFINITION: A salmon swimming upstream, with a streamlined body, pink side stripe, and scattered dark spots.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero fish with species color and movement cue
+  SYNONYM_GUARD: Show a living fish with a narrow salmon-pink lateral band and dark spots; do not depict a fillet or meal.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Silver salmon faces left and rises through a freshwater current; body x=82..225 y=68..124, forked tail to the right, pink stripe, small dark dorsal spots, and stream rocks beneath.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:salmon" data-archetype="live-salmon-pink-band-spots-upstream">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#668F98;--c-secondary:#3B5864;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="salmon-water" x2="0" y2="1"><stop stop-color="#90C2C6"/><stop offset="1" stop-color="#477F92"/></linearGradient>
+  <linearGradient id="salmon-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#BDD0C9"/><stop offset="1" stop-color="#688791"/></linearGradient>
+  <filter id="salmon-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E0ECE9"/><path d="M0 27Q74 21 151 29T304 25V192H0Z" fill="url(#salmon-water)"/><path d="M0 161Q76 152 152 161T304 156V192H0Z" fill="#568E9B"/></g>
+ <g id="layer-context"><path d="M0 53q29-9 57-1t53-2m83 6q32-10 65-1t46-3" fill="none" stroke="#D7ECE6" stroke-width="1.6" stroke-linecap="round"/><path d="M0 108q26-8 51 0t49-2m148 5q27-9 56 0" fill="none" stroke="#C5E2DC" stroke-width="1.4" stroke-linecap="round"/><path d="M35 168l20-14 21 12 19-10 17 13m73 0 20-12 18 12 17-13 20 13" fill="#8DA39A" stroke="#6E877F" stroke-width="1.2"/><circle cx="64" cy="100" r="2" fill="#EAF7F1"/><circle cx="74" cy="91" r="1.2" fill="#EAF7F1"/><ellipse cx="150" cy="154" rx="74" ry="6" fill="#1B424C" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#salmon-shadow)">
+  <path d="M219 91Q237 79 249 71Q249 90 233 100Q246 111 249 127Q231 121 216 107Z" fill="#6C9194" stroke="#405D65" stroke-width="1.4"/>
+  <path d="M224 94Q208 80 176 77Q138 70 111 82Q93 89 84 101Q92 113 111 121Q146 134 182 124Q210 117 224 106Z" fill="url(#salmon-body)" stroke="#405D65" stroke-width="1.5"/>
+  <path d="M213 97Q179 91 149 91Q112 93 91 103Q109 111 145 113Q183 115 216 106Z" fill="#D98A7F" opacity=".86"/>
+  <path d="M143 77Q151 64 164 68L174 79Z" fill="#5C858A" stroke="#405D65" stroke-width="1.1"/>
+  <path d="M147 125Q158 137 173 131L179 121Z" fill="#648C90" stroke="#405D65" stroke-width="1"/>
+  <path d="M171 110Q158 118 149 128Q165 130 177 119Z" fill="#597F86" stroke="#405D65" stroke-width="1"/>
+  <path d="M89 95Q81 100 80 104Q85 108 91 108" fill="none" stroke="#405D65" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="91" cy="94" r="2" fill="#1E2A3B"/>
+  <path d="M83 109q-7 2-12-1" fill="none" stroke="#3A555D" stroke-width="1" stroke-linecap="round"/>
+  <path d="M113 87q4 3 0 6m11-8q4 3 0 6m11-7q4 3 0 6m11-6q4 3 0 6m12-5q4 3 0 6m11-5q4 3 0 6m11-3q4 3 0 6m12-4q4 3 0 6" fill="none" stroke="#354F58" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M103 90Q108 102 103 113m4-18Q116 105 111 118" fill="none" stroke="#718D8E" stroke-width="1.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M112 79q21-9 40-6m-37 45q21 7 39 5" fill="none" stroke="#EEF5EA" stroke-width="1.3" opacity=".78" stroke-linecap="round"/><circle cx="137" cy="105" r="1.2" fill="#F3F4E9"/><path d="M30 134q12-4 23 0m204-2q14-4 27 0" fill="none" stroke="#D3EBE5" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M125 81q17-8 33-5m28 2q10 2 17 6" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".53" stroke-linecap="round"/><ellipse cx="151" cy="94" rx="59" ry="20" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

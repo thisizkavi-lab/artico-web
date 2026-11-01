@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 69 - Medicine and treatment
+ WORD: treatment
+ CONTEXTUAL_DEFINITION: Medical care actively applied to a health problem.
+ PEDAGOGICAL_ARCHETYPE: a clinician wraps a clean dressing around a patient's arm
+ SYNONYM_GUARD: Show hands-on wound care with gauze and tape; do not show a prescription handoff or routine checkup.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Center an extended forearm above an exam table; place a wide gauze wrap around its middle and gloved hands securing it, with first-aid supplies nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="69:treatment" data-archetype="hands-on wound care">
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/><path d="M28 36H69V88H28Z" fill="#D9D0C2"/><path d="M34 42H63V82H34Z" fill="#A9B9B4"/><ellipse cx="154" cy="153" rx="105" ry="4" fill="#8C725A" opacity=".16"/></g>
+ <g id="layer-context"><path d="M40 130H260V143H40Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/><path d="M51 143V152M249 143V152" stroke="#26384A" stroke-width="2.5"/><rect x="223" y="88" width="22" height="29" rx="3" fill="#D6A64C" stroke="#26384A" stroke-width="1.1"/><rect x="229" y="82" width="10" height="8" rx="1" fill="#597D8B"/><path d="M228 99H240M228 105H239" stroke="#F6E5CE" stroke-width="1"/><path d="M255 99H267V115H255Z" fill="#FAF8F3" stroke="#597D8B" stroke-width="1"/><path d="M258 104H264" stroke="#B85E5A" stroke-width="1.2"/><ellipse cx="234" cy="118" rx="15" ry="2.5" fill="#8C725A" opacity=".14"/></g>
+ <g id="layer-focal">
+  <!-- forearm supported on the treatment table -->
+  <path d="M49 103Q60 88 80 91L226 105Q248 107 250 120Q247 134 226 132L78 119Q54 118 49 103Z" fill="#E7B49B" stroke="#26384A" stroke-width="1.5"/>
+  <path d="M58 100Q73 94 88 98" fill="none" stroke="#F6D2BE" stroke-width="2" stroke-linecap="round"/><path d="M215 112Q232 113 239 120" fill="none" stroke="#C9896F" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- clean gauze dressing with overlapping wrap -->
+  <path d="M132 98L171 102L168 126L129 122Z" fill="#FAF8F3" stroke="#597D8B" stroke-width="1.3"/><path d="M133 104L169 108M132 110L168 114M131 116L167 120" stroke="#A9B9B4" stroke-width="1.2"/><path d="M142 99L139 124M157 100L154 125" stroke="#E0E6E1" stroke-width="1"/><path d="M130 101L123 96L126 92L137 99M169 121L178 125L175 130L166 124" fill="#FAF8F3" stroke="#597D8B" stroke-width="1.1"/>
+  <!-- clinician's gloved hands securing dressing -->
+  <path d="M106 63Q117 57 127 62L139 83L130 91L117 78L109 83L100 77Z" fill="#A9B9B4" stroke="#26384A" stroke-width="1.2"/><path d="M196 65Q208 61 216 69L207 91L197 95L190 87Z" fill="#A9B9B4" stroke="#26384A" stroke-width="1.2"/><path d="M122 81L135 95M198 85L184 98" stroke="#C9896F" stroke-width="4.2" stroke-linecap="round"/><path d="M131 89L139 97M190 91L182 99" stroke="#F6E5CE" stroke-width="5.5" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M127 87L132 83M181 88L185 92" stroke="#D6A64C" stroke-width="1.3"/><circle cx="121" cy="88" r="1.5" fill="#D6A64C"/><circle cx="190" cy="85" r="1.5" fill="#D6A64C"/><path d="M44 152H262" stroke="#F6E5CE" stroke-width="1"/><path d="M26 28L42 44M277 28L260 44" stroke="#FFF1C7" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><ellipse cx="154" cy="92" rx="109" ry="63" fill="#E7C66B" opacity=".045"/><path d="M23 27L40 43M279 28L261 44" stroke="#FFF1C7" stroke-width="1.3" opacity=".65"/><path d="M42 152H261" stroke="#FFF7E4" stroke-width="1" opacity=".7"/></g>
+</svg>

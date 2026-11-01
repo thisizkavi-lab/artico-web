@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: boots (Noun, plural)
+  CONTEXTUAL_DEFINITION: Sturdy shoes that cover the ankle or lower leg.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Tall shafts rise clearly above the ankles; this is footwear despite the Japanese gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and grounded shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Pair of calf-high leather boots.
+    - Details_Layer: Folded cuffs, soles, and side seams.
+    - Lighting_Layer: Leather highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:boots" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="162" rx="108" ry="16" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="99" rx="110" ry="74" fill="#FEF3C7" opacity=".31"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M70 39L116 39L119 119Q130 128 145 143Q151 150 143 157L71 157Q62 153 66 143L78 124Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M173 31L216 31L220 118Q235 130 250 144Q256 152 247 158L177 158Q166 155 170 143L181 124Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M73 49L115 49M176 42L215 42" stroke="#D5A17A" stroke-width="3" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M79 62L82 118M185 55L188 119" stroke="#E4BC96" stroke-width="1.5"/><path d="M70 148Q104 153 143 148M174 149Q209 154 247 149" fill="none" stroke="#1E2A3B" stroke-width="3.2"/>
+  <path d="M94 55L108 55M195 48L208 48" stroke="#5479AC" stroke-width="2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M57 43L57 121M160 35L160 118" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".52"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:conservation" data-archetype="protected-forest-and-wetland-with-wildlife">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; conservation. Show a forest and wetland deliberately protected so native plants and wildlife can thrive; no signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="conserve-sky" x2="0" y2="1"><stop stop-color="#DDEFE6"/><stop offset="1" stop-color="#B8D3C5"/></linearGradient>
+  <linearGradient id="conserve-leaf" x2="0" y2="1"><stop stop-color="#85A875"/><stop offset="1" stop-color="#527358"/></linearGradient>
+  <linearGradient id="conserve-water" x2="0" y2="1"><stop stop-color="#78B8C2"/><stop offset="1" stop-color="#3E7C8B"/></linearGradient>
+  <linearGradient id="conserve-ground" x2="0" y2="1"><stop stop-color="#AFA77A"/><stop offset="1" stop-color="#6F805B"/></linearGradient>
+  <filter id="conserve-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#conserve-sky)"/><circle cx="247" cy="37" r="13" fill="#EBC86F" opacity=".68"/><path d="M0 113L45 58 91 108 145 42 190 105 237 55 304 112V192H0Z" fill="#9BB4A1"/><path d="M0 133Q61 119 112 133T214 130Q271 117 304 132V192H0Z" fill="url(#conserve-leaf)"/></g>
+<g id="layer-context">
+  <path d="M0 162Q49 148 95 162T185 158Q235 144 304 158V192H0Z" fill="url(#conserve-ground)"/>
+  <path d="M72 192Q91 168 122 165Q152 160 171 143Q193 129 216 136Q231 142 233 156Q211 158 193 171Q174 184 159 192Z" fill="url(#conserve-water)"/>
+  <path d="M111 181q18-10 39-8m31-22q12-8 25-5" fill="none" stroke="#DDF2E9" stroke-width="1.8"/>
+  <path d="M25 150V98L36 86 48 98V150Z" fill="#795C45"/><path d="M16 100Q20 91 28 92Q30 82 38 85Q44 76 51 85Q59 87 61 99Q53 94 47 101Q39 95 33 101Q24 94 16 100Z" fill="url(#conserve-leaf)"/>
+  <path d="M251 149V93L263 79 274 93V149Z" fill="#795C45"/><path d="M242 97Q246 87 254 88Q256 78 265 82Q272 73 280 83Q287 86 289 99Q281 94 275 101Q267 95 260 102Q251 94 242 97Z" fill="url(#conserve-leaf)"/>
+</g>
+<g id="layer-focal" filter="url(#conserve-shadow)">
+  <path d="M66 169V128m0 16 52 0m-52 0-49 0m225 24V123m0 17-46 0m46 0 46 0" fill="none" stroke="#B18B66" stroke-width="3"/>
+  <path d="M17 143q49 10 101 0m77 0q47 10 93 0" fill="none" stroke="#E1D1AD" stroke-width="1.6"/>
+  <path d="M147 151q11-13 23-2l-7 8h-10Z" fill="#C7B98C"/><path d="M158 149l5-8 5 8" fill="none" stroke="#617B5F" stroke-width="1.5"/>
+  <path d="M218 111q7-10 14 0m-4-6 4-6m-4 6 6-4" fill="none" stroke="#EEF5E8" stroke-width="1.8"/>
+  <path d="M91 150v-22m0 15-8-12m8 7 9-13m77 26v-24m0 15-9-12m9 8 9-14" fill="none" stroke="#6E875C" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <path d="M8 177q13-5 24 0m52 7q12-5 24 0m99-1q11-5 22 0m54-7q12-5 24 0" fill="none" stroke="#B7CF88" stroke-width="1.4"/>
+  <circle cx="57" cy="161" r="1.7" fill="#F3ECD0"/><circle cx="167" cy="177" r="1.8" fill="#F3ECD0"/><circle cx="245" cy="166" r="1.7" fill="#F3ECD0"/>
+  <path d="M74 109q9-5 16 0m113-15q9-5 17 0m-83-35q8-5 15 0" fill="none" stroke="#E7F2E5" stroke-width="1.4"/>
+  <path d="M38 153q8-5 15 0m211-4q8-5 15 0" fill="none" stroke="#D9CAA4" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M18 100q16-19 31-5m196 1q16-21 32-5" fill="none" stroke="#C5D9B8" stroke-width="1.3"/><path d="M74 191q25-31 52-26m68-14q20-19 38-13" fill="none" stroke="#D4E8E1" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

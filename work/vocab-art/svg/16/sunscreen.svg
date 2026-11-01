@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: sunscreen (Noun)
+  CONTEXTUAL_DEFINITION: A protective cream or lotion applied to skin before sun exposure.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with use cue
+  SYNONYM_GUARD: Couple the squeeze tube with sun rays deflected from a protected forearm.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Bright sun disc and soft halo.
+    - Focal_Layer: Pale sunscreen tube and protected skin patch.
+    - Details_Layer: Cream dollop and curved shield-like rays.
+    - Lighting_Layer: Gold sun rays.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:sunscreen" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="157" rx="112" ry="16" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <circle cx="216" cy="52" r="29" fill="#F1CF7A" opacity=".78"/><g stroke="#D9A441" stroke-width="3" stroke-linecap="round"><path d="M216 12V4M216 100V92M176 52H168M264 52H256M187 23L181 17M251 87L245 81M245 23L251 17M181 87L187 81"/></g>
+  <path d="M166 130Q198 113 243 124Q258 128 271 143L271 159H165Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M69 51L145 60L136 143Q135 153 125 153H84Q73 152 72 142Z" fill="#F4E9D3" stroke="#1E2A3B" stroke-width="2.7"/><path d="M78 111L140 117L137 143Q135 150 126 150H84Q77 149 77 141Z" fill="#F3E6C7"/>
+  <path d="M91 41H127L144 55L146 64L68 55L70 46Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.4"/><path d="M90 154H128V165H90Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M87 75Q104 79 127 81M86 87Q107 91 125 92" fill="none" stroke="#C6A675" stroke-width="2" stroke-linecap="round"/><path d="M177 139Q195 130 212 136Q220 140 215 146Q198 152 180 147Z" fill="#F7F3EA" stroke="#E2D9CA" stroke-width="1.4"/>
+  <path d="M178 117Q190 105 203 111M219 109Q232 103 243 111" fill="none" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round"/><path d="M194 65Q208 75 227 69" fill="none" stroke="#FAF8F3" stroke-width="2.2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M191 76Q179 86 174 99M235 75Q246 85 251 97" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+</svg>

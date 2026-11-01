@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: building blocks (Noun)
+  CONTEXTUAL_DEFINITION: Solid colorful wooden pieces stacked and arranged to build simple shapes.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Simple painted wooden cubes and a triangular roof distinguish these classic building blocks from interlocking plastic building bricks.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet nursery floor and pale wall.
+    - Context_Layer: Low shelf and floor mat establish a child's play area.
+    - Focal_Layer: A small tower and house built from separate wooden blocks.
+    - Details_Layer: Visible wood grain, paint, and a loose cube.
+    - Lighting_Layer: Warm highlight on the wooden pieces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:building blocks" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="blocks-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="blocks-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#blocks-bg)"/><path d="M0 151Q74 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M23 33H109V95H23Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M66 34V94M24 64H108" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 153H304" stroke="#C4B79F" stroke-width="2"/></g>
+  <g id="layer-context"><rect x="194" y="57" width="74" height="38" rx="3" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.6"/><path d="M200 65H259M200 75H250" stroke="#F7EBCF" stroke-width="2"/><rect x="204" y="95" width="8" height="24" fill="#8D765A"/><rect x="252" y="95" width="8" height="24" fill="#8D765A"/><ellipse cx="153" cy="157" rx="101" ry="9" fill="#D9CBB6" opacity=".68"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#blocks-shadow)"><rect x="89" y="111" width="42" height="39" rx="2" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M89 123H131" stroke="#F5B6A9" stroke-width="2"/><rect x="131" y="111" width="42" height="39" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M131 123H173" stroke="#88A9D0" stroke-width="2"/><rect x="110" y="72" width="42" height="39" rx="2" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/><path d="M110 84H152" stroke="#F0C971" stroke-width="2"/><rect x="152" y="72" width="42" height="39" rx="2" fill="#91A77C" stroke="#1E2A3B" stroke-width="2"/><path d="M152 84H194" stroke="#B9C99D" stroke-width="2"/><rect x="131" y="33" width="42" height="39" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M131 45H173" stroke="#88A9D0" stroke-width="2"/><path d="M173 111L194 111L194 91L173 72Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M47 132L60 124L73 132L60 140Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 132V147L60 155V140Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M60 140L73 132V147L60 155Z" fill="#A96B46" stroke="#1E2A3B" stroke-width="1.5"/><path d="M120 61Q131 56 142 61M162 100Q174 95 185 100M98 139Q109 134 122 139" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="145" cy="91" rx="78" ry="74" fill="#FEF9C3" opacity=".13"/><path d="M101 24Q151 8 202 24" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 7" opacity=".55"/></g>
+</svg>

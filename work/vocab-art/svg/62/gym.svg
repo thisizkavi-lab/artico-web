@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 62 - Sports equipment and venues
+  WORD: gym (sports venue)
+  CONTEXTUAL_DEFINITION: An indoor facility with rooms and equipment for exercise and sport.
+  PEDAGOGICAL_ARCHETYPE: Recognizable indoor gym facility with exercise equipment.
+  SYNONYM_GUARD: Show the room and equipment as a venue, not only someone exercising or going to the gym.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A clean gym interior with strength and cardio equipment, exercise mats and high windows.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:gym" data-archetype="sports-gym-interior">
+ <defs><style>:root{--c-bg-1:#EFF3F0;--c-bg-2:#E0E5DD;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="gym-room" x2="0" y2="1"><stop stop-color="#EDF2EF"/><stop offset="1" stop-color="#DDE2DB"/></linearGradient><filter id="gym-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gym-room)"/><path d="M0 151H304V192H0Z" fill="#D5C3A6"/><path d="M0 151H304" stroke="#987858" stroke-width="1.5" fill="none"/><rect x="24" y="21" width="61" height="46" fill="#C3D7D1" stroke="#6C8279" stroke-width="1.6"/><path d="M54 22V66M26 44H83" stroke="#F7F2E6" stroke-width="2.2" fill="none"/><path d="M0 85H304" stroke="#D2DBD6" stroke-width="1.2" fill="none"/><path d="M92 27H279" stroke="#8C9F9B" stroke-width="2" fill="none"/><path d="M110 28V35m52-7v7m56-7v7" stroke="#E4BB68" stroke-width="1.5" fill="none"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="153" rx="111" ry="5" fill="#6A5038" opacity=".13"/><path d="M36 131H268V140H36Z" fill="#9A704D" stroke="#72543D" stroke-width="1.1"/><path d="M49 140V151M256 140V151" stroke="#76583F" stroke-width="2.2" fill="none"/><path d="M186 83H267V94H186Z" fill="#718C84"/><path d="M194 94V127M259 94V127" stroke="#405B61" stroke-width="2.2" fill="none"/><path d="M197 120H255" stroke="#405B61" stroke-width="2.2" fill="none"/><circle cx="203" cy="123" r="6" fill="#263E4A"/><circle cx="248" cy="123" r="6" fill="#263E4A"/><path d="M52 126H118V135H52Z" fill="#405B61"/><path d="M60 122h13v4H60Zm20-6h13v10H80Zm20 3h13v7h-13Z" fill="#D4866D" stroke="#765748" stroke-width=".7"/></g>
+ <g id="layer-focal" filter="url(#gym-shadow)">
+  <path d="M128 72H171V130H128Z" fill="#718C84" stroke="#405B61" stroke-width="1.3"/><path d="M137 77H162V120H137Z" fill="#D8E2DD"/><path d="M140 114Q150 96 159 113V120H140Z" fill="#577680"/><path d="M147 130V142m10-12v12m-22 0h36" stroke="#405B61" stroke-width="2.5" fill="none"/><path d="M134 83H165V89H134Z" fill="#405B61"/><path d="M135 92h29" stroke="#D9E2DC" stroke-width="1" fill="none"/>
+  <path d="M41 95H78V124H41Z" fill="#263E4A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M47 101H72V119H47Z" fill="#D6E2DE"/><path d="M49 116Q57 104 69 113V119H49Z" fill="#718C84"/><circle cx="48" cy="125" r="5" fill="#405B61"/><circle cx="72" cy="125" r="5" fill="#405B61"/><path d="M40 92V126m39-34v34" stroke="#405B61" stroke-width="2.2" fill="none"/>
+  <path d="M103 118H162V127H103Z" fill="#405B61"/><path d="M111 127V143M154 127V143" stroke="#405B61" stroke-width="2.1" fill="none"/><path d="M110 116L99 104M155 116l11-12" stroke="#D4866D" stroke-width="2" fill="none"/>
+  <path d="M207 76Q214 68 224 76V84H207Z" fill="#D4866D"/><path d="M209 84H222V90H209Z" fill="#405B61"/><path d="M232 76Q239 68 249 76V84H232Z" fill="#718C84"/><path d="M234 84H247V90H234Z" fill="#405B61"/>
+ </g>
+ <g id="layer-details"><path d="M30 73h48m17-38h18m35 0h22m35 0h20" stroke="#FFFFFF" stroke-width="1.2" fill="none" opacity=".65"/><circle cx="116" cy="47" r="1.2" fill="#E4BB68"/><circle cx="179" cy="58" r="1.2" fill="#FFFFFF"/><path d="M188 100h77" stroke="#D2E1DC" stroke-width="1" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="149" cy="86" rx="112" ry="52" fill="#EFCB78" opacity=".06"/><path d="M28 23h55m13 6h182" stroke="#FFF9EA" stroke-width="1.3" fill="none" opacity=".6"/></g>
+</svg>

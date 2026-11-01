@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: go on a cruise
+  CONTEXTUAL_DEFINITION: Set out on a leisure journey aboard a large passenger ship.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler stepping aboard a cruise liner via a boarding gangway with their vacation bag.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Focus on the traveler boarding the ship, not only a ship already sailing at sea.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A traveler with a sun hat and rolling case walks up a gangway onto a large multi-deck white cruise ship with the sea behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:go on a cruise" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="goc-sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#68B5C0"/><stop offset="1" stop-color="#347E92"/></linearGradient>
+  <linearGradient id="goc-ship" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#B8C9C8"/></linearGradient>
+  <linearGradient id="goc-gangway" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D8DDD6"/><stop offset="1" stop-color="#8E9FA0"/></linearGradient>
+  <filter id="goc-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#D9E9E9"/><circle cx="251" cy="38" r="15" fill="#F2C14E"/><path d="M0 106Q50 101 100 108T205 105T304 110V192H0Z" fill="url(#goc-sea)"/><path d="M20 168H286" stroke="#D1F0E8" stroke-width="1.3"/><path d="M23 127Q60 121 92 128M213 139Q252 132 285 140" fill="none" stroke="#C9E8E4" stroke-width="1.2"/></g>
+ <g id="layer-context"><path d="M103 85H291V110H103Z" fill="url(#goc-ship)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M125 58H273V84H125Z" fill="#F8F7F0" stroke="#1E2A3B" stroke-width="1.2"/><path d="M145 42H248V57H145Z" fill="#E3E9E2" stroke="#1E2A3B" stroke-width="1"/><path d="M137 63H151V76H137ZM164 63H178V76H164ZM191 63H205V76H191ZM218 63H232V76H218ZM245 63H259V76H245Z" fill="#93C3C9" stroke="#526C75" stroke-width=".8"/><path d="M173 84V73H184V84" fill="#B15F47" stroke="#374C55" stroke-width=".8"/><path d="M248 42V34H253V42M260 42V36H265V42" fill="#AA6247" stroke="#374C55" stroke-width=".8"/></g>
+ <g id="layer-focal" filter="url(#goc-shadow)"><path d="M16 155L128 100L157 100L57 160Z" fill="url(#goc-gangway)" stroke="#3D555F" stroke-width="1.4"/><path d="M25 151L133 98M40 158L150 104" stroke="#F1F0E7" stroke-width="1.2"/><path d="M54 149V160M78 137V153M103 124V141M127 112V129" stroke="#5A7077" stroke-width="1.2"/><circle cx="82" cy="78" r="7.5" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M71 87Q82 82 93 87L97 109H67Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M72 106L69 126H78L83 109M86 109L91 126H100L96 104" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><path d="M72 92L65 100M92 92L100 97" stroke="#4A72B2" stroke-width="6" stroke-linecap="round"/><path d="M64 67Q81 57 99 67L96 72H67Z" fill="#E5B558" stroke="#1E2A3B" stroke-width="1"/><rect x="96" y="108" width="16" height="24" rx="3" fill="#526274" stroke="#1E2A3B" stroke-width="1.2"/><path d="M100 108V104Q100 100 104 100Q108 100 108 104V108" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M99 117H109M99 128H109" stroke="#99A7AA" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M105 86H289" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><ellipse cx="155" cy="164" rx="129" ry="5" fill="#1E2A3B" opacity=".14"/><circle cx="266" cy="28" r="2" fill="#FFF7E3"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="104" rx="130" ry="77" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

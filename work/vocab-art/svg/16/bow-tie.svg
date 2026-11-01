@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: bow tie (Noun)
+  CONTEXTUAL_DEFINITION: A small bow-shaped tie worn at the collar.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Focus the colored bow at a shirt collar, not a long necktie.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted shirt collar and upper chest.
+    - Focal_Layer: Rich blue fabric bow tie.
+    - Details_Layer: Central knot and folded wings.
+    - Lighting_Layer: Gold focus ring.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:bow tie" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="164" rx="80" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M85 50Q152 30 219 50L243 163H61Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/><path d="M108 49L145 93L125 113L93 61M196 49L159 93L179 113L211 61" fill="#F7F8FA" stroke="#7B8A9E" stroke-width="2.2"/>
+  <ellipse cx="152" cy="103" rx="57" ry="43" fill="#FEF3C7" opacity=".55"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M144 97Q125 77 106 86L91 105L112 123L143 111Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M160 97Q179 77 198 86L213 105L192 123L161 111Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M144 94Q152 89 160 94L162 112Q152 119 142 112Z" fill="#315782" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M104 91L133 102M199 91L171 102" stroke="#9CB5D5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M151 95L151 113" stroke="#D9A441" stroke-width="1.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="103" rx="51" ry="37" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/>
+</svg>

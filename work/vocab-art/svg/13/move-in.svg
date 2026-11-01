@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: move in (Verb phrase)
+  CONTEXTUAL_DEFINITION: Begin living in a new home by bringing belongings inside.
+  PEDAGOGICAL_ARCHETYPE: 4 — Inward carrying action
+  SYNONYM_GUARD: Person and box move through an open doorway into a furnished new room; move out goes outward from a cleared room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open front doorway with bright interior.
+    - Context_Layer: A new room with a bed and lamp is visible inside.
+    - Focal_Layer: Resident carries a cardboard box across the threshold into the home.
+    - Details_Layer: Directional floor path points inward.
+    - Lighting_Layer: Sunlit interior and blue arrow point toward the room.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:move in" data-archetype="move-in-action">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M198 25H279V145H198Z" fill="#DCEAF0" stroke="#1E2A3B" stroke-width="2.5"/><path d="M207 34H270V140H207Z" fill="#F7F5EE"/><ellipse cx="145" cy="164" rx="112" ry="6" fill="#968977" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M220 99H272V140H220Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M220 99V87Q221 80 231 80H248Q258 80 259 91V101Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.6"/><path d="M34 123H77V145H34Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M39 116H72V124H39Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="1.3"/><path d="M42 117H68V122H42Z" fill="#CBD5E1"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="134" cy="65" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.8"/><path d="M124 63Q124 50 135 50Q145 51 144 64L139 57H128Z" fill="#3A2E2B"/><path d="M123 79Q134 72 145 79L151 115H117Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M129 81L115 96L103 94" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M129 81L115 96L103 94" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M141 81L154 93L169 89" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M141 81L154 93L169 89" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M128 113L123 151M143 113L149 151" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M128 113L123 151M143 113L149 151" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M168 66H197V101H168Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="2"/><path d="M172 72H193M172 78H193" stroke="#C18B56" stroke-width="1.2"/><path d="M173 61H192V66H173Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M194 145L208 145" stroke="#4A72B2" stroke-width="2"/><path d="M157 106L165 101M164 111L172 106" stroke="#F2C14E" stroke-width="1.4"/><path d="M211 38H267" stroke="#FFFFFF" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M77 159Q131 170 190 155Q226 145 241 132" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M235 132L243 129L241 138" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="237" cy="87" r="28" fill="#FEF3C7" opacity=".15"/></g>
+</svg>

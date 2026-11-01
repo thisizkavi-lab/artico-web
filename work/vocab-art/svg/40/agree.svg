@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: agree
+  CONTEXTUAL_DEFINITION: Have the same opinion or accept the same proposal.
+  PEDAGOGICAL_ART_DIRECTOR: Show two colleagues clearly aligning on one shared proposal, with matching gestures and a single accepted card.
+  PEDAGOGICAL_ARCHETYPE: 3 - Shared decision
+  SYNONYM_GUARD: This is agreement between people, not an entire group reaching consensus or a unanimous vote by everyone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place two coworkers facing one another at x=64..118 and x=187..241 across a small table. They both point toward one central green proposal card at x=137..168 and nod; put a single gold check on the card and keep all other agenda items out of view.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:agree" data-archetype="shared-decision">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="agree-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5F0E1"/><stop offset="1" stop-color="#A8D4A2"/></linearGradient>
+    <linearGradient id="agree-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="agree-halo"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="agree-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="101" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M39 131 H265 V145 H39 Z" fill="url(#agree-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M53 145 V155 M251 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#agree-shadow)"><path d="M56 122 Q58 99 71 93 L72 84 Q68 80 70 72 Q78 63 88 66 Q97 69 94 80 L91 88 Q105 94 107 120 L104 132 H60 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="82" cy="75" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M74 73 Q76 65 83 65 Q91 66 94 73 Q87 69 80 70 Z" fill="#3D342D"/><path d="M68 108 L102 110 L105 116 L76 118" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M100 111 L127 111" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M197 122 Q199 99 212 93 L213 84 Q209 80 211 72 Q219 63 229 66 Q238 69 235 80 L232 88 Q246 94 248 120 L245 132 H201 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="223" cy="75" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M215 73 Q217 65 224 65 Q232 66 235 73 Q228 69 221 70 Z" fill="#242C3B"/><path d="M236 108 L202 110 L199 116 L228 118" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.4"/><path d="M204 111 L177 111" stroke="#B97851" stroke-width="4" stroke-linecap="round"/><rect x="128" y="76" width="49" height="47" rx="5" fill="url(#agree-card)" stroke="#547A56" stroke-width="1.4"/><path d="M139 100 L148 109 L166 88" fill="none" stroke="#547A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="153" cy="69" r="3" fill="#F2C14E"/><path d="M146 64 Q153 56 160 64" fill="none" stroke="#D99A2B" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M78 91 Q83 88 88 91 M219 91 Q224 88 229 91" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M121 106 L127 106 M178 106 L184 106" stroke="#64748B" stroke-width="1.3" stroke-dasharray="2 2"/><circle cx="118" cy="99" r="2" fill="#F2C14E"/><circle cx="186" cy="99" r="2" fill="#F2C14E"/><path d="M136 129 H169" stroke="#FFE2A8" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="95" rx="91" ry="61" fill="url(#agree-halo)" opacity=".24"/><path d="M132 79 H174" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

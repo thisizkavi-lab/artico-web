@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: cupboard (Noun)
+  CONTEXTUAL_DEFINITION: A kitchen storage cupboard for dishes and cups.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Mount it above a counter and show plates and cups inside, unlike a full-height clothes closet.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen wall and counter.
+    - Context_Layer: Wall-mounted cupboard frame.
+    - Focal_Layer: Open doors and shelves with crockery.
+    - Details_Layer: Plate rims and cup handles.
+    - Lighting_Layer: Bright indoor light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:cupboard" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 144 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 144 H304" stroke="#B7AA94" stroke-width="2"/><rect x="25" y="134" width="254" height="15" rx="3" fill="#B97840" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-context"><rect x="64" y="29" width="176" height="105" rx="2" fill="#C98B54" stroke="#1E2A3B" stroke-width="2.6"/><rect x="74" y="39" width="156" height="86" fill="#F3E6CF" stroke="#8A5A35" stroke-width="1.5"/><path d="M74 83 H230" stroke="#8A5A35" stroke-width="3"/><path d="M74 125 L41 136 V52 L74 41Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2"/><path d="M41 52 L49 56 V128 L41 136" fill="#D69A62" stroke="#8A5A35" stroke-width="1.4"/></g>
+  <g id="layer-focal"><ellipse cx="110" cy="69" rx="18" ry="6" fill="#DCECFB" stroke="#5479AC" stroke-width="1.7"/><ellipse cx="110" cy="67" rx="13" ry="4" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.2"/><ellipse cx="160" cy="69" rx="18" ry="6" fill="#DCECFB" stroke="#5479AC" stroke-width="1.7"/><ellipse cx="160" cy="67" rx="13" ry="4" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.2"/><path d="M192 61 H214 V78 Q214 84 208 84 H198 Q192 84 192 78Z" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.8"/><path d="M214 66 Q224 65 222 73 Q220 79 214 77" fill="none" stroke="#5479AC" stroke-width="1.8"/><path d="M94 111 Q111 105 128 111 M144 111 Q161 105 178 111" fill="none" stroke="#8B5CA8" stroke-width="3"/><path d="M200 102 H216 V119 H200Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M216 106 Q225 105 223 112 Q221 118 216 116" fill="none" stroke="#5479AC" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M80 43 V121 M224 43 V121" stroke="#E9B47E" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: chopsticks (Noun)
+  CONTEXTUAL_DEFINITION: A pair of slim tapered sticks held together to pick up food.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show exactly two long parallel tapered sticks, one end pinching a small bite of food.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm tabletop.
+    - Context_Layer: Small rice bowl in the background.
+    - Focal_Layer: Two wooden sticks crossing slightly at the holding end.
+    - Details_Layer: Small round food morsel and lacquer highlights.
+    - Lighting_Layer: Warm wood reflection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:chopsticks" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 148 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 148 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="168" rx="85" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M207 101 Q210 92 221 92 H262 Q273 92 276 101 L269 128 Q266 137 256 137 H227 Q217 137 214 128Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="241" cy="101" rx="34" ry="10" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="241" cy="102" rx="23" ry="6" fill="#FAF8F3"/></g>
+  <g id="layer-focal"><path d="M65 56 L216 119" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M65 56 L216 119" stroke="#8A5A35" stroke-width="4" stroke-linecap="round"/><path d="M70 47 L221 110" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M70 47 L221 110" stroke="#B97840" stroke-width="4" stroke-linecap="round"/><circle cx="223" cy="109" r="8" fill="#F2C14E" stroke="#A66A2E" stroke-width="1.5"/><path d="M212 114 L218 112 M212 106 L219 108" stroke="#8A5A35" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M78 49 L202 101 M73 56 L197 108" stroke="#E9B47E" stroke-width="1.2"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

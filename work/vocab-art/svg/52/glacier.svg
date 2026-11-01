@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:glacier" data-archetype="grounded-ice-tongue-flowing-down-a-mountain-valley">
+<!-- SELF_PROMPT: Lesson 52 geographical features; glacier. Depict a broad grounded ice tongue flowing down a mountain valley, with crevasses and rocky moraine edges; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="glacier-sky" x2="0" y2="1"><stop stop-color="#DBEBEF"/><stop offset="1" stop-color="#AFC8D0"/></linearGradient>
+  <linearGradient id="glacier-rock" x2="0" y2="1"><stop stop-color="#8E9B96"/><stop offset="1" stop-color="#586B6A"/></linearGradient>
+  <linearGradient id="glacier-ice" x2=".7" y2="1"><stop stop-color="#F1FBF8"/><stop offset=".46" stop-color="#B8E0E7"/><stop offset="1" stop-color="#6BA6B7"/></linearGradient>
+  <linearGradient id="glacier-moraine" x2="0" y2="1"><stop stop-color="#8B8875"/><stop offset="1" stop-color="#595E58"/></linearGradient>
+  <filter id="glacier-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#glacier-sky)"/><circle cx="252" cy="35" r="13" fill="#EBC86F" opacity=".63"/><path d="M0 118L54 42 95 91 150 21 206 86 252 38 304 111V192H0Z" fill="#9FB2B2"/><path d="M0 133L55 67 94 112 149 48 205 112 254 68 304 130V192H0Z" fill="url(#glacier-rock)"/><path d="M35 68l19-26 14 21m67 3 15-24 17 22m84 5 17-27 16 23" fill="none" stroke="#E8F1EA" stroke-width="2.2"/></g>
+<g id="layer-context">
+  <path d="M21 121Q67 103 102 116Q129 102 151 116Q177 102 204 115Q245 103 283 120L304 174H0Z" fill="#777D71"/>
+  <path d="M92 85Q110 99 124 117Q134 133 141 149Q146 165 159 184L206 184Q190 160 184 143Q174 122 165 106Q155 88 155 67Z" fill="url(#glacier-ice)" stroke="#567F8A" stroke-width="2"/>
+  <path d="M0 155Q34 138 67 149L91 140Q102 150 112 165L82 192H0Z" fill="url(#glacier-moraine)"/><path d="M213 142Q239 135 263 149L304 153V192H218Q207 164 213 142Z" fill="url(#glacier-moraine)"/>
+  <path d="M98 104Q122 114 133 133Q145 151 151 167M158 83Q165 105 177 124Q187 142 194 163" fill="none" stroke="#EAF8F5" stroke-width="2.2"/>
+</g>
+<g id="layer-focal" filter="url(#glacier-shadow)">
+  <path d="M115 91Q130 103 137 120L149 148Q158 168 177 184H203Q188 164 181 145L165 111Q156 92 153 73Z" fill="url(#glacier-ice)" stroke="#4D7F8D" stroke-width="2"/>
+  <path d="M138 110Q151 123 158 145L171 169m-5-76q8 19 17 36" fill="none" stroke="#F8FFFC" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M148 128l9 3-4 10-9-4Zm22 19 10 3-5 9-9-4Zm-31-27 7 2-4 8-8-3Z" fill="#78ADBA" stroke="#5A8994" stroke-width="1"/>
+  <path d="M128 105l-7 6 12 3m43 35 12 7-5 8" fill="none" stroke="#D7F0ED" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M13 162l10-8 8 4m-18 20 12-9 9 4m245-13 11-7 9 4m-21 23 12-9 12 5" fill="none" stroke="#B5B4A0" stroke-width="1.6"/>
+  <circle cx="51" cy="171" r="2" fill="#C7B99C"/><circle cx="70" cy="157" r="1.7" fill="#D8C8A5"/><circle cx="238" cy="169" r="2" fill="#C7B99C"/><circle cx="267" cy="156" r="1.6" fill="#D8C8A5"/>
+  <path d="M105 83q12 7 18 20m44 5q10 14 15 27M79 129l11-5 8 8m105-14 9-5 8 8" fill="none" stroke="#D6E6E3" stroke-width="1.5"/>
+  <path d="M152 181q14 6 30 1m-46-32q6 7 10 15" fill="none" stroke="#65A0AE" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M116 94Q130 108 136 122m31-21q7 16 14 28" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".82"/><path d="M52 48l9-12 8 12m145 39 11-15 9 15" fill="none" stroke="#F7FCF6" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

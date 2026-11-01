@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: playing cards (Noun)
+  CONTEXTUAL_DEFINITION: A deck of printed cards used for games such as rummy or poker.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: A small fan of rectangular cards with suit symbols identifies playing cards, distinct from board games or picture cards.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Smooth tabletop with a softly lit window.
+    - Context_Layer: A hand holds the fan of cards from below.
+    - Focal_Layer: Three overlapping white playing cards angled outward.
+    - Details_Layer: Simple heart, diamond, club, and spade pips.
+    - Lighting_Layer: Paper sheen along the card edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:playing cards" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="cards-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="cards-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cards-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#DCCFB9"/><path d="M21 31H90V84H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 32V83M22 57H89" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 152H304" stroke="#9B7D5E" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M106 180Q108 156 120 147Q136 140 150 151L160 181Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M198 180Q196 156 184 147Q168 140 154 151L144 181Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/><path d="M120 160Q139 146 151 142M184 160Q165 146 153 142" fill="none" stroke="#C98961" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#cards-shadow)"><g transform="rotate(-17 117 91)"><rect x="81" y="37" width="66" height="102" rx="5" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 49H105V63H91Z" fill="#D9857F"/><path d="M95 56Q98 48 101 56Q104 48 107 56Q107 62 101 65Q95 62 95 56Z" fill="#D9857F"/><path d="M124 113L132 101L140 113L132 125Z" fill="#D9857F"/><path d="M89 125L95 118L101 125L95 132Z" fill="#D9857F"/></g><g transform="rotate(0 151 85)"><rect x="118" y="30" width="68" height="108" rx="5" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2.2"/><path d="M128 41H142V55H128Z" fill="#315782"/><path d="M134 44Q128 51 135 57Q141 51 134 44Z" fill="#315782"/><path d="M151 74Q142 62 151 57Q160 62 151 74Z" fill="#315782"/><path d="M144 82Q151 71 158 82L151 91Z" fill="#315782"/><path d="M151 98V119" stroke="#315782" stroke-width="3" stroke-linecap="round"/></g><g transform="rotate(17 188 91)"><rect x="158" y="37" width="66" height="102" rx="5" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2.2"/><path d="M168 49H182V63H168Z" fill="#D9857F"/><path d="M175 48L183 56L175 64L167 56Z" fill="#D9857F"/><path d="M201 111L208 104L215 111L208 118Z" fill="#D9857F"/><path d="M168 121L174 114L180 121L174 128Z" fill="#D9857F"/></g></g>
+  <g id="layer-details"><path d="M91 39Q114 34 139 41M127 33Q151 27 178 33M165 40Q191 35 216 42" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M106 144H198" stroke="#A98A64" stroke-width="1.5" stroke-dasharray="3 5" opacity=".5"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="91" rx="93" ry="70" fill="#FEF9C3" opacity=".13"/><path d="M93 25Q152 12 212 25" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+</svg>

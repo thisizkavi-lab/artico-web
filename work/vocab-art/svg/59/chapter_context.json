@@ -1,0 +1,215 @@
+{
+  "chapter": 59,
+  "chapter_title": "Abilities and actions",
+  "domain_setting": "A friendly everyday world where people build skills, move their bodies, handle common objects, communicate through the senses, and solve simple tasks. Use home, park, class, and workshop settings only when they clarify the action; keep each card focused on one visible verb or capability.",
+  "ambient_palette": {
+    "stage": "warm paper ivory with soft blue-grey or sage floor planes",
+    "movement": "open sky blue, park sage, and muted slate for safe energetic poses",
+    "objects": "natural wood, brushed blue-grey, and restrained amber accents",
+    "communication": "quiet cream rooms, clear blue-green sound and sight cues, warm skin tones"
+  },
+  "recurring_scale_anchors": [
+    "Adult or older-child figures are about 105–145 px tall within the 304×192 card and stay inside the 24–280 × 16–176 safe zone.",
+    "A hand-sized ball is about 16–24 px across; a door is about 55–70 px wide and 100–120 px high.",
+    "A tabletop is around y=125–145; feet and grounded objects share a visible floor or ground plane.",
+    "Use one clear action target and one reaction cue per card; keep sibling verbs in distinct poses and settings."
+  ],
+  "polysemy_resolution_table": {
+    "abilities / able to / can / can't / know how to / learn to / practice / try / improve": "The curriculum teaches practical capability and learning a skill. Abilities is a broad range of skills; able to and can show a successful capability; can't shows a kind but clear present inability; know how to shows learned procedural knowledge; learn to shows guided acquisition; practice shows deliberate repetition; try shows effort on an uncertain attempt; improve shows a visible before-to-after gain.",
+    "actions / act / do / play (action)": "Actions is a broad range of everyday physical activities. Act means perform a role with expressive body language; do is a generic person completing a simple task; play is recreational play with a ball or toy, not a theatrical play or musical performance.",
+    "climb / crawl / dance / fall (action) / fly / jump / move / ride / run / sit down / stand up": "Climb upward using handholds; crawl on hands and knees; dance to music; fall is an accidental downward loss of balance, not autumn; fly is a bird travelling through the air, not piloting an aircraft; jump is a deliberate upward leap; move is a person changing position across the floor; ride is travelling while mounted on a bicycle or other conveyance; run is a fast grounded stride; sit down and stand up show opposite transitions at a chair.",
+    "blow / carry / catch / dig / hit / hold / kick / lift / open / close / pull / push / shake / throw": "Show ordinary, safe object-handling actions with an explicit target and visible force or result. Blow air from the mouth to move a pinwheel; carry an item from place to place; catch a ball in the hands; dig soil with a small spade; hit a ball with a bat; hold an object securely; kick a ball with the foot; lift a box upward; open a hinged lid; close the same kind of lid; pull an object toward the body; push it away; shake a contained object side to side; throw a ball through the air.",
+    "pack": "The Japanese gloss is the noun sense: a bundle or parcel of items tied or wrapped together, not the action of putting luggage into a suitcase.",
+    "point": "The Japanese gloss specifies the sharp end or tip of a pencil or needle, not the gesture of indicating something with a finger.",
+    "lick / listen / see / smell / speak / shout / sing / talk / taste": "Lick is touching food with the tongue; listen is active attention to sound; see is visual perception of an object; smell is deliberately sniffing an aroma; speak is one person addressing others; shout is speaking loudly to call across a space; sing is producing a musical tune with the voice; talk is a two-way conversation; taste is the sense of taste shown through a tongue tasting familiar food, not a person's preference or an adjective meaning flavourful.",
+    "add / subtract / count / decide / copy / fix / make / remember / repair / spell / think / understand": "Add joins quantities; subtract removes a quantity from a group; count checks items one by one; decide means choose between visible alternatives; copy means reproduce a drawing from a reference; fix means attach or secure a loose part in place; make means create a new object from materials; remember is recall of a past person or event; repair means restore a broken object to working condition; spell means arrange or produce the letters of a word without writing readable text in the illustration; think is active consideration of a problem; understand is grasping an idea or instruction.",
+    "improve": "Show a skill or result becoming better than its earlier state, with a visible comparison, not repair of a broken object.",
+    "practice": "Repeated deliberate attempts at one skill, such as several ball shots toward the same target; not a professional medical practice.",
+    "catch": "The hand receives and stops a tossed ball; not catching a disease or arriving in time for transport."
+  },
+  "existing_asset_triage": {
+    "lesson_59": "No Lesson 59 source SVGs existed at the start of this pass (compiler plan reported 0 SVG, 61 TODO). Review cross-lesson candidates before adapting them; keep only artwork whose context and action match the exact Lesson 59 sense.",
+    "reviewed_candidates": [
+      {
+        "source": "32/can.svg",
+        "verdict": "REPLACE for can modal",
+        "reason": "It illustrates a metal food tin, the container sense, rather than the modal verb expressing ability; authored a person successfully reaching a shelf item."
+      },
+      {
+        "source": "42/skills.svg",
+        "verdict": "KEEP / ADAPT for abilities",
+        "reason": "Its balanced technical, teamwork, communication, and planning tiles express a broad capability set without explicit employer cues; updated the prompt and term key for the general abilities noun."
+      },
+      {
+        "source": "24/practice.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "The violin, bow, music stand, and metronome show repeated deliberate skill rehearsal; adapted the prompt and key from school study to the abilities-and-actions chapter."
+      },
+      {
+        "source": "56/fly.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "The airborne bird and visible flight path directly teach the bird-travels-through-the-air sense; adapted it to the Lesson 59 key and chapter prompt."
+      },
+      {
+        "source": "44/ride.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "Helmeted riders seated on a travelling two-wheeled vehicle make the rider sense of ride explicit; adapted the prompt and key for the general action chapter."
+      },
+      {
+        "source": "44/walk.svg",
+        "verdict": "REJECT for move",
+        "reason": "The figure is in a static wide stance without a clear change of position, so it does not teach the general movement sense."
+      },
+      {
+        "source": "58/walk.svg",
+        "verdict": "REJECT for move",
+        "reason": "This near-duplicate also shows a stationary wide stance rather than a directional change of position; authored a clearer movement scene."
+      },
+      {
+        "source": "44/catch-a-train.svg",
+        "verdict": "REJECT for catch",
+        "reason": "It shows reaching a departing train, while this chapter teaches receiving and stopping a tossed ball in the hands."
+      },
+      {
+        "source": "13/pack.svg",
+        "verdict": "REJECT for pack",
+        "reason": "It illustrates the verb of putting items into a shipping box, while Lesson 59 uses the noun meaning a tied bundle or parcel."
+      },
+      {
+        "source": "47/pack-your-bags.svg",
+        "verdict": "REJECT for pack",
+        "reason": "It shows packing luggage for travel, not the noun sense of a bundle or parcel of items."
+      },
+      {
+        "source": "33/tip.svg",
+        "verdict": "REJECT for point",
+        "reason": "It shows a restaurant gratuity, not a sharp tip."
+      },
+      {
+        "source": "37/pencil.svg",
+        "verdict": "REJECT for point",
+        "reason": "The full pencil is the focal object, so its sharp end is too small to teach the target meaning; authored a close view centered on the pointed tip."
+      },
+      {
+        "source": "14/lick.svg",
+        "verdict": "REJECT for lick",
+        "reason": "It depicts a tongue touching a medal-like round object rather than familiar food; authored the clear food-tasting action."
+      },
+      {
+        "source": "14/shake-your-head.svg",
+        "verdict": "REJECT for shake",
+        "reason": "It shows a head gesture, while this chapter teaches shaking a held object from side to side."
+      },
+      {
+        "source": "41/throw-money-down-the-drain.svg",
+        "verdict": "REJECT for throw",
+        "reason": "It is a business idiom about wasted money, not the literal action of throwing an object through the air."
+      },
+      {
+        "source": "58/listen-to-music.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "The person is actively listening through headphones while a music source plays; adapted the phrase prompt/key to the general listening sense."
+      },
+      {
+        "source": "58/see-a-play.svg",
+        "verdict": "REJECT for see",
+        "reason": "It depicts attending a theatrical performance, not visually perceiving a single object."
+      },
+      {
+        "source": "56/sing.svg",
+        "verdict": "REJECT for sing",
+        "reason": "The songbird illustration teaches an animal call, while this chapter's sense is a person producing a musical tune with the voice."
+      },
+      {
+        "source": "58/sing-in-a-choir.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "The people visibly sing while holding music folders and following a conductor; this is a direct human singing example."
+      },
+      {
+        "source": "25/speak-accurately.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "It shows one person speaking to a listener with a spoken message; the accuracy-specific lesson framing does not change the target speaking action."
+      },
+      {
+        "source": "25/conversation.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "Two people exchange turns and gestures, directly showing the two-way conversation sense of talk."
+      },
+      {
+        "source": "32/taste.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A person brings a spoonful of familiar food to the tongue, clearly showing the active tasting sense used to teach taste."
+      },
+      {
+        "source": "33/add.svg",
+        "verdict": "REJECT for add",
+        "reason": "It shows adding a food topping, while this chapter teaches joining numerical quantities."
+      },
+      {
+        "source": "34/actor.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A costumed performer on a stage uses expressive gestures to perform a role, a direct example of the chapter's act sense."
+      },
+      {
+        "source": "58/draw.svg",
+        "verdict": "REJECT for copy",
+        "reason": "It shows freehand drawing without a clear matching reference image; authored a visible model-and-reproduction scene instead."
+      },
+      {
+        "source": "58/make-models.svg",
+        "verdict": "KEEP / ADAPT for make",
+        "reason": "A person assembles a small airplane model from separate pieces at a workbench, which directly shows making a new object from materials; adapted the term key and prompt for the broader action."
+      },
+      {
+        "source": "58/play-board-games.svg",
+        "verdict": "KEEP / ADAPT for play",
+        "reason": "Two people take turns moving pieces on a board game, a clear recreational activity; adapted the term key and prompt for the general verb action."
+      },
+      {
+        "source": "58/play-video-games.svg",
+        "verdict": "REJECT for play (selected alternative)",
+        "reason": "It also shows recreational play, but the reclining person and screen/controller context are less direct for the broad action than the board-game scene."
+      },
+      {
+        "source": "49/fix-a-puncture.svg",
+        "verdict": "REJECT for fix",
+        "reason": "It shows bicycle puncture repair, while Lesson 59 distinguishes fix as securing a loose part in place; authored a loose chair bracket scene."
+      },
+      {
+        "source": "58/do-puzzles.svg",
+        "verdict": "REJECT for do",
+        "reason": "It narrows the generic action verb to one specific puzzle activity; authored a person carrying out an ordinary task instead."
+      },
+      {
+        "source": "45/repair-shop.svg",
+        "verdict": "KEEP / ADAPT for repair",
+        "reason": "A mechanic actively works at the car's rear wheel with a tool, directly showing the act of restoring a vehicle part; adapted the location-focused prompt/key to the general repair verb."
+      },
+      {
+        "source": "45/auto-repair-shop.svg",
+        "verdict": "REJECT (less direct alternative)",
+        "reason": "It emphasizes the garage service setting and a raised car; the kneeling mechanic working at a wheel in repair-shop.svg makes the repair action more explicit."
+      },
+      {
+        "source": "51/minus.svg",
+        "verdict": "REJECT for subtract",
+        "reason": "It shows below-zero temperature, the chapter-specific weather sense of minus, not removal of a quantity."
+      },
+      {
+        "source": "21/think-the-world-of-someone.svg",
+        "verdict": "REJECT for think",
+        "reason": "It depicts the idiom of admiring or valuing someone highly, not the general act of thinking."
+      },
+      {
+        "source": "41/think-outside-the-box.svg",
+        "verdict": "REJECT for think",
+        "reason": "It illustrates creative problem solving through an idiom, while this chapter needs the broad mental action of thinking."
+      },
+      {
+        "source": "25/understand.svg",
+        "verdict": "KEEP / ADAPT for understand",
+        "reason": "The listener recognizes the same abstract message first shown in a speaker bubble, with a calm nod and a click-of-recognition cue; this directly teaches grasping an idea or meaning."
+      }
+    ]
+  }
+}

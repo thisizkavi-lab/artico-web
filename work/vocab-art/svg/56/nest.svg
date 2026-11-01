@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: nest (noun)
+  CONTEXTUAL_DEFINITION: A woven bird nest on a tree fork, with eggs cupped safely inside.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero habitat object
+  SYNONYM_GUARD: Use a shallow cup woven from twigs and lined with grasses, high on a forked branch; this is a bird nest, not a mammal burrow or hive.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Frame a branch fork across lower center; build a bowl-shaped nest from overlapping brown twigs at x=87..216 y=95..144, show three pale speckled eggs, a few leaves and soft canopy behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:nest" data-archetype="bird-nest-with-eggs">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#9A704B;--c-secondary:#63452F;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="nest-sky" x2="0" y2="1"><stop stop-color="#DCEAF0"/><stop offset="1" stop-color="#F6F1E6"/></linearGradient>
+  <linearGradient id="nest-bark" x2="0" y2="1"><stop stop-color="#8E6645"/><stop offset="1" stop-color="#59402F"/></linearGradient>
+  <linearGradient id="nest-egg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8F1D7"/><stop offset="1" stop-color="#D8C9A5"/></linearGradient>
+  <filter id="nest-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#nest-sky)"/><path d="M0 134Q79 123 153 136T304 129V192H0Z" fill="#DEE5D7"/><path d="M0 157Q85 147 161 159T304 151V192H0Z" fill="#CAD7C1"/><circle cx="250" cy="42" r="22" fill="#F5D992" opacity=".47"/><path d="M23 130V63m0 39L8 81m15 31 16-20m237 39V57m0 43 16-19m-16 5-13-20" fill="none" stroke="#7B6B4C" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M14 83q11-15 22-5q-5 14-22 5Zm-2 19q12-14 22-4q-6 13-22 4Zm230-27q11-14 21-4q-5 13-21 4Zm12 18q11-13 20-3q-5 12-20 3Z" fill="#78926E"/><path d="M24 140Q107 133 180 141T282 137" fill="none" stroke="url(#nest-bark)" stroke-width="8" stroke-linecap="round"/><path d="M48 137l-8-12m10 12 9-11" fill="none" stroke="#654930" stroke-width="3" stroke-linecap="round"/></g>
+ <g id="layer-focal" filter="url(#nest-shadow)"><path d="M87 107Q99 91 117 96Q143 102 151 94Q166 87 185 96Q207 98 216 111Q205 140 183 147Q142 158 107 143Q92 133 87 107Z" fill="#8E6847" stroke="#59402F" stroke-width="1.5"/><path d="M98 110Q125 123 151 117Q181 124 206 108Q200 133 180 140Q144 151 111 137Z" fill="#705034"/><path d="M95 110l39 20m-28-30 46 29m-30-32 42 29m-31-34 47 29m-33-27 44 22m-38-28 43 18m-96 6 39 25m-22-24 40 22m-19-21 41 17m-24-19 39 10" fill="none" stroke="#B3885E" stroke-width="2" stroke-linecap="round"/><ellipse cx="130" cy="105" rx="15" ry="21" fill="url(#nest-egg)" stroke="#9A896B" stroke-width="1.2"/><ellipse cx="158" cy="103" rx="15" ry="21" fill="url(#nest-egg)" stroke="#9A896B" stroke-width="1.2"/><ellipse cx="184" cy="106" rx="14" ry="20" fill="url(#nest-egg)" stroke="#9A896B" stroke-width="1.2"/><path d="M124 99l3-2m10 11-2 3m16-12 3-2m8 15-2 3m16-10 3-2m7 11-2 2" fill="none" stroke="#B7A883" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M28 134l-4-10m245 10 5-9" fill="none" stroke="#82946F" stroke-width="1.4"/><path d="M114 143q10 8 20 10" fill="none" stroke="#C4A176" stroke-width="1.3"/><path d="M141 146q11 7 22 7" fill="none" stroke="#C4A176" stroke-width="1.3"/><path d="M169 145q10 6 20 4" fill="none" stroke="#C4A176" stroke-width="1.3"/><circle cx="71" cy="123" r="1.4" fill="#D5C39B"/><circle cx="226" cy="132" r="1.2" fill="#D5C39B"/><path d="M106 148q15 6 32 5m28 0q16 0 28-6" fill="none" stroke="#BD9569" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M98 102q11-11 21-7m61-1q12-6 22 1" fill="none" stroke="#D8C29A" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="151" cy="118" rx="65" ry="31" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

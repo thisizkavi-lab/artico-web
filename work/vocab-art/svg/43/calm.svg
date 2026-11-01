@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: calm
+  CONTEXTUAL_DEFINITION: Peaceful and not upset or rushed, even when others are busy.
+  PEDAGOGICAL_ART_DIRECTOR: Keep a worker composed while mild workplace activity happens around them.
+  PEDAGOGICAL_ARCHETYPE: 6 - Composure under pressure
+  SYNONYM_GUARD: Show a settled, unflustered state in the moment; patience is about waiting and allowing others time.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center one relaxed worker seated at a desk, hands resting evenly on the surface. Put light motion marks and a small stack of papers at the far edges but leave a clear quiet halo around the worker.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:calm" data-archetype="composure-under-pressure">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="calm-desk" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="calm-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="calm-halo"><stop stop-color="#DDE8F4" stop-opacity=".84"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="calm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="48" y="102" width="50" height="25" fill="#EAE3D5" stroke="#64748B" stroke-width=".9"/><path d="M55 98 L61 90 H94 V102 H55 Z" fill="#FFFFFF" stroke="#64748B" stroke-width=".8"/><path d="M222 105 L228 96 H259 V108 H222 Z" fill="#FFFFFF" stroke="#64748B" stroke-width=".8"/><path d="M38 134 H266 V145 H38 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M51 145 V155 M253 145 V155" stroke="#965D28" stroke-width="2.1"/><path d="M38 56 L45 51 M43 67 L50 64 M261 49 L268 45 M256 64 L263 61" stroke="#D99A2B" stroke-width="1.4" stroke-linecap="round"/><path d="M53 71 L57 76 L64 68 M239 77 L243 82 L250 74" fill="none" stroke="#8EB0DE" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#calm-shadow)"><path d="M112 125 Q114 101 128 94 L129 84 Q125 80 127 72 Q135 64 146 67 Q156 70 153 81 L151 88 Q165 94 167 122 L164 134 H116 Z" fill="url(#calm-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="141" cy="75" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M132 73 Q134 65 142 65 Q150 66 154 73 Q146 69 139 70 Z" fill="#3D342D"/><path d="M126 99 Q140 95 154 99" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M120 105 L139 113 M160 105 L144 113" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M139 113 L129 117 M144 113 L153 117" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/><path d="M116 123 H162" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><path d="M132 81 Q141 86 150 81" fill="none" stroke="#1E2A3B" stroke-width=".8" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="105" cy="61" r="2" fill="#A8D4A2"/><circle cx="197" cy="61" r="2" fill="#8EB0DE"/><path d="M109 54 Q141 37 173 54 M103 60 Q141 43 179 60" fill="none" stroke="#DDE8F4" stroke-width="1"/><path d="M216 89 L222 85 M83 83 L88 79" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="82" rx="92" ry="65" fill="url(#calm-halo)" opacity=".22"/><path d="M48 129 H98 M219 129 H261" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

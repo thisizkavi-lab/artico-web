@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: cutting board / chopping board (uk) (Noun)
+  CONTEXTUAL_DEFINITION: A sturdy flat board used as a surface for chopping food.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Make the board itself central, with chopped vegetables and a knife resting on it as use cues.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen work surface.
+    - Context_Layer: Pale countertop.
+    - Focal_Layer: Thick wooden board with rounded corners and handle slot.
+    - Details_Layer: Chopped carrot and a chef's knife resting on board.
+    - Lighting_Layer: Warm wood grain highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:cutting board / chopping board (uk)" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 147 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 147 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="166" rx="102" ry="8" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M54 64 Q54 55 64 55 H218 Q229 55 229 66 V137 Q229 147 218 147 H64 Q54 147 54 137Z" fill="#C98B54" stroke="#1E2A3B" stroke-width="2.6"/><path d="M69 67 H213 V135 H69Z" fill="#D69A62" stroke="#8A5A35" stroke-width="1.3"/><path d="M193 59 Q206 52 219 59 Q207 65 194 64Z" fill="#FAF8F3" stroke="#8A5A35" stroke-width="1.2"/></g>
+  <g id="layer-focal"><path d="M118 99 L188 67 Q197 64 201 72 L202 76 L127 111Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.2"/><path d="M185 68 L216 54 Q226 50 229 59 L205 83Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="2"/><path d="M80 111 L97 93 L106 101 L91 120Z M94 126 L109 110 L118 118 L104 133Z M118 134 L132 120 L140 128 L127 141Z" fill="#CE7B55" stroke="#A9543F" stroke-width="1.4"/><path d="M74 86 Q103 75 132 82 M75 130 Q102 139 131 130" fill="none" stroke="#B97840" stroke-width="1.5"/><path d="M192 68 L222 56" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="210" cy="59" r="2" fill="#1E2A3B"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

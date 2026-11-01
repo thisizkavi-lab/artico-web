@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: apply (verb; job application)
+  CONTEXTUAL_DEFINITION: Formally ask to be considered for a job by submitting application materials.
+  PEDAGOGICAL_ART_DIRECTOR: Show an applicant handing a portfolio to a hiring professional across an interview desk.
+  PEDAGOGICAL_ARCHETYPE: 3 - Professional role exchange
+  SYNONYM_GUARD: The Hiring and leaving group selects the job-seeking sense, not applying cream or applying a rule.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set an applicant at x=76..137 on the left and a recruiter at x=211..267 on the right, facing one another across a narrow desk at y=126. A blue application folder passes from the applicant's hand to the recruiter, with quiet paper strokes but no readable marks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:apply" data-archetype="job-application">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="apply-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="apply-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6B477"/><stop offset="1" stop-color="#B6784B"/></linearGradient>
+    <radialGradient id="apply-focus"><stop stop-color="#FFF1B9" stop-opacity=".77"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="apply-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="apply-folder-shape" d="M124 91 H177 Q181 91 181 95 V124 H119 V98 Q119 91 124 91 Z"/>
+    <clipPath id="apply-folder-clip"><use href="#apply-folder-shape"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="154" cy="165" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Hiring room and interview desk -->
+  <g id="layer-context"><path d="M32 148 H271" stroke="#C88446" stroke-width="2"/><rect x="38" y="41" width="43" height="51" rx="4" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M44 48 H75 M44 55 H71 M44 62 H74" stroke="#94A3B8" stroke-width="1.2"/><circle cx="59" cy="75" r="8" fill="#A8D4A2" stroke="#64748B" stroke-width="1.2"/><path d="M233 41 H268 V91 H233 Z" fill="#EEF4FA" stroke="#64748B" stroke-width="1.4"/><path d="M240 50 H260 M240 57 H257 M240 65 H260" stroke="#94A3B8" stroke-width="1.2"/><path d="M45 124 H260 V137 H45 Z" fill="url(#apply-table)" stroke="#1E2A3B" stroke-width="2"/><path d="M56 137 V153 M249 137 V153" stroke="#965D28" stroke-width="3" stroke-linecap="round"/><path d="M111 125 H193" stroke="#F1C48F" stroke-width="1.8"/></g>
+  <!-- 3. Applicant meets recruiter and submits a portfolio -->
+  <g id="layer-focal" filter="url(#apply-shadow)"><circle cx="94" cy="74" r="12" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M82 73 Q83 60 94 60 Q105 61 106 72 Q98 66 92 68 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M71 117 Q72 91 94 90 Q116 91 117 117 L111 126 H76 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M88 91 L94 99 L100 91 L99 116 H90 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="210" cy="73" r="12" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M198 72 Q198 60 210 60 Q221 60 222 72 Q215 66 208 68 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1.3"/><path d="M188 117 Q189 91 210 90 Q232 91 233 117 L227 126 H193 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2.3"/><path d="M204 92 L210 99 L216 92 L215 116 H205 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2"/><path d="M110 106 Q120 99 130 105 L144 113 L140 119 L126 114 L115 120 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M137 111 Q144 109 149 114 L146 120 L138 119 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><use href="#apply-folder-shape" fill="url(#apply-folder)" stroke="#1E2A3B" stroke-width="2.2"/><g clip-path="url(#apply-folder-clip)"><path d="M117 103 Q149 92 184 104 V129 H117Z" fill="#3D5F91"/><path d="M125 98 H160" stroke="#BBD2EF" stroke-width="1.8"/><path d="M124 105 H160 M124 111 H153" stroke="#EAF2FC" stroke-width="1.2"/></g><use href="#apply-folder-shape" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M179 104 Q189 97 198 103 L207 110 L202 116 L190 111 L180 117 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.9"/><path d="M199 108 Q205 106 210 112 L206 118 L199 116 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.3"/><path d="M94 80 Q99 82 103 79 M210 79 Q214 81 217 78" fill="none" stroke="#1E2A3B" stroke-width="1.1" stroke-linecap="round"/></g>
+  <!-- 4. Application pages and a respectful greeting -->
+  <g id="layer-details"><path d="M128 97 H160 M128 103 H153 M128 109 H159" stroke="#EAF2FC" stroke-width="1.1"/><path d="M160 111 H174" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/><path d="M169 107 L176 111 L169 115 Z" fill="#4A72B2"/><circle cx="79" cy="114" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M76 113 Q79 108 82 113" fill="none" stroke="#965D28" stroke-width="1"/><rect x="47" y="100" width="19" height="15" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M51 105 H62 M51 109 H60" stroke="#94A3B8" stroke-width="1"/></g>
+  <!-- 5. Focus on the submitted job materials -->
+  <g id="layer-lighting"><ellipse cx="151" cy="105" rx="47" ry="33" fill="url(#apply-focus)"/><ellipse cx="151" cy="108" rx="35" ry="23" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4" opacity=".74"/><path d="M125 96 H146" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M157 81 L157 73 M153 77 H161" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: take an exam (Verb phrase)
+  CONTEXTUAL_DEFINITION: Complete a formal supervised examination.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a formal exam setting with separated desks, multiple-page paper, and an invigilator, distinct from a brief classroom test.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Large quiet examination hall.
+    - Context_Layer: Rows of desks, wall clock, and proctor.
+    - Focal_Layer: Student writes carefully in a multi-page exam booklet.
+    - Details_Layer: Empty space between desks and stacked question pages.
+    - Lighting_Layer: Formal, even light across the room.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:take an exam" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="take-exam-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="take-exam-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#take-exam-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H91V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 25V74M21 49H90" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="251" cy="34" r="15" fill="#FFFEFA" stroke="#64748B" stroke-width="1.4"/><path d="M251 24V34L258 39" fill="none" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/><path d="M31 121H93V127H31Z" fill="#A98A64"/><path d="M38 127V149M85 127V149" stroke="#8D765A" stroke-width="2.4"/><path d="M232 119H281V125H232Z" fill="#A98A64"/><path d="M238 125V149M275 125V149" stroke="#8D765A" stroke-width="2.4"/><circle cx="211" cy="75" r="8" fill="#80513F" stroke="#1E2A3B" stroke-width="1"/><path d="M203 75Q204 65 212 66Q220 67 219 76" fill="#27364B"/><path d="M198 84Q211 80 224 84L227 104H196Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#take-exam-shadow)"><path d="M75 108H230V117H75Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M86 117V149M218 117V149" stroke="#8D765A" stroke-width="3"/><circle cx="144" cy="65" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M132 65Q133 50 145 51Q157 52 156 66L150 69Q147 58 141 59Q137 60 135 71Z" fill="#27364B"/><path d="M126 83Q143 76 160 83L166 104L154 114L132 107Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M133 86L149 98L174 97M158 86L169 96L179 94" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M133 86L149 98L174 97M158 86L169 96L179 94" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M135 109L129 149M153 110L165 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M171 79L208 76L213 104L175 107Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.5"/><path d="M178 86L202 84M179 93L204 91M180 100L200 98" stroke="#88A9D0" stroke-width="1.2"/><path d="M177 76L214 73L215 79L178 82Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1"/><path d="M170 102L178 95" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M131 76Q144 82 157 76" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M204 91L209 91" stroke="#D9857F" stroke-width="1.2"/><path d="M193 112L211 112" stroke="#E7B99B" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="92" rx="128" ry="70" fill="#FEF9C3" opacity=".08"/><path d="M20 25H91V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M75 108H230" stroke="#FFFFFF" stroke-width=".8" opacity=".5"/></g>
+</svg>

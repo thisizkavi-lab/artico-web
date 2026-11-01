@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: get into debt (verb phrase)
+  CONTEXTUAL_DEFINITION: To begin owing money by repeatedly spending more than is available.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action and accumulating consequence
+  SYNONYM_GUARD: Show the process of obligations accumulating around spending; unlike “debt,” this card depicts entering the owed state.
+  MODE: STATIC action sequence
+  COORDINATE_BLUEPRINT: Shopper swipes a card while an account coin stack shrinks; blank unpaid bills pile up and tip forward behind; red dotted path descends below account line.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:get into debt" data-archetype="action-consequence">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="getdebt-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="getdebt-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="getdebt-bills" d="M175 46 H266 V59 H175 Z M181 62 H272 V75 H181 Z M169 78 H261 V91 H169 Z"/>
+    <clipPath id="getdebt-stack-clip"><rect x="163" y="41" width="114" height="57" rx="3"/></clipPath>
+    <filter id="getdebt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="164" rx="113" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Account funds diminish as obligations rise -->
+  <g id="layer-context"><path d="M27 119 H145 V141 H27 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><path d="M36 127 H136" stroke="#94A3B8" stroke-width="1.6"/><ellipse cx="52" cy="120" rx="9" ry="4.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.3"/><path d="M164 105 H278" stroke="#64748B" stroke-width="2"/><path d="M166 107 L178 99 L191 109 L203 93 L216 105 L229 88 L241 101 L254 83 L272 100" fill="none" stroke="#CE3D4E" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <!-- 3. Primary shopper charges a purchase while bills accumulate -->
+  <g id="layer-focal" filter="url(#getdebt-shadow)"><path d="M47 62 Q48 54 57 54 H115 Q124 54 124 63 V99 H47 Z" fill="url(#getdebt-card)" stroke="#1E2A3B" stroke-width="2.3"/><rect x="57" y="65" width="17" height="13" rx="2" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M80 87 H112" stroke="#DCECFB" stroke-width="2"/><path d="M84 123 C87 101 101 92 118 96 Q134 100 136 123" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2"/><path d="M78 151 Q80 126 108 123 Q133 123 141 151 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M87 129 L101 139 L116 129" fill="#E5E9F0" stroke="#1E2A3B" stroke-width="1.5"/><g clip-path="url(#getdebt-stack-clip)"><rect x="162" y="40" width="116" height="60" fill="#E5E9F0"/></g><rect x="175" y="46" width="91" height="13" rx="2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.7"/><rect x="181" y="62" width="91" height="13" rx="2" fill="#F7DDE0" stroke="#1E2A3B" stroke-width="1.7"/><rect x="169" y="78" width="92" height="13" rx="2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.7"/><path d="M182 51 H246 M188 67 H255 M176 83 H239" stroke="#94A3B8" stroke-width="1.3"/></g>
+  <!-- 4. Card swipe, shrinking funds and falling into a shortfall -->
+  <g id="layer-details"><path d="M49 105 H121" stroke="#4A72B2" stroke-width="2.1" stroke-dasharray="4 4"/><path d="M118 100 L126 105 L118 110 Z" fill="#4A72B2"/><path d="M134 116 V142" stroke="#CE3D4E" stroke-width="5" stroke-linecap="round"/><path d="M125 134 L134 148 L143 134 Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="61" cy="137" rx="8" ry="4" fill="url(#getdebt-coin)" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="89" cy="138" rx="6" ry="3.4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M164 48 H171 M170 64 H177 M158 80 H165" stroke="#CE3D4E" stroke-width="1.7"/></g>
+  <!-- 5. Accumulation and risk highlight -->
+  <g id="layer-lighting"><path d="M169 39 L169 47 M165 43 H173" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M49 59 H78" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="136" cy="144" rx="16" ry="7" fill="#F7DDE0" opacity=".55"/></g>
+</svg>

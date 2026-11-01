@@ -1,0 +1,314 @@
+{
+  "chapter": 68,
+  "chapter_title": "Sickness",
+  "palette": [
+    "#F0EEE8",
+    "#C8B89E",
+    "#26384A",
+    "#597D8B",
+    "#B85E5A",
+    "#D6A64C",
+    "#798C72",
+    "#F6E5CE",
+    "#E7D6D1"
+  ],
+  "recurring_scale_anchors": [
+    "304×192 canvas; keep symptoms and first-aid cues readable but mild, non-graphic and suitable for general vocabulary learning.",
+    "No readable words, labels, numbers or brands; use clear silhouettes, body-location highlights and simple medical objects only.",
+    "Use the chapter group to resolve ambiguous terms: rash is a skin eruption, burn is a skin injury, cut is a wound, cold is the common illness, temperature is body temperature, and ER is the emergency room.",
+    "Differentiate overlapping symptoms through body location, posture and one specific medical cue; do not use a thermometer as the only cue for every illness.",
+    "Avoid blood, bodily fluids and severe injury details; imply care with a bandage, ice pack, inhaler, tissue or clinic when relevant."
+  ],
+  "polysemy_resolution_table": {
+    "ache": "A continuous dull physical pain, shown by a person rubbing a sore body area; broader and more persistent than one sharp pain.",
+    "backache": "Dull pain in the lower back, clearly located along the lumbar area.",
+    "cough": "A forceful expulsion from the throat or lungs, shown as coughing into a bent elbow or tissue.",
+    "fever": "An abnormally high body temperature, shown by a flushed, chilled person and thermometer.",
+    "headache": "Pain in the head, shown by pressing the temples; keep the cue mild and distinct from migraine.",
+    "hurt": "To cause physical pain or injury to someone, shown by a person reacting to a gentle accidental bump.",
+    "ill": "Generally unwell with a need to rest or receive care; not specifically nausea.",
+    "itchy": "A prickly skin sensation that makes a person scratch a small area.",
+    "migraine": "A severe headache with strong light sensitivity, represented by a darkened room and one-sided head pain.",
+    "pain": "A physical unpleasant sensation localized in a body area, broader and less specifically dull than ache.",
+    "painful": "An action or body area that hurts when touched or moved, shown through a guarded movement.",
+    "runny nose": "A congested nose with clear nasal discharge and tissues; keep it separate from a sneeze in progress.",
+    "sick": "Unwell with nausea or stomach discomfort in this illness context; distinguish from broadly ill.",
+    "sneeze": "A sudden burst of air from nose and mouth, with a tissue covering both.",
+    "sore": "A body part tender and painful when touched, shown as a localized sensitive spot without an open wound.",
+    "sore throat": "A painful, irritated throat, shown by a person gently holding their throat and a simple throat illustration.",
+    "stomachache / stomach ache": "Pain in the abdomen, with a hand pressing the belly; distinguish from lower-right appendicitis.",
+    "swollen": "A body part enlarged by inflammation, such as a puffed ankle; no broken bone is implied.",
+    "symptom / symptoms": "Observable signs of illness, shown by a small set of distinct cues such as cough, fever and rash.",
+    "temperature": "A person’s body temperature measured with a clinical thermometer; not outdoor air or weather temperature.",
+    "vomit": "To bring stomach contents up; imply nausea and a nearby basin without graphic contents.",
+    "rash": "A patch of irritated spots on skin, using the sickness noun sense; not the adjective meaning reckless.",
+    "accident": "An unintended mishap that causes a mild injury, shown by a stumble or dropped object; not chance in the abstract.",
+    "bite": "A small animal bite wound or tooth mark in the injury context; not taking a bite from food.",
+    "bleed": "Blood coming from a small wound; use a minimal red mark or bandage, never graphic detail.",
+    "broken bone": "A fracture represented through a simple X-ray or a supported cast; not a visible bone.",
+    "bruise": "A purple discoloration under intact skin after a bump.",
+    "burn": "A mild heat injury to skin with a small red tender patch; not a flame or fuel burning.",
+    "cut (wound)": "A small superficial opening in skin made by a sharp edge; not food preparation.",
+    "injury": "Physical harm from an accident, represented by a guarded limb or a bandage; broader than a bruise or cut.",
+    "nosebleed": "A small amount of blood from the nose, with tissue held under the nostrils; keep it mild.",
+    "splinter": "A tiny sliver of wood embedded in a fingertip and removed with tweezers.",
+    "sprain": "A twisted ligament around an ankle or wrist, shown with gentle swelling and a support wrap; not a fracture.",
+    "sting": "A small insect puncture and the painful reaction, such as the bee stinging a fingertip; not an animal bite.",
+    "allergies": "An immune reaction such as itchy eyes and skin after exposure to common triggers; broader than pollen hay fever.",
+    "appendicitis": "Inflammation in the lower-right abdomen, represented by a simple body-location diagram and medical care.",
+    "asthma": "Breathing difficulty eased by an inhaler, without distress or emergency framing.",
+    "chickenpox": "A child with a mild, widespread itchy spotted rash; distinguish from a small localized rash.",
+    "cold (sickness)": "The common cold with congestion, tissues and mild fatigue; not cold weather or chills alone.",
+    "diabetes": "A person checks blood glucose with a meter or uses routine insulin care; no diagnosis text or numbers.",
+    "diarrhea": "Digestive illness causing urgent bathroom use and stomach cramping; imply the symptom without bodily fluids.",
+    "eczema": "A dry, irritated skin patch, shown as a localized recurring condition; not an infectious rash.",
+    "flu": "A strong viral illness with bed rest, fever and body aches; distinguish from a mild common cold.",
+    "food poisoning": "Sudden stomach illness after eating contaminated food; use a questionable meal and nausea cue, no graphic vomiting.",
+    "hay fever": "Pollen allergy with watery eyes and sneezing outdoors near flowering plants; more specific than general allergies.",
+    "high blood pressure": "Elevated blood pressure being checked with a cuff and gauge; no numbers or labels.",
+    "indigestion": "Upper-abdominal discomfort after a meal, shown by a full plate and a person rubbing the upper stomach.",
+    "infection": "Germs entering a small wound or causing localized inflammation; use a simple magnified germ cue.",
+    "insomnia": "Difficulty sleeping at night, shown by an awake person in bed under moonlight.",
+    "measles": "A widespread spotted viral rash with a mildly unwell child; not a few chickenpox-like blisters.",
+    "mumps": "Swelling around the cheeks and jaw, with a mild sore face cue.",
+    "stress": "Emotional or mental strain shown by a tense posture and crowded everyday demands; not physical pressure.",
+    "tonsillitis": "Inflamed tonsils visible as red spots at the back of a simple mouth/throat diagram.",
+    "virus": "A generic microscopic virus particle with a spiky envelope under magnification; not a named disease.",
+    "doctor": "A medical professional examining and helping a patient; keep the existing stethoscope-and-patient illustration if clear.",
+    "ER": "Emergency room / emergency department care, shown by an urgent hospital entrance and ambulance; not the chemical element erbium.",
+    "urgent care": "A walk-in clinic for prompt but non-emergency treatment; distinguish from an ambulance-led emergency room."
+  },
+  "glossary_context_notes": [
+    "The lesson groups resolve rash as a skin symptom, burn and cut as injuries, cold as the common illness, body temperature as a clinical measurement and ER as emergency room.",
+    "Separate ache, pain, painful, sore and hurt through duration, location and action; separate a bite from a sting, and a sprain from a broken bone.",
+    "Keep clinical cues low detail and non-graphic; avoid readable text and numerical readings."
+  ],
+  "existing_asset_triage": {
+    "lesson_68": "Reviewed same-term assets from prior lessons and the current fever card. Keep medically accurate symptom and care illustrations; reject weather, food-preparation and fire-only senses.",
+    "reviewed_candidates": [
+      {
+        "source": "68/fever.svg",
+        "verdict": "KEEP / ADAPT for fever",
+        "reason": "The card clearly shows a flushed ill person, a cooling patch and a clinical thermometer; add the required five layer groups and a lesson prompt while preserving its rendering."
+      },
+      {
+        "source": "14/cough.svg",
+        "verdict": "KEEP / ADAPT for cough",
+        "reason": "It shows a person coughing into the bent elbow, the correct respiratory-health cue for this lesson."
+      },
+      {
+        "source": "14/sneeze.svg",
+        "verdict": "KEEP / ADAPT for sneeze",
+        "reason": "The tissue covers the nose and mouth while sudden motion marks show a sneeze, distinct from the cough candidate."
+      },
+      {
+        "source": "14/sore.svg",
+        "verdict": "KEEP / ADAPT for sore",
+        "reason": "A hand gently protects one tender shoulder spot; it shows soreness without an open cut."
+      },
+      {
+        "source": "51/temperature.svg",
+        "verdict": "REJECT for temperature",
+        "reason": "The thermometer is outdoors with sun and landscape cues, so it teaches ambient weather temperature, not body temperature."
+      },
+      {
+        "source": "32/bite.svg",
+        "verdict": "REJECT for bite",
+        "reason": "It shows a hand taking a bite from an apple; this is food eating, not an injury bite."
+      },
+      {
+        "source": "14/bruise.svg",
+        "verdict": "KEEP / ADAPT for bruise",
+        "reason": "A clear purple mark lies beneath intact skin, which directly teaches a bruise."
+      },
+      {
+        "source": "78/burn.svg",
+        "verdict": "REJECT for burn",
+        "reason": "A flame burns in a pan, not a skin injury."
+      },
+      {
+        "source": "14/burn.svg",
+        "verdict": "KEEP / ADAPT for burn",
+        "reason": "A small red tender patch on intact skin with a cool compress clearly shows a mild burn injury."
+      },
+      {
+        "source": "14/cut.svg",
+        "verdict": "KEEP / ADAPT for cut (wound)",
+        "reason": "It shows a narrow superficial skin cut and a nearby bandage without a food-preparation scene."
+      },
+      {
+        "source": "33/cut.svg",
+        "verdict": "REJECT for cut (wound)",
+        "reason": "A knife cuts a tomato on a board, which is food preparation rather than a wound."
+      },
+      {
+        "source": "56/sting.svg",
+        "verdict": "KEEP / ADAPT for sting",
+        "reason": "A bee’s stinger contacts a fingertip, directly teaching an insect sting."
+      },
+      {
+        "source": "51/cold.svg",
+        "verdict": "REJECT for cold (sickness)",
+        "reason": "The person is shivering in snowy weather, teaching low temperature rather than the common cold."
+      },
+      {
+        "source": "34/doctor.svg",
+        "verdict": "KEEP / ADAPT for doctor",
+        "reason": "A doctor with a stethoscope examines a patient, a clear medical-care scene."
+      },
+      {
+        "source": "27/emergency.svg",
+        "verdict": "REJECT for ER",
+        "reason": "It shows a household pan fire and responders, teaching a general emergency rather than the hospital emergency room."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "ache",
+      "backache",
+      "cough",
+      "fever",
+      "headache"
+    ],
+    [
+      "hurt",
+      "ill",
+      "itchy",
+      "migraine",
+      "pain"
+    ],
+    [
+      "painful",
+      "runny nose",
+      "sick",
+      "sneeze",
+      "sore"
+    ],
+    [
+      "sore throat",
+      "stomachache / stomach ache",
+      "swollen",
+      "symptom / symptoms",
+      "temperature"
+    ],
+    [
+      "vomit",
+      "rash",
+      "accident",
+      "bite",
+      "bleed"
+    ],
+    [
+      "broken bone",
+      "bruise",
+      "burn",
+      "cut (wound)",
+      "injury"
+    ],
+    [
+      "nosebleed",
+      "splinter",
+      "sprain",
+      "sting",
+      "allergies"
+    ],
+    [
+      "appendicitis",
+      "asthma",
+      "chickenpox",
+      "cold (sickness)",
+      "diabetes"
+    ],
+    [
+      "diarrhea",
+      "eczema",
+      "flu",
+      "food poisoning",
+      "hay fever"
+    ],
+    [
+      "high blood pressure",
+      "indigestion",
+      "infection",
+      "insomnia",
+      "measles"
+    ],
+    [
+      "mumps",
+      "stress",
+      "tonsillitis",
+      "virus",
+      "doctor"
+    ],
+    [
+      "ER",
+      "urgent care"
+    ]
+  ],
+  "batch_review_notes": [
+    {
+      "batch": 9,
+      "terms": [
+        "diarrhea",
+        "eczema",
+        "flu",
+        "food poisoning",
+        "hay fever"
+      ],
+      "candidate_search": "No exact same-term source illustrations were available for this batch.",
+      "visual_decisions": [
+        "Revised diarrhea restroom fixture to a clear toilet after full-size review.",
+        "Kept all five authored medical scenes mild and non-graphic; reviewed each compiled render."
+      ]
+    },
+    {
+      "batch": 10,
+      "terms": [
+        "high blood pressure",
+        "indigestion",
+        "infection",
+        "insomnia",
+        "measles"
+      ],
+      "candidate_search": "No exact same-term source illustrations were available for these five terms.",
+      "visual_decisions": [
+        "Made the pressure cuff legible on the upper arm and paired it with an unnumbered gauge.",
+        "Located indigestion discomfort high in the abdomen beside a partly eaten meal.",
+        "Used a magnified germ cue for a mild inflamed wound.",
+        "Made insomnia clearly nighttime wakefulness.",
+        "Revised the neighboring chickenpox card to use highlighted vesicles, distinguishing it from the flat, widespread measles rash."
+      ]
+    },
+    {
+      "batch": 11,
+      "terms": [
+        "mumps",
+        "stress",
+        "tonsillitis",
+        "virus",
+        "doctor"
+      ],
+      "candidate_search": "A clear same-term doctor consultation was available in Lesson 34; no matching cards were available for the other four terms.",
+      "visual_decisions": [
+        "Adapted the doctor with stethoscope, patient and chart.",
+        "Localized mumps swelling to both jaw-side cheeks.",
+        "Used a work-pressure setting for stress.",
+        "Added a mouth inset with two enlarged tonsils to distinguish tonsillitis from generic sore throat.",
+        "Showed a single enveloped particle with surface spikes for virus, distinct from a cluster of germs."
+      ]
+    },
+    {
+      "batch": 12,
+      "terms": [
+        "ER",
+        "urgent care"
+      ],
+      "candidate_search": "Rejected a household-fire emergency illustration as the wrong sense for ER; no urgent-care illustration was available.",
+      "visual_decisions": [
+        "ER: hospital emergency entrance, ambulance and trolley.",
+        "Urgent care: calm walk-in clinic and a walking patient with a minor bandaged injury. Corrected the ER data key to the inventory spelling 68:er."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: go on a vacation
+  CONTEXTUAL_DEFINITION: Leave home to begin a period of leisure travel.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler actively leaving home with luggage toward an airplane and sunny destination.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Emphasize setting out on the holiday, not simply relaxing at a beach after arrival.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A traveler rolls a suitcase from an open home doorway along a curved route toward a sunny resort and waiting airplane.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:go on a vacation" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gov-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ADD6DC"/><stop offset="1" stop-color="#F3E5C8"/></linearGradient>
+  <linearGradient id="gov-door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B48B62"/><stop offset="1" stop-color="#775A41"/></linearGradient>
+  <linearGradient id="gov-road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#D9A44F"/></linearGradient>
+  <filter id="gov-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gov-sky)"/><path d="M17 18H287V147H17Z" fill="#E8E6DB" stroke="#63757A" stroke-width="1.4"/><path d="M17 147H287V184H17Z" fill="#B8B6AB"/><path d="M20 168H285" stroke="#EAE4D8" stroke-width="1.1"/><circle cx="254" cy="39" r="16" fill="#F2C14E"/><path d="M231 119L248 98L266 119Z" fill="#89745A" stroke="#1E2A3B" stroke-width="1"/><path d="M244 119V105H257V119" fill="#D8C5A5"/><path d="M246 109H250V114H246M252 109H256V114H252" fill="#9CC5C8"/></g>
+ <g id="layer-context"><path d="M31 44H86V147H31Z" fill="url(#gov-door)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M38 51H80V142H38Z" fill="#A3815E" stroke="#D8BF95" stroke-width="1"/><path d="M66 92L74 96" stroke="#F2C14E" stroke-width="2"/><path d="M21 18V148" stroke="#63757A" stroke-width="1.2"/><path d="M28 148H89" stroke="#63757A" stroke-width="1.2"/><path d="M86 143Q123 128 151 129T208 113T254 101" fill="none" stroke="#CFD7D0" stroke-width="18"/><path d="M86 143Q123 128 151 129T208 113T254 101" fill="none" stroke="url(#gov-road)" stroke-width="4"/></g>
+ <g id="layer-focal" filter="url(#gov-shadow)"><circle cx="111" cy="82" r="8" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M99 93Q111 87 123 93L127 119H95Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M101 116L98 143H108L113 120M116 120L122 143H132L126 114" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><path d="M100 98L92 106M121 98L130 103" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><rect x="126" y="119" width="21" height="34" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M131 119V114Q131 109 136.5 109Q142 109 142 114V119" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M131 131H142M131 147H142" stroke="#91A1A5" stroke-width="1"/><path d="M220 61Q239 45 258 55L278 66L258 77H226Z" fill="#F7F6EF" stroke="#1E2A3B" stroke-width="1.3"/><path d="M240 55L235 43L241 43L253 57M255 57L266 48L271 50L265 62" fill="#E3E9E3" stroke="#1E2A3B" stroke-width=".9"/><path d="M266 64L281 59L290 66L280 71Z" fill="#DFE6E0" stroke="#1E2A3B" stroke-width=".8"/><path d="M262 95L275 90L287 95L275 99Z" fill="#E7D3A7" stroke="#9A703C" stroke-width=".9"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="167" rx="111" ry="5" fill="#526274" opacity=".16"/><path d="M19 19H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="174" cy="126" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="104" rx="128" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

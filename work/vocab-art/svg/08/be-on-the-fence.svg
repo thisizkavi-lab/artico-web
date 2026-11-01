@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: be on the fence (Phrase)
+  CONTEXTUAL_DEFINITION: To be unable to decide between two choices.
+  PEDAGOGICAL_ARCHETYPE: 3 (Human reaction between two visible alternatives)
+  SYNONYM_GUARD: The person straddles the fence while balancing toward two different options.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open green field and two paths that divide at the fence.
+    - Context_Layer: Fence rails and two distinct choice markers.
+    - Focal_Layer: Person sits astride the top rail, one leg on each side.
+    - Details_Layer: Uncertain expression and open balancing arms.
+    - Lighting_Layer: Equal highlights on both options.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:be on the fence" data-archetype="expressive-bust">
+  <defs><linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#DCEAD6"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#field)"/><path d="M0 146 Q152 139 304 146 L304 192 L0 192Z" fill="#BFD3B5"/><ellipse cx="152" cy="164" rx="111" ry="8" fill="#98B68C"/><path d="M151 146 L47 190 M152 146 L258 190" stroke="#8EB0DE" stroke-width="2.2" stroke-dasharray="5 5"/></g>
+  <g id="layer-context"><path d="M22 150 L282 150 M22 127 L282 127" stroke="#B97840" stroke-width="10" stroke-linecap="round"/><path d="M42 107 L42 173 M93 107 L93 173 M211 107 L211 173 M262 107 L262 173" stroke="#8D552E" stroke-width="6" stroke-linecap="round"/><path d="M32 101 L49 84 L66 101 L66 112 L32 112Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M238 88 L272 88 L272 113 L238 113Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.8"/><path d="M245 88 Q248 78 255 78 L263 78 Q269 78 271 88" fill="none" stroke="#1E2A3B" stroke-width="2"/><circle cx="49" cy="98" r="4" fill="#F2C14E"/><circle cx="255" cy="98" r="4" fill="#F2C14E"/></g>
+  <g id="layer-focal"><path d="M130 72 Q151 64 173 72 L179 101 Q174 108 153 108 Q132 108 126 101Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="151" cy="52" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.9"/><path d="M132 51 Q133 32 152 33 Q169 34 170 52 Q160 43 150 44Z" fill="#27364B"/><path d="M140 53 Q144 49 147 53 M155 53 Q159 49 162 53" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M141 62 Q151 58 161 62" fill="none" stroke="#A34F47" stroke-width="1.7"/>
+    <path d="M131 75 Q113 73 99 59 L93 65 Q105 84 129 91Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M94 64 Q87 59 82 61 L78 66 L86 73 L96 72Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M171 75 Q190 73 204 59 L210 65 Q198 84 174 91Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M209 64 Q216 59 221 61 L225 66 L217 73 L207 72Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/>
+    <path d="M135 101 Q127 111 111 121 L103 119 L100 114 Q115 103 130 96Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M169 101 Q177 111 193 121 L201 119 L204 114 Q189 103 174 96Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M92 120 Q103 114 112 121 L110 126 L91 126Z M194 121 Q203 114 214 120 L215 126 L196 126Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M143 24 L148 15 L153 24 L162 29 L153 34 L148 43 L143 34 L134 29Z" fill="#F2C14E"/><path d="M84 43 L89 35 L94 43 L102 47 L94 51 L89 59 L84 51 L76 47Z" fill="#F2C14E"/><path d="M207 43 L212 35 L217 43 L225 47 L217 51 L212 59 L207 51 L199 47Z" fill="#F2C14E"/><path d="M137 70 Q151 65 166 70" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/></g>
+  <g id="layer-lighting"><path d="M24 127 L280 127 M23 150 L281 150" stroke="#FFFFFF" stroke-width="1.6" opacity="0.55"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

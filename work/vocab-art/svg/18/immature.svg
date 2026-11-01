@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: immature (Adjective)
+  CONTEXTUAL_DEFINITION: Acting childishly instead of handling a small problem responsibly.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: An adult sulks and stomps after a minor game loss while peers wait; the behavior, not age or fruit ripeness, is the cue.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Friendly board-game table.
+    - Context_Layer: Two peers calmly put game pieces away.
+    - Focal_Layer: Adult pouts with folded arms and a heavy foot stomp.
+    - Details_Layer: Fallen game piece, furrowed brows, stomp marks.
+    - Lighting_Layer: Muted contrast around the childish reaction.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:immature" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9857F;--c-secondary:#A95059;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="129" ry="8" fill="#EAE3D5"/><path d="M26 120H278L270 132H34Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.7"/><path d="M45 132V157M259 132V157" stroke="#805333" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="53" cy="68" r="15" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M38 68Q39 52 53 53Q68 54 68 69L63 73H41Z" fill="#35404B"/><path d="M35 89Q53 83 70 89L75 116H30Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M45 68H50M57 68H62M45 77Q53 81 61 77" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M38 94L30 106M66 94L76 105" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><circle cx="245" cy="68" r="15" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M230 68Q231 52 245 53Q260 54 260 69L255 73H233Z" fill="#805333"/><path d="M227 89Q245 83 262 89L267 116H222Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M237 68H242M249 68H254M239 77Q246 80 253 77" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M234 95L225 106M258 95L267 106" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="150" cy="98" rx="62" ry="71" fill="#E3E8F0" opacity=".65"/><circle cx="150" cy="56" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M130 56Q130 34 150 35Q170 36 170 58L163 63Q159 47 148 47Q138 48 132 64Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M126 82Q150 75 174 82L182 125H118Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.5"/><path d="M132 90L145 105L168 91M168 90L155 105L132 91" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M125 125L127 160H143L149 128M156 128L164 160H181L176 125" fill="#A95059" stroke="#1E2A3B" stroke-width="2"/><path d="M163 158L180 160L180 166H162Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.7"/><path d="M138 58L145 61M155 61L162 58M139 72Q150 67 161 72" fill="none" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><rect x="139" y="105" width="10" height="10" rx="2" fill="#D9A441" stroke="#805333" stroke-width="1.4"/><path d="M170 147L178 142M174 153L185 151M130 153L121 149" stroke="#D9857F" stroke-width="2" stroke-linecap="round"/><path d="M137 43L131 38M163 43L169 38" stroke="#D9A441" stroke-width="1.8"/><circle cx="123" cy="72" r="2" fill="#7B8A9E"/><circle cx="177" cy="72" r="2" fill="#7B8A9E"/></g>
+  <g id="layer-lighting"><path d="M140 39Q150 35 160 39" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".58"/><ellipse cx="150" cy="98" rx="62" ry="71" fill="none" stroke="#7B8A9E" stroke-width="1.3" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

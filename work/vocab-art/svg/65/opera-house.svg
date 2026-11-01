@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: opera house
+ CONTEXTUAL_DEFINITION: A grand formal venue built for opera and other live performances.
+ PEDAGOGICAL_ARCHETYPE: grand opera house exterior
+ SYNONYM_GUARD: Show a monumental performing-arts building with classical columns and a glimpse of stage curtains, not a movie cinema facade.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A stately stone facade with a pediment and columns frames a tall central open entrance; red velvet curtains and warm stage light are visible inside.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:opera house" data-archetype="grand opera house exterior">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 159H304V192H0Z" fill="#C8B89E"/><path d="M0 159H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M25 73L152 25L279 73Z" fill="#D6A64C" stroke="#9A7955" stroke-width="1.5"/><path d="M41 70L152 34L263 70Z" fill="#F5E6CE"/>
+  <path d="M30 72H274V84H30Z" fill="#B85E5A"/><path d="M35 84H269V145H35Z" fill="#E8D9C4"/>
+  <path d="M23 145H281V154H23Z" fill="#D6A64C"/><path d="M39 154H265V159H39Z" fill="#8E7962"/>
+  <path d="M116 145V93Q116 83 126 83H178Q188 83 188 93V145Z" fill="#26384A"/>
+  <path d="M124 142V96Q124 91 130 91H174Q180 91 180 96V142Z" fill="#B85E5A"/>
+  <path d="M131 92Q144 102 151 93Q161 103 173 92V140H131Z" fill="#D17A6B"/>
+ </g>
+ <g id="layer-context">
+  <path d="M54 83V144M78 83V144M102 83V144M202 83V144M226 83V144M250 83V144" stroke="#D6A64C" stroke-width="3" fill="none"/>
+  <path d="M48 86H59M72 86H83M96 86H107M197 86H208M221 86H232M245 86H256" stroke="#F7E8CD" stroke-width="2" fill="none"/>
+  <path d="M46 145H62M70 145H86M94 145H110M194 145H210M218 145H234M242 145H258" stroke="#8B755D" stroke-width="1.2" fill="none"/>
+  <path d="M31 147L43 159M273 147L261 159" stroke="#9A7955" stroke-width="1.4" fill="none"/>
+  <path d="M136 105Q151 98 166 105V138H136Z" fill="#D6A64C" opacity=".23"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M144 31H160V41H144Z" fill="#B85E5A"/><path d="M152 23V31" stroke="#8C624C" stroke-width="2" fill="none"/>
+  <circle cx="151" cy="117" r="4" fill="#D6A64C"/><path d="M145 122Q151 118 157 122L159 139H143Z" fill="#597D8B"/>
+  <circle cx="76" cy="151" r="3" fill="#D29A78"/><path d="M72 154H80L82 159H70Z" fill="#26384A"/>
+  <circle cx="228" cy="151" r="3" fill="#D29A78"/><path d="M224 154H232L234 159H222Z" fill="#26384A"/>
+  <path d="M136 110L130 105m38 5 6-5" stroke="#D29A78" stroke-width="2" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <circle cx="45" cy="76" r="2" fill="#D6A64C"/><circle cx="259" cy="76" r="2" fill="#D6A64C"/>
+  <path d="M105 72H199M119 77H185" stroke="#9F835F" stroke-width="1.2" fill="none"/>
+  <path d="M124 142H180" stroke="#F1CE79" stroke-width="1.2" fill="none"/>
+  <path d="M123 49q8-6 16 0m28 0q8-6 16 0" stroke="#8E795D" stroke-width="1.3" fill="none"/>
+  <circle cx="152" cy="59" r="3" fill="#B85E5A"/><circle cx="112" cy="65" r="2" fill="#D6A64C"/><circle cx="192" cy="65" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="110" rx="66" ry="48" fill="#E5B953" opacity=".13"/>
+  <path d="M133 65L139 112m39-47-14 47" stroke="#FFF0C7" stroke-width="1.3" opacity=".6" fill="none"/>
+  <path d="M36 73H268" stroke="#FFF4D7" stroke-width="1.1" opacity=".5" fill="none"/>
+ </g>
+</svg>

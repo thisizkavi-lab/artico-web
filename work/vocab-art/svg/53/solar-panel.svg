@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:solar panel" data-archetype="single-tilted-photovoltaic-panel-with-cell-grid">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; solar panel. Focus on one tilted photovoltaic panel with a clearly visible cell grid receiving sunlight; no logos or labels. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="panel-sky" x2="0" y2="1"><stop stop-color="#E2EFE9"/><stop offset="1" stop-color="#C1D7D2"/></linearGradient>
+  <linearGradient id="panel-glass" x2="1" y2="1"><stop stop-color="#80B5BB"/><stop offset="1" stop-color="#365E72"/></linearGradient>
+  <linearGradient id="panel-ground" x2="0" y2="1"><stop stop-color="#9AAC80"/><stop offset="1" stop-color="#647A5A"/></linearGradient>
+  <radialGradient id="panel-sun"><stop stop-color="#F7D97E"/><stop offset="1" stop-color="#E5AF53"/></radialGradient>
+  <filter id="panel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#243D4A" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#panel-sky)"/><circle cx="243" cy="40" r="25" fill="#EBC86F" opacity=".18"/><circle cx="243" cy="40" r="15" fill="url(#panel-sun)"/><path d="M0 133Q73 118 151 132T304 126V192H0Z" fill="url(#panel-ground)"/><path d="M0 161Q78 148 154 162T304 156V192H0Z" fill="#6A855C"/></g>
+<g id="layer-context"><path d="M37 162L128 101 254 122 163 179Z" fill="url(#panel-glass)" stroke="#334F60" stroke-width="2.2" stroke-linejoin="round"/><path d="M53 159l87-53m-60 68 88-57m-59 74 89-58" fill="none" stroke="#94C3C5" stroke-width="1.4"/><path d="M79 134l93 25m-74-39 92 26m-70-42 93 24" fill="none" stroke="#B9D9D6" stroke-width="1.4"/><path d="M58 165l-8 19m133-7 7 12m-139-5 143-8" fill="none" stroke="#566E5F" stroke-width="2"/></g>
+<g id="layer-focal" filter="url(#panel-shadow)">
+  <path d="M201 50l11-11m9 22 14-5m-4 17 13 7m-65-38-3-14" fill="none" stroke="#E6B24F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M184 64L150 96m43-20-18 34m28-35-2 27" fill="none" stroke="#F1D185" stroke-width="1.6" opacity=".78"/>
+  <path d="M48 159L131 104 243 123 160 175Z" fill="none" stroke="#DDEBE5" stroke-width="1.2"/>
+  <path d="M178 123l18 3-38 25-18-4Z" fill="#D6EEE9" opacity=".25"/>
+  <path d="M42 166L126 111m41 65 81-52" fill="none" stroke="#EAF4ED" stroke-width="1.2"/>
+  <path d="M34 172h-6m153 17 10 0" fill="none" stroke="#AAB794" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M17 176q13-5 25 0m70 7q12-5 23 0m96-4q13-5 24 0" fill="none" stroke="#A8C58E" stroke-width="1.4"/>
+  <circle cx="23" cy="146" r="1.7" fill="#F4ECD1"/><circle cx="273" cy="151" r="1.8" fill="#F4ECD1"/><circle cx="267" cy="177" r="1.5" fill="#F4ECD1"/>
+  <path d="M263 112q9-5 17 0m-31 31q10-4 18 0" fill="none" stroke="#E6F3E9" stroke-width="1.3"/>
+  <path d="M17 145l6-8 6 8m-1 29 6-8 6 8" fill="none" stroke="#668B60" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M201 55l11-12m15 21 13-4" fill="none" stroke="#FFF7D4" stroke-width="1.3"/><path d="M43 162L128 104 251 123" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: opinions (Noun)
+  CONTEXTUAL_DEFINITION: Personal views about the same thing, shown by two people noticing different qualities in one sculpture.
+  PEDAGOGICAL_ARCHETYPE: 3 (Two reactions to one shared object)
+  SYNONYM_GUARD: Both observers respond to one artwork from different angles; their gestures show individual views without written words.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple gallery wall and low plinth.
+    - Context_Layer: Two observers stand on opposite sides of the sculpture.
+    - Focal_Layer: Shared abstract sculpture between them.
+    - Details_Layer: Different pointing gestures and expressions.
+    - Lighting_Layer: Even gallery light, no single answer highlighted.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:opinions" data-archetype="expressive-bust">
+  <defs><linearGradient id="gallery" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gallery)"/><path d="M0 145 Q152 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="153" cy="164" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M24 151 Q27 126 47 123 Q67 126 69 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="47" cy="107" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M30 106 Q31 87 48 89 Q64 90 64 107 Q55 98 46 99Z" fill="#27364B"/><path d="M38 108 Q42 104 45 108 M50 108 Q54 104 58 108" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M39 117 Q47 120 55 116" fill="none" stroke="#A34F47" stroke-width="1.8"/><path d="M66 130 Q82 121 94 111 L100 116 Q95 132 73 143" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M235 151 Q238 126 258 123 Q278 126 280 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="258" cy="107" r="17" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M241 106 Q242 87 259 89 Q275 90 275 107 Q266 98 257 99Z" fill="#6B4B35"/><path d="M249 108 Q253 104 256 108 M261 108 Q265 104 269 108" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M250 117 Q258 120 266 116" fill="none" stroke="#A34F47" stroke-width="1.8"/><path d="M238 130 Q220 122 207 112 L202 117 Q208 132 232 142" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><rect x="113" y="135" width="78" height="13" rx="4" fill="#B97840" stroke="#1E2A3B" stroke-width="1.8"/><path d="M123 148 L121 159 M181 148 L184 159" stroke="#8D552E" stroke-width="3"/><path d="M140 128 C128 118 135 104 147 100 C154 87 171 91 174 104 C187 113 180 127 168 130 Q153 135 140 128Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M151 101 Q155 114 149 127 M165 99 Q161 113 168 126" fill="none" stroke="#CE3D4E" stroke-width="2.5"/><path d="M96 113 L129 113 M208 114 L180 114" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/><path d="M129 113 L122 108 M129 113 L122 118 M180 114 L187 109 M180 114 L187 119" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M83 75 L88 65 L93 75 L103 80 L93 85 L88 95 L83 85 L73 80Z" fill="#F2C14E"/><path d="M207 74 L212 64 L217 74 L227 79 L217 84 L212 94 L207 84 L197 79Z" fill="#CBD5E1"/><circle cx="152" cy="81" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M132 98 Q148 89 164 97 M119 137 Q152 141 185 137" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

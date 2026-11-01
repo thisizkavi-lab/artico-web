@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: spotted (Adjective)
+  CONTEXTUAL_DEFINITION: Covered with visible irregular spots.
+  PEDAGOGICAL_ARCHETYPE: 7 — Draped material swatch
+  SYNONYM_GUARD: Use uneven organic marks; polka dots are regular circles in rows.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Folded warm fabric swatch.
+    - Context_Layer: Plain cloth edges and folds frame the print.
+    - Focal_Layer: Large irregular brown spots repeat across the cloth.
+    - Details_Layer: Soft seams and highlights preserve the textile read.
+    - Lighting_Layer: A few spot contours use warm focus ink.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:spotted" data-archetype="material-swatch">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="159" rx="102" ry="17" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M62 42L230 28L248 137L78 157Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M77 57L214 44L226 130L90 145Z" fill="#E2B99B" stroke="#64748B" stroke-width="1.8"/><path d="M62 42L82 57L90 145L78 157Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.6"/><path d="M230 28L214 44L226 130L248 137Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M78 61Q82 51 91 55Q98 49 103 58Q110 64 101 70Q103 78 93 77Q88 82 82 75Q73 73 78 61ZM127 53Q135 43 145 49Q151 45 157 54Q163 62 154 67Q151 76 142 72Q133 78 129 69Q121 63 127 53ZM178 50Q187 39 195 47Q205 44 207 54Q214 61 204 66Q203 74 193 71Q184 78 180 69Q172 62 178 50ZM105 97Q109 85 119 89Q126 82 134 91Q142 99 132 105Q132 115 122 114Q116 120 109 113Q100 109 105 97ZM157 93Q164 80 174 86Q182 81 188 91Q194 99 184 105Q184 114 174 112Q166 120 161 111Q152 105 157 93ZM199 100Q207 88 214 95Q224 93 225 103Q230 109 220 114Q218 123 209 118Q201 124 198 115Q191 108 199 100ZM84 126Q91 117 99 121Q108 117 111 126Q115 133 106 137Q99 144 92 139Q83 141 81 134Q77 130 84 126Z" fill="#6B5143" stroke="#1E2A3B" stroke-width="1.5"/><path d="M78 61Q82 51 91 55Q98 49 103 58Q110 64 101 70Q103 78 93 77Q88 82 82 75Q73 73 78 61ZM157 93Q164 80 174 86Q182 81 188 91Q194 99 184 105Q184 114 174 112Q166 120 161 111Q152 105 157 93Z" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M76 49L230 36M91 146L226 131" fill="none" stroke="#F8DDCC" stroke-width="1.2"/><path d="M232 139L242 146L248 137" fill="#D9A441" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="150" cy="91" rx="77" ry="47" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".4"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: on the corner
+  CONTEXTUAL_DEFINITION: Located at the lot where two streets meet.
+  PEDAGOGICAL_ART_DIRECTOR: Draw a clear L-shaped street junction and place the highlighted shop exactly on the outside corner lot where the road edges meet.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: The building itself occupies the street corner; do not point merely to the geometric corner of a room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Roads intersect at (157,103), one vertical from x=140..201 and one horizontal y=82..139; gold-highlighted building at x=205..279, y=28..78 in the upper-right corner lot.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:on the corner" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="corner-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6A7B8C"/><stop offset="1" stop-color="#46586C"/></linearGradient>
+    <linearGradient id="corner-store" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9BF73"/><stop offset="1" stop-color="#C9894C"/></linearGradient>
+    <radialGradient id="corner-halo"><stop stop-color="#F2C14E" stop-opacity=".55"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="corner-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E3ECD9"/><path d="M0 82H304V137H0Z" fill="url(#corner-road)"/><path d="M140 0H201V192H140Z" fill="url(#corner-road)"/><path d="M0 76H304M0 143H304M134 0V192M207 0V192" stroke="#F7F3E9" stroke-width="6"/><path d="M0 109H304M171 0V192" stroke="#F7F4EB" stroke-width="1.6" stroke-dasharray="10 9"/></g>
+  <g id="layer-context"><rect x="22" y="23" width="95" height="44" rx="3" fill="#C9D9C0" stroke="#8CA38A" stroke-width="1.5"/><circle cx="49" cy="47" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><rect x="218" y="151" width="66" height="29" rx="4" fill="#B7CAD4" stroke="#526A7C" stroke-width="1.6"/><circle cx="254" cy="45" r="25" fill="#F2C14E" fill-opacity=".18" stroke="#F2C14E" stroke-width="1.6"/><path d="M203 77H282" stroke="#6A8D68" stroke-width="4"/></g>
+  <g id="layer-focal" filter="url(#corner-shadow)"><ellipse cx="244" cy="51" rx="52" ry="47" fill="url(#corner-halo)"/><path d="M210 34H276V77H210Z" fill="url(#corner-store)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M204 36L243 17L282 36Z" fill="#7C6047" stroke="#1E2A3B" stroke-width="2"/><path d="M205 42H281V51H205Z" fill="#F5D88F" stroke="#1E2A3B" stroke-width="1.2"/><rect x="219" y="53" width="18" height="16" fill="#A8CEDB" stroke="#536A7D" stroke-width="1.3"/><rect x="250" y="53" width="17" height="24" fill="#5B463A" stroke="#1E2A3B" stroke-width="1.3"/><path d="M201 78L197 89L207 93L214 79Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M212 77H278" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M202 78H280V82H202Z" fill="#D9CFBD" stroke="#72695B" stroke-width="1.1"/><path d="M185 61V78M192 61V78" stroke="#FFFFFF" stroke-width="2" opacity=".9"/><path d="M179 148L203 145M117 71L139 79" stroke="#A6B3A7" stroke-width="1.4" stroke-dasharray="4 4"/><circle cx="199" cy="80" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><path d="M212 37L243 21L275 37" fill="none" stroke="#FBE9C8" stroke-width="1.5"/><ellipse cx="244" cy="51" rx="58" ry="52" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/><path d="M221 43H230" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

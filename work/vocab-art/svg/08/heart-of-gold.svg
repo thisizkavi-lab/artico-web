@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: heart of gold (Phrase)
+  CONTEXTUAL_DEFINITION: A naturally kind and generous character.
+  PEDAGOGICAL_ARCHETYPE: 1 (Human expression and a warm symbolic cue)
+  SYNONYM_GUARD: A gentle person comforts a crying friend; the gold heart symbol glows inside the giver rather than appearing as jewelry.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm room with a couch.
+    - Context_Layer: Friend sits sadly with shoulders lowered.
+    - Focal_Layer: Kind friend leans in with a reassuring hand.
+    - Details_Layer: Golden heart glow and soft expression.
+    - Lighting_Layer: Warm halo between the friends.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:heart of gold" data-archetype="expressive-bust">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 141 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="152" cy="165" rx="112" ry="8" fill="#DDD4C3"/><path d="M23 76 Q152 68 281 76" stroke="#D8CDAF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M182 151 Q184 130 202 127 Q220 130 222 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="202" cy="113" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M186 112 Q187 95 203 97 Q217 98 218 113 Q210 106 201 107Z" fill="#6B4B35"/><path d="M194 115 Q198 111 201 115 M206 115 Q210 111 213 115" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M194 124 Q202 118 210 124" fill="none" stroke="#A34F47" stroke-width="1.6"/><path d="M191 132 Q178 135 171 143" fill="none" stroke="#F5BFA3" stroke-width="4.5" stroke-linecap="round"/><path d="M196 96 L201 86 L206 96 L216 101 L206 106 L201 116 L196 106 L186 101Z" fill="#CBD5E1"/></g>
+  <g id="layer-focal"><path d="M35 151 Q38 119 63 115 Q88 119 91 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="63" cy="100" r="19" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.9"/><path d="M44 99 Q45 79 64 81 Q81 82 82 100 Q74 91 63 92Z" fill="#27364B"/><path d="M52 102 Q56 98 59 102 M67 102 Q71 98 74 102" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M53 111 Q63 118 73 111" fill="none" stroke="#A34F47" stroke-width="1.7"/><path d="M84 124 Q100 120 114 112 L120 118 Q111 134 91 140" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M114 113 Q121 107 127 111 L131 115 L124 122 L118 121Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M130 87 C125 77 111 78 111 90 C111 102 130 112 130 112 C130 112 149 102 149 90 C149 78 135 77 130 87Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="2"/><path d="M120 91 Q130 85 140 91" fill="none" stroke="#FFF6D6" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M112 62 L117 52 L122 62 L132 67 L122 72 L117 82 L112 72 L102 67Z" fill="#F2C14E"/><path d="M148 116 L153 106 L158 116 L168 121 L158 126 L153 136 L148 126 L138 121Z" fill="#F2C14E"/><path d="M47 91 Q63 83 79 91 M111 123 Q127 116 143 123" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/></g>
+  <g id="layer-lighting"><circle cx="130" cy="94" r="38" fill="#F2C14E" opacity="0.12"/><path d="M39 121 Q63 112 87 121 M186 118 Q202 112 217 119" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.72"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

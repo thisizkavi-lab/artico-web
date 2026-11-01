@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: old-fashioned (Adjective)
+  CONTEXTUAL_DEFINITION: Made in an earlier style, shown by a rotary telephone beside a modern touch-screen phone.
+  PEDAGOGICAL_ARCHETYPE: 4 (Past-versus-present object comparison)
+  SYNONYM_GUARD: A heavy rotary phone with a coiled cord contrasts with a slim modern phone, making the older style clear.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm sideboard against an ivory wall.
+    - Context_Layer: One hand lifts the old receiver.
+    - Focal_Layer: Large rotary phone, dial and coiled cord beside a slim current device.
+    - Details_Layer: Circular dial holes, handset curve and modern glass edge.
+    - Lighting_Layer: Gold highlight on polished wood and plastic.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:old-fashioned" data-archetype="contrast-reference">
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145 Q152 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="0" y="143" width="304" height="18" fill="#B97840"/><path d="M0 150 L304 150 M0 157 L304 157" stroke="#8D552E" stroke-width="1.5"/><ellipse cx="151" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M19 146 Q22 123 40 120 Q59 123 61 146Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="40" cy="105" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M25 104 Q26 87 41 88 Q55 89 55 105 Q47 97 39 98Z" fill="#27364B"/><path d="M33 107 Q37 103 40 107 M44 107 Q48 103 51 107" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M52 128 Q66 113 77 102 L83 107 Q79 123 63 138" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M72 125 Q72 106 87 101 L133 101 Q149 106 150 125 L145 143 Q111 150 77 143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="111" cy="121" r="27" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.1"/><circle cx="111" cy="121" r="18" fill="#E9EFF5" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="111" cy="121" r="11" fill="#CBD5E1" stroke="#64748B" stroke-width="1.4"/><circle cx="102" cy="111" r="2.8" fill="#64748B"/><circle cx="111" cy="108" r="2.8" fill="#64748B"/><circle cx="120" cy="111" r="2.8" fill="#64748B"/><circle cx="101" cy="121" r="2.8" fill="#64748B"/><circle cx="121" cy="121" r="2.8" fill="#64748B"/><circle cx="104" cy="130" r="2.8" fill="#64748B"/><circle cx="118" cy="130" r="2.8" fill="#64748B"/><path d="M75 102 Q80 83 104 83 Q128 82 142 100" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M79 102 Q83 88 104 88 Q126 87 138 100" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M83 111 C65 102 70 90 62 88 C52 84 57 97 64 100 C78 107 66 119 61 127 C56 137 70 137 72 126" fill="none" stroke="#1E2A3B" stroke-width="3"/><rect x="205" y="84" width="33" height="61" rx="6" fill="#27364B" stroke="#1E2A3B" stroke-width="2.2"/><rect x="209" y="89" width="25" height="46" rx="3" fill="#DCEAF4"/><path d="M214 96 L229 96 M214 101 L229 101 M214 106 L226 106" stroke="#94A3B8" stroke-width="1.4"/><circle cx="221" cy="140" r="2.3" fill="#DCEAF4"/></g>
+  <g id="layer-details"><path d="M160 82 L166 72 L172 82 L182 87 L172 92 L166 102 L160 92 L150 87Z" fill="#F2C14E"/><path d="M251 103 L256 93 L261 103 L271 108 L261 113 L256 123 L251 113 L241 108Z" fill="#CBD5E1"/><path d="M91 111 L91 128 M131 111 L131 128" stroke="#FFFFFF" stroke-width="1.6" opacity="0.8"/></g>
+  <g id="layer-lighting"><path d="M82 105 Q99 97 121 102 M206 89 Q220 85 233 90" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: Fahrenheit (Adjective / proper unit name)
+  CONTEXTUAL_DEFINITION: The temperature scale commonly used in the United States.
+  PEDAGOGICAL_ART_DIRECTOR: Show a clearly graduated temperature thermometer in a warm-climate setting, with denser fine divisions and no labels.
+  PEDAGOGICAL_ARCHETYPE: 1 - Temperature scale
+  SYNONYM_GUARD: This is a named temperature scale, not the general word temperature or Celsius.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A slim outdoor thermometer with many fine scale marks, placed between a snowy window edge and a hot sunny yard to show the scale spans both extremes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:fahrenheit" data-archetype="fahrenheit-scale">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fh-sky" x2="0" y2="1"><stop stop-color="#EAF3EF"/><stop offset="1" stop-color="#C4D7D7"/></linearGradient><linearGradient id="fh-glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D8EAE7"/></linearGradient><linearGradient id="fh-red" x2="0" y2="1"><stop stop-color="#EF9B69"/><stop offset="1" stop-color="#C65044"/></linearGradient><filter id="fh-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.1" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fh-sky)"/><path d="M0 128Q75 116 151 128T304 123V192H0Z" fill="#B8C09D"/><path d="M0 152H304V192H0Z" fill="#B99B72"/></g>
+ <g id="layer-context"><circle cx="252" cy="38" r="16" fill="#EBC86F" opacity=".86"/><path d="M234 18l-5-8m24-6 2-10m18 28 9 3" fill="none" stroke="#D9A955" stroke-width="1.6" stroke-linecap="round"/><path d="M30 123V72H90V123Z" fill="#E5F1F0" stroke="#7C999A" stroke-width="1.4"/><path d="M34 77L48 64L62 77L58 91H37Z" fill="#D9F1F1" stroke="#9BC8C9" stroke-width="1.2"/><path d="M41 71l7-6m7 12 5-5" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><path d="M206 128L218 88L230 128M247 126L258 84L270 126" fill="#73946F"/><path d="M20 174H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="152" cy="163" rx="92" ry="5" fill="#5B4B3B" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fh-shadow)">
+  <rect x="128" y="31" width="47" height="123" rx="22" fill="url(#fh-glass)" stroke="#66858B" stroke-width="2"/><rect x="145" y="47" width="13" height="84" rx="6" fill="url(#fh-red)"/><circle cx="151.5" cy="145" r="17" fill="url(#fh-red)" stroke="#AA5146" stroke-width="1.4"/><path d="M119 41H143M119 48H136M119 55H143M119 62H136M119 69H143M119 76H136M119 83H143M119 90H136M119 97H143M119 104H136M119 111H143M119 118H136M119 125H143M119 132H136" fill="none" stroke="#54717A" stroke-width="1.5"/><path d="M116 83H147" fill="none" stroke="#D7834B" stroke-width="2.6"/><circle cx="113" cy="83" r="3.6" fill="#EBC86F" stroke="#C59542" stroke-width="1"/>
+  <path d="M136 37q11-6 25 0m-20 16v67" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/><path d="M144 158h16" fill="none" stroke="#F8EAD0" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details"><path d="M40 103q15-7 31 0m143 30q16-9 30 0m-182-45 8 5" fill="none" stroke="#F7FBF5" stroke-width="1.3"/><circle cx="252" cy="38" r="1.3" fill="#FFF8E7"/><circle cx="151" cy="145" r="1.8" fill="#F8B383"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M222 126q5-7 11 0m30-3q5-7 11 0" fill="none" stroke="#D3B982" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M132 35q12-7 23-1M32 74h54" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="151" cy="45" r="1.1" fill="#FFF8E7"/><path d="M239 50h10m12 0h10" fill="none" stroke="#FFF7E5" stroke-width="1.2"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: adaptability
+  CONTEXTUAL_DEFINITION: The ability to adjust successfully when circumstances change.
+  PEDAGOGICAL_ART_DIRECTOR: Make a worker's capacity to choose a new route around a changed condition visible.
+  PEDAGOGICAL_ARCHETYPE: 2 - Flexible response
+  SYNONYM_GUARD: Show a general capacity for adjustment through a changed route and new options, distinct from the adjective adaptable applied to a person.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a worker at x=101..151 moving a blue path marker around a new obstacle at x=160..179. Let a route split toward two workable alternatives and reconnect at a shared goal near x=233, y=62.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:adaptability" data-archetype="flexible-response">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="adaptability-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="adaptability-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="adaptability-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="adaptability-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="84" y="39" width="166" height="77" rx="4" fill="url(#adaptability-board)" stroke="#64748B" stroke-width="1.1"/><path d="M102 78 H143 Q158 78 168 64 L188 48 H228 M143 78 Q160 78 174 94 H228" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M218 43 L228 48 L218 53 M218 89 L228 94 L218 99" fill="none" stroke="#547A56" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M164 58 L172 66 L164 74 L156 66 Z" fill="#F2C14E" stroke="#C88446" stroke-width="1"/><path d="M174 68 V88" stroke="#C88446" stroke-width="1.2" stroke-dasharray="2 2"/><path d="M34 134 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.2"/></g>
+  <g id="layer-focal" filter="url(#adaptability-shadow)"><path d="M61 128 Q63 103 76 96 L77 87 Q73 83 75 75 Q83 67 94 70 Q103 73 101 84 L99 91 Q112 97 114 125 L111 136 H65 Z" fill="url(#adaptability-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="88" cy="79" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M79 77 Q81 69 89 69 Q97 70 101 77 Q93 73 86 74 Z" fill="#3D342D"/><path d="M70 103 Q88 97 106 103" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M105 108 L132 94 M111 111 L150 80" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M97 79 L107 79" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><circle cx="103" cy="79" r="4" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/></g>
+  <g id="layer-details"><path d="M139 48 L146 42 M139 108 L146 114" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="194" cy="63" r="2" fill="#A8D4A2"/><circle cx="195" cy="95" r="2" fill="#8EB0DE"/><path d="M240 43 V99" stroke="#FFFFFF" stroke-width=".8"/><path d="M51 64 L57 60 M254 120 L260 116" stroke="#64748B" stroke-width="1.2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="82" rx="102" ry="66" fill="url(#adaptability-halo)" opacity=".15"/><path d="M86 41 H248" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

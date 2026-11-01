@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: pain
+ CONTEXTUAL_DEFINITION: An unpleasant physical sensation localized in a body area.
+ PEDAGOGICAL_ARCHETYPE: person guarding one sharply painful knee with a focused pulse
+ SYNONYM_GUARD: Use one localized pain cue; ache is dull and lingering, while painful describes a hurtful touch or movement.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A standing person pauses with one knee slightly bent and both hands near it; a single concentrated glow marks the painful knee without implying a fracture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:pain" data-archetype="localized bodily pain">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="150" cy="153" rx="89" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M59 42H101V103H59Z" fill="#D8D0C4"/><path d="M65 48H95V97H65Z" fill="#A9B9B4"/><path d="M211 40H252V103H211Z" fill="#E3DDD2"/><path d="M218 47H245V96H218Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M46 146H259" stroke="#8C725A" stroke-width="1.2"/><path d="M53 141H80V146H53ZM228 141H255V146H228Z" fill="#597D8B"/>
+  <circle cx="75" cy="146" r="2" fill="#D6A64C"/><circle cx="234" cy="146" r="2" fill="#B85E5A"/>
+  <ellipse cx="152" cy="150" rx="66" ry="3" fill="#F6E5CE" opacity=".6"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="48" r="12" fill="#D29A78"/><path d="M139 47Q140 32 152 33Q164 34 163 50L157 41L141 44Z" fill="#26384A"/>
+  <path d="M133 65Q151 58 169 66L174 104L164 114H130L125 103Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M137 71L124 86L135 96L142 88M166 71L181 83L178 96" stroke="#D29A78" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- standing legs with one knee slightly guarded -->
+  <path d="M132 110L130 130L134 144M162 110L166 127L159 145" stroke="#26384A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M125 145L139 145M151 146L165 146" stroke="#26384A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M143 68L151 76L159 68" fill="#F6E5CE"/>
+  <path d="M173 103Q179 98 184 103L185 111L179 116L172 111Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 45Q149 48 153 45M156 45L160 44M145 55Q151 52 157 55" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <ellipse cx="178" cy="106" rx="18" ry="19" fill="#B85E5A" opacity=".14"/><ellipse cx="178" cy="106" rx="12" ry="13" fill="none" stroke="#B85E5A" stroke-width="1.1" opacity=".65"/>
+  <path d="M178 84L178 79M190 91L195 88M195 105H200M189 121L193 125M167 88L163 84" stroke="#D6A64C" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M131 76L137 80M167 76L162 81M143 92L148 96M174 84L180 88" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M129 132L134 134M164 131L169 129" stroke="#F6E5CE" stroke-width="1.2"/>
+  <circle cx="203" cy="81" r="1.5" fill="#D6A64C"/><circle cx="207" cy="86" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="68" fill="#E7C66B" opacity=".065"/><path d="M50 33L67 49M253 31L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M44 150H260" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

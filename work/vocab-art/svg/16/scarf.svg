@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: scarf (Noun)
+  CONTEXTUAL_DEFINITION: A length of cloth worn around the neck for warmth or style.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Drape visible cloth ends around a neck, rather than showing a folded fabric square.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper.
+    - Context_Layer: Muted shoulders and neck.
+    - Focal_Layer: Blue scarf wrapped around neck with two hanging ends.
+    - Details_Layer: Woven stripes and fringe.
+    - Lighting_Layer: Soft focus halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:scarf" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="82" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M72 164Q75 117 114 104L131 82H173L190 104Q229 117 232 164Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/><path d="M131 83Q152 101 173 83" fill="none" stroke="#7B8A9E" stroke-width="2.2"/>
+  <ellipse cx="152" cy="114" rx="87" ry="65" fill="#FEF3C7" opacity=".3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M116 91Q126 79 143 84L165 93Q179 99 186 87L196 93L184 112L162 108L145 100Q136 96 131 106L123 150L95 153L102 105Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M179 101L207 106L216 155L187 157L184 114" fill="#315782" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M110 99Q120 91 130 94M191 117L201 151M103 117L123 120" fill="none" stroke="#B7CBE2" stroke-width="2.2"/>
+  <path d="M95 152L124 150M187 155L216 153" stroke="#D9A441" stroke-width="2.4"/><path d="M100 152L98 161M107 152L106 162M114 151L114 161M194 155L193 164M201 154L201 164M208 154L209 163" stroke="#D9857F" stroke-width="2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <circle cx="152" cy="100" r="52" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".48"/>
+</svg>

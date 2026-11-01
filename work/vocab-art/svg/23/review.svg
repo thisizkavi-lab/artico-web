@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: review (Verb)
+  CONTEXTUAL_DEFINITION: To look over material learned before in order to remember or check it.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Student calmly rereads old notes and compares them with a textbook, showing review as revisiting learned material rather than changing it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet library table and shelves.
+    - Context_Layer: Closed school books and study lamp.
+    - Focal_Layer: Student rereads notes from an earlier lesson.
+    - Details_Layer: Open notebook with familiar concept cards and a bookmark.
+    - Lighting_Layer: Gentle reading light on the old material.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:review" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="review-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="review-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#review-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 28H95V81H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 29V80M22 54H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="224" y="39" width="55" height="91" fill="#8D765A" stroke="#65472F" stroke-width="1.4"/><path d="M224 70H279" stroke="#D9C9A7" stroke-width="2.2"/><rect x="231" y="46" width="11" height="21" fill="#5479AC"/><rect x="245" y="43" width="13" height="24" fill="#D9857F"/><rect x="261" y="48" width="12" height="19" fill="#D9A441"/><rect x="231" y="77" width="14" height="25" fill="#91A77C"/><rect x="248" y="75" width="11" height="27" fill="#D9A441"/><rect x="262" y="79" width="12" height="23" fill="#5479AC"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#review-shadow)"><path d="M39 113H212V122H39Z" fill="#A98A64" stroke="#65472F" stroke-width="1.4"/><path d="M51 122V148M201 122V148" stroke="#8D765A" stroke-width="3"/><path d="M67 98L128 90L134 132L74 140Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.7"/><path d="M143 90L204 98L198 140L138 132Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.7"/><path d="M77 105L120 99M78 113L123 107M79 122L112 117M148 99L193 105M147 107L191 113M146 116L179 121" stroke="#88A9D0" stroke-width="1.35"/><circle cx="94" cy="128" r="4" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M92 128L97 132L105 122" fill="none" stroke="#91A77C" stroke-width="1.8" stroke-linecap="round"/><circle cx="173" cy="91" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M161 91Q162 79 174 79Q185 80 185 92L180 95Q178 86 173 86Q168 86 164 98Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M157 105Q173 98 189 106L194 115H151Z" fill="#5479AC" stroke="#315782" stroke-width="1.5"/><path d="M158 108L146 116" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M158 108L146 116" stroke="#C98961" stroke-width="2.3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M126 96V133" stroke="#D9857F" stroke-width="2.3"/><path d="M187 91L191 96L201 83" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M118 87Q134 80 149 86" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 4"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="97" rx="121" ry="74" fill="#FEF9C3" opacity=".07"/><path d="M67 98L128 90L134 132" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".74"/></g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:coast" data-archetype="extended-rocky-shoreline-meeting-the-sea">
+<!-- SELF_PROMPT: Lesson 52 geographical features; coast. Show a long curved rocky boundary between land and sea, with the shoreline extending into the distance; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="coast-sky" x2="0" y2="1"><stop stop-color="#DCECE7"/><stop offset="1" stop-color="#BDD1CB"/></linearGradient>
+  <linearGradient id="coast-sea" x2="0" y2="1"><stop stop-color="#6EA9B4"/><stop offset="1" stop-color="#397C91"/></linearGradient>
+  <linearGradient id="coast-rock" x2=".8" y2="1"><stop stop-color="#B1A68B"/><stop offset=".55" stop-color="#7D806F"/><stop offset="1" stop-color="#53635C"/></linearGradient>
+  <linearGradient id="coast-land" x2="0" y2="1"><stop stop-color="#80946C"/><stop offset="1" stop-color="#617553"/></linearGradient>
+  <filter id="coast-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#coast-sky)"/><circle cx="251" cy="36" r="14" fill="#EBC86F" opacity=".75"/><path d="M0 91Q75 82 148 89T304 84V192H0Z" fill="url(#coast-sea)"/><path d="M0 108Q69 99 143 106T304 101" fill="none" stroke="#A7D0CA" stroke-width="1.5"/></g>
+<g id="layer-context">
+  <path d="M0 67Q55 65 100 77Q143 88 162 110Q181 132 214 144Q255 158 304 152V192H0Z" fill="url(#coast-land)"/>
+  <path d="M0 99Q54 90 100 100Q133 107 152 125Q172 146 202 157Q250 173 304 164V192H0Z" fill="url(#coast-rock)"/>
+  <path d="M0 96Q55 87 100 97Q132 104 150 123Q172 146 203 154Q251 169 304 161" fill="none" stroke="#E1D2AE" stroke-width="2"/>
+  <path d="M18 73Q29 55 48 64Q56 46 72 61Q83 51 96 74Z" fill="#6E8A61"/><path d="M208 143Q218 125 236 137Q248 118 264 139Q278 128 292 151Z" fill="#71885E"/>
+  <path d="M40 86l8-13m0 14 10-17m175 65 7-14m5 18 9-17m9 23 8-15" fill="none" stroke="#536D51" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#coast-shadow)">
+  <path d="M0 121Q43 110 82 120T151 141Q178 159 212 167T304 171V192H0Z" fill="#7C7C6A" opacity=".92"/>
+  <path d="M0 118Q45 106 84 118T151 138Q179 156 213 163T304 166" fill="none" stroke="#F0F2DA" stroke-width="2.6"/>
+  <path d="M0 131Q41 121 78 132T146 151Q181 170 216 175T304 178" fill="none" stroke="#BCE1D8" stroke-width="2"/>
+  <path d="M116 103l13-13 12 17m27 30 12-9 10 14m-49-4 8-12 10 16" fill="none" stroke="#D6CCAE" stroke-width="2"/>
+  <path d="M80 99q7-11 15-2m115 53q7-9 14-2" fill="none" stroke="#E7D9BB" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M21 155q13-5 25-1m77 18q15-6 29-1m104-1q16-5 31-1" fill="none" stroke="#A6D4D0" stroke-width="1.4"/>
+  <circle cx="62" cy="135" r="2" fill="#F7F3DB"/><circle cx="168" cy="161" r="1.8" fill="#F7F3DB"/><circle cx="282" cy="178" r="1.6" fill="#F7F3DB"/>
+  <path d="M107 112l8-8 8 2m83 42 8-9 8 3M31 70q8-5 15-2" fill="none" stroke="#C6D2AD" stroke-width="1.4"/>
+  <path d="M37 83q6-5 11-2m-3 8q5-4 9-1m211 54q6-5 11-1m-5 9q6-4 10 0" fill="none" stroke="#91A36D" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M0 119Q44 107 83 119T151 140" fill="none" stroke="#FFF8E7" stroke-width="1.2" opacity=".75"/><path d="M182 151q26 15 51 18m-161-93q17-1 27 4" fill="none" stroke="#D8E7D3" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

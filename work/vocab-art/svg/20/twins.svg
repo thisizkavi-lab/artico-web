@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: twins (Plural Noun)
+  CONTEXTUAL_DEFINITION: Two children born at the same time, shown as a same-age pair.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Exactly two same-height children mirror each other's face and clothes while a parent stands behind; the count of two distinguishes twins from triplets.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Family room floor with a sofa.
+    - Context_Layer: One parent partly behind the pair.
+    - Focal_Layer: Two near-identical children side by side, facing forward.
+    - Details_Layer: Paired matching shirts, mirrored arm gestures, and identical height.
+    - Lighting_Layer: Double-lobed halo around exactly two children.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:twins" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="twins-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="twins-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient>
+    <filter id="twins-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#twins-bg)"/><path d="M0 148Q74 142 152 148T304 146V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="124" ry="7" fill="#DDD4C3"/><path d="M36 111Q36 93 54 93H250Q267 93 267 111V141H36Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><path d="M47 111H257M53 141V152M250 141V152" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-context"><circle cx="151" cy="63" r="21" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2"/><path d="M130 61Q131 41 151 41Q173 42 173 64L167 69Q162 53 150 53Q139 53 132 69Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M131 88Q151 78 171 88L179 120H123Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M141 62Q146 66 150 62M155 62Q160 66 164 62M141 74Q151 80 161 74" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#twins-shadow)"><ellipse cx="96" cy="120" rx="48" ry="55" fill="#FEF3C7" opacity=".3"/><ellipse cx="208" cy="120" rx="48" ry="55" fill="#FEF3C7" opacity=".3"/><path d="M47 178Q51 147 66 139Q81 132 98 140L105 178Z" fill="url(#twins-shirt)" stroke="#1E2A3B" stroke-width="2.5"/><rect x="78" y="116" width="18" height="22" rx="5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="87" cy="92" r="24" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M63 90Q64 69 87 68Q111 69 111 92L105 97Q101 80 87 81Q74 80 66 98Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M74 91Q79 95 84 91M91 91Q96 95 101 91M77 104Q87 109 97 104" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M78 143Q66 133 61 124" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M78 143Q66 133 61 124" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M189 178Q193 147 208 139Q223 132 240 140L247 178Z" fill="url(#twins-shirt)" stroke="#1E2A3B" stroke-width="2.5"/><rect x="220" y="116" width="18" height="22" rx="5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="229" cy="92" r="24" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M205 90Q206 69 229 68Q253 69 253 92L247 97Q243 80 229 81Q216 80 208 98Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M216 91Q221 95 226 91M233 91Q238 95 243 91M219 104Q229 109 239 104" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M226 143Q213 133 205 124" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M226 143Q213 133 205 124" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M57 81Q70 74 81 79M205 81Q218 74 229 79" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M152 118L152 132M145 125H159" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><circle cx="151" cy="142" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M39 122Q90 40 147 116M157 116Q214 40 265 122" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".38"/><path d="M64 56Q85 48 104 54M206 56Q227 48 246 54" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

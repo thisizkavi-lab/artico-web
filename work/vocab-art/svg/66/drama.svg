@@ -1,0 +1,50 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: drama
+ CONTEXTUAL_DEFINITION: A serious scripted television story, with actors in an emotional conflict inside a broadcast frame.
+ PEDAGOGICAL_ARCHETYPE: serious television drama in a domestic scene
+ SYNONYM_GUARD: Show actors in a tense, serious exchange inside a television; exclude stage curtains, masks and live theater.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Two adult actors face each other in a subdued living room on a TV screen; one gestures in frustration while the other looks hurt, with no violence or stage apparatus.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:drama" data-archetype="serious television drama">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M17 18Q17 13 24 13H280Q287 13 287 20V146H17Z" fill="#26384A"/><path d="M25 22H279V139H25Z" fill="#405663"/><path d="M34 30H270V130H34Z" fill="#D8D0C3"/>
+  <path d="M34 30H270V92H34Z" fill="#B9C0B4"/><path d="M34 92H270V130H34Z" fill="#BAA98F"/><path d="M35 93H270" stroke="#84745F" stroke-width="1.4"/>
+  <path d="M47 42H83V82H47Z" fill="#E9E1D2"/><path d="M53 47H77V77H53Z" fill="#8EA4A1"/><path d="M64 47V77M53 62H77" stroke="#F0EEE8" stroke-width="1.5"/>
+  <path d="M199 42V78M194 78H204L208 85H190Z" fill="#A78258"/><path d="M193 45Q199 38 205 45L204 49H194Z" fill="#D6A64C"/><path d="M41 136L48 145H116L123 136Z" fill="#64777C"/><path d="M30 145H134V151H30Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M47 103H104V121H47Z" fill="#597D8B"/><path d="M47 103V96H101V103" fill="#6F8B8D"/><path d="M52 120V128M99 120V128" stroke="#725F4B" stroke-width="2"/>
+  <path d="M212 95H257V100H212Z" fill="#8C725A"/><path d="M218 100V120M251 100V120" stroke="#725F4B" stroke-width="1.8"/>
+  <path d="M226 77Q236 71 245 77V95H226Z" fill="#E8D9C3"/><path d="M233 78V88" stroke="#B85E5A" stroke-width="1.4"/>
+  <circle cx="64" cy="39" r="2" fill="#D6A64C"/><path d="M39 133H264" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-focal">
+  <!-- actor on left: frustrated, open but nonthreatening hand -->
+  <circle cx="121" cy="57" r="9" fill="#D29A78"/><path d="M112 56Q112 44 122 44Q132 45 131 58L126 52L114 52Z" fill="#26384A"/>
+  <path d="M108 68Q121 61 134 68L140 101H102Z" fill="#B85E5A" stroke="#26384A" stroke-width="1"/>
+  <path d="M110 72L97 81L91 74M132 72L143 62L148 54" stroke="#D29A78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M103 99L101 123M136 99L139 123" stroke="#26384A" stroke-width="3"/>
+  <!-- actor on right: hurt and withdrawn -->
+  <circle cx="187" cy="58" r="9" fill="#A96F54"/><path d="M178 57Q179 45 188 45Q197 46 198 58L193 52L179 52Z" fill="#405663"/>
+  <path d="M174 69Q187 62 200 69L205 102H169Z" fill="#597D8B" stroke="#26384A" stroke-width="1"/>
+  <path d="M177 74L166 85M198 74L207 83" stroke="#A96F54" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M171 100L170 124M202 100L205 124" stroke="#26384A" stroke-width="3"/>
+  <path d="M112 54L119 53M124 53L130 55M179 55L185 57M189 57L195 55" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M115 62Q121 59 127 62M183 65Q188 68 193 64" stroke="#7C4D46" stroke-width="1.2" fill="none"/>
+  <path d="M139 87Q152 92 168 86" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M42 36H87M42 39H70" stroke="#F7EBD6" stroke-width="1"/>
+  <circle cx="145" cy="48" r="1.4" fill="#D6A64C"/><circle cx="154" cy="52" r="1.2" fill="#B85E5A"/>
+  <path d="M92 87L86 82M148 49L154 44M210 63L216 58" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <path d="M108 77L117 81L126 77M176 78L187 81L198 78" fill="none" stroke="#F0EEE8" stroke-width="1"/>
+  <circle cx="253" cy="128" r="2" fill="#D6A64C"/><path d="M30 152H274" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="78" rx="110" ry="53" fill="#E7C66B" opacity=".07"/><path d="M27 137H277" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+  <path d="M45 27L65 53M262 27L244 53" stroke="#FFF1C7" stroke-width="1.1" opacity=".52" fill="none"/><ellipse cx="94" cy="159" rx="70" ry="4" fill="#8B785F" opacity=".2"/>
+ </g>
+</svg>

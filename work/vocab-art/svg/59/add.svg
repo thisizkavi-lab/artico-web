@@ -1,0 +1,18 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 59 - Abilities and actions
+  WORD: add
+  CONTEXTUAL_DEFINITION: Join one quantity to another to make a larger total.
+  PEDAGOGICAL_ART_DIRECTOR: Show two identical objects and a third joining them, followed by the resulting group of three.
+  PEDAGOGICAL_ARCHETYPE: 3 - Sequence + Transformation
+  SYNONYM_GUARD: Separate groups merge into one larger group, showing numerical addition rather than adding an ingredient to food.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: On a clean tabletop, two identical golden counters sit beside one matching counter; a short arrow leads to the same three counters gathered together.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="59:add" data-archetype="joining-groups-to-increase-total">
+ <defs><style>:root{--c-bg-1:#F5F4ED;--c-bg-2:#E3EBE7;--c-surface:#E5DED0;--c-primary:#5479AC;--c-secondary:#526274;--c-accent:#E8B94E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style><linearGradient id="add-board" x2="0" y2="1"><stop stop-color="#F3F4EF"/><stop offset="1" stop-color="#E5E9E2"/></linearGradient><linearGradient id="add-counter" x2="0" y2="1"><stop stop-color="#F2CC65"/><stop offset="1" stop-color="#D89E3C"/></linearGradient><filter id="add-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.4" flood-color="#203548" flood-opacity=".14"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#add-board)"/><path d="M0 142H304V192H0Z" fill="#D6D9CE"/><path fill="none" d="M0 142H304" stroke="#A5A698" stroke-width="1.4"/><path d="M27 45H277V134H27Z" fill="#EDEEE8" stroke="#C4C9C2" stroke-width="1.2"/><path fill="none" d="M0 162H304" stroke="#F7F4EB" stroke-width="1.2"/><ellipse cx="151" cy="160" rx="96" ry="5" fill="#52634F" opacity=".11"/></g>
+ <g id="layer-context"><path fill="none" d="M18 20H286" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path fill="none" d="M46 119H128M188 119H259" stroke="#B6B9B1" stroke-width="1.2"/><path fill="none" d="M144 81H171" stroke="#5479AC" stroke-width="1.8"/><path d="M165 76L173 81L165 86" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" d="M18 152H286" stroke="#F4F1E8" stroke-width="1.1"/><circle cx="64" cy="58" r="1.5" fill="#FFFFFF"/></g>
+ <g id="layer-focal" filter="url(#add-shadow)"><circle cx="63" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><circle cx="87" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><circle cx="126" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><circle cx="198" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><circle cx="222" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><circle cx="246" cy="87" r="12" fill="url(#add-counter)" stroke="#9B7132" stroke-width="1.2"/><path fill="none" d="M58 83Q63 78 68 83M82 83Q87 78 92 83M121 83Q126 78 131 83M193 83Q198 78 203 83M217 83Q222 78 227 83M241 83Q246 78 251 83" stroke="#F9E8A5" stroke-width="1.2"/></g>
+ <g id="layer-details"><path fill="none" d="M56 106H95M115 106H136M194 106H251" stroke="#E2E4DC" stroke-width="1.1"/><path fill="none" d="M36 127H126M190 127H261" stroke="#F6F4ED" stroke-width="1"/><circle cx="151" cy="57" r="1.4" fill="#E8B94E"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="92" rx="104" ry="67" fill="#F2D887" opacity=".045"/><path fill="none" d="M9 18H293" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/><ellipse cx="150" cy="157" rx="54" ry="3" fill="#52634F" opacity=".09"/></g>
+</svg>

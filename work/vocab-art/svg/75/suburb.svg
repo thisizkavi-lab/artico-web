@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:suburb" data-archetype="low-density-homes-on-the-edge-of-a-city">
+<!-- SELF_PROMPT: Lesson 75 urban life; suburb. Contrast low-rise homes, gardens, and a quiet curving road with a distant city at the horizon. No signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="suburb-sky" x2="0" y2="1"><stop stop-color="#D7E7E9"/><stop offset="1" stop-color="#BED1CD"/></linearGradient>
+  <linearGradient id="suburb-lawn" x2="0" y2="1"><stop stop-color="#A9B983"/><stop offset="1" stop-color="#718761"/></linearGradient>
+  <linearGradient id="suburb-wall" x2="0" y2="1"><stop stop-color="#DFC69F"/><stop offset="1" stop-color="#B38A67"/></linearGradient>
+  <linearGradient id="suburb-road" x2="0" y2="1"><stop stop-color="#80867D"/><stop offset="1" stop-color="#626B64"/></linearGradient>
+  <filter id="suburb-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#suburb-sky)"/><circle cx="257" cy="34" r="12" fill="#E9C66F" opacity=".65"/><path d="M0 116V79h18v37Zm21 0V66h21v50Zm24 0V83h16v33Zm193 0V81h17v35Zm20 0V61h23v55Zm27 0V76h19v40Z" fill="#96A6A3"/><path d="M0 119Q72 108 138 120T254 116Q283 111 304 117V192H0Z" fill="url(#suburb-lawn)"/></g>
+<g id="layer-context">
+  <path d="M0 164Q61 151 118 162T227 162Q270 151 304 161V192H0Z" fill="#899374"/><path d="M0 176Q65 164 122 173T229 173Q273 164 304 172" fill="none" stroke="#6A7562" stroke-width="13"/><path d="M0 175Q65 163 122 172T229 172Q273 163 304 171" fill="none" stroke="#D5C8A9" stroke-width="1.4"/>
+  <path d="M27 151V93l36-27 37 27v58Z" fill="url(#suburb-wall)" stroke="#795E4C" stroke-width="1.5"/><path d="M19 95l44-34 45 34Z" fill="#76544A"/><path d="M42 109h17v19H42Zm30 0h18v19H72Z" fill="#77969C" stroke="#F0DEBC" stroke-width="1.3"/><path d="M59 130q9-15 18 0v21H59Z" fill="#5C5149"/>
+  <path d="M177 148V102l32-23 34 23v46Z" fill="#D9B990" stroke="#795E4C" stroke-width="1.4"/><path d="M169 104l40-29 42 29Z" fill="#76564B"/><path d="M190 111h15v17h-15Zm26 0h17v17h-17Z" fill="#7B9AA0" stroke="#F1DFBE" stroke-width="1.2"/><path d="M204 129q8-13 16 0v19h-16Z" fill="#5D5147"/>
+  <path d="M126 154V122m0 19-10-11m10 10 11-13" fill="none" stroke="#6D875C" stroke-width="2.5" stroke-linecap="round"/><circle cx="126" cy="119" r="15" fill="#7C946B"/><path d="M264 151v-29m0 15-9-10m9 8 10-13" fill="none" stroke="#6D875C" stroke-width="2.5" stroke-linecap="round"/><circle cx="264" cy="119" r="14" fill="#728B64"/>
+</g>
+<g id="layer-focal" filter="url(#suburb-shadow)">
+  <path d="M46 154q10-10 20 0m-12-4q8-8 16 0" fill="none" stroke="#E7D6AE" stroke-width="1.5"/><path d="M232 153q10-10 20 0m-12-4q8-8 16 0" fill="none" stroke="#E7D6AE" stroke-width="1.5"/>
+  <path d="M119 141h43v4h-43Zm5 4v13m34-13v13" fill="#745642" stroke="#5F493D" stroke-width="1.2"/><path d="M126 141q8-8 17-1m4 1q7-8 13-1" fill="none" stroke="#C89863" stroke-width="3"/>
+  <path d="M144 157q8-5 16 0m-8-7v10" fill="none" stroke="#63745D" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M14 187q12-5 23 0m56-1q12-5 24 0m110-1q12-5 23 0m47-8q12-5 22 0" fill="none" stroke="#C6D293" stroke-width="1.4"/>
+  <circle cx="111" cy="161" r="1.8" fill="#E9C66F"/><circle cx="171" cy="160" r="1.8" fill="#E9C66F"/><circle cx="279" cy="153" r="1.7" fill="#E9C66F"/>
+  <path d="M31 89h22m20-1h24m86 9h20m25-1h16" fill="none" stroke="#F0E1C4" stroke-width="1.3"/>
+  <path d="M6 126q8-5 16 0m116 4q7-5 14 0m134-11q8-5 15 0" fill="none" stroke="#EFF2E5" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M21 95l42-32 43 32m63 10 46-32 45 32" fill="none" stroke="#EAD8B6" stroke-width="1.3"/><path d="M0 120q75-14 137 0m110-3q29-7 57 0" fill="none" stroke="#DCE4D7" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

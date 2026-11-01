@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:reduce your carbon footprint" data-archetype="large-dark-footprints-shrinking-toward-lower-impact-travel">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; reduce your carbon footprint. Contrast a large dark footprint beside a fuel-burning car with smaller green footprints leading toward cycling and trees; no words. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="foot-sky" x2="0" y2="1"><stop stop-color="#E4EEE8"/><stop offset="1" stop-color="#C7D8CC"/></linearGradient>
+  <linearGradient id="foot-road" x2="0" y2="1"><stop stop-color="#9DA28C"/><stop offset="1" stop-color="#676F5D"/></linearGradient>
+  <linearGradient id="foot-car" x2="0" y2="1"><stop stop-color="#84918B"/><stop offset="1" stop-color="#4F615E"/></linearGradient>
+  <linearGradient id="foot-print" x2="0" y2="1"><stop stop-color="#59665E"/><stop offset="1" stop-color="#303B39"/></linearGradient>
+  <filter id="foot-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#foot-sky)"/><circle cx="248" cy="37" r="13" fill="#EBC86F" opacity=".72"/><path d="M0 112Q66 100 128 113T241 110Q275 104 304 111V192H0Z" fill="#9EAF94"/><path d="M0 151Q76 137 150 151T304 147V192H0Z" fill="url(#foot-road)"/><path d="M0 167Q69 153 142 168T304 162" fill="none" stroke="#D6D2B7" stroke-width="1.8"/></g>
+<g id="layer-context">
+  <path d="M18 137V113Q18 105 28 103L48 101 62 90H108L122 103 142 107Q149 110 149 117V137Z" fill="url(#foot-car)" stroke="#46544F" stroke-width="1.6"/><path d="M66 101l12-14h27l14 14Z" fill="#93ABB0" stroke="#485A59" stroke-width="1.2"/><circle cx="47" cy="138" r="10" fill="#414B48"/><circle cx="121" cy="138" r="10" fill="#414B48"/><circle cx="47" cy="138" r="4" fill="#C7C6B2"/><circle cx="121" cy="138" r="4" fill="#C7C6B2"/>
+  <path d="M30 96Q19 85 26 75Q31 68 41 72Q47 61 58 66Q66 72 61 82Q74 86 70 96Q65 103 54 99L42 100Z" fill="#7B8178" opacity=".75"/>
+  <path d="M176 143V109L184 100 192 109V143Z" fill="#785D45"/><path d="M166 111Q170 94 183 97Q187 83 198 96Q208 98 209 113Q196 106 188 114Q177 106 166 111Z" fill="#5F845D"/>
+</g>
+<g id="layer-focal" filter="url(#foot-shadow)">
+  <path d="M188 171Q175 162 183 149Q188 141 198 145Q202 136 211 141Q219 146 215 155Q226 159 221 168Q216 174 207 170L197 174Z" fill="url(#foot-print)"/>
+  <path d="M252 165Q242 159 248 149Q252 143 259 146Q263 139 269 143Q276 148 272 154Q281 157 277 164Q272 168 266 165L259 168Z" fill="#64866A" opacity=".82"/>
+  <path d="M111 164Q101 159 106 151Q109 146 115 148Q119 142 124 146Q130 150 126 156Q132 159 129 164Q125 168 120 164L115 167Z" fill="#748D75" opacity=".76"/>
+  <path d="M225 122v-20m0 12-8-11m8 5 9-12" fill="none" stroke="#708A5D" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M163 145l14 0m-6-6 6 6-6 6" fill="none" stroke="#D6EAD9" stroke-width="1.6"/>
+</g>
+<g id="layer-details">
+  <path d="M15 178q13-5 25 0m73 7q12-5 23 0m101-5q12-5 23 0" fill="none" stroke="#B2CA91" stroke-width="1.4"/>
+  <circle cx="89" cy="173" r="1.8" fill="#F2EBD0"/><circle cx="242" cy="180" r="1.7" fill="#F2EBD0"/><circle cx="289" cy="169" r="1.6" fill="#F2EBD0"/>
+  <path d="M22 68q10-5 17 0m191 17q8-5 15 0m27-4q7-4 13 0" fill="none" stroke="#EFF4E6" stroke-width="1.3"/>
+  <path d="M184 157l5-2m6-4 5-2m56 9 4-2m7-4 4-2" fill="none" stroke="#D5E5D4" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M19 115Q19 106 30 105m36-4 12-14 26 0" fill="none" stroke="#B8C9C3" stroke-width="1.2"/><path d="M183 158q9-8 17-2m45 4q8-6 15-2" fill="none" stroke="#BBD3B5" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

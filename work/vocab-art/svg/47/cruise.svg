@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: cruise
+  CONTEXTUAL_DEFINITION: Travel by a large passenger ship for leisure, often sailing along a coast.
+  PEDAGOGICAL_ART_DIRECTOR: Show a large multi-deck passenger liner cruising across open water with wake and a distant coast.
+  PEDAGOGICAL_ARCHETYPE: 3 - Environmental Scene
+  SYNONYM_GUARD: Make this a leisure cruise ship, not a small ferry or working cargo vessel.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A white multi-deck liner crosses blue water beneath a warm sky; the open deck and curved coastline suggest slow leisure travel.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:cruise" data-archetype="environment">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="cr-sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#55A9B6"/><stop offset="1" stop-color="#357E94"/></linearGradient>
+  <linearGradient id="cr-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A7D0D9"/><stop offset="1" stop-color="#F2E6CC"/></linearGradient>
+  <linearGradient id="cr-ship" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#B9C9C8"/></linearGradient>
+  <filter id="cr-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cr-sky)"/><circle cx="248" cy="38" r="16" fill="#F2C14E"/><path d="M0 108L58 77L97 105L149 68L196 109L243 81L304 109V128H0Z" fill="#91AA88"/><path d="M0 111Q53 106 99 113T205 109T304 114V192H0Z" fill="url(#cr-sea)"/><path d="M18 169H286" stroke="#BEE1DF" stroke-width="1.2"/><path d="M28 133Q67 128 103 134M212 142Q250 137 287 143" fill="none" stroke="#D2F0E9" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M26 96H275" stroke="#F5F0E2" stroke-width="1.2"/><circle cx="75" cy="101" r="2" fill="#F2C14E"/><circle cx="230" cy="100" r="2" fill="#F2C14E"/><path d="M61 94Q94 86 127 94M177 94Q211 85 246 94" fill="none" stroke="#6FC1C9" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#cr-shadow)"><path d="M42 90H266L285 102L263 121H52L31 105Z" fill="url(#cr-ship)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M62 62H249V91H62Z" fill="#F8F7F0" stroke="#1E2A3B" stroke-width="1.4"/><path d="M79 46H235V61H79Z" fill="#E5E9E2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M91 37H216V46H91Z" fill="#D6DFD9" stroke="#1E2A3B" stroke-width="1"/><path d="M75 68H91V81H75ZM105 68H121V81H105ZM135 68H151V81H135ZM165 68H181V81H165ZM195 68H211V81H195ZM225 68H239V81H225Z" fill="#8FC1C9" stroke="#48616A" stroke-width=".8"/><path d="M87 51H101V61H87ZM119 51H133V61H119ZM151 51H165V61H151ZM183 51H197V61H183ZM215 51H229V61H215Z" fill="#A9CCD0" stroke="#48616A" stroke-width=".7"/><path d="M141 91V80H155V91" fill="#B45F4A" stroke="#374C55" stroke-width="1"/><path d="M146 38V28H151V38M157 38V31H162V38" fill="#A85F45" stroke="#374C55" stroke-width=".8"/><path d="M43 122Q88 132 132 123T222 125T280 117" fill="none" stroke="#E3F1E8" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M57 91H272" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><ellipse cx="154" cy="141" rx="130" ry="5" fill="#1E2A3B" opacity=".12"/><circle cx="264" cy="38" r="2" fill="#FFF7DD"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="102" rx="130" ry="77" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

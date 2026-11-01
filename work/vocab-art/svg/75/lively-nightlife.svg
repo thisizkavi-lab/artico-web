@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:lively nightlife" data-archetype="warm-active-evening-street-with-venues-and-pedestrians">
+<!-- SELF_PROMPT: Lesson 75 urban life; lively nightlife. Show an active but welcoming evening street with warmly lit venues, pedestrians, and a street musician under a dark sky; no signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="night-sky" x2="0" y2="1"><stop stop-color="#435A70"/><stop offset="1" stop-color="#788493"/></linearGradient>
+  <linearGradient id="night-wall" x2="0" y2="1"><stop stop-color="#625F69"/><stop offset="1" stop-color="#444D5A"/></linearGradient>
+  <linearGradient id="night-window" x2="0" y2="1"><stop stop-color="#F3D280"/><stop offset="1" stop-color="#C88759"/></linearGradient>
+  <linearGradient id="night-road" x2="0" y2="1"><stop stop-color="#646C73"/><stop offset="1" stop-color="#3D4C57"/></linearGradient>
+  <filter id="night-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#1D2D3C" flood-opacity=".3"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#night-sky)"/><circle cx="256" cy="30" r="11" fill="#F0E5C2" opacity=".78"/><path d="M7 119V38h47v81Zm47 0V20h43v99Zm155 0V36h44v83Zm44 0V18h45v101Z" fill="url(#night-wall)"/><path d="M0 123H304V192H0Z" fill="url(#night-road)"/></g>
+<g id="layer-context">
+  <path d="M0 133H110v29H0Zm192-3h112v32H192Z" fill="#765D55"/><path d="M10 139h19v17H10Zm30 0h19v17H40Zm30 0h28v17H70Zm135-1h23v18h-23Zm34 0h22v18h-22Zm32 0h23v18h-23Z" fill="url(#night-window)"/>
+  <path d="M0 160Q64 150 122 160T237 158Q279 151 304 160V192H0Z" fill="#485761"/><path d="M16 169h44m37 0h40m64 0h45m26 0h23" fill="none" stroke="#D8C8A7" stroke-width="1.3"/>
+  <path d="M18 117v-20m0 11-8-8m8 6 8-10" fill="none" stroke="#627D59" stroke-width="2.3"/><circle cx="18" cy="94" r="11" fill="#657A60"/><path d="M277 122v-19m0 10-8-8m8 6 8-10" fill="none" stroke="#627D59" stroke-width="2.3"/><circle cx="277" cy="101" r="11" fill="#657A60"/>
+  <path d="M113 112v-8m-4 4h8m74 5v-8m-4 4h8" fill="none" stroke="#E9C66F" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#night-shadow)">
+  <circle cx="79" cy="112" r="7" fill="#C88D68"/><path d="M72 109q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#363941"/><path d="M71 120Q79 115 87 120L91 143 67 144Z" fill="#547A91"/><path d="M72 142l-4 16 8 1 5-15m4-2 5 16 7 0-6-16" fill="#354954"/><path d="M71 122l-9 8 4 5 10-7m11-6 9 8-4 5-11-7" fill="#C88D68"/>
+  <circle cx="139" cy="116" r="7" fill="#DEA981"/><path d="M132 113q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#513D38"/><path d="M131 124Q139 120 147 124L151 146 127 147Z" fill="#B77B5A"/><path d="M132 145l-4 14 8 1 4-13m6-2 5 15 7 0-6-15" fill="#3D4D56"/><path d="M131 126l-8 8 4 5 9-7m10-6 9 8-4 5-10-7" fill="#DEA981"/>
+  <path d="M168 147q9-10 18 0v12h-18Z" fill="#6B5C4B"/><circle cx="177" cy="119" r="6" fill="#AD795B"/><path d="M171 116q1-9 7-9 6 1 7 9l-4-2h-8Z" fill="#3B3940"/><path d="M170 127Q177 123 184 127L187 143 167 144Z" fill="#758E6D"/><path d="M171 142l-3 13 7 1 4-13m3-1 4 13 7 0-5-13" fill="#384C54"/><path d="M168 128l-8 8 4 4 9-7" fill="#AD795B"/>
+  <path d="M187 123l13-12m-13 12 17 1m-16-2 8 10" fill="none" stroke="#C89A5B" stroke-width="2.3"/><ellipse cx="199" cy="126" rx="5" ry="8" fill="#AE8052" stroke="#665244" stroke-width="1.1"/>
+</g>
+<g id="layer-details">
+  <path d="M12 181q12-5 23 0m53 7q12-5 23 0m96-4q12-5 23 0m50-8q12-5 22 0" fill="none" stroke="#7C8F91" stroke-width="1.4"/>
+  <circle cx="33" cy="165" r="2" fill="#E9C66F"/><circle cx="233" cy="166" r="2" fill="#E9C66F"/><circle cx="282" cy="145" r="1.8" fill="#E9C66F"/>
+  <path d="M12 64h21m27-24h19m148 36h22m26-38h17" fill="none" stroke="#A3AFB0" stroke-width="1.3"/>
+  <path d="M12 133h87m108-1h86" fill="none" stroke="#E9C66F" stroke-width="1.2" opacity=".75"/>
+</g>
+<g id="layer-lighting"><path d="M7 138h96m107 0h86" fill="none" stroke="#F3D48A" stroke-width="1.2"/><path d="M11 134h23m38 0h24m104 0h20m23 0h21" fill="none" stroke="#FFDC91" stroke-width="1.7" opacity=".7"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

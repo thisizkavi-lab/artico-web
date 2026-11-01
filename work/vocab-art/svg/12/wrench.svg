@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: wrench (Noun)
+  CONTEXTUAL_DEFINITION: A hand tool with fixed open jaws for gripping and turning a nut.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: Show a plain fixed open-end spanner gripping a hex nut; the nearby monkey wrench has an adjustable jaw and thumb wheel.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Workshop wall with a low timber bench at y=145.
+    - Context_Layer: A small bolt-and-nut fastener anchored in a board near x=213,y=119.
+    - Focal_Layer: Steel wrench head centered at x=157,y=83, with a long blue-gray handle angled to x=118,y=154.
+    - Details_Layer: Fixed jaw opening, hex nut faces, handle seam, board grain, and light metal facets.
+    - Lighting_Layer: Upper-left shine on the wrench and a soft shadow under its handle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:wrench" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#CBD5E1;--c-secondary:#94A3B8;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="wall-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="metal-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F5F9"/><stop offset=".55" stop-color="#CBD5E1"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall-grad)"/><path d="M0 145H304V192H0Z" fill="#D9C6AB"/><path d="M14 145H290" stroke="#8A5A35" stroke-width="2"/><path d="M40 116H264V146H40Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.4"/><ellipse cx="154" cy="150" rx="65" ry="5" fill="#BBAA92" opacity=".7"/></g>
+  <g id="layer-context"><path d="M70 128H113M191 134H244" stroke="#E3AC77" stroke-width="1.5"/><path d="M211 95V120" stroke="#64748B" stroke-width="5"/><polygon points="211,96 224,103 224,115 211,122 198,115 198,103" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><polygon points="211,101 219,105 219,113 211,117 203,113 203,105" fill="#C88446" stroke="#64748B" stroke-width="1.2"/><circle cx="211" cy="90" r="3" fill="#94A3B8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M142 93L112 150" stroke="#1E2A3B" stroke-width="15" stroke-linecap="round"/><path d="M142 93L112 150" stroke="#5479AC" stroke-width="10" stroke-linecap="round"/><path d="M137 101L119 137" stroke="#8EB0DE" stroke-width="2" stroke-linecap="round"/><path d="M144 82L152 66Q157 57 166 61L179 69Q186 74 182 83L174 99L161 103L153 94Z" fill="url(#metal-grad)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M148 82L137 73Q132 69 136 63L141 57Q145 53 150 57L164 68" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M151 82L162 87L170 77L163 72Z" fill="#C88446" stroke="#64748B" stroke-width="1.3"/><path d="M140 69L146 64M166 94L174 79" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".65"/></g>
+  <g id="layer-details"><path d="M105 151L116 156M101 143L111 148" stroke="#1E2A3B" stroke-width="1.2"/><path d="M70 121H91M230 121H248" stroke="#965D28" stroke-width="1.4"/><path d="M126 98L130 91M132 103L137 96" stroke="#AFC3DE" stroke-width="2"/><circle cx="187" cy="105" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M140 69L145 63" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><path d="M128 119L139 99" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".65"/><path d="M46 118H91" stroke="#F2C14E" stroke-width="1.4" opacity=".4"/></g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="36:fashion industry" data-archetype="editorial-industry-scene">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#DDEBF1"/></linearGradient>
+<linearGradient id="workBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7395C5"/><stop offset="1" stop-color="#3E5F91"/></linearGradient>
+<linearGradient id="timber" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#E0A96C"/><stop offset="1" stop-color="#A96A3D"/></linearGradient>
+<filter id="softShadow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>
+<!-- 1. Stage Canvas & Ground Shadow -->
+<rect width="304" height="192" fill="url(#wallWash)"/><path d="M0 150H304V192H0Z" fill="#E8E0D3"/><path d="M0 150H304" stroke="#1E2A3B" stroke-width="2"/>
+<ellipse cx="152" cy="176" rx="112" ry="6" fill="#BFC7CE" opacity=".28" filter="url(#softShadow)"/>
+<!-- 2. Background Context / Muted Whole / Halo -->
+<path d="M195 38L223 28 251 38V63L240 76H207L195 63Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M222 28V19" stroke="#1E2A3B" stroke-width="3"/><path d="M207 76H240L256 147H190Z" fill="#A8C5D0" stroke="#1E2A3B" stroke-width="2.3"/><path d="M211 79L224 91 237 79" fill="none" stroke="#5479AC" stroke-width="2"/>
+<!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+<path d="M49 166C52 137 64 121 87 118L107 126 115 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M69 63C71 48 83 42 97 45 110 48 115 60 112 76L108 92C105 102 95 107 85 103 74 99 67 86 69 70Z" fill="#D19A79" stroke="#1E2A3B" stroke-width="2.3"/><path d="M66 61C70 46 82 40 96 42 107 43 115 50 118 59L106 55 94 54 81 59Z" fill="#473A33" stroke="#1E2A3B" stroke-width="2"/><path d="M79 74Q84 71 89 74M97 74Q102 71 107 74M83 87Q91 91 99 87" fill="none" stroke="#1E2A3B" stroke-width="1.8"/>
+<!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+<path d="M100 123C118 113 131 101 147 88L160 97 151 117 128 138" fill="#D19A79" stroke="#1E2A3B" stroke-width="2.2"/><path d="M151 84L180 84 183 94 151 101Z" fill="#8EA0AE" stroke="#1E2A3B" stroke-width="2"/><path d="M166 83L174 72M175 84L185 74" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/><path d="M34 141H107V163H34Z" fill="url(#timber)" stroke="#1E2A3B" stroke-width="2"/><path d="M47 141V166M94 141V166" stroke="#8A5837" stroke-width="5"/><path d="M47 131C58 121 76 121 88 131V141H47Z" fill="#F4D98E" stroke="#1E2A3B" stroke-width="2"/><path d="M57 132L67 139 78 132" fill="none" stroke="#C88446" stroke-width="1.8"/>
+<!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+<ellipse cx="150" cy="175" rx="105" ry="6" fill="#C6B9A7" opacity=".38"/><path d="M260 54L268 62 260 70 252 62Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.5"/>
+</svg>

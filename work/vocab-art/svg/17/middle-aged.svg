@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: middle-aged (Adjective)
+  CONTEXTUAL_DEFINITION: An adult in the middle years of life.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Show a mature adult with subtle temple grays and smile lines, not an elderly person.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Muted shoulders and shirt.
+    - Focal_Layer: Adult portrait with a few gray strands at temples.
+    - Details_Layer: Gentle smile lines and calm expression.
+    - Lighting_Layer: Warm, even light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:middle-aged" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="90" rx="105" ry="72" fill="#FEF3C7" opacity=".36"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 158Q99 126 102 87Q105 48 152 44Q199 48 202 87Q205 126 198 158Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M99 87Q95 48 139 38Q175 35 198 56Q210 72 202 98L194 105Q189 77 175 70Q151 81 119 74Q107 79 103 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M103 65L112 56M195 64L187 55" stroke="#D8DCE2" stroke-width="4" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 98Q129 93 139 98M164 98Q174 93 184 98" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 105Q130 108 138 105M166 105Q174 108 181 105" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 103L148 120L155 123M138 140Q152 146 167 139" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M113 113Q116 121 122 124M190 113Q187 121 181 124M126 135Q130 140 134 141M178 135Q174 140 170 141" fill="none" stroke="#A86F45" stroke-width="1.3" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="96" rx="71" ry="66" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5" opacity=".38"/>
+</svg>

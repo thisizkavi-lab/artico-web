@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: check (payment) / cheque (UK spelling) (noun)
+  CONTEXTUAL_DEFINITION: A signed paper instruction authorizing a bank to pay the named amount from an account.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with real transaction context
+  SYNONYM_GUARD: Show a paper check being handed across a checkout, not a tick mark, inspection, or the verb “stop.”
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Tilted blank check x73..228, small signature-like squiggle and bank-slip bars; customer's thick hand extends from left; cashier hand receives at right; no letters or numerals.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:check (payment) / cheque (uk spelling)" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="check-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E7EEF5"/></linearGradient>
+    <radialGradient id="check-seal"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#568552"/></radialGradient>
+    <path id="check-left-hand" d="M33 130 C45 117 62 113 79 117 L103 126 L111 140 L95 151 L65 145 L43 149 Z"/>
+    <clipPath id="check-hand-clip"><use href="#check-left-hand"/></clipPath>
+    <filter id="check-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="154" cy="163" rx="100" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Checkout context and receiving hand -->
+  <g id="layer-context"><path d="M215 125 C228 116 244 116 260 122 L280 134 L267 150 L237 145 L216 150 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4"/><path d="M221 130 Q237 124 251 131" fill="none" stroke="#ECC09D" stroke-width="3"/><rect x="229" y="86" width="51" height="35" rx="5" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M237 96 H272 M237 104 H263" stroke="#94A3B8" stroke-width="2"/></g>
+  <!-- 3. Primary payment check being passed -->
+  <g id="layer-focal" filter="url(#check-shadow)"><rect x="76" y="55" width="154" height="83" rx="7" transform="rotate(-4 76 55)" fill="url(#check-paper)" stroke="#1E2A3B" stroke-width="2.7"/><path d="M89 72 H217 M89 80 H163 M89 88 H141" stroke="#94A3B8" stroke-width="2.1" stroke-linecap="round"/><path d="M158 105 C167 95 173 112 180 103 C188 93 192 114 203 104" fill="none" stroke="#5479AC" stroke-width="2.2" stroke-linecap="round"/><circle cx="203" cy="73" r="10" fill="url(#check-seal)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M199 73 L202 76 L208 69" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><g clip-path="url(#check-hand-clip)"><rect x="31" y="112" width="84" height="45" fill="#D89A6C"/><path d="M32 138 Q64 129 104 143 V157 H32Z" fill="#B6784B"/></g><use href="#check-left-hand" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/></g>
+  <!-- 4. Nonverbal checkbook and document details -->
+  <g id="layer-details"><path d="M89 121 H142" stroke="#CBD5E1" stroke-width="2"/><path d="M96 126 H134" stroke="#CBD5E1" stroke-width="2"/><path d="M74 110 Q71 121 74 132" fill="none" stroke="#4A72B2" stroke-width="2.2"/><path d="M49 124 C57 120 65 121 72 126" fill="none" stroke="#ECC09D" stroke-width="2.4"/><path d="M270 82 L279 76 L286 82 L282 92" fill="none" stroke="#5479AC" stroke-width="2.3" stroke-linecap="round"/></g>
+  <!-- 5. Directional glints and handoff cue -->
+  <g id="layer-lighting"><path d="M87 63 L124 60" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round"/><path d="M142 149 C165 158 192 155 212 146" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/><path d="M207 141 L216 144 L210 151 Z" fill="#4A72B2"/><path d="M234 73 L234 81 M230 77 H238" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

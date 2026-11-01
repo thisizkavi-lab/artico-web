@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: tornado (Noun)
+  CONTEXTUAL_DEFINITION: A narrow rotating funnel cloud reaching from a storm cloud toward the ground.
+  PEDAGOGICAL_ART_DIRECTOR: Make a tapered rotating funnel unmistakable as it touches down on an open plain beneath a dark parent cloud.
+  PEDAGOGICAL_ARCHETYPE: 3 - Rotating funnel hazard
+  SYNONYM_GUARD: A tornado is a vertical funnel viewed from the side, unlike a hurricane's broad overhead spiral.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A slim twisting cloud funnel narrows from a wide storm base to the ground, with wind rings circling the lower tip.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:tornado" data-archetype="narrow-rotating-tornado-funnel">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="to-sky" x2="0" y2="1"><stop stop-color="#667E8E"/><stop offset="1" stop-color="#C5D4D1"/></linearGradient><linearGradient id="to-funnel" x2="1" y2="0"><stop stop-color="#788D95"/><stop offset=".5" stop-color="#526B79"/><stop offset="1" stop-color="#AABBC0"/></linearGradient><linearGradient id="to-ground" x2="0" y2="1"><stop stop-color="#A1B29B"/><stop offset="1" stop-color="#687F6E"/></linearGradient><filter id="to-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#263D47" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#to-sky)"/><path d="M0 127Q76 109 151 128T304 119V192H0Z" fill="#91A492"/><path d="M0 154Q74 137 149 154T304 144V192H0Z" fill="url(#to-ground)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A7B9A5" stroke-width="1.2"/><path d="M25 138L34 119L30 120L38 106L35 107L43 92L51 108L48 107L56 121L52 120L61 138Z" fill="#627C68"/><path d="M236 136L247 114L243 115L252 100L249 101L258 85L266 101L263 100L272 115L268 114L277 136Z" fill="#627C68"/><path d="M25 138q14-6 27 0m193-1q14-6 27 0" fill="none" stroke="#C7D8C4" stroke-width="1.5"/><ellipse cx="151" cy="164" rx="110" ry="5" fill="#3E534A" opacity=".16"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#to-shadow)">
+  <path d="M58 49Q61 31 79 30Q89 12 108 21Q126 15 136 33Q157 25 169 41Q185 32 199 45Q216 41 226 55Q238 57 243 70Q221 79 202 73Q179 84 159 76Q136 84 116 76Q92 83 74 72Q59 68 58 49Z" fill="#536A79" stroke="#3D5564" stroke-width="1.7"/><path d="M71 45q13-13 27-6m26-10q11-5 20 3m20 13q12-7 22 2m22 2q10-5 17 4" fill="none" stroke="#AFBEC0" stroke-width="1.4"/>
+  <path d="M88 71Q107 78 135 75Q155 73 174 78Q195 84 216 70Q210 91 201 105Q191 125 179 142Q169 155 156 163Q143 155 135 140Q123 120 113 103Q101 88 88 71Z" fill="url(#to-funnel)" stroke="#556D77" stroke-width="1.8"/><path d="M99 76Q126 90 151 85Q182 81 209 73M117 105Q143 115 179 104M135 137Q152 144 170 136" fill="none" stroke="#D4E0DC" stroke-width="1.5" stroke-linecap="round"/><path d="M142 84Q158 101 144 116Q135 126 151 136M184 84Q171 97 188 108" fill="none" stroke="#92A7AD" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M113 160Q136 150 156 160T199 160M125 166Q143 159 157 166T186 166" fill="none" stroke="#D7E6E1" stroke-width="1.6" stroke-linecap="round"/><path d="M91 156l-9-8m25 4-6-10m112 12 8-10m-23 9 7-11" fill="none" stroke="#C8D9D5" stroke-width="1.4" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#EDF4F0" stroke-width="1" opacity=".44"/><circle cx="64" cy="108" r="1.5" fill="#F4F8F1"/><circle cx="238" cy="112" r="1.4" fill="#F4F8F1"/><path d="M32 150q14-7 27 0m181 1q13-6 25 0" fill="none" stroke="#DAE8DF" stroke-width="1.2"/><path d="M107 151q12-5 23 0" fill="none" stroke="#EDF5EF" stroke-width="1.2" stroke-linecap="round"/><path d="M177 153q11-5 22 0" fill="none" stroke="#EDF5EF" stroke-width="1.2" stroke-linecap="round"/><path d="M132 169q19-6 38 0" fill="none" stroke="#EDF5EF" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M61 48q4-14 18-15m32-9q12-4 19 3" fill="none" stroke="#BCCACE" stroke-width="1.2"/><path d="M92 74q19 10 41 6m-1 57q9 17 23 24" fill="none" stroke="#E2ECE7" stroke-width="1.2"/></g>
+</svg>

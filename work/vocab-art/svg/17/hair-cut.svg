@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: hair cut (Noun)
+  CONTEXTUAL_DEFINITION: A haircut as a finished style, with freshly trimmed hair.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait with result cue
+  SYNONYM_GUARD: Emphasize the finished neat hairstyle and trimmed clippings, rather than the cutting action.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Salon paper and mirror edge.
+    - Context_Layer: Muted mirror frame.
+    - Focal_Layer: Freshly cut short hairstyle.
+    - Details_Layer: Clean even outline and a few swept clippings.
+    - Lighting_Layer: Soft vanity glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:hair cut" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="91" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="53" y="22" width="198" height="142" rx="29" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.2"/><rect x="63" y="31" width="178" height="125" rx="22" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.4"/>
+  <ellipse cx="152" cy="90" rx="85" ry="70" fill="#FEF3C7" opacity=".35"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M107 158Q99 127 102 88Q105 51 152 47Q199 51 202 88Q205 127 197 158Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M99 92Q95 51 137 40Q174 36 196 56Q209 69 203 95L195 111L184 85Q152 74 119 86L111 108Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.6"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 100Q129 95 139 100M164 100Q174 95 184 100" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 107Q130 110 138 107M166 107Q174 110 181 107" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 105L148 121L155 124M138 141Q152 147 167 140" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M80 145Q73 151 81 155M87 151Q82 158 90 161M226 144Q232 150 225 156" fill="none" stroke="#805333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M77 59Q93 37 113 35" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,44 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: post
+ CONTEXTUAL_DEFINITION: To publish a photo or update to a social-media feed.
+ PEDAGOGICAL_ARCHETYPE: uploading a new image into a social feed
+ SYNONYM_GUARD: Make a user publish digital content into a feed; avoid a physical mailbox, letter or fence post.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A user selects a photo on a phone and taps an upward-arrow publish control as the new photo tile appears at the top of a social-media feed.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:post" data-archetype="publishing a social-media update">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M126 16Q126 11 132 11H263Q269 11 269 17V150H126Z" fill="#26384A"/><path d="M134 23H261V141H134Z" fill="#E6DED1"/>
+  <path d="M140 30H255V41H140Z" fill="#597D8B"/><circle cx="149" cy="35" r="2.2" fill="#D6A64C"/><path d="M158 35H197M221 35H247" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M140 47H255V100H140Z" fill="#B8C4B8"/><path d="M140 88Q173 62 203 86T255 78V100H140Z" fill="#798C72"/><circle cx="230" cy="60" r="7" fill="#D6A64C"/>
+  <path d="M141 106H254V136H141Z" fill="#F6E5CE"/><path d="M149 113H244M149 119H230" stroke="#8C725A" stroke-width="1"/>
+ </g>
+ <g id="layer-context">
+  <!-- selected photo ready for upload -->
+  <path d="M34 48H94V99H34Z" fill="#F6E5CE" stroke="#8C725A" stroke-width="1.1"/><path d="M40 54H88V91H40Z" fill="#597D8B"/><path d="M40 84L54 65L67 78L78 62L88 72V91H40Z" fill="#798C72"/><circle cx="78" cy="61" r="4" fill="#D6A64C"/>
+  <path d="M54 111L69 96L84 111" stroke="#D6A64C" stroke-width="2.3" fill="none"/><path d="M69 97V125" stroke="#D6A64C" stroke-width="2.3"/>
+  <path d="M22 149H280" stroke="#F6E5CE" stroke-width="1"/><circle cx="74" cy="108" r="2" fill="#B85E5A"/>
+ </g>
+ <g id="layer-focal">
+  <!-- profile owner choosing to publish -->
+  <circle cx="75" cy="70" r="8" fill="#D29A78"/><path d="M67 69Q68 58 76 59Q84 60 84 71L79 65H69Z" fill="#26384A"/>
+  <path d="M61 82Q75 74 89 82L94 117H56Z" fill="#B85E5A"/><path d="M64 87L53 98M87 87L99 95" stroke="#D29A78" stroke-width="2.5"/>
+  <path d="M62 115L60 139M91 115L94 139" stroke="#26384A" stroke-width="2.8"/>
+  <!-- hand taps upload arrow on the phone -->
+  <path d="M99 103Q96 99 101 95L111 90L118 77Q120 73 124 75Q127 77 125 81L122 89L130 88Q135 89 134 93Q133 97 129 98L117 99L111 111Q107 115 103 112Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M196 118L196 108L187 108L207 87L227 108L218 108V118Z" fill="#D6A64C" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M184 124H230V130H184Z" fill="#597D8B"/>
+ </g>
+ <g id="layer-details">
+  <path d="M65 67Q75 63 81 67M69 75Q75 78 81 75" stroke="#654E43" stroke-width="1" fill="none"/>
+  <path d="M43 50H86" stroke="#FFF8EA" stroke-width="1"/><path d="M145 44H248" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="247" cy="103" r="2" fill="#B85E5A"/><path d="M176 85L182 79M230 83L236 79" stroke="#D6A64C" stroke-width="1.3"/>
+  <path d="M144 138H250" stroke="#8C725A" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="200" cy="86" rx="72" ry="67" fill="#E7C66B" opacity=".08"/><path d="M129 16L145 37M267 17L252 37" stroke="#FFF1C7" stroke-width="1.1" opacity=".55"/>
+  <path d="M125 148H270" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

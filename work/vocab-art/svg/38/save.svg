@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: save (verb; put money aside)
+  CONTEXTUAL_DEFINITION: To keep some money for future use rather than spend it now.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action plus tool
+  SYNONYM_GUARD: Japanese gloss lists rescue, but this chapter's finance group locks “save” to setting money aside; show a coin entering a secure savings container for later.
+  MODE: STATIC peak saving action
+  COORDINATE_BLUEPRINT: Person drops coin through a slot into a clear savings jar; previously saved coin stack and small sprout inside suggest future growth; keep hands volumetric.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:save" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="save-jar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB" stop-opacity=".85"/><stop offset="1" stop-color="#8EB0DE" stop-opacity=".68"/></linearGradient>
+    <radialGradient id="save-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="save-hand" d="M65 59 C77 52 90 55 97 65 L113 87 C118 94 114 101 108 101 C103 100 99 94 95 88 L87 78 L91 98 C92 106 85 110 79 106 C74 103 74 95 72 88 L67 70 L63 89 C61 96 54 98 50 93 C47 88 50 80 52 72 C54 66 58 61 65 59 Z"/>
+    <clipPath id="save-hand-clip"><use href="#save-hand"/></clipPath>
+    <filter id="save-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="78" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Stable home desk setting -->
+  <g id="layer-context"><path d="M35 143 H269 V154 H35 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M42 148 H262" stroke="#E3AC77" stroke-width="1.6"/><path d="M210 66 Q228 48 246 66" fill="none" stroke="#7FB07A" stroke-width="2.3" stroke-linecap="round"/><path d="M228 66 V84" stroke="#568552" stroke-width="2.5" stroke-linecap="round"/><path d="M228 76 Q216 68 212 73 Q216 83 228 82 M228 72 Q238 64 244 68 Q241 78 228 79" fill="#A8D4A2" stroke="#568552" stroke-width="1.4"/></g>
+  <!-- 3. Primary transparent savings jar with stored coins -->
+  <g id="layer-focal" filter="url(#save-shadow)"><path d="M110 77 Q110 70 118 70 H194 Q202 70 202 77 V142 Q202 151 193 151 H119 Q110 151 110 142 Z" fill="url(#save-jar)" stroke="#1E2A3B" stroke-width="2.7"/><rect x="121" y="62" width="70" height="12" rx="4" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M143 65 H169" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="157" cy="133" rx="24" ry="7" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.6"/><path d="M133 125 V133 C133 142 181 142 181 133 V125" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="157" cy="125" rx="24" ry="7" fill="url(#save-coin)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M145 119 H169" stroke="#FCE29C" stroke-width="2"/><path d="M150 115 V101 M150 107 Q141 99 138 103 Q140 112 150 112 M151 106 Q159 96 165 100 Q163 109 151 111" fill="#7FB07A" stroke="#568552" stroke-width="1.5" stroke-linecap="round"/></g>
+  <!-- 4. Hand drops a new coin into the slot -->
+  <g id="layer-details"><g clip-path="url(#save-hand-clip)"><rect x="45" y="51" width="74" height="67" fill="#D89A6C"/><path d="M49 90 Q77 76 112 96 V117 H45Z" fill="#B6784B"/><path d="M64 64 Q77 59 86 67" fill="none" stroke="#ECC09D" stroke-width="2.4"/></g><use href="#save-hand" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><ellipse cx="125" cy="82" rx="9" ry="5" transform="rotate(20 125 82)" fill="url(#save-coin)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M111 89 C115 93 119 95 124 96" fill="none" stroke="#4A72B2" stroke-width="1.9" stroke-dasharray="3 3"/><circle cx="126" cy="109" r="4" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 5. Future-growth highlight -->
+  <g id="layer-lighting"><path d="M117 84 Q122 78 128 80" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M218 54 L218 62 M214 58 H222" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M186 86 Q192 98 191 114" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: freezing (Adjective / participle)
+  CONTEXTUAL_DEFINITION: Extremely cold, so cold that water begins to freeze into ice.
+  PEDAGOGICAL_ART_DIRECTOR: Show ice forming across a puddle, with frost crystals and a very cold atmosphere.
+  PEDAGOGICAL_ARCHETYPE: 5 - Extreme cold condition
+  SYNONYM_GUARD: Show the water turning to ice, stronger than ordinary cold or chilly weather.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Frost-rimmed puddle with a spreading clear ice sheet, snow dust, and a low cold thermometer in the background.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:freezing" data-archetype="freezing-weather-condition">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fr-sky" x2="0" y2="1"><stop stop-color="#DCE8EC"/><stop offset="1" stop-color="#AFC2CE"/></linearGradient><linearGradient id="fr-ice" x2="1" y2="1"><stop stop-color="#E9FBF8"/><stop offset="1" stop-color="#8BC4CF"/></linearGradient><linearGradient id="fr-ground" x2="0" y2="1"><stop stop-color="#E9F0EE"/><stop offset="1" stop-color="#B7C9C9"/></linearGradient><filter id="fr-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fr-sky)"/><path d="M0 119Q79 108 152 119T304 114V192H0Z" fill="#93A9AB"/><path d="M0 151H304V192H0Z" fill="url(#fr-ground)"/></g>
+ <g id="layer-context"><path d="M0 114Q58 102 110 114T222 111T304 106" fill="none" stroke="#F6FBF8" stroke-width="1.6"/><path d="M20 174H282" fill="none" stroke="#D9E4E1" stroke-width="1.2"/><circle cx="34" cy="46" r="2" fill="#FFFFFF"/><circle cx="65" cy="77" r="1.8" fill="#FFFFFF"/><circle cx="241" cy="58" r="2.1" fill="#FFFFFF"/><circle cx="267" cy="98" r="1.6" fill="#FFFFFF"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fr-shadow)">
+  <path d="M56 134Q76 111 108 119Q127 108 149 119Q176 107 199 120Q225 111 250 132Q263 144 251 153Q212 165 151 162Q91 166 57 152Q48 145 56 134Z" fill="#4A879A" stroke="#385E6D" stroke-width="1.7"/><path d="M61 136Q81 119 108 126Q128 114 150 126Q175 114 198 127Q225 118 247 135Q253 142 244 148Q204 157 151 155Q96 159 63 148Z" fill="url(#fr-ice)" stroke="#C9E9E8" stroke-width="1.8"/><path d="M91 130l17-11 10 14-15 12Zm64-4 20-12 8 15-17 12Zm40 3 13-9 10 12-12 10Z" fill="#DDF4F2" stroke="#A9D6DA" stroke-width="1.1"/>
+  <path d="M95 125l10 6m60-9 11 5m39 2 8 6M77 144l18 4m85 2 21-3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="138" cy="136" r="4" fill="#FFFFFF" opacity=".7"/><circle cx="179" cy="141" r="2.5" fill="#FFFFFF" opacity=".8"/>
+  <rect x="254" y="59" width="23" height="70" rx="11" fill="#F8FBF6" stroke="#6D8A91" stroke-width="1.5"/><rect x="263" y="91" width="6" height="32" rx="3" fill="#6FB2C0"/><circle cx="266" cy="128" r="8" fill="#6FB2C0" stroke="#568995" stroke-width="1"/><path d="M250 77h9m-9 9h6m-6 9h9m-9 9h6" fill="none" stroke="#587681" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M62 141q8-17 24-17m97-5q18-9 30 0m-111 35q44 8 88 0" fill="none" stroke="#F6FFFF" stroke-width="1.3"/><circle cx="266" cy="71" r="1.1" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M66 135q15-18 35-10m71-10q12-6 22 0" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="117" cy="128" r="1.3" fill="#FFFFFF"/><path d="M255 63q9-6 17 0" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

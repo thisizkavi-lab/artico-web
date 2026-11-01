@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 07 - Sharing information
+  WORD: company name (Noun)
+  CONTEXTUAL_DEFINITION: The identity used to refer to a business, shown by a matching symbol on its storefront and card.
+  PEDAGOGICAL_ARCHETYPE: 2 (Paired business identity across everyday objects)
+  SYNONYM_GUARD: One unique abstract emblem appears on the office sign and business card, suggesting the company's identifying name without writing it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small office facade and walkway.
+    - Context_Layer: Employee holds a card that matches the facade emblem.
+    - Focal_Layer: Blank company sign with a unique abstract leaf-and-circle mark.
+    - Details_Layer: Matching emblem repeated on the card, no letters.
+    - Lighting_Layer: Soft sun on the shared mark.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="7:company name" data-archetype="hero-object">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 148 Q152 141 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="151" cy="164" rx="112" ry="8" fill="#DDD4C3"/><circle cx="250" cy="40" r="18" fill="#F2C14E" opacity="0.35"/></g>
+  <g id="layer-context"><path d="M38 150 L38 69 L220 69 L220 150Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2.3"/><path d="M50 82 L208 82 M50 91 L208 91" stroke="#CBD5E1" stroke-width="1.5"/><rect x="58" y="110" width="42" height="40" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M70 150 L70 127 Q79 113 88 127 L88 150" fill="#8EB0DE" stroke="#5479AC" stroke-width="1.6"/><rect x="129" y="107" width="68" height="43" rx="3" fill="#EAE3D5" stroke="#8D552E" stroke-width="1.6"/><path d="M38 150 L220 150" stroke="#1E2A3B" stroke-width="2.4"/><path d="M50 69 L50 56 L208 56 L208 69Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><rect x="95" y="27" width="72" height="34" rx="5" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2"/><path d="M117 44 C120 32 139 32 142 44 C139 56 120 56 117 44Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="130" cy="44" r="4" fill="#F2C14E"/></g>
+  <g id="layer-focal"><path d="M235 151 Q237 126 256 123 Q275 126 277 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="256" cy="107" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M239 106 Q240 87 257 89 Q273 90 273 107 Q264 98 255 99Z" fill="#27364B"/><path d="M247 108 Q251 104 254 108 M259 108 Q263 104 266 108" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M248 117 Q256 123 265 116" fill="none" stroke="#A34F47" stroke-width="1.7"/><path d="M241 130 Q222 122 205 111 L200 117 Q206 133 236 143" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><rect x="183" y="102" width="39" height="28" rx="3" transform="rotate(8 202 116)" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M196 116 C198 109 208 109 210 116 C208 123 198 123 196 116Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="203" cy="116" r="2" fill="#F2C14E"/></g>
+  <g id="layer-details"><path d="M109 32 L114 22 L119 32 L129 37 L119 42 L114 52 L109 42 L99 37Z" fill="#F2C14E"/><path d="M102 72 L102 61 M160 72 L160 61" stroke="#D49B2A" stroke-width="2"/><path d="M236 87 L241 77 L246 87 L256 92 L246 97 L241 107 L236 97 L226 92Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M40 71 L218 71 M96 31 Q130 25 166 31" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

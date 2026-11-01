@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: swelling (Noun)
+  CONTEXTUAL_DEFINITION: A mild increase in size as soft tissue puffs up.
+  PEDAGOGICAL_ARCHETYPE: 3 — Gentle symptom close-up
+  SYNONYM_GUARD: Use a rounded raised ankle contour with intact skin; bruise is a flat purple mark.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Side view of lower leg meeting the foot.
+    - Context_Layer: Leg and foot stay muted slate.
+    - Focal_Layer: A small puffy mound rounds the outer ankle.
+    - Details_Layer: Soft pink warmth and a sock edge give scale.
+    - Lighting_Layer: Broad ring frames the bump without suggesting a break.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:swelling" data-archetype="symptom-closeup">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="160" cy="172" rx="107" ry="13" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M104 18Q139 11 173 20L171 96Q169 111 183 123L226 141Q243 148 238 160Q234 168 219 168H110Q98 165 104 154L128 138Q138 131 134 118L121 94Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.4"/><path d="M134 38L139 94Q141 109 150 120M151 134Q178 142 201 151" fill="none" stroke="#94A3B8" stroke-width="1.5"/><path d="M102 154Q156 161 234 155" fill="none" stroke="#64748B" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="151" cy="120" rx="46" ry="40" fill="#FEF3C7" opacity=".5"/><path d="M131 98Q145 101 157 96Q171 93 178 105Q184 116 177 127Q170 138 155 139L138 135Q145 126 139 117Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M142 109Q153 112 162 105M143 127Q155 133 168 127" fill="none" stroke="#C88E74" stroke-width="1.5"/><path d="M126 95Q144 97 158 91Q174 88 182 103Q191 117 181 131Q173 145 153 143L133 138Q141 127 135 116Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M227 105L193 109" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="155" cy="119" rx="36" ry="31" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".45"/></g>
+</svg>

@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: razor (Noun)
+  CONTEXTUAL_DEFINITION: A handheld tool with a sharp blade used for shaving.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Show a modern safety razor cartridge with a long ergonomic handle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and ground shadow.
+    - Context_Layer: Cool blue halo.
+    - Focal_Layer: Angled manual razor with pivoting blade head.
+    - Details_Layer: Parallel blade ridges and grip texture.
+    - Lighting_Layer: Metallic highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:razor" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="158" rx="78" ry="14" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="94" rx="111" ry="69" fill="#E4EDF2" opacity=".68"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M165 75L183 83L139 154Q134 163 126 158Q119 154 124 145Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M160 87L174 93L138 151L130 147Z" fill="#7896B8"/><path d="M137 126L152 133M132 138L145 145" stroke="#C7D9E8" stroke-width="2"/>
+  <path d="M116 43Q124 35 138 40L193 58Q203 62 200 73L194 88Q191 97 181 94L121 76Q111 73 113 63Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M120 50L193 72M118 59L190 81M116 67L187 89" stroke="#64748B" stroke-width="1.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M128 44Q140 44 151 49" fill="none" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round"/><path d="M165 92L174 98" stroke="#D9A441" stroke-width="2.2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M94 82Q103 69 111 64" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

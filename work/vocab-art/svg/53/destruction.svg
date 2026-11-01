@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:destruction" data-archetype="forest-clearing-with-stumps-felled-timber-and-retreating-treeline">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; destruction. Show environmental destruction as a forest cleared by cutting, with stumps, felled trunks, and the damaged edge of the remaining woods; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="dest-sky" x2="0" y2="1"><stop stop-color="#E5ECE6"/><stop offset="1" stop-color="#C4D0C7"/></linearGradient>
+  <linearGradient id="dest-wood" x2="1" y2="0"><stop stop-color="#986B4A"/><stop offset=".5" stop-color="#C19464"/><stop offset="1" stop-color="#765744"/></linearGradient>
+  <linearGradient id="dest-ground" x2="0" y2="1"><stop stop-color="#A99A74"/><stop offset="1" stop-color="#6F6B50"/></linearGradient>
+  <linearGradient id="dest-leaf" x2="0" y2="1"><stop stop-color="#72916B"/><stop offset="1" stop-color="#49664F"/></linearGradient>
+  <filter id="dest-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#dest-sky)"/><circle cx="249" cy="37" r="13" fill="#EBC86F" opacity=".65"/><path d="M0 87Q57 72 105 85T207 80Q257 69 304 84V192H0Z" fill="#90A18C"/><path d="M0 127Q66 116 130 129T244 124Q278 118 304 125V192H0Z" fill="url(#dest-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 99Q5 63 33 63Q46 33 72 56Q90 31 111 63Q139 31 158 62Q185 29 208 60Q236 27 256 60Q287 39 304 76V124H0Z" fill="url(#dest-leaf)"/>
+  <path d="M31 119V86L38 75 44 119Zm40 0V76L48 67 55 119Zm51 2V70L111 56 104 121Zm42 0V76L171 63 164 121Zm43-1V71L214 58 207 121Z" fill="url(#dest-wood)" stroke="#4A5A4E" stroke-width="1.3"/>
+  <path d="M14 126Q70 112 125 126T233 123Q271 116 304 125V153Q252 146 211 157T121 151Q66 146 0 158Z" fill="#586849"/>
+  <path d="M0 159Q57 148 109 159T217 157Q263 148 304 158V192H0Z" fill="url(#dest-ground)"/>
+</g>
+<g id="layer-focal" filter="url(#dest-shadow)">
+  <path d="M42 161V141Q43 132 55 132Q68 133 69 143V161Z" fill="url(#dest-wood)" stroke="#584A3E" stroke-width="1.5"/>
+  <ellipse cx="55" cy="140" rx="12" ry="6" fill="#D5A878" stroke="#655340" stroke-width="1.2"/><circle cx="55" cy="140" r="4" fill="none" stroke="#A77951" stroke-width="1"/>
+  <path d="M103 164L149 146L158 151L117 173Z" fill="url(#dest-wood)" stroke="#59493E" stroke-width="1.4"/><ellipse cx="151" cy="148" rx="7" ry="4.5" fill="#D6AA79" stroke="#634D3E" stroke-width="1"/>
+  <path d="M210 165L251 150L260 154L223 174Z" fill="url(#dest-wood)" stroke="#59493E" stroke-width="1.4"/><ellipse cx="253" cy="152" rx="6" ry="4" fill="#D6AA79" stroke="#634D3E" stroke-width="1"/>
+  <path d="M85 173Q95 165 105 172M166 177q11-8 22 0m93-6q9-7 17 0" fill="none" stroke="#5C704F" stroke-width="2"/>
+</g>
+<g id="layer-details">
+  <path d="M20 178q15-5 27 0m46-2q12-5 22 0m79 5q13-5 23 0m40-7q11-4 20 0" fill="none" stroke="#D2BC8C" stroke-width="1.3"/>
+  <path d="M24 119l5-9 5 9m86 4 4-9 5 9m78-1 4-9 5 9m68 1 4-9 5 9" fill="none" stroke="#667C55" stroke-width="1.5"/>
+  <circle cx="82" cy="165" r="1.8" fill="#E4D1A8"/><circle cx="189" cy="165" r="1.7" fill="#E4D1A8"/><circle cx="277" cy="181" r="1.6" fill="#E4D1A8"/>
+  <path d="M15 90q15-13 27-2m84-19q12-12 24-2m88 0q13-12 26-1" fill="none" stroke="#92A884" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M35 68q17-17 34-3m83 0q16-16 32 0m76-2q15-16 30 0" fill="none" stroke="#B8C7A7" stroke-width="1.4"/><path d="M44 140q10-7 20 0m91 8q7-4 12 0" fill="none" stroke="#E4C697" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

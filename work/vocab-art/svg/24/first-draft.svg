@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: first draft (Noun)
+  CONTEXTUAL_DEFINITION: The earliest version of a piece of writing, before it is revised.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show a visibly rough, incomplete manuscript with loose pages and corrections, distinct from a finished essay or revised notes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Study desk with window and pale wall.
+    - Context_Layer: Eraser and unused clean page for comparison.
+    - Focal_Layer: A loose early manuscript with crossed-out lines and rough shape sketches.
+    - Details_Layer: Pencil, uneven page edges, and a few red correction marks.
+    - Lighting_Layer: Clear daylight emphasizes the unfinished paper.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:first draft" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="first-draft-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="first-draft-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#first-draft-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M19 24H89V75H19Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V74M20 49H88" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M227 45H274V109H227Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.2"/><path d="M235 59H264M235 69H264M235 79H264M235 89H264" stroke="#AFC5DA" stroke-width="1.2"/><path d="M224 116H269V132H224Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M232 122H260" stroke="#F9CED0" stroke-width="1.2"/><path d="M62 128H101V137H62Z" fill="#A98A64"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#first-draft-shadow)"><path d="M82 62L212 56L230 129L97 140Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M72 58L204 51L218 123L84 133Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M91 74L169 68M93 84L189 78M95 94L157 88M97 104L180 97M99 114L147 110" stroke="#88A9D0" stroke-width="1.4"/><path d="M102 82L155 87" stroke="#D9857F" stroke-width="2.4"/><path d="M130 78L172 83" stroke="#D9857F" stroke-width="2.4"/><path d="M165 102L192 99" stroke="#D9857F" stroke-width="2.4"/><path d="M79 54L88 43L94 48L85 59Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><path d="M79 54L85 59" stroke="#FEF9C3" stroke-width="1.3"/><path d="M201 51L213 49L210 62" fill="#5479AC" stroke="#315782" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M111 124L121 116M132 128L143 120" stroke="#91A77C" stroke-width="1.7"/><path d="M214 131L224 131" stroke="#A95059" stroke-width="1.3"/><circle cx="204" cy="119" r="2.5" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="99" rx="123" ry="68" fill="#FEF9C3" opacity=".1"/><path d="M19 25H89V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M72 58L204 51L218 123" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

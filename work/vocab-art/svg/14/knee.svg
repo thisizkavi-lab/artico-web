@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: knee (Noun)
+  CONTEXTUAL_DEFINITION: The joint in the middle of the leg, at the front of the bend.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Show the rounded front joint between thigh and shin, not an elbow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: One leg bent in a gentle step, shown from the side.
+    - Context_Layer: Upper and lower leg stay muted slate.
+    - Focal_Layer: Rounded kneecap marks the bend connecting them.
+    - Details_Layer: A curved joint crease and soft ground cue orient the pose.
+    - Lighting_Layer: Compact circle centers on the front knee.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:knee" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="168" rx="98" ry="13" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M106 21Q140 15 169 28L176 76Q172 96 151 104L132 100L113 83Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M133 96Q148 86 166 95L184 119L211 139Q222 146 215 157Q209 167 198 161L164 145L142 127Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M119 42Q137 49 158 44M173 127Q185 130 196 144" fill="none" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="151" cy="97" rx="36" ry="37" fill="#FEF3C7" opacity=".6"/><path d="M126 82Q135 72 151 75Q169 78 177 91Q183 102 171 112Q158 124 141 116Q127 109 126 99Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.6"/><path d="M135 88Q151 82 166 91M139 111Q154 117 167 109" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M123 81Q134 68 153 72Q173 75 181 90Q188 103 174 116Q158 130 138 120Q122 112 122 98Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M240 82L184 91" stroke="#4A72B2" stroke-width="2.1"/><path d="M192 86L182 91L193 96" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M148 111Q154 116 162 114" fill="none" stroke="#F8DDCC" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="151" cy="97" r="29" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

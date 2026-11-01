@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: hot (Adjective)
+  CONTEXTUAL_DEFINITION: Having a high temperature that makes someone feel overheated.
+  PEDAGOGICAL_ART_DIRECTOR: Show bright direct sun, heat shimmer, and a person wiping sweat or seeking relief.
+  PEDAGOGICAL_ARCHETYPE: 5 - Temperature sensation
+  SYNONYM_GUARD: This is ordinary high heat, not the prolonged heatwave or trapped-air stifling sensation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Person in light clothes wiping their forehead beneath a large hot sun, with wavy heat lines rising from the ground.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:hot" data-archetype="hot-weather-sensation">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ht-sky" x2="0" y2="1"><stop stop-color="#F4EAD2"/><stop offset="1" stop-color="#E5C88D"/></linearGradient><linearGradient id="ht-shirt" x2="1" y2="1"><stop stop-color="#EFAB65"/><stop offset="1" stop-color="#D36E4E"/></linearGradient><linearGradient id="ht-ground" x2="0" y2="1"><stop stop-color="#EBCB84"/><stop offset="1" stop-color="#C69253"/></linearGradient><filter id="ht-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#614C39" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ht-sky)"/><path d="M0 121Q76 108 151 121T304 115V192H0Z" fill="#B9A274"/><path d="M0 151H304V192H0Z" fill="url(#ht-ground)"/></g>
+ <g id="layer-context"><circle cx="248" cy="41" r="24" fill="#EBC86F" opacity=".94"/><path d="M246 8l-3-10m25 21 9-7m5 25 11 2m-60-7-10-5" fill="none" stroke="#D79C42" stroke-width="2" stroke-linecap="round"/><path d="M20 174H282" fill="none" stroke="#C89557" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="49" ry="5" fill="#6A5134" opacity=".17"/><path d="M46 112q7-12 0-24m31 25q8-13 0-25m145 24q8-13 0-25" fill="none" stroke="#E6B95C" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ht-shadow)">
+  <circle cx="148" cy="54" r="17" fill="#D39A72" stroke="#795744" stroke-width="1.2"/><path d="M132 54Q134 35 152 37Q167 39 166 55Q150 49 132 54Z" fill="#59483D"/><path d="M134 70L117 82L116 128L141 143L163 127L159 80L151 70Z" fill="url(#ht-shirt)" stroke="#994E42" stroke-width="1.6"/><path d="M138 72Q150 81 160 72L165 86L151 99L133 85Z" fill="#F7E9CE" stroke="#B37D54" stroke-width="1.1"/><path d="M121 83L103 97L107 115L122 116M158 82L174 94L171 109L160 105" fill="none" stroke="#D39A72" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M166 52L174 43L181 47L177 57" fill="none" stroke="#D39A72" stroke-width="4" stroke-linecap="round"/><path d="M172 44q8-6 11-1" fill="none" stroke="#FFF8E7" stroke-width="2.4" stroke-linecap="round"/><path d="M140 143L136 158M160 142L166 158" fill="none" stroke="#705340" stroke-width="4.5" stroke-linecap="round"/><path d="M128 158h14m18 0h14" fill="none" stroke="#705340" stroke-width="3" stroke-linecap="round"/><path d="M135 105q14 7 27 0" fill="none" stroke="#F7D5A0" stroke-width="1.6"/>
+  <path d="M181 86q7-9 14 0m-15 12q8-8 15 0" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><circle cx="177" cy="65" r="1.4" fill="#F8D792"/>
+ </g>
+ <g id="layer-details"><path d="M38 85q6-8 12 0m199 36q6-8 12 0M66 64l-8-8m162 19 8-7" fill="none" stroke="#E4B55C" stroke-width="1.7" stroke-linecap="round"/><path d="M119 84l-7 29m46-29 7 25" fill="none" stroke="#E6AC6B" stroke-width="1.2"/><circle cx="248" cy="41" r="1.6" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M135 72q12 8 23 0m-38 12 12 5m37-4-9 5" fill="none" stroke="#FFF1D5" stroke-width="1.3" opacity=".75"/><circle cx="148" cy="53" r="1.2" fill="#FFF8E7"/><path d="M168 45l6-5m-4 7 7-2" fill="none" stroke="#FFF8E7" stroke-width="1.1"/></g>
+</svg>

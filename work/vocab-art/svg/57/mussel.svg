@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: mussel (noun)
+  CONTEXTUAL_DEFINITION: A dark blue-black mussel with a long wedge-shaped hinged shell, anchored to rock underwater by fine threads.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero shellfish with a defining shell shape and attachment
+  SYNONYM_GUARD: Use an elongated narrow shell and attachment threads; distinguish it from the rounded open clam and irregular rough oyster.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: One large deep blue mussel stands at an angle on a submerged rock; shell runs from pointed hinge x=149,y=70 to broad rim x=188,y=143, dark violet-black outer valves with subtle growth lines and pale byssal threads at the base.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:mussel" data-archetype="mussel-wedge-shell-byssal-threads">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#465B6B;--c-secondary:#293D4A;--c-accent:#8B7C9B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="mussel-water" x2="0" y2="1"><stop stop-color="#9ECBCB"/><stop offset="1" stop-color="#477D8E"/></linearGradient>
+  <linearGradient id="mussel-rock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#828477"/><stop offset="1" stop-color="#515D58"/></linearGradient>
+  <linearGradient id="mussel-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65798A"/><stop offset="1" stop-color="#293B4B"/></linearGradient>
+  <filter id="mussel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mussel-water)"/><path d="M0 147Q75 138 151 147T304 142V192H0Z" fill="url(#mussel-rock)"/></g>
+ <g id="layer-context"><path d="M20 180L42 156L76 161L106 145L151 156L189 144L237 157L275 150L293 181Z" fill="#667166" stroke="#4C5C55" stroke-width="1.3"/><path d="M0 37q39-6 78 0m146-3q39-6 80 0" fill="none" stroke="#D9ECE5" stroke-width="1.4"/><path d="M24 133q17-5 33 0m191-9q17-6 34 0" fill="none" stroke="#C3E1DA" stroke-width="1.4" stroke-linecap="round"/><circle cx="54" cy="91" r="2" fill="#EAF7F1"/><circle cx="62" cy="82" r="1.2" fill="#EAF7F1"/><ellipse cx="157" cy="158" rx="60" ry="5" fill="#1A363F" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#mussel-shadow)">
+  <path d="M150 70Q174 80 191 104Q202 124 191 146Q177 153 162 143Q149 128 141 104Q137 84 150 70Z" fill="url(#mussel-shell)" stroke="#273B49" stroke-width="1.6"/>
+  <path d="M151 73Q164 82 177 101Q190 120 187 140Q177 145 168 136Q154 119 147 101Q143 84 151 73Z" fill="#4B5E6D" stroke="#83909A" stroke-width="1.1"/>
+  <path d="M151 75Q157 99 169 120Q177 134 186 141m-30-61q5 22 15 40m-26-31q6 24 18 44m-15-53q15 8 27 24" fill="none" stroke="#B4BEC2" stroke-width="1.1" opacity=".74" stroke-linecap="round"/>
+  <path d="M150 71Q145 66 149 61Q153 66 156 70Z" fill="#414F5F" stroke="#273B49" stroke-width="1"/>
+  <path d="M162 141Q150 148 146 160m7-16q-6 10-6 18m13-16q-2 9-1 15m4-17q2 9 5 14m-31 1q-6 3-9 7" fill="none" stroke="#DBD8C5" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M172 91q8 9 11 18m-24-30q7 3 10 8" fill="none" stroke="#A1B1B8" stroke-width="1.3" opacity=".72" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M57 124q14-5 28 0m167 16q13-5 25 0" fill="none" stroke="#D5E9E3" stroke-width="1.3" stroke-linecap="round"/><circle cx="101" cy="100" r="1.6" fill="#E9F6EF"/><circle cx="219" cy="77" r="1.4" fill="#E9F6EF"/><path d="M149 68q4-4 8 0" fill="none" stroke="#B9B6A5" stroke-width="1.2" stroke-linecap="round"/><circle cx="233" cy="99" r="1.2" fill="#E9F6EF"/><path d="M157 88Q161 103 176 122m-26-25q5 14 14 27m-12-32q8 19 20 34" fill="none" stroke="#9CA9AC" stroke-width=".85" opacity=".62" stroke-linecap="round"/><circle cx="178" cy="116" r="1.2" fill="#C5CED0"/><circle cx="183" cy="128" r="1.1" fill="#C5CED0"/></g>
+ <g id="layer-lighting"><path d="M154 79q8 9 12 19m6 8q7 12 9 21" fill="none" stroke="#DDE5E6" stroke-width="1.5" opacity=".6" stroke-linecap="round"/><ellipse cx="168" cy="106" rx="25" ry="42" transform="rotate(-26 168 106)" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

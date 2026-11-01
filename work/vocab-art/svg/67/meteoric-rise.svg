@@ -1,0 +1,50 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: meteoric rise
+ CONTEXTUAL_DEFINITION: A very rapid increase in someone's fame or success.
+ PEDAGOGICAL_ARCHETYPE: star streaking steeply upward as audience and spotlight grow
+ SYNONYM_GUARD: Show a sharp, fast rise in public recognition; distinguish it from simply becoming famous with a before-and-after portrait.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A bright shooting-star trail climbs steeply past progressively larger audience groups and media frames toward a now-prominent performer under a large spotlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:meteoric rise" data-archetype="rapid upward surge in fame">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M24 142H279" stroke="#8C725A" stroke-width="1.3"/>
+  <!-- expanding bands of public attention -->
+  <path d="M41 137Q85 118 127 98T208 62T276 29" fill="none" stroke="#D6A64C" stroke-width="2.1" stroke-dasharray="3 4"/>
+  <path d="M71 139Q111 119 149 99T221 63T280 30" fill="none" stroke="#B85E5A" stroke-width="1.1" opacity=".6"/>
+  <path d="M49 132L74 148M108 104L135 127M171 77L195 101M226 49L248 72" stroke="#D6A64C" stroke-width="1.1" opacity=".55"/>
+  <path d="M205 30L275 23L278 85" fill="none" stroke="#597D8B" stroke-width="1.5"/>
+ </g>
+ <g id="layer-context">
+  <!-- tiny audience grows into larger groups along the steep path -->
+  <circle cx="49" cy="132" r="3" fill="#A77D68"/><path d="M46 136Q49 134 52 136L54 144H44Z" fill="#597D8B"/>
+  <circle cx="93" cy="111" r="4" fill="#D29A78"/><path d="M89 116Q93 113 97 116L99 127H87Z" fill="#B85E5A"/>
+  <circle cx="149" cy="85" r="5" fill="#A77D68"/><path d="M144 91Q149 87 154 91L157 104H141Z" fill="#798C72"/>
+  <circle cx="205" cy="57" r="6" fill="#D29A78"/><path d="M199 64Q205 59 211 64L215 80H195Z" fill="#597D8B"/>
+  <path d="M34 146H60M80 132H111M132 109H165M182 85H222" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M43 126L47 121L51 126M87 103L92 97L97 103M139 77L145 70L151 77" stroke="#D6A64C" stroke-width="1.3"/>
+ </g>
+ <g id="layer-focal">
+  <!-- prominent figure at the summit of the rising trail -->
+  <circle cx="249" cy="55" r="9" fill="#D29A78"/><path d="M240 54Q241 42 250 43Q259 44 259 56L254 49H242Z" fill="#26384A"/>
+  <path d="M233 68Q249 60 265 68L271 109H227Z" fill="#B85E5A" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M236 74L224 85M262 74L275 60" stroke="#D29A78" stroke-width="3" fill="none"/>
+  <path d="M235 106L233 132M264 106L267 132" stroke="#26384A" stroke-width="2.8"/>
+  <path d="M241 67L249 77L257 67" fill="#F6E5CE"/><path d="M247 77L249 84L252 77" fill="#D6A64C"/>
+  <!-- blazing shooting star -->
+  <path d="M215 41L237 48L224 61L201 54Z" fill="#D6A64C"/><path d="M205 53L184 70M212 57L194 77M218 61L203 81" stroke="#F6E5CE" stroke-width="2"/>
+  <path d="M239 38L244 29L249 38L258 42L249 46L244 55L239 46L230 42Z" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M245 52Q250 50 255 52M245 60Q250 63 255 60" stroke="#654E43" stroke-width="1" fill="none"/>
+  <path d="M215 91L221 85M222 99L228 93M230 106L236 100" stroke="#D6A64C" stroke-width="1.4"/>
+  <circle cx="169" cy="71" r="1.7" fill="#B85E5A"/><circle cx="120" cy="91" r="1.6" fill="#D6A64C"/>
+  <path d="M226 121H273" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="245" cy="68" rx="57" ry="64" fill="#E7C66B" opacity=".13"/><path d="M198 23L224 40M284 19L266 40" stroke="#FFF1C7" stroke-width="1.2" opacity=".6"/>
+  <path d="M27 151H280" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

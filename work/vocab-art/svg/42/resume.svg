@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: resume
+  CONTEXTUAL_DEFINITION: A résumé or CV listing a job applicant's education, experience, and qualifications.
+  PEDAGOGICAL_ART_DIRECTOR: Show the structured document a candidate submits to summarize work and education history.
+  PEDAGOGICAL_ARCHETYPE: 8 - Structured application document
+  SYNONYM_GUARD: Depict a multi-section CV with work-history and education cues; this is the noun for a job application, not the verb meaning restart.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a portrait-oriented CV page at x=116..208, y=36..130 with a small profile block, grouped work-history rows, an education marker, and a compact skill badge. Place the candidate at x=67..113, y=83..134 reviewing the page on a desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:resume" data-archetype="structured-application-document">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="resume-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="resume-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="resume-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="resume-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M34 134 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.4"/><rect x="116" y="35" width="91" height="96" rx="2" fill="url(#resume-paper)" stroke="#5479AC" stroke-width="1.3"/><rect x="124" y="43" width="19" height="21" rx="2" fill="#DDE8F4" stroke="#64748B" stroke-width=".9"/><circle cx="133" cy="50" r="4" fill="#D89A6C"/><path d="M127 60 Q133 54 140 60" fill="#5479AC"/><path d="M150 47 H197 M150 53 H188 M124 70 H198" stroke="#64748B" stroke-width="1.1"/><circle cx="129" cy="81" r="4" fill="#8EB0DE"/><path d="M139 79 H197 M139 84 H189 M124 94 H198" stroke="#CBD5E1" stroke-width="1"/><path d="M128 101 L133 96 L138 101 L133 106 Z" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/><path d="M144 99 H195 M144 104 H184 M124 115 H197" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#resume-shadow)"><path d="M64 127 Q66 103 79 96 L80 87 Q76 83 78 75 Q86 67 97 70 Q106 73 103 84 L101 91 Q114 97 116 125 L113 136 H68 Z" fill="url(#resume-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="92" cy="79" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M83 77 Q85 69 93 69 Q101 70 105 77 Q97 73 90 74 Z" fill="#3D342D"/><path d="M102 102 L119 92 M111 104 L121 98" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M109 98 L116 91" stroke="#5479AC" stroke-width="2.2" stroke-linecap="round"/><path d="M78 102 Q91 96 105 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M121 68 H201" stroke="#A8D4A2" stroke-width="1.2"/><circle cx="202" cy="82" r="2" fill="#A8D4A2"/><circle cx="202" cy="101" r="2" fill="#F2C14E"/><path d="M121 123 H202" stroke="#D4CCBD" stroke-width=".8"/><path d="M53 70 L60 65 M215 54 L221 50 M222 117 L229 113" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="108" cy="59" r="2" fill="#8EB0DE"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="83" rx="96" ry="66" fill="url(#resume-halo)" opacity=".18"/><path d="M114 38 H207" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

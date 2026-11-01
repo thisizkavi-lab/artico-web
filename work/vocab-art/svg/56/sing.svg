@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: sing (verb)
+  CONTEXTUAL_DEFINITION: A small songbird opening its beak and producing a melodic call from a branch.
+  PEDAGOGICAL_ARCHETYPE: 5 - Action/sound conveyed with flowing musical shapes
+  SYNONYM_GUARD: Use a small songbird with an open beak and several floating note symbols; no written lyric or text, and no owl's broad hoot waves.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perch a russet songbird at x=91..193 y=74..134 facing right with beak open; branch at y=143; make three small music-note symbols and curved sound ribbons float from its beak.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:sing" data-archetype="songbird-call">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#BD7A4B;--c-secondary:#764931;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="sing-sky" x2="0" y2="1"><stop stop-color="#D9EAF2"/><stop offset="1" stop-color="#F8F3E8"/></linearGradient>
+  <linearGradient id="sing-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DA9A5C"/><stop offset="1" stop-color="#925A3A"/></linearGradient>
+  <filter id="sing-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sing-sky)"/><path d="M0 135Q81 124 151 136T304 130V192H0Z" fill="#DDE6D6"/><path d="M0 158Q82 147 158 159T304 151V192H0Z" fill="#C8D7BE"/><circle cx="65" cy="42" r="23" fill="#F3D790" opacity=".5"/></g>
+ <g id="layer-context"><path d="M28 141Q106 134 179 141T280 136" fill="none" stroke="#70523A" stroke-width="8" stroke-linecap="round"/><path d="M53 137l-8-11m9 11 10-13m160 12 8-11" fill="none" stroke="#70523A" stroke-width="3" stroke-linecap="round"/><path d="M39 128q9-13 17-5q-4 12-17 5Zm218-5q9-13 17-5q-4 12-17 5Z" fill="#7B966D"/><ellipse cx="148" cy="153" rx="55" ry="5" fill="#63735B" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#sing-shadow)"><path d="M93 106Q98 86 123 80Q153 74 177 91Q190 102 181 124Q163 141 129 136Q102 131 93 106Z" fill="url(#sing-feather)" stroke="#6C462F" stroke-width="1.5"/><path d="M111 109Q126 91 151 96Q169 102 164 120Q144 132 123 124Z" fill="#E8D4B4"/><circle cx="176" cy="80" r="18" fill="url(#sing-feather)" stroke="#6C462F" stroke-width="1.3"/><path d="M188 83L210 86L190 89Z" fill="#D9A245"/><path d="M191 88L206 94L191 95Z" fill="#5E3F34"/><circle cx="180" cy="76" r="2.4" fill="#1E2A3B"/><path d="M99 107L72 124L98 128Z" fill="#A96543"/><path d="M122 132l-2 9m24-8 2 8m-26 0-8 2m34-2 6 2" fill="none" stroke="#80553A" stroke-width="2.2" stroke-linecap="round"/><path d="M148 102q13 0 23-6" fill="none" stroke="#E7C99D" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M210 72Q225 61 239 66m-21 25q17 0 29-8m-25 30q14 7 27 3" fill="none" stroke="#8DADAE" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="230" cy="59" rx="3.4" ry="4.4" fill="#D88C4E"/><path d="M233 56v-11q8-2 8 4" fill="none" stroke="#D88C4E" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="254" cy="83" rx="3.4" ry="4.4" fill="#6B99A4"/><path d="M257 80V68q8-2 8 4" fill="none" stroke="#6B99A4" stroke-width="2.2" stroke-linecap="round"/><circle cx="241" cy="112" r="3.1" fill="#A58D62"/><path d="M244 109V99q7-2 8 4" fill="none" stroke="#A58D62" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M104 94q12-12 28-10m44 1q6 3 9 8" fill="none" stroke="#FFE3B9" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="139" cy="103" rx="48" ry="31" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

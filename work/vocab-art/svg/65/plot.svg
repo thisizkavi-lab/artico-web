@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: plot
+ CONTEXTUAL_DEFINITION: The connected sequence of events in a story told by a film or play.
+ PEDAGOGICAL_ARCHETYPE: storyboard with linked story events
+ SYNONYM_GUARD: Show an ordered narrative with the same character across several connected frames; not a surveyed piece of land.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A director’s storyboard board contains three linked pictures following one character from discovering a clue, through a journey, to a resolution.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:plot" data-archetype="storyboard with linked story events">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M20 25H284V146H20Z" fill="#26384A"/><path d="M29 33H275V142H29Z" fill="#405663"/>
+  <path d="M42 47H262V127H42Z" fill="#E9DDC8"/>
+  <path d="M34 129H270V145H34Z" fill="#8C725A"/><path d="M26 145H278V153H26Z" fill="#D6A64C"/>
+  <path d="M43 40H261" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <path d="M50 133H254" stroke="#D9C9AF" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M50 56H112V112H50Z M121 56H183V112H121Z M192 56H254V112H192Z" fill="#F6EAD4" stroke="#8E785E" stroke-width="1.3"/>
+  <path d="M55 61H107V105H55Z M126 61H178V105H126Z M197 61H249V105H197Z" fill="#597D8B"/>
+  <path d="M58 99L74 79L84 99Z M129 99L146 76L162 99Z M200 99L216 81L245 99Z" fill="#798C72"/>
+  <path d="M64 91H101m28-6h37m-33 7h31m39 0h42" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <path d="M110 82H122m-4-4 4 4-4 4m61-1h12m-4-4 4 4-4 4" stroke="#B85E5A" stroke-width="1.8" fill="none"/>
+  <path d="M49 114H255" stroke="#8D755A" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="70" cy="80" r="4" fill="#D29A78"/><path d="M65 85Q70 82 75 85L77 98H63Z" fill="#B85E5A"/>
+  <path d="M72 73L83 70L87 77L77 80Z" fill="#D6A64C"/>
+  <circle cx="143" cy="78" r="4" fill="#D29A78"/><path d="M138 83Q143 80 148 83L150 98H136Z" fill="#B85E5A"/>
+  <path d="M141 95L135 101m11-6 6 5" stroke="#26384A" stroke-width="1.4" fill="none"/>
+  <circle cx="214" cy="79" r="4" fill="#D29A78"/><path d="M209 84Q214 81 219 84L221 98H207Z" fill="#B85E5A"/>
+  <path d="M208 92L203 98m14-6 5 6" stroke="#26384A" stroke-width="1.4" fill="none"/>
+  <path d="M62 103H100m70 0h13m65 0h-3" stroke="#8C725A" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M47 52H114m4 0h67m4 0h67" stroke="#D6A64C" stroke-width="1" fill="none"/>
+  <circle cx="59" cy="45" r="1.7" fill="#E8C76A"/><circle cx="130" cy="45" r="1.7" fill="#E8C76A"/><circle cx="201" cy="45" r="1.7" fill="#E8C76A"/>
+  <path d="M54 119H106m25 0h49m27 0h45" stroke="#F6EAD4" stroke-width="1.1" fill="none"/>
+  <path d="M39 37H265" stroke="#A0AFAC" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="86" rx="111" ry="57" fill="#E7C66B" opacity=".09"/>
+  <path d="M43 43L64 64m83-21-4 18m112-18-24 23" stroke="#FFF1C7" stroke-width="1.2" opacity=".56" fill="none"/>
+ </g>
+</svg>

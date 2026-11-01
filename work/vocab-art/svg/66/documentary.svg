@@ -1,0 +1,52 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: documentary
+ CONTEXTUAL_DEFINITION: A nonfiction television program observes a real subject, such as a curator explaining an artifact, with the filming process visible.
+ PEDAGOGICAL_ARCHETYPE: nonfiction artifact documentary with an in-scene camera
+ SYNONYM_GUARD: Show a factual museum or history subject being filmed; distinguish from wildlife nature documentary and fictional drama.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A curator presents an ancient pottery fragment in a museum study room while a shoulder camera records the explanation, all inside a television receiver.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:documentary" data-archetype="nonfiction artifact documentary">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M17 19Q17 14 24 14H280Q287 14 287 21V146H17Z" fill="#26384A"/><path d="M25 23H279V139H25Z" fill="#E5DDCC"/><path d="M34 31H270V130H34Z" fill="#D7D5C5"/>
+  <path d="M35 100Q82 87 128 101T270 96V130H35Z" fill="#C8B89E"/><path d="M35 102H270" stroke="#9A8C75" stroke-width="1"/>
+  <path d="M42 45H83V95H42Z" fill="#F0EEE8"/><path d="M47 51H78V89H47Z" fill="#B6C0AE"/><path d="M50 82Q60 67 75 82V89H50Z" fill="#7B8A73"/>
+  <path d="M42 98H86V104H42Z" fill="#8B785F"/><path d="M41 139L48 147H115L122 139Z" fill="#64777C"/><path d="M30 147H132V153H30Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M220 38H257V91H220Z" fill="#B9A889"/><path d="M225 43H252V85H225Z" fill="#D8CDB6"/><path d="M220 54H257M220 72H257" stroke="#9E8D71" stroke-width="1.4"/>
+  <path d="M129 103H210" stroke="#7B6956" stroke-width="2"/><path d="M137 103V128M201 103V128" stroke="#7B6956" stroke-width="2"/>
+  <path d="M47 41H79" stroke="#F8F3E9" stroke-width="1"/><circle cx="67" cy="58" r="1.5" fill="#D6A64C"/>
+  <path d="M260 144H278" stroke="#26384A" stroke-width="1.5"/><circle cx="270" cy="134" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <!-- curator -->
+  <circle cx="160" cy="54" r="10" fill="#D29A78"/><path d="M150 53Q151 41 162 42Q171 43 170 55L166 50L153 50Z" fill="#26384A"/>
+  <path d="M148 66Q160 59 172 66L180 99H140Z" fill="#597D8B" stroke="#26384A" stroke-width="1"/>
+  <path d="M149 69L134 83L127 77M169 69L185 77L192 69" fill="none" stroke="#D29A78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 98L147 114M171 98L175 114" stroke="#26384A" stroke-width="3"/>
+  <path d="M147 73L160 82L173 73" fill="#F0EEE8"/><path d="M157 83L160 90L163 83" fill="#D6A64C"/>
+  <!-- artifact and gloved hands -->
+  <path d="M148 85Q155 79 160 85L166 91Q165 97 157 97L151 94Z" fill="#F6E5CE" stroke="#8C7A64" stroke-width="1"/>
+  <path d="M154 87Q159 82 165 85L171 90L167 96L159 94Z" fill="#B85E5A" stroke="#8C7A64" stroke-width="1"/>
+  <path d="M150 89L153 84L158 87L160 91L155 94Z" fill="#C27A51" stroke="#704F3B" stroke-width="1.2"/>
+  <path d="M153 85L158 88L156 93" stroke="#F0C087" stroke-width="1" fill="none"/>
+  <!-- camera filming the explanation -->
+  <path d="M226 63H245L254 57V80L245 74H226Z" fill="#26384A" stroke="#D6A64C" stroke-width="1.2"/><path d="M231 66H244V72H231Z" fill="#597D8B"/><circle cx="249" cy="68" r="2.2" fill="#B85E5A"/>
+  <path d="M235 80L232 97M247 80L251 97M239 79V97M230 97H253" stroke="#26384A" stroke-width="2" fill="none"/>
+  <path d="M219 56L226 60M220 83L227 78" stroke="#D6A64C" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details">
+  <path d="M132 46Q139 42 145 47M177 46Q184 42 190 47" stroke="#D6A64C" stroke-width="1.4" fill="none"/>
+  <circle cx="144" cy="51" r="1.2" fill="#26384A"/><circle cx="167" cy="51" r="1.2" fill="#26384A"/><path d="M154 58Q160 61 166 58" stroke="#8F5F57" stroke-width="1" fill="none"/>
+  <path d="M43 109H111M43 114H104" stroke="#8C7A64" stroke-width="1"/>
+  <path d="M262 43V82" stroke="#F6E5CE" stroke-width="1"/><path d="M41 34H263" stroke="#D6A64C" stroke-width="1"/>
+  <circle cx="266" cy="115" r="1.6" fill="#D6A64C"/><path d="M130 126H212" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="153" cy="69" rx="101" ry="51" fill="#E7C66B" opacity=".08"/><path d="M43 28L63 54M263 28L244 54" stroke="#FFF1C7" stroke-width="1.2" opacity=".6" fill="none"/>
+  <path d="M27 138H277" stroke="#FFF7E4" stroke-width="1" opacity=".65"/><ellipse cx="84" cy="158" rx="70" ry="4" fill="#8B785F" opacity=".22"/>
+ </g>
+</svg>

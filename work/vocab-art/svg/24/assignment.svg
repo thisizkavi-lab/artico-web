@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: assignment (Noun)
+  CONTEXTUAL_DEFINITION: A school task set for a student to complete.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show a folder of school work with a task sheet and reading references; this is a learner's assignment, not a workplace duty list.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: A quiet classroom desk and pale school wall.
+    - Context_Layer: Open book and pencil case establish learner context.
+    - Focal_Layer: Folder, blank task sheet, and attached small research page.
+    - Details_Layer: Unlettered diagrams, check boxes, and paper clip.
+    - Lighting_Layer: Warm soft highlight falls across the assigned work.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:assignment" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="assignment-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="assignment-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#assignment-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H89V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V74M21 49H88" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M221 44H277V111H221Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M229 56H265M229 66H265M229 76H265M229 86H265" stroke="#AFC5DA" stroke-width="1.4"/><path d="M48 120H97V137H48Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M53 125H91" stroke="#DCECFB" stroke-width="1.2"/><path d="M99 118L111 109" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#assignment-shadow)"><path d="M75 105L119 67L243 87L196 137Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.7"/><path d="M81 103L122 72L237 90L195 132Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M103 98L148 70L224 82L180 115Z" fill="#FFFEFA" stroke="#8D765A" stroke-width="1.2"/><path d="M114 94L166 86M119 101L172 93M124 108L178 100" stroke="#88A9D0" stroke-width="1.4"/><path d="M109 95L115 101L124 90" fill="none" stroke="#91A77C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M159 75L176 78L168 84Z" fill="#D9857F"/><path d="M74 105L81 103L195 132L196 137Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1"/><path d="M198 136L205 130L209 134L202 141Z" fill="#D9A441" stroke="#8D6138" stroke-width="1"/></g>
+  <g id="layer-details"><circle cx="111" cy="80" r="5" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M110 76V84" stroke="#FEF9C3" stroke-width="1.2"/><path d="M185 112L197 110" stroke="#D9857F" stroke-width="2"/><path d="M70 142H231" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="101" rx="124" ry="67" fill="#FEF9C3" opacity=".1"/><path d="M20 25H89V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M103 98L148 70L224 82" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

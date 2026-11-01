@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:green spaces" data-archetype="public-park-nestled-in-a-dense-city-block">
+<!-- SELF_PROMPT: Lesson 75 urban life; green spaces. Show a public urban park with trees, lawn, paths, and a bench surrounded by close city buildings. No signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="greenpark-sky" x2="0" y2="1"><stop stop-color="#D8E7EA"/><stop offset="1" stop-color="#B9CED0"/></linearGradient>
+  <linearGradient id="greenpark-wall" x2="0" y2="1"><stop stop-color="#8798A0"/><stop offset="1" stop-color="#617681"/></linearGradient>
+  <linearGradient id="greenpark-grass" x2="0" y2="1"><stop stop-color="#9BB478"/><stop offset="1" stop-color="#64825D"/></linearGradient>
+  <linearGradient id="greenpark-path" x2="0" y2="1"><stop stop-color="#D8C9A7"/><stop offset="1" stop-color="#B2A27F"/></linearGradient>
+  <filter id="greenpark-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#greenpark-sky)"/><circle cx="258" cy="33" r="12" fill="#E9C66F" opacity=".65"/><path d="M0 123V43h49v80Zm49 0V26h49v97Zm158 0V40h43v83Zm43 0V21h54v102Z" fill="url(#greenpark-wall)"/><path d="M10 55h13v17H10Zm24 0h13v17H34Zm24-12h13v17H58Zm24 0h10v17H82Zm124 14h13v18h-13Zm24 0h12v18h-12Zm25-16h13v18h-13Zm24 0h13v18h-13Z" fill="#CDD9D7" opacity=".82"/><path d="M0 119H304V192H0Z" fill="#918B74"/></g>
+<g id="layer-context">
+  <path d="M0 126Q53 118 94 126T187 122Q251 114 304 124V192H0Z" fill="url(#greenpark-grass)"/>
+  <path d="M109 192Q135 164 146 142Q160 122 176 127Q189 133 180 150Q169 173 168 192Z" fill="url(#greenpark-path)"/>
+  <path d="M32 153V85l13-16 14 16v68Z" fill="#775C46"/><path d="M20 94Q23 75 38 77Q41 56 54 72Q67 72 71 92Q58 86 48 99Q35 87 20 94Z" fill="#577857"/><path d="M219 152V83l14-18 13 18v69Z" fill="#775C46"/><path d="M207 92Q211 71 226 75Q230 54 243 70Q256 72 260 92Q247 85 237 98Q222 85 207 92Z" fill="#668560"/>
+  <path d="M78 148H128m-43 0v19m36-19v19" fill="none" stroke="#664E40" stroke-width="4"/><path d="M80 147h47m-48 6h47" fill="none" stroke="#B8805B" stroke-width="3"/>
+  <path d="M268 154v-24m0 12-9-10m9 8 9-12" fill="none" stroke="#567454" stroke-width="2.3" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#greenpark-shadow)">
+  <path d="M112 142Q130 126 147 128Q158 130 160 141Q155 150 143 151Q126 154 112 142Z" fill="#72A16E"/><path d="M120 140q12-9 24-5m-17 12q13-8 25-4" fill="none" stroke="#D8E7AF" stroke-width="1.6"/>
+  <circle cx="148" cy="109" r="7" fill="#C98D69"/><path d="M141 107q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#443C3A"/><path d="M140 117Q148 113 156 117L160 137 136 138Z" fill="#4E7891" stroke="#405969" stroke-width="1.2"/><path d="M141 136l-4 14 7 1 5-13m4-2 4 14 7 0-4-14" fill="#45545A"/><path d="M140 119l-7 10 4 4 9-8m9-6 7 8-4 4-10-7" fill="#C98D69"/>
+  <circle cx="205" cy="112" r="7" fill="#DBA47A"/><path d="M198 109q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#66514A"/><path d="M197 120Q205 116 213 120L217 140 193 141Z" fill="#BE795A" stroke="#7A5145" stroke-width="1.2"/><path d="M198 139l-4 13 7 2 5-13m4-2 5 14 7 0-5-14" fill="#46545B"/><path d="M198 122l-8 8 4 4 10-7m9-5 8 8-4 4-11-7" fill="#DBA47A"/>
+</g>
+<g id="layer-details">
+  <path d="M11 178q12-5 23 0m44 7q12-5 23 0m111-4q12-5 22 0m49-9q12-5 22 0" fill="none" stroke="#C8D39A" stroke-width="1.4"/>
+  <circle cx="64" cy="160" r="2" fill="#E9C66F"/><circle cx="94" cy="174" r="1.8" fill="#E9C66F"/><circle cx="242" cy="164" r="1.8" fill="#E9C66F"/>
+  <path d="M75 105q8-5 16 0m103-23q8-5 15 0m-77 70q8-4 15 0" fill="none" stroke="#EEF0E2" stroke-width="1.4"/>
+  <path d="M138 155l5-3m-1 10 7-5m30-38q8-5 14 0" fill="none" stroke="#EDE4CB" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M23 92q16-23 33-12m153 11q16-22 32-11" fill="none" stroke="#91A77D" stroke-width="1.3"/><path d="M111 189q18-26 34-44m35-21q5 6 1 14" fill="none" stroke="#F6E9C9" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

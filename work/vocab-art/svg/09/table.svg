@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: table (Noun)
+  CONTEXTUAL_DEFINITION: A piece of furniture with a flat top supported by legs.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a plain dining table with four legs, distinct from the drawer-equipped desk.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm interior wall and floor.
+    - Context_Layer: Quiet dining-room backdrop.
+    - Focal_Layer: Broad four-legged wooden table.
+    - Details_Layer: Small bowl on the flat tabletop.
+    - Lighting_Layer: Upper-left highlight across the top.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:table" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 151 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 151 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="168" rx="90" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M38 151 V42 H266 V151" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M59 91 L235 91 L252 103 L42 103Z" fill="#D69A62" stroke="#1E2A3B" stroke-width="2.6"/><path d="M50 103 H244" stroke="#8A5A35" stroke-width="2"/><path d="M62 103 L68 155 M225 103 L219 155 M103 103 L106 151 M184 103 L181 151" stroke="#8A5A35" stroke-width="6" stroke-linecap="round"/><path d="M123 88 Q126 78 145 78 Q164 78 168 88Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="1.8"/><path d="M123 88 Q145 94 168 88" fill="#6E9A67" stroke="#1E2A3B" stroke-width="1.5"/><path d="M74 95 H218" stroke="#E9B47E" stroke-width="1.6"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

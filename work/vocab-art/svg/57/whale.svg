@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: whale (noun)
+  CONTEXTUAL_DEFINITION: A large marine mammal surfacing with a side fin, horizontal tail flukes, and blowhole spray.
+  PEDAGOGICAL_ARCHETYPE: Reused clear same-term illustration
+  SYNONYM_GUARD: Retain the exact recognizable whale scene; do not shift to a food, toy, or unrelated sense.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Preserve the reviewed candidate composition and proportions.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:whale" data-archetype="breaching-whale-blowhole-flukes">
+  <defs>
+    <style>:root{--c-bg-1:#E7F2F4;--c-bg-2:#F7F6EC;--c-surface:#9BCBD0;--c-primary:#4C8191;--c-secondary:#315766;--c-accent:#79BFC8;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="wh-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7F2F4"/><stop offset="1" stop-color="#F6F4E8"/></linearGradient>
+    <linearGradient id="wh-sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#91C7CE"/><stop offset="1" stop-color="#5D9BA9"/></linearGradient>
+    <linearGradient id="wh-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6B9BA8"/><stop offset="1" stop-color="#355F70"/></linearGradient>
+    <filter id="wh-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.4" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wh-sky)"/><path d="M0 121 Q50 115 100 121 T200 119 Q257 113 304 121 V192 H0Z" fill="url(#wh-sea)"/><path d="M0 149 Q61 142 124 149 T244 147 Q278 143 304 148 V192 H0Z" fill="#69A8B4"/><ellipse cx="150" cy="164" rx="108" ry="7" fill="#437D8A" opacity=".36"/></g>
+  <g id="layer-context"><path d="M12 124 Q30 116 48 123 M245 122 Q265 114 292 122" fill="none" stroke="#E7FFFF" stroke-width="2" stroke-linecap="round"/><path d="M40 136 q12-5 23 0 m173 0 q12-5 23 0" fill="none" stroke="#C2E9E9" stroke-width="1.5"/><path d="M99 110 Q135 101 164 111 M179 109 Q207 101 233 109" fill="none" stroke="#B8E0E2" stroke-width="1.3"/></g>
+  <g id="layer-focal" filter="url(#wh-shadow)"><path d="M116 115 Q89 99 92 79 Q95 61 116 60 Q151 63 184 84 Q211 99 225 114 Q222 132 198 139 Q158 145 127 132Z" fill="url(#wh-hide)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M127 128 Q157 137 198 134 Q186 147 155 149 Q129 146 111 134Z" fill="#E8E5D4" stroke="#1E2A3B" stroke-width="1.4"/><path d="M102 68 Q89 53 75 52 Q83 67 91 79 Q77 80 70 94 Q87 92 102 84Z" fill="#426C7A" stroke="#1E2A3B" stroke-width="1.9" stroke-linejoin="round"/><path d="M164 82 Q158 76 160 69 Q166 72 169 79" fill="#355F70" stroke="#1E2A3B" stroke-width="1.5"/><path d="M171 111 Q193 104 202 119 Q196 131 176 128Z" fill="#416F7D" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="111" cy="72" r="2" fill="#1E2A3B"/><path d="M108 58 Q107 52 111 49" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/><path d="M110 50 Q101 40 106 30 Q109 39 114 43 Q111 32 117 24 Q117 36 121 43 Q124 33 132 29 Q126 41 122 48" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M107 121 Q135 133 163 132" fill="none" stroke="#F4F1E7" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M115 66 Q143 69 166 84 M131 76 Q154 81 177 98 M133 119 Q152 125 173 125" fill="none" stroke="#A9D1D4" stroke-width="1.6"/><path d="M101 110 l-5-7 m5 7 7-5 M215 137 l5-7 m-5 7-6-4" fill="none" stroke="#D7F2EF" stroke-width="1.5" stroke-linecap="round"/><circle cx="137" cy="99" r="1.4" fill="#DCEDEE"/><circle cx="148" cy="104" r="1.2" fill="#DCEDEE"/><path d="M80 120 q8-4 15 0 M216 120 q8-4 16 0" fill="none" stroke="#EFFFFF" stroke-width="1.2"/><path d="M108 46 l-4-5 m13 4 1-7 m9 8 5-5" fill="none" stroke="#D9F1F2" stroke-width="1.3" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M105 68 Q111 60 123 62 M130 69 Q151 74 166 84 M130 122 Q148 130 164 130" fill="none" stroke="#FFFFFF" stroke-width="1.9" opacity=".46" stroke-linecap="round"/><ellipse cx="139" cy="83" rx="24" ry="10" fill="#FFFFFF" opacity=".045"/></g>
+</svg>

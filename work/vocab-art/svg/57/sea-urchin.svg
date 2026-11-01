@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: sea urchin (noun)
+  CONTEXTUAL_DEFINITION: A round sea urchin clinging to a reef rock, covered in a dense ring of pointed spines.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with radial defensive structure
+  SYNONYM_GUARD: Keep a compact rounded body with many distinct projecting spines on the seafloor; do not make it a starfish or a hedgehog.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Purple-brown spherical urchin sits on a reef rock, center x=151,y=119, roughly two dozen slender spines radiate outward, tiny tube feet below, open underwater backdrop.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:sea urchin" data-archetype="sea-urchin-round-test-radiating-spines">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#83718D;--c-secondary:#4D485D;--c-accent:#D1A25B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="urchin-water" x2="0" y2="1"><stop stop-color="#A2CECD"/><stop offset="1" stop-color="#477D8D"/></linearGradient>
+  <linearGradient id="urchin-rock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#818477"/><stop offset="1" stop-color="#4C5854"/></linearGradient>
+  <radialGradient id="urchin-test"><stop stop-color="#A996A9"/><stop offset="1" stop-color="#665A75"/></radialGradient>
+  <filter id="urchin-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#urchin-water)"/><path d="M0 152Q75 144 151 153T304 148V192H0Z" fill="url(#urchin-rock)"/></g>
+ <g id="layer-context"><path d="M24 189l8-31m-8 17-10-13m10 5 11-18m203 40 7-31m-7 14-11-13m11 6 10-19" fill="none" stroke="#558473" stroke-width="2" stroke-linecap="round"/><path d="M0 32q44-6 83 0m145-3q38-7 76 0" fill="none" stroke="#D8ECE5" stroke-width="1.4"/><path d="M18 127q16-5 32 0m216-8q16-6 31 0" fill="none" stroke="#C1DFD9" stroke-width="1.3" stroke-linecap="round"/><circle cx="60" cy="87" r="2" fill="#EAF7F1"/><circle cx="68" cy="78" r="1.2" fill="#EAF7F1"/><ellipse cx="153" cy="154" rx="64" ry="5" fill="#1B3A3F" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#urchin-shadow)">
+  <g fill="none" stroke="#4F455F" stroke-width="2.4" stroke-linecap="round">
+   <path d="M150 103L133 65m25 38 10-42m-24 44-30-30m50 31 32-30m-54 34-40-10m58 12 42-6m-61 16-41 9m62-5 36 10m-53-2-26 30m43-29 22 30m-32-27-7 42m-8-55-24-24m45 25 22-22m-61 31-27 9m70-4 27 4"/>
+  </g>
+  <path d="M151 89L151 55" fill="none" stroke="#6A5D77" stroke-width="2.2" stroke-linecap="round"/>
+  <g fill="none" stroke="#B59FB4" stroke-width="1.2" stroke-linecap="round">
+   <path d="M149 102L136 73m25 30 8-32m-29 39-24-23m44 26 25-24m-53 34-31 7m56-2 32 7m-45 5-20 22m35-21 17 23m-24-23-5 31"/>
+  </g>
+  <circle cx="151" cy="119" r="31" fill="url(#urchin-test)" stroke="#51485F" stroke-width="1.5"/>
+  <path d="M132 107q8-10 18-10m8 4q9 2 14 9m-38 22q12 8 27 5m-2-28 9 4m-26 19 7 4" fill="none" stroke="#C7B8C7" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="137" cy="112" r="2" fill="#D7CAD6"/><circle cx="160" cy="105" r="1.7" fill="#D7CAD6"/><circle cx="168" cy="124" r="1.8" fill="#D7CAD6"/><circle cx="145" cy="138" r="1.7" fill="#D7CAD6"/>
+  <path d="M134 146q-5 5-6 11m14-10-2 12m12-12 1 12m12-15 5 12m-46-19-8 4" fill="none" stroke="#8A7890" stroke-width="1.3" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="92" cy="102" r="1.7" fill="#EAF7F1"/><circle cx="211" cy="93" r="1.6" fill="#EAF7F1"/><path d="M39 142q13-5 25 0m180-3q13-5 26 0" fill="none" stroke="#D0E5DD" stroke-width="1.2" stroke-linecap="round"/><circle cx="235" cy="131" r="1.3" fill="#D3D6C3"/></g>
+ <g id="layer-lighting"><path d="M133 102q6-9 14-10m15 3q8 3 11 8" fill="none" stroke="#F4EEF5" stroke-width="1.6" opacity=".56" stroke-linecap="round"/><ellipse cx="151" cy="117" rx="36" ry="30" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

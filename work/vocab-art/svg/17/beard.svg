@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: beard (Noun)
+  CONTEXTUAL_DEFINITION: Thick hair growing on the cheeks, jaw, and chin.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Keep the upper lip mostly clear so the dense lower-jaw beard is the focal feature.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream portrait paper.
+    - Context_Layer: Muted shoulders.
+    - Focal_Layer: Full jawline beard tapering under the chin.
+    - Details_Layer: Coarse curved hair strokes.
+    - Lighting_Layer: Warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:beard" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="89" rx="104" ry="72" fill="#FEF3C7" opacity=".35"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#D8DCE2" stroke="#7B8A9E" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 150Q99 119 102 81Q105 43 152 39Q199 43 202 81Q205 119 198 150Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M99 84Q96 43 139 34Q174 32 198 52Q211 68 203 98L198 116Q195 149 169 161Q151 168 133 159Q108 146 105 115L99 98Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M120 112Q136 107 151 112Q168 107 184 112Q178 119 164 120H139Q125 119 120 112Z" fill="#D9A17D"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 94Q129 89 139 94M164 94Q174 89 184 94" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 101Q130 104 138 101M166 101Q174 104 181 101" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  <g fill="none" stroke="#68798F" stroke-width="1.4" stroke-linecap="round"><path d="M111 116L117 134M121 123L124 142M133 127L134 148M146 129L146 153M160 129L161 151M174 124L171 146M190 114L185 135"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M91 127Q96 149 112 159M213 126Q208 149 192 159" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: paint the house (Verb phrase)
+  CONTEXTUAL_DEFINITION: Apply fresh exterior paint to the outside walls of a house.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, tool, and before/after surface
+  SYNONYM_GUARD: The worker paints outdoors on siding from an exterior ladder; paint-a-room is an indoor scene with a drop cloth and interior wall.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: House exterior and garden ground with a bright sky.
+    - Context_Layer: Roof, window trim, and unpainted siding frame one fresh blue wall section.
+    - Focal_Layer: Painter stands on a tall ladder and rolls a blue vertical strip onto the exterior wall.
+    - Details_Layer: Siding lines, roller extension, paint bucket, window, ladder feet, and a clean paint boundary.
+    - Lighting_Layer: Top-left sunlight on roof tiles and wet paint.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:paint the house" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6D6;--c-surface:#C88446;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="wall-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3ECE1"/><stop offset="1" stop-color="#E3AC77"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 147H304V192H0Z" fill="#EAD8BE"/><path d="M82 51H295V152H82Z" fill="url(#wall-grad)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M82 51H295V66H82Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M83 84H295M83 99H295M83 114H295M83 129H295" stroke="#E3AC77" stroke-width="1.4"/><path d="M68 49L184 21L304 49L300 59L184 34L72 59Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.2"/><path d="M0 157H304" stroke="#A27652" stroke-width="2"/><ellipse cx="172" cy="164" rx="104" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M175 66H210V142H175Z" fill="#5479AC" opacity=".82"/><path d="M218 79H270V127H218Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2"/><path d="M244 80V126M219 103H269" stroke="#C88446" stroke-width="2.5"/><path d="M83 140H120V154H83Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M89 136H114V141H89Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.1"/><path d="M89 146H114" stroke="#8EB0DE" stroke-width="1.6"/><path d="M90 155H118" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M119 104L99 157M166 102L183 157" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M119 104L99 157M166 102L183 157" stroke="#C88446" stroke-width="3" stroke-linecap="round"/><path d="M111 126H173M105 145H178" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M111 126H173M105 145H178" stroke="#5479AC" stroke-width="2.6" stroke-linecap="round"/><circle cx="144" cy="74" r="12" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M133 73Q134 59 145 59Q158 60 157 74L150 67L139 68Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M132 91Q144 84 157 91L165 113L145 120L126 108Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M136 95L124 82L101 75" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M136 95L124 82L101 75" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M156 95L171 79L185 78" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M156 95L171 79L185 78" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M180 69H201V82H180Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M184 71H198V80H184Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1"/><path d="M191 82V94" stroke="#1E2A3B" stroke-width="2"/><path d="M137 118L134 137L150 137L153 118" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M135 137L128 146M149 137L158 146" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M135 137L128 146M149 137L158 146" stroke="#D89A6C" stroke-width="4.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M85 72H295M85 89H295M85 104H295M85 119H295" stroke="#F1D8BD" stroke-width="1" opacity=".7"/><path d="M280 84V122M228 87V100" stroke="#FFFFFF" stroke-width="1.3"/><path d="M130 67Q137 62 145 64" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><circle cx="191" cy="55" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M74 50L184 23L300 50" fill="none" stroke="#F2A472" stroke-width="1.5" opacity=".75"/><path d="M184 72H197" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/><path d="M85 153H120" stroke="#8EB0DE" stroke-width="1.2" opacity=".6"/></g>
+</svg>

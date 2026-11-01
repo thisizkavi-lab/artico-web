@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: frying pan (Noun)
+  CONTEXTUAL_DEFINITION: A shallow round pan with a long handle, used for frying food.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a broad shallow skillet with a long handle and an egg cooking in it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale stovetop.
+    - Context_Layer: Burner rings under the pan.
+    - Focal_Layer: Dark shallow skillet, handle, and fried egg.
+    - Details_Layer: Heat waves and pan highlights.
+    - Lighting_Layer: Warm cooking glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:frying pan" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 148 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 148 H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="150" cy="166" rx="111" ry="8" fill="#BBAA92"/><ellipse cx="125" cy="148" rx="72" ry="9" fill="none" stroke="#647D8B" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M171 98 L263 63 Q273 59 277 68 Q281 77 270 82 L178 119Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.5"/><path d="M180 101 L268 68" stroke="#D69A62" stroke-width="2"/><ellipse cx="123" cy="111" rx="82" ry="38" fill="#27364B" stroke="#1E2A3B" stroke-width="2.8"/><ellipse cx="123" cy="105" rx="72" ry="29" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="123" cy="101" rx="61" ry="20" fill="#8A5A35" opacity="0.34"/></g>
+  <g id="layer-focal"><path d="M88 101 Q92 85 110 85 Q124 78 138 89 Q151 84 158 97 Q156 113 142 118 Q125 124 109 115 Q94 117 88 101Z" fill="#FAF8F3" stroke="#D8D1C5" stroke-width="1.6"/><circle cx="123" cy="101" r="11" fill="#F2C14E" stroke="#D99D39" stroke-width="1.4"/><path d="M117 68 Q111 59 117 51 M133 66 Q139 58 134 49 M146 69 Q154 61 150 53" fill="none" stroke="#CE7B55" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M64 96 Q84 82 103 84" fill="none" stroke="#AFC3DE" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

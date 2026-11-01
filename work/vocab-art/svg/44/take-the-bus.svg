@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: take the bus
+  CONTEXTUAL_DEFINITION: To use a bus to get from one place to another.
+  PEDAGOGICAL_ART_DIRECTOR: Show a bus traveling along its route with one traveler aboard, linking a starting place and destination.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial route diagram with selected mode
+  SYNONYM_GUARD: The bus is in use for a journey; avoid the threshold boarding action shown in get on a bus.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A city bus occupies x=83..224 y=86..144 with one rider visible; house at x=27..63 and destination building at x=243..278; blue route line arcs behind the bus between two stop markers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:take the bus" data-archetype="spatial-route-mode-choice">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="takebus-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EAAD0"/><stop offset="1" stop-color="#49688F"/></linearGradient>
+    <linearGradient id="takebus-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EDF7F8"/><stop offset="1" stop-color="#B9D3E0"/></linearGradient>
+    <radialGradient id="takebus-halo"><stop stop-color="#E1EAF4" stop-opacity=".62"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="takebus-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="148" width="304" height="44" fill="#EEE7DA"/><path d="M0 148 H304" stroke="#1E2A3B" stroke-width="1.5"/><path d="M14 166 H291" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="17 12"/><ellipse cx="153" cy="158" rx="125" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M64 58 C106 28 199 28 241 58" fill="none" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><path d="M235 53 L243 58 L235 63" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M66 65 C108 91 198 91 239 65" fill="none" stroke="#8DBB83" stroke-width="1.8" stroke-dasharray="4 5" stroke-linecap="round"/><path d="M27 100 L45 83 L63 100 V128 H27 Z" fill="#E7D8B9" stroke="#64748B" stroke-width="1.5"/><path d="M33 103 H56 V124 H33 Z" fill="#F7F1E4" stroke="#9B8564" stroke-width="1"/><path d="M243 72 H278 V128 H243 Z" fill="#D7E1E4" stroke="#64748B" stroke-width="1.6"/><path d="M249 79 H260 V91 H249 Z M264 79 H273 V91 H264 Z M249 98 H260 V110 H249 Z M264 98 H273 V110 H264 Z" fill="#BBD5E0" stroke="#7B8B94" stroke-width=".9"/><circle cx="67" cy="58" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="239" cy="58" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#takebus-shadow)"><path d="M79 116 L91 90 Q96 81 111 78 H197 Q209 80 216 94 L226 118 V143 H78 Z" fill="url(#takebus-shell)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M98 87 H127 V112 H88 Z M132 86 H164 V112 H132 Z M169 86 H197 V112 H169 Z" fill="url(#takebus-glass)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M130 84 V139 M167 83 V139" stroke="#1E2A3B" stroke-width="1.5"/><path d="M84 116 H222 V135 H84 Z" fill="#E2E9EC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M88 123 H220" stroke="#F2C14E" stroke-width="2.4"/><path d="M139 108 Q139 99 147 99 Q155 99 155 108 V119 H139 Z" fill="#5479AC"/><circle cx="147" cy="95" r="5.7" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1"/><path d="M144 109 H152" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="110" cy="144" r="11" fill="#263548" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="110" cy="144" r="5" fill="#E7EDF3"/><circle cx="197" cy="144" r="11" fill="#263548" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="197" cy="144" r="5" fill="#E7EDF3"/><path d="M79 113 L88 112 V123 H79 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M102 92 H121 M135 92 H159 M172 92 H192" stroke="#FFFFFF" stroke-width="1.2"/><path d="M89 139 H126 M171 139 H211" stroke="#5479AC" stroke-width="1"/><path d="M75 47 Q85 39 95 45 M214 44 Q225 38 233 45" fill="none" stroke="#DCE8EE" stroke-width="1.4" stroke-linecap="round"/><circle cx="147" cy="95" r="1.2" fill="#1E2A3B"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="84" rx="118" ry="73" fill="url(#takebus-halo)" opacity=".14"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M78 147 H227" stroke="#1E2A3B" stroke-width=".8" opacity=".31"/></g>
+</svg>

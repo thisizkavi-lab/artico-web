@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: moving truck (Noun phrase)
+  CONTEXTUAL_DEFINITION: A large box-bodied truck used to transport household belongings during a move.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero vehicle with cargo cue
+  SYNONYM_GUARD: Use a large cab-over truck with a tall rectangular cargo box and lift; a removal van is a smaller enclosed van.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Residential road and house in soft distance.
+    - Context_Layer: A few tied-down cartons visible in open cargo bay.
+    - Focal_Layer: Large cab-over moving truck with tall box body.
+    - Details_Layer: Large rear wheels, side mirror, lift gate, and blue blanket.
+    - Lighting_Layer: Sunlit top edge and grounded road shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:moving truck" data-archetype="hero-vehicle">
+  <defs><linearGradient id="truckbox" x2="0" y2="1"><stop stop-color="#E6EEF4"/><stop offset="1" stop-color="#B8C9D7"/></linearGradient><linearGradient id="cab" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2F7"/><path d="M0 139H304V192H0Z" fill="#D8C5A8"/><path d="M0 157H304" stroke="#8A5A35" stroke-width="2"/><path d="M218 49L240 33L263 49V89H218Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M212 49L240 28L269 49" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/><ellipse cx="154" cy="163" rx="121" ry="8" fill="#817563" opacity=".3"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M37 157H289" stroke="#F3ECE1" stroke-width="1.4"/><path d="M34 132H288" stroke="#D5C3A8" stroke-width="2"/><path d="M230 140V124H262V140" fill="#AFC1D4" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M29 43Q29 35 38 35H188Q196 35 196 43V137H29Z" fill="url(#truckbox)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="cargo-clip"><path d="M29 43Q29 35 38 35H188Q196 35 196 43V137H29Z"/></clipPath><g clip-path="url(#cargo-clip)"><path d="M33 40H192V136H33Z" fill="#D5E0E9"/><path d="M34 46H187V53H34Z" fill="#FFFFFF" opacity=".8"/><path d="M34 124H191V136H34Z" fill="#A8B9C8"/></g><path d="M29 43Q29 35 38 35H188Q196 35 196 43V137H29Z" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M196 92H224L248 113V140H196Z" fill="url(#cab)" stroke="#1E2A3B" stroke-width="2.7"/><path d="M201 98H222L239 114H201Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M202 103H222L233 113H202Z" fill="#EAF2F7"/><path d="M223 116H243V138H223Z" fill="#5479AC"/><path d="M244 119H251V136H244Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M219 90H234V96H219Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.4"/><path d="M231 89L241 96" stroke="#1E2A3B" stroke-width="2"/><path d="M25 137H260V147H25Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="74" cy="147" r="14" fill="#344254" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="74" cy="147" r="6" fill="#CBD5E1"/><circle cx="204" cy="147" r="14" fill="#344254" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="204" cy="147" r="6" fill="#CBD5E1"/><path d="M48 83H104V124H48Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M54 89H98V117H54Z" fill="#7896C1"/><path d="M110 83H168V124H110Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M116 90H162M116 96H162" stroke="#C18B56" stroke-width="1.2"/><path d="M188 137H231" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M36 41H181" stroke="#FFFFFF" stroke-width="1.3"/><path d="M200 96H220M232 119H240" stroke="#FFFFFF" stroke-width="1.2"/><path d="M46 130H184" stroke="#94A3B8" stroke-width="1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M35 33H153" stroke="#F2C14E" stroke-width="1.6"/><ellipse cx="148" cy="159" rx="115" ry="4" fill="#807564" opacity=".2"/></g>
+</svg>

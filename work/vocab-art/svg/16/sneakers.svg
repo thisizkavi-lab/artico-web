@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: sneakers (Noun, plural)
+  CONTEXTUAL_DEFINITION: Comfortable athletic shoes with flexible rubber soles.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Add sporty panels, laces, and thick rubber soles, unlike simple leather shoes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and grounded shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Pair of low athletic sneakers in profile.
+    - Details_Layer: Laces, contrasting panels, and ridged white soles.
+    - Lighting_Layer: Crisp highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:sneakers" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="157" rx="115" ry="19" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="97" rx="123" ry="63" fill="#FEF3C7" opacity=".27"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M33 119Q58 116 84 97Q109 74 132 79Q147 82 153 101L169 135Q174 144 166 150L58 151Q34 147 33 133Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M151 103Q178 98 201 77Q225 56 246 66Q261 74 259 89L253 116L279 136Q286 144 277 151L179 151L166 135Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M36 135Q98 145 170 136M179 136Q230 145 281 137" fill="none" stroke="#FAF8F3" stroke-width="9" stroke-linecap="round"/><path d="M37 140Q102 149 169 141M180 141Q229 150 280 142" fill="none" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M79 109L111 87L139 99M194 105L222 81L250 88" fill="none" stroke="#C7D9F0" stroke-width="2.4"/><path d="M106 88L126 104M110 95L132 110M213 84L233 99M217 91L239 105" stroke="#FAF8F3" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 120L69 117M180 123L196 119" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M44 158Q151 172 271 157" fill="none" stroke="#4A72B2" stroke-width="1.3" stroke-dasharray="4 5"/>
+</svg>

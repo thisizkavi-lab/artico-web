@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: unfasten (Verb)
+  CONTEXTUAL_DEFINITION: To open a clothing fastening, here a shirt cuff button.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action with clothing detail
+  SYNONYM_GUARD: Show a button pulled free from a cuff; undo opens a zipper and fasten closes a belt.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Oversized shirt cuff close-up.
+    - Context_Layer: Blue sleeve and cuff hole stay clear.
+    - Focal_Layer: Fingers draw the button through the opening.
+    - Details_Layer: One cuff side separates slightly at the button.
+    - Lighting_Layer: Short outward cue shows release.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:unfasten" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="157" rx="110" ry="23" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M28 49Q77 31 127 49L149 75L129 135Q78 156 28 139Z" fill="#5479AC" stroke="#64748B" stroke-width="2.4"/><path d="M278 49Q229 31 179 49L157 75L177 135Q228 156 278 139Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.4"/><path d="M118 69L157 62L196 69L187 127Q157 139 127 127Z" fill="#F8FAFC" stroke="#64748B" stroke-width="2.2"/><path d="M143 77L157 74L171 77L169 107L157 112L145 107Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="157" cy="92" rx="54" ry="40" fill="#FEF3C7" opacity=".42"/><path d="M143 84Q157 78 170 84L168 101Q157 108 146 101Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="2.1"/><circle cx="157" cy="91" r="8" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/><circle cx="157" cy="91" r="2" fill="#64748B"/><path d="M143 84Q157 78 170 84L168 101Q157 108 146 101Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="3 3"/><path d="M185 93Q199 92 210 82" fill="none" stroke="#E2B99B" stroke-width="14" stroke-linecap="round"/><path d="M185 93Q199 92 210 82" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M105 91L131 92M209 91L234 91" stroke="#4A72B2" stroke-width="1.8"/><path d="M124 87L132 92L124 97M225 86L235 91L225 96" fill="none" stroke="#4A72B2" stroke-width="1.8"/><path d="M127 72L137 68M177 68L187 72" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M135 82Q157 72 178 82" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".48"/></g>
+</svg>

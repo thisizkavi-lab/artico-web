@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: tenancy agreement (Noun phrase)
+  CONTEXTUAL_DEFINITION: The completed contract between a landlord and tenant for renting a home.
+  PEDAGOGICAL_ARCHETYPE: 4 — Completed document and key exchange
+  SYNONYM_GUARD: Show finished papers with approval marks exchanged alongside the keys; lease is still being reviewed and signed at a desk.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Home entrance and doorstep.
+    - Context_Layer: Landlord and tenant stand at the threshold.
+    - Focal_Layer: Completed blank-lined agreement is exchanged with a key ring.
+    - Details_Layer: Two check marks and a folded corner show completion, no readable text.
+    - Lighting_Layer: Golden focus around document and key.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:tenancy agreement" data-archetype="completed-agreement">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF2"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 147H304V192H0Z" fill="#D8C5A8"/><path d="M0 147H304" stroke="#8A5A35" stroke-width="2"/><path d="M117 27H242V147H117Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M107 28H252V42H107Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M27 137H276V148H27Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="151" cy="163" rx="112" ry="6" fill="#958977" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M45 125H95V146H45Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M52 146V157M89 146V157" stroke="#8A5A35" stroke-width="2.5"/><path d="M264 125H283V144H264Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="75" cy="88" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.7"/><path d="M65 87Q65 74 76 74Q86 75 85 88L80 81H69Z" fill="#57463E"/><path d="M64 102Q75 95 86 102L91 127H58Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M68 104L96 113L123 109" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M68 104L96 113L123 109" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M68 126L64 150M82 126L87 150" stroke="#1E2A3B" stroke-width="7.5" stroke-linecap="round"/><path d="M68 126L64 150M82 126L87 150" stroke="#344254" stroke-width="4" stroke-linecap="round"/><circle cx="232" cy="88" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M222 87Q222 74 233 74Q243 75 242 88L237 81H226Z" fill="#3A2E2B"/><path d="M221 102Q232 95 243 102L248 127H215Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M225 104L211 113L193 110" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M225 104L211 113L193 110" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M225 126L221 150M238 126L244 150" stroke="#1E2A3B" stroke-width="7.5" stroke-linecap="round"/><path d="M225 126L221 150M238 126L244 150" stroke="#344254" stroke-width="4" stroke-linecap="round"/><path d="M129 67L182 67L184 121L131 121Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M137 79H175M137 86H174M137 103H160" stroke="#94A3B8" stroke-width="1.3"/><path d="M164 96L171 102L181 89" fill="none" stroke="#7FB07A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M183 102H190V109L183 109Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="190" cy="105" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M131 70H181" stroke="#FFFFFF" stroke-width="1.4"/><path d="M125 113L131 109M184 108L190 106" stroke="#4A72B2" stroke-width="1.4"/><path d="M114 144H242" stroke="#D8C5A8" stroke-width="1.1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="159" cy="95" r="39" fill="#FEF3C7" opacity=".2"/><path d="M155 85L162 92" stroke="#FFFFFF" stroke-width="1.5"/></g>
+</svg>

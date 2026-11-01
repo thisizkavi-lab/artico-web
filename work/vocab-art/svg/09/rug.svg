@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: rug (Noun)
+  CONTEXTUAL_DEFINITION: A soft textile covering placed on part of a floor.
+  PEDAGOGICAL_ARCHETYPE: 7 (Draped material / swatch)
+  SYNONYM_GUARD: Show a bounded rectangular floor textile with woven pattern and fringe, not wall-to-wall carpet.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Hardwood floor.
+    - Context_Layer: Boards around the rug edges.
+    - Focal_Layer: Large woven rectangular rug with a turned edge.
+    - Details_Layer: Border, geometric motif, short fringe.
+    - Lighting_Layer: Soft fabric shading.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:rug" data-archetype="textile-swatch">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8D9B8"/><path d="M0 49 H304 M0 94 H304 M0 139 H304" stroke="#B97840" stroke-width="2" opacity="0.6"/><path d="M53 0 V192 M157 0 V192 M258 0 V192" stroke="#C98B54" stroke-width="1.5" opacity="0.5"/><ellipse cx="153" cy="159" rx="103" ry="9" fill="#C9BDA9"/></g>
+  <g id="layer-context"><path d="M54 47 Q152 54 251 45 L242 151 Q151 144 61 153Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><path d="M67 59 Q152 65 237 57 L230 139 Q152 134 73 141Z" fill="#7191BC" stroke="#DCECFB" stroke-width="2"/><path d="M78 69 Q152 75 226 67 L220 129 Q151 124 84 131Z" fill="none" stroke="#E8D9B8" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M151 78 L174 101 L151 124 L128 101Z" fill="#CE7B55" stroke="#E8D9B8" stroke-width="2"/><path d="M151 86 L166 101 L151 116 L136 101Z" fill="#E8D9B8"/><path d="M90 101 H123 M179 101 H213 M151 77 V71 M151 125 V133" stroke="#E8D9B8" stroke-width="3"/><path d="M55 55 L45 52 M56 68 L46 66 M56 82 L46 80 M55 96 L45 95 M54 110 L44 110 M54 124 L44 126 M54 138 L44 141 M250 54 L260 51 M249 68 L259 66 M248 82 L258 80 M247 96 L257 95 M246 110 L256 110 M245 124 L255 126 M244 138 L254 141" stroke="#8A5A35" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M14 13 H290 V179 H14Z" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

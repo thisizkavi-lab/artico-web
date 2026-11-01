@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: interest (noun; money paid or earned on a loan or savings)
+  CONTEXTUAL_DEFINITION: Extra money owed to a lender or earned by saving, in addition to the original principal.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrastive amount
+  SYNONYM_GUARD: Japanese gloss lists curiosity, but surrounding loan/rate terms lock this to financial interest; highlight a small extra coin above the original borrowed amount.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Borrowed principal stack in blue tray and distinct gold extra coin transferred back to lender beside the original amount; contract and repayment arrow anchor financial context.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:interest" data-archetype="contrast-amount">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="interest-principal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="interest-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="interest-paper" d="M120 38 H216 L228 50 V92 H120 Z"/>
+    <clipPath id="interest-clip"><use href="#interest-paper"/></clipPath>
+    <filter id="interest-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="164" rx="105" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Lender and borrower repayment context -->
+  <g id="layer-context"><path d="M30 139 H273 V151 H30 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M37 144 H266" stroke="#E3AC77" stroke-width="1.7"/><use href="#interest-paper" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/><g clip-path="url(#interest-clip)"><path d="M130 51 H207 M130 59 H197 M130 67 H204" stroke="#94A3B8" stroke-width="1.5"/><path d="M130 77 H201" stroke="#CBD5E1" stroke-width="1.4"/></g><path d="M216 38 V50 H228" fill="#E5E9F0" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 3. Principal returned plus extra financial interest -->
+  <g id="layer-focal" filter="url(#interest-shadow)"><rect x="49" y="99" width="99" height="34" rx="4" fill="url(#interest-principal)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M58 107 H137 M58 113 H128" stroke="#DCECFB" stroke-width="1.8"/><path d="M164 116 H251" stroke="#4A72B2" stroke-width="2.6" stroke-linecap="round"/><path d="M244 109 L256 116 L244 123 Z" fill="#4A72B2"/><ellipse cx="185" cy="105" rx="16" ry="7" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.7"/><path d="M169 98 V105 C169 114 201 114 201 105 V98" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="185" cy="98" rx="16" ry="7" fill="url(#interest-coin)" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="220" cy="130" rx="12" ry="6" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="220" cy="126" rx="12" ry="6" fill="#FCE29C" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. Extra payment is separated from original principal -->
+  <g id="layer-details"><path d="M158 88 Q180 77 202 87" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="4 4"/><path d="M201 82 L208 87 L200 90 Z" fill="#D97706"/><circle cx="186" cy="84" r="18" fill="#FEF3C7" opacity=".42"/><path d="M152 97 V132 M154 99 V130" stroke="#64748B" stroke-width="1.4"/><path d="M60 103 H94" stroke="#FFFFFF" stroke-width="1.7"/></g>
+  <!-- 5. Golden emphasis on the additional money -->
+  <g id="layer-lighting"><circle cx="185" cy="98" r="24" fill="none" stroke="#D97706" stroke-width="1.7" stroke-dasharray="4 4"/><path d="M182 92 Q187 89 191 92" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M267 75 L267 84 M263 79 H271" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

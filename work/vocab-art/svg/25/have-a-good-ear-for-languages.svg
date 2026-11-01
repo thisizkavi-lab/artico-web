@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: have a good ear for languages (Verb phrase)
+  CONTEXTUAL_DEFINITION: Be especially able to hear and reproduce sounds in unfamiliar languages.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a learner hearing a model phrase and accurately echoing its changing sound contour, distinct from the ability noun phrase card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language classroom listening exercise.
+    - Context_Layer: Teacher models a short spoken sound pattern.
+    - Focal_Layer: Learner listens and then reproduces the same distinct rhythm.
+    - Details_Layer: Two matching sound waves connect speaker and learner.
+    - Lighting_Layer: Clear emphasis on the listening-to-speaking action.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:have a good ear for languages" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="have-ear-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="have-ear-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#have-ear-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M29 122H113V130H29Z" fill="#A98A64"/><path d="M39 130V149M103 130V149" stroke="#8D765A" stroke-width="2.5"/><circle cx="72" cy="91" r="10" fill="#80513F" stroke="#1E2A3B" stroke-width="1.1"/><path d="M62 91Q63 78 73 79Q83 80 82 92" fill="#27364B"/><path d="M57 107Q72 100 87 107L91 122L81 130L61 123Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M213 121H277V129H213Z" fill="#A98A64"/><path d="M222 129V149M269 129V149" stroke="#8D765A" stroke-width="2.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#have-ear-shadow)"><circle cx="226" cy="78" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M214 78Q215 63 227 64Q239 65 238 79L232 82Q229 71 223 72Q219 73 217 84Z" fill="#27364B"/><path d="M208 96Q226 88 244 96L251 119L238 130L215 121Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><path d="M216 99L203 107L191 100M241 99L258 108L272 101" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M216 99L203 107L191 100M241 99L258 108L272 101" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M218 124L213 149M237 125L249 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M91 49C105 39 115 59 129 49S151 39 164 49" fill="none" stroke="#5479AC" stroke-width="2.7" stroke-linecap="round"/><path d="M164 49C178 39 188 59 202 49S224 39 238 49" fill="none" stroke="#D9857F" stroke-width="2.7" stroke-linecap="round"/><path d="M127 59L134 64L141 59L148 64L155 59" fill="none" stroke="#D9A441" stroke-width="1.6" stroke-dasharray="2 2"/></g>
+  <g id="layer-details"><path d="M223 90Q230 94 236 90" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="191" cy="69" r="3" fill="#D9A441"/><path d="M186 69H179M196 69H203" stroke="#D9A441" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="88" rx="135" ry="75" fill="#FEF9C3" opacity=".09"/><path d="M91 49C105 39 115 59 129 49S151 39 164 49" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: season / seasons
+ CONTEXTUAL_DEFINITION: A grouped run of related episodes from one television series.
+ PEDAGOGICAL_ARCHETYPE: several related TV episodes bundled as one season
+ SYNONYM_GUARD: Group several linked episodes together as one run; do not show weather seasons or sports schedules.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Three related episode cards featuring the same characters sit inside one gold-edged season grouping with a single clasp.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:season / seasons" data-archetype="grouped TV season of episodes">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M25 23Q25 19 31 19H273Q279 19 279 25V145H25Z" fill="#26384A"/><path d="M34 30H270V137H34Z" fill="#405663"/><path d="M43 38H261V128H43Z" fill="#597D8B"/><path d="M127 145L134 153H170L177 145Z" fill="#64777C"/><path d="M113 153H191V159H113Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M57 54H111V106H57Z" fill="#D9DECA"/><path d="M125 54H179V106H125Z" fill="#D9DECA"/><path d="M193 54H247V106H193Z" fill="#D9DECA"/>
+  <path d="M52 49H116V111H52Z" fill="none" stroke="#D6A64C" stroke-width="2"/><path d="M120 49H184V111H120Z" fill="none" stroke="#D6A64C" stroke-width="2"/><path d="M188 49H252V111H188Z" fill="none" stroke="#D6A64C" stroke-width="2"/>
+  <path d="M49 44H255V116H49Z" fill="none" stroke="#F6E5CE" stroke-width="2.4"/><path d="M43 119H261" stroke="#D6A64C" stroke-width="1.7"/>
+  <path d="M96 44V37H207V44" fill="#B85E5A" stroke="#26384A" stroke-width="1.4"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="73" cy="69" r="5" fill="#D29A78"/><path d="M68 75Q73 72 78 76L80 89H66Z" fill="#597D8B"/><circle cx="91" cy="70" r="5" fill="#C89170"/><path d="M86 76Q91 73 96 77L98 89H84Z" fill="#D6A64C"/>
+  <circle cx="141" cy="69" r="5" fill="#D29A78"/><path d="M136 75Q141 72 146 76L148 89H134Z" fill="#597D8B"/><circle cx="159" cy="70" r="5" fill="#C89170"/><path d="M154 76Q159 73 164 77L166 89H152Z" fill="#D6A64C"/>
+  <circle cx="209" cy="69" r="5" fill="#D29A78"/><path d="M204 75Q209 72 214 76L216 89H202Z" fill="#597D8B"/><circle cx="227" cy="70" r="5" fill="#C89170"/><path d="M222 76Q227 73 232 77L234 89H220Z" fill="#D6A64C"/>
+  <path d="M146 116L152 123L158 116Z" fill="#D6A64C" stroke="#26384A" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details">
+  <path d="M71 68Q73 66 75 68M89 69Q91 67 93 69M139 68Q141 66 143 68M157 69Q159 67 161 69M207 68Q209 66 211 68M225 69Q227 67 229 69" stroke="#26384A" stroke-width="1" fill="none"/><circle cx="72" cy="70" r=".8" fill="#26384A"/><circle cx="90" cy="71" r=".8" fill="#26384A"/><circle cx="140" cy="70" r=".8" fill="#26384A"/><circle cx="158" cy="71" r=".8" fill="#26384A"/><circle cx="208" cy="70" r=".8" fill="#26384A"/><circle cx="226" cy="71" r=".8" fill="#26384A"/>
+  <path d="M43 131H261" stroke="#FFF7E4" stroke-width="1" opacity=".7"/><circle cx="254" cy="42" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="63" rx="89" ry="35" fill="#E7C66B" opacity=".1"/><path d="M44 39L66 69M260 39L239 69" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M42 131H262" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

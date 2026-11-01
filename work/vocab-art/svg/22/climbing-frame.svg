@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: climbing frame (Noun)
+  CONTEXTUAL_DEFINITION: An outdoor structure with bars or grips for children to climb on.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: A freestanding dome-shaped metal climbing structure with a child climbing it distinguishes this from a slide or swings.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open playground with blue sky and rubber ground.
+    - Context_Layer: Small child climbs on a dome-like frame.
+    - Focal_Layer: Large geometric climbing frame made of joined bars.
+    - Details_Layer: Bar connections, grips, and grounding feet.
+    - Lighting_Layer: Daylight and soft shadows beneath the frame.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:climbing frame" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="climb-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="climb-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#climb-bg)"/><circle cx="258" cy="30" r="16" fill="#FEF9C3" opacity=".85"/><path d="M0 151Q76 141 152 151T304 148V192H0Z" fill="#91A77C"/><path d="M0 172Q77 158 151 170T304 163V192H0Z" fill="#7A936D"/><path d="M0 149H304" stroke="#AFC5DA" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="153" cy="165" rx="111" ry="11" fill="#637A58" opacity=".35"/><path d="M26 141H278" stroke="#C9D7E2" stroke-width="1.4" stroke-dasharray="4 6"/><path d="M32 146V155M272 145V154" stroke="#315782" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#climb-shadow)"><g fill="none" stroke="#5479AC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M55 151L75 95L105 59L150 45L195 59L226 95L248 151"/><path d="M75 95L150 151L226 95M105 59L150 151L195 59M55 151L150 45L248 151M75 95L195 59M105 59L226 95"/></g><g fill="#D9A441" stroke="#315782" stroke-width="1.6"><circle cx="55" cy="151" r="5"/><circle cx="75" cy="95" r="5"/><circle cx="105" cy="59" r="5"/><circle cx="150" cy="45" r="5"/><circle cx="195" cy="59" r="5"/><circle cx="226" cy="95" r="5"/><circle cx="248" cy="151" r="5"/><circle cx="150" cy="151" r="5"/></g></g>
+  <g id="layer-details"><path d="M126 78Q136 68 147 75L153 91L143 99L130 91Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="138" cy="68" r="9" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M132 78L116 87L111 100M145 80L160 87L168 80M138 97L128 110M145 96L156 108" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M132 68Q134 59 142 61Q148 63 147 70" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M51 148Q57 142 63 148M244 148Q250 142 256 148" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M65 82Q150 21 235 83" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".73"/><ellipse cx="151" cy="100" rx="110" ry="74" fill="#FEF9C3" opacity=".08"/></g>
+</svg>

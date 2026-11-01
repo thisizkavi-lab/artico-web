@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: psychology (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies the mind and behavior.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through a learning activity
+  SYNONYM_GUARD: Students observe how attention and memory work using a simple picture-recall exercise and a brain model, not medical treatment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Psychology classroom and small discussion table.
+    - Context_Layer: Muted memory-card display.
+    - Focal_Layer: Student recalls a row of shapes while a partner observes.
+    - Details_Layer: Brain model, thought paths, and observation clipboard.
+    - Lighting_Layer: Gentle focus around the recall task.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:psychology" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="psych-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="psych-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#psych-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 28H91V82H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 29V81M21 54H90" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="211" y="37" width="68" height="49" rx="4" fill="#E3E8F0" stroke="#64748B" stroke-width="1.4"/><circle cx="228" cy="54" r="7" fill="#D9857F"/><path d="M245 47L259 61L273 47" fill="none" stroke="#5479AC" stroke-width="2"/><rect x="226" y="94" width="41" height="49" rx="3" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.3"/><path d="M233 103H259M233 112H258M233 121H253" stroke="#F7EBCF" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#psych-shadow)"><path d="M43 121H202V131H43Z" fill="#A98A64"/><path d="M52 131V147M193 131V147" stroke="#8D765A" stroke-width="3"/><circle cx="85" cy="76" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M73 76Q74 63 86 63Q98 64 98 77L93 80Q91 70 85 70Q80 70 76 83Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M71 93Q85 87 99 94L104 116L94 122L76 118L68 105Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="174" cy="78" r="11" fill="#80513F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M163 78Q164 66 175 66Q186 67 186 79L181 82Q179 73 174 73Q169 73 166 85Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M160 94Q174 89 188 95L193 116L183 122L166 118L157 105Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M100 107L121 94M162 109L143 96" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M100 107L121 94M162 109L143 96" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M110 39Q119 30 128 39Q137 32 146 42Q153 51 145 59Q141 66 132 61Q126 69 117 63Q107 58 110 49Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><path d="M115 49Q122 42 128 50Q135 42 142 49M124 55L131 47L138 55" fill="none" stroke="#F9CED0" stroke-width="1.4"/><rect x="113" y="91" width="11" height="11" rx="2" fill="#D9A441"/><circle cx="137" cy="96" r="6" fill="#5479AC"/><path d="M149 91L156 103H142Z" fill="#91A77C" stroke="#55704D" stroke-width="1"/><circle cx="126" cy="79" r="2.3" fill="#D9A441"/><circle cx="144" cy="81" r="2.3" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="93" rx="121" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M110 39Q119 30 128 39Q137 32 146 42" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,194 @@
+{
+  "chapter": 70,
+  "chapter_title": "Healthy eating",
+  "domain_setting": "A calm nutrition-education space with a kitchen counter, simple tableware, fresh foods and non-judgmental health cues.",
+  "palette": [
+    "#F0EEE8",
+    "#C8B89E",
+    "#26384A",
+    "#597D8B",
+    "#7C9A74",
+    "#D6A64C",
+    "#B85E5A",
+    "#F6E5CE",
+    "#A9B9B4"
+  ],
+  "recurring_scale_anchors": [
+    "Use a 304×192 scene with a clean plate, glass, small bowl or produce basket as scale anchors where relevant.",
+    "Keep food and nutrient scenes practical and recognizable; no packaging brands, readable words, letters or numerals.",
+    "Use only simple pictorial bars, icons and portions for nutrition comparisons; do not make unsupported nutrient or medical claims.",
+    "Keep weight-related language neutral and non-judgmental; use number-free scale cues and avoid changing body shape as a value judgement.",
+    "Use the chapter group to resolve ambiguity: salt and diet refer to nutrition, iron to a nutrient, fiber to dietary fiber, fat to food nutrients, and detox to a diet trend rather than a medical cure."
+  ],
+  "polysemy_resolution_table": {
+    "calcium": "Dietary mineral in food such as milk, yogurt or leafy greens; not a metal specimen.",
+    "calories": "Energy in food, shown with a simple food-and-energy comparison without numbers.",
+    "carbohydrates / carbs": "Food group represented by bread, rice or potatoes; not a chemical diagram.",
+    "cholesterol": "A dietary and blood-health nutrient concept; use food context and a simple vessel or measured symbol without implying one food alone determines health.",
+    "energy": "Vigor supported by eating; not electricity or abstract spirit.",
+    "fat": "Fat as a nutrient in food; not body size or shame.",
+    "fiber": "Dietary fiber in plant foods and whole grains; not thread or textile fiber.",
+    "iron": "Iron as a mineral nutrient in foods such as beans or leafy greens; not metal bars or tools.",
+    "minerals": "Nutrients found in a variety of foods; not geological rocks.",
+    "nutrition": "The process of taking in nourishing food, in a balanced meal context.",
+    "protein": "Protein as a food nutrient, represented by beans, eggs, fish or other foods without a text label.",
+    "salt": "Edible table salt used in food; not the arms-control acronym.",
+    "saturated fat": "Food fat commonly solid at room temperature, shown in a small food portion such as butter or cheese.",
+    "sugar": "Edible sugar crystals or spoonfuls used in food; not a blood-sugar diagnosis.",
+    "unsaturated fat": "Food fats in plant oils, nuts or avocado, distinguished from solid saturated fat by their liquid or plant-food form.",
+    "vitamins": "Micronutrients represented by a varied set of fruits and vegetables, not medical pills alone.",
+    "convenience food": "Ready-made food prepared for quick use; not an appliance or shop.",
+    "dairy": "Milk-based foods such as milk, cheese and yogurt; not dairy farming.",
+    "fruit": "A recognizable assortment of edible fruits.",
+    "legumes": "Edible plants and their seeds, including beans and peas.",
+    "processed food": "Food changed or packaged for preparation and storage; show the food product rather than machinery.",
+    "pulses": "Dried edible legume seeds such as lentils, chickpeas and beans.",
+    "superfoods": "A nutrition-marketing category for nutrient-dense foods; avoid claims of special powers or cures.",
+    "vegetables": "Edible vegetables, not fruit used botanically.",
+    "water": "Drinking water as part of a healthy diet.",
+    "whole grains": "Grains retaining their bran and germ, represented by whole-grain bread or intact kernels.",
+    "allergic to something": "A mild visible reaction to a food trigger such as peanuts or shellfish; no severe distress.",
+    "allergy / allergies": "Food allergy in this nutrition lesson; show a trigger food and a mild reaction, not the prior cat-trigger scene.",
+    "balanced diet": "A meal with varied food groups in reasonable proportions.",
+    "calorie-controlled diet": "A meal plan with measured portions and energy awareness, without readable counts or extreme restriction.",
+    "dairy-free": "A meal choice without dairy, using a clear plant-based alternative; not a medical claim.",
+    "detox": "A cleanse or detox diet trend as a term; depict food and drink choices without claiming they remove toxins or cure illness.",
+    "diet": "A person’s eating plan or pattern; not a national parliament.",
+    "gluten-free": "A meal without wheat or gluten-containing grains, with a clear alternative such as rice; no readable labels.",
+    "pescatarian": "A diet including plant foods and fish while excluding meat from land animals.",
+    "vegan": "A diet excluding meat, fish, eggs and dairy; show plant foods as the meal.",
+    "vegetarian": "A diet excluding meat and fish while allowing plant foods and possibly eggs or dairy; distinguish from vegan.",
+    "cut down on something": "Reduce an amount of a food or drink, shown by a smaller serving or moving some away.",
+    "eat something in moderation": "Enjoy a small portion alongside a varied meal; distinguish from cutting an item down over time.",
+    "give something up / give up something": "Stop choosing a particular food or drink, shown by setting it aside and choosing an alternative.",
+    "good source of something": "A specific food paired with a nutrient cue, without text or unsupported claims.",
+    "healthy": "A person feeling well alongside varied food and water; not an idealized body type.",
+    "healthy eating": "A varied, balanced meal and a calm eating context.",
+    "high in something": "A food with a strong/high pictorial nutrient indicator compared with a reference; no numbers.",
+    "low in something": "A food with a small/low pictorial nutrient indicator compared with a reference; no numbers.",
+    "portion": "One measured serving on a plate, distinct from the whole dish or package."
+  },
+  "existing_asset_triage": {
+    "lesson_70": "Reviewed all exact same-term SVG candidates across the existing library. Kept direct food/object matches, and rejected the generic cat-trigger allergy image because this chapter teaches food allergy.",
+    "reviewed_candidates": [
+      {
+        "source": "31/salt.svg",
+        "verdict": "REWORKED / ADAPTED for 70:salt",
+        "reason": "The old pale open container had weak contrast and read too similarly to sugar. Rebuilt as a clearly perforated salt shaker with coarse crystals."
+      },
+      {
+        "source": "31/sugar.svg",
+        "verdict": "REWORKED / ADAPTED for 70:sugar",
+        "reason": "The old pale bowl of granules and spoon was confusable with salt. Rebuilt with distinct sugar cubes in a bowl and spoon."
+      },
+      {
+        "source": "28/dairy.svg",
+        "verdict": "KEEP / ADAPT for 70:dairy",
+        "reason": "Milk, cheese and another dairy product form a clear food-group scene."
+      },
+      {
+        "source": "29/fruit.svg",
+        "verdict": "KEEP / ADAPT for 70:fruit",
+        "reason": "Recognizable assortment of edible fruits in a bowl."
+      },
+      {
+        "source": "30/vegetables.svg",
+        "verdict": "REWORKED / ADAPTED for 70:vegetables",
+        "reason": "The existing produce assortment was recognizable, but an unrelated horizontal stroke crossed the vegetables. Rebuilt the produce scene and removed the stray line."
+      },
+      {
+        "source": "32/water.svg",
+        "verdict": "KEEP / ADAPT for 70:water",
+        "reason": "Glass of drinking water with a water drop; clear beverage and nutrition-context match."
+      },
+      {
+        "source": "69/allergy.svg",
+        "verdict": "REJECT for 70:allergy / allergies; use as visual reference only",
+        "reason": "The scene teaches a cat-trigger allergy, but this lesson group needs a food-trigger allergy."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "calcium",
+      "calories",
+      "carbohydrates / carbs (informal)",
+      "cholesterol",
+      "energy"
+    ],
+    [
+      "fat",
+      "fiber",
+      "iron",
+      "minerals",
+      "nutrition"
+    ],
+    [
+      "protein",
+      "salt",
+      "saturated fat",
+      "sugar",
+      "unsaturated fat"
+    ],
+    [
+      "vitamins",
+      "convenience food",
+      "dairy",
+      "fruit",
+      "legumes"
+    ],
+    [
+      "processed food",
+      "pulses",
+      "superfoods",
+      "vegetables",
+      "water"
+    ],
+    [
+      "whole grains",
+      "allergic to something",
+      "allergy / allergies",
+      "balanced diet",
+      "calorie-controlled diet"
+    ],
+    [
+      "dairy-free",
+      "detox",
+      "diet",
+      "gluten-free",
+      "pescatarian"
+    ],
+    [
+      "vegan",
+      "vegetarian",
+      "cut down on something",
+      "eat something in moderation",
+      "give something up / give up something"
+    ],
+    [
+      "good source of something",
+      "healthy",
+      "healthy eating",
+      "high in something",
+      "low in something"
+    ],
+    [
+      "portion"
+    ]
+  ],
+  "glossary_context_notes": [
+    "The Japanese gloss for salt and diet reflects unrelated homonyms; the lesson group fixes the nutrition senses.",
+    "The legacy allergy illustration is not reused because the trigger must be food in this chapter.",
+    "Keep weight-related scenes neutral and number-free. Avoid suggesting that individual foods detoxify or cure.",
+    "Salt, sugar, dairy, fruit, vegetables and water are adapted from clear existing exact-term scenes; all other terms will receive context-specific art unless triage identifies a clearer match.",
+    "Full-size review refined calcium and carbohydrate scenes: calcium now has a clear long-bone silhouette beside milk and leafy greens; carbohydrates show bread, potato and rice. The first reviewed batch is complete.",
+    "Batch 2 had no exact-term SVG candidates. Fat uses food forms of oil and butter without body-size cues; fiber uses an apple and oats; iron uses leafy greens and beans rather than metal; minerals uses varied food sources; nutrition shows the eating process.",
+    "Batch 3 contains the two reworked exact-term candidates salt and sugar plus three new scenes. Protein is shown with beans, fish and egg. Saturated fat is a small solid butter-and-cheese serving, while unsaturated fat uses avocado, plant oil and nuts to distinguish the categories.",
+    "Batch 4 reuses the clear milk/cheese/yogurt dairy scene and fruit assortment, and adds produce-based vitamins, a ready-to-serve covered meal for convenience food, and a fresh leafy legume plant with visible peas. These were checked at full size.",
+    "Batch 5 reuses the cleaned vegetable assortment and clear drinking-water card. No exact-term candidates existed for processed food, pulses or superfoods: these are shown as tomato preserve in a package, dried seeds in bowls, and a varied platter without magical effects or claims.",
+    "Batch 6 had no exact-term candidates; the generic cat-trigger allergy from Lesson 69 remains rejected. Whole grains uses seeded bread and intact kernels. “Allergic to something” shows a mild reaction to shrimp; the allergy noun uses peanuts and a small skin response. Balanced diet is a proportioned varied plate; calorie-controlled diet shows several modest, measured meal portions.",
+    "Batch 7 had no exact-term candidates. Dairy-free uses an oat drink, detox shows a green juice trend without health claims, diet is a recurring meal pattern, gluten-free contrasts crossed wheat with a bowl of rice, and pescatarian shows fish with plants. Full-size review clarified the oat and rice cues.",
+    "Batch 8 had no exact-term candidates. Vegan uses only plant foods; vegetarian includes egg and cheese but no meat or fish. Cut down on something shows three cookies becoming one over a comparison arrow; moderation pairs a small cake treat with a varied meal; give something up shows setting aside a sweet drink and choosing water. The cut-down and moderation food silhouettes were clarified after review.",
+    "Batch 9 had no exact-term candidates. Good source shows a segmented orange paired with nutrient cues; healthy shows a well, comfortable person; healthy eating is a varied table meal with water; high/low are matched food-and-level cards with many versus few pictorial nutrient markers. Full-size review confirmed the matched level contrast and clarified the healthy-eating plate."
+  ]
+}

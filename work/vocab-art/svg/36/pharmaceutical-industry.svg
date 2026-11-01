@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="36:pharmaceutical industry" data-archetype="editorial-industry-scene">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#DDEBF1"/></linearGradient>
+<linearGradient id="workBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7395C5"/><stop offset="1" stop-color="#3E5F91"/></linearGradient>
+<linearGradient id="timber" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#E0A96C"/><stop offset="1" stop-color="#A96A3D"/></linearGradient>
+<filter id="softShadow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+</defs>
+<!-- 1. Stage Canvas & Ground Shadow -->
+<rect width="304" height="192" fill="url(#wallWash)"/><path d="M0 149H304V192H0Z" fill="#E8E0D3"/><path d="M0 149H304" stroke="#1E2A3B" stroke-width="2"/>
+<ellipse cx="152" cy="176" rx="112" ry="6" fill="#BFC7CE" opacity=".28" filter="url(#softShadow)"/>
+<!-- 2. Background Context / Muted Whole / Halo -->
+<rect x="34" y="42" width="230" height="84" rx="7" fill="#E3EDF0" stroke="#94A4B1" stroke-width="2"/><path d="M44 55H254M44 113H254" stroke="#CBD7DC" stroke-width="2"/><path d="M65 63V107M111 63V107M157 63V107M203 63V107M249 63V107" stroke="#D1DCE0" stroke-width="1.4"/>
+<!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+<path d="M81 93C81 84 89 78 99 78 109 78 117 84 117 93V128H81Z" fill="#B8D6E0" stroke="#1E2A3B" stroke-width="2"/><path d="M88 78V66H110V78M88 97H110" fill="#F8F5ED" stroke="#1E2A3B" stroke-width="1.8"/><path d="M143 103C143 94 150 88 159 88 168 88 175 94 175 103V129H143Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/><path d="M151 88V78H167V88M143 107H175" fill="#F8F5ED" stroke="#1E2A3B" stroke-width="1.8"/><path d="M199 108H239V127H199Z" rx="5" fill="#6F9878" stroke="#1E2A3B" stroke-width="2"/><path d="M207 101V108M231 101V108" stroke="#1E2A3B" stroke-width="2"/>
+<!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+<path d="M47 137H257" stroke="#9EADB7" stroke-width="5"/><ellipse cx="69" cy="143" rx="11" ry="4" fill="#F4D98E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M58 143V150C58 155 80 155 80 150V143" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="69" cy="150" rx="11" ry="4" fill="#E6B65F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M191 141L205 135 218 141 205 151Z" fill="#F7F4EC" stroke="#1E2A3B" stroke-width="1.5"/>
+<!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+<path d="M126 49L132 56 126 63M181 49L187 56 181 63" fill="none" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="152" cy="174" rx="124" ry="5" fill="#C6B9A7" opacity=".35"/>
+</svg>

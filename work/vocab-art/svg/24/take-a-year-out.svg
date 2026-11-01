@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: take a year out (Verb phrase)
+  CONTEXTUAL_DEFINITION: Take a planned year away from formal education for travel, work, or experience, then return.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show a student volunteering on a purposeful gap-year trip with a backpack and community garden; distinguish from the restful hilltop break scene while retaining the same temporary pause from study.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community garden and distant campus on the horizon.
+    - Context_Layer: Seedlings, travel backpack, and return path.
+    - Focal_Layer: Student helps plant a young tree during a gap-year experience.
+    - Details_Layer: Rolled map and gloves tucked in the pack.
+    - Lighting_Layer: Warm daylight links travel, service, and a future return to study.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:take a year out" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="year-out-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="year-out-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#year-out-bg)"/><path d="M0 141Q70 128 143 140T304 132V192H0Z" fill="#91A77C"/><path d="M0 159Q77 139 151 153T304 145" fill="none" stroke="#D9CDAF" stroke-width="5"/><path d="M0 151H304" stroke="#829A83" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M238 89V54H280V89Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.2"/><path d="M232 57L259 40L286 57" fill="none" stroke="#5479AC" stroke-width="3.4"/><path d="M253 89V69H267V89" fill="#DCECFB" stroke="#64748B" stroke-width="1"/><circle cx="190" cy="31" r="12" fill="#F6D777"/><path d="M190 13V9M190 53V49M172 31H168M212 31H208" stroke="#D9A441" stroke-width="1.5"/><path d="M31 132H74V141H31Z" fill="#829A83"/><path d="M40 132V121M53 132V117M66 132V124" stroke="#54765A" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#year-out-shadow)"><path d="M106 106L168 106L179 137L98 137Z" fill="#8D765A" stroke="#65472F" stroke-width="1.5"/><path d="M134 106V79" stroke="#8D6138" stroke-width="4" stroke-linecap="round"/><path d="M134 80Q119 76 116 63Q129 62 136 73Q140 57 156 55Q156 70 139 80" fill="#91A77C" stroke="#54765A" stroke-width="1.4"/><circle cx="88" cy="68" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M76 68Q77 53 89 54Q101 55 100 69L94 72Q91 61 85 62Q81 63 79 74Z" fill="#27364B"/><path d="M72 86Q88 78 104 86L109 108L98 118L77 109Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M79 89L94 101L124 99M101 88L116 94L133 96" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M79 89L94 101L124 99M101 88L116 94L133 96" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M80 111L75 145M97 113L109 145" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M52 82Q65 75 78 83L83 111L57 117L47 102Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M59 84L74 87" stroke="#DCECFB" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M117 136L131 136M144 136L158 136" stroke="#D9CDAF" stroke-width="1.1"/><path d="M189 48Q208 62 223 78" fill="none" stroke="#FFFEFA" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M54 79L63 75L72 80" fill="none" stroke="#D9A441" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="92" rx="132" ry="78" fill="#FEF9C3" opacity=".1"/><circle cx="190" cy="31" r="15" fill="#FEF9C3" opacity=".16"/><path d="M238 89V54H280V89" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

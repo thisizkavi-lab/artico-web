@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: toaster (Noun)
+  CONTEXTUAL_DEFINITION: A small electric appliance that browns bread in vertical slots.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show two bread slices rising from slots in a compact countertop toaster.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter and tile.
+    - Context_Layer: Rounded metal toaster body.
+    - Focal_Layer: Two toast slices and slots.
+    - Details_Layer: Browning marks and lever.
+    - Lighting_Layer: Warm toast glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:toaster" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 147 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 147 H304" stroke="#8A5A35" stroke-width="2"/><path d="M0 46 H304" stroke="#E1D8C8" stroke-width="1.4"/><ellipse cx="151" cy="168" rx="72" ry="7" fill="#BBAA92"/></g>
+  <g id="layer-context"><path d="M89 88 Q89 77 102 77 H204 Q217 77 217 90 V144 Q217 152 209 152 H97 Q89 152 89 144Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.7"/><path d="M96 87 Q152 82 210 87" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M106 85 V103 M194 85 V103" stroke="#27364B" stroke-width="4" stroke-linecap="round"/><path d="M218 102 H230 V128 H218" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="230" cy="114" r="3" fill="#CE7B55"/></g>
+  <g id="layer-focal"><path d="M109 83 L108 41 Q108 33 116 33 H143 Q151 33 151 41 V83Z" fill="#D69A62" stroke="#8A5A35" stroke-width="1.8"/><path d="M158 83 L159 47 Q159 39 167 39 H191 Q199 39 199 47 V83Z" fill="#CE7B55" stroke="#8A5A35" stroke-width="1.8"/><path d="M117 44 Q131 40 143 44 M168 50 Q180 46 191 50" fill="none" stroke="#F2C14E" stroke-width="2"/><path d="M101 122 H109 M197 122 H207" stroke="#647D8B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M116 57 H143 M166 64 H192" stroke="#8A5A35" stroke-width="1.4" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

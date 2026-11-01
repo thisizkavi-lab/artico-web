@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 60 - Sports
+ WORD: game (sports match)
+ CONTEXTUAL_DEFINITION: A sports match in progress between two opposing teams.
+ PEDAGOGICAL_ARCHETYPE: Two teams compete for one ball on a marked field in front of a goal
+ SYNONYM_GUARD: Show live athletic competition with opposing sides; not a video game or board game.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Soccer match scene with two players chasing the ball toward a goal, visible field lines and a goalkeeper.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:game" data-archetype="opposing-teams-in-match">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="game-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#game-sky)"/><path d="M0 61H304V100H0Z" fill="#84998D"/><path d="M0 68h304m0 11H0m0 11h304" stroke="#DDE8E0" stroke-width="1"/><path d="M0 106q74-11 151 0t153 0v86H0Z" fill="#92AA86"/><path d="M0 153h304m-152-47v86" stroke="#E7EEE4" stroke-width="1.6" fill="none"/><ellipse cx="150" cy="173" rx="125" ry="4" fill="#405B61" opacity=".15"/></g>
+ <g id="layer-context"><path d="M225 67v39m48-39v39m-48-34h48m-48 27h48" stroke="#F4F5EB" stroke-width="1.6"/><path d="M0 134q36-7 72 0t72 0t72 0t88 0" stroke="#D6E6D4" stroke-width="1.2" fill="none"/><circle cx="272" cy="38" r="12" fill="#E4BB68"/></g>
+ <g id="layer-focal"><circle cx="92" cy="93" r="8" fill="#D99F7C"/><path d="M84 92q2-9 8-9q7 0 8 8l-4 2-10-1Z" fill="#344F5A"/><path d="M85 103l-10 15 14 9 15-7-5-14Z" fill="#D4866D"/><path d="M82 109l-14 3-9-8m33 0 11-13" stroke="#D99F7C" stroke-width="4.5" stroke-linecap="round"/><path d="M82 124l-13 14 4 9 21-10m4-16 14 11 11 1" stroke="#263E48" stroke-width="5.5" stroke-linecap="round" fill="none"/><circle cx="208" cy="89" r="8" fill="#D99F7C"/><path d="M200 88q2-9 8-9q7 0 8 8l-4 2-10-1Z" fill="#405B61"/><path d="M201 99l-11 15 15 10 14-8-5-14Z" fill="#405B61"/><path d="M199 106l-13-7-10 5m35-6 12-14 8 4" stroke="#D99F7C" stroke-width="4.5" stroke-linecap="round"/><path d="M198 120l-10 17 4 8 19-12m4-19 12 9 13-3" stroke="#263E48" stroke-width="5.5" stroke-linecap="round" fill="none"/><circle cx="151" cy="124" r="6" fill="#F7F3E8" stroke="#405B61" stroke-width="1"/><path d="M147 124h8m-4-4v8" stroke="#405B61" stroke-width=".8"/></g>
+ <g id="layer-details"><path d="M23 176h43m192 0h28" stroke="#E1EBDD" stroke-width="1.2"/><path d="M131 115q6-6 11 0m-13 5q6-6 11 0" stroke="#FFF6E7" stroke-width="1.2" fill="none"/><circle cx="58" cy="56" r="1.3" fill="#FFF"/></g><g id="layer-lighting"><ellipse cx="150" cy="112" rx="106" ry="48" fill="#F6D384" opacity=".04"/><path d="M23 105h35m215 0h20" stroke="#F7F5EC" stroke-width="1"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: reflector (Noun)
+  CONTEXTUAL_DEFINITION: A bicycle safety reflector that returns light from a vehicle's headlight so the bicycle is visible.
+  PEDAGOGICAL_ART_DIRECTOR: Show a small red rear reflector catching a beam and returning bright rays toward the viewer.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This passive bicycle reflector returns incoming light; it is not a lamp or a mirror.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Rear bicycle wheel and rack at dusk, with a small red reflector below the saddle catching a warm headlight beam.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:reflector" data-archetype="bicycle-reflector">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="re-sky" x2="0" y2="1"><stop stop-color="#52666D"/><stop offset="1" stop-color="#73857D"/></linearGradient><linearGradient id="re-metal" x2="1" y2="1"><stop stop-color="#83ACAF"/><stop offset="1" stop-color="#426C7F"/></linearGradient><linearGradient id="re-red" x2="0" y2="1"><stop stop-color="#FF9974"/><stop offset="1" stop-color="#B53C35"/></linearGradient><filter id="re-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#18282F" flood-opacity=".3"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#re-sky)"/><path d="M0 121Q80 105 156 120T304 115V192H0Z" fill="#617B70"/><path d="M0 154H304V192H0Z" fill="#69645A"/></g>
+ <g id="layer-context"><path d="M18 121L36 69L54 121ZM251 117L270 62L289 117Z" fill="#38594F"/><path d="M24 169H280" fill="none" stroke="#998D70" stroke-width="1.2"/><circle cx="31" cy="32" r="2" fill="#FFE6A5"/><circle cx="267" cy="41" r="1.6" fill="#FFF0C5"/><path d="M12 95H292" fill="none" stroke="#6C837E" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#re-shadow)">
+  <circle cx="201" cy="128" r="32" fill="none" stroke="#24353B" stroke-width="4"/><circle cx="201" cy="128" r="26" fill="none" stroke="#9EAAA1" stroke-width="1.2"/><circle cx="201" cy="128" r="2.2" fill="#D7D8C6"/>
+  <path d="M201 128L154 128L170 91L201 128M170 91L124 91L154 128L201 128" fill="none" stroke="url(#re-metal)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 91L173 71L191 71M201 128L196 95L185 75M187 71h12l5-6h10" fill="none" stroke="#344A50" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M153 91H201M157 85H195M159 80H193" fill="none" stroke="#536E70" stroke-width="1.8"/><path d="M175 71v-9" fill="none" stroke="#536E70" stroke-width="2.2"/>
+  <path d="M149 83L165 83L164 95L150 95Z" fill="url(#re-red)" stroke="#612F31" stroke-width="1.2"/><path d="M151 84l11 10m-10 0 11-10" fill="none" stroke="#FFD09A" stroke-width="1.1"/>
+  <path d="M25 83L145 84L138 96L25 91Z" fill="#F4D594" opacity=".22"/><path d="M21 87L148 89" fill="none" stroke="#FFE7A6" stroke-width="2.2" opacity=".85"/><path d="M142 80l7 7m-7 8 8-6" fill="none" stroke="#FFF3CF" stroke-width="1.5"/>
+  <path d="M150 82L119 69M152 89L115 89M150 96L119 108" fill="none" stroke="#FFDE99" stroke-width="1.8" opacity=".9"/>
+ </g>
+ <g id="layer-details"><path d="M179 126A20 20 0 0 1 196 109M153 87h7m16-8h10" fill="none" stroke="#D6E1DA" stroke-width="1.2"/><path d="M139 85l6 2m-5 5 7 1" fill="none" stroke="#FFF1C9" stroke-width="1.1"/><circle cx="154" cy="89" r="1.1" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M179 125A20 20 0 0 1 195 110" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".55"/><path d="M26 84L140 85" fill="none" stroke="#FFF2C6" stroke-width="1.1" opacity=".75"/><path d="M150 84l10 1" fill="none" stroke="#FFF9E4" stroke-width="1.4"/><circle cx="155" cy="89" r="1.1" fill="#FFFFFF"/></g>
+</svg>

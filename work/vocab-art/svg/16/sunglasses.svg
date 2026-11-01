@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: sunglasses (Noun, plural)
+  CONTEXTUAL_DEFINITION: Glasses with dark lenses that shield the eyes from sunlight.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Dark tinted lenses and sun glint distinguish these from clear prescription glasses.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Subtle sunny halo.
+    - Focal_Layer: Black-framed glasses with dark blue lenses.
+    - Details_Layer: Bridge, temple arms, and reflected sunlight.
+    - Lighting_Layer: Sun glint on each lens.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:sunglasses" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="143" rx="113" ry="17" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <circle cx="152" cy="91" r="87" fill="#FEF3C7" opacity=".4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M39 67L120 66Q133 67 129 83L122 116Q120 127 109 128L58 126Q47 125 44 114Z" fill="#263447" stroke="#1E2A3B" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M176 66L257 67L252 114Q249 125 238 126L187 128Q176 127 174 116L167 83Q163 67 176 66Z" fill="#263447" stroke="#1E2A3B" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M129 81Q152 72 175 81M43 78L22 69M253 78L282 66" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M58 78L91 76L81 111L56 111Z" fill="#4A72B2" opacity=".58"/><path d="M183 77L218 78L220 111L195 111Z" fill="#4A72B2" opacity=".58"/>
+  <path d="M62 82L80 79M188 81L207 80" stroke="#C7D9F0" stroke-width="3" stroke-linecap="round"/><circle cx="43" cy="77" r="3.5" fill="#D9A441"/><circle cx="253" cy="77" r="3.5" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M74 142Q151 155 229 142" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".55"/>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: bib (Noun)
+  CONTEXTUAL_DEFINITION: A cloth worn at the neck to catch food or drool.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A small fabric bib has a clear neck loop, broad chest panel, and catch pocket, distinguishing it from a full baby bodysuit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale changing-table surface.
+    - Context_Layer: Folded towel and tiny spoon.
+    - Focal_Layer: One bright bib laid flat and facing forward.
+    - Details_Layer: Neck opening, stitched edge, and catch pocket.
+    - Lighting_Layer: Gentle pool of light on the fabric.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:bib" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bib-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="bib-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#EAA9A1"/></linearGradient><filter id="bib-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bib-bg)"/><path d="M0 151Q80 144 152 151T304 148V192H0Z" fill="#EADFCC"/><path d="M37 47H267V150H37Z" fill="#E3E8F0"/><path d="M51 57H253V139H51Z" fill="#FFFFFF" opacity=".72"/><path d="M215 41L250 38L257 45L222 48Z" fill="#5479AC" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-context"><path d="M56 120L84 111L91 115L63 124Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M59 119L88 111" stroke="#64748B" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#bib-shadow)"><path d="M119 61Q121 42 152 42Q183 42 185 61L173 76L193 111Q197 120 189 132Q176 151 152 153Q128 151 115 132Q107 120 111 111L131 76Z" fill="url(#bib-cloth)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M119 61Q122 49 152 49Q181 49 185 61" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="152" cy="63" rx="20" ry="11" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2"/><path d="M120 120Q152 109 184 120L180 137Q152 146 124 137Z" fill="#C95E68" stroke="#1E2A3B" stroke-width="1.8"/><path d="M128 126Q152 119 176 126M132 133Q152 128 172 133" fill="none" stroke="#F3ECE1" stroke-width="1.4"/><path d="M144 92Q152 84 160 92Q168 99 152 110Q136 99 144 92Z" fill="#F2C14E" stroke="#D9A441" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M133 75Q142 70 151 75M153 75Q163 70 172 75" fill="none" stroke="#FFFFFF" stroke-width="2"/><circle cx="118" cy="100" r="2.2" fill="#F2C14E"/><circle cx="186" cy="101" r="2.2" fill="#F2C14E"/><path d="M97 55Q105 50 113 55M191 55Q199 50 207 55" fill="none" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="103" rx="75" ry="71" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".28"/><path d="M120 29Q151 20 184 29" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

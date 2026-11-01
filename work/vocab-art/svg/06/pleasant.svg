@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: pleasant (Adjective)
+  CONTEXTUAL_DEFINITION: Giving quiet enjoyment through a comfortable afternoon outdoors.
+  PEDAGOGICAL_ARCHETYPE: 3 (An everyday scene paired with an at-ease reaction)
+  SYNONYM_GUARD: A gentle breeze and cool drink make the moment pleasant; there is no dramatic thrill or sleepiness.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale garden terrace with sunlit wall and green ground.
+    - Context_Layer: Seated guest with relaxed shoulders, holding lemonade.
+    - Focal_Layer: Simple café chair, glass and small side table.
+    - Details_Layer: Leafy planter and breeze arcs.
+    - Lighting_Layer: Soft top-left sunlight and cool glass highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:pleasant" data-archetype="expressive-bust">
+  <defs><linearGradient id="patio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9F0E8"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#patio)"/><path d="M0 143 Q151 137 304 145 L304 192 L0 192Z" fill="#DCEAD6"/><rect x="26" y="37" width="72" height="67" rx="7" fill="#F4EFE1" stroke="#D8CDAF" stroke-width="1.6"/><path d="M62 37 L62 104 M26 70 L98 70" stroke="#FFFFFF" stroke-width="3"/><ellipse cx="161" cy="161" rx="106" ry="8" fill="#C9D9C0"/></g>
+  <g id="layer-context"><path d="M108 151 Q110 125 131 122 Q152 125 154 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M123 124 L122 112 L141 112 L140 126" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="132" cy="92" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/><path d="M113 91 Q114 70 133 71 Q151 72 151 92 Q142 81 132 82 Q122 87 113 91Z" fill="#27364B"/><path d="M123 93 Q127 89 130 93 M136 93 Q140 89 143 93" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M125 101 Q133 106 141 100" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/><path d="M148 132 Q167 127 179 116 L184 121 Q177 136 155 143" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M102 151 L102 117 Q102 108 111 108 L154 108 Q162 108 162 117 L162 151" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M102 123 L162 123 M109 151 L106 160 M155 151 L159 160" stroke="#8D552E" stroke-width="2.2" stroke-linecap="round"/><path d="M170 111 L207 111 L207 121 L170 121Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.7"/><path d="M173 121 L171 152 M204 121 L207 152" stroke="#1E2A3B" stroke-width="2.5"/><path d="M181 108 Q179 96 188 94 Q197 96 195 108Z" fill="#DCEAF4" stroke="#1E2A3B" stroke-width="1.8"/><path d="M181 103 L195 103" stroke="#4A72B2" stroke-width="2"/><path d="M186 94 L184 88 M191 94 L193 88" stroke="#7FB07A" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M173 63 Q185 57 197 63 M182 75 Q194 69 206 75 M72 117 Q83 110 94 117" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/><path d="M230 137 Q227 117 238 109 Q250 118 247 137Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M238 136 L238 149 M234 123 L226 117 M241 120 L248 114" stroke="#527748" stroke-width="1.8" stroke-linecap="round"/><path d="M81 45 L86 35 L91 45 L101 50 L91 55 L86 65 L81 55 L71 50Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M32 43 Q61 42 86 53 M185 98 Q190 95 195 98" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

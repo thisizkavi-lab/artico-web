@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: favorite (Adjective)
+  CONTEXTUAL_DEFINITION: Preferred over all the other choices, shown by someone holding one treasured mug close.
+  PEDAGOGICAL_ARCHETYPE: 4 (Chosen item made visually distinct from alternatives)
+  SYNONYM_GUARD: Three mugs are available, but the person reaches for one special blue mug; preference is the cue.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright kitchen shelf with three different cups.
+    - Context_Layer: Person cradles the chosen mug with a fond expression.
+    - Focal_Layer: One blue cup stands forward; two muted alternatives stay behind.
+    - Details_Layer: Handle, steam and tiny star mark on the preferred cup.
+    - Lighting_Layer: Warm highlight follows the chosen cup.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:favorite" data-archetype="contrast-reference">
+  <defs><linearGradient id="kitchen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#kitchen)"/><path d="M0 144 Q151 138 304 145 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="45" y="33" width="241" height="68" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><path d="M45 68 L286 68 M122 33 L122 101 M201 33 L201 101" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="151" cy="162" rx="105" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M30 151 Q32 123 54 120 Q76 123 78 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="54" cy="104" r="18" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M36 103 Q37 83 55 85 Q72 87 72 104 Q63 95 53 96Z" fill="#27364B"/><path d="M45 106 Q49 102 52 106 M58 106 Q62 102 65 106" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M46 114 Q54 121 62 114" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/><path d="M72 129 Q89 121 104 111 L110 116 Q104 131 80 141" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M146 91 Q146 83 154 83 L177 83 Q185 84 185 92 L182 116 Q166 122 149 116Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M183 89 Q195 88 195 100 Q194 111 183 108" fill="none" stroke="#64748B" stroke-width="4"/><path d="M213 92 Q213 83 221 83 L245 83 Q253 84 253 92 L250 116 Q233 122 216 116Z" fill="#D7C7A2" stroke="#8D7958" stroke-width="2"/><path d="M251 89 Q263 88 263 100 Q262 111 251 108" fill="none" stroke="#8D7958" stroke-width="4"/><path d="M109 128 Q119 116 136 117 Q153 117 158 131 L155 151 L106 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M150 123 Q172 119 172 133 Q171 147 155 143" fill="none" stroke="#1E2A3B" stroke-width="5"/><path d="M110 128 Q119 118 135 120 Q148 120 153 131 L151 146 L110 146Z" fill="#5479AC"/><path d="M124 121 L131 113 L138 121" fill="none" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M102 77 L107 67 L112 77 L122 82 L112 87 L107 97 L102 87 L92 82Z" fill="#F2C14E"/><path d="M161 70 Q166 64 171 70 M162 75 Q167 69 172 75" fill="none" stroke="#8B5CA8" stroke-width="2" stroke-linecap="round"/><path d="M217 107 Q232 112 248 106" fill="none" stroke="#E8B877" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><path d="M112 127 Q128 119 144 126 M148 89 Q166 85 181 90" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

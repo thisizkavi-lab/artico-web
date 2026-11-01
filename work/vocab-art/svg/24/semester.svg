@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: semester (Noun)
+  CONTEXTUAL_DEFINITION: One of two main academic periods in a year, each lasting about half a year.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show a year divided into two equal teaching blocks with a break between them; distinguish this half-year division from a shorter school term.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Campus planning wall with a pale calendar frame.
+    - Context_Layer: University building and graduation-season sun.
+    - Focal_Layer: Large year planner divided evenly into two colored halves with a central break.
+    - Details_Layer: Several small class icons within each half.
+    - Lighting_Layer: Bright even light emphasizes the two-part calendar structure.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:semester" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="semester-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="semester-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#semester-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M23 120H92V148H23Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.2"/><path d="M36 120V97H78V120" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M31 99L57 83L83 99" fill="none" stroke="#5479AC" stroke-width="3"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="252" cy="38" r="14" fill="#F6D777"/><path d="M252 17V10M252 66V59M231 38H224M280 38H273M237 23L232 18M272 58L267 53" stroke="#D9A441" stroke-width="1.6"/><path d="M208 125H282V136H208Z" fill="#5479AC"/><path d="M215 136V149M274 136V149" stroke="#315782" stroke-width="2.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#semester-shadow)"><path d="M61 32H231V112H61Z" fill="#FFFEFA" stroke="#64748B" stroke-width="2"/><path d="M61 46H231" stroke="#5479AC" stroke-width="3"/><path d="M74 56H142V101H74Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.3"/><path d="M150 56H218V101H150Z" fill="#F7E4D8" stroke="#D9857F" stroke-width="1.3"/><path d="M146 56V101" stroke="#D9A441" stroke-width="4" stroke-dasharray="4 4"/><path d="M84 68H132M84 78H132M84 88H132M160 68H208M160 78H208M160 88H208" stroke="#FFFFFF" stroke-width="2.4"/><circle cx="95" cy="96" r="3.5" fill="#91A77C"/><circle cx="121" cy="96" r="3.5" fill="#D9A441"/><circle cx="171" cy="96" r="3.5" fill="#5479AC"/><circle cx="198" cy="96" r="3.5" fill="#D9857F"/></g>
+  <g id="layer-details"><path d="M76 31V42M91 31V42M106 31V42M121 31V42M136 31V42" stroke="#64748B" stroke-width="1.4"/><path d="M62 53H230" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><path d="M144 72V88" stroke="#8D6138" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="80" rx="126" ry="68" fill="#FEF9C3" opacity=".09"/><path d="M61 32H231V112" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><circle cx="252" cy="38" r="14" fill="#FEF9C3" opacity=".18"/></g>
+</svg>

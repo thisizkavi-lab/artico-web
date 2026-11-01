@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: superb (Adjective)
+  CONTEXTUAL_DEFINITION: Excellent in quality, shown by a carefully crafted violin whose finish is inspected with pride.
+  PEDAGOGICAL_ARCHETYPE: 1 (Distinct hero object with workmanship cues)
+  SYNONYM_GUARD: Fine varnish, clean strings and a luthier checking the joinery signal first-class craft rather than a merely exciting performance.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream workshop and warm wooden bench.
+    - Context_Layer: Luthier at left, one hand polishing the finished violin.
+    - Focal_Layer: Large hourglass-shaped amber violin with neck, bridge and bow.
+    - Details_Layer: F-holes, strings, varnish glints and polishing cloth.
+    - Lighting_Layer: Bright varnish reflection across the upper-left bout.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:superb" data-archetype="hero-object">
+  <defs><linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3CF8B"/><stop offset="0.55" stop-color="#C88446"/><stop offset="1" stop-color="#965D28"/></linearGradient><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145 Q152 140 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="0" y="145" width="304" height="21" fill="#B97840"/><path d="M0 152 L304 152 M0 161 L304 161" stroke="#8D552E" stroke-width="1.5"/><ellipse cx="168" cy="169" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M22 148 Q25 123 44 120 Q63 123 66 148Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="44" cy="104" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M28 103 Q29 85 45 87 Q60 88 60 105 Q51 96 43 97Z" fill="#6B4B35"/><path d="M36 106 Q40 102 43 106 M47 106 Q51 102 54 106" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M36 113 Q44 117 52 112" fill="none" stroke="#A34F47" stroke-width="1.8" stroke-linecap="round"/><path d="M58 125 Q75 117 87 109 Q92 106 95 111 Q95 116 90 119 L67 137" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M156 69 C146 64 134 70 134 80 C133 91 143 95 143 102 C143 109 133 112 133 124 C133 139 145 149 160 149 C175 149 187 139 187 124 C187 112 177 109 177 102 C177 95 187 91 186 80 C186 70 174 64 164 69 C161 64 158 64 156 69Z" fill="url(#wood)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M157 70 L158 44 L166 42 L167 73" fill="#A96B36" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M160 45 Q158 37 164 36 Q171 37 169 43 L166 47Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M142 96 C150 90 153 100 148 106 C144 111 138 106 142 96Z M165 96 C158 90 156 100 161 106 C165 111 171 106 165 96Z" fill="#3D2D25"/><path d="M153 108 Q160 112 168 108" fill="none" stroke="#F2C14E" stroke-width="2.4"/><path d="M158 53 L158 137 M160.8 50 L160.8 139 M163.6 49 L163.6 139 M166.4 49 L166.4 136" stroke="#FFF1D2" stroke-width="0.9"/><path d="M155 111 L169 111 M158 119 L166 119" stroke="#3D2D25" stroke-width="2.6" stroke-linecap="round"/><path d="M117 69 L126 74 L124 151" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M117 69 L126 74 L124 151" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/><path d="M113 144 Q123 151 133 144" fill="none" stroke="#F1F5F9" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M139 78 Q144 69 151 71 M172 78 Q178 82 177 88 M139 121 Q143 133 151 138" fill="none" stroke="#F5D9A7" stroke-width="2.4" stroke-linecap="round"/><circle cx="160" cy="110" r="2.8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M77 74 L82 64 L87 74 L97 79 L87 84 L82 94 L77 84 L67 79Z" fill="#F2C14E"/><path d="M211 60 L215 52 L219 60 L227 64 L219 68 L215 76 L211 68 L203 64Z" fill="#F2C14E"/><path d="M45 135 Q54 127 62 133" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity="0.7"/></g>
+  <g id="layer-lighting"><path d="M137 80 Q141 69 150 71 M144 85 Q147 78 151 78 M155 71 L157 61" fill="none" stroke="#FFF8E7" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

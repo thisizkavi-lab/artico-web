@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: resign (verb; formally give up a job or position)
+  CONTEXTUAL_DEFINITION: Tell an employer formally that you are leaving a job or position.
+  PEDAGOGICAL_ART_DIRECTOR: Show a senior professional submitting a formal blank letter to an employer, then leaving the executive chair.
+  PEDAGOGICAL_ARCHETYPE: 3 - Formal workplace departure
+  SYNONYM_GUARD: Emphasize formal notice and a job position, not an informal quit or a company-initiated dismissal.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set a boardroom table at y=128. An executive at x=117..165 places a sealed blank envelope toward a colleague at x=213; behind them an empty high-backed chair marks the role being vacated.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:resign" data-archetype="formal-resignation">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="resign-envelope" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <linearGradient id="resign-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="resign-focus"><stop stop-color="#FFF1B9" stop-opacity=".68"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="resign-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="resign-exec" d="M105 119 Q106 99 119 93 L121 83 Q116 77 119 69 Q126 60 136 64 Q145 68 142 78 L139 87 Q153 93 154 116 L149 130 H109 Z"/>
+    <clipPath id="resign-exec-clip"><use href="#resign-exec"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Boardroom and the soon-vacant executive seat -->
+  <g id="layer-context"><path d="M31 147 H274" stroke="#C88446" stroke-width="2"/><path d="M185 55 Q185 48 193 48 H228 Q236 48 236 56 V115 H185 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M193 61 H228 V103 H193 Z" fill="#EEF4FA" stroke="#94A3B8" stroke-width="1.2"/><path d="M190 115 H231 V121 H190 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M196 121 V141 M225 121 V141 M190 141 H231" stroke="#64748B" stroke-width="2"/><path d="M53 116 H259 V132 H53 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="2"/><path d="M66 132 V151 M246 132 V151" stroke="#965D28" stroke-width="3"/><path d="M67 120 H129 M181 120 H243" stroke="#F1C48F" stroke-width="1.5"/></g>
+  <!-- 3. Senior employee gives formal notice to the employer -->
+  <g id="layer-focal" filter="url(#resign-shadow)"><use href="#resign-exec" fill="url(#resign-suit)" stroke="#1E2A3B" stroke-width="2.3"/><g clip-path="url(#resign-exec-clip)"><path d="M100 95 Q131 84 161 99 V134 H100Z" fill="#3D5F91"/><path d="M115 99 Q132 91 148 98" fill="none" stroke="#BBD2EF" stroke-width="2.4"/></g><ellipse cx="133" cy="73" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M125 71 Q126 62 134 62 Q142 63 142 70 Q136 65 130 67 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1"/><use href="#resign-exec" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M112 110 Q128 104 144 111 L168 118 L166 124 L144 120 L115 127 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M165 117 Q172 115 177 120 L174 126 L166 124 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M213 114 Q213 96 224 91 L226 83 Q222 77 225 71 Q232 64 240 68 Q248 72 244 81 L241 89 Q254 95 255 114 L250 125 H217 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="235" cy="78" rx="7" ry="9" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.3"/><path d="M228 76 Q229 67 236 67 Q243 68 244 75 Q238 70 232 72 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1"/><path d="M218 104 Q201 108 183 119 L178 124 L183 130 L207 121 L224 116 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M184 120 Q178 119 174 123 L178 128 L186 127 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. The blank formal notice, keys, and vacant chair -->
+  <g id="layer-details"><rect x="158" y="97" width="31" height="21" rx="2" transform="rotate(-7 158 97)" fill="url(#resign-envelope)" stroke="#64748B" stroke-width="1.3"/><path d="M160 101 L173 110 L187 99" fill="none" stroke="#94A3B8" stroke-width="1.1"/><circle cx="144" cy="109" r="6" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M144 115 V124 H152 M149 121 V125" fill="none" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/><path d="M194 75 H223 M194 81 H216 M194 88 H223" stroke="#CBD5E1" stroke-width="1.2"/><rect x="59" y="98" width="27" height="18" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.1"/><path d="M64 104 H81 M64 109 H78" stroke="#94A3B8" stroke-width="1"/></g>
+  <!-- 5. Focus on formal notice rather than an employer dismissal -->
+  <g id="layer-lighting"><ellipse cx="174" cy="108" rx="41" ry="30" fill="url(#resign-focus)"/><ellipse cx="174" cy="110" rx="28" ry="19" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4"/><path d="M161 100 H174" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/><path d="M251 53 L257 47 M255 65 H263" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+</svg>

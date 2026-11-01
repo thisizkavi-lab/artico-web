@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: hire (verb; employ a person)
+  CONTEXTUAL_DEFINITION: Choose and employ someone for a job.
+  PEDAGOGICAL_ART_DIRECTOR: Show the employer welcoming a new worker into a ready workplace through a handshake and company badge.
+  PEDAGOGICAL_ARCHETYPE: 3 - Professional role exchange
+  SYNONYM_GUARD: The chapter's recruitment group selects employ, not rent a car or equipment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two professionals face each other across an open, inviting interview area. At x=201,y=101 the manager clasps the new worker's hand; a blue staff badge is offered near x=184,y=106. An empty desk and chair behind the newcomer signal a job opening now filled.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:hire" data-archetype="employment-welcome">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="hire-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="hire-badge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="hire-welcome"><stop stop-color="#FFF1B9" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="hire-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="hire-newcomer" d="M62 128 Q63 105 78 100 L80 90 Q75 84 78 75 Q82 65 92 67 Q103 69 103 80 Q103 89 96 94 L99 102 Q114 107 116 128 L111 141 H67 Z"/>
+    <clipPath id="hire-newcomer-clip"><use href="#hire-newcomer"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Ready workstation and welcome area -->
+  <g id="layer-context"><path d="M34 149 H271" stroke="#C88446" stroke-width="2"/><rect x="40" y="86" width="72" height="53" rx="4" fill="#EEF4FA" stroke="#64748B" stroke-width="1.5"/><path d="M46 95 H106 M46 102 H101 M46 109 H106" stroke="#94A3B8" stroke-width="1.2"/><path d="M50 139 V153 M102 139 V153" stroke="#64748B" stroke-width="2"/><path d="M52 73 V85 M68 73 V85 M52 85 H68" stroke="#64748B" stroke-width="1.5"/><rect x="207" y="52" width="51" height="84" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M214 61 H251 M214 68 H247 M214 76 H251" stroke="#94A3B8" stroke-width="1.1"/><circle cx="232" cy="94" r="8" fill="#A8D4A2" stroke="#64748B" stroke-width="1.2"/><path d="M220 112 Q221 101 232 101 Q244 101 245 112" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 3. Employer welcomes and hires a new employee -->
+  <g id="layer-focal" filter="url(#hire-shadow)"><use href="#hire-newcomer" fill="url(#hire-suit)" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><g clip-path="url(#hire-newcomer-clip)"><path d="M58 104 Q91 92 120 107 V145 H58Z" fill="#3D5F91"/><path d="M71 105 Q88 99 105 104" fill="none" stroke="#BBD2EF" stroke-width="2.5"/></g><ellipse cx="91" cy="79" rx="9" ry="12" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M82 77 Q83 66 92 66 Q101 67 102 77 Q96 71 89 73 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><use href="#hire-newcomer" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M196 128 Q196 108 209 103 L212 93 Q208 87 212 79 Q219 71 228 76 Q236 82 231 94 L228 102 Q242 108 243 129 L238 142 H200 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="222" cy="88" rx="8" ry="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/><path d="M214 86 Q215 76 223 76 Q231 77 231 85 Q225 80 219 82 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1"/><path d="M105 111 Q120 103 137 108 L153 115 L150 122 L132 119 L110 125 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M149 113 Q156 111 161 116 L157 122 L150 121 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><path d="M198 111 Q184 103 170 108 L156 115 L159 122 L176 119 L197 125 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M160 113 Q153 111 149 116 L153 122 L161 121 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/><path d="M151 116 Q155 110 160 114 L163 118 L158 122 Q154 124 151 120 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. Staff badge and a welcoming first-day cue -->
+  <g id="layer-details"><rect x="171" y="90" width="18" height="25" rx="3" fill="url(#hire-badge)" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="180" cy="97" r="3" fill="#F2C14E" stroke="#64748B" stroke-width="1"/><path d="M176 104 H184 M176 109 H183" stroke="#64748B" stroke-width="1"/><path d="M167 89 L171 93 M188 91 L193 87" stroke="#4A72B2" stroke-width="1.8" stroke-linecap="round"/><circle cx="133" cy="91" r="3.2" fill="#F2C14E"/><circle cx="142" cy="84" r="2.3" fill="#8EB0DE"/><path d="M128 85 L132 80 M139 99 L145 101" stroke="#7FB07A" stroke-width="1.6" stroke-linecap="round"/></g>
+  <!-- 5. Warm focus on the hiring handshake -->
+  <g id="layer-lighting"><ellipse cx="157" cy="117" rx="49" ry="34" fill="url(#hire-welcome)"/><ellipse cx="157" cy="118" rx="29" ry="21" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M86 71 H95" stroke="#F5BFA3" stroke-width="1.5" stroke-linecap="round"/><path d="M231 39 L231 48 M227 43 H235" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

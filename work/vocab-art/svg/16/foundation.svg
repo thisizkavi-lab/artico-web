@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: foundation (Noun)
+  CONTEXTUAL_DEFINITION: Skin-tone cosmetic applied as a base layer of makeup.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: This is a cosmetic bottle and face swatch, not a building foundation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and product shadow.
+    - Context_Layer: Warm skin-tone halo.
+    - Focal_Layer: Pump bottle containing beige liquid foundation.
+    - Details_Layer: Pump dispenser and cream swatch.
+    - Lighting_Layer: Glass highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:foundation" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="149" cy="158" rx="106" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="116" ry="69" fill="#FEF3C7" opacity=".33"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M87 66H181L185 148Q183 158 172 158H96Q85 157 84 147Z" fill="#DCC5A1" stroke="#1E2A3B" stroke-width="2.7"/>
+  <path d="M91 103H180L182 147Q181 153 173 153H96Q90 152 90 146Z" fill="#C79A68" opacity=".88"/>
+  <path d="M107 51H162V66H107Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.2"/><path d="M121 51V40H168V46H142V53" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M167 45H193" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M103 78Q112 72 124 77M104 85Q114 80 123 83" fill="none" stroke="#F5E8D7" stroke-width="2" stroke-linecap="round"/><path d="M208 112Q231 101 250 109Q258 114 251 120Q233 128 213 126Q202 124 208 112Z" fill="#D8AE86" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M218 110Q234 106 247 111" fill="none" stroke="#F4D7BF" stroke-width="2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M198 127Q186 133 177 134" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

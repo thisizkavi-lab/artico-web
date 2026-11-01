@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: useless (Adjective)
+  CONTEXTUAL_DEFINITION: Unable to do the job expected of it, shown by a broken flashlight that will not light in a blackout.
+  PEDAGOGICAL_ARCHETYPE: 4 (Tool contrasted with the task it fails to perform)
+  SYNONYM_GUARD: The dead flashlight emits no beam while the person needs light, distinct from a merely poor-quality mug.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Darkened hallway with a faint window glow.
+    - Context_Layer: Person presses the flashlight button in frustration.
+    - Focal_Layer: Cracked flashlight with separated battery cover and empty beam space.
+    - Details_Layer: Dead lens, loose battery and no light trail.
+    - Lighting_Layer: Cool room shadows around the ineffective tool.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:useless" data-archetype="contrast-reference">
+  <defs><linearGradient id="hall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64748B"/><stop offset="1" stop-color="#94A3B8"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hall)"/><path d="M0 145 Q152 138 304 146 L304 192 L0 192Z" fill="#64748B"/><rect x="206" y="29" width="63" height="66" rx="7" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M237 29 L237 95 M206 62 L269 62" stroke="#E9EFF5" stroke-width="2.5"/><ellipse cx="154" cy="164" rx="109" ry="8" fill="#475569"/></g>
+  <g id="layer-context"><path d="M29 151 Q32 126 52 123 Q73 126 75 151Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="52" cy="107" r="18" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.9"/><path d="M34 106 Q35 85 53 87 Q71 89 70 108 Q61 97 51 98Z" fill="#27364B"/><path d="M42 108 Q46 104 49 108 M55 108 Q59 104 63 108" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M43 118 Q52 114 61 118" fill="none" stroke="#A34F47" stroke-width="2.2" stroke-linecap="round"/><path d="M28 99 L22 93 M73 99 L79 93" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M72 130 Q92 122 104 114 Q109 111 113 116 Q113 121 107 125 L79 143" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M120 110 L130 100 L194 100 L207 108 L204 121 L190 126 L132 121Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M190 100 L211 93 L224 99 L222 114 L205 121" fill="#64748B" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M218 97 L242 91 L247 99 L224 108Z" fill="#1E2A3B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M120 111 L110 112 L105 118 L111 124 L131 121" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2"/><path d="M150 98 L152 91 L162 91 L164 99" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.6"/><path d="M195 121 L206 132 L213 129 L206 118" fill="#64748B" stroke="#1E2A3B" stroke-width="2"/><path d="M216 125 L225 132 L230 128 L223 120" fill="#D49B2A" stroke="#8D552E" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M115 84 L120 74 L125 84 L135 89 L125 94 L120 104 L115 94 L105 89Z" fill="#CBD5E1"/><path d="M95 101 L101 101 M92 108 L98 108 M96 115 L102 115" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M233 82 Q241 77 249 82 M235 88 Q242 84 248 88" fill="none" stroke="#1E2A3B" stroke-width="2" opacity="0.6"/></g>
+  <g id="layer-lighting"><path d="M208 35 Q234 31 261 35 M130 106 Q158 103 184 106" fill="none" stroke="#CBD5E1" stroke-width="2" opacity="0.65"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#CBD5E1" stroke-width="1" opacity="0.65"/></g>
+</svg>

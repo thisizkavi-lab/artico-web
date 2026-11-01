@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 19 — Feelings and moods
+  WORD: frightened (Adjective)
+  CONTEXTUAL_DEFINITION: Afraid and recoiling from a sudden, visible cue.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive emotion scene
+  SYNONYM_GUARD: A startled person leans away and shields themself from a small dog that barks; the moving retreat distinguishes frightened from the frozen alert face of scared and the extreme panic of terrified.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet garden path with low shrubs.
+    - Context_Layer: Small dog on the left with perked ears and open barking mouth.
+    - Focal_Layer: Person on the right stepping backward, arms raised protectively, eyes wide.
+    - Details_Layer: Paw marks, curved bark burst strokes, and a backward motion arc.
+    - Lighting_Layer: Cool pale halo around the recoiling person.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:frightened" data-archetype="expressive-emotion-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="frightened-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="frightened-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2C14E"/><stop offset="1" stop-color="#D49B2A"/></linearGradient>
+    <filter id="frightened-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#frightened-sky)"/><path d="M0 144Q82 139 152 144T304 142V192H0Z" fill="#DCEAD6"/><path d="M0 147H304" stroke="#7B8A9E" stroke-width="1.5"/><ellipse cx="152" cy="174" rx="130" ry="7" fill="#C3DAB9"/></g>
+  <g id="layer-context"><path d="M11 139Q20 112 33 115Q43 110 54 124L63 143Z" fill="#829A83" stroke="#568552" stroke-width="2"/><path d="M238 139Q247 111 263 115Q278 111 292 139Z" fill="#829A83" stroke="#568552" stroke-width="2"/><ellipse cx="74" cy="154" rx="42" ry="6" fill="#DDD4C3"/><path d="M43 130Q47 115 64 115Q76 111 89 120L97 137L90 151H53Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.5"/><path d="M47 126L44 107L59 119M73 117L85 102L86 124" fill="#C88446" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M65 129Q72 123 79 129" fill="none" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="70" cy="140" rx="7" ry="5" fill="#1E2A3B"/><path d="M44 150Q38 157 34 159M91 149Q98 154 102 157" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M88 102Q100 98 105 105M96 94Q112 91 119 99M92 110Q106 108 111 115" fill="none" stroke="#4A72B2" stroke-width="2.1" stroke-linecap="round"/><path d="M119 151L111 164M131 151L127 165M139 150L143 163" stroke="#568552" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#frightened-shadow)"><ellipse cx="224" cy="99" rx="61" ry="71" fill="#DCECFB" opacity=".5"/><path d="M184 177Q188 145 204 137L237 137Q253 146 261 177Z" fill="url(#frightened-shirt)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M202 140Q188 130 181 116M242 140Q258 126 258 112" fill="none" stroke="#1E2A3B" stroke-width="12" stroke-linecap="round"/><path d="M202 140Q188 130 181 116M242 140Q258 126 258 112" fill="none" stroke="#F5BFA3" stroke-width="7.5" stroke-linecap="round"/><path d="M177 114Q169 107 174 100Q181 96 186 104L190 115Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M254 110Q257 101 265 101Q271 107 265 114L258 119Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><rect x="216" y="119" width="18" height="20" rx="5" fill="#E5A283" stroke="#1E2A3B" stroke-width="2"/><circle cx="225" cy="82" r="32" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6"/><path d="M194 76Q194 49 220 47Q247 48 256 72Q239 60 222 62Q207 62 196 79Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M207 74Q215 65 221 74M232 73Q239 64 245 74" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/><circle cx="215" cy="82" r="4.5" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="239" cy="82" r="4.5" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="216" cy="83" r="2.1" fill="#1E2A3B"/><circle cx="240" cy="83" r="2.1" fill="#1E2A3B"/><ellipse cx="227" cy="100" rx="5" ry="7" fill="#1E2A3B"/><path d="M185 122Q178 130 176 137M265 119Q271 126 273 133" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M112 70Q130 78 145 73M113 82Q128 88 141 83" fill="none" stroke="#64748B" stroke-width="1.8" stroke-dasharray="4 5"/><path d="M162 93L154 87M164 104L153 104" stroke="#D9A441" stroke-width="2.2" stroke-linecap="round"/><path d="M68 161Q74 157 79 161M88 164Q93 160 97 164" fill="none" stroke="#965D28" stroke-width="2" stroke-linecap="round"/><path d="M193 54Q201 47 208 50" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="224" cy="99" rx="64" ry="73" fill="none" stroke="#5479AC" stroke-width="1.3" stroke-dasharray="4 6" opacity=".35"/><path d="M52 109Q62 104 71 108" fill="none" stroke="#F2C14E" stroke-width="2" opacity=".8"/></g>
+</svg>

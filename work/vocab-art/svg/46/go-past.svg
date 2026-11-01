@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: go past
+  CONTEXTUAL_DEFINITION: Continue moving beyond a landmark without stopping at it.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler progressing along a straight route that passes the midpoint of a prominent landmark and continues beyond it.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Keep the route continuing beyond the landmark; do not end the arrow at the landmark as if arriving or stopping.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Route crosses from x=28 to x=276 at y=116; a tower landmark stands at x=116..174, while walker and arrow are already beyond it at x=227 with forward direction rightward.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:go past" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="gopast-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5EEDC"/><stop offset="1" stop-color="#C8D9BF"/></linearGradient>
+    <linearGradient id="gopast-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6A7B8A"/><stop offset="1" stop-color="#47596C"/></linearGradient>
+    <radialGradient id="gopast-halo"><stop stop-color="#F2C14E" stop-opacity=".42"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="gopast-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gopast-ground)"/><path d="M0 98H304V157H0Z" fill="url(#gopast-road)"/><path d="M8 91H296M8 164H296" stroke="#FAF8F3" stroke-width="6"/><path d="M8 128H296" stroke="#F7F4EA" stroke-width="1.6" stroke-dasharray="10 9"/></g>
+  <g id="layer-context"><path d="M119 70L146 35L173 70V91H119Z" fill="#D9B693" stroke="#1E2A3B" stroke-width="2.3"/><path d="M113 71L146 28L179 71Z" fill="#806956" stroke="#1E2A3B" stroke-width="2"/><rect x="136" y="74" width="20" height="17" fill="#A6C9D7" stroke="#536A7C" stroke-width="1.4"/><path d="M127 58H137M155 58H165" stroke="#F7E7C9" stroke-width="2"/><circle cx="49" cy="45" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="256" cy="44" r="16" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><rect x="24" y="168" width="55" height="17" rx="3" fill="#D7BD9E" stroke="#746454" stroke-width="1.5"/><rect x="229" y="168" width="53" height="17" rx="3" fill="#9CB6C5" stroke="#536B7F" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#gopast-shadow)"><ellipse cx="149" cy="123" rx="61" ry="45" fill="url(#gopast-halo)"/><path d="M31 128H271" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/><path d="M31 128H271" fill="none" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><path d="M261 115L283 128L261 141Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="92" cy="128" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="197" cy="128" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M218 115C211 105 215 93 225 89C235 93 239 105 232 115L236 133H215Z" fill="#D5A27B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M215 116L204 130L209 134L221 125M233 116L245 126L241 131L229 125" fill="#D5A27B" stroke="#1E2A3B" stroke-width="1.6" stroke-linejoin="round"/><path d="M219 131L214 153H224L228 136L233 153H243L234 130" fill="#344A62" stroke="#1E2A3B" stroke-width="1.7"/><path d="M223 95Q225 92 229 94" fill="none" stroke="#6F4A37" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M178 96H204" stroke="#F2C14E" stroke-width="2" stroke-dasharray="3 4"/><path d="M96 94V134M191 94V134" stroke="#FFFFFF" stroke-width="1.4" stroke-dasharray="3 4" opacity=".8"/><path d="M59 95L67 88M269 82L276 89" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M105 118Q146 123 185 118" fill="none" stroke="#AFC0D2" stroke-width="1.4" stroke-dasharray="2 5"/><circle cx="185" cy="87" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M121 81L146 44L171 81" fill="none" stroke="#F6E2C7" stroke-width="1.5"/><ellipse cx="223" cy="130" rx="20" ry="4" fill="#35485D" opacity=".28"/><path d="M28 92H80" stroke="#FFFFFF" stroke-width="1.2" opacity=".65"/></g>
+</svg>

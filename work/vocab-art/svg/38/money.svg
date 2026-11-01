@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: money (noun)
+  CONTEXTUAL_DEFINITION: The general means of payment and store of value, represented by notes and coins kept together.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with everyday personal-finance setting
+  SYNONYM_GUARD: Broader than cash handed to a cashier; show a mixed collection gathered and stored in a personal wallet, not just coins or notes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open caramel wallet at x82..222, two blank notes emerging upward, several gold/copper coins spilling forward; paper stage and grounding shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:money" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="money-wallet" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#965D28"/></linearGradient>
+    <linearGradient id="money-note" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <path id="money-wallet-shape" d="M73 113 Q80 95 101 94 H213 Q229 96 233 112 L225 151 Q222 159 210 159 H91 Q77 158 73 147 Z"/>
+    <clipPath id="money-wallet-clip"><use href="#money-wallet-shape"/></clipPath>
+    <filter id="money-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="164" rx="91" ry="10" fill="#DDD4C3"/></g>
+  <!-- 2. Personal finance desk context -->
+  <g id="layer-context"><path d="M29 138 H275 V151 H29 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.1"/><path d="M36 143 H268" stroke="#E3AC77" stroke-width="2"/><path d="M242 71 Q260 60 273 69 V119 H242 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M249 81 H266 M249 88 H266" stroke="#94A3B8" stroke-width="1.7"/></g>
+  <!-- 3. Primary mixed money stored in an open wallet -->
+  <g id="layer-focal" filter="url(#money-shadow)"><rect x="99" y="53" width="75" height="48" rx="4" transform="rotate(-8 99 53)" fill="url(#money-note)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M112 64 H160 M111 71 H145" stroke="#5479AC" stroke-width="1.8"/><ellipse cx="138" cy="76" rx="12" ry="9" fill="#E7EEF5" stroke="#5479AC" stroke-width="1.5"/><path d="M133 76 Q138 70 143 76 Q138 82 133 76Z" fill="#5479AC"/><rect x="132" y="47" width="76" height="48" rx="4" transform="rotate(8 132 47)" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="2.3"/><path d="M144 60 H194 M145 67 H174" stroke="#568552" stroke-width="1.7"/><use href="#money-wallet-shape" fill="url(#money-wallet)" stroke="#1E2A3B" stroke-width="2.7"/><g clip-path="url(#money-wallet-clip)"><path d="M72 112 Q145 93 235 112 V165 H70Z" fill="#B55B28" opacity=".45"/><path d="M93 122 Q150 115 215 124" fill="none" stroke="#F2A472" stroke-width="4"/></g><path d="M73 117 Q150 102 232 117" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M111 137 Q151 128 195 137" fill="none" stroke="#E3AC77" stroke-width="2"/></g>
+  <!-- 4. Mixed coins spill forward, distinguishing money from one form -->
+  <g id="layer-details"><ellipse cx="103" cy="151" rx="12" ry="6" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="103" cy="148" rx="12" ry="6" fill="#FCE29C" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="198" cy="151" rx="10" ry="5" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="198" cy="148" rx="10" ry="5" fill="#F2A472" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="224" cy="154" rx="8" ry="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M92 146 Q103 142 114 146 M190 146 Q198 143 206 146" fill="none" stroke="#B55B28" stroke-width="1.3"/></g>
+  <!-- 5. Directional glints -->
+  <g id="layer-lighting"><path d="M106 59 L133 56" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M143 52 H171" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".8"/><path d="M57 77 L57 86 M53 81 H61" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

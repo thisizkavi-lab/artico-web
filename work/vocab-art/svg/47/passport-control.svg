@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: passport control
+  CONTEXTUAL_DEFINITION: The airport border checkpoint where an officer verifies travelers' passports.
+  PEDAGOGICAL_ART_DIRECTOR: Show a border officer checking a traveler's open passport at a controlled airport booth with lane barriers.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Make this an international airport document checkpoint, not hotel check-in or general security screening.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A traveler presents an open passport across a glass-topped border counter to an officer seated behind it; queue barriers and terminal glazing establish the airport control area.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:passport control" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="pc-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E2ECE9"/><stop offset="1" stop-color="#C4D0CD"/></linearGradient>
+  <linearGradient id="pc-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A9CBD0" stop-opacity=".8"/><stop offset="1" stop-color="#DCE9E4" stop-opacity=".8"/></linearGradient>
+  <linearGradient id="pc-counter" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AAB8B4"/><stop offset="1" stop-color="#667A7E"/></linearGradient>
+  <filter id="pc-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DCE6E6"/><path d="M17 17H287V151H17Z" fill="url(#pc-wall)" stroke="#63757A" stroke-width="1.4"/><path d="M17 151H287V184H17Z" fill="#B6B6AC"/><rect x="30" y="29" width="93" height="53" fill="#A8C8CF" stroke="#4C6670" stroke-width="1.3"/><path d="M76 29V82M30 56H123" stroke="#526D77" stroke-width="1"/><path d="M21 169H284" stroke="#EAE4D8" stroke-width="1.1"/><path d="M28 96V135M28 96H43M28 135H43M276 96V135M261 96H276M261 135H276" fill="none" stroke="#526274" stroke-width="2.4"/><path d="M35 116H269" stroke="#839496" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M130 54H270V122H130Z" fill="url(#pc-glass)" stroke="#526F78" stroke-width="1.2"/><path d="M130 54V122M270 54V122" stroke="#405A65" stroke-width="2"/><path d="M176 33Q194 25 212 33V59H176Z" fill="#526274" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="194" cy="30" r="8" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M186 30Q187 20 195 20Q202 21 203 29L199 26L191 26Z" fill="#49545B"/><path d="M128 122H274V158H128Z" fill="url(#pc-counter)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M137 158V168M264 158V168" stroke="#435960" stroke-width="3"/><path d="M145 116H256" stroke="#F5F4EC" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#pc-shadow)"><circle cx="74" cy="78" r="8" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M62 89Q74 83 86 89L91 120H57Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M64 117L61 145H71L76 120M79 120L84 145H94L90 116" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><path d="M64 96L83 103L111 108" fill="none" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><ellipse cx="114" cy="108" rx="4" ry="3" fill="#D9A27D"/><path d="M107 102L120 96L135 107L122 114Z" fill="#3E5C79" stroke="#1E2A3B" stroke-width="1"/><path d="M120 96L135 103L122 111L107 104Z" fill="#7E9CB2" stroke="#1E2A3B" stroke-width="1"/><path d="M114 102L120 105M127 105L130 104" stroke="#F2EBDD" stroke-width=".8"/><path d="M176 57L166 66L151 76" fill="none" stroke="#526274" stroke-width="6" stroke-linecap="round"/><ellipse cx="149" cy="77" rx="3.4" ry="2.8" fill="#D9A27D"/><path d="M149 82H169" stroke="#E9EEE7" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M31 30H122" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><path d="M132 55H269" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><ellipse cx="153" cy="170" rx="113" ry="5" fill="#526274" opacity=".16"/><circle cx="45" cy="104" r="2" fill="#F2C14E"/><circle cx="258" cy="104" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="104" rx="129" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

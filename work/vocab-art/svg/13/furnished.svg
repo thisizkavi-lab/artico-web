@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: furnished (Adjective)
+  CONTEXTUAL_DEFINITION: A room supplied with furniture and ready to live in.
+  PEDAGOGICAL_ARCHETYPE: 6 — Room inventory / condition cue
+  SYNONYM_GUARD: Keep furniture prominent inside one complete room; unfurnished is an empty room with bare floor and walls.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple rental bedroom with window and floor.
+    - Context_Layer: Wall and floor make a clear room boundary.
+    - Focal_Layer: Bed, chair, nightstand, lamp, and rug occupy the room.
+    - Details_Layer: Pillow, folded quilt, and drawer handles reinforce usable furniture.
+    - Lighting_Layer: Warm lamp glow and grounded furniture shadows.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:furnished" data-archetype="room-state">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="bedcover" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 143H304V192H0Z" fill="#D8C5A8"/><path d="M0 143H304" stroke="#8A5A35" stroke-width="2"/><path d="M21 24H83V75H21Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M52 25V74M22 50H82" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="159" cy="160" rx="112" ry="7" fill="#9B8E7B" opacity=".3"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M103 32H278V36H103Z" fill="#C88446"/><path d="M116 36V68M265 36V68" stroke="#1E2A3B" stroke-width="1.3"/><path d="M108 68Q190 76 274 67" fill="none" stroke="#D8C5A8" stroke-width="2"/><path d="M89 141H286" stroke="#F3ECE1" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M95 97H260V143H95Z" fill="url(#bedcover)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M95 97V83Q96 75 108 75H145Q156 75 158 89V101Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M102 84Q123 78 148 84L151 94H102Z" fill="#E5EAF0"/><path d="M99 105H256" stroke="#9AB1D4" stroke-width="1.7"/><path d="M103 143V153M252 143V153" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M104 143V153M252 143V153" stroke="#9A653D" stroke-width="2.5" stroke-linecap="round"/><path d="M36 108Q36 100 43 100H74Q81 100 81 108V141H36Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M40 116H77V128H40Z" fill="#D89A6C" stroke="#8A5A35" stroke-width="1.4"/><circle cx="72" cy="122" r="1.8" fill="#1E2A3B"/><path d="M49 98V81L61 72L73 81V99Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M47 80H75L70 76H52Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M39 151H78" stroke="#1E2A3B" stroke-width="2"/><path d="M39 153V159M77 153V159" stroke="#8A5A35" stroke-width="3" stroke-linecap="round"/><path d="M212 112Q212 105 220 105H252Q260 105 260 113V130H212Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M216 112H257" stroke="#F0D8B3" stroke-width="1.5"/><path d="M218 130V146M254 130V146" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M218 130V146M254 130V146" stroke="#9A653D" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M116 107L135 128M143 107L162 128M170 107L189 128" stroke="#6C88B7" stroke-width="1.1"/><path d="M28 162H277" stroke="#F3ECE1" stroke-width="1.3"/><path d="M84 77Q92 69 98 77" fill="none" stroke="#F2C14E" stroke-width="1.8"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="62" cy="81" rx="22" ry="18" fill="#F2C14E" opacity=".12"/><path d="M55 78L63 74L69 78" fill="none" stroke="#FFF7D6" stroke-width="1.6"/></g>
+</svg>

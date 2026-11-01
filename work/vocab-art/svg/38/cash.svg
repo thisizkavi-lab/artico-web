@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: cash (noun)
+  CONTEXTUAL_DEFINITION: Physical money ready for immediate payment, as opposed to an account balance or card.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with payment context
+  SYNONYM_GUARD: Show tangible notes and coins being offered at a checkout; do not depict only a generic abstract money pile.
+  MODE: STATIC peak payment moment
+  COORDINATE_BLUEPRINT: Warm counter stage; foreground open palm and fanned blank notes at x75..222; three distinct coins at x185..241; muted checkout edge behind; soft shadow below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:cash" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="cash-note" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <radialGradient id="cash-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="cash-hand" d="M75 132 C94 121 105 110 116 108 L147 116 C155 118 158 126 152 131 L132 130 C145 136 160 136 176 132 L216 121 C225 119 230 125 225 132 C209 143 189 150 165 154 L107 158 L79 152 Z"/>
+    <clipPath id="cash-hand-clip"><use href="#cash-hand"/></clipPath>
+    <filter id="cash-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="152" width="304" height="40" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="158" cy="163" rx="91" ry="10" fill="#DDD4C3"/></g>
+  <!-- 2. Financial counter context -->
+  <g id="layer-context"><path d="M215 76 H286 V151 H215 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2.4"/><path d="M224 88 H276 M224 100 H276" stroke="#94A3B8" stroke-width="2"/><rect x="227" y="111" width="46" height="29" rx="4" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M235 119 H265 M235 126 H258" stroke="#94A3B8" stroke-width="2"/></g>
+  <!-- 3. Primary subject: tangible cash in an offered hand -->
+  <g id="layer-focal" filter="url(#cash-shadow)"><rect x="83" y="69" width="97" height="48" rx="5" transform="rotate(-13 83 69)" fill="url(#cash-note)" stroke="#1E2A3B" stroke-width="2.5"/><rect x="92" y="59" width="94" height="46" rx="5" transform="rotate(7 92 59)" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="2.5"/><path d="M111 73 C128 67 151 70 166 83 C157 95 133 98 113 88 Z" fill="#6A9C65" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="139" cy="82" rx="12" ry="8" fill="#FCE29C" stroke="#1E2A3B" stroke-width="1.5"/><g clip-path="url(#cash-hand-clip)"><rect x="72" y="105" width="160" height="60" fill="#D89A6C"/><path d="M75 144 C116 134 150 142 190 132 L233 123 V165 H75Z" fill="#B6784B"/><path d="M91 129 C114 126 132 132 144 139" fill="none" stroke="#ECC09D" stroke-width="4"/></g><use href="#cash-hand" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/></g>
+  <!-- 4. Coins and cashier-side detail -->
+  <g id="layer-details" stroke="#1E2A3B" stroke-width="2"><ellipse cx="193" cy="145" rx="14" ry="7" fill="#D49B2A"/><path d="M179 140 V145 C179 149 207 149 207 145 V140" fill="#F2C14E"/><ellipse cx="193" cy="140" rx="14" ry="7" fill="url(#cash-coin)"/><ellipse cx="224" cy="146" rx="10" ry="5.5" fill="#F2C14E"/><path d="M215 142 V146 C215 150 233 150 233 146 V142" fill="#D49B2A"/><path d="M188 138 Q193 134 198 138" fill="none" stroke="#FFF6D7" stroke-width="2"/></g>
+  <!-- 5. Directional glints and focus lighting -->
+  <g id="layer-lighting"><path d="M98 68 L125 63 M109 77 L130 74" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" opacity=".8"/><path d="M243 53 L243 64 M237 59 H249" stroke="#F2C14E" stroke-width="2.5" stroke-linecap="round"/><path d="M178 126 Q184 120 190 120" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/></g>
+</svg>

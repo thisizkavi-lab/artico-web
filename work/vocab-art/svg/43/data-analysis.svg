@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: data analysis
+  CONTEXTUAL_DEFINITION: Examining collected data to identify patterns or useful findings.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker comparing a field of data points and isolating a meaningful trend.
+  PEDAGOGICAL_ARCHETYPE: 40 - Pattern finding in data
+  SYNONYM_GUARD: Show interpretation of already collected information, not source gathering, general arithmetic, or a simple upward chart alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a worker at x=90 studying a large blank grid panel at x=142..260; scatter groups of points inside, add a highlighted rising cluster and a curved trend line, with a magnifying lens over the significant region.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:data analysis" data-archetype="pattern-finding-in-data">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="analysis-chart" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF2FA"/></linearGradient>
+    <linearGradient id="analysis-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="analysis-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="analysis-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="138" y="41" width="116" height="75" rx="3" fill="url(#analysis-chart)" stroke="#64748B" stroke-width="1.1"/><path d="M151 51 V104 M169 51 V104 M187 51 V104 M205 51 V104 M223 51 V104 M241 51 V104 M148 58 H245 M148 73 H245 M148 88 H245 M148 103 H245" stroke="#D8E1EB" stroke-width=".6"/><circle cx="158" cy="92" r="2" fill="#8EB0DE"/><circle cx="170" cy="87" r="2" fill="#8EB0DE"/><circle cx="177" cy="98" r="2" fill="#8EB0DE"/><circle cx="190" cy="79" r="2" fill="#8EB0DE"/><circle cx="198" cy="87" r="2" fill="#8EB0DE"/><circle cx="208" cy="69" r="2.5" fill="#F2C14E"/><circle cx="218" cy="66" r="2.5" fill="#F2C14E"/><circle cx="226" cy="59" r="2.5" fill="#F2C14E"/><circle cx="235" cy="55" r="2.5" fill="#F2C14E"/><path d="M154 99 C175 90 187 87 202 73 C214 63 225 61 240 50" fill="none" stroke="#547A56" stroke-width="1.7" stroke-linecap="round"/><path d="M39 135 H266 V145 H39 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M53 145 V155 M252 145 V155" stroke="#965D28" stroke-width="2.1"/><circle cx="222" cy="72" r="14" fill="#F7E8BC" fill-opacity=".6" stroke="#C68A29" stroke-width="1.2"/><path d="M232 82 L246 95" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#analysis-shadow)"><path d="M54 126 Q56 103 68 96 L69 87 Q65 83 67 76 Q75 68 86 70 Q95 73 93 84 L91 91 Q102 96 104 123 L101 135 H58 Z" fill="url(#analysis-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="80" cy="80" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M72 78 Q74 70 81 70 Q89 71 93 78 Q85 74 78 75 Z" fill="#3D342D"/><path d="M59 101 Q80 95 99 101" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M99 107 L121 97 M102 113 L126 106" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/><path d="M121 97 L130 93 M126 106 L135 103" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/><path d="M112 78 L125 69" stroke="#D89A6C" stroke-width="2.8" stroke-linecap="round"/><circle cx="122" cy="70" r="10" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M129 77 L137 84" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M202 45 L208 40 M218 46 L224 41 M235 42 L241 37" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/><circle cx="132" cy="54" r="2" fill="#8EB0DE"/><circle cx="117" cy="62" r="1.7" fill="#A8D4A2"/><path d="M143 119 H255" stroke="#FFFFFF" stroke-width=".8"/><path d="M265 48 L269 44 M265 56 H271" stroke="#64748B" stroke-width=".8" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="82" rx="104" ry="68" fill="url(#analysis-halo)" opacity=".14"/><path d="M28 35 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

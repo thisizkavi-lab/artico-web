@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: cry (Verb)
+  CONTEXTUAL_DEFINITION: To shed tears while showing sadness.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust / symptom
+  SYNONYM_GUARD: Use visible tear streams and a trembling downturned mouth; frown has no tears.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close empathetic portrait, no distressing context.
+    - Context_Layer: Soft hair and shoulders stay muted.
+    - Focal_Layer: Clear tear drops run from both eyes.
+    - Details_Layer: Brows lift inward and mouth quivers downward.
+    - Lighting_Layer: Blue tears and small cheek halos remain gentle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:cry" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="176" rx="92" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M85 178Q91 143 118 137H186Q213 145 219 178Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M94 78Q90 34 127 20Q160 7 192 27Q216 46 206 91L192 131Q177 153 151 151Q122 148 108 123Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M94 73Q88 35 124 18Q160 1 194 23Q216 39 206 75L194 60Q166 67 145 52Q119 69 94 73Z" fill="#4F5F6D" stroke="#1E2A3B" stroke-width="2.2"/><path d="M120 81Q130 86 138 83M166 83Q175 87 184 81" fill="none" stroke="#64748B" stroke-width="2.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M130 86Q134 80 139 86L139 111Q138 119 134 121Q130 117 130 110Z" fill="#6D9FC7" stroke="#4A72B2" stroke-width="1.4"/><path d="M168 86Q173 80 178 86L178 110Q177 117 173 121Q168 117 168 109Z" fill="#6D9FC7" stroke="#4A72B2" stroke-width="1.4"/><ellipse cx="134" cy="124" rx="5" ry="7" fill="#6D9FC7"/><ellipse cx="173" cy="124" rx="5" ry="7" fill="#6D9FC7"/><path d="M129 105Q135 102 141 105M165 105Q173 102 180 105" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M128 73Q136 66 144 73M162 73Q171 66 179 73" fill="none" stroke="#1E2A3B" stroke-width="2.1"/><path d="M137 116Q152 100 167 116Q162 130 152 130Q142 129 137 116Z" fill="#8E3E48" stroke="#1E2A3B" stroke-width="1.8"/><path d="M152 89Q157 98 153 105" fill="none" stroke="#C88E74" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M123 91Q120 109 128 124M184 91Q188 109 180 124" fill="none" stroke="#4A72B2" stroke-width="1.3" stroke-dasharray="3 3" opacity=".65"/></g>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: peck (verb)
+  CONTEXTUAL_DEFINITION: A woodpecker repeatedly striking tree bark with its pointed beak to find food.
+  PEDAGOGICAL_ARCHETYPE: 5 - Action shown by contact and target reaction
+  SYNONYM_GUARD: Show the pointed beak touching bark and chips breaking away at the contact point; keep the bird airborne cues for fly/swoop.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a vertical bark trunk at right; woodpecker body x=104..187 y=73..133 faces right, red crown, stiff tail against trunk, pointed beak touching bark at x=218 y=96, wood chips and short impact strokes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:peck" data-archetype="woodpecker-pecking-bark">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#B74F46;--c-secondary:#3B4A4D;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="peck-sky" x2="0" y2="1"><stop stop-color="#DCEBF0"/><stop offset="1" stop-color="#F6F0E5"/></linearGradient>
+  <linearGradient id="peck-bark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9C7550"/><stop offset="1" stop-color="#61452F"/></linearGradient>
+  <linearGradient id="peck-plumage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65777B"/><stop offset="1" stop-color="#35474D"/></linearGradient>
+  <filter id="peck-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#peck-sky)"/><path d="M0 133Q72 122 141 135T304 128V192H0Z" fill="#DCE5D6"/><path d="M0 156Q78 146 152 158T304 151V192H0Z" fill="#C7D6BD"/><circle cx="65" cy="43" r="22" fill="#F2D68C" opacity=".48"/></g>
+ <g id="layer-context"><path d="M229 29Q215 63 229 95Q214 128 228 177L296 177V29Z" fill="url(#peck-bark)" stroke="#61442F" stroke-width="1.5"/><path d="M248 36q-16 22-5 42m27-36q-14 18-4 38m-21 28q-13 21-2 39m30-36q-16 20-5 40" fill="none" stroke="#C09A6D" stroke-width="1.6" opacity=".72" stroke-linecap="round"/><path d="M29 145V75m0 39L13 96m16 30 17-19" fill="none" stroke="#7B906F" stroke-width="3" stroke-linecap="round"/><ellipse cx="151" cy="155" rx="57" ry="4" fill="#66755E" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#peck-shadow)"><path d="M103 103Q111 82 138 77Q165 75 184 94Q190 108 179 127Q157 142 129 132Q108 125 103 103Z" fill="url(#peck-plumage)" stroke="#34464A" stroke-width="1.5"/><path d="M124 101Q142 83 164 93Q178 103 168 120Q149 133 130 123Z" fill="#E5E4D9"/><path d="M139 91Q155 80 169 92Q173 104 160 112Q146 109 139 101Z" fill="#364E4F"/><path d="M134 80Q146 62 164 63Q176 67 178 82L165 90Q149 84 134 88Z" fill="#BD5147"/><path d="M182 93L223 92L184 101Z" fill="#4E4240" stroke="#252F33" stroke-width="1"/><circle cx="174" cy="82" r="2.3" fill="#F4E0A8"/><circle cx="175" cy="82" r="1.1" fill="#1E2A3B"/><path d="M107 115L86 137L111 128Z" fill="#3B4A4E"/><path d="M125 132L122 143m29-10 1 10m-30 0 11 2m18-2 11 2" fill="none" stroke="#A58859" stroke-width="2.2" stroke-linecap="round"/><path d="M219 90l-5-8m5 11-8-3m9 4 7-6" fill="none" stroke="#D5B578" stroke-width="1.5" stroke-linecap="round"/><path d="M216 106l-7 6 8 1m2-13 5-5 3 7" fill="#B69163" stroke="#765638" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M48 142l-4-9m10 9 5-9" fill="none" stroke="#81956F" stroke-width="1.3"/><circle cx="197" cy="118" r="1.2" fill="#D1BD96"/><path d="M113 91q11-11 23-8m-5 20q11-10 22-6" fill="none" stroke="#B8C2BE" stroke-width="1.3" opacity=".75" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M116 88q10-11 23-9m34 1q8 4 11 10" fill="none" stroke="#D9E4DE" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="149" cy="104" rx="48" ry="31" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: opposite
+  CONTEXTUAL_DEFINITION: Facing or positioned directly across from another person or place.
+  PEDAGOGICAL_ART_DIRECTOR: Show two pedestrians on opposite sides of a small open plaza, turned face-to-face with reciprocal blue gaze arrows.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Emphasize the two subjects facing each other; avoid a single destination and one-way path.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Pair of travelers stand at (77,103) and (227,103), each turned inward; their short opposed arrows meet across a clear central gap.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:opposite" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="opposite-plaza" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEECE4"/><stop offset="1" stop-color="#DAD6CA"/></linearGradient>
+    <linearGradient id="opposite-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6185B6"/><stop offset="1" stop-color="#355F96"/></linearGradient>
+    <radialGradient id="opposite-gap"><stop stop-color="#F2C14E" stop-opacity=".35"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="opposite-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#DCEAD6"/><path d="M0 35H304V162H0Z" fill="url(#opposite-plaza)"/><path d="M0 30H304M0 167H304" stroke="#9A9A8B" stroke-width="3"/><path d="M18 47H286M18 150H286" stroke="#FAF8F3" stroke-width="1.5" stroke-dasharray="6 7"/><path d="M42 29V41M262 29V41" stroke="#7E987B" stroke-width="4"/></g>
+  <g id="layer-context"><circle cx="29" cy="96" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="275" cy="96" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><path d="M20 114H39M266 114H285" stroke="#5C795C" stroke-width="4"/><path d="M126 65Q152 54 178 65M126 136Q152 147 178 136" fill="none" stroke="#BDB8AA" stroke-width="1.6"/><circle cx="152" cy="101" r="39" fill="url(#opposite-gap)"/></g>
+  <g id="layer-focal" filter="url(#opposite-shadow)"><circle cx="76" cy="89" r="12" fill="#D9A77F" stroke="#1E2A3B" stroke-width="1.9"/><path d="M61 106Q76 97 91 106L96 140H56Z" fill="#C47B56" stroke="#1E2A3B" stroke-width="2.4"/><path d="M62 112L49 125L54 131L70 121M89 112L103 121L99 127L83 120" fill="#D9A77F" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M61 138L55 162H70L76 144L82 162H98L91 137" fill="#405269" stroke="#1E2A3B" stroke-width="1.9"/><path d="M214 106Q229 97 244 106L249 140H209Z" fill="url(#opposite-coat)" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="228" cy="89" r="12" fill="#E0B48E" stroke="#1E2A3B" stroke-width="1.9"/><path d="M215 112L201 121L205 127L221 120M242 112L255 125L250 131L234 121" fill="#E0B48E" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M215 138L209 162H224L229 144L236 162H251L244 137" fill="#34485F" stroke="#1E2A3B" stroke-width="1.9"/></g>
+  <g id="layer-details"><path d="M98 91H141" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><path d="M98 91H141" stroke="#4A72B2" stroke-width="4.6" stroke-linecap="round"/><path d="M133 82L150 91L133 100Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M206 91H163" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><path d="M206 91H163" stroke="#4A72B2" stroke-width="4.6" stroke-linecap="round"/><path d="M171 82L154 91L171 100Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="152" cy="91" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="77" cy="164" rx="24" ry="4" fill="#8F8B80" opacity=".42"/><ellipse cx="228" cy="164" rx="24" ry="4" fill="#8F8B80" opacity=".42"/></g>
+  <g id="layer-lighting"><path d="M61 109Q76 102 91 109M214 109Q229 102 244 109" fill="none" stroke="#F7E3CE" stroke-width="1.5"/><path d="M139 61Q152 57 165 61" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><circle cx="152" cy="91" r="45" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".58"/></g>
+</svg>

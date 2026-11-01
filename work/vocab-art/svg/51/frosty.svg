@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: frosty (Adjective)
+  CONTEXTUAL_DEFINITION: A surface or morning covered with white frost crystals, shown outdoors.
+  PEDAGOGICAL_ART_DIRECTOR: Make the whole garden look cold and frost-covered at dawn, with pale-coated grass and branch tips.
+  PEDAGOGICAL_ARCHETYPE: 3 - Broad weather condition
+  SYNONYM_GUARD: Frosty describes the frosted morning scene; the single crystalline deposit on a leaf belongs to frost.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Pale grass, white-edged shrubs, and a cold pink dawn sky show an entire frosty garden rather than one coated object.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:frosty" data-archetype="frost-covered-morning-garden">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fy-sky" x2="0" y2="1"><stop stop-color="#C5D4DB"/><stop offset=".65" stop-color="#E8E5D9"/><stop offset="1" stop-color="#F1DCC7"/></linearGradient><linearGradient id="fy-field" x2="0" y2="1"><stop stop-color="#A6B7AA"/><stop offset="1" stop-color="#778F83"/></linearGradient><linearGradient id="fy-frost" x2="0" y2="1"><stop stop-color="#FBFFFD"/><stop offset="1" stop-color="#C9D9DB"/></linearGradient><filter id="fy-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#41535A" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fy-sky)"/><path d="M0 120Q72 103 148 119T304 111V192H0Z" fill="#A9B9AC"/><path d="M0 145Q72 126 149 143T304 135V192H0Z" fill="url(#fy-field)"/><path d="M0 171Q78 159 154 169T304 164V192H0Z" fill="#71877A"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A5B3A5" stroke-width="1.2"/><circle cx="248" cy="49" r="15" fill="#F0D4AA" opacity=".75"/><path d="M36 140V95m0 26L18 103m18 28 20-26m207 35V88m0 27-18-20m18 11 20-22" fill="none" stroke="#617A71" stroke-width="3.2" stroke-linecap="round"/><ellipse cx="151" cy="164" rx="112" ry="5" fill="#364A43" opacity=".15"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fy-shadow)">
+  <path d="M0 149Q70 130 150 147T304 137V164H0Z" fill="url(#fy-frost)" opacity=".9"/><path d="M36 142V95m0 26L18 103m18 28 20-26m207 35V88m0 27-18-20m18 11 20-22" fill="none" stroke="#EAF4F3" stroke-width="2.1" stroke-linecap="round"/><path d="M17 104l-4-8m4 8 9-3m-8 28-8-5m35-8 7-8m190-10-7-7m7 7 9-3m-8 23-8-6m28-15 6-7" fill="none" stroke="#F5FCFA" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M61 151v-15m13 12v-19m19 18v-12m18 13v-21m19 20v-16m20 16v-11m17 11v-18m18 18v-13m20 13v-22m20 18v-15m19 14v-20m17 19v-13" fill="none" stroke="#E5F0EE" stroke-width="2" stroke-linecap="round"/><path d="M54 141q7-8 14 0m14-3q7-8 14 0m19-2q7-8 14 0m18-3q7-8 14 0m17-3q7-8 14 0m20-2q7-8 14 0m18-3q7-8 14 0" fill="none" stroke="#F9FFFF" stroke-width="2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><circle cx="62" cy="133" r="1.3" fill="#FFFFFF"/><circle cx="242" cy="132" r="1.3" fill="#FFFFFF"/><circle cx="89" cy="156" r="1.4" fill="#FFFFFF"/><circle cx="117" cy="159" r="1.3" fill="#FFFFFF"/><circle cx="205" cy="157" r="1.5" fill="#FFFFFF"/><path d="M31 150q19-8 35-4m168-2q22-9 39-5" fill="none" stroke="#D7E5E0" stroke-width="1.2"/><path d="M231 47q7-4 14 0" fill="none" stroke="#FFF0D6" stroke-width="1.3"/></g>
+ <g id="layer-lighting"><path d="M1 145q66-18 126-4m49 1q56 9 126-5" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><circle cx="248" cy="49" r="1.2" fill="#FFF8E7"/><path d="M18 102l4 3m234-16 5 3" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: frightening (Adjective)
+  CONTEXTUAL_DEFINITION: Causing sudden fear, shown by a startling shadow at a bedroom window after dark.
+  PEDAGOGICAL_ARCHETYPE: 3 (Ominous sight plus a startled reaction)
+  SYNONYM_GUARD: The large owl-shaped shadow appears unexpectedly on the wall; it is frightening without showing injury or a real threat.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Deep blue bedroom with a moonlit window.
+    - Context_Layer: Child sits upright and pulls a blanket close.
+    - Focal_Layer: Large looming owl silhouette across the wall.
+    - Details_Layer: Moon, pointed ears, wide owl eyes and startled motion.
+    - Lighting_Layer: Cool moonbeam crossing the scene.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:frightening" data-archetype="expressive-bust">
+  <defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#night)"/><path d="M0 148 Q151 141 304 148 L304 192 L0 192Z" fill="#3D5F91"/><rect x="213" y="26" width="65" height="67" rx="6" fill="#DCEAF4" stroke="#1E2A3B" stroke-width="1.8"/><path d="M246 26 L246 93 M213 59 L278 59" stroke="#FFFFFF" stroke-width="2.6"/><circle cx="255" cy="43" r="10" fill="#F2C14E"/><path d="M0 162 Q152 153 304 162" stroke="#1E2A3B" stroke-width="3"/><ellipse cx="126" cy="168" rx="103" ry="7" fill="#1E2A3B"/></g>
+  <g id="layer-context"><path d="M46 151 Q49 125 73 122 Q98 125 101 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M64 125 L63 113 L83 113 L82 127" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="73" cy="94" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.1"/><path d="M54 93 Q55 72 74 74 Q92 75 92 94 Q84 84 72 85Z" fill="#27364B"/><ellipse cx="66" cy="94" rx="3" ry="4" fill="#FFFFFF"/><ellipse cx="78" cy="94" rx="3" ry="4" fill="#FFFFFF"/><circle cx="67" cy="93" r="1.5" fill="#1E2A3B"/><circle cx="79" cy="93" r="1.5" fill="#1E2A3B"/><ellipse cx="73" cy="104" rx="3.3" ry="4.4" fill="#A34F47"/><path d="M47 126 Q37 113 33 103 M97 127 Q107 114 111 104" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M37 142 Q73 132 109 143 L106 159 L39 159Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M129 121 C119 95 132 65 160 62 C184 60 205 82 197 111 C190 136 148 140 129 121Z" fill="#1E2A3B" opacity="0.84"/><path d="M132 85 L125 65 L145 76 M177 73 L195 60 L190 86" fill="#1E2A3B"/><ellipse cx="151" cy="96" rx="8" ry="12" fill="#F2C14E"/><ellipse cx="178" cy="95" rx="8" ry="12" fill="#F2C14E"/><circle cx="152" cy="96" r="3.5" fill="#27364B"/><circle cx="179" cy="95" r="3.5" fill="#27364B"/><path d="M164 104 L157 115 L171 115Z" fill="#F2C14E"/><path d="M139 122 Q164 130 186 119" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M116 62 L121 52 L126 62 L136 67 L126 72 L121 82 L116 72 L106 67Z" fill="#F2C14E"/><path d="M105 95 L111 89 M110 101 L118 97 M31 77 L37 70 M102 69 L108 62" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M57 91 Q62 86 67 91 M79 91 Q84 86 89 91" fill="none" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M217 30 Q198 45 190 64 M214 89 Q187 106 180 124" fill="none" stroke="#DCEAF4" stroke-width="2.2" opacity="0.65"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#8EB0DE" stroke-width="1" opacity="0.7"/></g>
+</svg>

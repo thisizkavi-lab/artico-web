@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: online banking (noun)
+  CONTEXTUAL_DEFINITION: Using bank services over the internet through a computer or web browser.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with user context
+  SYNONYM_GUARD: Use a wide desktop or laptop screen and an internet connection; do not reuse the mobile-phone scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open laptop x70..235 with broad browser-like bank dashboard, simple tab row, account panels and network nodes; blank card and houseplant in background.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:online banking" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="online-laptop" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#CBD5E1"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <radialGradient id="online-screen"><stop stop-color="#F8FBFE"/><stop offset="1" stop-color="#DCECFB"/></radialGradient>
+    <path id="online-base" d="M54 138 H250 L267 150 Q269 155 260 156 H43 Q36 154 41 150 Z"/>
+    <clipPath id="online-screen-clip"><rect x="69" y="47" width="166" height="87" rx="5"/></clipPath>
+    <filter id="online-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="156" width="304" height="36" fill="#EEE7DA"/><path d="M0 156 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="112" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Home office internet context -->
+  <g id="layer-context"><path d="M27 146 H273 V156 H27 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M37 151 H263" stroke="#E3AC77" stroke-width="1.8"/><path d="M45 113 Q40 94 52 79 Q66 93 62 113 Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.6"/><path d="M52 113 V137" stroke="#965D28" stroke-width="3" stroke-linecap="round"/><rect x="237" y="109" width="29" height="22" rx="3" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 3. Primary online-banking laptop and wide web-style dashboard -->
+  <g id="layer-focal" filter="url(#online-shadow)"><rect x="65" y="42" width="174" height="99" rx="8" fill="url(#online-laptop)" stroke="#1E2A3B" stroke-width="2.6"/><rect x="69" y="47" width="166" height="87" rx="5" fill="url(#online-screen)" stroke="#64748B" stroke-width="1.5"/><g clip-path="url(#online-screen-clip)"><rect x="69" y="47" width="166" height="13" fill="#5479AC"/><circle cx="79" cy="53" r="2" fill="#F2C14E"/><circle cx="87" cy="53" r="2" fill="#CE3D4E"/><circle cx="95" cy="53" r="2" fill="#7FB07A"/><rect x="76" y="69" width="52" height="51" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.1"/><path d="M83 78 H118 M83 84 H115 M83 91 H110" stroke="#94A3B8" stroke-width="1.5"/><path d="M83 110 L94 102 L102 106 L116 94" fill="none" stroke="#5479AC" stroke-width="2.1"/><rect x="136" y="69" width="89" height="22" rx="3" fill="#E5F0E1" stroke="#A8D4A2" stroke-width="1.2"/><path d="M144 78 H184 M144 84 H173" stroke="#568552" stroke-width="1.5"/><rect x="136" y="97" width="89" height="23" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.1"/><path d="M144 105 H215 M144 112 H204" stroke="#94A3B8" stroke-width="1.5"/></g><use href="#online-base" fill="url(#online-laptop)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M123 149 H184" stroke="#64748B" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 4. Network connections and remote access indicators -->
+  <g id="layer-details"><circle cx="150" cy="25" r="6" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="125" cy="20" r="4" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="174" cy="18" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M129 21 L145 25 M156 24 L170 19" stroke="#4A72B2" stroke-width="1.8"/><path d="M147 33 Q152 29 157 33" fill="none" stroke="#4A72B2" stroke-width="1.8"/><rect x="243" y="71" width="24" height="16" rx="3" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.3"/><rect x="247" y="75" width="7" height="5" rx="1" fill="#F2C14E"/></g>
+  <!-- 5. Screen glints -->
+  <g id="layer-lighting"><path d="M75 50 H109" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".75"/><path d="M269 51 L269 60 M265 55 H273" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M243 95 Q255 91 265 96" fill="none" stroke="#4A72B2" stroke-width="1.9" stroke-dasharray="3 3"/></g>
+</svg>

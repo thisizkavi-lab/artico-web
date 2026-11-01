@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: beach ball (Noun)
+  CONTEXTUAL_DEFINITION: A large lightweight inflatable ball with bright curved panels for play at the beach.
+  PEDAGOGICAL_ART_DIRECTOR: Make a round, inflated ball with bold curved color panels and a small air valve.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a striped inflatable beach ball, not a basketball or soccer ball.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Oversized glossy beach ball on golden sand, alternating orange, turquoise, and cream curved panels, with a tiny valve.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:beach ball" data-archetype="inflatable-beach-ball">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="bl-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="bl-ball" x2="1" y2="1"><stop stop-color="#FFE79A"/><stop offset="1" stop-color="#E49348"/></linearGradient><linearGradient id="bl-sea" x2="0" y2="1"><stop stop-color="#64B3BC"/><stop offset="1" stop-color="#317F94"/></linearGradient><filter id="bl-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bl-sky)"/><path d="M0 103Q74 96 152 104T304 100V133H0Z" fill="url(#bl-sea)"/><path d="M0 126Q72 119 147 127T304 120V192H0Z" fill="#E8D09B"/></g>
+ <g id="layer-context"><circle cx="50" cy="46" r="14" fill="#EBC86F" opacity=".8"/><path d="M0 120Q67 115 131 121T304 116" fill="none" stroke="#DDF2E9" stroke-width="2"/><path d="M24 169H280" fill="none" stroke="#D5B982" stroke-width="1.2"/><path d="M21 102L37 69L53 102ZM252 102L269 61L286 102Z" fill="#64816D"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#bl-shadow)">
+  <circle cx="151" cy="104" r="48" fill="url(#bl-ball)" stroke="#9A653E" stroke-width="1.8"/>
+  <path d="M151 56Q174 71 175 104Q174 138 151 152Q132 136 132 104Q132 72 151 56Z" fill="#68B8B4" stroke="#F9E8B5" stroke-width="1.4"/>
+  <path d="M151 56Q125 69 110 90Q99 108 106 128Q115 144 131 150Q132 130 132 104Q132 73 151 56Z" fill="#E97755" stroke="#F9E8B5" stroke-width="1.4"/>
+  <path d="M151 56Q177 67 192 88Q204 105 198 126Q189 143 171 151Q175 129 175 104Q174 72 151 56Z" fill="#FFF1D0" stroke="#E6BD73" stroke-width="1.4"/>
+  <path d="M106 128Q127 116 151 104Q177 91 198 80" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".7"/>
+  <circle cx="190" cy="122" r="3.3" fill="#D7834B" stroke="#8C513D" stroke-width="1"/><circle cx="190" cy="122" r="1" fill="#FFF8E7"/>
+  <path d="M113 80Q123 67 138 61M165 62Q184 69 193 83" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".78"/>
+  <ellipse cx="151" cy="158" rx="51" ry="7" fill="#9A784A" opacity=".2"/>
+ </g>
+ <g id="layer-details"><ellipse cx="120" cy="84" rx="2.4" ry="3.4" fill="#FFFFFF" opacity=".75"/><ellipse cx="182" cy="95" rx="1.8" ry="2.6" fill="#FFFFFF" opacity=".72"/><path d="M116 83Q127 68 141 62M162 62Q179 68 188 80" fill="none" stroke="#FFF9E9" stroke-width="1.1"/><circle cx="190" cy="122" r="1" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M110 153h10m72 0h10" fill="none" stroke="#E2C384" stroke-width="1"/></g>
+ <g id="layer-lighting"><path d="M114 82Q126 67 140 62M164 62Q180 68 188 80" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="135" cy="74" r="1.3" fill="#FFFFFF"/></g>
+</svg>

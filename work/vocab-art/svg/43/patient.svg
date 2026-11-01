@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: patient (personality trait)
+  CONTEXTUAL_DEFINITION: Able to wait and explain without becoming annoyed when someone needs more time.
+  PEDAGOGICAL_ART_DIRECTOR: Show a patient coworker giving another person time to learn a process.
+  PEDAGOGICAL_ARCHETYPE: 21 - Patient support
+  SYNONYM_GUARD: Show kind waiting and an unhurried explanation, not a medical patient or simple calmness without another person.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a patient mentor on the left with an open hand and a learner on the right studying a blank instruction card. Keep a small progress mark midway rather than showing a rushed finish.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:patient (personality trait)" data-archetype="patient-support">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="patient-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="patient-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="patient-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="patient-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M37 135 H267 V145 H37 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M50 145 V155 M254 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="120" y="55" width="66" height="61" rx="3" fill="url(#patient-card)" stroke="#64748B" stroke-width="1"/><path d="M128 66 H178 M128 73 H173 M128 82 H178 M128 89 H170" stroke="#CBD5E1" stroke-width="1"/><circle cx="134" cy="101" r="5" fill="#F7E8BF" stroke="#C88446" stroke-width=".8"/><path d="M145 101 H174" stroke="#8EB0DE" stroke-width="1"/><path d="M94 99 Q110 83 119 78 M187 84 H198" stroke="#64748B" stroke-width="1" stroke-dasharray="2 2"/></g>
+  <g id="layer-focal" filter="url(#patient-shadow)"><path d="M54 124 Q56 101 68 94 L69 85 Q65 81 67 74 Q75 66 86 68 Q95 71 93 82 L91 89 Q102 94 104 121 L101 133 H58 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="80" cy="78" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M72 76 Q74 68 81 68 Q89 69 93 76 Q85 72 78 73 Z" fill="#3D342D"/><path d="M59 99 Q80 93 99 99" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M96 104 L112 96 M102 107 L120 101" stroke="#5479AC" stroke-width="3.7" stroke-linecap="round"/><path d="M112 96 L121 93" stroke="#D89A6C" stroke-width="3.2" stroke-linecap="round"/><path d="M197 125 Q199 102 211 95 L212 86 Q208 82 210 75 Q218 67 229 69 Q238 72 236 83 L234 90 Q246 95 248 122 L245 134 H201 Z" fill="url(#patient-shirt)" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="223" cy="79" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width=".9"/><path d="M215 77 Q217 69 224 69 Q232 70 236 77 Q228 73 221 74 Z" fill="#3D342D"/><path d="M202 100 Q223 94 244 100" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M205 106 L191 101" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/><path d="M191 101 L184 99" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M106 51 Q112 45 118 51 M106 58 Q112 52 118 58" fill="none" stroke="#A8D4A2" stroke-width="1.1" stroke-linecap="round"/><circle cx="151" cy="45" r="2" fill="#F2C14E"/><circle cx="194" cy="59" r="2" fill="#8EB0DE"/><path d="M203 113 H239" stroke="#DCE8D9" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="103" ry="66" fill="url(#patient-halo)" opacity=".15"/><path d="M121 56 H185" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

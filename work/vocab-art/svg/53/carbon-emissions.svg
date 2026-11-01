@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:carbon emissions" data-archetype="fossil-fuel-exhaust-released-to-atmosphere">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; carbon emissions. Make the industrial source and released exhaust plume both visible, linking combustion to emissions; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="emit-sky" x2="0" y2="1"><stop stop-color="#DCE8E4"/><stop offset="1" stop-color="#AFC0B8"/></linearGradient>
+  <linearGradient id="emit-plant" x2="0" y2="1"><stop stop-color="#899488"/><stop offset="1" stop-color="#586760"/></linearGradient>
+  <linearGradient id="emit-smoke" x2="0" y2="1"><stop stop-color="#7F8B88" stop-opacity=".92"/><stop offset="1" stop-color="#536260" stop-opacity=".64"/></linearGradient>
+  <linearGradient id="emit-earth" x2="0" y2="1"><stop stop-color="#A99A73"/><stop offset="1" stop-color="#777352"/></linearGradient>
+  <filter id="emit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#emit-sky)"/><circle cx="251" cy="37" r="13" fill="#EBC86F" opacity=".7"/><path d="M0 107Q55 96 109 105T214 103Q262 94 304 103V192H0Z" fill="#97A38C"/><path d="M0 145Q62 136 122 146T239 143Q276 137 304 144V192H0Z" fill="url(#emit-earth)"/><path d="M0 128Q78 119 152 128T304 125" fill="none" stroke="#C5D1BD" stroke-width="1.4"/></g>
+<g id="layer-context">
+  <path d="M41 154V106L58 96H221L246 108V154Z" fill="url(#emit-plant)" stroke="#394A4A" stroke-width="1.8"/>
+  <path d="M45 106H221L237 115H45Z" fill="#A8A99A"/><path d="M51 116h36v31H51Zm48 0h36v31h-36Zm48 0h36v31h-36Z" fill="#6F817B"/>
+  <path d="M70 97V51L85 48V97Z" fill="#7E8C83" stroke="#394A4A" stroke-width="1.5"/><path d="M188 97V63L204 60V97Z" fill="#88948A" stroke="#394A4A" stroke-width="1.5"/>
+  <path d="M70 52h15m103 11h16" fill="none" stroke="#D1B47A" stroke-width="2"/>
+  <path d="M24 156Q68 148 98 157T169 154Q220 146 280 157V192H24Z" fill="#657754"/>
+</g>
+<g id="layer-focal" filter="url(#emit-shadow)">
+  <path d="M73 50Q60 41 67 29Q70 20 83 22Q88 9 101 15Q111 21 107 32Q122 32 122 44Q119 54 106 52L85 56Z" fill="url(#emit-smoke)"/>
+  <path d="M191 60Q179 49 186 38Q191 27 203 31Q210 16 222 22Q233 27 228 40Q243 43 240 54Q236 64 224 62Z" fill="url(#emit-smoke)"/>
+  <path d="M88 23Q105 7 123 15Q142 21 137 34Q154 32 159 44Q161 55 150 59Q139 63 126 55L108 48Z" fill="#7F8C88" opacity=".64"/>
+  <path d="M205 33q13-10 27-3m-145 3q12-7 22-1" fill="none" stroke="#C4CBC2" stroke-width="1.6"/>
+  <path d="M77 48v-9m-3 1 6 0m116 9v-9m-3 1 6 0" fill="none" stroke="#4B5C59" stroke-width="1.4"/>
+</g>
+<g id="layer-details">
+  <rect x="59" y="125" width="16" height="16" rx="2" fill="#D0C99F"/><rect x="108" y="125" width="16" height="16" rx="2" fill="#D0C99F"/><rect x="156" y="125" width="16" height="16" rx="2" fill="#D0C99F"/>
+  <path d="M24 165q15-8 28-1m8 16q14-6 27-1m151-12q15-7 29 0m10 14q12-6 23 0" fill="none" stroke="#91A06A" stroke-width="1.6"/>
+  <path d="M22 148l5-12 5 12m228 3 6-15 5 15m-13-1 4-9 4 9" fill="none" stroke="#607A56" stroke-width="1.7" stroke-linecap="round"/>
+  <circle cx="104" cy="162" r="2" fill="#E5D6AE"/><circle cx="210" cy="173" r="1.7" fill="#E5D6AE"/><path d="M238 97l8-8 7 3" fill="none" stroke="#D7C29A" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M45 109H217m-144-7V54m121 40V65" fill="none" stroke="#C2C9BD" stroke-width="1.2" opacity=".7"/><path d="M71 49q6-3 13 0m106 11q6-3 13 0" fill="none" stroke="#E8E7D8" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: saddle (Noun)
+  CONTEXTUAL_DEFINITION: The narrow padded seat that supports a cyclist on a bicycle.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate the bicycle saddle on its seat post and show its tapered nose and wider rear.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a bicycle seat, not an animal saddle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Close side view of a dark padded cycling seat, with a narrow forward nose, broad rear cushion, rails, and seat post.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:saddle" data-archetype="bicycle-saddle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="sa-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="sa-seat" x2="0" y2="1"><stop stop-color="#495B5C"/><stop offset="1" stop-color="#202F34"/></linearGradient><linearGradient id="sa-metal" x2="1" y2="1"><stop stop-color="#A7B9B2"/><stop offset="1" stop-color="#53686B"/></linearGradient><filter id="sa-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".25"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sa-sky)"/><path d="M0 126Q76 106 154 123T304 117V192H0Z" fill="#A9B994"/><path d="M0 154H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M21 125L38 78L55 125ZM251 122L270 67L289 122Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="153" cy="158" rx="58" ry="5" fill="#34483D" opacity=".13"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sa-shadow)">
+  <path d="M152 88L148 149M179 89L172 149" fill="none" stroke="url(#sa-metal)" stroke-width="5" stroke-linecap="round"/><path d="M142 148h39" fill="none" stroke="#344A50" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M83 78Q97 68 124 65L179 60Q207 59 226 71L238 81Q235 88 219 89L168 88L109 91Q88 91 83 84Z" fill="url(#sa-seat)" stroke="#26363B" stroke-width="2.1" stroke-linejoin="round"/>
+  <path d="M91 78Q104 71 127 69L180 64Q204 63 221 73" fill="none" stroke="#8EA3A0" stroke-width="1.4"/><path d="M96 84Q137 80 181 81L221 81" fill="none" stroke="#344A50" stroke-width="1.4"/>
+  <path d="M112 78Q156 73 202 72" fill="none" stroke="#C4D0CA" stroke-width="1.1"/><path d="M86 78L75 76M235 81l10 2" fill="none" stroke="#344A50" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M145 88L142 101M183 88L179 101" fill="none" stroke="#536E70" stroke-width="2.2"/><path d="M143 102H179" fill="none" stroke="#344A50" stroke-width="2.2"/>
+  <circle cx="151" cy="89" r="1.4" fill="#D7834B"/><circle cx="178" cy="89" r="1.4" fill="#D7834B"/>
+ </g>
+ <g id="layer-details"><path d="M95 77Q122 70 148 69M183 64Q207 64 222 73" fill="none" stroke="#E5EFE8" stroke-width="1.2"/><path d="M132 82h40m-34 4h24" fill="none" stroke="#607477" stroke-width="1"/><path d="M152 94l-2 27m28-27-5 28" fill="none" stroke="#E4ECE4" stroke-width="1.1"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M96 76Q122 70 148 69M185 64Q207 64 221 73" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".55"/><path d="M149 94l-2 24" fill="none" stroke="#D4E8E3" stroke-width="1.1"/><circle cx="151" cy="89" r="1.1" fill="#FFE3A1"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: silly (Adjective)
+  CONTEXTUAL_DEFINITION: Behaving in a harmlessly foolish and playful way.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person playfully wears mismatched socks and balances a cushion on their head; no one is mocked or hurt.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cozy lounge with floor cushions.
+    - Context_Layer: A seated peer amused by the harmless antics.
+    - Focal_Layer: Person at x=150 making a goofy pose with cushion perched on head.
+    - Details_Layer: Crossed eyes, bent knees, mismatched socks, floating play marks.
+    - Lighting_Layer: Bright soft spotlight over the playful pose.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:silly" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9857F;--c-secondary:#A95059;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q88 143 155 150T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="154" cy="167" rx="125" ry="9" fill="#EAE3D5"/><rect x="30" y="41" width="60" height="48" rx="9" fill="#E3E8F0" stroke="#AAB5C3" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="62" cy="131" rx="35" ry="13" fill="#D5CDBF"/><circle cx="63" cy="91" r="15" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M48 91Q49 75 64 76Q79 77 79 92L74 96H51Z" fill="#35404B"/><path d="M45 111Q63 105 80 112L84 137H41Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M52 112L42 124M75 112L87 121" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M55 90Q60 93 64 90M68 90Q72 87 76 90M58 100Q63 106 69 100" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M221 144H278" stroke="#7B8A9E" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="163" cy="101" rx="65" ry="72" fill="#FEF3C7" opacity=".57"/><rect x="139" y="27" width="47" height="20" rx="9" transform="rotate(-8 162 37)" fill="#829A83" stroke="#1E2A3B" stroke-width="2.3"/><path d="M145 32Q158 24 177 32" fill="none" stroke="#B9C9B4" stroke-width="2"/><circle cx="162" cy="63" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M142 64Q142 43 162 42Q182 44 182 65L174 69Q171 53 160 52Q150 53 144 70Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M140 87Q162 80 184 88L190 128H134Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M143 94L123 77L117 83L133 111M182 94L199 75L205 81L191 110" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M141 127L129 156L142 162L158 133M174 128L190 155L177 163L160 135" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M126 158L140 162L140 168H122Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M176 163L190 155L196 161L183 169Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><circle cx="155" cy="62" r="3.2" fill="#1E2A3B"/><circle cx="170" cy="62" r="3.2" fill="#1E2A3B"/><path d="M156 74Q162 81 169 73" fill="none" stroke="#805333" stroke-width="2" stroke-linecap="round"/><path d="M124 53L117 48M198 53L205 48M126 65L118 67M198 65L206 67" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M96 102Q105 95 111 103M211 104Q219 96 226 104" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-linecap="round"/><circle cx="111" cy="119" r="2" fill="#D9A441"/><circle cx="221" cy="119" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M151 48Q160 44 169 48" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="163" cy="101" rx="65" ry="72" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".4"/></g>
+</svg>

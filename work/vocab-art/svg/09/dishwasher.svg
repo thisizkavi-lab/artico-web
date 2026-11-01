@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: dishwasher (Noun)
+  CONTEXTUAL_DEFINITION: A kitchen appliance that washes plates and utensils automatically.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a built-in front-opening machine with a pull-out dish rack, not a person washing dishes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen floor and counter edge.
+    - Context_Layer: Countertop above appliance.
+    - Focal_Layer: Front-open dishwasher and lower rack.
+    - Details_Layer: Plates, utensil slots, and spray jets.
+    - Lighting_Layer: Bright kitchen light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:dishwasher" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 150 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 150 H304" stroke="#B7AA94" stroke-width="2"/><rect x="25" y="42" width="254" height="12" rx="2" fill="#B97840" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="152" cy="169" rx="74" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><rect x="92" y="54" width="120" height="101" rx="4" fill="#DCE3E4" stroke="#1E2A3B" stroke-width="2.6"/><path d="M100 63 H204 V115 H100Z" fill="#AEBFC6" stroke="#647D8B" stroke-width="1.6"/><path d="M102 116 H202 V146 L154 171 L105 146Z" fill="#D2E0E4" stroke="#1E2A3B" stroke-width="2"/><path d="M92 58 H211" stroke="#5479AC" stroke-width="2.4"/><circle cx="191" cy="59" r="2.4" fill="#1E2A3B"/></g>
+  <g id="layer-focal"><path d="M109 109 H196 M114 108 V130 M190 108 V130 M115 130 H190" fill="none" stroke="#5479AC" stroke-width="2.2"/><ellipse cx="126" cy="96" rx="7" ry="14" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><ellipse cx="145" cy="94" rx="7" ry="16" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><ellipse cx="164" cy="96" rx="7" ry="14" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><ellipse cx="183" cy="96" rx="7" ry="14" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><path d="M124 93 Q126 88 128 93 M143 91 Q145 85 147 91 M162 93 Q164 88 166 93 M181 93 Q183 88 185 93" stroke="#DCECFB" stroke-width="1.6"/><path d="M114 135 L121 130 M184 135 L191 130 M139 143 L146 138 M163 143 L170 138" stroke="#5479AC" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M106 69 H197" stroke="#FFFFFF" stroke-width="1.6"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

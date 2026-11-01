@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: lipstick (Noun)
+  CONTEXTUAL_DEFINITION: A colored cosmetic stick used to color the lips.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Use an exposed lipstick bullet in a twist-up tube, no face needed.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and shadow.
+    - Context_Layer: Faint blush-colored halo.
+    - Focal_Layer: Open lipstick tube with coral-red slanted tip.
+    - Details_Layer: Gold tube band and reflective casing.
+    - Lighting_Layer: Highlight along casing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:lipstick" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="158" rx="78" ry="14" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="94" rx="89" ry="70" fill="#FEF3C7" opacity=".35"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M119 92H184V150Q184 157 177 157H126Q119 157 119 150Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.7"/>
+  <path d="M126 102H177V148H126Z" fill="#B77D4F"/><path d="M126 108H177" stroke="#F3D793" stroke-width="2"/>
+  <path d="M132 48Q140 35 152 31Q166 35 172 48L168 94H135Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M140 49Q151 43 169 47L167 62H137Z" fill="#E9A29C"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M133 72H169M139 54Q151 49 164 53" fill="none" stroke="#B95F67" stroke-width="1.6"/><path d="M133 116V145" stroke="#F4DBA0" stroke-width="2.4" stroke-linecap="round"/>
+  <ellipse cx="153" cy="159" rx="35" ry="5" fill="#D9A441" opacity=".4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M96 85Q103 68 115 57M188 58Q200 69 207 85" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/>
+</svg>

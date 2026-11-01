@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: cash register / till (noun)
+  CONTEXTUAL_DEFINITION: The checkout machine that records a sale and holds a store's cash.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with retail context
+  SYNONYM_GUARD: Emphasize the distinctive open cash drawer and till compartments, not a generic computer screen.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Counter at y145; broad register body x72..226; angled display above; drawer open toward viewer with separated coin wells; small cash notes visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:cash register / till (uk, for a cash register)" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="till-body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#AFC5DF"/></linearGradient>
+    <radialGradient id="till-display"><stop stop-color="#F8FBFE"/><stop offset="1" stop-color="#8EB0DE"/></radialGradient>
+    <path id="till-drawer" d="M82 120 H215 L229 145 Q231 150 222 151 H76 Q67 150 71 144 Z"/>
+    <clipPath id="till-clip"><use href="#till-drawer"/></clipPath>
+    <filter id="till-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="145" width="304" height="47" fill="#EAE3D5"/><path d="M0 145 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="163" rx="96" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Checkout counter context -->
+  <g id="layer-context"><path d="M24 134 H280 V148 H24 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.3"/><path d="M30 139 H274" stroke="#E3AC77" stroke-width="2"/><rect x="42" y="106" width="23" height="28" rx="3" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M48 111 H59 M48 117 H59" stroke="#94A3B8" stroke-width="1.8"/></g>
+  <!-- 3. Primary register and open cash drawer -->
+  <g id="layer-focal" filter="url(#till-shadow)"><path d="M83 83 Q83 77 91 77 H211 Q219 77 219 85 V123 H83 Z" fill="url(#till-body)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M99 81 L193 81 L200 107 L96 107 Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M105 85 L188 85 L193 102 L101 102 Z" fill="url(#till-display)" stroke="#64748B" stroke-width="1.5"/><path d="M111 94 Q130 87 148 95 T184 92" fill="none" stroke="#5479AC" stroke-width="2.4"/><use href="#till-drawer" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><g clip-path="url(#till-clip)"><rect x="70" y="119" width="162" height="35" fill="#CBD5E1"/><rect x="79" y="122" width="45" height="22" rx="3" fill="#94A3B8"/><rect x="130" y="122" width="40" height="22" rx="3" fill="#E5E9F0"/><rect x="176" y="122" width="42" height="22" rx="3" fill="#94A3B8"/></g></g>
+  <!-- 4. Buttons, receipt roll and coins in till -->
+  <g id="layer-details"><g fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"><circle cx="103" cy="113" r="3.2"/><circle cx="115" cy="113" r="3.2"/><circle cx="127" cy="113" r="3.2"/><circle cx="139" cy="113" r="3.2"/><circle cx="151" cy="113" r="3.2"/></g><ellipse cx="99" cy="133" rx="7" ry="3.8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="146" cy="133" rx="7" ry="3.8" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="192" cy="133" rx="7" ry="3.8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M216 85 Q233 73 239 85 L239 118" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M239 118 L245 111 L251 118 L245 123 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 5. Directional glints and focus lighting -->
+  <g id="layer-lighting"><path d="M106 86 L143 86" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/><path d="M65 93 L65 101 M61 97 H69" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><path d="M227 128 Q236 126 241 132" fill="none" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round"/></g>
+</svg>

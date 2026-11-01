@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: fans
+ CONTEXTUAL_DEFINITION: Spectators who cheer for their team from the stands during a soccer match.
+ PEDAGOGICAL_ARCHETYPE: A lively stadium crowd in team colors raises arms and scarves while watching the pitch
+ SYNONYM_GUARD: Show spectators in stadium seats reacting to play, not people waiting in a transit queue.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Close row of varied spectators sitting in stadium stand with raised cheering arms, one scarf stretched overhead, field visible below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:fans" data-archetype="cheering-spectators-in-stadium-stand">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="fans-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fans-sky)"/><path d="M0 37H304V143H0Z" fill="#82998D"/><path d="M0 51h304m-304 27h304m-304 27h304" stroke="#DDE8E0" stroke-width="2"/><path d="M0 144q70-11 151 0t153 0v48H0Z" fill="#91A686"/><path d="M0 158h304" stroke="#E7EEE4" stroke-width="1.5"/></g>
+ <g id="layer-context"><path d="M17 46v91m270-91v91" stroke="#647E73" stroke-width="2"/><ellipse cx="152" cy="176" rx="126" ry="5" fill="#405B61" opacity=".14"/><path d="M20 180h48m172 0h44" stroke="#DFE9DC" stroke-width="1.2"/></g>
+ <g id="layer-focal"><circle cx="48" cy="76" r="8" fill="#D99F7C"/><circle cx="100" cy="70" r="8" fill="#D99F7C"/><circle cx="153" cy="77" r="8" fill="#D99F7C"/><circle cx="207" cy="70" r="8" fill="#D99F7C"/><circle cx="260" cy="77" r="8" fill="#D99F7C"/><path d="M40 75q2-9 8-9q7 0 8 8l-4 2-10-1Zm52-6q2-9 8-9q7 0 8 8l-4 2-10-1Zm53 7q2-9 8-9q7 0 8 8l-4 2-10-1Zm54-7q2-9 8-9q7 0 8 8l-4 2-10-1Zm53 7q2-9 8-9q7 0 8 8l-4 2-10-1Z" fill="#344F5A"/><path d="M36 87q12-10 24 0l7 28-18 12-18-13Zm52-6q12-10 24 0l8 31-19 11-19-13Zm52 8q12-10 24 0l7 28-18 12-18-13Zm54-8q12-10 24 0l8 31-19 11-19-13Zm52 6q12-10 24 0l7 28-18 12-18-13Z" fill="#405B61" stroke="#263E48" stroke-width="1"/><path d="M40 95l-12-12 1-11m20 11 8-15m29 18-10-13 1-11m20 13 10-16m34 19-8-15m17 15 8-14m33 14-10-12 2-12m20 13 11-17m30 21-10-14m18 15 6-13" stroke="#D99F7C" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M118 48q35-10 67 0l-4 7q-29-8-59 0Z" fill="#D4866D" stroke="#805247" stroke-width="1"/><path d="M131 51l6 1m13-2 7 1m12-1 7 1" stroke="#F3C3AE" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M119 55l-3 5m10-5 3 5" stroke="#D4866D" stroke-width="1.2"/><path d="M22 35h42m210 0h26" stroke="#D9E6DE" stroke-width="1.2"/><circle cx="31" cy="31" r="1.3" fill="#FFF"/><path d="M21 137h264" stroke="#6E877B" stroke-width="2"/></g><g id="layer-lighting"><ellipse cx="151" cy="91" rx="134" ry="64" fill="#FFF6E7" opacity=".04"/><path d="M24 42h256" stroke="#F5F7EF" stroke-width="1"/></g>
+</svg>

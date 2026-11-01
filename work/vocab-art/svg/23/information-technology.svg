@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: information technology (Noun)
+  CONTEXTUAL_DEFINITION: The school subject and practical use of computers and digital systems.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: A student works at a desktop computer with keyboard and connected equipment, distinguishing IT from general technology or design class.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School computer lab with desks and windows.
+    - Context_Layer: A muted row of workstations.
+    - Focal_Layer: Student uses a monitor, keyboard, and mouse.
+    - Details_Layer: Abstract interface panels, server unit, and cable links without text.
+    - Lighting_Layer: Cool screen glow on the student's face and desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:information technology" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="it-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="it-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#it-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 29H92V81H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 30V80M21 55H91" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="230" y="44" width="43" height="85" rx="4" fill="#64748B" stroke="#1E2A3B" stroke-width="1.5"/><rect x="238" y="53" width="27" height="15" rx="2" fill="#DCECFB"/><rect x="238" y="75" width="27" height="15" rx="2" fill="#DCECFB"/><rect x="238" y="97" width="27" height="15" rx="2" fill="#DCECFB"/><circle cx="261" cy="120" r="2" fill="#91A77C"/><path d="M0 145H304" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#it-shadow)"><rect x="96" y="38" width="113" height="73" rx="5" fill="#315782" stroke="#1E2A3B" stroke-width="2.2"/><rect x="103" y="45" width="99" height="59" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M111 94L129 78L143 86L162 62L193 71V99H111Z" fill="#91A77C"/><circle cx="179" cy="58" r="7" fill="#D9A441"/><path d="M145 111V124M158 111V124M137 126H166" stroke="#315782" stroke-width="4" stroke-linecap="round"/><path d="M104 132H198L205 140H96Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M111 134H190M113 138H187" stroke="#DCECFB" stroke-width="1.3"/><path d="M74 71Q85 65 96 71L100 102L89 108L72 100Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="85" cy="61" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M74 61Q75 49 86 49Q97 50 97 62L93 65Q91 56 85 56Q80 56 77 68Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M77 90L91 98L102 91" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M77 90L91 98L102 91" fill="none" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M111 52H141M111 58H132M111 64H150" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><circle cx="152" cy="76" r="6" fill="#D9857F"/><path d="M163 81H191M163 87H182" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/><path d="M209 115Q222 115 228 126M208 128Q221 128 227 137" fill="none" stroke="#D9A441" stroke-width="1.6" stroke-dasharray="3 3"/></g>
+  <g id="layer-lighting"><ellipse cx="150" cy="86" rx="111" ry="70" fill="#FEF9C3" opacity=".08"/><path d="M105 47H200" stroke="#FFFFFF" stroke-width="2" opacity=".72"/></g>
+</svg>

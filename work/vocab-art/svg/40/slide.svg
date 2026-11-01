@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: slide
+  CONTEXTUAL_DEFINITION: One page or frame in a digital presentation, displayed on a screen.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate one projected slide page among small neighboring previews so the presentation-screen sense is unmistakable.
+  PEDAGOGICAL_ARCHETYPE: 1 - Single presentation page
+  SYNONYM_GUARD: This is a visual page in a deck, not a person sliding or moving down a surface.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center one large rectangular projected page at x=68..231, y=35..125, with a title-like color bar and a simple chart composed of shapes only. Add two smaller preview cards in a vertical strip at x=244..273. Keep the screen flat and front-facing; no figure should be sliding.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:slide" data-archetype="presentation-slide">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="slide-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="slide-screen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="slide-halo"><stop stop-color="#FFF1B9" stop-opacity=".68"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="slide-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="24" y="22" width="255" height="115" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M0 148 H304" stroke="#1E2A3B" stroke-width="1.1"/><rect x="62" y="29" width="174" height="104" rx="4" fill="url(#slide-screen)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M72 133 V141 M225 133 V141 M62 141 H236" stroke="#64748B" stroke-width="2"/><rect x="70" y="37" width="158" height="87" fill="url(#slide-paper)" stroke="#64748B" stroke-width=".9"/><rect x="80" y="47" width="95" height="8" rx="2" fill="#5479AC"/><rect x="80" y="61" width="62" height="5" rx="1" fill="#CBD5E1"/><rect x="80" y="69" width="78" height="5" rx="1" fill="#CBD5E1"/><path d="M83 107 H107 V91 H126 V99 H146 V81 H166 V88 H189 V75 H216" fill="none" stroke="#5479AC" stroke-width="2" stroke-linejoin="round"/><path d="M83 111 H216" stroke="#94A3B8" stroke-width="1"/><path d="M85 114 V107 M111 114 V94 M131 114 V102 M151 114 V84 M171 114 V91 M194 114 V78" stroke="#A8D4A2" stroke-width="4" stroke-linecap="round"/><rect x="245" y="39" width="25" height="32" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><rect x="245" y="77" width="25" height="32" rx="2" fill="#E5F0E1" stroke="#64748B" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#slide-shadow)"><circle cx="252" cy="53" r="4" fill="#F2C14E"/><circle cx="252" cy="91" r="4" fill="#8EB0DE"/><path d="M250 115 H267" stroke="#64748B" stroke-width="1"/><path d="M78 42 H216" stroke="#FFFFFF" stroke-width="1"/><circle cx="207" cy="49" r="3" fill="#F2C14E" stroke="#D99A2B" stroke-width=".8"/><path d="M187 58 L196 49 L201 53 L211 45" fill="none" stroke="#D99A2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M58 80 H52 M58 91 H52 M58 102 H52" stroke="#D99A2B" stroke-width="1.5" stroke-linecap="round"/><path d="M74 129 H222" stroke="#FFFFFF" stroke-width="1"/><circle cx="77" cy="135" r="2" fill="#F2C14E"/><circle cx="224" cy="135" r="2" fill="#8EB0DE"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="85" rx="107" ry="66" fill="url(#slide-halo)" opacity=".2"/><path d="M73 35 H227" stroke="#FFFFFF" stroke-width="1.1"/></g>
+</svg>

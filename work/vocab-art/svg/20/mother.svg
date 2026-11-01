@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: mother (Noun)
+  CONTEXTUAL_DEFINITION: A female parent sharing care and attention with her child.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A mother and school-age child lean over a family photo album together; the closeness and shared attention show the parent relationship, not a household task.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet living room and sofa.
+    - Context_Layer: Open, picture-only family album on a low table.
+    - Focal_Layer: Mother and child sit shoulder to shoulder, sharing a remembered family moment.
+    - Details_Layer: Warm smiles, pointing finger, and three small portrait scenes in the album.
+    - Lighting_Layer: Gentle halo over both heads and book.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:mother / mom (informal us)" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9857F;--c-secondary:#A95059;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="mother-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="mother-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient>
+    <filter id="mother-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mother-bg)"/><path d="M0 149Q78 143 152 149T304 147V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="175" rx="127" ry="7" fill="#DDD4C3"/><path d="M20 115Q20 92 43 92H81Q103 92 103 115V137H20Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.2"/><path d="M25 114H99M35 137V150M89 137V150" stroke="#568552" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M86 147Q95 131 111 131H204Q217 132 222 147Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M99 147V170M209 147V170" stroke="#965D28" stroke-width="4" stroke-linecap="round"/><path d="M130 133L158 117L191 134Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.8"/><path d="M136 130Q144 124 151 130Q146 136 138 135ZM165 129Q173 122 181 129Q176 136 167 135Z" fill="#D9857F" stroke="#64748B" stroke-width="1.2"/><circle cx="146" cy="128" r="2.6" fill="#80513F"/><circle cx="175" cy="127" r="2.6" fill="#3A2E2B"/><path d="M151 119L158 115L163 119" fill="none" stroke="#D9A441" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#mother-shadow)"><path d="M58 178Q62 143 81 134Q103 125 123 134Q139 142 145 178Z" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2.6"/><path d="M85 137L101 152L116 136" fill="none" stroke="#CE3D4E" stroke-width="10"/><rect x="91" y="113" width="21" height="22" rx="6" fill="#E5A283" stroke="#1E2A3B" stroke-width="2"/><circle cx="102" cy="86" r="29" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M73 84Q72 55 101 54Q131 54 132 85L125 94Q121 67 102 68Q83 67 77 96Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M87 86Q93 91 99 86M106 86Q112 91 118 86M91 101Q101 108 112 101" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/><path d="M165 178Q167 150 180 143Q197 136 215 147L222 178Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><rect x="185" y="126" width="17" height="20" rx="5" fill="#B6784B" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="193" cy="105" r="22" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4"/><path d="M171 104Q173 84 193 84Q215 84 216 105L210 110Q205 95 193 96Q181 95 174 109Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2"/><path d="M181 104Q186 108 191 104M197 104Q202 108 207 104M184 116Q194 121 203 116" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M117 145Q132 139 142 127M175 151Q164 142 155 133" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M117 145Q132 139 142 127M175 151Q164 142 155 133" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M142 128Q151 122 159 126" fill="none" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M99 62Q111 57 122 62" fill="none" stroke="#FDE4D4" stroke-width="2.7" stroke-linecap="round"/><path d="M182 88Q192 83 202 88" fill="none" stroke="#ECC09D" stroke-width="2"/><circle cx="74" cy="115" r="3" fill="#D9A441"/><path d="M73 118Q79 124 85 118" fill="none" stroke="#568552" stroke-width="1.6"/><path d="M220 109Q226 104 233 108" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="105" rx="100" ry="78" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".36"/><path d="M84 57Q98 48 113 53" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".75"/></g>
+</svg>

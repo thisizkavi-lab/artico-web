@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: appearance (Noun)
+  CONTEXTUAL_DEFINITION: A person's overall visible look.
+  PEDAGOGICAL_ARCHETYPE: 3 — Full portrait
+  SYNONYM_GUARD: Show a complete, composed portrait as a whole impression, matching the appearance group.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Framed dressing mirror.
+    - Context_Layer: Mirror border and dressing-table edge.
+    - Focal_Layer: Full figure reflected in the mirror.
+    - Details_Layer: Hair, face, outfit, and shoes are all visible.
+    - Lighting_Layer: Warm halo around the mirror.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:appearance" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="115" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="59" y="17" width="186" height="151" rx="30" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.6"/><rect x="69" y="26" width="166" height="134" rx="24" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.5"/><path d="M36 169H268M49 169V177M255 169V177" stroke="#7B8A9E" stroke-width="2.2"/>
+  <ellipse cx="152" cy="91" rx="85" ry="68" fill="#FEF3C7" opacity=".44"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <circle cx="152" cy="57" r="13" fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M140 53Q140 37 152 36Q165 37 165 53L159 56L145 56Z" fill="#805333" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M139 73Q152 67 165 73L177 107L170 130L175 151H161L152 121L143 151H129L134 130L127 107Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M139 81L119 108L124 113L143 96M165 81L185 108L180 113L161 96" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M147 57Q152 54 157 57M147 63Q152 66 157 63" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M141 92H164M140 123H164M131 151H145M160 151H176" stroke="#315782" stroke-width="1.8"/>
+  <path d="M87 40L92 34M217 40L212 34" stroke="#D9A441" stroke-width="2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="93" rx="67" ry="63" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".45"/>
+</svg>

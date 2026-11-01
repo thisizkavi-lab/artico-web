@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: become a celebrity
+ CONTEXTUAL_DEFINITION: An ordinary person steps into public fame and becomes widely recognized.
+ PEDAGOGICAL_ARCHETYPE: before-to-after transformation into a publicly recognized star
+ SYNONYM_GUARD: Show a visible change from an unnoticed person to a spotlighted public figure; do not simply depict an already famous celebrity.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A muted everyday figure at the left advances along a rising pathway toward a larger, brightly lit figure, with camera flashes and a small crowd appearing at the far end.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:become a celebrity" data-archetype="ordinary person becoming famous">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M18 34H284V153H18Z" fill="#E1DDD3"/><path d="M18 124Q74 115 128 123T284 119V153H18Z" fill="#B7A58D"/>
+  <path d="M31 48H95V119H31Z" fill="#D4D0C5"/><path d="M40 56H86V112H40Z" fill="#AEB8B1"/><path d="M48 111V67H78V111" fill="#C8B89E"/>
+  <path d="M21 122H284" stroke="#8F806C" stroke-width="1.2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M85 115Q111 102 137 91T181 70" fill="none" stroke="#D6A64C" stroke-width="2" stroke-dasharray="2 5"/>
+  <path d="M119 87L128 87L124 81M154 73L163 73L159 67" stroke="#D6A64C" stroke-width="1.6" fill="none"/>
+  <path d="M226 49L237 43V61L226 55Z" fill="#26384A"/><circle cx="235" cy="52" r="1.5" fill="#D6A64C"/>
+  <path d="M263 63L273 57V73L263 68Z" fill="#26384A"/><circle cx="271" cy="65" r="1.4" fill="#D6A64C"/>
+  <path d="M218 111H282" stroke="#26384A" stroke-width="1.4"/><circle cx="228" cy="106" r="2" fill="#D6A64C"/><circle cx="247" cy="106" r="2" fill="#B85E5A"/>
+ </g>
+ <g id="layer-focal">
+  <!-- unnoticed everyday self -->
+  <circle cx="68" cy="85" r="7" fill="#A77D68"/><path d="M61 84Q62 75 69 76Q76 77 76 86L72 82H63Z" fill="#596E73"/>
+  <path d="M60 94Q68 90 76 94L80 119H56Z" fill="#798C72"/><path d="M62 96L55 104M74 96L82 102" stroke="#A77D68" stroke-width="2"/>
+  <path d="M60 118L59 133M76 118L78 133" stroke="#405663" stroke-width="2.2"/>
+  <!-- newly recognized public figure -->
+  <circle cx="193" cy="64" r="11" fill="#D29A78"/><path d="M182 63Q183 49 194 49Q205 50 205 64L199 57H184Z" fill="#26384A"/>
+  <path d="M176 77Q193 68 210 77L216 121H170Z" fill="#B85E5A" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M178 83L163 96L158 89M208 83L223 93L228 85" fill="none" stroke="#D29A78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M178 119L176 140M208 119L211 140" stroke="#26384A" stroke-width="3"/>
+  <path d="M186 78L193 88L201 78" fill="#F6E5CE"/><path d="M190 88L193 94L197 88" fill="#D6A64C"/>
+  <path d="M156 47L160 38L164 47L173 51L164 55L160 64L156 55L147 51Z" fill="#D6A64C"/><path d="M218 58L221 52L224 58L230 61L224 64L221 70L218 64L212 61Z" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M190 60Q194 58 198 60M186 69Q193 73 200 69" stroke="#654E43" stroke-width="1.2" fill="none"/>
+  <path d="M40 63H49M41 68H52M44 73H49" stroke="#8C7A64" stroke-width="1"/><circle cx="47" cy="92" r="1.2" fill="#D6A64C"/>
+  <path d="M229 42L234 46M241 72L247 68M250 38L255 34" stroke="#B85E5A" stroke-width="1.5"/>
+  <path d="M152 124H162M221 126H231" stroke="#F6E5CE" stroke-width="1.1"/><circle cx="134" cy="95" r="1.5" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <path d="M151 21L181 48L192 106L204 48L235 21" fill="#F0D58B" opacity=".14"/>
+  <ellipse cx="193" cy="83" rx="55" ry="62" fill="#E7C66B" opacity=".12"/><path d="M21 154H283" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+  <path d="M153 28L170 50M237 27L217 50" stroke="#FFF1C7" stroke-width="1.2" opacity=".58"/>
+ </g>
+</svg>

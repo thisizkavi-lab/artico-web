@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: miss a deadline (Verb phrase)
+  CONTEXTUAL_DEFINITION: Fail to submit required work by its due time.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a student arriving at a closed submission tray after the cutoff, with the overdue paper still in hand; contrast directly with meeting the deadline.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet submission station and closed office door.
+    - Context_Layer: Clock past the due point and a closed collection box.
+    - Focal_Layer: Student arrives too late holding the unsubmitted work.
+    - Details_Layer: Drooping posture and missed-time cue.
+    - Lighting_Layer: Cooler light around the closed tray.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:miss a deadline" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="miss-deadline-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="miss-deadline-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#miss-deadline-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M222 29H289V146H222Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.6"/><path d="M237 29V146" stroke="#64748B" stroke-width="2"/><path d="M237 29L287 40V142L237 146Z" fill="#D8DEE7" stroke="#64748B" stroke-width="1.1"/><circle cx="276" cy="86" r="2.2" fill="#64748B"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="197" cy="40" r="20" fill="#FFFEFA" stroke="#64748B" stroke-width="1.5"/><path d="M197 27V40L207 48" fill="none" stroke="#D9857F" stroke-width="1.9" stroke-linecap="round"/><path d="M220 115H280V122H220Z" fill="#A98A64"/><path d="M228 122V149M272 122V149" stroke="#8D765A" stroke-width="2.5"/><path d="M43 121H84V138H43Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M49 126H78" stroke="#DCECFB" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#miss-deadline-shadow)"><circle cx="126" cy="70" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M114 70Q115 55 127 56Q139 57 138 71L132 74Q129 63 123 64Q119 65 117 76Z" fill="#27364B"/><path d="M111 88Q126 81 142 88L147 111L136 120L115 113Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M116 91L107 105L96 108M138 90L151 102L165 102" fill="none" stroke="#1E2A3B" stroke-width="4.4" stroke-linecap="round"/><path d="M116 91L107 105L96 108M138 90L151 102L165 102" fill="none" stroke="#E7B99B" stroke-width="2.5" stroke-linecap="round"/><path d="M118 114L112 149M136 115L148 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M159 87L193 82L198 113L164 118Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.4"/><path d="M166 95L187 92M167 102L190 99" stroke="#AFC5DA" stroke-width="1.2"/><path d="M222 96H236V109H222Z" fill="#5479AC"/><path d="M221 96L228 89L236 96" fill="#315782"/></g>
+  <g id="layer-details"><path d="M112 79Q120 76 130 78" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M169 74L164 68M177 70L176 62" stroke="#D9857F" stroke-width="1.6"/><path d="M199 64L209 69" stroke="#D9857F" stroke-width="1.7"/><circle cx="206" cy="76" r="2.5" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="92" rx="129" ry="70" fill="#5479AC" opacity=".04"/><path d="M222 29H289V146" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/><path d="M20 25H88V74" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".7"/></g>
+</svg>

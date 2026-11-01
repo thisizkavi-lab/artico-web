@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: design and technology (Noun)
+  CONTEXTUAL_DEFINITION: A school subject where students design and make practical objects.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A student makes a small wood-and-card prototype at a school workbench, distinct from architecture plans or engineering structures.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Practical classroom with tool rack and workbench.
+    - Context_Layer: Safety glasses and a plain storage cabinet.
+    - Focal_Layer: Student assembles a small useful birdhouse prototype.
+    - Details_Layer: Hand saw, ruler, wood pieces, and fasteners.
+    - Lighting_Layer: Warm workshop highlight along the prototype edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:design and technology" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="dt-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="dt-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dt-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H96V83H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M59 30V82M23 56H95" stroke="#FFFFFF" stroke-width="2.5"/><rect x="227" y="42" width="50" height="90" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M233 53H271M233 62H271" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M0 143H304" stroke="#A98A64" stroke-width="4"/><path d="M30 94H80M38 93V73M53 93V76M67 93V71M79 93V80" stroke="#64748B" stroke-width="2.5"/><path d="M34 145V160M268 145V160" stroke="#8D765A" stroke-width="4"/><path d="M221 104Q233 91 246 104Q246 117 233 119Q220 117 221 104Z" fill="none" stroke="#5479AC" stroke-width="2.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#dt-shadow)"><path d="M112 59Q111 45 127 43Q144 41 151 56L156 72L146 84L123 79Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/><path d="M112 60Q114 44 129 44Q143 44 148 59L143 63Q138 53 128 54Q120 54 116 65Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M111 81Q133 73 153 85L162 121L148 133L111 124L98 104Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M111 88L91 108L79 123M151 89L167 101L179 115" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M111 88L91 108L79 123M151 89L167 101L179 115" fill="none" stroke="#C98961" stroke-width="3.7" stroke-linecap="round"/><path d="M74 133H183V146H74Z" fill="#A98A64" stroke="#65472F" stroke-width="1.8"/><path d="M78 146V161M177 146V161" stroke="#8D765A" stroke-width="3.5"/><path d="M188 95L213 95L213 123L188 123Z" fill="#D9A441" stroke="#65472F" stroke-width="1.8"/><path d="M184 95L200 81L217 95Z" fill="#D9857F" stroke="#A95059" stroke-width="1.8"/><circle cx="201" cy="107" r="5" fill="#315782" stroke="#1E2A3B" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M49 120L68 101L76 109L57 128Z" fill="#D9A441" stroke="#65472F" stroke-width="1.4"/><path d="M42 127L50 119L58 127L50 135Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M98 132H124M135 136H158" stroke="#F3B9A8" stroke-width="2"/><circle cx="116" cy="117" r="2.2" fill="#FEF9C3"/><path d="M188 84L213 84" stroke="#F5D0A4" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="148" cy="95" rx="118" ry="73" fill="#FEF9C3" opacity=".08"/><path d="M186 93L200 81L217 95" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity=".84"/></g>
+</svg>

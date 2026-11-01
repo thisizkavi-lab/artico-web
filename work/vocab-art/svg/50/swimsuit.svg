@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: swimsuit (Noun)
+  CONTEXTUAL_DEFINITION: A one-piece garment worn for swimming.
+  PEDAGOGICAL_ART_DIRECTOR: Display a single one-piece bathing suit as clothing, with shoulder straps, a scooped neckline, a shaped waist, and leg openings.
+  PEDAGOGICAL_ARCHETYPE: 1 - Clothing object
+  SYNONYM_GUARD: This is one one-piece swimsuit, not a two-piece bikini or a person in ordinary clothes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Coral one-piece swimsuit displayed on a simple hanger; visible shoulder straps, scooped neckline, waist shaping, and two curved leg openings.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:swimsuit" data-archetype="one-piece-swimsuit">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sw-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="sw-cloth" x2="1" y2="1"><stop stop-color="#EE956E"/><stop offset="1" stop-color="#C25152"/></linearGradient><linearGradient id="sw-sand" x2="0" y2="1"><stop stop-color="#F1DDAA"/><stop offset="1" stop-color="#C9A267"/></linearGradient><filter id="sw-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#253640" flood-opacity=".23"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sw-sky)"/><path d="M0 102Q77 89 153 102T304 97V132H0Z" fill="#76BFC0"/><path d="M0 130H304V192H0Z" fill="url(#sw-sand)"/></g>
+ <g id="layer-context"><circle cx="251" cy="39" r="15" fill="#EBC86F" opacity=".84"/><path d="M0 118Q75 107 151 118T304 114" fill="none" stroke="#DDF2EA" stroke-width="1.8"/><path d="M20 173H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="151" cy="161" rx="59" ry="6" fill="#8A6C43" opacity=".15"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sw-shadow)">
+  <path d="M151 49L104 65L151 71L198 65Z" fill="none" stroke="#9B7656" stroke-width="2.2" stroke-linejoin="round"/><path d="M151 49Q145 44 150 39Q155 34 160 39Q163 43 157 47" fill="none" stroke="#9B7656" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M107 62L122 83Q151 96 180 83L195 62L209 80L198 106L190 146Q151 161 112 146L104 106L93 80Z" fill="url(#sw-cloth)" stroke="#934B49" stroke-width="2"/>
+  <path d="M108 62Q111 52 119 53L130 81M194 62Q191 52 183 53L172 81" fill="none" stroke="#C25152" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M108 62Q111 52 119 53L130 81M194 62Q191 52 183 53L172 81" fill="none" stroke="#F2B6A0" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M122 83Q151 96 180 83" fill="none" stroke="#F8D8C5" stroke-width="2.4" stroke-linecap="round"/><path d="M110 104Q151 112 193 104M113 113Q151 121 190 113" fill="none" stroke="#B94E51" stroke-width="1.5"/><path d="M112 146Q129 140 141 150Q151 158 162 150Q174 140 190 146" fill="none" stroke="#F7CCBA" stroke-width="2"/>
+  <path d="M111 140Q127 135 140 151Q125 153 114 150Z" fill="#B9DADD" stroke="#934B49" stroke-width="1"/><path d="M163 151Q176 135 191 140L188 150Q177 153 163 151Z" fill="#B9DADD" stroke="#934B49" stroke-width="1"/>
+  <path d="M129 101q8-5 16 0m13 0q8-5 16 0m-33 13q10 4 20 0m-22 14q8 4 16 0" fill="none" stroke="#F8D8C5" stroke-width="1.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M98 82l10 22m96-22-10 22m-74 29q14-5 25 0m24 0q13-5 25 0" fill="none" stroke="#F8C3AA" stroke-width="1.2"/><circle cx="251" cy="39" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M136 90q15 5 30 0" fill="none" stroke="#FFEADD" stroke-width="1"/></g>
+ <g id="layer-lighting"><path d="M109 64l12 17m58 0 12-17m-75 26q35 14 71 0" fill="none" stroke="#FFF0E6" stroke-width="1.4" opacity=".74"/><circle cx="151" cy="103" r="1.2" fill="#FFF8E7"/><circle cx="251" cy="39" r="1.2" fill="#FFF8E7"/></g>
+</svg>

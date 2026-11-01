@@ -1,0 +1,45 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: symptom / symptoms
+ CONTEXTUAL_DEFINITION: Observable signs that indicate illness.
+ PEDAGOGICAL_ARCHETYPE: an unwell person surrounded by several distinct health signs
+ SYNONYM_GUARD: Show a small set of observable signs, not a diagnosis or a single disease.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Center a mildly unwell person and surround them with three simple cues: body heat, coughing and irritated skin, as a group of symptoms.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:symptom / symptoms" data-archetype="cluster of observable illness signs">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="93" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 39H99V94H58Z" fill="#D9D0C2"/><path d="M64 45H93V88H64Z" fill="#A9B9B4"/><path d="M209 39H251V94H209Z" fill="#E3DDD2"/><path d="M216 45H244V88H216Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <circle cx="83" cy="81" r="21" fill="#F6E5CE" stroke="#D6C8B4" stroke-width="1.2"/><circle cx="220" cy="81" r="21" fill="#F6E5CE" stroke="#D6C8B4" stroke-width="1.2"/>
+  <circle cx="151" cy="124" r="20" fill="#F6E5CE" stroke="#D6C8B4" stroke-width="1.2"/>
+  <path d="M96 94L112 102M207 94L191 102M151 105V92" stroke="#C8B89E" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <ellipse cx="151" cy="150" rx="72" ry="3" fill="#F6E5CE" opacity=".55"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="53" r="12" fill="#D29A78"/><path d="M139 52Q140 37 152 38Q164 39 163 55L157 46L141 49Z" fill="#26384A"/>
+  <path d="M132 69Q151 62 170 70L177 121H125Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M137 75L125 89L139 100M166 75L178 88L188 86" stroke="#D29A78" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M130 119L128 146M171 119L176 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M143 68L151 75L159 68" fill="#F6E5CE"/>
+  <path d="M145 52Q149 55 153 52M156 52L160 51M145 61Q151 58 157 61" stroke="#654E43" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <!-- heat sign -->
+  <rect x="77" y="67" width="5" height="20" rx="2" fill="#F0EEE8" stroke="#597D8B" stroke-width="1"/><circle cx="79.5" cy="87" r="4" fill="#B85E5A"/><path d="M79 70V83" stroke="#B85E5A" stroke-width="2"/>
+  <!-- cough sign -->
+  <path d="M213 84Q220 76 227 84L221 90L214 89Z" fill="#597D8B"/><path d="M232 78L238 76M233 84L240 84M232 90L238 92" stroke="#D6A64C" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- skin irritation sign -->
+  <circle cx="144" cy="120" r="3" fill="#B85E5A"/><circle cx="154" cy="118" r="2.6" fill="#B85E5A"/><circle cx="150" cy="127" r="2.8" fill="#B85E5A"/>
+  <path d="M146 44Q149 41 153 43M159 43L162 42M132 80L137 84M169 80L164 84" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M132 104L139 108M169 104L163 109M143 112L148 114M159 112L154 114" stroke="#A9C0C1" stroke-width="1"/>
+  <circle cx="190" cy="121" r="1.4" fill="#D6A64C"/><circle cx="194" cy="126" r="1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="91" rx="91" ry="67" fill="#E7C66B" opacity=".06"/><path d="M50 31L66 47M253 31L237 47" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

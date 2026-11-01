@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: bend in the road
+  CONTEXTUAL_DEFINITION: A place where a road curves instead of continuing straight.
+  PEDAGOGICAL_ART_DIRECTOR: Show an overhead hillside road that sweeps through a broad, unmistakable curve; avoid a car so the road's bend itself is the focus.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Teach the curved section of the road as a place/feature, not the action of turning a vehicle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Road enters from bottom-left (24,177), curves in an S-like arc through (115,128) and (184,93), then exits toward upper-right (278,34); dashed centerline follows curve.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:bend in the road" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bend-hill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DDEAD7"/><stop offset="1" stop-color="#AAC9B0"/></linearGradient>
+    <linearGradient id="bend-asphalt" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#68798A"/><stop offset="1" stop-color="#45596E"/></linearGradient>
+    <radialGradient id="bend-focus"><stop stop-color="#F2C14E" stop-opacity=".32"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="bend-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bend-hill)"/><path d="M8 45Q50 25 94 42T191 39T296 38" fill="none" stroke="#93B092" stroke-width="2"/><path d="M8 150Q53 138 105 150T212 150T296 140" fill="none" stroke="#98B69A" stroke-width="2"/><path d="M8 184C44 164 65 142 110 132C157 120 174 139 219 115C261 92 266 60 294 40V102C269 126 250 152 223 167C187 187 146 165 114 164C80 162 47 184 18 187Z" fill="url(#bend-asphalt)" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M11 178C45 160 66 137 113 125C159 114 177 132 222 107C263 85 269 54 293 34" fill="none" stroke="#F8F5EC" stroke-width="1.7" stroke-dasharray="9 9"/></g>
+  <g id="layer-context"><circle cx="39" cy="50" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="75" cy="61" r="13" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="267" cy="145" r="16" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="230" cy="151" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M24 69L45 75M61 80L83 84M243 126L263 120" stroke="#678468" stroke-width="2"/><path d="M19 111Q37 100 54 107M245 39Q263 36 281 43" fill="none" stroke="#A7C8AA" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#bend-shadow)"><ellipse cx="172" cy="111" rx="63" ry="47" fill="url(#bend-focus)"/><path d="M11 179C45 162 66 140 112 130C157 119 175 137 219 112C261 89 267 58 293 36" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/><path d="M11 179C45 162 66 140 112 130C157 119 175 137 219 112C261 89 267 58 293 36" fill="none" stroke="#5B6F82" stroke-width="6" stroke-linecap="round"/><path d="M14 168C44 151 62 129 108 118C154 108 174 126 214 101C257 79 261 48 289 29" fill="none" stroke="#FAF8F3" stroke-width="1.5" stroke-dasharray="7 7"/><path d="M102 122C126 116 142 116 158 120" fill="none" stroke="#F2C14E" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M33 161L42 156M52 147L60 141M72 137L81 134M131 126L140 125M153 127L162 130M184 123L193 119M215 108L223 103M245 87L251 81" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/><path d="M18 147Q51 126 82 120M191 143Q220 136 247 112" fill="none" stroke="#8EAD8F" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M100 107L108 105V92L100 94Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M159 91L167 90V77L159 78Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M224 57L232 56V43L224 44Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="171" cy="122" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><path d="M9 183C42 166 64 142 111 132" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><ellipse cx="171" cy="111" rx="72" ry="53" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".55"/></g>
+</svg>

@@ -1,0 +1,40 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: ocean (noun)
+  CONTEXTUAL_DEFINITION: A vast open body of salt water meeting a distant horizon.
+  PEDAGOGICAL_ARCHETYPE: Reused clear same-term illustration
+  SYNONYM_GUARD: Retain the exact recognizable ocean scene; do not shift to a food, toy, or unrelated sense.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Preserve the reviewed candidate composition and proportions.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:ocean" data-archetype="vast-open-water-to-a-distant-horizon">
+
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ocean-sky" x2="0" y2="1"><stop stop-color="#D8E9E9"/><stop offset="1" stop-color="#BED6D6"/></linearGradient>
+  <linearGradient id="ocean-water" x2="0" y2="1"><stop stop-color="#568FA3"/><stop offset=".45" stop-color="#377A91"/><stop offset="1" stop-color="#235D76"/></linearGradient>
+  <linearGradient id="ocean-wave" x2="0" y2="1"><stop stop-color="#80BBC1"/><stop offset="1" stop-color="#3B8095"/></linearGradient>
+  <radialGradient id="ocean-glow"><stop stop-color="#F2D98D" stop-opacity=".8"/><stop offset="1" stop-color="#F2D98D" stop-opacity="0"/></radialGradient>
+  <filter id="ocean-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E4C61" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#ocean-sky)"/><circle cx="246" cy="43" r="38" fill="url(#ocean-glow)"/><circle cx="246" cy="43" r="13" fill="#EBC86F" opacity=".8"/><path d="M0 84Q74 80 151 85T304 81V192H0Z" fill="url(#ocean-water)"/><path d="M0 86Q76 82 151 87T304 83" fill="none" stroke="#D5E7DF" stroke-width="1.4"/></g>
+<g id="layer-context">
+  <path d="M0 114Q35 104 70 113T141 111Q173 103 205 112T271 110Q288 106 304 111V192H0Z" fill="#32718A" opacity=".6"/>
+  <path d="M0 130Q37 118 74 130T145 128Q180 118 213 128T278 126Q293 121 304 127" fill="none" stroke="#85BEC4" stroke-width="1.8"/>
+  <path d="M0 159Q32 146 63 157T126 156Q161 143 194 155T261 154Q282 146 304 155" fill="none" stroke="#71AAB6" stroke-width="2"/>
+  <path d="M0 180Q42 169 81 179T159 177Q194 167 229 178T304 175" fill="none" stroke="#4B94A5" stroke-width="2.2"/>
+</g>
+<g id="layer-focal" filter="url(#ocean-shadow)">
+  <path d="M0 103Q23 96 44 103T88 103Q112 96 135 104T179 103Q205 96 229 104T275 102Q291 98 304 103V117Q286 109 270 116T229 116Q203 109 179 117T135 117Q111 108 88 117T44 116Q21 109 0 117Z" fill="url(#ocean-wave)"/>
+  <path d="M0 105Q21 99 44 106T88 105Q112 99 135 107T179 106Q203 99 229 107T275 105Q290 101 304 106" fill="none" stroke="#D7ECE4" stroke-width="1.7"/>
+  <path d="M16 139q18-7 35-1m53 10q18-8 35-2m63-10q18-7 34-1m31 23q17-7 31-1" fill="none" stroke="#B4D8D4" stroke-width="1.8"/>
+  <path d="M31 173q17-7 31-1m80 1q19-8 37-1m74-13q16-7 29-1" fill="none" stroke="#8BC5C8" stroke-width="1.6"/>
+</g>
+<g id="layer-details">
+  <circle cx="37" cy="121" r="1.6" fill="#E5F3EB"/><circle cx="155" cy="137" r="1.8" fill="#E5F3EB"/><circle cx="267" cy="139" r="1.6" fill="#E5F3EB"/><circle cx="82" cy="165" r="1.7" fill="#D4ECE6"/><circle cx="220" cy="182" r="1.8" fill="#D4ECE6"/>
+  <circle cx="281" cy="169" r="1.5" fill="#D4ECE6"/>
+  <path d="M54 94q14-4 26 0m95 1q13-4 24 0m62-1q13-4 22 0" fill="none" stroke="#EBF2E7" stroke-width="1.3"/>
+  <path d="M18 149q9-4 17-1m135 19q10-4 18-1m79-26q9-4 17-1" fill="none" stroke="#C5E0DA" stroke-width="1.1"/>
+</g>
+<g id="layer-lighting"><path d="M0 87Q74 83 151 88T304 84" fill="none" stroke="#F3F7ED" stroke-width="1" opacity=".8"/><path d="M195 60q19-3 34 0m-191 0q13-3 24 0" fill="none" stroke="#F8F5E8" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

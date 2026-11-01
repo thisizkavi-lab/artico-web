@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: cycle pump (Noun)
+  CONTEXTUAL_DEFINITION: A hand-operated pump with a hose that connects to a bicycle tire valve to inflate it.
+  PEDAGOGICAL_ART_DIRECTOR: Put an upright floor pump beside a bicycle wheel and show its hose visibly attached to the valve.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a manual bicycle tire pump, not a water pump or electric compressor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Tall compact pump with T-handle, cylinder, foot pads, and curled hose meeting the valve on a bicycle wheel.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:cycle pump" data-archetype="bicycle-floor-pump">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="cp-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="cp-pump" x2="1" y2="1"><stop stop-color="#83ACB0"/><stop offset="1" stop-color="#426C7F"/></linearGradient><linearGradient id="cp-ground" x2="0" y2="1"><stop stop-color="#A48E6B"/><stop offset="1" stop-color="#755D48"/></linearGradient><filter id="cp-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#253640" flood-opacity=".23"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cp-sky)"/><path d="M0 131Q76 112 155 129T304 120V192H0Z" fill="#A9B994"/><path d="M0 154H304V192H0Z" fill="url(#cp-ground)"/></g>
+ <g id="layer-context"><path d="M20 129L37 82L54 129ZM252 126L270 72L288 126Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="194" cy="158" rx="68" ry="5" fill="#34483D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#cp-shadow)">
+  <circle cx="215" cy="125" r="35" fill="none" stroke="#344A50" stroke-width="3.4"/><circle cx="215" cy="125" r="29" fill="none" stroke="#B7C7BD" stroke-width="1.2"/><circle cx="215" cy="125" r="2.5" fill="#536E70"/>
+  <path d="M178 112l8-2 2 6-8 2Z" fill="#D7834B"/><circle cx="178" cy="115" r="2.2" fill="#F1CE83"/>
+  <path d="M85 66V133" fill="none" stroke="url(#cp-pump)" stroke-width="9" stroke-linecap="round"/><path d="M85 72V129" fill="none" stroke="#C7E0D9" stroke-width="1.5" opacity=".7"/><path d="M66 65H104" fill="none" stroke="#344A50" stroke-width="5" stroke-linecap="round"/><path d="M67 65h-4m42 0h4" fill="none" stroke="#D7834B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 132H92L103 142H67Z" fill="#344A50" stroke="#26363B" stroke-width="1"/><path d="M72 141h28" fill="none" stroke="#536E70" stroke-width="3" stroke-linecap="round"/>
+  <path d="M88 78H146Q161 78 161 91Q161 102 176 106" fill="none" stroke="#344A50" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 78H145" fill="none" stroke="#D7834B" stroke-width="1"/>
+  <rect x="169" y="101" width="10" height="7" rx="2" fill="#344A50"/><path d="M171 103h6" fill="none" stroke="#FFF8E7" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M207 123A28 28 0 0 1 228 98M78 81h12m-12 6h12m-12 6h12m-12 6h12" fill="none" stroke="#E7F0E7" stroke-width="1.2"/><path d="M74 139h23M182 97l2 7" fill="none" stroke="#D9C69A" stroke-width="1.1"/><circle cx="85" cy="78" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M207 122A28 28 0 0 1 228 99" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".52"/><path d="M81 68h24" fill="none" stroke="#F7E8C6" stroke-width="1.2"/><circle cx="178" cy="115" r="1.2" fill="#FFE4A6"/></g>
+</svg>

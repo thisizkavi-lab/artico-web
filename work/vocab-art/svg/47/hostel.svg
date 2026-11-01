@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: hostel
+  CONTEXTUAL_DEFINITION: Budget lodging with shared sleeping spaces and communal facilities.
+  PEDAGOGICAL_ART_DIRECTOR: Show a hostel as a whole shared lodging facility, with bunk beds visible above a common dining area.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make it an establishment with both shared bunks and common space, not just one dorm bedroom.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A two-story hostel facade is shown in cutaway; upper windows reveal bunks and the open lower lounge contains a shared table and several chairs.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:hostel" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="hostel-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCEBF0"/><stop offset="1" stop-color="#F1EFE5"/></linearGradient>
+  <linearGradient id="hostel-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9C5A6"/><stop offset="1" stop-color="#B2936F"/></linearGradient>
+  <linearGradient id="hostel-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7796B3"/><stop offset="1" stop-color="#4A6682"/></linearGradient>
+  <filter id="hostel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hostel-sky)"/><path d="M0 155H304V192H0Z" fill="#B6C5B0"/><path d="M17 171H286" stroke="#839287" stroke-width="2"/><circle cx="31" cy="123" r="16" fill="#80A879" stroke="#486750" stroke-width="1.4"/><circle cx="277" cy="124" r="17" fill="#80A879" stroke="#486750" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M38 60L152 27L266 60Z" fill="#5C6060" stroke="#1E2A3B" stroke-width="2"/><path d="M49 59H255V159H49Z" fill="url(#hostel-wall)" stroke="#1E2A3B" stroke-width="1.9"/><path d="M49 115H255" stroke="#725D49" stroke-width="2"/><path d="M42 61H261" stroke="#D6C2A6" stroke-width="5"/><rect x="141" y="120" width="23" height="39" fill="#6B5340" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="158" cy="140" r="2" fill="#F2C14E"/></g>
+ <g id="layer-focal" filter="url(#hostel-shadow)"><rect x="64" y="69" width="59" height="36" rx="2" fill="#DCE7E5" stroke="#3E5360" stroke-width="1.6"/><rect x="181" y="69" width="59" height="36" rx="2" fill="#DCE7E5" stroke="#3E5360" stroke-width="1.6"/><path d="M64 87H123M181 87H240" stroke="#667C82" stroke-width="1.2"/><path d="M70 97H117V102H70ZM187 97H234V102H187Z" fill="#F8F5EA" stroke="#64747A" stroke-width="1"/><rect x="69" y="74" width="25" height="8" fill="#B2C7CA"/><rect x="96" y="74" width="24" height="8" fill="#9EB8BD"/><rect x="186" y="74" width="24" height="8" fill="#B2C7CA"/><rect x="213" y="74" width="23" height="8" fill="#9EB8BD"/><path d="M75 82V96M110 82V96M192 82V96M228 82V96" stroke="#6B543E" stroke-width="2.2"/><path d="M64 94H123M181 94H240" stroke="#3E5360" stroke-width="2"/><path d="M69 124H132V132H69Z" fill="#B78F63" stroke="#1E2A3B" stroke-width="1.5"/><path d="M77 132V151M124 132V151" stroke="#5C493A" stroke-width="3.2"/><path d="M52 127V140H68V127Z" fill="#526274" stroke="#1E2A3B" stroke-width="1.5"/><path d="M55 140V150M65 140V150" stroke="#354A5D" stroke-width="2.6" stroke-linecap="round"/><path d="M198 132H242V138H198Z" fill="#8A6B4D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M204 138V151M236 138V151" stroke="#604A39" stroke-width="2.7"/><ellipse cx="100" cy="122" rx="7" ry="3" fill="#E8D4B7" stroke="#725B43" stroke-width="1"/><path d="M94 122Q95 115 100 115Q106 115 107 122Z" fill="#A97752" stroke="#1E2A3B" stroke-width="1"/><circle cx="100" cy="119" r="1.8" fill="#F2C14E"/></g>
+ <g id="layer-details"><rect x="48" y="160" width="208" height="5" fill="#82684B" stroke="#1E2A3B" stroke-width="1"/><path d="M70 63H238" stroke="#FFFFFF" stroke-width="1.2" opacity=".65"/><circle cx="111" cy="54" r="3" fill="#F2C14E"/><circle cx="194" cy="54" r="3" fill="#F2C14E"/><path d="M53 176H251" stroke="#E4E5DA" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="165" rx="110" ry="7" fill="#526274" opacity=".18"/><ellipse cx="151" cy="111" rx="113" ry="63" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".35"/></g>
+</svg>

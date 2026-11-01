@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: up to your ears (work idiom)
+  CONTEXTUAL_DEFINITION: Extremely busy or involved with work.
+  PEDAGOGICAL_ART_DIRECTOR: Show work folders rising to the employee's ear level; keep the whole face and both ears just visible above the work.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrast / workload level
+  SYNONYM_GUARD: Use a static ear-height paper line, distinct from the falling paper avalanche in snowed under and the more extreme eyeball-height pile.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A worker sits centered at x=125..178, head from y=54..91. A broad foreground wall of folders rises to y=88, reaching both ears but leaving eyes, nose, and mouth unobstructed; add one hand shuffling a final page.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:up to your ears" data-archetype="workload-level">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ears-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="ears-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="ears-focus"><stop stop-color="#FFF1B9" stop-opacity=".65"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ears-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Office wall and crowded work surface -->
+  <g id="layer-context"><path d="M31 149 H273" stroke="#C88446" stroke-width="2"/><rect x="42" y="43" width="44" height="28" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.3"/><path d="M48 50 H80 M48 56 H75" stroke="#CBD5E1" stroke-width="1.1"/><path d="M217 47 H263 V75 H217 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M224 54 H256 M224 61 H250" stroke="#A8D4A2" stroke-width="1.1"/><path d="M48 134 H258 V148 H48 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="1.7"/><path d="M62 148 V155 M245 148 V155" stroke="#965D28" stroke-width="2.5"/></g>
+  <!-- 3. Papers reach the employee's ears while the face remains visible -->
+  <g id="layer-focal" filter="url(#ears-shadow)"><path d="M112 125 Q113 102 128 96 L130 86 Q126 80 128 71 Q134 62 146 64 Q157 67 154 79 L151 89 Q167 95 168 121 L164 134 H116 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M119 103 Q143 92 163 104 V137 H119 Z" fill="#3D5F91"/><ellipse cx="142" cy="75" rx="9" ry="12" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M133 73 Q134 63 143 63 Q152 64 153 72 Q147 67 140 69 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="138" cy="76" r="1.1" fill="#1E2A3B"/><circle cx="145" cy="76" r="1.1" fill="#1E2A3B"/><path d="M138 81 Q142 83 146 81" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><path d="M122 129 L114 139 L119 145 L132 134 M155 131 L164 141 L170 137 L163 124" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><rect x="52" y="105" width="51" height="40" rx="2" fill="url(#ears-folder)" stroke="#1E2A3B" stroke-width="1.7"/><rect x="96" y="96" width="55" height="48" rx="2" fill="#E5F0E1" stroke="#64748B" stroke-width="1.5"/><rect x="150" y="101" width="56" height="44" rx="2" fill="url(#ears-paper)" stroke="#64748B" stroke-width="1.5"/><rect x="203" y="109" width="46" height="36" rx="2" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.5"/><path d="M58 113 H96 M58 119 H90 M102 104 H145 M102 110 H139 M156 109 H200 M156 115 H194 M208 117 H244 M208 123 H239" stroke="#FFFFFF" stroke-width="1.1"/><path d="M103 96 V91 Q103 88 107 88 H117 Q121 88 121 96" fill="none" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 4. A last page waits in the employee's hand -->
+  <g id="layer-details"><path d="M164 126 L178 118 L187 124 L180 132 L169 136 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M178 119 L195 91 L204 95 L188 123" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M196 87 L212 83 L215 97 L200 101 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.2"/><path d="M199 91 H211 M199 95 H208" stroke="#94A3B8" stroke-width=".9"/><path d="M87 93 H105 M206 90 H218" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="2 3"/><circle cx="82" cy="93" r="2.5" fill="#F2C14E"/></g>
+  <!-- 5. The paper line aligns with the employee's ears -->
+  <g id="layer-lighting"><ellipse cx="142" cy="101" rx="84" ry="61" fill="url(#ears-focus)"/><path d="M99 90 H127 M157 90 H214" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M133 66 H146" stroke="#F5BFA3" stroke-width="1.4" stroke-linecap="round"/><path d="M267 98 L273 92 M269 108 H277" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+</svg>

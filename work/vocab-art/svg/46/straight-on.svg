@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: straight on
+  CONTEXTUAL_DEFINITION: In the forward direction, continuing without turning away.
+  PEDAGOGICAL_ART_DIRECTOR: Put a traveler at the foot of a long straight road with an unobstructed forward arrow that runs straight on toward the horizon.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Use forward orientation without a branching intersection; this is directional alignment, not a route-choice action.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perspective road narrows toward y=23; traveler faces forward at (151,146); cobalt lane arrow leads directly from their position to the vanishing point at (151,39).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:straight on" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="straighton-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5F0F2"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient>
+    <linearGradient id="straighton-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#718294"/><stop offset="1" stop-color="#47596D"/></linearGradient>
+    <radialGradient id="straighton-sun"><stop stop-color="#FFF2B0" stop-opacity=".85"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="straighton-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#straighton-sky)"/><path d="M0 102L112 69V192H0ZM304 102L192 69V192H304Z" fill="#B7CEB1"/><path d="M107 67H197L279 192H25Z" fill="url(#straighton-road)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M123 70L55 192M181 70L249 192" stroke="#FAF8F3" stroke-width="2"/><path d="M152 75V190" stroke="#FAF8F3" stroke-width="1.8" stroke-dasharray="9 10" opacity=".65"/><ellipse cx="152" cy="48" rx="54" ry="40" fill="url(#straighton-sun)"/></g>
+  <g id="layer-context"><path d="M17 83L47 67L76 79V109H17Z" fill="#CFB18D" stroke="#746452" stroke-width="1.6"/><path d="M229 79L259 67L287 82V109H229Z" fill="#A9C1CC" stroke="#5E7480" stroke-width="1.6"/><path d="M36 90V105M253 89V105" stroke="#A8CEDB" stroke-width="5"/><circle cx="56" cy="47" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="251" cy="46" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M18 113H85M219 113H286" stroke="#7F9B78" stroke-width="3"/></g>
+  <g id="layer-focal" filter="url(#straighton-shadow)"><circle cx="152" cy="147" r="10" fill="#D9A77F" stroke="#1E2A3B" stroke-width="1.8"/><path d="M137 160Q152 150 167 160L173 181H131Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.2"/><path d="M139 163L123 173L127 179L146 171M165 163L181 172L177 178L158 171" fill="#D9A77F" stroke="#1E2A3B" stroke-width="1.7" stroke-linejoin="round"/><path d="M139 180L135 191H149L153 182L158 191H174L165 178" fill="#344A62" stroke="#1E2A3B" stroke-width="1.7"/><path d="M152 133V46" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/><path d="M152 133V46" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><path d="M140 58L152 34L164 58Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M115 115L128 114M177 114L190 115" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><path d="M118 83H127M177 83H186" stroke="#FFFFFF" stroke-width="1.7"/><circle cx="152" cy="45" r="4" fill="#F2C14E" stroke="#FFFFFF" stroke-width="1.5"/><path d="M82 166H105M200 166H222" stroke="#A8BBAB" stroke-width="1.3" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><path d="M109 72H195" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><ellipse cx="152" cy="183" rx="30" ry="4" fill="#293A4D" opacity=".3"/><path d="M104 108L34 192M200 108L270 192" stroke="#D6DFD4" stroke-width="1" opacity=".6"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: straight
+  CONTEXTUAL_DEFINITION: Extending in one unbending line without a curve.
+  PEDAGOGICAL_ART_DIRECTOR: Contrast one ruler-straight blue route with a muted winding alternative on the same map to make the geometric property obvious.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrast / reference pair
+  SYNONYM_GUARD: Teach the shape property of a path, not the instruction to continue ahead.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Straight route spans (26,116) to (277,116) as a crisp level line; a smaller muted road above bends twice; blue route stays uncurved throughout.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:straight" data-archetype="contrast-reference">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="straight-paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EDF1E6"/><stop offset="1" stop-color="#D9E5D1"/></linearGradient>
+    <linearGradient id="straight-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#78A2CF"/></linearGradient>
+    <radialGradient id="straight-focus"><stop stop-color="#F2C14E" stop-opacity=".3"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="straight-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect x="14" y="18" width="276" height="157" rx="12" fill="url(#straight-paper)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M20 61H284M20 145H284M92 22V171M213 22V171" stroke="#B4C2B0" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M31 52C72 50 54 29 102 36C145 42 118 60 167 55C202 52 219 37 270 40" fill="none" stroke="#8E9E9B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/><path d="M31 52C72 50 54 29 102 36C145 42 118 60 167 55C202 52 219 37 270 40" fill="none" stroke="#F6F4EC" stroke-width="1.4" stroke-dasharray="4 7" opacity=".8"/><rect x="37" y="148" width="40" height="17" rx="3" fill="#D9B996" stroke="#7D6E5C" stroke-width="1.4"/><rect x="225" y="148" width="43" height="17" rx="3" fill="#ADC4CF" stroke="#617786" stroke-width="1.4"/><circle cx="58" cy="86" r="9" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><circle cx="251" cy="91" r="9" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#straight-shadow)"><ellipse cx="152" cy="118" rx="126" ry="38" fill="url(#straight-focus)"/><path d="M31 117H268" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round"/><path d="M31 117H268" stroke="url(#straight-road)" stroke-width="16" stroke-linecap="round"/><path d="M259 97L282 117L259 137Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.8"/><path d="M47 117H247" stroke="#F8F6EF" stroke-width="1.5" stroke-dasharray="8 9"/><circle cx="31" cy="117" r="10" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="268" cy="117" r="9" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M43 94H260" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="3 5" opacity=".55"/><path d="M48 100H255M48 134H255" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><path d="M31 103V131M268 103V131" stroke="#607589" stroke-width="1.5" opacity=".7"/><path d="M42 133H258" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M37 70L45 66M88 70L96 66M145 70L153 66M202 70L210 66M257 70L265 66" stroke="#AAB8B5" stroke-width="1.4"/><path d="M21 28H98" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/></g>
+  <g id="layer-lighting"><path d="M25 25H279" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="152" cy="117" rx="132" ry="44" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".55"/></g>
+</svg>

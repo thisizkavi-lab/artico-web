@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: laboratory (Noun)
+  CONTEXTUAL_DEFINITION: A room equipped for scientific experiments and practical study.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: The full room with long benches, sinks, stools, and lab equipment is the focus, rather than a single chemistry experiment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Wide school laboratory interior with windows.
+    - Context_Layer: Cabinet, safety wash station, and stools.
+    - Focal_Layer: Long laboratory benches and sink basin.
+    - Details_Layer: Test-tube racks, microscopes, and safety goggles.
+    - Lighting_Layer: Cool daylight reflected from clean work surfaces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:laboratory" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="lab-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="lab-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lab-bg)"/><path d="M0 150Q76 145 152 150T304 148V192H0Z" fill="#E8DDC8"/><path d="M22 27H102V77H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M62 28V76M23 52H101" stroke="#FFFFFF" stroke-width="2.4"/><rect x="222" y="37" width="58" height="91" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M229 48H273M229 58H273" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M0 119H304" stroke="#5479AC" stroke-width="5"/><path d="M0 124H304" stroke="#315782" stroke-width="1.5"/><path d="M24 124V149M98 124V149M203 124V149M278 124V149" stroke="#8D765A" stroke-width="4"/><path d="M38 104H67V118H38Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.5"/><path d="M49 104V99H57V104" fill="none" stroke="#5479AC" stroke-width="1.5"/><path d="M241 78Q251 66 261 78L258 95H244Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#lab-shadow)"><path d="M32 96H273V110H32Z" fill="#AFC5DA" stroke="#315782" stroke-width="1.7"/><path d="M45 110V145M260 110V145" stroke="#64748B" stroke-width="4"/><path d="M124 96V110M174 96V110" stroke="#5479AC" stroke-width="2"/><path d="M123 97Q130 85 142 97L138 105H126ZM175 97Q182 85 194 97L190 105H178Z" fill="#E3E8F0" stroke="#5479AC" stroke-width="1.4"/><path d="M136 90L151 76L164 90L151 95Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M149 81L157 75L165 81L157 87Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><rect x="81" y="75" width="15" height="22" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M84 75V69H92V75" fill="none" stroke="#5479AC" stroke-width="1.4"/><path d="M210 92H218V97H210Z" fill="#D9857F"/><path d="M214 92V78H223V92" fill="#DCECFB" stroke="#5479AC" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M102 76Q111 69 120 76V92H102Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><circle cx="111" cy="74" r="5" fill="#DCECFB" stroke="#315782" stroke-width="1.2"/><path d="M111 92V99M105 99H117" stroke="#315782" stroke-width="2"/><path d="M199 80L213 84M213 84L224 80" fill="none" stroke="#64748B" stroke-width="1.3"/><circle cx="221" cy="87" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M32 95H273" stroke="#FFFFFF" stroke-width="2" opacity=".82"/><ellipse cx="151" cy="88" rx="135" ry="76" fill="#FEF9C3" opacity=".05"/></g>
+</svg>

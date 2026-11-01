@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: tie your hair back (Verb phrase)
+  CONTEXTUAL_DEFINITION: Gather hair away from the face and fasten it behind the head.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action
+  SYNONYM_GUARD: Show a hand fastening a hair elastic at the back of the head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm dressing-room paper.
+    - Context_Layer: Shoulders and neck from the rear.
+    - Focal_Layer: Hands gather long hair into a low ponytail.
+    - Details_Layer: Elastic ring and strands pulled toward it.
+    - Lighting_Layer: Hair sheen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:tie your hair back" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="93" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="89" rx="111" ry="72" fill="#FEF3C7" opacity=".34"/><path d="M82 166Q89 130 121 122H183Q215 130 222 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M105 148Q90 114 96 74Q102 34 152 31Q202 34 208 74Q214 114 199 148L181 159H123Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.7"/>
+  <path d="M104 77Q111 47 152 45Q193 47 200 77L197 109Q174 91 152 91Q129 92 107 110Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.1"/>
+  <path d="M151 97Q174 99 185 112Q180 142 154 162Q132 150 124 121Q135 105 151 97Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M97 101Q80 92 72 78L65 69M207 102Q224 91 232 77L239 67" fill="none" stroke="#D9A17D" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M66 68Q57 55 54 44Q53 38 59 36Q65 35 68 42L75 54Q82 59 88 67M238 66Q246 53 249 42Q250 36 244 34Q238 33 235 40L228 52Q221 57 215 65" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="152" cy="105" rx="11" ry="8" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.2"/><path d="M144 101Q152 94 160 101M145 109Q152 116 159 109" fill="none" stroke="#F4B9B4" stroke-width="1.8"/>
+  <path d="M92 93Q113 97 131 105M212 94Q191 98 173 105" fill="none" stroke="#C99167" stroke-width="2.2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M82 73Q105 79 130 96M222 72Q199 79 174 96" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

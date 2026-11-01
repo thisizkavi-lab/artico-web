@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: styles (Noun, plural)
+  CONTEXTUAL_DEFINITION: Different ways of dressing or arranging an appearance.
+  PEDAGOGICAL_ARCHETYPE: 1 — Coordinated contrast set
+  SYNONYM_GUARD: Show visibly varied clothing silhouettes rather than three color changes to one outfit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean studio paper.
+    - Context_Layer: Three separate wardrobe bays.
+    - Focal_Layer: Casual, elegant, and sporty outfit forms.
+    - Details_Layer: Distinct jacket, dress, and athletic set silhouettes.
+    - Lighting_Layer: Even warm light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:styles" data-archetype="hero-assortment">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="119" ry="12" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M34 34H270M34 35V160M135 35V160M236 35V160M270 35V160" fill="none" stroke="#AAB5C3" stroke-width="2"/><path d="M37 159H268" stroke="#7B8A9E" stroke-width="2"/>
+  <ellipse cx="152" cy="97" rx="128" ry="68" fill="#FEF3C7" opacity=".25"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M66 57L90 53L108 66L101 93L106 124L100 148H70L75 122L78 93Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M78 62L87 69L96 62L102 90H75Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.5"/><path d="M73 145L84 145L82 162H72ZM90 145L101 145L103 162H93Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.5"/>
+  <path d="M154 56L174 52L194 56L201 86L193 103L198 154H149L155 103L147 86Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M154 56L174 76L194 56M174 76L174 105M151 105H197" fill="none" stroke="#7B8A9E" stroke-width="1.7"/><path d="M153 151L170 151L168 163H151ZM180 151L196 151L199 163H183Z" fill="#35404B" stroke="#1E2A3B" stroke-width="1.5"/>
+  <path d="M245 59L259 56L271 60L277 83L270 97L271 124H242L244 97L238 83Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M243 83H274M247 100H269" stroke="#F2C3BE" stroke-width="2"/><path d="M247 122L258 122L255 163H244ZM263 122L273 122L278 163H266Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M86 46L87 54M174 45L174 53M258 48L258 56" stroke="#D9A441" stroke-width="2"/><circle cx="87" cy="45" r="5" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="174" cy="44" r="5" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="258" cy="47" r="5" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M120 94H142L137 89M142 94L137 99M221 94H237L232 89M237 94L232 99" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

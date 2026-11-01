@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: rhinoceros (noun)
+  CONTEXTUAL_DEFINITION: A massive wild grey mammal with a barrel-shaped body, thick folded skin, and one or two horns on its nose.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining nasal horn
+  SYNONYM_GUARD: Exaggerate the single long horn on the nose, thick skin folds, and heavy low body; do not give it tusks or antlers.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open savanna; rhino faces right, barrel body x=83..205 y=81..136, head and horn at x=205..258 y=92, short thick legs to y=155.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:rhinoceros" data-archetype="folded-skin-single-horn-rhino">
+  <defs>
+    <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#FAF4E7;--c-surface:#D1C5A8;--c-primary:#8C9290;--c-secondary:#4C5757;--c-accent:#85956C;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="rhi-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF0E9"/><stop offset="1" stop-color="#F7EFDF"/></linearGradient>
+    <linearGradient id="rhi-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AAB0AB"/><stop offset="1" stop-color="#697271"/></linearGradient>
+    <filter id="rhi-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rhi-sky)"/><path d="M0 129 Q62 120 126 129 T243 127 Q279 120 304 128 V192 H0Z" fill="#E1E0CF"/><path d="M0 153 Q70 145 145 153 T304 151 V192 H0Z" fill="#CDC2A8"/><ellipse cx="151" cy="164" rx="107" ry="8" fill="#A69D87" opacity=".42"/></g>
+  <g id="layer-context"><path d="M37 145 V81 M37 103 L24 88 M37 115 L52 98" fill="none" stroke="#715840" stroke-width="4" stroke-linecap="round"/><path d="M21 90 Q25 74 36 80 Q44 67 53 79 Q63 80 65 94 Q51 89 42 101 Q31 91 21 90Z" fill="#829268"/><path d="M267 144 V77 M267 100 L252 83 M267 113 L283 94" fill="none" stroke="#715840" stroke-width="4" stroke-linecap="round"/><path d="M250 85 Q254 69 266 75 Q274 62 283 74 Q295 75 297 90 Q283 84 274 97 Q262 86 250 85Z" fill="#7D926A"/><path d="M66 146 l-4-8 m4 8 6-6 M235 147 l4-8" fill="none" stroke="#80906A" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#rhi-shadow)"><ellipse cx="143" cy="108" rx="59" ry="30" fill="url(#rhi-skin)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M181 91 Q198 78 215 84 L231 95 L229 118 Q218 132 196 126 L180 113Z" fill="#929A98" stroke="#1E2A3B" stroke-width="2"/><path d="M214 97 Q231 91 245 100 L252 110 L243 120 L221 119 L210 111Z" fill="#9DA4A0" stroke="#1E2A3B" stroke-width="1.7"/><path d="M243 102 Q249 88 260 82 Q260 96 252 109Z" fill="#DDD6C4" stroke="#1E2A3B" stroke-width="1.5"/><path d="M239 111 Q245 104 250 102 L246 116Z" fill="#E1D9C8" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="231" cy="99" r="1.8" fill="#1E2A3B"/><circle cx="247" cy="106" r="1.4" fill="#31383A"/><path d="M95 128 L94 150 Q95 157 104 157 L110 152 L104 148 L106 127 M125 133 L125 153 Q127 159 136 157 L142 152 L136 148 L137 131 M164 132 L170 153 Q173 159 182 156 L187 151 L180 147 L177 128 M195 124 L205 149 Q209 154 218 151 L222 145 L215 142 L205 120" fill="none" stroke="#5B6464" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M180 89 Q186 98 181 110 M194 85 Q200 97 194 121 M211 88 Q215 99 211 119" fill="none" stroke="#737E7D" stroke-width="2.2"/><path d="M85 99 Q93 102 95 107" fill="none" stroke="#536160" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M91 92 Q106 81 122 81 M133 80 Q153 78 169 86 M191 91 Q200 83 209 86 M220 96 Q231 93 239 99" fill="none" stroke="#D3D9D4" stroke-width="1.6"/><path d="M95 124 Q105 132 117 126 M120 126 Q132 136 143 128 M160 128 Q171 136 183 126" fill="none" stroke="#C2C9C4" stroke-width="1.6"/><path d="M92 150 l-1 6 m10-6 1 6 m24-4 1 6 m43-4 2 5 m36-10 3 5" fill="none" stroke="#465153" stroke-width="1.2" stroke-linecap="round"/><path d="M66 146 l-4-8 m4 8 6-6 M235 147 l4-8" fill="none" stroke="#80916A" stroke-width="1.5" stroke-linecap="round"/><path d="M252 88 l5-5 M249 96 l5-4" fill="none" stroke="#FFF3D9" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M91 91 Q105 80 123 80 M135 79 Q153 78 168 85 M189 90 Q199 82 208 85 M220 95 Q230 92 238 98" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".43" stroke-linecap="round"/><ellipse cx="144" cy="94" rx="31" ry="12" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

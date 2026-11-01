@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: language exchange (Noun phrase)
+  CONTEXTUAL_DEFINITION: Two people help each other learn their respective languages by taking turns speaking and listening.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: Show reciprocal teaching with equal turns: each learner models a language and helps the other practice it, distinct from simply sharing one lingua franca.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language meetup table.
+    - Context_Layer: Two learners with different strengths sit face to face.
+    - Focal_Layer: They swap picture cards in both directions and take turns speaking.
+    - Details_Layer: Two arrows make the exchange reciprocal.
+    - Lighting_Layer: Balanced warm light on both partners.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:language exchange" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="exchange-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="exchange-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#exchange-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M47 121H258V129H47Z" fill="#A98A64"/><path d="M58 129V149M246 129V149" stroke="#8D765A" stroke-width="2.7"/><circle cx="89" cy="84" r="11" fill="#C98961"/><path d="M78 84Q79 70 90 71Q101 72 100 85" fill="#27364B"/><path d="M73 101Q89 94 105 101L109 120L98 129L78 122Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><circle cx="217" cy="84" r="11" fill="#80513F"/><path d="M206 84Q207 70 218 71Q229 72 228 85" fill="#27364B"/><path d="M201 101Q217 94 233 101L237 120L226 129L206 122Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#exchange-shadow)"><path d="M109 100L133 91L145 108L120 117Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.2"/><circle cx="126" cy="103" r="5" fill="#D9A441"/><path d="M160 91L184 100L173 117L149 108Z" fill="#FFFEFA" stroke="#D9857F" stroke-width="1.2"/><path d="M158 98L167 91L176 98L167 105Z" fill="#91A77C" stroke="#54765A" stroke-width="1"/><path d="M137 82C148 69 164 69 175 82" fill="none" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><path d="M169 77L176 82L168 85" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M171 125C160 138 144 138 133 125" fill="none" stroke="#D9857F" stroke-width="2.5" stroke-linecap="round"/><path d="M139 122L132 125L140 130" fill="none" stroke="#D9857F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M83 47Q83 38 94 38H125Q136 38 136 48V59Q136 70 125 70H112L104 78L105 69H94Q83 69 83 59Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.2"/><path d="M167 49Q167 39 178 39H209Q220 39 220 50V61Q220 72 209 72H197L189 80L190 71H178Q167 71 167 61Z" fill="#F7E4D8" stroke="#D9857F" stroke-width="1.2"/><path d="M94 52H102M108 52H117M181 54Q187 46 193 54Q199 62 205 54" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M77 95L83 91M224 95L230 91" stroke="#D9A441" stroke-width="1.4"/><circle cx="151" cy="58" r="2.5" fill="#D9A441"/><circle cx="153" cy="148" r="2.5" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="89" rx="136" ry="74" fill="#FEF9C3" opacity=".09"/><path d="M83 47Q83 38 94 38H125M167 49Q167 39 178 39H209" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

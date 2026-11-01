@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: sandstorm (Noun)
+  CONTEXTUAL_DEFINITION: A wall of windblown sand sweeping across an arid landscape and obscuring the distance.
+  PEDAGOGICAL_ART_DIRECTOR: Show a broad ochre wall of airborne sand overtaking dunes, with a near dune clear and distant forms fading away.
+  PEDAGOGICAL_ARCHETYPE: 3 - Dust and wind event
+  SYNONYM_GUARD: The airborne sand wall defines this event; avoid rain, snow, or a dark thundercloud.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A tall rolling veil of sand moves across desert dunes and partly hides a far rock formation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:sandstorm" data-archetype="airborne-sand-wall-desert">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sa-sky" x2="0" y2="1"><stop stop-color="#D6C49A"/><stop offset="1" stop-color="#EAD9B0"/></linearGradient><linearGradient id="sa-sand" x2="0" y2="1"><stop stop-color="#D7A75F"/><stop offset="1" stop-color="#A56F3F"/></linearGradient><linearGradient id="sa-haze" x2="0" y2="1"><stop stop-color="#E6C586" stop-opacity=".35"/><stop offset="1" stop-color="#BC8247" stop-opacity=".93"/></linearGradient><filter id="sa-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#68482D" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sa-sky)"/><path d="M0 127Q60 95 122 125T243 120T304 125V192H0Z" fill="#C5A36B"/><path d="M0 154Q63 127 130 150T254 146T304 152V192H0Z" fill="#A97949"/><path d="M212 117L232 86L251 117L267 95L286 124Z" fill="#AF9B76" opacity=".55"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A98655" stroke-width="1.2"/><ellipse cx="150" cy="163" rx="110" ry="5" fill="#64462E" opacity=".18"/><path d="M31 139Q81 119 128 141T225 137T304 139" fill="none" stroke="#E0BE81" stroke-width="1.7"/><path d="M214 115l20-29 17 30m20 6 15-27 17 27" fill="none" stroke="#D2C09B" stroke-width="1.4" opacity=".5"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sa-shadow)">
+  <path d="M141 41Q156 22 179 35Q193 25 209 40Q230 32 245 50Q268 46 276 65Q292 75 281 94Q289 111 267 123Q251 139 227 132Q208 149 185 135Q166 146 149 132Q130 138 117 125Q93 128 87 109Q66 97 76 79Q74 60 99 55Q116 38 141 41Z" fill="url(#sa-haze)" opacity=".94"/><path d="M118 80Q149 65 180 82T243 78T304 81M102 97Q138 83 174 100T245 96T304 100M83 115Q117 102 151 117T223 114T304 119" fill="none" stroke="#EAC987" stroke-width="3" stroke-linecap="round" opacity=".78"/><path d="M0 151Q50 136 98 151T195 148T304 153V192H0Z" fill="url(#sa-sand)"/><path d="M14 157q30-11 60-3m130-3q35-10 68-2" fill="none" stroke="#EDC98B" stroke-width="1.8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M36 75l-14 4m81-25-13 5m121-12-12 5m67 31-14 4m-157 38-12 4m130-3-12 4" fill="none" stroke="#F2D9A7" stroke-width="1.5" stroke-linecap="round"/><path d="M103 66q10-5 19 0" fill="none" stroke="#F1D39B" stroke-width="1.2" stroke-linecap="round"/><path d="M155 58q9-4 17 0" fill="none" stroke="#F1D39B" stroke-width="1.2" stroke-linecap="round"/><path d="M220 68q10-5 19 0" fill="none" stroke="#F1D39B" stroke-width="1.2" stroke-linecap="round"/><path d="M112 107q12-5 22 0" fill="none" stroke="#EAC987" stroke-width="1.2" stroke-linecap="round"/><path d="M176 91q11-5 21 0" fill="none" stroke="#EAC987" stroke-width="1.2" stroke-linecap="round"/><path d="M244 110q11-5 21 0" fill="none" stroke="#EAC987" stroke-width="1.2" stroke-linecap="round"/><circle cx="51" cy="91" r="1.5" fill="#F4DFB6"/><circle cx="261" cy="59" r="1.4" fill="#F4DFB6"/><path d="M24 23H280" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".46"/></g>
+ <g id="layer-lighting"><path d="M141 43q13-14 28-5m39 5q12-7 23 4" fill="none" stroke="#F3D99F" stroke-width="1.3"/><path d="M8 153q41-12 76-2m139-3q39-10 74-2" fill="none" stroke="#F4D79E" stroke-width="1.2" opacity=".8"/></g>
+</svg>

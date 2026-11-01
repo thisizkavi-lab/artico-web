@@ -1,0 +1,58 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: in my opinion (Phrase)
+  CONTEXTUAL_DEFINITION: A personal view being shared, shown by a speaker touching their chest while addressing two listeners.
+  PEDAGOGICAL_ARCHETYPE: 1 (Distinctive human expression)
+  SYNONYM_GUARD: The speaker points to themself as they offer a view to others; listeners turn toward the speaker.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet discussion space with a soft wall and floor.
+    - Context_Layer: Two listeners face the speaker attentively.
+    - Focal_Layer: Speaker gestures to their chest with one hand and outward with the other.
+    - Details_Layer: Open mouth, attentive faces and a blank speech bubble without text.
+    - Lighting_Layer: Warm highlight rests on the speaker.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:in my opinion" data-archetype="expressive-bust">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#room)"/>
+    <path d="M0 146 Q152 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/>
+    <ellipse cx="151" cy="165" rx="118" ry="8" fill="#DDD4C3"/>
+    <path d="M23 58 Q75 51 121 58" fill="none" stroke="#D8CDAF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="layer-context">
+    <path d="M203 151 Q205 129 222 126 Q239 129 241 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.2"/>
+    <circle cx="222" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.9"/>
+    <path d="M207 110 Q208 94 223 95 Q238 96 237 111 Q229 103 220 104Z" fill="#6B4B35"/>
+    <path d="M214 111 Q218 108 220 111 M225 111 Q229 108 232 111" fill="none" stroke="#1E2A3B" stroke-width="1.5"/>
+    <path d="M215 118 Q222 122 229 118" fill="none" stroke="#A34F47" stroke-width="1.6"/>
+    <path d="M259 151 Q261 129 278 126 Q295 129 297 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/>
+    <circle cx="278" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.9"/>
+    <path d="M263 110 Q264 94 279 95 Q294 96 293 111 Q285 103 276 104Z" fill="#27364B"/>
+    <path d="M270 111 Q274 108 276 111 M281 111 Q285 108 288 111" fill="none" stroke="#1E2A3B" stroke-width="1.5"/>
+    <path d="M271 118 Q278 122 285 118" fill="none" stroke="#A34F47" stroke-width="1.6"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M48 151 Q50 119 75 115 Q100 119 103 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M67 119 L66 105 L86 105 L85 122" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="76" cy="82" r="21" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1"/>
+    <path d="M55 81 Q56 59 77 60 Q97 62 97 82 Q87 72 76 73 Q66 79 55 81Z" fill="#27364B"/>
+    <path d="M64 84 Q68 80 72 84 M80 84 Q84 80 88 84" fill="none" stroke="#1E2A3B" stroke-width="1.7"/>
+    <ellipse cx="77" cy="94" rx="3.8" ry="5.2" fill="#A34F47"/>
+    <path d="M91 124 Q104 116 111 102 L118 105 Q117 122 102 137" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/>
+    <path d="M112 103 Q121 97 126 101 L126 107 Q120 112 114 109Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M59 123 Q67 123 76 132 L78 140 Q73 144 68 138 L54 132Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/>
+    <path d="M68 132 Q68 124 74 123 Q82 124 85 132 L84 137 Q76 141 70 137Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+  </g>
+  <g id="layer-details">
+    <path d="M130 76 Q132 63 148 63 L166 63 Q181 63 181 76 L181 87 Q181 99 166 99 L150 99 L139 108 L141 99 Q130 97 130 86Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8"/>
+    <path d="M84 67 L89 57 L94 67 L104 72 L94 77 L89 87 L84 77 L74 72Z" fill="#F2C14E"/>
+    <path d="M193 91 Q197 88 201 91 M193 98 Q197 95 201 98" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M58 70 Q72 61 88 68 M53 126 Q72 117 91 124" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.78"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

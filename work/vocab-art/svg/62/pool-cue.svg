@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: pool cue
+ CONTEXTUAL_DEFINITION: A long, tapered stick used to strike the cue ball on a billiards table.
+ PEDAGOGICAL_ARCHETYPE: Hero object isolated diagonally across a green-felt table with balls showing cue-sport context.
+ SYNONYM_GUARD: Focus the slender tapered cue with a chalk tip, not the table or the player.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Wooden cue runs from broad grip end at lower left to narrow chalked tip at upper right; cue ball and two colored balls rest nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:pool cue" data-archetype="tapered-billiards-cue-object">
+ <defs><linearGradient id="pc-felt" x2="0" y2="1"><stop stop-color="#526F66"/><stop offset="1" stop-color="#344F5A"/></linearGradient><linearGradient id="pc-wood" x2="1" y2="0"><stop stop-color="#D4A46C"/><stop offset=".58" stop-color="#F0D3A5"/><stop offset="1" stop-color="#B98754"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E9EEE8"/><path d="M8 63h288v129H8Z" fill="url(#pc-felt)"/><path d="M18 76h268v103H18Z" fill="none" stroke="#B78C60" stroke-width="7"/><path d="M23 80h258v95H23Z" fill="none" stroke="#D0AE83" stroke-width="1.2"/><path d="M24 95h31m195 0h31" stroke="#D5E1D8" stroke-width="1.2"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="181" rx="116" ry="5" fill="#263E48" opacity=".22"/><circle cx="49" cy="42" r="9" fill="#E4BB68"/><path d="M42 115h21m179 0h24" stroke="#6F9283" stroke-width="1.1"/><path d="M28 84v10m248-10v10m-248 62v10m248-10v10" stroke="#6B4F3B" stroke-width="1"/></g>
+ <g id="layer-focal"><path d="M51 145 233 77q7-3 9 2l2 5q1 4-6 7L57 159q-7 2-9-3l-1-5q-1-4 4-6Z" fill="url(#pc-wood)" stroke="#684C37" stroke-width="1.8"/><path d="m233 77 12-5 4 8-9 11" fill="#D7E0DD" stroke="#52636A" stroke-width="1.2"/><path d="M57 144 61 155m5-14 4 10m5-14 3 9" stroke="#846142" stroke-width="1.5"/><circle cx="176" cy="92" r="11" fill="#F8F6EF" stroke="#AAB6B5" stroke-width="1.2"/><circle cx="207" cy="112" r="10" fill="#CE3D4E" stroke="#8A3441" stroke-width="1.2"/><circle cx="230" cy="126" r="10" fill="#E4BB68" stroke="#8A7042" stroke-width="1.2"/><path d="M171 88q5-4 10 0m22 20q5-4 10 0m13 7q5-4 10 0" fill="none" stroke="#FFF6E7" stroke-width="1.1"/></g>
+ <g id="layer-details"><path d="M72 143 217 89m-132 61 117-43m-90 37 91-34" fill="none" stroke="#A9794D" stroke-width=".9" opacity=".85"/><path d="M47 165h39m144 0h42" stroke="#C7A27B" stroke-width="1.1"/><path d="M235 69h11m-7-4 7 4-7 4" fill="none" stroke="#D7E0DD" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M116 133 218 95" fill="none" stroke="#B98754" stroke-width=".9"/><path d="M131 139 226 104" fill="none" stroke="#F0D3A5" stroke-width=".9"/><path d="M145 144 219 116" fill="none" stroke="#A9794D" stroke-width=".9"/></g>
+ <g id="layer-lighting"><ellipse cx="147" cy="115" rx="77" ry="47" fill="#FFF6E7" opacity=".04"/><path d="M66 139 229 78" stroke="#FFF0D6" stroke-width="1" opacity=".7"/></g>
+</svg>

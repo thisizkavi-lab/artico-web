@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: snowy (Adjective)
+  CONTEXTUAL_DEFINITION: A landscape broadly covered with fresh snow, with snow-coated trees and rooftops.
+  PEDAGOGICAL_ART_DIRECTOR: Show a bright settled winter landscape where snow has coated the ground, rooftops, and evergreens; keep flakes out of the air.
+  PEDAGOGICAL_ARCHETYPE: 3 - Broad landscape condition
+  SYNONYM_GUARD: Snowy is the settled white-covered state, unlike active snowfall or a heavy snowstorm.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Fresh snow blankets a cottage roof and several fir trees beneath a calm pale winter sky.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:snowy" data-archetype="snow-covered-settled-landscape">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sy-sky" x2="0" y2="1"><stop stop-color="#A9C8D7"/><stop offset="1" stop-color="#E7F0EC"/></linearGradient><linearGradient id="sy-snow" x2="0" y2="1"><stop stop-color="#FBFDF8"/><stop offset="1" stop-color="#C9D9DC"/></linearGradient><linearGradient id="sy-house" x2="0" y2="1"><stop stop-color="#BAA283"/><stop offset="1" stop-color="#8D795F"/></linearGradient><filter id="sy-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#314956" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sy-sky)"/><path d="M0 128Q77 107 152 126T304 117V192H0Z" fill="#A6B8B8"/><path d="M0 151Q75 134 149 151T304 141V192H0Z" fill="url(#sy-snow)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#B3C4C2" stroke-width="1.2"/><ellipse cx="152" cy="164" rx="105" ry="5" fill="#435760" opacity=".13"/><path d="M25 143L35 116L45 143L54 112L67 146Z M237 140L249 105L261 140L270 113L282 143Z" fill="#698B82"/><path d="M91 143V96L124 70L158 96V145Z" fill="url(#sy-house)" stroke="#766855" stroke-width="1.6"/><path d="M84 98L124 62L164 98Z" fill="#6A7780" stroke="#566870" stroke-width="1.5"/><rect x="108" y="112" width="18" height="33" fill="#6C8790" stroke="#635D51" stroke-width="1.3"/><rect x="136" y="105" width="13" height="15" fill="#B6D6D9" stroke="#685F52" stroke-width="1.1"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sy-shadow)">
+  <path d="M82 96Q100 78 124 59Q148 77 168 97Q151 91 137 98Q121 90 107 98Q94 91 82 96Z" fill="url(#sy-snow)" stroke="#C2D3D6" stroke-width="1.5"/><path d="M22 144L34 111L43 134L54 106L69 146Z M231 141L248 99L260 132L271 108L288 144Z" fill="#F6FAF7" stroke="#D2DFE0" stroke-width="1.2"/><path d="M29 143L36 122L44 141M241 141L250 114L260 138" fill="none" stroke="#A8C1C3" stroke-width="1.2"/>
+  <path d="M0 151Q74 134 149 151T304 141V164Q231 159 151 165T0 162Z" fill="#F8FBF8"/><path d="M9 153q43-10 83-2m116-4q45-9 84-3" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/><path d="M88 97Q109 78 124 67Q145 80 160 96" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><circle cx="47" cy="136" r="1.3" fill="#FFFFFF"/><circle cx="268" cy="134" r="1.3" fill="#FFFFFF"/><circle cx="83" cy="157" r="1.2" fill="#FFFFFF"/><circle cx="210" cy="158" r="1.2" fill="#FFFFFF"/><path d="M183 146q17-5 32-2" fill="none" stroke="#DBE9E7" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M91 100L124 68L156 97" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".9"/><path d="M0 151q50-12 97-2m111-3q49-10 96-2" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

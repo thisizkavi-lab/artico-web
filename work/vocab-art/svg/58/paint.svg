@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: paint (verb)
+  CONTEXTUAL_DEFINITION: Make an artwork by spreading colored paint onto a canvas with a brush.
+  PEDAGOGICAL_ARCHETYPE: 4 - Hand, tool, and visible art result
+  SYNONYM_GUARD: Show colorful paint being applied to a canvas; do not show a paint can, a house wall, or painting a room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A hobby painter in an apron adds a fresh brushstroke to a small canvas; a palette with distinct colors is held in the other hand, with a stool and easel in a home studio.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:paint" data-archetype="artist-paints-colorful-canvas-at-home">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="paint-room" x2="0" y2="1"><stop stop-color="#EFF2EC"/><stop offset="1" stop-color="#E1E2D8"/></linearGradient>
+  <linearGradient id="paint-canvas" x2="0" y2="1"><stop stop-color="#FFF8E8"/><stop offset="1" stop-color="#E8E2D4"/></linearGradient>
+  <filter id="paint-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#paint-room)"/><path d="M0 153H304V192H0Z" fill="#D6C5AA"/><path d="M0 153H304" stroke="#9A7C5E" stroke-width="1.5" fill="none"/><rect x="19" y="22" width="56" height="48" rx="3" fill="#C3D7D0" stroke="#6E847B" stroke-width="1.8"/><path d="M47 23V68M21 45H73" stroke="#F7F2E6" stroke-width="2.5" fill="none"/></g>
+ <g id="layer-context"><path d="M24 153V95H67V153" fill="#866F58" stroke="#64523F" stroke-width="1.2"/><path d="M30 103h31v29H30Z" fill="#829A8C"/><path d="M34 125l8-13 8 13" fill="none" stroke="#E1BF73" stroke-width="1.2"/><path d="M223 44H286V50H223ZM228 50V90M281 50V90" stroke="#806B55" stroke-width="2" fill="none"/><path d="M236 59h35v24h-35Z" fill="#D8C9A9"/><path d="M241 78l8-12 7 12m4-5 5-7 6 12" stroke="#769080" stroke-width="1.2" fill="none"/><ellipse cx="151" cy="154" rx="86" ry="5" fill="#6A5038" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#paint-shadow)">
+  <path d="M84 105Q89 89 108 90L127 101L132 140H77Z" fill="#718D84" stroke="#405B61" stroke-width="1.4"/><path d="M88 102Q106 109 124 102L129 140H82Z" fill="#C8916B" stroke="#775946" stroke-width="1.1"/><circle cx="105" cy="76" r="14" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M92 75q0-14 13-15q13 0 14 14l-7-6-12 1Z" fill="#51433D"/><path d="M100 78h1m8 0h1" stroke="#263C45" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M99 84q5 4 10 0" stroke="#91594B" stroke-width="1" fill="none"/>
+  <path d="M92 105Q76 110 71 122L77 129L98 117" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/><path d="M121 102Q137 103 149 111L156 118Q153 124 147 121L137 115L121 114" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M169 63H232V117H169Z" fill="#806B55" stroke="#4E5C58" stroke-width="1.3"/><path d="M174 68H227V112H174Z" fill="url(#paint-canvas)" stroke="#B3A389" stroke-width="1"/><path d="M176 100Q187 85 196 96Q204 80 225 91V111H176Z" fill="#85A17D"/><path d="M176 104Q188 95 199 104Q211 93 225 102V111H176Z" fill="#718C76"/><circle cx="212" cy="78" r="5" fill="#E6C36E"/><path d="M181 101l6-11 7 11m12-1 5-9 7 10" stroke="#D4B16D" stroke-width="1.1" fill="none"/>
+  <path d="M153 112L194 81" stroke="#805A3E" stroke-width="2.7" stroke-linecap="round" fill="none"/><path d="M191 83l9-8-4 12Z" fill="#536A75"/><path d="M78 114Q67 111 60 118L67 130Q76 129 84 122Z" fill="#F3E5CA" stroke="#8A795E" stroke-width="1"/><circle cx="68" cy="119" r="2.2" fill="#D66E67"/><circle cx="75" cy="121" r="2.2" fill="#E4C568"/><circle cx="70" cy="126" r="2.2" fill="#78A193"/>
+ </g>
+ <g id="layer-details"><path d="M96 96q8-5 16-2m-34 48q10 2 19 0m110-62q12-5 23-1" stroke="#F5D2B2" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="52" cy="84" r="1.3" fill="#FFFFFF"/><circle cx="62" cy="76" r="1" fill="#FFFFFF"/><path d="M166 117l-4 27m75-27 4 27m-79 0h84" stroke="#7C674F" stroke-width="1.3" fill="none"/><path d="M176 72q10-3 19 0" stroke="#FFF8E9" stroke-width="1.2" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="196" cy="92" rx="50" ry="39" fill="#F0CC78" opacity=".1"/><path d="M180 71q18-5 31-1m-92 42q9 1 15 5" stroke="#FFF8E8" stroke-width="1.4" fill="none" opacity=".7" stroke-linecap="round"/></g>
+</svg>

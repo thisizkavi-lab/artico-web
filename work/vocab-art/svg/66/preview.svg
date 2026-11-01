@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: preview
+ CONTEXTUAL_DEFINITION: A short teaser for a television program that will be shown later.
+ PEDAGOGICAL_ARCHETYPE: brief TV teaser with a future program cue
+ SYNONYM_GUARD: Show a short teaser and a later viewing cue; do not depict a full program episode or an on-demand library.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A TV shows three tiny teaser moments in a filmstrip beside a larger later program card and a clock.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:preview" data-archetype="TV program teaser">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M27 24H276Q282 24 282 30V141H27Z" fill="#26384A"/><path d="M36 31H274V133H36Z" fill="#405663"/><path d="M44 39H266V124H44Z" fill="#597D8B"/><path d="M131 141L137 149H171L177 141Z" fill="#64777C"/><path d="M118 149H190V154H118Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M58 58H104V94H58Z" fill="#B85E5A"/><path d="M109 58H155V94H109Z" fill="#D6A64C"/><path d="M160 58H206V94H160Z" fill="#798C72"/>
+  <path d="M63 63H99V88H63Z" fill="#8DA39B"/><path d="M114 63H150V88H114Z" fill="#91A2A2"/><path d="M165 63H201V88H165Z" fill="#D9DECA"/>
+  <circle cx="78" cy="72" r="4" fill="#D29A78"/><path d="M74 77Q78 75 82 78L85 87H71Z" fill="#D6A64C"/><path d="M118 84L130 67L142 84Z" fill="#B85E5A"/><circle cx="181" cy="73" r="5" fill="#D6A64C"/><path d="M176 81Q181 77 186 81L190 88H172Z" fill="#B85E5A"/>
+  <path d="M54 54H209V98H54Z" fill="none" stroke="#F6E5CE" stroke-width="1.8"/><path d="M66 103H198" stroke="#D6A64C" stroke-width="1.2"/>
+  <path d="M226 62H254V96H226Z" fill="#D6A64C"/><path d="M231 67H249V89H231Z" fill="#F6E5CE"/><path d="M236 74L245 78L236 83Z" fill="#26384A"/>
+  <circle cx="243" cy="46" r="12" fill="#F6E5CE" stroke="#D6A64C" stroke-width="1.7"/><path d="M243 38V46L249 49" stroke="#26384A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M214 78H221" stroke="#F6E5CE" stroke-width="1.6"/><path d="M218 74L222 78L218 82" fill="none" stroke="#F6E5CE" stroke-width="1.4"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M53 104H212" stroke="#26384A" stroke-width="3"/><path d="M57 108H210" stroke="#D6A64C" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <path d="M53 50H207" stroke="#F6E5CE" stroke-width="1.2"/>
+  <circle cx="214" cy="78" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M61 59H100M112 59H152M163 59H203" stroke="#FFF7E4" stroke-width="1" opacity=".7"/><circle cx="101" cy="96" r="1.8" fill="#D6A64C"/><circle cx="155" cy="96" r="1.8" fill="#B85E5A"/><circle cx="207" cy="96" r="1.8" fill="#798C72"/>
+  <path d="M43 40L58 58M265 40L253 58" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="148" cy="64" rx="90" ry="34" fill="#E7C66B" opacity=".1"/><path d="M39 38L61 68M270 38L251 68" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M36 134H274" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

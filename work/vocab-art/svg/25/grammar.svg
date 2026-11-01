@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: grammar (Noun)
+  CONTEXTUAL_DEFINITION: The rules and structure that organize how words form meaningful phrases and sentences.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show colored word-like blocks arranged into a stable ordered structure, not a vocabulary list or written sentence.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language classroom board.
+    - Context_Layer: Small picture cards representing people and actions.
+    - Focal_Layer: Blocks align into a meaningful structure with a connector holding order.
+    - Details_Layer: One block is moved into the correct sequence.
+    - Lighting_Layer: Clear light on the organized structure.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:grammar" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="grammar-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="grammar-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#grammar-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/><path d="M23 27H281V118H23Z" fill="#5479AC" stroke="#315782" stroke-width="1.7"/></g>
+  <g id="layer-context"><circle cx="57" cy="55" r="9" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1"/><path d="M48 55Q49 44 58 45Q67 46 66 56" fill="#27364B"/><path d="M45 72Q57 66 69 72L72 90H42Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/><path d="M231 66L242 49L253 66Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><path d="M235 78H251V90H235Z" fill="#91A77C" stroke="#54765A" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#grammar-shadow)"><path d="M86 70H128V89H86Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M134 70H177V89H134Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/><path d="M183 70H226V89H183Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/><path d="M128 79H134M177 79H183" stroke="#FFFEFA" stroke-width="3"/><path d="M91 76H122M139 76H171M188 76H219" stroke="#FFFEFA" stroke-width="1.8"/><path d="M98 103Q154 119 213 103" fill="none" stroke="#DCECFB" stroke-width="2.4"/><path d="M151 98L158 108L165 98" fill="none" stroke="#F6D777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M105 55H146" stroke="#DCECFB" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M160 55H205" stroke="#DCECFB" stroke-width="1.5" stroke-dasharray="3 3"/></g>
+  <g id="layer-details"><circle cx="129" cy="57" r="3" fill="#F6D777"/><circle cx="179" cy="57" r="3" fill="#F6D777"/><path d="M134 95L139 101M178 95L173 101" stroke="#D9857F" stroke-width="1.5"/><path d="M39 101H266" stroke="#FFFFFF" stroke-width="1" opacity=".5"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="83" rx="133" ry="75" fill="#FEF9C3" opacity=".08"/><path d="M23 27H281V118" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

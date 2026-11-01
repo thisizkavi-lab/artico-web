@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: guidebook
+  CONTEXTUAL_DEFINITION: A book that gives travelers information and pictures about places to visit.
+  PEDAGOGICAL_ART_DIRECTOR: Make an open travel reference book the hero, with landmark pictures and a small route map but no writing.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: Show a guide to places, not a phrasebook for spoken language.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: An open illustrated book shows a city tower on one page and a folded local route map on the other, with a small compass beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:guidebook" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gb-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DEE9E8"/><stop offset="1" stop-color="#C5CDC6"/></linearGradient>
+  <linearGradient id="gb-pages" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF6"/><stop offset="1" stop-color="#D8E1DB"/></linearGradient>
+  <linearGradient id="gb-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#668CA9"/><stop offset="1" stop-color="#3E5F7A"/></linearGradient>
+  <filter id="gb-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="1.8" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gb-bg)"/><path d="M25 22H279V169H25Z" fill="#E8EAE2" stroke="#65777B" stroke-width="1.4"/><path d="M31 149H273" stroke="#C6C5BA" stroke-width="1.1"/><circle cx="59" cy="44" r="12" fill="#E8D09F"/><path d="M222 31H268V69H222Z" fill="#A9C9CF" stroke="#526873" stroke-width="1"/><path d="M245 31V69M222 50H268" stroke="#526873" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M41 134H263V151H41Z" fill="#A9825B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M53 151V159M251 151V159" stroke="#624D3B" stroke-width="3"/><circle cx="260" cy="112" r="18" fill="#D7E3DF" stroke="#526274" stroke-width="1.2"/><path d="M260 96V128M244 112H276" stroke="#526274" stroke-width="1"/><path d="M260 112L271 105" stroke="#D85E55" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#gb-shadow)"><path d="M55 73L151 61V130L55 141Z" fill="url(#gb-pages)" stroke="#263F4B" stroke-width="1.8"/><path d="M151 61L248 73V141L151 130Z" fill="url(#gb-pages)" stroke="#263F4B" stroke-width="1.8"/><path d="M151 61V131" stroke="#526774" stroke-width="2"/><path d="M83 122L106 95L129 122Z" fill="#879F83" stroke="#50695D" stroke-width="1"/><path d="M92 122V110H100V122M108 122V114H116V122" fill="#D8C4A1" stroke="#526274" stroke-width=".8"/><path d="M178 81L202 77L226 85L225 114L178 119Z" fill="#A7D0D1" stroke="#4D6973" stroke-width=".8"/><path d="M182 111L192 97L201 106L210 90L222 111Z" fill="#92A98A"/><path d="M184 114L197 99L208 108L218 94" fill="none" stroke="#D99B4D" stroke-width="2"/><circle cx="197" cy="99" r="2.5" fill="#F2C14E"/></g>
+ <g id="layer-details"><path d="M57 75L148 64M154 64L246 75" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><ellipse cx="152" cy="161" rx="113" ry="5" fill="#526274" opacity=".16"/><path d="M41 135H262" stroke="#D2B38A" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="101" rx="128" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M26 23H278" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

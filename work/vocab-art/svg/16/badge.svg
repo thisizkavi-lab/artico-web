@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: badge (Noun)
+  CONTEXTUAL_DEFINITION: A small emblem worn as an identifying or decorative pin.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with wear cue
+  SYNONYM_GUARD: Show a pinned shield-shaped emblem, not a round coin or name tag.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper with a quiet fabric patch.
+    - Context_Layer: Muted jacket lapel.
+    - Focal_Layer: Blue shield badge and gold fastening pin.
+    - Details_Layer: Abstract starburst emblem without lettering.
+    - Lighting_Layer: Small warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:badge" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="160" rx="78" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M66 35L169 38L231 157H74Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/><path d="M169 40L126 87L209 158" fill="none" stroke="#AAB5C3" stroke-width="2"/>
+  <ellipse cx="151" cy="91" rx="55" ry="51" fill="#FEF3C7" opacity=".52"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M121 50Q151 41 181 50L177 100Q167 119 151 128Q135 119 125 100Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M128 56Q151 50 174 56L171 96Q164 109 151 116Q138 109 131 96Z" fill="#7595C0" stroke="#B9CCE2" stroke-width="1.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M151 68L156 80L169 81L159 89L162 102L151 95L140 102L143 89L133 81L146 80Z" fill="#F0C66B" stroke="#805A19" stroke-width="1.7"/>
+  <circle cx="151" cy="86" r="3" fill="#FAF8F3"/><path d="M147 125L155 125L161 146L143 146Z" fill="#D9A441" stroke="#805A19" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <circle cx="151" cy="87" r="48" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".45"/>
+</svg>

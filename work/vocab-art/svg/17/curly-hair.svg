@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: curly hair (Noun phrase)
+  CONTEXTUAL_DEFINITION: Hair formed into distinct ringlets or curls.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Draw separated, defined loops rather than a diffuse frizzy halo.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Muted shoulders and neck.
+    - Focal_Layer: Rounded defined curls surrounding face.
+    - Details_Layer: Individual spiral locks.
+    - Lighting_Layer: Warm curl highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:curly hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="94" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="90" rx="112" ry="75" fill="#FEF3C7" opacity=".36"/><path d="M78 166Q85 133 119 124H185Q220 134 226 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M107 157Q101 126 102 89Q105 50 152 47Q199 50 202 89Q203 126 197 157Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M99 95Q89 56 115 43Q116 20 139 34Q155 16 171 34Q195 24 201 51Q221 66 205 103L198 137L184 141L182 89Q152 78 119 91L116 141L102 136Z" fill="#4A342F" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <g fill="#805333" stroke="#1E2A3B" stroke-width="2"><circle cx="108" cy="47" r="13"/><circle cx="131" cy="35" r="13"/><circle cx="158" cy="33" r="13"/><circle cx="183" cy="44" r="13"/><circle cx="199" cy="67" r="13"/><circle cx="104" cy="72" r="13"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 100Q129 95 139 100M164 100Q174 95 184 100" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 107Q130 110 138 107M166 107Q174 110 181 107" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 105L148 120L155 123M138 139Q152 146 167 139" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M111 45Q118 38 124 45M151 31Q158 25 164 32M193 61Q200 55 205 63" fill="none" stroke="#C99167" stroke-width="2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M79 52Q68 88 82 120M225 51Q238 88 222 120" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

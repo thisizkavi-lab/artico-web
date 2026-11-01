@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: toilet (Noun)
+  CONTEXTUAL_DEFINITION: A bathroom fixture with a bowl and flush tank.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show the unmistakable porcelain bowl, raised seat, pedestal, and water tank.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small tiled bathroom wall and floor.
+    - Context_Layer: Flush tank against the wall.
+    - Focal_Layer: White toilet bowl and pedestal base.
+    - Details_Layer: Seat rim and flush handle.
+    - Lighting_Layer: Clean porcelain highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:toilet" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 46 H304 M0 92 H304 M0 138 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.2"/><path d="M0 149 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 149 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="153" cy="168" rx="62" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><rect x="126" y="38" width="72" height="52" rx="4" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M134 46 H190 V82 H134Z" fill="#E7EFF0" stroke="#647D8B" stroke-width="1.4"/><path d="M140 90 V111 H185 V90" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M142 111 H183 V143 Q183 151 174 151 H151 Q142 151 142 143Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M134 105 Q136 91 162 91 Q188 91 190 105 Q183 116 162 116 Q141 116 134 105Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.5"/><ellipse cx="162" cy="103" rx="17" ry="5.5" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M191 48 H199" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M147 124 Q162 130 178 124" fill="none" stroke="#DCECFB" stroke-width="2"/><path d="M148 148 H178" stroke="#DCECFB" stroke-width="1.6"/><circle cx="196" cy="49" r="2" fill="#1E2A3B"/></g>
+  <g id="layer-details"><path d="M139 95 Q162 89 185 95" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

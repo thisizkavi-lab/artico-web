@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: thesis (Noun)
+  CONTEXTUAL_DEFINITION: A substantial piece of university research written for an advanced degree.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show a thick bound research volume with gathered source books and a data diagram, distinct from a short essay or a graduation diploma.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet university study area with shelf and pale wall.
+    - Context_Layer: Stacks of reference books, notes, and a small research chart.
+    - Focal_Layer: Thick bound dissertation opened to illustrated research pages.
+    - Details_Layer: Layered page edges, ribbon marker, and a subtle research award seal.
+    - Lighting_Layer: Focused warm illumination on the finished scholarly work.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:thesis" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="thesis-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="thesis-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#thesis-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H88V74H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V73M21 49H87" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M224 29H293V76H224Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.3"/><path d="M230 36H246V69H230ZM250 34H267V69H250ZM271 40H287V69H271Z" fill="#5479AC" stroke="#315782" stroke-width="1"/><path d="M233 43H243M253 41H264M274 47H284" stroke="#DCECFB" stroke-width="1.2"/><path d="M35 127H87V143H35Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M40 131H80M40 136H80" stroke="#DCECFB" stroke-width="1.1"/><path d="M215 103V116M215 116H282" fill="none" stroke="#64748B" stroke-width="1.4"/><path d="M220 112L233 106L244 109L257 99L270 103L279 93" fill="none" stroke="#D9857F" stroke-width="2"/><circle cx="233" cy="106" r="2" fill="#D9857F"/><circle cx="257" cy="99" r="2" fill="#D9857F"/><circle cx="279" cy="93" r="2" fill="#D9857F"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#thesis-shadow)"><path d="M60 132L111 59L230 69L181 145Z" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M70 128L116 65L223 74L177 137Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M116 65L119 123L70 128Z" fill="#E7E2D7" stroke="#8D765A" stroke-width="1"/><path d="M116 65L223 74L177 137L119 123Z" fill="#FFFEFA" stroke="#8D765A" stroke-width="1.1"/><path d="M129 77L198 83M126 85L192 91M124 93L187 99" stroke="#88A9D0" stroke-width="1.2"/><path d="M138 111L151 101L163 111L176 104L187 112" fill="none" stroke="#91A77C" stroke-width="2"/><path d="M138 116L187 119M140 120L179 125" stroke="#AFC5DA" stroke-width="1.2"/><path d="M60 132L70 128L119 123L177 137L181 145L122 140Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.5"/><path d="M70 128L75 133L122 138L177 141" fill="none" stroke="#AFC5DA" stroke-width="1.2"/><path d="M178 143Q185 153 175 163L169 140" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M115 67L116 121" stroke="#8D6138" stroke-width="2.5"/><path d="M111 74L118 73M110 83L118 82M110 92L118 91M111 101L118 100" stroke="#D9A441" stroke-width="1.4"/><path d="M202 84L208 82" stroke="#D9A441" stroke-width="2.2"/><circle cx="195" cy="123" r="8" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><path d="M191 123L194 126L199 119" fill="none" stroke="#FFFEFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M97 136L105 135M113 139L121 138M130 141L138 140" stroke="#FFFFFF" stroke-width="1" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="156" cy="103" rx="128" ry="72" fill="#FEF9C3" opacity=".1"/><path d="M20 25H88V73" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M116 65L223 74L177 137" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

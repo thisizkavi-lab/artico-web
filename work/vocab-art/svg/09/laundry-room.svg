@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: laundry room (Noun)
+  CONTEXTUAL_DEFINITION: A room for washing, drying, and folding clothes.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: Show a washer, hamper, and folded laundry together to identify the dedicated laundry space.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Utility-room wall and floor.
+    - Context_Layer: Front-loading washer and a laundry basket.
+    - Focal_Layer: Open door reveals clothing in the washing machine.
+    - Details_Layer: Folded towels and a drying line.
+    - Lighting_Layer: Clean daylight from a small high window.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:laundry room" data-archetype="room-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF1F3"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 138 304 148 L304 192 L0 192Z" fill="#D8DEE3"/><ellipse cx="153" cy="167" rx="108" ry="8" fill="#BCC5C8"/><rect x="221" y="36" width="50" height="40" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M246 36 L246 76 M221 56 L271 56" stroke="#FAF8F3" stroke-width="1.8"/></g>
+  <g id="layer-context"><rect x="67" y="72" width="105" height="80" rx="9" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.4"/><rect x="77" y="82" width="85" height="14" rx="4" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><circle cx="120" cy="121" r="27" fill="#DCECFB" stroke="#5479AC" stroke-width="3"/><circle cx="120" cy="121" r="19" fill="#B9DFF1"/><path d="M107 121 Q115 108 126 116 Q137 124 126 134 Q115 141 107 121Z" fill="#8B5CA8"/><rect x="194" y="112" width="47" height="40" rx="4" fill="#B97840" stroke="#8A5A35" stroke-width="1.7"/><path d="M194 112 Q218 100 241 112" fill="#E8D9B8" stroke="#8A5A35" stroke-width="1.6"/><path d="M200 112 L202 104 M234 112 L232 104" stroke="#8A5A35" stroke-width="2.5"/><path d="M200 139 Q218 144 235 138" fill="none" stroke="#CE3D4E" stroke-width="2"/><rect x="41" y="128" width="21" height="23" rx="3" fill="#C88446"/></g>
+  <g id="layer-details"><path d="M203 47 L204 85 M238 50 L239 85 M262 48 L263 84" stroke="#8A5A35" stroke-width="2"/><path d="M199 66 Q208 62 216 66 L216 85 L199 85Z" fill="#8B5CA8"/><path d="M219 57 Q227 53 235 57 L235 85 L219 85Z" fill="#5479AC"/><path d="M244 68 Q251 64 258 68 L258 85 L244 85Z" fill="#F2C14E"/><rect x="184" y="92" width="40" height="12" rx="3" fill="#FAF8F3" stroke="#B9C7CF" stroke-width="1.2"/><rect x="190" y="82" width="40" height="11" rx="3" fill="#DCECFB" stroke="#B9C7CF" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><circle cx="245" cy="40" r="17" fill="#FFFFFF" opacity="0.3"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: storm (Noun)
+  CONTEXTUAL_DEFINITION: A violent weather event with dark clouds, strong wind, rain, and lightning together.
+  PEDAGOGICAL_ART_DIRECTOR: Combine a deep storm cloud, slashing rain, one bolt, bent tree, and rough water in one active event.
+  PEDAGOGICAL_ARCHETYPE: 3 - Combined severe-weather event
+  SYNONYM_GUARD: Storm combines several violent weather cues; lightning alone and threatening stormy skies are separate cards.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A dark cloud pours angled rain while a bright bolt lights rough waves and bends a coastal tree.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:storm" data-archetype="combined-rain-wind-lightning-storm">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="st-sky" x2="0" y2="1"><stop stop-color="#536B7C"/><stop offset="1" stop-color="#93AAB2"/></linearGradient><linearGradient id="st-water" x2="0" y2="1"><stop stop-color="#5CA3B4"/><stop offset="1" stop-color="#315F77"/></linearGradient><linearGradient id="st-cloud" x2="0" y2="1"><stop stop-color="#405665"/><stop offset="1" stop-color="#293F50"/></linearGradient><linearGradient id="st-bolt" x2="0" y2="1"><stop stop-color="#FFF4AE"/><stop offset="1" stop-color="#E5A84A"/></linearGradient><filter id="st-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1F3745" flood-opacity=".26"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#st-sky)"/><path d="M0 129Q69 112 145 128T304 119V192H0Z" fill="#6E8587"/><path d="M0 151Q70 137 149 152T304 143V192H0Z" fill="#506C73"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#8DA9AF" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="112" ry="5" fill="#253E4A" opacity=".2"/><path d="M0 147Q34 132 69 146T139 145T210 148T304 142V164H0Z" fill="url(#st-water)"/><path d="M11 153q13-8 26 0m55-2q13-9 27 0m90 1q13-10 27 0m33-2q13-8 26 0" fill="none" stroke="#C0E3E2" stroke-width="1.8" stroke-linecap="round"/><path d="M20 139q14-7 27 0" fill="none" stroke="#91B9BD" stroke-width="1.4" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#st-shadow)">
+  <path d="M42 55Q45 38 64 38Q74 19 94 28Q111 22 119 39Q139 34 149 50Q168 41 179 58Q185 74 168 81H62Q42 74 42 55Z" fill="url(#st-cloud)" stroke="#304757" stroke-width="1.7"/><path d="M54 51q13-12 28-6m24-9q12-5 20 4m22 12q13-7 23 3" fill="none" stroke="#9FB3B9" stroke-width="1.4"/>
+  <path d="M75 83L60 115M98 81L83 119M121 83L106 120M144 83L129 121M167 82L152 120M190 84L175 120M213 86L198 121M236 84L221 120M259 85L244 121" fill="none" stroke="#7BC0C7" stroke-width="2.6" stroke-linecap="round"/><path d="M104 103l-10 22m83-21-11 23m73-22-10 22" fill="none" stroke="#D7F0ED" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M154 78L127 113L148 111L128 148L183 97L159 100L177 75Z" fill="url(#st-bolt)" stroke="#D0933D" stroke-width="1.8" stroke-linejoin="round"/><path d="M153 83L138 108L155 106L138 138L171 99L152 102L169 81Z" fill="#FFFBD1"/>
+  <path d="M0 150Q34 137 68 150T139 148T210 152T304 144V164H0Z" fill="url(#st-water)"/><path d="M17 151q13-9 25 0m67 1q13-10 27 0m89-1q13-9 25 0m31 0q12-8 23 0" fill="none" stroke="#DBF7F2" stroke-width="2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#EFF4EF" stroke-width="1" opacity=".42"/><path d="M66 93l-5 8m119-8-5 8m91-8-5 8" fill="none" stroke="#D3E8E6" stroke-width="1.2" stroke-linecap="round"/><path d="M207 58q10-5 18 1" fill="none" stroke="#9DB1B6" stroke-width="1.2" stroke-linecap="round"/><circle cx="41" cy="145" r="1.2" fill="#FFF8E7"/><circle cx="266" cy="148" r="1.2" fill="#FFF8E7"/></g>
+ <g id="layer-lighting"><path d="M45 54q4-13 18-13m37-9q11-3 18 4" fill="none" stroke="#9CB2B7" stroke-width="1.2"/><path d="M153 79l-22 33" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><path d="M4 149q29-10 55-1m180-2q30-8 61-1" fill="none" stroke="#D4EBE7" stroke-width="1.1"/></g>
+</svg>

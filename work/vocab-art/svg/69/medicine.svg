@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 69 — Medicine and treatment
+  WORD: medicine (medical field)
+  CONTEXTUAL_DEFINITION: The university subject that studies the human body, health, and medical care.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Medical students examine a teaching skeleton and anatomy model with textbooks, clearly showing the academic subject instead of a clinic visit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University medical classroom with specimen cabinet.
+    - Context_Layer: Stacked unlettered textbooks and model tray.
+    - Focal_Layer: Students study a classroom skeleton and torso model.
+    - Details_Layer: Stethoscope and anatomical heart model.
+    - Lighting_Layer: Calm clinical light on the teaching models.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="69:medicine" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="med-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="med-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#med-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 29H94V82H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 30V81M22 55H93" stroke="#FFFFFF" stroke-width="2.5"/><rect x="229" y="39" width="51" height="90" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/><rect x="34" y="118" width="40" height="9" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><rect x="39" y="108" width="40" height="9" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><rect x="44" y="98" width="40" height="9" fill="#E3E8F0" stroke="#64748B" stroke-width="1.2"/><path d="M236 52H273M236 64H273M236 76H273M236 88H273" stroke="#F7EBCF" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#med-shadow)"><circle cx="151" cy="47" r="14" fill="#FEF9C3" stroke="#64748B" stroke-width="1.6"/><path d="M145 39Q151 35 157 39M141 47H161M145 56L151 58L157 56" fill="none" stroke="#64748B" stroke-width="1.3"/><path d="M151 61V124M129 76L151 69L173 76M129 76L126 107M173 76L176 107M141 78L139 96L151 102L163 96L161 78M139 96L151 124L163 96M151 102V124" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M120 126H181" stroke="#315782" stroke-width="5" stroke-linecap="round"/><path d="M72 88Q78 72 92 73Q105 74 109 90L112 121L96 130L77 122Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="91" cy="62" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M79 62Q80 49 92 49Q103 50 104 63L99 66Q97 56 91 56Q86 56 82 69Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M106 92L125 102" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M106 92L125 102" stroke="#C98961" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M195 93Q205 80 215 91Q220 104 207 116Q194 108 195 93Z" fill="#D9857F" stroke="#A95059" stroke-width="1.7"/><path d="M198 96Q206 101 212 94M207 116V126" fill="none" stroke="#FEF9C3" stroke-width="1.5"/><path d="M190 122Q178 136 191 142Q204 146 206 132" fill="none" stroke="#5479AC" stroke-width="2.4"/><circle cx="190" cy="122" r="3.2" fill="#5479AC"/><circle cx="206" cy="132" r="3.2" fill="#5479AC"/><path d="M76 85L93 94" stroke="#DCECFB" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="150" cy="91" rx="120" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M139 36Q151 28 163 36" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/></g>
+</svg>

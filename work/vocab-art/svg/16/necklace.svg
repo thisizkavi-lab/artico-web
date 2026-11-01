@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: necklace (Noun)
+  CONTEXTUAL_DEFINITION: A chain or string of ornaments worn around the neck.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: A single necklace drapes around the neck and ends in a pendant.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted neck and shoulder neckline.
+    - Focal_Layer: Gold chain and blue pendant.
+    - Details_Layer: Simple chain links and jewel facets.
+    - Lighting_Layer: Soft halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:necklace" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="87" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M68 165Q75 113 113 100L132 82H172L191 100Q229 113 236 165Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/><path d="M132 83Q152 99 172 83" fill="none" stroke="#7B8A9E" stroke-width="2.2"/>
+  <ellipse cx="152" cy="119" rx="66" ry="54" fill="#FEF3C7" opacity=".34"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M117 95Q113 131 152 149Q191 131 187 95" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M117 95Q113 131 152 149Q191 131 187 95" fill="none" stroke="#D9A441" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M152 143L166 154L152 174L138 154Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M152 147L157 154L152 161L147 154Z" fill="#C7D9F0"/><circle cx="152" cy="167" r="2.3" fill="#FFF1B8"/><path d="M120 101Q126 108 130 114M184 101Q178 108 174 114" fill="none" stroke="#F4DBA0" stroke-width="1.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="132" rx="47" ry="43" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".58"/>
+</svg>

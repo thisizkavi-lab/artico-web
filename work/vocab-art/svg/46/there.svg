@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: there
+  CONTEXTUAL_DEFINITION: A place away from the speaker, indicated as a more distant destination.
+  PEDAGOGICAL_ART_DIRECTOR: Contrast a small current-location marker by the traveler with a large gold destination pin far across the map.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make distance from the speaker obvious; do not mark the traveler's current place as the target.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Traveler/current marker at (54,139) in lower-left; distant gold pin at (237,45) in upper-right; a route links them across the map grid.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:there" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="there-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6EFDC"/><stop offset="1" stop-color="#BFD7C2"/></linearGradient>
+    <linearGradient id="there-route" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#82A9D1"/></linearGradient>
+    <radialGradient id="there-destination"><stop stop-color="#FFF1AA"/><stop offset=".68" stop-color="#F2C14E" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="there-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M13 15H291V177H13Z" fill="url(#there-map)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M18 58H286M18 112H286M78 18V174M153 18V174M226 18V174" stroke="#A8B7A5" stroke-width="1.4"/><path d="M16 88H288M116 17V175" stroke="#66788A" stroke-width="12"/><path d="M18 88H286M116 18V174" stroke="#F8F6EF" stroke-width="1.4" stroke-dasharray="6 7"/></g>
+  <g id="layer-context"><rect x="32" y="33" width="31" height="20" rx="3" fill="#D9B996" stroke="#756555" stroke-width="1.4"/><rect x="248" y="133" width="31" height="25" rx="3" fill="#9CB7C8" stroke="#536B7E" stroke-width="1.4"/><circle cx="193" cy="136" r="11" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="78" cy="68" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><path d="M34 163H87M215 29H272" stroke="#F8F6EF" stroke-width="1.8"/></g>
+  <g id="layer-focal" filter="url(#there-shadow)"><path d="M56 139C93 138 113 112 142 99C173 85 190 77 235 48" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 139C93 138 113 112 142 99C173 85 190 77 235 48" fill="none" stroke="url(#there-route)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 5"/><circle cx="55" cy="139" r="15" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2"/><circle cx="55" cy="139" r="5" fill="#FAF8F3"/><circle cx="237" cy="48" r="43" fill="url(#there-destination)"/><path d="M237 20C224 20 216 30 216 45C216 61 237 83 237 83C237 83 258 61 258 45C258 30 250 20 237 20Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="237" cy="45" r="8" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="44" cy="128" r="2.8" fill="#FFFFFF"/><circle cx="103" cy="124" r="2.4" fill="#FFFFFF"/><circle cx="149" cy="95" r="2.6" fill="#FFFFFF"/><circle cx="188" cy="75" r="2.4" fill="#FFFFFF"/><path d="M67 145L81 153M65 153L79 160" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M223 32L231 25M253 31L246 25" stroke="#F9E6AF" stroke-width="1.7" stroke-linecap="round"/><path d="M43 166H68" stroke="#718996" stroke-width="1.5" stroke-dasharray="3 4"/></g>
+  <g id="layer-lighting"><path d="M21 23H107" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><circle cx="237" cy="48" r="49" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/><ellipse cx="55" cy="157" rx="18" ry="4" fill="#34485C" opacity=".24"/></g>
+</svg>

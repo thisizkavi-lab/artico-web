@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: assertive (Adjective)
+  CONTEXTUAL_DEFINITION: Calmly expressing a clear opinion or boundary while respecting another person.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A steady speaker raises one calm open hand while a peer listens; the scene has no shouting or dominance.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm meeting corner with a round table.
+    - Context_Layer: Peer seated at x=230, listening across the table.
+    - Focal_Layer: Speaker at x=92, upright, one hand raised gently at chest level.
+    - Details_Layer: Steady gaze, level shoulders, simple shared plan tokens.
+    - Lighting_Layer: Soft gold edge around the composed speaker.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:assertive" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FAF8F3"/><stop offset="100%" stop-color="#F3ECE1"/></linearGradient><linearGradient id="jacket" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#829A83"/><stop offset="100%" stop-color="#56725E"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 149Q78 142 150 149T304 148V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="163" rx="128" ry="9" fill="#EAE3D5"/></g>
+  <g id="layer-context"><ellipse cx="192" cy="123" rx="91" ry="20" fill="#D5CDBF"/><path d="M110 118H272L263 132H119Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="2"/><path d="M128 131L126 160M251 131L255 160" stroke="#805333" stroke-width="6" stroke-linecap="round"/><circle cx="242" cy="64" r="17" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M225 66Q226 46 243 47Q260 49 260 67L254 70L228 72Z" fill="#35404B"/><path d="M224 87Q242 80 260 88L270 116H219Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M229 90L218 105M257 91L265 103" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M234 64L240 64M248 64L254 64" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="82" cy="99" rx="59" ry="74" fill="#FEF3C7" opacity=".58"/><circle cx="83" cy="55" r="21" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M63 55Q61 33 83 32Q104 34 104 57L98 60Q94 45 81 45Q72 46 65 62Z" fill="#6F665F" stroke="#1E2A3B" stroke-width="2"/><path d="M61 81Q82 74 104 82L116 132H50Z" fill="url(#jacket)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M101 91Q119 81 127 72L126 58" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M101 91Q118 82 126 71L125 58" fill="none" stroke="#E7B99B" stroke-width="5.5" stroke-linecap="round"/><path d="M52 88Q37 98 38 117M111 133L108 160H92L92 134M71 134L69 160H54L53 133" fill="#315782" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M72 56Q77 59 81 56M87 56Q92 59 96 56" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M76 67Q83 70 90 67" fill="none" stroke="#805333" stroke-width="1.6" stroke-linecap="round"/><path d="M119 109H145M150 109H166" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><circle cx="148" cy="109" r="7" fill="#FEF9C3" stroke="#D9A441" stroke-width="2"/><path d="M124 92L131 85M166 91L172 84" stroke="#4A72B2" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M70 43Q81 37 94 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="82" cy="99" rx="59" ry="74" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="3 5" opacity=".4"/></g>
+</svg>

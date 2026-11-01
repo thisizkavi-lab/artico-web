@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: sit an exam (Verb phrase)
+  CONTEXTUAL_DEFINITION: Take a formal written examination while seated.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show one seated student actively writing under exam conditions; this depicts taking an exam rather than the exam paper itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet examination room, tall windows, and clear floor line.
+    - Context_Layer: Wall clock and distant empty desks establish a formal test setting.
+    - Focal_Layer: Seated student at a single desk writing carefully on an answer sheet.
+    - Details_Layer: Pencil in hand, separate question sheet, and subtle concentration pose.
+    - Lighting_Layer: Soft daylight focused on the student's exam desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:sit an exam" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="sit-exam-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="sit-exam-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sit-exam-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 23H93V76H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 24V75M21 50H92" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="259" cy="37" r="15" fill="#FFFEFA" stroke="#64748B" stroke-width="1.5"/><path d="M259 27V37L266 41" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/><path d="M31 122H82V128H31Z" fill="#A98A64"/><path d="M39 128V148M75 128V148" stroke="#8D765A" stroke-width="2.5"/><path d="M224 121H272V127H224Z" fill="#A98A64"/><path d="M231 127V148M266 127V148" stroke="#8D765A" stroke-width="2.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#sit-exam-shadow)"><path d="M112 100H244V110H112Z" fill="#5479AC" stroke="#315782" stroke-width="1.6"/><path d="M121 110V151M234 110V151" stroke="#315782" stroke-width="3"/><path d="M141 84Q154 76 167 84L175 105L159 114L139 104Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="154" cy="69" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M142 69Q143 55 155 56Q168 57 167 70L161 73Q158 63 152 64Q148 64 145 74Z" fill="#27364B"/><path d="M146 111L132 137L119 137M168 110L180 136L203 136" fill="none" stroke="#315782" stroke-width="7" stroke-linecap="round"/><path d="M146 111L132 137L119 137M168 110L180 136L203 136" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M143 86L174 98L197 93" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M143 86L174 98L197 93" fill="none" stroke="#C98961" stroke-width="3" stroke-linecap="round"/><path d="M179 77L224 74L227 99L182 102Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.5"/><path d="M187 84L217 82M188 91L214 89" stroke="#88A9D0" stroke-width="1.3"/><path d="M182 72L193 72L194 74" fill="none" stroke="#D9A441" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M198 91L210 84" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M139 80Q134 76 131 79M170 79Q175 75 179 78" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M191 107L204 107" stroke="#E7B99B" stroke-width="1.5" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="169" cy="95" rx="103" ry="65" fill="#FEF9C3" opacity=".1"/><path d="M20 24H93V75" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M112 100H244" stroke="#FFFFFF" stroke-width="1" opacity=".5"/></g>
+</svg>

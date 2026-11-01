@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: romper suit (Noun)
+  CONTEXTUAL_DEFINITION: A one-piece baby outfit with a loose top and short legs.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The roomy short-legged outfit has shoulder straps and a loose body, distinguishing it from the snug sleeveless bodysuit and short-sleeved onesie.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Nursery clothes rail and warm wall.
+    - Context_Layer: Tiny hanger and soft shoe.
+    - Focal_Layer: Loose romper with short legs, straps, and front pocket.
+    - Details_Layer: Cuffs and button fasteners.
+    - Lighting_Layer: Warm wash behind the bright outfit.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:romper suit" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="romper-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><linearGradient id="romper-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient><filter id="romper-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#romper-bg)"/><path d="M0 153Q77 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M44 41H260" stroke="#80513F" stroke-width="3" stroke-linecap="round"/><path d="M72 41Q74 50 84 50H218Q228 50 230 41" fill="none" stroke="#64748B" stroke-width="2"/><path d="M35 134H89Q96 134 96 141V151H30V141Q30 134 35 134Z" fill="#DCECFB"/></g>
+  <g id="layer-context"><path d="M136 48H168" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M136 48Q136 39 152 39Q168 39 168 48" fill="none" stroke="#80513F" stroke-width="2.4"/><path d="M232 128Q242 119 252 128V140H232Z" fill="#D9857F" stroke="#64748B" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#romper-shadow)"><path d="M117 67L132 58L145 82H159L172 58L187 67L205 80L192 99L179 89V126Q179 137 170 146L152 155L134 146Q125 137 125 126V89L112 99L99 80Z" fill="url(#romper-cloth)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M132 59L145 83M172 59L159 83" stroke="#1E2A3B" stroke-width="2.4"/><path d="M128 125Q151 132 176 125M133 143L152 151L171 143" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M139 98H165V119H139Z" fill="#DCECFB" stroke="#315782" stroke-width="1.5"/><path d="M143 104H161" stroke="#5479AC" stroke-width="1.3"/><circle cx="146" cy="75" r="2" fill="#F2C14E"/><circle cx="158" cy="75" r="2" fill="#F2C14E"/></g>
+  <g id="layer-details"><path d="M121 51Q151 42 183 51" fill="none" stroke="#FFFFFF" stroke-width="2.7"/><circle cx="105" cy="112" r="2.2" fill="#D9A441"/><circle cx="198" cy="112" r="2.2" fill="#D9A441"/><path d="M139 88Q151 93 164 88" fill="none" stroke="#DCECFB" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="105" rx="82" ry="76" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M106 30Q151 17 197 30" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

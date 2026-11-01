@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: rusty (Adjective, language skill)
+  CONTEXTUAL_DEFINITION: Not as skilled as before because a language has not been used for some time.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: Show a learner hesitating while an old unused language book sits dusty nearby; the skill is rusty, not a metal object.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet home study space.
+    - Context_Layer: Closed book and dusty flashcards hint at long disuse.
+    - Focal_Layer: Learner pauses, searching for a word with broken speech flow.
+    - Details_Layer: Fading sound line and uncertain expression.
+    - Lighting_Layer: Muted, slightly cool light with a hopeful warm edge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:rusty" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="rusty-bg" x2="0" y2="1"><stop stop-color="#E9EDF1"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="rusty-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rusty-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H88V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V74M21 49H87" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M196 117H271V136H196Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M202 123H264" stroke="#DCECFB" stroke-width="1.2"/><path d="M202 111L245 105L254 120L210 127Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.1"/><path d="M209 115L243 110" stroke="#8D765A" stroke-width="1.2"/><circle cx="219" cy="99" r="2.1" fill="#B8B1A5"/><circle cx="241" cy="96" r="2.1" fill="#B8B1A5"/><circle cx="252" cy="100" r="1.8" fill="#B8B1A5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#rusty-shadow)"><circle cx="119" cy="74" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M106 74Q107 58 120 59Q133 60 132 75L125 78Q122 67 116 68Q111 69 109 80Z" fill="#27364B"/><path d="M100 93Q119 84 138 93L144 120L130 131L106 123Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M109 96L94 106L82 100M135 96L150 105L164 102" fill="none" stroke="#1E2A3B" stroke-width="4.7" stroke-linecap="round"/><path d="M109 96L94 106L82 100M135 96L150 105L164 102" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/><path d="M110 126L104 149M129 127L141 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M149 47Q149 37 162 37H198Q211 37 211 48V61Q211 72 198 72H180L171 81L173 71H162Q149 71 149 61Z" fill="#FFFEFA" stroke="#AFC5DA" stroke-width="1.3"/><path d="M161 53H169M181 53H189" stroke="#AFC5DA" stroke-width="2" stroke-linecap="round"/><path d="M198 53H202" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="1 4"/></g>
+  <g id="layer-details"><path d="M109 88Q115 83 122 86" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M118 81L116 77M125 82L128 77" stroke="#D9A441" stroke-width="1.2"/><path d="M191 83L195 80M203 85L207 81" stroke="#B8B1A5" stroke-width="1.3"/><circle cx="174" cy="99" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="91" rx="134" ry="74" fill="#FEF9C3" opacity=".07"/><path d="M20 25H88V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/><circle cx="88" cy="70" r="31" fill="#D9A441" opacity=".03"/></g>
+</svg>

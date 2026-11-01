@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: bleed
+ CONTEXTUAL_DEFINITION: To lose blood from a wound.
+ PEDAGOGICAL_ARCHETYPE: a person pressing a tissue to a tiny fingertip cut
+ SYNONYM_GUARD: Use only one small red mark and a clean tissue; keep the image non-graphic.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Show a close hand with a tiny fingertip nick, one small red bead and another hand pressing a folded tissue beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:bleed" data-archetype="minor fingertip bleeding">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="96" ry="5" fill="#8C725A" opacity=".18"/><path d="M42 149H263" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 41H99V101H58Z" fill="#D9D0C2"/><path d="M64 47H93V95H64Z" fill="#A9B9B4"/><path d="M210 40H252V101H210Z" fill="#E3DDD2"/><path d="M217 47H245V95H217Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M79 143H226" stroke="#8C725A" stroke-width="1.2"/><circle cx="91" cy="143" r="2" fill="#D6A64C"/><circle cx="215" cy="143" r="2" fill="#B85E5A"/>
+  <path d="M76 116H104V137H76Z" fill="#D6A64C"/><path d="M80 111Q90 106 100 111L104 117H76Z" fill="#F6E5CE" stroke="#8C725A" stroke-width="1"/>
+  <path d="M82 111L87 105M91 110L97 104" stroke="#F6E5CE" stroke-width="1.2"/>
+  <ellipse cx="150" cy="149" rx="67" ry="3" fill="#F6E5CE" opacity=".55"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="48" r="12" fill="#D29A78"/><path d="M139 47Q140 32 152 33Q164 34 163 50L157 41L141 44Z" fill="#26384A"/>
+  <path d="M132 65Q151 58 170 66L177 113H125Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M137 72L124 85L111 98L104 95M166 72L180 86L191 98" stroke="#D29A78" stroke-width="3.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M130 111L127 146M171 111L176 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- close hand with a tiny nick; other hand presses a clean tissue -->
+  <path d="M190 91Q197 83 205 89L210 97L203 106L195 104L187 98Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M195 82Q200 77 204 82L206 91L200 95L194 91Z" fill="#D29A78" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M194 97L204 101L202 110L194 108Z" fill="#F6E5CE" stroke="#D0C2AF" stroke-width=".8"/>
+  <path d="M142 65L151 73L159 65" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 46Q149 49 153 46M156 46L160 45M145 55Q151 52 157 55" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <circle cx="202" cy="78" r="2" fill="#B85E5A"/><path d="M201 77L204 75" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M196 99L202 101M197 103L201 104" stroke="#D0C2AF" stroke-width=".8"/>
+  <path d="M132 77L138 81M168 77L163 81M131 105L138 108M168 105L162 109" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M150 91L154 94M158 89L161 92M162 86L166 88" stroke="#D6A64C" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M139 122Q151 126 163 122M141 130L149 132M159 130L166 128" stroke="#A9C0C1" stroke-width="1" fill="none"/>
+  <circle cx="181" cy="116" r="1.4" fill="#D6A64C"/><circle cx="185" cy="121" r="1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="67" fill="#E7C66B" opacity=".06"/><path d="M51 32L67 48M252 31L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M42 150H262" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

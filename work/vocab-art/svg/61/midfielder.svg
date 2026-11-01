@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: midfielder
+ CONTEXTUAL_DEFINITION: A soccer player positioned in the middle of the field between defense and attack.
+ PEDAGOGICAL_ARCHETYPE: Player controls a ball inside the center circle with defenders and forwards spread ahead and behind
+ SYNONYM_GUARD: Place the highlighted player at midfield, not beside either goal or in the goalkeeper position.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Overhead-leaning field with center circle and halfway line; central blue midfielder on ball, teammate shapes toward both ends.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:midfielder" data-archetype="player-controls-ball-at-center-circle">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="midfield-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#midfield-sky)"/><path d="M0 42H304V192H0Z" fill="#91A686"/><path d="M0 53h304m-304 68h304m-304 67h304" stroke="#E7EEE4" stroke-width="1.3"/><path d="M152 42v150" stroke="#F4F5EC" stroke-width="1.5"/><circle cx="152" cy="121" r="35" fill="none" stroke="#F4F5EC" stroke-width="1.5"/><circle cx="152" cy="121" r="2.5" fill="#F4F5EC"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="176" rx="110" ry="5" fill="#405B61" opacity=".14"/><path d="M24 24h43m169 0h43" stroke="#DDE8DC" stroke-width="1.2"/><circle cx="268" cy="30" r="11" fill="#E4BB68"/></g>
+ <g id="layer-focal"><circle cx="151" cy="82" r="7" fill="#D99F7C"/><path d="M144 81q2-8 7-8q6 0 7 7l-4 2-8-1Z" fill="#344F5A"/><path d="M143 90q9-8 18 0l7 20-15 10-16-9Z" fill="#D4866D" stroke="#805247" stroke-width="1.1"/><path d="M143 95l-12-6-9 7m35-8 13-8 8 5" stroke="#D99F7C" stroke-width="4" stroke-linecap="round"/><path d="M145 117l-7 12-12 2m27-14 9 13 12 0" stroke="#263E48" stroke-width="4.5" stroke-linecap="round"/><circle cx="174" cy="130" r="6" fill="#F7F3E8" stroke="#405B61" stroke-width=".9"/><path d="M174 126l2 1v4l-2 2-2-2v-4Z" fill="#263E48"/><circle cx="50" cy="97" r="5" fill="#D99F7C"/><path d="M45 96q1-6 5-6q5 0 5 5l-3 1-6-1Z" fill="#405B61"/><path d="M45 104l-4 10 8 5 8-5-4-9Z" fill="#405B61"/><circle cx="253" cy="92" r="5" fill="#D99F7C"/><path d="M248 91q1-6 5-6q5 0 5 5l-3 1-6-1Z" fill="#405B61"/><path d="M248 99l-4 10 8 5 8-5-4-9Z" fill="#405B61"/><path d="M84 85h35m67 0h35" stroke="#E4BB68" stroke-width="1.6" stroke-dasharray="4 4"/></g>
+ <g id="layer-details"><path d="M20 177h38m191 0h35" stroke="#DEE9DC" stroke-width="1.2"/><path d="M35 67q8-5 15 0m205 27q8-5 16 0" stroke="#F4F5EC" stroke-width="1.1" fill="none"/><circle cx="92" cy="50" r="1.2" fill="#FFF"/></g><g id="layer-lighting"><ellipse cx="152" cy="100" rx="57" ry="48" fill="#FFF6E7" opacity=".05"/><path d="M116 61q36-13 72 0" stroke="#FFF6E7" stroke-width="1.1" fill="none"/></g>
+</svg>

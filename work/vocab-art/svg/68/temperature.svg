@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: temperature
+ CONTEXTUAL_DEFINITION: A person's body temperature, measured with a clinical thermometer.
+ PEDAGOGICAL_ARCHETYPE: someone checking a patient's temperature with a medical thermometer
+ SYNONYM_GUARD: Make the thermometer and patient unmistakably medical; do not use sun, landscape or weather cues.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A caring hand holds a clinical thermometer against a person's forehead while a simple warm body-heat halo reinforces the measurement.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:temperature" data-archetype="clinical body temperature measurement">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="94" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 40H99V100H58Z" fill="#D9D0C2"/><path d="M64 46H93V94H64Z" fill="#A9B9B4"/><path d="M209 39H251V100H209Z" fill="#E3DDD2"/><path d="M216 46H244V94H216Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M78 146H224" stroke="#8C725A" stroke-width="1.1"/><circle cx="90" cy="146" r="2" fill="#D6A64C"/><circle cx="213" cy="146" r="2" fill="#B85E5A"/>
+  <path d="M54 126H83V144H54Z" fill="#D6A64C"/><path d="M58 122Q68 117 79 122L83 128H54Z" fill="#F6E5CE" stroke="#8C725A" stroke-width=".9"/>
+  <ellipse cx="151" cy="150" rx="69" ry="3" fill="#F6E5CE" opacity=".55"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="161" cy="55" r="14" fill="#D29A78"/><path d="M147 54Q148 37 162 38Q176 39 175 57L168 47L149 50Z" fill="#26384A"/>
+  <path d="M140 72Q161 64 181 73L188 118H134Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M145 78L132 91L139 105M178 78L191 91L185 105" stroke="#D29A78" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M139 116L137 146M181 116L184 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- clinical glass thermometer held at the forehead -->
+  <path d="M126 62L151 54" stroke="#8C725A" stroke-width="5" stroke-linecap="round"/><path d="M126 62L151 54" stroke="#F6E5CE" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="125" cy="62" r="4" fill="#B85E5A" stroke="#8C725A" stroke-width=".8"/><path d="M128 61L147 55" stroke="#B85E5A" stroke-width="1.4"/>
+  <path d="M138 69L146 77L154 69" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M155 53Q159 56 163 53M166 53L170 52M155 63Q161 60 167 63" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M132 58L135 57M136 57L139 56M140 56L143 55" stroke="#8C725A" stroke-width=".8"/>
+  <path d="M152 43Q158 39 164 42M175 44L179 42M144 47L140 44" stroke="#B85E5A" stroke-width="1.2" fill="none"/>
+  <path d="M142 82L148 86M179 82L173 87M150 108L157 111M166 108L160 111" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M137 123Q161 127 185 123M139 130L147 132M176 130L183 128" stroke="#A9C0C1" stroke-width="1" fill="none"/>
+  <circle cx="198" cy="119" r="1.5" fill="#D6A64C"/><circle cx="203" cy="124" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="159" cy="88" rx="91" ry="68" fill="#E7C66B" opacity=".065"/><path d="M52 31L68 47M253 30L238 47" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

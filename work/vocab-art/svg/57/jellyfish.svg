@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: jellyfish (noun)
+  CONTEXTUAL_DEFINITION: A translucent jellyfish drifting through the water, with a rounded bell and trailing tentacles.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining soft-body silhouette
+  SYNONYM_GUARD: Use a bell-shaped body with long soft trailing tentacles; this is not a fish with fins or a sea anemone attached to rock.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Pale lavender translucent jellyfish floats mid-water, bell x=112..193 y=56..105, scalloped lower edge and several long tentacles trailing down toward y=151; no seabed attachment.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:jellyfish" data-archetype="jellyfish-translucent-bell-trailing-tentacles">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#C5A7C9;--c-secondary:#74617C;--c-accent:#E5A7A0;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="jelly-water" x2="0" y2="1"><stop stop-color="#A7D0CF"/><stop offset="1" stop-color="#4D8692"/></linearGradient>
+  <linearGradient id="jelly-bell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1E0F0" stop-opacity=".9"/><stop offset="1" stop-color="#A989BA" stop-opacity=".76"/></linearGradient>
+  <filter id="jelly-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#jelly-water)"/><path d="M0 27q47-7 91 0m134-3q39-6 79 0" fill="none" stroke="#DCEFE7" stroke-width="1.4"/><path d="M0 161Q76 153 152 162T304 157V192H0Z" fill="#4C8590"/></g>
+ <g id="layer-context"><path d="M24 192v-31m0 18-10-12m10 5 10-17m220 37v-34m0 18-11-13m11 5 11-20m28 44v-26m0 14 9-13" fill="none" stroke="#528675" stroke-width="2" stroke-linecap="round"/><path d="M18 126q16-5 31 0m211 8q16-6 30 0" fill="none" stroke="#D2E9E3" stroke-width="1.4" stroke-linecap="round"/><circle cx="61" cy="73" r="2" fill="#EDF9F2"/><circle cx="69" cy="64" r="1.2" fill="#EDF9F2"/><ellipse cx="155" cy="151" rx="55" ry="5" fill="#163D45" opacity=".1"/></g>
+ <g id="layer-focal" filter="url(#jelly-shadow)">
+  <path d="M124 100Q124 72 140 60Q151 51 166 54Q187 60 191 84L187 103Q178 111 168 105Q159 113 151 105Q143 112 135 104Z" fill="url(#jelly-bell)" stroke="#806C8D" stroke-width="1.4"/>
+  <path d="M130 91Q151 98 185 89" fill="none" stroke="#F9F1F4" stroke-width="1.4" opacity=".78" stroke-linecap="round"/>
+  <path d="M136 103Q132 119 121 136Q117 144 122 151Q129 148 130 137L145 107" fill="none" stroke="#B593C0" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M146 106Q149 123 145 139Q144 147 150 151Q157 146 155 136L156 108" fill="none" stroke="#E5A9B6" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M158 106Q164 123 169 137Q173 146 180 145Q184 139 177 130L168 103" fill="none" stroke="#B593C0" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M171 104Q181 117 190 126Q197 132 203 127Q202 120 194 115L180 99" fill="none" stroke="#E5A9B6" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M141 93Q149 99 157 95Q165 100 174 93" fill="none" stroke="#957EA1" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="146" cy="84" r="1.5" fill="#786482"/><circle cx="169" cy="82" r="1.5" fill="#786482"/>
+  <path d="M147 90q10 5 20 0" fill="none" stroke="#9A7E9F" stroke-width="1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M137 71q8-11 18-9m16 4q8 4 10 12" fill="none" stroke="#FFF7FA" stroke-width="1.6" opacity=".78" stroke-linecap="round"/><circle cx="110" cy="114" r="1.8" fill="#ECF8F2"/><circle cx="205" cy="86" r="2" fill="#EAF6F1"/><path d="M124 119q-4 7-7 9m60 5q4 8 10 10" fill="none" stroke="#F1C8D0" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><ellipse cx="157" cy="82" rx="40" ry="34" fill="#FFFFFF" opacity=".08"/><path d="M134 69q9-12 20-10" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".74" stroke-linecap="round"/></g>
+</svg>

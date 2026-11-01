@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: mustache / moustache (also UK spelling) (Noun)
+  CONTEXTUAL_DEFINITION: Hair grown above the upper lip.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Keep cheeks and chin clean-shaven; the only facial hair is above the lip.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream portrait paper.
+    - Context_Layer: Muted lower face and shoulders.
+    - Focal_Layer: Curved dark mustache above the lip.
+    - Details_Layer: Hair tips curl outward.
+    - Lighting_Layer: Warm focus ring.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:mustache / moustache (also uk spelling)" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="89" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="102" rx="74" ry="56" fill="#FEF3C7" opacity=".35"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#D8DCE2" stroke="#7B8A9E" stroke-width="2.3"/>
+  <path d="M105 153Q100 123 102 83Q105 46 152 42Q199 46 202 83Q204 123 199 153Z" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M99 85Q96 46 140 37Q174 34 197 54Q209 68 202 96L194 105Q190 77 176 69Q150 81 119 73Q108 79 103 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M120 113Q130 105 141 111Q152 101 163 111Q175 105 185 113Q180 123 165 124Q156 118 152 118Q147 118 139 124Q124 123 120 113Z" fill="#4A342F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 94Q129 89 139 94M164 94Q174 89 184 94" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 101Q130 104 138 101M166 101Q174 104 181 101" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M140 132Q152 136 164 132" fill="none" stroke="#A95059" stroke-width="2"/>
+  <path d="M121 113Q110 109 108 102M184 113Q195 109 197 102" fill="none" stroke="#805333" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="116" rx="50" ry="27" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/>
+</svg>

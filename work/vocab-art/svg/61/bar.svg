@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: bar (goalpost crossbar)
+ CONTEXTUAL_DEFINITION: The horizontal bar joining the two upright posts across the top of a soccer goal.
+ PEDAGOGICAL_ARCHETYPE: Part-of-Whole Focus Callout
+ SYNONYM_GUARD: Ghost the complete goal structure while highlighting only its horizontal crossbar; vertical sides are goalposts.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Full goal with pale net and muted uprights; amber crossbar spans x=55..250 at y=55 inside a dashed focus halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:bar (goalpost)" data-archetype="goal-crossbar-highlighted-in-whole-goal">
+ <defs><linearGradient id="bar-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><filter id="bar-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bar-sky)"/><path d="M0 130H304V192H0Z" fill="#91A686"/><path d="M0 130h304" stroke="#E7EEE4" stroke-width="2"/><path d="M39 66h212v82H39Z" fill="#E5E9F0" opacity=".4"/><path d="M39 66l212 82m0-82L39 148M92 66l159 62m-106-62 106 41m-159-41 159 21M39 87l212 61M39 109l136 39M203 66 39 122" stroke="#CBD5E1" stroke-width="1" opacity=".9"/></g>
+ <g id="layer-context"><ellipse cx="145" cy="170" rx="113" ry="8" fill="#405B61" opacity=".16"/><circle cx="152" cy="58" r="38" fill="#FEF3C7"/><rect x="42" y="47" width="222" height="22" rx="8" fill="#D97706" opacity=".17"/><path d="M35 65v87M257 65v87" stroke="#7B8A9E" stroke-width="8" stroke-linecap="round"/><path d="M39 65v88m220-88v88" stroke="#E5E9F0" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="layer-focal" filter="url(#bar-shadow)"><path d="M38 56h220v18H38Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.8"/><path d="M45 59h205" stroke="#FCE29C" stroke-width="3" stroke-linecap="round"/><path d="M40 65v83m216-83v83" stroke="#CFD6E2" stroke-width="7" stroke-linecap="round"/><path d="M40 65v83m216-83v83" stroke="#7B8A9E" stroke-width="1.6" stroke-linecap="round"/><path d="M46 80l202 0M46 94l202 0M46 108l202 0M46 122l202 0" stroke="#CBD5E1" stroke-width="1.2"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="65" rx="117" ry="29" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="6 5"/><path d="M70 99V84m0 0-5 7m5-7 5 7m164 8V78m0 0-5 7m5-7 5 7" fill="none" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="41" cy="151" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="255" cy="151" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><rect x="37" y="57" width="7" height="17" rx="2" fill="#CBD5E1" stroke="#64748B" stroke-width="1"/><rect x="253" y="57" width="7" height="17" rx="2" fill="#CBD5E1" stroke="#64748B" stroke-width="1"/><circle cx="40.5" cy="65" r="1.2" fill="#F1F5F9"/><circle cx="256.5" cy="65" r="1.2" fill="#F1F5F9"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="62" rx="92" ry="21" fill="#FFFFFF" opacity=".08"/><path d="M44 56h208" stroke="#FFFFFF" stroke-width="1.2" opacity=".85"/></g>
+</svg>

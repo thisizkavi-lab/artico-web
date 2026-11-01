@@ -1,0 +1,60 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: lovely (Adjective)
+  CONTEXTUAL_DEFINITION: Warmly pleasing and affectionate, shown by a small thoughtful gift shared between family members.
+  PEDAGOGICAL_ARCHETYPE: 3 (A pleasing experience with an affectionate human reaction)
+  SYNONYM_GUARD: A child gives a hand-tied flower to a grandparent; the warmth makes the scene lovely rather than simply decorative.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper living room with pale sage wall and grounded floor.
+    - Context_Layer: Grandparent seated at right, child standing at left.
+    - Focal_Layer: Shared bouquet and gentle hand-to-hand exchange at center.
+    - Details_Layer: Flowers, ribbon bow, soft smiles, curved sofa arm.
+    - Lighting_Layer: Warm window light and subtle creamy highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:lovely" data-archetype="expressive-bust">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#room)"/>
+    <path d="M0 144 Q151 138 304 145 L304 192 L0 192Z" fill="#EAE3D5"/>
+    <rect x="221" y="31" width="55" height="66" rx="7" fill="#E7F0E2" stroke="#7FB07A" stroke-width="1.6"/>
+    <path d="M248 31 L248 97 M221 64 L276 64" stroke="#FFFFFF" stroke-width="3"/>
+    <ellipse cx="160" cy="161" rx="104" ry="8" fill="#DDD4C3"/>
+  </g>
+  <g id="layer-context">
+    <path d="M28 149 Q30 124 51 120 Q73 124 75 149Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M43 121 L42 109 L61 109 L60 123" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="51" cy="89" r="20" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M31 88 Q33 66 53 67 Q72 69 72 89 Q61 79 51 80 Q41 85 31 88Z" fill="#6B4B35"/>
+    <path d="M41 91 Q45 87 49 91 M55 91 Q59 87 63 91" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M44 100 Q52 107 60 99" fill="none" stroke="#A34F47" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M72 129 Q93 121 112 113 Q119 110 121 115 Q121 120 115 123 L84 143" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M228 151 Q231 123 253 120 Q275 123 278 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M244 121 L242 108 L263 108 L262 122" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="253" cy="87" r="20" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M233 86 Q235 63 256 67 Q274 70 273 87 Q264 77 253 78 Q245 84 233 86Z" fill="#D9DDE2" stroke="#1E2A3B" stroke-width="1.2"/>
+    <path d="M244 89 Q248 85 251 89 M258 89 Q262 85 265 89" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M246 98 Q254 105 263 97" fill="none" stroke="#A34F47" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M233 130 Q220 122 208 115 Q202 112 198 117 Q198 121 204 125 L229 143" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M117 116 Q129 110 141 115 L155 130 L148 139 L120 127Z" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M128 128 L145 96 M138 131 L153 101 M148 132 L163 101 M157 132 L173 105" stroke="#7FB07A" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M133 101 C123 95 126 85 135 84 C142 86 141 96 133 101Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.4"/>
+    <path d="M151 102 C144 93 150 84 158 87 C165 92 160 99 151 102Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/>
+    <path d="M168 105 C160 99 164 89 173 90 C181 94 178 102 168 105Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.4"/>
+    <path d="M142 112 Q156 108 171 113 L174 118 Q158 122 144 118Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.6"/>
+  </g>
+  <g id="layer-details">
+    <path d="M107 74 L112 64 L117 74 L127 79 L117 84 L112 94 L107 84 L97 79Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/>
+    <path d="M192 79 L196 71 L200 79 L208 83 L200 87 L196 95 L192 87 L184 83Z" fill="#F2C14E"/>
+    <ellipse cx="48" cy="100" rx="3" ry="2" fill="#F58D82" opacity="0.5"/><ellipse cx="259" cy="99" rx="3" ry="2" fill="#F58D82" opacity="0.5"/>
+    <path d="M151 120 Q156 123 161 120" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M226 36 Q264 36 271 60 M117 157 Q157 162 198 157" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.65"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

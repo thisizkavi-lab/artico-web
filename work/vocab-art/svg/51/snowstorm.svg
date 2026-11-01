@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: snowstorm (Noun)
+  CONTEXTUAL_DEFINITION: A heavy fall of snow filling the air and building up across a landscape.
+  PEDAGOGICAL_ART_DIRECTOR: Show dense falling snow and accumulating drifts around a small cabin, with less sideways wind than the blizzard scene.
+  PEDAGOGICAL_ARCHETYPE: 3 - Heavy snowfall event
+  SYNONYM_GUARD: Emphasize heavy snowfall and buildup; the blizzard card carries the near-whiteout sideways wind.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Dense flakes descend around a small snow-covered cabin and build deep soft layers on the ground.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:snowstorm" data-archetype="heavy-snowfall-and-buildup">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ss-sky" x2="0" y2="1"><stop stop-color="#7C94A3"/><stop offset="1" stop-color="#D4E0E1"/></linearGradient><linearGradient id="ss-snow" x2="0" y2="1"><stop stop-color="#F8FBF8"/><stop offset="1" stop-color="#CAD9DC"/></linearGradient><linearGradient id="ss-wall" x2="0" y2="1"><stop stop-color="#B89E7C"/><stop offset="1" stop-color="#86745F"/></linearGradient><filter id="ss-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#283C49" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ss-sky)"/><path d="M0 131Q77 114 152 131T304 123V192H0Z" fill="#A7B6B8"/><path d="M0 155Q76 140 153 155T304 146V192H0Z" fill="#E0E8E7"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#B1C3C8" stroke-width="1.2"/><ellipse cx="153" cy="164" rx="94" ry="6" fill="#455962" opacity=".17"/><path d="M224 136V88L257 62L288 88V138Z" fill="url(#ss-wall)" stroke="#705F50" stroke-width="1.7"/><path d="M217 90L257 55L295 90Z" fill="#6A7880" stroke="#53656D" stroke-width="1.7"/><rect x="247" y="106" width="18" height="31" fill="#586C73" stroke="#485B63" stroke-width="1.5"/><rect x="231" y="96" width="12" height="13" fill="#A8CDD2" stroke="#665E53" stroke-width="1.2"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ss-shadow)">
+  <path d="M0 147Q51 132 100 146T202 144T304 138V172H0Z" fill="url(#ss-snow)"/><path d="M215 88L257 53L297 88Q279 82 263 86Q247 80 230 87Z" fill="#F7FBF7" stroke="#D0E0E1" stroke-width="1.5"/><path d="M0 158Q77 147 152 159T304 150V177H0Z" fill="#F7FBF7"/><path d="M20 155q48-9 90-2m98-1q40-8 76-4" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M77 38Q79 24 93 24Q101 12 115 20Q128 16 134 29Q148 26 154 38Q157 48 147 52H91Q77 49 77 38Z" fill="#657B89" stroke="#4E6673" stroke-width="1.4"/><path d="M86 35q9-8 18-4m20-5q9-4 15 2m8 9q8-5 14 1" fill="none" stroke="#C8D6D8" stroke-width="1.2"/>
+  <path d="M92 58v10m34-13v12m40-10v15m-56 10v14m42-15v11m38-15v16m-80 11v16m41-10v15m44-20v13m-100 9v11m36-12v12m47-14v11m-25-89v12m51 15v10m-125-4v11" fill="none" stroke="#F8FFFF" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="72" r="2.3" fill="#F8FFFF"/><circle cx="48" cy="101" r="2" fill="#F8FFFF"/><circle cx="254" cy="68" r="2.2" fill="#F8FFFF"/><circle cx="272" cy="101" r="2.1" fill="#F8FFFF"/><circle cx="115" cy="128" r="2" fill="#F8FFFF"/><circle cx="181" cy="83" r="2.2" fill="#F8FFFF"/>
+ </g>
+ <g id="layer-details"><circle cx="184" cy="54" r="1.7" fill="#FFFFFF"/><circle cx="212" cy="108" r="1.8" fill="#FFFFFF"/><circle cx="67" cy="119" r="1.6" fill="#FFFFFF"/><path d="M24 23H280" fill="none" stroke="#EDF3F2" stroke-width="1" opacity=".44"/><path d="M30 143q12-8 24 0m180-2q12-8 24 0" fill="none" stroke="#FFFFFF" stroke-width="1.4"/></g>
+ <g id="layer-lighting"><path d="M218 88l39-30 36 31" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".85"/><path d="M0 156q53-11 98-3m124-2q37-7 76-4" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

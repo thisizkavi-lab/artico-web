@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: graduate (Noun)
+  CONTEXTUAL_DEFINITION: A person who has completed a university degree.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show the completed student standing proudly in cap and gown with a diploma already held, not receiving it at the ceremony.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University campus steps and academic hall.
+    - Context_Layer: Graduates' cap and a tree-lined campus.
+    - Focal_Layer: Newly graduated person in gown holds the completed diploma.
+    - Details_Layer: Tassel, medal seal, and confident posture.
+    - Lighting_Layer: Bright celebratory campus light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:graduate" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="graduate-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="graduate-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#graduate-bg)"/><path d="M0 152H304V192H0Z" fill="#DCE8D7"/><path d="M64 115H240V151H64Z" fill="#E7E2D7" stroke="#8D765A" stroke-width="1.2"/><path d="M48 129H256V151H48Z" fill="#D3C9B8" stroke="#8D765A" stroke-width="1.2"/><path d="M0 151H304" stroke="#829A83" stroke-width="2"/><path d="M24 103V76M18 79Q24 66 30 79" stroke="#54765A" stroke-width="2"/><path d="M278 103V76M272 79Q278 66 284 79" stroke="#54765A" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M24 127H54V134H24Z" fill="#A98A64"/><path d="M29 134V151M50 134V151" stroke="#8D765A" stroke-width="2"/><circle cx="39" cy="117" r="7" fill="#C98961"/><path d="M32 117Q33 109 40 110Q47 111 46 118" fill="#27364B"/><path d="M26 127Q39 122 51 127L52 136H25Z" fill="#91A77C"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#graduate-shadow)"><circle cx="145" cy="59" r="13" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.4"/><path d="M132 59Q133 43 146 44Q159 45 158 60L151 63Q148 52 142 53Q137 54 135 65Z" fill="#27364B"/><path d="M127 78Q145 69 163 78L172 128L157 140L133 128Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.7"/><path d="M135 81L116 94L104 90M159 81L178 94L194 88" fill="none" stroke="#1E2A3B" stroke-width="4.8" stroke-linecap="round"/><path d="M135 81L116 94L104 90M159 81L178 94L194 88" fill="none" stroke="#E7B99B" stroke-width="2.7" stroke-linecap="round"/><path d="M137 132L130 151M157 133L170 151" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M190 77L211 72L221 90L199 95Z" fill="#FFFEFA" stroke="#D9A441" stroke-width="1.5"/><ellipse cx="191" cy="78" rx="3.4" ry="4.6" fill="#F6D777" stroke="#8D6138" stroke-width="1"/><path d="M199 83L208 86L204 95" fill="none" stroke="#D9857F" stroke-width="2"/><path d="M129 49L145 42L162 49L145 56Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M161 48V69" stroke="#D9A441" stroke-width="2"/><circle cx="161" cy="70" r="2.5" fill="#D9A441"/></g>
+  <g id="layer-details"><path d="M99 71L103 65M190 55L194 49M213 63L217 57" stroke="#D9A441" stroke-width="2"/><circle cx="145" cy="104" r="5" fill="#D9A441"/><path d="M143 104L145 106L148 101" fill="none" stroke="#FFFEFA" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="91" rx="126" ry="77" fill="#FEF9C3" opacity=".11"/><path d="M64 115H240V151" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

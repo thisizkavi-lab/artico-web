@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: hold your breath (Verb phrase)
+  CONTEXTUAL_DEFINITION: To stop breathing for a short time.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust
+  SYNONYM_GUARD: Show puffed cheeks, closed lips, and still air; breathe has a relaxed airflow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front portrait with a still, held pose.
+    - Context_Layer: Shoulders lifted slightly and chest held firm.
+    - Focal_Layer: Puff cheeks and tightly closed lips show stored air.
+    - Details_Layer: A hand rests lightly at the upper chest.
+    - Lighting_Layer: A broken air trail stops at the face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:hold your breath" data-archetype="expressive-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="175" rx="91" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M89 178Q94 145 119 138H185Q210 145 215 178Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M126 118L124 150H179L177 118Z" fill="#C88E74" stroke="#64748B" stroke-width="2"/><path d="M98 78Q94 38 126 22Q157 7 190 27Q214 45 204 91L193 125Q177 151 151 150Q123 148 108 123Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M98 72Q94 37 125 19Q160 2 192 25Q215 42 204 73L191 58Q163 69 144 51Q119 68 98 72Z" fill="#536B63" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="101" rx="57" ry="34" fill="#FEF3C7" opacity=".35"/><ellipse cx="116" cy="101" rx="10" ry="7" fill="#F8DDCC" opacity=".55"/><ellipse cx="188" cy="101" rx="10" ry="7" fill="#F8DDCC" opacity=".55"/><path d="M138 112L167 112" fill="none" stroke="#8E3E48" stroke-width="3.2" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M122 83Q132 77 141 83M163 83Q173 77 182 83" fill="none" stroke="#1E2A3B" stroke-width="1.9"/><ellipse cx="134" cy="89" rx="3" ry="4" fill="#1E2A3B"/><ellipse cx="171" cy="89" rx="3" ry="4" fill="#1E2A3B"/><path d="M151 91Q146 99 152 103" fill="none" stroke="#C88E74" stroke-width="1.5"/><path d="M100 163Q152 171 204 163" fill="none" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"/>
+</svg>

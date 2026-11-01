@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: fired (past participle; employment dismissal)
+  CONTEXTUAL_DEFINITION: Having been removed from a job by an employer.
+  PEDAGOGICAL_ART_DIRECTOR: Put the dismissed worker in the foreground carrying personal desk belongings toward the exit; the viewpoint is the employee affected.
+  PEDAGOGICAL_ARCHETYPE: 3 - Professional role transition
+  SYNONYM_GUARD: Show involuntary job loss, not resigning or being laid off in a company-wide reduction; keep the manager's dismissal decision implied in the empty work station.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a worker carrying a small box at x=117..190,y=84..149 walking toward a door at x=239. Behind, leave their desk and chair empty; show the access badge tucked among personal items in the box.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:fired" data-archetype="dismissed-worker">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="fired-box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8B765"/><stop offset="1" stop-color="#B6784B"/></linearGradient>
+    <linearGradient id="fired-door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="fired-focus"><stop stop-color="#F9D6C8" stop-opacity=".66"/><stop offset="1" stop-color="#CE3D4E" stop-opacity="0"/></radialGradient>
+    <filter id="fired-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="fired-worker" d="M139 123 Q140 104 152 99 L154 90 Q149 84 152 76 Q157 67 167 70 Q176 73 174 83 L170 92 Q183 99 184 120 L179 132 H143 Z"/>
+    <clipPath id="fired-worker-clip"><use href="#fired-worker"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Vacated desk and open office doorway -->
+  <g id="layer-context"><path d="M34 149 H272" stroke="#C88446" stroke-width="2"/><rect x="39" y="92" width="87" height="47" rx="3" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M46 103 H119 M46 110 H111 M46 117 H118" stroke="#94A3B8" stroke-width="1.2"/><path d="M51 139 V153 M113 139 V153" stroke="#64748B" stroke-width="2.2"/><path d="M66 126 V136 M84 126 V136 M66 136 H84" stroke="#64748B" stroke-width="1.5"/><rect x="231" y="40" width="42" height="109" rx="3" fill="url(#fired-door)" stroke="#1E2A3B" stroke-width="2"/><path d="M237 47 H266 V143 H237 Z" fill="#EEF4FA" stroke="#64748B" stroke-width="1.2"/><circle cx="260" cy="96" r="2.4" fill="#C88446"/><path d="M226 148 H280" stroke="#C88446" stroke-width="2"/></g>
+  <!-- 3. Dismissed employee leaves with their own belongings -->
+  <g id="layer-focal" filter="url(#fired-shadow)"><use href="#fired-worker" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><g clip-path="url(#fired-worker-clip)"><path d="M133 102 Q164 92 190 105 V139 H133Z" fill="#3D5F91"/><path d="M147 105 Q166 99 179 104" fill="none" stroke="#8EB0DE" stroke-width="2.5"/></g><ellipse cx="164" cy="82" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M156 81 Q157 70 165 70 Q173 71 174 79 Q168 75 162 76 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="161" cy="82" r="1" fill="#1E2A3B"/><circle cx="167" cy="82" r="1" fill="#1E2A3B"/><path d="M160 88 Q164 84 168 88" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><use href="#fired-worker" fill="none" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M144 117 L130 128 L134 134 L151 126 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M130 126 Q124 126 121 132 L126 137 L135 133 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M172 117 L188 128 L184 134 L167 126 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M186 127 Q192 128 193 134 L187 138 L181 133 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M146 129 L147 147 L155 150 L161 132" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M164 130 L166 148 L176 149 L178 132" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M145 147 H158 L159 152 H143 Z M164 147 H179 L181 152 H164 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><rect x="106" y="112" width="38" height="30" rx="2" fill="url(#fired-box)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M108 120 H142 M113 114 V120 M136 114 V120" stroke="#965D28" stroke-width="1.3"/><circle cx="117" cy="108" r="5" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.2"/><path d="M117 103 V100 M114 108 H120" stroke="#965D28" stroke-width="1"/></g>
+  <!-- 4. A quiet outward route from the empty workstation -->
+  <g id="layer-details"><path d="M157 116 C190 108 207 95 230 90" fill="none" stroke="#CE3D4E" stroke-width="2" stroke-dasharray="4 4"/><path d="M224 86 L233 89 L226 95 Z" fill="#CE3D4E"/><rect x="52" y="86" width="16" height="13" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1"/><path d="M55 90 H65 M55 94 H62" stroke="#94A3B8" stroke-width=".9"/><path d="M72 86 H101" stroke="#CBD5E1" stroke-width="1.3"/><rect x="113" y="124" width="12" height="15" rx="2" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="119" cy="128" r="1.5" fill="#FFFFFF"/></g>
+  <!-- 5. Focus on the worker carrying away personal items -->
+  <g id="layer-lighting"><ellipse cx="128" cy="126" rx="32" ry="30" fill="url(#fired-focus)"/><ellipse cx="127" cy="126" rx="25" ry="22" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4"/><path d="M156 75 H165" stroke="#F5BFA3" stroke-width="1.5" stroke-linecap="round"/><path d="M278 69 L278 78 M274 73 H282" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

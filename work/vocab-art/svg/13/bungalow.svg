@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: bungalow (Noun)
+  CONTEXTUAL_DEFINITION: A compact, detached home built on one floor.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero building with single-storey silhouette
+  SYNONYM_GUARD: Unlike the long ranch house, this small home is compact and nearly square; it has no upper floor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm pale sky with garden strip.
+    - Context_Layer: Low hedge and path.
+    - Focal_Layer: Small one-floor home with broad low roof, door, windows and short step.
+    - Details_Layer: Roof tiles, curtains and one potted plant.
+    - Lighting_Layer: Soft roof highlight and grounded shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:bungalow" data-archetype="hero-building">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="roof" x2="0" y2="1"><stop stop-color="#A85B53"/><stop offset="1" stop-color="#814449"/></linearGradient><linearGradient id="siding" x2="0" y2="1"><stop stop-color="#F1D9B4"/><stop offset="1" stop-color="#D9B98C"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 151H304V192H0Z" fill="#B7D3A8"/><path d="M0 161H304" stroke="#7B9E6A" stroke-width="2"/><path d="M0 173H304" stroke="#D8C5A8" stroke-width="19"/><ellipse cx="151" cy="162" rx="90" ry="7" fill="#72815F" opacity=".27"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M19 146V124Q19 116 27 116H62Q70 116 70 124V147Z" fill="#7FB07A" stroke="#4F8455" stroke-width="1.7"/><path d="M21 130Q42 113 68 130" fill="#91BB83"/><path d="M238 145V126Q238 118 246 118H286Q294 118 294 126V147Z" fill="#7FB07A" stroke="#4F8455" stroke-width="1.7"/><path d="M240 131Q263 114 292 131" fill="#91BB83"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path id="house" d="M65 82L151 38L239 82V150H65Z" fill="url(#siding)" stroke="#1E2A3B" stroke-width="2.7"/><clipPath id="house-clip"><use href="#house"/></clipPath><g clip-path="url(#house-clip)"><path d="M65 83H239V151H65Z" fill="#E8CEA7"/><path d="M72 91H232" stroke="#F7E7C9" stroke-width="2"/><path d="M73 110H232M73 129H232" stroke="#CFAD7C" stroke-width="1"/><path d="M147 38H157V150H147Z" fill="#D6B588" opacity=".6"/></g><use href="#house" fill="none" stroke="#1E2A3B" stroke-width="2.7"/><path d="M51 84L151 31L252 84L245 92L151 46L58 92Z" fill="url(#roof)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M77 75L151 37L227 75" fill="none" stroke="#D88779" stroke-width="2"/><path d="M83 78L147 45M111 63L175 63M146 46L219 81" stroke="#B96B61" stroke-width="1.2"/><path d="M87 97H123V128H87Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M105 98V127M88 112H122" stroke="#5479AC" stroke-width="2"/><path d="M190 97H221V127H190Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M205 98V126M191 112H220" stroke="#5479AC" stroke-width="2"/><path d="M143 104Q143 98 149 98H171Q177 98 177 104V150H143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="169" cy="125" r="2.5" fill="#F2C14E"/><path d="M137 150H183V155H137Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M82 94H122M187 94H224" stroke="#FFFFFF" stroke-width="1.4"/><path d="M35 160H70M236 160H274" stroke="#F3ECE1" stroke-width="1.2"/><path d="M151 29V47" stroke="#FFFFFF" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M67 85L151 40" stroke="#F6C5A7" stroke-width="2" opacity=".7"/><circle cx="48" cy="57" r="12" fill="#F2C14E" opacity=".18"/></g>
+</svg>

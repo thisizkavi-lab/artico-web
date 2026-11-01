@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: stunning (Adjective)
+  CONTEXTUAL_DEFINITION: So impressive that it momentarily takes someone's breath away, shown by an extraordinary peacock display.
+  PEDAGOGICAL_ARCHETYPE: 3 (Spectacular sight paired with an awed reaction)
+  SYNONYM_GUARD: The peacock's enormous iridescent fan catches a visitor's open-mouthed stare; its vivid display distinguishes it from a mountain view.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Ivory botanical garden with a low green ground plane.
+    - Context_Layer: Visitor turns toward the bird, eyes wide.
+    - Focal_Layer: Peacock in profile with a broad decorated fan.
+    - Details_Layer: Eye-spots, folded wing and iridescent feather arcs.
+    - Lighting_Layer: Gloss on upper-left feather edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:stunning" data-archetype="hero-object">
+  <defs><linearGradient id="garden" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#DCEAD6"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#garden)"/><path d="M0 146 Q153 138 304 146 L304 192 L0 192Z" fill="#DCEAD6"/><ellipse cx="170" cy="160" rx="102" ry="9" fill="#BFD3B5"/><path d="M24 145 Q28 117 41 113 Q54 120 56 145Z" fill="#7FB07A"/></g>
+  <g id="layer-context"><path d="M26 151 Q28 129 46 126 Q64 129 66 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="46" cy="110" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M31 109 Q32 93 47 94 Q62 95 61 110 Q52 102 45 103Z" fill="#27364B"/><ellipse cx="41" cy="110" rx="2.6" ry="3.4" fill="#FFFFFF"/><ellipse cx="52" cy="110" rx="2.6" ry="3.4" fill="#FFFFFF"/><ellipse cx="47" cy="119" rx="3.2" ry="4" fill="#A34F47"/><path d="M68 123 L77 119 M68 130 L78 130" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M190 140 C221 115 229 84 220 48 C250 61 273 88 273 115 C271 139 243 151 212 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M204 138 C243 122 260 95 254 71 M214 144 C254 137 278 115 271 95 M194 134 C221 106 231 77 224 59" fill="none" stroke="#8EB0DE" stroke-width="3" stroke-linecap="round"/><path d="M188 137 C197 112 196 85 183 69 C209 74 226 95 222 116 C218 136 203 146 188 137Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M196 136 C201 120 199 101 190 88 C208 93 217 107 213 123 C210 134 202 140 196 136Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="200" cy="108" rx="6" ry="9" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="200" cy="108" rx="2.6" ry="4.2" fill="#3D5F91"/><path d="M169 132 Q155 128 153 115 Q151 101 163 95 Q174 90 185 100 L199 135Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.5"/><path d="M154 114 Q141 111 136 117 Q132 122 138 126 L157 127" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="165" cy="109" r="2.8" fill="#FFFFFF"/><path d="M164 135 L159 150 M174 137 L174 151" stroke="#C88446" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><ellipse cx="230" cy="77" rx="5.5" ry="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="230" cy="77" rx="2" ry="3.5" fill="#8B5CA8"/><ellipse cx="254" cy="99" rx="5.5" ry="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="254" cy="99" rx="2" ry="3.5" fill="#8B5CA8"/><ellipse cx="244" cy="124" rx="5.5" ry="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="244" cy="124" rx="2" ry="3.5" fill="#8B5CA8"/><path d="M86 63 L91 53 L96 63 L106 68 L96 73 L91 83 L86 73 L76 68Z" fill="#F2C14E"/><path d="M119 93 L123 85 L127 93 L135 97 L127 101 L123 109 L119 101 L111 97Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M187 103 Q191 87 183 75 M207 80 Q217 84 223 95" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

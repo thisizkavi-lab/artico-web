@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: delayed
+  CONTEXTUAL_DEFINITION: A flight departure is postponed, so the aircraft remains on the ground.
+  PEDAGOGICAL_ART_DIRECTOR: Center a stationary airplane at its gate with wheel chocks and a waiting tug.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show the plane's delayed status rather than a passenger who is waiting.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A passenger jet is held beside its gate with wheel blocks at the landing gear and a service tug waiting in front; nobody is boarding.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:delayed" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="del-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B8D1D5"/><stop offset="1" stop-color="#E5E8DF"/></linearGradient>
+  <linearGradient id="del-plane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F9F7EF"/><stop offset="1" stop-color="#AABABD"/></linearGradient>
+  <linearGradient id="del-tug" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3B355"/><stop offset="1" stop-color="#B97643"/></linearGradient>
+  <filter id="del-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#del-sky)"/><path d="M17 17H287V147H17Z" fill="#E6EAE3" stroke="#63757A" stroke-width="1.4"/><path d="M17 147H287V184H17Z" fill="#888F8C"/><path d="M22 169H282" stroke="#F2E8D2" stroke-width="1.2"/><rect x="216" y="29" width="57" height="69" fill="#A8C8CF" stroke="#48616D" stroke-width="1.4"/><path d="M244 29V98M216 63H273" stroke="#526D77" stroke-width="1.1"/><path d="M212 98H277V134H212Z" fill="#AEB8B4" stroke="#536A72" stroke-width="1"/><path d="M222 99V130M233 99V130M244 99V130M255 99V130M266 99V130" stroke="#73878B" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M35 136H275" stroke="#EDE4D0" stroke-width="1.5"/><path d="M47 154H90M216 154H266" stroke="#F2E8D2" stroke-width="1.4"/><rect x="48" y="127" width="26" height="22" rx="4" fill="url(#del-tug)" stroke="#1E2A3B" stroke-width="1.2"/><rect x="74" y="134" width="15" height="15" fill="#C6854B" stroke="#1E2A3B" stroke-width="1"/><circle cx="56" cy="151" r="4.5" fill="#263B47"/><circle cx="79" cy="151" r="4.5" fill="#263B47"/><path d="M85 138H102" stroke="#344A56" stroke-width="3"/><path d="M39 114H72V117H39Z" fill="#D7E1DB" stroke="#1E2A3B" stroke-width=".8"/></g>
+ <g id="layer-focal" filter="url(#del-shadow)"><path d="M93 81Q108 63 133 62H222Q246 63 262 78L278 88L260 98H106Z" fill="url(#del-plane)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M132 65L115 42L124 41L153 64M176 66L193 45L201 47L190 70" fill="#D8E1DC" stroke="#1E2A3B" stroke-width="1.1"/><path d="M151 77V90M162 76V91M173 76V91M184 76V92M195 76V92M206 76V94M217 76V95" stroke="#547080" stroke-width="1.2"/><path d="M256 83L272 78L283 85L273 90L259 90Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M105 97H122V104H105Z" fill="#D85E55" stroke="#7E3939" stroke-width="1"/><path d="M101 104H124" stroke="#263D49" stroke-width="2.3"/><circle cx="125" cy="101" r="3" fill="#263D49"/><path d="M136 95V108M236 94V106" stroke="#526274" stroke-width="2.5"/></g>
+ <g id="layer-details"><path d="M111 64H220" stroke="#FFFFFF" stroke-width="1" opacity=".75"/><path d="M219 30H272" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="157" cy="157" rx="121" ry="5" fill="#1E2A3B" opacity=".16"/><circle cx="283" cy="80" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="103" rx="128" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

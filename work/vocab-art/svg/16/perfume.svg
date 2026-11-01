@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: perfume (Noun)
+  CONTEXTUAL_DEFINITION: A scented liquid applied to the body for fragrance.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with scent cue
+  SYNONYM_GUARD: Show an elegant atomizer releasing fine fragrance mist, despite the noun gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and shadow.
+    - Context_Layer: Faint lavender halo.
+    - Focal_Layer: Faceted glass perfume bottle with spray top.
+    - Details_Layer: Mist cloud and sparkle droplets.
+    - Lighting_Layer: Glass highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:perfume" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="157" rx="91" ry="14" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="92" rx="114" ry="70" fill="#EEE7F0" opacity=".72"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M93 74L110 60H183L200 74V145Q198 155 187 155H105Q94 154 93 145Z" fill="#D8E9E6" fill-opacity=".82" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M104 83L115 72H178L189 83V143H104Z" fill="#B7D7D2" opacity=".72"/><path d="M127 59V47H166V60" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/><rect x="135" y="36" width="25" height="12" rx="3" fill="#D9A441" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M147 36V27H182" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M178 27H194" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M111 98L122 87V132L111 142ZM178 87L187 98V136" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M202 32Q219 25 230 34M207 48Q222 44 233 51M211 64Q222 61 231 67" fill="none" stroke="#C7D9E8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M231 24L234 31L241 33L234 36L231 43L228 36L221 33L228 31Z" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M198 74Q213 66 224 62" fill="none" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="3 4"/>
+</svg>

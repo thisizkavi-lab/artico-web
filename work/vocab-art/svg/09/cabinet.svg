@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: cabinet (Noun)
+  CONTEXTUAL_DEFINITION: A storage cupboard with enclosed doors and shelves inside.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a closed double-door storage unit with visible handles, distinct from open bookcases.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet room wall and floor.
+    - Context_Layer: Freestanding cabinet body.
+    - Focal_Layer: Two closed doors and base.
+    - Details_Layer: Handles and short feet.
+    - Lighting_Layer: Upper-left highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:cabinet" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 155 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 155 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="153" cy="169" rx="69" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M90 42 Q90 37 96 37 H210 Q216 37 216 42 V153 H90Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.6"/><path d="M99 48 H151 V142 H99Z" fill="#D69A62" stroke="#8A5A35" stroke-width="1.5"/><path d="M155 48 H207 V142 H155Z" fill="#C98B54" stroke="#8A5A35" stroke-width="1.5"/><path d="M94 54 H212 M94 140 H212" stroke="#8A5A35" stroke-width="2"/></g>
+  <g id="layer-focal"><circle cx="143" cy="94" r="3" fill="#1E2A3B"/><circle cx="163" cy="94" r="3" fill="#1E2A3B"/><path d="M102 153 V162 M204 153 V162" stroke="#8A5A35" stroke-width="6" stroke-linecap="round"/><path d="M105 50 V137 M159 50 V137" stroke="#E9B47E" stroke-width="1.3" opacity="0.8"/></g>
+  <g id="layer-details"><path d="M100 44 H206" stroke="#E9B47E" stroke-width="2"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

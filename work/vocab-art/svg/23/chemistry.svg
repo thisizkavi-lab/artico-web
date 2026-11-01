@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: chemistry (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies substances and how they react.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Safe classroom glassware shows colored liquid combining in a beaker; no living specimen or physics apparatus competes for focus.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School laboratory bench with a window and muted cabinets.
+    - Context_Layer: Safety goggles and a small rack of test tubes.
+    - Focal_Layer: Two glass droppers add different liquids into a central beaker.
+    - Details_Layer: Bubbles, color change, and graduated marks without numerals.
+    - Lighting_Layer: Glass reflections and a subtle reaction glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:chemistry" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="chem-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="chem-liquid" x2="0" y2="1"><stop stop-color="#F0C971"/><stop offset="1" stop-color="#D9857F"/></linearGradient><filter id="chem-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#chem-bg)"/><path d="M0 150Q76 145 152 150T304 148V192H0Z" fill="#E8DDC8"/><path d="M0 145H304" stroke="#A98A64" stroke-width="4"/><path d="M22 28H96V82H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M59 29V81M23 55H95" stroke="#FFFFFF" stroke-width="2.5"/><rect x="210" y="37" width="65" height="91" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.5"/><path d="M216 48H269M216 58H269" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M39 143V109M50 143V109M61 143V109M35 109H65" stroke="#64748B" stroke-width="2"/><path d="M39 126H61V143H39Z" fill="#DCECFB" opacity=".82"/><path d="M229 114Q240 103 251 114Q250 125 240 128Q229 125 229 114Z" fill="none" stroke="#5479AC" stroke-width="2.4"/><path d="M236 114Q240 110 245 114" fill="none" stroke="#D9857F" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#chem-shadow)"><path d="M121 67H184L177 138Q152 148 128 138Z" fill="#DCECFB" opacity=".76" stroke="#315782" stroke-width="2.2"/><path d="M128 113Q151 107 179 113L176 137Q153 145 130 137Z" fill="url(#chem-liquid)" stroke="#A95059" stroke-width="1.5"/><path d="M115 67H190" stroke="#315782" stroke-width="4" stroke-linecap="round"/><path d="M106 40L132 84" stroke="#5479AC" stroke-width="7" stroke-linecap="round"/><path d="M106 40L132 84" stroke="#DCECFB" stroke-width="3.4" stroke-linecap="round"/><path d="M193 43L174 84" stroke="#D9857F" stroke-width="7" stroke-linecap="round"/><path d="M193 43L174 84" stroke="#F3B9A8" stroke-width="3.4" stroke-linecap="round"/><path d="M127 83Q132 91 137 94M179 82Q173 91 170 94" fill="none" stroke="#5479AC" stroke-width="2" stroke-dasharray="3 4"/></g>
+  <g id="layer-details"><circle cx="142" cy="122" r="3" fill="#FEF9C3" stroke="#D9857F" stroke-width="1"/><circle cx="158" cy="117" r="2.5" fill="#FEF9C3" stroke="#D9857F" stroke-width="1"/><circle cx="166" cy="129" r="3.5" fill="#FEF9C3" stroke="#D9857F" stroke-width="1"/><path d="M127 91H136M127 99H133M170 91H178M170 99H176" stroke="#5479AC" stroke-width="1.2"/><path d="M98 33L101 26M202 38L207 31" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M140 115Q153 111 169 115" fill="none" stroke="#F9CED0" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="97" rx="113" ry="72" fill="#FEF9C3" opacity=".08"/><path d="M126 71H182" stroke="#FFFFFF" stroke-width="2" opacity=".86"/><path d="M127 71L132 117" stroke="#FFFFFF" stroke-width="1.7" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: bills (Noun, plural)
+  CONTEXTUAL_DEFINITION: Household statements requesting payment for services or expenses.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero paper objects with service cues
+  SYNONYM_GUARD: Show several incoming payment statements; utilities are the actual water, power, and heating services.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Home entry table with mail slot.
+    - Context_Layer: Key bowl and lamp identify a domestic setting.
+    - Focal_Layer: Three blank bills with distinct service pictograms fan across the table.
+    - Details_Layer: Envelope flaps and ruled blank lines, no text or numerals.
+    - Lighting_Layer: Warm lamp light falls across the paper stack.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:bills" data-archetype="household-paperwork">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 143H304V192H0Z" fill="#D8C5A8"/><path d="M0 143H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="153" cy="161" rx="112" ry="6" fill="#938675" opacity=".25"/><path d="M24 47H279V143H24Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M32 53H270V136H32Z" fill="#D89A6C"/><path d="M34 59H267" stroke="#F0D8B3" stroke-width="2"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M256 27V64" stroke="#1E2A3B" stroke-width="3"/><path d="M245 28H267L272 42H240Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M242 46Q256 40 270 46V51Q256 45 242 51Z" fill="#F2C14E" opacity=".18"/><ellipse cx="55" cy="122" rx="23" ry="7" fill="#8A5A35"/><circle cx="49" cy="119" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="61" cy="119" r="4" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M83 65L135 57L144 118L91 125Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M91 76L130 70M93 84L132 78M95 113L126 108" stroke="#94A3B8" stroke-width="1.4"/><circle cx="115" cy="96" r="9" fill="#FEF3C7" stroke="#C88446" stroke-width="1.3"/><path d="M115 87Q108 96 115 103Q122 96 115 87Z" fill="#5479AC"/><path d="M126 66L181 63L185 124L130 127Z" fill="#F5FAFD" stroke="#1E2A3B" stroke-width="2"/><path d="M138 78L171 76M138 85L173 83M141 115L170 113" stroke="#94A3B8" stroke-width="1.4"/><path d="M151 72V91M144 79H158" stroke="#D97706" stroke-width="2.2"/><path d="M175 70L231 76L224 136L168 130Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M183 86L216 90M181 94L215 98M177 123L206 127" stroke="#94A3B8" stroke-width="1.4"/><path d="M196 84Q188 95 196 104Q204 95 196 84Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.1"/><path d="M189 88Q196 93 203 88" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M87 68L130 62M130 69L179 67M179 75L228 81" stroke="#FFFFFF" stroke-width="1.4"/><path d="M213 37L220 31M227 43L236 39" stroke="#F2C14E" stroke-width="1.5"/><path d="M42 143H257" stroke="#8A5A35" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="157" cy="95" rx="91" ry="50" fill="#FEF3C7" opacity=".1"/><path d="M79 57L134 51M127 54L181 57M174 60L231 68" stroke="#4A72B2" stroke-width="1.2" opacity=".6"/></g>
+</svg>

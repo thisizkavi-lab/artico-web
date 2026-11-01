@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: flip-flops (Noun)
+  CONTEXTUAL_DEFINITION: A pair of flat rubber sandals with Y-shaped straps worn at the beach.
+  PEDAGOGICAL_ART_DIRECTOR: Show two separate flat soles from above, with a toe post and branched Y straps on each sandal.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete paired objects
+  SYNONYM_GUARD: These are open sandals with toe posts, not closed slippers or athletic shoes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: One turquoise and one coral flip-flop angled apart on the sand, with clear split Y-shaped straps and round toe pegs.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:flip-flops" data-archetype="flip-flop-pair">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ff-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="ff-blue" x2="1" y2="1"><stop stop-color="#76C9C1"/><stop offset="1" stop-color="#3B8296"/></linearGradient><linearGradient id="ff-coral" x2="1" y2="1"><stop stop-color="#F29B5E"/><stop offset="1" stop-color="#C45140"/></linearGradient><filter id="ff-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".23"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ff-sky)"/><path d="M0 104Q77 91 153 104T304 98V192H0Z" fill="#B6C6A2"/><path d="M0 128H304V192H0Z" fill="#E9D3A4"/></g>
+ <g id="layer-context"><circle cx="252" cy="39" r="15" fill="#EBC86F" opacity=".84"/><path d="M20 173H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><path d="M20 51q13-9 27 0m210 10q13-9 27 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><ellipse cx="151" cy="157" rx="84" ry="5" fill="#8A6C43" opacity=".15"/><ellipse cx="83" cy="151" rx="16" ry="2.4" fill="#8A6C43" opacity=".18"/><ellipse cx="192" cy="149" rx="16" ry="2.4" fill="#8A6C43" opacity=".18"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ff-shadow)">
+  <path d="M91 50Q109 48 119 63Q124 70 119 83L98 139Q93 153 80 150Q67 147 71 132L83 69Q85 56 91 50Z" fill="url(#ff-blue)" stroke="#315F73" stroke-width="2"/><path d="M204 46Q220 48 224 63Q226 70 221 83L201 137Q196 151 183 147Q171 143 175 129L193 63Q196 50 204 46Z" fill="url(#ff-coral)" stroke="#984B3D" stroke-width="2"/>
+  <path d="M99 76L94 92L82 101M94 92L108 101" fill="none" stroke="#F4F0D9" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M204 73L198 91L184 100M198 91L213 101" fill="none" stroke="#FFF0D9" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="99" cy="76" r="3.2" fill="#F8EBD0" stroke="#315F73" stroke-width="1"/><circle cx="204" cy="73" r="3.2" fill="#FFF0D9" stroke="#984B3D" stroke-width="1"/>
+  <path d="M88 59Q105 54 115 68M79 133q-1 9 7 11m122-91q12 2 13 14m-34 63q-1 8 7 10" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".7"/><path d="M94 111l-5 15m105-17-5 15" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".55"/><path d="M76 137Q76 147 84 149Q90 149 94 141M179 133Q177 143 184 146Q191 148 196 138" fill="none" stroke="#2F687B" stroke-width="1.2" opacity=".8"/>
+ </g>
+ <g id="layer-details"><path d="M87 66q8-5 17-2m-15 82q7 4 13-1m96-88q10-4 18 3m-38 76q7 4 12-1" fill="none" stroke="#F9F4E4" stroke-width="1.2"/><circle cx="252" cy="39" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M110 104l-3 6m99-8-3 7" fill="none" stroke="#D7834B" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M89 57q12-6 22 3M197 52q11-4 18 5" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="252" cy="39" r="1.2" fill="#FFF8E7"/><path d="M84 136l4-2m105 0 4 2" fill="none" stroke="#FFF5DD" stroke-width="1.2"/></g>
+</svg>

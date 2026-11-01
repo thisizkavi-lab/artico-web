@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: garden (Noun)
+  CONTEXTUAL_DEFINITION: An area where flowers, vegetables, or other plants are grown.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero setting with recognizable plant forms)
+  SYNONYM_GUARD: Show intentional flower and vegetable beds with cultivated rows, distinct from plain lawn or an unplanted backyard.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cultivated yard with low garden beds.
+    - Context_Layer: Rows of flowers, leafy vegetables, and a watering can.
+    - Focal_Layer: Raised planter beds filled with deliberately arranged plants.
+    - Details_Layer: Path stones and small hand trowel.
+    - Lighting_Layer: Gentle outdoor sunlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:garden" data-archetype="cultivated-place">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 135 Q152 124 304 135 L304 192 L0 192Z" fill="#B7CEA9"/><ellipse cx="153" cy="168" rx="109" ry="7" fill="#9DB58F"/><path d="M144 135 L161 135 L174 192 L131 192Z" fill="#D8CDAF"/></g>
+  <g id="layer-context"><rect x="34" y="111" width="111" height="36" rx="4" fill="#B97840" stroke="#8A5A35" stroke-width="2"/><rect x="159" y="111" width="111" height="36" rx="4" fill="#B97840" stroke="#8A5A35" stroke-width="2"/><path d="M41 114 L138 114 M166 114 L263 114" stroke="#8A5A35" stroke-width="2"/><path d="M50 112 L50 79 M75 112 L75 88 M101 112 L101 74 M124 112 L124 84" stroke="#557A53" stroke-width="3"/><path d="M175 112 L175 84 M198 112 L198 75 M222 112 L222 84 M248 112 L248 78" stroke="#557A53" stroke-width="3"/><path d="M50 82 Q42 72 50 66 Q58 72 50 82 M75 91 Q66 80 75 75 Q84 80 75 91 M101 77 Q92 67 101 61 Q110 67 101 77 M124 87 Q116 76 124 71 Q132 76 124 87" fill="#CE3D4E" stroke="#A92D3C" stroke-width="1.3"/><path d="M175 88 Q165 80 174 73 Q183 80 175 88 M198 78 Q188 69 198 62 Q208 69 198 78 M222 88 Q213 79 222 72 Q231 79 222 88 M248 82 Q239 73 248 66 Q257 73 248 82" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.3"/><path d="M61 111 Q68 98 80 105 Q72 117 61 111 M89 109 Q97 95 108 103 Q100 115 89 109 M185 109 Q192 94 203 102 Q196 114 185 109 M231 110 Q239 96 250 104 Q243 117 231 110" fill="#7FB07A" stroke="#557A53" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M63 56 L63 85 L78 85 L78 65Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M68 56 L82 51 L91 56 L78 65Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M270 53 L279 45 L288 53 L279 61Z" fill="#F2C14E"/><path d="M97 143 L102 137 L107 143 M203 143 L208 137 L213 143" fill="none" stroke="#D8CDAF" stroke-width="3"/></g>
+  <g id="layer-lighting"><circle cx="245" cy="38" r="16" fill="#F2C14E" opacity="0.48"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

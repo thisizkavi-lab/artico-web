@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: moped
+  CONTEXTUAL_DEFINITION: A small light two-wheel vehicle with a modest motor, often retaining bicycle-style pedals.
+  PEDAGOGICAL_ART_DIRECTOR: Show the compact step-through body, small motor, and pedals that make the moped distinct from a pedal-only bicycle and a larger motorcycle.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with functional parts
+  SYNONYM_GUARD: Include a visible engine and simple pedals in a lightweight frame; avoid the large tank and body bulk of a motorcycle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place wheels at (78,126) and (221,126), radius 21; form a small step-through frame from y=77 to y=124, a compact motor casing above the crank, pedals at x=149, and a small seat/handlebar; keep the engine separate from the rider saddle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:moped" data-archetype="compact-motorized-cycle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="moped-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#547A56"/></linearGradient>
+    <linearGradient id="moped-engine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E3EAF0"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <radialGradient id="moped-halo"><stop stop-color="#FFF1B9" stop-opacity=".67"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="moped-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="161" rx="106" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="112" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><circle cx="78" cy="124" r="23" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="4"/><circle cx="221" cy="124" r="23" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="4"/><circle cx="78" cy="124" r="6" fill="#CBD5E1" stroke="#64748B" stroke-width="1"/><circle cx="221" cy="124" r="6" fill="#CBD5E1" stroke="#64748B" stroke-width="1"/><path d="M78 124 L114 89 L151 116 L111 116 Z M151 116 L180 83 L221 124 M180 83 L194 69" fill="none" stroke="#1E2A3B" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M114 88 Q121 78 134 78 H159 Q169 79 177 87 L163 99 H126 Z" fill="url(#moped-body)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M117 73 Q131 68 146 72 L144 77 H119 Z" fill="#263C70" stroke="#1E2A3B" stroke-width="1.1"/><path d="M191 70 L200 65 M199 66 L205 71 M199 66 L204 61" fill="none" stroke="#1E2A3B" stroke-width="2.6" stroke-linecap="round"/><path d="M188 77 L198 104" stroke="#1E2A3B" stroke-width="2.8"/><path d="M177 89 L201 111" stroke="#5479AC" stroke-width="4.5" stroke-linecap="round"/><rect x="137" y="101" width="28" height="22" rx="5" fill="url(#moped-engine)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M142 106 H160 M142 111 H160 M142 116 H160" stroke="#64748B" stroke-width="1"/><circle cx="151" cy="122" r="6" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M151 122 L166 134 M151 122 L140 112" stroke="#1E2A3B" stroke-width="2.8" stroke-linecap="round"/><path d="M166 134 H175 M140 112 H132" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><path d="M111 116 H133" stroke="#C68A29" stroke-width="1.3" stroke-dasharray="2 2"/><path d="M62 149 H237" stroke="#C4B9A7" stroke-width="1.2"/></g>
+  <g id="layer-focal" filter="url(#moped-shadow)"><path d="M172 83 L197 106" stroke="#5479AC" stroke-width="4.7" stroke-linecap="round"/><path d="M179 89 L187 97" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round"/><circle cx="211" cy="97" r="3" fill="#F7DDA3" stroke="#C68A29" stroke-width=".8"/><path d="M106 82 L117 77 M182 74 L189 72" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M55 59 L61 53 M240 56 L246 50" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/><circle cx="94" cy="53" r="2" fill="#8EB0DE"/><circle cx="214" cy="48" r="2" fill="#A8D4A2"/><path d="M131 92 L138 86 M143 93 L150 87 M155 94 L162 88" stroke="#FFFFFF" stroke-width=".9"/><path d="M142 101 V96 M158 101 V96" stroke="#64748B" stroke-width=".9"/><circle cx="128" cy="104" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="80" rx="105" ry="66" fill="url(#moped-halo)" opacity=".13"/><path d="M28 35 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M0 148 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: sandcastle (Noun)
+  CONTEXTUAL_DEFINITION: A child-made castle built from damp beach sand, with towers and a moat.
+  PEDAGOGICAL_ART_DIRECTOR: Give the sand structure a clear central keep, corner turrets, crenellations, and surrounding moat.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a castle-shaped construction made from sand, not a stone castle or an ordinary sand pile.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Golden sandcastle with four conical towers, central battlements, arched doorway, a moat, and a child holding a small shovel.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:sandcastle" data-archetype="beach-sandcastle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="sc-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="sc-sand" x2="0" y2="1"><stop stop-color="#F1DDA8"/><stop offset="1" stop-color="#C99E5D"/></linearGradient><linearGradient id="sc-tower" x2="0" y2="1"><stop stop-color="#EBD09A"/><stop offset="1" stop-color="#B9894C"/></linearGradient><filter id="sc-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sc-sky)"/><path d="M0 111Q77 100 153 112T304 107V192H0Z" fill="#B3C5A1"/><path d="M0 145H304V192H0Z" fill="url(#sc-sand)"/></g>
+ <g id="layer-context"><circle cx="247" cy="39" r="13" fill="#EBC86F" opacity=".8"/><path d="M17 111L33 72L49 111ZM262 107L278 62L294 107Z" fill="#64836D"/><path d="M22 168H280" fill="none" stroke="#D9BF87" stroke-width="1.2"/><path d="M24 150Q64 164 101 150Q151 135 202 151Q241 163 280 148" fill="none" stroke="#73B9B9" stroke-width="3.2"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sc-shadow)">
+  <path d="M83 133V97L103 88V133ZM201 133V88L221 97V133Z" fill="url(#sc-tower)" stroke="#A47742" stroke-width="1.3"/>
+  <path d="M99 133V83L121 72L139 83V133ZM165 133V83L183 72L205 83V133Z" fill="url(#sc-tower)" stroke="#A47742" stroke-width="1.3"/>
+  <path d="M110 82L121 61L132 82ZM172 82L183 61L194 82Z" fill="#E5C589" stroke="#A47742" stroke-width="1.2"/>
+  <path d="M76 101h29v7H76zm-3 24h34v7H73zm126-24h29v7h-29zm-3 24h35v7h-35z" fill="#D5B474"/>
+  <path d="M98 91h8v-5h7v5h8v-5h7v5h8M163 91h8v-5h7v5h8v-5h7v5h8" fill="none" stroke="#A47742" stroke-width="2"/>
+  <path d="M103 133V95H201V133H190V110Q185 100 178 110V133H128V110Q121 100 115 110V133Z" fill="url(#sc-sand)" stroke="#A47742" stroke-width="1.5"/>
+  <path d="M146 133V115Q151 105 157 115V133Z" fill="#8E633C" stroke="#A47742" stroke-width="1.1"/><path d="M148 115q4-5 8 0" fill="none" stroke="#F4DEAE" stroke-width="1"/>
+  <path d="M115 97h10m52 0h10m-59 8h10m42 0h10" fill="none" stroke="#F9E7BF" stroke-width="1.2"/><path d="M137 82l-4 5m44-5 4 5" fill="none" stroke="#F4DFB5" stroke-width="1.1"/>
+ </g>
+ <g id="layer-details"><circle cx="60" cy="143" r="1" fill="#FFF8E7"/><path d="M112 89v4m8-4v4m57-4v4m8-4v4M82 104h8m117 0h8" fill="none" stroke="#9F7544" stroke-width="1"/><path d="M23 151Q63 163 100 151M204 151Q241 162 277 150" fill="none" stroke="#BFE3D5" stroke-width="1.2"/><circle cx="123" cy="94" r="1.2" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M104 87l17-9m62 9 17-9M110 94h17m46 0h17" fill="none" stroke="#FFF1CE" stroke-width="1.2" opacity=".7"/><circle cx="121" cy="62" r="1.2" fill="#FFF8E7"/></g>
+</svg>

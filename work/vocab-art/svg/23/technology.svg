@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: technology (Noun)
+  CONTEXTUAL_DEFINITION: The school subject and applied knowledge used to make useful devices and systems.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Students build a small solar-powered mechanical model at a worktable, distinguishing technology from computer-focused information technology.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School technology lab with window and bench.
+    - Context_Layer: Tools and a muted storage cabinet.
+    - Focal_Layer: Student assembles a small solar robot with jointed arms.
+    - Details_Layer: Solar panel, gear wheel, and safe hand tools.
+    - Lighting_Layer: Reflected light from the blue panel.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:technology" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="tech-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="tech-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tech-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 29H94V81H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 30V80M21 54H93" stroke="#FFFFFF" stroke-width="2.5"/><rect x="228" y="42" width="51" height="86" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M31 91H81M38 90V71M52 90V66M66 90V73M80 90V68" stroke="#64748B" stroke-width="2.5"/><path d="M34 143H268" stroke="#8D765A" stroke-width="3"/><path d="M235 54H272M235 63H272" stroke="#F7EBCF" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#tech-shadow)"><path d="M112 93Q125 84 139 91L146 116L136 126L115 120Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="125" cy="78" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M113 78Q114 65 126 65Q138 66 138 79L133 82Q131 72 125 72Q120 72 116 85Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M113 99L96 112L85 127M137 97L154 108L168 101" fill="none" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M113 99L96 112L85 127M137 97L154 108L168 101" fill="none" stroke="#C98961" stroke-width="3" stroke-linecap="round"/><path d="M109 130H170V137H109Z" fill="#A98A64" stroke="#65472F" stroke-width="1.5"/><rect x="176" y="101" width="34" height="31" rx="5" fill="#D9A441" stroke="#65472F" stroke-width="1.6"/><circle cx="184" cy="136" r="7" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><circle cx="202" cy="136" r="7" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M183 102L192 89L201 102Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M181 110H205" stroke="#FEF9C3" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M184 77L207 70L215 86L192 92Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M189 78L194 89M197 75L202 86M205 72L210 83" stroke="#DCECFB" stroke-width="1"/><circle cx="215" cy="116" r="8" fill="#E3E8F0" stroke="#64748B" stroke-width="1.5"/><circle cx="215" cy="116" r="3" fill="#D9A441"/><path d="M80 130L90 120L96 126L88 136Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M96 128L106 121" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="99" rx="120" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M176 101L192 88L208 101" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".72"/></g>
+</svg>

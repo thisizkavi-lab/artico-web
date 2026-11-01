@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: dove (noun)
+  CONTEXTUAL_DEFINITION: A small pale dove, shown in flight through open sky.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Keep the body soft white-gray and compact with a small head; do not use the larger dark urban pigeon silhouette.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a pale bird flying toward the right; body x=96..181 y=85..125, small head at x=182 y=85, pointed beak, one raised sweeping wing from x=130 y=99 to x=165 y=42, far wing to x=117 y=62, tail feathers and soft feather marks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:dove" data-archetype="pale-flying-dove">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#D7DEE0;--c-secondary:#929FA5;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="dove-sky" x2="0" y2="1"><stop stop-color="#D8EAF4"/><stop offset="1" stop-color="#F7F2E8"/></linearGradient>
+  <linearGradient id="dove-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#CDD5D8"/></linearGradient>
+  <radialGradient id="dove-glow"><stop stop-color="#FFFFFF" stop-opacity=".65"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+  <filter id="dove-shadow" x="-20%" y="-25%" width="145%" height="155%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#53616A" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dove-sky)"/><circle cx="82" cy="47" r="34" fill="url(#dove-glow)"/><path d="M0 145Q84 135 151 146T304 141V192H0Z" fill="#E4E7D9"/><path d="M0 164Q91 154 176 166T304 159V192H0Z" fill="#D5DDCB"/><path d="M228 57q8-8 16 0m-6 9q6-6 12 0M51 82q6-5 12 0" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".7" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M33 147q36-8 65-2m142-3q23-8 40-2" fill="none" stroke="#9EAE8F" stroke-width="1.6"/><path d="M43 148l-4-8m10 7 4-7m170 4 4-8m8 7 5-6" fill="none" stroke="#849875" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="145" cy="150" rx="53" ry="5" fill="#9BAA94" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#dove-shadow)"><path d="M96 105Q104 91 130 88Q153 82 173 92Q190 99 187 113Q183 128 157 130Q124 131 103 119Z" fill="url(#dove-feather)" stroke="#89979C" stroke-width="1.5"/><path d="M128 99Q140 84 150 63Q162 41 180 39Q174 65 167 85Q161 99 153 107Z" fill="url(#dove-feather)" stroke="#89979C" stroke-width="1.4"/><path d="M131 99Q121 80 108 69Q97 60 87 61Q93 80 110 99Q119 108 133 113Z" fill="#E8ECEC" stroke="#9BA7AB" stroke-width="1.3"/><path d="M101 112L76 105L89 123L111 124Z" fill="#D5DDDF" stroke="#929FA5" stroke-width="1.1"/><path d="M177 91Q190 78 202 84Q211 88 207 99Q200 110 184 108Z" fill="#F0F2F0" stroke="#89979C" stroke-width="1.2"/><path d="M202 88L221 91L203 97Z" fill="#D69C55" stroke="#9A6635" stroke-width="1"/><circle cx="192" cy="87" r="2.3" fill="#1E2A3B"/><path d="M115 119l-2 8m12-8-1 8" fill="none" stroke="#B77550" stroke-width="1.6" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M135 97q12-24 30-43m-23 48q11-19 21-33m-71-4q14 10 25 28m-15-20 17 18m-30 18 15 5" fill="none" stroke="#B4C0C3" stroke-width="1.1" stroke-linecap="round"/><path d="M105 109q15-12 37-10m-33 14q19-8 38-7" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><path d="M144 89l18-24" fill="none" stroke="#AAB7BA" stroke-width="1.2" stroke-linecap="round"/><path d="M150 95l19-25" fill="none" stroke="#AAB7BA" stroke-width="1.2" stroke-linecap="round"/><path d="M157 102l20-25" fill="none" stroke="#AAB7BA" stroke-width="1.2" stroke-linecap="round"/><circle cx="236" cy="108" r="1.2" fill="#D9C28E"/></g>
+ <g id="layer-lighting"><path d="M105 99q17-13 39-9m22-41q9-7 17-6" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".9" stroke-linecap="round"/><ellipse cx="148" cy="101" rx="64" ry="35" fill="#FFFFFF" opacity=".05"/></g>
+</svg>

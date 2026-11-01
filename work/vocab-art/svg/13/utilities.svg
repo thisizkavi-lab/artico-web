@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: utilities (Noun, plural)
+  CONTEXTUAL_DEFINITION: Essential home services such as water, electricity, and heat.
+  PEDAGOGICAL_ARCHETYPE: 5 — Service connections diagram
+  SYNONYM_GUARD: Show water, power, and heating physically connected to the home; bills are the paper statements and including utilities bundles these costs into rent.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple home centered against pale background.
+    - Context_Layer: Water pipe, power cable, and heat line approach the house.
+    - Focal_Layer: Three clear service symbols connect into the dwelling.
+    - Details_Layer: Blue route lines and pipe connections, no written labels.
+    - Lighting_Layer: Each incoming service has one distinct colored cue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:utilities" data-archetype="service-diagram">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 149H304V192H0Z" fill="#D8C5A8"/><path d="M0 149H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="153" cy="164" rx="101" ry="6" fill="#938675" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M26 118H95V145" fill="none" stroke="#4A72B2" stroke-width="5" stroke-linejoin="round"/><path d="M277 116H225V144" fill="none" stroke="#C88446" stroke-width="5" stroke-linejoin="round"/><path d="M152 31V65" fill="none" stroke="#D97706" stroke-width="4"/><path d="M20 118H42M264 116H280M146 30H158" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M98 76L151 40L206 76V146H98Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M89 77L151 34L215 77" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M112 88H137V111H112Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M124 89V110M113 100H136" stroke="#5479AC" stroke-width="1.4"/><path d="M158 102Q158 96 164 96H181V146H158Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="176" cy="123" r="2.2" fill="#F2C14E"/><path d="M24 107H52V128H24Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M29 101H47V107H29Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.3"/><path d="M267 102H287V124H267Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M272 98H282V103H272Z" fill="#E7B77A" stroke="#1E2A3B" stroke-width="1.1"/><path d="M142 27H162V35H142Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M151 20V28" stroke="#1E2A3B" stroke-width="2"/><path d="M278 123V133M29 128V136M151 35V41" stroke="#1E2A3B" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M31 113H46M272 108H282M145 30H158" stroke="#FFFFFF" stroke-width="1.3"/><path d="M95 77L151 39L207 77" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><path d="M51 125H87M222 123H264" stroke="#4A72B2" stroke-width="1" stroke-dasharray="3 3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="39" cy="117" r="17" fill="#CDE0E9" opacity=".4"/><circle cx="277" cy="113" r="17" fill="#FEF3C7" opacity=".5"/><path d="M143 17Q151 7 159 17" fill="none" stroke="#F2C14E" stroke-width="1.6"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: unblock the sink (Verb phrase)
+  CONTEXTUAL_DEFINITION: Remove a solid obstruction from a sink drain so water can pass through.
+  PEDAGOGICAL_ARCHETYPE: 4 — Tool, obstruction, and restored flow
+  SYNONYM_GUARD: A flexible drain snake pulls a small hair-and-soap plug out of the visible pipe; unclog-the-sink shows a plunger creating a whirlpool.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom vanity with a sink basin and open cabinet below.
+    - Context_Layer: U-shaped drain pipe is visible against the cabinet interior.
+    - Focal_Layer: Hand pulls a blue flexible drain snake from the pipe; a small obstruction is caught on its tip.
+    - Details_Layer: Pipe joints, sink plug hole, water drops, tool coil, and clean flowing stream below the cleared pipe.
+    - Lighting_Layer: Cool highlight on the chrome pipe and basin rim.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:unblock the sink" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#CBD5E1;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#8EC8E8;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="bathroom-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF1"/></linearGradient>
+    <linearGradient id="metal-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F5F9"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bathroom-grad)"/><path d="M0 143H304V192H0Z" fill="#D9C6AB"/><path d="M42 40H266V143H42Z" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2"/><path d="M35 34H273V45H35Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M58 47Q69 82 92 89H211Q236 82 246 47" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.4"/><path d="M73 52Q83 78 102 81H201Q220 77 231 52" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.4"/><ellipse cx="152" cy="159" rx="81" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M150 84V98Q150 108 163 108H178Q190 108 190 120V133" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M150 84V98Q150 108 163 108H178Q190 108 190 120V133" fill="none" stroke="url(#metal-grad)" stroke-width="5" stroke-linecap="round"/><path d="M151 93H160M181 109H189M185 131H196" stroke="#64748B" stroke-width="1.5"/><path d="M153 81V89M149 84H157" stroke="#1E2A3B" stroke-width="2"/><path d="M66 112H91V140H66Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M70 108H87V113H70Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.2"/><path d="M73 118H84M73 124H84M73 130H84" stroke="#8EB0DE" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M153 78C141 83 130 91 120 103C112 113 106 125 100 138" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M153 78C141 83 130 91 120 103C112 113 106 125 100 138" fill="none" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/><path d="M153 78L151 67L157 62L164 66L160 76Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M154 67Q143 61 145 55Q150 53 155 59Q158 51 164 54Q168 59 160 67Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="1.4"/><path d="M151 69Q157 70 163 67" fill="none" stroke="#E7B68E" stroke-width="1.2"/><path d="M113 126Q120 120 126 125Q132 129 126 134Q120 140 114 135Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="1.2"/><path d="M184 133V144M191 133V143M198 133V144" stroke="#8EC8E8" stroke-width="1.8" stroke-linecap="round"/><path d="M185 134Q191 139 198 134" fill="none" stroke="#5479AC" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="137" cy="91" r="2" fill="#8EC8E8"/><circle cx="128" cy="103" r="2.2" fill="#8EC8E8"/><circle cx="105" cy="143" r="1.8" fill="#8EC8E8"/><path d="M92 86L99 83M216 86L222 82" stroke="#94A3B8" stroke-width="1.2"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M71 49Q81 76 100 78" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/><path d="M150 87V97Q151 104 161 105" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><path d="M186 134L190 142" stroke="#DCECFB" stroke-width="1.3"/></g>
+</svg>

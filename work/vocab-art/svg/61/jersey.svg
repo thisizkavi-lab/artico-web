@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: jersey (soccer shirt)
+ CONTEXTUAL_DEFINITION: A lightweight short-sleeved shirt worn by a soccer player as part of a team uniform.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (+ Functional Context)
+ SYNONYM_GUARD: The V-neck, short sleeves, side panels, and soccer kit colors distinguish it from a collared button-up shirt.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large short-sleeved team jersey centered on warm paper; front seams and V neck clear, paired socks and ball small below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:jersey" data-archetype="hero-short-sleeved-soccer-kit-shirt">
+ <defs><linearGradient id="jersey-stage" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EAE3D5"/></linearGradient><linearGradient id="jersey-fabric" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient><clipPath id="jersey-clip"><path id="jersey-shape" d="M101 44l20-9q14 14 30 14t31-14l20 9 38 23-18 25-20-12v58H84V80L64 92 46 67Z"/></clipPath><filter id="jersey-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#jersey-stage)"/><ellipse cx="151" cy="165" rx="92" ry="9" fill="#DDD4C3"/><path d="M24 164h256" stroke="#EAE3D5" stroke-width="2"/></g>
+ <g id="layer-context"><circle cx="252" cy="44" r="13" fill="#F2C14E" opacity=".68"/><path d="M47 157h214" stroke="#CBD5E1" stroke-width="1.2"/><circle cx="246" cy="147" r="10" fill="#F7F3E8" stroke="#1E2A3B" stroke-width="1.7"/><path d="M246 142l4 3-2 5h-5l-2-4Zm-5-1-3-2m12 2 3-2m-8 14-1 3" fill="#27364B" stroke="#1E2A3B" stroke-width=".8"/></g>
+ <g id="layer-focal" filter="url(#jersey-shadow)"><g clip-path="url(#jersey-clip)"><rect x="44" y="34" width="200" height="112" fill="url(#jersey-fabric)"/><path d="M69 35l20 0 22 112H84Zm146 0h20l-24 112h-25Z" fill="#CE3D4E" opacity=".9"/><path d="M125 49q26 13 52 0" fill="none" stroke="#8EB0DE" stroke-width="7" opacity=".68"/><path d="M151 56v85" stroke="#8EB0DE" stroke-width="1.4" opacity=".68"/><path d="M97 89q53 10 108 0" fill="none" stroke="#8EB0DE" stroke-width="1.6" opacity=".6"/></g><use href="#jersey-shape" fill="none" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M126 49l25 23 25-23m-25 23v11" fill="none" stroke="#E5E9F0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M81 78l13 8m117-8-13 8" stroke="#F1F5F9" stroke-width="1.7"/><path d="M94 132h114" stroke="#8EB0DE" stroke-width="2.2"/><path d="M95 136h112" stroke="#1E2A3B" stroke-width="1" opacity=".55"/></g>
+ <g id="layer-details"><path d="M72 65l-12 18 13 6m152-24 12 18-13 6" fill="none" stroke="#F1F5F9" stroke-width="1.3"/><path d="M105 40q12-6 22-7m47 0q11 1 20 7" fill="none" stroke="#8EB0DE" stroke-width="1.4"/><circle cx="151" cy="87" r="1.6" fill="#FFFFFF"/><path d="M139 96h24m-24 6h24" stroke="#8EB0DE" stroke-width="1.1" opacity=".8"/><path d="M88 91v38" stroke="#F1F5F9" stroke-width="1" opacity=".75"/><path d="M211 91v38" stroke="#F1F5F9" stroke-width="1" opacity=".75"/><path d="M69 82l10 7" stroke="#F1F5F9" stroke-width="1.3"/><path d="M233 82l-10 7" stroke="#F1F5F9" stroke-width="1.3"/></g>
+ <g id="layer-lighting"><path d="M106 47l-36 22m94-19 10-5" fill="none" stroke="#8EB0DE" stroke-width="2" opacity=".8"/><ellipse cx="115" cy="70" rx="25" ry="14" fill="#FFFFFF" opacity=".075"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bedroom (Noun)
+  CONTEXTUAL_DEFINITION: A room used for sleeping.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: Make the bed the dominant silhouette and include pillows and a bedside table.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet bedroom wall and warm wood floor.
+    - Context_Layer: Large bed with headboard against the wall.
+    - Focal_Layer: Neatly made bedding and pillows.
+    - Details_Layer: Bedside table with a lamp and small rug.
+    - Lighting_Layer: Soft morning window light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bedroom" data-archetype="room-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF2E7"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 150 Q152 140 304 150 L304 192 L0 192Z" fill="#D7C5AA"/><path d="M38 156 L266 156" stroke="#B97840" stroke-width="2"/><ellipse cx="158" cy="167" rx="108" ry="8" fill="#BCA889"/><rect x="40" y="31" width="60" height="48" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M70 31 L70 79 M40 55 L100 55" stroke="#FAF8F3" stroke-width="2"/></g>
+  <g id="layer-context"><rect x="72" y="82" width="165" height="11" rx="4" fill="#8A5A35"/><rect x="81" y="91" width="148" height="52" rx="6" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.1"/><path d="M81 115 Q145 106 229 116 L229 143 L81 143Z" fill="#8B5CA8"/><rect x="88" y="96" width="53" height="22" rx="8" fill="#FAF8F3" stroke="#B9C7CF" stroke-width="1.3"/><rect x="148" y="96" width="53" height="22" rx="8" fill="#FAF8F3" stroke="#B9C7CF" stroke-width="1.3"/><path d="M89 143 L86 159 M220 143 L223 159" stroke="#8A5A35" stroke-width="4"/><rect x="35" y="119" width="36" height="30" rx="3" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M41 128 L65 128 M41 137 L65 137" stroke="#8A5A35" stroke-width="1.4"/><path d="M47 118 L47 104 L59 104 L59 118Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.2"/><path d="M43 104 L63 104 L59 98 L47 98Z" fill="#F2C14E"/></g>
+  <g id="layer-details"><ellipse cx="157" cy="158" rx="73" ry="7" fill="#8B5CA8" opacity="0.26"/><path d="M247 90 L257 90 L257 112 L247 112Z" fill="#7FB07A"/><path d="M243 90 Q251 79 261 90" fill="#7FB07A"/><path d="M114 127 Q150 134 194 127" fill="none" stroke="#C4A3D5" stroke-width="2"/><circle cx="54" cy="42" r="11" fill="#FFFFFF" opacity="0.35"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

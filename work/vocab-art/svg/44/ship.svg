@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: ship
+  CONTEXTUAL_DEFINITION: A large vessel built for longer or ocean-going journeys.
+  PEDAGOGICAL_ART_DIRECTOR: Show a powerful ocean ship with a high bow, wake, stacked freight containers, and a bridge above deck.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with scale cue
+  SYNONYM_GUARD: Make the ship larger and ocean-bound, unlike the short shore-to-shore passenger ferry; no dock or land ramp.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place the long hull from x=30..274 and y=111..151; stack containers from x=85..224, y=67..110; bridge at x=226..263, y=60..111; sea horizon y=121.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:ship" data-archetype="hero-ocean-vessel">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ship-hull" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#263C70"/></linearGradient>
+    <linearGradient id="ship-sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A7CBE0"/><stop offset="1" stop-color="#6A94B3"/></linearGradient>
+    <radialGradient id="ship-halo"><stop stop-color="#E6F0F5" stop-opacity=".68"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="ship-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><circle cx="60" cy="43" r="17" fill="#F2C14E" opacity=".72"/><path d="M0 102 Q38 93 76 102 T152 101 T228 102 T304 100 V192 H0 Z" fill="#EEF2F1"/><path d="M0 124 Q40 116 80 124 T160 124 T240 123 T304 124 V192 H0 Z" fill="url(#ship-sea)"/><path d="M0 149 Q40 143 80 149 T160 149 T240 148 T304 149" fill="none" stroke="#EAF5F5" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M27 157 Q64 148 98 157 M199 159 Q239 149 281 157" fill="none" stroke="#EAF5F5" stroke-width="2" stroke-linecap="round"/><path d="M34 174 Q63 166 90 174 M212 173 Q247 165 274 173" fill="none" stroke="#A7CBE0" stroke-width="2" stroke-linecap="round"/><path d="M28 110 H274" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+  <g id="layer-focal" filter="url(#ship-shadow)"><path d="M30 111 H274 L248 145 Q236 154 207 156 H87 Q56 153 43 141 Z" fill="url(#ship-hull)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M40 138 Q137 143 259 137" fill="none" stroke="#E8EEF2" stroke-width="2"/><path d="M54 116 H252" stroke="#F2C14E" stroke-width="3"/><rect x="80" y="82" width="45" height="29" rx="2" fill="#D48256" stroke="#1E2A3B" stroke-width="1.8"/><rect x="128" y="82" width="44" height="29" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><rect x="175" y="82" width="44" height="29" rx="2" fill="#A7B987" stroke="#1E2A3B" stroke-width="1.8"/><rect x="98" y="52" width="43" height="29" rx="2" fill="#DFAF5C" stroke="#1E2A3B" stroke-width="1.8"/><rect x="144" y="52" width="42" height="29" rx="2" fill="#7997BC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M227 61 H263 V113 H220 V77 Q221 66 227 61 Z" fill="#E8ECEB" stroke="#1E2A3B" stroke-width="2.4"/><path d="M229 68 H239 V79 H229 Z M243 68 H255 V79 H243 Z" fill="#BAD2DF" stroke="#64748B" stroke-width="1"/><path d="M220 84 H263" stroke="#5479AC" stroke-width="2"/><path d="M239 52 V61 M254 47 V61" stroke="#64748B" stroke-width="1.5"/><path d="M242 48 H257" stroke="#5479AC" stroke-width="1.4"/><path d="M43 142 H246" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M86 87 H119 M134 87 H166 M181 87 H214 M103 57 H136 M149 57 H180" stroke="#F4D7B0" stroke-width="1.2" opacity=".8"/><path d="M26 127 Q46 121 65 127 M267 128 Q284 123 297 128" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M55 162 H111 M186 164 H244" stroke="#D5EBF0" stroke-width="1.6" stroke-linecap="round"/><circle cx="232" cy="91" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="80" rx="119" ry="73" fill="url(#ship-halo)" opacity=".2"/><path d="M28 28 H277" stroke="#FFFFFF" stroke-width=".7"/><path d="M39 151 Q144 162 248 151" fill="none" stroke="#1E2A3B" stroke-width="1" opacity=".35"/></g>
+</svg>

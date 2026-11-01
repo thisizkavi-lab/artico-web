@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: hurdles
+ CONTEXTUAL_DEFINITION: Lightweight barriers runners leap over during a track race.
+ PEDAGOGICAL_ARCHETYPE: Repeated obstacles lined across an athletics lane, one closest for clear construction.
+ SYNONYM_GUARD: Show the crossbar and two feet of each hurdle, not a fence or a high jump bar.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Three red-and-white hurdles recede along parallel track lanes; nearest barrier has a visible top rail and two upright supports.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:hurdles" data-archetype="track-race-barriers">
+ <defs><linearGradient id="hu-track" x2="0" y2="1"><stop stop-color="#C76B65"/><stop offset="1" stop-color="#A84D56"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2EE"/><path d="M0 89h304v103H0Z" fill="url(#hu-track)"/><path d="M0 92h304m-304 67h304m-304 25h304" stroke="#F7EDE1" stroke-width="1.4"/><path d="M45 89v103m72-103v103m72-103v103m72-103v103" stroke="#F7EDE1" stroke-width="1.1" opacity=".75"/><circle cx="47" cy="34" r="10" fill="#E4BB68"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="177" rx="114" ry="5" fill="#344F5A" opacity=".14"/><path d="M25 132h34m201 0h20" stroke="#F7EDE1" stroke-width="1.1"/><path d="M82 76h48m93 0h40" stroke="#DCE6E4" stroke-width="1.2"/></g>
+ <g id="layer-focal"><path d="M46 105h113m-105 0-10 55m105-55 11 55" stroke="#F4EFE2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M48 104h111" stroke="#CE3D4E" stroke-width="2.4"/><path d="M181 94h73m-68 0-7 37m67-37 7 37" stroke="#F4EFE2" stroke-width="4.2" stroke-linecap="round"/><path d="M184 93h71" stroke="#E4BB68" stroke-width="2"/><path d="M250 86h43m-39 0-4 21m40-21 4 21" stroke="#F4EFE2" stroke-width="2.7" stroke-linecap="round"/><path d="M252 85h41" stroke="#CE3D4E" stroke-width="1.5"/></g>
+ <g id="layer-details"><path d="M54 112h22m13 0h22m13 0h22" stroke="#CE3D4E" stroke-width="2.4"/><path d="M49 160h14m42 0h13m67-29h12m43 0h12" stroke="#F2DAB0" stroke-width="1.2"/><path d="M31 179h47m169 0h30" stroke="#F7EDE1" stroke-width="1.2"/><circle cx="45" cy="105" r="2.2" fill="#F7EDE1"/><circle cx="159" cy="105" r="2.2" fill="#F7EDE1"/><circle cx="178" cy="94" r="1.8" fill="#F7EDE1"/><circle cx="257" cy="86" r="1.5" fill="#F7EDE1"/><circle cx="53" cy="163" r="1.2" fill="#E4BB68"/></g>
+ <g id="layer-lighting"><ellipse cx="91" cy="119" rx="64" ry="42" fill="#FFF6E7" opacity=".04"/><path d="M49 101h108" stroke="#FFF" stroke-width="1" opacity=".7"/></g>
+</svg>

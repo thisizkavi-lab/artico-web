@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: blush / blusher (make-up) (Noun)
+  CONTEXTUAL_DEFINITION: Colored cosmetic powder applied to the cheeks.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with applicator
+  SYNONYM_GUARD: This is a makeup compact and cheek brush, not the action of blushing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and product shadow.
+    - Context_Layer: Soft coral halo.
+    - Focal_Layer: Open compact with rosy powder pan.
+    - Details_Layer: Domed powder brush with coral bristles.
+    - Lighting_Layer: Compact-lid highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:blush / blusher (make-up)" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="150" cy="157" rx="105" ry="17" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="91" rx="117" ry="69" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M44 75Q45 62 59 61L149 62Q162 64 160 77L154 139Q152 153 139 153L52 151Q39 148 41 136Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.6"/>
+  <path d="M51 71Q53 66 61 66L146 67Q154 68 153 76L150 111L48 107Z" fill="#F8E8E6" stroke="#7B8A9E" stroke-width="1.8"/>
+  <ellipse cx="101" cy="91" rx="34" ry="18" fill="#D9857F" stroke="#A95059" stroke-width="2"/>
+  <path d="M167 54L202 40Q211 37 216 46L236 100L218 108L186 64Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M203 98Q218 91 231 98L244 119Q247 128 239 133L225 130Q216 120 203 98Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.2"/><path d="M216 104Q228 99 236 104" fill="none" stroke="#F4C0BB" stroke-width="2"/>
+  <path d="M62 125Q98 131 137 125" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/><circle cx="72" cy="76" r="3" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M179 79Q165 92 151 101" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="4 4"/>
+</svg>

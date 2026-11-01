@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:island" data-archetype="land-surrounded-on-all-sides-by-water">
+<!-- SELF_PROMPT: Lesson 52 geographical features; island. Make an isolated land mass surrounded by open water visible on every side, with a small central rise and shoreline; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="island-sky" x2="0" y2="1"><stop stop-color="#DCECE8"/><stop offset="1" stop-color="#C4DDD8"/></linearGradient>
+  <linearGradient id="island-sea" x2="0" y2="1"><stop stop-color="#76B4BC"/><stop offset="1" stop-color="#3B8196"/></linearGradient>
+  <linearGradient id="island-sand" x2="0" y2="1"><stop stop-color="#E7CF9B"/><stop offset="1" stop-color="#C4A36B"/></linearGradient>
+  <linearGradient id="island-green" x2="0" y2="1"><stop stop-color="#85A96C"/><stop offset="1" stop-color="#557653"/></linearGradient>
+  <filter id="island-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#island-sky)"/><circle cx="248" cy="38" r="14" fill="#EBC86F" opacity=".7"/><path d="M0 95Q69 88 143 96T304 92V192H0Z" fill="url(#island-sea)"/><path d="M0 119Q61 110 124 120T245 118Q273 114 304 119" fill="none" stroke="#C6E8DF" stroke-width="1.4"/></g>
+<g id="layer-context">
+  <path d="M69 137Q84 122 106 119Q117 98 143 96Q166 84 187 101Q212 101 223 122Q241 129 246 143Q223 159 191 162H112Q80 159 69 137Z" fill="url(#island-sand)" stroke="#967B56" stroke-width="1.5"/>
+  <path d="M88 135Q102 122 120 123Q130 103 151 103Q171 92 188 108Q205 105 218 125Q232 131 232 143Q209 153 188 154H116Q94 150 88 135Z" fill="url(#island-green)"/>
+  <path d="M110 125Q126 119 138 124M171 115q14-6 25 2" fill="none" stroke="#B2C881" stroke-width="1.8"/>
+  <path d="M0 146Q48 137 76 147m175-5q27-8 53 1M10 168q29-6 54 1m176-5q30-5 53 2" fill="none" stroke="#B0DCD6" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#island-shadow)">
+  <path d="M122 125Q127 107 142 99Q152 90 163 98Q175 102 181 122L177 136H126Z" fill="#829A70"/>
+  <path d="M143 111Q142 99 146 84L153 82Q158 97 157 111Z" fill="#795C43" stroke="#4F5A4B" stroke-width="1.3"/>
+  <path d="M129 90Q135 73 152 73Q169 73 176 91Q164 85 153 88Q140 86 129 90Z" fill="#557A5C" stroke="#3E6652" stroke-width="1.4"/>
+  <path d="M173 123Q178 111 187 110Q198 107 204 120L199 131H176Z" fill="#75935F"/>
+  <path d="M186 116Q187 105 191 97L196 98Q198 108 196 117Z" fill="#795C43" stroke="#4F5A4B" stroke-width="1.1"/>
+  <path d="M179 100Q184 88 196 89Q207 89 211 101Q201 97 195 101Q187 98 179 100Z" fill="#5D815D"/>
+  <path d="M81 140Q105 147 128 141T174 143Q201 148 229 139" fill="none" stroke="#F7E7BD" stroke-width="2"/>
+</g>
+<g id="layer-details">
+  <circle cx="99" cy="139" r="2" fill="#FFF3D3"/><circle cx="216" cy="140" r="2" fill="#FFF3D3"/><circle cx="111" cy="149" r="1.7" fill="#FFF3D3"/><circle cx="205" cy="150" r="1.6" fill="#FFF3D3"/>
+  <path d="M28 132q12-4 23 1m196 18q14-4 25 0M40 179q15-4 30 0m164-3q17-5 32 0" fill="none" stroke="#A8D8D1" stroke-width="1.5"/>
+  <path d="M124 83l-6-12m5 12 8-13m-6 14-12-4m82 22 7-11m-5 12-12-3" fill="none" stroke="#688C61" stroke-width="1.5"/>
+  <path d="M96 126q9-7 16-4m89-5q9-7 16-2" fill="none" stroke="#D7C48F" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M0 118Q61 109 124 119M245 117q29-5 58 1" fill="none" stroke="#F4FCF1" stroke-width="1.3"/><path d="M132 89q6-12 18-13m-25 48q10-5 21-3" fill="none" stroke="#C7D7AA" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

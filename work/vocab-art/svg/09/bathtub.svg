@@ -1,0 +1,19 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bathtub (Noun)
+  CONTEXTUAL_DEFINITION: A large fixed basin in which a person can bathe.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show the empty tub as a bathroom fixture; the bath card depicts someone soaking in it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple tiled bathroom wall and floor.
+    - Context_Layer: Bathroom floor plane.
+    - Focal_Layer: Deep white enamel tub with rounded sides.
+    - Details_Layer: Faucet, taps, drain, and short feet.
+    - Lighting_Layer: Cool clean highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bathtub" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 46 H304 M0 92 H304 M0 138 H304 M58 0 V146 M116 0 V146 M174 0 V146 M232 0 V146" stroke="#B8CDD1" stroke-width="1.2"/><path d="M0 146 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 146 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="165" rx="100" ry="8" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M49 91 Q54 78 69 78 H239 Q254 78 258 91 L246 143 Q243 153 229 153 H77 Q63 153 59 143Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.8"/><path d="M57 96 Q151 104 250 95" fill="none" stroke="#DCECFB" stroke-width="5"/><path d="M78 153 L74 161 M229 153 L233 161" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M73 78 V67 Q73 61 80 61 H97" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M97 61 V70" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><path d="M84 62 V70 M103 62 V70" stroke="#CE7B55" stroke-width="3" stroke-linecap="round"/><circle cx="151" cy="137" r="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M68 93 Q151 101 240 92" fill="none" stroke="#FFFFFF" stroke-width="2.2"/><path d="M14 13 H290 V179 H14Z" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

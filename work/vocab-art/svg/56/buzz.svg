@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: buzz (verb/sound)
+  CONTEXTUAL_DEFINITION: The low continuous vibrating sound of a bee hovering close to a flower.
+  PEDAGOGICAL_ARCHETYPE: 1 - Action/sound conveyed by visual vibration
+  SYNONYM_GUARD: Show a bee with rapidly vibrating wings and concentric sound-wave arcs; no letters or written sound effects.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a striped fuzzy bee at x=100..194 y=78..128 hovering left of a flower; two translucent wings with repeated outlines and three curved vibration-wave arcs around its body.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:buzz" data-archetype="bee-vibration-sound">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#E0AC3E;--c-secondary:#413A32;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="buzz-sky" x2="0" y2="1"><stop stop-color="#DCEBF1"/><stop offset="1" stop-color="#F8F2E6"/></linearGradient>
+  <linearGradient id="buzz-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5D252"/><stop offset="1" stop-color="#D69231"/></linearGradient>
+  <linearGradient id="buzz-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".9"/><stop offset="1" stop-color="#9FC3C2" stop-opacity=".42"/></linearGradient>
+  <filter id="buzz-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#buzz-sky)"/><path d="M0 137Q79 126 154 138T304 130V192H0Z" fill="#DEE6D5"/><path d="M0 157Q84 147 159 159T304 151V192H0Z" fill="#C9D7BE"/><circle cx="249" cy="42" r="22" fill="#F4D891" opacity=".48"/></g>
+ <g id="layer-context"><path d="M255 153V88m0 39-15-17m15 4 14-19" fill="none" stroke="#6E8C63" stroke-width="3" stroke-linecap="round"/><path d="M255 90Q254 73 241 70Q231 74 237 84Q244 91 255 90Z" fill="#D76677" stroke="#A74D60" stroke-width="1.1"/><path d="M255 90Q260 72 274 72Q283 79 275 87Q268 92 255 90Z" fill="#E48791" stroke="#A74D60" stroke-width="1.1"/><path d="M255 91Q240 85 235 96Q241 104 255 100Z" fill="#DB6F7E" stroke="#A74D60" stroke-width="1.1"/><path d="M255 91Q269 85 277 95Q272 104 256 100Z" fill="#CE5D72" stroke="#A74D60" stroke-width="1.1"/><circle cx="255" cy="95" r="5" fill="#DFAE43"/><ellipse cx="165" cy="145" rx="53" ry="4" fill="#66785E" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#buzz-shadow)"><ellipse cx="147" cy="104" rx="30" ry="17" fill="url(#buzz-gold)" stroke="#835923" stroke-width="1.4"/><path d="M134 89Q146 89 149 104Q146 120 133 119Z" fill="#292B29"/><path d="M158 89Q174 90 178 104Q174 118 159 120Z" fill="#292B29"/><circle cx="110" cy="101" r="15" fill="#D5A044" stroke="#76552F" stroke-width="1.2"/><circle cx="105" cy="98" r="2.1" fill="#1E2A3B"/><path d="M100 91q-6-8-11-7m11 7q1-9 6-12" fill="none" stroke="#604E38" stroke-width="1.5" stroke-linecap="round"/><path d="M127 96Q118 77 128 69Q139 72 142 92Z" fill="url(#buzz-wing)" stroke="#84A5A3" stroke-width="1"/><path d="M142 96Q144 76 157 71Q167 78 154 97Z" fill="url(#buzz-wing)" stroke="#84A5A3" stroke-width="1"/><path d="M131 117l-7 12m17-12-2 12m12-12 3 12m11-13 9 9" fill="none" stroke="#514535" stroke-width="1.8" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M74 86Q63 103 74 120m-11-42Q47 103 63 128m-1-49Q37 102 58 135" fill="none" stroke="#789D9A" stroke-width="1.6" opacity=".82" stroke-linecap="round"/><path d="M119 67Q130 59 141 65m4 1q10-8 18-3" fill="none" stroke="#8FB2AD" stroke-width="1.3" opacity=".7"/><circle cx="206" cy="82" r="1.3" fill="#E7D38D"/></g>
+ <g id="layer-lighting"><path d="M130 94q8-8 14-4m6-3q8-6 14 0" fill="none" stroke="#FFF2BC" stroke-width="1.4" opacity=".78" stroke-linecap="round"/><ellipse cx="145" cy="104" rx="45" ry="26" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

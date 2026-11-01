@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: drought (Noun)
+  CONTEXTUAL_DEFINITION: A long period with very little or no rain, causing serious water shortage.
+  PEDAGOGICAL_ART_DIRECTOR: Show a broad dry landscape with a shrunken reservoir shoreline and many wilted crops, implying a prolonged condition.
+  PEDAGOGICAL_ARCHETYPE: 3 - Long-term water shortage
+  SYNONYM_GUARD: This is a sustained regional lack of rain, broader than a single dry patch.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Empty reservoir with exposed ring-shaped banks, cracked clay, and a row of wilted crops beneath a relentless sun.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:drought" data-archetype="long-drought-water-shortage">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="dt-sky" x2="0" y2="1"><stop stop-color="#EEDFBF"/><stop offset="1" stop-color="#DEC78D"/></linearGradient><linearGradient id="dt-earth" x2="0" y2="1"><stop stop-color="#C2A06C"/><stop offset="1" stop-color="#8C6847"/></linearGradient><linearGradient id="dt-water" x2="0" y2="1"><stop stop-color="#8AB8B4"/><stop offset="1" stop-color="#527F7C"/></linearGradient><filter id="dt-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#594630" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dt-sky)"/><path d="M0 104Q76 96 152 105T304 99V192H0Z" fill="#B89D6F"/><path d="M0 136H304V192H0Z" fill="url(#dt-earth)"/></g>
+ <g id="layer-context"><circle cx="249" cy="39" r="19" fill="#EBC86F" opacity=".95"/><path d="M230 14l-5-8m25-7 2-10m17 28 10 3" fill="none" stroke="#D49C43" stroke-width="1.8" stroke-linecap="round"/><path d="M20 174H282" fill="none" stroke="#9E7E53" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="103" ry="5" fill="#5B432C" opacity=".17"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#dt-shadow)">
+  <path d="M0 139Q40 134 81 140T162 139T243 140T304 136V145H0Z" fill="url(#dt-water)"/><path d="M0 135Q40 130 81 136T162 135T243 136T304 132" fill="none" stroke="#D6D0B4" stroke-width="2.4"/><path d="M15 128Q53 121 89 130M213 130Q251 122 291 126" fill="none" stroke="#E3D2A9" stroke-width="2.5"/>
+  <path d="M39 146V116M80 146V123M122 147V118M165 146V122M207 146V118M250 146V120" fill="none" stroke="#88704B" stroke-width="2.2"/><path d="M39 123Q26 110 19 115M39 126Q54 110 60 116M80 130Q70 116 62 121M122 125Q111 112 105 118M165 130Q153 115 145 121M207 126Q221 109 229 116M250 129Q237 116 231 122" fill="none" stroke="#8E794F" stroke-width="3.1" stroke-linecap="round"/>
+  <path d="M19 156l17-12 15 7 16 18m-8-13 10-9m24 12 13-14 18 8 7 15m-15-15 11-6m19 6 13-11 14 9 12 17m24-21 17 12 9 12m-81-5 11 8" fill="none" stroke="#60462F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M87 154l6 4m93-5 8 7m-33 4 6 3" fill="none" stroke="#D3B47F" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details"><path d="M24 105l17-3m75 6 18-2m104 0 17-2" fill="none" stroke="#D9C58F" stroke-width="1.2"/><path d="M22 133l9-3 6 3 8-2m72 1 7-3 8 3 9-2m87 1 8-4 8 3 7-2m34 1 8-3 6 2" fill="none" stroke="#8E744E" stroke-width="1.4" stroke-linecap="round"/><path d="M54 132l-5 3m98-3-5 4m115-5-5 4" fill="none" stroke="#6E583B" stroke-width="1.2" stroke-linecap="round"/><path d="M188 132l6 2 5-3" fill="none" stroke="#725B3F" stroke-width="1.2" stroke-linecap="round"/><circle cx="249" cy="39" r="1.5" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".45"/><path d="M41 112q12-4 24 0m148-2q14-4 28 0" fill="none" stroke="#F1E1BE" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M232 18l4 5m23-23 1 6" fill="none" stroke="#FFF2D0" stroke-width="1.2"/><path d="M8 120q34-10 64 0m157-3q34-9 65-3" fill="none" stroke="#E8DDC1" stroke-width="1.2" opacity=".65"/><circle cx="249" cy="39" r="1.2" fill="#FFF8E7"/></g>
+</svg>

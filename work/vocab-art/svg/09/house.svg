@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: house (Noun)
+  CONTEXTUAL_DEFINITION: A building where people live.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object in its everyday setting)
+  SYNONYM_GUARD: Show one complete detached home with its own entry, windows, and small yard; avoid a multi-unit building.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale sky over a small green yard.
+    - Context_Layer: One detached house with a centered front door.
+    - Focal_Layer: Pitched roof, two windows, and visible walls.
+    - Details_Layer: Entry path, small tree, and shrubs.
+    - Lighting_Layer: Soft daylight from the upper left.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:house" data-archetype="hero-object">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 143 Q152 133 304 143 L304 192 L0 192Z" fill="#B7CEA9"/><ellipse cx="152" cy="165" rx="108" ry="8" fill="#9DB58F"/><path d="M119 151 L145 151 L156 191 L106 191Z" fill="#D8CDAF"/></g>
+  <g id="layer-context"><path d="M72 91 L152 34 L232 91 L224 101 L152 52 L80 101Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><rect x="86" y="91" width="132" height="62" rx="2" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.4"/><rect x="102" y="106" width="31" height="27" rx="2" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M117 106 L117 133 M102 119 L133 119" stroke="#FAF8F3" stroke-width="2"/><rect x="170" y="106" width="31" height="27" rx="2" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M185 106 L185 133 M170 119 L201 119" stroke="#FAF8F3" stroke-width="2"/><rect x="142" y="111" width="25" height="42" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="160" cy="132" r="1.7" fill="#F2C14E"/><path d="M152 153 L152 168" stroke="#8E7E60" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M47 150 L47 118 M57 150 L57 124" stroke="#8A5A35" stroke-width="4"/><circle cx="52" cy="111" r="21" fill="#7FB07A"/><circle cx="78" cy="147" r="12" fill="#7FB07A"/><circle cx="228" cy="149" r="13" fill="#8FB987"/><circle cx="250" cy="148" r="10" fill="#7FB07A"/><circle cx="252" cy="46" r="16" fill="#F2C14E" opacity="0.48"/></g>
+  <g id="layer-lighting"><path d="M87 90 L152 45 L217 90" fill="none" stroke="#F2A29B" stroke-width="2" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

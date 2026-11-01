@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 60 - Sports
+ WORD: tournament
+ CONTEXTUAL_DEFINITION: A competition with many players or teams advancing through rounds toward a final.
+ PEDAGOGICAL_ARCHETYPE: Bracket paths show several matchups narrowing to a central final and trophy
+ SYNONYM_GUARD: Show multiple rounds and a final winner; not one isolated game or a business chart.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Tournament bracket on a board: four team markers on each side, bracket lines converge into final match and central trophy, small ball icons.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:tournament" data-archetype="multi-round-bracket-to-final">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="tour-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tour-sky)"/><path d="M37 23H267V163H37Z" fill="#F7F3E8" stroke="#405B61" stroke-width="1.8"/><path d="M37 48h230m0 43H37m0 45h230" stroke="#B6C8BF" stroke-width="1"/><path d="M0 167q73-9 152 0t152 0v25H0Z" fill="#91A686"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="178" rx="107" ry="4" fill="#405B61" opacity=".14"/><circle cx="20" cy="45" r="11" fill="#E4BB68"/><path d="M15 180h40m182 0h49" stroke="#DFE9DC" stroke-width="1.2"/></g>
+ <g id="layer-focal"><path d="M58 55h30v20h32V99h33m-95 22h30v-8h32v-13m126-45h-30v20h-32V99h-33m95 22h-30v-8h-32V99" stroke="#405B61" stroke-width="2.2" fill="none"/><circle cx="56" cy="55" r="6" fill="#D4866D"/><circle cx="56" cy="121" r="6" fill="#405B61"/><circle cx="248" cy="55" r="6" fill="#D4866D"/><circle cx="248" cy="121" r="6" fill="#405B61"/><circle cx="87" cy="75" r="5" fill="#D4866D"/><circle cx="87" cy="113" r="5" fill="#405B61"/><circle cx="217" cy="75" r="5" fill="#D4866D"/><circle cx="217" cy="113" r="5" fill="#405B61"/><circle cx="153" cy="99" r="8" fill="#E4BB68" stroke="#8A7042" stroke-width="1"/><path d="M148 97h10m-5-4v12" stroke="#405B61" stroke-width="1"/><path d="M143 137h20l-3 12h-14Z" fill="#E4BB68" stroke="#8A7042" stroke-width="1"/><path d="M148 137v-7q5-6 10 0v7m-17 12h34" stroke="#8A7042" stroke-width="1.5" fill="none"/><path d="M147 103l-10 9m22-9 10 9" stroke="#D4866D" stroke-width="1.7" fill="none"/></g>
+ <g id="layer-details"><path d="M50 35h45m113 0h45" stroke="#E1EAE2" stroke-width="1.2"/><circle cx="28" cy="91" r="1.3" fill="#FFF"/><path d="M16 174h37m202 0h35" stroke="#DDE8DC" stroke-width="1.2"/></g><g id="layer-lighting"><ellipse cx="152" cy="98" rx="103" ry="61" fill="#FFF6E7" opacity=".05"/><path d="M38 24h228" stroke="#FFF" stroke-width="1"/></g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:waterfall" data-archetype="vertical-river-drop-over-rock-ledge">
+<!-- SELF_PROMPT: Lesson 52 geographical features; waterfall. Make the defining vertical drop over a rock ledge and its plunge pool immediately readable; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="falls-sky" x2="0" y2="1"><stop stop-color="#E7F0EC"/><stop offset="1" stop-color="#BAD2D2"/></linearGradient>
+  <linearGradient id="falls-rock" x2="1" y2="1"><stop stop-color="#A9B2A2"/><stop offset=".45" stop-color="#71877F"/><stop offset="1" stop-color="#4E6665"/></linearGradient>
+  <linearGradient id="falls-water" x2="0" y2="1"><stop stop-color="#C5E8E6"/><stop offset=".55" stop-color="#74BBCB"/><stop offset="1" stop-color="#3D879D"/></linearGradient>
+  <linearGradient id="falls-pool" x2="0" y2="1"><stop stop-color="#82C4CB"/><stop offset="1" stop-color="#367B91"/></linearGradient>
+  <filter id="falls-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#falls-sky)"/><circle cx="251" cy="34" r="13" fill="#EBC86F" opacity=".65"/><path d="M0 88L57 37 103 79 153 24 207 77 255 42 304 84V145H0Z" fill="#9CAFA8"/><path d="M0 115L56 70 106 108 153 57 204 104 255 67 304 112V165H0Z" fill="#81998D"/><path d="M0 156Q73 140 143 153T304 146V192H0Z" fill="#91A782"/></g>
+<g id="layer-context">
+  <path d="M0 98L43 86 79 93 105 77 123 83 132 66 171 66 181 86 211 82 237 95 304 82V139H0Z" fill="url(#falls-rock)" stroke="#425A5D" stroke-width="1.8"/>
+  <path d="M0 105Q36 93 69 103T119 97Q133 91 140 82L164 82Q175 97 196 98T238 92Q272 93 304 84V132Q268 144 232 129T176 132Q149 143 122 130T68 136Q32 129 0 143Z" fill="#637C76"/>
+  <path d="M137 78Q143 90 143 105L140 148Q154 157 169 148L165 105Q164 88 173 78Z" fill="url(#falls-water)" stroke="#E6F4EE" stroke-width="1.3"/>
+  <ellipse cx="154" cy="158" rx="68" ry="20" fill="url(#falls-pool)" stroke="#2F6E81" stroke-width="2"/>
+  <path d="M91 157Q125 146 151 156T217 155" fill="none" stroke="#D8F0E6" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#falls-shadow)">
+  <path d="M141 79Q144 91 147 104L144 143Q148 151 153 153Q159 151 163 143L159 105Q160 91 169 79Q160 83 154 79Q148 83 141 79Z" fill="url(#falls-water)" stroke="#E9F8EF" stroke-width="1.4"/>
+  <path d="M149 87Q153 105 151 143m7-53q-2 19 3 43" fill="none" stroke="#F6FFFA" stroke-width="2" opacity=".86"/>
+  <path d="M131 73L143 70 149 75 159 72 172 76 182 74 178 88 136 87Z" fill="#71867A" stroke="#3E5558" stroke-width="1.8"/>
+  <path d="M146 150Q134 158 124 164m34-12q13 9 24 13m-25-10v15" fill="none" stroke="#E8F8F1" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M106 159q12-7 24-2m51 1q12-8 24-2" fill="none" stroke="#D2EFEB" stroke-width="2"/>
+</g>
+<g id="layer-details">
+  <path d="M33 113l13-10 12 5m-10 24 12-8 14 4m149-26 12-9 13 4m-5 28 12-8 13 3" fill="none" stroke="#BBC7B1" stroke-width="1.6"/>
+  <circle cx="129" cy="160" r="2.2" fill="#F8FFF7"/><circle cx="179" cy="168" r="2" fill="#F8FFF7"/><circle cx="194" cy="155" r="1.8" fill="#F8FFF7"/><circle cx="116" cy="169" r="1.6" fill="#F8FFF7"/>
+  <path d="M106 178q19-8 39 0m19-1q19-8 39 0m-100-26q10-5 19-2m48-5q10-5 20-2" fill="none" stroke="#B7E3DF" stroke-width="1.4"/>
+  <path d="M123 67l8-5 5 6m43-8 9 5-5 6" fill="none" stroke="#C9D8D0" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M143 82Q152 85 163 81" fill="none" stroke="#F6FFFA" stroke-width="1.8"/><path d="M4 108Q44 96 76 105M224 98q38-10 70-7" fill="none" stroke="#AEC2B6" stroke-width="1.4" opacity=".8"/><path d="M142 109v29m16-29v26" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".55"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: quiz (Noun)
+  CONTEXTUAL_DEFINITION: A short informal classroom test with a few questions.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Make the assessment visibly brief with a single short page, a few questions, and a quick classroom timer; distinguish from a long formal exam.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Classroom desk and board.
+    - Context_Layer: Small quick-check timer and teacher's hand distributing a sheet.
+    - Focal_Layer: Short quiz page with only a few response lines and shapes.
+    - Details_Layer: Pencil and small stack of similarly brief pages.
+    - Lighting_Layer: Bright, quick classroom light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:quiz" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="quiz-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="quiz-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#quiz-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H91V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 25V74M21 49H90" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="244" cy="42" r="17" fill="#FFFEFA" stroke="#64748B" stroke-width="1.4"/><path d="M244 30V42L252 47" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M58 124H105V138H58Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M64 128H98" stroke="#DCECFB" stroke-width="1.1"/><path d="M199 47L226 57L219 69" fill="none" stroke="#C98961" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#quiz-shadow)"><path d="M49 120H263V129H49Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M61 129V149M252 129V149" stroke="#8D765A" stroke-width="3"/><path d="M124 55L203 51L207 114L127 118Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.7"/><path d="M136 68L181 66M137 80L160 79" stroke="#88A9D0" stroke-width="1.3"/><circle cx="173" cy="79" r="5" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M139 91H149V101H139ZM156 92H165V101H156ZM173 91H181V101H173Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1"/><path d="M188 70L193 74L199 66" fill="none" stroke="#91A77C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M105 117L117 108" stroke="#D9A441" stroke-width="3.4" stroke-linecap="round"/><path d="M105 117L108 115" stroke="#8D6138" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M119 52L127 50" stroke="#D9857F" stroke-width="1.5"/><path d="M210 91L219 91" stroke="#AFC5DA" stroke-width="1"/><path d="M235 66L233 76" stroke="#D9A441" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="91" rx="127" ry="67" fill="#FEF9C3" opacity=".1"/><path d="M20 25H91V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M124 55L203 51L207 114" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

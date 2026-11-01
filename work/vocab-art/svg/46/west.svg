@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: west
+  CONTEXTUAL_DEFINITION: The compass direction toward the left on a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Make the compass rose central and highlight its left-pointing ray; a setting sun at the left edge acts as a secondary orientation cue.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: Keep the compass ray as the primary sign so this cannot be mistaken for a sunset card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Small city map spans x=78..286; compass centered at (194,96) highlights left; sunset disk is partly visible at (26,48).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:west" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="west-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5E6C2"/><stop offset="1" stop-color="#EBAA73"/></linearGradient>
+    <linearGradient id="west-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7EEDD"/><stop offset="1" stop-color="#CBDDBE"/></linearGradient>
+    <radialGradient id="west-sunset"><stop stop-color="#FFF0B0"/><stop offset=".68" stop-color="#F0A761" stop-opacity=".9"/><stop offset="1" stop-color="#F0A761" stop-opacity="0"/></radialGradient>
+    <filter id="west-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect x="0" y="0" width="71" height="192" fill="url(#west-sky)"/><circle cx="23" cy="57" r="43" fill="url(#west-sunset)"/><path d="M0 143Q30 129 71 143V192H0Z" fill="#AF9279"/><path d="M0 159Q35 150 71 160" fill="none" stroke="#FAF8F3" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-context"><rect x="72" y="18" width="217" height="155" rx="10" fill="url(#west-map)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M77 62H285M77 121H285M125 20V171M239 20V171" stroke="#A7B7A5" stroke-width="1.4"/><path d="M76 91H285M182 20V171" stroke="#596C7D" stroke-width="13"/><path d="M76 91H285M182 20V171" stroke="#F8F6EF" stroke-width="1.4" stroke-dasharray="6 7"/><rect x="91" y="34" width="26" height="19" rx="3" fill="#D5B596" stroke="#766555"/><rect x="256" y="133" width="21" height="24" rx="3" fill="#89A9C4" stroke="#536A7E"/><circle cx="260" cy="46" r="10" fill="#7FA87B" stroke="#486750"/><circle cx="98" cy="143" r="12" fill="#7FA87B" stroke="#486750"/></g>
+  <g id="layer-focal" filter="url(#west-shadow)"><circle cx="194" cy="96" r="40" fill="#F9F8F1" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="194" cy="96" r="30" fill="#E7EEEE" stroke="#89999C" stroke-width="1.4"/><path d="M194 61L201 92L194 96L187 92Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.2"/><path d="M229 96L198 103L194 96L198 89Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.2"/><path d="M194 131L187 100L194 96L201 100Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.2"/><path d="M159 96L190 89L194 96L190 103Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="194" cy="96" r="4.7" fill="#1E2A3B"/><path d="M193 96H163" stroke="#4A72B2" stroke-width="5" stroke-linecap="round"/><path d="M165 86L146 96L165 106Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.7"/><path d="M30 68Q49 75 66 67" fill="none" stroke="#F6D9A8" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M145 36L154 44M56 29L49 37M54 73L63 78" stroke="#D99658" stroke-width="2" stroke-linecap="round"/><path d="M154 82L173 87M154 110L173 105" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/><path d="M82 108H120M250 75H277" stroke="#FFFFFF" stroke-width="1.8" opacity=".8"/><circle cx="151" cy="96" r="2.2" fill="#F2C14E"/><path d="M239 29L248 35M261 29L252 35" stroke="#FFFFFF" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><circle cx="194" cy="96" r="45" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M85 24H168" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><ellipse cx="24" cy="57" rx="29" ry="18" fill="#F2C14E" opacity=".13"/></g>
+</svg>

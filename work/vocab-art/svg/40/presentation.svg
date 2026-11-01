@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: presentation
+  CONTEXTUAL_DEFINITION: A prepared visual talk or set of materials shown to an audience.
+  PEDAGOGICAL_ART_DIRECTOR: Emphasize the prepared presentation materials and assembled audience, not the speaker's act of delivering them.
+  PEDAGOGICAL_ARCHETYPE: 5 - Prepared presentation
+  SYNONYM_GUARD: In this chapter the noun means a visual talk/material, not the act of giving it and not a gift or award ceremony.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a large projection screen at x=59..242, y=29..119 with three polished, text-free visual panels in sequence and a slim stack of preview cards at one edge. A small audience sits at the bottom center, looking up; no presenter occupies the focal plane.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:presentation" data-archetype="prepared-presentation">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="deck-screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="deck-room" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F3F1EA"/><stop offset="1" stop-color="#E5DFD1"/></linearGradient>
+    <radialGradient id="deck-halo"><stop stop-color="#FFF1B9" stop-opacity=".66"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="deck-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M7 154 H297" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="22" y="22" width="260" height="126" rx="4" fill="url(#deck-room)" stroke="#D4CCBD" stroke-width="1.2"/><path d="M7 149 H297" stroke="#1E2A3B" stroke-width="1.1"/><rect x="54" y="26" width="195" height="97" rx="3" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.7"/><rect x="61" y="33" width="181" height="83" rx="2" fill="url(#deck-screen)"/><path d="M61 96 L118 57 L155 82 L191 49 L242 83 V116 H61 Z" fill="#A8D4A2"/><path d="M61 102 L108 77 L151 93 L195 61 L242 87 V116 H61 Z" fill="#5479AC" opacity=".78"/><circle cx="210" cy="51" r="8" fill="#F2C14E"/><path d="M94 58 H138 M94 64 H130" stroke="#FFFFFF" stroke-width="1.2"/><path d="M141 123 V133 M162 123 V133 M130 133 H174" stroke="#64748B" stroke-width="2"/><rect x="256" y="35" width="17" height="22" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><rect x="259" y="61" width="17" height="22" rx="2" fill="#E5F0E1" stroke="#64748B" stroke-width="1"/><rect x="262" y="87" width="17" height="22" rx="2" fill="#F7E8BF" stroke="#64748B" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#deck-shadow)"><circle cx="89" cy="136" r="8" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M79 153 Q80 141 89 141 Q98 141 99 153 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="151" cy="137" r="8" fill="#B97851" stroke="#1E2A3B" stroke-width="1"/><path d="M141 154 Q142 142 151 142 Q160 142 161 154 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="214" cy="136" r="8" fill="#C98562" stroke="#1E2A3B" stroke-width="1"/><path d="M204 153 Q205 141 214 141 Q223 141 224 153 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M81 129 Q89 124 97 129 M143 130 Q151 125 159 130 M206 129 Q214 124 222 129" fill="none" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><rect x="81" y="40" width="8" height="11" rx="1" fill="#F2C14E"/><rect x="91" y="40" width="8" height="11" rx="1" fill="#8EB0DE"/><rect x="101" y="40" width="8" height="11" rx="1" fill="#A8D4A2"/></g>
+  <g id="layer-details"><path d="M255 36 H272 M258 62 H275 M261 88 H278" stroke="#CBD5E1" stroke-width=".8"/><circle cx="278" cy="46" r="2" fill="#F2C14E"/><circle cx="279" cy="72" r="2" fill="#8EB0DE"/><circle cx="282" cy="98" r="2" fill="#A8D4A2"/><path d="M70 121 H233" stroke="#FFFFFF" stroke-width="1"/><path d="M46 136 H67 M236 136 H257" stroke="#64748B" stroke-width="1.1" stroke-dasharray="2 3"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="83" rx="116" ry="69" fill="url(#deck-halo)" opacity=".2"/><path d="M64 37 H238" stroke="#FFFFFF" stroke-width="1.1"/><path d="M7 158 H297" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

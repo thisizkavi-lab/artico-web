@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: presentation (Noun)
+  CONTEXTUAL_DEFINITION: An oral report given to an audience, often with visual material.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a student explaining a diagram to classmates, not presenting a gift or handing out a document.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Seminar classroom with projection wall and a row of audience seats.
+    - Context_Layer: Large projected diagram with simple nonverbal shapes.
+    - Focal_Layer: Standing student points to the projection and speaks to attentive listeners.
+    - Details_Layer: Audience faces turned toward speaker, small pointer gesture.
+    - Lighting_Layer: Projection glow and soft classroom illumination.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:presentation" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="presentation-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="presentation-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#presentation-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M24 25H192V103H24Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M43 84L80 49L117 82L151 43L177 69" fill="none" stroke="#5479AC" stroke-width="3"/><circle cx="80" cy="49" r="5" fill="#D9857F"/><circle cx="151" cy="43" r="5" fill="#D9A441"/><path d="M54 92H155" stroke="#91A77C" stroke-width="2"/><path d="M215 113H299V121H215Z" fill="#A98A64"/><path d="M225 121V149M289 121V149" stroke="#8D765A" stroke-width="2.7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#presentation-shadow)"><circle cx="207" cy="62" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M196 62Q197 48 208 49Q220 50 219 63L213 66Q210 56 205 57Q201 58 199 68Z" fill="#27364B"/><path d="M192 80Q207 74 222 80L230 105L217 115L194 108Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M198 83L182 72L164 69M219 83L235 70L247 65" fill="none" stroke="#1E2A3B" stroke-width="4.8" stroke-linecap="round"/><path d="M198 83L182 72L164 69M219 83L235 70L247 65" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/><path d="M197 109L192 146M215 111L227 146" stroke="#315782" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="126" r="8" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1"/><path d="M41 126Q42 116 51 117Q60 118 59 128" fill="#27364B"/><path d="M38 137Q50 132 62 137L64 149H36Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><circle cx="83" cy="127" r="8" fill="#80513F" stroke="#1E2A3B" stroke-width="1"/><path d="M74 127Q75 117 84 118Q93 119 92 129" fill="#27364B"/><path d="M70 138Q82 133 94 138L96 149H68Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M143 67L159 68" stroke="#D9A441" stroke-width="2"/><path d="M127 111Q133 103 139 111" fill="none" stroke="#D9A441" stroke-width="1.8"/><path d="M200 72Q207 76 215 72" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M33 110H175" stroke="#FFFFFF" stroke-width="1" opacity=".5"/></g>
+  <g id="layer-lighting"><ellipse cx="145" cy="89" rx="133" ry="72" fill="#FEF9C3" opacity=".08"/><path d="M24 25H192V103" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/></g>
+</svg>

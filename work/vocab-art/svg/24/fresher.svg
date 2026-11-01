@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: fresher (Noun)
+  CONTEXTUAL_DEFINITION: A student in the first year at a university, especially in British English.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show a new university student at an orientation gathering with a campus map and welcome folder; distinguish this first-year label from the freshman move-in scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Collegiate campus entrance and orientation table.
+    - Context_Layer: Welcoming student helpers and campus paths.
+    - Focal_Layer: New student studies a folded campus map and holds a welcome folder.
+    - Details_Layer: Lanyard and new-student badge shown without lettering.
+    - Lighting_Layer: Fresh morning light on first-day orientation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:fresher" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="fresher-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="fresher-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fresher-bg)"/><path d="M0 148Q76 143 152 148T304 146V192H0Z" fill="#DCE8D7"/><path d="M43 91V55L152 26L261 55V91Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.8"/><path d="M37 57L152 25L267 57" fill="none" stroke="#5479AC" stroke-width="7"/><path d="M127 91V59H177V91" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M64 67H105V90H64ZM199 67H240V90H199Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.3"/><path d="M0 149H304" stroke="#829A83" stroke-width="2"/><circle cx="24" cy="84" r="17" fill="#91A77C"/><circle cx="282" cy="84" r="17" fill="#91A77C"/></g>
+  <g id="layer-context"><path d="M26 120H74V134H26Z" fill="#A98A64"/><path d="M31 134V148M68 134V148" stroke="#8D765A" stroke-width="2.3"/><circle cx="47" cy="108" r="8" fill="#C98961" stroke="#1E2A3B" stroke-width="1"/><path d="M39 108Q40 98 48 99Q56 100 55 109" fill="#27364B"/><path d="M202 118H278V125H202Z" fill="#A98A64"/><path d="M209 125V148M270 125V148" stroke="#8D765A" stroke-width="2.4"/><path d="M215 107H263V117H215Z" fill="#5479AC"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#fresher-shadow)"><circle cx="143" cy="72" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.4"/><path d="M131 72Q132 57 144 58Q157 59 156 73L150 76Q147 65 141 66Q136 67 134 78Z" fill="#27364B"/><path d="M126 91Q143 83 160 91L168 119L155 130L131 121Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M133 94L123 105L112 103M158 94L171 103L184 94" fill="none" stroke="#1E2A3B" stroke-width="4.6" stroke-linecap="round"/><path d="M133 94L123 105L112 103M158 94L171 103L184 94" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M136 122L130 149M154 124L166 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M108 78L129 82L127 111L106 104Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M111 84L123 87L121 100L109 97Z" fill="#DCECFB"/><path d="M156 91Q163 96 168 106" fill="none" stroke="#D9A441" stroke-width="2"/><circle cx="168" cy="106" r="4" fill="#D9A441"/></g>
+  <g id="layer-details"><path d="M128 89Q143 83 158 89" fill="none" stroke="#5479AC" stroke-width="1.7"/><path d="M100 76L107 78" stroke="#D9A441" stroke-width="2"/><circle cx="183" cy="88" r="3" fill="#FEF9C3"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="95" rx="128" ry="75" fill="#FEF9C3" opacity=".1"/><path d="M43 91V55L152 26L261 55" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="266" cy="28" r="12" fill="#F6D777" opacity=".8"/></g>
+</svg>

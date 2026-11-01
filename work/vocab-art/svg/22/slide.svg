@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: slide (Noun / verb)
+  CONTEXTUAL_DEFINITION: A playground structure with a smooth sloping surface that children slide down.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: The raised ladder, platform, and curved chute make the playground slide clear, with a child moving down it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Outdoor play area with green ground and pale sky.
+    - Context_Layer: Open playground setting and soft landing mat.
+    - Focal_Layer: Red sloped chute connected to a raised blue ladder platform.
+    - Details_Layer: Ladder rungs, side rails, and child seated on the chute.
+    - Lighting_Layer: Sunlit highlights and motion strokes along the slide.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:slide" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="slide-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="slide-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#slide-bg)"/><circle cx="256" cy="31" r="16" fill="#FEF9C3" opacity=".87"/><path d="M0 148Q75 140 152 148T304 145V192H0Z" fill="#91A77C"/><path d="M0 172H304" stroke="#D4C7B1" stroke-width="2"/><path d="M22 124V148M30 124V148M38 124V148M22 130H38M22 139H38" stroke="#A98A64" stroke-width="1.5"/></g>
+  <g id="layer-context"><ellipse cx="169" cy="165" rx="111" ry="10" fill="#627850" opacity=".35"/><path d="M31 151Q47 144 62 151M232 150Q248 143 266 150" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#slide-shadow)"><path d="M88 57V91H110V66Q110 57 119 57H140V49H110Q88 49 88 57Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M88 91L64 151M110 91L100 151M73 129H104M79 113H108M85 97H111" fill="none" stroke="#315782" stroke-width="4" stroke-linecap="round"/><path d="M138 49Q153 50 160 59L170 82Q177 99 192 111L221 135Q230 143 222 151H183Q172 151 166 143L143 116Q130 101 128 81V59Q128 49 138 49Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M141 57Q151 57 155 67L165 89Q173 108 192 123L217 144" fill="none" stroke="#F5B6A9" stroke-width="4" stroke-linecap="round"/><path d="M131 51H166M133 57H164" stroke="#315782" stroke-width="4" stroke-linecap="round"/><circle cx="164" cy="70" r="10" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M154 70Q155 59 164 59Q173 60 174 71L170 74Q168 65 163 65Q159 65 157 74Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M151 82Q164 76 175 83L185 102L174 108L160 98L149 93Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M152 88L143 97M173 88L185 96" fill="none" stroke="#C98961" stroke-width="4" stroke-linecap="round"/><path d="M176 105L188 115" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M185 111L196 116" stroke="#D9857F" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M225 137Q235 142 235 150M217 156L225 160M125 62L118 69" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/><circle cx="65" cy="152" r="3" fill="#D9A441"/><path d="M229 131L239 137M234 123L245 127" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".82"/></g>
+  <g id="layer-lighting"><path d="M127 44Q154 38 169 52" fill="none" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" opacity=".78"/><ellipse cx="151" cy="105" rx="111" ry="74" fill="#FEF9C3" opacity=".07"/></g>
+</svg>

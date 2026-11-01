@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: gloves (Noun, plural)
+  CONTEXTUAL_DEFINITION: Hand coverings with separate sections for the fingers and thumb.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Show two shaped hand coverings with visible fingers and thumbs.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and low shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Pair of soft blue gloves, palms facing forward.
+    - Details_Layer: Finger seams and knit cuffs.
+    - Lighting_Layer: Warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:gloves" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="161" rx="106" ry="14" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="96" rx="118" ry="69" fill="#FEF3C7" opacity=".3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g transform="rotate(-9 99 101)"><path d="M65 130L62 89Q61 79 69 78Q77 78 78 88L80 65Q81 54 90 55Q99 56 98 67L99 84L101 55Q102 45 111 47Q120 49 118 60L115 87L121 68Q125 58 133 62Q141 66 137 77L128 106Q124 121 115 139L83 148Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M66 128Q87 138 117 132L111 154Q89 160 68 151Z" fill="#315782" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <g transform="rotate(10 206 101)"><path d="M173 130L170 89Q169 79 177 78Q185 78 186 88L188 65Q189 54 198 55Q207 56 206 67L207 84L209 55Q210 45 219 47Q228 49 226 60L223 87L229 68Q233 58 241 62Q249 66 245 77L236 106Q232 121 223 139L191 148Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M174 128Q195 138 225 132L219 154Q197 160 176 151Z" fill="#B95F67" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M84 69L87 104M104 60L106 100M194 69L197 104M214 60L216 100" stroke="#A9C0DF" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M62 158Q151 178 242 157" fill="none" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="4 5"/>
+</svg>

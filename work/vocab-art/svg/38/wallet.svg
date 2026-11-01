@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: wallet (noun)
+  CONTEXTUAL_DEFINITION: A small folding case, usually carried in a pocket, for banknotes and cards.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object / part-of-whole fold study
+  SYNONYM_GUARD: Unlike a purse handbag, show a compact bi-fold case with inner card slots and folded notes; no shoulder strap or handle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open caramel bi-fold wallet at x76..231, visible central crease and layered inner pockets; blank card edges and folded note rise behind; coin at lower corner.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:wallet" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="wallet-leather" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#965D28"/></linearGradient>
+    <radialGradient id="wallet-snap"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="wallet-body" d="M66 82 Q66 74 76 74 H230 Q239 74 239 83 V142 Q239 150 230 150 H76 Q66 150 66 141 Z"/>
+    <clipPath id="wallet-clip"><use href="#wallet-body"/></clipPath>
+    <filter id="wallet-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="152" width="304" height="40" fill="#EEE7DA"/><path d="M0 152 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="163" rx="96" ry="10" fill="#DDD4C3"/></g>
+  <!-- 2. Pocket-carry scale cue, no handbag strap -->
+  <g id="layer-context"><path d="M49 129 Q42 105 52 88 L69 82 L76 145 H53 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M52 111 Q61 115 72 111" fill="none" stroke="#94A3B8" stroke-width="2"/><path d="M76 146 H229" stroke="#C88446" stroke-width="2"/></g>
+  <!-- 3. Primary bi-fold wallet with defined center fold -->
+  <g id="layer-focal" filter="url(#wallet-shadow)"><use href="#wallet-body" fill="url(#wallet-leather)" stroke="#1E2A3B" stroke-width="2.7"/><g clip-path="url(#wallet-clip)"><path d="M73 82 Q105 71 148 84 V153 H67Z" fill="#C88446"/><path d="M154 78 Q194 68 244 82 V155 H154Z" fill="#B55B28" opacity=".38"/><path d="M148 76 Q151 110 149 149" stroke="#965D28" stroke-width="5"/><path d="M153 78 Q156 111 154 148" stroke="#F2A472" stroke-width="1.7"/></g><path d="M76 87 H137 Q142 87 142 93 V111 H82 Q76 109 76 103 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M161 87 H225 Q230 87 230 94 V109 H162 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M85 93 H130 M170 93 H218" stroke="#8EB0DE" stroke-width="2" stroke-linecap="round"/><path d="M79 126 Q109 133 140 126 M160 126 Q195 134 227 125" fill="none" stroke="#E3AC77" stroke-width="2"/></g>
+  <!-- 4. Folded notes, card edges, snap and stitching -->
+  <g id="layer-details"><rect x="109" y="51" width="70" height="31" rx="3" transform="rotate(-5 109 51)" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="2"/><path d="M120 59 H165 M120 65 H151" stroke="#568552" stroke-width="1.7"/><rect x="129" y="43" width="69" height="32" rx="3" transform="rotate(4 129 43)" fill="#E7EEF5" stroke="#1E2A3B" stroke-width="1.8"/><path d="M144 55 H182 M144 61 H171" stroke="#94A3B8" stroke-width="1.6"/><circle cx="151" cy="120" r="8" fill="url(#wallet-snap)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M72 118 Q75 140 85 144 M225 116 Q222 139 212 144" fill="none" stroke="#F2A472" stroke-width="1.6" stroke-dasharray="2 3"/><ellipse cx="214" cy="152" rx="8" ry="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 5. Leather highlights -->
+  <g id="layer-lighting"><path d="M79 80 H119" stroke="#FFD0B0" stroke-width="2.2" stroke-linecap="round"/><path d="M188 80 Q211 78 226 84" fill="none" stroke="#E3AC77" stroke-width="2" stroke-linecap="round"/><path d="M55 61 L55 69 M51 65 H59" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

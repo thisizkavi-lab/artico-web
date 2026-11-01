@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: cold feet (Phrase)
+  CONTEXTUAL_DEFINITION: Nervousness that stops someone from going through with a challenging plan.
+  PEDAGOGICAL_ARCHETYPE: 3 (Human reaction at a moment of hesitation)
+  SYNONYM_GUARD: A performer freezes before stepping onstage; icy shoes stand for fear, not literal cold weather.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Theater wings and a bright stage beyond.
+    - Context_Layer: Audience waits in silhouette.
+    - Focal_Layer: Nervous performer stops at the stage threshold with frosty shoes.
+    - Details_Layer: Trembling knees, hesitant hand, warm stage lights.
+    - Lighting_Layer: Warm stage light meets a cool shadow at the threshold.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:cold feet" data-archetype="contrast-reference">
+  <defs><linearGradient id="stage" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3D5F91"/><stop offset="0.55" stop-color="#5479AC"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#stage)"/><path d="M153 36 L304 36 L304 149 L153 149Z" fill="#F2ECE1"/><path d="M0 149 Q152 143 304 149 L304 192 L0 192Z" fill="#D8CDAF"/><ellipse cx="150" cy="164" rx="111" ry="8" fill="#A9A08F"/><path d="M154 38 L154 149" stroke="#1E2A3B" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M205 150 Q207 132 221 129 Q235 132 237 150Z" fill="#8B5CA8"/><circle cx="221" cy="117" r="12" fill="#D89A6C"/><path d="M209 116 Q210 102 222 103 Q233 104 233 117 Q227 111 219 112Z" fill="#27364B"/><path d="M246 150 Q248 132 262 129 Q276 132 278 150Z" fill="#5479AC"/><circle cx="262" cy="117" r="12" fill="#F5BFA3"/><path d="M250 116 Q251 102 263 103 Q274 104 274 117 Q268 111 260 112Z" fill="#6B4B35"/><path d="M177 72 L183 62 L189 72 L199 77 L189 82 L183 92 L177 82 L167 77Z" fill="#F2C14E"/><path d="M221 65 L221 99 M267 66 L267 99" stroke="#F2C14E" stroke-width="2" opacity="0.8"/></g>
+  <g id="layer-focal"><path d="M54 151 Q57 125 80 121 Q103 125 106 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M70 125 L69 111 L89 111 L88 127" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="79" cy="89" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.9"/><path d="M60 88 Q61 68 80 70 Q97 71 98 89 Q90 81 79 82Z" fill="#27364B"/><path d="M68 91 Q72 87 75 91 M83 91 Q87 87 90 91" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="80" cy="100" rx="4" ry="5" fill="#A34F47"/><path d="M94 130 Q105 119 111 105 L118 109 Q116 127 102 142" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.1"/><path d="M111 106 Q118 99 124 102 L128 106 L121 113 L114 113Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/>
+    <path d="M67 149 L85 149 L82 169 L67 169Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M87 149 L104 149 L108 169 L91 169Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M64 169 Q76 164 88 170 L87 179 L62 179Z M91 169 Q102 164 112 170 L115 179 L91 179Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.7"/><path d="M64 168 L72 164 L78 170 L85 165 L91 171 L98 164 L107 170 L114 165 L116 177 L63 177Z" fill="#FFFFFF" opacity="0.8"/></g>
+  <g id="layer-details"><path d="M117 80 Q126 76 132 83 M119 87 Q127 83 133 90" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/><path d="M118 118 L124 112 M115 125 L122 119 M118 133 L125 127" stroke="#8EB0DE" stroke-width="2" stroke-linecap="round"/><path d="M51 101 L55 92 L59 101 L68 105 L59 109 L55 118 L51 109 L42 105Z" fill="#CBD5E1"/></g>
+  <g id="layer-lighting"><path d="M175 42 Q221 32 271 43 M21 151 L150 151" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.68"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

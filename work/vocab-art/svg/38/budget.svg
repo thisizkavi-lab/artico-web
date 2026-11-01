@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: budget (noun)
+  CONTEXTUAL_DEFINITION: A plan for how available money will be divided between income, savings, and expenses.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with planning scene
+  SYNONYM_GUARD: Show money being deliberately allocated into separate planned categories, not a pile of bills already paid.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Household planner lays three stacks of coins into labelled-by-icon jars (home, food, reserve) beneath a blank ledger; no text, numbers, or currency glyphs.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:budget" data-archetype="planning-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="budget-ledger" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></linearGradient>
+    <radialGradient id="budget-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="budget-arm" d="M42 105 C55 92 70 91 83 98 L110 112 L104 126 L80 117 L59 122 Z"/>
+    <clipPath id="budget-arm-clip"><use href="#budget-arm"/></clipPath>
+    <filter id="budget-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="163" rx="113" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Household desk and blank planning ledger -->
+  <g id="layer-context"><path d="M26 140 H278 V152 H26 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M36 145 H268" stroke="#E3AC77" stroke-width="2"/><rect x="81" y="38" width="146" height="61" rx="4" fill="url(#budget-ledger)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M91 51 H214 M91 59 H210 M91 67 H148" stroke="#94A3B8" stroke-width="1.6"/><path d="M91 78 H124 M91 86 H124" stroke="#CBD5E1" stroke-width="1.4"/><path d="M153 78 V94 M176 78 V94 M199 78 V94" stroke="#CBD5E1" stroke-width="1.3"/></g>
+  <!-- 3. Primary money-planning envelope and allocation jars -->
+  <g id="layer-focal" filter="url(#budget-shadow)"><path d="M102 112 Q102 107 108 107 H147 V149 H102 Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.8"/><path d="M159 107 H199 Q205 107 205 113 V149 H159 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M217 112 Q217 107 223 107 H262 V149 H217 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.8"/><path d="M108 117 L124 130 L141 117" fill="none" stroke="#5479AC" stroke-width="1.7"/><path d="M173 118 Q181 109 190 118 L190 130 Q181 135 173 130Z" fill="#7FB07A" stroke="#568552" stroke-width="1.5"/><path d="M231 131 H248 V119 Q240 109 231 119Z" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. Coins are allocated across the planned categories -->
+  <g id="layer-details"><ellipse cx="124" cy="139" rx="9" ry="4.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="124" cy="135" rx="9" ry="4.5" fill="url(#budget-coin)" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="180" cy="140" rx="9" ry="4.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="180" cy="136" rx="9" ry="4.5" fill="url(#budget-coin)" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="238" cy="139" rx="9" ry="4.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="238" cy="135" rx="9" ry="4.5" fill="url(#budget-coin)" stroke="#1E2A3B" stroke-width="1.3"/><g clip-path="url(#budget-arm-clip)"><rect x="38" y="88" width="80" height="48" fill="#D89A6C"/><path d="M43 120 Q75 104 115 121 V140 H41Z" fill="#B6784B"/></g><use href="#budget-arm" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M92 121 Q102 118 108 124" fill="none" stroke="#ECC09D" stroke-width="2"/></g>
+  <!-- 5. Planned allocation highlights -->
+  <g id="layer-lighting"><path d="M88 43 H130" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M150 101 C151 108 153 111 160 116" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="3 3"/><path d="M250 45 L250 54 M246 49 H254" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

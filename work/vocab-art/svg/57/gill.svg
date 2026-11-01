@@ -1,0 +1,36 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: gill (noun)
+  CONTEXTUAL_DEFINITION: The feathery red gill filaments exposed beneath a fish's lifted gill cover, used to breathe underwater.
+  PEDAGOGICAL_ARCHETYPE: 2 - Body part highlighted on its animal
+  SYNONYM_GUARD: Keep the gill attached just behind the fish's head and show many delicate filaments; do not depict lungs or a detached feather.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A silver-blue fish in side view faces right. Its near gill cover is lifted like a curved flap, revealing the rose-colored feathery gill filaments underneath; eye and head stay clearly visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:gill" data-archetype="fish-gill-filaments-under-lifted-cover">
+ <defs>
+  <style>:root{--c-bg-1:#DDEFF0;--c-bg-2:#B8D9D9;--c-surface:#49818A;--c-primary:#779DA0;--c-secondary:#405F68;--c-accent:#D98578;--c-highlight:#FFF3E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gill-water" x2="0" y2="1"><stop stop-color="#B4D7D5"/><stop offset="1" stop-color="#477A87"/></linearGradient>
+  <linearGradient id="gill-fish" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D9D2"/><stop offset="1" stop-color="#688890"/></linearGradient>
+  <linearGradient id="gill-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9FBDB8"/><stop offset="1" stop-color="#547680"/></linearGradient>
+  <filter id="gill-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gill-water)"/><path d="M0 159Q77 150 153 158T304 153V192H0Z" fill="#477C83"/><path d="M0 33q43-6 84 0m142-3q40-6 78 0" fill="none" stroke="#DDF0E7" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M20 187l8-27m-8 14-10-12m10 5 10-18m237 38 7-29m-7 12-10-13m10 4 10-18" fill="none" stroke="#638C78" stroke-width="2" stroke-linecap="round"/><circle cx="48" cy="73" r="2" fill="#F0FBF4"/><circle cx="57" cy="65" r="1.2" fill="#F0FBF4"/><circle cx="268" cy="66" r="1.7" fill="#F0FBF4"/><circle cx="276" cy="57" r="1" fill="#F0FBF4"/><ellipse cx="151" cy="147" rx="83" ry="6" fill="#173B43" opacity=".12"/><path d="M32 139q14-5 28 0m193-14q17-5 34 0" fill="none" stroke="#C1DFD9" stroke-width="1.2"/></g>
+ <g id="layer-focal" filter="url(#gill-shadow)">
+  <path d="M80 94Q59 79 48 68Q50 89 70 101Q56 114 50 130Q72 125 92 108Z" fill="#617F83" stroke="#405F68" stroke-width="1.4"/>
+  <path d="M70 92Q91 70 133 70Q178 69 207 82Q226 90 233 101Q226 116 205 123Q171 134 128 127Q92 121 70 105Z" fill="url(#gill-fish)" stroke="#405F68" stroke-width="1.5"/>
+  <path d="M112 74Q124 64 140 67L152 74Z" fill="#718F92" stroke="#405F68" stroke-width="1"/>
+  <path d="M91 98Q113 86 133 84m-36 25q18 5 35 2" fill="none" stroke="#E7F0E8" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M158 81Q178 83 190 99Q179 109 157 116Q164 101 158 81Z" fill="#CF8177" stroke="#925F63" stroke-width="1.4"/>
+  <path d="M158 84Q171 91 177 103M163 84Q177 92 183 101M168 86Q183 94 188 100M160 92Q169 101 176 110M158 98Q165 106 169 113M156 104Q161 110 164 117" fill="none" stroke="#F0B3A0" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M184 76Q203 82 214 95Q221 105 215 116Q208 128 189 135Q202 119 201 105Q201 90 184 76Z" fill="url(#gill-cover)" stroke="#405F68" stroke-width="1.5"/>
+  <path d="M188 82Q201 91 202 104Q202 117 194 127" fill="none" stroke="#D4E3DC" stroke-width="1.1" opacity=".8"/>
+  <circle cx="218" cy="95" r="2.4" fill="#1E2A3B"/><circle cx="218.7" cy="94.2" r=".65" fill="#FFFFFF"/>
+  <path d="M226 108q7 2 11-1" fill="none" stroke="#405F68" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M117 120Q127 131 143 133L155 127Z" fill="#67858B" stroke="#405F68" stroke-width="1"/>
+  <path d="M149 73Q155 63 166 65L174 71Z" fill="#68868A" stroke="#405F68" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M76 98q-10 4-17 4m23 0q-10 7-17 10m38-28q19-7 36-5" fill="none" stroke="#EDF5EA" stroke-width="1" stroke-linecap="round"/><circle cx="46" cy="112" r="1.3" fill="#F0FBF4"/><circle cx="253" cy="82" r="1.4" fill="#F0FBF4"/><circle cx="263" cy="91" r="1" fill="#F0FBF4"/><path d="M153 88q-5 9-2 17m9-12q-4 10-2 18m9-12q-3 9-2 15" fill="none" stroke="#F7C6B2" stroke-width=".8" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><ellipse cx="175" cy="103" rx="47" ry="35" fill="#F4D2A0" opacity=".12"/><path d="M92 87q22-16 48-13m53 4q9 5 15 12" fill="none" stroke="#FFF9EA" stroke-width="1.6" opacity=".55" stroke-linecap="round"/><path d="M165 93q7 7 9 14m-6-12q8 7 10 14" fill="none" stroke="#FFE0C9" stroke-width="1.1" opacity=".75" stroke-linecap="round"/></g>
+</svg>

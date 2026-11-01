@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: negotiate
+  CONTEXTUAL_DEFINITION: Discuss terms with another person in order to reach an agreement.
+  PEDAGOGICAL_ART_DIRECTOR: Show two workplace parties exchanging proposals and finding a balanced agreement.
+  PEDAGOGICAL_ARCHETYPE: 18 - Terms and agreement
+  SYNONYM_GUARD: Make the people discuss and adjust terms before agreeing; avoid depicting one-sided instruction or ordinary teamwork alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place two professionals opposite each other across a desk at x=65..113 and x=196..244. Between them show a paired set of proposal cards with one slider marker each, then a centered balanced-scale icon to suggest fair terms reached through discussion.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:negotiate" data-archetype="terms-and-agreement">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="negotiate-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="negotiate-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="negotiate-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="negotiate-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M49 122 H255 V135 H49 Z" fill="url(#negotiate-table)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M65 135 V146 M239 135 V146" stroke="#965D28" stroke-width="2.1"/><rect x="99" y="74" width="40" height="31" rx="3" fill="url(#negotiate-card)" stroke="#5479AC" stroke-width="1"/><path d="M106 83 H131 M106 89 H126" stroke="#CBD5E1" stroke-width="1"/><path d="M112 98 H130" stroke="#8EB0DE" stroke-width="1.5"/><rect x="165" y="74" width="40" height="31" rx="3" fill="#F7E8BF" stroke="#C88446" stroke-width="1"/><path d="M172 83 H197 M172 89 H192" stroke="#D6B869" stroke-width="1"/><path d="M179 98 H197" stroke="#C88446" stroke-width="1.5"/><path d="M116 67 L122 61 L128 67 M176 67 L182 61 L188 67" fill="none" stroke="#64748B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M149 52 V69 M139 54 H159 M143 54 L137 68 H149 Z M155 54 L149 68 H161 Z" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-linejoin="round"/><path d="M137 69 Q143 74 149 69 M149 69 Q155 74 161 69" fill="none" stroke="#5479AC" stroke-width="1.2"/><path d="M134 77 H169" stroke="#A8D4A2" stroke-width="1.5" stroke-dasharray="2 2"/></g>
+  <g id="layer-focal" filter="url(#negotiate-shadow)"><path d="M56 120 Q58 98 70 91 L71 82 Q67 78 69 71 Q77 63 88 65 Q97 68 95 79 L93 86 Q104 91 106 118 L103 131 H60 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="82" cy="75" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M74 73 Q76 65 83 65 Q91 66 95 73 Q87 69 80 70 Z" fill="#3D342D"/><path d="M203 120 Q205 98 217 91 L218 82 Q214 78 216 71 Q224 63 235 65 Q244 68 242 79 L240 86 Q251 91 253 118 L250 131 H207 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="229" cy="75" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M221 73 Q223 65 230 65 Q238 66 242 73 Q234 69 227 70 Z" fill="#3D342D"/><path d="M59 96 Q80 90 100 96 M206 96 Q229 90 250 96" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M104 103 L120 99 M205 103 L187 99" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M111 102 L126 100 M198 102 L184 100" stroke="#5479AC" stroke-width="2.6" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="152" cy="42" r="2" fill="#F2C14E"/><path d="M108 112 H133 M171 112 H196" stroke="#FFFFFF" stroke-width=".9"/><circle cx="93" cy="55" r="2" fill="#8EB0DE"/><circle cx="213" cy="54" r="2" fill="#A8D4A2"/><path d="M139 110 L146 114 L153 110 L160 114 L167 110" fill="none" stroke="#547A56" stroke-width="1.1" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="81" rx="102" ry="66" fill="url(#negotiate-halo)" opacity=".16"/><path d="M99 77 H139 M165 77 H205" stroke="#FFFFFF" stroke-width=".9"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

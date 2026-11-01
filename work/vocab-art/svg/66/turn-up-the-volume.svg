@@ -1,0 +1,52 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: turn up the volume
+ CONTEXTUAL_DEFINITION: A viewer presses the volume-up control as television sound becomes stronger.
+ PEDAGOGICAL_ARCHETYPE: finger pressing remote volume-up rocker with enlarging sound waves
+ SYNONYM_GUARD: Show the TV still playing while a hand presses the remote's upward volume control; distinguish from powering on or displaying a static volume level.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A television picture emits several expanding curved sound waves; in the foreground a hand presses the upper segment of a clearly marked volume rocker on a remote, with no words or digits.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:turn up the volume" data-archetype="pressing a television remote volume-up control">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M24 31Q24 26 30 26H198Q204 26 204 32V132H24Z" fill="#26384A"/><path d="M32 34H196V124H32Z" fill="#597D8B"/>
+  <path d="M33 91Q66 73 99 90T196 87V124H33Z" fill="#798C72"/><circle cx="168" cy="54" r="10" fill="#D6A64C"/><path d="M54 121L62 131H164L172 121Z" fill="#64777C"/><path d="M42 131H185V137H42Z" fill="#26384A"/>
+  <ellipse cx="112" cy="153" rx="92" ry="5" fill="#9D8C75" opacity=".3"/>
+ </g>
+ <g id="layer-context">
+  <path d="M208 51Q225 72 208 93M219 43Q243 72 219 101M230 35Q260 72 230 109" fill="none" stroke="#B85E5A" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M37 42H190" stroke="#F6E5CE" stroke-width="1" opacity=".7"/><path d="M47 124H185" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M204 140H274" stroke="#26384A" stroke-width="1.3"/><circle cx="268" cy="132" r="2" fill="#D6A64C"/>
+  <path d="M214 117Q223 111 232 117M238 111Q246 104 253 111" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <!-- large remote angled toward the viewer -->
+  <path d="M242 38Q242 32 249 31L273 35Q279 36 278 43L266 143Q265 149 259 148L235 144Q229 143 230 137Z" fill="#26384A" stroke="#172735" stroke-width="1.2"/>
+  <path d="M247 42L271 45L269 56L245 53Z" fill="#405663"/>
+  <circle cx="257" cy="64" r="4" fill="#D6A64C" stroke="#F6E5CE" stroke-width=".8"/>
+  <!-- volume rocker split: raised/up segment is the active control -->
+  <path d="M241 75L267 79L265 102L238 98Z" fill="#597D8B" stroke="#D6A64C" stroke-width="1.4"/>
+  <path d="M242 75L267 79L266 88L241 84Z" fill="#D6A64C" stroke="#F6E5CE" stroke-width=".7"/>
+  <path d="M251 82L254 77L258 83Z" fill="#26384A"/>
+  <path d="M239 98L265 102" stroke="#26384A" stroke-width="1.3"/>
+  <circle cx="245" cy="111" r="3" fill="#F6E5CE"/><circle cx="257" cy="113" r="3" fill="#F6E5CE"/>
+  <circle cx="243" cy="126" r="2.3" fill="#B85E5A"/><circle cx="254" cy="128" r="2.3" fill="#798C72"/><circle cx="264" cy="129" r="2.3" fill="#D6A64C"/>
+  <!-- hand reaches in and presses upper rocker -->
+  <path d="M202 112Q202 105 209 103L226 97L239 82Q244 77 248 81Q251 84 247 89L239 99L250 101Q255 102 254 107Q253 111 248 111L232 108L222 121Q217 126 211 122L205 119Q201 117 202 112Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1.2"/>
+  <path d="M230 101L239 90" stroke="#F6E5CE" stroke-width="1.2" fill="none"/>
+  <path d="M239 79L242 73" stroke="#B85E5A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M198 89L207 91M197 96L205 97" stroke="#D6A64C" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details">
+  <path d="M49 45H135M49 49H112" stroke="#F6E5CE" stroke-width="1" opacity=".65"/>
+  <path d="M209 52Q215 57 215 63M220 48Q231 60 228 70M232 44Q247 61 242 78" fill="none" stroke="#D6A64C" stroke-width="1.3"/>
+  <path d="M245 84L252 82L259 85" stroke="#F6E5CE" stroke-width=".8" fill="none"/>
+  <circle cx="179" cy="114" r="1.6" fill="#D6A64C"/><path d="M33 139H196" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M25 147H289" stroke="#8B785F" stroke-width=".8" opacity=".5"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="116" cy="78" rx="76" ry="48" fill="#E7C66B" opacity=".11"/><path d="M28 31L47 55M201 31L185 55" stroke="#FFF1C7" stroke-width="1.1" opacity=".58" fill="none"/>
+  <path d="M31 133H197" stroke="#FFF7E4" stroke-width="1" opacity=".7"/><ellipse cx="112" cy="159" rx="86" ry="4" fill="#8B785F" opacity=".2"/>
+ </g>
+</svg>

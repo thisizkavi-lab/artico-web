@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: light (Noun)
+  CONTEXTUAL_DEFINITION: Illumination from a glowing ceiling bulb.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object / effect)
+  SYNONYM_GUARD: Show a ceiling-mounted bare bulb casting visible rays, distinct from a freestanding shaded lamp.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Dim room corner.
+    - Context_Layer: Ceiling and hanging cord.
+    - Focal_Layer: Glowing bare bulb and cone of illumination.
+    - Details_Layer: Short radiating beams.
+    - Lighting_Layer: Golden glow fading into the room.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:light" data-archetype="hero-object">
+  <defs><radialGradient id="glow"><stop offset="0" stop-color="#F2C14E" stop-opacity="0.46"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 0 H304 V17 H0Z" fill="#D4D9DA"/><path d="M0 153 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 153 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="171" rx="72" ry="8" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M152 17 V56" stroke="#1E2A3B" stroke-width="3"/><path d="M145 54 H159 L166 66 Q166 77 152 81 Q138 77 138 66Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.2"/><path d="M144 53 H160 V59 H144Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="152" cy="96" rx="113" ry="72" fill="url(#glow)"/><path d="M146 82 L112 153 L192 153 L158 82Z" fill="#F2C14E" opacity="0.13"/></g>
+  <g id="layer-focal"><path d="M133 43 H171 M137 35 H167 M132 26 H172" stroke="#F2C14E" stroke-width="2.8" stroke-linecap="round"/><path d="M152 88 V109 M111 99 L121 107 M193 99 L183 107" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><path d="M130 118 L136 123 M174 118 L168 123" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

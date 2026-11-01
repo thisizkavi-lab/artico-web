@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: absent
+  CONTEXTUAL_DEFINITION: Not present at a scheduled meeting.
+  PEDAGOGICAL_ART_DIRECTOR: Make a vacant seat conspicuous among a few participants who have arrived; use a soft outline to hint at the missing person without drawing a ghost.
+  PEDAGOGICAL_ARCHETYPE: 1 - Presence / absence
+  SYNONYM_GUARD: The person is missing from the meeting, not forgetful, distracted, or absent-minded.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center an empty blue chair at x=128..178, y=87..151, behind the boardroom table at y=132. Put two small seated attendees at x=45..95 and x=211..260 in the rear. Add a subtle dashed oval above the vacant chair, and let the empty seat remain the brightest focal point.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:absent" data-archetype="presence-absence">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="abs-chair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="abs-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="abs-halo"><stop stop-color="#FFF1B9" stop-opacity=".8"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="abs-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="22" y="23" width="260" height="113" rx="5" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.3"/><path d="M31 136 V99 Q51 78 71 99 V136 M232 136 V99 Q252 78 272 99 V136" fill="#E5F0E1" stroke="#64748B" stroke-width="1.2"/><path d="M31 118 Q51 100 71 118 M232 118 Q252 100 272 118" fill="none" stroke="#A8D4A2" stroke-width="1.2"/><path d="M32 130 H272 V144 H32 Z" fill="url(#abs-table)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M46 144 V155 M258 144 V155" stroke="#965D28" stroke-width="2.4"/><path d="M39 127 H265" stroke="#FFE2A8" stroke-width="1.3"/></g>
+  <g id="layer-focal" filter="url(#abs-shadow)"><path d="M125 94 Q125 88 131 88 H174 Q180 88 180 94 V122 H125 Z" fill="url(#abs-chair)" stroke="#1E2A3B" stroke-width="2"/><path d="M131 90 H174 V119 H131 Z" fill="#5479AC" stroke="#3D5F91" stroke-width="1.2"/><path d="M128 120 H178 V132 H128 Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.6"/><path d="M133 132 V152 M173 132 V152" stroke="#3D5F91" stroke-width="3"/><path d="M122 121 V145 M184 121 V145" stroke="#3D5F91" stroke-width="2.4"/><ellipse cx="153" cy="81" rx="25" ry="16" fill="none" stroke="#D99A2B" stroke-width="1.5" stroke-dasharray="4 5"/><circle cx="153" cy="81" r="2" fill="#F2C14E"/><path d="M42 113 Q43 93 54 88 L55 80 Q52 76 54 69 Q60 62 69 65 Q77 68 74 78 L72 84 Q84 90 86 112 L83 127 H45 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="65" cy="72" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M57 70 Q59 63 66 63 Q73 64 74 70 Q67 67 61 68 Z" fill="#3D342D"/><path d="M221 112 Q222 92 234 87 L235 79 Q231 75 234 68 Q240 61 249 64 Q257 67 254 77 L252 83 Q264 89 266 112 L263 127 H224 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="245" cy="71" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M237 69 Q239 62 246 62 Q253 63 254 69 Q247 66 241 67 Z" fill="#242C3B"/><path d="M91 118 H121 M183 118 H213" stroke="#64748B" stroke-width="1.2" stroke-dasharray="3 4"/></g>
+  <g id="layer-details"><rect x="95" y="114" width="13" height="9" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><rect x="198" y="114" width="13" height="9" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><circle cx="103" cy="108" r="2" fill="#F2C14E"/><circle cx="204" cy="108" r="2" fill="#A8D4A2"/><path d="M145 105 H162" stroke="#FFFFFF" stroke-width="1.2"/><path d="M147 126 H160" stroke="#3D5F91" stroke-width="1.1"/><path d="M120 77 L124 73 M182 77 L186 73" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="110" rx="83" ry="61" fill="url(#abs-halo)" opacity=".24"/><path d="M0 146 H304" stroke="#1E2A3B" stroke-width="1.2"/><path d="M136 100 H168" stroke="#FFFFFF" stroke-width="1.2"/><circle cx="153" cy="80" r="28" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="1"/></g>
+</svg>

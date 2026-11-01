@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: climate (Noun)
+  CONTEXTUAL_DEFINITION: The usual weather pattern of a place over a long period of years.
+  PEDAGOGICAL_ART_DIRECTOR: Contrast long-term climate with a single day's weather by showing the same landscape through all four seasons.
+  PEDAGOGICAL_ARCHETYPE: 3 - Pattern over time
+  SYNONYM_GUARD: This is a repeating long-term seasonal pattern, not today's forecast.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Four equal landscape slices of one valley, from spring flowers through summer foliage and autumn color to winter snow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:climate" data-archetype="long-term-climate-pattern">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="cl-sky" x2="0" y2="1"><stop stop-color="#EAF3EF"/><stop offset="1" stop-color="#C9DCDD"/></linearGradient><linearGradient id="cl-ground" x2="0" y2="1"><stop stop-color="#A7BD98"/><stop offset="1" stop-color="#7F987A"/></linearGradient><linearGradient id="cl-snow" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D5E5E8"/></linearGradient><filter id="cl-shadow" x="-12%" y="-12%" width="124%" height="135%"><feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#253640" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cl-sky)"/><path d="M0 105L38 71L77 104L114 66L152 104L190 69L228 104L266 73L304 106V192H0Z" fill="#8AA5A0"/><path d="M0 119Q76 108 152 119T304 113V192H0Z" fill="url(#cl-ground)"/><path d="M0 151H304V192H0Z" fill="#A89470"/></g>
+ <g id="layer-context"><circle cx="38" cy="40" r="11" fill="#EBC86F" opacity=".85"/><path d="M76 22V174M152 22V174M228 22V174" fill="none" stroke="#F4F6EF" stroke-width="1.4" opacity=".9"/><path d="M18 173H286" fill="none" stroke="#8C7A62" stroke-width="1.2"/><path d="M16 108Q74 99 134 107M171 107Q230 97 291 106" fill="none" stroke="#D7E7E0" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="137" ry="5" fill="#41594F" opacity=".12"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#cl-shadow)">
+  <path d="M18 116V93L30 81L42 92V117Z" fill="#7F986D" stroke="#5B735F" stroke-width="1.1"/><path d="M26 90q4-10 9-1m-12 8q6-11 13-1" fill="none" stroke="#E7C9D4" stroke-width="3" stroke-linecap="round"/><path d="M51 118V88L63 73L75 88V119Z" fill="#72966D" stroke="#55705A" stroke-width="1.1"/><path d="M57 88q5-12 11 0m-12 9q5-12 11 0" fill="none" stroke="#F5D99B" stroke-width="3.3" stroke-linecap="round"/>
+  <path d="M92 118V88L105 71L118 88V118Z" fill="#678B5F" stroke="#526A55" stroke-width="1.1"/><circle cx="105" cy="80" r="12" fill="#6A9C5B"/><circle cx="97" cy="88" r="9" fill="#78AA61"/><circle cx="113" cy="88" r="9" fill="#74A35D"/>
+  <path d="M166 119V86L180 70L194 86V119Z" fill="#816F4E" stroke="#5D5643" stroke-width="1.1"/><circle cx="180" cy="84" r="13" fill="#D7834B"/><circle cx="171" cy="91" r="8" fill="#E39B4D"/><circle cx="190" cy="92" r="8" fill="#C85E48"/><path d="M204 120V89L218 73L232 89V120Z" fill="#786448" stroke="#5D5643" stroke-width="1.1"/><circle cx="218" cy="87" r="12" fill="#D7834B"/><circle cx="210" cy="93" r="8" fill="#E5A24F"/><circle cx="226" cy="95" r="8" fill="#C75D49"/>
+  <path d="M242 118V89L256 69L270 89V118Z" fill="#657A82" stroke="#4F6871" stroke-width="1.1"/><path d="M241 88L256 67L271 88L267 94H245Z" fill="url(#cl-snow)"/><path d="M278 119V94L289 78L300 95V119Z" fill="#6A7E85" stroke="#4F6871" stroke-width="1.1"/><path d="M277 94L289 76L302 96L297 100H281Z" fill="url(#cl-snow)"/>
+  <path d="M0 131Q38 123 76 131T152 129T228 131T304 127V154H0Z" fill="#A2B78E"/><path d="M228 137Q266 130 304 138V157H228Z" fill="url(#cl-snow)"/><path d="M0 139q20-5 38 0m39 0q18-5 38 0m39 0q18-5 38 0" fill="none" stroke="#F0F0D5" stroke-width="2"/>
+  <path d="M31 111l-1 10m33-14 0 12m41-21-1 19m76-16v17m41-17v17m39-16v16" fill="none" stroke="#594D3D" stroke-width="2.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M17 120h59m15 0h59m15 0h59m15 0h59" fill="none" stroke="#E7E6D0" stroke-width="1.2"/><circle cx="24" cy="122" r="1.6" fill="#F0D6A7"/><circle cx="45" cy="122" r="1.6" fill="#E7C5D0"/><circle cx="85" cy="123" r="1.5" fill="#F1D9A4"/><path d="M242 105q14-6 29 0m-23-5 8-7m22 11 7-5" fill="none" stroke="#F8FBF4" stroke-width="1.1"/><path d="M24 24H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M11 107q33-8 65 0m91 0q30-8 61 0m65 0q7-3 13-1" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><circle cx="38" cy="40" r="1.2" fill="#FFF8E7"/><path d="M249 94l8-15m14 17 10-6" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

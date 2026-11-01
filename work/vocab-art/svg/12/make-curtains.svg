@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: make curtains (Verb phrase)
+  CONTEXTUAL_DEFINITION: Sew lengths of fabric into curtains for a home's window.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, material, and tool in use
+  SYNONYM_GUARD: Show fabric feeding through a sewing machine and one finished curtain hanging at the window; this is making the textile, not installing it.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Interior sewing corner with a window and one finished curtain panel.
+    - Context_Layer: Fabric folded on the table, thread spool, and a curtain rod establish the project.
+    - Focal_Layer: Sewing machine at x=84..176, fabric running under its needle toward a draped panel.
+    - Details_Layer: Needle, presser foot, thread, fabric seam, folds, and machine wheel.
+    - Lighting_Layer: Soft sheen on fabric folds and a window highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:make curtains" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#8B5CA8;--c-secondary:#633B7D;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="curtain-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B792CF"/><stop offset=".5" stop-color="#8B5CA8"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 150H304V192H0Z" fill="#D9C6AB"/><path d="M176 31H281V111H176Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2"/><path d="M228 32V110M177 72H280" stroke="#C88446" stroke-width="2.5"/><path d="M168 25H289" stroke="#1E2A3B" stroke-width="3"/><path d="M178 31Q190 38 200 31L199 110Q190 116 178 109ZM258 31Q269 38 280 31L280 109Q269 115 258 110Z" fill="url(#curtain-grad)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M0 153H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="142" cy="163" rx="81" ry="6" fill="#DDD4C3" opacity=".65"/></g>
+  <g id="layer-context"><path d="M34 129H102L115 145H30Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M46 125L57 116L82 116L92 127L87 137H43Z" fill="#B792CF" stroke="#1E2A3B" stroke-width="1.6"/><path d="M50 122L84 132M56 118L89 128" stroke="#633B7D" stroke-width="1.3"/><path d="M24 152H118" stroke="#965D28" stroke-width="2"/><path d="M107 116V130M103 116H111" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M79 84H104Q111 84 111 92V107H85L76 118H59V106L68 98V91Q68 84 79 84Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M75 89H97V96H75Z" fill="#F1F5F9" stroke="#64748B" stroke-width="1.2"/><circle cx="91" cy="107" r="14" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="91" cy="107" r="6" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.2"/><path d="M70 98H56V106H72" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.5"/><path d="M108 100L124 106H153V135H114L105 118Z" fill="url(#curtain-grad)" stroke="#1E2A3B" stroke-width="2"/><path d="M118 106V133M128 106V133M138 106V133M148 106V133" stroke="#B792CF" stroke-width="1.5"/><path d="M112 105H155" stroke="#1E2A3B" stroke-width="2"/><path d="M104 99L111 103L111 109L105 109Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.4"/><path d="M108 99V93" stroke="#1E2A3B" stroke-width="1.4"/><path d="M93 94L104 94L107 99" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M108 113H113" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M103 94Q109 94 111 100" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M102 99L106 98M102 102L107 101" stroke="#5479AC" stroke-width="1.1"/><path d="M119 114L128 111M137 116L147 113" stroke="#D7C1E5" stroke-width="1.4"/><circle cx="36" cy="132" r="2" fill="#F2C14E"/><circle cx="96" cy="133" r="1.8" fill="#F2C14E"/><path d="M267 35V106M190 36V105" stroke="#D7C1E5" stroke-width="1.3"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M185 36Q190 39 196 36M264 36Q270 39 276 36" fill="none" stroke="#D7C1E5" stroke-width="1.7"/><path d="M77 87H94" stroke="#FFFFFF" stroke-width="1.7" opacity=".8"/><path d="M121 109V130" stroke="#D7C1E5" stroke-width="1.3" opacity=".75"/></g>
+</svg>

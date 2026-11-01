@@ -1,0 +1,50 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: newspaper
+ CONTEXTUAL_DEFINITION: A printed broadsheet that carries current articles and photographs.
+ PEDAGOGICAL_ARCHETYPE: folded printed broadsheet with several short columns
+ SYNONYM_GUARD: Show a physical folded newspaper with a range of columns and small pictures; distinguish it from a bound magazine, a single headline or a website.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A wide folded newspaper lies across a table, its center crease and loose overlapping pages visible; many compact print columns and a few small photos cover the page.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:newspaper" data-archetype="folded printed broadsheet">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M35 51L255 37L274 137L54 151Z" fill="#B8AA91" stroke="#8C725A" stroke-width="1.2"/>
+  <path d="M25 41L246 27L267 132L47 147Z" fill="#E4DDD0" stroke="#8C725A" stroke-width="1.2"/>
+  <!-- upper sheet is visibly folded, with many equal story columns -->
+  <path d="M32 34L241 23L259 126L49 141Z" fill="#F6E5CE" stroke="#26384A" stroke-width="1.3"/>
+  <path d="M44 43L124 39L128 47L45 52ZM139 38L231 33L233 41L141 46Z" fill="#597D8B"/>
+  <path d="M48 59L115 55L118 78L51 82Z" fill="#B85E5A"/><path d="M52 79L68 63L80 75L94 60L115 68V78Z" fill="#798C72"/><circle cx="104" cy="62" r="3" fill="#D6A64C"/>
+  <path d="M127 54L145 53M127 59L148 58M127 64L146 63M127 69L147 68M127 74L144 73" stroke="#8C725A" stroke-width="1.2"/>
+  <path d="M55 89L115 85L117 112L59 116Z" fill="#A6B4AA"/><path d="M61 110L79 92L93 106L105 90L116 99V112Z" fill="#597D8B"/><circle cx="102" cy="94" r="3" fill="#D6A64C"/>
+  <path d="M126 84L148 83M126 89L147 88M126 94L146 93M126 99L144 98M126 104L145 103M126 109L140 108" stroke="#8C725A" stroke-width="1.2"/>
+  <path d="M159 51L164 119M170 49L176 118M181 48L188 117M193 47L199 116M205 46L211 115M217 45L223 114M230 44L235 113" stroke="#8C725A" stroke-width="1.3"/>
+  <path d="M154 54L247 49M155 62L249 57M156 71L250 66M157 80L252 75M158 89L253 84M159 98L254 93M160 107L256 102" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M147 31L155 135" stroke="#B9A889" stroke-width="1.5"/>
+ </g>
+ <g id="layer-context">
+  <path d="M22 45L29 41M249 23L257 29M48 150L158 156L277 141" fill="none" stroke="#796B59" stroke-width="1.1"/>
+  <path d="M32 37L43 44M243 27L252 35" stroke="#FFF8EA" stroke-width="1.2"/>
+  <path d="M57 125L112 121M169 125L242 119" stroke="#D6A64C" stroke-width="1"/>
+  <circle cx="239" cy="106" r="1.6" fill="#B85E5A"/><circle cx="79" cy="54" r="1.5" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <!-- curled upper sheet corner shows the paper is loose and foldable -->
+  <path d="M219 24L242 23L244 44Q235 38 227 43L219 24Z" fill="#FFF8EA" stroke="#8C725A" stroke-width="1"/>
+  <path d="M220 25L229 40" stroke="#C9B99C" stroke-width="1"/>
+  <path d="M70 47L74 41L78 47M91 45L95 39L99 45" stroke="#D6A64C" stroke-width="1.2"/>
+  <path d="M123 44L132 43" stroke="#B85E5A" stroke-width="1.4"/>
+ </g>
+ <g id="layer-details">
+  <path d="M46 55L112 51M54 86L113 82M57 119L112 115" stroke="#F8F0E2" stroke-width="1"/>
+  <circle cx="122" cy="118" r="1.4" fill="#D6A64C"/><circle cx="151" cy="122" r="1.4" fill="#B85E5A"/>
+  <path d="M177 126L240 121" stroke="#A08C70" stroke-width="1.2"/>
+  <path d="M39 141L251 128" stroke="#FFF8EA" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="89" rx="125" ry="68" fill="#E7C66B" opacity=".06"/>
+  <path d="M28 38L47 53M247 26L231 46" stroke="#FFF1C7" stroke-width="1.1" opacity=".55"/>
+  <path d="M28 152H275" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

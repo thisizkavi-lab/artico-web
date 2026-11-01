@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: fin (noun)
+  CONTEXTUAL_DEFINITION: A fish's pectoral fin fanning out from its side, with thin rays supporting the membrane.
+  PEDAGOGICAL_ARCHETYPE: 2 - Body part highlighted on its animal
+  SYNONYM_GUARD: Show the fin attached at the fish's side with visible rays; do not use a bird wing, a shark's whole tail, or an isolated decorative fan.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A muted blue fish in side profile faces right; its near pectoral fin is the bright focal point projecting down and back from the body, with clear thin rays. Soft halos and water ripples emphasize the fin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:fin" data-archetype="fish-pectoral-fin-highlighted-with-rays">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#6C9295;--c-secondary:#405B62;--c-accent:#D9B15E;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="fin-water" x2="0" y2="1"><stop stop-color="#A4CDCC"/><stop offset="1" stop-color="#4B8591"/></linearGradient>
+  <linearGradient id="fin-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A7BDB7"/><stop offset="1" stop-color="#607C84"/></linearGradient>
+  <linearGradient id="fin-focus" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2D08B"/><stop offset="1" stop-color="#D69852"/></linearGradient>
+  <filter id="fin-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fin-water)"/><path d="M0 157Q76 149 151 158T304 153V192H0Z" fill="#4C858E"/></g>
+ <g id="layer-context"><path d="M0 32q44-6 82 0m143-3q39-7 79 0" fill="none" stroke="#D9ECE5" stroke-width="1.4"/><path d="M21 133q16-5 32 0m202-11q17-5 32 0m-157 44q17-5 34 0" fill="none" stroke="#C2DFDA" stroke-width="1.3" stroke-linecap="round"/><circle cx="48" cy="91" r="2" fill="#EAF7F0"/><circle cx="56" cy="82" r="1.2" fill="#EAF7F0"/><ellipse cx="152" cy="138" rx="79" ry="6" fill="#1A3D43" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#fin-shadow)">
+  <path d="M86 98Q68 86 57 73Q60 94 77 105Q66 115 61 128Q79 123 95 111Z" fill="#607E84" stroke="#405D64" stroke-width="1.4"/>
+  <path d="M174 101Q161 106 149 117Q139 127 135 142Q151 139 165 131Q181 122 188 108Z" fill="url(#fin-focus)" stroke="#846847" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M174 106L140 139m38-31-27 32m33-29-17 30m22-27-8 22" fill="none" stroke="#AC8150" stroke-width="1" stroke-linecap="round"/>
+  <path d="M82 93Q101 74 141 74Q180 73 211 87Q226 94 230 103Q222 116 204 122Q169 133 127 126Q99 121 82 106Z" fill="url(#fin-body)" stroke="#405D64" stroke-width="1.5" opacity=".86"/>
+  <path d="M94 109Q128 123 167 118Q199 115 223 105Q208 125 173 131Q127 133 101 120Z" fill="#E3E5D9" stroke="#73898B" stroke-width="1" opacity=".75"/>
+  <path d="M131 78Q139 65 151 68L162 76Z" fill="#607E84" stroke="#405D64" stroke-width="1"/>
+  <circle cx="216" cy="95" r="2" fill="#1E2A3B"/>
+  <path d="M215 108q7 2 12-1m-33-14q-7 9-3 17" fill="none" stroke="#405D64" stroke-width="1.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M117 88q17-10 31-8m-26 29q17 5 29 4" fill="none" stroke="#E6F0E9" stroke-width="1.2" stroke-linecap="round"/><circle cx="195" cy="73" r="1.6" fill="#EAF7F1"/><path d="M181 116q8 2 15 0" fill="none" stroke="#D4E1D8" stroke-width="1.1" stroke-linecap="round"/><circle cx="148" cy="146" r="1.1" fill="#EAF7F1"/><circle cx="68" cy="73" r="1" fill="#EAF7F1"/><circle cx="242" cy="79" r="1.1" fill="#EAF7F1"/><circle cx="256" cy="139" r=".9" fill="#EAF7F1"/></g>
+ <g id="layer-lighting"><ellipse cx="164" cy="124" rx="35" ry="27" fill="#F2D08B" opacity=".11"/><path d="M144 105q12 5 23 19" fill="none" stroke="#FFF4D6" stroke-width="1.6" opacity=".67" stroke-linecap="round"/></g>
+</svg>

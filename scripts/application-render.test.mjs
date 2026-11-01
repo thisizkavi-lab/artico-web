@@ -82,7 +82,7 @@ test('presentation course screens render across the full curriculum', { timeout:
       ['#/application/presentations/11/study','Data people can inspect'],
       ['#/application/presentations/13/study','Story, attention and ethical persuasion'],
       ['#/application/presentations/15/practice','Ask your listener these questions'],
-      ['#/application/presentations/17/study','Q&A as dialogue'],
+      ['#/application/presentations/17/study','Q&amp;A as dialogue'],
       ['#/application/presentations/18/study','Build, present and revise'],
       ['#/application/presentations/cases','Eight presentation situations'],
       ['#/application/presentations/blueprint','Your presentation blueprint'],

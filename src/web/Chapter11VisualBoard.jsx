@@ -580,8 +580,8 @@ const BOARDS = {
         "en": "cloudy",
         "ja": "曇り",
         "x": 190,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 164,
         "say": "cloudy"
       },
@@ -589,8 +589,8 @@ const BOARDS = {
         "en": "overcast",
         "ja": "空一面が曇り",
         "x": 430,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 193,
         "say": "overcast"
       },
@@ -598,8 +598,8 @@ const BOARDS = {
         "en": "pouring",
         "ja": "土砂降り",
         "x": 670,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 164,
         "say": "pouring"
       },
@@ -607,8 +607,8 @@ const BOARDS = {
         "en": "°C / °F",
         "ja": "摂氏／華氏",
         "x": 910,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 164,
         "say": "degrees Celsius, degrees Fahrenheit"
       },
@@ -652,8 +652,8 @@ const BOARDS = {
         "en": "hurricane",
         "ja": "ハリケーン",
         "x": 1195,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 164,
         "say": "hurricane"
       },
@@ -661,8 +661,8 @@ const BOARDS = {
         "en": "blizzard",
         "ja": "猛吹雪",
         "x": 1425,
-        "y": 636,
-        "jpY": 661,
+        "y": 658,
+        "jpY": 685,
         "width": 164,
         "say": "blizzard"
       }
@@ -729,7 +729,7 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
   return (
     <div className="ar-ch11-atlas">
       <div className="ar-ch11-board" role="group" aria-label={board.alt}>
-        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}?v=20261101-4`}
+        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}?v=20261101-5`}
           alt={board.alt} loading="lazy" draggable="false" />
         {board.terms.map((item, index) => (
           <div key={`${section.id}-${index}`}>
@@ -744,7 +744,7 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
               onClick={() => speak(item.say || item.en)}>
               <span className="ar-ch11-listen-mark" aria-hidden="true">♪</span>
             </button>
-            {language === 'ja' && (
+            {language === 'ja' && section.id !== '11-study-5' && (
               <span className="ar-ch11-translation" lang="ja" aria-hidden="true"
                 style={{left:`${item.x / 16}%`,top:`${(item.jpY || item.y+26) / 7.4}%`}}>
                 {item.ja}
@@ -753,6 +753,18 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
           </div>
         ))}
       </div>
+      {language === 'ja' && section.id === '11-study-5' && (
+        <div className="ar-ch11-weather-ja" lang="ja" aria-label="天気の語彙と日本語訳">
+          <div className="ar-ch11-weather-ja-grid">
+            {board.terms.map((item) => (
+              <div className="ar-ch11-weather-ja-item" key={item.en}>
+                <span lang="en">{item.en}</span>
+                <span lang="ja">{item.ja}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       {section.id === '11-study-1' && (
         <div className="ar-ch11-board-notes">
           <WordRow title={language === 'ja' ? '曜日' : 'Days of the week'} words={WEEKDAYS} language={language} onSpeak={speak} />

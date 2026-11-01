@@ -617,19 +617,23 @@ function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illust
 const chapter05PhraseIllustrations = [
   {
     file: 'ch05-01-likes-dislikes.png',
-    alt: 'A woman choosing between the outdoor photography and hiking she loves and an activity she dislikes',
+    fallbackFile: null, // Never reuse the dialogue illustration in the phrase section.
+    alt: 'Riley enjoys photography while Dev suggests an escape room she does not want',
   },
   {
     file: 'ch05-02-asking-opinions.png',
-    alt: 'Three people looking at an interior design plan and sharing their opinions',
+    fallbackFile: null,
+    alt: 'Dev, Riley and Morgan compare smaller and larger meeting rooms using a floor plan',
   },
   {
     file: 'ch05-03-choosing-options.png',
-    alt: 'A woman comparing eating pasta at a restaurant with taking a burger meal home',
+    fallbackFile: null,
+    alt: 'Riley choosing tea rather than coffee to express a preference',
   },
   {
     file: 'ch05-04-strong-reactions.png',
-    alt: 'One person delighted by a surprise gift while another reacts with shock',
+    fallbackFile: null,
+    alt: 'A delighted surprise about a gift contrasted with a firm refusal of an expensive price',
   },
 ]
 

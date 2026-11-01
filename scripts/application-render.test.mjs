@@ -64,7 +64,7 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
 })
 
 
-test('presentation course screens render with original lessons and blueprint', { timeout: 45000 }, async () => {
+test('presentation course screens render across the full curriculum', { timeout: 45000 }, async () => {
   const originalWindow=globalThis.window
   const storage=new Map()
   globalThis.window={localStorage:{getItem:key=>storage.get(key)??null,setItem:(key,val)=>storage.set(key,val)}}
@@ -75,11 +75,16 @@ test('presentation course screens render with original lessons and blueprint', {
     const {emptyLearning}=await vite.ssrLoadModule('/src/web/learning.js')
     for(const [hash,expected] of [
       ['#/application/presentations','Public speaking'],
-      ['#/application/presentations/01/study','What a presentation actually does'],
-      ['#/application/presentations/08/study','Explain a figure'],
-      ['#/application/presentations/09/study','Make slides'],
-      ['#/application/presentations/13/practice','Answer questions'],
-      ['#/application/presentations/cases','Six ways to speak'],
+      ['#/application/presentations/01/study','What makes a talk effective?'],
+      ['#/application/presentations/02/study','Read the room'],
+      ['#/application/presentations/04/practice','Half-Life Your Message'],
+      ['#/application/presentations/10/study','Slides that make a point'],
+      ['#/application/presentations/11/study','Data people can inspect'],
+      ['#/application/presentations/13/study','Story, attention and ethical persuasion'],
+      ['#/application/presentations/15/practice','Ask your listener these questions'],
+      ['#/application/presentations/17/study','Q&A as dialogue'],
+      ['#/application/presentations/18/study','Build, present and revise'],
+      ['#/application/presentations/cases','Eight presentation situations'],
       ['#/application/presentations/blueprint','Your presentation blueprint'],
     ]){
       const route=parseRoute(hash)
@@ -87,6 +92,10 @@ test('presentation course screens render with original lessons and blueprint', {
       assert.ok(html.length>1200,hash+' has little content')
       assert.ok(html.includes(expected),hash+' missing heading '+expected)
       assert.ok(!html.includes('could not be loaded'),hash)
+      if(hash==='#/application/presentations') {
+        assert.ok(html.includes('22 VIDEOS'),'full source video index missing')
+        assert.ok(html.includes('8 RESOURCES'),'original worksheets index missing')
+      }
     }
   } finally {
     await vite?.close()

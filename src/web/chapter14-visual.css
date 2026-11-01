@@ -79,3 +79,8 @@
   .ar-f14-tree-node .ar-f14-japanese{font-size:10px}
   .ar-f14-sound{width:22px;height:22px;flex-basis:22px}
 }
+
+.ar-f14-step-children{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;width:100%;margin-top:13px}
+.ar-f14-step-child{display:grid;justify-items:center;min-width:0}
+.ar-f14-step-child small{font-size:10px;line-height:1.4;color:#718294;text-align:center;margin-top:3px}
+.ar-f14-step-link{font-size:10px;line-height:1.25;color:#795b89;font-weight:700;text-align:center;border-top:2px dashed #b78ac3;padding:5px 3px 0;white-space:nowrap}

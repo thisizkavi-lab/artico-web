@@ -7,9 +7,9 @@ export const chapterPhraseIllustrations = {
     { file: 'ch06-04-continue-or-close-disagreement.png', fallbackFile: null, alt: 'Nico shows Harper a simple chart as they calmly consider whether to check the evidence further' },
   ],
   '07': [
-    { file: 'ch07-01-put-forward-an-idea.svg', fallbackFile: 'ch07-scene-0.svg', alt: 'Two friends consider a lunch suggestion after class, with a menu and meal between them' },
-    { file: 'ch07-02-invite-a-person.svg', fallbackFile: 'ch07-scene-1.svg', alt: 'One friend offers an invitation to a small game night and the other happily accepts' },
-    { file: 'ch07-03-decline-or-keep-the-answer-open.svg', fallbackFile: 'ch07-scene-2.svg', alt: 'One friend politely checks a calendar and suggests another day while responding to an invitation' },
+    { file: 'ch07-01-put-forward-an-idea.png', fallbackFile: null, alt: 'Two friends look over a map together as one points out a possible destination, illustrating how to put forward an idea' },
+    { file: 'ch07-02-invite-a-person.png', fallbackFile: null, alt: 'A young man makes an open, welcoming gesture while inviting a friend to join him' },
+    { file: 'ch07-03-decline-or-keep-the-answer-open.png', fallbackFile: null, alt: 'Two friends face each other and talk, with one responding to an invitation using a calm open-hand gesture' },
   ],
   '08': [
     { file: 'ch08-01-name-what-you-appreciate.png', fallbackFile: 'ch08-scene-0.svg', alt: 'A friend lends an umbrella and the other thanks them warmly' },

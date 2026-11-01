@@ -256,3 +256,12 @@
 .ps-discussion-grid article>span{display:block;margin-bottom:10px}
 .ps-discussion-grid article p{font-size:13px;line-height:1.6;color:#3f5674;margin:10px 0}
 @media(max-width:720px){.ps-discussion-grid{grid-template-columns:1fr}}
+
+.ps-feedback-rubric>p{max-width:780px;color:#5e718c;font-size:13px}
+.ps-feedback-rubric h4{font-size:13px;margin:24px 0 10px;color:#435d81}
+.ps-reviewer-brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:18px 0 24px}
+.ps-reviewer-brief>div{padding:12px 14px;background:#fff;border:1px solid #dbe4ef;border-radius:7px;min-width:0}
+.ps-reviewer-brief b{font-size:11px;color:#48678f}
+.ps-reviewer-brief p{font-size:12px;line-height:1.5;color:#5d718d;margin:5px 0 0;overflow-wrap:anywhere}
+.ps-reviewer-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+@media(max-width:720px){.ps-reviewer-brief,.ps-reviewer-notes{grid-template-columns:1fr}}

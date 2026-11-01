@@ -1,6 +1,7 @@
 import './readable-course.css'
 import { useLanguage } from './Language'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
+import { chapter05JapaneseFor } from './chapter05Japanese'
 const plain = (runs) => runs.map((run) => run.text).join('')
 export function RichText({ runs = [] }) {
   return runs.map((run, index) =>
@@ -20,6 +21,8 @@ export function RichText({ runs = [] }) {
 
 export function SourceContent({ block, audioProps, focusedId, examples = true }) {
   const { t, language } = useLanguage()
+  const translateExamples = language === 'ja' && /^(?:ja-)?05-(?:study|practice)-|^ch05-/.test(block.id || '')
+  const exampleGloss = (runs) => translateExamples ? chapter05JapaneseFor(plain(runs)) : ''
   let content
   const phraseTable =
     examples &&
@@ -36,9 +39,12 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
           <div className="rc-table" role="region" aria-label={block.header.map(plain).join(' / ')} tabIndex={0}>
             <table>
               <thead><tr>{block.header.map((cell, i) => <th scope="col" key={i}><RichText runs={cell} /></th>)}</tr></thead>
-              <tbody>{block.rows.map((row, i) => <tr key={i}>{row.map((cell,j) => j===0
-                ? <th scope="row" key={j}><RichText runs={cell} /></th>
-                : <td key={j}><RichText runs={cell} /></td>)}</tr>)}</tbody>
+              <tbody>{block.rows.map((row, i) => <tr key={i}>{row.map((cell,j) => {
+                const gloss = exampleGloss(cell)
+                return j === 0
+                  ? <th scope="row" key={j}><RichText runs={cell} />{gloss && <small className="ar-translation-inline" lang="ja">{gloss}</small>}</th>
+                  : <td key={j}><RichText runs={cell} />{gloss && <small className="ar-translation-inline" lang="ja">{gloss}</small>}</td>
+              })}</tr>)}</tbody>
             </table>
           </div>
         </details>
@@ -75,7 +81,7 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
               <tr key={i}>
                 {row.map((cell, j) => {
                   const phraseId = block.phraseCells?.[i]?.[j]
-                  const gloss = language === 'ja' && phraseId ? audioProps?.byId?.[phraseId]?.ja : ''
+                  const gloss = (language === 'ja' && phraseId ? audioProps?.byId?.[phraseId]?.ja : '') || exampleGloss(cell)
                   return j === 0 ? (
                     <th scope="row" key={j}>
                       <RichText runs={cell} />
@@ -102,6 +108,9 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
             <span className="ip-speaker">{turn.speaker}</span>
             <br />
             {turn.en}
+            {language === 'ja' && (turn.ja || (translateExamples ? chapter05JapaneseFor(turn.en) : '')) && (
+              <small className="ar-translation-inline" lang="ja">{turn.ja || chapter05JapaneseFor(turn.en)}</small>
+            )}
           </p>
         ))}
       </div>
@@ -113,6 +122,7 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
         {block.items.map((item, i) => (
           <li key={i}>
             <RichText runs={item.runs} />
+            {exampleGloss(item.runs) && <small className="ar-translation-inline" lang="ja">{exampleGloss(item.runs)}</small>}
           </li>
         ))}
       </List>

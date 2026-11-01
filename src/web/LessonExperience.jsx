@@ -573,7 +573,7 @@ function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illust
         {files[attempt] ? (
           <img
             className="ar-unified-phrase-image"
-            src={art(files[attempt])}
+            src={art(files[attempt]) + (chapterId === '05' ? '?v=20261101-original-pngs' : '')}
             alt={illustration?.alt || section.title}
             width="1774"
             height="887"

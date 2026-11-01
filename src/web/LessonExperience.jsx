@@ -568,7 +568,10 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
     block.source.type === 'explanation' &&
     block !== intro,
   )
-  if (!table || !conversation) return null
+  if (!table || !conversation) return <ChapterIllustratedPhraseStudySection
+    section={section} sectionIndex={sectionIndex} audioProps={audioProps}
+    focusedId={focusedId} illustrationOverride={chapter05PhraseIllustrations[sectionIndex]}
+  />
   const illustration = chapter05PhraseIllustrations[sectionIndex] ?? chapter05PhraseIllustrations[0]
   const phraseIds = (table.source.phraseCells ?? []).map((row) => row[0]).filter(Boolean)
   return (
@@ -683,11 +686,11 @@ function ChapterPhraseConversation({ block, audioProps, conversationIndex }) {
   )
 }
 
-function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
+function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProps, focusedId, illustrationOverride }) {
   const { byId, SourceContent } = useLesson()
   const { language } = useLanguage()
   const chapterId = section.id.slice(0, 2)
-  const illustration = chapterPhraseIllustrations[chapterId]?.[sectionIndex]
+  const illustration = illustrationOverride ?? chapterPhraseIllustrations[chapterId]?.[sectionIndex]
   const leadBlock = section.blocks[0]?.type === 'source' && section.blocks[0].source.type === 'explanation'
     ? section.blocks[0]
     : null
@@ -773,9 +776,12 @@ function ChapterPhraseStudySection({ section, audioProps, focusedId }) {
     block.source.type === 'explanation' &&
     block !== intro,
   )
-  if (!table || !conversation) return null
+  if (!table || !conversation) return <ChapterIllustratedPhraseStudySection
+    section={section} sectionIndex={Number(section.id.split('-')[2]) || 0}
+    audioProps={audioProps} focusedId={focusedId}
+  />
   // Keep the illustration panel calm. The full phrase set remains in the table.
-  const phraseIds = (table.source.phraseCells ?? []).map((row) => row[0]).filter(Boolean).slice(0, 5)
+  const phraseIds = (table.source.phraseCells ?? []).map((row) => row.find(Boolean)).filter(Boolean).slice(0, 5)
   const speakers = [...new Set(conversation.turns.map((turn) => turn.speaker))]
   const portraits = conversation.turns.slice(0, 2).map((turn) => turn.portrait)
   return (

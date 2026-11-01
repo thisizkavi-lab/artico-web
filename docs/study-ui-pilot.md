@@ -1,6 +1,6 @@
 # Chapter 06 study UI pilot
 
-Status: Chapter 06 is the lesson-layout pilot. Compact note sizing is shared across all 96 Social Fluency chapters following Kavi's review. The other presentation decisions remain candidates for individual chapter review.
+Status: Chapter 06 is the lesson-layout pilot. Compact note sizing applies across all Social Fluency chapters, including the separate Humor chapter, following Kavi's review. The other presentation decisions remain candidates for individual chapter review.
 
 ## Reading hierarchy
 
@@ -30,6 +30,8 @@ The conversation uses consistent left/right positions for Nico and Harper, small
 Notes use a restrained yellow surface (`#fbf8ed`), subtle border, and no large heading or repeated “Good to know” prefix.
 
 Across the course, `social-study-notes.css` supplies the compact typography and padding for the different existing note components. It includes the custom notes in Chapters 01–03, phrase notes in early chapters, shared teaching notes in later chapters, and the family-board subnote. Chapter 03's already small card annotations use 4px 7px padding. Note colors and placement remain appropriate to each layout. Vocabulary boards whose class names contain “notes” still present primary learning content and retain their normal type size.
+
+The separate Humor chapter uses the same 10px text, 1.5 line height, and 6px 9px padding in its own note styles. Learners' editable personal notes remain normal input text.
 
 ## Requested annotations
 

@@ -360,7 +360,7 @@ export const presentationLessons = [
     "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. Five optional techniques are useful to test: paint a scene, make the story personal, build empathy, create suspense around a genuine unresolved question, and show rather than merely tell. Choose only techniques that fit the audience, purpose and your own speaking style. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. In science communication, do not assume that a listener who disagrees simply lacks information: values, trust, lived experience and the decision context can shape how evidence is received. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
     "before": "I will tell a dramatic story and use it to prove that our intervention works.",
     "after": "I will use one real user example to explain the problem, then show the study data and limitations needed to judge whether the intervention helps.",
-    "note": "The National Academies rejects a simple one-way deficit model of science communication. More facts are not always enough; listen for the audience's actual concern and distinguish evidence questions from value or policy disagreements.",
+    "note": "The National Academies rejects a simple one-way deficit model of science communication. More facts are not always enough; listen for the audience's actual concern and distinguish evidence questions from value or policy disagreements. A presentation alone cannot remove structural barriers or guarantee behaviour or policy change.",
     "contrast": "A research seminar uses a narrative to explain the investigation. A proposal uses a fair argument to support a decision. A toast uses a truthful memory to honour someone.",
     "question": "Which combination is most responsible in a persuasive presentation?",
     "options": [
@@ -1031,9 +1031,9 @@ export const presentationSources = [
     "title": "National Academies (2017) · Communicating Science Effectively",
     "url": "https://doi.org/10.17226/23674",
     "kind": "Consensus study report",
-    "summary": "A multidisciplinary consensus report rejects the simple deficit model: science communication depends on goals, audience knowledge, values, trust, social context and two-way engagement.",
+    "summary": "A consensus report identifies five distinct science-communication goals and explains why audience knowledge, values, trust, social context and two-way engagement matter beyond simply supplying more facts.",
     "use": "Audience analysis beyond jargon level; science communication that helps people understand evidence in context.",
-    "limit": "Focused particularly on public science communication and contentious issues; not a slide-design manual."
+    "limit": "Focused on public science communication, especially contentious issues; it is not a slide-design manual. Communication alone may not achieve wider policy or behaviour goals when practical and structural factors also matter."
   },
   {
     "title": "Michael Alley · The Craft of Scientific Presentations (2nd ed.)",

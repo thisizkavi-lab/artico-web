@@ -186,6 +186,11 @@ jobs:
       - name: Compile lesson content
         run: pnpm lessons
 
+      - name: Generate Chapter 08 and 09 PNG illustrations before tests
+        run: |
+          python3 scripts/build_ch08_png_scenes.py
+          python3 scripts/build_ch09_illustrations.py
+
       - name: Test course and learning progress
         run: pnpm test
 

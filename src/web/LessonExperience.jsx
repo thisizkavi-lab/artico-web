@@ -364,7 +364,7 @@ function Study({ audioProps, focusedId }) {
   }
   return (
     <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
-      {introductionSections.map((section, index) => (
+      {lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
         <section
           className="ip-section"
           key={section.id}
@@ -375,9 +375,7 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {lessonId === '14'
-            ? <Chapter14VisualBoard sectionIndex={index} Diagram={Diagram} />
-            : lessonId === '11'
+          {lessonId === '11'
             ? <Chapter11VisualBoard section={section} focusedId={focusedId} />
             : lessonId === '03'
             ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
@@ -1307,7 +1305,7 @@ function Experience({ route, learning, update, save, notify }) {
           <a href={practicePath} aria-current={practice ? 'page' : undefined}>
             <Glyph name="headphones" size={18} /> {t("Practice")} </a>
         </nav>
-        {!practice ? (
+        {!practice && id !== '14' ? (
           <details ref={contentsRef} className="ip-contents">
             <summary> {t("In this chapter")} <Glyph name="chevron" size={16} />
             </summary>

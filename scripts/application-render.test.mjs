@@ -94,7 +94,7 @@ test('presentation course screens render across the full curriculum', { timeout:
       assert.ok(!html.includes('could not be loaded'),hash)
       if(hash==='#/application/presentations/blueprint') assert.ok(html.includes('Acknowledgements, funding, collaborators and image/source credits'),'acknowledgements field missing')
       if(hash==='#/application/presentations') {
-        assert.ok(html.includes('22 VIDEOS'),'full source video index missing')
+        assert.ok(html.includes('22 CORE VIDEOS'),'full source video index missing')
         assert.ok(html.includes('8 RESOURCES'),'original worksheets index missing')
         assert.ok(html.includes('Good speaking improves through exchange.'),'module discussion prompts missing')
       }
@@ -132,7 +132,14 @@ test('The Other Half of English overview and source chapters render as a visual 
       assert.equal(route.page, 'application', hash)
       assert.equal(route.id, 'other-half', hash)
       const markup = renderToStaticMarkup(createElement(OtherHalfCourse, { route }))
-      assert.ok(markup.length > 900, hash + ': empty course screen')
+      if (hash === '#/application/other-half/10') {
+        assert.ok(markup.length > 500, hash + ': missing-source state is empty')
+        assert.ok(markup.includes('Source gap.'), hash + ': missing-source state must be explicit')
+        assert.ok(markup.includes('chapter text is absent'), hash + ': do not invent the missing source chapter')
+        assert.ok(markup.includes('Continue to Chapter 11'), hash + ': provide a safe navigation path')
+      } else {
+        assert.ok(markup.length > 900, hash + ': empty course screen')
+      }
       assert.ok(markup.includes(expected), hash + ': missing heading or source-gap marker')
       assert.ok(!markup.includes('This page could not be loaded'), hash)
     }

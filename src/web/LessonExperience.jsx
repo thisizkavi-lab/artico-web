@@ -110,8 +110,8 @@ export function PhraseCard({ id, audioProps, conversation = false, focusedId }) 
           individual.length ? <ul className="ip-word-alternatives">
             {individual.map((part) => <li key={part.id}><span className="ip-phrase-text" lang="en">{part.en}</span><PhraseAudio item={part} {...audioProps} /></li>)}
           </ul> : <p className="ip-phrase-text" lang="en">{item.en}</p>}
+        {language === 'ja' && item.ja && <p className="ip-phrase-support" lang="ja">{item.ja}</p>}
         {!conversation && <p className="ip-context">{item.context}</p>}
-        {conversation && language === 'ja' && item.ja && <p className="ip-phrase-support" lang="ja">{item.ja}</p>}
       </div>
       {!conversation && !individual.length && <PhraseAudio item={item} {...audioProps} />}
     </article>
@@ -598,7 +598,10 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
             if (!item) return null
             return (
               <div className="ar-ch05-phrase-chip" key={id}>
-                <span lang="en">{item.en}</span>
+                <span className="ar-phrase-chip-copy">
+                  <span lang="en">{item.en}</span>
+                  {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
+                </span>
                 <PhraseAudio item={item} {...audioProps} />
               </div>
             )
@@ -667,8 +670,8 @@ function ChapterPhraseConversation({ block, audioProps, conversationIndex }) {
               <div className="ar-phrase-example-bubble">
                 <span className="ar-phrase-example-speaker">{turn.speaker}</span>
                 <p lang="en">{english}</p>
-                {language === 'ja' && (turn.ja ?? item?.ja) && (
-                  <p className="ar-phrase-example-ja" lang="ja">{turn.ja ?? item.ja}</p>
+                {language === 'ja' && (turn.ja || item?.ja) && (
+                  <p className="ar-phrase-example-ja" lang="ja">{turn.ja || item.ja}</p>
                 )}
                 {item && <PhraseAudio item={item} {...audioProps} />}
               </div>
@@ -722,7 +725,10 @@ function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProp
               const item = byId[id]
               return (
                 <div className="ar-illustrated-phrase-chip" key={id}>
-                  <span lang="en">{item.en}</span>
+                  <span className="ar-phrase-chip-copy">
+                    <span lang="en">{item.en}</span>
+                    {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
+                  </span>
                   <PhraseAudio item={item} {...audioProps} />
                 </div>
               )
@@ -788,7 +794,10 @@ function ChapterPhraseStudySection({ section, audioProps, focusedId }) {
               <div className={`ar-phrase-bubble-row ${index % 2 ? 'is-right' : 'is-left'}`} key={id}>
                 {portrait && <img className="ar-phrase-bubble-avatar" src={art(portrait)} alt="" width="28" height="28" />}
                 <div className="ar-phrase-bubble">
-                  <p lang="en">{item.en}</p>
+                  <span className="ar-bubble-copy">
+                    <p lang="en">{item.en}</p>
+                    {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
+                  </span>
                   <PhraseAudio item={item} {...audioProps} />
                 </div>
               </div>

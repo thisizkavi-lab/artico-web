@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1\d|2[0-8])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?|\/application\/presentations\/(?:0[1-9]|1[0-5])\/(?:study|practice)|\/application\/presentations\/(?:blueprint|cases))$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1\d|2[0-8])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?|\/application\/presentations\/(?:0[1-9]|1[0-8])\/(?:study|practice)|\/application\/presentations\/(?:blueprint|cases))$/
 const normalizeLrPath = (path) => typeof path === 'string' && path.startsWith('/foundation/lr/')
   ? (path.endsWith('/study') ? '/foundation/tongue-intro/study' : '/foundation/tongue-intro/practice') : path
 const isPractice = (path) =>
@@ -64,7 +64,7 @@ export function sanitizeLearning(input) {
     Object.entries(input.responses ?? {})
       .filter(
         ([id, value]) =>
-          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|progress-self-check|progress-calendar-schedule|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1\d|2[0-8])|location)|application-smalltalk-(?:note|reflection|done)-(?:0[1-9]|1[0-2])|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role)|application-presentations-(?:(?:note|done)-(?:0[1-9]|1[0-5])|context|blueprint-(?:science|business|product|teaching|proposal|toast|custom)-(?:type|audience|purpose|message|background|structure|evidence|explanation|visuals|opening|delivery|questions|contingency|feedback|revision)))$/.test(
+          /^(?:ch(?:0[1-9]|[1-8]\d|9[0-7])-b\d+-\d+|progress-self-check|progress-calendar-schedule|foundation-(?:orientation(?:-profile)?|how-it-works(?:-plan)?|letters|hear|write|sounds|tongue-intro)|application-(?:tests|smalltalk|interviews|presentations|academic|storytelling|humor|writing|reading|ideas)-[0-2]|application-academic-(?:location|done-0[1-6]\.\d{2})|application-storytelling-(?:(?:note|retry|choice|done)-(?:0[1-9]|1\d|2[0-8])|location)|application-smalltalk-(?:note|reflection|done)-(?:0[1-9]|1[0-2])|ch34-note-o[34]|application-jobs-(?:(?:note|done)-[1-8]\.\d{1,2}|location|role)|application-presentations-(?:(?:note|done)-(?:0[1-9]|1[0-8])|half-life-(?:60|30|15|8)|context|blueprint-(?:science|lab|defense|business|product|teaching|proposal|toast|custom)-(?:occasion|audience|audienceNeeds|constraints|goal|message|soWhat|evidence|limits|structure|narrative|vignette|opening|body|ending|title|visuals|dataCheck|language|delivery|rehearsal|feedback|questions|fallback|review|revision)))$/.test(
             id,
           ) &&
           typeof value === 'string' &&
@@ -198,7 +198,7 @@ export function parseRoute(hash) {
       return { path:'/application/ideas/' + view + '/' + scene + (task ? '?task=' + task : ''), page:'application', id:'ideas',
         lesson:view, mode:scene, ...(task ? { task } : {}) }
     }
-    if (id === 'presentations' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4)
+    if (id === 'presentations' && /^(?:0[1-9]|1[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4)
       return { path:'/application/presentations/' + view + '/' + scene, page:'application', id:'presentations', lesson:view, mode:scene }
     if (id === 'presentations' && ['blueprint','cases'].includes(view) && segments.length === 3)
       return { path:'/application/presentations/' + view, page:'application', id:'presentations', lesson:view }

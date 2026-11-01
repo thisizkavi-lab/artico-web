@@ -107,7 +107,7 @@ This table is the actual synthesis step: source concepts are mapped into origina
 | iBiology source lesson / assessment | Artico destination | What is preserved or extended |
 |---|---|---|
 | What makes a good research talk? | 01 | Define success by the audience's task; extend to teaching, decision, demonstration and ceremonial contexts |
-| Q1: personal learning goals | Lesson 01 practice reflection | Capture what the learner wants to improve; this is course-level reflection, not a talk-plan field |
+| Q1: personal learning goals | Saved course-goal reflection on the course overview | Capture what the learner wants to improve in speaking; keep this separate from the goal of the talk being planned |
 | First step; audience Q3–Q5 | 02; Blueprint 1–4 | Audience, prior knowledge, motivation, occasion and constraints; distinguish known facts from assumptions |
 | Goal Q6; core message Q7–Q9 | 03–04; Blueprint 5–9 | Separate topic, goal, message and significance; retain evidence boundary |
 | Half-Life Your Message; Q8 | 04; four saved practice rounds | Preserve 60/30/15/8 as discovery, add reflection and safeguards against slogan-making |
@@ -122,7 +122,7 @@ This table is the actual synthesis step: source concepts are mapped into origina
 | Practice and feedback; Q23–Q24 | 15; Blueprint 21–22 | Timed rehearsal, audience-matched observers and behaviour-specific feedback |
 | Stage and nerves; Q25 | 16; Blueprint 4, 24 | Preparation and recovery; evidence-informed, non-clinical anxiety guidance |
 | Q&A; Q26 | 17; Blueprint 23 | Listen, classify, clarify, answer from evidence and mark unknowns |
-| My Talk Plan (25 numbered prompts, covering Q2–Q26) | 27-field Artico Blueprint | Preserve the cumulative project idea while expanding it for non-research talks, ethics, accessibility, acknowledgements and revision; Q1 course goals remain in Lesson 01 reflection |
+| My Talk Plan (25 numbered prompts, covering Q2–Q26) | 27-field Artico Blueprint | Preserve the cumulative project idea while expanding it for non-research talks, ethics, accessibility, acknowledgements and revision; Q1 course goals are saved separately on the course overview, not mixed into the talk blueprint |
 
 Artico adds general-purpose speech genres, listening and ethical argument, chart/statistical integrity, accessibility, context-specific case studies, and an explicit feedback rubric. Those additions come from the broader public-speaking curriculum, Stanford guidance, empirical research and standards—not from assuming that the iBiology course alone covers every presentation type.
 

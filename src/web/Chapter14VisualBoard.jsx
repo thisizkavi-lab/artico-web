@@ -5,9 +5,6 @@ import './chapter14-visual.css'
 // Chapter 14 is a picture dictionary: the labels belong on the pictures,
 // not in a second vocabulary table beneath them. English always stays visible;
 // 日本語 adds a compact translation immediately below each English word.
-const married = 'M'
-const divorce = 'D'
-
 const familyNodes = [
   [330, 28, 'grandfather', '祖父', 'man'],
   [465, 28, 'grandmother', '祖母', 'woman'],
@@ -42,7 +39,7 @@ const familyHearts = [[398,62,'♥'],[768,62,'♥'],[548,219,'♥'],[290,373,'�
 
 const relatives = [
   ['parents','両親'], ['children','子どもたち'], ['siblings','兄弟姉妹'],
-  ['grandparents','祖父母'], ['grandchildren','孫たち'], ['spouse','配偶者'],
+  ['grandparents','祖父母'], ['grandchildren','孫たち'], ['spouse','配偶者'], ['non-blood relative','血縁のない親族'],
   ['father-in-law','義父'], ['mother-in-law','義母'], ['brother-in-law','義兄／義弟'],
   ['sister-in-law','義姉／義妹'], ['son-in-law','娘の夫'], ['daughter-in-law','息子の妻'],
 ]
@@ -68,7 +65,7 @@ const ageTerms = [
   ['adults','大人','🧑👩'],['senior citizens','高齢者','👵👴'],
 ]
 const stepTerms = [
-  ['stepparent','継親'],['stepmother / stepmom','継母／お母さん'],['stepfather / stepdad','継父／お父さん'],
+  ['stepparent','継親'],['stepmother / stepmom','継母／継母の親しい呼び方'],['stepfather / stepdad','継父／継父の親しい呼び方'],
   ['stepbrother','義理の兄弟（継親の子）'],['stepsister','義理の姉妹（継親の子）'],
   ['half-brother','異父兄弟／異母兄弟'],['half-sister','異父姉妹／異母姉妹'],
   ['ex-husband','元夫'],['ex-wife','元妻'],
@@ -223,6 +220,9 @@ function RelationshipOverview({ language, onSpeak }) {
       </div>
       <Board number="14.5" en="GROWING UP" ja="成長と年齢" language={language} tone="red">
         <PictureGrid terms={ageTerms} language={language} onSpeak={onSpeak} tone="red"/>
+        <div className="ar-f14-age-extras">
+          {[['girl','女の子'],['boy','男の子'],['woman','女性'],['man','男性'],['older adult','高齢の成人']].map(([en,ja]) => <Word key={en} en={en} ja={ja} language={language} onSpeak={onSpeak} className="ar-f14-chip" />)}
+        </div>
         <p className="ar-f14-hint">{language === 'ja'
           ? '英語の child は「子ども」のほか、親との関係を表すときには成人した息子・娘にも使います。'
           : 'Child can mean a young person, or someone’s son or daughter at any age.'}</p>

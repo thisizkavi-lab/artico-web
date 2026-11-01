@@ -25,6 +25,7 @@ import './learning-flow.css'
 import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
 import { conversationSide, groupConversationScenes } from './conversationLayout'
 import { chapterPhraseIllustrations } from './chapterPhraseIllustrations'
+import { sectionPhraseIds, sectionPhraseArtwork } from './phraseSceneData'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -375,12 +376,14 @@ function Study({ audioProps, focusedId }) {
           {lessonId === '03'
             ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
             : lessonId === '04'
-              ? <ChapterPhraseStudySection section={section} audioProps={audioProps} focusedId={focusedId} />
+              ? <ChapterPhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
               : lessonId === '05'
                 ? <Chapter05PhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
                 : ['06', '07', '08', '09', '10'].includes(lessonId)
                   ? <ChapterIllustratedPhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />
-                  : (lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
+                  : <>
+                    {Number(lessonId) >= 11 && <PhraseSceneBoard section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />}
+                    {(lessonId === '02' ? section.blocks : groupConversationScenes(section.blocks)).map((block, blockIndex) => {
             if (block.type === 'source')
               return (
                 <SourceContent
@@ -388,6 +391,7 @@ function Study({ audioProps, focusedId }) {
                   block={block.source}
                   audioProps={audioProps}
                   focusedId={focusedId}
+                  examples={Number(lessonId) < 11 || !sectionPhraseIds(section, introductionById).length}
                 />
               )
             if (block.type === 'diagram') return <Diagram key={blockIndex} type={block.diagram} />
@@ -531,10 +535,76 @@ function Study({ audioProps, focusedId }) {
                 ))}
               </div>
             )
-          })}
+          })}</>}
         </section>
       ))}
     </div>
+  )
+}
+
+
+/**
+ * One visual phrase board for Chapters 04–96. The illustration occupies the
+ * full upper panel; every anchored expression gets a separate audio pill below.
+ * Chapters 01–03 intentionally never render this component.
+ */
+function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illustrationOverride, preferredIds }) {
+  const { byId, id: chapterId } = useLesson()
+  const { language } = useLanguage()
+  const allIds = sectionPhraseIds(section, byId, preferredIds)
+  // Early social-fluency lessons teach complete expressions here, not isolated
+  // grammar fragments. Vocabulary-led later chapters keep their word cards.
+  const hasExpressions = allIds.some((id) => byId[id]?.kind !== 'word')
+  const ids = Number(chapterId) <= 10 && hasExpressions
+    ? allIds.filter((id) => byId[id]?.kind !== 'word')
+    : allIds
+  const illustration = sectionPhraseArtwork(section, sectionIndex, chapterId, illustrationOverride)
+  const files = [...new Set([illustration?.file, illustration?.fallbackFile].filter(Boolean))]
+  const [attempt, setAttempt] = useState(0)
+  if (!ids.length) return null
+
+  return (
+    <section className="ar-unified-phrase-board" aria-label={language === 'ja' ? 'イラストとフレーズ' : 'Illustration and phrases'}>
+      <div className="ar-unified-phrase-stage">
+        {files[attempt] ? (
+          <img
+            className="ar-unified-phrase-image"
+            src={art(files[attempt])}
+            alt={illustration?.alt || section.title}
+            width="1774"
+            height="887"
+            loading="lazy"
+            onError={() => setAttempt((current) => current + 1)}
+          />
+        ) : (
+          <div className="ar-unified-phrase-placeholder" role="img"
+            aria-label={language === 'ja' ? 'イラストは準備中です' : 'Illustration coming soon'}>
+            <span className="ar-unified-placeholder-icon" aria-hidden="true">
+              <CurriculumIcon name={chapterIcon(chapterId)} size={48} />
+            </span>
+            <span className="ar-unified-placeholder-label">
+              {language === 'ja' ? 'イラストは準備中です' : 'Illustration coming soon'}
+            </span>
+          </div>
+        )}
+      </div>
+      <div className="ar-unified-phrase-pills"
+        aria-label={language === 'ja' ? 'このセクションで使う表現' : 'Phrases in this section'}>
+        {ids.map((id) => {
+          const item = byId[id]
+          return (
+            <div key={id} id={`study-${id}`} data-phrase-id={id} tabIndex={-1}
+              className={`ar-unified-phrase-pill${focusedId === id ? ' is-focused' : ''}`}>
+              <span className="ar-unified-phrase-copy">
+                <span lang="en">{item.en}</span>
+                {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
+              </span>
+              <PhraseAudio item={item} {...audioProps} />
+            </div>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 
@@ -572,45 +642,15 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
     section={section} sectionIndex={sectionIndex} audioProps={audioProps}
     focusedId={focusedId} illustrationOverride={chapter05PhraseIllustrations[sectionIndex]}
   />
-  const illustration = chapter05PhraseIllustrations[sectionIndex] ?? chapter05PhraseIllustrations[0]
-  const phraseIds = (table.source.phraseCells ?? []).map((row) => row[0]).filter(Boolean)
+  const phraseIds = (table.source.phraseCells ?? []).map((row) => row.find(Boolean)).filter(Boolean)
   return (
     <div className="ar-phrase-study ar-ch05-phrase-study">
       {intro && <SourceContent block={intro.source} audioProps={audioProps} focusedId={focusedId} examples={false} />}
-      <div className="ar-ch05-phrase-card">
-        <div className="ar-ch05-illustration">
-          <img
-            src={art(illustration.file)}
-            alt={illustration.alt}
-            width="1774"
-            height="887"
-            loading="lazy"
-            onError={(event) => {
-              if (!conversation.art || event.currentTarget.dataset.fallback === 'true') return
-              event.currentTarget.dataset.fallback = 'true'
-              event.currentTarget.src = art(conversation.art)
-            }}
-          />
-        </div>
-        <div
-          className="ar-ch05-phrase-cloud"
-          aria-label={language === 'ja' ? 'このセクションで学ぶ表現' : 'Phrases in this section'}
-        >
-          {phraseIds.map((id) => {
-            const item = byId[id]
-            if (!item) return null
-            return (
-              <div className="ar-ch05-phrase-chip" key={id}>
-                <span className="ar-phrase-chip-copy">
-                  <span lang="en">{item.en}</span>
-                  {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
-                </span>
-                <PhraseAudio item={item} {...audioProps} />
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <PhraseSceneBoard
+        section={section} sectionIndex={sectionIndex}
+        preferredIds={phraseIds} illustrationOverride={chapter05PhraseIllustrations[sectionIndex]}
+        audioProps={audioProps} focusedId={focusedId}
+      />
       <section className="ar-phrase-table">
         <h3>{language === 'ja' ? '使えるフレーズ' : 'Useful phrases'}</h3>
         <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
@@ -687,58 +727,18 @@ function ChapterPhraseConversation({ block, audioProps, conversationIndex }) {
 }
 
 function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProps, focusedId, illustrationOverride }) {
-  const { byId, SourceContent } = useLesson()
-  const { language } = useLanguage()
-  const chapterId = section.id.slice(0, 2)
-  const illustration = illustrationOverride ?? chapterPhraseIllustrations[chapterId]?.[sectionIndex]
+  const { SourceContent } = useLesson()
   const leadBlock = section.blocks[0]?.type === 'source' && section.blocks[0].source.type === 'explanation'
     ? section.blocks[0]
     : null
-  const phraseIds = [...new Set(section.blocks.flatMap((block) =>
-    block.type === 'source' ? (block.source.phraseIds ?? []) : [],
-  ))].filter((id) => byId[id]?.section === section.id && !id.includes('-line'))
-  const fallbackFile = illustration?.fallbackFile ?? section.blocks.find((block) => block.type === 'conversation')?.art
   let conversationIndex = 0
   return (
     <div className="ar-phrase-study ar-illustrated-phrase-study">
       {leadBlock && (
         <SourceContent block={leadBlock.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
       )}
-      {illustration && (
-        <div className="ar-illustrated-phrase-card">
-          <div className="ar-illustrated-illustration">
-            <img
-              src={art(illustration.file)}
-              alt={illustration.alt}
-              width="1774"
-              height="887"
-              loading="lazy"
-              onError={(event) => {
-                if (!fallbackFile || event.currentTarget.dataset.fallback === 'true') return
-                event.currentTarget.dataset.fallback = 'true'
-                event.currentTarget.src = art(fallbackFile)
-              }}
-            />
-          </div>
-          <div
-            className="ar-illustrated-phrase-cloud"
-            aria-label={language === 'ja' ? 'このセクションで学ぶ表現' : 'Phrases in this section'}
-          >
-            {phraseIds.map((id) => {
-              const item = byId[id]
-              return (
-                <div className="ar-illustrated-phrase-chip" key={id}>
-                  <span className="ar-phrase-chip-copy">
-                    <span lang="en">{item.en}</span>
-                    {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
-                  </span>
-                  <PhraseAudio item={item} {...audioProps} />
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
+      <PhraseSceneBoard section={section} sectionIndex={sectionIndex}
+        illustrationOverride={illustrationOverride} audioProps={audioProps} focusedId={focusedId} />
       {section.blocks.filter((block) => block !== leadBlock).map((block) => {
         if (block.type === 'source')
           return (
@@ -765,7 +765,7 @@ function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProp
   )
 }
 
-function ChapterPhraseStudySection({ section, audioProps, focusedId }) {
+function ChapterPhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
   const { byId, SourceContent } = useLesson()
   const { language } = useLanguage()
   const intro = section.blocks.find((block) => block.type === 'source' && block.source.type === 'explanation')
@@ -777,40 +777,16 @@ function ChapterPhraseStudySection({ section, audioProps, focusedId }) {
     block !== intro,
   )
   if (!table || !conversation) return <ChapterIllustratedPhraseStudySection
-    section={section} sectionIndex={Number(section.id.split('-')[2]) || 0}
+    section={section} sectionIndex={sectionIndex}
     audioProps={audioProps} focusedId={focusedId}
   />
-  // Keep the illustration panel calm. The full phrase set remains in the table.
-  const phraseIds = (table.source.phraseCells ?? []).map((row) => row.find(Boolean)).filter(Boolean).slice(0, 5)
+  const phraseIds = (table.source.phraseCells ?? []).map((row) => row.find(Boolean)).filter(Boolean)
   const speakers = [...new Set(conversation.turns.map((turn) => turn.speaker))]
-  const portraits = conversation.turns.slice(0, 2).map((turn) => turn.portrait)
   return (
     <div className="ar-phrase-study">
       {intro && <SourceContent block={intro.source} audioProps={audioProps} focusedId={focusedId} examples={false} />}
-      <div className="ar-phrase-scene">
-        <div className="ar-phrase-scene-art">
-          <img src={art(conversation.art)} alt={conversation.alt} width="560" height="280" loading="lazy" />
-        </div>
-        <div className="ar-phrase-bubbles" aria-label={language === 'ja' ? 'この場面で使える表現' : 'Phrases you can use'}>
-          {phraseIds.map((id, index) => {
-            const item = byId[id]
-            if (!item) return null
-            const portrait = portraits[index % Math.max(1, portraits.length)]
-            return (
-              <div className={`ar-phrase-bubble-row ${index % 2 ? 'is-right' : 'is-left'}`} key={id}>
-                {portrait && <img className="ar-phrase-bubble-avatar" src={art(portrait)} alt="" width="28" height="28" />}
-                <div className="ar-phrase-bubble">
-                  <span className="ar-bubble-copy">
-                    <p lang="en">{item.en}</p>
-                    {language === 'ja' && item.ja && <small className="ar-translation-inline" lang="ja">{item.ja}</small>}
-                  </span>
-                  <PhraseAudio item={item} {...audioProps} />
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <PhraseSceneBoard section={section} sectionIndex={sectionIndex}
+        preferredIds={phraseIds} audioProps={audioProps} focusedId={focusedId} />
       <section className="ar-phrase-table">
         <h3>{language === 'ja' ? '使えるフレーズ' : 'Useful phrases'}</h3>
         <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />

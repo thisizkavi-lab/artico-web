@@ -42,34 +42,27 @@ function CaseSwitcher({caseId,onChange}) {
   </label>
 }
 function VisualCompare() {
-  const [showBetter, setShowBetter] = useState(true)
-  return <section className="ps-visual" aria-label="Slide design comparison">
-    <div className="ps-visual-head">
-      <div><span className="ps-kicker">EXAMINE THE SLIDE</span><h3>Same evidence. Different explanation.</h3></div>
-      <div className="ps-switch" role="group" aria-label="Select slide design">
-        <button className={!showBetter?'active':''} onClick={()=>setShowBetter(false)} aria-pressed={!showBetter}>Before</button>
-        <button className={showBetter?'active':''} onClick={()=>setShowBetter(true)} aria-pressed={showBetter}>After</button>
-      </div>
-    </div>
-    {showBetter ? <div className="ps-slide ps-slide-good">
-      <p className="ps-slide-label">ILLUSTRATIVE DATA · completion funnel</p>
-      <h4>Most trial users leave before account verification.</h4>
-      <div className="ps-funnel">
-        {[[100,'Started'],[71,'Profile'],[43,'Verification'],[39,'Finished']].map(([value,label])=>
-          <div key={label}><span>{label}</span><div className="ps-bar-track"><i style={{width:value+'%'}} /></div><b>{value}%</b></div>)}
-      </div>
-      <small>Illustrative percentages; no real customer data. Same denominator: users who started.</small>
-    </div> : <div className="ps-slide ps-slide-bad">
-      <h4>RESULTS</h4><p>Users entered the interface, set up their account, went through identity verification, completed the necessary onboarding tasks, and we saw changes across multiple steps.</p>
-      <ul><li>Data and findings</li><li>Our success</li><li>Several observations</li><li>Details of each funnel stage</li></ul>
-      <small>No denominator, clear comparison or visual direction.</small>
-    </div>}
-    <p className="ps-annotation"><strong>Notice:</strong> {showBetter ? 'The title makes a claim. Direct labels and a common denominator let the viewer evaluate it. The speaker still needs to discuss missing data and causes.' : 'Listeners must read a paragraph while hearing the speaker. The audience cannot tell which result matters.'}</p>
-  </section>
+ const [showBetter,setShowBetter]=useState(true)
+ return <section className="ps-visual" aria-label="Slide design comparison">
+  <div className="ps-visual-head"><div><span className="ps-kicker">SAME SYNTHETIC DATA · DIFFERENT DESIGN</span><h3>Help the audience see the claim.</h3></div>
+   <div className="ps-switch" role="group" aria-label="Select slide design"><button className={!showBetter?'active':''} onClick={()=>setShowBetter(false)} aria-pressed={!showBetter}>Before</button><button className={showBetter?'active':''} onClick={()=>setShowBetter(true)} aria-pressed={showBetter}>After</button></div>
+  </div>
+  {showBetter?<div className="ps-slide ps-slide-good">
+    <p className="ps-slide-label">SYNTHETIC TRAINING DATA · NOT REAL CUSTOMER DATA</p><h4>Verification is where most users leave the example workflow.</h4>
+    <div className="ps-funnel">{[[100,'Started'],[71,'Profile'],[43,'Verification'],[39,'Finished']].map(([value,label])=><div key={label}><span>{label}</span><div className="ps-bar-track"><i style={{width:value+'%'}}/></div><b>{value}%</b></div>)}</div>
+    <small>Illustrative percentages; common denominator is 100 users who started. This chart shows where drop-off occurs, not why.</small>
+   </div>:<div className="ps-slide ps-slide-bad">
+    <p className="ps-slide-label">RESULTS · SAME SYNTHETIC DATA</p><h4>RESULTS</h4>
+    <p>100 users started. 71 reached profile setup. 43 reached verification. 39 finished.</p>
+    <ul><li>Started: 100</li><li>Profile: 71</li><li>Verification: 43</li><li>Finished: 39</li></ul>
+    <small>The values are present, but the slide does not show the main comparison clearly.</small>
+   </div>}
+  <p className="ps-annotation"><strong>Notice:</strong> {showBetter?'The title states a defensible observation. The bars make the comparison visible. The speaker must still avoid claiming why users leave without further evidence.':'The same numbers are listed, but the audience must reconstruct the pattern while listening.'}</p>
+ </section>
 }
 function GraphExample() {
   return <section className="ps-chart" aria-label="Illustrative protein conformations bar chart">
-    <span className="ps-kicker">ILLUSTRATIVE SCIENTIFIC FIGURE · NOT EXPERIMENTAL DATA</span>
+    <span className="ps-kicker">SYNTHETIC TRAINING DATA · NOT EXPERIMENTAL DATA</span>
     <h3>Share of 100 simulated snapshots</h3>
     <div className="ps-bars">
       {[[62,'A'],[27,'B'],[11,'C']].map(([value,label])=><div className="ps-bar-col" key={label}><span>{value}%</span><div style={{height: value/62*165+'px'}} /><b>Conformation {label}</b></div>)}
@@ -210,19 +203,19 @@ function Overview({learning,update,caseId,setCaseId}) {
       <small>Not a confidence course. A course in audience, explanation, evidence, delivery and response.</small>
       <div className="ps-actions"><a className="ps-primary" href={pathFor('01')}>Start the course <span>→</span></a>
         <a className="ps-secondary" href={root+'/blueprint'}>Open your blueprint</a></div>
-      <div className="ps-cover-foot"><span>15 focused lessons</span><span>6 worked cases</span><span>{completed} lessons self-marked complete</span></div>
+      <div className="ps-cover-foot"><span>18 focused lessons</span><span>8 worked cases</span><span>{completed} lessons self-marked complete</span></div>
     </header>
     <section className="ps-principles" aria-label="The core framework">
       <span className="ps-kicker">THE WHOLE PICTURE</span>
       <h2>A talk is a <Mark>design problem.</Mark></h2>
-      <p>First decide what listeners need. Then choose the explanation and evidence. Deliver it, notice what happened, and improve.</p>
-      <div className="ps-process">{[['01','FRAME','Who, why, what changes?'],['02','BUILD','What makes the idea understandable?'],['03','DELIVER','How will people follow it live?'],['04','RESPOND & REVISE','What changed for the audience?']].map(([n,t,d])=><div key={n}><small>{n}</small><strong>{t}</strong><span>{d}</span></div>)}</div>
-      <p className="ps-annotation">Same principle. Different task: a research talk is judged by evidence and clarity; a toast by its sincerity and fit to the occasion.</p>
+      <p>Frame the situation, focus the message, build the reasoning, make evidence legible, deliver and respond, then revise. The process is iterative—not a fixed speech formula.</p>
+      <div className="ps-process">{[['01','FRAME','Audience, occasion and goal'],['02','FOCUS','One claim and its evidence boundary'],['03','ARCHITECT','A logical path through the ideas'],['04','RENDER','Words, visuals and accessible evidence'],['05','DELIVER','Voice, interaction and Q&A'],['06','LEARN','Practice, feedback and revision']].map(([n,t,d])=><div key={n}><small>{n}</small><strong>{t}</strong><span>{d}</span></div>)}</div>
+      <p className="ps-annotation">The goal changes the form. A scientific talk must let people judge evidence; a lesson must help people apply an idea; a briefing must support a decision; a toast must honour a person.</p>
     </section>
     <section className="ps-syllabus" id="syllabus"><div className="ps-heading"><div><span className="ps-kicker">STUDY → NOTICE → PRACTISE → APPLY</span><h2>The course</h2></div><BlueprintStatus learning={learning} caseId={caseId}/></div>
     {parts.map(part=>{const group=lessons.filter(l=>l.part===part);return <div key={part} className="ps-unit"><h3>{part}</h3><div className="ps-unit-list">{group.map(l=><a href={pathFor(l.id)} className="ps-unit-row" key={l.id}><span>{l.id}</span><div><b>{l.title}</b><small>{l.goal}</small></div><i aria-hidden="true">{learning.responses?.[doneKey(l.id)]==='yes'?'✓':'↗'}</i></a>)}</div></div>})}
     </section>
-    <section className="ps-case-teaser"><span className="ps-kicker">SAME SKILL · DIFFERENT SITUATIONS</span><h2>What changes in a different room?</h2><p>Read complete examples, not a list of presentation formulas. Every case includes audience, goal, opening, structure, evidence, a limitation, Q&A, and an improved version.</p><a href={root+'/cases'} className="ps-secondary">Explore six worked presentations →</a></section>
+    <section className="ps-case-teaser"><span className="ps-kicker">SAME SKILL · DIFFERENT SITUATIONS</span><h2>What changes in a different room?</h2><p>Read complete examples, not a list of presentation formulas. Every case includes audience, purpose, message, structure, opening, evidence, visual plan, limitations, Q&A and a before/after revision.</p><a href={root+'/cases'} className="ps-secondary">Explore eight worked presentations →</a></section>
     <section className="ps-blueprint-teaser"><span className="ps-kicker">YOUR CUMULATIVE PROJECT</span><h2>One presentation, built as you learn.</h2><CaseSwitcher caseId={caseId} onChange={setCaseId}/><p>The blueprint keeps decisions and practice notes on this device. Switch contexts to keep separate drafts. No account or audio upload is required.</p><a href={root+'/blueprint'} className="ps-primary">Edit presentation blueprint →</a></section>
     <PhraseReference/>
     <ResourceLinks/>
@@ -233,7 +226,7 @@ function CasesView({learning,caseId,setCaseId}) {
  const c = cases.find(c=>c.id===selected) || cases[0]
  return <div className="ps-page aw-page">
  <nav className="ps-crumb"><a href={root}>← Course</a><span>/</span>Case library</nav>
- <header className="ps-intro"><span className="ps-kicker">CROSS-CONTEXT LIBRARY</span><h1>Six ways to speak well.</h1><p>The communication principles stay the same. The evidence, structure, language and success criteria change.</p></header>
+ <header className="ps-intro"><span className="ps-kicker">CROSS-CONTEXT LIBRARY</span><h1>Eight presentation situations.</h1><p>The communication principles stay the same. The evidence, structure, language and success criteria change.</p></header>
  <div className="ps-case-picks" role="group" aria-label="Select a presentation example">{cases.map(item=><button key={item.id} className={selected===item.id?'active':''} onClick={()=>setSelected(item.id)}>{item.type}</button>)}</div>
  <CaseDetails item={c}/>
  <section className="ps-matrix"><span className="ps-kicker">12 COMMON OCCASIONS</span><h2>Choose the structure for the job.</h2><div className="ps-matrix-scroll"><table><thead><tr><th>Situation</th><th>Audience</th><th>Job</th><th>Possible structure</th><th>Watch for</th></tr></thead><tbody>{situations.map(([s,a,j,st,w])=><tr key={s}><th>{s}</th><td>{a}</td><td>{j}</td><td>{st}</td><td>{w}</td></tr>)}</tbody></table></div></section>
@@ -253,7 +246,7 @@ function Blueprint({learning,update,caseId,setCaseId}) {
   <div className="ps-blueprint-tools"><CaseSwitcher caseId={caseId} onChange={setCaseId}/><BlueprintStatus learning={learning} caseId={caseId}/>
     <a className="ps-secondary" download={'artico-presentation-'+caseId+'.md'} href={'data:text/markdown;charset=utf-8,'+encodeURIComponent(download)}>Export Markdown ↓</a>
     <button className="ps-secondary" type="button" onClick={()=>window.print()}>Print</button></div>
-  <div className="ps-blueprint-grid">{fields.map(([key,label],index)=><section className="ps-field" key={key}><span className="ps-field-index">{String(index+1).padStart(2,'0')}</span><SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,key)} label={label} rows={3} placeholder={index===0?'Scientific talk, team update, product demonstration…':index===3?'One complete, defensible takeaway sentence…':'What will this audience need to know or do?'} /></section>)}</div>
+  <div className="ps-blueprint-grid">{fields.map(([key,label],index)=><section className="ps-field" key={key}><span className="ps-field-index">{String(index+1).padStart(2,'0')}</span><SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,key)} label={label} rows={3} placeholder={key==='occasion'?'Scientific talk, team update, product demonstration…':key==='message'?'One complete, defensible takeaway sentence…':key==='soWhat'?'Why should this audience care?':'Write a first working version…'} /></section>)}</div>
   <div className="ps-next"><a href={pathFor('01')}>Return to lessons →</a><a href={root+'/cases'}>See worked examples</a></div>
  </div>
 }
@@ -271,6 +264,8 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
         {mode==='practice' ? <>
          <section className="ps-lesson-section"><span className="ps-kicker">YOUR TASK</span><h2>Try it in your own words.</h2><p className="ps-practice-prompt">{lesson.practice}</p><ul className="ps-checks">{lesson.criteria.map(t=><li key={t}>{t}</li>)}</ul><SavedText learning={learning} update={update} responseKey={noteKey(lesson.id)} label="Draft, outline, or reflection" placeholder="A short outline is enough. Say the full version aloud." /></section>
          <Decision lesson={lesson}/>
+         {lesson.id==='04' && <HalfLifeLab learning={learning} update={update}/>}
+         {lesson.id==='15' && <FeedbackRubric/>}
          <section className="ps-speak"><span className="ps-kicker">SPEAK IT ALOUD</span><h2>Deliver, then revise.</h2><p>{lesson.say}</p><p>Try a first version. Identify one thing your listener could not follow, revise, and speak again. This page does not pretend to assess your voice or speaking ability.</p></section>
          <section className="ps-blueprint-inline"><h3>Carry this into your blueprint.</h3><CaseSwitcher caseId={caseId} onChange={setCaseId}/><a href={root+'/blueprint'}>Open editable talk plan →</a></section>
          <button className={'ps-complete '+(completed?'is-complete':'')} onClick={()=>update(prev=>({...prev,responses:{...prev.responses,[doneKey(lesson.id)]:completed?'':'yes'}}))}>{completed?'✓ Marked complete · undo':'Mark complete after practising'}</button>
@@ -282,9 +277,11 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
             <p className="ps-annotation">{comparison==='before'?'What does this fail to help the listener do? Try improving it before switching.':'Notice the more specific audience task, explanation, or evidence boundary.'}</p>
           </section>
           {lesson.id==='02' && <AudienceStudio/>}
-          {lesson.id==='08' && <GraphExample/>}
-          {lesson.id==='09' && <VisualCompare/>}
-          {lesson.id==='13' && <QuestionLab/>}
+          {lesson.id==='04' && <HalfLifeLab learning={learning} update={update}/>}
+          {lesson.id==='10' && <VisualCompare/>}
+          {lesson.id==='11' && <GraphExample/>}
+          {lesson.id==='13' && <EthicsLab/>}
+          {lesson.id==='17' && <QuestionLab/>}
           <section className="ps-transfer"><span className="ps-kicker">TRANSFER</span><h2>Same principle, different context.</h2><p>{lesson.contrast}</p></section>
           <section className="ps-phrase"><span className="ps-kicker">SAY IT NATURALLY</span><p>“{lesson.say}”</p></section>
           <Decision lesson={lesson}/>

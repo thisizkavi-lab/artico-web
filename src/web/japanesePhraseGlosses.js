@@ -2,6 +2,7 @@
 import reviewedWords from './vocabularyJapaneseOverrides.json'
 import commonWords from './vocabularyJapaneseCommon.json'
 import { moreJapaneseGlosses } from './japanesePhraseGlosses07to10.js'
+import { openingJapaneseGlosses } from './japanesePhraseGlosses01to03.js'
 // A gloss is a natural equivalent in context, not a word-for-word translation.
 export const japanesePhraseGlosses = {
   "04": {
@@ -137,7 +138,7 @@ export function japaneseGlossFor(item, lessonId) {
   if (!item || !item.en) return '';
   if (typeof item.ja === 'string' && item.ja.trim()) return item.ja.trim();
   const id = String(lessonId).padStart(2,'0');
-  const map = japanesePhraseGlosses[id] ?? moreJapaneseGlosses[id];
+  const map = openingJapaneseGlosses[id] ?? japanesePhraseGlosses[id] ?? moreJapaneseGlosses[id];
   if (map?.[item.en]) return map[item.en];
   // The existing local vocabulary dictionary supplies reliable short noun/word
   // equivalents throughout Chapters 01–96. Exclude common polysemous words:

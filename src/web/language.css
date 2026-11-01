@@ -1,22 +1,32 @@
 /* Compact segmented language choice, shared by top bar and profile. */
 .aw-language { display:inline-flex; align-items:center; flex-shrink:0; }
 .aw-language-toggle {
-  display:inline-flex; align-items:center; gap:3px;
-  padding:4px; background:#fff; border:1px solid #d8e2f1;
+  position:relative; isolation:isolate;
+  display:inline-grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:center;
+  width:132px; padding:3px; background:#edf1f7; border:1px solid #dfe5ef;
   border-radius:999px;
 }
+.aw-language-thumb {
+  position:absolute; z-index:-1; top:3px; bottom:3px; left:3px;
+  width:calc((100% - 6px) / 2); border-radius:999px;
+  background:#315fca; box-shadow:0 1px 3px #234c9e24;
+  transition:transform 220ms cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+.aw-language-toggle[data-language="ja"] .aw-language-thumb { transform:translateX(100%); }
 .aw-language-option {
   display:grid; place-items:center;
-  min-width:47px; min-height:36px; padding:7px 14px;
+  min-width:0; min-height:34px; padding:7px 9px;
   border:0; border-radius:999px; background:transparent;
   color:#64748b; font:inherit; font-size:13px;
-  font-weight:700; line-height:1.15; white-space:nowrap; cursor:pointer;
+  font-weight:600; line-height:1.15; white-space:nowrap; cursor:pointer;
+  transition:color 160ms ease;
 }
 .aw-language-option[aria-pressed="true"] {
-  background:#285bcc; color:#fff;
+  color:#fff;
 }
 .aw-language-option:hover:not([aria-pressed="true"]) {
-  background:#eff4ff; color:#285bcc;
+  color:#285bcc;
 }
 .aw-language-option:focus-visible { outline:2px solid #285bcc; outline-offset:3px; }
 .aw-language-profile { display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin:24px 0 8px; }
@@ -36,10 +46,13 @@
 @media(max-width: 600px) {
   .aw-topbar { gap: 9px; }
   .aw-topbar .aw-language { margin-left: auto; }
-  .aw-language-toggle { padding:3px; gap:2px; }
-  .aw-language-option { min-height:32px; min-width:41px; padding:6px 11px; font-size:12px; }
+  .aw-language-toggle { width:116px; }
+  .aw-language-option { min-height:32px; padding:6px 8px; font-size:12px; }
   [data-language="ja"] .ip-section-heading h2 { font-size: 18px; }
   [data-language="ja"] .ip-prose { font-size: 14px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .aw-language-thumb, .aw-language-option { transition:none; }
 }
 
 .aw-app[data-language="ja"] .aw-heading h1 { font-size: clamp(25px, 2.9vw, 36px); }

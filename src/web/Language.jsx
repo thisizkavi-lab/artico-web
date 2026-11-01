@@ -41,7 +41,8 @@ export function LanguageSelector({ profile = false }) {
   return (
     <div className={`aw-language ${profile ? 'aw-language-profile' : ''}`}>
       {profile && <span className="aw-language-label">{t('Explanation language')}</span>}
-      <div className="aw-language-toggle" role="group" aria-label={t('Explanation language')}>
+      <div className="aw-language-toggle" data-language={language} role="group" aria-label={t('Explanation language')}>
+        <span className="aw-language-thumb" aria-hidden="true" />
         {[...languages].reverse().map((item) => (
           <button
             key={item.id}

@@ -15,6 +15,20 @@ const icons = {
 }
 export const asset = (file) => `${import.meta.env.BASE_URL}assets/figma/${file}`
 export function Icon({ name, className = '' }) {
+  if (name === 'user' || name === 'progress') return (
+    <svg className={`aw-icon ${className}`} width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {name === 'user' ? <>
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="9" r="2.7" />
+        <path d="M6.8 19.2v-1.1a5.2 5.2 0 0 1 10.4 0v1.1" />
+      </> : <>
+        <rect x="3.5" y="13.5" width="3.5" height="6.5" rx="1.1" />
+        <rect x="10.25" y="9" width="3.5" height="11" rx="1.1" />
+        <rect x="17" y="4" width="3.5" height="16" rx="1.1" />
+      </>}
+    </svg>
+  )
   return (
     <img
       className={`aw-icon ${className}`}

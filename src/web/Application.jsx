@@ -5,6 +5,7 @@ import { applicationTracks, applicationTrack, applicationResponseKey } from './a
 import WritingStudio from './WritingStudio'
 import JobsCourse from './JobsCourse'
 import AcademicCourse from './AcademicCourse'
+import PresentationCourse from './PresentationCourse'
 import SmallTalkCourse from './SmallTalkCourse'
 import './application.css'
 
@@ -120,6 +121,7 @@ export default function Application({ route, learning, update }) {
   if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />
   if (route.id === 'storytelling') return <SmallTalkCourse route={{ ...route, id:'smalltalk', lesson:null }} learning={learning} update={update} />;
   if (route.id === 'academic') return <AcademicCourse learning={learning} update={update} />
+  if (route.id === 'presentations') return <PresentationCourse route={route} learning={learning} update={update} />
   const track = applicationTrack(route.id)
   if (!track) return <TrackOverview language={language}/>
   return <TrackExercise key={track.id} track={track} language={language}

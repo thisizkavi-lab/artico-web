@@ -45,8 +45,10 @@ test('Chapters 06–10 have one distinct vector illustration for every Study sec
     }
   }
   const renderer = readFileSync(new URL('../src/web/LessonExperience.jsx', import.meta.url), 'utf8')
-  assert.ok(renderer.includes('ar-illustrated-phrase-cloud'))
-  assert.ok(renderer.includes("byId[id]?.section === section.id"))
+  const board = renderer.slice(renderer.indexOf('function PhraseSceneBoard'), renderer.indexOf('const chapter05PhraseIllustrations'))
+  assert.ok(board.includes('ar-unified-phrase-stage'), 'all later chapters use one full-width illustration stage')
+  assert.ok(board.includes('ar-unified-phrase-pills'), 'all later chapters use the shared pill set')
+  assert.ok(board.includes('PhraseAudio'), 'each expression keeps its own audio control')
 })
 
 test('all 96 chapters preserve every source block, not only the opening dialogue', () => {
@@ -163,21 +165,19 @@ test('every shared practice item has exactly one Study anchor and a valid illust
   }
 })
 
-test('Chapter 05 uses four illustrated phrase-chip cards instead of alternating phrase chat bubbles', () => {
+test('Chapter 05 uses the unified illustrated pill board without chat-style phrase bubbles', () => {
   const source = readFileSync(new URL('../src/web/LessonExperience.jsx', import.meta.url), 'utf8')
   const start = source.indexOf('function Chapter05PhraseStudySection')
-  const end = source.indexOf('function ChapterPhraseStudySection', start)
+  const end = source.indexOf('function ChapterPhraseConversation', start)
   assert.ok(start >= 0 && end > start, 'Chapter 05 renderer exists')
   const component = source.slice(start, end)
-  const cardStart = component.indexOf('<div className="ar-ch05-phrase-card">')
-  const cardEnd = component.indexOf('<section className="ar-phrase-table">', cardStart)
-  assert.ok(cardStart >= 0 && cardEnd > cardStart, 'illustration and phrase card exists')
-  const card = component.slice(cardStart, cardEnd)
-  assert.ok(card.includes('ar-ch05-illustration'))
-  assert.ok(card.includes('ar-ch05-phrase-cloud'))
-  assert.ok(card.includes('PhraseAudio'))
-  assert.ok(!card.includes('ar-phrase-bubble-row'))
-  assert.ok(!card.includes('ar-phrase-bubble-avatar'))
+  assert.ok(component.includes('<PhraseSceneBoard'), 'shared illustration and phrase board is used')
+  assert.ok(component.includes('preferredIds={phraseIds}'), 'phrase order comes from the Chapter 05 teaching table')
+  assert.ok(!component.includes('ar-phrase-bubble-row'), 'no alternating chat layout for phrase cards')
+  const board = source.slice(source.indexOf('function PhraseSceneBoard'), source.indexOf('const chapter05PhraseIllustrations'))
+  assert.ok(board.includes('ar-unified-phrase-image'))
+  assert.ok(board.includes('ar-unified-phrase-pill'))
+  assert.ok(board.includes('PhraseAudio'))
   for (const file of [
     'ch05-01-likes-dislikes.png',
     'ch05-02-asking-opinions.png',

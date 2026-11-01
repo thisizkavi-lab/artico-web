@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 60 - Sports
+  WORD: bike (sports-context noun)
+  CONTEXTUAL_DEFINITION: A two-wheel road vehicle powered by a rider turning the pedals.
+  PEDAGOGICAL_ART_DIRECTOR: Make the pedal-powered cycle unmistakable and distinguish it from the motorized moped and motorcycle.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with functional parts
+  SYNONYM_GUARD: Show two wheels, a human-powered frame, chain, and pedals; no engine or motorbike body.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Ground two wheels at (73,124) and (232,124), radius 25; connect their hubs to a diamond frame and crank at (152,121); place saddle above x=130 and handlebar above the front fork at x=228; keep the entire bicycle inside x=38..268.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:bike" data-archetype="sports-bike-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bicycle-frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <linearGradient id="bicycle-seat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3D5F91"/><stop offset="1" stop-color="#263C70"/></linearGradient>
+    <radialGradient id="bicycle-halo"><stop stop-color="#FFF1B9" stop-opacity=".66"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="bicycle-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="161" rx="117" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="112" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M44 133 H260" stroke="#C4B9A7" stroke-width="1.2"/><circle cx="73" cy="122" r="29" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="4.2"/><circle cx="232" cy="122" r="29" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="4.2"/><circle cx="73" cy="122" r="23" fill="none" stroke="#9AA8B8" stroke-width="1.2"/><circle cx="232" cy="122" r="23" fill="none" stroke="#9AA8B8" stroke-width="1.2"/><path d="M73 99 V145 M50 122 H96 M232 99 V145 M209 122 H255" stroke="#CBD5E1" stroke-width=".8"/><circle cx="73" cy="122" r="3.4" fill="#5479AC"/><circle cx="232" cy="122" r="3.4" fill="#5479AC"/><path d="M73 122 L124 86 L152 122 L104 122 L73 122 M124 86 L165 86 L152 122 M165 86 L232 122" fill="none" stroke="url(#bicycle-frame)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M165 86 L181 69 M174 70 H194 M124 86 L118 69" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M108 68 Q126 63 137 69 L135 73 Q121 70 108 74 Z" fill="url(#bicycle-seat)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M181 69 L195 66 M194 66 L199 72 M194 66 L199 60" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><circle cx="152" cy="122" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="152" cy="122" r="3" fill="#5479AC"/><path d="M152 122 L168 133 M152 122 L139 111" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M168 133 H179 M139 111 H129" stroke="#5479AC" stroke-width="2.7" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#bicycle-shadow)"><path d="M48 84 Q48 75 57 75 H64 Q70 75 70 82 V88 Q70 94 64 94 H58 Q48 94 48 84 Z" fill="#F7DDA3" stroke="#C68A29" stroke-width="1"/><path d="M238 86 L251 80" stroke="#5479AC" stroke-width="3.3" stroke-linecap="round"/><path d="M51 98 L60 94 M243 98 L251 95" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M54 49 L60 44 M239 49 L245 44" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="103" cy="50" r="2.1" fill="#8EB0DE"/><circle cx="205" cy="48" r="2.1" fill="#A8D4A2"/><path d="M109 55 H125 M176 54 H188" stroke="#CBD5E1" stroke-width=".8"/><path d="M75 95 L80 101 M228 94 L223 101" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><circle cx="152" cy="101" r="2.2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="80" rx="106" ry="66" fill="url(#bicycle-halo)" opacity=".12"/><path d="M28 35 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

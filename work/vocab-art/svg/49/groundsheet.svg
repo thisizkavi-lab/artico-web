@@ -1,0 +1,18 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: groundsheet (Noun)
+  CONTEXTUAL_DEFINITION: A waterproof sheet spread on the ground beneath a tent to protect its floor from damp soil.
+  PEDAGOGICAL_ART_DIRECTOR: Reveal the waterproof sheet extending beneath the tent footprint, with rain and wet ground nearby.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole protective layer
+  SYNONYM_GUARD: Keep the sheet flat under the tent floor rather than suspended as an awning or used as a sleeping blanket.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Low tent side view, front flap lifted enough to reveal a blue waterproof groundsheet with broad margins over damp earth.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:groundsheet" data-archetype="shelter-layer">
+ <defs><style>:root{--c-bg-1:#E6EFEC;--c-bg-2:#C6D5CF;--c-surface:#896D53;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style><linearGradient id="gs-sky" x2="0" y2="1"><stop stop-color="#E6EFEC"/><stop offset="1" stop-color="#C6D5CF"/></linearGradient><linearGradient id="gs-cloth" x2="0" y2="1"><stop stop-color="#E8D6AE"/><stop offset="1" stop-color="#B78358"/></linearGradient><linearGradient id="gs-sheet" x2="0" y2="1"><stop stop-color="#79A9B1"/><stop offset="1" stop-color="#426E82"/></linearGradient><filter id="gs-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".25"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gs-sky)"/><path d="M0 123Q80 115 154 125T304 120V192H0Z" fill="#9CAE8B"/><path d="M0 145Q77 136 151 149T304 142V192H0Z" fill="#8F765D"/><path d="M0 171Q85 162 156 173T304 164V192H0Z" fill="#786950"/></g>
+ <g id="layer-context"><path d="M17 123L36 76L55 123ZM254 124L274 70L294 124Z" fill="#69816B"/><path d="M40 143Q82 132 122 143M183 145Q226 132 270 143" fill="none" stroke="#B8A184" stroke-width="1.2"/><path d="M28 52L34 62M77 40L80 52M228 48L224 59M278 43L274 55" stroke="#91B4BC" stroke-width="2" stroke-linecap="round" opacity=".65"/><ellipse cx="151" cy="158" rx="119" ry="7" fill="#263B3A" opacity=".18"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#gs-shadow)"><path d="M40 135L91 68L183 69L242 135Z" fill="url(#gs-cloth)" stroke="#715A45" stroke-width="2"/><path d="M91 68L140 134L183 69" fill="#BD8A5B" stroke="#765D45" stroke-width="1.4"/><path d="M40 135L140 134L242 135L269 151L150 157L22 150Z" fill="url(#gs-sheet)" stroke="#35596B" stroke-width="1.8"/><path d="M28 150L150 157L267 151" fill="none" stroke="#B7D3D3" stroke-width="1.4"/><path d="M89 105Q102 94 112 108L128 133H84Z" fill="#5B756D" opacity=".92"/><path d="M40 135L66 134M207 134L242 135" stroke="#EAE0C7" stroke-width="2"/><path d="M53 140L54 146M229 140L231 146" stroke="#E7C883" stroke-width="1.5"/></g>
+ <g id="layer-details"><path d="M35 151L47 152M64 153L75 154M205 155L216 154M241 153L254 152" stroke="#D6E5DF" stroke-width="1.2"/><circle cx="37" cy="117" r="2" fill="#A6C8CC"/><circle cx="273" cy="113" r="2.4" fill="#A6C8CC"/><path d="M28 143Q38 140 48 143M238 143Q250 139 263 143" fill="none" stroke="#59735F" stroke-width="1.2"/><path d="M109 76L121 90M119 74L131 88" stroke="#F1E1BD" stroke-width="1" opacity=".65"/><circle cx="152" cy="153" r="2" fill="#D9E8E3"/></g>
+ <g id="layer-lighting"><path d="M45 131L93 72L133 126" fill="none" stroke="#FFF8E7" stroke-width="1.8" opacity=".48"/><path d="M40 137L134 136" stroke="#E6EEF0" stroke-width="1.1" opacity=".55"/><path d="M24 21H280" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+</svg>

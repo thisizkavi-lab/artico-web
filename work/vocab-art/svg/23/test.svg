@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: test (Noun)
+  CONTEXTUAL_DEFINITION: A short classroom assessment used to check a learner's knowledge or ability.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: A short quiz paper and teacher checking a response, distinct from the more formal exam scene and from the seated action of taking an exam.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright classroom with board and floor.
+    - Context_Layer: Teacher's hand and small wall clock imply a brief in-class quiz.
+    - Focal_Layer: Single short quiz sheet with simple shapes and checked answers.
+    - Details_Layer: Pencil and small stack of quiz sheets.
+    - Lighting_Layer: Clean daylight emphasizes the assessment page.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:test" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="test-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="test-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#test-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H92V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 25V74M21 49H91" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M219 38H284V91H219Z" fill="#5479AC" stroke="#315782" stroke-width="1.5"/><path d="M229 52L242 44L255 52L242 60Z" fill="#D9A441"/><path d="M229 68L242 60L255 68L242 76Z" fill="#91A77C"/><path d="M242 44V60M242 60V76" stroke="#FEF9C3" stroke-width="1.2"/><circle cx="190" cy="38" r="12" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M190 30V38L195 42" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/><path d="M53 126H98V139H53Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M58 130H92" stroke="#DCECFB" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#test-shadow)"><path d="M50 126H257V135H50Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M62 135V149M246 135V149" stroke="#8D765A" stroke-width="3"/><path d="M113 71L190 64L197 121L118 128Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M124 83L154 80M126 91L157 88" stroke="#88A9D0" stroke-width="1.4"/><rect x="126" y="100" width="11" height="11" rx="1" fill="#EEF4FA" stroke="#5479AC" stroke-width="1.2"/><circle cx="153" cy="105" r="6" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M166 107L172 112L181 99" fill="none" stroke="#91A77C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M202 121L225 104" stroke="#D9A441" stroke-width="4" stroke-linecap="round"/><path d="M202 121L207 119" stroke="#8D6138" stroke-width="1.3"/><path d="M93 124L103 115" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M93 124L103 115" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M160 78L168 77M163 84L171 83" stroke="#D9857F" stroke-width="1.4"/><path d="M109 67L116 62" stroke="#D9A441" stroke-width="2"/><circle cx="109" cy="67" r="2.5" fill="#D9A441"/><path d="M232 104Q241 97 250 104V121H232Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.1"/><path d="M236 110H246M236 115H246" stroke="#88A9D0" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="98" rx="112" ry="68" fill="#FEF9C3" opacity=".09"/><path d="M20 25H92V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M113 71L190 64L197 121" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: aftershave (Noun)
+  CONTEXTUAL_DEFINITION: A soothing lotion applied to the face after shaving.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust with product cue
+  SYNONYM_GUARD: Pair the smooth freshly shaved lower face with a small lotion bottle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream dressing-room wall.
+    - Context_Layer: Muted washstand.
+    - Focal_Layer: Freshly shaved man touching a cool cheek.
+    - Details_Layer: Lotion bottle and cooling droplets.
+    - Lighting_Layer: Calm blue halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:aftershave" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="147" cy="166" rx="97" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M31 139H270V158H31Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.1"/><path d="M48 158V170M253 158V170" stroke="#7B8A9E" stroke-width="3"/>
+  <ellipse cx="142" cy="89" rx="82" ry="70" fill="#DCEAF0" opacity=".62"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M96 162Q90 132 95 93Q99 52 144 49Q189 51 194 94Q199 132 190 162Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M94 91Q94 51 141 47Q180 46 195 74Q177 61 153 65Q129 79 96 75Z" fill="#4B4A4E" stroke="#1E2A3B" stroke-width="2.3"/>
+  <path d="M190 121Q208 114 221 126L224 158H184Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M115 99Q124 94 135 99M154 99Q164 94 174 99" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M119 105Q126 108 133 105M157 105Q165 108 172 105" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M145 104L142 123L151 126" fill="none" stroke="#A86F45" stroke-width="1.8"/><path d="M131 140Q145 145 160 140" fill="none" stroke="#A95059" stroke-width="2.2"/>
+  <path d="M198 111L213 111L216 119H195Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"/><path d="M194 126H220V156H189V132Z" fill="#B7CBE2" stroke="#1E2A3B" stroke-width="2.1"/>
+  <path d="M205 132Q201 137 206 140Q211 137 205 132Z" fill="#4A72B2"/><path d="M209 145Q205 150 210 153Q215 150 209 145Z" fill="#4A72B2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M91 125Q95 147 115 156" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: penguin (noun)
+  CONTEXTUAL_DEFINITION: An upright black-and-white flightless seabird on a cold rocky shore.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Use short flipper wings, a white belly bib, upright stance, and icy shore; do not draw a flying bird or an ostrich.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a front-facing penguin x=104..202 y=49..151, black back and head, white oval belly, little orange bill and feet, short flippers, with pale ice and low blue water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:penguin" data-archetype="upright-penguin">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#354454;--c-secondary:#1E2A3B;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="penguin-sky" x2="0" y2="1"><stop stop-color="#D4E7F1"/><stop offset="1" stop-color="#F5F1E8"/></linearGradient>
+  <linearGradient id="penguin-water" x2="0" y2="1"><stop stop-color="#9AC2D0"/><stop offset="1" stop-color="#6F9EAF"/></linearGradient>
+  <linearGradient id="penguin-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#435363"/><stop offset="1" stop-color="#202B38"/></linearGradient>
+  <filter id="penguin-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#penguin-sky)"/><path d="M0 128L48 96L86 127L122 104L163 131L211 90L254 126L285 101L304 116V192H0Z" fill="#D4E1E4"/><path d="M0 145Q79 135 150 146T304 139V192H0Z" fill="#BFD3D8"/><path d="M0 162Q83 154 153 163T304 157V192H0Z" fill="url(#penguin-water)"/><circle cx="250" cy="42" r="22" fill="#FFFFFF" opacity=".75"/></g>
+ <g id="layer-context"><path d="M28 146l22-13 18 13m159 0 18-12 24 13" fill="none" stroke="#9DB6BE" stroke-width="2"/><path d="M40 159q26-6 50 0m120-1q28-6 51 0" fill="none" stroke="#D9EDF0" stroke-width="1.8"/><ellipse cx="151" cy="153" rx="52" ry="5" fill="#536F78" opacity=".18"/></g>
+ <g id="layer-focal" filter="url(#penguin-shadow)"><path d="M110 111Q99 82 113 61Q124 43 151 43Q178 45 190 67Q204 94 191 123Q179 148 150 151Q120 146 110 111Z" fill="url(#penguin-feather)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M125 85Q134 66 151 65Q170 66 177 86Q185 112 170 135Q157 146 142 135Q121 113 125 85Z" fill="#F5F2E8" stroke="#C7D0D1" stroke-width="1.1"/><path d="M111 81Q96 86 94 109Q94 128 110 134Q118 122 120 105Z" fill="#303D4D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M188 82Q203 89 205 109Q203 126 190 134Q183 119 182 103Z" fill="#303D4D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M140 52Q151 47 162 52" fill="none" stroke="#788B97" stroke-width="1.3"/><circle cx="140" cy="77" r="2.5" fill="#1E2A3B"/><circle cx="164" cy="77" r="2.5" fill="#1E2A3B"/><path d="M147 84L153 96L159 84Z" fill="#E7A63D" stroke="#A66E2F" stroke-width="1"/><path d="M132 144L124 153L144 154L149 147m20-3 8 10 18-1-10-10" fill="#D99A39" stroke="#9D692E" stroke-width="1.3" stroke-linejoin="round"/></g>
+ <g id="layer-details"><path d="M45 150l-5 8m8-8 4 7m203-8 5 7m-1-7 5 7" fill="none" stroke="#8BA2A8" stroke-width="1.4"/><circle cx="86" cy="148" r="1.4" fill="#FFFFFF"/><circle cx="215" cy="148" r="1.3" fill="#FFFFFF"/><ellipse cx="73" cy="155" rx="7" ry="2" fill="#D9E8E8"/><path d="M127 104q6 20 19 28m31-27q-2 13-10 20" fill="none" stroke="#D6DFDB" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M118 68q8-16 24-18m36 5q8 6 10 15" fill="none" stroke="#B9D0D7" stroke-width="1.6" opacity=".75" stroke-linecap="round"/><ellipse cx="151" cy="96" rx="51" ry="44" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

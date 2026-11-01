@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: studying (Noun / gerund)
+  CONTEXTUAL_DEFINITION: The sustained activity of learning, often with several resources.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a focused learner surrounded by several open books and a study lamp; unlike study's single-book reading, the scene emphasizes sustained activity.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Evening library desk with tall bookcase.
+    - Context_Layer: Desk lamp and a few reference books.
+    - Focal_Layer: Student leans into focused reading across multiple open resources.
+    - Details_Layer: Page tabs, pencil, and water glass.
+    - Lighting_Layer: Warm lamp pool on the long study session.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:studying" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="studying-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="studying-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#studying-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M219 25H292V77H219Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.4"/><path d="M226 32H244V69H226ZM249 30H267V69H249ZM272 36H285V69H272Z" fill="#5479AC" stroke="#315782" stroke-width="1"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M38 118H88V135H38Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M44 123H82" stroke="#DCECFB" stroke-width="1.2"/><path d="M61 112L75 86L91 86L104 112" fill="none" stroke="#64748B" stroke-width="2"/><path d="M77 86L82 69L94 69L99 86" fill="#D9A441" stroke="#8D6138" stroke-width="1.4"/><path d="M82 70L90 54" stroke="#64748B" stroke-width="2"/><path d="M91 52Q108 53 117 66" fill="none" stroke="#FEF9C3" stroke-width="7" opacity=".5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#studying-shadow)"><path d="M60 112H258V121H60Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M72 121V149M245 121V149" stroke="#8D765A" stroke-width="3"/><path d="M128 95L163 90L167 131L131 135Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M163 90L201 95L197 134L167 131Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.4"/><path d="M136 104L156 101M137 113L158 110M138 122L159 119M174 103L192 106M173 113L191 116M172 123L189 126" stroke="#88A9D0" stroke-width="1.2"/><circle cx="97" cy="68" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M85 68Q86 53 98 54Q110 55 109 69L103 72Q100 61 95 62Q90 63 88 74Z" fill="#27364B"/><path d="M81 86Q97 79 113 86L120 105L110 116L87 109Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M89 89L109 100L131 102" fill="none" stroke="#1E2A3B" stroke-width="4.4" stroke-linecap="round"/><path d="M89 89L109 100L131 102" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M92 111L86 146M109 112L122 146" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M212 116V97Q219 87 226 97V116Z" fill="#B8D4E8" stroke="#5479AC" stroke-width="1.2"/><path d="M215 97V93H223V97" fill="none" stroke="#5479AC" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M125 97L119 87" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M207 106L213 101" stroke="#D9857F" stroke-width="2"/><path d="M159 91L163 89" stroke="#D9857F" stroke-width="2.2"/><circle cx="233" cy="115" r="2" fill="#FEF9C3"/></g>
+  <g id="layer-lighting"><ellipse cx="168" cy="97" rx="112" ry="68" fill="#FEF9C3" opacity=".12"/><path d="M219 26H292V77" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/><path d="M128 95L163 90L167 131" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

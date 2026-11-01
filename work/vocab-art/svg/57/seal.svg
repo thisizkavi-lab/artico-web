@@ -1,0 +1,36 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: seal (noun)
+  CONTEXTUAL_DEFINITION: A true seal rests on an ice floe, with a rounded body and no external ear flaps.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with a contrasting pinniped profile
+  SYNONYM_GUARD: Keep the small smooth head, no visible external ears, short fore-flippers, and low resting pose; this is not an upright sea lion.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A pale grey ringed seal lies low on a flat ice floe, facing left; body x=80..228 y=94..137, small head x=80..112, short fore-flipper, rear flippers at right, and blue water behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:seal" data-archetype="true-seal-no-external-ear-flaps">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#89999A;--c-secondary:#4B5D63;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="seal-sky" x2="0" y2="1"><stop stop-color="#E3EFF2"/><stop offset="1" stop-color="#F8F2E7"/></linearGradient>
+  <linearGradient id="seal-water" x2="0" y2="1"><stop stop-color="#6DA7B6"/><stop offset="1" stop-color="#356C83"/></linearGradient>
+  <linearGradient id="seal-ice" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7F8F0"/><stop offset="1" stop-color="#BFD4D5"/></linearGradient>
+  <linearGradient id="seal-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AAB7B5"/><stop offset="1" stop-color="#717F82"/></linearGradient>
+  <filter id="seal-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#seal-sky)"/><circle cx="244" cy="38" r="17" fill="#F1D990" opacity=".4"/><path d="M0 107Q75 99 151 108T304 103V192H0Z" fill="url(#seal-water)"/><path d="M0 155Q78 147 152 156T304 151V192H0Z" fill="#4D879A"/></g>
+ <g id="layer-context"><path d="M0 108Q73 100 151 109T304 104" fill="none" stroke="#E5F3F2" stroke-width="1.8"/><path d="M30 87L66 69L101 78L132 67L177 78L218 67L271 80L292 95L281 111L42 115Z" fill="url(#seal-ice)" stroke="#AFC9D0" stroke-width="1.2"/><path d="M37 109l30-8 26 4m49-13 22 9m39-14 31 10" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M11 140q16-5 31 0m225-9q15-5 28 0" fill="none" stroke="#A6CDD6" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="157" cy="132" rx="80" ry="5" fill="#173E4C" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#seal-shadow)">
+  <path d="M183 117Q206 110 222 119Q238 127 246 138Q233 143 218 134L192 130Z" fill="#697A7F" stroke="#4A5D64" stroke-width="1.3"/>
+  <path d="M99 111Q108 94 138 92Q178 88 207 102Q222 110 222 123Q210 139 177 141Q137 142 109 130Q97 124 99 111Z" fill="url(#seal-fur)" stroke="#56686D" stroke-width="1.5"/>
+  <path d="M111 119Q140 132 176 132Q200 130 215 121Q207 138 178 143Q139 144 116 133Z" fill="#E3E3D9" stroke="#869395" stroke-width="1"/>
+  <path d="M100 112Q83 105 72 112Q70 122 84 129L103 125Z" fill="#8F9E9F" stroke="#596A6F" stroke-width="1.3"/>
+  <path d="M111 106Q101 90 108 86Q118 95 122 104Z" fill="#929FA0" stroke="#596A6F" stroke-width="1"/>
+  <path d="M82 114Q91 101 101 104Q108 110 103 119Q96 127 86 123Z" fill="#AAB6B3" stroke="#5A6B70" stroke-width="1.2"/>
+  <circle cx="91" cy="111" r="1.8" fill="#1E2A3B"/>
+  <ellipse cx="80" cy="118" rx="2.2" ry="1.6" fill="#36484D"/>
+  <path d="M81 119l-9 2m9-1-7 4m6-6-8-2" fill="none" stroke="#56686C" stroke-width=".8" stroke-linecap="round"/>
+  <path d="M129 99q10 9 14 3m17-8q8 8 12 2m13 6q6 7 10 3m-67 22q7-8 13 1m12-1q7-8 12 1m13-2q6-8 12 1m12-1q5-6 9 1" fill="none" stroke="#D5DEDA" stroke-width="1.3" opacity=".8" stroke-linecap="round"/>
+  <circle cx="133" cy="118" r="1.7" fill="#D7E1DC"/><circle cx="169" cy="109" r="1.5" fill="#D7E1DC"/><circle cx="197" cy="119" r="1.6" fill="#D7E1DC"/>
+ </g>
+ <g id="layer-details"><path d="M38 94l7-4 8 4m165-16 7-4 8 4" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><circle cx="57" cy="127" r="2" fill="#D9F0F1"/><circle cx="63" cy="119" r="1.2" fill="#D9F0F1"/><path d="M108 135q17 5 31 3m-8-36q8-3 14 0" fill="none" stroke="#C7D3D1" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M116 99q12-8 27-5m37 2q13 3 22 10" fill="none" stroke="#F8FBF1" stroke-width="1.5" opacity=".56" stroke-linecap="round"/><ellipse cx="151" cy="112" rx="61" ry="19" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

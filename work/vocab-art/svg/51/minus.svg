@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: minus (Preposition / adjective in temperature context)
+  CONTEXTUAL_DEFINITION: A temperature below zero, commonly said before a negative temperature.
+  PEDAGOGICAL_ART_DIRECTOR: Show a thermometer column clearly below its zero reference level in a cold winter setting, without printing a minus sign or digits.
+  PEDAGOGICAL_ARCHETYPE: 1 - Below-zero temperature
+  SYNONYM_GUARD: Use the temperature sense from this chapter, not an arithmetic subtraction sign.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Tall thermometer with blue liquid below a distinct reference notch, snow and ice around it, and empty scale marks above.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:minus" data-archetype="below-zero-temperature">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="miu-sky" x2="0" y2="1"><stop stop-color="#DCE8EC"/><stop offset="1" stop-color="#AFC2CE"/></linearGradient><linearGradient id="miu-glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D6E9EA"/></linearGradient><linearGradient id="miu-blue" x2="0" y2="1"><stop stop-color="#80C8D2"/><stop offset="1" stop-color="#3E829B"/></linearGradient><filter id="miu-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#miu-sky)"/><path d="M0 128Q77 115 152 128T304 121V192H0Z" fill="#91A6A8"/><path d="M0 153H304V192H0Z" fill="#E7EFED"/></g>
+ <g id="layer-context"><path d="M0 122Q69 111 146 123T304 116" fill="none" stroke="#FFFFFF" stroke-width="1.7"/><path d="M23 173H281" fill="none" stroke="#C9D8D7" stroke-width="1.2"/><circle cx="42" cy="56" r="2" fill="#FFFFFF"/><circle cx="76" cy="90" r="2.2" fill="#FFFFFF"/><circle cx="228" cy="52" r="2" fill="#FFFFFF"/><circle cx="263" cy="97" r="1.7" fill="#FFFFFF"/><path d="M38 41l5-5m-5 5 5 5m-5-5h-7m7 0h7m216 18 5-5m-5 5 5 5" fill="none" stroke="#F9FFFF" stroke-width="1.2"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#miu-shadow)">
+  <rect x="124" y="30" width="57" height="126" rx="27" fill="url(#miu-glass)" stroke="#617F87" stroke-width="2"/><rect x="145" y="45" width="15" height="99" rx="7" fill="#E6F2F1"/><rect x="145" y="116" width="15" height="29" rx="7" fill="url(#miu-blue)"/><circle cx="152.5" cy="146" r="18" fill="url(#miu-blue)" stroke="#4F8190" stroke-width="1.5"/>
+  <path d="M116 49H143M116 62H136M116 75H143M116 88H136M116 101H143M116 114H136M116 127H143M116 140H136" fill="none" stroke="#587681" stroke-width="1.7"/><path d="M109 108H147" fill="none" stroke="#D7834B" stroke-width="3.2"/><path d="M108 103L101 108L108 113" fill="#D7834B"/><path d="M162 108H187" fill="none" stroke="#D7834B" stroke-width="3.2"/><circle cx="193" cy="108" r="5" fill="#EBC86F" stroke="#C59542" stroke-width="1.2"/>
+  <path d="M133 38q12-6 24 0m-14 16v40" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/><path d="M142 161h20" fill="none" stroke="#EAF7F5" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details"><path d="M120 46h18m-18 13h12m-12 13h18m-18 13h12m-12 13h18m-18 13h12" fill="none" stroke="#B1C9CC" stroke-width="1.1"/><circle cx="152" cy="146" r="2" fill="#DDF8F6"/><circle cx="193" cy="108" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M80 145l8-1m132-3 9-2" fill="none" stroke="#C6D9D8" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M131 34q12-6 22-1m-13 18v28" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="152" cy="141" r="1.2" fill="#FFF8E7"/><path d="M64 62l4-4m-4 4 4 4" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+</svg>

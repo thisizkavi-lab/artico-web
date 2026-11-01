@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: check-out
+  CONTEXTUAL_DEFINITION: The hotel desk or point where a guest completes departure and returns the room key.
+  PEDAGOGICAL_ART_DIRECTOR: Show a dedicated departure counter with a key-card return slot and luggage scale beside the lobby exit.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Depict the checkout place or station, not a guest performing the checkout action.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact hotel departure station has a key-card return slot, a luggage scale, and a clear open doorway just beyond it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:check-out" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="co-n-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9E7DD"/><stop offset="1" stop-color="#CFD1C9"/></linearGradient>
+  <linearGradient id="co-n-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B58B61"/><stop offset="1" stop-color="#795B42"/></linearGradient>
+  <linearGradient id="co-n-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EDF0EA"/><stop offset="1" stop-color="#88989A"/></linearGradient>
+  <filter id="co-n-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M17 17H287V149H17Z" fill="url(#co-n-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M17 149H287V184H17Z" fill="#B8B6AB"/><path d="M24 168H281" stroke="#EAE4D8" stroke-width="1.1"/><path d="M221 30H278V148H221Z" fill="#A8C8CF" stroke="#4E6671" stroke-width="1.4"/><path d="M249 30V148" stroke="#526D77" stroke-width="1.2"/><path d="M233 39H266V141H233Z" fill="#DCE7DC" opacity=".8"/><path d="M242 142L282 112V148H242Z" fill="#F3E5C8" opacity=".7"/></g>
+ <g id="layer-context"><path d="M54 131H102V150H54Z" fill="url(#co-n-metal)" stroke="#4C626B" stroke-width="1.3"/><path d="M60 128H96V132H60Z" fill="#465C66"/><path d="M67 127Q78 118 89 127" fill="none" stroke="#344B59" stroke-width="1.4"/><rect x="60" y="136" width="36" height="9" fill="#CBD8D6" stroke="#64797C" stroke-width=".8"/><path d="M65 140H91" stroke="#829395" stroke-width=".7"/></g>
+ <g id="layer-focal" filter="url(#co-n-shadow)"><path d="M102 91H240V155H102Z" fill="url(#co-n-wood)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M96 83H247V96H96Z" fill="#E4D4B8" stroke="#1E2A3B" stroke-width="1.4"/><path d="M119 155V166M226 155V166" stroke="#634D3B" stroke-width="3.4"/><rect x="145" y="101" width="49" height="21" rx="3" fill="#344B59" stroke="#1E2A3B" stroke-width="1.2"/><path d="M150 105H189V115H150Z" fill="#A9C8CC"/><path d="M165 118H176" stroke="#253C49" stroke-width="2"/><rect x="204" y="106" width="25" height="7" rx="2" fill="#293D49" stroke="#1E2A3B" stroke-width="1"/><path d="M213 109L220 109" stroke="#D9E7E3" stroke-width="1.4"/><path d="M111 128H233" stroke="#C6A77D" stroke-width="1.1"/><path d="M259 137L269 129L278 137V148H259Z" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><path d="M263 138V146M267 138V146M271 138V146" stroke="#AAB8B5" stroke-width="1"/></g>
+ <g id="layer-details"><ellipse cx="152" cy="169" rx="112" ry="5" fill="#526274" opacity=".16"/><path d="M223 32H277" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><circle cx="181" cy="130" r="2" fill="#F2C14E"/><path d="M98 96H245" stroke="#F8F2E7" stroke-width="1" opacity=".8"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="109" rx="127" ry="73" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

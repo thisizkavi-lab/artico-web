@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 62 - Sports equipment and venues
+  WORD: lifejacket
+  CONTEXTUAL_DEFINITION: A wearable buoyant vest that supports a person's torso in water.
+  PEDAGOGICAL_ART_DIRECTOR: Show a bright flotation vest with arm openings, collar, and secure front straps.
+  PEDAGOGICAL_ARCHETYPE: 1 - Safety equipment
+  SYNONYM_GUARD: This is a wearable life jacket, not a throwable circular life ring.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Orange foam life vest with high collar, two arm openings, reflective strips, and dark front buckle straps.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:lifejacket" data-archetype="wearable-life-preserver">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="lp-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="lp-vest" x2="1" y2="1"><stop stop-color="#F29B5E"/><stop offset="1" stop-color="#C45140"/></linearGradient><linearGradient id="lp-sand" x2="0" y2="1"><stop stop-color="#F1DDAA"/><stop offset="1" stop-color="#C9A267"/></linearGradient><filter id="lp-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lp-sky)"/><path d="M0 116Q76 101 153 116T304 108V192H0Z" fill="#B6C6A2"/><path d="M0 148H304V192H0Z" fill="url(#lp-sand)"/></g>
+ <g id="layer-context"><circle cx="249" cy="42" r="16" fill="#EBC86F" opacity=".8"/><path d="M18 115L35 72L52 115ZM256 109L274 61L292 109Z" fill="#66836F"/><path d="M24 169H280" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="151" cy="158" rx="55" ry="5" fill="#90734D" opacity=".13"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#lp-shadow)">
+  <path d="M112 61Q151 48 192 61L218 83L204 130Q191 144 173 145H129Q111 142 100 130L86 83Z" fill="url(#lp-vest)" stroke="#984B3D" stroke-width="2"/>
+  <path d="M112 62L134 83L123 99L106 84M192 62L170 83L181 99L198 84" fill="#E98750" stroke="#984B3D" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M134 83L148 72L158 72L170 83L180 111L165 127H139L124 111Z" fill="#F0A05F" stroke="#984B3D" stroke-width="1.3"/>
+  <path d="M150 72V135M109 111H195" fill="none" stroke="#9A4B3D" stroke-width="2.2"/>
+  <path d="M127 100L174 100M123 118L177 118" fill="none" stroke="#F8E6B7" stroke-width="4"/><path d="M132 101v17m36-17v17" fill="none" stroke="#FFF8E7" stroke-width="1.2"/>
+  <rect x="143" y="96" width="18" height="10" rx="2" fill="#344A50" stroke="#253640" stroke-width="1"/><rect x="143" y="114" width="18" height="10" rx="2" fill="#344A50" stroke="#253640" stroke-width="1"/>
+  <path d="M149 100h6m-6 18h6" fill="none" stroke="#D2DAD2" stroke-width="1.2"/><path d="M140 54Q151 42 164 54L169 64L156 72H145L133 64Z" fill="#D7834B" stroke="#984B3D" stroke-width="1.3"/>
+  <path d="M105 86Q97 100 105 114M199 86Q207 100 199 114" fill="none" stroke="#FFD19A" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M111 63l18 18m64-18-18 18m-44 19h44m-49 19h54" fill="none" stroke="#FFE3AE" stroke-width="1.2"/><circle cx="249" cy="42" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M151 83v8m-27 40h54" fill="none" stroke="#AD5A43" stroke-width="1"/></g>
+ <g id="layer-lighting"><path d="M112 62Q150 50 187 62M129 98h43" fill="none" stroke="#FFF1D2" stroke-width="1.2" opacity=".7"/><path d="M128 119h13m25 0h13" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><circle cx="151" cy="52" r="1.2" fill="#FFF8E7"/></g>
+</svg>

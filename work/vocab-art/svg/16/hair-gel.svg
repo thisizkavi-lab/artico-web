@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hair gel (Noun)
+  CONTEXTUAL_DEFINITION: A styling gel used to shape and hold hair in place.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with use cue
+  SYNONYM_GUARD: Pair an open gel jar with a hand shaping glossy, spiky hair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted face profile.
+    - Focal_Layer: Styled hair peaks and open jar of translucent gel.
+    - Details_Layer: Comb-shaped streaks and gel shine.
+    - Lighting_Layer: Cool glossy highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hair gel" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="160" rx="107" ry="13" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="153" cy="91" rx="117" ry="67" fill="#E4EDF2" opacity=".62"/>
+  <path d="M77 160Q71 128 78 91Q83 54 123 50Q160 54 163 93Q166 128 158 160Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M77 90Q64 69 78 56L92 66L100 39L111 59L127 31L134 59L153 42L156 70Q165 85 156 97Q125 108 86 98Z" fill="#354352" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M189 119H259V153Q258 161 249 161H199Q189 160 189 152Z" fill="#8EC4C4" stroke="#1E2A3B" stroke-width="2.5"/><ellipse cx="224" cy="119" rx="35" ry="10" fill="#D6F0ED" stroke="#1E2A3B" stroke-width="2"/><path d="M198 118Q211 103 226 117Q239 126 251 115" fill="none" stroke="#76B4B3" stroke-width="4"/>
+  <path d="M195 109H253V115H195Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M89 77Q112 88 145 76M91 85Q119 94 149 83" fill="none" stroke="#8DA1AD" stroke-width="2.1" stroke-linecap="round"/><path d="M202 137Q223 142 246 136" fill="none" stroke="#E7FCFA" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M158 96Q169 102 174 111" fill="none" stroke="#4A72B2" stroke-width="1.6" stroke-dasharray="3 4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M72 46Q96 23 128 25" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

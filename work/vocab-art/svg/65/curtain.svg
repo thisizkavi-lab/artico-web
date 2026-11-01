@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: curtain
+ CONTEXTUAL_DEFINITION: The large fabric curtains framing and opening across a theater stage.
+ PEDAGOGICAL_ARCHETYPE: theater stage curtain as focal object
+ SYNONYM_GUARD: Show a full proscenium curtain with stage folds; not domestic window curtains or fabric being sewn.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: An empty stage is framed by broad red side drapes and a gathered upper valance, partly open at center to reveal the lit stage.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:curtain" data-archetype="theater stage curtain as focal object">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 159H304V192H0Z" fill="#C8B89E"/><path d="M0 159H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M20 22H284V150H20Z" fill="#26384A"/><path d="M30 31H274V143H30Z" fill="#405663"/>
+  <path d="M48 51H256V137H48Z" fill="#EEDDC0"/><path d="M63 58H241V134H63Z" fill="#F6E9D4"/>
+  <path d="M30 35Q60 50 92 38V140H30Z" fill="#B85E5A"/><path d="M274 35Q244 50 212 38V140H274Z" fill="#B85E5A"/>
+  <path d="M35 44Q54 58 75 45V139H35Z M269 44Q250 58 229 45V139H269Z" fill="#D17A6B"/>
+  <path d="M30 32Q70 47 110 32Q151 47 194 32Q235 47 274 32V52Q235 65 194 50Q151 65 110 50Q70 65 30 52Z" fill="#B85E5A"/>
+  <path d="M42 37Q70 51 99 39m24-1q28 14 56 0m21 0q28 14 45 1" stroke="#D98474" stroke-width="2" fill="none"/>
+  <path d="M53 141H251V149H53Z" fill="#D6A64C"/><path d="M44 149H260V155H44Z" fill="#8C725A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M42 39V139m12-96v97m12-94v94m12-89v89" stroke="#A84E4B" stroke-width="1.2" fill="none"/>
+  <path d="M262 39V139m-12-96v97m-12-94v94m-12-89v89" stroke="#A84E4B" stroke-width="1.2" fill="none"/>
+  <path d="M97 138H207" stroke="#C2A16C" stroke-width="1.2" fill="none"/>
+  <path d="M27 28H277" stroke="#D6A64C" stroke-width="2" fill="none"/>
+  <circle cx="38" cy="31" r="2" fill="#E8C76A"/><circle cx="266" cy="31" r="2" fill="#E8C76A"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M78 42Q103 56 126 45V51Q103 64 78 52Z" fill="#D17A6B"/>
+  <path d="M178 45Q203 56 226 42V52Q203 64 178 51Z" fill="#D17A6B"/>
+  <path d="M111 53Q126 62 142 54V58Q126 67 111 60Z" fill="#B85E5A"/><path d="M162 54Q178 62 193 53V60Q178 67 162 58Z" fill="#B85E5A"/>
+  <path d="M132 53V136m40-83v83" stroke="#E9C77A" stroke-width="1.3" fill="none"/>
+  <path d="M91 137H213" stroke="#F1E4CA" stroke-width="1.1" fill="none"/>
+  <path d="M36 136H79m150 0h39" stroke="#E7D6B5" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M31 55Q46 62 61 55m182 0q15 7 30 0" stroke="#E6A093" stroke-width="1.1" fill="none"/>
+  <circle cx="151" cy="28" r="3" fill="#D6A64C"/><circle cx="115" cy="27" r="2" fill="#E8C76A"/><circle cx="190" cy="27" r="2" fill="#E8C76A"/>
+  <path d="M58 146H246" stroke="#FFF0D4" stroke-width="1" fill="none"/>
+  <path d="M84 68q-5 6 0 12m136-12q5 6 0 12" stroke="#D6A64C" stroke-width="1" fill="none"/>
+  <circle cx="69" cy="130" r="1.6" fill="#E9C879"/><circle cx="235" cy="130" r="1.6" fill="#E9C879"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="100" rx="84" ry="57" fill="#E7C66B" opacity=".12"/>
+  <path d="M104 33L120 111m99-78-31 78" stroke="#FFF2D1" stroke-width="1.3" opacity=".68" fill="none"/>
+  <path d="M76 55H228" stroke="#FFF4D6" stroke-width="1" opacity=".55" fill="none"/>
+ </g>
+</svg>

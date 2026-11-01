@@ -1,0 +1,58 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 63 - Books and reading
+ WORD: plot (a small piece of land)
+ CONTEXTUAL_DEFINITION: A small, clearly bounded area of land.
+ PEDAGOGICAL_ARCHETYPE: A vacant neighborhood lot marked off by survey stakes.
+ SYNONYM_GUARD: Show a parcel of land, not story events, a map route or a book page.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A broad green lot with four flagged corner stakes sits between small homes and a road; its clear boundary makes the parcel the focal object.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="63:plot" data-archetype="bounded-land-parcel">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#EAF2EE"/>
+  <path d="M0 92h304v100H0Z" fill="#C9B799"/>
+  <path d="M0 104h304" fill="none" stroke="#A5B1A6" stroke-width="1.2"/>
+  <circle cx="258" cy="34" r="10" fill="#E4BB68"/>
+  <path d="M21 84V58l20-14 20 14v26Z" fill="#D9D4C9" stroke="#71868A" stroke-width="1.4"/>
+  <path d="M26 59h29v25H26Z" fill="#F6E8D3"/>
+  <path d="M31 84V69h9v15m9-17h4v8h-4Z" fill="#456F87"/>
+  <path d="M235 86V57l19-13 20 13v29Z" fill="#D4866D" stroke="#8F5F57" stroke-width="1.4"/>
+  <path d="M241 59h28v27h-28Z" fill="#F6E8D3"/>
+  <path d="M247 86V70h9v16m8-18h5v9h-5Z" fill="#456F87"/>
+  <path d="M0 151h304v24H0Z" fill="#71868A"/>
+  <path d="M0 153h304m-304 20h304" fill="none" stroke="#D9D4C9" stroke-width="1.2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M25 94h34m207 0h24" fill="none" stroke="#F4EFE2" stroke-width="1.2"/>
+  <path d="M12 180h48m188 0h42" fill="none" stroke="#F4EFE2" stroke-width="1.2"/>
+  <ellipse cx="151" cy="174" rx="111" ry="5" fill="#304C5D" opacity=".12"/>
+  <circle cx="75" cy="63" r="1.8" fill="#D4866D"/>
+  <circle cx="223" cy="74" r="1.8" fill="#E4BB68"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M75 82 215 82 250 137 52 137Z" fill="#8CAC8C" stroke="#557B67" stroke-width="2"/>
+  <path d="M84 91 208 91 236 131 65 131Z" fill="#A9C7B8" stroke="#719574" stroke-width="1.2"/>
+  <path d="M75 82v-13m140 13V69m35 68v-14m-198 14v-14" fill="none" stroke="#8F705C" stroke-width="2.2"/>
+  <path d="M75 70l-5-8 10 2m135 6-5-8 10 2m35 64-5-8 10 2m-198 0-5-8 10 2" fill="#D4866D" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M75 82 52 137m163-55 35 55M75 82h140m-163 55h198" fill="none" stroke="#F6E8D3" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M149 118c-1-12 4-19 10-24 7 6 10 14 8 24Z" fill="#557B67" stroke="#456F87" stroke-width="1.2"/>
+  <path d="M159 104c-9-7-15-5-17-2m17 1c5-9 11-10 15-7m-15 9c-7-3-12 0-14 4m14-4c6-4 11-3 14 1" fill="none" stroke="#719574" stroke-width="2"/>
+  <path d="M158 118v11m-8-4h17" fill="none" stroke="#8F705C" stroke-width="1.5"/>
+  <path d="M98 120l3-6m17 10 2-5m66 5 3-6m-94-13 2-4m94 5 2-4" fill="none" stroke="#F6E8D3" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="115" cy="110" r="2" fill="#E4BB68"/>
+  <circle cx="197" cy="116" r="1.8" fill="#D4866D"/>
+ </g>
+ <g id="layer-details">
+  <path d="M90 142h123" fill="none" stroke="#304C5D" stroke-width="1.2"/>
+  <path d="M98 140v4m16-4v4m16-4v4m16-4v4m16-4v4m16-4v4m16-4v4m16-4v4" fill="none" stroke="#F6E8D3" stroke-width="1"/>
+  <path d="M31 180h47m151 0h43" fill="none" stroke="#F4EFE2" stroke-width="1.1"/>
+  <circle cx="75" cy="82" r="2.2" fill="#E4BB68"/>
+  <circle cx="215" cy="82" r="2.2" fill="#E4BB68"/>
+  <circle cx="52" cy="137" r="2.2" fill="#E4BB68"/>
+  <circle cx="250" cy="137" r="2.2" fill="#E4BB68"/>
+ </g>
+ <g id="layer-lighting">
+  <path d="M74 84h138" fill="none" stroke="#FFF9EC" stroke-width="1.1" opacity=".75"/>
+  <ellipse cx="153" cy="106" rx="78" ry="28" fill="#FFF6E7" opacity=".07"/>
+ </g>
+</svg>

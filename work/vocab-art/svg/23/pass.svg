@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: pass (succeed) (Verb)
+  CONTEXTUAL_DEFINITION: To achieve a successful result on an exam or assessment.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive state and outcome
+  SYNONYM_GUARD: A relieved student receives a checked assessment with a positive result, contrasting with fail and avoiding the unrelated sense of walking past.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School desk and calm classroom.
+    - Context_Layer: Muted books and a second paper for comparison.
+    - Focal_Layer: Student smiles at a returned paper marked with a large green check.
+    - Details_Layer: Raised shoulders, neat answer marks, and teacher's hand.
+    - Lighting_Layer: Warm success glow around the returned paper.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:pass (succeed)" data-archetype="outcome">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="pass-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="pass-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pass-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H95V81H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V80M23 55H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="35" y="119" width="54" height="20" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><rect x="42" y="112" width="53" height="20" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M48 117H85M41 125H77" stroke="#F9CED0" stroke-width="1.3"/><path d="M216 110H276V118H216Z" fill="#A98A64"/><path d="M223 118V145M269 118V145" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#pass-shadow)"><circle cx="115" cy="60" r="14" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M101 60Q102 45 116 45Q130 46 130 61L125 64Q123 53 115 53Q109 53 105 67Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M94 79Q114 72 134 80L141 115L128 125L102 119L89 97Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M97 86L79 99L67 91M132 85L148 94L162 82" fill="none" stroke="#1E2A3B" stroke-width="5.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M97 86L79 99L67 91M132 85L148 94L162 82" fill="none" stroke="#C98961" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M103 120L99 147M128 121L134 147" stroke="#1E2A3B" stroke-width="5.6" stroke-linecap="round"/><path d="M103 120L99 147M128 121L134 147" stroke="#315782" stroke-width="3" stroke-linecap="round"/><path d="M164 53L213 48L219 112L170 118Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.8"/><path d="M173 63H205M174 72H204M175 81H194" stroke="#88A9D0" stroke-width="1.4"/><path d="M181 91L190 99L208 77" fill="none" stroke="#91A77C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M214 92Q220 85 229 91L232 98" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M214 92Q220 85 229 91L232 98" fill="none" stroke="#C98961" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M85 51L80 44M145 50L150 43M154 62L162 59" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M103 60Q115 68 127 60" fill="none" stroke="#F9E6C6" stroke-width="2"/><circle cx="212" cy="39" r="3" fill="#D9A441"/><path d="M164 53L213 48" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="93" rx="120" ry="74" fill="#FEF9C3" opacity=".08"/><circle cx="190" cy="80" r="43" fill="#91A77C" opacity=".05"/></g>
+</svg>

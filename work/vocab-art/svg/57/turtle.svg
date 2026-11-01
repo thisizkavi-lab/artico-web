@@ -1,0 +1,36 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: turtle (noun)
+  CONTEXTUAL_DEFINITION: A sea turtle swimming underwater, with a domed shell and broad paddle-shaped flippers.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining shell and limbs
+  SYNONYM_GUARD: Use four broad flippers and an aquatic swimming pose; this is a sea turtle, not a land tortoise walking on legs.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Green sea turtle faces right at mid-water; oval patterned shell x=108..194 y=83..121, small beaked head x=212,y=91, front flippers spread wide, rear flippers visible, bubbles and distant reef.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:turtle" data-archetype="sea-turtle-dome-shell-paddle-flippers">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#648F70;--c-secondary:#385D55;--c-accent:#D7A14C;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="turtle-water" x2="0" y2="1"><stop stop-color="#A2CECB"/><stop offset="1" stop-color="#477F8F"/></linearGradient>
+  <linearGradient id="turtle-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8D9E68"/><stop offset="1" stop-color="#536C4D"/></linearGradient>
+  <linearGradient id="turtle-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8DAE7D"/><stop offset="1" stop-color="#527A65"/></linearGradient>
+  <filter id="turtle-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DFECE8"/><path d="M0 21Q74 15 151 23T304 19V192H0Z" fill="url(#turtle-water)"/><path d="M0 158Q76 151 153 159T304 154V192H0Z" fill="#4D8A94"/></g>
+ <g id="layer-context"><path d="M24 192l7-34m0 22-11-13m12 8 12-19m200 36-5-31m5 17 11-12m-12 7-10-17m59 42-4-28m4 16 8-12" fill="none" stroke="#477B69" stroke-width="2.1" stroke-linecap="round"/><path d="M0 37q45-7 87 0m142-3q39-6 75 0" fill="none" stroke="#D8ECE5" stroke-width="1.4"/><circle cx="51" cy="84" r="2" fill="#EAF7EF"/><circle cx="60" cy="75" r="1.2" fill="#EAF7EF"/><ellipse cx="155" cy="142" rx="77" ry="7" fill="#183D43" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#turtle-shadow)">
+  <path d="M119 93Q98 75 86 65Q77 60 74 69Q78 84 101 103L119 111Z" fill="url(#turtle-skin)" stroke="#41634F" stroke-width="1.4"/>
+  <path d="M185 94Q205 75 220 66Q230 63 232 73Q225 88 204 105L187 113Z" fill="url(#turtle-skin)" stroke="#41634F" stroke-width="1.4"/>
+  <path d="M121 111Q104 122 99 136Q104 143 115 136L133 121Z" fill="#74936C" stroke="#41634F" stroke-width="1.2"/>
+  <path d="M183 113Q198 124 202 137Q198 144 188 137L171 121Z" fill="#74936C" stroke="#41634F" stroke-width="1.2"/>
+  <path d="M106 91Q112 73 145 70Q176 70 192 89Q196 105 185 118Q165 130 135 122Q112 117 106 103Z" fill="url(#turtle-shell)" stroke="#405F4B" stroke-width="1.6"/>
+  <path d="M114 94Q122 79 145 77Q168 77 184 93Q188 105 179 114Q160 123 138 116Q119 112 114 102Z" fill="#9DAA73" stroke="#5A744F" stroke-width="1.1"/>
+  <path d="M147 77L145 96L160 103L178 94m-33 2-17 11m17-11 15-18m0 18-2 21" fill="none" stroke="#586F4C" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M187 92Q201 80 216 82Q228 86 228 98Q222 108 207 107L192 102Z" fill="url(#turtle-skin)" stroke="#41634F" stroke-width="1.4"/>
+  <path d="M222 96Q231 94 237 99Q231 103 222 101Z" fill="#D1A15A" stroke="#72583B" stroke-width=".9"/>
+  <circle cx="215" cy="90" r="2" fill="#1E2A3B"/>
+  <path d="M214 101q7 3 13 0" fill="none" stroke="#3C5D4B" stroke-width="1" stroke-linecap="round"/>
+  <path d="M87 68q-1-8 5-9m132 9q8-8 12-3" fill="none" stroke="#A8C291" stroke-width="1.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M109 83q15-14 35-11m54 25q11-3 19 2" fill="none" stroke="#E1E9CB" stroke-width="1.2" opacity=".8" stroke-linecap="round"/><circle cx="73" cy="107" r="1.8" fill="#EBF8F2"/><circle cx="242" cy="70" r="1.5" fill="#EBF8F2"/><path d="M24 112q11-4 22 0m231 17q11-4 20 0" fill="none" stroke="#C7E3DC" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M122 83q10-11 25-10m28 2q9 2 14 7" fill="none" stroke="#E9E9C8" stroke-width="1.5" opacity=".58" stroke-linecap="round"/><ellipse cx="153" cy="96" rx="49" ry="23" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

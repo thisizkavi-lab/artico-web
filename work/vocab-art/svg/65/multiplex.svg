@@ -1,0 +1,41 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: multiplex
+ CONTEXTUAL_DEFINITION: A cinema complex with several separate auditoriums, each with its own screening room entrance.
+ PEDAGOGICAL_ARCHETYPE: multi-screen cinema facade
+ SYNONYM_GUARD: Show multiple distinct screening portals together, not one single-screen auditorium or home theater.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A front view of one cinema building contains four separate dark auditorium openings, each with its own bright screen and seat silhouettes, plus a shared lobby and several patrons.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:multiplex" data-archetype="multi-screen cinema facade">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M20 36H284V157H20Z" fill="#26384A"/><path d="M29 48H275V153H29Z" fill="#405663"/>
+  <path d="M20 36H284V48H20Z" fill="#B85E5A"/><path d="M27 54H277M27 148H277" stroke="#84979A" stroke-width="1.2" fill="none"/>
+  <path d="M12 158H292" stroke="#F4E9D6" stroke-width="2" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M38 61H88V139H38Z M101 61H151V139H101Z M164 61H214V139H164Z M227 61H277V139H227Z" fill="#243441" stroke="#D6A64C" stroke-width="1.2"/>
+  <path d="M44 68H82V94H44Z M107 68H145V94H107Z M170 68H208V94H170Z M233 68H271V94H233Z" fill="#597D8B"/>
+  <path d="M47 89L59 74L67 88Z M110 88L122 76L132 90Z M174 89L183 73L194 89Z M237 89L250 74L263 89Z" fill="#D6A64C" opacity=".9"/>
+  <path d="M43 104H83M106 104H146M169 104H209M232 104H272" stroke="#A7B8B3" stroke-width="2" fill="none"/>
+  <path d="M45 113H81M108 113H144M171 113H207M234 113H270" stroke="#73858B" stroke-width="2" fill="none"/>
+  <path d="M38 139H88M101 139H151M164 139H214M227 139H277" stroke="#D6A64C" stroke-width="2" fill="none"/>
+  <path d="M94 57V145m63-88v88m63-88v88" stroke="#72868A" stroke-width="1.5" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="152" cy="22" r="12" fill="#D6A64C"/><circle cx="152" cy="22" r="6" fill="#26384A"/>
+  <circle cx="144" cy="14" r="2" fill="#26384A"/><circle cx="160" cy="14" r="2" fill="#26384A"/><circle cx="144" cy="30" r="2" fill="#26384A"/><circle cx="160" cy="30" r="2" fill="#26384A"/>
+  <circle cx="118" cy="146" r="4" fill="#D29A78"/><path d="M112 151Q118 147 124 151L126 158H110Z" fill="#D6A64C"/>
+  <circle cx="184" cy="146" r="4" fill="#D29A78"/><path d="M178 151Q184 147 190 151L192 158H176Z" fill="#B85E5A"/>
+ </g>
+ <g id="layer-details">
+  <path d="M48 123v8m10-8v8m10-8v8m10-8v8m20-8v8m10-8v8m10-8v8m10-8v8m20-8v8m10-8v8m10-8v8m10-8v8m20-8v8m10-8v8m10-8v8m10-8v8" stroke="#9DA9A4" stroke-width="1.2" fill="none"/>
+  <circle cx="45" cy="52" r="1.5" fill="#E8C76A"/><circle cx="258" cy="52" r="1.5" fill="#E8C76A"/>
+  <path d="M32 42H272" stroke="#E8C76A" stroke-width="1" opacity=".7" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="102" rx="112" ry="59" fill="#D6A64C" opacity=".07"/>
+  <path d="M38 48L68 137m227-89-31 89" stroke="#FFF1C7" stroke-width="1.2" opacity=".45" fill="none"/>
+ </g>
+</svg>

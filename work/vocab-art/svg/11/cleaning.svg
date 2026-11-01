@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 11 - Chores and cleaning
+  WORD: cleaning (Noun)
+  CONTEXTUAL_DEFINITION: The process of removing dirt to make a surface clean.
+  PEDAGOGICAL_ARCHETYPE: 4 (Action with before / after state)
+  SYNONYM_GUARD: Show a hand wiping a dusty tabletop into a clean bright area, distinct from a specific bathroom-cleaning task.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two-tone counter divided into dirty and clean halves.
+    - Context_Layer: Dust flecks on one side.
+    - Focal_Layer: Thick-gloved hand moving a cloth across the surface.
+    - Details_Layer: Clear wipe line and spray bottle nearby.
+    - Lighting_Layer: Brighter on the cleaned side.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="11:cleaning" data-archetype="action-scene">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 115 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 115 H154 V192 H0Z" fill="#BDAF9E"/><path d="M0 115 H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="151" cy="168" rx="107" ry="8" fill="#BBAA92"/></g>
+  <g id="layer-context"><path d="M202 91 H249 V138 Q249 144 243 144 H208 Q202 144 202 138Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="2"/><path d="M211 91 V81 H240 V91" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M215 81 H237 V74 H215Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="1.4"/><path d="M210 118 Q226 125 241 118" fill="none" stroke="#FFFFFF" stroke-width="1.6"/></g>
+  <g id="layer-focal"><path d="M54 105 Q78 90 99 78 L142 45 Q152 37 163 48 L174 59 Q182 68 173 77 L119 111 Q92 129 62 126Z" fill="#E7B68E" stroke="#1E2A3B" stroke-width="2.5"/><path d="M90 116 L144 66 L165 85 L116 133 Q98 140 84 129Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M112 115 L164 68" stroke="#AFC3DE" stroke-width="2"/><path d="M159 74 Q184 87 204 85" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M33 50 Q53 47 68 54 M42 66 Q61 63 72 69 M74 52 L80 48 M88 61 L94 57" stroke="#8A7A68" stroke-width="2" stroke-linecap="round"/><circle cx="56" cy="84" r="2.2" fill="#8A7A68"/><circle cx="72" cy="91" r="1.8" fill="#8A7A68"/><circle cx="96" cy="55" r="2" fill="#8A7A68"/></g>
+  <g id="layer-details"><path d="M119 112 Q155 124 188 111" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: break even (verb phrase)
+  CONTEXTUAL_DEFINITION: To reach the point where revenue exactly covers costs, with neither profit nor loss.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrastive equilibrium diagram
+  SYNONYM_GUARD: Show incoming sales and outgoing costs meeting at the same amount; not a balance scale, profit, or loss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Small business ledger panel with equal-height blue revenue and copper cost bars meeting at a central horizontal line; matched coin groups above and below; neutral zero-surplus zone.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:break even" data-archetype="contrast-equilibrium">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="breakeven-income" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="breakeven-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="breakeven-chart" d="M46 39 H258 V148 H46 Z"/>
+    <clipPath id="breakeven-clip"><use href="#breakeven-chart"/></clipPath>
+    <filter id="breakeven-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="112" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Small-business accounts panel -->
+  <g id="layer-context"><path d="M35 149 H269" stroke="#C88446" stroke-width="2"/><path d="M42 154 H262" stroke="#E3AC77" stroke-width="1.5"/><path d="M54 51 H250" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="2 6"/><path d="M54 102 H250" stroke="#1E2A3B" stroke-width="2.3"/></g>
+  <!-- 3. Equal revenue and cost meet at the same point -->
+  <g id="layer-focal" filter="url(#breakeven-shadow)"><use href="#breakeven-chart" fill="#F8FBFE" stroke="#1E2A3B" stroke-width="2.5"/><g clip-path="url(#breakeven-clip)"><rect x="57" y="57" width="75" height="45" fill="url(#breakeven-income)"/><rect x="172" y="57" width="75" height="45" fill="#F2A472"/><path d="M57 66 H132 M172 66 H247" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><rect x="57" y="103" width="75" height="35" fill="#DCECFB"/><rect x="172" y="103" width="75" height="35" fill="#F7DDE0"/></g><path d="M132 102 H172" stroke="#1E2A3B" stroke-width="2.2"/><path d="M124 94 L132 102 L124 110 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M180 94 L172 102 L180 110 Z" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <!-- 4. Matched coin values and equal-height endpoints -->
+  <g id="layer-details"><ellipse cx="86" cy="50" rx="12" ry="5.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="86" cy="46" rx="12" ry="5.5" fill="url(#breakeven-coin)" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="218" cy="50" rx="12" ry="5.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="218" cy="46" rx="12" ry="5.5" fill="url(#breakeven-coin)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M83 46 Q86 43 89 46 M215 46 Q218 43 221 46" fill="none" stroke="#B55B28" stroke-width="1.2"/><circle cx="151" cy="102" r="12" fill="#FFFFFF" stroke="#64748B" stroke-width="1.7"/><path d="M145 102 H157" stroke="#64748B" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 5. Neutrality highlight at the meeting point -->
+  <g id="layer-lighting"><circle cx="152" cy="102" r="22" fill="#FEF3C7" opacity=".42"/><circle cx="152" cy="102" r="22" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M61 59 H94" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M267 42 L267 50 M263 46 H271" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/></g>
+</svg>

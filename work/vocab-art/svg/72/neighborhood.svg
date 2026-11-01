@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="72:neighborhood" data-archetype="walkable-residential-block-with-small-shops">
+<!-- SELF_PROMPT: CHAPTER: 72 — Around town. WORD: neighborhood. CONTEXTUAL_DEFINITION: A residential local area with homes, local shops and neighbors; distinct from a whole town or city. CONTEXT_GUARD: Preserve the clear existing illustration and its intended town sense. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="neigh-sky" x2="0" y2="1"><stop stop-color="#DCE9E9"/><stop offset="1" stop-color="#B7C9C7"/></linearGradient>
+  <linearGradient id="neigh-wall" x2="0" y2="1"><stop stop-color="#D6B993"/><stop offset="1" stop-color="#A98467"/></linearGradient>
+  <linearGradient id="neigh-street" x2="0" y2="1"><stop stop-color="#8A8876"/><stop offset="1" stop-color="#62695F"/></linearGradient>
+  <linearGradient id="neigh-shop" x2="0" y2="1"><stop stop-color="#5F8793"/><stop offset="1" stop-color="#3D6575"/></linearGradient>
+  <filter id="neigh-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#neigh-sky)"/><circle cx="256" cy="32" r="12" fill="#E9C66F" opacity=".6"/><path d="M0 119V46h61v73Zm61 0V30h61v89Zm178 0V42h65v77Z" fill="#819196"/><path d="M0 123H304V192H0Z" fill="#AAA28A"/></g>
+<g id="layer-context">
+  <path d="M0 130H89v38H0Z" fill="url(#neigh-wall)"/><path d="M0 130l44-29 45 29Z" fill="#705249"/><path d="M13 138h18v19H13Zm37 0h18v19H50Z" fill="#70919A" stroke="#F0DDBB" stroke-width="1.3"/>
+  <path d="M215 126H304v43h-89Z" fill="#C29A70"/><path d="M207 127l52-35 52 35Z" fill="#674C45"/><path d="M227 137h17v18h-17Zm39 0h18v18h-18Z" fill="#74939A" stroke="#EEDDBD" stroke-width="1.3"/>
+  <path d="M0 163Q67 151 128 163T251 160Q282 155 304 161V192H0Z" fill="url(#neigh-street)"/><path d="M0 158H304V168H0Z" fill="#D5C6A8"/>
+  <path d="M86 163V110h51v53Z" fill="url(#neigh-shop)"/><path d="M80 112h63v10H80Z" fill="#B8805B"/><path d="M86 111l8-10 8 10m8 0 8-10 8 10m8 0 8-10 8 10" fill="#E8C46F"/>
+  <path d="M20 161v-24m0 13-8-9m8 7 8-10m240 22v-26m0 15-8-9m8 7 9-11" fill="none" stroke="#567855" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="132" r="11" fill="#718B6C"/><circle cx="260" cy="130" r="13" fill="#698363"/>
+</g>
+<g id="layer-focal" filter="url(#neigh-shadow)">
+  <circle cx="157" cy="119" r="7" fill="#C68C69"/><path d="M150 116q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#473D3A"/><path d="M149 127Q157 122 165 127L169 147 145 148Z" fill="#527A90" stroke="#405969" stroke-width="1.2"/><path d="M151 146l-5 15 7 1 5-14m4-2 5 15 7-1-6-15" fill="#3F515A"/><path d="M149 129l-8 8 4 4 10-7m9-5 8 9-4 4-10-8" fill="#C68C69"/>
+  <circle cx="193" cy="123" r="6" fill="#DFA77F"/><path d="M187 120q1-9 7-9 7 1 7 9l-4-2h-9Z" fill="#604D46"/><path d="M186 130Q193 126 200 130L204 147 182 148Z" fill="#9B725E" stroke="#705345" stroke-width="1.2"/><path d="M188 146l-4 14 7 1 4-14m5-1 5 14 7-1-6-14" fill="#43545B"/><path d="M186 132l-7 7 4 4 9-7m8-4 8 8-4 4-9-7" fill="#DFA77F"/>
+  <path d="M96 139h30v17H96Z" fill="#E6D1A9"/><path d="M101 144h20" fill="none" stroke="#6E8E91" stroke-width="1.4"/><path d="M106 150h10" fill="none" stroke="#6E8E91" stroke-width="1.2"/>
+</g>
+<g id="layer-details">
+  <path d="M12 181q12-5 23 0m62 6q12-5 23 0m112-6q12-5 23 0m43-8q12-5 22 0" fill="none" stroke="#C6D097" stroke-width="1.4"/>
+  <circle cx="73" cy="174" r="1.8" fill="#E9C66F"/><circle cx="144" cy="168" r="1.6" fill="#E9C66F"/><circle cx="220" cy="176" r="1.8" fill="#E9C66F"/>
+  <path d="M17 58h15m21 0h12m-31 21h13m40-33h17m22 0h15m112 12h17m-31 19h15" fill="none" stroke="#CFD7D2" stroke-width="1.3"/>
+  <path d="M94 126h47m-47 5h47" fill="none" stroke="#EAD295" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M0 126l44-27 46 27m116 0 52-37 52 37" fill="none" stroke="#D7C1A0" stroke-width="1.3"/><path d="M79 111h64m-53 2h42" fill="none" stroke="#F3D989" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

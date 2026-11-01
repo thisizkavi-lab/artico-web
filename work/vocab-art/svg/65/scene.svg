@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: scene
+ CONTEXTUAL_DEFINITION: One specific moment or setting shown in a film or play.
+ PEDAGOGICAL_ARCHETYPE: single frozen production frame
+ SYNONYM_GUARD: Show one framed moment with actors fixed in place; do not use multiple panels or arrows that imply an entire plot.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A single cinematic frame shows two actors paused in a doorway scene with a clear setting; film perforations and viewfinder corners make it one shot.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:scene" data-archetype="single frozen production frame">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 159H304V192H0Z" fill="#C8B89E"/><path d="M0 159H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M25 25H279V148H25Z" fill="#26384A"/><path d="M34 33H270V141H34Z" fill="#405663"/>
+  <path d="M54 45H250V128H54Z" fill="#E9DDC8"/>
+  <path d="M63 53H241V124H63Z" fill="#597D8B"/>
+  <path d="M69 117V81L109 60L145 81V117Z" fill="#798C72"/><path d="M80 117V88L109 72L134 88V117Z" fill="#405663"/>
+  <path d="M63 117H241V128H63Z" fill="#8C725A"/><path d="M0 152H304" stroke="#E8DCC5" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M42 38h14m-14 0v14m220-14h-14m14 0v14M42 135h14m-14 0v-14m220 14h-14m14 0v-14" stroke="#D6A64C" stroke-width="1.8" fill="none"/>
+  <path d="M50 145H254" stroke="#6B5849" stroke-width="2" fill="none"/>
+  <path d="M55 44H249" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <path d="M73 69V112m73-43v43" stroke="#A6B6AE" stroke-width="1.1" fill="none"/>
+  <circle cx="48" cy="57" r="2" fill="#E8C76A"/><circle cx="256" cy="57" r="2" fill="#E8C76A"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="108" cy="84" r="6" fill="#D29A78"/><path d="M101 91Q108 87 115 91L119 116H97Z" fill="#B85E5A"/>
+  <path d="M102 97L91 105m14-8 11 8" stroke="#D29A78" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M102 114L99 126m14-12 4 12" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <circle cx="186" cy="83" r="6" fill="#D29A78"/><path d="M179 90Q186 86 193 90L197 116H175Z" fill="#D6A64C"/>
+  <path d="M181 97L171 104m14-7 12 7" stroke="#D29A78" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M180 114L178 126m14-12 4 12" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <path d="M102 80q4-4 8 0m73-1q4-4 8 0" stroke="#26384A" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M136 81V117" stroke="#D6A64C" stroke-width="2" fill="none"/>
+  <path d="M130 117H142V93Q136 88 130 93Z" fill="#26384A"/>
+  <path d="M150 60q7-6 14 0m-11 4q6-5 12 0" stroke="#E7C66B" stroke-width="1.1" fill="none"/>
+  <circle cx="165" cy="68" r="1.5" fill="#E7C66B"/>
+  <path d="M70 132H234" stroke="#F4E8D2" stroke-width="1" fill="none"/>
+  <path d="M57 48H247" stroke="#EFF0E9" stroke-width=".8" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="59" fill="#E7C66B" opacity=".09"/>
+  <path d="M83 37L102 79m143-42-33 43" stroke="#FFF1C7" stroke-width="1.2" opacity=".58" fill="none"/>
+  <path d="M64 128H240" stroke="#FFF7E5" stroke-width="1" opacity=".56" fill="none"/>
+ </g>
+</svg>

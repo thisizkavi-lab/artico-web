@@ -1,0 +1,41 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: swollen
+ CONTEXTUAL_DEFINITION: Enlarged or puffed up, often because of inflammation.
+ PEDAGOGICAL_ARCHETYPE: one visibly puffed ankle beside a normal ankle
+ SYNONYM_GUARD: Show mild swelling without implying a break or a specific sprain.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Compare two lower legs: one ankle is visibly puffier and tender while the other remains normal; keep the skin intact.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:swollen" data-archetype="puffed ankle compared with normal ankle">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="95" ry="5" fill="#8C725A" opacity=".18"/><path d="M42 149H262" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 40H98V97H58Z" fill="#D9D0C2"/><path d="M64 46H92V91H64Z" fill="#A9B9B4"/><path d="M209 39H251V98H209Z" fill="#E3DDD2"/><path d="M216 46H244V92H216Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M76 65H228V96H76Z" fill="#597D8B" stroke="#26384A" stroke-width="1.1"/><path d="M87 94L84 125M216 94L219 125" stroke="#26384A" stroke-width="2.8"/>
+  <path d="M61 127H243" stroke="#8C725A" stroke-width="1.3"/><ellipse cx="151" cy="150" rx="68" ry="3" fill="#8C725A" opacity=".14"/>
+  <path d="M75 72H229" stroke="#A9C0C1" stroke-width="1"/><path d="M120 68L128 75L136 68" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-focal">
+  <!-- two lower legs and feet; the left ankle is visibly puffier -->
+  <path d="M110 91L111 120Q111 128 104 134L88 142Q82 146 86 151Q91 154 99 151L123 143Q131 139 130 128L130 94Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1.1"/>
+  <path d="M177 91L177 121Q177 129 184 136L200 144Q206 148 202 152Q197 155 189 152L166 143Q158 139 159 128L158 94Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1.1"/>
+  <path d="M80 147Q93 139 107 143L124 149L122 155H84Z" fill="#26384A"/><path d="M167 148Q180 140 194 145L211 150L209 155H170Z" fill="#26384A"/>
+  <ellipse cx="119" cy="133" rx="19" ry="18" fill="#D29A78" stroke="#8F5F57" stroke-width="1.2"/>
+  <path d="M107 120Q118 116 130 122L136 136Q133 146 120 150L105 143Q99 132 107 120Z" fill="#C88F70" stroke="#8F5F57" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details">
+  <ellipse cx="119" cy="134" rx="26" ry="24" fill="#B85E5A" opacity=".13"/><ellipse cx="119" cy="134" rx="20" ry="18" fill="none" stroke="#B85E5A" stroke-width="1" opacity=".6"/>
+  <path d="M118 105V100M135 117L139 114M143 134H148M134 151L138 155M101 115L97 111M99 139L94 140" stroke="#D6A64C" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M108 101L114 105M126 102L132 105M176 102L181 104M161 103L166 101" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M105 135Q110 130 116 132M122 143Q129 139 133 134" stroke="#A86E58" stroke-width="1" fill="none"/>
+  <path d="M87 151L95 147M173 151L181 147" stroke="#597D8B" stroke-width="1"/>
+  <circle cx="152" cy="119" r="1.5" fill="#D6A64C"/><circle cx="148" cy="124" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="95" rx="91" ry="66" fill="#E7C66B" opacity=".06"/><path d="M50 32L66 48M253 32L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M42 150H262" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

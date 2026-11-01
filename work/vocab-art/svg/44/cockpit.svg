@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: cockpit
+  CONTEXTUAL_DEFINITION: The control cabin at the front of an airplane where the pilots operate it.
+  PEDAGOGICAL_ART_DIRECTOR: Show the airplane cockpit from behind the seats, with forward windows, two pilot seats, control yokes, and instrument panels.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole focus callout
+  SYNONYM_GUARD: Frame the airplane's pilot cabin, not a car dashboard, passenger cabin, or ship's bridge.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a wide curved forward window x=48..256, y=34..112; pilot shoulders/seats at x=82..132 and x=174..222; instrument console y=112..148 with two steering yokes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:cockpit" data-archetype="part-of-whole-aircraft">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="cockpit-window" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#CAE0EB"/><stop offset="1" stop-color="#83A8C0"/></linearGradient>
+    <linearGradient id="cockpit-panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#44566C"/><stop offset="1" stop-color="#263548"/></linearGradient>
+    <radialGradient id="cockpit-halo"><stop stop-color="#E2EFF4" stop-opacity=".66"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="cockpit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 157 H304 V192 H0 Z" fill="#EEE7DA"/><ellipse cx="152" cy="166" rx="111" ry="7" fill="#DDD4C3"/><path d="M20 34 Q152 -2 284 34 V151 H20 Z" fill="#ECEAE5" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M39 41 Q152 11 265 41 V101 H39 Z" fill="#DDE8ED" stroke="#1E2A3B" stroke-width="2.2"/><path d="M51 47 Q151 23 253 47 V93 H51 Z" fill="url(#cockpit-window)" stroke="#5479AC" stroke-width="1.5"/><path d="M151 34 V97" stroke="#64748B" stroke-width="1.5"/><path d="M52 75 Q80 65 112 73 M193 73 Q224 62 252 72" fill="none" stroke="#EFF8F8" stroke-width="2"/><circle cx="82" cy="53" r="7" fill="#F2C14E" opacity=".85"/><path d="M0 108 Q48 98 94 108 M211 105 Q257 97 304 107" fill="none" stroke="#D4E3EA" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#cockpit-shadow)"><path d="M23 101 Q151 87 281 101 V151 H23 Z" fill="url(#cockpit-panel)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M29 110 Q151 99 275 110 V128 Q151 117 29 129 Z" fill="#60748A" stroke="#1E2A3B" stroke-width="1.4"/><path d="M73 93 V142 Q79 151 108 151 Q133 151 139 143 V96 Z" fill="#465A72" stroke="#1E2A3B" stroke-width="2.1"/><path d="M165 96 V143 Q172 151 198 151 Q225 151 231 142 V93 Z" fill="#465A72" stroke="#1E2A3B" stroke-width="2.1"/><path d="M78 88 Q83 78 99 78 Q117 78 126 92 V112 H78 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="101" cy="74" r="10" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.6"/><path d="M171 91 Q179 78 195 78 Q214 78 222 91 V112 H171 Z" fill="#6F8EB4" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="196" cy="74" r="10" fill="#C99170" stroke="#1E2A3B" stroke-width="1.6"/><path d="M96 128 V111 M190 128 V111" stroke="#D9E3E8" stroke-width="3" stroke-linecap="round"/><path d="M84 112 H108 M178 112 H202" stroke="#D9E3E8" stroke-width="2.6" stroke-linecap="round"/><circle cx="96" cy="112" r="3" fill="#F2C14E"/><circle cx="190" cy="112" r="3" fill="#F2C14E"/><rect x="36" y="118" width="20" height="16" rx="2" fill="#263548" stroke="#AFC7D4" stroke-width="1"/><rect x="61" y="116" width="15" height="13" rx="2" fill="#263548" stroke="#AFC7D4" stroke-width="1"/><rect x="228" y="115" width="19" height="16" rx="2" fill="#263548" stroke="#AFC7D4" stroke-width="1"/><rect x="252" y="117" width="15" height="13" rx="2" fill="#263548" stroke="#AFC7D4" stroke-width="1"/><path d="M37 143 H267" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-details"><circle cx="46" cy="125" r="2.5" fill="#8FC19A"/><circle cx="68" cy="122" r="2" fill="#E28B6B"/><circle cx="238" cy="123" r="2.5" fill="#8FC19A"/><circle cx="260" cy="124" r="2" fill="#F2C14E"/><path d="M92 49 H143 M161 49 H212" stroke="#FFFFFF" stroke-width="1" opacity=".8"/><path d="M113 136 H122 M207 136 H216" stroke="#A6BAC7" stroke-width="1.2"/><path d="M143 83 Q151 77 160 83" fill="none" stroke="#5479AC" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="81" rx="119" ry="72" fill="url(#cockpit-halo)" opacity=".17"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M23 151 H281" stroke="#1E2A3B" stroke-width="1" opacity=".35"/></g>
+</svg>

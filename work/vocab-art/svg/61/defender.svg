@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: defender
+ CONTEXTUAL_DEFINITION: A player who protects their own goal by blocking the attacking opponents.
+ PEDAGOGICAL_ARCHETYPE: Defender stands between an advancing opponent with ball and the goal
+ SYNONYM_GUARD: Show a defensive position close to own goal and between attacker and target, not an isolated runner.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Goal at left, goalkeeper inside; blue defender plants feet between red attacker and goal while the attacker approaches with ball.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:defender" data-archetype="player-blocks-attacker-near-own-goal">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="def-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#def-sky)"/><path d="M0 65H304V105H0Z" fill="#83988D"/><path d="M0 73h304m0 10H0m0 10h304" stroke="#DDE8E0" stroke-width="1"/><path d="M0 108q74-10 151 0t153 0v84H0Z" fill="#91A686"/><path d="M0 151h304" stroke="#E7EEE4" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M19 62v47m73-47v47m-73-41h73m-73 31h73" stroke="#F6F5EC" stroke-width="1.4"/><ellipse cx="153" cy="174" rx="121" ry="5" fill="#405B61" opacity=".15"/><circle cx="262" cy="37" r="12" fill="#E4BB68"/></g>
+ <g id="layer-focal"><circle cx="49" cy="88" r="7" fill="#D99F7C"/><path d="M42 87q2-8 7-8q6 0 7 7l-4 2-8-1Z" fill="#344F5A"/><path d="M43 97l-7 12 10 7 10-6-4-11Z" fill="#D4866D"/><path d="M40 101l-8 5m21-6 7 8m-17 8-4 16m12-16 5 15" stroke="#263E48" stroke-width="3.5" stroke-linecap="round"/><circle cx="242" cy="99" r="8" fill="#D99F7C"/><path d="M234 98q2-9 8-9q7 0 8 8l-4 2-10-1Z" fill="#344F5A"/><path d="M235 109l-9 15 14 9 14-8-5-14Z" fill="#D4866D"/><path d="M233 114l-11-7-9 5m29-7 12-11" stroke="#D99F7C" stroke-width="4.5" stroke-linecap="round"/><path d="M233 130l-11 14 4 8 18-9m-4-14 13 11 12-3" stroke="#263E48" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="206" cy="145" r="7" fill="#F7F3E8" stroke="#405B61" stroke-width="1"/><path d="M206 141l2 2v3l-2 2-2-2v-3Z" fill="#263E48"/><path d="M204 141l-2-2m6 2 2-2m-6 7-3 1m7-1 3 1" stroke="#263E48" stroke-width=".7" fill="none"/><circle cx="139" cy="90" r="9" fill="#D99F7C"/><path d="M130 89q2-10 9-10q8 0 9 9l-5 2-11-1Z" fill="#344F5A"/><path d="M132 100q-11 8-10 24l16 10 17-8-2-17-10-9Z" fill="#405B61" stroke="#263E48" stroke-width="1"/><path d="M130 107l-17-9-12 8m39-7 16-8 11 6" stroke="#D99F7C" stroke-width="4.5" stroke-linecap="round"/><path d="M131 131l-8 16-12 1m28-15 9 14 13 0" stroke="#263E48" stroke-width="5" stroke-linecap="round"/><path d="M151 116l-8 1" stroke="#E4BB68" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M98 151q17-5 32 0m50-4h25" stroke="#E4BB68" stroke-width="1.5" fill="none"/><path d="M18 180h41m199 0h29" stroke="#DDE8DC" stroke-width="1.2"/><circle cx="111" cy="53" r="1.3" fill="#FFF"/></g><g id="layer-lighting"><ellipse cx="148" cy="109" rx="125" ry="50" fill="#FFF6E7" opacity=".04"/><path d="M18 65h71" stroke="#FFF" stroke-width="1"/></g>
+</svg>

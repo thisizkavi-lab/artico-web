@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: languages (Noun)
+  CONTEXTUAL_DEFINITION: The study of different human languages in a school setting.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Several students practice speaking and listening together with varied speech bubbles but no written words, emphasizing language study.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language classroom with plain board and desk.
+    - Context_Layer: Globe and grouped chairs.
+    - Focal_Layer: Three students exchange conversation across a table.
+    - Details_Layer: Empty speech shapes and open unlettered books.
+    - Lighting_Layer: Soft highlight around the conversation group.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:languages" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="lang-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="lang-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lang-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="23" y="28" width="96" height="59" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M37 43Q58 32 76 43T105 42M38 68Q61 57 83 67" fill="none" stroke="#DCECFB" stroke-width="2"/><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="253" cy="69" r="21" fill="#DCECFB" stroke="#5479AC" stroke-width="1.8"/><path d="M239 63Q247 57 253 63L250 71L243 74L238 69ZM258 56L267 61L265 69L259 71L255 64ZM250 76L257 72L264 78L260 85L252 86Z" fill="#91A77C" stroke="#55704D" stroke-width="1"/><path d="M253 90V112M240 112H266" stroke="#315782" stroke-width="2.2"/><path d="M0 146H304" stroke="#8D765A" stroke-width="2.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#lang-shadow)"><ellipse cx="150" cy="132" rx="78" ry="13" fill="#A98A64" opacity=".45"/><path d="M67 125H237V135H67Z" fill="#A98A64"/><path d="M77 135V151M225 135V151" stroke="#8D765A" stroke-width="4"/><circle cx="101" cy="83" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M90 83Q91 70 102 70Q113 71 113 84L109 87Q107 77 101 77Q96 77 93 90Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M88 98Q101 92 114 99L119 122L109 128L91 123L84 110Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="153" cy="79" r="11" fill="#80513F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M142 79Q143 67 154 67Q165 68 165 80L160 83Q158 73 152 73Q147 73 145 86Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M140 95Q153 89 166 96L171 120L161 126L143 121L136 108Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="204" cy="84" r="11" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.5"/><path d="M193 84Q194 71 205 71Q216 72 216 85L211 88Q209 78 203 78Q198 78 196 91Z" fill="#A95059" stroke="#1E2A3B" stroke-width="1"/><path d="M191 100Q204 94 217 101L222 123L212 129L194 124L187 112Z" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M107 58Q100 47 112 40H137Q150 42 146 54L138 60L135 66" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.5"/><circle cx="124" cy="49" r="1.7" fill="#D9857F"/><circle cx="131" cy="49" r="1.7" fill="#D9A441"/><circle cx="138" cy="49" r="1.7" fill="#5479AC"/><path d="M172 59Q166 48 178 42H201Q213 43 210 55L201 61L199 68" fill="#FFFEFA" stroke="#D9857F" stroke-width="1.5"/><circle cx="183" cy="51" r="1.7" fill="#5479AC"/><circle cx="190" cy="51" r="1.7" fill="#D9857F"/><circle cx="197" cy="51" r="1.7" fill="#D9A441"/><path d="M145 114L152 109L160 114L152 120Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="96" rx="122" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M90 38Q126 20 162 34" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".75"/></g>
+</svg>

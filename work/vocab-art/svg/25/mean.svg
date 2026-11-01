@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: mean (Verb, intend or signify)
+  CONTEXTUAL_DEFINITION: Have a particular idea or intention when saying something.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a speaker indicating the exact idea they intend, not an unkind personality or the listener's completed understanding.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm one-to-one conversation.
+    - Context_Layer: Listener looks unsure of a vague gesture.
+    - Focal_Layer: Speaker points to a concrete matching picture cue in a thought/speech bubble.
+    - Details_Layer: Intentional finger point and direct eye contact.
+    - Lighting_Layer: Warm focus on the intended idea.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:mean" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="mean-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="mean-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mean-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M37 122H263V130H37Z" fill="#A98A64"/><path d="M48 130V149M252 130V149" stroke="#8D765A" stroke-width="2.7"/><circle cx="245" cy="96" r="10" fill="#80513F"/><path d="M235 96Q236 83 246 84Q256 85 255 97" fill="#27364B"/><path d="M230 112Q245 105 260 112L263 125L253 134L234 127Z" fill="#91A77C" stroke="#54765A" stroke-width="1.2"/><path d="M242 100Q247 104 252 100" fill="none" stroke="#1E2A3B" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#mean-shadow)"><circle cx="93" cy="78" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M81 78Q82 63 94 64Q106 65 105 79L99 82Q96 71 90 72Q86 73 84 84Z" fill="#27364B"/><path d="M75 96Q93 88 111 96L117 120L104 130L81 122Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><path d="M83 99L98 108L118 101M108 99L120 104L132 98" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M83 99L98 108L118 101M108 99L120 104L132 98" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M84 124L79 149M103 125L115 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M113 27Q113 17 125 17H184Q196 17 196 29V48Q196 60 184 60H156L147 69L149 59H125Q113 59 113 48Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.4"/><path d="M146 29L161 42L176 29V48H146Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/><path d="M173 102L194 90L205 98" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M173 102L194 90L205 98" fill="none" stroke="#E7B99B" stroke-width="2.5" stroke-linecap="round"/><path d="M184 88L191 89L194 95" fill="none" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M87 87Q94 91 101 87" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="205" cy="47" r="3" fill="#D9857F"/><path d="M209 52L216 57" stroke="#D9A441" stroke-width="1.5"/><path d="M227 79L231 75M236 79L240 75" stroke="#D9A441" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="88" rx="135" ry="73" fill="#FEF9C3" opacity=".09"/><path d="M113 27Q113 17 125 17H184" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

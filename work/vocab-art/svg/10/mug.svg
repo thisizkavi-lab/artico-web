@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: mug (Noun)
+  CONTEXTUAL_DEFINITION: A large, sturdy handled cup used for coffee, tea, or another hot drink.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a thick straight-sided vessel without a saucer, larger and heavier than the teacup.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm tabletop.
+    - Context_Layer: Steam above a hot drink.
+    - Focal_Layer: Large robust ceramic mug with a broad handle.
+    - Details_Layer: Thick rim and subtle glaze band.
+    - Lighting_Layer: Warm beverage and glossy glaze highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:mug" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 149 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 149 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="168" rx="73" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M115 139 H198" stroke="#B97840" stroke-width="2"/><path d="M137 54 Q130 44 138 35 M157 52 Q150 40 159 31 M177 53 Q181 42 174 35" fill="none" stroke="#CE7B55" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M91 63 Q96 55 107 55 H189 Q200 55 205 63 L198 137 Q197 147 185 147 H112 Q100 147 98 137Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M204 77 Q251 68 255 99 Q256 131 200 125" fill="none" stroke="#1E2A3B" stroke-width="8"/><path d="M204 82 Q242 76 244 99 Q244 120 202 118" fill="none" stroke="#7191BC" stroke-width="4"/><ellipse cx="148" cy="64" rx="52" ry="12" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.1"/><ellipse cx="148" cy="65" rx="42" ry="7" fill="#6F402F"/><path d="M104 63 Q148 71 193 63" fill="none" stroke="#AFC3DE" stroke-width="2"/><path d="M107 81 Q111 73 116 80 V128 Q112 134 108 129Z" fill="#7191BC" opacity="0.7"/></g>
+  <g id="layer-details"><path d="M112 139 Q148 145 185 139" fill="none" stroke="#AFC3DE" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

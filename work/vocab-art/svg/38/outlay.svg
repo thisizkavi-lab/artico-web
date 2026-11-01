@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: outlay (noun; a particular expenditure)
+  CONTEXTUAL_DEFINITION: A large amount of money spent at one time for a specific investment or purchase.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrastive scale / cost scene
+  SYNONYM_GUARD: Unlike expenditure as an accumulation of ordinary costs, depict one substantial initial capital payment tied to a major purchase.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Business owner makes a single large stack of coins leave a reserve box toward a new delivery van/machine; small routine coin stack remains muted for scale.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:outlay" data-archetype="contrast-scale">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="outlay-machine" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="outlay-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="outlay-equipment" d="M190 99 H265 Q274 99 274 108 V136 H179 V111 Q179 99 190 99 Z"/>
+    <clipPath id="outlay-clip"><use href="#outlay-equipment"/></clipPath>
+    <filter id="outlay-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="114" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Small business investment context -->
+  <g id="layer-context"><path d="M27 143 H279 V154 H27 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M33 147 H272" stroke="#E3AC77" stroke-width="1.7"/><circle cx="50" cy="62" r="13" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M31 106 Q33 82 50 82 Q68 82 70 106 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M39 88 L51 98 L62 88" fill="#F8FBFE" stroke="#1E2A3B" stroke-width="1.4"/><path d="M65 111 L86 119" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/></g>
+  <!-- 3. One major equipment purchase and substantial cost -->
+  <g id="layer-focal" filter="url(#outlay-shadow)"><use href="#outlay-equipment" fill="url(#outlay-machine)" stroke="#1E2A3B" stroke-width="2.4"/><g clip-path="url(#outlay-clip)"><path d="M178 119 Q223 98 275 113 V140 H178Z" fill="#5479AC" opacity=".38"/><path d="M196 103 V132 M214 103 V132 M232 103 V132" stroke="#64748B" stroke-width="1.5"/><path d="M183 128 H267" stroke="#F8FBFE" stroke-width="2.2"/></g><circle cx="198" cy="137" r="8" fill="#64748B" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="254" cy="137" r="8" fill="#64748B" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="198" cy="137" r="3" fill="#CBD5E1"/><circle cx="254" cy="137" r="3" fill="#CBD5E1"/><rect x="115" y="74" width="47" height="39" rx="4" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M122 82 H154 M122 89 H149 M122 96 H155" stroke="#94A3B8" stroke-width="1.5"/></g>
+  <!-- 4. One large payment stack compared with a small routine stack -->
+  <g id="layer-details"><ellipse cx="101" cy="143" rx="12" ry="5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.4"/><path d="M89 134 V143 C89 150 113 150 113 143 V134" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="101" cy="134" rx="12" ry="5" fill="url(#outlay-coin)" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="83" cy="144" rx="8" ry="4" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M129 120 H175" stroke="#CE3D4E" stroke-width="2.4" stroke-linecap="round"/><path d="M169 114 L179 120 L169 126 Z" fill="#CE3D4E"/><ellipse cx="149" cy="115" rx="8" ry="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="160" cy="115" rx="8" ry="4.5" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 5. Investment highlights -->
+  <g id="layer-lighting"><path d="M185 103 H216" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/><path d="M145 59 L145 68 M141 63 H149" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M125 126 Q148 132 172 126" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 3"/></g>
+</svg>

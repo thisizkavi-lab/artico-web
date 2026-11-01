@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: awful (Adjective)
+  CONTEXTUAL_DEFINITION: Extremely bad and upsetting, shown by a picnic ruined by sudden wind and rain.
+  PEDAGOGICAL_ARCHETYPE: 3 (Bad experience plus an unmistakably distressed reaction)
+  SYNONYM_GUARD: The family faces a spoiled picnic and battered umbrella; the scene shows a terrible experience without gore or disgust.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Gray storm sky over a park slope.
+    - Context_Layer: Two people react with dismay beside a tipped picnic basket.
+    - Focal_Layer: Wind-blown blanket, overturned sandwiches and broken umbrella.
+    - Details_Layer: Rain streaks, rolling apple and leaves in the gust.
+    - Lighting_Layer: Cold storm flashes and a dim, uneasy atmosphere.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:awful" data-archetype="expressive-bust">
+  <defs><linearGradient id="storm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9B8C7"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#storm)"/><path d="M0 140 Q149 130 304 141 L304 192 L0 192Z" fill="#7B8A9E"/><ellipse cx="154" cy="164" rx="115" ry="9" fill="#64748B"/><path d="M19 46 Q21 28 40 30 Q53 20 68 34 Q82 27 91 43 Q80 53 64 50 Q47 57 34 50Z M186 41 Q191 26 206 29 Q219 18 234 34 Q251 26 263 45 Q248 55 230 50 Q210 59 198 49Z" fill="#64748B"/></g>
+  <g id="layer-context"><path d="M30 151 Q33 128 51 126 Q69 128 71 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="51" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M36 110 Q37 93 52 94 Q66 95 66 111 Q57 102 50 103Z" fill="#27364B"/><path d="M45 112 Q49 108 52 112 M56 112 Q60 108 63 112" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="54" cy="120" rx="3.5" ry="4.5" fill="#A34F47"/><path d="M39 130 Q31 123 27 117 M64 131 Q72 123 77 117" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/><path d="M229 151 Q231 128 249 126 Q267 128 269 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="249" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M234 110 Q235 93 250 94 Q264 95 264 111 Q255 102 248 103Z" fill="#6B4B35"/><path d="M244 112 Q248 108 251 112 M255 112 Q259 108 262 112" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M242 121 Q249 116 257 121" fill="none" stroke="#A34F47" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M58 145 Q106 132 160 142 Q203 151 253 139 L246 158 Q195 169 151 159 Q103 151 64 162Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.4"/><path d="M95 143 L118 131 L135 146 L118 155Z" fill="#F1F5F9" stroke="#64748B" stroke-width="1.5"/><path d="M166 144 L183 130 L202 144 L189 153Z" fill="#F1F5F9" stroke="#64748B" stroke-width="1.5"/><path d="M220 103 Q201 94 181 95 Q164 97 152 112 Q171 107 190 108 Q208 108 222 116Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M154 112 L126 151 M154 112 L190 149" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 123 L117 146 L108 156 L84 133Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2"/><path d="M114 123 L124 135 M88 132 L99 144" stroke="#8D552E" stroke-width="1.5"/><circle cx="144" cy="151" r="8" fill="#E97832" stroke="#1E2A3B" stroke-width="1.8"/><path d="M144 143 L147 140" stroke="#527748" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M93 58 L89 70 M122 42 L118 55 M161 53 L157 65 M279 56 L275 69 M208 72 L204 85" stroke="#E9EFF5" stroke-width="2.5" stroke-linecap="round"/><path d="M85 89 Q102 83 117 91 M127 91 Q139 85 150 91" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/><path d="M75 113 L68 106 M83 110 L80 101" stroke="#A9B8C7" stroke-width="2.3" stroke-linecap="round"/><path d="M28 89 L34 79 L40 89 L50 94 L40 99 L34 109 L28 99 L18 94Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M36 37 Q52 29 68 37 M22 146 Q151 138 283 146" fill="none" stroke="#CBD5E1" stroke-width="2.1" opacity="0.65"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

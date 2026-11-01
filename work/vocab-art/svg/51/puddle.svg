@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: puddle (Noun)
+  CONTEXTUAL_DEFINITION: A small shallow pool of rainwater collected on the ground.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate one irregular shallow pool on a mostly dry path, with a reflected sky and a single ripple.
+  PEDAGOGICAL_ARCHETYPE: 1 - Small water feature
+  SYNONYM_GUARD: This is a little pool on the ground, not widespread floodwater.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Ground-level oval puddle with a reflective blue surface, muddy rim, one falling droplet, and concentric ripples.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:puddle" data-archetype="small-rainwater-puddle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="pu-sky" x2="0" y2="1"><stop stop-color="#DCE9E9"/><stop offset="1" stop-color="#BFCFCD"/></linearGradient><linearGradient id="pu-water" x2="0" y2="1"><stop stop-color="#9DD8D6"/><stop offset="1" stop-color="#468B9E"/></linearGradient><linearGradient id="pu-ground" x2="0" y2="1"><stop stop-color="#C8B187"/><stop offset="1" stop-color="#8C7254"/></linearGradient><filter id="pu-shadow" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#4A5349" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pu-sky)"/><path d="M0 114Q78 101 151 114T304 109V192H0Z" fill="#A9B1A0"/><path d="M0 143H304V192H0Z" fill="url(#pu-ground)"/></g>
+ <g id="layer-context"><path d="M20 174H282" fill="none" stroke="#9B805D" stroke-width="1.2"/><path d="M28 74q14-10 28 0m189-13q14-10 28 0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/><ellipse cx="151" cy="163" rx="81" ry="5" fill="#554332" opacity=".17"/><path d="M29 151l12-3m207 2 13-4m-181 0 8-2" fill="none" stroke="#7C664B" stroke-width="1.4"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#pu-shadow)">
+  <path d="M58 129Q67 111 99 113Q128 105 153 112Q185 104 214 115Q242 114 251 128Q243 142 212 143Q180 150 150 145Q112 151 83 143Q59 141 58 129Z" fill="#765D44" stroke="#5F4F3F" stroke-width="1.5"/><path d="M64 127Q77 115 101 118Q129 110 153 117Q184 110 211 120Q236 119 245 128Q233 138 210 137Q179 144 151 139Q112 145 85 137Q67 136 64 127Z" fill="url(#pu-water)" stroke="#B4E5E1" stroke-width="1.7"/><path d="M77 125Q105 117 133 123m16-2q26-5 49 2m15 0 18 4" fill="none" stroke="#F4FFFF" stroke-width="2" stroke-linecap="round"/><path d="M116 132q28 6 52 1m20-3q14 3 25 0" fill="none" stroke="#C5EEEA" stroke-width="1.4"/>
+  <path d="M174 69Q164 82 174 90Q184 82 174 69Z" fill="#73B8C6" stroke="#4B8FA0" stroke-width="1.2"/><path d="M164 95Q174 88 184 95m-23 8q23-16 46 0" fill="none" stroke="#E5F9F6" stroke-width="1.8" stroke-linecap="round"/><circle cx="175" cy="99" r="2" fill="#FFFFFF"/><path d="M184 124q8-3 15 0" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M54 130q9-17 30-18m138 3q19 1 29 13m-163 21 15-2m102 1 15-2" fill="none" stroke="#E5D5B8" stroke-width="1.2"/><circle cx="74" cy="146" r="1.6" fill="#594632"/><circle cx="228" cy="147" r="1.8" fill="#594632"/><ellipse cx="45" cy="137" rx="2.2" ry="1.2" fill="#755D43"/><ellipse cx="260" cy="135" rx="2.5" ry="1.3" fill="#755D43"/><circle cx="175" cy="75" r="1.1" fill="#FFFFFF"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M68 127q12-13 32-11m114 1q17-2 26 8m-106 5q25 6 48 1" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><circle cx="177" cy="74" r="1.1" fill="#FFF8E7"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: Moses basket (Noun)
+  CONTEXTUAL_DEFINITION: A small portable woven bassinet for a newborn.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A compact woven basket with two handles and a padded mattress contrasts with a full-sized fixed crib.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft nursery floor and wall.
+    - Context_Layer: Folded blanket beside the basket.
+    - Focal_Layer: Small oval woven baby basket with handles.
+    - Details_Layer: Crosshatched weave, mattress, and curved handle.
+    - Lighting_Layer: Cozy warm halo around the portable bassinet.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:moses basket" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="moses-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="moses-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#moses-bg)"/><path d="M0 153Q79 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M29 38H275V147H29Z" fill="#E3E8F0" opacity=".46"/><path d="M40 150V168M264 150V168" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M47 132L84 123L98 130L61 141Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M54 132L84 125" stroke="#FFFFFF" stroke-width="1.8"/><circle cx="230" cy="129" r="14" fill="#D9857F" stroke="#64748B" stroke-width="1.4"/><path d="M219 140H241" stroke="#80513F" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#moses-shadow)"><path d="M70 90Q70 76 84 76H220Q234 76 234 90L222 141Q218 151 204 151H100Q86 151 82 141Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.7"/><path d="M87 84Q151 31 217 84" fill="none" stroke="#80513F" stroke-width="4"/><path d="M81 93Q151 86 223 93M84 106Q151 99 220 106M87 119Q151 113 217 119M91 132Q151 126 212 132" fill="none" stroke="#A86E3A" stroke-width="2.3"/><path d="M91 88L98 137M108 87L113 144M128 86L130 147M151 85V148M174 86L171 147M195 87L190 143M212 89L204 137" stroke="#E6B95B" stroke-width="1.7"/><path d="M88 85Q151 75 216 85V96Q151 88 86 96Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.3"/><path d="M105 87Q151 81 198 87" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M97 62Q152 49 208 62" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="66" cy="76" r="2.4" fill="#D9A441"/><circle cx="237" cy="76" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="108" rx="114" ry="73" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".26"/><path d="M86 39Q152 25 218 39" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

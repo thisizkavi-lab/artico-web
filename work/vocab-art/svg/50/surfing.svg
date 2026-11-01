@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: surfing (Noun)
+  CONTEXTUAL_DEFINITION: Riding a breaking wave while standing on a long surfboard.
+  PEDAGOGICAL_ART_DIRECTOR: Show the rider standing with bent knees and arms extended on a long board over a curling wave.
+  PEDAGOGICAL_ARCHETYPE: 4 - Agent-to-object action
+  SYNONYM_GUARD: The surfer stands on a full-size surfboard, unlike a bodyboarder who lies prone on a short board.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Surfer balanced upright on a long pointed board, knees flexed, one arm forward, on a green-blue curling wave.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:surfing" data-archetype="surfing-action">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="su-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#BBDDE0"/></linearGradient><linearGradient id="su-wave" x2="0" y2="1"><stop stop-color="#69BFBE"/><stop offset="1" stop-color="#247A91"/></linearGradient><linearGradient id="su-board" x2="1" y2="1"><stop stop-color="#F4CF7F"/><stop offset="1" stop-color="#D7834B"/></linearGradient><filter id="su-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.3" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="87" fill="url(#su-sky)"/><path d="M0 87Q72 82 145 88T304 84V153H0Z" fill="url(#su-wave)"/><path d="M0 151H304V192H0Z" fill="#E5CF9E"/></g>
+ <g id="layer-context"><circle cx="254" cy="36" r="13" fill="#EBC86F" opacity=".8"/><path d="M0 112Q66 102 128 112T252 107T304 109" fill="none" stroke="#A1E0DA" stroke-width="2"/><path d="M24 169H280" fill="none" stroke="#D8BE86" stroke-width="1.2"/><path d="M31 57q13-9 28 0m198-13q14-9 29 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#su-shadow)">
+  <path d="M0 133Q32 121 59 127Q94 138 115 111Q134 85 157 86Q178 88 180 109Q181 128 203 133Q247 143 304 117V153H0Z" fill="url(#su-wave)"/>
+  <path d="M115 111Q134 86 157 88Q175 89 179 106Q163 94 150 98Q134 99 122 119Z" fill="#F8FBF2" stroke="#D9EFE6" stroke-width="1"/>
+  <path d="M96 140Q152 126 211 137Q224 140 231 146Q210 152 180 149L108 149Q92 148 96 140Z" fill="url(#su-board)" stroke="#9D6842" stroke-width="1.4"/>
+  <path d="M142 126L136 109L141 94L150 80" fill="none" stroke="#354A50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M160 125L170 109L166 94L160 80" fill="none" stroke="#354A50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M137 109L152 107L170 109L178 125L164 132L143 131Z" fill="#D7834B" stroke="#8D563D" stroke-width="1.2"/>
+  <circle cx="155" cy="70" r="8" fill="#D39A72" stroke="#714E3E" stroke-width=".9"/><path d="M147 70Q147 61 155 62Q163 63 162 71Q154 67 147 70Z" fill="#394648"/>
+  <path d="M146 82L126 76L107 62M160 82L177 70L193 55" fill="none" stroke="#D39A72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M106 62l-6-4m94-3 6-5" fill="none" stroke="#D39A72" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M137 135l9 2m19 0 10-1" fill="none" stroke="#F9E4B1" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details"><path d="M113 111Q133 87 155 89M36 128q22-6 44 2m133 9q23 4 43-3" fill="none" stroke="#EAF8F2" stroke-width="1.3"/><path d="M113 141q47-8 90 0" fill="none" stroke="#FFF0C7" stroke-width="1.1"/><circle cx="156" cy="69" r="1" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M114 110Q134 88 154 90M107 62l18 11m52-2 12-12" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".6"/><circle cx="155" cy="69" r="1.1" fill="#FFF8E7"/></g>
+</svg>

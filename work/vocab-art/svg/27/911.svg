@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 27 — Crime and the law
+  WORD: 911 (Noun)
+  CONTEXTUAL_DEFINITION: The US telephone number used to contact emergency services.
+  PEDAGOGICAL_ARCHETYPE: 4 — Urgent action with phone and emergency response cue
+  SYNONYM_GUARD: Show someone placing an urgent call for help, with no digits or written text inside the illustration.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: A home interior with a view of a neighborhood street through a window.
+    - Context_Layer: A phone's bright call icon and a distant patrol-car light establish emergency services.
+    - Focal_Layer: A worried person holds the phone to their ear and raises a free hand for help.
+    - Details_Layer: A small pulse mark and outward signal lines convey urgency without text.
+    - Lighting_Layer: Cool dusk light with a calm gold phone glow keeps the scene reassuring.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="27:911" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="call911-bg" x2="0" y2="1"><stop stop-color="#DDE8F3"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="call911-glow"><stop stop-color="#FDE68A" stop-opacity=".5"/><stop offset="1" stop-color="#FDE68A" stop-opacity="0"/></radialGradient><filter id="call911-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#call911-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="2.7"/><rect x="194" y="29" width="85" height="74" rx="3" fill="#FCFEFF" stroke="#94A3B8" stroke-width="1.7"/><path d="M235 30V102M195 66H278" stroke="#CBD5E1" stroke-width="1.5"/><path d="M211 80H256V99H211Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1"/><path d="M218 80V72Q218 66 225 66Q232 66 232 72V80" fill="none" stroke="#F2C14E" stroke-width="2.4"/><path d="M238 83L249 78L259 83V92H238Z" fill="#5479AC"/><circle cx="245" cy="94" r="3" fill="#D9857F"/><circle cx="254" cy="94" r="3" fill="#F2C14E"/><path d="M24 116H82V125H24Z" fill="#C88446" stroke="#965D28" stroke-width="1.1"/><path d="M31 125V151M76 125V151" stroke="#965D28" stroke-width="2.3"/></g>
+  <g id="layer-context"><ellipse cx="153" cy="151" rx="127" ry="5" fill="#DDD4C3"/><ellipse cx="133" cy="89" rx="69" ry="60" fill="url(#call911-glow)"/><path d="M99 141H160V148H99Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1.1"/><path d="M106 148V151M153 148V151" stroke="#64748B" stroke-width="1.7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#call911-shadow)"><circle cx="131" cy="84" r="13" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.3"/><path d="M118 84Q119 66 132 67Q145 68 144 85" fill="#27364B"/><path d="M111 105Q131 96 151 105L157 137L146 148H120L105 137Z" fill="#5479AC" stroke="#315782" stroke-width="1.6"/><path d="M118 108L105 103L96 93M146 108L158 99L169 92" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M118 108L105 103L96 93M146 108L158 99L169 92" fill="none" stroke="#F5BFA3" stroke-width="3.3" stroke-linecap="round"/><path d="M121 144L117 162M145 144L150 162" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M121 144L117 162M145 144L150 162" stroke="#315782" stroke-width="3.1" stroke-linecap="round"/><rect x="91" y="77" width="12" height="22" rx="3" transform="rotate(-24 97 88)" fill="#315782" stroke="#1E2A3B" stroke-width="1.2"/><path d="M93 82Q98 78 102 84M94 88Q99 84 103 90" fill="none" stroke="#F2C14E" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M127 94Q131 97 135 94" fill="none" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round"/><path d="M124 80L128 78M136 78L140 80" stroke="#1E2A3B" stroke-width="1.2"/><path d="M82 78L76 73M83 91L75 91M165 78L172 72M168 91L177 91" stroke="#D9857F" stroke-width="1.7" stroke-linecap="round"/><path d="M211 97H217M259 97H265" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/><ellipse cx="132" cy="164" rx="39" ry="3" fill="#DDD4C3" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="135" cy="87" rx="89" ry="70" fill="#FEF9C3" opacity=".04"/><path d="M194 30H235M196 32V100" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/></g>
+</svg>

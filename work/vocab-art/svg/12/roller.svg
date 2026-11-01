@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: roller (paint) (Noun)
+  CONTEXTUAL_DEFINITION: A paint applicator with a rotating cylindrical cover on a frame and handle.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero tool with surface cue
+  SYNONYM_GUARD: Show a thick cylindrical roller sleeve and its bent metal frame; a paintbrush has a flat bundle of bristles.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale wall with one broad fresh paint stripe and a small tray.
+    - Context_Layer: Roller tray with shallow paint pool at x=210,y=143.
+    - Focal_Layer: Purple cylindrical sleeve centered x=158,y=81, frame to handle at x=118,y=146.
+    - Details_Layer: Sleeve nap, end cap, metal frame bend, handle grip, tray ridges, and paint stripe.
+    - Lighting_Layer: Soft gloss on the roller sleeve and upper edge of the wet stripe.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:roller (paint)" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#8B5CA8;--c-secondary:#633B7D;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="sleeve-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B792CF"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 145H304V192H0Z" fill="#D9C6AB"/><path d="M0 141H304" stroke="#8A5A35" stroke-width="2"/><path d="M50 40H90V120H50Z" fill="#B792CF" opacity=".45"/><path d="M56 42H84V118H56Z" fill="#8B5CA8" opacity=".65"/><ellipse cx="154" cy="157" rx="76" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M204 132H268L256 153H211Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M210 137H262L255 149H214Z" fill="#8B5CA8"/><path d="M215 139H254" stroke="#B792CF" stroke-width="1.4"/><path d="M216 151H255" stroke="#64748B" stroke-width="1.2"/><circle cx="214" cy="136" r="2" fill="#F2C14E"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><rect x="117" y="53" width="85" height="48" rx="20" fill="url(#sleeve-grad)" stroke="#1E2A3B" stroke-width="2.6"/><ellipse cx="119" cy="77" rx="8" ry="24" fill="#B792CF" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="199" cy="77" rx="7" ry="23" fill="#633B7D" stroke="#1E2A3B" stroke-width="1.6"/><path d="M129 57V97M138 56V98M147 55V99M156 55V99M165 55V99M174 55V99M183 56V98" stroke="#D7C1E5" stroke-width="1.4" opacity=".7"/><path d="M157 102V119Q157 130 145 137L135 143" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M157 102V119Q157 130 145 137L135 143" fill="none" stroke="#CBD5E1" stroke-width="3.5" stroke-linecap="round"/><path d="M133 137L120 148Q116 151 119 156L137 161Q144 162 146 155L145 143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M123 151L139 155" stroke="#8EB0DE" stroke-width="1.6" stroke-linecap="round"/><path d="M116 77H110" stroke="#94A3B8" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M127 65Q145 58 168 61" stroke="#D7C1E5" stroke-width="2" stroke-linecap="round"/><path d="M117 53L117 101M202 67V87" stroke="#1E2A3B" stroke-width="1.4"/><path d="M99 56L105 52M96 66L103 63M96 89L103 92" stroke="#5479AC" stroke-width="1.6"/><circle cx="144" cy="111" r="2" fill="#CBD5E1"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M124 62Q142 54 164 57" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".75"/><path d="M51 43V93" stroke="#F3E9F8" stroke-width="1.3" opacity=".7"/><path d="M211 135H251" stroke="#FFFFFF" stroke-width="1.4" opacity=".65"/></g>
+</svg>

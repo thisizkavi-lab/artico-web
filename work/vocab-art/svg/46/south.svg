@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: south
+  CONTEXTUAL_DEFINITION: The compass direction toward the bottom edge of a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Highlight a strong downward bearing on a compass over a coastal route map; a harbor at the bottom edge reinforces the map orientation.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: Make the bottomward bearing unmistakable; the harbor is a cue, not the sole meaning.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Coastal map occupies x=18..286; compass centered (152,77), with blue needle toward y=111; coastline and small harbor sit along y=144..177.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:south" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="south-sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C8E0E7"/><stop offset="1" stop-color="#8AB8CC"/></linearGradient>
+    <linearGradient id="south-land" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#E8EEDB"/><stop offset="1" stop-color="#C4D9B8"/></linearGradient>
+    <radialGradient id="south-halo"><stop stop-color="#6D94C9" stop-opacity=".35"/><stop offset="1" stop-color="#6D94C9" stop-opacity="0"/></radialGradient>
+    <filter id="south-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#south-sea)"/><path d="M0 135Q35 121 69 136T139 135Q171 126 194 139L194 192H0Z" fill="url(#south-land)"/><path d="M0 135Q35 121 69 136T139 135Q171 126 194 139" fill="none" stroke="#597A70" stroke-width="2"/><path d="M200 135Q223 127 246 136T304 130V192H200Z" fill="#E7E0D4"/><path d="M0 169H304" stroke="#FAF8F3" stroke-width="2" opacity=".7"/></g>
+  <g id="layer-context"><path d="M10 35Q57 22 104 35T196 34V143Q168 133 140 143T82 141Q42 131 10 144Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/><path d="M14 72H192M61 33V140M139 34V138" stroke="#C4CEC0" stroke-width="1.5"/><path d="M20 100H188M100 39V137" stroke="#5A6D7E" stroke-width="11"/><path d="M20 100H188M100 39V137" stroke="#F8F6EF" stroke-width="1.5" stroke-dasharray="6 6"/><path d="M193 137L206 120L220 137L232 116L249 139L267 116L286 139" fill="#C5D5C1" stroke="#526F68" stroke-width="1.7"/><path d="M208 148H288V171H208Z" fill="#B88762" stroke="#695140" stroke-width="1.8"/><path d="M219 146V165M239 145V165M260 143V165" stroke="#FAF8F3" stroke-width="2"/><path d="M226 166L237 150L248 166Z" fill="#F6F4E9" stroke="#40546A" stroke-width="1.3"/><path d="M256 167L268 148L281 167Z" fill="#E7F0F2" stroke="#40546A" stroke-width="1.3"/></g>
+  <g id="layer-focal" filter="url(#south-shadow)"><ellipse cx="105" cy="80" rx="52" ry="59" fill="url(#south-halo)"/><circle cx="105" cy="80" r="38" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="105" cy="80" r="29" fill="#E7EFF0" stroke="#879A9D" stroke-width="1.5"/><path d="M105 44L114 76L105 81L96 76Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.3"/><path d="M141 80L109 89L105 80L109 71Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.3"/><path d="M105 116L96 84L105 79L114 84Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.7"/><path d="M69 80L101 71L105 80L101 89Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="105" cy="80" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M105 81V135" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><path d="M105 81V135" stroke="#4A72B2" stroke-width="5.5" stroke-linecap="round"/><path d="M94 127L105 151L116 127Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="105" cy="81" r="4" fill="#FFFFFF"/><path d="M16 52Q48 44 76 51M127 51Q156 44 184 52" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><path d="M221 178H284" stroke="#5E99B8" stroke-width="2" stroke-dasharray="4 5"/><path d="M24 121L32 116L40 120" fill="none" stroke="#78A27B" stroke-width="2"/><circle cx="178" cy="119" r="3" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><circle cx="105" cy="80" r="43" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M25 43Q63 33 91 43" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/><path d="M218 142H285" stroke="#F8FFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

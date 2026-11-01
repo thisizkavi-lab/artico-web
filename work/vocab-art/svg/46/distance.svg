@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: distance
+  CONTEXTUAL_DEFINITION: The space or length between two places.
+  PEDAGOGICAL_ART_DIRECTOR: Show two separated destination pins and a measured route between them, with a clear bracket that spans the gap.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make separation between places the focus; do not turn this into a road-type or travel-action scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A map panel contains two widely separated gold and blue pins at (58,83) and (245,83); a curved blue route connects them and a double-ended measuring line spans above.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:distance" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="distance-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EDF2E7"/><stop offset="1" stop-color="#D5E2D1"/></linearGradient>
+  <linearGradient id="distance-route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#789FD5"/><stop offset="1" stop-color="#3E65A2"/></linearGradient>
+  <linearGradient id="distance-pin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F6D882"/><stop offset="1" stop-color="#D79A4C"/></linearGradient>
+  <filter id="distance-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E3EBDF"/><path d="M16 21H288V174H16Z" fill="url(#distance-map)" stroke="#6F817A" stroke-width="1.5"/><path d="M24 65Q57 48 94 63T159 62T222 64T280 55M27 144Q61 126 100 141T170 137T231 145T278 129M39 28Q54 55 45 85T56 163M246 28Q230 57 241 82T229 164" fill="none" stroke="#A9C39F" stroke-width="2"/><path d="M18 104H105L145 125H286M92 23L104 68L88 112L101 172" fill="none" stroke="#B8C5BD" stroke-width="1.5"/><path d="M62 83C95 51 124 62 151 92S202 122 240 83" fill="none" stroke="#4A72B2" stroke-width="3.5" stroke-dasharray="7 5" stroke-linecap="round"/></g>
+ <g id="layer-context"><circle cx="101" cy="47" r="8" fill="#83AA78" stroke="#486750" stroke-width="1.4"/><circle cx="204" cy="137" r="9" fill="#83AA78" stroke="#486750" stroke-width="1.4"/><rect x="32" y="127" width="30" height="20" rx="3" fill="#D3B998" stroke="#766857" stroke-width="1.2"/><path d="M28 130L47 116L66 130Z" fill="#92745B" stroke="#1E2A3B" stroke-width="1.1"/><rect x="247" y="44" width="29" height="20" rx="3" fill="#B7CCD0" stroke="#60747D" stroke-width="1.2"/><path d="M243 47L262 34L280 47Z" fill="#6B7D86" stroke="#1E2A3B" stroke-width="1.1"/></g>
+ <g id="layer-focal" filter="url(#distance-shadow)"><path d="M57 46L68 81L57 76L46 81Z" fill="#D79A4C" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="57" cy="48" r="7" fill="url(#distance-pin)" stroke="#8A663A" stroke-width="1.4"/><path d="M245 46L256 81L245 76L234 81Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="245" cy="48" r="7" fill="#78A0D8" stroke="#314E78" stroke-width="1.4"/><path d="M60 30V22H242V30M60 22L68 17M60 22L68 27M242 22L234 17M242 22L234 27" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M151 17V27" stroke="#F2C14E" stroke-width="2.4"/></g>
+ <g id="layer-details"><path d="M51 102L64 102M238 102H252" stroke="#F8F5EA" stroke-width="2.4"/><circle cx="150" cy="92" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M117 105L128 97M178 76L190 81" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="32" cy="46" r="3" fill="#82A77D"/><circle cx="278" cy="131" r="3" fill="#82A77D"/><path d="M33 159H85M219 159H273" stroke="#A9B5AA" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="96" rx="100" ry="50" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".42"/><path d="M20 24H284" stroke="#FFFFFF" stroke-width="1.2" opacity=".6"/><circle cx="57" cy="48" r="12" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".55"/><circle cx="245" cy="48" r="12" fill="none" stroke="#4A72B2" stroke-width="1.2" opacity=".45"/></g>
+</svg>

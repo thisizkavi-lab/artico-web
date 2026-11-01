@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 21 — Family and relationships
+  WORD: neighbor (Noun)
+  CONTEXTUAL_DEFINITION: A person who lives nearby.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Residents of two adjacent homes greet each other over a low garden fence, selecting the nearby-person sense from the Japanese gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two neighboring home fronts with separate doors.
+    - Context_Layer: A low fence and flowering garden.
+    - Focal_Layer: One resident offers a small basket across the fence to the other.
+    - Details_Layer: Open welcoming gestures and front steps.
+    - Lighting_Layer: Shared soft daylight across the property boundary.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="21:neighbor" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="neighbor-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="neighbor-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#neighbor-sky)"/><path d="M0 118L70 48L148 118V192H0Z" fill="#F3ECE1"/><path d="M148 118L220 48L304 118V192H148Z" fill="#E3E8F0"/><path d="M20 103H76V158H20ZM223 103H281V158H223Z" fill="#5479AC" stroke="#64748B" stroke-width="2"/><path d="M34 159V124H62V159M237 159V124H267V159" fill="#80513F" stroke="#64748B" stroke-width="1.8"/><path d="M0 157Q75 149 151 157T304 154V192H0Z" fill="#DCEAD6"/></g>
+  <g id="layer-context"><path d="M0 143H304" stroke="#80513F" stroke-width="3"/><path d="M0 153H304M18 139V165M49 139V165M80 139V165M111 139V165M142 139V165M173 139V165M204 139V165M235 139V165M266 139V165M297 139V165" stroke="#829A83" stroke-width="3"/><path d="M23 135Q27 119 36 135M268 134Q276 116 284 134" fill="#829A83"/><circle cx="31" cy="130" r="3" fill="#D9857F"/><circle cx="278" cy="128" r="3" fill="#F2C14E"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#neighbor-shadow)"><path d="M54 168Q56 139 70 132Q85 127 100 136L104 169Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="78" cy="112" r="19" fill="#C98961" stroke="#1E2A3B" stroke-width="2"/><path d="M59 111Q61 91 78 91Q97 92 97 113L91 117Q87 99 77 100Q68 100 62 121Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M67 112Q71 115 74 112M80 112Q84 115 88 112M68 122Q78 127 88 122" fill="none" stroke="#1E2A3B" stroke-width="1.3" stroke-linecap="round"/><path d="M94 139Q113 130 132 136" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M94 139Q113 130 132 136" stroke="#C98961" stroke-width="4.3" stroke-linecap="round"/><path d="M191 168Q193 139 208 132Q223 127 239 136L244 169Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="218" cy="112" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M199 111Q201 91 218 91Q237 92 237 113L231 117Q227 99 217 100Q208 100 202 121Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M207 112Q211 115 214 112M220 112Q224 115 228 112M208 122Q218 127 228 122" fill="none" stroke="#1E2A3B" stroke-width="1.3" stroke-linecap="round"/><path d="M210 137Q181 127 156 137" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M210 137Q181 127 156 137" stroke="#F5BFA3" stroke-width="4.3" stroke-linecap="round"/><path d="M140 132H155L160 140H136Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M139 130Q148 123 157 130" fill="none" stroke="#80513F" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M61 82Q78 76 94 82M200 82Q217 76 234 82" fill="none" stroke="#FFFFFF" stroke-width="2.5"/><path d="M134 115Q152 108 170 115" fill="none" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="3 6" opacity=".65"/><circle cx="151" cy="111" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="118" rx="140" ry="75" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".25"/><path d="M30 36Q151 14 278 35" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

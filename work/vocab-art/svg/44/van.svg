@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: van
+  CONTEXTUAL_DEFINITION: A compact enclosed road vehicle used to carry people or goods.
+  PEDAGOGICAL_ART_DIRECTOR: Show a short high-roof van with an enclosed cargo compartment and a side sliding door, smaller and lighter than the truck.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with functional part
+  SYNONYM_GUARD: Do not draw a full-size box truck; make this a compact single-body vehicle with a short hood and enclosed rear body.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Keep van body x=56..250 and y=75..148; wheels at (94,145) and (219,145); use one continuous roofline, short hood, front cabin window, and sliding cargo door.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:van" data-archetype="hero-road-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="van-body" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#D7E1E6"/><stop offset="1" stop-color="#91A6B1"/></linearGradient>
+    <linearGradient id="van-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F3FAFD"/><stop offset="1" stop-color="#BBD2E0"/></linearGradient>
+    <radialGradient id="van-halo"><stop stop-color="#DCE9F2" stop-opacity=".65"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="van-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><path d="M14 168 H290" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="18 13"/><ellipse cx="153" cy="158" rx="105" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="27" width="248" height="117" rx="5" fill="#F0EEE8" stroke="#D4CCBD" stroke-width="1.2"/><path d="M46 139 H262" stroke="#B9C2CE" stroke-width="1.2"/><path d="M39 80 V132 M39 80 H56" stroke="#C8B992" stroke-width="2"/><rect x="43" y="105" width="17" height="19" rx="2" fill="#D6A66A" stroke="#8D6946" stroke-width="1"/><rect x="52" y="112" width="12" height="12" rx="2" fill="#A8C69F" stroke="#64845E" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#van-shadow)"><path d="M52 119 L61 96 Q65 87 80 83 L97 77 Q104 72 118 72 H207 Q221 72 228 84 L244 98 Q251 104 253 116 V142 H52 Z" fill="url(#van-body)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M76 94 Q80 87 90 85 L103 80 V109 H67 Z" fill="url(#van-glass)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M107 79 H131 V110 H107 Z" fill="#EAF0F3" stroke="#64748B" stroke-width="1.2"/><path d="M135 79 H200 Q210 79 216 89 L224 109 H135 Z" fill="#BBC9D0" stroke="#64748B" stroke-width="1.2"/><path d="M131 78 V137 M226 101 V137" stroke="#1E2A3B" stroke-width="2"/><path d="M136 115 H220 V136 H136 Z" fill="#C1CDD2" stroke="#64748B" stroke-width="1.4"/><path d="M144 119 V132 M214 119 V132" stroke="#8E9CA5" stroke-width="1.2"/><path d="M71 116 H128 V132 H71 Z" fill="#E5EBED" stroke="#64748B" stroke-width="1.2"/><circle cx="94" cy="145" r="18" fill="#263548" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="94" cy="145" r="9" fill="#E7EDF3" stroke="#8A97A7" stroke-width="1.8"/><circle cx="219" cy="145" r="18" fill="#263548" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="219" cy="145" r="9" fill="#E7EDF3" stroke="#8A97A7" stroke-width="1.8"/><path d="M53 118 H62 V131 H53 Z" fill="#FEF3C7" stroke="#1E2A3B" stroke-width="1.2"/><path d="M238 112 H251 V122 H238 Z" fill="#D77961" stroke="#1E2A3B" stroke-width="1.2"/><path d="M205 112 H216" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><circle cx="210" cy="122" r="2" fill="#5479AC"/></g>
+  <g id="layer-details"><path d="M92 75 Q115 69 149 70 H199" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M75 105 H100 M143 105 H219" stroke="#FFFFFF" stroke-width="1.1" opacity=".85"/><path d="M121 113 H126 M123 110 V116" stroke="#5479AC" stroke-width="1.4" stroke-linecap="round"/><path d="M63 138 H251" stroke="#64748B" stroke-width="1.4"/><circle cx="117" cy="126" r="1.8" fill="#5479AC"/><path d="M88 142 L97 148 M213 142 L222 148" stroke="#BFC9D3" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="81" rx="108" ry="66" fill="url(#van-halo)" opacity=".2"/><path d="M32 37 H272" stroke="#FFFFFF" stroke-width=".7"/><path d="M30 148 H274" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

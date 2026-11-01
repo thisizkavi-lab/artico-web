@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: shocking (Adjective)
+  CONTEXTUAL_DEFINITION: Causing a sudden, intense surprise, shown by a jack-in-the-box popping up unexpectedly.
+  PEDAGOGICAL_ARCHETYPE: 3 (Sudden event paired with a startled reaction)
+  SYNONYM_GUARD: The toy's spring-loaded clown pops out without warning; the shock is immediate and distinct from quiet strangeness.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Child's playroom with a simple rug and toy shelf.
+    - Context_Layer: Child recoils with wide eyes and raised hands.
+    - Focal_Layer: Open toy box and springing clown head.
+    - Details_Layer: Visible metal spring, loose lid and startled marks.
+    - Lighting_Layer: Bright flash around the sudden pop.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:shocking" data-archetype="expressive-bust">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 145 Q152 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="21" y="31" width="73" height="49" rx="5" fill="#E9EFF5" stroke="#CBD5E1" stroke-width="1.6"/><path d="M35 44 L80 44 M35 54 L72 54" stroke="#FFFFFF" stroke-width="2.2"/><ellipse cx="154" cy="162" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M31 151 Q34 124 57 121 Q80 124 83 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="57" cy="104" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M38 103 Q39 82 58 84 Q77 86 76 105 Q67 94 56 95Z" fill="#6B4B35"/><ellipse cx="49" cy="104" rx="3" ry="4" fill="#FFFFFF"/><ellipse cx="62" cy="104" rx="3" ry="4" fill="#FFFFFF"/><circle cx="50" cy="103" r="1.5" fill="#1E2A3B"/><circle cx="63" cy="103" r="1.5" fill="#1E2A3B"/><ellipse cx="57" cy="115" rx="4" ry="5" fill="#A34F47"/><path d="M43 129 Q32 119 27 108 M72 130 Q84 118 88 106" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M143 133 L213 133 L205 158 L151 158Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.5"/><path d="M144 133 L127 120 L133 111 L157 124 M212 133 L229 120 L223 111 L199 124" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M164 125 C151 119 153 111 166 108 C153 100 160 92 174 94 C161 84 170 77 182 82 C172 71 183 66 193 72" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M164 125 C151 119 153 111 166 108 C153 100 160 92 174 94 C161 84 170 77 182 82 C172 71 183 66 193 72" fill="none" stroke="#CBD5E1" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="181" cy="55" r="23" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M158 54 Q159 30 182 32 Q204 33 204 56 Q193 45 180 46 Q169 52 158 54Z" fill="#CE3D4E"/><path d="M162 41 Q181 27 199 41 M160 51 Q182 37 203 51" fill="none" stroke="#F2C14E" stroke-width="2.1"/><circle cx="174" cy="56" r="3.4" fill="#FFFFFF"/><circle cx="188" cy="56" r="3.4" fill="#FFFFFF"/><circle cx="175" cy="55" r="1.5" fill="#1E2A3B"/><circle cx="189" cy="55" r="1.5" fill="#1E2A3B"/><ellipse cx="181" cy="66" rx="3.5" ry="4.5" fill="#A34F47"/></g>
+  <g id="layer-details"><path d="M124 75 L130 65 L136 75 L146 80 L136 85 L130 95 L124 85 L114 80Z" fill="#F2C14E"/><path d="M222 76 L227 66 L232 76 L242 81 L232 86 L227 96 L222 86 L212 81Z" fill="#F2C14E"/><path d="M154 82 L148 73 M205 78 L212 69 M153 96 L146 94" stroke="#CE3D4E" stroke-width="2.7" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M164 38 Q180 29 197 38 M153 130 Q179 135 204 130" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: tuna (noun)
+  CONTEXTUAL_DEFINITION: A powerful streamlined tuna cruising through open water, with finlets near the tail and a deeply forked crescent tail.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero fish with hydrodynamic body and fins
+  SYNONYM_GUARD: Use a torpedo-shaped body and small repeated finlets along the narrow tail stock; do not confuse it with the pink-striped salmon or speckled trout.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Dark blue tuna faces right; thick torpedo body x=75..215 y=70..126, narrow caudal peduncle and crescent tail x=248, dorsal and anal finlets, blue back fading to silver belly, short pectoral fin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:tuna" data-archetype="tuna-torpedo-body-finlets-crescent-tail">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#426C83;--c-secondary:#2D4757;--c-accent:#D9A64B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="tuna-water" x2="0" y2="1"><stop stop-color="#A0C9C9"/><stop offset="1" stop-color="#3E7D92"/></linearGradient>
+  <linearGradient id="tuna-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#668CA0"/><stop offset=".48" stop-color="#426D82"/><stop offset="1" stop-color="#C7D2C9"/></linearGradient>
+  <filter id="tuna-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DBEAE7"/><path d="M0 23Q74 17 151 25T304 21V192H0Z" fill="url(#tuna-water)"/><path d="M0 158Q76 150 153 159T304 154V192H0Z" fill="#4B8898"/></g>
+ <g id="layer-context"><path d="M0 31q35-6 70 0m172-3q29-6 62 0" fill="none" stroke="#D8ECE6" stroke-width="1.4"/><path d="M23 143q15-5 30 0m202-7q15-5 29 0m-152 35q16-5 33 0" fill="none" stroke="#A8D5D3" stroke-width="1.4" stroke-linecap="round"/><circle cx="51" cy="102" r="2" fill="#E8F7F0"/><circle cx="59" cy="92" r="1.2" fill="#E8F7F0"/><ellipse cx="153" cy="139" rx="82" ry="7" fill="#173D49" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#tuna-shadow)">
+  <path d="M215 94Q230 79 242 69Q241 88 229 99Q241 111 244 130Q229 122 214 106Z" fill="#476F83" stroke="#2D4B5B" stroke-width="1.5"/>
+  <path d="M82 90Q98 73 133 69Q170 66 198 78Q214 85 222 97Q217 110 202 117Q171 130 133 126Q100 122 82 107Z" fill="url(#tuna-body)" stroke="#304F5D" stroke-width="1.7"/>
+  <path d="M95 107Q128 122 164 118Q193 115 216 105Q204 123 174 130Q131 133 102 120Z" fill="#D8DCD3" opacity=".86"/>
+  <path d="M135 71Q143 57 156 55Q167 56 172 76Z" fill="#3F667B" stroke="#2E4C5B" stroke-width="1.2"/>
+  <path d="M145 124Q154 138 169 132L176 120Z" fill="#456E80" stroke="#304F5D" stroke-width="1"/>
+  <path d="M156 106Q166 112 175 124Q161 124 151 114Z" fill="#496F80" stroke="#304F5D" stroke-width="1"/>
+  <path d="M206 87L219 84L214 92M208 89L221 90L214 96M210 108L223 111L215 102M207 113L218 118L213 107" fill="#638696" stroke="#304F5D" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="M87 94Q80 99 79 104Q84 109 90 108" fill="none" stroke="#304F5D" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="89" cy="93" r="2" fill="#1E2A3B"/>
+  <path d="M82 110q-6 2-10-1" fill="none" stroke="#304F5D" stroke-width="1" stroke-linecap="round"/>
+  <path d="M104 79q24-9 43-7m-38 12q23-8 42-6" fill="none" stroke="#A8C5C8" stroke-width="1.2" opacity=".75" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M121 118q19 4 37 1m-47-35q10-5 19-4" fill="none" stroke="#C3D5D0" stroke-width="1.2" stroke-linecap="round"/><circle cx="175" cy="97" r="1.1" fill="#E7F1E9"/><path d="M34 126q12-4 24 0m191 26q13-4 25 0" fill="none" stroke="#C4E1DE" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M100 78q16-9 29-7m42 2q10 2 17 6" fill="none" stroke="#F6F9EF" stroke-width="1.5" opacity=".54" stroke-linecap="round"/><ellipse cx="154" cy="95" rx="64" ry="20" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

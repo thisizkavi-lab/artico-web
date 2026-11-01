@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: ticket
+ CONTEXTUAL_DEFINITION: A perforated admission ticket checked at the entrance to a theater.
+ PEDAGOGICAL_ARCHETYPE: theater ticket checked at entrance
+ SYNONYM_GUARD: Make the ticket an admission pass being checked by an usher; not a transit ticket, ticket gate or traffic citation.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: At a theater doorway, an usher checks a large blank perforated ticket held between two hands; curtains and seated patrons establish the venue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:ticket" data-archetype="theater ticket checked at entrance">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M28 25H276V152H28Z" fill="#26384A"/><path d="M38 34H266V148H38Z" fill="#405663"/>
+  <path d="M58 44H246V140H58Z" fill="#E7D8BF"/>
+  <path d="M46 47H79V137H46Z M258 47H225V137H258Z" fill="#B85E5A"/>
+  <path d="M49 55Q62 63 77 54V136H49Z M255 55Q242 63 227 54V136H255Z" fill="#D17A6B"/>
+  <path d="M78 139H226V148H78Z" fill="#D6A64C"/>
+  <path d="M0 151H304" stroke="#EFE3CC" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M60 149H244" stroke="#26384A" stroke-width="3" fill="none"/>
+  <circle cx="70" cy="150" r="3" fill="#D29A78"/><circle cx="88" cy="150" r="3" fill="#D29A78"/><circle cx="106" cy="150" r="3" fill="#D29A78"/><circle cx="198" cy="150" r="3" fill="#D29A78"/><circle cx="216" cy="150" r="3" fill="#D29A78"/><circle cx="234" cy="150" r="3" fill="#D29A78"/>
+  <path d="M64 154h12m6 0h12m6 0h12m78 0h12m6 0h12m6 0h12" stroke="#405663" stroke-width="2" fill="none"/>
+  <path d="M42 40H262M42 143H262" stroke="#A88C66" stroke-width="1" fill="none"/>
+  <circle cx="62" cy="35" r="2" fill="#D6A64C"/><circle cx="242" cy="35" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="92" cy="92" r="9" fill="#D29A78"/><path d="M82 102Q92 96 102 102L105 143H78Z" fill="#597D8B"/>
+  <path d="M84 110L112 120m17-16 20 10" stroke="#D29A78" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="209" cy="90" r="9" fill="#D29A78"/><path d="M199 100Q209 94 219 100L223 143H195Z" fill="#B85E5A"/>
+  <path d="M201 108L184 117m20-12-13 13" stroke="#D29A78" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M112 94H190V119H112Z" fill="#F7EBD3" stroke="#8A745E" stroke-width="1.3"/>
+  <path d="M120 94V119m54-25v25" stroke="#B8A98B" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+  <path d="M123 101h25m-25 5h19" stroke="#D6A64C" stroke-width="1.3" fill="none"/>
+  <circle cx="119" cy="107" r="2" fill="#B85E5A"/><circle cx="181" cy="107" r="2" fill="#B85E5A"/>
+ </g>
+ <g id="layer-details">
+  <path d="M52 43H252M82 135H222" stroke="#F5E8CD" stroke-width="1.1" fill="none"/>
+  <path d="M132 84q5-5 10 0m11 0q5-5 10 0" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <circle cx="152" cy="70" r="2" fill="#E6C86E"/><circle cx="144" cy="77" r="1.5" fill="#E6C86E"/><circle cx="161" cy="77" r="1.5" fill="#E6C86E"/>
+  <path d="M43 149H261" stroke="#6D8086" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="104" rx="93" ry="58" fill="#E7C66B" opacity=".1"/>
+  <path d="M113 48L127 103m78-55-26 55" stroke="#FFF2D2" stroke-width="1.3" opacity=".63" fill="none"/>
+  <path d="M119 91H184" stroke="#FFF5DF" stroke-width="1" opacity=".55" fill="none"/>
+ </g>
+</svg>

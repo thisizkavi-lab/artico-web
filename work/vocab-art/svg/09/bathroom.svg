@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bathroom (Noun)
+  CONTEXTUAL_DEFINITION: A room with a toilet and washbasin used for washing.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: Show a distinct tiled room with a washbasin and toilet, not a bathtub alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale tiled wall and floor.
+    - Context_Layer: Compact bathroom with sink basin and toilet.
+    - Focal_Layer: Mirror above sink and toilet beside it.
+    - Details_Layer: Towel rail, tap, and soap.
+    - Lighting_Layer: Cool clean light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bathroom" data-archetype="room-interior">
+  <defs><linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tile)"/><path d="M0 151 Q152 140 304 151 L304 192 L0 192Z" fill="#DCE6E8"/><path d="M33 37 L271 37 M33 70 L271 70 M33 103 L271 103 M81 18 L81 118 M129 18 L129 118 M177 18 L177 118 M225 18 L225 118" stroke="#FFFFFF" stroke-width="1.5"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#BCCBD0"/></g>
+  <g id="layer-context"><rect x="85" y="32" width="58" height="44" rx="4" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M92 69 L136 39" stroke="#FFFFFF" stroke-width="2"/><rect x="75" y="104" width="76" height="10" rx="5" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><path d="M83 114 L83 149 M143 114 L143 149" stroke="#5479AC" stroke-width="4"/><path d="M90 103 Q95 93 101 103 M127 103 Q133 94 138 103" fill="none" stroke="#5479AC" stroke-width="2.4"/><path d="M193 120 Q193 102 208 102 Q223 102 223 120 L223 134 Q223 148 208 148 Q193 148 193 134Z" fill="#FAF8F3" stroke="#5479AC" stroke-width="2"/><ellipse cx="208" cy="120" rx="20" ry="10" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M198 139 L218 139 L218 147 L198 147Z" fill="#DCECFB"/><path d="M71 71 L71 83 L121 83" fill="none" stroke="#5479AC" stroke-width="3"/><path d="M121 83 Q127 83 127 89 L127 92" fill="none" stroke="#5479AC" stroke-width="3"/><rect x="239" y="49" width="33" height="16" rx="4" fill="#B97840"/><path d="M242 65 L242 78 M270 65 L270 78" stroke="#8A5A35" stroke-width="2.5"/></g>
+  <g id="layer-details"><rect x="47" y="130" width="18" height="18" rx="5" fill="#7FB07A"/><path d="M52 130 L52 120 Q56 114 60 120 L60 130" fill="none" stroke="#5479AC" stroke-width="2"/><circle cx="245" cy="109" r="4" fill="#F2C14E"/><path d="M242 95 L251 95 L251 103 L242 103Z" fill="#8B5CA8"/></g>
+  <g id="layer-lighting"><circle cx="47" cy="35" r="18" fill="#FFFFFF" opacity="0.35"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

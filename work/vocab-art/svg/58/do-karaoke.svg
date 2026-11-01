@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: do karaoke (verb phrase)
+  CONTEXTUAL_DEFINITION: Sing along into a microphone with recorded music at a karaoke screen.
+  PEDAGOGICAL_ARCHETYPE: 4 - Person performs an activity with a distinctive tool
+  SYNONYM_GUARD: Show a person singing into a handheld microphone while a karaoke backing screen and speaker are visible; do not show a choir or live band concert.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A cheerful adult sings at home into a microphone, eyes on a large screen with abstract color bars and music notes; a compact speaker sits below the screen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:do karaoke" data-archetype="person-sings-with-microphone-to-karaoke-screen">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="dokaraoke-room" x2="0" y2="1"><stop stop-color="#E9EFEC"/><stop offset="1" stop-color="#DBE1DA"/></linearGradient>
+  <linearGradient id="dokaraoke-screen" x2="0" y2="1"><stop stop-color="#597F90"/><stop offset="1" stop-color="#34566C"/></linearGradient>
+  <filter id="dokaraoke-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dokaraoke-room)"/><path d="M0 151H304V192H0Z" fill="#D4C2A4"/><path d="M0 151H304" stroke="#987858" stroke-width="1.5" fill="none"/><path d="M0 39H304" stroke="#E4E9E0" stroke-width="2" fill="none"/></g>
+ <g id="layer-context"><path d="M23 151V113h45v38" fill="#7D6B56" stroke="#625442" stroke-width="1.2"/><path d="M29 119h33v20H29Z" fill="#415D6C"/><path d="M37 143q5-10 10 0m4 0q5-10 10 0" stroke="#CBDCD5" stroke-width="1.2" fill="none"/><path d="M70 142h33" stroke="#80694E" stroke-width="2" fill="none"/><ellipse cx="151" cy="152" rx="96" ry="5" fill="#6A5038" opacity=".15"/></g>
+ <g id="layer-focal" filter="url(#dokaraoke-shadow)">
+  <path d="M84 108Q92 91 110 93L129 102L134 141H78Z" fill="#708B83" stroke="#405B61" stroke-width="1.4"/><path d="M88 105Q106 110 125 103L131 142H82Z" fill="#D28B6C" stroke="#765748" stroke-width="1.1"/><circle cx="107" cy="79" r="14" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M94 78q0-14 13-15q13 0 14 14l-7-6-12 1Z" fill="#51433D"/><path d="M101 80h1m8 0h1" stroke="#263C45" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M101 86q6 5 12 0" stroke="#91594B" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+  <path d="M91 108Q78 114 77 126L83 131L101 117" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/><path d="M122 106Q139 108 152 101L159 93Q164 92 166 97L158 109L137 118L126 117" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M154 90L184 77" stroke="#465A63" stroke-width="3" stroke-linecap="round" fill="none"/><ellipse cx="187" cy="76" rx="7" ry="5" transform="rotate(-22 187 76)" fill="#4F656E" stroke="#283E48" stroke-width="1.2"/><path d="M183 73q4-5 8-2" stroke="#E7F0E9" stroke-width="1" fill="none"/>
+  <path d="M204 35H285V94H204Z" fill="#4D6D7D" stroke="#2F4C5B" stroke-width="1.6"/><path d="M209 40H280V89H209Z" fill="url(#dokaraoke-screen)"/><path d="M217 77h8V60h8v17h8V51h8v26h8V64h8v13h8" fill="none" stroke="#E6C870" stroke-width="2"/><path d="M219 47q6-8 12 0m18 1q6-8 12 0" stroke="#E7F1E8" stroke-width="1.2" fill="none"/><circle cx="260" cy="51" r="2" fill="#D77E70"/>
+  <path d="M219 96H270V120H219Z" fill="#5B7077" stroke="#344D55" stroke-width="1.2"/><circle cx="233" cy="108" r="7" fill="#293F49" stroke="#B3C5BD" stroke-width="1"/><circle cx="256" cy="108" r="7" fill="#293F49" stroke="#B3C5BD" stroke-width="1"/><path d="M228 98h33" stroke="#93A9A5" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details"><path d="M174 69q-7-9-12-2m-2 13q-7 5-11 0m19-22q-4-7-8-6" stroke="#D1A65F" stroke-width="1.3" fill="none" stroke-linecap="round"/><circle cx="169" cy="56" r="2" fill="#E5C46F"/><circle cx="180" cy="60" r="1.4" fill="#E5C46F"/><path d="M222 124h45" stroke="#C7D4CA" stroke-width="1" fill="none"/><circle cx="195" cy="47" r="1.4" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><ellipse cx="160" cy="85" rx="49" ry="39" fill="#EBCB7D" opacity=".1"/><path d="M94 66q9-6 17-3m42 31q8-2 14-9m63-49h55" stroke="#FFF9EA" stroke-width="1.5" fill="none" opacity=".65" stroke-linecap="round"/></g>
+</svg>

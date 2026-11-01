@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: take the train
+  CONTEXTUAL_DEFINITION: To use a train as the chosen means of traveling to a destination.
+  PEDAGOGICAL_ART_DIRECTOR: Show a passenger riding inside a moving train as it travels along a scenic rail route between places.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial route diagram with selected mode
+  SYNONYM_GUARD: The journey is already underway; unlike catch a train or get on a bus, this is not a boarding moment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Train occupies x=76..252 y=73..143, passenger visible in a large window; paired rails and sleepers run at y=150..166; small origin/destination land cues anchor the route at x=25 and x=274.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:take the train" data-archetype="spatial-route-rail-journey">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="taketrain-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#88A8CE"/><stop offset="1" stop-color="#45658F"/></linearGradient>
+    <linearGradient id="taketrain-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EFF8F9"/><stop offset="1" stop-color="#B8D3DF"/></linearGradient>
+    <radialGradient id="taketrain-halo"><stop stop-color="#DCEAF2" stop-opacity=".63"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="taketrain-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 124 L51 89 L88 122 L137 78 L185 122 L236 91 L304 124 V192 H0 Z" fill="#E7ECE8"/><path d="M0 142 L60 117 L113 143 L175 109 L234 142 L304 116 V192 H0 Z" fill="#D7E1D7"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 156 H304 M0 167 H304" stroke="#64748B" stroke-width="2.3"/><ellipse cx="154" cy="160" rx="120" ry="8" fill="#DDD4C3" opacity=".72"/></g>
+  <g id="layer-context"><path d="M23 117 H64 V133 H23 Z" fill="#E8D8B9" stroke="#64748B" stroke-width="1.2"/><path d="M263 111 H283 V133 H263 Z" fill="#D4E0E2" stroke="#64748B" stroke-width="1.2"/><path d="M268 116 H274 V122 H268 Z M276 116 H281 V122 H276 Z" fill="#B8D2DE"/><path d="M71 143 C114 135 188 136 231 143" fill="none" stroke="#8EB0DE" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round"/><circle cx="70" cy="143" r="4" fill="#F2C14E"/><circle cx="233" cy="143" r="4" fill="#5479AC"/><path d="M27 46 H273" stroke="#E2EAE9" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#taketrain-shadow)"><path d="M74 111 Q78 86 97 79 H221 Q239 82 248 98 L256 120 V143 H72 Z" fill="url(#taketrain-shell)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M92 87 H128 V114 H82 Z M133 86 H174 V114 H133 Z M179 86 H218 Q229 88 236 102 L239 114 H179 Z" fill="url(#taketrain-glass)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M130 84 V140 M176 84 V140" stroke="#1E2A3B" stroke-width="1.5"/><path d="M77 117 H252 V135 H77 Z" fill="#DFE8EB" stroke="#1E2A3B" stroke-width="1.4"/><path d="M81 124 H249" stroke="#F2C14E" stroke-width="2.5"/><path d="M142 103 Q143 95 151 95 Q160 95 160 104 V115 H142 Z" fill="#5479AC"/><circle cx="151" cy="91" r="5.7" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1"/><circle cx="105" cy="144" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="105" cy="144" r="4" fill="#E7EDF3"/><circle cx="220" cy="144" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="220" cy="144" r="4" fill="#E7EDF3"/><path d="M88 152 V166 M114 152 V166 M140 152 V166 M166 152 V166 M192 152 V166 M218 152 V166 M244 152 V166" stroke="#9B835F" stroke-width="1.6"/><path d="M74 151 H257" stroke="#263548" stroke-width="2.4"/></g>
+  <g id="layer-details"><path d="M93 92 H119 M138 91 H168 M185 91 H211" stroke="#FFFFFF" stroke-width="1.1"/><path d="M97 133 H126 M181 133 H225" stroke="#5479AC" stroke-width="1"/><path d="M57 52 Q69 45 81 51 M224 56 Q236 48 247 54" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M44 146 H67 M235 146 H259" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="85" rx="120" ry="74" fill="url(#taketrain-halo)" opacity=".14"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M72 148 H256" stroke="#1E2A3B" stroke-width=".8" opacity=".28"/></g>
+</svg>

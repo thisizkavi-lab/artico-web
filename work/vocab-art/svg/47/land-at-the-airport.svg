@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: land at the airport
+  CONTEXTUAL_DEFINITION: Touch down on the airport runway at the end of an airplane journey.
+  PEDAGOGICAL_ART_DIRECTOR: Show the aircraft wheels meeting the runway with the terminal and control tower in the background.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: The plane is descending onto airport ground, not taking off or flying high above the airport.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A passenger jet descends toward a runway, its main wheels just touching down as the airport terminal and control tower sit beyond.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:land at the airport" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="land-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#AAD1D8"/><stop offset="1" stop-color="#EAEDE5"/></linearGradient>
+  <linearGradient id="land-plane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F9F8F1"/><stop offset="1" stop-color="#A9BDC0"/></linearGradient>
+  <linearGradient id="land-runway" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#697C84"/><stop offset="1" stop-color="#465962"/></linearGradient>
+  <filter id="land-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#land-sky)"/><path d="M16 128H288V151H16Z" fill="#9EAFA1"/><path d="M190 75H277V128H190Z" fill="#CDD8D4" stroke="#4D6570" stroke-width="1.3"/><path d="M196 81H269V127H196Z" fill="#A8C8CF" stroke="#647B80" stroke-width=".9"/><path d="M210 81V127M227 81V127M244 81V127M261 81V127" stroke="#70858A" stroke-width=".8"/><path d="M220 74L235 60L250 74V83H220Z" fill="#87999B" stroke="#405761" stroke-width="1.1"/><rect x="230" y="48" width="9" height="16" fill="#71868B" stroke="#405761" stroke-width="1"/><path d="M17 151H287V184H17Z" fill="url(#land-runway)"/><path d="M25 169H78M113 169H166M201 169H254" stroke="#F4EAD5" stroke-width="2"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+ <g id="layer-context"><path d="M16 139H287" stroke="#53656C" stroke-width="2"/><path d="M195 132H281" stroke="#F2E4C7" stroke-width="1.2"/><path d="M33 130H85" stroke="#D5DFD7" stroke-width="2"/><path d="M97 130H149" stroke="#D5DFD7" stroke-width="2"/><circle cx="197" cy="143" r="3" fill="#F2C14E"/><circle cx="220" cy="143" r="3" fill="#F2C14E"/></g>
+ <g id="layer-focal" filter="url(#land-shadow)" transform="translate(0 47)"><path d="M49 78Q68 58 99 56H202Q224 57 241 72L263 82L243 93H64Z" fill="url(#land-plane)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M108 61L91 38L99 37L131 60M149 61L173 43L181 46L166 66" fill="#E5ECE7" stroke="#1E2A3B" stroke-width="1.1"/><path d="M234 74L252 67L267 77L254 84L238 83Z" fill="#E2E9E3" stroke="#1E2A3B" stroke-width="1"/><path d="M85 86V98M101 84V99" stroke="#344C58" stroke-width="2.5"/><circle cx="84" cy="100" r="3" fill="#263D49"/><circle cx="102" cy="100" r="3" fill="#263D49"/><path d="M84 100L80 106M102 100L105 106" stroke="#263D49" stroke-width="1.7"/><path d="M88 106L102 106" stroke="#D85E55" stroke-width="2"/><path d="M77 103L68 108M109 103L118 108M73 108L63 113M113 108L123 113" stroke="#F7F5EB" stroke-width="1.3" stroke-linecap="round"/><path d="M45 111H130" stroke="#E9EEE6" stroke-width="1.3"/></g>
+ <g id="layer-details"><ellipse cx="152" cy="148" rx="126" ry="5" fill="#1E2A3B" opacity=".14"/><path d="M194 76H276" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="276" cy="69" r="2" fill="#F2C14E"/><path d="M26 151H287" stroke="#96A4A3" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="100" rx="128" ry="76" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 19H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

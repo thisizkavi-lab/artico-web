@@ -1,0 +1,208 @@
+{
+  "chapter": 58,
+  "chapter_title": "Free time activities",
+  "domain_setting": "A connected everyday leisure world across a comfortable home, craft table, neighborhood venues, parks, trails, and social outings. Keep people visibly enjoying an activity; avoid school, work, shopping logistics, and abstract hobby symbols without a user or purpose.",
+  "ambient_palette": {
+    "home_and_studio": "warm ivory, light wood, soft blue-grey, and a few lively craft colors",
+    "outdoors": "sage greens, sky blue, sunlit sand, and muted trail earth",
+    "social_venues": "warm indoor light, calm navy shadows, and varied clothing tones",
+    "digital_and_media": "cool screen blue balanced with warm room light",
+    "ink": "deep blue slate"
+  },
+  "recurring_scale_anchors": [
+    "A recurring adult or friend-group scale cue for leisure activities",
+    "Warm domestic surfaces for crafts, cooking, reading, and games",
+    "A window, doorway, chair, or bag when it clarifies a home activity or outing",
+    "Recognizable park, trail, beach, gallery, gym, or performance venue details for out-of-home activities",
+    "Small purposeful hobby tools such as needles, camera, book, game pieces, or instrument"
+  ],
+  "polysemy_resolution_table": {
+    "hobby": "A leisure pursuit shown through a person enjoying a chosen craft or pastime; not work or a job.",
+    "bake / baking": "Preparing food with an oven as a leisure activity; baking is the activity or process, while bake is the action.",
+    "cook / cooking": "Cook is a person preparing a home meal for pleasure, consistent with the glossary's chef sense; cooking is the food-preparation activity.",
+    "draw (art)": "Make a picture with a pencil or charcoal; not pull or drag an object.",
+    "paint": "Create an artwork with a brush and colored paint on a canvas; not household wall paint or a paint can.",
+    "photography / take photos": "Photography is the camera-based hobby and finished image; take photos is the act of framing and pressing a camera shutter.",
+    "pottery / do pottery": "Pottery is a finished ceramic vessel or ceramic craft; do pottery shows a person shaping clay at a wheel.",
+    "puzzles / do puzzles": "Puzzles are tabletop jigsaw or logic games; the activity card shows pieces being assembled, not a confused person.",
+    "cards / play cards": "Cards are playing cards used at a table; not greeting cards, business cards, or tarot.",
+    "gaming / video games / play video games": "This group means recreational digital gaming, not gambling; distinguish the general hobby, game medium, and a person using a controller.",
+    "browse the internet / surf the internet": "Both mean exploring websites online; not swimming or ocean surfing. Keep screens and browsing behavior visible.",
+    "stream": "Deliver music or video over the internet to a device; not a small flowing river.",
+    "book club / go to a book club": "A social reading group that discusses books, as required by the surrounding free-time vocabulary; not a book discount sales organization.",
+    "movie / see a play": "Movie is a film shown on a screen; a play is a live stage performance with actors and scenery.",
+    "musical instrument / play a musical instrument": "An instrument is the object itself; the verb phrase shows a person performing on it.",
+    "music / listen to music": "Music is an enjoyable sound or performance; listen to music shows a person attending to sound, preferably with headphones or a speaker.",
+    "concert / go to a concert / sing in a choir / do karaoke": "A concert is a live band performance for an audience; going to one shows an attendee entering or watching; a choir sings together; karaoke is one person singing to a backing track with a microphone.",
+    "exercise / do exercise / gym / go to the gym / do yoga": "Exercise is physical activity; doing exercise is the action; a gym is the fitness venue; going to the gym shows travel to it; yoga uses a calm mat pose rather than weights.",
+    "birdwatching / go birdwatching": "Observe wild birds outdoors with binoculars; not keeping pet birds.",
+    "camping / go camping": "Camping is an overnight leisure stay in a tent outdoors; going camping shows a person carrying or setting up gear at a campsite.",
+    "foraging / go foraging": "Gathering edible wild plants or berries responsibly; not shopping for produce or hunting.",
+    "hike / hiking / jogging / go jogging / walk": "A hike is a purposeful walk along an outdoor trail; hiking is the pastime; jogging is a light run; walking here is a relaxed leisure stroll.",
+    "ride a horse": "Leisure horseback riding with a saddle and mounted rider; not a camel or a transport vehicle.",
+    "free time activities": "An overview of several distinct leisure pursuits; not one sport or a work schedule.",
+    "beach / go to the beach": "Beach is the sandy or pebbled shore; going to the beach shows people arriving or spending leisure time at the shoreline.",
+    "go out / hang out / meet friends / call friends": "Go out is leaving home for a social outing; hang out is relaxed time together; meet friends shows people reuniting; call friends is a phone conversation.",
+    "party / go to a party": "Party is a cheerful social gathering; going to a party shows a guest arriving or joining friends.",
+    "meals / picnic / have a picnic": "Meals are prepared occasions for eating; a picnic is food eaten outdoors on a blanket; having a picnic shows people sharing it outside.",
+    "relax / stay (at) home": "Relax means rest comfortably; stay at home means spending the leisure period inside one's home.",
+    "shopping / go shopping": "Shopping is the leisure activity of choosing and buying items; go shopping shows a person heading to or browsing shops, not a cashier at work.",
+    "travel / vacation / go on vacation": "Travel is a journey away from home; vacation is a leisure break; going on vacation shows a person setting off with travel luggage toward a holiday destination.",
+    "visit a gallery / visit a museum": "A gallery displays artworks; a museum displays historical, cultural, or natural exhibits. Show a visitor looking at the collection in each venue."
+  },
+  "existing_asset_triage": {
+    "lesson_58": "No Lesson 58 source SVGs existed at the start of this pass. Reviewed exact-term candidates from other lessons using their compiled card images and source structure.",
+    "reviewed_candidates": [
+      {
+        "source": "33/bake.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A tray of bread browning inside a clearly visible oven teaches baking; update the prompt and term key for the leisure chapter."
+      },
+      {
+        "source": "22/board-games.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "The board, route, dice, and playing pieces clearly show a board game; the exact term and composition fit."
+      },
+      {
+        "source": "49/camping.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "Tent, campsite, campers, and a small fire clearly establish recreational camping."
+      },
+      {
+        "source": "12/gardening.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A person tends planted garden beds with a watering can; clear gardening action and appropriate context."
+      },
+      {
+        "source": "49/hiking.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A backpacked hiker walks along a rising outdoor trail; clear hiking scene."
+      },
+      {
+        "source": "44/ride-a-horse.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A mounted rider and saddled horse are visible at card size; it is horseback riding, not a camel."
+      },
+      {
+        "source": "44/walk.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A person in mid-stride on an open path clearly depicts walking."
+      },
+      {
+        "source": "52/beach.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A beach umbrella, chair, sand, and water make the shore location unambiguous."
+      },
+      {
+        "source": "50/beach.svg",
+        "verdict": "KEEP / ADAPT as go-to-the-beach",
+        "reason": "Two people walking at the shoreline fit the outing phrase better than the static beach-location card."
+      },
+      {
+        "source": "21/hang-out.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "Three friends share relaxed social time together; the scene directly teaches hanging out."
+      },
+      {
+        "source": "33/meals.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "Several complete dishes on a dining surface show prepared meals rather than one ingredient."
+      },
+      {
+        "source": "44/travel.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A traveler with luggage beside transit cues communicates a journey away from home."
+      },
+      {
+        "source": "47/travel.svg",
+        "verdict": "REPLACE for go-on-vacation",
+        "reason": "The passenger is already in flight and the scene could describe any journey; the Lesson 58 card needs an unmistakable holiday departure, so a distinct airport traveler with sunhat and beach towel was authored."
+      },
+      {
+        "source": "47/vacation.svg",
+        "verdict": "KEEP / ADAPT",
+        "reason": "A relaxed holiday-maker under a beach umbrella is clearer than the older, sparse 35/vacation candidate."
+      },
+      {
+        "source": "12/paint.svg",
+        "verdict": "REPLACE",
+        "reason": "A paint bucket and spill teach household paint as a substance, not making art in a free-time chapter."
+      },
+      {
+        "source": "23/music.svg",
+        "verdict": "REPLACE",
+        "reason": "The school-like worksheet and question marks suggest a music lesson or uncertainty rather than enjoyable music."
+      },
+      {
+        "source": "25/reading.svg",
+        "verdict": "REPLACE",
+        "reason": "A worksheet, checklist, and desk suggest academic study or paperwork rather than leisure reading."
+      },
+      {
+        "source": "52/stream.svg",
+        "verdict": "REPLACE",
+        "reason": "It shows a natural creek; Lesson 58 uses the digital media-streaming sense."
+      },
+      {
+        "source": "38/go-out.svg",
+        "verdict": "REPLACE",
+        "reason": "It shows money leaving a wallet in a finance context, not a person leaving home for leisure."
+      },
+      {
+        "source": "35/vacation.svg",
+        "verdict": "REPLACE",
+        "reason": "Although holiday-themed, this older source has sparse geometry and lacks the current five-layer structure; 47/vacation is more complete and clear."
+      },
+      {
+        "source": "48/travel.svg",
+        "verdict": "REPLACE",
+        "reason": "The train-only scene narrows the generic travel term; 44/travel is a clearer broad journey cue."
+      },
+      {
+        "source": "07/phone-call.svg",
+        "verdict": "REPLACE",
+        "reason": "The handset-only symbol does not show calling a friend or a social exchange; Lesson 58 uses a person in a friendly call with the other friend visible."
+      },
+      {
+        "source": "23/class.svg",
+        "verdict": "REPLACE",
+        "reason": "The generic daytime school lesson does not fit the adult leisure-class and evening context; Lesson 58 shows adult learners at a nighttime art class."
+      },
+      {
+        "source": "11/shop.svg",
+        "verdict": "REPLACE for go-shopping",
+        "reason": "A storefront exterior alone does not show a customer browsing or choosing items; authored an in-store shopper comparing a garment."
+      },
+      {
+        "source": "11/store.svg",
+        "verdict": "REPLACE for go-shopping",
+        "reason": "The cart sits at a store entrance without a customer shopping; authored an in-store shopper comparing a garment."
+      },
+      {
+        "source": "09/house.svg",
+        "verdict": "REPLACE for stay-home",
+        "reason": "The isolated exterior teaches the concrete noun house but shows no person remaining at home or leisure-time context; authored a warm interior scene with someone inside on a rainy evening."
+      },
+      {
+        "source": "58/go-to-a-party.svg",
+        "verdict": "REPLACE for party noun",
+        "reason": "The guest crossing the doorway teaches going to a party; the noun card needs the gathering itself, so authored friends celebrating together."
+      },
+      {
+        "source": "58/have-a-picnic.svg",
+        "verdict": "REPLACE for picnic noun",
+        "reason": "The people sharing food show the action phrase; authored a separate outdoor meal arrangement centered on the blanket, basket, and packed food."
+      },
+      {
+        "source": "58/go-shopping.svg",
+        "verdict": "REPLACE for shopping noun",
+        "reason": "Selecting one sweater teaches go shopping; authored a broader activity overview with a shopper carrying purchases past shop displays."
+      },
+      {
+        "source": "48/museum.svg",
+        "verdict": "REPLACE for visit-a-museum",
+        "reason": "The exterior building and isolated central statue identify a museum but show no visitor exploring exhibits; authored an indoor visitor scene with a protected artifact case and fossils, distinct from framed paintings in a gallery."
+      }
+    ]
+  }
+}

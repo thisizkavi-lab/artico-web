@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: lose (sports result)
+ CONTEXTUAL_DEFINITION: Fail to win a match, shown by a team accepting a lower score respectfully.
+ PEDAGOGICAL_ARCHETYPE: One composed player sits on the sideline while the opponents finish ahead.
+ SYNONYM_GUARD: Show losing the match, not losing an object; avoid humiliation.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Soccer goal and ball frame a seated player in one kit; two opponents walk off calmly; a nonverbal board has one mark on one side and three on the other.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:lose" data-archetype="respectful-soccer-loss">
+ <defs><linearGradient id="lo-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient><linearGradient id="lo-grass" x2="0" y2="1"><stop stop-color="#91A686"/><stop offset="1" stop-color="#718C84"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lo-sky)"/><path d="M0 96H304V192H0Z" fill="url(#lo-grass)"/><path d="M0 126h304M0 159h304" stroke="#E7EEE4" stroke-width="1.4"/><circle cx="41" cy="34" r="12" fill="#E4BB68"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="176" rx="119" ry="5" fill="#405B61" opacity=".15"/><path d="M20 70h87v45H20Zm0 0 12 8v30l-12 7m87-45-12 8v30l12 7m-87-24h87" fill="none" stroke="#EDF2E8" stroke-width="1.5"/><path d="M235 23h53v36h-53Z" fill="#405B61" stroke="#263E48" stroke-width="1.8"/><path d="M243 32h7m7 0h7m7 0h7m-28 10h7m7 0h7m-28 9h7" stroke="#E4BB68" stroke-width="2.3" stroke-linecap="round"/><circle cx="72" cy="146" r="6" fill="#F4EFE2" stroke="#263E48" stroke-width="1.4"/><path d="m69 143 3-2 3 2v4l-3 2-3-2Z" fill="#263E48"/></g>
+ <g id="layer-focal"><circle cx="149" cy="105" r="7" fill="#D99F7C"/><path d="M142 104q1-8 7-8t7 8l-4 2-9-1Z" fill="#344F5A"/><path d="M141 114h17l7 21-16 8-15-9Z" fill="#405B61" stroke="#263E48" stroke-width="1.4"/><path d="M145 119l-12 10m22-10 9 8" stroke="#D99F7C" stroke-width="4.3" stroke-linecap="round"/><path d="M143 139l9 9 13 0m-17-8-7 11" fill="none" stroke="#263E48" stroke-width="5" stroke-linecap="round"/><path d="M147 147h20m-20 4h20" stroke="#8D755B" stroke-width="2.7"/><circle cx="215" cy="101" r="5.5" fill="#D99F7C"/><path d="M210 100q1-6 5-6t6 6l-3 2-7-1Z" fill="#344F5A"/><path d="M209 109h13l5 14-12 5-10-6Z" fill="#D4866D" stroke="#263E48" stroke-width="1.1"/><path d="M211 125l-4 13m13-13 6 11m-13-20-8-5m19 4 6-6" fill="none" stroke="#263E48" stroke-width="3.5" stroke-linecap="round"/><circle cx="254" cy="102" r="5.5" fill="#D99F7C"/><path d="M249 101q1-6 5-6t6 6l-3 2-7-1Z" fill="#344F5A"/><path d="M248 110h13l5 14-12 5-10-6Z" fill="#D4866D" stroke="#263E48" stroke-width="1.1"/><path d="M250 126l-4 12m13-12 6 10m-15-19-7-5m19 4 6-6" fill="none" stroke="#263E48" stroke-width="3.5" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M39 179h47m139 0h44" stroke="#DDE8DC" stroke-width="1.2"/><path d="M132 103q-5 3-9 0" fill="none" stroke="#F4EFE2" stroke-width="1.3"/><path d="M236 66h52" stroke="#D8E5DD" stroke-width="1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="150" cy="112" rx="72" ry="53" fill="#FFF6E7" opacity=".04"/><path d="M143 97q7-4 13 0" fill="none" stroke="#FFF" stroke-width="1"/></g>
+</svg>

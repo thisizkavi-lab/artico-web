@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: hot air balloon
+  CONTEXTUAL_DEFINITION: A balloon craft that rises as heated air inside its envelope becomes buoyant.
+  PEDAGOGICAL_ART_DIRECTOR: Show a broad paneled balloon, a visible burner flame, and a hanging wicker basket in open sky.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with causal cue
+  SYNONYM_GUARD: Balloon envelope and basket must dominate; include no fixed wings or helicopter rotors.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Envelope from x=90..215 and y=25..122, gathered at its lower throat; burner at y=128; basket centered x=131..175 and y=140..169, linked by four ropes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:hot air balloon" data-archetype="hero-aircraft">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="balloon-main" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E78B6A"/><stop offset="1" stop-color="#C75B55"/></linearGradient>
+    <linearGradient id="balloon-panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F1C45F"/><stop offset="1" stop-color="#D9973C"/></linearGradient>
+    <radialGradient id="balloon-halo"><stop stop-color="#F9E8BD" stop-opacity=".66"/><stop offset="1" stop-color="#E7AA5C" stop-opacity="0"/></radialGradient>
+    <filter id="balloon-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 153 Q48 143 97 153 T194 153 T291 152 V192 H0 Z" fill="#EDF2EB"/><path d="M0 171 Q63 164 122 171 T244 170 T304 168" fill="none" stroke="#D8E3D4" stroke-width="2"/><ellipse cx="152" cy="173" rx="62" ry="7" fill="#DDD4C3" opacity=".65"/></g>
+  <g id="layer-context"><ellipse cx="60" cy="51" rx="27" ry="9" fill="#FFFFFF" opacity=".75"/><ellipse cx="243" cy="81" rx="34" ry="10" fill="#FFFFFF" opacity=".7"/><path d="M39 129 H75 M224 133 H266" stroke="#DCE8EA" stroke-width="1.8" stroke-linecap="round"/><circle cx="54" cy="101" r="2" fill="#F2C14E"/><circle cx="254" cy="39" r="2" fill="#F2C14E"/></g>
+  <g id="layer-focal" filter="url(#balloon-shadow)"><path d="M152 22 Q190 23 207 52 Q223 81 207 108 Q193 127 177 132 H127 Q110 125 96 107 Q80 78 96 51 Q113 23 152 22 Z" fill="url(#balloon-main)" stroke="#1E2A3B" stroke-width="2.8"/><path d="M152 24 Q132 60 134 122 L127 131 Q106 124 96 107 Q80 78 96 51 Q113 24 152 22 Z" fill="#E6B45A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M153 23 Q173 59 171 124 L177 132 Q193 126 207 108 Q223 81 207 52 Q190 23 153 22 Z" fill="url(#balloon-panel)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M111 42 Q152 56 194 42 M94 72 Q151 85 210 71 M95 100 Q151 111 208 99" fill="none" stroke="#F6D996" stroke-width="2" opacity=".8"/><path d="M130 131 L135 138 M174 131 L170 138 M121 131 L126 140 M184 130 L179 140" stroke="#6B5A45" stroke-width="1.8"/><path d="M141 134 L146 142 M163 134 L158 142" stroke="#F2C14E" stroke-width="2"/><path d="M142 132 Q152 120 162 132 L159 144 H145 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M150 137 Q147 132 152 127 Q157 132 154 137 Z" fill="#E77F50" stroke="#C75B55" stroke-width=".8"/><path d="M130 141 H174 V166 Q152 175 130 166 Z" fill="#B7824A" stroke="#1E2A3B" stroke-width="2.4"/><path d="M135 147 H169 M134 153 H170 M133 160 H171" stroke="#7F5638" stroke-width="1.2"/><path d="M139 143 V167 M165 143 V167" stroke="#D6A66A" stroke-width="1.2"/><circle cx="145" cy="158" r="3" fill="#DCA47D"/><circle cx="158" cy="157" r="3" fill="#C9876A"/></g>
+  <g id="layer-details"><path d="M113 39 Q124 29 139 27" fill="none" stroke="#FFE4C5" stroke-width="2" stroke-linecap="round"/><path d="M152 31 V109" stroke="#F4D59B" stroke-width="1" opacity=".6"/><path d="M137 148 H166" stroke="#E9C48B" stroke-width="1.2"/><path d="M152 121 Q147 116 152 111 M159 119 Q164 114 159 109" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round"/><path d="M93 67 L88 64 M212 91 L217 88" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="76" rx="113" ry="79" fill="url(#balloon-halo)" opacity=".25"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M108 168 Q153 179 198 168" fill="none" stroke="#1E2A3B" stroke-width="1" opacity=".27"/></g>
+</svg>

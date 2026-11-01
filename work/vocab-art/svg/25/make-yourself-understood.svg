@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: make yourself understood (Verb phrase)
+  CONTEXTUAL_DEFINITION: Communicate your idea clearly enough that another person grasps it.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a speaker adding a clear gesture and concrete picture cue until the listener recognizes the intended meaning.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Everyday public help desk.
+    - Context_Layer: Two people from different language backgrounds.
+    - Focal_Layer: Speaker points to a picture card and gestures; listener's expression changes to recognition.
+    - Details_Layer: Shared image appears in both speech bubbles.
+    - Lighting_Layer: Warm highlight at the moment of understanding.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:make yourself understood" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="make-understood-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="make-understood-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#make-understood-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M41 122H262V130H41Z" fill="#A98A64"/><path d="M52 130V149M250 130V149" stroke="#8D765A" stroke-width="2.7"/><circle cx="62" cy="94" r="10" fill="#80513F"/><path d="M52 94Q53 81 63 82Q73 83 72 95" fill="#27364B"/><path d="M47 110Q62 103 77 110L80 123L70 132L51 125Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><circle cx="240" cy="94" r="10" fill="#E7B99B"/><path d="M230 94Q231 81 241 82Q251 83 250 95" fill="#27364B"/><path d="M225 110Q240 103 255 110L258 123L248 132L229 125Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#make-understood-shadow)"><circle cx="120" cy="77" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M108 77Q109 62 121 63Q133 64 132 78L126 81Q123 70 117 71Q113 72 111 83Z" fill="#27364B"/><path d="M102 95Q120 87 138 95L144 118L131 129L107 121Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M110 98L95 108L83 103M136 98L151 104L164 93" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M110 98L95 108L83 103M136 98L151 104L164 93" fill="none" stroke="#C98961" stroke-width="2.6" stroke-linecap="round"/><path d="M112 123L106 149M130 124L142 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M154 83L180 78L185 108L159 113Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M164 98L173 85L181 98Z" fill="#91A77C" stroke="#54765A" stroke-width="1"/><circle cx="173" cy="102" r="4" fill="#D9A441"/><path d="M184 89C198 81 207 77 218 80" fill="none" stroke="#D9A441" stroke-width="2.3" stroke-linecap="round"/><path d="M211 75L220 80L211 84" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M215 47Q215 37 227 37H263Q275 37 275 49V61Q275 73 263 73H246L237 82L239 72H227Q215 72 215 61Z" fill="#EAF2E5" stroke="#829A83" stroke-width="1.3"/><path d="M229 54L238 42L247 54Z" fill="#91A77C" stroke="#54765A" stroke-width="1"/><circle cx="255" cy="55" r="4" fill="#D9A441"/></g>
+  <g id="layer-details"><path d="M114 88Q120 91 127 88" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><path d="M235 105Q241 109 247 104" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><path d="M154 71L160 66M167 68L174 65" stroke="#D9A441" stroke-width="1.5"/><circle cx="197" cy="63" r="3" fill="#F6D777"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="87" rx="136" ry="75" fill="#FEF9C3" opacity=".1"/><path d="M215 47Q215 37 227 37H263" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

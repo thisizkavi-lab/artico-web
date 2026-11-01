@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: dry (Adjective)
+  CONTEXTUAL_DEFINITION: Lacking water or moisture, especially after a long spell without rain.
+  PEDAGOGICAL_ART_DIRECTOR: Show deeply cracked, dusty ground and a wilted plant in clear hot sunshine.
+  PEDAGOGICAL_ARCHETYPE: 5 - Moisture condition
+  SYNONYM_GUARD: The soil and plant show dryness; do not depict a sandstorm or merely a sunny day.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Close dry earth with angular cracks, a drooping sprout, dusty ground, and an unbroken bright sun.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:dry" data-archetype="dry-land-condition">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="dr-sky" x2="0" y2="1"><stop stop-color="#F2E8CC"/><stop offset="1" stop-color="#E2CF9D"/></linearGradient><linearGradient id="dr-earth" x2="0" y2="1"><stop stop-color="#C49B61"/><stop offset="1" stop-color="#926B47"/></linearGradient><linearGradient id="dr-leaf" x2="0" y2="1"><stop stop-color="#8D9B5B"/><stop offset="1" stop-color="#6D7849"/></linearGradient><filter id="dr-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.1" flood-color="#5E4A31" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dr-sky)"/><path d="M0 110Q75 101 151 111T304 105V192H0Z" fill="#BAA170"/><path d="M0 136H304V192H0Z" fill="url(#dr-earth)"/></g>
+ <g id="layer-context"><circle cx="247" cy="40" r="20" fill="#EBC86F" opacity=".94"/><path d="M230 14l-5-8m25-7 2-10m17 28 10 3" fill="none" stroke="#D49C43" stroke-width="1.8" stroke-linecap="round"/><path d="M20 174H282" fill="none" stroke="#A78454" stroke-width="1.2"/><path d="M0 128L41 122L64 132L96 125L126 136L152 126L181 137L209 125L247 136L278 128L304 133" fill="none" stroke="#6D5237" stroke-width="2"/><path d="M56 150l14-10 16 6 11 16m-7-12 12-6m31-6 10 16 16-3 13-13m-18 14 10 11m43-22 14 8 9 14m-78-12-13 12" fill="none" stroke="#6F4F35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 157l-8 9" fill="none" stroke="#6F4F35" stroke-width="2" stroke-linecap="round"/><path d="M278 151l9 12" fill="none" stroke="#6F4F35" stroke-width="2" stroke-linecap="round"/><ellipse cx="154" cy="162" rx="59" ry="5" fill="#61462D" opacity=".17"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#dr-shadow)">
+  <path d="M151 137L151 83M151 99Q132 85 126 78M151 108Q170 92 180 88" fill="none" stroke="#6D7849" stroke-width="4" stroke-linecap="round"/><path d="M128 80Q113 64 105 74Q114 89 131 89ZM177 90Q191 72 202 80Q194 96 177 99Z" fill="url(#dr-leaf)" stroke="#596543" stroke-width="1.5"/><path d="M126 81l5 7m53 3 8-9" fill="none" stroke="#B5B075" stroke-width="1.1"/><path d="M139 137l-8 10m20-5 10 11m-30 0 5 7m28-1 9-8" fill="none" stroke="#8D6B46" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M74 153l18-13 19 4 16 19m-9-13 13-8m25-3 10 16 19-5 16-14m-24 19 12 11m22-30 16 8 10 13" fill="none" stroke="#60452F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M85 158l9-7m89 9 8-7m-51-7 6 9" fill="none" stroke="#D3AF78" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details"><path d="M40 145l13-7 11 10m113-1 11-9 12 6m35 5 12-7 13 7" fill="none" stroke="#6A4A30" stroke-width="1.6" stroke-linecap="round"/><circle cx="247" cy="40" r="1.5" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".45"/><path d="M113 72q7-4 13 2m65 6 7-1" fill="none" stroke="#C1A86E" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M108 74q10-7 19 6m51 9q11-16 22-10" fill="none" stroke="#C4C88C" stroke-width="1.1" opacity=".8"/><circle cx="247" cy="40" r="1.3" fill="#FFF8E7"/><path d="M227 17l4 5m23-23 1 6" fill="none" stroke="#FFF1CA" stroke-width="1.2"/></g>
+</svg>

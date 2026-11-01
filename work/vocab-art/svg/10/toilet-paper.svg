@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: toilet paper (Noun)
+  CONTEXTUAL_DEFINITION: A soft disposable paper roll used in a bathroom.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a roll on a wall holder with the loose end hanging down, distinct from folded hand towels.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled bathroom wall.
+    - Context_Layer: Small wall-mounted spindle and supports.
+    - Focal_Layer: White perforated paper roll and hanging sheet.
+    - Details_Layer: Visible circular cardboard core and embossed dots.
+    - Lighting_Layer: Soft paper highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:toilet paper" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="151" cy="169" rx="58" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M103 91 V72 M201 91 V72" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M103 72 Q152 64 201 72" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M120 74 H184" stroke="#647D8B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M107 72 Q107 61 118 61 H186 Q197 61 197 72 V111 H107Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.4"/><ellipse cx="152" cy="72" rx="45" ry="15" fill="#F3F4F1" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="152" cy="72" rx="15" ry="7" fill="#D6C4A4" stroke="#AEBFC6" stroke-width="1.5"/><path d="M107 97 H197 V143 Q197 149 190 149 H114 Q107 149 107 143Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.1"/><path d="M107 110 H197 M107 122 H197 M107 134 H197" stroke="#D8DCE0" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M109 78 Q151 90 195 78 M112 105 H193" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="123" cy="88" r="1.6" fill="#D8DCE0"/><circle cx="135" cy="92" r="1.6" fill="#D8DCE0"/><circle cx="165" cy="91" r="1.6" fill="#D8DCE0"/><circle cx="178" cy="87" r="1.6" fill="#D8DCE0"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: hoe (Noun)
+  CONTEXTUAL_DEFINITION: A long-handled garden implement with a flat blade for cultivating or cutting weeds.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: Show a single broad blade set at a right angle to the long shaft; it has no row of rake teeth or fork tines.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Outdoor sky, green border, and timber-edged soil bed.
+    - Context_Layer: Small weeds and a short furrow show the hoe's use in cultivated soil.
+    - Focal_Layer: Long wooden handle from x=104,y=30 to x=171,y=113; flat steel blade crosses at x=184,y=117.
+    - Details_Layer: Blade bevel, ferrule, handle grain, loose earth, cut weed, and motion arc.
+    - Lighting_Layer: Upper-left steel highlight and a soft sunlit edge on the handle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:hoe" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+    <linearGradient id="blade-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F5F9"/><stop offset=".6" stop-color="#CBD5E1"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 111H304V145H0Z" fill="#DCEAD6"/><path d="M0 145H304V192H0Z" fill="#EAD8BE"/><path d="M28 127H276V170H28Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.2"/><path d="M24 123H280V134H24Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.7"/><path d="M41 169H263" stroke="#965D28" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M62 123V105M61 112Q50 102 47 109Q51 118 62 118M63 115Q74 102 78 110Q73 121 63 121" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.4"/><path d="M229 124V109M228 116Q220 107 217 113Q220 121 229 121" fill="#568552" stroke="#1E2A3B" stroke-width="1.3"/><path d="M199 140Q212 132 224 138M195 144Q208 137 219 142" fill="none" stroke="#E7B68E" stroke-width="2"/><circle cx="204" cy="149" r="2.3" fill="#C88446"/><circle cx="216" cy="152" r="2" fill="#E7B68E"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M105 31L172 111" stroke="#1E2A3B" stroke-width="12" stroke-linecap="round"/><path d="M105 31L172 111" stroke="#C88446" stroke-width="7.5" stroke-linecap="round"/><path d="M109 37L165 104" stroke="#E3AC77" stroke-width="1.8" stroke-linecap="round"/><path d="M166 104L181 107L181 118L173 126L164 120Z" fill="#64748B" stroke="#1E2A3B" stroke-width="2"/><path d="M177 108L227 102L235 113L181 126Z" fill="url(#blade-grad)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M184 111L225 107L229 112L183 120Z" fill="#94A3B8"/><path d="M183 119L235 113" stroke="#1E2A3B" stroke-width="2"/><path d="M181 109L226 104" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/></g>
+  <g id="layer-details"><path d="M94 21L101 28M175 132L184 136" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M238 126Q221 142 199 144" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M202 140L197 145L205 146" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round"/><path d="M87 145L112 141M120 157L145 153M244 157L260 153" stroke="#A27652" stroke-width="1.5"/><circle cx="183" cy="143" r="2.2" fill="#C88446"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M110 35L160 96" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".65"/><path d="M185 111L220 107" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".75"/><path d="M34 126H75" stroke="#F2C14E" stroke-width="1.3" opacity=".45"/></g>
+</svg>

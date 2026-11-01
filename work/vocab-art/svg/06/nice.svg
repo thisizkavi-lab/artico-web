@@ -1,0 +1,60 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: nice (Adjective)
+  CONTEXTUAL_DEFINITION: Pleasantly considerate and kind, shown by one commuter offering shelter from the rain.
+  PEDAGOGICAL_ARCHETYPE: 3 (Visible helpful act with a warm response)
+  SYNONYM_GUARD: A stranger shares an umbrella; this teaches a nice person rather than excellent quality or good taste.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Light rainy street with blue-gray pavement.
+    - Context_Layer: Two commuters close together under one umbrella.
+    - Focal_Layer: The giver's protective umbrella and offered hand.
+    - Details_Layer: Rain beads, puddle ripples, wet coat hems.
+    - Lighting_Layer: Soft daylight reflected in the shared shelter.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:nice" data-archetype="expressive-bust">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EFF5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#sky)"/>
+    <path d="M0 143 Q146 137 304 145 L304 192 L0 192Z" fill="#CBD5E1"/>
+    <ellipse cx="153" cy="162" rx="108" ry="9" fill="#AEBBC9"/>
+    <path d="M25 170 Q39 166 53 170 Q39 175 25 170Z M240 168 Q254 163 269 168 Q255 174 240 168Z" fill="#E9EFF5"/>
+  </g>
+  <g id="layer-context">
+    <path d="M39 151 Q41 124 62 121 Q83 124 85 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M53 121 L53 109 L72 109 L71 124" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="63" cy="89" r="19" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M44 88 Q45 67 65 68 Q83 69 82 90 Q74 79 63 79 Q54 84 44 88Z" fill="#27364B"/>
+    <path d="M54 90 Q58 86 61 90 M67 90 Q71 86 74 90" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M57 98 Q63 103 70 98" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M217 151 Q219 124 241 121 Q263 124 265 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M232 121 L231 109 L251 109 L250 124" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="241" cy="89" r="19" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M222 88 Q223 67 242 68 Q261 69 260 89 Q251 79 241 79 Q231 84 222 88Z" fill="#6B4B35"/>
+    <path d="M232 90 Q236 86 239 90 M245 90 Q249 86 252 90" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="M234 98 Q242 104 250 97" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M229 129 Q213 120 203 113 Q198 109 201 105 Q205 101 210 106 L233 120" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <g id="layer-focal">
+    <path d="M58 85 Q66 49 101 42 Q144 34 185 42 Q222 49 229 85 Q211 76 193 75 Q174 86 152 76 Q126 86 101 75 Q79 77 58 85Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+    <path d="M146 76 L146 153" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M146 76 L146 153" stroke="#C88446" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M142 80 Q151 85 160 80 L163 100 Q153 106 140 100Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M163 100 Q182 107 204 113" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M199 109 L207 112 L202 119" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 71 Q100 51 132 57 M163 56 Q198 51 215 70" fill="none" stroke="#DCEAF4" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M27 54 L24 63 M46 31 L43 40 M266 42 L263 51 M284 65 L281 74" stroke="#8BA5BF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M86 119 L81 125 M91 123 L87 130 M208 88 L204 95" stroke="#8BA5BF" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="91" cy="96" r="3" fill="#FFFFFF"/><circle cx="196" cy="95" r="3" fill="#FFFFFF"/>
+    <path d="M24 146 Q37 143 49 146" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M74 54 Q111 38 145 48 M162 49 Q198 40 218 57" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.72"/>
+    <path d="M39 157 Q152 164 266 157" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

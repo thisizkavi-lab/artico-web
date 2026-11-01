@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: snowsuit (Noun)
+  CONTEXTUAL_DEFINITION: A thick insulated one-piece outfit worn outside in snow.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The padded one-piece has a warm hood, mittens, and covered feet, distinguishing it from light indoor baby clothing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cool winter window and pale snow outdoors.
+    - Context_Layer: Soft gloves and snowflake shapes.
+    - Focal_Layer: A thick hooded baby snowsuit displayed upright.
+    - Details_Layer: Quilted padding, insulated cuffs, and zipper.
+    - Lighting_Layer: Cool white halo suggests winter warmth.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:snowsuit" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="snow-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="snow-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#829A83"/><stop offset="1" stop-color="#A9C2A3"/></linearGradient><filter id="snow-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#snow-bg)"/><path d="M0 153Q79 146 152 153T304 150V192H0Z" fill="#E3E8F0"/><rect x="30" y="24" width="244" height="92" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="2"/><path d="M151 25V115M31 69H273" stroke="#FFFFFF" stroke-width="2.7"/><path d="M42 100Q77 86 107 100T167 100T228 100T264 97" fill="none" stroke="#FFFFFF" stroke-width="5"/></g>
+  <g id="layer-context"><path d="M43 137L63 132L76 137L56 143Z" fill="#D9857F" stroke="#64748B" stroke-width="1.3"/><path d="M234 136L254 131L267 136L247 142Z" fill="#5479AC" stroke="#64748B" stroke-width="1.3"/><path d="M52 127L57 120L61 127M247 127L252 120L256 127" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#snow-shadow)"><path d="M120 67Q120 51 136 47Q151 41 168 47Q184 51 184 67L199 82L188 96L178 86L181 131Q178 147 152 153Q126 147 123 131L126 86L116 96L105 82Z" fill="url(#snow-cloth)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M126 65Q127 52 152 51Q177 52 178 65L168 77H136Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M135 72Q152 80 169 72" fill="none" stroke="#F3ECE1" stroke-width="3"/><path d="M151 77V134" stroke="#5479AC" stroke-width="2.4"/><circle cx="151" cy="90" r="2" fill="#D9A441"/><circle cx="151" cy="105" r="2" fill="#D9A441"/><circle cx="151" cy="120" r="2" fill="#D9A441"/><path d="M121 68L108 83M183 68L196 83" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M121 68L108 83M183 68L196 83" stroke="#A9C2A3" stroke-width="4.5" stroke-linecap="round"/><path d="M127 129Q152 138 177 129" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M128 136Q137 150 149 148L149 139H129ZM154 148Q167 151 176 136L175 139H154Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M98 37Q151 24 206 37" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><path d="M139 59Q151 64 164 59" fill="none" stroke="#D9A441" stroke-width="1.6"/><circle cx="95" cy="64" r="2.2" fill="#FFFFFF"/><circle cx="210" cy="64" r="2.2" fill="#FFFFFF"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="102" rx="87" ry="77" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/><path d="M107 28Q152 15 199 28" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

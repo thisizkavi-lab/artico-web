@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: hurricane (Noun)
+  CONTEXTUAL_DEFINITION: A huge tropical cyclone with spiral cloud bands rotating around a clear eye over ocean.
+  PEDAGOGICAL_ART_DIRECTOR: Use an overhead view of a vast rotating storm system, with curved spiral cloud bands and an unmistakable calm eye.
+  PEDAGOGICAL_ARCHETYPE: 3 - Large weather system
+  SYNONYM_GUARD: The spiral is seen from above over ocean, distinct from a tornado's narrow funnel and a general storm.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A blue ocean disk holds broad white and slate spiral cloud arms around a circular open eye, with curved wind paths.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:hurricane" data-archetype="overhead-tropical-cyclone-eye">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="hu-sky" x2="0" y2="1"><stop stop-color="#A8C6D0"/><stop offset="1" stop-color="#E5EFEB"/></linearGradient><radialGradient id="hu-ocean"><stop stop-color="#5FA8B8"/><stop offset=".72" stop-color="#33788F"/><stop offset="1" stop-color="#285D76"/></radialGradient><linearGradient id="hu-cloud" x2="0" y2="1"><stop stop-color="#F8FBF6"/><stop offset="1" stop-color="#BACBD0"/></linearGradient><filter id="hu-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#243F53" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hu-sky)"/><path d="M0 143Q75 129 151 143T304 136V192H0Z" fill="#9DABA2"/><path d="M0 165H304V192H0Z" fill="#C7C4A9"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A6B6B6" stroke-width="1.2"/><ellipse cx="152" cy="162" rx="105" ry="7" fill="#314B59" opacity=".18"/><circle cx="152" cy="96" r="73" fill="url(#hu-ocean)" stroke="#285B70" stroke-width="1.8"/><path d="M91 54q14-13 30-15m73 128q18-9 26-23m-103 26q-16-5-27-18" fill="none" stroke="#8ED0D4" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#hu-shadow)">
+  <path d="M86 49C111 28 152 26 185 38C218 50 234 77 223 101C214 121 189 133 167 121C145 109 145 83 163 72C179 62 199 69 200 84C201 96 190 101 181 96C175 93 177 86 181 84" fill="none" stroke="url(#hu-cloud)" stroke-width="15" stroke-linecap="round"/><path d="M70 80C79 54 102 38 129 33M235 96C235 124 220 147 196 159M113 157C90 150 74 135 68 114" fill="none" stroke="#E6F2F0" stroke-width="7.5" stroke-linecap="round"/><path d="M94 58C118 41 149 39 178 48C205 57 220 77 213 96C205 115 185 122 169 112C154 103 157 84 170 78C182 73 192 78 192 87" fill="none" stroke="#7C9BA5" stroke-width="5" stroke-linecap="round" opacity=".92"/><circle cx="152" cy="96" r="18" fill="#397B91" stroke="#A8D7D9" stroke-width="2"/><circle cx="152" cy="96" r="10" fill="#7DB9C2" opacity=".55"/>
+  <path d="M104 48q11-10 21-11m82 105q9-7 13-17m-128 4q-8-8-10-17" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M51 69q10-12 23-17m162 91q-7 12-18 18m-125-1q-11-7-17-17" fill="none" stroke="#C7E6E2" stroke-width="1.5" stroke-linecap="round"/><path d="M82 70q9-20 27-28" fill="none" stroke="#8BC6CE" stroke-width="1.4" stroke-linecap="round"/><path d="M221 80q8 16 3 30" fill="none" stroke="#DDF5F1" stroke-width="1.4" stroke-linecap="round"/><path d="M201 142q-13 11-27 14" fill="none" stroke="#83BCC6" stroke-width="1.4" stroke-linecap="round"/><path d="M86 129q-10-10-13-22" fill="none" stroke="#DDF5F1" stroke-width="1.4" stroke-linecap="round"/><circle cx="87" cy="69" r="1.5" fill="#F5FFFF"/><circle cx="218" cy="116" r="1.5" fill="#F5FFFF"/><circle cx="101" cy="136" r="1.5" fill="#F5FFFF"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/></g>
+ <g id="layer-lighting"><path d="M84 50q18-19 43-22m84 119q14-11 18-27m-128 37q-18-7-26-22" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".86"/><circle cx="152" cy="96" r="2" fill="#DFF7F2"/></g>
+</svg>

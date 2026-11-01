@@ -1,0 +1,53 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: program
+ CONTEXTUAL_DEFINITION: A booklet for an event or theater performance listing the show and its performers.
+ PEDAGOGICAL_ARCHETYPE: blank theater program booklet held by patron
+ SYNONYM_GUARD: Show the event-program booklet in a theater audience setting; do not add readable text or confuse it with an actor’s script.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A patron holds a small open program booklet before a curtained stage; its pages use simple blank picture panels and no words.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:program" data-archetype="blank theater program booklet held by patron">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 157H304V192H0Z" fill="#C8B89E"/><path d="M0 157H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M23 22H281V141H23Z" fill="#26384A"/><path d="M32 30H272V136H32Z" fill="#405663"/>
+  <path d="M52 41H252V117H52Z" fill="#EFDCC0"/>
+  <path d="M40 40H77V121H40Z M264 40H227V121H264Z" fill="#B85E5A"/>
+  <path d="M43 48Q57 56 74 47V119H43Z M261 48Q247 56 230 47V119H261Z" fill="#D17A6B"/>
+  <path d="M53 119H251V128H53Z" fill="#D6A64C"/><path d="M44 128H260V138H44Z" fill="#8C725A"/>
+  <path d="M0 153H304" stroke="#E8DCC5" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <circle cx="55" cy="148" r="4" fill="#D29A78"/><circle cx="76" cy="148" r="4" fill="#D29A78"/><circle cx="228" cy="148" r="4" fill="#D29A78"/><circle cx="249" cy="148" r="4" fill="#D29A78"/>
+  <path d="M49 153Q55 150 61 153L63 159H47Z M70 153Q76 150 82 153L84 159H68Z M222 153Q228 150 234 153L236 159H220Z M243 153Q249 150 255 153L257 159H241Z" fill="#597D8B"/>
+  <path d="M44 160H88m128 0h44" stroke="#26384A" stroke-width="2" fill="none"/>
+  <path d="M54 35H250" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M87 85L192 65L211 137L104 153Z" fill="#D0C2A9" stroke="#8D775B" stroke-width="1.2"/>
+  <path d="M78 79L185 61L204 133L96 150Z" fill="#F7EBD7" stroke="#8E785E" stroke-width="1.5"/>
+  <path d="M86 86L179 70L195 126L103 142Z" fill="#B85E5A"/>
+  <path d="M93 91L176 77L190 123L108 137Z" fill="#E7D8C0"/>
+  <path d="M116 117V96L142 86L168 96V117Z" fill="#405663"/>
+  <path d="M119 96L126 90V112m32-22 7 6v18m-39-3h39" stroke="#D6A64C" stroke-width="1.6" fill="none"/>
+  <path d="M130 104Q139 95 147 104Q154 96 162 104" stroke="#F0D4A4" stroke-width="1.4" fill="none"/>
+  <circle cx="146" cy="101" r="2" fill="#B85E5A"/><circle cx="137" cy="106" r="1.3" fill="#E8C76A"/><circle cx="155" cy="106" r="1.3" fill="#E8C76A"/>
+  <path d="M100 143L204 126" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <path d="M95 75L185 59" stroke="#FFF6E5" stroke-width="1.1" fill="none"/>
+  <path d="M73 145Q85 136 97 145L101 157H72Z" fill="#597D8B"/><circle cx="86" cy="139" r="5" fill="#D29A78"/>
+  <path d="M91 142L107 132" stroke="#D29A78" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M107 132l4-3" stroke="#D29A78" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M105 92H134m-26 4h19m42 2 27 6m-25 0 21 5" stroke="#BEAD90" stroke-width="1" fill="none"/>
+  <path d="M109 115l7 5 8-8m40 2 8 7 9-6" stroke="#F0DCA8" stroke-width="1.2" fill="none"/>
+  <path d="M210 72V93l8 7 8-7V72" fill="#D6A64C" stroke="#9B744B" stroke-width="1"/>
+  <path d="M217 72V88" stroke="#B85E5A" stroke-width="2" fill="none"/>
+  <circle cx="151" cy="73" r="2" fill="#E8C76A"/><path d="M62 134H242" stroke="#F2E4CB" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="106" rx="102" ry="60" fill="#E7C66B" opacity=".1"/>
+  <path d="M101 36L119 83m114-47-28 47" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/>
+  <path d="M73 101L143 81m21 0 65 20" stroke="#FFF8E8" stroke-width=".9" opacity=".7" fill="none"/>
+ </g>
+</svg>

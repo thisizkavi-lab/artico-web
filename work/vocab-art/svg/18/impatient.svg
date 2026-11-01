@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: impatient (Adjective)
+  CONTEXTUAL_DEFINITION: Becoming annoyed or restless while waiting for something to happen.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person taps a foot and drums fingers in a slow queue while others calmly wait ahead.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared-room snack queue and wall clock.
+    - Context_Layer: Two people ahead move forward slowly.
+    - Focal_Layer: Person at the back fidgets and leans toward the counter.
+    - Details_Layer: Tapping toe, drumming fingertips, tight brow and clock hands.
+    - Lighting_Layer: Small warm accent around the restless foot.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:impatient" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9857F;--c-secondary:#A95059;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="129" ry="8" fill="#EAE3D5"/><circle cx="260" cy="49" r="20" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><circle cx="260" cy="49" r="2.5" fill="#526173"/><path d="M260 49L260 36M260 49L270 54" stroke="#526173" stroke-width="2" stroke-linecap="round"/><path d="M252 25L248 21M268 25L272 21" stroke="#D9857F" stroke-width="1.8"/></g>
+  <g id="layer-context"><path d="M219 110H286L280 124H225Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="238" cy="65" r="15" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M223 65Q224 49 238 50Q253 51 253 66L248 70H226Z" fill="#35404B"/><path d="M220 86Q238 80 256 86L260 109H216Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M229 65H234M242 65H247M231 75Q238 78 245 75" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M226 92L217 103M250 92L260 103" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><circle cx="173" cy="69" r="14" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M159 69Q160 54 173 55Q187 56 187 70L182 73H162Z" fill="#805333"/><path d="M157 89Q173 83 189 89L193 109H153Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="84" cy="96" rx="66" ry="69" fill="#FEF3C7" opacity=".56"/><circle cx="84" cy="54" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M64 54Q65 32 84 33Q105 34 104 56L97 61Q93 45 82 45Q72 46 66 62Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M60 80Q84 73 108 80L114 121H53Z" fill="url(#top)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M66 88L52 102L43 97M102 88L116 98L127 94" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M66 88L53 102L44 97M102 88L116 98L126 94" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M56 121L54 158H72L81 123M88 123L96 158H113L110 121" fill="#A95059" stroke="#1E2A3B" stroke-width="2"/><path d="M74 54L81 57M91 57L98 54M72 69Q84 63 96 69" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M97 151L110 155L109 161H95Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M128 72L121 67M128 82L119 82M131 92L125 97" stroke="#D9857F" stroke-width="2" stroke-linecap="round"/><path d="M77 39L84 42M90 42L97 39" stroke="#1E2A3B" stroke-width="1.8"/><path d="M111 149L119 143M111 157L122 156M92 161L100 164" stroke="#D9857F" stroke-width="2" stroke-linecap="round"/><circle cx="136" cy="72" r="2" fill="#D9A441"/><circle cx="140" cy="90" r="2.2" fill="#D9A441"/><path d="M202 65H211" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/></g>
+  <g id="layer-lighting"><path d="M74 37Q84 33 94 37" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".66"/><ellipse cx="84" cy="96" rx="66" ry="69" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

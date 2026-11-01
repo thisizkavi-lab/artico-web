@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: law (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies rules, legal systems, and courts.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Law students hold a classroom moot court with a gavel and balanced scales, showing the academic subject rather than an actual trial outcome.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University seminar room with a long table.
+    - Context_Layer: Muted legal books and a classroom board.
+    - Focal_Layer: Students discuss a case around a judge's bench model.
+    - Details_Layer: Gavel, balanced scales, and closed unlettered law books.
+    - Lighting_Layer: Gold emphasis on the scales of justice.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:law" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="law-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="law-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#law-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="21" y="28" width="90" height="59" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M35 43H93M35 53H83M35 67H91" stroke="#DCECFB" stroke-width="1.7"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M25 143H279" stroke="#8D765A" stroke-width="4"/><path d="M35 143V157M266 143V157" stroke="#8D765A" stroke-width="3"/><rect x="217" y="44" width="59" height="68" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M223 54H269M223 63H269M223 72H269" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#law-shadow)"><path d="M90 133H218V145H90Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M103 145V155M205 145V155" stroke="#315782" stroke-width="4"/><path d="M154 53V106M128 66H180M128 66L114 94M180 66L194 94" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M110 94H136Q135 110 123 111Q111 110 110 94ZM172 94H198Q197 110 185 111Q173 110 172 94Z" fill="#FEF9C3" stroke="#8D6138" stroke-width="1.5"/><path d="M143 107H166L171 114H138Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><circle cx="154" cy="46" r="5" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/><path d="M61 112L102 90" stroke="#65472F" stroke-width="8" stroke-linecap="round"/><path d="M61 112L102 90" stroke="#D9A441" stroke-width="4.5" stroke-linecap="round"/><path d="M53 109L62 100L71 108L65 119Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M91 84L104 82L108 90L96 97Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M71 129L108 129L112 137H73Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M63 45Q71 40 80 45M63 52Q71 47 80 52" fill="none" stroke="#F7EBCF" stroke-width="1.6"/><path d="M131 67L118 92M177 67L190 92" stroke="#F0C971" stroke-width="1.5"/><circle cx="154" cy="65" r="2.4" fill="#FEF9C3"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="92" rx="121" ry="71" fill="#FEF9C3" opacity=".07"/><path d="M128 66H180M153 55V101" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

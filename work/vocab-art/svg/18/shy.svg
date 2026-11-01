@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: shy (Adjective)
+  CONTEXTUAL_DEFINITION: Bashful and hesitant around other people.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person hides partly behind a trusted companion and peeks toward a newcomer, unlike a calm quiet person.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet corner of a shared community room.
+    - Context_Layer: Friendly companion at x=94; newcomer waiting at x=249.
+    - Focal_Layer: Bashful person at x=157, partly behind companion, shoulders tucked inward.
+    - Details_Layer: Averted eyes, faint blush and hands held close.
+    - Lighting_Layer: Gentle focus on the half-hidden face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:shy" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="hood" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#829A83"/><stop offset="1" stop-color="#56725E"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q78 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="157" cy="168" rx="124" ry="8" fill="#EAE3D5"/><path d="M19 69H287M20 67V42H88V68" fill="none" stroke="#E3E8F0" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="92" cy="65" r="17" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M75 65Q77 47 93 48Q109 49 109 65L103 71H78Z" fill="#35404B"/><path d="M74 87Q92 80 110 87L118 132H68Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M80 96L72 112M104 96L117 112" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><circle cx="253" cy="69" r="16" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M237 69Q238 51 254 52Q270 53 269 70L263 74H240Z" fill="#805333"/><path d="M235 92Q253 85 270 92L277 127H230Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M245 69Q249 72 253 69M259 69Q263 72 267 69M247 78Q253 75 259 79" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="164" cy="100" rx="51" ry="66" fill="#FEF3C7" opacity=".54"/><circle cx="160" cy="63" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M141 64Q140 43 160 42Q180 43 180 65L175 69Q171 51 159 52Q149 52 143 70Z" fill="#6F665F" stroke="#1E2A3B" stroke-width="2"/><path d="M139 88Q160 82 180 89L184 137H136Z" fill="url(#hood)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M141 96Q132 101 137 115M178 96Q187 103 183 114" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M141 96Q132 101 137 115M178 96Q185 103 182 114" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M141 137L140 162H152L158 138M163 138L170 162H182L178 137" fill="#56725E" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M147 64Q151 68 155 65M164 63Q168 65 171 63" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M153 76Q158 78 163 76" fill="none" stroke="#805333" stroke-width="1.6"/><ellipse cx="147" cy="72" rx="4" ry="2" fill="#D9857F" opacity=".65"/><path d="M128 54Q123 47 128 42M186 54Q191 47 186 42" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><circle cx="198" cy="111" r="2" fill="#4A72B2"/><circle cx="204" cy="119" r="2.6" fill="#4A72B2"/></g>
+  <g id="layer-lighting"><path d="M151 47Q159 43 168 47" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".65"/><ellipse cx="164" cy="100" rx="51" ry="66" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".38"/></g>
+</svg>

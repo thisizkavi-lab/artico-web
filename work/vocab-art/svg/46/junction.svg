@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: junction
+  CONTEXTUAL_DEFINITION: A road place where routes meet or branch, shown here as a side road joining a larger road.
+  PEDAGOGICAL_ART_DIRECTOR: Make a clear T-junction in a landscaped map view; a side road joins the main road, with a blue route turning into the joining road.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Show roads joining at a T-shaped junction, not a general union or a four-way crossing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Main road spans x=20..284 at y=105..155, with a smaller vertical road entering from y=14 and meeting it at (152,105); a blue route bends onto the side branch.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:junction" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="junction-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E1ECD9"/><stop offset="1" stop-color="#C5D8C0"/></linearGradient>
+    <linearGradient id="junction-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#687A8A"/><stop offset="1" stop-color="#47596B"/></linearGradient>
+    <linearGradient id="junction-route" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#76A1DE"/><stop offset="1" stop-color="#3F67A5"/></linearGradient>
+    <filter id="junction-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#junction-land)"/><path d="M19 98H285V162H19Z" fill="#EEECE4" stroke="#738078" stroke-width="1.4"/><path d="M114 13H190V130H114Z" fill="#EEECE4" stroke="#738078" stroke-width="1.4"/><path d="M25 106H279V154H25Z" fill="url(#junction-road)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M121 19H183V122H121Z" fill="url(#junction-road)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M33 130H104M200 130H271M152 24V83" stroke="#F8F5EA" stroke-width="1.6" stroke-dasharray="8 8" opacity=".8"/><path d="M109 101Q111 107 118 107M195 107Q201 107 203 101" fill="none" stroke="#F8F5EA" stroke-width="2"/></g>
+  <g id="layer-context"><circle cx="50" cy="51" r="18" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="51" cy="50" r="7" fill="#A8CA94"/><circle cx="254" cy="53" r="20" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="253" cy="52" r="8" fill="#A8CA94"/><rect x="30" y="20" width="34" height="24" rx="3" fill="#D9C3A3" stroke="#766857" stroke-width="1.3"/><path d="M28 22L47 10L66 22Z" fill="#98795E" stroke="#1E2A3B" stroke-width="1.2"/><rect x="231" y="21" width="39" height="27" rx="3" fill="#B9CBD0" stroke="#60747D" stroke-width="1.3"/><path d="M228 24L250 11L273 24Z" fill="#687C86" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="38" cy="177" r="10" fill="#83AA78" stroke="#486750" stroke-width="1.4"/><circle cx="268" cy="177" r="11" fill="#83AA78" stroke="#486750" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#junction-shadow)"><path d="M152 37V90Q152 111 173 111H224" fill="none" stroke="#FAF8F3" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M152 37V90Q152 111 173 111H224" fill="none" stroke="url(#junction-route)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M216 101L233 111L216 121Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.5"/><g transform="translate(64 113) rotate(90 16 13)"><path d="M4 4Q6 0 12 0H20Q26 1 28 7L30 21H2Z" fill="#E1B969" stroke="#1E2A3B" stroke-width="1.6"/><path d="M8 5H22L25 12H6Z" fill="#BCD8E0" stroke="#526274" stroke-width="1"/><circle cx="7" cy="20" r="2" fill="#36485A"/><circle cx="25" cy="20" r="2" fill="#36485A"/></g></g>
+  <g id="layer-details"><path d="M106 102V118M198 118V102" stroke="#F8F5EA" stroke-width="2.4" stroke-dasharray="3 4"/><rect x="106" y="91" width="5" height="15" rx="1" fill="#1E2A3B"/><circle cx="108.5" cy="90" r="4" fill="#D65F52" stroke="#FAF8F3" stroke-width="1"/><rect x="193" y="91" width="5" height="15" rx="1" fill="#1E2A3B"/><circle cx="195.5" cy="90" r="4" fill="#F2C14E" stroke="#FAF8F3" stroke-width="1"/><path d="M142 22H162M142 28H162" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><circle cx="152" cy="92" r="4" fill="#F2C14E" stroke="#FAF8F3" stroke-width="1"/></g>
+  <g id="layer-lighting"><path d="M26 108H278M123 21V96" stroke="#FFFFFF" stroke-width="1" opacity=".62"/><ellipse cx="152" cy="105" rx="47" ry="18" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".5"/><path d="M34 157H275" stroke="#728277" stroke-width="1" opacity=".5"/></g>
+</svg>

@@ -1,0 +1,36 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: humpback whale (noun)
+  CONTEXTUAL_DEFINITION: A humpback whale swimming near the surface, recognizable by its unusually long pectoral flippers and knobbly head.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining species traits
+  SYNONYM_GUARD: Exaggerate the long front flippers and small dorsal hump; do not use the blue whale's smooth, streamlined belly or the sperm whale's square head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Broad charcoal-grey whale faces right at a low waterline; body x=71..238 y=65..128, long pale-edged near flipper stretches down-left toward x=126,y=150, small hump on back, rounded head bumps, and flukes at left.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:humpback whale" data-archetype="humpback-long-pectoral-flippers">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#526B75;--c-secondary:#293F4D;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="humpback-sky" x2="0" y2="1"><stop stop-color="#D8E8ED"/><stop offset="1" stop-color="#F3F0E5"/></linearGradient>
+  <linearGradient id="humpback-water" x2="0" y2="1"><stop stop-color="#74ADB9"/><stop offset="1" stop-color="#3D7D90"/></linearGradient>
+  <linearGradient id="humpback-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#687E87"/><stop offset="1" stop-color="#344D5A"/></linearGradient>
+  <filter id="humpback-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#humpback-sky)"/><circle cx="244" cy="39" r="18" fill="#F1D790" opacity=".46"/><path d="M0 124Q74 116 150 124T304 120V192H0Z" fill="url(#humpback-water)"/><path d="M0 158Q69 150 150 158T304 154V192H0Z" fill="#508FA0"/></g>
+ <g id="layer-context"><path d="M0 124Q76 117 151 125T304 121" fill="none" stroke="#E0F1EE" stroke-width="1.8"/><path d="M14 142q18-6 35 0m195-7q17-5 34 1m-154 39q16-5 32 0" fill="none" stroke="#B7D7D9" stroke-width="1.5" stroke-linecap="round"/><circle cx="270" cy="97" r="1.9" fill="#E5F7F3" opacity=".8"/><circle cx="264" cy="88" r="1.2" fill="#E5F7F3" opacity=".8"/><ellipse cx="158" cy="132" rx="86" ry="6" fill="#183C49" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#humpback-shadow)">
+  <path d="M84 94Q67 84 56 73Q61 89 77 100Q67 110 61 119Q76 117 91 105Z" fill="#445B66" stroke="#293F4A" stroke-width="1.5"/>
+  <path d="M80 85Q100 66 141 66Q180 64 211 77Q230 84 238 96Q232 111 210 119Q170 130 122 120Q94 114 80 101Z" fill="url(#humpback-hide)" stroke="#293F4A" stroke-width="1.7"/>
+  <path d="M92 106Q127 125 170 120Q201 117 220 108Q208 128 170 131Q124 131 98 117Z" fill="#D9D8CE" stroke="#536A72" stroke-width="1"/>
+  <path d="M154 70Q163 61 173 68L174 73Z" fill="#3B525D" stroke="#293F4A" stroke-width="1"/>
+  <path d="M143 105Q133 122 126 145Q133 153 141 148Q155 130 164 110Z" fill="#B6C3C0" stroke="#3C5761" stroke-width="1.4"/>
+  <path d="M145 109Q138 127 133 146m8-31q-2 15-5 29m18-35q-5 16-10 31" fill="none" stroke="#728A8B" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M188 105Q200 110 208 121Q200 124 188 115Z" fill="#475D67" stroke="#293F4A" stroke-width="1"/>
+  <path d="M218 83Q229 79 236 90Q230 100 219 98Q213 93 218 83Z" fill="#72858A" stroke="#293F4A" stroke-width="1"/>
+  <circle cx="226" cy="90" r="1.7" fill="#182F39"/>
+  <path d="M218 100q9 4 17 0m-17-3q-7 1-11-2" fill="none" stroke="#283F49" stroke-width="1.1" stroke-linecap="round"/>
+  <circle cx="215" cy="82" r="2" fill="#B2C1BC"/><circle cx="221" cy="80" r="1.7" fill="#B2C1BC"/><circle cx="227" cy="82" r="1.6" fill="#B2C1BC"/><circle cx="232" cy="85" r="1.5" fill="#B2C1BC"/>
+  <path d="M97 79q26-14 54-10m19 0q18 1 31 8" fill="none" stroke="#98ACAD" stroke-width="1.4" opacity=".76" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M105 90q18-8 34-6m-22 24q10 5 18 5" fill="none" stroke="#AFC0BE" stroke-width="1.2" opacity=".78" stroke-linecap="round"/><circle cx="193" cy="94" r="1.2" fill="#D4E2DD"/><path d="M74 132q8-3 15 0m155-2q9-3 16 0" fill="none" stroke="#C7E4E1" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M100 77q15-10 32-10m39 1q12 1 20 5" fill="none" stroke="#F2F4EA" stroke-width="1.6" opacity=".56" stroke-linecap="round"/><ellipse cx="158" cy="87" rx="70" ry="22" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

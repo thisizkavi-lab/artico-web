@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:road work / roadworks" data-archetype="workers-repairing-a-city-road">
+<!-- SELF_PROMPT: Lesson 75 urban life; road work / roadworks. Show a crew repairing a cut section of street with fresh pavement, a roller, and safety cones; no signs or words. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="roadwork-sky" x2="0" y2="1"><stop stop-color="#D9E6E7"/><stop offset="1" stop-color="#B8C7C7"/></linearGradient>
+  <linearGradient id="roadwork-asphalt" x2="0" y2="1"><stop stop-color="#70797B"/><stop offset="1" stop-color="#4C575A"/></linearGradient>
+  <linearGradient id="roadwork-machine" x2="0" y2="1"><stop stop-color="#E9C66F"/><stop offset="1" stop-color="#C8874F"/></linearGradient>
+  <linearGradient id="roadwork-soil" x2="0" y2="1"><stop stop-color="#B3926D"/><stop offset="1" stop-color="#76624F"/></linearGradient>
+  <filter id="roadwork-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#roadwork-sky)"/><path d="M0 118V47h49v71Zm49 0V29h45v89Zm168 0V42h43v76Zm43 0V25h44v93Z" fill="#819396"/><path d="M0 118H304V192H0Z" fill="#A49E89"/></g>
+<g id="layer-context">
+  <path d="M0 137H304V192H0Z" fill="url(#roadwork-asphalt)"/><path d="M0 132H304" fill="none" stroke="#D7CBA9" stroke-width="3"/>
+  <path d="M13 146h42m14 0h41m123 0h55" fill="none" stroke="#E9D692" stroke-width="2" stroke-dasharray="9 8"/>
+  <path d="M92 141L114 178H68Z" fill="#D9824D" stroke="#80593F" stroke-width="1.3"/><path d="M93 151l8 14H84Z" fill="#F4E4BE"/><path d="M241 141l22 37h-45Z" fill="#D9824D" stroke="#80593F" stroke-width="1.3"/><path d="M241 151l8 14h-16Z" fill="#F4E4BE"/>
+  <path d="M111 166q20-9 42 0t43-1v26h-85Z" fill="url(#roadwork-soil)"/><path d="M111 164q22-11 43 0t42 0" fill="none" stroke="#D6B98A" stroke-width="3"/>
+</g>
+<g id="layer-focal" filter="url(#roadwork-shadow)">
+  <path d="M129 124Q135 115 146 115h44q8 0 12 9l3 27h-79Z" fill="url(#roadwork-machine)" stroke="#72533F" stroke-width="1.5"/><path d="M141 119h25v14h-25Z" fill="#78959A" stroke="#EAD9B8" stroke-width="1.1"/><path d="M165 117h20v18h-20Z" fill="#749198" stroke="#765741" stroke-width="1.1"/><circle cx="145" cy="145" r="9" fill="#465359"/><circle cx="188" cy="145" r="12" fill="#465359"/><circle cx="145" cy="145" r="3" fill="#D7D8CC"/><circle cx="188" cy="145" r="4" fill="#D7D8CC"/>
+  <circle cx="68" cy="109" r="7" fill="#C78E69"/><path d="M61 106q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#51423C"/><path d="M60 118Q68 113 76 118L80 139 56 140Z" fill="#E9C66F" stroke="#805D42" stroke-width="1.2"/><path d="M63 138l-4 18 8 1 5-17m4-2 5 18 8 0-6-18" fill="#43535A"/><path d="M60 120l-9 10 4 5 11-8m9-7 9 7-4 5-11-6" fill="#C78E69"/><path d="M51 129l-8 9m20-13-7 15" fill="none" stroke="#F4E4BE" stroke-width="1.5"/>
+  <circle cx="229" cy="112" r="7" fill="#D6A47C"/><path d="M222 109q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#4A413D"/><path d="M221 121Q229 116 237 121L241 140 217 141Z" fill="#E9C66F" stroke="#805D42" stroke-width="1.2"/><path d="M224 139l-5 16 8 2 5-17m5-1 6 17 8-1-6-18" fill="#43535A"/><path d="M221 123l-8 9 4 4 10-7m10-6 8 7-4 5-11-7" fill="#D6A47C"/>
+  <path d="M246 126l17 15-5 5-18-12" fill="none" stroke="#5F5244" stroke-width="4"/>
+</g>
+<g id="layer-details">
+  <path d="M14 183q12-5 23 0m47 5q12-5 23 0m112-5q12-5 23 0m51-6q12-5 22 0" fill="none" stroke="#AAA988" stroke-width="1.4"/>
+  <circle cx="105" cy="180" r="1.8" fill="#E9C66F"/><circle cx="204" cy="171" r="1.8" fill="#E9C66F"/><circle cx="274" cy="157" r="1.7" fill="#E9C66F"/>
+  <path d="M38 91q9-5 17 0m88-37q9-5 17 0m94 18q9-5 17 0" fill="none" stroke="#EFF1E6" stroke-width="1.3"/>
+  <path d="M111 170q18-7 36 0m7 0q20-7 39 0" fill="none" stroke="#D9C29A" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M112 162q20-9 42 0t43 0" fill="none" stroke="#E6D09F" stroke-width="1.3"/><path d="M61 134h18m137-1h17" fill="none" stroke="#F5E7C9" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

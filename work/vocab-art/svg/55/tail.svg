@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: tail (animal body-part noun)
+  CONTEXTUAL_DEFINITION: The bushy tail attached to a wild fox; the tail is brightly highlighted while the rest of the animal is muted.
+  PEDAGOGICAL_ARCHETYPE: 2 - Dimmed whole animal with highlighted target part
+  SYNONYM_GUARD: Show the tail connected to a wild fox, not an airplane, dog, or car; highlight only the long bushy tail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Woodland floor with a muted fox in side profile facing right; the cream-tipped orange tail at x=80..137 is vivid, with a thin accent ring around that tail.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:tail (animal)" data-archetype="highlighted-wild-fox-tail">
+  <defs>
+    <style>:root{--c-bg-1:#EAF1EB;--c-bg-2:#FAF5E9;--c-surface:#D3C5A8;--c-primary:#D66732;--c-secondary:#654335;--c-accent:#E3B650;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="tail-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF1EB"/><stop offset="1" stop-color="#F8F2E4"/></linearGradient>
+    <filter id="tail-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tail-sky)"/><path d="M0 129 Q65 119 128 129 T242 127 Q280 120 304 128 V192 H0Z" fill="#DFE2D2"/><path d="M0 153 Q69 145 145 153 T304 151 V192 H0Z" fill="#D0C3A8"/><ellipse cx="152" cy="164" rx="104" ry="7" fill="#AA9D82" opacity=".4"/></g>
+  <g id="layer-context"><path d="M38 143 V72 M38 96 L23 80 M38 110 L53 90" fill="none" stroke="#6F563D" stroke-width="4" stroke-linecap="round"/><path d="M21 82 Q25 66 36 72 Q44 59 53 71 Q64 72 66 87 Q52 81 43 94 Q31 83 21 82Z" fill="#718E6C"/><path d="M264 144 V77 M264 100 L250 84 M264 113 L280 95" fill="none" stroke="#6F563D" stroke-width="4" stroke-linecap="round"/><path d="M247 86 Q251 70 263 76 Q271 63 280 75 Q292 76 294 91 Q280 85 271 98 Q259 87 247 86Z" fill="#78936D"/><ellipse cx="106" cy="108" rx="42" ry="31" fill="none" stroke="#E3B650" stroke-width="2" stroke-dasharray="4 4" opacity=".8"/><path d="M80 72 Q106 61 133 74" fill="none" stroke="#E3B650" stroke-width="1.4" stroke-dasharray="3 4"/></g>
+  <g id="layer-focal" filter="url(#tail-shadow)"><path d="M134 111 Q160 94 178 99 L195 106 L213 100 L223 107 L211 114 L193 120 L171 116 Q153 125 133 127Z" fill="#8A8F8A" stroke="#1E2A3B" stroke-width="1.8" opacity=".56"/><path d="M192 104 Q207 91 221 94 L233 101 L227 109 L213 113 L198 111Z" fill="#989D96" stroke="#1E2A3B" stroke-width="1.5" opacity=".56"/><path d="M220 98 L233 101 L226 106 L216 104Z" fill="#888E89" opacity=".56"/><circle cx="218" cy="100" r="1.3" fill="#59605E" opacity=".6"/><path d="M137 113 Q119 98 101 100 Q85 101 77 112 Q74 123 88 129 Q106 135 126 123 L140 120Z" fill="#D66732" stroke="#1E2A3B" stroke-width="2.1"/><path d="M83 107 Q76 113 80 121 Q84 129 94 129 Q85 122 91 115 Q98 108 109 108Z" fill="#F5E9D4" stroke="#1E2A3B" stroke-width="1.2"/><path d="M132 117 L128 139 M157 118 L160 140 M187 116 L193 136 M207 112 L214 130" fill="none" stroke="#717977" stroke-width="5.5" stroke-linecap="round" opacity=".55"/></g>
+  <g id="layer-details"><path d="M80 109 Q94 100 109 104 M83 123 Q98 132 114 125 M222 95 Q228 93 233 98" fill="none" stroke="#F2AB6C" stroke-width="1.4"/><path d="M76 145 l-4-8 m4 8 6-6 M242 146 l4-8" fill="none" stroke="#81916E" stroke-width="1.5" stroke-linecap="round"/><path d="M92 115 Q101 111 109 114 M101 120 Q111 116 120 119" fill="none" stroke="#F6D29F" stroke-width="1.2"/><path d="M95 106 Q107 102 119 108" fill="none" stroke="#F5E7D2" stroke-width="1.2"/><path d="M89 127 Q103 132 118 125" fill="none" stroke="#F5E7D2" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M82 108 Q95 99 109 102 M86 124 Q100 131 114 124" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".5" stroke-linecap="round"/><ellipse cx="104" cy="109" rx="15" ry="7" fill="#FFFFFF" opacity=".07"/></g>
+</svg>

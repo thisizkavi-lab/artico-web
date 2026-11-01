@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: diaper (Noun)
+  CONTEXTUAL_DEFINITION: An absorbent garment worn by a baby before toilet training.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: One clean disposable diaper is shown open with soft inner padding, gathered leg openings, and side tabs, distinct from wipes or clothing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean changing surface.
+    - Context_Layer: Small stack of folded cloths.
+    - Focal_Layer: One open white disposable diaper viewed from the front.
+    - Details_Layer: Absorbent center, elastic leg gathers, and fastening tabs.
+    - Lighting_Layer: Soft cool highlight along the padded shape.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:diaper" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="diaper-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><linearGradient id="diaper-pad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient><filter id="diaper-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#diaper-bg)"/><path d="M0 152Q79 145 152 152T304 149V192H0Z" fill="#EADFCC"/><path d="M32 46H272V149H32Z" fill="#E3E8F0"/><path d="M42 57H261V139H42Z" fill="#FFFFFF" opacity=".62"/><path d="M49 151V165M254 151V165" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M51 131L94 120L108 128L64 141Z" fill="#829A83" stroke="#64748B" stroke-width="1.5"/><path d="M61 129L91 122" stroke="#F3ECE1" stroke-width="2"/><path d="M204 130L245 120L259 128L218 140Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#diaper-shadow)"><path d="M89 69Q99 60 115 66L132 78H172L189 66Q205 60 215 69L238 89L219 119Q212 138 191 146H113Q92 138 85 119L66 89Z" fill="url(#diaper-pad)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M113 74Q151 88 191 74L205 110Q199 130 181 136H123Q104 130 99 110Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6"/><path d="M104 83Q151 99 200 83M100 119Q151 132 202 119" fill="none" stroke="#D9857F" stroke-width="2"/><path d="M76 89L93 94L87 108L69 102ZM227 94L244 89L251 103L232 109Z" fill="#829A83" stroke="#1E2A3B" stroke-width="1.7"/><path d="M117 90Q151 100 187 90M120 100Q151 109 184 100M124 110Q151 117 180 110" fill="none" stroke="#DCECFB" stroke-width="2"/><path d="M92 72Q100 78 102 89M211 72Q203 78 201 89" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M108 51Q151 41 196 51" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="61" cy="79" r="2.4" fill="#D9A441"/><circle cx="243" cy="78" r="2.4" fill="#D9A441"/><path d="M119 84Q151 94 184 84" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".55"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="103" rx="102" ry="72" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".22"/><path d="M99 32Q151 19 205 32" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

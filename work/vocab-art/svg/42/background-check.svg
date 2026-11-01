@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: background check
+  CONTEXTUAL_DEFINITION: Verification of a job candidate's identity and relevant history during hiring.
+  PEDAGOGICAL_ART_DIRECTOR: Show a recruiter checking identity and records on a secure candidate file, with a clear verification symbol.
+  PEDAGOGICAL_ARCHETYPE: 5 - Hiring verification
+  SYNONYM_GUARD: Background refers to a person's history, not scenery; avoid police lights, handcuffs, or a generic criminal interrogation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a recruiter at x=59..112 looking at a record page at x=121..188. Put a candidate ID portrait card beside a large magnifying glass over the record and a small green shield/check at x=210..237; the office wall stays plain and secondary.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:background check" data-archetype="employment-verification">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="check-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="check-shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5F0E1"/><stop offset="1" stop-color="#A8D4A2"/></linearGradient>
+    <radialGradient id="check-halo"><stop stop-color="#FFF1B9" stop-opacity=".74"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="check-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="27" y="24" width="250" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M29 132 H275 V145 H29 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M43 145 V155 M261 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#check-shadow)"><path d="M47 124 Q49 100 62 94 L63 85 Q59 81 61 73 Q69 64 79 67 Q88 70 85 81 L82 89 Q96 95 98 122 L95 133 H51 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="73" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M65 74 Q67 66 74 66 Q82 67 85 74 Q78 70 71 71 Z" fill="#3D342D"/><path d="M116 39 H184 V127 H116 Z" fill="url(#check-paper)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M126 50 H174 M126 56 H170 M126 70 H173 M126 86 H174 M126 102 H173 M126 116 H167" stroke="#94A3B8" stroke-width="1"/><rect x="126" y="62" width="12" height="12" rx="2" fill="#E5F0E1" stroke="#64748B" stroke-width="1"/><circle cx="132" cy="68" r="3" fill="#D89A6C"/><path d="M126 85 L130 89 L136 81 M126 101 L130 105 L136 97" fill="none" stroke="#547A56" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="163" cy="79" r="24" fill="#FFFFFF" fill-opacity=".55" stroke="#5479AC" stroke-width="2.1"/><path d="M180 96 L197 113" stroke="#3D5F91" stroke-width="5" stroke-linecap="round"/><path d="M211 57 L229 63 L227 82 Q221 92 211 97 Q201 92 195 82 L193 63 Z" fill="url(#check-shield)" stroke="#547A56" stroke-width="1.5"/><path d="M201 76 L208 83 L221 68" fill="none" stroke="#547A56" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M105 116 L115 109" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="199" cy="48" r="2" fill="#F2C14E"/><path d="M188 52 L193 48 M232 101 L237 96" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/><path d="M118 131 H184" stroke="#FFE2A8" stroke-width="1.1"/><path d="M64 92 Q73 88 83 92" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="162" cy="83" rx="90" ry="65" fill="url(#check-halo)" opacity=".22"/><path d="M119 43 H181" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

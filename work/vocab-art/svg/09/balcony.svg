@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: balcony (building) (Noun)
+  CONTEXTUAL_DEFINITION: A raised platform projecting from the outside of a building, with a railing.
+  PEDAGOGICAL_ARCHETYPE: 2 (Part-of-building focus)
+  SYNONYM_GUARD: Show a raised exterior platform and protective railing attached to an upper-floor door.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale apartment wall and distant sky.
+    - Context_Layer: Upper-level door opens onto a projecting platform.
+    - Focal_Layer: Railing encloses the raised balcony.
+    - Details_Layer: One chair and a planter provide scale.
+    - Lighting_Layer: Sunlight marks the exterior ledge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:balcony (building)" data-archetype="building-feature">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><rect x="96" y="24" width="194" height="111" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.3"/><path d="M0 135 L304 135 L304 192 L0 192Z" fill="#B7CEA9"/><ellipse cx="152" cy="167" rx="109" ry="8" fill="#9DB58F"/></g>
+  <g id="layer-context"><rect x="132" y="42" width="49" height="80" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><rect x="140" y="49" width="31" height="37" rx="2" fill="#DCECFB"/><path d="M156 49 L156 86 M140 68 L171 68" stroke="#FAF8F3" stroke-width="1.7"/><circle cx="168" cy="104" r="2" fill="#F2C14E"/><path d="M82 112 L285 112 L278 128 L89 128Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 63 L91 111 M276 63 L276 111 M91 66 L276 66" stroke="#5479AC" stroke-width="3"/><path d="M112 67 L112 112 M138 67 L138 112 M164 67 L164 112 M190 67 L190 112 M216 67 L216 112 M242 67 L242 112 M268 67 L268 112" stroke="#5479AC" stroke-width="2"/><path d="M78 130 L290 130" stroke="#8A5A35" stroke-width="3"/></g>
+  <g id="layer-details"><rect x="105" y="84" width="19" height="27" rx="3" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><path d="M102 85 L127 85 L123 80 L106 80Z" fill="#7FB07A"/><rect x="206" y="82" width="29" height="20" rx="4" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.4"/><path d="M211 102 L211 110 M230 102 L230 110" stroke="#5F3E71" stroke-width="2.2"/><path d="M101 75 Q111 67 121 75" fill="none" stroke="#8FB987" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M84 63 L84 110 M78 112 L285 112" stroke="#F2C14E" stroke-width="1.4" opacity="0.7"/><circle cx="50" cy="44" r="17" fill="#F2C14E" opacity="0.45"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

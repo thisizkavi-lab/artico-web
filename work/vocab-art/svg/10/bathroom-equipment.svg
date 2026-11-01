@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: bathroom equipment (Noun)
+  CONTEXTUAL_DEFINITION: Everyday washroom tools and accessories kept near a bathroom basin.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object group)
+  SYNONYM_GUARD: Show a basin-side group of washroom tools, distinct from the portable toiletries travel kit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled wall and basin counter.
+    - Context_Layer: Small washbasin and mirror edge.
+    - Focal_Layer: Toothbrush cup, toothpaste tube, soap dish, and hand towel.
+    - Details_Layer: Distinct shapes for grooming and washing items.
+    - Lighting_Layer: Clean soft bathroom light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:bathroom equipment" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 42 H304 M0 84 H304 M0 126 H304 M61 0 V146 M122 0 V146 M183 0 V146 M244 0 V146" stroke="#B8CDD1" stroke-width="1.2"/><path d="M0 145 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 145 H304" stroke="#AEBDBD" stroke-width="2"/><path d="M28 24 H101 V74 H28Z" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M0 128 H304 V146 H0Z" fill="#FAF8F3" stroke="#647D8B" stroke-width="1.5"/><ellipse cx="151" cy="169" rx="92" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M173 126 Q177 115 189 115 H254 Q266 115 270 126 L264 145 H179Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="221" cy="126" rx="47" ry="10" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><ellipse cx="221" cy="127" rx="34" ry="6" fill="#E8F1F2"/></g>
+  <g id="layer-focal"><path d="M57 74 H92 V121 Q92 127 86 127 H63 Q57 127 57 121Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M66 74 V44 M76 74 V39 M86 74 V47" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M62 42 L66 49 M72 36 L76 43 M82 44 L86 51" stroke="#FFFFFF" stroke-width="1.2"/><path d="M110 77 L127 77 L134 122 L104 122Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="1.8"/><path d="M111 77 Q121 69 130 77" fill="#F1B08F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M145 116 Q144 108 153 108 H171 Q180 108 180 116 V124 H145Z" fill="#E8D9B8" stroke="#8A5A35" stroke-width="1.6"/><path d="M151 116 Q161 109 174 116" fill="#FAF8F3" stroke="#B7AA94" stroke-width="1.3"/><path d="M213 45 H272 V112 H213Z" fill="#A8D2E5" stroke="#5479AC" stroke-width="1.5"/><path d="M221 55 V102 M228 55 V102 M235 55 V102 M242 55 V102 M249 55 V102 M256 55 V102" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8"/></g>
+  <g id="layer-details"><path d="M34 31 H94 M217 51 H268" stroke="#FFFFFF" stroke-width="1.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

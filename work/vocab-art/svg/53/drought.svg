@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:drought" data-archetype="cracked-earth-and-reservoir-receded-below-old-shoreline">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; drought. Make prolonged water shortage visible with a nearly dry reservoir below its old shoreline and cracked parched ground; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="drought-sky" x2="0" y2="1"><stop stop-color="#E9E8D9"/><stop offset="1" stop-color="#D4C9A4"/></linearGradient>
+  <linearGradient id="drought-earth" x2="0" y2="1"><stop stop-color="#C1A171"/><stop offset="1" stop-color="#8C7152"/></linearGradient>
+  <linearGradient id="drought-water" x2="0" y2="1"><stop stop-color="#789DA0"/><stop offset="1" stop-color="#456F78"/></linearGradient>
+  <linearGradient id="drought-rock" x2="0" y2="1"><stop stop-color="#AF9A74"/><stop offset="1" stop-color="#796749"/></linearGradient>
+  <filter id="drought-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#493F32" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#drought-sky)"/><circle cx="246" cy="39" r="17" fill="#E8B957"/><path d="M0 100Q51 78 101 96T200 93Q252 74 304 96V192H0Z" fill="#B7A074"/><path d="M0 123Q76 112 144 123T304 119V192H0Z" fill="url(#drought-earth)"/></g>
+<g id="layer-context">
+  <path d="M0 121Q61 103 111 117T203 117Q253 102 304 119" fill="none" stroke="#E4D0A2" stroke-width="2.4"/>
+  <path d="M0 145Q53 132 99 145T182 145Q235 132 304 144V192H0Z" fill="#A68A5F"/>
+  <path d="M60 144Q90 132 115 140Q137 145 148 162Q124 172 93 168Q68 162 60 144Z" fill="url(#drought-water)"/>
+  <path d="M68 147Q94 137 116 145" fill="none" stroke="#B4CFCA" stroke-width="1.5"/>
+  <path d="M21 136l18-10 17 10m112 2 17-10 17 10m62-4 14-9 14 9" fill="none" stroke="#9A835F" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#drought-shadow)">
+  <path d="M0 169L21 159 34 166 48 152 65 163 83 153 100 166 119 157 137 170 158 158 176 168 194 157 211 170 231 160 247 169 267 157 284 169 304 162V192H0Z" fill="#A78659"/>
+  <path d="M25 178l17-8 12 6-11 11m19-7 9-11 14 3 5 11m34-9 15-8 12 7-9 12m23-3 13-10 13 4 6 10m34-9 15-9 12 5-8 11" fill="none" stroke="#66533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M81 151q5-8 10-1m123 2q5-8 10-1" fill="none" stroke="#7B6C4D" stroke-width="1.8"/>
+  <path d="M41 120l8-15 7 15m141-2 7-14 8 14" fill="none" stroke="#8B7A51" stroke-width="2"/>
+  <path d="M79 164Q98 159 114 164" fill="none" stroke="#C4D2BC" stroke-width="1.6"/>
+</g>
+<g id="layer-details">
+  <path d="M11 149q10-5 19-2m102 22q10-4 18-1m128-9q11-4 20 0" fill="none" stroke="#D4B886" stroke-width="1.4"/>
+  <circle cx="55" cy="181" r="1.8" fill="#E9D8B6"/><circle cx="192" cy="185" r="1.7" fill="#E9D8B6"/><circle cx="274" cy="177" r="1.6" fill="#E9D8B6"/>
+  <path d="M91 136l-3-7m8 8 4-8m91 9-2-7m8 7 4-8" fill="none" stroke="#82704E" stroke-width="1.4"/>
+  <path d="M15 94q14-7 28-2m118-4q12-6 24-2m61 2q15-6 28 0" fill="none" stroke="#E7D8B5" stroke-width="1.4"/>
+  <path d="M108 157l7-5 5 4-4 5" fill="none" stroke="#66533F" stroke-width="1.5" stroke-linejoin="round"/>
+</g>
+<g id="layer-lighting"><path d="M1 122Q58 105 108 119m95 0q49-17 99 0" fill="none" stroke="#F0DDB2" stroke-width="1.2" opacity=".84"/><path d="M66 147Q94 136 116 145" fill="none" stroke="#D8E7DD" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: penalty spot
+ CONTEXTUAL_DEFINITION: The small marked point in front of the goal from which a penalty kick is taken.
+ PEDAGOGICAL_ARCHETYPE: Part-of-Whole Focus Callout
+ SYNONYM_GUARD: Show a single small mark inside the penalty area with the goal in front; it is the kick's location, not the penalty kick itself.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Top-down penalty area and goal across right edge; small glowing white spot at (168,102) with ball set beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:penalty spot" data-archetype="marked-kick-location-in-penalty-area">
+ <defs><linearGradient id="spot-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><radialGradient id="spot-glow"><stop stop-color="#FEF3C7" stop-opacity=".95"/><stop offset="1" stop-color="#FEF3C7" stop-opacity="0"/></radialGradient><radialGradient id="spot-ball"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#CBD5E1"/></radialGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#spot-sky)"/><path d="M0 49H304V192H0Z" fill="#91A686"/><path d="M0 49h304" stroke="#E7EEE4" stroke-width="2"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="170" rx="114" ry="7" fill="#405B61" opacity=".17"/><path d="M17 62h218v94H17Z" fill="none" stroke="#E5E9F0" stroke-width="2.5" opacity=".8"/><path d="M17 83h80v52H17m80-26h18" fill="none" stroke="#F4F6FA" stroke-width="2.2"/><path d="M235 61h47v91h-47Z" fill="#E5E9F0" stroke="#7B8A9E" stroke-width="2.2"/><path d="M240 67h37v79h-37Z" fill="none" stroke="#CBD5E1" stroke-width="1.4"/><path d="M243 75l31 63m0-63-31 63m0-42 21 42m-21-63 31 63" stroke="#CBD5E1" stroke-width="1.1"/><circle cx="264" cy="43" r="10" fill="#F2C14E" opacity=".75"/></g>
+ <g id="layer-focal"><circle cx="150" cy="105" r="33" fill="url(#spot-glow)"/><circle cx="150" cy="105" r="3.5" fill="#F4F6FA" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="134" cy="104" r="9" fill="url(#spot-ball)" stroke="#1E2A3B" stroke-width="2"/><path d="M130 100l4-2 4 3-1 4-5 1-3-3Z" fill="#27364B"/><path d="M128 96l2-3m10 5 3-2m-8 18-2 3" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round"/><path d="M160 104q37-4 65 0" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-dasharray="5 5"/></g>
+ <g id="layer-details"><circle cx="150" cy="105" r="16" fill="none" stroke="#D97706" stroke-width="2" stroke-dasharray="4 4"/><path d="M27 71h42m-42 75h42m111-77h34m-34 72h34" stroke="#DCE8DF" stroke-width="1.2"/><circle cx="150" cy="105" r="1.3" fill="#FFFFFF"/><path d="M221 98l9 6-9 6" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M126 88l5-4m43 4 5-4m-56 47 5 3m44-3 5 3" fill="none" stroke="#A8B89B" stroke-width="1.3" stroke-linecap="round"/><path d="M131 106h3" stroke="#E5E9F0" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="101" rx="70" ry="50" fill="#FFFFFF" opacity=".035"/><path d="M151 103l-1 2" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/></g>
+</svg>

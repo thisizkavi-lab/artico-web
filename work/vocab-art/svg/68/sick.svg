@@ -1,0 +1,45 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: sick
+ CONTEXTUAL_DEFINITION: Unwell with nausea or stomach discomfort in this illness context.
+ PEDAGOGICAL_ARCHETYPE: a nauseated person leaning toward a washbasin
+ SYNONYM_GUARD: Show stomach discomfort without graphic vomit; ill is general bed rest.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A pale person leans over a clean basin, one hand pressed to the stomach and the other steadying themself, with mild nausea waves.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:sick" data-archetype="nausea and stomach discomfort">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="94" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 41H99V101H58Z" fill="#D9D0C2"/><path d="M64 47H93V95H64Z" fill="#A9B9B4"/><path d="M207 40H251V101H207Z" fill="#E3DDD2"/><path d="M214 47H244V95H214Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M202 123H261V132H202Z" fill="#8C725A"/><path d="M209 132V151M254 132V151" stroke="#725F4B" stroke-width="2"/>
+  <path d="M213 119Q216 105 231 104H243Q256 106 259 119L255 128H216Z" fill="#F6E5CE" stroke="#597D8B" stroke-width="1.3"/>
+  <path d="M222 116Q235 112 250 116" fill="none" stroke="#A9B9B4" stroke-width="1"/>
+  <ellipse cx="232" cy="151" rx="37" ry="3" fill="#8C725A" opacity=".16"/>
+  <path d="M48 146H188" stroke="#8C725A" stroke-width="1"/><circle cx="61" cy="146" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="143" cy="51" r="13" fill="#D29A78"/><path d="M130 50Q131 34 144 35Q157 36 156 53L150 43L132 46Z" fill="#26384A"/>
+  <path d="M124 68Q143 60 163 68L171 117H115Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M129 73L115 89L131 101L145 95M159 73L178 88L192 91" fill="none" stroke="#D29A78" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M121 114L119 146M160 114L165 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- hand presses the stomach; the far hand braces on the table -->
+  <path d="M141 91Q146 86 151 90L158 96L154 103L147 101L140 98Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M180 88L192 91L196 97L191 100L182 96" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M137 66L144 73L151 66" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M137 49Q141 52 145 49M148 49L152 48M137 59Q143 56 149 59" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <ellipse cx="149" cy="96" rx="17" ry="15" fill="#B85E5A" opacity=".12"/><path d="M149 81Q143 88 150 93Q157 98 150 105M162 82Q157 88 163 92" stroke="#D6A64C" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <path d="M118 78L124 82M164 78L159 83M128 108L134 111M156 111L163 108" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M123 123Q135 127 147 123M124 130L133 132M158 128L165 126" stroke="#A9C0C1" stroke-width="1" fill="none"/>
+  <path d="M137 63L141 65M148 63L152 65" stroke="#B85E5A" stroke-width="1"/>
+  <circle cx="204" cy="105" r="1.5" fill="#D6A64C"/><circle cx="198" cy="111" r="1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="68" fill="#E7C66B" opacity=".065"/><path d="M50 32L66 48M253 32L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

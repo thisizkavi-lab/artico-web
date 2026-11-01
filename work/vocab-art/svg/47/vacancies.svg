@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: vacancies
+  CONTEXTUAL_DEFINITION: Rooms at a hotel are currently open and available for guests.
+  PEDAGOGICAL_ART_DIRECTOR: Show empty, ready guest rooms and a welcoming open inn entrance.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: At least one room is visibly available; contrast the occupied rooms of no vacancies.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A small inn facade reveals empty ready-made beds behind open windows and an unlocked open front door, with a traveler approaching.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:vacancies" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="vac-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DBEAF0"/><stop offset="1" stop-color="#F0E7D8"/></linearGradient>
+  <linearGradient id="vac-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5D3B7"/><stop offset="1" stop-color="#BFA17B"/></linearGradient>
+  <linearGradient id="vac-window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8E8BB"/><stop offset="1" stop-color="#DDAE6A"/></linearGradient>
+  <filter id="vac-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#vac-sky)"/><path d="M0 155Q72 143 136 155T258 151T304 155V192H0Z" fill="#AABC9A"/><path d="M18 172H288" stroke="#82957F" stroke-width="1.5"/><circle cx="26" cy="120" r="15" fill="#83A67B" stroke="#496851" stroke-width="1.3"/><circle cx="280" cy="119" r="15" fill="#83A67B" stroke="#496851" stroke-width="1.3"/></g>
+ <g id="layer-context"><path d="M55 73L152 37L249 73Z" fill="#785E4A" stroke="#1E2A3B" stroke-width="1.7"/><path d="M63 72H241V155H63Z" fill="url(#vac-wall)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M57 75H247" stroke="#D9C3A1" stroke-width="3.4"/><path d="M127 112H179V155H127Z" fill="#745A43" stroke="#1E2A3B" stroke-width="1.4"/><path d="M132 117H169V152H132Z" fill="#A8825D"/><path d="M170 112L181 119V154H170Z" fill="#4F6D54" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="166" cy="136" r="2" fill="#F2C14E"/></g>
+ <g id="layer-focal" filter="url(#vac-shadow)"><rect x="75" y="85" width="43" height="30" rx="2" fill="url(#vac-window)" stroke="#364C58" stroke-width="1.5"/><path d="M96 85V115M75 100H118" stroke="#665340" stroke-width="1.2"/><rect x="185" y="85" width="43" height="30" rx="2" fill="url(#vac-window)" stroke="#364C58" stroke-width="1.5"/><path d="M206 85V115M185 100H228" stroke="#665340" stroke-width="1.2"/><path d="M79 110H114M189 110H224" stroke="#EBDDBD" stroke-width="1"/><path d="M82 106H111M192 106H221" stroke="#8C7356" stroke-width="2"/><path d="M84 103H109V108H84Z" fill="#FFF9EC" stroke="#927D64" stroke-width=".8"/><path d="M194 103H219V108H194Z" fill="#FFF9EC" stroke="#927D64" stroke-width=".8"/><path d="M50 144Q58 138 66 143L68 158H48Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="59" cy="136" r="5.5" fill="#D4A17A" stroke="#1E2A3B" stroke-width="1"/><path d="M51 157L49 169H56L60 158M60 157L63 169H70L66 156" fill="#354A5D" stroke="#1E2A3B" stroke-width="1.1"/><rect x="31" y="150" width="16" height="20" rx="3" fill="#526274" stroke="#1E2A3B" stroke-width="1.2"/><path d="M35 150V147Q35 143 39 143Q43 143 43 147V150" fill="none" stroke="#1E2A3B" stroke-width="1.6"/></g>
+ <g id="layer-details"><path d="M70 74H238" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="87" cy="77" r="2" fill="#F2C14E"/><circle cx="216" cy="77" r="2" fill="#F2C14E"/><ellipse cx="152" cy="167" rx="108" ry="5" fill="#526274" opacity=".16"/><path d="M183 112H230" stroke="#F4F0E5" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="114" rx="127" ry="69" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M59 74L152 39L245 74" fill="none" stroke="#E0C69F" stroke-width="1.1"/></g>
+</svg>

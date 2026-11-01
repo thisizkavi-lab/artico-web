@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: balloon (Noun)
+  CONTEXTUAL_DEFINITION: A light air-filled toy that floats when held by a string.
+  PEDAGOGICAL_ARCHETYPE: 4 — Conceptual metaphor
+  SYNONYM_GUARD: One bright party balloon floats above a child's hand on a thin string, following the toys group and distinguishing it from a heavy hot-air balloon.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Playroom window and warm floor.
+    - Context_Layer: Child stands below, holding the string.
+    - Focal_Layer: Large oval toy balloon floating high above the child.
+    - Details_Layer: Knot, curled string, and reflective highlight.
+    - Lighting_Layer: Soft upward motion arc around the balloon.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:balloon" data-archetype="conceptual-metaphor">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="balloon-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="balloon-shine" cx="32%" cy="25%" r="75%"><stop stop-color="#F3A2A5"/><stop offset=".72" stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></radialGradient><filter id="balloon-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#balloon-bg)"/><path d="M0 152Q77 145 152 152T304 149V192H0Z" fill="#EADFCC"/><path d="M23 32H121V103H23Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M72 33V102M24 68H120" stroke="#FFFFFF" stroke-width="2.4"/><path d="M202 152H268" stroke="#829A83" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M145 98Q140 119 152 132Q163 146 155 157" fill="none" stroke="#64748B" stroke-width="1.8"/><path d="M152 156L158 151L161 159Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M83 174Q85 153 97 148Q109 144 121 151L124 177Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="103" cy="134" r="15" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/><path d="M88 133Q89 117 103 117Q119 118 119 134L115 138Q112 123 102 124Q95 124 91 141Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M109 151Q124 140 138 132" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M109 151Q124 140 138 132" stroke="#C98961" stroke-width="3.5" stroke-linecap="round"/><ellipse cx="139" cy="131" rx="4" ry="3" fill="#C98961" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#balloon-shadow)"><ellipse cx="151" cy="67" rx="37" ry="48" fill="url(#balloon-shine)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M151 114L146 121L156 121Z" fill="#A95059" stroke="#1E2A3B" stroke-width="1.4"/><path d="M151 121Q142 130 150 138Q159 145 150 153Q143 160 149 168" fill="none" stroke="#64748B" stroke-width="1.8"/><path d="M132 36Q141 25 153 28" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/><ellipse cx="139" cy="54" rx="4" ry="12" fill="#FFFFFF" opacity=".42" transform="rotate(20 139 54)"/></g>
+  <g id="layer-details"><path d="M159 17Q151 7 143 17M171 19Q164 7 157 15" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="184" cy="34" r="2.5" fill="#D9A441"/><path d="M118 49Q114 34 122 24" fill="none" stroke="#FFFFFF" stroke-width="2.5"/></g>
+  <g id="layer-lighting"><path d="M136 18Q151 4 167 18" fill="none" stroke="#D9857F" stroke-width="1.3" stroke-dasharray="3 6" opacity=".4"/><ellipse cx="151" cy="68" rx="53" ry="61" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/></g>
+</svg>

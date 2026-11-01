@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: scale (fish) (noun)
+  CONTEXTUAL_DEFINITION: A single thin, overlapping reflective plate covering a fish's body.
+  PEDAGOGICAL_ARCHETYPE: 2 - Body part highlighted on its animal
+  SYNONYM_GUARD: Show a shiny fish scale on a fish flank; do not show a weighing scale, balance, or ruler.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Close side view of a blue-green fish with a neat overlapping scale pattern. One pale iridescent scale is lifted in the foreground and connected visually to the scaled flank with a narrow highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:scale (fish)" data-archetype="single-iridescent-fish-scale-on-scaled-flank">
+ <defs>
+  <style>:root{--c-bg-1:#E5F1EF;--c-bg-2:#BED8D6;--c-surface:#477D88;--c-primary:#78999A;--c-secondary:#425F66;--c-accent:#E3BE70;--c-highlight:#FFF4DF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="scale-water" x2="0" y2="1"><stop stop-color="#B3D2CE"/><stop offset="1" stop-color="#4E8390"/></linearGradient>
+  <linearGradient id="scale-fish" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B8CFCA"/><stop offset="1" stop-color="#587D86"/></linearGradient>
+  <linearGradient id="scale-focus" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1C6"/><stop offset=".5" stop-color="#D5E4D8"/><stop offset="1" stop-color="#7DB3B5"/></linearGradient>
+  <filter id="scale-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#scale-water)"/><path d="M0 158Q75 150 151 158T304 152V192H0Z" fill="#4C7C83"/><path d="M0 31q42-6 83 0m144-3q39-6 77 0" fill="none" stroke="#DDEFE7" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M18 187l8-27m-8 15-10-12m10 5 10-18m238 37 7-29m-7 13-10-13m10 4 10-18" fill="none" stroke="#608875" stroke-width="2" stroke-linecap="round"/><circle cx="49" cy="70" r="1.8" fill="#F2FAF2"/><circle cx="58" cy="61" r="1" fill="#F2FAF2"/><circle cx="264" cy="72" r="1.5" fill="#F2FAF2"/><ellipse cx="151" cy="147" rx="78" ry="5" fill="#153B43" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#scale-shadow)">
+  <path d="M85 99Q67 86 55 72Q57 94 76 105Q64 117 59 131Q80 124 97 109Z" fill="#617E83" stroke="#425F66" stroke-width="1.4"/>
+  <path d="M78 94Q100 73 142 72Q185 71 215 85Q231 93 236 103Q229 117 208 124Q170 134 127 127Q96 122 78 106Z" fill="url(#scale-fish)" stroke="#425F66" stroke-width="1.5"/>
+  <path d="M113 76Q124 66 139 69L151 75Z" fill="#66868B" stroke="#425F66" stroke-width="1"/><path d="M132 126Q144 141 163 140L173 130Z" fill="#63838A" stroke="#425F66" stroke-width="1"/>
+  <path d="M96 89q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0m-106 13q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0m-103 14q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0q8-9 16 0" fill="none" stroke="#D8E5D8" stroke-width="1.2" opacity=".7"/>
+  <circle cx="222" cy="96" r="2.5" fill="#1E2A3B"/><circle cx="222.8" cy="95" r=".7" fill="#FFFFFF"/><path d="M228 108q6 2 11-1" fill="none" stroke="#425F66" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M149 105Q164 108 179 118" fill="none" stroke="#FFF2CC" stroke-width="1.2" stroke-dasharray="2 3"/>
+  <path d="M137 82Q146 73 155 82Q155 93 146 105Q137 93 137 82Z" fill="url(#scale-focus)" stroke="#746D55" stroke-width="1.4"/>
+  <path d="M143 82Q146 88 146 99" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".85" stroke-linecap="round"/>
+  <path d="M137 82Q129 89 132 97" fill="none" stroke="#FFF1CB" stroke-width="1" opacity=".8"/>
+  <path d="M129 72Q138 67 147 70" fill="none" stroke="#EAF3E8" stroke-width="1.3" opacity=".8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M93 83q18-11 37-8m41 1q18 2 29 9" fill="none" stroke="#F0F5E8" stroke-width="1.2" stroke-linecap="round"/><circle cx="49" cy="113" r="1.1" fill="#F4FCF4"/><circle cx="257" cy="83" r="1.2" fill="#F4FCF4"/><circle cx="269" cy="94" r=".9" fill="#F4FCF4"/><path d="M126 102q6 4 13 5m9 1q9 3 16 8" fill="none" stroke="#D5E8D8" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><ellipse cx="148" cy="94" rx="34" ry="28" fill="#F3D68F" opacity=".13"/><path d="M103 82q20-12 38-9m41 5q12 3 19 9" fill="none" stroke="#FFF8E8" stroke-width="1.6" opacity=".56" stroke-linecap="round"/><path d="M139 81q5-5 10-1" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".9" stroke-linecap="round"/></g>
+</svg>

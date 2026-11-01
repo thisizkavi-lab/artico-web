@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: over the top (Phrase)
+  CONTEXTUAL_DEFINITION: Excessive or much more elaborate than needed.
+  PEDAGOGICAL_ARCHETYPE: 6 (A strong contrast in amount or degree)
+  SYNONYM_GUARD: A host piles a wildly excessive tower of frosting and decorations on a small cake while a guest reacts in disbelief.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Party table with a few balloons.
+    - Context_Layer: Host presents a cake with a huge stack of decorations.
+    - Focal_Layer: A tiny base cake is buried under towering frosting, fruit, and candles.
+    - Details_Layer: A guest raises their hands in amazed disbelief.
+    - Lighting_Layer: Bright party light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:over the top" data-archetype="excessive-degree">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF2E7"/><stop offset="1" stop-color="#F0E8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 140 304 148 L304 192 L0 192Z" fill="#D9D0C5"/><ellipse cx="151" cy="166" rx="111" ry="8" fill="#BEB5AA"/><path d="M41 69 C32 52 43 37 53 40 C61 43 58 58 55 68 M254 63 C246 47 257 32 268 35 C276 38 273 52 268 63" fill="#FAF8F3" stroke="#7FB07A" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M53 151 Q56 128 73 125 Q90 128 93 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="73" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M58 110 Q59 93 74 95 Q87 96 88 111 Q80 104 72 105Z" fill="#27364B"/><path d="M79 134 Q91 126 103 118" fill="none" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M205 151 Q208 128 225 125 Q242 128 245 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="225" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M210 110 Q211 93 226 95 Q239 96 240 111 Q232 104 224 105Z" fill="#27364B"/><path d="M211 135 Q200 122 194 110 M238 135 Q250 123 256 111" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M218 116 Q225 121 232 116" fill="none" stroke="#A34F47" stroke-width="1.8"/></g>
+  <g id="layer-focal"><rect x="116" y="130" width="68" height="22" rx="5" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M108 130 Q150 121 192 130" fill="#F5BFA3" stroke="#CE3D4E" stroke-width="1.5"/><path d="M126 125 C111 119 120 109 134 111 C119 101 130 92 145 101 C132 85 145 77 157 91 C160 72 177 75 173 94 C192 83 201 96 184 107 C202 109 197 123 179 122Z" fill="#FAF8F3" stroke="#D98AA0" stroke-width="2"/><circle cx="146" cy="108" r="6" fill="#CE3D4E"/><circle cx="164" cy="99" r="5" fill="#F2C14E"/><circle cx="178" cy="113" r="6" fill="#7FB07A"/><path d="M150 88 L150 69 M169 86 L170 62 M134 98 L126 83" stroke="#F2C14E" stroke-width="2.5" stroke-linecap="round"/><path d="M145 66 L150 56 L155 66 L165 71 L155 76 L150 86 L145 76 L135 71Z M166 59 L171 49 L176 59 L186 64 L176 69 L171 79 L166 69 L156 64Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M202 86 Q209 79 216 86 M202 96 Q209 89 216 96 M91 88 Q98 81 105 88" fill="none" stroke="#8B5CA8" stroke-width="2"/><path d="M61 105 Q66 111 72 105 M67 118 Q73 124 79 118" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M217 110 Q225 118 233 110" fill="none" stroke="#A34F47" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><circle cx="151" cy="104" r="51" fill="#F2C14E" opacity="0.12"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

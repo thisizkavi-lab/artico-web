@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: villa
+  CONTEXTUAL_DEFINITION: A private holiday house, especially in a warm southern European region.
+  PEDAGOGICAL_ART_DIRECTOR: Show a sun-warmed private villa with terracotta roof, arched openings, cypress trees, and a small pool.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make it a private Mediterranean-style holiday home, distinct from an alpine chalet, cottage, or hotel resort.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A pale stone two-story villa with terracotta roof, loggia arches, cypress pair, and turquoise plunge pool sits under warm sun.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:villa" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="villa-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D7EAF0"/><stop offset="1" stop-color="#F6EAD4"/></linearGradient>
+  <linearGradient id="villa-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1E2C7"/><stop offset="1" stop-color="#D4B88D"/></linearGradient>
+  <linearGradient id="villa-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9BD4D7"/><stop offset="1" stop-color="#5FAAB6"/></linearGradient>
+  <filter id="villa-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.7" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#villa-sky)"/><circle cx="250" cy="38" r="17" fill="#F2C14E" opacity=".8"/><path d="M0 132Q62 115 126 132T246 128T304 133V192H0Z" fill="#A9C294"/><path d="M0 161Q80 147 152 162T304 157V192H0Z" fill="#91AF89"/><path d="M18 154H283" stroke="#83977A" stroke-width="1.6"/></g>
+ <g id="layer-context"><path d="M30 158L46 49L58 159ZM250 159L268 42L281 158Z" fill="#51735A" stroke="#1E2A3B" stroke-width="1.3"/><path d="M42 114L46 49L54 117M261 113L268 42L276 117" fill="#6C8D69"/><circle cx="30" cy="120" r="14" fill="#80A97A" stroke="#486750" stroke-width="1.3"/><circle cx="285" cy="116" r="13" fill="#80A97A" stroke="#486750" stroke-width="1.3"/><path d="M212 157H294V180H212Z" fill="url(#villa-water)" stroke="#506C76" stroke-width="1.5"/><path d="M220 165H287M220 172H287" stroke="#C7EBE6" stroke-width="1.1"/></g>
+ <g id="layer-focal" filter="url(#villa-shadow)"><path d="M70 73L154 35L239 73V155H70Z" fill="url(#villa-wall)" stroke="#1E2A3B" stroke-width="2"/><path d="M58 77L154 26L250 77L240 85L154 43L69 85Z" fill="#B8694A" stroke="#1E2A3B" stroke-width="2"/><path d="M81 85H228V97H81Z" fill="#B78E64" stroke="#765D47" stroke-width="1.4"/><path d="M94 97V75Q94 66 105 66Q116 66 116 75V97M132 97V72Q132 62 144 62Q156 62 156 72V97M173 97V72Q173 62 185 62Q197 62 197 72V97" fill="#F4E8D1" stroke="#725C49" stroke-width="1.8"/><rect x="208" y="107" width="19" height="29" fill="#B8D6DC" stroke="#536A73" stroke-width="1.3"/><path d="M70 101H238M70 155H239" stroke="#A78B67" stroke-width="1.4"/><rect x="124" y="111" width="58" height="44" fill="#765640" stroke="#1E2A3B" stroke-width="1.5"/><path d="M130 118H176V151H130Z" fill="#9FC7D0" stroke="#536A73" stroke-width="1.1"/><circle cx="170" cy="135" r="2" fill="#F2C14E"/><path d="M84 108H112V137H84Z" fill="#B9D6DB" stroke="#536A73" stroke-width="1.3"/><path d="M98 108V137M84 122H112" stroke="#725C49" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M64 79L154 31L244 79" fill="none" stroke="#F3D1A4" stroke-width="1.4"/><circle cx="85" cy="74" r="3" fill="#F2C14E"/><circle cx="222" cy="76" r="3" fill="#F2C14E"/><path d="M218 161H290" stroke="#E5F6EF" stroke-width="1.2"/><ellipse cx="155" cy="163" rx="101" ry="7" fill="#526274" opacity=".17"/></g>
+ <g id="layer-lighting"><ellipse cx="154" cy="109" rx="129" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".37"/><path d="M72 75L154 38L236 75" fill="none" stroke="#F5E2C2" stroke-width="1.4"/></g>
+</svg>

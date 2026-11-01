@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: education
+  CONTEXTUAL_DEFINITION: Formal learning received at school, college, or another educational institution.
+  PEDAGOGICAL_ART_DIRECTOR: Show formal study and graduation as a qualification, distinct from on-the-job experience or specific training.
+  PEDAGOGICAL_ARCHETYPE: 4 - Formal learning
+  SYNONYM_GUARD: Use books or an academic credential and a learning setting; do not show a workplace task alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a graduating adult at x=111..163 holding a rolled diploma at chest level, with a small mortarboard above. Place two stacked academic books at x=48..99 and a framed institutional window or classroom board behind; keep the scene calm and career-relevant.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:education" data-archetype="formal-education">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="edu-books" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F91BF"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="edu-gown" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="edu-halo"><stop stop-color="#FFF1B9" stop-opacity=".74"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="edu-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="29" y="24" width="246" height="112" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="44" y="41" width="53" height="58" fill="#EEF4FA" stroke="#64748B" stroke-width="1.2"/><path d="M70 41 V99 M44 69 H97" stroke="#CBD5E1" stroke-width="1"/><path d="M47 130 H99 V143 H47 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.2"/><path d="M50 119 H103 V132 H50 Z" fill="url(#edu-books)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M55 125 H97 M54 136 H92" stroke="#F2C14E" stroke-width="1.1"/></g>
+  <g id="layer-focal" filter="url(#edu-shadow)"><path d="M111 124 Q113 97 128 91 L129 82 Q125 78 127 70 Q135 61 146 64 Q156 67 153 79 L150 87 Q165 93 167 122 L164 134 H115 Z" fill="url(#edu-gown)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="141" cy="73" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M132 71 Q134 63 142 63 Q150 64 154 71 Q146 67 139 68 Z" fill="#3D342D"/><path d="M128 108 L112 118 M156 107 L173 115" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M111 117 L127 112" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M127 112 L142 118 L154 112" fill="#FFFFFF" stroke="#64748B" stroke-width="1.2"/><path d="M138 118 V127" stroke="#D97706" stroke-width="1.2"/><path d="M174 64 L190 70 L174 76 L158 70 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.1"/><path d="M190 70 V80" stroke="#D99A2B" stroke-width="1.2"/><circle cx="190" cy="82" r="2" fill="#F2C14E"/><path d="M161 71 V81 Q174 89 187 81 V71" fill="none" stroke="#5479AC" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M115 96 Q141 89 166 96" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="143" cy="55" r="2.8" fill="#F2C14E"/><path d="M135 52 Q143 45 151 52" fill="none" stroke="#D99A2B" stroke-width="1.4"/><path d="M111 129 H164" stroke="#8EB0DE" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="145" cy="87" rx="92" ry="66" fill="url(#edu-halo)" opacity=".22"/><path d="M115 67 Q141 58 168 67" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

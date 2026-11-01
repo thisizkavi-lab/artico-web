@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:irreversible change" data-archetype="living-reef-transitioning-into-bleached-empty-coral">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; irreversible change. Contrast a living coral reef with a bleached, broken, empty reef where the former habitat has been lost; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="irre-water" x2="0" y2="1"><stop stop-color="#7DBCC1"/><stop offset="1" stop-color="#286A7E"/></linearGradient>
+  <linearGradient id="irre-sand" x2="0" y2="1"><stop stop-color="#C3B28B"/><stop offset="1" stop-color="#83775B"/></linearGradient>
+  <linearGradient id="irre-coral" x2="0" y2="1"><stop stop-color="#DE9B75"/><stop offset="1" stop-color="#9C5F56"/></linearGradient>
+  <linearGradient id="irre-bone" x2="0" y2="1"><stop stop-color="#E7E4D3"/><stop offset="1" stop-color="#AAA99A"/></linearGradient>
+  <filter id="irre-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#183F4E" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="#B7D9D8"/><path d="M0 0H304V151Q228 140 152 151T0 147Z" fill="url(#irre-water)"/><path d="M0 160Q72 145 148 160T304 155V192H0Z" fill="url(#irre-sand)"/><path d="M151 0V192" fill="none" stroke="#D4E7DD" stroke-width="1.4" opacity=".75"/></g>
+<g id="layer-context">
+  <path d="M13 163Q44 150 78 161T151 160V192H0Z" fill="#557A69"/><path d="M153 161Q190 150 229 160T304 153V192H153Z" fill="#8F8C78"/>
+  <path d="M42 164V137L51 125 59 138V164Z" fill="#A86458"/><path d="M31 140Q33 128 41 129Q44 116 53 125Q63 120 67 137Q57 132 51 140Q43 133 31 140Z" fill="url(#irre-coral)"/>
+  <path d="M86 165V141L95 129 103 141V165Z" fill="#B66C5E"/><path d="M77 144Q78 131 87 133Q89 122 98 131Q108 128 112 144Q103 137 96 146Q87 137 77 144Z" fill="#D59A77"/>
+  <path d="M205 166l7-17 5 4 6-13 5 5 8-10 5 5 4-13 6 11v28Z" fill="#C9C5B3" stroke="#77796F" stroke-width="1.4"/>
+  <path d="M257 166l5-11 5 4 4-12 5 6 5-10 5 8v17Z" fill="#C3C0B0" stroke="#77796F" stroke-width="1.2"/>
+</g>
+<g id="layer-focal" filter="url(#irre-shadow)">
+  <path d="M113 168V132m0 21-13-18m13 10 13-22m-13 40 17-13m-17-4-17-14" fill="none" stroke="#D78369" stroke-width="4" stroke-linecap="round"/>
+  <path d="M111 131q-9-14 0-21m2 20q10-13 7-24m-6 28q13-4 18-14" fill="none" stroke="#EAAB7F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M183 167l4-20 7 4 4-22 7 6 8-14 3 18v28Z" fill="url(#irre-bone)" stroke="#888A80" stroke-width="1.4"/>
+  <path d="M233 167v-22l7-6 4 10 7-13 5 14v17" fill="none" stroke="#B7B5A7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 150Q57 143 111 151m88 4q46-10 105-1" fill="none" stroke="#BDE6DF" stroke-width="1.8"/>
+</g>
+<g id="layer-details">
+  <path d="M20 173q11-6 20 0m43 9q10-5 18 0m118-2q11-5 20 0m45-7q11-5 20 0" fill="none" stroke="#D6C79F" stroke-width="1.4"/>
+  <path d="M37 116q7-7 14-1m29 2q7-7 13-1m88-19q6-5 12 0m18 5q6-5 11 0" fill="none" stroke="#D4EFF0" stroke-width="1.4"/>
+  <circle cx="67" cy="157" r="2" fill="#F4DCC2"/><circle cx="147" cy="170" r="1.8" fill="#E6F3E7"/><circle cx="269" cy="139" r="1.6" fill="#E9E5D4"/>
+  <path d="M154 42q11-5 20 0m-14 9q11-5 19 0m88 25q10-4 18 0" fill="none" stroke="#C5E6E0" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M34 137q8-11 16-9m38 13q8-12 16-11m78 21 6-18m50 23 5-13" fill="none" stroke="#F4E8D3" stroke-width="1.4"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

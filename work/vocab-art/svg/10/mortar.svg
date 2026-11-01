@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: mortar (Noun)
+  CONTEXTUAL_DEFINITION: A heavy small bowl with a rough interior for crushing spices or herbs.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show only the stone grinding bowl; the set card includes both the bowl and its pestle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter.
+    - Context_Layer: Plain warm work surface.
+    - Focal_Layer: Deep stone bowl with thick rounded rim.
+    - Details_Layer: Crushed herbs and textured interior.
+    - Lighting_Layer: Cool stone highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:mortar" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 147 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 147 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="168" rx="78" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M82 77 Q83 69 94 69 H210 Q221 69 222 77 L206 139 Q203 149 191 149 H112 Q100 149 97 139Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="2.7"/><path d="M87 78 Q152 91 217 78 L202 129 Q199 137 189 137 H114 Q104 137 101 129Z" fill="#AEBFC6" stroke="#27364B" stroke-width="1.5"/><ellipse cx="152" cy="77" rx="68" ry="14" fill="#DCE3E4" stroke="#1E2A3B" stroke-width="2.5"/><ellipse cx="152" cy="79" rx="54" ry="8" fill="#7D929B" stroke="#647D8B" stroke-width="1.4"/><path d="M108 147 H196" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M128 79 Q141 69 153 76 L163 80 L156 88 L143 86Z M156 76 L169 70 L179 76 L172 84 L160 85Z" fill="#8FB987" stroke="#537D50" stroke-width="1.2"/><circle cx="142" cy="81" r="2" fill="#CE7B55"/><circle cx="160" cy="78" r="2" fill="#CE7B55"/><path d="M91 80 Q150 91 212 80" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:climate change" data-archetype="long-term-shift-in-snowline-water-and-vegetation">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; climate change. Show a mountain region whose snowline and water balance have shifted over time, exposing barren slopes and a receded lake; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="climate-sky" x2="0" y2="1"><stop stop-color="#E6EFEB"/><stop offset="1" stop-color="#C4D5CF"/></linearGradient>
+  <linearGradient id="climate-mountain" x2="0" y2="1"><stop stop-color="#929E96"/><stop offset="1" stop-color="#5F7269"/></linearGradient>
+  <linearGradient id="climate-earth" x2="0" y2="1"><stop stop-color="#B39C73"/><stop offset="1" stop-color="#786E51"/></linearGradient>
+  <linearGradient id="climate-water" x2="0" y2="1"><stop stop-color="#76B6BF"/><stop offset="1" stop-color="#467F8D"/></linearGradient>
+  <filter id="climate-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".18"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#climate-sky)"/><circle cx="251" cy="37" r="14" fill="#EBC86F" opacity=".75"/><path d="M0 112L48 53 87 98 137 33 181 88 230 47 304 111V192H0Z" fill="#AAB9AF"/><path d="M0 133L48 76 88 119 138 61 180 110 231 74 304 130V192H0Z" fill="url(#climate-mountain)"/><path d="M30 76l18-23 15 23m60 1 14-18 17 19m62-4 19-25 18 25" fill="#EAF4EF"/></g>
+<g id="layer-context">
+  <path d="M0 131Q54 119 94 129T169 128Q215 115 258 127T304 125V192H0Z" fill="#82916E"/>
+  <path d="M0 155Q54 141 104 154T196 150Q247 136 304 151V192H0Z" fill="url(#climate-earth)"/>
+  <path d="M14 137Q68 125 115 140T204 138Q254 126 291 139" fill="none" stroke="#B7C08F" stroke-width="2"/>
+  <path d="M41 145Q58 133 78 142Q90 148 83 160Q64 168 47 159Z" fill="url(#climate-water)"/><path d="M49 147q16-6 28 0" fill="none" stroke="#D4EBE5" stroke-width="1.5"/>
+  <path d="M93 153l13-11 12 2 9-9 11 12m74 4 9-10 11 1 10-10 8 10" fill="none" stroke="#6A7258" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#climate-shadow)">
+  <path d="M124 47L137 33 151 51 163 66 151 72 138 63Z" fill="#F4F7E9" stroke="#89A3A0" stroke-width="1.3"/>
+  <path d="M115 71Q125 78 137 82Q149 85 165 79" fill="none" stroke="#D6E4D9" stroke-width="2"/>
+  <path d="M0 173Q44 163 84 174T165 172Q218 162 263 172T304 170V192H0Z" fill="#8D7758" opacity=".72"/>
+  <path d="M111 165Q133 156 153 164Q164 170 156 180Q134 185 114 178Z" fill="#778A83"/><path d="M122 169q16-6 29 0" fill="none" stroke="#C4D4C9" stroke-width="1.4"/>
+  <path d="M198 149l7-13m-3 9 9-11m-51 22 7-13m-3 8 9-11" fill="none" stroke="#A1764E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M27 177l6-9 6 9m216-2 5-8 6 8" fill="none" stroke="#68764F" stroke-width="1.6"/>
+</g>
+<g id="layer-details">
+  <path d="M17 152q8-4 15-1m68 21q9-4 17-1m100-4q9-4 18-1m45-12q8-4 16 0" fill="none" stroke="#D6C69B" stroke-width="1.4"/>
+  <circle cx="89" cy="160" r="1.8" fill="#E7D2A8"/><circle cx="182" cy="178" r="1.7" fill="#E7D2A8"/><circle cx="275" cy="169" r="1.7" fill="#E7D2A8"/>
+  <path d="M51 105l11-7 9 3m125 8 10-8 11 3m-117-2 9-7 9 3" fill="none" stroke="#75867A" stroke-width="1.5"/>
+  <path d="M32 123q9-5 18-2m177-1q10-5 18-1" fill="none" stroke="#CFDDD3" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M124 48l13-14 12 16m61 2 20-25 18 25" fill="none" stroke="#F7F9F0" stroke-width="1.4"/><path d="M39 144q20-7 40 0m76 23q13-5 24 0" fill="none" stroke="#D9E7D6" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

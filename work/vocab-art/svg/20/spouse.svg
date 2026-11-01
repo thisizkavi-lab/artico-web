@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: spouse (Noun)
+  CONTEXTUAL_DEFINITION: One member of a married pair, shown as a gender-neutral pair.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two adults stand together after exchanging wedding bands, one in a jacket and one in a simple dress; the image presents spouse as the relationship, not one gender.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple wedding garden with an arch of leaves.
+    - Context_Layer: Small floral arch and joined hands.
+    - Focal_Layer: Two newly married adults stand side by side with rings visible.
+    - Details_Layer: Shared rings, close posture, and flowers without ceremony text.
+    - Lighting_Layer: Gentle warm halo around the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:spouse" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="spouse-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="spouse-clothes" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient>
+    <filter id="spouse-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#spouse-bg)"/><path d="M0 149Q75 142 152 149T304 147V192H0Z" fill="#DCEAD6"/><ellipse cx="152" cy="174" rx="128" ry="7" fill="#C3DAB9"/><path d="M54 154V77Q54 31 103 31Q152 31 152 77V154M152 77Q152 31 201 31Q250 31 250 77V154" fill="none" stroke="#829A83" stroke-width="6" stroke-linecap="round"/><path d="M54 84Q62 65 72 76Q81 59 91 74Q100 59 109 73M197 73Q207 59 217 75Q229 59 238 76" fill="none" stroke="#568552" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M72 77Q80 66 88 77Q80 88 72 77ZM120 77Q128 66 136 77Q128 88 120 77ZM168 77Q176 66 184 77Q176 88 168 77ZM216 77Q224 66 232 77Q224 88 216 77Z" fill="#D9857F" stroke="#A95059" stroke-width="1"/><path d="M84 154Q110 140 139 152M165 152Q194 140 220 154" fill="none" stroke="#D9A441" stroke-width="1.6"/><path d="M140 126Q152 137 164 126" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><circle cx="151" cy="131" r="3.5" fill="none" stroke="#D9A441" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#spouse-shadow)"><path d="M50 177Q54 143 73 135Q92 127 112 139L118 177Z" fill="url(#spouse-clothes)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M77 138L93 153L109 138" fill="#F3ECE1" stroke="#315782" stroke-width="1.6"/><path d="M91 153L98 161L105 153L101 173H95Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="84" cy="108" r="26" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4"/><path d="M58 106Q59 82 84 81Q110 82 110 108L104 113Q100 92 84 93Q70 92 62 115Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2"/><path d="M71 108Q76 112 81 108M88 108Q93 112 99 108M73 122Q84 128 96 122" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M105 145Q122 136 137 123M111 153Q128 146 144 134" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M105 145Q122 136 137 123M111 153Q128 146 144 134" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M145 177Q149 144 168 136Q188 128 208 140L215 177Z" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2.5"/><path d="M151 142L179 157L207 141" fill="none" stroke="#D9857F" stroke-width="8"/><path d="M179 156L170 178M179 156L190 178" stroke="#F3ECE1" stroke-width="4"/><circle cx="180" cy="107" r="26" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M154 105Q155 81 180 80Q206 81 206 107Q202 123 198 134L188 136L189 116Q180 109 169 116L166 133L156 128Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2"/><path d="M167 107Q172 111 177 107M184 107Q189 111 195 107M169 120Q180 126 192 120" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M160 145Q150 137 144 125M191 145Q204 137 211 125" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M160 145Q150 137 144 125M191 145Q204 137 211 125" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><circle cx="132" cy="139" r="3.4" fill="none" stroke="#D9A441" stroke-width="1.8"/><circle cx="215" cy="139" r="3.4" fill="none" stroke="#D9A441" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M68 84Q83 77 98 82M164 80Q179 73 194 78" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M128 96Q142 90 156 95M154 95Q168 89 182 94" fill="none" stroke="#D9A441" stroke-width="1.7"/><circle cx="153" cy="87" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="112" rx="126" ry="77" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".36"/><path d="M54 35Q110 13 166 28" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

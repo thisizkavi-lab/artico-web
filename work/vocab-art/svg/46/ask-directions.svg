@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: ask directions
+  CONTEXTUAL_DEFINITION: Request route guidance from another person while traveling.
+  PEDAGOGICAL_ART_DIRECTOR: Place a traveler holding an unfolded map and gesturing to a local at a street corner; the local listens and is ready to respond.
+  PEDAGOGICAL_ARCHETYPE: 4 - Human travel interaction
+  SYNONYM_GUARD: Make the map-holding traveler the active asker; avoid a solo map-reading or route-planning scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two full-bodied travelers stand at (95,117) and (216,115); asker holds open map at chest, one hand raised; short corner streets and a signpost frame them.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:ask directions" data-archetype="human-action">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="askstreet" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6EDDE"/><stop offset="1" stop-color="#D4E1CF"/></linearGradient>
+    <linearGradient id="askmap" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9F8EF"/><stop offset="1" stop-color="#D9E7D6"/></linearGradient>
+    <radialGradient id="ask-focus"><stop stop-color="#F2C14E" stop-opacity=".35"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ask-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#askstreet)"/><path d="M0 135H304V192H0Z" fill="#E8E3D8"/><path d="M0 129H304" stroke="#A39A8B" stroke-width="2"/><path d="M0 91H80M224 91H304M151 0V46" stroke="#778895" stroke-width="14"/><path d="M0 91H80M224 91H304M151 0V46" stroke="#FAF8F3" stroke-width="1.4" stroke-dasharray="6 6"/></g>
+  <g id="layer-context"><circle cx="38" cy="52" r="16" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="269" cy="53" r="17" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><path d="M252 102V39M252 40L279 47L252 53Z" fill="#C7854D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M247 102H257M243 107H261" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><rect x="18" y="109" width="44" height="18" rx="3" fill="#D7BB99" stroke="#766656" stroke-width="1.3"/></g>
+  <g id="layer-focal" filter="url(#ask-shadow)"><ellipse cx="98" cy="119" rx="56" ry="56" fill="url(#ask-focus)"/><circle cx="95" cy="76" r="11" fill="#D9A980" stroke="#1E2A3B" stroke-width="1.8"/><path d="M80 91Q95 82 110 91L115 127H75Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.3"/><path d="M82 96L66 107L71 113L88 105M108 96L126 100L125 106L108 106" fill="#D9A980" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M83 125L77 155H93L97 133L103 155H119L111 124" fill="#354B63" stroke="#1E2A3B" stroke-width="1.9"/><path d="M70 102L122 98L128 126L75 132Z" fill="url(#askmap)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M80 111L95 107L109 116L119 108M92 105L93 127M104 107L111 128" fill="none" stroke="#91A990" stroke-width="1.3"/><circle cx="98" cy="115" r="4" fill="#F2C14E" stroke="#4A72B2" stroke-width="1.3"/><circle cx="214" cy="77" r="11" fill="#E3B48C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M199 92Q214 83 229 92L235 128H193Z" fill="#C37A54" stroke="#1E2A3B" stroke-width="2.2"/><path d="M201 97L187 111L192 116L207 105M227 98L240 110L235 116L222 106" fill="#E3B48C" stroke="#1E2A3B" stroke-width="1.7" stroke-linejoin="round"/><path d="M201 126L195 155H211L216 133L222 155H238L230 125" fill="#53667B" stroke="#1E2A3B" stroke-width="1.9"/></g>
+  <g id="layer-details"><path d="M129 98Q153 77 178 88" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 4"/><path d="M144 92L154 88L149 98" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M179 87L188 81" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round"/><path d="M83 117L93 114M103 119L115 115" stroke="#B7C9BA" stroke-width="1.1"/><circle cx="155" cy="119" r="3" fill="#FFFFFF"/><ellipse cx="96" cy="158" rx="27" ry="5" fill="#A9A398" opacity=".48"/><ellipse cx="215" cy="158" rx="27" ry="5" fill="#A9A398" opacity=".48"/></g>
+  <g id="layer-lighting"><path d="M75 94Q95 84 114 94" fill="none" stroke="#BBD5F0" stroke-width="1.3"/><path d="M201 95Q214 88 228 95" fill="none" stroke="#F5D8BD" stroke-width="1.3"/><path d="M252 41L275 47" stroke="#F7DCA9" stroke-width="1.4"/></g>
+</svg>

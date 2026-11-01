@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: eyeshadow (Noun)
+  CONTEXTUAL_DEFINITION: Colored powder or cream applied to the eyelids.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object assortment
+  SYNONYM_GUARD: Use a palette of powder pans and a broad soft applicator, distinct from eyeliner.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm cream paper.
+    - Context_Layer: Soft rose halo.
+    - Focal_Layer: Open palette with several powder colors.
+    - Details_Layer: Wide sponge applicator.
+    - Lighting_Layer: Powder-pan highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:eyeshadow" data-archetype="hero-assortment">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="158" rx="105" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="92" rx="115" ry="68" fill="#FEF3C7" opacity=".33"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M39 79Q42 64 57 63H210Q224 64 226 79L219 144Q218 155 205 155H53Q39 153 38 140Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.7"/>
+  <path d="M48 74H215L211 88H46Z" fill="#C7D9E8" stroke="#7B8A9E" stroke-width="1.5"/>
+  <g stroke="#1E2A3B" stroke-width="1.7"><rect x="53" y="96" width="34" height="37" rx="5" fill="#D9857F"/><rect x="94" y="96" width="34" height="37" rx="5" fill="#8A6A9C"/><rect x="135" y="96" width="34" height="37" rx="5" fill="#D9A441"/><rect x="176" y="96" width="34" height="37" rx="5" fill="#5479AC"/></g>
+  <g opacity=".48"><ellipse cx="70" cy="106" rx="11" ry="4" fill="#F6C6C0"/><ellipse cx="111" cy="106" rx="11" ry="4" fill="#C6A5D2"/><ellipse cx="152" cy="106" rx="11" ry="4" fill="#F2D48A"/><ellipse cx="193" cy="106" rx="11" ry="4" fill="#B4CAE3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M209 52L247 37L255 48L222 67Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.2"/><path d="M246 38L258 34L266 45L255 50Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/>
+  <path d="M52 142Q129 148 207 142" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M242 58L218 80" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

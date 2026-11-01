@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: patient (Adjective; personality trait)
+  CONTEXTUAL_DEFINITION: Able to wait calmly and give another person enough time.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A patient person waits kindly while a younger companion carefully ties a shoe, unlike the restless foot-tapping impatience card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet park path and low bench.
+    - Context_Layer: Companion sits and ties a shoe at x=98.
+    - Focal_Layer: Patient friend waits nearby at ease, offering time.
+    - Details_Layer: Relaxed shoulders, gently open hand, untapped clock-free space.
+    - Lighting_Layer: Soft warm calm light over the pause.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:patient / patient (personality trait) (adjective)" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#56725E;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#829A83"/><stop offset="1" stop-color="#56725E"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q82 142 152 150T304 148V192H0Z" fill="#E1E8DC"/><ellipse cx="153" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M32 126H105M36 126V151M101 126V151" stroke="#805333" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="90" cy="84" r="17" fill="#C98961" stroke="#1E2A3B" stroke-width="2"/><path d="M73 84Q74 66 90 67Q107 68 107 85L101 90H76Z" fill="#35404B"/><path d="M69 106Q90 99 111 106L115 136H64Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M76 111L64 124L74 135M105 111L114 123" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M80 84H85M94 84H99M80 94Q90 99 100 94" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M67 137L79 140L77 146L64 143Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="1.5"/><path d="M75 140L83 136M74 144L82 140" stroke="#805333" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="209" cy="95" rx="72" ry="68" fill="#FEF3C7" opacity=".55"/><circle cx="210" cy="55" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M190 55Q191 33 210 34Q231 35 230 57L223 62Q219 46 208 46Q198 47 192 63Z" fill="#805333" stroke="#1E2A3B" stroke-width="2"/><path d="M186 81Q210 74 234 81L241 122H179Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M192 90L177 103L168 100M228 90L242 102L252 100" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M192 90L178 103L169 100M228 90L242 102L251 100" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M180 122L179 159H196L204 124M212 124L220 159H237L233 122" fill="#56725E" stroke="#1E2A3B" stroke-width="2"/><path d="M199 55Q204 58 208 55M216 55Q220 58 224 55M198 68Q209 76 220 68" fill="none" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M151 105Q161 100 169 105M157 114Q166 109 173 114" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><path d="M153 126Q164 123 175 126" stroke="#829A83" stroke-width="1.8"/><circle cx="151" cy="93" r="2.3" fill="#D9A441"/><path d="M201 38Q210 34 220 38" fill="none" stroke="#FEF9C3" stroke-width="1.8"/><path d="M174 141H185" stroke="#AAB5C3" stroke-width="1.4" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><path d="M200 38Q210 34 220 38" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="168" cy="98" rx="112" ry="67" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

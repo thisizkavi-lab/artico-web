@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: follow-up
+  CONTEXTUAL_DEFINITION: A later check, message, or action that continues a discussion after the initial meeting.
+  PEDAGOGICAL_ART_DIRECTOR: Show the first meeting as already finished and one colleague making a later contact to continue an agreed point.
+  PEDAGOGICAL_ARCHETYPE: 7 - Subsequent contact
+  SYNONYM_GUARD: Emphasize a later stage connected to the meeting, not physical pursuit or a task list by itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a small finished meeting note and two empty chairs on the left at x=35..120, y=89..139. On the right, a coworker at a desk uses a phone beside a calendar with two pages, one gold page turned forward; a curved dotted line connects the earlier note to the later call.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:follow-up" data-archetype="subsequent-contact">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="follow-calendar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7E8BF"/></linearGradient>
+    <linearGradient id="follow-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="follow-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="follow-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="111" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M38 133 H132 V145 H38 Z" fill="#A8B4C2" stroke="#64748B" stroke-width="1.4"/><path d="M178 133 H270 V145 H178 Z" fill="url(#follow-desk)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M191 145 V155 M256 145 V155" stroke="#965D28" stroke-width="2.2"/><path d="M58 130 V109 Q73 94 88 109 V130 M91 130 V109 Q106 94 121 109 V130" fill="#DCE6F2" stroke="#64748B" stroke-width="1.2"/><rect x="196" y="38" width="42" height="48" rx="2" fill="url(#follow-calendar)" stroke="#64748B" stroke-width="1.2"/><path d="M196 48 H238 M205 34 V41 M229 34 V41" stroke="#64748B" stroke-width="1.2"/><circle cx="208" cy="58" r="2" fill="#CBD5E1"/><circle cx="217" cy="58" r="2" fill="#CBD5E1"/><circle cx="226" cy="58" r="2" fill="#CBD5E1"/><circle cx="208" cy="68" r="2" fill="#CBD5E1"/><circle cx="217" cy="68" r="3" fill="#F2C14E"/><circle cx="226" cy="68" r="2" fill="#CBD5E1"/></g>
+  <g id="layer-focal" filter="url(#follow-shadow)"><rect x="42" y="72" width="64" height="43" rx="3" fill="#FFFFFF" stroke="#64748B" stroke-width="1.4"/><path d="M51 83 H96 M51 89 H91 M51 97 H95 M51 103 H83" stroke="#94A3B8" stroke-width="1"/><circle cx="52" cy="80" r="2" fill="#A8D4A2"/><circle cx="200" cy="118" r="2" fill="#F2C14E"/><path d="M192 126 Q194 101 207 95 L208 86 Q204 82 206 74 Q214 65 224 68 Q233 71 230 82 L227 90 Q241 96 243 123 L240 135 H196 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="220" cy="77" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M212 75 Q214 67 221 67 Q229 68 232 75 Q225 71 218 72 Z" fill="#3D342D"/><path d="M197 108 L181 96" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M181 96 L177 85" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><rect x="171" y="70" width="12" height="22" rx="3" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1"/><circle cx="177" cy="74" r="1.2" fill="#F2C14E"/><path d="M207 102 Q219 98 231 102" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M109 90 C133 69 149 77 165 91" fill="none" stroke="#D97706" stroke-width="1.8" stroke-dasharray="3 4"/><path d="M159 85 L166 92 L156 94" fill="none" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M206 59 H235" stroke="#FFFFFF" stroke-width=".9"/><circle cx="180" cy="65" r="2" fill="#8EB0DE"/><circle cx="185" cy="68" r="1.5" fill="#F2C14E"/><path d="M263 41 L269 35 M266 49 H274" stroke="#F2C14E" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="213" cy="92" rx="80" ry="59" fill="url(#follow-halo)" opacity=".22"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

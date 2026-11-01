@@ -1,0 +1,42 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: painful
+ CONTEXTUAL_DEFINITION: Causing pain, especially when a body part is touched or moved.
+ PEDAGOGICAL_ARCHETYPE: a person carefully bending a tender elbow
+ SYNONYM_GUARD: Show that a specific movement hurts; pain is the broader sensation, and no open wound is needed.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A person tries to bend one arm while the other hand gently supports the tender elbow; a small guarded motion cue marks the painful movement.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:painful" data-archetype="guarded painful movement">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="92" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M57 42H99V101H57Z" fill="#D9D0C2"/><path d="M63 48H93V95H63Z" fill="#A9B9B4"/><path d="M211 41H250V101H211Z" fill="#E3DDD2"/><path d="M217 47H244V95H217Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M64 145H239" stroke="#8C725A" stroke-width="1.1"/><circle cx="77" cy="145" r="2" fill="#D6A64C"/><circle cx="226" cy="145" r="2" fill="#B85E5A"/>
+  <path d="M48 121Q58 116 68 121V141H48Z" fill="#798C72"/><path d="M235 120Q245 115 255 120V141H235Z" fill="#597D8B"/>
+  <ellipse cx="151" cy="149" rx="68" ry="3" fill="#F6E5CE" opacity=".58"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="48" r="12" fill="#D29A78"/><path d="M139 47Q140 32 152 33Q164 34 163 50L157 41L141 44Z" fill="#26384A"/>
+  <path d="M132 65Q151 58 170 66L177 113H125Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M137 72L150 84L172 88M166 72L182 88L181 105L166 117" fill="none" stroke="#D29A78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M131 111L128 146M171 111L176 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- the opposite hand supports the tender elbow -->
+  <path d="M173 88Q174 82 180 83L186 88L184 94L178 92L173 96L169 92Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M143 67L151 75L159 67" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <ellipse cx="181" cy="89" rx="16" ry="15" fill="#B85E5A" opacity=".16"/><ellipse cx="181" cy="89" rx="10" ry="9" fill="none" stroke="#B85E5A" stroke-width="1.1" opacity=".7"/>
+  <path d="M181 70V75M194 78L198 75M198 89H203M191 102L195 106M169 76L165 72" stroke="#D6A64C" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M145 44Q149 47 153 44M156 44L160 43M145 55Q151 52 157 55" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M132 79L137 83M168 78L163 83M159 90L166 94M143 119L150 122" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M181 70Q190 78 186 86M193 74Q201 83 198 91" fill="none" stroke="#D6A64C" stroke-width="1.1" stroke-dasharray="3 3"/>
+  <circle cx="207" cy="68" r="1.5" fill="#D6A64C"/><circle cx="212" cy="73" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="86" rx="91" ry="67" fill="#E7C66B" opacity=".065"/><path d="M50 33L66 49M252 32L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M43 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

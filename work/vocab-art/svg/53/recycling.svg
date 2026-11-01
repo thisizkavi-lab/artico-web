@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:recycling" data-archetype="sorting-used-materials-and-turning-them-into-reusable-stock">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; recycling. Show used paper and containers being sorted and processed into clean reusable material, without a recycling logo or text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="recycle-sky" x2="0" y2="1"><stop stop-color="#E1EEE7"/><stop offset="1" stop-color="#C5D9CE"/></linearGradient>
+  <linearGradient id="recycle-bin" x2="0" y2="1"><stop stop-color="#7C9E87"/><stop offset="1" stop-color="#4D7464"/></linearGradient>
+  <linearGradient id="recycle-paper" x2="0" y2="1"><stop stop-color="#F3E7C8"/><stop offset="1" stop-color="#C5B486"/></linearGradient>
+  <linearGradient id="recycle-glass" x2="1" y2="0"><stop stop-color="#9ACED0" stop-opacity=".75"/><stop offset="1" stop-color="#498A90" stop-opacity=".85"/></linearGradient>
+  <filter id="recycle-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#recycle-sky)"/><circle cx="246" cy="37" r="13" fill="#EBC86F" opacity=".68"/><path d="M0 121Q76 105 150 120T304 116V192H0Z" fill="#9CAC8A"/><path d="M0 162Q73 149 145 162T304 158V192H0Z" fill="#6D865E"/></g>
+<g id="layer-context">
+  <path d="M22 155L34 97H102L114 155Z" fill="url(#recycle-bin)" stroke="#3F6155" stroke-width="1.6"/><path d="M18 99H108V108H18Z" fill="#5F806B" stroke="#3F6155" stroke-width="1.4"/><path d="M42 112l5 33m20-33v34m20-34-5 33" fill="none" stroke="#A9C9B3" stroke-width="2"/>
+  <path d="M0 171Q52 160 101 171T207 169Q262 157 304 168V192H0Z" fill="#58775A"/>
+  <path d="M147 150h63v20h-63Z" fill="#8E907B"/><path d="M154 147h50v-9h-50Z" fill="#A9A88F"/>
+  <path d="M214 150v20m11-20v20m11-20v20" fill="none" stroke="#586B5F" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#recycle-shadow)">
+  <path d="M43 94Q44 84 54 84H65Q75 86 74 96L69 105H48Z" fill="url(#recycle-glass)" stroke="#487D80" stroke-width="1.4"/><path d="M48 84V78h21v7" fill="none" stroke="#487D80" stroke-width="1.3"/>
+  <path d="M78 96L84 80 99 86 95 103Z" fill="#D8D4BC" stroke="#8A8A75" stroke-width="1.2"/><path d="M79 89l16 6" fill="none" stroke="#AAA589" stroke-width="1.2"/>
+  <path d="M125 120l19-10 17 7-19 12Z" fill="url(#recycle-paper)" stroke="#9D8B65" stroke-width="1.2"/><path d="M132 124l17-9m-6 13 17-9" fill="none" stroke="#F5E9C8" stroke-width="1.2"/>
+  <path d="M221 138Q230 127 244 135Q255 142 250 151L235 158 221 153Z" fill="url(#recycle-glass)" stroke="#4F8588" stroke-width="1.3"/><path d="M230 136l4-9h10l2 10" fill="none" stroke="#4F8588" stroke-width="1.2"/>
+  <path d="M106 108l18 7m-10-13 10 13-13 4" fill="none" stroke="#D7834B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M174 130l17-5m-8-7 8 7-5 8" fill="none" stroke="#719C76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="layer-details">
+  <circle cx="30" cy="163" r="1.8" fill="#EFE6C9"/><circle cx="120" cy="173" r="1.8" fill="#EFE6C9"/><circle cx="271" cy="174" r="1.7" fill="#EFE6C9"/>
+  <path d="M20 181q12-5 23 0m83-3q12-5 22 0m117 5q12-5 23 0" fill="none" stroke="#B6CA8B" stroke-width="1.4"/>
+  <path d="M31 74q12-6 23 0m140 8q10-5 20 0" fill="none" stroke="#EDF5E8" stroke-width="1.3"/>
+  <path d="M139 104q7-5 13-1m79 33q7-4 13 0" fill="none" stroke="#D6EAE0" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M43 94q1-10 12-10m176 59q9-7 18-1" fill="none" stroke="#F4F7E9" stroke-width="1.2"/><path d="M149 151h59" fill="none" stroke="#D6E6D8" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

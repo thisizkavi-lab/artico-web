@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: lawn mower (Noun)
+  CONTEXTUAL_DEFINITION: A wheeled machine that cuts grass to keep a lawn short.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: Isolate the machine with wheels, a low cutting deck, and push handle; the next card shows it being used to mow.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Garden lawn with short green grass beneath the mower.
+    - Context_Layer: A small tuft of taller grass at left provides scale and the cutting purpose.
+    - Focal_Layer: Red mower body centered x=142,y=105; deck spans x=83..211 and handle rises to x=222,y=34.
+    - Details_Layer: Two wheels, motor housing, grass outlet, handle grip, bolts, and cut grass blades.
+    - Lighting_Layer: Soft upper-left highlights on the red engine cover and metal handle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:lawn mower" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#CE3D4E;--c-secondary:#9E2636;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+    <linearGradient id="engine-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EA7580"/><stop offset="1" stop-color="#9E2636"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 123H304V151H0Z" fill="#DCEAD6"/><path d="M0 151H304V192H0Z" fill="#EAD8BE"/><path d="M20 154H286" stroke="#A8D4A2" stroke-width="2"/><ellipse cx="151" cy="160" rx="75" ry="7" fill="#B7C8AE" opacity=".7"/></g>
+  <g id="layer-context"><path d="M45 149V128M52 149V122M59 149V131M68 149V125M76 149V132" stroke="#568552" stroke-width="2.5" stroke-linecap="round"/><path d="M94 153L99 148M111 153L116 148M234 157L239 152M250 157L254 152" stroke="#7FB07A" stroke-width="2"/><circle cx="47" cy="126" r="3" fill="#568552"/><circle cx="67" cy="123" r="3.2" fill="#568552"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M195 100L227 45L238 48L210 108" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M195 100L227 45L238 48L210 108" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/><path d="M220 39Q220 32 228 31H245Q251 31 251 38V43H222Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M83 111Q83 98 98 96L123 92L135 77Q141 70 154 72L184 81Q197 86 199 99L213 108L210 126H80Z" fill="url(#engine-grad)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M82 119H214L208 135H73Q68 135 72 129Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.4"/><path d="M80 128H210" stroke="#64748B" stroke-width="2"/><circle cx="91" cy="139" r="11" fill="#3D4658" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="91" cy="139" r="4" fill="#CBD5E1"/><circle cx="194" cy="139" r="11" fill="#3D4658" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="194" cy="139" r="4" fill="#CBD5E1"/><rect x="135" y="84" width="32" height="18" rx="5" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2"/><path d="M139 89H162M139 94H160" stroke="#F2A472" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M120 106L132 102M169 110L184 111" stroke="#F2A472" stroke-width="2" stroke-linecap="round"/><path d="M113 125L120 125M174 125L181 125" stroke="#FFFFFF" stroke-width="1.5" opacity=".65"/><path d="M218 57L226 44M228 60L237 44" stroke="#94A3B8" stroke-width="1.4"/><circle cx="127" cy="78" r="2.3" fill="#F2C14E"/><circle cx="174" cy="85" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M89 108Q96 99 111 98" fill="none" stroke="#F8B3B9" stroke-width="2" stroke-linecap="round" opacity=".7"/><path d="M224 47L236 41" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".8"/><path d="M24 153H69" stroke="#FFFFFF" stroke-width="1.4" opacity=".55"/></g>
+</svg>

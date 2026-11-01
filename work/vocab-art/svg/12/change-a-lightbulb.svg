@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: change a lightbulb (Verb phrase)
+  CONTEXTUAL_DEFINITION: Remove a spent bulb from a ceiling fixture and fit a new one.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, object, and state change
+  SYNONYM_GUARD: A person on a step ladder twists a fresh bulb into a ceiling socket; one older bulb rests safely in the other hand.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Indoor wall and floor with a ceiling lamp near the top center.
+    - Context_Layer: Step ladder at x=203..269, wall switch at x=40,y=98, and a soft-lit room.
+    - Focal_Layer: Person on the ladder reaches up to screw a bulb into the fixture at x=146,y=45.
+    - Details_Layer: Bulb screw base, ladder rungs, raised arm, old bulb in hand, and small glow rays.
+    - Lighting_Layer: Warm glow around the working ceiling fixture and highlights on the bulb glass.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:change a lightbulb" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#F2C14E;--c-secondary:#D49B2A;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <radialGradient id="lamp-glow"><stop offset="0" stop-color="#FFF4C2" stop-opacity=".75"/><stop offset="1" stop-color="#FFF4C2" stop-opacity="0"/></radialGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 157H304V192H0Z" fill="#D9C6AB"/><path d="M0 153H304" stroke="#8A5A35" stroke-width="2"/><path d="M0 0H304V22H0Z" fill="#E6DFD3"/><path d="M143 22V36H165V22" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="154" cy="57" rx="65" ry="48" fill="url(#lamp-glow)"/></g>
+  <g id="layer-context"><path d="M41 95H61V125H41Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><rect x="47" y="102" width="8" height="15" rx="3" fill="#5479AC"/><path d="M204 128L221 75M267 128L249 75" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M204 128L221 75M267 128L249 75" stroke="#C88446" stroke-width="2.8" stroke-linecap="round"/><path d="M211 106H259M207 121H264" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M200 130H271" stroke="#1E2A3B" stroke-width="3"/><path d="M146 38H162V45H146Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><circle cx="169" cy="85" r="13" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M157 84Q158 69 170 70Q182 71 181 85L175 78L162 79Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M157 101Q169 95 181 102L189 125L170 132L151 119Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M158 104L148 77L153 46" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M158 104L148 77L153 46" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M180 105L195 118L207 116" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M180 105L195 118L207 116" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M154 46Q154 38 162 38Q170 38 170 46L166 54L158 54Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/><path d="M160 44Q162 41 165 44L164 50H159Z" fill="#FFF4C2"/><path d="M155 54H169V59H155Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.4"/><path d="M161 55V59M165 55V59" stroke="#64748B" stroke-width=".8"/><path d="M168 131L184 145L177 151L160 136" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M167 134L163 151M182 144L188 155" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M167 134L163 151M182 144L188 155" stroke="#D89A6C" stroke-width="4.5" stroke-linecap="round"/><path d="M203 130H259V135H203Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M204 114Q204 106 211 106Q218 106 218 114L214 121H208Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.6"/><path d="M208 121H214V125H208Z" fill="#94A3B8" stroke="#64748B" stroke-width=".9"/></g>
+  <g id="layer-details"><path d="M142 44L137 40M174 44L179 40M155 31V26" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><path d="M55 89L60 84M42 89L38 84" stroke="#AFC3DE" stroke-width="1.5"/><path d="M218 104L225 82M246 105L252 83" stroke="#C88446" stroke-width="1.3"/><path d="M168 82Q172 80 175 82" fill="none" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="144" cy="63" r="2.1" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M157 41Q161 38 166 41" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".8"/><path d="M143 26H164" stroke="#FFFFFF" stroke-width="1.3" opacity=".7"/><path d="M204 131H252" stroke="#8EB0DE" stroke-width="1.2" opacity=".6"/></g>
+</svg>

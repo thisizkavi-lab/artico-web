@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: claw(s) (noun)
+  CONTEXTUAL_DEFINITION: The opposing hard pincer fingers of a live crab's claw, attached to its jointed arm.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole close-up with clear attachment
+  SYNONYM_GUARD: Use a crustacean's opposing pincer tips connected to an arm segment; no mammal paw or bird talon.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A robust orange crab claw fills the card; a clearly segmented arm joins an oval palm and two curved fingers point right, held apart around a visible blue-water gap.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:claw(s)" data-archetype="crab-pincer-attached-to-segmented-arm">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#D88757;--c-secondary:#784A3A;--c-accent:#D9AD5C;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="claw-water" x2="0" y2="1"><stop stop-color="#A3CDCC"/><stop offset="1" stop-color="#4A8190"/></linearGradient>
+  <linearGradient id="claw-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EEA26D"/><stop offset="1" stop-color="#BB5D47"/></linearGradient>
+  <filter id="claw-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#claw-water)"/><path d="M0 153Q76 145 151 154T304 149V192H0Z" fill="#557D81"/></g>
+ <g id="layer-context"><path d="M20 190l8-31m-8 15-10-12m10 5 10-19m220 42 7-32m-7 14-11-13m11 5 10-19" fill="none" stroke="#5B8775" stroke-width="2" stroke-linecap="round"/><path d="M0 33q41-6 80 0m147-3q38-7 77 0" fill="none" stroke="#D9ECE5" stroke-width="1.4"/><ellipse cx="152" cy="149" rx="90" ry="6" fill="#1A3B42" opacity=".12"/>
+  <g opacity=".2" transform="translate(26 41) scale(.58)"><path d="M124 107Q106 87 87 93L73 111L99 123Z" fill="#C86F56"/><ellipse cx="147" cy="104" rx="39" ry="27" fill="#C86F56"/><path d="M176 104Q197 88 209 98L198 118L178 115Z" fill="#C86F56"/></g>
+ </g>
+<g id="layer-focal" filter="url(#claw-shadow)">
+  <path d="M46 103Q69 91 94 98L122 108L116 131L91 128Q68 124 45 135Z" fill="#C87651" stroke="#874A37" stroke-width="1.7"/>
+  <path d="M74 97Q83 93 94 98L101 101L95 126L84 124Z" fill="#D9875B" stroke="#874A37" stroke-width="1.2"/>
+  <path d="M96 100Q104 97 115 103L121 108L116 130L104 127Z" fill="#D9875B" stroke="#874A37" stroke-width="1.2"/>
+  <path d="M110 98Q115 74 137 64Q160 53 181 63Q200 72 204 92Q208 114 193 129Q175 145 148 138Q120 132 110 110Z" fill="url(#claw-shell)" stroke="#874A37" stroke-width="1.8"/>
+  <path d="M178 72Q195 55 216 58Q233 60 241 71Q246 79 237 86L216 94Q203 96 194 106Q185 96 178 72Z" fill="#E9A26A" stroke="#874A37" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M180 116Q195 107 211 109Q227 109 241 95Q248 96 247 105Q245 120 231 130Q215 141 201 134Q188 129 180 116Z" fill="url(#claw-shell)" stroke="#874A37" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M190 103Q202 98 213 96M189 112Q202 107 215 106" fill="none" stroke="#7E4638" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M120 91Q136 68 158 65m26 3q11 2 16 11m-66 44q12 10 27 12" fill="none" stroke="#F5BD85" stroke-width="1.4" opacity=".8" stroke-linecap="round"/>
+  <path d="M77 101l-4 14m13-16-4 16m15-14-4 15" fill="none" stroke="#E9A26E" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M197 104l4 3m4-7 4 3m-8 13 4 3m4-7 4 3" fill="none" stroke="#F7C18A" stroke-width="1.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="238" cy="70" r="1.8" fill="#EAF7F0"/><circle cx="247" cy="63" r="1.2" fill="#EAF7F0"/><path d="M50 87q14-5 27 0m169 63q13-5 25 0" fill="none" stroke="#C9E2DA" stroke-width="1.2" stroke-linecap="round"/><circle cx="143" cy="93" r="1.2" fill="#F4CEA3"/></g>
+ <g id="layer-lighting"><path d="M125 101q10-19 28-29m31-4q10 2 15 8" fill="none" stroke="#FFF0DC" stroke-width="1.6" opacity=".62" stroke-linecap="round"/><ellipse cx="166" cy="94" rx="40" ry="31" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

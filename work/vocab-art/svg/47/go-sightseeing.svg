@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: go sightseeing
+  CONTEXTUAL_DEFINITION: Visit local places of interest and look at notable landmarks.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler actively photographing an iconic city landmark.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: The traveler is actively exploring attractions, not just looking at one generic building.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A visitor raises a camera toward a distinctive old clock tower with another nearby landmark and city street visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:go sightseeing" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gs-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ADD6DC"/><stop offset="1" stop-color="#F2E7D2"/></linearGradient>
+  <linearGradient id="gs-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DFCFB2"/><stop offset="1" stop-color="#A9906D"/></linearGradient>
+  <linearGradient id="gs-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#848D8E"/><stop offset="1" stop-color="#5D6A70"/></linearGradient>
+  <filter id="gs-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gs-sky)"/><path d="M0 130Q46 119 97 130T202 126T304 130V192H0Z" fill="#A8B899"/><path d="M0 151H304V192H0Z" fill="url(#gs-road)"/><path d="M21 173H283" stroke="#F4EBD7" stroke-width="1.5"/><circle cx="249" cy="35" r="14" fill="#F2C14E"/><path d="M18 119H87V149H18Z" fill="#D6C5A7" stroke="#4A5E64" stroke-width="1"/><path d="M26 125H42V140H26ZM50 125H66V140H50Z" fill="#A9C8CF" stroke="#526D77" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M126 71L155 57L184 71V148H126Z" fill="url(#gs-stone)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M132 72H178V85H132Z" fill="#DCCBAE" stroke="#705E49" stroke-width="1"/><path d="M138 86H148V101H138ZM162 86H172V101H162Z" fill="#9CC6CB" stroke="#526D77" stroke-width=".8"/><path d="M149 112H162V148H149Z" fill="#755A42" stroke="#45392F" stroke-width=".9"/><path d="M139 57L155 43L171 57Z" fill="#735C46" stroke="#1E2A3B" stroke-width="1.1"/><path d="M144 43V29H166V43Z" fill="#C9B28E" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="155" cy="36" r="6" fill="#A9C8CF" stroke="#526D77" stroke-width=".8"/><path d="M155 36L159 33M155 36V39" stroke="#465D68" stroke-width=".8"/><path d="M209 130H280V149H209Z" fill="#BDA989" stroke="#1E2A3B" stroke-width="1"/><path d="M215 136H229V147H215ZM236 136H250V147H236Z" fill="#A9C8CF" stroke="#526D77" stroke-width=".8"/></g>
+ <g id="layer-focal" filter="url(#gs-shadow)"><circle cx="79" cy="92" r="8" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M67 103Q79 97 91 103L95 133H63Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M69 130L66 156H76L81 134M84 134L89 156H99L94 129" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><path d="M69 108L82 99L92 87" fill="none" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><ellipse cx="94" cy="85" rx="3.5" ry="2.8" fill="#D9A27D"/><rect x="90" y="76" width="21" height="15" rx="3" fill="#344B59" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="101" cy="83" r="4.5" fill="#9EC0C8" stroke="#1E2A3B" stroke-width=".8"/><path d="M99 76V72H105V76" fill="none" stroke="#1E2A3B" stroke-width="1"/><rect x="54" y="116" width="15" height="24" rx="3" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><path d="M58 116V112Q58 109 61.5 109Q65 109 65 112V116" fill="none" stroke="#1E2A3B" stroke-width="1.4"/></g>
+ <g id="layer-details"><path d="M127 71H183" stroke="#F5EAD3" stroke-width="1" opacity=".8"/><ellipse cx="151" cy="166" rx="124" ry="5" fill="#1E2A3B" opacity=".15"/><path d="M125 148H184" stroke="#F1E5D0" stroke-width="1"/><circle cx="155" cy="27" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="103" rx="128" ry="74" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

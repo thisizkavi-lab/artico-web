@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: debt (noun)
+  CONTEXTUAL_DEFINITION: Money that a person or business owes and has not yet repaid.
+  PEDAGOGICAL_ARCHETYPE: 3 - Expressive role under obligation
+  SYNONYM_GUARD: Show an existing unpaid obligation weighing on the borrower; keep the state of owing distinct from the loan transaction that created it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Borrower leans under a heavy stack of blank bills and repayment papers; open pocket is empty; red-tinted overdue seal-like disk without text anchors the owed state.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:debt" data-archetype="role-obligation">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="debt-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></linearGradient>
+    <radialGradient id="debt-alert"><stop stop-color="#F7DDE0"/><stop offset="1" stop-color="#CE3D4E"/></radialGradient>
+    <path id="debt-shoulder" d="M81 159 Q83 126 109 121 Q129 116 146 129 Q161 111 181 115 Q204 121 211 159 Z"/>
+    <clipPath id="debt-clip"><use href="#debt-shoulder"/></clipPath>
+    <filter id="debt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="159" width="304" height="33" fill="#EEE7DA"/><path d="M0 159 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="150" cy="166" rx="92" ry="7" fill="#DDD4C3"/></g>
+  <!-- 2. Unpaid papers hang over the borrower -->
+  <g id="layer-context"><path d="M52 39 H158 V69 H52 Z" fill="url(#debt-paper)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M60 48 H147 M60 55 H137 M60 62 H149" stroke="#94A3B8" stroke-width="1.4"/><path d="M139 29 H242 V59 H139 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><path d="M148 38 H232 M148 45 H225 M148 52 H230" stroke="#94A3B8" stroke-width="1.4"/><path d="M67 37 L67 29 M224 27 L224 35" stroke="#CE3D4E" stroke-width="2"/></g>
+  <!-- 3. Primary indebted person burdened by money owed -->
+  <g id="layer-focal" filter="url(#debt-shadow)"><path d="M123 88 C119 78 122 62 136 57 C150 52 164 60 165 74 L163 98 C162 110 152 117 141 115 C130 113 124 104 123 88 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.5"/><path d="M122 80 Q128 71 136 70 L167 75 L165 85 Q147 89 122 86 Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M131 89 Q136 86 140 90 M151 90 Q155 87 159 91" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M136 103 Q145 98 154 104" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><use href="#debt-shoulder" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><g clip-path="url(#debt-clip)"><path d="M77 142 Q146 123 215 140 V165 H77Z" fill="#3D5F91"/><path d="M109 125 L131 136 M180 119 L165 136" stroke="#8EB0DE" stroke-width="2"/></g><path d="M110 128 L84 107" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M110 128 L86 108" stroke="#D89A6C" stroke-width="3.8" stroke-linecap="round"/></g>
+  <!-- 4. Weight of debt and overdue obligation cue -->
+  <g id="layer-details"><rect x="83" y="70" width="140" height="16" rx="3" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><rect x="91" y="54" width="124" height="16" rx="3" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/><path d="M99 60 H203 M99 65 H188" stroke="#94A3B8" stroke-width="1.3"/><circle cx="214" cy="103" r="15" fill="url(#debt-alert)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M214 94 V104 M214 110 V112" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/><path d="M76 106 L84 110 L91 105" fill="none" stroke="#64748B" stroke-width="2"/><path d="M111 80 H195" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 5. Strain highlights -->
+  <g id="layer-lighting"><path d="M129 73 Q142 63 157 70" fill="none" stroke="#E5A283" stroke-width="2"/><path d="M101 117 L93 110 M191 113 L198 106" stroke="#CE3D4E" stroke-width="2.1" stroke-linecap="round"/><path d="M211 37 L211 45 M207 41 H215" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

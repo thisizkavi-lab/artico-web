@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: reasonable (Adjective)
+  CONTEXTUAL_DEFINITION: Using sensible, proportionate judgment when making a decision.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A calm person compares two modest options and chooses a balanced share, contrasted with an exaggerated unreasonable demand.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared planning table.
+    - Context_Layer: Two peers and equal-sized choices on a tray.
+    - Focal_Layer: Thoughtful person places a balanced pair of tokens between them.
+    - Details_Layer: Scales, balanced objects, attentive brows and listening posture.
+    - Lighting_Layer: Neutral warm focus on the balanced decision.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:reasonable" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q82 143 152 150T304 148V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M20 115H284L276 128H28Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-context"><circle cx="55" cy="64" r="16" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M39 64Q40 47 55 48Q71 49 71 65L65 69H42Z" fill="#35404B"/><path d="M36 87Q55 80 74 87L80 113H31Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M48 64H53M59 64H64M48 74Q55 78 62 74" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 93L65 103M66 93L79 102" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><circle cx="252" cy="64" r="16" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M236 64Q237 47 252 48Q268 49 268 65L262 69H239Z" fill="#805333"/><path d="M233 87Q252 80 271 87L277 113H228Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M244 64H249M257 64H262M245 75Q252 79 259 75" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="153" cy="96" rx="66" ry="68" fill="#FEF3C7" opacity=".54"/><circle cx="153" cy="55" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M133 55Q133 33 153 34Q173 35 173 57L166 62Q162 46 151 46Q141 47 135 63Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M129 81Q153 74 177 81L185 119H121Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M135 89L119 101M171 89L187 101" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M135 89L119 101M171 89L187 101" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M124 119L123 159H141L149 121M157 121L165 159H183L178 119" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M146 98L153 105L160 98" fill="none" stroke="#FEF9C3" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M127 132H180" stroke="#7B8A9E" stroke-width="1.6"/><path d="M139 106L153 103L167 106" fill="none" stroke="#805333" stroke-width="1.8"/><circle cx="145" cy="105" r="7" fill="#D9A441" stroke="#805333" stroke-width="1.2"/><circle cx="163" cy="105" r="7" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M149 77Q153 81 157 77" fill="none" stroke="#805333" stroke-width="1.5"/><path d="M104 75Q111 70 117 75M190 75Q196 70 202 75" fill="none" stroke="#D9A441" stroke-width="1.7" stroke-linecap="round"/><circle cx="197" cy="88" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M143 38Q153 34 163 38" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="153" cy="96" rx="66" ry="68" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

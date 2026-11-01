@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: head (Noun)
+  CONTEXTUAL_DEFINITION: The upper part of a person including the face and neck.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Light the whole head and neck as one unit; face focuses only on the front facial area.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper with soft portrait shadow.
+    - Context_Layer: Muted shoulders and torso establish a whole person.
+    - Focal_Layer: Head, hair, ears, and neck are rendered in full warm color.
+    - Details_Layer: Pale gold callout halo frames the complete head-neck unit.
+    - Lighting_Layer: Gentle highlight along hair and cheek.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:head" data-archetype="part-callout">
+  <defs><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="174" rx="72" ry="7" fill="#EAE3D5"/><ellipse cx="152" cy="174" rx="48" ry="4" fill="#DDD4C3"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M80 171Q83 131 119 123L137 116H167L185 123Q221 132 224 171Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M105 145Q152 132 199 145" fill="none" stroke="#CBD5E1" stroke-width="1.5"/><ellipse cx="151" cy="77" rx="65" ry="76" fill="#FEF3C7" opacity=".75"/><ellipse cx="151" cy="77" rx="57" ry="70" fill="none" stroke="#D97706" stroke-width="1.8" stroke-dasharray="5 4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M127 103H177V137Q177 151 152 157Q127 151 127 137Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M110 53Q110 22 152 21Q194 22 194 57L191 91Q188 118 152 125Q116 118 113 91Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M113 61Q107 26 143 20Q181 16 193 47L190 60Q177 41 156 40Q134 40 119 61Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.1"/><path d="M121 49Q134 33 152 34" fill="none" stroke="#5A4740" stroke-width="2"/><path d="M106 71Q92 68 97 88Q99 98 113 94M194 71Q208 68 203 88Q201 98 187 94" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2"/><path d="M127 75Q137 69 146 75M158 75Q168 69 177 75" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M131 84Q137 81 143 84M161 84Q167 81 173 84" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M151 81L147 96Q152 100 157 96" fill="none" stroke="#9C6656" stroke-width="1.8"/><path d="M142 108Q152 112 162 108" fill="none" stroke="#9E5C5A" stroke-width="2"/><path d="M137 129L151 137L167 129" fill="none" stroke="#F5DDCB" stroke-width="1.3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M119 55Q127 33 145 29" fill="none" stroke="#FFFFFF" stroke-width="1.6"/><path d="M119 71Q115 91 124 101" fill="none" stroke="#F8DDCA" stroke-width="1.4"/><path d="M136 126H168" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M92 105L107 94" stroke="#4A72B2" stroke-width="2"/><path d="M198 105L184 94" stroke="#4A72B2" stroke-width="2"/><circle cx="151" cy="77" r="3" fill="#F2C14E"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: trunk (animal body-part noun)
+  CONTEXTUAL_DEFINITION: An elephant's long muscular nose, highlighted from the forehead down to its flexible tip.
+  PEDAGOGICAL_ARCHETYPE: 2 - Dimmed whole animal with highlighted target part
+  SYNONYM_GUARD: The target is the elephant's attached muscular nose, not a tree trunk or car luggage compartment; mute the rest of the elephant.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Muted elephant head and shoulders fill x=90..230 y=72..154; vivid curved trunk descends from forehead at x=212 y=96 and curls upward at x=244 y=145; thin accent ring around the trunk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:trunk" data-archetype="highlighted-elephant-trunk">
+  <defs>
+    <style>:root{--c-bg-1:#EAF1EF;--c-bg-2:#FAF7EE;--c-surface:#D5D9D1;--c-primary:#E2823F;--c-secondary:#586466;--c-accent:#E1B84C;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="trunk-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF1EF"/><stop offset="1" stop-color="#F7F2E5"/></linearGradient>
+    <linearGradient id="trunk-elephant" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B6BEBA"/><stop offset="1" stop-color="#788385"/></linearGradient>
+    <filter id="trunk-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#trunk-sky)"/><path d="M0 130 Q65 120 127 130 T243 128 Q280 120 304 129 V192 H0Z" fill="#E0E3D8"/><path d="M0 153 Q69 146 145 153 T304 151 V192 H0Z" fill="#D1C9B4"/><ellipse cx="155" cy="164" rx="103" ry="7" fill="#AAA38F" opacity=".4"/></g>
+  <g id="layer-context"><path d="M55 145 l-4-9 m4 9 6-7 M260 145 l4-9" fill="none" stroke="#82916D" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="204" cy="118" rx="48" ry="49" fill="none" stroke="#E1B84C" stroke-width="2" stroke-dasharray="4 4" opacity=".9"/><path d="M194 76 Q210 68 226 79 L238 98" fill="none" stroke="#A1AAA7" stroke-width="1.4" opacity=".5"/></g>
+  <g id="layer-focal" filter="url(#trunk-shadow)"><ellipse cx="145" cy="119" rx="52" ry="34" fill="url(#trunk-elephant)" stroke="#1E2A3B" stroke-width="2" opacity=".52"/><path d="M176 88 Q195 70 214 80 Q230 88 231 108 L223 126 Q211 137 190 128 L177 112Z" fill="#939D9B" stroke="#1E2A3B" stroke-width="1.8" opacity=".58"/><path d="M202 87 Q218 73 231 86 Q243 98 234 116 Q228 129 215 121 Q226 108 218 97 Q211 89 202 87Z" fill="#C2C7C1" stroke="#586466" stroke-width="1.3" opacity=".55"/><circle cx="221" cy="100" r="1.7" fill="#41494A" opacity=".65"/><path d="M220 111 Q230 116 231 130 Q232 142 243 146 Q251 147 254 139 Q256 135 260 137 Q263 143 258 150 Q250 158 238 154 Q222 150 219 135 Q215 125 212 118Z" fill="#E2823F" stroke="#1E2A3B" stroke-width="2.2"/><path d="M235 151 Q243 155 250 151 Q255 149 258 145" fill="none" stroke="#F8D59A" stroke-width="1.5"/><path d="M98 142 L96 155 M128 149 L130 158 M165 148 L169 158 M191 134 L199 153" fill="none" stroke="#657172" stroke-width="7" stroke-linecap="round" opacity=".48"/></g>
+  <g id="layer-details"><path d="M183 92 Q193 81 204 81 M182 105 Q193 98 201 101 M223 87 Q231 92 232 101" fill="none" stroke="#D7DCDA" stroke-width="1.3"/><path d="M224 119 Q231 124 231 133 M223 136 Q225 145 233 149 M239 151 Q249 154 255 147" fill="none" stroke="#F3AE68" stroke-width="1.5"/><path d="M230 127 Q235 131 236 136" fill="none" stroke="#F5C98C" stroke-width="1.1"/><path d="M232 139 Q237 143 243 141" fill="none" stroke="#F5C98C" stroke-width="1.1"/><path d="M98 151 l-1 5 m28-2 1 5 m42-4 2 5 m30-17 3 5" fill="none" stroke="#566162" stroke-width="1.1" stroke-linecap="round"/><path d="M52 145 l-4-8 m4 8 6-6 M256 145 l4-8" fill="none" stroke="#82916D" stroke-width="1.4" stroke-linecap="round"/><circle cx="239" cy="146" r="1.4" fill="#FFF0D3"/><path d="M213 119 Q218 123 219 130" fill="none" stroke="#F7C17F" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M105 98 Q120 84 139 86 M184 90 Q194 78 207 80 M222 88 Q229 92 231 100 M224 121 Q230 127 228 137" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".44" stroke-linecap="round"/><ellipse cx="141" cy="102" rx="27" ry="11" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

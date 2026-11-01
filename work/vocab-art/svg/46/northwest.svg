@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: northwest
+  CONTEXTUAL_DEFINITION: The compass direction halfway between north and west, toward the upper-left on a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Show a blue route climbing diagonally to the upper-left and a compass rose whose northwest ray alone catches the gold highlight.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: The destination must be upper-left relative to the starting point, not simply west or north.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A winding river-and-road map fills the stage; route runs from (216,150) to (53,45); compact rose at (256,120) highlights its upper-left ray.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:northwest" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="nw-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DBE9D7"/><stop offset="1" stop-color="#B9D3C4"/></linearGradient>
+    <linearGradient id="nw-river" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9BC5D6"/><stop offset="1" stop-color="#5E99B8"/></linearGradient>
+    <radialGradient id="nw-northglow"><stop stop-color="#F6CF63" stop-opacity=".5"/><stop offset="1" stop-color="#F6CF63" stop-opacity="0"/></radialGradient>
+    <filter id="nw-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF3F4"/><path d="M0 158Q82 143 157 160T304 150V192H0Z" fill="#D6E4D5"/><ellipse cx="50" cy="43" rx="43" ry="35" fill="url(#nw-northglow)"/></g>
+  <g id="layer-context"><path d="M15 20L227 18L230 170L16 170Z" fill="url(#nw-land)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M17 72H228M17 120H229M78 20V169M149 19V169M196 19V168" stroke="#A7B9A7" stroke-width="1.4"/><path d="M177 171C155 143 201 122 175 98C149 74 187 50 160 22" fill="none" stroke="url(#nw-river)" stroke-width="24" stroke-linecap="round"/><path d="M177 171C155 143 201 122 175 98C149 74 187 50 160 22" fill="none" stroke="#D7EEF3" stroke-width="1.6" stroke-dasharray="5 7"/><path d="M219 153L185 123L150 94L112 75L60 42" fill="none" stroke="#596C7D" stroke-width="12" stroke-linecap="round"/><path d="M219 153L185 123L150 94L112 75L60 42" fill="none" stroke="#F8F6EF" stroke-width="1.5" stroke-dasharray="5 7"/><circle cx="39" cy="134" r="12" fill="#7FA87B" stroke="#486750"/><rect x="180" y="37" width="23" height="18" rx="3" fill="#D7B99A" stroke="#76695D"/></g>
+  <g id="layer-focal" filter="url(#nw-shadow)"><circle cx="256" cy="119" r="37" fill="#FCFBF5" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="256" cy="119" r="29" fill="#E8EEEE" stroke="#9AA9AC" stroke-width="1.2"/><path d="M256 84L263 115L256 119L249 115Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M291 119L260 126L256 119L260 112Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M256 154L249 123L256 119L263 123Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M221 119L252 112L256 119L252 126Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M231 94L253 116L258 111Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M249 104L229 91L235 111Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="256" cy="119" r="4" fill="#1E2A3B"/><path d="M45 28L53 35L45 43L37 35Z" fill="#F2C14E" stroke="#FFFFFF" stroke-width="2.4"/></g>
+  <g id="layer-details"><path d="M211 146L67 53" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/><path d="M211 146L67 53" stroke="#4A72B2" stroke-width="6.5" stroke-linecap="round"/><path d="M76 43L52 43L62 65Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="213" cy="148" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M214 146L75 57" fill="none" stroke="#C6DCF2" stroke-width="1.1" stroke-dasharray="2 7"/><path d="M243 77L249 87M297 101L287 106M296 139L286 134M231 146L238 138" stroke="#778991" stroke-width="1.8" stroke-linecap="round"/><circle cx="113" cy="96" r="2.3" fill="#FFFFFF"/><circle cx="124" cy="145" r="2.3" fill="#FFFFFF"/><path d="M30 80Q42 73 53 77" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-lighting"><circle cx="256" cy="119" r="42" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><path d="M28 27L119 26" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M43 34L50 35" stroke="#FFF7D0" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

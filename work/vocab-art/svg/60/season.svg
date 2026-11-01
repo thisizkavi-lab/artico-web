@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 60 - Sports
+ WORD: season (sports period)
+ CONTEXTUAL_DEFINITION: A period of the year during which a sports league plays its scheduled matches.
+ PEDAGOGICAL_ARCHETYPE: A long schedule of repeated game days leads from opening match to final trophy
+ SYNONYM_GUARD: Show an organized sports season over time; not autumn leaves, weather, or a resort's off-season.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Stadium calendar board with multiple repeated ball-day markers across a row, opening whistle at one end and cup final at the other.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:season" data-archetype="sports-calendar-through-to-final">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="season-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#season-sky)"/><path d="M0 126q74-10 150 0t154 0v66H0Z" fill="#8FA586"/><path d="M0 146h304" stroke="#E7EEE4" stroke-width="1.5"/><path d="M24 106H280V166H24Z" fill="#F7F3E8" stroke="#405B61" stroke-width="1.6"/><path d="M24 120h256" stroke="#405B61" stroke-width="1.3"/><path d="M39 99v16m45-16v16m45-16v16m45-16v16m45-16v16m45-16v16" stroke="#D4866D" stroke-width="3"/></g>
+ <g id="layer-context"><path d="M0 132q52-8 103 0t102 0t99 0" stroke="#DEE9DC" stroke-width="1.2" fill="none"/><ellipse cx="151" cy="178" rx="108" ry="4" fill="#405B61" opacity=".14"/><circle cx="270" cy="44" r="13" fill="#E4BB68"/></g>
+ <g id="layer-focal"><path d="M43 134l8 0m-4-4v8m34-4h9m-4-4v8m37-4h8m-4-4v8m34-4h9m-4-4v8m34-4h9m-4-4v8" stroke="#405B61" stroke-width="2"/><circle cx="47" cy="150" r="6" fill="#D4866D" stroke="#805247" stroke-width=".8"/><circle cx="92" cy="150" r="6" fill="#D4866D" stroke="#805247" stroke-width=".8"/><circle cx="137" cy="150" r="6" fill="#D4866D" stroke="#805247" stroke-width=".8"/><circle cx="182" cy="150" r="6" fill="#D4866D" stroke="#805247" stroke-width=".8"/><circle cx="227" cy="150" r="6" fill="#D4866D" stroke="#805247" stroke-width=".8"/><path d="M257 145h13l-2 10h-9Z" fill="#E4BB68" stroke="#8A7042" stroke-width="1"/><path d="M260 145v-6q4-5 8 0v6m-11 12h18" stroke="#8A7042" stroke-width="1.5" fill="none"/><path d="M34 88l8 10m0-10-8 10" stroke="#E4BB68" stroke-width="2"/><path d="M266 89h12m-6-6v12" stroke="#D4866D" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M34 31h35m164 0h38" stroke="#D8E5DD" stroke-width="1.2"/><circle cx="95" cy="48" r="1.3" fill="#FFF"/><path d="M18 184h48m177 0h43" stroke="#DDE8DC" stroke-width="1.2"/></g><g id="layer-lighting"><ellipse cx="151" cy="134" rx="124" ry="39" fill="#FFF6E7" opacity=".04"/><path d="M28 109h242" stroke="#FFF" stroke-width="1"/></g>
+</svg>

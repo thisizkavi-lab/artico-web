@@ -1,0 +1,36 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: octopus (noun)
+  CONTEXTUAL_DEFINITION: An octopus swimming through water, with a rounded head and eight curling arms lined with suckers.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with unmistakable appendage count and texture
+  SYNONYM_GUARD: Show eight arms and rows of suction cups; avoid a jellyfish's single bell and trailing tentacles.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Rust-red octopus floats above a reef rock; mantle bulb at x=153,y=65, eyes facing forward, eight curling arms fan down and outward to x=69..235,y=150, pale suction cups line the arms.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:octopus" data-archetype="octopus-eight-sucker-lined-arms">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#C87868;--c-secondary:#774A49;--c-accent:#D5A04F;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="octopus-water" x2="0" y2="1"><stop stop-color="#A3CECD"/><stop offset="1" stop-color="#477D8F"/></linearGradient>
+  <linearGradient id="octopus-head" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D98A76"/><stop offset="1" stop-color="#A95155"/></linearGradient>
+  <filter id="octopus-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#octopus-water)"/><path d="M0 157Q76 149 151 158T304 153V192H0Z" fill="#4A7C85"/></g>
+ <g id="layer-context"><path d="M20 189l8-30m-8 16-10-11m10 4 11-18m212 39 7-29m-7 13-10-12m11 5 11-20m28 43v-27m0 14 9-12" fill="none" stroke="#538371" stroke-width="2" stroke-linecap="round"/><path d="M0 31q44-7 83 0m145-3q38-7 76 0" fill="none" stroke="#DAEEE7" stroke-width="1.4"/><path d="M18 129q16-5 31 0m207-9q17-6 32 0" fill="none" stroke="#C1E0DA" stroke-width="1.3" stroke-linecap="round"/><circle cx="63" cy="93" r="2" fill="#EAF8F1"/><circle cx="71" cy="84" r="1.2" fill="#EAF8F1"/><ellipse cx="151" cy="151" rx="78" ry="6" fill="#1A3C43" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#octopus-shadow)">
+  <path d="M144 107Q122 116 106 130Q93 139 80 130Q74 123 81 118Q91 117 98 123Q110 120 124 108L142 94Z" fill="#B85E5E" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M147 109Q131 128 119 143Q108 154 96 146Q91 139 98 134Q107 135 111 140Q122 136 130 118L142 101Z" fill="#C36A65" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M151 110Q146 132 141 150Q136 162 124 157Q117 152 122 146Q130 145 133 151Q139 143 137 122L141 104Z" fill="#CF7369" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M155 110Q159 132 163 150Q167 162 179 157Q186 152 181 146Q173 145 170 151Q164 143 168 122L164 104Z" fill="#C96A64" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M159 108Q176 126 190 141Q201 151 212 143Q217 136 210 132Q202 133 198 139Q188 134 177 116L163 100Z" fill="#B75B5C" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M162 105Q183 114 201 126Q214 134 224 124Q228 117 221 113Q213 115 209 120Q197 114 180 102L165 94Z" fill="#CA6E68" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M140 103Q123 105 106 111Q92 117 85 108Q82 101 89 98Q97 99 100 105Q113 101 130 94L145 89Z" fill="#D27A6F" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M163 101Q181 99 197 104Q212 108 220 99Q223 92 216 89Q208 91 205 97Q191 94 175 91L161 89Z" fill="#D27A6F" stroke="#78474A" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M120 88Q119 67 133 55Q149 43 168 55Q181 65 179 88L169 105Q151 113 132 103Z" fill="url(#octopus-head)" stroke="#78474A" stroke-width="1.6"/>
+  <ellipse cx="141" cy="85" rx="7" ry="9" fill="#F4E8D6"/><ellipse cx="161" cy="85" rx="7" ry="9" fill="#F4E8D6"/>
+  <circle cx="143" cy="86" r="2.3" fill="#1E2A3B"/><circle cx="159" cy="86" r="2.3" fill="#1E2A3B"/>
+  <path d="M146 96q5 3 10 0" fill="none" stroke="#7B4949" stroke-width="1.2" stroke-linecap="round"/>
+  <g fill="#F5D9CB"><circle cx="87" cy="108" r="1.7"/><circle cx="95" cy="117" r="1.6"/><circle cx="101" cy="138" r="1.6"/><circle cx="114" cy="146" r="1.6"/><circle cx="127" cy="153" r="1.5"/><circle cx="175" cy="153" r="1.5"/><circle cx="192" cy="142" r="1.6"/><circle cx="211" cy="126" r="1.6"/><circle cx="215" cy="97" r="1.6"/><circle cx="202" cy="105" r="1.5"/></g>
+ </g>
+ <g id="layer-details"><path d="M129 63q8-9 17-8m18 1q7 3 9 9" fill="none" stroke="#F2B5A3" stroke-width="1.6" opacity=".74" stroke-linecap="round"/><circle cx="105" cy="74" r="1.6" fill="#EAF7F0"/><circle cx="231" cy="79" r="1.5" fill="#EAF7F0"/><path d="M97 126q7 5 14 1m54-3q5 5 12 5" fill="none" stroke="#E7B4A4" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M130 62q8-10 16-8m22 6q4 3 5 7" fill="none" stroke="#FFF2E5" stroke-width="1.5" opacity=".63" stroke-linecap="round"/><ellipse cx="151" cy="78" rx="35" ry="27" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

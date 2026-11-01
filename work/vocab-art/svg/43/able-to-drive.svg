@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: able to drive
+  CONTEXTUAL_DEFINITION: Having the skill and ability to control a car safely.
+  PEDAGOGICAL_ART_DIRECTOR: Show a capable driver seated correctly with hands on the steering wheel and attention on the road.
+  PEDAGOGICAL_ARCHETYPE: 36 - Practical driving ability
+  SYNONYM_GUARD: Show the person controlling the vehicle, not just a parked car, a passenger, or a driving lesson sign.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Frame the car dashboard and broad windshield from inside; center the driver at x=150 with both hands on a steering wheel, eyes ahead, and clear lane markings receding through the windshield.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:able to drive" data-archetype="practical-driving-ability">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="drive-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF4F8"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <linearGradient id="drive-wheel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#263C70"/></linearGradient>
+    <radialGradient id="drive-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="drive-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M26 35 Q152 16 278 35 L267 115 Q152 91 37 115 Z" fill="url(#drive-glass)" stroke="#64748B" stroke-width="1.4"/><path d="M29 40 Q152 22 275 40" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M42 104 L124 56 L180 56 L262 104" fill="#DCEBDD" stroke="#8FAF8A" stroke-width="1"/><path d="M148 57 L131 101 M156 57 L173 101" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M151 65 V72 M151 81 V89 M151 97 V102" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><circle cx="74" cy="65" r="9" fill="#F2C14E" opacity=".8"/><path d="M46 119 Q152 96 258 119 L279 150 Q152 137 25 150 Z" fill="#526072" stroke="#1E2A3B" stroke-width="1.8"/><path d="M30 147 Q152 135 274 147" stroke="#FFFFFF" stroke-width="1.2"/><path d="M41 129 Q152 111 263 129" stroke="#8998A8" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#drive-shadow)"><path d="M105 113 Q107 83 120 76 L121 67 Q117 63 119 56 Q127 48 138 50 Q147 53 145 64 L143 71 Q154 76 156 110 L153 122 H109 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="132" cy="58" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M124 56 Q126 48 133 48 Q141 49 145 56 Q137 52 130 53 Z" fill="#3D342D"/><circle cx="129" cy="58" r=".9" fill="#1E2A3B"/><path d="M133 63 Q136 64 139 62" fill="none" stroke="#8B4D3A" stroke-width=".8" stroke-linecap="round"/><path d="M111 80 Q132 74 150 80" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="177" cy="108" r="24" fill="none" stroke="#1E2A3B" stroke-width="5"/><circle cx="177" cy="108" r="19" fill="none" stroke="url(#drive-wheel)" stroke-width="4"/><path d="M177 89 V108 L163 119 M177 108 L192 119" fill="none" stroke="#5479AC" stroke-width="3.2" stroke-linecap="round"/><path d="M112 103 L130 101 M148 103 L158 106" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/><path d="M130 101 L139 103 M158 106 L165 110" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/><path d="M22 150 Q152 137 282 150 L304 192 H0 Z" fill="#C88446" opacity=".48"/></g>
+  <g id="layer-details"><rect x="58" y="122" width="24" height="11" rx="3" fill="#8EB0DE" stroke="#1E2A3B" stroke-width=".8"/><path d="M62 127 H78" stroke="#FFFFFF" stroke-width="1"/><circle cx="218" cy="123" r="7" fill="#E7EEF5" stroke="#64748B" stroke-width=".9"/><path d="M218 119 V123 L222 126" fill="none" stroke="#5479AC" stroke-width="1" stroke-linecap="round"/><path d="M105 48 L112 44 M190 45 L197 49" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><circle cx="230" cy="52" r="2" fill="#A8D4A2"/><circle cx="93" cy="47" r="2" fill="#F2C14E"/><path d="M146 128 H160" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="78" rx="107" ry="69" fill="url(#drive-halo)" opacity=".13"/><path d="M27 36 Q152 18 277 36" fill="none" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

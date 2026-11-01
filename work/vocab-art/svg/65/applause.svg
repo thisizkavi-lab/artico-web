@@ -1,0 +1,47 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: applause
+ CONTEXTUAL_DEFINITION: The sound and action of spectators clapping after a performance.
+ PEDAGOGICAL_ARCHETYPE: seated audience clapping
+ SYNONYM_GUARD: Make clapping hands and seated spectators the focal cue; no standing ovation or solo performer portrait.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large paired hands clap in the foreground while a seated audience faces a performer who has just bowed onstage.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:applause" data-archetype="seated audience clapping">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M28 25H276V131H28Z" fill="#26384A"/><path d="M37 34H267V128H37Z" fill="#405663"/>
+  <path d="M52 43H252V116H52Z" fill="#F2E1C7"/>
+  <path d="M39 41H74V123H39Z M265 41H230V123H265Z" fill="#B85E5A"/>
+  <path d="M42 50Q56 57 72 49V121H42Z M262 50Q248 57 232 49V121H262Z" fill="#D17A6B"/>
+  <path d="M49 119H255V130H49Z" fill="#D6A64C"/><path d="M0 155H304" stroke="#E8DCC5" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M35 149H269" stroke="#26384A" stroke-width="3" fill="none"/>
+  <circle cx="43" cy="149" r="3" fill="#D29A78"/><circle cx="63" cy="149" r="3" fill="#D29A78"/><circle cx="83" cy="149" r="3" fill="#D29A78"/><circle cx="103" cy="149" r="3" fill="#D29A78"/><circle cx="201" cy="149" r="3" fill="#D29A78"/><circle cx="221" cy="149" r="3" fill="#D29A78"/><circle cx="241" cy="149" r="3" fill="#D29A78"/><circle cx="261" cy="149" r="3" fill="#D29A78"/>
+  <path d="M36 154h15m4 0h15m4 0h15m4 0h15m90 0h15m4 0h15m4 0h15m4 0h15" stroke="#405663" stroke-width="2" fill="none"/>
+  <path d="M71 113H108M196 113H233" stroke="#D6A64C" stroke-width="1.5" fill="none"/>
+  <path d="M54 125H250" stroke="#E8D6B5" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="76" r="7" fill="#D29A78"/><path d="M141 85Q151 79 161 85L166 112H136Z" fill="#597D8B"/>
+  <path d="M141 91L132 100m29-9 9 9" stroke="#D29A78" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M141 111L137 121m20-10 4 10" stroke="#26384A" stroke-width="2.4" fill="none"/>
+  <path d="M132 112q19 11 38 0" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <path d="M26 118Q18 115 20 108L31 90Q34 86 39 89L42 94L34 109L43 100Q48 98 50 102L46 112Q40 124 32 126Z" fill="#D29A78" stroke="#8F6958" stroke-width="1"/>
+  <path d="M278 118Q286 115 284 108L273 90Q270 86 265 89L262 94L270 109L261 100Q256 98 254 102L258 112Q264 124 272 126Z" fill="#D29A78" stroke="#8F6958" stroke-width="1"/>
+  <path d="M36 98L48 89m215 9-12-9" stroke="#F6D9B9" stroke-width="2" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M15 86q-8-7 0-14m7 10q-7-6 0-12m267 16q8-7 0-14m-7 10q7-6 0-12" stroke="#D6A64C" stroke-width="1.5" fill="none"/>
+  <path d="M83 39H221" stroke="#D6A64C" stroke-width="1" fill="none"/>
+  <circle cx="72" cy="32" r="2" fill="#E7C66B"/><circle cx="232" cy="32" r="2" fill="#E7C66B"/>
+  <path d="M116 122H186" stroke="#8F7357" stroke-width="1" fill="none"/>
+  <path d="M11 132H293" stroke="#E9DEC9" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="83" rx="95" ry="59" fill="#E7C66B" opacity=".1"/>
+  <path d="M103 30L126 100m100-70-30 70" stroke="#FFF1C7" stroke-width="1.2" opacity=".58" fill="none"/>
+  <path d="M54 120H250" stroke="#FFF7E4" stroke-width="1" opacity=".55" fill="none"/>
+ </g>
+</svg>

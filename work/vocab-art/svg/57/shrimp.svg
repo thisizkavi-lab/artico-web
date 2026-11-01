@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: shrimp (noun)
+  CONTEXTUAL_DEFINITION: A small live shrimp swimming underwater, with a curled segmented body, antennae, and many small legs.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero crustacean with segmented anatomy
+  SYNONYM_GUARD: Show a living animal with a curved transparent shell and antennae; no cocktail glass, lemon, or food tray.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Pink-orange shrimp faces right; curved body arches from tail fan x=87,y=125 to head x=207,y=91, visible abdominal bands, long thin antennae, small swimmer legs underneath, and black bead eye.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:shrimp" data-archetype="live-shrimp-curved-segmented-body-antennae">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#D98A78;--c-secondary:#875659;--c-accent:#E5B65A;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="shrimp-water" x2="0" y2="1"><stop stop-color="#A4CECD"/><stop offset="1" stop-color="#477E8D"/></linearGradient>
+  <linearGradient id="shrimp-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1B19A"/><stop offset="1" stop-color="#C66D70"/></linearGradient>
+  <filter id="shrimp-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#shrimp-water)"/><path d="M0 155Q77 147 152 156T304 151V192H0Z" fill="#4A7D85"/></g>
+ <g id="layer-context"><path d="M21 188l8-30m-8 15-11-12m11 4 11-18m225 41 7-31m-7 14-10-13m10 5 10-19" fill="none" stroke="#588775" stroke-width="2" stroke-linecap="round"/><path d="M0 33q42-6 82 0m143-3q40-6 79 0" fill="none" stroke="#D9ECE5" stroke-width="1.4"/><path d="M27 130q16-5 31 0m190-9q16-5 32 0" fill="none" stroke="#C1DFD9" stroke-width="1.3" stroke-linecap="round"/><circle cx="57" cy="85" r="2" fill="#EAF8F1"/><circle cx="65" cy="76" r="1.2" fill="#EAF8F1"/><ellipse cx="151" cy="148" rx="65" ry="5" fill="#1A3B42" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#shrimp-shadow)">
+  <path d="M120 102Q100 107 96 124L109 137L125 123Z" fill="#D98778" stroke="#8B5354" stroke-width="1.2"/>
+  <path d="M111 107Q121 89 145 88Q167 88 183 100Q195 108 205 101L216 94Q225 92 230 97Q224 107 211 112Q199 119 184 115Q167 107 154 111Q139 116 129 126Z" fill="url(#shrimp-shell)" stroke="#875356" stroke-width="1.5"/>
+  <path d="M129 93Q124 104 127 119m15-30q-5 13 0 25m14-24q-3 12 4 22m11-18q-1 9 7 16m9-11q2 6 8 9" fill="none" stroke="#A85D63" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M112 111Q103 105 98 96Q96 91 101 91Q108 99 118 101M116 108Q106 99 107 91Q112 87 118 100" fill="none" stroke="#9B5D60" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="220" cy="98" r="2" fill="#1E2A3B"/>
+  <path d="M220 96Q234 80 249 74M219 100Q239 92 259 91M219 103Q235 105 251 113" fill="none" stroke="#85535A" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M142 113l-7 17m16-17-1 19m12-18 6 16m8-16 10 13m-49-13-13 12" fill="none" stroke="#9D5F62" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M134 129l-7 7m22-7-1 8m18-7 6 8m10-13 8 7" fill="none" stroke="#E8C0A9" stroke-width="1" stroke-linecap="round"/>
+  <path d="M96 121L84 127L95 133Z" fill="#C96F70" stroke="#895257" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M115 91q10-7 20-5m30 4q8 2 14 6" fill="none" stroke="#F9D2B8" stroke-width="1.4" opacity=".78" stroke-linecap="round"/><circle cx="74" cy="115" r="1.7" fill="#EAF7F1"/><circle cx="264" cy="78" r="1.4" fill="#EAF7F1"/><circle cx="47" cy="70" r="1.1" fill="#EAF8F1" opacity=".7"/><circle cx="278" cy="129" r="1.3" fill="#EAF8F1" opacity=".65"/></g>
+ <g id="layer-lighting"><path d="M123 94q9-8 17-7m37 8q7 3 12 7" fill="none" stroke="#FFF2E6" stroke-width="1.5" opacity=".58" stroke-linecap="round"/><ellipse cx="159" cy="105" rx="58" ry="23" transform="rotate(-10 159 105)" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

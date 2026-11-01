@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: career path (noun)
+  CONTEXTUAL_DEFINITION: The sequence of jobs and professional stages someone follows during working life.
+  PEDAGOGICAL_ART_DIRECTOR: Make a visible progression through several distinct workplace roles, with one person traveling along a connected rising route.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / progression diagram
+  SYNONYM_GUARD: Show a sequence and direction of career stages, not one promotion or a literal hiking trail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A looping blue route rises from x=49,y=140 through three pale-blue round milestone platforms at x=89,y=125; x=151,y=94; x=216,y=59. Place one worker on the route mid-step and distinct briefcase, desk, and leader silhouettes at successive platforms; finish with a gold summit marker.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:career path" data-archetype="progression-diagram">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="path-route" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="path-platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <radialGradient id="path-goal"><stop stop-color="#FFF1B9" stop-opacity=".9"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="path-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="path-briefcase" d="M48 119 H75 Q79 119 79 123 V141 H44 V123 Q44 119 48 119 Z"/>
+    <clipPath id="path-case-clip"><use href="#path-briefcase"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="155" width="304" height="37" fill="#EEE7DA"/><path d="M0 155 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="113" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. A route through successive work settings -->
+  <g id="layer-context"><path d="M43 143 H88 V154 H43 Z M114 113 H159 V154 H114 Z M183 79 H228 V154 H183 Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.4"/><path d="M54 140 V129 H77 V140 M124 110 V99 H148 V110 M193 76 V65 H217 V76" fill="#EEF4FA" stroke="#64748B" stroke-width="1.3"/><path d="M232 154 V48 M253 154 V39 M274 154 V50" stroke="#CBD5E1" stroke-width="1.2"/><path d="M44 154 H278" stroke="#C88446" stroke-width="2"/></g>
+  <!-- 3. One route connects entry work to a senior role -->
+  <g id="layer-focal" filter="url(#path-shadow)"><path d="M53 143 C73 142 76 131 94 127 S119 117 127 105 S145 91 160 91 S183 82 190 70 S209 60 230 54" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M53 143 C73 142 76 131 94 127 S119 117 127 105 S145 91 160 91 S183 82 190 70 S209 60 230 54" fill="none" stroke="url(#path-route)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M47 140 Q52 133 58 141 L63 148 H45 Z" fill="url(#path-platform)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M88 124 Q94 117 100 124 L105 131 H84 Z" fill="url(#path-platform)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M153 88 Q160 80 166 88 L171 95 H149 Z" fill="url(#path-platform)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M223 51 L232 44 L239 52 L232 60 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><use href="#path-briefcase" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><g clip-path="url(#path-case-clip)"><path d="M42 127 Q61 116 81 128 V146 H42 Z" fill="#965D28"/><path d="M49 120 H69" stroke="#FCE29C" stroke-width="2"/></g><use href="#path-briefcase" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M55 118 V114 Q55 110 60 110 H66 Q71 110 71 118" fill="none" stroke="#1E2A3B" stroke-width="2.1"/><circle cx="143" cy="79" r="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M130 110 Q130 92 143 91 Q156 92 157 105 L154 113 H130 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M137 81 Q143 85 149 81" fill="none" stroke="#1E2A3B" stroke-width="1.4" stroke-linecap="round"/><path d="M140 105 L148 105 L147 114 L138 114 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.2"/></g>
+  <!-- 4. Milestones show changing responsibility along the journey -->
+  <g id="layer-details"><rect x="117" y="126" width="39" height="26" rx="3" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M122 132 H151 M122 138 H145" stroke="#94A3B8" stroke-width="1.4"/><rect x="188" y="91" width="37" height="25" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M194 98 H218 M194 104 H211" stroke="#7FB07A" stroke-width="1.5"/><circle cx="207" cy="120" r="8" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.4"/><path d="M201 119 Q207 113 213 119 L216 129 H198 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.4"/><path d="M207 112 V106 M203 109 L207 105 L211 109" fill="none" stroke="#4A72B2" stroke-width="1.7" stroke-linecap="round"/><path d="M83 125 L91 121 M118 108 L125 102 M177 80 L185 75" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 5. A rising career route is the visual focus -->
+  <g id="layer-lighting"><ellipse cx="231" cy="53" rx="27" ry="23" fill="url(#path-goal)"/><path d="M202 62 C213 57 219 55 228 54" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-dasharray="3 4"/><path d="M225 49 L233 53 L226 58 Z" fill="#4A72B2"/><path d="M47 147 Q53 150 58 147 M155 95 Q161 98 167 94" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/><circle cx="250" cy="33" r="3" fill="#F2C14E"/><circle cx="261" cy="47" r="2.3" fill="#8EB0DE"/></g>
+</svg>

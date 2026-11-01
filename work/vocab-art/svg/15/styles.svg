@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: styles (Noun)
+  CONTEXTUAL_DEFINITION: Different recognizable ways garments are designed and worn.
+  PEDAGOGICAL_ARCHETYPE: 7 — Clothing style comparison
+  SYNONYM_GUARD: Show distinct garment silhouettes and layering, not an abstract art style.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Three small dress forms on a studio rail.
+    - Context_Layer: Muted stands and hangers align the comparison.
+    - Focal_Layer: Casual, tailored, and sporty outfits differ in shape.
+    - Details_Layer: Broad seams and collars are large enough to read.
+    - Lighting_Layer: One warm arch links the varied outfits as styles.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:styles" data-archetype="clothing-comparison">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="167" rx="122" ry="16" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M44 43H260" stroke="#64748B" stroke-width="3"/><path d="M62 43V160M151 43V160M240 43V160" stroke="#CBD5E1" stroke-width="2"/><path d="M58 160H85M138 160H165M227 160H254" stroke="#64748B" stroke-width="2.2"/><path d="M52 53Q152 9 252 53" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="4 4" opacity=".6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M58 68L79 59L99 68L111 91L102 100L97 89V142H62V89L57 100L48 91Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M62 78L79 92L97 78M79 92V142" fill="none" stroke="#9CB5D5" stroke-width="1.6"/><path d="M139 67L151 59L164 67L177 95L167 101L163 84L160 144H138L139 84L134 101L124 95Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M139 68L151 91L163 68M151 91V143M145 106H157M145 119H157" fill="none" stroke="#F8DDCC" stroke-width="1.5"/><path d="M221 72Q220 60 238 54Q256 60 255 72L269 93L260 100L254 87V141H224V87L219 100L210 93Z" fill="#7D9678" stroke="#1E2A3B" stroke-width="2.3"/><path d="M227 78L238 88L250 78M238 88V141M229 117Q238 109 249 117L249 130H228Z" fill="none" stroke="#B9C8B0" stroke-width="1.6"/><path d="M58 68L79 59L99 68L111 91L102 100L97 89V142H62V89L57 100L48 91Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M73 47Q79 41 85 47M145 47Q151 41 157 47M232 47Q238 41 244 47" fill="none" stroke="#64748B" stroke-width="1.5"/><path d="M65 149H94M140 151H164M226 148H252" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M49 51Q151 5 255 51" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".48"/></g>
+</svg>

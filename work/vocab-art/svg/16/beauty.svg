@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: beauty (Noun)
+  CONTEXTUAL_DEFINITION: A pleasing appearance, shown through a calm, cared-for face.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust / reflective portrait
+  SYNONYM_GUARD: Communicate beauty through gentle light and an admired reflection, not a product.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm studio paper.
+    - Context_Layer: Oval dressing mirror.
+    - Focal_Layer: Peaceful face looking at its softly lit reflection.
+    - Details_Layer: Tidy hair, relaxed expression, subtle highlights.
+    - Lighting_Layer: Warm radiating halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:beauty" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="88" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M42 146V76Q42 25 93 25H211Q262 25 262 76V146Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="3"/><path d="M54 140V77Q54 38 94 38H210Q250 38 250 77V140Z" fill="#F7F9FB" stroke="#AAB5C3" stroke-width="1.8"/>
+  <ellipse cx="151" cy="89" rx="83" ry="72" fill="#FEF3C7" opacity=".56"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M99 162Q91 133 96 95Q99 53 151 50Q204 53 207 95Q211 136 201 162L185 171H115Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M95 94Q95 50 147 45Q193 42 210 78Q194 64 176 63Q149 81 102 78Z" fill="#3B4250" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M120 103Q130 98 140 103M164 103Q174 98 184 103" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><path d="M122 110Q130 114 138 110M166 110Q174 114 182 110" fill="none" stroke="#D9857F" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M152 107L147 129Q152 133 157 129" fill="none" stroke="#A86F45" stroke-width="1.8"/><path d="M137 145Q152 153 168 145" fill="none" stroke="#A95059" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M76 58L83 48M224 58L217 48M70 91H61M232 91H241" stroke="#D9A441" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <circle cx="152" cy="91" r="66" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".42"/>
+</svg>

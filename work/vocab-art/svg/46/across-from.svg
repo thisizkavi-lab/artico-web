@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: across from
+  CONTEXTUAL_DEFINITION: Located on the opposite side of a street directly facing a reference place.
+  PEDAGOGICAL_ART_DIRECTOR: Show two distinct buildings directly aligned across a road, with a clear transverse dotted connector between their entrances.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: The buildings must face each other across a gap; avoid adjacent or diagonal placement.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Top-down street runs horizontally at y=88..126; blue and gold storefronts sit at x=47..105 and x=197..255, aligned on a straight vertical centerline at x=151.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:across from" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="across-block" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6EFDC"/><stop offset="1" stop-color="#C8DDBE"/></linearGradient>
+    <linearGradient id="across-road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#68788A"/><stop offset="1" stop-color="#45576C"/></linearGradient>
+    <radialGradient id="across-halo"><stop stop-color="#F2C14E" stop-opacity=".42"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="across-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 0H304V192H0Z" fill="url(#across-block)"/><path d="M0 84H304V130H0Z" fill="url(#across-road)"/><path d="M0 78H304M0 136H304" stroke="#F4F0E6" stroke-width="7"/><path d="M0 107H304" stroke="#F8F5EC" stroke-width="1.8" stroke-dasharray="10 9"/></g>
+  <g id="layer-context"><path d="M23 23H112V75H23Z" fill="#D6BEA2" stroke="#1E2A3B" stroke-width="2.1"/><path d="M28 30H107V66H28Z" fill="#E8D5BC" stroke="#9A8066" stroke-width="1.3"/><path d="M197 23H286V75H197Z" fill="#B5C9D7" stroke="#1E2A3B" stroke-width="2.1"/><path d="M202 30H281V66H202Z" fill="#DCE8EF" stroke="#718799" stroke-width="1.3"/><path d="M34 74V67H54V74M71 74V67H92V74M208 74V67H229V74M246 74V67H266V74" fill="#FAF8F3" stroke="#536274" stroke-width="1.4"/><path d="M18 13V75M286 13V75M18 145V183M286 145V183" stroke="#A7B7A5" stroke-width="1.2"/><circle cx="21" cy="153" r="11" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="283" cy="159" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><path d="M22 76H112M197 76H286" stroke="#B7A991" stroke-width="4"/></g>
+  <g id="layer-focal" filter="url(#across-shadow)"><ellipse cx="152" cy="106" rx="53" ry="55" fill="url(#across-halo)"/><path d="M67 74L85 52L102 74Z" fill="#E7A859" stroke="#1E2A3B" stroke-width="1.8"/><path d="M214 74L231 52L249 74Z" fill="#5D83B3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M153 73V143" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/><path d="M153 73V143" stroke="#4A72B2" stroke-width="7" stroke-linecap="round"/><path d="M141 132L153 151L165 132Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="153" cy="72" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="153" cy="150" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M112 75H197" stroke="#FFFFFF" stroke-width="2.6" stroke-dasharray="5 5"/><path d="M115 72L108 75L115 78M194 72L201 75L194 78" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 41H52M61 41H74M213 41H226M235 41H248" stroke="#FFFFFF" stroke-width="1.8" opacity=".85"/><path d="M33 173H104M203 173H273" stroke="#A8B5A2" stroke-width="1.3"/><circle cx="119" cy="107" r="2" fill="#FFFFFF"/><circle cx="186" cy="107" r="2" fill="#FFFFFF"/></g>
+  <g id="layer-lighting"><path d="M31 28H101M205 28H275" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><ellipse cx="153" cy="107" rx="57" ry="59" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

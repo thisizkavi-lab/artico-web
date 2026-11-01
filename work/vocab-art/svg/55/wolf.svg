@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: wolf (noun)
+  CONTEXTUAL_DEFINITION: A lean wild canine with pointed ears, a long muzzle, and a bushy tail, moving through a northern forest.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining wild canine profile
+  SYNONYM_GUARD: Use a narrow long muzzle, upright ears, thick coat, and plain bushy tail; no collar or domestic-dog accessories.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Cool forest floor; wolf walks right in side profile, body x=103..187 y=91..127, head and long muzzle x=183..244, bushy tail angled down to x=70.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:wolf" data-archetype="wild-long-muzzle-wolf">
+  <defs>
+    <style>:root{--c-bg-1:#E8EFF0;--c-bg-2:#FAF7ED;--c-surface:#CEC8B3;--c-primary:#818B8C;--c-secondary:#424B50;--c-accent:#7A916C;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="wolf-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E8EFF0"/><stop offset="1" stop-color="#F6F0E2"/></linearGradient>
+    <linearGradient id="wolf-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A6AFB0"/><stop offset="1" stop-color="#596368"/></linearGradient>
+    <filter id="wolf-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wolf-sky)"/><path d="M0 129 Q63 120 126 129 T242 127 Q280 120 304 128 V192 H0Z" fill="#DDE1D3"/><path d="M0 153 Q69 145 145 153 T304 151 V192 H0Z" fill="#CFC6B0"/><ellipse cx="151" cy="164" rx="104" ry="7" fill="#A69F8E" opacity=".42"/></g>
+  <g id="layer-context"><path d="M38 143 V66 M38 95 L23 78 M38 110 L54 88" fill="none" stroke="#66523E" stroke-width="4" stroke-linecap="round"/><path d="M21 80 Q25 64 36 70 Q44 57 53 69 Q64 70 66 85 Q52 79 43 92 Q31 81 21 80Z" fill="#6F886C"/><path d="M267 144 V72 M267 97 L252 79 M267 110 L283 90" fill="none" stroke="#66523E" stroke-width="4" stroke-linecap="round"/><path d="M249 82 Q253 66 265 72 Q273 59 282 71 Q294 72 296 87 Q282 81 273 94 Q261 83 249 82Z" fill="#748D70"/><path d="M63 146 l-4-8 m4 8 6-6 M237 147 l4-9" fill="none" stroke="#7F906F" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#wolf-shadow)"><path d="M111 105 Q94 95 80 99 Q70 104 68 112 Q76 122 91 119 L113 127Z" fill="#626C70" stroke="#1E2A3B" stroke-width="1.8"/><path d="M80 101 Q73 105 72 112 Q76 118 85 117 Q77 110 85 105Z" fill="#D0D1CC"/><ellipse cx="148" cy="108" rx="44" ry="20" fill="url(#wolf-fur)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M176 99 Q191 84 208 87 L222 97 L218 111 L202 120 L183 116Z" fill="#8B9697" stroke="#1E2A3B" stroke-width="1.8"/><path d="M187 89 L182 71 L198 84 M205 87 L215 70 L219 96" fill="#727D80" stroke="#1E2A3B" stroke-width="1.7" stroke-linejoin="round"/><path d="M216 97 L242 102 L229 109 L213 108Z" fill="#858D8D" stroke="#1E2A3B" stroke-width="1.5"/><path d="M239 102 l6 2-5 3" fill="#292C2D"/><circle cx="211" cy="94" r="1.7" fill="#1E2A3B"/><path d="M113 124 L109 147 Q110 153 118 153 L124 149 L119 145 L123 124 M141 127 L141 150 Q143 155 151 153 L156 149 L150 145 L151 126 M170 125 L176 147 Q179 152 187 149 L191 144 L185 141 L180 121" fill="none" stroke="#465157" stroke-width="6.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M134 91 Q148 86 161 91 M189 94 Q197 89 204 92" fill="none" stroke="#D6DEDC" stroke-width="1.4"/><path d="M202 110 Q210 116 218 111" fill="none" stroke="#E1E0D8" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M112 101 Q127 90 142 92 M149 91 Q163 92 171 99 M183 99 Q193 90 201 91" fill="none" stroke="#D8E0DD" stroke-width="1.5"/><path d="M115 146 l-1 5 m10-5 1 5 m18-3 1 5 m29-4 2 5" fill="none" stroke="#353E43" stroke-width="1.2" stroke-linecap="round"/><path d="M63 146 l-4-8 m4 8 6-6 M238 147 l4-9" fill="none" stroke="#7E906E" stroke-width="1.5" stroke-linecap="round"/><path d="M214 100 Q221 103 228 102 M187 82 l-1-6 m18 8 3-5" fill="none" stroke="#C8D0CF" stroke-width="1.2"/><circle cx="184" cy="112" r="1.4" fill="#D8E0DD"/></g>
+  <g id="layer-lighting"><path d="M112 100 Q127 89 141 91 M150 90 Q162 91 170 98 M186 97 Q195 88 202 90 M73 108 Q78 101 86 101" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".43" stroke-linecap="round"/><ellipse cx="148" cy="99" rx="24" ry="8" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

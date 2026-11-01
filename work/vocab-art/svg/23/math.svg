@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: math (Noun)
+  CONTEXTUAL_DEFINITION: The school subject involving numbers, quantities, shapes, and calculations.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A student arranges geometric solids and measures angles with a compass and ruler, making math recognizable without written numerals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Mathematics classroom with pale window and board.
+    - Context_Layer: Muted desk and classroom geometry poster without symbols.
+    - Focal_Layer: Open geometry workbook with triangle, circle, and cube.
+    - Details_Layer: Compass, ruler, and abacus beads.
+    - Lighting_Layer: Crisp white highlights on geometric edges.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:math" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="math-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="math-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#math-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 29H94V82H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 30V81M21 55H93" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="219" y="37" width="61" height="64" rx="3" fill="#F5F0E5" stroke="#64748B" stroke-width="1.4"/><circle cx="248" cy="68" r="19" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M229 68H267M248 49V87M235 55L261 81M261 55L235 81" stroke="#D9857F" stroke-width="1.4"/><path d="M30 147H276" stroke="#8D765A" stroke-width="3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#math-shadow)"><path d="M62 125L129 92L173 125L128 146Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="2"/><path d="M62 125L62 136L128 157L128 146Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.2"/><path d="M128 146L173 125L173 137L128 157Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.2"/><path d="M81 125L123 104L152 124L127 137Z" fill="none" stroke="#D9857F" stroke-width="2"/><path d="M186 115L202 89L219 115Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.5"/><circle cx="202" cy="82" r="22" fill="#DCECFB" stroke="#5479AC" stroke-width="1.8"/><path d="M182 84Q202 78 222 84" fill="none" stroke="#D9857F" stroke-width="1.6"/><path d="M109 68L131 101" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M109 68L125 107" stroke="#D9857F" stroke-width="2" stroke-linecap="round"/><path d="M103 64L112 61" stroke="#315782" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M43 91H91" stroke="#8D765A" stroke-width="2"/><circle cx="51" cy="91" r="5" fill="#D9857F" stroke="#A95059" stroke-width="1"/><circle cx="67" cy="91" r="5" fill="#5479AC" stroke="#315782" stroke-width="1"/><circle cx="83" cy="91" r="5" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M183 124H219" stroke="#A98A64" stroke-width="2"/><path d="M185 124V131M193 124V131M201 124V131M209 124V131M217 124V131" stroke="#8D765A" stroke-width="1.2"/><path d="M87 110L92 108M98 103L103 100M109 97L114 94" stroke="#FFFFFF" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="100" rx="121" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M61 125L129 92L173 125" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".85"/></g>
+</svg>

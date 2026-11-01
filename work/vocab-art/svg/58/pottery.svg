@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: pottery (noun)
+  CONTEXTUAL_DEFINITION: Handmade fired clay vessels produced as a creative craft.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero objects with craft-studio context
+  SYNONYM_GUARD: Show completed ceramic vessels on a studio shelf; do not show a person actively throwing a pot, which belongs to do pottery.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A pottery studio shelf displays a broad warm terracotta vase, a blue-green bowl, and a small handmade cup with visible glaze bands and clay texture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:pottery" data-archetype="finished-handmade-ceramics-on-studio-shelf">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="pottery-room" x2="0" y2="1"><stop stop-color="#F0F2EC"/><stop offset="1" stop-color="#E2DED2"/></linearGradient>
+  <linearGradient id="pottery-clay" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D98E70"/><stop offset="1" stop-color="#A95F52"/></linearGradient>
+  <linearGradient id="pottery-glaze" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#89AAA1"/><stop offset="1" stop-color="#557875"/></linearGradient>
+  <filter id="pottery-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pottery-room)"/><path d="M0 160H304V192H0Z" fill="#D4C3A8"/><path d="M0 160H304" stroke="#9B7B58" stroke-width="1.5" fill="none"/><rect x="18" y="22" width="56" height="46" rx="3" fill="#C4D8D1" stroke="#6C8279" stroke-width="2"/><path d="M46 23V67M20 45H72" stroke="#F7F1E4" stroke-width="2.5" fill="none"/></g>
+ <g id="layer-context"><path d="M27 160V83H277V160" fill="#87725A" stroke="#645440" stroke-width="1.5"/><path d="M34 93H270M34 130H270" stroke="#C49A69" stroke-width="4" fill="none"/><path d="M40 94v35m44-35v35m49-35v35m52-35v35m46-35v35" stroke="#A4835F" stroke-width="1" fill="none"/><ellipse cx="151" cy="160" rx="110" ry="5" fill="#64513D" opacity=".14"/><path d="M242 79q6-12 12 0v12h-12Z" fill="#819F8C"/><path d="M244 79q4-14 9 0" fill="none" stroke="#526C5A" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#pottery-shadow)">
+  <path d="M86 128Q78 114 87 97Q98 88 103 72H133Q138 89 149 98Q158 115 148 128Q135 140 117 140Q98 139 86 128Z" fill="url(#pottery-clay)" stroke="#704B43" stroke-width="1.5"/><ellipse cx="118" cy="72" rx="15" ry="5" fill="#754D43"/><ellipse cx="118" cy="72" rx="11" ry="3" fill="#E3B68A"/><path d="M89 111q28 9 58 0m-53 13q25 9 49 0" fill="none" stroke="#F0C8A3" stroke-width="2" opacity=".8"/><path d="M99 94q18 6 38 0" fill="none" stroke="#5E8178" stroke-width="3"/>
+  <path d="M162 128Q155 113 166 104Q175 96 176 87H196Q197 99 208 104Q217 115 207 129Q194 138 183 137Q170 136 162 128Z" fill="url(#pottery-glaze)" stroke="#405D5A" stroke-width="1.4"/><ellipse cx="186" cy="87" rx="10" ry="4" fill="#425D5B"/><ellipse cx="186" cy="87" rx="7" ry="2" fill="#D4D7C5"/><path d="M164 117q21 7 42 0" fill="none" stroke="#D7E1D3" stroke-width="1.4"/>
+  <path d="M222 141Q217 133 222 125Q228 120 228 115H246Q246 121 252 125Q256 134 251 141Q243 146 235 146Q227 145 222 141Z" fill="#D9B77A" stroke="#80684E" stroke-width="1.2"/><ellipse cx="237" cy="115" rx="9" ry="3.3" fill="#876D4E"/><ellipse cx="237" cy="115" rx="6" ry="1.8" fill="#F1E2C2"/><path d="M247 122q17-1 14 10q-2 7-11 5" fill="none" stroke="#80684E" stroke-width="2.3"/>
+  <path d="M45 147Q49 138 61 139Q72 137 78 147Q75 154 62 155Q49 154 45 147Z" fill="#A96C5A" stroke="#704B43" stroke-width="1.2"/><path d="M49 146q12 4 25 0" fill="none" stroke="#DDA589" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details"><path d="M100 100q18 5 36 0m-34 24q15 5 29 1m37-18q11 4 20 0m29 27q10 3 19 0" stroke="#F6D8B9" stroke-width="1.1" fill="none" stroke-linecap="round"/><circle cx="58" cy="53" r="1.4" fill="#FFF6E7"/><circle cx="66" cy="45" r="1" fill="#FFF6E7"/><path d="M35 97h230m-230 37h230" stroke="#D8BA91" stroke-width="1" fill="none"/><circle cx="71" cy="84" r="1.3" fill="#E4BB68"/><circle cx="261" cy="83" r="1" fill="#E4BB68"/></g>
+ <g id="layer-lighting"><ellipse cx="168" cy="109" rx="81" ry="50" fill="#F1D184" opacity=".1"/><path d="M99 91q17 7 31 2m44 13q9 4 18 1" stroke="#FFF8E9" stroke-width="1.5" fill="none" opacity=".7" stroke-linecap="round"/></g>
+</svg>

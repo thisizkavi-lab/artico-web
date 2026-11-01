@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: playpen (Noun)
+  CONTEXTUAL_DEFINITION: A portable enclosed area where a baby can play safely.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A baby sits with toys inside a low, freestanding bounded play space, distinguishing it from a sleeping crib.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Safe padded playroom floor.
+    - Context_Layer: Soft rug and a few toys.
+    - Focal_Layer: Low playpen with mesh panels and baby sitting inside.
+    - Details_Layer: Corner posts, soft rail, and clear enclosure.
+    - Lighting_Layer: Gentle warm ring around the play space.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:playpen" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="playpen-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="playpen-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#playpen-bg)"/><path d="M0 151Q78 144 152 151T304 148V192H0Z" fill="#DCEAD6"/><path d="M28 49H91V112H28Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.8"/><path d="M59 50V111M29 80H90" stroke="#FFFFFF" stroke-width="2"/><path d="M24 161Q79 151 152 160T280 157" fill="none" stroke="#829A83" stroke-width="6" opacity=".5"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="171" rx="112" ry="7" fill="#C3DAB9"/><path d="M67 142L82 134L97 142L82 150Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="208" cy="143" r="9" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M205 134V126H211V134" fill="#829A83" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#playpen-shadow)"><path d="M44 104L150 80L261 103V156L151 177L44 153Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.7"/><path d="M44 104L150 127L261 103M44 153L150 177L261 156M150 80V127M150 127V177" fill="none" stroke="#5479AC" stroke-width="2.5"/><path d="M54 107V153M66 110V158M78 113V161M90 116V164M102 119V166M114 122V169M126 124V172M174 122V172M186 119V169M198 116V166M210 113V163M222 110V160M234 107V157M246 104V154" stroke="#829A83" stroke-width="1.8" opacity=".85"/><path d="M72 103L150 120L232 103V151L151 168L72 150Z" fill="#DCECFB" opacity=".7"/><circle cx="152" cy="113" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M134 113Q136 95 152 95Q169 96 170 114L165 118Q161 103 151 104Q143 104 138 121Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M143 114Q146 117 149 114M155 114Q158 117 161 114M144 123Q152 127 160 123" fill="none" stroke="#1E2A3B" stroke-width="1.2" stroke-linecap="round"/><path d="M125 151Q127 132 139 127Q151 123 165 129L170 152Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M102 67Q151 54 201 67" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="115" cy="100" r="2.4" fill="#D9A441"/><circle cx="190" cy="103" r="2.4" fill="#D9857F"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="126" rx="138" ry="62" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/><path d="M51 39Q151 18 253 39" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

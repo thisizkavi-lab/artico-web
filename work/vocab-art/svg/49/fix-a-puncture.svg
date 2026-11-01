@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: fix a puncture (Verb Phrase)
+  CONTEXTUAL_DEFINITION: Patch a hole in a bicycle inner tube and repair the tire so it can hold air again.
+  PEDAGOGICAL_ART_DIRECTOR: Show hands pressing a small patch onto the exposed inner tube beside a removed wheel.
+  PEDAGOGICAL_ARCHETYPE: 4 - Agent-to-object action
+  SYNONYM_GUARD: The action repairs a bicycle tire puncture; it is not simply pumping air or replacing a whole wheel.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Inner tube lifted from a tire; two hands press a bright patch over a marked pinhole; patch kit open nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:fix a puncture" data-archetype="bicycle-tube-repair">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="fp-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="fp-rubber" x2="1" y2="1"><stop stop-color="#4D5B58"/><stop offset="1" stop-color="#27353A"/></linearGradient><linearGradient id="fp-patch" x2="0" y2="1"><stop stop-color="#EDB563"/><stop offset="1" stop-color="#C66C42"/></linearGradient><filter id="fp-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fp-sky)"/><path d="M0 123Q84 106 158 122T304 118V192H0Z" fill="#A9B994"/><path d="M0 155H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M20 121L38 76L56 121ZM252 119L270 68L288 119Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="150" cy="158" rx="95" ry="5" fill="#34483D" opacity=".15"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fp-shadow)">
+  <circle cx="220" cy="113" r="42" fill="none" stroke="url(#fp-rubber)" stroke-width="8"/><circle cx="220" cy="113" r="33" fill="none" stroke="#B6C4BB" stroke-width="1.5"/><circle cx="220" cy="113" r="2.4" fill="#536E70"/>
+  <path d="M194 82Q164 70 140 88Q116 107 137 131Q158 151 184 137Q205 125 194 103Q186 87 169 90Q151 92 151 109Q152 122 165 123Q177 123 177 112" fill="none" stroke="#344A50" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M174 104Q181 99 188 104L186 113Q180 117 174 112Z" fill="url(#fp-patch)" stroke="#9B5838" stroke-width="1.2"/><circle cx="181" cy="108" r="1.2" fill="#FFF8E7"/><path d="M172 102l-3-3" fill="none" stroke="#D7834B" stroke-width="1.2"/>
+  <path d="M109 80q8-7 15 0l11 12-7 7-19-12Z" fill="#D39A72" stroke="#8D654B" stroke-width="1"/><path d="M135 91l19 11 14 2" fill="none" stroke="#D39A72" stroke-width="5" stroke-linecap="round"/><path d="M194 77q8-6 14 0l8 11-8 7-14-10Z" fill="#D39A72" stroke="#8D654B" stroke-width="1"/><path d="M198 92l-7 12-10 5" fill="none" stroke="#D39A72" stroke-width="5" stroke-linecap="round"/>
+  <rect x="69" y="119" width="33" height="18" rx="3" fill="#4F7F9D" stroke="#344A50" stroke-width="1.3"/><path d="M74 124h23m-23 4h17m-17 4h20" fill="none" stroke="#D9E6E3" stroke-width="1.1"/><circle cx="85" cy="116" r="4" fill="url(#fp-patch)" stroke="#9B5838" stroke-width="1"/><path d="M65 139h41" fill="none" stroke="#344A50" stroke-width="2.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M182 82Q157 76 143 90M140 128Q155 143 176 135M193 107l4 2m17-35 7 3m-94 7 7 3" fill="none" stroke="#E7F0E7" stroke-width="1.3"/><path d="M177 107l3 2m-7-10 5 1" fill="none" stroke="#FFF1BC" stroke-width="1.2"/><circle cx="181" cy="108" r="1.4" fill="#FFE3A1"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M182 83Q157 77 144 91M141 128Q155 141 175 135" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".5"/><path d="M175 104q6-4 12 0" fill="none" stroke="#FFE8B1" stroke-width="1.2"/><circle cx="85" cy="116" r="1.2" fill="#FFF8E7"/></g>
+</svg>

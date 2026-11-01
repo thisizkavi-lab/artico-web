@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: corner
+  CONTEXTUAL_DEFINITION: The place where two streets meet at a right angle, including the curb at their junction.
+  PEDAGOGICAL_ART_DIRECTOR: Show a top-down L-shaped sidewalk edge with a rounded curb wrapping the street corner; place a gold marker precisely at the bend.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Focus on the street-corner point where two routes meet, not a room corner or the whole building located on it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Streets meet in an L at (156,101); vertical road x=143..208, horizontal road y=98..158; a small curb radius and amber ring identify the northwest corner point.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:corner" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="corner-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7EEDC"/><stop offset="1" stop-color="#C9DBC3"/></linearGradient>
+    <linearGradient id="corner-asphalt" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#66778A"/><stop offset="1" stop-color="#45576C"/></linearGradient>
+    <radialGradient id="streetcorner-halo"><stop stop-color="#F2C14E" stop-opacity=".58"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="streetcorner-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#corner-paper)"/><path d="M0 97H304V164H0Z" fill="url(#corner-asphalt)"/><path d="M143 0H210V192H143Z" fill="url(#corner-asphalt)"/><path d="M0 91H304M0 170H304M137 0V192M216 0V192" stroke="#FAF8F3" stroke-width="5"/><path d="M0 131H304M176 0V192" stroke="#F8F5EC" stroke-width="1.5" stroke-dasharray="9 9" opacity=".65"/></g>
+  <g id="layer-context"><path d="M19 20H125V76H19Z" fill="#D5B794" stroke="#776656" stroke-width="1.7"/><path d="M28 30H116V66H28Z" fill="#E9D8C3" stroke="#A38970" stroke-width="1.2"/><rect x="224" y="20" width="60" height="55" rx="4" fill="#B5C9D4" stroke="#70828A" stroke-width="1.6"/><circle cx="263" cy="42" r="10" fill="#F3F5EB" stroke="#6C7E86" stroke-width="1.2"/><circle cx="53" cy="187" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="264" cy="186" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#streetcorner-shadow)"><path d="M125 20V76H143V97H19V77H123V20Z" fill="#EAE5DB" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M131 24V78Q131 91 144 91H287" fill="none" stroke="#AFA797" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="143" cy="92" rx="45" ry="38" fill="url(#streetcorner-halo)"/><path d="M132 80Q143 80 154 91" fill="none" stroke="#4A72B2" stroke-width="5" stroke-linecap="round"/><circle cx="143" cy="91" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M131 76H142V91" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><path d="M91 88H121M159 104H190" stroke="#C8D5D5" stroke-width="1.4" stroke-dasharray="3 5"/><path d="M95 75L124 75L117 69M124 75L117 81" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M123 69L132 76M147 94L154 101" stroke="#FFFFFF" stroke-width="1.6"/><circle cx="143" cy="91" r="16" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".75"/></g>
+  <g id="layer-lighting"><path d="M25 25H117M229 26H278" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><path d="M129 24V71Q129 93 151 93" fill="none" stroke="#F9F7F1" stroke-width="1.2" opacity=".8"/><ellipse cx="143" cy="91" rx="50" ry="43" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".55"/></g>
+</svg>

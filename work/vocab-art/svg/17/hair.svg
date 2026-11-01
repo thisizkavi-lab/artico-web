@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: hair (Noun)
+  CONTEXTUAL_DEFINITION: The strands growing from the scalp, shown as a natural head of hair.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Show hair clearly on the head with one loose strand to clarify the material.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Shoulders and neck.
+    - Focal_Layer: Natural dark hair framing a head.
+    - Details_Layer: Separate loose strand and subtle locks.
+    - Lighting_Layer: Soft highlight along hair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="91" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="91" rx="104" ry="72" fill="#FEF3C7" opacity=".38"/><path d="M85 166Q89 132 120 124H184Q215 132 219 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M105 159Q94 127 96 89Q98 42 151 37Q206 42 208 89Q210 127 199 159L183 167H119Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M94 98Q89 45 145 34Q194 32 211 74L205 110Q193 84 176 70Q149 87 101 80Z" fill="#554C48" stroke="#1E2A3B" stroke-width="2.6"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M120 100Q130 95 139 100M163 100Q173 95 182 100" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 107Q130 110 137 107M165 107Q173 110 180 107" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M151 103L146 122L154 124M137 140Q152 147 168 139" fill="none" stroke="#A86F45" stroke-width="1.8"/>
+  <path d="M221 44Q234 60 229 80Q227 92 235 101" fill="none" stroke="#805333" stroke-width="4" stroke-linecap="round"/><path d="M219 45Q231 62 226 80" fill="none" stroke="#D6B698" stroke-width="1.2"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M219 39Q245 42 248 66" fill="none" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="4 4"/>
+</svg>

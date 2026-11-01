@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: professional
+  CONTEXTUAL_DEFINITION: Skilled in a job and behaving with appropriate competence and care.
+  PEDAGOGICAL_ART_DIRECTOR: Show an experienced worker checking and presenting a finished piece of job-specific work.
+  PEDAGOGICAL_ARCHETYPE: 23 - Skilled work conduct
+  SYNONYM_GUARD: Depict competent work practice and quality standards, not only polite meeting manners or a list of personal attributes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a skilled building designer or engineer at x=96..151 reviewing a finished work plan on a table, with a hard hat and blueprint as role-specific tools. Include a green quality seal near the plan.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:professional" data-archetype="skilled-work-conduct">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="professional-plan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="professional-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="professional-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="professional-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M40 135 H264 V145 H40 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><rect x="172" y="60" width="73" height="68" rx="2" fill="url(#professional-plan)" stroke="#5479AC" stroke-width="1.1"/><path d="M181 119 V76 H207 V119 M207 119 V87 H236 V119 M181 87 H236 M193 76 V119 M220 87 V119" fill="none" stroke="#8EB0DE" stroke-width="1.1"/><path d="M177 111 H240" stroke="#547A56" stroke-width="1.2"/><path d="M47 116 H91 V128 H47 Z" fill="#E9BB79" stroke="#965D28" stroke-width=".9"/><path d="M53 112 H85 V116 H53 Z" fill="#F7E8BF" stroke="#965D28" stroke-width=".8"/><path d="M58 124 H80" stroke="#C88446" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#professional-shadow)"><path d="M91 126 Q93 101 106 94 L107 84 Q103 80 105 72 Q113 64 124 67 Q133 70 131 81 L129 88 Q142 94 144 123 L141 135 H95 Z" fill="url(#professional-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="118" cy="76" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M109 74 Q111 66 119 66 Q127 67 131 74 Q123 70 116 71 Z" fill="#3D342D"/><path d="M99 100 Q118 94 136 100" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M97 45 Q98 35 118 35 Q138 35 139 45 L135 54 H101 Z" fill="#F2C14E" stroke="#C88446" stroke-width="1.2"/><path d="M104 45 Q118 51 132 45" fill="none" stroke="#C88446" stroke-width="1.1"/><path d="M130 103 L157 90 M135 108 L170 98" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M157 90 L171 84" stroke="#D89A6C" stroke-width="3.4" stroke-linecap="round"/><path d="M223 48 L229 54 L240 40" fill="none" stroke="#547A56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><circle cx="153" cy="56" r="2" fill="#8EB0DE"/><circle cx="160" cy="69" r="2" fill="#A8D4A2"/><path d="M180 67 H239" stroke="#FFFFFF" stroke-width=".8"/><path d="M53 108 H85" stroke="#FFFFFF" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="81" rx="101" ry="66" fill="url(#professional-halo)" opacity=".15"/><path d="M173 62 H244" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

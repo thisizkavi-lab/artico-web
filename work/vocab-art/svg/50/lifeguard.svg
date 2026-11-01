@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: lifeguard (Noun)
+  CONTEXTUAL_DEFINITION: A trained beach rescuer who watches swimmers and is ready to help.
+  PEDAGOGICAL_ART_DIRECTOR: Show a clearly identifiable rescuer high above the beach scanning swimmers, with rescue gear and a swimmer in the water.
+  PEDAGOGICAL_ARCHETYPE: 4 - Person at work
+  SYNONYM_GUARD: The person actively watches the sea from a raised rescue chair; do not show a generic seated beachgoer.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Lifeguard in a red top and sun cap looking through binoculars from a tall wooden chair, with rescue ring attached and a tiny swimmer below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:lifeguard" data-archetype="lifeguard-at-work">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="lg-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="lg-water" x2="0" y2="1"><stop stop-color="#74C2C1"/><stop offset="1" stop-color="#357E94"/></linearGradient><linearGradient id="lg-shirt" x2="0" y2="1"><stop stop-color="#EF9360"/><stop offset="1" stop-color="#C65144"/></linearGradient><filter id="lg-shadow" x="-20%" y="-15%" width="140%" height="145%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lg-sky)"/><path d="M0 94Q78 85 152 94T304 91V135H0Z" fill="url(#lg-water)"/><path d="M0 134H304V192H0Z" fill="#E9D3A4"/></g>
+ <g id="layer-context"><circle cx="253" cy="38" r="14" fill="#EBC86F" opacity=".82"/><path d="M0 111Q68 102 141 111T304 108" fill="none" stroke="#D8F1EA" stroke-width="2"/><path d="M20 172H283" fill="none" stroke="#D4B982" stroke-width="1.2"/><path d="M234 113q7-10 14 0q7-10 14 0" fill="none" stroke="#F7FBF1" stroke-width="1.6"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#lg-shadow)">
+  <path d="M105 83L88 165M184 83L202 165M104 121L188 121M96 151L194 151M99 99L186 99" fill="none" stroke="#8E694C" stroke-width="4" stroke-linecap="round"/><path d="M95 81H193L188 99H99Z" fill="#B78959" stroke="#785A44" stroke-width="1.8"/><path d="M110 77V48Q110 38 119 38H181Q190 38 190 48V78" fill="#A8794E" stroke="#785A44" stroke-width="2"/><path d="M116 53H185V77H116Z" fill="#F0D8A7" stroke="#785A44" stroke-width="1.4"/>
+  <path d="M135 77L135 96L155 101L173 95L173 77Z" fill="url(#lg-shirt)" stroke="#914B42" stroke-width="1.4"/><circle cx="155" cy="62" r="10" fill="#D39A72" stroke="#805A46" stroke-width="1"/><path d="M145 59Q147 49 157 50Q167 51 166 60Q155 55 145 59Z" fill="#C45140" stroke="#914B42" stroke-width="1"/>
+  <path d="M143 63L133 70L120 76M165 64L176 58" fill="none" stroke="#D39A72" stroke-width="4" stroke-linecap="round"/><path d="M173 56L181 52L187 57L182 64L175 62Z" fill="#344A50" stroke="#253640" stroke-width="1.2"/><circle cx="179" cy="58" r="2" fill="#7FC4C2"/><path d="M141 95L132 107L123 120M168 95L178 108L186 119" fill="none" stroke="#344A50" stroke-width="4" stroke-linecap="round"/><path d="M114 121H191" fill="none" stroke="#D6AE74" stroke-width="2"/>
+  <circle cx="206" cy="103" r="12" fill="#D8664D" stroke="#984B3D" stroke-width="1.7"/><circle cx="206" cy="103" r="5.5" fill="#74BFC0" stroke="#984B3D" stroke-width="1"/><path d="M196 94L200 98M215 94l-4 4M196 112l4-4m15 4-4-4" fill="none" stroke="#FFF0D3" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="246" cy="117" r="4" fill="#D39A72" stroke="#805A46" stroke-width=".8"/><path d="M242 117L237 111M246 121L244 128M250 117L256 112" fill="none" stroke="#D39A72" stroke-width="2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M111 85l-13 61m84-59 15 64m-86-36h75m-74-21h72" fill="none" stroke="#D8B17D" stroke-width="1.2"/><path d="M122 43h57m-52 6h46" fill="none" stroke="#F1D8A7" stroke-width="1.2"/><path d="M136 80l8 4m14-4 8 4" fill="none" stroke="#FFD0A0" stroke-width="1.1"/><circle cx="253" cy="38" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M105 82h22m53 0h11M118 42h60M138 79l7 3m18-3 7 3" fill="none" stroke="#FFF4DD" stroke-width="1.2" opacity=".7"/><circle cx="155" cy="62" r="1.2" fill="#FFF8E7"/><path d="M202 94q4-4 8 0" fill="none" stroke="#FFD09A" stroke-width="1.2"/></g>
+</svg>

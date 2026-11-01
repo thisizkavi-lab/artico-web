@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: medium height (Noun phrase)
+  CONTEXTUAL_DEFINITION: Neither short nor tall; a person of moderate height.
+  PEDAGOGICAL_ARCHETYPE: 6 — Scale comparison
+  SYNONYM_GUARD: One person stands between shorter and taller reference marks on a simple height guide.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale studio wall.
+    - Context_Layer: Unnumbered measuring board.
+    - Focal_Layer: Adult centered at a middle height.
+    - Details_Layer: Upper and lower reference silhouettes.
+    - Lighting_Layer: Warm center halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:medium height" data-archetype="contrast-pair">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M26 168H278" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="152" cy="168" rx="124" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="42" y="26" width="23" height="139" rx="5" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.8"/><path d="M65 42H81M65 60H76M65 78H81M65 96H76M65 114H81M65 132H76M65 150H81" stroke="#7B8A9E" stroke-width="1.5"/>
+  <ellipse cx="179" cy="106" rx="59" ry="68" fill="#FEF3C7" opacity=".52"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g fill="#D8DCE2" stroke="#7B8A9E" stroke-width="1.8"><circle cx="108" cy="112" r="9"/><path d="M98 124Q108 118 118 124L121 151H95Z"/><path d="M98 150H104L103 166H98ZM113 150H119L120 166H115Z"/><circle cx="250" cy="69" r="9"/><path d="M239 81Q250 76 261 81L264 151H236Z"/><path d="M239 149H245L244 166H239ZM256 149H262L263 166H257Z"/></g>
+  <circle cx="179" cy="91" r="10" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M166 106Q179 100 192 106L196 151H162Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M164 149H174L173 166H166ZM184 149H194L195 166H187Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M174 88Q179 84 184 88M173 95Q179 98 185 95" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M80 44Q144 35 222 44" fill="none" stroke="#AAB5C3" stroke-width="1.2" stroke-dasharray="3 5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M91 75Q131 58 158 72" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

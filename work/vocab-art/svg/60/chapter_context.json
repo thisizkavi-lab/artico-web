@@ -1,0 +1,240 @@
+{
+  "chapter": 60,
+  "chapter_title": "Sports",
+  "domain_setting": "A bright, safe sports world with recognizable courts, fields, tracks, water, snow, and training spaces. Use clear sport-specific equipment, body posture, and playing surfaces. Keep high-risk adventure activities visibly controlled with helmets, ropes, harnesses, and trained partners.",
+  "ambient_palette": {
+    "field_sports": "warm paper ivory, park sage, muted slate, restrained ball colors",
+    "courts": "quiet indoor cream, blue-green floor planes, warm wood and amber lines",
+    "water": "clean teal, sea blue, pale sand, white foam and sky",
+    "adventure_and_winter": "open sky blue, mountain sage, soft snow ivory, safety orange accents",
+    "training_and_results": "clear neutral backgrounds, distinct team colors, warm amber result cues"
+  },
+  "recurring_scale_anchors": [
+    "Cards are 304×192; keep people, equipment, balls, and watercraft within the safe area and leave visible ground or water contact.",
+    "A standard hand-sized ball is about 16–24 px across; use sport-specific shape and equipment to distinguish balls.",
+    "A court net is around y=95–125 with the playing surface visible beneath; a goal, hoop, wickets, or pins should be large enough to identify at thumbnail size.",
+    "Use helmets, ropes, harnesses, and spotters when the sport requires them; show safe controlled practice.",
+    "Keep each sport recognizable by its defining equipment and action. Avoid logos, uniforms with text, readable numbers, or labels."
+  ],
+  "polysemy_resolution_table": {
+    "football / American football": "American football: padded helmeted players and an oval ball on a marked field; do not show association football/soccer.",
+    "cricket": "The bat-and-wicket field sport, not the insect.",
+    "pool": "Cue sport played on a pocketed billiards table with cue and balls, not a swimming pool.",
+    "squash": "Indoor racket sport played against a marked wall with a small ball, not the vegetable or the verb meaning crush.",
+    "discus": "Track-and-field event of throwing a circular disc, not only the disc object.",
+    "gymnastics": "A gymnast performing a controlled balance or floor movement, not a fitness center.",
+    "high jump / long jump": "High jump clears a raised crossbar; long jump takes off from a runway into a sand pit. Keep the apparatus different.",
+    "coach": "Sports coach instructing or demonstrating to athletes, not a bus or horse-drawn carriage.",
+    "game": "A sports match in progress between opponents, not a board or video game.",
+    "gym": "Fitness center with weights and cardio equipment, not school gymnastics class.",
+    "lose / win": "The result of a sports competition: lose shows an unsuccessful but respectful team outcome; win shows a clear victory celebration. Do not show losing or winning an object.",
+    "tie": "A drawn sports match with equal results, not tying a knot or clothing necktie.",
+    "season": "The period or run of scheduled sports competition, not a weather season or out-of-season travel.",
+    "run / running / running a marathon": "Run shows an athlete sprinting during sport; running shows the sport/activity of running on a track; running a marathon shows a large field of distance runners on a long marked course.",
+    "swim / swimming": "Swim is the verb, shown by a swimmer moving through water; swimming is the sport/activity with several lanes or a race context.",
+    "team / player": "Team is the group in matching kit acting as one side; player is one athlete actively competing, not a workplace team or a video game character.",
+    "practice / workout": "Practice is sport-specific repeated drills guided by a coach; workout is a general fitness training session with exercise equipment or body-weight routines.",
+    "score": "Points earned in a sports game, shown by a simple scoreboard with nonverbal tally marks or balls, never readable digits.",
+    "tournament": "Several teams or players advance through rounds toward a final; show a bracket or successive rounds without words or numbers.",
+    "bowling": "Indoor ten-pin bowling, showing a rolling ball and upright pins.",
+    "badminton / table tennis / tennis / squash": "Differentiate shuttlecock and light rackets for badminton; small ball and table for table tennis; felt ball and full court for tennis; enclosed wall court and small dark ball for squash.",
+    "horse riding": "A rider mounted on a horse in a safe equestrian setting; distinguish it from the horse itself.",
+    "water sports": "Keep canoeing and kayaking distinct by open canoe with single-blade paddle versus enclosed kayak with double-blade paddle; rowing uses a fixed seat and paired oars; sailing uses a wind-filled sail; diving, scuba diving, and snorkeling differ by depth and breathing equipment.",
+    "skating": "Ice skating on a rink, identified by narrow blades; roller-skating instead shows four wheels attached beneath each boot."
+  },
+  "existing_asset_triage": {
+    "lesson_60": "Compiler plan reported 0 Lesson 60 SVGs at the start. Reviewed likely cross-lesson candidates by image and exact sports sense before reuse.",
+    "reviewed_candidates": [
+      {
+        "source": "49/cycling.svg",
+        "verdict": "KEEP / ADAPT for cycling",
+        "reason": "A helmeted person actively pedals a bicycle along a trail, directly showing the cycling activity."
+      },
+      {
+        "source": "44/bicycle.svg",
+        "verdict": "KEEP / ADAPT for bike",
+        "reason": "A clear generic pedal bicycle is shown in full profile; use it for the sports-context noun bike, distinct from the rider-focused cycling card."
+      },
+      {
+        "source": "58/gym.svg",
+        "verdict": "KEEP / ADAPT for gym",
+        "reason": "The interior contains recognizable weight and cardio equipment and directly represents a fitness center."
+      },
+      {
+        "source": "59/run.svg",
+        "verdict": "KEEP / ADAPT for running",
+        "reason": "The grounded athletic stride and speed trails clearly show running; adapt the setting and prompt to the sport/activity sense."
+      },
+      {
+        "source": "50/surfing.svg",
+        "verdict": "REPLACE for surfing",
+        "reason": "The person stands stiffly on a flat board in nearly flat water; no breaking wave or surfing balance makes the intended sport unclear. Author a dynamic wave-riding scene."
+      },
+      {
+        "source": "58/go-to-the-gym.svg",
+        "verdict": "REJECT for gym (selected alternative)",
+        "reason": "It foregrounds a person entering the facility; the static fitness-center interior in 58/gym.svg is more direct for the noun."
+      },
+      {
+        "source": "49/mountain-bike.svg",
+        "verdict": "REJECT for bike (selected alternative)",
+        "reason": "It narrows the generic bicycle noun to a mountain-bike subtype; 44/bicycle.svg is a clearer general bicycle."
+      },
+      {
+        "source": "44/coach.svg",
+        "verdict": "REJECT for coach",
+        "reason": "It depicts a long-distance motor coach bus, while Lesson 60 uses the sports instructor sense."
+      },
+      {
+        "source": "59/practice.svg",
+        "verdict": "REJECT for practice",
+        "reason": "It shows violin rehearsal, not sports-specific training and drills."
+      },
+      {
+        "source": "43/team-player.svg",
+        "verdict": "REJECT for team/player",
+        "reason": "The highlighted contributor is working with coworkers at a project board, not competing in a sport."
+      },
+      {
+        "source": "43/teamwork.svg",
+        "verdict": "REJECT for team",
+        "reason": "It shows office collaborators around a planning board, not a sports team."
+      },
+      {
+        "source": "30/butternut-squash.svg",
+        "verdict": "REJECT for squash",
+        "reason": "It illustrates the vegetable, not the indoor racket sport in the sports group."
+      },
+      {
+        "source": "15/tie.svg",
+        "verdict": "REJECT for tie",
+        "reason": "It illustrates a clothing necktie, not an equal result in a game."
+      },
+      {
+        "source": "48/out-of-season.svg",
+        "verdict": "REJECT for season",
+        "reason": "It shows an out-of-season seaside resort, not a period of sports competition."
+      },
+      {
+        "source": "41/win-win.svg",
+        "verdict": "REJECT for win",
+        "reason": "It depicts a business idiom and balanced deal, not victory in a sports match."
+      },
+      {
+        "source": "58/board-games.svg",
+        "verdict": "REJECT for game",
+        "reason": "It shows tabletop board-game play, while Lesson 60 requires a sports match."
+      },
+      {
+        "source": "58/swimming-trunks.svg",
+        "verdict": "REJECT for swimming",
+        "reason": "It depicts swimwear, not the activity of swimming."
+      },
+      {
+        "source": "40/discussion.svg",
+        "verdict": "REJECT for discus",
+        "reason": "The exact-looking stem is only a lexical overlap: the illustration shows coworkers discussing abstract shapes at a table, not a throwing disc or athletics event."
+      },
+      {
+        "source": "58/ride-a-horse.svg",
+        "verdict": "KEEP / ADAPT for horse riding",
+        "reason": "The rider is mounted and guides a horse along a trail, directly showing the activity; adapted the leisure phrasing to the sports-context noun."
+      },
+      {
+        "source": "44/ride-a-horse.svg",
+        "verdict": "REJECT (selected alternative)",
+        "reason": "It also shows a mounted rider, but the horse proportions and riding pose are less natural and clear than the Lesson 58 candidate."
+      },
+      {
+        "source": "44/horse.svg",
+        "verdict": "REJECT for horse riding",
+        "reason": "It shows a horse without a rider, so it teaches the animal rather than the sport/activity."
+      },
+      {
+        "source": "59/jump.svg",
+        "verdict": "REJECT for high jump / long jump",
+        "reason": "It shows a generic leap over a park stream, not either track-and-field event or its distinguishing apparatus."
+      },
+      {
+        "source": "22/jump-rope.svg",
+        "verdict": "REJECT for high jump / long jump",
+        "reason": "It depicts skipping rope; neither raised crossbar nor long-jump runway and landing pit are present."
+      },
+      {
+        "source": "59/run.svg",
+        "verdict": "KEEP / ADAPT for running",
+        "reason": "The full-stride athlete and motion trails clearly show running; adapted the park action to the sports-activity sense."
+      },
+      {
+        "source": "44/boat.svg",
+        "verdict": "REJECT for canoeing; KEEP / ADAPT for rowing",
+        "reason": "The image shows a seated rower using two fixed oars in a rowboat, not an open canoe with a single-blade paddle. It is a direct candidate for the later rowing term."
+      },
+      {
+        "source": "44/motorbike.svg",
+        "verdict": "REJECT for motor racing",
+        "reason": "It is a stationary motorbike product view with no rider, racing circuit, or competitive speed."
+      },
+      {
+        "source": "49/racing-bike.svg",
+        "verdict": "REJECT for motor racing",
+        "reason": "It depicts a pedal-powered racing bicycle without an athlete or motor, not motor racing."
+      },
+      {
+        "source": "50/snorkel-and-mask.svg",
+        "verdict": "REJECT for diving",
+        "reason": "It shows snorkeling equipment alone, not an athlete diving into a pool or water."
+      },
+      {
+        "source": "50/jet-ski.svg",
+        "verdict": "REJECT for canoeing / diving",
+        "reason": "It shows a powered jet ski, a different watercraft and activity from paddled canoeing or board diving."
+      },
+      {
+        "source": "56/glide.svg",
+        "verdict": "REJECT for hang gliding",
+        "reason": "The image is a bird in a gliding pose; it has no rigid wing apparatus or pilot."
+      },
+      {
+        "source": "59/climb.svg",
+        "verdict": "REJECT for rock climbing",
+        "reason": "It shows indoor bouldering on an artificial wall without outdoor rock, rope, harness, or belayer; author an outdoor protected climb."
+      },
+      {
+        "source": "22/climbing-frame.svg",
+        "verdict": "REJECT for rock climbing",
+        "reason": "It shows a playground climbing frame, not a natural rock face or climbing sport."
+      },
+      {
+        "source": "49/bicycle.svg",
+        "verdict": "REVIEWED ALTERNATIVE; SELECT 44/bicycle.svg for bike",
+        "reason": "Both are clear generic pedal bicycles. The isolated, centered 44 bicycle is selected as the noun card; 49/bicycle is retained in its cycling chapter context."
+      },
+      {
+        "source": "44/ride-a-bike.svg",
+        "verdict": "REJECT for bike (selected alternative)",
+        "reason": "It emphasizes the action and rider, while the target card is the bicycle object."
+      },
+      {
+        "source": "36/fishing-industry.svg",
+        "verdict": "REJECT for fishing",
+        "reason": "It shows the commercial fishing industry and processing, not a person fishing with rod and line."
+      },
+      {
+        "source": "28/fish.svg",
+        "verdict": "REJECT for fishing",
+        "reason": "It illustrates the fish animal, not the activity of catching fish."
+      },
+      {
+        "source": "24/practice.svg",
+        "verdict": "REJECT for sports practice",
+        "reason": "The scene is a classroom/music drill and does not show athletic training."
+      },
+      {
+        "source": "41/game-plan.svg",
+        "verdict": "REJECT for game",
+        "reason": "It shows a business meeting and process plan, not a sports match."
+      }
+    ]
+  }
+}

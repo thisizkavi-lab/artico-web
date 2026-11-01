@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: approachable (Adjective)
+  CONTEXTUAL_DEFINITION: Socially easy to approach and start talking to.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A welcoming person turns toward a hesitant peer with open arms and a gentle smile; the peer steps closer.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared community room with floor at y=166.
+    - Context_Layer: A small chair and a hesitant peer at x=75.
+    - Focal_Layer: Welcoming adult at x=203, torso and arms open toward the peer.
+    - Details_Layer: Eye contact, palm-up hand, relaxed shoulders, short approach marks.
+    - Lighting_Layer: Warm light behind the invitation gesture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:approachable" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FAF8F3"/><stop offset="100%" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5479AC"/><stop offset="100%" stop-color="#315782"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q86 143 158 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="177" cy="168" rx="111" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M29 123V84Q29 77 36 77H83Q90 77 90 84V123M24 124H95" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><circle cx="79" cy="70" r="15" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M64 69Q65 52 80 54Q94 55 94 71L88 76L65 75Z" fill="#6F665F"/><path d="M61 89Q78 83 94 91L102 127H57Z" fill="#B7C6D8" stroke="#7B8A9E" stroke-width="2"/><path d="M62 126L78 126L77 160H65ZM82 126H96L99 160H87Z" fill="#8FA1B7" stroke="#7B8A9E" stroke-width="2"/><path d="M101 107Q119 99 132 100" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="204" cy="96" rx="69" ry="68" fill="#FEF3C7" opacity=".55"/><circle cx="201" cy="58" r="22" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M179 58Q178 34 201 34Q225 36 224 60L219 64Q215 48 201 48Q188 49 182 65Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M182 84Q201 78 220 84L231 128L224 143H178L171 128Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M180 91Q158 95 146 113L137 111M221 91Q242 94 254 107L261 102" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M180 92Q158 97 146 113L139 112M221 92Q240 97 253 107L260 103" fill="none" stroke="#D9A17D" stroke-width="5.5" stroke-linecap="round"/><path d="M184 140L182 163H195L202 141M207 141L215 163H228L222 140" fill="#315782" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M190 59Q195 62 199 59M205 59Q210 62 214 59" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M195 69Q202 75 210 68" fill="none" stroke="#805333" stroke-width="1.7" stroke-linecap="round"/><path d="M144 104Q137 102 133 107M258 96Q264 92 268 96" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="153" cy="121" r="2.2" fill="#D9A441"/><circle cx="126" cy="100" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M188 43Q199 37 211 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="204" cy="95" rx="69" ry="68" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="3 5" opacity=".4"/></g>
+</svg>

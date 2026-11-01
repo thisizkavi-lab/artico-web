@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hair band (Noun)
+  CONTEXTUAL_DEFINITION: A soft stretchy strip of fabric worn around the head to hold hair back.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Show a wide soft fabric loop around the forehead, distinct from a rigid Alice band.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted head and hair silhouette.
+    - Focal_Layer: Wide coral fabric band wrapping the head.
+    - Details_Layer: Gathered seam and cloth folds.
+    - Lighting_Layer: Soft warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hair band" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="79" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="102" ry="72" fill="#FEF3C7" opacity=".3"/>
+  <path d="M91 160Q74 119 84 74Q95 34 151 30Q208 35 220 75Q230 117 213 160L196 168H107Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/>
+  <path d="M90 85Q113 49 153 51Q193 50 216 85" fill="none" stroke="#AAB5C3" stroke-width="21" stroke-linecap="round"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M88 84Q112 44 153 46Q196 45 218 84" fill="none" stroke="#1E2A3B" stroke-width="20" stroke-linecap="round"/>
+  <path d="M88 84Q112 44 153 46Q196 45 218 84" fill="none" stroke="#D9857F" stroke-width="14" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M144 40Q153 47 162 40M151 41L151 54" fill="none" stroke="#B95F67" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M105 65Q127 49 145 51M171 51Q191 53 204 68" fill="none" stroke="#F4B9B4" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M75 100Q88 119 110 125M229 100Q216 119 194 125" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

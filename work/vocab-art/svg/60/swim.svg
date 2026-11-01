@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 60 - Sports
+ WORD: swim (verb)
+ CONTEXTUAL_DEFINITION: Move through open water using swimming strokes.
+ PEDAGOGICAL_ARCHETYPE: A single swimmer reaches forward through lake water, with splash and visible body motion
+ SYNONYM_GUARD: Show the action with one swimmer in open water; swimming as a noun is a multi-lane pool event.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Side view of lone person swimming freestyle across a lake, one arm stretching forward above surface, other pulling under water, legs kicking.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="60:swim" data-archetype="single-swimmer-in-open-water">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="swimverb-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#D8E7E2"/></linearGradient><linearGradient id="swimverb-water" x2="0" y2="1"><stop stop-color="#72A6AB"/><stop offset="1" stop-color="#427A83"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#swimverb-sky)"/><path d="M0 89q37-8 74 0t74 0t74 0t82 0v103H0Z" fill="url(#swimverb-water)"/><path d="M0 90q32-8 64 0t64 0t64 0t64 0t48 0" stroke="#F2F7F2" stroke-width="2" fill="none"/><path d="M0 151q33-6 66 0t66 0t66 0t66 0t40 0" stroke="#C6E2DE" stroke-width="1.4" fill="none"/><circle cx="254" cy="37" r="14" fill="#E4BB68"/></g>
+ <g id="layer-context"><path d="M0 84q35-19 72-1l-12 9H0Zm232-2q35-21 72 0v10h-76Z" fill="#8FA48A"/><path d="M20 70v18m265-18v18" stroke="#6F8C79" stroke-width="2"/><ellipse cx="150" cy="171" rx="78" ry="5" fill="#234F56" opacity=".17"/></g>
+ <g id="layer-focal"><circle cx="113" cy="83" r="9" fill="#D99F7C" stroke="#775249" stroke-width="1"/><path d="M104 82q2-10 9-10q8 0 9 9l-5 2-11-1Z" fill="#344F5A"/><path d="M119 88Q149 85 181 96L174 109L143 104L118 98Z" fill="#D4866D" stroke="#805247" stroke-width="1.2"/><path d="M119 89L96 76L74 75L63 79" stroke="#D99F7C" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M138 99l-14 10-18 0m40-5 19 10 15 0" stroke="#263E48" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M159 94Q180 77 203 79l22 4" stroke="#D99F7C" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M175 104q22 10 41 4" stroke="#405B61" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M61 74q-8-8-14-2m9 15q-8 6-14 1m91 18q-8 6-14 2m103-29q9-8 16-3" stroke="#F3FAF4" stroke-width="2" fill="none"/><path d="M224 84q7 4 14 1" stroke="#D9F0EA" stroke-width="1.6" fill="none"/></g>
+ <g id="layer-details"><path d="M88 93q7-5 13 0m120-13q7-5 13 0" stroke="#F5FBF6" stroke-width="1.5" fill="none"/><path d="M72 101q5-3 10 0" stroke="#D8F0E9" stroke-width="1.2" fill="none"/><path d="M18 160h43m190 0h34" stroke="#C8E1DC" stroke-width="1.3"/><circle cx="48" cy="49" r="1.4" fill="#FFF"/><path d="M37 107q8-5 15 0m206 12q9-5 16 0" stroke="#D9EFEB" stroke-width="1.3" fill="none"/></g><g id="layer-lighting"><ellipse cx="148" cy="94" rx="87" ry="40" fill="#F5D487" opacity=".05"/><path d="M93 73q6-3 12 0" stroke="#FFF6E7" stroke-width="1.2"/></g>
+</svg>

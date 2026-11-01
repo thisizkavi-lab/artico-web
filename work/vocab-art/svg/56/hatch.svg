@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: hatch (verb)
+  CONTEXTUAL_DEFINITION: A chick breaking out from a cracked egg shell.
+  PEDAGOGICAL_ARCHETYPE: 5 - Before-to-after state change in one clear frame
+  SYNONYM_GUARD: Show the shell already split and the chick emerging through the opening; this is the hatching action, not a whole egg or a chick already walking away.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center an upright cracked cream egg in a twig nest x=93..209 y=62..144; fluffy yellow chick head and wing visible through jagged opening; shell fragments fall outward and small crack lines radiate.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:hatch" data-archetype="chick-emerging-from-egg">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#E4B246;--c-secondary:#A87338;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="hatch-sky" x2="0" y2="1"><stop stop-color="#DCEAF0"/><stop offset="1" stop-color="#F7F1E4"/></linearGradient>
+  <linearGradient id="hatch-egg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF9E5"/><stop offset="1" stop-color="#D8CBA8"/></linearGradient>
+  <linearGradient id="hatch-down" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE478"/><stop offset="1" stop-color="#E8AD3C"/></linearGradient>
+  <filter id="hatch-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hatch-sky)"/><path d="M0 134Q77 124 151 136T304 130V192H0Z" fill="#DEE5D7"/><path d="M0 158Q82 147 157 159T304 152V192H0Z" fill="#C8D6BE"/><circle cx="250" cy="43" r="22" fill="#F3D791" opacity=".49"/></g>
+ <g id="layer-context"><path d="M76 147q27-22 60-17m-46 17q43-22 85-16m-65 16q50-13 85-7m-75 8q44-5 76 0" fill="none" stroke="#98734E" stroke-width="3" stroke-linecap="round"/><path d="M92 148l-8 8m27-8-4 11m62-10 5 9m27-13 9 6" fill="none" stroke="#B58B59" stroke-width="2" stroke-linecap="round"/><ellipse cx="151" cy="153" rx="70" ry="4" fill="#65735D" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#hatch-shadow)"><path d="M111 126Q99 107 106 84Q113 63 140 57Q166 53 184 69Q202 87 194 117L181 140L120 143Z" fill="url(#hatch-egg)" stroke="#9B8A68" stroke-width="1.5"/><path d="M109 95L123 90L131 98L141 87L150 96L161 87L171 96L182 90L195 100" fill="none" stroke="#8C7453" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="150" cy="82" r="23" fill="url(#hatch-down)" stroke="#A86F32" stroke-width="1.3"/><path d="M169 82L190 88L171 95Z" fill="#E9833C" stroke="#9D5E2E" stroke-width="1"/><circle cx="158" cy="78" r="2.4" fill="#1E2A3B"/><circle cx="159" cy="77" r=".7" fill="#FFFFFF"/><path d="M132 94Q116 102 121 116Q132 126 146 114Q155 101 151 91Z" fill="#F4C957" stroke="#C18B3C" stroke-width="1.1"/><path d="M121 103q-8 8-9 17m11-19q-8 7-8 13m57-17 8-8m-9 1 11-8m-7 13 13-3" fill="none" stroke="#C89A4C" stroke-width="1.4" stroke-linecap="round"/><path d="M99 114l-13 5m16-24-12-8m93 34 11 7" fill="none" stroke="#D6BF92" stroke-width="1.4" stroke-linecap="round"/><path d="M103 131Q115 147 133 149L126 137Z" fill="#E6DBC1" stroke="#A99572" stroke-width="1.1"/><path d="M194 124Q187 143 168 148L177 136Z" fill="#E6DBC1" stroke="#A99572" stroke-width="1.1"/></g>
+ <g id="layer-details"><path d="M85 143l-4-8m142 6 5-9" fill="none" stroke="#81936F" stroke-width="1.4"/><circle cx="71" cy="127" r="1.3" fill="#D7C79F"/><path d="M137 60q8-4 16-3m-44 45 4 8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><path d="M139 56l-3-5 4-3" fill="none" stroke="#C49A55" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+ <g id="layer-lighting"><path d="M118 73q10-14 24-13m37 4q9 5 13 14" fill="none" stroke="#FFF7D6" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="151" cy="94" rx="48" ry="37" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

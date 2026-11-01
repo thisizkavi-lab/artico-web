@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: direct flight
+  CONTEXTUAL_DEFINITION: A plane journey from origin to destination with no intermediate stop.
+  PEDAGOGICAL_ART_DIRECTOR: Connect two airports with one straight, uninterrupted air route and no stop in between.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show no intermediate airport, layover, or broken route.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two small terminal icons sit far apart with one clean line and a plane flying directly between them, with open empty space along the route.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:direct flight" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="df-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#A9D0D8"/><stop offset="1" stop-color="#E8EFE7"/></linearGradient>
+  <linearGradient id="df-route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DCA34E"/><stop offset="1" stop-color="#4A72B2"/></linearGradient>
+  <linearGradient id="df-terminal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F2E4C8"/><stop offset="1" stop-color="#C5B08B"/></linearGradient>
+  <filter id="df-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#df-sky)"/><path d="M17 17H287V164H17Z" fill="#E9EEE7" stroke="#65777B" stroke-width="1.3"/><path d="M18 144Q74 134 125 143T230 141T286 143V184H18Z" fill="#AFC09E"/><path d="M20 169H284" stroke="#83957D" stroke-width="1.2"/><path d="M80 97H229" stroke="#526274" stroke-width="3" stroke-dasharray="7 6"/><path d="M80 97H229" stroke="url(#df-route)" stroke-width="1.5"/></g>
+ <g id="layer-context"><path d="M31 75L54 65L77 75V107H31Z" fill="url(#df-terminal)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M27 76H81" stroke="#765A42" stroke-width="2.6"/><rect x="38" y="82" width="10" height="10" fill="#A8C8CF" stroke="#526873" stroke-width=".8"/><rect x="58" y="82" width="10" height="10" fill="#A8C8CF" stroke="#526873" stroke-width=".8"/><path d="M48 94H60V107H48Z" fill="#765A42"/><path d="M226 74H268V108H226Z" fill="#D1D9D3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M231 80H263V106H231Z" fill="#A8C8CF" stroke="#4E6671" stroke-width=".9"/><path d="M247 80V106M231 93H263" stroke="#526D77" stroke-width=".7"/><circle cx="80" cy="97" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="229" cy="97" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+ <g id="layer-focal" filter="url(#df-shadow)"><path d="M136 82L157 75L178 82L158 89L146 101H141L149 88L136 85Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.1"/><path d="M141 82L130 76L131 74L147 79" fill="#DCE8E3" stroke="#1E2A3B" stroke-width=".8"/><path d="M166 80L176 73L179 74L173 83" fill="#DCE8E3" stroke="#1E2A3B" stroke-width=".8"/><path d="M88 91L99 86L110 91L99 96Z" fill="#F7E4B7" stroke="#875E38" stroke-width=".8"/><path d="M199 91L210 86L221 91L210 96Z" fill="#D9E5E3" stroke="#4D6875" stroke-width=".8"/></g>
+ <g id="layer-details"><path d="M33 76H78" stroke="#FFF7E8" stroke-width="1" opacity=".7"/><path d="M228 75H267" stroke="#FFFFFF" stroke-width="1" opacity=".7"/><ellipse cx="54" cy="111" rx="30" ry="4" fill="#526274" opacity=".13"/><ellipse cx="247" cy="112" rx="29" ry="4" fill="#526274" opacity=".13"/><circle cx="154" cy="59" r="2.5" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="101" rx="129" ry="76" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: watch (Noun)
+  CONTEXTUAL_DEFINITION: A small timepiece worn on the wrist.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Show a watch strapped around a wrist despite the verb gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted angled forearm.
+    - Focal_Layer: Round wristwatch with blue face and brown strap.
+    - Details_Layer: Hands and minute ticks, no numerals.
+    - Lighting_Layer: Gold halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:watch" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="156" rx="98" ry="16" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="94" rx="84" ry="68" fill="#FEF3C7" opacity=".39"/>
+  <path d="M48 124Q83 100 109 82L135 58Q146 49 156 59Q164 68 154 78L135 96L218 131Q233 138 226 150Q221 161 207 157L117 126L85 151Q70 161 57 150Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M119 64L151 42L173 60L140 85Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M143 105L169 120L150 150L124 133Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.4"/>
+  <circle cx="148" cy="96" r="37" fill="#D9A441" stroke="#1E2A3B" stroke-width="3"/>
+  <circle cx="148" cy="96" r="28" fill="#5479AC" stroke="#805A19" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g stroke="#F4DBA0" stroke-width="2"><path d="M148 72V77M172 96H167M148 120V115M124 96H129M165 79L161 83M165 113L161 109M131 113L135 109M131 79L135 83"/></g>
+  <path d="M148 96L148 78M148 96L162 103" stroke="#FAF8F3" stroke-width="2.4" stroke-linecap="round"/><circle cx="148" cy="96" r="3" fill="#D9857F"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <circle cx="148" cy="96" r="45" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".58"/>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: microwave (Noun)
+  CONTEXTUAL_DEFINITION: A countertop oven that heats food using microwaves.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a compact box oven with dark viewing window, side controls, and food on a rotating plate.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter and tile.
+    - Context_Layer: Compact appliance body.
+    - Focal_Layer: Closed door with visible plate and food inside.
+    - Details_Layer: Control buttons and curved heating waves.
+    - Lighting_Layer: Warm interior glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:microwave" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 147 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 147 H304" stroke="#8A5A35" stroke-width="2"/><path d="M0 44 H304" stroke="#E1D8C8" stroke-width="1.5"/><ellipse cx="151" cy="168" rx="86" ry="7" fill="#BBAA92"/></g>
+  <g id="layer-context"><rect x="63" y="47" width="178" height="101" rx="8" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.8"/><rect x="75" y="59" width="112" height="77" rx="5" fill="#27364B" stroke="#647D8B" stroke-width="1.8"/><rect x="82" y="66" width="98" height="63" rx="3" fill="#8FB9C8"/><rect x="197" y="60" width="34" height="76" rx="3" fill="#DCE3E4" stroke="#647D8B" stroke-width="1.4"/><circle cx="214" cy="76" r="4" fill="#CE7B55"/><circle cx="214" cy="92" r="4" fill="#5479AC"/><circle cx="214" cy="108" r="4" fill="#5479AC"/><path d="M64 52 H239" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-focal"><ellipse cx="130" cy="119" rx="40" ry="7" fill="#DCE3E4" stroke="#FAF8F3" stroke-width="2"/><path d="M114 105 Q120 95 130 100 Q138 103 144 97 Q154 100 155 111 Q145 116 136 112 Q125 118 114 111Z" fill="#CE7B55" stroke="#A9543F" stroke-width="1.4"/><circle cx="133" cy="117" r="3" fill="#647D8B"/><path d="M119 91 Q114 84 120 78 M135 91 Q130 83 136 76 M149 91 Q145 84 151 79" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M89 70 H173" stroke="#AFC8D2" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

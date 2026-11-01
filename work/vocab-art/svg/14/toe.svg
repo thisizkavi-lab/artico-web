@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: toe (Noun)
+  CONTEXTUAL_DEFINITION: One of the digits at the end of the foot.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Show a single big toe among the smaller neighboring toes, not a finger.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close top view of the front of a bare foot.
+    - Context_Layer: Foot and four neighboring toes are muted.
+    - Focal_Layer: The large great toe receives the warm highlight.
+    - Details_Layer: Rounded nail and toe joints orient the foot end.
+    - Lighting_Layer: Small ring singles out the big toe without implying the whole foot.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:toe" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="104" rx="104" ry="79" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M103 171Q89 148 94 112Q98 78 108 53Q116 35 136 32Q161 28 188 34Q209 39 215 61Q225 99 219 142L211 171Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.4"/><path d="M112 57Q152 68 206 57M101 137Q152 147 215 138" fill="none" stroke="#94A3B8" stroke-width="1.5"/><path d="M126 48Q129 35 138 35Q147 35 148 48L147 74Q146 84 137 84Q127 83 126 73ZM153 44Q155 33 163 34Q172 35 173 45L172 68Q171 77 163 77Q154 77 153 68ZM179 49Q181 39 189 41Q198 43 198 53L197 70Q196 79 188 78Q180 77 179 68ZM201 59Q203 50 210 53Q218 56 217 65L214 78Q212 86 205 84Q198 82 198 74Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="136" cy="59" rx="29" ry="36" fill="#FEF3C7" opacity=".62"/><path d="M126 48Q129 34 138 34Q148 34 149 48L148 75Q147 85 137 85Q126 84 125 74Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M129 47Q137 42 145 47M128 64Q137 67 147 64" fill="none" stroke="#C88E74" stroke-width="1.5"/><path d="M123 47Q127 31 138 31Q151 31 152 47L151 76Q150 88 137 88Q123 87 122 75Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M238 77L158 64" stroke="#4A72B2" stroke-width="2.1"/><path d="M166 60L156 64L165 69" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M132 42Q137 39 142 42" fill="none" stroke="#F8DDCC" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="137" cy="60" rx="23" ry="30" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

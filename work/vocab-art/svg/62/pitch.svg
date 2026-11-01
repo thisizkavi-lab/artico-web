@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: pitch (soccer playing surface)
+ CONTEXTUAL_DEFINITION: The marked grass playing surface of a soccer match.
+ PEDAGOGICAL_ARCHETYPE: Broad soccer playing surface with boundary and halfway markings
+ SYNONYM_GUARD: Keep the grass soccer field as the focal point; do not depict tar or petroleum residue.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Low field-side view across green pitch toward a distant goal; broad white touchline and halfway markings span the surface.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:pitch (sports)" data-archetype="marked-soccer-playing-surface">
+ <defs><linearGradient id="pitch-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><linearGradient id="pitch-grass" x2="0" y2="1"><stop stop-color="#91A686"/><stop offset="1" stop-color="#718C84"/></linearGradient><filter id="pitch-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pitch-sky)"/><path d="M0 63H304V192H0Z" fill="url(#pitch-grass)"/><path d="M0 65h304" stroke="#718C84" stroke-width="3"/><path d="M0 51h304" stroke="#CBD5E1" stroke-width="1" opacity=".55"/></g>
+ <g id="layer-context"><path d="M13 83h56v42H13Z" fill="#E5E9F0" opacity=".4" stroke="#7B8A9E" stroke-width="1.2"/><path d="M17 88h48v33H17Z" fill="#718C84"/><path d="M17 98h48m-48 11h48m-31-21v33m15-33v33" stroke="#DCE8DF" stroke-width=".8"/><path d="M70 82v43M70 82h48v43" fill="none" stroke="#F4F6FA" stroke-width="2"/><ellipse cx="153" cy="171" rx="125" ry="7" fill="#405B61" opacity=".16"/><circle cx="262" cy="35" r="11" fill="#F2C14E" opacity=".8"/></g>
+ <g id="layer-focal" filter="url(#pitch-shadow)"><path d="M0 110q78 8 153 0t151 0v82H0Z" fill="#91A686"/><path d="M0 111q78 8 153 0t151 0" fill="none" stroke="#F4F6FA" stroke-width="2.4"/><path d="M17 143h269m-161-31v80" fill="none" stroke="#F4F6FA" stroke-width="1.7"/><path d="M68 111q6 25 6 51m162-51q-6 25-6 51" fill="none" stroke="#F4F6FA" stroke-width="1.6"/><circle cx="153" cy="145" r="15" fill="none" stroke="#F4F6FA" stroke-width="1.5"/><path d="M223 58h32v33h-32Z" fill="#E5E9F0" stroke="#7B8A9E" stroke-width="1.5"/><path d="M219 59v38h40V59" fill="none" stroke="#F4F6FA" stroke-width="3"/><path d="M222 62l34 32m0-32-34 32" stroke="#CBD5E1" stroke-width=".9"/><path d="M129 122q10-7 18 0l6 14h-30Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="137" cy="117" r="4.5" fill="#D89A6C"/><path d="M133 116q1-5 5-5t5 5" fill="#27364B"/><path d="M130 134l-4 10m15-10 5 9" stroke="#27364B" stroke-width="3.2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M13 155h48m178 0h51" stroke="#C3DAB9" stroke-width="1.5"/><path d="M24 176l14-4m12 4 14-4m181 4 14-4m12 4 14-4" stroke="#568552" stroke-width="1.2" opacity=".8"/><circle cx="94" cy="121" r="1.4" fill="#FFFFFF"/><circle cx="191" cy="142" r="1.4" fill="#FFFFFF"/><circle cx="153" cy="145" r="2.4" fill="#F4F6FA"/></g>
+ <g id="layer-lighting"><ellipse cx="145" cy="92" rx="121" ry="33" fill="#FFFFFF" opacity=".045"/><path d="M13 114q70 7 140 0" stroke="#FFFFFF" stroke-width="1.1" opacity=".6"/></g>
+</svg>

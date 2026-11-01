@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: grandchildren (Plural Noun)
+  CONTEXTUAL_DEFINITION: Two or more grandchildren gathered with their grandparent.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two young children cuddle close to one older grandparent as the elder opens a picture album; both grandchildren are clearly visible.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cozy sofa with a quiet living-room wall.
+    - Context_Layer: Open album and framed family shapes without writing.
+    - Focal_Layer: One older adult between two young children.
+    - Details_Layer: Children lean inward, elder's arm rests around both.
+    - Lighting_Layer: Warm oval around all three generations.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:grandchildren" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#568552;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="grandchildren-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="grandchildren-sofa" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#829A83"/><stop offset="1" stop-color="#568552"/></linearGradient>
+    <filter id="grandchildren-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#grandchildren-bg)"/><path d="M0 151Q76 145 152 151T304 149V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="175" rx="128" ry="7" fill="#DDD4C3"/><rect x="21" y="24" width="48" height="42" rx="2" fill="#FAF8F3" stroke="#80513F" stroke-width="2.5"/><path d="M26 59Q34 43 42 51Q51 38 64 57" fill="#829A83"/><circle cx="40" cy="39" r="5" fill="#D89A6C"/><circle cx="54" cy="38" r="5" fill="#F5BFA3"/></g>
+  <g id="layer-context"><path d="M30 111Q30 94 48 94H256Q275 94 275 113V149H30Z" fill="url(#grandchildren-sofa)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M42 112H263M45 149V165M259 149V165" stroke="#568552" stroke-width="3"/><path d="M105 133L150 107L199 134L151 158Z" fill="#F3ECE1" stroke="#80513F" stroke-width="2"/><path d="M151 111V156" stroke="#80513F" stroke-width="1.5"/><path d="M119 131Q128 122 137 130L146 139L129 142Z" fill="#D9857F"/><path d="M161 130Q171 122 181 132L188 139L170 141Z" fill="#829A83"/><circle cx="132" cy="130" r="3" fill="#80513F"/><circle cx="173" cy="130" r="3" fill="#27364B"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#grandchildren-shadow)"><ellipse cx="152" cy="101" rx="128" ry="81" fill="#FEF3C7" opacity=".29"/><path d="M57 112Q60 80 80 75Q99 69 116 82L123 116Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="87" cy="59" r="22" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M65 57Q67 39 87 39Q108 40 109 61L104 65Q99 50 87 51Q75 50 68 64Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M76 59Q81 63 85 59M90 59Q95 63 99 59M78 70Q87 75 97 70" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/><path d="M183 115Q188 81 208 77Q228 73 245 87L251 117Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="216" cy="60" r="22" fill="#C98961" stroke="#1E2A3B" stroke-width="2.3"/><path d="M194 59Q195 40 216 39Q237 40 239 61L234 65Q227 51 215 51Q203 51 197 65Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M204 60Q209 64 213 60M219 60Q224 64 228 60M206 71Q216 76 225 71" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/><path d="M104 125Q106 90 127 79Q147 67 167 79Q190 91 193 126V148H104Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.6"/><path d="M114 111Q127 84 152 89Q178 86 187 115V145H114Z" fill="#CBD5E1"/><circle cx="151" cy="63" r="26" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M125 62Q126 39 150 38Q177 39 178 64L172 70Q167 48 150 49Q135 49 128 70Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M136 63Q142 67 147 63M155 63Q160 67 166 63M138 77Q151 84 164 77" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M116 99Q100 107 91 112M187 100Q202 106 211 112" fill="none" stroke="#1E2A3B" stroke-width="11" stroke-linecap="round"/><path d="M116 99Q100 107 91 112M187 100Q202 106 211 112" fill="none" stroke="#F5BFA3" stroke-width="7" stroke-linecap="round"/><path d="M86 113Q94 105 101 112L104 119L96 123Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M208 113Q216 105 223 112L225 119L217 123Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M72 43Q84 36 97 41M201 45Q213 38 227 43M137 45Q150 39 164 44" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/><path d="M127 31Q134 26 139 30M167 31Q173 26 178 31" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="152" cy="27" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="97" rx="132" ry="82" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".35"/><path d="M42 76Q82 25 128 28" fill="none" stroke="#FFFFFF" stroke-width="2.7" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: ball (soccer ball)
+ CONTEXTUAL_DEFINITION: The round, patterned ball kicked between players in a soccer match.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (+ Cross-Section / Scale Cue)
+ SYNONYM_GUARD: Use the round black-and-white paneled ball of association football, not a basketball, volleyball, or oval American football.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Oversized round ball centered at (151,101), large dark pentagonal panels over ivory curved surface; faint center-circle field beneath.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:ball" data-archetype="hero-patterned-soccer-ball">
+ <defs><radialGradient id="ball-fill" cx="35%" cy="26%" r="77%"><stop stop-color="#FFFFFF"/><stop offset=".68" stop-color="#F4F6FA"/><stop offset="1" stop-color="#CBD5E1"/></radialGradient><linearGradient id="ball-stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><clipPath id="ball-clip"><circle cx="152" cy="99" r="64"/></clipPath><filter id="ball-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ball-stage)"/><path d="M0 128H304V192H0Z" fill="#91A686"/><path d="M0 128h304" stroke="#E7EEE4" stroke-width="2"/><path d="M34 151q118-37 236 0" fill="none" stroke="#DCE8DF" stroke-width="1.6"/><circle cx="151" cy="129" r="75" fill="none" stroke="#F4F6FA" stroke-width="1.4" opacity=".8"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="169" rx="65" ry="9" fill="#405B61" opacity=".19"/><path d="M91 167h122" stroke="#C3DAB9" stroke-width="2"/><circle cx="51" cy="48" r="11" fill="#F2C14E" opacity=".8"/></g>
+ <g id="layer-focal" filter="url(#ball-shadow)"><g clip-path="url(#ball-clip)"><rect x="87" y="34" width="130" height="130" fill="url(#ball-fill)"/><path d="M152 66l17 12-7 20h-21l-7-20Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.4"/><path d="M111 48l17 1 8 13-10 13-15-5-4-13Zm62 0 18 3 7 15-14 9-15-8-2-12Zm-76 43 15-7 14 10-2 16-17 8-13-11Zm78 1 15-8 15 11 1 17-16 7-14-12Zm-46 34 15-7 15 11-3 17-16 6-13-12Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M103 61q24-23 53-22" fill="none" stroke="#FFFFFF" stroke-width="5" opacity=".72"/></g><circle cx="152" cy="99" r="64" fill="none" stroke="#1E2A3B" stroke-width="3"/><path d="M105 65q17-18 37-20" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+ <g id="layer-details"><path d="M66 111q-10-11-4-24m181 13q11 7 9 19" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 4"/><circle cx="76" cy="95" r="2.5" fill="#F2C14E"/><circle cx="232" cy="105" r="2.5" fill="#F2C14E"/><path d="M92 147q59 18 119 0" fill="none" stroke="#718C84" stroke-width="1.5" opacity=".55"/><path d="M114 54l9 2m66 5 7 5m-91 40 8 4" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity=".8"/><circle cx="142" cy="46" r="1.7" fill="#FFFFFF"/><circle cx="193" cy="119" r="1.6" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><ellipse cx="136" cy="82" rx="37" ry="27" fill="#FFFFFF" opacity=".12"/><path d="M104 51q18-13 36-11" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

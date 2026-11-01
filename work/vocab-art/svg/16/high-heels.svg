@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: high heels (Noun, plural)
+  CONTEXTUAL_DEFINITION: Dress shoes with a raised narrow heel.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object pair
+  SYNONYM_GUARD: Show side-profile pumps with elevated backs and narrow stiletto heels, not flat shoes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper and floor shadow.
+    - Context_Layer: Soft warm halo.
+    - Focal_Layer: Pair of pointed pumps, side profiles, toes facing outward.
+    - Details_Layer: Raised arches and slender heels attached beneath the shoe backs.
+    - Lighting_Layer: Gentle leather highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:high heels" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="117" ry="17" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="96" rx="126" ry="67" fill="#FEF3C7" opacity=".34"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M137 113L150 112L157 158Q157 165 150 167L143 163L141 132Z" fill="#B95F67" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M164 94L176 96L172 135Q171 142 164 143L158 138L159 109Z" fill="#315782" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M35 124Q59 123 81 109Q104 90 121 85Q137 82 145 93Q153 104 157 120Q150 127 141 128Q130 126 121 120Q99 135 73 142Q48 148 37 138Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M279 91Q255 91 232 77Q209 59 193 58Q177 57 169 69L158 92Q165 103 176 104Q187 101 194 95Q217 110 241 116Q265 123 276 113Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M37 137Q79 147 121 130Q137 126 153 119M162 101Q171 107 181 102Q210 116 241 123Q263 127 278 115" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M56 121Q91 111 117 88M199 64Q230 74 255 95" fill="none" stroke="#F4B9B4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M71 128Q98 122 119 108M226 87Q244 98 260 99" fill="none" stroke="#F6D4D2" stroke-width="1.5"/>
+  <path d="M143 164L150 167M160 140L168 143" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M142 170L148 175M169 146L166 152" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/>
+</svg>

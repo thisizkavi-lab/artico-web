@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:crowded" data-archetype="passengers-packed-inside-a-bus-with-little-personal-space">
+<!-- SELF_PROMPT: Lesson 75 urban life; crowded. Show passengers standing close together inside a full city bus, with little empty space but no distress. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="crowded-sky" x2="0" y2="1"><stop stop-color="#DCE7E7"/><stop offset="1" stop-color="#C1C8BD"/></linearGradient>
+  <linearGradient id="crowded-bus" x2="0" y2="1"><stop stop-color="#739AA1"/><stop offset="1" stop-color="#4A707B"/></linearGradient>
+  <linearGradient id="crowded-interior" x2="0" y2="1"><stop stop-color="#D5E1DC"/><stop offset="1" stop-color="#AEBFBA"/></linearGradient>
+  <linearGradient id="crowded-ground" x2="0" y2="1"><stop stop-color="#AAA18A"/><stop offset="1" stop-color="#777A6D"/></linearGradient>
+  <filter id="crowded-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#crowded-sky)"/><path d="M0 112V47h48v65Zm48 0V25h46v87Zm163 0V42h45v70Zm45 0V21h48v91Z" fill="#8B9A99"/><path d="M0 118H304V192H0Z" fill="url(#crowded-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 158H304" fill="none" stroke="#4F5554" stroke-width="3"/><path d="M0 162H304" fill="none" stroke="#D9CCAC" stroke-width="1.3"/>
+  <path d="M25 153h48m151 0h54" fill="none" stroke="#EEE2C3" stroke-width="1.4"/>
+  <path d="M22 178q12-5 23 0m46 7q12-5 23 0m109-4q12-5 23 0m45-8q12-5 22 0" fill="none" stroke="#C4CD97" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#crowded-shadow)">
+  <path d="M30 145V67Q30 47 52 47h199q22 0 22 22v76Z" fill="url(#crowded-bus)" stroke="#3F5F69" stroke-width="1.8"/><path d="M43 61Q43 54 53 54h190q12 0 12 10v80H43Z" fill="url(#crowded-interior)" stroke="#DCE8E0" stroke-width="1.3"/>
+  <path d="M51 60h33v35H51Zm41 0h33v35H92Zm41 0h33v35h-33Zm41 0h33v35h-33Zm41 0h26v35h-26Z" fill="#789BA0" stroke="#E7E7D7" stroke-width="1.4"/>
+  <path d="M55 104h184" fill="none" stroke="#69817E" stroke-width="2.5"/><path d="M57 105v34m43-34v34m43-34v34m43-34v34m43-34v34" fill="none" stroke="#67817F" stroke-width="2"/>
+  <circle cx="68" cy="98" r="7" fill="#C78D69"/><path d="M61 95q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#50423D"/><path d="M60 107Q68 102 76 107L80 137 56 138Z" fill="#4E7891" stroke="#405D68" stroke-width="1.2"/><path d="M62 136l-5 11 8 2 6-12m3-1 6 12 8 0-7-13" fill="#43535A"/><path d="M60 109l-7 11 5 4 9-9m9-6 8 10-4 4-10-9" fill="#C78D69"/>
+  <circle cx="112" cy="96" r="7" fill="#D7A27A"/><path d="M105 93q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#4D413D"/><path d="M104 105Q112 100 120 105L124 137 100 138Z" fill="#B77A59" stroke="#805543" stroke-width="1.2"/><path d="M106 136l-5 12 8 1 5-12m4-1 6 12 8 0-7-13" fill="#46545A"/><path d="M104 107l-8 9 4 5 10-8m10-6 8 9-4 5-10-8" fill="#D7A27A"/>
+  <circle cx="156" cy="98" r="7" fill="#A87659"/><path d="M149 95q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#3F4241"/><path d="M148 107Q156 102 164 107L168 138 144 139Z" fill="#718B6C" stroke="#526A53" stroke-width="1.2"/><path d="M150 137l-5 11 8 2 5-12m4-1 6 12 8 0-7-13" fill="#48565A"/><path d="M148 109l-8 9 4 5 10-8m10-6 8 9-4 5-10-8" fill="#A87659"/>
+  <circle cx="201" cy="96" r="7" fill="#E0AE85"/><path d="M194 93q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#52463F"/><path d="M193 105Q201 100 209 105L213 137 189 138Z" fill="#C57F5D" stroke="#805545" stroke-width="1.2"/><path d="M195 136l-5 12 8 1 5-12m4-1 6 12 8 0-7-13" fill="#46545A"/><path d="M193 107l-8 10 4 5 10-8m10-6 8 9-4 5-10-8" fill="#E0AE85"/>
+  <circle cx="241" cy="98" r="7" fill="#BD8969"/><path d="M234 95q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#443E3D"/><path d="M233 107Q241 102 249 107L253 137 229 138Z" fill="#D0B474" stroke="#78684B" stroke-width="1.2"/><path d="M235 136l-5 12 8 1 5-12m4-1 6 12 8 0-7-13" fill="#46545A"/><path d="M233 109l-8 9 4 5 10-7m10-7 7 9-4 5-10-8" fill="#BD8969"/>
+</g>
+<g id="layer-details">
+  <circle cx="57" cy="172" r="1.8" fill="#E9C66F"/><circle cx="276" cy="173" r="1.8" fill="#E9C66F"/>
+  <path d="M42 43q12-8 24 0m171 0q12-8 24 0" fill="none" stroke="#EDF0E5" stroke-width="1.3"/>
+  <path d="M45 148h213" fill="none" stroke="#E9C66F" stroke-width="1.3"/><path d="M267 62v77" fill="none" stroke="#E9D28C" stroke-width="1.4"/>
+  <path d="M36 150h25m196 0h25" fill="none" stroke="#E7D9B8" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M43 56h215" fill="none" stroke="#F5E9D0" stroke-width="1.3"/><path d="M34 145h240" fill="none" stroke="#E7CE87" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: helicopter
+  CONTEXTUAL_DEFINITION: A powered aircraft lifted by horizontal rotor blades, able to hover and land vertically.
+  PEDAGOGICAL_ART_DIRECTOR: Make the top rotor, tail boom with tail rotor, rounded cabin, and landing skids all unmistakable.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with defining silhouette
+  SYNONYM_GUARD: Rotor blades and skids define helicopter; do not add fixed airplane wings or balloon envelope.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Cabin centered x=135..199, y=75..123; nose points right; tail boom extends x=72..136 at y=88; main rotor mast at (163,72) and blades across x=72..246; landing skids span x=120..210 at y=142.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:helicopter" data-archetype="hero-aircraft">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="heli-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C8D7C2"/><stop offset="1" stop-color="#78937B"/></linearGradient>
+    <linearGradient id="heli-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF6F8"/><stop offset="1" stop-color="#B8D2DF"/></linearGradient>
+    <radialGradient id="heli-halo"><stop stop-color="#DCE9F2" stop-opacity=".7"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="heli-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="241" cy="47" rx="37" ry="11" fill="#FFFFFF" opacity=".8"/><path d="M0 139 Q46 129 91 138 T182 138 T273 137 T304 139 V192 H0 Z" fill="#EEF3F1"/><path d="M0 161 Q50 155 100 161 T200 161 T304 160" fill="none" stroke="#DDE8E5" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M35 51 H268" stroke="#B9C9D1" stroke-width="1.4" stroke-dasharray="4 6"/><path d="M102 144 H218" stroke="#C6D4D7" stroke-width="1.6"/><path d="M87 64 Q95 60 102 64 M221 61 Q228 57 236 61" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M96 93 H133" stroke="#64748B" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#heli-shadow)"><path d="M78 89 L137 83 L148 91 L139 102 L81 102 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M83 87 L76 74 L83 72 L100 86" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.8"/><path d="M78 79 L71 74 L74 67 L81 71 Z" fill="#D9E2E9" stroke="#1E2A3B" stroke-width="1.6"/><path d="M128 76 Q142 67 168 69 L197 75 Q209 79 212 92 L204 113 Q195 124 164 125 L143 120 Q132 114 130 101 Z" fill="url(#heli-body)" stroke="#1E2A3B" stroke-width="2.8"/><path d="M164 73 Q180 71 191 76 L201 86 H170 Z" fill="url(#heli-glass)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M170 90 H202 L200 105 H170 Z" fill="#BDD4DF" stroke="#1E2A3B" stroke-width="1.5"/><path d="M167 88 V119" stroke="#1E2A3B" stroke-width="1.6"/><path d="M130 94 H162 M130 103 H161" stroke="#5479AC" stroke-width="1.4"/><path d="M162 69 V58" stroke="#1E2A3B" stroke-width="4"/><path d="M72 57 Q156 50 244 57" stroke="#263548" stroke-width="5" stroke-linecap="round"/><path d="M91 54 Q158 48 225 54" stroke="#8EB0DE" stroke-width="2.1" stroke-linecap="round"/><path d="M138 121 L130 139 M196 121 L203 139" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M119 141 Q162 147 215 140" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M124 139 Q165 144 211 138" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M181 78 H194 M174 94 H198" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/><path d="M153 113 H161" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><circle cx="207" cy="94" r="2.5" fill="#F2C14E"/><path d="M61 55 H71 M245 55 H256" stroke="#5479AC" stroke-width="1.6"/><path d="M90 48 L90 42 M230 49 L230 43" stroke="#B7D3E0" stroke-width="1.4"/><circle cx="75" cy="81" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="88" rx="119" ry="73" fill="url(#heli-halo)" opacity=".23"/><path d="M29 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M110 143 Q166 151 221 142" fill="none" stroke="#1E2A3B" stroke-width="1" opacity=".3"/></g>
+</svg>

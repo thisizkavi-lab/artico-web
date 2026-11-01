@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: geography (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies places, land, water, and people on Earth.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with scale cue
+  SYNONYM_GUARD: A student works with a globe and folded topographic map, emphasizing the study of places rather than rocks alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Geography classroom with pale window and desk.
+    - Context_Layer: World globe and map cabinet.
+    - Focal_Layer: Student traces a route across a land-and-water map.
+    - Details_Layer: Globe continents, mountain symbols, and rivers without labels.
+    - Lighting_Layer: Blue daylight across the globe.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:geography" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="geo-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="geo-globe" cx="30%" cy="26%" r="75%"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#5479AC"/></radialGradient><filter id="geo-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#geo-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 29H96V82H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 30V81M22 55H95" stroke="#FFFFFF" stroke-width="2.5"/><rect x="226" y="43" width="53" height="84" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/><path d="M211 127H279M219 127V142M271 127V142" stroke="#8D765A" stroke-width="3"/><circle cx="228" cy="80" r="30" fill="url(#geo-globe)" stroke="#315782" stroke-width="2"/><path d="M209 72Q219 62 228 72L225 82L214 88L208 81ZM232 63L242 66L247 76L239 83L232 78ZM220 92L229 87L236 95L233 103L223 105L217 99Z" fill="#91A77C" stroke="#55704D" stroke-width="1.1"/><ellipse cx="228" cy="80" rx="11" ry="30" fill="none" stroke="#DCECFB" stroke-width="1.2"/><path d="M203 78H253" stroke="#DCECFB" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#geo-shadow)"><path d="M49 113L149 96L199 111L92 143Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2"/><path d="M58 115L148 100L190 112L93 138Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M75 121L94 113L106 119L123 104L140 116L159 107L176 116L159 129L142 125L126 134L104 128L91 136Z" fill="#91A77C" stroke="#55704D" stroke-width="1.2"/><path d="M85 130Q110 117 131 121T173 113" fill="none" stroke="#D9857F" stroke-width="2.5" stroke-dasharray="4 3"/><path d="M118 125L126 117" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M118 125L126 117" stroke="#C98961" stroke-width="2.5" stroke-linecap="round"/><circle cx="127" cy="116" r="3.2" fill="#D9A441" stroke="#8D6138" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M135 90L141 81L147 90M146 93L152 83L158 92M161 96L167 87L173 98" fill="none" stroke="#A98A64" stroke-width="1.5"/><path d="M72 127Q80 123 85 127M164 118Q170 113 177 116" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><path d="M215 118H240M244 118H269" stroke="#F7EBCF" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="98" rx="123" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M204 61Q221 45 242 59" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".82"/></g>
+</svg>

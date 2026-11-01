@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: professional achievements
+  CONTEXTUAL_DEFINITION: Important successes or accomplishments gained through work.
+  PEDAGOGICAL_ART_DIRECTOR: Show a candidate's concrete completed work wins, represented by a project result and a modest recognition badge.
+  PEDAGOGICAL_ARCHETYPE: 7 - Work accomplishment
+  SYNONYM_GUARD: Show specific completed successes, distinct from a long-term track record of repeated results or a generic list of skills.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a finished work project model on a table at x=88..183 and a gold achievement medallion at x=197..227. A professional at x=52..101 gestures toward the result, while a small completed-check page sits beside the project; keep the trophy modest and work-linked.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:professional achievements" data-archetype="work-accomplishment">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="achievement-model" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="achievement-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7D98E"/><stop offset="1" stop-color="#D99A2B"/></linearGradient>
+    <radialGradient id="achievement-halo"><stop stop-color="#FFF1B9" stop-opacity=".8"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="achievement-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="109" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 134 H274 V145 H30 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#achievement-shadow)"><path d="M45 125 Q47 101 60 95 L61 86 Q57 82 59 74 Q67 65 77 68 Q86 71 83 82 L80 90 Q94 96 96 123 L93 134 H49 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="73" cy="77" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M65 75 Q67 67 74 67 Q82 68 85 75 Q78 71 71 72 Z" fill="#3D342D"/><path d="M82 108 L109 99" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/><path d="M108 99 L126 95" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M106 123 L121 88 H178 L195 123 Z" fill="url(#achievement-model)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M121 88 L136 74 H165 L178 88" fill="#FFFFFF" stroke="#64748B" stroke-width="1.1"/><rect x="127" y="101" width="13" height="22" fill="#A8D4A2" stroke="#547A56" stroke-width=".8"/><rect x="147" y="95" width="14" height="28" fill="#5479AC" stroke="#3D5F91" stroke-width=".8"/><rect x="166" y="105" width="14" height="18" fill="#F7E8BF" stroke="#D99A2B" stroke-width=".8"/><circle cx="215" cy="78" r="19" fill="url(#achievement-gold)" stroke="#965D28" stroke-width="1.3"/><path d="M205 95 L202 116 L214 109 L225 116 L222 94" fill="#8EB0DE" stroke="#3D5F91" stroke-width="1.1"/><path d="M215 66 L218 74 L226 74 L220 79 L222 87 L215 82 L208 87 L210 79 L204 74 L212 74 Z" fill="#FFF8E6" stroke="#D99A2B" stroke-width=".8"/><rect x="83" y="43" width="37" height="27" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1"/><path d="M89 50 H114 M89 56 H111 M89 62 H116" stroke="#A8D4A2" stroke-width=".9"/></g>
+  <g id="layer-details"><path d="M197 54 L202 49 M230 56 L235 51 M225 41 L228 37" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round"/><path d="M120 128 H189" stroke="#DCECFB" stroke-width="1"/><circle cx="104" cy="82" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="169" cy="91" rx="91" ry="66" fill="url(#achievement-halo)" opacity=".22"/><path d="M83 46 H120" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

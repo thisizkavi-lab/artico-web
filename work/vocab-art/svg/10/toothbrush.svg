@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: toothbrush (Noun)
+  CONTEXTUAL_DEFINITION: A small brush with bristles on a handle for cleaning teeth.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Make the compact bristled brush head clearly visible, with an elongated grip below.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean pale bathroom counter.
+    - Context_Layer: Toothpaste-free toothbrush cup behind.
+    - Focal_Layer: Angled toothbrush with multicolored bristles.
+    - Details_Layer: Neck taper and grip texture.
+    - Lighting_Layer: Cool clean highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:toothbrush" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="169" rx="76" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M211 102 H263 L258 145 H216Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.8"/><path d="M213 109 Q236 114 261 109" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M88 135 L193 62 Q202 56 209 67 L218 79 Q222 85 214 91 L109 152 Q100 157 94 150Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M97 139 L207 73" stroke="#AFC3DE" stroke-width="2"/><path d="M185 58 L213 41 Q219 37 224 43 L234 59 Q238 65 232 69 L207 86Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.3"/><path d="M192 57 L217 42 M196 64 L222 47 M200 70 L227 52 M205 76 L231 58" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/><path d="M106 145 L203 87" stroke="#365D91" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M114 137 L150 116 M121 145 L155 125" stroke="#AFC3DE" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

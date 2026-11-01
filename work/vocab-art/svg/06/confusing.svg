@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: confusing (Adjective)
+  CONTEXTUAL_DEFINITION: Difficult to understand, shown by a person lost in a tangled route map with too many crossings.
+  PEDAGOGICAL_ARCHETYPE: 3 (Complex object plus a visibly puzzled response)
+  SYNONYM_GUARD: The map has overlapping branches and dead ends; this is difficulty understanding, not merely a strange pattern.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale transit wall and quiet floor.
+    - Context_Layer: Traveler holds the map, brows pinched and head tilted.
+    - Focal_Layer: Folded map with knotting routes and crossed paths.
+    - Details_Layer: Route dots, repeated turns and question-like hand gesture without symbols.
+    - Lighting_Layer: Cool paper highlights and a tight amber emphasis.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:confusing" data-archetype="contrast-reference">
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 146 Q152 140 304 147 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="24" y="29" width="256" height="94" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><ellipse cx="157" cy="163" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M22 153 Q25 129 44 127 Q63 129 65 153Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="44" cy="112" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M29 111 Q30 94 45 95 Q60 96 59 112 Q51 102 43 103Z" fill="#27364B"/><path d="M35 112 Q39 109 42 112 M48 112 Q52 109 56 112" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M37 121 Q44 117 51 121" fill="none" stroke="#A34F47" stroke-width="1.8"/><path d="M35 97 L41 93 M53 93 L59 97" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><path d="M61 133 Q78 122 91 113 Q96 110 100 114 Q101 119 95 123 L67 145" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M97 114 L105 109" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M108 55 L249 44 L263 112 L123 124Z" fill="#E5E9F0" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M123 124 L179 91 L263 112" fill="#D8E8F2" stroke="#1E2A3B" stroke-width="1.6"/><path d="M108 55 L182 88 L249 44" fill="none" stroke="#CE3D4E" stroke-width="3.1" stroke-linejoin="round"/><path d="M182 88 L123 124 M182 88 L263 112 M143 51 L142 77 L177 80 L177 98 L151 108 M217 49 L212 69 L237 78 L218 93 L239 106" fill="none" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="142" cy="77" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="177" cy="98" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="212" cy="69" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="239" cy="106" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M90 72 L96 62 L102 72 L112 77 L102 82 L96 92 L90 82 L80 77Z" fill="#F2C14E"/><path d="M78 92 Q69 84 74 76 M78 92 Q68 99 73 106" fill="none" stroke="#D97706" stroke-width="2.3" stroke-linecap="round"/><path d="M119 62 Q133 54 148 58 M188 52 Q202 47 214 52" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/></g>
+  <g id="layer-lighting"><path d="M113 58 L176 86 M194 83 L257 106" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

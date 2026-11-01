@@ -1,0 +1,42 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: share
+ CONTEXTUAL_DEFINITION: To send or forward a social-media post to another person.
+ PEDAGOGICAL_ARCHETYPE: a post moving from one user's phone to another's
+ SYNONYM_GUARD: Show content being forwarded between two people; distinguish sharing an existing post from publishing a new post or splitting an object.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Two people hold phones on opposite sides of a large branching share arrow; a picture card leaves one phone and appears in the other person's feed.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:share" data-archetype="forwarding a social post between users">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <!-- left and right phones -->
+  <path d="M24 50Q24 45 29 45H108Q113 45 113 50V140H24Z" fill="#26384A"/><path d="M30 52H107V132H30Z" fill="#E6DED1"/><path d="M120 50Q120 45 125 45H204Q209 45 209 50V140H120Z" fill="#26384A"/><path d="M126 52H203V132H126Z" fill="#E6DED1"/>
+  <path d="M36 60H101V95H36Z" fill="#597D8B"/><path d="M36 87Q55 69 73 86T101 78V95H36Z" fill="#798C72"/><circle cx="88" cy="68" r="5" fill="#D6A64C"/>
+  <path d="M132 60H197V95H132Z" fill="#597D8B"/><path d="M132 87Q151 69 169 86T197 78V95H132Z" fill="#798C72"/><circle cx="184" cy="68" r="5" fill="#D6A64C"/>
+  <path d="M37 101H100M37 107H91M133 101H196M133 107H187" stroke="#8C725A" stroke-width="1.2"/>
+ </g>
+ <g id="layer-context">
+  <!-- people at each end of the connection -->
+  <circle cx="60" cy="35" r="7" fill="#D29A78"/><path d="M53 34Q54 25 61 26Q68 27 68 36L64 31H55Z" fill="#26384A"/><path d="M49 43Q60 38 71 43L75 53H45Z" fill="#B85E5A"/>
+  <circle cx="247" cy="35" r="7" fill="#A77D68"/><path d="M240 34Q241 25 248 26Q255 27 255 36L251 31H242Z" fill="#26384A"/><path d="M236 43Q247 38 258 43L262 53H232Z" fill="#597D8B"/>
+  <path d="M34 146H199" stroke="#F6E5CE" stroke-width="1"/><circle cx="69" cy="143" r="2" fill="#D6A64C"/><circle cx="164" cy="143" r="2" fill="#B85E5A"/>
+ </g>
+ <g id="layer-focal">
+  <!-- forwarding arrow with three connection nodes -->
+  <circle cx="151" cy="75" r="10" fill="#D6A64C" stroke="#26384A" stroke-width="1"/><circle cx="151" cy="111" r="9" fill="#D6A64C" stroke="#26384A" stroke-width="1"/><circle cx="177" cy="93" r="9" fill="#D6A64C" stroke="#26384A" stroke-width="1"/>
+  <path d="M147 75L151 69L155 75M147 111L151 105L155 111M173 93L177 87L181 93" stroke="#26384A" stroke-width="1.2" fill="none"/>
+  <path d="M151 85V100M160 106L170 98M161 80L170 88" stroke="#26384A" stroke-width="2"/>
+  <path d="M86 117H98" stroke="#D6A64C" stroke-width="1.5"/><path d="M139 121H189" stroke="#D6A64C" stroke-width="1.5"/>
+ </g>
+ <g id="layer-details">
+  <circle cx="47" cy="61" r="1.5" fill="#B85E5A"/><circle cx="190" cy="62" r="1.5" fill="#B85E5A"/>
+  <path d="M47 113H91M137 113H189" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M114 69L118 65M114 120L118 124M209 70L214 66M209 120L214 124" stroke="#D6A64C" stroke-width="1.3"/>
+  <path d="M72 29L77 24M231 29L226 24" stroke="#F6E5CE" stroke-width="1.2"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="94" rx="101" ry="68" fill="#E7C66B" opacity=".07"/><path d="M26 47L42 59M206 47L190 59" stroke="#FFF1C7" stroke-width="1.1" opacity=".55"/>
+  <path d="M25 149H210" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

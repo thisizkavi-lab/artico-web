@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: stock exchange (noun)
+  CONTEXTUAL_DEFINITION: An organized market where investors buy and sell shares of companies.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero place / exchange scene
+  SYNONYM_GUARD: Show company-share certificates and traders in a financial marketplace; not currency exchange or a grocery market.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Traders at desks beneath a large chart board with rising and falling line, exchange blank company certificates bearing building silhouettes, coin stack and network lines.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:stock exchange" data-archetype="financial-market">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="stock-board" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5E9F0"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient>
+    <radialGradient id="stock-seal"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#568552"/></radialGradient>
+    <path id="stock-certificate" d="M40 99 H106 V143 H40 Z"/>
+    <clipPath id="stock-cert-clip"><use href="#stock-certificate"/></clipPath>
+    <filter id="stock-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="116" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Exchange floor with live share-price chart -->
+  <g id="layer-context"><rect x="70" y="26" width="192" height="58" rx="5" fill="url(#stock-board)" stroke="#1E2A3B" stroke-width="2"/><path d="M80 39 H252 M80 51 H252 M80 63 H252 M80 75 H252" stroke="#94A3B8" stroke-width="1.2"/><path d="M94 31 V79 M129 31 V79 M164 31 V79 M199 31 V79 M234 31 V79" stroke="#CBD5E1" stroke-width="1"/><path d="M81 67 L106 55 L125 61 L149 43 L174 49 L196 37 L220 48 L250 34" fill="none" stroke="#5479AC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 151 H274" stroke="#C88446" stroke-width="2"/></g>
+  <!-- 3. Primary share certificates and investors trading -->
+  <g id="layer-focal" filter="url(#stock-shadow)"><use href="#stock-certificate" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/><g clip-path="url(#stock-cert-clip)"><rect x="43" y="102" width="60" height="39" fill="#F8FBFE"/><path d="M50 122 L58 112 L66 122 V133 H50 Z" fill="#8EB0DE" stroke="#5479AC" stroke-width="1.2"/><path d="M67 133 V116 L77 109 L87 116 V133 Z" fill="#5479AC"/><path d="M89 133 V120 L97 114 L103 119 V133 Z" fill="#A8D4A2"/><path d="M49 137 H99" stroke="#94A3B8" stroke-width="1.3"/></g><circle cx="95" cy="107" r="7" fill="url(#stock-seal)" stroke="#1E2A3B" stroke-width="1.2"/><path d="M47 104 H73" stroke="#94A3B8" stroke-width="1.3"/><circle cx="145" cy="118" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M125 151 Q127 129 145 129 Q163 129 166 151 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="222" cy="119" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M202 151 Q204 130 222 130 Q241 130 244 151 Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/></g>
+  <!-- 4. Trading handoff and share-market connections -->
+  <g id="layer-details"><path d="M160 115 H200" stroke="#4A72B2" stroke-width="2.2" stroke-dasharray="4 4"/><path d="M194 110 L203 115 L194 120 Z" fill="#4A72B2"/><path d="M166 141 L177 133 L187 141" fill="none" stroke="#D89A6C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="181" cy="146" rx="9" ry="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M43 144 H110" stroke="#64748B" stroke-width="1.5"/><circle cx="52" cy="140" r="3" fill="#D49B2A"/><circle cx="63" cy="140" r="3" fill="#D49B2A"/><path d="M144 103 Q145 98 149 97 M215 102 Q220 98 225 100" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 5. Market-chart glints -->
+  <g id="layer-lighting"><path d="M79 31 H114" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round"/><path d="M266 36 L266 44 M262 40 H270" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><circle cx="250" cy="34" r="4.5" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.2"/></g>
+</svg>

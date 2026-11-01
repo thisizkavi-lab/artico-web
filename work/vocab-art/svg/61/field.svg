@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: field (sports)
+ CONTEXTUAL_DEFINITION: The marked grass playing area where a soccer match takes place.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (complete marked pitch viewed from above)
+ SYNONYM_GUARD: Show boundary lines, halfway line, center circle, penalty areas, and goals; this is a sports field, not pastureland.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large green rectangle from (27,31) to (277,164); clear white field lines and goals with tiny players for scale.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:field (sports)" data-archetype="top-down-marked-soccer-pitch">
+ <defs><linearGradient id="field-stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><linearGradient id="pitch-green" x2="0" y2="1"><stop stop-color="#91A686"/><stop offset="1" stop-color="#718C84"/></linearGradient><filter id="field-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#field-stage)"/><path d="M0 169H304V192H0Z" fill="#EAE3D5"/><path d="M0 169h304" stroke="#DDD4C3" stroke-width="2"/></g>
+ <g id="layer-context"><ellipse cx="152" cy="170" rx="129" ry="7" fill="#405B61" opacity=".16"/><path d="M17 37h270v127H17Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2.2"/><path d="M17 37h270v127H17Z" fill="url(#pitch-green)"/><path d="M17 53h270m-270 16h270m-270 16h270m-270 16h270m-270 16h270m-270 16h270" stroke="#A8B89B" stroke-width="1" opacity=".25"/></g>
+ <g id="layer-focal" filter="url(#field-shadow)"><path d="M29 47h246v107H29Z" fill="none" stroke="#F4F6FA" stroke-width="2.5"/><path d="M152 48v105" stroke="#F4F6FA" stroke-width="2.5"/><circle cx="152" cy="100" r="24" fill="none" stroke="#F4F6FA" stroke-width="2.5"/><circle cx="152" cy="100" r="2.5" fill="#F4F6FA"/><path d="M29 74h34v52H29m246-52h-34v52h34" fill="none" stroke="#F4F6FA" stroke-width="2.5"/><path d="M29 85h15v30H29m246-30h-15v30h15" fill="none" stroke="#F4F6FA" stroke-width="2.5"/><path d="M12 81h17v40H12m263-40h17v40h-17" fill="#F4F6FA" opacity=".65" stroke="#64748B" stroke-width="1.5"/><path d="M29 51q-7 0-7-7m246 0q0 7 7 7m-253 98q-7 0-7 7m253-7q7 0 7 7" fill="none" stroke="#F4F6FA" stroke-width="2"/></g>
+ <g id="layer-details"><circle cx="95" cy="83" r="3" fill="#CE3D4E"/><circle cx="204" cy="116" r="3" fill="#5479AC"/><path d="M91 80l-2-5m118 38 4 5" stroke="#F1F5F9" stroke-width="2" stroke-linecap="round"/><circle cx="56" cy="58" r="1.8" fill="#F1F5F9"/><circle cx="248" cy="143" r="1.8" fill="#F1F5F9"/><path d="M148 101h8m-4-4v8" stroke="#DCE8DF" stroke-width="1.3" opacity=".8"/><path d="M29 53q0-6 6-6m240 0q6 0 6 6M29 148q0 6 6 6m240 0q6 0 6-6" fill="none" stroke="#F4F6FA" stroke-width="1.5"/></g>
+ <g id="layer-lighting"><ellipse cx="112" cy="67" rx="100" ry="28" fill="#FFFFFF" opacity=".055"/><path d="M30 48h243" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

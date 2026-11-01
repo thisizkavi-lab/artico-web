@@ -1,0 +1,68 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: brilliant (Adjective)
+  CONTEXTUAL_DEFINITION: Exceptionally clever and successful, as a learner's elegant paper bridge solution.
+  PEDAGOGICAL_ARCHETYPE: 3 (Gradable opinion shown through a concrete result and an impressed peer)
+  SYNONYM_GUARD: A clever structural solution is the cue; no light bulb or bright light that could teach literal brilliance.
+  MODE: STATIC (The Artico course compiles a still WebP card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper card, table horizon at y=145.
+    - Context_Layer: Learner at x=73 and peer at x=257, both looking toward the model.
+    - Focal_Layer: Folded blue paper bridge spanning x=111..251, supporting a small golden weight.
+    - Details_Layer: Fold seams, stable support blocks, paper edge, impressed hands, small achievement sparkles.
+    - Lighting_Layer: Upper-left gloss on the bridge and a fine warm card rim.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:brilliant" data-archetype="contrast-reference">
+  <defs>
+    <style>
+      :root { --c-bg-1:#FAF8F3; --c-bg-2:#F2ECE1; --c-surface:#EAE3D5; --c-primary:#5479AC; --c-secondary:#3D5F91; --c-accent:#F2C14E; --c-highlight:#FFFFFF; }
+    </style>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient>
+    <linearGradient id="bridge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8EB0DE"/><stop offset="0.55" stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity="0.2"/></filter>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#paper)"/>
+    <path d="M0 145 Q150 139 304 145 L304 192 L0 192Z" fill="#F2ECE1"/>
+    <ellipse cx="174" cy="153" rx="103" ry="9" fill="#DDD4C3"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#E5E9F0" stroke-width="1.4"/>
+  </g>
+  <g id="layer-context">
+    <path d="M42 143 C44 119 51 108 73 108 C95 108 102 120 104 143Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/>
+    <rect x="65" y="95" width="17" height="17" rx="5" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="73" cy="77" r="20" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2"/>
+    <path d="M54 76 Q55 54 76 57 Q92 60 92 76 Q82 68 71 69 Q63 74 54 76Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M65 81 Q69 77 73 81 M78 81 Q82 77 86 81" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M69 88 Q76 96 84 87" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M91 119 Q100 119 111 111 L118 103 Q123 100 127 105 L121 115 Q109 129 95 136" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/>
+    <path d="M118 104 Q123 98 128 98 L132 101 L128 105 L135 103 L138 106 L130 113 L122 113Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+    <circle cx="260" cy="78" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M242 76 Q245 57 262 60 Q276 62 277 77 Q265 69 252 71Z" fill="#27364B"/>
+    <circle cx="253" cy="77" r="2.2" fill="#1E2A3B"/><circle cx="267" cy="77" r="2.2" fill="#1E2A3B"/>
+    <path d="M236 143 Q238 112 260 111 Q282 112 285 143Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/>
+    <ellipse cx="260" cy="137" rx="5" ry="6" fill="#A34F47"/>
+  </g>
+  <g id="layer-focal" filter="url(#soft-shadow)">
+    <rect x="105" y="129" width="18" height="16" rx="2" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/>
+    <rect x="246" y="129" width="18" height="16" rx="2" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M119 127 Q185 80 250 127 L246 139 Q185 101 123 139Z" fill="url(#bridge)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M128 128 Q185 92 241 128" fill="none" stroke="#F1F5F9" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+    <path d="M145 119 L151 133 M164 108 L169 128 M185 101 L186 124 M205 103 L201 128 M224 112 L217 133" fill="none" stroke="#3D5F91" stroke-width="1.5" opacity="0.75"/>
+    <circle cx="187" cy="84" r="11" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/>
+    <path d="M181 79 Q187 75 192 80" fill="none" stroke="#FFF6D6" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M115 146 L248 146" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M103 101 L111 96 M112 106 L119 103 M232 88 L238 81 M241 95 L249 91" stroke="#D97706" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M155 76 L159 68 L163 76 L171 80 L163 84 L159 92 L155 84 L147 80Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/>
+    <circle cx="137" cy="107" r="3.4" fill="#F1F5F9"/><circle cx="229" cy="118" r="2.8" fill="#F1F5F9"/>
+    <path d="M250 95 L255 91 M261 94 L266 90 M251 102 L256 98" fill="none" stroke="#FDE4D4" stroke-width="2" stroke-linecap="round"/>
+    <path d="M253 128 L247 122 M260 127 L260 119 M267 128 L273 122" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="81" cy="127" rx="4" ry="2.5" fill="#F58D82" opacity="0.55"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M124 126 Q184 86 243 126" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.72"/>
+    <path d="M28 27 Q37 20 47 23 M257 169 Q268 173 278 167" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

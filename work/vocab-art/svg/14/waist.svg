@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: waist (Noun)
+  CONTEXTUAL_DEFINITION: The narrow part of the body between the ribs and the hips.
+  PEDAGOGICAL_ARCHETYPE: 2 — Torso part-of-whole callout
+  SYNONYM_GUARD: Highlight the narrow band above the hip bones; hip is the curved pelvis side below.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front torso crop from ribs to hips.
+    - Context_Layer: Pale shirt shows full torso silhouette.
+    - Focal_Layer: Narrow waist band curves inward on both sides.
+    - Details_Layer: Ribcage and pelvis outlines stay muted.
+    - Lighting_Layer: Gold band marks the narrow waist line only.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:waist" data-archetype="part-callout">
+  <defs><linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#E3E8F0"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="104" rx="118" ry="81" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M110 18H194L220 61L202 169H102L84 61Z" fill="url(#shirt)" stroke="#64748B" stroke-width="2.3"/><path d="M112 41Q152 55 192 41M96 78Q152 96 208 78" fill="none" stroke="#94A3B8" stroke-width="1.4"/><path d="M113 130Q152 116 191 130" fill="none" stroke="#64748B" stroke-width="1.6"/><path d="M103 145Q152 159 201 145" fill="none" stroke="#94A3B8" stroke-width="1.3"/><path d="M114 62Q152 75 190 62" fill="none" stroke="#CBD5E1" stroke-width="1.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M99 91Q126 104 152 104Q178 104 205 91L198 119Q176 127 152 127Q128 127 106 119Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M98 89Q126 101 152 101Q178 101 206 89L202 123Q177 132 152 132Q127 132 102 123Z" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4"/><path d="M106 101Q152 116 198 101" fill="none" stroke="#F7DDCC" stroke-width="1.5"/><ellipse cx="152" cy="111" rx="72" ry="30" fill="#FEF3C7" opacity=".2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M57 109L94 109" stroke="#4A72B2" stroke-width="2"/><path d="M86 104L95 109L86 114" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M112 45Q152 58 192 45" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><circle cx="152" cy="112" r="2.5" fill="#F2C14E"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="110" rx="61" ry="22" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

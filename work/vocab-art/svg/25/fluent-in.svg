@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: fluent in (languages) (Adjective phrase)
+  CONTEXTUAL_DEFINITION: Able to speak one particular language smoothly and confidently.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: Show a learner using one practiced language smoothly with a conversation partner and a matching study book; tie fluency to a specific language context.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language cafe with one language-learning book.
+    - Context_Layer: Learner and conversation partner face one another.
+    - Focal_Layer: Smooth confident speech flows from learner to partner.
+    - Details_Layer: Book's abstract sound pattern matches the spoken pattern.
+    - Lighting_Layer: Warm, confident exchange.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:fluent in (languages)" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="fluent-in-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="fluent-in-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fluent-in-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M117 122H202V130H117Z" fill="#A98A64"/><path d="M126 130V149M193 130V149" stroke="#8D765A" stroke-width="2.6"/><path d="M203 113H258V132H203Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M209 118H251" stroke="#DCECFB" stroke-width="1.2"/><circle cx="242" cy="84" r="10" fill="#80513F" stroke="#1E2A3B" stroke-width="1.1"/><path d="M232 84Q233 71 243 72Q253 73 252 85" fill="#27364B"/><path d="M227 100Q242 94 257 100L261 114L251 122L231 116Z" fill="#91A77C" stroke="#54765A" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#fluent-in-shadow)"><circle cx="77" cy="78" r="12" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M65 78Q66 63 78 64Q90 65 89 79L83 82Q80 71 74 72Q70 73 68 84Z" fill="#27364B"/><path d="M59 96Q77 88 95 96L101 119L88 130L66 121Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M67 99L54 108L43 103M92 99L106 106L119 99" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M67 99L54 108L43 103M92 99L106 106L119 99" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M69 124L64 149M88 125L100 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M96 26Q96 16 109 16H172Q185 16 185 28V43Q185 55 172 55H148L138 64L140 54H109Q96 54 96 43Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M108 34C118 23 127 45 137 34S156 24 166 34S176 43 181 34" fill="none" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/><path d="M105 70C119 60 130 86 144 70" fill="none" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M111 112L145 109L148 138L114 141Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.2"/><path d="M118 121C124 115 130 127 136 121S143 116 146 121" fill="none" stroke="#5479AC" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M226 91Q235 95 244 91" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="206" cy="75" r="2" fill="#D9A441"/><path d="M177 71L184 68M187 77L194 74" stroke="#D9A441" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="88" rx="132" ry="73" fill="#FEF9C3" opacity=".09"/><path d="M96 27Q96 16 109 16H172" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

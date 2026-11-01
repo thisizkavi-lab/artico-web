@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: lease (Noun)
+  CONTEXTUAL_DEFINITION: A legal agreement that grants a renter use of a home for a set term.
+  PEDAGOGICAL_ARCHETYPE: 4 — Agreement being reviewed
+  SYNONYM_GUARD: Show both parties carefully reviewing and signing one contract; tenancy agreement is the completed contract handed over with keys.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Rental office desk and window.
+    - Context_Layer: Home model and two people facing each other.
+    - Focal_Layer: Open blank agreement between landlord and tenant as a pen touches signature area.
+    - Details_Layer: Paper has ruled lines and a small home icon only; no words or numerals.
+    - Lighting_Layer: Blue focus ring over paper and pen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:lease" data-archetype="agreement-scene">
+  <defs><linearGradient id="office" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF2"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#office)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M34 30H82V69H34Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.5"/><path d="M58 31V68M35 49H81" stroke="#FFFFFF" stroke-width="1.6"/><ellipse cx="153" cy="165" rx="116" ry="6" fill="#938675" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M35 119H269V145H35Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M50 145V159M253 145V159" stroke="#8A5A35" stroke-width="4" stroke-linecap="round"/><circle cx="76" cy="85" r="9" fill="#E7B79C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M67 84Q67 72 77 72Q87 73 86 85L81 79H70Z" fill="#57463E"/><path d="M66 98Q76 92 86 98L90 118H62Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="228" cy="85" r="9" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.6"/><path d="M219 84Q219 72 229 72Q239 73 238 85L233 79H222Z" fill="#3A2E2B"/><path d="M218 98Q228 92 238 98L242 118H214Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M107 58L145 51L151 112L113 116Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M158 51L197 58L190 116L153 111Z" fill="#F5FAFD" stroke="#1E2A3B" stroke-width="2"/><path d="M117 72L139 68M118 79L141 75M117 100L138 97M163 70L186 74M162 78L184 82M161 100L182 104" stroke="#94A3B8" stroke-width="1.3"/><path d="M124 67L132 61L140 67L132 75Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.3"/><path d="M181 65L188 69" stroke="#4A72B2" stroke-width="1.8"/><path d="M174 58L162 85" stroke="#1E2A3B" stroke-width="3.5" stroke-linecap="round"/><path d="M174 58L162 85" stroke="#C88446" stroke-width="1.8" stroke-linecap="round"/><path d="M160 84L162 88L166 85" fill="#1E2A3B"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M113 122Q123 127 134 122M164 122Q175 127 185 122" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M52 129H252" stroke="#D89A6C" stroke-width="1.2"/><path d="M141 85L149 85M153 85L161 85" stroke="#F2C14E" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="88" rx="40" ry="48" fill="#FEF3C7" opacity=".17"/><path d="M98 50Q152 33 206 50" fill="none" stroke="#4A72B2" stroke-width="1.2" opacity=".6"/></g>
+</svg>

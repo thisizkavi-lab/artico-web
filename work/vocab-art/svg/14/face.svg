@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: face (Noun)
+  CONTEXTUAL_DEFINITION: The front of the head where eyes, nose, and mouth are found.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive face portrait
+  SYNONYM_GUARD: Show the full collection of facial features together; head includes skull, hair, ears, and neck.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean portrait card with soft halo.
+    - Context_Layer: Muted hairline and neck frame the facial area.
+    - Focal_Layer: Friendly face with brows, eyes, nose, cheeks, lips, and chin.
+    - Details_Layer: Subtle feature lines and ear edges.
+    - Lighting_Layer: Warm top-left cheek highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:face" data-archetype="expressive-portrait">
+  <defs><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="98" rx="111" ry="83" fill="#F3ECE1"/><ellipse cx="152" cy="96" rx="79" ry="74" fill="#FEF3C7" opacity=".35"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M115 143H189V180H115Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.7"/><path d="M95 92Q92 32 152 27Q214 30 209 94L200 129Q185 153 152 157Q119 153 103 129Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M100 73Q106 32 151 32Q190 32 203 68Q188 51 168 48Q133 42 107 75Z" fill="#64748B"/><path d="M100 71Q93 87 101 102M204 71Q212 87 203 102" fill="none" stroke="#94A3B8" stroke-width="3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M111 70Q111 44 151 43Q191 44 193 75L188 117Q181 141 152 146Q123 141 116 117Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M105 80Q96 75 98 91Q99 101 110 100M198 80Q207 75 205 91Q204 101 193 100" fill="#D99E83" stroke="#1E2A3B" stroke-width="1.8"/><path d="M123 82Q133 76 143 82M161 82Q171 76 181 82" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M124 91Q133 86 142 91M162 91Q171 86 180 91" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="134" cy="93" rx="3.7" ry="4.5" fill="#344254"/><ellipse cx="170" cy="93" rx="3.7" ry="4.5" fill="#344254"/><circle cx="135" cy="92" r="1.2" fill="#FFFFFF"/><circle cx="171" cy="92" r="1.2" fill="#FFFFFF"/><path d="M152 91L147 110Q152 114 158 110" fill="none" stroke="#9C6656" stroke-width="2"/><path d="M137 123Q152 134 168 123Q152 119 137 123Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.7"/><path d="M140 124Q152 127 165 124" fill="none" stroke="#F5D8CE" stroke-width="1.1"/><path d="M117 105Q122 102 127 105M177 105Q182 102 187 105" fill="none" stroke="#D9857F" stroke-width="2" opacity=".6"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M118 68Q128 53 145 51" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><path d="M122 101Q126 107 132 107M173 107Q179 106 183 101" fill="none" stroke="#E6B49E" stroke-width="1.1"/><path d="M145 148H159" stroke="#9C6656" stroke-width="1.1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="95" rx="82" ry="78" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".45"/></g>
+</svg>

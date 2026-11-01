@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: collaborate
+  CONTEXTUAL_DEFINITION: Work together with other people to achieve something.
+  PEDAGOGICAL_ART_DIRECTOR: Show coworkers contributing different parts to one shared result.
+  PEDAGOGICAL_ARCHETYPE: 16 - Joint contribution
+  SYNONYM_GUARD: Emphasize shared hands-on effort and a common output; coordinating arranges the parts, while collaborating means doing the work together.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place two coworkers facing one shared work surface, each adding a distinct interlocking piece to a single finished model at x=112..192, y=79..120. Keep their hands converging on the common result.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:collaborate" data-archetype="joint-contribution">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="collaborate-project" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="collaborate-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="collaborate-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="collaborate-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M37 123 H267 V136 H37 Z" fill="url(#collaborate-table)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M51 136 V146 M253 136 V146" stroke="#965D28" stroke-width="2.2"/><rect x="111" y="82" width="82" height="37" rx="3" fill="url(#collaborate-project)" stroke="#547A56" stroke-width="1.1"/><path d="M120 111 L137 94 L151 105 L166 89 L184 101" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M124 113 H181" stroke="#A8D4A2" stroke-width="1.5"/><path d="M119 75 H148 M158 75 H185" stroke="#64748B" stroke-width="1"/><path d="M120 75 L127 70 M148 75 L142 70 M158 75 L164 70 M185 75 L179 70" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#collaborate-shadow)"><path d="M53 121 Q55 99 67 92 L68 83 Q64 79 66 72 Q74 64 85 66 Q94 69 92 80 L90 87 Q101 92 103 119 L100 132 H57 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="79" cy="76" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M71 74 Q73 66 80 66 Q88 67 92 74 Q84 70 77 71 Z" fill="#3D342D"/><path d="M59 97 Q79 91 98 97" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M98 103 L119 100" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M118 100 L129 98" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M201 121 Q203 99 215 92 L216 83 Q212 79 214 72 Q222 64 233 66 Q242 69 240 80 L238 87 Q249 92 251 119 L248 132 H205 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="227" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M219 74 Q221 66 228 66 Q236 67 240 74 Q232 70 225 71 Z" fill="#3D342D"/><path d="M206 97 Q227 91 247 97" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M206 103 L190 99" stroke="#A8D4A2" stroke-width="4" stroke-linecap="round"/><path d="M190 99 L178 96" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M142 89 L151 83 L160 89" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="107" cy="55" r="2" fill="#8EB0DE"/><circle cx="196" cy="57" r="2" fill="#A8D4A2"/><path d="M112 127 H192" stroke="#DCE8D9" stroke-width="1"/><path d="M48 52 L54 48 M248 54 L254 50" stroke="#64748B" stroke-width="1.2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="81" rx="102" ry="66" fill="url(#collaborate-halo)" opacity=".16"/><path d="M109 84 H194" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

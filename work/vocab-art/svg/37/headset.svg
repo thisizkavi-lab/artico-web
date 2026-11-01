@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="37:headset" data-archetype="office-call-headset-with-microphone">
+<!-- SELF_PROMPT: Office equipment. Show a wearable call headset with a padded arch, two large earcups, and a short boom ending in a microphone. Coordinate plan: arch spans x=79..225 from y=42; earcups at x=73..112 and x=193..232, boom bends toward lower center. No person, words, or brand marks. -->
+<defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DCE8F4;--c-surface:#CBD5E1;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FEF9C3;--c-ink:#1E2A3B}</style><linearGradient id="stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DCE8F4"/></linearGradient><linearGradient id="cushion" x2="0" y2="1"><stop stop-color="#6D8DB8"/><stop offset="1" stop-color="#3D5F91"/></linearGradient><filter id="shade" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#stage)"/><path d="M0 151Q76 145 152 151T304 149V192H0Z" fill="#EAE3D5"/><ellipse cx="153" cy="171" rx="91" ry="8" fill="#D8CFBF"/><path d="M18 151H286" stroke="#D1C7B7" stroke-width="1.5" fill="none"/></g>
+<g id="layer-context"><path d="M41 42H263" stroke="#D6E1EB" stroke-width="1.3" fill="none"/><rect x="46" y="56" width="28" height="44" rx="3" fill="#F9FBFD" stroke="#CBD5E1" stroke-width="1.3"/><path d="M52 64h16m-16 6h16m-16 6h13" stroke="#B8C6D5" stroke-width="1.1" fill="none"/><circle cx="60" cy="91" r="3" fill="#7FB07A"/><path d="M228 117h32" stroke="#B87943" stroke-width="3" fill="none"/><path d="M235 120v22m20-22v22" stroke="#8F5C38" stroke-width="2.5" fill="none"/></g>
+<g id="layer-focal" filter="url(#shade)">
+<path d="M83 103V81Q83 40 151 40Q221 40 221 81V103" stroke="#1E2A3B" stroke-width="13" stroke-linecap="round" fill="none"/>
+<path d="M84 99V82Q84 48 151 48Q220 48 220 82V99" stroke="url(#cushion)" stroke-width="8" stroke-linecap="round" fill="none"/>
+<path d="M83 76q-11 0-14 12v40q3 13 14 13h15q10-2 10-13V89q0-13-10-13z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.4"/>
+<path d="M86 83q-8 1-8 10v29q0 8 8 9h8q7-1 7-9V92q0-8-7-9z" fill="url(#cushion)" stroke="#CBD5E1" stroke-width="1.3"/>
+<path d="M220 76q11 0 14 12v40q-3 13-14 13h-15q-10-2-10-13V89q0-13 10-13z" fill="#27364B" stroke="#1E2A3B" stroke-width="2.4"/>
+<path d="M217 83q8 1 8 10v29q0 8-8 9h-8q-7-1-7-9V92q0-8 7-9z" fill="url(#cushion)" stroke="#CBD5E1" stroke-width="1.3"/>
+<path d="M199 128q-7 19-27 20h-17" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M199 128q-7 17-27 17h-17" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" fill="none"/>
+<rect x="147" y="141" width="14" height="8" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/>
+<path d="M143 145h-9" stroke="#1E2A3B" stroke-width="2.2" fill="none"/>
+</g>
+<g id="layer-details"><path d="M98 53q22-12 45-8m18 0q23-4 42 9" stroke="#AFC8E4" stroke-width="2" fill="none"/><path d="M86 92v28m132-28v28" stroke="#8EA9CA" stroke-width="1.2" fill="none"/><circle cx="101" cy="127" r="2.3" fill="#F2C14E"/><circle cx="202" cy="127" r="2.3" fill="#7FB07A"/><path d="M141 137h11m-11 5h9" stroke="#CBD5E1" stroke-width="1.3" fill="none"/><path d="M66 85q-8 8-4 19m176-19q8 8 4 19" stroke="#5479AC" stroke-width="1.6" fill="none"/><path d="M151 153q-11 0-15 7m15-7q11 0 15 7" stroke="#5479AC" stroke-width="1.4" fill="none"/></g>
+<g id="layer-lighting"><path d="M109 48q25-10 50-5" stroke="#FFFFFF" stroke-width="1.4" opacity=".85" fill="none"/><path d="M78 84v25m145-25v25" stroke="#91B0D3" stroke-width="1.2" opacity=".8" fill="none"/><ellipse cx="153" cy="164" rx="53" ry="4" fill="#CFC5B6" opacity=".72"/></g>
+</svg>

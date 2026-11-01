@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: commute
+  CONTEXTUAL_DEFINITION: To make the same regular journey between home and work or study.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker aboard a local bus on a repeated route linking a home icon to an office icon, with a loop arrow.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial route diagram with repeated journey cue
+  SYNONYM_GUARD: The route repeats between home and workplace; this is not a one-off trip with vacation luggage or changing a setting.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Home at x=26..66 and office at x=238..278; bus centered x=90..211, y=91..142 with a briefcase-carrying rider visible; loop route traces from home to office and back above bus.
+; reviewed and reused for Lesson 75. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:commute" data-archetype="spatial-route-repeat">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="commute-bus" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EAAD0"/><stop offset="1" stop-color="#49688F"/></linearGradient>
+    <linearGradient id="commute-route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8FAF7D"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="commute-halo"><stop stop-color="#F5E7BB" stop-opacity=".58"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="commute-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="152" cy="159" rx="118" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M54 59 C97 22 207 22 250 59" fill="none" stroke="url(#commute-route)" stroke-width="3" stroke-linecap="round"/><path d="M247 54 L253 60 L244 63" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M251 75 C211 109 93 109 54 75" fill="none" stroke="#8FAF7D" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round"/><path d="M57 80 L50 74 L59 71" fill="none" stroke="#7DAA78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 95 L46 78 L66 95 V126 H26 Z" fill="#E7D8B9" stroke="#64748B" stroke-width="1.5"/><path d="M33 97 H59 V121 H33 Z" fill="#F7F1E4" stroke="#9B8564" stroke-width="1"/><path d="M238 72 H278 V128 H238 Z" fill="#D7E1E4" stroke="#64748B" stroke-width="1.5"/><path d="M244 79 H255 V91 H244 Z M260 79 H272 V91 H260 Z M244 98 H255 V110 H244 Z M260 98 H272 V110 H260 Z" fill="#BBD5E0" stroke="#7B8B94" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#commute-shadow)"><path d="M82 119 L91 94 Q94 87 104 86 H190 Q202 88 207 99 L214 121 V143 H81 Z" fill="url(#commute-bus)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M99 93 H124 V112 H92 Z M128 93 H154 V112 H128 Z M158 93 H185 V112 H158 Z" fill="#DCECF2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M126 91 V140 M156 91 V140" stroke="#1E2A3B" stroke-width="1.4"/><path d="M87 116 H207 V135 H87 Z" fill="#DCE4E8" stroke="#1E2A3B" stroke-width="1.4"/><path d="M90 123 H204" stroke="#F2C14E" stroke-width="2.4"/><path d="M132 107 Q132 99 139 99 Q146 99 146 107 V118 H132 Z" fill="#5479AC"/><circle cx="139" cy="95" r="5.5" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1"/><rect x="147" y="109" width="9" height="11" rx="1.5" fill="#C58B4E" stroke="#1E2A3B" stroke-width=".9"/><circle cx="109" cy="144" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="189" cy="144" r="10" fill="#263548" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="109" cy="144" r="4" fill="#E7EDF3"/><circle cx="189" cy="144" r="4" fill="#E7EDF3"/><circle cx="75" cy="59" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><circle cx="229" cy="59" r="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M101 98 H119 M132 98 H150 M162 98 H180" stroke="#FFFFFF" stroke-width="1"/><path d="M89 140 H125 M168 140 H204" stroke="#5479AC" stroke-width="1"/><path d="M75 49 Q81 43 87 49 M219 50 Q225 44 231 50" fill="none" stroke="#F2C14E" stroke-width="1.4"/><path d="M31 113 H43 M246 116 H271" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="88" rx="118" ry="73" fill="url(#commute-halo)" opacity=".13"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M28 149 H276" stroke="#1E2A3B" stroke-width=".8" opacity=".3"/></g>
+</svg>

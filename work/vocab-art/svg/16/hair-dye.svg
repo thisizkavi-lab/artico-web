@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hair dye (Noun)
+  CONTEXTUAL_DEFINITION: A preparation used to change the color of hair.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with before/after cue
+  SYNONYM_GUARD: Show a dye applicator and a hair swatch changing from dark to auburn.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and shadow.
+    - Context_Layer: Two hair locks, one before and one colored.
+    - Focal_Layer: Applicator bottle with nozzle.
+    - Details_Layer: Bowl and tint brush.
+    - Lighting_Layer: Soft gold halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hair dye" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="157" rx="111" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="153" cy="92" rx="116" ry="70" fill="#FEF3C7" opacity=".32"/>
+  <path d="M35 56Q53 42 71 56Q88 74 73 125Q66 145 49 151Q63 122 54 97Q46 77 35 56Z" fill="#63636A" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M233 54Q250 40 268 54Q284 72 269 123Q262 144 245 151Q259 121 250 96Q242 76 233 54Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M108 67H184L190 145Q188 155 178 155H115Q105 154 104 145Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.6"/><path d="M111 111H186L188 145Q187 151 178 151H115Q111 150 111 144Z" fill="#C88A61"/>
+  <path d="M114 57H177L186 69H105Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M136 57V44H173V54" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2"/><path d="M169 45L196 34" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 84Q145 91 174 84M117 95Q149 102 177 94" fill="none" stroke="#EED5C1" stroke-width="2"/><path d="M79 127Q91 117 102 127L98 145H75Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M82 130Q90 135 99 130" fill="none" stroke="#805A19" stroke-width="1.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M83 84Q93 82 103 86M202 84Q216 81 227 84" fill="none" stroke="#4A72B2" stroke-width="1.6" stroke-dasharray="3 4"/>
+</svg>

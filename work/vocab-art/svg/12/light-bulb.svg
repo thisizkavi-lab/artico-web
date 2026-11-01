@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: light bulb (Noun)
+  CONTEXTUAL_DEFINITION: A glass electric lamp that fits into a socket and gives light.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: Isolate one classic pear-shaped bulb with a visible screw base and glowing filament; the change-a-lightbulb card shows a person installing one.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet indoor workbench scene with a small socket at the lower right.
+    - Context_Layer: Simple ceramic lamp socket and warm halo establish the bulb's function.
+    - Focal_Layer: Large clear bulb at x=154,y=82 with glass dome from y=32..112 and metal screw base to y=142.
+    - Details_Layer: Curved filament, support wires, glass reflections, threaded base bands, and glow rays.
+    - Lighting_Layer: White glass reflections and soft amber glow around the filament.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:light bulb" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#F2C14E;--c-secondary:#D49B2A;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <radialGradient id="bulb-glow"><stop offset="0" stop-color="#FFF4C2" stop-opacity=".7"/><stop offset="1" stop-color="#FFF4C2" stop-opacity="0"/></radialGradient>
+    <linearGradient id="glass-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/><stop offset=".65" stop-color="#FFF4C2" stop-opacity=".18"/><stop offset="1" stop-color="#DCECFB" stop-opacity=".48"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 147H304V192H0Z" fill="#D9C6AB"/><path d="M0 143H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="154" cy="155" rx="63" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M213 129H265V148H213Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M219 129V119Q219 112 226 112H252Q259 112 259 119V129" fill="#F3ECE1" stroke="#1E2A3B" stroke-width="2"/><path d="M226 125H252" stroke="#94A3B8" stroke-width="2"/><path d="M213 148H265" stroke="#1E2A3B" stroke-width="2"/><path d="M239 106V94" stroke="#5479AC" stroke-width="2"/><path d="M226 97L220 91M252 97L258 91" stroke="#5479AC" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><ellipse cx="153" cy="82" rx="68" ry="64" fill="url(#bulb-glow)"/><path d="M132 108Q123 99 121 84Q118 56 141 40Q155 30 171 39Q194 52 190 82Q188 99 176 108L174 116H134Z" fill="url(#glass-grad)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M141 108Q134 96 134 83Q132 63 145 50Q155 42 164 46Q178 53 179 74Q179 94 169 108Z" fill="#FFF4C2" opacity=".38"/><path d="M149 105L149 84Q149 70 157 70Q165 70 165 84V105" fill="none" stroke="#D49B2A" stroke-width="2.2"/><path d="M142 100L149 91M172 100L165 91" stroke="#94A3B8" stroke-width="1.5"/><path d="M138 111H172V120L169 124V134L163 140H147L141 134V124L138 120Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.3"/><path d="M140 118H170M141 124H169M143 130H167M147 136H163" stroke="#64748B" stroke-width="1.4"/><path d="M145 114H165" stroke="#F1F5F9" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M135 54Q140 45 147 42" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity=".9"/><path d="M128 66Q125 80 131 91" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".8"/><path d="M153 76Q157 72 161 76M153 85Q157 81 161 85" fill="none" stroke="#F2C14E" stroke-width="1.4"/><circle cx="182" cy="58" r="2" fill="#FFFFFF"/><circle cx="185" cy="69" r="1.6" fill="#FFFFFF"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M132 52Q138 43 145 40" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".85"/><path d="M226 117H251" stroke="#FFFFFF" stroke-width="1.3" opacity=".7"/><ellipse cx="153" cy="83" rx="44" ry="42" fill="none" stroke="#FFF4C2" stroke-width="1.2" opacity=".4"/></g>
+</svg>

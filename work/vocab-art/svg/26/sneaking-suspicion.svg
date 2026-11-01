@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: sneaking suspicion (Noun phrase)
+  CONTEXTUAL_DEFINITION: A faint, private hunch that something may be true.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through faint clue
+  SYNONYM_GUARD: Show the hunch as a barely visible idea connected to an incomplete clue, distinct from a person actively having the suspicion or strong doubts.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet snack counter with a partly closed curtain.
+    - Context_Layer: A few crumbs lead toward a small hidden silhouette.
+    - Focal_Layer: A pale, translucent cookie outline appears in a dashed thought cloud above the clue trail.
+    - Details_Layer: One question-shaped curved path remains incomplete, emphasizing uncertainty.
+    - Lighting_Layer: Use faint slate and warm tones so the hunch feels quiet rather than proven.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:sneaking suspicion" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="suspicion-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="suspicion-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#suspicion-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="2.8"/><path d="M226 21H278V146H226Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.4"/><path d="M231 28H272V139H231Z" fill="#CBD5E1" opacity=".45"/><path d="M31 124H119V132H31Z" fill="#C88446"/><path d="M39 132V151M111 132V151" stroke="#965D28" stroke-width="2.5"/></g>
+  <g id="layer-context"><path d="M45 100Q47 91 56 91H91Q100 91 100 100V115H45Z" fill="#FCFEFF" stroke="#64748B" stroke-width="1.3"/><path d="M50 103Q74 97 95 103" fill="none" stroke="#D9857F" stroke-width="1.1"/><circle cx="61" cy="106" r="1.8" fill="#D9A441"/><circle cx="73" cy="108" r="1.8" fill="#D9A441"/><circle cx="86" cy="105" r="1.8" fill="#D9A441"/><path d="M108 119L112 117L115 120L113 124Z" fill="#D9A441" opacity=".7"/><path d="M131 116L134 114L137 117L135 120Z" fill="#D9A441" opacity=".6"/><path d="M251 86Q253 72 263 73Q273 74 272 87" fill="#27364B" opacity=".85"/><circle cx="262" cy="90" r="9" fill="#F5BFA3" opacity=".7"/><path d="M253 102Q263 98 273 102L278 119H248Z" fill="#F2C14E" opacity=".65"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#suspicion-shadow)"><path d="M124 39Q124 29 136 29H199Q211 29 211 40V59Q211 70 199 70H174L165 78L166 70H136Q124 70 124 59Z" fill="#FCFEFF" fill-opacity=".55" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="3 3"/><circle cx="168" cy="48" r="10" fill="#E3AC77" fill-opacity=".4" stroke="#94A3B8" stroke-width="1.1"/><circle cx="165" cy="46" r="1.4" fill="#64748B" opacity=".55"/><circle cx="171" cy="50" r="1.4" fill="#64748B" opacity=".55"/><circle cx="173" cy="44" r="1.4" fill="#64748B" opacity=".55"/><path d="M177 83C194 85 211 88 232 94" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="2 5"/><path d="M162 101C152 102 146 107 147 114C148 120 156 121 162 117C167 114 169 108 166 104" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/><path d="M145 145Q160 139 176 145" fill="none" stroke="#CBD5E1" stroke-width="2" opacity=".55"/><path d="M30 146Q45 138 59 144M280 146Q291 140 302 145" fill="none" stroke="#7FB07A" stroke-width="2.2" opacity=".55"/></g>
+  <g id="layer-details"><path d="M103 115C115 113 122 110 132 107" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="2 5" opacity=".65"/><circle cx="215" cy="88" r="2" fill="#CBD5E1"/><circle cx="220" cy="92" r="1.5" fill="#CBD5E1"/><path d="M154 84L159 82M165 85L169 83" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round"/><ellipse cx="169" cy="151" rx="48" ry="4" fill="#DDD4C3" opacity=".45"/></g>
+  <g id="layer-lighting"><ellipse cx="165" cy="83" rx="115" ry="68" fill="#FEF9C3" opacity=".04"/><path d="M124 39Q124 29 136 29H199" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

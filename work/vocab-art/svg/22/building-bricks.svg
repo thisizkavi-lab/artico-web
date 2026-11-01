@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: building bricks (Noun)
+  CONTEXTUAL_DEFINITION: Interlocking plastic toy pieces that click together to make structures.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: Bright plastic pieces with visible studs and slots form a connected wall, unlike separate wooden building blocks.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Organized playroom floor with low storage bin.
+    - Context_Layer: A child's hands connect two pieces.
+    - Focal_Layer: A colorful interlocking brick wall with studs.
+    - Details_Layer: A few loose plastic bricks and seams.
+    - Lighting_Layer: Glossy highlights on the molded plastic.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:building bricks" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bricks-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="bricks-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bricks-bg)"/><path d="M0 151Q75 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 34H92V94H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 35V93M22 64H91" stroke="#FFFFFF" stroke-width="2.5"/><path d="M210 54H277V112H210Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.6"/><path d="M218 65H269M218 76H269" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M9 106Q24 97 39 105L59 117L49 128L27 117L12 124Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.6"/><path d="M296 109Q282 99 267 106L249 119L259 129L279 118L293 124Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.6"/><path d="M30 112L48 122M276 112L259 123" stroke="#C98961" stroke-width="4" stroke-linecap="round"/><path d="M42 139L54 130M262 139L251 130" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#bricks-shadow)"><g stroke="#1E2A3B" stroke-width="1.7"><rect x="74" y="112" width="42" height="31" rx="4" fill="#D9857F"/><rect x="118" y="112" width="42" height="31" rx="4" fill="#5479AC"/><rect x="162" y="112" width="42" height="31" rx="4" fill="#91A77C"/><rect x="96" y="78" width="42" height="31" rx="4" fill="#D9A441"/><rect x="140" y="78" width="42" height="31" rx="4" fill="#D9857F"/><rect x="118" y="44" width="42" height="31" rx="4" fill="#5479AC"/><path d="M74 132H116M118 132H160M162 132H204M96 98H138M140 98H182M118 64H160" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".65"/></g><g fill="#F3A2A5" stroke="#1E2A3B" stroke-width="1.1"><circle cx="85" cy="112" r="4"/><circle cx="104" cy="112" r="4"/><circle cx="129" cy="112" r="4"/><circle cx="148" cy="112" r="4"/><circle cx="173" cy="112" r="4"/><circle cx="192" cy="112" r="4"/><circle cx="107" cy="78" r="4"/><circle cx="126" cy="78" r="4"/><circle cx="151" cy="78" r="4"/><circle cx="170" cy="78" r="4"/><circle cx="129" cy="44" r="4"/><circle cx="148" cy="44" r="4"/></g></g>
+  <g id="layer-details"><rect x="54" y="148" width="20" height="13" rx="3" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="60" cy="148" r="3.2" fill="#F0C971" stroke="#1E2A3B" stroke-width="1"/><circle cx="68" cy="148" r="3.2" fill="#F0C971" stroke="#1E2A3B" stroke-width="1"/><rect x="210" y="142" width="27" height="16" rx="3" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="218" cy="142" r="3.2" fill="#B9C99D" stroke="#1E2A3B" stroke-width="1"/><circle cx="229" cy="142" r="3.2" fill="#B9C99D" stroke="#1E2A3B" stroke-width="1"/><path d="M88 118Q96 114 104 118M150 84Q159 80 168 84" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="143" cy="99" rx="92" ry="71" fill="#FEF9C3" opacity=".12"/><path d="M97 30Q151 13 207 31" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".65"/></g>
+</svg>

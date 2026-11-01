@@ -1,0 +1,41 @@
+{
+  "lesson": 15,
+  "chapter_title": "Clothes",
+  "domain_setting": "A calm clothing studio with garment silhouettes, fabric swatches, fitting moments, and modest getting-dressed scenes.",
+  "ambient_palette": {
+    "paper": "#FAF8F3",
+    "warm_wall": "#F3ECE1",
+    "cloth_blue": "#5479AC",
+    "cloth_slate": "#CBD5E1",
+    "cloth_coral": "#D9857F",
+    "cloth_gold": "#D9A441",
+    "ink": "#1E2A3B"
+  },
+  "recurring_scale_anchors": [
+    "304x192 cards with garment contours inside x=24..280 and y=16..176",
+    "Garment parts use a muted whole with one rich-color target when the vocabulary names a single component",
+    "Textile patterns are large enough to read at 152x96; irregular spots stay distinct from even polka dots",
+    "Dressing scenes stay modest and show clothing over normal underlayers",
+    "Use different garment silhouettes and palettes to separate nearby clothing terms"
+  ],
+  "polysemy_resolution_table": {
+    "dress": "The verb: an adult helps a fully clothed child put on a jacket, matching the Japanese gloss and clothing group.",
+    "uniform": "A standard outfit worn by a school or work group, despite the adjective gloss.",
+    "tie (clothing)": "A necktie garment, distinguished from the verb tie by the clothing group.",
+    "dressing gown": "A loose, long indoor robe worn over sleep clothes; visually distinct from the bathrobe garment card.",
+    "spotted": "Irregular organic spots on cloth, not evenly spaced polka dots.",
+    "styles": "Visible clothing styles shown as different garment silhouettes, not abstract art style.",
+    "do up": "Close a jacket zipper from bottom to top; fasten is the belt buckle and undo is opening a zipper.",
+    "get changed": "A person completes an outfit change in a fitting room, not merely pulling on one garment.",
+    "suit (someone)": "Clothing that flatters a person in color and style, separate from the size fit concept.",
+    "unfasten": "Open a shirt cuff button, separate from undoing a zipper and fastening a belt."
+  },
+  "contrast_notes": {
+    "dress / put on / change clothes / get changed / take off": "Dress shows one person helping another; put on shows pulling on one garment; change clothes shows outfit choice; get changed shows a completed personal outfit change; take off shows removal.",
+    "bathrobe / dressing gown / pajamas": "Keep robes distinct from two-piece sleepwear through silhouette and use scene.",
+    "jockey shorts / boxer shorts / panties / underwear / tights / pantyhose / leggings": "Use clear garment boundaries, coverage lengths, foot coverage, and waist bands so similar garments remain distinguishable.",
+    "checked / polka dot / spotted / striped / plain": "Show checks, even circles, irregular spots, parallel stripes, and a solid unpatterned fabric as separate surface patterns.",
+    "fasten / do up / undo / unfasten": "Use a belt buckle, zipper closed, zipper opened, and shirt cuff button opened respectively.",
+    "fit / suit someone / size": "Fit refers to garment measurements, suit someone to flattering appearance, and size to a measurable clothing range."
+  }
+}

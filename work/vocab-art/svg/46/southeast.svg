@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: southeast
+  CONTEXTUAL_DEFINITION: The compass bearing halfway between south and east, toward the lower-right on a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Use a clear lower-right travel route and a compass rose whose southeast diagonal alone is illuminated.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: Make both components visible: southward and eastward, not merely one cardinal direction.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Green park map occupies x=15..224; route descends right from (36,39) to (197,150); compass at (256,75) highlights southeast.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:southeast" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="se-park" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5EEDB"/><stop offset="1" stop-color="#BAD4B8"/></linearGradient>
+    <linearGradient id="se-path" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#79A6CF"/></linearGradient>
+    <radialGradient id="se-focus"><stop stop-color="#F5D36C" stop-opacity=".5"/><stop offset="1" stop-color="#F5D36C" stop-opacity="0"/></radialGradient>
+    <filter id="se-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 168H304V192H0Z" fill="#E7E0D4"/><path d="M0 168H304" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="200" cy="149" r="32" fill="url(#se-focus)"/></g>
+  <g id="layer-context"><path d="M14 19L220 21L224 168L13 166Z" fill="url(#se-park)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M17 70H221M17 119H221M67 20V166M132 20V166M190 20V167" stroke="#A9B8A5" stroke-width="1.4"/><path d="M33 39L70 62L111 89L151 116L198 147" fill="none" stroke="#B8AA91" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 39L70 62L111 89L151 116L198 147" fill="none" stroke="#F7F3E9" stroke-width="1.7" stroke-dasharray="5 6"/><circle cx="48" cy="124" r="13" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="97" cy="42" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="171" cy="50" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M183 26H211V47H183Z" fill="#DAB995" stroke="#756452" stroke-width="1.6"/></g>
+  <g id="layer-focal" filter="url(#se-shadow)"><circle cx="256" cy="75" r="37" fill="#FCFBF5" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="256" cy="75" r="29" fill="#E8EEEE" stroke="#9AA9AC" stroke-width="1.2"/><path d="M256 40L263 71L256 75L249 71Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M291 75L260 82L256 75L260 68Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M256 110L249 79L256 75L263 79Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M221 75L252 68L256 75L252 82Z" fill="#AAB8BA" stroke="#1E2A3B" stroke-width="1.1"/><path d="M280 99L258 78L263 74Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M269 94L286 108L266 102Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="256" cy="75" r="4" fill="#1E2A3B"/><path d="M197 147C187 143 188 127 201 122C214 127 211 143 197 147Z" fill="#B97552" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="197" cy="126" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M39 43L190 142" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/><path d="M39 43L190 142" stroke="url(#se-path)" stroke-width="6.5" stroke-linecap="round"/><path d="M180 145L205 152L198 128Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="39" cy="43" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M244 34L250 43M291 58L282 64M281 96L274 91M229 101L236 94" stroke="#778991" stroke-width="1.8" stroke-linecap="round"/><path d="M83 56L88 60M123 96L128 100M159 126L164 130" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><circle cx="256" cy="75" r="42" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/><path d="M27 27H116" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M185 146Q198 152 211 146" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".7"/></g>
+</svg>

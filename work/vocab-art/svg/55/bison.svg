@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: bison (noun)
+  CONTEXTUAL_DEFINITION: A massive American wild bovine with a pronounced shaggy shoulder hump.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining silhouette
+  SYNONYM_GUARD: The tall hump, woolly dark forequarters, beard, and short curved horns distinguish a bison from the flatter-backed African buffalo.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show the bison in side profile facing right; enormous shoulder hump fills x=92..177 y=47..119, lower rump x=168..237, head x=203..253. Four short sturdy legs reach ground; horns curve outward at y=72. Open grassland behind it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:bison" data-archetype="shaggy-humped-bison">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#8B5E3C;--c-secondary:#4A352A;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bison-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#E8F0F2"/><stop offset="1" stop-color="#F8F0E1"/></linearGradient>
+    <linearGradient id="bison-coat" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#8A6650"/><stop offset="1" stop-color="#49352B"/></linearGradient>
+    <radialGradient id="bison-field"><stop stop-color="#FCE29C" stop-opacity=".52"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="bison-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bison-sky)"/><path d="M0 126 Q63 116 124 126 T240 124 Q280 118 304 125 V192 H0Z" fill="#E9D9B9"/><path d="M0 151 Q64 142 136 151 T304 149 V192 H0Z" fill="#D4C197"/><ellipse cx="159" cy="162" rx="112" ry="8" fill="#C5B38E" opacity=".52"/></g>
+  <g id="layer-context"><path d="M27 147 l5-23 m-5 15-7-8 m7 11 8-10 M270 147 l4-20 m-4 13-6-7 m6 11 8-9" fill="none" stroke="#7B8F62" stroke-width="1.9" stroke-linecap="round"/><path d="M54 123 Q71 113 88 120 M237 119 Q254 112 269 120" fill="none" stroke="#BCA77F" stroke-width="1.4"/><ellipse cx="151" cy="101" rx="82" ry="67" fill="url(#bison-field)"/></g>
+  <g id="layer-focal" filter="url(#bison-shadow)"><path d="M93 107 Q86 89 93 67 Q101 42 126 38 Q153 33 176 52 Q190 65 192 88 Q208 80 228 88 L243 100 L240 117 Q221 129 191 130 L122 134 Q101 128 93 107Z" fill="url(#bison-coat)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M94 73 Q79 61 82 50 Q91 56 96 63 M176 69 Q192 58 198 50 Q200 63 190 75" fill="#6D4936" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M215 87 Q231 80 243 87 L254 98 L251 110 L238 112 Q229 122 214 120 L201 108Z" fill="#654632" stroke="#1E2A3B" stroke-width="2"/><path d="M204 90 Q197 81 190 85 Q195 95 205 97 M241 87 Q251 79 258 84 Q255 94 245 97" fill="none" stroke="#D6B895" stroke-width="3.2" stroke-linecap="round"/><ellipse cx="248" cy="104" rx="7" ry="5" fill="#312720"/><circle cx="231" cy="95" r="1.8" fill="#1E2A3B"/><path d="M244 110 Q250 114 255 109" fill="none" stroke="#2F241E" stroke-width="1.2" stroke-linecap="round"/><path d="M116 116 L114 147 Q116 154 126 154 L134 151 L130 146 L122 147 L125 126 M151 123 L153 149 Q155 155 165 154 L173 151 L169 146 L162 147 L160 124 M191 121 L197 146 Q200 152 209 148 L214 143 L208 141 L203 143 L201 118 M222 119 L231 141 Q236 145 243 140 L246 135 L240 133 L235 136 L230 115" fill="none" stroke="#4A352A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M114 152 l-2 4 m11-4 1 4 m36-4-1 4 m11-5 2 4 m31-5 1 4 m10-6 3 3" fill="none" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/><path d="M102 91 Q116 67 141 69 M145 72 Q166 70 180 92 M98 108 Q111 118 126 117" fill="none" stroke="#A17E62" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M99 63 Q109 46 124 44 M135 41 Q156 42 168 56" fill="none" stroke="#B8997C" stroke-width="1.4"/><path d="M127 118 Q140 132 156 130 M173 111 Q183 121 193 120" fill="none" stroke="#AF8B6A" stroke-width="1.3"/><path d="M262 122 l4 3 m-221 5-4 3" fill="none" stroke="#EAE0C9" stroke-width="1.2"/><circle cx="200" cy="77" r="1.3" fill="#C6A889"/></g>
+  <g id="layer-lighting"><path d="M97 71 Q103 48 123 42" fill="none" stroke="#C6A889" stroke-width="1.6" opacity=".8"/><path d="M216 91 Q228 85 240 91" fill="none" stroke="#A78363" stroke-width="1.3"/><ellipse cx="145" cy="74" rx="43" ry="25" fill="#FFFFFF" opacity=".07"/></g>
+</svg>

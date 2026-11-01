@@ -1,0 +1,39 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: sea lion (noun)
+  CONTEXTUAL_DEFINITION: A sea lion balancing upright on its large front flippers, with visible external ear flaps.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with distinguishing body parts and pose
+  SYNONYM_GUARD: Show little external ears and long front flippers; true seals have no external ear flaps and do not prop themselves upright this way.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Brown sea lion sits tall on a grey coastal rock at x=133..226; raised neck and round head near x=199,y=66; small visible ear flap, whiskers, two long foreflippers planted on rock, water behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:sea lion" data-archetype="sea-lion-external-ears-upright-flippers">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#966F4C;--c-secondary:#4B4B42;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="sea-lion-sky" x2="0" y2="1"><stop stop-color="#DDEBF0"/><stop offset="1" stop-color="#F3F0E7"/></linearGradient>
+  <linearGradient id="sea-lion-sea" x2="0" y2="1"><stop stop-color="#78B3BD"/><stop offset="1" stop-color="#3D7C90"/></linearGradient>
+  <linearGradient id="sea-lion-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B08A62"/><stop offset="1" stop-color="#76553D"/></linearGradient>
+  <filter id="sea-lion-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sea-lion-sky)"/><path d="M0 93Q76 85 152 94T304 89V192H0Z" fill="#B9D6D6"/><path d="M0 114Q75 105 152 115T304 110V192H0Z" fill="url(#sea-lion-sea)"/><path d="M0 159Q75 151 152 159T304 154V192H0Z" fill="#538A94"/><circle cx="59" cy="40" r="18" fill="#F0D590" opacity=".43"/></g>
+ <g id="layer-context"><path d="M0 115Q78 106 152 116T304 111" fill="none" stroke="#E1F1EC" stroke-width="1.8"/><path d="M17 140q15-5 30 0m212-7q15-5 29 0" fill="none" stroke="#B7D8D8" stroke-width="1.4" stroke-linecap="round"/><path d="M74 159L92 137L119 151L140 128L165 145L190 130L222 151L243 139L268 160Z" fill="#817F70" stroke="#666A63" stroke-width="1.4"/><path d="M82 157l24-8 24 5m23-8 21 8m13-5 25 9" fill="none" stroke="#B7AE94" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="174" cy="159" rx="75" ry="6" fill="#273E43" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#sea-lion-shadow)">
+  <path d="M155 135Q133 132 116 145Q124 154 149 151L172 143Z" fill="#806044" stroke="#594634" stroke-width="1.4"/>
+  <path d="M143 128Q132 113 144 91Q151 76 171 75Q194 76 204 94Q209 111 194 132Q179 145 157 143Z" fill="url(#sea-lion-fur)" stroke="#5D4635" stroke-width="1.6"/>
+  <path d="M159 136Q157 119 169 104Q181 93 194 96Q200 106 190 121Q181 135 177 145Z" fill="#9D7958" stroke="#634B37" stroke-width="1.1"/>
+  <path d="M167 83Q165 66 179 58Q194 57 204 70Q211 82 204 95Q193 106 179 99Q167 95 167 83Z" fill="url(#sea-lion-fur)" stroke="#5D4635" stroke-width="1.4"/>
+  <path d="M168 73Q159 68 160 61Q168 59 173 69Z" fill="#79563C" stroke="#594431" stroke-width="1"/>
+  <path d="M198 70Q207 65 209 72Q207 79 201 80Z" fill="#79563C" stroke="#594431" stroke-width="1"/>
+  <ellipse cx="205" cy="84" rx="8" ry="5.5" fill="#D7C2A2"/>
+  <circle cx="198" cy="76" r="1.9" fill="#1E2A3B"/>
+  <ellipse cx="211" cy="83" rx="2.1" ry="1.5" fill="#372D25"/>
+  <path d="M205 88q5 3 9 0m-9-2q-7 2-10 0" fill="none" stroke="#594535" stroke-width="1" stroke-linecap="round"/>
+  <path d="M207 85l9-3m-10 5 10 2m-12-3 8 5" fill="none" stroke="#E5D6C1" stroke-width=".8" stroke-linecap="round"/>
+  <path d="M147 133Q128 139 121 156Q130 162 143 150L159 137Z" fill="#B59A78" stroke="#5F4A38" stroke-width="1.4"/>
+  <path d="M178 133Q195 139 208 154Q204 162 191 155L172 141Z" fill="#B59A78" stroke="#5F4A38" stroke-width="1.4"/>
+  <path d="M122 155l8 2m-5-7 8 2m75 2 7 2m-10-7 7 2" fill="none" stroke="#66503B" stroke-width="1" stroke-linecap="round"/>
+  <path d="M149 92q7 8 14 8m8 23q-7 8-8 16" fill="none" stroke="#C1A17A" stroke-width="1.2" opacity=".75" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="102" cy="100" r="2" fill="#E7F7F2"/><circle cx="109" cy="91" r="1.2" fill="#E7F7F2"/><path d="M51 126q14-4 27 0m190-3q13-4 25 0" fill="none" stroke="#C6E3E0" stroke-width="1.3" stroke-linecap="round"/><path d="M174 64q8-4 15 0m-28 48q-3 6-2 11" fill="none" stroke="#D4B58C" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M174 63q8-8 17-3m2 30q6 3 8 8" fill="none" stroke="#F8E7C6" stroke-width="1.5" opacity=".58" stroke-linecap="round"/><ellipse cx="178" cy="99" rx="29" ry="34" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

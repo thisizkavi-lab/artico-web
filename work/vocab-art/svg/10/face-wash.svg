@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: face wash (Noun)
+  CONTEXTUAL_DEFINITION: A cleanser used with water to wash the skin of the face.
+  PEDAGOGICAL_ARCHETYPE: 1 (Product with use cue)
+  SYNONYM_GUARD: Show cleansing gel squeezing from a tube beside a foamy face-washing scene, unlike a moisturizing cream jar.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled wash area.
+    - Context_Layer: Simple face outline with water and foam.
+    - Focal_Layer: Soft squeeze tube with flip cap open.
+    - Details_Layer: Small cleanser dollop and bubbles.
+    - Lighting_Layer: Cool clean highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:face wash" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="154" cy="168" rx="70" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M188 59 Q207 39 229 53 Q249 67 241 101 Q232 126 209 127 Q186 119 183 93 Q182 71 188 59Z" fill="#E7B68E" stroke="#1E2A3B" stroke-width="2.2"/><path d="M188 75 Q207 62 238 76 M193 90 Q197 97 202 90 M226 90 Q231 97 235 90" fill="none" stroke="#5479AC" stroke-width="2.5" stroke-linecap="round"/><path d="M202 110 Q214 118 226 109" fill="none" stroke="#A9543F" stroke-width="1.7"/><circle cx="190" cy="66" r="7" fill="#FFFFFF"/><circle cx="238" cy="70" r="6" fill="#FFFFFF"/><circle cx="235" cy="112" r="5" fill="#FFFFFF"/></g>
+  <g id="layer-focal"><path d="M73 68 Q73 59 83 59 H143 Q153 59 153 69 V131 Q153 139 145 139 H81 Q73 139 73 131Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="2.4"/><path d="M81 68 H145 V121 H81Z" fill="#B9D7AE"/><path d="M91 59 V48 H136 V59" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M102 47 H125 V39 H102Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="1.5"/><path d="M98 139 H129 V146 Q129 152 122 152 H105 Q98 152 98 146Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M147 152 Q158 146 168 153 Q172 160 162 164 Q150 163 147 152Z" fill="#E8F1F2" stroke="#B8CDD1" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M88 78 H138 M88 84 H138" stroke="#E8F1F2" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

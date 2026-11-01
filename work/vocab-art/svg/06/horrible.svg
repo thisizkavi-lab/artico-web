@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: horrible (Adjective)
+  CONTEXTUAL_DEFINITION: Extremely unpleasant and upsetting, shown by a ruined, smoke-blackened cake after a cooking mishap.
+  PEDAGOGICAL_ARCHETYPE: 3 (Very bad outcome with a strong negative reaction)
+  SYNONYM_GUARD: The charred, fallen birthday cake is a terrible result; it is a severe failure, not moldy food or a mere letdown.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter with a smoky oven at the rear.
+    - Context_Layer: Baker recoils with hands raised and wide eyes.
+    - Focal_Layer: Collapsed blackened cake beside an open oven.
+    - Details_Layer: Smoke wisps, crumbs and toppled plate.
+    - Lighting_Layer: Warm oven glow against the darkened cake.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:horrible" data-archetype="expressive-bust">
+  <defs><linearGradient id="kitchen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#EAE3D5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#kitchen)"/><path d="M0 141 Q151 135 304 143 L304 192 L0 192Z" fill="#B97840"/><rect x="24" y="30" width="77" height="69" rx="7" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M36 41 L90 41 L90 87 L36 87Z" fill="#27364B" stroke="#1E2A3B" stroke-width="2"/><path d="M45 75 Q63 65 81 75 L81 85 L45 85Z" fill="#E97832"/><ellipse cx="157" cy="163" rx="106" ry="8" fill="#8D552E"/></g>
+  <g id="layer-context"><path d="M32 147 Q35 122 57 119 Q79 122 81 147Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="57" cy="103" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M39 102 Q40 81 58 83 Q76 85 75 104 Q66 93 56 94Z" fill="#6B4B35"/><ellipse cx="51" cy="104" rx="3" ry="4" fill="#FFFFFF"/><ellipse cx="63" cy="104" rx="3" ry="4" fill="#FFFFFF"/><ellipse cx="57" cy="115" rx="4" ry="5" fill="#A34F47"/><path d="M38 126 Q29 115 26 106 M75 126 Q84 115 87 106" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M111 138 Q119 125 137 127 Q149 117 166 126 Q181 128 190 139 L181 147 L121 147Z" fill="#3D2D25" stroke="#1E2A3B" stroke-width="2.5"/><path d="M122 133 Q132 126 141 132 M151 132 Q161 124 173 133" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M123 132 Q137 127 151 133 Q165 128 179 135" fill="none" stroke="#C88446" stroke-width="2"/><path d="M101 147 L201 147 L212 155 L96 155Z" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/><path d="M190 99 Q212 91 229 101 L229 142 L190 142Z" fill="#64748B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M199 106 L220 106 L220 135 L199 135Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M221 123 L237 115" stroke="#1E2A3B" stroke-width="2.3"/><path d="M108 140 L99 133 M198 146 L207 151" stroke="#8D552E" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M123 82 Q114 71 123 61 M151 76 Q143 66 152 56 M179 84 Q187 74 181 65" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/><path d="M77 70 L82 60 L87 70 L97 75 L87 80 L82 90 L77 80 L67 75Z" fill="#F2C14E"/><path d="M44 86 Q49 80 54 84 M62 84 Q68 79 72 85" fill="none" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M46 37 Q65 34 87 39 M200 110 Q210 105 220 110" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

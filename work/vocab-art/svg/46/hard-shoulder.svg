@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: hard shoulder
+  CONTEXTUAL_DEFINITION: The paved emergency stopping strip along the outside of a motorway.
+  PEDAGOGICAL_ART_DIRECTOR: Show fast motorway lanes separated by a solid edge line from a distinct paved side strip where a disabled car has stopped.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make this the broad paved motorway emergency lane, not a body shoulder or an ordinary curb.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Three lanes occupy x=22..212; solid edge line at x=218; separate paved shoulder fills x=224..278; stopped car centered at (250,104).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:hard shoulder" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="shoulder-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DFEBD9"/><stop offset="1" stop-color="#BCD2B7"/></linearGradient>
+    <linearGradient id="shoulder-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#697A8B"/><stop offset="1" stop-color="#44576B"/></linearGradient>
+    <linearGradient id="shoulder-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3B86C"/><stop offset="1" stop-color="#C98247"/></linearGradient>
+    <radialGradient id="shoulder-halo"><stop stop-color="#F2C14E" stop-opacity=".4"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="shoulder-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#shoulder-land)"/><path d="M15 6H220V186H15Z" fill="url(#shoulder-road)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M229 6H282V186H229Z" fill="#AAAFAE" stroke="#657582" stroke-width="1.7"/><path d="M220 0V192" stroke="#FAF8F3" stroke-width="4.2"/><path d="M22 0V192M86 0V192M151 0V192" stroke="#FAF8F3" stroke-width="1.8" stroke-dasharray="10 9" opacity=".7"/><path d="M286 0V192" stroke="#75897A" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M2 40H13M2 152H13M287 36H303M287 153H303" stroke="#71916F" stroke-width="3"/><circle cx="9" cy="64" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><circle cx="9" cy="126" r="11" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><circle cx="296" cy="64" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><circle cx="296" cy="127" r="11" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#shoulder-shadow)"><ellipse cx="255" cy="100" rx="42" ry="62" fill="url(#shoulder-halo)"/><g transform="rotate(90 256 98)"><path d="M235 82Q239 72 250 72H263Q275 73 280 84L284 111H231Z" fill="url(#shoulder-car)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M242 80H270L275 96H238Z" fill="#BED8E0" stroke="#536A7B" stroke-width="1.3"/><circle cx="240" cy="110" r="4.5" fill="#354A5D" stroke="#1E2A3B" stroke-width="1"/><circle cx="276" cy="110" r="4.5" fill="#354A5D" stroke="#1E2A3B" stroke-width="1"/><path d="M233 86L230 93M282 86L286 93" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/></g><path d="M241 74L248 64M265 137L273 128" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M25 53H73M91 53H139M156 53H205M25 137H73M91 137H139M156 137H205" stroke="#D2DBE2" stroke-width="1.2" stroke-dasharray="4 6"/><path d="M222 18V174" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><path d="M233 24H278M233 169H278" stroke="#D8DBD6" stroke-width="1.5"/><circle cx="251" cy="99" r="4" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M21 4H213M21 188H213" stroke="#A9B5C0" stroke-width="1" opacity=".5"/><ellipse cx="255" cy="99" rx="47" ry="69" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".52"/><path d="M230 4V43M282 4V43" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+</svg>

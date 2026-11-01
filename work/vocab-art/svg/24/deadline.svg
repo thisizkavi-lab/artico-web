@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: deadline (Noun)
+  CONTEXTUAL_DEFINITION: The latest time or date by which work must be submitted.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Depict the due point as a highlighted final slot on a calendar beside a ticking clock and waiting assignment, not a person submitting early or late.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Study desk and wall calendar.
+    - Context_Layer: Assignment folder and analog clock.
+    - Focal_Layer: Last calendar square highlighted as a firm cutoff.
+    - Details_Layer: A short line of remaining work leading to the marked point.
+    - Lighting_Layer: Strong warm highlight on the final due point.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:deadline" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="deadline-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="deadline-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#deadline-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="238" cy="51" r="24" fill="#FFFEFA" stroke="#64748B" stroke-width="1.7"/><path d="M238 35V51L249 59" fill="none" stroke="#D9857F" stroke-width="2.4" stroke-linecap="round"/><path d="M47 124H101V141H47Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M53 129H95" stroke="#DCECFB" stroke-width="1.1"/><path d="M52 24H188V104H52Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.6"/><path d="M52 42H188" stroke="#5479AC" stroke-width="2.5"/><path d="M65 52H102V72H65ZM108 52H145V72H108ZM151 52H176V72H151ZM65 78H102V95H65ZM108 78H145V95H108ZM151 78H176V95H151Z" fill="#E3E8F0" stroke="#AFC5DA" stroke-width="1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#deadline-shadow)"><path d="M151 76H176V99H151Z" fill="#F6D777" stroke="#D9857F" stroke-width="2.2"/><path d="M164 48V100" stroke="#D9857F" stroke-width="2.4"/><path d="M159 48H169M159 100H169" stroke="#A95059" stroke-width="2"/><path d="M64 76H102M108 76H145" stroke="#5479AC" stroke-width="1.3"/><path d="M64 60H102M108 60H145" stroke="#5479AC" stroke-width="1.3"/><path d="M67 130L103 119L129 122L157 108" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="4 4"/><circle cx="157" cy="108" r="4" fill="#D9857F"/></g>
+  <g id="layer-details"><path d="M155 84L161 90L172 79" fill="none" stroke="#A95059" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M230 23V28M246 30L250 26" stroke="#D9A441" stroke-width="1.5"/><path d="M53 43H187" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="88" rx="127" ry="70" fill="#FEF9C3" opacity=".11"/><path d="M52 24H188V104" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><circle cx="164" cy="87" r="23" fill="#FEF9C3" opacity=".12"/></g>
+</svg>

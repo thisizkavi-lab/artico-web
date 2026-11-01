@@ -1,0 +1,163 @@
+{
+  "chapter": 67,
+  "chapter_title": "Media and celebrity",
+  "palette": [
+    "#F0EEE8",
+    "#C8B89E",
+    "#26384A",
+    "#597D8B",
+    "#B85E5A",
+    "#D6A64C",
+    "#798C72",
+    "#F6E5CE",
+    "#E7D6D1"
+  ],
+  "recurring_scale_anchors": [
+    "304×192 canvas; use one large primary cue and a small number of context cues so media concepts read at card size.",
+    "No readable words, captions, labels, logos, brands, letters or numerals; use blank bars, recognizable icons, imagery and device shapes only.",
+    "Differentiate public celebrity attention from online content creation, news reporting, and intrusive paparazzi photography.",
+    "Use a phone or screen only when it clarifies the media platform; avoid generic floating interface panels.",
+    "Keep people, cameras, paper folds and simple social icons large enough to read at card size."
+  ],
+  "polysemy_resolution_table": {
+    "become a celebrity": "A previously ordinary person steps into public fame, shown by a clear before-to-after change into a spotlight and public recognition.",
+    "celebrity": "A famous person recognized and warmly approached by fans; distinguish the individual from celebrity culture and press photographers.",
+    "celebrity culture": "A public fascination with famous people, shown as a crowd consuming celebrity images and news.",
+    "influencer": "An online creator makes a recommendation or demonstration directly to followers through a phone camera; not merely a famous actor.",
+    "paparazzi": "Professional photographers pursue a public figure for intrusive candid pictures, using long lenses and camera flashes.",
+    "red carpet": "A formal premiere arrival route lined with photographers and a featured guest; the carpet itself is the event cue.",
+    "reality show": "An unscripted participant is filmed during an ordinary real-life challenge; not a scripted drama.",
+    "talent show": "A performer demonstrates a skill on a competition stage before judges or an audience.",
+    "opening night": "The first public evening performance of a play, marked by a theater entrance, lit marquee shapes and an arriving audience.",
+    "attention-grabbing": "A striking image or headline visually catches a reader’s eye; no actual words are needed.",
+    "exclusive interview": "A one-to-one interview with a single reporter and invited subject in a private media setting; distinguish from a crowded press conference.",
+    "headline news": "A major current story singled out as the lead item in a broadcast or news feed.",
+    "media": "Different mass-communication channels together, such as newspaper, radio/microphone, television and digital screen; plural media, not a single medium.",
+    "newspaper headline": "The prominent top line area of a newspaper article, represented by blank bold bars and a related photo; no readable headline.",
+    "sensationalize": "A media outlet exaggerates a small event into a dramatic spectacle, shown by a modest event beside oversized alarmed coverage cues.",
+    "article": "A written newspaper or magazine piece with a clear topic photograph and structured columns.",
+    "interview": "A journalist asks a source questions and listens to an answer; media interview, not a job interview.",
+    "news": "A timely report of a real event, shown as factual coverage from a reporter or newsroom.",
+    "newspaper": "A folded or open broadsheet with multiple article columns and a photograph; distinguish from a bound book or magazine.",
+    "photo": "A printed or digital photograph being framed or viewed as a still image, distinct from a moving video.",
+    "podcast": "An episodic audio program recorded or heard through a microphone, headphones or player; not a music track alone.",
+    "video": "Moving visual footage displayed on a screen, distinct from a still photograph.",
+    "website": "A collection of linked web pages displayed in a browser window, with blank navigation and page sections; no brand or readable text.",
+    "account": "A personal social-media profile with an avatar and a few post tiles; not a bank or arithmetic account.",
+    "comment": "A viewer adds a response beneath a social post, represented by a speech bubble connected to a post tile.",
+    "follow": "A user subscribes to another person’s social-media updates, shown by tapping a person/profile connection icon.",
+    "like": "A user responds positively to a social-media post with a heart or thumbs-up reaction.",
+    "post": "A user publishes a photo or update to a social-media feed; not postal mail or a fence post.",
+    "share": "A user forwards or passes a social-media post to another person, shown by a connected share arrow.",
+    "social media": "A network of people and posts connected through digital profiles and phones.",
+    "claim to fame": "The particular achievement or feature for which someone is known, shown as one defining skill or accomplishment drawing public notice.",
+    "exploit": "A brave or remarkable achievement; use the lesson’s public-fame sense, not exploitation or abuse.",
+    "expose": "A journalist reveals a hidden fact or wrongdoing to public view, shown by uncovering a concealed document or evidence; not exposing skin.",
+    "go to somebody’s head": "New fame makes a person conceited, shown by a once-approachable person acting boastfully from an elevated position.",
+    "have your name in lights": "An aspiring performer sees their name represented by a blank star-shaped marquee sign lit above a theater; no letters or readable text.",
+    "household name": "A person so widely known that people of different ages in a home recognize the same face.",
+    "in the public eye": "A public figure is constantly visible to an audience, cameras and public attention.",
+    "meteoric rise": "A person’s fame increases very rapidly, shown by a sudden upward trajectory from small audience to a large spotlight/crowd."
+  },
+  "glossary_context_notes": [
+    "Lesson 67 groups celebrity attention, reporting and media formats, social-media actions, and fame expressions. Preserve those group senses when general glosses could point elsewhere.",
+    "Do not confuse a celebrity with an influencer; a news interview with a job interview; a social-media post with postal mail; or an achievement exploit with exploitation.",
+    "Keep adjacent lesson terms distinct: a red carpet is an event route, opening night is a first performance, talent show is a skills contest, and reality show is unscripted everyday footage."
+  ],
+  "existing_asset_triage": {
+    "lesson_67": "Reviewed exact-term same-name art from earlier lessons. Adapt only when the core medium or action directly matches; replace post office art and generic page spreads that do not read clearly as news media.",
+    "reviewed_candidates": [
+      {
+        "source": "63/article.svg",
+        "verdict": "KEEP / ADAPT for article",
+        "reason": "The open periodical spread already pairs a large topic photo with structured article columns; copy to Lesson 67 with the media-article key."
+      },
+      {
+        "source": "66/interview.svg",
+        "verdict": "KEEP / ADAPT for interview",
+        "reason": "It clearly shows a reporter asking a guest questions with a camera recording; the television studio still fits the broader media-interview sense."
+      },
+      {
+        "source": "66/news.svg",
+        "verdict": "KEEP / ADAPT for news",
+        "reason": "Two anchors at a broadcast desk with a world-news monitor clearly teach a timely news report."
+      },
+      {
+        "source": "63/newspaper.svg",
+        "verdict": "REJECT / REPLACE for newspaper",
+        "reason": "The spread resembles a bound magazine or book and does not clearly read as a folded newspaper; create a recognizable broadsheet."
+      },
+      {
+        "source": "58/podcast.svg",
+        "verdict": "KEEP / ADAPT for podcast",
+        "reason": "Microphone, headphones and an audio waveform make the podcast medium clear; reuse with the media-content key."
+      },
+      {
+        "source": "76/website.svg",
+        "verdict": "KEEP / ADAPT for website",
+        "reason": "The browser-like frame and grouped page sections clearly teach a website; adapt to the lesson key."
+      },
+      {
+        "source": "07/post.svg",
+        "verdict": "REJECT for post",
+        "reason": "A phone sends content to a physical mailbox, so postal delivery dominates; create an unmistakable social-feed post."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "become a celebrity",
+      "celebrity",
+      "celebrity culture",
+      "influencer",
+      "paparazzi"
+    ],
+    [
+      "red carpet",
+      "reality show",
+      "talent show",
+      "opening night",
+      "attention-grabbing"
+    ],
+    [
+      "exclusive interview",
+      "headline news",
+      "media",
+      "newspaper headline",
+      "sensationalize"
+    ],
+    [
+      "article",
+      "interview",
+      "news",
+      "newspaper",
+      "photo"
+    ],
+    [
+      "podcast",
+      "video",
+      "website",
+      "account",
+      "comment"
+    ],
+    [
+      "follow",
+      "like",
+      "post",
+      "share",
+      "social media"
+    ],
+    [
+      "claim to fame",
+      "exploit",
+      "expose",
+      "go to somebody’s head",
+      "have your name in lights"
+    ],
+    [
+      "household name",
+      "in the public eye",
+      "meteoric rise"
+    ]
+  ]
+}

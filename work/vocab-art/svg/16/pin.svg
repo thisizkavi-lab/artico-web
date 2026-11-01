@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: pin (Noun)
+  CONTEXTUAL_DEFINITION: A slender pointed fastener with a small head, pushed through fabric.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Show a plain straight pin penetrating folded fabric, not decorative jewelry.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Paper and soft shadow.
+    - Context_Layer: Folded cloth swatch.
+    - Focal_Layer: Long silver straight pin with round gold head.
+    - Details_Layer: Visible shaft crossing the cloth fold.
+    - Lighting_Layer: Focus halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:pin" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="154" rx="91" ry="14" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M59 95L216 53L252 126L91 157Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/><path d="M59 95L146 108L252 126" fill="none" stroke="#AAB5C3" stroke-width="2.2"/>
+  <path d="M146 108L91 157" fill="none" stroke="#F8FAFC" stroke-width="9"/>
+  <ellipse cx="154" cy="97" rx="85" ry="54" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M95 126L207 66" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M95 126L207 66" stroke="#DDE5EB" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="91" cy="128" r="9" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M205 67L219 58" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M75 109Q99 111 117 124" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <circle cx="91" cy="128" r="3" fill="#FFF1B8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M101 139L209 80" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="3 5" opacity=".62"/>
+</svg>

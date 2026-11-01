@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: geology (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies rocks, minerals, and the structure of Earth.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with cross-section
+  SYNONYM_GUARD: Layered rock strata, a hand lens, and mineral specimens make geology distinct from geography's globe and places.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Earth-science classroom with worktable.
+    - Context_Layer: Small rock sample trays and muted wall shelf.
+    - Focal_Layer: Layered rock cross-section with embedded crystals.
+    - Details_Layer: Hand lens, rock hammer, and mineral chips.
+    - Lighting_Layer: Highlights pick out crystal facets and strata.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:geology" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="geol-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="geol-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#geol-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 28H94V81H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 29V80M21 54H93" stroke="#FFFFFF" stroke-width="2.5"/><rect x="218" y="41" width="62" height="89" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/><path d="M230 58H269M230 69H269M230 80H269" stroke="#F7EBCF" stroke-width="2"/><path d="M230 96H246V111H230ZM251 92H269V111H251Z" fill="#AFC5DA" stroke="#64748B" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#geol-shadow)"><path d="M56 132L70 98L94 92L111 74L137 81L151 64L177 77L197 70L224 97L241 132Z" fill="#B78C66" stroke="#1E2A3B" stroke-width="2.2"/><path d="M62 116Q91 105 117 116T170 113T235 117L241 132H56Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M57 132Q93 120 124 132T185 130T241 132V146H57Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M70 99L94 93L111 75L137 82L151 65L177 78L197 71L224 98" fill="none" stroke="#E6C89D" stroke-width="2"/><path d="M96 101L106 89L116 101L106 110ZM166 100L177 88L188 100L177 109Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M106 89L106 110M177 88L177 109" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <g id="layer-details"><circle cx="52" cy="71" r="14" fill="#DCECFB" opacity=".7" stroke="#5479AC" stroke-width="2"/><circle cx="52" cy="71" r="4" fill="#FEF9C3"/><path d="M62 81L73 91" stroke="#315782" stroke-width="4" stroke-linecap="round"/><path d="M256 133L267 122L272 127L262 141Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M256 133L250 145" stroke="#A96B46" stroke-width="4" stroke-linecap="round"/><path d="M90 123Q115 115 137 124M145 136Q174 126 197 135" fill="none" stroke="#F3B9A8" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="101" rx="121" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M70 98L94 92L111 74L137 81L151 64L177 77" fill="none" stroke="#F9E6C6" stroke-width="2" stroke-linecap="round" opacity=".85"/></g>
+</svg>

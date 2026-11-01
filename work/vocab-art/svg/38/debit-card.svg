@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: debit card (noun)
+  CONTEXTUAL_DEFINITION: A payment card that takes the purchase amount directly from the holder's bank account.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with money-flow diagram
+  SYNONYM_GUARD: Unlike a credit card with later repayment, show funds moving immediately from a personal account into a shop till.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Sage debit card central; small bank-account purse at left and checkout terminal at right; solid blue arrows move coins from account through card toward the till.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:debit card" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="debit-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#568552"/></linearGradient>
+    <radialGradient id="debit-chip"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="debit-shape" d="M76 58 Q76 52 82 52 H220 Q227 52 227 59 V111 Q227 118 220 118 H82 Q76 118 76 111 Z"/>
+    <clipPath id="debit-clip"><use href="#debit-shape"/></clipPath>
+    <filter id="debit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="152" width="304" height="40" fill="#EEE7DA"/><path d="M0 152 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="164" rx="102" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Account container at left and merchant till at right -->
+  <g id="layer-context"><path d="M19 107 Q19 100 27 100 H61 Q69 100 69 108 V144 Q69 151 61 151 H27 Q19 151 19 144 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2.2"/><path d="M27 109 H60 M27 115 H60" stroke="#94A3B8" stroke-width="1.8"/><path d="M236 109 H284 V148 H236 Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/><path d="M240 117 H279 V129 H240 Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M240 136 H280" stroke="#94A3B8" stroke-width="2"/></g>
+  <!-- 3. Primary debit card linked to immediate account spending -->
+  <g id="layer-focal" filter="url(#debit-shadow)"><use href="#debit-shape" fill="url(#debit-card)" stroke="#1E2A3B" stroke-width="2.6"/><g clip-path="url(#debit-clip)"><path d="M70 108 C114 64 170 73 232 39 V125 H70Z" fill="#568552" opacity=".42"/><path d="M84 60 H145" stroke="#D9EED5" stroke-width="4" stroke-linecap="round" opacity=".8"/></g><rect x="93" y="77" width="27" height="22" rx="3" fill="url(#debit-chip)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M101 78 V98 M111 78 V98 M94 85 H119 M94 92 H119" stroke="#B55B28" stroke-width="1.2"/><circle cx="196" cy="97" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. Coins visibly leave the account and enter the checkout -->
+  <g id="layer-details"><ellipse cx="38" cy="140" rx="8" ry="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M30 136 V140 C30 146 46 146 46 140 V136" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M51 129 H66" fill="none" stroke="#4A72B2" stroke-width="2.4"/><path d="M64 125 L71 129 L64 133 Z" fill="#4A72B2"/><ellipse cx="251" cy="140" rx="7" ry="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M227 83 C213 79 201 78 190 80" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/><path d="M193 76 L186 80 L193 84 Z" fill="#4A72B2"/></g>
+  <!-- 5. Signature-blue money-flow arrow and light accents -->
+  <g id="layer-lighting"><path d="M70 127 C91 120 99 116 109 113" fill="none" stroke="#4A72B2" stroke-width="2.6" stroke-linecap="round"/><path d="M105 108 L113 112 L106 118 Z" fill="#4A72B2"/><path d="M84 59 H121" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" opacity=".8"/><path d="M150 39 L150 48 M146 43 H154" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/></g>
+</svg>

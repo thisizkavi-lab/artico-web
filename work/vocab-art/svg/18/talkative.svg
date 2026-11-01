@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: talkative (Adjective)
+  CONTEXTUAL_DEFINITION: Inclined to talk a great deal in conversation.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: One speaker continues animatedly while two peers listen, unlike outgoing which emphasizes initiating a meeting.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small cafe-like shared table at y=125.
+    - Context_Layer: Two listeners facing the central speaker.
+    - Focal_Layer: Talkative person leaning forward with animated hands.
+    - Details_Layer: Repeated short mouth arcs and conversation waves, no speech text.
+    - Lighting_Layer: Warm halo centered on the active speaker.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:talkative" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q80 143 152 150T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="128" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M20 125H284L275 138H29Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="2"/><path d="M44 137L42 160M264 137L267 160" stroke="#805333" stroke-width="6" stroke-linecap="round"/><circle cx="60" cy="69" r="16" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M44 68Q45 51 61 52Q77 53 76 69L70 73H47Z" fill="#35404B"/><path d="M41 91Q60 84 78 91L85 119H36Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M47 67L53 67M62 67L68 67M54 77Q60 80 65 77" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="244" cy="69" r="16" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M228 69Q229 52 245 53Q261 54 260 70L254 74H231Z" fill="#805333"/><path d="M225 91Q244 84 262 91L269 119H220Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M232 69L238 69M247 69L253 69M237 78Q244 81 250 78" stroke="#1E2A3B" stroke-width="1.4"/><path d="M56 99L48 109M251 99L259 109" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="151" cy="94" rx="65" ry="72" fill="#FEF3C7" opacity=".58"/><circle cx="151" cy="57" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M131 57Q132 36 151 37Q171 38 171 59L164 63Q161 47 149 48Q140 48 133 64Z" fill="#6F665F" stroke="#1E2A3B" stroke-width="2"/><path d="M127 84Q151 77 175 84L184 126H119Z" fill="url(#top)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M131 91L111 104L102 96M171 91L188 105L195 98" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M131 91L111 104L102 96M171 91L188 105L195 98" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M134 126L132 158H148L153 127M158 127L165 158H181L175 126" fill="#315782" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M140 58Q144 61 148 58M154 58Q158 61 162 58" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="151" cy="71" rx="5" ry="6" fill="#A95059" stroke="#1E2A3B" stroke-width="1.3"/><path d="M180 51Q190 46 196 52M184 64Q197 61 203 68M180 77Q190 81 195 76" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="204" cy="47" r="2.4" fill="#4A72B2"/><circle cx="210" cy="57" r="3" fill="#4A72B2"/><circle cx="206" cy="72" r="2" fill="#4A72B2"/><path d="M41 51L47 47M260 52L266 48" stroke="#D9A441" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><path d="M141 42Q151 38 161 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="151" cy="94" rx="65" ry="72" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".4"/></g>
+</svg>

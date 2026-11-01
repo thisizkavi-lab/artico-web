@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 19 — Feelings and moods
+  WORD: mad (Adjective)
+  CONTEXTUAL_DEFINITION: Angry, matching this chapter's anger group.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive emotion scene
+  SYNONYM_GUARD: A person reacts angrily to a spilled drink ruining a drawing; the ordinary mishap explains the anger without making the pose as extreme as furious.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm room with ground and a small work table.
+    - Context_Layer: Wet paper, tipped cup, and a spreading drink puddle.
+    - Focal_Layer: Medium-skinned person leaning forward with a sharp frown and one clenched hand.
+    - Details_Layer: Downturned brows, tightened mouth, damp page, and tense shoulders.
+    - Lighting_Layer: Muted coral aura around the face, kept within the card.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:mad" data-archetype="expressive-emotion-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="mad-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="mad-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7FA1CF"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <filter id="mad-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mad-bg)"/><path d="M0 151Q76 145 152 151T304 149V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="130" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M15 124H289V144H15Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M31 143V174M272 143V174" stroke="#965D28" stroke-width="5" stroke-linecap="round"/><path d="M185 120L254 119L263 136L192 137Z" fill="#F5F2EA" stroke="#64748B" stroke-width="2"/><path d="M194 125Q214 120 236 128L247 133Q225 130 205 134Z" fill="#7FA1CF" opacity=".55"/><path d="M259 97L282 105L277 124L254 117Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="262" cy="96" rx="12" ry="4" transform="rotate(18 262 96)" fill="#F1F5F9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M258 119Q250 122 244 124Q234 127 226 124" fill="none" stroke="#7CC4FA" stroke-width="4" stroke-linecap="round"/><circle cx="228" cy="122" r="3" fill="#7CC4FA"/><path d="M254 91L248 85M279 95L285 91" stroke="#D9A441" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#mad-shadow)"><ellipse cx="111" cy="93" rx="61" ry="68" fill="#F4B7A7" opacity=".32"/><path d="M52 177Q58 137 83 126Q105 118 132 126Q155 134 164 177Z" fill="url(#mad-shirt)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M79 133L102 153L126 130" fill="#E5E9F0" stroke="#1E2A3B" stroke-width="2"/><rect x="97" y="110" width="22" height="22" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2"/><path d="M72 72C72 48 90 36 112 36C135 36 151 50 150 74L146 99C143 121 127 132 110 132C91 132 77 118 75 98Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.6"/><path d="M72 67Q73 41 102 35Q132 31 151 54L150 70Q133 56 116 57Q94 56 78 75Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M90 77L104 82M132 77L118 82" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M91 91Q98 88 104 92M119 92Q126 88 133 91" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/><path d="M102 111Q112 105 122 111" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M70 140Q62 134 60 126" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M70 140Q62 134 60 126" fill="none" stroke="#D89A6C" stroke-width="6.5" stroke-linecap="round"/><path d="M145 143Q161 136 174 128" fill="none" stroke="#1E2A3B" stroke-width="11" stroke-linecap="round"/><path d="M145 143Q161 136 174 128" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/><path d="M171 128Q176 119 184 124Q188 131 182 137L175 139Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M47 68L39 64M48 80L38 82M156 65L164 61" stroke="#CE3D4E" stroke-width="2.3" stroke-linecap="round"/><path d="M184 119Q190 115 193 120" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M260 105L270 109" stroke="#64748B" stroke-width="1.6"/><path d="M35 127Q43 124 49 127" fill="none" stroke="#D9A441" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="111" cy="91" rx="64" ry="70" fill="none" stroke="#D9857F" stroke-width="1.5" stroke-dasharray="4 6" opacity=".45"/><path d="M84 44Q100 35 115 39" fill="none" stroke="#FDE4D4" stroke-width="3" stroke-linecap="round"/></g>
+</svg>

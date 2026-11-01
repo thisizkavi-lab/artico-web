@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: tv schedule
+ CONTEXTUAL_DEFINITION: A time-ordered television lineup shown on a screen with repeated program blocks and clock symbols.
+ PEDAGOGICAL_ARCHETYPE: on-screen TV lineup ordered by time
+ SYNONYM_GUARD: Use an electronic schedule with program blocks and clocks; distinguish from a printed TV guide booklet.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A TV displays a vertical lineup of programs, each aligned with a simple clock icon to show sequence over time.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:tv schedule" data-archetype="on-screen television lineup">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M22 22Q22 18 28 18H276Q282 18 282 24V145H22Z" fill="#26384A"/><path d="M31 29H273V137H31Z" fill="#405663"/><path d="M41 37H263V127H41Z" fill="#597D8B"/><path d="M132 145L138 153H167L173 145Z" fill="#64777C"/><path d="M119 153H187V159H119Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M57 48H246V68H57Z" fill="#D9DECA"/><path d="M57 74H246V94H57Z" fill="#D9DECA"/><path d="M57 100H246V120H57Z" fill="#D9DECA"/>
+  <circle cx="73" cy="58" r="6" fill="#F6E5CE" stroke="#26384A" stroke-width="1.2"/><circle cx="73" cy="84" r="6" fill="#F6E5CE" stroke="#26384A" stroke-width="1.2"/><circle cx="73" cy="110" r="6" fill="#F6E5CE" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M73 54V58L76 60M73 80V84L76 86M73 106V110L76 112" stroke="#26384A" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M92 52H237V64H92Z" fill="#B85E5A"/><path d="M92 78H218V90H92Z" fill="#D6A64C"/><path d="M92 104H229V116H92Z" fill="#798C72"/>
+  <path d="M50 70H252M50 96H252" stroke="#F6E5CE" stroke-width="1" opacity=".75"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M101 52Q111 47 120 52L124 63H97Z" fill="#D6A64C"/><circle cx="110" cy="48" r="4" fill="#D29A78"/><path d="M105 64L103 68M118 64L121 68" stroke="#26384A" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M142 78Q152 72 162 78L166 89H138Z" fill="#B85E5A"/><circle cx="152" cy="74" r="4" fill="#C89170"/><path d="M146 89L144 93M159 89L161 93" stroke="#26384A" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M191 104Q202 97 213 104L217 115H187Z" fill="#597D8B"/><circle cx="202" cy="100" r="4" fill="#D29A78"/><path d="M195 115L193 119M208 115L210 119" stroke="#26384A" stroke-width="2.3" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details">
+  <path d="M42 40H260" stroke="#D6A64C" stroke-width="1.3"/><circle cx="252" cy="44" r="2" fill="#F6E5CE"/><circle cx="252" cy="70" r="2" fill="#D6A64C"/><circle cx="252" cy="96" r="2" fill="#B85E5A"/>
+  <path d="M42 128H262" stroke="#FFF7E4" stroke-width="1" opacity=".7"/><path d="M246 51L254 57M246 77L254 83M246 103L254 109" stroke="#D6A64C" stroke-width="1.2"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="68" rx="89" ry="35" fill="#E7C66B" opacity=".1"/><path d="M40 37L58 64M263 37L247 64" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M34 138H270" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

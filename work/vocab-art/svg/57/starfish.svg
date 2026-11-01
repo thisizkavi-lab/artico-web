@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: starfish (noun)
+  CONTEXTUAL_DEFINITION: A five-armed sea star resting on a reef, with a rough textured upper surface.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero marine animal with radial form
+  SYNONYM_GUARD: Show a marine sea star on rock or sand; it is not a star-shaped toy, a starfish fin, or a true fish.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Coral-orange sea star lies flat on a seabed rock, five broad tapered arms radiating from a central disk, small pale bumps and texture across the top, water and a little kelp around it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:starfish" data-archetype="five-armed-sea-star-on-seabed">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#DC9274;--c-secondary:#80584D;--c-accent:#7BA17B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="starfish-water" x2="0" y2="1"><stop stop-color="#A4CDCC"/><stop offset="1" stop-color="#477F8C"/></linearGradient>
+  <linearGradient id="starfish-rock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#878775"/><stop offset="1" stop-color="#515D55"/></linearGradient>
+  <linearGradient id="starfish-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7A27F"/><stop offset="1" stop-color="#C87568"/></linearGradient>
+  <filter id="starfish-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#starfish-water)"/><path d="M0 148Q76 140 151 149T304 144V192H0Z" fill="url(#starfish-rock)"/></g>
+ <g id="layer-context"><path d="M27 190l8-33m-8 18-11-12m11 5 11-20m212 42 8-32m-8 14-10-12m10 5 11-19" fill="none" stroke="#5A8876" stroke-width="2" stroke-linecap="round"/><path d="M0 34q41-6 80 0m147-3q38-6 77 0" fill="none" stroke="#DBEEE6" stroke-width="1.4"/><path d="M22 128q16-5 32 0m202-11q16-5 30 0" fill="none" stroke="#C3E0D9" stroke-width="1.3" stroke-linecap="round"/><circle cx="60" cy="90" r="2" fill="#EAF7F0"/><circle cx="68" cy="81" r="1.2" fill="#EAF7F0"/><ellipse cx="152" cy="148" rx="67" ry="5" fill="#1C3C42" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#starfish-shadow)">
+  <path d="M151 120L141 80Q139 66 146 58Q153 69 160 81L166 105L189 80Q199 71 209 73Q206 86 198 96L174 119L210 121Q224 124 229 133Q216 139 203 136L170 130L183 158Q187 172 181 180Q170 171 165 159L151 135L132 160Q122 170 112 169Q113 156 122 146L143 126L107 122Q94 118 89 109Q101 103 115 107Z" fill="url(#starfish-body)" stroke="#86594F" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M151 120Q151 104 151 85m7 36 32-30m-28 35 45 8m-53 0 21 39m-29-43-33 31m38-42-45-8" fill="none" stroke="#F0C3A0" stroke-width="1.25" opacity=".78" stroke-linecap="round"/>
+  <circle cx="151" cy="123" r="8" fill="#D88A73" opacity=".65"/>
+  <circle cx="151" cy="76" r="2" fill="#F1CEAA"/><circle cx="163" cy="94" r="1.8" fill="#F1CEAA"/><circle cx="191" cy="83" r="2" fill="#F1CEAA"/><circle cx="193" cy="129" r="1.9" fill="#F1CEAA"/><circle cx="173" cy="156" r="2" fill="#F1CEAA"/><circle cx="126" cy="151" r="1.8" fill="#F1CEAA"/><circle cx="108" cy="115" r="2" fill="#F1CEAA"/>
+  <path d="M139 119q6-4 12-2m4 10q5 2 9 0" fill="none" stroke="#A9625D" stroke-width="1.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M44 119q13-5 25 0m167-27q13-5 25 0" fill="none" stroke="#D7EBE3" stroke-width="1.2" stroke-linecap="round"/><circle cx="75" cy="70" r="1.7" fill="#EAF7F1"/><circle cx="232" cy="104" r="1.5" fill="#EAF7F1"/></g>
+ <g id="layer-lighting"><path d="M141 77q-1-11 5-16m35 19q8-6 14-5" fill="none" stroke="#FFF0DA" stroke-width="1.4" opacity=".61" stroke-linecap="round"/><ellipse cx="156" cy="116" rx="48" ry="35" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

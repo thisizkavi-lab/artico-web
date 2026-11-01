@@ -1,0 +1,50 @@
+{
+  "chapter_title": "Describing things: opinions",
+  "domain_setting": "Everyday scenes in which people experience, evaluate, and react to food, ideas, performances, products, places, and service.",
+  "visual_thesis": "Show a concrete situation plus a visible human reaction so each evaluative word is learned through its lesson-specific use rather than as an isolated symbol.",
+  "ambient_palette": {
+    "paper": "#FAF8F3",
+    "ground": "#EAE3D5",
+    "ink": "#1E2A3B",
+    "muted_context": "#E5E9F0",
+    "artico_blue": "#5479AC",
+    "warm_accent": "#D97A43",
+    "positive_highlight": "#F2C14E",
+    "green": "#7FB07A",
+    "plum": "#8B5CA8"
+  },
+  "recurring_scale_anchors": [
+    "304 x 192 card with an ivory paper stage and grounded tabletop or floor",
+    "Human busts use the Artico recurring cast proportions and expressive faces",
+    "A familiar tabletop, café counter, or performance stage anchors everyday evaluation scenes",
+    "Use a muted comparison object for gradable adjectives when it clarifies the contrast"
+  ],
+  "polysemy_resolution_table": {
+    "brilliant": "Excellent or clever in the positive-opinion lesson; do not depict literal brightness or a light bulb.",
+    "fantastic": "Exceptionally good or enjoyable; do not depict the unrelated sense 'strange' and distinguish the scene from breathtaking scenery.",
+    "good": "Positive quality or result in an everyday evaluation; do not use a moral-goodness scene or another food-taste scene.",
+    "great": "Very good in the positive-opinion lesson (confirmed on the live lesson page); do not use the separate size sense 'large'.",
+    "incredible": "So remarkable that it is hard to believe; do not use the sense 'untrustworthy'.",
+    "extraordinary": "Far outside the ordinary range; show an unmistakably rare scale or feature rather than generic beauty.",
+    "interesting": "Engaging enough to hold someone's attention, not merely unusual.",
+    "odd": "Unusual in a mildly unexpected way; distinguish from strange if both are pictured.",
+    "favorite": "The one preferred choice among alternatives, not a favorite person or celebrity.",
+    "worth it": "A positive judgment that the outcome justifies the effort or cost, not a literal price tag."
+  },
+  "existing_asset_triage": {
+    "keep": [],
+    "replace": {
+      "brilliant": "Current light-bulb image suggests brightness instead of the lesson's 'excellent/clever' sense.",
+      "fantastic": "Current mountain-hiking image duplicates breathtaking and does not distinguish the target adjective.",
+      "good": "Current meal image overlaps delicious and does not communicate the broader positive-quality sense.",
+      "extraordinary": "Current butterfly image reads as beautiful; the lesson gloss means far beyond ordinary.",
+      "incredible": "Current gymnast image reads as a remarkable skill; replace it with a clearly unbelievable magic trick.",
+      "amazing": "The existing fireworks reaction is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector scene.",
+      "beautiful": "The existing bouquet is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector still life.",
+      "breathtaking": "The existing alpine panorama is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector panorama and stronger awe reaction.",
+      "delicious": "The existing pasta-tasting scene is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector food scene.",
+      "exciting": "The existing roller-coaster scene is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector ride scene.",
+      "fun": "The existing board-game scene is semantically clear, but was a raster style outlier with no SVG source; replaced with a matching layered vector group scene."
+    }
+  }
+}

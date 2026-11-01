@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: have an interview
+  CONTEXTUAL_DEFINITION: Attend and take part in a formal meeting about a job.
+  PEDAGOGICAL_ART_DIRECTOR: Show the candidate arriving and being welcomed into a job interview.
+  PEDAGOGICAL_ARCHETYPE: 12 - Interview participation
+  SYNONYM_GUARD: Focus on the candidate entering and joining the hiring conversation; the related noun interview is the meeting event itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show an open office door at x=49..105, y=37..130 and a candidate with a folder stepping toward an interviewer standing by a table at x=190..246. Put a small meeting table near x=130..222, y=117..140.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:have an interview" data-archetype="interview-participation">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="haveinterview-door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="haveinterview-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="haveinterview-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="haveinterview-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="48" y="34" width="54" height="98" fill="#E9E1D3" stroke="#64748B" stroke-width="1.2"/><path d="M57 42 H95 V125 H57 Z" fill="url(#haveinterview-door)" stroke="#5479AC" stroke-width="1.2"/><circle cx="88" cy="85" r="2" fill="#C88446"/><path d="M103 42 L118 50 V130 H103 Z" fill="#D8CEBD" stroke="#64748B" stroke-width="1"/><path d="M127 119 H222 V132 H127 Z" fill="#E9BB79" stroke="#965D28" stroke-width="1.1"/><path d="M139 132 V146 M211 132 V146" stroke="#965D28" stroke-width="2"/><rect x="158" y="101" width="32" height="18" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M164 107 H184 M164 112 H180" stroke="#CBD5E1" stroke-width=".9"/><path d="M118 64 L125 59 L132 64" fill="none" stroke="#A8D4A2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#haveinterview-shadow)"><path d="M108 130 Q110 106 123 99 L124 90 Q120 86 122 78 Q130 70 141 73 Q150 76 148 87 L146 94 Q159 100 161 128 L158 138 H112 Z" fill="url(#haveinterview-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="135" cy="82" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M126 80 Q128 72 136 72 Q144 73 148 80 Q140 76 133 77 Z" fill="#3D342D"/><path d="M117 108 L105 117 M151 108 L169 107" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M105 117 L94 116 M169 107 L181 105" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M164 94 L176 86 L188 95 L188 111 L169 111 Z" fill="#F7E8BF" stroke="#C88446" stroke-width="1.1"/><path d="M172 96 H183 M172 101 H182" stroke="#C88446" stroke-width=".9"/><path d="M197 126 Q199 104 211 97 L212 88 Q208 84 210 77 Q218 69 229 71 Q238 74 236 85 L234 92 Q246 98 248 125 L245 136 H201 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="223" cy="80" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width=".9"/><path d="M215 78 Q217 70 224 70 Q232 71 236 78 Q228 74 221 75 Z" fill="#3D342D"/><path d="M202 103 Q222 96 243 103" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M66 53 H87 M66 59 H87 M66 65 H87" stroke="#CBD5E1" stroke-width=".8"/><path d="M180 77 L187 70 M187 77 L180 70" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/><circle cx="179" cy="57" r="2" fill="#8EB0DE"/><circle cx="255" cy="63" r="2" fill="#A8D4A2"/><path d="M154 93 Q164 88 174 93" fill="none" stroke="#D89A6C" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="159" cy="83" rx="103" ry="66" fill="url(#haveinterview-halo)" opacity=".16"/><path d="M58 37 H99" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

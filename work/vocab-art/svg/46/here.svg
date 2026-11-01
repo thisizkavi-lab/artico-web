@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: here
+  CONTEXTUAL_DEFINITION: The place where the speaker or traveler is standing now.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler centered on a map location marker, with a small surrounding-radius halo that distinguishes the current position from distant destinations.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Put the current-position marker directly under the traveler, not at a separate destination.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Map tile spans x=16..288, y=17..175; traveler at (151,94) stands on the center of a large blue-and-gold location pin at (151,130); secondary markers remain small and dim.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:here" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="here-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8EFDF"/><stop offset="1" stop-color="#C7DCC2"/></linearGradient>
+    <linearGradient id="here-pin" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5E87C2"/><stop offset="1" stop-color="#3F649E"/></linearGradient>
+    <radialGradient id="here-halo"><stop stop-color="#F2C14E" stop-opacity=".55"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="here-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect x="15" y="16" width="274" height="159" rx="13" fill="url(#here-land)" stroke="#1E2A3B" stroke-width="2"/><path d="M20 57H284M20 129H284M82 19V173M218 19V173" stroke="#A7B7A5" stroke-width="1.5"/><path d="M20 91H284M151 18V174" stroke="#647588" stroke-width="14"/><path d="M20 91H284M151 18V174" stroke="#F8F6EF" stroke-width="1.5" stroke-dasharray="7 8"/></g>
+  <g id="layer-context"><rect x="34" y="28" width="36" height="21" rx="3" fill="#D8B896" stroke="#756554" stroke-width="1.5"/><rect x="234" y="139" width="35" height="22" rx="3" fill="#A5BFCE" stroke="#52697B" stroke-width="1.5"/><circle cx="54" cy="148" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="249" cy="39" r="11" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="83" cy="91" r="4" fill="#94A8B4"/><circle cx="226" cy="91" r="4" fill="#94A8B4"/><path d="M104 39H126M174 148H200" stroke="#F8F6EF" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#here-shadow)"><ellipse cx="151" cy="112" rx="58" ry="60" fill="url(#here-halo)"/><path d="M151 69C132 69 120 82 120 99C120 122 151 153 151 153C151 153 182 122 182 99C182 82 170 69 151 69Z" fill="url(#here-pin)" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="151" cy="98" r="16" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="151" cy="98" r="7" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M139 113C136 103 140 94 148 91L151 91L154 91C162 94 166 103 163 113L168 126H158L152 116L147 126H136Z" fill="#E1AA81" stroke="#1E2A3B" stroke-width="1.6"/><path d="M140 107L133 118L137 121L145 113M162 107L169 118L165 121L157 113" fill="#E1AA81" stroke="#1E2A3B" stroke-width="1.5" stroke-linejoin="round"/><path d="M139 124L135 138H147L151 127L156 138H168L162 123" fill="#344A62" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><circle cx="151" cy="110" r="43" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M102 107H120M182 107H200" stroke="#F2C14E" stroke-width="2" stroke-dasharray="3 4"/><circle cx="43" cy="112" r="3" fill="#93A6B1"/><circle cx="257" cy="105" r="3" fill="#93A6B1"/><path d="M151 35V53M151 164V174" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/></g>
+  <g id="layer-lighting"><path d="M25 25H122" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><ellipse cx="151" cy="158" rx="22" ry="4" fill="#24374D" opacity=".24"/><circle cx="151" cy="110" r="51" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".6"/></g>
+</svg>

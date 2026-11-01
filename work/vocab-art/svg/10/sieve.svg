@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: sieve (Noun)
+  CONTEXTUAL_DEFINITION: A fine-mesh tool used to separate small particles from larger ones.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show flour falling through a fine taut mesh in a shallow frame, distinct from a perforated colander.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen counter.
+    - Context_Layer: Bowl receiving sifted flour.
+    - Focal_Layer: Shallow round sieve with crosshatched fine mesh.
+    - Details_Layer: Flour dust and small handle.
+    - Lighting_Layer: Soft metal highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:sieve" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 147 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 147 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="154" cy="168" rx="72" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M108 128 Q111 117 123 117 H186 Q198 117 201 128 L192 149 Q189 155 182 155 H127 Q119 155 116 149Z" fill="#DCE3E4" stroke="#647D8B" stroke-width="1.8"/><path d="M114 130 Q154 137 195 130" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-focal"><ellipse cx="151" cy="78" rx="63" ry="23" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.7"/><ellipse cx="151" cy="78" rx="49" ry="14" fill="#F3E8CC" stroke="#647D8B" stroke-width="1.6"/><path d="M89 78 H55 Q46 78 46 85 Q46 92 58 92 H93" fill="none" stroke="#647D8B" stroke-width="5" stroke-linecap="round"/><path d="M128 98 L132 118 M140 100 L142 118 M152 101 V118 M164 100 L162 118 M176 98 L172 118" stroke="#E8D9B8" stroke-width="2"/><path d="M116 73 L186 83 M121 68 L181 88 M121 88 L181 68 M116 83 L186 73" stroke="#A7A79C" stroke-width="1.2"/></g>
+  <g id="layer-details"><circle cx="142" cy="112" r="1.5" fill="#E8D9B8"/><circle cx="156" cy="108" r="1.5" fill="#E8D9B8"/><circle cx="168" cy="113" r="1.5" fill="#E8D9B8"/><path d="M103 72 Q151 66 199 72" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

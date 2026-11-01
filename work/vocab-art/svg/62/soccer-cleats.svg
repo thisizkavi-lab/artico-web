@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: soccer cleats / football boots (often uk) (soccer boots with studs)
+ CONTEXTUAL_DEFINITION: Soccer shoes with firm molded studs on the sole for grip on grass.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (+ Functional Context)
+ SYNONYM_GUARD: Show low-cut soccer shoes and unmistakable studs beneath the sole; ordinary shoes and tall rain boots have no studs.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: One red-and-blue cleat in side view, second cleat tilted to reveal short studs, grass flecks and soccer ball for context.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:soccer cleats / football boots (often uk)" data-archetype="soccer-shoes-with-studded-soles">
+ <defs><linearGradient id="cleat-stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D2"/></linearGradient><linearGradient id="cleat-upper" x2="0" y2="1"><stop stop-color="#CE3D4E"/><stop offset="1" stop-color="#9E2636"/></linearGradient><filter id="cleat-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#1E2A3B" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cleat-stage)"/><path d="M0 149H304V192H0Z" fill="#91A686"/><path d="M0 149h304" stroke="#E7EEE4" stroke-width="2"/></g>
+ <g id="layer-context"><ellipse cx="146" cy="171" rx="107" ry="8" fill="#405B61" opacity=".18"/><circle cx="246" cy="51" r="17" fill="#F7F3E8" stroke="#1E2A3B" stroke-width="2"/><path d="M246 43l5 4-2 6h-6l-2-6Zm-10 6-4-3m23 1 4-3m-20 20-2 4m16-4 3 4" stroke="#27364B" stroke-width="2" fill="none"/><path d="M0 160h304" stroke="#C3DAB9" stroke-width="1.2"/></g>
+ <g id="layer-focal" filter="url(#cleat-shadow)"><path d="M54 108q19-7 36-27l15 4 21 21 28 8q10 3 11 12t-11 13H58q-14-2-13-13l2-10Z" fill="url(#cleat-upper)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M53 112q26 9 50 3l18-5 18 12 20 4" fill="none" stroke="#F4F6FA" stroke-width="2.2" stroke-linecap="round"/><path d="M90 84l12-17q6-7 12-4l9 12-20 13" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.4"/><path d="M100 91l13-9m-8 15 14-10m-6 16 12-10" stroke="#F1F5F9" stroke-width="2.4" stroke-linecap="round"/><path d="M60 137h95" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/><path d="M76 140v9m25-9v9m24-9v9m22-9v9" stroke="#27364B" stroke-width="4.2" stroke-linecap="round"/><path d="M76 142v7m25-7v7m24-7v7m22-7v7" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M183 122q12-14 30-12l14 10 12 4-3 11h-45q-13-2-8-13Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M198 116l9-12 13-2 7 15-11 4-5-7Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M188 135h45" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/><path d="M193 137v8m13-8v8m13-8v8m13-8v8" stroke="#27364B" stroke-width="3.8" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M32 156l-3 6m14-6-3 6m163 3-3 5m20-5-3 5" stroke="#568552" stroke-width="2" stroke-linecap="round"/><path d="M60 102q7-4 14-4m-3 10q7-3 14-2" fill="none" stroke="#F2A472" stroke-width="1.5"/><circle cx="176" cy="67" r="2" fill="#FFFFFF"/><path d="M244 50l4-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><ellipse cx="94" cy="98" rx="63" ry="22" fill="#FFFFFF" opacity=".06"/><path d="M57 107q20-6 31-20" fill="none" stroke="#F2A472" stroke-width="1.4"/></g>
+</svg>

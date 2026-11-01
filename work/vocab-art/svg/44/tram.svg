@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: tram
+  CONTEXTUAL_DEFINITION: A street-running rail car for local city routes, also called a streetcar.
+  PEDAGOGICAL_ART_DIRECTOR: Set a single compact passenger rail car directly into an urban street, with overhead power wire and trolley pole.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero vehicle in urban place
+  SYNONYM_GUARD: Keep this one car short and city-bound; no subway tunnel or long connected intercity train.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Draw a single rounded streetcar from x=62..248, y=61..135; lay embedded rails along the street at y=148, and a slanted trolley pole reaching overhead wire at x=190,34.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:tram" data-archetype="hero-urban-rail-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="tram-shell" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B5C9A7"/><stop offset="1" stop-color="#739177"/></linearGradient>
+    <linearGradient id="tram-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EFF8F9"/><stop offset="1" stop-color="#BDD4DF"/></linearGradient>
+    <radialGradient id="tram-halo"><stop stop-color="#D8E6CF" stop-opacity=".64"/><stop offset="1" stop-color="#8FB182" stop-opacity="0"/></radialGradient>
+    <filter id="tram-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 131 H304 V192 H0 Z" fill="#E4E0D8"/><path d="M0 131 H304" stroke="#1E2A3B" stroke-width="1.4"/><path d="M0 151 Q76 144 152 151 T304 151 M0 164 Q76 157 152 164 T304 164" fill="none" stroke="#64748B" stroke-width="2.4"/><path d="M26 158 L32 151 M64 158 L70 151 M102 158 L108 151 M140 158 L146 151 M178 158 L184 151 M216 158 L222 151 M254 158 L260 151" stroke="#AA9C81" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M28 45 H275" stroke="#64748B" stroke-width="1.4"/><path d="M53 77 V36 M248 78 V36" stroke="#7C8893" stroke-width="2"/><path d="M45 37 H257" stroke="#5479AC" stroke-width="2.5"/><path d="M48 37 L189 72" stroke="#1E2A3B" stroke-width="2"/><circle cx="189" cy="72" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M30 90 H55 M252 91 H275" stroke="#C1B59F" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#tram-shadow)"><path d="M61 117 V81 Q62 62 78 58 H229 Q245 61 248 82 V133 H61 Z" fill="url(#tram-shell)" stroke="#1E2A3B" stroke-width="2.8"/><path d="M76 76 Q78 66 88 65 H112 V99 H74 Z M118 65 H151 V99 H118 Z M157 65 H192 V99 H157 Z M198 65 H224 Q234 68 235 81 V99 H198 Z" fill="url(#tram-glass)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M115 63 V132 M195 63 V132" stroke="#1E2A3B" stroke-width="1.8"/><path d="M65 104 H245 V128 H65 Z" fill="#D9E3D4" stroke="#1E2A3B" stroke-width="1.6"/><path d="M82 106 V127 M228 106 V127" stroke="#718578" stroke-width="1.1"/><path d="M74 106 H110 V128 H74 Z M200 106 H236 V128 H200 Z" fill="#AFC0AE" stroke="#64748B" stroke-width="1.2"/><path d="M61 131 H248" stroke="#263548" stroke-width="4"/><circle cx="91" cy="134" r="7" fill="#263548" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="220" cy="134" r="7" fill="#263548" stroke="#1E2A3B" stroke-width="1.4"/><path d="M178 61 L193 37 L196 37" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="195" cy="37" r="3" fill="#1E2A3B"/><path d="M64 100 H247" stroke="#F2C14E" stroke-width="3"/></g>
+  <g id="layer-details"><circle cx="81" cy="112" r="2.3" fill="#F2C14E"/><circle cx="228" cy="112" r="2.3" fill="#F2C14E"/><path d="M82 72 H104 M125 72 H145 M163 72 H185 M204 72 H223" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/><path d="M18 122 H51 M255 122 H288" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M24 116 L19 122 L24 128 M282 116 L287 122 L282 128" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 143 H65 M244 143 H275" stroke="#AFA38D" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="74" rx="112" ry="70" fill="url(#tram-halo)" opacity=".21"/><path d="M30 29 H275" stroke="#FFFFFF" stroke-width=".7"/><path d="M26 130 H278" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

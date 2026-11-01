@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: potty (Noun)
+  CONTEXTUAL_DEFINITION: A small freestanding toilet used by a young child during toilet training.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A child-sized stand-alone seat with a backrest, oval opening, and removable bowl follows the baby-equipment group and avoids the unrelated adjective sense in the gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Clean bathroom with tiled wall.
+    - Context_Layer: Small towel and step stool.
+    - Focal_Layer: Compact child potty facing forward.
+    - Details_Layer: Rounded seat opening, back, and stable feet.
+    - Lighting_Layer: Soft warm halo around the small toilet.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:potty" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="potty-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="potty-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#potty-bg)"/><path d="M0 153Q78 146 152 153T304 150V192H0Z" fill="#E3E8F0"/><path d="M25 35H279V145H25Z" fill="#FAF8F3"/><path d="M34 45H270V136H34Z" fill="#EEF4FA"/><path d="M34 136H270" stroke="#CBD5E1" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M46 112H80L86 149H42Z" fill="#D9857F" stroke="#64748B" stroke-width="1.5"/><path d="M48 118H78M49 125H80" stroke="#F3ECE1" stroke-width="2"/><path d="M220 125H260V149H220Z" fill="#829A83" stroke="#64748B" stroke-width="1.5"/><path d="M218 125H262" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#potty-shadow)"><path d="M116 57Q116 47 126 47H178Q188 47 188 58V100H116Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7"/><path d="M125 59H179V93H125Z" fill="#EAA9A1" stroke="#A95059" stroke-width="1.5"/><path d="M101 96Q101 87 111 87H193Q203 87 203 97V111Q203 121 193 122H111Q101 121 101 111Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.7"/><ellipse cx="152" cy="103" rx="22" ry="8" fill="#FAF8F3" stroke="#D9A441" stroke-width="2"/><path d="M111 118Q112 141 126 149H178Q192 141 193 118Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.5"/><path d="M125 146L121 158M179 146L183 158" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M128 157H176" stroke="#D9A441" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M125 37Q151 30 179 37" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="94" cy="77" r="2.3" fill="#D9A441"/><circle cx="210" cy="77" r="2.3" fill="#D9A441"/><path d="M132 128Q151 135 171 128" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="105" rx="72" ry="75" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".24"/><path d="M103 32Q152 20 201 32" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

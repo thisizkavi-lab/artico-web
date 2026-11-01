@@ -1,0 +1,57 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: orchestra pit
+ CONTEXTUAL_DEFINITION: The lowered recessed space in front of a theater stage where musicians play during a performance.
+ PEDAGOGICAL_ARCHETYPE: recessed orchestra pit with musicians
+ SYNONYM_GUARD: Make the pit visibly lower than the stage floor and place musicians inside it; do not show audience orchestra seating.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A front auditorium view shows the raised stage across the top and a dark sunken pit directly before it, with a conductor and seated instrumentalists below the stage edge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:orchestra pit" data-archetype="recessed orchestra pit with musicians">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 167H304V192H0Z" fill="#C8B89E"/><path d="M0 167H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M23 25H281V87H23Z" fill="#26384A"/><path d="M31 33H273V84H31Z" fill="#405663"/>
+  <path d="M22 86H282V95H22Z" fill="#D6A64C"/><path d="M31 95H273" stroke="#8D6F50" stroke-width="1.5" fill="none"/>
+  <path d="M28 96H276V155H28Z" fill="#263441"/><path d="M28 96V155M276 96V155" stroke="#D6A64C" stroke-width="2" fill="none"/>
+  <path d="M20 156H284V164H20Z" fill="#9E8365"/><path d="M30 160H274" stroke="#E8D7B8" stroke-width="1" fill="none"/>
+  <path d="M35 41H269" stroke="#B85E5A" stroke-width="5" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M55 43V84m20-41v41m20-41v41m20-41v41m20-41v41m20-41v41m20-41v41m20-41v41m20-41v41m20-41v41" stroke="#718188" stroke-width="1" fill="none"/>
+  <path d="M45 53H257" stroke="#D6A64C" stroke-width="1.3" fill="none"/>
+  <circle cx="53" cy="120" r="5" fill="#D29A78"/><path d="M47 127Q53 123 59 127L61 148H45Z" fill="#597D8B"/>
+  <circle cx="94" cy="121" r="5" fill="#D29A78"/><path d="M88 128Q94 124 100 128L101 148H87Z" fill="#B85E5A"/>
+  <circle cx="217" cy="121" r="5" fill="#D29A78"/><path d="M211 128Q217 124 223 128L224 148H210Z" fill="#798C72"/>
+  <circle cx="257" cy="121" r="5" fill="#D29A78"/><path d="M251 128Q257 124 263 128L264 148H250Z" fill="#D6A64C"/>
+  <path d="M44 148H102m105 0h60" stroke="#718188" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="115" r="5" fill="#D29A78"/><path d="M145 122Q151 118 157 122L159 149H143Z" fill="#D6A64C"/>
+  <path d="M146 128L132 116m24 12 15-16" stroke="#D29A78" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M166 112l7-8" stroke="#26384A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M147 143L140 153m14-10 8 10" stroke="#26384A" stroke-width="2.5" fill="none"/>
+  <path d="M70 121Q63 124 67 131Q69 136 77 135L85 131Q91 127 86 122Q80 117 70 121Z" fill="#D6A64C" stroke="#8D6B45" stroke-width="1.2"/>
+  <path d="M82 122L99 111" stroke="#8D6B45" stroke-width="2.2" fill="none"/><path d="M67 119L88 139" stroke="#26384A" stroke-width="1.3" fill="none"/>
+  <path d="M71 124L84 130m-10-8 7 10" stroke="#F4E7C8" stroke-width=".8" fill="none"/>
+  <path d="M91 127H116" stroke="#D6A64C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="96" cy="127" r="1" fill="#26384A"/><circle cx="103" cy="127" r="1" fill="#26384A"/><circle cx="110" cy="127" r="1" fill="#26384A"/>
+  <path d="M219 122Q211 125 215 134Q217 139 224 139Q232 138 234 131Q234 125 228 122Z" fill="#D6A64C" stroke="#8D6B45" stroke-width="1.2"/>
+  <path d="M224 123L223 106L229 101" stroke="#8D6B45" stroke-width="2.4" fill="none"/><path d="M222 127V151m5-25v24m-8-19h12" stroke="#F1D9A3" stroke-width=".8" fill="none"/>
+  <path d="M245 128L262 122Q268 121 270 126L264 132L248 133Z" fill="#D6A64C" stroke="#8D6B45" stroke-width="1.1"/>
+  <path d="M250 130L265 126m-11 5 12-4" stroke="#F4E7C8" stroke-width=".8" fill="none"/>
+  <path d="M238 142L245 121L264 118L257 142Z" fill="#E5D9BE" stroke="#9A8363" stroke-width="1"/>
+  <path d="M241 137L260 134m-17-3 14-2" stroke="#B3A58C" stroke-width=".8" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M41 150H104m104 0h62" stroke="#A9B6B0" stroke-width="1.1" fill="none"/>
+  <circle cx="34" cy="99" r="1.5" fill="#E8C76A"/><circle cx="270" cy="99" r="1.5" fill="#E8C76A"/>
+  <path d="M38 91H266" stroke="#F1D994" stroke-width="1" fill="none"/>
+  <path d="M125 124q5-5 10 0m39 0q5-5 10 0" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <circle cx="113" cy="110" r="1.7" fill="#E7C66B"/><circle cx="191" cy="108" r="1.7" fill="#E7C66B"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="122" rx="108" ry="36" fill="#D6A64C" opacity=".08"/>
+  <path d="M109 33L124 91m89-58-30 58" stroke="#FFF1C7" stroke-width="1.2" opacity=".58" fill="none"/>
+  <path d="M32 87H272" stroke="#FFF1C7" stroke-width="1.1" opacity=".55" fill="none"/>
+ </g>
+</svg>

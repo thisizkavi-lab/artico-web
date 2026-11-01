@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: mortgage (noun)
+  CONTEXTUAL_DEFINITION: A long-term loan secured against a house or other property.
+  PEDAGOGICAL_ARCHETYPE: 3 - Homeowner financial scene
+  SYNONYM_GUARD: Make the home collateral for a bank loan; distinguish this from an unsecured personal loan or an ordinary rent payment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: House with a visible secure-link chain to a bank folder; couple makes regular coin installments toward lender; subtle key and contract, no words/numerals.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:mortgage" data-archetype="home-finance-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="mortgage-house" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F8FBFE"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <radialGradient id="mortgage-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="mortgage-home" d="M30 104 L91 54 L153 104 V149 H30 Z"/>
+    <clipPath id="mortgage-clip"><use href="#mortgage-home"/></clipPath>
+    <filter id="mortgage-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="117" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Lender's bank and homeowner context -->
+  <g id="layer-context"><path d="M204 56 L248 34 L291 56 V111 H204 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M197 58 L248 31 L298 58 L290 64 L248 42 L205 64 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><rect x="217" y="68" width="25" height="31" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><rect x="254" y="68" width="25" height="31" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M221 76 H238 M258 76 H275" stroke="#94A3B8" stroke-width="1.4"/><path d="M18 149 H294" stroke="#C88446" stroke-width="2"/></g>
+  <!-- 3. Primary secured house and recurring mortgage payments -->
+  <g id="layer-focal" filter="url(#mortgage-shadow)"><use href="#mortgage-home" fill="url(#mortgage-house)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><g clip-path="url(#mortgage-clip)"><rect x="34" y="105" width="116" height="45" fill="#F8FBFE"/><path d="M88 56 V149" stroke="#CBD5E1" stroke-width="1.5"/></g><rect x="76" y="108" width="29" height="41" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="99" cy="129" r="2" fill="#F2C14E"/><rect x="44" y="112" width="25" height="22" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M48 119 H65" stroke="#94A3B8" stroke-width="1.4"/><path d="M118 114 L135 121 V141 H118 Z" fill="#A8D4A2" stroke="#568552" stroke-width="1.5"/><circle cx="63" cy="145" r="13" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="132" cy="145" r="13" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M49 164 Q50 155 63 155 Q76 155 78 164 M118 164 Q119 155 132 155 Q145 155 146 164" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 4. Collateral link, loan papers and payment coins -->
+  <g id="layer-details"><path d="M153 97 C168 85 184 84 199 92" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-dasharray="4 4"/><circle cx="159" cy="94" r="5" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="174" cy="88" r="5" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="189" cy="88" r="5" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.3"/><rect x="157" y="117" width="34" height="28" rx="3" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.5"/><path d="M163 124 H183 M163 130 H180 M163 136 H185" stroke="#94A3B8" stroke-width="1.3"/><ellipse cx="172" cy="153" rx="9" ry="4.5" fill="url(#mortgage-coin)" stroke="#1E2A3B" stroke-width="1.3"/><ellipse cx="188" cy="157" rx="8" ry="4" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 5. Long-term home-and-bank connection -->
+  <g id="layer-lighting"><path d="M53 74 L91 44 L127 74" fill="none" stroke="#8EB0DE" stroke-width="2.2" stroke-linecap="round"/><path d="M177 107 Q190 102 201 109" fill="none" stroke="#7FB07A" stroke-width="2" stroke-dasharray="3 4"/><path d="M159 70 L159 78 M155 74 H163" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

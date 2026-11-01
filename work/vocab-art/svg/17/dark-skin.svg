@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: dark skin (Noun phrase)
+  CONTEXTUAL_DEFINITION: A naturally deep brown complexion.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Use a clearly deep warm brown complexion without suggesting dirt, shadow, or tanning.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft cream portrait paper.
+    - Context_Layer: Muted shoulders and shirt.
+    - Focal_Layer: Friendly face with deep brown skin.
+    - Details_Layer: Natural warm highlights on cheek and forehead.
+    - Lighting_Layer: Gentle golden light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:dark skin" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="90" rx="108" ry="74" fill="#FEF3C7" opacity=".37"/><path d="M80 166Q87 132 120 124H184Q217 132 224 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 158Q99 126 102 87Q105 48 152 44Q199 48 202 87Q205 126 198 158Z" fill="#80513F" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M99 87Q95 48 139 38Q175 35 198 56Q210 72 202 98L194 105Q189 77 175 70Q151 81 119 74Q107 79 103 99Z" fill="#202632" stroke="#1E2A3B" stroke-width="2.5"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 98Q129 93 139 98M164 98Q174 93 184 98" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 105Q130 108 138 105M166 105Q174 108 181 105" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 103L148 120L155 123M138 140Q152 146 167 139" fill="none" stroke="#58372E" stroke-width="1.8"/>
+  <path d="M111 121Q118 113 126 120M178 120Q186 112 193 120" fill="none" stroke="#A76C51" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="98" rx="71" ry="66" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".4"/>
+</svg>

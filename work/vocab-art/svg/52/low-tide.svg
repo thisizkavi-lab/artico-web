@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="52:low tide" data-archetype="receded-water-exposing-wide-intertidal-flats">
+<!-- SELF_PROMPT: Lesson 52 geographical features; low tide. Show the sea pulled far back from shore, exposing a broad wet tidal flat with shallow pools and stranded rocks; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="low-sky" x2="0" y2="1"><stop stop-color="#E5EEE8"/><stop offset="1" stop-color="#C8DBD5"/></linearGradient>
+  <linearGradient id="low-water" x2="0" y2="1"><stop stop-color="#78B3BD"/><stop offset="1" stop-color="#498B9C"/></linearGradient>
+  <linearGradient id="low-sand" x2="0" y2="1"><stop stop-color="#D9C18D"/><stop offset="1" stop-color="#A98A5D"/></linearGradient>
+  <linearGradient id="low-pool" x2="0" y2="1"><stop stop-color="#83C1C4"/><stop offset="1" stop-color="#477F8A"/></linearGradient>
+  <filter id="low-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".15"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#low-sky)"/><circle cx="253" cy="36" r="14" fill="#EBC86F" opacity=".73"/><path d="M0 69Q75 64 151 70T304 66V123Q237 116 174 122T0 119Z" fill="url(#low-water)"/><path d="M0 89Q68 84 134 90T304 86" fill="none" stroke="#BFE0D8" stroke-width="1.5"/><path d="M0 112Q80 106 151 113T304 109" fill="none" stroke="#E9F3E9" stroke-width="2.2"/></g>
+<g id="layer-context">
+  <path d="M0 120Q75 113 145 120T304 116V192H0Z" fill="url(#low-sand)"/>
+  <path d="M0 127Q81 118 148 127T304 123" fill="none" stroke="#F2E4C2" stroke-width="2"/>
+  <path d="M26 147Q50 137 74 145Q86 151 79 163Q59 171 34 163Q22 158 26 147Z" fill="url(#low-pool)" stroke="#5F7B72" stroke-width="1.2"/>
+  <path d="M112 139Q133 131 150 139Q159 148 149 158Q128 164 111 155Q105 147 112 139Z" fill="url(#low-pool)" stroke="#5F7B72" stroke-width="1.2"/>
+  <path d="M218 145Q239 135 261 144Q273 151 265 163Q243 171 221 162Q212 155 218 145Z" fill="url(#low-pool)" stroke="#5F7B72" stroke-width="1.2"/>
+  <path d="M84 179q22-8 43-2m73-5q18-7 34-2" fill="none" stroke="#E9D7AE" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#low-shadow)">
+  <path d="M0 131Q56 124 106 132T206 130Q257 124 304 132" fill="none" stroke="#C4E2DA" stroke-width="2.1"/>
+  <path d="M19 137Q38 132 55 137m76 12q12-5 24-1m81-1q13-5 25-1" fill="none" stroke="#EEF1DC" stroke-width="1.6"/>
+  <path d="M91 166Q103 157 116 164L124 176Q110 181 98 177Z" fill="#807B69" stroke="#58635A" stroke-width="1.3"/><path d="M169 151Q181 141 195 148L203 161Q191 170 176 164Z" fill="#89816B" stroke="#58635A" stroke-width="1.3"/>
+  <path d="M49 151q8-4 15-1m65-5q7-4 13-1m92 7q8-4 15-1" fill="none" stroke="#DDF1E9" stroke-width="1.4"/>
+  <path d="M40 177q5-10 11-3l-4 6m22-12q6-9 11-1l-5 6m143 12q5-10 11-3l-4 6" fill="none" stroke="#718357" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <circle cx="19" cy="174" r="1.8" fill="#F6EBD0"/><circle cx="145" cy="179" r="1.8" fill="#F6EBD0"/><circle cx="284" cy="177" r="1.7" fill="#F6EBD0"/><circle cx="198" cy="134" r="1.4" fill="#FFFFFF"/>
+  <path d="M8 186q18-5 34 0m78-2q15-4 29 0m103-4q18-5 34 0" fill="none" stroke="#CFB381" stroke-width="1.3"/>
+  <path d="M30 122q10-3 20 0m183-4q12-3 22 0" fill="none" stroke="#D5ECE4" stroke-width="1.2"/>
+  <ellipse cx="93" cy="155" rx="2" ry="1.2" fill="#F6EBD0"/><ellipse cx="205" cy="179" rx="2" ry="1.2" fill="#F6EBD0"/>
+</g>
+<g id="layer-lighting"><path d="M0 113Q78 107 150 114T304 110" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M31 149q18-8 37-2m51-8q18-7 31 0m86 6q16-6 30 0" fill="none" stroke="#D4ECE4" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

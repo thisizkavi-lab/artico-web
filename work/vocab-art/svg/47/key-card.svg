@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: key card
+  CONTEXTUAL_DEFINITION: A flat electronic card used to unlock a hotel room door.
+  PEDAGOGICAL_ART_DIRECTOR: Show a blue hotel access card being presented to a small electronic reader beside a guest-room door.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Make the access item a flat card and pair it with a hotel door reader, not a metal key or payment card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A large blank blue card aligns with a wall-mounted key reader beside a hotel room door; three arcs connect card to reader.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:key card" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="card-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7E5DC"/><stop offset="1" stop-color="#D0CEC4"/></linearGradient>
+  <linearGradient id="card-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F92BC"/><stop offset="1" stop-color="#3F6495"/></linearGradient>
+  <linearGradient id="card-reader" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#526473"/><stop offset="1" stop-color="#273A49"/></linearGradient>
+  <filter id="card-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DDE6E4"/><path d="M20 17H284V176H20Z" fill="url(#card-wall)" stroke="#65767B" stroke-width="1.5"/><path d="M37 29H192V176H37Z" fill="#A9825D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M46 38H183V169H46Z" fill="#735943" stroke="#D1B48B" stroke-width="1.1"/><path d="M52 42H177V165H52Z" fill="#83664A"/><path d="M66 47H164V160H66Z" fill="#745941" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="155" cy="102" r="3" fill="#F2C14E"/></g>
+ <g id="layer-context"><rect x="215" y="93" width="35" height="64" rx="6" fill="url(#card-reader)" stroke="#1E2A3B" stroke-width="1.8"/><rect x="223" y="102" width="19" height="24" rx="3" fill="#8DABB4" stroke="#263C4A" stroke-width="1.1"/><circle cx="232" cy="140" r="4" fill="#6C8B75" stroke="#1E2A3B" stroke-width="1"/><path d="M210 160H256" stroke="#51636A" stroke-width="2"/><rect x="49" y="174" width="200" height="5" fill="#66767B"/></g>
+ <g id="layer-focal" filter="url(#card-shadow)"><g transform="rotate(-13 158 97)"><rect x="93" y="66" width="101" height="64" rx="8" fill="url(#card-blue)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M103 77H183V118H103Z" fill="none" stroke="#AAC5DD" stroke-width="1.2" opacity=".8"/><circle cx="178" cy="82" r="4" fill="#F2C14E"/><path d="M112 106H152" stroke="#DDE8F0" stroke-width="1.7" opacity=".8"/></g><path d="M191 96Q205 99 212 109M195 87Q217 93 223 109M198 78Q229 87 235 107" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/><circle cx="210" cy="109" r="3.5" fill="#F2C14E"/></g>
+ <g id="layer-details"><path d="M71 53H159" stroke="#CDAF80" stroke-width="1.4"/><path d="M31 20H193" stroke="#FFFFFF" stroke-width="1.2" opacity=".6"/><circle cx="232" cy="114" r="2" fill="#D6ECED"/><path d="M211 72V83M260 97V159" stroke="#B2BBB6" stroke-width="1"/><ellipse cx="157" cy="145" rx="63" ry="8" fill="#526274" opacity=".15"/></g>
+ <g id="layer-lighting"><ellipse cx="168" cy="96" rx="116" ry="70" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".4"/><path d="M96 69H189" stroke="#FFFFFF" stroke-width="1.3" opacity=".75"/></g>
+</svg>

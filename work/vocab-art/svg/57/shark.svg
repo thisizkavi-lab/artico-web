@@ -1,0 +1,34 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: shark (noun)
+  CONTEXTUAL_DEFINITION: A large shark cruising through open water, with a pointed snout, dorsal fin, and visible gill slits.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with recognizable species silhouette
+  SYNONYM_GUARD: Show the upright shark tail, multiple gill slits, and triangular dorsal fin; avoid an orca's white patches or a monster-like open mouth.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Blue-grey shark faces right in side profile, body x=75..236 y=66..128, triangular dorsal fin raised, smaller lower fin, vertical tail fin, five short gill slits behind the head, and a restrained row of teeth.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:shark" data-archetype="shark-dorsal-fin-gills-vertical-tail">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#5B7E8C;--c-secondary:#344B59;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="shark-water" x2="0" y2="1"><stop stop-color="#A0C9C9"/><stop offset="1" stop-color="#3F7D91"/></linearGradient>
+  <linearGradient id="shark-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#809DA4"/><stop offset="1" stop-color="#415E6A"/></linearGradient>
+  <filter id="shark-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DCEAE7"/><path d="M0 23Q75 17 151 25T304 21V192H0Z" fill="url(#shark-water)"/><path d="M0 158Q77 150 153 159T304 154V192H0Z" fill="#4C8998"/></g>
+ <g id="layer-context"><path d="M0 33q38-6 74 0m162-2q34-6 68 0" fill="none" stroke="#D8ECE6" stroke-width="1.4"/><path d="M20 141q16-5 32 0m218-6q15-5 29 0m-160 36q17-5 35 0" fill="none" stroke="#A9D5D3" stroke-width="1.4" stroke-linecap="round"/><circle cx="52" cy="102" r="2" fill="#EAF7F1"/><circle cx="60" cy="92" r="1.2" fill="#EAF7F1"/><ellipse cx="155" cy="138" rx="82" ry="7" fill="#173E4B" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#shark-shadow)">
+  <path d="M87 91Q69 80 57 67Q61 87 78 99Q67 110 61 125Q79 121 96 107Z" fill="#526F7B" stroke="#344E59" stroke-width="1.5"/>
+  <path d="M80 91Q97 74 133 72Q174 69 208 82Q228 89 239 100Q232 112 213 119Q178 129 137 124Q101 119 80 106Z" fill="url(#shark-body)" stroke="#344E59" stroke-width="1.7"/>
+  <path d="M94 108Q126 121 165 118Q201 115 225 105Q211 124 176 130Q130 132 102 119Z" fill="#E2E3DB" stroke="#687F83" stroke-width="1"/>
+  <path d="M132 74Q140 52 156 45Q166 43 163 61L158 77Z" fill="#4A6875" stroke="#344E59" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M174 119Q182 128 188 141Q181 145 173 136L164 123Z" fill="#4D6B78" stroke="#344E59" stroke-width="1.1"/>
+  <path d="M204 84Q214 75 224 83L216 97Z" fill="#526F7B" stroke="#344E59" stroke-width="1"/>
+  <path d="M231 95Q240 96 246 101Q241 107 231 106Z" fill="#D7DDDA" stroke="#445C65" stroke-width="1"/>
+  <circle cx="225" cy="90" r="2" fill="#192F38"/>
+  <path d="M212 99q9 8 20 5" fill="none" stroke="#3C535D" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M216 103l3 4m3-3 3 4m3-3 3 3" fill="none" stroke="#465B61" stroke-width=".8" stroke-linecap="round"/>
+  <path d="M199 90q-5 6-4 13m-5-14q-5 7-4 14m-5-15q-5 7-4 14m-5-14q-5 7-4 14m-5-13q-4 6-3 12" fill="none" stroke="#D0D9D5" stroke-width="1.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M100 86q15-9 29-8m-11 32q20 7 37 6" fill="none" stroke="#B9CDCC" stroke-width="1.3" stroke-linecap="round"/><circle cx="141" cy="95" r="1.3" fill="#ECF5F0"/><path d="M28 116q12-4 24 0m190 30q13-4 26 0" fill="none" stroke="#CBE5E0" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M96 81q15-11 31-7m46 2q14 2 23 8" fill="none" stroke="#F5F9F0" stroke-width="1.6" opacity=".54" stroke-linecap="round"/><ellipse cx="157" cy="94" rx="69" ry="22" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

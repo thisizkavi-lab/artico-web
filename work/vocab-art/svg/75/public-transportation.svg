@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:public transportation" data-archetype="bus-and-tram-sharing-a-city-transit-hub">
+<!-- SELF_PROMPT: Lesson 75 urban life; public transportation. Show a city bus and tram serving a shared stop as passengers board; no labels or readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="pubtrans-sky" x2="0" y2="1"><stop stop-color="#D8E6E8"/><stop offset="1" stop-color="#B8C9C9"/></linearGradient>
+  <linearGradient id="pubtrans-bus" x2="0" y2="1"><stop stop-color="#78A0A4"/><stop offset="1" stop-color="#4D7481"/></linearGradient>
+  <linearGradient id="pubtrans-tram" x2="0" y2="1"><stop stop-color="#E8C977"/><stop offset="1" stop-color="#C88C55"/></linearGradient>
+  <linearGradient id="pubtrans-ground" x2="0" y2="1"><stop stop-color="#969280"/><stop offset="1" stop-color="#68716A"/></linearGradient>
+  <filter id="pubtrans-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#pubtrans-sky)"/><circle cx="257" cy="31" r="12" fill="#E9C66F" opacity=".62"/><path d="M0 119V49h49v70Zm50 0V30h43v89Zm170 0V44h42v75Zm42 0V24h42v95Z" fill="#85999C"/><path d="M0 126H304V192H0Z" fill="url(#pubtrans-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 146H304" fill="none" stroke="#4D5152" stroke-width="3"/><path d="M16 149h272" fill="none" stroke="#D6C7A5" stroke-width="1.4"/>
+  <path d="M42 145V97h8v48m-15-47h22" fill="none" stroke="#566B73" stroke-width="2.4"/><path d="M31 98h31l-15-19Z" fill="#78969A" stroke="#4A6974" stroke-width="1.3"/>
+  <path d="M0 164q50-8 102 0t101 0q54-9 101 0" fill="none" stroke="#D6D1B9" stroke-width="1.4"/>
+  <path d="M7 107h29v12H7Zm264-2h28v12h-28Z" fill="#B37E5A"/><path d="M12 109h18v8H12Zm264 0h18v8h-18Z" fill="#E9D295"/>
+</g>
+<g id="layer-focal" filter="url(#pubtrans-shadow)">
+  <path d="M21 111Q24 99 38 99H138Q151 99 154 111L157 141H18Z" fill="url(#pubtrans-bus)" stroke="#415761" stroke-width="1.5"/><path d="M31 106h25v21H31Zm31 0h25v21H62Zm31 0h25v21H93Z" fill="#C7DAD6" stroke="#4A6973" stroke-width="1.2"/><path d="M130 107h13v34h-13Z" fill="#E3C975" stroke="#4A6973" stroke-width="1.1"/><path d="M25 132h124" fill="none" stroke="#E4C874" stroke-width="2"/><circle cx="47" cy="142" r="7" fill="#34464B"/><circle cx="130" cy="142" r="7" fill="#34464B"/><circle cx="47" cy="142" r="2.6" fill="#E1E2D3"/><circle cx="130" cy="142" r="2.6" fill="#E1E2D3"/>
+  <path d="M181 110Q184 99 197 99H274Q285 99 288 109L292 140H178Z" fill="url(#pubtrans-tram)" stroke="#645440" stroke-width="1.5"/><path d="M191 106h21v20h-21Zm27 0h21v20h-21Zm27 0h21v20h-21Zm27 0h11v20h-11Z" fill="#6D9198" stroke="#F0E2C0" stroke-width="1.1"/><path d="M180 131h110" fill="none" stroke="#855F46" stroke-width="2"/><circle cx="202" cy="141" r="6" fill="#39494C"/><circle cx="271" cy="141" r="6" fill="#39494C"/><circle cx="202" cy="141" r="2" fill="#D6DACC"/><circle cx="271" cy="141" r="2" fill="#D6DACC"/>
+  <circle cx="164" cy="111" r="6" fill="#C58D69"/><path d="M158 108q1-9 7-9 7 1 7 9l-4-2h-8Z" fill="#493D39"/><path d="M157 119Q164 115 171 119L174 136 153 137Z" fill="#AE765A"/><path d="M159 135l-4 13 7 1 4-13m4-1 5 13 7 0-6-14" fill="#405159"/><path d="M157 121l-8 7 4 4 9-6m8-5 8 7-4 4-9-6" fill="#C58D69"/>
+</g>
+<g id="layer-details">
+  <path d="M16 179q12-5 23 0m65 7q12-5 23 0m116-2q12-5 22 0m44-8q10-5 18 0" fill="none" stroke="#C8D098" stroke-width="1.4"/>
+  <circle cx="76" cy="158" r="1.8" fill="#E9C66F"/><circle cx="165" cy="157" r="1.8" fill="#E9C66F"/><circle cx="281" cy="163" r="1.7" fill="#E9C66F"/>
+  <path d="M39 94h16m-7-5v8m173 48h44" fill="none" stroke="#F1E5C7" stroke-width="1.4"/>
+  <path d="M12 88q9-5 17 0m81-34q9-5 17 0m129 23q9-5 17 0" fill="none" stroke="#EAF0E6" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M25 105h118m46 0h99" fill="none" stroke="#F7E5A6" stroke-width="1.2"/><path d="M29 145h110m45-2h99" fill="none" stroke="#D9D6C5" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

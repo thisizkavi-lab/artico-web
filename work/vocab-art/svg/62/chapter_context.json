@@ -1,0 +1,287 @@
+{
+  "chapter": 62,
+  "chapter_title": "Sports equipment and venues",
+  "domain_setting": "A clear multi-sport equipment room, pool, court, field, rink, track, and stadium. Each image should identify one sports object or venue through silhouette and restrained sport-specific context.",
+  "ambient_palette": {
+    "equipment": "warm wood, cool slate, coral and amber accents, ivory balls, clear product shadows",
+    "water": "pale aqua, pool blue, quiet green, bright safety yellow",
+    "venues": "chalk-white lines, grass green, ice blue, warm indoor wood and muted stadium slate",
+    "figures": "small natural proportions and varied kit colors, with the equipment or venue as the focal point"
+  },
+  "recurring_scale_anchors": [
+    "Canvas 304×192; keep equipment silhouettes whole and use grounding shadows.",
+    "No lettering, readable numbers, logos, brands, or club marks.",
+    "When two similar terms occur, vary silhouette and setting so each is recognizable at thumbnail size.",
+    "Use safe, supervised sports contexts and non-graphic scenes.",
+    "For venue terms, show boundaries and distinctive surface markings; for equipment, show the characteristic functional form."
+  ],
+  "polysemy_resolution_table": {
+    "ball": "General sports ball as a neutral round object with color panels, not only a soccer ball or basketball.",
+    "baseball bat / bat": "Both are sports equipment in this sports chapter. Baseball bat is a narrow cylindrical hitter with baseball cues; bat is the broader blade-shaped wooden cricket-style bat with a red ball. Do not use the bat animal (Lesson 55).",
+    "racket / tennis racket": "Racket in this sports-equipment grouping means a sports implement; tennis racket is the wire-strung frame, while racket is a broader compact paddle-like court implement. Avoid the commotion sense unless the lesson gloss explicitly requires it.",
+    "net": "Generic sports net shown as a taut tennis/badminton net across a court, distinct from soccer goal net.",
+    "field / pitch": "Field is a broad outdoor sports field with generic boundaries; pitch is a marked soccer playing surface, distinct from tar/petroleum residue.",
+    "court / tennis court": "Court means a marked tennis/basketball playing surface, not a courthouse or courtyard.",
+    "pool": "Swimming facility with blue lanes and ladder, distinct from cue-sport pool (Lesson 60) and a puddle.",
+    "gym / gymnastics": "Gym is the indoor sports facility; gymnastics is a judged balance/floor activity using apparatus.",
+    "float / armband": "Float is an inflatable ring or buoyant swim aid; armband is a pair of inflatable arm bands worn on the upper arms.",
+    "track / running track": "Running track is a lane-marked oval athletic facility; track is the broader sports course/surface, not footprints or animal tracks.",
+    "rink / ice rink": "Rink is a general smooth skating surface; ice rink is an explicitly frozen indoor arena.",
+    "uniform": "Matching team clothing with a numbered-free shirt and shorts, not the adjective meaning unchanged.",
+    "bat / bow / hook / glove": "Illustrate the sports context named in the chapter group (bat, archery bow, fishing hook, sports glove), resolving away from unrelated animal/body/household senses.",
+    "racket": "The standalone lesson gloss (ばか騒ぎ, 大騒ぎ) indicates a loud commotion, not another tennis racket; show noisy sports spectators. Tennis racket is the equipment item.",
+    "armband / float": "Armband is a cloth captain/identification band worn on one arm; float is a buoyant swim aid such as a ring or inflatable float.",
+    "lifejacket / life ring": "Lifejacket is a wearable buoyant vest with a collar and front buckles; a life ring is a throwable circle, and a swim float is an inflatable play/support ring.",
+    "oars / paddle": "Oars are a paired set pivoting from a boat; a paddle is held freely and is often single-bladed."
+  },
+  "existing_asset_triage": {
+    "lesson_62": "No Lesson 62 SVGs existed at start. Reviewed same-name and relevant cross-lesson candidates by image and target sense.",
+    "reviewed_candidates": [
+      {
+        "source": "22/ball.svg",
+        "verdict": "REJECT for generic sports ball",
+        "reason": "The ball is an unmistakable basketball with basketball court context; the generic sports term needs a neutral ball."
+      },
+      {
+        "source": "61/ball.svg",
+        "verdict": "REJECT as generic sports ball",
+        "reason": "It is a clear soccer ball, but too sport-specific for the broad equipment term; retain only for soccer vocabulary."
+      },
+      {
+        "source": "60/baseball.svg",
+        "verdict": "REJECT as baseball bat object",
+        "reason": "The player and batting action are focal; the standalone bat is not clear enough as equipment."
+      },
+      {
+        "source": "55/bat.svg",
+        "verdict": "REJECT for Lesson 62 bat",
+        "reason": "It depicts the nocturnal winged mammal, which is the Lesson 55 animal sense; Lesson 62 group and skill sense table call for sports equipment."
+      },
+      {
+        "source": "61/cleats.svg",
+        "verdict": "KEEP / ADAPT for soccer cleats",
+        "reason": "Both cleats are clearly shown with studded soles; the footwear itself is an exact match, with no necessary sense correction."
+      },
+      {
+        "source": "14/bow.svg",
+        "verdict": "REJECT for archery bow",
+        "reason": "It depicts the polite greeting gesture; not an archery object."
+      },
+      {
+        "source": "15/uniform.svg",
+        "verdict": "REJECT for sports uniform",
+        "reason": "It is a formal uniform coat with lapels, buttons, and crest, not matching sports kit."
+      },
+      {
+        "source": "49/helmet.svg",
+        "verdict": "KEEP / ADAPT for helmet",
+        "reason": "The vented shell, inner padding, and chin straps are clear; a cycling helmet is a valid sports-protection example."
+      },
+      {
+        "source": "50/flippers.svg",
+        "verdict": "KEEP / ADAPT for flippers",
+        "reason": "Clear pair of swimming fins with foot pockets and blades; exact item."
+      },
+      {
+        "source": "50/surfboard.svg",
+        "verdict": "REJECT for surfboard",
+        "reason": "Although keyed as a surfboard, the rendered object is a very broad upright wedge and does not read as a long tapered surfboard; author a clearer horizontal board."
+      },
+      {
+        "source": "50/swimming-trunks.svg",
+        "verdict": "KEEP / ADAPT for swimming trunks",
+        "reason": "Clearly shows a pair of male swimming shorts with a swim setting."
+      },
+      {
+        "source": "50/swimsuit.svg",
+        "verdict": "KEEP / ADAPT for swimsuit",
+        "reason": "Clearly shows a one-piece swimsuit with shoulder straps and a swim setting."
+      },
+      {
+        "source": "52/field.svg",
+        "verdict": "REJECT for sports field",
+        "reason": "It depicts pastureland and a fence, not a sports playing surface."
+      },
+      {
+        "source": "58/gym.svg",
+        "verdict": "REJECT duplicate for gym",
+        "reason": "It is an exact duplicate of the clearer Lesson 60 gym scene; avoid a repeated asset."
+      },
+      {
+        "source": "60/gym.svg",
+        "verdict": "KEEP / ADAPT for gym",
+        "reason": "The full interior shows weight/cardio equipment and is the clearer of the duplicate gym cards."
+      },
+      {
+        "source": "60/gymnastics.svg",
+        "verdict": "KEEP / ADAPT for gymnastics",
+        "reason": "A full-size balance-beam split is a distinct gymnastics action and apparatus."
+      },
+      {
+        "source": "60/pool.svg",
+        "verdict": "REJECT for swimming pool",
+        "reason": "It depicts cue-sport pool on a billiards table; the chapter venue means a place to swim."
+      },
+      {
+        "source": "61/net.svg",
+        "verdict": "REJECT as sports net",
+        "reason": "It is a soccer goal net; Lesson 62 generic net should show a sports court net rather than goal mesh."
+      },
+      {
+        "source": "61/pitch.svg",
+        "verdict": "KEEP / ADAPT for pitch",
+        "reason": "Clear marked soccer playing surface; direct sports sense."
+      },
+      {
+        "source": "78/float.svg",
+        "verdict": "REJECT for swimming float",
+        "reason": "It depicts the verb float with an object buoying versus sinking, not a wearable/swim safety aid."
+      },
+      {
+        "source": "61/cleats.svg",
+        "verdict": "KEEP / ADAPT for soccer cleats / football boots",
+        "reason": "The pair is clear at full size and visibly has studded soles; exact soccer-footwear sense."
+      },
+      {
+        "source": "60/pool.svg",
+        "verdict": "REJECT as primary art for pool cue",
+        "reason": "The long cue is secondary to the player and full table; the equipment term needs a larger isolated cue with its tip and taper visible."
+      },
+      {
+        "source": "61/net.svg",
+        "verdict": "REJECT as direct art for generic court net",
+        "reason": "It is a soccer goal net around a goal mouth; authored a court-divider net with top tape and posts instead."
+      },
+      {
+        "source": "78/safety-goggles.svg",
+        "verdict": "REJECT for swimming goggles",
+        "reason": "It is an oversized one-piece laboratory splash mask with a clipboard context; swim goggles need two compact sealed eye cups and a nose bridge."
+      },
+      {
+        "source": "50/life-preserver.svg",
+        "verdict": "KEEP / ADAPT for lifejacket",
+        "reason": "It clearly shows a wearable buoyant vest with arm openings, collar, and front buckle straps; exact lifejacket form."
+      },
+      {
+        "source": "50/life-ring.svg",
+        "verdict": "REJECT for lifejacket",
+        "reason": "It is a throwable circular life ring, not a wearable jacket."
+      },
+      {
+        "source": "60/rowing.svg",
+        "verdict": "KEEP / ADAPT for oars",
+        "reason": "Both full-length oars, broad blades, and their oarlock positions are clear; rowing context reinforces the paired equipment sense."
+      },
+      {
+        "source": "60/skateboarding.svg",
+        "verdict": "KEEP / ADAPT for skateboard",
+        "reason": "The board deck, trucks, and four wheels remain fully visible under the rider; the riding context identifies a skateboard."
+      },
+      {
+        "source": "60/skiing.svg",
+        "verdict": "KEEP / ADAPT for skis",
+        "reason": "Two separate narrow skis, boots, and poles are all visible on snow; the pair of skis is recognizable."
+      },
+      {
+        "source": "60/snowboarding.svg",
+        "verdict": "KEEP / ADAPT for snowboard",
+        "reason": "One broad board with bindings remains clearly visible beneath the sideways rider on snow."
+      },
+      {
+        "source": "60/archery.svg",
+        "verdict": "REJECT as primary art for arrow",
+        "reason": "The arrow is a thin line subordinate to the archer, bow, and target; authored a standalone arrow with visible shaft, metal point, feathers, and nock."
+      },
+      {
+        "source": "60/archery.svg",
+        "verdict": "KEEP / ADAPT for bow (archery)",
+        "reason": "The archer scene includes a clearly curved bow held in both hands; reuse preserves useful context while the arrow is handled as a separate standalone card."
+      },
+      {
+        "source": "60/boxing.svg",
+        "verdict": "REJECT for boxing gloves",
+        "reason": "The boxers dominate and their gloves are too small to teach the equipment term directly; authored an object-focused pair."
+      },
+      {
+        "source": "16/gloves.svg",
+        "verdict": "REJECT for sports glove",
+        "reason": "The image shows ordinary cold-weather gloves without sports protection features; authored a padded sports glove."
+      },
+      {
+        "source": "60/fishing.svg",
+        "verdict": "KEEP / ADAPT for fishing rod",
+        "reason": "The bowed rod, line and hook are clearly visible in context; the rod stays legible and is keyed to the Lesson 62 term."
+      },
+      {
+        "source": "60/fishing.svg",
+        "verdict": "REJECT for bait",
+        "reason": "The fishing scene does not show bait clearly; authored a prominent worm fixed to a hook."
+      },
+      {
+        "source": "60/fishing.svg",
+        "verdict": "REJECT as primary art for fishing hook",
+        "reason": "The hook is only a small detail at the end of the rod line; a standalone J-shaped hook is clearer for this equipment term."
+      },
+      {
+        "source": "61/field.svg",
+        "verdict": "REJECT for generic sports field",
+        "reason": "The plan view is a marked soccer field with goal boxes and center circle, making it too sport-specific for broad field; use the soccer field sense for pitch instead."
+      },
+      {
+        "source": "60/boxing.svg",
+        "verdict": "REJECT for boxing ring",
+        "reason": "The boxers dominate the scene and the ring is context; an empty elevated roped platform will teach the venue more directly."
+      },
+      {
+        "source": "61/pitch.svg",
+        "verdict": "KEEP / ADAPT for sports pitch",
+        "reason": "The source has a broad marked soccer playing surface, goals, boundary and halfway markings; the small goalkeeper supports the surface context without obscuring it."
+      },
+      {
+        "source": "60/skiing.svg",
+        "verdict": "REJECT as primary art for ski slope",
+        "reason": "The skier and equipment dominate while the slope is only a background plane; author a long descending piste with lift markers and tiny scale figures."
+      },
+      {
+        "source": "60/swimming.svg",
+        "verdict": "REJECT for swimming pool venue",
+        "reason": "The swimmers and action dominate and the complete pool facility is not shown; author a clear basin with lanes, deck and ladder."
+      },
+      {
+        "source": "60/pool.svg",
+        "verdict": "REJECT for swimming pool or sports pool",
+        "reason": "It depicts billiards and a pool table, not a water swimming facility; create aquatic pool venues for the chapter."
+      },
+      {
+        "source": "27/court.svg",
+        "verdict": "REJECT for sports court",
+        "reason": "It depicts a legal courtroom arrangement, not a tennis or basketball playing surface."
+      },
+      {
+        "source": "27/law-court.svg",
+        "verdict": "REJECT for sports court",
+        "reason": "It is explicitly a courtroom with a judge and counsel; the target chapter sense is a sports court."
+      },
+      {
+        "source": "60/tennis.svg",
+        "verdict": "KEEP / ADAPT for tennis court",
+        "reason": "The full marked tennis court, service boxes and net are visible; the action scene still leaves the playing surface clear, and the Lesson 62 key reinforces the venue noun."
+      },
+      {
+        "source": "60/pool.svg",
+        "verdict": "REJECT for pool",
+        "reason": "It is a billiards table, while this chapter’s venue group calls for a water pool; author a separate recreational swimming pool."
+      },
+      {
+        "source": "60/sport.svg",
+        "verdict": "KEEP / ADAPT for sports",
+        "reason": "The scene combines a runner, a ball player and a throwing athlete, showing sports as a broad category rather than one isolated game."
+      },
+      {
+        "source": "60/game.svg",
+        "verdict": "REJECT as primary art for sports",
+        "reason": "The two athletes and single ball read as one game scene; the multi-sport source shows the broader sports category more clearly."
+      }
+    ]
+  }
+}

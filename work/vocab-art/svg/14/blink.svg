@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: blink (Verb)
+  CONTEXTUAL_DEFINITION: To close and reopen both eyes briefly.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive close-up action
+  SYNONYM_GUARD: Show a quick eye movement while upright and alert, not a wink or sleep.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Alert face close-up with eyes at center.
+    - Context_Layer: Hair, nose, and mouth stay calm and understated.
+    - Focal_Layer: Both eyelids meet briefly, with slight reopening cues.
+    - Details_Layer: Tiny paired motion marks sit above the lids.
+    - Lighting_Layer: Blue arcs bracket the eye movement.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:blink" data-archetype="expressive-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="164" rx="99" ry="17" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M82 86Q77 38 116 22Q154 7 191 23Q228 40 222 88L210 124Q202 165 152 169Q103 165 94 124Z" fill="#F0C5A7" stroke="#64748B" stroke-width="2.3"/><path d="M82 75Q75 36 113 18Q154 1 193 20Q228 38 223 75L207 62Q178 71 151 57Q120 75 97 62Z" fill="#64748B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M119 125Q152 134 185 125" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M148 93Q153 103 148 112" fill="none" stroke="#C88E74" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="124" cy="89" rx="28" ry="18" fill="#FEF3C7" opacity=".58"/><ellipse cx="180" cy="89" rx="28" ry="18" fill="#FEF3C7" opacity=".58"/><path d="M103 88Q123 72 145 88Q124 99 103 88ZM159 88Q180 72 200 88Q181 99 159 88Z" fill="#F8DDCC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M104 86Q123 70 145 86M159 86Q180 70 200 86" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 3"/><path d="M112 68L107 61M135 66L137 58M170 66L169 58M194 68L199 61" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M114 89Q124 94 135 89M169 89Q180 94 190 89" fill="none" stroke="#8E5B4A" stroke-width="1.5"/><circle cx="137" cy="116" r="1.7" fill="#C88E74"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M102 73Q123 57 146 73M158 73Q181 57 202 73" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="3 4" opacity=".7"/></g>
+</svg>

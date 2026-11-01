@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: chicken (noun)
+  CONTEXTUAL_DEFINITION: A small yellow chick, a young bird, as specified by this lesson's gloss.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Show a living fluffy chick with down and tiny wings, not a roast or adult hen; leave hatching action for the separate hatch card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a plump chick at x=100..206 y=72..146, round head at x=170 y=79, small triangular orange beak, two thin legs on a nest floor, feather tuft, and two loose down feathers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:chicken" data-archetype="young-chick">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#E6B348;--c-secondary:#B77735;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="chick-sky" x2="0" y2="1"><stop stop-color="#E1EDF2"/><stop offset="1" stop-color="#F8F1E4"/></linearGradient>
+  <linearGradient id="chick-down" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE27C"/><stop offset="1" stop-color="#E7AE39"/></linearGradient>
+  <radialGradient id="chick-glow"><stop stop-color="#F9D879" stop-opacity=".5"/><stop offset="1" stop-color="#F9D879" stop-opacity="0"/></radialGradient>
+  <filter id="chick-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#chick-sky)"/><circle cx="76" cy="47" r="31" fill="url(#chick-glow)"/><path d="M0 130Q71 115 142 128T304 123V192H0Z" fill="#DBE3CF"/><path d="M0 152Q93 142 171 153T304 149V192H0Z" fill="#C8D4B8"/><path d="M30 136l4-9m6 9 4-12m209 10-3-11m8 10 5-8" fill="none" stroke="#8B9B75" stroke-width="1.5"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="151" rx="72" ry="10" fill="#B7A17D" opacity=".25"/><path d="M83 144q22-21 51-19m-44 19q31-18 70-15m-55 15q40-14 79-10m-73 9q40-9 81-5" fill="none" stroke="#98724E" stroke-width="3" stroke-linecap="round"/><path d="M98 147l-8 7m36-8-6 10m38-10 7 9m26-13 9 7" fill="none" stroke="#B58B5A" stroke-width="2" stroke-linecap="round"/><path d="M111 143q-7-8-1-13q8 5 9 12m61 1q6-9 12-6" fill="none" stroke="#9B754B" stroke-width="1.6"/></g>
+ <g id="layer-focal" filter="url(#chick-shadow)"><path d="M91 116Q94 93 115 91Q124 69 151 72Q174 73 183 91Q204 91 211 110Q211 133 185 141L125 143Q98 139 91 116Z" fill="url(#chick-down)" stroke="#A86C2F" stroke-width="1.6"/><circle cx="170" cy="77" r="23" fill="url(#chick-down)" stroke="#A86C2F" stroke-width="1.5"/><path d="M190 77l21 7-19 8Z" fill="#E77F37" stroke="#A4512F" stroke-width="1.1"/><circle cx="177" cy="74" r="2.6" fill="#1E2A3B"/><circle cx="178" cy="73" r=".75" fill="#FFFFFF"/><path d="M110 105Q123 96 139 108Q146 117 134 128Q117 130 108 119Z" fill="#F5CC5D" stroke="#C18A38" stroke-width="1.1"/><path d="M117 108q7 7 12 5m-7 5 7 4" fill="none" stroke="#D89E3C" stroke-width="1.2" stroke-linecap="round"/><path d="M131 140l-2 10m37-10 3 10m-40 0-8 2m49-2 8 1" fill="none" stroke="#C87836" stroke-width="2.6" stroke-linecap="round"/><path d="M129 69l-3-7m13 6 2-9m9 10 7-7" fill="none" stroke="#DDA53E" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M70 151l-6-6m4 7 2-8m150 8 5-7m-1 8 7-4" fill="none" stroke="#87966F" stroke-width="1.3" stroke-linecap="round"/><circle cx="74" cy="135" r="1.3" fill="#D9C69E"/><circle cx="227" cy="136" r="1.4" fill="#D9C69E"/><path d="M102 124q7 5 13 5" fill="none" stroke="#FFE898" stroke-width="1.4" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M111 99q8-18 27-20m24 1q13 2 18 13" fill="none" stroke="#FFF5CF" stroke-width="1.7" opacity=".8" stroke-linecap="round"/><ellipse cx="146" cy="104" rx="58" ry="35" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

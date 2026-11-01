@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: history (Noun)
+  CONTEXTUAL_DEFINITION: The school subject that studies people and events from the past.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with time context
+  SYNONYM_GUARD: A student studies an old artifact and an archival picture beside a timeline, making history about the past rather than a storybook.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: History classroom with display case and window.
+    - Context_Layer: Faded portrait frames and a timeline strip.
+    - Focal_Layer: Student examines an ancient pottery vessel.
+    - Details_Layer: Archaeological shard, scroll-like paper, and clockwork era marker without numerals.
+    - Lighting_Layer: Warm spotlight on the artifact.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:history" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="hist-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="hist-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hist-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 29H89V80H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 30V79M22 54H88" stroke="#FFFFFF" stroke-width="2.5"/><rect x="215" y="36" width="67" height="91" rx="3" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M222 47H275M222 58H275" stroke="#F7EBCF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M24 133H195" stroke="#A98A64" stroke-width="2.5"/><circle cx="47" cy="133" r="4" fill="#D9857F"/><circle cx="91" cy="133" r="4" fill="#D9A441"/><circle cx="136" cy="133" r="4" fill="#5479AC"/><circle cx="181" cy="133" r="4" fill="#91A77C"/><path d="M47 133V119M91 133V119M136 133V119M181 133V119" stroke="#A98A64" stroke-width="1.2"/><path d="M22 119H70V86H22ZM81 119H128V86H81Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.4"/><circle cx="45" cy="101" r="8" fill="#AFC5DA"/><path d="M33 116Q34 104 45 104Q56 104 57 116Z" fill="#91A77C"/><path d="M94 111L104 95L115 111Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#hist-shadow)"><path d="M148 76Q137 71 140 57L151 49L162 57Q165 71 154 76L160 89Q172 102 169 126Q151 140 133 126Q130 102 142 89Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M140 58Q141 44 153 44Q165 45 164 59L159 61Q157 51 152 51Q147 51 145 63Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M138 88L125 104L118 122M161 88L177 101L183 117" fill="none" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M138 88L125 104L118 122M161 88L177 101L183 117" fill="none" stroke="#C98961" stroke-width="3" stroke-linecap="round"/><path d="M197 90Q191 83 194 70Q198 58 210 62Q221 69 217 83L211 89L213 95Q224 106 220 120Q205 127 190 120Q188 105 199 95Z" fill="#B9824F" stroke="#65472F" stroke-width="2"/><path d="M198 91Q206 96 215 91" fill="none" stroke="#E8C79F" stroke-width="2"/><ellipse cx="204" cy="141" rx="45" ry="6" fill="#C9B99F"/></g>
+  <g id="layer-details"><path d="M111 124L125 114L136 126L127 137Z" fill="#B78C66" stroke="#65472F" stroke-width="1.3"/><path d="M235 143H270" stroke="#A98A64" stroke-width="2"/><path d="M240 139Q249 134 256 139Q262 143 268 137" fill="none" stroke="#D9857F" stroke-width="2"/><circle cx="233" cy="138" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="177" cy="91" rx="84" ry="72" fill="#FEF9C3" opacity=".1"/><path d="M142 54Q152 46 162 54" fill="none" stroke="#F5D0A4" stroke-width="2.2" stroke-linecap="round"/></g>
+</svg>

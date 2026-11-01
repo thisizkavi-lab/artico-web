@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: thumb (Noun)
+  CONTEXTUAL_DEFINITION: The short, thick digit set at the side of the hand.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: The thumb branches from the palm at an angle; it is shorter and thicker than the fingers.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Hand seen palm-forward with the thumb opened to the side.
+    - Context_Layer: Palm and four fingers are muted slate.
+    - Focal_Layer: Only the short angled thumb is warm and saturated.
+    - Details_Layer: Thumb base crease shows its connection to the palm.
+    - Lighting_Layer: Arrow lands on the side digit.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:thumb" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="110" rx="99" ry="70" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M131 144Q152 136 174 144L181 179H123Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M128 140L113 127Q102 117 95 105L74 77Q68 67 77 61Q86 55 93 64L113 88L111 44Q111 32 122 31Q133 30 133 43L134 83L141 35Q143 25 153 27Q164 29 161 41L154 88L168 48Q172 38 181 42Q191 46 186 57L170 97L187 68Q193 59 201 65Q209 71 203 80L181 119Q174 132 175 145Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M122 45L123 83M151 43L145 87M178 58L164 94" fill="none" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="94" cy="110" rx="39" ry="31" transform="rotate(34 94 110)" fill="#FEF3C7" opacity=".65"/><path d="M128 140L113 127Q102 117 95 105L74 77Q68 67 77 61Q86 55 93 64L113 88L132 102L149 121Q145 138 128 140Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M82 69L105 99M98 111Q108 124 122 130" fill="none" stroke="#C88E74" stroke-width="1.6"/><path d="M125 144L110 130Q98 120 91 107L70 79Q63 66 75 57Q87 49 97 62L116 84L135 98L153 120Q150 142 125 144Z" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M232 128L112 106" stroke="#4A72B2" stroke-width="2.1"/><path d="M121 101L110 106L119 112" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M77 70Q90 87 104 104" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

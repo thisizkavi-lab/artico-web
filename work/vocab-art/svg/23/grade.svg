@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: grade (Noun)
+  CONTEXTUAL_DEFINITION: A year or level in elementary or secondary school, not a score on a test.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through ordered age progression
+  SYNONYM_GUARD: A sequence of children growing older beside progressively taller school-level markers shows grade as a school year, not an exam mark.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: School corridor with classroom doors.
+    - Context_Layer: Small row of unlettered classroom windows.
+    - Focal_Layer: Three learners increase in age and height from left to right.
+    - Details_Layer: Rising steps and stacked books mark progression.
+    - Lighting_Layer: A gentle highlight follows the forward progression.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:grade" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="grade-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="grade-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#grade-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="22" y="28" width="91" height="53" rx="3" fill="#DCECFB" stroke="#64748B" stroke-width="1.8"/><path d="M67 29V80M23 54H112" stroke="#FFFFFF" stroke-width="2"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M208 40H280V127H208Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M216 50H272M216 60H272" stroke="#F7EBCF" stroke-width="1.8"/><path d="M0 151H304" stroke="#C9B99F" stroke-width="1.4"/><path d="M40 144H84M112 139H156M185 133H228" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#grade-shadow)"><path d="M38 145H98V151H38Z" fill="#5479AC"/><path d="M111 140H172V151H111Z" fill="#D9857F"/><path d="M185 134H253V151H185Z" fill="#91A77C"/><circle cx="66" cy="112" r="10" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M56 112Q57 101 67 101Q77 102 77 113L73 116Q71 108 66 108Q62 108 59 119Z" fill="#27364B" stroke="#1E2A3B" stroke-width=".9"/><path d="M54 126Q66 121 78 127L82 142L73 146L58 142L51 133Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M59 141L57 150M75 142L77 150" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/><circle cx="139" cy="99" r="12" fill="#80513F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M127 99Q128 86 140 86Q152 87 152 100L147 103Q145 94 139 94Q134 94 130 106Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M125 115Q139 109 153 116L158 138L148 143L131 139L122 126Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M130 139L128 149M149 139L152 149" stroke="#1E2A3B" stroke-width="3.4" stroke-linecap="round"/><circle cx="218" cy="85" r="14" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M204 85Q205 70 219 70Q233 71 233 86L227 89Q225 78 218 78Q212 78 208 92Z" fill="#A95059" stroke="#1E2A3B" stroke-width="1.1"/><path d="M201 103Q218 96 235 104L241 132L229 138L207 132L197 115Z" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M207 132L205 148M230 133L233 148" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M46 144L52 138M120 139L127 132M198 133L205 126" stroke="#FFFFFF" stroke-width="1.8"/><path d="M265 120L271 114L277 120" fill="none" stroke="#D9A441" stroke-width="2"/><circle cx="78" cy="104" r="2" fill="#1E2A3B"/><circle cx="144" cy="91" r="2" fill="#1E2A3B"/><circle cx="224" cy="77" r="2" fill="#1E2A3B"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="98" rx="123" ry="73" fill="#FEF9C3" opacity=".06"/><path d="M39 145H98M111 140H172M185 134H253" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".6"/></g>
+</svg>

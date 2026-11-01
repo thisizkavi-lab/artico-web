@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: in the public eye
+ CONTEXTUAL_DEFINITION: Constantly visible to and watched by the public.
+ PEDAGOGICAL_ARCHETYPE: central public figure watched by an audience and recording cameras
+ SYNONYM_GUARD: Show ongoing public scrutiny with several viewers and cameras; avoid an isolated famous portrait or a single paparazzo.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A public figure stands on a small platform while people and camera lenses all face them; simple eye shapes at the edge of the scene reinforce constant public attention.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:in the public eye" data-archetype="public figure under constant observation">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M36 37H268V145H36Z" fill="#E2DDD3"/><path d="M47 49H257V137H47Z" fill="#D2D7CC"/>
+  <path d="M111 125H194V148H111Z" fill="#8C725A"/><path d="M118 148V156M187 148V156" stroke="#725F4B" stroke-width="2"/>
+  <path d="M24 150H280" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-context">
+  <!-- public viewers line the edges, all facing center -->
+  <circle cx="63" cy="119" r="6" fill="#A77D68"/><path d="M57 128Q63 124 69 128L72 147H54Z" fill="#597D8B"/><path d="M58 130L70 135" stroke="#A77D68" stroke-width="2"/>
+  <circle cx="241" cy="119" r="6" fill="#D29A78"/><path d="M235 128Q241 124 247 128L250 147H232Z" fill="#B85E5A"/><path d="M237 130L229 135" stroke="#D29A78" stroke-width="2"/>
+  <!-- phones and cameras directed at the center -->
+  <path d="M75 104L87 98H100V112H75Z" fill="#26384A"/><circle cx="95" cy="105" r="4" fill="#597D8B" stroke="#F6E5CE" stroke-width=".8"/>
+  <path d="M204 104L216 98H229V112H204Z" fill="#26384A"/><circle cx="224" cy="105" r="4" fill="#597D8B" stroke="#F6E5CE" stroke-width=".8"/>
+  <path d="M19 66Q31 54 43 66Q31 78 19 66Z" fill="#F6E5CE" stroke="#597D8B" stroke-width="1.4"/><circle cx="31" cy="66" r="4" fill="#26384A"/>
+  <path d="M261 66Q273 54 285 66Q273 78 261 66Z" fill="#F6E5CE" stroke="#597D8B" stroke-width="1.4"/><circle cx="273" cy="66" r="4" fill="#26384A"/>
+  <path d="M26 86L31 81L36 86M268 86L273 81L278 86" stroke="#D6A64C" stroke-width="1.4"/>
+ </g>
+ <g id="layer-focal">
+  <!-- watched public figure -->
+  <circle cx="153" cy="62" r="10" fill="#D29A78"/><path d="M143 61Q144 48 154 49Q164 50 164 63L159 56H145Z" fill="#26384A"/>
+  <path d="M135 76Q153 67 171 76L177 123H129Z" fill="#B85E5A" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M139 82L124 94M168 82L183 94" stroke="#D29A78" stroke-width="3" fill="none"/>
+  <path d="M138 120L136 141M169 120L172 141" stroke="#26384A" stroke-width="2.8"/>
+  <path d="M146 74L153 83L161 74" fill="#F6E5CE"/><path d="M151 83L153 91L156 83" fill="#D6A64C"/>
+  <path d="M146 59Q153 56 160 59M147 68Q153 71 159 68" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M153 31L158 22L163 31L172 35L163 39L158 48L153 39L144 35Z" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M102 58L108 52M114 52L120 48M186 51L192 56M198 57L204 62" stroke="#D6A64C" stroke-width="1.4"/>
+  <circle cx="108" cy="84" r="2" fill="#D6A64C"/><circle cx="198" cy="84" r="2" fill="#B85E5A"/>
+  <path d="M48 90Q54 85 60 90M244 90Q250 85 256 90" stroke="#8C725A" stroke-width="1.2" fill="none"/>
+  <path d="M117 130H189" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="153" cy="85" rx="86" ry="71" fill="#E7C66B" opacity=".1"/><path d="M42 37L65 59M264 36L241 59" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M37 151H267" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

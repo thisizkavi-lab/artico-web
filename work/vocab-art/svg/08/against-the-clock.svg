@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: against the clock (Phrase)
+  CONTEXTUAL_DEFINITION: Hurrying to finish before time runs out.
+  PEDAGOGICAL_ARCHETYPE: 2 (Human action under a visible time constraint)
+  SYNONYM_GUARD: A large clock, fast hands, and a nearly finished task make the deadline pressure clear without numerals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Worktable and warm room near evening.
+    - Context_Layer: Tired worker leans over a partly assembled model.
+    - Focal_Layer: Oversized clock looms above the unfinished task.
+    - Details_Layer: Fast motion marks and one nearly fitted piece.
+    - Lighting_Layer: Bright pool around the task and clock.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:against the clock" data-archetype="action-tool">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 149 Q152 141 304 149 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="151" cy="165" rx="111" ry="8" fill="#DDD4C3"/><path d="M24 43 L280 43 M24 47 L24 73 M280 47 L280 73" stroke="#D8CDAF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M27 151 Q29 128 47 125 Q65 128 67 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="47" cy="110" r="16" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M31 109 Q32 91 48 93 Q63 94 63 110 Q55 102 46 103Z" fill="#27364B"/><path d="M39 112 Q43 108 46 112 M51 112 Q55 108 58 112" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="48" cy="120" rx="5" ry="3" fill="#A34F47"/><path d="M60 132 Q80 124 95 111 L101 117 Q93 136 68 144" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><circle cx="225" cy="68" r="43" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.7"/><circle cx="225" cy="68" r="34" fill="#FFFFFF" stroke="#D49B2A" stroke-width="1.7"/><path d="M225 44 L225 68 L244 78" fill="none" stroke="#CE3D4E" stroke-width="3.2" stroke-linecap="round"/><circle cx="225" cy="68" r="3.5" fill="#1E2A3B"/><path d="M72 145 L267 145 L260 156 L79 156Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M107 137 L129 112 L150 137Z M132 137 L153 115 L174 137Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.8"/><path d="M191 137 L214 114 L238 137Z" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M222 115 L237 100 L253 115" fill="none" stroke="#5479AC" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M174 30 L164 19 M192 23 L188 10 M255 28 L264 16 M270 48 L284 42" stroke="#CE3D4E" stroke-width="2.4" stroke-linecap="round"/><path d="M189 86 L200 81 M194 96 L205 91 M211 103 L221 99" stroke="#D97706" stroke-width="2" stroke-linecap="round"/><path d="M84 99 L89 89 L94 99 L104 104 L94 109 L89 119 L84 109 L74 104Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M188 39 Q225 28 260 43 M85 144 Q160 136 243 144" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

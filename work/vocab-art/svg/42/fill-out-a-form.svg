@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: fill out a form
+  CONTEXTUAL_DEFINITION: Write the requested information in the spaces on a form.
+  PEDAGOGICAL_ART_DIRECTOR: Show a hand actively completing several blank form fields with a pen.
+  PEDAGOGICAL_ARCHETYPE: 4 - Form-filling action
+  SYNONYM_GUARD: The form is being completed in this scene; do not show the completed submission or the form document alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Angle a clipboard page from x=88..214, y=47..134. Add blank horizontal fields and checkboxes; one hand enters from x=197 and holds a pen whose tip touches the middle field. Two lower rows remain visibly blank to show work in progress.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:fill out a form" data-archetype="active-form-filling">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="fill-form-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="fill-form-clip" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="fill-form-halo"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="fill-form-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="111" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 133 H274 V145 H30 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/><rect x="83" y="49" width="142" height="84" rx="3" fill="url(#fill-form-clip)" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#fill-form-shadow)"><rect x="92" y="41" width="122" height="83" rx="2" fill="url(#fill-form-paper)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M103 52 H198 M103 57 H188" stroke="#CBD5E1" stroke-width="1"/><path d="M101 66 H202 M101 83 H202 M101 100 H202 M101 115 H202" stroke="#CBD5E1" stroke-width="1"/><rect x="106" y="71" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M121 75 H185" stroke="#94A3B8" stroke-width="1"/><path d="M121 72 L127 76 L136 68" fill="none" stroke="#547A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="106" y="88" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M121 92 H185" stroke="#94A3B8" stroke-width="1"/><rect x="106" y="105" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M121 109 H185" stroke="#94A3B8" stroke-width="1"/><path d="M237 62 L248 67 L216 108 L205 112 L210 101 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M237 62 L241 56 L252 61 L248 67 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width=".9"/><path d="M210 101 L216 108 L205 112 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width=".8"/><path d="M203 106 L195 110 L191 116 L200 115" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M188 87 L195 83" stroke="#D97706" stroke-width="1.4" stroke-linecap="round"/><circle cx="195" cy="83" r="2" fill="#F2C14E"/><path d="M84 44 L90 39 M221 42 L227 37" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/><path d="M99 119 H207" stroke="#FFFFFF" stroke-width=".9"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="83" rx="93" ry="67" fill="url(#fill-form-halo)" opacity=".22"/><path d="M96 45 H209" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

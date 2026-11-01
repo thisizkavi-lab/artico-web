@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 62 - Sports equipment and venues
+  WORD: flippers
+  CONTEXTUAL_DEFINITION: Broad rubber swim fins worn on the feet to push through water.
+  PEDAGOGICAL_ART_DIRECTOR: Show a left and right pair with foot pockets, heel openings, and wide paddle blades.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete objects
+  SYNONYM_GUARD: These are swim fins, not shoes, fins attached to a fish, or a surfboard fin.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Pair of turquoise and coral rubber swimming fins angled apart, each with a foot pocket and long fan-shaped blade.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:flippers" data-archetype="swim-flippers">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="fl-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="fl-blue" x2="1" y2="1"><stop stop-color="#7AC8C0"/><stop offset="1" stop-color="#3A8296"/></linearGradient><linearGradient id="fl-coral" x2="1" y2="1"><stop stop-color="#F09A61"/><stop offset="1" stop-color="#C45140"/></linearGradient><filter id="fl-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.4" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fl-sky)"/><path d="M0 115Q78 99 154 115T304 109V192H0Z" fill="#B6C6A2"/><path d="M0 148H304V192H0Z" fill="#E5CF9C"/></g>
+ <g id="layer-context"><circle cx="250" cy="42" r="16" fill="#EBC86F" opacity=".8"/><path d="M18 114L36 71L54 114ZM256 109L274 60L292 109Z" fill="#66836F"/><path d="M24 169H280" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="152" cy="158" rx="78" ry="5" fill="#90734D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fl-shadow)">
+  <path d="M91 105Q81 92 86 80L100 61Q107 56 116 62L130 77L120 111Z" fill="url(#fl-blue)" stroke="#315F73" stroke-width="1.7"/><path d="M117 105L166 49Q177 37 188 45Q196 50 190 62L144 122Q132 132 117 105Z" fill="url(#fl-blue)" stroke="#315F73" stroke-width="1.7"/>
+  <path d="M82 80Q94 69 106 75L118 91L110 108Q95 112 84 100Z" fill="#4F7F9D" stroke="#315F73" stroke-width="1.4"/><path d="M166 52Q176 44 185 49L180 58L173 62Z" fill="#4F7F9D"/>
+  <path d="M197 132Q185 120 190 108L204 89Q212 84 221 90L235 105L224 138Z" fill="url(#fl-coral)" stroke="#984B3D" stroke-width="1.7"/><path d="M223 133L258 74Q267 61 279 68Q288 74 281 86L251 150Q240 160 223 133Z" fill="url(#fl-coral)" stroke="#984B3D" stroke-width="1.7"/>
+  <path d="M190 108Q203 97 215 103L227 119L219 136Q204 140 192 128Z" fill="#D7834B" stroke="#984B3D" stroke-width="1.4"/><path d="M258 77Q269 67 277 73L272 82L265 86Z" fill="#D7834B"/>
+  <path d="M91 83Q102 78 110 86m92 22 17 13m-99-23 14 13m36-45 8-9m45 42 9-10" fill="none" stroke="#C8E8DE" stroke-width="1.3"/>
+  <path d="M133 91L162 59M236 117L257 82" fill="none" stroke="#E8F3E9" stroke-width="1.5"/>
+  <circle cx="101" cy="91" r="1.15" fill="#DDF2EA"/><circle cx="207" cy="119" r="1.15" fill="#F9D6B8"/>
+ </g>
+ <g id="layer-details"><path d="M89 81q8-8 16-3m93 32 14 11m-94-19 12 12m39-46 8-8m48 42 9-10" fill="none" stroke="#E5F1E9" stroke-width="1.1"/><circle cx="250" cy="42" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M88 80Q97 68 108 76M196 110Q204 98 215 104" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".6"/><path d="M136 87l24-27m78 53 19-31" fill="none" stroke="#CFF0E7" stroke-width="1.2"/><circle cx="250" cy="42" r="1.2" fill="#FFF8E7"/></g>
+</svg>

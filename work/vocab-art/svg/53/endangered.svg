@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:endangered" data-archetype="tiger-isolated-on-shrinking-forest-habitat">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; endangered. Show one recognizable tiger on a small remaining forest patch, surrounded by cleared land and separated habitat; non-graphic, no text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="endangered-sky" x2="0" y2="1"><stop stop-color="#E4EADF"/><stop offset="1" stop-color="#C3CBB6"/></linearGradient>
+  <linearGradient id="endangered-clearing" x2="0" y2="1"><stop stop-color="#C6AA76"/><stop offset="1" stop-color="#8A7958"/></linearGradient>
+  <linearGradient id="endangered-patch" x2="0" y2="1"><stop stop-color="#73906C"/><stop offset="1" stop-color="#435F4A"/></linearGradient>
+  <linearGradient id="tiger-coat" x2="0" y2="1"><stop stop-color="#E8A74D"/><stop offset="1" stop-color="#C87639"/></linearGradient>
+  <filter id="endangered-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#27382F" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#endangered-sky)"/><circle cx="255" cy="34" r="12" fill="#EBC86F" opacity=".55"/><path d="M0 112L51 67 94 109 142 55 190 107 239 62 304 111V192H0Z" fill="#9EAA91"/><path d="M0 136Q64 124 123 136T236 132Q279 125 304 136V192H0Z" fill="url(#endangered-clearing)"/></g>
+<g id="layer-context">
+  <path d="M0 145Q52 129 104 141T202 140Q259 126 304 140V192H0Z" fill="#A38C61"/>
+  <path d="M40 150Q49 123 79 116Q102 103 136 112Q167 101 194 116Q230 117 249 145Q237 161 209 166Q177 177 144 167Q111 176 78 164Q54 164 40 150Z" fill="url(#endangered-patch)" stroke="#516D51" stroke-width="1.5"/>
+  <path d="M0 173Q55 157 104 174T201 173Q257 155 304 170V192H0Z" fill="#8A7556"/>
+  <path d="M0 156L92 145m141 10 71-16" fill="none" stroke="#5E5B4B" stroke-width="4"/><path d="M0 160L92 149m141 10 71-16" fill="none" stroke="#D9C79A" stroke-width="1.3" stroke-dasharray="5 5"/>
+  <path d="M23 146V127m0 12-7-8m7 6 8-10m34 14v-18m0 10-7-8m7 6 8-11m188 11v-20m0 13-8-9m8 7 8-12m25 19v-15m0 8-7-7m7 6 8-9" fill="none" stroke="#6A6952" stroke-width="2" stroke-linecap="round"/>
+  <path d="M91 136V125l6-5 7 5v11m94 4V128l6-5 7 5v13" fill="#78644D" stroke="#554C3F" stroke-width="1.2"/>
+  <path d="M47 132V99l9-13 10 13v32Z" fill="#735942"/><path d="M39 101q4-15 14-13 6-17 15-6 13 1 15 17-13-7-22 3-11-8-22-1Z" fill="#597454"/>
+  <path d="M220 132V94l10-13 10 14v37Z" fill="#735942"/><path d="M212 97q4-16 15-13 6-17 15-6 13 2 15 18-13-7-22 3-12-8-23-2Z" fill="#526E50"/>
+</g>
+<g id="layer-focal" filter="url(#endangered-shadow)">
+  <path d="M118 141Q104 133 109 122Q114 113 127 118Q144 108 164 116Q178 118 182 130Q177 141 162 145L134 147Z" fill="url(#tiger-coat)" stroke="#704B36" stroke-width="1.5"/>
+  <path d="M169 120Q177 109 189 113Q199 117 199 128Q197 137 185 139L174 134Z" fill="url(#tiger-coat)" stroke="#704B36" stroke-width="1.4"/>
+  <path d="M179 113l2-8 6 8m5 1 5-7 3 10" fill="#C9793B" stroke="#704B36" stroke-width="1.2"/>
+  <path d="M191 125l4 1m-7 6q6 4 11 0" fill="none" stroke="#493B34" stroke-width="1.5" stroke-linecap="round"/><circle cx="190" cy="120" r="1.8" fill="#253640"/>
+  <path d="M119 137l-3 16m17-9-2 12m21-13 2 12m15-17 5 15" fill="none" stroke="#C87639" stroke-width="6" stroke-linecap="round"/><path d="M117 145l-1 8m14 0v4m21-4 1 4m15-4 2 5" fill="none" stroke="#473D34" stroke-width="2" stroke-linecap="round"/>
+  <path d="M113 123Q99 119 101 108Q102 102 108 99" fill="none" stroke="#D18443" stroke-width="5" stroke-linecap="round"/><path d="M103 109l-2-5m6 1 4-4" fill="none" stroke="#463A34" stroke-width="2"/>
+  <path d="M131 114l5 10m5-11-1 11m10-10 3 10m8-10-2 11m18-6 6 6m-2-12 3 6" fill="none" stroke="#483C34" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M124 132q6 5 12 0m13 2q6 5 12 0" fill="none" stroke="#F4D79A" stroke-width="1.8"/>
+</g>
+<g id="layer-details">
+  <path d="M24 177q13-5 25 0m48 7q11-5 22 0m90-2q13-5 25 0m43-9q12-5 23 0" fill="none" stroke="#C4AF7B" stroke-width="1.4"/>
+  <circle cx="82" cy="157" r="1.8" fill="#DED0AA"/><circle cx="218" cy="161" r="1.7" fill="#DED0AA"/><circle cx="273" cy="154" r="1.6" fill="#DED0AA"/>
+  <path d="M21 117q8-5 16 0m67-28q8-5 16 0m107-8q8-5 15 0" fill="none" stroke="#EFF0D9" stroke-width="1.4"/>
+  <path d="M76 144l5-5m2 10 6-6m112 0 5-5m-4 12 7-5" fill="none" stroke="#91A47B" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M111 125q11-12 25-10m39 16q10-12 20-9" fill="none" stroke="#F1C674" stroke-width="1.5"/><path d="M49 101q11-18 23-6m158 1q11-17 23-5" fill="none" stroke="#879B79" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

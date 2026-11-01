@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: energetic
+  CONTEXTUAL_DEFINITION: Full of lively activity, enthusiasm, and drive.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker moving briskly through an active workplace task with visible vitality.
+  PEDAGOGICAL_ARCHETYPE: 12 - Lively work pace
+  SYNONYM_GUARD: Emphasize lively movement and activity; hardworking means sustained effort over time and can look quieter.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show an alert worker carrying a set of light work folders briskly from a supply shelf at x=51..100 toward a team desk at x=199..251. Use short motion accents around the worker and a lively forward stride.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:energetic" data-archetype="lively-work-pace">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="energetic-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7E8BF"/></linearGradient>
+    <linearGradient id="energetic-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="energetic-halo"><stop stop-color="#FFF1B9" stop-opacity=".77"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="energetic-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="46" y="53" width="45" height="67" rx="3" fill="#EAE3D5" stroke="#64748B" stroke-width="1"/><path d="M54 63 H82 M54 72 H82 M54 81 H82" stroke="#CBD5E1" stroke-width="1"/><rect x="203" y="105" width="58" height="23" fill="#E9BB79" stroke="#965D28" stroke-width=".9"/><path d="M209 116 H254 M214 110 V122 M224 108 V122 M234 111 V122" stroke="#5479AC" stroke-width="1"/><path d="M200 134 H267 V145 H200 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.2"/><path d="M214 145 V154 M253 145 V154" stroke="#965D28" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#energetic-shadow)"><path d="M111 122 Q113 97 127 90 L128 80 Q124 76 126 68 Q134 60 145 63 Q155 66 152 77 L150 84 Q164 90 166 119 L163 132 H115 Z" fill="url(#energetic-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="141" cy="72" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M132 70 Q134 62 142 62 Q150 63 154 70 Q146 66 139 67 Z" fill="#3D342D"/><path d="M119 97 Q140 91 160 97" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M119 101 L103 111 M160 100 L179 88" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M103 111 L93 108 M179 88 L189 83" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M126 125 L109 142 M156 125 L173 141" stroke="#3D5F91" stroke-width="3.2" stroke-linecap="round"/><path d="M128 125 L119 145 M159 125 L185 138" stroke="#D89A6C" stroke-width="3.1" stroke-linecap="round"/><path d="M166 78 L194 64 L203 71 L179 92 Z" fill="url(#energetic-folder)" stroke="#C88446" stroke-width="1"/><path d="M174 80 L193 70" stroke="#8EB0DE" stroke-width=".9"/><path d="M170 83 L187 74" stroke="#D6B869" stroke-width=".9"/></g>
+  <g id="layer-details"><path d="M94 63 L105 59 M91 75 L102 74 M181 48 L192 44 M176 57 L186 55" stroke="#D99A2B" stroke-width="1.5" stroke-linecap="round"/><circle cx="110" cy="51" r="2" fill="#8EB0DE"/><circle cx="192" cy="104" r="2" fill="#A8D4A2"/><path d="M125 52 L131 47 M153 52 L159 47" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><path d="M50 125 H87" stroke="#D4CCBD" stroke-width=".9"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="102" ry="66" fill="url(#energetic-halo)" opacity=".17"/><path d="M49 55 H88" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: responsible
+  CONTEXTUAL_DEFINITION: Conscientious and willing to accept the consequences of one's actions.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker noticing an issue, owning it, and taking the first careful step to make it right.
+  PEDAGOGICAL_ARCHETYPE: 27 - Accountable conduct
+  SYNONYM_GUARD: Depict the general quality of accountability, not the exact assigned-duty phrase responsible for from Lesson 42.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a worker checking a slightly damaged workplace item at x=180..233, then honestly bringing it to a shared repair area at x=86..145. Give the worker a clear, attentive posture and a repair checklist with an accepted check.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:responsible" data-archetype="accountable-conduct">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="responsible-repair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="responsible2-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="responsible2-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="responsible2-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="70" y="73" width="73" height="53" rx="3" fill="url(#responsible-repair)" stroke="#547A56" stroke-width="1.1"/><path d="M80 84 H134 M80 91 H127" stroke="#CBD5E1" stroke-width="1"/><path d="M83 105 L90 112 L102 98" fill="none" stroke="#547A56" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><rect x="189" y="79" width="48" height="38" rx="3" fill="#E9BB79" stroke="#965D28" stroke-width="1"/><path d="M195 79 V66 H228 V79 M195 87 H230" fill="none" stroke="#965D28" stroke-width="1"/><path d="M213 93 L220 99 L226 91" fill="none" stroke="#C88446" stroke-width="1.2"/><path d="M32 135 H270 V145 H32 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#responsible2-shadow)"><path d="M134 127 Q136 102 149 95 L150 85 Q146 81 148 73 Q156 65 167 68 Q176 71 174 82 L172 89 Q185 95 187 124 L184 136 H138 Z" fill="url(#responsible2-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="163" cy="76" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M154 74 Q156 66 164 66 Q172 67 176 74 Q168 70 161 71 Z" fill="#3D342D"/><path d="M143 100 Q163 94 182 100" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M146 105 L133 111 M180 105 L193 100" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M133 111 L122 113 M193 100 L205 96" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/><path d="M218 48 L226 56" stroke="#64748B" stroke-width="1.1" stroke-linecap="round"/><path d="M227 50 L220 57" stroke="#C88446" stroke-width="1.1" stroke-linecap="round"/><circle cx="222" cy="53" r="7" fill="none" stroke="#F2C14E" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M85 63 L92 57 M153 52 L159 46" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="175" cy="55" r="2" fill="#8EB0DE"/><circle cx="157" cy="115" r="2" fill="#A8D4A2"/><path d="M77 121 H137" stroke="#FFFFFF" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="101" ry="66" fill="url(#responsible2-halo)" opacity=".15"/><path d="M70 74 H143" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

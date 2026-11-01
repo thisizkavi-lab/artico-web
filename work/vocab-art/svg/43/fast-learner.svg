@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: fast learner
+  CONTEXTUAL_DEFINITION: A person who understands and picks up a new skill quickly.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker observing one demonstration and quickly completing the same new procedure.
+  PEDAGOGICAL_ARCHETYPE: 13 - Rapid learning
+  SYNONYM_GUARD: Make quick uptake visible through a short observe-then-do sequence; trained in indicates instruction received, not the speed of learning.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a trainer at x=60..108 pointing to a two-step procedure board at x=93..170. Put the learner at x=172..219 immediately repeating the task correctly, with a small green check and a short arrow from demonstration to practice.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:fast learner" data-archetype="rapid-learning">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="fastlearner-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="fastlearner-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="fastlearner-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="fastlearner-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="98" y="42" width="78" height="52" rx="3" fill="url(#fastlearner-board)" stroke="#64748B" stroke-width="1"/><circle cx="114" cy="58" r="7" fill="#EEF4FA" stroke="#5479AC" stroke-width="1"/><path d="M111 58 L114 61 L119 54" fill="none" stroke="#547A56" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M130 55 H165 M130 62 H160 M108 76 H166 M108 83 H157" stroke="#CBD5E1" stroke-width=".9"/><path d="M177 66 H194" stroke="#D99A2B" stroke-width="1.6"/><path d="M190 62 L196 66 L190 70" fill="none" stroke="#D99A2B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 135 H269 V145 H35 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M48 145 V155 M256 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="205" y="99" width="41" height="30" rx="3" fill="#FFFFFF" stroke="#547A56" stroke-width="1"/><path d="M211 121 L219 111 L226 117 L238 105" fill="none" stroke="#547A56" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#fastlearner-shadow)"><path d="M55 124 Q57 101 69 94 L70 85 Q66 81 68 74 Q76 66 87 68 Q96 71 94 82 L92 89 Q103 94 105 121 L102 133 H59 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="81" cy="77" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width=".9"/><path d="M73 75 Q75 67 82 67 Q90 68 94 75 Q86 71 79 72 Z" fill="#3D342D"/><path d="M60 98 Q80 92 99 98" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M95 106 L105 102" stroke="#D89A6C" stroke-width="3.2" stroke-linecap="round"/><path d="M183 125 Q185 102 197 95 L198 86 Q194 82 196 75 Q204 67 215 69 Q224 72 222 83 L220 90 Q232 95 234 122 L231 134 H187 Z" fill="url(#fastlearner-shirt)" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="209" cy="78" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width=".9"/><path d="M201 76 Q203 68 210 68 Q218 69 222 76 Q214 72 207 73 Z" fill="#3D342D"/><path d="M188 99 Q209 93 229 99" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M192 104 L205 99 M226 104 L219 101" stroke="#5479AC" stroke-width="3.6" stroke-linecap="round"/><path d="M204 100 L211 97" stroke="#D89A6C" stroke-width="3.1" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="191" cy="47" r="2" fill="#F2C14E"/><circle cx="182" cy="83" r="2" fill="#8EB0DE"/><path d="M206 90 L212 96 L222 85" fill="none" stroke="#547A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M117 103 H161" stroke="#D4CCBD" stroke-width=".8"/><circle cx="133" cy="104" r="2" fill="#8EB0DE"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="82" rx="103" ry="66" fill="url(#fastlearner-halo)" opacity=".15"/><path d="M98 43 H175" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

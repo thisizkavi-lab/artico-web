@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: make a wish (Verb phrase)
+  CONTEXTUAL_DEFINITION: Quietly hope for something one wants to happen.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive person in action
+  SYNONYM_GUARD: Focus on a person forming a private hope before blowing out a small candle, distinct from a ritual tap to ward off bad luck.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cozy indoor birthday table with simple party colors.
+    - Context_Layer: A small cake and one lit candle sit in front of the person.
+    - Focal_Layer: Person closes eyes, clasps hands, and leans toward the flame.
+    - Details_Layer: A small star-like thought symbol rests above the head.
+    - Lighting_Layer: Candle glow illuminates the quiet hopeful moment.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:make a wish" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="wish-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="candle-glow"><stop stop-color="#FDE68A" stop-opacity=".72"/><stop offset="1" stop-color="#FDE68A" stop-opacity="0"/></radialGradient><filter id="wish-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wish-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="3"/><path d="M39 21H66V86H39ZM239 21H266V86H239Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.2" opacity=".65"/><path d="M39 51H66M239 51H266" stroke="#CBD5E1" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M38 121H277V132H38Z" fill="#C88446" stroke="#965D28" stroke-width="1.2"/><path d="M48 132V151M267 132V151" stroke="#965D28" stroke-width="3"/><path d="M45 125H269" stroke="#E3AC77" stroke-width="1.1"/><ellipse cx="230" cy="117" rx="42" ry="7" fill="#DDD4C3" opacity=".65"/><path d="M193 90Q193 82 202 82H258Q267 82 267 91V109Q267 118 258 118H202Q193 118 193 109Z" fill="#FFF9F3" stroke="#D9857F" stroke-width="1.4"/><path d="M195 96Q218 88 241 95T266 95" fill="none" stroke="#D9857F" stroke-width="1.2" opacity=".8"/><rect x="225" y="67" width="6" height="19" rx="2" fill="#F9FCFF" stroke="#64748B" stroke-width="1.1"/><path d="M228 57C228 57 222 66 223 69C224 73 232 73 233 69C234 66 228 57 228 57Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#wish-shadow)"><circle cx="225" cy="69" r="38" fill="url(#candle-glow)"/><circle cx="113" cy="81" r="13" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/><path d="M100 81Q101 64 114 65Q127 66 126 82L119 84Q115 74 108 75Q104 76 102 87Z" fill="#27364B"/><path d="M94 99Q113 90 132 99L139 119L125 130L101 122Z" fill="#D9857F" stroke="#A95059" stroke-width="1.6"/><path d="M100 103L114 111L122 120M128 103L116 111L109 120" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M100 103L114 111L122 120M128 103L116 111L109 120" fill="none" stroke="#F5BFA3" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M103 123L98 151M125 124L132 151" stroke="#315782" stroke-width="6" stroke-linecap="round"/><path d="M101 82Q107 77 112 81M117 81Q122 77 126 82" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M136 64Q136 55 146 55H174Q184 55 184 65V75Q184 85 174 85H160L153 92L154 85H146Q136 85 136 75Z" fill="#FCFEFF" stroke="#5479AC" stroke-width="1.3"/><path d="M160 59L163 66L171 67L165 72L167 80L160 76L153 80L155 72L149 67L157 66Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M133 85C151 89 169 90 192 91" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="2 4"/><circle cx="151" cy="93" r="2" fill="#F2C14E"/><path d="M216 51L212 47M239 54L243 50M210 73L205 73M244 72L249 72" stroke="#D9A441" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="116" cy="151" rx="31" ry="4" fill="#DDD4C3" opacity=".7"/></g>
+  <g id="layer-lighting"><ellipse cx="180" cy="94" rx="112" ry="66" fill="#FEF9C3" opacity=".08"/><path d="M225 57C225 57 222 65 223 68" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: snake (noun)
+  CONTEXTUAL_DEFINITION: A limbless reptile shown in a clear coil with patterned scales and a forked tongue.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining coiled body and tongue
+  SYNONYM_GUARD: Keep the continuous legless coil unmistakable and show a small forked tongue; no limbs or lizard feet.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Warm forest ground; snake coils in a broad loop centered at x=154 y=116 with head raised at x=209 y=84, forked tongue extending right, diamond scale pattern across back.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:snake" data-archetype="coiled-scaled-snake-forked-tongue">
+  <defs>
+    <style>:root{--c-bg-1:#EAF0E8;--c-bg-2:#FAF3E5;--c-surface:#D1C2A4;--c-primary:#829351;--c-secondary:#4C583A;--c-accent:#D6B55E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="snk-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF0E8"/><stop offset="1" stop-color="#F7EFDC"/></linearGradient>
+    <linearGradient id="snk-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A7B66B"/><stop offset="1" stop-color="#586B3D"/></linearGradient>
+    <filter id="snk-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#snk-sky)"/><path d="M0 129 Q64 119 127 129 T243 127 Q279 120 304 128 V192 H0Z" fill="#E0E0CE"/><path d="M0 153 Q69 145 145 153 T304 151 V192 H0Z" fill="#D0C2A5"/><ellipse cx="152" cy="164" rx="104" ry="7" fill="#A99C80" opacity=".42"/></g>
+  <g id="layer-context"><path d="M37 145 V79 M37 101 L24 87 M37 114 L51 97" fill="none" stroke="#6E573D" stroke-width="4" stroke-linecap="round"/><path d="M21 89 Q25 73 36 79 Q44 66 53 78 Q64 79 66 94 Q52 88 43 101 Q31 90 21 89Z" fill="#748D68"/><path d="M267 145 V76 M267 99 L252 82 M267 112 L283 93" fill="none" stroke="#6E573D" stroke-width="4" stroke-linecap="round"/><path d="M249 84 Q253 68 265 74 Q273 61 282 73 Q294 74 296 89 Q282 83 273 96 Q261 85 249 84Z" fill="#79936C"/><path d="M64 146 l-4-8 m4 8 6-6 M238 146 l4-9" fill="none" stroke="#82916B" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#snk-shadow)"><path d="M78 127 C77 100 105 90 134 101 C164 111 182 134 207 122 C231 111 228 87 209 82" fill="none" stroke="#465638" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/><path d="M78 127 C77 100 105 90 134 101 C164 111 182 134 207 122 C231 111 228 87 209 82" fill="none" stroke="url(#snk-body)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M196 87 Q199 70 215 68 L230 74 L228 83 L214 89Z" fill="#8FA057" stroke="#1E2A3B" stroke-width="1.8"/><path d="M205 74 Q213 68 219 72 M226 76 l7 1-6 3" fill="none" stroke="#4A5738" stroke-width="1.5"/><circle cx="221" cy="74" r="1.5" fill="#1E2A3B"/><path d="M231 79 L242 77 M242 77 L248 73 M242 77 L248 81" fill="none" stroke="#B85646" stroke-width="1.8" stroke-linecap="round"/><path d="M111 103 Q119 97 127 101 M144 108 Q153 108 160 115 M174 124 Q181 127 188 126" fill="none" stroke="#CFD58E" stroke-width="1.6"/><path d="M91 110 Q99 106 106 110 M103 124 Q111 129 119 126" fill="none" stroke="#748849" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M86 115 l5-5 5 5-5 5z M101 103 l5-5 5 5-5 5z M117 102 l5-5 5 5-5 5z M134 106 l5-5 5 5-5 5z M151 112 l5-5 5 5-5 5z M168 121 l5-5 5 5-5 5z M187 122 l5-5 5 5-5 5z" fill="#728649" stroke="#465638" stroke-width=".7"/><path d="M194 80 Q199 74 205 73 M207 71 Q215 66 223 70" fill="none" stroke="#D6DEA2" stroke-width="1.4"/><circle cx="228" cy="75" r="1.2" fill="#F5E9BD"/><path d="M64 146 l-4-8 m4 8 6-6 M239 146 l4-8" fill="none" stroke="#82916B" stroke-width="1.5" stroke-linecap="round"/><path d="M230 87 Q235 86 239 83" fill="none" stroke="#4C583A" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><path d="M82 119 Q85 98 105 95 M121 98 Q133 99 143 106 M177 119 Q187 123 197 119 M201 77 Q208 69 217 70" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".43" stroke-linecap="round"/><ellipse cx="137" cy="103" rx="22" ry="7" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

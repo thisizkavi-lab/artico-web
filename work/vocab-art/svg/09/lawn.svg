@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: lawn (Noun)
+  CONTEXTUAL_DEFINITION: A neatly kept area of short grass around a house.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero setting with a distinct surface texture)
+  SYNONYM_GUARD: Emphasize an even, mown grass surface rather than planted flower beds or a general backyard.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Blue sky and level green ground.
+    - Context_Layer: Broad flat lawn in front of a small house.
+    - Focal_Layer: Lawn mower leaves crisp parallel stripes in the short grass.
+    - Details_Layer: Small grass blades and clipped edge.
+    - Lighting_Layer: Bright outdoor sunlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:lawn" data-archetype="ground-surface">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 119 Q152 109 304 119 L304 192 L0 192Z" fill="#8FB987"/><path d="M0 146 Q152 136 304 146 L304 192 L0 192Z" fill="#7FB07A"/><ellipse cx="153" cy="168" rx="109" ry="7" fill="#6F9A69"/><rect x="197" y="62" width="66" height="49" fill="#E8D9B8"/><path d="M190 63 L230 42 L270 63Z" fill="#5479AC"/></g>
+  <g id="layer-context"><path d="M26 121 L281 121" stroke="#FAF8F3" stroke-width="3" opacity="0.68"/><path d="M34 138 L260 138 M45 157 L270 157" stroke="#A8CB9B" stroke-width="9" opacity="0.58"/><path d="M30 132 L30 164 M274 132 L274 164" stroke="#557A53" stroke-width="2"/><path d="M75 103 L75 127 L96 127 L96 104" fill="#B97840" stroke="#8A5A35" stroke-width="1.6"/><path d="M75 103 L97 103" stroke="#8A5A35" stroke-width="2"/></g>
+  <g id="layer-focal"><circle cx="111" cy="143" r="6" fill="#27364B"/><circle cx="148" cy="143" r="6" fill="#27364B"/><path d="M104 140 L107 119 Q108 114 114 114 L149 114 L158 138 L102 138Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2"/><path d="M114 114 L124 101 L139 101 L149 114Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M155 120 Q174 100 188 95" fill="none" stroke="#1E2A3B" stroke-width="2.7" stroke-linecap="round"/><path d="M185 96 Q190 88 197 89" fill="none" stroke="#1E2A3B" stroke-width="2.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M46 117 L50 110 M63 117 L66 108 M168 117 L172 108 M184 117 L188 109 M219 117 L223 108" stroke="#557A53" stroke-width="2" stroke-linecap="round"/><circle cx="271" cy="38" r="16" fill="#F2C14E" opacity="0.5"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

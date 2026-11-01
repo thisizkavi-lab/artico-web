@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: rake (Noun)
+  CONTEXTUAL_DEFINITION: A long-handled garden tool with a row of teeth for gathering leaves or leveling soil.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: Show a wide row of evenly spaced metal tines collecting dry leaves; it has no shovel blade or garden-fork prongs.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Garden lawn and a small leaf pile near the lower right.
+    - Context_Layer: A few scattered autumn leaves lead into the pile.
+    - Focal_Layer: Wooden handle descends from x=183,y=25 to a wide rake head at x=151,y=131.
+    - Details_Layer: Parallel teeth, metal collar, wood grain, leaf stems, and ground contact shadows.
+    - Lighting_Layer: Warm highlights on handle and leaf surfaces.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:rake" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="leaf-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6A54C"/><stop offset="1" stop-color="#C96A1B"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 113H304V145H0Z" fill="#DCEAD6"/><path d="M0 145H304V192H0Z" fill="#EAD8BE"/><path d="M20 169H284" stroke="#A27652" stroke-width="2"/><ellipse cx="159" cy="166" rx="89" ry="7" fill="#DDD4C3" opacity=".75"/></g>
+  <g id="layer-context"><path d="M218 139Q226 128 238 132Q244 138 235 145Q224 147 218 139Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M242 141Q251 131 261 137Q264 144 254 148Q245 148 242 141Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M226 136L235 131M249 139L257 134" stroke="#965D28" stroke-width="1.2"/><path d="M197 150Q210 142 220 151M205 158Q216 151 225 158" fill="#F6A54C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M209 148L218 142M216 156L223 151" stroke="#C96A1B" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M185 27L157 125" stroke="#1E2A3B" stroke-width="11" stroke-linecap="round"/><path d="M185 27L157 125" stroke="#C88446" stroke-width="7" stroke-linecap="round"/><path d="M181 37L160 115" stroke="#E3AC77" stroke-width="1.8" stroke-linecap="round"/><path d="M130 122Q154 116 184 122L192 133Q159 141 124 133Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M132 132L128 150M143 134L141 153M154 135L154 155M165 135L167 154M176 134L181 152M186 132L193 149" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M132 132L128 149M143 134L141 152M154 135L154 153M165 135L167 152M176 134L181 150M186 132L193 147" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/><path d="M143 123L171 122" stroke="#8EB0DE" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M133 140Q124 143 121 151M188 138Q198 141 201 149" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/><path d="M111 152Q119 145 127 152Q127 160 118 162Q110 160 111 152Z" fill="url(#leaf-grad)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M121 151L119 160" stroke="#965D28" stroke-width="1.1"/><circle cx="105" cy="141" r="2" fill="#C88446"/><circle cx="204" cy="155" r="2.2" fill="#C88446"/><path d="M175 42L182 37M169 60L176 55" stroke="#F2C14E" stroke-width="1.7" stroke-linecap="round"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M180 41L162 105" stroke="#F2A472" stroke-width="1.8" stroke-linecap="round" opacity=".75"/><path d="M134 124Q157 119 179 124" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".7"/><path d="M218 137Q225 132 233 135" fill="none" stroke="#FFD099" stroke-width="1.5"/></g>
+</svg>

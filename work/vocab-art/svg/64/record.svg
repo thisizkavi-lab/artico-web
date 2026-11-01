@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 64 - Music
+  WORD: record
+  CONTEXTUAL_DEFINITION: To capture a musical performance in a recording setup with microphone and audio waveform.
+  PEDAGOGICAL_ARCHETYPE: Music studio recording setup
+  SYNONYM_GUARD: Show a musical performance being captured as a waveform, not a written record or a person only listening.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A studio microphone stands beside headphones and a recording display with a live waveform and musical note cues.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="64:record" data-archetype="music-recording-studio-waveform">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="record-room" x2="0" y2="1"><stop stop-color="#EEF2EF"/><stop offset="1" stop-color="#E1E2DA"/></linearGradient><filter id="record-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#record-room)"/><path d="M0 151H304V192H0Z" fill="#D5C3A6"/><path d="M0 151H304" stroke="#987858" stroke-width="1.5" fill="none"/><rect x="19" y="19" width="53" height="42" rx="3" fill="#C4D8D1" stroke="#6C8279" stroke-width="1.6"/><path d="M45 20V60M21 40H70" stroke="#F7F2E6" stroke-width="2.2" fill="none"/></g>
+ <g id="layer-context"><path d="M20 126H286V135H20Z" fill="#9A704D" stroke="#72543D" stroke-width="1.2"/><path d="M37 135V150M270 135V150" stroke="#76583F" stroke-width="2.4" fill="none"/><ellipse cx="152" cy="153" rx="111" ry="5" fill="#6A5038" opacity=".13"/><path d="M220 49Q220 35 232 35Q244 35 244 49V62H236V49Q236 44 232 44Q228 44 228 49V62H220Z" fill="#405B61"/><path d="M218 57H228V75H218Z" fill="#D4866D"/><path d="M236 57H246V75H236Z" fill="#718C84"/><path d="M227 74q5 6 10 0" stroke="#405B61" stroke-width="1.2" fill="none"/></g>
+ <g id="layer-focal" filter="url(#record-shadow)">
+  <path d="M37 72H154V121H37Z" fill="#263E4A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M43 78H148V113H43Z" fill="#F3F5EF"/><path d="M43 78H148V86H43Z" fill="#CFDADD"/><circle cx="49" cy="82" r="1.8" fill="#D4866D"/><circle cx="55" cy="82" r="1.8" fill="#E4BB68"/><circle cx="61" cy="82" r="1.8" fill="#718C84"/><path d="M50 99v-5m7 11v-17m7 14v-9m7 6v-13m7 16V91m7 5v-11m7 16V92m7 7v-13m7 7v-5m7 11v-16m7 8v-6m7 10v-13" stroke="#718C84" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M51 107H134" stroke="#D4866D" stroke-width="2" fill="none"/><circle cx="51" cy="107" r="2.5" fill="#D4866D"/><circle cx="134" cy="107" r="2.5" fill="#E4BB68"/>
+  <path d="M195 47Q195 37 205 37H214Q224 37 224 47V64Q224 74 214 74H205Q195 74 195 64Z" fill="#405B61" stroke="#263E4A" stroke-width="1.4"/><path d="M199 48Q199 42 205 42H214Q220 42 220 48V64Q220 70 214 70H205Q199 70 199 64Z" fill="#516F7A"/><path d="M208 74V104" stroke="#405B61" stroke-width="2.2" fill="none"/><path d="M198 104H218L225 109H191Z" fill="#718C84" stroke="#405B61" stroke-width="1.1"/>
+  <path d="M167 73Q177 67 187 73V87Q177 93 167 87Z" fill="#334E59" stroke="#263E4A" stroke-width="1.1"/><path d="M172 75q5-4 10 0v10q-5 4-10 0Z" fill="#647F85"/><path d="M164 80H151" stroke="#405B61" stroke-width="2" fill="none"/><path d="M177 93v18" stroke="#405B61" stroke-width="1.4" fill="none"/><circle cx="177" cy="111" r="3" fill="#D4866D"/>
+ </g>
+ <g id="layer-details"><path d="M244 82q6-7 12 0m-8 9q10-10 20 0m-16 9q14-14 27 0" stroke="#D4866D" stroke-width="1.4" fill="none" stroke-linecap="round"/><path d="M261 62v9m11-14v9" stroke="#304C5D" stroke-width="1.2"/><ellipse cx="258" cy="71" rx="3" ry="2" transform="rotate(-20 258 71)" fill="#E4BB68"/><ellipse cx="269" cy="66" rx="3" ry="2" transform="rotate(-20 269 66)" fill="#D4866D"/><circle cx="267" cy="70" r="1.3" fill="#E4BB68"/><path d="M82 118h42" stroke="#D9E0DC" stroke-width="1" fill="none"/><circle cx="158" cy="63" r="1.1" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><ellipse cx="204" cy="74" rx="65" ry="44" fill="#EFCB78" opacity=".07"/><path d="M41 74h109m50-35q7-5 14-1" stroke="#FFFFFF" stroke-width="1.3" fill="none" opacity=".65" stroke-linecap="round"/></g>
+</svg>

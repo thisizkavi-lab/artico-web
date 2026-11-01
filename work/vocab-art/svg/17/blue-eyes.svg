@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: blue eyes (Noun phrase)
+  CONTEXTUAL_DEFINITION: Eyes whose irises are blue.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Keep the paired eye shape consistent with the other color cards and make blue the clear iris cue.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft skin-tone field.
+    - Context_Layer: Muted brows and forehead.
+    - Focal_Layer: Two open eyes with blue irises.
+    - Details_Layer: Dark pupils and crisp catchlights.
+    - Lighting_Layer: Cool eye highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:blue eyes" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="156" rx="126" ry="18" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="26" y="27" width="252" height="125" rx="56" fill="#E7B99B" stroke="#C98961" stroke-width="1.8"/><ellipse cx="152" cy="91" rx="130" ry="69" fill="#FEF3C7" opacity=".28"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M37 92Q77 49 132 74Q147 81 153 95Q123 126 79 121Q50 117 37 92Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/><path d="M151 95Q162 81 177 74Q232 49 267 92Q253 117 225 121Q181 126 151 95Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/>
+  <circle cx="98" cy="94" r="25" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="207" cy="94" r="25" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="98" cy="94" r="12" fill="#1E2A3B"/><circle cx="207" cy="94" r="12" fill="#1E2A3B"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M42 88Q84 44 134 70M171 70Q223 44 263 88" fill="none" stroke="#35404B" stroke-width="4" stroke-linecap="round"/><path d="M66 95Q78 73 91 71M175 71Q190 73 202 95" fill="none" stroke="#91B2D5" stroke-width="2"/>
+  <circle cx="91" cy="86" r="5" fill="#FFFFFF"/><circle cx="200" cy="86" r="5" fill="#FFFFFF"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M62 135Q151 149 243 135" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5"/>
+</svg>

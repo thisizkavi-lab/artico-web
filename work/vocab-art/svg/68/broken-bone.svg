@@ -1,0 +1,49 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: broken bone
+ CONTEXTUAL_DEFINITION: A bone that has cracked or fractured.
+ PEDAGOGICAL_ARCHETYPE: an arm protected in a cast beside a simple fracture X-ray
+ SYNONYM_GUARD: Keep the injury covered and non-graphic; use an X-ray fracture line, not a visible bone.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A person supports a clean plaster cast in a sling while a nearby X-ray panel shows one small fracture in the forearm bones.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:broken bone" data-archetype="protected fracture with simple x-ray">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="94" ry="5" fill="#8C725A" opacity=".18"/><path d="M43 149H261" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M40 34H104V116H40Z" fill="#D9D0C2"/><path d="M46 40H98V110H46Z" fill="#A9B9B4"/><path d="M205 37H257V107H205Z" fill="#E3DDD2"/><path d="M212 44H250V100H212Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M175 146H263" stroke="#8C725A" stroke-width="1.1"/><circle cx="188" cy="146" r="2" fill="#D6A64C"/><circle cx="250" cy="146" r="2" fill="#B85E5A"/>
+  <path d="M48 138H99V151H48Z" fill="#8C725A"/><path d="M53 151V156M94 151V156" stroke="#725F4B" stroke-width="1.5"/>
+  <ellipse cx="151" cy="152" rx="73" ry="3" fill="#F6E5CE" opacity=".55"/>
+ </g>
+ <g id="layer-focal">
+  <!-- patient with a protected cast arm -->
+  <circle cx="80" cy="53" r="12" fill="#D29A78"/><path d="M68 52Q69 37 81 38Q93 39 92 55L86 46L70 49Z" fill="#26384A"/>
+  <path d="M62 69Q80 62 98 70L103 117H57Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M67 75L54 90L66 103M94 74L110 88L124 98" stroke="#D29A78" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M61 115L59 145M98 115L101 145" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- clean cast with tapered ends and cloth sling -->
+  <path d="M109 91L125 97L142 119L129 129L112 106Z" fill="#F6E5CE" stroke="#8C725A" stroke-width="1.2"/>
+  <path d="M108 89Q119 81 129 91L142 116Q144 122 137 127L128 131L110 105Q104 97 108 89Z" fill="#E7D6D1" stroke="#26384A" stroke-width="1.1"/>
+  <path d="M114 91L135 123M119 88L139 118M109 98L130 128" stroke="#C8B89E" stroke-width="1.1"/>
+  <!-- X-ray panel: two forearm bones and one clear fracture -->
+  <path d="M215 49Q222 45 226 50L224 83L219 92L216 84Z" fill="#F6E5CE" stroke="#597D8B" stroke-width="1.2"/>
+  <path d="M235 49Q242 45 246 50L244 83L239 92L236 84Z" fill="#F6E5CE" stroke="#597D8B" stroke-width="1.2"/>
+  <path d="M216 64L223 69M236 63L244 68" stroke="#B85E5A" stroke-width="1.7"/>
+ </g>
+ <g id="layer-details">
+  <path d="M75 51Q79 54 83 51M86 51L90 50M75 61Q81 58 87 61" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M219 53L224 56M219 58L224 61M219 74L224 77M239 53L244 56M239 74L244 77" stroke="#A9C0C1" stroke-width=".8"/>
+  <path d="M207 47H252M207 97H252" stroke="#597D8B" stroke-width="1"/>
+  <path d="M61 79L67 83M96 80L91 84M69 108L76 111M88 108L94 111" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M112 96L106 91M119 110L112 106M133 119L138 116" stroke="#8C725A" stroke-width=".8"/>
+  <path d="M218 62L225 68L221 71" stroke="#B85E5A" stroke-width="1.2" fill="none"/>
+  <circle cx="199" cy="116" r="1.4" fill="#D6A64C"/><circle cx="195" cy="121" r="1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="88" rx="91" ry="67" fill="#E7C66B" opacity=".06"/><path d="M39 29L54 44M258 30L243 45" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M42 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

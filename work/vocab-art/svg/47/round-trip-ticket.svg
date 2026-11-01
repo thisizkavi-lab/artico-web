@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: round-trip ticket
+  CONTEXTUAL_DEFINITION: A physical ticket covering both an outward journey and a return journey.
+  PEDAGOGICAL_ART_DIRECTOR: Make the ticket document central and print two opposing route arrows on it.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: Show a physical ticket carrying both directions; distinguish it from the abstract round-trip route diagram.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A large ticket held above a pale tabletop displays an outward arrow and a separate return arrow between matching home and plane icons.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:round-trip ticket" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="rtt-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF6"/><stop offset="1" stop-color="#D9E2DE"/></linearGradient>
+  <linearGradient id="rtt-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7194BB"/><stop offset="1" stop-color="#40658F"/></linearGradient>
+  <linearGradient id="rtt-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DEE8E6"/><stop offset="1" stop-color="#C3CCC7"/></linearGradient>
+  <filter id="rtt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rtt-bg)"/><path d="M20 20H284V171H20Z" fill="#E7EAE3" stroke="#65777B" stroke-width="1.4"/><path d="M28 150H277" stroke="#C8C7BA" stroke-width="1.1"/><circle cx="49" cy="44" r="13" fill="#E8D2A5"/><path d="M222 32H269V69H222Z" fill="#A9C9CF" stroke="#526873" stroke-width="1"/><path d="M245 32V69M222 51H269" stroke="#526873" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M36 128H268V152H36Z" fill="#A9825B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M48 152V160M256 152V160" stroke="#624D3B" stroke-width="3"/><path d="M57 124L70 119L83 124V135H57Z" fill="#D7C3A0" stroke="#455967" stroke-width=".9"/><path d="M55 124H85" stroke="#72583F" stroke-width="1.8"/><rect x="65" y="128" width="7" height="7" fill="#A8C8CF" stroke="#455D68" stroke-width=".6"/><rect x="73" y="128" width="5" height="7" fill="#765A42"/><path d="M224 117H254V139H224Z" fill="#A8C8CF" stroke="#455D68" stroke-width=".9"/><path d="M239 117V139M224 128H254" stroke="#526D77" stroke-width=".7"/><path d="M232 123L240 120L247 123L240 126L236 131H234L237 126L232 125Z" fill="#F7F6EE" stroke="#455D68" stroke-width=".6"/></g>
+ <g id="layer-focal" filter="url(#rtt-shadow)"><path d="M72 49H230L241 59V121L230 131H72L61 121V59Z" fill="url(#rtt-paper)" stroke="#273D4B" stroke-width="2.2"/><path d="M84 49V131M218 49V131" stroke="#6F8590" stroke-width="1.2" stroke-dasharray="3 3"/><circle cx="74" cy="90" r="5" fill="#65787E"/><circle cx="228" cy="90" r="5" fill="#65787E"/><path d="M102 71H196" stroke="#B8C3BE" stroke-width="1"/><path d="M111 82H171" stroke="url(#rtt-blue)" stroke-width="4" stroke-linecap="round"/><path d="M163 73L181 82L163 91Z" fill="url(#rtt-blue)" stroke="#1E2A3B" stroke-width=".9"/><path d="M191 101H131" stroke="#D18B51" stroke-width="4" stroke-linecap="round"/><path d="M139 92L121 101L139 110Z" fill="#D18B51" stroke="#1E2A3B" stroke-width=".9"/><circle cx="107" cy="82" r="8" fill="#D9C49F" stroke="#526274" stroke-width=".8"/><path d="M103 82L108 79L112 82L108 85Z" fill="#745B42"/><circle cx="196" cy="101" r="8" fill="#E8C15E"/><path d="M196 97L198 100L196 105L194 100Z" fill="#86664B"/></g>
+ <g id="layer-details"><path d="M99 59H206" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/><ellipse cx="152" cy="158" rx="94" ry="4" fill="#526274" opacity=".16"/><circle cx="202" cy="90" r="2" fill="#F2C14E"/><path d="M24 22H280" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="91" rx="128" ry="69" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M21 21H283" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

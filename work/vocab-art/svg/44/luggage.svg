@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: luggage
+  CONTEXTUAL_DEFINITION: The suitcases and bags a traveler carries on a journey.
+  PEDAGOGICAL_ART_DIRECTOR: Present several travel cases of different sizes, one on wheels and one with a handle, ready to go at a station.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object set
+  SYNONYM_GUARD: Show multiple travel bags, not a single purse or a parcel of cargo.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Large wheeled suitcase x=69..146 y=72..151; upright smaller case x=157..216 y=93..151; soft shoulder bag x=222..264 y=111..150; handles visible and wheels at y=155.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:luggage" data-archetype="hero-travel-objects">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="luggage-blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7898C0"/><stop offset="1" stop-color="#405E87"/></linearGradient>
+    <linearGradient id="luggage-amber" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0B36B"/><stop offset="1" stop-color="#B77A42"/></linearGradient>
+    <radialGradient id="luggage-halo"><stop stop-color="#F3E1BC" stop-opacity=".62"/><stop offset="1" stop-color="#D9B56E" stop-opacity="0"/></radialGradient>
+    <filter id="luggage-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="157" cy="158" rx="100" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M29 38 H275" stroke="#E1E6E3" stroke-width="1"/><path d="M44 45 V149 M53 45 V149" stroke="#D6DFE1" stroke-width="2"/><path d="M239 52 V96 M248 52 V96" stroke="#D6DFE1" stroke-width="2"/><path d="M31 117 H64 M252 113 H281" stroke="#D7E4E7" stroke-width="1.5"/><circle cx="78" cy="52" r="12" fill="#F2C14E" opacity=".62"/></g>
+  <g id="layer-focal" filter="url(#luggage-shadow)"><rect x="66" y="79" width="84" height="72" rx="9" fill="url(#luggage-blue)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M93 79 V69 Q93 61 101 61 H116 Q124 61 124 69 V79" fill="none" stroke="#1E2A3B" stroke-width="3.4" stroke-linecap="round"/><path d="M98 77 V69 Q98 66 102 66 H115 Q119 66 119 69 V77" fill="none" stroke="#B9CCDC" stroke-width="2" stroke-linecap="round"/><rect x="73" y="86" width="70" height="58" rx="5" fill="none" stroke="#AFC4D7" stroke-width="1.5"/><path d="M108 82 V149" stroke="#2E476B" stroke-width="2"/><rect x="157" y="96" width="59" height="55" rx="7" fill="url(#luggage-amber)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M175 96 V88 Q175 81 182 81 H192 Q199 81 199 88 V96" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M164 104 H209 V144 H164 Z" fill="none" stroke="#F4D09A" stroke-width="1.4"/><path d="M186 98 V151" stroke="#88552F" stroke-width="1.6"/><path d="M225 120 Q232 111 242 111 H257 Q264 115 266 125 L263 150 H221 Z" fill="#87A286" stroke="#1E2A3B" stroke-width="2.2"/><path d="M230 119 Q232 105 243 104 Q255 104 257 119" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M229 128 H260 M231 138 H259" stroke="#5B755D" stroke-width="1.3"/><circle cx="79" cy="154" r="4" fill="#263548"/><circle cx="137" cy="154" r="4" fill="#263548"/><path d="M80 151 V147 M136 151 V147" stroke="#1E2A3B" stroke-width="2"/><rect x="103" y="130" width="13" height="9" rx="2" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M75 90 H94 M163 108 H183 M230 123 H251" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><circle cx="110" cy="136" r="2.5" fill="#F2C14E"/><path d="M76 145 H141 M169 146 H205" stroke="#FFFFFF" stroke-width="1" opacity=".72"/><path d="M129 70 H136" stroke="#5479AC" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="158" cy="102" rx="115" ry="71" fill="url(#luggage-halo)" opacity=".18"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M67 150 H265" stroke="#1E2A3B" stroke-width=".9" opacity=".3"/></g>
+</svg>

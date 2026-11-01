@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: fact (Noun)
+  CONTEXTUAL_DEFINITION: Something that is objectively true and can be verified.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through observable reality
+  SYNONYM_GUARD: Ground the conclusion in a visible, checkable event, distinct from the clues that support it or a person's view about it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Window in the neighborhood discussion room during a shower.
+    - Context_Layer: Rain is plainly visible outside; a wet umbrella rests inside.
+    - Focal_Layer: An observer matches the real scene to a simple verified rain symbol.
+    - Details_Layer: Droplets on the sill and a small check cue show it can be confirmed.
+    - Lighting_Layer: Neutral daylight keeps the scene objective rather than ominous.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:fact" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="fact-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="fact-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fact-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="2.8"/><path d="M184 23H275V98H184Z" fill="#F9FCFF" stroke="#64748B" stroke-width="2"/><path d="M229 23V98M184 60H275" stroke="#CBD5E1" stroke-width="2"/><path d="M190 36C197 31 204 34 208 39M215 46C220 42 225 43 229 47M238 35C245 30 252 32 256 36M201 73C205 68 211 69 214 74M244 80C249 75 255 77 258 81" fill="none" stroke="#7CC4FA" stroke-width="2.1" stroke-linecap="round"/><path d="M38 124H145V132H38Z" fill="#C88446"/><path d="M47 132V151M135 132V151" stroke="#965D28" stroke-width="2.6"/></g>
+  <g id="layer-context"><path d="M63 122C66 104 78 96 94 99C109 102 115 114 110 124L100 127L95 116L84 122L79 131Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/><path d="M68 121L66 128M78 123L76 130M104 121L102 128" stroke="#7CC4FA" stroke-width="2" stroke-linecap="round"/><path d="M41 114Q44 98 58 100Q69 102 68 114L63 120H45Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M46 105H62M50 101V113" stroke="#CBD5E1" stroke-width="1.3" opacity=".8"/><path d="M52 91V84M61 94L65 88M43 94L39 88" stroke="#D9A441" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#fact-shadow)"><circle cx="150" cy="78" r="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M140 78Q141 64 151 65Q161 66 160 79" fill="#27364B"/><path d="M135 96Q150 89 165 96L170 114L160 124L139 118Z" fill="#5479AC" stroke="#315782" stroke-width="1.5"/><path d="M140 99L126 106L112 104M162 99L173 92L184 86" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M140 99L126 106L112 104M162 99L173 92L184 86" fill="none" stroke="#F5BFA3" stroke-width="2.8" stroke-linecap="round"/><path d="M141 119L137 150M159 120L166 150" stroke="#315782" stroke-width="5.3" stroke-linecap="round"/><path d="M113 51Q113 43 122 43H161Q170 43 170 52V67Q170 76 161 76H146L139 83L140 76H122Q113 76 113 67Z" fill="#EAF2E5" stroke="#829A83" stroke-width="1.3"/><path d="M130 59L136 65L149 51" fill="none" stroke="#568552" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M197 104L202 110L211 99" fill="none" stroke="#568552" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M147 85Q151 88 155 85" fill="none" stroke="#1E2A3B" stroke-width="1.1" stroke-linecap="round"/><circle cx="179" cy="53" r="3" fill="#7CC4FA"/><path d="M178 62C178 62 174 68 175 70C176 73 181 73 182 70C183 68 178 62 178 62Z" fill="#7CC4FA"/><path d="M40 140H145" stroke="#E3AC77" stroke-width="1"/><ellipse cx="151" cy="151" rx="44" ry="4" fill="#DDD4C3" opacity=".65"/></g>
+  <g id="layer-lighting"><ellipse cx="176" cy="77" rx="118" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M184 23H275V98" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/></g>
+</svg>

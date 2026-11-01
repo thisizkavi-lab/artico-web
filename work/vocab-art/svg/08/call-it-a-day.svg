@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: call it a day (Phrase)
+  CONTEXTUAL_DEFINITION: To stop working because enough has been done for today.
+  PEDAGOGICAL_ARCHETYPE: 2 (Everyday action with a clear completion cue)
+  SYNONYM_GUARD: A worker closes the project and puts tools away as sunset falls; no clock or written sign is used.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Workshop window with a low orange sunset.
+    - Context_Layer: Worker relaxes their shoulders.
+    - Focal_Layer: Finished project, rolled plans, and tools being stored.
+    - Details_Layer: Closed toolbox and warm evening sky.
+    - Lighting_Layer: Sunset glow across the completed work.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:call it a day" data-archetype="action-tool">
+  <defs><linearGradient id="evening" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2C68D"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#evening)"/><rect x="177" y="29" width="104" height="69" rx="4" fill="#DCECFB" stroke="#64748B" stroke-width="1.8"/><circle cx="229" cy="72" r="17" fill="#F2C14E"/><path d="M177 81 L281 81 M193 29 L193 98 M264 29 L264 98" stroke="#FFFFFF" stroke-width="2"/><path d="M0 148 Q152 141 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="154" cy="164" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M36 151 Q38 128 56 125 Q74 128 76 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="56" cy="111" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M40 110 Q41 93 57 95 Q71 96 72 111 Q64 104 55 105Z" fill="#27364B"/><path d="M48 113 Q52 109 55 113 M60 113 Q64 109 67 113" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M48 121 Q56 124 64 121" fill="none" stroke="#A34F47" stroke-width="1.5"/><path d="M72 132 Q86 136 97 145 M41 132 Q28 135 20 146" fill="none" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M17 144 L28 144 M91 144 L103 144" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M94 145 L284 145 L278 157 L99 157Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M130 116 L153 116 L153 145 L130 145Z" fill="#8D552E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M124 116 Q141 103 159 116 L159 122 L124 122Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.7"/><path d="M181 125 Q196 113 211 125 L211 143 Q196 148 181 143Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M185 126 L207 126 M185 133 L207 133" stroke="#527748" stroke-width="1.5"/><path d="M228 141 L246 119 L259 126 L246 145Z" fill="#D8CDAF" stroke="#8D552E" stroke-width="1.7"/><path d="M214 127 L214 141" stroke="#1E2A3B" stroke-width="2.2"/><path d="M219 125 L219 139" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M210 58 L214 53 M245 54 L250 49 M248 89 L254 92" stroke="#D97706" stroke-width="2" stroke-linecap="round"/><path d="M79 90 L84 80 L89 90 L99 95 L89 100 L84 110 L79 100 L69 95Z" fill="#F2C14E"/><path d="M138 106 Q147 101 156 106" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M182 31 Q228 26 277 32 M94 146 Q181 140 280 146" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

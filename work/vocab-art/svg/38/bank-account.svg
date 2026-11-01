@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: bank account (noun)
+  CONTEXTUAL_DEFINITION: A personal arrangement with a bank for keeping and accessing money.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with person-account relation
+  SYNONYM_GUARD: Show one person's linked passbook/card and protected funds; keep this personal record distinct from the bank building and bank statement paper.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Open passbook folder x92..211 with a linked bank card and a few coins inside a clear account pocket; small person icon silhouette at left connected by a blue line.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:bank account" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="account-book" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="account-funds"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="account-cover" d="M94 61 Q94 55 102 55 H215 Q223 55 223 63 V142 Q223 149 215 149 H102 Q94 149 94 142 Z"/>
+    <clipPath id="account-clip"><use href="#account-cover"/></clipPath>
+    <filter id="account-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="157" cy="164" rx="84" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Account owner cue -->
+  <g id="layer-context"><circle cx="55" cy="86" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M32 140 Q35 112 55 112 Q76 112 79 140 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M72 91 C84 91 88 91 99 95" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-dasharray="5 4"/><path d="M94 90 L102 95 L94 99 Z" fill="#4A72B2"/></g>
+  <!-- 3. Personal bank account record with linked access card -->
+  <g id="layer-focal" filter="url(#account-shadow)"><use href="#account-cover" fill="url(#account-book)" stroke="#1E2A3B" stroke-width="2.6"/><g clip-path="url(#account-clip)"><rect x="102" y="64" width="114" height="76" fill="#F8FBFE"/><path d="M102 64 H159 V140 H102Z" fill="#E5E9F0"/><path d="M111 78 H151 M111 86 H149 M111 94 H151" stroke="#94A3B8" stroke-width="1.8"/><path d="M159 64 V141" stroke="#64748B" stroke-width="1.6"/><rect x="169" y="81" width="36" height="24" rx="4" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.7"/><rect x="175" y="87" width="10" height="8" rx="1.5" fill="#F2C14E" stroke="#B55B28" stroke-width=".9"/><path d="M190 98 H199" stroke="#E5F0E1" stroke-width="1.6"/><ellipse cx="185" cy="124" rx="10" ry="5" fill="url(#account-funds)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M175 119 V124 C175 130 195 130 195 124 V119" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.3"/></g><path d="M97 70 H105 V135 H97" fill="none" stroke="#8EB0DE" stroke-width="1.7"/></g>
+  <!-- 4. Protected funds, card pocket and binding details -->
+  <g id="layer-details"><path d="M114 103 H148" stroke="#CBD5E1" stroke-width="1.7"/><path d="M173 111 Q187 108 201 111" fill="none" stroke="#568552" stroke-width="1.4"/><circle cx="205" cy="66" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><path d="M98 68 V136" stroke="#3D5F91" stroke-width="2"/><path d="M166 76 H208" stroke="#FFFFFF" stroke-width="1.7" opacity=".8"/><path d="M178 132 Q185 136 194 132" fill="none" stroke="#D49B2A" stroke-width="1.5"/></g>
+  <!-- 5. Account-link highlight -->
+  <g id="layer-lighting"><path d="M76 106 C83 112 87 117 94 122" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-linecap="round"/><path d="M91 117 L97 124 L88 123 Z" fill="#4A72B2"/><path d="M107 61 H135" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M249 68 L249 77 M245 72 H253" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

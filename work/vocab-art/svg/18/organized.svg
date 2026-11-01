@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: organized (Adjective)
+  CONTEXTUAL_DEFINITION: Keeping tasks and belongings arranged in a clear, orderly way.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The tidy desk, sorted folders, aligned pencils, and planned blank calendar grid contrast with a messy cluttered surface.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright study room wall and desk.
+    - Context_Layer: Blank calendar grid above the workspace.
+    - Focal_Layer: Person arranging color-sorted folders and tools neatly.
+    - Details_Layer: Parallel edges, matching trays, pencil row, check-like shapes without letters.
+    - Lighting_Layer: Clear top-left sheen over the orderly desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:organized" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#829A83;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="desk" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#B9875D"/><stop offset="1" stop-color="#805333"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 152Q85 144 152 152T304 150V192H0Z" fill="#F3ECE1"/><ellipse cx="150" cy="168" rx="131" ry="8" fill="#EAE3D5"/><rect x="27" y="22" width="90" height="60" rx="5" fill="#FAF8F3" stroke="#7B8A9E" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M40 34H105M40 49H105M40 64H105M61 29V76M83 29V76" stroke="#AAB5C3" stroke-width="1.4"/><path d="M38 94H273V108H38Z" fill="url(#desk)" stroke="#1E2A3B" stroke-width="2"/><path d="M48 108V155M261 108V155" stroke="#805333" stroke-width="5" stroke-linecap="round"/><rect x="207" y="75" width="40" height="18" rx="3" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.5"/><path d="M212 82H240M212 87H235" stroke="#7B8A9E" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="156" cy="96" rx="61" ry="67" fill="#FEF3C7" opacity=".47"/><circle cx="155" cy="49" r="19" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M136 49Q137 28 155 29Q174 30 174 51L168 56Q164 41 153 41Q144 42 138 57Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M132 75Q155 68 178 75L186 98H124Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M138 81L120 91L111 93M173 81L189 90L199 90" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M138 81L120 91L111 93M173 81L189 90L199 90" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M127 98H188V115H127Z" fill="#D8E2EC" stroke="#1E2A3B" stroke-width="1.8"/><rect x="134" y="76" width="20" height="17" rx="2" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><rect x="157" y="76" width="20" height="17" rx="2" fill="#829A83" stroke="#56725E" stroke-width="1.5"/><path d="M136 82H152M159 82H175M136 87H151M159 87H174" stroke="#FEF9C3" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M146 49H151M159 49H164M145 60Q155 65 165 60" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M213 73L220 67M223 73L230 67M233 73L240 67" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M204 87H247" stroke="#829A83" stroke-width="2"/><circle cx="194" cy="78" r="2" fill="#D9A441"/><circle cx="198" cy="82" r="1.6" fill="#D9A441"/><path d="M56 84L62 88L71 77" fill="none" stroke="#829A83" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M145 34Q155 30 165 34" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><path d="M43 97H201" stroke="#FEF9C3" stroke-width="1.5" opacity=".6"/></g>
+</svg>

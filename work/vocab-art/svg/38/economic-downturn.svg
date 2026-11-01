@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: economic downturn (noun)
+  CONTEXTUAL_DEFINITION: A period when overall business activity and prosperity decline.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrastive economy-wide scene
+  SYNONYM_GUARD: Depict a broad slowdown across several businesses, not one company's loss or a single person's debt.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Several muted storefronts and a factory across a town strip; shrinking customer crowd, low production conveyor and descending blue market curve with arrows; no signs or text.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:economic downturn" data-archetype="economy-wide-state">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="downturn-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <radialGradient id="downturn-cloud"><stop stop-color="#E5E9F0"/><stop offset="1" stop-color="#CBD5E1"/></radialGradient>
+    <path id="downturn-factory" d="M31 89 L75 68 V87 L112 66 V89 L150 69 V144 H31 Z"/>
+    <clipPath id="downturn-clip"><use href="#downturn-factory"/></clipPath>
+    <filter id="downturn-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#downturn-sky)"/><rect y="149" width="304" height="43" fill="#EAE3D5"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="162" rx="124" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Multiple affected businesses and subdued market setting -->
+  <g id="layer-context"><path d="M169 101 H210 V148 H169 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><path d="M165 101 L190 82 L214 101" fill="#CBD5E1" stroke="#64748B" stroke-width="1.7"/><rect x="178" y="113" width="23" height="35" fill="#F8FBFE" stroke="#94A3B8" stroke-width="1.4"/><path d="M219 113 H269 V149 H219 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M219 113 L244 96 L269 113" fill="#CBD5E1" stroke="#64748B" stroke-width="1.6"/><path d="M231 120 H239 M248 120 H256" stroke="#94A3B8" stroke-width="1.5"/><path d="M37 46 Q48 30 59 46 M66 44 Q79 26 91 44 M98 45 Q110 31 121 45" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 3. Primary industry-wide contraction across factory and production -->
+  <g id="layer-focal" filter="url(#downturn-shadow)"><use href="#downturn-factory" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><g clip-path="url(#downturn-clip)"><rect x="31" y="88" width="121" height="58" fill="#E5E9F0"/><path d="M40 111 H138 M40 125 H138" stroke="#94A3B8" stroke-width="1.4"/><rect x="49" y="101" width="19" height="10" fill="#94A3B8"/><rect x="83" y="101" width="19" height="10" fill="#94A3B8"/><rect x="116" y="101" width="19" height="10" fill="#94A3B8"/></g><path d="M38 145 H150" stroke="#64748B" stroke-width="2"/><path d="M54 138 V144 M101 138 V144 M137 138 V144" stroke="#64748B" stroke-width="2"/><path d="M45 134 H130" stroke="#64748B" stroke-width="2"/></g>
+  <!-- 4. Fewer customers and declining economic activity -->
+  <g id="layer-details"><circle cx="187" cy="93" r="5" fill="#D89A6C" stroke="#64748B" stroke-width="1.2"/><path d="M180 110 Q181 101 187 101 Q193 101 194 110 Z" fill="#94A3B8"/><circle cx="255" cy="85" r="5" fill="#F5BFA3" stroke="#64748B" stroke-width="1.2"/><path d="M248 102 Q249 94 255 94 Q261 94 262 102 Z" fill="#94A3B8"/><path d="M43 58 L72 67 L101 64 L128 78 L151 87" fill="none" stroke="#5479AC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M144 80 L154 90 L141 91 Z" fill="#5479AC"/><path d="M62 72 V87 M91 70 V86 M119 82 V88" stroke="#64748B" stroke-width="1.4" stroke-dasharray="2 4"/><path d="M23 125 L30 119 L36 125 L35 135 H24 Z" fill="#F7DDE0" stroke="#CE3D4E" stroke-width="1.4"/></g>
+  <!-- 5. Muted light and downturn emphasis -->
+  <g id="layer-lighting"><path d="M48 46 H70" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M274 46 L274 54 M270 50 H278" stroke="#94A3B8" stroke-width="2.1" stroke-linecap="round"/><path d="M132 91 L147 99" stroke="#CE3D4E" stroke-width="2" stroke-dasharray="3 4"/></g>
+</svg>

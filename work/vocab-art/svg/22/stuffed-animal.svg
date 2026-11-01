@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: stuffed animal (Noun)
+  CONTEXTUAL_DEFINITION: A soft toy shaped like an animal and filled with stuffing.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: A plush elephant with a rounded body and floppy ears represents the animal-shaped toy category, distinct from a generic soft toy and a teddy bear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Nursery window and floor.
+    - Context_Layer: Small mat beneath the toy.
+    - Focal_Layer: Seated gray-blue plush elephant with trunk and soft ears.
+    - Details_Layer: Stitched seams, cloth patches, and embroidered face.
+    - Lighting_Layer: Low soft shadow shows a padded stuffed body.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:stuffed animal" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="stuffed-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="stuffed-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#stuffed-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 30H99V87H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M60 31V86M23 59H98" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 152H304" stroke="#C4B79F" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="162" rx="86" ry="9" fill="#C9B99F" opacity=".65"/><path d="M68 158Q83 151 97 157M207 157Q223 151 238 158" fill="none" stroke="#91A77C" stroke-width="4" stroke-linecap="round"/><path d="M239 46H279V104H239Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#stuffed-shadow)"><path d="M109 89Q88 66 91 54Q94 41 110 50Q123 57 126 76Z" fill="#AFC5DA" stroke="#315782" stroke-width="2.2"/><path d="M195 88Q215 66 212 53Q209 40 193 50Q180 57 178 76Z" fill="#AFC5DA" stroke="#315782" stroke-width="2.2"/><ellipse cx="104" cy="65" rx="13" ry="15" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><ellipse cx="202" cy="65" rx="13" ry="15" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><ellipse cx="151" cy="93" rx="47" ry="39" fill="#AFC5DA" stroke="#315782" stroke-width="2.4"/><ellipse cx="151" cy="128" rx="44" ry="27" fill="#AFC5DA" stroke="#315782" stroke-width="2.4"/><ellipse cx="115" cy="148" rx="24" ry="13" fill="#AFC5DA" stroke="#315782" stroke-width="2.1"/><ellipse cx="187" cy="148" rx="24" ry="13" fill="#AFC5DA" stroke="#315782" stroke-width="2.1"/><path d="M133 102Q150 109 168 102Q165 119 151 123Q137 119 133 102Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/><path d="M149 83Q134 77 126 90Q121 105 133 111Q141 116 150 108Z" fill="#AFC5DA" stroke="#315782" stroke-width="2.2"/><circle cx="135" cy="89" r="2.6" fill="#1E2A3B"/><circle cx="165" cy="89" r="2.6" fill="#1E2A3B"/><path d="M139 102Q150 108 162 102" fill="none" stroke="#5479AC" stroke-width="1.6"/><path d="M151 107Q144 134 150 151Q152 160 162 158Q172 155 167 145L161 120" fill="#AFC5DA" stroke="#315782" stroke-width="2" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M104 59Q108 54 114 59M190 59Q196 54 202 59M114 138Q125 143 136 139M166 139Q177 143 188 138M118 88Q124 83 130 88M173 88Q179 83 185 88" fill="none" stroke="#5479AC" stroke-width="1.6" stroke-dasharray="2 3"/><path d="M138 120Q151 126 164 120" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".85"/><circle cx="150" cy="107" r="2.3" fill="#5479AC"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="101" rx="82" ry="72" fill="#FEF9C3" opacity=".1"/><path d="M118 67Q151 48 183 67" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: residential area (Noun phrase)
+  CONTEXTUAL_DEFINITION: A neighborhood mainly made up of homes.
+  PEDAGOGICAL_ARCHETYPE: 5 — Neighborhood map
+  SYNONYM_GUARD: Show a cluster of homes with gardens and quiet streets, with no shops or industrial buildings dominating the scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Overhead neighborhood blocks and curved local street.
+    - Context_Layer: Small trees, gardens, and footpaths repeat through the area.
+    - Focal_Layer: Several home silhouettes form one continuous residential cluster.
+    - Details_Layer: Tiny cars and sidewalk reinforce lived-in streets.
+    - Lighting_Layer: A soft focus shape encloses the residential block.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:residential area" data-archetype="neighborhood-map">
+  <defs><linearGradient id="ground" x2="0" y2="1"><stop stop-color="#DDE9D6"/><stop offset="1" stop-color="#BBD2AE"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2F7"/><path d="M0 0H304V192H0Z" fill="url(#ground)"/><path d="M-12 105Q63 90 114 113T223 106T316 107" fill="none" stroke="#D8C5A8" stroke-width="31"/><path d="M-12 105Q63 90 114 113T223 106T316 107" fill="none" stroke="#FAF8F3" stroke-width="2" stroke-dasharray="8 7"/><ellipse cx="153" cy="99" rx="132" ry="76" fill="none" stroke="#4A72B2" stroke-width="1.6" stroke-dasharray="5 4" opacity=".65"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><g fill="#7FB07A" stroke="#4F8455" stroke-width="1.4"><circle cx="32" cy="45" r="15"/><circle cx="277" cy="46" r="16"/><circle cx="45" cy="158" r="14"/><circle cx="261" cy="158" r="15"/><circle cx="150" cy="37" r="12"/><circle cx="151" cy="168" r="12"/></g><g stroke="#8A5A35" stroke-width="2"><path d="M32 59V70M277 61V72M45 171V180M261 171V180"/></g></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M25 57L49 41L73 57V88H25Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2"/><path d="M22 58L49 37L76 58" fill="#A85B53" stroke="#1E2A3B" stroke-width="2"/><path d="M39 68H57V82H39Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M100 44L128 26L156 44V80H100Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="2"/><path d="M96 45L128 21L160 45" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M109 54H125V70H109ZM132 54H147V70H132Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M216 58L243 40L273 58V88H216Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2"/><path d="M212 59L243 35L278 59" fill="#A85B53" stroke="#1E2A3B" stroke-width="2"/><path d="M229 67H247V82H229Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M57 124L79 109L102 124V150H57Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="2"/><path d="M54 125L79 105L105 125" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M70 132H87V145H70Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M196 126L218 110L240 126V152H196Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2"/><path d="M192 127L218 106L244 127" fill="#A85B53" stroke="#1E2A3B" stroke-width="2"/><path d="M208 134H226V147H208Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M11 92H293M85 18V88M177 17V87" stroke="#F7F5EE" stroke-width="2" opacity=".8"/><path d="M50 96H72V103H50ZM231 93H253V100H231Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="56" cy="103" r="2.5" fill="#344254"/><circle cx="67" cy="103" r="2.5" fill="#344254"/><circle cx="238" cy="100" r="2.5" fill="#344254"/><circle cx="249" cy="100" r="2.5" fill="#344254"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M72 92Q153 80 230 92" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="5 5"/><path d="M225 87L232 92L224 96" fill="none" stroke="#4A72B2" stroke-width="1.8"/></g>
+</svg>

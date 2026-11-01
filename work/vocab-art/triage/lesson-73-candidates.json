@@ -1,0 +1,134 @@
+{
+  "source_svg_count": 3618,
+  "candidate_count": 13,
+  "reviewed_candidates": [
+    {
+      "term": "bookstore / bookshop",
+      "source": "63/bookstore.svg",
+      "decision": "keep",
+      "reason": "A retail storefront with books on display is a direct bookstore match."
+    },
+    {
+      "term": "butcher",
+      "source": "34/butcher.svg",
+      "decision": "keep",
+      "reason": "A butcher in an apron preparing meat at a counter; no gore and appropriate to the seller sense."
+    },
+    {
+      "term": "store",
+      "source": "11/store.svg",
+      "decision": "keep",
+      "reason": "Large general retailer with a broad display and shopping cart; use once."
+    },
+    {
+      "term": "store",
+      "source": "72/store.svg",
+      "decision": "duplicate",
+      "reason": "Near-identical copy of 11/store; avoid duplicate use."
+    },
+    {
+      "term": "fit",
+      "source": "15/fit.svg",
+      "decision": "keep",
+      "reason": "A suit being measured and marked as fitting correctly; appropriate to clothing context."
+    },
+    {
+      "term": "shopping",
+      "source": "58/shopping.svg",
+      "decision": "keep",
+      "reason": "A shopper carrying bags past storefront displays is a direct match."
+    },
+    {
+      "term": "bank",
+      "source": "38/bank.svg",
+      "decision": "keep",
+      "reason": "Financial institution with a secure vault motif, matching the Paying and checkout group."
+    },
+    {
+      "term": "bank",
+      "source": "72/bank.svg",
+      "decision": "duplicate",
+      "reason": "Same financial-bank illustration as 38/bank; use one candidate."
+    },
+    {
+      "term": "cash",
+      "source": "38/cash.svg",
+      "decision": "keep",
+      "reason": "Cash notes and coins held in a hand are clear."
+    },
+    {
+      "term": "pay",
+      "source": "35/pay.svg",
+      "decision": "keep",
+      "reason": "People exchange money with a bill/receipt visible; direct payment action."
+    },
+    {
+      "term": "receipt",
+      "source": "38/receipt.svg",
+      "decision": "keep",
+      "reason": "Printed receipt beside a card terminal and shopping bag, clear checkout context."
+    },
+    {
+      "term": "receipt",
+      "source": "33/receipt.svg",
+      "decision": "duplicate",
+      "reason": "A more generic receipt-and-card slip; prefer the clearer 38/receipt checkout scene."
+    },
+    {
+      "term": "size",
+      "source": "15/size.svg",
+      "decision": "keep",
+      "reason": "Several clothing sizes compared with measuring tape, direct clothing context."
+    },
+    {
+      "term": "mall",
+      "source": "72/shopping-mall.svg",
+      "decision": "keep",
+      "reason": "Semantic synonym candidate: a multi-level indoor shopping complex with several storefronts and shared escalator."
+    },
+    {
+      "term": "pay",
+      "source": "33/pay-separately.svg",
+      "decision": "reject",
+      "reason": "Shows splitting a bill, which is narrower than the general pay action."
+    },
+    {
+      "term": "sale",
+      "source": "36/sales.svg",
+      "decision": "reject",
+      "reason": "Business sales handoff, not a retail sale or price event."
+    },
+    {
+      "term": "shopping",
+      "source": "58/go-shopping.svg",
+      "decision": "reject",
+      "reason": "A near-duplicate shopping action; prefer the direct shopping-key scene."
+    }
+  ],
+  "semantic_synonym_candidates": [
+    {
+      "target": "mall",
+      "source": "72/shopping-mall.svg",
+      "decision": "keep",
+      "reason": "Direct shopping-center synonym from Lesson 72."
+    },
+    {
+      "target": "pay",
+      "source": "33/pay-separately.svg",
+      "decision": "reject",
+      "reason": "Split-bill sense is narrower than general pay."
+    },
+    {
+      "target": "sale",
+      "source": "36/sales.svg",
+      "decision": "reject",
+      "reason": "Business sales conversation is not a retail sale event."
+    },
+    {
+      "target": "shopping",
+      "source": "58/go-shopping.svg",
+      "decision": "reject",
+      "reason": "Prefer exact shopping scene from same source family."
+    }
+  ]
+}

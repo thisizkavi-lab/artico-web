@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: mouthwash (Noun)
+  CONTEXTUAL_DEFINITION: A liquid rinse swished around the mouth to clean it.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a clear blue liquid bottle and the small measuring-cap dose, distinct from toothpaste paste.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom counter and tile.
+    - Context_Layer: Simple washroom wall.
+    - Focal_Layer: Clear mouthwash bottle beside its small cap-cup.
+    - Details_Layer: Blue liquid level, bubbles, and pouring stream.
+    - Lighting_Layer: Cool transparent-glass highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:mouthwash" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 47 H304 M0 94 H304 M0 141 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="151" cy="168" rx="73" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M192 59 H249 V82 H192Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M197 82 Q220 89 244 82 V119 Q221 127 197 119Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.7"/><ellipse cx="220" cy="82" rx="24" ry="7" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.4"/><path d="M198 99 Q221 106 244 99" fill="none" stroke="#8BCFE0" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M74 65 Q74 56 83 56 H158 Q167 56 167 65 V139 Q167 147 158 147 H83 Q74 147 74 139Z" fill="#A8D2E5" fill-opacity="0.5" stroke="#1E2A3B" stroke-width="2.6"/><path d="M82 79 H159 V132 Q159 139 151 139 H90 Q82 139 82 132Z" fill="#79C7DF" fill-opacity="0.8"/><path d="M91 56 V46 H151 V56" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M99 46 H143 V38 H99Z" fill="#7191BC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M90 83 V129 M151 83 V129" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/><circle cx="105" cy="104" r="3" fill="#DCECFB"/><circle cx="121" cy="116" r="2.5" fill="#DCECFB"/><circle cx="137" cy="97" r="2" fill="#DCECFB"/><path d="M182 76 Q185 78 188 76 V82 Q185 84 182 82Z" fill="#79C7DF"/></g>
+  <g id="layer-details"><path d="M88 67 H154" stroke="#FFFFFF" stroke-width="1.6"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

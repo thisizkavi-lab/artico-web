@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: friendly (Adjective)
+  CONTEXTUAL_DEFINITION: Warm and welcoming toward other people.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two people meet with relaxed smiles and an easy handshake, distinguishing mutual warmth from one-sided approachability.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Neighborhood gathering space and soft floor.
+    - Context_Layer: Small potted plant and open chairs.
+    - Focal_Layer: Two adults at x=105 and x=204 greeting with a handshake.
+    - Details_Layer: Relaxed eyes, smiling mouths, joined hands and small warm rays.
+    - Lighting_Layer: Muted gold glow behind the shared greeting.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:friendly" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FAF8F3"/><stop offset="100%" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5479AC"/><stop offset="100%" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q76 143 150 150T304 148V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="167" rx="116" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M267 132V107M255 115Q256 102 268 100Q280 103 280 115Q275 124 267 124Q259 124 255 115Z" fill="#829A83" stroke="#56725E" stroke-width="2"/><path d="M255 132H280L277 141H258Z" fill="#B9875D" stroke="#805333" stroke-width="1.5"/><path d="M26 126V92Q26 84 34 84H64Q72 84 72 92V126M21 127H77" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><circle cx="200" cy="62" r="18" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M182 62Q183 44 200 45Q218 46 219 63L212 68H185Z" fill="#35404B"/><path d="M180 85Q199 78 218 86L224 118H174Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M182 88L163 105L151 114M215 89L226 102" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M187 62H193M203 62H209" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="108" cy="98" rx="77" ry="72" fill="#FEF3C7" opacity=".55"/><circle cx="108" cy="60" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M87 59Q88 38 108 39Q128 40 129 60L122 65Q118 48 106 49Q96 49 89 65Z" fill="#805333" stroke="#1E2A3B" stroke-width="2"/><path d="M85 84Q108 77 130 85L141 131H75Z" fill="url(#top)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M87 92L107 111L128 92" fill="none" stroke="#B8CBE0" stroke-width="2"/><path d="M89 88L73 105L79 111L101 99M128 88L145 104L153 112L160 108" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M79 131L77 160H94L101 132M110 132L118 160H135L128 131" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M141 107Q149 110 155 112" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M97 61Q102 64 106 61M112 61Q117 64 121 61" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M99 71Q108 79 118 70" fill="none" stroke="#805333" stroke-width="1.8" stroke-linecap="round"/><path d="M147 97L152 101L157 97M157 121L162 125L167 121M79 74L74 69" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="151" cy="114" r="3" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M97 46Q107 41 118 46" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="108" cy="98" rx="77" ry="72" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".4"/></g>
+</svg>

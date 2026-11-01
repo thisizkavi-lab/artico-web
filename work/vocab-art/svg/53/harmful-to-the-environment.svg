@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:harmful to the environment" data-archetype="leak-contaminating-a-healthy-stream-and-plants">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; harmful to the environment. Show a human-made leak contaminating a clean stream and harming nearby vegetation, without labels or hazard logos. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="harm-sky" x2="0" y2="1"><stop stop-color="#DFECE6"/><stop offset="1" stop-color="#BDD1C4"/></linearGradient>
+  <linearGradient id="harm-water" x2="0" y2="1"><stop stop-color="#7BBBC1"/><stop offset="1" stop-color="#3C7B88"/></linearGradient>
+  <linearGradient id="harm-toxic" x2="0" y2="1"><stop stop-color="#827B55"/><stop offset="1" stop-color="#514D3F"/></linearGradient>
+  <linearGradient id="harm-ground" x2="0" y2="1"><stop stop-color="#95A77D"/><stop offset="1" stop-color="#647657"/></linearGradient>
+  <filter id="harm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#harm-sky)"/><circle cx="251" cy="37" r="13" fill="#EBC86F" opacity=".7"/><path d="M0 102Q60 91 115 103T224 100Q267 90 304 99V192H0Z" fill="#AFBCA0"/><path d="M0 149Q53 137 105 150T207 148Q257 136 304 147V192H0Z" fill="url(#harm-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 144Q61 132 111 146T204 144Q257 133 304 144V192H0Z" fill="url(#harm-water)"/>
+  <path d="M0 150Q67 139 119 151T222 149Q267 139 304 148" fill="none" stroke="#E3F4E9" stroke-width="2"/>
+  <path d="M0 162Q61 151 112 164T213 162Q259 151 304 161V192H0Z" fill="#5C9DA3" opacity=".65"/>
+  <path d="M0 145Q75 131 130 145T222 144Q265 134 304 142" fill="none" stroke="#7F7652" stroke-width="1.2"/>
+  <path d="M188 84h52v15h-52Z" fill="#707B76" stroke="#394C4C" stroke-width="1.7"/><path d="M240 88h25v12h-25Z" fill="#657571" stroke="#394C4C" stroke-width="1.5"/><path d="M265 94v40" fill="none" stroke="#394C4C" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#harm-shadow)">
+  <path d="M265 132Q259 139 255 148Q248 156 234 159Q220 160 210 164Q196 169 183 168Q169 169 158 174V192H304V157Q286 150 276 143Z" fill="url(#harm-toxic)" opacity=".92"/>
+  <path d="M265 128Q259 137 262 145Q265 152 255 158" fill="none" stroke="#5B5946" stroke-width="4" stroke-linecap="round"/>
+  <path d="M75 150Q97 140 118 149T154 152" fill="none" stroke="#E9F5E7" stroke-width="2"/>
+  <path d="M167 177Q190 169 208 172T241 166" fill="none" stroke="#C1B773" stroke-width="2.2"/>
+  <path d="M86 150q-2-11 3-21m-3 21-8-12m8 8 10-14m35 19v-19m0 13-9-12m9 9 9-13" fill="none" stroke="#839360" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M97 128q8-5 15-2m18 7q7-4 13 1" fill="none" stroke="#AFC57A" stroke-width="1.3"/>
+</g>
+<g id="layer-details">
+  <circle cx="25" cy="171" r="2" fill="#F3F3DE"/><circle cx="121" cy="177" r="1.7" fill="#F3F3DE"/><circle cx="152" cy="162" r="1.6" fill="#F3F3DE"/>
+  <path d="M17 158q12-5 22-1m52 24q12-4 21 0" fill="none" stroke="#CDE9DD" stroke-width="1.4"/>
+  <path d="M201 177q13-5 24-1m26-13q12-5 23-1m-79 23q14-5 25 0" fill="none" stroke="#9F8F60" stroke-width="1.4"/>
+  <path d="M203 81q8-5 15 0m17 8q7-4 12 1" fill="none" stroke="#B9C4B4" stroke-width="1.2"/>
+  <circle cx="235" cy="162" r="2" fill="#5B5A43"/><circle cx="276" cy="155" r="1.8" fill="#5B5A43"/>
+</g>
+<g id="layer-lighting"><path d="M0 146Q63 134 111 147M9 153q34-7 59 0" fill="none" stroke="#F5FAEC" stroke-width="1.2" opacity=".8"/><path d="M260 136q4 8-4 15m3-32q-3 7-8 10" fill="none" stroke="#5B5946" stroke-width="1.4"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

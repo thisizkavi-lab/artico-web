@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 45 - Driving a car
+  WORD: car
+  CONTEXTUAL_DEFINITION: A compact passenger automobile used for personal road travel.
+  PEDAGOGICAL_ART_DIRECTOR: Show the complete side-profile hatchback with windows, two wheels, doors, lights, and road context so it reads as the whole vehicle rather than one part.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with functional context
+  SYNONYM_GUARD: This chapter's road automobile sense; avoid a tram, coach, taxi livery, or isolated car part.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A blue compact hatchback spans x=38..267 and y=67..151; wheels centered at (83,145) and (225,145); cabin windows and two door seams visible; road baseline y=153.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="45:car" data-archetype="hero-road-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="car-paint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9EB8D1"/><stop offset="1" stop-color="#496B99"/></linearGradient>
+    <linearGradient id="car-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5FAFB"/><stop offset="1" stop-color="#B8D3E0"/></linearGradient>
+    <radialGradient id="car-halo"><stop stop-color="#BDD1E0" stop-opacity=".55"/><stop offset="1" stop-color="#BDD1E0" stop-opacity="0"/></radialGradient>
+    <filter id="car-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="1.4"/><path d="M16 170 H288" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="16 13"/><ellipse cx="152" cy="158" rx="115" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M26 132 H40 M260 132 H278" stroke="#7B8790" stroke-width="2" opacity=".55"/><path d="M39 143 H265" stroke="#B5BFC1" stroke-width="1.2"/><circle cx="152" cy="111" r="81" fill="url(#car-halo)" opacity=".22"/></g>
+  <g id="layer-focal" filter="url(#car-shadow)"><path d="M38 124 L48 101 Q55 91 78 88 L105 84 L128 63 H201 Q216 65 229 88 L250 94 Q263 98 267 115 L264 143 H38Z" fill="url(#car-paint)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M82 88 L111 84 L132 68 H166 V108 H71Z" fill="url(#car-glass)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M171 68 H198 Q211 71 221 91 L226 108 H171Z" fill="url(#car-glass)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M168 67 V137 M113 83 V137" stroke="#1E2A3B" stroke-width="1.8"/><path d="M42 122 H263 V137 H42Z" fill="#6985A1" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="83" cy="144" r="19" fill="#263548" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="83" cy="144" r="9" fill="#DFE7EA" stroke="#8795A1" stroke-width="1.7"/><circle cx="225" cy="144" r="19" fill="#263548" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="225" cy="144" r="9" fill="#DFE7EA" stroke="#8795A1" stroke-width="1.7"/><path d="M245 106 L260 110 L260 120 L247 119Z" fill="#FFF3D4" stroke="#1E2A3B" stroke-width="1.2"/><path d="M43 109 L53 105 L56 115 L44 118Z" fill="#C95F54" stroke="#1E2A3B" stroke-width="1.2"/><path d="M125 113 H153 M183 113 H205" stroke="#DCE5EA" stroke-width="1.2"/><path d="M133 126 Q141 122 150 126" fill="none" stroke="#DCE5EA" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M126 73 H160 M179 74 H195" stroke="#FFFFFF" stroke-width="1.4"/><path d="M59 133 H100 M176 133 H211" stroke="#C9D6E0" stroke-width="1.2"/><circle cx="137" cy="119" r="2.2" fill="#F2C14E"/><circle cx="199" cy="119" r="2.2" fill="#F2C14E"/><path d="M33 70 H53 M26 78 H43" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M114 68 Q137 62 159 66" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity=".86"/><ellipse cx="150" cy="89" rx="120" ry="72" fill="url(#car-halo)" opacity=".17"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/></g>
+</svg>

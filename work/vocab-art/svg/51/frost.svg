@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: frost (Noun)
+  CONTEXTUAL_DEFINITION: A thin crystalline coating of ice that forms on a surface on a cold night.
+  PEDAGOGICAL_ART_DIRECTOR: Show frost itself as delicate white crystal branches coating one close-up leaf, not an entire winter landscape.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero surface material
+  SYNONYM_GUARD: Frost is the thin deposit; reserve the broad adjective scene of a frost-covered morning for frosty.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A dark green leaf carries a fine branching white crystalline coating along its veins, with a few crystals nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:frost" data-archetype="crystalline-frost-coating">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fr-sky" x2="0" y2="1"><stop stop-color="#AFC9D1"/><stop offset="1" stop-color="#E9F0E9"/></linearGradient><linearGradient id="fr-leaf" x2="0" y2="1"><stop stop-color="#5C806C"/><stop offset="1" stop-color="#304F4A"/></linearGradient><linearGradient id="fr-crystal" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#BBD5D9"/></linearGradient><filter id="fr-shadow" x="-20%" y="-18%" width="140%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#263F4A" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fr-sky)"/><path d="M0 143Q78 124 151 141T304 134V192H0Z" fill="#8FA391"/><path d="M0 165H304V192H0Z" fill="#C7C3A8"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A2AE9F" stroke-width="1.2"/><ellipse cx="151" cy="162" rx="84" ry="7" fill="#334B4A" opacity=".18"/><path d="M50 139Q72 93 151 72Q228 94 256 139Q205 160 151 153Q94 160 50 139Z" fill="url(#fr-leaf)" stroke="#2C4C46" stroke-width="2"/><path d="M65 139Q151 125 240 139" fill="none" stroke="#A8C68F" stroke-width="2" stroke-linecap="round"/><path d="M94 132Q101 111 116 103M130 128Q134 104 139 88M170 128Q169 104 166 87M205 132Q198 111 186 101" fill="none" stroke="#8EAE7E" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fr-shadow)">
+  <path d="M65 139Q151 125 240 139" fill="none" stroke="url(#fr-crystal)" stroke-width="3.1" stroke-linecap="round"/><path d="M99 133L93 119M99 133L107 121M134 129L126 112M134 129L144 114M169 129L177 112M169 129L160 114M203 133L211 118M203 133L195 119" fill="none" stroke="#F6FFFF" stroke-width="2" stroke-linecap="round"/><path d="M93 119l-8-4m8 4 1-8m-1 8 8-2m-16-2-4-5m21-1 4-5m-4 5 7 1m10 7-7-7m7 7 1-10m-1 10 8-4m-14-2-4-6m22 4 5-7m-5 7 8 2m17-5-1-10m1 10-8-6m8 6 8-3m-18-3-5-6m24 4 5-6m-5 6 8 1m-7 7 7-6m-7 6 1 8m-1-8 8-2m10 6 6-8m-6 8-1-10m1 10 8 1m-13-5 5-6m-26 12 6-7m-6 7 1 8m-1-8 9-2" fill="none" stroke="#E8F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M81 143q14 4 27 0m67 2q16 3 29-1" fill="none" stroke="#BED4C1" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details"><path d="M42 64q12-8 23 0m174-2q12-8 23 0" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><circle cx="69" cy="106" r="2" fill="#EEF8F5"/><circle cx="231" cy="109" r="2.2" fill="#EEF8F5"/><path d="M64 103l-4-5m4 5 6-5m156 7-4-7m4 7 7-4" fill="none" stroke="#E9F6F4" stroke-width="1.4" stroke-linecap="round"/><path d="M79 125l-3-4m3 4 3-4m-3 4v4" fill="none" stroke="#F3FCFB" stroke-width="1.2" stroke-linecap="round"/><path d="M113 110l-3-4m3 4 3-4m-3 4v4" fill="none" stroke="#F3FCFB" stroke-width="1.2" stroke-linecap="round"/><path d="M152 101l-3-4m3 4 3-4m-3 4v4" fill="none" stroke="#F3FCFB" stroke-width="1.2" stroke-linecap="round"/><path d="M186 102l-3-4m3 4 3-4m-3 4v4" fill="none" stroke="#F3FCFB" stroke-width="1.2" stroke-linecap="round"/><path d="M217 117l-3-4m3 4 3-4m-3 4v4" fill="none" stroke="#F3FCFB" stroke-width="1.2" stroke-linecap="round"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M65 137Q151 124 237 137" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".9"/><path d="M94 117l-1-6m41-4 1-8m35 8 2-8m31 15 2-8" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

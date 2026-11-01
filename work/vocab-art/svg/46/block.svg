@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: block
+  CONTEXTUAL_DEFINITION: A city block, the group of buildings enclosed by surrounding streets.
+  PEDAGOGICAL_ART_DIRECTOR: Use a top-down street grid and highlight one rectangular island of buildings bounded on all four sides by roads.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Use the roads-and-places sense of a city block, not a solid wooden cube or obstruction.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Four roads cross around a rectangular block at x=80..220, y=47..146; inner buildings cluster inside the highlighted city island.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:block" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="block-grid" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5EEDC"/><stop offset="1" stop-color="#C8DBC1"/></linearGradient>
+    <linearGradient id="block-highlight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2D78C"/><stop offset="1" stop-color="#DDA65E"/></linearGradient>
+    <radialGradient id="block-glow"><stop stop-color="#F2C14E" stop-opacity=".38"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="block-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#block-grid)"/><path d="M0 30H304V61H0ZM0 133H304V164H0Z" fill="#65768A"/><path d="M54 0H84V192H54ZM220 0H250V192H220Z" fill="#65768A"/><path d="M0 33H304M0 158H304M58 0V192M246 0V192" stroke="#FAF8F3" stroke-width="1.5"/><path d="M0 46H304M0 146H304M68 0V192M235 0V192" stroke="#F8F6EF" stroke-width="1.2" stroke-dasharray="8 8" opacity=".65"/></g>
+  <g id="layer-context"><rect x="18" y="76" width="29" height="41" rx="3" fill="#B7C6C3" stroke="#718280" stroke-width="1.5"/><rect x="265" y="72" width="25" height="51" rx="3" fill="#B7C7D1" stroke="#71808B" stroke-width="1.5"/><circle cx="32" cy="15" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><circle cx="275" cy="177" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.4"/><path d="M92 53H207M92 140H207" stroke="#FAF8F3" stroke-width="2"/><path d="M133 150Q135 142 142 142H159Q167 143 171 150L170 157H134Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.5"/><path d="M141 144H159L163 149H138Z" fill="#B8D8E3" stroke="#536A7B" stroke-width="1"/><circle cx="140" cy="156" r="3" fill="#34485D" stroke="#1E2A3B" stroke-width=".8"/><circle cx="164" cy="156" r="3" fill="#34485D" stroke="#1E2A3B" stroke-width=".8"/></g>
+  <g id="layer-focal" filter="url(#block-shadow)"><ellipse cx="151" cy="96" rx="88" ry="73" fill="url(#block-glow)"/><rect x="86" y="48" width="127" height="96" rx="5" fill="url(#block-highlight)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M101 61H141V88H101ZM158 58H199V85H158ZM97 105H133V131H97ZM150 99H198V132H150Z" fill="#D8B996" stroke="#765F4B" stroke-width="1.7"/><path d="M107 69H135V84H107ZM164 66H192V81H164ZM103 111H127V127H103ZM157 106H190V127H157Z" fill="#A7C8D4" stroke="#516B7A" stroke-width="1.2"/><path d="M142 48V144M86 96H213" stroke="#F4E9CE" stroke-width="1.7"/><circle cx="149" cy="94" r="5" fill="#4A72B2" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M70 62V131M230 62V131M87 42H212M87 151H212" stroke="#FFFFFF" stroke-width="1.4" stroke-dasharray="3 5"/><path d="M73 65L78 59M73 128L78 134M226 65L221 59M226 128L221 134" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><path d="M26 48H45M258 48H282" stroke="#D6E1D6" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><path d="M92 54H207M92 139H207" stroke="#FFF9E5" stroke-width="1.3" opacity=".8"/><ellipse cx="151" cy="96" rx="94" ry="79" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".6"/></g>
+</svg>

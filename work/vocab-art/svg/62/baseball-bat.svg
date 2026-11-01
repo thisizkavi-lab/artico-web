@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: baseball bat
+ CONTEXTUAL_DEFINITION: A smooth, narrow wooden bat with a thick barrel used to hit a baseball.
+ PEDAGOGICAL_ARCHETYPE: Hero object on a baseball diamond, with the bat full length and a stitched ball nearby.
+ SYNONYM_GUARD: Show the long round barrel and small knobbed handle, not a flat cricket bat.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large ash-wood bat diagonal across foreground, grip wrap at handle, small baseball on the infield diamond.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:baseball bat" data-archetype="cylindrical-baseball-bat-object">
+ <defs><linearGradient id="bbt-wood" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#966644"/><stop offset=".5" stop-color="#D5A66E"/><stop offset="1" stop-color="#F0D0A0"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2EE"/><path d="M0 112 149 50l155 62v80H0Z" fill="#829A83"/><path d="M0 112 149 50l155 62M149 50v142M20 122l129-53 130 53m-130 0v70" fill="none" stroke="#F4EFE2" stroke-width="1.6"/><path d="M43 146h24m182 0h20" stroke="#DDE8DC" stroke-width="1.1"/><circle cx="42" cy="36" r="10" fill="#E4BB68"/></g>
+ <g id="layer-context"><ellipse cx="149" cy="171" rx="100" ry="6" fill="#344F5A" opacity=".17"/><path d="M148 53v11m-11-5 11-6 11 6m-11 6v10" fill="none" stroke="#F4EFE2" stroke-width="1.6"/><path d="M224 76q8-6 15 0" stroke="#E4BB68" stroke-width="1.4" fill="none"/></g>
+ <g id="layer-focal"><path d="M84 156 185 52q7-8 14-2l9 9q5 6-1 12L103 170q-8 8-15 1l-4-6q-4-5 0-9Z" fill="url(#bbt-wood)" stroke="#563D30" stroke-width="2.2"/><path d="M96 158 194 58q5-5 9-1" fill="none" stroke="#F7E5C6" stroke-width="2" opacity=".85"/><path d="M81 155 96 168m-18-4 12 11m-6-24 17 16m-8-25 17 16" stroke="#7E4A3E" stroke-width="2"/><path d="M182 55 198 70" stroke="#8D5F40" stroke-width="1.2"/><circle cx="231" cy="124" r="13" fill="#F8F6EF" stroke="#A9B5B7" stroke-width="1.3"/><path d="M223 116q5 4 3 8m9-6q-5 5-3 10m-9 4q5-4 10-3" fill="none" stroke="#C94D50" stroke-width="1.6" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M70 179h43m112 0h36" stroke="#DDE8DC" stroke-width="1.2"/><path d="M188 49q5-5 10-2m-96 129 5-6" stroke="#FFF6E7" stroke-width="1.2"/><circle cx="126" cy="102" r="2" fill="#FFF6E7"/><path d="M219 151l6-3m10 7 6-3" stroke="#F4EFE2" stroke-width="1"/><path d="M129 116q12-9 23-21m-14 28q12-9 23-21m-39 51 9-8m74-85 6-5" fill="none" stroke="#A8794E" stroke-width="1.1" opacity=".75"/><path d="M118 122q13-12 25-25" fill="none" stroke="#B88858" stroke-width="1"/><path d="M107 137q17-16 29-27" fill="none" stroke="#B88858" stroke-width="1"/><path d="M141 100q11-10 22-21" fill="none" stroke="#B88858" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="150" cy="111" rx="72" ry="50" fill="#FFF6E7" opacity=".045"/><path d="M165 70q18-18 29-20" fill="none" stroke="#FFF6E7" stroke-width="1.2"/></g>
+</svg>

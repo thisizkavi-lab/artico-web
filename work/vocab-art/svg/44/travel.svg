@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: travel
+  CONTEXTUAL_DEFINITION: To make a journey from one place to another, often over a distance.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler with rolling luggage at the start of a longer scenic journey, heading toward a train and distant landscape.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + journey cue
+  SYNONYM_GUARD: A one-off journey with suitcase and changing scenery contrasts with a commuter's repeated home-to-work route.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Traveler walking from x=72..135 with suitcase at x=52..83, y=105..153; train pulls away at x=177..278, y=91..137; distant hill silhouettes through the train windows and curving route line between places.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:travel" data-archetype="peak-moment-journey">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="travel-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#344E78"/></linearGradient>
+    <linearGradient id="travel-train" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DDE8EA"/><stop offset="1" stop-color="#97AEB8"/></linearGradient>
+    <radialGradient id="travel-halo"><stop stop-color="#F7E6B4" stop-opacity=".6"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="travel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 112 L53 74 L87 104 L138 58 L193 111 L244 76 L304 111 V192 H0 Z" fill="#E7ECE8"/><path d="M0 132 L70 101 L122 128 L181 92 L236 128 L304 101 V192 H0 Z" fill="#D8E2D8"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="154" cy="159" rx="128" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M38 132 C77 121 106 124 140 132 S208 139 269 119" fill="none" stroke="#82A980" stroke-width="2.2" stroke-dasharray="4 6" stroke-linecap="round"/><circle cx="42" cy="131" r="4" fill="#F2C14E"/><circle cx="269" cy="119" r="4" fill="#5479AC"/><path d="M174 143 H289" stroke="#64748B" stroke-width="2.4"/><path d="M175 150 H289" stroke="#A18D6A" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#travel-shadow)"><path d="M183 109 Q187 91 202 87 H263 Q276 90 280 106 V137 H180 Z" fill="url(#travel-train)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M199 96 H221 V111 H191 Z M226 95 H249 V111 H226 Z M254 95 H269 Q276 98 277 111 H254 Z" fill="#D4E6ED" stroke="#64748B" stroke-width="1.2"/><path d="M223 94 V136 M251 94 V136" stroke="#1E2A3B" stroke-width="1.4"/><path d="M183 116 H279" stroke="#5479AC" stroke-width="2.6"/><circle cx="198" cy="137" r="6" fill="#263548"/><circle cx="232" cy="137" r="6" fill="#263548"/><circle cx="264" cy="137" r="6" fill="#263548"/><path d="M74 105 Q74 95 83 95 Q92 95 92 105 V127 H74 Z" fill="url(#travel-coat)" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="83" cy="89" r="7" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M78 127 L75 148 M87 127 L96 148" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M77 106 L68 117 M89 106 L99 114" stroke="#DCA47D" stroke-width="4" stroke-linecap="round"/><rect x="51" y="119" width="23" height="30" rx="4" fill="#D79B52" stroke="#1E2A3B" stroke-width="1.8"/><path d="M57 119 V114 Q57 110 61 110 H65 Q69 110 69 114 V119" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M57 126 H68 M62 125 V147" stroke="#A66A35" stroke-width="1.2"/><circle cx="56" cy="151" r="2.6" fill="#263548"/><circle cx="69" cy="151" r="2.6" fill="#263548"/><path d="M99 113 L115 124" stroke="#DCA47D" stroke-width="3.5" stroke-linecap="round"/><path d="M113 124 L125 121" stroke="#DCA47D" stroke-width="3.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M197 101 H216 M230 100 H246 M258 100 H272" stroke="#FFFFFF" stroke-width="1"/><path d="M203 118 H219 M231 118 H247 M257 118 H273" stroke="#7C9BAA" stroke-width="1"/><path d="M101 78 Q111 68 121 74 M238 59 Q249 52 261 59" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M96 131 L105 132 M76 147 L83 148" stroke="#5479AC" stroke-width="1.4"/><path d="M172 108 L178 103" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="91" rx="122" ry="79" fill="url(#travel-halo)" opacity=".15"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M177 143 H283" stroke="#1E2A3B" stroke-width=".8" opacity=".35"/></g>
+</svg>

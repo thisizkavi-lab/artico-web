@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: hawk (noun)
+  CONTEXTUAL_DEFINITION: A smaller brown hawk with a hooked beak and streaked chest, alert on a woodland branch.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Keep the bird lean and compact, with striped breast and a narrow hooked bill; the eagle card carries the white head, massive beak, and oversized talons.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perch a lean hawk facing left, body x=106..196 y=79..132, head at x=105 y=76, hooked golden bill, folded wing, striped light breast, and curled yellow talons on a branch.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:hawk" data-archetype="woodland-hawk">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#9C6943;--c-secondary:#684932;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="hawk-sky" x2="0" y2="1"><stop stop-color="#DCEAF0"/><stop offset="1" stop-color="#F5F0E4"/></linearGradient>
+  <linearGradient id="hawk-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B27A4D"/><stop offset="1" stop-color="#75482F"/></linearGradient>
+  <linearGradient id="hawk-branch" x2="0" y2="1"><stop stop-color="#8A6648"/><stop offset="1" stop-color="#594332"/></linearGradient>
+  <filter id="hawk-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hawk-sky)"/><path d="M0 127Q78 115 152 129T304 122V192H0Z" fill="#DEE5D7"/><path d="M0 150Q74 140 147 152T304 146V192H0Z" fill="#CAD6BF"/><path d="M55 127V65m0 29L39 78m16 26 15-20m160 41V68m0 31 16-20m-16 9-13-17" fill="none" stroke="#829278" stroke-width="3" stroke-linecap="round"/><path d="M33 80q9-12 18-4m-16 12q9-8 18-2m178-7q8-12 18-5m-20 13q10-8 18-1" fill="none" stroke="#779071" stroke-width="2.3" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M33 141Q107 135 174 140T282 135" fill="none" stroke="url(#hawk-branch)" stroke-width="8" stroke-linecap="round"/><path d="M66 138l-8-11m8 11 9-12m161 10 7-11" fill="none" stroke="#72543B" stroke-width="3" stroke-linecap="round"/><ellipse cx="152" cy="152" rx="67" ry="5" fill="#64735F" opacity=".17"/></g>
+ <g id="layer-focal" filter="url(#hawk-shadow)"><path d="M112 96Q118 77 145 73Q177 75 192 97Q199 117 181 135Q151 145 126 131Q109 118 112 96Z" fill="url(#hawk-coat)" stroke="#593A29" stroke-width="1.7"/><path d="M120 99Q137 82 160 88Q178 94 176 117Q161 136 137 127Z" fill="#E9E1D1" stroke="#89725E" stroke-width="1.1"/><path d="M126 101l25 3m-24 5 28 3m-27 5 26 3m-22 6 20 2" fill="none" stroke="#906348" stroke-width="2.2" stroke-linecap="round"/><path d="M124 94Q142 79 166 87Q183 94 179 111Q159 122 138 116Z" fill="#83563B" stroke="#60412D" stroke-width="1.2"/><path d="M120 106L91 127L111 133L134 119Z" fill="#8B5D3E" stroke="#60412D" stroke-width="1.1"/><circle cx="112" cy="79" r="19" fill="#B27A4D" stroke="#68452F" stroke-width="1.4"/><path d="M98 78Q87 73 78 77L94 83Q99 89 105 89Q102 83 98 78Z" fill="#E5AA3B" stroke="#986B2E" stroke-width="1.1"/><circle cx="107" cy="76" r="2.4" fill="#1E2A3B"/><circle cx="107" cy="75" r=".7" fill="#FFFFFF"/><path d="M142 132l-2 8m27-8 2 9" fill="none" stroke="#D4A342" stroke-width="3" stroke-linecap="round"/><path d="M142 139q-7 2-7 7l4 3 4-4 3 5q4 1 4-3l-3-7m22-1q-6 3-5 8l4 3 3-4 4 4q4 0 3-4l-4-6" fill="#D9A742" stroke="#9C6E30" stroke-width="1.2" stroke-linejoin="round"/></g>
+ <g id="layer-details"><path d="M43 145l-4-6m10 6 5-7m188 5 5-8m7 7 5-6" fill="none" stroke="#859875" stroke-width="1.4" stroke-linecap="round"/><path d="M119 87q9-11 19-10m-18 6q7-4 12-3" fill="none" stroke="#E9C79B" stroke-width="1.4" stroke-linecap="round"/><circle cx="216" cy="53" r="1.5" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M128 86q16-11 31-5m-57 7q-3-8-9-9" fill="none" stroke="#F1C797" stroke-width="1.6" opacity=".7" stroke-linecap="round"/><ellipse cx="151" cy="101" rx="47" ry="29" fill="#FFF6E4" opacity=".035"/></g>
+</svg>

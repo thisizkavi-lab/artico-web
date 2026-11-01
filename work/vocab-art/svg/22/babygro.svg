@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: babygro (Noun)
+  CONTEXTUAL_DEFINITION: A soft one-piece sleeping suit with long sleeves and covered feet.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A long-sleeved, full-length footed infant sleepsuit with front snaps distinguishes babygro from a sleeveless bodysuit and short romper.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft nursery wall.
+    - Context_Layer: Low hanger and folded blanket.
+    - Focal_Layer: Front-facing footed sleepsuit with long sleeves.
+    - Details_Layer: Front snaps, cuffs, and covered feet.
+    - Lighting_Layer: Pale halo around the garment silhouette.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:babygro" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="babygro-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><linearGradient id="babygro-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient><filter id="babygro-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#babygro-bg)"/><path d="M0 153Q79 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M63 40H240" stroke="#80513F" stroke-width="3" stroke-linecap="round"/><path d="M82 40Q84 49 94 49H210Q220 49 222 40" fill="none" stroke="#64748B" stroke-width="2"/><path d="M31 137H93Q99 137 99 143V155H27V143Q27 137 31 137Z" fill="#829A83"/><path d="M38 139Q62 132 88 140" fill="none" stroke="#F3ECE1" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M137 47H167" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M137 47Q137 38 152 38Q167 38 167 47" fill="none" stroke="#80513F" stroke-width="2.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#babygro-shadow)"><path d="M120 60Q137 52 152 59Q167 52 184 60L202 81L189 91L179 79L183 121L176 153Q167 166 153 159Q139 166 128 153L121 121L125 79L115 91L102 81Z" fill="url(#babygro-cloth)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M152 59V146" stroke="#5479AC" stroke-width="2"/><path d="M120 62L107 82M184 62L197 82" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M120 62L107 82M184 62L197 82" stroke="#8EB0DE" stroke-width="4.5" stroke-linecap="round"/><path d="M126 146Q137 153 148 146Q153 155 159 146Q168 154 178 146" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M128 153Q138 166 150 158L150 151H129ZM155 158Q168 166 176 153L175 151H155Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="152" cy="77" r="2.2" fill="#D9857F"/><circle cx="152" cy="91" r="2.2" fill="#D9857F"/><circle cx="152" cy="105" r="2.2" fill="#D9857F"/><circle cx="152" cy="119" r="2.2" fill="#D9857F"/><circle cx="152" cy="133" r="2.2" fill="#D9857F"/></g>
+  <g id="layer-details"><path d="M133 70Q143 66 152 70M158 70Q168 66 177 70" fill="none" stroke="#FFFFFF" stroke-width="2"/><circle cx="135" cy="100" r="2" fill="#F2C14E"/><circle cx="169" cy="100" r="2" fill="#F2C14E"/><path d="M92 65Q102 59 111 65M194 65Q204 59 213 65" fill="none" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="108" rx="80" ry="77" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".25"/><path d="M118 31Q151 23 186 31" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

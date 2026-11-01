@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: sibling (Noun)
+  CONTEXTUAL_DEFINITION: One person who shares a parent with a brother or sister.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two children at home share and build one block tower; no gender cue is emphasized because sibling includes brother or sister.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet family living room and floor rug.
+    - Context_Layer: Low toy basket and one partly built block tower.
+    - Focal_Layer: Two children sit close, handing the next block to one another.
+    - Details_Layer: Shared smiles, matched age, and joined play.
+    - Lighting_Layer: Warm focus centered on the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:sibling" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="sibling-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="sibling-rug" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCEAD6"/><stop offset="1" stop-color="#C3DAB9"/></linearGradient>
+    <filter id="sibling-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sibling-bg)"/><path d="M0 152Q74 146 152 152T304 150V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="123" ry="7" fill="#DDD4C3"/><ellipse cx="152" cy="154" rx="119" ry="22" fill="url(#sibling-rug)"/><path d="M22 57H75V102H22Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.8"/><path d="M27 96Q37 81 47 90Q57 75 70 96" fill="#829A83"/><circle cx="43" cy="72" r="6" fill="#C98961"/><circle cx="58" cy="73" r="6" fill="#F5BFA3"/></g>
+  <g id="layer-context"><path d="M233 117Q233 107 243 107H278Q288 107 288 117V145H233Z" fill="#C88446" stroke="#965D28" stroke-width="1.8"/><path d="M240 117H281M243 145V155M279 145V155" stroke="#965D28" stroke-width="1.5"/><circle cx="255" cy="126" r="4" fill="#F2C14E"/><path d="M182 142H207V152H182Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M189 131H201V142H189Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#sibling-shadow)"><path d="M31 178Q36 149 52 141Q69 134 86 142L94 178Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="64" cy="116" r="23" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M41 114Q42 93 64 93Q88 94 88 117L82 122Q77 105 64 106Q52 105 44 122Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M52 116Q57 120 62 116M67 116Q72 120 77 116M54 129Q64 135 74 129" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M79 146Q98 140 116 132" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M79 146Q98 140 116 132" stroke="#D89A6C" stroke-width="5.5" stroke-linecap="round"/><path d="M112 178Q117 149 134 142Q152 134 170 143L177 178Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="145" cy="116" r="23" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M122 114Q123 94 145 93Q168 94 169 117L163 122Q158 105 145 106Q133 105 125 122Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M133 116Q138 120 143 116M148 116Q153 120 158 116M135 129Q145 135 155 129" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M130 144Q117 138 114 131M159 146Q171 137 178 130" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M130 144Q117 138 114 131M159 146Q171 137 178 130" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M129 118L145 106L160 118L145 130Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M129 118V132L145 144L160 132V118" fill="#E3AC77" stroke="#965D28" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M48 94Q62 87 76 92M128 93Q142 86 157 92" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><circle cx="103" cy="116" r="2.5" fill="#D9A441"/><path d="M105 105L110 100M181 95L186 90" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="105" cy="119" rx="78" ry="58" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".36"/><path d="M39 81Q72 68 101 77" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

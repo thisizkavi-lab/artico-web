@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: realtor (Noun)
+  CONTEXTUAL_DEFINITION: A professional who helps people buy or rent homes.
+  PEDAGOGICAL_ARCHETYPE: 3 — Professional at a property desk
+  SYNONYM_GUARD: Keep the realtor at a desk presenting a small house model; estate agent is shown leading an in-person viewing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small property office with window and desk.
+    - Context_Layer: Client sits opposite professional.
+    - Focal_Layer: Realtor gestures to a miniature home model and hands over a blank folder.
+    - Details_Layer: Key ring, blank plan sheet, and model without signs or writing.
+    - Lighting_Layer: Warm highlight centers on the model and professional.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:realtor" data-archetype="professional-role">
+  <defs><linearGradient id="office" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E7EEF3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#office)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M217 22H283V72H217Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.7"/><path d="M250 23V71M218 47H282" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="152" cy="165" rx="115" ry="6" fill="#928675" opacity=".23"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M34 119H273V145H34Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.1"/><path d="M50 145V159M257 145V159" stroke="#8A5A35" stroke-width="4" stroke-linecap="round"/><path d="M48 110H95V119H48Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M202 107H257V119H202Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/><path d="M210 109H250M210 113H244" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M118 67L150 47L183 67V105H118Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="2"/><path d="M113 68L150 42L188 68" fill="#A85B53" stroke="#1E2A3B" stroke-width="2"/><path d="M128 77H141V90H128Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.2"/><path d="M155 83Q155 79 160 79H170V105H155Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="75" cy="82" r="10" fill="#E7B79C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M65 80Q65 67 76 67Q86 68 85 81L80 75H69Z" fill="#493B36"/><path d="M64 96Q75 89 86 96L91 118H59Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M67 97L99 105L128 101" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M67 97L99 105L128 101" fill="none" stroke="#E7B79C" stroke-width="4.5" stroke-linecap="round"/><path d="M68 117L64 146M84 117L90 146" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M68 117L64 146M84 117L90 146" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><circle cx="221" cy="83" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.8"/><path d="M211 81Q211 68 222 68Q232 69 231 82L226 76H215Z" fill="#3A2E2B"/><path d="M210 97Q221 90 232 97L238 118H204Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M213 98L201 108L181 106" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M213 98L201 108L181 106" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M214 117L209 146M230 117L236 146" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M214 117L209 146M230 117L236 146" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M138 91L151 83L164 91V99H138Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M137 92L151 81L165 92" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M100 109L108 107M104 115L112 113" stroke="#F2C14E" stroke-width="1.6"/><path d="M123 51L151 44L180 60" stroke="#FFFFFF" stroke-width="1.4"/><circle cx="185" cy="112" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="151" cy="88" r="30" fill="#FEF3C7" opacity=".18"/><path d="M151 75V99M139 87H163" stroke="#4A72B2" stroke-width="1.2" opacity=".6"/></g>
+</svg>

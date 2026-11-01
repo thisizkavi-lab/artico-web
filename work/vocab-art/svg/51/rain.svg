@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: rain (Noun)
+  CONTEXTUAL_DEFINITION: Water drops falling from clouds, shown as precipitation itself over a landscape.
+  PEDAGOGICAL_ART_DIRECTOR: Depict ordinary steady rain across a countryside scene, with a moderate curtain of drops and ripples in a stream.
+  PEDAGOGICAL_ARCHETYPE: 3 - Precipitation event
+  SYNONYM_GUARD: Steady and noticeable, but less forceful than a downpour and more sustained than a light shower.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Broad gray cloud sends steady slanted rain onto a green meadow and stream; no person or umbrella dominates.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:rain" data-archetype="steady-rain-over-landscape">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="rn-sky" x2="0" y2="1"><stop stop-color="#91ABB5"/><stop offset="1" stop-color="#D0E0DB"/></linearGradient><linearGradient id="rn-cloud" x2="0" y2="1"><stop stop-color="#91A2AA"/><stop offset="1" stop-color="#617982"/></linearGradient><linearGradient id="rn-water" x2="0" y2="1"><stop stop-color="#80C2C7"/><stop offset="1" stop-color="#43879A"/></linearGradient><linearGradient id="rn-field" x2="0" y2="1"><stop stop-color="#99AF8D"/><stop offset="1" stop-color="#607E68"/></linearGradient><filter id="rn-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rn-sky)"/><path d="M0 118Q62 97 121 119T241 111T304 116V192H0Z" fill="#8FA68C"/><path d="M0 139Q65 126 132 140T254 135T304 140V192H0Z" fill="url(#rn-field)"/><path d="M0 159Q78 148 150 158T304 153V192H0Z" fill="#738C79"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#B1C0A7" stroke-width="1.2"/><path d="M26 126q12-18 23 0m7 0q9-22 20 0m185-4q9-20 18 0m8 0q10-16 18 0" fill="none" stroke="#66816F" stroke-width="3" stroke-linecap="round"/><path d="M25 126v18m22-18v16m214-18v18m22-18v18" fill="none" stroke="#6C7658" stroke-width="2.2"/><ellipse cx="151" cy="165" rx="112" ry="5" fill="#304F4A" opacity=".16"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#rn-shadow)">
+  <path d="M57 57Q59 40 79 39Q88 21 108 31Q127 25 135 43Q159 36 169 54Q187 46 198 61Q205 75 191 84H75Q57 79 57 57Z" fill="url(#rn-cloud)" stroke="#526871" stroke-width="1.6"/><path d="M67 53q13-13 28-7m23-9q13-7 24 2m21 13q13-8 24 2" fill="none" stroke="#C5D4D3" stroke-width="1.5"/>
+  <path d="M79 86L69 116M99 84L89 117M119 87L109 119M139 84L129 117M159 86L149 120M179 85L169 118M199 87L189 119M219 88L209 120M239 87L229 119" fill="none" stroke="url(#rn-water)" stroke-width="2.7" stroke-linecap="round"/><path d="M91 104l-7 19m48-18-7 20m51-19-7 20m54-20-7 20m37-19-7 20" fill="none" stroke="#D8F0EB" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M0 149Q45 139 88 149T176 149T260 146T304 149V165H0Z" fill="url(#rn-water)"/><path d="M15 153q13-7 26 0m66 3q13-7 26 0m91-4q14-8 28 0m22 3q12-6 23 0" fill="none" stroke="#D7F2EE" stroke-width="1.8" stroke-linecap="round"/><path d="M34 159q11-5 22 0m108-2q12-6 24 0m78 1q10-5 19 0" fill="none" stroke="#A8E1DE" stroke-width="1.3" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M42 119l-4 8m73-7-4 8m81-8-4 8m69-8-4 8" fill="none" stroke="#E2F5F0" stroke-width="1.2" stroke-linecap="round"/><path d="M31 144q8-7 16 0m-8-5v-5m194 9q8-8 17 0m-8-5v-4" fill="none" stroke="#D7F1EA" stroke-width="1.5" stroke-linecap="round"/><path d="M255 155q10-6 19 0" fill="none" stroke="#C6EFEA" stroke-width="1.4" stroke-linecap="round"/><circle cx="44" cy="145" r="1.1" fill="#FFF8E7"/><circle cx="236" cy="146" r="1.1" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#F4F8F1" stroke-width="1" opacity=".45"/></g>
+ <g id="layer-lighting"><path d="M60 57q3-15 18-16m31-7q13-5 22 2m30 19q11-7 20 2" fill="none" stroke="#E5EFEB" stroke-width="1.4" opacity=".75"/><path d="M17 151q13-8 26 0m178-1q13-8 26 0" fill="none" stroke="#F0FFFA" stroke-width="1.2"/><circle cx="44" cy="145" r="1" fill="#FFF8E7"/></g>
+</svg>

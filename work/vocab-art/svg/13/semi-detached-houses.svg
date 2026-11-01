@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: semi-detached houses (Noun phrase)
+  CONTEXTUAL_DEFINITION: Two separate homes joined along one shared side wall.
+  PEDAGOGICAL_ARCHETYPE: 6 — Paired architectural contrast
+  SYNONYM_GUARD: Show exactly two houses joined on one side, each with its own roof and front door; row houses have four or more.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet street and two separate front gardens.
+    - Context_Layer: A clear central party wall joins the pair.
+    - Focal_Layer: Two homes with distinct roof slopes and independent entrances.
+    - Details_Layer: Windows and paths mirror but do not cross the joining wall.
+    - Lighting_Layer: Highlight the shared seam only.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:semi-detached houses" data-archetype="paired-building">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#F0D8B3"/><stop offset="1" stop-color="#D9B98C"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 152H304V192H0Z" fill="#B7D3A8"/><path d="M0 169H304" stroke="#D8C5A8" stroke-width="18"/><ellipse cx="150" cy="161" rx="106" ry="6" fill="#72815F" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M32 151V133Q40 125 48 133V151M256 151V132Q265 123 274 132V151" fill="#7FB07A" stroke="#4F8455" stroke-width="1.5"/><path d="M30 151H52M253 151H277" stroke="#8A5A35" stroke-width="2"/><path d="M151 61V153" stroke="#FFFFFF" stroke-width="7" opacity=".65"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M43 82L101 47L158 82V151H43Z" fill="url(#wall)" stroke="#1E2A3B" stroke-width="2.5"/><clipPath id="left-house"><path d="M43 82L101 47L158 82V151H43Z"/></clipPath><g clip-path="url(#left-house)"><path d="M44 84H158V151H44Z" fill="#E8CEA7"/><path d="M46 117H157M46 134H157" stroke="#C9A879" stroke-width="1.2"/></g><path d="M35 83L101 40L165 83L158 92L101 54L43 92Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><path d="M158 82L216 47L271 82V151H158Z" fill="url(#wall)" stroke="#1E2A3B" stroke-width="2.5"/><clipPath id="right-house"><path d="M158 82L216 47L271 82V151H158Z"/></clipPath><g clip-path="url(#right-house)"><path d="M158 84H271V151H158Z" fill="#E4D0B0"/><path d="M159 117H270M159 134H270" stroke="#C9A879" stroke-width="1.2"/></g><path d="M151 83L216 40L279 83L271 92L216 54L158 92Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.6"/><path d="M68 98H91V121H68Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M79 99V120M69 110H90" stroke="#5479AC" stroke-width="1.4"/><path d="M211 98H234V121H211Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M222 99V120M212 110H233" stroke="#5479AC" stroke-width="1.4"/><path d="M112 119Q112 112 118 112H135V151H112Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M180 119Q180 112 186 112H203V151H180Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="131" cy="132" r="2" fill="#F2C14E"/><circle cx="184" cy="132" r="2" fill="#F2C14E"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M153 82V151" stroke="#1E2A3B" stroke-width="2"/><path d="M148 85V147" stroke="#F2C14E" stroke-width="1.5"/><path d="M55 159H137M169 159H248" stroke="#F3ECE1" stroke-width="2"/><path d="M68 102H90M211 102H233" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="153" cy="107" rx="7" ry="39" fill="#FEF3C7" opacity=".34"/><path d="M150 93V127" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="3 3"/></g>
+</svg>

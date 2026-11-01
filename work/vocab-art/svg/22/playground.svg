@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: playground (Noun)
+  CONTEXTUAL_DEFINITION: An outdoor area where children can play and run around.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: A broad fenced play area with children and open ground communicates the place as a whole, without focusing on one piece of equipment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open sky and leafy trees beyond a low fence.
+    - Context_Layer: Two children play in the broad open area.
+    - Focal_Layer: Wide playground space with resilient ground and path.
+    - Details_Layer: Bench, ball, shrubs, and entrance gate.
+    - Lighting_Layer: Sunny atmosphere and soft tree shadows.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:playground" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="playground-bg" x2="0" y2="1"><stop stop-color="#CFE4F7"/><stop offset="1" stop-color="#F7F3E8"/></linearGradient><filter id="playground-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#playground-bg)"/><circle cx="253" cy="31" r="16" fill="#FEF9C3" opacity=".9"/><path d="M0 99Q26 78 49 99Q74 73 95 100Q121 74 144 100Q165 78 190 101Q218 75 239 100Q265 77 304 100V139H0Z" fill="#91A77C"/><path d="M0 138H304V192H0Z" fill="#D9D2C3"/><path d="M0 145Q74 139 152 145T304 142V192H0Z" fill="#A7B98C"/></g>
+  <g id="layer-context"><path d="M0 123H304M0 133H304" stroke="#A98A64" stroke-width="2"/><path d="M20 119V150M42 119V150M64 119V150M86 119V150M108 119V150M196 119V150M218 119V150M240 119V150M262 119V150M284 119V150" stroke="#A98A64" stroke-width="1.5"/><path d="M137 128V151M167 128V151M137 128Q152 121 167 128" fill="none" stroke="#315782" stroke-width="2"/><path d="M133 150H171" stroke="#315782" stroke-width="3"/><path d="M16 162Q29 156 42 162M256 161Q270 155 286 162" fill="none" stroke="#77916B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#playground-shadow)"><path d="M0 177Q76 163 150 176T304 172V192H0Z" fill="#91A77C"/><ellipse cx="108" cy="166" rx="12" ry="5" fill="#748866" opacity=".6"/><ellipse cx="207" cy="166" rx="12" ry="5" fill="#748866" opacity=".6"/><circle cx="90" cy="123" r="9" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M81 122Q82 111 91 111Q99 112 100 123L96 126Q94 118 89 118Q85 118 83 127Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M81 133Q90 128 100 134L105 151L98 155L85 152L78 145Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M84 151L75 164M99 152L107 161M81 136L69 145M100 137L110 143" fill="none" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/><circle cx="216" cy="126" r="9" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M207 125Q208 114 217 114Q225 115 226 126L222 129Q220 121 215 121Q211 121 209 130Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M207 136Q216 131 226 137L231 153L224 157L211 154L204 148Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M210 153L202 163M225 154L235 162M207 139L196 145M226 140L237 145" fill="none" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="153" cy="161" r="9" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M147 157Q153 152 159 157" fill="none" stroke="#F5B6A9" stroke-width="1.5"/><path d="M113 174L121 170M181 174L189 170M67 165L74 162M237 169L245 165" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M23 100Q34 84 45 100M250 99Q261 83 274 100" fill="#77916B" stroke="#55704D" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><path d="M27 40Q104 18 181 40M119 57Q178 42 232 56" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".72"/><ellipse cx="150" cy="147" rx="130" ry="40" fill="#FEF9C3" opacity=".07"/></g>
+</svg>

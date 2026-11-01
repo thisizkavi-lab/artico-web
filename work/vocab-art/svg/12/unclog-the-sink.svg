@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: unclog the sink (Verb phrase)
+  CONTEXTUAL_DEFINITION: Clear a blocked sink drain, often by pumping a plunger over the plughole.
+  PEDAGOGICAL_ARCHETYPE: 4 — Tool, force, and restored flow
+  SYNONYM_GUARD: A rubber-cup plunger seals over the drain and makes water swirl away; unblock-the-sink shows a drain snake removing a solid plug.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom basin over a small vanity with a visible drain opening.
+    - Context_Layer: Curved water surface narrows toward the open drain and clear drops exit the pipe below.
+    - Focal_Layer: Plunger with wooden handle and broad rubber cup presses into the sink at x=157,y=94.
+    - Details_Layer: Drain ring, water spiral, splashes, pipe joint, handle grain, and cup rim.
+    - Lighting_Layer: Cool highlights on the basin and small glints in the draining water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:unclog the sink" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#CBD5E1;--c-primary:#CE3D4E;--c-secondary:#9E2636;--c-accent:#8EC8E8;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="bathroom-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF1"/></linearGradient>
+    <linearGradient id="basin-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CBD5E1"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bathroom-grad)"/><path d="M0 149H304V192H0Z" fill="#D9C6AB"/><path d="M48 48H256L241 112Q237 128 220 132H83Q66 128 62 112Z" fill="url(#basin-grad)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M61 107Q92 118 151 117Q210 118 242 107" fill="none" stroke="#94A3B8" stroke-width="1.5"/><path d="M42 46H262" stroke="#C88446" stroke-width="5"/><path d="M0 151H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="152" cy="163" rx="78" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M143 125V138Q143 147 155 147H173Q184 147 184 158" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M143 125V138Q143 147 155 147H173Q184 147 184 158" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/><circle cx="155" cy="116" r="8" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2"/><circle cx="155" cy="116" r="3" fill="#1E2A3B"/><path d="M142 157Q150 153 158 157" fill="none" stroke="#8EC8E8" stroke-width="2"/><path d="M81 60H105V76H81Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M87 60V52H100V60" fill="none" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M150 34V88" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M150 34V88" stroke="#C88446" stroke-width="6" stroke-linecap="round"/><path d="M148 41V82" stroke="#E3AC77" stroke-width="1.6" stroke-linecap="round"/><path d="M150 86Q136 84 126 94Q120 104 127 111Q138 118 150 112Q162 118 173 111Q180 104 174 94Q164 84 150 86Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.5"/><path d="M132 101Q150 95 168 101" fill="none" stroke="#F1A4AA" stroke-width="1.8"/><path d="M136 110Q150 116 164 110" fill="none" stroke="#9E2636" stroke-width="1.3"/><path d="M151 36Q151 26 162 26Q172 26 172 37" fill="none" stroke="#1E2A3B" stroke-width="2.2"/><path d="M162 26V20" stroke="#1E2A3B" stroke-width="2.2"/><path d="M128 117Q135 121 144 120M168 120Q176 121 181 117" fill="none" stroke="#8EC8E8" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M136 103Q143 95 151 98Q159 95 166 103" fill="none" stroke="#DCECFB" stroke-width="1.7"/><path d="M141 101Q147 105 152 101Q158 105 163 101" fill="none" stroke="#5479AC" stroke-width="1.2"/><circle cx="122" cy="92" r="2.2" fill="#8EC8E8"/><circle cx="179" cy="92" r="2.2" fill="#8EC8E8"/><path d="M126 87L130 91M175 88L171 92" stroke="#8EC8E8" stroke-width="1.5"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M60 53H103" stroke="#FFFFFF" stroke-width="1.7" opacity=".75"/><path d="M135 98Q150 92 165 98" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M151 42V74" stroke="#F2A472" stroke-width="1.4" opacity=".55"/></g>
+</svg>

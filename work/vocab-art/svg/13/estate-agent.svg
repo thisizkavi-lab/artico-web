@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: estate agent (Noun phrase)
+  CONTEXTUAL_DEFINITION: A professional who helps people buy, rent, or sell a home.
+  PEDAGOGICAL_ARCHETYPE: 3 — Role in a viewing scene
+  SYNONYM_GUARD: Show the agent guiding prospective renters through a real home viewing; realtor is shown presenting a model home at a desk.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front room of a home with a visible doorway and window.
+    - Context_Layer: Prospective renter pair observes the room.
+    - Focal_Layer: Agent gestures toward the home while holding a key ring.
+    - Details_Layer: Unmarked folder and floor plan without text.
+    - Lighting_Layer: Bright doorway frames the professional role.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:estate agent" data-archetype="professional-scene">
+  <defs><linearGradient id="room" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M22 27H82V80H22Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.7"/><path d="M52 28V79M23 53H81" stroke="#FFFFFF" stroke-width="2"/><path d="M258 31V145M285 31V145M258 31H285" stroke="#64748B" stroke-width="2"/><ellipse cx="155" cy="164" rx="118" ry="6" fill="#9B8E7B" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M98 120H208V145H98Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M108 124H197M108 130H182M108 136H190" stroke="#CBD5E1" stroke-width="1.2"/><path d="M39 126Q39 119 46 119H62Q69 119 69 126V145H39Z" fill="#B9C4D0" stroke="#64748B" stroke-width="1.5"/><circle cx="53" cy="77" r="10" fill="#E7B79C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M43 77Q43 65 54 65Q65 66 64 78L59 72H47Z" fill="#3A2E2B"/><path d="M43 91Q53 85 63 91L69 119H38Z" fill="#7B8A9E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M45 93L31 106" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M45 93L31 106" stroke="#F5BFA3" stroke-width="3.5" stroke-linecap="round"/><circle cx="101" cy="80" r="9" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.6"/><path d="M92 79Q92 68 102 68Q112 69 111 81L107 75H95Z" fill="#57463E"/><path d="M92 93Q101 87 111 93L114 119H88Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="127" cy="83" r="9" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.6"/><path d="M118 81Q118 70 127 70Q137 70 136 82L132 76H121Z" fill="#493B36"/><path d="M118 96Q127 89 136 96L140 120H114Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="199" cy="74" r="11" fill="#E7B79C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M189 74Q189 61 200 61Q211 62 210 76L205 69H194Z" fill="#3A2E2B"/><path d="M188 89Q199 82 210 89L216 128H182Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M191 91L163 103L145 99" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M191 91L163 103L145 99" fill="none" stroke="#E7B79C" stroke-width="4.5" stroke-linecap="round"/><path d="M205 91L219 105" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M205 91L219 105" fill="none" stroke="#E7B79C" stroke-width="4.5" stroke-linecap="round"/><path d="M186 127L181 151M208 127L215 151" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M186 127L181 151M208 127L215 151" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M143 98L150 97L150 104L143 104Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="150" cy="101" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M147 98Q158 84 168 85" fill="none" stroke="#4A72B2" stroke-width="1.7" stroke-dasharray="3 3"/><path d="M177 91L184 96M171 96L177 101" stroke="#F2C14E" stroke-width="1.5"/><path d="M108 125H181" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="200" cy="73" r="18" fill="#FEF3C7" opacity=".22"/><path d="M197 72Q201 69 204 72" fill="none" stroke="#FFFFFF" stroke-width="1.4"/></g>
+</svg>

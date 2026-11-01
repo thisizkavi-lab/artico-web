@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: kilometer / kilometre
+  CONTEXTUAL_DEFINITION: A metric unit for measuring a route between places.
+  PEDAGOGICAL_ART_DIRECTOR: Show a measured intertown road segment with two location markers and a metric-style scale bar, without digits or labels.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make the unit a route distance on a map; use a substantial town-to-town span rather than a tiny object length.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A curving road crosses a small regional map from one settlement marker to another; a straight scale bar below has a single long highlighted interval and no numbers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:kilometer / kilometre" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="km-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6EEDD"/><stop offset="1" stop-color="#C9DCC3"/></linearGradient>
+  <linearGradient id="km-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#768798"/><stop offset="1" stop-color="#536579"/></linearGradient>
+  <linearGradient id="km-bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#7EA3D5"/></linearGradient>
+  <filter id="km-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E4ECE0"/><path d="M14 18H290V159H14Z" fill="url(#km-land)" stroke="#718177" stroke-width="1.4"/><path d="M17 65Q45 42 75 57T130 60T180 47T238 61T287 48M18 128Q53 109 82 123T137 119T190 131T241 115T286 127" fill="none" stroke="#9FBB94" stroke-width="2"/><path d="M48 76C76 49 100 52 119 82S159 125 184 90S222 54 254 78" fill="none" stroke="#EEECE4" stroke-width="18" stroke-linecap="round"/><path d="M48 76C76 49 100 52 119 82S159 125 184 90S222 54 254 78" fill="none" stroke="url(#km-road)" stroke-width="11" stroke-linecap="round"/><path d="M51 75C79 51 99 56 116 82S159 119 182 90S221 57 251 77" fill="none" stroke="#F8F5EA" stroke-width="1.2" stroke-dasharray="5 6"/></g>
+ <g id="layer-context"><rect x="22" y="34" width="35" height="26" rx="3" fill="#D7C2A4" stroke="#766857" stroke-width="1.3"/><path d="M18 38L39 22L61 38Z" fill="#92745A" stroke="#1E2A3B" stroke-width="1.1"/><rect x="239" y="30" width="35" height="28" rx="3" fill="#B7C9CC" stroke="#60747D" stroke-width="1.3"/><path d="M235 34L256 17L278 34Z" fill="#697D85" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="83" cy="112" r="10" fill="#7FA87A" stroke="#486750" stroke-width="1.3"/><circle cx="217" cy="111" r="10" fill="#7FA87A" stroke="#486750" stroke-width="1.3"/><path d="M28 102H49M254 104H277" stroke="#87A27D" stroke-width="1.5"/></g>
+ <g id="layer-focal" filter="url(#km-shadow)"><path d="M50 63L61 94L50 89L39 94Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="50" cy="65" r="7" fill="#F2C14E" stroke="#8A663A" stroke-width="1.4"/><path d="M254 65L265 96L254 91L243 96Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="254" cy="67" r="7" fill="#78A0D8" stroke="#314E78" stroke-width="1.4"/><path d="M50 145V153H254V145" fill="none" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 149H254" stroke="url(#km-bar)" stroke-width="8" stroke-linecap="round"/><path d="M50 140V159M254 140V159" stroke="#1E2A3B" stroke-width="2.2"/><path d="M151 143V155" stroke="#F2C14E" stroke-width="2.2"/></g>
+ <g id="layer-details"><circle cx="99" cy="44" r="4" fill="#7FA87A" stroke="#486750" stroke-width="1.1"/><circle cx="207" cy="134" r="4" fill="#7FA87A" stroke="#486750" stroke-width="1.1"/><path d="M73 92L91 103M196 72L211 63" stroke="#FFFFFF" stroke-width="1.5"/><path d="M30 174H83M221 174H277" stroke="#A6B5A6" stroke-width="1.2"/><circle cx="152" cy="149" r="3" fill="#F2C14E"/><path d="M58 31H76M230 27H251" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="86" rx="110" ry="54" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".42"/><path d="M17 20H287" stroke="#FFFFFF" stroke-width="1.2" opacity=".65"/><circle cx="50" cy="65" r="13" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".55"/><circle cx="254" cy="67" r="13" fill="none" stroke="#4A72B2" stroke-width="1.1" opacity=".45"/></g>
+</svg>

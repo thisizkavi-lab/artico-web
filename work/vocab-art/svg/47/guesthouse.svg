@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: guesthouse
+  CONTEXTUAL_DEFINITION: A small private house run to provide lodging for visitors.
+  PEDAGOGICAL_ART_DIRECTOR: Show an intimate two-story guest house with a welcoming open doorway, porch lamp, and a traveler's bag at the entrance.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make this a small private lodging house, not a large hotel or a bed-and-breakfast breakfast scene.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact two-story home with two lit guest windows and a small porch occupies center stage; a neatly placed suitcase at the door signals visitor lodging.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:guesthouse" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="guest-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCEBF0"/><stop offset="1" stop-color="#F5EFE4"/></linearGradient>
+  <linearGradient id="guest-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7D8BE"/><stop offset="1" stop-color="#C5A982"/></linearGradient>
+  <linearGradient id="guest-window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7E4A9"/><stop offset="1" stop-color="#D6A15B"/></linearGradient>
+  <filter id="guest-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#guest-sky)"/><path d="M0 147Q69 132 129 147T245 143T304 147V192H0Z" fill="#AABF99"/><path d="M0 165Q80 150 155 164T304 161V192H0Z" fill="#91AF89"/><circle cx="31" cy="105" r="17" fill="#7FA87A" stroke="#486750" stroke-width="1.4"/><circle cx="275" cy="105" r="20" fill="#7FA87A" stroke="#486750" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M26 87L149 39L275 87Z" fill="#785C49" stroke="#1E2A3B" stroke-width="2"/><path d="M43 86H262V151H43Z" fill="#A9825D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M43 99H262M43 112H262" stroke="#D6B68B" stroke-width="2"/><path d="M28 88H277" stroke="#3E4A4A" stroke-width="6"/><path d="M111 151V129H189V151" fill="#6B5140" stroke="#1E2A3B" stroke-width="1.5"/></g>
+ <g id="layer-focal" filter="url(#guest-shadow)"><path d="M57 91H242V153H57Z" fill="url(#guest-wall)" stroke="#1E2A3B" stroke-width="1.8"/><rect x="76" y="68" width="43" height="38" rx="2" fill="url(#guest-window)" stroke="#384F5A" stroke-width="1.6"/><path d="M97.5 68V106M76 87H119" stroke="#6B5848" stroke-width="1.5"/><rect x="182" y="68" width="43" height="38" rx="2" fill="url(#guest-window)" stroke="#384F5A" stroke-width="1.6"/><path d="M203.5 68V106M182 87H225" stroke="#6B5848" stroke-width="1.5"/><path d="M131 104V76Q131 68 151 68Q171 68 171 76V104Z" fill="#765944" stroke="#1E2A3B" stroke-width="1.5"/><path d="M136 84H166V101H136Z" fill="#BCD7D9" stroke="#4F6972" stroke-width="1"/><circle cx="166" cy="111" r="2.5" fill="#F2C14E"/><rect x="111" y="128" width="81" height="7" fill="#806044" stroke="#1E2A3B" stroke-width="1.3"/><path d="M119 135V152M184 135V152" stroke="#604A39" stroke-width="3"/><path d="M104 151H201" stroke="#3E4C4A" stroke-width="3"/></g>
+ <g id="layer-details"><rect x="215" y="116" width="26" height="35" rx="2" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M221 116V110Q221 106 228 106Q235 106 235 110V116" fill="none" stroke="#1E2A3B" stroke-width="2"/><circle cx="234" cy="136" r="2" fill="#F2C14E"/><path d="M38 83H81M222 83H269" stroke="#D7C3A3" stroke-width="1.2"/><circle cx="122" cy="96" r="2" fill="#F2C14E"/><circle cx="180" cy="96" r="2" fill="#F2C14E"/><ellipse cx="152" cy="160" rx="108" ry="7" fill="#526274" opacity=".18"/></g>
+ <g id="layer-lighting"><path d="M30 87L149 42L271 87" fill="none" stroke="#D7C1A0" stroke-width="1.3"/><ellipse cx="152" cy="114" rx="115" ry="52" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".42"/><circle cx="229" cy="95" r="8" fill="#F2C14E" opacity=".3"/></g>
+</svg>

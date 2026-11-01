@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: marbles (Noun)
+  CONTEXTUAL_DEFINITION: Small glass balls used in children's games.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Several tiny translucent glass spheres with colored swirls sit together, distinct from one large ball or board-game counters.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Neutral tabletop and warm playroom wall.
+    - Context_Layer: A shallow ring marks a simple marble-playing area.
+    - Focal_Layer: Cluster of translucent glass marbles with internal swirls.
+    - Details_Layer: Reflections and a single larger shooter marble.
+    - Lighting_Layer: Bright points of reflected light through the glass.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:marbles" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="marbles-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="marble-blue" cx="32%" cy="25%" r="75%"><stop stop-color="#FFFFFF"/><stop offset=".35" stop-color="#A8D2E8"/><stop offset=".78" stop-color="#5B91B4"/><stop offset="1" stop-color="#315782"/></radialGradient><radialGradient id="marble-red" cx="32%" cy="25%" r="75%"><stop stop-color="#FFFFFF"/><stop offset=".36" stop-color="#F4C0A4"/><stop offset=".76" stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></radialGradient><radialGradient id="marble-green" cx="32%" cy="25%" r="75%"><stop stop-color="#FFFFFF"/><stop offset=".34" stop-color="#C8D8A4"/><stop offset=".77" stop-color="#91A77C"/><stop offset="1" stop-color="#55704D"/></radialGradient><filter id="marbles-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#marbles-bg)"/><path d="M0 151Q78 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 31H104V87H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M63 32V86M23 59H103" stroke="#FFFFFF" stroke-width="2.5"/><ellipse cx="151" cy="150" rx="95" ry="22" fill="none" stroke="#A98A64" stroke-width="2" opacity=".7"/></g>
+  <g id="layer-context"><path d="M15 158Q31 153 46 158M258 159Q273 154 289 159" fill="none" stroke="#91A77C" stroke-width="4" stroke-linecap="round"/><path d="M26 160L43 154M275 160L259 154" stroke="#C98961" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#marbles-shadow)"><circle cx="116" cy="127" r="22" fill="url(#marble-blue)" stroke="#315782" stroke-width="1.6"/><circle cx="157" cy="127" r="22" fill="url(#marble-red)" stroke="#A95059" stroke-width="1.6"/><circle cx="198" cy="127" r="22" fill="url(#marble-green)" stroke="#55704D" stroke-width="1.6"/><circle cx="136" cy="92" r="22" fill="url(#marble-green)" stroke="#55704D" stroke-width="1.6"/><circle cx="178" cy="92" r="22" fill="url(#marble-blue)" stroke="#315782" stroke-width="1.6"/><circle cx="157" cy="61" r="23" fill="url(#marble-red)" stroke="#A95059" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M105 127Q115 111 127 126Q118 140 106 132Z" fill="none" stroke="#F9F4D8" stroke-width="3" opacity=".9"/><path d="M146 127Q157 111 169 126Q160 140 147 132Z" fill="none" stroke="#F3B9A8" stroke-width="3" opacity=".9"/><path d="M186 127Q197 111 209 126Q200 140 188 132Z" fill="none" stroke="#E2EDC8" stroke-width="3" opacity=".9"/><path d="M126 92Q137 76 148 91Q138 105 127 97Z" fill="none" stroke="#E2EDC8" stroke-width="3" opacity=".9"/><path d="M168 92Q179 76 190 91Q180 105 169 97Z" fill="none" stroke="#D3E5F2" stroke-width="3" opacity=".9"/><path d="M145 61Q157 44 170 60Q159 74 147 66Z" fill="none" stroke="#F3B9A8" stroke-width="3" opacity=".9"/><g fill="#FFFFFF" opacity=".86"><ellipse cx="108" cy="119" rx="4" ry="2.2" transform="rotate(-32 108 119)"/><ellipse cx="149" cy="119" rx="4" ry="2.2" transform="rotate(-32 149 119)"/><ellipse cx="149" cy="53" rx="4.5" ry="2.4" transform="rotate(-32 149 53)"/></g></g>
+  <g id="layer-lighting"><ellipse cx="156" cy="98" rx="95" ry="67" fill="#FEF9C3" opacity=".1"/><path d="M94 42Q151 24 215 42" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".72"/></g>
+</svg>

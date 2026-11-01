@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: snowed under (work idiom)
+  CONTEXTUAL_DEFINITION: Have so much work that it feels overwhelming.
+  PEDAGOGICAL_ART_DIRECTOR: Use a paper avalanche cascading over a desk to make the work burden feel sudden and excessive; do not show literal snow.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment workload action
+  SYNONYM_GUARD: Show a dynamic onslaught of office paperwork, distinct from a static paper level up to someone's ears or eyes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a seated worker at x=125..180,y=91..152. Have a high cascade of folders and loose sheets fall diagonally from x=186,y=33 over the desk at x=61..239,y=142, burying the worker's shoulders but leaving one arm raised above the heap.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:snowed under" data-archetype="workload-avalanche">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="snow-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <linearGradient id="snow-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="snow-focus"><stop stop-color="#EEF4FA" stop-opacity=".86"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="snow-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="snow-worker" d="M126 128 Q127 107 141 101 L143 91 Q138 85 141 76 Q148 66 158 70 Q168 74 164 84 L161 93 Q175 99 177 121 L172 137 H131 Z"/>
+    <clipPath id="snow-worker-clip"><use href="#snow-worker"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="151" cy="165" rx="112" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Office ceiling and a desk already crowded with reports -->
+  <g id="layer-context"><path d="M32 148 H272" stroke="#C88446" stroke-width="2"/><path d="M45 135 H258 V147 H45 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="1.8"/><path d="M58 147 V155 M244 147 V155" stroke="#965D28" stroke-width="2.5"/><rect x="39" y="64" width="45" height="38" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.4"/><path d="M45 72 H78 M45 79 H73 M45 86 H78" stroke="#CBD5E1" stroke-width="1.1"/><path d="M215 33 H257 V64 H215 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M221 41 H250 M221 48 H247" stroke="#A8D4A2" stroke-width="1.1"/></g>
+  <!-- 3. A moving avalanche of work spills over the overwhelmed employee -->
+  <g id="layer-focal" filter="url(#snow-shadow)"><use href="#snow-worker" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><g clip-path="url(#snow-worker-clip)"><path d="M122 104 Q152 92 181 107 V142 H122Z" fill="#3D5F91"/></g><ellipse cx="153" cy="80" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M145 78 Q146 68 154 68 Q162 69 163 77 Q157 72 151 74 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1"/><use href="#snow-worker" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M135 111 L121 101 L110 88 L116 82 L133 93 L143 101 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M112 83 Q107 80 103 84 L108 90 L115 89 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M166 109 L179 104 L193 95 L199 101 L186 116 L173 122 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M193 96 Q198 92 203 96 L200 103 L194 104 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M136 130 L134 149 H144 L151 134 M158 132 L163 150 H173 L173 130" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.6"/><path d="M131 148 H145 L146 153 H129 Z M162 148 H175 L177 153 H161 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M194 57 L229 49 L236 67 L201 75 Z" fill="url(#snow-folder)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M199 63 L225 57" stroke="#DCECFB" stroke-width="1.2"/><path d="M173 70 L202 62 L210 80 L181 88 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.5"/><path d="M181 75 L201 70" stroke="#965D28" stroke-width="1.1"/><path d="M188 87 L220 79 L226 96 L194 104 Z" fill="url(#snow-paper)" stroke="#64748B" stroke-width="1.4"/><path d="M193 91 L217 85 M195 96 L213 91" stroke="#94A3B8" stroke-width="1"/><path d="M164 100 L197 92 L203 109 L169 117 Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M170 105 H194 M171 110 H188" stroke="#94A3B8" stroke-width="1"/><path d="M130 117 L165 110 L171 126 L136 134 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M137 122 H162 M138 127 H157" stroke="#A8D4A2" stroke-width="1"/></g>
+  <!-- 4. More loose sheets continue falling from above -->
+  <g id="layer-details"><path d="M182 45 L194 40 L201 55 L189 60 Z M211 72 L224 68 L229 82 L216 86 Z M103 108 L115 104 L120 116 L108 120 Z" fill="url(#snow-paper)" stroke="#64748B" stroke-width="1.2"/><path d="M185 48 L193 45 M214 76 L223 73 M106 111 L114 108" stroke="#94A3B8" stroke-width=".9"/><path d="M202 32 C195 48 190 58 184 70" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M180 66 L184 73 L188 66 Z" fill="#4A72B2"/><path d="M229 91 L235 97 M219 105 L225 110 M95 93 L101 99" stroke="#8EB0DE" stroke-width="1.8" stroke-linecap="round"/></g>
+  <!-- 5. Soft pile halo emphasizes the overwhelming paper load -->
+  <g id="layer-lighting"><ellipse cx="172" cy="101" rx="81" ry="59" fill="url(#snow-focus)"/><ellipse cx="171" cy="104" rx="67" ry="45" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 5" opacity=".68"/><path d="M146 72 H155" stroke="#F5BFA3" stroke-width="1.5" stroke-linecap="round"/></g>
+</svg>

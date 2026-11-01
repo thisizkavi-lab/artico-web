@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: selfish (Adjective)
+  CONTEXTUAL_DEFINITION: Putting one's own wants ahead of other people's needs or share.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: One person gathers all the shared snacks into their own place setting while peers receive none; unlike mean, the focus is self-centered hoarding.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared snack table.
+    - Context_Layer: Two peers with empty plates at either side.
+    - Focal_Layer: Central person pulls the whole shared bowl toward themselves.
+    - Details_Layer: Overfull personal plate, reaching peers and blocking arm.
+    - Lighting_Layer: Neutral focus on the uneven distribution.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:selfish" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9A441;--c-secondary:#B9875D;--c-accent:#D9857F;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="table" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#B9875D"/><stop offset="1" stop-color="#805333"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 150Q80 143 152 150T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="154" cy="168" rx="130" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M20 116H284L276 130H29Z" fill="url(#table)" stroke="#1E2A3B" stroke-width="2"/><path d="M42 130V159M265 130V159" stroke="#805333" stroke-width="5" stroke-linecap="round"/><circle cx="54" cy="62" r="16" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M38 62Q39 45 54 46Q70 47 70 63L64 67H41Z" fill="#35404B"/><path d="M35 84Q54 77 72 84L78 112H31Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="56" cy="108" rx="18" ry="5" fill="#FAF8F3" stroke="#7B8A9E" stroke-width="1.5"/><circle cx="253" cy="62" r="16" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M237 62Q238 45 254 46Q270 47 269 63L263 67H240Z" fill="#805333"/><path d="M234 84Q253 77 271 84L277 112H230Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="252" cy="108" rx="18" ry="5" fill="#FAF8F3" stroke="#7B8A9E" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="153" cy="88" rx="63" ry="66" fill="#FEF3C7" opacity=".56"/><circle cx="153" cy="51" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M133 51Q133 29 153 30Q173 31 173 53L166 58Q162 42 151 42Q141 43 135 59Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M129 77Q153 70 177 77L184 111H122Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.5"/><path d="M133 85L115 99L99 98M173 85L191 99L208 100" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M133 85L116 98L100 98M173 85L190 98L207 99" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><ellipse cx="157" cy="112" rx="33" ry="8" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="143" cy="105" r="6" fill="#D9A441" stroke="#805333" stroke-width="1.2"/><circle cx="158" cy="103" r="7" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><circle cx="171" cy="107" r="5" fill="#829A83" stroke="#56725E" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M143 52Q147 55 151 52M158 52Q162 55 166 52" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M145 63Q153 66 161 63" fill="none" stroke="#805333" stroke-width="1.5"/><path d="M81 101L91 96M221 101L212 96" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M110 78L105 73M194 78L199 73" stroke="#D9857F" stroke-width="2"/><circle cx="93" cy="107" r="2.1" fill="#D9A441"/><circle cx="215" cy="107" r="2.1" fill="#D9A441"/><path d="M134 93Q153 102 173 93" fill="none" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><path d="M143 35Q153 31 163 35" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".65"/><ellipse cx="153" cy="87" rx="63" ry="66" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

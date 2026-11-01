@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: studying (Noun / gerund)
+  CONTEXTUAL_DEFINITION: The activity of learning by reading and making notes.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Quiet independent learning in a library cubicle; no home setting or subject-specific model, distinguishing it from homework and study a subject.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm library nook with shelves and a window.
+    - Context_Layer: Books, desk lamp, and an open reference book.
+    - Focal_Layer: Student leans over a notebook, reading and taking notes.
+    - Details_Layer: Pencil, bookmark, and cup of pencils.
+    - Lighting_Layer: A warm lamp pool emphasizes sustained concentration.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:studying" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="studying-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="studying-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#studying-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H87V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M53 25V74M21 49H86" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M219 26H295V77H219Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.5"/><path d="M225 33H243V68H225ZM247 30H266V68H247ZM270 35H289V68H270Z" fill="#5479AC" stroke="#315782" stroke-width="1"/><path d="M228 38H241M228 45H241M250 36H263M250 43H263M273 41H286M273 48H286" stroke="#DCECFB" stroke-width="1.4"/><path d="M38 120H69V136H38Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M43 124H63" stroke="#F9CED0" stroke-width="1.2"/><path d="M64 115L76 97L91 97L99 115" fill="none" stroke="#64748B" stroke-width="2"/><path d="M79 97L83 82L93 82L98 97" fill="#D9A441" stroke="#8D6138" stroke-width="1.4"/><path d="M82 83L88 68" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#studying-shadow)"><path d="M61 112H251V121H61Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M73 121V149M240 121V149" stroke="#8D765A" stroke-width="3"/><path d="M142 93L190 96L187 133L142 131Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.4"/><path d="M190 96L224 91L228 128L187 133Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.5"/><path d="M149 103L181 105M149 111L181 113M149 119L179 121M198 102L219 99M198 111L219 108M199 120L220 117" stroke="#88A9D0" stroke-width="1.2"/><circle cx="111" cy="68" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M99 68Q100 54 112 55Q124 56 123 69L117 72Q114 62 109 63Q104 64 102 74Z" fill="#27364B"/><path d="M95 85Q111 79 127 86L137 105L124 116L102 109Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M102 87L126 99L153 102" fill="none" stroke="#1E2A3B" stroke-width="4.8" stroke-linecap="round"/><path d="M102 87L126 99L153 102" fill="none" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/><path d="M105 111L97 136L83 139M125 112L138 137L160 139" fill="none" stroke="#315782" stroke-width="6" stroke-linecap="round"/><path d="M105 111L97 136L83 139M125 112L138 137L160 139" fill="none" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M151 98L165 87" stroke="#D9A441" stroke-width="3.2" stroke-linecap="round"/><path d="M165 87L168 85" stroke="#8D6138" stroke-width="1.2"/><path d="M175 76V84" stroke="#D9A441" stroke-width="2"/><path d="M229 104H257V127H229Z" fill="#5479AC" stroke="#315782" stroke-width="1.1"/><path d="M234 103V91M241 103V87M248 103V93" stroke="#D9857F" stroke-width="1.8" stroke-linecap="round"/><circle cx="229" cy="101" r="4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="174" cy="98" rx="89" ry="64" fill="#FEF9C3" opacity=".13"/><path d="M20 25H87V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M142 93L190 96L187 133" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

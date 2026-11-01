@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: muscular (Adjective)
+  CONTEXTUAL_DEFINITION: Having strong, clearly developed muscles.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust
+  SYNONYM_GUARD: Show a healthy flexed arm and defined shoulders without bodybuilder exaggeration.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Studio paper.
+    - Context_Layer: Muted shirt edge.
+    - Focal_Layer: Athletic person flexing one upper arm.
+    - Details_Layer: Bicep contour and shoulder shape.
+    - Lighting_Layer: Warm highlight on muscle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:muscular" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="103" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="154" cy="91" rx="113" ry="75" fill="#FEF3C7" opacity=".37"/><path d="M73 166Q80 130 120 122H183Q222 130 231 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M101 156Q94 123 98 87Q101 50 151 45Q202 50 205 87Q209 123 201 156Z" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M93 87Q90 47 137 37Q173 34 198 55Q211 71 203 96L195 104Q191 77 175 70Q151 81 119 74Q107 79 103 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M100 137Q76 121 69 96Q66 82 75 77Q85 72 92 85L105 105Q114 94 127 100Q138 106 133 121L120 148Z" fill="#C98961" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M74 86Q79 73 88 77Q101 83 106 104Q98 115 89 113Q79 106 74 96Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 98Q129 93 139 98M164 98Q174 93 184 98" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 105Q130 108 138 105M166 105Q174 108 181 105" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M84 92Q94 95 98 105M86 102Q94 106 101 110" fill="none" stroke="#A86F45" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M52 82Q45 68 51 56M134 93Q143 78 140 65" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+</svg>

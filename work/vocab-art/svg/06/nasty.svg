@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: nasty (Adjective)
+  CONTEXTUAL_DEFINITION: Unpleasant and revolting, shown by a foul-smelling overflowing rubbish bin.
+  PEDAGOGICAL_ARCHETYPE: 3 (Unpleasant object plus a recoil)
+  SYNONYM_GUARD: The person waves away the smell from a dirty bin; this is a foul environment, not moldy food itself.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Narrow alley with pale wall and pavement.
+    - Context_Layer: Resident wrinkles their nose and covers it.
+    - Focal_Layer: Overfull trash bin with litter and tipped lid.
+    - Details_Layer: Curled odor trails and small flies.
+    - Lighting_Layer: Muted gray-green cast with a clean card rim.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:nasty" data-archetype="expressive-bust">
+  <defs><linearGradient id="alley" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9EFF5"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#alley)"/><path d="M0 143 Q151 137 304 145 L304 192 L0 192Z" fill="#CBD5C1"/><rect x="22" y="28" width="260" height="75" rx="6" fill="#E5E9E0" stroke="#94A3B8" stroke-width="1.5"/><path d="M22 65 L282 65 M92 28 L92 103 M158 28 L158 103 M223 28 L223 103" stroke="#F1F5F9" stroke-width="2"/><ellipse cx="155" cy="162" rx="109" ry="8" fill="#B8C2AE"/></g>
+  <g id="layer-context"><path d="M29 149 Q32 122 52 119 Q73 122 75 149Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="52" cy="103" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M34 102 Q35 81 53 83 Q71 85 70 104 Q61 93 51 94Z" fill="#27364B"/><path d="M42 104 Q46 100 49 104 M55 104 Q59 100 62 104" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M43 114 Q51 110 59 114" fill="none" stroke="#A34F47" stroke-width="2"/><path d="M39 111 Q30 107 28 98" fill="none" stroke="#F5BFA3" stroke-width="7" stroke-linecap="round"/><path d="M70 126 Q86 119 98 113 Q104 111 108 116 Q108 121 102 124 L77 142" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M155 92 L250 92 L243 151 Q201 161 162 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><path d="M150 91 Q202 81 255 92 L248 102 Q202 108 156 102Z" fill="#7B8A9E" stroke="#1E2A3B" stroke-width="2.3"/><path d="M177 89 L170 79 L183 75 L191 89 M210 87 L218 76 L232 82 L229 91" fill="#C88446" stroke="#8D552E" stroke-width="1.7"/><path d="M163 117 Q202 124 246 116 M165 134 Q202 141 244 134" stroke="#3D5F91" stroke-width="2"/><path d="M253 99 L267 101 L266 112 L251 108Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.6"/><path d="M202 155 L202 162 M230 153 L231 161" stroke="#27364B" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M121 84 Q112 77 119 68 M131 86 Q124 80 130 72 M142 83 Q136 77 142 70" fill="none" stroke="#527748" stroke-width="2.6" stroke-linecap="round"/><path d="M269 77 Q273 72 277 77 M276 75 L281 71 M265 85 L269 81" stroke="#27364B" stroke-width="1.6" stroke-linecap="round"/><path d="M119 103 L125 93 L131 103 L141 108 L131 113 L125 123 L119 113 L109 108Z" fill="#7FB07A"/></g>
+  <g id="layer-lighting"><path d="M28 34 Q75 30 119 37 M168 102 Q208 107 239 100" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

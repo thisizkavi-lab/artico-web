@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: mountain bike (Noun)
+  CONTEXTUAL_DEFINITION: A sturdy bicycle with wide knobby tires and suspension for rough trails.
+  PEDAGOGICAL_ART_DIRECTOR: Show one complete trail bike in profile with visibly wide treaded tires and a front suspension fork.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a pedal-powered bicycle with broad knobby tires, not a road racing bike or motorbike.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Side-on blue mountain bike on an uneven woodland path, broad treaded wheels, fork springs and triangular frame.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:mountain bike" data-archetype="mountain-bicycle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="mb-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="mb-frame" x2="1" y2="1"><stop stop-color="#82ACAF"/><stop offset="1" stop-color="#426D80"/></linearGradient><linearGradient id="mb-tire" x2="0" y2="1"><stop stop-color="#39494A"/><stop offset="1" stop-color="#202D32"/></linearGradient><filter id="mb-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mb-sky)"/><path d="M0 104Q52 83 101 104T202 99T304 102V192H0Z" fill="#A9B994"/><path d="M0 151Q77 140 148 151T304 145V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M19 110L36 67L53 110ZM253 106L272 58L291 106Z" fill="#527764"/><path d="M0 163Q85 150 150 161T304 156" fill="none" stroke="#D1BD94" stroke-width="2"/><ellipse cx="151" cy="157" rx="112" ry="6" fill="#34483D" opacity=".16"/><path d="M24 126l10-5m18 8 9-5m184 8 10-5m20 5 8-4" fill="none" stroke="#D8C69E" stroke-width="1.4"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#mb-shadow)">
+  <circle cx="67" cy="126" r="27" fill="#26363A" stroke="url(#mb-tire)" stroke-width="5"/><circle cx="235" cy="126" r="27" fill="#26363A" stroke="url(#mb-tire)" stroke-width="5"/><circle cx="67" cy="126" r="21" fill="none" stroke="#BCCBC1" stroke-width="1.4"/><circle cx="235" cy="126" r="21" fill="none" stroke="#BCCBC1" stroke-width="1.4"/>
+  <path d="M67 126L119 126L99 91L67 126M99 91L164 91L119 126L67 126M119 126L164 91L235 126" fill="none" stroke="url(#mb-frame)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M164 91L177 66L199 66M235 126L226 91L211 69M193 66h15l5-7h12M158 91L165 78L186 78" fill="none" stroke="#536E70" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M225 91L231 109M225 94L231 112M225 97L231 115M224 100L230 118" fill="none" stroke="#D4B76D" stroke-width="1.2"/><path d="M170 91v-8m5 8v-8m5 8v-8" fill="none" stroke="#D4B76D" stroke-width="1.3"/>
+  <circle cx="119" cy="126" r="5" fill="#D7834B"/><path d="M115 126H105M119 122V130" fill="none" stroke="#344A50" stroke-width="2.2"/><circle cx="177" cy="106" r="2" fill="#FFF8E7"/>
+ </g>
+ <g id="layer-details"><path d="M47 123A21 21 0 0 1 63 103M215 123A21 21 0 0 1 231 103" fill="none" stroke="#E6ECE0" stroke-width="1.4"/><path d="M76 121l-4 4m21-5-4 5m148-4-4 4m21-5-4 5" fill="none" stroke="#E6C678" stroke-width="1.2"/><path d="M101 93l9 2m47-2 8-4" fill="none" stroke="#E7F0E7" stroke-width="1.2"/><circle cx="211" cy="68" r="1.5" fill="#FFF8E7"/><path d="M25 22H278" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".6"/></g>
+ <g id="layer-lighting"><path d="M47 122A22 22 0 0 1 64 104M215 122A22 22 0 0 1 232 104" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".52"/><path d="M100 91L158 91" fill="none" stroke="#D9EEE6" stroke-width="1" opacity=".75"/><circle cx="118" cy="125" r="1.4" fill="#FFE3A1"/></g>
+</svg>

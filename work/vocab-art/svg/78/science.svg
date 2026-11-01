@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: science (Noun)
+  CONTEXTUAL_DEFINITION: The school subject of observing the natural world, asking questions, and testing ideas.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A small classroom investigation combines observation, a plant specimen, and a simple experiment to represent broad science rather than one specialist subject.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: General science classroom with cabinets and window.
+    - Context_Layer: Microscope, plant pot, and specimen tray.
+    - Focal_Layer: Students observe a sprouting seed beside a safe experiment beaker.
+    - Details_Layer: Magnifying glass, bubbles, and connected observation marks.
+    - Lighting_Layer: Clear daylight and gentle green glow around the sprout.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="78:science" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="science-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="science-glow" cx="50%" cy="42%" r="55%"><stop stop-color="#FEF9C3" stop-opacity=".5"/><stop offset="1" stop-color="#FEF9C3" stop-opacity="0"/></radialGradient><filter id="science-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#science-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 28H94V81H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M57 29V80M21 54H93" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 149H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M28 146V112M38 146V112M48 146V112M24 112H52" stroke="#64748B" stroke-width="2"/><path d="M215 145H278" stroke="#8D765A" stroke-width="3"/><path d="M234 145V127M234 132Q223 126 224 116Q235 119 237 130M236 135Q248 130 250 119Q239 121 236 133" fill="#91A77C" stroke="#55704D" stroke-width="1.2"/><path d="M225 145H243L240 154H228Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#science-shadow)"><ellipse cx="153" cy="95" rx="82" ry="71" fill="url(#science-glow)"/><path d="M94 123L114 112L132 119L146 104L164 111L180 101L196 110V139H94Z" fill="#91A77C" stroke="#55704D" stroke-width="1.5"/><path d="M121 116V78M121 94Q107 87 108 73Q121 76 124 90M123 101Q139 94 139 81Q126 84 122 98" fill="#91A77C" stroke="#55704D" stroke-width="1.5"/><path d="M105 124Q122 118 138 124" fill="none" stroke="#D9A441" stroke-width="1.7"/><path d="M177 79H205L201 127Q191 133 181 127Z" fill="#DCECFB" stroke="#315782" stroke-width="1.8"/><path d="M180 108Q190 103 203 108L201 127Q191 132 182 127Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M175 79H208" stroke="#315782" stroke-width="3" stroke-linecap="round"/><path d="M183 95H189M183 101H187" stroke="#5479AC" stroke-width="1.2"/><circle cx="190" cy="115" r="2.7" fill="#FEF9C3"/><circle cx="196" cy="119" r="2" fill="#FEF9C3"/></g>
+  <g id="layer-details"><circle cx="62" cy="88" r="16" fill="#DCECFB" opacity=".78" stroke="#5479AC" stroke-width="1.8"/><path d="M74 100L88 114" stroke="#315782" stroke-width="5" stroke-linecap="round"/><path d="M54 88Q61 78 69 88Q62 99 54 88Z" fill="#91A77C" stroke="#55704D" stroke-width="1.2"/><path d="M124 68L130 62M137 75L145 73M106 64L101 57" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M146 142Q166 136 181 142" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="95" rx="120" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M121 78Q108 71 109 58M121 78Q139 70 141 57" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" opacity=".78"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: compass
+  CONTEXTUAL_DEFINITION: A handheld magnetic instrument used to find direction while traveling.
+  PEDAGOGICAL_ART_DIRECTOR: Show a substantial pocket compass on a folded topographic map; its free blue needle points north while a gold tail indicates the opposite end.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make this a physical magnetic navigation instrument, not a compass rose used only as a direction icon; omit letters and numbers.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A brass-rimmed circular compass centered at (153,92), radius 62, rests over a pale folded map with unlabeled route lines; a two-color needle points vertically.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:compass" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="compass-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8F6ED"/><stop offset="1" stop-color="#DDE8D9"/></linearGradient>
+  <linearGradient id="compass-brass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4D28C"/><stop offset=".45" stop-color="#B8884B"/><stop offset="1" stop-color="#E7C178"/></linearGradient>
+  <radialGradient id="compass-glass"><stop stop-color="#DDEBF0" stop-opacity=".82"/><stop offset="1" stop-color="#A8C4CE" stop-opacity=".58"/></radialGradient>
+  <filter id="compass-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E4ECE0"/><path d="M22 24L258 17L284 160L53 175Z" fill="url(#compass-paper)" stroke="#7F8C7D" stroke-width="1.5"/><path d="M34 53Q87 72 120 47T256 49M48 134Q100 112 136 133T266 118M72 26Q91 60 79 86T94 168M217 24Q194 55 218 91T211 158" fill="none" stroke="#A7BEA0" stroke-width="2"/><path d="M27 94L78 96L113 115M214 64L255 76L277 101" fill="none" stroke="#6D92B7" stroke-width="2.2" stroke-dasharray="6 5"/><path d="M154 21L153 171" stroke="#C5D1C4" stroke-width="1" opacity=".7"/></g>
+ <g id="layer-context"><circle cx="48" cy="38" r="7" fill="#F2C14E" stroke="#8A6B38" stroke-width="1.2"/><circle cx="250" cy="147" r="7" fill="#4A72B2" stroke="#314E78" stroke-width="1.2"/><path d="M42 34L48 27L54 34M244 143L250 136L256 143" fill="#F8F5EA" stroke="#647987" stroke-width="1.2"/><path d="M28 161H267" stroke="#9AAA9A" stroke-width="1.1"/></g>
+ <g id="layer-focal" filter="url(#compass-shadow)"><circle cx="154" cy="94" r="65" fill="url(#compass-brass)" stroke="#70552F" stroke-width="2.2"/><circle cx="154" cy="94" r="56" fill="#F1E8D3" stroke="#805E36" stroke-width="1.6"/><circle cx="154" cy="94" r="49" fill="url(#compass-glass)" stroke="#667A80" stroke-width="1.4"/><circle cx="154" cy="94" r="39" fill="none" stroke="#78909A" stroke-width="1" opacity=".75"/><g stroke="#526274" stroke-width="1.3"><path d="M154 47V57M154 131V141M107 94H117M191 94H201M121 61L128 68M180 120L187 127M187 61L180 68M128 120L121 127"/></g><path d="M154 49L143 95L154 88L165 95Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round"/><path d="M154 139L143 94L154 101L165 94Z" fill="#D79A4C" stroke="#1E2A3B" stroke-width="1.4" stroke-linejoin="round"/><circle cx="154" cy="94" r="5.5" fill="url(#compass-brass)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M117 68Q145 43 179 61" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".65"/></g>
+ <g id="layer-details"><path d="M85 33L105 43M201 145L221 155" stroke="#B89A69" stroke-width="2"/><circle cx="97" cy="47" r="2" fill="#819B7B"/><circle cx="205" cy="137" r="2" fill="#819B7B"/><path d="M32 78L57 84M249 94L275 90" stroke="#A7BEA0" stroke-width="1.3"/><circle cx="154" cy="42" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="154" cy="94" rx="71" ry="73" fill="none" stroke="#FFF6D8" stroke-width="1.3" opacity=".72"/><path d="M119 49Q140 34 164 38" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".55"/><circle cx="154" cy="94" r="73" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".55"/></g>
+</svg>

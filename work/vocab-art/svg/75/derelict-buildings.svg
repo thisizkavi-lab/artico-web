@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:derelict buildings" data-archetype="abandoned-urban-facades-with-boarded-windows-and-weeds">
+<!-- SELF_PROMPT: Lesson 75 urban life; derelict buildings. Show an abandoned city block with boarded windows, damaged rooflines, weathered masonry, and weeds, with no people in danger. No text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="derelict-sky" x2="0" y2="1"><stop stop-color="#D6DEDC"/><stop offset="1" stop-color="#C3C3B5"/></linearGradient>
+  <linearGradient id="derelict-wall" x2="0" y2="1"><stop stop-color="#A38E77"/><stop offset="1" stop-color="#71695D"/></linearGradient>
+  <linearGradient id="derelict-shadow" x2="0" y2="1"><stop stop-color="#75746D"/><stop offset="1" stop-color="#4F5654"/></linearGradient>
+  <linearGradient id="derelict-ground" x2="0" y2="1"><stop stop-color="#9C9279"/><stop offset="1" stop-color="#6F745F"/></linearGradient>
+  <filter id="derelict-filter" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".21"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#derelict-sky)"/><circle cx="257" cy="34" r="11" fill="#E9C66F" opacity=".34"/><path d="M0 122V42h62v80Zm62 0V26h55v96Zm165 0V39h42v83Zm42 0V19h35v103Z" fill="#8C9794"/><path d="M0 125H304V192H0Z" fill="url(#derelict-ground)"/></g>
+<g id="layer-context">
+  <path d="M23 146V70l46-30 45 30v76Z" fill="url(#derelict-wall)" stroke="#5B5750" stroke-width="1.5"/><path d="M17 72l52-37 51 37Z" fill="#63574D"/><path d="M70 36l10-17 13 9 10-16" fill="none" stroke="#57554F" stroke-width="3"/>
+  <path d="M36 84h19v20H36Zm43 0h19v20H79Zm-43 34h19v20H36Zm43 0h19v20H79Z" fill="#5C625F" stroke="#B8A78C" stroke-width="1.4"/><path d="M32 81l27 26m-27 0 27-26m16 0 27 26m-27 0 27-26m-66 34 27 25m-27 0 27-25m16 0 27 25m-27 0 27-25" fill="none" stroke="#9A8065" stroke-width="3"/>
+  <path d="M185 145V76l45-29 46 29v69Z" fill="#9A8874" stroke="#5C5850" stroke-width="1.5"/><path d="M180 78l50-35 51 35Z" fill="#62574D"/><path d="M199 88h20v22h-20Zm42 0h20v22h-20Zm-42 37h20v19h-20Zm42 0h20v19h-20Z" fill="#59605E" stroke="#B09F86" stroke-width="1.3"/><path d="M196 85l26 28m-26 0 26-28m16 0 26 28m-26 0 26-28m-68 34 26 26m-26 0 26-26" fill="none" stroke="#917C66" stroke-width="3"/>
+  <path d="M0 158Q66 145 126 157T244 156Q280 150 304 157V192H0Z" fill="#777767"/>
+</g>
+<g id="layer-focal" filter="url(#derelict-filter)">
+  <path d="M119 153V105l32-21 33 21v48Z" fill="#8B7967" stroke="#5A554F" stroke-width="1.5"/><path d="M113 107l38-26 39 26Z" fill="#594E49"/><path d="M129 117h18v18h-18Zm27 0h18v18h-18Z" fill="#4E5657" stroke="#B7A789" stroke-width="1.3"/><path d="M126 114l24 24m-24 0 24-24m3 0 24 24m-24 0 24-24" fill="none" stroke="#8F7862" stroke-width="2.8"/>
+  <path d="M146 153q8-15 16 0v24h-16Z" fill="#55544D" stroke="#B29D7F" stroke-width="1.4"/><path d="M146 168h16" fill="none" stroke="#8D7A62" stroke-width="2"/>
+  <path d="M28 178v-16m0 9-8-7m8 6 8-9m218 10v-19m0 12-9-9m9 8 9-11" fill="none" stroke="#5C7759" stroke-width="2.3" stroke-linecap="round"/><path d="M28 161q9-11 19 0m198-3q10-12 20 0" fill="none" stroke="#718A60" stroke-width="5"/>
+</g>
+<g id="layer-details">
+  <path d="M11 183q12-5 23 0m53 7q12-5 23 0m108-3q12-5 23 0m49-8q12-5 22 0" fill="none" stroke="#B5B58A" stroke-width="1.4"/>
+  <circle cx="106" cy="165" r="1.8" fill="#D3B17A"/><circle cx="180" cy="171" r="1.7" fill="#D3B17A"/><circle cx="269" cy="165" r="1.7" fill="#D3B17A"/>
+  <path d="M28 61l11-4m68 31 8 5m79 46 10-4m32-102 9-3" fill="none" stroke="#5D625B" stroke-width="1.6"/>
+  <path d="M51 152q8-9 14 0m135 4q8-9 14 0" fill="none" stroke="#70835C" stroke-width="2"/>
+</g>
+<g id="layer-lighting"><path d="M22 73l47-34 46 34m65 5 45-30 45 30" fill="none" stroke="#C1AA88" stroke-width="1.2"/><path d="M121 106l30-19 31 19" fill="none" stroke="#B29A7C" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

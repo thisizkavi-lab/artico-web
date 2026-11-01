@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: ATM / cash machine (noun)
+  CONTEXTUAL_DEFINITION: A bank machine that lets a customer withdraw cash using a bank card.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action plus tool
+  SYNONYM_GUARD: Make the freestanding bank cash machine recognizable through screen, card slot, keypad and cash dispenser; show bills being retrieved, not a generic vending machine.
+  MODE: STATIC peak cash withdrawal
+  COORDINATE_BLUEPRINT: Tall blue-grey ATM body x86..219; display high, blank key grid and slot mid-body, cash tray low with two notes; customer's thick forearm reaches for notes from right.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:atm / cash machine" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="atm-casing" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DCECFB"/><stop offset=".45" stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="atm-screen"><stop stop-color="#F8FBFE"/><stop offset="1" stop-color="#8EB0DE"/></radialGradient>
+    <path id="atm-hand" d="M235 125 C226 115 216 111 206 114 L183 123 C176 126 176 132 181 136 C185 138 191 135 197 133 L211 130 L199 140 C193 145 196 151 202 152 C208 153 214 145 220 143 L232 139 L248 147 L260 133 Z"/>
+    <clipPath id="atm-hand-clip"><use href="#atm-hand"/></clipPath>
+    <filter id="atm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="158" width="304" height="34" fill="#EAE3D5"/><path d="M0 158 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="150" cy="165" rx="83" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Bank vestibule context -->
+  <g id="layer-context"><path d="M37 159 V53 Q37 40 49 40 H90 V159" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><path d="M47 52 H80 V151 H47 Z" fill="#EEF4FA" stroke="#94A3B8" stroke-width="1.4"/><path d="M53 59 H73 M53 66 H73" stroke="#CBD5E1" stroke-width="1.7"/><circle cx="72" cy="109" r="2.5" fill="#D49B2A"/></g>
+  <!-- 3. Primary ATM body, screen, keypad and cash dispenser -->
+  <g id="layer-focal" filter="url(#atm-shadow)"><path d="M91 37 Q91 30 100 30 H208 Q217 30 217 39 V159 H91 Z" fill="url(#atm-casing)" stroke="#1E2A3B" stroke-width="2.7"/><path d="M102 40 H207 V48 H102 Z" fill="#3D5F91"/><rect x="106" y="56" width="94" height="37" rx="4" fill="url(#atm-screen)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M116 66 H188 M116 74 H178 M116 82 H169" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><rect x="105" y="100" width="93" height="34" rx="4" fill="#CBD5E1" stroke="#64748B" stroke-width="1.7"/><g fill="#F8FBFE" stroke="#64748B" stroke-width="1.1"><circle cx="119" cy="110" r="3.4"/><circle cx="136" cy="110" r="3.4"/><circle cx="153" cy="110" r="3.4"/><circle cx="170" cy="110" r="3.4"/><circle cx="119" cy="123" r="3.4"/><circle cx="136" cy="123" r="3.4"/><circle cx="153" cy="123" r="3.4"/><circle cx="170" cy="123" r="3.4"/></g><path d="M105 141 H200 V153 H105 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M113 144 H179 V154 H113 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M117 145 H173 V151 H117 Z" fill="#E7EEF5"/></g>
+  <!-- 4. Card slot, withdrawal notes and retrieving hand -->
+  <g id="layer-details"><rect x="73" y="108" width="15" height="31" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M76 114 H85 M76 118 H85" stroke="#8EB0DE" stroke-width="1.4"/><rect x="126" y="142" width="55" height="8" rx="2" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M128 145 H177" stroke="#568552" stroke-width="1.4"/><g clip-path="url(#atm-hand-clip)"><rect x="174" y="108" width="91" height="51" fill="#D89A6C"/><path d="M181 140 Q215 125 261 133 V161 H176Z" fill="#B6784B"/><path d="M210 133 Q221 128 232 132" fill="none" stroke="#ECC09D" stroke-width="2.4"/></g><use href="#atm-hand" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M139 137 Q152 132 168 137" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 4"/></g>
+  <!-- 5. Cash movement and screen glints -->
+  <g id="layer-lighting"><path d="M110 59 H148" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".8"/><path d="M181 129 Q192 124 200 127" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/><path d="M196 123 L204 127 L197 132 Z" fill="#4A72B2"/><path d="M224 74 L224 83 M220 78 H228" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/></g>
+</svg>

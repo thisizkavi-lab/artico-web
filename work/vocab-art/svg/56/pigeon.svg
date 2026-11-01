@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: pigeon (noun)
+  CONTEXTUAL_DEFINITION: A plump gray pigeon with a short bill, iridescent neck, and dark wing bars.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Make it darker and heavier-bodied than the pale dove, with two dark wing bars and a rounded urban-park pigeon profile.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perch a stocky pigeon x=87..194 y=79..137 facing right; head at x=185 y=72 with short bill, iridescent neck patch, gray folded wing with twin bars, pink feet and a low stone ledge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:pigeon" data-archetype="gray-pigeon">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#8B989E;--c-secondary:#4A5963;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="pigeon-sky" x2="0" y2="1"><stop stop-color="#DCEAF0"/><stop offset="1" stop-color="#F5F0E5"/></linearGradient>
+  <linearGradient id="pigeon-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AAB5B8"/><stop offset="1" stop-color="#66757F"/></linearGradient>
+  <linearGradient id="pigeon-neck" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#638E7B"/><stop offset=".55" stop-color="#8A7896"/><stop offset="1" stop-color="#3E6D64"/></linearGradient>
+  <filter id="pigeon-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pigeon-sky)"/><path d="M0 128Q72 118 143 129T304 122V192H0Z" fill="#DEE5D8"/><path d="M0 153Q84 143 157 154T304 148V192H0Z" fill="#C8D3C1"/><path d="M46 132V63m0 36L31 81m15 27 14-18m181 41V66m0 32 14-19m-14 7-13-17" fill="none" stroke="#899681" stroke-width="3" stroke-linecap="round"/><path d="M26 83q9-12 17-4m-14 11q8-8 16-2m194-7q8-11 17-4m-15 13q9-8 17-1" fill="none" stroke="#78916E" stroke-width="2.2"/></g>
+ <g id="layer-context"><path d="M26 146H278L263 137H41Z" fill="#A9A99D" stroke="#7C817C" stroke-width="1.2"/><path d="M41 148h219" fill="none" stroke="#D7D7CB" stroke-width="2"/><ellipse cx="146" cy="151" rx="58" ry="5" fill="#57645D" opacity=".18"/></g>
+ <g id="layer-focal" filter="url(#pigeon-shadow)"><path d="M87 111Q94 89 122 84Q154 77 180 94Q195 105 188 125Q173 142 137 141Q103 139 89 125Z" fill="url(#pigeon-coat)" stroke="#53616A" stroke-width="1.6"/><path d="M113 110Q130 90 157 97Q174 103 170 123Q150 138 126 129Z" fill="#BCC5C5"/><path d="M165 95Q173 78 184 77Q197 81 196 95L184 108Q173 107 165 95Z" fill="url(#pigeon-neck)" stroke="#53616A" stroke-width="1.2"/><circle cx="186" cy="73" r="15" fill="#AAB5B8" stroke="#53616A" stroke-width="1.3"/><path d="M198 72L213 76L199 80Z" fill="#4C5660" stroke="#303B45" stroke-width="1"/><circle cx="190" cy="70" r="2.2" fill="#1E2A3B"/><circle cx="190" cy="69" r=".7" fill="#FFFFFF"/><path d="M103 105Q125 88 148 94Q165 101 164 116Q148 125 122 123Z" fill="#8C9AA0" stroke="#56656E" stroke-width="1.2"/><path d="M111 101l37-2m-39 9 40-1" fill="none" stroke="#394953" stroke-width="3.1" stroke-linecap="round"/><path d="M111 136l-1 7m36-6 2 7m-39 0-7 2m47-2 8 2" fill="none" stroke="#C7817C" stroke-width="2.3" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M104 98q14-13 30-10m-16 27q13 4 25 1m34-25q5-7 12-5" fill="none" stroke="#E2E5DF" stroke-width="1.4" opacity=".8" stroke-linecap="round"/><path d="M39 135l-4-8m6 8 5-9m210 9 5-9" fill="none" stroke="#819271" stroke-width="1.4"/><circle cx="72" cy="130" r="1.3" fill="#D8C9A8"/><circle cx="220" cy="118" r="1" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M102 96q15-12 32-10m60-10q4-4 8-3" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".7" stroke-linecap="round"/><ellipse cx="139" cy="107" rx="48" ry="30" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

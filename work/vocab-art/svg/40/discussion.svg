@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: discussion
+  CONTEXTUAL_DEFINITION: An exchange of ideas and opinions about a topic.
+  PEDAGOGICAL_ART_DIRECTOR: Show two or three coworkers actively exchanging viewpoints, with open gestures and multiple idea cues.
+  PEDAGOGICAL_ARCHETYPE: 3 - Exchange / deliberation
+  SYNONYM_GUARD: Keep the conversation in progress and balanced; avoid a completed agreement card, a one-way presentation, or a vote.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Set two coworkers at x=65..120 and x=185..240 across a table, leaning slightly forward. Two distinct empty idea clouds above them contain different simple icons; a third colleague at x=130..176 listens between them. Add crossing but gentle gesture lines, not arrows to a decision.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:discussion" data-archetype="idea-exchange">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="discussion-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="discussion-cloud" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <radialGradient id="discussion-halo"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="discussion-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="101" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 132 H274 V145 H30 Z" fill="url(#discussion-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#discussion-shadow)"><path d="M54 123 Q56 100 69 94 L70 85 Q66 81 68 73 Q76 64 86 67 Q95 70 92 81 L89 89 Q103 95 105 121 L102 132 H58 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="80" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M72 74 Q74 66 81 66 Q89 67 92 74 Q85 70 78 71 Z" fill="#3D342D"/><path d="M202 123 Q204 100 217 94 L218 85 Q214 81 216 73 Q224 64 234 67 Q243 70 240 81 L237 89 Q251 95 253 121 L250 132 H206 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="228" cy="76" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M220 74 Q222 66 229 66 Q237 67 240 74 Q233 70 226 71 Z" fill="#242C3B"/><path d="M124 123 Q126 102 138 96 L139 88 Q135 84 137 77 Q145 69 154 72 Q162 75 159 85 L156 92 Q169 97 171 121 L168 132 H128 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="149" cy="80" rx="7.5" ry="9" fill="#C98562" stroke="#1E2A3B" stroke-width="1"/><path d="M141 78 Q143 71 150 71 Q158 72 160 78 Q153 75 147 76 Z" fill="#3D342D"/><path d="M77 109 L116 115 M225 109 L187 115" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><path d="M117 116 L128 119 M187 116 L176 119" stroke="#D89A6C" stroke-width="3.4" stroke-linecap="round"/><path d="M82 35 Q82 29 89 29 H137 Q144 29 144 36 V49 Q144 55 137 55 H112 L102 62 L103 55 H89 Q82 55 82 49 Z" fill="url(#discussion-cloud)" stroke="#64748B" stroke-width="1.2"/><circle cx="98" cy="42" r="4" fill="#F2C14E"/><path d="M106 42 H131" stroke="#8EB0DE" stroke-width="1.5"/><path d="M160 37 Q160 31 167 31 H215 Q222 31 222 38 V50 Q222 56 215 56 H192 L182 63 L183 56 H167 Q160 56 160 50 Z" fill="url(#discussion-cloud)" stroke="#64748B" stroke-width="1.2"/><path d="M176 45 L184 37 L192 45 L200 37 L208 45" fill="none" stroke="#5479AC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><circle cx="105" cy="90" r="2" fill="#F2C14E"/><circle cx="196" cy="90" r="2" fill="#8EB0DE"/><path d="M115 103 Q121 98 126 103 M178 103 Q184 98 190 103" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><circle cx="151" cy="112" r="2" fill="#F2C14E"/><path d="M145 111 H157" stroke="#D99A2B" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="83" rx="96" ry="59" fill="url(#discussion-halo)" opacity=".21"/><path d="M86 34 H140 M164 36 H218" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

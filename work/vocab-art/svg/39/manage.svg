@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: manage (verb; coordinate a workplace)
+  CONTEXTUAL_DEFINITION: Organize and control the work, people, or resources of a team or organization.
+  PEDAGOGICAL_ART_DIRECTOR: Show a manager coordinating several work streams from a shared planning surface rather than leading one group toward a destination.
+  PEDAGOGICAL_ARCHETYPE: 3 - Workplace coordination / role
+  SYNONYM_GUARD: Depict organizing tasks and resources, not simply encouraging a group or physically handling an object.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a manager at x=148,y=93 behind a planning desk. Arrange three distinct work modules around them—paperwork, a team, and equipment—and connect each to a single organized dashboard with clean blue arrows.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:manage" data-archetype="workplace-coordination">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="manage-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCECFB"/></linearGradient>
+    <linearGradient id="manage-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6B477"/><stop offset="1" stop-color="#B6784B"/></linearGradient>
+    <radialGradient id="manage-focus"><stop stop-color="#FFF1B9" stop-opacity=".7"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="manage-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="112" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Distinct work streams feeding one shared coordination board -->
+  <g id="layer-context"><path d="M31 148 H273" stroke="#C88446" stroke-width="2"/><rect x="34" y="48" width="57" height="51" rx="4" fill="#EEF4FA" stroke="#64748B" stroke-width="1.4"/><path d="M41 57 H84 M41 64 H77 M41 72 H82" stroke="#94A3B8" stroke-width="1.2"/><rect x="212" y="48" width="57" height="51" rx="4" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><circle cx="229" cy="64" r="7" fill="#D89A6C" stroke="#64748B" stroke-width="1"/><circle cx="251" cy="64" r="7" fill="#F5BFA3" stroke="#64748B" stroke-width="1"/><path d="M219 84 Q220 74 229 74 Q238 74 239 84 M241 84 Q242 74 251 74 Q260 74 261 84" fill="#A8D4A2" stroke="#64748B" stroke-width="1.2"/><rect x="44" y="106" width="43" height="22" rx="3" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M50 112 H81 M50 118 H76" stroke="#94A3B8" stroke-width="1"/><circle cx="235" cy="116" r="12" fill="#CBD5E1" stroke="#64748B" stroke-width="1.4"/><path d="M235 107 V116 L242 120" fill="none" stroke="#64748B" stroke-width="1.4" stroke-linecap="round"/><path d="M90 77 C111 77 117 89 132 91 M212 77 C192 77 186 89 172 91 M87 116 C111 116 120 107 135 101 M223 116 C199 116 185 107 173 101" fill="none" stroke="#8EB0DE" stroke-width="1.6" stroke-dasharray="3 3"/></g>
+  <!-- 3. Manager organizes people, documents, and resources -->
+  <g id="layer-focal" filter="url(#manage-shadow)"><path d="M71 128 H234 V143 H71 Z" fill="url(#manage-desk)" stroke="#1E2A3B" stroke-width="2"/><path d="M83 143 V153 M222 143 V153" stroke="#965D28" stroke-width="3"/><rect x="111" y="44" width="82" height="71" rx="5" fill="url(#manage-board)" stroke="#1E2A3B" stroke-width="2.1"/><rect x="118" y="51" width="68" height="17" rx="3" fill="#5479AC"/><circle cx="126" cy="59" r="2" fill="#F2C14E"/><circle cx="133" cy="59" r="2" fill="#E5F0E1"/><path d="M121 77 H145 M121 83 H142 M121 89 H145" stroke="#94A3B8" stroke-width="1.2"/><rect x="153" y="75" width="26" height="33" rx="3" fill="#E5F0E1" stroke="#7FB07A" stroke-width="1.1"/><path d="M158 82 H174 M158 88 H172 M158 95 H174" stroke="#7FB07A" stroke-width="1.1"/><circle cx="152" cy="124" r="12" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M140 122 Q141 109 153 109 Q164 110 165 121 Q157 114 149 117 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M129 153 Q130 132 152 132 Q175 132 176 153 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M147 134 L152 141 L158 134 L157 153 H149 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.1"/><path d="M141 149 L128 138 L124 142 L136 155 Z M165 149 L178 138 L183 142 L171 155 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 4. Four work streams are aligned into one coordinated plan -->
+  <g id="layer-details"><path d="M91 69 H108" stroke="#4A72B2" stroke-width="1.8"/><path d="M103 65 L110 69 L103 73 Z" fill="#4A72B2"/><path d="M195 69 H209" stroke="#4A72B2" stroke-width="1.8"/><path d="M204 65 L211 69 L204 73 Z" fill="#4A72B2"/><path d="M89 116 H106" stroke="#4A72B2" stroke-width="1.8"/><path d="M101 112 L108 116 L101 120 Z" fill="#4A72B2"/><path d="M194 116 H213" stroke="#4A72B2" stroke-width="1.8"/><path d="M208 112 L215 116 L208 120 Z" fill="#4A72B2"/><circle cx="49" cy="40" r="3" fill="#F2C14E"/><circle cx="257" cy="39" r="3" fill="#7FB07A"/></g>
+  <!-- 5. Central halo makes coordination the visual center -->
+  <g id="layer-lighting"><ellipse cx="152" cy="93" rx="72" ry="66" fill="url(#manage-focus)"/><ellipse cx="152" cy="92" rx="48" ry="52" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".6"/><path d="M121 48 H144" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M73 88 L79 82 M228 89 L234 83" stroke="#F2C14E" stroke-width="1.7" stroke-linecap="round"/></g>
+</svg>

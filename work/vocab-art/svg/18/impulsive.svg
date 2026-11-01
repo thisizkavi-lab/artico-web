@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: impulsive (Adjective)
+  CONTEXTUAL_DEFINITION: Acting suddenly without stopping to think about the consequences.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person lunges for a rolling ball before looking, while a peer signals them to pause; unlike bravery, there is no considered protective purpose.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared play space with a ball rolling toward a puddle.
+    - Context_Layer: Peer raises a cautioning palm.
+    - Focal_Layer: Person lunges toward the ball without checking the wet path.
+    - Details_Layer: Forward body angle, flying shoelace, rolling ball and caution cue.
+    - Lighting_Layer: Warm accent on the sudden movement.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:impulsive" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9A441;--c-secondary:#B9875D;--c-accent:#D9857F;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="130" ry="8" fill="#EAE3D5"/><ellipse cx="260" cy="147" rx="26" ry="7" fill="#B9C9D3"/><path d="M240 146Q260 139 280 146" fill="none" stroke="#7B8A9E" stroke-width="1.5"/></g>
+  <g id="layer-context"><circle cx="249" cy="57" r="16" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M233 57Q234 40 249 41Q265 42 265 58L259 62H236Z" fill="#805333"/><path d="M230 80Q249 73 268 80L273 115H225Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M239 57H245M253 57H259M239 68Q249 71 259 68" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M236 87L224 99M262 87L274 99" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M220 80L211 72M220 89L208 89M220 98L212 106" stroke="#D9857F" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="126" cy="97" rx="70" ry="69" fill="#FEF3C7" opacity=".56"/><circle cx="116" cy="54" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M96 54Q97 32 116 33Q137 34 136 56L129 61Q125 45 114 45Q104 46 98 62Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M92 80Q116 73 140 80L150 115L104 127L84 110Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M99 88L81 99L64 96M135 88L152 99L165 93" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M99 88L82 99L65 96M135 88L152 99L164 93" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M104 122L88 148L102 156L125 129M130 124L151 147L164 140L143 112" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M89 147L101 154L98 160L83 154ZM155 143L165 137L171 141L160 149Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="1.5"/><path d="M127 54L132 57M116 66Q125 61 133 65" fill="none" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><circle cx="196" cy="126" r="12" fill="#D9857F" stroke="#A95059" stroke-width="2"/><path d="M181 126H172M185 118L179 112M183 134L176 138" stroke="#4A72B2" stroke-width="1.8"/><path d="M74 82L67 76M79 91L68 91M82 100L74 106" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M147 51L153 45M157 58L166 56" stroke="#D9A441" stroke-width="1.8"/><path d="M113 39Q119 36 125 39" stroke="#FEF9C3" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M106 37Q116 33 126 37" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="126" cy="97" rx="70" ry="69" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

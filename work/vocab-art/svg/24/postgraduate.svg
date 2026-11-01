@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: postgraduate (Noun / Adjective)
+  CONTEXTUAL_DEFINITION: A student or course at an advanced university level after earning a first degree.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show an advanced learner conducting focused research in a university laboratory after completing an earlier degree, distinct from an undergraduate classroom.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University research laboratory and shelves.
+    - Context_Layer: Advanced instruments and a framed completed credential.
+    - Focal_Layer: Graduate researcher records observations beside a microscope.
+    - Details_Layer: Research sample, bound journal, and precise apparatus.
+    - Lighting_Layer: Cool focused laboratory light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:postgraduate" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="postgraduate-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="postgraduate-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#postgraduate-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H87V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M53 25V74M21 49H86" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M218 26H280V77H218Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.3"/><path d="M225 33H273V70H225Z" fill="#FFFEFA" stroke="#D9A441" stroke-width="1.2"/><circle cx="249" cy="51" r="8" fill="#D9A441"/><path d="M245 51L248 54L254 47" fill="none" stroke="#FFFEFA" stroke-width="1.4"/><path d="M45 120H90V137H45Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M51 125H84" stroke="#DCECFB" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#postgraduate-shadow)"><path d="M39 112H266V121H39Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M52 121V149M251 121V149" stroke="#8D765A" stroke-width="3"/><path d="M174 82H207V113H174Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M182 82V72H197V82M181 94H200M181 101H200" fill="none" stroke="#315782" stroke-width="2.1"/><path d="M181 79H200L208 88L198 96H181Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.2"/><path d="M190 96V109" stroke="#5479AC" stroke-width="2"/><circle cx="112" cy="68" r="12" fill="#80513F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M100 68Q101 53 113 54Q126 55 125 69L119 72Q116 61 110 62Q105 63 103 74Z" fill="#27364B"/><path d="M95 87Q112 79 129 87L137 108L124 119L100 111Z" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M102 90L122 102L154 103M128 89L143 97L160 95" fill="none" stroke="#1E2A3B" stroke-width="4.6" stroke-linecap="round"/><path d="M102 90L122 102L154 103M128 89L143 97L160 95" fill="none" stroke="#80513F" stroke-width="2.6" stroke-linecap="round"/><path d="M104 114L98 148M123 115L136 148" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M151 94L158 103" stroke="#D9A441" stroke-width="2"/><path d="M224 103H255V118H224Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.2"/><path d="M231 107H249M231 112H249" stroke="#88A9D0" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M162 83L166 79" stroke="#D9A441" stroke-width="2"/><path d="M170 87L174 83" stroke="#D9857F" stroke-width="2"/><circle cx="167" cy="103" r="2.2" fill="#91A77C"/><path d="M105 78Q112 82 120 78" fill="none" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="159" cy="96" rx="124" ry="68" fill="#FEF9C3" opacity=".09"/><path d="M20 25H87V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M174 82H207V113" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

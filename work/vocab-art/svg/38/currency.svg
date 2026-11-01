@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: currency (noun)
+  CONTEXTUAL_DEFINITION: The system and physical forms of money used in a country or monetary area.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object / contrast pair
+  SYNONYM_GUARD: Show multiple distinct note and coin designs together to convey a currency system; no national flags, letters, numbers, or currency glyphs.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two visually distinct blank note designs on a counter, one cool blue and one sage; varied gold and copper coins below; a small divided exchange tray supports the grouping.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:currency" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="currency-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="currency-green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <path id="currency-note" d="M60 68 Q60 62 67 62 H166 Q172 62 172 68 V119 Q172 125 166 125 H67 Q60 125 60 119 Z"/>
+    <clipPath id="currency-clip"><use href="#currency-note"/></clipPath>
+    <filter id="currency-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="163" rx="102" ry="10" fill="#DDD4C3"/></g>
+  <!-- 2. Exchange tray creates a grouped money-system context -->
+  <g id="layer-context"><path d="M35 139 Q149 132 269 139 L257 153 H47 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2.2"/><path d="M153 138 L151 152" stroke="#94A3B8" stroke-width="2"/><path d="M54 146 H139 M166 146 H249" stroke="#CBD5E1" stroke-width="2"/></g>
+  <!-- 3. Primary banknote forms with distinct visual designs -->
+  <g id="layer-focal" filter="url(#currency-shadow)"><use href="#currency-note" fill="url(#currency-blue)" stroke="#1E2A3B" stroke-width="2.5"/><g clip-path="url(#currency-clip)"><path d="M55 110 C86 70 125 74 177 54 V130 H55Z" fill="#5479AC" opacity=".38"/><ellipse cx="115" cy="93" rx="25" ry="18" fill="#E7EEF5" stroke="#5479AC" stroke-width="2"/><path d="M109 93 Q115 84 121 93 Q115 102 109 93Z" fill="#5479AC"/><path d="M69 72 H92 M68 112 H89" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M189 52 Q189 46 196 46 H268 Q274 46 274 52 V105 Q274 111 268 111 H196 Q189 111 189 105 Z" fill="url(#currency-green)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M184 102 C216 66 249 73 280 48 V116 H184Z" fill="#568552" opacity=".35"/><ellipse cx="231" cy="78" rx="18" ry="15" fill="#F4F6FA" stroke="#568552" stroke-width="1.8"/><path d="M224 78 Q231 69 238 78 Q231 87 224 78Z" fill="#568552"/></g></g>
+  <!-- 4. Different coin sizes and metals -->
+  <g id="layer-details" stroke="#1E2A3B" stroke-width="1.8"><ellipse cx="85" cy="143" rx="12" ry="6" fill="#F2C14E"/><path d="M73 136 V143 C73 151 97 151 97 143 V136" fill="#D49B2A"/><ellipse cx="85" cy="136" rx="12" ry="6" fill="#FCE29C"/><ellipse cx="210" cy="141" rx="10" ry="5" fill="#D97A43"/><path d="M200 135 V141 C200 148 220 148 220 141 V135" fill="#B55B28"/><ellipse cx="210" cy="135" rx="10" ry="5" fill="#F2A472"/><ellipse cx="236" cy="143" rx="7" ry="4" fill="#F2C14E"/><path d="M230 139 V143 C230 148 242 148 242 143 V139" fill="#D49B2A"/></g>
+  <!-- 5. Light accents emphasize a coherent family of money forms -->
+  <g id="layer-lighting"><path d="M68 68 H94" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M197 53 H220" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M55 55 L55 63 M51 59 H59" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

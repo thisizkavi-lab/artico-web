@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 62 - Sports equipment and venues
+ WORD: hockey stick
+ CONTEXTUAL_DEFINITION: A long stick with a flat curved blade used to control and strike a hockey puck.
+ PEDAGOGICAL_ARCHETYPE: Full-length equipment snapshot on an ice rink with a round black puck.
+ SYNONYM_GUARD: Keep the blade curved and flat and the puck visible; do not draw a field-hockey ball or a cricket bat.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Stick stretches diagonally across cool ice, shaft tapers into a curved horizontal blade beside puck; faint rink line behind.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="62:hockey stick" data-archetype="ice-hockey-stick-and-puck">
+ <defs><linearGradient id="hs-ice" x2="0" y2="1"><stop stop-color="#E8F1F5"/><stop offset="1" stop-color="#BFD3DA"/></linearGradient><linearGradient id="hs-shaft" x2="0" y2="1"><stop stop-color="#344F5A"/><stop offset="1" stop-color="#718C84"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF2EE"/><path d="M0 126h304v66H0Z" fill="url(#hs-ice)"/><path d="M0 129h304M0 171h304" stroke="#F7FAFA" stroke-width="1.5"/><path d="M44 127v65m216-65v65" stroke="#D4866D" stroke-width="1.4"/><path d="M58 154h34m126 0h30" stroke="#C1D7DE" stroke-width="1.1"/></g>
+ <g id="layer-context"><ellipse cx="151" cy="176" rx="108" ry="5" fill="#405B61" opacity=".12"/><circle cx="51" cy="39" r="10" fill="#E4BB68"/><path d="M78 57q15-10 29 0m90 0q14-10 29 0" fill="none" stroke="#D8E6E9" stroke-width="1.3"/><path d="M19 108h35m209 0h22" stroke="#F7FAFA" stroke-width="1.3"/></g>
+ <g id="layer-focal"><path d="M91 42 176 132q5 6 12 6l60 1q5 0 5-5v-8l-60-3-81-91Z" fill="url(#hs-shaft)" stroke="#263E48" stroke-width="2" stroke-linejoin="round"/><path d="M91 42 176 132q5 6 12 6l60 1q5 0 5-5v-8l-60-3-81-91Z" fill="none" stroke="#E4BB68" stroke-width="1.2" opacity=".8"/><ellipse cx="202" cy="143" rx="15" ry="5" fill="#263E48"/><ellipse cx="202" cy="141" rx="14" ry="4" fill="#405B61"/><circle cx="225" cy="121" r="2" fill="#F4EFE2"/></g>
+ <g id="layer-details"><path d="M74 40l6-6m7 13 6-6m7 13 6-6" stroke="#CE3D4E" stroke-width="2.2" stroke-linecap="round"/><path d="M36 180h47m157 0h32" stroke="#F7FAFA" stroke-width="1.2"/><path d="M181 130q4 4 9 4m-2 8h23" fill="none" stroke="#BFD3DA" stroke-width="1.1"/><circle cx="202" cy="141" r="1.2" fill="#718C84"/><path d="M189 136h53" stroke="#52636A" stroke-width=".8"/><path d="M199 140h10" stroke="#D7E0DD" stroke-width=".9"/><path d="M82 34l6-6" stroke="#CE3D4E" stroke-width="1.4"/><circle cx="250" cy="135" r="1.3" fill="#F4EFE2"/></g>
+ <g id="layer-lighting"><ellipse cx="157" cy="97" rx="75" ry="48" fill="#FFF" opacity=".04"/><path d="M94 39l80 86" stroke="#DCE6E4" stroke-width="1.3"/></g>
+</svg>

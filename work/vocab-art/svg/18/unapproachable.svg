@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: unapproachable (Adjective)
+  CONTEXTUAL_DEFINITION: Giving the impression that others cannot easily start a conversation with you.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A closed-off person turns away behind crossed arms while a peer stops before coming closer; unlike unfriendly, no active insult is shown.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet social room with a clear open floor between people.
+    - Context_Layer: Hesitant peer at x=72 with a half-raised hand.
+    - Focal_Layer: Closed posture at x=213, shoulders angled away.
+    - Details_Layer: Crossed arms, downturned brows and an empty approach gap.
+    - Lighting_Layer: Cool muted halo around the barrier-like posture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:unapproachable" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#7B8A9E"/><stop offset="1" stop-color="#526173"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q80 143 154 150T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="154" cy="168" rx="130" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><circle cx="67" cy="68" r="16" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M51 68Q52 50 68 51Q84 52 83 69L77 73H54Z" fill="#805333"/><path d="M48 91Q67 84 85 91L91 128H43Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M79 94Q94 97 98 84" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M98 84L99 76" stroke="#D9A17D" stroke-width="5" stroke-linecap="round"/><path d="M62 68H68M74 68H79M64 78Q69 76 73 78" stroke="#1E2A3B" stroke-width="1.5"/><path d="M111 48V161M105 54L111 48L117 54" fill="none" stroke="#AAB5C3" stroke-width="2" stroke-dasharray="4 5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="220" cy="97" rx="65" ry="72" fill="#E3E8F0" opacity=".62"/><circle cx="220" cy="57" r="21" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M199 57Q199 35 220 36Q241 37 241 59L234 64Q229 48 217 48Q207 49 201 65Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M196 84Q220 77 244 84L252 134H188Z" fill="url(#coat)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M201 91L239 111L231 121L196 102M239 91L201 111L209 121L245 102" fill="#526173" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M200 133L198 162H214L220 134M225 134L232 162H247L243 133" fill="#3D4B5B" stroke="#1E2A3B" stroke-width="2"/><path d="M214 58L220 57M228 58L234 57" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M213 69Q220 67 227 69" fill="none" stroke="#805333" stroke-width="1.6"/><path d="M180 64L174 69M259 64L265 69M180 75L174 80M260 75L266 80" stroke="#7B8A9E" stroke-width="1.8" stroke-linecap="round"/><path d="M124 111H159" stroke="#7B8A9E" stroke-width="2" stroke-dasharray="3 5"/><circle cx="150" cy="101" r="2.4" fill="#AAB5C3"/><circle cx="162" cy="108" r="2" fill="#AAB5C3"/></g>
+  <g id="layer-lighting"><path d="M210 42Q219 38 229 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".62"/><ellipse cx="220" cy="97" rx="65" ry="72" fill="none" stroke="#7B8A9E" stroke-width="1.3" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

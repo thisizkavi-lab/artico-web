@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: reservation
+  CONTEXTUAL_DEFINITION: An arrangement that holds a hotel room for a guest in advance.
+  PEDAGOGICAL_ART_DIRECTOR: Show a confirmed hotel room booking as a calendar date marked beside its room card.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: The booking confirmation is already made; distinguish this noun from the act of making a reservation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A blank calendar page with one amber-selected square sits beside a blue room key card and a small hotel-bed pictogram.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:reservation" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="resv-paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF6"/><stop offset="1" stop-color="#D9E1DC"/></linearGradient>
+  <linearGradient id="resv-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7194BB"/><stop offset="1" stop-color="#3F6495"/></linearGradient>
+  <linearGradient id="resv-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DDE8E7"/><stop offset="1" stop-color="#C6CDC8"/></linearGradient>
+  <filter id="resv-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="1.8" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#resv-bg)"/><path d="M25 22H279V169H25Z" fill="#E8EAE2" stroke="#68787B" stroke-width="1.4"/><path d="M31 149H273" stroke="#C8C7BB" stroke-width="1.2"/><circle cx="55" cy="43" r="12" fill="#E7D09F"/><path d="M222 31H268V69H222Z" fill="#A9C9CF" stroke="#526873" stroke-width="1"/><path d="M245 31V69M222 50H268" stroke="#526873" stroke-width=".8"/></g>
+ <g id="layer-context"><path d="M72 136H243V154H72Z" fill="#B58B61" stroke="#1E2A3B" stroke-width="1.2"/><path d="M84 154V162M231 154V162" stroke="#624D3B" stroke-width="3"/><rect x="198" y="110" width="52" height="34" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.3"/><path d="M207 110V104Q207 99 224 99Q241 99 241 104V110" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M206 124H242M206 137H242" stroke="#91A0A4" stroke-width="1.1"/><path d="M105 127H131V134H105Z" fill="#4B72A9" stroke="#1E2A3B" stroke-width=".8"/></g>
+ <g id="layer-focal" filter="url(#resv-shadow)"><path d="M57 58H190V129H57Z" fill="url(#resv-paper)" stroke="#324954" stroke-width="1.8"/><path d="M57 72H190V85H57Z" fill="#4A72B2" stroke="#324954" stroke-width="1"/><path d="M75 52V65M172 52V65" stroke="#344B59" stroke-width="3"/><path d="M74 94H174M74 108H174M74 121H174" stroke="#B8C2BE" stroke-width="1.1"/><path d="M81 90H96V102H81Z" fill="#E8ECE5" stroke="#879694" stroke-width=".8"/><path d="M108 90H123V102H108Z" fill="#E8ECE5" stroke="#879694" stroke-width=".8"/><path d="M135 90H150V102H135Z" fill="#F2C14E" stroke="#9A7139" stroke-width="1"/><path d="M162 90H177V102H162Z" fill="#E8ECE5" stroke="#879694" stroke-width=".8"/><path d="M82 93H89V99H82Z" fill="#FAF8F2"/><path d="M112 97H120V99H112Z" fill="#849294"/><path d="M138 93H147V99H138Z" fill="#805C40"/><path d="M165 95H173V99H165Z" fill="#849294"/><path d="M207 112H240V123H207Z" fill="url(#resv-card)" stroke="#263C4B" stroke-width="1"/><path d="M213 115H224V121H213Z" fill="#EEEFE9" stroke="#526274" stroke-width=".7"/><path d="M227 115H236V121H227Z" fill="#A9C8CF" stroke="#526274" stroke-width=".7"/></g>
+ <g id="layer-details"><ellipse cx="152" cy="165" rx="111" ry="5" fill="#526274" opacity=".15"/><path d="M28 24H278" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="182" cy="99" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="103" rx="128" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M26 23H278" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: wallet (Noun)
+  CONTEXTUAL_DEFINITION: A fold-open billfold for carrying money and cards.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with interior cue
+  SYNONYM_GUARD: Show a flat fold-over wallet with card slots and bills, distinct from a coin purse.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open leather billfold on a tabletop.
+    - Context_Layer: Ground shadow supports the hinged case.
+    - Focal_Layer: Two open sides reveal cards and folded notes.
+    - Details_Layer: Stitching and a snap show how it closes.
+    - Lighting_Layer: Gold focus surrounds the open fold.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:wallet" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="157" rx="116" ry="20" fill="#EAE3D5"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><ellipse cx="152" cy="96" rx="113" ry="73" fill="#FEF3C7" opacity=".34"/><path d="M39 65Q55 48 72 59L148 80V145L63 163Q46 162 39 147Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M265 65Q249 48 232 59L156 80V145L241 163Q258 162 265 147Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M33 61Q50 43 70 54L150 78V148L63 168Q43 166 34 150Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.6"/><path d="M271 61Q254 43 234 54L154 78V148L241 168Q261 166 270 150Z" fill="#9A633D" stroke="#1E2A3B" stroke-width="2.6"/><path d="M150 78V148M154 78V148" stroke="#1E2A3B" stroke-width="2.2"/><path d="M46 68L126 91V119L53 138ZM180 91L254 68V101L180 123Z" fill="#C58B5E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M48 68L126 91V111L52 130Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M188 90L248 71V83L188 102Z" fill="#F8FAFC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M33 61Q50 43 70 54L150 78V148L63 168Q43 166 34 150Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M51 148L128 130M177 129L248 149" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M138 93Q152 99 166 93" fill="none" stroke="#D9A441" stroke-width="3"/><circle cx="152" cy="97" r="4" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="101" rx="92" ry="54" fill="none" stroke="#D97706" stroke-width=".9" stroke-dasharray="4 4" opacity=".35"/></g>
+</svg>

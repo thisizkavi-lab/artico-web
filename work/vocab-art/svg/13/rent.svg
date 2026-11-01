@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: rent (Verb / noun)
+  CONTEXTUAL_DEFINITION: Pay to use a home that belongs to someone else.
+  PEDAGOGICAL_ARCHETYPE: 4 — Payment-for-use action
+  SYNONYM_GUARD: Show a renter paying for temporary use of one home, not a tear in fabric; renting is the broader agreement and occupancy arrangement.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small house exterior with a rental key.
+    - Context_Layer: Landlord and tenant face each other.
+    - Focal_Layer: Renter hands an envelope payment while landlord holds the home key.
+    - Details_Layer: Occupied window, payment tray, and repeated monthly coin stack.
+    - Lighting_Layer: Motion cue loops from payment to key to home.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:rent" data-archetype="payment-action">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M198 38L237 15L276 38V106H198Z" fill="#F0D8B3" stroke="#64748B" stroke-width="1.6"/><path d="M191 39L237 9L283 39" fill="#5479AC" stroke="#64748B" stroke-width="1.6"/><path d="M212 52H230V73H212Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.3"/><path d="M245 73Q245 68 250 68H265V106H245Z" fill="#C88446" stroke="#64748B" stroke-width="1.3"/><ellipse cx="150" cy="164" rx="113" ry="6" fill="#948775" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M58 125H248V146H58Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M68 146V158M237 146V158" stroke="#8A5A35" stroke-width="3" stroke-linecap="round"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="91" cy="84" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M81 82Q81 69 92 69Q102 70 101 83L96 76H85Z" fill="#3A2E2B"/><path d="M80 98Q91 91 102 98L108 124H74Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M84 100L112 111L137 109" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M84 100L112 111L137 109" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M84 123L80 148M99 123L104 148" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M84 123L80 148M99 123L104 148" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><circle cx="218" cy="83" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.7"/><path d="M208 81Q208 68 219 68Q229 69 228 82L223 75H212Z" fill="#57463E"/><path d="M207 97Q218 90 229 97L235 123H201Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M211 99L192 110L171 108" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M211 99L192 110L171 108" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M211 122L207 148M225 122L230 148" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M211 122L207 148M225 122L230 148" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M137 94H170V113H137Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M142 100H165" stroke="#C88446" stroke-width="1.3"/><path d="M171 84L177 84L177 91L171 91Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.1"/><circle cx="177" cy="87" r="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M181 87H186V94" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="150" cy="79" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="164" cy="78" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M147 104H162M151 109H166" stroke="#D89A6C" stroke-width="1.2"/><path d="M199 37L237 14L274 37" stroke="#FFFFFF" stroke-width="1.2"/><path d="M178 72V65M185 74L190 69" stroke="#F2C14E" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M117 81Q152 50 190 77Q205 89 192 100" fill="none" stroke="#4A72B2" stroke-width="1.7" stroke-dasharray="4 4"/><path d="M190 94L193 101L185 100" fill="none" stroke="#4A72B2" stroke-width="1.7"/><circle cx="151" cy="102" r="25" fill="#FEF3C7" opacity=".16"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: major (Noun)
+  CONTEXTUAL_DEFINITION: A student's main subject of study at a college or university.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through a focused choice
+  SYNONYM_GUARD: One subject among several study materials is strongly emphasized as the learner's chosen academic specialization, not the adjective meaning large.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University study desk with several course resources.
+    - Context_Layer: Muted books and models from different fields.
+    - Focal_Layer: Student selects one emphasized subject folder and matching specimen.
+    - Details_Layer: Other study fields remain smaller and subdued.
+    - Lighting_Layer: Gold halo around the chosen field.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:major" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="major-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="major-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#major-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 29H96V82H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M59 30V81M23 55H95" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="42" y="97" width="40" height="43" rx="3" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M49 106H75M49 113H72M49 120H70" stroke="#AFC5DA" stroke-width="1.6"/><path d="M219 104L235 89L251 104V137H219Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M222 104L235 91L248 104" fill="none" stroke="#AFC5DA" stroke-width="1.2"/><circle cx="266" cy="116" r="16" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M251 116H281M266 101V131" stroke="#AFC5DA" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#major-shadow)"><ellipse cx="151" cy="106" rx="66" ry="60" fill="#FEF9C3" opacity=".45"/><rect x="103" y="62" width="91" height="79" rx="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M112 72H185M112 81H181" stroke="#DCECFB" stroke-width="2"/><path d="M115 125V98M115 125H181" stroke="#315782" stroke-width="1.5"/><path d="M121 116L134 108L146 112L162 93L176 100" fill="none" stroke="#D9857F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="162" cy="93" r="3" fill="#FEF9C3"/><path d="M128 64L143 48L159 63" fill="#91A77C" stroke="#55704D" stroke-width="1.5"/><path d="M126 71Q133 66 140 71V89Q133 94 126 89Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.2"/><path d="M198 112L211 103L221 112V140H198Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><circle cx="204" cy="119" r="3" fill="#D9A441"/><path d="M205 136L212 122L218 136Z" fill="#91A77C" stroke="#55704D" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M69 143H220" stroke="#A98A64" stroke-width="2.5"/><path d="M73 131Q85 124 95 130" fill="none" stroke="#64748B" stroke-width="1.5"/><path d="M98 55Q150 29 202 55" fill="none" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 6" opacity=".8"/><circle cx="151" cy="48" r="4" fill="#D9A441"/><path d="M205 81L212 76M224 75L229 69" stroke="#AFC5DA" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="100" rx="123" ry="74" fill="#FEF9C3" opacity=".07"/><path d="M103 63H194" stroke="#FFFFFF" stroke-width="2" opacity=".76"/></g>
+</svg>

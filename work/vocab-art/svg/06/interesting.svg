@@ -1,0 +1,59 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: interesting (Adjective)
+  CONTEXTUAL_DEFINITION: Holding someone's attention because there is something engaging to notice and explore.
+  PEDAGOGICAL_ARCHETYPE: 3 (Person's attention visibly captured by a concrete object)
+  SYNONYM_GUARD: A child studies a working marble-and-gear exhibit; the curiosity is sustained and focused, not startled surprise.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Ivory science gallery, pale blue floor line.
+    - Context_Layer: Young visitor leaning toward the exhibit with an intent gaze.
+    - Focal_Layer: Transparent tabletop gear maze with colored marbles and a turning wheel.
+    - Details_Layer: Gear teeth, curved marble track, tiny moving sphere, curious finger.
+    - Lighting_Layer: Cool glass glints and soft golden exhibit halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:interesting" data-archetype="expressive-bust">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCEAF4"/><stop offset="0.5" stop-color="#F6FCFF"/><stop offset="1" stop-color="#C7DBE9"/></linearGradient>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#wall)"/>
+    <path d="M0 151 Q150 144 304 151 L304 192 L0 192Z" fill="#EAE3D5"/>
+    <ellipse cx="192" cy="159" rx="94" ry="8" fill="#DDD4C3"/>
+    <rect x="180" y="28" width="96" height="78" rx="14" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.6"/>
+  </g>
+  <g id="layer-context">
+    <path d="M28 152 Q31 123 55 119 Q79 123 82 152Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M45 121 L44 108 L65 108 L63 122" fill="#E5A283" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="55" cy="87" r="21" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M34 86 Q34 63 57 65 Q77 67 76 87 Q65 78 54 78 Q44 84 34 86Z" fill="#6B4B35" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M45 88 Q49 84 53 88 M60 88 Q64 84 68 88" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M49 98 Q56 102 63 97" fill="none" stroke="#A34F47" stroke-width="2" stroke-linecap="round"/>
+    <path d="M71 120 Q88 112 105 107 Q112 105 114 111 Q113 116 106 118 L81 135" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M114 110 L124 106" stroke="#1E2A3B" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g id="layer-focal">
+    <rect x="111" y="118" width="166" height="24" rx="7" fill="#B97840" stroke="#1E2A3B" stroke-width="2.3"/>
+    <path d="M123 143 L123 155 M265 143 L265 155" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+    <rect x="130" y="63" width="126" height="57" rx="9" fill="url(#glass)" stroke="#1E2A3B" stroke-width="2.4"/>
+    <path d="M141 107 C151 69 178 72 185 93 C191 110 207 108 212 89 C218 65 244 72 247 94" fill="none" stroke="#5479AC" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="156" cy="82" r="12" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/>
+    <circle cx="185" cy="90" r="8" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.8"/>
+    <circle cx="223" cy="85" r="10" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/>
+    <path d="M156 70 L156 94 M144 82 L168 82 M185 82 L185 98 M178 90 L192 90 M223 75 L223 95 M213 85 L233 85" stroke="#1E2A3B" stroke-width="1.5"/>
+    <circle cx="145" cy="103" r="4.5" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="1.2"/>
+    <path d="M151 117 Q164 111 174 117" fill="none" stroke="#F2C14E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M95 72 L101 61 L107 72 L118 78 L107 84 L101 95 L95 84 L84 78Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.2"/>
+    <path d="M245 49 L249 41 L253 49 L261 53 L253 57 L249 65 L245 57 L237 53Z" fill="#F2C14E"/>
+    <path d="M135 125 Q151 129 167 125 M132 68 Q146 61 158 67" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+    <path d="M68 103 L75 98 M75 108 L84 105" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M137 70 Q146 65 154 68 M134 76 L134 98" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M119 160 Q194 165 269 160" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.55"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

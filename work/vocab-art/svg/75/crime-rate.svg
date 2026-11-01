@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:crime rate" data-archetype="repeated-non-graphic-property-incidents-across-a-city-block">
+<!-- SELF_PROMPT: Lesson 75 urban life; crime rate. Use a restrained city-block infographic with multiple separate property incidents to suggest frequency; no victims, weapons, text, or numerals. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="crime-sky" x2="0" y2="1"><stop stop-color="#DCE7E7"/><stop offset="1" stop-color="#C3C9BC"/></linearGradient>
+  <linearGradient id="crime-block" x2="0" y2="1"><stop stop-color="#859499"/><stop offset="1" stop-color="#596B70"/></linearGradient>
+  <linearGradient id="crime-ground" x2="0" y2="1"><stop stop-color="#9E9A82"/><stop offset="1" stop-color="#6F766D"/></linearGradient>
+  <linearGradient id="crime-mark" x2="0" y2="1"><stop stop-color="#D98668"/><stop offset="1" stop-color="#A9564D"/></linearGradient>
+  <filter id="crime-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".19"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#crime-sky)"/><circle cx="255" cy="32" r="12" fill="#E9C66F" opacity=".45"/><path d="M0 119V47h48v72Zm48 0V27h51v92Zm158 0V44h45v75Zm45 0V23h53v96Z" fill="url(#crime-block)"/><path d="M0 122H304V192H0Z" fill="url(#crime-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 151Q69 140 131 151T247 149Q278 141 304 149V192H0Z" fill="#85836F"/><path d="M24 142h256" fill="none" stroke="#D9CDAE" stroke-width="2"/>
+  <path d="M17 66h15v18H17Zm26 0h15v18H43Zm-26 27h15v18H17Zm26 0h15v18H43Zm35-52h16v18H78Zm25 0h15v18h-15Zm-25 29h16v18H78Zm25 0h15v18h-15Zm104-9h15v18h-15Zm25 0h15v18h-15Zm-25 28h15v18h-15Zm25 0h15v18h-15Zm33-37h15v18h-15Zm25 0h15v18h-15Z" fill="#CBD4D0" opacity=".78"/>
+  <path d="M0 164h304" fill="none" stroke="#676D68" stroke-width="1.4"/><path d="M18 171h38m54 0h41m62 0h51" fill="none" stroke="#D3C9AD" stroke-width="1.2"/>
+</g>
+<g id="layer-focal" filter="url(#crime-shadow)">
+  <path d="M55 52H250V146H55Z" fill="#E4E1D4" opacity=".94" stroke="#667072" stroke-width="1.5"/>
+  <path d="M73 129H234" fill="none" stroke="#58666B" stroke-width="2.2"/>
+  <path d="M85 129V106h31v23Zm53 0V87h31v42Zm53 0V66h31v63Z" fill="url(#crime-mark)" stroke="#775B4F" stroke-width="1.4"/>
+  <circle cx="100" cy="117" r="3" fill="#F7E7C7"/><circle cx="153" cy="117" r="3" fill="#F7E7C7"/><circle cx="153" cy="101" r="3" fill="#F7E7C7"/><circle cx="207" cy="117" r="3" fill="#F7E7C7"/><circle cx="207" cy="101" r="3" fill="#F7E7C7"/><circle cx="207" cy="81" r="3" fill="#F7E7C7"/>
+  <path d="M100 98L153 79 207 58" fill="none" stroke="#B96157" stroke-width="2.2"/><circle cx="100" cy="98" r="4" fill="#E7C26E" stroke="#775B4F" stroke-width="1"/><circle cx="153" cy="79" r="4" fill="#E7C26E" stroke="#775B4F" stroke-width="1"/><circle cx="207" cy="58" r="4" fill="#E7C26E" stroke="#775B4F" stroke-width="1"/>
+  <path d="M78 140h14m-7-7v7m53 0h14m-7-7v7m53 0h14m-7-7v7" fill="none" stroke="#6A716D" stroke-width="1.4"/>
+</g>
+<g id="layer-details">
+  <path d="M13 183q12-5 23 0m52 7q12-5 23 0m107-3q12-5 23 0m47-8q12-5 22 0" fill="none" stroke="#BEC58F" stroke-width="1.4"/>
+  <circle cx="73" cy="156" r="1.8" fill="#E9C66F"/><circle cx="177" cy="160" r="1.8" fill="#E9C66F"/><circle cx="267" cy="156" r="1.8" fill="#E9C66F"/>
+  <path d="M70 136h24m69 0h23m53 0h25" fill="none" stroke="#E8D8B8" stroke-width="1.2"/>
+  <path d="M78 128v-6m77 6v-6m88 6v-6" fill="none" stroke="#A6785D" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M19 144h50m44 0h47m44 0h48" fill="none" stroke="#F0E3C2" stroke-width="1.2"/><path d="M18 60h42m70 0h10m78 0h17" fill="none" stroke="#D9A175" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: trout (noun)
+  CONTEXTUAL_DEFINITION: A trout in a cool clear stream, with small spots covering its back and sides.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero fish with a contrasting scale pattern
+  SYNONYM_GUARD: Mark the body with many small dark spots and a pale underside; keep a live fish in flowing water rather than a cooked dish.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Silver-green trout faces right through a rocky stream; body x=83..220 y=73..126, forked tail at left, dorsal and pectoral fins, scattered dark round spots across back and flank, pale belly.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:trout" data-archetype="trout-speckled-stream-fish">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#77958C;--c-secondary:#435B59;--c-accent:#D9A64B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="trout-water" x2="0" y2="1"><stop stop-color="#B3D6D2"/><stop offset="1" stop-color="#518E9B"/></linearGradient>
+  <linearGradient id="trout-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B4C9B8"/><stop offset="1" stop-color="#6D8A83"/></linearGradient>
+  <filter id="trout-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DFECE8"/><path d="M0 26Q75 19 151 27T304 23V192H0Z" fill="url(#trout-water)"/><path d="M0 158Q76 150 153 159T304 154V192H0Z" fill="#588F98"/></g>
+ <g id="layer-context"><path d="M0 29q35-7 68 0m173-3q30-6 63 0" fill="none" stroke="#DCEFE7" stroke-width="1.5"/><path d="M0 116q18-7 36 0m229-4q18-6 39 0" fill="none" stroke="#C6E4DE" stroke-width="1.4"/><path d="M23 169l15-16 16 16m191-1 18-20 16 20" fill="#8FA49A" stroke="#6D827A" stroke-width="1.2"/><circle cx="54" cy="91" r="2" fill="#EAF8F1"/><circle cx="62" cy="82" r="1.2" fill="#EAF8F1"/><ellipse cx="150" cy="145" rx="74" ry="6" fill="#1B444A" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#trout-shadow)">
+  <path d="M219 93Q237 82 250 74Q248 93 233 102Q245 113 248 128Q230 122 216 108Z" fill="#718E8B" stroke="#465E5C" stroke-width="1.4"/>
+  <path d="M222 95Q205 79 173 75Q139 70 111 81Q93 88 83 100Q91 114 111 122Q145 134 182 125Q210 117 222 106Z" fill="url(#trout-body)" stroke="#465E5C" stroke-width="1.5"/>
+  <path d="M211 98Q177 91 145 94Q112 95 88 103Q107 112 144 115Q185 116 216 106Z" fill="#E0D9C8" opacity=".83"/>
+  <path d="M143 77Q150 64 162 67L174 78Z" fill="#68857F" stroke="#465E5C" stroke-width="1.1"/>
+  <path d="M151 124Q161 136 175 131L181 122Z" fill="#708C87" stroke="#465E5C" stroke-width="1"/>
+  <path d="M169 111Q157 117 149 127Q163 129 177 119Z" fill="#65827E" stroke="#465E5C" stroke-width="1"/>
+  <path d="M89 94Q82 99 80 103Q84 108 91 108" fill="none" stroke="#465E5C" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="91" cy="94" r="1.9" fill="#1E2A3B"/>
+  <path d="M82 109q-6 2-11-1" fill="none" stroke="#405B59" stroke-width="1" stroke-linecap="round"/>
+  <g fill="#3F5B58"><circle cx="112" cy="86" r="1.4"/><circle cx="123" cy="82" r="1.2"/><circle cx="136" cy="86" r="1.4"/><circle cx="149" cy="81" r="1.2"/><circle cx="162" cy="86" r="1.3"/><circle cx="176" cy="82" r="1.2"/><circle cx="190" cy="88" r="1.4"/><circle cx="204" cy="91" r="1.2"/><circle cx="119" cy="98" r="1.2"/><circle cx="136" cy="103" r="1.4"/><circle cx="155" cy="99" r="1.2"/><circle cx="175" cy="103" r="1.4"/><circle cx="194" cy="99" r="1.2"/></g>
+ </g>
+ <g id="layer-details"><path d="M111 78q15-8 31-5m29 2q12 1 19 5" fill="none" stroke="#F1F6E9" stroke-width="1.4" opacity=".78" stroke-linecap="round"/><circle cx="232" cy="65" r="1.5" fill="#F6FBF3"/><path d="M34 134q13-5 26 0m187-4q14-5 28 0" fill="none" stroke="#D7ECE5" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M119 83q13-9 28-7m34 3q11 1 19 6" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".54" stroke-linecap="round"/><ellipse cx="152" cy="96" rx="59" ry="20" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

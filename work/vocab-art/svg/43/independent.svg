@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: independent
+  CONTEXTUAL_DEFINITION: Able to work alone and make progress without constant help.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker planning and completing a task on their own using available resources.
+  PEDAGOGICAL_ARCHETYPE: 17 - Self-directed work
+  SYNONYM_GUARD: Depict capable autonomy, not social isolation or refusal to be a team player.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center one worker at a desk independently consulting a blank reference page and completing a clear task. Leave the space beside them open; show a small finished check on their own board.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:independent" data-archetype="self-directed-work">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="independent-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="independent-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="independent-halo"><stop stop-color="#FFF1B9" stop-opacity=".68"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="independent-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="166" y="40" width="69" height="56" rx="3" fill="url(#independent-board)" stroke="#547A56" stroke-width="1.1"/><path d="M175 52 H224 M175 59 H219 M175 67 H225" stroke="#CBD5E1" stroke-width="1"/><path d="M177 82 L185 88 L198 73" fill="none" stroke="#547A56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 135 H269 V145 H35 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M48 145 V155 M256 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="70" y="75" width="45" height="53" rx="2" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><path d="M78 86 H106 M78 93 H102 M78 101 H106 M78 108 H99" stroke="#CBD5E1" stroke-width="1"/><circle cx="92" cy="117" r="4" fill="#F7E8BF" stroke="#C88446" stroke-width=".8"/><path d="M115 101 H145" stroke="#64748B" stroke-width="1" stroke-dasharray="3 2"/><path d="M140 97 L146 101 L140 105" fill="none" stroke="#64748B" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#independent-shadow)"><path d="M116 126 Q118 101 132 94 L133 84 Q129 80 131 72 Q139 64 150 67 Q160 70 157 81 L155 88 Q169 94 171 123 L168 135 H120 Z" fill="url(#independent-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="145" cy="75" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M136 73 Q138 65 146 65 Q154 66 158 73 Q150 69 143 70 Z" fill="#3D342D"/><path d="M125 99 Q145 93 164 99" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M125 104 L114 109 M162 104 L177 97" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M114 109 L105 111 M177 97 L189 92" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/><path d="M132 117 H157" stroke="#DCE8D9" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M58 50 L64 46 M244 63 L251 59" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="128" cy="56" r="2" fill="#8EB0DE"/><circle cx="245" cy="112" r="2" fill="#A8D4A2"/><path d="M172 101 H229" stroke="#FFFFFF" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="81" rx="101" ry="66" fill="url(#independent-halo)" opacity=".15"/><path d="M166 41 H235" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

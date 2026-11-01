@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: review (Verb)
+  CONTEXTUAL_DEFINITION: Look back over material already studied to strengthen understanding.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a learner rereading completed notes and a previously used book, distinct from making corrections or receiving feedback.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Familiar quiet library desk.
+    - Context_Layer: Closed book and small stack of completed notes.
+    - Focal_Layer: Student rereads earlier material, tracing a key diagram with a finger.
+    - Details_Layer: Previously checked note cards and a bookmark.
+    - Lighting_Layer: Gentle light over the well-used study materials.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:review" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="review-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="review-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#review-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H88V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V74M21 49H87" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M39 121H86V138H39Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M45 126H79" stroke="#DCECFB" stroke-width="1.1"/><path d="M221 38H278V104H221Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M229 50H268M229 60H268M229 70H268M229 80H268" stroke="#AFC5DA" stroke-width="1.2"/><path d="M236 44L242 49L250 41" fill="none" stroke="#91A77C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M225 112L275 112L275 124L225 124Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#review-shadow)"><path d="M59 112H258V121H59Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M71 121V149M245 121V149" stroke="#8D765A" stroke-width="3"/><path d="M118 91L160 86L164 131L121 136Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.3"/><path d="M160 86L206 91L202 135L164 131Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.5"/><path d="M126 101L152 98M127 110L153 107M128 120L154 117M171 101L194 104M170 111L193 114M169 121L191 124" stroke="#88A9D0" stroke-width="1.2"/><circle cx="90" cy="67" r="11" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M79 67Q80 53 91 54Q102 55 101 68L95 71Q92 61 87 62Q83 63 81 73Z" fill="#27364B"/><path d="M74 84Q89 77 105 84L112 105L101 116L78 108Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M82 87L105 102L128 105" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M82 87L105 102L128 105" fill="none" stroke="#E7B99B" stroke-width="2.6" stroke-linecap="round"/><path d="M92 112L86 146M101 113L114 146" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M174 97L186 111" stroke="#D9A441" stroke-width="2.2"/><circle cx="180" cy="105" r="3" fill="#D9857F"/><path d="M208 97L214 94" stroke="#91A77C" stroke-width="2"/><path d="M214 106L220 103" stroke="#91A77C" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="97" rx="125" ry="68" fill="#FEF9C3" opacity=".1"/><path d="M20 25H88V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M160 86L206 91L202 135" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

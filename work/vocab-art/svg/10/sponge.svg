@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: sponge (Noun)
+  CONTEXTUAL_DEFINITION: A soft porous bathing sponge used with water and soap to wash the body.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a single porous bath sponge with irregular holes and foamy lather, not a regular rectangular cleaning block.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom tiles and a wet ledge.
+    - Context_Layer: A few soap bubbles.
+    - Focal_Layer: Rounded natural sponge with irregular porous surface.
+    - Details_Layer: Water drops and several open pores.
+    - Lighting_Layer: Warm sponge against cool water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:sponge" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V149 M122 0 V149 M183 0 V149 M244 0 V149" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="152" cy="169" rx="75" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><circle cx="211" cy="51" r="8" fill="#FFFFFF" stroke="#DCECFB" stroke-width="1.4"/><circle cx="232" cy="69" r="5" fill="#FFFFFF" stroke="#DCECFB" stroke-width="1.2"/><circle cx="198" cy="82" r="4" fill="#FFFFFF"/><path d="M65 143 H238" stroke="#5479AC" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M76 99 Q72 81 88 71 Q96 57 112 63 Q124 50 141 61 Q156 53 171 66 Q189 63 195 81 Q209 91 200 108 Q203 125 185 132 Q171 147 154 137 Q139 149 124 137 Q104 143 95 129 Q78 124 76 99Z" fill="#E0A94F" stroke="#1E2A3B" stroke-width="2.7"/><path d="M85 88 Q105 71 124 80 M143 70 Q160 65 177 80 M88 112 Q106 98 122 110 M136 127 Q154 111 172 127" fill="none" stroke="#F3C875" stroke-width="2"/><ellipse cx="104" cy="88" rx="7" ry="5" fill="#B97840"/><ellipse cx="138" cy="93" rx="8" ry="6" fill="#B97840"/><ellipse cx="173" cy="93" rx="6" ry="5" fill="#B97840"/><ellipse cx="116" cy="119" rx="6" ry="5" fill="#B97840"/><ellipse cx="158" cy="113" rx="8" ry="6" fill="#B97840"/><ellipse cx="187" cy="114" rx="4" ry="3" fill="#B97840"/></g>
+  <g id="layer-details"><circle cx="95" cy="81" r="2" fill="#FFFFFF"/><circle cx="182" cy="74" r="2" fill="#FFFFFF"/><path d="M14 13 H290 V179 H14Z" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

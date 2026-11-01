@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: accurate
+  CONTEXTUAL_DEFINITION: Correct and exact in every important detail.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker carefully measuring and matching a result to its reference.
+  PEDAGOGICAL_ARCHETYPE: 1 - Exact measurement
+  SYNONYM_GUARD: Emphasize a correct, precise result rather than speed, efficiency, or carefulness alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place an adult craft worker at x=89..142 using a compact measuring caliper on a clean sample at x=174..232. Add an aligned reference line and a small green confirmation check above the sample.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:accurate" data-archetype="exact-measurement">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="accurate-sample" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="accurate-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="accurate-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="accurate-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M34 134 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="178" y="82" width="57" height="40" rx="3" fill="url(#accurate-sample)" stroke="#547A56" stroke-width="1.1"/><path d="M185 112 L197 99 L208 106 L225 88" fill="none" stroke="#547A56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M183 91 H229" stroke="#CBD5E1" stroke-width=".9"/><path d="M207 59 L214 66 L228 51" fill="none" stroke="#547A56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M178 77 H235" stroke="#64748B" stroke-width="1" stroke-dasharray="3 2"/></g>
+  <g id="layer-focal" filter="url(#accurate-shadow)"><path d="M76 128 Q78 103 91 96 L92 87 Q88 83 90 75 Q98 67 109 70 Q118 73 116 84 L114 91 Q127 97 129 125 L126 136 H80 Z" fill="url(#accurate-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="103" cy="79" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M94 77 Q96 69 104 69 Q112 70 116 77 Q108 73 101 74 Z" fill="#3D342D"/><path d="M85 103 Q103 97 121 103" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M119 104 L142 92 M124 108 L163 99" stroke="#D89A6C" stroke-width="3.4" stroke-linecap="round"/><path d="M139 87 L168 87 L168 92 L139 92 Z M145 82 V96 M161 82 V96" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="168" cy="89" r="2.3" fill="#F2C14E" stroke="#C88446" stroke-width=".7"/></g>
+  <g id="layer-details"><path d="M183 126 H231" stroke="#DCE8D9" stroke-width="1"/><circle cx="151" cy="60" r="2" fill="#8EB0DE"/><circle cx="246" cy="72" r="2" fill="#A8D4A2"/><path d="M61 65 L68 60 M240 52 L246 48" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="82" rx="102" ry="66" fill="url(#accurate-halo)" opacity=".16"/><path d="M178 84 H233" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

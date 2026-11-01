@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bin (Noun)
+  CONTEXTUAL_DEFINITION: A large covered container used to store bulk household supplies.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a broad square lidded storage bin with a scoop of grain, distinct from a narrow waste can.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pantry floor.
+    - Context_Layer: Plain wall.
+    - Focal_Layer: Large lidded wooden storage bin.
+    - Details_Layer: Hinged lid, grain, and small scoop.
+    - Lighting_Layer: Warm upper-left light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bin" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 154 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 154 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="169" rx="73" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M90 72 H214 V155 H90Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.6"/><path d="M101 82 H203 V145 H101Z" fill="#D69A62" stroke="#8A5A35" stroke-width="1.5"/><path d="M81 70 L101 54 H227 L213 72Z" fill="#C98B54" stroke="#1E2A3B" stroke-width="2.4"/><path d="M94 64 L109 51 H233 L220 66Z" fill="#E2B580" stroke="#8A5A35" stroke-width="1.5"/><path d="M95 154 V162 M209 154 V162" stroke="#8A5A35" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M102 83 Q151 94 202 82 V100 Q152 111 102 100Z" fill="#E8D9B8"/><circle cx="116" cy="91" r="2" fill="#CFAF78"/><circle cx="129" cy="96" r="2" fill="#CFAF78"/><circle cx="143" cy="93" r="2" fill="#CFAF78"/><circle cx="158" cy="98" r="2" fill="#CFAF78"/><circle cx="173" cy="92" r="2" fill="#CFAF78"/><circle cx="188" cy="96" r="2" fill="#CFAF78"/><path d="M182 119 L222 101" stroke="#8A5A35" stroke-width="8" stroke-linecap="round"/><path d="M179 119 L220 100" stroke="#E8D9B8" stroke-width="4" stroke-linecap="round"/><path d="M217 97 L227 97 L225 106 L218 108Z" fill="#C98B54" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M94 77 H210" stroke="#E9B47E" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

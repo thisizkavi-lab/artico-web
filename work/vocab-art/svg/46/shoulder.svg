@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: shoulder (road)
+  CONTEXTUAL_DEFINITION: The narrow strip beside a road where a vehicle can pull off the travel lane.
+  PEDAGOGICAL_ART_DIRECTOR: Show a quiet country road with a car pulled onto a narrow gravel verge and grass beyond it.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make the road edge a simple gravel shoulder, distinct from the broad paved motorway hard shoulder.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A country road runs vertically through x=86..218; a narrow gravel shoulder occupies x=218..247 and a car is pulled onto it; grass and field sit beyond.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:shoulder (road)" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="shoulder-field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DDEAD6"/><stop offset="1" stop-color="#B9D0AD"/></linearGradient>
+  <linearGradient id="shoulder-asphalt" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#687B8C"/><stop offset="1" stop-color="#4A5D70"/></linearGradient>
+  <linearGradient id="shoulder-gravel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D3C7AD"/><stop offset="1" stop-color="#B2A489"/></linearGradient>
+  <filter id="shoulder-edge-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#shoulder-field)"/><path d="M12 23Q50 5 79 20T85 51V145Q54 165 15 151Z" fill="#A7C495"/><path d="M221 16Q257 7 290 25V158Q254 176 220 155Z" fill="#A7C495"/><path d="M81 12H222V180H81Z" fill="#EEECE4" stroke="#78847A" stroke-width="1.5"/><path d="M88 12H213V180H88Z" fill="url(#shoulder-asphalt)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M213 12H245V180H213Z" fill="url(#shoulder-gravel)" stroke="#8A806F" stroke-width="1.4"/><path d="M218 16V176" stroke="#F8F5EA" stroke-width="2.5"/><path d="M151 17V176" stroke="#F8F5EA" stroke-width="1.6" stroke-dasharray="10 10" opacity=".75"/></g>
+ <g id="layer-context"><circle cx="38" cy="73" r="17" fill="#7EA878" stroke="#486750" stroke-width="1.5"/><circle cx="37" cy="71" r="7" fill="#A7CA91"/><circle cx="275" cy="52" r="18" fill="#7EA878" stroke="#486750" stroke-width="1.5"/><circle cx="275" cy="51" r="8" fill="#A7CA91"/><path d="M16 113H65M256 115H293" stroke="#87A47C" stroke-width="2"/><path d="M23 135L43 120M258 144L281 126" stroke="#8FA882" stroke-width="1.3"/></g>
+ <g id="layer-focal" filter="url(#shoulder-edge-shadow)"><g transform="translate(218 78) rotate(90 16 13)"><path d="M4 4Q6 0 12 0H20Q26 1 28 7L30 21H2Z" fill="#D79056" stroke="#1E2A3B" stroke-width="1.7"/><path d="M8 5H22L25 12H6Z" fill="#BCD8E0" stroke="#526274" stroke-width="1"/><circle cx="7" cy="20" r="2.4" fill="#36485A"/><circle cx="25" cy="20" r="2.4" fill="#36485A"/><path d="M3 7L0 10M29 7L32 10" stroke="#F2C14E" stroke-width="1.6"/></g><path d="M231 63L237 56M231 124L237 131" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M224 29H241M224 162H241" stroke="#8A806F" stroke-width="1.2"/><circle cx="227" cy="43" r="1.4" fill="#827967"/><circle cx="237" cy="48" r="1.5" fill="#827967"/><circle cx="229" cy="59" r="1.2" fill="#827967"/><circle cx="239" cy="69" r="1.4" fill="#827967"/><circle cx="226" cy="143" r="1.5" fill="#827967"/><circle cx="238" cy="150" r="1.2" fill="#827967"/><path d="M96 41H203M96 151H203" stroke="#A9B5BF" stroke-width="1" opacity=".5"/><path d="M67 24V57M262 25V44" stroke="#8EA782" stroke-width="1.4"/></g>
+ <g id="layer-lighting"><path d="M90 14H211M90 178H211" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><ellipse cx="229" cy="96" rx="18" ry="43" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".6"/><circle cx="229" cy="96" r="3" fill="#F2C14E"/></g>
+</svg>

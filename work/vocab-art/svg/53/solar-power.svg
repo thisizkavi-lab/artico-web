@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:solar power" data-archetype="sunlight-converted-into-electricity-and-household-light">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; solar power. Show sunlight captured by rooftop panels and converted to electricity that lights a small home; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="solar-sky" x2="0" y2="1"><stop stop-color="#E4F0E7"/><stop offset="1" stop-color="#C2D8C6"/></linearGradient>
+  <linearGradient id="solar-house" x2="0" y2="1"><stop stop-color="#D3B47B"/><stop offset="1" stop-color="#997351"/></linearGradient>
+  <linearGradient id="solar-panel" x2="1" y2="1"><stop stop-color="#75AEB8"/><stop offset="1" stop-color="#355D71"/></linearGradient>
+  <linearGradient id="solar-ground" x2="0" y2="1"><stop stop-color="#92A97A"/><stop offset="1" stop-color="#627C59"/></linearGradient>
+  <radialGradient id="solar-sun"><stop stop-color="#FFE18D"/><stop offset="1" stop-color="#E7B34C"/></radialGradient>
+  <filter id="solar-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#solar-sky)"/><circle cx="244" cy="39" r="25" fill="#EBC86F" opacity=".18"/><circle cx="244" cy="39" r="15" fill="url(#solar-sun)"/><path d="M0 126Q74 111 149 125T304 120V192H0Z" fill="url(#solar-ground)"/><path d="M0 165Q72 151 144 164T304 158V192H0Z" fill="#6E895E"/></g>
+<g id="layer-context">
+  <path d="M57 154V91L117 54 181 91V154Z" fill="url(#solar-house)" stroke="#4D5B4F" stroke-width="1.6"/><path d="M47 94l70-48 73 48Z" fill="#805F4A" stroke="#4D5B4F" stroke-width="1.6"/>
+  <rect x="108" y="111" width="25" height="43" fill="#576966"/><rect x="71" y="106" width="20" height="18" fill="#F1D78D"/><rect x="147" y="106" width="20" height="18" fill="#F1D78D"/>
+  <path d="M71 82L113 60 148 80 106 103Z" fill="url(#solar-panel)" stroke="#365C6E" stroke-width="1.5"/><path d="M83 77l34 19m-18-28-12 29m31-19-11 19" fill="none" stroke="#C0DEDC" stroke-width="1.2"/>
+</g>
+<g id="layer-focal" filter="url(#solar-shadow)">
+  <path d="M187 53L157 79m34-20-13 35m24-36 2 32" fill="none" stroke="#E4B04D" stroke-width="2"/>
+  <path d="M161 78Q152 92 145 104" fill="none" stroke="#F2CA6A" stroke-width="2.2" stroke-dasharray="3 5"/>
+  <path d="M145 104Q168 107 187 105" fill="none" stroke="#F2CA6A" stroke-width="2"/>
+  <path d="M155 110Q169 94 185 105Q195 117 184 127Q169 133 157 124Z" fill="#F5D879" opacity=".72"/>
+  <path d="M161 115q8-8 16 0m-15 6q8-7 16 0" fill="none" stroke="#FFF8DC" stroke-width="1.5"/>
+  <path d="M104 153v-28m34 29v-24m-34 13h34" fill="none" stroke="#B5B59B" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M22 174q13-5 24 0m194 5q13-5 24 0m-151 2q12-4 23 0" fill="none" stroke="#A9C58E" stroke-width="1.4"/>
+  <circle cx="44" cy="147" r="1.8" fill="#F2ECD2"/><circle cx="200" cy="155" r="1.7" fill="#F2ECD2"/><circle cx="274" cy="177" r="1.6" fill="#F2ECD2"/>
+  <path d="M206 83q10-5 19 0m-181 8q11-4 20 0" fill="none" stroke="#EFF6E9" stroke-width="1.4"/>
+  <path d="M218 163l4-9 5 9m-193 2 4-8 4 8" fill="none" stroke="#6D8D5E" stroke-width="1.5"/>
+</g>
+<g id="layer-lighting"><path d="M183 53l-24 23m35-18-12 34" fill="none" stroke="#FFF5CB" stroke-width="1.3"/><path d="M51 93l65-44 64 44" fill="none" stroke="#D8C294" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

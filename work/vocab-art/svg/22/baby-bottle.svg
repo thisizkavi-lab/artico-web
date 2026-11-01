@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: baby bottle (Noun)
+  CONTEXTUAL_DEFINITION: A narrow feeding bottle with a rubber teat.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The clear graduated bottle has a tapered nipple and protective ring, distinguishing it from a broad-necked screw-cap storage bottle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale nursery shelf.
+    - Context_Layer: Soft cloth and small cup nearby.
+    - Focal_Layer: One upright translucent feeding bottle with teat.
+    - Details_Layer: Measurement ticks, milk, screw ring, and nipple.
+    - Lighting_Layer: Bright clean highlight on the bottle side.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:baby bottle" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="babybottle-glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DCECFB"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient><filter id="babybottle-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 153Q78 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M33 50H271V148H33Z" fill="#E3E8F0"/><path d="M42 61H262V138H42Z" fill="#EEF4FA"/><path d="M51 151V166M254 151V166" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M43 133Q62 126 82 133V145H43Z" fill="#D9857F"/><path d="M218 132H256V146H218Z" fill="#829A83" stroke="#64748B" stroke-width="1.4"/><ellipse cx="237" cy="132" rx="19" ry="5" fill="#F3ECE1" stroke="#64748B" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#babybottle-shadow)"><path d="M137 67H167V78Q167 84 173 89Q182 97 182 111V143Q182 151 174 151H130Q122 151 122 143V111Q122 97 131 89Q137 84 137 78Z" fill="url(#babybottle-glass)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M141 66V59H163V66" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M138 57Q138 51 152 45Q166 51 166 57V63H138Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/><path d="M145 48Q146 35 152 31Q158 35 159 48Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M127 120Q152 116 177 120V143Q177 147 172 147H132Q127 147 127 143Z" fill="#F3ECE1" opacity=".72"/><path d="M132 85V113M135 91H143M135 100H141M135 109H143" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/><path d="M139 59H165" stroke="#A95059" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M127 23Q152 15 178 23" fill="none" stroke="#FFFFFF" stroke-width="2.7"/><circle cx="111" cy="83" r="2.3" fill="#D9A441"/><circle cx="193" cy="84" r="2.3" fill="#D9A441"/><path d="M114 47Q122 42 129 47" fill="none" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="101" rx="63" ry="80" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".22"/><path d="M117 25Q152 14 188 25" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

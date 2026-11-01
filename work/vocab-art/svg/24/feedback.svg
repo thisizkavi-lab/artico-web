@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: feedback (Noun)
+  CONTEXTUAL_DEFINITION: Helpful comments that show a learner what is working and how to improve.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object in environment
+  SYNONYM_GUARD: Show constructive written guidance attached to a student's draft, not electronic signal feedback or a final grade alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Study desk and calm wall.
+    - Context_Layer: Student's draft and pencil.
+    - Focal_Layer: Returned paper with positive check marks and a clear improvement arrow.
+    - Details_Layer: Small comment bubbles and supportive symbols without writing.
+    - Lighting_Layer: Warm encouragement glow around the feedback page.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:feedback" data-archetype="object-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="feedback-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="feedback-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#feedback-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H88V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M54 25V74M21 49H87" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M43 121H89V139H43Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M48 126H83" stroke="#DCECFB" stroke-width="1.1"/><path d="M215 117H270V135H215Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/><path d="M223 122H262" stroke="#F9CED0" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#feedback-shadow)"><path d="M89 48L216 54L210 130L83 123Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.7"/><path d="M101 63L186 67M100 72L178 76M99 81L164 84M98 90L175 94M97 99L155 102" stroke="#88A9D0" stroke-width="1.3"/><path d="M97 70L105 76L114 65M95 96L103 102L112 91" fill="none" stroke="#91A77C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M164 106L174 106L183 96L191 84" fill="none" stroke="#D9857F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M187 84L191 83L191 89" fill="none" stroke="#D9857F" stroke-width="1.7"/><path d="M221 57Q234 46 249 54Q260 60 255 72Q250 84 235 81L225 88L228 78Q216 70 221 57Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.2"/><circle cx="231" cy="65" r="2" fill="#5479AC"/><circle cx="239" cy="65" r="2" fill="#5479AC"/><circle cx="247" cy="65" r="2" fill="#5479AC"/></g>
+  <g id="layer-details"><path d="M210 103L218 99" stroke="#D9A441" stroke-width="2"/><path d="M82 122L210 129" stroke="#AFC5DA" stroke-width="1"/><circle cx="73" cy="94" r="5" fill="#D9A441"/><path d="M70 94L73 97L78 90" fill="none" stroke="#FFFEFA" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="91" rx="128" ry="68" fill="#FEF9C3" opacity=".1"/><path d="M20 25H88V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M89 48L216 54L210 130" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: pain in the neck (Phrase)
+  CONTEXTUAL_DEFINITION: An annoying person or persistent nuisance.
+  PEDAGOGICAL_ARCHETYPE: 5 (Interruption or repeated inconvenience)
+  SYNONYM_GUARD: A focused worker rubs a sore neck while an intrusive coworker keeps leaning over their shoulder and interrupting.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm home work area.
+    - Context_Layer: A worker sits at a desk with a sketch and tools.
+    - Focal_Layer: The worker massages their neck as another person intrudes.
+    - Details_Layer: The interrupter gestures repeatedly beside the worker's head.
+    - Lighting_Layer: Desk lamp highlights the disrupted workspace.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:pain in the neck" data-archetype="annoying-interruption">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EDF0"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 151 Q152 142 304 151 L304 192 L0 192Z" fill="#D8DEE3"/><rect x="25" y="38" width="57" height="44" rx="5" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M52 38 L52 82 M25 60 L82 60" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-context"><rect x="82" y="133" width="148" height="10" rx="4" fill="#B97840"/><path d="M99 143 L96 161 M214 143 L217 161" stroke="#8A5A35" stroke-width="4"/><path d="M106 132 Q108 112 124 109 Q141 112 143 132Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="124" cy="97" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M110 96 Q111 80 125 82 Q137 83 138 97 Q130 90 123 91Z" fill="#27364B"/><path d="M132 111 Q147 104 155 93" fill="none" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><rect x="145" y="117" width="55" height="14" rx="2" fill="#E8D9B8" stroke="#8E7E60" stroke-width="1.5"/><path d="M152 124 L169 120 L181 126" fill="none" stroke="#7FB07A" stroke-width="2"/><path d="M94 114 L96 131 M221 114 L223 131" stroke="#1E2A3B" stroke-width="3"/></g>
+  <g id="layer-focal"><path d="M183 127 Q179 98 193 81 Q204 68 220 76 Q234 83 233 103 Q230 121 216 132Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="213" cy="69" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M200 68 Q201 52 214 54 Q226 55 227 69 Q219 63 212 64Z" fill="#27364B"/><path d="M200 88 Q184 102 167 103" fill="none" stroke="#F5BFA3" stroke-width="6" stroke-linecap="round"/><path d="M132 93 Q138 91 143 96 M169 92 Q175 88 180 93" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M110 100 Q119 106 128 100" fill="none" stroke="#A34F47" stroke-width="2"/><path d="M112 104 Q107 112 113 116" fill="none" stroke="#1E2A3B" stroke-width="3"/><path d="M202 107 Q211 111 220 107" fill="none" stroke="#A34F47" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M161 69 Q168 61 175 69 M164 61 Q171 53 178 61" fill="none" stroke="#CE3D4E" stroke-width="2" stroke-linecap="round"/><path d="M125 86 L130 79 M135 91 L143 87" stroke="#CE3D4E" stroke-width="2" stroke-linecap="round"/><path d="M252 84 Q259 76 266 84 M254 95 Q261 87 268 95" fill="none" stroke="#8B5CA8" stroke-width="2"/></g>
+  <g id="layer-lighting"><circle cx="271" cy="45" r="12" fill="#F2C14E" opacity="0.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.75"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: bed and breakfast
+  CONTEXTUAL_DEFINITION: A small hosted lodging that provides a guest room and a morning meal.
+  PEDAGOGICAL_ART_DIRECTOR: Combine a cozy guest bed visible in an inn room with a breakfast setting just outside its window.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show both the bed and the breakfast; this is a small hosted home, not a hotel room or a restaurant.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A warm cottage facade frames a large guest-room window with a made bed; beside the entrance, a breakfast tray holds a plate, bread, and a steaming cup.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:bed and breakfast" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="bnb-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D9EAF0"/><stop offset="1" stop-color="#F5EFE2"/></linearGradient>
+  <linearGradient id="bnb-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3D2B7"/><stop offset="1" stop-color="#C4A981"/></linearGradient>
+  <linearGradient id="bnb-linen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFEF7"/><stop offset="1" stop-color="#D7E1E3"/></linearGradient>
+  <filter id="bnb-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bnb-sky)"/><path d="M0 153Q63 138 119 151T232 147T304 153V192H0Z" fill="#A8BF99"/><path d="M17 162H286" stroke="#81967D" stroke-width="2"/><circle cx="27" cy="113" r="18" fill="#80A879" stroke="#486750" stroke-width="1.4"/><circle cx="280" cy="112" r="20" fill="#80A879" stroke="#486750" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M28 72L152 25L276 72Z" fill="#855D49" stroke="#1E2A3B" stroke-width="2"/><path d="M42 73H261V158H42Z" fill="url(#bnb-wall)" stroke="#1E2A3B" stroke-width="2"/><path d="M30 72H274" stroke="#D6B78D" stroke-width="5"/><rect x="228" y="97" width="26" height="61" fill="#705845" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="248" cy="129" r="2.5" fill="#F2C14E"/><path d="M219 97H262" stroke="#F4E4C9" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#bnb-shadow)"><rect x="55" y="84" width="148" height="67" rx="4" fill="#3F5361" stroke="#1E2A3B" stroke-width="2"/><rect x="62" y="91" width="134" height="53" fill="#DCE9E8"/><path d="M68 110H190V140H68Z" fill="#A9BFC4" stroke="#5D737B" stroke-width="1.4"/><path d="M68 122H190V143H68Z" fill="url(#bnb-linen)" stroke="#526274" stroke-width="1.3"/><path d="M73 115Q92 105 108 116V126H73Z" fill="#FBF8EE" stroke="#93A7AB" stroke-width="1.1"/><path d="M62 142H196" stroke="#526274" stroke-width="2.4"/><path d="M67 145V152M192 145V152" stroke="#755C48" stroke-width="3"/><rect x="69" y="153" width="93" height="5" rx="2" fill="#715D4D"/><path d="M91 87V101M170 87V101" stroke="#D8C7A9" stroke-width="1.2"/><path d="M84 101H177" stroke="#F7F2E7" stroke-width="1.4"/></g>
+ <g id="layer-details"><path d="M93 161H197V166H93Z" fill="#805D44" stroke="#1E2A3B" stroke-width="1.2"/><path d="M103 166V177M189 166V177" stroke="#604A3A" stroke-width="3"/><ellipse cx="151" cy="160" rx="20" ry="4" fill="#5E6259" opacity=".25"/><ellipse cx="132" cy="151" rx="12" ry="5.5" fill="#F8F5EA" stroke="#8E8170" stroke-width="1.2"/><path d="M124 151Q123 147 128 146Q132 143 135 148Q139 146 141 151Q136 155 124 151Z" fill="#E3AE58" stroke="#9D7041" stroke-width="1"/><path d="M127 148L130 151M133 147L136 151" stroke="#F5D58B" stroke-width="1"/><path d="M162 151Q162 137 172 137Q182 137 182 151Z" fill="#C16C47" stroke="#1E2A3B" stroke-width="1.2"/><path d="M183 148H190Q195 149 193 154H182" fill="#C16C47" stroke="#1E2A3B" stroke-width="1.1"/><path d="M168 134Q162 128 167 124M175 134Q181 128 176 123" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M144 151H148M187 151H191" stroke="#FFFFFF" stroke-width="1.2"/><circle cx="151" cy="151" r="3" fill="#E9B64E"/></g>
+ <g id="layer-lighting"><path d="M57 87H201" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><ellipse cx="151" cy="135" rx="72" ry="34" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".45"/><path d="M30 74L152 28L272 74" fill="none" stroke="#DDBE8D" stroke-width="1.5"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: transportation
+  CONTEXTUAL_DEFINITION: The connected system of vehicles and routes that moves people and goods from place to place.
+  PEDAGOGICAL_ART_DIRECTOR: Show multiple transport modes linked by a clear route network between an origin and destination.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial route diagram
+  SYNONYM_GUARD: Use a connected system of road, rail, water, and air modes; do not make one vehicle stand for all transportation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a small origin village at x=27..73 and destination hub at x=232..277; connect with blue and sage route lines passing an airplane at y=50, train at y=88, bus at y=130, and boat at y=158.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:transportation" data-archetype="spatial-route-system">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="transport-hub" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F0F0E9"/><stop offset="1" stop-color="#BBCBD0"/></linearGradient>
+    <linearGradient id="transport-bus" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8FAAD0"/><stop offset="1" stop-color="#4B6A92"/></linearGradient>
+    <radialGradient id="transport-halo"><stop stop-color="#E7F0E4" stop-opacity=".65"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="transport-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 148 Q44 140 88 148 T176 148 T264 147 T304 148 V192 H0 Z" fill="#EDF0E9"/><path d="M0 167 Q51 160 102 167 T204 167 T304 166" fill="none" stroke="#D9E2D4" stroke-width="2"/><ellipse cx="153" cy="173" rx="91" ry="6" fill="#DDD4C3" opacity=".55"/></g>
+  <g id="layer-context"><path d="M75 45 C115 25 183 26 230 45 M75 90 C120 75 185 77 230 91 M75 134 C123 127 188 128 230 136 M75 166 C128 158 185 158 230 165" fill="none" stroke="#9DBF92" stroke-width="2.4" stroke-dasharray="4 5" stroke-linecap="round"/><path d="M75 45 C118 57 185 56 230 45 M75 90 C120 103 185 103 230 91 M75 134 C122 143 184 142 230 136" fill="none" stroke="#83A8C6" stroke-width="1.8" stroke-dasharray="3 5"/></g>
+  <g id="layer-focal" filter="url(#transport-shadow)"><path d="M28 102 L49 82 L70 102 V133 H28 Z" fill="#E7D8B9" stroke="#64748B" stroke-width="1.7"/><path d="M35 104 H63 V128 H35 Z" fill="#F7F1E4" stroke="#9B8564" stroke-width="1"/><path d="M239 77 H273 V132 H239 Z" fill="url(#transport-hub)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M244 83 H253 V92 H244 Z M258 83 H268 V92 H258 Z M244 98 H253 V107 H244 Z M258 98 H268 V107 H258 Z" fill="#B8D2DE" stroke="#64748B" stroke-width=".8"/><circle cx="74" cy="45" r="12" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M64 46 L72 43 L78 37 L77 44 L86 48 L76 47 L71 52 Z" fill="#EEF4F6"/><path d="M91 86 H147 V97 H91 Z" fill="url(#transport-bus)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M98 89 H111 V94 H98 Z M114 89 H127 V94 H114 Z M130 89 H143 V94 H130 Z" fill="#DCECF2"/><circle cx="104" cy="98" r="4" fill="#263548"/><circle cx="137" cy="98" r="4" fill="#263548"/><path d="M157 127 H204 V137 H157 Z" fill="#6384AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M162 130 H174 V134 H162 Z M178 130 H190 V134 H178 Z" fill="#DCECF2"/><circle cx="168" cy="138" r="3.5" fill="#263548"/><circle cx="194" cy="138" r="3.5" fill="#263548"/><path d="M104 157 Q122 154 142 158 L137 167 H111 Q105 164 104 157 Z" fill="#B7834B" stroke="#1E2A3B" stroke-width="1.5"/><path d="M108 158 H136" stroke="#F1D09D" stroke-width="1.2"/><circle cx="230" cy="45" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="230" cy="90" r="8" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="230" cy="135" r="8" fill="#7DAA78" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="230" cy="164" r="8" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M74 34 V40 M221 45 H227 M222 90 H227 M222 135 H227 M222 164 H227" stroke="#FFFFFF" stroke-width="1.4"/><path d="M48 113 H57 M246 112 H267" stroke="#FFFFFF" stroke-width="1"/><path d="M112 82 Q119 76 126 82 M166 120 Q172 114 178 120" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/><path d="M94 105 H144 M157 146 H203" stroke="#DCE6E5" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="92" rx="120" ry="79" fill="url(#transport-halo)" opacity=".15"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M24 171 H279" stroke="#1E2A3B" stroke-width=".7" opacity=".22"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: onesie (Noun)
+  CONTEXTUAL_DEFINITION: A short-sleeved one-piece baby outfit that fastens at the crotch.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The short sleeves and short-legged snap-crotch shape distinguish this onesie from a sleeveless bodysuit and a looser romper suit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Baby drawer and soft cloth.
+    - Context_Layer: Small folded socks.
+    - Focal_Layer: One short-sleeved, short-legged baby onesie laid flat.
+    - Details_Layer: Neck opening, short cuffs, and three snaps.
+    - Lighting_Layer: Cool highlight across the cotton fabric.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:onesie" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="onesie-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><linearGradient id="onesie-cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#EAA9A1"/></linearGradient><filter id="onesie-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#onesie-bg)"/><path d="M0 153Q77 146 153 153T304 150V192H0Z" fill="#EADFCC"/><path d="M38 42H265V149H38Z" fill="#E3E8F0"/><path d="M48 54H255V139H48Z" fill="#FFFFFF" opacity=".68"/></g>
+  <g id="layer-context"><path d="M49 126L75 120L88 125L62 132Z" fill="#829A83"/><path d="M214 126L240 120L253 125L227 132Z" fill="#5479AC"/><path d="M51 124L69 120M216 124L234 120" stroke="#F3ECE1" stroke-width="1.4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#onesie-shadow)"><path d="M118 61Q121 49 137 48L146 57H158L167 48Q183 49 186 61L207 78L192 96L179 84V117Q179 129 169 137L152 147L135 137Q125 129 125 117V84L112 96L97 78Z" fill="url(#onesie-cloth)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M137 49L146 59H158L167 49" fill="#EEF4FA" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M112 83L101 78M192 83L203 78" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M112 83L101 78M192 83L203 78" stroke="#EAA9A1" stroke-width="3.7" stroke-linecap="round"/><path d="M125 116Q152 124 179 116" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M140 137Q152 143 164 137" fill="none" stroke="#A95059" stroke-width="1.6"/><circle cx="145" cy="139" r="2.1" fill="#F2C14E"/><circle cx="152" cy="142" r="2.1" fill="#F2C14E"/><circle cx="159" cy="139" r="2.1" fill="#F2C14E"/><path d="M134 72Q152 78 170 72M132 87Q152 94 172 87" fill="none" stroke="#F3ECE1" stroke-width="1.5" opacity=".8"/></g>
+  <g id="layer-details"><path d="M135 35Q152 30 170 35" fill="none" stroke="#FFFFFF" stroke-width="2.7"/><circle cx="116" cy="108" r="2.3" fill="#F2C14E"/><circle cx="188" cy="108" r="2.3" fill="#F2C14E"/><path d="M92 58Q103 52 113 58M191 58Q201 52 212 58" fill="none" stroke="#D9A441" stroke-width="1.4" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="98" rx="84" ry="72" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".25"/><path d="M108 27Q152 16 198 27" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

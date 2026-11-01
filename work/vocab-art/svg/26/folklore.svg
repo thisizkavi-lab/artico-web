@@ -1,0 +1,60 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: folklore (Noun)
+  CONTEXTUAL_DEFINITION: Traditional stories, customs, and beliefs shared by a community across generations.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept shown as shared oral tradition
+  SYNONYM_GUARD: Show a familiar story motif being repeated among older and younger community members, distinct from one child's magical storybook and a modern city rumor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: A warmly lit village room with a simple hearth and a low wooden bench.
+    - Context_Layer: Three ages sit together around a patterned cloth woven with a repeated flower-and-moon emblem.
+    - Focal_Layer: An elder tells a story while an adult repeats its picture motif and a child listens.
+    - Details_Layer: Three connected, faint speech clouds repeat the same tiny fox-under-moon picture across the generations.
+    - Lighting_Layer: Amber hearth light warms the group and shared tradition symbols.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:folklore" data-archetype="abstract-concept">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="folklore-bg" x2="0" y2="1"><stop stop-color="#F4EBDD"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <radialGradient id="folklore-glow"><stop stop-color="#F2C14E" stop-opacity=".55"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="folklore-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#folklore-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="2.8"/>
+    <path d="M22 116Q29 101 46 100H72Q87 105 90 120V143H22Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/><path d="M35 142V126Q36 112 55 112Q74 112 77 126V143Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M44 130Q55 123 68 130M47 136Q56 130 66 136" fill="none" stroke="#F2C14E" stroke-width="1.3"/>
+    <path d="M111 126H193V134H111Z" fill="#C88446" stroke="#965D28" stroke-width="1.1"/><path d="M119 134V151M185 134V151" stroke="#965D28" stroke-width="2.4"/>
+    <path d="M207 113H283V121H207Z" fill="#C88446" stroke="#965D28" stroke-width="1.1"/><path d="M215 121V151M275 121V151" stroke="#965D28" stroke-width="2.4"/>
+    <path d="M0 30H304" stroke="#E3AC77" stroke-width="1.1" opacity=".45"/>
+  </g>
+  <g id="layer-context">
+    <ellipse cx="153" cy="132" rx="126" ry="32" fill="url(#folklore-glow)"/>
+    <path d="M96 135Q151 126 209 135L203 148Q153 141 102 149Z" fill="#8B5CA8" stroke="#633B7D" stroke-width="1.3"/>
+    <path d="M107 138Q153 133 198 138M112 144Q153 140 194 144" fill="none" stroke="#F2C14E" stroke-width="1.4"/>
+    <path d="M121 138L127 143L133 138L139 143L145 138L151 143L157 138L163 143L169 138L175 143L181 138" fill="none" stroke="#F3ECE1" stroke-width="1.1"/>
+    <path d="M145 134C141 131 142 127 146 127C148 123 154 124 155 128C160 127 162 131 158 134Z" fill="#F2C14E" stroke="#D49B2A" stroke-width=".9"/>
+  </g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#folklore-shadow)">
+    <path d="M28 34Q28 27 36 27H98Q106 27 106 35V53Q106 61 98 61H75L67 68L68 61H36Q28 61 28 53Z" fill="#FCFEFF" fill-opacity=".82" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <path d="M121 34Q121 27 129 27H191Q199 27 199 35V53Q199 61 191 61H168L160 68L161 61H129Q121 61 121 53Z" fill="#FCFEFF" fill-opacity=".82" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <path d="M214 34Q214 27 222 27H274Q282 27 282 35V53Q282 61 274 61H254L246 68L247 61H222Q214 61 214 53Z" fill="#FCFEFF" fill-opacity=".82" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <path d="M54 48L56 43L60 47L64 43L67 48Q69 53 61 56Q53 54 54 48Z" fill="#8B5CA8"/><path d="M57 51L59 52M64 51L62 52M60 54L61 54" stroke="#F3ECE1" stroke-width=".8" stroke-linecap="round"/>
+    <path d="M147 48L149 43L153 47L157 43L160 48Q162 53 154 56Q146 54 147 48Z" fill="#8B5CA8"/><path d="M150 51L152 52M157 51L155 52M153 54L154 54" stroke="#F3ECE1" stroke-width=".8" stroke-linecap="round"/>
+    <path d="M235 48L237 43L241 47L245 43L248 48Q250 53 242 56Q234 54 235 48Z" fill="#8B5CA8"/><path d="M238 51L240 52M245 51L243 52M241 54L242 54" stroke="#F3ECE1" stroke-width=".8" stroke-linecap="round"/>
+    <path d="M70 38C66 38 65 42 68 44C71 44 73 41 70 38Z" fill="#F2C14E"/><path d="M163 38C159 38 158 42 161 44C164 44 166 41 163 38Z" fill="#F2C14E"/><path d="M252 38C248 38 247 42 250 44C253 44 255 41 252 38Z" fill="#F2C14E"/>
+    <circle cx="65" cy="89" r="12" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M53 89Q52 74 64 75Q77 76 77 90" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.2"/><path d="M53 86Q51 82 56 79M74 80Q80 83 77 88" fill="none" stroke="#CBD5E1" stroke-width="2.3"/>
+    <path d="M44 108Q65 98 85 108L90 133L79 141H49L39 133Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/><path d="M47 113L39 103L38 94M81 113L89 120L97 129" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M47 113L39 103L38 94M81 113L89 120L97 129" fill="none" stroke="#F5BFA3" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="151" cy="94" r="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><path d="M141 94Q142 80 152 81Q162 82 161 95" fill="#27364B"/><path d="M136 110Q151 103 166 110L171 133L162 141H140L131 133Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M139 113L130 120L123 131M163 113L174 120L181 131" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M139 113L130 120L123 131M163 113L174 120L181 131" fill="none" stroke="#D89A6C" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="238" cy="96" r="9" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M229 96Q230 83 239 84Q248 85 247 97" fill="#27364B"/><path d="M224 111Q238 105 252 111L257 134L249 141H229L220 134Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.4"/><path d="M228 114L222 108L221 100M248 114L256 121L263 130" fill="none" stroke="#1E2A3B" stroke-width="4.8" stroke-linecap="round"/><path d="M228 114L222 108L221 100M248 114L256 121L263 130" fill="none" stroke="#F5BFA3" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <g id="layer-details">
+    <path d="M61 96Q64 99 67 96M149 100Q153 102 157 100M235 102Q239 104 243 102" fill="none" stroke="#1E2A3B" stroke-width="1.1" stroke-linecap="round"/><ellipse cx="71" cy="97" rx="2.2" ry="1.6" fill="#8B5CA8"/>
+    <path d="M107 45H117M200 45H210" stroke="#D9A441" stroke-width="1.6" stroke-dasharray="2 3"/>
+    <path d="M45 144Q68 139 89 145M130 144Q151 140 171 144M221 144Q239 140 258 144" fill="none" stroke="#E3AC77" stroke-width="1.1"/>
+    <ellipse cx="65" cy="145" rx="30" ry="3" fill="#DDD4C3" opacity=".7"/><ellipse cx="152" cy="145" rx="28" ry="3" fill="#DDD4C3" opacity=".7"/><ellipse cx="239" cy="145" rx="27" ry="3" fill="#DDD4C3" opacity=".7"/>
+  </g>
+  <g id="layer-lighting">
+    <ellipse cx="154" cy="91" rx="135" ry="61" fill="#FEF9C3" opacity=".06"/>
+    <path d="M28 34Q28 27 36 27H80M121 34Q121 27 129 27H173M214 34Q214 27 222 27H257" fill="none" stroke="#FFFFFF" stroke-width=".9" opacity=".75"/>
+    <path d="M43 109Q65 101 83 109M137 111Q151 105 165 111M225 112Q238 106 251 112" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".5"/>
+  </g>
+</svg>

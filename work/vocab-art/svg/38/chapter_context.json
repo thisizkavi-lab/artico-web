@@ -1,0 +1,51 @@
+{
+  "lesson": 38,
+  "chapter_title": "Money and finance",
+  "domain_setting": "An everyday financial world of a neighborhood bank, card terminal, cash desk, household budget, bills, savings, loans, currency exchange and stock trading. Keep payment objects, bank services, household expenses, borrowing and business finance visually distinct.",
+  "ambient_palette": {
+    "paper": "#FAF8F3",
+    "wall": "#EEF4FA",
+    "ink": "#1E2A3B",
+    "bankBlue": "#5479AC",
+    "shadowBlue": "#3D5F91",
+    "moneyGold": "#F2C14E",
+    "coinCopper": "#D97A43",
+    "growth": "#7FB07A",
+    "alert": "#CE3D4E"
+  },
+  "recurring_scale_anchors": [
+    "304x192 card, grounded objects on a pale counter or desk with an elliptical contact shadow",
+    "Banknotes, receipts, cards and invoices are blank paper shapes with non-letter squiggles only; no readable text, numerals, logos or currency glyphs",
+    "Coins use simple ridged circular silhouettes without numeric denominations",
+    "Use a consistent slate-blue bank interface and warm paper, copper and gold financial objects"
+  ],
+  "polysemy_resolution_table": {
+    "check (payment) / cheque (uk spelling)": "A paper payment instrument handed to a cashier; not the verb meaning stop or prevent.",
+    "pin": "A confidential card PIN represented only by a card reader and covered keypad; not a fastening pin and no digits shown.",
+    "tip": "A gratuity left beside a restaurant bill; not the pointed end or a helpful hint.",
+    "balance": "The amount remaining in a bank account, represented by a statement or ledger and available funds; not a weighing scale or physical equilibrium.",
+    "bank": "A financial institution with teller counter and secure deposit drawers; not a riverbank.",
+    "deposit": "Money placed into a bank account, shown moving into a bank drawer or account; not sediment or a rental security deposit.",
+    "transfer": "Movement of funds between financial accounts; the neighboring transfer-money entry shows the concrete act of sending money.",
+    "withdrawal": "Cash removed from a bank account at an ATM; not retreat, leaving a group, or an emotional withdrawal.",
+    "go out": "Money leaving a household or business budget as an expense in this finance lesson; not a person leaving home socially.",
+    "interest": "Money charged on borrowed funds or earned on savings; not curiosity or attention.",
+    "interest rate": "The proportionate borrowing or savings charge represented by a share of principal, without numerals or written percent signs.",
+    "save": "Set money aside in a savings jar or account for later; not rescue, preserve, or save a file.",
+    "change money": "Exchange one currency for another at a currency counter; not making change after paying cash.",
+    "finance": "Management and movement of money for an organization, represented by ledger, funds and cash flow; not curiosity.",
+    "stock exchange": "A financial marketplace where company shares are bought and sold, represented by traders, chart shapes and certificates without letters."
+  },
+  "contrast_notes": {
+    "cash / coins / notes / currency / money": "Show cash as a ready-to-spend collection, coins as round metal pieces, notes as blank folded paper money, currency as visibly different banknote and coin designs, and money as a broad mixed pile of coins and notes.",
+    "cash register / receipt / bill / invoice / fee": "Separate the checkout drawer, proof of completed payment, itemized amount owed, business invoice sent to a buyer, and professional service charge.",
+    "credit card / debit card / pin": "Credit card is a borrowed-spending card, debit card is linked to a bank balance, and PIN is the private keypad interaction; omit text and digits.",
+    "bank / bank account / bank statement / balance / atm / mobile banking / online banking": "Distinguish institution, personal account container, account activity summary, remaining funds, cash machine, phone-based service, and browser-based service.",
+    "deposit / withdrawal / transfer / transfer money / overdraft": "Show funds entering an account, cash leaving an ATM, funds moving between account containers, a person initiating that movement, and account spending below zero with a shortfall cue.",
+    "bill / budget / expenditure / go out / outlay / tax": "Differentiate amount owed, planned income-versus-spending envelope, total spending, money leaving the budget, a one-time disbursement, and public revenue collected for civic services.",
+    "bank loan / loan / debt / get into debt / mortgage": "Show bank loan as an institutional lending desk, loan as money temporarily lent, debt as money still owed, getting into debt as obligations accumulating, and mortgage as a house-secured long-term loan.",
+    "interest / interest rate": "Interest is the actual extra money earned or owed; interest rate compares that amount against borrowed or saved principal.",
+    "break even / make a loss / income / economic downturn": "Show equal revenue and costs, costs overtaking revenue, money received from work or business, and broad business activity contracting across multiple firms.",
+    "exchange rate / change money / stock exchange": "Keep currency conversion at a bank exchange counter, physical currency swapping in change money, and share trading at a stock exchange."
+  }
+}

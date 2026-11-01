@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: walk
+  CONTEXTUAL_DEFINITION: Move along on foot at a relaxed pace for leisure.
+  PEDAGOGICAL_ARCHETYPE: 4 - Person walks along an outdoor path
+  SYNONYM_GUARD: Show a person in a relaxed mid-stride on a path; distinguish walking from jogging and hiking gear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A person strolls along an open park path with an easy pace and loose arm swing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:walk" data-archetype="person-walks-at-an-easy-pace-on-a-park-path">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="walk-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#344E78"/></linearGradient>
+    <linearGradient id="walk-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6E6DD"/><stop offset="1" stop-color="#D4D5CC"/></linearGradient>
+    <radialGradient id="walk-halo"><stop stop-color="#F6E8C0" stop-opacity=".56"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="walk-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 113 Q62 103 125 113 T250 112 T304 111 V192 H0 Z" fill="#E9EDE7"/><path d="M0 143 Q75 136 152 143 T304 142 V192 H0 Z" fill="url(#walk-ground)"/><path d="M0 151 Q75 144 152 151 T304 150" fill="none" stroke="#BFC6BD" stroke-width="1.3"/><ellipse cx="159" cy="157" rx="55" ry="7" fill="#CFCFC5"/></g>
+  <g id="layer-context"><circle cx="65" cy="46" r="14" fill="#F2C14E" opacity=".7"/><path d="M29 123 Q78 113 126 123 M179 123 Q225 113 274 122" fill="none" stroke="#FFFFFF" stroke-width="1.7"/><path d="M49 80 Q59 74 68 80 M237 78 Q246 73 255 79" fill="none" stroke="#DCE8E4" stroke-width="1.8" stroke-linecap="round"/><path d="M27 163 H78 M229 162 H278" stroke="#D4D5CC" stroke-width="1.3" fill="none"/></g>
+  <g id="layer-focal" filter="url(#walk-shadow)"><path d="M145 73 Q144 61 157 59 Q170 59 174 73 L174 105 L146 106 Z" fill="url(#walk-coat)" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="159" cy="51" r="10" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.5"/><path d="M150 49 Q151 38 161 39 Q170 40 170 50" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.6"/><path d="M148 79 L132 94 L122 89" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M148 79 L132 94 L122 89" fill="none" stroke="#DCA47D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M171 78 L184 90 L192 84" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M171 78 L184 90 L192 84" fill="none" stroke="#DCA47D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M151 104 L140 123 L132 145" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M151 104 L140 123 L132 145" fill="none" stroke="#354E78" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M169 104 L178 120 L190 141" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M169 104 L178 120 L190 141" fill="none" stroke="#5479AC" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M125 144 Q131 141 138 145 L143 151 Q139 155 125 153 Z" fill="#263548" stroke="#1E2A3B" stroke-width="1.3"/><path d="M185 140 Q192 137 198 141 L202 147 Q198 151 188 149 Z" fill="#263548" stroke="#1E2A3B" stroke-width="1.3"/><path d="M143 108 Q159 113 176 106" fill="none" stroke="#87A3BC" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M113 70 Q105 77 106 85 M204 69 Q212 75 211 84" fill="none" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/><path d="M124 159 H143 M185 156 H207" stroke="#B4B9B3" stroke-width="1.4" fill="none"/><path d="M128 132 L134 134 M182 132 L187 130" stroke="#6C82A1" stroke-width="1.1" fill="none"/></g>
+  <g id="layer-lighting"><ellipse cx="159" cy="91" rx="116" ry="74" fill="url(#walk-halo)" opacity=".13"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7" fill="none"/><path d="M106 155 Q159 166 211 154" fill="none" stroke="#1E2A3B" stroke-width=".8" opacity=".22"/></g>
+</svg>

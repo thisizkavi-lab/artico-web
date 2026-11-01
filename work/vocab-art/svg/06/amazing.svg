@@ -1,0 +1,61 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: amazing (Adjective)
+  CONTEXTUAL_DEFINITION: Astonishingly impressive, shown through a family reacting to a spectacular evening fireworks display.
+  PEDAGOGICAL_ARCHETYPE: 3 (Human reaction to an impressive event)
+  SYNONYM_GUARD: Fireworks and a surprised viewer distinguish this from breathtaking natural scenery and the theater performance for fantastic.
+  MODE: STATIC (The Artico course compiles a still WebP card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Deep blue evening sky above a low city silhouette and river.
+    - Context_Layer: Three fireworks bursts centered at (70,48), (156,38), and (244,61).
+    - Focal_Layer: Astonished viewer from x=106 to 200, hands at cheeks and eyes wide.
+    - Details_Layer: Small sparkle fragments and colored river reflections.
+    - Lighting_Layer: Warm firework glow behind the viewer and a soft highlight along the river.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:amazing" data-archetype="expressive-bust">
+  <defs>
+    <style>:root { --c-bg-1:#FAF8F3; --c-bg-2:#F2ECE1; --c-surface:#EAE3D5; --c-primary:#5479AC; --c-secondary:#3D5F91; --c-accent:#F2C14E; --c-highlight:#FFFFFF; }</style>
+    <linearGradient id="amazing-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#536A86"/><stop offset="1" stop-color="#8294B6"/></linearGradient>
+    <linearGradient id="amazing-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#617DA5"/><stop offset="1" stop-color="#D4B884"/></linearGradient>
+    <radialGradient id="amazing-glow"><stop offset="0" stop-color="#FFE9A8" stop-opacity=".7"/><stop offset="1" stop-color="#FFE9A8" stop-opacity="0"/></radialGradient>
+    <filter id="amazing-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop">
+    <rect width="304" height="192" fill="url(#amazing-sky)"/>
+    <ellipse cx="157" cy="99" rx="136" ry="62" fill="url(#amazing-glow)"/>
+    <path d="M0 120 Q53 108 105 119 Q171 101 225 116 Q273 105 304 113 L304 148 L0 148Z" fill="#3D526D"/>
+    <path d="M0 145 Q78 137 151 145 Q232 135 304 144 L304 192 L0 192Z" fill="url(#amazing-water)"/>
+    <path d="M17 118V93H31V118M39 118V79H59V118M67 118V96H80V118M225 118V85H245V118M254 118V97H267V118M277 118V76H292V118" fill="#344761" stroke="#263852" stroke-width="2"/>
+    <path d="M14 156 Q43 153 70 157 M225 158 Q256 153 290 157" fill="none" stroke="#F4CC79" stroke-width="2" opacity=".7"/>
+  </g>
+  <g id="layer-context">
+    <g fill="none" stroke-linecap="round">
+      <path d="M69 48L69 22M69 48L47 34M69 48L45 55M69 48L52 69M69 48L87 70M69 48L93 57M69 48L91 35M69 48L80 22" stroke="#F5C65F" stroke-width="2.6"/>
+      <path d="M157 38L157 13M157 38L134 21M157 38L127 44M157 38L138 61M157 38L177 61M157 38L187 44M157 38L178 21M157 38L168 13" stroke="#F7E2A0" stroke-width="2.4"/>
+      <path d="M244 61L244 39M244 61L225 47M244 61L221 68M244 61L228 82M244 61L260 82M244 61L268 67M244 61L260 46M244 61L252 39" stroke="#F08D83" stroke-width="2.5"/>
+    </g>
+    <circle cx="69" cy="48" r="5" fill="#FFF2B7"/><circle cx="157" cy="38" r="5" fill="#FFF2B7"/><circle cx="244" cy="61" r="4.5" fill="#FFF2B7"/>
+    <circle cx="43" cy="27" r="2.5" fill="#B5D9F4"/><circle cx="203" cy="31" r="2" fill="#B5D9F4"/><circle cx="283" cy="43" r="2.4" fill="#F5C65F"/>
+  </g>
+  <g id="layer-focal" filter="url(#amazing-shadow)">
+    <ellipse cx="153" cy="184" rx="46" ry="6" fill="#344761" opacity=".45"/>
+    <path d="M111 184 Q115 145 133 137 L173 137 Q192 148 196 184Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/>
+    <path d="M128 143 Q116 131 111 113 Q109 106 115 103 Q121 102 125 110 L139 128M177 143 Q190 130 195 112 Q197 105 191 103 Q185 103 181 111 L167 128" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+    <circle cx="153" cy="105" r="27" fill="#E7AD83" stroke="#1E2A3B" stroke-width="2.5"/>
+    <path d="M127 101 Q126 75 151 73 Q177 74 180 100 Q168 88 153 90 Q139 98 127 101Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/>
+    <ellipse cx="143" cy="105" rx="4.4" ry="6.2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="164" cy="105" rx="4.4" ry="6.2" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.2"/>
+    <circle cx="144" cy="105" r="2" fill="#1E2A3B"/><circle cx="165" cy="105" r="2" fill="#1E2A3B"/>
+    <ellipse cx="154" cy="119" rx="6" ry="8" fill="#7B3E48" stroke="#1E2A3B" stroke-width="1.5"/>
+    <path d="M125 112 Q131 118 135 123 M178 112 Q173 119 170 123" fill="none" stroke="#F4C4A7" stroke-width="2"/>
+  </g>
+  <g id="layer-details">
+    <path d="M34 76L38 71M101 30L105 25M195 76L199 71M276 92L280 87" stroke="#FFF2B7" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="98" cy="62" r="2" fill="#F08D83"/><circle cx="208" cy="55" r="2.4" fill="#F5C65F"/><circle cx="116" cy="24" r="2" fill="#B5D9F4"/>
+    <path d="M120 171 Q153 166 185 171" fill="none" stroke="#88A8D1" stroke-width="2"/>
+  </g>
+  <g id="layer-lighting">
+    <path d="M130 84 Q141 78 151 79M132 91 Q131 97 133 101" fill="none" stroke="#FFEAC2" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+    <path d="M141 182 Q152 179 165 182" fill="none" stroke="#83A9D7" stroke-width="2"/>
+    <rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity=".65"/>
+  </g>
+</svg>

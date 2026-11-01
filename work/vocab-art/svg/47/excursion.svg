@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: excursion
+  CONTEXTUAL_DEFINITION: A short organized group trip to a nearby place of interest.
+  PEDAGOGICAL_ART_DIRECTOR: Show a small guided group at a nearby scenic lookout with their compact excursion coach.
+  PEDAGOGICAL_ARCHETYPE: 3 - Environmental Scene
+  SYNONYM_GUARD: The noun names the short outing itself; do not show only a vacation beach or a long journey.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A guide and three travelers pause at a nearby waterfall viewpoint while a small coach waits on the short road below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:excursion" data-archetype="environment">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="ex-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B9DCE0"/><stop offset="1" stop-color="#F0E6D0"/></linearGradient>
+  <linearGradient id="ex-hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#91AD88"/><stop offset="1" stop-color="#617F68"/></linearGradient>
+  <linearGradient id="ex-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#82C6CE"/><stop offset="1" stop-color="#4F9FB1"/></linearGradient>
+  <filter id="ex-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ex-sky)"/><circle cx="258" cy="36" r="13" fill="#F2C14E"/><path d="M0 103L48 54L88 97L142 42L192 101L237 58L304 104V192H0Z" fill="#829B86"/><path d="M0 133Q49 115 95 135T188 128T304 132V192H0Z" fill="url(#ex-hill)"/><path d="M141 47L160 74L159 110H143Z" fill="url(#ex-water)" stroke="#F7F5EA" stroke-width="1.3"/><path d="M130 110Q151 103 170 110L183 126H118Z" fill="#B8DDE0"/><path d="M16 169H287" stroke="#D7E7D8" stroke-width="1.1"/></g>
+ <g id="layer-context"><path d="M21 135Q57 123 93 132" fill="none" stroke="#D9C59F" stroke-width="5"/><path d="M225 114H278V145H225Z" fill="#E7E9E1" stroke="#1E2A3B" stroke-width="1.2"/><path d="M231 120H271V138H231Z" fill="#A7CBD0" stroke="#4B6670" stroke-width=".9"/><path d="M241 115V140M258 115V140" stroke="#526D77" stroke-width=".8"/><circle cx="238" cy="146" r="4" fill="#273C48"/><circle cx="266" cy="146" r="4" fill="#273C48"/><path d="M230 114L241 108H263L273 114" fill="#D7E0DA" stroke="#1E2A3B" stroke-width="1"/></g>
+ <g id="layer-focal" filter="url(#ex-shadow)"><circle cx="70" cy="94" r="6" fill="#D9A27D" stroke="#1E2A3B" stroke-width=".9"/><path d="M61 102Q70 97 79 102L82 123H58Z" fill="#D47752" stroke="#1E2A3B" stroke-width="1"/><path d="M62 120L60 138H67L71 122M73 122L77 138H84L80 119" fill="#394F61" stroke="#1E2A3B" stroke-width="1"/><path d="M62 105L55 114M78 105L84 114" stroke="#D47752" stroke-width="5" stroke-linecap="round"/><path d="M85 105L90 98L95 105L90 112Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width=".8"/><circle cx="108" cy="105" r="5" fill="#D9A27D" stroke="#1E2A3B" stroke-width=".9"/><path d="M100 112Q108 107 116 112L118 130H98Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1"/><path d="M102 129L100 143H106L110 131M112 131L115 143H121L117 128" fill="#3A5061" stroke="#1E2A3B" stroke-width=".9"/><circle cx="135" cy="109" r="5" fill="#D9A27D" stroke="#1E2A3B" stroke-width=".9"/><path d="M127 116Q135 111 143 116L145 133H125Z" fill="#7B93A1" stroke="#1E2A3B" stroke-width="1"/><path d="M129 132L127 144H133L137 134M139 134L142 144H148L145 131" fill="#3A5061" stroke="#1E2A3B" stroke-width=".9"/><circle cx="164" cy="108" r="5" fill="#D9A27D" stroke="#1E2A3B" stroke-width=".9"/><path d="M156 115Q164 110 172 115L174 132H154Z" fill="#B68E59" stroke="#1E2A3B" stroke-width="1"/><path d="M158 131L156 143H162L166 133M168 133L171 143H177L174 130" fill="#3A5061" stroke="#1E2A3B" stroke-width=".9"/><path d="M157 118L149 122M171 118L178 122" stroke="#B68E59" stroke-width="4" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M147 50L153 74L152 106" fill="none" stroke="#E8FFFF" stroke-width="1.4"/><ellipse cx="152" cy="163" rx="123" ry="4" fill="#1E2A3B" opacity=".12"/><path d="M226 115H277" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="103" rx="129" ry="76" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M18 19H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

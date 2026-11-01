@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: interrupt
+  CONTEXTUAL_DEFINITION: Begin speaking or act before another person has finished, cutting into their turn.
+  PEDAGOGICAL_ART_DIRECTOR: Show one colleague speaking and another politely signaling to interject, with the first person's speaking cue visibly cut short.
+  PEDAGOGICAL_ARCHETYPE: 4 - Turn-taking interruption
+  SYNONYM_GUARD: Make the timing overlap clear; this is not general disagreement, a raised hand in a vote, or a technical interruption.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a speaker on the left at x=54..116 with two small sound arcs coming from their mouth. Place a second colleague at x=186..247 raising one open hand between them; the arcs stop at the raised palm, and a small gold speaking cue begins on the right. Add a narrow table at y=132.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:interrupt" data-archetype="interrupted-turn">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="interrupt-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="interrupt-palm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE2C8"/><stop offset="1" stop-color="#D89A6C"/></linearGradient>
+    <radialGradient id="interrupt-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="interrupt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="101" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 132 H274 V145 H30 Z" fill="url(#interrupt-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#interrupt-shadow)"><path d="M43 123 Q45 101 57 95 L58 86 Q54 82 56 74 Q64 65 74 68 Q83 71 80 82 L77 90 Q90 96 92 121 L89 132 H47 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="68" cy="77" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M60 75 Q62 67 69 67 Q77 68 80 75 Q73 71 66 72 Z" fill="#3D342D"/><path d="M74 81 Q78 84 82 81" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><path d="M190 123 Q192 100 205 94 L206 85 Q202 81 204 73 Q212 64 222 67 Q231 70 228 81 L225 89 Q239 95 241 121 L238 132 H194 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="218" cy="76" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M210 74 Q212 66 219 66 Q227 67 230 74 Q223 70 216 71 Z" fill="#242C3B"/><path d="M209 110 L200 90 L205 88 L218 107" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.3"/><path d="M200 90 L195 72 Q194 68 198 67 Q201 67 203 72 L207 83 L207 67 Q208 63 212 64 Q215 65 215 69 L215 82 L218 70 Q220 66 223 68 Q226 70 224 75 L221 86 L226 80 Q230 77 232 81 Q234 84 230 89 L219 101 L218 119 H207 Z" fill="url(#interrupt-palm)" stroke="#1E2A3B" stroke-width="1.3"/><path d="M70 91 Q87 88 102 91" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-dasharray="3 3"/><path d="M104 91 H186" stroke="#64748B" stroke-width="1.3" stroke-dasharray="2 4"/><path d="M188 90 L183 86 M188 90 L183 94" stroke="#64748B" stroke-width="1.3"/><path d="M233 62 Q240 56 247 62 M235 68 Q240 64 245 68" fill="none" stroke="#D99A2B" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="106" cy="85" r="2" fill="#8EB0DE"/><path d="M99 101 L105 97" stroke="#D97706" stroke-width="1.4" stroke-linecap="round"/><path d="M179 77 V103" stroke="#F2C14E" stroke-width="1.5" stroke-dasharray="2 3"/><circle cx="180" cy="72" r="3" fill="#F2C14E"/><path d="M80 97 Q86 94 91 97" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="91" rx="87" ry="58" fill="url(#interrupt-halo)" opacity=".22"/><path d="M45 45 H85 M216 45 H236" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

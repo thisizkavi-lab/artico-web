@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: check in
+  CONTEXTUAL_DEFINITION: Arrive at a hotel and register before going to the room.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler with luggage presenting a passport booklet to hotel staff beside a blank registration terminal.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: Depict the guest's arrival and registration action; do not turn it into the check-in counter noun.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A traveler rolls a suitcase up to the hotel counter and passes a blank passport booklet to the clerk beside a small terminal.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:check in" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="cin-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E8E6DC"/><stop offset="1" stop-color="#CCD0C9"/></linearGradient>
+  <linearGradient id="cin-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B58B61"/><stop offset="1" stop-color="#795B42"/></linearGradient>
+  <linearGradient id="cin-blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7294BC"/><stop offset="1" stop-color="#3E6496"/></linearGradient>
+  <filter id="cin-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M17 17H287V149H17Z" fill="url(#cin-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M17 149H287V184H17Z" fill="#B8B6AB"/><rect x="199" y="28" width="60" height="49" fill="#A8C8CF" stroke="#4E6671" stroke-width="1.4"/><path d="M229 28V77M199 52H259" stroke="#526D77" stroke-width="1.2"/><path d="M24 168H280" stroke="#EAE4D8" stroke-width="1.1"/><path d="M31 35H63V148H31Z" fill="#85664D" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="55" cy="93" r="2.1" fill="#F2C14E"/><circle cx="210" cy="58" r="8.5" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M201 58Q202 47 211 47Q219 48 220 57L216 54L207 54Z" fill="#48545A"/><path d="M198 69Q210 64 222 69L226 81H194Z" fill="#759B84" stroke="#1E2A3B" stroke-width="1.1"/><path d="M207 60H208M213 60H214" stroke="#4E3C37" stroke-width="1.1"/></g>
+ <g id="layer-context"><path d="M144 85H277V156H144Z" fill="url(#cin-wood)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M137 78H284V91H137Z" fill="#E5D5B9" stroke="#1E2A3B" stroke-width="1.4"/><path d="M154 156V167M267 156V167" stroke="#634D3B" stroke-width="3.5"/><rect x="252" y="47" width="27" height="21" rx="2" fill="#344B59" stroke="#1E2A3B" stroke-width="1.2"/><rect x="256" y="51" width="19" height="12" fill="#B8D3D6"/><path d="M261 66H270" stroke="#263C4A" stroke-width="2"/><path d="M179 81V78Q179 74 183 74Q187 74 187 78V81" fill="none" stroke="#F2C14E" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#cin-shadow)"><circle cx="79" cy="77" r="9" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1.2"/><path d="M66 89Q79 83 92 89L98 117H61Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4"/><path d="M68 115L65 142H76L81 119M84 118L90 142H101L96 114" fill="#3A5062" stroke="#1E2A3B" stroke-width="1.2"/><path d="M66 97L88 100L121 88" fill="none" stroke="#4A72B2" stroke-width="8" stroke-linecap="round"/><ellipse cx="123" cy="87" rx="4" ry="3" fill="#D9A27D"/><path d="M196 78L187 80L172 82L151 82" fill="none" stroke="#759B84" stroke-width="7" stroke-linecap="round"/><ellipse cx="148" cy="82" rx="4" ry="3" fill="#D9A27D" stroke="#9B6C54" stroke-width=".6"/><rect x="42" y="126" width="22" height="39" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 126V120Q47 114 53 114Q59 114 59 120V126" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M47 139H59M47 158H59" stroke="#8D9BA0" stroke-width="1.1"/><path d="M112 79L125 72L138 85L125 92Z" fill="#476B8F" stroke="#1E2A3B" stroke-width="1.1"/><path d="M125 72L137 79L124 86L112 79Z" fill="#7592AC" stroke="#1E2A3B" stroke-width="1"/><path d="M118 79L125 82" stroke="#D9E1E0" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M146 92H275" stroke="#F7F0E2" stroke-width="1.1" opacity=".8"/><ellipse cx="152" cy="169" rx="110" ry="5" fill="#526274" opacity=".17"/><path d="M201 31H258" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><circle cx="121" cy="88" r="1.7" fill="#D9A27D"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="108" rx="128" ry="74" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".33"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

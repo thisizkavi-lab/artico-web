@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: flood (Noun)
+  CONTEXTUAL_DEFINITION: An overflow of water that covers normally dry land or streets.
+  PEDAGOGICAL_ART_DIRECTOR: Show a neighborhood road submerged by high water, with building bases and a parked car surrounded.
+  PEDAGOGICAL_ARCHETYPE: 3 - Water hazard
+  SYNONYM_GUARD: Show water above its normal boundary, not just an ordinary puddle or rain-soaked road.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Blue floodwater reaches halfway up a parked car and covers the lower level of homes and fence posts.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:flood" data-archetype="flooded-street-scene">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="fl-sky" x2="0" y2="1"><stop stop-color="#C5D6D9"/><stop offset="1" stop-color="#9FBFC7"/></linearGradient><linearGradient id="fl-water" x2="0" y2="1"><stop stop-color="#6DB0BD"/><stop offset="1" stop-color="#3B788D"/></linearGradient><linearGradient id="fl-house" x2="0" y2="1"><stop stop-color="#D5C3A0"/><stop offset="1" stop-color="#A98D67"/></linearGradient><filter id="fl-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fl-sky)"/><path d="M0 127Q78 114 151 127T304 120V192H0Z" fill="#879B8D"/><path d="M0 153H304V192H0Z" fill="#566B6D"/></g>
+ <g id="layer-context"><path d="M20 174H282" fill="none" stroke="#9CB8B8" stroke-width="1.2"/><path d="M0 128Q70 117 151 129T304 120" fill="none" stroke="#D3ECEB" stroke-width="2.2"/><path d="M21 116V76L48 55L75 76V124M230 118V80L255 60L281 80V123" fill="url(#fl-house)" stroke="#876D56" stroke-width="1.6"/><path d="M16 77L48 49L80 77M225 81L255 54L287 81" fill="#9B7657" stroke="#7A604A" stroke-width="1.5"/><rect x="34" y="86" width="15" height="18" fill="#8BAEB4" stroke="#856D54" stroke-width="1.2"/><rect x="251" y="88" width="15" height="18" fill="#8BAEB4" stroke="#856D54" stroke-width="1.2"/><ellipse cx="151" cy="164" rx="110" ry="5" fill="#263E47" opacity=".18"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fl-shadow)">
+  <path d="M0 117Q75 105 152 118T304 111V158H0Z" fill="url(#fl-water)"/><path d="M0 116Q75 104 152 117T304 110" fill="none" stroke="#D9F4EE" stroke-width="2.4"/><path d="M52 139Q61 126 84 126H223Q239 127 246 141L241 155H54Z" fill="#A9B6B4" stroke="#536C73" stroke-width="1.8"/><path d="M74 128L88 114H119L131 128M147 128L159 114H193L207 128" fill="#718F97" stroke="#536C73" stroke-width="1.4"/><path d="M91 119h25m49 0h28" fill="none" stroke="#DAE9E4" stroke-width="1.6"/><circle cx="87" cy="150" r="7" fill="#344B54"/><circle cx="215" cy="150" r="7" fill="#344B54"/><circle cx="87" cy="150" r="3" fill="#BDD1D0"/><circle cx="215" cy="150" r="3" fill="#BDD1D0"/><path d="M66 137h14m142 0h13" fill="none" stroke="#E1ECE8" stroke-width="1.4"/>
+  <path d="M22 132q15-7 28 0m47 6q15-7 28 0m77-1q15-7 28 0m-165 13q15-7 28 0m90 0q15-7 28 0" fill="none" stroke="#D8F4EE" stroke-width="1.8"/><path d="M266 103v39" fill="none" stroke="#8D6047" stroke-width="2.2"/><path d="M262 113h8m-8 9h8m-8 9h8m-8 9h8" fill="none" stroke="#8D6047" stroke-width="1.4"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#F4F7F3" stroke-width="1" opacity=".5"/><circle cx="48" cy="92" r="1.2" fill="#FFF8E7"/><circle cx="255" cy="94" r="1.2" fill="#FFF8E7"/><path d="M10 142q12-5 23 0m235-3q12-5 23 0" fill="none" stroke="#A7D6D5" stroke-width="1.2"/><path d="M17 125l6-4m271 4 6-4" fill="none" stroke="#E3F5EF" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M26 119q28-6 54 0m143-2q26-7 50-1" fill="none" stroke="#F5FFFF" stroke-width="1.2" opacity=".8"/><circle cx="105" cy="118" r="1.2" fill="#FFF8E7"/></g>
+</svg>

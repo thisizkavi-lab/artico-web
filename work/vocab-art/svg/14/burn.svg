@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: burn (Verb, mild skin injury)
+  CONTEXTUAL_DEFINITION: To injure the skin slightly with heat, leaving a small red tender patch.
+  PEDAGOGICAL_ARCHETYPE: 3 — Gentle symptom close-up
+  SYNONYM_GUARD: Intact skin and a cool compress; no flame, blister, or graphic injury.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Forearm resting beside a cool folded cloth.
+    - Context_Layer: Healthy skin remains smooth and intact.
+    - Focal_Layer: Small coral-red patch signals a mild burn.
+    - Details_Layer: Compress sits nearby without covering the patch.
+    - Lighting_Layer: Warm halo and cool cloth make the care response clear.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:burn" data-archetype="symptom-closeup">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="162" rx="115" ry="19" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M40 95Q70 68 112 73L239 91Q256 94 256 108Q255 123 238 126L109 139Q66 144 42 120Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.4"/><path d="M67 93Q107 102 151 105M74 123Q113 130 151 122" fill="none" stroke="#C88E74" stroke-width="1.5"/><path d="M201 40L251 49L247 82L197 75Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M207 49L245 56M204 58L244 65M202 67L242 74" stroke="#F8FAFC" stroke-width="1.3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="164" cy="105" rx="36" ry="29" fill="#FEF3C7" opacity=".5"/><path d="M148 93Q163 84 179 94Q190 101 183 114Q174 126 156 120Q143 115 148 93Z" fill="#D9857F" opacity=".84" stroke="#C96F70" stroke-width="1.4"/><path d="M152 96Q163 90 174 96M153 113Q165 119 178 112" fill="none" stroke="#F4B4AE" stroke-width="1.4"/><path d="M145 92Q162 80 182 92Q196 102 187 117Q175 131 153 124Q138 117 145 92Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M218 85L194 91" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M237 119Q245 110 249 102" fill="none" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M198 84Q218 76 235 79" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4" opacity=".6"/></g>
+</svg>

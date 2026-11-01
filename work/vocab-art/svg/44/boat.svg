@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: boat
+  CONTEXTUAL_DEFINITION: A small vessel that floats on water and carries a few people.
+  PEDAGOGICAL_ART_DIRECTOR: Make a small open rowboat with one person rowing, cleanly separated from the much larger ferry and ship.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with scale cue
+  SYNONYM_GUARD: Use a short open hull and oars; no passenger decks, cabin, or large ocean-going scale.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place the small wooden hull from x=62..242, y=102..145; water horizon near y=137; show a seated rower centered near x=151 and oars extending diagonally to x=55 and x=250.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:boat" data-archetype="hero-water-vehicle">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="boat-hull" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C9874D"/><stop offset="1" stop-color="#8F5734"/></linearGradient>
+    <linearGradient id="boat-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#BBD5E5"/><stop offset="1" stop-color="#83AAC6"/></linearGradient>
+    <radialGradient id="boat-halo"><stop stop-color="#F5DFB4" stop-opacity=".55"/><stop offset="1" stop-color="#C9874D" stop-opacity="0"/></radialGradient>
+    <filter id="boat-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><circle cx="233" cy="54" r="17" fill="#F2C14E" opacity=".76"/><path d="M0 92 Q35 72 70 91 T140 90 T210 89 T304 90 V192 H0 Z" fill="#E7EEF1"/><path d="M0 114 Q38 103 76 114 T152 114 T228 114 T304 113 V192 H0 Z" fill="url(#boat-water)"/><path d="M0 149 Q40 141 80 149 T160 149 T240 149 T304 148" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-context"><path d="M39 126 H264 M50 139 H244 M70 154 H228" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".75"/><path d="M43 81 Q72 72 99 81 M207 77 Q237 69 264 78" fill="none" stroke="#DCE8EB" stroke-width="2" stroke-linecap="round"/><ellipse cx="151" cy="150" rx="96" ry="10" fill="#5E91B1" opacity=".3"/></g>
+  <g id="layer-focal" filter="url(#boat-shadow)"><path d="M69 115 Q92 110 115 112 H191 Q216 109 238 116 L219 140 Q206 150 151 151 Q98 150 83 139 Z" fill="url(#boat-hull)" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/><path d="M77 118 Q119 122 151 121 Q192 122 231 119" fill="none" stroke="#F3CC91" stroke-width="3" stroke-linecap="round"/><path d="M89 126 Q151 132 220 126" fill="none" stroke="#6E432C" stroke-width="1.5"/><path d="M96 118 V132 M205 118 V132" stroke="#1E2A3B" stroke-width="2"/><path d="M104 129 H196" stroke="#71472E" stroke-width="5" stroke-linecap="round"/><path d="M143 121 Q141 111 150 107 Q160 104 166 113 L167 126 H143 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="154" cy="102" r="9" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.6"/><path d="M145 100 Q148 90 158 92 Q164 94 164 101" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.8"/><path d="M146 115 L125 132 M163 116 L183 131" stroke="#DCA47D" stroke-width="7" stroke-linecap="round"/><path d="M146 115 L125 132 M163 116 L183 131" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M123 130 L66 101 M184 130 L241 101" stroke="#9B633C" stroke-width="6" stroke-linecap="round"/><path d="M123 130 L66 101 M184 130 L241 101" stroke="#1E2A3B" stroke-width="1.3" stroke-linecap="round"/><path d="M54 94 Q63 88 72 95 L68 106 Q58 108 51 101 Z M235 95 Q244 88 253 94 L256 101 Q248 108 238 106 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M97 112 H116 M181 112 H199" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/><path d="M28 127 Q37 123 45 127 M260 132 Q270 128 278 132" fill="none" stroke="#E9F4F6" stroke-width="2" stroke-linecap="round"/><path d="M53 158 H95 M209 160 H255" stroke="#E4F0F4" stroke-width="1.8" stroke-linecap="round"/><circle cx="111" cy="142" r="1.8" fill="#F2C14E"/><circle cx="188" cy="143" r="1.8" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="94" rx="108" ry="72" fill="url(#boat-halo)" opacity=".17"/><path d="M29 32 H275" stroke="#FFFFFF" stroke-width=".7"/><path d="M35 113 Q76 106 112 113" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

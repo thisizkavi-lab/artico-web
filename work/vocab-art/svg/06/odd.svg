@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: odd (Adjective)
+  CONTEXTUAL_DEFINITION: Mildly unusual in an unexpected way, shown by two socks that clearly do not match.
+  PEDAGOGICAL_ARCHETYPE: 4 (A familiar pair with one surprising mismatch)
+  SYNONYM_GUARD: One striped sock and one polka-dot sock make a small, everyday oddity, distinct from something frightening or bizarre.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale bedroom floor and a dresser edge.
+    - Context_Layer: Person glances down with a puzzled, mildly amused expression.
+    - Focal_Layer: One striped sock beside one spotted sock.
+    - Details_Layer: Mismatched patterns and a small tilted laundry basket.
+    - Lighting_Layer: Soft daylight with a tiny surprised glint.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:odd" data-archetype="contrast-reference">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 144 Q151 138 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="17" y="31" width="67" height="68" rx="5" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><path d="M17 62 L84 62 M50 31 L50 99" stroke="#F1F5F9" stroke-width="2"/><ellipse cx="156" cy="163" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M24 148 Q28 122 49 120 Q70 123 72 148Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="49" cy="104" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M31 103 Q32 83 50 85 Q68 87 67 105 Q58 95 48 96Z" fill="#27364B"/><path d="M40 105 Q44 101 47 105 M53 105 Q57 101 60 105" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M41 114 Q49 117 57 113" fill="none" stroke="#A34F47" stroke-width="1.8"/><path d="M68 119 L77 112 L83 119 L74 126Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-focal"><path d="M120 108 Q130 104 141 109 L139 136 Q139 145 148 151 L146 159 L119 159 Q117 153 124 147 L121 134Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4"/><path d="M167 108 Q178 103 189 109 L187 135 Q185 144 194 151 L192 159 L164 159 Q162 153 170 146 L167 134Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.4"/><path d="M122 115 L139 115 M121 124 L138 124 M121 133 L138 133 M167 117 L188 117 M168 126 L187 126 M167 135 L187 135" stroke="#E9EFF5" stroke-width="2.2"/><circle cx="174" cy="114" r="2.4" fill="#F2C14E"/><circle cx="183" cy="128" r="2.4" fill="#F2C14E"/><circle cx="174" cy="136" r="2.4" fill="#F2C14E"/><path d="M124 108 Q131 102 138 108 M170 108 Q178 102 186 108" fill="none" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M92 74 L97 64 L102 74 L112 79 L102 84 L97 94 L92 84 L82 79Z" fill="#F2C14E"/><path d="M219 80 L224 70 L229 80 L239 85 L229 90 L224 100 L219 90 L209 85Z" fill="#CBD5E1"/><path d="M106 134 L112 126 M201 136 L207 128" stroke="#8B5CA8" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M25 38 Q50 34 75 40 M122 112 Q131 108 139 112" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

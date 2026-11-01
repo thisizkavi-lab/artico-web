@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: driveway (Noun)
+  CONTEXTUAL_DEFINITION: A private paved area leading from a home to the street, often for a car.
+  PEDAGOGICAL_ARCHETYPE: 5 (Spatial place diagram)
+  SYNONYM_GUARD: Show the paved vehicle route connecting a garage or home entrance to the road.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: House frontage, garage, and street.
+    - Context_Layer: Broad paved driveway joins garage to road.
+    - Focal_Layer: Car is parked on the private drive.
+    - Details_Layer: Lawn edges and garage door.
+    - Lighting_Layer: Bright daylight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:driveway" data-archetype="spatial-place">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 116 Q152 107 304 116 L304 192 L0 192Z" fill="#B7CEA9"/><path d="M48 111 L257 111 L304 180 L0 180Z" fill="#C8C6C1"/><path d="M0 181 L304 181" stroke="#8D989E" stroke-width="5"/><ellipse cx="155" cy="169" rx="109" ry="7" fill="#B2B3AD"/></g>
+  <g id="layer-context"><path d="M50 106 L50 47 L256 47 L256 106Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M40 48 L153 22 L266 48Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><rect x="178" y="61" width="62" height="45" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M184 68 L234 68 M184 77 L234 77 M184 86 L234 86 M184 95 L234 95" stroke="#FFFFFF" stroke-width="2"/><path d="M151 106 L111 180 M267 106 L303 180" fill="none" stroke="#FAF8F3" stroke-width="1.4" opacity="0.8"/><path d="M128 139 L149 139 M177 139 L198 139" stroke="#A9A7A1" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M93 143 L104 126 Q111 118 126 118 L157 118 Q168 118 174 130 L185 144 L181 153 L92 153Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2"/><path d="M112 126 L124 121 L145 121 L154 136 L105 136Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.5"/><path d="M128 122 L128 136 M147 122 L153 136" stroke="#FAF8F3" stroke-width="1.4"/><circle cx="112" cy="151" r="8" fill="#27364B"/><circle cx="166" cy="151" r="8" fill="#27364B"/><circle cx="112" cy="151" r="3" fill="#B9C7CF"/><circle cx="166" cy="151" r="3" fill="#B9C7CF"/></g>
+  <g id="layer-details"><path d="M32 117 L32 103 M42 117 L42 108" stroke="#8A5A35" stroke-width="3"/><circle cx="37" cy="98" r="12" fill="#7FB07A"/><path d="M265 117 L265 103 M275 117 L275 108" stroke="#8A5A35" stroke-width="3"/><circle cx="270" cy="98" r="12" fill="#8FB987"/></g>
+  <g id="layer-lighting"><circle cx="273" cy="35" r="15" fill="#F2C14E" opacity="0.45"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

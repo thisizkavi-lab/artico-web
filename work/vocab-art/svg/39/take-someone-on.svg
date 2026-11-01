@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: take someone on (phrasal verb; recruit into employment)
+  CONTEXTUAL_DEFINITION: Employ a person or add them to the organization.
+  PEDAGOGICAL_ART_DIRECTOR: Show a manager bringing one new worker into the office and giving them a work key, distinct from a standard interview or team-circle scene.
+  PEDAGOGICAL_ARCHETYPE: 3 - New employee onboarding
+  SYNONYM_GUARD: Although this phrase can also mean challenge or compete with someone, the chapter's hiring group locks it to employment.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Use the open office doorway at x=219..266. The manager stands inside at x=164..207 and gestures toward a ready desk; a newcomer steps over the threshold carrying a small work bag. A blue access key passes from manager to recruit.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:take someone on" data-archetype="employee-onboarding">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="take-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="take-door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="take-welcome"><stop stop-color="#FFF1B9" stop-opacity=".79"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="take-welcome-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="take-newhire" d="M221 129 Q222 109 235 103 L237 94 Q232 88 236 80 Q243 72 252 76 Q260 81 256 91 L253 100 Q266 106 267 128 L262 141 H225 Z"/>
+    <clipPath id="take-newhire-clip"><use href="#take-newhire"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="165" rx="110" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Open workplace doorway and a ready desk -->
+  <g id="layer-context"><path d="M30 150 H276" stroke="#C88446" stroke-width="2"/><rect x="222" y="36" width="52" height="114" rx="3" fill="url(#take-door)" stroke="#1E2A3B" stroke-width="1.9"/><path d="M228 43 H266 V145 H228 Z" fill="#F8FBFE" stroke="#64748B" stroke-width="1.1"/><path d="M217 45 L235 55 V137 L217 147 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.4"/><circle cx="260" cy="95" r="2.4" fill="#C88446"/><path d="M39 132 H126 V143 H39 Z" fill="#D79B61" stroke="#1E2A3B" stroke-width="1.8"/><path d="M49 143 V153 M116 143 V153" stroke="#965D28" stroke-width="2.5"/><rect x="52" y="85" width="42" height="33" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width="1.4"/><path d="M58 94 H88 M58 100 H84 M58 106 H89" stroke="#94A3B8" stroke-width="1.1"/><path d="M138 57 H188 V89 H138 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.3"/><path d="M144 65 H182 M144 71 H178" stroke="#94A3B8" stroke-width="1.1"/><circle cx="163" cy="80" r="5" fill="#A8D4A2" stroke="#64748B" stroke-width="1"/></g>
+  <!-- 3. Manager welcomes a new hire across the threshold -->
+  <g id="layer-focal" filter="url(#take-welcome-shadow)"><use href="#take-newhire" fill="url(#take-suit)" stroke="#1E2A3B" stroke-width="2.3"/><g clip-path="url(#take-newhire-clip)"><path d="M216 103 Q247 93 271 107 V144 H216Z" fill="#3D5F91"/><path d="M229 105 Q245 98 260 104" fill="none" stroke="#BBD2EF" stroke-width="2.3"/></g><ellipse cx="245" cy="86" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M237 84 Q238 74 246 74 Q254 75 255 83 Q249 78 243 80 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1"/><use href="#take-newhire" fill="none" stroke="#1E2A3B" stroke-width="2.3"/><path d="M226 114 L213 123 L216 129 L232 123 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M212 121 Q206 120 203 125 L208 130 L216 127 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><path d="M164 124 Q164 105 176 99 L178 90 Q174 84 177 77 Q184 69 193 73 Q201 78 197 88 L194 96 Q208 102 209 124 L204 140 H168 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="187" cy="83" rx="8" ry="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/><path d="M179 81 Q180 71 188 71 Q196 72 197 80 Q191 75 185 77 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1"/><path d="M202 112 Q215 106 226 106 L234 111 L231 117 L216 117 L204 121 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M230 106 Q236 104 240 109 L237 115 L230 114 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M171 121 L162 135 L166 141 L180 128 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.7"/><path d="M163 134 Q158 134 156 139 L161 143 L167 140 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/><path d="M178 136 L175 151 L184 153 L190 138 M194 137 L195 151 L204 151 L204 137" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <!-- 4. Manager passes a work access key, not a conflict challenge -->
+  <g id="layer-details"><path d="M219 111 L231 111 L231 118 L222 118 L222 126 L218 126 L218 120 L213 120 L213 116 L219 116 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="226" cy="114" r="2" fill="#FFFFFF"/><rect x="103" y="121" width="17" height="15" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.1"/><path d="M107 126 H116 M107 131 H114" stroke="#94A3B8" stroke-width=".9"/><path d="M147 112 C160 106 171 106 182 111" fill="none" stroke="#7FB07A" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M176 107 L184 112 L175 114 Z" fill="#7FB07A"/></g>
+  <!-- 5. Warm halo marks welcoming someone into the organization -->
+  <g id="layer-lighting"><ellipse cx="221" cy="108" rx="46" ry="42" fill="url(#take-welcome)"/><ellipse cx="220" cy="111" rx="32" ry="30" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4"/><path d="M241 77 H249" stroke="#F5BFA3" stroke-width="1.4" stroke-linecap="round"/><path d="M277 64 L283 58 M278 75 H286" stroke="#F2C14E" stroke-width="1.8" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: customer service
+  CONTEXTUAL_DEFINITION: Help provided by a business worker to a customer.
+  PEDAGOGICAL_ART_DIRECTOR: Show a staff member directly resolving a customer's question at a service counter.
+  PEDAGOGICAL_ARCHETYPE: 29 - Direct customer help
+  SYNONYM_GUARD: Depict one concrete helpful interaction; customer-focused is a broader ongoing priority across decisions.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place one customer at the counter and a staff member behind it. Show the customer pointing to an item or question card and the staff member handing back a clear solution card with a friendly check.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:customer service" data-archetype="direct-customer-help">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="customerservice-counter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="customerservice-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="customerservice-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="customerservice-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="116" y="48" width="73" height="45" rx="3" fill="#FFFFFF" stroke="#64748B" stroke-width="1"/><path d="M124 59 H181 M124 66 H174 M124 74 H181" stroke="#CBD5E1" stroke-width="1"/><circle cx="130" cy="83" r="4" fill="#F7E8BF" stroke="#C88446" stroke-width=".8"/><path d="M138 83 H178" stroke="#8EB0DE" stroke-width="1"/><path d="M35 117 H269 V135 H35 Z" fill="url(#customerservice-counter)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M49 135 V146 M255 135 V146" stroke="#965D28" stroke-width="2.1"/><rect x="177" y="99" width="33" height="27" rx="3" fill="#E5F0E1" stroke="#547A56" stroke-width="1"/><path d="M183 113 L188 118 L198 106" fill="none" stroke="#547A56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#customerservice-shadow)"><path d="M48 117 Q50 97 61 90 L62 81 Q58 77 60 70 Q68 62 79 64 Q88 67 86 78 L84 85 Q95 90 97 115 L94 128 H52 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="73" cy="74" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M65 72 Q67 64 74 64 Q82 65 86 72 Q78 68 71 69 Z" fill="#3D342D"/><path d="M54 95 Q73 89 92 95" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M58 99 L87 103" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M87 103 L111 104" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/><path d="M198 117 Q200 96 212 89 L213 80 Q209 76 211 69 Q219 61 230 63 Q239 66 237 77 L235 84 Q247 90 249 115 L246 128 H202 Z" fill="url(#customerservice-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="224" cy="73" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M216 71 Q218 63 225 63 Q233 64 237 71 Q229 67 222 68 Z" fill="#3D342D"/><path d="M203 95 Q224 89 245 95" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M204 100 L190 104 M241 100 L221 104" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M190 104 L182 105 M221 104 L211 104" stroke="#D89A6C" stroke-width="3.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M97 60 Q97 54 103 54 H115 Q121 54 121 60 V66 Q121 72 115 72 H109 L103 77 L104 72 H103 Q97 72 97 66 Z" fill="#FFFFFF" stroke="#5479AC" stroke-width="1"/><circle cx="105" cy="63" r="1.3" fill="#5479AC"/><circle cx="110" cy="63" r="1.3" fill="#5479AC"/><circle cx="115" cy="63" r="1.3" fill="#5479AC"/><circle cx="151" cy="43" r="2" fill="#F2C14E"/><circle cx="252" cy="51" r="2" fill="#A8D4A2"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="103" ry="66" fill="url(#customerservice-halo)" opacity=".15"/><path d="M117 49 H188" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

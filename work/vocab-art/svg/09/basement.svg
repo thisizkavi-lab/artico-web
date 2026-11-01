@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: basement (Noun)
+  CONTEXTUAL_DEFINITION: A room or floor below the ground level of a house.
+  PEDAGOGICAL_ARCHETYPE: 5 (Building section showing below-ground placement)
+  SYNONYM_GUARD: Show one usable room beneath the ground line, reached by stairs from the level above.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cross-section of a house and soil line.
+    - Context_Layer: Ground-level floor sits above the basement ceiling.
+    - Focal_Layer: Lower room is clearly below ground, with steps descending.
+    - Details_Layer: Storage shelves and a small window well.
+    - Lighting_Layer: Cool daylight enters from the high window.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:basement" data-archetype="below-ground-space">
+  <defs><linearGradient id="air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="0.45" stop-color="#FAF8F3"/><stop offset="0.46" stop-color="#B99B76"/><stop offset="1" stop-color="#D5C0A1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#air)"/><path d="M0 84 L304 84 L304 101 L0 101Z" fill="#8A5A35"/><path d="M0 102 Q152 95 304 102 L304 192 L0 192Z" fill="#C5AB86"/><ellipse cx="152" cy="169" rx="109" ry="7" fill="#A78F6F"/></g>
+  <g id="layer-context"><rect x="52" y="101" width="199" height="56" fill="#E9EFEA" stroke="#1E2A3B" stroke-width="2.3"/><path d="M66 102 L66 148 M239 102 L239 148" stroke="#5479AC" stroke-width="2"/><path d="M83 84 L83 103 L95 115 L107 103 L119 115 L131 103 L143 115 L155 103" fill="none" stroke="#B97840" stroke-width="8" stroke-linejoin="round"/><path d="M194 101 L194 88 L226 88 L226 101Z" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M210 88 L210 101 M194 94 L226 94" stroke="#FAF8F3" stroke-width="1.6"/><rect x="104" y="122" width="68" height="27" rx="3" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M104 130 L172 130 M115 122 L115 149 M162 122 L162 149" stroke="#8A5A35" stroke-width="1.4"/><rect x="183" y="125" width="40" height="23" rx="2" fill="#8B5CA8"/><path d="M183 133 L223 133 M190 125 L190 148" stroke="#5F3E71" stroke-width="1.4"/><path d="M182 114 L230 114" stroke="#5479AC" stroke-width="3"/><path d="M182 114 L182 126 M230 114 L230 126" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M30 41 L64 41 L64 84 L30 84Z" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M47 41 L47 84 M30 62 L64 62" stroke="#FAF8F3" stroke-width="2"/><path d="M72 87 L82 87 M157 87 L169 87" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><path d="M22 113 L40 110 M265 124 L282 121 M15 142 L34 139" stroke="#8A5A35" stroke-width="2" opacity="0.65"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

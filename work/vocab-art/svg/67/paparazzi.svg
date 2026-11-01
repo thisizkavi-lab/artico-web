@@ -1,0 +1,55 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: paparazzi
+ CONTEXTUAL_DEFINITION: Professional photographers who aggressively seek candid photographs of public figures.
+ PEDAGOGICAL_ARCHETYPE: clustered press photographers with long lenses photographing a public figure
+ SYNONYM_GUARD: Make the intrusive professional camera crowd and candid subject clear; distinguish from fans taking friendly selfies.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A public figure exits a venue toward a car while two press photographers crowd the foreground with long-lens cameras and flashes; the figure turns away and shields their face.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:paparazzi" data-archetype="press photographers pursuing candid celebrity photos">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 157H304V192H0Z" fill="#C8B89E"/><path d="M0 157H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M24 38H111V142H24Z" fill="#D6C7B1"/><path d="M34 49H102V142H34Z" fill="#E9E1D2"/><path d="M42 57H94V125H42Z" fill="#9FB1A9"/>
+  <path d="M45 86H91V142H45Z" fill="#8D775E"/><path d="M51 92H85V142H51Z" fill="#B85E5A"/>
+  <path d="M193 140H285V147H193Z" fill="#A99A83"/><path d="M203 140V147M275 140V147" stroke="#796B59" stroke-width="1.2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M20 145H286" stroke="#725F4B" stroke-width="2"/><path d="M120 38V91M127 38V91" stroke="#D6A64C" stroke-width="1.3"/>
+  <path d="M112 54L122 48V65L112 60Z" fill="#26384A"/><circle cx="120" cy="56" r="1.4" fill="#D6A64C"/>
+  <path d="M177 63L186 57V73L177 68Z" fill="#26384A"/><circle cx="184" cy="64" r="1.4" fill="#D6A64C"/>
+  <path d="M136 37L141 32L146 37M158 44L163 39L168 44" stroke="#D6A64C" stroke-width="1.5"/>
+  <path d="M22 151H283" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-focal">
+  <!-- subject trying to avoid candid attention -->
+  <circle cx="154" cy="71" r="10" fill="#D29A78"/><path d="M144 70Q145 56 155 57Q166 58 165 72L159 64H146Z" fill="#26384A"/>
+  <path d="M137 84Q154 76 171 84L178 121H130Z" fill="#B85E5A" stroke="#26384A" stroke-width="1"/>
+  <path d="M139 88L128 99L121 94M169 88L179 97" stroke="#D29A78" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M150 83L158 90L166 83" fill="#F6E5CE"/><path d="M151 90L158 97L164 90" fill="#D6A64C"/>
+  <path d="M137 119L135 142M171 119L174 142" stroke="#26384A" stroke-width="3"/>
+  <path d="M168 64L182 49L187 54L176 71" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <!-- foreground photographer with pro camera -->
+  <circle cx="66" cy="108" r="7" fill="#A77D68"/><path d="M58 108Q59 98 66 99Q73 100 74 109L69 104H60Z" fill="#26384A"/>
+  <path d="M53 118Q66 112 79 118L85 151H47Z" fill="#405663"/>
+  <path d="M57 121L49 111M77 121L87 110" stroke="#A77D68" stroke-width="3"/>
+  <path d="M77 105H109L115 111V123H78Z" fill="#26384A" stroke="#D6A64C" stroke-width="1.2"/><circle cx="105" cy="114" r="6" fill="#597D8B" stroke="#F6E5CE" stroke-width="1"/><path d="M83 106V101H93V106" fill="#26384A"/>
+  <path d="M61 146L59 157M79 146L82 157" stroke="#26384A" stroke-width="2.4"/>
+  <!-- second long lens aimed at subject -->
+  <circle cx="265" cy="91" r="7" fill="#B98467"/><path d="M258 91Q259 81 266 82Q273 83 273 92L269 86H260Z" fill="#26384A"/>
+  <path d="M255 101Q265 96 275 101L279 137H251Z" fill="#798C72"/>
+  <path d="M258 105L248 112M274 105L267 112" stroke="#B98467" stroke-width="2.8"/>
+  <path d="M223 105H255L260 110V123H223Z" fill="#26384A" stroke="#D6A64C" stroke-width="1.1"/><path d="M216 108H224V120H216Z" fill="#405663"/><circle cx="225" cy="114" r="6" fill="#597D8B" stroke="#F6E5CE" stroke-width="1"/><path d="M235 106V101H245V106" fill="#26384A"/>
+  <path d="M257 134L255 147M275 134L278 147" stroke="#26384A" stroke-width="2.2"/>
+ </g>
+ <g id="layer-details">
+  <path d="M151 69Q155 67 160 69M149 76L154 77" stroke="#654E43" stroke-width="1.2"/>
+  <path d="M118 44L123 40L128 44L123 48Z" fill="#F6E5CE"/><path d="M188 52L193 48L198 52L193 56Z" fill="#F6E5CE"/>
+  <path d="M96 100L101 95M262 82L267 77M280 94L285 89" stroke="#B85E5A" stroke-width="1.5"/>
+  <circle cx="132" cy="52" r="1.8" fill="#D6A64C"/><circle cx="202" cy="68" r="1.8" fill="#D6A64C"/>
+ </g>
+ <g id="layer-lighting">
+  <path d="M114 29L145 57L157 103L174 57L203 29" fill="#F0D58B" opacity=".1"/>
+  <ellipse cx="157" cy="89" rx="73" ry="62" fill="#E7C66B" opacity=".07"/><path d="M24 152H285" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

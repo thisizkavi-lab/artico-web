@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: stepbrother (Noun)
+  CONTEXTUAL_DEFINITION: A boy who becomes one's brother through a parent's marriage or partnership.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two boys from newly joined households meet over a shared model; both adults behind them support the blended family, avoiding a hostile-step-sibling cliché.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared living room with a new family box and sofa.
+    - Context_Layer: Two different adult caregivers and a partly unpacked box.
+    - Focal_Layer: Two boys sit opposite one another, passing one toy between them.
+    - Details_Layer: Different hair and clothes, shared play, and one common room.
+    - Lighting_Layer: Connecting arc over the two children.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:stepbrother" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="stepbrother-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="stepbrother-rug" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCEAD6"/><stop offset="1" stop-color="#C3DAB9"/></linearGradient>
+    <filter id="stepbrother-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#stepbrother-bg)"/><path d="M0 151Q72 145 152 151T304 149V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="125" ry="7" fill="#DDD4C3"/><path d="M30 106Q30 90 48 90H256Q274 90 274 106V131H30Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><path d="M40 105H264M46 131V144M258 131V144" stroke="#64748B" stroke-width="2"/><ellipse cx="152" cy="155" rx="122" ry="20" fill="url(#stepbrother-rug)"/></g>
+  <g id="layer-context"><path d="M19 121L43 106L69 121V153H19Z" fill="#C88446" stroke="#965D28" stroke-width="2"/><path d="M17 121L43 103L71 121" fill="none" stroke="#965D28" stroke-width="2"/><path d="M29 138Q43 132 57 138M29 144H59" fill="none" stroke="#E3AC77" stroke-width="1.6"/><circle cx="91" cy="59" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M74 57Q75 41 91 41Q109 42 109 60" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M73 83Q91 74 108 84L112 107H70Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="221" cy="59" r="17" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M204 57Q205 41 221 41Q239 42 239 60" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M203 83Q221 74 238 84L242 107H200Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#stepbrother-shadow)"><ellipse cx="151" cy="129" rx="108" ry="51" fill="#FEF3C7" opacity=".26"/><path d="M48 178Q51 147 69 139Q87 131 106 141L112 178Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="79" cy="116" r="24" fill="#C98961" stroke="#1E2A3B" stroke-width="2.3"/><path d="M55 114Q57 92 79 92Q103 93 103 117L97 122Q92 105 79 105Q67 105 58 123Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M67 116Q72 120 77 116M82 116Q87 120 92 116M69 129Q79 134 89 129" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M98 146Q118 137 130 129" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M98 146Q118 137 130 129" stroke="#C98961" stroke-width="5.5" stroke-linecap="round"/><path d="M192 178Q195 147 213 139Q231 131 250 141L257 178Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="223" cy="116" r="24" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M199 114Q201 92 223 92Q247 93 247 117L241 122Q236 105 223 105Q211 105 202 123Z" fill="#80513F" stroke="#1E2A3B" stroke-width="1.9"/><path d="M211 116Q216 120 221 116M226 116Q231 120 236 116M213 129Q223 134 233 129" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M205 145Q188 138 178 129M235 145Q220 136 208 128" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M205 145Q188 138 178 129M235 145Q220 136 208 128" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M131 127L150 115L171 127L151 140Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="151" cy="124" r="4" fill="#CE3D4E"/></g>
+  <g id="layer-details"><path d="M66 96Q79 90 93 95M210 96Q223 90 237 95" fill="none" stroke="#FFFFFF" stroke-width="2.3"/><path d="M143 99Q151 93 159 99M145 93L139 88M157 93L164 88" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><circle cx="151" cy="86" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M38 122Q151 37 266 121" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".36"/><path d="M55 34Q79 25 104 31M199 34Q222 25 247 31" fill="none" stroke="#FFFFFF" stroke-width="2.5"/></g>
+</svg>

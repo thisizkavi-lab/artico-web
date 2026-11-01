@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: formal (Adjective)
+  CONTEXTUAL_DEFINITION: Wearing clothes for an official or ceremonious occasion.
+  PEDAGOGICAL_ARCHETYPE: 3 — Full-body portrait
+  SYNONYM_GUARD: Use a tailored dark suit, crisp shirt, tie, and polished shoes, unlike casual wear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Event-hall arch.
+    - Context_Layer: Muted doorway and floor.
+    - Focal_Layer: Person in a neat dark two-piece suit.
+    - Details_Layer: Shirt, tie, jacket lapels, and polished shoes.
+    - Lighting_Layer: Warm formal-event light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:formal" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M36 166H268" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="152" cy="167" rx="88" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M51 158V65Q51 28 89 28H215Q253 28 253 65V158" fill="none" stroke="#E3E8F0" stroke-width="7"/><ellipse cx="152" cy="94" rx="83" ry="70" fill="#FEF3C7" opacity=".35"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <circle cx="152" cy="36" r="14" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M138 32Q140 18 152 18Q165 19 166 34L158 38L144 36Z" fill="#35404B" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M137 53Q152 47 167 53L181 95L172 119L177 153H127L132 119L123 95Z" fill="#263447" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M137 58L151 78L143 109L128 82M167 58L153 78L161 109L176 82" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M149 75L155 75L159 94L152 106L145 94Z" fill="#A95059" stroke="#1E2A3B" stroke-width="1.6"/>
+  <path d="M131 151L149 151L147 166H127ZM155 151L173 151L177 166H157Z" fill="#263447" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M146 36Q152 39 158 36M149 43Q152 45 155 43" fill="none" stroke="#1E2A3B" stroke-width="1.3"/><path d="M149 77L152 82L155 77M130 114H173" fill="none" stroke="#7B8A9E" stroke-width="1.5"/>
+  <circle cx="81" cy="47" r="4" fill="#D9A441"/><circle cx="223" cy="47" r="4" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M89 112Q78 99 81 83M215 112Q226 99 223 83" fill="none" stroke="#4A72B2" stroke-width="1.3" stroke-dasharray="4 5"/>
+</svg>

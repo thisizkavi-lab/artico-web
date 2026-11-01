@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: unfriendly (Adjective)
+  CONTEXTUAL_DEFINITION: Acting coldly or unkindly toward another person.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person actively turns away and dismisses a greeting, unlike unapproachable which only signals reluctance to engage.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared table in a neighborhood room.
+    - Context_Layer: Peer offers a small flower from the left.
+    - Focal_Layer: Person at right turns shoulder away and refuses the greeting.
+    - Details_Layer: Frown, dismissive hand, lowered flower and distance cue.
+    - Lighting_Layer: Cooler muted halo on the rejecting gesture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:unfriendly" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#7B8A9E"/><stop offset="1" stop-color="#526173"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q86 143 152 150T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="132" ry="8" fill="#EAE3D5"/></g>
+  <g id="layer-context"><circle cx="75" cy="67" r="17" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2"/><path d="M58 67Q59 49 75 50Q92 51 92 68L86 73H61Z" fill="#805333"/><path d="M55 90Q75 83 94 90L99 123H50Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M91 97Q108 103 122 100" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M118 97Q126 91 132 96L137 91" fill="none" stroke="#56725E" stroke-width="3"/><circle cx="136" cy="89" r="3" fill="#D9857F"/><path d="M136 90L141 83M135 91L131 82" stroke="#56725E" stroke-width="2" stroke-linecap="round"/><path d="M22 126H283L276 137H29Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="218" cy="97" rx="68" ry="72" fill="#E3E8F0" opacity=".65"/><circle cx="216" cy="59" r="21" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M195 59Q196 36 216 37Q237 38 237 60L230 65Q226 48 214 49Q204 50 198 67Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M192 85Q216 78 240 85L247 125H184Z" fill="url(#top)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M197 94L175 103L171 96M236 93L252 104L261 106" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M197 94L175 103L171 96" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M189 125L188 159H205L213 127M218 127L225 159H242L238 125" fill="#526173" stroke="#1E2A3B" stroke-width="2"/><path d="M209 59L215 61M225 59L231 57" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-details"><path d="M207 72Q215 68 223 71" fill="none" stroke="#805333" stroke-width="1.8"/><path d="M186 52L179 48M244 51L251 47M184 65L177 67M247 65L254 67" stroke="#7B8A9E" stroke-width="1.8" stroke-linecap="round"/><path d="M147 85L158 96M158 85L147 96" stroke="#D9857F" stroke-width="2.3" stroke-linecap="round"/><path d="M104 79Q114 76 120 81" fill="none" stroke="#4A72B2" stroke-width="1.7" stroke-dasharray="3 4"/><circle cx="146" cy="110" r="2" fill="#AAB5C3"/><circle cx="160" cy="111" r="2" fill="#AAB5C3"/></g>
+  <g id="layer-lighting"><path d="M207 44Q216 40 226 44" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".58"/><ellipse cx="218" cy="97" rx="68" ry="72" fill="none" stroke="#7B8A9E" stroke-width="1.3" stroke-dasharray="3 5" opacity=".36"/></g>
+</svg>

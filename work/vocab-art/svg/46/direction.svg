@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: direction
+  CONTEXTUAL_DEFINITION: The way a person or route is oriented toward a destination.
+  PEDAGOGICAL_ART_DIRECTOR: Show a compass rose aligned with a clear route arrow that points from a traveler toward one chosen landmark.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Depict orientation/bearing rather than a list of spoken instructions or a compass object alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Traveler marker at (62,135), destination at (239,51); bold route vector runs northeast between them; small compass at (151,96) aligns its needle to the same bearing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:direction" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="direction-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4EDDA"/><stop offset="1" stop-color="#C7DCC2"/></linearGradient>
+    <linearGradient id="direction-route" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#7BA5D0"/></linearGradient>
+    <radialGradient id="direction-focus"><stop stop-color="#F2C14E" stop-opacity=".35"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="direction-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect x="14" y="15" width="276" height="162" rx="12" fill="url(#direction-map)" stroke="#1E2A3B" stroke-width="2.1"/><path d="M20 58H284M20 120H284M83 19V173M218 19V173" stroke="#A7B7A4" stroke-width="1.4"/><path d="M16 91H288M151 17V175" stroke="#657688" stroke-width="12"/><path d="M18 91H286M151 18V174" stroke="#F8F6EF" stroke-width="1.4" stroke-dasharray="7 8"/></g>
+  <g id="layer-context"><rect x="34" y="34" width="29" height="20" rx="3" fill="#D8B895" stroke="#766553" stroke-width="1.4"/><rect x="247" y="131" width="31" height="23" rx="3" fill="#A5BDCB" stroke="#556B7B" stroke-width="1.4"/><circle cx="80" cy="51" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><circle cx="221" cy="143" r="10" fill="#7FA87B" stroke="#486750" stroke-width="1.5"/><path d="M30 159H88M217 35H276" stroke="#F8F6EF" stroke-width="1.5"/></g>
+  <g id="layer-focal" filter="url(#direction-shadow)"><path d="M61 138C99 126 124 108 151 95C181 81 207 67 239 49" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/><path d="M61 138C99 126 124 108 151 95C181 81 207 67 239 49" fill="none" stroke="url(#direction-route)" stroke-width="8" stroke-linecap="round"/><path d="M229 44L252 41L241 62Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><circle cx="61" cy="138" r="12" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2"/><circle cx="61" cy="138" r="4" fill="#FAF8F3"/><circle cx="239" cy="49" r="12" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="151" cy="95" r="31" fill="url(#direction-focus)"/><circle cx="151" cy="95" r="23" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="1.8"/><path d="M134 112L168 78" stroke="#F2C14E" stroke-width="5" stroke-linecap="round"/><path d="M159 77L173 73L169 87Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="151" cy="95" r="4" fill="#1E2A3B"/></g>
+  <g id="layer-details"><path d="M83 132L96 126M111 118L124 111M184 80L198 72M210 65L223 58" stroke="#C6DAEF" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M142 103L148 97" stroke="#FFFFFF" stroke-width="1.6"/><circle cx="64" cy="122" r="3" fill="#FFFFFF"/><circle cx="238" cy="49" r="17" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/><path d="M24 26H99" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/></g>
+  <g id="layer-lighting"><circle cx="151" cy="95" r="27" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M26 166Q71 171 103 155" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".6"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: sidewalk
+  CONTEXTUAL_DEFINITION: A paved path along the side of a city street for people walking.
+  PEDAGOGICAL_ART_DIRECTOR: Show a wide paved sidewalk running parallel to an urban road, separated by a visible curb; one person walks along it.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: The path must be paved and beside a city street, not a countryside footpath or a car-free pedestrian plaza.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: The road spans x=13..178 horizontally; a raised curb at x=181 divides it from a broad sidewalk x=184..288, where a walker proceeds along the street.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:sidewalk" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="sidewalk-ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4E9DF"/><stop offset="1" stop-color="#CAD7C8"/></linearGradient>
+  <linearGradient id="sidewalk-pave" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEECE4"/><stop offset="1" stop-color="#D7D5CC"/></linearGradient>
+  <linearGradient id="sidewalk-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#687A8B"/><stop offset="1" stop-color="#47596B"/></linearGradient>
+  <filter id="sidewalk-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sidewalk-ground)"/><path d="M12 46H291V151H12Z" fill="url(#sidewalk-pave)" stroke="#7B8581" stroke-width="1.4"/><path d="M12 104H181V184H12Z" fill="#EEECE4" stroke="#6D7B7C" stroke-width="1.3"/><path d="M12 113H181V183H12Z" fill="url(#sidewalk-road)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M183 46V151" stroke="#FFFFFF" stroke-width="5"/><path d="M188 50V147" stroke="#A7AAA1" stroke-width="1.4"/><path d="M22 146H165" stroke="#F8F5EA" stroke-width="1.5" stroke-dasharray="10 9" opacity=".75"/><path d="M205 63H280M205 89H280M205 116H280M205 136H280" stroke="#C2C4BC" stroke-width="1"/></g>
+ <g id="layer-context"><rect x="22" y="19" width="46" height="27" rx="3" fill="#D7C3A5" stroke="#766857" stroke-width="1.4"/><path d="M18 23L44 6L72 23Z" fill="#91745B" stroke="#1E2A3B" stroke-width="1.2"/><rect x="92" y="19" width="51" height="27" rx="3" fill="#B9CCD0" stroke="#60747D" stroke-width="1.4"/><path d="M87 23L117 5L148 23Z" fill="#687C86" stroke="#1E2A3B" stroke-width="1.2"/><rect x="221" y="19" width="58" height="27" rx="3" fill="#D6C09F" stroke="#766857" stroke-width="1.4"/><path d="M216 23L250 5L284 23Z" fill="#907258" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="44" cy="76" r="11" fill="#80A97C" stroke="#486750" stroke-width="1.4"/><circle cx="154" cy="71" r="9" fill="#80A97C" stroke="#486750" stroke-width="1.4"/><circle cx="204" cy="157" r="11" fill="#80A97C" stroke="#486750" stroke-width="1.4"/><circle cx="278" cy="160" r="9" fill="#80A97C" stroke="#486750" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#sidewalk-shadow)"><ellipse cx="237" cy="108" rx="9" ry="4" fill="#68736F" opacity=".35"/><circle cx="237" cy="78" r="7" fill="#D9A77D" stroke="#1E2A3B" stroke-width="1"/><path d="M228 87Q237 82 246 87L249 107L245 122H230L225 106Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><path d="M231 120L228 137M244 120L249 136M228 92L218 104M247 92L256 103" stroke="#354A5D" stroke-width="3.2" stroke-linecap="round"/><path d="M228 137L224 140M249 136L253 140" stroke="#354A5D" stroke-width="2.6" stroke-linecap="round"/><g transform="translate(60 126)"><path d="M4 4Q6 0 12 0H20Q26 1 28 7L30 21H2Z" fill="#E0B969" stroke="#1E2A3B" stroke-width="1.6"/><path d="M8 5H22L25 12H6Z" fill="#BCD8E0" stroke="#526274" stroke-width="1"/><circle cx="7" cy="20" r="2" fill="#36485A"/><circle cx="25" cy="20" r="2" fill="#36485A"/></g></g>
+ <g id="layer-details"><rect x="171" y="65" width="8" height="32" rx="2" fill="#D6D2C7" stroke="#7D8580" stroke-width="1"/><path d="M194 54V144M198 54V144" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M212 77H228M247 77H264" stroke="#BBBEB5" stroke-width="1.2"/><circle cx="207" cy="52" r="5" fill="#83AA78" stroke="#486750" stroke-width="1.1"/><circle cx="275" cy="54" r="5" fill="#83AA78" stroke="#486750" stroke-width="1.1"/><path d="M22 57H160" stroke="#FFFFFF" stroke-width="1" opacity=".65"/></g>
+ <g id="layer-lighting"><ellipse cx="233" cy="102" rx="38" ry="52" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".42"/><path d="M15 108H178" stroke="#A6B5C0" stroke-width="1" opacity=".5"/><path d="M186 48V149" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/></g>
+</svg>

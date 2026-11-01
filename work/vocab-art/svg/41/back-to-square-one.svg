@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 41 - Work and business idioms
+  WORD: back to square one (idiom)
+  CONTEXTUAL_DEFINITION: A work plan has failed, so the team must restart from its first step.
+  PEDAGOGICAL_ARCHETYPE: 6 - Reversed workplace route
+  SYNONYM_GUARD: Show a project marker physically returning to the first planning square after a blocked route, not a generic return visit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Use a large three-step planning board at x=48..256, y=35..141. The blue route ends at a blocked red endpoint; a bold curved arrow returns to the gold first square at x=75,y=113. Add one colleague resetting a marker at the start.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="41:back to square one" data-archetype="business-reset">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#CE3D4E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="square-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></linearGradient>
+    <linearGradient id="square-start" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#F2C14E"/></linearGradient>
+    <radialGradient id="square-reset"><stop stop-color="#FEF3C7" stop-opacity=".8"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="square-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F3F5F7"/><rect y="151" width="304" height="41" fill="#EAE3D5"/><ellipse cx="153" cy="171" rx="107" ry="7" fill="#DDD4C3"/><path d="M0 151 H304" stroke="#CFC5B7" stroke-width="1.3" fill="none"/></g>
+  <g id="layer-context"><rect x="42" y="27" width="220" height="117" rx="7" fill="url(#square-board)" stroke="#1E2A3B" stroke-width="2"/><path d="M53 37 H250" stroke="#CBD5E1" stroke-width="1.2" fill="none"/><path d="M84 54 H136 V91 H84Z M145 54 H197 V91 H145Z M206 54 H248 V91 H206Z" fill="#EDF1F5" stroke="#AAB6C6" stroke-width="1.4"/><path d="M80 74 H150 L182 65 L225 75" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M222 68 L233 75 L221 81" fill="#5479AC"/><path d="M226 53 l13 14 M239 53 l-13 14" stroke="#CE3D4E" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M113 94 C118 124 77 129 70 103" fill="none" stroke="#C88446" stroke-width="3.5" stroke-linecap="round"/><path d="M71 98 L68 108 L79 104" fill="#C88446"/><circle cx="177" cy="74" r="6" fill="#8EB0DE" stroke="#3D5F91" stroke-width="1.4"/><rect x="55" y="101" width="34" height="28" rx="3" fill="url(#square-start)" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="72" cy="115" r="7" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M61 106 H83 M61 124 H83" stroke="#D49B2A" stroke-width="1" fill="none"/></g>
+  <g id="layer-focal" filter="url(#square-shadow)"><ellipse cx="76" cy="115" rx="37" ry="30" fill="url(#square-reset)"/><ellipse cx="119" cy="154" rx="55" ry="5" fill="#DDD4C3"/><path d="M92 150 Q95 132 108 127 L110 119 Q106 115 108 107 Q111 98 122 98 Q133 98 135 108 L133 119 Q145 124 149 150Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="122" cy="107" rx="9" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><path d="M113 105 Q114 95 123 96 Q131 97 132 105 Q124 101 113 105Z" fill="#3A2E2B"/><path d="M110 120 Q104 115 97 109" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/><circle cx="97" cy="109" r="4.2" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M102 135 Q108 131 115 133" fill="none" stroke="#8EB0DE" stroke-width="1.4"/><path d="M122 102 Q126 100 129 103" fill="none" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M45 35 h7 M45 35 v7 M259 35 h-7 M259 35 v7" stroke="#64748B" stroke-width="1.2" fill="none"/><circle cx="215" cy="101" r="2.2" fill="#CE3D4E"/><circle cx="227" cy="96" r="1.6" fill="#CE3D4E"/><path d="M185 116 l5-5 5 5 M194 121 l4-4 4 4" fill="none" stroke="#CE3D4E" stroke-width="1.5" stroke-linecap="round"/><path d="M67 113 l4 4 7-8" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M153 42 l4 4 -4 4 -4-4Z" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><path d="M49 33 H158" stroke="#FFFFFF" stroke-width="1.6" opacity=".8" fill="none"/><path d="M112 100 Q121 96 130 100" fill="none" stroke="#FDE4D4" stroke-width="1.1"/><ellipse cx="76" cy="115" rx="25" ry="18" fill="#FFFFFF" opacity=".09"/></g>
+</svg>

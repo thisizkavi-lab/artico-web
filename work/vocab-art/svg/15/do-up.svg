@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: do up (Verb phrase)
+  CONTEXTUAL_DEFINITION: To close a jacket by pulling its zipper upward.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action with clothing tool
+  SYNONYM_GUARD: The zipper teeth join as the slider moves up; undo shows the zipper opening.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front close-up of a jacket.
+    - Context_Layer: Two jacket fronts meet at a centered zipper track.
+    - Focal_Layer: Hand draws the zipper slider upward to close the front.
+    - Details_Layer: Teeth are separated below and joined above the slider.
+    - Lighting_Layer: Blue upward motion cue follows the slider.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:do up" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="162" rx="117" ry="21" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M52 36Q96 24 146 37L152 177H44Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M252 36Q208 24 158 37L152 177H260Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M142 48L162 48L162 177H142Z" fill="#64748B"/><path d="M116 51L146 51M188 51L158 51" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="84" rx="40" ry="46" fill="#FEF3C7" opacity=".48"/><path d="M143 140L161 140L161 51L143 51Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.2"/><path d="M145 132Q152 136 159 132M145 122Q152 126 159 122M145 112Q152 116 159 112M145 102Q152 106 159 102M145 92Q152 96 159 92M145 82Q152 86 159 82M145 72Q152 76 159 72M145 62Q152 66 159 62" stroke="#F8FAFC" stroke-width="1.3"/><path d="M143 143L143 53M161 143L161 53" stroke="#1E2A3B" stroke-width="1.3" stroke-dasharray="2 3"/><rect x="136" y="81" width="32" height="22" rx="5" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="152" cy="92" r="4" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.2"/><path d="M135 81Q152 75 169 81V103Q152 109 135 103Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M226 122L202 122L202 97L170 97" fill="none" stroke="#F0C5A7" stroke-width="13" stroke-linecap="round"/><path d="M226 122L202 122L202 97L170 97" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><path d="M184 70L184 54" stroke="#4A72B2" stroke-width="2"/><path d="M179 62L184 52L189 62" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M176 130L176 84" stroke="#4A72B2" stroke-width="1.4" stroke-dasharray="4 4" opacity=".7"/></g>
+</svg>

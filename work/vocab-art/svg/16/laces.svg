@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: laces (Noun, plural)
+  CONTEXTUAL_DEFINITION: Long narrow cords threaded through eyelets to tie shoes.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Crop closely around crossed cords and eyelets so the laces are the focus.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted shoe tongue and leather edges.
+    - Focal_Layer: Bright cord zigzags across the tongue.
+    - Details_Layer: Punched eyelets and lace ends.
+    - Lighting_Layer: Small focus halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:laces" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="157" rx="102" ry="16" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M48 139Q69 58 134 41Q189 27 253 68L268 139Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/>
+  <path d="M83 137Q99 69 148 57Q195 50 232 84L238 145Z" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.7"/>
+  <ellipse cx="157" cy="101" rx="91" ry="59" fill="#FEF3C7" opacity=".35"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M111 79L205 129M106 104L194 69M100 130L184 57" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M111 79L205 129M106 104L194 69M100 130L184 57" fill="none" stroke="#D9857F" stroke-width="5.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <g fill="#D9A441" stroke="#1E2A3B" stroke-width="1.8"><circle cx="105" cy="77" r="5"/><circle cx="200" cy="132" r="5"/><circle cx="100" cy="103" r="5"/><circle cx="198" cy="66" r="5"/><circle cx="94" cy="132" r="5"/><circle cx="187" cy="54" r="5"/></g>
+  <path d="M203 128L220 144Q225 149 220 154" fill="none" stroke="#D9857F" stroke-width="5.5" stroke-linecap="round"/><path d="M102 78L89 62Q85 57 80 62" fill="none" stroke="#D9857F" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M74 145Q150 166 234 144" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 5"/>
+</svg>

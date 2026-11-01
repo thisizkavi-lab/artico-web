@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: apply for a job
+  CONTEXTUAL_DEFINITION: Send a formal request to be considered for employment.
+  PEDAGOGICAL_ART_DIRECTOR: Show the candidate submitting a completed application packet to an employer or hiring channel.
+  PEDAGOGICAL_ARCHETYPE: 4 - Submission action
+  SYNONYM_GUARD: Depict the submission action, not merely the blank form or a generic use/application of an object.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a candidate at x=68..119 on the left, reaching a completed blue folder toward a receiving slot at x=179..216 on the employer desk. Add a small green arrow running from candidate to slot and a recruiter behind the desk at x=222..265; keep the folder mid-transfer.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:apply for a job" data-archetype="candidate-submission">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="apply-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F91BF"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="apply-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="apply-halo"><stop stop-color="#FFF1B9" stop-opacity=".76"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="apply-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="25" y="24" width="254" height="111" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="174" y="88" width="106" height="46" rx="3" fill="#E5F0E1" stroke="#64748B" stroke-width="1.2"/><path d="M174 96 H280" stroke="#64748B" stroke-width="1.1"/><rect x="193" y="73" width="44" height="18" rx="2" fill="#D7E0E9" stroke="#64748B" stroke-width="1.1"/><path d="M30 133 H274 V146 H30 Z" fill="url(#apply-desk)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M45 146 V155 M260 146 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#apply-shadow)"><path d="M58 125 Q60 101 73 95 L74 86 Q70 82 72 74 Q80 65 90 68 Q99 71 96 82 L93 90 Q107 96 109 123 L106 134 H62 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="84" cy="77" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M76 75 Q78 67 85 67 Q93 68 96 75 Q89 71 82 72 Z" fill="#3D342D"/><path d="M65 109 L110 100 L116 107 L75 119" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M108 106 L145 105" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M143 88 H188 L201 98 V119 H143 Z" fill="url(#apply-folder)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M143 88 H164 L171 94 H188" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1"/><path d="M198 113 H243" stroke="#64748B" stroke-width="1.1"/><path d="M218 115 Q220 95 231 90 L232 82 Q228 78 230 71 Q237 63 246 66 Q254 69 251 79 L248 86 Q261 91 263 114 L260 125 H222 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="244" cy="74" rx="7.5" ry="9" fill="#B97851" stroke="#1E2A3B" stroke-width="1"/><path d="M236 72 Q238 65 245 65 Q252 66 254 72 Q247 69 241 70 Z" fill="#242C3B"/><path d="M224 101 L210 107" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/><rect x="208" y="96" width="10" height="8" rx="1" fill="#FFFFFF" stroke="#64748B" stroke-width=".8"/></g>
+  <g id="layer-details"><path d="M118 84 C136 74 152 75 168 86" fill="none" stroke="#547A56" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M164 80 L171 87 L161 89" fill="none" stroke="#547A56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="126" cy="77" r="2" fill="#F2C14E"/><circle cx="155" cy="79" r="2" fill="#A8D4A2"/><path d="M65 92 Q80 87 95 92" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="164" cy="99" rx="101" ry="66" fill="url(#apply-halo)" opacity=".22"/><path d="M178 91 H277" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

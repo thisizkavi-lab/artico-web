@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: baby equipment (Noun)
+  CONTEXTUAL_DEFINITION: A collection of practical supplies for caring for a baby.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A nursery care caddy holds a feeding bottle, folded cloth, diaper, and gentle-care brush, making the broad category clear rather than depicting one toy.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet nursery wall and changing counter.
+    - Context_Layer: Padded surface and low shelf.
+    - Focal_Layer: Open care caddy with several distinct infant-care supplies.
+    - Details_Layer: Soft fabric, bottle, diaper, and brush silhouettes.
+    - Lighting_Layer: Warm halo around the supply group.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:baby equipment" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="equip-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="equip-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#equip-bg)"/><path d="M0 151Q78 144 152 151T304 148V192H0Z" fill="#EADFCC"/><path d="M35 42H269V150H35Z" fill="#E3E8F0" opacity=".55"/><path d="M46 150V167M258 150V167" stroke="#80513F" stroke-width="4"/><path d="M54 64H250" stroke="#FFFFFF" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M68 137H236L223 171H81Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.2"/><path d="M80 142H224" stroke="#F3ECE1" stroke-width="2"/><path d="M95 130V91Q95 84 102 84H202Q209 84 209 91V130Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M104 105H200" stroke="#A95059" stroke-width="2"/><path d="M109 103V91Q109 88 113 88H191Q195 88 195 92V103Z" fill="#F3ECE1" opacity=".75"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#equip-shadow)"><path d="M114 88H137L140 102H111Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M117 88V82Q125 75 134 82V88" fill="none" stroke="#64748B" stroke-width="2"/><path d="M150 84H169V98H150Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2"/><path d="M155 84V79H164V84" fill="none" stroke="#64748B" stroke-width="2"/><path d="M156 91Q159 88 162 91" fill="none" stroke="#5479AC" stroke-width="1.6"/><path d="M180 82Q194 74 207 82L205 99L183 99Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8"/><path d="M184 86Q194 91 204 86" fill="none" stroke="#D9857F" stroke-width="1.5"/><path d="M109 73L131 67L144 77L122 84Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.5"/><path d="M117 73L129 70L137 76L125 80Z" fill="#F2C14E"/><path d="M155 69L169 65L182 69V80H155Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.5"/><path d="M155 74H182" stroke="#D9857F" stroke-width="2"/><path d="M167 65V61" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="89" cy="76" r="3" fill="#D9A441"/><circle cx="219" cy="73" r="3" fill="#D9A441"/><path d="M91 56Q151 43 211 56" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+  <g id="layer-lighting"><ellipse cx="159" cy="107" rx="105" ry="70" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".35"/><path d="M80 34Q151 19 225 34" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: commercial break
+ CONTEXTUAL_DEFINITION: A TV show is interrupted by an inserted advertisement between program scenes.
+ PEDAGOGICAL_ARCHETYPE: program sequence interrupted by one advertisement
+ SYNONYM_GUARD: Show one ad inserted between two halves of the same show; distinguish from several separate adverts.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A TV timeline places one product advertisement between matching scene fragments from the same drama, separated by a visible interruption.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:commercial break" data-archetype="interrupted TV program with advertisement">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M23 22Q23 18 29 18H275Q281 18 281 24V145H23Z" fill="#26384A"/><path d="M32 28H272V139H32Z" fill="#405663"/><path d="M42 37H262V130H42Z" fill="#597D8B"/><path d="M127 145L134 153H170L177 145Z" fill="#64777C"/><path d="M112 153H192V159H112Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M49 53H112V110H49Z" fill="#D6A64C"/><path d="M120 53H184V110H120Z" fill="#B85E5A"/><path d="M192 53H255V110H192Z" fill="#D6A64C"/>
+  <path d="M54 58H107V105H54Z" fill="#879A93"/><path d="M125 58H179V105H125Z" fill="#F0E2CF"/><path d="M197 58H250V105H197Z" fill="#879A93"/>
+  <path d="M54 84Q68 67 80 84T107 82V105H54Z" fill="#597D8B"/><path d="M197 84Q211 67 223 84T250 82V105H197Z" fill="#597D8B"/>
+  <path d="M115 48V116M189 48V116" stroke="#F6E5CE" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M43 118H261" stroke="#F6E5CE" stroke-width="1.2"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M142 84Q142 74 151 71H160Q169 74 169 84V99H142Z" fill="#D6A64C" stroke="#26384A" stroke-width="1.2"/><path d="M144 81Q155 73 166 81V86H144Z" fill="#B85E5A"/><path d="M140 99H171" stroke="#26384A" stroke-width="1.8"/><path d="M150 66L155 59L160 66" fill="none" stroke="#26384A" stroke-width="1.4"/>
+  <path d="M80 114H110M194 114H224" stroke="#D6A64C" stroke-width="2"/>
+  <path d="M115 83H124M180 83H189" stroke="#F6E5CE" stroke-width="1.5"/><path d="M117 76L122 83L117 90M187 76L182 83L187 90" fill="none" stroke="#F6E5CE" stroke-width="1.4"/>
+ </g>
+ <g id="layer-details">
+  <circle cx="160" cy="91" r="2.5" fill="#F6E5CE"/><path d="M155 91H165M160 86V96" stroke="#26384A" stroke-width="1.1"/><path d="M47 42H257" stroke="#D6A64C" stroke-width="1.2"/><circle cx="108" cy="113" r="2" fill="#D6A64C"/><circle cx="194" cy="113" r="2" fill="#D6A64C"/>
+  <path d="M43 38L61 56M260 38L243 56" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="152" cy="64" rx="88" ry="34" fill="#E7C66B" opacity=".1"/><path d="M44 37L67 73M260 37L237 73" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M42 131H262" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

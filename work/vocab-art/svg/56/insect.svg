@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: insect / insects (noun)
+  CONTEXTUAL_DEFINITION: A small six-legged insect with three body regions and antennae, shown clearly as a taxonomic example.
+  PEDAGOGICAL_ARCHETYPE: 1 - Small creature in habitat
+  SYNONYM_GUARD: Show exactly six legs, antennae, a distinct head-thorax-abdomen, and translucent wings; keep the mixed snail/bug group for the broader everyday bug card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a large green dragonfly-like insect in profile across center x=76..227 y=71..144, six legs under a narrow thorax, three body regions, two pairs of clear wings, and curved antennae; use a leaf.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:insect / insects" data-archetype="six-legged-insect">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#6A9F70;--c-secondary:#3F704E;--c-accent:#D6A64B;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="insect-sky" x2="0" y2="1"><stop stop-color="#DCEAF0"/><stop offset="1" stop-color="#F8F2E6"/></linearGradient>
+  <linearGradient id="insect-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91B96F"/><stop offset="1" stop-color="#4F865E"/></linearGradient>
+  <linearGradient id="insect-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F6FBF1" stop-opacity=".92"/><stop offset="1" stop-color="#B9D6C3" stop-opacity=".55"/></linearGradient>
+  <filter id="insect-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#insect-sky)"/><path d="M0 135Q71 124 151 136T304 128V192H0Z" fill="#DDE6D4"/><path d="M0 155Q84 146 161 157T304 150V192H0Z" fill="#C7D6BD"/><circle cx="250" cy="41" r="23" fill="#F5D890" opacity=".5"/></g>
+ <g id="layer-context"><path d="M39 151Q116 145 204 152T276 146" fill="none" stroke="#718D65" stroke-width="2.4"/><path d="M64 149l-6-21m8 20 10-19m139 23 8-19m-1 17 13-14" fill="none" stroke="#79936C" stroke-width="2.4" stroke-linecap="round"/><path d="M54 130q10-13 18-5q-5 13-18 5Zm165-2q9-13 18-5q-5 13-18 5Z" fill="#88A66F"/><ellipse cx="150" cy="155" rx="68" ry="4" fill="#5F7456" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#insect-shadow)"><ellipse cx="104" cy="109" rx="16" ry="14" fill="#476A58" stroke="#304D43" stroke-width="1.2"/><circle cx="100" cy="106" r="2.2" fill="#1E2A3B"/><path d="M92 101Q82 88 74 91m18 9Q83 82 83 75" fill="none" stroke="#405F4B" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="135" cy="111" rx="25" ry="11" fill="url(#insect-body)" stroke="#3D6F4E" stroke-width="1.3"/><ellipse cx="181" cy="112" rx="36" ry="9" fill="#78A66B" stroke="#3D6F4E" stroke-width="1.3"/><path d="M119 103Q102 82 109 67Q128 70 140 101Z" fill="url(#insect-wing)" stroke="#87A993" stroke-width="1.1"/><path d="M134 103Q131 79 150 66Q165 75 151 105Z" fill="url(#insect-wing)" stroke="#87A993" stroke-width="1.1"/><path d="M139 118l-12 14m18-13-5 17m13-17 4 17m7-17 13 14m-49-17-14 9m50-9 16 9" fill="none" stroke="#4D7254" stroke-width="2" stroke-linecap="round"/><path d="M111 118l-8 10m42-13 4 10" fill="none" stroke="#4D7254" stroke-width="1.8" stroke-linecap="round"/><path d="M161 107l13 1m-12 5 17 1m-10-7 12-2" fill="none" stroke="#B9D187" stroke-width="1.3" stroke-linecap="round"/><circle cx="202" cy="109" r="1.1" fill="#D7E89B"/></g>
+ <g id="layer-details"><path d="M113 96q6-14 18-17m5 15q7-16 16-19m-10 31q19-6 34-3" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".75" stroke-linecap="round"/><circle cx="66" cy="116" r="1.4" fill="#D6C28E"/><circle cx="236" cy="138" r="1.2" fill="#D6C28E"/></g>
+ <g id="layer-lighting"><path d="M114 106q9-9 20-7m33 7q15-6 27-2" fill="none" stroke="#D8E9A4" stroke-width="1.4" opacity=".8" stroke-linecap="round"/><ellipse cx="145" cy="108" rx="59" ry="27" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

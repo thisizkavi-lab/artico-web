@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: diploma (Noun)
+  CONTEXTUAL_DEFINITION: A formal certificate awarded for completing a course of study.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: The physical certificate itself fills the card, with a rolled duplicate and embossed seal, distinct from the person who graduates or the qualification called a degree.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Neutral desk and pale university wall.
+    - Context_Layer: Cap and books sit behind the certificate.
+    - Focal_Layer: Large cream diploma paper with border and seal.
+    - Details_Layer: Folded ribbon and scroll.
+    - Lighting_Layer: Paper sheen and gold seal highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:diploma" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="diploma-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="diploma-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#diploma-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 28H95V80H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 29V79M23 54H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 151H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M199 114L235 83L271 114V142H199Z" fill="#5479AC" stroke="#315782" stroke-width="1.6"/><path d="M190 114L235 76L280 114L271 120L235 89L199 120Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><circle cx="250" cy="78" r="12" fill="#315782"/><path d="M238 78L250 66L262 78L250 90Z" fill="#315782" stroke="#1E2A3B" stroke-width="1.2"/><path d="M250 90L254 104" stroke="#D9A441" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#diploma-shadow)"><path d="M42 43L216 33L226 132L52 144Z" fill="#FEF9C3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M51 51L208 42L216 124L60 134Z" fill="#FFFEFA" stroke="#D9A441" stroke-width="1.4"/><path d="M64 63Q130 53 194 59M65 72Q131 63 196 68M67 83Q113 78 151 80" fill="none" stroke="#88A9D0" stroke-width="2" stroke-linecap="round"/><path d="M70 100Q112 91 150 98" fill="none" stroke="#D9A441" stroke-width="1.6"/><circle cx="183" cy="100" r="17" fill="#D9A441" stroke="#8D6138" stroke-width="1.7"/><circle cx="183" cy="100" r="11" fill="none" stroke="#FEF9C3" stroke-width="1.3"/><path d="M174 116L169 137L181 130L188 143L192 115" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M231 128Q242 119 251 128Q258 138 249 145Q240 151 231 144Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.5"/><path d="M231 128Q240 133 251 128M235 120Q243 125 250 120" fill="none" stroke="#D9A441" stroke-width="1.4"/><path d="M64 54Q126 44 191 50" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".86"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="93" rx="123" ry="73" fill="#FEF9C3" opacity=".07"/><path d="M42 43L216 33L226 132" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/></g>
+</svg>

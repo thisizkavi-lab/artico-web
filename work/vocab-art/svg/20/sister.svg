@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: sister (Noun)
+  CONTEXTUAL_DEFINITION: A female sibling, shown with her sister.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two sisters share a quiet reading moment and point at the same picture; the family setting and matched age signal siblings rather than girlfriends.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Family sofa and warm wall.
+    - Context_Layer: Open picture book held between the two girls.
+    - Focal_Layer: Two sisters sit close and look at the shared page.
+    - Details_Layer: Similar face shape, relaxed shoulders, and joined hands on book.
+    - Lighting_Layer: Soft rosy-gold frame around the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:sister" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#8B5CA8;--c-secondary:#633B7D;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="sister-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="sister-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8B5CA8"/><stop offset="1" stop-color="#633B7D"/></linearGradient>
+    <filter id="sister-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sister-bg)"/><path d="M0 151Q74 145 152 151T304 149V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="127" ry="7" fill="#DDD4C3"/><path d="M26 114Q26 92 47 92H256Q278 92 278 114V142H26Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.2"/><path d="M38 112H266M43 142V154M260 142V154" stroke="#568552" stroke-width="2.2"/></g>
+  <g id="layer-context"><path d="M104 128L151 111L198 128L151 146Z" fill="#FAF8F3" stroke="#80513F" stroke-width="2"/><path d="M151 113V145" stroke="#80513F" stroke-width="1.4"/><path d="M114 127Q124 118 135 127Q129 135 117 134ZM166 127Q177 119 188 128Q181 135 169 134Z" fill="#D9857F"/><circle cx="126" cy="127" r="3" fill="#C98961"/><circle cx="177" cy="128" r="3" fill="#80513F"/><path d="M40 77H76V84H40Z" fill="#C88446"/><path d="M41 84V102M75 84V102" stroke="#965D28" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#sister-shadow)"><path d="M34 178Q38 147 56 139Q73 132 92 140L100 178Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="64" cy="113" r="25" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M39 111Q40 87 64 87Q90 88 90 114Q86 129 82 141L72 143L73 123Q64 116 53 123L51 140L41 134Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2"/><path d="M51 113Q56 117 61 113M67 113Q72 117 77 113M53 126Q64 131 75 126" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M211 178Q214 147 232 139Q249 132 268 141L275 178Z" fill="url(#sister-top)" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="240" cy="113" r="25" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M215 111Q216 87 240 87Q266 88 266 114Q262 129 258 141L248 143L249 123Q240 116 229 123L227 140L217 134Z" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M227 113Q232 117 237 113M243 113Q248 117 253 113M229 126Q240 131 251 126" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M85 147Q102 138 117 132M224 147Q207 138 192 132" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M85 147Q102 138 117 132M224 147Q207 138 192 132" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M116 132Q123 126 131 129L138 135L130 141Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M193 132Q185 125 178 129L170 135L179 141Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M50 91Q63 83 76 89M226 91Q239 83 252 89" fill="none" stroke="#FFFFFF" stroke-width="2.6"/><path d="M144 100Q151 94 158 100M143 96L137 91M160 96L166 91" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><circle cx="151" cy="92" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="116" rx="136" ry="71" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".37"/><path d="M40 62Q68 51 96 59M206 62Q235 50 262 59" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: go right
+  CONTEXTUAL_DEFINITION: Choose the right-hand branch of a route at a fork.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler at a Y-shaped path with the right branch highlighted and the left branch muted.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: This is selecting the right route branch; keep the traveler's approach and branch choice visible.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Paths fork from (151,151) toward (73,47) and (236,47); the cobalt-white route follows the upper-right arm to a gold destination.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:go right" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="goright-ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E1ECD9"/><stop offset="1" stop-color="#BFD7B9"/></linearGradient>
+    <linearGradient id="goright-road" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#526579"/><stop offset="1" stop-color="#8192A0"/></linearGradient>
+    <radialGradient id="goright-focus"><stop stop-color="#F3CE64" stop-opacity=".52"/><stop offset="1" stop-color="#F3CE64" stop-opacity="0"/></radialGradient>
+    <filter id="goright-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#goright-ground)"/><path d="M0 166H304V192H0Z" fill="#E7E0D4"/><path d="M0 166H304" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M105 192L98 140L50 89L20 57L43 36L82 77L122 118L151 137L180 118L221 77L261 36L284 57L252 90L205 140L198 192Z" fill="#E9E4D8" stroke="#7B7468" stroke-width="2.2" stroke-linejoin="round"/><path d="M152 187L148 141L106 104L70 66L42 42" fill="none" stroke="#A5AAA0" stroke-width="1.6" stroke-dasharray="5 6"/><path d="M155 142L196 106L230 69L268 43" fill="none" stroke="#E8B865" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/><path d="M155 142L196 106L230 69L268 43" fill="none" stroke="#FAF8F3" stroke-width="1.6" stroke-dasharray="4 6"/><circle cx="29" cy="127" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="275" cy="128" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><path d="M15 145H44M260 146H290" stroke="#6A8A67" stroke-width="3"/></g>
+  <g id="layer-focal" filter="url(#goright-shadow)"><ellipse cx="222" cy="78" rx="43" ry="40" fill="url(#goright-focus)"/><path d="M151 158C145 151 145 141 153 138C161 141 160 151 151 158Z" fill="#D59E76" stroke="#1E2A3B" stroke-width="1.7"/><path d="M146 157L142 171H153L157 158M157 158L163 171H174L165 155" fill="#3E536A" stroke="#1E2A3B" stroke-width="1.6"/><path d="M152 144L217 83" fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="round"/><path d="M152 144L217 83" fill="none" stroke="#4A72B2" stroke-width="10" stroke-linecap="round"/><path d="M207 77L231 70L224 94Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="218" cy="82" r="8" fill="#F2C14E" stroke="#FFFFFF" stroke-width="2.6"/></g>
+  <g id="layer-details"><path d="M156 140L188 112M194 106L225 75M110 113L80 81" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 5" stroke-linecap="round"/><path d="M178 121L187 112M194 105L204 95M211 88L220 79" fill="none" stroke="#D4E2F2" stroke-width="1.8" stroke-dasharray="2 5" stroke-linecap="round"/><path d="M176 146L187 138M194 132L205 124" stroke="#C4D7EB" stroke-width="1.5"/><circle cx="147" cy="142" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M43 71Q54 79 65 80M239 139Q253 137 263 145" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/></g>
+  <g id="layer-lighting"><path d="M21 53L42 33L72 63" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><ellipse cx="222" cy="78" rx="49" ry="46" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/></g>
+</svg>

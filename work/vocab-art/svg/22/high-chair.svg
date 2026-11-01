@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: high chair (Noun)
+  CONTEXTUAL_DEFINITION: A tall chair with a tray where a baby can sit and eat.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: The seat is visibly raised on long stable legs and has a broad front tray, distinguishing it from an ordinary child's chair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Family kitchen corner.
+    - Context_Layer: Table edge and soft floor mat.
+    - Focal_Layer: Empty tall baby chair with a tray.
+    - Details_Layer: Safety straps, footrest, and four legs.
+    - Lighting_Layer: Warm halo around the chair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:high chair" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="highchair-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="highchair-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#highchair-bg)"/><path d="M0 151Q76 144 152 151T304 148V192H0Z" fill="#EADFCC"/><path d="M231 39H304V114H231Z" fill="#DCECFB"/><path d="M269 40V113M232 77H303" stroke="#FFFFFF" stroke-width="2.4"/><path d="M22 132H78" stroke="#80513F" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="173" rx="69" ry="7" fill="#DDD4C3"/><path d="M92 175L105 117M196 175L186 117" stroke="#80513F" stroke-width="5" stroke-linecap="round"/><path d="M112 141H181" stroke="#80513F" stroke-width="5" stroke-linecap="round"/><path d="M111 161H184" stroke="#80513F" stroke-width="3.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#highchair-shadow)"><path d="M113 70Q113 61 123 61H179Q189 61 189 72V116H113Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.7"/><path d="M121 69H181V104H121Z" fill="#A9C2A3" stroke="#64748B" stroke-width="1.5"/><path d="M102 108Q102 101 112 101H192Q203 101 203 110V120H102Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.7"/><path d="M116 109V117M151 109V117M188 109V117" stroke="#80513F" stroke-width="1.8"/><path d="M118 121L104 175M188 121L199 175" stroke="#80513F" stroke-width="5" stroke-linecap="round"/><path d="M129 118V128H177V118" fill="none" stroke="#5479AC" stroke-width="2.4"/><path d="M128 127Q151 136 177 127" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M104 112H82Q74 112 74 119V125H104Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.3"/><path d="M82 120H97" stroke="#D9A441" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M123 48Q151 40 180 48" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="93" cy="93" r="2.4" fill="#D9A441"/><circle cx="211" cy="93" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="113" rx="86" ry="76" fill="none" stroke="#829A83" stroke-width="1.2" stroke-dasharray="4 7" opacity=".25"/><path d="M106 36Q151 23 198 36" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

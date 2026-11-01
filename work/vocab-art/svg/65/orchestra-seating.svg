@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: orchestra seating
+ CONTEXTUAL_DEFINITION: The main-floor theater seats nearest the stage.
+ PEDAGOGICAL_ARCHETYPE: front main-floor theater seating
+ SYNONYM_GUARD: Show rows of audience seats directly facing a stage from the main floor; do not depict a recessed musicians’ pit.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: View from behind a small section of audience: several chair rows fill the lower foreground and face a distant lit stage beyond a level aisle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:orchestra seating" data-archetype="front main-floor theater seating">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M42 20H262V77H42Z" fill="#26384A"/><path d="M50 28H254V74H50Z" fill="#405663"/>
+  <path d="M49 73H255V81H49Z" fill="#B85E5A"/><path d="M33 82H271V90H33Z" fill="#D6A64C"/>
+  <path d="M23 92H281V102H23Z" fill="#8C725A"/><path d="M34 102H270" stroke="#EEE0C7" stroke-width="1.2" fill="none"/>
+  <path d="M0 152H304" stroke="#F5E9D4" stroke-width="2" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M56 42H248M60 47H244" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <path d="M76 53Q90 40 104 53V72H76Z" fill="#B85E5A"/><circle cx="90" cy="52" r="3" fill="#E8D2B7"/>
+  <path d="M130 54Q151 35 172 54V72H130Z" fill="#D6A64C"/><circle cx="151" cy="50" r="4" fill="#E8D2B7"/>
+  <path d="M198 53Q212 40 226 53V72H198Z" fill="#798C72"/><circle cx="212" cy="52" r="3" fill="#E8D2B7"/>
+  <path d="M67 116L78 98h47l11 18v10H67Z M167 116l11-18h47l12 18v10h-70Z" fill="#597D8B"/>
+  <path d="M74 109H128m47 0h54" stroke="#26384A" stroke-width="1.5" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M25 130H279V151H25Z" fill="#26384A"/>
+  <path d="M28 119Q28 113 34 113H65Q71 113 71 119V143H28Z" fill="#B85E5A"/><path d="M31 141H68V150H31Z" fill="#8E4848"/>
+  <path d="M76 119Q76 113 82 113H113Q119 113 119 119V143H76Z" fill="#B85E5A"/><path d="M79 141H116V150H79Z" fill="#8E4848"/>
+  <path d="M185 119Q185 113 191 113H222Q228 113 228 119V143H185Z" fill="#B85E5A"/><path d="M188 141H225V150H188Z" fill="#8E4848"/>
+  <path d="M233 119Q233 113 239 113H270Q276 113 276 119V143H233Z" fill="#B85E5A"/><path d="M236 141H273V150H236Z" fill="#8E4848"/>
+  <path d="M47 129V139m49-10v10m111-10v10m49-10v10" stroke="#D6A64C" stroke-width="1.4" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M18 154H76m152 0h58" stroke="#8C725A" stroke-width="1.2" fill="none"/>
+  <circle cx="20" cy="115" r="2" fill="#D6A64C"/><circle cx="284" cy="115" r="2" fill="#D6A64C"/>
+  <path d="M43 107V113m47-6v6m48-6v6m49-6v6m48-6v6" stroke="#E5CF9D" stroke-width="1" fill="none"/>
+  <path d="M8 106V150m288-44v44" stroke="#A68D6E" stroke-width="1.1" fill="none"/>
+  <path d="M14 109h12m252 0h12" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="77" rx="98" ry="47" fill="#E7C66B" opacity=".09"/>
+  <path d="M108 25L130 100m88-75-34 75" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/>
+  <path d="M45 80H259" stroke="#FFF1C7" stroke-width="1" opacity=".6" fill="none"/>
+ </g>
+</svg>

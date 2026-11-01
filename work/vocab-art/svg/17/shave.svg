@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: shave (Verb)
+  CONTEXTUAL_DEFINITION: Remove facial hair using a razor.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action + tool
+  SYNONYM_GUARD: Show a razor moving across a foam-covered cheek with a clear before/after patch.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cool bathroom paper.
+    - Context_Layer: Muted mirror hint.
+    - Focal_Layer: Hand guiding safety razor across cheek.
+    - Details_Layer: Shaving foam and a clean shaved strip.
+    - Lighting_Layer: Cool water glint.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:shave" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="166" rx="95" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="112" ry="73" fill="#E4EDF2" opacity=".72"/><path d="M55 40Q68 24 82 40M223 40Q237 24 250 40" fill="none" stroke="#AAB5C3" stroke-width="2"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M110 159Q100 127 103 88Q106 49 152 45Q198 49 201 88Q204 127 194 159Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.6"/>
+  <path d="M99 90Q96 50 139 39Q175 36 198 57Q210 73 203 98L194 112L183 84Q152 74 119 87L111 111Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M117 127Q132 114 150 124Q166 115 185 128L183 142Q160 153 132 143Z" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.6"/>
+  <path d="M181 90L208 104L191 138L172 128Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M120 100Q130 95 140 100M164 100Q174 95 184 100" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M152 105L148 119L155 122M138 139Q152 145 167 139" fill="none" stroke="#A95059" stroke-width="2"/>
+  <path d="M188 86L218 100L214 109L184 95Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2.2"/><path d="M188 91L214 103M189 96L212 107" stroke="#64748B" stroke-width="1"/>
+  <path d="M137 130Q148 126 158 132" stroke="#C98961" stroke-width="1.3" stroke-dasharray="2 3"/><path d="M169 117Q175 109 183 108" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M205 117Q195 128 186 132" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+</svg>

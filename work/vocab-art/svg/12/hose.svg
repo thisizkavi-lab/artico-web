@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: hose (Noun; garden-water sense)
+  CONTEXTUAL_DEFINITION: A flexible tube that carries water to a garden nozzle for watering plants.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person using a tool on a target
+  SYNONYM_GUARD: A visible stream sprays from the hand-held nozzle onto flowers; the garden hose card isolates the coiled hose and reel.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale garden sky over grass and a low flower bed.
+    - Context_Layer: Wall tap and a looping hose lead from x=278,y=92 to the nozzle at x=154,y=114.
+    - Focal_Layer: Gardener at right holds the blue nozzle; an arc of water reaches the flowers at x=82,y=135.
+    - Details_Layer: Water droplets, hose connector, leaf veins, clothing seams, and grass blades.
+    - Lighting_Layer: Highlights on water and the upper edge of the coiled hose.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:hose" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#8EC8E8;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+    <linearGradient id="hose-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7194C2"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 117H304V145H0Z" fill="#DCEAD6"/><path d="M0 145H304V192H0Z" fill="#EAD8BE"/><path d="M25 138H111V163H25Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2"/><path d="M21 134H115V142H21Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-context"><path d="M278 83H292L297 90L291 98H278" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M283 82V76M278 76H289" stroke="#1E2A3B" stroke-width="2.5" stroke-linecap="round"/><path d="M279 96C262 109 263 127 280 137C291 144 290 158 276 167" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M279 96C262 109 263 127 280 137C291 144 290 158 276 167" fill="none" stroke="url(#hose-grad)" stroke-width="5" stroke-linecap="round"/><path d="M35 136V119M42 136V115M49 136V121M59 136V118M68 136V116M77 136V121M87 136V117M97 136V120" stroke="#7FB07A" stroke-width="2"/><path d="M47 120Q41 111 37 116M65 117Q72 107 76 115M84 119Q79 108 74 112" fill="none" stroke="#568552" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><circle cx="212" cy="65" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1"/><path d="M197 63Q198 47 213 48Q229 49 227 65L220 59L207 59Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M198 83Q212 75 226 83L235 116L211 123L190 110Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M197 89L176 104L164 111" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M197 89L176 104L164 111" fill="none" stroke="#D89A6C" stroke-width="6" stroke-linecap="round"/><path d="M226 88L242 105L226 114" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M226 88L242 105L226 114" fill="none" stroke="#D89A6C" stroke-width="6" stroke-linecap="round"/><path d="M153 113L174 107L179 114L157 121Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M190 110L177 129L183 143L205 143L212 122" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><path d="M209 121L226 136L220 143L202 127" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M151 111Q128 103 108 115Q99 120 92 130" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M151 111Q128 103 108 115Q99 120 92 130" fill="none" stroke="#8EC8E8" stroke-width="2.8" stroke-linecap="round"/><path d="M139 108Q117 104 104 114" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M128 115L125 121M111 118L108 124M95 126L92 132M84 129L82 134" stroke="#8EC8E8" stroke-width="2" stroke-linecap="round"/><circle cx="87" cy="124" r="2.3" fill="#8EC8E8"/><circle cx="104" cy="111" r="2" fill="#8EC8E8"/><path d="M195 144L202 149M225 145L232 150" stroke="#3D5F91" stroke-width="2"/><path d="M204 67Q209 63 216 66" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M204 55Q210 50 218 54" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity=".65"/><path d="M156 112L170 108" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><path d="M31 140H65" stroke="#F2C14E" stroke-width="1.2" opacity=".4"/></g>
+</svg>

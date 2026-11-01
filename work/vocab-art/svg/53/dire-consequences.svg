@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:dire consequences" data-archetype="environmental-crisis-chain-threatening-habitat-and-community">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; dire consequences. Show severe linked environmental impacts—a burned hillside, muddy floodwater, and a threatened home—in one clear cause-to-result landscape; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="dire-sky" x2="0" y2="1"><stop stop-color="#D9E2DD"/><stop offset="1" stop-color="#B5C1B9"/></linearGradient>
+  <linearGradient id="dire-hill" x2="0" y2="1"><stop stop-color="#756D57"/><stop offset="1" stop-color="#4B5547"/></linearGradient>
+  <linearGradient id="dire-water" x2="0" y2="1"><stop stop-color="#789E9D"/><stop offset="1" stop-color="#3F7180"/></linearGradient>
+  <linearGradient id="dire-fire" x2="0" y2="1"><stop stop-color="#F0BD61"/><stop offset="1" stop-color="#C85D42"/></linearGradient>
+  <filter id="dire-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#dire-sky)"/><circle cx="251" cy="36" r="13" fill="#EBC86F" opacity=".6"/><path d="M0 103L68 58 111 91 173 48 231 89 304 63V192H0Z" fill="#8A8A73"/><path d="M0 137Q62 124 119 137T228 132Q271 123 304 133V192H0Z" fill="#8C8A6D"/></g>
+<g id="layer-context">
+  <path d="M0 111L39 88 68 96 95 72 120 109 145 95 178 113 208 98 240 116 304 91V155H0Z" fill="url(#dire-hill)"/>
+  <path d="M0 142Q47 128 94 142T181 138Q228 124 270 139T304 137V192H0Z" fill="#6E745D"/>
+  <path d="M25 101Q32 94 29 86Q36 91 37 78Q47 92 44 101ZM56 103Q64 96 62 88Q70 92 73 80Q82 94 79 103ZM109 108Q117 100 114 92Q122 97 124 83Q134 98 131 108ZM188 105Q197 97 194 89Q203 93 205 79Q216 95 212 105Z" fill="#D7834B"/>
+  <path d="M0 153Q47 145 89 154T158 151Q205 140 248 153T304 150V192H0Z" fill="url(#dire-water)"/>
+</g>
+<g id="layer-focal" filter="url(#dire-shadow)">
+  <path d="M153 126l15-19 14 17 13-23 15 24 15-12 17 23Z" fill="#BD7650" opacity=".86"/>
+  <path d="M0 160Q44 146 89 158T158 156Q202 145 246 158T304 154" fill="none" stroke="#E8F2E4" stroke-width="2.4"/>
+  <path d="M0 171Q39 159 79 170T154 168Q196 156 240 170T304 166V192H0Z" fill="#477E8C"/>
+  <path d="M222 145L246 124 272 145V166H222Z" fill="#B18B66" stroke="#544E43" stroke-width="1.5"/><path d="M217 145l29-25 32 25Z" fill="#785B4A" stroke="#544E43" stroke-width="1.5"/><rect x="240" y="151" width="11" height="15" fill="#5C6D69"/><path d="M229 150h7v7h-7Z" fill="#E5D7B4"/>
+  <path d="M157 145q16-7 31-1m-22 10q14-6 26-1" fill="none" stroke="#D6E5DA" stroke-width="1.5"/>
+</g>
+<g id="layer-details">
+  <path d="M20 122l9-8 9 3m17 1 11-10 9 4m77-3 9-8 8 4m93 16 10-7 9 3" fill="none" stroke="#A47C55" stroke-width="1.5"/>
+  <path d="M17 166q16-5 30 0m53 1q14-5 26 0m123 1q13-5 25 0" fill="none" stroke="#B8DBD1" stroke-width="1.4"/>
+  <circle cx="64" cy="159" r="2" fill="#F2E4C7"/><circle cx="124" cy="178" r="1.7" fill="#F2E4C7"/><circle cx="202" cy="164" r="1.8" fill="#F2E4C7"/>
+  <path d="M35 92l4-8 4 8m66 14 4-9 5 9m99 10 4-8 4 8" fill="none" stroke="#E79A55" stroke-width="1.5"/>
+  <path d="M216 133l10-8m44 5 8-8" fill="none" stroke="#9B7957" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M19 110l21-15 13 3m133 2 19-14 15 9" fill="none" stroke="#C58B5D" stroke-width="1.3"/><path d="M0 156Q45 148 88 159m170-2q23 7 46 1" fill="none" stroke="#F4F4E6" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

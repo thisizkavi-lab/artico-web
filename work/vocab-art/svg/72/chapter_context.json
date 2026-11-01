@@ -1,0 +1,361 @@
+{
+  "chapter": 72,
+  "chapter_title": "Around town",
+  "domain_setting": "A welcoming, varied townscape with clear building silhouettes, street-level scenes and civic services. Use familiar but non-region-specific architecture so the place vocabulary is easy to distinguish.",
+  "palette": [
+    "#FAF8F3",
+    "#EAE3D5",
+    "#DDD4C3",
+    "#1E2A3B",
+    "#5479AC",
+    "#78A95F",
+    "#D9A441",
+    "#D94854",
+    "#F0C6A6",
+    "#E7EEF0",
+    "#8AA1B2"
+  ],
+  "recurring_scale_anchors": [
+    "Use 304×192 scenes; make a single building or streetscape the central cue and keep people small where useful.",
+    "Contrast settlement scales: village is small and low-rise, town has a compact civic center, city has a broader skyline, downtown is the dense central core, and neighborhood is residential.",
+    "Show street-level scenes for street and plan-view blocks only for street map; keep commercial district separate from downtown.",
+    "Distinguish bus and train terminals, tourist information desk and tourist office, town hall and government building, and the distinct retail/food venues.",
+    "Use respectful, recognizable architecture for religious buildings and quiet treatment for cemetery; avoid caricature, text and numerals.",
+    "For repeated venue terms, use different scene framing: exterior storefront, interior service counter, or broad facility as appropriate."
+  ],
+  "polysemy_resolution_table": {
+    "city": "A large urban area with dense buildings and a broad skyline; distinguish from the smaller town and the central downtown district.",
+    "commercial district": "A cluster of offices and retail premises along active streets; distinguish from the taller central downtown core.",
+    "downtown": "The busy central area of a city with tall buildings and street traffic; not a direction or small shopping lane.",
+    "historic quarter": "A compact older part of town with heritage buildings, a narrow lane and traditional details; not a modern commercial block.",
+    "neighborhood": "A residential local area with homes, local shops and neighbors; distinct from a whole town or city.",
+    "street": "A public roadway with sidewalks and buildings along it; distinguish from a street map.",
+    "street map": "A plan view of labeled-free intersecting streets and blocks; not a street-level scene.",
+    "town": "A modest settlement with a central street and several civic/commercial buildings; smaller than a city and larger than a village.",
+    "town square": "An open public plaza at the center of town, often with benches or a fountain; distinct from a street.",
+    "village": "A small settlement with a few homes and a compact community setting; smaller than a town.",
+    "airport": "A passenger terminal and aircraft at an airfield; not merely an airplane in flight.",
+    "bridge": "A structure carrying a road or path over water or a lower route; show its span and supports.",
+    "bus station": "A terminal with multiple bus bays and waiting area; distinguish from a train station platform.",
+    "gas station": "A roadside fuel forecourt with pumps and canopy; use the regional synonym petrol station without confusing it with a garage.",
+    "hotel": "A place for overnight guests with entrance, rooms and luggage; not a private house.",
+    "train station": "A railway platform and station building with a passenger train; distinguish from a bus terminal.",
+    "bank": "A financial-services building with secure vault or counter cues; not a river bank.",
+    "fire station": "A municipal base for fire engines with a wide vehicle bay; no emergency in progress.",
+    "government building": "A public administration building with a formal civic entrance; distinguish from a town hall.",
+    "hospital": "A healthcare facility; use a calm exterior or treatment cue, not distress.",
+    "law court": "A courthouse or courtroom for legal proceedings; not a sports court.",
+    "library": "A public place to borrow and read books, with shelves and a service desk.",
+    "pharmacy": "A place dispensing medicines, shown with shelves/counter; not the academic field of pharmacy.",
+    "police station": "A local public safety station with a desk or station-house facade; no arrest scene.",
+    "post office": "A public service counter for mailing letters and parcels; no readable signage.",
+    "school": "An education building with classroom windows and a safe entrance; distinguish from a gym.",
+    "town hall": "A town’s local civic meeting and administration building, perhaps with clock or assembly entrance.",
+    "tourist information": "An information desk or kiosk with a map for visitors; show the service point, not an entire office building.",
+    "tourist office": "A small visitor-services office building with a map display; distinguish from the information desk itself.",
+    "bar (pub)": "A public-house interior or entrance with bar counter and taps; not a sports crossbar.",
+    "café": "A relaxed sit-down cafe with coffee and a few tables; distinguish from quick-service coffee shop and full restaurant.",
+    "coffee shop": "A small counter serving coffee and light food, perhaps takeaway cups; not a sit-down restaurant.",
+    "grocery store": "A food shop with produce and grocery shelves; distinct from a department store.",
+    "nightclub": "An evening venue with dance floor, DJ booth and colored lights; no alcohol-focused or unsafe scene.",
+    "restaurant": "A full-service place for meals with diners, tables and a serving area.",
+    "shop": "A small retail storefront with a focused display window.",
+    "shopping mall": "A large indoor retail complex with multiple storefronts and a shared corridor.",
+    "store": "A larger general retail store with broad aisles or a shopping cart; distinguish from a single small shop.",
+    "castle": "A fortified historic residence with walls and towers; not a modern hotel.",
+    "cemetery": "A quiet, respectful burial ground with a few headstones and trees; no frightening imagery.",
+    "church": "A Christian worship building with a steeple or cross, depicted respectfully and without text.",
+    "movie theater / cinema (also used in the u.s.)": "A cinema venue for films with a screen or ticket entrance; distinguish from live stage theater.",
+    "concert hall": "A purpose-built music performance venue with audience seating and stage acoustics.",
+    "fountain": "A decorative public water feature in a plaza; not a natural spring.",
+    "leisure center": "A broad community recreation facility that may include pool, gym or classes; broader than one sports court.",
+    "mosque": "A Muslim place of worship with a dome or minaret, treated respectfully and without readable text.",
+    "museum": "A public collection venue with displayed artifacts or sculpture; distinguish from a government office.",
+    "park (recreation area)": "A public green recreational area with paths and trees; not a car park.",
+    "sports center": "An indoor sports facility focused on courts or training halls; distinguish from a broader leisure center.",
+    "swimming pool": "A facility with a clear swimming basin and water; not a hot tub.",
+    "synagogue": "A Jewish place of worship with a respectful architectural cue, such as a Star of David on a facade, and no text.",
+    "temple": "A religious worship building in the culture-course sense, with respectful temple architecture; not the body part.",
+    "theater": "A live stage venue with curtain, stage and performers; distinguish from a movie theater.",
+    "factory": "An industrial production building with loading bay or smokestacks; avoid pollution as the only cue.",
+    "office building": "A modern workplace building with regular windows and offices; not necessarily a skyscraper.",
+    "skyscraper": "An exceptionally tall high-rise tower rising above surrounding buildings; distinguish from an ordinary office block."
+  },
+  "existing_asset_triage": {
+    "lesson_72": "Scanned all 3,562 keyed source SVGs. Contact-sheet reviewed 29 exact-key candidates across 25 terms; keep 23 clear contextual matches, replace wrong/weak street, park, sports-bar and table-only restaurant scenes, and select one of duplicate city/library candidates. No exact-key candidates for the remaining terms.",
+    "reviewed_candidates": [
+      {
+        "term": "city",
+        "source": "75/city.svg",
+        "decision": "keep",
+        "reason": "Clear cluster of tall urban buildings; good skyline card."
+      },
+      {
+        "term": "city",
+        "source": "07/city.svg",
+        "decision": "duplicate",
+        "reason": "Near-identical skyline to 75/city; use one candidate only."
+      },
+      {
+        "term": "downtown",
+        "source": "75/downtown.svg",
+        "decision": "keep",
+        "reason": "Central street with taller buildings and traffic reads as downtown."
+      },
+      {
+        "term": "neighborhood",
+        "source": "75/neighborhood.svg",
+        "decision": "keep",
+        "reason": "Homes and local residents show a residential neighborhood."
+      },
+      {
+        "term": "street",
+        "source": "46/street.svg",
+        "decision": "replace",
+        "reason": "Bird’s-eye road-grid scene reads more like a map than a street-level roadway."
+      },
+      {
+        "term": "street map",
+        "source": "46/street-map.svg",
+        "decision": "keep",
+        "reason": "Clear plan view of connected streets and blocks."
+      },
+      {
+        "term": "airport",
+        "source": "44/airport.svg",
+        "decision": "keep",
+        "reason": "Terminal and aircraft establish an airport."
+      },
+      {
+        "term": "gas station",
+        "source": "45/gas-station.svg",
+        "decision": "keep",
+        "reason": "Fuel pumps beneath a canopy beside a car."
+      },
+      {
+        "term": "hotel",
+        "source": "47/hotel.svg",
+        "decision": "keep",
+        "reason": "Hotel entrance, rooms and luggage are clear."
+      },
+      {
+        "term": "train station",
+        "source": "44/train-station.svg",
+        "decision": "keep",
+        "reason": "Station building, platform and train are clear."
+      },
+      {
+        "term": "bank",
+        "source": "38/bank.svg",
+        "decision": "keep",
+        "reason": "Secure vault-door motif supports the financial institution sense."
+      },
+      {
+        "term": "hospital",
+        "source": "69/hospital.svg",
+        "decision": "keep",
+        "reason": "Hospital treatment setting is immediately recognizable."
+      },
+      {
+        "term": "law court",
+        "source": "27/law-court.svg",
+        "decision": "keep",
+        "reason": "Courtroom with judge and participants clearly teaches the legal institution."
+      },
+      {
+        "term": "library",
+        "source": "63/library.svg",
+        "decision": "keep",
+        "reason": "Bookshelves and a reader/service desk establish a public library."
+      },
+      {
+        "term": "library",
+        "source": "23/library.svg",
+        "decision": "duplicate",
+        "reason": "Near-duplicate library scene; use 63/library only."
+      },
+      {
+        "term": "pharmacy",
+        "source": "69/pharmacy.svg",
+        "decision": "keep",
+        "reason": "Medicine shelves and service counter fit a pharmacy."
+      },
+      {
+        "term": "school",
+        "source": "23/school.svg",
+        "decision": "keep",
+        "reason": "School building and grounds read clearly."
+      },
+      {
+        "term": "bar (pub)",
+        "source": "61/bar.svg",
+        "decision": "replace",
+        "reason": "Candidate depicts a sports goalpost/crossbar, the wrong sense."
+      },
+      {
+        "term": "bar (pub)",
+        "source": "33/bar.svg",
+        "decision": "keep",
+        "reason": "Pub counter, taps and stools fit the public-house sense."
+      },
+      {
+        "term": "café",
+        "source": "33/caf.svg",
+        "decision": "keep",
+        "reason": "Coffee, small serving table and storefront fit a café."
+      },
+      {
+        "term": "restaurant",
+        "source": "33/restaurant.svg",
+        "decision": "replace",
+        "reason": "Empty table-only scene is too generic and under-contextualized."
+      },
+      {
+        "term": "restaurant",
+        "source": "75/restaurant.svg",
+        "decision": "keep",
+        "reason": "Restaurant frontage with diners and tables is clear."
+      },
+      {
+        "term": "shop",
+        "source": "11/shop.svg",
+        "decision": "keep",
+        "reason": "Small retail storefront with window display."
+      },
+      {
+        "term": "store",
+        "source": "11/store.svg",
+        "decision": "keep",
+        "reason": "Larger general retailer with shopping cart, distinct from shop."
+      },
+      {
+        "term": "movie theater / cinema",
+        "source": "65/movie-theater.svg",
+        "decision": "keep",
+        "reason": "Cinema facade and moviegoing entrance are clear."
+      },
+      {
+        "term": "museum",
+        "source": "48/museum.svg",
+        "decision": "keep",
+        "reason": "Museum facade with displayed sculpture is clear."
+      },
+      {
+        "term": "park (recreation area)",
+        "source": "45/park.svg",
+        "decision": "replace",
+        "reason": "Candidate depicts vehicle parking, not a recreation park."
+      },
+      {
+        "term": "swimming pool",
+        "source": "62/swimming-pool.svg",
+        "decision": "keep",
+        "reason": "Swimming basin and lane markings are clear."
+      },
+      {
+        "term": "theater",
+        "source": "65/theater.svg",
+        "decision": "keep",
+        "reason": "Curtained stage with live performers distinguishes it from cinema."
+      }
+    ]
+  },
+  "batch_plan": [
+    [
+      "city",
+      "commercial district",
+      "downtown",
+      "historic quarter",
+      "neighborhood"
+    ],
+    [
+      "street",
+      "street map",
+      "town",
+      "town square",
+      "village"
+    ],
+    [
+      "airport",
+      "bridge",
+      "bus station",
+      "gas station",
+      "hotel"
+    ],
+    [
+      "train station",
+      "bank",
+      "fire station",
+      "government building",
+      "hospital"
+    ],
+    [
+      "law court",
+      "library",
+      "pharmacy",
+      "police station",
+      "post office"
+    ],
+    [
+      "school",
+      "town hall",
+      "tourist information",
+      "tourist office",
+      "bar (pub)"
+    ],
+    [
+      "café",
+      "coffee shop",
+      "grocery store",
+      "nightclub",
+      "restaurant"
+    ],
+    [
+      "shop",
+      "shopping mall",
+      "store",
+      "castle",
+      "cemetery"
+    ],
+    [
+      "church",
+      "movie theater / cinema (also used in the u.s.)",
+      "concert hall",
+      "fountain",
+      "leisure center"
+    ],
+    [
+      "mosque",
+      "museum",
+      "park (recreation area)",
+      "sports center",
+      "swimming pool"
+    ],
+    [
+      "synagogue",
+      "temple",
+      "theater",
+      "factory",
+      "office building"
+    ],
+    [
+      "skyscraper"
+    ]
+  ],
+  "glossary_context_notes": [
+    "Bank is the financial institution, not riverbank. Bar is a pub, not a sports bar/crossbar. Temple is a worship building in this chapter, not the anatomical body part.",
+    "Town venues and their stored exact-match candidates were visually compared in the Lesson 72 candidate contact sheet at work/vocab-art/review/lesson-72-candidates.png. The accepted sources and replacements are enumerated in existing_asset_triage.",
+    "Batch 1 retained the clear exact city, downtown and neighborhood illustrations; commercial district is a medium-rise mix of offices and stores; historic quarter uses traditional timber/stone facades and an arch, revised after full-size review.",
+    "Batch 2 replaced the map-like street candidate with a ground-level road and retained the exact plan-view street map. Town is a compact civic center, town square an open fountain plaza, and village a small cottage cluster in greenery.",
+    "Batch 3 retained the clear aircraft terminal, fuel pumps under a canopy and hotel with luggage; bridge is a structural span and arch over a river; bus station shows multiple buses under a terminal canopy, unlike a rail platform.",
+    "Batch 4 retained the clear railway platform/train, vault-style financial bank and hospital interior; fire station is marked by its engine bay and parked engine; government building uses a broad columned civic facade, separate from the smaller town hall.",
+    "Batch 5 retained the clear courtroom, library and pharmacy scenes. Police station uses a parked patrol car and police-star badge (the first cross badge was replaced after visual review); post office uses a mailing counter, parcel and red post box.",
+    "Batch 6 kept the direct school and pub matches. Town hall is a compact clock-front civic hall, separate from the columned government building; tourist information is an outdoor visitor-map kiosk, while tourist office is a staffed-service storefront with travel brochures and a globe emblem.",
+    "Batch 7 kept the café with a relaxed storefront and the restaurant with diners; the new coffee shop focuses on espresso takeaway service, the grocery on fresh food and shopping basket, and the nightclub on dancing, stage lighting and a reflective disco ball.",
+    "Batch 8 retained the clear small-shop storefront and general-store shopping cart. Shopping mall is an indoor multi-level atrium; castle uses defended walls and crenellated towers; cemetery is a quiet burial ground with headstones and flowers.",
+    "Batch 9 reused the clear cinema facade with patrons; church uses a steeple and stained glass; concert hall shows piano and auditorium acoustics; fountain is a built tiered water feature in a plaza; leisure center shows several community activities rather than one court.",
+    "Batch 10 reused the clear museum and indoor pool images; mosque has a dome and slender minarets; park is a landscaped public garden (expanded after visual review); sports center focuses on an indoor court, while the leisure center shows multiple activity options.",
+    "Batch 11 retained the live-curtain theater candidate; synagogue is marked respectfully with a Star of David window; temple uses a traditional sweeping-eave hall; factory shows production and shipped goods; office building is a moderate mid-rise with a regular workplace window grid. Factory default-fill artifact was removed after full-size review.",
+    "Live Lesson 72 shows bank in “Public services, education, and banking” and temple in “Culture, religion, and recreation”; artwork follows those chapter-group senses (financial institution and worship building) even though the source JA glosses conflict."
+  ]
+}

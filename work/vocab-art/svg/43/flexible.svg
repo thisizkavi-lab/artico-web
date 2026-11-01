@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: flexible
+  CONTEXTUAL_DEFINITION: Willing to change a plan or arrangement when needed.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker willingly making room for a colleague by shifting a work schedule.
+  PEDAGOGICAL_ARCHETYPE: 14 - Willing adjustment
+  SYNONYM_GUARD: Use willingness to alter an arrangement, not a bendable object or a worker suddenly switching job tasks.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a worker at x=100..154 with a small blank schedule board at x=144..230. Show one task card being moved from a full slot into a newly opened alternate slot for a colleague, with a relaxed open hand and curved green arrow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:flexible" data-archetype="willing-adjustment">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="flexible-schedule" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="flexible-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="flexible-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="flexible-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="150" y="39" width="95" height="78" rx="3" fill="url(#flexible-schedule)" stroke="#64748B" stroke-width="1.1"/><path d="M150 55 H245 M181 55 V117 M213 55 V117 M150 78 H245 M150 99 H245" stroke="#CBD5E1" stroke-width=".9"/><rect x="157" y="62" width="19" height="13" rx="2" fill="#8EB0DE" stroke="#5479AC" stroke-width=".8"/><rect x="219" y="84" width="19" height="13" rx="2" fill="#DCEBD7" stroke="#547A56" stroke-width=".9"/><path d="M177 68 C198 68 204 86 218 90" fill="none" stroke="#547A56" stroke-width="1.7" stroke-dasharray="2 2"/><path d="M212 85 L220 90 L211 94" fill="none" stroke="#547A56" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 135 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M48 145 V155 M256 145 V155" stroke="#965D28" stroke-width="2.2"/><circle cx="232" cy="45" r="3" fill="#F2C14E"/></g>
+  <g id="layer-focal" filter="url(#flexible-shadow)"><path d="M86 128 Q88 103 101 96 L102 87 Q98 83 100 75 Q108 67 119 70 Q128 73 126 84 L124 91 Q137 97 139 125 L136 136 H90 Z" fill="url(#flexible-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="113" cy="79" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M104 77 Q106 69 114 69 Q122 70 126 77 Q118 73 111 74 Z" fill="#3D342D"/><path d="M95 103 Q113 97 131 103" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M128 106 L145 96 M134 109 L154 103" stroke="#5479AC" stroke-width="3.8" stroke-linecap="round"/><path d="M145 96 L155 91" stroke="#D89A6C" stroke-width="3.4" stroke-linecap="round"/><path d="M119 113 L140 113" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M64 62 L70 57 M76 55 L82 50 M90 52 L96 48" stroke="#A8D4A2" stroke-width="1.3" stroke-linecap="round"/><circle cx="137" cy="64" r="2" fill="#F2C14E"/><circle cx="253" cy="107" r="2" fill="#8EB0DE"/><path d="M154 121 H241" stroke="#FFFFFF" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="82" rx="101" ry="66" fill="url(#flexible-halo)" opacity=".15"/><path d="M151 41 H244" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

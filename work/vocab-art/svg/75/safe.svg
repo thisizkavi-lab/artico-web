@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:safe" data-archetype="protected-pedestrian-crossing-with-a-yielding-car">
+<!-- SELF_PROMPT: Lesson 75 urban life; safe. Show pedestrians using a protected, well-lit crossing while a car stops and yields. No text or readable signs. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="safe-sky" x2="0" y2="1"><stop stop-color="#D9E8E8"/><stop offset="1" stop-color="#BAD0C9"/></linearGradient>
+  <linearGradient id="safe-road" x2="0" y2="1"><stop stop-color="#777F7D"/><stop offset="1" stop-color="#505D5D"/></linearGradient>
+  <linearGradient id="safe-car" x2="0" y2="1"><stop stop-color="#78999B"/><stop offset="1" stop-color="#4D7078"/></linearGradient>
+  <linearGradient id="safe-vest" x2="0" y2="1"><stop stop-color="#F0D57F"/><stop offset="1" stop-color="#CFA758"/></linearGradient>
+  <filter id="safe-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#safe-sky)"/><circle cx="256" cy="32" r="12" fill="#E9C66F" opacity=".65"/><path d="M0 120V43h47v77Zm47 0V26h47v94Zm168 0V41h43v79Zm43 0V23h46v97Z" fill="#839799"/><path d="M0 121H304V192H0Z" fill="#99A080"/></g>
+<g id="layer-context">
+  <path d="M0 137H304V192H0Z" fill="url(#safe-road)"/><path d="M0 131H304" fill="none" stroke="#D9CBA8" stroke-width="3"/><path d="M0 181H304" fill="none" stroke="#D9CBA8" stroke-width="3"/>
+  <path d="M48 138h13v39H48Zm24 0h13v39H72Zm24 0h13v39H96Zm24 0h13v39h-13Zm24 0h13v39h-13Z" fill="#F0E9D4" opacity=".88"/>
+  <path d="M27 141V81h7v60m-12-60h17" fill="none" stroke="#526C70" stroke-width="2.2"/><rect x="15" y="66" width="29" height="17" rx="8" fill="#6B9294" stroke="#4A6970" stroke-width="1.2"/><path d="M18 74h23" fill="none" stroke="#E8E8D9" stroke-width="1.2"/>
+  <path d="M270 139v-26m0 14-8-8m8 7 8-10" fill="none" stroke="#627D59" stroke-width="2.2"/><circle cx="270" cy="110" r="12" fill="#748D67"/>
+</g>
+<g id="layer-focal" filter="url(#safe-shadow)">
+  <path d="M186 114Q189 105 199 105h53q10 0 13 10l3 16h-85Z" fill="url(#safe-car)" stroke="#405B65" stroke-width="1.5"/><path d="M199 108h20v12h-20Zm25 0h21v12h-21Z" fill="#C9DBD3" stroke="#54727A" stroke-width="1.1"/><circle cx="204" cy="130" r="6" fill="#36494D"/><circle cx="251" cy="130" r="6" fill="#36494D"/><circle cx="204" cy="130" r="2" fill="#DDE0D7"/><circle cx="251" cy="130" r="2" fill="#DDE0D7"/>
+  <circle cx="147" cy="104" r="7" fill="#D3A078"/><path d="M140 101q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#4A413C"/><path d="M139 113Q147 108 155 113L159 136 135 137Z" fill="url(#safe-vest)" stroke="#806442" stroke-width="1.2"/><path d="M141 135l-5 19 8 1 5-18m5-2 5 19 8 0-6-19" fill="#40535B"/><path d="M139 115l-9 10 4 5 11-7m10-8 9 11-4 4-11-8" fill="#D3A078"/>
+  <circle cx="105" cy="110" r="6" fill="#C68D6A"/><path d="M99 107q1-9 7-9 6 1 7 9l-4-2h-8Z" fill="#53443F"/><path d="M98 117Q105 113 112 117L115 136 94 137Z" fill="#4F7890"/><path d="M99 135l-4 17 7 1 5-16m3-1 5 17 7 0-6-17" fill="#40535B"/><path d="M98 119l-7 8 4 4 9-7m8-5 8 8-4 4-9-7" fill="#C68D6A"/>
+  <path d="M29 143v-9m244 9v-9" fill="none" stroke="#405C60" stroke-width="4"/>
+</g>
+<g id="layer-details">
+  <path d="M12 183q12-5 23 0m58 5q12-5 23 0m111-3q12-5 23 0m48-9q12-5 22 0" fill="none" stroke="#C2CD94" stroke-width="1.4"/>
+  <circle cx="41" cy="153" r="1.8" fill="#E9C66F"/><circle cx="174" cy="166" r="1.8" fill="#E9C66F"/><circle cx="285" cy="159" r="1.8" fill="#E9C66F"/>
+  <path d="M194 125h13m30 0h16" fill="none" stroke="#D8CBAE" stroke-width="1.3"/><path d="M113 92q8-5 16 0m33 11q8-5 15 0" fill="none" stroke="#F0F2E6" stroke-width="1.3"/>
+  <path d="M134 117q7-5 13 0m12 0q7-5 13 0" fill="none" stroke="#FBEDC3" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M48 139h93m20 0h29" fill="none" stroke="#F8E8BF" stroke-width="1.2"/><path d="M20 64h20" fill="none" stroke="#D5E5DC" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

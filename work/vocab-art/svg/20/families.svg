@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: families (Plural Noun)
+  CONTEXTUAL_DEFINITION: Related people from more than one generation gathered together.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A broad reunion includes grandparents, adults, and children around one shared table; the varied ages make the family group clear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm home interior with a round rug.
+    - Context_Layer: Shared meal and three generations gathered around the table.
+    - Focal_Layer: Four adults and two children sit and stand close as one group.
+    - Details_Layer: Passing a bowl, gentle smiles, and varied height and hair.
+    - Lighting_Layer: Soft golden ellipse over the gathering.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:families" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="families-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="families-table" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <filter id="families-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#families-bg)"/><path d="M0 148Q70 142 152 148T304 146V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="173" rx="128" ry="8" fill="#DDD4C3"/><path d="M20 44H284M20 49H284" stroke="#E2DACD" stroke-width="1.2"/></g>
+  <g id="layer-context"><ellipse cx="152" cy="151" rx="117" ry="20" fill="#D9A441" opacity=".15"/><path d="M54 104Q58 82 82 82Q107 83 110 104V128H54Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><circle cx="82" cy="62" r="20" fill="#8D583C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M62 60Q64 41 83 42Q103 43 103 62L97 67H65Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M61 66Q54 94 63 112" fill="none" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/><path d="M196 108Q199 84 221 84Q244 85 247 108V130H196Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><circle cx="222" cy="63" r="19" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M204 61Q206 43 222 43Q241 44 241 62L235 67H207Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2"/><path d="M43 111Q46 94 61 94Q77 95 78 112V130H43Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="60" cy="82" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M47 82Q47 68 61 68Q75 70 74 84L69 87H49Z" fill="#27364B"/><path d="M246 112Q249 96 264 96Q279 98 280 114V131H246Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/><circle cx="263" cy="83" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M250 82Q251 68 264 69Q277 70 276 84L272 88H252Z" fill="#6E473B"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#families-shadow)"><ellipse cx="152" cy="136" rx="91" ry="22" fill="url(#families-table)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M87 151V178M217 151V178" stroke="#965D28" stroke-width="7" stroke-linecap="round"/><ellipse cx="152" cy="132" rx="77" ry="14" fill="#FAF8F3" stroke="#965D28" stroke-width="1.5"/><path d="M133 126Q135 117 143 119Q147 111 155 118Q163 112 169 120Q176 119 177 127Z" fill="#829A83" stroke="#1E2A3B" stroke-width="1.6"/><path d="M152 118V127M145 118L142 125M161 117L165 124" stroke="#568552" stroke-width="1.4"/><circle cx="124" cy="132" r="4" fill="#CE3D4E"/><circle cx="184" cy="133" r="4" fill="#F2C14E"/><path d="M106 130Q115 126 123 132M181 132Q193 126 202 130" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M112 57Q119 52 126 57M136 57Q143 52 150 57M118 70Q131 78 144 69" fill="none" stroke="#80513F" stroke-width="1.8" stroke-linecap="round"/><path d="M157 71Q164 64 171 71M181 70Q188 64 195 71M165 82Q176 87 186 80" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/><path d="M104 97Q108 88 113 88M190 99Q194 89 198 89" fill="none" stroke="#D9A441" stroke-width="2"/><circle cx="151" cy="105" r="2.5" fill="#D9A441"/><path d="M42 71Q51 66 57 70M248 70Q257 64 264 69" fill="none" stroke="#FDE4D4" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="104" rx="129" ry="85" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".38"/><path d="M90 40Q126 27 158 36" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".72"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: raindrop (Noun)
+  CONTEXTUAL_DEFINITION: One individual rounded drop of rain, shown close up with a highlight.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate a single enlarged falling water drop above a leaf, with a clear glossy contour and one bright highlight.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with scale/context cue
+  SYNONYM_GUARD: One discrete drop, not a cloud of rain or a pool of water.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Large translucent blue teardrop hangs above a broad green leaf; a tiny secondary glint emphasizes the clear water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:raindrop" data-archetype="single-enlarged-rain-drop">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="rd-sky" x2="0" y2="1"><stop stop-color="#C5E0E6"/><stop offset="1" stop-color="#E9F1E7"/></linearGradient><linearGradient id="rd-drop" x1="0" x2="1" y2="1"><stop stop-color="#DDF8F3"/><stop offset=".42" stop-color="#86CBD1"/><stop offset="1" stop-color="#3E8298"/></linearGradient><linearGradient id="rd-leaf" x2="0" y2="1"><stop stop-color="#86AC79"/><stop offset="1" stop-color="#4D795F"/></linearGradient><filter id="rd-shadow" x="-20%" y="-18%" width="140%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#365866" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rd-sky)"/><path d="M0 137Q76 121 151 137T304 128V192H0Z" fill="#9CAD90"/><path d="M0 164H304V192H0Z" fill="#B5A47D"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A39371" stroke-width="1.2"/><path d="M44 75q13-9 26 0m164-8q13-9 26 0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/><ellipse cx="151" cy="164" rx="70" ry="6" fill="#4C604E" opacity=".17"/><path d="M36 145Q83 123 137 139Q192 124 264 146Q211 157 151 153Q88 161 36 145Z" fill="url(#rd-leaf)" stroke="#4C7058" stroke-width="1.7"/><path d="M49 145Q145 142 250 146" fill="none" stroke="#C5D9A0" stroke-width="1.8" stroke-linecap="round"/><path d="M83 141q21-8 42-7m74 7q18-5 31-3" fill="none" stroke="#A8C68F" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#rd-shadow)">
+  <path d="M152 34C139 54 116 81 116 107C116 130 131 145 152 145C174 145 189 130 189 107C189 81 165 53 152 34Z" fill="url(#rd-drop)" stroke="#477F91" stroke-width="2.1"/><path d="M149 43C141 57 128 78 126 95" fill="none" stroke="#E9FFFF" stroke-width="4" stroke-linecap="round" opacity=".9"/><path d="M134 111Q137 129 153 133" fill="none" stroke="#B9E6E5" stroke-width="2" stroke-linecap="round"/><ellipse cx="173" cy="113" rx="5" ry="10" transform="rotate(-28 173 113)" fill="#347A91" opacity=".25"/>
+  <path d="M140 147q12 4 24 0" fill="none" stroke="#E1F8F1" stroke-width="1.6" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="132" cy="82" r="1.5" fill="#FFFFFF"/><path d="M195 124q8-5 14 0m-8-5 2-5" fill="none" stroke="#C9ECE5" stroke-width="1.2" stroke-linecap="round"/><path d="M32 139q18-8 35-4m167 4q16-5 31 2" fill="none" stroke="#A8C58E" stroke-width="1.2"/><path d="M87 145q17-8 31-6m93 3q11-4 20-2" fill="none" stroke="#BCD49B" stroke-width="1"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><circle cx="91" cy="137" r="1.2" fill="#E6F5CE"/><circle cx="221" cy="141" r="1.2" fill="#E6F5CE"/></g>
+ <g id="layer-lighting"><path d="M149 42C136 62 124 83 123 101" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="134" cy="83" r="1" fill="#FFF8E7"/><path d="M43 144q41-14 78-5" fill="none" stroke="#D7E5B8" stroke-width="1.2" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: trim a hedge (Verb phrase)
+  CONTEXTUAL_DEFINITION: Cut a hedge's outer growth to make its surface neat and even.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, tool, and target reaction
+  SYNONYM_GUARD: Two long blades cut across a flat hedge face and leave clipped leaves; pruning trees uses loppers on a woody branch.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Long green hedge with a visibly straight finished top at y=73 and lawn below.
+    - Context_Layer: A few loose clippings fall from the cutting edge onto the grass.
+    - Focal_Layer: Gardener at left holds open hedge shears against the hedge face at x=175,y=86.
+    - Details_Layer: Shear pivot and blades, loop handles, clipped leaf sprigs, and motion arcs.
+    - Lighting_Layer: Top-left leaf highlights and a pale gleam along the shears.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:trim a hedge" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6D6;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="hedge-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8D4A2"/><stop offset="1" stop-color="#568552"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 130H304V192H0Z" fill="#EAD8BE"/><path d="M95 61Q102 48 119 53Q129 42 145 50Q157 43 171 53Q190 44 205 52Q224 44 239 54Q256 47 270 59V139H95Z" fill="url(#hedge-grad)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M100 72H267V138H100Z" fill="#568552" opacity=".7"/><path d="M0 145H304" stroke="#A27652" stroke-width="2"/><ellipse cx="178" cy="154" rx="92" ry="8" fill="#DDD4C3" opacity=".7"/></g>
+  <g id="layer-context"><path d="M106 81L117 75M126 91L136 83M149 68L159 74M194 91L204 84M230 82L241 75M250 99L260 93" stroke="#7FB07A" stroke-width="2" stroke-linecap="round"/><path d="M228 142Q234 132 244 136Q247 143 239 147Q231 148 228 142Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M247 149Q254 139 263 144Q267 150 258 154Q250 154 247 149Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M238 138L243 133M258 145L263 140" stroke="#568552" stroke-width="1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><circle cx="54" cy="65" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M41 64Q42 49 56 49Q70 50 68 65L60 58L48 59Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M39 82Q53 75 66 82L77 111L53 118L34 104Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M45 87L81 81L136 86" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M45 87L81 81L136 86" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M65 91L101 103L142 89" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M65 91L101 103L142 89" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M134 86L173 68L176 74L140 92Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M136 91L174 103L176 97L141 85Z" fill="#94A3B8" stroke="#1E2A3B" stroke-width="2"/><circle cx="138" cy="88" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M139 91L147 112L145 121M141 91L162 106L167 116" fill="none" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><ellipse cx="144" cy="125" rx="8" ry="6" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="171" cy="121" rx="8" ry="6" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M44 105L33 139L67 140L78 111" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><path d="M43 133L34 144M61 137L57 147" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M43 133L34 144M61 137L57 147" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M113 115Q132 106 149 110M114 122Q133 114 151 117" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/><path d="M176 64H218" stroke="#7FB07A" stroke-width="2" stroke-dasharray="4 3"/><path d="M180 74L185 70M187 81L192 76M193 70L197 66" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><circle cx="188" cy="118" r="2" fill="#A8D4A2"/><circle cx="213" cy="125" r="2.3" fill="#7FB07A"/><path d="M50 62Q54 60 58 62" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M102 61Q114 51 124 58M140 54Q151 48 160 54" fill="none" stroke="#C8E5B6" stroke-width="2" stroke-linecap="round"/><path d="M141 85L170 71" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/><path d="M15 147H63" stroke="#F2C14E" stroke-width="1.2" opacity=".35"/></g>
+</svg>

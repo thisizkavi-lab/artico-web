@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bed (Noun)
+  CONTEXTUAL_DEFINITION: A piece of furniture with a mattress for sleeping.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a raised headboard, mattress, pillow, and draped blanket in side view.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet bedroom wall and floor.
+    - Context_Layer: Tall headboard behind the mattress.
+    - Focal_Layer: Long mattress, pillow, blanket, and bed frame.
+    - Details_Layer: Pillow seam and duvet fold.
+    - Lighting_Layer: Soft morning light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bed" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 148 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 148 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="157" cy="166" rx="109" ry="8" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M43 148 V45 H262 V148" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/><path d="M63 61 Q63 54 70 54 H91 Q98 54 98 61 V139 H63Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.4"/><path d="M70 62 H91 V130 H70Z" fill="#B97840"/></g>
+  <g id="layer-focal"><path d="M84 99 Q84 91 92 91 H242 Q250 91 250 99 V122 H84Z" fill="#F0E5D1" stroke="#1E2A3B" stroke-width="2.2"/><path d="M82 121 H253 V142 H82Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.2"/><path d="M91 99 Q95 93 102 95 H135 Q143 97 143 105 V113 H91Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.7"/><path d="M141 98 Q177 86 217 97 Q230 101 238 112 V122 H142Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M141 98 Q159 108 159 122 M218 98 Q232 104 238 113" fill="none" stroke="#AFC3DE" stroke-width="1.6"/><path d="M96 142 V156 M238 142 V156" stroke="#8A5A35" stroke-width="5.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M98 99 Q116 94 136 99 M90 115 H136" fill="none" stroke="#FFFFFF" stroke-width="1.4"/><path d="M14 13 H290 V179 H14Z" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

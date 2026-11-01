@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: bodyboarding (Noun)
+  CONTEXTUAL_DEFINITION: Riding a small wave while lying prone on a short bodyboard.
+  PEDAGOGICAL_ART_DIRECTOR: Make the rider horizontal and close to the water on a short board, clearly different from standing surfing.
+  PEDAGOGICAL_ARCHETYPE: 4 - Agent-to-object action
+  SYNONYM_GUARD: The person lies on a compact bodyboard; they are not standing on a long surfboard.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Smiling swimmer lies flat on a short rounded board as a turquoise wave pushes the board toward shore.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:bodyboarding" data-archetype="bodyboarding-action">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="bb-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#BFE0E1"/></linearGradient><linearGradient id="bb-water" x2="0" y2="1"><stop stop-color="#55AFC0"/><stop offset="1" stop-color="#247791"/></linearGradient><linearGradient id="bb-board" x2="1" y2="1"><stop stop-color="#F29B58"/><stop offset="1" stop-color="#C65640"/></linearGradient><filter id="bb-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.3" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="86" fill="url(#bb-sky)"/><path d="M0 86Q73 82 145 87T304 83V150H0Z" fill="url(#bb-water)"/><path d="M0 148Q79 141 152 149T304 145V192H0Z" fill="#E8D19E"/></g>
+ <g id="layer-context"><circle cx="255" cy="39" r="13" fill="#EBC86F" opacity=".8"/><path d="M0 112Q54 102 107 112T211 109T304 111" fill="none" stroke="#91D9D6" stroke-width="2"/><path d="M24 170H280" fill="none" stroke="#D7BD86" stroke-width="1.2"/><path d="M38 61q13-9 28 0m177-13q14-9 29 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#bb-shadow)">
+  <path d="M74 130Q129 117 190 126Q210 128 225 137Q210 146 190 146L86 143Q69 141 74 130Z" fill="url(#bb-board)" stroke="#994A3E" stroke-width="1.7"/><path d="M83 132Q138 123 204 135" fill="none" stroke="#FFE6B4" stroke-width="1.4"/>
+  <path d="M104 126Q127 110 160 113L188 129L171 135L129 134Z" fill="#4F7F9D" stroke="#344A50" stroke-width="1.3"/>
+  <circle cx="102" cy="111" r="7" fill="#D39A72" stroke="#714E3E" stroke-width=".8"/><path d="M96 111Q96 103 103 103Q110 104 109 112Q102 108 96 111Z" fill="#394648"/>
+  <path d="M109 117Q128 108 151 112L173 124L164 132L126 130Z" fill="#D7834B" stroke="#8D563D" stroke-width="1.1"/>
+  <path d="M115 119L93 125L76 126M124 120L108 130L89 134" fill="none" stroke="#D39A72" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M146 115L164 108L177 110M153 117L171 121" fill="none" stroke="#D39A72" stroke-width="3" stroke-linecap="round"/>
+  <path d="M184 126Q205 117 220 123Q229 128 220 135" fill="none" stroke="#F7FBF2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M35 124q13-5 27 0m185 5q14-5 28 0m-230 9q16-4 31 0" fill="none" stroke="#BDE9E3" stroke-width="1.6"/>
+ </g>
+ <g id="layer-details"><path d="M76 129Q133 118 188 126M89 139h44m44 1h27" fill="none" stroke="#F7D69B" stroke-width="1.1"/><path d="M99 120l8-2m12 1 8-2m-27-8q3 2 7 0" fill="none" stroke="#F5D6B6" stroke-width="1.1"/><circle cx="103" cy="110" r="1" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M80 130Q134 120 184 127" fill="none" stroke="#FFD28F" stroke-width="1.2" opacity=".8"/><path d="M184 126Q204 117 219 123" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><circle cx="102" cy="110" r="1.1" fill="#FFF8E7"/></g>
+</svg>

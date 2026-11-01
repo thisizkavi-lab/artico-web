@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: door (Noun)
+  CONTEXTUAL_DEFINITION: A hinged panel that opens to let people enter or leave a room or building.
+  PEDAGOGICAL_ARCHETYPE: 2 (Part-of-building focus callout)
+  SYNONYM_GUARD: Show a complete hinged door in a frame, with knob and hinges as key features.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Muted wall section around an entrance.
+    - Context_Layer: Door frame and threshold.
+    - Focal_Layer: Deep blue door panel swings partly open.
+    - Details_Layer: Handle, hinges, and a view through the opening.
+    - Lighting_Layer: Bright light comes through the doorway.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:door" data-archetype="building-part-focus">
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#EAE3D5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 149 Q152 140 304 149 L304 192 L0 192Z" fill="#D7C5AA"/><ellipse cx="152" cy="167" rx="105" ry="8" fill="#BCA889"/></g>
+  <g id="layer-context"><rect x="71" y="27" width="165" height="128" rx="4" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.2"/><path d="M82 36 L226 36 L226 151 L82 151Z" fill="#F2ECE1" stroke="#8E7E60" stroke-width="2"/><path d="M91 151 L231 151" stroke="#8A5A35" stroke-width="5"/><path d="M229 46 L269 61 L269 145 L229 151Z" fill="#B9DFF1" opacity="0.66"/><path d="M238 74 L258 78 M238 91 L258 95" stroke="#FFFFFF" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M87 39 L188 39 L211 49 L211 143 L87 143Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M100 52 L146 52 L146 91 L100 91Z M155 52 L198 55 L198 91 L155 91Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.7"/><path d="M100 101 L146 101 L146 132 L100 132Z M155 101 L198 103 L198 132 L155 132Z" fill="#6C91BD" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="194" cy="102" r="4.5" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1"/><path d="M88 42 L88 57 M88 124 L88 139" stroke="#D8CDAF" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M66 151 L229 151" stroke="#8A5A35" stroke-width="3"/><path d="M81 41 L81 142" stroke="#B97840" stroke-width="3"/><circle cx="243" cy="101" r="22" fill="#F2C14E" opacity="0.12"/><path d="M254 74 Q263 69 272 74 M253 84 Q262 79 271 84" fill="none" stroke="#8EB0DE" stroke-width="2"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

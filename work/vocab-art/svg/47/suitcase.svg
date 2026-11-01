@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: suitcase
+  CONTEXTUAL_DEFINITION: One rectangular travel case with a handle and wheels.
+  PEDAGOGICAL_ART_DIRECTOR: Make one upright hard-sided wheeled case the hero, with its extended handle visible.
+  PEDAGOGICAL_ARCHETYPE: 2 - Hero Object
+  SYNONYM_GUARD: Show one single suitcase, distinct from the mixed collection of luggage.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A single dark slate wheeled suitcase stands upright on a pale airport floor with its pull handle extended and corner guards visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:suitcase" data-archetype="hero-object">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="case-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DEE8E7"/><stop offset="1" stop-color="#C5CDC7"/></linearGradient>
+  <linearGradient id="case-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#728697"/><stop offset="1" stop-color="#3E5566"/></linearGradient>
+  <linearGradient id="case-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#AEBBBC"/><stop offset="1" stop-color="#687A80"/></linearGradient>
+  <filter id="case-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#case-bg)"/><path d="M24 21H280V170H24Z" fill="#E9EBE4" stroke="#66787B" stroke-width="1.4"/><path d="M31 150H273" stroke="#C6C4B8" stroke-width="1.2"/><rect x="220" y="31" width="47" height="38" fill="#A9C9CF" stroke="#526873" stroke-width="1"/><path d="M243 31V69M220 50H267" stroke="#526873" stroke-width=".8"/><path d="M20 172H284" stroke="#EAE4D8" stroke-width="1.1"/></g>
+ <g id="layer-context"><path d="M49 137H112V151H49Z" fill="#A9825B" stroke="#1E2A3B" stroke-width="1"/><path d="M58 151V159M103 151V159" stroke="#624D3B" stroke-width="3"/><path d="M171 140H254V151H171Z" fill="#D0C3AB" stroke="#526274" stroke-width="1"/><path d="M179 151V158M248 151V158" stroke="#526274" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#case-shadow)"><path d="M93 75H206Q216 75 216 86V139Q216 148 207 148H91Q82 148 82 139V86Q82 75 93 75Z" fill="url(#case-body)" stroke="#1E2A3B" stroke-width="2"/><path d="M91 84H207V138H91Z" fill="none" stroke="url(#case-edge)" stroke-width="2"/><path d="M105 75V69Q105 62 149 62Q193 62 193 69V75" fill="none" stroke="#1E2A3B" stroke-width="3.3"/><path d="M111 74V68M187 74V68" stroke="#C6D0CF" stroke-width="1.2"/><path d="M102 86V137M196 86V137" stroke="#82949A" stroke-width="1.2"/><path d="M90 100H208M90 126H208" stroke="#AAB8B8" stroke-width="1.2"/><path d="M91 96H98V105H91M201 96H208V105H201M91 122H98V131H91M201 122H208V131H201" fill="#C5B48D" stroke="#334956" stroke-width=".9"/><rect x="143" y="113" width="13" height="8" rx="2" fill="#253D49" stroke="#1E2A3B" stroke-width=".8"/><path d="M146 117H153" stroke="#F2C14E" stroke-width="1"/><circle cx="95" cy="150" r="4" fill="#293D49"/><circle cx="203" cy="150" r="4" fill="#293D49"/></g>
+ <g id="layer-details"><ellipse cx="151" cy="164" rx="84" ry="5" fill="#526274" opacity=".17"/><path d="M27 23H277" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><path d="M84 88H214" stroke="#E1E8E4" stroke-width=".7" opacity=".45"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="104" rx="126" ry="75" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".31"/><path d="M25 22H279" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

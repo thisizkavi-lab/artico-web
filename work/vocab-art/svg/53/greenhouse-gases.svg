@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:greenhouse gases" data-archetype="atmospheric-gas-layer-trapping-outgoing-heat">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; greenhouse gases. Show a transparent atmospheric gas layer around Earth allowing sunlight in but bending outgoing heat back toward the surface; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="gas-sky" x2="0" y2="1"><stop stop-color="#D7E7E7"/><stop offset="1" stop-color="#B8D1D3"/></linearGradient>
+  <linearGradient id="gas-earth" x2="0" y2="1"><stop stop-color="#73AEB3"/><stop offset="1" stop-color="#3B7182"/></linearGradient>
+  <linearGradient id="gas-land" x2="0" y2="1"><stop stop-color="#8BA776"/><stop offset="1" stop-color="#5A795D"/></linearGradient>
+  <linearGradient id="gas-layer" x2="0" y2="1"><stop stop-color="#E7F2D9" stop-opacity=".55"/><stop offset="1" stop-color="#83BEB8" stop-opacity=".18"/></linearGradient>
+  <filter id="gas-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#244D5B" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#gas-sky)"/><circle cx="48" cy="40" r="13" fill="#EBC86F"/><path d="M52 59l18 21m-18-17 31 5m-31 0-4 27" fill="none" stroke="#D9A14B" stroke-width="2" stroke-linecap="round"/><path d="M0 147Q75 130 151 145T304 141V192H0Z" fill="#92A284"/></g>
+<g id="layer-context">
+  <ellipse cx="157" cy="117" rx="105" ry="64" fill="url(#gas-layer)" stroke="#72A6A5" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <ellipse cx="157" cy="125" rx="68" ry="47" fill="url(#gas-earth)" stroke="#355F70" stroke-width="2"/>
+  <path d="M104 112Q114 96 131 102Q141 109 135 118L124 125 120 137 108 132Z" fill="url(#gas-land)"/>
+  <path d="M159 89Q177 89 190 105L184 117 177 124 167 118 161 108 151 103Z" fill="url(#gas-land)"/>
+  <path d="M145 144Q158 136 172 143L182 152 169 164 154 161 145 154Z" fill="#789968"/>
+</g>
+<g id="layer-focal" filter="url(#gas-shadow)">
+  <path d="M145 44v39m-7-11 7 11 8-11" fill="none" stroke="#D79A4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M153 82Q153 96 162 102Q171 108 171 118" fill="none" stroke="#E18A4A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M178 133Q185 119 177 108Q170 100 173 90" fill="none" stroke="#E18A4A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M176 88l-4 9 10-1m-9 43 9-2-6-7" fill="none" stroke="#F2B45B" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M92 106q11-5 21 0m87 4q11-5 21 0m-102 43q10-4 18 0" fill="none" stroke="#D7EEE5" stroke-width="1.4"/>
+</g>
+<g id="layer-details">
+  <circle cx="92" cy="72" r="3" fill="#A3C7B9"/><circle cx="113" cy="61" r="2.4" fill="#A3C7B9"/><circle cx="196" cy="68" r="2.6" fill="#A3C7B9"/><circle cx="220" cy="82" r="3" fill="#A3C7B9"/><circle cx="221" cy="111" r="2" fill="#A3C7B9"/>
+  <path d="M82 86q9-6 17 0m108-26q9-6 17 0m8 51q8-5 15 0" fill="none" stroke="#C6DDD1" stroke-width="1.3"/>
+  <path d="M115 126q12-5 22 0m49 21q10-4 17 0" fill="none" stroke="#C7E3DC" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M157 53Q231 57 251 113M157 53Q85 57 63 113" fill="none" stroke="#E5F1DA" stroke-width="1.2" opacity=".8"/><path d="M97 94q16-7 30-1m69-1q16-7 30-1" fill="none" stroke="#F2F7E8" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

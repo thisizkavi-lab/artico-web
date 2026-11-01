@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: step down (phrasal verb; leaving a senior job)
+  CONTEXTUAL_DEFINITION: Voluntarily leave a position of authority or responsibility.
+  PEDAGOGICAL_ART_DIRECTOR: Show a senior professional descending from a raised office platform while handing the role token to a successor.
+  PEDAGOGICAL_ARCHETYPE: 3 - Professional role transition
+  SYNONYM_GUARD: This is an intentional departure from a senior role, not dismissal, a physical fall, or a simple step on stairs.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Draw a small raised platform at x=54..183,y=114 with an empty high-backed chair. A senior worker at x=156..207 is mid-step down toward the floor, extending a gold role badge to a younger colleague at x=223..266.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:step down" data-archetype="professional-handoff">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="step-platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="step-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C3CFDB"/><stop offset="1" stop-color="#7B8A9E"/></linearGradient>
+    <radialGradient id="step-handoff"><stop stop-color="#FFF1B9" stop-opacity=".86"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="step-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+    <path id="step-senior" d="M142 111 Q143 91 155 86 L157 77 Q153 71 157 63 Q163 56 172 60 Q181 64 178 75 L173 84 Q186 91 187 108 L183 120 H145 Z"/>
+    <clipPath id="step-senior-clip"><use href="#step-senior"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="155" cy="165" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Senior office and lower receiving area -->
+  <g id="layer-context"><path d="M35 150 H274" stroke="#C88446" stroke-width="2"/><rect x="48" y="65" width="43" height="70" rx="4" fill="#EEF4FA" stroke="#64748B" stroke-width="1.5"/><path d="M57 76 H83 M57 84 H81 M57 92 H83" stroke="#94A3B8" stroke-width="1.2"/><path d="M61 134 V149 M79 134 V149" stroke="#64748B" stroke-width="2"/><path d="M99 128 H170 V151 H99 Z" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M108 132 H161" stroke="#FFFFFF" stroke-width="1.8"/><path d="M111 151 V157 M158 151 V157" stroke="#64748B" stroke-width="2"/><rect x="109" y="73" width="39" height="42" rx="5" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M116 81 Q128 75 141 81 V99 H116 Z" fill="#F8FBFE" stroke="#64748B" stroke-width="1.2"/><path d="M113 105 H144" stroke="#5479AC" stroke-width="2"/></g>
+  <!-- 3. Senior worker leaves the elevated role and transfers responsibility -->
+  <g id="layer-focal" filter="url(#step-shadow)"><path d="M46 131 H142 V138 H46 Z" fill="url(#step-platform)" stroke="#1E2A3B" stroke-width="2"/><path d="M152 137 H183 V151 H152 Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.3"/><use href="#step-senior" fill="url(#step-suit)" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><g clip-path="url(#step-senior-clip)"><path d="M138 91 Q165 81 191 94 V124 H138Z" fill="#64748B"/><path d="M148 91 Q166 85 180 91" fill="none" stroke="#D7E0EA" stroke-width="2.5"/></g><ellipse cx="168" cy="70" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M160 69 Q161 59 169 59 Q177 60 178 68 Q171 63 166 65 Z" fill="#A6A09B" stroke="#1E2A3B" stroke-width="1.1"/><use href="#step-senior" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M150 116 L146 136 Q146 141 153 142 L160 140 L164 120" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M161 117 L170 134 L179 137 L183 132 L176 118" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M224 129 Q224 112 237 107 L239 98 Q235 92 238 85 Q244 77 253 82 Q261 87 256 98 L253 105 Q266 111 267 131 L261 145 H227 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><ellipse cx="248" cy="94" rx="8" ry="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/><path d="M240 92 Q241 82 249 82 Q257 83 257 91 Q251 86 245 88 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M178 101 Q194 94 211 101 L222 108 L218 115 L202 110 L186 116 Z" fill="#C0CAD5" stroke="#1E2A3B" stroke-width="1.8"/><path d="M214 104 Q220 102 224 107 L221 113 L214 112 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M226 120 Q215 119 208 111 L204 117 Q211 130 225 131 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M205 111 Q201 108 198 112 L202 118 L208 116 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <!-- 4. Badge passes from one colleague to the next -->
+  <g id="layer-details"><path d="M211 102 L220 104 L217 119 L208 116 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="214" cy="108" r="2" fill="#FFFFFF"/><path d="M213 112 L211 117" stroke="#965D28" stroke-width="1"/><path d="M130 51 V41 H154 V51" fill="none" stroke="#64748B" stroke-width="1.4"/><circle cx="142" cy="50" r="6" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M150 125 L159 126" stroke="#4A72B2" stroke-width="2" stroke-dasharray="3 3"/><path d="M155 121 L162 126 L155 130 Z" fill="#4A72B2"/></g>
+  <!-- 5. Soft ring marks an intentional handoff, not a dismissal -->
+  <g id="layer-lighting"><ellipse cx="213" cy="110" rx="34" ry="28" fill="url(#step-handoff)"/><ellipse cx="213" cy="110" rx="24" ry="20" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M159 62 H168" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M188 132 Q194 137 201 136" fill="none" stroke="#FFFFFF" stroke-width="1.7"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: study (Noun)
+  CONTEXTUAL_DEFINITION: A small room in a home set aside for reading or working at a desk.
+  PEDAGOGICAL_ARCHETYPE: 5 (Everyday room interior)
+  SYNONYM_GUARD: The lesson category is rooms and levels, so show a dedicated home study with a desk and books rather than the act of studying.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet home office with shelves.
+    - Context_Layer: Desk and chair sit beneath a bookcase.
+    - Focal_Layer: Open book and task lamp rest on the desk.
+    - Details_Layer: Scroll-free blank books, a window, and a plant.
+    - Lighting_Layer: Concentrated lamp light over the desk.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:study" data-archetype="room-interior">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#ECE8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 148 Q152 138 304 148 L304 192 L0 192Z" fill="#D7C5AA"/><ellipse cx="153" cy="167" rx="108" ry="8" fill="#BCA889"/><rect x="45" y="33" width="68" height="53" rx="3" fill="#DCECFB" stroke="#5479AC" stroke-width="2"/><path d="M79 33 L79 86 M45 59 L113 59" stroke="#FAF8F3" stroke-width="2"/></g>
+  <g id="layer-context"><rect x="157" y="32" width="104" height="11" rx="2" fill="#B97840"/><rect x="157" y="66" width="104" height="10" rx="2" fill="#B97840"/><rect x="163" y="44" width="17" height="20" rx="2" fill="#5479AC"/><rect x="183" y="48" width="15" height="16" rx="2" fill="#CE3D4E"/><rect x="202" y="42" width="20" height="22" rx="2" fill="#7FB07A"/><rect x="228" y="46" width="19" height="18" rx="2" fill="#8B5CA8"/><rect x="52" y="105" width="196" height="12" rx="4" fill="#B97840" stroke="#8A5A35" stroke-width="1.5"/><path d="M65 117 L62 151 M235 117 L238 151" stroke="#8A5A35" stroke-width="4"/><rect x="113" y="122" width="66" height="28" rx="5" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M121 149 L119 159 M172 149 L174 159" stroke="#1E2A3B" stroke-width="3"/><path d="M160 103 L160 83 L179 83 L179 104" fill="none" stroke="#1E2A3B" stroke-width="2.4"/><path d="M155 82 Q169 68 184 82 L184 87 L155 87Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.4"/><path d="M100 102 L117 92 L134 102 L117 107Z" fill="#FAF8F3" stroke="#5479AC" stroke-width="1.6"/><path d="M117 99 L117 107" stroke="#CE3D4E" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M200 97 L209 88 L218 97 L209 106Z" fill="#F2C14E" opacity="0.65"/><path d="M269 151 L269 122 M280 151 L280 127" stroke="#8A5A35" stroke-width="2.5"/><circle cx="275" cy="116" r="11" fill="#7FB07A"/><circle cx="263" cy="126" r="8" fill="#8FB987"/><path d="M157 92 Q168 84 180 92" fill="none" stroke="#F2C14E" stroke-width="2" opacity="0.8"/></g>
+  <g id="layer-lighting"><circle cx="170" cy="91" r="32" fill="#F2C14E" opacity="0.13"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

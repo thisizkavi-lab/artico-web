@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:global warming" data-archetype="heated-planet-with-shrinking-polar-ice">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; global warming. Show Earth under intense heat with a shrinking polar ice cap and rising heat shimmer; no readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="warm-sky" x2="0" y2="1"><stop stop-color="#E8EBDD"/><stop offset="1" stop-color="#D4D6B8"/></linearGradient>
+  <linearGradient id="warm-world" x2="0" y2="1"><stop stop-color="#80B6B9"/><stop offset="1" stop-color="#356D80"/></linearGradient>
+  <linearGradient id="warm-land" x2="0" y2="1"><stop stop-color="#88A16D"/><stop offset="1" stop-color="#576F54"/></linearGradient>
+  <radialGradient id="warm-sun"><stop stop-color="#F7D879"/><stop offset=".7" stop-color="#E8AF53"/><stop offset="1" stop-color="#E08A48" stop-opacity=".8"/></radialGradient>
+  <filter id="warm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#503F31" flood-opacity=".22"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#warm-sky)"/><circle cx="246" cy="40" r="29" fill="#F0BD61" opacity=".18"/><circle cx="246" cy="40" r="19" fill="url(#warm-sun)"/><path d="M225 74l-9 10m23-4-4 12m17-12 4 12m-38-35-13-4m63 8 12-5" fill="none" stroke="#D88B4F" stroke-width="2" stroke-linecap="round"/><path d="M0 147Q74 132 149 145T304 141V192H0Z" fill="#A6A17A"/></g>
+<g id="layer-context">
+  <circle cx="143" cy="112" r="70" fill="url(#warm-world)" stroke="#355D70" stroke-width="2"/>
+  <path d="M89 82Q103 68 117 76Q126 82 121 92L111 100 115 109 103 117 97 108 88 106 83 95Z" fill="url(#warm-land)"/>
+  <path d="M157 74Q176 68 189 82L196 94 187 103 182 114 172 112 164 100 152 96Z" fill="url(#warm-land)"/>
+  <path d="M127 122Q142 116 153 125L161 137 154 147 142 152 132 145 120 140Z" fill="#8E9B68"/>
+  <path d="M109 56Q125 47 144 50Q158 50 169 58L164 66Q143 60 128 64Q117 64 109 56Z" fill="#F4F5E9"/>
+</g>
+<g id="layer-focal" filter="url(#warm-shadow)">
+  <path d="M111 57Q125 50 140 52Q151 51 163 57L158 63Q142 60 129 65L117 64Z" fill="#F6F6E8"/>
+  <path d="M116 66Q130 69 142 65" fill="none" stroke="#C2D8D7" stroke-width="1.6"/>
+  <path d="M125 91q9 5 16 1m9 14q10-5 17-1m-36 20q10-4 18 1" fill="none" stroke="#B4D7D2" stroke-width="1.5"/>
+  <path d="M80 152Q143 166 207 149" fill="none" stroke="#E8D48C" stroke-width="2" opacity=".8"/>
+  <path d="M92 164q12-8 23-1m60 3q12-8 24-1" fill="none" stroke="#E69A50" stroke-width="2"/>
+  <path d="M216 68l-13-3m39 2 1 14m19-27 13 2m-64 32-11 7" fill="none" stroke="#DE944E" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <circle cx="94" cy="134" r="1.8" fill="#D8E8D9"/><circle cx="187" cy="126" r="1.8" fill="#D8E8D9"/><circle cx="134" cy="102" r="1.6" fill="#D8E8D9"/>
+  <path d="M89 73q7-5 14-2m85 29q7-5 13-2m-77 44q8-4 15-1" fill="none" stroke="#B7D4C2" stroke-width="1.3"/>
+  <path d="M46 132q11-7 22 0m169 7q11-7 22 0" fill="none" stroke="#D09A57" stroke-width="1.5"/>
+  <path d="M74 166q10-4 19 0m117-1q10-4 19 0" fill="none" stroke="#E7C574" stroke-width="1.3"/>
+  <path d="M124 65v5m13-6v7m13-7v5" fill="none" stroke="#A6D4D7" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<g id="layer-lighting"><path d="M111 55q23-11 52 1" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><path d="M71 101q-5 11-2 22m142-11q4 9 2 18" fill="none" stroke="#C7E5DE" stroke-width="1.4" opacity=".7"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

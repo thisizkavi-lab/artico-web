@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: memorize (Verb)
+  CONTEXTUAL_DEFINITION: Learn information so it can be recalled from memory.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show active recall: a learner studies a cue card, then confidently answers from memory; distinguish this from simply rereading notes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet study desk and calm school wall.
+    - Context_Layer: Several unlettered flash cards and a small pile of books.
+    - Focal_Layer: Student turns a cue card, then recalls its pictured fact with a confident expression.
+    - Details_Layer: A head-side recall bubble contains only the matching simple shape cue.
+    - Lighting_Layer: Focused glow around learner and cue cards.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:memorize" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="memorize-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="memorize-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#memorize-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H87V74H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M53 25V73M21 49H86" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M221 114H276V132H221Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M227 119H269" stroke="#DCECFB" stroke-width="1.2"/><path d="M229 106H266V116H229Z" fill="#D9857F" stroke="#A95059" stroke-width="1.1"/><path d="M36 119H74V137H36Z" fill="#91A77C" stroke="#54765A" stroke-width="1.1"/><path d="M42 124H68" stroke="#EAF2E5" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#memorize-shadow)"><circle cx="111" cy="75" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M98 75Q99 59 112 60Q125 61 124 76L118 79Q115 68 109 69Q104 70 101 81Z" fill="#27364B"/><path d="M91 94Q109 86 127 95L135 119L120 130L95 120Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M99 97L78 110L65 103M123 97L142 107L158 99" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M99 97L78 110L65 103M123 97L142 107L158 99" fill="none" stroke="#C98961" stroke-width="2.9" stroke-linecap="round"/><path d="M101 124L94 148M119 126L130 148" stroke="#315782" stroke-width="6" stroke-linecap="round"/><path d="M70 70H101V103H70Z" fill="#FFFEFA" stroke="#5479AC" stroke-width="1.4"/><path d="M77 85L85 77L94 85L85 94Z" fill="#D9A441" stroke="#8D6138" stroke-width="1"/><path d="M138 46Q151 31 175 39Q194 45 191 64Q188 80 169 82H157L148 91L149 79Q134 70 138 46Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.5"/><path d="M153 59L164 48L176 59L164 70Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M161 81L157 87" stroke="#64748B" stroke-width="1.2"/><circle cx="180" cy="91" r="2.7" fill="#D9A441"/><path d="M184 99L189 95" stroke="#D9A441" stroke-width="1.5"/><path d="M148 107L155 110" stroke="#FEF9C3" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="91" rx="118" ry="69" fill="#FEF9C3" opacity=".1"/><path d="M20 25H87V73" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M138 46Q151 31 175 39Q194 45 191 64" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

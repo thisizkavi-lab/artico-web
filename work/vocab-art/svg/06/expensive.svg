@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: expensive (Adjective)
+  CONTEXTUAL_DEFINITION: Costing a great deal, shown by a fine jewel in a case beside a very tall stack of coins.
+  PEDAGOGICAL_ARCHETYPE: 4 (Valuable object paired with a clear cost cue)
+  SYNONYM_GUARD: The many coins required for one jewel imply a high price; no numbers or price tag are used.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Refined jewelry counter with glass display case.
+    - Context_Layer: Shopper looks at the jewel with a worried purse.
+    - Focal_Layer: Gold necklace and gem behind glass.
+    - Details_Layer: Tall coin stack and small coin purse.
+    - Lighting_Layer: Concentrated gem glint and glass highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:expensive" data-archetype="contrast-reference">
+  <defs><linearGradient id="shop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#shop)"/><path d="M0 143 Q152 137 304 145 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="151" cy="163" rx="108" ry="8" fill="#DDD4C3"/><rect x="120" y="32" width="165" height="78" rx="8" fill="#E9EFF5" stroke="#94A3B8" stroke-width="1.7"/><path d="M120 72 L285 72 M202 32 L202 110" stroke="#CBD5E1" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M26 151 Q29 126 48 123 Q68 126 70 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="48" cy="106" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M31 105 Q32 86 49 88 Q65 89 65 106 Q56 97 47 98Z" fill="#27364B"/><path d="M39 108 Q43 104 46 108 M52 108 Q56 104 59 108" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="50" cy="117" rx="3.3" ry="4" fill="#A34F47"/><path d="M25 132 Q18 124 20 114 M68 132 Q75 123 77 114" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M73 144 Q85 136 95 137 L102 148 Q88 157 74 153Z" fill="#7B4A34" stroke="#1E2A3B" stroke-width="1.8"/><path d="M81 143 Q87 145 92 141" fill="none" stroke="#C88446" stroke-width="1.3"/></g>
+  <g id="layer-focal"><path d="M144 80 Q181 45 258 79 L258 107 L144 107Z" fill="#F1F5F9" stroke="#64748B" stroke-width="1.8"/><path d="M164 64 Q199 100 234 64" fill="none" stroke="#D49B2A" stroke-width="3.3"/><path d="M193 72 L202 58 L211 72 L209 88 L202 94 L195 88Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="2"/><path d="M202 59 L202 92 M195 75 L210 75" stroke="#DCEAF4" stroke-width="1.8"/><path d="M139 129 Q158 125 176 129 L176 140 Q158 145 139 140Z" fill="#D49B2A" stroke="#8D552E" stroke-width="1.7"/><path d="M141 124 Q158 120 174 124 L176 132 Q158 136 140 131Z" fill="#F2C14E" stroke="#8D552E" stroke-width="1.7"/><path d="M141 119 Q158 115 174 119 L176 127 Q158 131 140 126Z" fill="#D49B2A" stroke="#8D552E" stroke-width="1.7"/><path d="M141 114 Q158 110 174 114 L176 122 Q158 126 140 121Z" fill="#F2C14E" stroke="#8D552E" stroke-width="1.7"/><path d="M141 109 Q158 105 174 109 L176 117 Q158 121 140 116Z" fill="#D49B2A" stroke="#8D552E" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M177 45 L183 35 L189 45 L199 50 L189 55 L183 65 L177 55 L167 50Z" fill="#F2C14E"/><path d="M266 42 L270 34 L274 42 L282 46 L274 50 L270 58 L266 50 L258 46Z" fill="#F2C14E"/><path d="M125 39 Q182 33 237 39 M199 35 L199 106" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.78"/><circle cx="218" cy="47" r="2.4" fill="#FFFFFF"/></g>
+  <g id="layer-lighting"><path d="M147 39 Q193 35 238 41 M187 70 L202 58" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

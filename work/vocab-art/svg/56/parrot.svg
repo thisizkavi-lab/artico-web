@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: parrot (noun)
+  CONTEXTUAL_DEFINITION: A brightly colored tropical parrot with a hooked bill and long tail, perched in a leafy canopy.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Use unmistakable scarlet, yellow, and blue feathers, a heavy curved bill, and long tail streamers; this is visibly more distinctive than the generic bird card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Perch a macaw-like parrot facing right, upright body x=111..182 y=57..134, head at x=175 y=49, curved ivory-black bill, red torso, blue-yellow wing, and three long tail feathers to y=165; add tropical leaves.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:parrot" data-archetype="tropical-parrot">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#CF594D;--c-secondary:#355F85;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="parrot-sky" x2="0" y2="1"><stop stop-color="#D8E9EB"/><stop offset="1" stop-color="#F5F0E2"/></linearGradient>
+  <linearGradient id="parrot-red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E87956"/><stop offset="1" stop-color="#B43D43"/></linearGradient>
+  <linearGradient id="parrot-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4C64B"/><stop offset=".55" stop-color="#2F83A4"/><stop offset="1" stop-color="#275A83"/></linearGradient>
+  <filter id="parrot-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#parrot-sky)"/><path d="M0 133Q76 119 148 132T304 124V192H0Z" fill="#D9E3D1"/><path d="M0 155Q76 145 152 156T304 150V192H0Z" fill="#C4D3BB"/><circle cx="251" cy="40" r="24" fill="#F6D98C" opacity=".5"/><path d="M24 132V77m0 30L11 93m13 26 13-18m245 31V69m0 38-16-18m16 9 13-16" fill="none" stroke="#6E8665" stroke-width="3.3" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M31 140Q112 134 186 140T280 135" fill="none" stroke="#72523A" stroke-width="7" stroke-linecap="round"/><path d="M48 136l-7-10m8 10 9-11" fill="none" stroke="#72523A" stroke-width="3" stroke-linecap="round"/><path d="M13 94q9-14 19-5q-5 12-19 5Zm-1 16q11-13 20-4q-4 13-20 4Zm236-29q11-13 20-4q-6 12-20 4Zm17 17q11-12 20-3q-4 13-20 3Z" fill="#78956E"/><ellipse cx="149" cy="153" rx="48" ry="5" fill="#65765F" opacity=".16"/></g>
+ <g id="layer-focal" filter="url(#parrot-shadow)"><path d="M119 81Q122 59 144 55Q166 53 179 71Q188 94 179 119Q165 137 142 132Q121 122 119 101Z" fill="url(#parrot-red)" stroke="#8F343A" stroke-width="1.5"/><path d="M130 82Q147 69 166 78Q178 90 169 111Q150 125 134 113Z" fill="url(#parrot-wing)" stroke="#305675" stroke-width="1.1"/><path d="M134 88q15-8 31-3m-29 10q13-7 27-2m-25 10q12-5 23-1" fill="none" stroke="#F2D17C" stroke-width="1.2" stroke-linecap="round"/><circle cx="176" cy="58" r="20" fill="#D84E4C" stroke="#96383B" stroke-width="1.4"/><path d="M190 58Q207 49 212 61Q212 73 199 79Q193 79 190 71Q198 67 190 58Z" fill="#27323A" stroke="#17232B" stroke-width="1.2"/><path d="M193 59Q202 55 207 60L200 66Q196 66 193 59Z" fill="#E6D5B5"/><circle cx="181" cy="53" r="2.8" fill="#F4D76B"/><circle cx="181" cy="53" r="1.2" fill="#1E2A3B"/><path d="M144 125L131 165L149 137L154 167L160 136L174 159L170 124Z" fill="#376F8E" stroke="#28536F" stroke-width="1.2"/><path d="M120 139Q150 137 184 140" fill="none" stroke="#72523A" stroke-width="5" stroke-linecap="round"/><path d="M148 127l-1 10m17-10 2 10m-19 0-5 2m24-2 5 2" fill="none" stroke="#836141" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M22 127l-4-9m9 9 5-8m238 8 5-9m8 9 4-7" fill="none" stroke="#829772" stroke-width="1.4"/><path d="M160 63q9-6 15-3m-38 22q7-4 12-2" fill="none" stroke="#FFC0A0" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><circle cx="218" cy="105" r="1.4" fill="#D5C495"/></g>
+ <g id="layer-lighting"><path d="M128 69q10-11 22-9m25-8q8-2 12 3" fill="none" stroke="#FFE2B5" stroke-width="1.6" opacity=".8" stroke-linecap="round"/><ellipse cx="151" cy="91" rx="46" ry="34" fill="#FFF8E6" opacity=".035"/></g>
+</svg>

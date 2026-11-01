@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: intelligent (Adjective)
+  CONTEXTUAL_DEFINITION: Able to learn, understand, and solve problems well.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person studies several geometric clues and assembles them into a working bridge, showing reasoning rather than just a high score.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Shared design table with a gap between two platforms.
+    - Context_Layer: Peer observes the incomplete puzzle bridge.
+    - Focal_Layer: Thoughtful person fits the final piece across the gap.
+    - Details_Layer: Geometric clues, joined bridge pieces, focused eyes and a small insight glow.
+    - Lighting_Layer: Warm highlight on the solved connection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:intelligent" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M18 116H286" stroke="#B9875D" stroke-width="5" stroke-linecap="round"/><path d="M39 117V144M268 117V144" stroke="#805333" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="250" cy="63" r="15" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M235 63Q236 47 250 48Q265 49 265 64L260 68H238Z" fill="#35404B"/><path d="M232 85Q250 79 268 85L273 112H227Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M241 63H246M254 63H259M241 73Q250 77 259 73" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M238 93L229 104M262 93L273 104" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M225 52L231 46L237 52M272 53L278 47" fill="none" stroke="#D9A441" stroke-width="1.7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="116" cy="94" rx="70" ry="69" fill="#FEF3C7" opacity=".53"/><circle cx="113" cy="54" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M93 54Q94 32 113 33Q134 34 133 56L126 61Q122 45 111 45Q101 46 95 62Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M89 80Q113 73 137 80L143 120H83Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M96 88L80 101L69 98M132 88L146 99L159 94" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M96 88L81 101L70 98M132 88L146 99L158 94" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M86 120L85 158H102L110 122M118 122L126 158H143L140 120" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M101 54L107 56M117 56L123 54M104 67Q113 63 122 67" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M148 98L170 77L189 99L207 81L236 98H148Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M157 92L169 81L180 94L191 83L205 96" fill="none" stroke="#FEF9C3" stroke-width="2"/><path d="M177 78L184 70L191 78L184 85Z" fill="#D9A441" stroke="#805333" stroke-width="1.5"/></g>
+  <g id="layer-details"><circle cx="90" cy="47" r="2.2" fill="#D9A441"/><circle cx="137" cy="61" r="2" fill="#D9A441"/><path d="M157 64L163 60L169 64M170 59L176 55L182 59M189 61L195 57" fill="none" stroke="#5479AC" stroke-width="1.6"/><path d="M175 71L184 64L193 71" fill="none" stroke="#D9A441" stroke-width="1.8"/><circle cx="184" cy="62" r="2.5" fill="#FEF9C3" stroke="#D9A441" stroke-width="1"/><path d="M147 104H243" stroke="#805333" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><path d="M103 37Q113 33 123 37" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="163" cy="92" rx="109" ry="68" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

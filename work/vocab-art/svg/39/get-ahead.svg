@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: get ahead (phrasal verb; career progression)
+  CONTEXTUAL_DEFINITION: Make progress in your career or achieve a more successful position than before.
+  PEDAGOGICAL_ART_DIRECTOR: Contrast a worker who has advanced to a higher professional step with peers remaining below.
+  PEDAGOGICAL_ARCHETYPE: 6 - Contrast / reference pair
+  SYNONYM_GUARD: The upward progress is professional, not physically walking ahead in a queue; do not make it just a generic race.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Use a low office platform at y=130 for two muted colleagues, and a taller blue platform at x=181..260, y=88. A confident worker stands on the raised platform holding a briefcase; a gold upward arrow rises behind them, while the two coworkers remain in lower muted bust silhouettes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:get ahead" data-archetype="career-contrast">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ahead-platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="ahead-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F93C5"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="ahead-glow"><stop stop-color="#FFF1B9" stop-opacity=".86"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ahead-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="ahead-bag" d="M226 112 H251 Q255 112 255 116 V137 H222 V116 Q222 112 226 112 Z"/>
+    <clipPath id="ahead-bag-clip"><use href="#ahead-bag"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="165" rx="111" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Colleagues and shared workplace floor -->
+  <g id="layer-context"><path d="M34 150 H273" stroke="#C88446" stroke-width="2"/><rect x="42" y="119" width="107" height="31" rx="4" fill="#E5E9F0" stroke="#94A3B8" stroke-width="1.4"/><path d="M48 124 H143" stroke="#FFFFFF" stroke-width="2"/><path d="M64 150 V156 M126 150 V156" stroke="#64748B" stroke-width="3" stroke-linecap="round"/><circle cx="69" cy="91" r="12" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><path d="M51 119 Q52 102 69 102 Q86 102 88 119 Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><path d="M97 117 Q99 102 114 102 Q130 102 132 117" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><circle cx="114" cy="91" r="11" fill="#D5DCE6" stroke="#64748B" stroke-width="1.8"/><path d="M102 91 Q104 83 114 82 Q124 84 126 91" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 3. One worker reaches a higher career level than the team -->
+  <g id="layer-focal" filter="url(#ahead-shadow)"><path d="M173 118 H270 V150 H173 Z" fill="url(#ahead-platform)" stroke="#1E2A3B" stroke-width="2.3"/><path d="M179 123 H264" stroke="#BBD2EF" stroke-width="2"/><path d="M193 116 V108 Q193 102 199 102 H207 Q213 102 213 108 V116" fill="none" stroke="#1E2A3B" stroke-width="2.1"/><circle cx="203" cy="81" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M189 82 Q190 66 203 66 Q216 68 218 81 Q213 74 207 74 Q198 82 189 82" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.7"/><path d="M181 120 Q182 98 203 98 Q225 98 226 120 L220 127 H187 Z" fill="url(#ahead-suit)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M197 100 L203 108 L209 100 L207 123 H199 Z" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.3"/><path d="M186 119 L175 131 L168 126 L180 108" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M219 115 L231 122 L238 115 L243 119 L234 133 Q228 137 219 129 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><use href="#ahead-bag" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><g clip-path="url(#ahead-bag-clip)"><path d="M219 125 Q237 116 258 127 V142 H219 Z" fill="#965D28"/><path d="M225 117 H247" stroke="#FCE29C" stroke-width="1.6"/></g><use href="#ahead-bag" fill="none" stroke="#1E2A3B" stroke-width="2"/></g>
+  <!-- 4. The higher-level role receives the career indicator -->
+  <g id="layer-details"><path d="M157 110 V66" stroke="#D49B2A" stroke-width="4" stroke-linecap="round"/><path d="M148 74 L157 61 L166 74 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M150 104 H163 M151 95 H162 M153 86 H161" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><circle cx="156" cy="56" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/><path d="M145 143 H166" stroke="#64748B" stroke-width="1.5" stroke-dasharray="2 3"/></g>
+  <!-- 5. Halo around the worker who has moved up -->
+  <g id="layer-lighting"><ellipse cx="203" cy="89" rx="51" ry="65" fill="url(#ahead-glow)"/><ellipse cx="204" cy="94" rx="35" ry="57" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 5" opacity=".7"/><path d="M190 71 Q201 66 211 71" fill="none" stroke="#F5BFA3" stroke-width="1.6"/><path d="M231 54 L239 48 M241 64 H250 M176 54 L169 48" stroke="#F2C14E" stroke-width="2.1" stroke-linecap="round"/></g>
+</svg>

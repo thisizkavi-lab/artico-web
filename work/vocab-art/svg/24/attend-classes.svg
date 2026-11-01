@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: attend classes (Verb phrase)
+  CONTEXTUAL_DEFINITION: Go to and take part in scheduled lessons.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a student arriving, sitting, and participating in an active class; distinguish regular attendance from studying alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Classroom with a door, board, and desk rows.
+    - Context_Layer: Several classmates are seated and a teacher is at the board.
+    - Focal_Layer: Student enters, sits, and raises a hand to join the lesson.
+    - Details_Layer: Open books and attentive classmates.
+    - Lighting_Layer: Bright, welcoming classroom light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:attend classes" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="attend-classes-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="attend-classes-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#attend-classes-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M18 25H84V80H18Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M51 26V79M19 52H83" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/><path d="M251 28H294V121H251Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.5"/><path d="M261 28V121M270 72A3 3 0 1 0 270 78" fill="none" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M104 43H199V91H104Z" fill="#5479AC" stroke="#315782" stroke-width="1.7"/><path d="M116 57Q130 52 144 57M116 68Q130 63 144 68M116 79Q130 74 144 79" fill="none" stroke="#DCECFB" stroke-width="1.4"/><path d="M214 126H250V133H214Z" fill="#A98A64"/><path d="M219 133V148M246 133V148" stroke="#8D765A" stroke-width="2.5"/><circle cx="227" cy="109" r="8" fill="#C98961" stroke="#1E2A3B" stroke-width="1"/><path d="M218 109Q219 99 228 100Q237 101 236 110" fill="#27364B"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#attend-classes-shadow)"><circle cx="74" cy="89" r="11" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M63 89Q64 75 75 76Q86 77 85 91L80 93Q77 84 72 84Q68 84 66 95Z" fill="#27364B"/><path d="M61 105Q74 99 87 105L93 126L84 137L64 129Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M66 108L52 123L42 118M83 108L92 96L105 89" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M66 108L52 123L42 118M83 108L92 96L105 89" fill="none" stroke="#E7B99B" stroke-width="2.5" stroke-linecap="round"/><path d="M68 130L61 148M81 132L91 148" stroke="#315782" stroke-width="5.5" stroke-linecap="round"/><path d="M39 119Q37 105 51 105H60V130H43Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M35 128H64V134H35Z" fill="#5479AC" stroke="#315782" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M105 88L110 84" stroke="#D9A441" stroke-width="2"/><path d="M67 70Q74 65 81 70" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="103" cy="85" r="2" fill="#D9A441"/><path d="M209 121H249" stroke="#65472F" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="94" rx="129" ry="70" fill="#FEF9C3" opacity=".09"/><path d="M18 26H84V79" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M104 43H199V91" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: ear (Noun)
+  CONTEXTUAL_DEFINITION: The external part of the body used for hearing.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole callout
+  SYNONYM_GUARD: Show the complete outer ear attached to the side of a muted head; ear canal is only a small inner detail.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Side profile of a head on warm paper.
+    - Context_Layer: Hair and cheek are muted gray-blue.
+    - Focal_Layer: One warm colored ear with helix, inner fold, and lobe.
+    - Details_Layer: Ear attaches naturally at head height.
+    - Lighting_Layer: Gold halo around the external ear.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:ear" data-archetype="part-callout">
+  <defs><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#F2CBAF"/><stop offset="1" stop-color="#C88E74"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="154" cy="104" rx="126" ry="82" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M95 168Q78 116 90 62Q105 24 161 25Q220 26 228 72L220 127Q205 160 172 172Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M101 60Q119 34 151 37Q179 37 192 60" fill="none" stroke="#94A3B8" stroke-width="9"/><path d="M146 96Q178 96 198 116" fill="none" stroke="#CBD5E1" stroke-width="2"/><path d="M97 70Q88 78 93 88" fill="none" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="102" cy="93" rx="45" ry="52" fill="#FEF3C7" opacity=".68"/><path d="M117 61Q98 57 94 76Q89 96 98 120Q106 142 122 137Q136 132 131 119Q124 108 132 99Q143 84 134 70Q128 62 117 61Z" fill="url(#skin)" stroke="#1E2A3B" stroke-width="2.7"/><path d="M116 72Q103 70 103 84Q101 98 108 107Q115 113 120 103Q123 97 119 91Q127 84 121 77Z" fill="#D99E83" stroke="#9C6656" stroke-width="1.7"/><path d="M108 84Q113 78 117 84M110 94Q116 89 121 95M115 106Q119 109 123 105" fill="none" stroke="#9C6656" stroke-width="1.8" stroke-linecap="round"/><path d="M108 119Q114 127 121 122" fill="none" stroke="#A76E5D" stroke-width="1.6"/><path d="M92 67Q103 56 117 60" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><circle cx="111" cy="93" r="43" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/><path d="M54 94L72 94" stroke="#4A72B2" stroke-width="2"/><path d="M66 89L73 94L66 99" fill="none" stroke="#4A72B2" stroke-width="2"/><path d="M167 145Q189 152 209 143" fill="none" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M75 51L84 43M139 47L146 40" stroke="#F2C14E" stroke-width="1.6"/></g>
+</svg>

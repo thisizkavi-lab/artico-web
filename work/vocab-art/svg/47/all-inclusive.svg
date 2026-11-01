@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: all-inclusive
+  CONTEXTUAL_DEFINITION: A holiday stay that combines lodging, meals, and resort activities in one package.
+  PEDAGOGICAL_ART_DIRECTOR: Bring the hotel, food, and pool together as parts of one resort stay.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show several holiday amenities together in one place; do not imply merely full meals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A resort building stands behind one continuous property scene with a swimming pool, shaded loungers, and a buffet table, all used by one arriving traveler.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:all-inclusive" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="inc-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B7D8DE"/><stop offset="1" stop-color="#F2E6CA"/></linearGradient>
+  <linearGradient id="inc-hotel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5D2B4"/><stop offset="1" stop-color="#AD8D6A"/></linearGradient>
+  <linearGradient id="inc-pool" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#76C3CF"/><stop offset="1" stop-color="#3D8DA3"/></linearGradient>
+  <filter id="inc-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#inc-sky)"/><circle cx="258" cy="35" r="13" fill="#F2C14E"/><path d="M0 111Q47 89 93 109T184 106T304 103V192H0Z" fill="#9CB78A"/><path d="M0 147Q62 136 121 147T242 144T304 147V192H0Z" fill="#D2C29D"/><path d="M17 174H286" stroke="#A79878" stroke-width="1.2"/></g>
+ <g id="layer-context"><path d="M83 51L153 29L223 51V119H83Z" fill="url(#inc-hotel)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M76 52H230" stroke="#72583F" stroke-width="4"/><path d="M105 39H201V54H105Z" fill="#8C6D4F" stroke="#1E2A3B" stroke-width="1.2"/><rect x="96" y="64" width="24" height="25" fill="#A9CAD0" stroke="#465D66" stroke-width="1.2"/><rect x="141" y="64" width="24" height="25" fill="#A9CAD0" stroke="#465D66" stroke-width="1.2"/><rect x="186" y="64" width="24" height="25" fill="#A9CAD0" stroke="#465D66" stroke-width="1.2"/><path d="M108 64V89M153 64V89M198 64V89" stroke="#536B72" stroke-width="1"/><path d="M137 94H169V119H137Z" fill="#745941"/><circle cx="164" cy="106" r="1.8" fill="#F2C14E"/><path d="M28 125H277V169H28Z" fill="#CFBD96" opacity=".75"/></g>
+ <g id="layer-focal" filter="url(#inc-shadow)"><path d="M24 135Q54 126 82 135V160Q53 169 24 160Z" fill="url(#inc-pool)" stroke="#365D6B" stroke-width="1.5"/><path d="M30 143Q52 135 76 143M31 153Q53 146 75 153" fill="none" stroke="#D9F2E8" stroke-width="1.4"/><path d="M229 123V152M219 152H244" stroke="#71583F" stroke-width="3"/><path d="M211 124Q229 105 247 124Z" fill="#E5B05B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M200 157H229V162H200Z" fill="#F6F0DF" stroke="#536274" stroke-width="1.1"/><path d="M203 162V169M226 162V169" stroke="#526274" stroke-width="2"/><path d="M251 157H280V162H251Z" fill="#F6F0DF" stroke="#536274" stroke-width="1.1"/><path d="M254 162V169M277 162V169" stroke="#526274" stroke-width="2"/><rect x="100" y="124" width="54" height="22" rx="2" fill="#A87F55" stroke="#1E2A3B" stroke-width="1.2"/><path d="M96 121H158V127H96Z" fill="#EEE9DD" stroke="#1E2A3B" stroke-width="1.2"/><ellipse cx="111" cy="119" rx="7" ry="3" fill="#E9D6A9"/><ellipse cx="133" cy="119" rx="7" ry="3" fill="#D87655"/><path d="M107 142V151M146 142V151" stroke="#634C38" stroke-width="2.6"/><circle cx="58" cy="124" r="6" fill="#D6A27C" stroke="#1E2A3B" stroke-width="1"/><path d="M49 133Q58 128 67 133L69 153H47Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M51 151L49 165H56L59 153M61 151L64 165H71L67 151" fill="#394F61" stroke="#1E2A3B" stroke-width="1"/><rect x="34" y="152" width="13" height="17" rx="2" fill="#526274" stroke="#1E2A3B" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M84 52H222" stroke="#F6E7C9" stroke-width="1.1"/><ellipse cx="155" cy="174" rx="130" ry="5" fill="#526274" opacity=".15"/><circle cx="49" cy="138" r="2" fill="#F2C14E"/><circle cx="260" cy="115" r="3" fill="#F2C14E"/><path d="M21 126Q52 117 84 126" fill="none" stroke="#F3E9D2" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="104" rx="131" ry="78" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".34"/><path d="M19 18H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

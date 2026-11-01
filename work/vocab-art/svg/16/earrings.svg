@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: earrings (Noun, plural)
+  CONTEXTUAL_DEFINITION: Paired decorative jewelry worn at the ears.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Place one dangling earring on each ear of a calm cropped head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Muted head silhouette and ears.
+    - Focal_Layer: Matching gold-and-coral drop earrings.
+    - Details_Layer: Hooks and gem drops.
+    - Lighting_Layer: Soft halo behind the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:earrings" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="66" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="90" rx="100" ry="72" fill="#FEF3C7" opacity=".35"/>
+  <path d="M103 161Q91 112 95 76Q99 35 151 32Q205 35 209 76Q213 118 198 161L180 169H123Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/>
+  <path d="M96 89Q81 81 82 99Q83 118 101 116M208 89Q223 81 222 99Q221 118 203 116" fill="#D6DDE5" stroke="#7B8A9E" stroke-width="2.2"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M88 109Q82 122 91 131L100 124L100 106Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.2"/>
+  <path d="M216 109Q222 122 213 131L204 124L204 106Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.2"/>
+  <path d="M92 126Q84 138 93 146Q101 142 98 132Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/>
+  <path d="M212 126Q220 138 211 146Q203 142 206 132Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <circle cx="94" cy="128" r="3" fill="#FFF1B8"/><circle cx="210" cy="128" r="3" fill="#FFF1B8"/>
+  <path d="M123 86Q134 80 143 86M161 86Q170 80 181 86" fill="none" stroke="#7B8A9E" stroke-width="2"/>
+  <path d="M141 124Q152 131 163 124" fill="none" stroke="#AAB5C3" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M70 121Q72 143 87 153M234 121Q232 143 217 153" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="37:filing cabinet" data-archetype="metal-filing-cabinet-with-file-drawer">
+<!-- SELF_PROMPT: Office equipment. Use a tall steel cabinet with stacked horizontal drawers and one partially open drawer exposing tabbed paper folders. Coordinate plan: cabinet occupies x=75..232, y=31..153; show front and narrow right side, four drawer divisions, recessed pulls, and caster feet. No text or numerals. -->
+<defs>
+<style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DCE8F4;--c-surface:#CBD5E1;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FEF9C3;--c-ink:#1E2A3B}</style>
+<linearGradient id="stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DCE8F4"/></linearGradient>
+<linearGradient id="cabinet" x2="0" y2="1"><stop stop-color="#F2F5F8"/><stop offset="1" stop-color="#BFCAD5"/></linearGradient>
+<linearGradient id="drawer" x2="0" y2="1"><stop stop-color="#E2E8EE"/><stop offset="1" stop-color="#AEBBC7"/></linearGradient>
+<filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#stage)"/><path d="M0 151Q75 145 152 151T304 149V192H0Z" fill="#EAE3D5"/><ellipse cx="153" cy="171" rx="86" ry="8" fill="#D8CFBF"/><path d="M18 151H286" stroke="#D1C7B7" stroke-width="1.5" fill="none"/></g>
+<g id="layer-context"><path d="M38 35H267" stroke="#D6E1EB" stroke-width="1.4" fill="none"/><rect x="39" y="54" width="24" height="52" rx="2" fill="#F9FBFD" stroke="#94A3B8" stroke-width="1.2"/><path d="M44 63h13m-13 7h13m-13 7h10m-10 7h13" stroke="#B8C6D5" stroke-width="1.2" fill="none"/><circle cx="49" cy="90" r="3" fill="#7FB07A"/><path d="M85 153v5m132-5v5" stroke="#1E2A3B" stroke-width="2.5" fill="none"/><circle cx="91" cy="159" r="5" fill="#64748B" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="211" cy="159" r="5" fill="#64748B" stroke="#1E2A3B" stroke-width="1.3"/></g>
+<g id="layer-focal" filter="url(#shadow)">
+<path d="M78 37L92 29H231L218 37Z" fill="#F7F9FB" stroke="#1E2A3B" stroke-width="2.2"/>
+<path d="M218 37L231 29V146L218 153Z" fill="#9EABB8" stroke="#1E2A3B" stroke-width="2.2"/>
+<rect x="78" y="37" width="140" height="116" rx="3" fill="url(#cabinet)" stroke="#1E2A3B" stroke-width="2.4"/>
+<rect x="87" y="46" width="122" height="23" rx="2" fill="url(#drawer)" stroke="#64748B" stroke-width="1.7"/>
+<rect x="87" y="73" width="122" height="23" rx="2" fill="url(#drawer)" stroke="#64748B" stroke-width="1.7"/>
+<rect x="87" y="100" width="122" height="23" rx="2" fill="#E9EEF3" stroke="#64748B" stroke-width="1.7"/>
+<path d="M87 127H209V146H87Z" fill="#9EABB8" stroke="#1E2A3B" stroke-width="1.8"/>
+<path d="M128 51h41v5h-41zM128 78h41v5h-41zM128 105h41v5h-41zM128 132h41v5h-41z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.2"/>
+<circle cx="191" cy="58" r="2.3" fill="#5479AC"/><circle cx="191" cy="85" r="2.3" fill="#5479AC"/><circle cx="191" cy="112" r="2.3" fill="#5479AC"/>
+<path d="M87 127L102 132V151L87 146Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/>
+<path d="M102 132H219V153H102Z" fill="#DCE3EA" stroke="#1E2A3B" stroke-width="2"/>
+<path d="M102 132L113 125H230L219 132Z" fill="#F6F8FA" stroke="#1E2A3B" stroke-width="1.6"/>
+<path d="M119 128v-17h17v17m4 0V106h18v22m5 0v-14h16v14" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4"/>
+<path d="M119 114h17m4-3h18m5 4h16" stroke="#5479AC" stroke-width="1.2" fill="none"/>
+</g>
+<g id="layer-details"><path d="M91 49h31m-31 27h31m-31 27h31" stroke="#FFFFFF" stroke-width="1.3" fill="none"/><path d="M223 41v105" stroke="#DCE3EA" stroke-width="1.5" fill="none"/><path d="M108 137h100" stroke="#F9FBFC" stroke-width="1.3" fill="none"/><path d="M122 125l5-4 5 4m13-1 6-5 6 5m12 0 5-4 5 4" stroke="#F7D775" stroke-width="1.3" fill="none"/><path d="M78 68h140m-140 27h140m-140 27h140" stroke="#F9FBFC" stroke-width="1" fill="none"/><path d="M83 41v104" stroke="#FFFFFF" stroke-width="1.1" fill="none"/></g>
+<g id="layer-lighting"><path d="M83 40h128" stroke="#FFFFFF" stroke-width="1.6" fill="none"/><path d="M89 48h34m7 27h32m-69 28h32" stroke="#FFFFFF" stroke-width="1.2" opacity=".85" fill="none"/><ellipse cx="154" cy="162" rx="52" ry="4" fill="#CEC4B4" opacity=".72"/></g>
+</svg>

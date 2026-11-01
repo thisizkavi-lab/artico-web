@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: couch / sofa (Noun)
+  CONTEXTUAL_DEFINITION: A wide upholstered seat with a back and arms for two or more people.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a long two-seat form with continuous padded arms, distinct from the single armchair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Living room floor and wall.
+    - Context_Layer: Plain wall panel.
+    - Focal_Layer: Broad two-seat sofa.
+    - Details_Layer: Two back cushions, seat seam, and short feet.
+    - Lighting_Layer: Soft fabric highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:couch / sofa" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 149 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 149 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="167" rx="104" ry="8" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M35 149 V43 H269 V149" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M61 91 Q61 76 76 76 H229 Q243 76 243 91 V124 H61Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M42 112 Q42 99 55 99 H72 V137 H42Z M232 99 H249 Q262 99 262 112 V137 H232Z" fill="#7191BC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M53 123 Q53 116 61 116 H243 Q251 116 251 124 V141 H53Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2.5"/><path d="M70 86 Q70 82 76 82 H143 V112 H70Z M149 82 H226 Q233 82 233 89 V112 H149Z" fill="#87A3C7" stroke="#365D91" stroke-width="1.6"/><path d="M143 83 V112" stroke="#365D91" stroke-width="1.6"/><path d="M65 141 V154 M239 141 V154" stroke="#8A5A35" stroke-width="5.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M76 120 H228" stroke="#F1B08F" stroke-width="1.5"/><path d="M77 88 Q105 84 136 88 M155 88 Q190 84 224 88" fill="none" stroke="#AFC3DE" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

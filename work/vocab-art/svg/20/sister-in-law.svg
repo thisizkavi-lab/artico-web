@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: sister-in-law (Noun)
+  CONTEXTUAL_DEFINITION: A man's wife's sister, shown together at a family gathering.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: Two women who share sibling features stand together, one beside her husband; the joined couple and shared resemblance show the sister-in-law connection.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Family dining room with a small table.
+    - Context_Layer: Husband beside one woman, with a shared wedding band.
+    - Focal_Layer: The two women greet one another warmly across the table.
+    - Details_Layer: Similar facial shape, supportive posture, and ring on the married pair.
+    - Lighting_Layer: Soft connecting halo around all three adults.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:sister-in-law" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#D9857F;--c-secondary:#A95059;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="sil-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="sil-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></linearGradient>
+    <filter id="sil-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sil-bg)"/><path d="M0 151Q74 145 152 151T304 149V192H0Z" fill="#EADFCC"/><ellipse cx="152" cy="174" rx="127" ry="7" fill="#DDD4C3"/><path d="M19 74Q19 56 37 56H267Q285 56 285 74V108H19Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="140" rx="121" ry="12" fill="#C88446" stroke="#965D28" stroke-width="2"/><path d="M57 148V174M246 148V174" stroke="#965D28" stroke-width="4"/><path d="M148 135Q153 126 161 131Q169 126 176 134Z" fill="#F2C14E" stroke="#965D28" stroke-width="1.4"/><path d="M218 130L235 137" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><circle cx="235" cy="137" r="3.5" fill="none" stroke="#D9A441" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#sil-shadow)"><path d="M36 177Q41 145 60 137Q78 129 98 140L106 177Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="70" cy="110" r="26" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M44 108Q45 84 70 84Q96 85 96 111Q92 127 88 138L78 140L80 120Q71 113 60 120L57 137L47 131Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2"/><path d="M56 110Q61 114 66 110M73 110Q78 114 84 110M58 123Q70 129 82 123" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M95 145Q111 138 126 127M101 152Q118 146 133 137" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M95 145Q111 138 126 127M101 152Q118 146 133 137" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M103 177Q107 145 125 137Q143 130 162 141L169 177Z" fill="url(#sil-top)" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="136" cy="109" r="26" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4"/><path d="M110 107Q111 83 136 83Q162 84 162 110Q158 126 154 137L144 139L146 119Q137 112 126 119L123 136L113 130Z" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M122 109Q127 113 132 109M139 109Q144 113 150 109M124 122Q136 128 148 122" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M126 146Q140 139 150 128M154 146Q169 138 180 128" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M126 146Q140 139 150 128M154 146Q169 138 180 128" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M148 128Q153 122 160 125L166 131L159 137Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M190 177Q194 145 212 137Q230 129 250 141L257 177Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="223" cy="108" r="26" fill="#C98961" stroke="#1E2A3B" stroke-width="2.4"/><path d="M197 106Q198 82 223 82Q249 83 249 109L243 114Q239 93 223 94Q209 93 201 116Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M210 108Q215 112 220 108M227 108Q232 112 238 108M212 122Q223 127 235 122" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M205 145Q194 138 185 128M238 145Q249 136 255 125" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M205 145Q194 138 185 128M238 145Q249 136 255 125" stroke="#C98961" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M56 87Q69 80 83 85M122 85Q136 78 150 83M210 82Q224 75 238 81" fill="none" stroke="#FFFFFF" stroke-width="2.3"/><path d="M161 94L168 88M177 95L184 89" stroke="#D9A441" stroke-width="1.8"/><circle cx="172" cy="85" r="2.3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="110" rx="137" ry="76" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".36"/><path d="M43 47Q98 29 151 40" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

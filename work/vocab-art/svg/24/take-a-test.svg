@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: take a test (Verb phrase)
+  CONTEXTUAL_DEFINITION: Answer questions in a short assessment to show what one knows.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show one learner actively writing on a brief paper in a normal classroom; distinguish from the quiz paper object and a formal exam hall.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Everyday classroom with one desk and board.
+    - Context_Layer: Small timer and empty desk row.
+    - Focal_Layer: Student writes answers on a short test page.
+    - Details_Layer: Pencil tip, a few response shapes, attentive posture.
+    - Lighting_Layer: Soft daylight without high-stakes exam drama.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:take a test" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="take-test-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="take-test-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#take-test-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H91V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M55 25V74M21 49H90" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M219 120H274V127H219Z" fill="#A98A64"/><path d="M226 127V148M267 127V148" stroke="#8D765A" stroke-width="2.5"/><circle cx="254" cy="54" r="17" fill="#FFFEFA" stroke="#64748B" stroke-width="1.4"/><path d="M254 43V54L261 59" fill="none" stroke="#5479AC" stroke-width="1.7" stroke-linecap="round"/><path d="M41 122H81V138H41Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#take-test-shadow)"><path d="M48 111H241V120H48Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M60 120V149M230 120V149" stroke="#8D765A" stroke-width="3"/><circle cx="124" cy="69" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M112 69Q113 54 125 55Q137 56 136 70L130 73Q127 62 121 63Q117 64 115 75Z" fill="#27364B"/><path d="M106 87Q123 79 140 87L147 108L135 117L112 110Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M113 90L131 101L152 102M138 90L148 99L159 100" fill="none" stroke="#1E2A3B" stroke-width="4.4" stroke-linecap="round"/><path d="M113 90L131 101L152 102M138 90L148 99L159 100" fill="none" stroke="#C98961" stroke-width="2.6" stroke-linecap="round"/><path d="M115 112L109 149M134 113L146 149" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M157 84L200 82L204 109L160 112Z" fill="#FFFEFA" stroke="#1E2A3B" stroke-width="1.4"/><path d="M166 92L189 91M167 100L192 99" stroke="#88A9D0" stroke-width="1.2"/><path d="M162 86L202 84" stroke="#D9A441" stroke-width="1.8"/><path d="M151 104L160 97" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><path d="M57 103H87V109H57Z" fill="#A98A64"/></g>
+  <g id="layer-details"><path d="M201 89L207 85" stroke="#D9857F" stroke-width="1.3"/><path d="M100 80Q108 76 116 80" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="253" cy="54" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="93" rx="126" ry="68" fill="#FEF9C3" opacity=".09"/><path d="M20 25H91V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M157 84L200 82L204 109" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".7"/></g>
+</svg>

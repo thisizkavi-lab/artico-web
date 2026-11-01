@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: handkerchief (Noun)
+  CONTEXTUAL_DEFINITION: A small square of cloth for personal use.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Soft cotton fabric with a visible folded corner and hem, not a paper or rigid card.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and soft cloth shadow.
+    - Context_Layer: None; leave clear negative space.
+    - Focal_Layer: A neatly folded pale cloth square with soft rounded corners.
+    - Details_Layer: Double stitched hem and tiny corner flower motif.
+    - Lighting_Layer: Upper-left fold highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:handkerchief" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="157" rx="87" ry="13" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="96" rx="94" ry="65" fill="#FEF3C7" opacity=".38"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M76 47Q78 41 86 43L221 55Q229 56 226 64L211 145Q210 153 202 151L75 135Q68 134 70 126Z" fill="#E8F1F5" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M87 53L214 64L201 140L82 126Z" fill="none" stroke="#9DB9C8" stroke-width="1.6"/>
+  <path d="M76 47Q111 79 149 83Q183 86 226 64L218 105Q188 124 154 118Q113 112 70 84Z" fill="#F8FCFD" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M81 55L214 67M75 128L199 143" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="3 4"/>
+  <path d="M184 106q8-11 14 0q7-10 14 1q-7 10-14 17q-7-7-14-18Z" fill="#D9857F" stroke="#A95059" stroke-width="1.4"/>
+  <circle cx="205" cy="108" r="2.1" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M91 57Q124 69 144 71" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".8" stroke-linecap="round"/>
+</svg>

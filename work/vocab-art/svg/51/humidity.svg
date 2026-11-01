@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: humidity (Noun)
+  CONTEXTUAL_DEFINITION: The amount of water vapor or moisture in the air.
+  PEDAGOGICAL_ART_DIRECTOR: Show an unlabelled humidity gauge with a high reading and visible airborne moisture and dew.
+  PEDAGOGICAL_ARCHETYPE: 1 - Atmospheric measurement
+  SYNONYM_GUARD: Focus on measuring moisture in air, rather than showing a person merely feeling humid weather.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Round hygrometer with fine tick marks and a high needle beside broad leaves carrying water beads.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:humidity" data-archetype="air-moisture-measurement">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="hm-sky" x2="0" y2="1"><stop stop-color="#D9ECE8"/><stop offset="1" stop-color="#BCDCD7"/></linearGradient><linearGradient id="hm-dial" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9E9E5"/></linearGradient><linearGradient id="hm-leaf" x2="0" y2="1"><stop stop-color="#77A989"/><stop offset="1" stop-color="#3F7765"/></linearGradient><filter id="hm-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#31584E" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hm-sky)"/><path d="M0 122Q76 109 152 122T304 115V192H0Z" fill="#8FAE91"/><path d="M0 154H304V192H0Z" fill="#B7A780"/></g>
+ <g id="layer-context"><path d="M0 119Q75 107 150 119T304 112" fill="none" stroke="#EFF8F2" stroke-width="3" opacity=".45"/><path d="M22 174H282" fill="none" stroke="#A99570" stroke-width="1.2"/><path d="M24 106Q20 82 38 65Q56 84 49 108ZM267 108Q260 83 279 63Q296 85 289 109Z" fill="url(#hm-leaf)"/><path d="M34 100l4-24m244 24-3-25" fill="none" stroke="#B9D5A7" stroke-width="1.4"/><circle cx="35" cy="85" r="2.2" fill="#F5FFFF"/><circle cx="43" cy="96" r="1.8" fill="#F5FFFF"/><circle cx="279" cy="84" r="2.1" fill="#F5FFFF"/><circle cx="272" cy="98" r="1.7" fill="#F5FFFF"/><ellipse cx="152" cy="162" rx="57" ry="5" fill="#475E47" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#hm-shadow)">
+  <circle cx="152" cy="92" r="52" fill="#647F83" stroke="#425D65" stroke-width="2"/><circle cx="152" cy="92" r="44" fill="url(#hm-dial)" stroke="#C1D4D2" stroke-width="1.4"/><path d="M152 51V62M173 56L169 66M190 68L182 75M193 91H182M190 113L180 109M173 129L168 118M152 133V121M131 128L136 117M114 113L124 109M111 91H122M114 70L124 77M131 56L136 66" fill="none" stroke="#637E82" stroke-width="2.2" stroke-linecap="round"/><path d="M152 92L174 67" fill="none" stroke="#D7834B" stroke-width="3.8" stroke-linecap="round"/><circle cx="152" cy="92" r="5.5" fill="#EBC86F" stroke="#C59542" stroke-width="1.4"/><path d="M140 100Q145 92 151 100Q156 93 162 100Q157 108 151 105Q145 109 140 100Z" fill="#7DC4C9" stroke="#5AA0AA" stroke-width="1.1"/><path d="M145 99q3-4 6-2" fill="none" stroke="#E8FFFF" stroke-width="1.2"/>
+  <path d="M138 47q14-7 28 0m-29 90q15 6 30 0" fill="none" stroke="#E6F3ED" stroke-width="1.3"/><circle cx="150" cy="77" r="1.5" fill="#DFF9F6"/><circle cx="166" cy="89" r="1.8" fill="#DFF9F6"/><circle cx="137" cy="89" r="1.3" fill="#DFF9F6"/>
+ </g>
+ <g id="layer-details"><path d="M34 72q8-12 17-3m221 5q8-12 17-3" fill="none" stroke="#D8F0E6" stroke-width="1.2"/><circle cx="35" cy="85" r="1.1" fill="#FFFFFF"/><circle cx="279" cy="84" r="1.1" fill="#FFFFFF"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><circle cx="152" cy="92" r="1.3" fill="#FFF8E7"/></g>
+ <g id="layer-lighting"><path d="M116 84q3-24 24-30m22 0q22 7 29 29m-77 5h10" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><circle cx="152" cy="92" r="1.2" fill="#FFF8E7"/><path d="M33 80l-3 6m247-8 2 6" fill="none" stroke="#E6FFFF" stroke-width="1.1"/></g>
+</svg>

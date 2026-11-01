@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: hair spray (Noun)
+  CONTEXTUAL_DEFINITION: An aerosol product sprayed onto hair to hold a hairstyle.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust with tool cue
+  SYNONYM_GUARD: Use a tall aerosol can and a visible mist aimed at styled hair, not perfume.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Dressing-room paper.
+    - Context_Layer: Cropped styled head at right.
+    - Focal_Layer: Hand holding aerosol can at left.
+    - Details_Layer: Nozzle and fine spray cloud.
+    - Lighting_Layer: Mist catches soft blue light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:hair spray" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="163" rx="117" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="211" cy="87" rx="76" ry="68" fill="#FEF3C7" opacity=".34"/>
+  <path d="M184 165Q176 135 181 91Q185 54 226 50Q268 54 271 91Q275 136 267 165Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M181 91Q168 63 184 50L198 59L205 35L216 55L234 30L240 57L258 44L263 75Q274 92 264 102Q229 113 188 100Z" fill="#354352" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M39 76H102Q112 76 112 87V147Q112 155 103 155H51Q42 154 42 146Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M43 108H111V148Q110 153 103 153H51Q44 152 43 146Z" fill="#315782"/>
+  <path d="M58 68H94V78H58Z" fill="#D8DCE2" stroke="#1E2A3B" stroke-width="2"/><path d="M76 68V59H103" fill="none" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M101 59H116" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M116 58Q143 44 175 53M120 69Q149 57 177 66M126 81Q151 73 179 79" fill="none" stroke="#C7D9E8" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M74 90V136" stroke="#9CB5D5" stroke-width="2.5" stroke-linecap="round"/><path d="M188 108Q202 102 216 108" stroke="#AAB5C3" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M116 58Q142 56 169 61" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

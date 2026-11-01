@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: tip (noun; gratuity)
+  CONTEXTUAL_DEFINITION: Extra money voluntarily left for restaurant service.
+  PEDAGOGICAL_ARCHETYPE: 3 - Role in a clear service scene
+  SYNONYM_GUARD: Use the Japanese hospitality/work context to lock tip to gratuity; show a coin left beside a meal bill for a server, not a pointed end or hint.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Cafe table with bill and used cup/plate; customer hand sets a coin on top; server waits at right with tray; no readable receipt text or numerals.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:tip" data-archetype="role-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="tip-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="tip-coin"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></radialGradient>
+    <path id="tip-customer-hand" d="M57 99 C69 92 84 94 94 102 L117 116 L111 130 L89 120 L68 118 Z"/>
+    <clipPath id="tip-hand-clip"><use href="#tip-customer-hand"/></clipPath>
+    <filter id="tip-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="150" width="304" height="42" fill="#EEE7DA"/><path d="M0 150 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="154" cy="163" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Cafe service context: table, meal and server -->
+  <g id="layer-context"><path d="M28 121 H277 V139 H28 Z" fill="url(#tip-table)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M42 139 L35 160 M262 139 L269 160" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><ellipse cx="218" cy="100" rx="31" ry="8" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="1.8"/><path d="M198 99 Q218 78 237 99" fill="#D97A43" stroke="#1E2A3B" stroke-width="1.8"/><rect x="238" y="103" width="11" height="14" rx="3" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.5"/><path d="M240 102 Q244 95 248 102" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="256" cy="56" r="18" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M234 102 Q238 78 255 78 Q272 78 276 102" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><path d="M246 57 Q256 50 265 57" fill="none" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <!-- 3. Primary bill with gratuity being left by customer -->
+  <g id="layer-focal" filter="url(#tip-shadow)"><rect x="85" y="78" width="77" height="40" rx="3" transform="rotate(-5 85 78)" fill="#FFFFFF" stroke="#1E2A3B" stroke-width="2.2"/><path d="M95 88 H147 M95 94 H138 M95 101 H145" stroke="#94A3B8" stroke-width="1.7" stroke-linecap="round"/><path d="M55 101 C66 94 83 96 95 104 L114 115 L107 129 L86 119 L66 120 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4"/><path d="M62 105 Q77 101 90 110" fill="none" stroke="#ECC09D" stroke-width="2.5"/><ellipse cx="132" cy="107" rx="12" ry="7" fill="url(#tip-coin)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="132" cy="104" rx="12" ry="7" fill="#FCE29C" stroke="#B55B28" stroke-width="1.2"/><path d="M128 104 Q132 100 136 104 Q132 108 128 104Z" fill="none" stroke="#B55B28" stroke-width="1.2"/></g>
+  <!-- 4. Extra coin positioned apart from the bill total -->
+  <g id="layer-details"><ellipse cx="163" cy="115" rx="10" ry="5.5" fill="#D49B2A" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="163" cy="112" rx="10" ry="5.5" fill="url(#tip-coin)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M159 112 Q163 108 167 112 Q163 116 159 112Z" fill="none" stroke="#B55B28" stroke-width="1.2"/><path d="M224 56 Q232 52 238 57" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M247 49 L251 50 M260 49 L264 50" stroke="#1E2A3B" stroke-width="1.5" stroke-linecap="round"/><path d="M269 95 L277 91" stroke="#FCE29C" stroke-width="3" stroke-linecap="round"/></g>
+  <!-- 5. Gratuity highlight and handoff direction -->
+  <g id="layer-lighting"><circle cx="145" cy="105" r="21" fill="#FEF3C7" opacity=".55"/><circle cx="145" cy="105" r="21" fill="none" stroke="#D97706" stroke-width="1.7" stroke-dasharray="4 4"/><path d="M174 91 Q189 82 202 86" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/><path d="M198 81 L205 86 L197 89 Z" fill="#4A72B2"/><path d="M46 82 L46 90 M42 86 H50" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

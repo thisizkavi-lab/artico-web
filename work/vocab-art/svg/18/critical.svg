@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: critical (Adjective)
+  CONTEXTUAL_DEFINITION: Carefully examining and judging the strengths or flaws of something.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A thoughtful reviewer studies a model closely and points to one specific flaw while a peer listens; this is reasoned evaluation, not emergency severity or a sneer.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community art-review table.
+    - Context_Layer: Peer displays a small crafted model.
+    - Focal_Layer: Reviewer leans in with a magnifying lens and focused gaze.
+    - Details_Layer: Lens, pointed detail, small flaw and attentive peer posture.
+    - Lighting_Layer: Clear light on the examined model surface.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:critical" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="jacket" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M26 119H279L272 131H33Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M44 131V157M258 131V157" stroke="#805333" stroke-width="4.5" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="245" cy="62" r="16" fill="#C98961" stroke="#1E2A3B" stroke-width="2"/><path d="M229 62Q230 45 245 46Q261 47 261 63L255 67H232Z" fill="#805333"/><path d="M226 85Q245 78 264 85L270 117H221Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M235 62H240M249 62H254M235 72Q245 77 255 72" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M231 92L219 106M259 92L274 105" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M218 101Q225 94 231 101L229 115H216Z" fill="#D9A441" stroke="#805333" stroke-width="1.5"/><path d="M220 100L226 95L231 101" fill="none" stroke="#805333" stroke-width="1.5"/><path d="M221 107L227 103" stroke="#A95059" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="110" cy="95" rx="68" ry="70" fill="#FEF3C7" opacity=".53"/><circle cx="109" cy="55" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M89 55Q90 33 109 34Q130 35 129 57L122 62Q118 46 107 46Q97 47 91 63Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M85 81Q109 74 133 81L140 122H78Z" fill="url(#jacket)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M92 89L76 103L69 99M128 89L146 102L161 98" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M92 89L77 103L70 99M128 89L146 102L160 98" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M81 122L80 159H97L105 124M113 124L121 159H139L136 122" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><circle cx="151" cy="78" r="14" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="151" cy="78" r="9" fill="#FEF9C3" opacity=".55" stroke="#5479AC" stroke-width="1.3"/><path d="M160 88L172 101" stroke="#805333" stroke-width="4" stroke-linecap="round"/><path d="M148 55L154 57M113 55L119 57M101 68Q109 71 117 68" fill="none" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M177 104L192 102" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="3 4"/><path d="M190 97L197 102L190 107" fill="none" stroke="#4A72B2" stroke-width="1.8"/><path d="M210 94L215 99M212 91L218 94" stroke="#D9857F" stroke-width="1.8"/><circle cx="203" cy="109" r="2" fill="#D9A441"/><path d="M99 38Q109 34 119 38" fill="none" stroke="#FEF9C3" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M99 38Q109 34 119 38" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="110" cy="95" rx="68" ry="70" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

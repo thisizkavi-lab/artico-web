@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:infrastructure" data-archetype="city-bridge-and-utility-networks-serving-buildings">
+<!-- SELF_PROMPT: Lesson 75 urban life; infrastructure. Show connected public systems in cross-section: a bridge and road above water, with utility conduits below serving buildings. No labels or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="infra-sky" x2="0" y2="1"><stop stop-color="#DCE9EA"/><stop offset="1" stop-color="#B7C9C7"/></linearGradient>
+  <linearGradient id="infra-earth" x2="0" y2="1"><stop stop-color="#A68C6E"/><stop offset="1" stop-color="#746451"/></linearGradient>
+  <linearGradient id="infra-water" x2="0" y2="1"><stop stop-color="#78AEB4"/><stop offset="1" stop-color="#477C8B"/></linearGradient>
+  <linearGradient id="infra-bridge" x2="0" y2="1"><stop stop-color="#89999B"/><stop offset="1" stop-color="#586B71"/></linearGradient>
+  <filter id="infra-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#infra-sky)"/><circle cx="258" cy="31" r="12" fill="#E9C66F" opacity=".6"/><path d="M0 101V53h43v48Zm43 0V35h43v66Zm175 0V47h43v54Zm43 0V29h43v72Z" fill="#82959A"/><path d="M9 62h12v14H9Zm21 0h12v14H30Zm25-15h12v14H55Zm21 0h12v14H76Zm153 16h12v14h-12Zm21-18h12v14h-12Zm22 0h12v14h-12Z" fill="#C8D6D4"/><path d="M0 103H304V192H0Z" fill="url(#infra-earth)"/></g>
+<g id="layer-context">
+  <path d="M0 110H304V134H0Z" fill="url(#infra-bridge)"/><path d="M18 105H286V111H18Z" fill="#4B5F67"/><path d="M33 112v36m55-36v42m128-42v42m55-42v36" fill="none" stroke="#65787D" stroke-width="7"/>
+  <path d="M0 149Q53 141 107 150T206 149Q261 140 304 149V192H0Z" fill="#685D50"/>
+  <path d="M8 163H97Q117 163 129 173Q141 183 157 173Q171 163 188 163H296" fill="none" stroke="#477F8E" stroke-width="10"/><path d="M7 160H97q22 0 34 13t27 0q15-13 31-13h109" fill="none" stroke="#80B9BC" stroke-width="2"/>
+  <path d="M22 153V132h37v19m218 0V132h21v21" fill="none" stroke="#D2B083" stroke-width="3"/>
+  <path d="M27 173h46v8H27Zm186 0h62v8h-62Z" fill="#4F7891" stroke="#C2A37B" stroke-width="1.2"/><path d="M37 177h24m163 0h38" fill="none" stroke="#E6C76F" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#infra-shadow)">
+  <path d="M13 95Q47 71 83 95m139 0q34-24 68 0" fill="none" stroke="#576F79" stroke-width="3"/><path d="M17 94Q48 77 79 94m147 0q31-17 61 0" fill="none" stroke="#D7DFD8" stroke-width="1.4"/>
+  <path d="M16 81v24m31-39v39m209-39v39m31-24v24" fill="none" stroke="#52656C" stroke-width="3"/>
+  <path d="M86 132V95h16v37m94 0V95h16v37" fill="#7B6755"/><path d="M83 96h22m88 0h22" fill="none" stroke="#D7BE97" stroke-width="2"/>
+  <path d="M39 173q0-13 12-13t12 13m157 0q0-14 13-14t13 14" fill="none" stroke="#D9C8A8" stroke-width="3"/>
+  <path d="M108 159q8-11 17 0v16h-17Zm70-1q9-12 18 0v17h-18Z" fill="#5A7080"/><path d="M111 160h11m68-1h11" fill="none" stroke="#E9D69F" stroke-width="1.3"/>
+</g>
+<g id="layer-details">
+  <path d="M10 187q13-5 25 0m49-1q12-5 24 0m103-3q12-5 23 0m45-2q12-5 23 0" fill="none" stroke="#BFA77E" stroke-width="1.3"/>
+  <path d="M13 105h72m146 0h57" fill="none" stroke="#E8D9B6" stroke-width="1.3"/>
+  <circle cx="94" cy="122" r="1.8" fill="#E9C66F"/><circle cx="208" cy="120" r="1.8" fill="#E9C66F"/><circle cx="147" cy="183" r="1.7" fill="#DCE8D7"/>
+  <path d="M118 174q10-6 19 0m33-1q9-6 17 0" fill="none" stroke="#B8E0D8" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M20 93q30-25 61-2m150 2q30-25 58-2" fill="none" stroke="#AEBBB4" stroke-width="1.2"/><path d="M116 158v17m62-16v17" fill="none" stroke="#D1B78E" stroke-width="1.1"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: brown hair (Noun phrase)
+  CONTEXTUAL_DEFINITION: Hair in a natural medium brown shade.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Choose a warm chestnut brown between black and blond, not copper red.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream portrait paper.
+    - Context_Layer: Muted shoulders.
+    - Focal_Layer: Medium-length chestnut hair framing face.
+    - Details_Layer: Rich brown locks and warm highlights.
+    - Lighting_Layer: Soft chestnut sheen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:brown hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="91" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="91" rx="102" ry="72" fill="#FEF3C7" opacity=".35"/><path d="M82 166Q89 133 121 125H184Q215 134 222 166Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M107 158Q100 127 101 88Q104 48 152 44Q201 48 203 88Q204 127 197 158Z" fill="#C98961" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M98 100Q94 52 126 38Q157 23 188 39Q213 54 207 101L202 147L185 157L183 91Q152 81 119 92L117 157L99 147Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 99Q129 94 139 99M164 99Q174 94 184 99" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 106Q130 109 138 106M166 106Q174 109 181 106" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M152 104L148 120L155 123M138 140Q152 146 167 139" fill="none" stroke="#805333" stroke-width="1.7"/>
+  <path d="M109 53Q125 36 143 36M191 52Q202 66 199 84M105 133L104 148M197 130L198 147" fill="none" stroke="#C99167" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="91" rx="61" ry="62" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 5" opacity=".44"/>
+</svg>

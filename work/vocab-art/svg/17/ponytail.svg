@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: ponytail (Noun)
+  CONTEXTUAL_DEFINITION: Hair gathered and tied at the back, with a tail hanging down.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait, three-quarter view
+  SYNONYM_GUARD: Make the hair elastic and pulled-back tail visible behind the head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Shoulders and neck.
+    - Focal_Layer: Side-view head with hair gathered at the back.
+    - Details_Layer: Visible tie and flowing ponytail.
+    - Lighting_Layer: Hair highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:ponytail" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="166" rx="94" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="88" rx="111" ry="71" fill="#FEF3C7" opacity=".35"/><path d="M74 166Q80 131 115 123H186Q220 132 228 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M198 81Q234 64 250 82Q262 96 253 115Q246 134 256 157Q244 172 232 160L225 130Q209 112 193 107Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.6"/>
+  <path d="M121 156Q108 128 110 91Q112 52 155 47Q196 50 199 88Q201 124 190 156Z" fill="#C98961" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M108 97Q104 50 151 39Q191 37 207 66L206 97Q191 77 171 72Q144 87 113 79Z" fill="#4A342F" stroke="#1E2A3B" stroke-width="2.7"/>
+  <circle cx="201" cy="88" r="7" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M151 92Q160 88 169 92M155 99Q162 102 168 99" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M179 94Q188 99 179 104" fill="none" stroke="#A86F45" stroke-width="1.8"/><path d="M156 122Q169 127 179 120" fill="none" stroke="#A95059" stroke-width="2"/>
+  <path d="M211 98Q230 90 245 94M214 108Q235 105 251 110M232 132Q238 145 247 154" fill="none" stroke="#C99167" stroke-width="2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M196 72Q216 63 235 70" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/>
+</svg>

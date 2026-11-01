@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: video on demand
+ CONTEXTUAL_DEFINITION: A viewer selects a program from on-screen choices and starts it whenever they want.
+ PEDAGOGICAL_ARCHETYPE: viewer choosing a program library and pressing play
+ SYNONYM_GUARD: Show an available program library and a chosen play option; distinguish from a scheduled broadcast channel.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A viewer aims a remote at three program thumbnails on the TV and selects one with a play symbol and a clock beside it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:video on demand" data-archetype="on-demand TV selection">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/><path d="M53 24H280Q286 24 286 30V139H53Z" fill="#26384A"/><path d="M62 32H278V131H62Z" fill="#405663"/><path d="M69 39H272V122H69Z" fill="#597D8B"/><path d="M143 139L149 147H174L180 139Z" fill="#64777C"/><path d="M132 147H191V152H132Z" fill="#26384A"/>
+  <path d="M0 72H38V159H0Z" fill="#E6E2D7"/>
+ </g>
+ <g id="layer-context">
+  <path d="M79 51H132V103H79Z" fill="#B85E5A"/><path d="M85 57H126V96H85Z" fill="#A8B69A"/><path d="M89 88Q103 70 121 88V96H89Z" fill="#798C72"/><circle cx="103" cy="69" r="6" fill="#D29A78"/>
+  <path d="M146 51H199V103H146Z" fill="#D6A64C"/><path d="M152 57H193V96H152Z" fill="#81939A"/><path d="M157 86Q170 66 188 86V96H157Z" fill="#597D8B"/>
+  <path d="M213 51H263V103H213Z" fill="#798C72"/><path d="M219 57H257V96H219Z" fill="#D7D1C3"/><path d="M220 89Q237 81 255 89V96H220Z" fill="#798C72"/>
+  <path d="M76 48H135V106H76Z" fill="none" stroke="#F6E5CE" stroke-width="2"/>
+  <path d="M80 111H260" stroke="#F6E5CE" stroke-width="1.3"/>
+  <circle cx="252" cy="44" r="12" fill="#F6E5CE" stroke="#D6A64C" stroke-width="1.6"/><path d="M252 36V44L257 48" fill="none" stroke="#26384A" stroke-width="1.6" stroke-linecap="round"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M18 101Q16 100 15 104V140Q15 144 20 144H39Q44 144 45 139L49 107Q49 103 45 101Z" fill="#26384A"/><circle cx="31" cy="112" r="4" fill="#D6A64C"/><circle cx="25" cy="126" r="2.6" fill="#F6E5CE"/><circle cx="34" cy="126" r="2.6" fill="#F6E5CE"/><circle cx="24" cy="136" r="2.2" fill="#798C72"/><circle cx="33" cy="136" r="2.2" fill="#B85E5A"/>
+  <path d="M46 105L69 90" stroke="#D6A64C" stroke-width="1.5" stroke-dasharray="2 3"/>
+  <path d="M99 70L110 77L99 84Z" fill="#F6E5CE" stroke="#26384A" stroke-width="1"/>
+ </g>
+ <g id="layer-details">
+  <path d="M86 60H124M153 60H190M220 60H255" stroke="#F6E5CE" stroke-width="1" opacity=".7"/><circle cx="118" cy="111" r="2" fill="#D6A64C"/><circle cx="128" cy="111" r="2" fill="#B85E5A"/><circle cx="138" cy="111" r="2" fill="#798C72"/>
+  <path d="M65 40L78 47M272 39L262 47" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="172" cy="56" rx="86" ry="32" fill="#E7C66B" opacity=".1"/><path d="M66 36L84 61M276 36L256 61" stroke="#FFF1C7" stroke-width="1.2" opacity=".56" fill="none"/><path d="M63 132H280" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

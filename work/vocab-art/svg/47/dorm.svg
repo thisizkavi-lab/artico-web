@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: dorm
+  CONTEXTUAL_DEFINITION: A shared sleeping room with several beds, often used by students or budget travelers.
+  PEDAGOGICAL_ART_DIRECTOR: Show one communal sleeping room with multiple single bunks, personal lockers, and bags underneath.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make this one shared bedroom, not an entire hostel building or a private hotel room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Two robust metal bunk-bed frames stand side by side in a large dorm room; four separate mattresses and small personal lockers are visible.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:dorm" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="dorm-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F1ECE1"/><stop offset="1" stop-color="#DED8C9"/></linearGradient>
+  <linearGradient id="dorm-frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8296A0"/><stop offset="1" stop-color="#4E6270"/></linearGradient>
+  <linearGradient id="dorm-linen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ECF2EE"/><stop offset="1" stop-color="#BFD0D2"/></linearGradient>
+  <filter id="dorm-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E5EBE3"/><path d="M20 18H284V157H20Z" fill="url(#dorm-wall)" stroke="#6E7A78" stroke-width="1.5"/><path d="M20 157H284V184H20Z" fill="#B8B8AB" stroke="#6E7A78" stroke-width="1.3"/><path d="M31 168H272" stroke="#E9E5DA" stroke-width="1.4"/><path d="M148 19V157" stroke="#C6C1B5" stroke-width="1.1"/><rect x="128" y="31" width="42" height="39" fill="#BBD5DA" stroke="#526274" stroke-width="1.5"/><path d="M149 31V70M128 50H170" stroke="#5C7480" stroke-width="1.3"/></g>
+ <g id="layer-context"><rect x="31" y="111" width="24" height="45" rx="3" fill="#8E9D9B" stroke="#40545E" stroke-width="1.4"/><rect x="60" y="111" width="24" height="45" rx="3" fill="#B89C79" stroke="#705A43" stroke-width="1.4"/><rect x="218" y="111" width="24" height="45" rx="3" fill="#8E9D9B" stroke="#40545E" stroke-width="1.4"/><rect x="247" y="111" width="24" height="45" rx="3" fill="#B89C79" stroke="#705A43" stroke-width="1.4"/><circle cx="49" cy="135" r="2" fill="#F2C14E"/><circle cx="236" cy="135" r="2" fill="#F2C14E"/></g>
+ <g id="layer-focal" filter="url(#dorm-shadow)"><g stroke="url(#dorm-frame)" stroke-width="4" stroke-linecap="round"><path d="M92 47V160M197 47V160M92 70H197M92 130H197M100 72V127M189 72V127"/></g><path d="M94 63H195V72H94Z" fill="url(#dorm-linen)" stroke="#4E6270" stroke-width="1.4"/><path d="M99 53H130V64H99Z" fill="#F8F5EA" stroke="#778A90" stroke-width="1.1"/><path d="M94 122H195V131H94Z" fill="url(#dorm-linen)" stroke="#4E6270" stroke-width="1.4"/><path d="M99 112H130V123H99Z" fill="#F8F5EA" stroke="#778A90" stroke-width="1.1"/><path d="M201 63H280V72H201Z" fill="url(#dorm-linen)" stroke="#4E6270" stroke-width="1.4"/><path d="M205 53H236V64H205Z" fill="#F8F5EA" stroke="#778A90" stroke-width="1.1"/><path d="M201 122H280V131H201Z" fill="url(#dorm-linen)" stroke="#4E6270" stroke-width="1.4"/><path d="M205 112H236V123H205Z" fill="#F8F5EA" stroke="#778A90" stroke-width="1.1"/><path d="M93 44H201M93 104H201M198 44H284M198 104H284" stroke="#384E5C" stroke-width="2"/><path d="M93 43H201M198 43H284" stroke="#D9E1E0" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M105 79H178M105 139H178M211 79H264M211 139H264" stroke="#E7F0EF" stroke-width="1.2"/><rect x="111" y="148" width="28" height="20" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.3"/><rect x="229" y="148" width="28" height="20" rx="4" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><path d="M119 148V143Q119 139 125 139Q131 139 131 143V148" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M237 148V143Q237 139 243 139Q249 139 249 143V148" fill="none" stroke="#1E2A3B" stroke-width="2"/><circle cx="130" cy="158" r="2" fill="#F2C14E"/><circle cx="248" cy="158" r="2" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><path d="M22 20H282" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><ellipse cx="186" cy="126" rx="100" ry="48" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".3"/></g>
+</svg>

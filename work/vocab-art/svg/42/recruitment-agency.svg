@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: recruitment agency
+  CONTEXTUAL_DEFINITION: A business that helps employers find workers and job seekers find suitable positions.
+  PEDAGOGICAL_ART_DIRECTOR: Show the agency as an intermediary connecting a candidate and an employer.
+  PEDAGOGICAL_ARCHETYPE: 3 - Matching / intermediary
+  SYNONYM_GUARD: Include three distinct roles—candidate, agency recruiter, and employer contact—rather than depicting an employer's internal hiring desk alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a candidate at x=39..88 on the left, a recruiter centered x=126..177 behind an agency desk, and an employer at x=216..264 on the right. Two clear connector arrows pass through the center recruiter; use paired profile cards to show matching.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:recruitment agency" data-archetype="recruitment-intermediary">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="agency-desk" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <linearGradient id="agency-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <radialGradient id="agency-halo"><stop stop-color="#FFF1B9" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="agency-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="24" y="24" width="256" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="109" y="101" width="86" height="37" rx="3" fill="url(#agency-desk)" stroke="#1E2A3B" stroke-width="1.5"/><path d="M29 141 H275" stroke="#64748B" stroke-width="1.1"/><path d="M52 119 V135 M252 119 V135" stroke="#64748B" stroke-width="2"/></g>
+  <g id="layer-focal" filter="url(#agency-shadow)"><path d="M34 121 Q36 100 47 94 L48 85 Q44 81 46 73 Q54 64 64 67 Q73 70 70 81 L67 89 Q80 95 82 119 L79 132 H38 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="60" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M52 74 Q54 66 61 66 Q69 67 72 74 Q65 70 58 71 Z" fill="#3D342D"/><path d="M123 100 Q125 77 138 71 L139 62 Q135 58 137 50 Q145 42 155 45 Q164 48 161 59 L158 67 Q172 72 174 99 L171 112 H127 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="151" cy="53" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M143 51 Q145 43 152 43 Q160 44 163 51 Q156 47 149 48 Z" fill="#242C3B"/><path d="M219 121 Q221 100 232 94 L233 85 Q229 81 231 73 Q239 64 249 67 Q258 70 255 81 L252 89 Q265 95 267 119 L264 132 H223 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="245" cy="76" rx="8" ry="10" fill="#C98562" stroke="#1E2A3B" stroke-width="1.1"/><path d="M237 74 Q239 66 246 66 Q254 67 257 74 Q250 70 243 71 Z" fill="#3D342D"/><rect x="73" y="89" width="27" height="26" rx="3" fill="url(#agency-card)" stroke="#64748B" stroke-width="1"/><circle cx="82" cy="98" r="4" fill="#D89A6C"/><path d="M77 108 Q78 101 82 101 Q87 101 88 108 Z" fill="#5479AC"/><rect x="204" y="89" width="27" height="26" rx="3" fill="url(#agency-card)" stroke="#64748B" stroke-width="1"/><circle cx="213" cy="98" r="4" fill="#C98562"/><path d="M208 108 Q209 101 213 101 Q218 101 219 108 Z" fill="#A8D4A2"/><path d="M99 101 C111 85 121 85 133 97 M171 97 C184 84 195 84 206 101" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-dasharray="3 3"/><path d="M128 91 L134 97 L125 99 M201 95 L207 101 L198 103" fill="none" stroke="#5479AC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M130 93 L139 102 M165 94 L157 102" stroke="#D89A6C" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="105" cy="70" r="2.2" fill="#F2C14E"/><circle cx="199" cy="70" r="2.2" fill="#A8D4A2"/><path d="M137 118 H167" stroke="#FFE2A8" stroke-width="1.1"/><path d="M127 69 Q151 62 174 69" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="85" rx="101" ry="66" fill="url(#agency-halo)" opacity=".22"/><path d="M115 31 H189" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

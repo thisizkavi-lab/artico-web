@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: doll (Noun)
+  CONTEXTUAL_DEFINITION: A child's toy made in the shape of a person.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: A single human-shaped play doll is the focus, separate from a house for dolls, stuffed animals, or a teddy bear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Child's bedroom with a simple window.
+    - Context_Layer: Small play rug and toy shelf.
+    - Focal_Layer: Upright cloth doll with human face, dress, arms, and legs.
+    - Details_Layer: Yarn hair, stitched features, and shoes.
+    - Lighting_Layer: Gentle studio-like glow around the doll.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:doll" data-archetype="hero-object">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="doll-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="doll-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#doll-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M23 31H107V92H23Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M65 32V91M24 61H106" stroke="#FFFFFF" stroke-width="2.5"/><path d="M205 49H274V104H205Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.6"/><path d="M211 59H267M211 69H260" stroke="#F7EBCF" stroke-width="2"/><rect x="215" y="104" width="8" height="24" fill="#8D765A"/><rect x="258" y="104" width="8" height="24" fill="#8D765A"/></g>
+  <g id="layer-context"><ellipse cx="151" cy="159" rx="72" ry="10" fill="#C9B99F" opacity=".62"/><path d="M84 160Q105 143 125 157M180 158Q201 141 223 157" fill="none" stroke="#91A77C" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#doll-shadow)"><circle cx="151" cy="47" r="27" fill="#D9A77D" stroke="#1E2A3B" stroke-width="2"/><path d="M126 47Q119 22 143 17Q167 11 178 31L176 46Q164 32 151 32Q138 31 126 47Z" fill="#A95059" stroke="#1E2A3B" stroke-width="2"/><path d="M126 31Q116 35 124 54M174 29Q187 38 177 55M131 20Q128 10 138 11M152 20Q149 8 160 10M168 24Q177 14 181 23" fill="none" stroke="#A95059" stroke-width="4" stroke-linecap="round"/><circle cx="143" cy="48" r="2.2" fill="#1E2A3B"/><circle cx="160" cy="48" r="2.2" fill="#1E2A3B"/><path d="M145 60Q152 65 159 60" fill="none" stroke="#A95059" stroke-width="1.8" stroke-linecap="round"/><path d="M138 74Q151 67 164 74L176 112L168 124H134L126 112Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2"/><path d="M137 76L123 80L113 112Q111 118 117 120Q123 122 126 116L138 94M165 76L179 80L189 112Q191 118 185 120Q179 122 176 116L164 94" fill="#D9A77D" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/><path d="M134 123L130 152Q130 158 137 158H147L151 124M160 123L164 152Q164 158 157 158H148L151 124" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M129 155Q136 151 147 155L148 162H126Q124 158 129 155ZM153 155Q162 151 169 155Q174 158 171 162H151Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M139 77Q151 83 164 77M137 84Q151 90 166 84" fill="none" stroke="#F6B0A8" stroke-width="1.7"/><circle cx="151" cy="75" r="4" fill="#D9A441" stroke="#A95059" stroke-width="1.2"/><path d="M114 119L119 123M185 119L180 123" stroke="#F3C29B" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="91" rx="51" ry="78" fill="#FEF9C3" opacity=".13"/><path d="M126 26Q151 12 174 26" fill="none" stroke="#F6D68B" stroke-width="2.4" stroke-linecap="round" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: bucket and shovel / pail and shovel (Noun)
+  CONTEXTUAL_DEFINITION: A child's plastic bucket and small hand shovel used to build in beach sand.
+  PEDAGOGICAL_ART_DIRECTOR: Show both objects together, with sand in the bucket and the shovel clearly separate.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete objects
+  SYNONYM_GUARD: The pair is a toy pail and hand spade for sand, not a cleaning bucket or garden spade.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Coral pail with handle and damp sand, a small blue shovel resting beside it on the beach.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:bucket and shovel / pail and shovel" data-archetype="beach-bucket-shovel">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="bs-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="bs-pail" x2="0" y2="1"><stop stop-color="#F19A5B"/><stop offset="1" stop-color="#C65540"/></linearGradient><linearGradient id="bs-shovel" x2="0" y2="1"><stop stop-color="#75C4C0"/><stop offset="1" stop-color="#3A8296"/></linearGradient><filter id="bs-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bs-sky)"/><path d="M0 112Q80 98 154 113T304 107V192H0Z" fill="#B7C6A3"/><path d="M0 147H304V192H0Z" fill="#E7D09D"/></g>
+ <g id="layer-context"><circle cx="249" cy="42" r="14" fill="#EBC86F" opacity=".8"/><path d="M20 111L37 69L54 111ZM257 107L275 59L293 107Z" fill="#66836F"/><path d="M24 169H280" fill="none" stroke="#D4B982" stroke-width="1.2"/><ellipse cx="150" cy="158" rx="82" ry="5" fill="#90734D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#bs-shadow)">
+  <path d="M71 92H142L132 151Q108 160 82 151Z" fill="url(#bs-pail)" stroke="#984C3D" stroke-width="1.7"/><path d="M75 92Q106 84 139 92L135 102Q105 108 74 101Z" fill="#F5B26D" stroke="#984C3D" stroke-width="1.3"/><path d="M82 101L132 102L128 145Q108 151 87 145Z" fill="#D7834B"/>
+  <path d="M80 91Q81 64 107 64Q135 64 136 91" fill="none" stroke="#536E70" stroke-width="3.3"/><path d="M81 91Q85 69 107 69Q130 69 135 91" fill="none" stroke="#FFD08C" stroke-width="1.1"/>
+  <path d="M84 93Q107 88 130 93" fill="none" stroke="#E8D5A7" stroke-width="1.3"/><path d="M92 88L101 75L111 88Z" fill="#C9A16A"/><path d="M98 88L108 73L118 88Z" fill="#E4C28C"/>
+  <path d="M191 77L205 81L175 130L166 125Z" fill="url(#bs-shovel)" stroke="#315F73" stroke-width="1.5"/><path d="M163 124Q171 117 182 124L178 140Q169 146 160 138Z" fill="#4F7F9D" stroke="#315F73" stroke-width="1.4"/><path d="M198 72q7-3 12 3l-4 7-14-4Z" fill="#D7834B" stroke="#8D563D" stroke-width="1"/>
+  <path d="M170 131l-4 4m9-5-4 7m7-6-3 7" fill="none" stroke="#D2E5DE" stroke-width="1"/>
+ </g>
+ <g id="layer-details"><path d="M82 106l4 34m7-32 3 35m27-34-3 34" fill="none" stroke="#F4B177" stroke-width="1.2"/><path d="M191 82L175 111m-12 17 7 8" fill="none" stroke="#C9E9DF" stroke-width="1.1"/><circle cx="249" cy="42" r="1.3" fill="#FFF8E7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M74 94Q105 87 138 94M193 81L178 108" fill="none" stroke="#FFF0CB" stroke-width="1.2" opacity=".65"/><circle cx="107" cy="90" r="1.2" fill="#FFF8E7"/></g>
+</svg>

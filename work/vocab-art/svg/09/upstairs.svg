@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: upstairs (Adverb)
+  CONTEXTUAL_DEFINITION: Toward or on an upper floor of a building.
+  PEDAGOGICAL_ARCHETYPE: 5 (Spatial layout and movement diagram)
+  SYNONYM_GUARD: Show a person climbing an indoor staircase toward a clearly higher landing, with an upward direction cue.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two-level home interior section.
+    - Context_Layer: Lower floor and raised upper landing.
+    - Focal_Layer: Steps rise toward the upstairs landing as a person climbs.
+    - Details_Layer: Wall rail and open doorway above.
+    - Lighting_Layer: Warm light marks the higher floor.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:upstairs" data-archetype="spatial-movement">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#ECE8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 149 L84 149 L84 126 L104 126 L104 103 L124 103 L124 80 L144 80 L144 57 L164 57 L164 34 L224 34 L224 57 L304 57 L304 192 L0 192Z" fill="#D7C5AA"/><path d="M0 149 L84 149 M164 57 L304 57" stroke="#B97840" stroke-width="2"/><ellipse cx="158" cy="168" rx="111" ry="8" fill="#BCA889"/></g>
+  <g id="layer-context"><path d="M92 146 L92 124 L112 124 L112 101 L132 101 L132 78 L152 78 L152 55 L172 55 L172 51 L196 51" fill="none" stroke="#8A5A35" stroke-width="5" stroke-linejoin="round"/><path d="M203 56 L203 37 L225 37 L225 57" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M115 142 L160 92" fill="none" stroke="#8A5A35" stroke-width="3"/><path d="M132 115 Q146 103 160 94" fill="none" stroke="#B97840" stroke-width="2"/><path d="M177 92 L177 44" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M167 55 L177 41 L187 55" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal"><path d="M124 102 Q124 94 132 93 Q140 94 140 102 L137 109 L127 109Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.4"/><path d="M124 101 Q125 91 133 92 Q138 92 140 97 Q134 95 130 97Z" fill="#27364B"/><path d="M126 109 Q134 106 141 112 L145 125 Q142 132 134 133 L126 127 L123 118Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.6"/><path d="M128 112 L120 106 L115 109 M139 113 L147 105" fill="none" stroke="#D89A6C" stroke-width="3.8" stroke-linecap="round"/><path d="M130 130 L129 140 L140 140 M140 129 L148 135 L158 135" fill="none" stroke="#27364B" stroke-width="4.5" stroke-linecap="round"/><path d="M125 140 L138 140 M153 135 L163 135" stroke="#1E2A3B" stroke-width="2.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M230 72 L230 51 M241 72 L241 59" stroke="#8A5A35" stroke-width="3"/><circle cx="235" cy="47" r="13" fill="#7FB07A"/><circle cx="260" cy="38" r="13" fill="#F2C14E" opacity="0.45"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

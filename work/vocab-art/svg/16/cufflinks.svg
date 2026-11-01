@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: cufflinks (Noun, plural)
+  CONTEXTUAL_DEFINITION: Pair of small ornamental fasteners for shirt cuffs.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: Show two matching studs, one securing each folded shirt cuff.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: Two muted white cuff ends.
+    - Focal_Layer: Pair of gold cufflinks with blue inset stones.
+    - Details_Layer: Short toggle bars at cuff openings.
+    - Lighting_Layer: Soft highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:cufflinks" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="157" rx="108" ry="15" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="97" rx="123" ry="56" fill="#FEF3C7" opacity=".36"/>
+  <path d="M37 68Q78 58 127 75L126 133Q76 144 36 128Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.3"/>
+  <path d="M177 75Q227 58 267 68L268 128Q227 144 178 133Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.3"/>
+  <path d="M43 76Q80 70 119 82L117 123Q80 132 43 122ZM184 82Q223 70 261 76L261 122Q223 132 185 123Z" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.5"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <g fill="#D9A441" stroke="#1E2A3B" stroke-width="2.6"><circle cx="92" cy="101" r="18"/><circle cx="213" cy="101" r="18"/></g>
+  <g fill="#5479AC" stroke="#805A19" stroke-width="1.6"><circle cx="92" cy="101" r="10"/><circle cx="213" cy="101" r="10"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M106 101L119 101L123 107L119 113L106 113ZM199 101L186 101L182 107L186 113L199 113Z" fill="#D9A441" stroke="#805A19" stroke-width="1.6"/>
+  <circle cx="89" cy="98" r="3" fill="#C7D9F0"/><circle cx="210" cy="98" r="3" fill="#C7D9F0"/>
+  <path d="M51 81L69 79M235 79L252 81" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M112 146Q153 160 194 146" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: fly (verb)
+  CONTEXTUAL_DEFINITION: A bird moving through the air with wings spread and an upward-forward trajectory.
+  PEDAGOGICAL_ARCHETYPE: 5 - Action shown with trajectory and wind
+  SYNONYM_GUARD: Show the bird clearly airborne with a steep diagonal travel path and wind trail; use level unmarked wings for glide and repeated up/down positions for flap.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a small chestnut bird at x=133..195 y=68..124 heading upper right; wings spread, tail trailing lower left, dotted curved flight path from x=64 y=147 to x=226 y=42 and pale wind strokes.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:fly" data-archetype="airborne-bird-flight">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#B77B4B;--c-secondary:#694834;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="fly-sky" x2="0" y2="1"><stop stop-color="#D5E8F2"/><stop offset="1" stop-color="#F7F2E7"/></linearGradient>
+  <linearGradient id="fly-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D69A5B"/><stop offset="1" stop-color="#87573A"/></linearGradient>
+  <linearGradient id="fly-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D7E4DF"/><stop offset="1" stop-color="#758E92"/></linearGradient>
+  <filter id="fly-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fly-sky)"/><path d="M0 151Q84 139 158 152T304 144V192H0Z" fill="#E1E8D9"/><path d="M0 169Q84 160 161 170T304 164V192H0Z" fill="#CEDBC4"/><circle cx="65" cy="43" r="24" fill="#F4D992" opacity=".48"/><path d="M19 119q18-8 34-3m-24 13q14-5 24-2" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".7" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M64 147Q123 114 171 83Q208 59 246 36" fill="none" stroke="#D29D4A" stroke-width="1.7" stroke-dasharray="3 5"/><path d="M230 39l17-4-5 17" fill="none" stroke="#D29D4A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M49 153l-4-12m210-107 5-12" fill="none" stroke="#82946F" stroke-width="1.3"/><ellipse cx="151" cy="155" rx="50" ry="4" fill="#65735F" opacity=".08"/></g>
+ <g id="layer-focal" filter="url(#fly-shadow)"><path d="M131 99Q139 81 163 78Q184 79 193 95Q191 111 173 120Q150 119 136 111Z" fill="url(#fly-coat)" stroke="#68462E" stroke-width="1.4"/><path d="M174 87Q195 75 212 66L201 91L181 100Z" fill="url(#fly-wing)" stroke="#5A7783" stroke-width="1.2"/><path d="M158 85Q157 63 164 48Q177 52 181 80Z" fill="#D8E4DF" stroke="#718C91" stroke-width="1.1"/><path d="M139 99L112 106L92 117L123 113L145 107Z" fill="#9A6545" stroke="#694834" stroke-width="1.1"/><circle cx="177" cy="79" r="13" fill="url(#fly-coat)" stroke="#68462E" stroke-width="1.2"/><path d="M188 78L204 72L193 85Z" fill="#D49A47" stroke="#94642F" stroke-width=".9"/><circle cx="180" cy="76" r="2" fill="#1E2A3B"/><path d="M145 107l-7 10m16-7-3 11m19-10 3 10" fill="none" stroke="#745139" stroke-width="1.8" stroke-linecap="round"/><path d="M163 82q7-3 13-1m-22 22q9 5 18 4" fill="none" stroke="#F0D2A3" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M106 81q-12 3-18 10m99-36q9-7 15-8m14-7q8-4 13-4" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75" stroke-linecap="round"/><circle cx="224" cy="59" r="1.4" fill="#FFFFFF"/><circle cx="90" cy="131" r="1.3" fill="#DCCCA8"/><circle cx="235" cy="49" r="1.2" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M144 87q9-10 21-8m4-14q3-10 8-12" fill="none" stroke="#FFE2B8" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="165" cy="95" rx="42" ry="25" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

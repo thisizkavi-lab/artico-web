@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: go straight on
+  CONTEXTUAL_DEFINITION: Continue straight through the junction without turning left or right.
+  PEDAGOGICAL_ART_DIRECTOR: Draw a top-down four-way intersection and a straight cobalt route that crosses it vertically while both side branches remain muted.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: The selected path must pass through the junction without any bend or side turn.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Crossroads center at (151,96); active north-south road from y=174 to y=18, muted cross street at y=64..128; vehicle points upward and arrow continues past the crossing.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:go straight on" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="straighton-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#65768A"/><stop offset="1" stop-color="#46586D"/></linearGradient>
+    <linearGradient id="straighton-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E3ECDC"/><stop offset="1" stop-color="#C8D9C1"/></linearGradient>
+    <radialGradient id="straighton-crossing"><stop stop-color="#F2C14E" stop-opacity=".35"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="straighton-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#straighton-land)"/><path d="M104 0H199V192H104Z" fill="url(#straighton-road)"/><path d="M0 61H304V130H0Z" fill="url(#straighton-road)"/><path d="M110 0V192M193 0V192M0 67H304M0 124H304" stroke="#FAF8F3" stroke-width="2"/><path d="M151 0V192M0 96H304" stroke="#FAF8F3" stroke-width="1.5" stroke-dasharray="9 9" opacity=".65"/></g>
+  <g id="layer-context"><rect x="17" y="21" width="57" height="28" rx="4" fill="#D7B895" stroke="#716254" stroke-width="1.6"/><rect x="227" y="23" width="58" height="27" rx="4" fill="#A8BFCE" stroke="#52697A" stroke-width="1.6"/><rect x="18" y="145" width="55" height="28" rx="4" fill="#A9C4AB" stroke="#56735A" stroke-width="1.6"/><rect x="230" y="145" width="57" height="28" rx="4" fill="#DAB995" stroke="#716254" stroke-width="1.6"/><circle cx="43" cy="91" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="263" cy="101" r="12" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M105 61H199M105 130H199" stroke="#F3F0E7" stroke-width="5" stroke-dasharray="3 5"/></g>
+  <g id="layer-focal" filter="url(#straighton-shadow)"><ellipse cx="151" cy="96" rx="58" ry="75" fill="url(#straighton-crossing)"/><path d="M152 172V23" stroke="#FFFFFF" stroke-width="23" stroke-linecap="round"/><path d="M152 172V23" stroke="#4A72B2" stroke-width="14" stroke-linecap="round"/><path d="M135 43L152 14L169 43Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2"/><path d="M152 156C139 149 138 133 152 128C166 133 165 149 152 156Z" fill="#E2A47A" stroke="#1E2A3B" stroke-width="1.7"/><path d="M142 154L138 170H149L153 158L160 171H171L161 151" fill="#344A62" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M95 38V154M208 38V154" stroke="#A6B4B5" stroke-width="2" stroke-dasharray="4 7"/><path d="M135 59H169M135 75H169M135 117H169" stroke="#D4E1F0" stroke-width="1.4" stroke-dasharray="3 6"/><circle cx="152" cy="96" r="5" fill="#F2C14E" stroke="#FFFFFF" stroke-width="1.6"/><path d="M117 57V76M186 116V135" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/></g>
+  <g id="layer-lighting"><path d="M110 5V44M193 5V44" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="152" cy="179" rx="25" ry="4" fill="#28384C" opacity=".34"/><circle cx="152" cy="96" r="64" fill="none" stroke="#FFF4D0" stroke-width="1.3" opacity=".65"/></g>
+</svg>

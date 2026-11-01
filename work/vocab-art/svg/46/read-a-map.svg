@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: read a map
+  CONTEXTUAL_DEFINITION: Look at a map and interpret its roads and landmarks to understand a place.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler holding a large folded street map open in both hands and studying its route grid.
+  PEDAGOGICAL_ARCHETYPE: 4 - Human travel interaction
+  SYNONYM_GUARD: Focus on looking at and understanding the folded map, not drawing a planned route on a tabletop.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Traveler stands centered at (151,103); open zigzag-fold map spans x=68..235, y=71..129; eyes angle down toward the visible road grid.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:read a map" data-archetype="human-action">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="readbackdrop" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF2E6"/><stop offset="1" stop-color="#D1E0CC"/></linearGradient>
+    <linearGradient id="readmap" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FBFAF0"/><stop offset="1" stop-color="#DDE9D9"/></linearGradient>
+    <radialGradient id="readglow"><stop stop-color="#F2C14E" stop-opacity=".3"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="readshadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#readbackdrop)"/><path d="M0 164Q78 153 154 165T304 161V192H0Z" fill="#E8E1D6"/><path d="M0 164Q78 153 154 165T304 161" fill="none" stroke="#A39B8D" stroke-width="1.4"/></g>
+  <g id="layer-context"><circle cx="43" cy="64" r="16" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><circle cx="263" cy="64" r="18" fill="#7FA87B" stroke="#486750" stroke-width="1.7"/><rect x="16" y="105" width="50" height="34" rx="4" fill="#D7B995" stroke="#746454" stroke-width="1.5"/><rect x="239" y="108" width="48" height="31" rx="4" fill="#A8C1CE" stroke="#536A7B" stroke-width="1.5"/><path d="M28 75H61M247 77H280" stroke="#F6F3EA" stroke-width="1.6"/></g>
+  <g id="layer-focal" filter="url(#readshadow)"><ellipse cx="151" cy="112" rx="84" ry="63" fill="url(#readglow)"/><path d="M122 56C112 45 116 31 132 28C148 31 151 47 140 57L145 70H122Z" fill="#D7A47A" stroke="#1E2A3B" stroke-width="2.1"/><path d="M118 47Q126 35 141 43L145 52L117 53Z" fill="#4E5D6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M124 41Q132 38 140 42" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="126" cy="48" r="1.3" fill="#1E2A3B"/><circle cx="137" cy="48" r="1.3" fill="#1E2A3B"/><path d="M105 67Q151 50 197 67L211 139H92Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.5"/><path d="M111 77L79 94L85 104L117 91M191 77L222 93L216 104L185 91" fill="#D7A47A" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M72 87L151 73L235 87L227 125L151 137L65 123Z" fill="url(#readmap)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M111 80L105 130M151 74L151 137M193 80L197 131" stroke="#82978B" stroke-width="1.4"/><path d="M80 102L129 95L151 106L180 94L224 102M93 119L128 112L153 121L192 111" fill="none" stroke="#64798A" stroke-width="4.1" stroke-linecap="round"/><path d="M80 102L129 95L151 106L180 94L224 102" fill="none" stroke="#FAF8F3" stroke-width="1.1" stroke-dasharray="3 4"/><circle cx="153" cy="106" r="4.5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M87 88L111 84M189 85L217 91" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M105 141H197" stroke="#355B8D" stroke-width="2"/><circle cx="129" cy="119" r="2.2" fill="#FFFFFF"/><circle cx="182" cy="121" r="2.2" fill="#FFFFFF"/><ellipse cx="151" cy="162" rx="43" ry="5" fill="#9C9A8F" opacity=".42"/><path d="M142 60Q151 66 160 60" fill="none" stroke="#F2C14E" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><path d="M107 68Q151 53 195 68" fill="none" stroke="#B7D2EB" stroke-width="1.3"/><path d="M76 91L151 77L232 91" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="151" cy="109" rx="91" ry="68" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".45"/></g>
+</svg>

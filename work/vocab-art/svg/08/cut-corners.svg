@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: cut corners (Phrase)
+  CONTEXTUAL_DEFINITION: To do something cheaply or carelessly by skipping important steps.
+  PEDAGOGICAL_ARCHETYPE: 2 (A rushed shortcut causes a visibly weak result)
+  SYNONYM_GUARD: A builder trims away supports and corners to save effort; the finished wobbly stool shows the cost of the shortcut.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Workshop floor and a tool bench.
+    - Context_Layer: Builder holds a saw beside a rough board.
+    - Focal_Layer: Unfinished stool with clipped seat corners and missing braces.
+    - Details_Layer: Offcuts and loose joint.
+    - Lighting_Layer: Uneven light signals an incomplete job.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:cut corners" data-archetype="action-tool">
+  <defs><linearGradient id="workshop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F2ECE1"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#workshop)"/><path d="M0 148 Q152 141 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><path d="M19 151 L285 151" stroke="#C88446" stroke-width="3"/><ellipse cx="157" cy="164" rx="110" ry="8" fill="#DDD4C3"/><rect x="22" y="32" width="72" height="27" rx="4" fill="#D8CDAF" stroke="#8D552E" stroke-width="1.5"/><path d="M30 44 L85 44" stroke="#8D552E" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M26 151 Q28 131 44 128 Q60 131 62 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><circle cx="44" cy="115" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M30 114 Q31 98 45 100 Q57 101 58 115 Q50 108 42 109Z" fill="#27364B"/><path d="M38 117 Q44 121 50 117" fill="none" stroke="#A34F47" stroke-width="1.5"/><path d="M55 136 Q72 130 85 118 L91 123 Q82 139 64 146" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M83 119 Q89 112 95 115 L99 119 L92 125 L86 125Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M65 80 L100 53" stroke="#64748B" stroke-width="6" stroke-linecap="round"/><path d="M94 49 L107 52 L102 64 L97 59Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <g id="layer-focal"><path d="M132 86 L211 86 L227 102 L118 102Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M132 87 L147 102 M211 87 L196 102" stroke="#8D552E" stroke-width="2"/><path d="M129 102 L121 151 L133 151 L144 104 M207 102 L218 151 L230 151 L216 102" fill="#B97840" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M151 103 L150 151 L161 151 L166 104 M184 104 L188 151 L198 151 L196 103" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M128 128 L216 128" stroke="#8D552E" stroke-width="2"/><path d="M119 102 L129 91 M215 91 L226 102" stroke="#CE3D4E" stroke-width="2.4" stroke-dasharray="3 3"/></g>
+  <g id="layer-details"><path d="M100 128 L113 115 L124 127 L114 139Z" fill="#D8CDAF" stroke="#8D552E" stroke-width="1.6"/><path d="M227 63 L232 53 L237 63 L247 68 L237 73 L232 83 L227 73 L217 68Z" fill="#F2C14E"/><path d="M143 115 Q151 119 159 115 M179 116 Q187 120 195 116" fill="none" stroke="#CE3D4E" stroke-width="2" stroke-linecap="round"/><path d="M89 91 L95 85 M102 102 L108 96" stroke="#D97706" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M122 87 L210 87 M124 104 L219 104" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

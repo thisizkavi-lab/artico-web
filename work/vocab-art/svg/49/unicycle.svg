@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: unicycle (Noun)
+  CONTEXTUAL_DEFINITION: A one-wheeled pedal vehicle with a seat and pedals, ridden upright.
+  PEDAGOGICAL_ART_DIRECTOR: Show a balanced rider above one centered wheel with a single saddle post and pedals on either side.
+  PEDAGOGICAL_ARCHETYPE: 4 - Agent-to-vehicle action
+  SYNONYM_GUARD: The vehicle has exactly one wheel and no handlebars; it is not a bicycle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Upright performer balances on one large wheel, seated on a narrow saddle, feet on two crank pedals and arms extended.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:unicycle" data-archetype="one-wheel-bicycle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="uc-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="uc-frame" x2="1" y2="1"><stop stop-color="#83ACB0"/><stop offset="1" stop-color="#426C7F"/></linearGradient><linearGradient id="uc-shirt" x2="0" y2="1"><stop stop-color="#D98855"/><stop offset="1" stop-color="#A95D43"/></linearGradient><filter id="uc-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#uc-sky)"/><path d="M0 111Q78 92 154 110T304 103V192H0Z" fill="#A9B994"/><path d="M0 154H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M22 112L40 66L58 112ZM249 108L269 58L289 108Z" fill="#527764"/><path d="M25 169H279" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="152" cy="158" rx="46" ry="6" fill="#34483D" opacity=".15"/><path d="M46 150h19m178 0h19" fill="none" stroke="#C7B58E" stroke-width="1"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#uc-shadow)">
+  <circle cx="152" cy="127" r="29" fill="none" stroke="#344A50" stroke-width="4"/><circle cx="152" cy="127" r="23" fill="none" stroke="#AABAB0" stroke-width="1.3"/><circle cx="152" cy="127" r="3.5" fill="#D7834B"/>
+  <path d="M152 127L150 79" fill="none" stroke="url(#uc-frame)" stroke-width="4.5" stroke-linecap="round"/><path d="M138 79Q151 73 165 79L164 84H139Z" fill="#344A50"/><path d="M141 78Q151 75 161 78" fill="none" stroke="#8DA6A1" stroke-width="1.3"/>
+  <path d="M152 127L130 137M152 127L174 137M130 137h-8m52 0h8" fill="none" stroke="#536E70" stroke-width="2.7" stroke-linecap="round"/><path d="M119 138h10m53 0h10" fill="none" stroke="#D7834B" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="151" cy="42" r="8" fill="#D39A72" stroke="#714E3E" stroke-width="1"/><path d="M143 43Q144 33 152 34Q160 35 159 44Q151 40 143 43Z" fill="#394648"/>
+  <path d="M142 55Q151 51 160 57L166 78L153 86L139 73Z" fill="url(#uc-shirt)" stroke="#8D563D" stroke-width="1.2"/>
+  <path d="M143 59L124 49L106 38M159 59L178 48L198 38" fill="none" stroke="#D39A72" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140 73L132 98L130 135M161 73L170 99L174 135" fill="none" stroke="#354A50" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M105 38l-7-3m102 3 8-3" fill="none" stroke="#D39A72" stroke-width="3" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M133 128A19 19 0 0 1 148 111M156 111A19 19 0 0 1 171 128" fill="none" stroke="#E6ECE0" stroke-width="1.2"/><path d="M146 87l6 3m-21 26-4 8m43-8 4 8" fill="none" stroke="#E7F0E7" stroke-width="1.1"/><path d="M107 38l5 2m79-2-5 2" fill="none" stroke="#F4E1C7" stroke-width="1.2"/><circle cx="152" cy="126" r="1.2" fill="#FFF8E7"/></g>
+ <g id="layer-lighting"><path d="M133 127A19 19 0 0 1 148 112M138 78Q151 74 163 78" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".52"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M144 55Q151 52 158 56" fill="none" stroke="#F4E3C8" stroke-width="1.2" opacity=".7"/></g>
+</svg>

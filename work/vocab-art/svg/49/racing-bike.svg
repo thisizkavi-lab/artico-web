@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: racing bike (Noun)
+  CONTEXTUAL_DEFINITION: A light road bicycle with narrow tires and curved drop handlebars for speed.
+  PEDAGOGICAL_ART_DIRECTOR: Draw a slim road bike in profile, emphasizing thin tires, light frame, and curled drop bars.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a pedal bicycle for paved-road speed, not a mountain bike with broad knobby tires.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Slim graphite and blue road bike on a paved lane, fine wheels, drop handlebars curled downward.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:racing bike" data-archetype="road-racing-bicycle">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="rb-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="rb-frame" x2="1" y2="1"><stop stop-color="#83ACB0"/><stop offset="1" stop-color="#426C7F"/></linearGradient><linearGradient id="rb-road" x2="0" y2="1"><stop stop-color="#A48E6B"/><stop offset="1" stop-color="#755D48"/></linearGradient><filter id="rb-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rb-sky)"/><path d="M0 132Q70 116 150 130T304 126V192H0Z" fill="#A9B994"/><path d="M0 153H304V192H0Z" fill="url(#rb-road)"/></g>
+ <g id="layer-context"><path d="M21 130L37 88L53 130ZM251 128L269 77L287 128Z" fill="#5E7A65"/><path d="M22 169H279" fill="none" stroke="#D8C69E" stroke-width="1.2"/><path d="M34 158h29m24 0h29m111 0h29" fill="none" stroke="#F5E8C2" stroke-width="1.4" stroke-dasharray="12 8"/><ellipse cx="151" cy="158" rx="104" ry="5" fill="#34483D" opacity=".13"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#rb-shadow)">
+  <circle cx="67" cy="126" r="27" fill="none" stroke="#344A50" stroke-width="2.5"/><circle cx="235" cy="126" r="27" fill="none" stroke="#344A50" stroke-width="2.5"/><circle cx="67" cy="126" r="23" fill="none" stroke="#AABAB0" stroke-width="1"/><circle cx="235" cy="126" r="23" fill="none" stroke="#AABAB0" stroke-width="1"/>
+  <path d="M67 126L119 126L99 91L67 126M99 91L164 91L119 126L67 126M119 126L164 91L235 126" fill="none" stroke="url(#rb-frame)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M164 91L178 66L198 66M235 126L225 91L211 68" fill="none" stroke="#536E70" stroke-width="2.3" stroke-linecap="round"/>
+  <path d="M190 66h13q8 0 8 8v13q0 7-8 7h-7q-6 0-6-6v-4q0-4 5-4h8" fill="none" stroke="#425D60" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M158 91L165 78L185 78M115 126h-11M119 122v8" fill="none" stroke="#364D51" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="119" cy="126" r="4" fill="#D7834B"/><path d="M114 126H102M119 121v10" fill="none" stroke="#344A50" stroke-width="1.7"/><circle cx="177" cy="106" r="1.5" fill="#FFF8E7"/>
+ </g>
+ <g id="layer-details"><path d="M48 122A20 20 0 0 1 63 105M216 122A20 20 0 0 1 231 105" fill="none" stroke="#E6ECE0" stroke-width="1.2"/><path d="M87 153h14m13 0h13m104 0h15m14 0h9" fill="none" stroke="#E8D8B7" stroke-width="1.1"/><path d="M102 94l10 1m47-2 8-4M191 69h8" fill="none" stroke="#E7F0E7" stroke-width="1.1"/><path d="M32 70h22m-15-8h15M245 62h24" fill="none" stroke="#FFF8E7" stroke-width="1.4" opacity=".7"/></g>
+ <g id="layer-lighting"><path d="M49 121A20 20 0 0 1 63 106M217 121A20 20 0 0 1 231 106" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".5"/><path d="M100 91L156 91" fill="none" stroke="#D9EEE6" stroke-width="1" opacity=".7"/><path d="M24 22H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+</svg>

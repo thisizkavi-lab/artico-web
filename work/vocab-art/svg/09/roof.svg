@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: roof (Noun)
+  CONTEXTUAL_DEFINITION: The top covering of a house or building.
+  PEDAGOGICAL_ARCHETYPE: 2 (Part-of-building focus callout)
+  SYNONYM_GUARD: Ghost the house walls and windows while highlighting the pitched roof and its shingles.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale sky and muted house body.
+    - Context_Layer: Faded walls and windows establish the whole house.
+    - Focal_Layer: Saturated roof planes and ridge cover the building.
+    - Details_Layer: Shingle rows and chimney.
+    - Lighting_Layer: Warm halo around the roof.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:roof" data-archetype="building-part-focus">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 150 Q152 140 304 150 L304 192 L0 192Z" fill="#B7CEA9"/><ellipse cx="152" cy="167" rx="107" ry="7" fill="#9DB58F"/><path d="M94 83 L210 83 L210 151 L94 151Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2" opacity="0.72"/><rect x="108" y="105" width="29" height="25" fill="#DCECFB" opacity="0.6"/><rect x="166" y="105" width="29" height="25" fill="#DCECFB" opacity="0.6"/><rect x="139" y="111" width="25" height="40" fill="#AEB9C6" opacity="0.7"/></g>
+  <g id="layer-context"><path d="M71 86 L151 33 L233 86 L222 96 L151 53 L82 96Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M71 86 L151 33 L151 53 L82 96Z" fill="#5479AC"/><path d="M151 33 L233 86 L222 96 L151 53Z" fill="#8B5CA8"/><path d="M202 54 L202 29 L216 29 L216 77 L204 69Z" fill="#D59A55" stroke="#1E2A3B" stroke-width="1.8"/><path d="M199 29 L219 29 L219 35 L199 35Z" fill="#8A5A35"/></g>
+  <g id="layer-details"><path d="M91 84 L151 45 L210 84 M99 88 L151 55 L201 88 M107 92 L151 65 L193 92" fill="none" stroke="#F2A29B" stroke-width="1.7" opacity="0.85"/><path d="M149 39 L149 52" stroke="#F2C14E" stroke-width="2.2"/><path d="M76 78 L86 68 M223 78 L234 68" stroke="#CE3D4E" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="71" rx="97" ry="58" fill="#F2C14E" opacity="0.1"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

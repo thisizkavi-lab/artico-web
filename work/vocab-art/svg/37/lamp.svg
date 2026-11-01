@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: lamp (Noun)
+  CONTEXTUAL_DEFINITION: A portable fixture that gives light from a bulb or flame.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a standing floor lamp with base, pole, and fabric shade; the light card is a bare ceiling fixture.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet living room.
+    - Context_Layer: Floor and wall.
+    - Focal_Layer: Tall floor lamp with shade.
+    - Details_Layer: Glowing bulb and light wash.
+    - Lighting_Layer: Warm yellow rays.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="37:lamp" data-reused-from="09:lamp" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 153 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 153 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="168" rx="45" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M54 153 V40 H250 V153" fill="#F6F2E9" stroke="#E3DCCD" stroke-width="1.5"/><path d="M152 73 V148" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M152 73 V148" stroke="#8A5A35" stroke-width="4.5" stroke-linecap="round"/><path d="M119 72 L128 41 Q152 29 176 41 L185 72Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.5"/><ellipse cx="152" cy="72" rx="33" ry="6" fill="#D6C4A4" stroke="#8A5A35" stroke-width="1.5"/><path d="M127 157 Q152 149 177 157 L188 164 H116Z" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-focal"><circle cx="152" cy="71" r="8" fill="#F2C14E" opacity="0.9"/><path d="M132 78 L117 93 M172 78 L187 93 M152 81 V100" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M133 45 Q152 37 171 45" fill="none" stroke="#FFFFFF" stroke-width="1.8"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

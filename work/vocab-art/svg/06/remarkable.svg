@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: remarkable (Adjective)
+  CONTEXTUAL_DEFINITION: Unusual enough to deserve attention, shown by an extraordinary meteor shower observed by campers.
+  PEDAGOGICAL_ARCHETYPE: 3 (A notable event with observers visibly attending to it)
+  SYNONYM_GUARD: Several bright meteor streaks make a rare sight worth noticing; this is a quiet natural event, not a roller-coaster thrill.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Deep twilight sky fading to a mountain ridge.
+    - Context_Layer: Two campers look up from a small tent.
+    - Focal_Layer: Multiple meteors, one exceptionally bright, crossing the sky.
+    - Details_Layer: Stars, tent seams, ridge silhouettes and fire glow.
+    - Lighting_Layer: Cool sky wash and warm campfire reflection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:remarkable" data-archetype="hero-object">
+  <defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5479AC"/><stop offset="0.72" stop-color="#8B5CA8"/><stop offset="1" stop-color="#E9A26A"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#night)"/><path d="M0 137 L52 105 L85 128 L130 93 L179 130 L221 101 L268 131 L304 108 L304 192 L0 192Z" fill="#3D5F91"/><path d="M0 154 Q150 145 304 154 L304 192 L0 192Z" fill="#5479AC"/><ellipse cx="158" cy="168" rx="111" ry="8" fill="#3D5F91"/></g>
+  <g id="layer-context"><path d="M29 151 Q31 128 49 126 Q67 128 69 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="49" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M34 110 Q35 93 50 94 Q64 95 64 111 Q55 102 48 103Z" fill="#27364B"/><path d="M44 112 Q48 108 51 112 M55 112 Q59 108 62 112" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="47" cy="109" r="1.7" fill="#1E2A3B"/><circle cx="58" cy="109" r="1.7" fill="#1E2A3B"/><ellipse cx="52" cy="120" rx="3.4" ry="4.2" fill="#A34F47"/><path d="M232 151 Q234 128 251 126 Q269 128 271 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="251" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M236 110 Q237 93 252 94 Q266 95 266 111 Q257 102 250 103Z" fill="#6B4B35"/><path d="M246 112 Q250 108 253 112 M257 112 Q261 108 264 112" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="249" cy="109" r="1.7" fill="#1E2A3B"/><circle cx="260" cy="109" r="1.7" fill="#1E2A3B"/><ellipse cx="255" cy="120" rx="3.4" ry="4.2" fill="#A34F47"/></g>
+  <g id="layer-focal"><path d="M115 146 L151 96 L187 146Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M151 96 L151 146 M124 145 L178 145" stroke="#F2C14E" stroke-width="1.8"/><path d="M125 136 Q151 129 177 136" fill="none" stroke="#F2C14E" stroke-width="2"/><path d="M37 44 L115 19 M67 72 L128 46 M196 29 L267 54 M184 60 L243 78" stroke="#FFF3C7" stroke-width="3" stroke-linecap="round"/><path d="M37 44 L115 19 M67 72 L128 46 M196 29 L267 54 M184 60 L243 78" stroke="#F2C14E" stroke-width="1.2" stroke-linecap="round"/><path d="M25 27 L29 19 L33 27 L41 31 L33 35 L29 43 L25 35 L17 31Z M276 76 L280 68 L284 76 L292 80 L284 84 L280 92 L276 84 L268 80Z" fill="#F2C14E" stroke="#FFF3C7" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M95 113 L100 103 L105 113 L115 118 L105 123 L100 133 L95 123 L85 118Z" fill="#F2C14E"/><path d="M201 109 L205 101 L209 109 L217 113 L209 117 L205 125 L201 117 L193 113Z" fill="#FFF3C7"/><circle cx="115" cy="19" r="3.6" fill="#FFF3C7"/><circle cx="128" cy="46" r="3.2" fill="#FFF3C7"/><circle cx="267" cy="54" r="3.6" fill="#FFF3C7"/><circle cx="243" cy="78" r="3" fill="#FFF3C7"/><path d="M147 151 Q153 143 159 151 L157 160 L149 160Z" fill="#E97832" stroke="#F2C14E" stroke-width="1.3"/><path d="M138 157 Q153 151 168 157" fill="none" stroke="#F2C14E" stroke-width="2"/></g>
+  <g id="layer-lighting"><path d="M119 101 L151 96 L183 101" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

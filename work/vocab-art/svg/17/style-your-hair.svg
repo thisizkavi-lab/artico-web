@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: style your hair (Verb phrase)
+  CONTEXTUAL_DEFINITION: Arrange and shape hair using a comb or brush and a styling tool.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment action + tool
+  SYNONYM_GUARD: Focus on deliberately shaping a wave with brush and dryer, not cutting or tying hair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Dressing-table mirror.
+    - Context_Layer: Muted mirror frame.
+    - Focal_Layer: Hand holding round brush beneath a styled wave.
+    - Details_Layer: Blow dryer and smooth curved hair strands.
+    - Lighting_Layer: Warm mirror glow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:style your hair" data-archetype="action-tool">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="166" rx="117" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <rect x="29" y="21" width="145" height="115" rx="16" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.2"/><rect x="39" y="30" width="125" height="97" rx="11" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.4"/><ellipse cx="168" cy="88" rx="103" ry="70" fill="#FEF3C7" opacity=".32"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M85 158Q81 129 85 88Q88 52 128 49Q168 53 170 89Q172 129 164 158Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.3"/>
+  <path d="M82 92Q79 52 119 41Q153 37 173 60Q183 76 171 101L161 91Q145 67 112 79L91 107Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M153 70Q179 45 203 53Q218 60 205 75L187 88" fill="none" stroke="#805333" stroke-width="12" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M105 99Q114 94 123 99M139 99Q148 94 157 99" fill="none" stroke="#1E2A3B" stroke-width="1.9"/><path d="M108 106Q115 109 122 106M142 106Q149 109 156 106" stroke="#FFFFFF" stroke-width="1.7"/>
+  <path d="M228 44L260 54L249 88L217 78Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M221 78L243 84L231 110" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="198" cy="72" r="15" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="198" cy="72" r="10" fill="#805333" stroke="#1E2A3B" stroke-width="1.3"/>
+  <path d="M181 75L184 84M185 67L190 81M197 62L196 80M206 65L202 81M213 73L205 84" stroke="#1E2A3B" stroke-width="1.5"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M218 100Q208 91 203 82" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

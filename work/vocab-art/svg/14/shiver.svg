@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: shiver (Verb)
+  CONTEXTUAL_DEFINITION: To shake with small quick movements, often from cold.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment human action
+  SYNONYM_GUARD: Hunch the shoulders and wrap arms around the torso with repeated tremble lines.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person in a warm sweater, shoulders hunched inward.
+    - Context_Layer: Full bust and crossed arms stay visible.
+    - Focal_Layer: Body contracts around a cold posture.
+    - Details_Layer: Repeated tiny tremor marks flank shoulders and elbows.
+    - Lighting_Layer: Pale cool halo suggests chill without snow or text.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:shiver" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="176" rx="96" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><ellipse cx="152" cy="108" rx="103" ry="75" fill="#E7EFF3"/><path d="M74 178Q78 143 108 135H195Q226 143 230 178Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M127 115L127 147H178L177 114Z" fill="#E2B99B" stroke="#64748B" stroke-width="2"/><path d="M99 73Q96 38 127 23Q157 8 188 27Q211 45 202 88L190 119Q175 141 150 137Q124 134 109 117Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M99 68Q96 37 127 20Q160 4 190 25Q211 42 202 71L189 58Q161 67 143 51Q119 67 99 68Z" fill="#596C70" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M78 148Q93 127 113 125Q135 129 152 143Q170 129 191 125Q213 128 228 148L217 174H89Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M98 147Q122 134 151 151Q179 134 208 147L193 169H111Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.1"/><path d="M116 155Q151 144 188 155" fill="none" stroke="#C88E74" stroke-width="1.6"/><path d="M125 79Q134 75 143 79M162 79Q171 75 180 79" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M135 105Q151 100 167 105" fill="none" stroke="#8E5B4A" stroke-width="1.7"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M73 89L62 82M77 103L63 101M86 118L73 124M229 89L240 82M225 103L239 101M216 118L229 124" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/><path d="M106 84L100 77M194 84L200 77" stroke="#4A72B2" stroke-width="1.7"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M92 136Q104 128 116 132M212 136Q200 128 188 132" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

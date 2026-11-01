@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: fare
+  CONTEXTUAL_DEFINITION: The price a passenger pays to travel on public transportation.
+  PEDAGOGICAL_ART_DIRECTOR: Show a passenger paying a coin or transit card into a fare reader at a bus entrance.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + payment tool
+  SYNONYM_GUARD: Focus on the payment for a ride; do not use a ticket alone or a shop cash register.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Bus entrance and fare reader on right at x=202..270; hand offers a large coin from x=143..204 toward a blue reader at (218,102); bus door frame at x=254..280.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:fare" data-archetype="peak-moment-payment">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="fare-reader" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7E9BC0"/><stop offset="1" stop-color="#405E87"/></linearGradient>
+    <linearGradient id="fare-sleeve" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D28964"/><stop offset="1" stop-color="#A95746"/></linearGradient>
+    <radialGradient id="fare-halo"><stop stop-color="#FFE8A0" stop-opacity=".67"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="fare-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="150" width="304" height="42" fill="#EEE7DA"/><path d="M0 150 H304" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="151" cy="159" rx="113" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M220 30 H289 V151 H220 Z" fill="#E7ECEE" stroke="#64748B" stroke-width="1.8"/><path d="M231 42 H277 V83 H231 Z" fill="#C9DDE7" stroke="#5479AC" stroke-width="1.2"/><path d="M224 86 H284" stroke="#5479AC" stroke-width="2"/><path d="M242 34 V145 M281 34 V145" stroke="#1E2A3B" stroke-width="2"/><path d="M250 36 H273" stroke="#F2C14E" stroke-width="2"/><path d="M238 95 H266" stroke="#D5DDE0" stroke-width="1"/><circle cx="265" cy="61" r="2" fill="#FFFFFF"/></g>
+  <g id="layer-focal" filter="url(#fare-shadow)"><path d="M29 117 Q54 104 81 106 L158 109 Q172 112 177 124 L171 141 H33 Z" fill="url(#fare-sleeve)" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M29 116 Q44 109 58 108 L69 124 Q53 129 34 129 Z" fill="#E3A07A" stroke="#1E2A3B" stroke-width="1.5"/><path d="M158 125 Q174 121 186 113 L202 104 Q210 102 216 108 L211 115 L196 124 Q190 138 177 139 L162 136 Z" fill="#DCA47D" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M194 117 L209 106" stroke="#1E2A3B" stroke-width="2" stroke-linecap="round"/><circle cx="198" cy="104" r="11" fill="#E6BB67" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="198" cy="104" r="6" fill="#F6D993" stroke="#C28A3C" stroke-width="1.1"/><path d="M198 99 V104 L202 106" fill="none" stroke="#8E6638" stroke-width="1.2" stroke-linecap="round"/><rect x="225" y="91" width="30" height="45" rx="5" fill="url(#fare-reader)" stroke="#1E2A3B" stroke-width="2"/><rect x="231" y="97" width="18" height="13" rx="2" fill="#DCEEF2" stroke="#1E2A3B" stroke-width="1"/><path d="M234 102 H245" stroke="#5479AC" stroke-width="1.2"/><circle cx="240" cy="119" r="3" fill="#8FC19A"/><path d="M203 106 Q214 99 225 105" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round"/><path d="M219 100 L226 105 L218 109" fill="none" stroke="#D97706" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M35 136 H60 M76 136 H104" stroke="#F4C7AF" stroke-width="1.1"/><path d="M186 123 L194 119 M185 128 L190 126" stroke="#F1C6A7" stroke-width="1.1"/><circle cx="200" cy="91" r="2" fill="#F2C14E"/><path d="M270 144 H282" stroke="#FFFFFF" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="192" cy="104" rx="74" ry="58" fill="url(#fare-halo)" opacity=".2"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M33 148 H286" stroke="#1E2A3B" stroke-width=".9" opacity=".35"/></g>
+</svg>

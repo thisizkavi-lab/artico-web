@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: makeup (Noun)
+  CONTEXTUAL_DEFINITION: Cosmetics being applied to enhance a person's appearance.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust with tools
+  SYNONYM_GUARD: Show the act of applying cosmetics at a mirror, not a single product or abstract beauty.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Dressing table and oval mirror.
+    - Context_Layer: Muted mirror frame.
+    - Focal_Layer: Person applying a soft brush to cheek.
+    - Details_Layer: Palette and compact on the tabletop.
+    - Lighting_Layer: Warm mirror bulbs as simple circles.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:makeup" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M30 159H274" stroke="#7B8A9E" stroke-width="3"/><ellipse cx="153" cy="166" rx="97" ry="9" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <path d="M40 144V64Q40 29 76 29H212Q248 29 248 64V144Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.6"/><path d="M50 138V66Q50 40 78 40H210Q238 40 238 66V138Z" fill="#F8FAFC" stroke="#AAB5C3" stroke-width="1.6"/>
+  <ellipse cx="150" cy="88" rx="81" ry="66" fill="#FEF3C7" opacity=".42"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M85 149Q81 122 86 84Q91 48 139 47Q185 48 190 84Q195 123 188 151Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M85 83Q91 47 139 45Q178 46 192 74Q170 65 151 66Q120 78 88 72Z" fill="#554C55" stroke="#1E2A3B" stroke-width="2.3"/>
+  <path d="M181 93L203 80L225 116L215 123Z" fill="#A86F45" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M216 112Q229 106 237 114L232 126Q223 130 216 122Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.8"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M111 96Q121 91 131 96M151 96Q161 91 171 96" fill="none" stroke="#1E2A3B" stroke-width="2.1"/><path d="M115 103Q122 107 129 103M155 103Q162 107 169 103" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M141 99L138 119L147 122M128 137Q144 144 161 137" fill="none" stroke="#A86F45" stroke-width="2"/>
+  <rect x="52" y="145" width="43" height="10" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><ellipse cx="229" cy="149" rx="14" ry="5" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.4"/>
+  <circle cx="61" cy="55" r="4" fill="#D9A441"/><circle cx="228" cy="55" r="4" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M204 91Q212 105 218 113" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/>
+</svg>

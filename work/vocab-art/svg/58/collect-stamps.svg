@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: collect stamps (verb phrase)
+  CONTEXTUAL_DEFINITION: Gather and carefully keep postage stamps as a hobby.
+  PEDAGOGICAL_ARCHETYPE: 4 - Person performing a focused leisure action with collectible objects
+  SYNONYM_GUARD: Use perforated postage stamps, tweezers, and a stamp album; do not show coins, tickets, or mailing letters.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: At a quiet desk, a person uses small tweezers to place one colorful perforated stamp into an open album page already holding several saved stamps; a magnifier rests nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:collect stamps" data-archetype="collector-places-postage-stamp-in-album">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="stamps-room" x2="0" y2="1"><stop stop-color="#EFF2EC"/><stop offset="1" stop-color="#E2E4DA"/></linearGradient>
+  <linearGradient id="stamps-album" x2="0" y2="1"><stop stop-color="#668783"/><stop offset="1" stop-color="#415F60"/></linearGradient>
+  <filter id="stamps-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#stamps-room)"/><path d="M0 151H304V192H0Z" fill="#D4C3A8"/><path d="M0 151H304" stroke="#A78B69" stroke-width="1.5" fill="none"/><rect x="20" y="22" width="62" height="54" rx="3" fill="#C4D8D1" stroke="#6C8279" stroke-width="2"/><path d="M51 23V75M22 49H80" stroke="#F6F2E5" stroke-width="3" fill="none"/></g>
+ <g id="layer-context"><path d="M219 38H286V44H219ZM224 44V75M281 44V75" fill="none" stroke="#806B54" stroke-width="2"/><path d="M229 52q12-12 25 0v15h-25Z" fill="#A77859"/><path d="M234 62q7-7 14 0" fill="none" stroke="#F5D48F" stroke-width="1.2"/><ellipse cx="150" cy="152" rx="102" ry="5" fill="#6B5741" opacity=".14"/><path d="M28 151q7-18 14 0m-8-11q-6-7-12-8" fill="none" stroke="#708D6C" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-focal" filter="url(#stamps-shadow)">
+  <path d="M53 127Q67 104 111 101L188 106Q216 108 244 129L230 145H66Z" fill="url(#stamps-album)" stroke="#344E51" stroke-width="1.5"/><path d="M63 126Q103 109 146 113L145 142H68Z" fill="#F1E8D7" stroke="#788379" stroke-width="1.2"/><path d="M151 113Q192 109 233 128L226 143H151Z" fill="#F7F0E1" stroke="#788379" stroke-width="1.2"/><path d="M147 112v31" stroke="#9A8E78" stroke-width="2" fill="none"/>
+  <path d="M73 119h18v16H73Z" fill="#D98970" stroke="#765B54" stroke-width="1" stroke-dasharray="1.5 1.5"/><path d="M77 123q5-6 10 0v7H77Z" fill="#F0D5A2"/><circle cx="82" cy="126" r="2" fill="#5E8080"/><path d="M101 118h19v17h-19Z" fill="#749A8B" stroke="#5B6D61" stroke-width="1" stroke-dasharray="1.5 1.5"/><path d="M105 131l5-9 6 9Z" fill="#E7C274"/><path d="M158 119h19v17h-19Z" fill="#D7A55F" stroke="#765B54" stroke-width="1" stroke-dasharray="1.5 1.5"/><circle cx="167.5" cy="127" r="5" fill="#EBD8AA"/><path d="M184 119h19v17h-19Z" fill="#809FA0" stroke="#5B6D61" stroke-width="1" stroke-dasharray="1.5 1.5"/><path d="M188 131q5-8 11 0" fill="none" stroke="#F3E4BD" stroke-width="1.2"/>
+  <circle cx="100" cy="74" r="15" fill="#D89F7C" stroke="#744E45" stroke-width="1.2"/><path d="M86 74q1-15 14-15q13 0 14 15l-7-6-14 1Z" fill="#51433D"/><path d="M95 77h1m8 0h1" stroke="#263C45" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M83 91Q93 84 108 91L121 103H77Z" fill="#6C8A83" stroke="#405B61" stroke-width="1.3"/><path d="M114 97Q128 106 139 117" fill="none" stroke="#D89F7C" stroke-width="6" stroke-linecap="round"/><path d="M139 117l15-18" stroke="#71828A" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M152 98l8-6m-8 6 10-2" stroke="#71828A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <path d="M199 81q19-6 25 8q-2 16-19 17q-14-3-14-14q0-8 8-11Z" fill="none" stroke="#6E8580" stroke-width="3"/><circle cx="202" cy="91" r="4" fill="#E8C87F" opacity=".65"/>
+ </g>
+ <g id="layer-details"><path d="M72 140q43-8 67-3m17-1q32-7 59 0" fill="none" stroke="#E5D6BC" stroke-width="1.1"/><circle cx="47" cy="93" r="1.3" fill="#FFFFFF"/><circle cx="57" cy="84" r="1" fill="#FFFFFF"/><path d="M72 119v16m5-16v16m5-16v16m18-17v17m5-17v17m48-17v17m5-17v17" stroke="#FAF6EC" stroke-width=".6" opacity=".6" fill="none"/><circle cx="216" cy="53" r="1.2" fill="#E4BB68"/></g>
+ <g id="layer-lighting"><ellipse cx="148" cy="105" rx="88" ry="47" fill="#E8C87F" opacity=".09"/><path d="M77 117q22-9 43-8m42 0q23-4 39 2" fill="none" stroke="#FFF9EB" stroke-width="1.3" opacity=".7" stroke-linecap="round"/><path d="M90 65q7-5 14-2" fill="none" stroke="#F4C8A7" stroke-width="1.4" stroke-linecap="round"/></g>
+</svg>

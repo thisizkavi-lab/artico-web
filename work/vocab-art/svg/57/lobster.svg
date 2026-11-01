@@ -1,0 +1,39 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: lobster (noun)
+  CONTEXTUAL_DEFINITION: A live lobster walking on the seabed, with a segmented tail, long antennae, and two large front claws.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with distinctive body parts
+  SYNONYM_GUARD: Keep the large paired claws attached to a live segmented crustacean in underwater habitat; do not show a cooked red lobster on a plate.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Rust-orange lobster faces right over a rocky seabed; carapace x=121..190 y=78..111, segmented curled tail to x=70,y=128, long antennae extend forward, two oversized asymmetrical claws at x=221,y=115 and x=211,y=136, walking legs below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:lobster" data-archetype="live-lobster-claws-antennae-segmented-tail">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#C97857;--c-secondary:#744A3D;--c-accent:#69A081;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="lobster-water" x2="0" y2="1"><stop stop-color="#9FCAC9"/><stop offset="1" stop-color="#477E8E"/></linearGradient>
+  <linearGradient id="lobster-rock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8D8B75"/><stop offset="1" stop-color="#565E59"/></linearGradient>
+  <linearGradient id="lobster-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E28D66"/><stop offset="1" stop-color="#A94D3D"/></linearGradient>
+  <filter id="lobster-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lobster-water)"/><path d="M0 147Q77 137 152 148T304 142V192H0Z" fill="url(#lobster-rock)"/><path d="M0 163Q74 155 152 164T304 158V192H0Z" fill="#707467"/></g>
+ <g id="layer-context"><path d="M20 184l10-16 17 16m214 0 13-20 18 20" fill="#788677" stroke="#5A6B60" stroke-width="1.2"/><path d="M0 36q40-6 78 0m145-3q39-6 81 0" fill="none" stroke="#D9ECE5" stroke-width="1.4"/><path d="M24 137q16-5 31 0m202-7q15-5 29 0" fill="none" stroke="#C1DFD8" stroke-width="1.4" stroke-linecap="round"/><circle cx="42" cy="98" r="2" fill="#E9F7F0"/><circle cx="50" cy="89" r="1.2" fill="#E9F7F0"/><ellipse cx="155" cy="151" rx="87" ry="6" fill="#1A383D" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#lobster-shadow)">
+  <path d="M115 111Q99 114 89 126Q79 137 67 134L63 125Q74 128 80 117Q89 104 106 102Z" fill="#B55C45" stroke="#764638" stroke-width="1.3"/>
+  <path d="M93 106Q84 108 79 116L72 121L80 124Q88 120 97 118Z" fill="#CD7656" stroke="#814A3B" stroke-width="1"/>
+  <path d="M105 106Q95 109 91 119L84 124L92 128Q102 123 111 117Z" fill="#D17B58" stroke="#814A3B" stroke-width="1"/>
+  <path d="M108 88Q117 74 141 73Q165 74 180 88Q187 100 179 113Q160 123 132 119Q112 116 104 104Z" fill="url(#lobster-shell)" stroke="#814A3B" stroke-width="1.5"/>
+  <path d="M120 81Q142 73 162 83m-47 12q30 9 62-2m-52 26q27 3 46-3" fill="none" stroke="#F2AE83" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M178 91Q193 91 203 100L197 111L182 107Z" fill="#C56C4F" stroke="#7E4939" stroke-width="1.2"/>
+  <path d="M183 95Q197 80 211 76m-19 24q17-7 27-6" fill="none" stroke="#7F4D3D" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M203 103Q217 91 231 95Q240 102 232 112Q224 119 209 114Z" fill="url(#lobster-shell)" stroke="#78473A" stroke-width="1.3"/>
+  <path d="M229 97Q239 86 248 93Q254 101 245 107L236 108Z" fill="#D7835B" stroke="#78473A" stroke-width="1.1"/>
+  <path d="M245 100Q255 105 250 113Q246 118 237 112" fill="#E39A68" stroke="#78473A" stroke-width="1.1"/>
+  <path d="M205 114Q217 117 224 127Q226 138 216 142Q208 144 200 135L196 126Z" fill="url(#lobster-shell)" stroke="#78473A" stroke-width="1.4"/>
+  <path d="M199 128Q189 125 182 133L178 141Q186 145 194 139L204 136Z" fill="#D07A57" stroke="#78473A" stroke-width="1.1"/>
+  <path d="M121 115L112 132m20-12-4 17m20-15 3 14m12-17 10 14m-52-23-12-11m-2 20-15 3" fill="none" stroke="#814B3B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M113 131l-7 2m20 3-7 3m39-2 7 3m15-10 7 2" fill="none" stroke="#6B463A" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="191" cy="91" r="1.8" fill="#1E2A3B"/>
+ </g>
+ <g id="layer-details"><path d="M194 89q-7-16-15-23m13 25q1-15 6-25m-87 48q-8 8-10 15" fill="none" stroke="#E9C4A2" stroke-width="1" stroke-linecap="round"/><circle cx="70" cy="93" r="1.6" fill="#EAF7F0"/><circle cx="240" cy="69" r="1.8" fill="#EAF7F0"/><path d="M48 151q12-4 24 0m172-3q12-4 23 0" fill="none" stroke="#D3E6DB" stroke-width="1.2" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M117 81q11-10 23-8m28 5q8 3 12 9" fill="none" stroke="#F7D6B8" stroke-width="1.5" opacity=".58" stroke-linecap="round"/><ellipse cx="150" cy="96" rx="48" ry="24" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

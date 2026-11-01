@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: ice (Noun)
+  CONTEXTUAL_DEFINITION: A solid, transparent chunk of frozen water with sharp facets and trapped bubbles.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate a substantial angular chunk of transparent blue ice, with faceted edges and suspended bubbles.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object
+  SYNONYM_GUARD: This is a sharp-edged solid block, not a round hailstone pellet or a thin slippery coating.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A clear irregular ice block sits on a cool stone slab; visible facets, internal cracks, and frozen bubbles define the solid material.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:ice" data-archetype="faceted-solid-ice-chunk">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ic-sky" x2="0" y2="1"><stop stop-color="#C3D9E0"/><stop offset="1" stop-color="#EEF2EB"/></linearGradient><linearGradient id="ic-face" x2="1" y2="1"><stop stop-color="#ECFCFA" stop-opacity=".95"/><stop offset="1" stop-color="#72B7C7" stop-opacity=".82"/></linearGradient><linearGradient id="ic-side" x2="1" y2="1"><stop stop-color="#A6DDE1"/><stop offset="1" stop-color="#538EA2"/></linearGradient><linearGradient id="ic-stone" x2="0" y2="1"><stop stop-color="#C3C9C2"/><stop offset="1" stop-color="#868F8D"/></linearGradient><filter id="ic-shadow" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#344A58" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ic-sky)"/><path d="M0 135Q76 119 152 135T304 128V192H0Z" fill="#A8B6AA"/><path d="M0 158H304V192H0Z" fill="url(#ic-stone)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#919B93" stroke-width="1.2"/><ellipse cx="151" cy="160" rx="80" ry="8" fill="#43545A" opacity=".22"/><path d="M54 149Q95 139 138 147T233 144L246 158Q195 166 151 160Q99 168 49 159Z" fill="#879391" stroke="#667576" stroke-width="1.6"/><path d="M60 150q31-8 61-2m96-3 18-1" fill="none" stroke="#D7DFD8" stroke-width="1.4"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ic-shadow)">
+  <path d="M82 117L91 73L124 44L180 45L215 75L222 118L195 139L116 141Z" fill="url(#ic-face)" stroke="#52899A" stroke-width="2.1" stroke-linejoin="round"/><path d="M91 73L128 83L124 44M128 83L180 45L169 94M128 83L116 141M128 83L169 94L195 139M169 94L215 75M169 94L222 118" fill="none" stroke="#D9F6F4" stroke-width="1.8" stroke-linejoin="round"/><path d="M91 73L128 83L82 117Z" fill="#B4E8E8" opacity=".55"/><path d="M128 83L180 45L169 94Z" fill="#F4FFFF" opacity=".5"/><path d="M169 94L215 75L222 118Z" fill="url(#ic-side)" opacity=".78"/><path d="M128 83L169 94L116 141Z" fill="#8FC9D2" opacity=".5"/><path d="M124 44L180 45L215 75" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="144" cy="66" r="3" fill="#F8FFFF" stroke="#92BBC7" stroke-width=".9"/><circle cx="190" cy="109" r="2.3" fill="#F7FFFF" stroke="#86B7C2" stroke-width=".8"/><circle cx="105" cy="111" r="1.8" fill="#F8FFFF" stroke="#7FAAB5" stroke-width=".8"/><path d="M101 91l12-11m68 31 10-8m-70 25 6-6" fill="none" stroke="#E6FFFF" stroke-width="1.2" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M45 63q13-9 26 0m167-2q13-9 26 0" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><circle cx="114" cy="75" r="1.2" fill="#FFFFFF"/><circle cx="186" cy="59" r="1.2" fill="#FFFFFF"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M43 146q17-5 32-1m163-2q12-4 23-1" fill="none" stroke="#DDE7E1" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M93 72L125 46L177 47" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".85"/><path d="M85 117l14-27m81 43 34-18" fill="none" stroke="#D8F7F4" stroke-width="1.2" opacity=".85"/></g>
+</svg>

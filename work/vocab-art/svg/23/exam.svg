@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: exam (Noun)
+  CONTEXTUAL_DEFINITION: A formal assessment in which students demonstrate what they have learned.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: Several students sit quietly in a formal examination hall with separated desks and papers, making the assessment event read as an exam.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Large quiet school exam room with tall windows.
+    - Context_Layer: Spaced rows of desks and wall clock without numerals.
+    - Focal_Layer: Students write individually on exam papers.
+    - Details_Layer: Papers, pencils, and a supervising teacher.
+    - Lighting_Layer: Even daylight and quiet focus.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:exam" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="exam-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="exam-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#exam-bg)"/><path d="M0 150Q76 145 152 150T304 148V192H0Z" fill="#E8DDC8"/><path d="M22 27H90V76H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 28V75M23 51H89" stroke="#FFFFFF" stroke-width="2.4"/><circle cx="265" cy="43" r="13" fill="#FFFEFA" stroke="#64748B" stroke-width="1.3"/><path d="M265 35V43L271 47" fill="none" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M0 148H304" stroke="#A98A64" stroke-width="3"/><path d="M24 93H279M24 123H279" stroke="#AFC5DA" stroke-width="1.3"/><path d="M51 92V132M125 92V132M201 92V132M267 92V132" stroke="#D9C9A7" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#exam-shadow)"><path d="M30 98H82V104H30ZM109 98H161V104H109ZM190 98H242V104H190Z" fill="#A98A64"/><path d="M37 104V124M75 104V124M116 104V124M154 104V124M197 104V124M235 104V124" stroke="#8D765A" stroke-width="2.8"/><circle cx="55" cy="80" r="9" fill="#C98961" stroke="#1E2A3B" stroke-width="1.3"/><path d="M46 80Q47 69 56 69Q65 70 65 81L61 84Q59 76 55 76Q51 76 49 87Z" fill="#27364B" stroke="#1E2A3B" stroke-width=".9"/><path d="M44 92Q55 88 66 93L69 98H41Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><circle cx="134" cy="79" r="9" fill="#80513F" stroke="#1E2A3B" stroke-width="1.3"/><path d="M125 79Q126 68 135 68Q144 69 144 80L140 83Q138 75 134 75Q130 75 128 86Z" fill="#27364B" stroke="#1E2A3B" stroke-width=".9"/><path d="M123 91Q134 87 145 92L148 97H120Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><circle cx="216" cy="80" r="9" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M207 80Q208 69 217 69Q226 70 226 81L222 84Q220 76 216 76Q212 76 210 87Z" fill="#A95059" stroke="#1E2A3B" stroke-width=".9"/><path d="M205 92Q216 88 227 93L230 98H202Z" fill="#91A77C" stroke="#55704D" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M40 97L70 94L73 100L40 103Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M119 96L149 93L151 99L119 102Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M201 97L231 94L233 100L201 103Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M67 93L76 86M146 92L155 85M227 92L236 85" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M171 76V116M169 77L164 87M171 78L176 87" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="92" rx="126" ry="74" fill="#FEF9C3" opacity=".06"/><path d="M22 27H90V76H22Z" fill="#FFFFFF" opacity=".06"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: roommate (Noun)
+  CONTEXTUAL_DEFINITION: A person who shares the same room with another person.
+  PEDAGOGICAL_ARCHETYPE: 3 — Shared bedroom scene
+  SYNONYM_GUARD: Show two beds in one bedroom, with two people sharing this room; housemates share a home but sleep in separate rooms.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: One bedroom with a single window and two separate beds.
+    - Context_Layer: One shared rug and one doorway establish a single room.
+    - Focal_Layer: Two residents make their beds across from one another.
+    - Details_Layer: Two pillows and distinct blankets on the two beds.
+    - Lighting_Layer: Shared warm ceiling light spans both beds.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:roommate" data-archetype="shared-bedroom-scene">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M112 23H191V69H112Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="2"/><path d="M151 24V68M113 46H190" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="151" cy="164" rx="121" ry="6" fill="#948775" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M27 140H127V147H27Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M176 140H277V147H176Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M34 147V155M119 147V155M183 147V155M270 147V155" stroke="#8A5A35" stroke-width="2.5"/><path d="M20 78V141M284 78V141" stroke="#64748B" stroke-width="1.7"/><path d="M19 78H42M262 78H285" stroke="#64748B" stroke-width="1.7"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M29 99H124V139H29Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="2.1"/><path d="M31 99V88Q32 82 40 82H61Q70 82 71 92V103Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.8"/><path d="M178 99H273V139H178Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1"/><path d="M180 99V88Q181 82 189 82H210Q219 82 220 92V103Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.8"/><path d="M31 108H122M180 108H271" stroke="#D98982" stroke-width="1.4"/><circle cx="82" cy="79" r="9" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.6"/><path d="M73 77Q73 65 83 65Q93 66 92 79L87 73H77Z" fill="#493B36"/><path d="M72 92Q82 86 92 92L96 116H68Z" fill="#7B8A9E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M76 93L66 106M89 93L99 106" stroke="#1E2A3B" stroke-width="6.5" stroke-linecap="round"/><path d="M76 93L66 106M89 93L99 106" stroke="#F0C5A7" stroke-width="3.8" stroke-linecap="round"/><path d="M76 115L73 138M89 115L92 138" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M76 115L73 138M89 115L92 138" stroke="#344254" stroke-width="4" stroke-linecap="round"/><circle cx="220" cy="79" r="9" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.6"/><path d="M211 77Q211 65 221 65Q231 66 230 79L225 73H215Z" fill="#57463E"/><path d="M210 92Q220 86 230 92L234 116H206Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M214 93L204 106M227 93L238 106" stroke="#1E2A3B" stroke-width="6.5" stroke-linecap="round"/><path d="M214 93L204 106M227 93L238 106" stroke="#C88E74" stroke-width="3.8" stroke-linecap="round"/><path d="M214 115L211 138M227 115L230 138" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M214 115L211 138M227 115L230 138" stroke="#344254" stroke-width="4" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M41 91H62M190 91H211" stroke="#FFFFFF" stroke-width="1.4"/><path d="M147 76V89M141 82H153" stroke="#F2C14E" stroke-width="2"/><path d="M30 156H272" stroke="#F3ECE1" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="151" cy="109" rx="50" ry="55" fill="#FEF3C7" opacity=".09"/><path d="M143 71L151 65L159 71" fill="none" stroke="#FFF7D6" stroke-width="1.5"/></g>
+</svg>

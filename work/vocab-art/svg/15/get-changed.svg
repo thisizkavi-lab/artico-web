@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: get changed (Verb phrase)
+  CONTEXTUAL_DEFINITION: To replace the clothes one is wearing with a different outfit.
+  PEDAGOGICAL_ARCHETYPE: 4 — Outfit transition in a fitting room
+  SYNONYM_GUARD: Show a completed change of outfit and the previous clothes folded nearby; put on shows one garment being pulled over the head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person in a simple fitting-room alcove.
+    - Context_Layer: A bench holds the previous outfit neatly folded.
+    - Focal_Layer: Person now wears the new outfit and a relaxed smile.
+    - Details_Layer: Curtain and mirror establish a private changing space.
+    - Lighting_Layer: Two gentle curved arrows indicate before and after.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:get changed" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="171" rx="118" ry="14" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M38 22H263V159H38Z" fill="#F3ECE1" stroke="#CBD5E1" stroke-width="2"/><path d="M58 22V159M245 22V159" stroke="#94A3B8" stroke-width="2"/><path d="M86 178V142H217V178Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/><path d="M105 155L132 145L160 155L149 166H111Z" fill="#E3E8F0" stroke="#64748B" stroke-width="1.8"/><path d="M173 155L195 146L211 153L201 165H177Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M120 68Q123 51 141 45Q160 40 174 54Q184 68 178 90L171 110L136 110L127 91Z" fill="#E2B99B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M120 66Q123 50 141 43Q161 38 175 54L179 68L164 61L149 70L134 59Z" fill="#6F625B" stroke="#1E2A3B" stroke-width="2"/><path d="M132 110L126 130L117 163H202L192 130L184 110Z" fill="#7D75A8" stroke="#1E2A3B" stroke-width="2.5"/><path d="M131 111L151 124L181 111M151 124V161" fill="none" stroke="#B8B1D5" stroke-width="1.7"/><path d="M131 111L126 130L117 163H202L192 130L184 110Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M138 76Q146 80 154 76" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="142" cy="69" rx="2.2" ry="2.6" fill="#1E2A3B"/><ellipse cx="159" cy="69" rx="2.2" ry="2.6" fill="#1E2A3B"/><path d="M131 153Q144 147 157 153" fill="none" stroke="#D9A441" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M99 57Q84 74 98 91M207 91Q222 74 207 57" fill="none" stroke="#4A72B2" stroke-width="1.7" stroke-dasharray="4 4"/><path d="M94 87L99 94L103 86M203 62L208 54L212 62" fill="none" stroke="#4A72B2" stroke-width="1.7"/></g>
+</svg>

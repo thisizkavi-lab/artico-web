@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: decision-making
+  CONTEXTUAL_DEFINITION: Choosing one option after considering alternatives.
+  PEDAGOGICAL_ART_DIRECTOR: Show a worker weighing two routes and deliberately selecting one.
+  PEDAGOGICAL_ARCHETYPE: 45 - Considered choice
+  SYNONYM_GUARD: Emphasize comparison followed by a chosen option, not simply starting action or guiding other people.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Center a worker below a forked route diagram; place two blank-icon choices at x=87 and x=217, show the person comparing both with a small balance symbol, then highlight one outgoing path with a green endpoint.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:decision-making" data-archetype="considered-choice">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="decision-board" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF2FA"/></linearGradient>
+    <linearGradient id="decision-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="decision-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="decision-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M151 48 V61 M151 61 C127 68 111 77 98 91 M151 61 C176 68 193 77 207 91" fill="none" stroke="#64748B" stroke-width="1.7" stroke-linecap="round"/><path d="M98 91 L94 84 M98 91 L106 89 M207 91 L199 89 M207 91 L211 83" fill="none" stroke="#64748B" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M152 63 C152 80 152 94 152 105" fill="none" stroke="#547A56" stroke-width="2.4" stroke-linecap="round"/><path d="M147 98 L152 106 L157 98" fill="none" stroke="#547A56" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="73" y="89" width="48" height="31" rx="4" fill="url(#decision-board)" stroke="#64748B" stroke-width="1"/><circle cx="87" cy="104" r="5" fill="#8EB0DE"/><path d="M97 104 H113 M97 110 H109" stroke="#CBD5E1" stroke-width=".9"/><rect x="183" y="89" width="48" height="31" rx="4" fill="#E5F0E1" stroke="#547A56" stroke-width="1.1"/><path d="M194 105 L200 111 L211 98" fill="none" stroke="#547A56" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="220" cy="99" r="2.5" fill="#F2C14E"/><path d="M40 135 H265 V145 H40 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M54 145 V155 M251 145 V155" stroke="#965D28" stroke-width="2.1"/><path d="M142 45 L151 39 L160 45" fill="none" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#decision-shadow)"><path d="M126 129 Q128 100 140 93 L141 84 Q137 80 139 73 Q147 65 158 67 Q167 70 165 81 L163 88 Q174 93 176 126 L173 139 H130 Z" fill="url(#decision-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="152" cy="75" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M144 73 Q146 65 153 65 Q161 66 165 73 Q157 69 150 70 Z" fill="#3D342D"/><path d="M131 98 Q152 92 171 98" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M131 107 L118 103 M172 107 L186 101" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round"/><path d="M118 103 L108 101 M186 101 L195 97" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/><path d="M150 109 L160 99 M160 109 L150 99" stroke="#D89A6C" stroke-width="2.5" stroke-linecap="round"/><circle cx="155" cy="104" r="2" fill="#F2C14E"/></g>
+  <g id="layer-details"><circle cx="70" cy="81" r="2" fill="#8EB0DE"/><circle cx="234" cy="80" r="2" fill="#A8D4A2"/><path d="M132 55 H142 M160 55 H170" stroke="#D99A2B" stroke-width="1.1" stroke-linecap="round"/><path d="M90 50 L95 45 M210 50 L215 45" stroke="#CBD5E1" stroke-width=".9"/><path d="M145 116 L152 112 L159 116" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="82" rx="104" ry="68" fill="url(#decision-halo)" opacity=".14"/><path d="M28 35 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

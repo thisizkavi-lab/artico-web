@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: cap (Noun)
+  CONTEXTUAL_DEFINITION: A close-fitting soft hat with a projecting visor.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Use the unmistakable baseball cap profile, despite Civil Air Patrol gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream paper and low shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Blue crown with curved visor.
+    - Details_Layer: Crown panels and top button.
+    - Lighting_Layer: Warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:cap" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="151" cy="148" rx="102" ry="18" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="87" rx="101" ry="62" fill="#FEF3C7" opacity=".4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M57 106Q60 62 100 42Q135 25 171 39Q205 52 217 89L214 107Q173 125 112 124Q78 121 57 106Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M58 105Q95 90 150 94Q190 96 232 112Q218 131 172 133Q103 134 58 115Z" fill="#315782" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M100 44Q115 65 116 120M151 36Q159 63 159 122M194 54Q180 73 179 122" fill="none" stroke="#9CB5D5" stroke-width="1.7"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <circle cx="151" cy="36" r="5" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.5"/><path d="M73 102Q124 88 179 99" fill="none" stroke="#C7D9F0" stroke-width="2"/>
+  <path d="M77 115Q127 128 196 120" fill="none" stroke="#1E2A3B" stroke-width="1.4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M75 75Q125 42 174 54" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+</svg>

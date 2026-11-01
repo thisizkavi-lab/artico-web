@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 07 - Sharing information
+  WORD: job title (Noun)
+  CONTEXTUAL_DEFINITION: The role or rank someone holds at work, shown by a team leader receiving a role badge.
+  PEDAGOGICAL_ARCHETYPE: 3 (Role contrasted within a workplace)
+  SYNONYM_GUARD: A workplace badge and elevated team-lead position indicate a job role, distinct from a respectful honorific.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Office lobby and a low three-step platform.
+    - Context_Layer: Two coworkers stand below and look toward their lead.
+    - Focal_Layer: A team leader wears a shield-shaped badge and gestures to the group.
+    - Details_Layer: Briefcase icon on badge and ascending steps.
+    - Lighting_Layer: Gold highlight on the role badge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="7:job title" data-archetype="contrast-reference">
+  <defs><linearGradient id="office" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#office)"/><path d="M0 148 Q152 142 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="153" cy="164" rx="110" ry="8" fill="#DDD4C3"/><rect x="24" y="35" width="256" height="73" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.7"/><path d="M43 109 L43 118 M261 109 L261 118" stroke="#CBD5E1" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M25 152 Q27 132 43 129 Q59 132 61 152Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="43" cy="115" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M29 114 Q30 98 44 100 Q57 101 57 115 Q49 107 41 108Z" fill="#6B4B35"/><path d="M36 119 Q43 123 50 119" fill="none" stroke="#A34F47" stroke-width="1.5"/><path d="M73 152 Q75 132 91 129 Q107 132 109 152Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><circle cx="91" cy="115" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M77 114 Q78 98 92 100 Q105 101 105 115 Q97 107 89 108Z" fill="#27364B"/><path d="M84 119 Q91 123 98 119" fill="none" stroke="#A34F47" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M133 151 Q136 112 165 108 Q194 112 198 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><path d="M151 112 L150 96 L179 96 L178 115" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="165" cy="72" r="22" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M143 71 Q145 49 166 51 Q186 53 187 72 Q177 62 165 63 Q153 69 143 71Z" fill="#27364B"/><path d="M153 74 Q157 70 161 74 M169 74 Q173 70 177 74" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M155 83 Q165 90 175 83" fill="none" stroke="#A34F47" stroke-width="1.8"/>
+    <path d="M171 120 Q188 116 198 107 L204 112 Q199 129 179 137" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M198 109 Q204 102 210 105 L214 109 L208 115 L202 115Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/>
+    <path d="M122 151 L209 151 L209 160 L122 160Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M137 143 L137 151 M165 143 L165 151 M191 143 L191 151" stroke="#1E2A3B" stroke-width="1.8"/>
+  </g>
+  <g id="layer-details"><path d="M147 96 L184 96 L181 122 L151 122Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/><rect x="158" y="103" width="16" height="11" rx="2" fill="#FAF8F3" stroke="#D49B2A" stroke-width="1.4"/><path d="M157 103 Q158 97 166 97 Q174 97 175 103" fill="none" stroke="#D49B2A" stroke-width="2"/><path d="M217 73 L222 63 L227 73 L237 78 L227 83 L222 93 L217 83 L207 78Z" fill="#F2C14E"/><path d="M35 88 L49 88 M80 88 L94 88 M137 49 Q165 43 189 49" stroke="#FFFFFF" stroke-width="2" opacity="0.72" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M132 151 Q165 145 199 151" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

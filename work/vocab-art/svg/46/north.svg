@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: north
+  CONTEXTUAL_DEFINITION: The compass direction toward the top edge of a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Place a clear upward compass needle over a folded regional map; a cool mountain ridge at the top reinforces orientation.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: The defining cue is the upward compass bearing; mountain imagery alone is insufficient.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Folded map fills x=18..286, y=19..173; compass at (151,103), with the north half of its needle cobalt; pale mountain silhouettes line y=25..58.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:north" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="north-paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F9F8ED"/><stop offset="1" stop-color="#DCE9D7"/></linearGradient>
+    <linearGradient id="north-ridge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AFC6D2"/><stop offset="1" stop-color="#728EA3"/></linearGradient>
+    <radialGradient id="north-halo"><stop stop-color="#6D94C9" stop-opacity=".34"/><stop offset="1" stop-color="#6D94C9" stop-opacity="0"/></radialGradient>
+    <filter id="north-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#EAF3F4"/><path d="M0 151Q79 138 150 151T304 147V192H0Z" fill="#D6E4D5"/><path d="M0 159Q85 145 151 159T304 156" fill="none" stroke="#B1C7B1" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M18 64L157 28L286 63V169L151 183L18 153Z" fill="url(#north-paper)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M18 64L151 88L286 63M151 88V183" fill="none" stroke="#C5D0C2" stroke-width="1.5"/><path d="M22 108L115 122L136 108M171 132L278 113" fill="none" stroke="#708092" stroke-width="10" stroke-linecap="round"/><path d="M22 108L115 122L136 108M171 132L278 113" fill="none" stroke="#F8F6EF" stroke-width="1.4" stroke-dasharray="6 6"/><path d="M15 67L48 31L71 56L98 19L137 59L163 24L198 55L226 17L263 48L289 29V68Z" fill="url(#north-ridge)" stroke="#516A7F" stroke-width="1.8"/><path d="M36 44L48 31L58 42L51 40L46 44ZM84 33L98 19L112 36L100 31L94 36ZM147 39L163 24L179 42L165 36L158 41ZM211 33L226 17L241 36L227 30L220 35" fill="#F8FBF8" stroke="#F8FBF8" stroke-width="1.2"/></g>
+  <g id="layer-focal" filter="url(#north-shadow)"><ellipse cx="151" cy="109" rx="54" ry="60" fill="url(#north-halo)"/><circle cx="151" cy="111" r="39" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="151" cy="111" r="30" fill="#E3ECEA" stroke="#7E9196" stroke-width="1.5"/><path d="M151 74L161 109L151 114L141 109Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.7"/><path d="M188 111L153 121L148 111L153 101Z" fill="#AEBBC0" stroke="#1E2A3B" stroke-width="1.4"/><path d="M151 148L141 113L151 108L161 113Z" fill="#AEBBC0" stroke="#1E2A3B" stroke-width="1.4"/><path d="M114 111L149 101L154 111L149 121Z" fill="#AEBBC0" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="151" cy="111" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M151 69L151 57" stroke="#4A72B2" stroke-width="3" stroke-linecap="round"/><path d="M151 57L145 67H157Z" fill="#4A72B2"/></g>
+  <g id="layer-details"><path d="M151 111V79" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><path d="M151 111V79" stroke="#4A72B2" stroke-width="5" stroke-linecap="round"/><path d="M142 86L151 68L160 86Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.4"/><path d="M31 83Q61 85 83 97M223 79Q240 81 258 90" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><circle cx="42" cy="137" r="3" fill="#F2C14E"/><circle cx="260" cy="145" r="3" fill="#4A72B2"/><path d="M109 163Q151 151 190 163" fill="none" stroke="#91A79E" stroke-width="1.5" stroke-dasharray="3 4"/></g>
+  <g id="layer-lighting"><circle cx="151" cy="111" r="45" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><path d="M27 72L150 94" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><path d="M42 165L117 176" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/></g>
+</svg>

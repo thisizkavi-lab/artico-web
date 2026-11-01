@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: blue whale (noun)
+  CONTEXTUAL_DEFINITION: The world's largest whale, shown swimming through open blue water with the throat pleats visible.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining scale and body traits
+  SYNONYM_GUARD: Use a very large streamlined blue-grey whale with fine throat pleats and a small rear dorsal fin; do not give it humpback-long flippers or a square sperm-whale head.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Wide side profile faces right across open water; body spans x=64..239 y=62..129, horizontal flukes at left, small dorsal fin far back, pectoral fin below, and repeated throat grooves beneath the front third.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:blue whale" data-archetype="blue-whale-throat-pleats">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#4D8292;--c-secondary:#355A69;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="blue-whale-sky" x2="0" y2="1"><stop stop-color="#D9EAF0"/><stop offset="1" stop-color="#F4F1E6"/></linearGradient>
+  <linearGradient id="blue-whale-water" x2="0" y2="1"><stop stop-color="#73B1BD"/><stop offset="1" stop-color="#36788D"/></linearGradient>
+  <linearGradient id="blue-whale-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#78A9B3"/><stop offset="1" stop-color="#3D6E7D"/></linearGradient>
+  <filter id="blue-whale-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#blue-whale-sky)"/><circle cx="58" cy="43" r="19" fill="#F1D78B" opacity=".47"/><path d="M0 122Q70 114 142 123T304 119V192H0Z" fill="url(#blue-whale-water)"/><path d="M0 158Q74 151 150 159T304 154V192H0Z" fill="#4C8FA0"/></g>
+ <g id="layer-context"><path d="M0 123Q47 116 94 123T188 122T304 120" fill="none" stroke="#D7EEEE" stroke-width="1.8"/><path d="M15 142q18-6 35-1m214-5q17-6 34 0m-170 37q18-6 35-1" fill="none" stroke="#A4D1D3" stroke-width="1.5" stroke-linecap="round"/><path d="M52 77q8-6 16 0m182 25q7-5 14 0" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".72" stroke-linecap="round"/><circle cx="39" cy="106" r="2" fill="#DAF1ED" opacity=".75"/><circle cx="47" cy="98" r="1.3" fill="#DAF1ED" opacity=".75"/><circle cx="261" cy="140" r="2.2" fill="#D9F2EF" opacity=".68"/><ellipse cx="153" cy="132" rx="90" ry="7" fill="#173D4A" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#blue-whale-shadow)">
+  <path d="M85 88Q70 77 59 68Q67 84 79 94Q67 104 60 115Q75 112 90 103Z" fill="#4B7885" stroke="#345766" stroke-width="1.5"/>
+  <path d="M81 85Q96 67 132 66Q178 65 213 78Q232 85 239 94Q235 107 217 115Q178 130 129 122Q98 117 82 104Z" fill="url(#blue-whale-hide)" stroke="#315867" stroke-width="1.8"/>
+  <path d="M87 109Q122 127 170 122Q196 120 216 112Q203 130 165 133Q117 135 91 119Z" fill="#E5E4D8" stroke="#527F89" stroke-width="1.1"/>
+  <path d="M104 69Q111 59 120 67L121 72Z" fill="#436F7B" stroke="#315867" stroke-width="1.1"/>
+  <path d="M147 118Q155 120 166 117Q159 130 149 139Q143 139 141 135Z" fill="#477A88" stroke="#315867" stroke-width="1.2"/>
+  <path d="M211 83Q220 82 228 91Q218 92 211 90Z" fill="#537F89" opacity=".8"/>
+  <path d="M205 94Q221 101 235 95M204 100Q218 106 230 101" fill="none" stroke="#294F5D" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="220" cy="87" r="2" fill="#172D37"/>
+  <path d="M217 77q5-8 2-14m2 13q7-7 7-15m-5 16q10-5 12-11" fill="none" stroke="#EAF5F1" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M190 104Q195 111 194 122m-9-20q3 10 2 22m-10-24q3 10 0 21m-9-21q3 11 0 22m-9-22q2 11-1 21" fill="none" stroke="#D2E4DF" stroke-width="1.25" opacity=".82" stroke-linecap="round"/>
+  <path d="M98 83q31-19 65-14m-45 15q33-10 61-6" fill="none" stroke="#B7D6D7" stroke-width="1.5" opacity=".72" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="121" cy="93" r="1.3" fill="#E4F2ED"/><circle cx="137" cy="104" r="1" fill="#D7E8E5"/><path d="M78 96q-6 2-9 7m155 26q9-3 15-1" fill="none" stroke="#C0DDDA" stroke-width="1.2" stroke-linecap="round"/><circle cx="247" cy="59" r="1.6" fill="#FFFFFF" opacity=".8"/><path d="M128 77q12-4 24-2" fill="none" stroke="#E6F3EF" stroke-width="1.4" opacity=".8" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M94 77q24-15 47-10m34 5q13 2 22 7" fill="none" stroke="#F7FAF2" stroke-width="1.7" opacity=".52" stroke-linecap="round"/><ellipse cx="161" cy="90" rx="78" ry="26" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

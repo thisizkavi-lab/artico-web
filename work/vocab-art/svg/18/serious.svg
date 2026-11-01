@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: serious (Adjective)
+  CONTEXTUAL_DEFINITION: Earnest and focused, treating an important task with care.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A focused person carefully measures and repairs a shared chair while others wait; there is no joke, play, or broad smile.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community workshop with a workbench.
+    - Context_Layer: Waiting peer and a loose chair leg.
+    - Focal_Layer: Serious person carefully measures and tightens a joint.
+    - Details_Layer: Ruler, screwdriver, knitted brow and precise grip.
+    - Lighting_Layer: Focused top-left work light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:serious" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="152" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M24 112H277L270 125H31Z" fill="#B9875D" stroke="#1E2A3B" stroke-width="1.8"/><path d="M42 125V156M258 125V156" stroke="#805333" stroke-width="5" stroke-linecap="round"/><path d="M34 27L91 27L78 47H23Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="1.7"/><path d="M59 47V67" stroke="#D9A441" stroke-width="2"/></g>
+  <g id="layer-context"><circle cx="252" cy="65" r="15" fill="#C98961" stroke="#1E2A3B" stroke-width="2"/><path d="M237 65Q238 49 252 50Q267 51 267 66L262 70H240Z" fill="#805333"/><path d="M234 87Q252 81 270 87L274 111H230Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M244 65H249M255 65H260M242 76Q252 72 262 76" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M239 94L230 105M264 94L275 104" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M46 84L64 84L64 111L46 111Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><path d="M44 112L40 136M66 112L69 136" stroke="#7B8A9E" stroke-width="4"/><path d="M45 138L71 138" stroke="#D9857F" stroke-width="2" stroke-dasharray="3 4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="143" cy="91" rx="70" ry="68" fill="#FEF3C7" opacity=".48"/><circle cx="142" cy="51" r="20" fill="#C98961" stroke="#1E2A3B" stroke-width="2.5"/><path d="M122 51Q123 29 142 30Q163 31 162 53L155 58Q151 42 140 42Q130 43 124 59Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M118 77Q142 70 166 77L173 115H111Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M125 85L108 101L115 107L137 95M161 85L176 100L186 97" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M125 85L109 101L116 106L137 95M161 85L176 100L185 97" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M112 115L111 158H128L137 118M145 118L154 158H172L169 115" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M141 98L151 88L155 91L147 102Z" fill="#D9A441" stroke="#805333" stroke-width="1.6"/><path d="M138 51L145 53M153 53L159 51M137 65L142 64M147 64L152 65" fill="none" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M128 39L136 37M149 37L157 39" stroke="#1E2A3B" stroke-width="1.8"/><path d="M188 88L206 78M197 96L215 86" stroke="#7B8A9E" stroke-width="1.8"/><path d="M179 93L183 98L188 93" fill="none" stroke="#D9A441" stroke-width="1.8"/><circle cx="200" cy="109" r="2" fill="#D9A441"/><path d="M134 32Q143 28 152 32" fill="none" stroke="#FEF9C3" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><path d="M132 34Q142 30 152 34" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".66"/><ellipse cx="143" cy="91" rx="70" ry="68" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".34"/></g>
+</svg>

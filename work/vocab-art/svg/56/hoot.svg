@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: hoot (verb/sound)
+  CONTEXTUAL_DEFINITION: An owl calling at night, making a deep hollow hooting sound.
+  PEDAGOGICAL_ARCHETYPE: 1 - Action/sound conveyed by visual vibration
+  SYNONYM_GUARD: Show a recognizable forward-eyed owl with open beak and broad smooth sound-wave rings; no written sound-effect letters.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a round owl on a night branch, body x=105..202 y=63..142, face disk and two large amber eyes, open triangular beak, moon above and three broad outward sound arcs.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:hoot" data-archetype="night-owl-call">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#9D7850;--c-secondary:#5D4736;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="hoot-sky" x2="0" y2="1"><stop stop-color="#BCCEDA"/><stop offset="1" stop-color="#E6E7DD"/></linearGradient>
+  <linearGradient id="hoot-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B08A5F"/><stop offset="1" stop-color="#74533A"/></linearGradient>
+  <radialGradient id="hoot-moon"><stop stop-color="#F9E7AA" stop-opacity=".7"/><stop offset="1" stop-color="#F9E7AA" stop-opacity="0"/></radialGradient>
+  <filter id="hoot-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#hoot-sky)"/><circle cx="245" cy="42" r="34" fill="url(#hoot-moon)"/><circle cx="245" cy="42" r="15" fill="#F4E6B9" opacity=".72"/><path d="M0 132Q78 122 154 134T304 127V192H0Z" fill="#CFD9D0"/><path d="M0 155Q86 145 163 156T304 150V192H0Z" fill="#BBC8BA"/><path d="M27 132V62m0 38L9 81m18 33 15-22m237 40V58m0 42 18-20m-18 8-15-20" fill="none" stroke="#665947" stroke-width="3.5" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M29 143Q116 136 189 143T280 138" fill="none" stroke="#604B37" stroke-width="8" stroke-linecap="round"/><path d="M45 139l-8-12m9 12 10-12m170 11 8-11" fill="none" stroke="#604B37" stroke-width="3" stroke-linecap="round"/><path d="M17 87q10-12 18-4m-15 14q9-8 18-2m224-19q10-12 18-5m-15 15q9-8 17-1" fill="none" stroke="#788B70" stroke-width="2"/><ellipse cx="153" cy="153" rx="57" ry="4" fill="#4F5C4E" opacity=".17"/></g>
+ <g id="layer-focal" filter="url(#hoot-shadow)"><path d="M105 105Q101 79 120 61L132 48L145 61Q158 55 171 62L185 49L193 71Q206 88 198 113Q190 138 156 143Q121 141 105 105Z" fill="url(#hoot-coat)" stroke="#5C4532" stroke-width="1.5"/><path d="M111 90Q113 67 137 66Q154 68 155 93Q148 112 131 115Q114 108 111 90Z" fill="#E9DFC9"/><path d="M151 92Q154 67 178 67Q198 73 197 92Q190 111 175 115Q158 109 151 92Z" fill="#E9DFC9"/><circle cx="137" cy="87" r="10" fill="#D7A449" stroke="#805D32" stroke-width="1.1"/><circle cx="173" cy="87" r="10" fill="#D7A449" stroke="#805D32" stroke-width="1.1"/><circle cx="137" cy="87" r="4" fill="#1E2A3B"/><circle cx="173" cy="87" r="4" fill="#1E2A3B"/><circle cx="138" cy="85" r="1" fill="#FFFFFF"/><circle cx="174" cy="85" r="1" fill="#FFFFFF"/><path d="M148 98L155 111L162 98Z" fill="#D8893B" stroke="#925F2F" stroke-width="1"/><path d="M153 111q-3 8 2 11 6-3 2-11" fill="#1E2A3B"/><path d="M128 130q11 5 22 4m17 0q11 1 22-5" fill="none" stroke="#D4B98B" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M196 91q15-9 20 0m-22 8q18-7 26 3m-28 7q14-3 19 6" fill="none" stroke="#738C93" stroke-width="1.5" opacity=".82" stroke-linecap="round"/><path d="M18 132l-3-8m263 9 4-9" fill="none" stroke="#82916F" stroke-width="1.3"/><circle cx="218" cy="81" r="1.2" fill="#F8E8B6"/></g>
+ <g id="layer-lighting"><path d="M117 73q9-13 19-13m37 2q9 4 12 12" fill="none" stroke="#F6D8A0" stroke-width="1.5" opacity=".75" stroke-linecap="round"/><ellipse cx="153" cy="95" rx="52" ry="40" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

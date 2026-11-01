@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: facial hair (Noun)
+  CONTEXTUAL_DEFINITION: Hair growing on a person's face, such as a beard and mustache.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Show both upper-lip and lower-face growth as a broad category example.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm portrait paper.
+    - Context_Layer: Muted shoulders and neck.
+    - Focal_Layer: Face with full beard and mustache.
+    - Details_Layer: Separate hair texture on cheeks and chin.
+    - Lighting_Layer: Soft warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:facial hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="89" rx="105" ry="73" fill="#FEF3C7" opacity=".36"/><path d="M79 166Q87 132 120 124H184Q217 132 225 166Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M106 152Q100 121 102 82Q105 44 152 40Q199 44 202 82Q204 121 198 152Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.5"/>
+  <path d="M99 82Q96 44 138 34Q172 31 197 51Q211 65 204 95L195 111Q192 147 170 158Q151 169 132 158Q108 145 105 111L99 96Z" fill="#4A342F" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M120 111Q136 101 151 111Q168 101 184 111Q181 124 165 126H139Q123 124 120 111Z" fill="#4A342F" stroke="#1E2A3B" stroke-width="1.7"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M119 94Q129 89 139 94M164 94Q174 89 184 94" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 101Q130 104 138 101M166 101Q174 104 181 101" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M117 126Q123 138 129 141M188 125Q182 139 176 143M137 149Q152 157 167 149" fill="none" stroke="#805333" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <ellipse cx="152" cy="118" rx="61" ry="48" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".42"/>
+</svg>

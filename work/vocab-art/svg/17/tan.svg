@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: tan / tanned skin (Noun phrase)
+  CONTEXTUAL_DEFINITION: A warm, sun-kissed brown skin tone, often with a visible tan line.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait with context cue
+  SYNONYM_GUARD: Show a sunny setting and contrasting tan line so this reads as tanned skin, not olive undertone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm sunny paper.
+    - Context_Layer: Simple sun disc and shoulder.
+    - Focal_Layer: Golden-brown exposed shoulder with a lighter strap line.
+    - Details_Layer: Tank-top strap and soft skin highlight.
+    - Lighting_Layer: Clear warm sun cue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:tan / tanned skin" data-archetype="contrast-pair">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="103" ry="11" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <circle cx="221" cy="48" r="27" fill="#F1CF7A" opacity=".8"/><g stroke="#D9A441" stroke-width="3" stroke-linecap="round"><path d="M221 10V4M221 92V86M183 48H177M265 48H259M194 21L189 16M253 80L248 75M248 21L253 16M189 80L194 75"/></g>
+  <path d="M54 155Q70 101 124 87Q161 79 194 107L215 164Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M96 159Q101 120 130 103Q162 88 194 113L209 160Z" fill="#C68F5F" stroke="#1E2A3B" stroke-width="2.6"/><path d="M137 106Q157 98 174 108L187 162H165Z" fill="#F0D3B6" stroke="#E7B99B" stroke-width="1.7"/>
+  <path d="M111 127Q144 106 179 121" fill="none" stroke="#A86F45" stroke-width="5" stroke-linecap="round"/><path d="M120 131Q147 117 172 128" fill="none" stroke="#E4B27F" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M98 145Q127 128 155 127M160 145Q181 137 196 146" fill="none" stroke="#D9A17D" stroke-width="2.5" stroke-linecap="round"/><path d="M200 101Q210 94 218 98" stroke="#4A72B2" stroke-width="1.6" stroke-dasharray="3 4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M207 83Q195 94 185 105" fill="none" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

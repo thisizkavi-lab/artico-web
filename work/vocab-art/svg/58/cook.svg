@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: cook (noun)
+  CONTEXTUAL_DEFINITION: A person who prepares food, shown as a capable home cook making a meal.
+  PEDAGOGICAL_ARCHETYPE: 2 - Person identified by their role and tools
+  SYNONYM_GUARD: Make the cook the person in focus, with apron, spoon, and food at a stove; do not show only a meal or a restaurant waiter.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A home cook in an apron and simple white toque stands at a small kitchen stove, stirring a pan while vegetables and a prepared plate sit nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:cook" data-archetype="home-cook-stirs-pan-in-apron-and-toque">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="cook-room" x2="0" y2="1"><stop stop-color="#F0F2EC"/><stop offset="1" stop-color="#E1E3DA"/></linearGradient>
+  <linearGradient id="cook-apron" x2="0" y2="1"><stop stop-color="#78958B"/><stop offset="1" stop-color="#506B68"/></linearGradient>
+  <filter id="cook-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cook-room)"/><path d="M0 151H304V192H0Z" fill="#C9AF8B"/><path d="M0 151H304" stroke="#8E6B4B" stroke-width="1.5" fill="none"/><path d="M0 46H304M0 69H304" stroke="#D5D8CC" stroke-width="1" fill="none"/><path d="M22 46v23m28-23v23m28-23v23m28-23v23m28-23v23m28-23v23m28-23v23m28-23v23m28-23v23" stroke="#D5D8CC" stroke-width="1" fill="none"/></g>
+ <g id="layer-context"><path d="M18 151V91h62v60" fill="#8E775F" stroke="#685742" stroke-width="1.3"/><path d="M26 100h46v8H26Zm0 30h46v8H26Z" fill="#C3A678"/><path d="M224 151V87h56v64" fill="#84715D" stroke="#675744" stroke-width="1.3"/><path d="M231 94h42v43h-42Z" fill="#5A5048"/><path d="M234 98h36v35h-36Z" fill="#A56047"/><path d="M30 88h26m176-6h48" stroke="#806D5A" stroke-width="2" fill="none"/><circle cx="250" cy="56" r="2" fill="#E1BB70"/><ellipse cx="153" cy="152" rx="87" ry="5" fill="#6A4F38" opacity=".15"/></g>
+ <g id="layer-focal" filter="url(#cook-shadow)">
+  <path d="M98 103Q103 89 119 88L138 97L143 143H88L91 116Z" fill="#738E84" stroke="#405B61" stroke-width="1.5"/><path d="M108 98L119 112L132 98L139 142H99Z" fill="url(#cook-apron)" stroke="#405B61" stroke-width="1.2"/><path d="M108 98q10 9 22 0m-22 2-10 27m32-28 10 25" fill="none" stroke="#E9D6B5" stroke-width="1.3"/>
+  <circle cx="118" cy="75" r="15" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M104 74q0-15 14-16q14 0 15 16l-8-5-12 1Z" fill="#4E423D"/><path d="M104 64q2-10 10-10h9q7 0 9 10Z" fill="#F5F2E9" stroke="#687B77" stroke-width="1.2"/><path d="M107 55q-7-4-5-9q4-6 9 0m5 8q-5-8 1-12q7-3 8 5m5 4q-1-8 5-8q5 2 2 8" fill="#FFF8E9" stroke="#687B77" stroke-width="1"/><path d="M114 77h1m8 0h1" stroke="#263C45" stroke-width="1.7" stroke-linecap="round" fill="none"/><path d="M113 84q5 4 10 0" fill="none" stroke="#91594B" stroke-width="1.1"/>
+  <path d="M99 105Q82 107 75 119L73 134Q78 139 83 133L94 121L108 117" fill="#D79D79" stroke="#744E45" stroke-width="1.2" stroke-linejoin="round"/><path d="M133 104Q150 99 166 103L178 111Q178 117 171 116L157 112L140 117" fill="#D79D79" stroke="#744E45" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M48 138H214V149H48Z" fill="#6A7371" stroke="#414F51" stroke-width="1.3"/><path d="M58 149v8m144-8v8" stroke="#515E5D" stroke-width="2.5" fill="none"/><ellipse cx="154" cy="133" rx="29" ry="6" fill="#485454"/><path d="M130 132Q134 148 154 149Q174 148 178 132" fill="#4B5857" stroke="#2F4146" stroke-width="1.4"/><path d="M131 131H175" stroke="#D2D6CA" stroke-width="1.2" fill="none"/><path d="M177 135l21-14" stroke="#7C6550" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M172 135q-4-8 4-10q7 0 8 8q-5 5-12 2Z" fill="#E0A65F"/>
+  <path d="M74 130Q55 120 44 124Q39 130 45 135L71 142Z" fill="#E8E0CB" stroke="#7D6B56" stroke-width="1.2"/><circle cx="55" cy="127" r="5" fill="#D77D68"/><path d="M50 127h10m-5-5v10" stroke="#F6D891" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details"><path d="M145 105q9-9 18-7m-4 20q10-6 17-3m-69 17q12 3 23 0" stroke="#F5D7B1" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M146 118q-7-7-2-12m13 11q-5-8 0-14m8 15q-3-6 2-10" stroke="#F3E3C9" stroke-width="1.2" fill="none" stroke-linecap="round"/><circle cx="188" cy="90" r="1.4" fill="#FFF8E9"/><circle cx="196" cy="84" r="1" fill="#FFF8E9"/><path d="M26 103h46m-46 30h46" stroke="#E4CCA1" stroke-width="1" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="154" cy="124" rx="54" ry="38" fill="#EBC876" opacity=".09"/><path d="M109 56q7-6 15-4m-11 56q8 4 16 0" stroke="#FFF9EA" stroke-width="1.5" fill="none" opacity=".7" stroke-linecap="round"/></g>
+</svg>

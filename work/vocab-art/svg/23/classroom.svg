@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: classroom (Noun)
+  CONTEXTUAL_DEFINITION: A room in a school where a class is taught.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: The empty room's desks, board, windows, and teacher's table make the place itself the subject, distinct from a class of students.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Full interior of a bright school classroom.
+    - Context_Layer: Board, windows, shelves, and clock without numerals.
+    - Focal_Layer: Rows of desks facing a teaching wall.
+    - Details_Layer: Chairs, books, and a teacher's table.
+    - Lighting_Layer: Sunlight enters through windows and makes floor bands.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:classroom" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="room-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="room-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-bg)"/><path d="M0 133H304V192H0Z" fill="#E8DDC8"/><path d="M0 132H304" stroke="#A98A64" stroke-width="2"/><rect x="22" y="28" width="75" height="62" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M59 29V89M23 58H96" stroke="#FFFFFF" stroke-width="2.4"/><rect x="115" y="27" width="100" height="62" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M130 44Q151 36 169 44T200 43M131 68Q155 58 181 68" fill="none" stroke="#DCECFB" stroke-width="1.7"/><circle cx="261" cy="48" r="14" fill="#FFFEFA" stroke="#64748B" stroke-width="1.5"/><path d="M261 39V48L268 53" fill="none" stroke="#5479AC" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="layer-context"><rect x="230" y="74" width="49" height="54" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/><path d="M236 85H273M236 95H273" stroke="#F7EBCF" stroke-width="1.7"/><rect x="246" y="108" width="17" height="20" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M0 161H304" stroke="#C9B99F" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#room-shadow)"><path d="M35 100H104V109H35ZM117 99H185V108H117ZM195 100H266V109H195Z" fill="#A98A64" stroke="#65472F" stroke-width="1.4"/><path d="M43 109V129M96 109V129M125 108V128M178 108V128M204 109V129M257 109V129" stroke="#8D765A" stroke-width="3"/><path d="M44 91H96V100H44Z" fill="#D9857F" stroke="#A95059" stroke-width="1.3"/><path d="M126 90H177V99H126Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M204 91H257V100H204Z" fill="#91A77C" stroke="#55704D" stroke-width="1.3"/><path d="M44 89H96M126 88H177M204 89H257" stroke="#F7EBCF" stroke-width="1.4"/><path d="M237 119L279 119L279 130L237 130Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.3"/><path d="M245 130V139M271 130V139" stroke="#8D765A" stroke-width="2.4"/></g>
+  <g id="layer-details"><path d="M31 119L63 117L66 128H31Z" fill="#F5F0E5" stroke="#64748B" stroke-width="1.1"/><path d="M191 119L221 117L224 128H191Z" fill="#F5F0E5" stroke="#64748B" stroke-width="1.1"/><path d="M104 139L125 139M180 138L198 138" stroke="#FFFFFF" stroke-width="1.8" opacity=".72"/><path d="M23 44L97 44M23 65L97 65" stroke="#FEF9C3" stroke-width="7" opacity=".13"/></g>
+  <g id="layer-lighting"><path d="M24 31H96V86H24Z" fill="#FEF9C3" opacity=".08"/><ellipse cx="152" cy="105" rx="141" ry="79" fill="#FEF9C3" opacity=".05"/><path d="M35 100H104M117 99H185M195 100H266" stroke="#F0C971" stroke-width="1.3" opacity=".62"/></g>
+</svg>

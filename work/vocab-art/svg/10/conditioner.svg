@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: conditioner (Noun)
+  CONTEXTUAL_DEFINITION: A thick hair-care cream applied after shampooing to soften hair.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Show a hair conditioner bottle dispensing a thick creamy ribbon beside smooth hair strands, not watery shampoo.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale shower tile.
+    - Context_Layer: Smooth strands of hair.
+    - Focal_Layer: Upside-down conditioner bottle and rich cream dollop.
+    - Details_Layer: Conditioner cap and silky texture.
+    - Lighting_Layer: Cool clean bathroom reflections.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:conditioner" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 45 H304 M0 90 H304 M0 135 H304 M61 0 V150 M122 0 V150 M183 0 V150 M244 0 V150" stroke="#B8CDD1" stroke-width="1.1"/><path d="M0 150 H304 V192 H0Z" fill="#DCE5E3"/><path d="M0 150 H304" stroke="#AEBDBD" stroke-width="2"/><ellipse cx="151" cy="168" rx="77" ry="7" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M188 51 Q223 71 185 99 Q154 122 192 144 M210 48 Q241 75 210 100 Q184 120 213 145 M231 52 Q256 78 229 101 Q207 119 235 141" fill="none" stroke="#5479AC" stroke-width="3.4" stroke-linecap="round"/><path d="M193 60 Q215 76 190 95 M215 62 Q234 78 214 96" fill="none" stroke="#AFC3DE" stroke-width="1.6"/></g>
+  <g id="layer-focal"><path d="M72 63 Q72 54 81 54 H147 Q156 54 156 63 V129 Q156 137 148 137 H80 Q72 137 72 129Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.5"/><path d="M80 61 H148 V121 H80Z" fill="#B88FC9"/><path d="M84 54 V43 H143 V54" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M95 43 H132 V35 H95Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="1.6"/><path d="M87 137 H141 V147 Q141 153 135 153 H93 Q87 153 87 147Z" fill="#647D8B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M109 34 Q118 29 127 34" fill="none" stroke="#F0D7FF" stroke-width="1.6"/><path d="M167 128 Q178 123 184 128 Q190 134 183 141 Q176 145 168 139Z" fill="#F3E6CF" stroke="#C8B99D" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M86 69 H142 M86 77 H142" stroke="#E8D9F0" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

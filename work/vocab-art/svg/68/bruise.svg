@@ -1,0 +1,47 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 68 - Sickness
+  WORD: bruise
+  CONTEXTUAL_DEFINITION: Purple discoloration beneath intact skin after a bump.
+  PEDAGOGICAL_ARCHETYPE: 3 — Gentle symptom close-up
+  SYNONYM_GUARD: Show intact skin with a soft purple patch; cut and scrape affect the surface.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close-up bent arm at rest.
+    - Context_Layer: Healthy skin and shirt sleeve frame one small area.
+    - Focal_Layer: A soft purple-blue mark sits beneath intact skin.
+    - Details_Layer: A hand gently supports the arm; no swelling or wound.
+    - Lighting_Layer: Muted gold ring identifies the discolored patch.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:bruise" data-archetype="symptom-closeup">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#F0EEE8"/><ellipse cx="151" cy="166" rx="113" ry="17" fill="#E7D6D1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M43 77Q68 62 91 78L143 113L198 98Q213 94 222 106L232 121Q238 133 224 141L163 158Q144 164 124 151L59 114Q41 102 39 88Z" fill="#D29A78" stroke="#26384A" stroke-width="2.4"/><path d="M49 78L24 61Q18 56 24 49Q31 43 38 49L75 73" fill="#F6E5CE" stroke="#26384A" stroke-width="2.2"/><path d="M222 106Q241 108 256 124L275 145Q282 154 275 161Q267 167 259 159L225 137" fill="#F6E5CE" stroke="#26384A" stroke-width="2.2"/><path d="M73 89Q104 111 134 131M162 145Q190 132 222 125" fill="none" stroke="#A86E58" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="143" cy="124" rx="38" ry="27" fill="#D6A64C" opacity=".42"/><path d="M118 119Q133 103 154 110Q172 117 167 132Q158 148 137 143Q119 138 118 119Z" fill="#8F789F" opacity=".76"/><path d="M122 119Q136 108 151 114M131 138Q146 142 158 133" fill="none" stroke="#796688" stroke-width="1.5" opacity=".75"/><path d="M118 119Q133 103 154 110Q172 117 167 132Q158 148 137 143Q119 138 118 119Z" fill="none" stroke="#D6A64C" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details">
+    <path d="M59 76Q76 82 93 94" stroke="#E5B79E" stroke-width="1" fill="none"/>
+
+    <path d="M78 86Q96 98 112 108" stroke="#A86E58" stroke-width=".9" fill="none"/>
+
+    <path d="M172 108Q192 103 207 107" stroke="#E5B79E" stroke-width="1" fill="none"/>
+
+    <path d="M182 137Q201 130 219 128" stroke="#A86E58" stroke-width=".9" fill="none"/>
+
+    <path d="M129 104L125 98" stroke="#D6A64C" stroke-width="1.2"/>
+
+    <path d="M145 96L146 90" stroke="#D6A64C" stroke-width="1.2"/>
+
+    <path d="M164 102L169 98" stroke="#D6A64C" stroke-width="1.2"/>
+
+    <path d="M170 125L176 127" stroke="#D6A64C" stroke-width="1.2"/>
+
+    <circle cx="120" cy="127" r="1.2" fill="#8F789F"/>
+
+    <circle cx="126" cy="139" r="1" fill="#796688"/>
+
+    <circle cx="161" cy="115" r="1.2" fill="#8F789F"/>
+
+    <circle cx="156" cy="137" r="1" fill="#796688"/>
+
+    <path d="M107 148Q120 154 132 157" stroke="#E5B79E" stroke-width="1" fill="none"/>
+</g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="143" cy="124" rx="31" ry="21" fill="none" stroke="#D6A64C" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: hit the road (Phrase)
+  CONTEXTUAL_DEFINITION: To leave and begin a journey.
+  PEDAGOGICAL_ARCHETYPE: 2 (A person and a clear departure action)
+  SYNONYM_GUARD: A traveler steps toward an open road with luggage while a car waits to carry them onward.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Road leaving a small rest stop toward distant hills.
+    - Context_Layer: Suitcase and car at the roadside.
+    - Focal_Layer: Traveler starts walking down the road.
+    - Details_Layer: Tire tracks and a sunlit route.
+    - Lighting_Layer: Bright horizon in the direction of travel.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:hit the road" data-archetype="action-tool">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#DCECFB"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 131 L85 83 L151 126 L221 71 L304 128 L304 151 L0 151Z" fill="#7FB07A"/><path d="M99 192 L137 115 L169 115 L215 192Z" fill="#64748B"/><path d="M149 192 L150 157 M151 145 L152 133" stroke="#FAF8F3" stroke-width="4" stroke-dasharray="10 8"/><path d="M0 151 Q152 144 304 151 L304 192 L0 192Z" fill="#BFD3B5"/><ellipse cx="152" cy="166" rx="114" ry="8" fill="#98B68C"/></g>
+  <g id="layer-context"><path d="M228 143 L281 143 L291 153 L222 153Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2"/><path d="M240 142 L248 133 L271 133 L280 143Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="239" cy="154" r="6" fill="#27364B"/><circle cx="277" cy="154" r="6" fill="#27364B"/><rect x="194" y="119" width="22" height="28" rx="3" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><path d="M199 119 Q199 112 205 112 Q211 112 211 119" fill="none" stroke="#8D552E" stroke-width="2"/></g>
+  <g id="layer-focal"><path d="M102 151 Q105 126 124 123 Q143 126 146 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="124" cy="108" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M108 107 Q109 90 125 92 Q139 93 140 108 Q132 101 123 102Z" fill="#27364B"/><path d="M116 110 Q120 106 123 110 M128 110 Q132 106 135 110" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M117 118 Q125 121 133 118" fill="none" stroke="#A34F47" stroke-width="1.5"/><path d="M109 129 Q97 138 89 148 L99 153 L116 139 M139 130 Q151 135 158 146 L151 152 L137 141" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M103 149 L115 149 L112 170 L99 170Z M137 148 L149 148 L156 168 L142 170Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M97 168 Q106 165 115 170 L114 176 L94 176Z M143 168 Q152 165 160 170 L163 176 L145 176Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M174 69 L179 59 L184 69 L194 74 L184 79 L179 89 L174 79 L164 74Z" fill="#F2C14E"/><path d="M161 104 L176 104 M170 98 L176 104 L170 110" fill="none" stroke="#CE3D4E" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 83 Q39 65 56 83 M34 96 Q45 84 56 96" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.75"/></g>
+  <g id="layer-lighting"><path d="M88 131 L136 131 M226 145 L285 145" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.72"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

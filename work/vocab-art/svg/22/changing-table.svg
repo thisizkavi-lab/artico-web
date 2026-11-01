@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: changing table (Noun)
+  CONTEXTUAL_DEFINITION: A raised nursery table with a safe padded area for diaper changes.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A freestanding waist-high furniture piece has a padded top, safety rails, and storage shelves, unlike a portable changing mat.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bright nursery wall and wood floor.
+    - Context_Layer: Diaper basket and folded towel on shelves.
+    - Focal_Layer: Raised changing table with rail around its top pad.
+    - Details_Layer: Four legs, storage basket, and safety edge.
+    - Lighting_Layer: Warm halo around the full piece of furniture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:changing table" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="table-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="table-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#table-bg)"/><path d="M0 153Q76 146 153 153T304 150V192H0Z" fill="#EADFCC"/><path d="M31 30H273V149H31Z" fill="#E3E8F0" opacity=".42"/><path d="M45 150V168M260 150V168" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M89 117H215V142H89Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M100 122H205V137H100Z" fill="#E3E8F0"/><path d="M109 126H171V135H109Z" fill="#FFFFFF"/><path d="M175 122H203V137H175Z" fill="#D9857F" opacity=".75"/><path d="M104 143L94 168M197 143L208 168" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#table-shadow)"><path d="M67 75Q67 69 74 69H230Q237 69 237 76V111H67Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M79 80H225V103H79Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.7"/><path d="M67 74V63Q67 59 73 59H231Q237 59 237 64V75" fill="none" stroke="#829A83" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M81 85Q151 78 222 85M84 97Q151 91 220 97" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><path d="M77 109L66 168M227 109L238 168" stroke="#80513F" stroke-width="5" stroke-linecap="round"/><path d="M85 110L80 168M219 110L224 168" stroke="#80513F" stroke-width="3.5" stroke-linecap="round"/><path d="M75 154H229" stroke="#80513F" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M102 47Q151 38 201 47" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="56" cy="78" r="2.4" fill="#D9A441"/><circle cx="248" cy="79" r="2.4" fill="#D9A441"/><path d="M105 67V75M199 67V75" stroke="#D9857F" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="109" rx="113" ry="72" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M87 37Q151 24 218 37" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

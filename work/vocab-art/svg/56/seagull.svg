@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: seagull (noun)
+  CONTEXTUAL_DEFINITION: A white-and-gray coastal gull with pointed dark-tipped wings, flying above the shore.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Keep a clean white body, broad gray wings with black tips, and a shallow wing sweep above surf; do not use the pelican's huge bill or pouch.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show gull in a shallow V glide, wings spanning x=54..242 y=47..104; white belly and head centered x=133..181 y=82..124, yellow short bill, gray mantle, black wing tips, pale sea below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:seagull" data-archetype="coastal-gull">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#C9D1D0;--c-secondary:#707E84;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gull-sky" x2="0" y2="1"><stop stop-color="#D8EAF2"/><stop offset="1" stop-color="#F6F1E7"/></linearGradient>
+  <linearGradient id="gull-water" x2="0" y2="1"><stop stop-color="#B6D3D6"/><stop offset="1" stop-color="#83B2B8"/></linearGradient>
+  <linearGradient id="gull-wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DDE2DF"/><stop offset="1" stop-color="#A9B5B7"/></linearGradient>
+  <filter id="gull-shadow" x="-20%" y="-25%" width="145%" height="155%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gull-sky)"/><path d="M0 123Q71 115 147 125T304 119V192H0Z" fill="#DFE6D8"/><path d="M0 144Q79 134 152 145T304 140V192H0Z" fill="url(#gull-water)"/><path d="M0 166Q80 158 157 167T304 162V192H0Z" fill="#97C0C1"/><circle cx="248" cy="39" r="23" fill="#F6DA92" opacity=".49"/></g>
+ <g id="layer-context"><path d="M18 152q36-7 72 0m116-1q37-7 80 0" fill="none" stroke="#D9ECE8" stroke-width="2" stroke-linecap="round"/><path d="M26 158q21-4 39 0m189-1q20-4 33 0" fill="none" stroke="#D9ECE8" stroke-width="1.3" stroke-linecap="round"/><path d="M44 142l-5-9m9 8 5-9m193 8 4-10" fill="none" stroke="#829271" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#gull-shadow)"><path d="M132 96Q139 82 155 81Q173 82 182 97Q180 112 164 118Q145 115 132 105Z" fill="#F8F7F0" stroke="#9EA7A8" stroke-width="1.4"/><path d="M149 94Q132 77 113 68Q86 55 54 47Q75 75 101 89Q121 100 143 105Z" fill="url(#gull-wing)" stroke="#7F8B8F" stroke-width="1.3"/><path d="M166 94Q183 75 204 65Q224 54 244 49Q233 76 210 90Q189 102 172 105Z" fill="url(#gull-wing)" stroke="#7F8B8F" stroke-width="1.3"/><path d="M54 47L36 38L61 60L70 58L57 70L82 73Z" fill="#323E48" stroke="#26323B" stroke-width="1.1"/><path d="M244 49L262 39L241 61L232 58L244 71L220 75Z" fill="#323E48" stroke="#26323B" stroke-width="1.1"/><path d="M142 97Q151 85 164 91Q171 100 163 108Q151 111 142 103Z" fill="#FFFFFF"/><circle cx="172" cy="88" r="2.1" fill="#1E2A3B"/><path d="M181 92L202 90L184 98Z" fill="#E8B542" stroke="#9A7034" stroke-width="1"/><path d="M146 104l-15 8 20-4m-4 0 19 7" fill="#E9EBE7" stroke="#9DA6A5" stroke-width=".9"/></g>
+ <g id="layer-details"><path d="M92 74q23 12 42 22m-31-13q18 10 34 17m58-14q16-10 31-15m-28 21q18-8 34-17" fill="none" stroke="#8D9A9D" stroke-width="1.1" stroke-linecap="round"/><path d="M98 79l22 13" fill="none" stroke="#99A5A7" stroke-width="1.2" stroke-linecap="round"/><path d="M202 76l20-13" fill="none" stroke="#99A5A7" stroke-width="1.2" stroke-linecap="round"/><path d="M147 91q8-8 16-6" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/><circle cx="115" cy="126" r="1.3" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M103 71q19 8 33 19m43-2q18-12 33-17" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8" stroke-linecap="round"/><ellipse cx="157" cy="93" rx="45" ry="27" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

@@ -1,0 +1,17 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: flag (corner flag)
+ CONTEXTUAL_DEFINITION: The small pennant on a short pole planted at a soccer field corner.
+ PEDAGOGICAL_ARCHETYPE: Hero Object (+ Context Scale Cue)
+ SYNONYM_GUARD: Show a fixed pennant on a planted corner pole; the linesman carries a checkered flag in hand.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Large amber triangular flagpole at corner arc where the white touchline and goal line meet; grass pitch beyond.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:flag" data-archetype="corner-pennant-on-soccer-pitch">
+ <defs><linearGradient id="flag-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient><linearGradient id="flag-cloth" x2="1" y2="1"><stop stop-color="#F2C14E"/><stop offset="1" stop-color="#D49B2A"/></linearGradient><filter id="flag-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#flag-sky)"/><path d="M0 66H304V192H0Z" fill="#91A686"/><path d="M0 67h304" stroke="#E7EEE4" stroke-width="2"/></g>
+ <g id="layer-context"><path d="M63 69v108m0 0h217" stroke="#F4F6FA" stroke-width="3"/><path d="M63 69q40 5 59 38" fill="none" stroke="#F4F6FA" stroke-width="2"/><path d="M73 78v91m0 0h190" stroke="#C3DAB9" stroke-width="1.5" opacity=".6"/><ellipse cx="67" cy="176" rx="34" ry="5" fill="#405B61" opacity=".18"/><circle cx="222" cy="43" r="11" fill="#F2C14E" opacity=".75"/></g>
+ <g id="layer-focal" filter="url(#flag-shadow)"><path d="M64 175V45" stroke="#64748B" stroke-width="7" stroke-linecap="round"/><path d="M64 175V45" stroke="#F1F5F9" stroke-width="3.5" stroke-linecap="round"/><path d="M68 48q30-7 56 9l-25 21q-15-11-31-7Z" fill="url(#flag-cloth)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M70 51q20-4 42 5" fill="none" stroke="#FCE29C" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="64" cy="178" rx="11" ry="4" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M53 178h22" stroke="#965D28" stroke-width="2"/></g>
+ <g id="layer-details"><path d="M102 106q9 5 13 13m-45 34h14m112 0h43" fill="none" stroke="#DCE8DF" stroke-width="1.5"/><path d="M130 115l10 2m-9 7 7 2m-57 38h11" stroke="#A8B89B" stroke-width="1.1" opacity=".7"/><circle cx="91" cy="95" r="1.7" fill="#FFFFFF"/><path d="M64 41v-7" stroke="#64748B" stroke-width="2"/><path d="M73 52q18-5 33 1" fill="none" stroke="#FCE29C" stroke-width="1.5"/><path d="M70 58q15-4 27 2" fill="none" stroke="#D49B2A" stroke-width="1.1" opacity=".65"/><path d="M46 174l4-5m16 5 4-5" stroke="#568552" stroke-width="1.5" stroke-linecap="round"/><circle cx="80" cy="144" r="1.4" fill="#F4F6FA"/></g>
+ <g id="layer-lighting"><ellipse cx="89" cy="67" rx="38" ry="24" fill="#FFF6E7" opacity=".13"/><path d="M71 50q21-6 38 1" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".9"/></g>
+</svg>

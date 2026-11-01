@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: reference (landlord) (Noun)
+  CONTEXTUAL_DEFINITION: A recommendation from a previous landlord that supports a renter's application.
+  PEDAGOGICAL_ARCHETYPE: 3 — Endorsement handover
+  SYNONYM_GUARD: Show a previous landlord passing a positive recommendation to an agent for the renter; the paper itself is not a general mention or citation.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Rental office with a blank application folder.
+    - Context_Layer: New landlord or agent looks at the recommendation.
+    - Focal_Layer: Former landlord hands over a blank letter while renter waits nearby.
+    - Details_Layer: Approval checkmark shape and ruled lines, no text.
+    - Lighting_Layer: Blue path connects former landlord, letter, and agent.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:reference (landlord)" data-archetype="recommendation-scene">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF2"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M91 125H214V145H91Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="151" cy="164" rx="110" ry="6" fill="#958977" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M117 35H164V79H117Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M122 43H157M122 50H153M122 57H159" stroke="#CBD5E1" stroke-width="1.2"/><circle cx="140" cy="68" r="5" fill="#7FB07A" stroke="#4F8455" stroke-width="1.2"/><path d="M137 68L140 71L145 64" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><path d="M30 127H77V145H30Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.4"/><path d="M221 127H275V145H221Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="75" cy="83" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.7"/><path d="M65 82Q65 69 76 69Q86 70 85 83L80 76H69Z" fill="#57463E"/><path d="M64 97Q75 90 86 97L91 125H58Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M68 99L93 108L123 104" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M68 99L93 108L123 104" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M69 124L65 151M82 124L87 151" stroke="#1E2A3B" stroke-width="7.5" stroke-linecap="round"/><path d="M69 124L65 151M82 124L87 151" stroke="#344254" stroke-width="4.2" stroke-linecap="round"/><circle cx="228" cy="83" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M218 82Q218 69 229 69Q239 70 238 83L233 76H222Z" fill="#3A2E2B"/><path d="M217 97Q228 90 239 97L244 125H211Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M221 99L201 109L177 103" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M221 99L201 109L177 103" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M222 124L218 151M235 124L240 151" stroke="#1E2A3B" stroke-width="7.5" stroke-linecap="round"/><path d="M222 124L218 151M235 124L240 151" stroke="#344254" stroke-width="4.2" stroke-linecap="round"/><path d="M137 83L166 79L171 116L142 120Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="1.8"/><path d="M143 91L162 88M144 98L164 95M145 111L160 109" stroke="#94A3B8" stroke-width="1.1"/><path d="M149 103L154 108L163 99" fill="none" stroke="#7FB07A" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M120 81Q101 67 86 76M174 87Q193 70 214 78" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M87 130H118M181 129H211" stroke="#D89A6C" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="153" cy="99" rx="48" ry="43" fill="#FEF3C7" opacity=".17"/><path d="M164 103L171 103L171 110" fill="none" stroke="#4A72B2" stroke-width="1.6"/></g>
+</svg>

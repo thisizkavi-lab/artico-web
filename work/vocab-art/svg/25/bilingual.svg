@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: bilingual (Adjective)
+  CONTEXTUAL_DEFINITION: Able to speak and understand two languages.
+  PEDAGOGICAL_ARCHETYPE: 2 — People in environment
+  SYNONYM_GUARD: One central speaker naturally responds to two different conversation partners with two distinct abstract speech patterns.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community language meetup table.
+    - Context_Layer: Two partners sit on either side of a central speaker.
+    - Focal_Layer: Central person speaks comfortably in two visual sound styles.
+    - Details_Layer: Two speech bubbles and reciprocal listening gestures.
+    - Lighting_Layer: Balanced highlight connects both conversations.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:bilingual" data-archetype="people-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bilingual-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="bilingual-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bilingual-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M71 119H237V128H71Z" fill="#A98A64"/><path d="M82 128V149M226 128V149" stroke="#8D765A" stroke-width="2.8"/><circle cx="53" cy="92" r="10" fill="#80513F"/><path d="M43 92Q44 79 54 80Q64 81 63 93" fill="#27364B"/><path d="M38 108Q53 101 68 108L72 122L62 130L42 124Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><circle cx="251" cy="91" r="10" fill="#E7B99B"/><path d="M241 91Q242 78 252 79Q262 80 261 92" fill="#27364B"/><path d="M236 107Q251 100 266 107L270 121L260 129L240 123Z" fill="#91A77C" stroke="#54765A" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#bilingual-shadow)"><circle cx="151" cy="81" r="13" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M138 81Q139 65 152 66Q165 67 164 82L157 85Q154 74 148 75Q143 76 141 87Z" fill="#27364B"/><path d="M131 99Q151 90 171 99L178 124L164 136L139 127Z" fill="#D9857F" stroke="#A95059" stroke-width="1.6"/><path d="M139 102L119 111L107 107M168 102L185 111L199 105" fill="none" stroke="#1E2A3B" stroke-width="4.7" stroke-linecap="round"/><path d="M139 102L119 111L107 107M168 102L185 111L199 105" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/><path d="M142 130L136 149M162 131L174 149" stroke="#315782" stroke-width="5.7" stroke-linecap="round"/><path d="M75 26Q75 17 88 17H126Q139 17 139 28V45Q139 56 126 56H105L97 64L98 55H88Q75 55 75 45Z" fill="#DCECFB" stroke="#5479AC" stroke-width="1.4"/><path d="M165 28Q165 17 178 17H216Q229 17 229 28V45Q229 56 216 56H204L205 64L195 56H178Q165 56 165 45Z" fill="#F7E4D8" stroke="#D9857F" stroke-width="1.4"/><path d="M85 35H93M99 35H111M117 35H130M175 34Q181 27 187 34Q193 41 199 34Q205 27 212 34" fill="none" stroke="#5479AC" stroke-width="1.8" stroke-linecap="round"/><circle cx="187" cy="45" r="2" fill="#D9857F"/><circle cx="199" cy="45" r="2" fill="#D9857F"/></g>
+  <g id="layer-details"><path d="M68 72L75 68M232 71L237 67" stroke="#D9A441" stroke-width="1.6"/><path d="M145 92Q151 95 158 92" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="151" cy="119" r="3" fill="#F6D777"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="88" rx="137" ry="80" fill="#FEF9C3" opacity=".09"/><path d="M75 27Q75 17 88 17H126M165 28Q165 17 178 17H216" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".75"/></g>
+</svg>

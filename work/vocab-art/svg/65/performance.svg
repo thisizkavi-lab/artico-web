@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: performance
+ CONTEXTUAL_DEFINITION: A live entertainer presenting an act onstage before spectators.
+ PEDAGOGICAL_ARCHETYPE: solo live stage act with audience
+ SYNONYM_GUARD: Show the event of a live performance with one entertainer, stage lights and spectators; do not focus on a movie screen or rehearsal.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A solo acrobat balances on a low stage platform under a spotlight while a seated audience watches.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:performance" data-archetype="solo live stage act with audience">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M25 22H279V145H25Z" fill="#26384A"/><path d="M34 30H270V140H34Z" fill="#405663"/>
+  <path d="M48 41H256V134H48Z" fill="#F2E2C9"/>
+  <path d="M37 39H72V137H37Z M267 39H232V137H267Z" fill="#B85E5A"/>
+  <path d="M40 47Q54 55 70 46V135H40Z M264 47Q250 55 234 46V135H264Z" fill="#D17A6B"/>
+  <path d="M59 132H245V142H59Z" fill="#D6A64C"/><path d="M47 142H257V151H47Z" fill="#8C725A"/>
+  <path d="M0 153H304" stroke="#E8DCC5" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M49 149H255" stroke="#26384A" stroke-width="3" fill="none"/>
+  <circle cx="58" cy="149" r="3.3" fill="#D29A78"/><circle cx="78" cy="149" r="3.3" fill="#D29A78"/><circle cx="98" cy="149" r="3.3" fill="#D29A78"/><circle cx="206" cy="149" r="3.3" fill="#D29A78"/><circle cx="226" cy="149" r="3.3" fill="#D29A78"/><circle cx="246" cy="149" r="3.3" fill="#D29A78"/>
+  <path d="M53 153Q58 150 63 153L65 159H51Z M73 153Q78 150 83 153L85 159H71Z M93 153Q98 150 103 153L105 159H91Z M201 153Q206 150 211 153L213 159H199Z M221 153Q226 150 231 153L233 159H219Z M241 153Q246 150 251 153L253 159H239Z" fill="#597D8B"/>
+  <path d="M46 161H106m92 0h60" stroke="#405663" stroke-width="1.5" fill="none"/>
+  <path d="M62 136H242" stroke="#F1E5D2" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M119 119L137 98H167L185 119V132H119Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M124 118H180" stroke="#D6A64C" stroke-width="2" fill="none"/>
+  <circle cx="151" cy="70" r="7" fill="#D29A78"/><path d="M143 79Q151 75 159 79L164 101L150 111L138 98Z" fill="#D6A64C"/>
+  <path d="M145 84L126 70m28 15 20-17" stroke="#D29A78" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  <path d="M144 98L132 117m20-15 16 14" stroke="#26384A" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <path d="M124 69q-4-7 0-11m51 9q4-7 0-11" stroke="#D29A78" stroke-width="1.7" fill="none"/>
+  <circle cx="125" cy="56" r="2" fill="#D6A64C"/><circle cx="175" cy="54" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M55 37H249" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <circle cx="66" cy="29" r="2" fill="#E8C76A"/><circle cx="238" cy="29" r="2" fill="#E8C76A"/>
+  <path d="M100 56q-6-5 0-11m8 7q-6-5 0-11m88 15q6-5 0-11m-8 7q6-5 0-11" stroke="#D6A64C" stroke-width="1.3" fill="none"/>
+  <path d="M112 130H190" stroke="#F5E7CD" stroke-width="1" fill="none"/>
+  <circle cx="151" cy="43" r="2.4" fill="#E8C76A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="91" rx="73" ry="69" fill="#E7C66B" opacity=".12"/>
+  <path d="M97 27L128 96m108-69-53 72" stroke="#FFF1C7" stroke-width="1.3" opacity=".68" fill="none"/>
+  <ellipse cx="151" cy="132" rx="81" ry="10" fill="#E7C66B" opacity=".1"/>
+ </g>
+</svg>

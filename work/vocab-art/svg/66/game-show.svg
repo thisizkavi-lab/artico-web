@@ -1,0 +1,47 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: game show
+ CONTEXTUAL_DEFINITION: A TV contest with a host, contestants and a physical game mechanism.
+ PEDAGOGICAL_ARCHETYPE: television game show with spinning wheel
+ SYNONYM_GUARD: Show a game action such as a spinning wheel and contestants; distinguish from a knowledge quiz with buzzers.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A host beside a large prize wheel addresses two excited contestants on a brightly lit television game-show set.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:game show" data-archetype="television game show with spinning wheel">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M22 22H282V148H22Z" fill="#26384A"/><path d="M31 30H273V144H31Z" fill="#405663"/>
+  <path d="M47 41H257V119H47Z" fill="#597D8B"/>
+  <path d="M44 121H260V143H44Z" fill="#B85E5A"/><path d="M39 143H265V151H39Z" fill="#8C725A"/>
+  <circle cx="151" cy="74" r="42" fill="#F2E5CE" stroke="#D6A64C" stroke-width="3"/>
+  <path d="M151 32V116m-42-42h84m-72-30 60 60m0-60-60 60" stroke="#B85E5A" stroke-width="1.4" fill="none"/>
+  <circle cx="151" cy="74" r="8" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M264 64L278 56V80L264 72Z" fill="#26384A"/><circle cx="273" cy="68" r="2" fill="#D6A64C"/>
+  <path d="M40 147H264" stroke="#26384A" stroke-width="2" fill="none"/>
+  <circle cx="54" cy="149" r="2.8" fill="#D29A78"/><circle cx="74" cy="149" r="2.8" fill="#D29A78"/><circle cx="230" cy="149" r="2.8" fill="#D29A78"/><circle cx="250" cy="149" r="2.8" fill="#D29A78"/>
+  <path d="M50 153h9m10 0h9m146 0h9m10 0h9" stroke="#405663" stroke-width="1.8" fill="none"/>
+  <path d="M53 38H250" stroke="#D6A64C" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="89" cy="83" r="7" fill="#D29A78"/><path d="M81 91Q89 87 97 91L101 123H77Z" fill="#B85E5A"/>
+  <path d="M84 97L72 108m20-11 12 10" stroke="#D29A78" stroke-width="2.5" fill="none"/>
+  <path d="M82 121L79 136m17-15 4 15" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <circle cx="217" cy="83" r="7" fill="#D29A78"/><path d="M209 91Q217 87 225 91L229 123H205Z" fill="#D6A64C"/>
+  <path d="M212 97L201 108m20-11 12 10" stroke="#D29A78" stroke-width="2.5" fill="none"/>
+  <path d="M210 121L207 136m17-15 4 15" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <path d="M151 34L146 44H156Z" fill="#B85E5A"/><path d="M149 34H153" stroke="#F7EAD3" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M55 48l9 10m176-10-9 10m-143 4 8 5m107-5-8 5" stroke="#F7EAD3" stroke-width="1.2" fill="none"/>
+  <circle cx="119" cy="51" r="2" fill="#E8C76A"/><circle cx="184" cy="51" r="2" fill="#E8C76A"/><circle cx="119" cy="98" r="2" fill="#798C72"/><circle cx="184" cy="98" r="2" fill="#B85E5A"/>
+  <path d="M64 128H238" stroke="#F4E8D2" stroke-width="1" fill="none"/>
+  <path d="M83 74q5-4 10 0m119 0q5-4 10 0" stroke="#26384A" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="85" rx="106" ry="61" fill="#E7C66B" opacity=".1"/>
+  <path d="M45 31L78 88m232-57-71 59" stroke="#FFF1C7" stroke-width="1.2" opacity=".58" fill="none"/>
+  <path d="M47 121H254" stroke="#FFF7E4" stroke-width="1" opacity=".55" fill="none"/>
+ </g>
+</svg>

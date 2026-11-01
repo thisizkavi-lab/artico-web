@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: bank statement (noun)
+  CONTEXTUAL_DEFINITION: A bank-produced record listing deposits, withdrawals, and other account transactions over a period.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero document with transaction history
+  SYNONYM_GUARD: Use several chronological transaction rows and paired in/out symbols; unlike balance, emphasize a history record rather than one remaining amount.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Full white statement page x76..228 on a blue account folder; rows of alternating green incoming and copper outgoing markers with ruled lines; no words or numerals.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:bank statement" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="statement-folder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="statement-paper"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></radialGradient>
+    <path id="statement-page" d="M88 39 H204 L224 59 V151 H88 Z"/>
+    <clipPath id="statement-clip"><use href="#statement-page"/></clipPath>
+    <filter id="statement-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="153" cy="163" rx="82" ry="9" fill="#DDD4C3"/></g>
+  <!-- 2. Banking folder and desk -->
+  <g id="layer-context"><path d="M61 135 H241 V151 H61 Z" fill="url(#statement-folder)" stroke="#1E2A3B" stroke-width="2"/><path d="M73 141 H229" stroke="#8EB0DE" stroke-width="2"/><path d="M79 45 H90 V143 H79 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <!-- 3. Primary statement with account activity rows -->
+  <g id="layer-focal" filter="url(#statement-shadow)"><use href="#statement-page" fill="url(#statement-paper)" stroke="#1E2A3B" stroke-width="2.5"/><g clip-path="url(#statement-clip)"><path d="M96 55 H180" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><path d="M96 63 H174" stroke="#94A3B8" stroke-width="1.7"/><path d="M97 78 H211 M97 94 H211 M97 110 H211 M97 126 H211" stroke="#CBD5E1" stroke-width="1.5"/><circle cx="104" cy="85" r="4.2" fill="#7FB07A"/><path d="M113 85 H148" stroke="#64748B" stroke-width="1.7" stroke-linecap="round"/><path d="M174 85 H204" stroke="#568552" stroke-width="1.9" stroke-linecap="round"/><circle cx="104" cy="101" r="4.2" fill="#D97A43"/><path d="M113 101 H157" stroke="#64748B" stroke-width="1.7" stroke-linecap="round"/><path d="M176 101 H204" stroke="#B55B28" stroke-width="1.9" stroke-linecap="round"/><circle cx="104" cy="117" r="4.2" fill="#7FB07A"/><path d="M113 117 H149" stroke="#64748B" stroke-width="1.7" stroke-linecap="round"/><path d="M176 117 H204" stroke="#568552" stroke-width="1.9" stroke-linecap="round"/><circle cx="104" cy="133" r="4.2" fill="#D97A43"/><path d="M113 133 H155" stroke="#64748B" stroke-width="1.7" stroke-linecap="round"/><path d="M176 133 H204" stroke="#B55B28" stroke-width="1.9" stroke-linecap="round"/></g></g>
+  <!-- 4. Page fold and chronology cues -->
+  <g id="layer-details"><path d="M204 39 V59 H224" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M99 72 H124" stroke="#8EB0DE" stroke-width="1.7"/><path d="M190 72 H209" stroke="#8EB0DE" stroke-width="1.7"/><path d="M225 74 V135" stroke="#4A72B2" stroke-width="2" stroke-dasharray="4 4"/><path d="M221 130 L225 137 L229 130 Z" fill="#4A72B2"/></g>
+  <!-- 5. Paper highlights -->
+  <g id="layer-lighting"><path d="M94 45 H145" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M243 54 L243 63 M239 58 H247" stroke="#F2C14E" stroke-width="2.4" stroke-linecap="round"/><path d="M97 145 H131" stroke="#8EB0DE" stroke-width="1.7"/></g>
+</svg>

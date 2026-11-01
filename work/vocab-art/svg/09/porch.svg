@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: porch (Noun)
+  CONTEXTUAL_DEFINITION: A covered area at the entrance of a house, often with steps or seating.
+  PEDAGOGICAL_ARCHETYPE: 2 (Part-of-building focus)
+  SYNONYM_GUARD: Show a small roofed, ground-level entry platform attached to a house, separate from an upper balcony.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front facade of a small house.
+    - Context_Layer: Central front door and entry canopy held by two posts.
+    - Focal_Layer: Shallow porch landing and short steps down to the lawn.
+    - Details_Layer: A potted plant beside the entrance.
+    - Lighting_Layer: Warm entry light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:porch" data-archetype="building-feature">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 147 Q152 139 304 147 L304 192 L0 192Z" fill="#B7CEA9"/><ellipse cx="152" cy="169" rx="105" ry="7" fill="#9DB58F"/><path d="M39 69 L152 37 L265 69 L265 148 L39 148Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M29 70 L152 32 L275 70Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.2"/></g>
+  <g id="layer-context"><path d="M101 84 L203 84 L193 71 L111 71Z" fill="#B97840" stroke="#1E2A3B" stroke-width="1.8"/><path d="M108 84 L108 136 M196 84 L196 136" stroke="#8A5A35" stroke-width="4"/><rect x="132" y="88" width="40" height="58" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><rect x="137" y="93" width="30" height="22" rx="1" fill="#DCECFB"/><path d="M152 93 L152 115 M137 104 L167 104" stroke="#FAF8F3" stroke-width="1.4"/><circle cx="164" cy="127" r="2" fill="#F2C14E"/><path d="M102 137 L202 137 L202 145 L102 145Z" fill="#D8CDAF" stroke="#8E7E60" stroke-width="1.6"/><path d="M126 145 L126 153 L178 153 L178 145 M126 153 L126 161 L178 161 L178 153 M126 161 L126 168 L178 168" fill="none" stroke="#8E7E60" stroke-width="3"/></g>
+  <g id="layer-details"><path d="M78 144 L78 130 L91 130 L91 144Z" fill="#B97840" stroke="#8A5A35" stroke-width="1.5"/><path d="M84 130 L84 119 M78 127 L73 121 M84 124 L90 116" fill="none" stroke="#537D50" stroke-width="2.5"/><circle cx="73" cy="119" r="5" fill="#7FB07A"/><circle cx="91" cy="115" r="6" fill="#8FB987"/><circle cx="188" cy="78" r="5" fill="#F2C14E" opacity="0.8"/></g>
+  <g id="layer-lighting"><path d="M46 69 L152 39 L258 69" fill="none" stroke="#8EB0DE" stroke-width="1.8"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: take a flight
+  CONTEXTUAL_DEFINITION: To travel as a passenger on an airplane journey.
+  PEDAGOGICAL_ART_DIRECTOR: Show a traveler boarding an airplane through a jet bridge at the airport, with luggage ready for departure.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action + aircraft
+  SYNONYM_GUARD: Depict a passenger journey beginning at the boarding door, not a flying-airplane noun or the pilot's cockpit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Passenger plane body from x=83..267 y=70..141; jet bridge connects from x=21..120 at y=91..118; traveler with carry-on approaches open plane door at x=145..171; runway line at y=151.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:take a flight" data-archetype="peak-moment-action-air-boarding">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="flight-body" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#EFF4F4"/><stop offset="1" stop-color="#A9BCC6"/></linearGradient>
+    <linearGradient id="flight-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E5F2F6"/><stop offset="1" stop-color="#A9CAD9"/></linearGradient>
+    <radialGradient id="flight-halo"><stop stop-color="#E4EFF4" stop-opacity=".65"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="flight-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="148" width="304" height="44" fill="#E5E9E7"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="1.5"/><path d="M17 169 H291" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="18 12"/><ellipse cx="153" cy="160" rx="126" ry="8" fill="#DDD4C3" opacity=".7"/></g>
+  <g id="layer-context"><circle cx="250" cy="39" r="16" fill="#F2C14E" opacity=".68"/><path d="M31 82 H110 V111 H31 Z" fill="#DCE5E7" stroke="#64748B" stroke-width="1.8"/><path d="M37 88 H105 V105 H37 Z" fill="#B9D3DE" stroke="#5479AC" stroke-width="1.2"/><path d="M46 112 V140 M97 112 V140" stroke="#64748B" stroke-width="2"/><path d="M104 87 H120 V118 H103 Z" fill="#D0DADC" stroke="#64748B" stroke-width="1.5"/><path d="M112 91 L129 82" stroke="#64748B" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#flight-shadow)"><path d="M96 104 Q99 84 118 78 H237 Q253 79 260 93 L271 111 L262 137 H95 Z" fill="url(#flight-body)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M105 91 Q110 83 122 83 H151 V102 H100 Z" fill="url(#flight-glass)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M211 84 Q231 81 242 88 L252 104 H211 Z" fill="#263548" stroke="#1E2A3B" stroke-width="1.5"/><path d="M215 87 H237 Q245 90 249 100 H215 Z" fill="url(#flight-glass)" stroke="#F2C14E" stroke-width="1.1"/><path d="M157 84 L178 53 L185 54 L181 85 M182 119 L210 143 L218 142 L203 116" fill="#91ABC2" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M137 109 L160 112" stroke="#5479AC" stroke-width="2"/><path d="M113 135 H257" stroke="#5479AC" stroke-width="2.4"/><path d="M138 132 H177 V140 H138 Z" fill="#263548" stroke="#1E2A3B" stroke-width="1.4"/><path d="M142 134 H173 V138 H142 Z" fill="#C6DCE5"/><path d="M152 110 V135" stroke="#1E2A3B" stroke-width="2"/><path d="M157 107 H174 V134 H157 Z" fill="#263548" stroke="#1E2A3B" stroke-width="1.6"/><path d="M160 110 H171 V130 H160 Z" fill="#D9EAF0" stroke="#F2C14E" stroke-width="1.2"/><path d="M174 120 H191" stroke="#F2C14E" stroke-width="2.2"/><circle cx="237" cy="139" r="4" fill="#263548"/><path d="M237 143 V150 M237 150 H253" stroke="#1E2A3B" stroke-width="2"/><path d="M96 108 L87 108 H75" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M112 88 H144 M213 91 H240" stroke="#FFFFFF" stroke-width="1.2"/><path d="M125 116 H148 M221 116 H250" stroke="#E0E8E9" stroke-width="1.1"/><circle cx="110" cy="122" r="2" fill="#F2C14E"/><path d="M21 102 H103" stroke="#FFFFFF" stroke-width="1.1"/><path d="M119 62 Q129 56 139 60" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="157" cy="88" rx="121" ry="74" fill="url(#flight-halo)" opacity=".15"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M92 146 H272" stroke="#1E2A3B" stroke-width=".8" opacity=".3"/></g>
+</svg>

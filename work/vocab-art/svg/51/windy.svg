@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: windy (Adjective)
+  CONTEXTUAL_DEFINITION: Weather with noticeable moving air, shown by a person leaning into a breeze and leaves blowing.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person bracing against a lively but ordinary gust, with a scarf streaming and loose leaves moving across the path.
+  PEDAGOGICAL_ARCHETYPE: 3 - Broad wind condition
+  SYNONYM_GUARD: Windy is clearly breezy but gentler than a gale, with no storm clouds or destructive effects.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A walker leans lightly forward as a long scarf and a few leaves blow sideways across a bright open hill.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:windy" data-archetype="person-in-moving-air">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="wi-sky" x2="0" y2="1"><stop stop-color="#A8CEDB"/><stop offset="1" stop-color="#EAF1E7"/></linearGradient><linearGradient id="wi-hill" x2="0" y2="1"><stop stop-color="#A4BC93"/><stop offset="1" stop-color="#6E8E73"/></linearGradient><linearGradient id="wi-jacket" x2="0" y2="1"><stop stop-color="#7395A3"/><stop offset="1" stop-color="#466879"/></linearGradient><linearGradient id="wi-scarf" x2="1" y2="0"><stop stop-color="#D88A63"/><stop offset="1" stop-color="#AA594F"/></linearGradient><filter id="wi-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#304A4E" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wi-sky)"/><path d="M0 126Q76 108 151 126T304 118V192H0Z" fill="#A7B995"/><path d="M0 150Q78 132 153 150T304 140V192H0Z" fill="url(#wi-hill)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A4B296" stroke-width="1.2"/><ellipse cx="151" cy="164" rx="67" ry="5" fill="#435847" opacity=".16"/><path d="M25 143Q25 133 34 132Q40 124 48 132Q58 128 66 143Z" fill="#6C8C70"/><path d="M237 145Q238 134 247 133Q253 124 262 133Q273 129 283 145Z" fill="#6C8C70"/><path d="M35 136q5-6 10 0m198 2q5-6 10 0" fill="none" stroke="#C0D5A5" stroke-width="1.6"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#wi-shadow)">
+  <path d="M121 76Q122 58 140 56Q158 56 163 76L160 99L127 99Z" fill="#D9AD8A" stroke="#835F4A" stroke-width="1.2"/><path d="M120 76Q121 58 139 55Q158 56 164 76Q146 68 120 76Z" fill="#53636B"/><path d="M115 99L104 107L106 134L127 149L151 134L151 106L141 98Z" fill="url(#wi-jacket)" stroke="#415E6B" stroke-width="1.6"/><path d="M111 108L97 116L88 129L93 134L112 123M145 106L157 116L166 110" fill="none" stroke="#D9AD8A" stroke-width="6.5" stroke-linecap="round"/><path d="M129 147L120 163L129 166L139 149M144 145L151 161L162 161L153 143" fill="#3B5058" stroke="#2C434B" stroke-width="1.5"/><path d="M119 163h13m18-2h13" fill="none" stroke="#2B4149" stroke-width="2.2" stroke-linecap="round"/><path d="M119 77Q112 81 105 76Q94 69 82 73L62 66L51 68L68 78L91 84Q104 88 119 86Z" fill="url(#wi-scarf)" stroke="#8F5A4D" stroke-width="1.2"/><path d="M60 67l-9-6m15 14-12 1" fill="none" stroke="#F0B088" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M31 55Q70 46 103 55T172 54T245 57T304 51" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/><path d="M18 94Q56 86 92 94T166 94T244 96T304 90" fill="none" stroke="#D8EBE5" stroke-width="1.8" stroke-linecap="round"/><path d="M173 109Q185 101 196 108Q186 117 173 109Z M205 75Q217 68 227 76Q218 84 205 75Z M74 112Q84 105 93 111Q85 119 74 112Z" fill="#D99B60" stroke="#A46D49" stroke-width="1.1"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/><path d="M117 75q5-14 19-15m-13 43 16 2" fill="none" stroke="#C7D7D7" stroke-width="1.2"/><path d="M175 108q7-6 13-1m19-32q7-6 13-1m-143 37q7-6 12-1" fill="none" stroke="#F0C891" stroke-width="1"/><circle cx="97" cy="148" r="1.4" fill="#F6F9EF"/><circle cx="216" cy="132" r="1.3" fill="#F6F9EF"/></g>
+ <g id="layer-lighting"><path d="M123 76q4-13 16-15m-4 65 10 8" fill="none" stroke="#BFD1D5" stroke-width="1.2"/><path d="M28 56q35-11 69-1m105 39q39-8 74-2" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/></g>
+</svg>

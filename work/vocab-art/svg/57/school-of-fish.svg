@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: school of fish (noun phrase)
+  CONTEXTUAL_DEFINITION: A coordinated group of small fish swimming closely together in the same direction.
+  PEDAGOGICAL_ARCHETYPE: 4 - Group pattern and coordinated movement
+  SYNONYM_GUARD: Show many similar fish with matching orientation and tight spacing; do not show a single fish or scattered unrelated species.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Five or six small silver fish form a compact curved school moving right through open blue water; repeated bodies, fins, eyes, and short directional strokes make the group pattern the focal point.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:school of fish" data-archetype="coordinated-school-swimming-in-formation">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#78A9AD;--c-secondary:#3C626B;--c-accent:#DDAE53;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="school-water" x2="0" y2="1"><stop stop-color="#9AC8C8"/><stop offset="1" stop-color="#3F7F93"/></linearGradient>
+  <linearGradient id="school-fish" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B4CFCA"/><stop offset="1" stop-color="#6F9A9D"/></linearGradient>
+  <filter id="school-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DCEAE7"/><path d="M0 24Q75 17 151 26T304 22V192H0Z" fill="url(#school-water)"/><path d="M0 155Q72 149 151 157T304 152V192H0Z" fill="#4B8998"/></g>
+ <g id="layer-context"><path d="M0 29q43-7 81 0m143-3q39-7 80 0" fill="none" stroke="#DAEEE7" stroke-width="1.5"/><path d="M14 139q17-6 34 0m217-5q16-6 30 0m-152 37q18-5 37 0" fill="none" stroke="#A9D4D2" stroke-width="1.4" stroke-linecap="round"/><circle cx="40" cy="77" r="2" fill="#EAF7F2"/><circle cx="48" cy="68" r="1.2" fill="#EAF7F2"/><ellipse cx="157" cy="135" rx="88" ry="7" fill="#18404A" opacity=".11"/></g>
+ <g id="layer-focal" filter="url(#school-shadow)">
+  <g fill="url(#school-fish)" stroke="#3E646C" stroke-width="1.1" stroke-linejoin="round">
+   <path d="M90 74Q101 63 119 69Q126 72 129 77Q121 83 107 84Q97 83 90 74Z"/><path d="M83 74L73 66L74 81Z"/><path d="M104 68L109 62L113 69Z"/>
+   <path d="M134 96Q145 84 164 90Q171 93 174 99Q164 105 151 106Q141 104 134 96Z"/><path d="M135 96L125 88L126 103Z"/><path d="M148 89L153 82L157 90Z"/>
+   <path d="M177 73Q189 61 208 67Q216 70 219 76Q209 83 195 84Q184 82 177 73Z"/><path d="M178 73L168 65L169 80Z"/><path d="M191 66L196 59L200 67Z"/>
+   <path d="M213 104Q224 93 242 99Q249 102 252 108Q243 114 230 115Q220 113 213 104Z"/><path d="M214 104L204 96L205 111Z"/><path d="M227 98L232 91L236 99Z"/>
+   <path d="M102 124Q113 113 131 119Q139 122 142 128Q132 134 119 135Q109 133 102 124Z"/><path d="M103 124L93 116L94 131Z"/><path d="M116 118L121 111L125 119Z"/>
+   <path d="M159 126Q170 115 187 121Q195 124 198 130Q189 136 176 137Q166 135 159 126Z"/><path d="M160 126L150 118L151 133Z"/><path d="M173 120L178 113L182 121Z"/>
+  </g>
+  <g fill="#1E2A3B"><circle cx="119" cy="74" r="1.2"/><circle cx="164" cy="95" r="1.2"/><circle cx="208" cy="72" r="1.2"/><circle cx="241" cy="104" r="1.2"/><circle cx="131" cy="124" r="1.2"/><circle cx="188" cy="126" r="1.2"/></g>
+  <path d="M94 71q15-11 29-3m44 25q15-12 30-4m13 8q15-9 29-2m-148 26q14-10 28-4m34-2q15-9 28-2" fill="none" stroke="#E8F3EC" stroke-width="1.1" opacity=".8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M70 71l-7-4m56 27 8-3m56-27 8-4m69 39 7-2m-146 26 7-3m57 11 7-3" fill="none" stroke="#DDEFE8" stroke-width="1.2" stroke-linecap="round"/><circle cx="70" cy="106" r="1.8" fill="#E7F6F0"/><circle cx="262" cy="81" r="1.4" fill="#E7F6F0"/><path d="M46 119q7-3 13 0m204-18q7-3 13 0" fill="none" stroke="#C5E1DD" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M95 68q12-8 23-4m44 21q12-8 23-4m-60 35q12-8 23-4" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".58" stroke-linecap="round"/><ellipse cx="157" cy="96" rx="83" ry="35" fill="#FFFFFF" opacity=".02"/></g>
+</svg>

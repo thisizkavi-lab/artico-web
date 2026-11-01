@@ -1,0 +1,26 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 49 - Camping and cycling
+  WORD: frame (Noun)
+  CONTEXTUAL_DEFINITION: The connected bicycle tubes that support the wheels, saddle, handlebars, and rider.
+  PEDAGOGICAL_ART_DIRECTOR: Isolate the bare triangular bicycle frame so the structural tubes are the clear focal concept.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is a bicycle's structural frame, not a picture frame or a person/body frame.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A standalone blue bicycle frame without wheels, showing head tube, seat tube, top tube, down tube, and rear stays.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="49:frame" data-archetype="bicycle-frame">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+ <linearGradient id="fr-sky" x2="0" y2="1"><stop stop-color="#E8F1EA"/><stop offset="1" stop-color="#C7D9CC"/></linearGradient><linearGradient id="fr-frame" x2="1" y2="1"><stop stop-color="#91BEC0"/><stop offset="1" stop-color="#426C7F"/></linearGradient><linearGradient id="fr-metal" x2="0" y2="1"><stop stop-color="#AABAB3"/><stop offset="1" stop-color="#53686B"/></linearGradient><filter id="fr-shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2.6" flood-color="#253640" flood-opacity=".24"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fr-sky)"/><path d="M0 117Q72 98 148 116T304 109V192H0Z" fill="#A9B994"/><path d="M0 153H304V192H0Z" fill="#92785B"/></g>
+ <g id="layer-context"><path d="M19 117L37 68L55 117ZM251 112L271 62L290 112Z" fill="#527764"/><path d="M24 169H280" fill="none" stroke="#D8C69E" stroke-width="1.2"/><ellipse cx="152" cy="158" rx="90" ry="5" fill="#34483D" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#fr-shadow)">
+  <path d="M64 126L127 126L101 80L64 126M101 80L174 80L127 126L64 126M127 126L174 80L241 126" fill="none" stroke="url(#fr-frame)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M174 80L188 54L208 54M241 126L230 84L214 57" fill="none" stroke="url(#fr-metal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M184 54h19l5-7h14" fill="none" stroke="#344A50" stroke-width="6" stroke-linecap="round"/><path d="M96 80h-16" fill="none" stroke="#344A50" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 126h15m-8-8v16" fill="none" stroke="#344A50" stroke-width="4" stroke-linecap="round"/><circle cx="127" cy="126" r="5" fill="#D7834B" stroke="#344A50" stroke-width="1.5"/>
+  <path d="M101 80L101 64M174 80l4 14" fill="none" stroke="#536E70" stroke-width="2.5"/><path d="M66 126l-5 8m180-8 6 8" fill="none" stroke="#536E70" stroke-width="2.5"/>
+  <circle cx="64" cy="126" r="3.5" fill="#D7834B"/><circle cx="241" cy="126" r="3.5" fill="#D7834B"/><circle cx="101" cy="80" r="3.5" fill="#FFF8E7"/><circle cx="174" cy="80" r="3.5" fill="#FFF8E7"/>
+ </g>
+ <g id="layer-details"><path d="M69 123L101 83M105 82h61M131 121l39-38M177 76l10-18m-3 39 42 25" fill="none" stroke="#D7E9E4" stroke-width="1.4"/><circle cx="101" cy="80" r="1.4" fill="#FFFFFF"/><circle cx="174" cy="80" r="1.4" fill="#FFFFFF"/><path d="M25 22H279" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M111 76l2-4m47 4 2-4" fill="none" stroke="#E6C678" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M69 122L100 83M106 81h59M132 121l38-38" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".55"/><path d="M103 81l.5-14m72 13 3 11" fill="none" stroke="#EEF6E7" stroke-width="1.3"/><circle cx="127" cy="126" r="1.3" fill="#FFE3A1"/></g>
+</svg>

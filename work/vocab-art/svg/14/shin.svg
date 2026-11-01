@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: shin (Noun)
+  CONTEXTUAL_DEFINITION: The front of the lower leg between knee and ankle.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Highlight the long front section below the knee, not the calf muscle or ankle.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Front view of a single lower leg and foot.
+    - Context_Layer: Knee, calf, and foot remain muted.
+    - Focal_Layer: A narrow central stripe follows the shinbone downward.
+    - Details_Layer: The gentle tibia ridge distinguishes the shin's front.
+    - Lighting_Layer: Tall halo runs from just below the knee to above the ankle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:shin" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="176" rx="73" ry="10" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M120 17Q152 8 184 17L179 62Q172 76 180 98L188 152L202 166Q207 172 200 177H105Q98 172 104 166L118 151L125 99Q132 77 124 62Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.4"/><path d="M129 72Q152 81 175 72M126 94Q152 105 178 94M117 154Q152 162 189 154" fill="none" stroke="#94A3B8" stroke-width="1.5"/><path d="M151 78L149 143" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="151" cy="117" rx="27" ry="45" fill="#FEF3C7" opacity=".56"/><path d="M140 77Q152 82 164 77L161 102Q158 123 164 146Q152 153 140 146Q146 123 143 102Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M151 84Q150 115 153 144M143 106Q150 110 162 106" fill="none" stroke="#C88E74" stroke-width="1.6"/><path d="M137 75Q152 80 167 75L164 102Q161 124 168 149Q152 157 136 149Q142 124 139 102Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M226 119L176 119" stroke="#4A72B2" stroke-width="2.1"/><path d="M184 114L174 119L184 124" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="151" cy="117" rx="20" ry="36" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".52"/></g>
+</svg>

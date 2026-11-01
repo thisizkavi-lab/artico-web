@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: suck (Verb)
+  CONTEXTUAL_DEFINITION: To draw liquid into the mouth through a straw.
+  PEDAGOGICAL_ARCHETYPE: 4 — Peak-moment human action with prop
+  SYNONYM_GUARD: Show inward cheeks and a straw leading into a glass; lick shows the tongue out.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Side close-up of a person drinking through a straw.
+    - Context_Layer: Glass and shoulder establish the scene.
+    - Focal_Layer: Lips seal around the straw and cheeks draw inward.
+    - Details_Layer: Liquid level and straw are clear and text-free.
+    - Lighting_Layer: Blue path follows liquid upward through the straw.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:suck" data-archetype="human-action">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="163" rx="110" ry="16" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M41 177Q46 144 71 137H134L142 177Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.2"/><path d="M45 75Q45 38 75 23Q103 8 132 26Q152 42 145 82L136 117Q122 136 96 133Q69 130 55 108Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M45 71Q42 38 74 20Q106 4 135 28Q152 44 144 72L128 57Q104 66 84 51Q66 67 45 71Z" fill="#596C70" stroke="#1E2A3B" stroke-width="2.2"/><path d="M117 82Q126 78 135 82" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M104 105Q117 108 130 103" fill="none" stroke="#8E5B4A" stroke-width="1.8"/><path d="M220 87H268L260 155H228Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M225 117H263L259 151H229Z" fill="#CBD5E1"/><path d="M128 101L225 85" stroke="#64748B" stroke-width="5" stroke-linecap="round"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="120" cy="103" rx="25" ry="20" fill="#FEF3C7" opacity=".46"/><path d="M112 102Q124 98 137 101Q132 108 119 108Q114 107 112 102Z" fill="#8E3E48" stroke="#1E2A3B" stroke-width="1.8"/><path d="M128 101L225 85" stroke="#4A72B2" stroke-width="3.8" stroke-linecap="round"/><path d="M220 87H268L260 155H228Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.3"/><path d="M225 117H263L259 151H229Z" fill="#9FC3D7" stroke="#64748B" stroke-width="1.2"/><path d="M113 102Q124 98 137 101" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M91 91Q98 96 105 91M143 91Q149 96 153 91" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M129 101L221 86" stroke="#F0C5A7" stroke-width="1.2"/><path d="M238 132H254" stroke="#F8FAFC" stroke-width="1.2"/><path d="M156 97L207 88" stroke="#4A72B2" stroke-width="1.3" stroke-dasharray="3 3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"/>
+</svg>

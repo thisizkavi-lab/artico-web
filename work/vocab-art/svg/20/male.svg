@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: male (Adjective / Noun)
+  CONTEXTUAL_DEFINITION: A male animal, shown as the drake in a mallard family.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive natural-family scene
+  SYNONYM_GUARD: A green-headed male mallard stands with a brown female duck and ducklings at the same pond; the drake's distinctive plumage marks the biological-sex sense.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Same quiet pond edge and rippling water as the female scene.
+    - Context_Layer: Brown hen and ducklings in muted tones.
+    - Focal_Layer: Green-headed drake with chestnut chest and curled tail feather.
+    - Details_Layer: Broad duck body, webbed feet, and yellow bill.
+    - Lighting_Layer: Soft blue-gold emphasis on the drake.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:male" data-archetype="expressive-natural-family-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#3B8C6E;--c-secondary:#26634C;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="male-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="male-water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <filter id="male-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#male-sky)"/><path d="M0 135Q73 128 152 135T304 133V192H0Z" fill="#DCEAD6"/><ellipse cx="151" cy="158" rx="148" ry="35" fill="url(#male-water)" opacity=".78"/><path d="M0 137Q80 131 153 138T304 135" fill="none" stroke="#5479AC" stroke-width="2"/><path d="M12 128Q26 104 40 127M265 127Q279 101 294 126" fill="#829A83" opacity=".7"/></g>
+  <g id="layer-context"><ellipse cx="63" cy="139" rx="40" ry="18" fill="#E3AC77" opacity=".55"/><path d="M31 134Q35 113 57 111Q78 108 94 123Q90 140 64 145Q43 146 31 134Z" fill="#C88446" stroke="#64748B" stroke-width="1.8"/><circle cx="35" cy="128" r="5" fill="#1E2A3B"/><path d="M29 130L19 134L30 137Z" fill="#D49B2A"/><ellipse cx="101" cy="149" rx="22" ry="13" fill="#F2C14E" opacity=".75"/><circle cx="90" cy="141" r="10" fill="#F5D27B"/><circle cx="92" cy="140" r="1.5" fill="#1E2A3B"/><path d="M81 143L74 146L82 149Z" fill="#D49B2A"/><ellipse cx="132" cy="155" rx="20" ry="11" fill="#F2C14E" opacity=".65"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#male-shadow)"><ellipse cx="211" cy="103" rx="85" ry="67" fill="#FEF3C7" opacity=".32"/><ellipse cx="213" cy="125" rx="55" ry="28" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.5"/><path d="M166 120Q169 101 186 96Q205 90 225 100Q245 101 262 120Q250 137 221 143Q189 142 166 120Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="2.5"/><path d="M176 115Q188 104 199 111Q192 120 179 122M203 130Q216 117 230 123Q221 136 207 137M232 114Q246 105 255 116Q248 123 234 123" fill="#CBD5E1" stroke="#64748B" stroke-width="1.3"/><path d="M181 103Q189 91 198 100Q208 89 216 100Q225 92 234 104Q227 117 211 118Q193 118 181 103Z" fill="#8B5CA8" stroke="#633B7D" stroke-width="1.3"/><circle cx="170" cy="114" r="2.8" fill="#1E2A3B"/><path d="M162 117L149 122L164 125Z" fill="#F2C14E" stroke="#D49B2A" stroke-width="1.4"/><path d="M194 144L190 153M229 144L234 152" stroke="#CBD5E1" stroke-width="7" stroke-linecap="round"/><path d="M190 153Q181 156 177 151M234 152Q243 155 248 150" fill="none" stroke="#D49B2A" stroke-width="2.3" stroke-linecap="round"/><path d="M249 111Q259 106 266 111" fill="none" stroke="#26634C" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M184 88Q208 77 233 87" fill="none" stroke="#FFFFFF" stroke-width="2.3"/><path d="M160 146Q180 153 195 150M203 161Q223 165 241 160" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".8"/><circle cx="150" cy="99" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="211" cy="104" rx="90" ry="70" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".35"/><path d="M170 55Q208 39 245 51" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

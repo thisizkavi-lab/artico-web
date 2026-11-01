@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: screwdriver (Noun)
+  CONTEXTUAL_DEFINITION: A hand tool with a shaped tip that turns a screw into wood.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with functional context
+  SYNONYM_GUARD: The handle and straight metal shaft engage a visible screw head; there is no motor or drill body.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm workshop wall above a timber bench running from y=145 to 192.
+    - Context_Layer: A board across x=44..260 at y=112..146, with wood grain and a screw partly driven at x=162.
+    - Focal_Layer: Blue handle at x=205,y=34; thick steel shaft slopes to x=166,y=112; tip seats in the screw head.
+    - Details_Layer: Hand gripping the handle, Phillips cross slot, pilot hole, board grain, and small turning arcs.
+    - Lighting_Layer: Upper-left handle and shaft glints, with a soft bench contact shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:screwdriver" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="wall-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="handle-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7194C2"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall-grad)"/><path d="M0 145H304V192H0Z" fill="#D9C6AB"/><path d="M14 145H290" stroke="#8A5A35" stroke-width="2"/><path d="M44 112H260V146H44Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.4"/><ellipse cx="164" cy="151" rx="74" ry="5" fill="#BBAA92" opacity=".75"/></g>
+  <g id="layer-context"><path d="M57 121H249M70 131H114M213 122H242" stroke="#E7B68E" stroke-width="1.4"/><path d="M149 111V129" stroke="#8A5A35" stroke-width="2"/><path d="M153 112L171 112L174 117L171 122L153 122Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M158 114L167 120M167 114L158 120" stroke="#3D4658" stroke-width="1.5"/><path d="M76 103L83 98M92 106L98 100" stroke="#AFC3DE" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M152 113L165 117L157 128L145 124Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M157 119L195 65" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M157 119L195 65" stroke="#CBD5E1" stroke-width="5.4" stroke-linecap="round"/><path d="M184 54Q178 49 182 41L197 20Q201 14 208 19L233 34Q239 38 235 45L221 67Q217 73 210 69Z" fill="url(#handle-grad)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M189 47L218 63" stroke="#8EB0DE" stroke-width="2" stroke-linecap="round"/><path d="M201 50Q202 63 216 59Q224 56 220 47" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M207 43Q210 52 219 54M202 47Q205 56 214 58" fill="none" stroke="#E5A283" stroke-width="1.4" stroke-linecap="round"/><path d="M167 111L174 108M169 114L176 111" stroke="#3D5F91" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M137 103Q127 114 132 126M145 100Q137 111 141 119" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><circle cx="151" cy="111" r="2" fill="#F2C14E"/><path d="M61 138H111M220 137H249" stroke="#8A5A35" stroke-width="1.2"/><path d="M185 28L192 31M229 40L226 46" stroke="#F1F5F9" stroke-width="2" stroke-linecap="round"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" stroke-width="1" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M188 45L199 26" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".62"/><path d="M161 106L190 66" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".6"/><path d="M48 115H90" stroke="#FFFFFF" stroke-width="1.2" opacity=".45"/></g>
+</svg>

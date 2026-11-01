@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: glasses (Noun, plural)
+  CONTEXTUAL_DEFINITION: Lenses in frames worn in front of the eyes to improve vision.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Use clear pale lenses and slim everyday frames, distinct from dark sunglasses.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper.
+    - Context_Layer: None.
+    - Focal_Layer: Two rounded rectangular lenses joined at the bridge.
+    - Details_Layer: Hinges and outward temple arms.
+    - Lighting_Layer: Soft lens glints.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:glasses" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="153" cy="144" rx="112" ry="17" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="93" rx="123" ry="57" fill="#FEF3C7" opacity=".33"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M41 69L119 67Q130 68 128 81L122 119Q120 131 109 130L53 126Q44 125 42 114Z" fill="#C7D9E8" fill-opacity=".54" stroke="#1E2A3B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M176 67L254 69L253 114Q251 125 242 126L186 130Q175 131 173 119L168 81Q166 68 176 67Z" fill="#C7D9E8" fill-opacity=".54" stroke="#1E2A3B" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M128 81Q152 73 176 81" fill="none" stroke="#1E2A3B" stroke-width="3"/>
+  <path d="M43 79L24 72M253 79L280 68" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M55 78L92 76M184 77L217 77" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="43" cy="78" r="3" fill="#D9A441"/><circle cx="253" cy="78" r="3" fill="#D9A441"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M73 145Q151 159 231 145" fill="none" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="4 5"/>
+</svg>

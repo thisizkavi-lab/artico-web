@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: shears (Noun)
+  CONTEXTUAL_DEFINITION: Large two-handled garden scissors used to cut stems and shape hedges.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero tool shown in use
+  SYNONYM_GUARD: Two long blades cross at a central pivot and finish in large loop handles; loppers have shorter curved jaws and longer poles.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale garden sky, a squared hedge face, and low grass.
+    - Context_Layer: Small trimmed leaf sprigs fall from the clipped hedge at the cutting point.
+    - Focal_Layer: Open steel blades cross at x=159,y=90; blue handles extend down-left and down-right to x=99 and x=218.
+    - Details_Layer: Pivot rivet, sharpened inner edges, grip bands, leaf clusters, and cut line.
+    - Lighting_Layer: Upper-left highlights along both blades.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:shears" data-archetype="hero-object">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6D6"/></linearGradient>
+    <linearGradient id="steel-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F5F9"/><stop offset="1" stop-color="#94A3B8"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 64H304V147H0Z" fill="#7FB07A"/><path d="M0 74H304V147H0Z" fill="#568552"/><path d="M0 147H304V192H0Z" fill="#EAD8BE"/><path d="M20 155H284" stroke="#C88446" stroke-width="2"/><ellipse cx="159" cy="160" rx="78" ry="6" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M186 86L203 79M190 98L209 94M183 108L202 112M171 117L187 128" stroke="#A8D4A2" stroke-width="2" stroke-linecap="round"/><path d="M217 78Q224 68 235 72Q239 80 229 84Q220 84 217 78Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M206 118Q213 108 224 112Q228 119 219 124Q210 124 206 118Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M231 125V112M230 118Q222 109 219 115Q223 124 231 123" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M151 92L98 48L104 40L163 81Z" fill="url(#steel-grad)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M164 91L227 43L233 51L170 101Z" fill="url(#steel-grad)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M153 89L107 48M167 93L226 49" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/><circle cx="159" cy="91" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="159" cy="91" r="2.4" fill="#CBD5E1"/><path d="M156 97L122 145" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M156 97L122 145" stroke="#5479AC" stroke-width="6" stroke-linecap="round"/><path d="M163 97L200 146" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M163 97L200 146" stroke="#5479AC" stroke-width="6" stroke-linecap="round"/><ellipse cx="106" cy="158" rx="15" ry="13" fill="none" stroke="#1E2A3B" stroke-width="6"/><ellipse cx="106" cy="158" rx="15" ry="13" fill="none" stroke="#5479AC" stroke-width="3.5"/><ellipse cx="216" cy="158" rx="15" ry="13" fill="none" stroke="#1E2A3B" stroke-width="6"/><ellipse cx="216" cy="158" rx="15" ry="13" fill="none" stroke="#5479AC" stroke-width="3.5"/></g>
+  <g id="layer-details"><path d="M143 77L148 81M175 77L180 72" stroke="#94A3B8" stroke-width="1.2"/><path d="M94 43L103 49M230 46L222 52" stroke="#5479AC" stroke-width="1.6"/><path d="M181 84L189 81M181 101L190 102" stroke="#A8D4A2" stroke-width="1.6" stroke-linecap="round"/><circle cx="204" cy="70" r="2" fill="#F2C14E"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M107 46L145 76M225 49L184 80" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" opacity=".8"/><path d="M110 148L119 136M205 148L195 136" stroke="#8EB0DE" stroke-width="1.5" stroke-linecap="round"/><path d="M20 66H61" stroke="#A8D4A2" stroke-width="1.4" opacity=".6"/></g>
+</svg>

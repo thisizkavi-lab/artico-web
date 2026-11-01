@@ -1,0 +1,46 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: news
+ CONTEXTUAL_DEFINITION: A television news bulletin presented from a broadcast studio.
+ PEDAGOGICAL_ARCHETYPE: two news anchors on TV bulletin
+ SYNONYM_GUARD: Show a news broadcast with an anchor desk and news monitor; the focus is the bulletin, not one anchor’s occupation.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Two anchors deliver a TV news bulletin at a desk with a globe monitor and a camera facing the studio.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:news" data-archetype="two news anchors on TV bulletin">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M22 22H282V148H22Z" fill="#26384A"/><path d="M31 30H273V144H31Z" fill="#405663"/>
+  <path d="M47 40H257V96H47Z" fill="#E7E4D5"/><path d="M54 47H250V91H54Z" fill="#597D8B"/>
+  <circle cx="211" cy="68" r="16" fill="#798C72"/><path d="M196 68h30m-15-15q-12 15 0 30m0-30q12 15 0 30" stroke="#DCE5D5" stroke-width="1" fill="none"/>
+  <path d="M43 104H261V133H43Z" fill="#B85E5A"/><path d="M37 133H267V143H37Z" fill="#8C725A"/>
+  <path d="M0 151H304" stroke="#E8DCC5" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M266 63L279 55V79L266 72Z" fill="#26384A"/><circle cx="274" cy="67" r="2" fill="#D6A64C"/>
+  <path d="M41 146H263" stroke="#26384A" stroke-width="2" fill="none"/>
+  <path d="M49 44H255" stroke="#F6EBD8" stroke-width="1" fill="none"/>
+  <circle cx="52" cy="149" r="2.7" fill="#D29A78"/><circle cx="251" cy="149" r="2.7" fill="#D29A78"/>
+  <path d="M47 153h10m189 0h10" stroke="#405663" stroke-width="1.8" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="106" cy="77" r="6" fill="#D29A78"/><path d="M99 84Q106 80 113 84L117 111H95Z" fill="#597D8B"/>
+  <path d="M100 88L90 96m18-8 12 8" stroke="#D29A78" stroke-width="2.2" fill="none"/>
+  <path d="M100 109L98 122m14-13 3 13" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <circle cx="198" cy="77" r="6" fill="#D29A78"/><path d="M191 84Q198 80 205 84L209 111H187Z" fill="#D6A64C"/>
+  <path d="M192 88L182 96m18-8 12 8" stroke="#D29A78" stroke-width="2.2" fill="none"/>
+  <path d="M192 109L190 122m14-13 3 13" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <path d="M88 118H218V130H88Z" fill="#D6A64C"/><path d="M92 117H214V121H92Z" fill="#F3E6D0"/>
+ </g>
+ <g id="layer-details">
+  <path d="M103 68q4-4 8 0m87 0q4-4 8 0" stroke="#26384A" stroke-width="1" fill="none"/>
+  <path d="M101 75q5 3 10 0m87 0q5 3 10 0" stroke="#8F5F57" stroke-width=".9" fill="none"/>
+  <path d="M73 52H145m-72 5h51m54 38 17-7m-17 13 13-6" stroke="#F2E8D6" stroke-width="1" fill="none"/>
+  <circle cx="72" cy="83" r="2" fill="#D6A64C"/><circle cx="239" cy="51" r="2" fill="#E7C66B"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="86" rx="108" ry="62" fill="#E7C66B" opacity=".09"/>
+  <path d="M44 32L82 91m260-59-87 63" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/>
+  <path d="M46 95H256" stroke="#FFF7E5" stroke-width="1" opacity=".5" fill="none"/>
+ </g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: girl (Noun)
+  CONTEXTUAL_DEFINITION: A female child, shown as a school-age girl without a parent relationship implied.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: One school-age child tends a small garden patch on her own; the child-focused scale and feminine presentation distinguish girl from daughter.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Family garden bed and short path.
+    - Context_Layer: Seedlings, small watering can, and garden border.
+    - Focal_Layer: Girl kneels beside a plant and waters it carefully.
+    - Details_Layer: Child proportions, bobbed hair, and tiny green leaves.
+    - Lighting_Layer: Fresh green-gold wash over the garden.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:girl" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#568552;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="girl-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="girl-dress" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient>
+    <filter id="girl-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#girl-sky)"/><path d="M0 147Q73 140 152 147T304 145V192H0Z" fill="#DCEAD6"/><ellipse cx="152" cy="174" rx="127" ry="7" fill="#C3DAB9"/><path d="M18 139H286M26 150H278" stroke="#C88446" stroke-width="4" stroke-linecap="round"/><path d="M31 139V162M272 139V162" stroke="#965D28" stroke-width="3"/></g>
+  <g id="layer-context"><ellipse cx="211" cy="153" rx="46" ry="9" fill="#C88446" opacity=".4"/><path d="M170 153Q184 140 198 151Q210 136 224 150Q240 139 253 153" fill="#829A83" stroke="#568552" stroke-width="1.5"/><path d="M194 151L195 126M218 151L219 121" stroke="#568552" stroke-width="2.2"/><path d="M195 137Q183 129 180 134Q184 144 195 141M219 133Q230 123 236 127Q234 137 219 140" fill="#7FB07A" stroke="#568552" stroke-width="1.3"/><path d="M47 124L61 120L73 128L69 142L50 142Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M54 125Q57 114 65 115Q72 116 70 123" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M68 132Q81 137 89 142" fill="none" stroke="#7CC4FA" stroke-width="2" stroke-dasharray="3 3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#girl-shadow)"><path d="M79 177Q83 149 101 141Q119 134 138 143L145 177Z" fill="url(#girl-dress)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M99 143L113 153L127 143" fill="#F3ECE1" stroke="#315782" stroke-width="1.5"/><rect x="103" y="120" width="19" height="22" rx="6" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><circle cx="113" cy="92" r="27" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.5"/><path d="M86 90Q87 65 113 64Q140 65 140 92L136 101Q132 79 113 78Q96 78 90 102Z" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M99 92Q104 96 109 92M117 92Q122 96 128 92M101 105Q113 111 125 105" fill="none" stroke="#1E2A3B" stroke-width="1.7" stroke-linecap="round"/><path d="M96 147Q82 139 76 128M130 147Q145 139 152 128" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M96 147Q82 139 76 128M130 147Q145 139 152 128" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M74 128Q70 119 77 116L83 120L81 132Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/><path d="M146 130Q153 121 160 124L164 131L156 136Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M96 70Q112 63 128 68" fill="none" stroke="#FDE4D4" stroke-width="2.5"/><path d="M88 105L82 101M138 105L144 101" stroke="#D9A441" stroke-width="1.8" stroke-linecap="round"/><circle cx="157" cy="112" r="2.5" fill="#D9A441"/><path d="M157 121Q163 116 168 121" fill="none" stroke="#568552" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><ellipse cx="120" cy="110" rx="82" ry="76" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="4 7" opacity=".34"/><path d="M76 50Q112 34 146 43" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

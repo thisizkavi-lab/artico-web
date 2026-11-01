@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:alternative energy" data-archetype="wind-and-solar-replacing-a-fossil-fuel-source">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; alternative energy. Contrast a clean wind-and-solar energy installation with a distant inactive fossil-fuel plant; no labels or text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="alt-sky" x2="0" y2="1"><stop stop-color="#DCEDE8"/><stop offset="1" stop-color="#BCD3CC"/></linearGradient>
+  <linearGradient id="alt-hill" x2="0" y2="1"><stop stop-color="#91A979"/><stop offset="1" stop-color="#5E7D5B"/></linearGradient>
+  <linearGradient id="alt-panel" x2="0" y2="1"><stop stop-color="#648F9A"/><stop offset="1" stop-color="#385E6F"/></linearGradient>
+  <linearGradient id="alt-tower" x2="1" y2="0"><stop stop-color="#F5F5E9"/><stop offset="1" stop-color="#AAB9AE"/></linearGradient>
+  <filter id="alt-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".16"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#alt-sky)"/><circle cx="244" cy="36" r="15" fill="#EBC86F"/><path d="M0 119Q66 103 125 116T238 112Q272 105 304 114V192H0Z" fill="url(#alt-hill)"/><path d="M0 159Q55 145 116 158T239 155Q279 146 304 154V192H0Z" fill="#6C895D"/></g>
+<g id="layer-context">
+  <path d="M219 136V108L232 98 246 108V136Z" fill="#737E76"/><path d="M214 109l18-16 19 16Z" fill="#6A6E63"/><path d="M227 102V76L236 74V102Z" fill="#767D75"/>
+  <path d="M230 76Q220 63 228 52Q235 44 246 50Q253 38 264 45Q273 53 266 63Q279 68 273 78Q266 84 254 79L242 82Z" fill="#7C8176" opacity=".8"/>
+  <path d="M42 161L99 148 156 158 99 172Z" fill="url(#alt-panel)" stroke="#395B69" stroke-width="1.7"/><path d="M55 158l49 10m-29-14-6 12m31-18-8 15m27-10-7 12" fill="none" stroke="#A7CDD0" stroke-width="1.3"/>
+  <path d="M56 162l-5 19m89-16 8 18m-89-3h91" fill="none" stroke="#6B785E" stroke-width="2"/>
+</g>
+<g id="layer-focal" filter="url(#alt-shadow)">
+  <path d="M174 151L181 65h6l8 86Z" fill="url(#alt-tower)" stroke="#637D7D" stroke-width="1.4"/>
+  <circle cx="184" cy="65" r="5" fill="#F1F3E6" stroke="#55716F" stroke-width="1.2"/>
+  <path d="M184 65L161 51Q157 48 160 45Q163 43 166 47L184 63M184 65L204 44Q208 42 210 45Q211 49 207 51L185 66M184 65L187 91Q186 95 182 94Q179 93 180 89Z" fill="#EDF1E7" stroke="#5E7777" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M46 161L99 148 156 158 99 172Z" fill="#49798A" opacity=".35"/>
+  <path d="M45 165l51 9m-21-22-6 16m34-18-8 20m29-12-7 16" fill="none" stroke="#D2E8E2" stroke-width="1.1"/>
+  <path d="M184 98v43" fill="none" stroke="#F5F5EA" stroke-width="1.4"/>
+</g>
+<g id="layer-details">
+  <path d="M176 157l10 0m-11 5h13m-14 5h15" fill="none" stroke="#9BAE9E" stroke-width="1.2"/>
+  <path d="M169 132h-12m48-9h14m-62 19h12" fill="none" stroke="#DCE9D6" stroke-width="1.3"/>
+  <path d="M14 174q12-5 23 0m206 2q12-5 24 0m-191 4q11-4 20 0" fill="none" stroke="#A8C08B" stroke-width="1.4"/>
+  <circle cx="30" cy="141" r="2" fill="#F2EBD1"/><circle cx="154" cy="118" r="1.8" fill="#F2EBD1"/><circle cx="279" cy="133" r="1.8" fill="#F2EBD1"/>
+  <path d="M33 112q13-6 23-1m110 2q10-5 18 0m72-15q9-5 16 0" fill="none" stroke="#E9F2E7" stroke-width="1.4"/>
+</g>
+<g id="layer-lighting"><path d="M183 66l-22-19m23 19 23-22m-23 22 2 27" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".72"/><path d="M45 161L99 149 153 158" fill="none" stroke="#D4E8DF" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

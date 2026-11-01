@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: travel insurance
+  CONTEXTUAL_DEFINITION: Protection that helps cover problems or losses during a trip.
+  PEDAGOGICAL_ART_DIRECTOR: Place an oversized protective shield around a traveler and their luggage while travel hazards stay outside.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Connect the protective cover to a journey and its traveler; do not show ordinary health insurance alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A traveler with a suitcase stands protected inside a broad shield bearing an airplane pictogram while rain and a damaged-bag hazard remain outside.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:travel insurance" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="ti-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D8E8EA"/><stop offset="1" stop-color="#EFE6D8"/></linearGradient>
+  <linearGradient id="ti-shield" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8FB9C2" stop-opacity=".82"/><stop offset="1" stop-color="#4A72B2" stop-opacity=".72"/></linearGradient>
+  <linearGradient id="ti-bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#728493"/><stop offset="1" stop-color="#425462"/></linearGradient>
+  <filter id="ti-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ti-sky)"/><path d="M18 18H286V151H18Z" fill="#E8EAE3" stroke="#65777B" stroke-width="1.4"/><path d="M18 151H286V184H18Z" fill="#B8B6AB"/><path d="M24 169H280" stroke="#EAE4D8" stroke-width="1.1"/><rect x="193" y="28" width="65" height="52" fill="#A8C8CF" stroke="#4E6671" stroke-width="1.3"/><path d="M225 28V80M193 54H258" stroke="#526D77" stroke-width="1"/><path d="M216 67L224 64L231 67L224 70L220 74H218L221 70L216 69Z" fill="#F6F4E9" stroke="#526274" stroke-width=".7"/></g>
+ <g id="layer-context"><path d="M26 53Q34 42 48 48Q57 39 67 47Q81 46 82 58H26Z" fill="#788A94" stroke="#364B57" stroke-width="1.2"/><path d="M39 62L35 72M55 62L51 72M70 62L66 72" stroke="#4A72B2" stroke-width="2.4" stroke-linecap="round"/><path d="M25 83L36 79L48 83L36 87Z" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><path d="M242 112L254 108L266 112L254 116Z" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><path d="M250 108L251 98M258 108L261 98" stroke="#D85E55" stroke-width="2"/></g>
+ <g id="layer-focal" filter="url(#ti-shadow)"><path d="M152 39L229 65V111Q224 145 152 173Q80 145 75 111V65Z" fill="url(#ti-shield)" stroke="#304E66" stroke-width="2.4"/><path d="M152 51L217 72V108Q211 135 152 158Q93 135 87 108V72Z" fill="none" stroke="#DBEBE9" stroke-width="1.2"/><circle cx="130" cy="76" r="8" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1"/><path d="M119 87Q130 81 141 87L145 116H115Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><path d="M121 112L118 139H127L132 115M135 115L140 139H149L144 111" fill="#394F61" stroke="#1E2A3B" stroke-width="1.1"/><rect x="155" y="111" width="24" height="38" rx="4" fill="url(#ti-bag)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M161 111V105Q161 100 167 100Q173 100 173 105V111" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M161 122H173M161 142H173" stroke="#9DAAAD" stroke-width="1"/><path d="M158 80L170 76L180 80L170 84L164 91H162L166 84L158 82Z" fill="#FFFDF5" stroke="#304E66" stroke-width="1"/><path d="M170 76L175 68L178 76" fill="#FFFDF5" stroke="#304E66" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M152 43V52" stroke="#FFFFFF" stroke-width="1.1" opacity=".8"/><ellipse cx="152" cy="170" rx="91" ry="4" fill="#526274" opacity=".16"/><circle cx="43" cy="97" r="2" fill="#F2C14E"/><path d="M194 31H258" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="105" rx="129" ry="77" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".33"/><path d="M19 19H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

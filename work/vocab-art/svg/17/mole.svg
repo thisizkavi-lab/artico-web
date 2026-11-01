@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: mole (Noun)
+  CONTEXTUAL_DEFINITION: A small dark spot on the skin, here shown on a cheek.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus
+  SYNONYM_GUARD: The skin group selects the facial mark, despite the unrelated Japanese animal gloss.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream portrait paper.
+    - Context_Layer: Muted cheek and ear.
+    - Focal_Layer: Single small dark mole on one cheek.
+    - Details_Layer: A tiny highlight and focus ring.
+    - Lighting_Layer: Soft warm halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:mole (skin)" data-archetype="part-focus">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="166" rx="87" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="172" cy="104" rx="82" ry="65" fill="#FEF3C7" opacity=".39"/><path d="M78 167Q84 132 113 126H159Q189 131 196 167Z" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2.2"/>
+  <path d="M108 158Q102 126 103 87Q106 50 148 45Q190 50 193 87Q194 126 188 158Z" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M100 87Q97 49 136 39Q169 36 191 56Q203 72 195 98L188 106Q184 77 171 70Q149 81 120 74Q108 79 104 99Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.4"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M116 97Q125 92 137 97M160 97Q170 92 181 97" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M119 104Q127 107 135 104M162 104Q170 107 178 104" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M147 102L143 119L150 122" fill="none" stroke="#A86F45" stroke-width="1.7"/><path d="M136 140Q150 146 165 139" fill="none" stroke="#A95059" stroke-width="2"/>
+  <circle cx="169" cy="119" r="5.5" fill="#54352F" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="167" cy="117" r="1.4" fill="#C98961"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <circle cx="169" cy="119" r="20" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M191 106L208 95" stroke="#4A72B2" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M206 92L217 92M212 87L217 92L212 97" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

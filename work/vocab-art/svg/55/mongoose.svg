@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: mongoose (noun)
+  CONTEXTUAL_DEFINITION: A small low-bodied wild mammal with a long narrow face, short legs, and smooth unringed coat.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with low slender profile
+  SYNONYM_GUARD: Give it a long pointed muzzle and plain tail without a dark eye mask or rings, keeping it distinct from a meerkat.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Grassland floor; mongoose moves right at x=154 y=119, elongated torso x=102..196 y=99..131, pointed head x=190..234, tail trails left to x=72.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:mongoose" data-archetype="low-sleek-mongoose">
+  <defs>
+    <style>:root{--c-bg-1:#ECF0E8;--c-bg-2:#FAF4E7;--c-surface:#D1C3A6;--c-primary:#A77A51;--c-secondary:#574231;--c-accent:#80936D;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="mon-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ECF0E8"/><stop offset="1" stop-color="#F8F0DE"/></linearGradient>
+    <linearGradient id="mon-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C39A6E"/><stop offset="1" stop-color="#7F5B3E"/></linearGradient>
+    <filter id="mon-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mon-sky)"/><path d="M0 129 Q66 119 127 129 T243 127 Q280 120 304 128 V192 H0Z" fill="#DFE1CE"/><path d="M0 153 Q67 145 144 153 T304 151 V192 H0Z" fill="#CFC1A3"/><ellipse cx="151" cy="164" rx="105" ry="7" fill="#A99A7B" opacity=".42"/></g>
+  <g id="layer-context"><path d="M36 145 V83 M36 105 L23 92 M36 116 L50 101" fill="none" stroke="#74583C" stroke-width="3.7" stroke-linecap="round"/><path d="M21 94 Q25 80 36 85 Q43 73 52 85 Q61 85 63 99 Q51 94 42 105 Q31 96 21 94Z" fill="#80916B"/><path d="M264 144 V77 M264 100 L250 84 M264 113 L280 95" fill="none" stroke="#74583C" stroke-width="3.7" stroke-linecap="round"/><path d="M247 86 Q251 70 263 76 Q271 62 280 75 Q292 76 294 90 Q280 85 271 97 Q259 87 247 86Z" fill="#78916A"/><path d="M62 146 l-5-9 m5 9 6-6 M234 147 l4-9 m-4 9-5-4" fill="none" stroke="#829267" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#mon-shadow)"><path d="M112 107 Q129 90 165 95 Q193 96 205 109 Q204 124 183 134 L130 135 Q107 130 101 119Z" fill="url(#mon-fur)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M183 101 Q200 92 215 98 L227 106 L218 115 L197 118 L184 114Z" fill="#AA7B50" stroke="#1E2A3B" stroke-width="1.8"/><path d="M216 103 L239 108 L224 113 L212 111Z" fill="#8D633F" stroke="#1E2A3B" stroke-width="1.2"/><path d="M108 112 Q91 101 77 105 Q67 108 63 115 Q71 120 83 115 Q94 112 105 125" fill="none" stroke="#8A6341" stroke-width="7" stroke-linecap="round"/><path d="M119 130 L116 148 Q118 153 125 152 L130 148 L125 145 L128 131 M151 132 L153 149 Q156 153 163 151 L167 147 L162 144 L160 131 M185 128 L192 144 Q196 148 202 144 L205 140 L199 138 L193 124" fill="none" stroke="#604831" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M197 99 Q199 92 205 91 L210 98Z" fill="#9B704B" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="218" cy="103" r="1.7" fill="#1E2A3B"/><path d="M235 108 l4 1-4 2" fill="#2F2925"/><path d="M116 105 Q139 96 160 101 M166 101 Q177 99 184 104" fill="none" stroke="#D8B587" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M114 112 Q137 100 159 105 M129 124 Q151 132 174 124 M197 104 Q205 99 212 102" fill="none" stroke="#D8B587" stroke-width="1.4"/><path d="M67 143 l-4-7 m4 7 6-6 M223 146 l4-8 m-4 8-4-4 M246 145 l4-8" fill="none" stroke="#80916A" stroke-width="1.5" stroke-linecap="round"/><path d="M119 148 l-1 5 m7-5 1 5 m31-4 1 5 m40-6 2 4" fill="none" stroke="#49382D" stroke-width="1.2" stroke-linecap="round"/><circle cx="154" cy="116" r="1.4" fill="#F0D9BA"/><path d="M74 111 Q83 108 91 112 M94 118 Q99 119 104 123" fill="none" stroke="#B98C60" stroke-width="1.2"/><path d="M217 108 l4 1" stroke="#EAD9BC" stroke-width="1.1" fill="none"/></g>
+  <g id="layer-lighting"><path d="M112 105 Q127 92 147 96 M188 102 Q200 94 209 98 M67 114 Q76 107 84 108" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".4" stroke-linecap="round"/><ellipse cx="150" cy="103" rx="27" ry="8" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

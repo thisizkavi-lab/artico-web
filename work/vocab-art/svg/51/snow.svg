@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: snow (Noun)
+  CONTEXTUAL_DEFINITION: Soft white snowflakes falling and collecting on the ground.
+  PEDAGOGICAL_ART_DIRECTOR: Show a quiet moderate snowfall, with distinct flakes and a soft layer gathering on a low hill.
+  PEDAGOGICAL_ARCHETYPE: 3 - Precipitation and accumulation
+  SYNONYM_GUARD: Gentle, separate flakes; less dense and forceful than a snowstorm or blizzard.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Several small snow crystals descend from a soft cloud and build a clean white covering over a gentle meadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:snow" data-archetype="falling-snow-quiet-landscape">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sn-sky" x2="0" y2="1"><stop stop-color="#A9C4CF"/><stop offset="1" stop-color="#E5EFEA"/></linearGradient><linearGradient id="sn-ground" x2="0" y2="1"><stop stop-color="#F8FBF7"/><stop offset="1" stop-color="#D7E4E4"/></linearGradient><linearGradient id="sn-hill" x2="0" y2="1"><stop stop-color="#A8BBC0"/><stop offset="1" stop-color="#79939C"/></linearGradient><filter id="sn-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#314D5A" flood-opacity=".18"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sn-sky)"/><path d="M0 125Q76 107 151 124T304 116V192H0Z" fill="url(#sn-hill)"/><path d="M0 149Q69 131 148 148T304 139V192H0Z" fill="url(#sn-ground)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#B5C7C7" stroke-width="1.2"/><ellipse cx="151" cy="164" rx="106" ry="5" fill="#536970" opacity=".12"/><path d="M25 129L34 111L31 112L40 98L37 99L46 84L54 100L51 99L60 112L56 111L65 129Z" fill="#789199"/><path d="M237 125L246 107L243 108L252 93L249 94L258 78L266 94L263 93L272 108L268 107L277 125Z" fill="#789199"/><circle cx="59" cy="86" r="2.2" fill="#F8FFFF"/><circle cx="229" cy="77" r="2.1" fill="#F8FFFF"/><circle cx="82" cy="118" r="1.9" fill="#FFFFFF"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sn-shadow)">
+  <path d="M72 58Q74 42 91 41Q100 24 119 32Q137 26 144 44Q163 39 172 54Q187 50 194 62Q196 73 184 77H89Q72 74 72 58Z" fill="#AABCC3" stroke="#71858D" stroke-width="1.5"/><path d="M82 54q11-10 22-5m24-8q12-5 19 3m17 12q10-6 18 1" fill="none" stroke="#E3ECEA" stroke-width="1.4"/>
+  <path d="M90 83v15m42-14v18m42-14v16m35-9v15m-135-2v13m48-4v15m48-17v14m52-8v11" fill="none" stroke="#F8FFFF" stroke-width="2.2" stroke-linecap="round"/><path d="M90 79l0 9m-4-5h8m-7-3 6 6m0-6-6 6m45 4v9m-4-4h8m-7-3 6 6m0-6-6 6m46-5v9m-4-4h8m-7-3 6 6m0-6-6 6m42 5v8m-4-4h8m-7-3 6 6m0-6-6 6" fill="none" stroke="#F9FFFF" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M0 149Q69 131 148 148T304 139V160Q235 156 152 161T0 160Z" fill="#F6FAF7"/><path d="M13 153q42-9 80-1m121-4q36-8 74-2" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="60" cy="86" r="2.2" fill="#F8FFFF"/><circle cx="222" cy="80" r="1.8" fill="#F8FFFF"/><circle cx="67" cy="126" r="1.5" fill="#FFFFFF"/><circle cx="236" cy="121" r="1.6" fill="#FFFFFF"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/><path d="M23 137q11-7 21 0m219-3q11-7 21 0" fill="none" stroke="#D7E8E8" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M75 58q3-13 17-14m34-8q11-4 17 3" fill="none" stroke="#ECF4F0" stroke-width="1.2"/><path d="M15 150q51-14 96-4m77 1q48-10 94-3" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+</svg>

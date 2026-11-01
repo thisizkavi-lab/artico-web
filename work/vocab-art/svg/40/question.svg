@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 40 - Meeting and presenting
+  WORD: question
+  CONTEXTUAL_DEFINITION: A request for information or clarification, often raised by a participant during a meeting.
+  PEDAGOGICAL_ART_DIRECTOR: Show one participant raising a hand and signaling curiosity toward a speaker, with a blank inquiry cloud rather than a written question mark.
+  PEDAGOGICAL_ARCHETYPE: 4 - Inquiry / question
+  SYNONYM_GUARD: Keep one person's information request distinct from an answer, a broad discussion, or a show-of-hands vote.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a presenter as a small torso at x=216..259 on the right and one seated participant at x=70..127 on the left raising one hand. Put an empty rounded speech cloud between them at x=125..188, y=42..78, containing three small inquiry dots that are not punctuation characters.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="40:question" data-archetype="meeting-inquiry">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="question-cloud" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="question-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="question-halo"><stop stop-color="#FFF1B9" stop-opacity=".73"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="question-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="101" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 132 H274 V145 H30 Z" fill="url(#question-table)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#question-shadow)"><path d="M62 123 Q64 101 77 95 L78 86 Q74 82 76 74 Q84 65 94 68 Q103 71 100 82 L97 90 Q111 96 113 121 L110 132 H66 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="88" cy="77" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M80 75 Q82 67 89 67 Q97 68 100 75 Q93 71 86 72 Z" fill="#3D342D"/><path d="M71 109 L68 86 L72 84 L78 108" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M68 86 L66 73 Q65 70 68 69 Q71 68 72 72 L74 80 L74 70 Q75 67 78 68 Q81 69 80 73 L79 84 L82 79 Q84 77 85 79 Q86 81 84 84 L77 95 L80 120 H70 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><path d="M213 124 Q215 99 228 93 L229 84 Q225 80 227 72 Q235 63 245 66 Q254 69 251 80 L248 88 Q262 94 264 122 L261 133 H217 Z" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="241" cy="75" rx="8" ry="10" fill="#B97851" stroke="#1E2A3B" stroke-width="1.1"/><path d="M233 73 Q235 65 242 65 Q250 66 253 73 Q246 69 239 70 Z" fill="#242C3B"/><path d="M125 48 Q125 41 133 41 H180 Q188 41 188 49 V68 Q188 76 180 76 H156 L146 84 L146 76 H133 Q125 76 125 68 Z" fill="url(#question-cloud)" stroke="#64748B" stroke-width="1.3"/><circle cx="142" cy="58" r="2.3" fill="#5479AC"/><circle cx="156" cy="58" r="2.3" fill="#F2C14E"/><circle cx="170" cy="58" r="2.3" fill="#8EB0DE"/></g>
+  <g id="layer-details"><path d="M83 92 Q89 88 95 92" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M228 93 Q240 88 251 93" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="117" cy="81" r="2" fill="#F2C14E"/><path d="M114 78 L117 74 L120 78" fill="none" stroke="#D99A2B" stroke-width="1.1"/><path d="M198 89 H210" stroke="#64748B" stroke-width="1.2" stroke-dasharray="2 3"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="85" rx="88" ry="62" fill="url(#question-halo)" opacity=".22"/><path d="M129 44 H181" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

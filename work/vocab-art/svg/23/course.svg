@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: course (Noun)
+  CONTEXTUAL_DEFINITION: A planned series of lessons or study leading toward learning a subject or qualification.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept through a learning sequence
+  SYNONYM_GUARD: A student moves through several connected study units and reaches a completed capstone, rather than following a physical road.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University study area with shelf and window.
+    - Context_Layer: A sequence of three lesson folders across a desk.
+    - Focal_Layer: Learner follows a connected path of study objects toward a finished project.
+    - Details_Layer: Book, model, and final certificate silhouette without writing.
+    - Lighting_Layer: Highlight traces the sequence from start to completion.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:course" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="course-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="course-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#course-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M21 28H95V80H21Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M58 29V79M22 54H94" stroke="#FFFFFF" stroke-width="2.5"/><rect x="225" y="42" width="54" height="86" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.4"/></g>
+  <g id="layer-context"><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/><path d="M232 52H272M232 62H272" stroke="#F7EBCF" stroke-width="1.8"/><path d="M39 144H275" stroke="#5479AC" stroke-width="2" stroke-dasharray="4 6"/><path d="M68 138L76 144L68 150M145 138L153 144L145 150M220 138L228 144L220 150" fill="none" stroke="#5479AC" stroke-width="1.8"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#course-shadow)"><rect x="34" y="91" width="49" height="41" rx="4" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M40 99H77M40 106H75M40 113H68" stroke="#DCECFB" stroke-width="1.7"/><rect x="116" y="79" width="49" height="53" rx="4" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M122 88H159M122 96H155M122 104H150" stroke="#F9CED0" stroke-width="1.7"/><path d="M191 91L214 78L237 91V132H191Z" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.6"/><path d="M198 99H230V126H198Z" fill="#FEF9C3" stroke="#55704D" stroke-width="1.2"/><path d="M83 111H113M165 111H187" stroke="#D9A441" stroke-width="3" stroke-linecap="round"/><circle cx="98" cy="111" r="4" fill="#D9A441"/><circle cx="176" cy="111" r="4" fill="#D9A441"/><path d="M77 135L95 124L113 135L95 145Z" fill="#FFFEFA" stroke="#315782" stroke-width="1.3"/><path d="M140 72L145 62L150 72M139 75H151" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="57" cy="86" r="4" fill="#D9A441"/><circle cx="140" cy="74" r="4" fill="#5479AC"/><path d="M206 103L214 111L226 98" fill="none" stroke="#5479AC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 124H77M122 125H159" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="99" rx="125" ry="72" fill="#FEF9C3" opacity=".07"/><path d="M34 91H83M116 79H165M191 91L214 78L237 91" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".72"/></g>
+</svg>

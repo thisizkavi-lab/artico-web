@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: boyfriend (Noun)
+  CONTEXTUAL_DEFINITION: A young man's romantic partner, shown on an affectionate date.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A young man and woman share a quiet picnic date while sitting close and holding hands; no wedding ring appears, distinguishing boyfriend from spouse.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Spring park with a blanket and trees.
+    - Context_Layer: Picnic basket and two cups.
+    - Focal_Layer: Young man offers a small flower while the couple holds hands.
+    - Details_Layer: Shared gaze, relaxed posture, and close romantic spacing.
+    - Lighting_Layer: Soft rosy-gold halo without text or hearts as the only cue.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:boyfriend" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="boyfriend-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="boyfriend-blanket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCEAD6"/><stop offset="1" stop-color="#C3DAB9"/></linearGradient>
+    <filter id="boyfriend-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#boyfriend-sky)"/><path d="M0 147Q72 140 152 147T304 144V192H0Z" fill="#DCEAD6"/><ellipse cx="152" cy="174" rx="128" ry="7" fill="#C3DAB9"/><path d="M20 102Q27 74 42 101M262 101Q274 71 289 100" fill="#829A83" opacity=".7"/><path d="M25 99H47M267 98H290" stroke="#568552" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M39 143L63 130L91 141L88 159H40Z" fill="#C88446" stroke="#965D28" stroke-width="2"/><path d="M45 139Q50 126 66 126Q82 126 87 140" fill="none" stroke="#965D28" stroke-width="2"/><path d="M46 147H82M49 153H79" stroke="#E3AC77" stroke-width="1.5"/><ellipse cx="215" cy="151" rx="20" ry="8" fill="#F3ECE1" stroke="#64748B" stroke-width="1.5"/><path d="M205 150V161M225 150V161" stroke="#64748B" stroke-width="1.5"/><path d="M242 45Q244 37 251 41L256 45L251 51L242 49Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><path d="M250 47Q262 55 270 61" fill="none" stroke="#568552" stroke-width="1.6"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#boyfriend-shadow)"><ellipse cx="151" cy="120" rx="118" ry="61" fill="url(#boyfriend-blanket)" opacity=".5"/><path d="M69 177Q72 146 91 138Q110 131 129 141L136 177Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="101" cy="112" r="25" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3"/><path d="M76 110Q77 87 101 87Q126 88 126 113L120 118Q115 98 101 99Q88 98 79 120Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M88 112Q93 116 98 112M104 112Q109 116 115 112M90 125Q101 131 112 125" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M120 148Q137 140 151 131M126 155Q143 149 158 141" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M120 148Q137 140 151 131M126 155Q143 149 158 141" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M145 177Q149 146 168 139Q187 132 207 142L213 177Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.5"/><circle cx="177" cy="111" r="25" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M152 109Q153 86 177 86Q202 87 202 112Q198 128 194 138L184 140L185 120Q177 113 166 120L163 137L153 131Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.9"/><path d="M164 111Q169 115 174 111M180 111Q185 115 191 111M166 124Q177 130 188 124" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M158 149Q148 140 144 132M192 149Q203 141 210 130" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M158 149Q148 140 144 132M192 149Q203 141 210 130" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M150 132Q153 122 161 122L168 127L163 136Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M162 133Q169 124 176 125L182 132L174 138Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M85 89Q99 82 113 87M162 84Q176 78 190 83" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M128 93Q141 88 151 94M193 94L200 90" fill="none" stroke="#D9A441" stroke-width="1.8"/><circle cx="137" cy="87" r="2.4" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="115" rx="121" ry="66" fill="none" stroke="#D9857F" stroke-width="1.3" stroke-dasharray="4 7" opacity=".34"/><path d="M62 66Q101 47 137 57" fill="none" stroke="#FFFFFF" stroke-width="2.7"/></g>
+</svg>

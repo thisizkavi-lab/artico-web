@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: safe
+  CONTEXTUAL_DEFINITION: Protected from danger while staying in a secure hotel room.
+  PEDAGOGICAL_ART_DIRECTOR: Show a relaxed guest inside with the hotel room door shut and its deadbolt visibly engaged.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: This is the adjective meaning secure; do not depict a metal valuables safe.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A sturdy guest-room door and engaged chain lock stand beside a calm seated traveler, with warm light and luggage safely inside.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:safe" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="safe-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEE9DF"/><stop offset="1" stop-color="#D0CEC3"/></linearGradient>
+  <linearGradient id="safe-door" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AC8964"/><stop offset="1" stop-color="#765940"/></linearGradient>
+  <linearGradient id="safe-chair" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#91A8B3"/><stop offset="1" stop-color="#526C80"/></linearGradient>
+  <filter id="safe-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M18 17H286V149H18Z" fill="url(#safe-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M18 149H286V184H18Z" fill="#B9B7AC"/><path d="M25 168H280" stroke="#EAE4D9" stroke-width="1.2"/><rect x="39" y="30" width="85" height="57" fill="#A8C8CF" stroke="#4E6670" stroke-width="1.5"/><path d="M81 30V87M39 59H124" stroke="#526D77" stroke-width="1.2"/><path d="M127 17V148" stroke="#B6B1A5" stroke-width="1.2"/></g>
+ <g id="layer-context"><path d="M207 27H273V149H207Z" fill="url(#safe-door)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M214 34H266V144H214Z" fill="#947454" stroke="#D5BA91" stroke-width="1.2"/><circle cx="255" cy="95" r="3" fill="#F2C14E"/><rect x="214" y="70" width="9" height="7" rx="1" fill="#D6D5CA" stroke="#354A56" stroke-width="1"/><path d="M219 73H238Q242 73 242 77" fill="none" stroke="#C9D1CD" stroke-width="2.6"/><rect x="218" y="61" width="20" height="7" rx="2" fill="#D4D9D4" stroke="#334955" stroke-width="1.1"/><path d="M221 64H233" stroke="#596B6E" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#safe-shadow)"><path d="M91 116Q91 101 105 101H148Q161 101 161 116V139H91Z" fill="url(#safe-chair)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M98 111Q99 93 116 93H139Q153 93 155 111Z" fill="#8FA6B2" stroke="#1E2A3B" stroke-width="1.4"/><path d="M101 137V153M151 137V153" stroke="#364D5C" stroke-width="3.4"/><circle cx="124" cy="78" r="10" fill="#D9A27D" stroke="#1E2A3B" stroke-width="1.2"/><path d="M111 89Q124 83 137 89L142 115H106Z" fill="#6D9B84" stroke="#1E2A3B" stroke-width="1.4"/><path d="M111 96L104 98L96 108Q93 112 97 116Q100 119 104 115L117 103Z" fill="#6D9B84" stroke="#1E2A3B" stroke-width="1.1"/><path d="M137 96L144 98L153 108Q156 112 152 116Q149 119 145 115L132 103Z" fill="#6D9B84" stroke="#1E2A3B" stroke-width="1.1"/><ellipse cx="98" cy="116" rx="3.5" ry="2.7" fill="#D9A27D"/><ellipse cx="151" cy="116" rx="3.5" ry="2.7" fill="#D9A27D"/><path d="M114 114L111 135H120L125 116M130 115L134 135H143L140 112" fill="#40566A" stroke="#1E2A3B" stroke-width="1.2"/><path d="M117 78Q124 72 131 78" fill="none" stroke="#704B43" stroke-width="1.4"/><path d="M118 82Q124 86 130 82" fill="none" stroke="#704B43" stroke-width="1.2"/><rect x="49" y="129" width="27" height="34" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.4"/><path d="M55 129V124Q55 119 62.5 119Q70 119 70 124V129" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M54 140H71M54 155H71" stroke="#91A0A4" stroke-width="1.2"/></g>
+ <g id="layer-details"><path d="M228 39V57M244 39V57" stroke="#D6B991" stroke-width="1.2"/><path d="M40 87H123" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="130" cy="165" rx="94" ry="5" fill="#526274" opacity=".17"/><circle cx="183" cy="140" r="4" fill="#F2C14E" opacity=".8"/><path d="M216 81H225" stroke="#EFF0E9" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="106" rx="119" ry="71" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".34"/><path d="M20 18H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

@@ -1,0 +1,35 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: music channel
+ CONTEXTUAL_DEFINITION: A television channel broadcasting a live musician or music video, with abstract music symbols and no logo.
+ PEDAGOGICAL_ARCHETYPE: a music performance shown on television
+ SYNONYM_GUARD: Keep a visible TV screen and music performance; do not depict only an audio player or streaming app.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A TV displays a singer playing an electric guitar at a microphone while a few abstract musical notes float around the performance.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:music channel" data-archetype="televised music performance">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M24 22Q24 18 30 18H274Q280 18 280 24V146H24Z" fill="#26384A"/><path d="M33 27H271V141H33Z" fill="#405663"/><path d="M42 34H262V132H42Z" fill="#586F7A"/><path d="M43 35H261V132H43Z" fill="#597D8B"/>
+  <path d="M125 146L133 154H171L179 146Z" fill="#64777C"/><path d="M112 154H192V160H112Z" fill="#26384A"/>
+ </g>
+ <g id="layer-context">
+  <path d="M43 102Q95 82 151 101T261 100V132H43Z" fill="#405663"/><path d="M48 47H257" stroke="#D6A64C" stroke-width="1.5"/><path d="M57 52L71 60M249 52L235 60" stroke="#F6E5CE" stroke-width="1.2"/>
+  <path d="M215 48V94M209 48H221" stroke="#26384A" stroke-width="2"/><ellipse cx="215" cy="97" rx="5" ry="2" fill="#26384A"/><path d="M210 50L215 42L220 50Z" fill="#D6A64C"/>
+  <path d="M74 112H232" stroke="#D6A64C" stroke-width="2"/><circle cx="77" cy="119" r="2" fill="#B85E5A"/><circle cx="229" cy="119" r="2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="140" cy="61" r="7.5" fill="#D29A78"/><path d="M132 69Q140 65 148 70L153 96Q140 101 127 96Z" fill="#B85E5A"/><path d="M134 76L124 83L129 88L138 81Z" fill="#D29A78"/><path d="M147 76L158 82L154 88L145 82Z" fill="#D29A78"/>
+  <path d="M132 96L130 112M144 96L148 111" stroke="#26384A" stroke-width="3.3" stroke-linecap="round"/><path d="M126 112H137M145 112H155" stroke="#26384A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M151 86L175 99L182 94L160 79Z" fill="#D6A64C" stroke="#26384A" stroke-width="1.2"/><path d="M173 98L180 105L193 102L189 91L181 88Z" fill="#B85E5A" stroke="#26384A" stroke-width="1.2"/><circle cx="183" cy="97" r="2" fill="#F6E5CE"/><path d="M161 81L164 72M166 84L170 75M170 87L175 78" stroke="#F6E5CE" stroke-width="1.2"/>
+ </g>
+ <g id="layer-details">
+  <path d="M137 60Q140 58 143 60" stroke="#26384A" stroke-width="1.2" fill="none"/><circle cx="138" cy="62" r=".9" fill="#26384A"/><path d="M137 66Q141 68 144 65" stroke="#26384A" stroke-width="1.1" fill="none"/>
+  <path d="M95 58V47L106 44V55" fill="none" stroke="#E7C66B" stroke-width="2" stroke-linecap="round"/><ellipse cx="95" cy="59" rx="3.2" ry="2.1" fill="#E7C66B"/><ellipse cx="106" cy="56" rx="3.2" ry="2.1" fill="#E7C66B"/><path d="M226 76V67L236 64V73" fill="none" stroke="#F6E5CE" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="226" cy="77" rx="3" ry="2" fill="#F6E5CE"/><ellipse cx="236" cy="74" rx="3" ry="2" fill="#F6E5CE"/><circle cx="114" cy="46" r="2" fill="#D6A64C"/><circle cx="202" cy="51" r="1.8" fill="#B85E5A"/>
+  <path d="M207 88Q201 84 197 88M208 95Q201 91 197 95" fill="none" stroke="#26384A" stroke-width="1.3"/>
+  <path d="M44 131H260" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="63" rx="84" ry="34" fill="#E7C66B" opacity=".11"/><path d="M44 37L69 74M260 37L236 74" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M44 131H260" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

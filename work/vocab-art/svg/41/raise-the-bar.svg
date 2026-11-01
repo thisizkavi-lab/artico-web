@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 41 - Work and business idioms
+  WORD: raise the bar (idiom)
+  CONTEXTUAL_DEFINITION: Increase the expected standard or level of performance.
+  PEDAGOGICAL_ARCHETYPE: 6 - Higher versus previous standard
+  SYNONYM_GUARD: A raised benchmark on a workplace performance board and an improved colleague target show a higher standard, not a gym exercise.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a large office performance board at x=70..241, y=30..137. Show a muted old horizontal benchmark at y=104 and a vivid new bar at y=62, with a blue upward arrow. A worker at right raises the bar into a higher bracket.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="41:raise the bar" data-archetype="higher-standard">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bar-board" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF1E8"/></linearGradient>
+    <linearGradient id="bar-wood" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#E3AC77"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="bar-halo"><stop stop-color="#FEF3C7" stop-opacity=".75"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="bar-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F7F8F7"/><rect y="151" width="304" height="41" fill="#EAE3D5"/><path d="M0 151 H304" fill="none" stroke="#CFC5B7" stroke-width="1.2"/><ellipse cx="153" cy="171" rx="111" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="62" y="24" width="185" height="121" rx="6" fill="url(#bar-board)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M75 38 H234" fill="none" stroke="#D8E0E9" stroke-width="1.2"/><path d="M92 120 V53 M92 120 H225" fill="none" stroke="#64748B" stroke-width="1.5"/><path d="M103 109 H217" fill="none" stroke="#CBD5E1" stroke-width="9" stroke-linecap="round"/><path d="M103 111 H148" fill="none" stroke="#94A3B8" stroke-width="3" stroke-dasharray="4 4"/><path d="M103 66 H216" fill="none" stroke="#5479AC" stroke-width="8" stroke-linecap="round"/><path d="M107 58 V43" fill="none" stroke="#5479AC" stroke-width="2.6"/><path d="M101 49 L107 41 L113 49" fill="none" stroke="#5479AC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M127 117 V123 M162 117 V123 M197 117 V123" fill="none" stroke="#64748B" stroke-width="1.2"/><ellipse cx="164" cy="65" rx="59" ry="42" fill="url(#bar-halo)"/><path d="M73 149 H238 V158 H73Z" fill="url(#bar-wood)" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <g id="layer-focal" filter="url(#bar-shadow)"><path d="M238 146 Q241 119 254 112 L254 102 Q250 98 252 90 Q256 80 267 81 Q278 82 279 92 L277 104 Q291 110 294 146Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="266" cy="91" rx="9" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M257 89 Q258 79 267 80 Q275 81 276 89 Q266 85 257 89Z" fill="#3A2E2B"/><path d="M254 115 Q243 99 230 68" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/><circle cx="229" cy="66" r="4.1" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M119 66 H217" fill="none" stroke="#8EB0DE" stroke-width="4.8" stroke-linecap="round"/><circle cx="119" cy="66" r="3" fill="#FCE29C" stroke="#1E2A3B" stroke-width=".8"/><circle cx="217" cy="66" r="3" fill="#FCE29C" stroke="#1E2A3B" stroke-width=".8"/><path d="M249 146 V157 M285 146 V157" fill="none" stroke="#3D5F91" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M108 86 H151" fill="none" stroke="#AAB6C6" stroke-width="1" stroke-dasharray="2 4"/><path d="M118 80 l6 6-6 6 M148 80 l6 6-6 6" fill="none" stroke="#AAB6C6" stroke-width="1.2"/><circle cx="108" cy="65" r="2" fill="#F2C14E"/><circle cx="217" cy="65" r="2" fill="#F2C14E"/><path d="M261 85 Q267 82 273 85" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M250 116 Q259 110 270 113" fill="none" stroke="#A8D4A2" stroke-width="1.3"/><path d="M72 38 H128" fill="none" stroke="#FFFFFF" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M68 29 H141" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".85"/><path d="M103 61 H211" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="170" cy="63" rx="37" ry="25" fill="#FFFFFF" opacity=".08"/></g>
+</svg>

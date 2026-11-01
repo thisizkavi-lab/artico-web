@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 41 - Work and business idioms
+  WORD: red tape (idiom)
+  CONTEXTUAL_DEFINITION: Excessive official paperwork and procedure that delays ordinary work.
+  PEDAGOGICAL_ARCHETYPE: 6 - Bureaucratic obstruction
+  SYNONYM_GUARD: A thick crimson ribbon literally binds a tall stack of blank forms while a waiting worker cannot proceed; the ribbon represents administrative obstacles, not gift wrapping.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Stack blank files and paper at x=99..220, y=50..146. Wrap a broad red ribbon vertically and horizontally around the stack with a large knot at center. Add a waiting clerk holding an unfinished folder at left and a small queue rail in the background.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="41:red tape" data-archetype="bureaucratic-delay">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#CE3D4E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="tape-room" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="tape-paper" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5E9F0"/></linearGradient>
+    <radialGradient id="tape-wait"><stop stop-color="#F7D9DE" stop-opacity=".52"/><stop offset="1" stop-color="#CE3D4E" stop-opacity="0"/></radialGradient>
+    <filter id="tape-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2.4" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#tape-room)"/><rect y="151" width="304" height="41" fill="#EAE3D5"/><path d="M0 151 H304" fill="none" stroke="#CFC5B7" stroke-width="1.2"/><ellipse cx="151" cy="170" rx="113" ry="7" fill="#DDD4C3"/><path d="M20 31 H284 V107 H20Z" fill="#F8FAFC" stroke="#D4DCE5" stroke-width="1.1"/></g>
+  <g id="layer-context"><path d="M27 105 V140 M34 105 V140 M27 113 H34 M27 128 H34" fill="none" stroke="#94A3B8" stroke-width="1.5"/><path d="M34 110 C54 110 64 110 79 110 M34 130 C54 130 64 130 79 130" fill="none" stroke="#CBD5E1" stroke-width="1.5"/><ellipse cx="156" cy="103" rx="81" ry="62" fill="url(#tape-wait)"/><path d="M100 139 H221" fill="none" stroke="#C88446" stroke-width="2"/><path d="M103 135 L115 120 H208 L218 135Z" fill="#D7DFE8" stroke="#64748B" stroke-width="1.2"/><path d="M109 123 H207 M105 130 H214" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#tape-shadow)"><path d="M121 64 L204 64 L216 76 L216 137 L121 137Z" fill="url(#tape-paper)" stroke="#1E2A3B" stroke-width="1.7"/><path d="M204 64 V77 H216" fill="none" stroke="#AAB6C6" stroke-width="1.1"/><path d="M132 82 H197 M132 90 H193 M132 98 H199 M132 106 H188 M132 115 H198" fill="none" stroke="#CBD5E1" stroke-width="1.2"/><path d="M116 94 H220 V107 H116Z" fill="#CE3D4E" stroke="#9E2636" stroke-width="1.1"/><path d="M140 60 H153 V141 H140Z" fill="#CE3D4E" stroke="#9E2636" stroke-width="1.1"/><path d="M143 62 H146 V139 H143Z M118 97 H218 V100 H118Z" fill="#EA7580"/><path d="M40 147 Q43 125 56 119 L57 108 Q53 104 55 96 Q59 86 70 87 Q82 88 84 98 L82 110 Q97 116 100 147Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><ellipse cx="69" cy="97" rx="9" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.3"/><path d="M60 95 Q61 85 70 86 Q79 87 79 95 Q70 91 60 95Z" fill="#3A2E2B"/><path d="M79 120 Q95 122 106 117" fill="none" stroke="#D89A6C" stroke-width="7" stroke-linecap="round"/><path d="M96 117 L110 110 L119 119 L105 126Z" fill="#8EB0DE" stroke="#1E2A3B" stroke-width="1.2"/><path d="M102 118 H112" fill="none" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M130 79 H151 M130 87 H155 M130 95 H147" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><circle cx="225" cy="55" r="2" fill="#CE3D4E"/><circle cx="233" cy="60" r="1.5" fill="#CE3D4E"/><path d="M63 92 Q70 88 77 92" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M177 40 l3 5 5 1-5 2-3 5-2-5-5-2 5-1Z" fill="#F2C14E"/><path d="M147 47 V57 M225 108 H252" fill="none" stroke="#CBD5E1" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><path d="M124 68 H192" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".85"/><path d="M120 99 H143" fill="none" stroke="#EA7580" stroke-width="1.2"/><ellipse cx="154" cy="98" rx="34" ry="24" fill="#FFFFFF" opacity=".07"/></g>
+</svg>

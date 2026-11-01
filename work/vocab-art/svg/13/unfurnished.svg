@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: unfurnished (Adjective)
+  CONTEXTUAL_DEFINITION: A rental room supplied without furniture.
+  PEDAGOGICAL_ARCHETYPE: 6 — Room condition contrast
+  SYNONYM_GUARD: Show the bare room with only a window and empty floor; furnished has a bed, chair, table, and lamp.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bare bedroom with empty walls and open floor.
+    - Context_Layer: Window and baseboard establish the same room type as furnished.
+    - Focal_Layer: Entire room is visibly vacant, with no bed or furniture.
+    - Details_Layer: A few sunlit floorboards and an open doorway reinforce emptiness.
+    - Lighting_Layer: Soft empty floor halo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:unfurnished" data-archetype="room-state">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 143H304V192H0Z" fill="#D8C5A8"/><path d="M0 143H304" stroke="#8A5A35" stroke-width="2"/><path d="M21 24H84V77H21Z" fill="#DCEAF0" stroke="#1E2A3B" stroke-width="2"/><path d="M52 25V76M22 50H83" stroke="#FFFFFF" stroke-width="2.3"/><path d="M13 160H290" stroke="#F3ECE1" stroke-width="1.5"/><ellipse cx="154" cy="156" rx="84" ry="6" fill="#B9AA91" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M14 139H290V147H14Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.2"/><path d="M224 29V142" stroke="#CBD5E1" stroke-width="1.2"/><path d="M252 31V142" stroke="#CBD5E1" stroke-width="1.2"/><path d="M89 29V118" stroke="#F7F5EE" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M89 117Q153 108 215 117V139H89Z" fill="#FEF3C7" opacity=".48"/><path d="M104 125H205" stroke="#C6AE8C" stroke-width="1.5"/><path d="M109 132H197" stroke="#C6AE8C" stroke-width="1.2"/><path d="M24 31H74V67H24Z" fill="#CDE0E9" stroke="#1E2A3B" stroke-width="1.8"/><path d="M49 32V66M25 49H73" stroke="#5479AC" stroke-width="1.4"/><path d="M276 34V140" stroke="#64748B" stroke-width="2"/><path d="M273 94H280" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M92 85H196M103 94H181" stroke="#E8E2D8" stroke-width="1.2"/><path d="M30 82H82M218 72H268" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/><path d="M95 151H208" stroke="#C6AE8C" stroke-width="1.2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="155" cy="132" rx="60" ry="18" fill="#FEF3C7" opacity=".3"/><path d="M103 126H208" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 5" opacity=".6"/></g>
+</svg>

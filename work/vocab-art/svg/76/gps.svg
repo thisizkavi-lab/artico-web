@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: GPS
+  CONTEXTUAL_DEFINITION: A satellite-based system that shows a traveler's current position on a digital map.
+  PEDAGOGICAL_ART_DIRECTOR: Show a handheld digital navigation screen with a live position dot and route, linked visually to satellites overhead.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Make this electronic satellite navigation, not a paper map or compass; leave the screen free of letters, numbers, and coordinates.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A large angled smartphone map occupies x=85..226 and y=45..173; two small satellites beam to a position pin on its route screen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="76:gps" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="gps-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D4E6EC"/><stop offset="1" stop-color="#F3F0E6"/></linearGradient>
+  <linearGradient id="gps-phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#414F5C"/><stop offset="1" stop-color="#1E2A3B"/></linearGradient>
+  <linearGradient id="gps-screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8F0E6"/><stop offset="1" stop-color="#CADACD"/></linearGradient>
+  <filter id="gps-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".22"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gps-sky)"/><path d="M0 149Q47 134 90 147T176 144T304 142V192H0Z" fill="#A9C29E"/><path d="M0 167Q66 153 126 165T244 162T304 166V192H0Z" fill="#8EAD8B"/><path d="M25 122L61 106L86 117M222 116L253 102L286 113" fill="none" stroke="#779879" stroke-width="1.8"/><ellipse cx="151" cy="168" rx="65" ry="9" fill="#526274" opacity=".18"/></g>
+ <g id="layer-context"><path d="M48 34L79 28L91 40L60 46Z" fill="#A7C3CA" stroke="#526A75" stroke-width="1.3"/><path d="M49 29L40 18M79 28L87 16M60 46L51 57" stroke="#536A75" stroke-width="1.8"/><rect x="55" y="26" width="27" height="19" rx="3" transform="rotate(-11 55 26)" fill="#6A8290" stroke="#1E2A3B" stroke-width="1.3"/><path d="M215 26L245 32L253 46L221 41Z" fill="#A7C3CA" stroke="#526A75" stroke-width="1.3"/><path d="M221 41L211 52M245 32L251 20M253 46L266 52" stroke="#536A75" stroke-width="1.8"/><rect x="218" y="29" width="27" height="18" rx="3" transform="rotate(11 218 29)" fill="#6A8290" stroke="#1E2A3B" stroke-width="1.3"/></g>
+ <g id="layer-focal" filter="url(#gps-shadow)"><path d="M59 60L82 55M224 60L205 65" stroke="#F2C14E" stroke-width="1.6" stroke-dasharray="3 4"/><path d="M73 45Q105 65 125 82M228 48Q201 63 185 82" fill="none" stroke="#F2C14E" stroke-width="1.7" stroke-dasharray="4 5"/><g transform="rotate(-7 154 111)"><rect x="91" y="44" width="126" height="132" rx="17" fill="url(#gps-phone)" stroke="#172432" stroke-width="2.5"/><rect x="100" y="56" width="108" height="105" rx="7" fill="url(#gps-screen)" stroke="#92A4A6" stroke-width="1.2"/><path d="M104 79Q128 71 147 83T204 80M103 145Q132 135 148 140T205 132M115 58Q126 83 118 104T127 158M190 58Q178 87 191 108T183 158" fill="none" stroke="#91B188" stroke-width="2"/><path d="M107 131C126 116 139 125 152 107S176 84 198 95" fill="none" stroke="#4A72B2" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round"/><circle cx="152" cy="107" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M152 93L161 108L152 105L143 108Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="154" cy="167" r="3.2" fill="#AEB8BC"/></g><path d="M153 41L163 28L173 41Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><path d="M163 41V52" stroke="#1E2A3B" stroke-width="1.5"/></g>
+ <g id="layer-details"><circle cx="126" cy="65" r="2.2" fill="#FFFFFF"/><circle cx="183" cy="65" r="2.2" fill="#FFFFFF"/><path d="M106 71L128 77M178 149L202 142" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><circle cx="45" cy="91" r="5" fill="#83AA78" stroke="#486750" stroke-width="1.2"/><circle cx="267" cy="81" r="6" fill="#83AA78" stroke="#486750" stroke-width="1.2"/><path d="M38 121H69M240 127H274" stroke="#80A17A" stroke-width="1.5"/></g>
+ <g id="layer-lighting"><path d="M99 62H203" stroke="#FFFFFF" stroke-width="1.3" opacity=".8"/><ellipse cx="154" cy="109" rx="85" ry="72" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".46"/><circle cx="163" cy="40" r="18" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".4"/></g>
+</svg>

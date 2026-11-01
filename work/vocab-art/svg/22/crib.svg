@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: crib (Noun)
+  CONTEXTUAL_DEFINITION: A fixed bed with high rails for an infant.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A full-sized stationary wooden baby bed with four high vertical rails is larger and more permanent than a portable Moses basket.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet nursery wall and floor.
+    - Context_Layer: Small shelf and folded blanket.
+    - Focal_Layer: Full-sized crib with mattress and tall rails.
+    - Details_Layer: Vertical slats, corner posts, and soft sheet.
+    - Lighting_Layer: Calm halo around the bed.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:crib" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="crib-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="crib-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#crib-bg)"/><path d="M0 153Q75 146 152 153T304 150V192H0Z" fill="#EADFCC"/><path d="M29 41H275V148H29Z" fill="#E3E8F0" opacity=".5"/><path d="M42 52H82V90H42Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.5"/><path d="M50 83Q61 66 74 83" fill="none" stroke="#829A83" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M44 129H97V144H44Z" fill="#829A83"/><path d="M49 126L70 120L92 126V132H49Z" fill="#DCECFB"/><path d="M48 144V160M92 144V160" stroke="#80513F" stroke-width="3.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#crib-shadow)"><path d="M56 80H248V150H56Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.8"/><path d="M64 92H241V137H64Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.7"/><path d="M70 98Q102 91 134 98T199 98T237 98V129Q205 123 172 129T106 129T70 129Z" fill="#FFFFFF" opacity=".78"/><path d="M52 80V46Q52 40 59 40H245Q252 40 252 47V80" fill="none" stroke="#80513F" stroke-width="6" stroke-linejoin="round"/><path d="M69 81V146M88 81V146M107 81V146M126 81V146M145 81V146M164 81V146M183 81V146M202 81V146M221 81V146M240 81V146" stroke="#F3ECE1" stroke-width="4"/><path d="M58 149V168M246 149V168" stroke="#80513F" stroke-width="5" stroke-linecap="round"/><path d="M62 151H244" stroke="#80513F" stroke-width="4"/></g>
+  <g id="layer-details"><path d="M86 31Q151 16 217 31" fill="none" stroke="#FFFFFF" stroke-width="2.8"/><circle cx="45" cy="101" r="2.3" fill="#D9A441"/><circle cx="258" cy="101" r="2.3" fill="#D9A441"/><path d="M67 70H236" stroke="#FFFFFF" stroke-width="1.5" opacity=".75"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="107" rx="127" ry="77" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M64 28Q152 11 241 28" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

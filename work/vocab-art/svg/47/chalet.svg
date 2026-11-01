@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: chalet
+  CONTEXTUAL_DEFINITION: A mountain holiday house in a traditional alpine style.
+  PEDAGOGICAL_ART_DIRECTOR: Show a timber alpine house with a very broad overhanging roof, balconies, and snow-touched mountains behind it.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Give it unmistakable alpine architecture and mountain scenery, distinct from a plain woodland cabin.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A broad alpine chalet with steep timber gables, wide eaves, upper balcony, and flower boxes fills the center beneath snowy mountain peaks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:chalet" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="chalet-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#CFE3EC"/><stop offset="1" stop-color="#F3F1E9"/></linearGradient>
+  <linearGradient id="chalet-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D8BD98"/><stop offset="1" stop-color="#A87C56"/></linearGradient>
+  <linearGradient id="chalet-roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6E7474"/><stop offset="1" stop-color="#4C5960"/></linearGradient>
+  <filter id="chalet-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.7" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#chalet-sky)"/><path d="M0 100L40 42L72 85L114 22L151 77L190 31L228 83L267 35L304 89V151H0Z" fill="#7F9BA3"/><path d="M18 75L40 42L59 72L48 67L40 57L32 70ZM91 55L114 22L137 59L126 52L114 39L103 53ZM173 60L190 31L213 63L202 57L190 46L182 58ZM246 65L267 35L289 68L279 61L267 50L255 65Z" fill="#F8F9F4"/><path d="M0 128Q52 111 106 126T214 121T304 128V192H0Z" fill="#A5BD9A"/><path d="M0 155Q84 143 155 157T304 152V192H0Z" fill="#91AF89"/></g>
+ <g id="layer-context"><circle cx="28" cy="125" r="15" fill="#729376" stroke="#486750" stroke-width="1.4"/><circle cx="279" cy="123" r="17" fill="#729376" stroke="#486750" stroke-width="1.4"/><path d="M16 143H47M258 145H293" stroke="#819A78" stroke-width="2"/><path d="M35 112L48 92L62 113Z" fill="#506C5B" stroke="#1E2A3B" stroke-width="1.2"/><path d="M248 111L263 89L278 112Z" fill="#506C5B" stroke="#1E2A3B" stroke-width="1.2"/></g>
+ <g id="layer-focal" filter="url(#chalet-shadow)"><path d="M55 81L151 30L251 81V153H55Z" fill="url(#chalet-wood)" stroke="#1E2A3B" stroke-width="2"/><path d="M36 83L151 21L270 83L254 91L151 39L53 91Z" fill="url(#chalet-roof)" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M51 87H257" stroke="#D7C5A7" stroke-width="4"/><rect x="82" y="92" width="43" height="30" fill="#B8D7DE" stroke="#3D5360" stroke-width="1.7"/><path d="M103 92V122M82 107H125" stroke="#765D45" stroke-width="1.5"/><rect x="178" y="92" width="43" height="30" fill="#B8D7DE" stroke="#3D5360" stroke-width="1.7"/><path d="M199 92V122M178 107H221" stroke="#765D45" stroke-width="1.5"/><path d="M71 84V89M91 80V89M111 76V89M131 71V89M151 67V89M171 72V89M191 76V89M211 80V89M231 84V89" stroke="#EEE6D5" stroke-width="1.2"/><path d="M67 126H239V136H67Z" fill="#6C513D" stroke="#1E2A3B" stroke-width="1.3"/><path d="M76 136V153M230 136V153" stroke="#4D4136" stroke-width="2.6"/><path d="M138 153V133Q138 124 152 124Q166 124 166 133V153Z" fill="#735944" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="160" cy="139" r="2" fill="#F2C14E"/></g>
+ <g id="layer-details"><rect x="231" y="39" width="15" height="38" fill="#806047" stroke="#1E2A3B" stroke-width="1.2"/><path d="M229 40H248L246 34H232Z" fill="#F2F1E9" stroke="#1E2A3B" stroke-width="1.1"/><rect x="82" y="123" width="43" height="5" fill="#A46F4D"/><rect x="178" y="123" width="43" height="5" fill="#A46F4D"/><circle cx="87" cy="123" r="3" fill="#D97E59"/><circle cx="97" cy="123" r="3" fill="#E9B95F"/><circle cx="109" cy="123" r="3" fill="#D97E59"/><circle cx="183" cy="123" r="3" fill="#E9B95F"/><circle cx="194" cy="123" r="3" fill="#D97E59"/><circle cx="207" cy="123" r="3" fill="#E9B95F"/><ellipse cx="152" cy="159" rx="105" ry="8" fill="#526274" opacity=".18"/></g>
+ <g id="layer-lighting"><path d="M39 82L151 24L265 82" fill="none" stroke="#B8C5C6" stroke-width="1.4"/><ellipse cx="151" cy="121" rx="112" ry="54" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".34"/></g>
+</svg>

@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: promote (verb; career advancement)
+  CONTEXTUAL_DEFINITION: Move an employee to a higher position or rank at work.
+  PEDAGOGICAL_ART_DIRECTOR: Show an existing employee receiving visible recognition and being raised to a higher office level by a supervisor.
+  PEDAGOGICAL_ARCHETYPE: 3 - Professional role transition
+  SYNONYM_GUARD: Employment siblings lock this to a worker advancing in rank, not advertising a product or encouraging an idea.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put the employee at center x=148,y=99 on a small blue platform at y=142; place a supervisor at x=220,y=105 reaching in to pin a gold rosette on the employee's lapel. Add a second, higher platform edge and a blue up-arrow behind them.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:promote" data-archetype="professional-transition">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="promote-suit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="promote-step" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <radialGradient id="promote-halo"><stop stop-color="#FFF1B9" stop-opacity=".88"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="promote-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="promote-employee" d="M128 128 Q128 105 143 99 L144 89 Q138 83 140 73 Q142 60 154 59 Q167 60 169 73 Q171 83 164 90 L168 101 Q183 106 184 128 L178 140 H132 Z"/>
+    <clipPath id="promote-clip"><use href="#promote-employee"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="160" cy="165" rx="109" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Office floor and upward role steps -->
+  <g id="layer-context"><path d="M31 151 H275" stroke="#C88446" stroke-width="2"/><path d="M37 150 H111 V138 H151 V125 H191 V112 H222 V150 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M44 146 H104 M119 134 H145 M158 121 H184" stroke="#FFFFFF" stroke-width="2"/><rect x="42" y="48" width="40" height="41" rx="3" fill="#EEF4FA" stroke="#94A3B8" stroke-width="1.4"/><path d="M49 57 H74 M49 64 H69 M49 72 H74" stroke="#94A3B8" stroke-width="1.3"/><path d="M231 52 H267 V89 H231 Z" fill="#E5F0E1" stroke="#64748B" stroke-width="1.4"/><path d="M238 61 H260 M238 68 H256 M238 77 H261" stroke="#94A3B8" stroke-width="1.2"/></g>
+  <!-- 3. Employee advances while a supervisor awards a higher role -->
+  <g id="layer-focal" filter="url(#promote-shadow)"><path d="M132 143 H213 V151 H132 Z" fill="url(#promote-step)" stroke="#1E2A3B" stroke-width="2"/><use href="#promote-employee" fill="url(#promote-suit)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><g clip-path="url(#promote-clip)"><path d="M124 103 Q156 90 188 105 V145 H124 Z" fill="#3D5F91"/><path d="M137 105 Q154 98 174 104" fill="none" stroke="#BBD2EF" stroke-width="3"/></g><ellipse cx="155" cy="76" rx="11" ry="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M144 75 Q145 61 155 61 Q165 61 167 74 Q160 68 154 69 Q150 74 144 75 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.3"/><use href="#promote-employee" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><circle cx="152" cy="77" r="1.1" fill="#1E2A3B"/><circle cx="159" cy="77" r="1.1" fill="#1E2A3B"/><path d="M152 83 Q156 85 160 82" fill="none" stroke="#1E2A3B" stroke-width="1" stroke-linecap="round"/><path d="M221 129 Q221 111 232 105 L235 95 Q232 90 236 82 Q241 75 249 80 Q256 85 252 96 L249 104 Q260 110 262 129 L257 142 H223 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="2.2"/><ellipse cx="243" cy="91" rx="8" ry="10" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.5"/><path d="M236 89 Q236 79 244 79 Q251 80 252 88 Q246 83 240 85 Z" fill="#6B5140" stroke="#1E2A3B" stroke-width="1.1"/><path d="M226 121 Q213 115 204 108 L199 113 Q208 127 224 133 Z" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M204 109 Q197 106 194 110 L199 117 L207 114 Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. New responsibility symbol and personal recognition -->
+  <g id="layer-details"><circle cx="174" cy="108" r="11" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><path d="M174 101 L176 106 L181 106 L177 110 L178 115 L174 112 L170 115 L171 110 L167 106 L172 106 Z" fill="#FFFFFF" stroke="#965D28" stroke-width=".8"/><path d="M112 111 V84" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/><path d="M106 91 L112 81 L118 91 Z" fill="#4A72B2"/><rect x="189" y="133" width="17" height="15" rx="2" fill="#DCECFB" stroke="#64748B" stroke-width="1.2"/><path d="M193 138 H202 M193 142 H200" stroke="#94A3B8" stroke-width="1.1"/></g>
+  <!-- 5. Focus ring around the awarded advancement -->
+  <g id="layer-lighting"><ellipse cx="174" cy="108" rx="25" ry="23" fill="url(#promote-halo)"/><ellipse cx="174" cy="108" rx="20" ry="19" fill="none" stroke="#D97706" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M147 65 H157" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><path d="M265 100 L265 109 M261 104 H269" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

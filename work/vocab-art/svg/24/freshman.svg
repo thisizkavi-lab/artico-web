@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: freshman (Noun)
+  CONTEXTUAL_DEFINITION: A student in the first year at high school or university, especially in American English.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show a first-year student moving into a residence hall with a box and new class binder; distinguish from the fresher orientation-map scene without national stereotypes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Campus residence hall entrance and a sunny path.
+    - Context_Layer: Open dorm doorway and a few moving boxes.
+    - Focal_Layer: New student carries a box and class binder toward the residence.
+    - Details_Layer: A key card and freshly packed backpack.
+    - Lighting_Layer: Clear daytime light marks the start of a new school year.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:freshman" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="freshman-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="freshman-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#freshman-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#DCE8D7"/><path d="M203 29H286V150H203Z" fill="#F3ECE1" stroke="#64748B" stroke-width="1.6"/><path d="M219 54H270V150H219Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.3"/><path d="M228 54V150M261 54V150" stroke="#FFFFFF" stroke-width="1.3"/><path d="M0 150H304" stroke="#829A83" stroke-width="2"/><circle cx="263" cy="27" r="12" fill="#F6D777"/></g>
+  <g id="layer-context"><path d="M34 124H86V136H34Z" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><path d="M40 128H80" stroke="#DCECFB" stroke-width="1.2"/><path d="M26 136H94V149H26Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M34 141H85" stroke="#F9CED0" stroke-width="1.2"/><path d="M159 118H189V149H159Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.2"/><path d="M165 125H183" stroke="#8D765A" stroke-width="1.1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#freshman-shadow)"><circle cx="133" cy="66" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M121 66Q122 51 134 52Q147 53 146 67L140 70Q137 59 131 60Q126 61 124 72Z" fill="#27364B"/><path d="M117 85Q133 78 150 85L156 112L144 123L121 116Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M123 88L111 100L99 106M147 88L162 97L171 90" fill="none" stroke="#1E2A3B" stroke-width="4.8" stroke-linecap="round"/><path d="M123 88L111 100L99 106M147 88L162 97L171 90" fill="none" stroke="#C98961" stroke-width="2.7" stroke-linecap="round"/><path d="M124 117L119 149M142 118L154 149" stroke="#315782" stroke-width="6" stroke-linecap="round"/><path d="M78 91L110 84L122 109L89 118Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.5"/><path d="M87 94L105 90L112 106L94 111Z" fill="#CFB48C" stroke="#8D6138" stroke-width="1"/><path d="M149 79L176 72L185 95L158 103Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><path d="M158 81L175 77M161 87L177 83" stroke="#F9CED0" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M106 104L111 109" stroke="#65472F" stroke-width="1.2"/><path d="M117 75Q133 80 148 75" fill="none" stroke="#1E2A3B" stroke-width="1.2"/><path d="M91 121L100 119" stroke="#D9A441" stroke-width="1.6"/><circle cx="196" cy="99" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="149" cy="97" rx="128" ry="72" fill="#FEF9C3" opacity=".09"/><path d="M203 29H286V150" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><path d="M0 151Q76 146 152 151T304 149" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".5"/></g>
+</svg>

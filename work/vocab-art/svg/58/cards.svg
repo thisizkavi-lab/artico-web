@@ -1,0 +1,28 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: cards (noun)
+  CONTEXTUAL_DEFINITION: Playing cards used for a tabletop card game.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero object with game context
+  SYNONYM_GUARD: Show a small fan of standard playing cards with simple suit-like shapes and a hand ready to deal; do not show greeting cards or business cards.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Three overlapping rounded playing cards with red and black pips fan across a game table beside a low deck and one player's hand.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:cards" data-archetype="playing-cards-fanned-on-game-table">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="cards-room" x2="0" y2="1"><stop stop-color="#EFF2EC"/><stop offset="1" stop-color="#E0E2D8"/></linearGradient>
+  <linearGradient id="cards-table" x2="0" y2="1"><stop stop-color="#BD9163"/><stop offset="1" stop-color="#916441"/></linearGradient>
+  <filter id="cards-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#cards-room)"/><path d="M0 147H304V192H0Z" fill="#D5C2A4"/><path d="M0 147H304" stroke="#987757" stroke-width="1.5" fill="none"/><rect x="22" y="22" width="57" height="46" rx="3" fill="#C2D6CF" stroke="#6D837A" stroke-width="1.8"/><path d="M50 23V66M24 44H77" stroke="#F7F1E6" stroke-width="2.5" fill="none"/></g>
+ <g id="layer-context"><path d="M224 42H287V48H224ZM229 48V85M282 48V85" stroke="#806B55" stroke-width="2" fill="none"/><path d="M237 57h37v22h-37Z" fill="#DCCDAE"/><path d="M241 75q8-13 15 0m2-8q6-8 11 0" stroke="#6F8E79" stroke-width="1.1" fill="none"/><ellipse cx="151" cy="149" rx="96" ry="5" fill="#6A5038" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#cards-shadow)">
+  <path d="M75 114L137 83Q143 81 147 88L170 131Q171 138 165 142L105 158Z" fill="#FFF9EA" stroke="#6B6151" stroke-width="1.3"/><path d="M103 101L165 85Q172 84 175 91L190 138Q191 145 184 147L124 161Z" fill="#FFFAEA" stroke="#6B6151" stroke-width="1.3"/><path d="M133 100L194 94Q201 95 202 102L207 151Q207 158 200 159L140 164Z" fill="#FFF8E8" stroke="#6B6151" stroke-width="1.3"/>
+  <path d="M83 122l9-5 5 9-9 5Z" fill="#D86F67"/><path d="M88 143q7-11 13 0q-6 9-13 0Z" fill="#D86F67"/><path d="M111 106l7 3-2 8-8-2Z" fill="#2F4650"/><path d="M125 139q7-10 12 0q-6 9-12 0Z" fill="#2F4650"/><circle cx="177" cy="102" r="3.4" fill="#D86F67"/><circle cx="183" cy="125" r="3.4" fill="#2F4650"/><circle cx="192" cy="145" r="3.4" fill="#D86F67"/><path d="M164 109q7-10 13 0q-6 9-13 0Z" fill="#D86F67"/><path d="M178 136l5-4 5 4-5 5Z" fill="#2F4650"/>
+  <path d="M54 123Q63 113 77 117L91 128Q97 135 90 140L70 142Q60 137 54 123Z" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M69 129Q80 132 91 137" stroke="#F1C6A2" stroke-width="1" fill="none"/>
+  <path d="M212 131Q221 120 235 124L247 133Q251 139 246 145H221Z" fill="#789385" stroke="#4B625F" stroke-width="1.2"/><path d="M223 131q8 4 16 0" stroke="#D7E4D8" stroke-width="1.2" fill="none"/>
+  <path d="M89 159H250" stroke="#70583F" stroke-width="2" fill="none"/>
+ </g>
+ <g id="layer-details"><path d="M147 92l11 31m4-34 10 30m-46-30 7 18m39 29 16 5" stroke="#D8C9AE" stroke-width=".8" fill="none"/><circle cx="61" cy="92" r="1.3" fill="#FFFFFF"/><circle cx="70" cy="84" r="1" fill="#FFFFFF"/><path d="M48 111q10-4 17 2m180-29h34" stroke="#D5C4A5" stroke-width="1" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="145" cy="122" rx="77" ry="41" fill="#F1CE7D" opacity=".1"/><path d="M80 114q24-16 44-22m49 5q10-3 18 0" stroke="#FFFFFF" stroke-width="1.3" fill="none" opacity=".7" stroke-linecap="round"/></g>
+</svg>

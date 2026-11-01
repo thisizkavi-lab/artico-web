@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: moving (Noun / gerund)
+  CONTEXTUAL_DEFINITION: The process of transferring belongings and life from one home to another.
+  PEDAGOGICAL_ARCHETYPE: 5 — Between-two-homes spatial action
+  SYNONYM_GUARD: Show personal belongings traveling between old and new homes; the truck card isolates a vehicle and move-in/out each show one doorway direction.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two homes at opposite ends of one card.
+    - Context_Layer: Old home muted and new home warm.
+    - Focal_Layer: Family member carries a box along an arrowed route between doorways.
+    - Details_Layer: Several household objects travel in the same direction.
+    - Lighting_Layer: Blue dotted path from old home to new home.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:moving" data-archetype="relocation-diagram">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#EAF2F7"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 150H304V192H0Z" fill="#D8C5A8"/><path d="M0 150H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="151" cy="164" rx="126" ry="6" fill="#978A78" opacity=".24"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M19 67L54 42L89 67V135H19Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.8"/><path d="M14 68L54 37L94 68" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.8"/><path d="M34 82H52V100H34Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.4"/><path d="M61 100Q61 96 65 96H75V135H61Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.4"/><path d="M210 67L245 42L281 67V136H210Z" fill="#F0D8B3" stroke="#1E2A3B" stroke-width="1.9"/><path d="M205 68L245 37L286 68" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M226 82H244V100H226Z" fill="#CDE0E9" stroke="#5479AC" stroke-width="1.4"/><path d="M253 100Q253 96 257 96H268V136H253Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M9 136H97M206 137H287" stroke="#7FB07A" stroke-width="4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="150" cy="67" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M140 65Q140 52 151 52Q161 53 160 66L155 59H144Z" fill="#3A2E2B"/><path d="M139 81Q150 74 161 81L168 114H133Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M144 83L132 97L119 94" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M144 83L132 97L119 94" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M157 83L173 95L187 90" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M157 83L173 95L187 90" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M145 112L140 145M160 112L166 145" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M145 112L140 145M160 112L166 145" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M111 76H138V103H111Z" fill="#D9B98C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M115 82H134M115 87H134" stroke="#C18B56" stroke-width="1.1"/><path d="M177 64H194V84H177Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/><path d="M103 113H122V136H103Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M105 113V107H119V114" fill="none" stroke="#1E2A3B" stroke-width="1.4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M90 154H208" stroke="#F3ECE1" stroke-width="1.4"/><path d="M112 92L119 94M181 88L188 90" stroke="#F2C14E" stroke-width="1.3"/><path d="M16 68L53 40M208 67L245 40" stroke="#FFFFFF" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M71 47Q133 18 190 48Q223 65 229 95" fill="none" stroke="#4A72B2" stroke-width="2" stroke-dasharray="5 4"/><path d="M223 88L230 96L222 98" fill="none" stroke="#4A72B2" stroke-width="2"/><circle cx="153" cy="92" r="35" fill="#FEF3C7" opacity=".1"/></g>
+</svg>

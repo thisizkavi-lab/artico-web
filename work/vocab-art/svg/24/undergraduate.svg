@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: undergraduate (Noun)
+  CONTEXTUAL_DEFINITION: A university student studying for a first degree.
+  PEDAGOGICAL_ARCHETYPE: 2 — Person in environment
+  SYNONYM_GUARD: Show a university student in a taught seminar with classmates and course materials; distinguish the first-degree learner from a postgraduate researcher.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University seminar room with windows and board.
+    - Context_Layer: Lecturer and a few students at desks.
+    - Focal_Layer: Undergraduate participates in a small-group course discussion with an open textbook.
+    - Details_Layer: Course notes and a first-degree pathway of class materials.
+    - Lighting_Layer: Clear classroom light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:undergraduate" data-archetype="person-in-environment">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="undergraduate-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="undergraduate-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#undergraduate-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M18 24H95V75H18Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 25V74M19 49H94" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M214 35H284V83H214Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M224 49L239 41L254 49L239 58Z" fill="#D9A441"/><path d="M224 68H272" stroke="#DCECFB" stroke-width="1.5"/><path d="M38 121H93V128H38Z" fill="#A98A64"/><path d="M45 128V148M87 128V148" stroke="#8D765A" stroke-width="2.5"/><circle cx="62" cy="103" r="8" fill="#80513F" stroke="#1E2A3B" stroke-width="1"/><path d="M54 103Q55 93 63 94Q71 95 70 104" fill="#27364B"/><path d="M51 112Q62 107 73 112L76 121H48Z" fill="#91A77C" stroke="#54765A" stroke-width="1"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#undergraduate-shadow)"><path d="M94 108H269V117H94Z" fill="#A98A64" stroke="#65472F" stroke-width="1.2"/><path d="M105 117V149M258 117V149" stroke="#8D765A" stroke-width="2.8"/><circle cx="169" cy="65" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M157 65Q158 50 170 51Q183 52 182 66L176 69Q173 58 167 59Q162 60 160 71Z" fill="#27364B"/><path d="M152 84Q169 77 186 84L193 105L180 115L157 108Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M159 87L144 98L130 94M184 87L199 98L213 91" fill="none" stroke="#1E2A3B" stroke-width="4.6" stroke-linecap="round"/><path d="M159 87L144 98L130 94M184 87L199 98L213 91" fill="none" stroke="#C98961" stroke-width="2.6" stroke-linecap="round"/><path d="M158 110L152 148M178 111L190 148" stroke="#315782" stroke-width="5.8" stroke-linecap="round"/><path d="M130 96L150 90L155 107L134 112Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.1"/><path d="M136 100L149 97M138 105L150 102" stroke="#88A9D0" stroke-width="1"/><circle cx="235" cy="65" r="8" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1"/><path d="M227 65Q228 55 236 56Q244 57 243 66" fill="#27364B"/><path d="M223 75Q235 70 247 75L250 108H220Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M127 81Q135 73 143 80" fill="none" stroke="#D9A441" stroke-width="1.7"/><path d="M199 77Q207 69 215 76" fill="none" stroke="#D9A441" stroke-width="1.7"/><circle cx="221" cy="69" r="2" fill="#D9A441"/><path d="M154 74Q169 79 184 74" fill="none" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><ellipse cx="156" cy="94" rx="126" ry="69" fill="#FEF9C3" opacity=".09"/><path d="M18 25H95V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M214 35H284V83" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".6"/></g>
+</svg>

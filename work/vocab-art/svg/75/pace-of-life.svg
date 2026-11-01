@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:pace of life" data-archetype="contrasting-downtown-rush-and-slower-side-street">
+<!-- SELF_PROMPT: Lesson 75 urban life; pace of life. Contrast a hurried downtown commuter and busy street with a slower, calmer side street nearby. No text or numerals. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="pace-sky" x2="0" y2="1"><stop stop-color="#D9E7E8"/><stop offset="1" stop-color="#C9CEBE"/></linearGradient>
+  <linearGradient id="pace-city" x2="0" y2="1"><stop stop-color="#82959B"/><stop offset="1" stop-color="#576E76"/></linearGradient>
+  <linearGradient id="pace-ground" x2="0" y2="1"><stop stop-color="#A9A087"/><stop offset="1" stop-color="#74786B"/></linearGradient>
+  <linearGradient id="pace-road" x2="0" y2="1"><stop stop-color="#737B7B"/><stop offset="1" stop-color="#4E5B5F"/></linearGradient>
+  <filter id="pace-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#pace-sky)"/><circle cx="256" cy="33" r="12" fill="#E9C66F" opacity=".6"/><path d="M0 118V28h42v90Zm42 0V15h48v103Zm212 0V52h47v66Zm47 0V38h37v80Z" fill="url(#pace-city)"/><path d="M0 120H304V192H0Z" fill="url(#pace-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 133H150v59H0Z" fill="url(#pace-road)"/><path d="M160 137H304v55H160Z" fill="#8F927D"/><path d="M0 131H150m10 4h144" fill="none" stroke="#D8C9A8" stroke-width="2"/>
+  <path d="M16 161h35m22 0h31m111 1h40" fill="none" stroke="#EEE1C0" stroke-width="1.3"/>
+  <path d="M198 148v-22m0 12-8-9m8 7 9-10" fill="none" stroke="#66825D" stroke-width="2.3"/><circle cx="198" cy="123" r="13" fill="#748D67"/>
+  <path d="M217 150h48m-36 0v20m27-20v20" fill="none" stroke="#6D5746" stroke-width="3.5"/><path d="M217 148h49" fill="none" stroke="#B8805B" stroke-width="3"/>
+</g>
+<g id="layer-focal" filter="url(#pace-shadow)">
+  <circle cx="80" cy="82" r="7" fill="#C98E69"/><path d="M73 79q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#473E39"/><path d="M72 91Q80 87 88 91L92 113 68 114Z" fill="#B97959"/><path d="M74 112Q81 114 86 110L78 132 69 129Z" fill="#43545B"/><path d="M85 111Q90 112 94 108L107 122 101 128Z" fill="#43545B"/><path d="M71 93l-10 10 4 5 12-8m11-7 8 10-4 5-11-8" fill="#C98E69"/><path d="M67 125l-11 7m40-8 10 9" fill="none" stroke="#B8805B" stroke-width="3"/>
+  <circle cx="227" cy="107" r="7" fill="#D7A17A"/><path d="M220 104q1-10 8-10 7 1 8 10l-4-3h-9Z" fill="#5B473F"/><path d="M219 116Q227 112 235 116L239 138 215 139Z" fill="#718B6C"/><path d="M221 137l-4 19 8 1 5-18m4-2 5 19 7 0-6-19" fill="#44545A"/><path d="M219 118l-9 10 4 4 11-7m10-7 8 11-4 4-10-8" fill="#D7A17A"/>
+  <path d="M50 78q12-8 23 0m-19 7q10-6 19 0m-13 7q9-5 16 0" fill="none" stroke="#E9C66F" stroke-width="1.8"/>
+</g>
+<g id="layer-details">
+  <path d="M12 181q12-5 23 0m58 7q12-5 23 0m113-2q12-5 23 0m51-9q12-5 22 0" fill="none" stroke="#C5CE96" stroke-width="1.4"/>
+  <circle cx="132" cy="166" r="1.8" fill="#E9C66F"/><circle cx="184" cy="165" r="1.8" fill="#E9C66F"/><circle cx="279" cy="171" r="1.7" fill="#E9C66F"/>
+  <path d="M14 50h18m24-20h18m215 47h17m-38 9h17" fill="none" stroke="#E9F0E5" stroke-width="1.3"/>
+  <path d="M178 165q9-5 18 0m-3-29q8-5 15 0" fill="none" stroke="#E7D9B9" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M12 132h135m15 4h138" fill="none" stroke="#E6D9B8" stroke-width="1.2"/><path d="M61 93q12-9 26-2m123 28q12-7 23 0" fill="none" stroke="#F1D68F" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

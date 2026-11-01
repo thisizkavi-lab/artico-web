@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: bank loan (noun)
+  CONTEXTUAL_DEFINITION: A sum of money lent by a bank to a borrower, to be repaid over time.
+  PEDAGOGICAL_ARCHETYPE: 3 - Financial role exchange
+  SYNONYM_GUARD: Make the bank the lender and show money moving from its teller to a customer alongside a repayment contract; not peer-to-peer lending.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Bank officer behind counter hands a stack of notes toward a customer; blank signed agreement and house/business goal in background, no words/numbers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:bank loan" data-archetype="role-exchange">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="loan-counter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="loan-note"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></radialGradient>
+    <path id="loan-borrower-arm" d="M230 120 C216 108 204 108 190 115 L173 127 L181 141 L202 132 L219 139 Z"/>
+    <clipPath id="loan-arm-clip"><use href="#loan-borrower-arm"/></clipPath>
+    <filter id="loan-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="151" width="304" height="41" fill="#EEE7DA"/><path d="M0 151 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="164" rx="116" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Bank lending hall context -->
+  <g id="layer-context"><path d="M28 129 H277 V146 H28 Z" fill="url(#loan-counter)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M37 135 H269" stroke="#8EB0DE" stroke-width="2"/><path d="M32 45 H83 V92 H32 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><path d="M40 54 H75 M40 61 H70 M40 68 H75" stroke="#94A3B8" stroke-width="1.5"/><path d="M225 56 L249 39 L273 56 V88 H225 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.8"/><path d="M230 58 L249 45 L268 58" fill="none" stroke="#5479AC" stroke-width="1.8"/><rect x="239" y="66" width="20" height="22" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 3. Bank officer and borrower exchange a loan amount -->
+  <g id="layer-focal" filter="url(#loan-shadow)"><circle cx="104" cy="83" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M79 128 Q81 101 104 101 Q127 101 130 128 Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2.3"/><path d="M95 84 Q104 88 113 84" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M174 120 L192 111 L208 124 L189 141 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="220" cy="82" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2"/><path d="M197 128 Q200 104 220 104 Q242 104 245 128 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2.2"/><path d="M212 84 Q220 88 229 83" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><rect x="122" y="89" width="42" height="24" rx="3" fill="#E5F0E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M128 97 H157 M128 103 H151" stroke="#568552" stroke-width="1.4"/><g clip-path="url(#loan-arm-clip)"><rect x="169" y="105" width="73" height="48" fill="#D89A6C"/><path d="M174 137 Q204 119 240 136 V155 H169Z" fill="#B6784B"/></g><use href="#loan-borrower-arm" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/></g>
+  <!-- 4. Loan funds and repayment agreement -->
+  <g id="layer-details"><rect x="139" y="112" width="34" height="17" rx="2" transform="rotate(-4 139 112)" fill="url(#loan-note)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M145 118 H167 M145 123 H161" stroke="#568552" stroke-width="1.3"/><ellipse cx="160" cy="125" rx="7" ry="3.6" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M117 70 Q127 68 135 71" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M216 75 Q222 72 228 75" fill="none" stroke="#FDE4D4" stroke-width="1.8"/><path d="M130 131 H163" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 5. Funds move from bank toward borrower -->
+  <g id="layer-lighting"><path d="M130 78 H185" fill="none" stroke="#4A72B2" stroke-width="2.3" stroke-dasharray="4 4" stroke-linecap="round"/><path d="M179 73 L188 78 L179 83 Z" fill="#4A72B2"/><path d="M89 61 Q104 56 119 61" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M155 48 L155 56 M151 52 H159" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/></g>
+</svg>

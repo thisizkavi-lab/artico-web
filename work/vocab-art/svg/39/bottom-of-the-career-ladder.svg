@@ -1,0 +1,31 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 39 - Working
+  WORD: bottom of the career ladder (career level idiom)
+  CONTEXTUAL_DEFINITION: The lowest entry-level stage in a person's career.
+  PEDAGOGICAL_ART_DIRECTOR: Show a new worker beginning a climb toward professional advancement; keep the first rung distinct from the steps above.
+  PEDAGOGICAL_ARCHETYPE: 5 - Career progression diagram
+  SYNONYM_GUARD: This means the lowest career level, not a household ladder or the idiom about being at the bottom of an unrelated hierarchy.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a tall two-rail ladder at x=178..252, bottom at y=153. Mute upper rungs, glow the lowest rung at y=142. Put a junior worker at x=101..166 with one foot reaching the first rung; send a small blue progression arrow upward along the ladder.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="39:bottom of the career ladder" data-archetype="career-diagram">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="ladder-rail" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <linearGradient id="ladder-rung" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FCE29C"/><stop offset="1" stop-color="#D49B2A"/></linearGradient>
+    <radialGradient id="ladder-halo"><stop stop-color="#FFF5C8" stop-opacity=".82"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="ladder-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+    <path id="ladder-worker" d="M107 111 Q111 99 123 95 L134 91 Q147 96 151 109 L159 130 L144 139 L129 125 L121 146 L101 146 Z"/>
+    <clipPath id="ladder-worker-clip"><use href="#ladder-worker"/></clipPath>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="155" width="304" height="37" fill="#EEE7DA"/><path d="M0 155 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="168" cy="165" rx="103" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. A workplace horizon with a higher-level landing -->
+  <g id="layer-context"><path d="M232 37 H274 V57 H232 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="1.7"/><path d="M239 47 H267" stroke="#94A3B8" stroke-width="1.5"/><path d="M37 149 H267" stroke="#C88446" stroke-width="2"/><rect x="47" y="104" width="39" height="43" rx="3" fill="#E5E9F0" stroke="#64748B" stroke-width="1.5"/><path d="M53 113 H80 M53 120 H76 M53 127 H81" stroke="#94A3B8" stroke-width="1.3"/><path d="M215 26 Q215 21 220 21 H251 Q256 21 256 26 V35 H215 Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/></g>
+  <!-- 3. The first rung in an upward professional climb -->
+  <g id="layer-focal" filter="url(#ladder-shadow)"><path d="M181 153 L207 43 Q209 37 214 39 L220 41 L193 155 Z" fill="url(#ladder-rail)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M232 153 L254 43 Q255 37 261 39 L267 41 L244 155 Z" fill="url(#ladder-rail)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M201 139 L249 139 L246 149 L198 149 Z" fill="url(#ladder-rung)" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M204 119 L253 119 L251 125 L202 125 Z M209 98 L258 98 L256 104 L207 104 Z M214 77 L262 77 L260 83 L212 83 Z M219 56 L267 56 L265 62 L217 62 Z" fill="#DCE5F1" stroke="#64748B" stroke-width="1.7" stroke-linejoin="round"/><use href="#ladder-worker" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><g clip-path="url(#ladder-worker-clip)"><path d="M101 118 Q127 101 154 122 L166 157 H96Z" fill="#3D5F91"/><path d="M113 103 Q129 98 145 109" fill="none" stroke="#8EB0DE" stroke-width="4"/></g><path d="M125 82 C125 73 130 69 136 71 Q143 72 143 81 Q142 92 135 94 Q127 91 125 82 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M124 80 Q125 69 135 69 Q143 70 145 79 Q139 74 134 76 Q130 80 124 80 Z" fill="#3D342D" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="139" cy="82" r="1.2" fill="#1E2A3B"/><path d="M137 88 Q140 89 142 87" fill="none" stroke="#1E2A3B" stroke-width="1.1" stroke-linecap="round"/><path d="M137 101 Q150 101 160 109 L188 128 Q195 131 201 136 L196 142 Q188 139 182 135 L153 119 L135 112 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.1" stroke-linejoin="round"/><path d="M197 132 Q203 131 207 137 L203 143 Q197 143 193 139 Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/><use href="#ladder-worker" fill="none" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M105 140 Q115 136 125 141 L133 148 L129 153 L104 153 Q98 151 99 146 Z" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <!-- 4. Entry-level folder and a firmly planted first step -->
+  <g id="layer-details"><rect x="54" y="69" width="36" height="28" rx="3" fill="#E8B765" stroke="#1E2A3B" stroke-width="1.7"/><path d="M60 68 V64 Q60 61 64 61 H75 L80 67" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M63 79 H80 M63 85 H76" stroke="#965D28" stroke-width="1.3"/><ellipse cx="220" cy="142" rx="38" ry="24" fill="url(#ladder-halo)"/><ellipse cx="223" cy="143" rx="35" ry="10" fill="none" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4 4"/><path d="M177 107 C175 91 183 76 196 66" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/><path d="M190 68 L198 63 L198 73 Z" fill="#4A72B2"/><path d="M47 96 Q51 90 58 92 M87 94 L94 91" fill="none" stroke="#C88446" stroke-width="1.5"/></g>
+  <!-- 5. Focus the literal lowest rung as the career starting level -->
+  <g id="layer-lighting"><ellipse cx="222" cy="143" rx="29" ry="8" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="3 4" opacity=".75"/><path d="M194 134 H214" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><path d="M273 71 L273 80 M269 75 H277" stroke="#F2C14E" stroke-width="2.2" stroke-linecap="round"/><circle cx="67" cy="104" r="2.6" fill="#7FB07A"/><circle cx="78" cy="104" r="2.6" fill="#7FB07A"/></g>
+</svg>

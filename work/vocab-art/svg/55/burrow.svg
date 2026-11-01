@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: burrow (noun)
+  CONTEXTUAL_DEFINITION: An underground tunnel and entrance dug by a wild animal, shown with a small rabbit nearby.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete habitat noun with visible underground structure
+  SYNONYM_GUARD: Show a dark round entrance that continues into a soil tunnel, with fresh excavated earth; this is an animal burrow, not a house or cave.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Grassland surface at y=96, earth cross-section below; burrow entrance centered x=154 y=103 and tunnel curves down to x=210 y=156; small wild rabbit above ground at x=94 y=83.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:burrow" data-archetype="animal-burrow-soil-cutaway">
+  <defs>
+    <style>:root{--c-bg-1:#EAF1ED;--c-bg-2:#F8F3E5;--c-surface:#A4825D;--c-primary:#674A34;--c-secondary:#3E3229;--c-accent:#82966B;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="bur-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF1ED"/><stop offset="1" stop-color="#F8F0DD"/></linearGradient>
+    <linearGradient id="bur-earth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#B18C63"/><stop offset="1" stop-color="#75573E"/></linearGradient>
+    <filter id="bur-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bur-sky)"/><path d="M0 97 Q65 89 128 97 T244 95 Q280 89 304 96 V192 H0Z" fill="url(#bur-earth)"/><path d="M0 121 Q67 115 128 121 T244 119 Q279 115 304 120" fill="none" stroke="#9A7655" stroke-width="1.5"/><path d="M0 151 Q64 145 127 151 T243 149 Q280 145 304 150" fill="none" stroke="#5B4432" stroke-width="1.5"/></g>
+  <g id="layer-context"><path d="M25 98 l4-16 m-4 16-6-9 m6 9 7-8 M271 97 l4-15 m-4 15-6-8" fill="none" stroke="#82966B" stroke-width="1.8" stroke-linecap="round"/><path d="M0 96 Q65 88 128 96 T244 94 Q280 88 304 95" fill="none" stroke="#71865F" stroke-width="2.5"/><path d="M123 101 Q142 121 161 123 Q180 124 194 140 Q206 153 218 162" fill="none" stroke="#4C382B" stroke-width="21" stroke-linecap="round"/><path d="M123 101 Q142 120 161 121 Q179 122 193 138 Q205 151 216 160" fill="none" stroke="#C7A57D" stroke-width="2" stroke-dasharray="4 4"/><path d="M85 95 Q95 82 108 91" fill="none" stroke="#946F4D" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#bur-shadow)"><ellipse cx="99" cy="81" rx="17" ry="14" fill="#D6C7A8" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="113" cy="72" r="10" fill="#D7C6A3" stroke="#1E2A3B" stroke-width="1.3"/><path d="M108 66 L109 53 Q113 48 116 55 L117 66 M115 65 L120 54 Q125 51 125 58 L120 70" fill="#B79D76" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="116" cy="71" r="1.3" fill="#1E2A3B"/><path d="M124 74 l5 2-5 2" fill="#6C4E37"/><path d="M127 88 L125 95 M137 90 L136 96" fill="none" stroke="#6D543A" stroke-width="3.5" stroke-linecap="round"/><path d="M110 91 Q119 90 126 96" fill="none" stroke="#F0E4CC" stroke-width="1.3"/><path d="M108 96 Q121 98 130 105" fill="none" stroke="#805E42" stroke-width="2"/><path d="M156 101 Q148 110 155 117 Q164 120 168 111" fill="none" stroke="#D2B08A" stroke-width="1.2"/></g>
+  <g id="layer-details"><circle cx="72" cy="112" r="3" fill="#D0AF86"/><circle cx="91" cy="124" r="2.3" fill="#8C6B4B"/><circle cx="232" cy="117" r="3.4" fill="#A98660"/><circle cx="244" cy="143" r="2.4" fill="#5B4432"/><path d="M133 102 Q145 115 156 116 M168 124 Q181 126 191 139" fill="none" stroke="#D6B38A" stroke-width="1.4"/><path d="M29 145 l4-9 m-4 9-5-4 M264 145 l4-8" fill="none" stroke="#80916A" stroke-width="1.5" stroke-linecap="round"/><path d="M92 83 Q98 75 107 78 M111 62 Q114 57 117 63" fill="none" stroke="#F0E5CC" stroke-width="1.2"/></g>
+  <g id="layer-lighting"><path d="M105 92 Q115 92 123 98 M125 100 Q140 113 149 117" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".43" stroke-linecap="round"/><ellipse cx="106" cy="80" rx="10" ry="6" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

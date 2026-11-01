@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 07 - Sharing information
+  WORD: cell phone number (Noun)
+  CONTEXTUAL_DEFINITION: A phone number used to reach a person on their mobile phone.
+  PEDAGOGICAL_ARCHETYPE: 2 (A device and its contact information used together)
+  SYNONYM_GUARD: A hand taps a mobile dial pad while a dotted sequence links to a contact portrait; all keys stay blank to avoid numerals.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm tabletop and quiet room.
+    - Context_Layer: Hand holds the phone from below.
+    - Focal_Layer: Large smartphone with a blank grid keypad and contact avatar.
+    - Details_Layer: Five colored pips indicate a number sequence without digits.
+    - Lighting_Layer: Cool highlight on the glass and warm sun on the hand.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="7:cell phone number" data-archetype="hero-object">
+  <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 148 Q152 141 304 148 L304 192 L0 192Z" fill="#EAE3D5"/><ellipse cx="153" cy="165" rx="104" ry="8" fill="#DDD4C3"/><path d="M24 148 Q152 142 280 148" stroke="#D8CDAF" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M42 151 Q45 132 62 130 Q79 132 81 151Z" fill="#7FB07A" stroke="#1E2A3B" stroke-width="2"/><path d="M54 132 Q56 117 67 116 Q78 117 80 130 L74 140 L61 140Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="61" cy="103" r="17" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.8"/><path d="M44 102 Q45 84 62 86 Q78 87 78 103 Q70 95 60 96Z" fill="#27364B"/><path d="M52 104 Q56 100 59 104 M64 104 Q68 100 71 104" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M53 112 Q61 118 69 112" fill="none" stroke="#A34F47" stroke-width="1.6"/><path d="M78 145 Q99 135 109 119 L117 123 Q115 143 88 154" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.2" stroke-linejoin="round"/><path d="M104 121 Q109 113 116 115 L121 120 L114 127 L107 127Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-focal"><rect x="120" y="29" width="115" height="132" rx="16" fill="#27364B" stroke="#1E2A3B" stroke-width="2.5"/><rect x="127" y="38" width="101" height="114" rx="10" fill="#DCECFB" stroke="#8EB0DE" stroke-width="1.6"/><circle cx="177" cy="66" r="17" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="177" cy="62" r="6" fill="#D89A6C"/><path d="M165 82 Q167 70 177 70 Q188 70 190 82Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M143 96 L211 96" stroke="#94A3B8" stroke-width="1.6"/><g fill="#FFFFFF" stroke="#8EB0DE" stroke-width="1.2"><circle cx="151" cy="108" r="5"/><circle cx="174" cy="108" r="5"/><circle cx="197" cy="108" r="5"/><circle cx="151" cy="126" r="5"/><circle cx="174" cy="126" r="5"/><circle cx="197" cy="126" r="5"/></g><circle cx="177" cy="156" r="2.4" fill="#CBD5E1"/></g>
+  <g id="layer-details"><path d="M67 69 L98 69" stroke="#5479AC" stroke-width="2.5" stroke-dasharray="3 5" stroke-linecap="round"/><circle cx="68" cy="69" r="5" fill="#F2C14E"/><circle cx="81" cy="69" r="5" fill="#CE3D4E"/><circle cx="94" cy="69" r="5" fill="#7FB07A"/><path d="M246 54 Q253 60 246 66 M253 48 Q265 60 253 72 M260 42 Q278 60 260 78" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M132 45 Q177 38 222 45" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity="0.76"/></g>
+  <g id="layer-lighting"><rect x="125" y="33" width="105" height="125" rx="14" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.65"/><ellipse cx="176" cy="166" rx="54" ry="5" fill="#DDD4C3" opacity="0.8"/></g>
+</svg>

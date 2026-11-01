@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: polite (Adjective)
+  CONTEXTUAL_DEFINITION: Showing good manners and courteous respect to others.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A person waits their turn and makes a small courteous bow before greeting a peer, unlike considerate which centers on adapting an arrangement.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community-room entrance with two people.
+    - Context_Layer: Peer holds door open and waits.
+    - Focal_Layer: Person gives a small bow and accepts their turn.
+    - Details_Layer: Gentle hand gesture, patient spacing and warm smiles.
+    - Lighting_Layer: Soft warm light on the courteous exchange.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:polite" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="jacket" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q80 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="154" cy="168" rx="129" ry="8" fill="#EAE3D5"/><path d="M258 46V133H289V46M257 46H289" fill="#E3E8F0" stroke="#7B8A9E" stroke-width="2"/><path d="M264 53V124" stroke="#AAB5C3" stroke-width="1.5"/></g>
+  <g id="layer-context"><circle cx="249" cy="63" r="17" fill="#80513F" stroke="#1E2A3B" stroke-width="2"/><path d="M232 63Q233 45 249 46Q266 47 266 64L260 69H235Z" fill="#35404B"/><path d="M229 86Q249 79 268 86L275 128H223Z" fill="#829A83" stroke="#1E2A3B" stroke-width="2"/><path d="M233 91L222 72L229 69L244 90M264 90L276 75" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M244 62Q248 65 252 62M257 62Q261 65 264 62M245 71Q250 76 256 71" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="118" cy="101" rx="68" ry="70" fill="#FEF3C7" opacity=".56"/><circle cx="116" cy="58" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M96 58Q97 36 116 37Q137 38 136 60L129 65Q125 49 114 49Q104 50 98 66Z" fill="#805333" stroke="#1E2A3B" stroke-width="2"/><path d="M92 84Q116 77 140 84L145 130H85Z" fill="url(#jacket)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M99 91L114 103L130 91" fill="none" stroke="#E3E8F0" stroke-width="2.4"/><path d="M95 91L82 106M137 91L151 103" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M96 91L83 106M137 91L150 103" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M91 130L90 160H107L115 132M121 132L128 160H145L140 130" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M108 58L114 60M120 60L126 58M110 71Q116 74 122 71" fill="none" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M144 77Q152 82 159 77M149 84Q156 89 164 84" fill="none" stroke="#D9A441" stroke-width="1.8"/><path d="M154 92L163 97L154 102" fill="none" stroke="#4A72B2" stroke-width="1.8"/><path d="M218 78Q211 83 207 78" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="179" cy="112" r="2" fill="#D9A441"/><path d="M74 124H162" stroke="#AAB5C3" stroke-width="1.5" stroke-dasharray="3 5"/></g>
+  <g id="layer-lighting"><path d="M106 42Q116 38 126 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".7"/><ellipse cx="118" cy="101" rx="68" ry="70" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".38"/></g>
+</svg>

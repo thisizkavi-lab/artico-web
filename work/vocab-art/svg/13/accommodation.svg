@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: accommodation (Noun)
+  CONTEXTUAL_DEFINITION: A room or place provided for someone to stay in.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero setting with lodging cues
+  SYNONYM_GUARD: The empty buildings in housing-type cards are exterior structures; this is a welcoming ready-to-sleep guest room.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet bedroom with window, pale wall and timber floor.
+    - Context_Layer: Nightstand and small lamp establish a place prepared for a guest.
+    - Focal_Layer: Made bed with folded quilt, pillow and a travel bag beside it.
+    - Details_Layer: Folded towel and hanging key on a hook, no letters or numbers.
+    - Lighting_Layer: Warm lamp glow and soft bed shadow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:accommodation" data-archetype="hero-setting">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="quilt" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient><filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M14 30H84V91H14Z" fill="#DCEAF0" stroke="#1E2A3B" stroke-width="2"/><path d="M49 31V90M15 60H83" stroke="#FFFFFF" stroke-width="3"/><path d="M19 34L78 34" stroke="#5479AC" stroke-width="2"/><ellipse cx="165" cy="162" rx="100" ry="7" fill="#B9AA91" opacity=".55"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M224 70V39Q224 31 233 31H264Q273 31 273 39V70" fill="#E5EAF0" stroke="#64748B" stroke-width="2"/><path d="M220 70H277" stroke="#64748B" stroke-width="3"/><path d="M228 48H266" stroke="#CBD5E1" stroke-width="2"/><path d="M29 125H73V145H29Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M38 125V145M66 125V145" stroke="#8A5A35" stroke-width="2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal" filter="url(#soft)"><path id="bed" d="M79 108Q79 91 96 91H251Q266 91 266 108V145H79Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.6"/><clipPath id="bed-clip"><use href="#bed"/></clipPath><g clip-path="url(#bed-clip)"><path d="M77 115H269V148H77Z" fill="url(#quilt)"/><path d="M81 123H263" stroke="#8DA8D0" stroke-width="2"/><path d="M95 127L111 143M128 127L144 143M161 127L177 143M194 127L210 143M227 127L243 143" stroke="#6D89B5" stroke-width="1.2"/></g><use href="#bed" fill="none" stroke="#1E2A3B" stroke-width="2.6"/><path d="M92 92Q99 78 118 81Q135 84 139 96L135 108H93Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2.2"/><path d="M98 91Q112 83 129 91" fill="none" stroke="#D7DEE6" stroke-width="1.5"/><path d="M84 106H264" stroke="#1E2A3B" stroke-width="2"/><path d="M87 145V155M257 145V155" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M87 145V155M257 145V155" stroke="#9A653D" stroke-width="2.3" stroke-linecap="round"/><path d="M50 108H73V133H50Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M54 103Q61 91 70 103V109H54Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.8"/><path d="M61 109V114" stroke="#8A5A35" stroke-width="2"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M278 105V88Q278 84 283 84H290Q294 84 294 88V105" fill="none" stroke="#64748B" stroke-width="2.2"/><circle cx="286" cy="110" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.6"/><path d="M185 94L215 94" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/><path d="M29 163H275" stroke="#F3ECE1" stroke-width="1.4"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="61" cy="102" r="28" fill="#F2C14E" opacity=".1"/><path d="M55 99Q60 91 66 99" fill="none" stroke="#FFF7D6" stroke-width="2"/></g>
+</svg>

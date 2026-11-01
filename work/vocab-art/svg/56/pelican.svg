@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: pelican (noun)
+  CONTEXTUAL_DEFINITION: A large waterside bird with a very long bill and a conspicuous expandable throat pouch.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Make the bill exceptionally long and show the hanging pouch below it; keep the body pale and large beside a shoreline.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put a broad pale pelican at water's edge; body x=89..183 y=90..141, head at x=170 y=70, bill extends left to x=71 and slopes down to a visible pouch, long legs at y=160; show a small ripple.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:pelican" data-archetype="long-billed-pelican">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#D5D4C8;--c-secondary:#89928E;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="pelican-sky" x2="0" y2="1"><stop stop-color="#D9EAF2"/><stop offset="1" stop-color="#F6F0E4"/></linearGradient>
+  <linearGradient id="pelican-water" x2="0" y2="1"><stop stop-color="#A8C9C9"/><stop offset="1" stop-color="#78A5A9"/></linearGradient>
+  <linearGradient id="pelican-plume" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F3EA"/><stop offset="1" stop-color="#C5CCC7"/></linearGradient>
+  <filter id="pelican-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pelican-sky)"/><path d="M0 116Q81 106 152 117T304 111V192H0Z" fill="#DDE5D8"/><path d="M0 139Q82 128 158 140T304 134V192H0Z" fill="url(#pelican-water)"/><path d="M0 163Q86 153 160 163T304 158V192H0Z" fill="#91B9B6"/><circle cx="251" cy="43" r="22" fill="#F4D997" opacity=".48"/></g>
+ <g id="layer-context"><path d="M26 140V86m0 31-11-15m11 3 12-16m226 51V78m0 39-13-17m13 7 14-18" fill="none" stroke="#7B926E" stroke-width="3" stroke-linecap="round"/><path d="M12 101q8-10 15-4m-16 12q9-8 16-2m216-15q9-12 18-4m-15 14q9-8 18-1" fill="none" stroke="#819671" stroke-width="2.1" stroke-linecap="round"/><path d="M28 153q24-5 43 0m180-1q25-6 39 0" fill="none" stroke="#D8ECE5" stroke-width="1.6"/><ellipse cx="143" cy="155" rx="64" ry="5" fill="#496C72" opacity=".17"/></g>
+ <g id="layer-focal" filter="url(#pelican-shadow)"><path d="M90 118Q97 97 124 93Q152 87 172 101Q185 113 176 133Q160 146 124 143Q98 139 90 118Z" fill="url(#pelican-plume)" stroke="#8B948F" stroke-width="1.5"/><path d="M105 114Q124 99 147 106Q159 111 157 128Q140 139 117 132Z" fill="#E7E8E0"/><path d="M158 106Q162 89 168 81Q167 68 180 63Q194 62 198 74Q197 85 187 88Q181 91 180 105Q176 114 168 115Z" fill="#F0EFE7" stroke="#999F9B" stroke-width="1.3"/><circle cx="186" cy="69" r="12" fill="#F4F1E7" stroke="#999F9B" stroke-width="1.1"/><path d="M180 76L72 92Q69 94 72 98L145 119Q160 124 173 114L176 105Q166 103 163 96Z" fill="#E7AC48" stroke="#9C733A" stroke-width="1.3"/><path d="M145 108Q152 111 157 123Q164 138 177 133Q189 128 183 114L175 105Q169 111 161 111Z" fill="#D98177" stroke="#AA5B59" stroke-width="1.3"/><circle cx="189" cy="67" r="2.3" fill="#1E2A3B"/><path d="M120 139L118 159m31-18 4 18" fill="none" stroke="#7A6D58" stroke-width="3.2" stroke-linecap="round"/><path d="M118 159l-9 3m9-3 8 3m28-3 8 3m-8-3 9-3" fill="none" stroke="#786850" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M98 155q20-5 39 0m63-1q21-4 36 0m-153 10q15-4 27 0" fill="none" stroke="#D9EEE6" stroke-width="1.5" stroke-linecap="round"/><path d="M104 108q15-10 30-6m-26 12q13-5 25-3" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8" stroke-linecap="round"/><path d="M22 145l-4 7m244-8 5 7" fill="none" stroke="#81956F" stroke-width="1.3"/><ellipse cx="222" cy="167" rx="14" ry="2.2" fill="#D9EEE6" opacity=".7"/></g>
+ <g id="layer-lighting"><path d="M105 103q13-12 30-8m42-23q5-8 13-6" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".85" stroke-linecap="round"/><ellipse cx="133" cy="117" rx="49" ry="26" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

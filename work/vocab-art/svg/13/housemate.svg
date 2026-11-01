@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: housemate (Noun)
+  CONTEXTUAL_DEFINITION: A person who shares a house with others, usually with a separate bedroom.
+  PEDAGOGICAL_ARCHETYPE: 3 — Shared home activity
+  SYNONYM_GUARD: Show two people together in a shared kitchen with different bedroom doors behind them; roommates share one bedroom.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open shared kitchen with two visible bedroom doorways.
+    - Context_Layer: Table and cabinets imply common household space.
+    - Focal_Layer: Two adult housemates prepare tea together.
+    - Details_Layer: Separate room doors and personal mugs show shared home, separate private rooms.
+    - Lighting_Layer: Warm common-room ceiling light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:housemate" data-archetype="shared-home-scene">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 145H304V192H0Z" fill="#D8C5A8"/><path d="M0 145H304" stroke="#8A5A35" stroke-width="2"/><path d="M32 28H76V115H32ZM228 28H272V115H228Z" fill="#E7D7C0" stroke="#64748B" stroke-width="1.8"/><path d="M38 34H70V114H38ZM234 34H266V114H234Z" fill="#C88446" opacity=".65"/><circle cx="65" cy="76" r="2" fill="#F2C14E"/><circle cx="239" cy="76" r="2" fill="#F2C14E"/><ellipse cx="153" cy="162" rx="107" ry="6" fill="#9B8E7B" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M102 35H202V72H102Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M106 40H198V68H106Z" fill="#CBD5E1"/><path d="M114 44H143V64H114ZM151 44H190V64H151Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.1"/><path d="M26 125H278V147H26Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/><path d="M39 147V158M265 147V158" stroke="#8A5A35" stroke-width="3"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="108" cy="83" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.7"/><path d="M98 81Q98 68 109 68Q119 69 118 83L113 77H102Z" fill="#3A2E2B"/><path d="M97 97Q108 90 119 97L126 126H90Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.9"/><path d="M101 99L127 107L145 105" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M101 99L127 107L145 105" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M100 125L96 149M116 125L121 149" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M100 125L96 149M116 125L121 149" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><circle cx="187" cy="83" r="10" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.7"/><path d="M177 81Q177 68 188 68Q198 69 197 83L192 77H181Z" fill="#57463E"/><path d="M176 97Q187 90 198 97L204 126H170Z" fill="#A85B53" stroke="#1E2A3B" stroke-width="1.9"/><path d="M177 99L158 108L147 103" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M177 99L158 108L147 103" fill="none" stroke="#C88E74" stroke-width="4.5" stroke-linecap="round"/><path d="M180 125L175 149M196 125L201 149" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M180 125L175 149M196 125L201 149" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M140 91H150V104H140Z" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="1.5"/><path d="M142 88H148V92H142Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M70 31V112M250 31V112" stroke="#9A653D" stroke-width="1.2"/><path d="M147 104L152 101" stroke="#F2C14E" stroke-width="1.5"/><path d="M46 130H256" stroke="#D89A6C" stroke-width="1.3"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="151" cy="84" r="43" fill="#FEF3C7" opacity=".1"/><path d="M144 80Q151 74 158 80" fill="none" stroke="#FFFFFF" stroke-width="1.6"/></g>
+</svg>

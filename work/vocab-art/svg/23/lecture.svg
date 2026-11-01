@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: lecture (Noun)
+  CONTEXTUAL_DEFINITION: An educational talk given to a group, usually in a lecture hall.
+  PEDAGOGICAL_ARCHETYPE: 3 — Scale and setting
+  SYNONYM_GUARD: The whole scene of one speaker addressing rows of note-taking students defines the lecture event, rather than the speaker alone.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: University lecture hall with tiered seating.
+    - Context_Layer: Rows of audience silhouettes and notebook desks.
+    - Focal_Layer: Speaker stands beside a visual diagram at front.
+    - Details_Layer: Raised hands and open note pages without writing.
+    - Lighting_Layer: Stage light on the speaker and screen.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:lecture" data-archetype="scale-and-setting">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="lecture-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="lecture-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#lecture-bg)"/><path d="M0 151H304V192H0Z" fill="#DCCFB9"/><path d="M0 39H304V141H0Z" fill="#E3E8F0"/><rect x="34" y="28" width="86" height="61" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.6"/><path d="M47 42H105M47 51H97M47 66H108" stroke="#DCECFB" stroke-width="1.7"/></g>
+  <g id="layer-context"><path d="M0 111L152 98L304 111M0 131L152 119L304 131M0 151L152 140L304 151" fill="none" stroke="#A98A64" stroke-width="5"/><path d="M13 111V126M41 108V123M69 106V121M97 104V119M125 101V116M153 100V115M181 102V117M209 104V119M237 107V122M265 109V124M293 111V126" stroke="#8D765A" stroke-width="2.3"/><circle cx="23" cy="95" r="6" fill="#AFC5DA"/><circle cx="58" cy="90" r="6" fill="#AFC5DA"/><circle cx="90" cy="88" r="6" fill="#AFC5DA"/><circle cx="121" cy="86" r="6" fill="#AFC5DA"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#lecture-shadow)"><rect x="211" y="89" width="70" height="9" fill="#A98A64"/><path d="M218 98V137M274 98V137" stroke="#8D765A" stroke-width="3"/><circle cx="169" cy="53" r="11" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M158 53Q159 41 170 41Q181 42 181 54L177 57Q175 48 169 48Q164 48 161 60Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M154 69Q169 63 183 70L187 99L177 105L160 100L151 83Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.7"/><path d="M158 73L145 61M181 75L201 83" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M158 73L145 61M181 75L201 83" stroke="#C98961" stroke-width="2.8" stroke-linecap="round"/><path d="M160 103L154 127M177 103L183 127" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M160 103L154 127M177 103L183 127" stroke="#5479AC" stroke-width="2.8" stroke-linecap="round"/><path d="M14 144L29 130L44 144M52 144L67 132L82 144M90 144L105 131L120 144" fill="#5479AC" stroke="#315782" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M58 136L76 129L88 136L69 143Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M98 135L116 128L128 135L110 142Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1"/><path d="M44 124L48 112M182 42Q195 37 207 42" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><circle cx="207" cy="42" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><path d="M165 32L223 88L167 96Z" fill="#FEF9C3" opacity=".09"/><ellipse cx="184" cy="80" rx="73" ry="67" fill="#FEF9C3" opacity=".06"/></g>
+</svg>

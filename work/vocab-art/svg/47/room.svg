@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: room
+  CONTEXTUAL_DEFINITION: A hotel guest room where a traveler sleeps and keeps belongings.
+  PEDAGOGICAL_ART_DIRECTOR: Show a complete hotel bedroom interior with a bed, window, desk, and a guest's suitcase.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Show the guest room as a whole, not a bed-only single or double-room contrast.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: An open guest-room interior frames a bed, window, writing desk, and suitcase; the four walls and floor make it read as one complete room.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:room" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="room-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEE8DC"/><stop offset="1" stop-color="#D5D1C6"/></linearGradient>
+  <linearGradient id="room-linen" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#C8D9DD"/></linearGradient>
+  <linearGradient id="room-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B58B61"/><stop offset="1" stop-color="#745740"/></linearGradient>
+  <filter id="room-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.7" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M18 17H286V148H18Z" fill="url(#room-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M18 148H286V184H18Z" fill="#B8B7AD"/><path d="M25 167H278" stroke="#EAE5DA" stroke-width="1.2"/><rect x="101" y="29" width="91" height="51" fill="#A9C8CF" stroke="#455E68" stroke-width="1.5"/><path d="M146 29V80M101 55H192" stroke="#526D77" stroke-width="1.3"/><path d="M92 27V84M201 27V84" stroke="#92765A" stroke-width="4"/><path d="M88 27H96V84H88M198 27H206V84H198" fill="#AD8D69"/></g>
+ <g id="layer-context"><path d="M27 37H73V147H27Z" fill="#84664D" stroke="#1E2A3B" stroke-width="1.5"/><path d="M33 43H67V145H33Z" fill="#9C7D5E" stroke="#D5BA91" stroke-width="1.2"/><circle cx="61" cy="94" r="2.5" fill="#F2C14E"/><rect x="219" y="90" width="55" height="46" fill="url(#room-wood)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M213 88H280V94H213Z" fill="#D0B58D"/><rect x="225" y="136" width="5" height="13" fill="#604A39"/><rect x="267" y="136" width="5" height="13" fill="#604A39"/><path d="M231 82H259V88H231Z" fill="#425562"/><path d="M235 74H255V82H235Z" fill="#B4D1D4"/></g>
+ <g id="layer-focal" filter="url(#room-shadow)"><path d="M77 88H219V157H77Z" fill="#526B80" stroke="#1E2A3B" stroke-width="1.8"/><path d="M82 91H214V122H82Z" fill="url(#room-linen)" stroke="#748995" stroke-width="1.2"/><path d="M84 96Q100 87 119 96V116H84Z" fill="#FFFDF5" stroke="#A3B2B3" stroke-width="1.1"/><path d="M81 121H216V151H81Z" fill="#748EA4" stroke="#314D65" stroke-width="1.2"/><path d="M89 129H207M89 145H207" stroke="#B9C8CC" stroke-width="1.1"/><path d="M84 156V166M210 156V166" stroke="#624D3B" stroke-width="3.5"/><rect x="36" y="127" width="24" height="35" rx="4" fill="#526274" stroke="#1E2A3B" stroke-width="1.5"/><path d="M42 127V122Q42 117 48 117Q54 117 54 122V127" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M40 137H56M40 155H56" stroke="#8999A0" stroke-width="1.1"/></g>
+ <g id="layer-details"><circle cx="249" cy="79" r="3" fill="#F2C14E"/><path d="M26 148H279" stroke="#E9E3D7" stroke-width="1"/><ellipse cx="146" cy="169" rx="104" ry="5" fill="#526274" opacity=".18"/><path d="M102 32H191" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M45 51V87" stroke="#D0B28A" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="110" rx="124" ry="70" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M19 18H285" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

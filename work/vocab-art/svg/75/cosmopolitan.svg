@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:cosmopolitan" data-archetype="diverse-travelers-sharing-a-city-transit-plaza">
+<!-- SELF_PROMPT: Lesson 75 urban life; cosmopolitan. Show people from varied backgrounds sharing an international city transit plaza, with travel bags and a globe sculpture, without flags or stereotypes. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="cosmo-sky" x2="0" y2="1"><stop stop-color="#D9E8EB"/><stop offset="1" stop-color="#B4C9D0"/></linearGradient>
+  <linearGradient id="cosmo-building" x2="0" y2="1"><stop stop-color="#778D9C"/><stop offset="1" stop-color="#506777"/></linearGradient>
+  <linearGradient id="cosmo-plaza" x2="0" y2="1"><stop stop-color="#B8B49A"/><stop offset="1" stop-color="#818B79"/></linearGradient>
+  <linearGradient id="cosmo-globe" x2="0" y2="1"><stop stop-color="#82B6B5"/><stop offset="1" stop-color="#487F8B"/></linearGradient>
+  <filter id="cosmo-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#cosmo-sky)"/><circle cx="258" cy="33" r="12" fill="#E9C66F" opacity=".62"/><path d="M0 119V48l33-15 34 15v71Zm68 0V27l44-17 43 17v92Zm174 0V42l31-14 31 14v77Z" fill="url(#cosmo-building)"/><path d="M9 58h15v17H9Zm35 0h15v17H44ZM82 42h15v17H82Zm29 0h15v17h-15Zm-29 30h15v17H82Zm29 0h15v17h-15Zm132-14h14v17h-14Zm29 0h14v17h-14Z" fill="#D6E1DF" opacity=".82"/><path d="M0 122Q66 110 130 121T246 119Q280 114 304 121V192H0Z" fill="url(#cosmo-plaza)"/></g>
+<g id="layer-context">
+  <path d="M0 145Q78 127 152 144T304 139V192H0Z" fill="#B4AA8B"/><path d="M20 192Q78 155 137 146m28 0q65 8 121 46" fill="none" stroke="#D9D2B7" stroke-width="5"/>
+  <path d="M136 143V101l15-18 16 18v42Z" fill="#536C74"/><path d="M128 104l23-29 24 29Z" fill="#D1C49F"/><path d="M142 109h18v34h-18Z" fill="#78959A"/>
+  <path d="M44 167q11-15 22 0m178-5q10-15 21 0" fill="none" stroke="#547557" stroke-width="3"/><circle cx="54" cy="149" r="11" fill="#79906C"/><circle cx="233" cy="148" r="12" fill="#718968"/>
+  <path d="M82 168v-12m0 6-6-6m6 7 7-7m111 13v-12m0 5-6-7m6 6 7-7" fill="none" stroke="#617E5B" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-focal" filter="url(#cosmo-shadow)">
+  <circle cx="153" cy="78" r="25" fill="url(#cosmo-globe)" stroke="#385D68" stroke-width="1.6"/><path d="M132 76q11-8 22-2t20-3m-40 15q12-6 23 0t17-3m-24-31q-5 12-1 24t-2 23m14-47q-5 12 0 25t-1 22" fill="none" stroke="#C7E1D4" stroke-width="1.6" opacity=".8"/>
+  <circle cx="66" cy="111" r="7" fill="#C78D69"/><path d="M59 109q1-10 8-10 7 1 8 10l-4-3H63Z" fill="#3D3C3E"/><path d="M58 120Q66 115 74 120L78 141 54 142Z" fill="#527B91" stroke="#405969" stroke-width="1.2"/><path d="M58 139l-4 18 8 2 5-18m4-2 4 18 7 0-4-19" fill="#384B57"/><path d="M57 122l-7 12 5 4 9-10m11-7 8 8-4 5-10-7" fill="#C78D69"/><path d="M46 151q7-2 13 1l-1 11-15 0Z" fill="#B8805B" stroke="#624D44" stroke-width="1.2"/>
+  <circle cx="111" cy="116" r="7" fill="#E0B18C"/><path d="M104 113q1-10 8-10 8 1 8 10l-4-3h-10Z" fill="#6A5549"/><path d="M103 124Q111 119 120 124L124 145 99 146Z" fill="#BC785B" stroke="#785347" stroke-width="1.2"/><path d="M104 143l-3 16 8 1 4-15m5-1 5 15 7-1-6-17" fill="#4B5C60"/><path d="M104 126l-9 9 4 5 11-8m10-7 8 8-4 5-10-7" fill="#E0B18C"/>
+  <circle cx="205" cy="112" r="7" fill="#966A53"/><path d="M198 109q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#373C40"/><path d="M197 120Q205 115 214 120L218 141 193 142Z" fill="#718B6C" stroke="#536B55" stroke-width="1.2"/><path d="M198 139l-5 18 8 2 6-18m5-1 5 18 8 0-5-19" fill="#415157"/><path d="M198 122l-8 9 4 5 11-8m10-6 8 8-4 5-11-7" fill="#966A53"/>
+  <path d="M218 134Q229 128 239 134L242 157Q231 163 219 157Z" fill="#B8805B" stroke="#665146" stroke-width="1.2"/><path d="M222 134q7-9 14 0" fill="none" stroke="#665146" stroke-width="1.3"/>
+</g>
+<g id="layer-details">
+  <path d="M18 177q12-5 23 0m74 8q12-5 23 0m83-1q11-5 22 0m50-12q11-5 22 0" fill="none" stroke="#CBD1A0" stroke-width="1.4"/>
+  <circle cx="37" cy="160" r="1.8" fill="#E9C66F"/><circle cx="262" cy="173" r="1.8" fill="#E9C66F"/><circle cx="178" cy="157" r="1.6" fill="#E9C66F"/>
+  <path d="M109 157h15m71 4h17m-58-64v8" fill="none" stroke="#E6E8D8" stroke-width="1.4"/>
+  <path d="M89 166q8-5 16 0m113-1q8-5 16 0" fill="none" stroke="#E6D9B8" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M153 53q-6 12-1 24t0 20" fill="none" stroke="#E9D99D" stroke-width="1.2"/><path d="M5 119q28-8 53-4m191 0q25-6 48 2" fill="none" stroke="#C8D5D0" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

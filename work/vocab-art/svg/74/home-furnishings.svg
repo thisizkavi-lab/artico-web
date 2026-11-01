@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: furniture (Noun)
+  CONTEXTUAL_DEFINITION: Movable objects used to furnish a home, such as chairs, tables, beds, and sofas.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object group)
+  SYNONYM_GUARD: Present a recognizable sofa, dining chair, and small table together as examples of the category.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet interior floor.
+    - Context_Layer: Wall and floor boundary.
+    - Focal_Layer: Sofa at left, table in front, and a separate wooden chair at right.
+    - Details_Layer: Cushions, chair back slats, and sturdy legs.
+    - Lighting_Layer: Soft top-left light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="74:home furnishings" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 135 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 135 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="151" cy="166" rx="110" ry="9" fill="#D8D1C5"/></g>
+  <g id="layer-context"><rect x="25" y="35" width="254" height="99" rx="2" fill="#F3EFE7" stroke="#D8CDAF" stroke-width="1.5"/></g>
+  <g id="layer-focal"><path d="M37 105 Q37 96 46 96 H121 Q130 96 130 105 V131 H37Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M37 105 Q25 105 25 116 V132 H37 M130 105 Q142 105 142 116 V132 H130" fill="#7191BC" stroke="#1E2A3B" stroke-width="2.3"/><rect x="44" y="101" width="34" height="20" rx="7" fill="#8CA8CB"/><rect x="82" y="101" width="41" height="20" rx="7" fill="#8CA8CB"/><path d="M48 131 V148 M120 131 V148" stroke="#8A5A35" stroke-width="5" stroke-linecap="round"/><path d="M151 115 L208 115 L217 123 L142 123Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M151 123 V151 M208 123 V151" stroke="#8A5A35" stroke-width="4"/><path d="M244 72 Q244 66 250 66 H276 V108 H244Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2.2"/><path d="M250 73 V100 M260 73 V100 M270 73 V100" stroke="#D69A62" stroke-width="4" stroke-linecap="round"/><path d="M238 106 Q238 102 243 102 H278 Q283 102 283 107 V115 H238Z" fill="#C98B54" stroke="#1E2A3B" stroke-width="2.2"/><path d="M244 114 L241 150 M278 114 L281 150 M249 114 L252 150 M273 114 L270 150" stroke="#8A5A35" stroke-width="4.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M44 105 H122" stroke="#AFC3DE" stroke-width="1.4"/><path d="M149 116 H209" stroke="#D99A64" stroke-width="1.4"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

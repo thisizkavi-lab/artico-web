@@ -1,0 +1,49 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: photo
+ CONTEXTUAL_DEFINITION: A still photograph, here a printed image selected for a news story.
+ PEDAGOGICAL_ARCHETYPE: single printed still image held by an editor
+ SYNONYM_GUARD: Make the still photo print itself the focal object; distinguish the finished image from a camera or moving video.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: An editor holds up a bordered photo print showing a frozen moment at a public event, with another small photo stack and a camera resting nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:photo" data-archetype="printed still photograph">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 157H304V192H0Z" fill="#C8B89E"/><path d="M0 157H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M28 116H276V147H28Z" fill="#8C725A"/><path d="M39 147V155M265 147V155" stroke="#725F4B" stroke-width="2"/>
+  <!-- small camera rests behind the still image -->
+  <path d="M218 102H261L268 109V125H218Z" fill="#26384A"/><path d="M225 102L230 96H245L250 102" fill="#26384A"/><circle cx="258" cy="114" r="8" fill="#597D8B" stroke="#F6E5CE" stroke-width="1.1"/>
+  <path d="M45 43H85V96H45Z" fill="#D5D8CD"/><path d="M51 49H79V89H51Z" fill="#B5C1B5"/><path d="M51 80L62 65L70 74L79 62V89H51Z" fill="#798C72"/>
+ </g>
+ <g id="layer-context">
+  <path d="M45 109H274" stroke="#D6A64C" stroke-width="1.2"/>
+  <path d="M197 129L215 124M197 135L225 128" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="50" cy="104" r="2" fill="#B85E5A"/><circle cx="81" cy="104" r="2" fill="#D6A64C"/>
+  <path d="M215 128L212 144M262 128L265 144" stroke="#26384A" stroke-width="1.8"/>
+ </g>
+ <g id="layer-focal">
+  <!-- large bordered photo print with a frozen scene -->
+  <path d="M91 29L211 36L204 128L84 121Z" fill="#26384A" stroke="#172735" stroke-width="1.2"/>
+  <path d="M98 37L204 43L198 115L92 109Z" fill="#F6E5CE"/>
+  <path d="M103 45L199 50L194 103L98 98Z" fill="#597D8B"/>
+  <path d="M99 89Q120 76 142 90T194 86L193 103L98 98Z" fill="#798C72"/><circle cx="174" cy="61" r="8" fill="#D6A64C"/>
+  <!-- one still person in the image -->
+  <circle cx="146" cy="68" r="7" fill="#D29A78"/><path d="M139 68Q140 59 146 59Q153 60 153 68L149 64H140Z" fill="#26384A"/>
+  <path d="M137 78Q146 73 155 78L158 98H134Z" fill="#B85E5A"/><path d="M139 80L131 87M153 80L160 87" stroke="#D29A78" stroke-width="2"/>
+  <path d="M138 96L137 102M155 96L156 102" stroke="#26384A" stroke-width="1.8"/>
+  <!-- editor's hands grip the print edges -->
+  <path d="M73 86Q71 80 77 78L88 76L99 82L97 92L84 96L77 94Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M201 88L210 83L221 86Q226 90 221 96L210 99L199 96Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+ </g>
+ <g id="layer-details">
+  <path d="M100 41L194 47" stroke="#FFFDF5" stroke-width="1.2"/>
+  <path d="M100 104L193 110" stroke="#FFFDF5" stroke-width="1.1"/>
+  <path d="M128 62L132 56M163 75L168 69" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="190" cy="53" r="1.6" fill="#F6E5CE"/><path d="M226 109H251" stroke="#D6A64C" stroke-width="1"/>
+  <path d="M95 30L103 35M207 37L201 43" stroke="#D6A64C" stroke-width="1.1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="150" cy="77" rx="82" ry="66" fill="#E7C66B" opacity=".08"/><path d="M90 28L109 49M211 35L196 52" stroke="#FFF1C7" stroke-width="1.1" opacity=".6"/>
+  <path d="M32 150H271" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

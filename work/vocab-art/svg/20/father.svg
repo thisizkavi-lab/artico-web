@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 20 — Family tree
+  WORD: father (Noun)
+  CONTEXTUAL_DEFINITION: A male parent caring for his child.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: A father and young child work together to plant a small tree; the adult-child bond marks father, while the gender-neutral parent role is covered separately.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Small home garden and pale green ground.
+    - Context_Layer: Garden trowel, soil mound, and sapling.
+    - Focal_Layer: Adult crouches beside a child, both holding the young tree upright.
+    - Details_Layer: Shared hands, seedling leaves, and matching pleased expressions.
+    - Lighting_Layer: Gentle warm circle around the pair.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="20:father / dad (informal)" data-archetype="expressive-social-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="father-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient>
+    <linearGradient id="father-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient>
+    <filter id="father-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#father-sky)"/><path d="M0 141Q65 135 152 142T304 139V192H0Z" fill="#DCEAD6"/><path d="M0 144H304" stroke="#7FB07A" stroke-width="1.8"/><ellipse cx="152" cy="174" rx="128" ry="7" fill="#C3DAB9"/><path d="M22 91Q34 60 47 91M258 87Q270 58 286 88" fill="#829A83" opacity=".7"/></g>
+  <g id="layer-context"><ellipse cx="187" cy="153" rx="52" ry="12" fill="#C88446" opacity=".55"/><path d="M181 151Q178 125 184 98M187 150Q188 124 187 99M193 151Q197 127 191 102" fill="none" stroke="#80513F" stroke-width="4" stroke-linecap="round"/><path d="M186 113Q173 105 170 97Q179 96 186 107M189 123Q201 111 208 111Q205 121 190 128M185 99Q177 87 180 80Q190 86 190 98" fill="#7FB07A" stroke="#568552" stroke-width="2" stroke-linejoin="round"/><path d="M31 147L57 125L63 130L46 151Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="2"/><path d="M56 127L69 115" stroke="#C88446" stroke-width="5" stroke-linecap="round"/><path d="M226 140Q231 134 239 139L242 146H226Z" fill="#E3AC77" stroke="#965D28" stroke-width="1.7"/><path d="M28 135Q38 129 47 135" fill="none" stroke="#D9A441" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#father-shadow)"><path d="M49 177Q53 145 72 136Q98 126 122 138L140 177Z" fill="url(#father-shirt)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M67 145Q88 158 108 151" fill="none" stroke="#3D5F91" stroke-width="3"/><rect x="83" y="119" width="21" height="22" rx="6" fill="#B6784B" stroke="#1E2A3B" stroke-width="2"/><circle cx="93" cy="92" r="29" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.5"/><path d="M65 87Q66 64 91 63Q118 64 122 90L115 94Q104 77 88 79Q74 79 67 97Z" fill="#3A2E2B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M78 91Q84 95 89 91M99 91Q105 95 111 91M84 105Q94 112 104 105" fill="none" stroke="#1E2A3B" stroke-width="1.8" stroke-linecap="round"/><path d="M133 150Q152 140 169 141M127 151Q142 144 160 146" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M133 150Q152 140 169 141M127 151Q142 144 160 146" fill="none" stroke="#D89A6C" stroke-width="6" stroke-linecap="round"/><path d="M185 178Q185 160 197 155Q211 152 222 163L225 178Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2.4"/><rect x="198" y="136" width="15" height="19" rx="5" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><circle cx="206" cy="116" r="21" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.3"/><path d="M186 113Q187 96 206 95Q226 96 227 117L221 120Q217 106 205 107Q194 106 188 120Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M198 115Q202 118 205 115M211 115Q215 118 218 115M200 127Q207 131 214 127" fill="none" stroke="#1E2A3B" stroke-width="1.6" stroke-linecap="round"/><path d="M189 161Q185 153 180 145M220 163Q216 154 208 146" fill="none" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M189 161Q185 153 180 145M220 163Q216 154 208 146" fill="none" stroke="#F5BFA3" stroke-width="4.5" stroke-linecap="round"/><path d="M169 141Q174 135 180 141L183 146L174 149Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.6"/></g>
+  <g id="layer-details"><path d="M74 75Q89 67 105 73" fill="none" stroke="#F2C14E" stroke-width="2.5"/><path d="M196 101Q205 96 214 101" fill="none" stroke="#FFFFFF" stroke-width="2"/><circle cx="164" cy="127" r="3" fill="#D9A441"/><path d="M168 136L177 139L181 144" fill="none" stroke="#1E2A3B" stroke-width="3.5" stroke-linecap="round"/><circle cx="52" cy="112" r="3" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="148" cy="107" rx="116" ry="79" fill="none" stroke="#D9A441" stroke-width="1.3" stroke-dasharray="4 7" opacity=".35"/><path d="M34 47Q46 42 58 46M244 49Q257 43 271 49" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></g>
+</svg>

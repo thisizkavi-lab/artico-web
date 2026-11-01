@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="53:sustainable" data-archetype="productive-farm-renewing-soil-water-and-crops">
+<!-- SELF_PROMPT: Lesson 53 environmental concerns; sustainable. Show a productive farm that renews soil and water while continuing to grow food, with conservation built into the working landscape; no text. -->
+<defs>
+  <style>:root{--c-bg-1:#EAF0E9;--c-bg-2:#BAC7B5;--c-surface:#B18B66;--c-primary:#5799AA;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sustain-sky" x2="0" y2="1"><stop stop-color="#E0EFE7"/><stop offset="1" stop-color="#BDD4C7"/></linearGradient>
+  <linearGradient id="sustain-field" x2="0" y2="1"><stop stop-color="#91A976"/><stop offset="1" stop-color="#5C7E57"/></linearGradient>
+  <linearGradient id="sustain-water" x2="0" y2="1"><stop stop-color="#7ABAC0"/><stop offset="1" stop-color="#437E88"/></linearGradient>
+  <linearGradient id="sustain-soil" x2="0" y2="1"><stop stop-color="#B5966A"/><stop offset="1" stop-color="#786448"/></linearGradient>
+  <filter id="sustain-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#253640" flood-opacity=".17"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#sustain-sky)"/><circle cx="248" cy="37" r="13" fill="#EBC86F"/><path d="M0 116Q61 101 122 115T238 112Q272 105 304 111V192H0Z" fill="#A9B99A"/><path d="M0 141Q65 125 131 140T245 138Q280 130 304 138V192H0Z" fill="url(#sustain-field)"/></g>
+<g id="layer-context">
+  <path d="M0 157Q56 147 112 157T217 155Q265 145 304 153V192H0Z" fill="url(#sustain-soil)"/>
+  <path d="M0 176Q64 166 128 176T244 172Q279 168 304 172V192H0Z" fill="#66804F"/>
+  <path d="M24 140Q72 132 115 141T206 139Q258 127 304 139" fill="none" stroke="#D5D8A1" stroke-width="2"/>
+  <path d="M182 192Q194 170 215 166Q233 159 249 144Q265 131 282 135Q292 140 294 150Q275 153 260 166Q242 181 230 192Z" fill="url(#sustain-water)"/>
+  <path d="M206 178q24-9 39-8m21-22q12-8 24-6" fill="none" stroke="#D9F1E7" stroke-width="1.7"/>
+  <path d="M27 126V90L45 79 62 90V126Z" fill="#B18B66" stroke="#4F5D4F" stroke-width="1.4"/><path d="M21 92l24-20 24 20Z" fill="#7F604A" stroke="#4F5D4F" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#sustain-shadow)">
+  <path d="M29 148q15-10 31-2m28-1q16-11 32-2m-75 16q16-9 31-2m29 2q15-8 29-1" fill="none" stroke="#D8BF83" stroke-width="2"/>
+  <path d="M83 142v-23m0 15-8-12m8 7 9-13m42 27v-24m0 17-9-13m9 8 9-13m39 20v-19m0 12-7-10m7 7 8-12" fill="none" stroke="#628154" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M174 149Q184 137 192 147Q196 154 189 161L177 160Z" fill="#80684C"/><path d="M175 148q9-8 17-1m-12 7 10 0" fill="none" stroke="#D8C493" stroke-width="1.2"/>
+  <path d="M252 137V98L260 87 268 98V139Z" fill="#745943"/><path d="M244 100Q248 84 260 88Q272 82 278 101Q267 94 260 101Q252 95 244 100Z" fill="#597A57"/>
+  <path d="M235 132q8-7 15-2m-187-6q8-5 15-1" fill="none" stroke="#EDF5E7" stroke-width="1.4"/>
+  <path d="M183 147Q148 122 111 132m0 0 8-6m-8 6 8 4" fill="none" stroke="#D7834B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 142v-19m0 12-7-9m7 5 8-10m28 21v-22m0 15-8-11m8 6 8-11m22 12v-17m0 12 7-10" fill="none" stroke="#4F7A56" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <path d="M12 185q13-5 25 0m105-4q12-5 24 0m108 6q12-5 22 0" fill="none" stroke="#B2C88E" stroke-width="1.4"/>
+  <circle cx="40" cy="166" r="1.8" fill="#F1E8CE"/><circle cx="120" cy="170" r="1.8" fill="#F1E8CE"/><circle cx="171" cy="180" r="1.6" fill="#F1E8CE"/>
+  <path d="M47 81q11-7 22 0m160 9q10-6 19 0m-102 8q9-5 17 0" fill="none" stroke="#E9F3E6" stroke-width="1.3"/>
+  <path d="M189 169q9-4 18 0m36-19q9-5 16-1" fill="none" stroke="#A7D3CE" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M22 91l23-18 23 18" fill="none" stroke="#D6C497" stroke-width="1.2"/><path d="M24 141q44-8 81 0m84 41q19-20 39-20" fill="none" stroke="#E0EDD3" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".15"/></g>
+</svg>

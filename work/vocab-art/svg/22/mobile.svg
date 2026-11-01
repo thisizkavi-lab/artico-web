@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: mobile (Noun)
+  CONTEXTUAL_DEFINITION: A light hanging decoration that turns gently above an infant's bed.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: Small dangling stars hang from a balanced arm above a crib, following the furniture group and clarifying the nursery-toy sense.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Calm nursery wall.
+    - Context_Layer: Top rail of a crib at the bottom edge.
+    - Focal_Layer: Hanging mobile with curved arm and several dangling shapes.
+    - Details_Layer: Thin strings, rotating center, and soft stars.
+    - Lighting_Layer: Gentle oval arc suggests slow motion.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:mobile" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="mobile-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><filter id="mobile-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#mobile-bg)"/><path d="M0 155Q78 148 152 155T304 152V192H0Z" fill="#EADFCC"/><path d="M40 148V177M264 148V177" stroke="#80513F" stroke-width="4"/><path d="M39 148H265" stroke="#80513F" stroke-width="5"/><path d="M49 153V169M68 153V169M87 153V169M106 153V169M125 153V169M144 153V169M163 153V169M182 153V169M201 153V169M220 153V169M239 153V169M258 153V169" stroke="#F3ECE1" stroke-width="2.5"/></g>
+  <g id="layer-context"><path d="M152 23V41" stroke="#80513F" stroke-width="3"/><circle cx="152" cy="45" r="8" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.5"/><path d="M152 45Q114 47 91 67Q151 60 212 68Q190 47 152 45Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><circle cx="91" cy="67" r="4" fill="#F2C14E"/><circle cx="212" cy="68" r="4" fill="#F2C14E"/><path d="M104 67V98M151 61V107M200 67V99" stroke="#64748B" stroke-width="1.7"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#mobile-shadow)"><path d="M88 99L96 91L104 99L96 107Z" fill="#D9857F" stroke="#A95059" stroke-width="1.5"/><path d="M143 109L151 101L159 109L151 117Z" fill="#F2C14E" stroke="#D9A441" stroke-width="1.5"/><path d="M192 100L200 92L208 100L200 108Z" fill="#829A83" stroke="#64748B" stroke-width="1.5"/><path d="M116 94Q125 87 134 94Q125 101 116 94Z" fill="#DCECFB" stroke="#64748B" stroke-width="1.4"/><path d="M168 95Q177 88 186 95Q177 102 168 95Z" fill="#EAA9A1" stroke="#A95059" stroke-width="1.4"/><path d="M93 96V83M151 106V80M197 97V85" stroke="#64748B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M61 56Q83 40 109 44M197 45Q221 41 243 57" fill="none" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="3 6" opacity=".65"/><circle cx="78" cy="50" r="2.3" fill="#D9A441"/><circle cx="227" cy="51" r="2.3" fill="#D9A441"/><path d="M131 27Q152 22 173 27" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="84" rx="111" ry="68" fill="none" stroke="#5479AC" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M79 19Q152 7 226 19" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: gale (Noun)
+  CONTEXTUAL_DEFINITION: A very strong steady wind bending trees and pulling at clothing, below the destructive scale of a hurricane.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person leaning into a forceful sustained gust as a tree bows in the same direction; keep rain and damage absent.
+  PEDAGOGICAL_ARCHETYPE: 3 - Strong wind event
+  SYNONYM_GUARD: A gale is forceful and steady, much stronger than a breezy or windy day, but without hurricane destruction.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A bundled walker leans forward while a leafy tree bends sharply sideways and long wind ribbons cross a bare hillside.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:gale" data-archetype="strong-steady-gale-wind">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ga-sky" x2="0" y2="1"><stop stop-color="#9FB7C1"/><stop offset="1" stop-color="#E3EBE6"/></linearGradient><linearGradient id="ga-hill" x2="0" y2="1"><stop stop-color="#A9B8A5"/><stop offset="1" stop-color="#738A78"/></linearGradient><linearGradient id="ga-coat" x2="0" y2="1"><stop stop-color="#67899D"/><stop offset="1" stop-color="#425E74"/></linearGradient><filter id="ga-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#263E49" flood-opacity=".2"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ga-sky)"/><path d="M0 126Q75 106 151 126T304 116V192H0Z" fill="#A5B3A5"/><path d="M0 149Q76 131 151 149T304 138V192H0Z" fill="url(#ga-hill)"/></g>
+ <g id="layer-context"><path d="M20 174H284" fill="none" stroke="#A6B3A4" stroke-width="1.2"/><ellipse cx="151" cy="163" rx="106" ry="5" fill="#40554D" opacity=".16"/><path d="M38 141Q49 114 64 89Q78 63 98 46" fill="none" stroke="#6D6251" stroke-width="6" stroke-linecap="round"/><path d="M73 78Q57 59 43 65M82 67Q100 49 112 54M59 101Q42 88 31 93M67 91Q87 75 101 80" fill="none" stroke="#63816D" stroke-width="8" stroke-linecap="round"/><path d="M78 76Q64 61 50 67m31 0q17-17 29-12m-49 46q-16-12-27-8" fill="none" stroke="#A9C397" stroke-width="1.8" stroke-linecap="round"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ga-shadow)">
+  <path d="M38 62Q87 51 133 62T226 58T304 61" fill="none" stroke="#F8FCF7" stroke-width="2.6" stroke-linecap="round"/><path d="M21 81Q65 72 103 81T181 79T260 82" fill="none" stroke="#D7E6E5" stroke-width="2" stroke-linecap="round"/><path d="M12 104Q53 96 92 104T171 102T250 105" fill="none" stroke="#F8FCF7" stroke-width="2.4" stroke-linecap="round"/><path d="M112 79Q116 63 132 60Q148 61 151 80L145 117L127 135L111 117Z" fill="url(#ga-coat)" stroke="#40586B" stroke-width="1.6"/><path d="M114 85L103 97L92 101M148 84L160 93L170 87" fill="none" stroke="#D5A17A" stroke-width="6.5" stroke-linecap="round"/><path d="M125 132L117 151L126 154L137 135M140 133L145 150L158 151L151 130" fill="#354A55" stroke="#2D414B" stroke-width="1.5"/><path d="M113 151q9-4 14 1l-1 4h-14m31-5q8-3 14 1l2 4h-14" fill="#273D46" stroke="#243A43" stroke-width="1.1"/><circle cx="132" cy="51" r="12" fill="#D8AD8B" stroke="#845F4B" stroke-width="1.1"/><path d="M120 54Q122 36 136 38Q148 40 147 55Q136 49 120 54Z" fill="#53616B"/><path d="M106 65Q111 52 124 51L142 57Q151 64 151 77L142 80L121 72Z" fill="#57778B" stroke="#3F5B6C" stroke-width="1.5"/>
+  <path d="M183 105q14-10 26 0m-11-7 10-2m-54 13q9-7 18 0" fill="none" stroke="#E1EFED" stroke-width="1.6" stroke-linecap="round"/><path d="M41 130q17-8 34 0m185 2q17-8 34 0" fill="none" stroke="#DCE9E2" stroke-width="1.3"/>
+ </g>
+ <g id="layer-details"><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".48"/><path d="M47 58q14-8 29 0m-59 36q14-7 27 0m186-31q13-7 27 0" fill="none" stroke="#FFFFFF" stroke-width="1.3"/><path d="M77 77q-9-13-19-13m21 7q14-12 25-11m-56 36q-13-9-22-8" fill="none" stroke="#D0DFD6" stroke-width="1.5" stroke-linecap="round"/><circle cx="92" cy="102" r="1.3" fill="#FFFFFF"/></g>
+ <g id="layer-lighting"><path d="M114 81q5-14 17-16m-15 39 20 3" fill="none" stroke="#A6C1C7" stroke-width="1.3"/><path d="M39 62q40-11 76 0" fill="none" stroke="#FFFFFF" stroke-width="1.1"/></g>
+</svg>

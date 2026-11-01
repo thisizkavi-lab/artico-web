@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: smart (Adjective)
+  CONTEXTUAL_DEFINITION: Neat and polished in clothing and grooming.
+  PEDAGOGICAL_ARCHETYPE: 3 — Full-body portrait
+  SYNONYM_GUARD: Follow the clothing-style group: crisp smart-casual tailoring, distinct from a formal suit.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Light studio paper.
+    - Context_Layer: Simple floor line.
+    - Focal_Layer: Neatly dressed person in pressed blazer and trousers without a tie.
+    - Details_Layer: Clean collar, belt, polished shoes.
+    - Lighting_Layer: Crisp highlights on tailored fabric.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:smart" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><path d="M40 166H264" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="152" cy="167" rx="90" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="152" cy="96" rx="77" ry="73" fill="#FEF3C7" opacity=".34"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <circle cx="152" cy="35" r="14" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2"/><path d="M138 32Q140 18 152 18Q165 19 166 34L158 38L144 36Z" fill="#35404B" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M137 53Q152 47 167 53L179 96L171 117L176 151H160L152 119L144 151H128L133 117L125 96Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M137 58L150 77L143 106L127 82M167 58L154 77L161 106L177 82" fill="#E3E8F0" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M146 72L152 77L158 72M149 77L152 92L155 77" fill="none" stroke="#315782" stroke-width="1.7"/>
+  <path d="M132 113H172M131 151L146 151L144 166H128ZM158 151L173 151L176 166H160Z" fill="#263447" stroke="#1E2A3B" stroke-width="1.8"/>
+  <path d="M146 35Q152 38 158 35M149 42Q152 44 155 42" fill="none" stroke="#1E2A3B" stroke-width="1.3"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M142 61L149 64M162 61L155 64M137 86H144M167 86H160" stroke="#B7CBE2" stroke-width="1.8"/>
+  <path d="M142 118H162" stroke="#D9A441" stroke-width="1.8"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M94 59L88 53M210 59L216 53" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/>
+</svg>

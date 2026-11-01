@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 25 — Speaking a foreign language
+  WORD: pronunciation (Noun)
+  CONTEXTUAL_DEFINITION: The way a spoken sound or word is formed and said.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Focus on visible mouth and tongue articulation plus a clear voice wave, not regional accent or smooth fluency.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Language pronunciation practice mirror.
+    - Context_Layer: Learner watches mouth shape in a hand mirror.
+    - Focal_Layer: Close view of clearly enunciated open lips and tongue position.
+    - Details_Layer: Small sound-wave mark and airflow.
+    - Lighting_Layer: Bright emphasis on mouth and mirror reflection.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="25:pronunciation" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="pronunciation-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="pronunciation-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pronunciation-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M48 37H125V128H48Z" fill="#CFB48C" stroke="#8D765A" stroke-width="1.5"/><path d="M54 43H119V122H54Z" fill="#DCECFB" stroke="#64748B" stroke-width="1"/><path d="M219 122H266V130H219Z" fill="#A98A64"/><path d="M226 130V149M259 130V149" stroke="#8D765A" stroke-width="2.4"/><path d="M211 114H274V122H211Z" fill="#5479AC"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#pronunciation-shadow)"><circle cx="152" cy="68" r="31" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.7"/><path d="M122 66Q123 32 153 33Q183 34 182 67L172 72Q168 50 151 51Q137 52 130 78Z" fill="#27364B"/><path d="M137 72Q152 62 167 72Q166 89 152 91Q138 89 137 72Z" fill="#A95059" stroke="#7F3543" stroke-width="1.5"/><path d="M142 75Q152 70 162 75Q160 82 152 83Q144 82 142 75Z" fill="#F9CED0"/><path d="M149 78L153 78L152 86" fill="#D9857F"/><path d="M179 56Q185 63 180 72" fill="none" stroke="#80513F" stroke-width="3"/><path d="M179 57Q184 64 179 70" fill="none" stroke="#E7B99B" stroke-width="1.3"/><path d="M187 62Q197 56 207 62M188 71Q199 66 209 71" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M137 108Q152 101 167 108L171 121L159 131L141 124Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M143 110L150 119L155 110" fill="#D9A441" stroke="#8D6138" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M130 65Q139 62 146 65M158 65Q166 62 174 65" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M153 96V103M148 99H158" stroke="#D9A441" stroke-width="1.3"/><circle cx="198" cy="48" r="2" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="81" rx="105" ry="74" fill="#FEF9C3" opacity=".1"/><path d="M54 43H119V122" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><ellipse cx="152" cy="68" rx="32" ry="32" fill="#FEF9C3" opacity=".04"/></g>
+</svg>

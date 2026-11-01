@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: steward (stadium match steward)
+ CONTEXTUAL_DEFINITION: A stadium attendant who helps spectators find their seats and keeps the event orderly.
+ PEDAGOGICAL_ARCHETYPE: Expressive Bust (stadium staff in high-visibility vest guiding fans)
+ SYNONYM_GUARD: A steward guides spectators inside the venue; the security officer protects the entrance and checks access.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Muted stadium stands and seated spectators; central steward at (152,108) in bright vest, open hand directing toward an aisle.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:steward" data-archetype="stadium-attendant-guides-spectators">
+ <defs>
+  <linearGradient id="steward-sky" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+  <linearGradient id="steward-vest" x2="0" y2="1"><stop stop-color="#F2C14E"/><stop offset="1" stop-color="#D49B2A"/></linearGradient>
+  <filter id="steward-shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#steward-sky)"/><path d="M0 45H304V123H0Z" fill="#718C84"/><path d="M0 64h304m-304 18h304m-304 18h304" stroke="#DCE8DF" stroke-width="2"/><path d="M0 125q70-10 150 0t154 0v67H0Z" fill="#91A686"/><path d="M0 166h304" stroke="#E7EEE4" stroke-width="1.6"/></g>
+ <g id="layer-context"><path d="M30 45v78m244-78v78" stroke="#405B61" stroke-width="3" opacity=".45"/><g fill="#D99F7C"><circle cx="48" cy="55" r="5"/><circle cx="78" cy="73" r="5"/><circle cx="108" cy="55" r="5"/><circle cx="224" cy="54" r="5"/><circle cx="254" cy="73" r="5"/></g><g fill="#405B61"><path d="M38 65q10-7 20 0l7 17H31Z"/><path d="M68 83q10-7 20 0l7 17H61Z"/><path d="M98 65q10-7 20 0l7 17H91Z"/><path d="M214 64q10-7 20 0l7 17h-34Z"/><path d="M244 83q10-7 20 0l7 17h-34Z"/></g><ellipse cx="152" cy="178" rx="38" ry="5" fill="#405B61" opacity=".16"/></g>
+ <g id="layer-focal" filter="url(#steward-shadow)"><path d="M127 91q2-18 25-18t25 18l13 47h-76Z" fill="#405B61" stroke="#1E2A3B" stroke-width="2.5"/><path d="M132 91l20 10 20-10 9 33h-58Z" fill="url(#steward-vest)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M148 101l-5 25m12-25 5 25" stroke="#FCE29C" stroke-width="3"/><path d="M127 95l-19 13-16-5m85-8 17-16 18 1" fill="none" stroke="#D89A6C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="92" cy="103" rx="7" ry="5.5" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><ellipse cx="231" cy="79" rx="7" ry="5.5" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M138 137l-5 24h-10m31-24 7 24h12" fill="none" stroke="#27364B" stroke-width="10" stroke-linecap="round"/><circle cx="152" cy="59" r="16" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.5"/><path d="M136 58q1-17 16-18t17 18l-7-4-9 3-8-4Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M141 47q11-9 22 0" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M146 61q2-2 4 0m7 0q2-2 4 0" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M148 68q5 3 10 0" fill="none" stroke="#8D583C" stroke-width="1.6"/></g>
+ <g id="layer-details"><circle cx="96" cy="45" r="2" fill="#FFF"/><path d="M28 158h36m177 0h35" stroke="#C3DAB9" stroke-width="2"/><path d="M269 46v79" stroke="#E5E9F0" stroke-width="3" opacity=".8"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="95" rx="47" ry="59" fill="#FFF" opacity=".08"/><path d="M139 47q13-8 25 0" fill="none" stroke="#FDE4D4" stroke-width="1.5"/></g>
+</svg>

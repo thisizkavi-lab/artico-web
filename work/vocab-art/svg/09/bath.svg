@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bath (Noun)
+  CONTEXTUAL_DEFINITION: A person soaking and washing in a tub of warm water.
+  PEDAGOGICAL_ARCHETYPE: 4 (Everyday action / object)
+  SYNONYM_GUARD: Show a person taking a bath in bubbly water; the separate bathtub card shows the empty fixture.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Tiled bathroom wall.
+    - Context_Layer: Water-filled tub and faucet.
+    - Focal_Layer: Relaxed head and shoulders above bubbles.
+    - Details_Layer: Water ripples and a bath duck.
+    - Lighting_Layer: Gentle warm bathroom light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bath" data-archetype="everyday-scene">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#E8F1F2"/><path d="M0 36 H304 M0 72 H304 M0 108 H304 M0 144 H304 M50 0 V147 M101 0 V147 M152 0 V147 M203 0 V147 M254 0 V147" stroke="#B8CDD1" stroke-width="1.3"/><path d="M0 147 H304 V192 H0Z" fill="#DCE5E3"/><ellipse cx="150" cy="167" rx="103" ry="8" fill="#C1CDCB"/></g>
+  <g id="layer-context"><path d="M48 111 Q52 99 65 99 H242 Q254 99 257 111 L247 157 H59Z" fill="#FAF8F3" stroke="#1E2A3B" stroke-width="2.6"/><path d="M59 132 Q151 145 248 131 L243 154 H64Z" fill="#A9D7E5" stroke="#5479AC" stroke-width="1.6"/><path d="M53 91 H76 V104 M65 91 V84 Q65 78 71 78 H88" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><circle cx="151" cy="75" r="22" fill="#E7B68E" stroke="#1E2A3B" stroke-width="2.3"/><path d="M130 75 Q134 51 153 52 Q172 54 173 76 Q168 66 158 66 Q147 68 130 75Z" fill="#6C4A3B" stroke="#1E2A3B" stroke-width="1.6"/><path d="M118 111 Q119 89 138 88 H164 Q185 90 186 112Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="2.2"/><path d="M125 133 Q151 124 180 132" fill="none" stroke="#5479AC" stroke-width="2"/><circle cx="140" cy="72" r="1.8" fill="#1E2A3B"/><circle cx="160" cy="72" r="1.8" fill="#1E2A3B"/><path d="M147 81 Q151 84 155 81" fill="none" stroke="#A9543F" stroke-width="1.6"/><ellipse cx="112" cy="123" rx="18" ry="9" fill="#FFFFFF"/><ellipse cx="177" cy="122" rx="20" ry="9" fill="#FFFFFF"/><ellipse cx="201" cy="129" rx="18" ry="8" fill="#FFFFFF"/><path d="M203 117 Q208 108 219 112 L226 120 L219 128 H205Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="216" cy="117" r="1.4" fill="#1E2A3B"/></g>
+  <g id="layer-details"><path d="M82 126 Q91 120 101 126 M228 119 Q234 115 241 120" fill="none" stroke="#FFFFFF" stroke-width="2"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

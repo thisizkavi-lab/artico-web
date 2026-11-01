@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: motel
+  CONTEXTUAL_DEFINITION: A roadside lodging where travelers can park directly beside their guest-room doors.
+  PEDAGOGICAL_ART_DIRECTOR: Show a long single-story row of rooms with a car parked directly outside one entrance.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Make the direct room-to-parking relationship unmistakable and keep the building low, unlike a multi-story city hotel.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A one-story roadside room row runs across the scene; three individual doors face an adjacent parking lane with a car immediately outside the center room.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:motel" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="motel-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#DCEBF0"/><stop offset="1" stop-color="#F2EEE3"/></linearGradient>
+  <linearGradient id="motel-wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6D5B8"/><stop offset="1" stop-color="#C6AC86"/></linearGradient>
+  <linearGradient id="motel-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7A98B5"/><stop offset="1" stop-color="#4A6684"/></linearGradient>
+  <filter id="motel-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#motel-sky)"/><path d="M0 132H304V192H0Z" fill="#AEB9AD"/><path d="M0 161H304" stroke="#F1EFE5" stroke-width="1.7"/><path d="M20 177H284" stroke="#89948C" stroke-width="1.6"/><path d="M21 25L65 9L102 26M202 27L250 10L288 28" fill="#A9BF9E" stroke="#809A84" stroke-width="1.2"/></g>
+ <g id="layer-context"><path d="M17 73H287V132H17Z" fill="url(#motel-wall)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M14 73L29 54H275L291 73Z" fill="#5D6870" stroke="#1E2A3B" stroke-width="1.8"/><path d="M24 80H280" stroke="#E6D3B1" stroke-width="3"/><path d="M23 126H281" stroke="#8B735A" stroke-width="1.4"/><path d="M106 74V132M197 74V132" stroke="#8D785E" stroke-width="1.6"/><rect x="30" y="84" width="35" height="27" fill="#B9D5DB" stroke="#4D6370" stroke-width="1.4"/><rect x="126" y="84" width="37" height="27" fill="#B9D5DB" stroke="#4D6370" stroke-width="1.4"/><rect x="218" y="84" width="35" height="27" fill="#B9D5DB" stroke="#4D6370" stroke-width="1.4"/></g>
+ <g id="layer-focal" filter="url(#motel-shadow)"><rect x="70" y="82" width="25" height="50" fill="#735943" stroke="#1E2A3B" stroke-width="1.4"/><rect x="164" y="82" width="25" height="50" fill="#735943" stroke="#1E2A3B" stroke-width="1.4"/><rect x="268" y="82" width="16" height="50" fill="#735943" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="89" cy="107" r="2" fill="#F2C14E"/><circle cx="183" cy="107" r="2" fill="#F2C14E"/><path d="M102 148Q108 136 121 136H157Q168 137 174 149L179 164H98Z" fill="url(#motel-car)" stroke="#1E2A3B" stroke-width="1.9"/><path d="M117 138H157L166 149H109Z" fill="#B9D5DB" stroke="#405666" stroke-width="1.2"/><circle cx="115" cy="163" r="7" fill="#344656" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="164" cy="163" r="7" fill="#344656" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="115" cy="163" r="3" fill="#AEB9BE"/><circle cx="164" cy="163" r="3" fill="#AEB9BE"/><path d="M105 154H173" stroke="#D9E5E5" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M35 117H62M130 117H159M221 117H250" stroke="#E8F0EC" stroke-width="1.2"/><rect x="25" y="138" width="253" height="4" fill="#D6D5CC"/><path d="M22 145H90M190 145H280" stroke="#F4F1E7" stroke-width="1.2" stroke-dasharray="5 5"/><circle cx="45" cy="62" r="9" fill="#80A879" stroke="#486750" stroke-width="1.2"/><circle cx="258" cy="60" r="10" fill="#80A879" stroke="#486750" stroke-width="1.2"/></g>
+ <g id="layer-lighting"><path d="M19 75H285" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><ellipse cx="150" cy="149" rx="85" ry="21" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".4"/></g>
+</svg>

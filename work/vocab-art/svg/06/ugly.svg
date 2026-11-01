@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 06 - Describing things: opinions
+  WORD: ugly (Adjective)
+  CONTEXTUAL_DEFINITION: Unattractive in shape or appearance, shown by a lopsided vase with clashing patches.
+  PEDAGOGICAL_ARCHETYPE: 4 (Visual quality judgment with a human reaction)
+  SYNONYM_GUARD: The badly proportioned, uneven vase looks unattractive; unlike a broken mug, it is intact but ugly.
+  MODE: STATIC (Compiled to the Artico lesson card.)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Quiet gallery shelf with pale wall.
+    - Context_Layer: Viewer makes a displeased face and turns away.
+    - Focal_Layer: Intact but badly lopsided vase with awkward patches.
+    - Details_Layer: Bent neck, uneven rim and inconsistent glaze.
+    - Lighting_Layer: Neutral, unflattering overhead light.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="6:ugly" data-archetype="contrast-reference">
+  <defs><linearGradient id="gallery" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#E9EFF5"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gallery)"/><path d="M0 144 Q151 139 304 146 L304 192 L0 192Z" fill="#EAE3D5"/><rect x="97" y="124" width="183" height="14" rx="4" fill="#CBD5E1" stroke="#64748B" stroke-width="1.5"/><path d="M107 138 L104 154 M270 138 L274 154" stroke="#64748B" stroke-width="3"/><ellipse cx="188" cy="163" rx="100" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M22 150 Q25 125 45 121 Q68 124 70 150Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2.2"/><circle cx="46" cy="105" r="18" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M28 104 Q29 83 47 85 Q65 87 64 106 Q54 95 45 96Z" fill="#27364B"/><path d="M35 106 Q40 101 44 106 M49 106 Q54 101 58 106" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M38 116 Q46 112 54 116" fill="none" stroke="#A34F47" stroke-width="2.2" stroke-linecap="round"/><path d="M65 129 Q80 120 88 110 Q92 105 97 109 Q100 113 96 119 L75 140" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M65 85 L72 78 M71 93 L79 88" stroke="#CE3D4E" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M158 65 L155 52 Q168 46 182 51 L178 70 C190 79 193 88 185 100 C178 111 181 120 194 128 Q175 137 150 130 C160 120 160 111 153 100 C144 85 149 74 158 65Z" fill="#9AA19A" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M155 52 Q169 47 182 51 Q171 59 155 52Z" fill="#64748B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M154 79 Q162 74 171 79 L168 89 Q159 91 152 87Z" fill="#CE3D4E" opacity="0.82"/><path d="M170 102 Q182 97 188 105 L190 114 Q178 119 167 115Z" fill="#5479AC" opacity="0.82"/><path d="M152 96 Q164 99 174 95 M157 120 Q169 124 182 120" fill="none" stroke="#6B716C" stroke-width="2.2"/><path d="M151 131 L193 131" stroke="#8D552E" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M92 78 L98 68 L104 78 L114 83 L104 88 L98 98 L92 88 L82 83Z" fill="#CBD5E1"/><path d="M202 73 L209 63 L216 73 L226 78 L216 83 L209 93 L202 83 L192 78Z" fill="#CBD5E1"/><path d="M138 58 L144 68 M192 58 L198 68" stroke="#A9B8C7" stroke-width="2"/><path d="M149 49 Q157 44 164 48" fill="none" stroke="#64748B" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><path d="M153 55 Q160 51 167 55 M159 78 Q169 73 180 78" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.55"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

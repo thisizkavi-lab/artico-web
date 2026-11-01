@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="37:trays" data-archetype="stacked-document-trays">
+<!-- SELF_PROMPT: Office equipment. Show two stackable in-trays with blank paper separated between levels. Coordinate plan: broad shallow trays centered x=66..238; upper tray at y=65, lower tray at y=105; show raised rims and short paper stacks. No written labels. -->
+<defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DCE8F4;--c-surface:#CBD5E1;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FEF9C3;--c-ink:#1E2A3B}</style><linearGradient id="stage" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#DCE8F4"/></linearGradient><linearGradient id="tray" x2="0" y2="1"><stop stop-color="#90AAC5"/><stop offset="1" stop-color="#5F7FA8"/></linearGradient><filter id="shade" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#stage)"/><path d="M0 151Q76 145 152 151T304 149V192H0Z" fill="#EAE3D5"/><ellipse cx="152" cy="171" rx="95" ry="8" fill="#D8CFBF"/><path d="M18 151H286" stroke="#D1C7B7" stroke-width="1.5" fill="none"/></g>
+<g id="layer-context"><path d="M37 42H267" stroke="#D6E1EB" stroke-width="1.3" fill="none"/><rect x="42" y="50" width="23" height="58" fill="#F9FBFD" stroke="#CBD5E1" stroke-width="1.2"/><path d="M48 59h12m-12 7h12m-12 7h12" stroke="#B8C6D5" stroke-width="1.1" fill="none"/><path d="M64 145h176" stroke="#B87943" stroke-width="4" fill="none"/></g>
+<g id="layer-focal" filter="url(#shade)">
+<path d="M70 89L217 89L239 101L92 101Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.2"/>
+<path d="M92 101H239L229 116H80Z" fill="url(#tray)" stroke="#1E2A3B" stroke-width="2.2"/>
+<path d="M84 115v7m142-7v7" stroke="#3D5F91" stroke-width="3" fill="none"/>
+<path d="M80 128L214 128L234 139L100 139Z" fill="#DCECFB" stroke="#1E2A3B" stroke-width="2.2"/>
+<path d="M100 139H234L225 151H88Z" fill="#7895B7" stroke="#1E2A3B" stroke-width="2.2"/>
+<path d="M94 150v5m126-5v5" stroke="#3D5F91" stroke-width="2.5" fill="none"/>
+<path d="M96 81L195 81L213 90L113 90Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.4"/>
+<path d="M102 75L200 75L216 84L117 84Z" fill="#F9FBFD" stroke="#94A3B8" stroke-width="1.3"/>
+<path d="M108 68L207 68L222 77L123 77Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.3"/>
+<path d="M124 120L201 120L216 128L139 128Z" fill="#F9FBFD" stroke="#94A3B8" stroke-width="1.3"/>
+<path d="M132 114L209 114L224 122L147 122Z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.3"/>
+</g>
+<g id="layer-details"><path d="M94 98h126m-130 32h120" stroke="#AFC8DF" stroke-width="1.2" fill="none"/><path d="M85 107h12m-11 4h9m137-4h-10m9 4h-7" stroke="#DCECFB" stroke-width="1.3" fill="none"/><path d="M109 73l78 0m-70 7 75 0m-73 43 60 0" stroke="#CBD5E1" stroke-width="1" fill="none"/><circle cx="222" cy="84" r="2.3" fill="#F2C14E"/><circle cx="82" cy="121" r="2" fill="#7FB07A"/><path d="M76 97l12 4m130-4 12 4" stroke="#FFFFFF" stroke-width="1.1" fill="none"/></g>
+<g id="layer-lighting"><path d="M74 91h137" stroke="#FFFFFF" stroke-width="1.3" opacity=".8" fill="none"/><path d="M96 131h115" stroke="#FFFFFF" stroke-width="1.2" opacity=".75" fill="none"/><ellipse cx="157" cy="160" rx="69" ry="4" fill="#CFC5B6" opacity=".72"/></g>
+</svg>

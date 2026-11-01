@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: physical education (Noun)
+  CONTEXTUAL_DEFINITION: School lessons where students exercise and learn physical skills.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: A teacher leads a group warm-up in a school gym with sports equipment stored nearby, showing PE as a school lesson.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Indoor school gym with wood floor and wall stripe.
+    - Context_Layer: Basketball and cones along the sideline.
+    - Focal_Layer: Teacher demonstrates a stretch while students follow.
+    - Details_Layer: Gym shoes, exercise mat, and movement arcs.
+    - Lighting_Layer: Bright overhead gym light and floor shadows.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:physical education" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="pe-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="pe-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#pe-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#DCCFB9"/><path d="M0 48H304M0 55H304" stroke="#AFC5DA" stroke-width="1.6"/><path d="M24 29H96V80H24Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M59 30V79M25 54H95" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 153H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><circle cx="266" cy="127" r="11" fill="#D9857F" stroke="#A95059" stroke-width="1.6"/><path d="M258 121Q266 115 274 121M258 131Q266 137 274 131" fill="none" stroke="#F3B9A8" stroke-width="1.4"/><path d="M222 146L229 126L236 146ZM239 146L246 126L253 146Z" fill="#D9A441" stroke="#8D6138" stroke-width="1.3"/><rect x="23" y="135" width="39" height="12" rx="5" fill="#5479AC" stroke="#315782" stroke-width="1.3"/><path d="M0 149H304" stroke="#8D765A" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#pe-shadow)"><circle cx="151" cy="55" r="12" fill="#C98961" stroke="#1E2A3B" stroke-width="1.5"/><path d="M139 55Q140 42 152 42Q164 43 164 56L159 59Q157 49 151 49Q146 49 142 62Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M137 73Q151 67 165 74L170 103L159 112L140 107L132 90Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M140 77L119 61L99 47M163 77L183 61L203 48" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M140 77L119 61L99 47M163 77L183 61L203 48" fill="none" stroke="#C98961" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M143 107L134 137L118 146M159 108L169 137L185 146" fill="none" stroke="#1E2A3B" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M143 107L134 137L118 146M159 108L169 137L185 146" fill="none" stroke="#5479AC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="85" r="10" fill="#80513F" stroke="#1E2A3B" stroke-width="1.4"/><path d="M66 85Q67 73 77 73Q87 74 87 86L83 89Q81 80 76 80Q72 80 69 91Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M62 99Q76 94 90 100L94 123L84 129L67 125L58 110Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.6"/><path d="M65 103L53 93M87 102L97 91M69 124L64 145M83 125L91 144" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M65 103L53 93M87 102L97 91M69 124L64 145M83 125L91 144" fill="none" stroke="#80513F" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M104 48Q94 40 86 46M204 49Q214 40 222 46M116 35L111 29M189 35L194 29" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round"/><path d="M125 150H194" stroke="#FFFFFF" stroke-width="1.6" opacity=".7"/><path d="M103 81Q110 74 116 79M187 82Q194 74 201 79" fill="none" stroke="#5479AC" stroke-width="1.7"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="98" rx="118" ry="76" fill="#FEF9C3" opacity=".07"/><path d="M137 73Q151 67 165 74" fill="none" stroke="#88A9D0" stroke-width="2"/></g>
+</svg>

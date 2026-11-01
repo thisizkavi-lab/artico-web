@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: leg (Noun)
+  CONTEXTUAL_DEFINITION: The full lower limb from hip to ankle.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Highlight one complete leg; thigh, knee, and shin are smaller regions within it.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Lower body from waist through both ankles.
+    - Context_Layer: Pelvis and one leg stay muted.
+    - Focal_Layer: The opposite full leg is warm from hip to ankle.
+    - Details_Layer: Knee and calf contours show the limb's length.
+    - Lighting_Layer: Long dashed frame encloses the whole leg.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:leg" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="170" rx="104" ry="13" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M92 18H212L221 68Q185 83 152 72Q119 83 83 68Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.3"/><path d="M97 70Q120 77 146 75L150 112L145 148L149 174H111L112 149L108 114Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M159 75Q183 78 207 70L196 112L198 148L202 174H164L168 148L165 112Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M112 112Q130 119 150 112M165 112Q181 119 198 112" fill="none" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M159 72Q183 77 207 69L196 112L198 148L202 174H164L168 148L165 112Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.6"/><path d="M174 87Q184 95 185 108M172 130Q181 136 195 130M171 164L197 164" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M155 69Q183 75 211 66L200 111L202 148L206 177H160L164 148L161 111Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M243 109L209 109" stroke="#4A72B2" stroke-width="2.1"/><path d="M217 104L207 109L217 114" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M159 83Q155 129 160 166" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

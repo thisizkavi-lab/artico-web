@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 50 - Beach
+  WORD: surfboard (Noun)
+  CONTEXTUAL_DEFINITION: A long, buoyant board used for riding waves while surfing.
+  PEDAGOGICAL_ART_DIRECTOR: Show one complete surfboard on the sand, with tapered nose and tail, deck wax, a fin, and leash.
+  PEDAGOGICAL_ARCHETYPE: 1 - Concrete object
+  SYNONYM_GUARD: This is the board alone, not an action scene with a standing surfer.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Long coral and turquoise striped surfboard lying diagonally across sand, with small tail fin, wax dots, and coiled ankle leash.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="50:surfboard" data-archetype="surfboard-object">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="sb-sky" x2="0" y2="1"><stop stop-color="#EAF4EF"/><stop offset="1" stop-color="#B9DADD"/></linearGradient><linearGradient id="sb-board" x2="1" y2="1"><stop stop-color="#80CFC3"/><stop offset="1" stop-color="#43849B"/></linearGradient><linearGradient id="sb-sand" x2="0" y2="1"><stop stop-color="#F1DDAA"/><stop offset="1" stop-color="#C9A267"/></linearGradient><filter id="sb-shadow" x="-20%" y="-15%" width="140%" height="145%"><feDropShadow dx="1" dy="4" stdDeviation="2.5" flood-color="#253640" flood-opacity=".25"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sb-sky)"/><path d="M0 97Q77 84 153 97T304 91V126H0Z" fill="#78BFC0"/><path d="M0 124Q70 119 145 127T304 121V192H0Z" fill="url(#sb-sand)"/></g>
+ <g id="layer-context"><circle cx="251" cy="38" r="14" fill="#EBC86F" opacity=".82"/><path d="M0 111Q73 102 147 112T304 108" fill="none" stroke="#DDF2EA" stroke-width="1.8"/><path d="M18 173H282" fill="none" stroke="#D4B982" stroke-width="1.2"/><path d="M19 50q13-9 27 0m212 8q13-9 27 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/><ellipse cx="154" cy="164" rx="67" ry="5" fill="#8A6C43" opacity=".16"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#sb-shadow)">
+  <path d="M185 36Q201 36 199 51L168 146Q164 161 151 162Q141 162 136 150L99 67Q93 52 107 47Z" fill="url(#sb-board)" stroke="#315F73" stroke-width="2.2"/>
+  <path d="M186 42Q195 41 193 52L165 143Q162 153 153 156Q145 152 142 144L105 63Q101 54 110 52Z" fill="#E8D28F" stroke="#F8EBD0" stroke-width="1.3"/><path d="M185 43Q195 42 192 53L164 142Q162 150 154 154Q149 151 147 145L111 58Q108 53 115 51Z" fill="url(#sb-board)" opacity=".8"/>
+  <path d="M112 61Q150 58 186 48" fill="none" stroke="#F5A06A" stroke-width="4" opacity=".9"/><path d="M143 153Q152 157 163 148L170 142L166 157Q161 166 151 166Q143 163 140 155Z" fill="#344A50" stroke="#253640" stroke-width="1.3"/>
+  <path d="M157 159Q181 168 182 177Q183 183 176 184Q169 185 169 180Q169 176 177 176" fill="none" stroke="#D7834B" stroke-width="2.4" stroke-linecap="round"/><circle cx="157" cy="158" r="3" fill="#344A50" stroke="#253640" stroke-width="1"/>
+  <circle cx="132" cy="85" r="1.5" fill="#FFF3D8"/><circle cx="150" cy="82" r="1.5" fill="#FFF3D8"/><circle cx="168" cy="78" r="1.5" fill="#FFF3D8"/><circle cx="137" cy="101" r="1.5" fill="#FFF3D8"/><circle cx="155" cy="97" r="1.5" fill="#FFF3D8"/><circle cx="173" cy="93" r="1.5" fill="#FFF3D8"/><circle cx="143" cy="117" r="1.5" fill="#FFF3D8"/><circle cx="160" cy="113" r="1.5" fill="#FFF3D8"/><circle cx="178" cy="109" r="1.5" fill="#FFF3D8"/>
+ </g>
+ <g id="layer-details"><path d="M111 56Q149 48 183 43M117 69l27 67m15-71-30 80" fill="none" stroke="#F8EAD0" stroke-width="1.2" opacity=".85"/><path d="M153 161q11 4 20-7m1 23q7 0 8 5" fill="none" stroke="#F4C78F" stroke-width="1.2"/><circle cx="251" cy="38" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/><path d="M91 141l13 0m110-11 10-2" fill="none" stroke="#C9A267" stroke-width="1.1"/></g>
+ <g id="layer-lighting"><path d="M109 54Q146 45 181 41M111 63l26 57m27-64-25 74" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><circle cx="251" cy="38" r="1.2" fill="#FFF8E7"/><path d="M143 154q8 4 15 3" fill="none" stroke="#FFF4D7" stroke-width="1.2"/></g>
+</svg>

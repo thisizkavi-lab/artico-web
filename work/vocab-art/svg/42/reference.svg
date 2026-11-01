@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: reference / references (employer)
+  CONTEXTUAL_DEFINITION: A former employer or colleague who can confirm a candidate's suitability for a job.
+  PEDAGOGICAL_ART_DIRECTOR: Show a trusted professional giving a hiring manager a positive work reference for a candidate.
+  PEDAGOGICAL_ARCHETYPE: 7 - External endorsement
+  SYNONYM_GUARD: The central idea is a person who vouches for the candidate and a verification note, not referring to a topic or running a background check. Keep the endorsement page unobstructed between the former employer and hiring manager; identify the applicant on the page itself.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a former supervisor at x=62..113, y=70..132 and a hiring manager at x=202..253, y=70..132. Center an unobstructed blank recommendation sheet between them at x=132..190, y=48..111, with a tiny applicant portrait and a green check. Their hands gesture toward the endorsement page across the meeting table.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:reference / references (employer)" data-archetype="external-endorsement">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="reference-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="reference-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="reference-halo"><stop stop-color="#FFF1B9" stop-opacity=".73"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="reference-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M32 132 H272 V145 H32 Z" fill="url(#reference-table)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M46 145 V155 M258 145 V155" stroke="#965D28" stroke-width="2.4"/><path d="M73 110 H230" stroke="#D4CCBD" stroke-width="1"/><rect x="139" y="48" width="52" height="57" rx="2" fill="url(#reference-paper)" stroke="#64748B" stroke-width="1.2"/><circle cx="150" cy="60" r="5" fill="#8EB0DE" stroke="#5479AC" stroke-width=".8"/><path d="M159 58 H181 M159 63 H177 M146 72 H183 M146 78 H178 M146 84 H182" stroke="#CBD5E1" stroke-width="1"/><path d="M168 96 L174 101 L184 89" fill="none" stroke="#547A56" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#reference-shadow)"><path d="M62 126 Q64 103 76 96 L77 87 Q73 83 75 76 Q82 68 93 70 Q102 73 100 84 L98 91 Q109 96 111 124 L108 136 H66 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="88" cy="79" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M80 77 Q82 69 89 69 Q97 70 101 77 Q93 73 86 74 Z" fill="#3D342D"/><path d="M75 102 Q88 97 102 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M200 126 Q202 103 214 96 L215 87 Q211 83 213 76 Q220 68 231 70 Q240 73 238 84 L236 91 Q247 96 249 124 L246 136 H204 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="226" cy="79" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M218 77 Q220 69 227 69 Q235 70 239 77 Q231 73 224 74 Z" fill="#3D342D"/><path d="M205 102 Q226 94 245 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M108 110 L137 101 M199 101 L189 96" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M109 110 L128 109 M198 109 L189 106" stroke="#5479AC" stroke-width="3.2" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="121" cy="58" r="2" fill="#F2C14E"/><circle cx="198" cy="65" r="2" fill="#A8D4A2"/><path d="M116 78 L124 73 M192 77 L199 81" stroke="#64748B" stroke-width="1.2" stroke-linecap="round"/><path d="M78 132 H101 M214 132 H237" stroke="#DCE8D9" stroke-width="1"/><path d="M147 44 H183" stroke="#FFFFFF" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="83" rx="102" ry="67" fill="url(#reference-halo)" opacity=".18"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

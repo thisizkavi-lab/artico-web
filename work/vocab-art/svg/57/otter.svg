@@ -1,0 +1,38 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: otter (noun)
+  CONTEXTUAL_DEFINITION: A sea otter floating on its back, holding its paws above its pale belly.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in a defining resting pose
+  SYNONYM_GUARD: Show a furry small mammal with visible paws held to its chest; do not draw a seal's flippers or a sea lion's external ears.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Otter floats belly-up at water level, body diagonal from x=85,y=113 to x=220,y=127, round head x=224,y=91, front paws held together at x=170,y=101, hind feet and a tapering tail visible; kelp frames the water.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:otter" data-archetype="sea-otter-floating-on-back">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#86684E;--c-secondary:#4E4E43;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="otter-sky" x2="0" y2="1"><stop stop-color="#DDECF0"/><stop offset="1" stop-color="#F7F1E5"/></linearGradient>
+  <linearGradient id="otter-water" x2="0" y2="1"><stop stop-color="#83B9BC"/><stop offset="1" stop-color="#4B8992"/></linearGradient>
+  <linearGradient id="otter-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AA8A67"/><stop offset="1" stop-color="#755A43"/></linearGradient>
+  <filter id="otter-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#otter-sky)"/><circle cx="60" cy="40" r="18" fill="#F2D791" opacity=".48"/><path d="M0 82Q75 77 151 84T304 80V192H0Z" fill="#D8E4D7"/><path d="M0 112Q68 103 146 112T304 107V192H0Z" fill="url(#otter-water)"/><path d="M0 157Q71 150 152 159T304 153V192H0Z" fill="#528C93"/></g>
+ <g id="layer-context"><path d="M0 82Q78 77 152 84T304 81" fill="none" stroke="#E8F3ED" stroke-width="1.8"/><path d="M0 115Q74 107 151 116T304 110" fill="none" stroke="#D4EBE5" stroke-width="2"/><path d="M32 163V90m0 45-12-16m12 2 12-20m190 69V97m0 42-12-15m12 4 12-24m29 61V105m0 33-9-13m9 4 9-21" fill="none" stroke="#638D78" stroke-width="2.2" stroke-linecap="round"/><circle cx="48" cy="98" r="2" fill="#EDF8F3"/><circle cx="262" cy="128" r="2.2" fill="#EAF6F1"/><ellipse cx="165" cy="145" rx="77" ry="7" fill="#173C44" opacity=".13"/></g>
+ <g id="layer-focal" filter="url(#otter-shadow)">
+  <path d="M110 115Q85 106 72 117Q77 130 99 133Q115 131 128 123Z" fill="#8A6D52" stroke="#594B3C" stroke-width="1.5"/>
+  <path d="M103 118Q123 103 159 101Q190 98 212 108Q229 115 232 130Q219 143 193 144Q153 144 121 133Q109 128 103 118Z" fill="url(#otter-fur)" stroke="#5B4939" stroke-width="1.6"/>
+  <path d="M117 117Q137 104 166 106Q188 107 205 116Q215 126 207 139Q186 145 158 139Q133 134 117 125Z" fill="#E7D7BC" stroke="#B49A78" stroke-width="1.2"/>
+  <path d="M208 111Q211 91 225 87Q241 86 246 99Q247 111 233 117Q218 119 208 111Z" fill="url(#otter-fur)" stroke="#5B4939" stroke-width="1.4"/>
+  <path d="M215 91Q214 82 220 81Q227 82 227 90Z" fill="#896747" stroke="#584735" stroke-width=".9"/>
+  <path d="M232 91Q237 83 242 87L240 96Z" fill="#896747" stroke="#584735" stroke-width=".9"/>
+  <ellipse cx="236" cy="105" rx="8" ry="5" fill="#E4D8C5"/>
+  <circle cx="227" cy="99" r="1.7" fill="#1E2A3B"/>
+  <ellipse cx="240" cy="103" rx="2.1" ry="1.5" fill="#43352B"/>
+  <path d="M232 108q5 3 9 0" fill="none" stroke="#665145" stroke-width="1" stroke-linecap="round"/>
+  <path d="M177 108Q169 99 164 94Q160 91 157 96L160 107Q166 114 177 116Z" fill="#AA8963" stroke="#67513D" stroke-width="1.1"/>
+  <path d="M190 108Q193 98 200 94Q205 93 207 99L202 109Q198 115 189 117Z" fill="#AA8963" stroke="#67513D" stroke-width="1.1"/>
+  <path d="M165 96q-5-3-8 0l4 5 7 1m32-7q5-3 8 1l-4 5-7 1" fill="none" stroke="#6A533F" stroke-width="1" stroke-linecap="round"/>
+  <path d="M130 130q21 10 43 10m-31-29q13-6 26-6m48 14q7 4 10 10" fill="none" stroke="#C7AE8E" stroke-width="1.3" opacity=".78" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M42 105q-5-4-9-3m191 49q9-3 15 0m-135 8q10-3 18 0" fill="none" stroke="#B7D9D6" stroke-width="1.3" stroke-linecap="round"/><circle cx="83" cy="98" r="1.5" fill="#F4FCF7"/><circle cx="202" cy="87" r="1.7" fill="#F4FCF7"/><path d="M226 114q6 1 10-1m-54 30q15 3 28-1" fill="none" stroke="#D6E7D8" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M122 111q19-12 39-10m44 2q10 1 15 7" fill="none" stroke="#F8F1DD" stroke-width="1.6" opacity=".6" stroke-linecap="round"/><ellipse cx="168" cy="121" rx="58" ry="22" fill="#FFFFFF" opacity=".035"/></g>
+</svg>

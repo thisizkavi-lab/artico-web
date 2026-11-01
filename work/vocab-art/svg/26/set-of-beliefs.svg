@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 26 — Communication and beliefs
+  WORD: set of beliefs (Noun phrase)
+  CONTEXTUAL_DEFINITION: A connected group of ideas or convictions that someone holds.
+  PEDAGOGICAL_ARCHETYPE: 6 — Abstract concept diagram
+  SYNONYM_GUARD: Show several distinct ideas linked into one organized whole, unlike the single conviction in belief or the unwavering strength in unshakable belief.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Pale discussion-room wall and warm wooden table.
+    - Context_Layer: A person considers a large circular arrangement of ideas.
+    - Focal_Layer: Four different visual symbols occupy linked nodes inside one enclosing ring.
+    - Details_Layer: Fine connecting paths show that the ideas belong to one system.
+    - Lighting_Layer: A soft center glow unifies the related convictions.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="26:set of beliefs" data-archetype="abstract-concept">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="belief-set-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="belief-set-glow"><stop stop-color="#FEF9C3" stop-opacity=".8"/><stop offset="1" stop-color="#FEF9C3" stop-opacity="0"/></radialGradient><filter id="belief-set-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#belief-set-bg)"/><path d="M0 151H304V192H0Z" fill="#E8DDC8"/><path d="M0 151H304" stroke="#A98A64" stroke-width="3"/><path d="M25 21H82V111M25 54H82M25 82H82" stroke="#CBD5E1" stroke-width="2" opacity=".55"/></g>
+  <g id="layer-context"><path d="M34 126H90V132H34Z" fill="#C88446"/><path d="M40 132V151M84 132V151" stroke="#965D28" stroke-width="2.4"/><circle cx="60" cy="96" r="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.2"/><path d="M50 96Q51 82 61 83Q71 84 70 97" fill="#27364B"/><path d="M46 112Q60 105 74 112L78 128L68 137L50 131Z" fill="#5479AC" stroke="#315782" stroke-width="1.3"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#belief-set-shadow)"><circle cx="180" cy="82" r="67" fill="url(#belief-set-glow)"/><ellipse cx="181" cy="82" rx="64" ry="54" fill="#F9FCFF" fill-opacity=".7" stroke="#5479AC" stroke-width="2.2"/><path d="M141 60L177 46L220 62L215 102L174 117L140 96Z" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4 3"/><circle cx="139" cy="59" r="18" fill="#EAF2E5" stroke="#568552" stroke-width="1.7"/><path d="M139 69C137 61 139 56 141 51M139 60C132 55 128 56 126 58C130 64 134 65 139 64M140 57C145 51 150 51 153 53C150 59 146 61 140 61" fill="#7FB07A" stroke="#568552" stroke-width="1.1"/><circle cx="220" cy="61" r="18" fill="#FFF7E2" stroke="#D49B2A" stroke-width="1.7"/><path d="M220 47V43M220 79V75M206 61H202M238 61H234M210 51L207 48M233 74L230 71M230 51L233 48M207 74L210 71" stroke="#D49B2A" stroke-width="1.6" stroke-linecap="round"/><circle cx="177" cy="116" r="18" fill="#F8EAF0" stroke="#A95059" stroke-width="1.7"/><path d="M177 129C171 124 166 120 167 115C168 109 174 109 177 114C180 109 186 109 187 115C188 120 183 124 177 129Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><circle cx="177" cy="46" r="5" fill="#D9A441"/><circle cx="141" cy="97" r="5" fill="#5479AC"/><circle cx="215" cy="101" r="5" fill="#7FB07A"/><path d="M96 75C108 70 118 67 128 64" fill="none" stroke="#D9A441" stroke-width="1.8" stroke-dasharray="2 3"/></g>
+  <g id="layer-details"><path d="M92 67L101 70L95 77" fill="none" stroke="#D9A441" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="156" cy="80" r="3" fill="#F2C14E"/><circle cx="196" cy="79" r="3" fill="#F2C14E"/><path d="M156 80H196" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="2 3"/><ellipse cx="180" cy="143" rx="43" ry="5" fill="#DDD4C3" opacity=".55"/></g>
+  <g id="layer-lighting"><ellipse cx="182" cy="78" rx="78" ry="66" fill="#FEF9C3" opacity=".08"/><path d="M117 34Q121 25 131 25H174" fill="none" stroke="#FFFFFF" stroke-width="1" opacity=".8"/></g>
+</svg>

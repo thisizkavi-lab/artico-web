@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 38 - Money and finance
+  WORD: withdrawal (noun; taking cash out of an account)
+  CONTEXTUAL_DEFINITION: Money removed from a bank account, commonly as cash from an ATM.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-moment action plus tool
+  SYNONYM_GUARD: Show funds leaving the account and cash being taken from a machine; contrast with deposit, where money enters.
+  MODE: STATIC peak cash withdrawal
+  COORDINATE_BLUEPRINT: Compact ATM dispenser at left, personal account screen behind; two blank notes exit slot toward a reaching hand at right, with blue outward arrow.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="38:withdrawal" data-archetype="action-tool">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="withdraw-machine" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DCECFB"/><stop offset="1" stop-color="#8EB0DE"/></linearGradient>
+    <linearGradient id="withdraw-note" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <path id="withdraw-hand" d="M253 116 C241 106 226 105 216 112 L198 124 C191 128 193 134 199 137 C204 138 210 134 217 130 L233 124 L220 137 C214 143 218 149 224 149 C231 149 242 139 251 134 L268 131 Z"/>
+    <clipPath id="withdraw-hand-clip"><use href="#withdraw-hand"/></clipPath>
+    <filter id="withdraw-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <!-- 1. Stage canvas & ground shadow -->
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="153" width="304" height="39" fill="#EEE7DA"/><path d="M0 153 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="147" cy="164" rx="100" ry="8" fill="#DDD4C3"/></g>
+  <!-- 2. Account balance and ATM context -->
+  <g id="layer-context"><path d="M31 78 Q31 71 39 71 H90 Q98 71 98 79 V139 H31 Z" fill="#E5E9F0" stroke="#64748B" stroke-width="2"/><rect x="38" y="81" width="53" height="32" rx="3" fill="#F8FBFE" stroke="#94A3B8" stroke-width="1.5"/><path d="M45 89 H82 M45 97 H78 M45 105 H85" stroke="#94A3B8" stroke-width="1.6"/><path d="M104 132 H272 V146 H104 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.8"/></g>
+  <!-- 3. Primary cash machine dispenses notes -->
+  <g id="layer-focal" filter="url(#withdraw-shadow)"><path d="M107 46 Q107 39 115 39 H202 Q210 39 210 47 V138 H107 Z" fill="url(#withdraw-machine)" stroke="#1E2A3B" stroke-width="2.6"/><rect x="119" y="51" width="68" height="26" rx="3" fill="#F8FBFE" stroke="#64748B" stroke-width="1.5"/><path d="M126 61 H179 M126 68 H171" stroke="#94A3B8" stroke-width="1.7"/><rect x="119" y="84" width="68" height="24" rx="3" fill="#CBD5E1" stroke="#64748B" stroke-width="1.4"/><g fill="#F8FBFE" stroke="#64748B" stroke-width="1"><circle cx="132" cy="92" r="3"/><circle cx="151" cy="92" r="3"/><circle cx="170" cy="92" r="3"/><circle cx="132" cy="101" r="3"/><circle cx="151" cy="101" r="3"/><circle cx="170" cy="101" r="3"/></g><rect x="122" y="117" width="63" height="12" rx="3" fill="#3D5F91" stroke="#1E2A3B" stroke-width="1.7"/><rect x="128" y="114" width="54" height="9" rx="2" fill="url(#withdraw-note)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M134 118 H174" stroke="#568552" stroke-width="1.4"/></g>
+  <!-- 4. Notes travel outward into the withdrawing hand -->
+  <g id="layer-details"><rect x="168" y="111" width="58" height="25" rx="2" transform="rotate(-7 168 111)" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.8"/><path d="M176 119 H217 M176 125 H204" stroke="#5479AC" stroke-width="1.4"/><g clip-path="url(#withdraw-hand-clip)"><rect x="190" y="103" width="90" height="58" fill="#D89A6C"/><path d="M195 137 Q225 119 275 130 V165 H191Z" fill="#B6784B"/></g><use href="#withdraw-hand" fill="#D89A6C" stroke="#1E2A3B" stroke-width="2.4" stroke-linejoin="round"/><path d="M174 96 H232" fill="none" stroke="#4A72B2" stroke-width="2.5" stroke-linecap="round"/><path d="M225 90 L235 96 L225 102 Z" fill="#4A72B2"/></g>
+  <!-- 5. Outgoing money glints -->
+  <g id="layer-lighting"><path d="M121 46 H161" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".8"/><path d="M215 73 L215 82 M211 77 H219" stroke="#F2C14E" stroke-width="2.3" stroke-linecap="round"/><path d="M139 135 Q151 140 164 135" fill="none" stroke="#8EB0DE" stroke-width="1.7"/></g>
+</svg>

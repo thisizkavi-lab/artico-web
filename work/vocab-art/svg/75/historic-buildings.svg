@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:historic buildings" data-archetype="preserved-stone-facades-along-an-old-city-street">
+<!-- SELF_PROMPT: Lesson 75 urban life; historic buildings. Show preserved older masonry facades, arches, and distinctive rooflines on a present-day city street; no signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="historic-sky" x2="0" y2="1"><stop stop-color="#D7E5E7"/><stop offset="1" stop-color="#B7C8C7"/></linearGradient>
+  <linearGradient id="historic-stone" x2="0" y2="1"><stop stop-color="#D5B58C"/><stop offset="1" stop-color="#A98566"/></linearGradient>
+  <linearGradient id="historic-roof" x2="0" y2="1"><stop stop-color="#855E4F"/><stop offset="1" stop-color="#5C4A43"/></linearGradient>
+  <linearGradient id="historic-street" x2="0" y2="1"><stop stop-color="#A9A28B"/><stop offset="1" stop-color="#777768"/></linearGradient>
+  <filter id="historic-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#historic-sky)"/><circle cx="255" cy="33" r="12" fill="#E9C66F" opacity=".6"/><path d="M0 119V66l30-14 32 14v53Zm244 0V54l30-16 30 16v65Z" fill="#84969A"/><path d="M0 122H304V192H0Z" fill="url(#historic-street)"/></g>
+<g id="layer-context">
+  <path d="M14 128V72l44-30 44 30v56Z" fill="url(#historic-stone)" stroke="#795F4E" stroke-width="1.5"/><path d="M8 75l50-39 51 39Z" fill="url(#historic-roof)" stroke="#614B43" stroke-width="1.5"/><path d="M48 42V27l10-11 11 11v20" fill="#987052" stroke="#614B43" stroke-width="1.4"/><circle cx="59" cy="29" r="6" fill="#E7D6B7" stroke="#614B43" stroke-width="1.2"/>
+  <path d="M202 129V79l36-23 37 23v50Z" fill="#C39A72" stroke="#795F4E" stroke-width="1.5"/><path d="M195 80l43-30 44 30Z" fill="#6E5148" stroke="#59433D" stroke-width="1.5"/>
+  <path d="M28 79h17v21H28Zm29 0h17v21H57Zm28 0h17v21H85Z" fill="#78959B" stroke="#E8D6B4" stroke-width="1.5"/><path d="M31 105q7-13 14 0v23H31Zm31 0q7-13 14 0v23H62Zm31 0q7-13 14 0v23H93Z" fill="#5A5148" stroke="#E4CEAA" stroke-width="1.5"/>
+  <path d="M218 86h16v18h-16Zm28 0h16v18h-16Zm-27 23q7-12 14 0v20h-14Zm30 0q7-12 14 0v20h-14Z" fill="#75919A" stroke="#E5D4B9" stroke-width="1.4"/>
+</g>
+<g id="layer-focal" filter="url(#historic-shadow)">
+  <path d="M114 142Q131 125 151 123Q172 122 191 141L201 162H104Z" fill="#6C7372"/><path d="M124 134V94l26-30 27 30v40Z" fill="url(#historic-stone)" stroke="#795F4E" stroke-width="1.5"/><path d="M117 96l33-38 34 38Z" fill="url(#historic-roof)" stroke="#614B43" stroke-width="1.5"/><path d="M138 99q12-20 24 0v35h-24Z" fill="#574B43" stroke="#E4D0AF" stroke-width="1.5"/><path d="M131 81h13v11h-13Zm23 0h13v11h-13Z" fill="#78969A" stroke="#E4D0AF" stroke-width="1.2"/>
+  <path d="M111 145h87" fill="none" stroke="#D7C9AB" stroke-width="2"/><path d="M132 152h51m-46 5h41" fill="none" stroke="#8A887A" stroke-width="1.3"/>
+  <path d="M104 161q8-7 15 0v15h-15Zm81-2q8-7 15 0v16h-15Z" fill="#506775"/><path d="M108 163h7m79-1h7" fill="none" stroke="#F1D796" stroke-width="1.2"/>
+</g>
+<g id="layer-details">
+  <path d="M10 177q13-5 25 0m82 7q12-5 23 0m84-2q11-5 22 0m46-9q11-5 22 0" fill="none" stroke="#C9B990" stroke-width="1.4"/>
+  <path d="M20 64h19m44 0h18m107 3h20m39-20h17" fill="none" stroke="#E3CFA8" stroke-width="1.3"/>
+  <circle cx="112" cy="170" r="1.8" fill="#E9C66F"/><circle cx="200" cy="179" r="1.7" fill="#E9C66F"/><circle cx="91" cy="151" r="1.5" fill="#E9C66F"/>
+  <path d="M32 71q6-6 12 0m28 0q6-6 12 0m-35 37q5-6 10 0m120-49q7-6 14 0" fill="none" stroke="#F2E6CB" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M13 73l45-35 45 35m92 7 42-28 43 28" fill="none" stroke="#D6C19E" stroke-width="1.3"/><path d="M127 90l23-27 24 27m-49 65h54" fill="none" stroke="#EEDDBD" stroke-width="1.3"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

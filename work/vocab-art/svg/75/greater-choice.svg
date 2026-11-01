@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:greater choice" data-archetype="city-resident-with-several-distinct-nearby-options">
+<!-- SELF_PROMPT: Lesson 75 urban life; greater choice. Show one resident at a city plaza with several distinct nearby options: transport, food, shops, and park space; no signs or text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="choice-sky" x2="0" y2="1"><stop stop-color="#DCE8E8"/><stop offset="1" stop-color="#BCCBC6"/></linearGradient>
+  <linearGradient id="choice-ground" x2="0" y2="1"><stop stop-color="#AAA187"/><stop offset="1" stop-color="#75796B"/></linearGradient>
+  <linearGradient id="choice-building" x2="0" y2="1"><stop stop-color="#84989B"/><stop offset="1" stop-color="#596F76"/></linearGradient>
+  <linearGradient id="choice-warm" x2="0" y2="1"><stop stop-color="#EBCB77"/><stop offset="1" stop-color="#C88755"/></linearGradient>
+  <filter id="choice-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".19"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#choice-sky)"/><circle cx="258" cy="33" r="12" fill="#E9C66F" opacity=".62"/><path d="M0 113V38h47v75Zm48 0V21h43v92Zm166 0V35h44v78Zm44 0V18h46v95Z" fill="url(#choice-building)"/><path d="M0 118H304V192H0Z" fill="url(#choice-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 136H69v27H0Zm229-1h75v28h-75Z" fill="#AC7959"/><path d="M9 142h17v14H9Zm28 0h17v14H37Zm192 0h16v14h-16Zm28 0h19v14h-19Z" fill="#ECD18F"/>
+  <path d="M0 157Q64 146 120 157T233 156Q272 147 304 157V192H0Z" fill="#79836F"/><path d="M134 192Q142 162 153 145m11 47Q155 164 154 145m0 0Q112 137 92 122m62 23q41-2 63-19" fill="none" stroke="#D9CBA9" stroke-width="5"/>
+  <path d="M19 156v-19m0 10-7-7m7 6 8-10" fill="none" stroke="#5F7D5A" stroke-width="2.3"/><circle cx="19" cy="135" r="10" fill="#718B6C"/><path d="M261 156v-20m0 10-8-8m8 6 8-10" fill="none" stroke="#5F7D5A" stroke-width="2.3"/><circle cx="261" cy="133" r="11" fill="#718B6C"/>
+  <path d="M235 106h17v10h-17Zm-151-1h17v10H84Z" fill="#E9C66F"/>
+</g>
+<g id="layer-focal" filter="url(#choice-shadow)">
+  <circle cx="152" cy="103" r="8" fill="#C88F6B"/><path d="M144 100q1-11 9-11 8 1 9 11l-4-3h-11Z" fill="#493E3A"/><path d="M143 114Q152 108 161 114L165 139 138 140Z" fill="#4E7891" stroke="#405C69" stroke-width="1.3"/><path d="M144 137l-5 19 8 1 6-18m4-2 5 19 8 0-6-19" fill="#40535B"/><path d="M143 116l-10 10 4 5 12-7m11-8 10 11-5 4-12-9" fill="#C88F6B"/>
+  <path d="M34 122Q38 113 48 113h28q8 0 10 9l2 12H32Z" fill="url(#choice-warm)" stroke="#72583F" stroke-width="1.2"/><path d="M43 116h13v9H43Zm17 0h12v9H60Z" fill="#6F9297"/><circle cx="46" cy="136" r="4" fill="#39494D"/><circle cx="73" cy="136" r="4" fill="#39494D"/>
+  <path d="M226 124V91l13-16 14 16v33Z" fill="#BD9270" stroke="#7B604B" stroke-width="1.2"/><path d="M221 92l18-22 19 22Z" fill="#665148"/><path d="M233 101h12v14h-12Z" fill="#6F9097"/>
+  <path d="M112 123h20v4h-20Zm3 4v13m14-13v13" fill="#805F47" stroke="#5F493D" stroke-width="1.1"/><ellipse cx="122" cy="122" rx="12" ry="3.2" fill="#D6B887"/>
+</g>
+<g id="layer-details">
+  <path d="M13 180q12-5 23 0m54 8q12-5 23 0m114-4q12-5 23 0m50-9q12-5 22 0" fill="none" stroke="#C5CE97" stroke-width="1.4"/>
+  <circle cx="66" cy="170" r="1.8" fill="#E9C66F"/><circle cx="210" cy="169" r="1.8" fill="#E9C66F"/><circle cx="278" cy="177" r="1.7" fill="#E9C66F"/>
+  <path d="M52 57q10-6 20 0m126-20q10-6 19 0m50 24q10-6 18 0" fill="none" stroke="#EEF0E4" stroke-width="1.3"/>
+  <path d="M34 132q7-5 13 0m185-9q7-5 13 0m-117-27q8-5 16 0" fill="none" stroke="#F3E6C4" stroke-width="1.2"/>
+</g>
+<g id="layer-lighting"><path d="M33 118h54m138-25 15-18 15 18m-124 49 21 0" fill="none" stroke="#F2D995" stroke-width="1.2"/><path d="M139 156q12-16 16-30" fill="none" stroke="#E7D6B5" stroke-width="1.2"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

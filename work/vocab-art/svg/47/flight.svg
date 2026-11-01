@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: flight
+  CONTEXTUAL_DEFINITION: A journey by passenger airplane through the air.
+  PEDAGOGICAL_ART_DIRECTOR: Show a passenger aircraft clearly airborne above clouds, separated from any runway or gate.
+  PEDAGOGICAL_ARCHETYPE: 3 - Environmental Scene
+  SYNONYM_GUARD: Use a passenger plane in the air, not a bird or an aircraft on the ground.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A large passenger jet cruises among soft clouds across a bright open sky with a low distant horizon.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:flight" data-archetype="environment">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="fl-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8FC4D1"/><stop offset="1" stop-color="#EAF1EA"/></linearGradient>
+  <linearGradient id="fl-plane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#9FB7BE"/></linearGradient>
+  <linearGradient id="fl-cloud" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9DBDD"/></linearGradient>
+  <filter id="fl-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#fl-sky)"/><circle cx="249" cy="39" r="17" fill="#F2C14E"/><path d="M0 155Q56 140 106 154T204 151T304 154V192H0Z" fill="#91AF89"/><path d="M19 168H285" stroke="#D8E7E0" stroke-width="1.2"/><path d="M24 118Q24 108 35 108Q40 94 55 99Q62 89 72 99Q85 99 85 111H24Z" fill="url(#fl-cloud)" stroke="#B7C8C9" stroke-width=".9"/><path d="M212 129Q212 119 223 119Q228 105 243 110Q250 100 260 110Q273 110 273 122H212Z" fill="url(#fl-cloud)" stroke="#B7C8C9" stroke-width=".9"/><ellipse cx="88" cy="132" rx="12" ry="5" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/><ellipse cx="101" cy="130" rx="10" ry="6" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/><ellipse cx="113" cy="133" rx="11" ry="4" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/><ellipse cx="254" cy="143" rx="11" ry="4" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/><ellipse cx="267" cy="140" rx="10" ry="6" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/><ellipse cx="279" cy="143" rx="9" ry="4" fill="#F9FCF6" stroke="#B7C8C9" stroke-width=".7"/></g>
+ <g id="layer-context"></g>
+ <g id="layer-focal" filter="url(#fl-shadow)"><path d="M76 91Q99 69 134 68H226Q251 69 268 83L289 93L270 104H91Z" fill="url(#fl-plane)" stroke="#1E2A3B" stroke-width="1.8"/><path d="M132 73L112 40L121 39L156 71M175 73L198 45L207 48L190 77" fill="#E8EFEB" stroke="#1E2A3B" stroke-width="1.2"/><path d="M256 87L277 78L291 88L278 96L257 96Z" fill="#E2E8E3" stroke="#1E2A3B" stroke-width="1"/><path d="M121 90V98M136 88V98M151 87V99M166 86V99M181 86V99M196 86V100M211 87V100M226 87V100" stroke="#58727C" stroke-width="1.2"/><path d="M85 104Q122 111 162 105" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><path d="M182 127Q182 117 193 117Q198 103 213 108Q220 98 230 108Q243 108 243 121H182Z" fill="url(#fl-cloud)" stroke="#B7C8C9" stroke-width="1"/></g>
+ <g id="layer-details"><path d="M100 71H230" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M17 148Q72 135 125 148" fill="none" stroke="#DCE6D8" stroke-width="1"/><circle cx="46" cy="38" r="2" fill="#F2C14E"/><ellipse cx="151" cy="163" rx="115" ry="4" fill="#526274" opacity=".11"/></g>
+ <g id="layer-lighting"><ellipse cx="152" cy="96" rx="130" ry="74" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".29"/><path d="M18 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/></g>
+</svg>

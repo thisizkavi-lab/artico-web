@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 45 - Driving a car
+  WORD: brakes
+  CONTEXTUAL_DEFINITION: The mechanism that slows and stops a car by clamping a wheel rotor.
+  PEDAGOGICAL_ART_DIRECTOR: Show one removed wheel in muted context, exposing the circular rotor and a large brake caliper gripping its rim.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole focus callout
+  SYNONYM_GUARD: Make the brake assembly unmistakable; do not depict the brake pedal alone or a generic wheel.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Muted tire ring centered (151,108), radius 57; inner hub and rotor centered (151,108), radius 34; red-gold caliper sits over the rotor at x=177..207; callout arcs identify the friction contact.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="45:brakes" data-archetype="part-of-whole-callout">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="brake-rotor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E5E4"/><stop offset="1" stop-color="#7C898E"/></linearGradient>
+    <linearGradient id="brake-caliper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2B85E"/><stop offset="1" stop-color="#D46E47"/></linearGradient>
+    <radialGradient id="brake-halo"><stop stop-color="#F2C14E" stop-opacity=".42"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="brake-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="1.4"/><ellipse cx="151" cy="161" rx="73" ry="6" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M151 37 C105 37 80 62 80 108 C80 152 108 174 151 174 C195 174 223 151 223 108 C223 64 197 37 151 37Z" fill="#DCE2E4" stroke="#7B8790" stroke-width="2.5" opacity=".7"/><path d="M112 61 Q151 45 190 61 M98 83 Q86 108 98 136 M204 83 Q216 108 204 136" fill="none" stroke="#AAB6BA" stroke-width="2"/><circle cx="151" cy="108" r="44" fill="#CAD3D5" stroke="#7B8790" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-focal" filter="url(#brake-shadow)"><ellipse cx="164" cy="105" rx="66" ry="63" fill="url(#brake-halo)"/><circle cx="151" cy="108" r="35" fill="url(#brake-rotor)" stroke="#1E2A3B" stroke-width="2.6"/><circle cx="151" cy="108" r="25" fill="none" stroke="#B4BFC2" stroke-width="4"/><circle cx="151" cy="108" r="13" fill="#647782" stroke="#1E2A3B" stroke-width="2"/><circle cx="151" cy="108" r="5" fill="#E8ECEB" stroke="#1E2A3B" stroke-width="1.4"/><path d="M178 69 Q202 70 207 89 L203 117 Q198 129 180 126 L170 113 L173 88Z" fill="url(#brake-caliper)" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/><path d="M177 86 L187 82 L194 91 L191 111 L181 115 L176 106Z" fill="#A64F43" stroke="#1E2A3B" stroke-width="1.5"/><path d="M184 67 Q199 59 211 64 L217 73" fill="none" stroke="#52616C" stroke-width="4" stroke-linecap="round"/><circle cx="185" cy="77" r="3" fill="#F7D681" stroke="#1E2A3B" stroke-width="1"/></g>
+  <g id="layer-details"><path d="M177 60 Q212 62 221 91" fill="none" stroke="#D97706" stroke-width="1.8" stroke-dasharray="4 4"/><path d="M165 85 A25 25 0 0 1 169 128" fill="none" stroke="#5479AC" stroke-width="2" stroke-dasharray="3 4"/><circle cx="122" cy="79" r="2" fill="#FFFFFF"/><circle cx="134" cy="68" r="1.7" fill="#FFFFFF"/><path d="M100 145 Q115 157 133 160" fill="none" stroke="#7B8790" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><path d="M125 80 A36 36 0 0 1 162 74" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/><ellipse cx="166" cy="101" rx="76" ry="67" fill="url(#brake-halo)" opacity=".15"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/></g>
+</svg>

@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 19 — Feelings and moods
+  WORD: unhappy (Adjective)
+  CONTEXTUAL_DEFINITION: Quietly sad or displeased, without a single intense shock.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive emotion scene
+  SYNONYM_GUARD: A person is visibly unhappy with an unappealing meal, shown by a small frown and turned shoulders; there are no tears, unlike sad.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm dining nook and simple tabletop.
+    - Context_Layer: Plain, overcooked meal on a small plate.
+    - Focal_Layer: Seated adult with shoulders slightly lowered and an unmistakable mild frown.
+    - Details_Layer: Folded hands, downturned eyes, and untouched fork beside the plate.
+    - Lighting_Layer: Soft cool wash behind the person, not a storm scene.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="19:unhappy" data-archetype="expressive-emotion-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style>
+    <linearGradient id="unhappy-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="unhappy-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#829A83"/><stop offset="1" stop-color="#568552"/></linearGradient>
+    <filter id="unhappy-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#unhappy-bg)"/><path d="M0 148Q79 142 152 148T304 147V192H0Z" fill="#F3ECE1"/><ellipse cx="154" cy="174" rx="128" ry="7" fill="#EAE3D5"/></g>
+  <g id="layer-context"><path d="M15 124H289V145H15Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2"/><path d="M30 145V174M274 145V174" stroke="#965D28" stroke-width="5" stroke-linecap="round"/><ellipse cx="223" cy="117" rx="43" ry="10" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/><ellipse cx="223" cy="113" rx="31" ry="6" fill="#E5E9F0"/><path d="M198 111Q200 102 207 105L212 109Q220 102 226 109Q236 101 243 109Q249 115 243 119L204 119Q197 118 198 111Z" fill="#C8B98C" stroke="#64748B" stroke-width="1.7"/><path d="M247 122L268 105" stroke="#1E2A3B" stroke-width="4" stroke-linecap="round"/><path d="M17 97H48M17 106H43" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#unhappy-shadow)"><ellipse cx="105" cy="88" rx="59" ry="67" fill="#CBD5E1" opacity=".24"/><path d="M47 177Q55 139 76 129Q96 120 116 124Q137 127 151 177Z" fill="url(#unhappy-shirt)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M77 133Q98 145 121 131" fill="none" stroke="#568552" stroke-width="2"/><rect x="94" y="110" width="21" height="22" rx="6" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M66 72C66 49 82 34 105 34C129 34 146 49 145 75L141 100C139 121 123 132 105 132C86 132 70 119 68 98Z" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2.6"/><path d="M66 71Q67 43 92 36Q121 28 144 53L145 70Q129 54 107 55Q83 55 70 77Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M82 80Q91 84 99 82M129 82Q120 84 112 81" fill="none" stroke="#1E2A3B" stroke-width="2.3" stroke-linecap="round"/><path d="M84 94Q91 97 98 94M114 94Q121 97 128 94" fill="none" stroke="#1E2A3B" stroke-width="2.2" stroke-linecap="round"/><path d="M92 112Q105 105 118 112" fill="none" stroke="#1E2A3B" stroke-width="2.7" stroke-linecap="round"/><path d="M62 142Q52 150 54 158M144 142Q155 151 153 158" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M62 142Q52 150 54 158M144 142Q155 151 153 158" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M58 158Q69 161 80 158" fill="none" stroke="#F5BFA3" stroke-width="8" stroke-linecap="round"/></g>
+  <g id="layer-details"><ellipse cx="129" cy="103" rx="6" ry="3" fill="#D9857F" opacity=".28"/><path d="M178 62Q185 58 192 62M178 70Q185 66 192 70" fill="none" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round"/><circle cx="205" cy="116" r="2" fill="#EAE3D5"/><path d="M248 101L254 97" stroke="#64748B" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><ellipse cx="105" cy="88" rx="61" ry="69" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-dasharray="3 6" opacity=".35"/><path d="M78 43Q91 36 104 38" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/></g>
+</svg>

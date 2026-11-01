@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 13 — Moving and renting
+  WORD: maintenance request (Noun phrase)
+  CONTEXTUAL_DEFINITION: A tenant's formal ask for a repair in the home.
+  PEDAGOGICAL_ARCHETYPE: 4 — Problem and request action
+  SYNONYM_GUARD: Make the broken fixture visible beside the blank repair form; this is requesting service, not doing the repair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bathroom sink with a small leak.
+    - Context_Layer: Drop and damp patch signal a repair need.
+    - Focal_Layer: Tenant fills a blank request sheet while pointing to the dripping tap.
+    - Details_Layer: Wrench icon and ruled lines on paper, no letters.
+    - Lighting_Layer: Blue cue links request form to broken fixture.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="13:maintenance request" data-archetype="repair-request">
+  <defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#E8EEF2"/></linearGradient></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="url(#wall)"/><path d="M0 147H304V192H0Z" fill="#D8C5A8"/><path d="M0 147H304" stroke="#8A5A35" stroke-width="2"/><path d="M225 29H286V142H225Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.6"/><path d="M232 35H279V137H232Z" fill="#F5FAFD"/><path d="M220 78H291" stroke="#64748B" stroke-width="3"/><ellipse cx="152" cy="164" rx="107" ry="6" fill="#948775" opacity=".25"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M235 108H280V143H235Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.5"/><path d="M242 108V95Q242 88 250 88H264Q272 88 272 96V109" fill="none" stroke="#64748B" stroke-width="3"/><path d="M261 100Q266 104 261 109Q256 104 261 100Z" fill="#4A72B2"/><path d="M260 112Q264 116 260 120Q256 116 260 112Z" fill="#4A72B2"/><path d="M24 44H72V88H24Z" fill="#CDE0E9" stroke="#64748B" stroke-width="1.5"/><path d="M48 45V87M25 66H71" stroke="#FFFFFF" stroke-width="1.7"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><circle cx="112" cy="82" r="10" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="1.8"/><path d="M102 80Q102 67 113 67Q123 68 122 81L117 74H106Z" fill="#3A2E2B"/><path d="M101 96Q112 89 123 96L129 127H95Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M104 98L128 107L145 106" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M104 98L128 107L145 106" fill="none" stroke="#F0C5A7" stroke-width="4.5" stroke-linecap="round"/><path d="M108 126L103 151M121 126L127 151" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M108 126L103 151M121 126L127 151" stroke="#344254" stroke-width="4.5" stroke-linecap="round"/><path d="M143 74L187 78L181 130L137 126Z" fill="#FFFDF8" stroke="#1E2A3B" stroke-width="2"/><path d="M149 88L175 91M148 96L173 99M145 116L164 118" stroke="#94A3B8" stroke-width="1.3"/><path d="M162 84L171 80L177 87L168 93Z" fill="#CBD5E1" stroke="#5479AC" stroke-width="1.3"/><path d="M163 85L173 87" stroke="#4A72B2" stroke-width="1.4"/><path d="M160 112Q169 102 178 112" fill="none" stroke="#C88446" stroke-width="2"/><circle cx="169" cy="108" r="3" fill="#F2C14E"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M186 70Q207 62 232 86" fill="none" stroke="#4A72B2" stroke-width="1.8" stroke-dasharray="4 3"/><path d="M226 80L233 86L224 89" fill="none" stroke="#4A72B2" stroke-width="1.8"/><path d="M263 120L267 124M265 131L269 135" stroke="#4A72B2" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><circle cx="168" cy="104" r="36" fill="#FEF3C7" opacity=".15"/><path d="M246 98Q256 91 265 98" fill="none" stroke="#FFFFFF" stroke-width="1.5"/></g>
+</svg>

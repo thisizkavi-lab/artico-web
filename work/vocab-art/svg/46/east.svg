@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: east
+  CONTEXTUAL_DEFINITION: The compass direction toward the right on a north-up map.
+  PEDAGOGICAL_ART_DIRECTOR: Pair a map compass with a bright sunrise entering from the right edge; highlight only the rightward compass ray.
+  PEDAGOGICAL_ARCHETYPE: 6 - Spatial relation and direction
+  SYNONYM_GUARD: Show compass orientation, not merely a sunrise or an east-facing house.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place the neighborhood map at x=18..218, y=18..174; compass centered (145,96) with a gold east-pointed ray; sunrise disk at (261,55), with short rays directed inward.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:east" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="east-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4EEDB"/><stop offset="1" stop-color="#C6DDBE"/></linearGradient>
+    <linearGradient id="east-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#657486"/><stop offset="1" stop-color="#3F5268"/></linearGradient>
+    <radialGradient id="east-sun"><stop stop-color="#FFF1A8"/><stop offset=".72" stop-color="#F2C14E"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="east-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="166" width="304" height="26" fill="#E7E0D4"/><path d="M0 166H304" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="261" cy="54" r="36" fill="url(#east-sun)"/></g>
+  <g id="layer-context"><rect x="15" y="17" width="211" height="148" rx="12" fill="url(#east-land)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M18 72H224M18 118H224M77 20V162M174 20V162" stroke="#A8B6A6" stroke-width="1.5"/><path d="M19 91H224M127 19V164" stroke="url(#east-road)" stroke-width="15"/><path d="M20 91H224M127 20V163" stroke="#F8F5EC" stroke-width="1.8" stroke-dasharray="7 7"/><rect x="35" y="37" width="28" height="21" rx="3" fill="#D9B997" stroke="#6B6258"/><rect x="188" y="128" width="23" height="22" rx="3" fill="#8EABC8" stroke="#53657A"/><circle cx="53" cy="137" r="11" fill="#80A77C" stroke="#486750"/><circle cx="204" cy="48" r="10" fill="#80A77C" stroke="#486750"/></g>
+  <g id="layer-focal" filter="url(#east-shadow)"><circle cx="144" cy="92" r="35" fill="#F8F7F1" stroke="#1E2A3B" stroke-width="2.4"/><circle cx="144" cy="92" r="26" fill="#E8EEF0" stroke="#8B9BA4" stroke-width="1.5"/><path d="M144 61L151 87L144 91L137 87Z" fill="#657486" stroke="#1E2A3B" stroke-width="1.4"/><path d="M175 92L149 99L145 92L149 85Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.7"/><path d="M144 123L137 97L144 93L151 97Z" fill="#B8C3C6" stroke="#1E2A3B" stroke-width="1.2"/><path d="M113 92L139 85L143 92L139 99Z" fill="#B8C3C6" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="144" cy="92" r="4" fill="#1E2A3B"/><path d="M253 79A25 25 0 0 1 286 79" fill="#F2C14E" stroke="#1E2A3B" stroke-width="2"/><path d="M246 81H292" stroke="#F5B949" stroke-width="2.2" stroke-linecap="round"/><path d="M252 90L243 96M286 90L295 96" stroke="#D18B3D" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M145 92H211" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><path d="M145 92H211" fill="none" stroke="#4A72B2" stroke-width="5.5" stroke-linecap="round"/><path d="M204 82L222 92L204 102Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.6"/><path d="M232 44L238 48M244 27L247 34M266 19V28M283 26L280 34" stroke="#D99B3D" stroke-width="2" stroke-linecap="round"/><path d="M88 32Q98 39 103 52M181 109Q189 114 192 122" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><circle cx="37" cy="147" r="2" fill="#4A72B2"/><circle cx="192" cy="36" r="2" fill="#4A72B2"/></g>
+  <g id="layer-lighting"><path d="M30 24H121" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><circle cx="144" cy="92" r="39" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><ellipse cx="176" cy="92" rx="20" ry="12" fill="#F2C14E" opacity=".18"/></g>
+</svg>

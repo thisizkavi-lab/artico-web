@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: take photos (verb phrase)
+  CONTEXTUAL_DEFINITION: Aim a camera at a subject and press the shutter to capture photographs.
+  PEDAGOGICAL_ARCHETYPE: 4 - Person acts through a tool toward a visible subject
+  SYNONYM_GUARD: Show a person framing a real subject through a camera and pressing the shutter; photography is the general camera hobby with prints, not this action.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A hobbyist stands outdoors with a camera raised to the eye, finger on the shutter, framing a potted flower; the camera's lens points directly at the subject.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:take photos" data-archetype="person-aims-camera-at-flower-subject">
+ <defs>
+  <style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="photos-sky" x2="0" y2="1"><stop stop-color="#DFEBE5"/><stop offset="1" stop-color="#AFC9B9"/></linearGradient>
+  <linearGradient id="photos-ground" x2="0" y2="1"><stop stop-color="#B7C99C"/><stop offset="1" stop-color="#81956F"/></linearGradient>
+  <filter id="photos-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#photos-sky)"/><path d="M0 143Q64 136 126 144T304 140V192H0Z" fill="url(#photos-ground)"/><path d="M0 148Q64 140 126 149T304 145" stroke="#6F876D" stroke-width="1.3" fill="none"/><circle cx="50" cy="43" r="13" fill="#F0D486" opacity=".68"/><path d="M0 30q42-7 84 0m141-3q39-6 79 0" stroke="#F6F3E7" stroke-width="1.5" fill="none"/></g>
+ <g id="layer-context"><path d="M224 145q11-24 21-2m-12-12q-7-8-13-8m15 6q9-13 15-13" stroke="#66866C" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M33 190l8-27m-8 14-10-11m10 4 10-17m229 37 6-27m-6 12-10-12m10 4 9-16" stroke="#638570" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M189 80Q225 70 259 80" stroke="#F8F7EE" stroke-width="1.2" stroke-dasharray="2 4" fill="none"/><ellipse cx="151" cy="151" rx="73" ry="5" fill="#3E5644" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#photos-shadow)">
+  <path d="M65 114Q73 95 95 97L114 106L119 143H61Z" fill="#6E8C81" stroke="#405B61" stroke-width="1.4"/><path d="M72 124Q63 137 71 151H118L117 131Z" fill="#58746E" stroke="#405B61" stroke-width="1.2"/><circle cx="90" cy="81" r="14" fill="#D79D79" stroke="#744E45" stroke-width="1.2"/><path d="M77 80q0-14 13-15q13 0 14 14l-7-6-12 1Z" fill="#51433D"/><path d="M85 83h1m8 0h1" stroke="#263C45" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+  <path d="M78 106Q64 107 57 117L61 128L80 118" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/><path d="M108 104Q124 99 135 91L145 90Q150 94 145 99L130 108L115 114" fill="#D79D79" stroke="#744E45" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M115 74H167V105H115Z" fill="#596E75" stroke="#344B54" stroke-width="1.6"/><path d="M119 69h16v7h-16Z" fill="#596E75" stroke="#344B54" stroke-width="1"/><circle cx="140" cy="90" r="13" fill="#354F59" stroke="#263E47" stroke-width="1.2"/><circle cx="140" cy="90" r="8" fill="#91AEB0" stroke="#526D72" stroke-width="1"/><circle cx="140" cy="90" r="4" fill="#405D66"/><circle cx="137" cy="87" r="1.4" fill="#F3F3E9"/><circle cx="160" cy="79" r="2" fill="#E4C16C"/><path d="M151 72q8-7 16 0" fill="none" stroke="#F5E7C7" stroke-width="1"/>
+  <path d="M224 111Q221 96 230 89Q239 84 245 92Q251 101 247 112Z" fill="#DDAA7B" stroke="#8C664F" stroke-width="1.2"/><path d="M231 97Q233 87 237 85M236 97Q243 88 246 85" stroke="#6F9468" stroke-width="1.4" fill="none"/><circle cx="232" cy="91" r="4" fill="#E4B96B"/><circle cx="244" cy="91" r="4" fill="#D87D6E"/><path d="M224 111h23" stroke="#87664E" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-details"><path d="M149 69Q178 55 204 69m-41 14q24-10 50-1" stroke="#F8F7ED" stroke-width="1.1" stroke-dasharray="3 4" fill="none"/><path d="M69 145q18 3 34 0" stroke="#D4E1D1" stroke-width="1.2" fill="none"/><circle cx="183" cy="52" r="1.3" fill="#FFFFFF"/><circle cx="192" cy="45" r="1" fill="#FFFFFF"/><path d="M123 93l-7 7m37-7 8 6" stroke="#DCE6DA" stroke-width="1" fill="none"/></g>
+ <g id="layer-lighting"><ellipse cx="141" cy="92" rx="46" ry="34" fill="#EECF7C" opacity=".1"/><path d="M121 78q11-7 21-4m96 18q8-4 12-1" stroke="#FFF9E9" stroke-width="1.4" fill="none" opacity=".72" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: wrist (Noun)
+  CONTEXTUAL_DEFINITION: The narrow joint where the hand meets the forearm.
+  PEDAGOGICAL_ARCHETYPE: 2 — Part-of-whole focus callout
+  SYNONYM_GUARD: Highlight the hand-to-forearm connection, not the fingers or palm.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Close-up forearm and relaxed hand seen from the back.
+    - Context_Layer: Arm and hand are softly muted around the connection.
+    - Focal_Layer: The narrow wrist joint has a warm skin fill and clear outline.
+    - Details_Layer: A slight wrist bend shows the hinge location.
+    - Lighting_Layer: Small halo and pointer land on the joint.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:wrist" data-archetype="part-callout">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="154" cy="104" rx="122" ry="78" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M28 75Q77 66 135 77L148 82L150 121L135 126Q77 138 28 130Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M139 81L146 44Q148 34 157 35Q167 36 165 47L160 82L173 40Q176 31 185 34Q194 37 190 48L178 86L196 57Q201 48 210 53Q218 58 211 68L194 98Q192 106 191 116L156 135L140 123Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M42 86Q83 79 126 88M45 119Q89 126 127 116" fill="none" stroke="#94A3B8" stroke-width="1.4"/><path d="M158 86L154 112M178 87L169 108" fill="none" stroke="#94A3B8" stroke-width="1.4"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="145" cy="102" rx="35" ry="38" fill="#FEF3C7" opacity=".55"/><path d="M130 77Q143 81 158 81L156 124Q143 122 130 126Z" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.5"/><path d="M133 84Q144 88 156 87M132 116Q145 112 156 116" fill="none" stroke="#C88E74" stroke-width="1.7"/><path d="M127 74Q143 78 161 78L159 127Q142 125 127 129Z" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M45 103L124 103" stroke="#4A72B2" stroke-width="2.1"/><path d="M116 98L126 103L116 108" fill="none" stroke="#4A72B2" stroke-width="2"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="145" cy="102" rx="22" ry="31" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".55"/></g>
+</svg>

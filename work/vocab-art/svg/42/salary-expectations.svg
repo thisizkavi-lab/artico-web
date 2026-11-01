@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: salary expectations
+  CONTEXTUAL_DEFINITION: The amount of pay a candidate hopes to receive in a job.
+  PEDAGOGICAL_ART_DIRECTOR: Show a candidate and employer discussing a desired pay range professionally.
+  PEDAGOGICAL_ARCHETYPE: 15 - Compensation discussion
+  SYNONYM_GUARD: Depict a desired range being discussed, not a paycheck already earned or a payslip.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place candidate and hiring manager on opposite sides of a small desk at x=75..122 and x=190..237. Between them show one blank horizontal compensation range card with a pair of gold bracket markers. Keep the card icon-only and avoid currency symbols or numerals.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:salary expectations" data-archetype="compensation-discussion">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="salary-range" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="salary-table" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="salary-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="salary-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M63 124 H241 V136 H63 Z" fill="url(#salary-table)" stroke="#1E2A3B" stroke-width="1.4"/><path d="M78 136 V146 M226 136 V146" stroke="#965D28" stroke-width="2.1"/><rect x="113" y="73" width="78" height="40" rx="4" fill="url(#salary-range)" stroke="#5479AC" stroke-width="1.2"/><path d="M124 93 H180" stroke="#64748B" stroke-width="2" stroke-linecap="round"/><path d="M136 86 V101 M168 86 V101" stroke="#D99A2B" stroke-width="2.5" stroke-linecap="round"/><circle cx="136" cy="93" r="4" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/><circle cx="168" cy="93" r="4" fill="#F2C14E" stroke="#C88446" stroke-width=".8"/><path d="M120 105 H184" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-focal" filter="url(#salary-shadow)"><path d="M62 121 Q64 99 76 92 L77 83 Q73 79 75 72 Q83 64 94 66 Q103 69 101 80 L99 87 Q110 92 112 119 L109 132 H66 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="88" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M80 74 Q82 66 89 66 Q97 67 101 74 Q93 70 86 71 Z" fill="#3D342D"/><path d="M200 121 Q202 99 214 92 L215 83 Q211 79 213 72 Q221 64 232 66 Q241 69 239 80 L237 87 Q248 92 250 119 L247 132 H204 Z" fill="#A8D4A2" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="226" cy="76" rx="8" ry="10" fill="#C7835C" stroke="#1E2A3B" stroke-width="1"/><path d="M218 74 Q220 66 227 66 Q235 67 239 74 Q231 70 224 71 Z" fill="#3D342D"/><path d="M205 97 Q226 91 246 97" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M103 103 L126 96 M202 103 L181 96" stroke="#D89A6C" stroke-width="3.5" stroke-linecap="round"/><path d="M110 102 L125 100 M195 102 L181 100" stroke="#5479AC" stroke-width="2.8" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M125 52 Q134 43 143 52 M161 52 Q170 43 179 52" fill="none" stroke="#8EB0DE" stroke-width="1.2" stroke-linecap="round"/><circle cx="151" cy="47" r="2" fill="#F2C14E"/><path d="M71 57 L77 52 M231 57 L237 52" stroke="#A8D4A2" stroke-width="1.4" stroke-linecap="round"/><circle cx="113" cy="61" r="2" fill="#8EB0DE"/><circle cx="190" cy="61" r="2" fill="#A8D4A2"/></g>
+  <g id="layer-lighting"><ellipse cx="152" cy="81" rx="103" ry="66" fill="url(#salary-halo)" opacity=".16"/><path d="M114 77 H190" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

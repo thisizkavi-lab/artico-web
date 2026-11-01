@@ -1,0 +1,44 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: headline news
+ CONTEXTUAL_DEFINITION: The most important lead story presented prominently in a news bulletin.
+ PEDAGOGICAL_ARCHETYPE: lead broadcast story emphasized over smaller items
+ SYNONYM_GUARD: Show one lead story elevated above minor stories in a news program; avoid a generic anchor-only bulletin or printed headline.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A studio presenter points to one large central event image dominating a broadcast screen while two smaller secondary news images sit below.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:headline news" data-archetype="prominent lead story in a broadcast">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <path d="M20 24H284V145H20Z" fill="#26384A"/><path d="M29 33H275V140H29Z" fill="#405663"/>
+  <!-- one dominant lead image -->
+  <path d="M43 43H258V102H43Z" fill="#D5D9CE"/><path d="M47 83L88 53L126 77L161 49L197 78L226 57L254 82V101H47Z" fill="#798C72"/>
+  <path d="M60 92L84 71L105 91L128 64L151 90L176 69L198 91Z" fill="#597D8B"/><circle cx="226" cy="58" r="7" fill="#D6A64C"/>
+  <path d="M44 106H256V111H44Z" fill="#D6A64C"/>
+  <path d="M46 116H133V134H46Z" fill="#A8B7AD"/><path d="M168 116H255V134H168Z" fill="#A8B7AD"/>
+  <circle cx="68" cy="122" r="4" fill="#B85E5A"/><path d="M78 120H123M78 125H115" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="191" cy="122" r="4" fill="#D6A64C"/><path d="M201 120H245M201 125H238" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-context">
+  <path d="M18 149H286" stroke="#F6E5CE" stroke-width="1.2"/><path d="M33 43H267" stroke="#D6A64C" stroke-width="1"/>
+  <circle cx="262" cy="48" r="2" fill="#B85E5A"/><circle cx="49" cy="137" r="2" fill="#D6A64C"/>
+  <path d="M242 32L250 27V40L242 36Z" fill="#26384A"/><circle cx="248" cy="33" r="1.2" fill="#D6A64C"/>
+ </g>
+ <g id="layer-focal">
+  <!-- anchor points to the one lead item -->
+  <circle cx="270" cy="76" r="7" fill="#D29A78"/><path d="M263 75Q264 65 271 66Q278 67 278 77L274 72H265Z" fill="#26384A"/>
+  <path d="M258 87Q270 81 282 87L286 121H254Z" fill="#B85E5A"/><path d="M261 91L249 81L241 82M280 91L270 101" stroke="#D29A78" stroke-width="2.4" fill="none"/>
+  <path d="M260 119L258 138M281 119L284 138" stroke="#26384A" stroke-width="2.5"/>
+  <path d="M253 79L246 78" stroke="#D6A64C" stroke-width="1.6"/>
+  <path d="M123 51L129 43L135 51L144 55L135 59L129 67L123 59L114 55Z" fill="#D6A64C"/>
+ </g>
+ <g id="layer-details">
+  <path d="M265 75Q270 73 275 75M266 82Q270 85 274 82" stroke="#654E43" stroke-width="1" fill="none"/>
+  <path d="M49 48H100" stroke="#F6E5CE" stroke-width="1.2"/><path d="M105 48H138" stroke="#B85E5A" stroke-width="1.2"/>
+  <path d="M147 119H159M148 124H158" stroke="#F6E5CE" stroke-width="1"/><circle cx="155" cy="133" r="1.4" fill="#D6A64C"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="148" cy="73" rx="112" ry="55" fill="#E7C66B" opacity=".08"/><path d="M34 34L53 54M270 34L255 54" stroke="#FFF1C7" stroke-width="1.1" opacity=".5"/>
+  <path d="M25 142H279" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

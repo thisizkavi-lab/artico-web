@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 43 - Workplace skills and abilities
+  WORD: organized
+  CONTEXTUAL_DEFINITION: Able to keep work, materials, and plans arranged clearly.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person with an orderly workstation and a clear plan for the work ahead.
+  PEDAGOGICAL_ARCHETYPE: 20 - Orderly personal system
+  SYNONYM_GUARD: Apply the quality to the worker and their prepared workspace; organization is the process or system of arranging things.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a neat worker beside a clean workstation. Show three aligned document trays with sorted folders, a small blank calendar grid, and one clear next task card ready at the front.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="43:organized" data-archetype="orderly-personal-system">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="organized-calendar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient>
+    <linearGradient id="organized-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="organized-halo"><stop stop-color="#DDE8F4" stop-opacity=".75"/><stop offset="1" stop-color="#8EB0DE" stop-opacity="0"/></radialGradient>
+    <filter id="organized-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><rect x="169" y="37" width="82" height="54" rx="3" fill="url(#organized-calendar)" stroke="#5479AC" stroke-width="1"/><path d="M169 51 H251 M189 51 V91 M210 51 V91 M230 51 V91 M169 69 H251 M169 80 H251" stroke="#CBD5E1" stroke-width=".8"/><rect x="62" y="106" width="82" height="23" fill="#EAE3D5" stroke="#64748B" stroke-width=".9"/><rect x="69" y="96" width="69" height="10" rx="2" fill="#DDE8F4" stroke="#5479AC" stroke-width=".8"/><rect x="76" y="85" width="55" height="11" rx="2" fill="#E5F0E1" stroke="#547A56" stroke-width=".8"/><path d="M42 136 H264 V145 H42 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.4"/><path d="M55 145 V155 M251 145 V155" stroke="#965D28" stroke-width="2.1"/><rect x="184" y="101" width="51" height="22" rx="2" fill="#F7E8BF" stroke="#C88446" stroke-width=".9"/><path d="M191 109 H228 M191 115 H222" stroke="#D6B869" stroke-width=".9"/><path d="M180 43 V48 M240 43 V48" stroke="#5479AC" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#organized-shadow)"><path d="M103 127 Q105 102 118 95 L119 85 Q115 81 117 73 Q125 65 136 68 Q145 71 143 82 L141 89 Q154 95 156 124 L153 136 H107 Z" fill="url(#organized-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="132" cy="76" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M123 74 Q125 66 133 66 Q141 67 145 74 Q137 70 130 71 Z" fill="#3D342D"/><path d="M112 100 Q132 94 151 100" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M110 105 L96 112 M151 105 L167 108" stroke="#5479AC" stroke-width="3.7" stroke-linecap="round"/><path d="M96 112 L87 114 M167 108 L178 108" stroke="#D89A6C" stroke-width="3.3" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="153" cy="55" r="2" fill="#F2C14E"/><circle cx="158" cy="115" r="2" fill="#A8D4A2"/><path d="M185 61 H199 M205 61 H219 M225 61 H240" stroke="#8EB0DE" stroke-width="1.2"/><path d="M187 127 H230" stroke="#DCE8D9" stroke-width=".8"/><path d="M69 132 H137" stroke="#FFFFFF" stroke-width=".8"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="82" rx="101" ry="66" fill="url(#organized-halo)" opacity=".16"/><path d="M170 39 H250" stroke="#FFFFFF" stroke-width=".8"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

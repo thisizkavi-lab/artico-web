@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 23 — Education
+  WORD: teacher (Noun)
+  CONTEXTUAL_DEFINITION: A person who teaches students, especially at a school.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive role
+  SYNONYM_GUARD: A school teacher guides one child at a classroom board, distinct from a university lecturer or professor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Friendly primary classroom with board and window.
+    - Context_Layer: Small desks and student notebooks.
+    - Focal_Layer: Teacher points to a large board while speaking to a child.
+    - Details_Layer: Pointer, colored shape demonstration, and attentive student.
+    - Lighting_Layer: Sunlight across the teacher and board.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="23:teacher" data-archetype="expressive-role">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="teacher-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="teacher-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#teacher-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><rect x="22" y="27" width="116" height="64" rx="3" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><path d="M36 43H122M37 51H113" stroke="#DCECFB" stroke-width="1.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><rect x="217" y="107" width="67" height="13" fill="#A98A64"/><path d="M224 120V143M277 120V143" stroke="#8D765A" stroke-width="3"/><path d="M225 99H274V106H225Z" fill="#D9C9A7" stroke="#8D765A" stroke-width="1.1"/><path d="M230 101H247" stroke="#F7EBCF" stroke-width="1.6"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#teacher-shadow)"><circle cx="174" cy="56" r="14" fill="#D9A77D" stroke="#1E2A3B" stroke-width="1.6"/><path d="M160 56Q161 41 175 41Q189 42 189 57L184 60Q182 49 174 49Q168 49 164 63Z" fill="#7B6553" stroke="#1E2A3B" stroke-width="1.2"/><path d="M154 76Q173 69 192 77L198 113L185 123L160 117L149 92Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.9"/><path d="M159 78L141 91L126 74M188 80L201 62L217 61" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M159 78L141 91L126 74M188 80L201 62L217 61" fill="none" stroke="#D9A77D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M125 74L117 58" stroke="#D9A441" stroke-width="2.2" stroke-linecap="round"/><path d="M161 117L156 144M185 119L192 144" stroke="#1E2A3B" stroke-width="5.5" stroke-linecap="round"/><path d="M161 117L156 144M185 119L192 144" stroke="#5479AC" stroke-width="3" stroke-linecap="round"/><circle cx="235" cy="82" r="10" fill="#C98961" stroke="#1E2A3B" stroke-width="1.4"/><path d="M225 82Q226 70 236 70Q246 71 246 83L242 86Q240 77 235 77Q231 77 228 89Z" fill="#27364B" stroke="#1E2A3B" stroke-width="1"/><path d="M222 96Q235 91 248 97L252 108H218Z" fill="#5479AC" stroke="#315782" stroke-width="1.5"/><path d="M234 98L244 90" stroke="#1E2A3B" stroke-width="3.6" stroke-linecap="round"/><path d="M234 98L244 90" stroke="#C98961" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><circle cx="62" cy="67" r="10" fill="#D9A441"/><path d="M92 55L103 74L81 74Z" fill="#D9857F"/><rect x="44" y="76" width="18" height="9" rx="4" fill="#91A77C"/><path d="M193 44Q201 39 209 43" fill="none" stroke="#D9A441" stroke-width="2"/><path d="M135 69L130 72" stroke="#FEF9C3" stroke-width="2"/></g>
+  <g id="layer-lighting"><ellipse cx="165" cy="91" rx="117" ry="74" fill="#FEF9C3" opacity=".07"/><path d="M155 76Q174 69 192 77" fill="none" stroke="#F9CED0" stroke-width="2"/></g>
+</svg>

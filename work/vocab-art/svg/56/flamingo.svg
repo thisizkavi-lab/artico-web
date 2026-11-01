@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: flamingo (noun)
+  CONTEXTUAL_DEFINITION: A tall pink water bird with a long bent neck, long legs, and a downward-curved bill.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: The saturated pink body and unmistakable S-neck, one-leg stance, and black-tipped hooked bill separate it from storks and cranes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Make the flamingo stand in shallow marsh water; rounded body x=105..197 y=95..133, long curved neck rises to head at x=192 y=53, two thin legs reach water at y=166, one leg bent, and pink feathers overlap the body.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:flamingo" data-archetype="standing-flamingo">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#D87D86;--c-secondary:#A94F68;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="flamingo-sky" x2="0" y2="1"><stop stop-color="#DAEAF0"/><stop offset="1" stop-color="#F5F1E7"/></linearGradient>
+  <linearGradient id="flamingo-water" x2="0" y2="1"><stop stop-color="#B3CCBF"/><stop offset="1" stop-color="#8CB7B2"/></linearGradient>
+  <linearGradient id="flamingo-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F2A0A0"/><stop offset="1" stop-color="#CC6479"/></linearGradient>
+  <filter id="flamingo-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#flamingo-sky)"/><path d="M0 112Q70 104 140 113T304 108V192H0Z" fill="#DDE4D6"/><path d="M0 133Q70 125 144 134T304 129V192H0Z" fill="url(#flamingo-water)"/><path d="M0 158Q89 151 160 160T304 155V192H0Z" fill="#9EBFB7"/><circle cx="59" cy="42" r="24" fill="#F5D995" opacity=".5"/></g>
+ <g id="layer-context"><path d="M34 133V83m0 37L24 106m10 4 10-18m228 39V78m0 38-11-17m11 6 12-18" fill="none" stroke="#788E6D" stroke-width="3" stroke-linecap="round"/><path d="M22 107q7-12 14-6m-19 12q8-8 17-2m224-11q9-13 17-5m-14 13q9-9 17-2" fill="none" stroke="#819873" stroke-width="2.2" stroke-linecap="round"/><path d="M30 151q18-5 38 0m175-1q18-5 39 0" fill="none" stroke="#D8ECE3" stroke-width="1.6"/><ellipse cx="154" cy="155" rx="70" ry="5" fill="#527C7A" opacity=".16"/></g>
+ <g id="layer-focal" filter="url(#flamingo-shadow)"><path d="M105 117Q110 96 139 93Q169 90 190 104Q201 112 193 129Q179 141 145 140Q115 138 105 117Z" fill="url(#flamingo-feather)" stroke="#A74E63" stroke-width="1.6"/><path d="M121 112Q141 99 163 104Q179 108 179 123Q157 135 132 129Z" fill="#E78C94"/><path d="M165 105Q177 92 177 78L172 67Q169 56 181 49Q195 43 204 52Q211 60 200 68Q190 72 190 81Q193 99 182 112Z" fill="#E78D95" stroke="#AE5668" stroke-width="1.5"/><circle cx="194" cy="55" r="11" fill="#F0A1A1" stroke="#AE5668" stroke-width="1.2"/><path d="M199 53Q211 51 219 55Q213 58 208 61Q207 67 201 68Q203 60 199 53Z" fill="#282D35" stroke="#18212B" stroke-width="1"/><circle cx="196" cy="52" r="1.8" fill="#1E2A3B"/><path d="M136 134L135 159L126 166M168 136L173 159L181 165" fill="none" stroke="#D66E7D" stroke-width="3.2" stroke-linecap="round"/><path d="M135 157L122 163M174 158L187 162" fill="none" stroke="#C96374" stroke-width="2.6" stroke-linecap="round"/><path d="M146 104q9-7 20-4m-26 10q11-6 23-3m-9 13q11-5 22-1" fill="none" stroke="#F6C1B5" stroke-width="1.5" stroke-linecap="round"/></g>
+ <g id="layer-details"><path d="M81 159q19-4 38 0m74 0q22-5 39 0m-155 9q14-3 27 0m149-2q13-3 25 0" fill="none" stroke="#DCEEE6" stroke-width="1.5" stroke-linecap="round"/><path d="M37 140l-4 8m231-8 4 8" fill="none" stroke="#7C936E" stroke-width="1.4"/><circle cx="74" cy="147" r="1.3" fill="#D9C69D"/><circle cx="232" cy="145" r="1.2" fill="#D9C69D"/></g>
+ <g id="layer-lighting"><path d="M119 106q12-13 31-10m28-35q4-11 14-12" fill="none" stroke="#FFE0D3" stroke-width="1.6" opacity=".8" stroke-linecap="round"/><ellipse cx="153" cy="113" rx="49" ry="28" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

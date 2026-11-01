@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 10 - Kitchen implements and toiletries
+  WORD: colander (Noun)
+  CONTEXTUAL_DEFINITION: A large perforated bowl used to drain water from washed or cooked food.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a deep bowl with many large drainage holes and handles, distinct from the fine-mesh sieve.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Kitchen sink counter.
+    - Context_Layer: Countertop and gentle water stream.
+    - Focal_Layer: Handled perforated metal bowl with pasta inside.
+    - Details_Layer: Drain holes and falling water drops.
+    - Lighting_Layer: Cool metal highlights.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="10:colander" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#F4F1E9"/><path d="M0 146 H304 V192 H0Z" fill="#D9C6AB"/><path d="M0 146 H304" stroke="#8A5A35" stroke-width="2"/><ellipse cx="152" cy="169" rx="80" ry="7" fill="#BBAA92"/></g>
+  <g id="layer-context"><path d="M67 96 Q75 82 91 82 H214 Q230 82 238 96 L224 139 Q220 148 209 148 H96 Q84 148 80 139Z" fill="#AEBFC6" stroke="#1E2A3B" stroke-width="2.7"/><path d="M73 99 Q152 112 232 99" fill="none" stroke="#DCE3E4" stroke-width="5"/><path d="M66 100 H49 Q42 100 42 108 Q42 116 54 116 H77 M229 100 H246 Q253 100 253 108 Q253 116 241 116 H226" fill="none" stroke="#647D8B" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M99 94 Q108 87 118 94 L124 102 L132 92 L141 102 L149 91 L158 101 L168 91 L177 101 L186 92 L198 101 L204 96 L210 112 Q152 125 94 112Z" fill="#E8D9B8" stroke="#8A5A35" stroke-width="1.4"/><circle cx="101" cy="122" r="3" fill="#647D8B"/><circle cx="122" cy="130" r="3" fill="#647D8B"/><circle cx="144" cy="123" r="3" fill="#647D8B"/><circle cx="167" cy="131" r="3" fill="#647D8B"/><circle cx="191" cy="123" r="3" fill="#647D8B"/><circle cx="213" cy="130" r="3" fill="#647D8B"/><circle cx="111" cy="139" r="2.5" fill="#647D8B"/><circle cx="181" cy="140" r="2.5" fill="#647D8B"/><path d="M112 148 V158 M152 148 V162 M194 148 V158" stroke="#79C7DF" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M88 94 Q152 104 216 94" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

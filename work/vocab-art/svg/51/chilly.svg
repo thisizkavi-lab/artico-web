@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 51 - Weather and climate
+  WORD: chilly (Adjective)
+  CONTEXTUAL_DEFINITION: Uncomfortably cool weather that makes someone feel slightly cold.
+  PEDAGOGICAL_ART_DIRECTOR: Show a person pulling a jacket close and rubbing their arms in a brisk cool breeze, without frost or deep snow.
+  PEDAGOGICAL_ARCHETYPE: 5 - Sensation and response
+  SYNONYM_GUARD: This is a little colder than comfortable, not freezing or dangerously cold.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Lightly bundled person hugging a thin jacket, scarf moving in a breeze, with a few drifting leaves under a gray-blue sky.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="51:chilly" data-archetype="chilly-weather-sensation">
+ <defs><style>:root{--c-bg-1:#E8F1EA;--c-bg-2:#C7D9CC;--c-surface:#92785B;--c-primary:#4F7F9D;--c-secondary:#527764;--c-accent:#D7834B;--c-highlight:#FFF8E7;--c-ink:#253640}</style>
+  <linearGradient id="ch-sky" x2="0" y2="1"><stop stop-color="#DCE8E9"/><stop offset="1" stop-color="#B3C6CC"/></linearGradient><linearGradient id="ch-coat" x2="1" y2="1"><stop stop-color="#688B9A"/><stop offset="1" stop-color="#3E6477"/></linearGradient><linearGradient id="ch-ground" x2="0" y2="1"><stop stop-color="#C4C49E"/><stop offset="1" stop-color="#9DAB8B"/></linearGradient><filter id="ch-shadow" x="-18%" y="-18%" width="136%" height="145%"><feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#253640" flood-opacity=".22"/></filter></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ch-sky)"/><path d="M0 118Q72 104 151 117T304 112V192H0Z" fill="url(#ch-ground)"/><path d="M0 153H304V192H0Z" fill="#B9AD8D"/></g>
+ <g id="layer-context"><path d="M0 114Q60 102 111 114T220 112T304 105" fill="none" stroke="#EFF5F1" stroke-width="1.4"/><path d="M40 56q18-12 34 0m148-15q17-11 33 0" fill="none" stroke="#F2F6F3" stroke-width="2" stroke-linecap="round"/><path d="M44 99q10-8 19 0m175 11q10-8 19 0" fill="none" stroke="#8A9EA0" stroke-width="2" stroke-linecap="round"/><path d="M20 174H282" fill="none" stroke="#A79577" stroke-width="1.2"/><ellipse cx="151" cy="160" rx="51" ry="5" fill="#50635A" opacity=".14"/></g>
+ <g id="layer-focal" class="vocab-focal" filter="url(#ch-shadow)">
+  <circle cx="151" cy="56" r="17" fill="#D39A72" stroke="#795744" stroke-width="1.4"/><path d="M134 55Q136 35 154 37Q170 39 168 56Q151 47 134 55Z" fill="#574A43"/><path d="M138 73L124 80L118 119L142 138L166 119L161 79L152 73Z" fill="url(#ch-coat)" stroke="#344F5D" stroke-width="1.8"/><path d="M140 74Q151 80 161 74L166 88L152 102L137 89Z" fill="#E5D8C0" stroke="#887A67" stroke-width="1.1"/><path d="M127 82L107 91L101 112L112 117L130 104M158 83L177 93L182 111L172 118L158 105" fill="none" stroke="#D39A72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M111 111Q120 105 128 111L122 119Q116 122 111 116M173 111Q165 105 158 111L163 119Q170 122 174 116" fill="#D39A72" stroke="#795744" stroke-width="1"/><path d="M140 136L134 155M161 136L168 155" fill="none" stroke="#3D5058" stroke-width="5" stroke-linecap="round"/><path d="M128 155h14m21 0h15" fill="none" stroke="#344B54" stroke-width="3" stroke-linecap="round"/>
+  <path d="M124 84Q151 95 163 84" fill="none" stroke="#F0E9D7" stroke-width="2.2"/><path d="M135 60q5 4 10 0m4 1q5 4 9 0" fill="none" stroke="#FFF0DF" stroke-width="1.2"/><path d="M132 103l5 3m28-3-5 3" fill="none" stroke="#C3D9D7" stroke-width="1.2"/>
+  <path d="M91 75q-6-8 0-13m-5 38q-6-8 0-13m125-17q6-8 0-13m12 43q6-8 0-13" fill="none" stroke="#F2F7F4" stroke-width="1.8" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M119 84l-10 24m52-23 13 26m-45-4 7 3m29-3-6 3" fill="none" stroke="#8EA9AE" stroke-width="1.2"/><path d="M40 70l-9-8m181 22 10-9m-193 36 8-4" fill="none" stroke="#D7AA69" stroke-width="2" stroke-linecap="round"/><circle cx="152" cy="55" r="1.3" fill="#FFF8E7"/><path d="M24 23H280" fill="none" stroke="#FFFDF4" stroke-width="1" opacity=".5"/></g>
+ <g id="layer-lighting"><path d="M137 74q13 7 25 0m-37 9 11 5m39-5-9 6" fill="none" stroke="#E1F0EC" stroke-width="1.3" opacity=".75"/><circle cx="145" cy="54" r="1.2" fill="#FFF8E7"/><path d="M112 111l-1 5m62-5 2 5" fill="none" stroke="#EBC78E" stroke-width="1.2"/></g>
+</svg>

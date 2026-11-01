@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: blush (Verb)
+  CONTEXTUAL_DEFINITION: To have the cheeks turn pink from shyness or embarrassment.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive bust
+  SYNONYM_GUARD: Show shy pink cheeks, a turned gaze, and a small self-conscious smile.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Gentle character portrait with shoulders visible.
+    - Context_Layer: Hair and clothing stay muted.
+    - Focal_Layer: Both cheeks become the clear coral focus.
+    - Details_Layer: Eyes look aside and one hand touches the collar.
+    - Lighting_Layer: Soft warm cheek halos frame the color change.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:blush (action)" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="174" rx="91" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M88 176Q91 142 117 133H188Q214 143 217 176Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2.3"/><path d="M108 82Q103 38 135 24Q163 12 190 30Q213 47 202 94L190 128Q177 151 151 150Q124 146 112 121Z" fill="#E2B99B" stroke="#64748B" stroke-width="2.3"/><path d="M106 78Q97 38 132 18Q167 -1 198 28Q218 48 202 81L191 63Q163 72 142 56Q126 70 106 78Z" fill="#6F625B" stroke="#1E2A3B" stroke-width="2.2"/><path d="M143 109Q152 115 163 109" fill="none" stroke="#8E5B4A" stroke-width="1.8"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="122" cy="97" rx="18" ry="12" fill="#F3A69A" opacity=".76"/><ellipse cx="183" cy="97" rx="18" ry="12" fill="#F3A69A" opacity=".76"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M119 85Q130 79 140 85M169 85Q180 79 190 85" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M117 92Q127 86 137 92Q127 98 117 92ZM172 92Q182 86 192 92Q182 98 172 92Z" fill="#FFF9F0" stroke="#64748B" stroke-width="1.2"/><ellipse cx="132" cy="92" rx="2.5" ry="3.2" fill="#1E2A3B"/><ellipse cx="187" cy="92" rx="2.5" ry="3.2" fill="#1E2A3B"/><path d="M205 148Q190 139 183 131L174 138L189 158" fill="#F0C5A7" stroke="#1E2A3B" stroke-width="2.1"/><path d="M118 176L129 153L151 164L172 153L187 176" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="122" cy="95" rx="18" ry="11" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/><ellipse cx="183" cy="95" rx="18" ry="11" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/></g>
+</svg>

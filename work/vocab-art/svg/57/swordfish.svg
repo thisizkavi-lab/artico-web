@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: swordfish (noun)
+  CONTEXTUAL_DEFINITION: A swordfish swimming through open water, identified by its long, flat, sword-like upper jaw.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero fish with a distinctive anatomical feature
+  SYNONYM_GUARD: Make the long straight bill the unmistakable cue; it is an upper jaw, not a separate weapon or a shark snout.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Silver-blue swordfish faces right; streamlined body x=113..232 y=72..125, extremely long flat bill extends to x=278,y=81, tall crescent dorsal fin, narrow tail at left, and pectoral fin.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:swordfish" data-archetype="swordfish-long-flat-bill">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#789BA0;--c-secondary:#3E5A64;--c-accent:#D9A64B;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="swordfish-water" x2="0" y2="1"><stop stop-color="#A5CECE"/><stop offset="1" stop-color="#478698"/></linearGradient>
+  <linearGradient id="swordfish-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#AFC6C2"/><stop offset="1" stop-color="#607F88"/></linearGradient>
+  <filter id="swordfish-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DFECE8"/><path d="M0 24Q75 17 151 26T304 22V192H0Z" fill="url(#swordfish-water)"/><path d="M0 159Q77 151 153 160T304 155V192H0Z" fill="#4E8B99"/></g>
+ <g id="layer-context"><path d="M0 35q39-6 75 0m169-3q30-5 60 0" fill="none" stroke="#D9ECE6" stroke-width="1.4"/><path d="M16 144q16-5 33 0m214-8q15-5 29 0m-161 34q17-5 35 0" fill="none" stroke="#A8D2D1" stroke-width="1.4" stroke-linecap="round"/><circle cx="60" cy="100" r="2" fill="#EAF8F2"/><circle cx="67" cy="91" r="1.2" fill="#EAF8F2"/><ellipse cx="163" cy="139" rx="82" ry="6" fill="#183E49" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#swordfish-shadow)">
+  <path d="M112 94Q96 85 84 75Q86 92 101 101Q92 109 88 122Q105 117 119 106Z" fill="#66858B" stroke="#435E67" stroke-width="1.4"/>
+  <path d="M107 91Q124 75 158 74Q194 72 220 84Q233 90 238 99Q231 111 213 118Q182 128 149 123Q121 119 107 105Z" fill="url(#swordfish-body)" stroke="#425D66" stroke-width="1.5"/>
+  <path d="M225 88L279 77L230 98Z" fill="#889FA0" stroke="#435E67" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M137 77Q145 56 168 46Q179 44 176 58L164 79Z" fill="#5C7984" stroke="#3F5963" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M178 120Q187 130 194 142Q187 146 179 136L169 124Z" fill="#5B7A84" stroke="#3F5963" stroke-width="1"/>
+  <path d="M145 111Q155 115 165 128Q153 129 143 120Z" fill="#6D8B91" stroke="#425D66" stroke-width="1"/>
+  <path d="M218 91Q226 97 228 103Q224 109 216 109" fill="none" stroke="#3E5A64" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="226" cy="91" r="2" fill="#1E2A3B"/>
+  <path d="M231 97q6 3 11 0" fill="none" stroke="#354F59" stroke-width="1" stroke-linecap="round"/>
+  <path d="M109 88q18-12 35-11m25 1q17 1 29 7" fill="none" stroke="#D4E2DC" stroke-width="1.3" opacity=".75" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M247 82l23-5m-19 10 19-5" fill="none" stroke="#E3F1E9" stroke-width="1" opacity=".78" stroke-linecap="round"/><circle cx="197" cy="105" r="1.2" fill="#EDF7F0"/><path d="M32 125q12-4 24 0m198 22q13-4 25 0" fill="none" stroke="#C5E3DF" stroke-width="1.2" stroke-linecap="round"/><path d="M148 88q9 2 16 5" fill="none" stroke="#D6E4DD" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M123 82q13-10 26-7m36 3q11 1 18 6" fill="none" stroke="#F6F9F0" stroke-width="1.5" opacity=".54" stroke-linecap="round"/><ellipse cx="176" cy="94" rx="52" ry="19" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

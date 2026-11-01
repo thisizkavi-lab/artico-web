@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: map / maps
+  CONTEXTUAL_DEFINITION: A folded paper drawing that represents a broad geographic area.
+  PEDAGOGICAL_ART_DIRECTOR: Show a physical folded map with regional landforms, water, and road paths but no singled-out destination or dominant route.
+  PEDAGOGICAL_ARCHETYPE: 2 - Object / tool still life
+  SYNONYM_GUARD: This is a broad paper geographic map, not a street grid, map key, chart, or route plan.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: An unfolded paper map with visible folds fills the card; coast, lake, hills, forest, and quiet road lines depict a region without labels or markers.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:map / maps" data-archetype="object-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="map-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F2E7"/><stop offset="1" stop-color="#DDE7D8"/></linearGradient>
+  <linearGradient id="map-water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7E0E8"/><stop offset="1" stop-color="#9FC5D2"/></linearGradient>
+  <linearGradient id="map-hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9CB98C"/><stop offset="1" stop-color="#6F966F"/></linearGradient>
+  <filter id="map-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E4ECE0"/><path d="M28 37L277 21L288 154L37 173Z" fill="#D1D6CD" opacity=".55"/><path d="M20 27L278 17L286 157L30 175Z" fill="url(#map-paper)" stroke="#64746E" stroke-width="1.7"/><path d="M103 24L108 169M193 21L198 164M25 78L281 67M28 122L284 112" stroke="#BCC4B8" stroke-width="1.4"/><path d="M22 45Q61 63 87 42T151 47T211 38T280 47V22L20 31Z" fill="url(#map-water)"/><path d="M30 122Q62 91 90 109T145 110T198 100T278 115V158L31 172Z" fill="url(#map-water)"/><path d="M110 91L129 57L145 86L164 55L180 92L162 112L142 100L126 117Z" fill="url(#map-hill)" stroke="#6B856D" stroke-width="1.2"/><path d="M122 84L131 70L140 85M152 83L163 65L174 87" fill="none" stroke="#E7EEE2" stroke-width="1.3"/></g>
+ <g id="layer-context"><path d="M36 54Q59 63 73 53M40 139Q67 124 86 139M214 135Q242 119 271 137" fill="none" stroke="#8EB18A" stroke-width="6" opacity=".8"/><circle cx="55" cy="99" r="12" fill="#80A97C" stroke="#486750" stroke-width="1.3"/><circle cx="242" cy="89" r="16" fill="#7FA87A" stroke="#486750" stroke-width="1.3"/><circle cx="254" cy="89" r="8" fill="#9EC18E"/><path d="M54 82Q85 69 105 91T147 125T188 101T236 103" fill="none" stroke="#F6F3EA" stroke-width="6" stroke-linecap="round"/><path d="M54 82Q85 69 105 91T147 125T188 101T236 103" fill="none" stroke="#9F9278" stroke-width="1.5" stroke-dasharray="5 5"/></g>
+ <g id="layer-focal" filter="url(#map-shadow)"><path d="M20 27L103 24L108 169L30 175Z" fill="#FFFFFF" opacity=".12"/><path d="M107 24L193 21L198 164L108 169Z" fill="#FFFFFF" opacity=".12"/><path d="M198 21L278 17L286 157L198 164Z" fill="#FFFFFF" opacity=".1"/><path d="M103 24L108 169M193 21L198 164" stroke="#A6A99C" stroke-width="1.5"/><path d="M30 74L280 64M32 121L283 111" stroke="#A6A99C" stroke-width="1.1"/></g>
+ <g id="layer-details"><circle cx="72" cy="112" r="3" fill="#D6A66F"/><circle cx="218" cy="67" r="3" fill="#D6A66F"/><path d="M41 43L87 42M205 145L264 140" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><path d="M38 158L76 153M213 39L263 34" stroke="#A4B6A0" stroke-width="1.3"/><circle cx="182" cy="137" r="5" fill="#F2C14E" opacity=".8"/><path d="M187 133L200 122" stroke="#F2C14E" stroke-width="1.6"/></g>
+ <g id="layer-lighting"><path d="M22 29L276 20" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><ellipse cx="152" cy="96" rx="138" ry="78" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".36"/></g>
+</svg>

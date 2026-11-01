@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: interests
+  CONTEXTUAL_DEFINITION: Activities or subjects a job candidate enjoys or wants to pursue.
+  PEDAGOGICAL_ART_DIRECTOR: Show a few personal interests as hobby cues in a candidate profile, away from salary or ownership imagery.
+  PEDAGOGICAL_ARCHETYPE: 1 - Personal interests
+  SYNONYM_GUARD: Use enjoyable activities such as reading, photography, or outdoor pursuits; do not show financial shares or professional skills as the main subject.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a candidate profile card at x=77..227, y=44..126, with a small portrait and three distinct hobby icons (open book, camera, leaf/footpath) in evenly spaced circles. The candidate at x=42..83 looks toward the card; keep icons outside work credentials.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:interests" data-archetype="personal-interests">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="interest-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="interest-floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9BB79"/><stop offset="1" stop-color="#C88446"/></linearGradient>
+    <radialGradient id="interest-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="interest-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="107" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="25" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M30 134 H274 V145 H30 Z" fill="url(#interest-floor)" stroke="#1E2A3B" stroke-width="1.6"/><path d="M44 145 V155 M260 145 V155" stroke="#965D28" stroke-width="2.4"/></g>
+  <g id="layer-focal" filter="url(#interest-shadow)"><path d="M41 124 Q43 100 56 94 L57 85 Q53 81 55 73 Q63 64 73 67 Q82 70 79 81 L76 89 Q90 95 92 122 L89 133 H45 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="67" cy="76" rx="8" ry="10" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M59 74 Q61 66 68 66 Q76 67 79 74 Q72 70 65 71 Z" fill="#3D342D"/><rect x="99" y="38" width="128" height="87" rx="4" fill="url(#interest-card)" stroke="#1E2A3B" stroke-width="1.5"/><rect x="108" y="47" width="26" height="25" rx="3" fill="#EEF4FA" stroke="#64748B" stroke-width=".9"/><circle cx="121" cy="55" r="4" fill="#D89A6C"/><path d="M114 68 Q115 60 121 60 Q127 60 128 68 Z" fill="#5479AC"/><path d="M141 50 H216 M141 56 H205" stroke="#94A3B8" stroke-width="1"/><circle cx="123" cy="96" r="14" fill="#DCECFB" stroke="#5479AC" stroke-width="1.1"/><path d="M116 92 Q123 84 130 92 V105 H116 Z" fill="#FFFFFF" stroke="#64748B" stroke-width=".9"/><path d="M119 91 Q123 87 127 91" fill="none" stroke="#5479AC" stroke-width="1.1"/><circle cx="164" cy="96" r="14" fill="#F7E8BF" stroke="#D99A2B" stroke-width="1.1"/><rect x="157" y="90" width="14" height="11" rx="2" fill="#5479AC" stroke="#1E2A3B" stroke-width=".8"/><circle cx="164" cy="95" r="3" fill="#E5F0E1" stroke="#FFFFFF" stroke-width=".8"/><path d="M159 89 L156 85 M169 89 L172 85" stroke="#64748B" stroke-width="1.1"/><circle cx="205" cy="96" r="14" fill="#E5F0E1" stroke="#547A56" stroke-width="1.1"/><path d="M205 105 Q198 99 201 91 Q209 90 211 97 Q210 102 205 105 Z" fill="#7FB07A"/><path d="M205 105 L210 95" stroke="#547A56" stroke-width="1"/><path d="M117 115 H129 M158 115 H170 M199 115 H211" stroke="#CBD5E1" stroke-width="1"/></g>
+  <g id="layer-details"><circle cx="91" cy="66" r="2" fill="#F2C14E"/><path d="M90 81 Q96 77 102 81" fill="none" stroke="#FFFFFF" stroke-width="1.1"/><path d="M108 78 H219" stroke="#EEF4FA" stroke-width="1"/><circle cx="145" cy="88" r="1.7" fill="#F2C14E"/><circle cx="187" cy="88" r="1.7" fill="#8EB0DE"/></g>
+  <g id="layer-lighting"><ellipse cx="160" cy="83" rx="105" ry="65" fill="url(#interest-halo)" opacity=".2"/><path d="M103 42 H223" stroke="#FFFFFF" stroke-width="1.1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

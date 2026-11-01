@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: ball (Noun)
+  CONTEXTUAL_DEFINITION: A round, inflated or solid object used for play.
+  PEDAGOGICAL_ARCHETYPE: 1 — Object snapshot
+  SYNONYM_GUARD: A large paneled rubber play ball rests on the floor with clear round volume and curved seams, distinguishing it from a floating balloon.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Simple playroom floor and wall.
+    - Context_Layer: Low toy shelf in the distance.
+    - Focal_Layer: One round colorful play ball.
+    - Details_Layer: Curved panel seams and soft shadow underneath.
+    - Lighting_Layer: Bright highlight emphasizes spherical volume.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:ball" data-archetype="object-snapshot">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="ball-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EEF4FA"/></linearGradient><radialGradient id="ball-sphere" cx="35%" cy="28%" r="72%"><stop stop-color="#F2C14E"/><stop offset=".68" stop-color="#D9857F"/><stop offset="1" stop-color="#A95059"/></radialGradient><filter id="ball-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#ball-bg)"/><path d="M0 152Q78 145 152 152T304 149V192H0Z" fill="#EADFCC"/><path d="M31 46H273V113H31Z" fill="#E3E8F0"/><path d="M41 57H263V103H41Z" fill="#DCECFB"/><path d="M43 105H260" stroke="#FFFFFF" stroke-width="2.5"/></g>
+  <g id="layer-context"><path d="M35 138H99V147H35Z" fill="#829A83"/><path d="M42 130H92V138H42Z" fill="#5479AC"/><path d="M57 120H77V130H57Z" fill="#D9857F"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#ball-shadow)"><circle cx="151" cy="110" r="55" fill="url(#ball-sphere)" stroke="#1E2A3B" stroke-width="3"/><path d="M104 80Q151 115 199 80M102 136Q151 103 200 136M151 56Q130 82 151 108Q171 132 151 164" fill="none" stroke="#F3ECE1" stroke-width="3.3" stroke-linecap="round"/><path d="M111 80Q151 103 192 80M110 136Q151 115 192 136" fill="none" stroke="#A95059" stroke-width="1.2" opacity=".65"/><ellipse cx="134" cy="81" rx="13" ry="7" fill="#FFFFFF" opacity=".48" transform="rotate(-27 134 81)"/></g>
+  <g id="layer-details"><circle cx="89" cy="54" r="2.3" fill="#D9A441"/><circle cx="212" cy="56" r="2.3" fill="#D9A441"/><path d="M102 39Q151 26 202 39" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+  <g id="layer-lighting"><ellipse cx="151" cy="111" rx="86" ry="75" fill="none" stroke="#D9857F" stroke-width="1.2" stroke-dasharray="4 7" opacity=".23"/><path d="M96 30Q151 17 207 30" fill="none" stroke="#FFFFFF" stroke-width="2.8"/></g>
+</svg>

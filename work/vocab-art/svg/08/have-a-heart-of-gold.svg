@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: have a heart of gold (Phrase)
+  CONTEXTUAL_DEFINITION: To be very kind, generous, and caring.
+  PEDAGOGICAL_ARCHETYPE: 3 (A caring act between people)
+  SYNONYM_GUARD: One friend shelters another from rain and gently wraps a warm scarf around their shoulders, with a golden heart over the helper's chest.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Soft rainy park with a wet path.
+    - Context_Layer: Two friends stand close beneath a shared umbrella.
+    - Focal_Layer: The helper wraps a warm scarf around the shivering friend.
+    - Details_Layer: A bright golden heart glows over the helper's chest.
+    - Lighting_Layer: Warm glow contrasts with cool rain.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:have a heart of gold" data-archetype="caring-act">
+  <defs><linearGradient id="rain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDEAF0"/><stop offset="1" stop-color="#EDF1F2"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rain)"/><path d="M0 149 Q152 138 304 149 L304 192 L0 192Z" fill="#A8BAC4"/><ellipse cx="152" cy="167" rx="108" ry="8" fill="#91A4AE"/><path d="M36 47 L31 60 M68 37 L63 50 M244 40 L239 53 M276 49 L271 62" stroke="#8EB0DE" stroke-width="2.5" stroke-linecap="round"/><path d="M25 76 L20 89 M55 68 L50 81 M224 75 L219 88 M261 70 L256 83" stroke="#8EB0DE" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g id="layer-context"><path d="M60 83 Q111 26 164 83 Q151 70 138 83 Q125 70 112 83 Q99 70 86 83 Q73 70 60 83Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M112 81 L112 142" stroke="#8A5A35" stroke-width="3" stroke-linecap="round"/><path d="M74 151 Q77 128 95 125 Q113 128 116 151Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="95" cy="111" r="15" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M80 110 Q81 93 96 95 Q109 96 110 111 Q102 104 94 105Z" fill="#27364B"/><path d="M180 151 Q183 128 201 125 Q219 128 222 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="201" cy="111" r="15" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.7"/><path d="M186 110 Q187 93 202 95 Q215 96 216 111 Q208 104 200 105Z" fill="#27364B"/><path d="M79 113 Q83 119 89 113 M195 114 Q201 120 207 114" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M90 121 Q97 126 104 121 M194 123 Q201 127 208 123" fill="none" stroke="#A34F47" stroke-width="1.7"/><path d="M111 134 Q129 129 146 122" fill="none" stroke="#D89A6C" stroke-width="6" stroke-linecap="round"/><path d="M184 134 Q169 129 155 121" fill="none" stroke="#F5BFA3" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="layer-focal"><path d="M137 122 Q153 113 168 121 L174 127 L168 134 L138 134Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.6"/><path d="M104 129 C98 122 88 127 93 135 L104 145 L115 135 C120 127 109 122 104 129Z" fill="#F2C14E" stroke="#CE9A2E" stroke-width="1.5"/><path d="M96 113 Q101 119 107 113" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M198 109 Q201 105 204 109 M209 109 Q212 105 215 109" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M197 117 Q205 121 213 117" fill="none" stroke="#A34F47" stroke-width="1.4"/></g>
+  <g id="layer-details"><path d="M142 93 L148 81 L154 93 L166 99 L154 105 L148 117 L142 105 L130 99Z" fill="#F2C14E" opacity="0.9"/><path d="M154 143 Q161 135 168 143 M153 150 Q160 142 167 150" fill="none" stroke="#8EB0DE" stroke-width="2"/><circle cx="46" cy="124" r="2" fill="#F2C14E"/><circle cx="251" cy="112" r="2" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><circle cx="148" cy="100" r="39" fill="#F2C14E" opacity="0.15"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: bookcase (Noun)
+  CONTEXTUAL_DEFINITION: A tall piece of furniture with shelves for storing books.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use several horizontal shelves with upright books, not a closed cabinet.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Interior wall and floor.
+    - Context_Layer: Vertical wooden case.
+    - Focal_Layer: Four open shelves filled with books.
+    - Details_Layer: Differently sized book spines without lettering.
+    - Lighting_Layer: Soft edge highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:bookcase" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 159 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 159 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="169" rx="61" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><rect x="91" y="28" width="122" height="132" rx="3" fill="#8A5A35" stroke="#1E2A3B" stroke-width="2.6"/><rect x="100" y="37" width="104" height="114" fill="#D6A071" stroke="#6B472F" stroke-width="1.6"/><path d="M100 65 H204 M100 94 H204 M100 123 H204" stroke="#6B472F" stroke-width="4"/></g>
+  <g id="layer-focal"><path d="M106 62 V43 H118 V62Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M119 62 V39 H133 V62Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="1.2"/><path d="M134 62 V47 H149 V62Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="1.2"/><path d="M153 62 V42 H166 V62Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="1.2"/><path d="M171 62 V45 H184 V62Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.2"/><path d="M106 91 V70 H122 V91Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="1.2"/><path d="M124 91 V74 H138 V91Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="1.2"/><path d="M141 91 V69 H156 V91Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="1.2"/><path d="M159 91 V76 H174 V91Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M178 91 V72 H197 V91Z" fill="#D69A62" stroke="#1E2A3B" stroke-width="1.2"/><path d="M107 120 V100 H123 V120Z" fill="#CE7B55" stroke="#1E2A3B" stroke-width="1.2"/><path d="M126 120 V103 H141 V120Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/><path d="M144 120 V99 H161 V120Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.2"/><path d="M164 120 V105 H180 V120Z" fill="#8FB987" stroke="#1E2A3B" stroke-width="1.2"/><path d="M183 120 V101 H197 V120Z" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="1.2"/><path d="M106 149 V130 H119 V149Z M122 149 V127 H138 V149Z M141 149 V132 H155 V149Z M159 149 V128 H174 V149Z M177 149 V131 H196 V149Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.2"/></g>
+  <g id="layer-details"><path d="M94 31 V154" stroke="#D69A62" stroke-width="2"/><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

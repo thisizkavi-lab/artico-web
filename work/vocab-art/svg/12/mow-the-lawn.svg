@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: mow the lawn (Verb phrase)
+  CONTEXTUAL_DEFINITION: Push a lawn mower across grass, cutting it shorter.
+  PEDAGOGICAL_ARCHETYPE: 4 — Person, tool, and target reaction
+  SYNONYM_GUARD: The mower is being pushed across a lawn with a clear tall-to-short grass boundary; the lawn-mower card shows only the machine.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Garden lawn split into taller grass at left and a short cut strip at right.
+    - Context_Layer: Low shrub and boundary fence frame the lawn.
+    - Focal_Layer: Gardener leans forward behind a compact mower at x=158,y=121, moving left across the grass.
+    - Details_Layer: Handle, wheels, cut-grass clippings, blade deck, footprints, and directional movement arcs.
+    - Lighting_Layer: Top-left glints on the mower and fresh green cut strip.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:mow the lawn" data-archetype="action-scene">
+  <defs>
+    <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#7FB07A;--c-primary:#CE3D4E;--c-secondary:#9E2636;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEF4FA"/><stop offset="1" stop-color="#DAE6F2"/></linearGradient>
+    <linearGradient id="cut-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8D4A2"/><stop offset="1" stop-color="#7FB07A"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky-grad)"/><path d="M0 102H304V125H0Z" fill="#DCEAD6"/><path d="M0 125H304V192H0Z" fill="#7FB07A"/><path d="M170 125H304V192H170Z" fill="url(#cut-grad)"/><path d="M16 87H288" stroke="#C88446" stroke-width="7"/><path d="M25 88V106M54 88V106M83 88V106M112 88V106M141 88V106M170 88V106M199 88V106M228 88V106M257 88V106M286 88V106" stroke="#965D28" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M42 125V104M49 125V99M57 125V105M67 125V97M75 125V103M87 125V100M96 125V105M110 125V98M122 125V103M136 125V100" stroke="#568552" stroke-width="2.4" stroke-linecap="round"/><path d="M194 187L199 179M220 186L225 178M248 187L252 180M276 186L280 179" stroke="#568552" stroke-width="1.6"/><path d="M177 128V162" stroke="#1E2A3B" stroke-width="2" stroke-dasharray="4 4"/><path d="M171 134L177 127L183 134" fill="none" stroke="#5479AC" stroke-width="2"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><circle cx="118" cy="53" r="14" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="2"/><path d="M105 52Q105 37 119 38Q134 39 132 54L124 48L114 48Z" fill="#6E473B" stroke="#1E2A3B" stroke-width="1.8"/><path d="M105 70Q118 64 131 72L142 97L124 106L99 93Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3"/><path d="M107 78L91 94L112 112" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M107 78L91 94L112 112" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M128 79L149 101" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M128 79L149 101" fill="none" stroke="#F5BFA3" stroke-width="5.5" stroke-linecap="round"/><path d="M105 99L95 118L107 124L124 105" fill="#3D5F91" stroke="#1E2A3B" stroke-width="2"/><path d="M125 101L146 119L161 123L163 117L143 101" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><path d="M149 102L185 79L190 85L159 112" fill="none" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M149 102L185 79L190 85L159 112" fill="none" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round"/><path d="M145 111Q150 103 160 104L181 106L193 115L190 129H137Z" fill="#CE3D4E" stroke="#1E2A3B" stroke-width="2.3"/><path d="M138 126H193L188 136H134Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="144" cy="138" r="6.5" fill="#3D4658" stroke="#1E2A3B" stroke-width="1.5"/><circle cx="183" cy="138" r="6.5" fill="#3D4658" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M167 113Q151 108 137 111M166 120Q151 115 139 118" fill="none" stroke="#5479AC" stroke-width="2" stroke-linecap="round"/><path d="M132 132L126 127M125 137L118 132M119 143L112 138" stroke="#A8D4A2" stroke-width="2" stroke-linecap="round"/><path d="M91 54Q97 46 103 44" fill="none" stroke="#D8E5F0" stroke-width="1.4"/><path d="M94 147L101 151M126 151L133 155" stroke="#A27652" stroke-width="1.5"/><circle cx="115" cy="60" r="1.4" fill="#1E2A3B"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M108 47Q114 41 122 42" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity=".65"/><path d="M145 113L179 90" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/><path d="M191 146H268" stroke="#D9F0D3" stroke-width="1.5" opacity=".65"/></g>
+</svg>

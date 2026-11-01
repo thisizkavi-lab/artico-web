@@ -1,0 +1,37 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: anemone (noun)
+  CONTEXTUAL_DEFINITION: A sea anemone attached to a submerged rock, with a central mouth ringed by soft tentacles.
+  PEDAGOGICAL_ARCHETYPE: 1 - Marine animal with a radial structure and habitat anchor
+  SYNONYM_GUARD: Put it underwater and attach it to rock; it is a sea animal, not a terrestrial flower.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Coral-pink and cream sea anemone grows from a dark rock on the seabed; central disk around x=151,y=108, numerous gently curling tentacles radiate upward and outward, water and bubbles surround it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:anemone" data-archetype="sea-anemone-tentacles-on-rock">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#D5877F;--c-secondary:#76546A;--c-accent:#D7A14C;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="anemone-water" x2="0" y2="1"><stop stop-color="#A9D0CD"/><stop offset="1" stop-color="#4A8290"/></linearGradient>
+  <linearGradient id="anemone-rock" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#727A70"/><stop offset="1" stop-color="#424E4E"/></linearGradient>
+  <linearGradient id="anemone-tentacle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3B5A4"/><stop offset="1" stop-color="#BE7082"/></linearGradient>
+  <filter id="anemone-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#anemone-water)"/><path d="M0 156Q76 148 151 156T304 151V192H0Z" fill="#4C7881"/><path d="M0 29q43-7 82 0m146-3q39-7 76 0" fill="none" stroke="#D9ECE6" stroke-width="1.4"/></g>
+ <g id="layer-context"><path d="M28 190l8-35m-8 19-12-13m12 5 12-20m216 44 7-31m-7 15-11-15m12 6 10-19" fill="none" stroke="#588675" stroke-width="2" stroke-linecap="round"/><path d="M21 166L46 146L82 149L111 137L148 146L177 139L212 149L245 138L280 159L275 175L34 178Z" fill="url(#anemone-rock)" stroke="#455453" stroke-width="1.4"/><path d="M42 163q16-5 29 0m143 1q15-5 28 0" fill="none" stroke="#939184" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="154" cy="162" rx="80" ry="6" fill="#193B42" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#anemone-shadow)">
+  <path d="M149 117Q137 99 124 84Q116 74 118 67Q129 69 135 81L151 102Z" fill="none" stroke="#9F647A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M149 117Q138 96 128 79Q123 70 126 65" fill="none" stroke="url(#anemone-tentacle)" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M151 113Q150 89 145 69Q143 59 148 55Q158 62 158 72L159 104Z" fill="none" stroke="#9F647A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M153 111Q154 86 153 67Q153 57 159 55Q166 63 164 74L160 105Z" fill="none" stroke="url(#anemone-tentacle)" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M157 114Q164 90 173 75Q178 66 185 68Q187 77 180 86L164 117Z" fill="none" stroke="#9F647A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 115Q170 91 181 76Q186 69 191 72Q190 81 183 89L166 120Z" fill="none" stroke="url(#anemone-tentacle)" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M151 119Q133 108 118 99Q109 94 103 98Q104 106 116 112L147 128Z" fill="none" stroke="#9F647A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M151 121Q132 113 115 103Q108 99 103 102Q109 111 121 116L147 132Z" fill="none" stroke="url(#anemone-tentacle)" stroke-width="5.4" stroke-linecap="round"/>
+  <path d="M160 120Q178 106 194 99Q204 95 209 100Q206 109 194 115L165 132Z" fill="none" stroke="#9F647A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M161 122Q181 109 198 102Q205 99 209 103Q203 112 190 118L164 136Z" fill="none" stroke="url(#anemone-tentacle)" stroke-width="5.4" stroke-linecap="round"/>
+  <path d="M137 122Q145 109 157 108Q170 110 176 124L169 142Q157 149 143 140Z" fill="#D28386" stroke="#8E5C6B" stroke-width="1.4"/>
+  <ellipse cx="157" cy="118" rx="9" ry="5" fill="#5D4455"/>
+  <path d="M143 132q13 7 27-1" fill="none" stroke="#F0B0A0" stroke-width="1.5" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><circle cx="80" cy="90" r="2" fill="#EAF8F2"/><circle cx="87" cy="81" r="1.2" fill="#EAF8F2"/><circle cx="219" cy="86" r="2.1" fill="#E7F6F0"/><path d="M128 86q5 3 10 4m35 7 7-4m-51 28 7 2m49 2 8-3" fill="none" stroke="#FFE0CE" stroke-width="1.1" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M137 71q5-8 9-8m13 2q4 4 3 9m20 1q-2 6-7 10" fill="none" stroke="#FFF0DA" stroke-width="1.4" opacity=".63" stroke-linecap="round"/><ellipse cx="156" cy="105" rx="40" ry="37" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

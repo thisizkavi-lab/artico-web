@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 08 - Common English idioms
+  WORD: keep an eye on (Phrase)
+  CONTEXTUAL_DEFINITION: To watch or look after someone or something carefully.
+  PEDAGOGICAL_ARCHETYPE: 3 (Careful attention to a person or object)
+  SYNONYM_GUARD: A seated caregiver keeps watching a small child play with a ball in the nearby park.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open park with rounded trees and a bench.
+    - Context_Layer: Caregiver sits on the bench; child plays nearby.
+    - Focal_Layer: The caregiver looks attentively toward the child and shades their eyes.
+    - Details_Layer: A bright ball and short gaze line link them.
+    - Lighting_Layer: Gentle afternoon sun.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="8:keep an eye on" data-archetype="careful-attention">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6F1F5"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#sky)"/><path d="M0 146 Q152 135 304 146 L304 192 L0 192Z" fill="#D3E0CE"/><path d="M37 128 L37 77 M55 128 L55 84" stroke="#8A5A35" stroke-width="5"/><circle cx="46" cy="70" r="26" fill="#7FB07A"/><path d="M256 128 L256 83 M274 128 L274 88" stroke="#8A5A35" stroke-width="5"/><circle cx="265" cy="77" r="24" fill="#8FB987"/><ellipse cx="151" cy="166" rx="108" ry="8" fill="#B9C7B2"/><rect x="44" y="137" width="81" height="9" rx="4" fill="#B97840"/><path d="M51 145 L48 163 M117 145 L120 163" stroke="#8A5A35" stroke-width="4"/></g>
+  <g id="layer-context"><path d="M57 137 Q60 116 77 113 Q94 116 97 137Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2"/><circle cx="77" cy="101" r="14" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.7"/><path d="M63 100 Q64 84 78 86 Q90 87 91 101 Q83 94 76 95Z" fill="#27364B"/><path d="M57 98 Q67 91 80 96" fill="none" stroke="#D89A6C" stroke-width="5" stroke-linecap="round"/><path d="M202 151 Q205 131 220 128 Q235 131 238 151Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="2"/><circle cx="220" cy="115" r="13" fill="#F5BFA3" stroke="#1E2A3B" stroke-width="1.6"/><path d="M207 114 Q208 99 221 101 Q232 102 233 115 Q226 109 219 110Z" fill="#27364B"/><path d="M207 135 Q196 127 189 120 M232 135 Q242 126 248 119" fill="none" stroke="#F5BFA3" stroke-width="5" stroke-linecap="round"/><path d="M211 151 L209 164 M229 151 L231 164" stroke="#27364B" stroke-width="4"/><path d="M73 101 Q76 107 82 101" fill="none" stroke="#1E2A3B" stroke-width="1.7"/><path d="M216 118 Q220 123 225 118" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M214 125 Q220 130 226 125" fill="none" stroke="#A34F47" stroke-width="1.7"/></g>
+  <g id="layer-focal"><circle cx="161" cy="153" r="10" fill="#CE3D4E" stroke="#A92D3C" stroke-width="1.5"/><path d="M151 151 Q161 145 170 152" fill="none" stroke="#FAF8F3" stroke-width="2"/><path d="M89 98 Q127 79 180 102" fill="none" stroke="#8B5CA8" stroke-width="1.8" stroke-dasharray="3 4" opacity="0.72"/><path d="M68 95 Q77 89 86 95" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M173 136 Q180 129 187 136 M177 128 Q184 121 191 128" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M152 127 L156 119 L160 127 L168 131 L160 135 L156 143 L152 135 L144 131Z" fill="#F2C14E" opacity="0.9"/><circle cx="244" cy="39" r="16" fill="#F2C14E" opacity="0.48"/><path d="M24 113 Q30 106 36 113 M271 112 Q277 105 283 112" fill="none" stroke="#7FB07A" stroke-width="2"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

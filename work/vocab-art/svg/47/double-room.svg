@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: double room
+  CONTEXTUAL_DEFINITION: A hotel room arranged with one double bed for two guests.
+  PEDAGOGICAL_ART_DIRECTOR: Show one broad shared double bed with two pillows and matching bedside tables in a hotel room.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / travel diagram
+  SYNONYM_GUARD: Use one wide bed and two pillows; do not show two separate twin beds.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A single wide bed dominates a hotel bedroom; two distinct pillows sit side by side on the same mattress, with matching nightstands at both sides.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:double room" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="double-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9E6DD"/><stop offset="1" stop-color="#D4D0C5"/></linearGradient>
+  <linearGradient id="double-bed" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FDFCF5"/><stop offset="1" stop-color="#C9D8DD"/></linearGradient>
+  <linearGradient id="double-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7794B1"/><stop offset="1" stop-color="#4A6684"/></linearGradient>
+  <filter id="double-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.7" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE5E4"/><path d="M17 18H287V151H17Z" fill="url(#double-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M17 151H287V184H17Z" fill="#B9B8AD"/><path d="M26 168H276" stroke="#EBE6DA" stroke-width="1.2"/><rect x="103" y="29" width="98" height="45" fill="#9EC2CA" stroke="#455D69" stroke-width="1.5"/><path d="M152 29V74M103 52H201" stroke="#566E77" stroke-width="1.4"/><path d="M107 36L119 27M185 74L199 64" stroke="#F5E6C7" stroke-width="2"/></g>
+ <g id="layer-context"><rect x="31" y="110" width="45" height="39" rx="3" fill="#927452" stroke="#1E2A3B" stroke-width="1.4"/><rect x="228" y="110" width="45" height="39" rx="3" fill="#927452" stroke="#1E2A3B" stroke-width="1.4"/><path d="M26 110H80M223 110H278" stroke="#D2B68C" stroke-width="4"/><path d="M42 101V110M64 101V110M239 101V110M261 101V110" stroke="#526274" stroke-width="1.8"/><path d="M44 143V151M63 143V151M241 143V151M260 143V151" stroke="#644F3A" stroke-width="2.5"/></g>
+ <g id="layer-focal" filter="url(#double-shadow)"><path d="M64 74H241V154H64Z" fill="#536C82" stroke="#1E2A3B" stroke-width="2"/><path d="M72 78H233V118H72Z" fill="url(#double-bed)" stroke="#526274" stroke-width="1.5"/><path d="M76 84Q91 74 116 83V105H76Z" fill="#FFFDF5" stroke="#A1B0B2" stroke-width="1.2"/><path d="M188 83Q211 75 229 85V105H188Z" fill="#FFFDF5" stroke="#A1B0B2" stroke-width="1.2"/><path d="M74 105H231V148H74Z" fill="url(#double-cover)" stroke="#314E68" stroke-width="1.5"/><path d="M82 114H222M82 140H222" stroke="#9EB7C9" stroke-width="1.2"/><path d="M72 149H233" stroke="#263D4F" stroke-width="2.4"/><path d="M80 154V166M225 154V166" stroke="#624C39" stroke-width="3.5"/></g>
+ <g id="layer-details"><path d="M90 91H110M201 91H221" stroke="#F7F6EF" stroke-width="1.1"/><circle cx="59" cy="100" r="6" fill="#F2C14E" opacity=".7"/><circle cx="250" cy="100" r="6" fill="#F2C14E" opacity=".7"/><ellipse cx="151" cy="168" rx="99" ry="6" fill="#526274" opacity=".18"/><path d="M108 76H199" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"/></g>
+ <g id="layer-lighting"><ellipse cx="151" cy="117" rx="101" ry="55" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".34"/><path d="M103 31H200" stroke="#FFFFFF" stroke-width="1.3" opacity=".65"/></g>
+</svg>

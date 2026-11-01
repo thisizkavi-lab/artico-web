@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: meter / metre
+  CONTEXTUAL_DEFINITION: A metric unit used to measure a short length or route segment.
+  PEDAGOGICAL_ART_DIRECTOR: Show a very short pedestrian route between two nearby points with a compact finely divided measure bar.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: This is a unit of length for a short local distance, not a parking meter or electrical meter; use a much smaller span than kilometer.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact neighborhood-map fragment shows two nearby pins connected by a short blue segment; beneath it, a small subdivided measuring bar spans the same gap.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:meter / metre" data-archetype="spatial-direction">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="meter-map" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EDF2E7"/><stop offset="1" stop-color="#D4E1D1"/></linearGradient>
+  <linearGradient id="meter-route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7DA2D9"/><stop offset="1" stop-color="#4269A5"/></linearGradient>
+  <linearGradient id="meter-bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4A72B2"/><stop offset="1" stop-color="#AEC5E2"/></linearGradient>
+  <filter id="meter-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.4" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#E4ECE0"/><path d="M24 20H280V169H24Z" fill="url(#meter-map)" stroke="#718177" stroke-width="1.5"/><path d="M28 58H111V82H28ZM191 41H275V65H191ZM40 131H118V155H40Z" fill="#EEECE4" stroke="#9DA99E" stroke-width="1.2"/><path d="M26 100H278M72 24V168M222 24V167" stroke="#B7C5BA" stroke-width="1.5"/><path d="M121 72C140 60 155 72 164 90S181 118 197 101" fill="none" stroke="#EEECE4" stroke-width="13" stroke-linecap="round"/><path d="M121 72C140 60 155 72 164 90S181 118 197 101" fill="none" stroke="#8595A1" stroke-width="7" stroke-linecap="round"/></g>
+ <g id="layer-context"><circle cx="85" cy="114" r="8" fill="#81A97B" stroke="#486750" stroke-width="1.3"/><circle cx="230" cy="91" r="8" fill="#81A97B" stroke="#486750" stroke-width="1.3"/><rect x="37" y="34" width="24" height="19" rx="3" fill="#D8C3A5" stroke="#766857" stroke-width="1.2"/><path d="M33 37L49 25L66 37Z" fill="#92745B" stroke="#1E2A3B" stroke-width="1"/><rect x="238" y="120" width="26" height="18" rx="3" fill="#B8CDD0" stroke="#60747D" stroke-width="1.2"/><path d="M235 124L251 113L267 124Z" fill="#687C86" stroke="#1E2A3B" stroke-width="1"/></g>
+ <g id="layer-focal" filter="url(#meter-shadow)"><path d="M119 71L130 102L119 97L108 102Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="119" cy="73" r="6" fill="#F2C14E" stroke="#8A663A" stroke-width="1.2"/><path d="M198 100L209 131L198 126L187 131Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.3"/><circle cx="198" cy="102" r="6" fill="#78A0D8" stroke="#314E78" stroke-width="1.2"/><path d="M121 116V132H198V116" fill="none" stroke="#1E2A3B" stroke-width="1.8"/><path d="M121 124H198" stroke="url(#meter-bar)" stroke-width="7" stroke-linecap="round"/><path d="M121 117V132M140 120V129M159 120V129M179 120V129M198 117V132" stroke="#1E2A3B" stroke-width="1.6"/><path d="M141 61L153 54M170 110L181 116" stroke="#4A72B2" stroke-width="2.2" stroke-linecap="round"/></g>
+ <g id="layer-details"><circle cx="145" cy="88" r="2.3" fill="#F2C14E"/><circle cx="176" cy="107" r="2.3" fill="#F2C14E"/><path d="M88 47H103M204 30H257M47 159H99" stroke="#FFFFFF" stroke-width="1.1"/><path d="M100 88L112 81M207 72L219 66" stroke="#A0B39D" stroke-width="1.2"/><circle cx="159" cy="124" r="2.3" fill="#F2C14E"/></g>
+ <g id="layer-lighting"><ellipse cx="159" cy="93" rx="69" ry="44" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".43"/><path d="M26 22H277" stroke="#FFFFFF" stroke-width="1.2" opacity=".68"/></g>
+</svg>

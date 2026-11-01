@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 22 — Baby equipment and toys
+  WORD: rattle (Noun)
+  CONTEXTUAL_DEFINITION: A small baby toy that makes a soft sound when shaken.
+  PEDAGOGICAL_ARCHETYPE: 2 — Object in use
+  SYNONYM_GUARD: The graspable handle, enclosed beads, and infant's hand identify a baby's shaker toy; the Japanese gloss is the verb sense, while this chapter is about toys.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Nursery floor and softly colored wall.
+    - Context_Layer: Baby hand curls around a toy handle.
+    - Focal_Layer: Round translucent rattle head containing beads.
+    - Details_Layer: Handle grip, sound-wave marks, and tiny beads.
+    - Lighting_Layer: Gentle glints suggest a clear plastic shell.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="22:rattle" data-archetype="object-in-use">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="rattle-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><radialGradient id="rattle-head" cx="32%" cy="24%" r="78%"><stop stop-color="#FFFEFA"/><stop offset=".55" stop-color="#EBC3C3"/><stop offset="1" stop-color="#D9857F"/></radialGradient><filter id="rattle-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rattle-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M22 31H104V88H22Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M63 32V87M23 59H103" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 152H304" stroke="#C4B79F" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M47 172Q48 153 61 145Q74 141 85 149L91 174Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="1.7"/><path d="M64 155Q77 146 94 147L119 159L111 170L90 161L77 170Z" fill="#C98961" stroke="#1E2A3B" stroke-width="1.7"/><path d="M82 157L105 165" stroke="#E3AE87" stroke-width="3" stroke-linecap="round"/><path d="M69 146Q70 137 76 138M81 148Q85 140 90 143" fill="none" stroke="#C98961" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#rattle-shadow)"><path d="M155 93Q157 110 164 120L189 149Q195 157 188 164Q181 171 174 163L145 130Q136 120 133 107" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.3" stroke-linejoin="round"/><path d="M158 108L168 119L177 128" fill="none" stroke="#DCECFB" stroke-width="3" stroke-linecap="round"/><circle cx="142" cy="66" r="43" fill="url(#rattle-head)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M129 95L136 108L148 102L154 112L163 102" fill="#D9857F" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><circle cx="127" cy="66" r="5" fill="#D9A441" stroke="#A96B46" stroke-width="1.2"/><circle cx="145" cy="55" r="5.5" fill="#5479AC" stroke="#315782" stroke-width="1.2"/><circle cx="159" cy="73" r="4.5" fill="#91A77C" stroke="#55704D" stroke-width="1.2"/><circle cx="137" cy="79" r="4" fill="#D9A441" stroke="#A96B46" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M103 48Q93 63 103 79M95 43Q82 63 95 84M183 49Q193 63 183 78M191 43Q204 63 191 84" fill="none" stroke="#D9A441" stroke-width="2" stroke-linecap="round" opacity=".75"/><ellipse cx="128" cy="48" rx="8" ry="4" fill="#FFFFFF" opacity=".8" transform="rotate(-28 128 48)"/><path d="M179 151L189 146M180 159L191 155" stroke="#88A9D0" stroke-width="1.5"/></g>
+  <g id="layer-lighting"><ellipse cx="143" cy="76" rx="61" ry="62" fill="#FEF9C3" opacity=".12"/><path d="M112 36Q139 15 167 31" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".88"/></g>
+</svg>

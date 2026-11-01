@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 47 - Travel and accommodation
+  WORD: room service
+  CONTEXTUAL_DEFINITION: Hotel staff bring food or drink directly to a guest in their room.
+  PEDAGOGICAL_ART_DIRECTOR: Show a hotel attendant delivering a covered meal trolley beside a guest's bed.
+  PEDAGOGICAL_ARCHETYPE: 4 - Peak-Moment Action + Tool
+  SYNONYM_GUARD: The meal arrives inside a hotel bedroom; do not show a restaurant table or laundry cart.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: An attendant pushes a silver service trolley with a domed meal tray from the open door toward a seated hotel guest on the bed.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="47:room service" data-archetype="action-tool">
+ <defs>
+  <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#DCEBF0;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="rs-wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEE8DC"/><stop offset="1" stop-color="#D6D2C8"/></linearGradient>
+  <linearGradient id="rs-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3F5F0"/><stop offset="1" stop-color="#81949A"/></linearGradient>
+  <linearGradient id="rs-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EA6B6"/><stop offset="1" stop-color="#4A6680"/></linearGradient>
+  <filter id="rs-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="#DEE6E4"/><path d="M18 17H286V149H18Z" fill="url(#rs-wall)" stroke="#63757A" stroke-width="1.5"/><path d="M18 149H286V184H18Z" fill="#B9B7AC"/><rect x="202" y="29" width="62" height="45" fill="#A8C8CF" stroke="#4F6871" stroke-width="1.4"/><path d="M233 29V74M202 52H264" stroke="#526D77" stroke-width="1.1"/><path d="M25 168H278" stroke="#EAE5DA" stroke-width="1.2"/><path d="M29 36H60V147H29Z" fill="#89694D" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="52" cy="96" r="2" fill="#F2C14E"/></g>
+ <g id="layer-context"><path d="M177 83H278V155H177Z" fill="#526B80" stroke="#1E2A3B" stroke-width="1.7"/><path d="M183 88H273V118H183Z" fill="#FCFBF4" stroke="#87979A" stroke-width="1.1"/><path d="M184 119H271V148H184Z" fill="url(#rs-cover)" stroke="#314D65" stroke-width="1.1"/><path d="M190 94Q203 87 219 94V113H190Z" fill="#FFFDF7" stroke="#A3B2B3" stroke-width="1"/><path d="M184 154V165M269 154V165" stroke="#604A39" stroke-width="3"/><rect x="186" y="65" width="43" height="18" fill="#907452" stroke="#1E2A3B" stroke-width="1.2"/><path d="M183 63H232" stroke="#D3B68B" stroke-width="2.5"/></g>
+ <g id="layer-focal" filter="url(#rs-shadow)"><path d="M97 102H159V148H97Z" fill="url(#rs-metal)" stroke="#435B65" stroke-width="1.5"/><path d="M91 99H165V106H91Z" fill="#E8EEEA" stroke="#435B65" stroke-width="1.3"/><path d="M102 106V141M154 106V141" stroke="#667B80" stroke-width="1.8"/><circle cx="105" cy="151" r="4" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><circle cx="151" cy="151" r="4" fill="#526274" stroke="#1E2A3B" stroke-width="1"/><path d="M105 92H151V99H105Z" fill="#D9DFDB" stroke="#435B65" stroke-width="1.2"/><ellipse cx="127" cy="91" rx="17" ry="3" fill="#F8F7F1" stroke="#718489" stroke-width="1.1"/><path d="M116 90Q118 78 127 78Q136 78 138 90Z" fill="#E9E6DC" stroke="#677A7F" stroke-width="1.2"/><ellipse cx="151" cy="92" rx="9" ry="2.3" fill="#F8F7F1" stroke="#718489" stroke-width="1"/><path d="M147 83H154L153 91H148Z" fill="#FFFDF7" stroke="#718489" stroke-width="1"/><path d="M154 85Q160 84 158 89H154" fill="none" stroke="#718489" stroke-width="1.2"/><path d="M170 115H186" stroke="#526274" stroke-width="3" stroke-linecap="round"/><circle cx="173" cy="151" r="3.2" fill="#526274"/></g>
+ <g id="layer-details"><path d="M110 116H146" stroke="#FFFFFF" stroke-width="1.1" opacity=".75"/><path d="M121 76Q128 70 135 76" fill="none" stroke="#F2C14E" stroke-width="1.5"/><ellipse cx="152" cy="168" rx="105" ry="5" fill="#526274" opacity=".17"/><path d="M203 32H263" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><path d="M119 151H138" stroke="#829296" stroke-width="1"/></g>
+ <g id="layer-lighting"><ellipse cx="150" cy="111" rx="119" ry="70" fill="none" stroke="#F2C14E" stroke-width="1" opacity=".32"/><path d="M17 18H286" stroke="#FFFFFF" stroke-width="1.1" opacity=".65"/></g>
+</svg>

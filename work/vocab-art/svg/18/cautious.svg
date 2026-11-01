@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: cautious (Adjective)
+  CONTEXTUAL_DEFINITION: Taking care to avoid danger or mistakes by checking first.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: The focal person tests a step and checks the path before crossing, distinguishing careful foresight from nervous fear.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Garden path with a small wet patch.
+    - Context_Layer: Another person crosses confidently in the distance.
+    - Focal_Layer: Cautious person tests the ground with one foot and steadies on a rail.
+    - Details_Layer: Looking down, careful toe, rail, puddle edge and footprints.
+    - Lighting_Layer: Clear highlight on the inspected safe step.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:cautious" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="coat" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#315782"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 141Q73 131 152 143T304 139V192H0Z" fill="#D9E2DC"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#E6DED1"/><ellipse cx="153" cy="168" rx="130" ry="8" fill="#EAE3D5"/><path d="M21 125Q45 110 70 125L82 148H14ZM226 116Q250 102 279 117L291 145H216Z" fill="#829A83" opacity=".6"/><path d="M27 99V67M18 78H37M271 96V63M262 75H281" stroke="#56725E" stroke-width="3" stroke-linecap="round"/></g>
+  <g id="layer-context"><circle cx="244" cy="61" r="14" fill="#C98961" stroke="#1E2A3B" stroke-width="1.8"/><path d="M230 61Q231 45 244 46Q258 47 258 62L253 66H232Z" fill="#35404B"/><path d="M227 82Q244 76 260 82L265 112H222Z" fill="#829A83" stroke="#1E2A3B" stroke-width="1.8"/><path d="M233 61H238M248 61H253M236 70Q244 74 251 70" fill="none" stroke="#1E2A3B" stroke-width="1.3"/><path d="M234 85L227 98M254 85L263 96" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M234 114Q243 109 253 114" fill="none" stroke="#7B8A9E" stroke-width="2" stroke-dasharray="3 4"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="107" cy="98" rx="76" ry="71" fill="#FEF3C7" opacity=".54"/><circle cx="106" cy="55" r="20" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.5"/><path d="M86 55Q87 33 106 34Q127 35 126 57L119 62Q115 46 104 46Q94 47 88 63Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2"/><path d="M82 81Q106 74 130 81L138 121H75Z" fill="url(#coat)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M88 89L75 101L64 96M126 89L143 101L157 99" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M88 89L75 101L65 96M126 89L143 101L156 99" fill="none" stroke="#E7B99B" stroke-width="5" stroke-linecap="round"/><path d="M80 121L80 157H97L104 123M110 123L121 157H138L134 121" fill="#315782" stroke="#1E2A3B" stroke-width="2"/><path d="M137 100L145 99L148 103" fill="none" stroke="#D9A17D" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M100 54L105 56M113 56L118 54M98 68Q106 66 114 68" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M156 99L174 99" stroke="#D9A441" stroke-width="2" stroke-dasharray="3 4"/><path d="M164 93L174 99L164 105" fill="none" stroke="#D9A441" stroke-width="2"/><path d="M42 151Q53 146 63 151M73 157Q82 153 92 157" fill="none" stroke="#7B8A9E" stroke-width="2"/><ellipse cx="182" cy="142" rx="19" ry="5" fill="#B9C9D3"/><path d="M171 141Q182 136 193 141" fill="none" stroke="#7B8A9E" stroke-width="1.3"/></g>
+  <g id="layer-lighting"><path d="M96 38Q106 34 116 38" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="107" cy="98" rx="76" ry="71" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".37"/></g>
+</svg>

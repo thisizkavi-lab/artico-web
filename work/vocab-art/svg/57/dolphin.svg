@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 57 - Fish, whales, and sea creatures
+  WORD: dolphin (noun)
+  CONTEXTUAL_DEFINITION: A sleek dolphin leaping above the sea, with its long beak and curved dorsal fin visible.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in a defining action
+  SYNONYM_GUARD: Give the dolphin a narrow beak and smooth streamlined body; avoid the porpoise's blunt snout or a fish tail that stands upright.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a silver-blue dolphin arcing toward the right over a low waterline; head near x=204,y=67, body curves down-left toward x=100,y=116, dorsal fin on the upper back, and tail flukes at x=88,y=123.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="57:dolphin" data-archetype="leaping-bottlenose-dolphin">
+ <defs>
+  <style>:root{--c-bg-1:#E8F2F2;--c-bg-2:#D0E5E6;--c-surface:#42899A;--c-primary:#5B8993;--c-secondary:#375361;--c-accent:#D88A62;--c-highlight:#F7F4E9;--c-ink:#1E2A3B}</style>
+  <linearGradient id="dolphin-sky" x2="0" y2="1"><stop stop-color="#DCECF0"/><stop offset="1" stop-color="#F8F2E5"/></linearGradient>
+  <linearGradient id="dolphin-sea" x2="0" y2="1"><stop stop-color="#7AB8C0"/><stop offset="1" stop-color="#3C8295"/></linearGradient>
+  <linearGradient id="dolphin-hide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8CB6BB"/><stop offset="1" stop-color="#4D7784"/></linearGradient>
+  <filter id="dolphin-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#dolphin-sky)"/><circle cx="57" cy="43" r="18" fill="#F3D992" opacity=".48"/><path d="M0 133Q75 124 150 134T304 130V192H0Z" fill="url(#dolphin-sea)"/><path d="M0 158Q80 150 160 159T304 154V192H0Z" fill="#4E91A0"/></g>
+ <g id="layer-context"><path d="M0 134Q77 126 152 135T304 131" fill="none" stroke="#E6F3EF" stroke-width="2"/><path d="M18 150q15-5 29 0m40-4q17-5 34 0m139 7q16-6 31 0" fill="none" stroke="#B7DADB" stroke-width="1.4" stroke-linecap="round"/><path d="M96 143q-7-10-15-16m17 15q4-12 11-17m-8 19q13-5 18-14" fill="none" stroke="#D7F1ED" stroke-width="1.7" stroke-linecap="round"/><circle cx="76" cy="122" r="2" fill="#F5FFFF"/><circle cx="113" cy="126" r="1.5" fill="#F5FFFF"/><ellipse cx="148" cy="145" rx="60" ry="5" fill="#183F4D" opacity=".12"/></g>
+ <g id="layer-focal" filter="url(#dolphin-shadow)">
+  <path d="M94 116Q102 103 117 92Q137 80 157 77Q172 74 185 65Q194 59 203 60L219 66L202 71Q192 76 184 83Q172 97 155 106Q134 118 111 124Q98 126 94 116Z" fill="url(#dolphin-hide)" stroke="#365B67" stroke-width="1.6"/>
+  <path d="M99 115Q124 119 151 103Q171 91 185 80Q179 101 155 115Q127 128 105 125Z" fill="#E8E6D9" stroke="#5F858D" stroke-width="1"/>
+  <path d="M94 115Q83 110 73 114Q81 120 94 122L105 121Z" fill="#668F97" stroke="#365B67" stroke-width="1.2"/>
+  <path d="M103 109Q94 95 103 88Q110 100 118 103Z" fill="#527F89" stroke="#365B67" stroke-width="1.1"/>
+  <path d="M143 84Q138 70 147 66Q150 77 158 78L160 82Z" fill="#4D7783" stroke="#365B67" stroke-width="1.1"/>
+  <path d="M162 90Q169 100 174 109Q166 110 159 100Z" fill="#4E7883" stroke="#365B67" stroke-width="1"/>
+  <circle cx="200" cy="65" r="1.8" fill="#1E2A3B"/>
+  <path d="M206 74q-8 4-14 4" fill="none" stroke="#365B67" stroke-width="1" stroke-linecap="round"/>
+  <path d="M104 112Q127 104 146 90m-27 22Q142 99 165 81" fill="none" stroke="#B7D4D5" stroke-width="1.2" opacity=".75" stroke-linecap="round"/>
+ </g>
+ <g id="layer-details"><path d="M109 88q-5-4-9-3m100-9q6-1 10 1" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity=".75" stroke-linecap="round"/><circle cx="130" cy="97" r="1" fill="#EAF7F0"/><path d="M82 136q9-3 17 0m96-2q12-4 23 0" fill="none" stroke="#C7E7E1" stroke-width="1.3" stroke-linecap="round"/><circle cx="218" cy="96" r="1.4" fill="#FFFFFF" opacity=".8"/></g>
+ <g id="layer-lighting"><path d="M119 99q17-15 33-19m26-7q8-4 14-7" fill="none" stroke="#F8FCF4" stroke-width="1.7" opacity=".56" stroke-linecap="round"/><ellipse cx="155" cy="92" rx="52" ry="22" transform="rotate(-28 155 92)" fill="#FFFFFF" opacity=".03"/></g>
+</svg>

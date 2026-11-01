@@ -1,0 +1,29 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 17 — Appearance
+  WORD: long hair (Noun phrase)
+  CONTEXTUAL_DEFINITION: Hair that extends well below the shoulders.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive portrait
+  SYNONYM_GUARD: Hair ends at the mid-back, clearly longer than shoulder-length hair.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Cream portrait paper.
+    - Context_Layer: Shoulders and upper torso.
+    - Focal_Layer: Long dark hair flowing down the back.
+    - Details_Layer: Long curved locks and lower tips.
+    - Lighting_Layer: Warm highlight streaks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="17:long hair" data-archetype="expressive-bust">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="169" rx="104" ry="10" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="80" rx="107" ry="69" fill="#FEF3C7" opacity=".36"/><path d="M77 165Q82 128 119 119H185Q222 128 228 165Z" fill="#D8DCE2" stroke="#7B8A9E" stroke-width="2.3"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M109 144Q101 115 103 78Q106 45 152 42Q198 45 201 78Q203 115 195 144Z" fill="#D9A17D" stroke="#1E2A3B" stroke-width="2.4"/>
+  <path d="M96 85Q91 42 141 31Q189 30 209 65L224 154Q219 172 203 176L191 166L184 82Q154 77 119 87L111 166L97 175Q79 168 81 152Z" fill="#35404B" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M120 89Q130 84 140 89M164 89Q174 84 184 89" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M122 96Q130 99 138 96M166 96Q174 99 182 96" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M152 94L148 111L155 114M138 130Q152 136 167 129" fill="none" stroke="#A86F45" stroke-width="1.7"/>
+  <path d="M94 94Q96 139 91 158M207 89Q211 132 217 153M103 148Q107 163 102 170M190 97Q195 139 202 165" fill="none" stroke="#68798F" stroke-width="2.1" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M68 131Q73 155 88 164M236 126Q233 150 218 163" fill="none" stroke="#4A72B2" stroke-width="1.3" stroke-dasharray="4 5"/>
+</svg>

@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: proficient in
+  CONTEXTUAL_DEFINITION: Highly skilled and competent in a particular subject or activity.
+  PEDAGOGICAL_ART_DIRECTOR: Show proven command of one work skill through accurate, confident performance and a quality result.
+  PEDAGOGICAL_ARCHETYPE: 5 - Demonstrated competence
+  SYNONYM_GUARD: Depict a candidate already using a specialized tool correctly with a verified result; training is instruction received, not this high level of ability.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place the candidate at x=117..184, y=61..137 using a precision drafting tool over a clean finished plan at x=192..250, y=86..124. Add one restrained green quality check near x=238, y=74 and a small competence badge near x=91, y=61; keep all marks icon-only.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:proficient in" data-archetype="demonstrated-competence">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="proficient-plan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="proficient-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="proficient-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="proficient-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="108" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="29" y="24" width="246" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M34 134 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.6"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.4"/><rect x="196" y="84" width="55" height="39" rx="2" fill="url(#proficient-plan)" stroke="#547A56" stroke-width="1.2"/><path d="M202 115 L212 104 L221 109 L231 95 L243 101" fill="none" stroke="#547A56" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M203 90 H238 M203 96 H220" stroke="#CBD5E1" stroke-width="1"/><path d="M231 73 L237 79 L249 66" fill="none" stroke="#547A56" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-focal" filter="url(#proficient-shadow)"><path d="M117 128 Q120 103 135 95 L136 86 Q132 81 134 73 Q142 64 153 67 Q163 70 160 82 L157 90 Q171 95 174 125 L171 136 H121 Z" fill="url(#proficient-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="149" cy="76" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.1"/><path d="M140 74 Q142 66 150 66 Q158 67 162 74 Q154 70 147 71 Z" fill="#3D342D"/><path d="M132 105 L120 118 M166 105 L183 111" stroke="#5479AC" stroke-width="4.2" stroke-linecap="round"/><path d="M119 118 L202 104" stroke="#D89A6C" stroke-width="3.8" stroke-linecap="round"/><path d="M181 109 L203 78 L208 81 L191 113 Z" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M202 79 L206 73 L211 76 L208 82 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1"/><circle cx="103" cy="62" r="17" fill="#FFFFFF" stroke="#D99A2B" stroke-width="1.5"/><path d="M95 62 L101 68 L112 54" fill="none" stroke="#547A56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M140 98 Q151 93 163 98" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><path d="M90 86 L96 82 M213 61 L219 58 M262 91 L267 88" stroke="#F2C14E" stroke-width="1.4" stroke-linecap="round"/><circle cx="185" cy="67" r="2" fill="#8EB0DE"/><circle cx="227" cy="129" r="2" fill="#A8D4A2"/><path d="M209 101 L216 99 M213 106 L220 104" stroke="#547A56" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="83" rx="97" ry="66" fill="url(#proficient-halo)" opacity=".2"/><path d="M193 86 H248" stroke="#FFFFFF" stroke-width="1"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

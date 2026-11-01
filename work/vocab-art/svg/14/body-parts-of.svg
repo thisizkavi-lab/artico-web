@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 14 — The body
+  WORD: body, parts of (Plural noun phrase)
+  CONTEXTUAL_DEFINITION: The main external regions that make up a human body.
+  PEDAGOGICAL_ARCHETYPE: 2 — Whole-body overview with multiple anatomical callouts
+  SYNONYM_GUARD: Show a whole standing human and several separated body regions; head is just the uppermost region.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm anatomy studio paper and floor shadow.
+    - Context_Layer: Pale blue full-body mannequin silhouette with joints.
+    - Focal_Layer: Friendly front-facing person with head, torso, arms, hands, legs, and feet all visible.
+    - Details_Layer: Several small gold focus halos at distinct regions, no labels.
+    - Lighting_Layer: Blue thin guide arcs connect body regions without obscuring the figure.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="14:body, parts of" data-archetype="anatomy-overview">
+  <defs><linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#7896C1"/><stop offset="1" stop-color="#4F6F9F"/></linearGradient><filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".14"/></filter></defs>
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 166H304V192H0Z" fill="#E7D7C0"/><ellipse cx="152" cy="170" rx="61" ry="6" fill="#998B77" opacity=".3"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M137 62H167V94H137Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.5"/><path d="M133 91Q152 83 171 91L181 131H123Z" fill="#E3E8F0" stroke="#94A3B8" stroke-width="1.7"/><path d="M133 96L112 126M171 96L192 126M135 128L130 163M169 128L174 163" fill="none" stroke="#94A3B8" stroke-width="9" stroke-linecap="round"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal" filter="url(#soft)"><circle cx="152" cy="46" r="18" fill="#C88E74" stroke="#1E2A3B" stroke-width="2.2"/><path d="M135 44Q135 24 153 24Q170 25 169 45L162 36H142Z" fill="#3A2E2B"/><path d="M136 39Q139 30 147 28" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><path d="M131 69Q152 59 173 69L183 128H121Z" fill="url(#shirt)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M137 70L124 95L108 122" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M137 70L124 95L108 122" fill="none" stroke="#C88E74" stroke-width="6" stroke-linecap="round"/><path d="M167 70L180 95L196 122" fill="none" stroke="#1E2A3B" stroke-width="10" stroke-linecap="round"/><path d="M167 70L180 95L196 122" fill="none" stroke="#C88E74" stroke-width="6" stroke-linecap="round"/><path d="M128 126L124 157M176 126L180 157" fill="none" stroke="#1E2A3B" stroke-width="12" stroke-linecap="round"/><path d="M128 126L124 157M176 126L180 157" fill="none" stroke="#5479AC" stroke-width="7.5" stroke-linecap="round"/><path d="M117 158Q124 154 132 159L132 165H111Q110 161 117 158ZM172 159Q180 154 188 158Q194 161 191 165H171Z" fill="#344254" stroke="#1E2A3B" stroke-width="1.7"/><path d="M100 121Q104 116 110 121L113 128Q111 132 105 132L100 128ZM193 121Q198 116 203 121L203 128Q200 132 194 131L191 127Z" fill="#C88E74" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><circle cx="152" cy="45" r="24" fill="none" stroke="#D97706" stroke-width="1.3" stroke-dasharray="4 4" opacity=".7"/><circle cx="152" cy="103" r="30" fill="none" stroke="#D97706" stroke-width="1.2" stroke-dasharray="4 4" opacity=".5"/><path d="M104 140Q87 129 80 113M200 140Q217 129 224 113M130 155Q110 164 96 158M174 155Q194 164 208 158" fill="none" stroke="#4A72B2" stroke-width="1.2" stroke-dasharray="3 4"/><circle cx="152" cy="103" r="4" fill="#F2C14E" opacity=".9"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="99" rx="82" ry="76" fill="#FEF3C7" opacity=".08"/><path d="M77 32L91 23M211 32L225 23" stroke="#FFFFFF" stroke-width="1.5"/></g>
+</svg>

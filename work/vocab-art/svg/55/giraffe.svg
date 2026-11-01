@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: giraffe (noun)
+  CONTEXTUAL_DEFINITION: A very tall African wild mammal with a long upright neck, small horn-like ossicones, and irregular coat patches.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining neck and patch pattern
+  SYNONYM_GUARD: Exaggerate the long neck and tiny ossicones; keep the irregular dark patches distinct from zebra stripes.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Savanna with acacia canopy at left; giraffe body x=83..183 y=98..127; neck rises diagonally to x=205 y=45 and small head at x=221 y=43; legs reach y=157.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:giraffe" data-archetype="long-neck-patched-giraffe">
+  <defs>
+    <style>:root{--c-bg-1:#EAF1F0;--c-bg-2:#FAF6E9;--c-surface:#D7C69E;--c-primary:#D39A49;--c-secondary:#754B2F;--c-accent:#819669;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="gir-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EAF1F0"/><stop offset="1" stop-color="#F8EBD0"/></linearGradient>
+    <linearGradient id="gir-coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E6B65C"/><stop offset="1" stop-color="#B87537"/></linearGradient>
+    <filter id="gir-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#gir-sky)"/><path d="M0 129 Q62 119 125 129 T241 127 Q279 120 304 128 V192 H0Z" fill="#E6DFC7"/><path d="M0 153 Q69 145 145 153 T304 151 V192 H0Z" fill="#D3C39F"/><ellipse cx="151" cy="163" rx="105" ry="7" fill="#B7A47C" opacity=".42"/></g>
+  <g id="layer-context"><path d="M37 144 V79 M37 96 L23 82 M37 108 L53 90" fill="none" stroke="#73543A" stroke-width="4" stroke-linecap="round"/><path d="M20 84 Q25 69 36 75 Q43 61 53 73 Q63 73 65 87 Q52 82 42 94 Q31 84 20 84Z" fill="#829263"/><path d="M67 145 l-5-10 m5 10 6-7 M235 146 l4-9 m-4 9-5-5 M257 145 l4-8" fill="none" stroke="#8A9667" stroke-width="1.6" stroke-linecap="round"/><path d="M63 117 Q72 112 82 116 M225 119 Q239 113 251 118" fill="none" stroke="#C9AF78" stroke-width="1.2"/></g>
+  <g id="layer-focal" filter="url(#gir-shadow)"><ellipse cx="130" cy="112" rx="48" ry="18" fill="url(#gir-coat)" stroke="#1E2A3B" stroke-width="2"/><path d="M159 103 Q178 90 190 69 L200 52 L210 54 L206 76 Q198 102 179 119Z" fill="#D8A14A" stroke="#1E2A3B" stroke-width="2" stroke-linejoin="round"/><path d="M200 51 Q211 43 224 47 L233 55 L222 62 L205 59Z" fill="#D8A14A" stroke="#1E2A3B" stroke-width="1.8"/><path d="M207 48 L207 38 M216 47 L218 37" fill="none" stroke="#704A2C" stroke-width="2.5" stroke-linecap="round"/><circle cx="207" cy="37" r="3.2" fill="#704A2C"/><circle cx="219" cy="36" r="3.2" fill="#704A2C"/><path d="M226 53 L240 52 L232 58 L221 58Z" fill="#B46F37" stroke="#1E2A3B" stroke-width="1.2"/><circle cx="226" cy="51" r="1.7" fill="#1E2A3B"/><path d="M94 125 L91 151 Q92 157 100 157 L105 153 L101 149 L99 127 M119 128 L118 153 Q120 158 128 157 L133 153 L128 150 L130 127 M150 127 L155 152 Q158 157 166 154 L170 150 L164 147 L161 124 M170 119 L180 145 Q183 150 190 146 L194 142 L188 139 L179 116" fill="none" stroke="#725033" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M100 102 l8-8 9 7-6 9-9-1z M121 96 l8-8 9 7-5 9-10 1z M142 99 l8-6 8 7-5 8-10-1z M160 108 l7-6 7 8-6 7-8-2z M107 115 l7-5 7 7-6 5-8-2z M133 113 l8-6 7 7-6 7-8-2z M173 94 l6-7 7 6-6 7z M187 75 l6-7 5 5-5 6z M195 62 l5-6 4 4-4 6z" fill="#8F592F" opacity=".94"/><path d="M235 54 l7 1-5 3" fill="#4A3729"/></g>
+  <g id="layer-details"><path d="M90 108 Q113 98 137 101 M177 95 Q190 81 197 67 M203 50 Q212 45 220 48" fill="none" stroke="#F4D184" stroke-width="1.5"/><path d="M206 50 l-2-4 M218 49 l3-5" fill="none" stroke="#754B2F" stroke-width="1.3" stroke-linecap="round"/><circle cx="114" cy="107" r="1.4" fill="#F4D184"/><circle cx="149" cy="113" r="1.3" fill="#F4D184"/><path d="M89 151 l-2 5 m11-5 1 5 m22-4 1 6 m34-6 2 5 m23-8 3 5" fill="none" stroke="#4C3A2A" stroke-width="1.2" stroke-linecap="round"/><path d="M63 145 l-4-7 m4 7 6-5 M244 147 l4-8" fill="none" stroke="#859461" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-lighting"><path d="M91 106 Q108 98 124 99 M180 92 Q192 77 198 62 M202 50 Q211 44 220 48" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".43" stroke-linecap="round"/><ellipse cx="128" cy="105" rx="29" ry="7" fill="#FFFFFF" opacity=".045"/></g>
+</svg>

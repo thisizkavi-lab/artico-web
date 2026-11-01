@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: umbrella (Noun)
+  CONTEXTUAL_DEFINITION: A folding canopy held above the head to keep off rain or sun.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object with scale cue
+  SYNONYM_GUARD: The wide curved canopy and long shaft distinguish it from hats and bags.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Open umbrella at a slight tilt.
+    - Context_Layer: Ground shadow and a few soft raindrops.
+    - Focal_Layer: Segmented canopy, central shaft, and curved handle.
+    - Details_Layer: Radial ribs meet at the center.
+    - Lighting_Layer: Warm halo sits behind the canopy.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:umbrella" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="165" rx="92" ry="12" fill="#EAE3D5"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><ellipse cx="152" cy="81" rx="110" ry="71" fill="#FEF3C7" opacity=".35"/><path d="M56 59L48 80M249 53L257 74M73 126L65 145M229 122L236 142" stroke="#9FC3D7" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><path d="M43 88Q47 40 97 32Q113 19 152 23Q191 19 207 32Q257 40 261 88Q236 78 214 89Q190 77 167 89Q151 78 136 89Q111 77 89 89Q66 78 43 88Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="2.7"/><path d="M43 88Q66 78 89 89Q111 77 136 89Q151 78 167 89Q190 77 214 89Q236 78 261 88" fill="none" stroke="#9CB5D5" stroke-width="2"/><path d="M152 26V153" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M152 26V153" stroke="#D9A441" stroke-width="2.3" stroke-linecap="round"/><path d="M152 153Q151 169 165 169Q177 169 177 157" fill="none" stroke="#1E2A3B" stroke-width="6" stroke-linecap="round"/><path d="M152 153Q151 169 165 169Q177 169 177 157" fill="none" stroke="#D9A441" stroke-width="2.3" stroke-linecap="round"/><path d="M43 88Q47 40 97 32Q113 19 152 23Q191 19 207 32Q257 40 261 88Q236 78 214 89Q190 77 167 89Q151 78 136 89Q111 77 89 89Q66 78 43 88Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M61 81L98 34L136 83M98 34L152 84L207 34L244 81M152 26L152 84" fill="none" stroke="#D9A441" stroke-width="1.5"/><path d="M83 116L77 124M216 112L222 120" stroke="#9FC3D7" stroke-width="2" stroke-linecap="round"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><ellipse cx="152" cy="69" rx="92" ry="53" fill="none" stroke="#D97706" stroke-width=".9" stroke-dasharray="4 4" opacity=".34"/></g>
+</svg>

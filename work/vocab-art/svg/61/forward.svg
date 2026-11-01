@@ -1,0 +1,16 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 61 - Soccer
+ WORD: forward (soccer player, attacking position)
+ CONTEXTUAL_DEFINITION: A soccer attacker who plays high up the field and carries the ball toward the opposing goal.
+ PEDAGOGICAL_ARCHETYPE: Attacking player carries the ball into the area in front of the opposing goal
+ SYNONYM_GUARD: Keep the player close to the opponent goal in the attacking third; not a generic single player or American-football forward pass.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A single football player sprints with ball at feet across a marked grass field; goal and sideline distant, no other people.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="61:forward (soccer player)" data-archetype="soccer-forward-attacks-near-goal">
+ <defs><style>:root{--c-bg-1:#F0F3ED;--c-bg-2:#E5DCCB;--c-surface:#718C84;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style><linearGradient id="player-sky" x2="0" y2="1"><stop stop-color="#EAF2EE"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient></defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#player-sky)"/><path d="M0 83H304V106H0Z" fill="#82998D"/><path d="M0 89h304m0 9H0" stroke="#DDE8E0" stroke-width="1.2"/><path d="M0 111q75-13 152 0t152 0v81H0Z" fill="#91A886"/><path d="M0 157h304m-152-46v81" stroke="#E7EEE4" stroke-width="1.5" fill="none"/></g>
+ <g id="layer-context"><path d="M233 66v43m48-43v43m-48-38h48m-48 28h48" stroke="#F4F5EB" stroke-width="1.5"/><ellipse cx="151" cy="174" rx="85" ry="5" fill="#405B61" opacity=".15"/><circle cx="46" cy="38" r="13" fill="#E4BB68"/></g>
+ <g id="layer-focal"><circle cx="144" cy="55" r="11" fill="#D99F7C" stroke="#775249" stroke-width="1.1"/><path d="M133 54q2-12 12-12q10 1 11 11l-6 2-14-1Z" fill="#344F5A"/><path d="M137 68q-12 8-10 24l17 13 21-9-2-17-12-11Z" fill="#D4866D" stroke="#805247" stroke-width="1.3"/><path d="M135 77l-21-8-16 7m51-10 19-15 12 4" stroke="#D99F7C" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M141 101l-11 17-19 7m34-20 16 16 20 0" stroke="#263E48" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="179" cy="143" r="8" fill="#F7F3E8" stroke="#405B61" stroke-width="1"/><path d="M179 138l3 2v5l-3 2-3-2v-5Z" fill="#263E48"/><path d="M176 138l-2-2m8 2 2-2m-8 7-3 1m9-1 3 1m-8 4-2 2m6-2 2 2" stroke="#263E48" stroke-width=".8" fill="none"/><path d="M85 120h23m91-9h23" stroke="#F3EDE0" stroke-width="1.4"/><path d="M106 129l10-5m61 7 12-4" stroke="#E4BB68" stroke-width="1.4"/></g>
+ <g id="layer-details"><path d="M84 89h13m-19 6h11" stroke="#FFF6E7" stroke-width="1.4"/><path d="M186 131q8-4 13 0" stroke="#E4BB68" stroke-width="1.3" fill="none"/><path d="M19 177h43m208 0h21" stroke="#DFE9DC" stroke-width="1.2"/><path d="M91 106q8-5 15 0m119 11q8-5 15 0" stroke="#F7F5EC" stroke-width="1.1" fill="none"/><circle cx="205" cy="48" r="1.3" fill="#FFF"/></g><g id="layer-lighting"><ellipse cx="143" cy="88" rx="53" ry="42" fill="#FFF6E7" opacity=".06"/><path d="M125 122q-10 4-17 4m64 3q9 3 16 1" stroke="#FFF6E7" stroke-width="1.2" fill="none"/></g>
+</svg>

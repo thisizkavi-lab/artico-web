@@ -1,0 +1,27 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 12 — Tools and gardening
+  WORD: shape (Noun/Verb; physical form)
+  CONTEXTUAL_DEFINITION: The form or outline of an object, and the act of giving material that form.
+  PEDAGOGICAL_ARCHETYPE: 3 — Concrete before-and-after contrast
+  SYNONYM_GUARD: Show a square molding blank being worked into a curved arch profile; the focus is the changed outline, not a particular tool.
+  MODE: STATIC (the app displays compiled WebP cards)
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Home workshop bench with pale wall.
+    - Context_Layer: Squared raw wood block at left and a thin blue guide contour above the work.
+    - Focal_Layer: Hands smooth a timber blank into a curved molding profile, with the new outline prominent at right.
+    - Details_Layer: Curled shavings, grain, profile edge, tool pressure marks, and two small wood chips.
+    - Lighting_Layer: Upper-left highlights along the finished curved surface.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="12:shape" data-archetype="contrast-scene">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#C88446;--c-primary:#C88446;--c-secondary:#965D28;--c-accent:#5479AC;--c-highlight:#FFFFFF}</style>
+    <linearGradient id="room-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient>
+    <linearGradient id="wood-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E3AC77"/><stop offset="1" stop-color="#965D28"/></linearGradient>
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room-grad)"/><path d="M0 145H304V192H0Z" fill="#D9C6AB"/><path d="M0 141H304" stroke="#8A5A35" stroke-width="2"/><path d="M35 121H268V148H35Z" fill="#C88446" stroke="#1E2A3B" stroke-width="2.2"/><path d="M28 149H277" stroke="#965D28" stroke-width="2"/><ellipse cx="154" cy="157" rx="88" ry="7" fill="#DDD4C3" opacity=".8"/></g>
+  <g id="layer-context"><path d="M43 72H111V114H43Z" fill="#E3AC77" stroke="#1E2A3B" stroke-width="2.1"/><path d="M50 81H104M50 91H104M50 101H104" stroke="#C88446" stroke-width="1.3"/><path d="M44 65H110" stroke="#5479AC" stroke-width="1.6" stroke-dasharray="4 3"/><path d="M194 59Q218 48 245 55Q258 59 259 72L252 108Q230 117 205 107Z" fill="#F3ECE1" stroke="#5479AC" stroke-width="1.7" stroke-dasharray="4 3"/><path d="M70 113V121M236 111V121" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#drop-shadow)"><path d="M119 83H170V112H119Z" fill="url(#wood-grad)" stroke="#1E2A3B" stroke-width="2"/><path d="M165 82Q180 63 202 62Q223 62 235 76L231 113H169Z" fill="url(#wood-grad)" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><path d="M174 91Q192 74 211 73Q223 74 229 83" fill="none" stroke="#E3AC77" stroke-width="2"/><path d="M174 101Q193 84 222 84" fill="none" stroke="#965D28" stroke-width="1.3"/><path d="M172 111Q198 117 231 111" fill="none" stroke="#1E2A3B" stroke-width="2"/><path d="M146 74L162 68L178 79L169 92L153 89Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8"/><path d="M152 80L169 84" stroke="#94A3B8" stroke-width="1.4"/><path d="M145 75L130 68" stroke="#1E2A3B" stroke-width="5" stroke-linecap="round"/><path d="M145 75L130 68" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/><path d="M134 70L116 82" stroke="#1E2A3B" stroke-width="7" stroke-linecap="round"/><path d="M134 70L116 82" stroke="#F5BFA3" stroke-width="4.5" stroke-linecap="round"/><path d="M121 85Q126 90 132 86" fill="none" stroke="#1E2A3B" stroke-width="3"/><path d="M242 82L258 78L263 84L247 90Z" fill="#E3AC77" stroke="#1E2A3B" stroke-width="1.4"/><path d="M240 91L254 88L258 93L244 97Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.3"/></g>
+  <g id="layer-details"><path d="M239 60Q247 59 251 65M224 70Q231 69 235 73" fill="none" stroke="#F2C18B" stroke-width="1.7"/><path d="M191 120L205 117M216 123L228 120" stroke="#A27652" stroke-width="1.3"/><circle cx="263" cy="97" r="2" fill="#C88446"/><circle cx="251" cy="110" r="1.8" fill="#965D28"/><path d="M14 13H290V179H14Z" fill="none" stroke="#D8CDAF" opacity=".7"/></g>
+  <g id="layer-lighting"><path d="M186 67Q205 57 221 63" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity=".7"/><path d="M174 88Q190 74 202 73" stroke="#F2C18B" stroke-width="1.4"/><path d="M38 124H100" stroke="#F2A472" stroke-width="1.4" opacity=".6"/></g>
+</svg>

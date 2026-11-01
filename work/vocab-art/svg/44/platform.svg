@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 44 - Transportation and travel
+  WORD: platform
+  CONTEXTUAL_DEFINITION: The raised waiting and boarding surface beside rail tracks.
+  PEDAGOGICAL_ART_DIRECTOR: Use a train at the track edge to establish context, then foreground the long raised platform and its safe edge.
+  PEDAGOGICAL_ARCHETYPE: 5 - Place diagram with focus cue
+  SYNONYM_GUARD: Select the transit sense from the travel group; this is neither a podium nor a political platform.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Platform spans x=30..272 at y=116..145; rail tracks run at y=154..168; a passenger train occupies the background at x=111..274, and waiting travelers stand safely behind the tactile edge.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="44:platform" data-archetype="place-diagram-transport">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="platform-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D9E1E2"/><stop offset="1" stop-color="#9EADB2"/></linearGradient>
+    <linearGradient id="platform-train" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#93AED2"/><stop offset="1" stop-color="#5479AC"/></linearGradient>
+    <radialGradient id="platform-halo"><stop stop-color="#F8E7AF" stop-opacity=".58"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="platform-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".15"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="146" width="304" height="46" fill="#E6E2DB"/><path d="M0 157 H304 M0 169 H304" stroke="#64748B" stroke-width="2.5"/><ellipse cx="153" cy="166" rx="130" ry="8" fill="#DDD4C3" opacity=".8"/></g>
+  <g id="layer-context"><path d="M28 58 H282 V117 H28 Z" fill="#EEF1EF" stroke="#D5D9D5" stroke-width="1.2"/><path d="M44 58 V97 M63 58 V97 M82 58 V97" stroke="#D7E4E7" stroke-width="2"/><path d="M101 106 Q105 87 122 83 H265 Q282 86 287 103 V125 H100 Z" fill="#A9BAC6" stroke="#1E2A3B" stroke-width="2.2"/><path d="M114 93 H146 V109 H110 Z M152 91 H182 V109 H152 Z M188 91 H218 V109 H188 Z M224 91 H261 V109 H224 Z" fill="#E4EFF3" stroke="#64748B" stroke-width="1.2"/><path d="M101 111 H286" stroke="#5479AC" stroke-width="3"/></g>
+  <g id="layer-focal" filter="url(#platform-shadow)"><path d="M23 116 H284 V141 H23 Z" fill="url(#platform-face)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M24 115 H284 V122 H24 Z" fill="#F6D16E" stroke="#1E2A3B" stroke-width="1.2"/><path d="M32 119 H277" stroke="#F9E7B1" stroke-width="1.4" stroke-dasharray="2 5"/><path d="M27 141 H282" stroke="#7B878D" stroke-width="2"/><path d="M43 104 Q43 94 51 94 Q59 94 59 104 V122 H43 Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="51" cy="89" r="6" fill="#DCA47D" stroke="#1E2A3B" stroke-width="1.1"/><path d="M49 122 L46 137 M53 122 L59 137" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/><path d="M73 108 Q73 99 80 99 Q88 99 88 108 V122 H73 Z" fill="#D17F62" stroke="#1E2A3B" stroke-width="1.4"/><circle cx="80" cy="94" r="6" fill="#C99270" stroke="#1E2A3B" stroke-width="1.1"/><path d="M78 122 L75 137 M84 122 L89 137" stroke="#1E2A3B" stroke-width="3.2" stroke-linecap="round"/><rect x="232" y="72" width="18" height="45" rx="3" fill="#EEF2F2" stroke="#64748B" stroke-width="1.4"/><path d="M238 78 H244 M238 84 H244" stroke="#5479AC" stroke-width="1.2"/><path d="M37 147 V166 M270 147 V166" stroke="#1E2A3B" stroke-width="2"/><path d="M35 170 H275" stroke="#A99169" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M61 126 H94 M146 127 H215" stroke="#FFFFFF" stroke-width="1.2" opacity=".8"/><circle cx="102" cy="119" r="1.8" fill="#D77D61"/><path d="M91 111 Q95 102 99 98" fill="none" stroke="#5479AC" stroke-width="1.6"/><path d="M29 109 H70" stroke="#D5D9D5" stroke-width="1"/><path d="M196 78 H218" stroke="#FFFFFF" stroke-width="1.1"/></g>
+  <g id="layer-lighting"><ellipse cx="153" cy="107" rx="115" ry="66" fill="url(#platform-halo)" opacity=".17"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/><path d="M23 141 H284" stroke="#1E2A3B" stroke-width="1"/></g>
+</svg>

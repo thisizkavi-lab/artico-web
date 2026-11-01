@@ -1,0 +1,20 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: dresser (Noun)
+  CONTEXTUAL_DEFINITION: A bedroom dressing table with a mirror and space for personal items.
+  PEDAGOGICAL_ARCHETYPE: 1 (Hero object)
+  SYNONYM_GUARD: Use a broad mirror and tabletop to distinguish this vanity dresser from a chest of drawers.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Bedroom wall and floor.
+    - Context_Layer: Rounded mirror above the table.
+    - Focal_Layer: Dressing table, legs, and small drawer.
+    - Details_Layer: Comb and perfume bottle on the top.
+    - Lighting_Layer: Warm gentle highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:dresser" data-archetype="hero-object">
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><path d="M0 153 H304 V192 H0Z" fill="#E9E3D7"/><path d="M0 153 H304" stroke="#B7AA94" stroke-width="2"/><ellipse cx="152" cy="168" rx="88" ry="7" fill="#D8D1C5"/></g>
+  <g id="layer-context"><path d="M121 67 Q121 40 152 35 Q183 40 183 67 V89 H121Z" fill="#DCECFB" stroke="#8A5A35" stroke-width="4"/><path d="M130 65 Q132 46 152 43 Q173 47 174 65 V82 H130Z" fill="#B8D5EB" stroke="#5479AC" stroke-width="1.4"/><path d="M72 98 H232 L220 108 H84Z" fill="#D69A62" stroke="#1E2A3B" stroke-width="2.2"/><path d="M84 108 H220 V127 H84Z" fill="#B97840" stroke="#1E2A3B" stroke-width="2"/><rect x="126" y="111" width="52" height="12" rx="2" fill="#D69A62" stroke="#8A5A35" stroke-width="1.4"/><circle cx="152" cy="117" r="2" fill="#1E2A3B"/><path d="M93 127 V157 M211 127 V157" stroke="#8A5A35" stroke-width="5.5" stroke-linecap="round"/><path d="M151 89 V98" stroke="#8A5A35" stroke-width="5"/></g>
+  <g id="layer-focal"><path d="M102 89 L117 85 L123 96 L108 99Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.4"/><path d="M191 84 Q191 79 196 79 H205 L210 98 H190Z" fill="#8B5CA8" stroke="#1E2A3B" stroke-width="1.5"/><path d="M194 79 V73 H203 V79" fill="#E8D9B8" stroke="#1E2A3B" stroke-width="1.3"/><path d="M137 48 Q151 41 165 48" fill="none" stroke="#FFFFFF" stroke-width="1.7"/></g>
+  <g id="layer-details"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

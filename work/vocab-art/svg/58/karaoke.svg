@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 58 - Free time activities
+  WORD: karaoke (noun)
+  CONTEXTUAL_DEFINITION: The at-home or social activity setup of a microphone, music screen, and speaker for singing along.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero activity equipment with venue context
+  SYNONYM_GUARD: Show a karaoke speaker, a microphone, and a screen ready for singing; the action card do karaoke shows the person performing.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: A compact karaoke setup stands ready in a cozy room: microphone on a small stand, speaker with controls, and screen showing abstract sound bars and music notes without words.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="58:karaoke" data-archetype="ready-karaoke-microphone-screen-and-speaker-setup">
+ <defs>
+  <style>:root{--c-bg-1:#E9EFF1;--c-bg-2:#DCE3E4;--c-surface:#607D86;--c-primary:#D4866D;--c-secondary:#405B61;--c-accent:#E4BB68;--c-highlight:#FFF6E7;--c-ink:#1E2A3B}</style>
+  <linearGradient id="karaoke-room" x2="0" y2="1"><stop stop-color="#E8EFF0"/><stop offset="1" stop-color="#D9E1E0"/></linearGradient>
+  <linearGradient id="karaoke-screen" x2="0" y2="1"><stop stop-color="#688FA1"/><stop offset="1" stop-color="#385E74"/></linearGradient>
+  <filter id="karaoke-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#karaoke-room)"/><path d="M0 151H304V192H0Z" fill="#D1C0A3"/><path d="M0 151H304" stroke="#987858" stroke-width="1.5" fill="none"/><path d="M0 38H304" stroke="#E4E9E0" stroke-width="2" fill="none"/></g>
+ <g id="layer-context"><path d="M22 151V107h51v44" fill="#7B6956" stroke="#625442" stroke-width="1.2"/><path d="M28 114h39v26H28Z" fill="#445E69"/><circle cx="48" cy="127" r="8" fill="#283E48" stroke="#C4D4CC" stroke-width="1"/><path d="M32 145h31" stroke="#D7C8AE" stroke-width="1.2" fill="none"/><ellipse cx="151" cy="152" rx="93" ry="5" fill="#6A5038" opacity=".14"/></g>
+ <g id="layer-focal" filter="url(#karaoke-shadow)">
+  <path d="M110 42H235V117H110Z" fill="#4D6D7D" stroke="#2F4C5B" stroke-width="1.6"/><path d="M116 48H229V111H116Z" fill="url(#karaoke-screen)"/><path d="M123 94h9V72h9v22h9V62h9v32h9V76h9v18h9V67h9v27h9" fill="none" stroke="#E7C771" stroke-width="2.2"/><path d="M130 58q7-9 13 0m24 0q7-9 13 0" stroke="#E6F1E9" stroke-width="1.3" fill="none"/><circle cx="196" cy="57" r="3" fill="#D88070"/><path d="M105 120H239V142H105Z" fill="#5C7178" stroke="#344D55" stroke-width="1.2"/><circle cx="135" cy="131" r="7" fill="#2B414B" stroke="#BCCDC9" stroke-width="1"/><circle cx="160" cy="131" r="7" fill="#2B414B" stroke="#BCCDC9" stroke-width="1"/><circle cx="224" cy="126" r="2.5" fill="#E6C774"/><path d="M180 125h27m-27 5h27m-27 5h16" stroke="#AFC2BE" stroke-width="1" fill="none"/>
+  <path d="M261 90V136m-11-1h22m-11-33 9-10" stroke="#536970" stroke-width="2" fill="none"/><ellipse cx="269" cy="91" rx="6" ry="4" transform="rotate(-25 269 91)" fill="#526A73" stroke="#2F4750" stroke-width="1.1"/><path d="M261 136v13m-9 0h18" stroke="#536970" stroke-width="2" fill="none"/><path d="M264 89q5-4 10-2" stroke="#F2EBD8" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-details"><circle cx="86" cy="78" r="1.4" fill="#FFFFFF"/><circle cx="94" cy="70" r="1" fill="#FFFFFF"/><path d="M108 118h126m-116-64h104" stroke="#BDD0CB" stroke-width=".8" fill="none"/><path d="M245 71q-5-6-9 0m-3-12q-5-7-9 0" stroke="#D9A95F" stroke-width="1.3" fill="none" stroke-linecap="round"/><circle cx="235" cy="59" r="2" fill="#E4C46F"/></g>
+ <g id="layer-lighting"><ellipse cx="174" cy="91" rx="74" ry="57" fill="#65A4B5" opacity=".1"/><path d="M119 49h105m-102 3h48" stroke="#FFFFFF" stroke-width="1.4" fill="none" opacity=".6" stroke-linecap="round"/></g>
+</svg>

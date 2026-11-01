@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: in front of
+  CONTEXTUAL_DEFINITION: Positioned on the entrance-facing side of a specific building or landmark.
+  PEDAGOGICAL_ART_DIRECTOR: Use a front-facing home with visible front door and path; place a person on the path directly between the viewer and that facade.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Relate the person to the house's front entrance, not simply to a direction of travel.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: House facade is centered x=84..220, y=24..112; walkway widens toward foreground to y=177; person stands on it at (152,139), directly in front of the door.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:in front of" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="front-house" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E1C6A5"/><stop offset="1" stop-color="#BA8D68"/></linearGradient>
+    <linearGradient id="front-path" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#EEECE4"/><stop offset="1" stop-color="#CFCABD"/></linearGradient>
+    <radialGradient id="front-halo"><stop stop-color="#F2C14E" stop-opacity=".4"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="front-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#DCEAD6"/><path d="M0 115Q75 101 151 114T304 112V192H0Z" fill="#B8D0B4"/><path d="M114 92H190L266 192H38Z" fill="url(#front-path)" stroke="#887F71" stroke-width="1.8"/><path d="M132 100L96 192M172 100L209 192" stroke="#FAF8F3" stroke-width="2" opacity=".8"/></g>
+  <g id="layer-context"><path d="M87 58L151 24L217 58V114H87Z" fill="url(#front-house)" stroke="#1E2A3B" stroke-width="2.6"/><path d="M77 60L151 18L227 60Z" fill="#806957" stroke="#1E2A3B" stroke-width="2.5" stroke-linejoin="round"/><rect x="103" y="69" width="28" height="27" fill="#A7CFDF" stroke="#536A7E" stroke-width="1.7"/><rect x="173" y="69" width="28" height="27" fill="#A7CFDF" stroke="#536A7E" stroke-width="1.7"/><path d="M138 114V76Q151 64 164 76V114Z" fill="#5D493D" stroke="#1E2A3B" stroke-width="1.8"/><circle cx="158" cy="96" r="2" fill="#F2C14E"/><path d="M72 117H232" stroke="#5A6D51" stroke-width="4"/><circle cx="48" cy="108" r="17" fill="#7FA87B" stroke="#486750" stroke-width="1.8"/><circle cx="257" cy="102" r="19" fill="#7FA87B" stroke="#486750" stroke-width="1.8"/><path d="M30 127H66M238 122H275" stroke="#567554" stroke-width="4"/></g>
+  <g id="layer-focal" filter="url(#front-shadow)"><ellipse cx="152" cy="140" rx="48" ry="45" fill="url(#front-halo)"/><circle cx="152" cy="113" r="10" fill="#D9A880" stroke="#1E2A3B" stroke-width="1.8"/><path d="M138 127Q152 118 166 127L172 155H132Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="2.3"/><path d="M140 131L123 144L128 149L145 140M164 131L181 143L177 149L159 140" fill="#D9A880" stroke="#1E2A3B" stroke-width="1.8" stroke-linejoin="round"/><path d="M138 153L132 178H147L152 158L159 178H175L165 151" fill="#364B62" stroke="#1E2A3B" stroke-width="1.9"/><path d="M145 112Q152 108 159 112" fill="none" stroke="#6B4936" stroke-width="1.7" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M152 126V116" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/><path d="M152 126V116" stroke="#4A72B2" stroke-width="4" stroke-linecap="round"/><circle cx="152" cy="115" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1"/><path d="M110 101Q151 108 193 101" fill="none" stroke="#EDE7D9" stroke-width="1.6"/><ellipse cx="152" cy="178" rx="30" ry="4" fill="#8F8779" opacity=".42"/><path d="M90 126L101 130M202 126L213 130" stroke="#FFFFFF" stroke-width="1.6"/></g>
+  <g id="layer-lighting"><path d="M88 59L151 26L217 59" fill="none" stroke="#F6E2C7" stroke-width="1.6"/><path d="M107 73H127M176 73H196" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><ellipse cx="152" cy="141" rx="52" ry="49" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".6"/></g>
+</svg>

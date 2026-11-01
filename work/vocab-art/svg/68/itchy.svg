@@ -1,0 +1,42 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: itchy
+ CONTEXTUAL_DEFINITION: Having a prickly skin sensation that makes a person want to scratch.
+ PEDAGOGICAL_ARCHETYPE: a person gently scratching one irritated forearm
+ SYNONYM_GUARD: Show the scratching action, not a widespread rash or an open wound.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A person uses the fingertips of one hand to scratch a small warm patch on the opposite forearm, with a few restrained tickle marks.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:itchy" data-archetype="localized skin itch and scratching">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="95" ry="5" fill="#8C725A" opacity=".18"/><path d="M40 149H263" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 40H101V103H58Z" fill="#D7CCBB"/><path d="M64 46H95V97H64Z" fill="#A9B9B4"/><path d="M209 39H249V104H209Z" fill="#E4DDD1"/><path d="M216 46H242V97H216Z" fill="#D0C4B0"/>
+ </g>
+ <g id="layer-context">
+  <path d="M70 147H234" stroke="#8C725A" stroke-width="1.2"/><circle cx="81" cy="147" r="2" fill="#D6A64C"/><circle cx="224" cy="147" r="2" fill="#B85E5A"/>
+  <path d="M47 121Q57 116 67 121V143H47Z" fill="#798C72"/><path d="M237 120Q247 115 257 120V143H237Z" fill="#597D8B"/>
+  <ellipse cx="152" cy="148" rx="71" ry="3" fill="#F6E5CE" opacity=".6"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="51" r="12" fill="#D29A78"/><path d="M139 50Q140 35 152 36Q164 37 163 52L157 44L141 47Z" fill="#26384A"/>
+  <path d="M132 67Q151 60 170 68L177 116H125Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M136 73L123 88L108 105L101 109M167 73L178 84L168 99L143 105" stroke="#D29A78" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M130 114L127 145M171 114L176 145" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <!-- opposite fingertips scratch the forearm -->
+  <path d="M103 108Q101 102 107 99L115 97L120 101L117 106L113 112Q108 115 103 108Z" fill="#D29A78" stroke="#8F5F57" stroke-width="1"/>
+  <path d="M143 77L151 84L159 77" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <ellipse cx="109" cy="105" rx="12" ry="9" fill="#B85E5A" opacity=".14"/><ellipse cx="109" cy="105" rx="7" ry="5" fill="none" stroke="#B85E5A" stroke-width="1" opacity=".65"/>
+  <path d="M104 95L101 90M109 94V88M115 95L118 90M96 102L91 99M120 97L124 93" stroke="#D6A64C" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M146 46Q150 49 154 46M156 46L160 45M145 57Q151 53 157 57" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <path d="M130 72L136 76M169 72L164 77M135 96L142 92M148 112L155 116" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M106 103L110 100M109 107L113 104" stroke="#8F5F57" stroke-width="1" stroke-linecap="round"/>
+  <circle cx="193" cy="99" r="1.6" fill="#D6A64C"/><circle cx="199" cy="105" r="1.2" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="88" rx="92" ry="68" fill="#E7C66B" opacity=".065"/><path d="M51 31L66 47M252 31L237 47" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M42 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

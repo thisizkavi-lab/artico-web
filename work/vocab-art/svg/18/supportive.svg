@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 18 — Personality traits
+  WORD: supportive (Adjective)
+  CONTEXTUAL_DEFINITION: Giving someone encouragement and practical help when they need it.
+  PEDAGOGICAL_ARCHETYPE: 3 — Expressive social scene
+  SYNONYM_GUARD: After a teammate's stumble, the focal person helps them stand and offers a reassuring gesture; this shows encouragement through a setback.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Community game area with a soft floor mat.
+    - Context_Layer: Teammate seated after stumbling beside a dropped ball.
+    - Focal_Layer: Companion reaches down and helps them rise.
+    - Details_Layer: Firm joined hands, smile, ball and upward support arc.
+    - Lighting_Layer: Warm halo around joined hands.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="18:supportive" data-archetype="expressive-social-scene">
+  <defs><style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#F3ECE1;--c-surface:#E3E8F0;--c-primary:#829A83;--c-secondary:#56725E;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#F3ECE1"/></linearGradient><linearGradient id="top" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#829A83"/><stop offset="1" stop-color="#56725E"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".18"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#bg)"/><path d="M0 151Q82 143 152 151T304 149V192H0Z" fill="#F3ECE1"/><ellipse cx="153" cy="168" rx="128" ry="8" fill="#EAE3D5"/><path d="M38 135Q152 125 271 135V160H38Z" fill="#D5DED7" opacity=".68"/></g>
+  <g id="layer-context"><circle cx="239" cy="142" r="13" fill="#D9857F" stroke="#A95059" stroke-width="2"/><path d="M235 134Q239 130 243 134" fill="none" stroke="#FEF9C3" stroke-width="1.8"/><path d="M22 56H76M28 56V78M70 56V78" stroke="#B9875D" stroke-width="4" stroke-linecap="round"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#shadow)"><ellipse cx="149" cy="96" rx="91" ry="72" fill="#FEF3C7" opacity=".55"/><circle cx="96" cy="83" r="18" fill="#C98961" stroke="#1E2A3B" stroke-width="2.3"/><path d="M78 83Q79 64 96 65Q113 66 114 84L108 89H81Z" fill="#35404B"/><path d="M76 107Q96 99 116 107L122 140H70Z" fill="#D9857F" stroke="#1E2A3B" stroke-width="2.3"/><path d="M83 111L69 126L82 137M111 111L125 126" fill="none" stroke="#1E2A3B" stroke-width="8" stroke-linecap="round"/><path d="M82 111L69 126L82 136M111 111L124 125" fill="none" stroke="#C98961" stroke-width="5" stroke-linecap="round"/><path d="M81 140L78 160H94L101 141M104 141L109 160H124L119 140" fill="#A95059" stroke="#1E2A3B" stroke-width="2"/><circle cx="187" cy="57" r="19" fill="#E7B99B" stroke="#1E2A3B" stroke-width="2.3"/><path d="M168 57Q169 37 187 38Q206 39 206 58L200 63H171Z" fill="#805333"/><path d="M164 82Q187 75 210 82L216 122H158Z" fill="url(#top)" stroke="#1E2A3B" stroke-width="2.4"/><path d="M170 90L152 106L140 119L132 115M205 90L219 104" fill="none" stroke="#1E2A3B" stroke-width="9" stroke-linecap="round"/><path d="M170 90L152 106L140 119L132 115" fill="none" stroke="#E7B99B" stroke-width="5.5" stroke-linecap="round"/><path d="M163 122L160 159H177L184 124M191 124L199 159H215L211 122" fill="#56725E" stroke="#1E2A3B" stroke-width="2"/></g>
+  <g id="layer-details"><path d="M178 59Q183 62 187 59M194 59Q198 62 202 59M181 71Q189 77 197 70" fill="none" stroke="#1E2A3B" stroke-width="1.6"/><path d="M102 83Q106 86 110 83M89 95Q96 99 103 95" fill="none" stroke="#1E2A3B" stroke-width="1.5"/><path d="M140 91Q146 82 153 80M137 84L153 80L148 94" fill="none" stroke="#D9A441" stroke-width="2"/><path d="M126 110L132 115L137 110" fill="none" stroke="#FEF9C3" stroke-width="2.5"/><circle cx="129" cy="105" r="2" fill="#D9A441"/><path d="M228 98L234 92M236 101L243 99" stroke="#4A72B2" stroke-width="1.8"/></g>
+  <g id="layer-lighting"><path d="M177 42Q187 38 197 42" fill="none" stroke="#FEF9C3" stroke-width="2" opacity=".68"/><ellipse cx="151" cy="94" rx="98" ry="69" fill="none" stroke="#D9A441" stroke-width="1.2" stroke-dasharray="3 5" opacity=".38"/></g>
+</svg>

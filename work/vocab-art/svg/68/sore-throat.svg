@@ -1,0 +1,43 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 68 - Sickness
+ WORD: sore throat
+ CONTEXTUAL_DEFINITION: A painful, irritated feeling in the throat.
+ PEDAGOGICAL_ARCHETYPE: a person gently holding a tender throat
+ SYNONYM_GUARD: Localize the discomfort at the front of the neck; tonsillitis is a later specific diagnosis.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Show a mildly unwell person touching the front of the throat, with a soft local glow and a soothing drink nearby.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:sore throat" data-archetype="throat tenderness">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <ellipse cx="151" cy="153" rx="95" ry="5" fill="#8C725A" opacity=".18"/><path d="M42 149H262" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M58 41H99V101H58Z" fill="#D9D0C2"/><path d="M64 47H93V95H64Z" fill="#A9B9B4"/><path d="M210 40H251V101H210Z" fill="#E3DDD2"/><path d="M217 47H244V95H217Z" fill="#D1C5B2"/>
+ </g>
+ <g id="layer-context">
+  <path d="M221 129H258V146H221Z" fill="#8C725A"/><path d="M225 146V153M254 146V153" stroke="#725F4B" stroke-width="1.8"/>
+  <path d="M229 121H243L241 132H231Z" fill="#A9B9B4" stroke="#597D8B" stroke-width="1"/><path d="M243 123Q250 122 248 129L242 129" fill="none" stroke="#597D8B" stroke-width="1.1"/>
+  <path d="M232 118L230 114M237 118V113M242 118L244 114" stroke="#D6A64C" stroke-width="1"/>
+  <ellipse cx="239" cy="151" rx="24" ry="3" fill="#8C725A" opacity=".15"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="151" cy="48" r="13" fill="#D29A78"/><path d="M138 47Q139 31 152 32Q165 33 164 50L158 40L140 44Z" fill="#26384A"/>
+  <path d="M131 66Q151 58 171 66L178 118H124Z" fill="#597D8B" stroke="#26384A" stroke-width="1.2"/>
+  <path d="M136 73L123 89L112 96M167 73L181 88L186 105" stroke="#D29A78" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- hand rests lightly at the front of the neck -->
+  <path d="M181 104Q186 98 183 92L178 84L172 85L170 92L174 100L171 106Q175 110 181 104Z" fill="#D29A78" stroke="#8F5F57" stroke-width=".9"/>
+  <path d="M129 116L127 146M172 116L176 146" stroke="#26384A" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M143 65L151 73L159 65" fill="#F6E5CE"/>
+ </g>
+ <g id="layer-details">
+  <path d="M145 46Q149 49 153 46M156 46L160 45M145 56Q151 53 157 56" stroke="#654E43" stroke-width="1.1" fill="none"/>
+  <ellipse cx="172" cy="86" rx="13" ry="17" fill="#B85E5A" opacity=".13"/><ellipse cx="172" cy="86" rx="8" ry="11" fill="none" stroke="#B85E5A" stroke-width="1" opacity=".65"/>
+  <path d="M166 68L163 64M172 67V62M179 69L182 65M161 88L157 89M183 92L188 94" stroke="#D6A64C" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M132 77L138 81M168 77L164 81M129 108L136 111M159 116L166 119" stroke="#A9C0C1" stroke-width="1"/>
+  <path d="M175 89L178 91M175 93L179 95" stroke="#8F5F57" stroke-width=".8"/>
+  <circle cx="197" cy="116" r="1.5" fill="#D6A64C"/><circle cx="202" cy="121" r="1.1" fill="#B85E5A"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="87" rx="91" ry="67" fill="#E7C66B" opacity=".065"/><path d="M51 33L67 49M252 32L237 48" stroke="#FFF1C7" stroke-width="1.2" opacity=".55"/>
+  <path d="M42 150H261" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

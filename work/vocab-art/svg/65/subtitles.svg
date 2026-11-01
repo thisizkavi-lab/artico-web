@@ -1,0 +1,47 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: subtitles
+ CONTEXTUAL_DEFINITION: Blank caption lines displayed along the bottom of a projected movie image.
+ PEDAGOGICAL_ARCHETYPE: movie frame with subtitle bars
+ SYNONYM_GUARD: Use two blank bars inside the lower portion of the movie image; never show words or numerals.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A theater screen shows a film still of an actor outdoors with two distinct blank caption bars at the lower edge and a projector beam.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:subtitles" data-archetype="movie frame with subtitle bars">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M22 21H282V146H22Z" fill="#26384A"/><path d="M31 29H273V142H31Z" fill="#405663"/>
+  <path d="M50 40H254V127H50Z" fill="#E9DDC8" stroke="#D6A64C" stroke-width="1.6"/>
+  <path d="M58 48H246V121H58Z" fill="#597D8B"/>
+  <path d="M59 111Q97 84 128 99Q160 74 197 98Q221 89 245 106V121H59Z" fill="#798C72"/>
+  <path d="M59 114Q94 104 125 112Q168 94 199 111Q222 104 245 114V121H59Z" fill="#405663"/>
+  <path d="M0 151H304" stroke="#E8DCC5" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M37 137H66m26 0h33m25 0h33m25 0h35" stroke="#8C725A" stroke-width="2" fill="none"/>
+  <circle cx="49" cy="129" r="3.4" fill="#D29A78"/><circle cx="116" cy="129" r="3.4" fill="#D29A78"/><circle cx="184" cy="129" r="3.4" fill="#D29A78"/><circle cx="251" cy="129" r="3.4" fill="#D29A78"/>
+  <path d="M44 134h10m57 0h10m58 0h10m57 0h10" stroke="#597D8B" stroke-width="2.6" fill="none"/>
+  <path d="M47 37H257" stroke="#A8B5AF" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="177" cy="75" r="7" fill="#D29A78"/><path d="M168 83Q177 78 186 83L191 108H163Z" fill="#B85E5A"/>
+  <path d="M169 90L157 99m26-9 12 8" stroke="#D29A78" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M170 106L167 116m19-10 4 10" stroke="#26384A" stroke-width="2.2" fill="none"/>
+  <path d="M172 72q4-4 8 0" stroke="#26384A" stroke-width="1" fill="none"/>
+  <path d="M73 110H231V118H73Z" fill="#F7F1E3" stroke="#26384A" stroke-width="1"/>
+  <path d="M82 120H222V128H82Z" fill="#F7F1E3" stroke="#26384A" stroke-width="1"/>
+  <path d="M78 114H225m-137 10h129" stroke="#D8CFBC" stroke-width=".8" fill="none"/>
+ </g>
+ <g id="layer-details">
+  <path d="M54 43H250M54 123H250" stroke="#FFF5DF" stroke-width="1" fill="none"/>
+  <path d="M42 123H49m207 0h7" stroke="#D6A64C" stroke-width="1.2" fill="none"/>
+  <path d="M40 131H266" stroke="#334957" stroke-width="1" fill="none"/>
+  <circle cx="61" cy="57" r="1.8" fill="#E8C76A"/><circle cx="237" cy="55" r="1.8" fill="#E8C76A"/>
+  <path d="M33 145H271" stroke="#71858A" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="83" rx="106" ry="60" fill="#E7C66B" opacity=".08"/>
+  <path d="M29 134L106 87m-75 50L112 86" stroke="#FFF1C7" stroke-width="1.2" opacity=".52" fill="none"/>
+  <path d="M52 40H252" stroke="#FFF8E7" stroke-width="1" opacity=".6" fill="none"/>
+ </g>
+</svg>

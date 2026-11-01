@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="75:community" data-archetype="neighbors-sharing-a-residential-courtyard">
+<!-- SELF_PROMPT: Lesson 75 urban life; community. Neighbors share a small courtyard garden between their homes, with a clear greeting and common space. No signs or readable text. -->
+<defs>
+  <style>:root{--c-bg-1:#E7EEF0;--c-bg-2:#C1D0D2;--c-surface:#B8805B;--c-primary:#4E7891;--c-secondary:#718B6C;--c-accent:#E9C66F;--c-highlight:#FFF8E7;--c-ink:#273744}</style>
+  <linearGradient id="community-sky" x2="0" y2="1"><stop stop-color="#DDE9E9"/><stop offset="1" stop-color="#B8CBCB"/></linearGradient>
+  <linearGradient id="community-wall" x2="0" y2="1"><stop stop-color="#E2C9A8"/><stop offset="1" stop-color="#AE8E73"/></linearGradient>
+  <linearGradient id="community-ground" x2="0" y2="1"><stop stop-color="#9EAA7F"/><stop offset="1" stop-color="#738461"/></linearGradient>
+  <linearGradient id="community-leaf" x2="0" y2="1"><stop stop-color="#8DA876"/><stop offset="1" stop-color="#547257"/></linearGradient>
+  <filter id="community-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.8" flood-color="#273744" flood-opacity=".2"/></filter>
+</defs>
+<g id="layer-backdrop"><rect width="304" height="192" fill="url(#community-sky)"/><circle cx="253" cy="32" r="12" fill="#E9C66F" opacity=".62"/><path d="M0 95V50h38v45m8 0V31h55v64m151 0V38h52v57" fill="#92A4A7"/><path d="M0 117Q68 103 132 117T253 114Q282 109 304 116V192H0Z" fill="url(#community-ground)"/></g>
+<g id="layer-context">
+  <path d="M0 100V55h55v57H0Z" fill="url(#community-wall)"/><path d="M0 55l28-18 27 18Z" fill="#825F4F"/><path d="M13 70h14v18H13Zm25 0h12v18H38Z" fill="#7BA0AA" stroke="#F0DFC2" stroke-width="1.3"/>
+  <path d="M247 99V43h57v56Z" fill="#D5BE9F"/><path d="M247 43l28-18 29 18Z" fill="#725B52"/><path d="M257 57h13v15h-13Zm21 0h13v15h-13Zm-21 25h13v14h-13Zm21 0h13v14h-13Z" fill="#7E9DA2" stroke="#F0DFC2" stroke-width="1.2"/>
+  <path d="M0 119Q66 107 135 121T265 116Q287 112 304 117V192H0Z" fill="url(#community-ground)"/>
+  <path d="M93 192Q110 158 151 148Q193 142 217 165L231 192Z" fill="#C9B78F"/><path d="M111 188Q131 166 162 159m18-1q21 8 34 28" fill="none" stroke="#EEE0BF" stroke-width="2"/>
+  <path d="M32 147H92v25H32Z" fill="#87664B" stroke="#584E3F" stroke-width="1.3"/><path d="M38 146q7-13 14-4 7-16 16-2 10-8 17 6" fill="none" stroke="#688357" stroke-width="4"/>
+  <path d="M224 151V113l10-13 11 13v38Z" fill="#765B46"/><path d="M215 117q4-16 15-15 5-16 15-4 12 3 13 18-12-6-22 3-11-7-21-2Z" fill="url(#community-leaf)"/>
+</g>
+<g id="layer-focal" filter="url(#community-shadow)">
+  <circle cx="121" cy="111" r="7" fill="#C98F69"/><path d="M114 110q1-10 8-10 7 1 8 10l-4-3h-10Z" fill="#473E39"/><path d="M113 120Q121 116 130 121L134 142 109 143Z" fill="#547B92" stroke="#405967" stroke-width="1.3"/><path d="M114 140L111 155Q114 159 119 157L123 143m4-2 4 15q4 2 7-2l-5-14" fill="#394E59"/><path d="M115 123Q109 122 107 128L101 137Q101 140 105 141L110 136 118 132m10-9q7 0 9 7l4 7q0 4-4 4l-5-7-7-4" fill="#C98F69"/>
+  <circle cx="181" cy="112" r="7" fill="#A97859"/><path d="M173 109q1-9 8-9 7 1 8 9l-4-2h-10Z" fill="#523E38"/><path d="M173 121Q181 116 189 121L194 143 168 144Z" fill="#B9785A" stroke="#6F4C43" stroke-width="1.3"/><path d="M173 141L170 156q3 3 7 1l5-14m5-2 6 16q4 1 7-2l-7-14" fill="#3D4E55"/><path d="M173 124q-7 0-10 6l-7 7q-1 4 4 5l7-6 9-4m12-7q7 1 9 7l6 6q1 4-4 5l-8-7-8-3" fill="#A97859"/>
+  <path d="M151 141q7-8 14 0l-3 10h-10Z" fill="#D98550"/><path d="M154 140l4-7 4 7" fill="none" stroke="#537B5B" stroke-width="2"/><path d="M158 134q0-7 5-10m-7 11q-5-6-9-4m13 3q4-6 9-5" fill="none" stroke="#668B63" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="layer-details">
+  <path d="M14 177q12-5 23 0m49 8q11-5 22 0m113-6q12-5 24 0m49-10q12-5 22 0" fill="none" stroke="#BFCB8C" stroke-width="1.5"/>
+  <circle cx="79" cy="162" r="2" fill="#E5C86E"/><circle cx="96" cy="169" r="1.7" fill="#E5C86E"/><circle cx="246" cy="164" r="1.8" fill="#E5C86E"/>
+  <path d="M65 103q8-5 15 0m153-17q8-5 14 0m-119-30q8-5 15 0" fill="none" stroke="#F0F1E4" stroke-width="1.4"/>
+  <path d="M134 166l6-5m-3 11 7-6m39-10 6 5" fill="none" stroke="#F1E7CD" stroke-width="1.3"/>
+</g>
+<g id="layer-lighting"><path d="M93 32q29-17 56-9m94 32q21-14 43-4" fill="none" stroke="#EDF0E5" stroke-width="1.4"/><path d="M99 188q17-27 46-35m36 2q23 8 39 30" fill="none" stroke="#FFF3D6" stroke-width="1.2" opacity=".65"/><rect x="1" y="1" width="302" height="190" fill="none" stroke="#FFF8E7" stroke-width="1" opacity=".16"/></g>
+</svg>

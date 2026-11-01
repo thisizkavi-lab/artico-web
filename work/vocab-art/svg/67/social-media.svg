@@ -1,0 +1,44 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 67 - Media and celebrity
+ WORD: social media
+ CONTEXTUAL_DEFINITION: Digital platforms where people create profiles, publish updates and interact with one another.
+ PEDAGOGICAL_ARCHETYPE: connected network of people, phones and social posts
+ SYNONYM_GUARD: Show several users connected through profiles and shared posts; distinguish social media as a network from one specific account or post.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: Three people use phones at different places around a central web of connected profile circles, small photo tiles, a heart and a comment bubble.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="67:social media" data-archetype="networked social communication platform">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/>
+  <circle cx="151" cy="84" r="47" fill="#E5DDD0" stroke="#D6A64C" stroke-width="1.5"/>
+  <path d="M151 38L80 65M151 38L224 65M80 65L91 132M224 65L211 132M91 132L151 130M211 132L151 130" fill="none" stroke="#597D8B" stroke-width="1.6" stroke-dasharray="3 4"/>
+  <path d="M111 71H191V111H111Z" fill="#26384A"/><path d="M117 76H185V103H117Z" fill="#AFC0B8"/><path d="M117 96Q137 80 151 94T185 87V103H117Z" fill="#798C72"/>
+ </g>
+ <g id="layer-context">
+  <!-- three people with phones -->
+  <circle cx="55" cy="54" r="7" fill="#D29A78"/><path d="M48 53Q49 44 56 45Q63 46 63 55L59 50H50Z" fill="#26384A"/><path d="M44 63Q55 58 66 63L70 84H40Z" fill="#B85E5A"/><path d="M48 64L41 72M64 64L71 71" stroke="#D29A78" stroke-width="2"/>
+  <path d="M50 74H57V86H50Z" fill="#26384A"/><path d="M52 76H55V83H52Z" fill="#D6A64C"/>
+  <circle cx="246" cy="54" r="7" fill="#A77D68"/><path d="M239 53Q240 44 247 45Q254 46 254 55L250 50H241Z" fill="#405663"/><path d="M235 63Q246 58 257 63L261 84H231Z" fill="#597D8B"/><path d="M239 64L232 71M255 64L262 71" stroke="#A77D68" stroke-width="2"/>
+  <path d="M242 73H249V85H242Z" fill="#26384A"/><path d="M244 75H247V82H244Z" fill="#D6A64C"/>
+  <circle cx="151" cy="147" r="7" fill="#C18A6B"/><path d="M144 146Q145 137 152 138Q159 139 159 148L155 143H146Z" fill="#26384A"/><path d="M140 156Q151 151 162 156L165 174H137Z" fill="#798C72"/>
+ </g>
+ <g id="layer-focal">
+  <!-- central profile and post nodes -->
+  <circle cx="151" cy="84" r="9" fill="#D6A64C"/><circle cx="151" cy="81" r="3.5" fill="#26384A"/><path d="M145 90Q151 85 157 90" fill="none" stroke="#26384A" stroke-width="1.4"/>
+  <path d="M128 113H142V125H128Z" fill="#B85E5A"/><path d="M131 121L135 116L139 120V124H131Z" fill="#D6A64C"/>
+  <path d="M160 113H174V125H160Z" fill="#597D8B"/><circle cx="167" cy="119" r="3" fill="#D6A64C"/>
+  <path d="M144 128Q150 122 156 128Q162 135 150 142Q138 135 144 128Z" fill="#B85E5A"/>
+  <path d="M85 52Q90 47 95 52Q100 58 90 64Q80 58 85 52Z" fill="#D6A64C"/>
+  <path d="M211 49Q217 43 223 49Q229 56 217 63Q205 56 211 49Z" fill="#B85E5A"/>
+ </g>
+ <g id="layer-details">
+  <circle cx="80" cy="65" r="2.2" fill="#D6A64C"/><circle cx="224" cy="65" r="2.2" fill="#D6A64C"/><circle cx="91" cy="131" r="2.2" fill="#D6A64C"/><circle cx="211" cy="132" r="2.2" fill="#D6A64C"/>
+  <path d="M120 70H183" stroke="#F6E5CE" stroke-width="1"/><path d="M121 106H183" stroke="#F6E5CE" stroke-width="1"/>
+  <circle cx="145" cy="74" r="1.3" fill="#B85E5A"/><circle cx="158" cy="95" r="1.3" fill="#D6A64C"/>
+  <path d="M47 89H66M237 89H255" stroke="#F6E5CE" stroke-width="1"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="95" rx="127" ry="69" fill="#E7C66B" opacity=".08"/><path d="M45 43L57 53M259 43L246 53" stroke="#FFF1C7" stroke-width="1.1" opacity=".55"/>
+  <path d="M35 151H270" stroke="#FFF7E4" stroke-width="1" opacity=".65"/>
+ </g>
+</svg>

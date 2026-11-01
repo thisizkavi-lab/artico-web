@@ -1,0 +1,25 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: turn right
+  CONTEXTUAL_DEFINITION: Steer a vehicle through an intersection onto the road on its right.
+  PEDAGOGICAL_ART_DIRECTOR: Use a clear four-way intersection; the car approaches from the bottom and the blue curved route bends onto the right-hand street.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Keep the starting lane and rightward exit explicit; make this the right-turn counterpart to the retained left-turn anchor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Crossroads center at (151,95); car enters upward from (152,153); rounded route bends clockwise and exits east along y=74; arrowhead points right.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:turn right" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="turnright-land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5EEDC"/><stop offset="1" stop-color="#C6D9BD"/></linearGradient>
+    <linearGradient id="turnright-road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#67788A"/><stop offset="1" stop-color="#45576B"/></linearGradient>
+    <linearGradient id="turnright-car" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68A5C6"/><stop offset="1" stop-color="#3B789D"/></linearGradient>
+    <radialGradient id="turnright-halo"><stop stop-color="#F2C14E" stop-opacity=".5"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="turnright-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#turnright-land)"/><path d="M0 61H304V131H0Z" fill="url(#turnright-road)"/><path d="M117 0H187V192H117Z" fill="url(#turnright-road)"/><path d="M0 55H304M0 137H304M111 0V192M193 0V192" stroke="#FAF8F3" stroke-width="5"/><path d="M0 96H304M152 0V192" stroke="#F8F5EC" stroke-width="1.5" stroke-dasharray="9 9" opacity=".7"/></g>
+  <g id="layer-context"><rect x="18" y="20" width="51" height="26" rx="4" fill="#D8B997" stroke="#766656" stroke-width="1.5"/><rect x="234" y="154" width="53" height="22" rx="4" fill="#A7BECC" stroke="#556B7C" stroke-width="1.5"/><circle cx="40" cy="155" r="15" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><circle cx="267" cy="38" r="13" fill="#7FA87B" stroke="#486750" stroke-width="1.6"/><path d="M114 57V72M190 119V134" stroke="#FAF8F3" stroke-width="5" stroke-dasharray="4 4"/></g>
+  <g id="layer-focal" filter="url(#turnright-shadow)"><ellipse cx="217" cy="76" rx="62" ry="53" fill="url(#turnright-halo)"/><path d="M152 170V99Q152 75 176 75H262" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M152 170V99Q152 75 176 75H262" fill="none" stroke="#4A72B2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M250 62L274 75L250 88Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.8"/><g transform="rotate(90 152 154)"><path d="M137 141Q140 132 151 132H164Q174 134 178 144L181 170H133Z" fill="url(#turnright-car)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M144 140H170L173 156H140Z" fill="#C4E0E8" stroke="#536B7A" stroke-width="1.4"/><circle cx="143" cy="169" r="4.5" fill="#34495E" stroke="#1E2A3B" stroke-width="1"/><circle cx="171" cy="169" r="4.5" fill="#34495E" stroke="#1E2A3B" stroke-width="1"/></g><circle cx="152" cy="99" r="8" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5"/></g>
+  <g id="layer-details"><path d="M152 149V109" stroke="#D5E2F1" stroke-width="1.6" stroke-dasharray="3 5"/><path d="M189 66H221M231 66H247" stroke="#D5E2F1" stroke-width="1.5" stroke-dasharray="3 5"/><path d="M178 88Q184 77 178 67" fill="none" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><path d="M47 67H92M212 147H279" stroke="#FFFFFF" stroke-width="1.2" opacity=".75"/><circle cx="207" cy="75" r="4" fill="#F2C14E"/></g>
+  <g id="layer-lighting"><ellipse cx="217" cy="76" rx="68" ry="59" fill="none" stroke="#F2C14E" stroke-width="1.2" opacity=".65"/><path d="M122 5V46M185 5V46" stroke="#FFFFFF" stroke-width="1.1" opacity=".7"/><ellipse cx="151" cy="177" rx="26" ry="4" fill="#283A4E" opacity=".28"/></g>
+</svg>

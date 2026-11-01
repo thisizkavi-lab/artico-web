@@ -1,0 +1,32 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 68 - Sickness
+  WORD: sneeze
+  CONTEXTUAL_DEFINITION: A sudden burst of air from the nose and mouth.
+  PEDAGOGICAL_ARCHETYPE: person catching a sneeze in a tissue
+  SYNONYM_GUARD: Cover both nose and mouth with a tissue; cough is shown into a bent elbow.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person turning into a folded tissue.
+    - Context_Layer: Face and upper body are calm and clear.
+    - Focal_Layer: Tissue catches the sneeze at nose level.
+    - Details_Layer: Eyes squeeze shut and short motion lines radiate outward.
+    - Lighting_Layer: Small blue burst lines mark the sudden action.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="68:sneeze" data-archetype="sneeze into a tissue">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#F0EEE8"/><ellipse cx="152" cy="175" rx="95" ry="12" fill="#E7D6D1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><path d="M78 178Q84 145 111 137H190Q218 145 224 178Z" fill="#597D8B" stroke="#26384A" stroke-width="2.2"/><path d="M98 76Q94 40 125 24Q156 8 188 28Q211 46 202 91L190 121Q174 143 149 139Q122 137 108 117Z" fill="#D29A78" stroke="#26384A" stroke-width="2.3"/><path d="M98 71Q94 39 124 21Q157 5 190 26Q211 43 202 74L188 59Q162 69 143 52Q118 69 98 71Z" fill="#536B63" stroke="#26384A" stroke-width="2.2"/><path d="M121 82Q131 86 140 82M164 82Q173 86 182 82" fill="none" stroke="#26384A" stroke-width="2.2"/><path d="M139 112Q150 108 160 112" fill="none" stroke="#654E43" stroke-width="1.8"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="151" cy="104" rx="48" ry="29" fill="#D6A64C" opacity=".42"/><path d="M122 103Q136 96 152 100L181 112L163 127L133 121Z" fill="#F6E5CE" stroke="#26384A" stroke-width="2.3"/><path d="M127 106L139 114L158 103M142 120L153 111L170 117" fill="none" stroke="#597D8B" stroke-width="1.4"/><path d="M122 103Q136 96 152 100L181 112L163 127L133 121Z" fill="none" stroke="#D6A64C" stroke-width="1.1" stroke-dasharray="3 3"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M124 74L136 69M165 69L178 74" stroke="#26384A" stroke-width="2.5" stroke-linecap="round"/><path d="M112 93L102 88M190 93L200 88M113 107L101 107M189 107L201 107" stroke="#597D8B" stroke-width="2" stroke-linecap="round"/><path d="M165 115L178 113" stroke="#597D8B" stroke-width="1.8"/>
+    <path d="M129 106L139 111" stroke="#D6D0C4" stroke-width="1"/>
+    <path d="M137 117L148 121" stroke="#D6D0C4" stroke-width="1"/>
+    <path d="M154 105L166 112" stroke="#D6D0C4" stroke-width="1"/>
+    <path d="M115 96L109 95" stroke="#597D8B" stroke-width="1.3"/>
+    <path d="M110 101L104 101" stroke="#597D8B" stroke-width="1.3"/>
+    <path d="M189 98L195 97" stroke="#597D8B" stroke-width="1.3"/>
+    <path d="M193 103L200 103" stroke="#597D8B" stroke-width="1.3"/>
+    <path d="M83 151Q96 145 109 151" stroke="#A9B9B4" stroke-width="1" fill="none"/>
+    <path d="M188 151Q201 146 215 152" stroke="#A9B9B4" stroke-width="1" fill="none"/>
+    <path d="M122 162Q141 166 159 162" stroke="#A9B9B4" stroke-width="1" fill="none"/>
+    </g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M108 79L99 73M194 79L203 73M107 115L97 119M195 115L205 119" stroke="#D6A64C" stroke-width="1.2" stroke-dasharray="3 3"/></g>
+</svg>

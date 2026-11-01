@@ -1,0 +1,33 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 66 - TV
+ WORD: volume
+ CONTEXTUAL_DEFINITION: The sound level of a TV, shown by a speaker and rising or falling sound bars.
+ PEDAGOGICAL_ARCHETYPE: television sound-level speaker with stepped bars
+ SYNONYM_GUARD: Teach loudness as a TV sound level; avoid the thickness of a book or a hand pressing volume up.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: A television emits sound from a side speaker with progressively taller sound waves indicating a high sound level.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="66:volume" data-archetype="TV sound level">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 158H304V192H0Z" fill="#C8B89E"/><path d="M0 158H304" stroke="#796B59" stroke-width="1.4"/><path d="M38 36H178V130H38Z" fill="#26384A"/><path d="M46 43H170V119H46Z" fill="#597D8B"/><path d="M56 52H160V111H56Z" fill="#A9B69C"/><path d="M56 91Q83 71 108 91T160 88V111H56Z" fill="#798C72"/><path d="M91 130L97 138H119L125 130Z" fill="#64777C"/><path d="M82 138H134V143H82Z" fill="#26384A"/>
+  <ellipse cx="108" cy="151" rx="88" ry="5" fill="#9D8C75" opacity=".36"/>
+ </g>
+ <g id="layer-context">
+  <path d="M198 83H210L230 68V108L210 94H198Z" fill="#26384A" stroke="#D6A64C" stroke-width="1.6"/><path d="M205 86H211L222 78V99L211 91H205Z" fill="#D6A64C"/>
+  <path d="M239 78Q250 88 239 99M248 70Q265 88 248 107M258 62Q283 88 258 115" fill="none" stroke="#B85E5A" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M193 119H274" stroke="#F6E5CE" stroke-width="1.2"/><circle cx="248" cy="126" r="3" fill="#D6A64C"/>
+  <path d="M52 47H167" stroke="#F6E5CE" stroke-width="1.2" opacity=".65"/>
+ </g>
+ <g id="layer-focal">
+  <path d="M211 130V116H219V130M227 130V106H235V130M243 130V96H251V130M259 130V84H267V130" fill="#D6A64C" stroke="#26384A" stroke-width="1.3"/>
+  <path d="M208 132H271" stroke="#26384A" stroke-width="2"/>
+  <circle cx="65" cy="125" r="2" fill="#B85E5A"/><circle cx="75" cy="125" r="2" fill="#D6A64C"/><circle cx="85" cy="125" r="2" fill="#798C72"/>
+ </g>
+ <g id="layer-details">
+  <path d="M62 57H151M62 60H128" stroke="#F6E5CE" stroke-width="1" opacity=".7"/><circle cx="161" cy="110" r="2.2" fill="#D6A64C"/><path d="M202 122H269" stroke="#F6E5CE" stroke-width="1"/>
+  <path d="M233 56L240 51M252 52L258 47M273 58L278 53" stroke="#B85E5A" stroke-width="1.6" stroke-linecap="round"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="108" cy="65" rx="64" ry="33" fill="#E7C66B" opacity=".1"/><path d="M42 39L60 68M170 39L155 68" stroke="#FFF1C7" stroke-width="1.2" opacity=".55" fill="none"/><path d="M39 131H176" stroke="#FFF7E4" stroke-width="1" opacity=".7"/>
+ </g>
+</svg>

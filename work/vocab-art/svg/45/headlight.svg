@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 45 - Driving a car
+  WORD: headlight
+  CONTEXTUAL_DEFINITION: The forward-facing lamp at the front of a car that illuminates the road.
+  PEDAGOGICAL_ART_DIRECTOR: Crop to a front corner of a car and make one headlamp brightly glow, with a broad beam falling across the road ahead.
+  PEDAGOGICAL_ARCHETYPE: 2 - Part-of-whole focus callout
+  SYNONYM_GUARD: This is the car's lamp, not the whole car, a tail light, or a railway headlamp.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Show a muted blue front quarter of an automobile facing right from x=38..226; isolate the large lamp at (224,110), y=96..126 in rich warm white; cast a triangular pale gold beam toward x=278..145 along the road.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="45:headlight" data-archetype="part-of-whole-focus">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="lamp-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9AB2C7"/><stop offset="1" stop-color="#526F8F"/></linearGradient>
+    <linearGradient id="lamp-glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF9DD"/><stop offset="1" stop-color="#E8B95A"/></linearGradient>
+    <radialGradient id="lamp-halo"><stop stop-color="#F2C14E" stop-opacity=".55"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="lamp-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".17"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="145" width="304" height="47" fill="#EEE7DA"/><path d="M0 145 H304" stroke="#1E2A3B" stroke-width="1.4"/><path d="M15 166 H293" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="18 13"/><ellipse cx="154" cy="153" rx="108" ry="7" fill="#DDD4C3"/></g>
+  <g id="layer-context"><path d="M236 126 L291 95 L291 145 L236 137Z" fill="#F2C14E" opacity=".12"/><path d="M226 126 L278 94 M228 133 L281 145" stroke="#D5C59B" stroke-width="1.1" opacity=".7"/><path d="M24 139 H269" stroke="#8B9699" stroke-width="1.5" opacity=".55"/><path d="M34 70 H66 M30 79 H56" stroke="#8EB0DE" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#lamp-shadow)"><path d="M42 135 L46 92 Q52 68 82 61 H182 Q205 64 224 82 L239 98 L239 139 H42Z" fill="url(#lamp-body)" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/><path d="M66 86 Q82 67 111 67 H178 Q195 70 209 88 L218 105 H59Z" fill="#D7E5E9" stroke="#1E2A3B" stroke-width="1.5" opacity=".86"/><path d="M48 109 Q77 101 113 105 L115 132 H47Z" fill="#6B8292" stroke="#1E2A3B" stroke-width="1.6"/><path d="M185 103 Q208 96 230 103 L236 119 Q232 130 208 132 H186Z" fill="url(#lamp-glass)" stroke="#1E2A3B" stroke-width="2.5"/><path d="M195 106 Q212 101 226 106 L231 116 Q226 124 210 126 L195 122Z" fill="#FFFDF4" stroke="#F2C14E" stroke-width="1.5"/><path d="M197 110 Q214 106 228 111" fill="none" stroke="#FFFFFF" stroke-width="2.2"/><path d="M50 137 H239" stroke="#41566A" stroke-width="3"/><path d="M69 76 Q117 55 174 65" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".85"/></g>
+  <g id="layer-details"><path d="M229 99 L288 88 L288 149 L229 130Z" fill="url(#lamp-halo)" opacity=".58"/><path d="M239 107 L282 100 M239 116 L289 116 M236 125 L280 138" stroke="#E7CC83" stroke-width="1.2" opacity=".7"/><path d="M184 95 Q213 82 238 94" fill="none" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4 4"/><circle cx="224" cy="116" r="31" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="3 4" opacity=".8"/><path d="M248 151 H285" stroke="#1E2A3B" stroke-width="1.1" opacity=".35"/></g>
+  <g id="layer-lighting"><ellipse cx="225" cy="114" rx="62" ry="49" fill="url(#lamp-halo)" opacity=".35"/><path d="M200 107 Q215 102 228 108" fill="none" stroke="#FFFFFF" stroke-width="1.7"/><path d="M28 29 H276" stroke="#FFFFFF" stroke-width=".7"/></g>
+</svg>

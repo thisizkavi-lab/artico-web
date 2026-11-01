@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 24 — Studying
+  WORD: enroll in / enrol on (Verb phrase)
+  CONTEXTUAL_DEFINITION: Officially register to take a course or join a program.
+  PEDAGOGICAL_ARCHETYPE: 3 — Person in action
+  SYNONYM_GUARD: Show a student completing registration at a university desk and receiving a course folder; do not show graduating or entering a building only.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Student services counter with campus window.
+    - Context_Layer: Course folders and a registration tray.
+    - Focal_Layer: Student hands a form to an administrator and receives a folder.
+    - Details_Layer: Blank check boxes and a clipped paper stack.
+    - Lighting_Layer: Bright welcoming light on the registration exchange.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="24:enroll in / enrol on (uk wording)" data-archetype="person-in-action">
+  <defs><style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#E3E8F0;--c-primary:#5479AC;--c-secondary:#315782;--c-accent:#D9A441;--c-highlight:#FEF9C3}</style><linearGradient id="enroll-bg" x2="0" y2="1"><stop stop-color="#EEF4FA"/><stop offset="1" stop-color="#FAF8F3"/></linearGradient><filter id="enroll-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#enroll-bg)"/><path d="M0 151Q76 146 152 151T304 149V192H0Z" fill="#E8DDC8"/><path d="M20 24H92V75H20Z" fill="#DCECFB" stroke="#64748B" stroke-width="2"/><path d="M56 25V74M21 49H91" stroke="#FFFFFF" stroke-width="2.5"/><path d="M0 150H304" stroke="#A98A64" stroke-width="3"/></g>
+  <g id="layer-context"><path d="M222 35H278V93H222Z" fill="#5479AC" stroke="#315782" stroke-width="1.4"/><path d="M229 43H271V55H229Z" fill="#FFFEFA"/><path d="M229 61H271V73H229Z" fill="#D9857F"/><path d="M229 79H271V87H229Z" fill="#91A77C"/><path d="M42 119H100V126H42Z" fill="#A98A64"/><path d="M48 126V149M94 126V149" stroke="#8D765A" stroke-width="2.5"/></g>
+  <g id="layer-focal" class="vocab-focal" filter="url(#enroll-shadow)"><path d="M71 100H234V110H71Z" fill="#A98A64" stroke="#65472F" stroke-width="1.3"/><path d="M81 110V149M224 110V149" stroke="#8D765A" stroke-width="3"/><circle cx="118" cy="64" r="11" fill="#E7B99B" stroke="#1E2A3B" stroke-width="1.3"/><path d="M107 64Q108 50 119 51Q131 52 130 65L124 68Q121 58 116 59Q112 60 109 70Z" fill="#27364B"/><path d="M101 82Q117 75 133 82L139 101L128 110L105 103Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.5"/><path d="M107 85L122 94L148 95M130 84L142 92L154 94" fill="none" stroke="#1E2A3B" stroke-width="4.5" stroke-linecap="round"/><path d="M107 85L122 94L148 95M130 84L142 92L154 94" fill="none" stroke="#E7B99B" stroke-width="2.5" stroke-linecap="round"/><path d="M176 96L195 83L208 93L189 106Z" fill="#D9857F" stroke="#A95059" stroke-width="1.2"/><circle cx="205" cy="65" r="10" fill="#C98961" stroke="#1E2A3B" stroke-width="1.2"/><path d="M195 65Q196 53 206 54Q216 55 215 66L210 69Q207 60 203 61Q199 62 197 72Z" fill="#27364B"/><path d="M191 82Q205 76 219 82L224 99L214 106L194 100Z" fill="#91A77C" stroke="#1E2A3B" stroke-width="1.4"/><path d="M195 85L184 92L173 99M217 85L208 92L198 96" fill="none" stroke="#1E2A3B" stroke-width="4.2" stroke-linecap="round"/><path d="M195 85L184 92L173 99M217 85L208 92L198 96" fill="none" stroke="#C98961" stroke-width="2.3" stroke-linecap="round"/><path d="M144 90L162 86L166 101L148 104Z" fill="#FFFEFA" stroke="#64748B" stroke-width="1.1"/></g>
+  <g id="layer-details"><path d="M151 93L157 91" stroke="#D9A441" stroke-width="2"/><path d="M147 104L163 101" stroke="#88A9D0" stroke-width="1"/><circle cx="161" cy="107" r="2.5" fill="#D9A441"/></g>
+  <g id="layer-lighting"><ellipse cx="155" cy="93" rx="126" ry="69" fill="#FEF9C3" opacity=".09"/><path d="M20 25H92V74" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".8"/><path d="M71 100H234" stroke="#FFFFFF" stroke-width=".9" opacity=".5"/></g>
+</svg>

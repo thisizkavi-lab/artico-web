@@ -1,0 +1,23 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 56 - Birds and bugs
+  WORD: crow (noun)
+  CONTEXTUAL_DEFINITION: A large black corvid perched in open woodland.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal in habitat
+  SYNONYM_GUARD: Give it a glossy all-black body, straight heavy bill, and fan-shaped tail; this is the bird, not a rooster's crowing or the Crow people.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Place a black crow facing right, body x=86..188 y=78..132, head at x=184 y=76, thick black bill to x=221, tail wedge to x=53, and clawed feet gripping a branch at y=143; add a few leaves.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="56:crow (bird)" data-archetype="corvid">
+ <defs>
+  <style>:root{--c-bg-1:#EEF4FA;--c-bg-2:#FAF8F3;--c-surface:#EAE3D5;--c-primary:#3B4B58;--c-secondary:#1E2A3B;--c-accent:#7FB07A;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+  <linearGradient id="crow-sky" x2="0" y2="1"><stop stop-color="#DCEAF1"/><stop offset="1" stop-color="#F5F1E7"/></linearGradient>
+  <linearGradient id="crow-feather" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#596976"/><stop offset=".45" stop-color="#273846"/><stop offset="1" stop-color="#101A26"/></linearGradient>
+  <radialGradient id="crow-gloss"><stop stop-color="#A9C4C7" stop-opacity=".36"/><stop offset="1" stop-color="#A9C4C7" stop-opacity="0"/></radialGradient>
+  <filter id="crow-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2"/></filter>
+ </defs>
+ <g id="layer-backdrop"><rect width="304" height="192" fill="url(#crow-sky)"/><path d="M0 130Q76 117 143 129T304 123V192H0Z" fill="#DEE5D5"/><path d="M0 151Q96 142 166 154T304 147V192H0Z" fill="#C9D5C0"/><circle cx="252" cy="39" r="20" fill="#F3D995" opacity=".55"/><path d="M24 130l4-11m7 10 5-13m216 13 3-10m9 10 5-8" fill="none" stroke="#8C9B78" stroke-width="1.4" stroke-linecap="round"/></g>
+ <g id="layer-context"><path d="M30 141Q112 135 187 141T284 136" fill="none" stroke="#72543B" stroke-width="7" stroke-linecap="round"/><path d="M53 136l-7-9m10 9 8-10m162 10 8-10" fill="none" stroke="#72543B" stroke-width="3" stroke-linecap="round"/><path d="M39 128q5-12 14-5q-4 10-14 5Zm24-2q5-12 14-5q-4 10-14 5Zm159 1q5-12 14-5q-4 10-14 5Z" fill="#738A6A"/><ellipse cx="141" cy="151" rx="59" ry="5" fill="#647360" opacity=".19"/></g>
+ <g id="layer-focal" filter="url(#crow-shadow)"><path d="M86 105Q91 83 118 77Q149 70 177 83Q193 91 187 115Q179 137 145 137Q106 136 91 122Z" fill="url(#crow-feather)" stroke="#111C27" stroke-width="1.8"/><path d="M105 102Q127 85 154 91Q172 96 169 117Q151 133 124 127Q109 121 105 102Z" fill="#354955"/><path d="M101 109L51 91L72 122L99 128Z" fill="#172531" stroke="#111C27" stroke-width="1.3"/><path d="M68 96L49 91L74 109M73 106L58 112L96 120" fill="none" stroke="#485D68" stroke-width="1.3"/><circle cx="179" cy="78" r="20" fill="url(#crow-feather)" stroke="#111C27" stroke-width="1.5"/><path d="M194 75L222 80L195 88Z" fill="#202B34" stroke="#101A24" stroke-width="1.2"/><circle cx="184" cy="74" r="2.4" fill="#D3B95F"/><circle cx="184" cy="74" r="1" fill="#1E2A3B"/><path d="M130 133l-1 9m22-7 3 8m-25-1-8 2m33-1 8 1" fill="none" stroke="#2C3941" stroke-width="2.5" stroke-linecap="round"/><path d="M127 142q-4 5-9 0m37 0q4 5 9 0" fill="none" stroke="#1A252E" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="layer-details"><ellipse cx="143" cy="101" rx="48" ry="24" fill="url(#crow-gloss)"/><path d="M109 92q17-13 37-7m-31 25q19 10 36 8" fill="none" stroke="#9EB2B4" stroke-width="1.2" opacity=".55" stroke-linecap="round"/><path d="M45 144l-4-5m9 5 4-5m178 4 4-5" fill="none" stroke="#81946F" stroke-width="1.3" stroke-linecap="round"/></g>
+ <g id="layer-lighting"><path d="M101 91q13-13 31-13m44 5q8 3 12 10" fill="none" stroke="#D2E2DF" stroke-width="1.6" opacity=".58" stroke-linecap="round"/><ellipse cx="146" cy="100" rx="59" ry="31" fill="#FFFFFF" opacity=".025"/></g>
+</svg>

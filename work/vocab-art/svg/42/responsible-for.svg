@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 42 - Applying for a job
+  WORD: responsible for
+  CONTEXTUAL_DEFINITION: Having the duty to take care of a particular task or outcome.
+  PEDAGOGICAL_ART_DIRECTOR: Show one worker taking ownership of an assigned workplace task.
+  PEDAGOGICAL_ARCHETYPE: 20 - Task ownership
+  SYNONYM_GUARD: Make the specific assignment and accountable worker visible; do not confuse owning a duty with supervising other people.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Put one worker at x=88..144 beside a single equipment station at x=174..239. The worker holds a small assignment checklist with one green check and a key-like task token; no other worker is present, emphasizing personal duty for this outcome.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="42:responsible for" data-archetype="task-ownership">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="responsible-station" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#E5F0E1"/></linearGradient>
+    <linearGradient id="responsible-shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5479AC"/><stop offset="1" stop-color="#3D5F91"/></linearGradient>
+    <radialGradient id="responsible-halo"><stop stop-color="#FFF1B9" stop-opacity=".72"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="responsible-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".16"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><rect y="154" width="304" height="38" fill="#EEE7DA"/><path d="M0 154 H304" stroke="#1E2A3B" stroke-width="2"/><ellipse cx="152" cy="166" rx="106" ry="8" fill="#DDD4C3"/></g>
+  <g id="layer-context"><rect x="28" y="24" width="248" height="108" rx="4" fill="#F2EEE5" stroke="#D4CCBD" stroke-width="1.2"/><path d="M34 134 H270 V145 H34 Z" fill="#C88446" stroke="#1E2A3B" stroke-width="1.5"/><path d="M47 145 V155 M257 145 V155" stroke="#965D28" stroke-width="2.2"/><rect x="176" y="72" width="65" height="58" rx="4" fill="url(#responsible-station)" stroke="#5479AC" stroke-width="1.2"/><rect x="188" y="85" width="42" height="31" rx="3" fill="#DDE8F4" stroke="#64748B" stroke-width="1"/><circle cx="209" cy="100" r="9" fill="#FFFFFF" stroke="#5479AC" stroke-width="1"/><path d="M205 100 L208 103 L214 96" fill="none" stroke="#547A56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M181 78 H236" stroke="#A8D4A2" stroke-width="1.5"/><path d="M248 83 V110 M248 88 H254 V93 H248 M248 103 H254" fill="none" stroke="#C88446" stroke-width="1.5" stroke-linecap="round"/><path d="M183 121 H235" stroke="#CBD5E1" stroke-width=".9"/></g>
+  <g id="layer-focal" filter="url(#responsible-shadow)"><path d="M77 127 Q79 102 92 95 L93 86 Q89 82 91 74 Q99 66 110 69 Q119 72 117 83 L115 90 Q128 96 130 124 L127 136 H81 Z" fill="url(#responsible-shirt)" stroke="#1E2A3B" stroke-width="1.8"/><ellipse cx="104" cy="78" rx="9" ry="11" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1"/><path d="M95 76 Q97 68 105 68 Q113 69 117 76 Q109 72 102 73 Z" fill="#3D342D"/><path d="M85 102 Q103 96 122 102" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><rect x="128" y="91" width="29" height="39" rx="2" fill="#FFFFFF" stroke="#5479AC" stroke-width="1.1"/><circle cx="136" cy="101" r="3" fill="#E5F0E1" stroke="#64748B" stroke-width=".7"/><path d="M134 101 L136 103 L139 99" fill="none" stroke="#547A56" stroke-width="1"/><path d="M143 101 H152 M133 111 H152 M133 117 H150" stroke="#CBD5E1" stroke-width=".9"/><path d="M122 105 L131 101 M124 107 L132 105" stroke="#D89A6C" stroke-width="3" stroke-linecap="round"/><circle cx="157" cy="83" r="6" fill="#F2C14E" stroke="#C88446" stroke-width="1"/><path d="M162 83 H173 M169 83 V87 M166 83 V86" stroke="#C88446" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-details"><path d="M183 71 L190 65 M236 69 L243 63" stroke="#F2C14E" stroke-width="1.3" stroke-linecap="round"/><circle cx="157" cy="57" r="2" fill="#8EB0DE"/><circle cx="261" cy="61" r="2" fill="#A8D4A2"/><path d="M180 125 H238" stroke="#FFFFFF" stroke-width=".9"/><path d="M81 139 H125" stroke="#DCE8D9" stroke-width="1"/></g>
+  <g id="layer-lighting"><ellipse cx="154" cy="82" rx="101" ry="66" fill="url(#responsible-halo)" opacity=".16"/><path d="M176 74 H240" stroke="#FFFFFF" stroke-width=".9"/><path d="M0 149 H304" stroke="#1E2A3B" stroke-width="1.1"/></g>
+</svg>

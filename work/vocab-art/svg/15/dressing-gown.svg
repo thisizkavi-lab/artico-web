@@ -1,0 +1,21 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 15 — Clothes
+  WORD: dressing gown (Noun)
+  CONTEXTUAL_DEFINITION: A loose, long robe worn over night clothes indoors.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero garment with use cue
+  SYNONYM_GUARD: Show a long, loose indoor gown worn over sleepwear, distinct from a shorter bathrobe.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Person standing at home in a full-length dressing gown.
+    - Context_Layer: Pajama collar and slippers indicate indoor wear.
+    - Focal_Layer: Long robe with soft belt and flowing hem is saturated.
+    - Details_Layer: Fabric folds remain broad and readable.
+    - Lighting_Layer: A gentle halo frames the gown.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="15:dressing gown" data-archetype="hero-garment">
+  <!-- 1. Stage Canvas & Ground Shadow --><g id="layer-backdrop"><rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="175" rx="79" ry="12" fill="#F3ECE1"/></g>
+  <!-- 2. Background Context / Muted Whole / Halo --><g id="layer-context"><circle cx="152" cy="29" r="13" fill="#E2B99B" stroke="#64748B" stroke-width="1.8"/><path d="M140 46L164 46L172 68L132 68Z" fill="#E3E8F0" stroke="#64748B" stroke-width="2"/><path d="M137 166L134 178H119L124 164M168 166L171 178H185L180 164" fill="#CBD5E1" stroke="#64748B" stroke-width="1.8"/><path d="M137 60L105 76L91 146L106 151L122 112L126 170H178L182 112L198 151L213 146L199 76L166 60Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2.2"/></g>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading --><g id="layer-focal"><ellipse cx="152" cy="112" rx="78" ry="69" fill="#FEF3C7" opacity=".45"/><path d="M137 56L106 70L91 147L108 153L123 113L127 173H177L181 113L196 153L213 147L198 70L167 56L152 73Z" fill="#7D75A8" stroke="#1E2A3B" stroke-width="2.6"/><path d="M137 57L151 89L152 171M167 57L153 89L178 171" fill="none" stroke="#B8B1D5" stroke-width="1.8"/><path d="M118 89L186 89" stroke="#D9A441" stroke-width="5" stroke-linecap="round"/><path d="M151 89L157 104L150 112L144 104Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="1.4"/><path d="M137 56L106 70L91 147L108 153L123 113L127 173H177L181 113L196 153L213 147L198 70L167 56L152 73Z" fill="none" stroke="#D97706" stroke-width="1.1" stroke-dasharray="4 4"/></g>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details --><g id="layer-details"><path d="M143 29Q152 33 161 29" fill="none" stroke="#1E2A3B" stroke-width="1.4"/><path d="M141 47L152 59L163 47" fill="none" stroke="#64748B" stroke-width="1.5"/></g>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings --><g id="layer-lighting"><path d="M101 155Q152 165 202 155" fill="none" stroke="#D97706" stroke-width="1" stroke-dasharray="4 4" opacity=".5"/></g>
+</svg>

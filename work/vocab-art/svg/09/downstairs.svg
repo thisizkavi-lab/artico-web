@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 09 - Around the house
+  WORD: downstairs (Adverb)
+  CONTEXTUAL_DEFINITION: Toward or on a lower floor of a building.
+  PEDAGOGICAL_ARCHETYPE: 5 (Spatial layout and movement diagram)
+  SYNONYM_GUARD: Show a person moving down an indoor staircase from an upper landing to the lower floor.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Two-level home interior section.
+    - Context_Layer: Upper landing and lower floor are visibly separated.
+    - Focal_Layer: Stairs descend toward the bottom level with a person stepping down.
+    - Details_Layer: Blue direction arrow follows the descent.
+    - Lighting_Layer: Warm light on both floors.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="9:downstairs" data-archetype="spatial-movement">
+  <defs><linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAF8F3"/><stop offset="1" stop-color="#ECE8DE"/></linearGradient></defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#room)"/><path d="M0 93 L174 93 L174 113 L0 113Z M174 150 L304 150 L304 192 L174 192Z" fill="#D7C5AA"/><path d="M0 113 L150 113" stroke="#B97840" stroke-width="2"/><ellipse cx="220" cy="168" rx="81" ry="7" fill="#BCA889"/></g>
+  <g id="layer-context"><path d="M64 93 L64 31 M79 93 L79 31" stroke="#8A5A35" stroke-width="4"/><path d="M64 31 L99 31 M79 43 L111 43 M92 55 L124 55 M105 67 L137 67 M118 79 L150 79 M131 91 L163 91 M144 103 L176 103 M157 115 L189 115 M170 127 L202 127 M183 139 L215 139 M196 151 L228 151" stroke="#B97840" stroke-width="5" stroke-linecap="round"/><path d="M62 31 L102 31 M78 43 L114 43 M91 55 L127 55 M104 67 L140 67 M117 79 L153 79 M130 91 L166 91 M143 103 L179 103 M156 115 L192 115 M169 127 L205 127 M182 139 L218 139" stroke="#8A5A35" stroke-width="1.4"/><path d="M53 29 L105 29 M216 151 L288 151" stroke="#1E2A3B" stroke-width="3"/></g>
+  <g id="layer-focal"><path d="M132 59 Q131 50 140 49 Q149 50 149 59 L145 68 L135 67Z" fill="#D89A6C" stroke="#1E2A3B" stroke-width="1.5"/><path d="M132 58 Q133 47 142 48 Q147 49 149 55 Q142 52 138 54Z" fill="#27364B"/><path d="M134 67 Q142 64 150 69 L153 84 Q151 92 142 94 L134 89 L131 78Z" fill="#5479AC" stroke="#1E2A3B" stroke-width="1.7"/><path d="M136 72 L125 75 L116 70 M149 73 L158 79" fill="none" stroke="#D89A6C" stroke-width="4.2" stroke-linecap="round"/><path d="M138 92 L140 101 L153 101 M148 92 L155 97 L168 97" fill="none" stroke="#27364B" stroke-width="5" stroke-linecap="round"/><path d="M135 101 L147 101 M163 97 L175 97" stroke="#1E2A3B" stroke-width="3" stroke-linecap="round"/><path d="M247 61 L247 115" stroke="#5479AC" stroke-width="4" stroke-linecap="round"/><path d="M237 103 L247 117 L257 103" fill="none" stroke="#5479AC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M103 35 Q115 28 127 35 M214 125 Q226 118 238 125" fill="none" stroke="#F2C14E" stroke-width="2"/><circle cx="267" cy="42" r="13" fill="#F2C14E" opacity="0.48"/></g>
+  <g id="layer-lighting"><rect x="14" y="13" width="276" height="166" rx="18" fill="none" stroke="#D8CDAF" stroke-width="1" opacity="0.7"/></g>
+</svg>

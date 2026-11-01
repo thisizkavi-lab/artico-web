@@ -1,0 +1,24 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 46 - Maps and directions
+  WORD: footpath
+  CONTEXTUAL_DEFINITION: A narrow path through a field or woods intended for people walking.
+  PEDAGOGICAL_ART_DIRECTOR: Show a slim dirt trail winding through a peaceful wooded area with a walking person and no vehicles.
+  PEDAGOGICAL_ARCHETYPE: 5 - Spatial / direction diagram
+  SYNONYM_GUARD: Keep the trail narrow and pedestrian-only; distinguish it from a broad urban sidewalk.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Narrow path weaves from (42,179) through (125,131),(91,89),(177,65) to (265,24); traveler walks on lower-middle segment.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="46:footpath" data-archetype="spatial-direction">
+  <defs>
+    <style>:root{--c-bg-1:#FAF8F3;--c-bg-2:#EAF3F4;--c-surface:#EEECE4;--c-primary:#4A72B2;--c-secondary:#526274;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="footpath-wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCEAD6"/><stop offset="1" stop-color="#AECBAE"/></linearGradient>
+    <linearGradient id="footpath-earth" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#C29B70"/><stop offset="1" stop-color="#E1C397"/></linearGradient>
+    <radialGradient id="footpath-light"><stop stop-color="#FFF0B0" stop-opacity=".5"/><stop offset="1" stop-color="#F2C14E" stop-opacity="0"/></radialGradient>
+    <filter id="footpath-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#footpath-wood)"/><path d="M0 173Q54 151 94 163T188 156T304 174V192H0Z" fill="#90B397"/><path d="M0 177Q48 157 90 169T185 161T304 178" fill="none" stroke="#65896B" stroke-width="2"/></g>
+  <g id="layer-context"><path d="M0 37Q25 24 50 38T98 39M0 82Q22 70 48 84T94 81M212 26Q242 15 271 27T304 29M222 83Q253 70 280 83T304 81" fill="none" stroke="#92B594" stroke-width="3"/><circle cx="35" cy="47" r="20" fill="#7FA87B" stroke="#486750" stroke-width="1.8"/><circle cx="82" cy="50" r="17" fill="#79A477" stroke="#486750" stroke-width="1.7"/><circle cx="262" cy="48" r="22" fill="#80A87B" stroke="#486750" stroke-width="1.8"/><circle cx="219" cy="52" r="17" fill="#79A477" stroke="#486750" stroke-width="1.7"/><circle cx="43" cy="119" r="15" fill="#82AA7D" stroke="#486750" stroke-width="1.7"/><circle cx="277" cy="127" r="15" fill="#82AA7D" stroke="#486750" stroke-width="1.7"/><path d="M21 68L33 77M71 68L83 77M247 72L259 81M197 72L209 81" stroke="#6F986F" stroke-width="4"/></g>
+  <g id="layer-focal" filter="url(#footpath-shadow)"><ellipse cx="117" cy="129" rx="53" ry="48" fill="url(#footpath-light)"/><path d="M41 188C64 166 101 155 124 137C143 121 113 109 95 92C79 77 104 69 138 69C171 69 192 62 212 45C231 28 252 20 276 15" fill="none" stroke="#8C6F52" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/><path d="M41 188C64 166 101 155 124 137C143 121 113 109 95 92C79 77 104 69 138 69C171 69 192 62 212 45C231 28 252 20 276 15" fill="none" stroke="url(#footpath-earth)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><path d="M47 185C69 164 103 152 120 136C136 121 110 107 92 91C81 80 106 73 140 73C172 73 190 64 209 47" fill="none" stroke="#EBD5B5" stroke-width="1.5" stroke-dasharray="4 7"/><circle cx="62" cy="159" r="3" fill="#9A7B5A"/><circle cx="83" cy="148" r="2.4" fill="#9A7B5A"/><circle cx="118" cy="123" r="2.5" fill="#9A7B5A"/><circle cx="142" cy="73" r="8" fill="#D9A77E" stroke="#1E2A3B" stroke-width="1.5"/><path d="M131 84Q142 78 153 84L157 111H127Z" fill="#4A72B2" stroke="#1E2A3B" stroke-width="1.8"/><path d="M131 88L120 101L125 105L138 96M152 88L163 98L159 103L147 96" fill="#D9A77E" stroke="#1E2A3B" stroke-width="1.5" stroke-linejoin="round"/><path d="M131 109L126 131H138L143 114L149 131H162L153 107" fill="#3F5367" stroke="#1E2A3B" stroke-width="1.7"/></g>
+  <g id="layer-details"><path d="M30 114Q44 106 59 111M235 104Q250 98 264 104" fill="none" stroke="#B6D0B6" stroke-width="2"/><path d="M15 93L23 99M288 99L296 94" stroke="#FFFFFF" stroke-width="1.6"/><ellipse cx="143" cy="133" rx="20" ry="4" fill="#788C73" opacity=".42"/><path d="M133 69Q143 65 154 69" fill="none" stroke="#D7A47B" stroke-width="1.4"/></g>
+  <g id="layer-lighting"><path d="M22 26Q46 17 70 28M231 18Q255 9 278 16" fill="none" stroke="#EAF4E6" stroke-width="1.5"/><ellipse cx="117" cy="129" rx="60" ry="54" fill="none" stroke="#F2C14E" stroke-width="1.1" opacity=".5"/></g>
+</svg>

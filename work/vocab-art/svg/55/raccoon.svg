@@ -1,0 +1,22 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 55 - Wild animals
+  WORD: raccoon (noun)
+  CONTEXTUAL_DEFINITION: A small grey wild mammal with a dark mask over the eyes and a bushy tail marked in alternating rings.
+  PEDAGOGICAL_ARCHETYPE: 1 - Hero animal with defining mask and ringed tail
+  SYNONYM_GUARD: Show a clear black eye mask and alternating light/dark tail bands; keep the face pointed and body compact.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT: Woodland floor with raccoon facing right; body x=111..194 y=99..132, mask face at x=213 y=99, ringed bushy tail curves behind to x=69 y=100.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="55:raccoon" data-archetype="ring-tail-masked-raccoon">
+  <defs>
+    <style>:root{--c-bg-1:#E9F0EA;--c-bg-2:#FAF5E9;--c-surface:#D1C5AC;--c-primary:#8B8C87;--c-secondary:#3B3C3B;--c-accent:#79916D;--c-highlight:#FFFFFF;--c-ink:#1E2A3B}</style>
+    <linearGradient id="rac-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E9F0EA"/><stop offset="1" stop-color="#F7F0E0"/></linearGradient>
+    <linearGradient id="rac-fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A8AAA4"/><stop offset="1" stop-color="#666967"/></linearGradient>
+    <filter id="rac-shadow" x="-15%" y="-20%" width="130%" height="145%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".19"/></filter>
+  </defs>
+  <g id="layer-backdrop"><rect width="304" height="192" fill="url(#rac-sky)"/><path d="M0 129 Q64 119 127 129 T244 127 Q280 120 304 128 V192 H0Z" fill="#DEE1D1"/><path d="M0 153 Q69 145 145 153 T304 151 V192 H0Z" fill="#D0C4AA"/><ellipse cx="151" cy="164" rx="104" ry="7" fill="#A99D86" opacity=".42"/></g>
+  <g id="layer-context"><path d="M37 143 V72 M37 97 L22 80 M37 111 L52 90" fill="none" stroke="#6B553D" stroke-width="4" stroke-linecap="round"/><path d="M20 83 Q24 67 36 73 Q43 60 52 72 Q63 73 65 88 Q51 82 42 95 Q30 84 20 83Z" fill="#718D6B"/><path d="M266 143 V78 M266 100 L251 83 M266 113 L282 94" fill="none" stroke="#6B553D" stroke-width="4" stroke-linecap="round"/><path d="M249 85 Q253 69 265 75 Q273 62 282 74 Q294 75 296 90 Q282 84 273 97 Q261 86 249 85Z" fill="#79936E"/><path d="M63 146 l-4-9 m4 9 6-6 M238 147 l4-8" fill="none" stroke="#81916D" stroke-width="1.5" stroke-linecap="round"/></g>
+  <g id="layer-focal" filter="url(#rac-shadow)"><path d="M120 112 Q103 100 84 100 Q70 102 67 111 Q69 122 83 124 Q101 124 119 127" fill="none" stroke="#666866" stroke-width="13" stroke-linecap="round"/><path d="M79 102 Q74 106 74 111 L83 113 L86 104Z M91 101 L88 111 L99 114 L102 105Z M107 104 L103 115 L115 119 L119 110Z" fill="#D1D2CA" stroke="#393C3B" stroke-width="1.2"/><path d="M119 103 Q134 88 161 91 Q185 94 196 108 L193 129 Q175 138 143 136 Q118 133 109 121Z" fill="url(#rac-fur)" stroke="#1E2A3B" stroke-width="2.2"/><path d="M180 101 Q194 87 210 91 L225 102 L221 115 L205 120 L190 115Z" fill="#929590" stroke="#1E2A3B" stroke-width="1.8"/><path d="M187 92 L184 83 L195 89 M210 91 L217 82 L221 99" fill="#777A76" stroke="#1E2A3B" stroke-width="1.4"/><path d="M189 99 Q198 94 207 99 L205 107 Q198 110 190 106Z" fill="#24282A"/><circle cx="197" cy="100" r="1.5" fill="#F4E9D6"/><circle cx="218" cy="102" r="1.6" fill="#1E2A3B"/><path d="M220 109 l8 2-7 4-7-2Z" fill="#6A5242"/><path d="M132 132 L129 148 Q130 154 137 154 L142 150 L137 146 L141 133 M156 135 L158 151 Q161 156 168 153 L172 148 L166 145 L165 133 M181 130 L187 146 Q190 151 197 147 L200 142 L194 139 L189 127" fill="none" stroke="#4D4D49" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="layer-details"><path d="M124 105 Q140 95 157 97 M162 96 Q176 98 183 104 M192 94 Q199 90 207 95" fill="none" stroke="#D3D3CA" stroke-width="1.4"/><path d="M140 113 Q151 108 160 112 M165 116 Q175 111 183 116" fill="none" stroke="#777A76" stroke-width="1.2"/><path d="M127 148 l-1 5 m10-5 1 5 m31-4 1 5 m29-9 3 5" fill="none" stroke="#343737" stroke-width="1.2" stroke-linecap="round"/><path d="M64 146 l-4-8 m4 8 6-5 M237 147 l4-8" fill="none" stroke="#80906B" stroke-width="1.5" stroke-linecap="round"/><path d="M83 113 Q92 117 101 114 M192 104 Q199 110 207 106" fill="none" stroke="#D5D3C9" stroke-width="1.2"/><circle cx="145" cy="124" r="1.4" fill="#EAE5D8"/></g>
+  <g id="layer-lighting"><path d="M124 104 Q139 94 154 95 M164 95 Q176 97 183 103 M187 96 Q196 90 203 94" fill="none" stroke="#FFFFFF" stroke-width="1.7" opacity=".42" stroke-linecap="round"/><ellipse cx="151" cy="103" rx="23" ry="8" fill="#FFFFFF" opacity=".04"/></g>
+</svg>

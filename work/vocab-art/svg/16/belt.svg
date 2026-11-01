@@ -1,0 +1,30 @@
+<!-- SELF_PROMPT:
+  CHAPTER: 16 — Accessories and beauty products
+  WORD: belt (Noun)
+  CONTEXTUAL_DEFINITION: A leather strap worn around the waist and fastened with a buckle.
+  PEDAGOGICAL_ARCHETYPE: 1 — Hero object
+  SYNONYM_GUARD: Make the long loop and pronged waist buckle unmistakable.
+  MODE: STATIC
+  COORDINATE_BLUEPRINT:
+    - Backdrop: Warm paper and ground shadow.
+    - Context_Layer: None.
+    - Focal_Layer: Curved brown belt loop with clear metal buckle.
+    - Details_Layer: Stitching and punched holes.
+    - Lighting_Layer: Leather highlight.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="16:belt" data-archetype="hero-object">
+  <!-- 1. Stage Canvas & Ground Shadow -->
+  <rect width="304" height="192" fill="#FAF8F3"/><ellipse cx="152" cy="152" rx="112" ry="20" fill="#EAE3D5"/>
+  <!-- 2. Background Context / Muted Whole / Halo -->
+  <ellipse cx="151" cy="91" rx="123" ry="59" fill="#FEF3C7" opacity=".34"/>
+  <!-- 3. Primary Subject Silhouettes & Clipped 3-Tone Shading -->
+  <path d="M39 70Q150 31 265 70L257 113Q150 77 47 114Z" fill="#805333" stroke="#1E2A3B" stroke-width="2.7" stroke-linejoin="round"/>
+  <path d="M44 75Q151 40 260 75L257 91Q153 59 46 97Z" fill="#B77D4F"/><path d="M47 106Q149 72 258 104" fill="none" stroke="#D9A77E" stroke-width="2"/>
+  <!-- 4. Foreground Props, Faces & Crisp Surface Details -->
+  <path d="M135 51Q155 44 176 50L171 114Q151 108 132 115Z" fill="#D9A441" stroke="#1E2A3B" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M143 60L166 57L163 103L140 107Z" fill="#FAF8F3" stroke="#805A19" stroke-width="2"/><path d="M154 59L150 79" stroke="#805A19" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="201" cy="76" r="3.2" fill="#1E2A3B"/><circle cx="218" cy="74" r="3.2" fill="#1E2A3B"/><circle cx="235" cy="75" r="3.2" fill="#1E2A3B"/>
+  <path d="M57 78Q79 69 99 64" fill="none" stroke="#D9A77E" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- 5. Directional Arrows / Motion Lines / Callout Rings -->
+  <path d="M138 126Q154 132 174 126" fill="none" stroke="#4A72B2" stroke-width="2" stroke-linecap="round"/>
+</svg>

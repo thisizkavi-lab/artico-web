@@ -1,0 +1,48 @@
+<!-- SELF_PROMPT:
+ CHAPTER: 65 - Movies and plays
+ WORD: showtime
+ CONTEXTUAL_DEFINITION: The moment a movie or performance is about to begin, with patrons facing an illuminated stage.
+ PEDAGOGICAL_ARCHETYPE: theater about to begin with analog clock
+ SYNONYM_GUARD: Show the start time approaching through an unnumbered clock and a stage opening; do not use letters or digital numerals.
+ MODE: STATIC
+ COORDINATE_BLUEPRINT: An analog clock with plain tick marks hangs above a theater as curtains part and seated patrons turn toward the bright stage.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 192" data-vocab-key="65:showtime" data-archetype="theater about to begin with analog clock">
+ <g id="layer-backdrop">
+  <rect width="304" height="192" fill="#F0EEE8"/><path d="M0 160H304V192H0Z" fill="#C8B89E"/><path d="M0 160H304" stroke="#796B59" stroke-width="1.4" fill="none"/>
+  <path d="M29 42H275V151H29Z" fill="#26384A"/><path d="M38 50H266V148H38Z" fill="#405663"/>
+  <path d="M70 68H234V131H70Z" fill="#F3DFAE"/><path d="M77 74H227V128H77Z" fill="#D6A64C" opacity=".45"/>
+  <path d="M42 64H82V134H42Z M262 64H222V134H262Z" fill="#B85E5A"/>
+  <path d="M45 71Q61 79 80 69V132H45Z M259 71Q243 79 224 69V132H259Z" fill="#D17A6B"/>
+  <path d="M63 134H241V143H63Z" fill="#D6A64C"/><path d="M54 143H250V152H54Z" fill="#8C725A"/>
+  <path d="M0 152H304" stroke="#E6D9C2" stroke-width="1.2" fill="none"/>
+ </g>
+ <g id="layer-context">
+  <path d="M60 154H244" stroke="#26384A" stroke-width="3" fill="none"/>
+  <circle cx="73" cy="143" r="3.5" fill="#D29A78"/><circle cx="93" cy="143" r="3.5" fill="#D29A78"/><circle cx="113" cy="143" r="3.5" fill="#D29A78"/><circle cx="193" cy="143" r="3.5" fill="#D29A78"/><circle cx="213" cy="143" r="3.5" fill="#D29A78"/><circle cx="233" cy="143" r="3.5" fill="#D29A78"/>
+  <path d="M67 148Q73 145 79 148L81 158H65Z M87 148Q93 145 99 148L101 158H85Z M107 148Q113 145 119 148L121 158H105Z M187 148Q193 145 199 148L201 158H185Z M207 148Q213 145 219 148L221 158H205Z M227 148Q233 145 239 148L241 158H225Z" fill="#597D8B"/>
+  <path d="M63 158H83m0 0h20m0 0h20m60 0h20m0 0h20m0 0h20" stroke="#26384A" stroke-width="2" fill="none"/>
+  <path d="M42 56H262" stroke="#D6A64C" stroke-width="1.1" fill="none"/>
+  <path d="M82 139H222" stroke="#EADAB8" stroke-width="1.1" fill="none"/>
+ </g>
+ <g id="layer-focal">
+  <circle cx="152" cy="29" r="20" fill="#F5E6C9" stroke="#D6A64C" stroke-width="3"/>
+  <circle cx="152" cy="29" r="2" fill="#26384A"/>
+  <path d="M152 29L152 15m0 14 10 6" stroke="#26384A" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M152 7v4m0 36v4m-20-22h4m32 0h4m-34-14 3 3m22 22 3 3m0-28-3 3m-22 22-3 3" stroke="#26384A" stroke-width="1.3" fill="none"/>
+  <path d="M68 65Q85 49 102 65V82H68Z M202 65Q219 49 236 65V82H202Z" fill="#F4E5C7"/>
+  <path d="M70 69H100m104 0h30" stroke="#FFF9EA" stroke-width="2" fill="none"/>
+  <path d="M115 77H189V128H115Z" fill="#E9C66E" opacity=".22"/>
+ </g>
+ <g id="layer-details">
+  <circle cx="115" cy="86" r="2" fill="#F4E7C7"/><circle cx="188" cy="94" r="1.8" fill="#F4E7C7"/><circle cx="127" cy="110" r="1.5" fill="#F4E7C7"/>
+  <path d="M48 48H256m-205 4h202" stroke="#70858B" stroke-width="1" fill="none"/>
+  <path d="M91 136H213" stroke="#F4E9D6" stroke-width="1.1" fill="none"/>
+  <path d="M40 46v103m224-103v103" stroke="#75878C" stroke-width="1" fill="none"/>
+ </g>
+ <g id="layer-lighting">
+  <ellipse cx="151" cy="92" rx="103" ry="60" fill="#E7C66B" opacity=".12"/>
+  <path d="M105 53L119 119m93-66-27 66" stroke="#FFF4D6" stroke-width="1.4" opacity=".68" fill="none"/>
+  <path d="M111 131H193" stroke="#FFF7E4" stroke-width="1" opacity=".65" fill="none"/>
+ </g>
+</svg>

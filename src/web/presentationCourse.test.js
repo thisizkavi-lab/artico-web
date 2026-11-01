@@ -59,6 +59,7 @@ test('Presenter drafts and Half-Life rounds survive local learning sanitization'
   const responses={
     'application-presentations-context':'science',
     'application-presentations-blueprint-science-message':'The takeaway is clear.',
+    'application-presentations-blueprint-science-type':'Research talk (legacy draft)',
     'application-presentations-blueprint-custom-audienceNeeds':'My lab group needs a method-level explanation.',
     'application-presentations-blueprint-science-acknowledgements':'Lab colleagues and funding sources.',
     'application-presentations-half-life-60':'The one-minute version.',

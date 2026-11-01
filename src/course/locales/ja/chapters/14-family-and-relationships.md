@@ -31,12 +31,10 @@
 
 **stepbrother** または **stepsister** は、stepparentの別の関係で生まれた子です。**half-brother** または **half-sister** は、自分と生みの親を一人共有する兄弟姉妹です。step-とhalf-は違う関係を示します。どちらも、本人どうしがどう感じているかを示す言葉ではありません。
 
-**An invented family:** Sam was born to Rae and Kim. Rae later married Lee. Lee already had a daughter, Ava, from another relationship. Rae and Lee then had a son, Noah.  
+ある親が以前のパートナーとの間に子どもをもうけ、その後、すでに子どもがいる新しいパートナーと家族を作ります。以前の関係で生まれた二人の子どもは stepbrother / stepsister（義理の兄弟姉妹）です。その後、二人の間に子どもが生まれると、その子と最初の子どもは生みの親を一人共有するため、half-brother / half-sisterになります。
 
-この架空の家族では、Samの生みの親はRaeとKimです。後でRaeがLeeと結婚しました。Leeには、別の関係で生まれた娘Avaがいました。その後、RaeとLeeの間に息子Noahが生まれました。
-
-- AvaはSamの **stepsister** です。AvaはLeeの別の関係で生まれた娘です。
-- NoahはSamの **half-brother** です。SamとNoahは、Raeを生みの親として共有しています。
+- 継親が以前の関係でもうけた子どもは、あなたの **stepbrother** または **stepsister** です。
+- あなたの生みの親と継親との間に生まれた子どもは、あなたの **half-brother** または **half-sister** です。
 
 家族とのつながりを表すために、単に **my brother** のような言葉を使う人もいます。最初からすべての違いを列挙する必要はありません。必要なときに詳細を説明できます。
 
@@ -75,7 +73,7 @@
 <!-- source-heading: Practice: Retrieve a useful subset -->
 ## 練習: 必要な語を取り出す
 
-1. 上の架空の家族を使い、**Ava is Sam's ___. Noah is Sam's ___.** を完成させます。二つの関係の違いを一文で説明してください。
+1. ある親が、以前の関係で子どもがいる新しいパートナーと家族を作り、その後二人の間にも子どもが生まれました。それぞれの子どもは、最初の子どもとどのような関係ですか。違いを説明してください。
 2. あなたの姉妹に、息子Leoがいます。Leoは、あなたとどのような関係ですか。あなたの子に、娘Miaがいます。Miaは、あなたとどのような関係ですか。
 3. 相手が **My daughter is thirty** と言います。daughterが、幼い子だけを意味するわけではない理由を説明してください。
 4. 学習部分の異なる箇所から四つの語を選び、それを使って架空の人や家族を説明します。使える形は **I have...**、**This is my...**、**She's my...**、**We work together** です。
@@ -84,8 +82,8 @@
 <!-- source-heading: Sample possibilities -->
 ### 返答例
 
-1. **Stepsister; half-brother. Ava is Lee's daughter from an earlier relationship. Noah and Sam share Rae as a birth parent.**  
-   AvaはLeeの以前の関係で生まれた娘です。NoahとSamはRaeを生みの親として共有するため、関係の名前が違います。
+1. **The child from the new partner’s earlier relationship is a step-sibling. The child they have together with your birth parent is a half-sibling because you share one birth parent.**  
+   新しいパートナーが以前の関係でもうけた子どもは、最初の子どもの stepbrother / stepsister（義理の兄弟姉妹）です。二人の間に生まれた子どもは、最初の子どもと生みの親を一人共有するため、half-brother / half-sister（異父／異母兄弟姉妹）です。
 2. **Leo is your nephew. Mia is your granddaughter.**  
    姉妹の息子Leoは甥、子の娘Miaは孫娘です。
 3. **Daughter describes her relationship to a parent, even when she is an adult.**  

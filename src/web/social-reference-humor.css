@@ -148,3 +148,45 @@
   .hm-page .hm-study .hm-turn{max-width:98%}
   .hm-page .hm-study .hm-turn>p{font-size:13px}
 }
+
+/* Use the same quiet hierarchy as the reference study chapters. */
+.hm-page { width: min(100%, 1008px); font-family: "Helvetica Neue", Arial, sans-serif; }
+.hm-page .hm-header { padding: 24px 26px; border: 1px solid #e7ebf4; border-radius: 22px; background: linear-gradient(120deg, #f0f4ff, #f8f9ff); }
+.hm-page .hm-eyebrow { margin-bottom: 12px; color: #8390a2; font-size: 10px; font-weight: 600; letter-spacing: .04em; }
+.hm-page .hm-heading h1 { color: #304158; font-family: inherit; font-size: clamp(26px, 3vw, 32px); font-weight: 750; line-height: 1.2; }
+.hm-page .hm-heading > .curriculum-icon { color: #899caf; }
+.hm-page .hm-header > p:last-child { color: #6a7685; font-size: 13px; }
+.hm-page .hm-mode { width: fit-content; gap: 3px; padding: 4px; border: 0; border-radius: 12px; background: #edf0f0; }
+.hm-page .hm-mode a { min-width: 92px; padding: 10px 16px; border: 0; border-radius: 9px; font-size: 13px; font-weight: 600; }
+.hm-page .hm-mode a[aria-current="page"] { background: #fff; color: #496a9e; box-shadow: 0 1px 4px #263b5610; }
+.hm-page .hm-study { gap: 24px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+.hm-page .hm-study .hm-contents { margin: 0; border-color: #e6ebf2; padding: 14px 16px; }
+.hm-page .hm-study .hm-contents button { color: #61728a; border-color: #e7ecf4; font-weight: 550; }
+.hm-page .hm-study .hm-section { margin: 0; border-color: #e7ecf4; box-shadow: 0 3px 14px #263b5605; }
+.hm-page .hm-study .hm-section h2 { color: #304158; font-family: inherit; font-size: clamp(20px, 2.3vw, 24px); font-weight: 700; line-height: 1.4; }
+.hm-page .hm-study .hm-section > h2 { padding-left: 12px; border-left-width: 2px; }
+.hm-page .hm-study .hm-kicker { color: #8295ae; font-size: 10px; font-weight: 600; letter-spacing: .035em; }
+.hm-page .hm-study .hm-section > p { color: #657182; font-size: 14px; line-height: 1.8; }
+.hm-page .hm-study .hm-scene { border-color: #e5eaf1; box-shadow: none; }
+.hm-page .hm-study .hm-scene-visual { aspect-ratio: auto; background: transparent; }
+.hm-page .hm-study .hm-figure { height: auto; object-fit: contain; }
+.hm-page .hm-study .hm-turn > p,
+.hm-page .hm-study .hm-chat-line p { border: 1px solid #e1e7f0; background: #fff; color: #304158; font-weight: 600; }
+.hm-page .hm-study .hm-turn:nth-child(even) > p,
+.hm-page .hm-study .hm-chat-right p { border-color: #e0e8f6; background: #eef3fc; }
+.hm-page .hm-study .hm-move,
+.hm-page .hm-study .hm-chat-card,
+.hm-page .hm-study .hm-meme-card,
+.hm-page .hm-study .hm-safety article { border-color: #e5eaf1; }
+.hm-page .hm-study .hm-move h3 { color: #40536e; font-size: 15px; font-weight: 650; }
+.hm-page .hm-study .hm-move .hm-quote { color: #304158; font-weight: 600; }
+.hm-page .hm-study .hm-concept,
+.hm-page .hm-study .hm-note { padding: 12px 15px; border: 1px solid #eee9dc; border-radius: 11px; background: #fffdf7; color: #74746d !important; }
+.hm-page .hm-study .hm-concept strong { color: #60695f; font-size: 13px; font-weight: 650; }
+.hm-page .hm-study .hm-concept p { color: #74746d; font-size: 12px; line-height: 1.7; }
+.hm-page .hm-study .hm-expressions { border-color: #e5eaf1; background: #fff; }
+@media(max-width:620px) {
+  .hm-page .hm-header { padding: 20px 18px; border-radius: 18px; }
+  .hm-page .hm-study .hm-section { padding: 20px 15px; border-radius: 18px; }
+  .hm-page .hm-study .hm-section > p { font-size: 13px; }
+}

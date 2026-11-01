@@ -28,6 +28,8 @@ import CurriculumIcon, { chapterIcon } from './CurriculumIcon'
 import { conversationSide, groupConversationScenes } from './conversationLayout'
 import { chapterPhraseIllustrations } from './chapterPhraseIllustrations'
 import { sectionPhraseIds, sectionPhraseArtwork } from './phraseSceneData'
+import SocialStudySection from './SocialStudySection'
+import { isStudyIntroduction, studyPhraseAnchors, usesSharedStudyLayout } from './socialStudyLayout'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -359,23 +361,30 @@ function Study({ audioProps, focusedId }) {
     SourceContent,
     Diagram,
   } = useLesson()
+  const sharedLayout = usesSharedStudyLayout(lessonId)
+  const studyAnchors = sharedLayout ? studyPhraseAnchors(introductionSections) : {}
   const playIllustratedPhrase = (item) => {
     if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
   return (
-    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
+    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}${Number(lessonId) >= 4 ? ' ar-polished-study' : ''}`}>
       {lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
         <section
-          className="ip-section"
+          className={`ip-section${sharedLayout && isStudyIntroduction(section) ? ' ar-study-introduction' : ''}`}
           key={section.id}
           id={`study-${section.id}`}
           aria-labelledby={`heading-${section.id}`}
         >
           <div className="ip-section-heading">
-            <span>{String(index + 1).padStart(2, '0')}</span>
+            <span>{String(sharedLayout ? introductionSections.slice(0, index + 1).filter((entry) => !isStudyIntroduction(entry)).length : index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {lessonId === '11'
+          {sharedLayout
+            ? <SocialStudySection section={section} chapterId={lessonId} byId={introductionById}
+                anchors={studyAnchors} audioProps={audioProps} focusedId={focusedId}
+                renderConversation={(block) => <Conversation key={block.id} block={block} audioProps={audioProps} focusedId={focusedId} />}
+                renderDiagram={(block) => <Diagram key={block.diagram} type={block.diagram} />} />
+            : lessonId === '11'
             ? <Chapter11VisualBoard section={section} focusedId={focusedId} />
             : lessonId === '03'
             ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
@@ -568,9 +577,8 @@ function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illust
   if (!ids.length) return null
 
   return (
-    <section className={`ar-unified-phrase-board${chapterId === '12' ? ' ar-ch12-phrase-board' : ''}`} aria-label={language === 'ja' ? 'イラストとフレーズ' : 'Illustration and phrases'}>
-      <div className="ar-unified-phrase-stage">
-        {files[attempt] ? (
+    <section className={`ar-unified-phrase-board${!files[attempt] ? ' ar-unified-without-art' : ''}${chapterId === '12' ? ' ar-ch12-phrase-board' : ''}`} aria-label={language === 'ja' ? 'イラストとフレーズ' : 'Illustration and phrases'}>
+      {files[attempt] && <div className="ar-unified-phrase-stage">
           <img
             className="ar-unified-phrase-image"
             src={art(files[attempt]) + (chapterId === '05' ? '?v=20261101-original-pngs' : '')}
@@ -580,18 +588,7 @@ function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illust
             loading="lazy"
             onError={() => setAttempt((current) => current + 1)}
           />
-        ) : (
-          <div className="ar-unified-phrase-placeholder" role="img"
-            aria-label={language === 'ja' ? 'イラストは準備中です' : 'Illustration coming soon'}>
-            <span className="ar-unified-placeholder-icon" aria-hidden="true">
-              <CurriculumIcon name={chapterIcon(chapterId)} size={48} />
-            </span>
-            <span className="ar-unified-placeholder-label">
-              {language === 'ja' ? 'イラストは準備中です' : 'Illustration coming soon'}
-            </span>
-          </div>
-        )}
-      </div>
+      </div>}
       <div className="ar-unified-phrase-pills"
         aria-label={language === 'ja' ? 'このセクションで使う表現' : 'Phrases in this section'}>
         {ids.map((id) => {
@@ -1310,7 +1307,7 @@ function Experience({ route, learning, update, save, notify }) {
             <summary> {t("In this chapter")} <Glyph name="chevron" size={16} />
             </summary>
             <nav aria-label={t("Chapter contents")}>
-              {introductionSections.map((section, index) => (
+              {introductionSections.filter((section) => !usesSharedStudyLayout(id) || !isStudyIntroduction(section)).map((section, index) => (
                 <button
                   type="button"
                   key={section.id}

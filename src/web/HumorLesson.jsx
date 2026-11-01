@@ -25,15 +25,13 @@ const clusters = [
 const copy = (en, ja, japanese) => japanese ? ja : en
 
 function Figure({ variant = 'late' }) {
-  return <svg className="hm-figure" viewBox="0 0 570 260" role="img" aria-label={variant === 'rain' ? 'Two contrasting weather situations' : 'Two friends meeting at a station'}>
+  const description = { late: 'Two friends meeting at a station', search: 'Two friends meeting before going out for dinner', repair: 'Two friends listening and responding to each other' }[variant]
+  return <svg className="hm-figure" viewBox="0 0 570 260" role="img" aria-label={description}>
     <rect x="1" y="1" width="568" height="258" rx="18" fill="#f3f5f5" stroke="#e3e8e7"/>
     <path d="M20 198H550" stroke="#dae1e5" strokeWidth="2"/>
     <rect x="385" y="42" width="130" height="145" rx="8" fill="#e4e9ed"/>
     <rect x="402" y="58" width="98" height="102" rx="4" fill="#fbfaf7"/>
-    {variant === 'rain' ? <>
-      <g stroke="#79a5cc" strokeWidth="3" strokeLinecap="round"><path d="M65 35l-9 17M112 29l-9 17M160 37l-9 17M207 29l-9 17M255 40l-9 17M297 31l-9 17"/></g>
-      <path d="M110 82Q177 14 245 82" fill="#a9bfd4" stroke="#6185b1" strokeWidth="4"/><path d="M177 82v99q0 15 14 15" stroke="#6185b1" strokeWidth="4" fill="none"/>
-    </> : <><circle cx="450" cy="91" r="25" fill="#fff" stroke="#9dabb7" strokeWidth="3"/><path d="M450 91V76M450 91l12 8" stroke="#9dabb7" strokeWidth="3" strokeLinecap="round"/></>}
+    {variant === 'late' && <><circle cx="450" cy="91" r="25" fill="#fff" stroke="#9dabb7" strokeWidth="3"/><path d="M450 91V76M450 91l12 8" stroke="#9dabb7" strokeWidth="3" strokeLinecap="round"/></>}
     <g transform="translate(128 72)"><ellipse cx="40" cy="41" rx="31" ry="35" fill="#f1c9ae"/><path d="M13 37q0-45 30-38t28 40l-7-17-13-5-30 9z" fill="#4f515e"/><path d="M3 115q7-49 37-49t37 49v73H3z" fill="#7293a9"/><path d="M28 189v-20M56 189v-20" stroke="#596b85" strokeWidth="13" strokeLinecap="round"/><path d="M16 106l-25 37M66 106l25 30" stroke="#7293a9" strokeWidth="14" strokeLinecap="round"/></g>
     <g transform="translate(295 77)"><ellipse cx="40" cy="41" rx="31" ry="35" fill="#e1bba0"/><path d="M8 40q-4-38 34-39t27 34l-14-12-26 4z" fill="#444854"/><path d="M0 113q6-45 40-45t40 45v71H0z" fill="#c6a87d"/><path d="M28 187v-18M56 187v-18" stroke="#6f6f79" strokeWidth="13" strokeLinecap="round"/><path d="M12 100l-26 27M68 100l20 38" stroke="#c6a87d" strokeWidth="14" strokeLinecap="round"/></g>
     <path d="M209 89q39-28 69-8" fill="none" stroke="#adbccc" strokeWidth="2" strokeDasharray="4 6"/>
@@ -44,7 +42,7 @@ function Figure({ variant = 'late' }) {
 
 function Dialogue({ scene, ja }) {
   return <article className="hm-scene">
-    <div className="hm-scene-visual"><Figure variant={scene.id === 'late' ? 'late' : 'rain'}/></div>
+    <div className="hm-scene-visual"><Figure variant={scene.id}/></div>
     <div className="hm-scene-copy">
       <p className="hm-micro">{copy(scene.setting, scene.settingJa, ja)}</p>
       <p className="hm-context">{copy(scene.background, scene.backgroundJa, ja)}</p>

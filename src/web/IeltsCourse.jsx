@@ -79,8 +79,11 @@ function TestsHome() {
   return <div className="aw-page ie-page" lang="en">
     <a className="ie-back" href="#/application">Back to Application</a>
     <header className="ie-heading"><h1>English Tests</h1><p>Use your English for the result you need. Choose a test to begin.</p></header>
-    <Directory items={[{ id: 'ielts', title: 'IELTS Academic', icon: 'school', summary: 'Study the test. Practise each skill. Build toward an independent rehearsal.', href: ieltsPath() }]}/>
-    <p className="ie-fineprint">IELTS Academic is the first test course available here. Other exam tracks will be added separately.</p>
+    <Directory items={[
+      { id: 'ielts', title: 'IELTS Academic', icon: 'school', summary: 'Study the test. Practise each skill. Build toward an independent rehearsal.', href: ieltsPath() },
+      { id: 'toeic', title: 'TOEIC Listening & Reading', icon: 'briefcase', summary: 'Explore the seven-part exam. Course outline available now; lessons and practice are planned.', href: '/application/tests/toeic/home' },
+    ]}/>
+    <p className="ie-fineprint">IELTS Academic includes learning and practice materials. TOEIC Listening &amp; Reading is an outline only for now.</p>
   </div>
 }
 function History({ state }) {

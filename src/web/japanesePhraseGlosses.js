@@ -1,4 +1,5 @@
 // Editorial Japanese equivalents for Social Fluency. English is always the study target.
+import { vocabularyJapanese } from './vocabularySupport.js'
 // A gloss is a natural equivalent in context, not a word-for-word translation.
 export const japanesePhraseGlosses = {
   "04": {
@@ -134,5 +135,20 @@ export function japaneseGlossFor(item, lessonId) {
   if (!item || !item.en) return '';
   if (typeof item.ja === 'string' && item.ja.trim()) return item.ja.trim();
   const map = japanesePhraseGlosses[String(lessonId).padStart(2,'0')];
-  return map?.[item.en] ?? '';
+  if (map?.[item.en]) return map[item.en];
+  // The existing local vocabulary dictionary supplies reliable short noun/word
+  // equivalents throughout Chapters 01–96. Exclude common polysemous words:
+  // their sense must be reviewed in each chapter rather than guessed.
+  const ambiguous = new Set([
+    'date','light','right','left','fine','mean','close','open','present','issue',
+    'case','work','play','spring','fall','ring','bank','charge','draft','watch',
+    'record','note','kind','fit','run','drop','turn','order','check','change',
+    'point','line','book','plant','match','take','set','still','well',
+    'second','minute','hard','fair','lie','sound','matter','trip',
+  ]);
+  if (item.kind === 'word' && /^[A-Za-z][A-Za-z -]*$/.test(item.en) &&
+      !ambiguous.has(item.en.toLowerCase().trim())) {
+    return vocabularyJapanese(item.en, 0) || '';
+  }
+  return '';
 }

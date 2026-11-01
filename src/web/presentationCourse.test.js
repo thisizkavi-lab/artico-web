@@ -58,6 +58,7 @@ test('Presentation routes preserve all study, practice, cases and blueprint page
 test('Presenter drafts and Half-Life rounds survive local learning sanitization', () => {
   const responses={
     'application-presentations-context':'science',
+    'application-presentations-course-goal':'Speak more clearly in research group meetings.',
     'application-presentations-blueprint-science-message':'The takeaway is clear.',
     'application-presentations-blueprint-science-type':'Research talk (legacy draft)',
     'application-presentations-blueprint-custom-audienceNeeds':'My lab group needs a method-level explanation.',

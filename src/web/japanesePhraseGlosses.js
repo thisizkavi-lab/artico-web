@@ -3,6 +3,7 @@ import reviewedWords from './vocabularyJapaneseOverrides.json'
 import commonWords from './vocabularyJapaneseCommon.json'
 import { moreJapaneseGlosses } from './japanesePhraseGlosses07to10.js'
 import { openingJapaneseGlosses } from './japanesePhraseGlosses01to03.js'
+import { chapter04JapaneseFor } from './chapter04Japanese.js'
 import { chapter05JapaneseFor } from './chapter05Japanese.js'
 // A gloss is a natural equivalent in context, not a word-for-word translation.
 export const japanesePhraseGlosses = {
@@ -138,6 +139,10 @@ export const japanesePhraseGlosses = {
 export function japaneseGlossFor(item, lessonId) {
   if (!item || !item.en) return '';
   if (typeof item.ja === 'string' && item.ja.trim()) return item.ja.trim();
+  if (String(lessonId).padStart(2, '0') === '04') {
+    const reviewed = chapter04JapaneseFor(item.en);
+    if (reviewed) return reviewed;
+  }
   if (String(lessonId).padStart(2, '0') === '05') {
     const reviewed = chapter05JapaneseFor(item.en);
     if (reviewed) return reviewed;

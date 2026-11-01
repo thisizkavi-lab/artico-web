@@ -189,8 +189,36 @@ jobs:
       - name: Test course and learning progress
         run: pnpm test
 
+      - name: Render Chapter 09 apology illustrations as transparent PNGs
+        run: |
+          python3 scripts/build_ch09_illustrations.py
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          expected = [
+              'ch09-01-say-what-happened.png',
+              'ch09-02-informal-responsibility-and-stronger-apologies.png',
+              'ch09-03-receive-an-apology.png',
+              'ch09-04-sympathy-is-a-different-use.png',
+          ]
+          for name in expected:
+              path = Path('public/assets/course') / name
+              assert path.is_file(), name
+              with Image.open(path) as picture:
+                  assert picture.size == (1774, 887), (name, picture.size)
+                  assert picture.mode == 'RGBA', (name, picture.mode)
+                  assert picture.getchannel('A').getextrema() == (0, 255), name
+          print('Chapter 09: four transparent PNGs verified')
+          PY
+
       - name: Build site
         run: pnpm run build
+
+      - name: Verify Chapter 09 PNG illustrations are in the published bundle
+        run: |
+          for key in 01-say-what-happened 02-informal-responsibility-and-stronger-apologies 03-receive-an-apology 04-sympathy-is-a-different-use; do
+            test -s "dist/assets/course/ch09-$key.png"
+          done
 
       - name: Verify Chapter 10 transparent PNG illustrations reach Pages
         run: |

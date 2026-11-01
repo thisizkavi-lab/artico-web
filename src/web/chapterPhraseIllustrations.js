@@ -11,10 +11,10 @@ export const chapterPhraseIllustrations = {
     { file: 'ch07-03-decline-or-keep-the-answer-open.svg', fallbackFile: 'ch07-scene-2.svg', alt: 'One friend politely checks a calendar and suggests another day while responding to an invitation' },
   ],
   '08': [
-    { file: 'ch08-01-name-what-you-appreciate.svg', fallbackFile: 'ch08-scene-0.svg', alt: 'A friend lends an umbrella and the other thanks them warmly' },
-    { file: 'ch08-02-respond-to-thanks.svg', fallbackFile: 'ch08-scene-1.svg', alt: 'A host welcomes a guest after dinner and responds warmly to their thanks' },
-    { file: 'ch08-03-gifts-and-compliments.svg', fallbackFile: 'ch08-scene-2.svg', alt: 'One friend gives a birthday present while the other reacts with delighted surprise' },
-    { file: 'ch08-04-same-words-different-intention.svg', fallbackFile: 'ch08-scene-3.svg', alt: 'A person looks frustrated after being left without notice, showing how thanks can sound sarcastic' },
+    { file: 'ch08-01-name-what-you-appreciate.png', fallbackFile: 'ch08-scene-0.svg', alt: 'A friend lends an umbrella and the other thanks them warmly' },
+    { file: 'ch08-02-respond-to-thanks.png', fallbackFile: 'ch08-scene-1.svg', alt: 'A host welcomes a guest after dinner and responds warmly to their thanks' },
+    { file: 'ch08-03-gifts-and-compliments.png', fallbackFile: 'ch08-scene-2.svg', alt: 'One friend gives a birthday present while the other reacts with delighted surprise' },
+    { file: 'ch08-04-same-words-different-intention.png', fallbackFile: 'ch08-scene-3.svg', alt: 'A person looks frustrated after being left without notice, showing how thanks can sound sarcastic' },
   ],
   '09': [
     { file: 'ch09-01-say-what-happened.png', fallbackFile: 'ch09-scene-0.svg', alt: 'A friend apologizes for forgetting to send an address and shows the corrected map on a phone' },

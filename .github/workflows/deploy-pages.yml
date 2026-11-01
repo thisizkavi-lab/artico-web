@@ -304,6 +304,22 @@ jobs:
           print(len(j['entries']),'selected illustrations and refreshed work-scene assets verified')
           PY
 
+      - name: Verify Chapter 08 illustrated PNG assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          for name in ["ch08-01-name-what-you-appreciate","ch08-02-respond-to-thanks","ch08-03-gifts-and-compliments","ch08-04-same-words-different-intention"]:
+              path = Path('dist/assets/course') / (name + '.png')
+              assert path.is_file() and path.stat().st_size > 20000, path
+              with Image.open(path) as img:
+                  assert img.format == 'PNG' and img.mode == 'RGBA', path
+                  assert img.size == (1800, 900), (path, img.size)
+                  assert img.getextrema()[3][0] == 0, path
+                  assert img.getextrema()[3][1] == 255, path
+          print('Verified 4 transparent Chapter 08 PNG assets in Pages build')
+          PY
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

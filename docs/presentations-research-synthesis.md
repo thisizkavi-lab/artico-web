@@ -140,7 +140,16 @@ Its coverage includes ethics, confidence, listening, audience analysis, purpose 
 
 The textbook is useful foundational coverage, not a current authority for every digital presentation or accessibility detail. Its edition and examples have age-related limitations.
 
-### 2.3 Stanford Oral Communication Program
+### 2.3 National Academies: science communication is not a deficit model
+
+- National Academies of Sciences, Engineering, and Medicine (2017), *Communicating Science Effectively: A Research Agenda*: https://doi.org/10.17226/23674
+- Online summary: https://www.nationalacademies.org/read/23674/chapter/2
+
+This consensus report argues that science communication is more complex than translating jargon or supplying missing facts. People approach science with prior knowledge, values, beliefs, goals, skills and social context. A simple one-way “deficit model” assumes that more information will make people agree with the evidence; the report explains why that assumption is often inadequate. It identifies different communication goals, including sharing discoveries, increasing appreciation, helping people understand science relevant to a decision, and influencing opinions or behaviour. It also stresses trust, uncertainty, ethics and bidirectional engagement.
+
+**Artico implication:** audience analysis must ask not only “what do they know?” but also “what matters to them, what decision are they facing, what do they trust, and what concern should the speaker hear?” A public science talk is not automatically a lecture to uninformed people. It may be a dialogue with people who have relevant experience, values or legitimate questions.
+
+### 2.4 Stanford Oral Communication Program
 
 Reviewed:
 
@@ -156,7 +165,7 @@ The most transferable idea is that **a listener experiences the argument in time
 
 Stanford also distinguishes word-rate from idea-pace and recommends practising small portions with specific attention. Its materials are university teaching guidance, not all primary experimental studies; the page “Paper ≠ Presentation” itself cites Allen (2008).
 
-### 2.4 Scientific slide design: Michael Alley
+### 2.5 Scientific slide design: Michael Alley
 
 - Assertion–Evidence approach: https://www.assertion-evidence.com/
 - Garner, J. K. & Alley, M. P. (2013), *How the design of presentation slides affects audience comprehension: A case for the assertion–evidence approach*: https://www.ijee.ie/articles/Vol29-6/23_ijee2791ns.pdf
@@ -167,7 +176,7 @@ The 2013 study compared two slide approaches with 110 engineering students. The 
 
 **Limit:** the study supports the combined instructional design package in an engineering-education setting. It does not prove that every slide must have a sentence headline, or isolate the effect of each design principle separately. It is a strong default for technical evidence, not a universal template for all presentations.
 
-### 2.5 Multimedia learning: Richard Mayer
+### 2.6 Multimedia learning: Richard Mayer
 
 - Mayer (2017), *Using multimedia for e-learning*: https://doi.org/10.1111/jcal.12197
 - Mayer & Fiorella, *Cambridge Handbook of Multimedia Learning*, principles for essential processing: https://doi.org/10.1017/9781108894333.025
@@ -186,7 +195,7 @@ The 2025 meta-analysis examined 92 Mayer-authored articles, 181 studies and 591 
 
 **Critical boundary:** these studies investigate multimedia instructional materials, not every live conference talk. Artico should use Mayer to design its own lessons and explain visual processing, but should not claim that every live slide must follow one immutable formula. Accessibility also means not removing essential on-screen text or captions simply because some multimedia experiments found redundancy effects.
 
-### 2.6 Storytelling: what the evidence supports
+### 2.7 Storytelling: what the evidence supports
 
 Sources:
 
@@ -204,7 +213,7 @@ The research does not support the simplistic claim that a story always makes inf
 
 For research talks, the story can be the logic of the investigation: what was unknown, why the question mattered, what evidence changed the picture, what remains unresolved. Personal vignettes are optional. A talk about a method or a technical update may need a clear explanatory sequence rather than dramatic storytelling.
 
-### 2.7 Message discovery: Half-Life Your Message
+### 2.8 Message discovery: Half-Life Your Message
 
 Aurbach, E. L., Prater, K. E., Patterson, B. & Zikmund-Fisher, B. J. (2018), *Half-Life Your Message: A Quick, Flexible Tool for Message Discovery*: https://doi.org/10.1177/1075547018781917
 
@@ -214,7 +223,7 @@ The article explicitly recommends preparation by free-association, then reflecti
 
 **Artico implication:** include the exercise, but label it a discovery method. Do not treat the shortest version as the final scientific claim.
 
-### 2.8 Rehearsal, feedback and skill improvement
+### 2.9 Rehearsal, feedback and skill improvement
 
 Selected studies:
 
@@ -226,23 +235,23 @@ Selected studies:
 
 The results support a practice–feedback–revision loop, but not the claim that any repetition or feedback automatically improves performance.
 
-- Heiman et al.'s randomized study of 132 medical students found improvement after an online curriculum and deliberate practice, compared with a waitlist group.
+- Heiman et al.'s randomized study of 132 medical students found mean scores rose from 60.2% to 70.1% after the online curriculum and deliberate practice, compared with 61.8% to 64.5% in the waitlist group (between-group difference in improvement, p < .01).
 - A 2014 randomized trial with 476 students found that detailed, faculty-led feedback was associated with better subsequent presentations than no formal feedback; the simple single-item feedback condition did not show the same significant result.
 - The 2020 study of 180 students found a small but significant effect of an automated multimodal feedback tool on a later expert evaluation.
-- The 2005 encounter-card trial found no significant improvement in its summative presentation score, despite the feasibility and usefulness of the assessment tool.
+- The 2005 encounter-card trial randomised 164 medical students. The cards were feasible and their ratings correlated with several performance indicators, but the intervention did not significantly improve the final oral-presentation score (7.0 vs 7.2; p = .09). The authors noted that rater agreement and feedback quality were important limitations.
 
 **Synthesis:** practice must have a target. Feedback should point to observable behaviours and specific parts of the talk. Learners should use an audience representative of the intended audience, not only a friend who already knows the subject. Self-assessment is useful but insufficient by itself.
 
-### 2.9 Public-speaking anxiety
+### 2.10 Public-speaking anxiety
 
 - McWilliam, A. M., Beattie, S. & Callow, N. (2025), *Review and Analysis of Successful PSA Interventions: An Applied Perspective*: https://doi.org/10.1080/00223980.2025.2459662
 - *Psychological Interventions for the Fear of Public Speaking: A Meta-Analysis* (2019): https://pmc.ncbi.nlm.nih.gov/articles/PMC6428748/
 
-The 2025 review included 26 studies and 2,253 participants; interventions included exposure, cognitive modification, combined and other approaches. The overall effect was g = 1.17, but heterogeneity was high and individual effects varied. The 2019 meta-analysis included 30 randomized trials and 1,355 participants and found an overall effect of g = 0.74.
+The 2025 systematic review included 26 studies and 2,253 participants. Its pooled analysis used 21 studies and 42 interventions (five studies lacked sufficient data); the average effect was g = 1.17 (95% CI 0.87–1.47), with very high heterogeneity (I² = 88%) and a wide prediction interval (−0.50 to 2.84). That means the average should not be promised to an individual learner or treated as one reliable intervention effect. The 2019 meta-analysis included 30 randomized trials, 1,355 participants and 62 interventions; it found g = 0.74 (95% CI 0.61–0.87) with low-to-moderate heterogeneity (I² about 41%). It also found larger effects on self-report than on physiological or behavioural outcomes.
 
 **Synthesis:** public-speaking anxiety is not a character flaw and is not solved by a universal breathing trick. A course can teach low-risk rehearsal, gradual practice in increasingly demanding settings, realistic preparation, and useful ways to interpret mistakes. It must not present itself as therapy or imply that severe anxiety can be fixed by slide tips.
 
-### 2.10 Evidence integrity and accessibility
+### 2.11 Evidence integrity and accessibility
 
 **Statistical integrity**
 
@@ -256,7 +265,7 @@ A p-value is not the probability that a hypothesis is true; it does not measure 
 
 Relevant requirements include not using colour as the only means of conveying information, minimum text contrast of 4.5:1 for normal text (3:1 for large text), and captions for prerecorded synchronized media. For a learning course, transcripts and equivalent alternatives should be available. A live presenter should also consider room acoustics, microphone use, audience sightlines and remote participation.
 
-### 2.11 Practitioner frameworks: useful, but label their status
+### 2.12 Practitioner frameworks: useful, but label their status
 
 **Garr Reynolds — Presentation Zen**
 
@@ -501,6 +510,7 @@ Use a rubric to guide specific feedback, not to pretend that a single number ful
 - Nancy Duarte, *Resonate* (Wiley) — practitioner framework for audience-centred persuasive storytelling.
 
 ### Peer-reviewed research and standards
+- National Academies of Sciences, Engineering, and Medicine (2017), *Communicating Science Effectively: A Research Agenda*, DOI: 10.17226/23674.
 - Aurbach et al. (2018), Half-Life Your Message, DOI: 10.1177/1075547018781917.
 - Garner & Alley (2013), assertion–evidence slide comprehension study, *International Journal of Engineering Education*, 29(6), 1564–1579.
 - Mayer (2017), multimedia learning review, DOI: 10.1111/jcal.12197.

@@ -235,15 +235,15 @@ function Overview({learning,update,caseId,setCaseId}) {
     <header className="ps-cover">
       <span className="ps-kicker">ARTICO · THE PRACTICAL FIELD GUIDE</span>
       <h1>Public speaking<br/><em>& presentations.</em></h1>
-      <p>Turn what you know into something another person can <Mark>understand and use.</Mark></p>
-      <small>Not a confidence course. A course in audience, explanation, evidence, delivery and response.</small>
+      <p>Help a real audience <Mark>understand, judge, decide, learn or recognise.</Mark></p>
+      <small>Choose the message, evidence, structure and delivery that fit the occasion.</small>
       <div className="ps-actions"><a className="ps-primary" href={pathFor('01')}>Start the course <span>→</span></a>
         <a className="ps-secondary" href={root+'/blueprint'}>Open your blueprint</a></div>
       <div className="ps-cover-foot"><span>18 focused lessons</span><span>8 worked cases</span><span>{completed} lessons self-marked complete</span></div>
     </header>
     <section className="ps-principles" aria-label="The core framework">
       <span className="ps-kicker">THE WHOLE PICTURE</span>
-      <h2>A talk is a <Mark>design problem.</Mark></h2>
+      <h2>A talk is an <Mark>audience problem first.</Mark></h2>
       <p>Frame the situation, focus the message, build the reasoning, make evidence legible, deliver and respond, then revise. The process is iterative—not a fixed speech formula.</p>
       <div className="ps-process">{[['01','FRAME','Audience, occasion and goal'],['02','FOCUS','One claim and its evidence boundary'],['03','ARCHITECT','A logical path through the ideas'],['04','RENDER','Words, visuals and accessible evidence'],['05','DELIVER','Voice, interaction and Q&A'],['06','LEARN','Practice, feedback and revision']].map(([n,t,d])=><div key={n}><small>{n}</small><strong>{t}</strong><span>{d}</span></div>)}</div>
       <p className="ps-annotation">The goal changes the form. A scientific talk must let people judge evidence; a lesson must help people apply an idea; a briefing must support a decision; a toast must honour a person.</p>
@@ -313,7 +313,6 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
             <p className="ps-annotation">{comparison==='before'?'What does this fail to help the listener do? Try improving it before switching.':'Notice the more specific audience task, explanation, or evidence boundary.'}</p>
           </section>
           {lesson.id==='02' && <AudienceStudio/>}
-          {lesson.id==='04' && <HalfLifeLab learning={learning} update={update}/>}
           {lesson.id==='10' && <VisualCompare/>}
           {lesson.id==='11' && <GraphExample/>}
           {lesson.id==='13' && <EthicsLab/>}

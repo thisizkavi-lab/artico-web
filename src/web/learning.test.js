@@ -424,7 +424,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.doesNotMatch(home, /Unlock|lock-icon|disabled button/i)
 })
 
-test('Learn keeps Foundations and Social Fluency and expands nine Application tracks', () => {
+test('Learn keeps Foundations and Social Fluency and expands eight Application tracks', () => {
   const library = readFileSync(new URL('./Library.jsx', import.meta.url), 'utf8')
   const style = readFileSync(new URL('./library-readable.css', import.meta.url), 'utf8')
   const catalog = JSON.parse(readFileSync(new URL('../course/catalog.json', import.meta.url), 'utf8'))
@@ -445,14 +445,14 @@ test('Learn keeps Foundations and Social Fluency and expands nine Application tr
 })
 
 test('Application tracks use valid routes; Jobs has its own full course', () => {
-  const ids = ['tests','smalltalk','interviews','presentations','academic','storytelling','writing','reading','ideas']
+  const ids = ['tests','smalltalk','interviews','presentations','academic','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
   assert.equal(parseRoute('#/application').page, 'application')
   assert.equal(parseRoute('#/application/unknown').path, '/application')
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['smalltalk','interviews','storytelling','academic','reading','ideas'].includes(track.id) ? 0 : 2)
+    assert.equal(track.tasks.length, ['smalltalk','interviews','academic','reading','ideas'].includes(track.id) ? 0 : 2)
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])

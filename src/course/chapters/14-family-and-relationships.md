@@ -28,10 +28,10 @@ An **ex-husband** or **ex-wife** is a former spouse. A **stepparent** is a paren
 
 A **stepbrother** or **stepsister** is a stepparent's child from another relationship. A **half-brother** or **half-sister** shares one birth parent with you. The labels differ; neither tells you how people feel about one another.
 
-**An invented family:** Sam was born to Rae and Kim. Rae later married Lee. Lee already had a daughter, Ava, from another relationship. Rae and Lee then had a son, Noah.  
+A parent has a child with one partner and later forms a family with a new partner who already has a child. The two children are step-siblings. If the parent and new partner have a child together, that child and the first child are half-siblings because they share one birth parent.
 
-- Ava is Sam's **stepsister**.
-- Noah is Sam's **half-brother**: they share Rae as a birth parent.
+- A stepparent's child from another relationship is your **stepbrother** or **stepsister**.
+- A child your birth parent has with your stepparent is your **half-brother** or **half-sister**.
 
 People may use a simpler label such as **my brother** when that expresses their family connection. You can explain a detail when it matters rather than list every distinction immediately.
 
@@ -47,7 +47,7 @@ Useful event words are **birth**, **birthday**, **graduation** (completing a cou
 
 ## Practice: Retrieve a useful subset
 
-1. Use the invented family above. Complete: **Ava is Sam's ___. Noah is Sam's ___.** Explain the difference in a sentence.
+1. A parent starts a family with a new partner who already has a child from an earlier relationship. Later, they have a child together. How are the children related to one another? Explain the difference.
 2. Your sister has a son, Leo. What is Leo's relationship to you? Your child has a daughter, Mia. What is Mia's relationship to you?
 3. A person says **My daughter is thirty**. Explain why daughter does not mean only a young child.
 4. Pick four words from different parts of Study. Describe an invented person or family using them. Support: **I have...**, **This is my...**, **She's my...**, **We work together**.
@@ -55,7 +55,7 @@ Useful event words are **birth**, **birthday**, **graduation** (completing a cou
 
 ### Sample possibilities
 
-1. **Stepsister; half-brother. Ava is Lee's daughter from an earlier relationship. Noah and Sam share Rae as a birth parent.**
+1. **The child from the new partner’s earlier relationship is a step-sibling. The child they have together with your birth parent is a half-sibling because you share one birth parent.**
 2. **Leo is your nephew. Mia is your granddaughter.**
 3. **Daughter describes her relationship to a parent, even when she is an adult.**
 4. **I'm the oldest. I have one sister. My colleague is also my friend.**

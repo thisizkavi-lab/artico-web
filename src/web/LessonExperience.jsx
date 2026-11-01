@@ -20,6 +20,7 @@ import ReferencePhraseShelf from './ReferencePhraseShelf'
 import Chapter03StudySection from './Chapter03Context'
 import Chapter11VisualBoard from './Chapter11VisualBoard'
 import Chapter14VisualBoard from './Chapter14VisualBoard'
+import Chapter20VocabularyBoard from './Chapter20VocabularyBoard'
 import './social-reference-study.css'
 import './phrase-study-context.css'
 import './introductions.css'
@@ -364,7 +365,7 @@ function Study({ audioProps, focusedId }) {
   }
   return (
     <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}`}>
-      {lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
+      {lessonId === '20' ? <Chapter20VocabularyBoard sections={introductionSections} focusedId={focusedId} /> : lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
         <section
           className="ip-section"
           key={section.id}

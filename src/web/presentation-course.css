@@ -265,3 +265,7 @@
 .ps-reviewer-brief p{font-size:12px;line-height:1.5;color:#5d718d;margin:5px 0 0;overflow-wrap:anywhere}
 .ps-reviewer-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
 @media(max-width:720px){.ps-reviewer-brief,.ps-reviewer-notes{grid-template-columns:1fr}}
+
+.ps-course-goal{max-width:940px;margin:0 auto 60px;padding:25px 28px;background:#f5f8fc;border:1px solid #dce5f0;border-radius:10px}
+.ps-course-goal h2{font-size:27px;margin:8px 0 10px}
+.ps-course-goal>p{max-width:720px;color:#61758f;font-size:13px}

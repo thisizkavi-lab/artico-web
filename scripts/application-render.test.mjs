@@ -92,9 +92,11 @@ test('presentation course screens render across the full curriculum', { timeout:
       assert.ok(html.length>1200,hash+' has little content')
       assert.ok(html.includes(expected),hash+' missing heading '+expected)
       assert.ok(!html.includes('could not be loaded'),hash)
+      if(hash==='#/application/presentations/blueprint') assert.ok(html.includes('Acknowledgements, funding, collaborators and image/source credits'),'acknowledgements field missing')
       if(hash==='#/application/presentations') {
         assert.ok(html.includes('22 VIDEOS'),'full source video index missing')
         assert.ok(html.includes('8 RESOURCES'),'original worksheets index missing')
+        assert.ok(html.includes('Good speaking improves through exchange.'),'module discussion prompts missing')
       }
     }
   } finally {

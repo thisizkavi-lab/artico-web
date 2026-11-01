@@ -99,6 +99,8 @@ test('presentation course screens render across the full curriculum', { timeout:
         assert.ok(html.includes('Revision to make and retest'),'revision notes are not connected to the saved blueprint')
       }
       if(hash==='#/application/presentations') {
+        assert.ok(html.includes('My goal for this course'),'course-level learning goal missing')
+        assert.ok(html.includes('What do you want to get better at?'),'course-level reflection prompt missing')
         assert.ok(html.includes('22 CORE VIDEOS'),'full source video index missing')
         assert.ok(html.includes('8 RESOURCES'),'original worksheets index missing')
         assert.ok(html.includes('Good speaking improves through exchange.'),'module discussion prompts missing')

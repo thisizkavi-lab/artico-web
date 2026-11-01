@@ -326,12 +326,24 @@ jobs:
           print('Verified 49 Lesson 07 illustrations at 608x384')
           PY
 
-      - name: Verify Lesson 06 positive-opinion WebP illustrations reach Pages
+      - name: Verify all Lesson 06 vocabulary WebP illustrations reach Pages
         run: |
-          test "$(find dist/vocabulary-course/06 -maxdepth 1 -name '*.webp' -type f | wc -l)" -eq 10
-          for key in amazing beautiful breathtaking brilliant delicious exciting extraordinary fantastic fun good; do
-            test -s "dist/vocabulary-course/06/$key.webp"
-          done
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          art = json.loads(Path('src/web/vocabularyCourseArt.json').read_text(encoding='utf-8'))['entries']
+          root = Path('dist/vocabulary-course')
+          expected = {root / f'{path}.webp' for key, path in art.items() if key.startswith('6:')}
+          actual = set((root / '06').glob('*.webp'))
+          assert len(expected) == 58, len(expected)
+          assert actual == expected, {'missing': sorted(str(path) for path in expected - actual), 'extra': sorted(str(path) for path in actual - expected)}
+          for path in actual:
+              assert path.stat().st_size <= 80 * 1024, path.name
+              with Image.open(path) as image:
+                  assert image.size == (608, 384), (path.name, image.size)
+          print(f'Verified all {len(actual)} mapped Lesson 06 illustrations at 608x384')
+          PY
 
       - name: Verify all sixteen Daily Routines PNGs reach Pages
         run: |

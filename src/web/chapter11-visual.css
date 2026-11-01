@@ -123,15 +123,16 @@
 .ar-ch11-audio-error {margin:0;padding:0 22px 14px;font-size:12px;color:#9d4c3a;}
 .ar-ch11-screen-reader {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
 @media(max-width:700px){
- .ar-ch11-atlas {border-radius:12px;}
- .ar-ch11-board {overflow-x:auto;aspect-ratio:auto;min-height:310px;}
- .ar-ch11-board-art {width:max(100%,660px);height:auto;aspect-ratio:1600/740;}
- .ar-ch11-board:has(> .ar-ch11-board-art) {overflow:visible;min-height:0;aspect-ratio:1600/740;}
- .ar-ch11-translation {font-size:8px;opacity:.6;}
- .ar-ch11-board-notes {padding:12px;margin:0 10px;}
- .ar-ch11-word-row {grid-template-columns:1fr;gap:2px;}
- .ar-ch11-words {gap:6px 12px;}
- .ar-ch11-inline-word {font-size:12px;}
- .ar-ch11-audio-hint {padding:7px 12px 12px;font-size:11px;}
+  /* Keep the precisely aligned audio targets and translations on a
+     minimum-width board; scroll horizontally rather than shrinking them. */
+  .ar-ch11-atlas {border-radius:12px;overflow-x:auto;overscroll-behavior-x:contain;}
+  .ar-ch11-board {width:720px;min-width:720px;aspect-ratio:1600 / 740;}
+  .ar-ch11-board-art {width:100%;height:100%;}
+  .ar-ch11-translation {font-size:9px;opacity:.6;}
+  .ar-ch11-board-notes {width:720px;box-sizing:border-box;padding:12px;margin:0;}
+  .ar-ch11-word-row {grid-template-columns:105px minmax(0,1fr);gap:7px;}
+  .ar-ch11-words {gap:6px 12px;}
+  .ar-ch11-inline-word {font-size:12px;}
+  .ar-ch11-audio-hint {width:720px;box-sizing:border-box;padding:7px 12px 12px;font-size:11px;}
 }
 @media(prefers-reduced-motion:reduce){.ar-ch11-listen-mark{transition:none;}}

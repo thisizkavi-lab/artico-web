@@ -728,8 +728,8 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
   }
   return (
     <div className="ar-ch11-atlas">
-      <div className="ar-ch11-board" role="group" aria-label={board.alt}>
-        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}?v=20261101-5`}
+      <div className={section.id === '11-study-5' ? 'ar-ch11-board ar-ch11-board-weather' : 'ar-ch11-board'} role="group" aria-label={board.alt}>
+        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}?v=20261101-6`}
           alt={board.alt} loading="lazy" draggable="false" />
         {board.terms.map((item, index) => (
           <div key={`${section.id}-${index}`}>

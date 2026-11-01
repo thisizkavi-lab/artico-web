@@ -73,17 +73,21 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
           <tbody>
             {block.rows.map((row, i) => (
               <tr key={i}>
-                {row.map((cell, j) =>
-                  j === 0 ? (
+                {row.map((cell, j) => {
+                  const phraseId = block.phraseCells?.[i]?.[j]
+                  const gloss = language === 'ja' && phraseId ? audioProps?.byId?.[phraseId]?.ja : ''
+                  return j === 0 ? (
                     <th scope="row" key={j}>
                       <RichText runs={cell} />
+                      {gloss && <small className="ar-translation-inline" lang="ja">{gloss}</small>}
                     </th>
                   ) : (
                     <td key={j}>
                       <RichText runs={cell} />
+                      {gloss && <small className="ar-translation-inline" lang="ja">{gloss}</small>}
                     </td>
-                  ),
-                )}
+                  )
+                })}
               </tr>
             ))}
           </tbody>

@@ -2,7 +2,8 @@ import { useState } from 'react'
 import {
   presentationLessons as lessons, presentationCases as cases, presentationSituations as situations,
   presentationPhrases as phrases, presentationSources as sources, presentationParts as parts,
-  presentationBlueprintFields as fields,
+  presentationBlueprintFields as fields, presentationSourceVideos as sourceVideos,
+  presentationWorksheets as worksheets,
 } from './presentationCourseData'
 import './presentation-course.css'
 
@@ -145,20 +146,59 @@ function PhraseReference(){
  </section>
 }
 
-function ResourceLinks() {
- return <section className="ps-resources" id="sources"><span className="ps-kicker">RESEARCH & CREDITS</span><h2>Where the principles come from</h2>
-   <p>Artico's explanations, examples and exercises are original. Source materials are linked rather than reproduced. These are inputs to instructional judgment, not universal speaking laws.</p>
-   {sources.map(s=><div className="ps-resource" key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a><p><b>Relevant principle:</b> {s.principle}</p><p><b>Artico use:</b> {s.use}</p><small>{s.limit}</small></div>)}
-   <div className="ps-video-notes" id="watch-and-notice"><h3>Watch and notice · iBiology (Module 1)</h3>
-   <p><a href="https://www.youtube.com/watch?v=CNcj2y03naE" target="_blank" rel="noopener noreferrer">The First Step in Building a Research Talk ↗</a> · <a href="https://www.ibiology.org/educator-resources/syr/resources_first_step_in_building_a_research_talk.txt" target="_blank" rel="noopener noreferrer">Public transcript ↗</a></p>
-   <p><b>Observe:</b> What do the speakers decide before opening slide software? <b>Apply:</b> Write your own audience, purpose and main message before selecting a design.</p>
-   <p><a href="https://www.youtube.com/watch?v=Nk62hE7xG_A" target="_blank" rel="noopener noreferrer">Know and Distill Your Message ↗</a> · <a href="https://www.ibiology.org/educator-resources/syr/resources_know_and_distill_your_message.txt" target="_blank" rel="noopener noreferrer">Public transcript ↗</a></p>
-   <p><b>Observe:</b> How does the explanation change when it becomes shorter? <b>Apply:</b> Give a 60-second and a 15-second version, and identify what had to remain true.</p>
-   <small>Links open the source media; no video is copied or embedded. Timestamps are deliberately omitted because precise chapter points were not verified.</small>
-   </div>
-   <p className="ps-small">Public iBiology lesson transcripts and educator index were consulted for the foundational model and message distillation. A complete transcript-by-transcript audit of the whole course and some registration/download materials was not possible; this page does not claim otherwise.</p>
+function HalfLifeLab({learning,update}) {
+ const durations=[60,30,15,8]
+ return <section className="ps-half-life">
+  <span className="ps-kicker">MESSAGE DISCOVERY · 3-MINUTE EXERCISE</span>
+  <h3>Half-Life Your Message</h3>
+  <p>Speak about the same idea for 60, 30, 15 and 8 seconds. Move quickly between rounds; do not simply speak faster. The purpose is to discover the central idea. Afterwards, restore any qualification needed to keep it accurate.</p>
+  <div className="ps-half-life-grid">{durations.map(duration=><SavedText key={duration} learning={learning} update={update} responseKey={'application-presentations-half-life-'+duration} label={duration+' seconds'} rows={3} placeholder="Write or transcribe what you said in this round…"/>)}</div>
+  <div className="ps-annotation"><strong>Debrief:</strong> What survived each round? What disappeared? Does the shortest version remain true for this audience and goal? If not, use a longer version or repeat the exercise with a clearer starting point.</div>
  </section>
 }
+function FeedbackRubric(){
+ const rows=[
+  ["Audience & purpose","Could the listener identify why this talk mattered to them?"],
+  ["Core message","Could the listener state the main takeaway accurately?"],
+  ["Evidence","Was the claim supported, with limits and uncertainty made clear?"],
+  ["Structure","Could the listener follow why each part came next?"],
+  ["Explanation & visuals","Were terms, figures and comparisons understandable?"],
+  ["Delivery & timing","Could the listener hear and follow the speaker within the time?"],
+  ["Q&A","Did the speaker answer directly and acknowledge unknowns?"]
+ ]
+ return <section className="ps-feedback-rubric"><span className="ps-kicker">USEFUL FEEDBACK · NOT A CHARISMA SCORE</span><h3>Ask your listener these questions.</h3><div className="ps-rubric-list">{rows.map(([name,question])=><div key={name}><b>{name}</b><p>{question}</p></div>)}</div><p className="ps-small">Ask the listener to identify one moment that worked and one specific moment that became difficult to follow. Then revise and test again.</p></section>
+}
+function EthicsLab(){
+ const [choice,setChoice]=useState(null)
+ const options=[
+  "Use the most dramatic chart and leave the small sample size in backup.",
+  "Show the chart with its sample size and uncertainty, then explain why the result is still preliminary.",
+  "Use a vivid anecdote as proof that the treatment works."
+ ]
+ return <section className="ps-ethics-lab"><span className="ps-kicker">ETHICS CHECK · SCIENCE AND PERSUASION</span><h3>You have one slide and a preliminary result. What do you do?</h3>
+  <div className="ps-options">{options.map((option,i)=><button key={option} onClick={()=>setChoice(i)} className={choice===i?'selected':''} aria-pressed={choice===i}>{option}</button>)}</div>
+  {choice!==null&&<p className="ps-annotation" role="status"><strong>{choice===1?'The defensible choice.':'This risks misleading the audience.'}</strong> A story can illustrate a case, but it cannot replace representative evidence. A chart should preserve the information needed to judge its strength.</p>}
+ </section>
+}
+function ResourceLinks() {
+ const moduleNames={"01":"Module 1 · Framing your talk","02":"Module 2 · Building your talk","03":"Module 3 · Rounding out your talk","04":"Module 4 · Giving your talk"}
+ return <section className="ps-resources" id="sources"><span className="ps-kicker">RESEARCH & CREDITS</span><h2>What the course is built on</h2>
+   <p>Artico's explanations, examples and exercises are original. The research sources below are not treated as interchangeable: peer-reviewed findings, university teaching guidance and practitioner frameworks are labelled separately. iBiology's original materials are linked, not copied.</p>
+   {sources.map(s=><div className="ps-resource" key={s.url}><div className="ps-resource-head"><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a><span>{s.kind}</span></div><p>{s.summary}</p><p><b>How Artico uses it:</b> {s.use}</p><small><b>Boundary:</b> {s.limit}</small></div>)}
+   <div className="ps-source-library">
+    <span className="ps-kicker">ORIGINAL iBIOLOGY COURSE · 22 VIDEOS</span><h3>Study the source material</h3>
+    <p>The full course has four modules. Each link opens the original video or its public transcript. Use it to compare the source's approach with Artico's independent exercises.</p>
+    {Object.entries(moduleNames).map(([module,name])=><div className="ps-source-module" key={module}><h4>{name}</h4>{sourceVideos.filter(v=>v.module===module).map(v=><div className="ps-source-video" key={v.video}><span>{v.title}</span><div><a href={v.video} target="_blank" rel="noopener noreferrer">Video ↗</a><a href={v.transcript} target="_blank" rel="noopener noreferrer">Transcript ↗</a></div></div>)}</div>)}
+   </div>
+   <div className="ps-source-library">
+    <span className="ps-kicker">ORIGINAL WORKSHEETS · 8 RESOURCES</span><h3>Optional source worksheets</h3>
+    <p>These belong to the original iBiology course. Artico does not reproduce or modify them.</p>
+    {worksheets.map(w=><div className="ps-source-video" key={w.url}><span><b>{w.title}</b><small>{w.role}</small></span><a href={w.url} target="_blank" rel="noopener noreferrer">Open PDF ↗</a></div>)}
+   </div>
+   <p className="ps-small">Research synthesis, scope and evidence limitations: <a href="https://github.com/thisizkavi-lab/artico-web/blob/main/docs/presentations-research-synthesis.md" target="_blank" rel="noopener noreferrer">Read the full research and curriculum rationale ↗</a>.</p>
+ </section>
+}
+
 function Overview({learning,update,caseId,setCaseId}) {
  const completed=lessons.filter(l=>learning.responses?.[doneKey(l.id)]==='yes').length
  return <div className="ps-page aw-page">

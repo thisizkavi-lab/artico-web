@@ -101,10 +101,50 @@ function CaseDetails({item}) {
     <small className="ps-kicker">{item.style}</small>
   </article>
 }
+
+function AudienceStudio(){
+ const examples=[
+  ['Same-field researcher','What are the sampled cluster populations, transition pathways, and convergence diagnostics?','Methods, uncertainties and comparisons to the field'],
+  ['Scientist in another discipline','The structure is one frame of a moving molecule. Our simulations sample other possible frames.','Define ensemble, then show what can be inferred'],
+  ['Undergraduate student','A protein changes shape, like a flexible object. A collection of its shapes gives a better picture than one model.','Start with a concrete motion example'],
+  ['Business decision-maker','A single static image may miss shape changes relevant to drug binding. We need evidence before treating those changes as useful targets.','Decision relevance, cost and limits'],
+  ['General audience','Proteins are tiny moving machines. One picture may show only one of the shapes they take.','Simple meaning without claiming every shape is functional'],
+ ]
+ const [index,setIndex]=useState(0)
+ return <section className="ps-audience-studio">
+  <span className="ps-kicker">INTERACTIVE · ONE IDEA, FIVE AUDIENCES</span><h3>Watch the explanation change.</h3>
+  <div className="ps-audience-tabs" role="group" aria-label="Choose the audience">{examples.map(([name],i)=><button key={name} className={index===i?'active':''} aria-pressed={index===i} onClick={()=>setIndex(i)}>{name}</button>)}</div>
+  <blockquote className="ps-spoken">“{examples[index][1]}”</blockquote>
+  <p className="ps-annotation"><strong>What changed:</strong> {examples[index][2]}. The underlying claim remains limited: one static structure cannot characterize a full ensemble.</p>
+ </section>
+}
+function QuestionLab(){
+ const situations=[
+  {name:'Research objection',prompt:'“Your simulation is too short. Why should I trust those populations?”',answers:['The numbers are precise, so they must be right.','That is a real limitation. I need independent runs and convergence checks before treating these as stable populations.','Everyone uses simulations this short.'],best:1,note:'Accept the relevant criticism; propose a discriminating test rather than defending the indefensible.'},
+  {name:'Business objection',prompt:'“Your recommendation assumes Monday represents a normal week. Does it?”',answers:['Monday is always representative.','We cannot tell yet. I recommend measuring comparable days before a permanent decision.','The numbers are close enough.'],best:1,note:'Find the disputed assumption, not a way to win the exchange.'},
+  {name:'Live demo fails',prompt:'“The booking button did nothing. Is this product ready?”',answers:['It worked in rehearsal, so it definitely works.','The action failed here. This is a prototype, and we need to fix it before deployment. I can show the documented intended flow.','That is just your internet.'],best:1,note:'Describe the observed failure and the known limit; do not present a screenshot as proof that the live step worked.'},
+  {name:'Unexpected question',prompt:'“What happens to participants six months later?” (You only measured one week.)',answers:['They almost certainly keep improving.','We did not follow them for six months, so I cannot answer from these data.','There were no problems that I remember.'],best:1,note:'Distinguish what is not measured from what is measured.'},
+ ]
+ const [s,setS]=useState(0),[answer,setAnswer]=useState(null)
+ return <section className="ps-question-lab"><span className="ps-kicker">LIVE PRESSURE · THINK BEFORE YOU ANSWER</span><h3>What would you say?</h3>
+ <div className="ps-audience-tabs">{situations.map((q,i)=><button key={q.name} onClick={()=>{setS(i);setAnswer(null)}} className={s===i?'active':''}>{q.name}</button>)}</div>
+ <p className="ps-question-prompt">{situations[s].prompt}</p>
+ <div className="ps-options">{situations[s].answers.map((text,i)=><button key={i} onClick={()=>setAnswer(i)} className={answer===i?'selected':''}>{text}</button>)}</div>
+ {answer!==null&&<p className="ps-annotation" role="status"><strong>{answer===situations[s].best?'Evidence-respecting response.':'Reconsider the evidence boundary.'}</strong> {situations[s].note}</p>}
+ </section>
+}
+
 function ResourceLinks() {
  return <section className="ps-resources" id="sources"><span className="ps-kicker">RESEARCH & CREDITS</span><h2>Where the principles come from</h2>
    <p>Artico's explanations, examples and exercises are original. Source materials are linked rather than reproduced. These are inputs to instructional judgment, not universal speaking laws.</p>
    {sources.map(s=><div className="ps-resource" key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a><p><b>Relevant principle:</b> {s.principle}</p><p><b>Artico use:</b> {s.use}</p><small>{s.limit}</small></div>)}
+   <div className="ps-video-notes" id="watch-and-notice"><h3>Watch and notice · iBiology (Module 1)</h3>
+   <p><a href="https://www.youtube.com/watch?v=CNcj2y03naE" target="_blank" rel="noopener noreferrer">The First Step in Building a Research Talk ↗</a> · <a href="https://www.ibiology.org/educator-resources/syr/resources_first_step_in_building_a_research_talk.txt" target="_blank" rel="noopener noreferrer">Public transcript ↗</a></p>
+   <p><b>Observe:</b> What do the speakers decide before opening slide software? <b>Apply:</b> Write your own audience, purpose and main message before selecting a design.</p>
+   <p><a href="https://www.youtube.com/watch?v=Nk62hE7xG_A" target="_blank" rel="noopener noreferrer">Know and Distill Your Message ↗</a> · <a href="https://www.ibiology.org/educator-resources/syr/resources_know_and_distill_your_message.txt" target="_blank" rel="noopener noreferrer">Public transcript ↗</a></p>
+   <p><b>Observe:</b> How does the explanation change when it becomes shorter? <b>Apply:</b> Give a 60-second and a 15-second version, and identify what had to remain true.</p>
+   <small>Links open the source media; no video is copied or embedded. Timestamps are deliberately omitted because precise chapter points were not verified.</small>
+   </div>
    <p className="ps-small">Public iBiology lesson transcripts and educator index were consulted for the foundational model and message distillation. A complete transcript-by-transcript audit of the whole course and some registration/download materials was not possible; this page does not claim otherwise.</p>
  </section>
 }
@@ -189,8 +229,10 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
             <blockquote className={'ps-example '+(comparison==='before'?'ps-weak':'ps-strong')}>{comparison==='before'?lesson.before:lesson.after}</blockquote>
             <p className="ps-annotation">{comparison==='before'?'What does this fail to help the listener do? Try improving it before switching.':'Notice the more specific audience task, explanation, or evidence boundary.'}</p>
           </section>
+          {lesson.id==='02' && <AudienceStudio/>}
           {lesson.id==='08' && <GraphExample/>}
           {lesson.id==='09' && <VisualCompare/>}
+          {lesson.id==='13' && <QuestionLab/>}
           <section className="ps-transfer"><span className="ps-kicker">TRANSFER</span><h2>Same principle, different context.</h2><p>{lesson.contrast}</p></section>
           <section className="ps-phrase"><span className="ps-kicker">SAY IT NATURALLY</span><p>“{lesson.say}”</p></section>
           <Decision lesson={lesson}/>

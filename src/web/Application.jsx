@@ -4,7 +4,6 @@ import CurriculumIcon from './CurriculumIcon'
 import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
 import WritingStudio from './WritingStudio'
 import JobsCourse from './JobsCourse'
-import StorytellingCourse from './StorytellingCourse'
 import AcademicCourse from './AcademicCourse'
 import SmallTalkCourse from './SmallTalkCourse'
 import './application.css'
@@ -117,7 +116,7 @@ export default function Application({ route, learning, update }) {
   if (route.id === 'writing') return <WritingStudio />
   if (route.id === 'smalltalk') return <SmallTalkCourse route={route} learning={learning} update={update} />
   if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />
-  if (route.id === 'storytelling') return <StorytellingCourse route={route} learning={learning} update={update} />
+  if (route.id === 'storytelling') return <SmallTalkCourse route={{ ...route, id:'smalltalk', lesson:null }} learning={learning} update={update} />;
   if (route.id === 'academic') return <AcademicCourse learning={learning} update={update} />
   const track = applicationTrack(route.id)
   if (!track) return <TrackOverview language={language}/>

@@ -32,7 +32,7 @@ for (const chapter of catalog) {
         ...new Set(block.turns.map((turn) => design.people?.[turn.speaker] ?? turn.speaker)),
       ]
       const theme = design.sceneThemes?.[sceneIndex] ?? design.theme
-      block.art = `ch${chapter.id}-scene-${sceneIndex}.${['04', '05'].includes(chapter.id) ? 'png' : 'svg'}`
+      block.art = `ch${chapter.id}-scene-${sceneIndex}.${['04', '05', '12'].includes(chapter.id) ? 'png' : 'svg'}`
       block.theme = theme
       block.people = people
       block.caption = `${section.title} · ${people.join(' & ')}`
@@ -52,8 +52,8 @@ for (const chapter of catalog) {
           portraits.add(turn.portrait)
         }
       }
-      if (chapter.id === '04' || chapter.id === '05') {
-        // Preserve the chapter-specific transparent PNG files generated before compilation.
+      if (chapter.id === '04' || chapter.id === '05' || chapter.id === '12') {
+        // Preserve chapter-specific transparent PNG assets rather than regenerating placeholder SVGs.
       } else if (design.approvedScenes?.[sceneIndex])
         await copyFile(
           resolve(root, 'public/assets/figma', design.approvedScenes[sceneIndex]),

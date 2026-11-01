@@ -73,7 +73,7 @@
 <!-- source-heading: Practice: Retrieve a useful subset -->
 ## 練習: 必要な語を取り出す
 
-1. ある親が、以前の関係で子どもがいる新しいパートナーと家族を作り、その後二人の間にも子どもが生まれました。それぞれの子どもは、最初の子どもとどのような関係ですか。違いを説明してください。
+1. あなたが最初の子どもだとします。あなたの親が、以前の関係で子どもがいる新しいパートナーと家族を作り、その後二人の間にも子どもが生まれました。ほかの二人の子どもは、あなたとそれぞれどのような関係ですか。
 2. あなたの姉妹に、息子Leoがいます。Leoは、あなたとどのような関係ですか。あなたの子に、娘Miaがいます。Miaは、あなたとどのような関係ですか。
 3. 相手が **My daughter is thirty** と言います。daughterが、幼い子だけを意味するわけではない理由を説明してください。
 4. 学習部分の異なる箇所から四つの語を選び、それを使って架空の人や家族を説明します。使える形は **I have...**、**This is my...**、**She's my...**、**We work together** です。
@@ -82,8 +82,8 @@
 <!-- source-heading: Sample possibilities -->
 ### 返答例
 
-1. **The child from the new partner’s earlier relationship is a step-sibling. The child they have together with your birth parent is a half-sibling because you share one birth parent.**  
-   新しいパートナーが以前の関係でもうけた子どもは、最初の子どもの stepbrother / stepsister（義理の兄弟姉妹）です。二人の間に生まれた子どもは、最初の子どもと生みの親を一人共有するため、half-brother / half-sister（異父／異母兄弟姉妹）です。
+1. **The partner’s child from the earlier relationship is your stepbrother or stepsister. The child your birth parent has with your stepparent is your half-brother or half-sister.**  
+   新しいパートナーが以前の関係でもうけた子どもは、あなたの stepbrother / stepsister（義理の兄弟姉妹）です。あなたの生みの親と継親との間に生まれた子どもは、あなたの half-brother / half-sister（異父／異母兄弟姉妹）です。
 2. **Leo is your nephew. Mia is your granddaughter.**  
    姉妹の息子Leoは甥、子の娘Miaは孫娘です。
 3. **Daughter describes her relationship to a parent, even when she is an adult.**  

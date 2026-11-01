@@ -2,6 +2,12 @@
 // English. These are original starter exercises, not official exam questions.
 export const applicationTracks = [
   {
+    id:'other-half', icon:'book', en:'The Other Half of English', ja:'英語のもう半分',
+    enSummary:'A field guide to real American English beyond textbooks. Recognition first; no speaking drills.',
+    jaSummary:'教科書では扱われにくい、実際のアメリカ英語を理解するためのガイド。',
+    tasks:[], // A recognition-first reference course, not a speaking or test track.
+  },
+  {
     id:'tests', icon:'school', en:'English Tests', ja:'英語試験',
     enSummary:'IELTS, TOEFL, TOEIC, EIKEN and other tests.',
     jaSummary:'IELTS・TOEFL・TOEIC・英検など。',

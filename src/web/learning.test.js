@@ -445,14 +445,17 @@ test('Learn keeps Foundations and Social Fluency and expands eight Application t
 })
 
 test('Application tracks use valid routes; Jobs has its own full course', () => {
-  const ids = ['tests','smalltalk','interviews','presentations','academic','writing','reading','ideas']
+  const ids = ['other-half','tests','smalltalk','interviews','presentations','academic','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
   assert.equal(parseRoute('#/application').page, 'application')
+  assert.equal(parseRoute('#/application/other-half/04').chapter, '04')
+  assert.equal(parseRoute('#/application/other-half/10').id, 'other-half')
+  assert.equal(parseRoute('#/application/other-half/14').path, '/application')
   assert.equal(parseRoute('#/application/unknown').path, '/application')
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
-    assert.equal(track.tasks.length, ['smalltalk','interviews','academic','reading','ideas'].includes(track.id) ? 0 : 2)
+    assert.equal(track.tasks.length, ['other-half','smalltalk','interviews','academic','reading','ideas'].includes(track.id) ? 0 : 2)
     track.tasks.forEach((task,i) => {
       assert.ok(['speaking','reading','writing'].includes(task.kind))
       for(const key of ['en','ja','promptEn','promptJa','example']) assert.ok(task[key])

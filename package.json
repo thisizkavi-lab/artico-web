@@ -12,7 +12,7 @@
     "test:twister-audio": "node --test src/web/twisterAudio.test.js",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "pretest": "python3 scripts/generate_ch05_scenes.py && python3 scripts/generate_ch06_ch10_phrase_scenes.py"
+    "pretest": "python3 scripts/generate_ch05_scenes.py && python3 scripts/generate_ch06_ch10_phrase_scenes.py && python3 scripts/build_ch08_png_scenes.py"
   },
   "dependencies": {
     "react": "19.2.7",

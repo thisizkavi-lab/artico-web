@@ -369,3 +369,167 @@
   display:flex;flex-direction:column;align-items:flex-start;min-width:0
 }
 .ip-page .ar-phrase-bubble .ar-bubble-copy p{margin:0}
+
+
+/* Chapters 04–96: one quiet illustrated board with a full-width scene and
+   individual round audio pills. Chapters 01–03 never mount this component. */
+.ip-page .ar-shared-study .ar-unified-phrase-board {
+  display:flex;
+  flex-direction:column;
+  gap:17px;
+  width:100%;
+  min-width:0;
+  padding:17px 18px 19px;
+  border:1px solid #e0e6ef;
+  border-radius:25px;
+  background:#f8fafc;
+  box-shadow:0 1px 2px rgba(30,48,66,.035);
+}
+.ip-page .ar-shared-study .ar-unified-phrase-stage {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+  aspect-ratio:2.16/1;
+  border-radius:22px;
+  background:#eaf0e8;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-image {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-placeholder {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:11px;
+  width:100%;
+  height:100%;
+  min-height:160px;
+  color:#85938f;
+  text-align:center;
+}
+.ip-page .ar-shared-study .ar-unified-placeholder-icon {
+  display:flex;
+  width:86px;
+  height:86px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(94,121,110,.15);
+  border-radius:28px;
+  background:rgba(255,255,255,.32);
+  opacity:.65;
+}
+.ip-page .ar-shared-study .ar-unified-placeholder-label {
+  font-size:12px;
+  font-weight:450;
+  letter-spacing:.015em;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-pills {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-items:stretch;
+  gap:12px 13px;
+  min-width:0;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-pill {
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:13px;
+  min-width:0;
+  max-width:100%;
+  min-height:56px;
+  padding:10px 10px 10px 19px;
+  border:1px solid #dce4ef;
+  border-radius:999px;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(38,57,84,.045);
+  color:#33445f;
+  scroll-margin-top:110px;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-pill.is-focused {
+  border-color:#adc4eb;
+  outline:2px solid rgba(65,110,190,.12);
+}
+.ip-page .ar-shared-study .ar-unified-phrase-copy {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-width:0;
+  color:#30415c;
+  font-size:clamp(14px,1.45vw,17px);
+  font-weight:680;
+  line-height:1.35;
+  letter-spacing:-.014em;
+  overflow-wrap:anywhere;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-copy .ar-translation-inline {
+  display:block;
+  margin:3px 0 0;
+  color:#99a2ae;
+  font-size:11px;
+  font-weight:400;
+  line-height:1.45;
+  letter-spacing:0;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-pill .ip-audio {
+  display:flex;
+  flex:none;
+  align-items:center;
+  justify-content:center;
+  width:35px;
+  height:35px;
+  min-width:35px;
+  min-height:35px;
+  margin:0;
+  border-radius:50%;
+  background:#f5f7f8;
+  border:1px solid #e4e9ec;
+  color:#8999a5;
+}
+.ip-page .ar-shared-study .ar-unified-phrase-pill .ip-audio:not(:disabled):hover {
+  background:#eef4ff;
+  border-color:#ccdaee;
+  color:#4267a8;
+}
+@media (max-width:700px) {
+  .ip-page .ar-shared-study .ar-unified-phrase-board {
+    gap:12px;
+    padding:10px;
+    border-radius:18px;
+  }
+  .ip-page .ar-shared-study .ar-unified-phrase-stage {
+    border-radius:15px;
+    aspect-ratio:1.7/1;
+  }
+  .ip-page .ar-shared-study .ar-unified-placeholder-icon {
+    width:64px;
+    height:64px;
+    border-radius:20px;
+  }
+  .ip-page .ar-shared-study .ar-unified-phrase-pills {
+    gap:9px;
+  }
+  .ip-page .ar-shared-study .ar-unified-phrase-pill {
+    min-height:46px;
+    gap:9px;
+    padding:8px 8px 8px 13px;
+  }
+  .ip-page .ar-shared-study .ar-unified-phrase-copy {
+    font-size:13.5px;
+  }
+  .ip-page .ar-shared-study .ar-unified-phrase-pill .ip-audio {
+    width:30px;
+    min-width:30px;
+    height:30px;
+    min-height:30px;
+  }
+}

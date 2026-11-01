@@ -134,8 +134,8 @@ test('The Other Half of English overview and source chapters render as a visual 
       const markup = renderToStaticMarkup(createElement(OtherHalfCourse, { route }))
       if (hash === '#/application/other-half/10') {
         assert.ok(markup.length > 500, hash + ': missing-source state is empty')
-        assert.ok(markup.includes('Source gap.'), hash + ': missing-source state must be explicit')
-        assert.ok(markup.includes('chapter text is absent'), hash + ': do not invent the missing source chapter')
+        assert.ok(markup.includes('Source gap'), hash + ': missing-source state must be explicit')
+        assert.ok(markup.includes('source set does not include its lesson text'), hash + ': do not invent the missing source chapter')
         assert.ok(markup.includes('Continue to Chapter 11'), hash + ': provide a safe navigation path')
       } else {
         assert.ok(markup.length > 900, hash + ': empty course screen')

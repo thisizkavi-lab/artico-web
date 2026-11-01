@@ -57,7 +57,7 @@ function makeModel(source, t) {
   }
   // Show the complete email and its purpose before the delivery vocabulary.
   if (source.id === '93' && sections.length > 1) sections.unshift(...sections.splice(1, 1))
-  if (source.diagram && source.id !== '11')
+  if (source.diagram && !['11', '14'].includes(source.id))
     sections.splice(Math.min({ calendar: 2, family: 1, sequence: 0, presentation: 2, home: 2, directions: 2, body: 1 }[source.diagram] ?? 1, sections.length), 0, {
       id: 'visual',
       title: t('Look & understand'),

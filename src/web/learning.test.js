@@ -729,7 +729,9 @@ test('storytelling deep links and saved practice survive reload without acceptin
   const lesson = parseRoute('#/application/storytelling/05/practice')
   assert.deepEqual([lesson.page,lesson.id,lesson.lesson,lesson.mode],
     ['application','storytelling','05','practice'])
-  assert.equal(parseRoute('#/application/storytelling/16/study').path, '/application')
+  assert.equal(parseRoute('#/application/storytelling/16/study').lesson, '16')
+  assert.equal(parseRoute('#/application/storytelling/28/practice').lesson, '28')
+  assert.equal(parseRoute('#/application/storytelling/29/study').path, '/application')
   assert.equal(parseRoute('#/application/storytelling/05/wrong').path, '/application')
   assert.equal(parseRoute('#/application/storytelling').id, 'storytelling')
   const state = sanitizeLearning({
@@ -750,7 +752,7 @@ test('storytelling deep links and saved practice survive reload without acceptin
   assert.equal(state.positions[state.last],125)
   assert.equal(state.responses['application-storytelling-note-05'],'I found myself in the wrong room.')
   assert.equal(state.responses['application-storytelling-done-05'],'1')
-  assert.equal(state.responses['application-storytelling-done-20'],undefined)
+  assert.equal(state.responses['application-storytelling-done-20'],'1')
 })
 
 test('storytelling has five coherent units and fifteen distinct lessons', async () => {

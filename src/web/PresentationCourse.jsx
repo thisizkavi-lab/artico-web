@@ -181,19 +181,39 @@ function HalfLifeLab({learning,update}) {
   <p className="ps-small">The source article recommends a quick, spontaneous sequence, then reflection and optional recording. Artico does not record your voice. You can use a phone or computer recorder if you want to review the actual delivery.</p>
  </section>
 }
-function FeedbackRubric(){
+function FeedbackRubric({learning,update,caseId}){
+ const read=key=>(learning.responses?.[blueprintKey(caseId,key)]||'').trim()
+ const value=(key)=>read(key)||'Not set yet — add this in your Presentation Blueprint.'
  const rows=[
-  ["Audience & purpose","Could the listener identify why this talk mattered to them?"],
-  ["Core message","Could the listener state the main takeaway accurately?"],
-  ["Evidence","Was the claim supported, with limits and uncertainty made clear?"],
-  ["Structure","Could the listener follow why each part came next?"],
-  ["Explanation & visuals","Were terms, figures and comparisons understandable?"],
-  ["Delivery & timing","Could the listener hear and follow the speaker within the time?"],
-  ["Accessibility","Were labels, contrast, captions and alternatives sufficient for this audience?"],
-  ["Source integrity","Were collaborators, funding, sources and image rights credited where needed?"],
-  ["Q&A","Did the speaker answer directly and acknowledge unknowns?"]
+  ["Audience and purpose","Could the listener identify why this talk mattered? Did it achieve the stated goal?"],
+  ["Core message","Ask the listener to state the main takeaway in their own words. Is it accurate?"],
+  ["Title and opening","Did the title set an accurate expectation? Did the opening give enough relevant background and earn attention without exaggeration?"],
+  ["Body and evidence","Were methods, data, controls and comparisons clear enough to judge the claim? Were important limitations visible?"],
+  ["Structure and flow","Did each section follow logically? Were transitions clear? Did any section feel unnecessary or out of order?"],
+  ["Story and examples","Did a vignette, analogy or example make the idea clearer? Did it distract, distort or overstate?"],
+  ["Language and jargon","Which terms needed defining? Was any wording ambiguous or too dense to follow aloud?"],
+  ["Slides and figures","Did titles state useful messages? Were figures readable, labelled and uncluttered? Were colours, scales and text accessible?"],
+  ["Delivery and connection","Could the listener hear and follow the speaker? Were pauses, pace, emphasis and interaction useful for this setting?"],
+  ["Timing","Did the talk fit the actual limit and leave appropriate time for discussion?"],
+  ["Ending and next step","Did the conclusion reinforce the message and explain its implication, next question or requested action?"],
+  ["Access, credits and readiness","Were captions, contrast, room/remote needs, acknowledgements, funding, image/source credits and a technical fallback handled?"],
+  ["Q&A","Did the speaker listen, clarify, answer from evidence and acknowledge what remains unknown?"]
  ]
- return <section className="ps-feedback-rubric"><span className="ps-kicker">USEFUL FEEDBACK · NOT A CHARISMA SCORE</span><h3>Ask your listener these questions.</h3><div className="ps-rubric-list">{rows.map(([name,question])=><div key={name}><b>{name}</b><p>{question}</p></div>)}</div><p className="ps-small">Ask the listener to identify one moment that worked and one specific moment that became difficult to follow. Then revise and test again.</p></section>
+ return <section className="ps-feedback-rubric">
+  <span className="ps-kicker">REHEARSAL TOOL · FORMATIVE FEEDBACK</span>
+  <h3>Give your reviewer the context first.</h3>
+  <p>Before the rehearsal, tell the reviewer who the talk is for, what it should achieve, how long it should take and where/how it will be delivered. Tell them which part you especially want them to examine. If you are reviewing slides, ask them to note the slide number or moment.</p>
+  <div className="ps-reviewer-brief">
+   {[['Audience','audience'],['Goal','goal'],['Occasion, format and time','occasion']].map(([label,key])=><div key={key}><b>{label}</b><p>{value(key)}</p></div>)}
+  </div>
+  <h4>What to listen and look for</h4>
+  <div className="ps-rubric-list">{rows.map(([name,question])=><div key={name}><b>{name}</b><p>{question}</p></div>)}</div>
+  <div className="ps-reviewer-notes">
+   <SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,'review')} label="Feedback received" placeholder="What did the listener understand? Where did they lose the thread? Which explanation, figure or transition needs work?"/>
+   <SavedText learning={learning} update={update} responseKey={blueprintKey(caseId,'revision')} label="Revision to make and retest" placeholder="Name one substantive change, why it should help, and how you will check it in the next run."/>
+  </div>
+  <p className="ps-small">Ask for one specific moment that worked and one moment that became difficult to follow. This is not a charisma score: feedback should describe observable effects on the audience.</p>
+ </section>
 }
 function EthicsLab(){
  const [choice,setChoice]=useState(null)
@@ -313,7 +333,7 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
          <section className="ps-lesson-section"><span className="ps-kicker">YOUR TASK</span><h2>Try it in your own words.</h2><p className="ps-practice-prompt">{lesson.practice}</p><ul className="ps-checks">{lesson.criteria.map(t=><li key={t}>{t}</li>)}</ul><SavedText learning={learning} update={update} responseKey={noteKey(lesson.id)} label="Draft, outline, or reflection" placeholder="A short outline is enough. Say the full version aloud." /></section>
          <Decision lesson={lesson}/>
          {lesson.id==='04' && <HalfLifeLab learning={learning} update={update}/>}
-         {lesson.id==='15' && <FeedbackRubric/>}
+         {lesson.id==='15' && <FeedbackRubric learning={learning} update={update} caseId={caseId}/ >}
          <section className="ps-speak"><span className="ps-kicker">SPEAK IT ALOUD</span><h2>Deliver, then revise.</h2><p>{lesson.say}</p><p>Try a first version. Identify one thing your listener could not follow, revise, and speak again. This page does not pretend to assess your voice or speaking ability.</p></section>
          <section className="ps-blueprint-inline"><h3>Carry this into your blueprint.</h3><CaseSwitcher caseId={caseId} onChange={setCaseId}/><a href={root+'/blueprint'}>Open editable talk plan →</a></section>
          <button className={'ps-complete '+(completed?'is-complete':'')} onClick={()=>update(prev=>({...prev,responses:{...prev.responses,[doneKey(lesson.id)]:completed?'':'yes'}}))}>{completed?'✓ Marked complete · undo':'Mark complete after practising'}</button>

@@ -67,7 +67,7 @@ export const presentationLessons = [
     "title": "Goal, message and the so what",
     "goal": "Separate the desired outcome from the claim and its relevance.",
     "rule": "A topic names the subject. A goal names the change. A message names the takeaway.",
-    "teach": "These three are related but not interchangeable. Topic: protein conformational dynamics. Goal: help a mixed-discipline group assess whether one simulation supports a claim about sampled states. Message: this trajectory samples several conformational clusters, but convergence is not established. The so what explains why that message matters to this audience: it changes what analysis or experiment should come next. Limit yourself to one primary goal and one central message; supporting points can be many.",
+    "teach": "These three are related but not interchangeable. Topic: protein conformational dynamics. Goal: help a mixed-discipline group assess whether one simulation supports a claim about sampled states. Message: this trajectory samples several conformational clusters, but convergence is not established. The so what explains why that message matters to this audience: it changes what analysis or experiment should come next. Limit yourself to one primary goal and one central message; supporting points can be many. As a drafting exercise, try expressing the message in 15 words or fewer. That constraint can expose the centre of the idea, but it is not a universal limit: restore any qualification needed to keep the claim accurate.",
     "before": "My topic is artificial intelligence in biology. I want to cover everything.",
     "after": "Goal: help the lab decide whether this model is useful for prioritising experiments. Message: it narrows candidates, but does not establish function. So what: we should validate the top predictions before investing in a larger screen.",
     "note": "A strong message is not necessarily a bold claim. It may be a precise statement of what remains unknown.",
@@ -80,7 +80,7 @@ export const presentationLessons = [
     ],
     "answer": 1,
     "reason": "It expresses a complete, potentially testable takeaway rather than a subject or logistical detail.",
-    "practice": "Write four separate lines: topic, audience, primary goal, core message. Add one sentence explaining why this audience should care.",
+    "practice": "Write four separate lines: topic, audience, primary goal, core message. Try a 15-word working version of the message, then restore any qualification needed to keep it accurate. Add one sentence explaining why this audience should care.",
     "field": "message",
     "criteria": [
       "One primary goal",
@@ -88,7 +88,7 @@ export const presentationLessons = [
       "Audience-specific relevance"
     ],
     "say": "The point I want you to leave with is…",
-    "sourceBasis": "iBiology's audience + goal + message framework; OpenStax purpose and topic distinctions."
+    "sourceBasis": "iBiology's audience + goal + message framework and My Talk Plan's 15-word message exercise; OpenStax purpose and topic distinctions."
   },
   {
     "id": "04",

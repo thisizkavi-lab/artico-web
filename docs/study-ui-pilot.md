@@ -64,10 +64,11 @@ Check English and Japanese, every section, and mobile wrapping before calling a 
 ## Validation
 
 - `npm run test:chapter06-pilot`: source preservation in English/Japanese, all three reply pairs, all four continuation expressions, retained Japanese row explanations, conversations, notes, and unique phrase anchors; existing conversation-layout checks.
+- `node --test src/web/learning.test.js scripts/chapter06-pilot.test.mjs scripts/conversation-layout.test.mjs`: all 40 relevant shell, pilot, and conversation checks pass, including the updated sliding-toggle styling check.
 - `npm exec vite build`: production build.
 - Browser review at 978×901 and 390×844; all four illustrations load; tables fit without horizontal overflow; English/Japanese switching, keyboard operation, saved preference, profile control, and Progress navigation.
 - Spot-check Chapters 04 and 05 to confirm the pilot content layout stays scoped to Chapter 06.
 
 The production build retains the repository's existing large-chunk advisory. This pilot does not change bundling strategy.
 
-The broader locale suite passes 6 of 7 checks and stops at an existing Chapter 04 asset-reference mismatch: its English compiled conversations point to `.png`, while Japanese points to `.svg`. The same mismatch is present in the unchanged base commit. Chapter 06's bilingual source-preservation checks and all 7 pilot/conversation checks pass. Chapter 04's content is outside this pilot and has not been changed to resolve that separate issue.
+Running the broader locale suite directly against the committed generated JSON reports an existing Chapter 04 asset-reference mismatch: its English conversations point to `.png`, while Japanese points to `.svg`. The same mismatch is present in the unchanged base commit. The deployment pipeline recompiles lesson data before testing, and the broader locale check passes with that regenerated data. Chapter 04's content is outside this pilot and has not been changed.

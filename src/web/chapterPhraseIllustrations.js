@@ -12,10 +12,10 @@ export const chapterPhraseIllustrations = {
     { file: 'ch07-03-decline-or-keep-the-answer-open.png', fallbackFile: null, alt: 'Two friends face each other and talk, with one responding to an invitation using a calm open-hand gesture' },
   ],
   '08': [
-    { file: 'ch08-01-name-what-you-appreciate.png', fallbackFile: 'ch08-scene-0.svg', alt: 'A friend lends an umbrella and the other thanks them warmly' },
-    { file: 'ch08-02-respond-to-thanks.png', fallbackFile: 'ch08-scene-1.svg', alt: 'A host welcomes a guest after dinner and responds warmly to their thanks' },
-    { file: 'ch08-03-gifts-and-compliments.png', fallbackFile: 'ch08-scene-2.svg', alt: 'One friend gives a birthday present while the other reacts with delighted surprise' },
-    { file: 'ch08-04-same-words-different-intention.png', fallbackFile: 'ch08-scene-3.svg', alt: 'A person looks frustrated after being left without notice, showing how thanks can sound sarcastic' },
+    { file: 'ch08-01-practical-favor-ai.png', fallbackFile: null, alt: 'Leah lends Owen a closed umbrella, and Owen accepts it with a grateful smile and a hand over his heart' },
+    { file: 'ch08-02-responding-to-thanks-ai.png', fallbackFile: null, alt: 'After dinner Owen thanks Leah, who responds warmly with a welcoming open hand' },
+    { file: 'ch08-03-gift-appreciation-ai.png', fallbackFile: null, alt: 'Leah offers a small birthday gift while Owen reacts with appreciative surprise and reaches to accept it' },
+    { file: 'ch08-04-different-intention-ai.png', fallbackFile: null, alt: 'Owen looks frustrated and asks why Leah left without telling him as she turns back with her shoulder bag' },
   ],
   '09': [
     { file: 'ch09-01-say-what-happened.png', alt: 'One friend looks apologetic while speaking with another' },

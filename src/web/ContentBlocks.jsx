@@ -20,7 +20,7 @@ export function RichText({ runs = [] }) {
   )
 }
 
-export function SourceContent({ block, audioProps, focusedId, examples = true }) {
+export function SourceContent({ block, audioProps, focusedId, examples = true, phraseAnchors = [] }) {
   const { t, language } = useLanguage()
   const chapter04 = /^(?:ja-)?04-(?:study|practice)-|^ch04-/.test(block.id || '')
   const chapter05 = /^(?:ja-)?05-(?:study|practice)-|^ch05-/.test(block.id || '')
@@ -165,7 +165,8 @@ export function SourceContent({ block, audioProps, focusedId, examples = true })
       </p>
     ) : null
   return (
-    <div className="rc-source" data-source-block={block.id}>
+    <div className={`rc-source${block.presentation === 'expression-meaning' ? ' ar-expression-meaning-source' : ''}`} data-source-block={block.id}>
+      {phraseAnchors.map((id) => <span className="ar-study-anchor" key={id} id={`study-${id}`} data-phrase-id={id} tabIndex={-1} />)}
       {content}
       {examples && !phraseTable && block.phraseIds?.length > 0 && (
         <ReferencePhraseShelf ids={block.phraseIds} byId={audioProps.byId} audioProps={audioProps} focusedId={focusedId} />

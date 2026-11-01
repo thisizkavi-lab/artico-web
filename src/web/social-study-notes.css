@@ -1,6 +1,6 @@
 /* Shared study annotations for Social Fluency Chapters 01–96.
    Keep the different chapter layouts, colors, and primary expressions intact. */
-.ip-page .ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note, .ar-shelf-note, .ip-note, .ar-teaching-note, .ar-reference-note, .ar-phrase-note,
   .ar-study-note, .ar-ch06-note, .ar-c03-idea, .ar-c03-lesson-tip
 ) {
@@ -10,8 +10,9 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 1.5;
+  color: #89877d;
 }
-.ip-page .ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note, .ar-shelf-note, .ip-note, .ar-teaching-note, .ar-reference-note, .ar-phrase-note,
   .ar-study-note, .ar-ch06-note, .ar-c03-idea, .ar-c03-lesson-tip
 ) :is(p, .ip-prose, .ar-note-copy, .ar-teaching-note-copy) {
@@ -19,19 +20,21 @@
   font-size: 10px;
   font-weight: 400;
   line-height: 1.5;
+  color: inherit;
 }
-.ip-page .ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note, .ar-shelf-note, .ip-note, .ar-teaching-note, .ar-reference-note, .ar-phrase-note,
   .ar-study-note, .ar-ch06-note, .ar-c03-idea, .ar-c03-lesson-tip
 ) :is(p, .ip-prose, .ar-note-copy, .ar-teaching-note-copy) strong {
   font-size: inherit;
   font-weight: 500;
+  color: inherit;
 }
-.ip-page .ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note-label, .ar-teaching-note-title, .ar-reference-note-label,
   .ar-phrase-note-label, .ar-study-note-label, .ar-ch06-note-label
 ),
-.ip-page .ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note, .ar-c03-idea, .ar-c03-lesson-tip
 ) > strong:first-child {
   display: block;
@@ -41,6 +44,7 @@
   line-height: 1.3;
   letter-spacing: 0;
   text-transform: none;
+  color: #969183;
 }
 /* Chapter 03 already uses small in-card annotations: shrink those as well. */
 .ip-page .ar-compact-study-notes.ar-shared-study .ar-c03-card .ar-c03-idea {

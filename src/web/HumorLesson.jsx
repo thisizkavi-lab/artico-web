@@ -5,6 +5,7 @@ import CurriculumIcon from './CurriculumIcon'
 import { moves, scenes, chats, memes, videos, exercises, starterIds, branches, writingPrompts, usefulPhrases } from './humorContent'
 import './humor.css'
 import './social-reference-humor.css'
+import './social-study-surfaces.css'
 
 const progressKey = 'application-humor-2'
 const categories = [

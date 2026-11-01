@@ -35,7 +35,7 @@ test('Chapters 06–10 have one distinct illustration for every Study section', 
   const pngDimensions = {
     '06': [[1821, 864], [1774, 887], [1796, 876], [1536, 1024]],
     '07': [[1536, 1024], [1536, 1024], [1536, 1024]],
-    '08': [1800, 900],
+    '08': [[1774, 887], [1792, 877], [1774, 887], [1774, 887]],
     '09': [1774, 887],
     '10': [1400, 840],
   }
@@ -58,7 +58,7 @@ test('Chapters 06–10 have one distinct illustration for every Study section', 
       assert.ok(existsSync(path), illustration.file)
       if (['06', '07', '08', '09', '10'].includes(id)) {
         const png = readFileSync(path)
-        const [width, height] = ['06', '07'].includes(id) ? pngDimensions[id][index] : pngDimensions[id]
+        const [width, height] = ['06', '07', '08'].includes(id) ? pngDimensions[id][index] : pngDimensions[id]
         assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10], `${illustration.file}: PNG signature`)
         assert.equal(png.readUInt32BE(16), width, `${illustration.file}: image width`)
         assert.equal(png.readUInt32BE(20), height, `${illustration.file}: image height`)

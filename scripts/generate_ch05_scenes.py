@@ -188,11 +188,22 @@ def scene(n):
                    winner(474,325,1.04) + camera(458,539,.45))
     return common_start + content + common_end
 
+# Native, chapter-specific PNGs checked into the repository take precedence.
+# Regenerate the legacy placeholder only when its PNG is absent, e.g. on a fresh
+# checkout that has not yet received an approved original illustration.
+from PIL import Image
+
 for index in range(4):
     target = OUT / f"ch05-scene-{index}.png"
+    if target.is_file():
+        with Image.open(target) as im:
+            assert im.format == "PNG" and im.mode == "RGBA", target
+            assert im.width >= 1000 and im.height >= 600, target
+            assert im.getchannel("A").getextrema()[0] == 0, target
+        print(f"{target.name}: preserved existing transparent PNG ({target.stat().st_size} bytes)")
+        continue
     cairosvg.svg2png(bytestring=scene(index).encode("utf-8"),
                     write_to=str(target), output_width=1280, output_height=800)
-    from PIL import Image
     with Image.open(target) as im:
         assert im.mode == "RGBA" and im.size == (1280,800), target
         assert im.getextrema()[3][0] == 0 and im.getextrema()[3][1] == 255, target

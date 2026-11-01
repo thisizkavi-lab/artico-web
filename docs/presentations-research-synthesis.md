@@ -371,22 +371,6 @@ The loop returns to the frame. A change in audience or purpose can require a dif
 
 ---
 
-## 5. How the model changes by presentation type
-
-| Type | Audience outcome | Useful structure | What must not be sacrificed |
-|---|---|---|---|
-| Scientific conference talk | Understand the contribution and judge the evidence | Question → rationale → methods/results → interpretation → limitations/next questions | Controls, uncertainty, methodological clarity |
-| Lab meeting | Decide what to test, debug or prioritise next | Progress → key result → obstacle → decision needed | Negative results, open problems, ownership |
-| Thesis defence / job talk | Assess the candidate's reasoning, independence and research contribution | Research programme → key problem → evidence → contribution → future work | Defensibility, methodological understanding, honest boundaries |
-| Business decision briefing | Make a decision under constraints | Decision needed → baseline → evidence → risks → recommendation | Costs, assumptions, denominator, alternative explanations |
-| Product demonstration | Judge whether a workflow solves a real user problem | User task → live workflow → observed result → limitations → next test | Actual product behaviour and known failure modes |
-| Classroom teaching | Build and apply a mental model | Question/phenomenon → explanation → worked example → learner practice → check | Prerequisites, comprehension checks, accuracy |
-| Public proposal / persuasive talk | Evaluate a claim and decide whether to act | Need → evidence → options → trade-offs → request | Source quality, fair treatment of objections, audience agency |
-| Special-occasion speech | Recognise a person or event and share meaning | Occasion → truthful specific memory → meaning → recognition | Sincerity, respect, privacy |
-| Poster / online presentation | Navigate information and engage in dialogue under different constraints | Short orientation → audience-selected depth → discussion | Readability, navigation, accessible alternatives |
-
-A single topic can therefore require very different messages, structures and visual choices. This is not inconsistency; it is audience adaptation.
-
 ## 4. Where the frameworks appear to conflict—and how Artico resolves them
 
 | Tension | What the sources contribute | Artico's resolution |
@@ -406,6 +390,23 @@ A good slide is not necessarily minimal; it is *sufficient and legible*. A good 
 
 
 ---
+
+
+## 5. How the model changes by presentation type
+
+| Type | Audience outcome | Useful structure | What must not be sacrificed |
+|---|---|---|---|
+| Scientific conference talk | Understand the contribution and judge the evidence | Question → rationale → methods/results → interpretation → limitations/next questions | Controls, uncertainty, methodological clarity |
+| Lab meeting | Decide what to test, debug or prioritise next | Progress → key result → obstacle → decision needed | Negative results, open problems, ownership |
+| Thesis defence / job talk | Assess the candidate's reasoning, independence and research contribution | Research programme → key problem → evidence → contribution → future work | Defensibility, methodological understanding, honest boundaries |
+| Business decision briefing | Make a decision under constraints | Decision needed → baseline → evidence → risks → recommendation | Costs, assumptions, denominator, alternative explanations |
+| Product demonstration | Judge whether a workflow solves a real user problem | User task → live workflow → observed result → limitations → next test | Actual product behaviour and known failure modes |
+| Classroom teaching | Build and apply a mental model | Question/phenomenon → explanation → worked example → learner practice → check | Prerequisites, comprehension checks, accuracy |
+| Public proposal / persuasive talk | Evaluate a claim and decide whether to act | Need → evidence → options → trade-offs → request | Source quality, fair treatment of objections, audience agency |
+| Special-occasion speech | Recognise a person or event and share meaning | Occasion → truthful specific memory → meaning → recognition | Sincerity, respect, privacy |
+| Poster / online presentation | Navigate information and engage in dialogue under different constraints | Short orientation → audience-selected depth → discussion | Readability, navigation, accessible alternatives |
+
+A single topic can therefore require very different messages, structures and visual choices. This is not inconsistency; it is audience adaptation.
 
 ## 6. Revised Artico curriculum specification
 

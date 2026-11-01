@@ -30,6 +30,21 @@ test('English Tests branches to all six learner-facing IELTS areas in both modes
   for (const input of ['#/application/tests/ielts/bad', '#/application/tests/ielts/home/wrong', '#/application/tests/ielts/home/study/extra']) assert.equal(parseRoute(input).path, '/application/tests')
   assert.equal(parseRoute('#/application/tests/ielts/home/study?attempt=%3Cscript%3E').attempt, undefined)
 })
+test('TOEIC L&R outline pages resolve independently of existing IELTS routes', () => {
+  assert.equal(parseRoute('#/application/tests/toeic').path, '/application/tests/toeic/home')
+  for (const area of ['home', 'overview', 'listening', 'reading', 'mocks']) {
+    const path = '/application/tests/toeic/' + area
+    const route = parseRoute('#' + path)
+    assert.equal(route.page, 'application')
+    assert.equal(route.id, 'tests')
+    assert.equal(route.exam, 'toeic')
+    assert.equal(route.area, area)
+    assert.equal(route.path, path)
+  }
+  for (const input of ['#/application/tests/toeic/unknown', '#/application/tests/toeic/reading/practice']) {
+    assert.equal(parseRoute(input).path, '/application/tests')
+  }
+})
 test('every skill has actual Study content, a decoded example and reachable practice workbooks', () => {
   for (const [id, info] of Object.entries(skillInfo)) {
     assert.equal(info.sections.length, 4)

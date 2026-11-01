@@ -4,6 +4,7 @@ import { readFileSync, existsSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import designs from '../src/course/chapter-designs.js'
 import { chapterPhraseIllustrations } from '../src/web/chapterPhraseIllustrations.js'
+import { sectionPhraseIds, sectionPhraseArtwork } from '../src/web/phraseSceneData.js'
 import { addPhraseBank } from './phrase-bank.mjs'
 import { parseLesson } from './lesson-parser.mjs'
 import { introductionAliases, introductionById, introductionSections } from '../src/course/introductions.js'
@@ -405,4 +406,39 @@ test('Chapter 02 begins with an everyday exchange and teaches additional phrases
     const portrait = readFileSync(new URL(`public/assets/course/${item.portrait}`, root), 'utf8')
     assert.ok(portrait.includes(`<title>${item.speaker}</title>`))
   }
+})
+
+test('all Chapters 04–96 can render the shared phrase board without inventing artwork', () => {
+  let boards = 0
+  let placeholders = 0
+  for (let number = 4; number <= 96; number++) {
+    const id = String(number).padStart(2, '0')
+    const lesson = readLesson(id)
+    const byId = Object.fromEntries(lesson.phraseBank.map((phrase) => [phrase.id, phrase]))
+    let chapterBoards = 0
+    for (const [index, sourceSection] of lesson.study.entries()) {
+      const section = {
+        id: sourceSection.id,
+        title: sourceSection.title,
+        blocks: sourceSection.blocks.map((block) => block.type === 'conversation'
+          ? block : { type: 'source', source: block }),
+      }
+      const ids = sectionPhraseIds(section, byId)
+      assert.equal(ids.length, new Set(ids).size, `${id} section ${index}: duplicated pill`)
+      assert(ids.every((phraseId) => byId[phraseId] && !/-line\\d+$/.test(phraseId)),
+        `${id} section ${index}: missing phrase or conversation turn in board`)
+      if (!ids.length) continue
+      const illustration = sectionPhraseArtwork(section, index, id)
+      if (illustration) {
+        assert.ok(illustration.file, `${id} section ${index}: illustration has no file`)
+      } else {
+        placeholders++
+      }
+      chapterBoards++
+      boards++
+    }
+    assert(chapterBoards > 0, `Chapter ${id} needs a visible phrase board`)
+  }
+  assert(boards >= 93)
+  assert(placeholders > 0, 'lessons without illustration must use placeholder')
 })

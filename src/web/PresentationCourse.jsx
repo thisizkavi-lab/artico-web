@@ -3,7 +3,7 @@ import {
   presentationLessons as lessons, presentationCases as cases, presentationSituations as situations,
   presentationPhrases as phrases, presentationSources as sources, presentationParts as parts,
   presentationBlueprintFields as fields, presentationSourceVideos as sourceVideos,
-  presentationWorksheets as worksheets,
+  presentationWorksheets as worksheets, presentationDiscussionPrompts as discussions,
 } from './presentationCourseData'
 import './presentation-course.css'
 
@@ -204,6 +204,12 @@ function EthicsLab(){
   {choice!==null&&<p className="ps-annotation" role="status"><strong>{choice===1?'The defensible choice.':'This risks misleading the audience.'}</strong> A story can illustrate a case, but it cannot replace representative evidence. A chart should preserve the information needed to judge its strength.</p>}
  </section>
 }
+function DiscussionPrompts(){
+ return <section className="ps-discussion"><span className="ps-kicker">DISCUSS · REFLECT · TEST YOUR THINKING</span><h2>Good speaking improves through exchange.</h2><p>Use these original prompts with a partner, colleague, mentor or journal. They are designed to make the ideas personal rather than turn the course into passive video watching.</p>
+  <div className="ps-discussion-grid">{discussions.map(group=><article key={group.module}><span className="ps-kicker">{group.module}</span>{group.prompts.map((prompt,i)=><p key={i}>{prompt}</p>)}</article>)}</div>
+ </section>
+}
+
 function ResourceLinks() {
  const moduleNames={"01":"Module 1 · Framing your talk","02":"Module 2 · Building your talk","03":"Module 3 · Rounding out your talk","04":"Module 4 · Giving your talk"}
  return <section className="ps-resources" id="sources"><span className="ps-kicker">RESEARCH & CREDITS</span><h2>What the course is built on</h2>
@@ -251,6 +257,7 @@ function Overview({learning,update,caseId,setCaseId}) {
     <section className="ps-syllabus" id="syllabus"><div className="ps-heading"><div><span className="ps-kicker">STUDY → NOTICE → PRACTISE → APPLY</span><h2>The course</h2></div><BlueprintStatus learning={learning} caseId={caseId}/></div>
     {parts.map(part=>{const group=lessons.filter(l=>l.part===part);return <div key={part} className="ps-unit"><h3>{part}</h3><div className="ps-unit-list">{group.map(l=><a href={pathFor(l.id)} className="ps-unit-row" key={l.id}><span>{l.id}</span><div><b>{l.title}</b><small>{l.goal}</small></div><i aria-hidden="true">{learning.responses?.[doneKey(l.id)]==='yes'?'✓':'↗'}</i></a>)}</div></div>})}
     </section>
+    <DiscussionPrompts/>
     <section className="ps-case-teaser"><span className="ps-kicker">SAME SKILL · DIFFERENT SITUATIONS</span><h2>What changes in a different room?</h2><p>Read complete examples, not a list of presentation formulas. Every case includes audience, purpose, message, structure, opening, evidence, visual plan, limitations, Q&A and a before/after revision.</p><a href={root+'/cases'} className="ps-secondary">Explore eight worked presentations →</a></section>
     <section className="ps-blueprint-teaser"><span className="ps-kicker">YOUR CUMULATIVE PROJECT</span><h2>One presentation, built as you learn.</h2><CaseSwitcher caseId={caseId} onChange={setCaseId}/><p>The blueprint keeps decisions and practice notes on this device. Switch contexts to keep separate drafts. No account or audio upload is required.</p><a href={root+'/blueprint'} className="ps-primary">Edit presentation blueprint →</a></section>
     <PhraseReference/>

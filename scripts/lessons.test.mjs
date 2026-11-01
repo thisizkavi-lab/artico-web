@@ -34,6 +34,7 @@ function blockText(block) {
 test('Chapters 06–10 have one distinct illustration for every Study section', () => {
   const pngDimensions = {
     '06': [[1821, 864], [1774, 887], [1796, 876], [1536, 1024]],
+    '07': [[512, 341], [512, 341], [512, 341]],
     '08': [1800, 900],
     '09': [1774, 887],
     '10': [1400, 840],
@@ -47,12 +48,17 @@ test('Chapters 06–10 have one distinct illustration for every Study section', 
       assert.ok(illustrations.every((item) => item.file.endsWith('.png')), 'Chapter 06 uses dedicated PNGs')
       assert.ok(illustrations.every((item) => item.fallbackFile === null), 'Chapter 06 never falls back to conversation art')
     }
+    if (id === '07') {
+      assert.equal(new Set(illustrations.map((item) => item.file)).size, 3, 'Chapter 07 section scenes are all unique')
+      assert.ok(illustrations.every((item) => item.file.endsWith('.png')), 'Chapter 07 uses the supplied PNG illustrations')
+      assert.ok(illustrations.every((item) => item.fallbackFile === null), 'Chapter 07 never falls back to generic conversation art')
+    }
     for (const [index, illustration] of illustrations.entries()) {
       const path = new URL(`public/assets/course/${illustration.file}`, root)
       assert.ok(existsSync(path), illustration.file)
-      if (['06', '08', '09', '10'].includes(id)) {
+      if (['06', '07', '08', '09', '10'].includes(id)) {
         const png = readFileSync(path)
-        const [width, height] = id === '06' ? pngDimensions[id][index] : pngDimensions[id]
+        const [width, height] = ['06', '07'].includes(id) ? pngDimensions[id][index] : pngDimensions[id]
         assert.deepEqual([...png.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10], `${illustration.file}: PNG signature`)
         assert.equal(png.readUInt32BE(16), width, `${illustration.file}: image width`)
         assert.equal(png.readUInt32BE(20), height, `${illustration.file}: image height`)

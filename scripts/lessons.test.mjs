@@ -425,7 +425,7 @@ test('all Chapters 04–96 can render the shared phrase board without inventing 
       }
       const ids = sectionPhraseIds(section, byId)
       assert.equal(ids.length, new Set(ids).size, `${id} section ${index}: duplicated pill`)
-      assert(ids.every((phraseId) => byId[phraseId] && !/-line\\d+$/.test(phraseId)),
+      assert(ids.every((phraseId) => byId[phraseId] && !/-line\d+$/.test(phraseId)),
         `${id} section ${index}: missing phrase or conversation turn in board`)
       if (!ids.length) continue
       const illustration = sectionPhraseArtwork(section, index, id)

@@ -1,0 +1,236 @@
+/* Chapter 20: a vocabulary-first atlas. Cards replace the placeholder
+   illustration stage, long tables and prose-only vocabulary lists. */
+.ar-ch20-atlas {
+  display: grid;
+  gap: 17px;
+  width: 100%;
+  min-width: 0;
+}
+.ar-ch20-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 18px;
+  padding: 0 0 13px;
+  border-bottom: 1px solid #e7ebef;
+}
+.ar-ch20-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: min(100%, 520px);
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid #dfe6eb;
+  border-radius: 11px;
+  background: #fff;
+  color: #8795a0;
+}
+.ar-ch20-search:focus-within {
+  border-color: #9eb7d8;
+  box-shadow: 0 0 0 3px rgba(75, 126, 178, .09);
+}
+.ar-ch20-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #33445a;
+  font: inherit;
+  font-size: 13px;
+}
+.ar-ch20-search input::placeholder { color: #a1abb5; }
+.ar-ch20-clear {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f4f6;
+  color: #73818d;
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+}
+.ar-ch20-count {
+  flex: none;
+  color: #8b97a2;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.ar-ch20-audio-hint {
+  margin: -8px 0 0;
+  color: #96a0a8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.ar-ch20-section {
+  padding-top: 21px;
+  scroll-margin-top: 105px;
+}
+.ar-ch20-section .ip-section-heading {
+  align-items: baseline;
+  margin-bottom: 17px;
+}
+.ar-ch20-section .ip-section-heading small {
+  margin-left: auto;
+  color: #99a3ac;
+  font-size: 10px;
+  font-weight: 450;
+  white-space: nowrap;
+}
+.ar-ch20-groups {
+  display: grid;
+  gap: 19px;
+}
+.ar-ch20-group { min-width: 0; }
+.ar-ch20-group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 9px;
+  color: #73818c;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .045em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.ar-ch20-group-title small {
+  color: #a2adb6;
+  font-size: 10px;
+  font-weight: 450;
+  letter-spacing: 0;
+}
+.ar-ch20-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.ar-ch20-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  min-width: 0;
+  min-height: 104px;
+  padding: 12px 13px 11px;
+  border: 1px solid #e2e8ec;
+  border-radius: 12px;
+  background: #fff;
+  color: #35465a;
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  scroll-margin-top: 112px;
+}
+.ar-ch20-card:hover {
+  border-color: #c5d4e1;
+  box-shadow: 0 3px 10px rgba(42, 61, 78, .045);
+  transform: translateY(-1px);
+}
+.ar-ch20-card.is-focused {
+  border-color: #91afd7;
+  outline: 2px solid rgba(65, 110, 190, .12);
+}
+.ar-ch20-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 7px;
+  min-width: 0;
+}
+.ar-ch20-card h4 {
+  min-width: 0;
+  margin: 2px 0 0;
+  color: #304257;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -.012em;
+  overflow-wrap: anywhere;
+}
+.ar-ch20-sound {
+  display: grid;
+  place-items: center;
+  flex: 0 0 29px;
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  border: 1px solid #e1e8ee;
+  border-radius: 50%;
+  background: #f7fafc;
+  color: #5285a8;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.ar-ch20-sound:hover {
+  border-color: #c8d9e8;
+  background: #edf4f9;
+  color: #2e6f99;
+}
+.ar-ch20-sound:focus-visible {
+  outline: 2px solid #4f88b4;
+  outline-offset: 2px;
+}
+.ar-ch20-japanese {
+  margin: -1px 0 0;
+  color: #7d8c99;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.ar-ch20-definition {
+  margin: auto 0 0;
+  padding-top: 2px;
+  color: #74818d;
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.ar-ch20-kind {
+  align-self: flex-start;
+  margin-top: 3px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f0f5f8;
+  color: #6d879a;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: .025em;
+}
+.ar-ch20-empty,
+.ar-ch20-error {
+  margin: 0;
+  padding: 14px 15px;
+  border-radius: 10px;
+  background: #f6f8fa;
+  color: #7c8994;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ar-ch20-error { color: #a35e4e; }
+@media (max-width: 1050px) {
+  .ar-ch20-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .ar-ch20-toolbar { align-items: stretch; flex-direction: column; }
+  .ar-ch20-search { width: 100%; box-sizing: border-box; }
+  .ar-ch20-count { align-self: flex-end; }
+  .ar-ch20-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .ar-ch20-card { min-height: 98px; padding: 10px 10px 9px; }
+  .ar-ch20-card h4 { font-size: 13px; }
+  .ar-ch20-definition { font-size: 11px; }
+}
+@media (max-width: 360px) {
+  .ar-ch20-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ar-ch20-card, .ar-ch20-sound { transition: none; }
+}

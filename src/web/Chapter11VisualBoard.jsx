@@ -98,7 +98,7 @@ const BOARDS = {
     "terms": [
       {
         "en": "1st — first",
-        "ja": "1番目",
+        "ja": "1日",
         "x": 150,
         "y": 247,
         "say": "first",
@@ -107,7 +107,7 @@ const BOARDS = {
       },
       {
         "en": "2nd — second",
-        "ja": "2番目",
+        "ja": "2日",
         "x": 365,
         "y": 247,
         "say": "second",
@@ -116,7 +116,7 @@ const BOARDS = {
       },
       {
         "en": "3rd — third",
-        "ja": "3番目",
+        "ja": "3日",
         "x": 580,
         "y": 247,
         "say": "third",
@@ -125,7 +125,7 @@ const BOARDS = {
       },
       {
         "en": "4th — fourth",
-        "ja": "4番目",
+        "ja": "4日",
         "x": 795,
         "y": 247,
         "say": "fourth",
@@ -134,7 +134,7 @@ const BOARDS = {
       },
       {
         "en": "5th — fifth",
-        "ja": "5番目",
+        "ja": "5日",
         "x": 1010,
         "y": 247,
         "say": "fifth",
@@ -143,7 +143,7 @@ const BOARDS = {
       },
       {
         "en": "6th — sixth",
-        "ja": "6番目",
+        "ja": "6日",
         "x": 1225,
         "y": 247,
         "say": "sixth",
@@ -152,7 +152,7 @@ const BOARDS = {
       },
       {
         "en": "7th — seventh",
-        "ja": "7番目",
+        "ja": "7日",
         "x": 1440,
         "y": 247,
         "say": "seventh",
@@ -161,7 +161,7 @@ const BOARDS = {
       },
       {
         "en": "8th — eighth",
-        "ja": "8番目",
+        "ja": "8日",
         "x": 150,
         "y": 377,
         "say": "eighth",
@@ -170,7 +170,7 @@ const BOARDS = {
       },
       {
         "en": "9th — ninth",
-        "ja": "9番目",
+        "ja": "9日",
         "x": 365,
         "y": 377,
         "say": "ninth",
@@ -179,7 +179,7 @@ const BOARDS = {
       },
       {
         "en": "10th — tenth",
-        "ja": "10番目",
+        "ja": "10日",
         "x": 580,
         "y": 377,
         "say": "tenth",
@@ -188,7 +188,7 @@ const BOARDS = {
       },
       {
         "en": "20th — twentieth",
-        "ja": "20番目",
+        "ja": "20日",
         "x": 795,
         "y": 377,
         "say": "twentieth",
@@ -197,7 +197,7 @@ const BOARDS = {
       },
       {
         "en": "21st — twenty-first",
-        "ja": "21番目",
+        "ja": "21日",
         "x": 1010,
         "y": 377,
         "say": "twenty-first",
@@ -206,7 +206,7 @@ const BOARDS = {
       },
       {
         "en": "22nd — twenty-second",
-        "ja": "22番目",
+        "ja": "22日",
         "x": 1225,
         "y": 377,
         "say": "twenty-second",
@@ -215,7 +215,7 @@ const BOARDS = {
       },
       {
         "en": "31st — thirty-first",
-        "ja": "31番目",
+        "ja": "31日",
         "x": 1440,
         "y": 377,
         "say": "thirty-first",
@@ -228,7 +228,7 @@ const BOARDS = {
         "x": 264,
         "y": 552,
         "width": 305,
-        "jpY": 624,
+        "jpY": 644,
         "say": "April seventh, twenty twenty-seven"
       },
       {
@@ -237,7 +237,7 @@ const BOARDS = {
         "x": 600,
         "y": 557,
         "width": 265,
-        "jpY": 572,
+        "jpY": 580,
         "say": "April seventh, twenty twenty-seven"
       },
       {
@@ -246,16 +246,8 @@ const BOARDS = {
         "x": 714,
         "y": 620,
         "width": 420,
-        "jpY": 683,
+        "jpY": 666,
         "say": "April seventh, twenty twenty-seven"
-      },
-      {
-        "en": "the seventh of April",
-        "ja": "4月7日",
-        "x": 638,
-        "y": 646,
-        "width": 330,
-        "jpY": 683
       },
       {
         "en": "1900",
@@ -588,8 +580,8 @@ const BOARDS = {
         "en": "cloudy",
         "ja": "曇り",
         "x": 190,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 164,
         "say": "cloudy"
       },
@@ -597,8 +589,8 @@ const BOARDS = {
         "en": "overcast",
         "ja": "空一面が曇り",
         "x": 430,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 193,
         "say": "overcast"
       },
@@ -606,8 +598,8 @@ const BOARDS = {
         "en": "pouring",
         "ja": "土砂降り",
         "x": 670,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 164,
         "say": "pouring"
       },
@@ -615,8 +607,8 @@ const BOARDS = {
         "en": "°C / °F",
         "ja": "摂氏／華氏",
         "x": 910,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 164,
         "say": "degrees Celsius, degrees Fahrenheit"
       },
@@ -660,8 +652,8 @@ const BOARDS = {
         "en": "hurricane",
         "ja": "ハリケーン",
         "x": 1195,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 164,
         "say": "hurricane"
       },
@@ -669,8 +661,8 @@ const BOARDS = {
         "en": "blizzard",
         "ja": "猛吹雪",
         "x": 1425,
-        "y": 658,
-        "jpY": 685,
+        "y": 636,
+        "jpY": 661,
         "width": 164,
         "say": "blizzard"
       }
@@ -737,7 +729,7 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
   return (
     <div className="ar-ch11-atlas">
       <div className="ar-ch11-board" role="group" aria-label={board.alt}>
-        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}`}
+        <img className="ar-ch11-board-art" src={`${base}assets/course/${board.image}?v=20261101-3`}
           alt={board.alt} loading="lazy" draggable="false" />
         {board.terms.map((item, index) => (
           <div key={`${section.id}-${index}`}>
@@ -786,9 +778,6 @@ export default function Chapter11VisualBoard({ section, focusedId }) {
           </button>
         </div>
       )}
-      <p className="ar-ch11-audio-hint">
-        {language === 'ja' ? '英語のラベルを押すと発音を聞けます。' : 'Click or tap any English label to hear it.'}
-      </p>
       {error && <p className="ar-ch11-audio-error" role="status">{error}</p>}
       {focusedId && <span className="ar-ch11-screen-reader" aria-hidden="true">{focusedId}</span>}
     </div>

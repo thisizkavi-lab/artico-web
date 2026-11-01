@@ -272,6 +272,12 @@ function Overview({learning,update,caseId,setCaseId}) {
         <a className="ps-secondary" href={root+'/blueprint'}>Open your blueprint</a></div>
       <div className="ps-cover-foot"><span>18 focused lessons</span><span>8 worked cases</span><span>{completed} lessons self-marked complete</span></div>
     </header>
+    <section className="ps-course-goal">
+      <span className="ps-kicker">START HERE · YOUR OWN LEARNING GOAL</span>
+      <h2>What do you want to get better at?</h2>
+      <p>Name one real speaking situation and one skill you want to improve. Return to this note after the final presentation and see what changed. This is your goal for taking the course, separate from the goal of any individual talk.</p>
+      <SavedText learning={learning} update={update} responseKey="application-presentations-course-goal" label="My goal for this course" rows={3} placeholder="For example: explain my research clearly in a ten-minute lab meeting, or answer questions without bluffing…"/>
+    </section>
     <section className="ps-principles" aria-label="The core framework">
       <span className="ps-kicker">THE WHOLE PICTURE</span>
       <h2>A talk is an <Mark>audience problem first.</Mark></h2>

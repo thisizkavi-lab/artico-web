@@ -9,6 +9,7 @@ import PresentationCourse from './PresentationCourse'
 import SmallTalkCourse from './SmallTalkCourse'
 import './application.css'
 
+const OtherHalfCourse = lazy(() => import('./OtherHalfCourse'))
 const IeltsCourse = lazy(() => import('./IeltsCourse'))
 const ToeicCourse = lazy(() => import('./ToeicCourse'))
 const ReadingCourse = lazy(() => import('./ReadingCourse'))
@@ -112,6 +113,7 @@ function TrackExercise({ track, language, learning, update }) {
 export default function Application({ route, learning, update }) {
   const { language } = useLanguage()
   if (!route.id) return <TrackOverview language={language}/>
+  if (route.id === 'other-half') return <Suspense fallback={<div className="aw-page" role="status">Opening The Other Half of English…</div>}><OtherHalfCourse route={route}/></Suspense>
   if (route.id === 'tests' && route.exam === 'toeic') return <Suspense fallback={<div className="aw-page" role="status">Loading TOEIC…</div>}><ToeicCourse route={route}/></Suspense>
   if (route.id === 'tests') return <Suspense fallback={<div className="aw-page" role="status">Loading English Tests…</div>}><IeltsCourse route={route}/></Suspense>
   if (route.id === 'ideas') return <Suspense fallback={<div className="aw-page" role="status">Loading Ideas &amp; Expression…</div>}><IdeasCourse route={route}/></Suspense>

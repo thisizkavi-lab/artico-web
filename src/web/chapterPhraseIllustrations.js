@@ -27,5 +27,10 @@ export const chapterPhraseIllustrations = {
     { file: 'ch10-02-choose-a-closing.png', alt: 'Two people shake hands to close a professional meeting' },
     { file: 'ch10-03-future-contact-specific-or-open.png', alt: 'Two friends talk about meeting again beside a calendar with a selected day' },
     { file: 'ch10-04-familiar-closings.png', alt: 'Two friends with backpacks wave goodbye casually' },
-  ],
+  ],,
+  '12': [
+    { file: 'ch12-phrase-0.png', fallbackFile: '', alt: 'Drew and Sasha turn a loose invitation into a plan by discussing the day, time, and place' },
+    { file: 'ch12-phrase-1.png', fallbackFile: '', alt: 'Drew and Sasha make a plan precise by confirming the date, time, and meeting point' },
+    { file: 'ch12-phrase-2.png', fallbackFile: '', alt: 'Drew and Sasha consider changing a plan and communicating the change courteously' },
+  ]
 }

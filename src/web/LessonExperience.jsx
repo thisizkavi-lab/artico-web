@@ -148,7 +148,7 @@ function Conversation({ block, audioProps, focusedId }) {
   // A person stays on the same side for the entire exchange.
   const speakers = [...new Set(block.phrases.map((id) => introductionById[id]?.speaker).filter(Boolean))]
   return (
-    <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}${block.replyAlternatives ? ' ip-scene-branching' : ''}`}>
+    <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}${block.replyAlternatives ? ' ip-scene-branching' : ''}${block.art?.startsWith('ch12-') ? ' ar-ch12-conversation' : ''}`}>
       <header className="ar-scene-heading">
         <h3>{block.title}</h3>
         <ConversationAudio block={block} audioProps={audioProps} />
@@ -564,7 +564,7 @@ function PhraseSceneBoard({ section, sectionIndex, audioProps, focusedId, illust
   if (!ids.length) return null
 
   return (
-    <section className="ar-unified-phrase-board" aria-label={language === 'ja' ? 'イラストとフレーズ' : 'Illustration and phrases'}>
+    <section className={`ar-unified-phrase-board${chapterId === '12' ? ' ar-ch12-phrase-board' : ''}`} aria-label={language === 'ja' ? 'イラストとフレーズ' : 'Illustration and phrases'}>
       <div className="ar-unified-phrase-stage">
         {files[attempt] ? (
           <img

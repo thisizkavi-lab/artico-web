@@ -533,3 +533,43 @@
     min-height:30px;
   }
 }
+
+
+/* Chapter 12: transparent cutouts sit directly on the page, not in image cards. */
+.ip-page .ar-ch12-phrase-board {
+  gap: 13px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.ip-page .ar-ch12-phrase-board .ar-unified-phrase-stage {
+  max-width: 512px;
+  margin-inline: auto;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+.ip-page .ar-ch12-phrase-board .ar-unified-phrase-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.ip-page .ar-ch12-conversation .ip-scene-setting {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.ip-page .ar-ch12-conversation .ip-scene-setting img {
+  min-height: 0;
+  max-height: 250px;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .ip-page .ar-ch12-phrase-board { gap: 10px; }
+  .ip-page .ar-ch12-phrase-board .ar-unified-phrase-stage { width: 100%; }
+  .ip-page .ar-ch12-conversation .ip-scene-setting img { max-height: 210px; }
+}

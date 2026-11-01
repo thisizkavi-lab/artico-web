@@ -1,0 +1,993 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ARTICO / Small Talk — An Illustrated Field Guide</title><style>
+@page {size:A4; margin: 20mm 19mm 19mm 19mm; background:#FBFAF7;
+  @top-left {content:'ARTICO  /  SMALL TALK'; color:#718096; font-family:'Inter'; font-weight:600; font-size:7.2pt; letter-spacing:1.1pt;}
+  @top-right {content:'THE HUMAN SIDE OF CONVERSATION'; color:#8492A0; font-family:'Inter'; font-size:7.1pt; letter-spacing:.3pt;}
+  @bottom-left {content:'A FIELD GUIDE TO EVERYDAY CONNECTION'; color:#8B959F; font-family:'Inter'; font-size:7pt; letter-spacing:.5pt;}
+  @bottom-right {content:counter(page); color:#34445A; font-family:'Inter'; font-weight:700; font-size:8.8pt;}
+}
+@page cover {margin:0; background:#12243A; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none}}
+@page division {margin:0; background:#182B42; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none}}
+@page toc {margin:21mm 21mm 20mm; @top-left{content:'ARTICO / COURSE CONTENTS'} @top-right{content:none}}
+@page opening {margin:22mm 21mm 20mm; @top-right{content:'START HERE'}}
+@page map {margin:21mm 20mm 19mm; @top-right{content:'FIVE-MOVE MODEL'}}
+* {box-sizing:border-box;}
+html,body {margin:0;padding:0;}
+body {font-family:'Inter','Lato',sans-serif; font-size:9.2pt; line-height:1.58; font-weight:400; color:#26374B;}
+p {margin:0 0 3.5mm; widows:3; orphans:3;}
+strong,b {font-weight:650; color:#1B2D45;}
+em {font-style:italic;}
+a {color:#2F63B3;text-decoration:none;}
+ul,ol {margin:1.6mm 0 4mm; padding-left:5.4mm;}
+li {margin:0 0 2mm; padding-left:1mm;}
+li::marker {color:#3868AE;}
+li p {margin-bottom:1.4mm;}
+h1,h2,h3 {font-family:'Inter Display','Inter',sans-serif; color:#152841; font-weight:660; line-height:1.17; margin:0; break-after:avoid;}
+h3 {font-size:12pt; letter-spacing:-.25pt; margin:6.5mm 0 2.5mm;}
+h3:first-child {margin-top:0;}
+small {font-size:8pt;}
+.eyebrow {font-size:8pt;font-weight:700;letter-spacing:1.45pt;color:#4272AC;}
+.ink-highlight {font-weight:700; color:#1D3047; background: linear-gradient(transparent 38%, #F9DC81 38%, #F9DC81 91%, transparent 91%);}
+.gold-period,.dot-inline {color:#E5B94E;}
+/* COVER */
+.cover {page:cover;position:relative;width:210mm;height:297mm;overflow:hidden;color:white;break-after:page;}
+.cover:before {content:'';position:absolute;background:#1B3958;width:190mm;height:190mm;right:-80mm;top:-35mm;border-radius:100%;}
+.cover-mark {position:absolute;left:22mm;top:18mm;font:700 12pt 'Inter';letter-spacing:3pt;color:#fff;}
+.mark-small {font:500 7pt 'Inter';letter-spacing:1.5pt;color:#B2C2D6;margin-left:4mm;vertical-align:middle;}
+.cover-visual {position:absolute;top:35mm;left:55mm;width:151mm;height:110mm;opacity:.94;transform:rotate(-9deg);}
+.cover-main {position:absolute;top:117mm;left:22mm;right:18mm;}
+.white-eyebrow {color:#CCDDEF;letter-spacing:1.55pt;font-size:8pt;}
+.cover h1 {color:white;font-size:76pt;line-height:.94;letter-spacing:-4.6pt;margin:5mm 0 3mm;font-weight:720;}
+.cover h1 em {font-style:normal;color:#F6D373;}
+.cover-yellow-rule {height:4pt;width:23mm;background:#F2D06F;border-radius:3pt;margin:6mm 0;}
+.cover-deck {font-family:'Inter Display';font-size:20pt;line-height:1.4;letter-spacing:-.65pt;font-weight:400;color:#EBF2FA;}
+.cover-motto {margin-top:10mm;font-size:9.5pt;line-height:1.75;color:#B9C9DA;}
+.cover-footer {position:absolute;left:22mm;right:18mm;bottom:17mm;padding-top:4mm;border-top:1px solid #496176;display:flex;justify-content:space-between;color:#C0D1E3;font-size:6.9pt;letter-spacing:.7pt;}
+/* OPENING */
+.opening-page {page:opening;break-before:page;break-after:page;}
+.opening-title {font-size:37pt;line-height:1.08;letter-spacing:-1.5pt;margin:5mm 0 6mm;}
+.opening-title em {color:#3366B6;font-style:normal;}
+.opening-lead {font-family:'Inter Display';font-size:15pt;line-height:1.38;font-weight:500;color:#344C69;margin-bottom:8mm;max-width:145mm;}
+.opening-contrast {display:flex;gap:2mm;margin:7mm 0 10mm;}
+.opening-contrast>div {width:33.333%;padding:4mm 3.3mm 4.5mm;border:1px solid #D5DEE8;background:#FFFFFF;border-radius:3mm;}
+.contrast-num {color:#4E79A9;font-size:7pt;display:block;margin-bottom:8mm;letter-spacing:1pt;}
+.opening-contrast b {display:block;font-size:10pt;margin-bottom:2mm;}
+.opening-contrast p {font-size:8.5pt;margin:0;color:#586B80;}
+.gold-quote {background:#F7E8B4;border-left:3pt solid #D8A935;padding:5mm 6mm;font:500 14pt/1.48 'Inter Display';letter-spacing:-.3pt;margin:7mm 0 8mm;}
+.opening-page>p:not(.opening-lead) {font-size:9pt;}
+/* CONTENTS */
+.toc {page:toc;break-before:page;break-after:page;}
+.toc-title {font-size:42pt;letter-spacing:-1.7pt;margin:2mm 0 4mm;}
+.toc-intro {width:125mm;max-width:100%;color:#64748A;font-size:10pt;margin-bottom:8mm;}
+.toc-columns {display:flex;gap:9mm;align-items:flex-start;margin-top:6mm;}
+.toc-col {width:50%;flex:1;min-width:0;}
+.toc-major {margin:4mm 0 2mm;padding-top:3mm;border-top:1px solid #C7D3E0;font-size:9.4pt;font-weight:700;break-inside:avoid;}
+.toc-minor {font-size:8.1pt;color:#4C5F77;margin-left:3.5mm;line-height:1.55;}
+.toc a {display:flex;align-items:baseline;gap:1mm;color:inherit;}
+.toc a span:first-child {min-width:0;}
+.toc-leader {flex-grow:1;border-bottom:1px dotted #C8D1D9;margin-bottom:2.5pt;}
+.toc-page {display:none;}
+.toc a:after {content:target-counter(attr(href),page);color:#2B558A;font-weight:650;font-size:8pt;padding-left:1mm;}
+.toc-bottom {font-size:8pt;background:#EFF3F7;border-left:3pt solid #7098C4;padding:4mm 4.5mm;margin-top:9mm;color:#4B6278;}
+/* SECTION DIVIDERS */
+.division {page:division;break-before:page;break-after:page;width:210mm;height:297mm;position:relative;overflow:hidden;color:white;}
+.division:before {content:'';position:absolute;left:-70mm;top:-62mm;width:200mm;height:200mm;border:1px solid #31506A;border-radius:50%;}
+.division-top {position:absolute;left:21mm;right:21mm;top:19mm;font-weight:650;font-size:8pt;letter-spacing:1.5pt;color:#C9D6E4;display:flex;justify-content:space-between;}
+.division-number {position:absolute;top:58mm;left:18mm;color:#6684A7;opacity:.35;font:750 115pt 'Inter Display';letter-spacing:-11pt;line-height:1;}
+.division-title {position:absolute;top:120mm;left:22mm;right:15mm;color:#F7F8FA;font:700 33pt/1.1 'Inter Display';letter-spacing:-1.5pt;max-width:174mm;}
+.division-period {color:#F4CF78;}
+.division-deck {position:absolute;top:157mm;left:22mm;right:31mm;color:#E0EAF4;font:400 17pt/1.42 'Inter Display';letter-spacing:-.3pt;max-width:155mm;}
+.division-visual {position:absolute;bottom:29mm;left:86mm;width:114mm;height:82mm;opacity:.53;}
+.division-bottom {position:absolute;bottom:20mm;left:22mm;right:20mm;display:flex;justify-content:space-between;border-top:1px solid #496477;padding-top:4mm;color:#C4D2E0;font-size:8pt;letter-spacing:.3pt;}
+/* CHAPTERS */
+.chapter {page:auto;break-before:page;}
+.chapter-top {display:flex;justify-content:space-between;align-items:baseline;border-top:3px solid #2E65B7;padding-top:4mm;margin-bottom:5mm;}
+.chapter-section {font-size:8pt;font-weight:700;letter-spacing:1.35pt;color:#47688D;}
+.chapter-section strong {font-size:11pt;color:#2C66B7;}
+.chapter-small {font-size:7.2pt;color:#8795A5;letter-spacing:.9pt;}
+.chapter-title {font-size:30pt;letter-spacing:-1.05pt;line-height:1.08;margin:1.7mm 0 6mm;}
+.foundation-lead {font-family:'Inter Display';font-size:13.7pt;line-height:1.4;letter-spacing:-.23pt;margin:2mm 0 6mm;max-width:155mm;}
+.lesson-goal {display:flex;gap:2.5mm;margin:2mm 0 5mm;}
+.goal-item {width:50%;background:#F0F4F8;padding:4mm;border:1px solid #D9E3EC;border-radius:2mm;}
+.goal-item.principle {background:#FFF4D7;border-color:#E9D9AE;}
+.goal-item span {font-size:7.3pt;letter-spacing:1.1pt;color:#577497;font-weight:700;}
+.goal-item.principle span {color:#9C7530;}
+.goal-item p {font-size:9.2pt;line-height:1.5;font-weight:500;margin:1.7mm 0 0;}
+.margin-note {display:flex;gap:4mm;align-items:baseline;margin:0 0 6mm;padding:3.5mm 4mm 3mm;border-left:3pt solid #D6B85C;background:#FDF8E8;}
+.margin-note-label {font-size:7.2pt;letter-spacing:.8pt;font-weight:800;color:#967125;min-width:33%;}
+.margin-note p {font-size:8.7pt;line-height:1.5;margin:0;color:#4D5260;}
+.chapter-content {margin:0;}
+.chapter-content > h3:first-child {margin-top:3mm;}
+.example-heading {color:#2D619A;}
+.practice-heading {margin-top:7mm;color:#365D83;border-top:1px solid #CDD9E6;padding-top:4mm;}
+.practice-marker {font-size:14pt;margin-right:2mm;color:#D1A944;}
+.case-heading {font-size:14pt; margin:8mm 0 3mm; border-bottom:1px solid #DDE4EC;padding-bottom:2mm;}
+/* DIALOGUE */
+.dialogue {background:#FFF;border:1px solid #D6E1ED;border-radius:2.8mm;margin:4.5mm 0 4mm;overflow:hidden;break-inside:avoid;}
+.conversation-bar {font-size:7pt;font-weight:800;letter-spacing:1.2pt;color:#6482A7;background:#F0F5FA;border-bottom:1px solid #E1E9F2;padding:2.3mm 4mm;}
+.conversation-dot {display:inline-block;width:5pt;height:5pt;border-radius:50%;background:#6A98CF;margin-right:1.5mm;}
+.turn {display:flex;align-items:baseline;gap:3mm;padding:2.2mm 4.2mm;border-bottom:1px solid #EDF0F4;font-size:9.4pt;line-height:1.5;}
+.turn:last-child {border-bottom:0;}
+.who {width:16mm;flex-shrink:0;font-weight:720;color:#35679A;font-size:8pt;letter-spacing:.1pt;}
+.turn:nth-child(odd) .who {color:#947D4D;}
+.words {flex:1;color:#23354A;}
+.turn-highlight {background:linear-gradient(transparent 70%,#FAE1A0 70%);}
+/* Annotations use one controlled accent only */
+.annotation {margin:3mm 0 4mm;padding:3.3mm 4mm 3.2mm;display:flex;gap:3mm;background:#FFF6DE;border-left:2.5pt solid #DDAE43;break-inside:avoid;color:#454B54;}
+.annotation .annotation-pin {font:700 13pt 'Inter';color:#B7872A;min-width:4mm;}
+.annotation .annotation-copy {font-size:8.5pt;line-height:1.55;}
+.annotation p {margin:0;}
+.block-annotation {margin:4mm 0 5mm;}
+.micro-task {padding:2.5mm 3.5mm;border-left:2pt solid #6F9ACB;background:#F0F5FC;margin:3mm 0 4mm;break-inside:avoid;}
+.micro-task p {margin:0;font-size:8.8pt;}
+.phrase-rows {border:1px solid #D9E3ED;border-radius:2mm;overflow:hidden;margin:3mm 0 5mm;}
+.phrase-row {display:flex;gap:3mm;background:#fff;border-bottom:1px solid #E2E9EF;padding:2.8mm 3.3mm;break-inside:avoid;}
+.phrase-row:last-child {border-bottom:0;}
+.phrase-word {flex:0 0 39%;font-weight:700;color:#1C4D82;}
+.phrase-meaning {flex:1;color:#4E6177;font-size:8.7pt;}
+/* COMPARISONS */
+.matrix {margin:3.5mm 0 5mm;border-top:2px solid #4477AF;}
+.matrix-row {display:flex;gap:3mm;break-inside:avoid;border-bottom:1px solid #DFE4EB;padding:3mm 2mm;}
+.matrix-row:nth-child(even){background:#F2F5F7;}
+.matrix-cell {flex:1;min-width:0;font-size:9pt;}
+.matrix-label {display:block;font-size:7pt;font-weight:700;letter-spacing:.4pt;color:#79889A;text-transform:uppercase;margin-bottom:1.7mm;}
+.table-box {margin:4mm 0;}
+table {width:100%;border-collapse:collapse;font-size:8.3pt;margin:4mm 0;table-layout:fixed;}
+thead {display:table-header-group;background:#EAF0F6;}
+th,td {padding:2mm 2.5mm;text-align:left;vertical-align:top;border-bottom:1px solid #DEE6EF;overflow-wrap:anywhere;}
+th {font-size:7.8pt;color:#244F83;}
+tr {break-inside:avoid;}
+/* MAP */
+.map-page {page:map;break-before:page;break-after:page;}
+.map-title {font-size:34pt;letter-spacing:-1pt;margin:3mm 0 4mm;}
+.map-title em {font-style:normal;color:#3F71AA;}
+.map-intro {font-size:10pt;color:#546A83;max-width:145mm;}
+.map-flow {display:flex;gap:1.2mm;justify-content:space-between;align-items:center;margin:6mm 0 8mm;}
+.map-flow span {font-size:7.7pt;font-weight:700;padding:2.7mm 2.5mm;background:#E4EFF9;color:#335E8B;border-radius:2mm;}
+.map-flow i {font-size:11pt;color:#B3984D;font-style:normal;}
+.map-page>.matrix {margin-top:7mm;}
+/* COLLECTIONS */
+.collection {break-before:page;}
+.collection>h2,.closing>h2 {font-size:31pt;letter-spacing:-1pt;line-height:1.1;margin:3mm 0 6mm;}
+.collection>.eyebrow {margin-bottom:2mm;}
+.collection>.case-heading:first-child {margin-top:2mm;}
+.collection .dialogue {margin:3mm 0 3.5mm;}
+.collection .turn {padding:1.85mm 3.5mm;}
+.collection .case-heading {border-top:2px solid #4F79A7;padding-top:3mm;margin-top:8mm;}
+/* Lexicon */
+.lexicon-list {margin-bottom:7mm;}
+.lexicon-group {font-size:12pt;margin:6mm 0 2mm;padding-bottom:1mm;border-bottom:1.5pt solid #6F99C2;color:#2D5C8B;}
+.lexicon-entry {display:flex;border-bottom:1px solid #DEE6EF;padding:2.5mm 2mm;gap:4mm;break-inside:avoid;}
+.lexicon-entry:nth-child(even){background:#F5F7F8;}
+.lexicon-phrase {flex:0 0 48%;font-weight:650;font-size:9.1pt;color:#153B64;}
+.lexicon-use {flex:1;color:#56687B;font-size:8.5pt;}
+/* End */
+.closing {break-before:page;}
+.closing-statement {background:#1B3653;color:#FFFFFF;padding:9mm 8mm;font:500 17pt/1.42 'Inter Display';letter-spacing:-.5pt;margin-top:8mm;border-radius:2mm;}
+.closing-statement strong {color:#F8DA8A;}
+/* Print hygiene */
+hr {border:0;border-top:1px solid #DCE3EB;margin:6mm 0;}
+blockquote {border-left:3px solid #DAAC4C;background:#FFF5DB;margin:4mm 0;padding:4mm;}
+a {overflow-wrap:anywhere;}
+code {font-family:'Liberation Mono',monospace;font-size:8.5pt;}
+
+/* ARTICO small-talk web reading edition, adapted from the designed print field guide. */
+@media screen {
+  html{scroll-behavior:smooth;scroll-padding-top:82px}
+  body{margin:0;background:#f2f4f7;color:#223651;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.72;padding-bottom:70px}
+  body > section{break-before:auto!important;break-after:auto!important;page:auto!important}
+  .reader-topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:20px;background:rgba(250,251,252,.96);border-bottom:1px solid #d9e2ed;backdrop-filter:blur(16px);padding:14px max(20px,calc((100vw - 940px)/2));font-size:13px}
+  .reader-topbar a{font-weight:650;color:#224a7d;text-decoration:none}
+  .reader-topbar a:hover{text-decoration:underline}
+  .reader-brand{font-weight:800;letter-spacing:.14em;color:#233a56;text-transform:uppercase;white-space:nowrap}
+  .reader-links{display:flex;flex-wrap:wrap;gap:17px;justify-content:flex-end}
+  .reader-links .reader-back{color:#6e7e92}
+  body > section:not(.cover):not(.division){width:min(100% - 32px,940px);height:auto;min-height:0;background:#fdfdfc;margin:22px auto;padding:clamp(25px,5vw,65px);border:1px solid #dee5ee;border-radius:12px;box-shadow:0 10px 30px rgba(31,53,82,.035)}
+  .cover{width:min(100% - 32px,940px);height:510px;min-height:0;position:relative;margin:24px auto;border-radius:14px;overflow:hidden;box-shadow:0 14px 34px rgba(15,32,57,.14)}
+  .cover-main{top:150px;left:clamp(26px,7vw,70px);right:28px}
+  .cover h1{font-size:clamp(70px,11vw,118px);line-height:.88;letter-spacing:-.055em}
+  .cover-deck{font-size:clamp(18px,2.7vw,27px);line-height:1.45}
+  .cover-motto{margin-top:14px;font-size:13px}
+  .cover-mark{top:28px;left:clamp(26px,7vw,70px)}
+  .cover-visual{top:-70px;left:48%;width:50%;height:300px;opacity:.5}
+  .cover-footer{bottom:22px;left:clamp(26px,7vw,70px);right:30px}
+  .division{width:min(100% - 32px,940px);height:250px;min-height:0;margin:28px auto 6px;border-radius:12px;overflow:hidden}
+  .division-number{font-size:135px;top:0;left:20px}
+  .division-title{font-size:clamp(24px,4vw,42px);top:57px;left:45px;max-width:90%;line-height:1.18}
+  .division-deck{font-size:clamp(14px,2vw,19px);top:132px;left:45px;right:28px;max-width:80%}
+  .division-top{top:18px;left:45px;right:45px}
+  .division-bottom,.division-visual{display:none}
+  .opening-title{font-size:clamp(37px,5vw,61px);line-height:1.1}
+  .opening-lead{font-size:clamp(19px,2.6vw,25px);max-width:760px}
+  .opening-contrast{gap:14px}
+  .opening-contrast>div{padding:19px;flex:1}
+  .opening-contrast p{font-size:13px;line-height:1.65}
+  .gold-quote{font-size:clamp(16px,2vw,22px);padding:24px}
+  .toc-columns{gap:28px}
+  .toc a:after{content:none!important}
+  .toc a:hover{color:#205ea8;text-decoration:underline}
+  .toc-minor{font-size:13px;margin:8px 0 8px 12px}
+  .toc-major{font-size:14px;margin-top:20px}
+  .toc-title{font-size:clamp(44px,6vw,68px)}
+  .chapter-title{font-size:clamp(29px,4.4vw,47px);line-height:1.13}
+  .chapter-top{margin-bottom:20px}
+  .chapter{scroll-margin-top:78px}
+  .chapter h3{font-size:19px;line-height:1.4;margin-top:32px;margin-bottom:14px}
+  .chapter p,.chapter li,.collection p,.collection li{font-size:15px;line-height:1.72}
+  .foundation-lead{font-size:clamp(17px,2.2vw,21px);max-width:780px}
+  .ink-highlight,.turn-highlight{-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .margin-note,.annotation{margin:20px 0;padding:17px 20px}
+  .margin-note-label{font-size:11px;min-width:160px}
+  .margin-note p,.annotation .annotation-copy{font-size:13px;line-height:1.65}
+  .goal-item{padding:19px}
+  .goal-item p{font-size:14px;line-height:1.6}
+  .dialogue{border-radius:12px;box-shadow:0 1px 1px rgba(10,28,55,.02);margin:22px 0;overflow:hidden}
+  .conversation-bar{font-size:11px;padding:12px 17px}
+  .turn{gap:16px;padding:14px 18px;font-size:15px;line-height:1.65}
+  .who{width:78px;font-size:12px}
+  .phrase-row,.lexicon-entry{padding:13px 16px;gap:18px}
+  .phrase-word,.lexicon-phrase{font-size:14px}
+  .phrase-meaning,.lexicon-use{font-size:13px}
+  .table-box{overflow-x:auto}
+  table{font-size:13px;min-width:540px}
+  td,th{padding:11px 12px}
+  th{font-size:12px}
+  .map-title{font-size:clamp(36px,5vw,58px)}
+  .map-flow{gap:10px;flex-wrap:wrap}
+  .map-flow span{font-size:12px;padding:10px 13px}
+  .map-flow i{font-size:14px}
+  .matrix{margin:25px 0}
+  .matrix-row{padding:15px 12px;gap:14px}
+  .matrix-cell{font-size:14px;line-height:1.6}
+  .matrix-label{font-size:10px}
+  .collection>h2,.closing>h2{font-size:clamp(29px,4vw,44px)}
+  .case-heading{font-size:20px!important;line-height:1.5}
+  .reader-footer{text-align:center;margin:60px 20px 0;color:#708199;font-size:12px;line-height:1.8}
+  .reader-footer a{color:#2b619e;font-weight:700}
+  :target{scroll-margin-top:84px}
+}
+@media screen and (max-width:680px){
+  .reader-topbar{padding:12px 16px;align-items:flex-start}
+  .reader-brand{font-size:11px;margin-top:2px}
+  .reader-links{gap:8px 14px;font-size:11px}
+  body > section:not(.cover):not(.division){width:calc(100% - 18px);margin:12px auto;border-radius:9px;padding:24px 19px}
+  .cover{width:calc(100% - 18px);height:460px;margin:10px auto;border-radius:10px}
+  .cover-main{top:140px}
+  .cover h1{font-size:74px}
+  .cover-deck{font-size:18px}
+  .cover-motto{font-size:12px}
+  .cover-visual{left:29%;top:-40px;width:79%}
+  .division{width:calc(100% - 18px);margin:18px auto 6px;height:228px}
+  .division-title{left:26px;top:65px;right:14px}
+  .division-deck{left:26px;top:127px;max-width:90%}
+  .division-top{left:25px;right:25px}
+  .toc-columns,.opening-contrast{display:block}
+  .toc-col{width:100%}
+  .opening-contrast>div{width:100%;margin:10px 0}
+  .margin-note,.annotation{display:block;padding:14px}
+  .margin-note-label{display:block;margin:0 0 7px}
+  .goal-item{padding:13px}
+  .lesson-goal{gap:8px}
+  .turn{gap:8px;padding:12px 11px;font-size:14px}
+  .who{width:55px;flex:0 0 55px;font-size:11px}
+  .matrix-row{display:block;padding:11px}
+  .matrix-cell{display:block;margin:8px 0}
+  .map-flow i{display:none}
+  .map-flow span{flex:1 1 42%;text-align:center}
+  .phrase-row,.lexicon-entry{display:block;padding:13px}
+  .phrase-word,.lexicon-phrase{display:block;margin-bottom:6px}
+  .cover-footer{font-size:9px}
+}
+</style><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><nav class="reader-topbar" aria-label="Field guide navigation"><span class="reader-brand">ARTICO / SMALL TALK</span><span class="reader-links"><a href="#foundation-01-what-is-small-talk">Start here</a><a href="#the-conversation-map-five-moves">The map</a><a href="#unit-i-the-moment">Lessons</a><a href="#the-small-talk-phrase-library">Phrases</a><a class="reader-back" href="./#/application/smalltalk">Back to Artico ↗</a></span></nav>
+<section class="cover">
+  <div class="cover-mark">ARTICO <span class="mark-small">/ FIELD GUIDES</span></div>
+  <div class="cover-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+  <div class="cover-main"><div class="eyebrow white-eyebrow">SOCIAL SKILLS · THE COMPLETE COURSE</div>
+    <h1>Small<br/><em>Talk.</em></h1>
+    <div class="cover-yellow-rule"></div>
+    <div class="cover-deck">The art of starting,<br/>building, and ending<br/>real conversations.</div>
+    <p class="cover-motto">A small exchange can be the beginning of something.<br/>It doesn't have to be.</p></div>
+  <div class="cover-footer"><span>UNDERSTAND THE MOMENT · RESPOND TO THE PERSON</span><span>EDITION 2.0 / REDESIGNED</span></div>
+</section>
+<section class="opening-page" id="start-here"><div class="eyebrow">BEFORE THE FIRST HELLO</div>
+<h2 class="opening-title">A language skill.<br/><em>A human skill.</em></h2>
+<p class="opening-lead">Fluent speech and good conversation are not the same thing.</p>
+<div class="opening-contrast"><div><span class="contrast-num">01</span><b>Language</b><p>What can I say?</p></div><div><span class="contrast-num">02</span><b>Judgment</b><p>Is this a good moment?</p></div><div><span class="contrast-num">03</span><b>Interaction</b><p>What should come next?</p></div></div>
+<div class="gold-quote">The topic can be ordinary.<br/><strong>The interaction is about people.</strong></div><p><strong>Edition:</strong> 2.0 · <strong>Language:</strong> clear English, with natural General American English dialogues · <strong>Audience:</strong> anyone who wants stronger everyday social-conversation skills, including native speakers · <strong>Format:</strong> understand → observe → choose → speak → practice</p>
+<div class="annotation block-annotation"><span class="annotation-pin">↳</span><div class="annotation-copy">
+<p><strong>Small talk is informal conversation whose main purpose is to establish, maintain, or gently develop a social connection.</strong></p>
+<p>The topic can be ordinary. The interaction is about people.</p>
+</div></div>
+<p><strong>What this course teaches:</strong> how to judge a social moment, start without a script, make the next sentence fit, contribute naturally, recognize different responses, end comfortably, and reconnect when there is mutual interest.</p>
+<p><strong>One distinction:</strong> Being fluent in English is not the same as being skilled at social conversation. We teach the social skill. English is the medium and the spoken-example language.</p>
+<p><strong>Before you begin:</strong> Conversation is voluntary. These models are practical tools, not fixed social laws. People differ. A brief exchange—or choosing not to speak—can be the right outcome. All example dialogues are original constructed scenarios, not transcripts of real people.</p>
+</section>
+<section class="toc"><div class="eyebrow">YOUR ROUTE THROUGH THE BOOK</div><h2 class="toc-title">Contents<span class="dot-inline">.</span></h2>
+<p class="toc-intro">Begin with the purpose. Practice the moves. Put them together in real conversations.</p>
+<div class="toc-columns"><div class="toc-col">
+<div class="toc-major"><a href="#before-the-first-hello-understanding-small-talk"><span>Understanding small talk</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#foundation-01-what-is-small-talk"><span>01   What is small talk?</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#foundation-02-why-small-talk-matters"><span>02   Why small talk matters</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#foundation-03-why-fluency-is-not-enough"><span>03   Why fluency is not enough</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#foundation-04-what-good-small-talk-looks-like"><span>04   What good small talk looks like</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#the-conversation-map-five-moves"><span>The five-move conversation map</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#unit-i-the-moment"><span>UNIT I — THE MOMENT</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-01-see-the-social-function"><span>01   See the social function</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-02-read-the-room"><span>02   Read the room</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-03-start-with-something-you-share"><span>03   Start with something you share</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#unit-ii-the-next-sentence"><span>UNIT II — THE NEXT SENTENCE</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-04-respond-to-what-they-actually-said"><span>04   Respond to what they actually said</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-05-ask-a-follow-up-not-an-interview"><span>05   Ask a follow-up, not an interview</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-06-share-something-without-taking-over"><span>06   Share something without taking over</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-07-move-from-one-topic-to-another"><span>07   Move from one topic to another</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+</div><div class="toc-col">
+<div class="toc-major"><a href="#unit-iii-two-people-not-one-script"><span>UNIT III — TWO PEOPLE, NOT ONE SCRIPT</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-08-recognize-interest-without-reading-minds"><span>08   Recognize interest without reading minds</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-09-repair-awkward-moments"><span>09   Repair awkward moments</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-10-humor-compliments-and-personal-topics"><span>10   Humor, compliments, and personal topics</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#unit-iv-go-somewhere-or-end-well"><span>UNIT IV — GO SOMEWHERE OR END WELL</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-11-go-a-little-deeper-if-both-people-want-to"><span>11   Go a little deeper, if both people want to</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-minor"><a href="#lesson-12-finish-naturally-and-reconnect"><span>12   Finish naturally and reconnect</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#capstone-six-complete-real-life-conversations"><span>CAPSTONE — SIX COMPLETE REAL-LIFE CONVERSATIONS</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#practice-studio"><span>Practice studio</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#the-small-talk-phrase-library"><span>Phrase library</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+<div class="toc-major"><a href="#final-skill-check"><span>Final skill check</span><span class="toc-leader"></span><span class="toc-page"></span></a></div>
+</div></div><div class="toc-bottom">The example dialogues are original teaching scenarios, not transcripts. Practice judgment, not scripts.</div></section>
+<section class="division" id="before-the-first-hello-understanding-small-talk"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">00</div><div class="division-title">UNDERSTAND THE SOCIAL PURPOSE<span class="division-period">.</span></div>
+    <div class="division-deck">The subject is small. The function may not be.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Notice what people are doing when they talk.</span><span>00 / 07</span></div>
+    </section>
+<section class="chapter" id="foundation-01-what-is-small-talk"><div class="chapter-top"><span class="chapter-section">FOUNDATION <strong>01</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">What is small talk? </h2>
+        <p class="foundation-lead"><strong class="ink-highlight">Small talk is informal conversation whose main purpose is to establish, maintain, or gently develop a social connection.</strong></p><div class="margin-note"><div class="margin-note-label">↳  THE CORE DISTINCTION</div><p>The topic may be information; the function may be social contact.</p></div>
+        <div class="chapter-content"><p>The subject is usually familiar and easy to enter: something happening nearby, a shared activity, someone's weekend, a place, an interest, or a small personal experience. The topic can change. What matters is the <em>social job</em> of the exchange.</p>
+<p>Consider two people waiting for a meeting:</p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Alex</span><span class="words">It's cold in here.</span></div><div class="turn"><span class="who">Jordan</span><span class="words"><span class="turn-highlight">Seriously. I should've brought a sweater.</span></span></div><div class="turn"><span class="who">Alex</span><span class="words">Same. I thought it'd be warmer.</span></div><div class="turn"><span class="who">Jordan</span><span class="words">Hopefully they start soon.</span></div></div>
+<p>Neither person learned much about the temperature. But something else happened: they acknowledged each other, shared a little experience, and made the wait less anonymous. They might stop there. Or they might talk again next week. Both outcomes are ordinary.</p>
+<h3>The distinction that makes it click</h3>
+<p>We use conversation to do at least two different jobs:</p>
+<div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">When the main job is…</span><div><strong>Getting information or doing a task</strong></div></div> <div class="matrix-cell"><span class="matrix-label">The words might be…</span><div>“What time does the meeting start?”</div></div> <div class="matrix-cell"><span class="matrix-label">What is happening?</span><div>You need an answer.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">When the main job is…</span><div><strong>Making social contact</strong></div></div> <div class="matrix-cell"><span class="matrix-label">The words might be…</span><div>“Looks like everyone's running late today.”</div></div> <div class="matrix-cell"><span class="matrix-label">What is happening?</span><div>You recognize a shared moment and leave room for a response.</div></div></div></div>
+<p>A single exchange can do both. Asking about a meeting can be practical <em>and</em> friendly. Small talk does not have a strict boundary that everyone agrees on. The key question is: <strong>Are these people mainly solving a task, or also tending to their relationship?</strong></p>
+<h3>Why is it called <em>small</em>?</h3>
+<p>Usually the commitment is small: a few words, a familiar subject, little personal risk, and no demand for intimacy. The effect does not have to be small.</p>
+<p>You don't have to say anything profound. In fact, trying to turn every greeting into a meaningful conversation can make an ordinary moment uncomfortable.</p>
+<h3>Small talk is not limited to strangers</h3>
+<p>It happens between strangers, classmates, neighbors, coworkers, casual acquaintances, friends, and family. With someone new, it can open a connection. With someone you already know, it can keep that connection alive.</p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">New person</span><span class="words">“Have you been to one of these before?”</span></div><div class="turn"><span class="who">Classmate</span><span class="words"><span class="turn-highlight">“How'd your presentation go?”</span></span></div><div class="turn"><span class="who">Coworker</span><span class="words">“Anything fun planned for the weekend?”</span></div><div class="turn"><span class="who">Neighbor</span><span class="words">“Hey, good to see you. How've you been?”</span></div></div>
+<p>The same skill appears in different relationships. The depth, tone, and degree of familiarity change.</p>
+<h3>Is it the same as chatting, networking, or deep conversation?</h3>
+<div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Greeting</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Acknowledge somebody</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>Often the opening, but not always a conversation.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Small talk</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Establish or maintain easy social contact</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>May stay brief or lead elsewhere.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Longer conversation</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Explore a topic or experience together</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>Small talk can grow into it.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Deep conversation</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Share important feelings, beliefs, or experiences</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>May follow when <em>both</em> people want it; it is not a compulsory next step.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Networking</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Build professional relationships and opportunities</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>May include small talk, but has a more specific goal.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Flirting</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Explore romantic or sexual interest</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>May use ordinary small talk, but should not be confused with general friendliness.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Kind of exchange</span><div><strong>Storytelling</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Main emphasis</span><div>Share an experience as a sequence of events</div></div> <div class="matrix-cell"><span class="matrix-label">How it relates to small talk</span><div>A short story can be one move inside a conversation.</div></div></div></div>
+<div class="micro-task"><p><strong>Try this:</strong> Think of a friendly person you see regularly but don't know well. What ordinary exchanges have helped you become familiar with each other?</p></div>
+</div></section>
+<section class="chapter" id="foundation-02-why-small-talk-matters"><div class="chapter-top"><span class="chapter-section">FOUNDATION <strong>02</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Why small talk matters<span class="gold-period">.</span></h2>
+        <p class="foundation-lead"><strong class="ink-highlight">Small talk gives people a low-pressure way to recognize each other before they know whether they want a larger conversation or relationship.</strong></p><div class="margin-note"><div class="margin-note-label">↳  THE LONGER VIEW</div><p>A few ordinary exchanges can build familiarity over time, without a promised outcome.</p></div>
+        <div class="chapter-content"><p>It is one of the ways social life works between the extremes of silence and intimate conversation. Not everyone wants to make a new friend every day, but most people encounter others whose presence they can acknowledge without promising anything more.</p>
+<h3>Six useful functions</h3>
+<p><strong>1. Recognition — “I see you.”</strong> A greeting or small remark turns two people sharing a space into two people who have acknowledged each other. This can be the whole interaction.</p>
+<p><strong>2. Ease — “We can be comfortable here.”</strong> A few words before an interview, meeting, party, or class can ease a transition. It does not have to eliminate awkwardness.</p>
+<p><strong>3. Familiarity — “We're not complete strangers anymore.”</strong> A classmate you have greeted several times becomes someone you recognize. Repeated small exchanges may make a longer conversation easier later.</p>
+<p><strong>4. Discovery — “We might have something in common.”</strong> People learn small, voluntary details about one another: a shared hobby, an event, a book, a place. Sometimes that becomes the beginning of friendship, collaboration, or romance; often it doesn't.</p>
+<p><strong>5. Maintenance — “Our relationship still matters.”</strong> A few minutes with a neighbor, colleague, or casual friend can maintain contact even when there is no important news to exchange.</p>
+<p><strong>6. Transition — “Now we can move into something else.”</strong> Small talk can soften the move into a work discussion, a deeper question, or a goodbye. It can also give people a way to leave things light.</p>
+<h3>The small exchange and the larger possibility</h3>
+<p>Imagine you join a weekly dance class.</p>
+<p><strong>Week one</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Sam</span><span class="words">That was harder than I expected.</span></div><div class="turn"><span class="who">Riley</span><span class="words"><span class="turn-highlight">Right? I kept losing the beat.</span></span></div><div class="turn"><span class="who">Sam</span><span class="words">Same. See you next week.</span></div></div>
+<p><strong>Week two</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Sam</span><span class="words">Hey, you came back!</span></div><div class="turn"><span class="who">Riley</span><span class="words"><span class="turn-highlight">Barely. I practiced for about ten minutes.</span></span></div><div class="turn"><span class="who">Sam</span><span class="words">Ten more than me.</span></div></div>
+<p><strong>Week four</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Riley</span><span class="words">Some of us are getting coffee after class. Want to come?</span></div><div class="turn"><span class="who">Sam</span><span class="words">Yeah, sounds good.</span></div></div>
+<p>This is an illustration, not a required formula. A relationship <em>might</em> develop because both people repeatedly find it pleasant to talk. Neither person is owed friendship because they made the first move.</p>
+<h3>Why some people avoid it</h3>
+<p>They may not know what to say, worry about rejection, dislike forced conversation, need quiet, feel tired, or simply prefer not to talk. These are different reasons. They should not all be treated as a confidence problem.</p>
+<p>Studies suggest people can sometimes underestimate how enjoyable a conversation with a stranger will be or how much a partner liked them. But those findings describe tendencies in studied settings. They do <strong>not</strong> prove that every stranger wants to talk. Sometimes solitude really is the better choice.</p>
+<h3>Does it make everyone happier?</h3>
+<p>No universal promise is justified. Research has linked some everyday interactions with positive mood and belonging. Other research shows that workplace small talk can be uplifting <strong>and</strong> distracting. The moment, relationship, person, and purpose matter.</p>
+<p><strong>The aim is not to talk more. It is to recognize when talking would be welcome, and participate well.</strong></p>
+<div class="micro-task"><p><strong>Try this:</strong> Choose a recent brief conversation. Which job did it do: recognition, ease, familiarity, discovery, maintenance, or transition? More than one answer can be correct.</p></div>
+</div></section>
+<section class="chapter" id="foundation-03-why-fluency-is-not-enough"><div class="chapter-top"><span class="chapter-section">FOUNDATION <strong>03</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Why fluency is not enough<span class="gold-period">.</span></h2>
+        <p class="foundation-lead"><strong class="ink-highlight">Knowing a language and knowing how to use conversation socially are different abilities.</strong></p><div class="margin-note"><div class="margin-note-label">↳  WORDS ARE NOT THE WHOLE SKILL</div><p>Language, timing, and responsiveness are different capabilities.</p></div>
+        <div class="chapter-content"><p>You might have excellent grammar, an impressive vocabulary, and clear pronunciation, yet struggle to begin chatting with a neighbor or know when to leave a conversation. You might also speak with simple words and still make others feel comfortable because you listen, notice context, and respond thoughtfully.</p>
+<p>This course is for <strong>anyone</strong>, including people who grew up speaking English. It is not remedial English instruction, a personality makeover, or a course in becoming an extrovert.</p>
+<h3>Three abilities work together</h3>
+<div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Ability</span><div><strong>Language</strong></div></div> <div class="matrix-cell"><span class="matrix-label">The question it answers</span><div>What words can I use?</div></div> <div class="matrix-cell"><span class="matrix-label">A simple example</span><div>“How'd it go?”</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Ability</span><div><strong>Social judgment</strong></div></div> <div class="matrix-cell"><span class="matrix-label">The question it answers</span><div>Is it appropriate to ask now?</div></div> <div class="matrix-cell"><span class="matrix-label">A simple example</span><div>The person had mentioned an exam, and now has time to chat.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Ability</span><div><strong>Interaction</strong></div></div> <div class="matrix-cell"><span class="matrix-label">The question it answers</span><div>How do I respond to the answer?</div></div> <div class="matrix-cell"><span class="matrix-label">A simple example</span><div>“Oh, that's good. What was the hardest part?”</div></div></div></div>
+<p>You need enough language to express yourself, but a larger vocabulary does not automatically solve the other two problems. Even native speakers may be skilled in one area of life and uncomfortable in another. Presenting confidently to 200 people is not the same task as speaking naturally to one unfamiliar person.</p>
+<h3>Social skill is not a personality type</h3>
+<p>A quiet person can be excellent at small talk. A talkative person can be poor at it. Someone who likes silence can still offer a warm greeting. Someone who loves meeting people can still interrupt or miss a clear sign that the other person wants to leave.</p>
+<p>The goal is not to speak all the time. The goal is to make good choices when you <em>do</em> interact.</p>
+<h3>What is a conversation actually made of?</h3>
+<p>Two people build it together, turn by turn. One person says something; the other interprets it and responds. Each reply changes what a natural next sentence could be.</p>
+<p><strong>At a class:</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ava</span><span class="words">Have you taken one of these classes before?</span></div><div class="turn"><span class="who">Ben</span><span class="words"><span class="turn-highlight">No, first time. I usually go to the Tuesday group.</span></span></div><div class="turn"><span class="who">Ava</span><span class="words">Oh, there's a Tuesday group too? Is it about the same level?</span></div><div class="turn"><span class="who">Ben</span><span class="words">Pretty much. This one works better with my schedule.</span></div><div class="turn"><span class="who">Ava</span><span class="words">Makes sense. I might check it out sometime.</span></div></div>
+<p>Ava doesn't need a clever new topic. Ben's words give her the next possible move. This is what <em>responding</em> looks like.</p>
+<p>A useful teaching distinction is:</p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">A script</span><span class="words">You already know your next sentence, no matter what they say.</span></div><div class="turn"><span class="who">A skill</span><span class="words">What they say changes what you say next.</span></div></div>
+<h3>Four things you can practice</h3>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> See the situation and whether a conversation is welcome.</p></div></div>
+<p><strong>Offer:</strong> Start with a relevant sentence or question, without requiring a long answer.</p>
+<p><strong>Respond:</strong> Recognize what the person said. Ask, share, or pause according to the response.</p>
+<p><strong>Finish:</strong> Continue only while it works for both people; end pleasantly when it does not.</p>
+<p>These are practice categories, not a proven law or a strict linear recipe.</p>
+<div class="micro-task"><p><strong>Try this:</strong> If someone says, “I started learning guitar last month,” imagine three possible replies: a follow-up question, a related personal comment, and a polite acknowledgement without a question. Which would fit depends on the moment.</p></div>
+</div></section>
+<section class="chapter" id="foundation-04-what-good-small-talk-looks-like"><div class="chapter-top"><span class="chapter-section">FOUNDATION <strong>04</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">What good small talk looks like<span class="gold-period">.</span></h2>
+        <p class="foundation-lead"><strong class="ink-highlight">A good exchange fits the moment and respects both people. It does not have to be long or impressive.</strong></p><div class="margin-note"><div class="margin-note-label">↳  REDEFINE SUCCESS</div><p>A complete exchange can be pleasant, brief, or simply a respectful decision not to speak.</p></div>
+        <div class="chapter-content"><p>Compare four outcomes.</p>
+<h3>A. A friendly exchange that ends quickly</h3>
+<p><strong>Before a meeting</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Nora</span><span class="words">Long morning?</span></div><div class="turn"><span class="who">Kai</span><span class="words"><span class="turn-highlight">A little. I had back-to-back calls.</span></span></div><div class="turn"><span class="who">Nora</span><span class="words">Oof. Hope you get a break after this.</span></div><div class="turn"><span class="who">Kai</span><span class="words">Thanks. I hope so too.</span></div></div>
+<p>They smile and sit down as the meeting begins.</p>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>What worked:</strong> Nora responded to Kai's answer. Neither person needed to start another topic. The exchange was complete.</p></div></div>
+<h3>B. A short conversation that grows</h3>
+<p><strong>After a public lecture</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Nora</span><span class="words">That last example was really interesting.</span></div><div class="turn"><span class="who">Kai</span><span class="words"><span class="turn-highlight">Yeah, especially the part about memory.</span></span></div><div class="turn"><span class="who">Nora</span><span class="words">Same. I hadn't thought about it that way.</span></div><div class="turn"><span class="who">Kai</span><span class="words">Have you been to the other talks in this series?</span></div><div class="turn"><span class="who">Nora</span><span class="words">Just one. Are they usually this good?</span></div><div class="turn"><span class="who">Kai</span><span class="words">The last one was great, actually.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>What worked:</strong> Both contributed. Each response made the next turn easier. Neither person controlled the entire exchange.</p></div></div>
+<h3>C. An opening that receives little interest</h3>
+<p><strong>At a club event</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Nora</span><span class="words">Hey, have you been here before?</span></div><div class="turn"><span class="who">Kai</span><span class="words"><span class="turn-highlight">Yeah, a couple times.</span></span></div><div class="turn"><span class="who">Nora</span><span class="words">Oh, nice.</span></div></div>
+<p>Kai turns back to reading the event program. Nora leaves it there.</p>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>What worked:</strong> Nora tried an appropriate, light opening. She did not demand an explanation or insist on continuing. Kai's short answer alone would not prove disinterest, but the larger situation gives Nora a reason not to press.</p></div></div>
+<h3>D. A moment when not speaking is better</h3>
+<p>You pass somebody concentrating on a book with headphones on. There is no reason to interrupt. You continue walking.</p>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>What worked:</strong> Social judgment includes choosing not to start.</p></div></div>
+<h3>What success is—and is not</h3>
+<div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>A suitable opening</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>The funniest or most memorable line</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>One responsive follow-up</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>A long series of questions</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>A warm 20-second exchange</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>A new friend every time</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>A natural pause or exit</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>Filling every silence</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>Respect for a refusal</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>Persuading someone to keep talking</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Success can mean…</span><div>An invitation offered at the right moment</div></div> <div class="matrix-cell"><span class="matrix-label">Success does not require…</span><div>Getting someone's contact details</div></div></div></div>
+<h3>The limits matter</h3>
+<p>Small talk is optional, not a social duty. People have different cultures, communication styles, moods, comfort levels, and needs for privacy or quiet. Direct refusals must be respected. A reserved person is not defective; an eager person is not automatically intrusive. The context and actions matter more than labels.</p>
+<p>Some topics that seem light to you may be sensitive to someone else. Income, relationship status, family plans, religion, immigration history, and appearance are not safe default topics. A shared event, common activity, or detail the other person volunteered usually offers a gentler start.</p>
+<p>Humor and storytelling belong here when they help and fit the relationship. You can tell a short story about missing a train or laugh about a dance mistake. But you do not need to perform, entertain, or reveal private information to earn somebody's attention.</p>
+<h3>What the rest of this course teaches</h3>
+<p>We will learn to <strong>notice the moment, open naturally, build on the answer, adjust together, repair mistakes, leave gracefully, and reconnect when it makes sense.</strong> You will study complete conversations, compare choices, speak your own lines, and practice in real settings when it is appropriate.</p>
+<p>Don't memorize a perfect personality. Learn a few sound principles and become better at noticing the person in front of you.</p>
+<div class="micro-task"><p><strong>Opening exercise:</strong> Recall two conversations from the past week—one pleasant and one uncomfortable. What was different? Consider the moment, how each person responded, and whether either could leave freely. Do not judge the conversation only by its length.</p></div>
+</div></section>
+<section class="map-page" id="the-conversation-map-five-moves"><div class="eyebrow">THE OPERATING MODEL</div><h2 class="map-title">Five moves.<br/><em>One conversation.</em></h2>
+        <p class="map-intro">The model makes the skill easier to practice. Real conversations move back and forth.</p>
+        <div class="map-flow"><span>NOTICE</span><i>→</i><span>START</span><i>→</i><span>BUILD</span><i>→</i><span>ADJUST</span><i>→</i><span>LEAVE</span></div><div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Move</span><div><strong>1. Notice</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Question in your head</span><div><em>Is this a good moment?</em></div></div> <div class="matrix-cell"><span class="matrix-label">What it means</span><div>Look at the shared situation, time, and the other person's freedom to leave.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Move</span><div><strong>2. Start</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Question in your head</span><div><em>What is natural here?</em></div></div> <div class="matrix-cell"><span class="matrix-label">What it means</span><div>Say hello, make a relevant comment, or ask a light question.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Move</span><div><strong>3. Build</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Question in your head</span><div><em>What did they just give me?</em></div></div> <div class="matrix-cell"><span class="matrix-label">What it means</span><div>Listen. React. Ask about that detail or share something connected.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Move</span><div><strong>4. Adjust</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Question in your head</span><div><em>Are we both taking part?</em></div></div> <div class="matrix-cell"><span class="matrix-label">What it means</span><div>Keep going, slow down, change course, or stop.</div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Move</span><div><strong>5. Leave</strong></div></div> <div class="matrix-cell"><span class="matrix-label">Question in your head</span><div><em>How can this end comfortably?</em></div></div> <div class="matrix-cell"><span class="matrix-label">What it means</span><div>Close clearly; suggest talking again only when it fits.</div></div></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Important:</strong> These are not five rigid steps. You keep noticing and adjusting throughout the conversation. Sometimes you go straight from hello to goodbye. That can be a complete, successful interaction.</p></div></div>
+</section>
+<section class="division" id="unit-i-the-moment"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">01</div><div class="division-title">THE MOMENT<span class="division-period">.</span></div>
+    <div class="division-deck">See the opening before you say a word.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Notice · Read the room · Start naturally</span><span>01 / 07</span></div>
+    </section>
+<section class="chapter" id="lesson-01-see-the-social-function"><div class="chapter-top"><span class="chapter-section">LESSON <strong>01</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">See the social function<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Recognize small talk in real situations and tell what social job each exchange is doing.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Look beyond the subject of the words. Ask what the exchange is doing between the people: acknowledging, easing, discovering, maintaining, or closing a connection.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  THE SOCIAL JOB</div><p>The words can be ordinary. Notice what the exchange does between the people.</p></div>
+        <div class="chapter-content"><h3 class="example-heading">Compare these exchanges</h3>
+<p><strong>A short exchange that is already complete — shared elevator</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Maya</span><span class="words">Morning.</span></div><div class="turn"><span class="who">Evan</span><span class="words"><span class="turn-highlight">Hey, morning.</span></span></div><div class="turn"><span class="who">Maya</span><span class="words">Busy day?</span></div><div class="turn"><span class="who">Evan</span><span class="words">Looks like it.</span></div><div class="turn"><span class="who">Maya</span><span class="words">Yeah, same here. Have a good one.</span></div><div class="turn"><span class="who">Evan</span><span class="words">You too.</span></div></div>
+<p><strong>A small opening that grows — after a dance class</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Maya</span><span class="words">That last turn was harder than it looked.</span></div><div class="turn"><span class="who">Evan</span><span class="words"><span class="turn-highlight">Seriously. I kept stepping on the wrong beat.</span></span></div><div class="turn"><span class="who">Maya</span><span class="words">Same. Is this your first class here?</span></div><div class="turn"><span class="who">Evan</span><span class="words">Second. I thought it'd be easier this week.</span></div><div class="turn"><span class="who">Maya</span><span class="words">Glad it's not just me. I'm Maya, by the way.</span></div><div class="turn"><span class="who">Evan</span><span class="words">Evan. Nice to meet you.</span></div></div>
+<p><strong>A conversation that does not begin — library</strong></p>
+<p>Someone has headphones on and is reading. You decide not to interrupt. <strong>This is good judgment</strong>, not a missed opportunity.</p>
+<div class="annotation block-annotation"><span class="annotation-pin">↳</span><div class="annotation-copy">
+<p><strong>Small note:</strong> Being friendly is not the same as getting a long conversation. A simple greeting can be enough.</p>
+</div></div>
+<h3>Phrase focus</h3>
+<div class="phrase-rows"><div class="phrase-row"><div class="phrase-word">“Morning.”</div><div class="phrase-meaning">shortened, everyday greeting; especially natural when passing someone.</div></div><div class="phrase-row"><div class="phrase-word">“Same here.”</div><div class="phrase-meaning">“I have that experience too.”</div></div><div class="phrase-row"><div class="phrase-word">“By the way, I&#x27;m Maya.”</div><div class="phrase-meaning">a natural way to add your name after a little conversation.</div></div><div class="phrase-row"><div class="phrase-word">“Have a good one.”</div><div class="phrase-meaning">casual, friendly goodbye. Not for every formal setting.</div></div></div>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice: make the judgment</h3>
+<p><strong>Situation:</strong> After a seminar, a student is putting papers into a bag. They are not rushing. You both attended the session.</p>
+<p>A. “So, what do you study?”<br/>
+B. “That last question was interesting. What did you think of the answer?”<br/>
+C. “Are you here for the science department?”</p>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Best for this moment:</strong> B. It connects to a fresh shared experience. A could also be fine later; C is possible but less useful when you already know you attended the same seminar.</p></div></div>
+<div class="micro-task"><p><strong>Say it aloud:</strong> Choose a shared event from this week. Say one natural sentence about it, then stop. Do not invent a question if none is needed.</p></div>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Exchange a normal greeting with someone in a suitable, familiar setting. No follow-up is required.</p></div>
+</div></section>
+<section class="chapter" id="lesson-02-read-the-room"><div class="chapter-top"><span class="chapter-section">LESSON <strong>02</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Read the room<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Notice when a conversation is likely to be welcome, unwelcome, or uncertain.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>The opportunity comes from the situation—not from your determination to speak.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  BEFORE THE FIRST WORD</div><p>Availability matters more than finding the perfect opener.</p></div>
+        <div class="chapter-content"><h3>A practical decision</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Open setting</span><span class="words">break at a conference; waiting for a class to begin; club social; mutual friend introduces you.</span></div><div class="turn"><span class="who">Uncertain setting</span><span class="words"><span class="turn-highlight">public transport; café queue; gym; someone doing light work. Keep it brief, and leave space for no reply.</span></span></div><div class="turn"><span class="who">Poor setting</span><span class="words">person wearing headphones and concentrating; private or isolated area; someone visibly distressed; employee unable to step away; someone trying to leave; repeated unwanted approach.</span></div></div>
+<p>These are teaching defaults, not universal laws. A short answer, averted gaze, or slower reply by itself does not reveal someone's mind. Use the full context and respect a direct refusal.</p>
+<h3 class="example-heading">Two versions of the same question</h3>
+<p><strong>Before class</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Noah</span><span class="words">Hey, are you waiting for the statistics class too?</span></div><div class="turn"><span class="who">Leah</span><span class="words"><span class="turn-highlight">Yeah. I think we're in the right place.</span></span></div><div class="turn"><span class="who">Noah</span><span class="words">Good. I was starting to wonder.</span></div></div>
+<p><strong>When someone is rushing into class</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Noah</span><span class="words">Hey, sorry—do you—</span></div><div class="turn"><span class="who">Leah</span><span class="words"><span class="turn-highlight">Sorry, I'm running late.</span></span></div><div class="turn"><span class="who">Noah</span><span class="words">No worries.</span></div></div>
+<p>Noah does not follow her or ask again.</p>
+<h3>Phrase focus</h3>
+<div class="phrase-rows"><div class="phrase-row"><div class="phrase-word">“Is this seat taken?”</div><div class="phrase-meaning">practical question. It does not automatically invite further conversation.</div></div><div class="phrase-row"><div class="phrase-word">“No worries.”</div><div class="phrase-meaning">accepts a small refusal or apology without drama.</div></div><div class="phrase-row"><div class="phrase-word">“Are you waiting for ___ too?”</div><div class="phrase-meaning">works only when there is real shared waiting.</div></div><div class="phrase-row"><div class="phrase-word">“I won&#x27;t keep you.”</div><div class="phrase-meaning">gentle way to acknowledge someone&#x27;s time, especially when finishing.</div></div></div>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice: approach, brief comment, or leave alone?</h3>
+<ol>
+<li>A person at a club social is looking at the schedule. You are standing nearby. <strong>Approach is reasonable.</strong></li>
+<li>A cashier is serving a line of customers. <strong>A brief friendly comment is fine; do not hold up the line.</strong></li>
+<li>Someone is reading with headphones on in a quiet study room. <strong>Leave them alone.</strong></li>
+<li>A classmate you've met twice is drinking tea during the break. <strong>A short conversation is reasonable.</strong></li>
+<li>A person says, “I'd rather sit alone.” <strong>Stop.</strong></li>
+</ol>
+<div class="micro-task"><p><strong>Say it aloud:</strong> For two of these situations, say how you would respond in under ten words.</p></div>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Notice three possible conversational moments. You do not have to approach anyone. Write why one moment was suitable and another was not.</p></div>
+</div></section>
+<section class="chapter" id="lesson-03-start-with-something-you-share"><div class="chapter-top"><span class="chapter-section">LESSON <strong>03</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Start with something you share<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Open without sounding rehearsed.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>The easiest first sentence is often about here, now, or something you both know .</p></div></div><div class="margin-note"><div class="margin-note-label">↳  START CLOSE TO HOME</div><p>An observation about the shared moment is easier to answer than a personal interview.</p></div>
+        <div class="chapter-content"><h3>Four natural opening moves</h3>
+<p><strong>1. Simple greeting</strong> — for a familiar person, or one you'll see again.</p>
+<ul>
+<li>“Hey, how's it going?”</li>
+<li>“Morning. How've you been?” <em>(someone you already know)</em></li>
+</ul>
+<p><strong>2. A real observation</strong> — no question is always necessary.</p>
+<ul>
+<li>“This room is freezing.” <em>(other person can agree, smile, or leave it)</em></li>
+<li>“That was a packed session.”</li>
+</ul>
+<p><strong>3. An easy, relevant question</strong></p>
+<ul>
+<li>“Have you been to one of these before?” <em>(event)</em></li>
+<li>“Are you in the Tuesday class too?” <em>(class)</em></li>
+<li>“How do you know Priya?” <em>(friend's party; not a random stranger in a café)</em></li>
+</ul>
+<p><strong>4. A short introduction</strong> — works in situations intended for meeting people.</p>
+<ul>
+<li>“Hey, I don't think we've met. I'm Chris.”</li>
+<li>“Hi, I'm Lina. I just joined this club.”</li>
+</ul>
+<h3 class="example-heading">Awkward vs. natural</h3>
+<p><strong>Unnatural at a class:</strong> “Greetings. I noticed our geographical proximity and would like to initiate a dialogue.”</p>
+<p><strong>Natural:</strong> “Hey, is this the right room for the workshop?”</p>
+<p><strong>Too personal at first contact:</strong> “Why are you here alone?”</p>
+<p><strong>Natural at a party:</strong> “Hey, I'm Sam. How do you know Alex?”</p>
+<h3 class="example-heading">Dialogue: conference coffee break</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Nina</span><span class="words">Is this the line for coffee?</span></div><div class="turn"><span class="who">Omar</span><span class="words"><span class="turn-highlight">I think so. There wasn't much of a sign.</span></span></div><div class="turn"><span class="who">Nina</span><span class="words">Okay, good. I thought I was about to queue for something else.</span></div><div class="turn"><span class="who">Omar</span><span class="words">Wouldn't be the first time today.</span></div><div class="turn"><span class="who">Nina</span><span class="words">Have you been to any of the talks yet?</span></div><div class="turn"><span class="who">Omar</span><span class="words">Just the one on protein design.</span></div><div class="turn"><span class="who">Nina</span><span class="words">Oh, I missed that. Was it good?</span></div></div>
+<div class="annotation block-annotation"><span class="annotation-pin">↳</span><div class="annotation-copy">
+<p><strong>Small note:</strong> “I thought I was about to queue for something else” is light situational humor. You don't need a joke for a conversation to work.</p>
+</div></div>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice: choose the opening</h3>
+<p><strong>Situation:</strong> You're early to a workshop. Another person is also checking the room number.</p>
+<p>A. “So, what kind of work do you do?”
+B. “Is this where the workshop's supposed to be?”
+C. “Have you met the instructor before?”</p>
+<p><strong>Best first line here:</strong> B. You are both checking the room, so it fits immediately. A could come later; C is possible but less grounded in the moment.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Try one context-based opening in a setting where conversation is expected. If you cannot do this safely, record three possible openings instead.</p></div>
+</div></section>
+<section class="division" id="unit-ii-the-next-sentence"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">02</div><div class="division-title">THE NEXT SENTENCE<span class="division-period">.</span></div>
+    <div class="division-deck">The answer changes what comes next.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Listen · Ask · Share · Bridge</span><span>02 / 07</span></div>
+    </section>
+<section class="chapter" id="lesson-04-respond-to-what-they-actually-said"><div class="chapter-top"><span class="chapter-section">LESSON <strong>04</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Respond to what they actually said<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Make the second turn feel connected.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Don&#x27;t jump to the next prepared topic. Use one detail from the other person&#x27;s answer.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  THE TURN THAT COUNTS</div><p>Respond to one detail they actually gave you.</p></div>
+        <div class="chapter-content"><h3 class="example-heading">Watch the difference</h3>
+<p><strong>A disconnected exchange</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ava</span><span class="words">Did you enjoy the talk?</span></div><div class="turn"><span class="who">Ben</span><span class="words"><span class="turn-highlight">Yeah, especially the part on climate models.</span></span></div><div class="turn"><span class="who">Ava</span><span class="words">Cool. So, where are you from?</span></div></div>
+<p><strong>A connected exchange</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ava</span><span class="words">Did you enjoy the talk?</span></div><div class="turn"><span class="who">Ben</span><span class="words"><span class="turn-highlight">Yeah, especially the part on climate models.</span></span></div><div class="turn"><span class="who">Ava</span><span class="words">Oh, the part about predicting rainfall? I liked that too.</span></div><div class="turn"><span class="who">Ben</span><span class="words">Yeah, exactly. I hadn't seen that approach before.</span></div></div>
+<p>Ava <strong>used the answer</strong>, rather than ignoring it.</p>
+<h3>Three ways to respond</h3>
+<p><strong>Acknowledge:</strong> “Oh, nice.” / “That makes sense.” / “Ah, got it.” / “That sounds rough.”</p>
+<p><strong>Ask about the detail:</strong> “Which part?” / “How was it?” / “What got you interested in that?”</p>
+<p><strong>Add a connected detail:</strong> “I tried that once. It was harder than I expected.”</p>
+<p>You can use one, two, or all three. Do not use the same reaction every time.</p>
+<h3 class="example-heading">Dialogue: at a cooking class</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Jules</span><span class="words">Have you done this class before?</span></div><div class="turn"><span class="who">Dani</span><span class="words"><span class="turn-highlight">No, but I bake a lot at home.</span></span></div><div class="turn"><span class="who">Jules</span><span class="words">Oh, nice. What do you usually make?</span></div><div class="turn"><span class="who">Dani</span><span class="words">Bread, mostly. I've been trying sourdough.</span></div><div class="turn"><span class="who">Jules</span><span class="words">Sourdough? I've heard it takes forever.</span></div><div class="turn"><span class="who">Dani</span><span class="words">It does if you mess up the timing. Which I do, constantly.</span></div><div class="turn"><span class="who">Jules</span><span class="words">[laughs] Okay, I feel better about my chances today.</span></div></div>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice: complete the next turn</h3>
+<p><strong>Speaker:</strong> “I'm new here. I moved last month.”</p>
+<p>A. “Oh, welcome! How are you finding it so far?”
+B. “So, are you working or studying?”
+C. “Where were you living before?”</p>
+<p><strong>Best first response:</strong> A. It acknowledges the move and lets the person choose what to share. B and C can be reasonable later, but feel more like data collection as the immediate reply.</p>
+<div class="micro-task"><p><strong>Say it aloud:</strong> Respond to: “I've started learning guitar.” First acknowledge. Then pick one real detail to ask about.</p></div>
+<div class="micro-task"><p><strong>Real-world mission:</strong> In one ordinary conversation, listen for a detail you can return to instead of introducing a new topic.</p></div>
+</div></section>
+<section class="chapter" id="lesson-05-ask-a-follow-up-not-an-interview"><div class="chapter-top"><span class="chapter-section">LESSON <strong>05</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Ask a follow-up, not an interview<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Keep a topic alive through real curiosity.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Ask about what the person chose to share. Don&#x27;t fire unrelated questions at them.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  ASK, THEN LISTEN</div><p>A follow-up invites detail. A string of questions can feel like an interview.</p></div>
+        <div class="chapter-content"><h3>A topic has branches</h3>
+<p><strong>“I went hiking this weekend.”</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Experience</span><span class="words">“Oh, nice. How was it?”</span></div><div class="turn"><span class="who">Place</span><span class="words"><span class="turn-highlight">“Where'd you go?”</span></span></div><div class="turn"><span class="who">Interest</span><span class="words">“Do you go hiking a lot?”</span></div><div class="turn"><span class="who">Feeling</span><span class="words">“Was it as cold as it looked outside?” <em>(only if relevant)</em></span></div></div>
+<p>You need <strong>one</strong> useful follow-up, not all four.</p>
+<h3>Avoid the interview pattern</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Kim</span><span class="words">What do you do?</span></div><div class="turn"><span class="who">Rowan</span><span class="words"><span class="turn-highlight">I'm studying architecture.</span></span></div><div class="turn"><span class="who">Kim</span><span class="words">Where are you from?</span></div><div class="turn"><span class="who">Rowan</span><span class="words">Portland.</span></div><div class="turn"><span class="who">Kim</span><span class="words">What are your hobbies?</span></div><div class="turn"><span class="who">Rowan</span><span class="words">Uh ...</span></div></div>
+<p>Better:</p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Kim</span><span class="words">What are you studying?</span></div><div class="turn"><span class="who">Rowan</span><span class="words"><span class="turn-highlight">Architecture.</span></span></div><div class="turn"><span class="who">Kim</span><span class="words">Oh, cool. What got you interested in that?</span></div><div class="turn"><span class="who">Rowan</span><span class="words">Honestly, I started drawing floor plans for fun when I was a kid.</span></div><div class="turn"><span class="who">Kim</span><span class="words">[laughs] That's pretty specific. I used to draw maps of imaginary cities.</span></div><div class="turn"><span class="who">Rowan</span><span class="words">Wait, really?</span></div></div>
+<h3>Don't overdo it</h3>
+<p>Not every answer needs another question. People also connect through shared observations, reactions, humor, and silence. “Tell me more” can feel intense if the other person has already given a short, final answer.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p><strong>Speaker:</strong> “I joined a beginner salsa class.”</p>
+<p>Choose two natural possibilities:</p>
+<p>A. “Oh, nice. What's it been like?” <strong>Good—invites their experience.</strong>
+B. “Which night is the class?” <strong>Fine if you want practical details.</strong>
+C. “I've wanted to try salsa. Was the first class hard?” <strong>Good—briefly connects and asks.</strong>
+D. “How many people were there?” <strong>Also possible, but may be less engaging if the person was sharing excitement rather than logistics.</strong></p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Ask one follow-up about a detail another person brings up. Do not count questions; notice whether the exchange becomes easier.</p></div>
+</div></section>
+<section class="chapter" id="lesson-06-share-something-without-taking-over"><div class="chapter-top"><span class="chapter-section">LESSON <strong>06</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Share something without taking over<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Contribute, not just ask.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>A conversation needs two people. Give a little of yourself, and leave room for the other person.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  GIVE SOMETHING BACK</div><p>Sharing a small relevant detail lets the other person know you, too.</p></div>
+        <div class="chapter-content"><h3>A short personal contribution</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Lena</span><span class="words">I'm taking a pottery class on Saturdays.</span></div><div class="turn"><span class="who">Marcus</span><span class="words"><span class="turn-highlight">Oh, fun. I've never tried pottery, but I did a painting workshop last month. I was terrible at it—in a good way.</span></span></div><div class="turn"><span class="who">Lena</span><span class="words">[laughs] Yeah, that's about how pottery's going for me.</span></div></div>
+<p>Marcus doesn't pretend to share Lena's exact hobby. He offers a related experience.</p>
+<h3>Watch the takeover</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Lena</span><span class="words">I started running again.</span></div><div class="turn"><span class="who">Marcus</span><span class="words">Oh, I ran a half-marathon in three countries. Last time I did one—</span></div></div>
+<p>No acknowledgement of Lena's experience; the topic is gone.</p>
+<p><strong>Better:</strong> “Nice. I've been getting back into running too. How's it going so far?”</p>
+<h3>Share in three sizes</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Tiny</span><span class="words">“Same here.”</span></div><div class="turn"><span class="who">Small</span><span class="words"><span class="turn-highlight">“I've been thinking about trying that.”</span></span></div><div class="turn"><span class="who">Medium</span><span class="words">“I tried it once last year and got completely lost. I'd give it another shot, though.”</span></div></div>
+<p>Most early exchanges only need a tiny or small contribution. If the other person asks about you, you can say more.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p><strong>Speaker:</strong> “I've been learning Japanese for a few months.”</p>
+<p>Write a response with (1) one honest connection to your experience, and (2) an optional follow-up. You may instead say you have no similar experience and ask what they enjoy about it.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> During a normal conversation, add one relevant sentence about yourself. Notice whether the other person picks it up.</p></div>
+</div></section>
+<section class="chapter" id="lesson-07-move-from-one-topic-to-another"><div class="chapter-top"><span class="chapter-section">LESSON <strong>07</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Move from one topic to another<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Change a topic without making the conversation feel random.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Use a bridge : a word, a person, a place, or an experience that connects the old topic to the new one.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  FOLLOW THE CONNECTION</div><p>Good topic changes grow from the conversation, not from a checklist.</p></div>
+        <div class="chapter-content"><h3>Bridges that sound natural</h3>
+<ul>
+<li><strong>Person → interest:</strong> “You said your sister's a musician. Do you play anything?”</li>
+<li><strong>Place → experience:</strong> “You used to live in Chicago? I've only been once. What did you like about it?”</li>
+<li><strong>Event → future:</strong> “That workshop was good. Are you coming to the next one?”</li>
+<li><strong>Activity → discovery:</strong> “You make your own bread? How'd you get into that?”</li>
+</ul>
+<p>A direct change can also work when the current topic has run out: “Oh, by the way, did you see the schedule for next week?” Use it sparingly and only when you have a real next topic.</p>
+<h3 class="example-heading">Dialogue: changing direction without forcing it</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Priya</span><span class="words">I spent the weekend at my parents' place.</span></div><div class="turn"><span class="who">Max</span><span class="words"><span class="turn-highlight">Oh, nice. Is that far from here?</span></span></div><div class="turn"><span class="who">Priya</span><span class="words">About an hour on the train.</span></div><div class="turn"><span class="who">Max</span><span class="words">That's not bad. I used to do that trip every week for work. Have you been commuting much lately?</span></div><div class="turn"><span class="who">Priya</span><span class="words">Not really. I moved closer to campus.</span></div><div class="turn"><span class="who">Max</span><span class="words">Ah, that's got to help.</span></div></div>
+<h3>When not to bridge</h3>
+<p>If someone says, “It's been a hard week,” jumping to your holiday story may feel dismissive. Sometimes the better response is simply, “Sorry to hear that,” followed by space for them to continue or not.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p><strong>Speaker:</strong> “My dog kept me up all night.”</p>
+<p>A reasonable follow-up: “Oh no. Is everything okay?”</p>
+<p>A potentially good bridge later: “I love dogs, but I've never had one.”</p>
+<p>A poor immediate bridge: “Speaking of nights, I stayed at an amazing hotel last month.”</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Notice one time a topic changes in a conversation. What made the change work—or not work?</p></div>
+</div></section>
+<section class="division" id="unit-iii-two-people-not-one-script"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">03</div><div class="division-title">TWO PEOPLE, NOT ONE SCRIPT<span class="division-period">.</span></div>
+    <div class="division-deck">Follow the person, not your prepared lines.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Read responses · Repair · Keep it human</span><span>03 / 07</span></div>
+    </section>
+<section class="chapter" id="lesson-08-recognize-interest-without-reading-minds"><div class="chapter-top"><span class="chapter-section">LESSON <strong>08</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Recognize interest without reading minds<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Adjust when engagement is strong, weak, or unclear.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>You cannot know someone&#x27;s interest from one facial expression or one short answer. Look for the wider pattern and always respect clear boundaries.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  INTEREST IS SHARED</div><p>Look for mutual participation, not a single facial expression.</p></div>
+        <div class="chapter-content"><h3 class="example-heading">Three branches after the same opening</h3>
+<p><strong>Shared opening:</strong></p>
+<ul>
+<li><strong>You:</strong> “Have you been to one of these meetups before?”</li>
+</ul>
+<p><strong>A. The person takes part</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Them</span><span class="words">“Yeah, a couple. The last one was really good.”</span></div><div class="turn"><span class="who">You</span><span class="words"><span class="turn-highlight">“Oh, nice. What did you like about it?”</span></span></div><div class="turn"><span class="who">Them</span><span class="words">“The people, mostly. Everyone was surprisingly easy to talk to.”</span></div></div>
+<p><strong>B. The person keeps it brief</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Them</span><span class="words">“Yeah.”</span></div><div class="turn"><span class="who">You</span><span class="words"><span class="turn-highlight">“Oh, cool. Enjoy the event.”</span></span></div><div class="turn"><span class="who">Them</span><span class="words">“Thanks.”</span></div></div>
+<p><strong>C. The situation is unclear</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Them</span><span class="words">“Uh, once. Sorry, I'm trying to find my friend.”</span></div><div class="turn"><span class="who">You</span><span class="words">“Oh, no problem. Hope you find them.”</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Good judgment:</strong> A short answer could mean many things, but someone searching for a friend has a clear competing priority. Make room for them to leave.</p></div></div>
+<h3>A useful rule of thumb—not a law</h3>
+<p>Look for <strong>mutual effort</strong>: does each person sometimes ask, add, or return to a topic? If you are carrying every turn, it may be time to stop. This is an invitation to notice, not a method of grading people.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p><strong>Speaker:</strong> “I'm actually waiting for someone.”</p>
+<p>A. “Oh, are they running late?”
+B. “Got it. Have a good evening.”
+C. “Would you mind if I stayed and chatted for a minute?”</p>
+<p><strong>Best:</strong> B. They have introduced a competing priority. A or C could prolong an exchange they were trying to finish.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Let one small conversation end without trying to rescue it. Practice being comfortable with a short, friendly exchange.</p></div>
+</div></section>
+<section class="chapter" id="lesson-09-repair-awkward-moments"><div class="chapter-top"><span class="chapter-section">LESSON <strong>09</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Repair awkward moments<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Recover when you mishear, misunderstand, interrupt, or choose the wrong wording.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>You do not need flawless English. You need a way to repair misunderstandings.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  REPAIR IS NORMAL</div><p>A small misunderstanding rarely needs a large apology.</p></div>
+        <div class="chapter-content"><h3>Useful repair moves</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Didn&#x27;t hear</span><span class="words">“Sorry, what was that?”</span></div><div class="turn"><span class="who">Didn&#x27;t catch a word</span><span class="words"><span class="turn-highlight">“Sorry, which city did you say?”</span></span></div><div class="turn"><span class="who">Need clarification</span><span class="words">“Wait, do you mean the morning session?”</span></div><div class="turn"><span class="who">Correct yourself</span><span class="words">“Sorry, I meant Thursday, not Tuesday.”</span></div><div class="turn"><span class="who">Spoke over them</span><span class="words">“Sorry, go ahead.”</span></div><div class="turn"><span class="who">Asked a bad question</span><span class="words">“Sorry, that was a bit personal. You don't have to answer.”</span></div></div>
+<h3 class="example-heading">Dialogue: a name and a pause</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Em</span><span class="words">Hey, I'm Em.</span></div><div class="turn"><span class="who">Rafi</span><span class="words"><span class="turn-highlight">Sorry, what was your name?</span></span></div><div class="turn"><span class="who">Em</span><span class="words">Em. Just E-M.</span></div><div class="turn"><span class="who">Rafi</span><span class="words">Got it. I'm Rafi.</span></div><div class="turn"><span class="who">Em</span><span class="words">Nice to meet you.</span></div></div>
+<p>There is no embarrassment to explain. The conversation continues.</p>
+<h3 class="example-heading">Dialogue: you misunderstood</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ari</span><span class="words">I'm training for a 10K.</span></div><div class="turn"><span class="who">Lee</span><span class="words"><span class="turn-highlight">Oh, you're doing a marathon?</span></span></div><div class="turn"><span class="who">Ari</span><span class="words">Not quite. A 10K—ten kilometers.</span></div><div class="turn"><span class="who">Lee</span><span class="words">Ah, got it. That's still a lot of running. How's training going?</span></div></div>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p>The other person says: “I'm doing a placement at a nonprofit.” You heard “apartment.”</p>
+<p>Try: “Sorry, did you say a placement?” then let them clarify.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Ask for clarification once rather than pretending to understand something you missed. The goal is understanding, not perfect pronunciation.</p></div>
+</div></section>
+<section class="chapter" id="lesson-10-humor-compliments-and-personal-topics"><div class="chapter-top"><span class="chapter-section">LESSON <strong>10</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Humor, compliments, and personal topics<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Add warmth without taking unnecessary social risks.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Warmth can come from a true observation. You do not need jokes, teasing, or personal comments.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  WARMTH IS CONTEXTUAL</div><p>A joke, compliment, or personal question only works when it fits the relationship.</p></div>
+        <div class="chapter-content"><h3>Gentle situational humor</h3>
+<ul>
+<li><strong>After a difficult dance exercise:</strong> “I think my feet missed that part of the lesson.”</li>
+<li><strong>When a meeting link fails for everyone:</strong> “Well, at least we all made it to the same error screen.”</li>
+<li><strong>After an unusually long queue:</strong> “I feel like we've earned the coffee already.”</li>
+</ul>
+<p>Use humor about the <strong>shared situation</strong>, not the person's body, identity, language ability, or mistakes. Humor can fail; do not demand a laugh.</p>
+<h3>Compliments that fit</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Specific, low pressure</span><span class="words">“That's a great presentation slide. The diagram made it really clear.”</span></div><div class="turn"><span class="who">About a chosen item</span><span class="words"><span class="turn-highlight">“Nice tote bag. I like the design.”</span></span></div><div class="turn"><span class="who">Potentially intrusive at first contact</span><span class="words">comments about someone's body or attractiveness.</span></div><div class="turn"><span class="who">Too intimate</span><span class="words">“I feel like I know you better than anyone here” after one minute.</span></div></div>
+<p>A compliment is not a claim on someone's attention. If they say “Thanks,” that may be the entire exchange.</p>
+<h3>Personal questions: gradually, not automatically</h3>
+<p>Usually safer early: class, event, shared activity, local recommendations, projects, hobbies.</p>
+<p>Often needs more trust: money, relationship status, immigration history, medical issues, politics, religion, or personal trauma.</p>
+<p>Not every personal topic is forbidden. Its suitability depends on the person's choices, relationship, and situation.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p>You're beside someone after a good talk. Choose the safer compliment:</p>
+<p>A. “The way you explained that graph was really clear.”
+B. “You were really impressive up there.”</p>
+<p><strong>Better teaching example:</strong> A. Both can be positive, but A names the actual work and is less personal. B may be fine with the right relationship and tone.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Make one sincere, situation-related positive comment when warranted. No compliment is required otherwise.</p></div>
+</div></section>
+<section class="division" id="unit-iv-go-somewhere-or-end-well"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">04</div><div class="division-title">GO SOMEWHERE OR END WELL<span class="division-period">.</span></div>
+    <div class="division-deck">Know when to continue. Know when to leave.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Explore · Close · Reconnect</span><span>04 / 07</span></div>
+    </section>
+<section class="chapter" id="lesson-11-go-a-little-deeper-if-both-people-want-to"><div class="chapter-top"><span class="chapter-section">LESSON <strong>11</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Go a little deeper, if both people want to<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>Move from surface facts toward real interests while keeping an easy exit.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>Depth is an invitation, not a demand. Go one step at a time.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  GO ONE STEP AT A TIME</div><p>Deeper conversation is an invitation, never a requirement.</p></div>
+        <div class="chapter-content"><h3>The same subject at three depths</h3>
+<p><strong>Surface:</strong> “How long have you been playing piano?”</p>
+<p><strong>Personal but easy:</strong> “What got you into it?”</p>
+<p><strong>More personal:</strong> “What do you love most about playing?”</p>
+<p>The third question may be welcome after a warm exchange; it can sound too intense from a stranger who has barely said hello.</p>
+<h3 class="example-heading">Dialogue: campus volunteer event</h3>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Jae</span><span class="words">Have you volunteered here before?</span></div><div class="turn"><span class="who">Morgan</span><span class="words"><span class="turn-highlight">A couple of times. I started last year.</span></span></div><div class="turn"><span class="who">Jae</span><span class="words">Oh, nice. What made you sign up?</span></div><div class="turn"><span class="who">Morgan</span><span class="words">My friend brought me once. I ended up really liking it.</span></div><div class="turn"><span class="who">Jae</span><span class="words">Yeah? What's been the best part?</span></div><div class="turn"><span class="who">Morgan</span><span class="words">Honestly, just getting to know people outside work.</span></div><div class="turn"><span class="who">Jae</span><span class="words">I get that. It's easy to end up in the same routine.</span></div></div>
+<p>Jae does not ask for a life confession. Morgan chooses how much to share.</p>
+<h3>Leave a door open—no pressure</h3>
+<ul>
+<li>“There's another one next week, right? Maybe I'll see you there.”</li>
+<li>“I'm usually at the Thursday class. See you around.”</li>
+<li>“If you're interested, a few of us are getting coffee afterward.”</li>
+</ul>
+<p>Only suggest future contact when it fits the interaction and no one has indicated disinterest. An invitation must be easy to decline.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice</h3>
+<p>Your classmate says: “I started taking photos again.” Choose the next step:</p>
+<p>A. “What kind of photos do you like taking?”
+B. “Why did you stop in the first place?”</p>
+<p><strong>Safer first step:</strong> A. B may touch something personal and presumes the person wants to explain why they stopped. It may be fine much later.</p>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Talk to someone you've met before. Remember a detail from the last exchange and ask about it, if natural.</p></div>
+</div></section>
+<section class="chapter" id="lesson-12-finish-naturally-and-reconnect"><div class="chapter-top"><span class="chapter-section">LESSON <strong>12</strong></span><span class="chapter-small">ARTICO / SMALL TALK</span></div>
+        <h2 class="chapter-title">Finish naturally and reconnect<span class="gold-period">.</span></h2>
+        <div class="lesson-goal"><div class="goal-item"><span>YOU WILL LEARN</span><p>End a conversation clearly, kindly, and without reopening it by accident.</p></div><div class="goal-item principle"><span>ONE IDEA</span><p>A good exit gives both people permission to stop.</p></div></div><div class="margin-note"><div class="margin-note-label">↳  A GOOD ENDING COUNTS</div><p>A brief, graceful exit can leave a better impression than one more question.</p></div>
+        <div class="chapter-content"><h3>Three parts of a gentle close (use only what fits)</h3>
+<ol>
+<li><strong>Signal:</strong> “Well, I should get going.”</li>
+<li><strong>Warmth:</strong> “Good talking to you.”</li>
+<li><strong>End:</strong> “See you next week.” / “Enjoy the rest of the event.”</li>
+</ol>
+<p>Sometimes two parts are enough: “Anyway, I've got to run. See you!”</p>
+<h3>Closings in different settings</h3>
+<p><strong>After class</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Zoe</span><span class="words">Anyway, I should head out. See you Thursday?</span></div><div class="turn"><span class="who">Kai</span><span class="words">Yeah, see you.</span></div></div>
+<p><strong>At a party</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Zoe</span><span class="words">I'm gonna grab some water. It was nice meeting you.</span></div><div class="turn"><span class="who">Kai</span><span class="words">You too. Enjoy the party.</span></div></div>
+<p><strong>With someone who needs to work</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Zoe</span><span class="words">I should let you get back to it. Thanks for your help.</span></div><div class="turn"><span class="who">Kai</span><span class="words">No problem. Take care.</span></div></div>
+<p><strong>When you'd like to meet again</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Zoe</span><span class="words">This was fun. Are you going to the next meetup?</span></div><div class="turn"><span class="who">Kai</span><span class="words"><span class="turn-highlight">Yeah, probably.</span></span></div><div class="turn"><span class="who">Zoe</span><span class="words">Nice. Maybe I'll see you there. Have a good night.</span></div><div class="turn"><span class="who">Kai</span><span class="words">You too.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p>Notice: <em>maybe I'll see you there</em> does not impose a promise.</p></div></div>
+<h3>Remembering people</h3>
+<ul>
+<li>“Hey, how'd your exam go?” <em>(you discussed an upcoming exam)</em></li>
+<li>“You mentioned you were moving. How'd that go?”</li>
+<li>“Hey, good to see you again.”</li>
+</ul>
+<p>Only bring up details that are appropriate to remember and ask about. Avoid repeating sensitive facts in front of other people.</p>
+<h3 class="practice-heading"><span class="practice-marker">↗</span>Practice: remove the extra question</h3>
+<p><strong>You:</strong> “It was nice meeting you. I've got to head out.”</p>
+<p>Do <strong>not</strong> add: “Oh, and one more thing—tell me everything about your job.”</p>
+<div class="micro-task"><p><strong>Finish instead:</strong> “See you around.”</p></div>
+<div class="micro-task"><p><strong>Real-world mission:</strong> Finish one conversation yourself when an appropriate break comes. Say a natural closing line and actually leave.</p></div>
+</div></section>
+<section class="division" id="capstone-six-complete-real-life-conversations"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">05</div><div class="division-title">PUT IT TOGETHER<span class="division-period">.</span></div>
+    <div class="division-deck">Complete conversations, not isolated tricks.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Six ordinary situations · Six different outcomes</span><span>05 / 07</span></div>
+    </section>
+<section class="collection" id="capstone-six-complete-real-life-conversations-content"><div class="eyebrow">REAL SCENARIOS</div><h2>Six complete real-life conversations<span class="gold-period">.</span></h2><p>The goal here is not to memorize the dialogue. <strong>Listen to how each reply gives the next speaker something—or doesn't.</strong></p>
+<h3 class="case-heading">Case 1 — New classmate; mutual interest</h3>
+<p><em>Setting: ten minutes before a class. Both students are seated and waiting.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ella</span><span class="words">Hey, is anyone sitting here?</span></div><div class="turn"><span class="who">Tariq</span><span class="words"><span class="turn-highlight">No, go ahead.</span></span></div><div class="turn"><span class="who">Ella</span><span class="words">Thanks. Are you in this class every week?</span></div><div class="turn"><span class="who">Tariq</span><span class="words">Yeah, I just switched into it, though.</span></div><div class="turn"><span class="who">Ella</span><span class="words">Oh, same. I missed the first two sessions.</span></div><div class="turn"><span class="who">Tariq</span><span class="words">Really? So we're both catching up.</span></div><div class="turn"><span class="who">Ella</span><span class="words">Pretty much. Have you looked at the assignment yet?</span></div><div class="turn"><span class="who">Tariq</span><span class="words">A little. I still don't get the second question.</span></div><div class="turn"><span class="who">Ella</span><span class="words">Me neither. I thought I was the only one.</span></div><div class="turn"><span class="who">Tariq</span><span class="words">Want to compare notes after class?</span></div><div class="turn"><span class="who">Ella</span><span class="words">Yeah, that'd be great. I'm Ella, by the way.</span></div><div class="turn"><span class="who">Tariq</span><span class="words">Tariq. Nice to meet you.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> Shared situation → reciprocal details → a relevant reason to talk again. The invitation comes from both people's participation.</p></div></div>
+<h3 class="case-heading">Case 2 — Person gives little back; clean exit</h3>
+<p><em>Setting: casual meet-and-greet.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Avery</span><span class="words">Hey, have you been to this event before?</span></div><div class="turn"><span class="who">Blake</span><span class="words"><span class="turn-highlight">No.</span></span></div><div class="turn"><span class="who">Avery</span><span class="words">Same here. Thought I'd check it out.</span></div><div class="turn"><span class="who">Blake</span><span class="words">Yeah.</span></div><div class="turn"><span class="who">Avery</span><span class="words">Well, enjoy the evening.</span></div><div class="turn"><span class="who">Blake</span><span class="words">You too.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> Avery doesn't demand a longer reply, take it personally, or call Blake rude. The short conversation is finished.</p></div></div>
+<h3 class="case-heading">Case 3 — Shared joke; friendship potential</h3>
+<p><em>Setting: break after beginner salsa.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Mia</span><span class="words">I'm fairly sure I did that last move backward.</span></div><div class="turn"><span class="who">Leo</span><span class="words"><span class="turn-highlight">[laughs] Me too. Twice.</span></span></div><div class="turn"><span class="who">Mia</span><span class="words">Have you done any dancing before?</span></div><div class="turn"><span class="who">Leo</span><span class="words">Not really. You?</span></div><div class="turn"><span class="who">Mia</span><span class="words">Nope. I figured I'd try something new this month.</span></div><div class="turn"><span class="who">Leo</span><span class="words">Same. I almost didn't come.</span></div><div class="turn"><span class="who">Mia</span><span class="words">Glad you did. Otherwise I'd be the only one turning the wrong way.</span></div><div class="turn"><span class="who">Leo</span><span class="words">[laughs] Are you coming next week?</span></div><div class="turn"><span class="who">Mia</span><span class="words">Yeah. See you then.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> Humor grows from a shared moment. The future contact is natural because they will return to the same class.</p></div></div>
+<h3 class="case-heading">Case 4 — Professional exchange; not an interview</h3>
+<p><em>Setting: research-poster session.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ruth</span><span class="words">Hey, I liked your poster. Especially that diagram in the middle.</span></div><div class="turn"><span class="who">Sam</span><span class="words"><span class="turn-highlight">Thanks! It took me forever to get that right.</span></span></div><div class="turn"><span class="who">Ruth</span><span class="words">[laughs] I can imagine. How did you decide on that layout?</span></div><div class="turn"><span class="who">Sam</span><span class="words">I kept moving the results around until the story made sense.</span></div><div class="turn"><span class="who">Ruth</span><span class="words">It worked. I'm doing something similar with my own project.</span></div><div class="turn"><span class="who">Sam</span><span class="words">Oh, what are you working on?</span></div><div class="turn"><span class="who">Ruth</span><span class="words">Protein simulations, mostly. Still figuring out how to explain the results without burying people in details.</span></div><div class="turn"><span class="who">Sam</span><span class="words">That's the hardest part, honestly.</span></div><div class="turn"><span class="who">Ruth</span><span class="words">[laughs] Good to know it's not just me. I'll let you get back to the poster. Thanks for walking me through it.</span></div><div class="turn"><span class="who">Sam</span><span class="words">Of course. Nice talking to you.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> A precise compliment opens the interaction. Ruth contributes a detail but never hijacks Sam's presentation.</p></div></div>
+<h3 class="case-heading">Case 5 — Misheard word; easy repair</h3>
+<p><em>Setting: community music workshop.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Nora</span><span class="words">Have you been to one of these jam sessions before?</span></div><div class="turn"><span class="who">Dev</span><span class="words"><span class="turn-highlight">Just once, back in June.</span></span></div><div class="turn"><span class="who">Nora</span><span class="words">Sorry, did you say June?</span></div><div class="turn"><span class="who">Dev</span><span class="words">Yeah, June. It was a much smaller group then.</span></div><div class="turn"><span class="who">Nora</span><span class="words">Ah, got it. This one's pretty busy.</span></div><div class="turn"><span class="who">Dev</span><span class="words">It is. Do you play?</span></div><div class="turn"><span class="who">Nora</span><span class="words">A little guitar. Mostly badly, for now.</span></div><div class="turn"><span class="who">Dev</span><span class="words">[laughs] That's how we all start.</span></div><div class="turn"><span class="who">Nora</span><span class="words">Well, good luck in there.</span></div><div class="turn"><span class="who">Dev</span><span class="words">You too.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> Asking for clarification doesn't break the social connection.</p></div></div>
+<h3 class="case-heading">Case 6 — Nice conversation; low-pressure follow-up</h3>
+<p><em>Setting: hobby club social, before both leave.</em></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Ivy</span><span class="words">So how long have you been coming here?</span></div><div class="turn"><span class="who">Theo</span><span class="words"><span class="turn-highlight">A few months. A friend dragged me along and I ended up liking it.</span></span></div><div class="turn"><span class="who">Ivy</span><span class="words">[laughs] That's a good review. I've only just joined.</span></div><div class="turn"><span class="who">Theo</span><span class="words">Oh, welcome. What made you try it?</span></div><div class="turn"><span class="who">Ivy</span><span class="words">I wanted to meet people outside my usual routine.</span></div><div class="turn"><span class="who">Theo</span><span class="words">Yeah, I get that. It's been good for me, honestly.</span></div><div class="turn"><span class="who">Ivy</span><span class="words">I'm glad I came. Are you going to the next meetup?</span></div><div class="turn"><span class="who">Theo</span><span class="words">I think so, yeah.</span></div><div class="turn"><span class="who">Ivy</span><span class="words">Nice. Maybe I'll see you there.</span></div><div class="turn"><span class="who">Theo</span><span class="words">Yeah, see you then.</span></div></div>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Notice:</strong> Both people give something. No one pressures the other for contact details.</p></div></div>
+</section>
+<section class="division" id="practice-studio"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">06</div><div class="division-title">PRACTICE IN CONTEXT<span class="division-period">.</span></div>
+    <div class="division-deck">Less memorizing. More responding.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Notice · Choose · Speak · Reflect</span><span>06 / 07</span></div>
+    </section>
+<section class="collection" id="practice-studio-content"><div class="eyebrow">APPLY THE SKILL</div><h2>Practice studio<span class="gold-period">.</span></h2><h3 class="case-heading">Studio A — Notice (choose whether to speak)</h3>
+<ol>
+<li>You're on a train. A passenger has headphones in and is reading. <strong>Don't interrupt.</strong></li>
+<li>You're early to a student club meeting, and another participant is checking the agenda. <strong>A short shared-context remark is reasonable.</strong></li>
+<li>You're at checkout. A worker is helping ten people in line. <strong>Keep any comment brief; don't delay them.</strong></li>
+<li>You compliment someone's jacket. They say “Thanks” and turn back to their conversation. <strong>Stop.</strong></li>
+<li>A person at a meetup asks what brought you there. <strong>Answer with a real detail and, if you want, ask a relevant question back.</strong></li>
+</ol>
+<h3 class="case-heading">Studio B — Make the next turn</h3>
+<p>Speak a response to each statement. Respond to the actual detail.</p>
+<ol>
+<li>“I've just moved into the area.”</li>
+<li>“I didn't sleep much last night.”</li>
+<li>“I joined the photography club last month.”</li>
+<li>“I'm trying to get into cooking.”</li>
+<li>“I've got a presentation tomorrow.”</li>
+<li>“I might skip next week's class.”</li>
+<li>“This is my first time at this meetup.”</li>
+<li>“I spend most weekends hiking.”</li>
+</ol>
+<p><strong>Possible replies (not exact answers):</strong></p>
+<ol>
+<li>“Oh, welcome! How are you finding it?”</li>
+<li>“Oh no. Everything okay?” <em>(or simply, “That's rough.”)</em></li>
+<li>“Oh, nice. How's it been?”</li>
+<li>“Same here. What's the first thing you're planning to make?”</li>
+<li>“Good luck! What's it on?”</li>
+<li>“Ah, got something else on?” <em>(only if appropriate)</em></li>
+<li>“Same here. How'd you hear about it?”</li>
+<li>“Oh, nice. Any trails you'd recommend?”</li>
+</ol>
+<h3 class="case-heading">Studio C — Choose one of two natural paths</h3>
+<p><strong>Prompt:</strong> You're at a gallery opening. You ask, “Have you been here before?”</p>
+<p><strong>Reply 1:</strong> “Yeah, quite a few times. I love the work they show here.”</p>
+<p><strong>A good next turn:</strong> “Oh, nice. Have you got a favorite piece tonight?”</p>
+<p><strong>Reply 2:</strong> “Yeah. Sorry, I need to find my partner.”</p>
+<p><strong>A good next turn:</strong> “Oh, of course. Have a good evening.”</p>
+<div class="annotation"><span class="annotation-pin">↳</span><div class="annotation-copy"><p><strong>Key:</strong> Different answers call for different behavior. There is no magical follow-up that should be used every time.</p></div></div>
+<h3 class="case-heading">Studio D — Diagnose the mistake</h3>
+<p><strong>1. Overly personal</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Problem</span><span class="words"><span class="turn-highlight">private question without context or relationship.</span></span></div><div class="turn"><span class="who">Repair</span><span class="words">“Hi, I'm Alex. Have you been to this event before?”</span></div></div>
+<p><strong>2. Ignoring an answer</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Problem</span><span class="words"><span class="turn-highlight">misses a detail the speaker offered.</span></span></div><div class="turn"><span class="who">Repair</span><span class="words">“Oh, nice. How long have you been playing?”</span></div></div>
+<p><strong>3. Boomerasking</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Problem</span><span class="words"><span class="turn-highlight">the question becomes a pretext to discuss yourself.</span></span></div><div class="turn"><span class="who">Repair</span><span class="words">“Oh, where'd you go?” <em>(You can share your own weekend naturally later.)</em></span></div></div>
+<p><strong>4. Overstaying</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Problem</span><span class="words"><span class="turn-highlight">ignores a clear exit signal.</span></span></div><div class="turn"><span class="who">Repair</span><span class="words">“Of course. Good talking to you.”</span></div></div>
+<p><strong>5. Fake shared interest</strong></p>
+<div class="dialogue"><div class="conversation-bar"><span class="conversation-dot"></span>EXCHANGE</div><div class="turn"><span class="who">Problem</span><span class="words"><span class="turn-highlight">invents a connection.</span></span></div><div class="turn"><span class="who">Repair</span><span class="words">“I don't know much about jazz. What got you into it?”</span></div></div>
+<h3 class="case-heading">Studio E — Four full role-play missions</h3>
+<p><strong>Mission 1 — First contact.</strong> You arrive at an orientation event. Choose one person who looks available. Say one natural opening tied to the event. Your partner may answer warmly or briefly. Adapt and close.</p>
+<p><strong>Mission 2 — The second turn.</strong> Your partner volunteers an unexpected detail. React to that detail. Ask a relevant question or add something genuinely related.</p>
+<p><strong>Mission 3 — No long conversation.</strong> Your partner indicates they need to leave. End immediately and kindly. You pass if you do not pressure them.</p>
+<p><strong>Mission 4 — Reconnect.</strong> You meet someone you've spoken with once. Mention one harmless remembered detail, ask how things went, and end or continue according to their response.</p>
+<div class="micro-task"><p><strong>Recording option:</strong> Record only yourself, or another person with explicit permission. Speak for 30–90 seconds. Do not record strangers without consent.</p></div>
+<h3>Self-check after each role play</h3>
+<div class="matrix"><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Was this a suitable situation?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Did my first sentence fit the context?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Did my next reply connect to their answer?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Did I give them space to contribute?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Did I accept their signals or explicit decision?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div><div class="matrix-row"><div class="matrix-cell"><span class="matrix-label">Question</span><div>Could I end naturally?</div></div> <div class="matrix-cell"><span class="matrix-label">Yes / Not yet</span><div></div></div></div></div>
+<p>Do <strong>not</strong> grade yourself on whether the other person liked you. You don't know that from a single interaction.</p>
+</section>
+<section class="division" id="the-small-talk-phrase-library"><div class="division-top">ARTICO / SMALL TALK <span>FIELD GUIDE</span></div>
+    <div class="division-number">07</div><div class="division-title">THE PHRASE LIBRARY<span class="division-period">.</span></div>
+    <div class="division-deck">Useful words for particular moments.</div>
+    <div class="division-visual"><svg width="100%" height="100%" viewBox="0 0 620 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs><linearGradient id="wave" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8FD3FC"/><stop offset="1" stop-color="#E4B8E5"/></linearGradient></defs>
+    <circle cx="310" cy="175" r="131" fill="none" stroke="#8099B3" stroke-opacity=".2" stroke-width="1"/>
+    <circle cx="310" cy="175" r="103" fill="none" stroke="#8099B3" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M 80,282 C 150,40 235,240 320,128 S 461,55 560,195" fill="none" stroke="#77BAFF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 74,109 C 150,273 233,82 325,216 S 472,288 562,85" fill="none" stroke="#F8D878" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="180" cy="125" r="8" fill="#DFF0FF"/><circle cx="365" cy="102" r="9" fill="#DFF0FF"/>
+    <circle cx="217" cy="198" r="7" fill="#FFE8A3"/><circle cx="440" cy="246" r="9" fill="#FFE8A3"/>
+    <circle cx="80" cy="282" r="6" fill="#77BAFF"/><circle cx="74" cy="109" r="6" fill="#F8D878"/>
+    <circle cx="560" cy="195" r="6" fill="#77BAFF"/><circle cx="562" cy="85" r="6" fill="#F8D878"/>
+    </svg></div>
+    <div class="division-bottom"><span>Choose by purpose, not by cleverness</span><span>07 / 07</span></div>
+    </section>
+<section class="collection" id="the-small-talk-phrase-library-content"><div class="eyebrow">REFERENCE / USE WHEN IT FITS</div><h2>The small-talk phrase library<span class="gold-period">.</span></h2><p>These are <strong>choices</strong>, not a checklist. A sentence that sounds natural at a party may sound strange in a silent train car. Favor the words you'd actually use.</p>
+<div class="lexicon-list"><h3 class="lexicon-group">Greeting</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Hey.” / “Hi.”</div><div class="lexicon-use">Ordinary informal contact.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Morning.”</div><div class="lexicon-use">Passing an acquaintance or colleague earlier in the day.</div></div><h3 class="lexicon-group">Familiar person</h3><div class="lexicon-entry"><div class="lexicon-phrase">“How've you been?”</div><div class="lexicon-use">You already know them and haven't spoken recently.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“How's your week going?”</div><div class="lexicon-use">Classmates or colleagues.</div></div><h3 class="lexicon-group">Introduce</h3><div class="lexicon-entry"><div class="lexicon-phrase">“I don't think we've met. I'm ___.”</div><div class="lexicon-use">An event where introductions are normal.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“I'm ___, by the way.”</div><div class="lexicon-use">You've already exchanged a few lines.</div></div><h3 class="lexicon-group">Shared setting</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Is this your first time here?”</div><div class="lexicon-use">An event or organized activity.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Have you been to one of these before?”</div><div class="lexicon-use">A recurring event or class.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Are you in the ___ class too?”</div><div class="lexicon-use">You have good reason to think so.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“That was a really good talk.”</div><div class="lexicon-use">You both heard it.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“That was harder than I expected.”</div><div class="lexicon-use">You both tried an activity.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“This line is moving pretty slowly.”</div><div class="lexicon-use">A shared wait; light remark is welcome.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Is anyone sitting here?”</div><div class="lexicon-use">Practical seating question; not inherently an invitation.</div></div><h3 class="lexicon-group">Party</h3><div class="lexicon-entry"><div class="lexicon-phrase">“How do you know ___?”</div><div class="lexicon-use">You share a host or friend.</div></div><h3 class="lexicon-group">Hobby</h3><div class="lexicon-entry"><div class="lexicon-phrase">“How long have you been doing this?”</div><div class="lexicon-use">They are doing or describing an activity.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“How'd you get into that?”</div><div class="lexicon-use">They've mentioned their hobby.</div></div><h3 class="lexicon-group">Experience</h3><div class="lexicon-entry"><div class="lexicon-phrase">“How was it?”</div><div class="lexicon-use">They reported something they did.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“How did it go?”</div><div class="lexicon-use">They mentioned a completed event.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“What was that like?”</div><div class="lexicon-use">They mentioned a noteworthy experience; not too personal.</div></div><h3 class="lexicon-group">Clarify</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Sorry, what was that?”</div><div class="lexicon-use">You didn't hear them.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Sorry, which part did you mean?”</div><div class="lexicon-use">You need clarification.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Wait, do you mean ___?”</div><div class="lexicon-use">You want to check your understanding.</div></div><h3 class="lexicon-group">Repair</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Sorry, I meant ___.”</div><div class="lexicon-use">You said the wrong thing.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Sorry, go ahead.”</div><div class="lexicon-use">You interrupted.</div></div><h3 class="lexicon-group">Acknowledge</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Oh, nice.”</div><div class="lexicon-use">Something good or pleasant; not tragic news.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“That makes sense.”</div><div class="lexicon-use">You understand their reasoning.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Ah, got it.”</div><div class="lexicon-use">You understood their explanation.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“That's rough.”</div><div class="lexicon-use">They mentioned a minor difficulty, in an informal setting.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Sorry to hear that.”</div><div class="lexicon-use">They shared something difficult.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“No way!”</div><div class="lexicon-use">Surprise with close-to-informal tone; can be too strong in formal settings.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Really? How was that?”</div><div class="lexicon-use">Genuine surprise and relevant follow-up.</div></div><h3 class="lexicon-group">Same experience</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Same here.”</div><div class="lexicon-use">You genuinely share their experience.</div></div><h3 class="lexicon-group">Related experience</h3><div class="lexicon-entry"><div class="lexicon-phrase">“I've been wanting to try that.”</div><div class="lexicon-use">That's true.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“I tried something similar once.”</div><div class="lexicon-use">You have an actual related experience.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“I've never done that. What's it like?”</div><div class="lexicon-use">You're curious and unfamiliar.</div></div><h3 class="lexicon-group">Follow-up</h3><div class="lexicon-entry"><div class="lexicon-phrase">“What got you interested in it?”</div><div class="lexicon-use">They chose to share an interest.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Do you do that often?”</div><div class="lexicon-use">Their activity is recurring and it's okay to ask.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Which part did you like?”</div><div class="lexicon-use">They mentioned enjoying something.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Any recommendations?”</div><div class="lexicon-use">You're discussing a place, activity, or media.</div></div><h3 class="lexicon-group">Topic bridge</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Speaking of ___, ...”</div><div class="lexicon-use">There's a real connection between topics.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Oh, that reminds me…”</div><div class="lexicon-use">You have a short related story.</div></div><h3 class="lexicon-group">Topic shift</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Oh, by the way, ...”</div><div class="lexicon-use">A genuine new topic, not a way to prevent a goodbye.</div></div><h3 class="lexicon-group">Reconnect</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Hey, good to see you again.”</div><div class="lexicon-use">You've met before.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“How'd your ___ go?”</div><div class="lexicon-use">They earlier mentioned an upcoming event.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“You mentioned ___. How's that going?”</div><div class="lexicon-use">Appropriate non-sensitive detail they shared.</div></div><h3 class="lexicon-group">Invite softly</h3><div class="lexicon-entry"><div class="lexicon-phrase">“A few of us are getting coffee after this, if you'd like to join.”</div><div class="lexicon-use">Open social activity with no pressure.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Are you coming next week?”</div><div class="lexicon-use">A recurring group or meeting; you have some rapport.</div></div><h3 class="lexicon-group">Keep casual</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Maybe I'll see you there.”</div><div class="lexicon-use">Shared future event; no promise implied.</div></div><h3 class="lexicon-group">Exit</h3><div class="lexicon-entry"><div class="lexicon-phrase">“Anyway, I should get going.”</div><div class="lexicon-use">Natural conversation break.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“I've got to run. See you.”</div><div class="lexicon-use">Informal, you need to leave.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“I'll let you get back to it.”</div><div class="lexicon-use">They're working or were interrupted.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Good talking to you.”</div><div class="lexicon-use">Warm but modest ending.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“It was nice meeting you.”</div><div class="lexicon-use">You're meeting for the first time.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Enjoy the rest of the event.”</div><div class="lexicon-use">Shared event, ready to part.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“Have a good one.”</div><div class="lexicon-use">Casual goodbye.</div></div><h3 class="lexicon-group">Refusal</h3><div class="lexicon-entry"><div class="lexicon-phrase">“No worries.”</div><div class="lexicon-use">Accepting a decline or apology.</div></div><div class="lexicon-entry"><div class="lexicon-phrase">“All good. Take care.”</div><div class="lexicon-use">Respectful exit.</div></div></div>
+<h3>Phrases that need care</h3>
+<div class="lexicon-list"><h3 class="lexicon-group">“What brings you here?”</h3><div class="lexicon-entry"><div>“What brings you here?”</div><div>Natural in a networking or social event; can sound oddly formal elsewhere.</div></div><h3 class="lexicon-group">“Tell me about yourself.”</h3><div class="lexicon-entry"><div>“Tell me about yourself.”</div><div>Often resembles an interview; not a universal casual opening.</div></div><h3 class="lexicon-group">“What do you do?”</h3><div class="lexicon-entry"><div>“What do you do?”</div><div>Common in some settings, but can overemphasize work or status; not a required first question.</div></div><h3 class="lexicon-group">“Where are you really from?”</h3><div class="lexicon-entry"><div>“Where are you really from?”</div><div>Can imply someone doesn't belong; avoid.</div></div><h3 class="lexicon-group">“You look tired.”</h3><div class="lexicon-entry"><div>“You look tired.”</div><div>Often perceived as a negative comment about appearance.</div></div><h3 class="lexicon-group">“Smile!”</h3><div class="lexicon-entry"><div>“Smile!”</div><div>Instructs a stranger to perform for you. Avoid.</div></div><h3 class="lexicon-group">“Why are you alone?”</h3><div class="lexicon-entry"><div>“Why are you alone?”</div><div>Makes assumptions and can feel invasive.</div></div><h3 class="lexicon-group">“We should hang out sometime.”</h3><div class="lexicon-entry"><div>“We should hang out sometime.”</div><div>Can be okay with real rapport, but vague and easily misunderstood as a definite plan.</div></div><h3 class="lexicon-group">“Let&#x27;s definitely keep in touch!”</h3><div class="lexicon-entry"><div>“Let's definitely keep in touch!”</div><div>Sounds excessive if neither person means it.</div></div></div>
+</section>
+<section class="closing" id="final-skill-check"><div class="eyebrow">BEFORE YOU GO</div><h2>Final skill check<span class="gold-period">.</span></h2><p><strong>You have finished the course when you can do the following without reading a script:</strong></p>
+<ol>
+<li>Name a setting where a brief conversation is appropriate—and one where it isn't.</li>
+<li>Give two natural openings about a shared situation.</li>
+<li>Make your next sentence connected to the person's last answer.</li>
+<li>Ask a relevant follow-up without interrogating.</li>
+<li>Add a brief honest detail about yourself.</li>
+<li>Recognize a clear refusal and stop.</li>
+<li>Repair a misunderstanding without pretending you heard everything.</li>
+<li>End a conversation with a warm, ordinary line.</li>
+<li>Suggest a future meeting only when it fits, leaving an easy refusal.</li>
+<li>Handle the possibility of a short, ordinary, incomplete interaction without judging yourself or the other person.</li>
+</ol>
+<p><strong>Final thought:</strong> You are not trying to become a person who always knows what to say. You are learning to pay attention, say something appropriate, and let another person be free to meet you halfway.</p>
+
+<p><strong>Instructor / implementation note:</strong> Learner lessons deliberately omit research citations and lengthy theory. The separate research file records evidence, scope, limitations, pedagogical choices, and implementation requirements. No native-speaker recordings, video timecodes, or app deployment are represented as complete in this edition.</p><div class="closing-statement">You don't need a perfect line.<br/><strong>You need to notice the person.</strong></div></section>
+<footer class="reader-footer">Artico · Small Talk · A field guide to everyday connection<br/><a href="./#/application/smalltalk">Return to the course and speaking practice</a></footer></body></html>

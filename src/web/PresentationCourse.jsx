@@ -134,6 +134,17 @@ function QuestionLab(){
  </section>
 }
 
+
+function PhraseReference(){
+ const [filter,setFilter]=useState('All')
+ const functions=[...new Set(phrases.map(([name])=>name))]
+ const filtered=filter==='All'?phrases:phrases.filter(([name])=>name===filter)
+ return <section className="ps-phrases" id="spoken-language"><span className="ps-kicker">WORDS YOU CAN ACTUALLY SAY</span><h2>A small phrase reference.</h2><p>Use the wording for its purpose and context, not as a script to memorize. Select a communication job to see an example and a caution.</p>
+ <label className="ps-select-label">Communication job<select value={filter} onChange={e=>setFilter(e.target.value)}><option value="All">All useful expressions</option>{functions.map(name=><option key={name} value={name}>{name}</option>)}</select></label>
+ <div className="ps-phrase-list">{filtered.map(([name,expression,context,note])=><div key={name}><small>{name} · {context}</small><blockquote>“{expression}”</blockquote><p>{note}</p></div>)}</div>
+ </section>
+}
+
 function ResourceLinks() {
  return <section className="ps-resources" id="sources"><span className="ps-kicker">RESEARCH & CREDITS</span><h2>Where the principles come from</h2>
    <p>Artico's explanations, examples and exercises are original. Source materials are linked rather than reproduced. These are inputs to instructional judgment, not universal speaking laws.</p>
@@ -173,6 +184,7 @@ function Overview({learning,update,caseId,setCaseId}) {
     </section>
     <section className="ps-case-teaser"><span className="ps-kicker">SAME SKILL · DIFFERENT SITUATIONS</span><h2>What changes in a different room?</h2><p>Read complete examples, not a list of presentation formulas. Every case includes audience, goal, opening, structure, evidence, a limitation, Q&A, and an improved version.</p><a href={root+'/cases'} className="ps-secondary">Explore six worked presentations →</a></section>
     <section className="ps-blueprint-teaser"><span className="ps-kicker">YOUR CUMULATIVE PROJECT</span><h2>One presentation, built as you learn.</h2><CaseSwitcher caseId={caseId} onChange={setCaseId}/><p>The blueprint keeps decisions and practice notes on this device. Switch contexts to keep separate drafts. No account or audio upload is required.</p><a href={root+'/blueprint'} className="ps-primary">Edit presentation blueprint →</a></section>
+    <PhraseReference/>
     <ResourceLinks/>
   </div>
 }

@@ -9,6 +9,7 @@ test('Chapter 20 has four vocabulary-first sections', () => {
   assert.deepEqual(sections.map((section) => section.id), [
     '20-study-0', '20-study-1', '20-study-2', '20-study-3',
   ])
+  assert.deepEqual(sections.map((section) => section.groups.reduce((count, group) => count + group.items.length, 0)), [23, 33, 14, 16])
 })
 
 test('every vocabulary card has a unique ID and complete English/Japanese support', () => {

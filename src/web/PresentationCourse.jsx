@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   presentationLessons as lessons, presentationCases as cases, presentationSituations as situations,
   presentationPhrases as phrases, presentationSources as sources, presentationParts as parts,
@@ -141,12 +141,43 @@ function PhraseReference(){
 
 function HalfLifeLab({learning,update}) {
  const durations=[60,30,15,8]
+ const [round,setRound]=useState(0)
+ const [seconds,setSeconds]=useState(60)
+ const [running,setRunning]=useState(false)
+ const [complete,setComplete]=useState(false)
+ useEffect(()=>{
+  if(!running)return
+  const timer=window.setInterval(()=>setSeconds(value=>Math.max(0,value-1)),1000)
+  return ()=>window.clearInterval(timer)
+ },[running])
+ useEffect(()=>{
+  if(!running||seconds!==0)return
+  if(round<durations.length-1){
+   setRound(round+1)
+   setSeconds(durations[round+1])
+  }else{
+   setRunning(false)
+   setComplete(true)
+  }
+ },[running,seconds,round])
+ const reset=()=>{setRunning(false);setRound(0);setSeconds(60);setComplete(false)}
+ const format=value=>String(Math.floor(value/60)).padStart(2,'0')+':'+String(value%60).padStart(2,'0')
  return <section className="ps-half-life">
   <span className="ps-kicker">MESSAGE DISCOVERY · 3-MINUTE EXERCISE</span>
   <h3>Half-Life Your Message</h3>
-  <p>Speak about the same idea for 60, 30, 15 and 8 seconds. Move quickly between rounds; do not simply speak faster. The purpose is to discover the central idea. Afterwards, restore any qualification needed to keep it accurate.</p>
-  <div className="ps-half-life-grid">{durations.map(duration=><SavedText key={duration} learning={learning} update={update} responseKey={'application-presentations-half-life-'+duration} label={duration+' seconds'} rows={3} placeholder="Write or transcribe what you said in this round…"/>)}</div>
-  <div className="ps-annotation"><strong>Debrief:</strong> What survived each round? What disappeared? Does the shortest version remain true for this audience and goal? If not, use a longer version or repeat the exercise with a clearer starting point.</div>
+  <p>Choose one idea. Speak spontaneously for 60 seconds, then repeat the same idea in 30, 15 and 8 seconds. The timer moves directly between rounds. Do not stop to edit and do not simply speak faster. The point is to discover what you most want to say.</p>
+  <div className="ps-half-life-timer">
+   <div><span className="ps-kicker">ROUND {round+1} OF 4 · {durations[round]} SECONDS</span><strong aria-label={seconds+' seconds remaining'}>{format(seconds)}</strong><div className="ps-half-life-track"><i style={{width:((durations[round]-seconds)/durations[round]*100)+'%'}}/></div></div>
+   <div className="ps-half-life-controls">
+    {!running&&!complete&&<button type="button" className="ps-primary" onClick={()=>setRunning(true)}>{round===0?'Start 60-second round':'Resume '+durations[round]+'-second round'}</button>}
+    {running&&<button type="button" className="ps-secondary" onClick={()=>setRunning(false)}>Pause</button>}
+    {complete&&<span className="ps-half-life-complete">All four rounds complete</span>}
+    <button type="button" className="ps-secondary" onClick={reset}>Reset</button>
+   </div>
+  </div>
+  <div className="ps-annotation"><strong>Now debrief:</strong> What survived each round? What disappeared? Which version is most useful for this audience and goal? Restore any qualification needed to keep the message accurate. The shortest version is not automatically the best final version.</div>
+  <div className="ps-half-life-grid">{durations.map(duration=><SavedText key={duration} learning={learning} update={update} responseKey={'application-presentations-half-life-'+duration} label={duration+'-second version'} rows={3} placeholder="After the exercise, jot down or transcribe what you said…"/>)}</div>
+  <p className="ps-small">The source article recommends a quick, spontaneous sequence, then reflection and optional recording. Artico does not record your voice. You can use a phone or computer recorder if you want to review the actual delivery.</p>
  </section>
 }
 function FeedbackRubric(){

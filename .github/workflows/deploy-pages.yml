@@ -391,12 +391,18 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           from PIL import Image
-          for name in ["ch08-01-name-what-you-appreciate","ch08-02-respond-to-thanks","ch08-03-gifts-and-compliments","ch08-04-same-words-different-intention"]:
-              path = Path('dist/assets/course') / (name + '.png')
+          expected = {
+              'ch08-01-practical-favor-ai.png': (1774, 887),
+              'ch08-02-responding-to-thanks-ai.png': (1792, 877),
+              'ch08-03-gift-appreciation-ai.png': (1774, 887),
+              'ch08-04-different-intention-ai.png': (1774, 887),
+          }
+          for name, size in expected.items():
+              path = Path('dist/assets/course') / name
               assert path.is_file() and path.stat().st_size > 20000, path
               with Image.open(path) as img:
                   assert img.format == 'PNG' and img.mode == 'RGBA', path
-                  assert img.size == (1800, 900), (path, img.size)
+                  assert img.size == size, (path, img.size)
                   assert img.getextrema()[3][0] == 0, path
                   assert img.getextrema()[3][1] == 255, path
           print('Verified 4 transparent Chapter 08 PNG assets in Pages build')

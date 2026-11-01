@@ -1,0 +1,86 @@
+/* One section-tint family for study surfaces across all Social Fluency layouts.
+   Notes retain their yellow treatment; active controls keep their own states. */
+.ip-page :is(.ar-page, .ar-shared-study) :is(.ar-section, .ip-section, .ar-f14-board) {
+  --ar-study-surface: color-mix(in srgb, var(--ar-section-top, #edf3fe) 66%, white);
+  --ar-study-raised: color-mix(in srgb, var(--ar-section-top, #edf3fe) 38%, white);
+  --ar-study-line: color-mix(in srgb, var(--ar-section-accent, #5c7fbe) 17%, transparent);
+  --study-paper: var(--ar-study-surface);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(
+  .ar-card, .ar-unified-phrase-board, .ar-reference-shelf, .ar-study-definitions,
+  .ar-study-table, .ar-study-document, .ar-study-example, .rc-example,
+  .rc-table, .rc-sample-conversation, .ar-ch02-table-scroll, .ip-scene, .ip-word, .ip-phrase,
+  .ar-c03-card, .ar-c03-dialogue-panel, .ar-c03-flow, .ar-phrase-example-lines
+) {
+  background: var(--ar-study-surface);
+  border-color: var(--ar-study-line);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(
+  .ar-unified-phrase-pill, .ar-reference-choice:not([aria-pressed="true"]), .ar-dialogue-bubble,
+  .ar-phrase-example-bubble, .ar-phrase-bubble, .ar-c03-chat-bubble,
+  .ar-c03-question-bubble, .ar-c03-response-bubble,
+  .ar-study-expressions li, .ar-ch02-table-wrap, .ar-ch02-table,
+  .ar-flow-reply, .ar-study-content .ip-turn .ip-phrase
+) {
+  background: var(--ar-study-raised);
+  border-color: var(--ar-study-line);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.ar-speech:not(.ar-selected), .ar-reference-choice:not([aria-pressed="true"])) {
+  background: var(--ar-study-raised);
+  --ar-tail-bg: var(--ar-study-raised);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) .ar-flow-choice.ar-on {
+  background: var(--ar-study-raised);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.ar-line.ar-right, .ar-phrase-example-row.is-outgoing, .ar-c03-chat-outgoing, .ip-turn.is-outgoing) :is(.ar-dialogue-bubble, .ar-phrase-example-bubble, .ar-c03-chat-bubble, .ip-phrase) {
+  background: color-mix(in srgb, var(--ar-section-top) 82%, white);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.rc-table, .ar-ch02-table, .ar-study-table) :is(table, tbody, tr, td, th) {
+  background: transparent;
+  border-color: var(--ar-study-line);
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.rc-table, .ar-ch02-table, .ar-study-table) thead {
+  background: color-mix(in srgb, var(--ar-section-top) 90%, white);
+}
+.ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody th {
+  color: #33445f;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody td {
+  color: #7a8595;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.ar-unified-phrase-stage, .ar-c03-exchange, .ar-illustrated-scene, .ar-reference-art) {
+  background: transparent;
+}
+.ip-page .ar-shared-study .ar-ch08-study .ar-unified-phrase-stage {
+  height: clamp(210px, 28vw, 275px);
+  background: transparent;
+}
+/* The family atlas keeps its existing neutral parent-card color. */
+.ip-page .ar-shared-study .ar-f14-board {
+  --ar-section-top: #f5f6f7;
+  --ar-section-accent: #8b97a1;
+}
+.ip-page .ar-shared-study :is(.ar-f14-step-panel, .ar-f14-chip, .ar-f14-age-card) { background: var(--ar-study-surface); }
+@media (max-width: 600px) {
+  .ip-page .ar-shared-study .ar-ch08-study .ar-unified-phrase-stage { height: 185px; }
+  .ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody th { font-size: 13px; }
+  .ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody td { font-size: 11.5px; }
+}
+/* Humor uses a separate renderer with the same four parent-section tints. */
+.hm-page .hm-study .hm-section {
+  --ar-study-surface: color-mix(in srgb, var(--hm-section-top) 66%, white);
+  --ar-study-raised: color-mix(in srgb, var(--hm-section-top) 38%, white);
+}
+.hm-page .hm-study .hm-section :is(.hm-scene, .hm-move, .hm-chat-card, .hm-meme-card, .hm-safety article) {
+  background: var(--ar-study-surface);
+}
+.hm-page .hm-study .hm-section :is(.hm-turn > p, .hm-chat-line p, .hm-expressions > div) {
+  background: var(--ar-study-raised);
+}
+.hm-page .hm-study .hm-section .hm-chat-right p {
+  background: color-mix(in srgb, var(--hm-section-top) 82%, white);
+}

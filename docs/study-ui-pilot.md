@@ -1,6 +1,6 @@
-# Chapter 06 study UI pilot
+# Social Fluency study UI notes
 
-Status: Chapter 06 is the lesson-layout pilot. Compact note sizing applies across all Social Fluency chapters, including the separate Humor chapter, following Kavi's review. The other presentation decisions remain candidates for individual chapter review.
+Status: Chapters 06 and 08 supply the current chapter-specific examples. Compact notes and section-tinted inner surfaces apply across Social Fluency, including the separate Humor chapter, following Kavi's review. Continue reviewing each chapter's content and illustrations individually.
 
 ## Reading hierarchy
 
@@ -21,7 +21,7 @@ Primary expressions retain their source wording. Dimness comes from explicit tex
 
 ## Surfaces and illustrations
 
-Each section keeps its existing blue, green, lavender, or warm-paper tint. The inner illustration board and tables use a mix of 66% section tint and 34% white. Phrase pills use 38% section tint and 62% white. Borders use a 17% accent mix. This makes the inner surface slightly brighter without introducing a separate white panel.
+Each section keeps its existing blue, green, lavender, or warm-paper tint. Inner cards and tables use a mix of 66% section tint and 34% white. Phrase pills and conversation bubbles use 38% section tint and 62% white. Borders use a 17% accent mix. This makes the inner surface slightly brighter without introducing a separate white panel. `social-study-surfaces.css` applies this family to Chapters 01–03, illustrated phrase chapters, later shared lessons, and Humor. The purpose-built family atlas derives its inner surface from its existing neutral parent color. Selected phrase controls keep a visible selected state.
 
 Chapter 06's four existing transparent illustrations fit their topics and are retained. Images use `object-fit: contain`, a transparent stage, and a bounded height: 190–255px on larger screens, 175px on phones. They must remain uncropped and undistorted. Image generation is reserved for a specific missing or misleading teaching illustration, after reviewing each chapter's content.
 
@@ -55,7 +55,24 @@ The Japanese source splits the reply examples into three lists, each followed by
 
 The remaining interpretive paragraphs following conversations receive the same quiet note treatment. In the first section, the reply pairs move out of the illustration's phrase pills and into their comparison table, avoiding long repeated pills. Phrase IDs, conversation turn IDs, and deep links remain available.
 
-The language selector and two requested shell icons are shared across the application. Note sizing is shared across all Social Fluency chapters. The pilot's lesson structure, tables, tint adjustments, note placement, and chat layout are scoped to Chapter 06. Practice and progress data are unchanged.
+The language selector and two requested shell icons are shared across the application. Note sizing and section-derived inner surfaces are shared across Social Fluency. Lesson structure and note placement remain chapter-specific. Practice and progress data are unchanged.
+
+## Chapters 08 and 10, and shared refinements
+
+| Review request | Implementation |
+| --- | --- |
+| Nested “Keep in mind” / Note boxes | Render each explanation as one compact teaching-note box, with no outer wrapper. This covers both existing Chapter 04 and 05 renderers. Supporting text and emphasis use a muted warm grey. |
+| White inner cards | Derive cards, phrase pills, conversations, and tables from their parent section tint across all chapter layouts. Keep illustrations uncropped and note boxes yellow. |
+| Chapter 08 artwork | Four new transparent PNG scenes: borrowing an umbrella, responding to thanks after dinner, appreciating a birthday gift, and reacting to someone leaving without notice. Keep the same characters across all four scenes. |
+| Chapter 08 expressions list | A five-row expression/meaning table. Primary English is 14px on desktop and 13px on mobile; explanations are dimmer at 12px / 11.5px. |
+| Chapter 08 scene labels | “A practical favor” and the dinner scene label become their conversation headings, rather than separate cards before an “Example conversation” heading. Japanese scene labels are preserved. |
+| Chapter 08 grammar guidance | Put the existing “After for…” explanation in one small note below the table. Grammar fragments stay in the note instead of becoming primary phrase pills. Their phrase anchors remain available. |
+| Chapter 08 optional interpretation | Put the existing English paragraph, and both Japanese paragraphs, below the illustration and phrases as quiet notes. |
+| Chapter 10 leaving expressions | Convert the four marked expressions and meanings to a reference table, preserving all wording and practice identities. |
+
+The exact prompts, filenames, and built-in Image Gen method are recorded in `docs/ch08-illustration-prompts.json`. The four project assets are `public/assets/course/ch08-01-practical-favor-ai.png`, `ch08-02-responding-to-thanks-ai.png`, `ch08-03-gift-appreciation-ai.png`, and `ch08-04-different-intention-ai.png`. Each is a native RGBA PNG with alpha ranging from 0 to 255. Sibling filenames keep the build-time procedural generator from overwriting these images. The deployment pipeline checks the actual published files, dimensions, and alpha.
+
+These presentation transformations retain the original English/Japanese source data. The tests check table wording, scene labels, note placement, and the four distinct PNG assets. Browser review checks all four Chapter 08 sections, desktop/mobile wrapping, Japanese explanations, and phrase selection in Chapter 01.
 
 ## Carrying this forward after review
 
@@ -68,10 +85,10 @@ Check English and Japanese, every section, and mobile wrapping before calling a 
 ## Validation
 
 - `npm run test:chapter06-pilot`: source preservation in English/Japanese, all three reply pairs, all four continuation expressions, retained Japanese row explanations, conversations, notes, and unique phrase anchors; existing conversation-layout checks.
-- `node --test src/web/learning.test.js scripts/chapter06-pilot.test.mjs scripts/conversation-layout.test.mjs`: all 40 relevant shell, pilot, and conversation checks pass, including the updated sliding-toggle styling check.
+- The focused learning-shell, Chapter 06, illustrated-study presentation, shared-study, conversation, and Humor tests pass all 50 checks. The shared-study render test checks every shared chapter in both languages.
 - `npm exec vite build`: production build.
-- Browser review at 978×901 and 390×844; all four illustrations load; tables fit without horizontal overflow; English/Japanese switching, keyboard operation, saved preference, profile control, and Progress navigation.
-- Spot-check Chapters 04 and 05 to confirm the pilot content layout stays scoped to Chapter 06.
+- Browser review of the current changes at 825×903 and 390×844; all four new illustrations load, tables fit without horizontal overflow, Japanese explanations remain present, the final interpretation sits below the illustration, and Chapter 01 phrase selection still updates its selected state.
+- Review shared surfaces in Chapters 01–03, 05, 08, 10, 13, and Humor. Chapter-specific content changes stay scoped to their marked lessons.
 
 The production build retains the repository's existing large-chunk advisory. This pilot does not change bundling strategy.
 

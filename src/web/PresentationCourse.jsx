@@ -189,6 +189,8 @@ function FeedbackRubric(){
   ["Structure","Could the listener follow why each part came next?"],
   ["Explanation & visuals","Were terms, figures and comparisons understandable?"],
   ["Delivery & timing","Could the listener hear and follow the speaker within the time?"],
+  ["Accessibility","Were labels, contrast, captions and alternatives sufficient for this audience?"],
+  ["Source integrity","Were collaborators, funding, sources and image rights credited where needed?"],
   ["Q&A","Did the speaker answer directly and acknowledge unknowns?"]
  ]
  return <section className="ps-feedback-rubric"><span className="ps-kicker">USEFUL FEEDBACK · NOT A CHARISMA SCORE</span><h3>Ask your listener these questions.</h3><div className="ps-rubric-list">{rows.map(([name,question])=><div key={name}><b>{name}</b><p>{question}</p></div>)}</div><p className="ps-small">Ask the listener to identify one moment that worked and one specific moment that became difficult to follow. Then revise and test again.</p></section>

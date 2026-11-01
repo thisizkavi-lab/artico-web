@@ -195,7 +195,7 @@ export function parseRoute(hash) {
     if (id === 'humor') return parseRoute('#/lesson/34/study')
     if (id === 'smalltalk' && /^(?:0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/smalltalk/' + view + '/' + scene, page:'application', id:'smalltalk', lesson:view, mode:scene }
-    if (id === 'storytelling' && /^(?:0[1-9]|1[0-5])$/.test(view ?? '') && ['study','practice'].includes(scene))
+    if (id === 'storytelling' && /^(?:0[1-9]|1\d|2[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
     if (!id) return { path: '/application', page:'application' }
     if (/^(?:tests|smalltalk|interviews|presentations|academic|storytelling|writing|reading|ideas)$/.test(id) && !view)

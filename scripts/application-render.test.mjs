@@ -18,6 +18,7 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
   try {
     vite = await createServer({ appType:'custom', server: { middlewareMode: true }, logLevel:'error' })
     const { default: IeltsCourse } = await vite.ssrLoadModule('/src/web/IeltsCourse.jsx')
+    const { default: ToeicCourse } = await vite.ssrLoadModule('/src/web/ToeicCourse.jsx')
     for (const [hash, text] of [
       ['#/application/tests','English Tests'],
       ['#/application/tests/ielts/home/study','IELTS Academic'],
@@ -40,7 +41,20 @@ test('English Tests, IELTS directory, and individual skill pages render', { time
       const markup = renderToStaticMarkup(createElement(IeltsCourse,{route}))
       assert.ok(markup.length > 300, hash + ': empty HTML')
       assert.ok(markup.includes(text), hash + ': missing heading')
+      if (hash === '#/application/tests') assert.ok(markup.includes('TOEIC Listening'), 'TOEIC should appear below IELTS')
       assert.ok(!markup.includes('This page could not be loaded'),hash)
+    }
+    for (const [area, expected] of [
+      ['home', 'TOEIC Listening'],
+      ['overview', 'Everything about TOEIC'],
+      ['listening', 'Part 4: Short Talks'],
+      ['reading', 'Part 7: Reading Comprehension'],
+      ['mocks', 'Mock Tests'],
+    ]) {
+      const route = parseRoute('#/application/tests/toeic/' + area)
+      const markup = renderToStaticMarkup(createElement(ToeicCourse, { route }))
+      assert.ok(markup.includes(expected), area + ': TOEIC skeleton missing')
+      assert.ok(markup.includes('English Tests'), area + ': breadcrumb missing')
     }
   } finally {
     await vite?.close()

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -218,6 +218,48 @@ jobs:
 
       - name: Build site
         run: pnpm run build
+
+      - name: Verify Chapter 05 phrase illustrations are four distinct transparent PNGs
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          from hashlib import sha256
+          names = [
+              'ch05-01-likes-dislikes.png',
+              'ch05-02-asking-opinions.png',
+              'ch05-03-choosing-options.png',
+              'ch05-04-strong-reactions.png',
+          ]
+          checksums = []
+          for name in names:
+              source = Path('public/assets/course') / name
+              served = Path('dist/assets/course') / name
+              assert source.is_file() and served.is_file(), f'Missing Chapter 05 illustration: {name}'
+              assert source.read_bytes() == served.read_bytes(), f'Bundle altered artwork: {name}'
+              with Image.open(served) as im:
+                  assert im.format == 'PNG' and im.mode == 'RGBA', name
+                  assert im.width >= 1000 and im.height >= 600, name
+                  low, high = im.getchannel('A').getextrema()
+                  assert low == 0 and high >= 250, (name, low, high)
+              checksums.append(sha256(served.read_bytes()).hexdigest())
+          assert len(set(checksums)) == 4, 'Chapter 05 phrase artwork is duplicated'
+          print('Chapter 05: four distinct RGBA PNGs verified in Pages bundle')
+          PY
+
+      - name: Retain Chapter 05 PNG originals in source repository
+        run: |
+          git add public/assets/course/ch05-01-likes-dislikes.png \
+                  public/assets/course/ch05-02-asking-opinions.png \
+                  public/assets/course/ch05-03-choosing-options.png \
+                  public/assets/course/ch05-04-strong-reactions.png
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Add four distinct transparent Chapter 05 phrase PNGs'
+            git push origin HEAD:main
+          fi
+
 
       - name: Verify Chapter 06 dedicated transparent PNG illustrations reach Pages
         run: |

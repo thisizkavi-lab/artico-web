@@ -79,6 +79,32 @@ The 22 core video topics, in their source order:
 21. Lessening the Nerves
 22. Dealing with the Q&A
 
+
+#### iBiology-to-Artico crosswalk
+
+This table is the actual synthesis step: source concepts are mapped into original Artico lessons and a cumulative learner artefact. The source is not copied as a lesson-by-lesson replica.
+
+| iBiology source lesson / assessment | Artico destination | What is preserved or extended |
+|---|---|---|
+| What makes a good research talk? | 01 | Define success by the audience's task; extend to teaching, decision, demonstration and ceremonial contexts |
+| First step; audience Q3–Q5 | 02; Blueprint 1–4 | Audience, prior knowledge, motivation, occasion and constraints; distinguish known facts from assumptions |
+| Goal Q6; core message Q7–Q9 | 03–04; Blueprint 5–9 | Separate topic, goal, message and significance; retain evidence boundary |
+| Half-Life Your Message; Q8 | 04; four saved practice rounds | Preserve 60/30/15/8 as discovery, add reflection and safeguards against slogan-making |
+| Speaking style Q10 | 04 and 14; Blueprint 20 | Individual, sustainable delivery rather than one charismatic ideal |
+| Talks are not papers | 05 | Select material for live comprehension without concealing validity-critical evidence |
+| Story / narrative elements Q11–Q13 | 06 and 13; Blueprint 10–12 | Narrative as reasoning path; vignettes optional; add meta-analytic limits and ethical persuasion |
+| Outline and body; Q15–Q16 | 06–07; Blueprint 14 | Build body-first where useful; for each result explain method, observation, inference, limitation and next step |
+| Slides; Q14 | 10; Blueprint 17 | Assertion–evidence and multimedia learning, with limits and accessibility |
+| Introduction, hook and so what; Q17–Q19 | 08; Blueprint 7, 12–13 | Relevance and essential background; hooks optional and verified |
+| Ending and title; Q20–Q21 | 09; Blueprint 15–16 | Conclude with supported message, implication or open question; accurate title before cleverness |
+| Jargon and connection; Q22 | 12; Blueprint 19 | Define terms at the point of need; use analogy without substituting it for explanation |
+| Practice and feedback; Q23–Q24 | 15; Blueprint 21–22 | Timed rehearsal, audience-matched observers and behaviour-specific feedback |
+| Stage and nerves; Q25 | 16; Blueprint 4, 24 | Preparation and recovery; evidence-informed, non-clinical anxiety guidance |
+| Q&A; Q26 | 17; Blueprint 23 | Listen, classify, clarify, answer from evidence and mark unknowns |
+| My Talk Plan | 26-field Artico Blueprint | Preserve the cumulative project idea while expanding it for non-research talks, ethics, accessibility and revision |
+
+Artico adds general-purpose speech genres, listening and ethical argument, chart/statistical integrity, accessibility, context-specific case studies, and an explicit feedback rubric. Those additions come from the broader public-speaking curriculum, Stanford guidance, empirical research and standards—not from assuming that the iBiology course alone covers every presentation type.
+
 The source's most important structural insight is that **the body may be developed before the introduction**. The final talk is delivered in a clear sequence, but it need not be designed linearly. Knowing which data and reasoning are essential can reveal which background the introduction actually needs.
 
 #### What iBiology does particularly well
@@ -156,7 +182,7 @@ Mayer's theory distinguishes three kinds of cognitive processing:
 
 Relevant principles include coherence, signalling, spatial/temporal contiguity, segmentation, pre-training, modality, personalization, and generative activity. These suggest practical slide and lesson decisions: remove decorative clutter, label the part being discussed, place labels near the relevant visual, reveal complex processes in manageable stages, introduce essential terms, and ask learners to explain or apply ideas.
 
-The 2025 meta-analysis examined 92 Mayer-authored articles, 181 studies and 591 effects from 1990–2022. It reported an overall effect of g = 0.37, with meaningful moderation by design principle, medium, learner age, academic domain and outcome. Effects were not uniform. Text plus diagrams showed more consistent learning effects than some other media types; active learning/generative involvement was especially important.
+The 2025 meta-analysis examined 92 Mayer-authored articles, 181 studies and 591 effects from 1990–2022. It reported an overall effect of g = 0.37, significantly moderated by all nine coded moderators. The largest significant mean effects were for removing seductive detail, modality, personalization, multimedia, sentence-level coherence and self-explanation. Text plus diagrams showed large, consistent effects across factual, inferential and transfer outcomes; animation, games and simulations were less consistent. The testing effect, scaffolding, cueing and embodiment showed medium significant overall effects.
 
 **Critical boundary:** these studies investigate multimedia instructional materials, not every live conference talk. Artico should use Mayer to design its own lessons and explain visual processing, but should not claim that every live slide must follow one immutable formula. Accessibility also means not removing essential on-screen text or captions simply because some multimedia experiments found redundancy effects.
 
@@ -315,7 +341,7 @@ The loop returns to the frame. A change in audience or purpose can require a dif
 
 ---
 
-## 4. How the model changes by presentation type
+## 5. How the model changes by presentation type
 
 | Type | Audience outcome | Useful structure | What must not be sacrificed |
 |---|---|---|---|
@@ -331,9 +357,27 @@ The loop returns to the frame. A change in audience or purpose can require a dif
 
 A single topic can therefore require very different messages, structures and visual choices. This is not inconsistency; it is audience adaptation.
 
+## 4. Where the frameworks appear to conflict—and how Artico resolves them
+
+| Tension | What the sources contribute | Artico's resolution |
+|---|---|---|
+| Story versus evidence | iBiology and Duarte use narrative to organise attention; narrative meta-analyses find modest persuasive effects, not proof of factual accuracy | Use narrative to make the question and stakes legible. Use representative evidence to establish factual claims. Never let an anecdote stand in for prevalence, causation or a measured result. |
+| Simplicity versus precision | Reynolds and Alley favour restraint; Mayer explains why extraneous material can burden processing; technical talks still require detail | Remove material that does no job. Keep the units, labels, controls, uncertainty, definitions and caveats needed to judge the claim. |
+| Conciseness versus completeness | Half-Life and “talks are not papers” encourage prioritisation; scientific integrity requires enough information to evaluate a result | Make the central message concise, but do not compress away its conditions or evidence boundary. Put secondary detail in backup material, not behind a misleading claim. |
+| Narrative arc versus scientific uncertainty | Story models can create a satisfying progression; research often ends with an unresolved question | The talk may end with a clear statement of what is known and what remains unknown. No invented climax or false resolution. |
+| Rehearsal versus naturalness | Repetition can improve fluency; memorising a script can make a talk brittle and unnatural | Rehearse the logic, transitions, timing and difficult explanations. Memorise only what helps the speaker; do not require word-for-word performance. |
+| Persuasion versus audience agency | Duarte's transformation model can clarify a call to action; ethical public speaking requires honesty and fair treatment of objections | Persuade with transparent reasoning. Show uncertainty and trade-offs, disclose sources, and let listeners judge. |
+| General rules versus context | General public-speaking textbooks offer reusable structures; iBiology is deliberately tailored to research talks | Teach a small set of questions and several structures, then let the audience and occasion choose the form. Do not prescribe one template to all talks. |
+
+### Practical consequence
+
+A good slide is not necessarily minimal; it is *sufficient and legible*. A good story is not necessarily dramatic; it is *a path through the reasoning*. A good ending is not necessarily uplifting; it is *a faithful account of what the talk established and what follows*. A good rehearsal is not a flawless recitation; it is *a test that reveals what the audience cannot yet follow*.
+
+
+
 ---
 
-## 5. Revised Artico curriculum specification
+## 6. Revised Artico curriculum specification
 
 **18 lessons across four modules.** Each lesson should include a learning objective, one central principle, an accurate example, a decision or analysis activity, a practice task, and a way to carry the result into the learner's own plan.
 
@@ -429,7 +473,7 @@ Use a rubric to guide specific feedback, not to pretend that a single number ful
 
 ---
 
-## 6. Editorial and implementation safeguards
+## 7. Editorial and implementation safeguards
 
 1. Do not teach “one perfect formula” for all presentations.
 2. Do not confuse a dramatic hook with a meaningful introduction.
@@ -446,7 +490,7 @@ Use a rubric to guide specific feedback, not to pretend that a single number ful
 
 ---
 
-## 7. Source register
+## 8. Source register
 
 ### Primary curriculum and professional guidance
 - iBiology, *Share Your Research: How to Give a Good Talk* — full public course document and educator index. Original materials CC BY-NC-ND 3.0.

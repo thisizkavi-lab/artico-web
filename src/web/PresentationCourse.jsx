@@ -329,6 +329,20 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
  </div>
 }
 export default function PresentationCourse({route,learning,update}) {
+ useEffect(()=>{
+  const responses=learning.responses||{}
+  const legacyFields={type:'occasion',purpose:'goal',background:'narrative',explanation:'language',contingency:'fallback'}
+  const casesToMigrate=['science','business','product','teaching','proposal','toast','custom']
+  const migration={}
+  for(const caseId of casesToMigrate){
+   for(const [oldKey,newKey] of Object.entries(legacyFields)){
+    const value=responses['application-presentations-blueprint-'+caseId+'-'+oldKey]
+    const destination='application-presentations-blueprint-'+caseId+'-'+newKey
+    if(value&&!responses[destination])migration[destination]=value
+   }
+  }
+  if(Object.keys(migration).length)update(prev=>({...prev,responses:{...prev.responses,...migration}}))
+ },[learning.responses,update])
  const savedCase=learning.responses?.[contextKey]
  const caseId=Object.prototype.hasOwnProperty.call(caseNames,savedCase)?savedCase:'science'
  const setCaseId=(value)=>update(prev=>({...prev,responses:{...prev.responses,[contextKey]:value}}))

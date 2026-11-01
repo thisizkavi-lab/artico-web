@@ -186,6 +186,12 @@ export function parseRoute(hash) {
         ...(query.has('attempt') ? { attempt: query.get('attempt') } : {}),
         ...(query.has('unit') ? { unit: query.get('unit') } : {}) }
     }
+    if (id === 'tests' && view === 'toeic') {
+      const area = scene ?? 'home'
+      if (segments.length > 4 || !/^(?:home|overview|listening|reading|mocks)$/.test(area))
+        return { path: '/application/tests', page: 'application', id: 'tests' }
+      return { path: '/application/tests/toeic/' + area, page: 'application', id: 'tests', exam: 'toeic', area }
+    }
     if (id === 'ideas' && /^(?:home|0[1-8])$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       const given = new URLSearchParams(path.split('?')[1] ?? '').get('task')
       const task = scene === 'practice' && new RegExp('^' + view + '-[a-z]$').test(given ?? '') ? given : null

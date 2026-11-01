@@ -5,7 +5,7 @@ import { chapter20VocabularySections, chapter20VocabularyCount } from './chapter
 import './chapter20-vocabulary.css'
 
 function speakEnglish(phrase, onFailure) {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') {
     onFailure()
     return
   }
@@ -15,6 +15,7 @@ function speakEnglish(phrase, onFailure) {
   utterance.lang = 'en-US'
   utterance.rate = 0.9
   utterance.pitch = 1
+  utterance.onerror = onFailure
   const voices = speech.getVoices()
   const voice = voices.find((item) => /^en[-_]US$/i.test(item.lang) && item.localService)
     || voices.find((item) => /^en[-_]US$/i.test(item.lang))

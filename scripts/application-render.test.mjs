@@ -81,7 +81,7 @@ test('presentation course screens render across the full curriculum', { timeout:
       ['#/application/presentations/10/study','Slides that make a point'],
       ['#/application/presentations/11/study','Data people can inspect'],
       ['#/application/presentations/13/study','Story, attention and ethical persuasion'],
-      ['#/application/presentations/15/practice','Ask your listener these questions'],
+      ['#/application/presentations/15/practice','Give your reviewer the context first.'],
       ['#/application/presentations/17/study','Q&amp;A as dialogue'],
       ['#/application/presentations/18/study','Build, present and revise'],
       ['#/application/presentations/cases','Eight presentation situations'],
@@ -93,6 +93,11 @@ test('presentation course screens render across the full curriculum', { timeout:
       assert.ok(html.includes(expected),hash+' missing heading '+expected)
       assert.ok(!html.includes('could not be loaded'),hash)
       if(hash==='#/application/presentations/blueprint') assert.ok(html.includes('Acknowledgements, funding, collaborators and image/source credits'),'acknowledgements field missing')
+      if(hash==='#/application/presentations/15/practice') {
+        assert.ok(html.includes('Audience and purpose'),'review checklist missing audience criteria')
+        assert.ok(html.includes('Feedback received'),'review notes are not connected to the saved blueprint')
+        assert.ok(html.includes('Revision to make and retest'),'revision notes are not connected to the saved blueprint')
+      }
       if(hash==='#/application/presentations') {
         assert.ok(html.includes('22 CORE VIDEOS'),'full source video index missing')
         assert.ok(html.includes('8 RESOURCES'),'original worksheets index missing')

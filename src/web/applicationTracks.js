@@ -42,22 +42,9 @@ export const applicationTracks = [
   },
   {
     id:'presentations', icon:'presentation', en:'Presentations & Public Speaking', ja:'発表・人前で話す',
-    enSummary:'Explain ideas clearly and speak to an audience.',
-    jaSummary:'アイデアを整理して、人前で伝える。',
-    tasks:[
-      { en:'Explain an idea in three minutes', ja:'アイデアを3分で説明する', kind:'speaking',
-        promptEn:'Choose one idea. Explain what it is, why it matters, give one example, and finish with a clear takeaway.',
-        promptJa:'アイデアを一つ選びます。内容、重要な理由、例、結論を3分で説明しましょう。',
-        example:'Today I want to talk about ... This matters because ... For example, ...',
-        checkpointsEn:['Open with the topic.','Give one clear example.','End with a takeaway.'],
-        checkpointsJa:['テーマを最初に伝える。','具体例を一つ示す。','結論で締める。'] },
-      { en:'Handle a question from the audience', ja:'質問に答える', kind:'speaking',
-        promptEn:'Imagine someone asks: “What is the main limitation of your idea?” Acknowledge the question, answer directly, and explain one limitation.',
-        promptJa:'「そのアイデアの主な限界は何ですか？」と聞かれた場面です。質問に答え、限界を一つ説明しましょう。',
-        example:'That is an important question. One limitation is ...',
-        checkpointsEn:['Acknowledge the question.','Give the answer first.','Add one reason or example.'],
-        checkpointsJa:['質問を受け止める。','答えを先に言う。','理由か例を添える。'] },
-    ],
+    enSummary:'Plan and deliver talks for research, business, teaching and real-world situations.',
+    jaSummary:'研究・ビジネス・教育など、目的に合う発表を組み立てて伝える。',
+    tasks:[], // Routed to the dedicated research-informed 18-lesson PresentationCourse.
   },
   {
     id:'academic', icon:'school', en:'Academic & Research Writing', ja:'学術・研究ライティング',

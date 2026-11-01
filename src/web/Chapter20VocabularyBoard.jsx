@@ -19,7 +19,7 @@ function speakEnglish(phrase, onFailure) {
   const voices = speech.getVoices()
   const voice = voices.find((item) => /^en[-_]US$/i.test(item.lang) && item.localService)
     || voices.find((item) => /^en[-_]US$/i.test(item.lang))
-    || voices.find((item) => /^en\\b/i.test(item.lang))
+    || voices.find((item) => /^en\b/i.test(item.lang))
   if (voice) utterance.voice = voice
   try {
     speech.speak(utterance)

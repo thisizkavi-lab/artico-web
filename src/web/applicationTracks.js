@@ -24,8 +24,8 @@ export const applicationTracks = [
   },
   {
     id:'smalltalk', icon:'messages', en:'Small Talk', ja:'ちょっとした会話',
-    enSummary:'Start a casual chat, find common ground and keep it going.',
-    jaSummary:'気軽に話しかけて、自然に会話を続ける。',
+    enSummary:'Understand everyday social connection. Learn to begin, respond, and finish naturally.',
+    jaSummary:'人と自然につながる会話の仕組みを学び、始め方・返し方・終え方を練習する。',
     tasks:[], // Routed to the dedicated SmallTalkCourse. Old notes remain readable.
   },
   {
@@ -58,12 +58,6 @@ export const applicationTracks = [
     enSummary:'Six stages: read evidence, write manuscripts and revise academic work.',
     jaSummary:'文献の読解から研究論文の執筆・推敲まで、６ステージで学ぶ。',
     tasks:[], // Routed to the dedicated 33-lesson AcademicCourse.
-  },
-  {
-    id:'storytelling', icon:'book', en:'Storytelling', ja:'ストーリーテリング',
-    enSummary:'Tell engaging stories and share personal experiences.',
-    jaSummary:'経験や感情を、伝わる物語にする。',
-    tasks:[], // Dedicated Storytelling course. Old response keys remain readable for migration.
   },
   {
     id:'writing', icon:'pencil', en:'Writing', ja:'ライティング',

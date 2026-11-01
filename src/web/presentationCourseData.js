@@ -1,647 +1,809 @@
-// Original Artico teaching content. Scientific and business numbers in cases are expressly illustrative.
+// Original Artico teaching content informed by the research synthesis in docs/presentations-research-synthesis.md.
+
+// Synthetic numerical examples are explicitly labelled. External course transcripts and worksheets are linked, not reproduced.
 
 export const presentationLessons = [
   {
     "id": "01",
-    "part": "FOUNDATIONS",
-    "title": "What a presentation actually does",
-    "goal": "Distinguish purpose from performance.",
-    "rule": "A talk succeeds when the audience can use what they heard—not when the speaker looks impressive.",
-    "teach": "Public speaking is communicating aloud to people gathered for a purpose. A presentation is a prepared, structured instance of that activity; a speech may be ceremonial, and a lab update may be conversational. Speaking is temporary: listeners cannot reread your last sentence while following your next. Give a clear path, explain prerequisites, and signal changes.",
-    "before": "A good presentation has exciting slides and a memorable story.",
-    "after": "A good presentation lets this audience understand an idea, judge evidence, make a decision, learn a procedure, or appreciate a moment.",
-    "note": "A thesis defense needs justified claims. A toast needs sincere recognition. Neither requires the other's structure.",
-    "contrast": "Research seminar: show how evidence changes what we know. Retirement toast: honor one person's contribution with a precise memory.",
-    "question": "What counts as success in a lab meeting?",
+    "part": "FRAME",
+    "title": "What makes a talk effective?",
+    "goal": "Define success by what the audience needs from the occasion.",
+    "rule": "A good talk is not a performance of confidence; it is a useful exchange with an audience.",
+    "teach": "A presentation is a planned act of communication. It may inform, teach, persuade, coordinate, demonstrate, celebrate or invite discussion. Success depends on the task: a research seminar must let people judge a contribution; a class must help learners understand and use an idea; a briefing must support a decision; a toast must honour a person. Slides, humour and charisma are tools, not the goal. First name the audience outcome.",
+    "before": "I want to give an impressive presentation about my research.",
+    "after": "I want the lab to understand why the result changes our next experiment, and what remains uncertain.",
+    "note": "The same subject can require different talks. A 5-minute lab update is not a shortened thesis defence; it has a different job.",
+    "contrast": "A lecture is judged by what learners can explain afterwards. A proposal is judged by whether its reasoning supports a decision.",
+    "question": "What is the strongest definition of a successful presentation?",
     "options": [
-      "Every slide looks polished",
-      "Colleagues can assess the finding and decide the next experiment",
-      "The speaker never pauses"
+      "The speaker appears confident and uses polished slides",
+      "The audience can do what the occasion requires: understand, judge, decide, learn or recognise",
+      "The talk includes every fact the speaker knows"
     ],
     "answer": 1,
-    "reason": "The meeting exists to examine research and plan action, not reward polish.",
-    "practice": "Describe an occasion when people need to hear from you. State what they should understand, decide, or feel when you finish.",
+    "reason": "The communication outcome determines what belongs in the talk. Polish matters only when it helps that outcome.",
+    "practice": "Choose one real or imagined occasion. Write one sentence describing what listeners should understand, decide, do or feel by the end.",
     "field": "purpose",
     "criteria": [
-      "Specify an audience benefit",
-      "Make success observable"
+      "Name the occasion",
+      "State an observable audience outcome",
+      "Do not confuse polish with success"
     ],
-    "say": "The main thing I want you to take away is…"
+    "say": "By the end, I want you to be able to…",
+    "sourceBasis": "iBiology's definition of an effective research talk; general public-speaking curricula on speech purpose and audience."
   },
   {
     "id": "02",
     "part": "FRAME",
-    "title": "Audience, occasion, purpose",
-    "goal": "Plan for actual listeners rather than an imaginary average person.",
-    "rule": "Audience is who listens. Purpose is why the talk exists. Message is what remains.",
-    "teach": "Investigate what listeners already know, what they need, what they might question, and why they are present. Check the room, platform, time, and accessibility needs. Set an attainable outcome: understanding a method, choosing a policy, or identifying an unresolved question. A topic is not a goal.",
-    "before": "Topic: machine learning. Audience: everyone. Goal: cover the subject.",
-    "after": "Audience: wet-lab graduate students. Goal: explain when a protein prediction is informative and what it cannot establish. Occasion: a 10-minute research-group introduction.",
-    "note": "Ask the organizer what the audience knows. Do not assume an interdisciplinary scientist is a beginner.",
-    "contrast": "A CFO needs a decision with costs and risks; a first-year class needs a mental model and checks for understanding.",
-    "question": "Which question is most useful before a ten-minute talk?",
+    "title": "Read the room",
+    "goal": "Research the audience and the conditions before choosing content.",
+    "rule": "Do not prepare for an average audience. Prepare for the people who will actually be there.",
+    "teach": "Audience analysis is practical research, not guessing from age or job title. Find out what listeners already know, what they need, why they are present, what decision or question matters to them, and what they may challenge. Ask the organiser; inspect the event programme; consider disciplines represented, language, venue, time, remote access and accessibility. Avoid demographic stereotypes. Write down what is known, what is assumed, and how to check each assumption.",
+    "before": "My audience is scientists, so I can use technical language.",
+    "after": "Most listeners know cell biology but not molecular simulation. I will define the ensemble idea, then use the technical vocabulary needed to assess the result.",
+    "note": "Audience adaptation is not dumbing down. It is choosing the right starting point and level of detail.",
+    "contrast": "A domain expert may need controls and sampling diagnostics. A funder may need the research gap, potential value and risks. A student may need a concrete mental model.",
+    "question": "Which is the best first audience question?",
     "options": [
-      "How many animations should I use?",
-      "What will these listeners need to do with this information?",
-      "How do I sound more charismatic?"
+      "What font do the attendees prefer?",
+      "What do these listeners already know, and what must they do with this information?",
+      "How can I make every person agree with me?"
     ],
     "answer": 1,
-    "reason": "Purpose controls scope, proof, vocabulary and structure.",
-    "practice": "Write two descriptions of your audience: what they already know, and what they need from this occasion.",
+    "reason": "Prior knowledge and the audience's task determine the explanation, evidence and vocabulary.",
+    "practice": "Describe your audience in three columns: known facts, assumptions, and questions you need to ask the organiser or a representative listener.",
     "field": "audience",
     "criteria": [
-      "Name a real audience",
-      "Identify prior knowledge",
-      "State why they are present"
+      "Separate evidence from assumptions",
+      "Identify prior knowledge and motivation",
+      "Name one way to verify your assumptions"
     ],
-    "say": "You may already know that… The new part is…"
+    "say": "You may already know… The part I want to examine today is…",
+    "sourceBasis": "iBiology audience framework; Stanford and general public-speaking audience-analysis guidance."
   },
   {
     "id": "03",
     "part": "FRAME",
-    "title": "Find the core message",
-    "goal": "Keep the essential claim without pretending all complexity disappears.",
-    "rule": "A core message is a defensible takeaway, not a topic label.",
-    "teach": "Write a complete, meaningful sentence describing what changes for the audience. Keep necessary qualifiers. Distill aloud at 60, 30, 15 and about 8 seconds: remove less-essential background rather than speaking faster. If the eight-second form becomes misleading, preserve the qualification and use a longer version.",
-    "before": "Today's talk is about app onboarding.",
-    "after": "Most trial users drop out before completing setup, so the first three steps deserve our attention.",
-    "note": "The takeaway must fit the evidence. 'This treatment works' is not a valid summary of an underpowered pilot.",
-    "contrast": "Expert: 'The estimated effect is uncertain after adjustment.' Public: 'We saw a possible difference, but the study is too small to trust it yet.'",
-    "question": "Which is the safer distilled message for a small pilot?",
+    "title": "Goal, message and the so what",
+    "goal": "Separate the desired outcome from the claim and its relevance.",
+    "rule": "A topic names the subject. A goal names the change. A message names the takeaway.",
+    "teach": "These three are related but not interchangeable. Topic: protein conformational dynamics. Goal: help a mixed-discipline group assess whether one simulation supports a claim about sampled states. Message: this trajectory samples several conformational clusters, but convergence is not established. The so what explains why that message matters to this audience: it changes what analysis or experiment should come next. Limit yourself to one primary goal and one central message; supporting points can be many.",
+    "before": "My topic is artificial intelligence in biology. I want to cover everything.",
+    "after": "Goal: help the lab decide whether this model is useful for prioritising experiments. Message: it narrows candidates, but does not establish function. So what: we should validate the top predictions before investing in a larger screen.",
+    "note": "A strong message is not necessarily a bold claim. It may be a precise statement of what remains unknown.",
+    "contrast": "In a wedding toast, the goal is to honour the couple; the message might be that their generosity makes others feel included. There is no scientific result to prove.",
+    "question": "Which statement is a core message rather than a topic?",
     "options": [
-      "Our method is proven superior",
-      "In this pilot, the method looked promising; a larger test is needed",
-      "The new technology will transform everything"
+      "Protein dynamics",
+      "A static structure misses alternative conformations sampled under these conditions",
+      "A 20-minute seminar"
     ],
     "answer": 1,
-    "reason": "Distillation should preserve uncertainty, not delete it.",
-    "practice": "Say your message in 60, then 30, 15, and 8 seconds. Write down what you removed and whether the result remains true.",
+    "reason": "It expresses a complete, potentially testable takeaway rather than a subject or logistical detail.",
+    "practice": "Write four separate lines: topic, audience, primary goal, core message. Add one sentence explaining why this audience should care.",
     "field": "message",
     "criteria": [
-      "Use one complete sentence",
-      "Preserve the crucial qualification",
-      "Make it relevant to this audience"
+      "One primary goal",
+      "One defensible central message",
+      "Audience-specific relevance"
     ],
-    "say": "Here is the key result—and what it does not tell us."
+    "say": "The point I want you to leave with is…",
+    "sourceBasis": "iBiology's audience + goal + message framework; OpenStax purpose and topic distinctions."
   },
   {
     "id": "04",
     "part": "FRAME",
-    "title": "Choose evidence, not everything you know",
-    "goal": "Separate necessary support from interesting detail.",
-    "rule": "Every detail should earn its place by doing a job.",
-    "teach": "Build a claim–evidence–reasoning chain. Select what listeners must know to evaluate the message. Distinguish observation from interpretation and both from speculation. Give denominators, baselines, units, and limitations when they matter. Extra data can move to a handout, backup slide, or Q&A.",
-    "before": "We measured 24 variables; I'll show every plot.",
-    "after": "The decision depends on completion rate and time-to-first-value; I will show those two measures, their baselines, and the missing-data caveat.",
-    "note": "Omission becomes distortion when it hides evidence that could reverse the conclusion.",
-    "contrast": "Conference: include the methods needed to judge validity. Project update: foreground a risk and the decision needed today.",
-    "question": "What should stay in a five-minute research talk?",
+    "title": "Discover the message; find your voice",
+    "goal": "Distil the idea without turning nuance into a slogan.",
+    "rule": "Compression should reveal what matters, not erase what makes the claim true.",
+    "teach": "The Half-Life Your Message exercise asks you to speak about the same idea for 60, 30, 15 and 8 seconds, with short transitions between attempts. It is a discovery exercise: it can expose the real centre of the idea or show that you began in the wrong place. Afterwards, ask whether the short version is accurate for this audience and goal, what qualification must be restored, and which supporting ideas remain necessary. Then explore a speaking style that feels natural to you. Clear and reserved can be as effective as animated and humorous.",
+    "before": "Our new method proves that the protein has three functional states.",
+    "after": "In this trajectory, we observed three structural clusters. Their functional roles and sampling convergence remain to be tested.",
+    "note": "Aurbach et al. describe Half-Life as message discovery, not sound-bite production. The 8-second version is not automatically the final scientific claim.",
+    "contrast": "An executive may need a short decision statement. A specialist may need a longer version that names assumptions and uncertainty.",
+    "question": "What should you do if the 8-second version becomes misleading?",
     "options": [
-      "Every available experiment",
-      "Only the most positive outcome",
-      "The result, essential controls, and a relevant limitation"
+      "Keep it because shorter is always better",
+      "Speak faster to fit more detail",
+      "Restore the qualification or choose a longer accurate version"
     ],
     "answer": 2,
-    "reason": "The audience needs enough evidence to evaluate the finding, not a data dump or selected success story.",
-    "practice": "For your message, identify two necessary pieces of evidence, one limitation, and one interesting detail to cut.",
-    "field": "evidence",
+    "reason": "The exercise helps discover priorities; it does not authorise distortion.",
+    "practice": "Speak the same idea in 60, 30, 15 and 8 seconds. Record each version. Then write what was lost, what stayed, and what must be restored.",
+    "field": "message",
     "criteria": [
-      "Connect each item to a claim",
-      "Name a meaningful limitation",
-      "Avoid selective evidence"
+      "Keep the same central idea across versions",
+      "Preserve important qualifications",
+      "Choose a speaking style that feels sustainable"
     ],
-    "say": "The evidence for that is… A limitation is…"
+    "say": "The short version is… The important qualification is…",
+    "sourceBasis": "Aurbach et al. (2018), an experience-based teaching tool; iBiology message-distillation and speaking-style lessons."
   },
   {
     "id": "05",
-    "part": "BUILD",
-    "title": "Choose a structure that fits the task",
-    "goal": "Organize ideas in a causal or logical order.",
-    "rule": "Structure follows the work the audience must do.",
-    "teach": "Choose among question → investigation → answer; problem → evidence → recommendation; comparison → criteria → decision; demonstration → observation → explanation; context → challenge → response → outcome. Give prerequisites before dependent ideas. A paper can be reread; a talk needs an immediately traceable path.",
-    "before": "Introduction → three unrelated facts → thank you.",
-    "after": "Problem: delayed setup → evidence: where users stop → recommendation: simplify the form → test: compare completion next week.",
-    "note": "A dramatic story is optional. A precise research methods update may be clearest as question → method → finding → uncertainty.",
-    "contrast": "Thesis defense: question, rationale, design, evidence, interpretation. Product demo: user task, actual workflow, result, limits.",
-    "question": "Best structure for choosing between two suppliers?",
+    "part": "ARCHITECT",
+    "title": "A talk is not a paper",
+    "goal": "Select what listeners need without hiding relevant evidence.",
+    "rule": "A paper is built for inspection over time. A talk is built for understanding in real time.",
+    "teach": "A paper can include exhaustive methods, supplementary figures and details that readers revisit. A live talk cannot. Select the information needed to understand the central claim and evaluate its strength. This does not mean hiding inconvenient controls, negative findings or limitations. Summarise methods at the level the audience needs; direct interested listeners to the paper or backup material for detail. Reorder content when it improves understanding. The aim is disciplined selection, not selective reporting.",
+    "before": "I will present the paper section by section and include every figure.",
+    "after": "I will show the question, the method detail needed to judge it, the two results that support the message, the limitation, and the next experiment.",
+    "note": "Cutting detail is not permission to conceal evidence that could change the conclusion.",
+    "contrast": "A manuscript preserves a reproducible record. A five-minute talk should make the central reasoning visible and point to the full record.",
+    "question": "Which item should not be omitted merely to keep the talk short?",
     "options": [
-      "Chronological autobiography",
-      "Comparison → criteria → evaluation → decision",
-      "Problem → a surprise joke → closing"
+      "A control that could change how the main result is interpreted",
+      "A secondary detail unrelated to the claim",
+      "A decorative image that adds no information"
     ],
-    "answer": 1,
-    "reason": "Decision-makers must see the trade-offs against explicit criteria.",
-    "practice": "Write your talk as 4–6 one-line steps. Remove or reorder anything that does not advance the audience's task.",
-    "field": "structure",
+    "answer": 0,
+    "reason": "Essential controls and limitations are part of honest interpretation, not optional decoration.",
+    "practice": "Take one paper or project. Mark each section as essential for understanding, needed to judge validity, useful backup, or omit. Explain each decision.",
+    "field": "evidence",
     "criteria": [
-      "Use one clear organizing logic",
-      "Explain the connection between steps",
-      "Place prerequisites first"
+      "Select for the audience's task",
+      "Retain validity-critical evidence",
+      "Separate main talk from backup detail"
     ],
-    "say": "To answer that, we need to look at two things."
+    "say": "I will focus on the evidence needed to judge this claim.",
+    "sourceBasis": "iBiology lesson 'Talks Are Not Papers'; Stanford spoken-versus-written guidance; ethics of evidence."
   },
   {
     "id": "06",
-    "part": "BUILD",
-    "title": "Explain something difficult",
-    "goal": "Make a precise idea easier without making it false.",
-    "rule": "Remove unnecessary difficulty, not necessary truth.",
-    "teach": "Start with the problem the concept solves. Identify the one prerequisite the audience lacks; define it once. Move from a concrete case to the abstract rule. An analogy is a bridge, not evidence: say where it stops working. Use a simple diagram when spatial relationships or processes matter.",
-    "before": "A conformational ensemble is a Boltzmann-distributed measure over a multidimensional free-energy landscape.",
-    "after": "A protein does not have just one shape. It moves among many shapes. An ensemble describes which shapes appear and how often under specified conditions; temperature and interactions affect those frequencies.",
-    "note": "Avoid 'a protein chooses its favorite shape': the metaphor gives molecules intentions.",
-    "contrast": "Business: define 'conversion rate' with numerator and denominator. Science: distinguish a model-predicted structure from measured dynamics.",
-    "question": "Which explanation is both clear and accurate?",
+    "part": "ARCHITECT",
+    "title": "Build the reasoning path",
+    "goal": "Choose a logical structure that matches the communication task.",
+    "rule": "Structure is the order in which the audience needs to understand things.",
+    "teach": "An outline is a thinking tool, not a fixed template. Try question → investigation → answer; problem → evidence → recommendation; comparison → criteria → decision; demonstration → observation → explanation; or concept → example → practice. For research, a narrative can follow the question and how evidence changed the interpretation. Build the body first if that reveals what background the introduction needs. Check every transition: why does this part come next?",
+    "before": "Introduction, three unrelated findings, and a conclusion.",
+    "after": "Question → why current models are insufficient → sampling method → evidence for multiple clusters → limits of sampling → next test.",
+    "note": "A story arc is a useful model for causal progression. It is not a demand for a dramatic climax or a happy ending.",
+    "contrast": "A product demonstration needs a user journey. A journal club needs a critical argument about evidence. A toast needs a human memory, not a methods section.",
+    "question": "Which outline best fits a briefing that must recommend a supplier?",
     "options": [
-      "Proteins intentionally choose their shapes",
-      "Proteins have one permanent shape",
-      "A protein samples many shapes, and conditions influence how often each occurs"
+      "A chronology of how the team discovered each supplier",
+      "Criteria → comparison → trade-offs → recommendation",
+      "A personal story followed by unrelated product facts"
     ],
-    "answer": 2,
-    "reason": "It is simple while preserving the key concept.",
-    "practice": "Explain one technical concept in three versions: expert, adjacent expert, general audience. Label what you simplified and what you retained.",
-    "field": "explanation",
+    "answer": 1,
+    "reason": "The structure follows the decision the audience must make.",
+    "practice": "Draft a 5–7 line outline. For every line, write why the audience needs it and how it advances the central message.",
+    "field": "structure",
     "criteria": [
-      "Define one prerequisite",
-      "Use a concrete example",
-      "State the limit of an analogy"
+      "Use one coherent organising logic",
+      "Make each transition necessary",
+      "Allow the order to change during revision"
     ],
-    "say": "In plain terms, that means… The analogy breaks down when…"
+    "say": "To answer that question, we need to look at…",
+    "sourceBasis": "iBiology outline/story lessons; OpenStax organisation and outlining; Duarte's audience-journey approach as a practitioner framework."
   },
   {
     "id": "07",
-    "part": "BUILD",
-    "title": "Open, guide, and close",
-    "goal": "Help listeners stay oriented throughout.",
-    "rule": "Start with relevance; show the route; finish with the point.",
-    "teach": "In an opening, state the real question or situation and why it matters now. Preview the path only when helpful. Signpost the logic—not each slide number. At the end, give the answer or practical next step; avoid introducing a new argument. A question, simple fact, or direct statement often beats a theatrical hook.",
-    "before": "Good afternoon. I have 42 slides and I'll go through all of them.",
-    "after": "Our sample turnaround has doubled. I'll show where time is lost, the likely cause, and the test we propose.",
-    "note": "No universal opening formula. A solemn occasion should not begin like a startup pitch.",
-    "contrast": "Conference: 'Why do these simulations disagree with the experiment?' Toast: 'When I joined this team, Maya was the first person to help me.'",
-    "question": "What is the strongest closing for an operational update?",
+    "part": "ARCHITECT",
+    "title": "Make the body carry the claim",
+    "goal": "Connect each result to its method, evidence and interpretation.",
+    "rule": "A result is not self-explanatory. Show what was done, what appeared, and what can be inferred.",
+    "teach": "For each important result, use a compact reasoning unit: question or claim; why this method addresses it; what the visual actually shows; what the result supports; what it does not support; and what follows. Separate observation from interpretation. In a scientific talk, include the controls and sampling information needed to judge the result. In a business briefing, show baseline, denominator and alternative explanations. Do not show a chart without telling listeners what comparison matters.",
+    "before": "Here is the PCA. You can see that the protein is active.",
+    "after": "Each point is one sampled frame; colour denotes a cluster. The trajectory visits three regions of this projection. This supports structural heterogeneity in the sampled trajectory, not a claim that each region is a distinct functional state.",
+    "note": "A visual pattern is an observation. Its mechanism or meaning is an interpretation that needs additional evidence.",
+    "contrast": "A business chart may show higher sales after a campaign. It does not by itself show the campaign caused the increase.",
+    "question": "A result shows a difference between two groups. What should you explain next?",
     "options": [
-      "And that's my last slide",
-      "So we propose one two-week test; today we need approval for it",
-      "As you can see, presentations are important"
+      "Only that the p-value is below 0.05",
+      "The comparison, uncertainty, study design and what causal conclusion is justified",
+      "That the difference proves the preferred explanation"
     ],
     "answer": 1,
-    "reason": "It states the implication and what should happen next.",
-    "practice": "Write an opening that introduces a real question, two logical transitions, and a conclusion that answers it.",
-    "field": "opening",
+    "reason": "The audience needs to evaluate the inference, not merely hear a statistical label.",
+    "practice": "Choose two findings. For each, write: question, method rationale, observed result, interpretation, limitation and next step.",
+    "field": "evidence",
     "criteria": [
-      "Establish relevance",
-      "Show where the talk is going",
-      "Close without a new argument"
+      "Separate observation from interpretation",
+      "Include validity-critical controls",
+      "State what the evidence cannot establish"
     ],
-    "say": "That brings us to the central question… So the decision today is…"
+    "say": "What we observed was… This supports… It does not yet show…",
+    "sourceBasis": "iBiology body-of-talk workflow; Alley assertion-evidence; ASA statistical integrity guidance."
   },
   {
     "id": "08",
-    "part": "BUILD",
-    "title": "Explain a figure without reading it",
-    "goal": "Turn data into an accurate spoken observation.",
-    "rule": "Tell people where to look before telling them what it means.",
-    "teach": "Identify the axes, units, groups, and time frame. Pause for the audience to find the comparison. Describe the visible pattern first, then interpretation, then uncertainty. Never imply causation from correlation alone. For percentages, report the denominator; for changes, give the baseline.",
-    "before": "This chart clearly proves that our intervention was successful.",
-    "after": "The horizontal axis shows weeks; the vertical axis shows completed tasks per day. The pilot team's median increased from 18 to 23. This comparison alone cannot separate the intervention from workload changes.",
-    "note": "A truncated axis can make a modest change look enormous. Error bars and sample size may change the conclusion.",
-    "contrast": "Scientific figure: show controls and uncertainty. Business chart: show denominator, period, and whether the change affects a decision.",
-    "question": "A line rises from 40% to 50%. Which is accurate?",
+    "part": "ARCHITECT",
+    "title": "Open with relevance",
+    "goal": "Help listeners understand why the question matters and what they need to follow.",
+    "rule": "A strong opening creates orientation before it creates excitement.",
+    "teach": "An opening can begin with a question, a concrete situation, a surprising but verified fact, a short story, or a direct statement. A hook is optional. It must lead into the actual question rather than distract from it. State why the subject matters to this audience, then provide only the background needed to understand the body. The best introduction may become clearer after you have chosen the results and argument. Do not use a dramatic statistic if you cannot verify its source or explain its relevance.",
+    "before": "Today I will talk about my research. First, here is a long history of the field.",
+    "after": "A single protein structure is useful, but it cannot show how often other conformations appear. Today I will explain how we sample those alternatives and what the current data can support.",
+    "note": "The opening is not a contest to surprise people. A direct question can be stronger than a theatrical hook.",
+    "contrast": "A proposal can open with the unmet need. A toast can open with a truthful memory. A technical update may simply state the decision required.",
+    "question": "Which opening is most trustworthy?",
     "options": [
-      "It rose by 10 percentage points",
-      "It rose by 10 percent",
-      "It doubled"
+      "A dramatic statistic with no source because it grabs attention",
+      "A question or fact that is accurate, relevant and leads to the talk's real purpose",
+      "A joke unrelated to the audience's reason for attending"
     ],
-    "answer": 0,
-    "reason": "40% to 50% is +10 percentage points, or a 25% relative increase.",
-    "practice": "Take a chart. Say one sentence for orientation, one for observation, one for uncertainty, and one for implication.",
-    "field": "visuals",
+    "answer": 1,
+    "reason": "Attention is useful only when it is connected to the message and the occasion.",
+    "practice": "Write two possible openings: one direct and one using a hook. For each, explain how it leads to your core message.",
+    "field": "opening",
     "criteria": [
-      "Identify units and groups",
-      "Describe before interpreting",
-      "Preserve uncertainty"
+      "Establish relevance",
+      "Ask or state the real question",
+      "Include only necessary background"
     ],
-    "say": "Start with the horizontal axis… What you can see is…"
+    "say": "The question we need to answer is…",
+    "sourceBasis": "iBiology introduction, hook and 'so what' lessons; Stanford content guidance."
   },
   {
     "id": "09",
-    "part": "BUILD",
-    "title": "Make slides that support thought",
-    "goal": "Decide what to show, say, and leave off.",
-    "rule": "A slide is a visual aid—not an autocue and not the presentation itself.",
-    "teach": "Give a slide one communicative job. Replace a wall of text with a claim plus evidence or a labeled diagram. Use readable contrast, accessible type sizes, and direct labels. Reveal a complex process in stages if that reduces confusion. Never hide material qualifications to create a cleaner slide. Notes, accessible handouts, and captions may contain more detail.",
-    "before": "Slide title: Results. Bullets: Methodology, Findings, Discussion, Limitations, Conclusions.",
-    "after": "Slide title: 'Completion fell at the identity-check step'. Show a labeled four-step funnel; discuss uncertainty aloud and provide full numbers in an accessible handout.",
-    "note": "Short labels near graphics can improve comprehension; 'never put words on slides' is not a rule.",
-    "contrast": "Data conference: annotate a figure's critical comparison. Software demo: show the real workflow, not product slogans.",
-    "question": "What most improves a hard-to-read result slide?",
+    "part": "ARCHITECT",
+    "title": "Close and title the talk",
+    "goal": "Make the takeaway and next step unmistakable.",
+    "rule": "The ending should resolve the audience's question, not introduce a new one.",
+    "teach": "A useful conclusion restates the core message, summarises the findings that support it, and names implications or next steps when appropriate. It can leave an open scientific question open. A title should help the right audience understand why the talk is relevant; accuracy comes before cleverness. Short titles are often easier to scan, but there is no universal word-count law. A call to action belongs when the occasion genuinely asks for one.",
+    "before": "That's all. Any questions? The title was 'Amazing new discoveries'.",
+    "after": "We sampled three structural clusters, but convergence remains unresolved. The next step is independent trajectories and a comparison with experimental data. This is what the present evidence supports.",
+    "note": "iBiology cites the peak–end experiment by Kahneman et al., which studied painful cold-water experiences—not presentation memory. Treat it as an analogy, not direct proof of a talk-ending effect.",
+    "contrast": "A project update ends with owner, decision and date. A research talk may end with the result and an unresolved question. A toast ends with recognition or a wish.",
+    "question": "Which conclusion is appropriate when evidence is incomplete?",
     "options": [
-      "Add a decorative stock photograph",
-      "Replace axes with animations",
-      "Give the graph a clear takeaway title and label the relevant comparison"
+      "Claim the proposed mechanism is proven to sound decisive",
+      "Restate what the data support, name the limitation and identify the next test",
+      "Introduce a new result that was not discussed"
     ],
-    "answer": 2,
-    "reason": "Useful cues guide attention without replacing the evidence.",
-    "practice": "Redesign a dense slide. Decide what appears, what you speak, and what becomes a handout.",
-    "field": "visuals",
+    "answer": 1,
+    "reason": "A strong ending can be decisive about uncertainty. It does not need a false resolution.",
+    "practice": "Draft a 3-sentence conclusion: core message, supporting findings, implication or next question. Write two accurate titles.",
+    "field": "ending",
     "criteria": [
-      "One clear visual job",
-      "Readable labels and honest scales",
-      "Speech and slide support each other"
+      "Return to the core message",
+      "Summarise the evidence honestly",
+      "Give a relevant implication or next step"
     ],
-    "say": "Focus on the blue line at the right. Here's why it matters."
+    "say": "The central finding is… The next question is…",
+    "sourceBasis": "iBiology ending/title lessons; Kahneman peak–end study used with an explicit transfer caveat."
   },
   {
     "id": "10",
-    "part": "DELIVER",
-    "title": "Speak naturally and deliberately",
-    "goal": "Make the spoken explanation followable.",
-    "rule": "Clear speech is a sequence of understandable decisions, not a performance of confidence.",
-    "teach": "Prefer sentences you can say in one breath. Stress the important contrast, use pauses for meaning, and allow time for the audience to inspect visuals. Gestures can guide attention; fixed gestures, continuous motion, and forced eye contact are not universal rules. Adapt to remote settings with clear verbal references and captions.",
-    "before": "It should be noted that the aforementioned results are indicative of a potentially substantial divergence.",
-    "after": "The two groups behaved differently. The difference is still uncertain.",
-    "note": "The clearest words depend on the room. An expert audience may prefer a precise technical term over a long paraphrase.",
-    "contrast": "Boardroom: state the proposed decision early. Seminar: slow down when introducing an unfamiliar method.",
-    "question": "A complicated chart appears. What next?",
+    "part": "RENDER",
+    "title": "Slides that make a point",
+    "goal": "Use visual material to support reasoning rather than compete with speech.",
+    "rule": "A slide should make one useful part of the argument easier to see.",
+    "teach": "A strong technical-slide default is assertion–evidence: write the takeaway as a sentence, then show the graph, image, diagram or comparison that supports it. Avoid a vague heading plus a dense bullet list when a labelled visual would be clearer. This is not a ban on words: definitions, equations, quotations, tables and accessible notes can be appropriate. Keep labels close to the relevant visual, use consistent hierarchy, and remove decoration that competes with the point. Some talks need no slides.",
+    "before": "RESULTS. Five bullets, a screenshot of a paper figure, a decorative stock photo and a paragraph of explanation.",
+    "after": "Title: 'The sampled trajectory visits three structural regions'. One clearly labelled projection, the sampling unit, the colour key and a brief caveat.",
+    "note": "Garner and Alley tested a combined slide-design package with 110 engineering students. It supports the approach in that context; it does not prove one slide template is right for every talk.",
+    "contrast": "A scientific talk may need a detailed plot. A wedding toast may need no slide. A product demo should show the real product, not a slogan-filled deck.",
+    "question": "What is the strongest improvement to a technical slide?",
     "options": [
-      "Keep speaking while everyone reads",
-      "Name the axes, pause, then explain the comparison",
-      "Read every value aloud"
+      "Add more decorative elements",
+      "Use a sentence that states the point and a visual that lets the audience inspect the evidence",
+      "Remove every word, including axes and labels"
     ],
     "answer": 1,
-    "reason": "A brief orientation and pause help align what people see and hear.",
-    "practice": "Deliver 60 seconds aloud. Mark where a pause improves meaning. Say it again with simpler sentences.",
-    "field": "delivery",
+    "reason": "A visual is only useful when the audience can interpret it and connect it to the claim.",
+    "practice": "Redesign one dense slide. Give it a message title, one primary visual, necessary labels and a small note about uncertainty or source.",
+    "field": "visuals",
     "criteria": [
-      "Audible main point",
-      "Meaningful pauses",
-      "Natural, precise wording"
+      "Make the slide's job clear",
+      "Keep labels and evidence readable",
+      "Remove only nonessential material"
     ],
-    "say": "Here's the part to pay attention to… [pause]"
+    "say": "The title states the point. Look at the comparison here…",
+    "sourceBasis": "Garner & Alley 2013; Mayer 2017 and 2025 meta-analysis; Garr Reynolds as practitioner design guidance."
   },
   {
     "id": "11",
-    "part": "DELIVER",
-    "title": "Rehearse, receive feedback, revise",
-    "goal": "Improve specific behavior with evidence.",
-    "rule": "Practise the whole task, not just the script.",
-    "teach": "First rehearse the logic without slides. Then time a realistic run with visuals and transitions. Ask a listener what the main point was, when they got lost, and which figure was hard to read. Revise one thing, retest, then prepare backup explanations and a shorter version. Memorizing every word can make recovery harder.",
-    "before": "I practised the first slide eight times. I hope the rest works.",
-    "after": "I delivered a timed run. A colleague misunderstood the control group, so I rewrote the figure introduction and tested it again.",
-    "note": "'You seemed confident' gives less direction than 'The axes were not introduced before the trend.'",
-    "contrast": "Scientific defense: rehearse methodological challenges. Product demo: rehearse the actual clicks and a fallback.",
-    "question": "Which feedback is actionable?",
+    "part": "RENDER",
+    "title": "Data people can inspect",
+    "goal": "Explain quantitative evidence without misleading the audience.",
+    "rule": "A clean chart is not enough. The audience must be able to judge what it measures.",
+    "teach": "Name the axes, units, sample, denominator, time window and comparison. Explain what error bars represent; do not assume the audience knows. Distinguish percentage points from percent change. Report effect size and uncertainty when relevant. A p-value is not the probability that a hypothesis is true, and statistical significance is not effect size or importance. Avoid truncated or inconsistent scales that exaggerate differences. State whether the data are observed, simulated or illustrative.",
+    "before": "The p-value is 0.03, so the treatment definitely works.",
+    "after": "The estimated difference is 8 percentage points in this sample. The confidence interval is wide, and the study was not designed to establish long-term effects.",
+    "note": "Training examples must label synthetic data. Do not let a made-up chart look like a real published result.",
+    "contrast": "A protein trajectory's cluster frequency is a sampling summary, not automatically an equilibrium population. A business conversion rate needs its denominator and period.",
+    "question": "A rate rises from 40% to 50%. What is the absolute change?",
     "options": [
-      "Be more engaging",
-      "The purpose was unclear until minute four",
-      "You are a natural"
+      "10 percentage points",
+      "10 percent",
+      "50 percentage points"
     ],
-    "answer": 1,
-    "reason": "It identifies an observable problem that can be revised.",
-    "practice": "Run a 3-minute version. Ask a listener for the takeaway and one confusing moment. Write one concrete change.",
-    "field": "feedback",
+    "answer": 0,
+    "reason": "50% − 40% = 10 percentage points. Relative to 40%, the increase is 25%.",
+    "practice": "Choose a figure. Write a spoken explanation in four parts: orientation, visible pattern, interpretation, uncertainty. Check all units and denominators.",
+    "field": "visuals",
     "criteria": [
-      "Do a timed run",
-      "Collect observable feedback",
-      "Change and retest one feature"
+      "Identify sample and units",
+      "Describe before interpreting",
+      "Represent uncertainty and scale honestly"
     ],
-    "say": "Which part was difficult to follow, and what did you think my main point was?"
+    "say": "The horizontal axis shows… The vertical axis measures… The comparison is…",
+    "sourceBasis": "ASA 2016 p-value statement; W3C accessibility; scientific data-communication practice."
   },
   {
     "id": "12",
-    "part": "DELIVER",
-    "title": "Nerves, time pressure, and recovery",
-    "goal": "Keep the message intact when conditions change.",
-    "rule": "Recovery is part of competence.",
-    "teach": "Prepare the opening, navigation, and final takeaway especially well; do not promise yourself zero nerves. If you lose your place, pause, find the last completed point, and continue. If a 15-minute slot becomes six, keep the message and essential evidence; remove secondary detail. If the projector fails, explain the result with words or a handout rather than inventing what a slide would show.",
-    "before": "I'm sorry, I completely forgot everything. Let me start again.",
-    "after": "Let me return to the question: did the new workflow reduce waiting time? The key comparison is…",
-    "note": "Some speaking anxiety benefits from structured practice or professional support; this course does not diagnose or treat it.",
-    "contrast": "Online: keep a downloadable summary and a non-video fallback. Live product demo: state when the product has failed, then show a saved verified result if available.",
-    "question": "Your 15-minute talk is reduced to six. What do you do?",
+    "part": "RENDER",
+    "title": "Words that travel",
+    "goal": "Make spoken explanations precise and understandable in real time.",
+    "rule": "Use the simplest words that preserve the exact meaning.",
+    "teach": "A listener cannot pause your sentence to look up an acronym. Define essential terms at the moment they become necessary. Use a concrete example before an abstract explanation when that helps. An analogy is a bridge, not proof; explain where it stops working. Keep spoken sentences short enough to follow, signpost transitions, and repeat a key term when it helps listeners track the argument. Avoid removing necessary technical language from an expert talk.",
+    "before": "The ensemble exhibits conformational heterogeneity due to metastable basins in a multidimensional free-energy landscape.",
+    "after": "The protein samples more than one shape. Some shapes appear more often than others under these conditions. The simulation suggests several structural groups, but we have not shown that each group has a distinct function.",
+    "note": "Plain language is not vague language. Keep the scientific term when it is the most precise term, and define it.",
+    "contrast": "For a specialist, define the exact statistical model. For a public audience, explain what the model helps us predict and what it cannot predict.",
+    "question": "What should you do with an essential technical term?",
     "options": [
-      "Speak 2.5 times faster",
-      "Keep the core claim and critical evidence; cut the rest",
-      "Skip every limitation"
+      "Avoid it even if it is the precise term",
+      "Use it without explanation because the audience should know",
+      "Introduce it, define it briefly, then use it consistently"
     ],
-    "answer": 1,
-    "reason": "Compression is a decision about content, not delivery speed or honesty.",
-    "practice": "Prepare a six-minute and a one-minute route through the same presentation.",
-    "field": "contingency",
+    "answer": 2,
+    "reason": "The goal is access to precise meaning, not the removal of expertise.",
+    "practice": "Choose three terms from your field. Write an expert definition, a plain-language explanation and an analogy with its limit.",
+    "field": "language",
     "criteria": [
-      "Preserve the essential point",
-      "Keep a meaningful limitation",
-      "Practise one technical fallback"
+      "Define essential jargon",
+      "Use examples without distorting meaning",
+      "Make transitions audible"
     ],
-    "say": "We have less time, so I'll focus on the finding and what it means."
+    "say": "In this talk, when I say… I mean…",
+    "sourceBasis": "iBiology connection/jargon lessons; Stanford spoken communication guidance; AGU Watch Your Words toolkit."
   },
   {
     "id": "13",
-    "part": "RESPOND",
-    "title": "Answer questions without bluffing",
-    "goal": "Listen, clarify and reason with the audience.",
-    "rule": "An honest boundary is a good answer.",
-    "teach": "Let the question finish. Restate it if ambiguous. Give the answer first, cite the evidence, and acknowledge what you do not know. Separate disagreement about facts from disagreement about priorities. You can offer to investigate later without claiming proof or promising nonexistent work.",
-    "before": "Yes, the model definitely generalizes to every condition.",
-    "after": "We tested two conditions, so I cannot claim it generalizes beyond them. The next test would be…",
-    "note": "A question may reveal a real flaw. The correct outcome may be revising the claim.",
-    "contrast": "Research: distinguish measured outcome from proposed mechanism. Business: distinguish a disputed assumption from a different risk tolerance.",
-    "question": "An audience member asks about an unmeasured outcome. Best reply?",
+    "part": "RENDER",
+    "title": "Story, attention and ethical persuasion",
+    "goal": "Use narrative to create relevance while keeping evidence and audience agency intact.",
+    "rule": "A story can help people care. Evidence must still show what is true.",
+    "teach": "Narrative can organise information around a question, a change in understanding or a human consequence. A short vignette may make a research process tangible. A persuasive talk can use contrast between the current state and a possible alternative, but it must treat objections fairly and make its sources visible. Meta-analyses find modest narrative effects on beliefs, attitudes and intentions; comparisons of statistical and narrative evidence suggest that their influence depends on the outcome. Do not invent suspense, overstate impact or hide counterevidence.",
+    "before": "I will tell a dramatic story and use it to prove that our intervention works.",
+    "after": "I will use one real user example to explain the problem, then show the study data and limitations needed to judge whether the intervention helps.",
+    "note": "Anecdotes can illustrate an experience; they cannot establish how common it is or prove causation.",
+    "contrast": "A research seminar uses a narrative to explain the investigation. A proposal uses a fair argument to support a decision. A toast uses a truthful memory to honour someone.",
+    "question": "Which combination is most responsible in a persuasive presentation?",
     "options": [
-      "That outcome probably improved too",
-      "We didn't measure it, so I can't say; here is what we did measure",
-      "Avoid the question"
+      "A compelling anecdote treated as proof",
+      "A verified story or example, representative evidence, fair treatment of objections and a clear request",
+      "Only emotional language, because facts reduce engagement"
     ],
     "answer": 1,
-    "reason": "It preserves credibility and makes the evidence boundary explicit.",
-    "practice": "Write and speak a reply to a hostile question, an unclear question, and one you cannot answer.",
-    "field": "questions",
+    "reason": "Narrative and evidence do different jobs. Ethical persuasion respects the audience's ability to judge.",
+    "practice": "Write one true vignette and one evidence-based claim. Explain what the vignette illustrates and what the evidence must establish.",
+    "field": "story",
     "criteria": [
-      "Answer or clarify directly",
-      "Mark evidence limits",
-      "Avoid fake certainty"
+      "Use only truthful examples",
+      "Separate illustration from evidence",
+      "Represent counterarguments fairly"
     ],
-    "say": "We didn't test that directly. What our data support is…"
+    "say": "Here is one example of the problem. The broader evidence shows…",
+    "sourceBasis": "Braddock & Dillard 2016; Zebregs et al. 2015; OpenStax ethics; Duarte as a practitioner framework."
   },
   {
     "id": "14",
-    "part": "TRANSFER",
-    "title": "Same principle, different room",
-    "goal": "Adapt a method rather than copy a formula.",
-    "rule": "Keep the communication job. Change the way you do it.",
-    "teach": "Compare a conference talk, lab meeting, business briefing, product demo, classroom, investor pitch, poster, community address, remote meeting, and toast. The shared questions are: whom is this for, what change matters, what support is appropriate? The evidence, tone, structure and length then diverge.",
-    "before": "I'll open every talk with a surprising statistic and close with three takeaways.",
-    "after": "For the lab meeting, show an unresolved control; for the pitch, state the opportunity and assumptions; for a toast, share a concrete memory and conclude with thanks.",
-    "note": "A scientific talk may legitimately conclude 'we do not yet know.' A ceremonial speech may need no slide or argument.",
-    "contrast": "Investor pitch: testable assumptions, opportunity and risks. Classroom: explanations in stages and checks for understanding.",
-    "question": "Which rule transfers across all presentation types?",
+    "part": "DELIVER & LEARN",
+    "title": "Speak so people can follow",
+    "goal": "Make the spoken experience clear while keeping a sustainable personal style.",
+    "rule": "Presence is not a personality type. It is the listener's ability to follow you.",
+    "teach": "Speak to the room rather than to the screen. Check that people can hear you. Use pauses around a new idea or important visual. Word-rate is not the same as idea-pace: a sentence can be spoken quickly but still be hard to process. Vary emphasis to show relationships. Use gestures if they help; avoid rigid rules about eye contact, movement or smiling. Cultural context, disability, neurodivergence and individual style all matter.",
+    "before": "I must move around, make eye contact with everyone and speak loudly to look confident.",
+    "after": "I will speak clearly, pause before the main comparison, face the audience when possible, and use the delivery style that lets me explain the idea accurately.",
+    "note": "There is no single body-language recipe for effective speaking. Adapt to the room and to what is comfortable and accessible.",
+    "contrast": "In a large room, use a microphone and allow time for slide reading. Online, verbalise visual references and check that remote listeners can follow.",
+    "question": "What is the most useful delivery target?",
     "options": [
-      "Always tell a personal story",
-      "Always use slides",
-      "Give the audience what they need for the occasion"
+      "Copy the gestures of a famous speaker",
+      "Make the message easy to hear and follow, using a style that suits the speaker and setting",
+      "Speak as quickly as possible to fit more information"
     ],
-    "answer": 2,
-    "reason": "The principle transfers. The technique changes.",
-    "practice": "Choose one topic and explain it to a specialist, a decision-maker, and a non-specialist. Compare what changed.",
-    "field": "context",
+    "answer": 1,
+    "reason": "Delivery techniques are means of supporting comprehension, not a performance costume.",
+    "practice": "Record a 60-second explanation. Listen for audibility, idea-pace, pauses, filler words and whether your main point is clear. Choose one change.",
+    "field": "delivery",
     "criteria": [
-      "Adapt vocabulary and evidence",
-      "Adapt structure to purpose",
-      "Avoid a fixed formula"
+      "Audible and followable speech",
+      "Meaningful pauses and signposts",
+      "Authentic, context-appropriate delivery"
     ],
-    "say": "For this audience, the important part is…"
+    "say": "Let me pause here. This is the important comparison…",
+    "sourceBasis": "Stanford delivery guidance; iBiology speaking style; general communication teaching."
   },
   {
     "id": "15",
-    "part": "APPLY",
-    "title": "Build, give, and improve your talk",
-    "goal": "Complete a presentation that fits a real occasion.",
-    "rule": "A finished talk is a tested explanation, not a filled-in template.",
-    "teach": "Choose a case below or use your own. Complete the blueprint. Build a one-minute version, a full version, and two potential Q&A responses. Deliver aloud to someone; ask them what they understood. Assess the result using the audience's actual task, revise, and present again.",
-    "before": "I wrote my script and learned it by heart, so I am finished.",
-    "after": "My listener got the main claim but missed the baseline. I changed the visual, explained the comparison earlier, and confirmed they now understood.",
-    "note": "Assessment is context-specific: scientific evidence and uncertainty; business decision and risk; teaching comprehension; ceremony sincerity.",
-    "contrast": "Research capstone: justify data interpretation. Product capstone: demonstrate a real user outcome and failure condition.",
-    "question": "What best demonstrates improvement?",
+    "part": "DELIVER & LEARN",
+    "title": "Rehearse and use feedback",
+    "goal": "Improve the talk through targeted practice and useful external feedback.",
+    "rule": "Practice is most useful when each run tests something specific.",
+    "teach": "Start by rehearsing the argument without slides. Then rehearse with the actual visuals and time limit. Record one section if useful. Ask a listener to identify the main message, where they became confused, and which evidence they found hard to interpret. Give the reviewer a small rubric rather than asking whether the talk was 'good'. Seek feedback from someone who resembles the intended audience and, when needed, a subject expert. Revise and test again.",
+    "before": "I will read my script several times and ask if people liked it.",
+    "after": "I will run a timed version, ask a labmate to explain my main claim, ask a non-specialist where they got lost, revise the figure explanation, and repeat the section.",
+    "note": "Studies show that structured feedback can help, but not every feedback tool or vague comment improves performance. Specificity and context matter.",
+    "contrast": "A scientific talk may need both subject-expert and non-specialist feedback. A product demo needs a user to attempt the actual task.",
+    "question": "Which feedback is most actionable?",
     "options": [
-      "A greater number of slides",
-      "A clearer audience takeaway after a specific revision",
-      "A more complicated vocabulary"
+      "Be more confident",
+      "The audience did not know what the y-axis measured before the comparison",
+      "Great job"
     ],
     "answer": 1,
-    "reason": "Evidence of improved comprehension beats decorative sophistication.",
-    "practice": "Record or deliver your complete talk. Then document audience feedback and one revision in your blueprint.",
+    "reason": "It identifies a concrete comprehension problem that can be fixed and retested.",
+    "practice": "Plan two rehearsal runs. For each, specify the target, observer, timing and one question you will ask for feedback.",
+    "field": "feedback",
+    "criteria": [
+      "Rehearse under realistic conditions",
+      "Ask observable feedback questions",
+      "Revise and retest"
+    ],
+    "say": "What did you think the main point was? Where did you lose the thread?",
+    "sourceBasis": "Heiman et al. 2012; Kim et al. 2005; feedback RCT 2014; Ochoa & Dominguez 2020."
+  },
+  {
+    "id": "16",
+    "part": "DELIVER & LEARN",
+    "title": "Nerves, stagecraft and contingencies",
+    "goal": "Prepare for the conditions of delivery and recover when something goes wrong.",
+    "rule": "Preparation is not the promise that nothing will go wrong; it is knowing what to do next.",
+    "teach": "Some speakers feel anxious; others do not. Anxiety varies and can be reduced by different approaches, including gradual exposure and cognitive strategies. This course can suggest low-stakes practice, realistic rehearsal, and preparation of the opening and transitions; it is not treatment. Check room, screen, microphone, remote setup, time limit and accessibility needs. Bring a PDF backup. Decide what you will cut if time is shortened and how to continue if a visual or live demo fails.",
+    "before": "If the projector fails, my presentation is over.",
+    "after": "I will test the setup, keep a PDF backup, prepare a spoken explanation of the key figure, and know which details to omit if time is cut.",
+    "note": "For severe or life-limiting anxiety, a presentation course is not a substitute for appropriate professional support.",
+    "contrast": "For a remote talk, test screen sharing and captions. For a live demo, prepare a clearly labelled fallback that does not pretend a failed action succeeded.",
+    "question": "Your 15-minute slot becomes six minutes. What should you do?",
+    "options": [
+      "Speak 2.5 times faster",
+      "Keep the core message and essential evidence; cut secondary detail",
+      "Skip all limitations so the talk sounds stronger"
+    ],
+    "answer": 1,
+    "reason": "Good compression protects the message and honesty rather than increasing speed or hiding risk.",
+    "practice": "Make a stage checklist and a six-minute version of your talk. Identify one technical failure and one recovery plan.",
+    "field": "contingency",
+    "criteria": [
+      "Check room and technology",
+      "Prepare a realistic time-cut version",
+      "Choose a recovery plan"
+    ],
+    "say": "We have less time, so I will focus on the finding and what it means.",
+    "sourceBasis": "McWilliam et al. 2025 PSA intervention review; Stanford speech-anxiety guidance; iBiology stage preparation."
+  },
+  {
+    "id": "17",
+    "part": "DELIVER & LEARN",
+    "title": "Q&A as dialogue",
+    "goal": "Answer questions directly, accurately and without bluffing.",
+    "rule": "A good answer helps the questioner understand what is known and what remains open.",
+    "teach": "Listen to the full question. Identify whether it asks for clarification, evidence, method, implication, an alternative explanation or something you did not measure. If it is unclear, ask for clarification. Answer the direct question first, then explain the evidence. Distinguish your result from your interpretation. If you do not know, say so and identify what would be needed to find out. A challenge is not automatically an attack.",
+    "before": "Yes, our model definitely generalises to every condition.",
+    "after": "We tested two conditions, so I cannot claim generalisation beyond them. The next test would compare independent conditions and measure the relevant outcome.",
+    "note": "Do not promise future work you cannot commit to. A clear boundary is better than a confident invention.",
+    "contrast": "In a business briefing, clarify the assumption behind an objection. In a research seminar, distinguish an unmeasured outcome from a negative result.",
+    "question": "Someone asks about an outcome you did not measure. What is the best response?",
+    "options": [
+      "It probably improved too",
+      "We did not measure that outcome, so I cannot infer it from these data",
+      "Change the subject"
+    ],
+    "answer": 1,
+    "reason": "An honest limit preserves trust and shows what the evidence can actually support.",
+    "practice": "Prepare answers to three questions: one about methods, one challenging an assumption, and one outside your evidence. Practise clarifying before answering.",
+    "field": "questions",
+    "criteria": [
+      "Listen and clarify",
+      "Answer from evidence",
+      "State unknowns honestly"
+    ],
+    "say": "We did not measure that directly. What our data support is…",
+    "sourceBasis": "iBiology Q&A lesson; Stanford Q&A and oral communication guidance."
+  },
+  {
+    "id": "18",
+    "part": "DELIVER & LEARN",
+    "title": "Build, present and revise",
+    "goal": "Complete a talk that fits a real audience and purpose.",
+    "rule": "A finished presentation is a tested explanation, not a full slide deck.",
+    "teach": "Choose one context from the case library or use your own. Complete the presentation plan, build a short version, and rehearse it aloud. Use the rubric to collect feedback. Revise at least one substantive feature: the claim, structure, explanation, evidence or visual. Then present again. You may submit an outline instead of a recording; Artico does not automatically judge voice, charisma or scientific validity.",
+    "before": "I made the slides and memorised them, so the presentation is finished.",
+    "after": "My listener misunderstood the comparison. I clarified the axes, changed the title to state the finding and tested the explanation again.",
+    "note": "A presentation is ready when it serves its actual audience and purpose—not when every slide is decorated.",
+    "contrast": "A scientific capstone is judged by defensible reasoning. A toast by sincerity and fit. The rubric changes with the occasion.",
+    "question": "What is the strongest evidence that your presentation improved?",
+    "options": [
+      "It has more slides and animations",
+      "A listener can now state the main point and evaluate the evidence after a specific revision",
+      "The speaker memorised every sentence"
+    ],
+    "answer": 1,
+    "reason": "Improvement should be visible in the audience's experience and in the quality of the reasoning.",
+    "practice": "Deliver a 3–5 minute version. Ask one target listener to state the takeaway and one confusing moment. Revise, then deliver it again.",
     "field": "revision",
     "criteria": [
-      "Fit audience and occasion",
-      "Support key claims",
-      "Handle uncertainty and questions",
-      "Demonstrate one revision"
+      "Fit the occasion and audience",
+      "Support the core message honestly",
+      "Use feedback to make a meaningful revision"
     ],
-    "say": "The finding is… The evidence is… The limitation is… The next step is…"
+    "say": "The key message is… The evidence supports… The limitation is… The next step is…",
+    "sourceBasis": "iBiology's cumulative My Talk Plan; structured feedback research; Artico's integrated framework."
   }
 ]
 
 export const presentationCases = [
   {
     "id": "science",
-    "type": "Scientific conference · illustrative research",
-    "title": "A protein does not have only one shape",
-    "audience": "Interdisciplinary scientists",
-    "purpose": "Understand why ensembles matter and evaluate one exploratory result",
-    "message": "One static protein structure cannot describe all the conformations a molecule may sample.",
+    "type": "Scientific conference talk",
+    "title": "What does one protein structure leave out?",
+    "audience": "Interdisciplinary life scientists",
+    "purpose": "Explain why conformational ensembles matter and let listeners judge an exploratory result",
+    "message": "A single structure cannot describe all conformations sampled by a protein under specified conditions.",
     "logic": [
-      "Ask why one structure can be misleading",
-      "Introduce conformations and populations",
-      "Compare illustrative ensemble populations",
-      "Explain uncertainty and implication"
+      "Open with the limits of one structural snapshot",
+      "Define conformations and ensembles",
+      "Show a clearly labelled synthetic sampling example",
+      "Interpret only what the sampled trajectory supports",
+      "State sampling and functional limitations",
+      "Give the next validation step"
     ],
-    "opening": "A protein structure is a snapshot. But if the molecule moves, what does one snapshot miss?",
-    "evidence": "ILLUSTRATIVE DATA, not a real experiment: in 100 simulated snapshots, conformation A appears 62 times, B 27 times, and C 11 times. These proportions describe this simulation only.",
-    "visual": "A three-bar chart labeled A 62%, B 27%, C 11%; y-axis: share of sampled snapshots. State that the bars are not experimentally validated equilibrium probabilities.",
-    "limits": "The simulation may undersample rare states; the model and sampling protocol affect observed frequencies. Do not claim experimental confirmation.",
-    "ending": "One structure is useful; an ensemble asks a different question—what other shapes appear, and how often under these conditions?",
-    "question": "'How do you know the proportions are converged?' → 'I don't from one run. I would compare independent runs and sampling diagnostics before claiming convergence.'",
-    "revise": "Weak: 'We proved three functional states.' Improved: 'Our illustrative trajectory sampled three structural clusters; their function remains unknown.'",
-    "style": "QUESTION → EXPLANATION → ILLUSTRATIVE EVIDENCE → LIMITATION"
+    "opening": "A protein structure is a snapshot. What changes when we ask how many other shapes the molecule samples?",
+    "evidence": "SYNTHETIC TEACHING DATA ONLY: 100 sampled frames are grouped into three structural clusters. Counts describe this example trajectory, not experimentally established populations.",
+    "visual": "A three-bar chart labelled cluster A, B and C; axis says 'share of 100 sampled frames'. Add a visible note that these are synthetic training data and not equilibrium probabilities.",
+    "limits": "One trajectory may undersample rare states. Cluster identity does not establish function. Independent runs and experimental comparison are needed.",
+    "ending": "One structure is useful for a structural description; an ensemble asks which alternatives appear under the sampled conditions. Their biological roles remain a separate question.",
+    "question": "'How do you know these populations are converged?' → 'We do not from one trajectory. We need independent runs and sampling diagnostics before treating them as stable estimates.'",
+    "revise": "Weak: 'We proved three functional states.' Improved: 'This synthetic trajectory example contains three structural clusters; their functional roles are not established.'",
+    "style": "QUESTION → EXPLANATION → EVIDENCE → LIMITATION → NEXT TEST"
+  },
+  {
+    "id": "lab",
+    "type": "Lab meeting / project update",
+    "title": "What should the lab test next?",
+    "audience": "Collaborators who know the project",
+    "purpose": "Decide whether to repeat, extend or redirect an experiment",
+    "message": "The current result narrows the next experiment, but one unresolved control still affects interpretation.",
+    "logic": [
+      "State the decision needed today",
+      "Show the most relevant result",
+      "Explain the control and unresolved issue",
+      "Offer two next-step options",
+      "Recommend one action and owner"
+    ],
+    "opening": "I need a decision about the next experiment. The result narrows the options, but one control is still missing.",
+    "evidence": "Use the actual project result and include the control status. Do not invent sample sizes or effect estimates for this example.",
+    "visual": "One result figure, a small status table for completed/missing controls, and the proposed next-step decision.",
+    "limits": "A project update should not present an unfinished analysis as a confirmed finding. Mark preliminary data explicitly.",
+    "ending": "I recommend repeating the measurement with the missing control before scaling up. The decision today is whether to allocate the next two weeks to that test.",
+    "question": "'Why not proceed directly to the larger experiment?' → 'Because the unresolved control could change the interpretation; the smaller test reduces that uncertainty first.'",
+    "revise": "Weak: 'The experiment worked.' Improved: 'The signal is present, but we have not yet ruled out the control explanation.'",
+    "style": "DECISION → RESULT → UNCERTAINTY → NEXT ACTION"
+  },
+  {
+    "id": "defense",
+    "type": "Thesis defence / research job talk",
+    "title": "Show how you think as a researcher",
+    "audience": "A mixed committee of specialists and adjacent experts",
+    "purpose": "Demonstrate the significance, independence and limits of the research contribution",
+    "message": "The work answers one defined question and creates a defensible basis for the next research question.",
+    "logic": [
+      "Frame the scientific problem and gap",
+      "State the question and why it matters",
+      "Explain the design choices",
+      "Show the decisive evidence and alternatives",
+      "Defend the interpretation and limitations",
+      "Explain independent next steps"
+    ],
+    "opening": "The field can describe the structure, but we still need to understand how the system moves between states. That is the question this work addresses.",
+    "evidence": "Use actual thesis evidence, methods, controls and uncertainty. Keep additional analyses ready as backup material.",
+    "visual": "A clear research question, a logic diagram, decisive figures and one final contribution/limitations slide.",
+    "limits": "Do not claim independence or generality beyond what the work demonstrates. Distinguish completed work from future plans.",
+    "ending": "The thesis establishes these findings, leaves these questions open, and suggests this next test. Thank you; I welcome questions about the reasoning and evidence.",
+    "question": "'Why did you choose this method rather than the alternative?' → 'The choice follows from the question and the measurement it permits. The trade-off is…'",
+    "revise": "Weak: 'This project solved the problem.' Improved: 'This project resolves one part of the problem and establishes a method to investigate the next part.'",
+    "style": "QUESTION → DESIGN → EVIDENCE → CONTRIBUTION → OPEN QUESTIONS"
   },
   {
     "id": "business",
-    "type": "Business performance review · illustrative metrics",
-    "title": "Reduce support backlog without hiding trade-offs",
-    "audience": "Operations leadership",
-    "purpose": "Choose a two-week staffing trial",
-    "message": "A limited afternoon shift trial is more justified than a permanent schedule change.",
+    "type": "Business decision briefing",
+    "title": "Should the team run a two-week staffing trial?",
+    "audience": "Operations managers",
+    "purpose": "Approve or reject a reversible trial using explicit criteria",
+    "message": "A limited trial is more defensible than a permanent schedule change based on one short observation.",
     "logic": [
-      "Decision needed",
-      "Evidence and baseline",
-      "Alternative explanations",
-      "Trial and success criteria"
+      "State the decision required",
+      "Show baseline and period",
+      "Compare alternatives against criteria",
+      "Name costs and risks",
+      "Recommend a reversible trial",
+      "Set a review date and success measure"
     ],
-    "opening": "We need to decide whether afternoon coverage deserves a two-week trial.",
-    "evidence": "ILLUSTRATIVE DATA: 200 Monday tickets, 70 received 2–5 p.m.; 35 of those missed the 24-hour response target. Compare with earlier Mondays before extrapolating.",
-    "visual": "Hourly arrival bars with day and denominator; separate response-time chart with 24-hour target.",
-    "limits": "One Monday cannot establish a stable trend. Ticket complexity and staffing may confound the apparent peak.",
-    "ending": "Approve a limited trial with a predefined target, then decide using two weeks of comparable observations.",
-    "question": "'Why not hire now?' → 'We have one day of data. A reversible trial tests the pattern before a lasting cost.'",
-    "revise": "Weak: 'Afternoons are always overloaded.' Improved: 'This Monday's afternoon tickets were disproportionately late; we need more days to verify the pattern.'",
-    "style": "DECISION → EVIDENCE → RISKS → RECOMMENDATION"
+    "opening": "We need to decide whether afternoon coverage deserves a two-week trial, not whether to make a permanent staffing change today.",
+    "evidence": "ILLUSTRATIVE CASE ONLY: the figures used in a training slide must be labelled synthetic. A real briefing needs actual ticket counts, time windows, denominators and staffing costs.",
+    "visual": "Hourly arrival chart with labelled days and total tickets; separate response-time comparison; a small table of trial cost and success criteria.",
+    "limits": "One day cannot establish a recurring pattern. Workload, case complexity and staffing levels may explain the observed difference.",
+    "ending": "Approve a two-week trial with a predefined response-time target and review the results before any permanent change.",
+    "question": "'Why not hire now?' → 'We have not established a stable pattern. A reversible trial tests the assumption before committing to recurring cost.'",
+    "revise": "Weak: 'Afternoons are always overloaded.' Improved: 'This sample shows an afternoon peak; we need comparable days to establish whether it is typical.'",
+    "style": "DECISION → BASELINE → OPTIONS → RISKS → TEST"
   },
   {
     "id": "product",
     "type": "Product demonstration",
-    "title": "Show a better appointment-booking flow",
-    "audience": "Clinic administrators",
-    "purpose": "See whether the interface solves a real scheduling problem",
-    "message": "The proposed workflow can reduce repeated manual entry, pending validation with clinic users.",
+    "title": "Show the real booking workflow",
+    "audience": "Clinic administrators evaluating a prototype",
+    "purpose": "Let users judge whether a workflow reduces repeated work",
+    "message": "The prototype removes one repeated entry step, but usability and reliability still need testing.",
     "logic": [
-      "User's current difficulty",
-      "Live workflow from start to confirmation",
-      "Observed result",
-      "Limits and next test"
+      "Name the user's task",
+      "Show the starting state",
+      "Complete the real workflow",
+      "Show the result",
+      "State what is and is not implemented",
+      "Ask users to test the next task"
     ],
-    "opening": "A receptionist currently re-enters the same patient details twice. Let's try the task in the prototype.",
-    "evidence": "Demonstrate creating and confirming one appointment. Use sample records; time the task against a defined baseline only if actually measured.",
-    "visual": "Real task screens; a small progress label; a clearly indicated sample record.",
-    "limits": "One smooth demonstration does not prove usability, reliability or clinical compliance. State what is a prototype.",
-    "ending": "The workflow is promising; next we need usability tests with reception staff and a safety review.",
-    "question": "'What if the server fails?' → 'The prototype currently fails without offline booking; we won't claim otherwise. Here is the manual fallback.'",
-    "revise": "Weak: 'Revolutionary and effortless.' Improved: 'This removes one repeated entry step in the prototype; user testing will tell us whether it helps.'",
-    "style": "USER TASK → REAL DEMO → RESULT → LIMIT"
+    "opening": "A receptionist currently enters the same patient detail twice. Let's see whether this prototype removes that step.",
+    "evidence": "Demonstrate a real working prototype using sample records. Time the task only if a baseline has actually been measured.",
+    "visual": "Actual interface with clear cursor focus, task labels and a visible prototype disclaimer.",
+    "limits": "A successful demo does not prove reliability, usability or clinical compliance. State failure modes and what is not built.",
+    "ending": "The prototype looks promising for this task. The next step is usability testing with reception staff and a reliability review.",
+    "question": "'What if the server fails?' → 'Offline booking is not implemented. We need to define and test a safe fallback before deployment.'",
+    "revise": "Weak: 'This is effortless and revolutionary.' Improved: 'This prototype removes one repeated entry step; user testing will tell us whether it improves the task.'",
+    "style": "USER NEED → LIVE TASK → RESULT → LIMIT → USER TEST"
   },
   {
     "id": "teaching",
-    "type": "Classroom teaching",
-    "title": "Explain diffusion with something familiar",
+    "type": "Classroom explanation",
+    "title": "Explain diffusion without losing the science",
     "audience": "Secondary-school learners",
-    "purpose": "Understand the difference between particle motion and net spread",
-    "message": "Random movement can produce a predictable net spread from high to low concentration.",
+    "purpose": "Build a usable mental model of random motion and net spread",
+    "message": "Random particle motion can produce a net spread from a region of higher concentration to lower concentration.",
     "logic": [
-      "Observe dye spreading in still water",
-      "Notice random motion",
-      "Explain concentration difference",
-      "Check with a new situation"
+      "Show a simple phenomenon",
+      "Ask what learners observe",
+      "Explain random motion and concentration",
+      "Use a labelled diagram",
+      "Check a new prediction",
+      "Clarify where the analogy stops"
     ],
-    "opening": "Drop one small bit of food coloring into still water. What happens before anyone stirs?",
-    "evidence": "Describe a controlled classroom demonstration and a drawing with many particles on one side; no invented experiment results.",
-    "visual": "Three frames showing particles dispersing; labels: high concentration, low concentration, net movement.",
-    "limits": "The analogy does not describe every transport process; cells can also use energy-driven transport.",
-    "ending": "Individual motion is random, but a concentration difference explains the net spread. Now predict what happens if both sides start equal.",
-    "question": "'Do particles know where to go?' → 'No. They move randomly; more start on the crowded side, so more leave it overall.'",
-    "revise": "Weak: 'Diffusion is when things want equilibrium.' Improved: 'Particles move randomly; net movement reflects how many particles start in each region.'",
-    "style": "OBSERVE → EXPLAIN → CHECK"
+    "opening": "Imagine dropping one small amount of food colouring into still water. What happens before anyone stirs it?",
+    "evidence": "Use a classroom demonstration or a clearly labelled simulation. Do not claim a result was measured if it is only a drawing.",
+    "visual": "Three sequential diagrams of particles spreading; label high and low concentration and show that individual movement is random.",
+    "limits": "The analogy does not explain every transport process. Active transport and membrane-specific processes need separate explanations.",
+    "ending": "The particles do not know where to go. Their motion is random, but the overall distribution changes because of the concentration difference. What if both sides started equally concentrated?",
+    "question": "'Do particles know which way to move?' → 'No. Each moves randomly; the net pattern comes from the distribution of many particles.'",
+    "revise": "Weak: 'Diffusion is when particles want to spread out.' Improved: 'Particles move randomly; a concentration difference creates net movement across the population.'",
+    "style": "OBSERVE → EXPLAIN → MODEL → CHECK"
   },
   {
     "id": "proposal",
-    "type": "Persuasive community proposal",
-    "title": "Extend library hours on exam weeks",
-    "audience": "Town library board",
-    "purpose": "Authorize a reversible four-week pilot",
-    "message": "Try two extra evening hours during exam weeks and measure actual use before permanent expansion.",
+    "type": "Community proposal",
+    "title": "Test later library hours before making them permanent",
+    "audience": "Library board and local residents",
+    "purpose": "Approve a limited pilot and agree how it will be evaluated",
+    "message": "A four-week pilot can establish demand and cost before a permanent schedule change.",
     "logic": [
-      "Whose need is unmet",
-      "Evidence to collect",
-      "Pilot cost and safeguards",
-      "Decision and evaluation"
+      "Describe the unmet need",
+      "Separate reports from measured demand",
+      "Show the proposed pilot",
+      "State staffing, safety and cost trade-offs",
+      "Set evaluation criteria",
+      "Make a clear request"
     ],
-    "opening": "Students report needing a quiet place after 6 p.m. The board can test this without committing to year-round expansion.",
-    "evidence": "Use actual visitor counts, staffing costs and resident feedback when available. No number here represents a verified demand estimate.",
-    "visual": "A simple pilot timetable and cost table; separate assumptions from measured demand.",
-    "limits": "Demand and budget impact are not established in this hypothetical case; discuss staff safety and accessibility.",
-    "ending": "I request a four-week pilot, with a public review of visits, costs and staff feedback.",
-    "question": "'What if only five people come?' → 'Then the pilot gives us grounds not to extend it; we should agree on a threshold first.'",
-    "revise": "Weak: 'Everyone wants later hours.' Improved: 'Some residents report a need; a pilot can tell us whether it is widespread enough to justify the cost.'",
-    "style": "NEED → PROPOSAL → TRADE-OFFS → REQUEST"
+    "opening": "Residents have asked for a quiet place to study after 6 p.m. We can test demand without committing to year-round hours.",
+    "evidence": "Use real visitor counts, staffing costs and resident feedback when available. This training case contains no verified demand estimate.",
+    "visual": "A simple proposed timetable, cost categories and a small evaluation plan.",
+    "limits": "Demand, budget impact and staff availability are unknown in this hypothetical example. Do not claim universal support.",
+    "ending": "I request a four-week pilot and a public review of attendance, cost and staff feedback before a permanent decision.",
+    "question": "'What if hardly anyone comes?' → 'Then the pilot gives us evidence to stop or change the plan. We should agree on the threshold before starting.'",
+    "revise": "Weak: 'Everyone wants later hours.' Improved: 'Some residents have requested later hours; a pilot can test whether demand justifies the cost.'",
+    "style": "NEED → PILOT → TRADE-OFFS → EVALUATION → REQUEST"
   },
   {
     "id": "toast",
-    "type": "Ceremonial speech",
-    "title": "A farewell that sounds like a person",
-    "audience": "A colleague's friends and coworkers",
-    "purpose": "Honor a colleague sincerely",
-    "message": "We appreciate the patience and practical kindness Mina brought to the team.",
+    "type": "Special-occasion speech",
+    "title": "A farewell that honours a real person",
+    "audience": "Colleagues, friends and the person being recognised",
+    "purpose": "Recognise a contribution with sincerity and respect",
+    "message": "A specific act of kindness can show the lasting effect a colleague has had on a team.",
     "logic": [
-      "Set the occasion",
-      "Tell one specific, respectful story",
-      "Name what the story shows",
-      "Offer thanks and a wish"
+      "Name the occasion",
+      "Share one truthful, appropriate memory",
+      "Explain what it reveals",
+      "Recognise the person's contribution",
+      "Offer thanks or a wish"
     ],
     "opening": "On my first day here, I forgot almost every name. Mina noticed and quietly introduced everyone again.",
-    "evidence": "One truthful, permitted memory, not invented achievements or private details.",
-    "visual": "No slides needed; one photo only with the person's permission.",
-    "limits": "Keep private stories private. Avoid teasing that could embarrass the person being honored.",
-    "ending": "Mina, thank you for making it easier for other people to belong here. We're going to miss you.",
-    "question": "If asked to speak unexpectedly: use one true observation and a sincere thank you; do not invent a dramatic anecdote.",
-    "revise": "Weak: 'Mina is the best employee ever.' Improved: a specific example of how Mina helped a newcomer.",
-    "style": "MEMORY → MEANING → GRATITUDE"
+    "evidence": "Use a real memory that the speaker has permission to share. Do not invent achievements or disclose private details.",
+    "visual": "No slides are needed. Use a photo only with permission and only if it supports the occasion.",
+    "limits": "Avoid embarrassing jokes, private information or exaggerated praise that sounds insincere.",
+    "ending": "Mina, thank you for making it easier for other people to belong here. We will miss you.",
+    "question": "'What if you are asked to speak unexpectedly?' → 'Choose one true observation, say what it meant, and offer a sincere thank-you. Do not invent a story.'",
+    "revise": "Weak: 'Mina is the best colleague ever.' Improved: 'When I was new, Mina made sure I felt included. That small act shaped my first months here.'",
+    "style": "OCCASION → MEMORY → MEANING → RECOGNITION"
   }
 ]
 
 export const presentationSituations = [
   [
-    "Conference",
-    "Experts",
+    "Conference talk",
+    "Specialists and peers",
     "Evaluate a contribution",
-    "Question → method → evidence → interpretation",
-    "Controls and uncertainty; avoid overclaiming"
+    "Question → methods → evidence → interpretation",
+    "Controls, limitations and uncertainty"
   ],
   [
     "Lab meeting",
     "Collaborators",
-    "Decide what to test next",
-    "Problem → attempt → outcome → obstacle",
-    "Show negative results and unresolved issues"
+    "Choose the next experiment",
+    "Progress → result → obstacle → decision",
+    "Negative results and unresolved controls"
   ],
   [
-    "Journal club",
-    "Research peers",
-    "Critically examine published work",
-    "Question → design → findings → critique",
-    "Separate authors' claims from your evaluation"
+    "Thesis defence",
+    "Mixed committee",
+    "Assess the candidate's reasoning",
+    "Question → design → evidence → contribution",
+    "Defensible claims and independent reasoning"
+  ],
+  [
+    "Job talk",
+    "Hiring committee",
+    "Assess research vision and fit",
+    "Research programme → key result → future direction",
+    "Depth, independence and realistic plans"
   ],
   [
     "Business briefing",
     "Managers",
     "Make a decision",
-    "Decision → baseline → evidence → options",
-    "State assumptions and trade-offs"
+    "Decision → baseline → options → risks",
+    "Costs, assumptions and denominators"
   ],
   [
     "Product demo",
     "Users or buyers",
-    "Assess a workflow",
-    "User need → task → outcome → limit",
-    "Use a real prototype, not slogans"
-  ],
-  [
-    "Investor pitch",
-    "Investors",
-    "Assess opportunity and risks",
-    "Need → evidence → business model → ask",
-    "Assumptions are not traction"
+    "Judge a workflow",
+    "User task → real demo → outcome → limit",
+    "Actual product behaviour and failure modes"
   ],
   [
     "Classroom",
-    "Students",
-    "Build understanding",
-    "Observe → explain → practise → check",
-    "Teach prerequisites first"
+    "Learners",
+    "Understand and apply a concept",
+    "Phenomenon → explanation → practice → check",
+    "Prerequisites and comprehension"
   ],
   [
-    "Project update",
-    "Team",
-    "Coordinate next action",
-    "Progress → risk → decision → owner",
-    "Raise blockers early"
+    "Community proposal",
+    "Public board",
+    "Evaluate a proposed change",
+    "Need → evidence → trade-offs → request",
+    "Evidence quality and audience agency"
   ],
   [
-    "Community speech",
-    "Mixed public",
-    "Understand an issue or proposal",
-    "Shared issue → evidence → choices",
-    "Accessible terms, no invented consensus"
+    "Toast / ceremony",
+    "Friends and colleagues",
+    "Recognise a person or occasion",
+    "Memory → meaning → recognition",
+    "Truth, privacy and sincerity"
+  ],
+  [
+    "Poster session",
+    "Individual visitors",
+    "Explore a finding through dialogue",
+    "Short orientation → selected figure → discussion",
+    "Readable hierarchy and adaptable depth"
   ],
   [
     "Online talk",
-    "Remote participants",
-    "Comprehend without the room",
-    "Explicit verbal structure → visuals → checks",
-    "Caption, read labels, plan for failure"
+    "Remote audience",
+    "Follow the argument remotely",
+    "Verbal signposts → visual support → checks",
+    "Captions, audio, screen sharing and backup"
   ],
   [
-    "Poster",
-    "Individual visitor",
-    "Explore a finding in dialogue",
-    "Visitor question → relevant figure → discussion",
-    "Adapt depth as interest emerges"
-  ],
-  [
-    "Toast",
-    "Friends and colleagues",
-    "Honor a person or occasion",
-    "Specific memory → significance → thanks",
-    "Respect privacy; slides rarely necessary"
+    "Investor / funding pitch",
+    "Funders",
+    "Assess opportunity and risk",
+    "Problem → evidence → model → risks → ask",
+    "Separate traction from assumptions"
   ]
 ]
 
@@ -649,127 +811,508 @@ export const presentationPhrases = [
   [
     "State the point",
     "The main finding is…",
-    "Research",
-    "Do not use 'proves' unless the design really warrants it."
+    "Research / briefing",
+    "Use a claim that the evidence can support."
   ],
   [
-    "Move the logic",
-    "That raises a second question…",
+    "Introduce the question",
+    "The question we need to answer is…",
     "Any analytical talk",
-    "A transition should connect ideas, not just announce a slide."
+    "Give listeners a reason to follow the next section."
   ],
   [
-    "Orient a chart",
-    "The vertical axis shows…",
+    "Orient a figure",
+    "The horizontal axis shows…",
     "Research / business",
-    "Include units and what is being counted."
+    "Name units, sample and comparison."
   ],
   [
-    "Distinguish evidence",
-    "What we observed was… One interpretation is…",
+    "Separate observation",
+    "What we observed was…",
     "Research",
-    "Separate results from explanation."
+    "Do not smuggle interpretation into the description."
   ],
   [
-    "Admit limits",
+    "Mark an inference",
+    "This suggests…, but it does not establish…",
+    "Research",
+    "State the evidence boundary."
+  ],
+  [
+    "Explain a term",
+    "In this talk, when I say…, I mean…",
+    "Mixed audience",
+    "Define the term at the point it becomes necessary."
+  ],
+  [
+    "Transition",
+    "That raises a second question…",
+    "Any talk",
+    "Make the relationship between sections audible."
+  ],
+  [
+    "Handle uncertainty",
     "We have not tested that yet.",
     "Research / product",
-    "Do not turn missing evidence into a positive claim."
+    "Do not turn missing evidence into a positive result."
   ],
   [
     "Request a decision",
-    "Today I'm asking for approval to…",
-    "Business / proposal",
-    "Name the actual choice."
+    "Today I am asking for approval to…",
+    "Briefing / proposal",
+    "Name the actual choice and the trade-off."
   ],
   [
-    "Invite correction",
-    "Is there an assumption I'm missing?",
-    "Lab meeting",
-    "Make criticism useful rather than defensive."
-  ],
-  [
-    "Check understanding",
-    "How would this change if…?",
-    "Teaching",
-    "Check application, not only recall."
+    "Invite a question",
+    "Which assumption would you like me to unpack?",
+    "Q&A",
+    "Make discussion concrete rather than defensive."
   ],
   [
     "Recover your place",
     "Let me return to the main question.",
     "Any talk",
-    "Pause and continue without apologizing repeatedly."
-  ],
-  [
-    "Handle disagreement",
-    "Which assumption do you disagree with?",
-    "Business / Q&A",
-    "Find the disputed premise before rebutting."
-  ],
-  [
-    "Decline to bluff",
-    "I don't know. Here's what we could check.",
-    "Any Q&A",
-    "An honest answer is useful."
+    "Pause and continue without repeated apologies."
   ],
   [
     "Finish clearly",
-    "So our next step is…",
-    "Project / business",
-    "Do not add a new claim after the conclusion."
+    "The next step is…",
+    "Update / proposal",
+    "End with an appropriate implication or action."
   ]
 ]
 
 export const presentationSources = [
   {
-    "title": "Science Communication Lab · Share Your Research",
-    "url": "https://sciencecommunicationlab.org/research-skills/presentation-on-science/",
-    "principle": "Framing a scientific talk: audience, goals, central message; outlining, delivery, practice and questions.",
-    "use": "Adapted as original exercises across many types of speaking.",
-    "limit": "Course-specific worksheets and copyrighted graphics are not reproduced."
-  },
-  {
-    "title": "iBiology · Public transcripts and educator materials",
+    "title": "iBiology · Share Your Research: How to Give a Good Talk",
     "url": "https://www.ibiology.org/educators-resources/online-course/share-your-research/",
-    "principle": "Public transcript examples distinguish goal from message and demonstrate progressive message distillation.",
-    "use": "Artico's independent 60/30/15/8-second exercise follows the general idea.",
-    "limit": "Full course document, inaccessible login-only exercises and some downloads were not verified."
+    "kind": "Full source curriculum",
+    "summary": "Four modules, 22 core videos, 26 assessment prompts and a cumulative My Talk Plan. Strongest source for research-talk workflow.",
+    "use": "Scientific talk backbone; audience, goal, message, story, data, slides, delivery, feedback and Q&A.",
+    "limit": "Designed for research talks. Original course materials are CC BY-NC-ND 3.0; Artico links to them rather than copying or adapting them."
   },
   {
-    "title": "Stanford Oral Communication Program · Presentation Content",
-    "url": "https://oralcommprogram.stanford.edu/presentation-and-delivery/presentation-content",
-    "principle": "Audience, goal, environment and a coherent spoken structure.",
-    "use": "Planning questions and contrasting contexts.",
-    "limit": "The commonly suggested three main points are a heuristic, not a natural law."
+    "title": "Stand Up, Speak Out · The Practice and Ethics of Public Speaking",
+    "url": "https://open.umn.edu/opentextbooks/textbooks/stand-up-speak-out-the-practice-and-ethics-of-public-speaking",
+    "kind": "Open public-speaking textbook",
+    "summary": "Covers ethics, listening, audience, purpose, research, argument, speech organisation, language, delivery and informative/persuasive/ceremonial genres.",
+    "use": "Broadens the course beyond research seminars.",
+    "limit": "Foundational open textbook, not the final word on current digital design or accessibility. CC BY-NC-SA 3.0."
   },
   {
-    "title": "Stanford Oral Communication Program · Scientific Presentation",
-    "url": "https://oralcommprogram.stanford.edu/tutoring/scientific-presentation",
-    "principle": "Develop a narrative around evidence with varying depths of technical detail.",
-    "use": "Scientific example, audience adaptation and explanation.",
-    "limit": "Not every scientific talk needs a story-shaped arc."
+    "title": "Stanford Oral Communication Program",
+    "url": "https://oralcommprogram.stanford.edu/",
+    "kind": "University teaching guidance",
+    "summary": "Practical guidance on content, spoken structure, scientific talks, visuals, delivery, anxiety and rehearsal.",
+    "use": "Translate written logic into a followable live argument.",
+    "limit": "Professional teaching guidance; not every page is primary experimental research."
   },
   {
-    "title": "Richard Mayer · Using Multimedia for E-learning (2017)",
+    "title": "Garner & Alley (2013) · Assertion–Evidence slide study",
+    "url": "https://www.ijee.ie/articles/Vol29-6/23_ijee2791ns.pdf",
+    "kind": "Peer-reviewed study",
+    "summary": "A comparison involving 110 engineering students found better comprehension, fewer misconceptions, lower cognitive load and stronger delayed recall for an assertion–evidence slide package.",
+    "use": "Teach sentence-claim headlines supported by inspectable visual evidence.",
+    "limit": "The intervention bundled assertion–evidence with multimedia principles; one engineering-education context."
+  },
+  {
+    "title": "Mayer (2017) · Using multimedia for e-learning",
     "url": "https://doi.org/10.1111/jcal.12197",
-    "principle": "Signaling, coherence, contiguity, segmentation and other tested multimedia-learning principles.",
-    "use": "Direct visual labels, legible slides, and less irrelevant decoration.",
-    "limit": "Most findings arise in learning materials; effects depend on learners and setting."
+    "kind": "Research review",
+    "summary": "Reviews 12 research-based principles for instructional multimedia and the cognitive processes they aim to support.",
+    "use": "Coherence, signalling, contiguity, segmentation, pre-training and generative learning.",
+    "limit": "Research is about multimedia learning, not a universal rulebook for live talks."
+  },
+  {
+    "title": "Cromley & Chen (2025) · Meta-analysis of Mayer's multimedia research",
+    "url": "https://doi.org/10.1016/j.edurev.2025.100730",
+    "kind": "Peer-reviewed meta-analysis",
+    "summary": "92 Mayer-authored articles, 181 studies and 591 effects; overall g=.37 with substantial moderation by design, medium, learner and outcome.",
+    "use": "Apply design principles with attention to boundary conditions and active learning.",
+    "limit": "Analyses Mayer's own published corpus through 2022; not a meta-analysis of all live presentation designs."
+  },
+  {
+    "title": "Aurbach et al. (2018) · Half-Life Your Message",
+    "url": "https://doi.org/10.1177/1075547018781917",
+    "kind": "Open-access practice article",
+    "summary": "Describes a 60/30/15/8-second message-discovery exercise and the need for reflection afterwards.",
+    "use": "Message discovery and prioritisation.",
+    "limit": "An experience-based teaching tool, not a randomized efficacy trial or sound-bite formula."
+  },
+  {
+    "title": "Braddock & Dillard (2016) · Narrative persuasion meta-analysis",
+    "url": "https://doi.org/10.1080/03637751.2015.1128555",
+    "kind": "Peer-reviewed meta-analysis",
+    "summary": "Found small positive associations between narrative exposure and narrative-consistent beliefs, attitudes, intentions and behaviours.",
+    "use": "Explain why narrative can create relevance and engagement.",
+    "limit": "Effects are modest; narrative is not a substitute for factual evidence."
+  },
+  {
+    "title": "Zebregs et al. (2015) · Statistical versus narrative evidence",
+    "url": "https://doi.org/10.1080/10410236.2013.842528",
+    "kind": "Peer-reviewed meta-analysis",
+    "summary": "In health communication studies, statistical evidence had stronger effects on beliefs and attitudes; narrative evidence had stronger effects on intentions.",
+    "use": "Match the type of support to the outcome sought.",
+    "limit": "Specific to the studies and outcomes included; do not generalise mechanically to every presentation."
+  },
+  {
+    "title": "McWilliam et al. (2025) · Public-speaking-anxiety interventions",
+    "url": "https://doi.org/10.1080/00223980.2025.2459662",
+    "kind": "Systematic review and meta-analysis",
+    "summary": "26 studies and 2,253 participants; psychological interventions showed a positive average effect, with high heterogeneity.",
+    "use": "Support gradual practice and evidence-informed anxiety strategies.",
+    "limit": "A presentation course is not therapy; intervention effects vary by person and method."
+  },
+  {
+    "title": "Heiman et al. (2012) · Deliberate practice for oral presentations",
+    "url": "https://doi.org/10.3109/0142159X.2012.714879",
+    "kind": "Randomized educational study",
+    "summary": "Evaluated online instruction and deliberate practice for medical students' oral case presentation skills.",
+    "use": "Practice tasks should target specific skills and include realistic performance.",
+    "limit": "Clinical case presentations are a specific domain, not all public speaking."
+  },
+  {
+    "title": "Kim et al. (2005) · Feedback-card randomized trial",
+    "url": "https://doi.org/10.1111/j.1525-1497.2005.0140.x",
+    "kind": "Randomized controlled study",
+    "summary": "Feedback cards were feasible, but did not significantly improve the summative presentation score in that study.",
+    "use": "Show why the existence of a rubric does not guarantee improvement.",
+    "limit": "Single medical-school setting and study design."
+  },
+  {
+    "title": "Feedback on oral presentations (2014) · Randomized trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25349316/",
+    "kind": "Randomized controlled study",
+    "summary": "Detailed faculty feedback was associated with better later presentations than no formal feedback; a simple single-item condition did not show the same significant effect.",
+    "use": "Teach feedback that identifies observable behaviours.",
+    "limit": "Medical clerkship context; do not assume effect sizes transfer to all audiences."
+  },
+  {
+    "title": "Ochoa & Dominguez (2020) · Multimodal feedback tool",
+    "url": "https://doi.org/10.1111/bjet.12987",
+    "kind": "Randomized educational study",
+    "summary": "A semester-long study of 180 students found a small statistically significant effect on subsequent expert evaluation.",
+    "use": "Treat automated feedback as supplementary, not a replacement for human judgement.",
+    "limit": "Effects differed across dimensions of presentation skill."
+  },
+  {
+    "title": "Wasserstein & Lazar (2016) · ASA statement on p-values",
+    "url": "https://doi.org/10.1080/00031305.2016.1154108",
+    "kind": "Professional statistical statement",
+    "summary": "A p-value is not the probability that a hypothesis is true and does not measure effect size or importance.",
+    "use": "Teach honest interpretation of statistical evidence.",
+    "limit": "Statistical guidance, not a complete guide to every research design."
+  },
+  {
+    "title": "W3C · Web Content Accessibility Guidelines 2.2",
+    "url": "https://www.w3.org/TR/wcag/",
+    "kind": "Web standard",
+    "summary": "Includes requirements for colour use, contrast and captions for prerecorded synchronized media.",
+    "use": "Build accessible slides, online materials and video alternatives.",
+    "limit": "WCAG covers web content; live venue access also needs practical planning."
+  },
+  {
+    "title": "Garr Reynolds · Presentation Zen",
+    "url": "https://www.garrreynolds.com/tips",
+    "kind": "Practitioner framework",
+    "summary": "Restraint in preparation, simplicity in design and naturalness in delivery.",
+    "use": "Question whether each visual element helps the audience.",
+    "limit": "Professional design philosophy, not a controlled research model."
+  },
+  {
+    "title": "Nancy Duarte · Resonate",
+    "url": "https://www.wiley.com/en-us/resonate-present-visual-stories-that-transform-audiences-p-9781118008935",
+    "kind": "Practitioner framework",
+    "summary": "Audience-centred persuasive storytelling, contrast between current and possible states, and a clear call to action.",
+    "use": "Persuasive and change-oriented talks.",
+    "limit": "Not a universal story formula for science updates, teaching or ceremonial speaking."
   }
 ]
 
-export const presentationParts = ['FOUNDATIONS','FRAME','BUILD','DELIVER','RESPOND','TRANSFER','APPLY']
+export const presentationSourceVideos = [
+  {
+    "module": "01",
+    "title": "What Is a Good Research Talk?",
+    "video": "https://www.youtube.com/watch?v=AknZHQHaQic",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_what_is_a_good_research_talk.txt"
+  },
+  {
+    "module": "01",
+    "title": "The First Step in Building a Research Talk",
+    "video": "https://www.youtube.com/watch?v=CNcj2y03naE",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_first_step_in_building_a_research_talk.txt"
+  },
+  {
+    "module": "01",
+    "title": "Know Your Audience",
+    "video": "https://www.youtube.com/watch?v=F2GW150UJ4E",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_know_your_audience.txt"
+  },
+  {
+    "module": "01",
+    "title": "Know Your Goal",
+    "video": "https://www.youtube.com/watch?v=ydSxq0okuSM",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_know_your_goal.txt"
+  },
+  {
+    "module": "01",
+    "title": "Know and Distill Your Message",
+    "video": "https://www.youtube.com/watch?v=Nk62hE7xG_A",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_know_and_distill_your_message.txt"
+  },
+  {
+    "module": "01",
+    "title": "Know Your Speaking Style",
+    "video": "https://www.youtube.com/watch?v=uZctRI3tH3M",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_know_your_speaking_style.txt"
+  },
+  {
+    "module": "02",
+    "title": "Talks Are Not Papers",
+    "video": "https://www.youtube.com/watch?v=8QxaUvdes1E",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_talks_are_not_papers.txt"
+  },
+  {
+    "module": "02",
+    "title": "Your Talk as a Story",
+    "video": "https://www.youtube.com/watch?v=A5h7fF7gxjk",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_your_talk_as_a_story.txt"
+  },
+  {
+    "module": "02",
+    "title": "Storytelling Techniques",
+    "video": "https://www.youtube.com/watch?v=aKvq1rRjTgs",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_storytelling_techniques.txt"
+  },
+  {
+    "module": "02",
+    "title": "Starting to Build Your Slides",
+    "video": "https://www.youtube.com/watch?v=cA1Vvs-nMCo",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_starting_to_build_your_slides.txt"
+  },
+  {
+    "module": "02",
+    "title": "Building Effective Slides",
+    "video": "https://www.youtube.com/watch?v=J2uDiHeV-ZQ",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_building_effective_slides.txt"
+  },
+  {
+    "module": "02",
+    "title": "Body of the Talk",
+    "video": "https://www.youtube.com/watch?v=yDM4pc4RPkw",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_body_of_the_talk.txt"
+  },
+  {
+    "module": "03",
+    "title": "Introduction",
+    "video": "https://www.youtube.com/watch?v=-RrNaR2yHlA",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_introduction.txt"
+  },
+  {
+    "module": "03",
+    "title": "The Hook",
+    "video": "https://www.youtube.com/watch?v=EvtE-sVHHSw",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_the_hook.txt"
+  },
+  {
+    "module": "03",
+    "title": "So What?",
+    "video": "https://www.youtube.com/watch?v=iQVT8r3Gl6k",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_so_what.txt"
+  },
+  {
+    "module": "03",
+    "title": "Ending",
+    "video": "https://www.youtube.com/watch?v=pR_dNU-uAt4",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_ending.txt"
+  },
+  {
+    "module": "03",
+    "title": "Talk Titles",
+    "video": "https://www.youtube.com/watch?v=OD6dkKhBUf8",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_talk_titles.txt"
+  },
+  {
+    "module": "04",
+    "title": "Connecting With Your Audience",
+    "video": "https://www.youtube.com/watch?v=OOMamCrNNNg",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_connecting_with_your_audience.txt"
+  },
+  {
+    "module": "04",
+    "title": "Practice, Practice, Practice",
+    "video": "https://www.youtube.com/watch?v=-XAraXi_ZxU",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_practice_practice_practice.txt"
+  },
+  {
+    "module": "04",
+    "title": "Before Taking the Stage",
+    "video": "https://www.youtube.com/watch?v=2ameK6uoRMU",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_before_taking_the_stage.txt"
+  },
+  {
+    "module": "04",
+    "title": "Lessening the Nerves",
+    "video": "https://www.youtube.com/watch?v=CEEB6gDos8o",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_lessening_the_nerves.txt"
+  },
+  {
+    "module": "04",
+    "title": "Dealing with the Q&A",
+    "video": "https://www.youtube.com/watch?v=9cvHkV7z-nA",
+    "transcript": "https://www.ibiology.org/educator-resources/syr/resources_dealing_with_the_q_and_a.txt"
+  }
+]
+
+export const presentationWorksheets = [
+  {
+    "title": "Distilling Your Message",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/worksheet-distill-your-core-message.pdf",
+    "role": "Module 1 · message discovery"
+  },
+  {
+    "title": "Narrative Elements of Your Talk",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/handout-narrative-elements-of-your-talk.pdf",
+    "role": "Module 2 · research narrative"
+  },
+  {
+    "title": "Storytelling Techniques",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/handout-storytelling-techniques.pdf",
+    "role": "Module 2 · optional story vignettes"
+  },
+  {
+    "title": "Do's and Don'ts of Slide Design",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/handout-dos-and-donts-of-slide-design.pdf",
+    "role": "Module 2 · slide design"
+  },
+  {
+    "title": "Strategies to Connect with Your Audience",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/handout-strategies-to-connect-with-your-audience.pdf",
+    "role": "Module 4 · audience connection"
+  },
+  {
+    "title": "AGU Watch Your Words Toolkit",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/AGU-toolkit-watch-your-words-jargon.pdf",
+    "role": "Module 4 · jargon and language"
+  },
+  {
+    "title": "Getting Feedback Checklist",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/worksheet-checklist-for-getting-feedback.pdf",
+    "role": "Module 4 · rehearsal and feedback"
+  },
+  {
+    "title": "My Talk Plan Worksheet",
+    "url": "https://ibio-v2.s3-us-west-1.amazonaws.com/media/course/SYR/2020/worksheet-my-talk-plan.pdf",
+    "role": "Cumulative planning worksheet"
+  }
+]
+
+export const presentationParts = ['FRAME','ARCHITECT','RENDER','DELIVER & LEARN']
 
 export const presentationBlueprintFields = [
-
- ['type','Presentation type'], ['audience','Audience and occasion'], ['purpose','Purpose and success'], ['message','Core message'],
-
- ['background','Necessary background'],['structure','Logical structure'],['evidence','Claims, evidence, limitations'],
-
- ['explanation','Difficult idea explained'], ['visuals','Slide or visual plan'], ['opening','Opening, transitions, closing'],
-
- ['delivery','Delivery notes'], ['questions','Anticipated questions'], ['contingency','Time and technical fallback'],
-
- ['feedback','Rehearsal feedback'], ['revision','Revisions and next run']
-
+  [
+    "occasion",
+    "Occasion, format and time limit"
+  ],
+  [
+    "audience",
+    "Audience profile and prior knowledge"
+  ],
+  [
+    "audienceNeeds",
+    "Audience interests, concerns and likely objections"
+  ],
+  [
+    "constraints",
+    "Accessibility, venue and technology constraints"
+  ],
+  [
+    "goal",
+    "One or two presentation goals"
+  ],
+  [
+    "message",
+    "Core message — one defensible sentence"
+  ],
+  [
+    "soWhat",
+    "Why this audience should care"
+  ],
+  [
+    "evidence",
+    "Evidence that supports the message"
+  ],
+  [
+    "limits",
+    "Evidence limitations and open questions"
+  ],
+  [
+    "structure",
+    "Chosen structure and logical sequence"
+  ],
+  [
+    "narrative",
+    "Research narrative or explanatory path"
+  ],
+  [
+    "vignette",
+    "Optional story vignette or hook"
+  ],
+  [
+    "opening",
+    "Introduction and necessary background"
+  ],
+  [
+    "body",
+    "Body sections: claim, evidence, explanation, implication"
+  ],
+  [
+    "ending",
+    "Conclusion and next step"
+  ],
+  [
+    "title",
+    "Talk title"
+  ],
+  [
+    "visuals",
+    "Slide and visual plan"
+  ],
+  [
+    "dataCheck",
+    "Data-figure integrity checklist"
+  ],
+  [
+    "language",
+    "Jargon, definitions and analogies"
+  ],
+  [
+    "delivery",
+    "Delivery and speaking-style priorities"
+  ],
+  [
+    "rehearsal",
+    "Rehearsal plan"
+  ],
+  [
+    "feedback",
+    "Feedback observers and evaluation questions"
+  ],
+  [
+    "questions",
+    "Likely Q&A and evidence-based responses"
+  ],
+  [
+    "fallback",
+    "Venue and technology fallback"
+  ],
+  [
+    "review",
+    "Feedback received"
+  ],
+  [
+    "revision",
+    "Revisions made and next presentation goal"
+  ]
 ]
+

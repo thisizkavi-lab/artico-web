@@ -280,7 +280,7 @@ export default function GreetingsReferenceStudy({ audioProps, phrases = [] }) {
     if (recorded) audioProps?.onPlay(recorded.id)
     // Otherwise leave the text selection in place until original audio is ready.
   }, [audioProps, phrases])
-  return <div className="ip-reading ar-page">
+  return <div className="ip-reading ar-page ar-compact-study-notes">
     <section id="study-open" className="ar-section" aria-labelledby="ar-head-1">
       <SectionHead index="01" title="Start the conversation" titleJa="会話を始める" description={'Most conversations begin with something small: a greeting. It is a simple way to acknowledge someone and open the door to a conversation. Sometimes, all you need is a friendly “Hi.” Greetings can change depending on who you are talking to and when you meet.'} descriptionJa="会話は、小さなあいさつから始まることがよくあります。相手の存在を認めて、話し始めるきっかけを作る言葉です。Hi だけで十分なこともあります。相手との関係や時間帯によって表現を選びます。"/>
       <PhraseShelf title="Everyday greetings" titleJa="日常のあいさつ" options={shelfEveryday} note={noteEveryday} play={play}/>

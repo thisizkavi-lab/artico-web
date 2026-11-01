@@ -31,6 +31,7 @@ import { sectionPhraseIds, sectionPhraseArtwork } from './phraseSceneData'
 import SocialStudySection from './SocialStudySection'
 import Chapter06StudySection from './Chapter06StudySection'
 import { isStudyIntroduction, studyPhraseAnchors, usesSharedStudyLayout } from './socialStudyLayout'
+import './social-study-notes.css'
 
 const LessonContext = createContext(null)
 const useLesson = () => useContext(LessonContext)
@@ -368,7 +369,7 @@ function Study({ audioProps, focusedId }) {
     if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
   return (
-    <div className={`ip-reading ar-shared-study${lessonId === '02' ? ' ar-ch02-study' : ''}${lessonId === '06' ? ' ar-ch06-pilot' : ''}${Number(lessonId) >= 4 ? ' ar-polished-study' : ''}`}>
+    <div className={`ip-reading ar-shared-study ar-compact-study-notes${lessonId === '02' ? ' ar-ch02-study' : ''}${lessonId === '06' ? ' ar-ch06-pilot' : ''}${Number(lessonId) >= 4 ? ' ar-polished-study' : ''}`}>
       {lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
         <section
           className={`ip-section${sharedLayout && isStudyIntroduction(section) ? ' ar-study-introduction' : ''}`}

@@ -18,7 +18,8 @@ function Chapter06Conversation({ block, byId, audioProps, Audio, focusedId }) {
         const side = conversationSide(speakers, turn.speaker, index)
         return <li key={turn.id} className={`ar-ch06-turn is-${side}${focusedId === turn.id ? ' is-focused' : ''}`}
           id={`study-${turn.id}`} data-phrase-id={turn.id} tabIndex={-1}>
-          <span className="ar-ch06-avatar" aria-hidden="true">{turn.speaker?.slice(0, 1)}</span>
+          {turn.portrait && <img className="ar-ch06-avatar" src={`${import.meta.env.BASE_URL}assets/course/${turn.portrait}`}
+            width="28" height="28" alt="" />}
           <div className="ar-ch06-message">
             <span className="ar-ch06-speaker">{turn.speaker}</span>
             <div className="ar-ch06-bubble">

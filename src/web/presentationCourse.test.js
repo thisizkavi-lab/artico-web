@@ -15,6 +15,9 @@ import { parseRoute, sanitizeLearning } from './learning.js'
 test('Research-led curriculum has complete lesson, case and source coverage', () => {
   assert.equal(lessons.length, 18)
   assert.equal(new Set(lessons.map(lesson => lesson.id)).size, lessons.length)
+  const messageLesson=lessons.find(lesson=>lesson.id==='03')
+  assert.ok(messageLesson.practice.includes('15-word working version'),'source worksheet message constraint missing')
+  assert.ok(messageLesson.teach.includes('not a universal limit'),'15-word limit must remain a drafting aid, not a rule')
   assert.ok(lessons.every(lesson =>
     lesson.title && lesson.goal && lesson.rule && lesson.teach &&
     lesson.before && lesson.after && lesson.note && lesson.contrast &&

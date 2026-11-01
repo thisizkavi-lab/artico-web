@@ -50,6 +50,7 @@ export const chapter05Japanese = {
   "You got the job? No way! That's amazing!": "採用されたの？ まさか！ すごいね！",
   "Do you like escape rooms?": "脱出ゲームは好き？",
   "Not really. They're not my thing.": "そうでもないかな。あまり好みじゃないんだ。",
+  "Not really. It's not my thing.": "そうでもないかな。あまり好みじゃないんだ。",
   "What are you into?": "何にハマってるの？",
   "I'm into photography. I'd rather go for a walk and take pictures.": "写真にハマってるんだ。散歩しながら写真を撮る方がいいな。",
   "I like the location, but I think it's too small.": "場所は気に入ったけど、狭すぎると思う。",

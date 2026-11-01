@@ -26,7 +26,7 @@ const IntroductionsLesson = lazy(() => import('./IntroductionsLesson'))
 const destinations = [
   { id: 'home', label: 'Home', icon: 'home' },
   { id: 'courses', label: 'Learn', icon: 'book' },
-  { id: 'progress', label: 'Progress', icon: 'check' },
+  { id: 'progress', label: 'Progress', icon: 'progress' },
 ]
 
 function readLearning() {

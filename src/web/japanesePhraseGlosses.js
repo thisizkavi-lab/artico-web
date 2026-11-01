@@ -1,5 +1,6 @@
 // Editorial Japanese equivalents for Social Fluency. English is always the study target.
-import { vocabularyJapanese } from './vocabularySupport.js'
+import reviewedWords from './vocabularyJapaneseOverrides.json'
+import commonWords from './vocabularyJapaneseCommon.json'
 import { moreJapaneseGlosses } from './japanesePhraseGlosses07to10.js'
 // A gloss is a natural equivalent in context, not a word-for-word translation.
 export const japanesePhraseGlosses = {
@@ -150,7 +151,16 @@ export function japaneseGlossFor(item, lessonId) {
   ]);
   if (item.kind === 'word' && /^[A-Za-z][A-Za-z -]*$/.test(item.en) &&
       !ambiguous.has(item.en.toLowerCase().trim())) {
-    return vocabularyJapanese(item.en, 0) || '';
+    const curated = {
+      oil: '油', 'olive oil': 'オリーブオイル', novel: '小説',
+      mystery: 'ミステリー／推理小説', biography: '伝記',
+      autobiography: '自伝', fiction: 'フィクション／小説',
+      nonfiction: 'ノンフィクション', paperback: '文庫本／ペーパーバック',
+      hardcover: 'ハードカバー', subscription: '定期購読',
+      'out of stock': '品切れ', whisk: '泡立て器',
+    };
+    return curated[item.en.toLowerCase().trim()] ||
+      reviewedWords[item.en] || commonWords[item.en] || '';
   }
   return '';
 }

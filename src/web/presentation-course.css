@@ -236,3 +236,12 @@
  .ps-source-video{align-items:flex-start;flex-direction:column;gap:7px}
  .ps-source-video>div{gap:18px}
 }
+
+.ps-half-life-timer{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:20px;background:#f3f7fc;border:1px solid #dce5f0;border-radius:9px;margin:18px 0}
+.ps-half-life-timer>div:first-child{display:grid;gap:8px;flex:1;min-width:180px}
+.ps-half-life-timer strong{font:600 42px/1 Newsreader,Georgia,serif;color:#294d82;font-variant-numeric:tabular-nums}
+.ps-half-life-track{height:5px;background:#dbe4f1;border-radius:10px;overflow:hidden}
+.ps-half-life-track i{display:block;height:100%;background:#4776bd;transition:width .3s linear}
+.ps-half-life-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ps-half-life-controls button{font:inherit}
+.ps-half-life-complete{font-size:12px;color:#2f7659;font-weight:700}

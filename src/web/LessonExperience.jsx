@@ -18,6 +18,7 @@ import Chapter01Illustrated from './Chapter01Illustrated'
 import GreetingsReferenceStudy from './GreetingsReferenceStudy'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
 import Chapter03StudySection from './Chapter03Context'
+import Chapter11VisualBoard from './Chapter11VisualBoard'
 import './social-reference-study.css'
 import './phrase-study-context.css'
 import './introductions.css'
@@ -373,7 +374,9 @@ function Study({ audioProps, focusedId }) {
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2 id={`heading-${section.id}`}>{section.title}</h2>
           </div>
-          {lessonId === '03'
+          {lessonId === '11'
+            ? <Chapter11VisualBoard section={section} focusedId={focusedId} />
+            : lessonId === '03'
             ? <Chapter03StudySection sectionIndex={index} audioProps={audioProps} />
             : lessonId === '04'
               ? <ChapterPhraseStudySection section={section} sectionIndex={index} audioProps={audioProps} focusedId={focusedId} />

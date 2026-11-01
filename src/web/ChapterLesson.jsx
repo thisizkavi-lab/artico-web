@@ -40,6 +40,12 @@ function makeModel(source, t) {
           },
     ),
   }))
+  // Chapter 11 is an illustrated vocabulary atlas. Its empty introduction is
+  // deliberately omitted; study labels, audio and translations live on the boards.
+  if (source.id === '11') {
+    const index = sections.findIndex((section) => section.id === '11-study-0')
+    if (index !== -1) sections.splice(index, 1)
+  }
   // Chapter 03 teaches each expression inside the exchange that gives it meaning.
   if (source.id === '03') {
     const chapter03Titles = /[\u3040-\u30ff\u3400-\u9fff]/.test(source.study?.[0]?.title || '')

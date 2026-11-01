@@ -1,7 +1,21 @@
 import { useEffect, useMemo, useState } from 'react'
-import { smallTalkUnits as units, smallTalkLessons as lessons, smallTalkScenarios as scenes, fieldLadder, fieldWeek } from './smallTalkContent'
+import { smallTalkUnits as units, smallTalkLessons as lessons, smallTalkScenarios as scenes } from './smallTalkContent'
 import './storytelling.css'
 import './small-talk.css'
+
+const guideHref = (import.meta.env.BASE_URL || '/') + 'smalltalk-field-guide.html'
+const foundationCards = [
+  {no:'01',title:'What is small talk?',detail:'The subject can be ordinary. The purpose is social contact.',anchor:'foundation-01-what-is-small-talk'},
+  {no:'02',title:'Why it matters',detail:'Recognition, ease, familiarity, discovery, maintenance, and transition.',anchor:'foundation-02-why-small-talk-matters'},
+  {no:'03',title:'Why fluency is not enough',detail:'Language, social judgment, and interaction are different skills.',anchor:'foundation-03-why-fluency-is-not-enough'},
+  {no:'04',title:'What good small talk looks like',detail:'An exchange can be brief, grow naturally, or end respectfully.',anchor:'foundation-04-what-good-small-talk-looks-like'},
+]
+const guideUnits = [
+  {no:'I',title:'The moment',desc:'Recognize what a conversation is doing. Read the room. Find a natural opening.',anchor:'unit-i-the-moment',lessons:['See the social function','Read the room','Start with something you share']},
+  {no:'II',title:'The next sentence',desc:'Listen, respond, ask and share without turning it into an interview.',anchor:'unit-ii-the-next-sentence',lessons:['Respond to what they actually said','Ask a follow-up, not an interview','Share something without taking over','Move from one topic to another']},
+  {no:'III',title:'Two people, not one script',desc:'Recognize different responses. Repair awkwardness. Use humor with judgment.',anchor:'unit-iii-two-people-not-one-script',lessons:['Recognize interest without reading minds','Repair awkward moments','Humor, compliments, and personal topics']},
+  {no:'IV',title:'Go somewhere or end well',desc:'Move beyond the surface when welcome, or close naturally.',anchor:'unit-iv-go-somewhere-or-end-well',lessons:['Go a little deeper, if both people want to','Finish naturally and reconnect']},
+]
 
 const root = '/application/smalltalk'
 const pathFor = (id, mode='study') => root + '/' + id + '/' + mode
@@ -50,57 +64,79 @@ function ProgressDot({done}) {return <span className={'st-dot'+(done?' is-done':
 function Overview({learning}) {
   const completed = lessons.filter(l => learning.responses?.[doneKey(l.id)] === '1').length
   const resume = lessons.find(l => learning.responses?.[doneKey(l.id)] !== '1') ?? lessons.at(-1)
-  const [expanded,setExpanded]=useState('starting')
-  return <div className="aw-page st-page sm-page">
+  return <div className="aw-page st-page sm-page sm-field-guide">
     <a className="st-breadcrumb sm-return" href="#/application">← Back to Application</a>
-    <header className="st-hero">
-      <p className="ap-eyebrow">APPLICATION / CONVERSATION</p>
-      <h1>Small Talk</h1>
-      <p>Learn the choices that make everyday conversations natural. Practise without performing, pressuring, or memorizing a perfect script.</p>
-      <div className="st-actions">
-        <a className="st-primary" href={'#'+pathFor(resume.id,'study')}>{completed===0?'Start the course':'Continue learning'} <span aria-hidden="true">→</span></a>
-        {completed>0&&<a className="st-secondary" href={'#'+pathFor('12','practice')}>Open conversation lab</a>}
+    <header className="sm-field-cover">
+      <div className="sm-cover-content">
+        <p className="sm-field-kicker">ARTICO / FIELD GUIDES · SOCIAL CONVERSATION</p>
+        <h1>Small <em>Talk.</em></h1>
+        <div className="sm-cover-rule"/>
+        <p className="sm-cover-subtitle">The human side of conversation.</p>
+        <p className="sm-cover-description">A practical course in starting, building, and ending real conversations. For anyone—native speakers included.</p>
+        <div className="sm-cover-actions">
+          <a className="st-primary" href={guideHref}>Read the complete course <span aria-hidden="true">→</span></a>
+          <a className="sm-outline-action" href={'#'+pathFor(resume.id,'practice')}>{completed===0?'Try a speaking exercise':'Continue practice'}</a>
+        </div>
       </div>
-      <p className="st-meta">{completed} of {lessons.length} lessons practised · 11 skills + 1 conversation lab</p>
+      <div className="sm-cover-rings" aria-hidden="true"><span/><span/><span/></div>
     </header>
-    <section className="sm-intro" aria-labelledby="sm-what">
-      <Label>START HERE</Label>
-      <h2 id="sm-what">What is small talk?</h2>
-      <p>Small talk is a short, low-stakes exchange with someone you do not know well. It often starts from a situation you share: a class, an event, a line, or an activity. It helps people acknowledge each other, explore a safe common topic, or build familiarity through ordinary encounters.</p>
-      <p>It is not a speech, a trick to make someone like you, or a requirement to become friends. Sometimes a pleasant thirty-second chat is the whole interaction. Quiet is allowed. Neither person owes the other a conversation.</p>
-      <div className="sm-intro-divider"><strong>Knowing the words is not the same as using them.</strong><span>Timing, attention, uncertainty, and the willingness to try an imperfect exchange are all part of the skill. Role-play helps; real conversations provide a different kind of practice.</span></div>
-      <Label>THE PRACTICE LOOP</Label>
-      <ol className="sm-loop">
-        {['Learn one small move','Rehearse it in a safe scene','Try one suitable real exchange (optional)','Review facts rather than guesses','Adjust one thing'].map((s,i)=><li key={s}><span>{String(i+1).padStart(2,'0')}</span>{s}</li>)}
-      </ol>
-      <p className="sm-muted">A greeting plus one exchange counts. Measure your choices and practice—not whether somebody became your friend.</p>
+    <section className="sm-field-opening">
+      <Label>BEFORE THE FIRST HELLO</Label>
+      <h2>A language skill.<br/><em>A human skill.</em></h2>
+      <p className="sm-field-lead"><mark>Small talk is informal conversation whose main purpose is to establish, maintain, or gently develop a social connection.</mark></p>
+      <div className="sm-field-annotation"><strong>THE CORE DISTINCTION</strong><span>The topic may be information. The function may be social contact.</span></div>
+      <p>Knowing how to speak a language and knowing how to connect with people are different abilities. The course teaches the second skill, using natural spoken English.</p>
+      <div className="sm-field-conversation" aria-label="Example small talk before a meeting">
+        <span className="sm-field-conversation-label">A SMALL MOMENT / BEFORE A MEETING</span>
+        <div className="sm-field-line"><span>Alex</span><p>It's cold in here.</p></div>
+        <div className="sm-field-line"><span>Jordan</span><p>Seriously. I should've brought a sweater.</p></div>
+        <div className="sm-field-line"><span>Alex</span><p>Same. I thought it'd be warmer.</p></div>
+        <div className="sm-field-line"><span>Jordan</span><p>Hopefully they start soon.</p></div>
+      </div>
+      <p className="sm-field-caption">Neither person learned much about the temperature. They acknowledged each other and made the wait less anonymous. A short exchange can be complete in itself.</p>
     </section>
-    <div className="sm-section-header"><Label>COURSE CONTENTS</Label><h2>Build the skill, one decision at a time.</h2></div>
-    <div className="st-map">
-      {units.map((unit,i) => {
-        const done=unit.lessons.filter(id=>learning.responses?.[doneKey(id)]==='1').length
-        const open=expanded===unit.id
-        return <section className="st-unit" key={unit.id}>
-          <button type="button" className="st-unit-heading" aria-expanded={open} onClick={()=>setExpanded(open?'':unit.id)}>
-            <span className="st-unit-number">{String(i+1).padStart(2,'0')}</span>
-            <span className="st-unit-text"><strong>{unit.title}</strong><small>{unit.subtitle}</small></span>
-            <span className="st-unit-progress">{done}/{unit.lessons.length}</span>
-            <span className="st-chevron" aria-hidden="true">{open?'−':'+'}</span>
-          </button>
-          {open&&<div className="st-unit-lessons">
-            {unit.lessons.map(id=>{const l=lessons.find(v=>v.id===id);return <a className="st-lesson-link" href={'#'+pathFor(id)} key={id}>
-              <ProgressDot done={learning.responses?.[doneKey(id)]==='1'}/>
-              <span><strong>{id} · {l.title}</strong><small>{l.goal}</small></span><span aria-hidden="true">›</span></a>})}
-          </div>}
-        </section>
-      })}
-    </div>
-    <section className="sm-aftercourse">
-      <Label>AFTER THE LAB</Label>
-      <h2>Take it into real life—at your pace.</h2>
-      <p>A real interaction is optional, never a compulsory test. Start with observing. Repeat a step or skip one. Do not use people who must be polite as your default practice targets.</p>
-      <details className="sm-disclosure"><summary>See the seven-step real-world ladder</summary><ol>{fieldLadder.map(([title,copy])=><li key={title}><strong>{title}</strong><p>{copy}</p></li>)}</ol></details>
-      <details className="sm-disclosure"><summary>Optional seven-day practice plan</summary><div className="sm-week">{fieldWeek.map(([d,t])=><div key={d}><span>Day {d}</span>{t}</div>)}</div><p className="sm-muted">This is an invitation, not a streak. Missing a day erases nothing.</p></details>
+    <section className="sm-field-foundations" aria-labelledby="sm-foundation-title">
+      <header className="sm-section-heading"><Label>UNDERSTANDING SMALL TALK</Label><h2 id="sm-foundation-title">Begin with the purpose.</h2><p>Four foundations explain what people are doing when they talk, why it matters, and what counts as success.</p></header>
+      <div className="sm-foundation-grid">
+        {foundationCards.map(f=><a key={f.no} className="sm-foundation-card" href={guideHref+'#'+f.anchor}>
+          <span>FOUNDATION {f.no}</span><h3>{f.title}</h3><p>{f.detail}</p><small>Read chapter ↗</small>
+        </a>)}
+      </div>
+    </section>
+    <section className="sm-field-operating" aria-labelledby="sm-map-title">
+      <Label>THE CONVERSATION MAP</Label>
+      <h2 id="sm-map-title">Five moves. <em>One conversation.</em></h2>
+      <p>Notice → Open → Respond → Adjust → Finish. This is a teaching map, not a fixed script.</p>
+      <div className="sm-five-moves">{[
+        ['01','Notice','Is this a good moment?'],
+        ['02','Open','Begin with something shared.'],
+        ['03','Respond','Build on what was said.'],
+        ['04','Adjust','Notice how both people participate.'],
+        ['05','Finish','Continue, pause, or leave well.'],
+      ].map(([no,name,desc])=><div key={no}><span>{no}</span><strong>{name}</strong><small>{desc}</small></div>)}</div>
+      <a className="sm-text-link" href={guideHref+'#the-conversation-map-five-moves'}>Understand the full model ↗</a>
+    </section>
+    <section className="sm-field-chapters">
+      <header className="sm-section-heading"><Label>THE FIELD GUIDE / FOUR UNITS</Label><h2>Read it. Notice it. Use it.</h2><p>Every lesson has a core principle, examples, highlighted language, annotations, and a practical task.</p></header>
+      {guideUnits.map(u=><a key={u.no} className="sm-guide-unit" href={guideHref+'#'+u.anchor}>
+        <span className="sm-guide-no">{u.no}</span>
+        <div><h3>{u.title}</h3><p>{u.desc}</p><ol>{u.lessons.map(title=><li key={title}>{title}</li>)}</ol></div>
+        <span className="sm-guide-arrow">↗</span>
+      </a>)}
+      <div className="sm-guide-extras">
+        <a href={guideHref+'#capstone-six-complete-real-life-conversations'}>Six complete conversations <span>↗</span></a>
+        <a href={guideHref+'#practice-studio'}>Practice studio <span>↗</span></a>
+        <a href={guideHref+'#the-small-talk-phrase-library'}>Phrase library <span>↗</span></a>
+      </div>
+    </section>
+    <section className="sm-field-practice">
+      <header className="sm-section-heading"><Label>INTERACTIVE / PRACTICE</Label><h2>Make the next move.</h2><p>Use the 12 interactive skill exercises and conversation lab to practise judgment and spoken responses. These exercises complement the field guide.</p></header>
+      <div className="sm-practice-count"><strong>{completed}</strong><span>of {lessons.length} exercises practised<br/>Practice measures attempts, not social approval.</span></div>
+      <div className="sm-practice-list">{units.map((unit,i)=><section className="sm-practice-unit" key={unit.id}>
+        <h3><span>{String(i+1).padStart(2,'0')}</span>{unit.title}</h3>
+        {unit.lessons.map(id=>{const l=lessons.find(v=>v.id===id);return <a href={'#'+pathFor(id,'practice')} key={id}><ProgressDot done={learning.responses?.[doneKey(id)]==='1'}/><span>{l.title}</span><span aria-hidden="true">›</span></a>})}
+      </section>)}</div>
+      <div className="sm-field-last"><strong>One good exchange is enough.</strong><p>The aim is not to talk more. It is to recognize when talking is welcome, and participate well.</p><a className="st-primary" href={'#'+pathFor('12','practice')}>Open the conversation lab →</a></div>
     </section>
   </div>
 }

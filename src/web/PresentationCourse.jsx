@@ -345,6 +345,11 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
          <button className={'ps-complete '+(completed?'is-complete':'')} onClick={()=>update(prev=>({...prev,responses:{...prev.responses,[doneKey(lesson.id)]:completed?'':'yes'}}))}>{completed?'✓ Marked complete · undo':'Mark complete after practising'}</button>
         </> : <>
           <section className="ps-lesson-section"><span className="ps-kicker">UNDERSTAND</span><h2><Mark>{lesson.rule}</Mark></h2><p>{lesson.teach}</p><p className="ps-caution">{lesson.note}</p></section>
+          <details className="ps-lesson-source">
+            <summary>Source basis for this lesson</summary>
+            <p>{lesson.sourceBasis}</p>
+            <a href={root+'#sources'}>Open the full research and source library →</a>
+          </details>
           <section className="ps-lesson-section"><span className="ps-kicker">SEE THE DIFFERENCE</span><h2>Before & after</h2>
             <div className="ps-switch" role="group" aria-label="Comparison versions"><button onClick={()=>setComparison('before')} className={comparison==='before'?'active':''} aria-pressed={comparison==='before'}>Less useful</button><button onClick={()=>setComparison('after')} className={comparison==='after'?'active':''} aria-pressed={comparison==='after'}>Improved</button></div>
             <blockquote className={'ps-example '+(comparison==='before'?'ps-weak':'ps-strong')}>{comparison==='before'?lesson.before:lesson.after}</blockquote>

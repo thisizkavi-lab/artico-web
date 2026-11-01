@@ -8,6 +8,7 @@ import { introductionPhrases, introductionSections, introductionScenarios } from
 import { japaneseIntroduction } from '../src/course/locales/ja/introductions.js'
 import { greetingsModel } from '../src/course/greetings.js'
 import { localizeGreetings } from '../src/course/locales/ja/greetings.js'
+import { chapter05JapaneseFor } from '../src/web/chapter05Japanese.js'
 
 const read = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'))
 const catalog = await read('../src/course/catalog.json')
@@ -143,4 +144,26 @@ test('the greetings chapter curates Study and Practice presentation with full Ja
   assert(conversationPhraseIds.every((id) => japanese.test(ja.phrases.find((p) => p.id === id)?.ja ?? '')))
   assert(ja.scenarios.every((item) => japanese.test(item.title) && japanese.test(item.prompt)))
   assert.deepEqual(ja.scenarios.map((item) => item.id), greetingsModel.scenarios.map((item) => item.id))
+})
+
+test('Chapter 05 translates every English table example, phrase, and dialogue turn', async () => {
+  const source = await readFile(new URL('../src/course/locales/ja/chapters/05-opinions-and-preferences.md', import.meta.url), 'utf8')
+  const clean = (text) => text.replace(/\\?\*\*/g, '').replace(/\s+/g, ' ').trim()
+  const table = source.split('\n').filter((line) => /^\| \*\*/.test(line))
+  assert.equal(table.length, 23, 'check all four Chapter 05 study tables')
+  const conversations = [...source.matchAll(/^\*\*(?:Dev|Riley|Morgan):\*\*\s*(.+)$/gm)]
+  assert.equal(conversations.length, 16, 'check all four Chapter 05 conversation scenes')
+  const practiceExamples = source.split('\n').filter((line) => /^- \*\*/.test(line))
+  assert.equal(practiceExamples.length, 4, 'check four sample answers')
+  const expressions = [
+    ...table.flatMap((line) => line.split('|').slice(1, 3).map(clean)),
+    ...conversations.map((match) => clean(match[1])),
+    ...practiceExamples.map((line) => clean(line.replace(/^- /, ''))),
+    'I love it.', 'Both work for me.', "I don't have a preference.",
+    "I don't mind.", "I don't care.", "No way! I'm not paying that much.",
+  ]
+  for (const english of expressions) {
+    const japanese = chapter05JapaneseFor(english)
+    assert.match(japanese, /[\u3040-\u30ff\u3400-\u9fff]/, `Missing reviewed Japanese for: ${english}`)
+  }
 })

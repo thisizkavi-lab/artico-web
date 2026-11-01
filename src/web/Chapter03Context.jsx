@@ -161,6 +161,138 @@ const checks = [
   },
 ]
 
+// Context-specific Japanese support stays subordinate to the English models.
+// Do not turn discourse markers into one-to-one dictionary equivalents.
+const cardJapanese = {
+  "Well": {
+    "word": "そうですね／うーん",
+    "a": "映画、楽しめた？",
+    "b": "うーん、終わり方はよかったけど、最初のほうは退屈だった。"
+  },
+  "So": {
+    "word": "じゃあ／それで",
+    "a": "選択肢は全部検討したね。",
+    "b": "じゃあ、次はどうしようか？"
+  },
+  "Okay": {
+    "word": "わかった／いいよ",
+    "a": "今、そのメッセージを送ってくれる？",
+    "b": "わかった、メッセージを送るね。"
+  },
+  "I mean": {
+    "word": "というか／つまり",
+    "a": "高かった？",
+    "b": "高かったよ。というか、思っていたより高かった。"
+  },
+  "Actually": {
+    "word": "いや、実は／実際は",
+    "a": "会議は金曜日だよね？",
+    "b": "いや、会議は木曜日だよ。"
+  },
+  "I guess": {
+    "word": "〜かな／たぶん",
+    "a": "映画どうだった？",
+    "b": "まあまあだったかな。"
+  },
+  "kind of": {
+    "word": "ちょっと／まあまあ",
+    "a": "気に入った？",
+    "b": "まあ、ちょっと気に入ったかな。"
+  },
+  "to be honest": {
+    "word": "正直に言うと",
+    "a": "今夜来る？",
+    "b": "正直に言うと、疲れすぎて行けないんだ。"
+  },
+  "like": {
+    "word": "だいたい／〜くらい",
+    "a": "どれくらいかかった？",
+    "b": "20分くらいかかったよ。"
+  },
+  "was like": {
+    "word": "〜って思った／〜って感じだった",
+    "a": "着いたとき、どう思った？",
+    "b": "「ここで合ってる？」って思った。"
+  },
+  "you know": {
+    "word": "ほら／〜だよね",
+    "a": "大変な一日だったみたいだね。",
+    "b": "そういう日ってあるよね。"
+  },
+  "Uh-huh.": {
+    "word": "うんうん",
+    "a": "海岸まで電車で行ったんだ。",
+    "b": "うんうん。"
+  },
+  "Really?": {
+    "word": "本当に？",
+    "a": "採用されたよ！",
+    "b": "本当に？"
+  },
+  "Wow!": {
+    "word": "わあ、すごい！",
+    "a": "チケットが2枚当たったんだ。",
+    "b": "わあ、すごい！"
+  },
+  "Oh no!": {
+    "word": "えっ、それは大変！",
+    "a": "それで、バスに乗り遅れちゃった。",
+    "b": "うわ、それは大変！"
+  },
+  "That sounds fun.": {
+    "word": "楽しそうだね",
+    "a": "今週末、キャンプに行くんだ。",
+    "b": "楽しそうだね。"
+  }
+}
+
+const dialogueJapanese = {
+  "Did you enjoy the concert?": "コンサート、楽しめた？",
+  "Well, the music was great. The room was just too crowded.": "うん、音楽は最高だったけど、会場が混みすぎてた。",
+  "Oh, right.": "ああ、そうなんだ。",
+  "I mean, I enjoyed it, but I wouldn't choose that venue again.": "というか、楽しかったけど、あの会場にはもう行かないかな。",
+  "Was that the show on Friday?": "金曜日の公演だった？",
+  "Actually, it was on Thursday.": "いや、木曜日だったよ。",
+  "Would you go again?": "また行きたい？",
+  "I guess I would, just not at that venue.": "行きたいとは思うけど、あの会場は避けたいかな。",
+  "So, should we look for a smaller place next time?": "じゃあ、次はもっと小さい会場を探そうか？",
+  "Okay, let's do that.": "うん、そうしよう。",
+  "Are you coming to the meetup tonight?": "今夜の集まり、来る？",
+  "I'm kind of tired.": "ちょっと疲れてるんだ。",
+  "It's only an hour. Why not come?": "たった1時間だよ。来ない？",
+  "To be honest, I've had a long day.": "正直、今日は長い一日だったんだ。",
+  "What happened?": "何があったの？",
+  "The train was, like, twenty minutes late.": "電車が20分くらい遅れたんだ。",
+  "Again? What did you do?": "また？ それでどうしたの？",
+  "I was like, “Seriously? Not again!”": "「うそでしょ？ またなの？」って感じだった。",
+  "Sounds like a rough commute.": "大変な通勤だったね。",
+  "You know, just one of those days.": "ほら、そういう日ってあるよね。",
+  "We took the train to the coast.": "海岸まで電車で行ったんだ。",
+  "Uh-huh.": "うんうん。",
+  "But we got off at the wrong station.": "でも、違う駅で降りちゃったんだ。",
+  "Oh no! What happened next?": "えっ、大変！ それでどうなったの？",
+  "We walked to the beach. It was only ten minutes away.": "浜辺まで歩いたよ。そこから10分しかかからなかったんだ。",
+  "Oh, that's good.": "ああ、それならよかった。"
+}
+
+const checkJapanese = {
+  "The class starts at six,": {
+    "question": "授業は6時に始まるよね？",
+    "yes": "うん、そうだよ。",
+    "no": "違うよ、7時からだよ。"
+  },
+  "You're coming tomorrow,": {
+    "question": "明日来るんだよね？",
+    "yes": "うん、行くよ。",
+    "no": "いや、行けないんだ。"
+  },
+  "You haven't seen my bag,": {
+    "question": "私のバッグ、見てないよね？",
+    "yes": "うん、ドアのそばにあるよ。",
+    "no": "ううん、見てないよ。"
+  }
+}
+
 function Highlight({ text, match }) {
   const index = text.toLowerCase().indexOf(match.toLowerCase())
   if (index < 0) return text
@@ -192,21 +324,26 @@ function Speak({ lines, audioProps, kind = 'exchange' }) {
   </button>
 }
 
-function ChatTurn({ speaker, text, mark }) {
+function ChatTurn({ speaker, text, mark, japanese, language }) {
   return <div className={`ar-c03-chat-turn ar-c03-chat-${speaker === 'A' ? 'incoming' : 'outgoing'}`}>
     <img className="ar-c03-avatar" src={portrait(speaker)} width="35" height="35" alt={speaker === 'A' ? 'First speaker' : 'Second speaker'} loading="lazy"/>
     <div className="ar-c03-chat-bubble">
       <p lang="en">{mark ? <Highlight text={text} match={mark}/> : text}</p>
+      {language === 'ja' && japanese && <p className="ar-c03-chat-ja" lang="ja">{japanese}</p>}
     </div>
   </div>
 }
 
 function ContextCard({ item, audioProps, language }) {
   const mark = item.mark || item.word
+  const japanese = cardJapanese[item.word]
   return <article className="ar-c03-card">
     <div className="ar-c03-card-top">
       <div className="ar-c03-title-sound">
-        <h3 lang="en">{item.word}</h3>
+        <div className="ar-c03-heading-copy">
+          <h3 lang="en">{item.word}</h3>
+          {language === 'ja' && japanese?.word && <span className="ar-c03-word-ja" lang="ja">{japanese.word}</span>}
+        </div>
         <Speak lines={[item.word]} audioProps={audioProps} kind="word"/>
       </div>
     </div>
@@ -214,8 +351,8 @@ function ContextCard({ item, audioProps, language }) {
       <div className="ar-c03-exchange-audio">
         <Speak lines={[item.a, item.b]} audioProps={audioProps} kind="compact"/>
       </div>
-      <ChatTurn speaker="A" text={item.a}/>
-      <ChatTurn speaker="B" text={item.b} mark={mark}/>
+      <ChatTurn speaker="A" text={item.a} japanese={japanese?.a} language={language}/>
+      <ChatTurn speaker="B" text={item.b} mark={mark} japanese={japanese?.b} language={language}/>
     </div>
     <div className="ar-c03-idea">
       <strong>Note</strong>
@@ -241,7 +378,10 @@ function Dialogue({ rows, audioProps, label }) {
             <img className="ar-c03-transcript-avatar"
               src={portrait(who === 'Lee' ? 'B' : 'A')}
               width="26" height="26" alt={who} title={who} loading="lazy"/>
-            <p lang="en">{focus ? <Highlight text={line} match={focus}/> : line}</p>
+            <div className="ar-c03-transcript-copy">
+              <p lang="en">{focus ? <Highlight text={line} match={focus}/> : line}</p>
+              {language === 'ja' && dialogueJapanese[line] && <p className="ar-c03-transcript-ja" lang="ja">{dialogueJapanese[line]}</p>}
+            </div>
           </div>
         )}
       </div>
@@ -291,6 +431,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
     <div className="ar-c03-flows">
       {checks.map((item, i) => {
         const question = item.statement + ' ' + item.tag
+        const japanese = checkJapanese[item.statement]
         const positiveStatement = i !== 2
         return <article className="ar-c03-flow" key={i} aria-label={question}>
           <div className="ar-c03-flow-head">
@@ -307,6 +448,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
                 <Speak lines={[question]} audioProps={audioProps}/>
               </div>
               <p lang="en" className="ar-c03-question-text">{item.statement} <mark className="ar-c03-mark">{item.tag}</mark></p>
+              {language === 'ja' && japanese?.question && <p className="ar-c03-check-ja" lang="ja">{japanese.question}</p>}
             </div>
           </div>
           <div className="ar-c03-flow-arrow" aria-hidden="true"/>
@@ -319,11 +461,13 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
               <div className="ar-c03-response-path">
                 <span className="ar-c03-response-label">{language === 'ja' ? 'はい' : 'Yes'}</span>
                 <p lang="en">{item.yes}</p>
+                {language === 'ja' && japanese?.yes && <p className="ar-c03-check-ja" lang="ja">{japanese.yes}</p>}
                 <Speak lines={[question, item.yes]} audioProps={audioProps}/>
               </div>
               <div className="ar-c03-response-path">
                 <span className="ar-c03-response-label">{language === 'ja' ? 'いいえ' : 'No'}</span>
                 <p lang="en">{item.no}</p>
+                {language === 'ja' && japanese?.no && <p className="ar-c03-check-ja" lang="ja">{japanese.no}</p>}
                 <Speak lines={[question, item.no]} audioProps={audioProps}/>
               </div>
             </div>

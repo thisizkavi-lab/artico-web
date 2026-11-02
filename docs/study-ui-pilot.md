@@ -84,7 +84,7 @@ Apply the table pattern only to unordered lists with multiple rows that each beg
 
 Treat concise interpretive paragraphs following conversations as supporting notes. Keep the introduction above the illustration when it introduces the section. A term's first definition retains normal reading size; check its phrase-bank type and earlier section content before demoting an explanation. This also protects the vocabulary chapters' primary learning content. The approved custom layouts in Chapters 01–03, 06, 11, and 14 keep their own presentation logic.
 
-This pass adds 31 English and 32 Japanese contextual conversation headings, and 25 English and 51 Japanese comparison tables beyond the preceding Chapter 08/10 work. The Japanese source contains additional definition lists and conversation explanations. The chapter-by-chapter audit records 90 English and 508 Japanese supporting paragraphs newly assigned a note role. These are presentation changes; the compiled lesson files, practice data, and stable identifiers remain unchanged.
+Against the regenerated production lessons, this pass adds 26 English and 27 Japanese contextual conversation headings, and 22 English and 48 Japanese comparison tables beyond the preceding Chapter 08/10 work. The Japanese source contains additional definition lists and conversation explanations. The chapter-by-chapter audit records 88 English and 502 Japanese supporting paragraphs newly assigned a note role. These are presentation changes; the source lesson files, practice data, and stable identifiers remain unchanged. The committed JSON snapshots for Chapters 04/05 differ from their canonical Markdown, so the production audit is run after the same compilation step used by deployment.
 
 ## Carrying this forward after review
 

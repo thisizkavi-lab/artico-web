@@ -5,7 +5,7 @@
     <clipPath id="card-credit-clip"><use href="#card-credit-shape" /></clipPath>
     <filter id="card-credit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".2" /></filter>
   </defs>
-  
+
   <g xmlns="http://www.w3.org/2000/svg" id="card-layer-focal" filter="url(#card-credit-shadow)"><use href="#card-credit-shape" fill="url(#card-credit-card)" stroke="#1E2A3B" stroke-width="2.7" /><g clip-path="url(#card-credit-clip)"><path d="M51 118 C102 74 149 78 232 44 V138 H51Z" fill="#3D5F91" opacity=".52" /><path d="M62 61 C101 56 141 65 171 73" fill="none" stroke="#8EB0DE" stroke-width="5" opacity=".55" /></g><rect x="75" y="80" width="32" height="25" rx="4" fill="url(#card-credit-chip)" stroke="#1E2A3B" stroke-width="1.7" /><path d="M85 81 V104 M96 81 V104 M76 88 H106 M76 97 H106" stroke="#B55B28" stroke-width="1.4" /><path d="M139 116 H204" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".85" /><circle cx="209" cy="114" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4" /></g>
-  
+
   </g></svg><ellipse cx="818.0" cy="306" rx="77" ry="7" fill="#d9b993" opacity=".11"/><svg x="718.0" y="64" width="210" height="225" viewBox="99 36 171 171"><g xmlns="http://www.w3.org/2000/svg" stroke="#253C38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(83 20) scale(1.25)"><circle cx="81" cy="81" r="63" fill="#F8F5EF" /><circle cx="81" cy="81" r="55" fill="#F2E8C9" stroke="none" /><path d="M81 31v7M81 123v7M30 81h7M124 81h7M81 81V52M81 81h35" fill="none" /><circle cx="81" cy="81" r="4" fill="#253C38" /></g></g></svg></svg>

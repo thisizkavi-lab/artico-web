@@ -19,6 +19,9 @@ OUT = ROOT / 'public/assets/course/study-sections'
 OUT.mkdir(parents=True, exist_ok=True)
 SVG = 'http://www.w3.org/2000/svg'
 ET.register_namespace('', SVG)
+def write_svg(file, value):
+    file.write_text('\n'.join(line.rstrip() for line in value.splitlines())+'\n')
+
 plans = json.loads(subprocess.check_output(['node', '--input-type=module', '-e',
     "import {studyVisualPlans} from './scripts/study-visual-plans.mjs'; console.log(JSON.stringify(studyVisualPlans))"], cwd=ROOT))
 
@@ -269,7 +272,7 @@ for chapter,entries in plans.items():
         name=f'{section["id"]}.svg'
         title=section['title']
         safe_title=title.replace('&','&amp;').replace('<','&lt;')
-        (OUT/name).write_text(f'<svg xmlns="{SVG}" viewBox="0 0 960 360" width="960" height="360" role="img"><title>{safe_title}</title>{art}</svg>\n')
+        write_svg(OUT/name,f'<svg xmlns="{SVG}" viewBox="0 0 960 360" width="960" height="360" role="img"><title>{safe_title}</title>{art}</svg>')
         manifest[section['id']]={'file':f'study-sections/{name}','width':960,'height':360,
           'en':f'{title}: '+', '.join(n.replace('-',' ') for n in names),
           'ja':localized['study'][idx]['title']+'の場面と関連する道具を示す図'}
@@ -303,7 +306,7 @@ object_svg('pot')  # Distinct from a flowerpot in the kitchen vocabulary atlas.
 object_manifest={}
 for key,(view,inner) in cache.items():
     file=object_out/f'{key}.svg'
-    file.write_text(f'<svg xmlns="{SVG}" viewBox="{view}" width="180" height="150"><title>{key}</title>{inner}</svg>\n')
+    write_svg(file,f'<svg xmlns="{SVG}" viewBox="{view}" width="180" height="150"><title>{key}</title>{inner}</svg>')
     object_manifest[key]=f'study-objects/{key}.svg'
 for stale in object_out.glob('*.svg'):
     if stale.stem not in object_manifest: stale.unlink()

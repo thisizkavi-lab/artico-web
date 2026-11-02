@@ -5,7 +5,7 @@
     <clipPath id="coin-coin-clip"><use href="#coin-coin-upright" /></clipPath>
     <filter id="coin-coin-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".18" /></filter>
   </defs>
-  
+
   <g xmlns="http://www.w3.org/2000/svg" id="coin-layer-focal" filter="url(#coin-coin-shadow)"><use href="#coin-coin-upright" fill="url(#coin-coin-rim)" stroke="#1E2A3B" stroke-width="2.6" /><g clip-path="url(#coin-coin-clip)"><ellipse cx="132" cy="86" rx="28" ry="27" fill="url(#coin-coin-face)" /><path d="M146 57 C166 68 171 91 165 119 C160 135 145 143 131 140 C151 118 157 88 146 57Z" fill="#D49B2A" opacity=".55" /><ellipse cx="119" cy="73" rx="8" ry="13" transform="rotate(-25 119 73)" fill="#FFF6D7" opacity=".8" /></g><ellipse cx="132" cy="86" rx="23" ry="21" fill="none" stroke="#B55B28" stroke-width="1.7" /><path d="M123 84 Q132 74 141 84 Q132 94 123 84Z" fill="none" stroke="#B55B28" stroke-width="2" /><path d="M129 76 V94 M135 76 V94" stroke="#B55B28" stroke-width="1.3" /></g>
-  
+
   </g></svg>

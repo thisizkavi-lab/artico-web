@@ -1,3 +1,4 @@
+import { applicationPath, applicationMode } from './applicationNavigation'
 import { CourseIndex, CourseDirectory, CourseTree, scrollCourseTop } from './CourseNavigation'
 import { useEffect, useState } from 'react'
 import { useLanguage } from './Language'
@@ -133,17 +134,19 @@ function FictionalCase({ t }) {
   </section>
 }
 
-export default function AcademicCourse({ learning, update }) {
+export default function AcademicCourse({ route = {}, learning, update }) {
   const { language } = useLanguage()
   const locale = language === 'ja' ? 'ja' : 'en'
   const ja = locale === 'ja'
   const t = text[locale]
   const responses = learning.responses || {}
   const storedLocation = responses[repoKey('location')]
-  const [active,setActive] = useState(null)
-  const [mode,setMode] = useState('study')
-  const [draft,setDraft] = useState(() => active ? readAcademicDraft(window.localStorage,active) : '')
-  const [stored,setStored] = useState(true)
+  let storage
+  try { storage = window.localStorage } catch { storage = null }
+  const active = getAcademicLesson(route.lesson)?.id || null
+  const mode = applicationMode(route)
+  const [draft,setDraft] = useState(() => active ? readAcademicDraft(storage,active) : '')
+  const [stored,setStored] = useState(Boolean(storage))
   const [showModel,setShowModel] = useState(false)
   const [review,setReview] = useState([false,false,false])
   const [warning,setWarning] = useState('')
@@ -151,20 +154,20 @@ export default function AcademicCourse({ learning, update }) {
   const stage = current ? academicStages.find(s=>s.id===current.stage) : null
   const guided = current && academicGuidedActivities[current.id]
   const setResponse = (key,value) => update(prev=>({...prev,responses:{...prev.responses,[key]:value}}))
-  const select = (id,tab='study') => {
+  const select = (id,tab=mode) => {
     if(!getAcademicLesson(id)) return
-    setActive(id);setMode(tab)
-    setDraft(readAcademicDraft(window.localStorage,id))
-    setStored(true);setShowModel(false);setReview([false,false,false]);setWarning('')
+    window.location.hash = applicationPath({ id:'academic', lesson:id },tab)
+    setDraft(readAcademicDraft(storage,id))
+    setStored(Boolean(storage));setShowModel(false);setReview([false,false,false]);setWarning('')
     setResponse(repoKey('location'),id);scrollCourseTop()
   }
   const home = () => {
-    setActive(null);setWarning('');setResponse(repoKey('location'),'');scrollCourseTop()
+    window.location.hash = applicationPath({ id:'academic' },mode);setWarning('');setResponse(repoKey('location'),'');scrollCourseTop()
   }
   const edit = value => {
     const limited=value.slice(0,16000)
     setDraft(limited)
-    setStored(saveAcademicDraft(window.localStorage,active,limited))
+    setStored(saveAcademicDraft(storage,active,limited))
     if(warning) setWarning('')
   }
   const finish = () => {
@@ -173,7 +176,7 @@ export default function AcademicCourse({ learning, update }) {
     setWarning('')
     setResponse(repoKey('done',active),'1')
   }
-  const navigateTab = tab => {setMode(tab);setWarning('');scrollCourseTop()}
+  const navigateTab = tab => select(active,tab)
   const index=academicLessons.findIndex(l=>l.id===active)
   const currentJa=academicJapanese[active] || null
 
@@ -215,12 +218,7 @@ export default function AcademicCourse({ learning, update }) {
         <h1>{current.title}</h1>
         {ja && <p lang="ja" className="ac-lesson-ja">{current.ja}</p>}
         <p className="jc-question">{current.question}</p>
-        <div className="jc-switch" role="group" aria-label={ja?'学習モード':'Learning mode'}>
-          <button type="button" aria-pressed={mode==='study'} className={mode==='study'?'is-active':''} onClick={()=>navigateTab('study')}>{t.study}</button>
-          <button type="button" aria-pressed={mode==='practice'} className={mode==='practice'?'is-active':''} onClick={()=>navigateTab('practice')}>
-            {t.practice} {responses[repoKey('done',active)]==='1'?'✓':''}
-          </button>
-        </div>
+
         {mode==='study'?<div className="jc-reading">
           <section className="jc-section">
             <h2>{t.idea}</h2>

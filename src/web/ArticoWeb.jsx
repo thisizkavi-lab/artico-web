@@ -1,3 +1,5 @@
+import { applicationTrack } from './applicationTracks'
+import { applicationMode, applicationPath } from './applicationNavigation'
 import { breadcrumbItems } from './breadcrumbPaths'
 import Breadcrumbs from './Breadcrumbs.jsx'
 import { LanguageSelector, useLanguage } from './Language'
@@ -241,6 +243,16 @@ export default function ArticoWeb() {
   const lastFoundation = foundationSteps.find((step) =>
     learning.last?.startsWith(`/foundation/${step.id}/`),
   )
+  const applicationLocation = route.page === 'application' ? route : learning.last?.startsWith('/application/') ? parseRoute('#' + learning.last) : null
+  const applicationCourse = applicationLocation?.page === 'application' ? applicationTrack(applicationLocation.id) : null
+  const applicationTitle = applicationLocation?.exam === 'ielts' ? 'IELTS Academic' : applicationLocation?.exam === 'toeic' ? 'TOEIC Listening & Reading' : applicationCourse?.[language === 'ja' ? 'ja' : 'en']
+  const applicationHome = applicationLocation?.id === 'tests' && !applicationLocation.exam ? '/application/tests' : applicationLocation && applicationPath(applicationLocation, applicationMode(applicationLocation), { home:true })
+  const applicationItem = applicationLocation?.chapter || applicationLocation?.lesson || applicationLocation?.collection || applicationLocation?.category || applicationLocation?.area
+  const applicationItemLabel = applicationItem && applicationItem !== 'home'
+    ? applicationLocation?.chapter && /^\d+$/.test(applicationItem) ? t('Chapter {id}', { id:applicationItem })
+      : /^\d/.test(applicationItem) ? (language === 'ja' ? 'レッスン ' : 'Lesson ') + applicationItem
+      : applicationItem.charAt(0).toUpperCase() + applicationItem.slice(1).replace(/-/g,' ')
+    : ''
   let screen
   if (route.page === 'home') screen = <Home />
   else if (route.page === 'courses')
@@ -316,11 +328,13 @@ export default function ArticoWeb() {
         </nav>
         <div className="aw-divider" />
         <p className="aw-my-course">{t("MY COURSE")}</p>
-        <a className="aw-course-name" href={`#${lastStage.id === 'orientation' ? '/home' : lastStage.overview}`}>
-          {t(lastStage.title)}
+        <a className="aw-course-name" href={`#${applicationTitle ? applicationHome : lastStage.id === 'orientation' ? '/home' : lastStage.overview}`}>
+          {applicationTitle || t(lastStage.title)}
         </a>
         <p className="aw-course-status">
-          {lastChapter
+          {applicationTitle
+            ? applicationLocation.id === 'tests' && !applicationLocation.exam ? (language === 'ja' ? '試験を選ぶ' : 'Choose a test') : `${t(applicationMode(applicationLocation) === 'practice' ? 'Practice' : 'Study')}${applicationItemLabel ? ' · ' + applicationItemLabel : ''}`
+            : lastChapter
             ? `${t('Chapter {id}', { id: lastChapter.id })} · ${learning.last.includes('/practice') ? t("Practice") : t("Study")}`
             : lastFoundation
               ? `${language === 'ja' ? lastFoundation.ja : lastFoundation.en} · ${/\/(practice|chunks|whole)(\/|$)/.test(learning.last) ? t("Practice") : t("Study")}`

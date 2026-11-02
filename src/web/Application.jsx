@@ -1,3 +1,4 @@
+import ApplicationCourseShell from './ApplicationCourseShell'
 import { lazy, Suspense, useState } from 'react'
 import { useLanguage } from './Language'
 import { applicationTrack, applicationResponseKey } from './applicationTracks'
@@ -77,21 +78,27 @@ function TrackExercise({ track, language, learning, update }) {
   )
 }
 
-export default function Application({ route, learning, update }) {
+function CourseContent({ route, learning, update }) {
   const { language } = useLanguage()
   if (route.id === 'other-half') return <Suspense fallback={<div className="aw-page" role="status">Opening The Other Half of English…</div>}><OtherHalfCourse route={route}/></Suspense>
   if (route.id === 'tests' && route.exam === 'toeic') return <Suspense fallback={<div className="aw-page" role="status">Loading TOEIC…</div>}><ToeicCourse route={route}/></Suspense>
   if (route.id === 'tests') return <Suspense fallback={<div className="aw-page" role="status">Loading English Tests…</div>}><IeltsCourse route={route}/></Suspense>
   if (route.id === 'ideas') return <Suspense fallback={<div className="aw-page" role="status">Loading Ideas &amp; Expression…</div>}><IdeasCourse route={route}/></Suspense>
   if (route.id === 'reading') return <Suspense fallback={<div className="aw-page ap-page" role="status">Opening reading library…</div>}><ReadingCourse route={route}/></Suspense>
-  if (route.id === 'writing') return <WritingStudio />
+  if (route.id === 'writing') return <WritingStudio route={route} />
   if (route.id === 'smalltalk') return <SmallTalkCourse route={route} learning={learning} update={update} />
-  if (route.id === 'interviews') return <JobsCourse learning={learning} update={update} />
+  if (route.id === 'interviews') return <JobsCourse route={route} learning={learning} update={update} />
   if (route.id === 'storytelling') return <SmallTalkCourse route={{ ...route, id:'smalltalk', lesson:null }} learning={learning} update={update} />;
-  if (route.id === 'academic') return <AcademicCourse learning={learning} update={update} />
+  if (route.id === 'academic') return <AcademicCourse route={route} learning={learning} update={update} />
   if (route.id === 'presentations') return <PresentationCourse route={route} learning={learning} update={update} />
   const track = applicationTrack(route.id)
   if (!track) return null
   return <TrackExercise key={track.id} track={track} language={language}
     learning={learning} update={update}/>
+}
+
+export default function Application(props) {
+  const { route } = props
+  const content = <CourseContent {...props}/>
+  return route.id === 'tests' && (!route.exam || route.exam === 'ielts') ? content : <ApplicationCourseShell route={route}>{content}</ApplicationCourseShell>
 }

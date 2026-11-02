@@ -2,7 +2,6 @@ import { CourseDirectory } from './CourseNavigation'
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
-import { Segments } from './components'
 import { readingCollections as collections, readingTexts as texts, readingTextById as byId, readingTiers as tiers } from './readingContent'
 import './reading.css'
 
@@ -32,12 +31,14 @@ function Directory({mode,lang}) {
 function Home({mode,lang}) {
  return <><h1 className="cn-sr-only">Reading &amp; Understanding</h1><Directory mode={mode} lang={lang}/></>
 }
-function SavedWords({state,change,t}) {
+function SavedWords({state,change,t,mode}) {
+ const [revealed,setRevealed] = useState({})
+ const {language} = useLanguage(), ja = language === 'ja'
  const saved = Object.entries(state.saved)
  return <section className="rd-wordbank"><div className="rd-section-heading"><h1>{t.saved} <small>{saved.length}</small></h1></div>
- {saved.length === 0 ? <p className="rd-muted">{t.none}</p> : <div className="rd-saved-list">{saved.map(([id,entry]) => <div key={id}><strong>{entry.word}</strong><span>{entry.meaning}</span><button type="button" onClick={() => change(previous => {
+ {saved.length === 0 ? <p className="rd-muted">{t.none}</p> : <div className="rd-saved-list">{saved.map(([id,entry]) => <div key={id}><strong>{entry.word}</strong>{mode === 'practice' ? <><button type="button" onClick={() => setRevealed(previous => ({ ...previous, [id]:!previous[id] }))}>{revealed[id] ? (ja ? '意味を隠す' : 'Hide meaning') : (ja ? '意味を確認' : 'Reveal meaning')}</button>{revealed[id] && <span className="rd-recalled-meaning">{entry.meaning}</span>}</> : <><span>{entry.meaning}</span><button type="button" onClick={() => change(previous => {
   const words = {...previous.saved}; delete words[id]; return {...previous,saved:words}
- })}>{t.remove}</button></div>)}</div>}</section>
+ })}>{t.remove}</button></>}</div>)}</div>}</section>
 }
 function Collection({c,mode,state,t,lang}){
  const [tier,setTier]=useState('All'),items=texts.filter(v=>v.collection===c.id),available=tiers.filter(level=>items.some(v=>v.tier===level)),shown=tier==='All'?items:items.filter(v=>v.tier===tier)
@@ -132,8 +133,7 @@ export default function ReadingCourse({route}){
  const text=byId[route.text]?.collection===c?.id?byId[route.text]:null
  return <div className={'aw-page rd-page'+(text?' rd-wide':!c && route.collection !== 'saved' ? ' cn-index':'')}>
  {(c || route.collection === 'saved') && <nav className="rd-breadcrumb" aria-label="Reading breadcrumb"><a href="#/courses?application">{t.back}</a><span>/</span>{c?<a href={'#'+path('home',mode)}>Reading & Understanding</a>:<span>Reading & Understanding</span>}{c&&<><span>/</span>{text?<a href={'#'+path(c.id,mode)}>{c.title}</a>:<span>{c.title}</span>}</>}</nav>}
- {c && <div className="rd-modebar"><Segments items={[{value:'study',label:t.study},{value:'practice',label:t.practice}]} label="Reading Study or Practice" active={mode} onChange={v=>window.location.hash=path(c?.id||'home',v,text?.id)}/><a href={'#'+path('home',mode)}>{t.all}</a></div>}
- {route.collection === 'saved' ? <SavedWords state={state} change={change} t={t}/> : text?<Reader key={text.id+'-'+mode} text={text} mode={mode} state={state} change={change} t={t} lang={lang}/>:
+ {route.collection === 'saved' ? <SavedWords state={state} change={change} t={t} mode={mode}/> : text?<Reader key={text.id+'-'+mode} text={text} mode={mode} state={state} change={change} t={t} lang={lang}/>:
  c?<Collection key={c.id} c={c} mode={mode} state={state} t={t} lang={lang}/>:
  <Home state={state} change={change} mode={mode} t={t} lang={lang}/>}
  {(c || route.collection === 'saved') && <footer className="rd-footer">{t.note}{error?' · '+(lang==='ja'?'保存できませんでした。':'Device storage unavailable.'):''}</footer>}

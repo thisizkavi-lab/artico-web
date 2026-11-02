@@ -1,5 +1,6 @@
+import { applicationMode, applicationPath } from './applicationNavigation'
 import { applicationTrack } from './applicationTracks'
-import { ieltsArea, ieltsPath } from './ieltsNavigation'
+import { ieltsArea } from './ieltsNavigation'
 
 export function breadcrumbItems(route, { t = value => value, language = 'en', foundationTitle, stageTitle } = {}) {
   const ja = language === 'ja'
@@ -8,14 +9,16 @@ export function breadcrumbItems(route, { t = value => value, language = 'en', fo
   let items
   if (route.page === 'application') {
     items = [learn, application]
-    if (route.id) items.push({ label:ja ? applicationTrack(route.id)?.ja || route.id : applicationTrack(route.id)?.en || route.id, href:'#/application/' + route.id })
+    if (route.id) items.push({ label:ja ? applicationTrack(route.id)?.ja || route.id : applicationTrack(route.id)?.en || route.id, href:route.id === 'tests' ? '#/application/tests' : '#' + applicationPath(route, applicationMode(route), { home:true }) })
     if (route.exam) {
-      items.push({ label:route.exam === 'ielts' ? 'IELTS Academic' : 'TOEIC Listening & Reading', href:route.exam === 'ielts' ? '#' + ieltsPath('home', route.view) : '#/application/tests/toeic/home' })
-      if (route.area && route.area !== 'home') items.push({ label:(route.exam === 'ielts' ? ieltsArea(route.area)?.title : { overview:'Everything about TOEIC', listening:'Listening', reading:'Reading', mocks:'Mock Tests' }[route.area]) || route.area, href:`#/application/tests/${route.exam}/${route.area}${route.exam === 'ielts' ? '/' + route.view : ''}` })
+      items.push({ label:route.exam === 'ielts' ? 'IELTS Academic' : 'TOEIC Listening & Reading', href:'#' + applicationPath(route, applicationMode(route), { home:true }) })
+      if (route.area && route.area !== 'home') items.push({ label:(route.exam === 'ielts' ? ieltsArea(route.area)?.title : { overview:'Everything about TOEIC', listening:'Listening', reading:'Reading', mocks:'Mock Tests' }[route.area]) || route.area, href:`#/application/tests/${route.exam}/${route.area}${route.exam === 'ielts' ? '/' + route.view : route.view ? '/' + route.view : ''}` })
       if (route.task) items.push({ label:t('Practice'), href:'#' + route.path })
     } else if (route.chapter || (route.lesson && route.lesson !== 'home')) {
       const chapter = route.chapter || route.lesson
       items.push({ label:{ introduction:'About this guide', guide:'Course guide & resources', blueprint:'Presentation blueprint', cases:'Worked presentations' }[chapter] || chapter, href:'#' + route.path })
+    } else if (route.category && route.category !== 'home') {
+      items.push({ label:route.category === 'drafts' ? (ja ? '自分の下書き' : 'My drafts') : route.category === 'all' ? (ja ? 'すべてのテーマ' : 'All prompts') : route.category.replace(/^c/, ''), href:'#' + route.path })
     } else if (route.collection && route.collection !== 'home') {
       items.push({ label:route.collection === 'saved' ? (ja ? '保存した単語と表現' : 'Saved words & expressions') : route.collection[0].toUpperCase() + route.collection.slice(1), href:`#/application/reading/${route.collection}/${route.view}` })
       if (route.text) items.push({ label:ja ? '読む' : 'Reading', href:'#' + route.path })

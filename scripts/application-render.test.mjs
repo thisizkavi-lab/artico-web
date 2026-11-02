@@ -190,7 +190,7 @@ test('Application directories preserve course access with minimal navigation', {
       assert.ok(!html.includes('ies-start'), 'home is navigation only')
     }
     const other = await render('OtherHalfCourse', '#/application/other-half')
-    for (let number = 1; number <= 13; number++) assert.ok(other.includes('href="#/application/other-half/' + String(number).padStart(2,'0') + '"'), 'chapter ' + number + ' remains accessible')
+    for (let number = 1; number <= 13; number++) assert.ok(other.includes('href="#/application/other-half/' + String(number).padStart(2,'0') + '/study"'), 'chapter ' + number + ' remains accessible')
     assert.equal((other.match(/<summary>/g) || []).length, 5, 'chapters are grouped into five branches')
     assert.ok(!other.includes('oh-cover'), 'no cover on the directory')
     const chapter = await render('OtherHalfCourse', '#/application/other-half/01')
@@ -202,7 +202,7 @@ test('Application directories preserve course access with minimal navigation', {
     for (const page of ['guide','cases','blueprint']) assert.ok(presentations.includes('/presentations/' + page), page + ' remains accessible')
     assert.ok(!presentations.includes('ps-cover'), 'presentation home is navigation only')
     const smallTalk = await render('SmallTalkCourse', '#/application/smalltalk')
-    for (let number = 1; number <= 12; number++) assert.ok(smallTalk.includes('/smalltalk/' + String(number).padStart(2,'0') + '/practice'), 'Small Talk practice ' + number)
+    for (let number = 1; number <= 12; number++) assert.ok(smallTalk.includes('/smalltalk/' + String(number).padStart(2,'0') + '/study'), 'Small Talk practice ' + number)
     assert.ok(smallTalk.includes('smalltalk-field-guide.html'), 'complete field guide is accessible')
     for (const [file, hash, label, count] of [
       ['JobsCourse', '#/application/interviews', 'All stages', 61],
@@ -246,9 +246,9 @@ test('breadcrumbs link to real parents across course and lesson routes', { timeo
     vite = await createServer({ appType:'custom', server:{ middlewareMode:true }, logLevel:'error' })
     const { breadcrumbItems } = await vite.ssrLoadModule('/src/web/breadcrumbPaths.js')
     for (const [hash, parents] of [
-      ['#/application/other-half/01', ['#/courses', '#/courses?application', '#/application/other-half']],
+      ['#/application/other-half/01', ['#/courses', '#/courses?application', '#/application/other-half/home/study']],
       ['#/application/tests/ielts/listening/study', ['#/courses', '#/courses?application', '#/application/tests', '#/application/tests/ielts/home/study']],
-      ['#/application/presentations/guide', ['#/courses', '#/courses?application', '#/application/presentations']],
+      ['#/application/presentations/guide', ['#/courses', '#/courses?application', '#/application/presentations/home/study']],
       ['#/lesson/06/study', ['#/courses', '#/courses?social']],
       ['#/foundation/letters/study', ['#/courses', '#/courses?foundation']],
       ['#/saved', ['#/progress']],
@@ -260,6 +260,6 @@ test('breadcrumbs link to real parents across course and lesson routes', { timeo
     }
     const ja = breadcrumbItems(parseRoute('#/application/other-half/01'), { language:'ja' })
     assert.equal(ja[1].label, '実践')
-    assert.equal(ja[2].href, '#/application/other-half')
+    assert.equal(ja[2].href, '#/application/other-half/home/study')
   } finally { await vite?.close() }
 })

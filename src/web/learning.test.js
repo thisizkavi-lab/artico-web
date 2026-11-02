@@ -496,7 +496,7 @@ test('Small Talk is a complete dedicated course, with valid deep links and saved
   assert.match(data, /export const smallTalkLessons/)
   assert.match(data, /export const smallTalkScenarios/)
   assert.match(ui, /ScenarioLab/)
-  assert.match(ui, /aria-current=\{mode===/)
+  assert.match(ui, /mode==='study'\?<Study/)
   assert.doesNotMatch(ui, /likeability score|contact points|AI confidence score/i)
   for (let n=1;n<=12;n++){
     const id=String(n).padStart(2,'0')

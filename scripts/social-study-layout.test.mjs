@@ -6,6 +6,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { createServer } from 'vite'
 import { usesSharedStudyLayout, studyIllustrations, studyPhraseAnchors } from '../src/web/socialStudyLayout.js'
 import { selectTeachingNotes } from '../src/web/teachingNotes.js'
+import { illustratedStudyPresentation } from '../src/web/illustratedStudyPresentation.js'
 
 const visibleText = (html) => html.replace(/<[^>]*>/g, '')
   .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -37,13 +38,16 @@ test('every shared study chapter renders both languages with its complete source
             type: 'source', id: block.id,
             source: { ...block, teachingNote: notes[`${sectionIndex}:${blockIndex}`] },
           }),
+        })).map((section) => ({ ...section,
+          blocks: illustratedStudyPresentation(section, id, language, byId).blocks,
         }))
         const anchors = studyPhraseAnchors(sections)
         const html = renderToStaticMarkup(createElement(LanguageProvider, null,
           sections.map((section) => createElement(StudySection, {
             key: section.id, section, chapterId: id, byId, anchors,
             audioProps: { byId, audio: { playing: false }, onPlay: () => {} },
-            renderConversation: (block) => createElement('div', { key: block.id, 'data-conversation': block.id }),
+            renderConversation: (block) => createElement('div', { key: block.id, 'data-conversation': block.id },
+              block.studyTitle && createElement('h3', { 'data-source-block': block.captionSourceId }, block.studyTitle)),
             renderDiagram: () => null,
           }))))
         const text = visibleText(html)

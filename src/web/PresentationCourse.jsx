@@ -277,7 +277,7 @@ function Overview() {
 function CourseGuide({learning,update,caseId,setCaseId}) {
  const completed=lessons.filter(l=>learning.responses?.[doneKey(l.id)]==='yes').length
  return <div className="ps-page aw-page">
-    <a className="ps-back" href="#/application">← Application</a>
+    <a className="ps-back" href="#/courses?application">← Application</a>
     <header className="ps-cover">
       <span className="ps-kicker">ARTICO · THE PRACTICAL FIELD GUIDE</span>
       <h1>Public speaking<br/><em>& presentations.</em></h1>

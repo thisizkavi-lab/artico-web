@@ -166,7 +166,7 @@ function CourseOverview({ t, ja, responses }) {
   const last = responses[keyFor('location')]
   const lastLesson = lessons.find(l => l.id === last)
   return <div className="aw-page st-page">
-    <a className="ap-back" href="#/application">← {t.back}</a>
+    <a className="ap-back" href="#/courses?application">← {t.back}</a>
     <header className="st-hero">
       <p className="ap-eyebrow">ARTICO / APPLICATION</p>
       <h1>Storytelling</h1>
@@ -429,7 +429,7 @@ function BookOverview({responses,ja}) {
   const total=bookLessons.filter(l=>responses[keyFor('done',l.id)]==='1').length
   const last=bookLessons.find(l=>l.id===responses[keyFor('location')])
   return <div className="aw-page st-book">
-    <a href="#/application" className="st-book-back">← {ja?'実践へ戻る':'Back to Application'}</a>
+    <a href="#/courses?application" className="st-book-back">← {ja?'実践へ戻る':'Back to Application'}</a>
     <header className="st-book-cover">
       <p className="st-book-kicker">ARTICO / APPLICATION / STORYTELLING</p>
       <h1>Spoken storytelling<span>.</span></h1>

@@ -221,6 +221,18 @@ test('Application directories preserve course access with minimal navigation', {
     assert.ok(writing.includes('Writing categories'))
     assert.ok(writing.includes('My drafts'), 'saved writing has an explicit destination')
     assert.ok(!writing.includes('<textarea'), 'writing home is a directory rather than an open editor')
+    const { Courses } = await vite.ssrLoadModule('/src/web/Library.jsx')
+    const { applicationTracks } = await vite.ssrLoadModule('/src/web/applicationTracks.js')
+    const entry = parseRoute('#/application')
+    assert.deepEqual(entry, { path:'/courses?application', page:'courses' }, 'the old Application entry opens Learn')
+    const learn = renderToStaticMarkup(createElement(LanguageProvider, null,
+      createElement(Courses, { route:entry, learning:{ last:null } })))
+    assert.match(learn, /aria-controls="rl-stage-panel-application" aria-expanded="true"/, 'Application is expanded on arrival')
+    const panel = learn.match(/<div id="rl-stage-panel-application"[^>]*>/)?.[0]
+    assert.ok(panel, 'the existing Application branch is present')
+    assert.doesNotMatch(panel, /hidden/, 'the course choices are visible')
+    for (const track of applicationTracks) assert.ok(learn.includes('href="#/application/' + track.id + '"'), track.id + ' is still reachable')
+    assert.ok(!learn.includes('cn-directory'), 'there is no duplicate Application card directory')
   } finally {
     await vite?.close()
     if (originalWindow === undefined) delete globalThis.window
@@ -234,9 +246,9 @@ test('breadcrumbs link to real parents across course and lesson routes', { timeo
     vite = await createServer({ appType:'custom', server:{ middlewareMode:true }, logLevel:'error' })
     const { breadcrumbItems } = await vite.ssrLoadModule('/src/web/breadcrumbPaths.js')
     for (const [hash, parents] of [
-      ['#/application/other-half/01', ['#/courses', '#/application', '#/application/other-half']],
-      ['#/application/tests/ielts/listening/study', ['#/courses', '#/application', '#/application/tests', '#/application/tests/ielts/home/study']],
-      ['#/application/presentations/guide', ['#/courses', '#/application', '#/application/presentations']],
+      ['#/application/other-half/01', ['#/courses', '#/courses?application', '#/application/other-half']],
+      ['#/application/tests/ielts/listening/study', ['#/courses', '#/courses?application', '#/application/tests', '#/application/tests/ielts/home/study']],
+      ['#/application/presentations/guide', ['#/courses', '#/courses?application', '#/application/presentations']],
       ['#/lesson/06/study', ['#/courses', '#/courses?social']],
       ['#/foundation/letters/study', ['#/courses', '#/courses?foundation']],
       ['#/saved', ['#/progress']],

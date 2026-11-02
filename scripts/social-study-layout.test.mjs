@@ -265,7 +265,7 @@ test('email and form examples show complete supplied content and explanatory par
       const home = render(createElement(Home))
       assert.equal((home.match(/class="ah-option ah-option--/g) ?? []).length, 4)
       assert.equal(home.includes('ah-action'), false)
-      for (const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/application']) assert.ok(home.includes(`href="${href}"`))
+      for (const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/courses?application']) assert.ok(home.includes(`href="${href}"`))
     }
   } finally {
     await vite.close()

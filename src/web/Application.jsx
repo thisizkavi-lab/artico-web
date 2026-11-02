@@ -1,7 +1,6 @@
-import { CourseIndex, CourseDirectory } from './CourseNavigation'
 import { lazy, Suspense, useState } from 'react'
 import { useLanguage } from './Language'
-import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
+import { applicationTrack, applicationResponseKey } from './applicationTracks'
 import WritingStudio from './WritingStudio'
 import JobsCourse from './JobsCourse'
 import AcademicCourse from './AcademicCourse'
@@ -14,15 +13,6 @@ const IeltsCourse = lazy(() => import('./IeltsCourse'))
 const ToeicCourse = lazy(() => import('./ToeicCourse'))
 const ReadingCourse = lazy(() => import('./ReadingCourse'))
 const IdeasCourse = lazy(() => import('./IdeasCourse'))
-
-function TrackOverview({ language }) {
-  return <CourseIndex title={language === 'ja' ? '実践' : 'Application'}>
-    <CourseDirectory label={language === 'ja' ? '実践コース' : 'Application courses'} items={applicationTracks.map(track => ({
-      id:track.id, title:language === 'ja' ? track.ja : track.en, summary:language === 'ja' ? track.jaSummary : track.enSummary,
-      icon:track.icon, href:'#/application/' + track.id,
-    }))}/>
-  </CourseIndex>
-}
 
 function TrackExercise({ track, language, learning, update }) {
   const ja = language === 'ja'
@@ -37,7 +27,7 @@ function TrackExercise({ track, language, learning, update }) {
 
   return (
     <div className="aw-page ap-page">
-      <a className="ap-back" href="#/application">← {ja ? 'すべての目的' : 'All application tracks'}</a>
+      <a className="ap-back" href="#/courses?application">← {ja ? 'すべての目的' : 'All application tracks'}</a>
       <header className="ap-header">
         <p className="ap-eyebrow">APPLICATION / {track.en.toUpperCase()}</p>
         <h1 lang="en">{track.en}</h1>
@@ -80,7 +70,7 @@ function TrackExercise({ track, language, learning, update }) {
           {ja ? '入力した内容は、この端末に自動保存されます。' : 'Your notes are saved on this device as you type.'}
         </small>
       </section>
-      <a href="#/application" className="ap-back ap-back-bottom">
+      <a href="#/courses?application" className="ap-back ap-back-bottom">
         ← {ja ? '別の目的を選ぶ' : 'Choose another goal'}
       </a>
     </div>
@@ -89,7 +79,6 @@ function TrackExercise({ track, language, learning, update }) {
 
 export default function Application({ route, learning, update }) {
   const { language } = useLanguage()
-  if (!route.id) return <TrackOverview language={language}/>
   if (route.id === 'other-half') return <Suspense fallback={<div className="aw-page" role="status">Opening The Other Half of English…</div>}><OtherHalfCourse route={route}/></Suspense>
   if (route.id === 'tests' && route.exam === 'toeic') return <Suspense fallback={<div className="aw-page" role="status">Loading TOEIC…</div>}><ToeicCourse route={route}/></Suspense>
   if (route.id === 'tests') return <Suspense fallback={<div className="aw-page" role="status">Loading English Tests…</div>}><IeltsCourse route={route}/></Suspense>
@@ -102,7 +91,7 @@ export default function Application({ route, learning, update }) {
   if (route.id === 'academic') return <AcademicCourse learning={learning} update={update} />
   if (route.id === 'presentations') return <PresentationCourse route={route} learning={learning} update={update} />
   const track = applicationTrack(route.id)
-  if (!track) return <TrackOverview language={language}/>
+  if (!track) return null
   return <TrackExercise key={track.id} track={track} language={language}
     learning={learning} update={update}/>
 }

@@ -247,7 +247,7 @@ export default function IdeasCourse({ route }) {
   const mode = route.mode === 'practice' ? 'practice' : 'study'
   return <div className={'aw-page ie-page id-page' + (!lesson ? ' cn-index' : '')} lang="en">
     {lesson && <nav className="ie-breadcrumb" aria-label="Ideas & Expression breadcrumb">
-      <a href="#/application">Application</a><span aria-hidden="true">/</span>
+      <a href="#/courses?application">Application</a><span aria-hidden="true">/</span>
       <a href={'#' + ideasPath('home',mode)}>Ideas &amp; Expression</a>
       {lesson && <><span aria-hidden="true">/</span><span>{lesson.title}</span></>}
     </nav>}

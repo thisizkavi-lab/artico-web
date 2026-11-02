@@ -1,3 +1,4 @@
+import { CourseDirectory } from './CourseNavigation'
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
@@ -22,22 +23,21 @@ function useStore(){
  useEffect(()=>{const sync=e=>{if(e.key!==key)return;const n=load();ref.current=n;setState(n)};window.addEventListener('storage',sync);return()=>window.removeEventListener('storage',sync)},[])
  return {state,change,error}
 }
-function Directory({state,mode,lang}){
- return <div className="rd-directory">{collections.map((c,i)=>{const items=texts.filter(t=>t.collection===c.id),done=items.filter(t=>state.done[t.id]).length
-  return <a className="rd-directory-item" key={c.id} href={'#'+path(c.id,mode)}>
-   <span className="rd-directory-icon"><CurriculumIcon name={c.icon} size={24}/></span>
-   <span className="rd-directory-copy"><small>{String(i+1).padStart(2,'0')} · {items.length} readings · {done} {copy[lang].practised.toLowerCase()}</small><strong>{lang==='ja'?c.ja:c.title}</strong><span>{c.intro}</span></span><span className="rd-arrow" aria-hidden="true">›</span></a>})}</div>
+function Directory({mode,lang}) {
+ return <CourseDirectory label="Reading collections" items={[
+  ...collections.map(collection => ({ id:collection.id, title:lang === 'ja' ? collection.ja : collection.title, summary:collection.intro, icon:collection.icon, href:'#' + path(collection.id, mode) })),
+  { id:'saved', title:copy[lang].saved, summary:lang === 'ja' ? '保存した単語と表現を復習する。' : 'Revisit the language you have saved.', icon:'bookmark', href:'#' + path('saved', mode), wide:true },
+ ]}/>
 }
-function Home({state,change,mode,t,lang}){
- const last=byId[state.last],saved=Object.entries(state.saved)
- return <>
- <header className="rd-heading"><p className="rd-eyebrow">ARTICO / APPLICATION</p><h1>Reading & Understanding</h1><p>{t.intro}</p><div className="rd-heading-actions">
- <a href={'#'+path('short',mode)} className="rd-primary">{t.start} →</a>{last&&<a href={'#'+path(last.collection,mode,last.id)} className="rd-secondary">{t.continue} · {last.title}</a>}</div></header>
- <div className="rd-intro"><strong>{lang==='ja'?'読みたいものと難易度を別々に選ぶ。':'Choose what to read and how challenging it should be.'}</strong><p>{lang==='ja'?'メッセージを読むために、最初から物語を全部終える必要はありません。':'A beginner can read a simple message today. You do not need to finish every story before trying practical English.'}</p></div>
- <div className="rd-section-heading"><p className="rd-eyebrow">READING LIBRARY</p><h2>{t.choose}</h2></div><Directory state={state} mode={mode} lang={lang}/>
- <section className="rd-wordbank"><div className="rd-section-heading"><p className="rd-eyebrow">VOCABULARY</p><h2>{t.saved} <small>{saved.length}</small></h2></div>
- {saved.length===0?<p className="rd-muted">{t.none}</p>:<div className="rd-saved-list">{saved.map(([id,entry])=><div key={id}><strong>{entry.word}</strong><span>{entry.meaning}</span><button type="button" onClick={()=>change(p=>{const s={...p.saved};delete s[id];return {...p,saved:s}})}>{t.remove}</button></div>)}</div>}</section>
- </>
+function Home({mode,lang}) {
+ return <><h1 className="cn-sr-only">Reading &amp; Understanding</h1><Directory mode={mode} lang={lang}/></>
+}
+function SavedWords({state,change,t}) {
+ const saved = Object.entries(state.saved)
+ return <section className="rd-wordbank"><div className="rd-section-heading"><h1>{t.saved} <small>{saved.length}</small></h1></div>
+ {saved.length === 0 ? <p className="rd-muted">{t.none}</p> : <div className="rd-saved-list">{saved.map(([id,entry]) => <div key={id}><strong>{entry.word}</strong><span>{entry.meaning}</span><button type="button" onClick={() => change(previous => {
+  const words = {...previous.saved}; delete words[id]; return {...previous,saved:words}
+ })}>{t.remove}</button></div>)}</div>}</section>
 }
 function Collection({c,mode,state,t,lang}){
  const [tier,setTier]=useState('All'),items=texts.filter(v=>v.collection===c.id),available=tiers.filter(level=>items.some(v=>v.tier===level)),shown=tier==='All'?items:items.filter(v=>v.tier===tier)
@@ -130,12 +130,12 @@ export default function ReadingCourse({route}){
  const {language}=useLanguage(),lang=language==='ja'?'ja':'en',t=copy[lang],{state,change,error}=useStore()
  const c=collectionFor(route.collection),mode=route.view==='practice'?'practice':'study'
  const text=byId[route.text]?.collection===c?.id?byId[route.text]:null
- return <div className={'aw-page rd-page'+(text?' rd-wide':'')}>
- <nav className="rd-breadcrumb" aria-label="Reading breadcrumb"><a href="#/application">{t.back}</a><span>/</span>{c?<a href={'#'+path('home',mode)}>Reading & Understanding</a>:<span>Reading & Understanding</span>}{c&&<><span>/</span>{text?<a href={'#'+path(c.id,mode)}>{c.title}</a>:<span>{c.title}</span>}</>}</nav>
- <div className="rd-modebar"><Segments items={[{value:'study',label:t.study},{value:'practice',label:t.practice}]} label="Reading Study or Practice" active={mode} onChange={v=>window.location.hash=path(c?.id||'home',v,text?.id)}/><a href={'#'+path('home',mode)}>{t.all}</a></div>
- {text?<Reader key={text.id+'-'+mode} text={text} mode={mode} state={state} change={change} t={t} lang={lang}/>:
+ return <div className={'aw-page rd-page'+(text?' rd-wide':!c && route.collection !== 'saved' ? ' cn-index':'')}>
+ {(c || route.collection === 'saved') && <nav className="rd-breadcrumb" aria-label="Reading breadcrumb"><a href="#/application">{t.back}</a><span>/</span>{c?<a href={'#'+path('home',mode)}>Reading & Understanding</a>:<span>Reading & Understanding</span>}{c&&<><span>/</span>{text?<a href={'#'+path(c.id,mode)}>{c.title}</a>:<span>{c.title}</span>}</>}</nav>}
+ {c && <div className="rd-modebar"><Segments items={[{value:'study',label:t.study},{value:'practice',label:t.practice}]} label="Reading Study or Practice" active={mode} onChange={v=>window.location.hash=path(c?.id||'home',v,text?.id)}/><a href={'#'+path('home',mode)}>{t.all}</a></div>}
+ {route.collection === 'saved' ? <SavedWords state={state} change={change} t={t}/> : text?<Reader key={text.id+'-'+mode} text={text} mode={mode} state={state} change={change} t={t} lang={lang}/>:
  c?<Collection key={c.id} c={c} mode={mode} state={state} t={t} lang={lang}/>:
  <Home state={state} change={change} mode={mode} t={t} lang={lang}/>}
- <footer className="rd-footer">{t.note}{error?' · '+(lang==='ja'?'保存できませんでした。':'Device storage unavailable.'):''}</footer>
+ {(c || route.collection === 'saved') && <footer className="rd-footer">{t.note}{error?' · '+(lang==='ja'?'保存できませんでした。':'Device storage unavailable.'):''}</footer>}
  </div>
 }

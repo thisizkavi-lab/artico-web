@@ -1,3 +1,4 @@
+import { CourseIndex, CourseDirectory, scrollCourseTop } from './CourseNavigation'
 import { useMemo, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import writingData from './writingPrompts.json'
@@ -90,6 +91,7 @@ function DraftEditor({ prompt, locale, position, total, previous, next, onDraftC
 export default function WritingStudio() {
   const { language } = useLanguage()
   const ja = language === 'ja'
+  const [browse, setBrowse] = useState(true)
   const [category, setCategory] = useState('c01')
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState(prompts[0].id)
@@ -126,9 +128,19 @@ export default function WritingStudio() {
     setQuery(value)
     if (value) setCategory('all')
   }
+  const openCategory = id => {
+    setCategory(id); setQuery(''); setBrowse(false); scrollCourseTop()
+  }
+  const showCategories = () => { setBrowse(true); scrollCourseTop() }
+  if (browse) return <CourseIndex title={ja ? '英語で書く' : 'Writing'}>
+    <CourseDirectory label={ja ? '書くカテゴリー' : 'Writing categories'} items={[
+      ...categories.map(item => ({ id:item.id, title:ja ? item.ja : item.title, summary:item.count + (ja ? ' テーマ' : item.count === 1 ? ' writing prompt' : ' writing prompts'), icon:'pencil', onClick:() => openCategory(item.id) })),
+      { id:'drafts', title:ja ? '自分の下書き' : 'My drafts', summary:ja ? '保存した文章を続ける。' : 'Continue something you have started.', icon:'book', onClick:() => openCategory('drafts'), wide:true },
+    ]}/>
+  </CourseIndex>
   return (
     <div className="aw-page ws-page">
-      <a className="ws-back" href="#/application">← {ja ? 'Applicationに戻る' : 'Back to Application'}</a>
+      <button className="ws-back" type="button" onClick={showCategories}>← {ja ? 'すべてのカテゴリー' : 'All writing categories'}</button>
       <header className="ws-heading">
         <p className="ws-eyebrow">APPLICATION / WRITING</p>
         <h1>{ja ? '英語で書く' : 'Writing'}</h1>

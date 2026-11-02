@@ -18,7 +18,7 @@ export const emptyLearning = {
   soundSpeed: 0.75,
 }
 const validView =
-  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1\d|2[0-8])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?|\/application\/presentations\/(?:0[1-9]|1[0-8])\/(?:study|practice)|\/application\/presentations\/(?:blueprint|cases)|\/application\/other-half(?:\/(?:0[1-9]|1[0-3]))?)$/
+  /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1\d|2[0-8])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature|saved)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?|\/application\/presentations\/(?:0[1-9]|1[0-8])\/(?:study|practice)|\/application\/presentations\/(?:blueprint|cases|guide)|\/application\/other-half(?:\/(?:0[1-9]|1[0-3]|introduction))?)$/
 const normalizeLrPath = (path) => typeof path === 'string' && path.startsWith('/foundation/lr/')
   ? (path.endsWith('/study') ? '/foundation/tongue-intro/study' : '/foundation/tongue-intro/practice') : path
 const isPractice = (path) =>
@@ -165,11 +165,11 @@ export function parseRoute(hash) {
   }
   if (page === 'application') {
     if (id === 'other-half') {
-      const chapter = /^(?:0[1-9]|1[0-3])$/.test(view ?? '') ? view : null
+      const chapter = /^(?:0[1-9]|1[0-3]|introduction)$/.test(view ?? '') ? view : null
       if (segments.length > (chapter ? 3 : 2) || (view && !chapter)) return { path:'/application', page:'application' }
       return { path:'/application/other-half' + (chapter ? '/' + chapter : ''), page:'application', id:'other-half', ...(chapter ? { chapter } : {}) }
     }
-    if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature)$/.test(view ?? '') && ['study','practice'].includes(scene)) {
+    if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature|saved)$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       if (segments.length > 4) return {path:'/application/reading',page:'application',id:'reading'}
       const query = new URLSearchParams(path.split('?')[1] ?? '')
       const text = /^[a-z0-9-]{1,70}$/.test(query.get('text') ?? '') ? query.get('text') : null
@@ -205,7 +205,7 @@ export function parseRoute(hash) {
     }
     if (id === 'presentations' && /^(?:0[1-9]|1[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4)
       return { path:'/application/presentations/' + view + '/' + scene, page:'application', id:'presentations', lesson:view, mode:scene }
-    if (id === 'presentations' && ['blueprint','cases'].includes(view) && segments.length === 3)
+    if (id === 'presentations' && ['blueprint','cases','guide'].includes(view) && segments.length === 3)
       return { path:'/application/presentations/' + view, page:'application', id:'presentations', lesson:view }
     if (id === 'humor') return parseRoute('#/lesson/34/study')
     if (id === 'smalltalk' && /^(?:0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))

@@ -1,3 +1,5 @@
+import { breadcrumbItems } from './breadcrumbPaths'
+import Breadcrumbs from './Breadcrumbs.jsx'
 import { LanguageSelector, useLanguage } from './Language'
 import { Component, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Button, Icon, IconButton, Modal } from './components'
@@ -5,7 +7,6 @@ import { chapterById, foundationSteps } from './content'
 import { loadLearning, parseRoute, STORAGE_KEY, toggleSaved, visit } from './learning'
 import './english-shell.css'
 import { getLearningStage, learningStages } from './pathway'
-import { ieltsArea } from './ieltsNavigation'
 import { isStaleAssetFailure, shouldRefreshStaleAssets } from './routeRecovery.js'
 
 // Route-level chunks: old devices do not parse Home, Progress and the course
@@ -189,12 +190,9 @@ export default function ArticoWeb() {
     return stopRestoring
   }, [route.path])
   useEffect(() => {
-    if (route.page === 'application' && route.id === 'ideas') {
-      document.title = 'Ideas & Expression · Artico'
-      return
-    }
-    if (route.page === 'application' && route.id === 'tests') {
-      document.title = `${route.exam === 'ielts' ? `${ieltsArea(route.area)?.title ?? 'IELTS Academic'} · IELTS` : 'English Tests'} · Artico`
+    if (route.page === 'application') {
+      const location = breadcrumbItems(route, { language, t }).slice(2).map(item => item.label).join(' · ')
+      document.title = `${location || (language === 'ja' ? '実践' : 'Application')} · Artico`
       return
     }
     if (route.page === 'vocabulary') {
@@ -243,24 +241,6 @@ export default function ArticoWeb() {
   const lastFoundation = foundationSteps.find((step) =>
     learning.last?.startsWith(`/foundation/${step.id}/`),
   )
-  const crumb =
-    route.page === 'vocabulary' ? `${language === 'ja' ? '学ぶ / 語彙' : 'Learn / Vocabulary'}${route.topic ? ` / ${route.topic}` : ''}` : route.page === 'lesson'
-      ? `${t('Learn')} / ${t('Social Fluency')} / ${route.id}`
-      : route.page === 'application'
-        ? route.id === 'tests' ? `Application / English Tests${route.exam === 'ielts' ? ' / IELTS' : ''}` : `${t('Learn')} / ${language === 'ja' ? '実践' : 'Application'}`
-        : route.page === 'foundation'
-          ? `${t(['orientation', 'how-it-works'].includes(route.id) ? 'Home' : 'Learn')} / ${t(getLearningStage(route.path)?.title ?? 'Level Zero')}`
-        : route.page === 'courses'
-          ? t('Learn')
-          : ['practice', 'saved'].includes(route.page)
-            ? route.page === 'saved'
-              ? `${t('Progress')} / ${t('Saved phrases')}`
-              : t("Practice")
-            : route.page === 'progress'
-              ? t("Progress")
-              : route.page === 'home'
-                ? t("Home")
-                : t("Learn")
   let screen
   if (route.page === 'home') screen = <Home />
   else if (route.page === 'courses')
@@ -349,7 +329,7 @@ export default function ArticoWeb() {
       </aside>
       <div className="aw-main">
         <header className="aw-topbar">
-          <p>{crumb}</p>
+          <Breadcrumbs route={route} language={language} t={t} stageTitle={getLearningStage(route.path)?.title} foundationTitle={foundationSteps.find(step => step.id === route.id)?.[language === 'ja' ? 'ja' : 'en']} />
           <LanguageSelector />
           <IconButton name="user" label={t("Your guest profile")} onClick={() => setModal(true)} />
         </header>

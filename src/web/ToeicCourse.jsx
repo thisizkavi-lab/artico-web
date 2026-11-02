@@ -1,4 +1,4 @@
-import CurriculumIcon from './CurriculumIcon'
+import { CourseDirectory } from './CourseNavigation'
 import './ielts.css'
 
 const TOEIC_BASE = '/application/tests/toeic'
@@ -25,32 +25,11 @@ const parts = {
   ],
 }
 
-function SectionTiles() {
-  return <div className="ie-directory">
-    {sections.map((section, index) =>
-      <a className="ie-branch" key={section.id} href={`#${TOEIC_BASE}/${section.id}`}>
-        <span className="ie-branch-icon" aria-hidden="true"><CurriculumIcon name={section.icon} size={25}/></span>
-        <span className="ie-branch-copy">
-          <small>{String(index + 1).padStart(2, '0')}</small>
-          <strong>{section.title}</strong>
-          <span>{section.summary}</span>
-        </span>
-        <span aria-hidden="true">›</span>
-      </a>
-    )}
-  </div>
-}
-
 function CourseHome() {
-  return <>
-    <header className="ie-heading">
-      <span className="ie-eyebrow">ARTICO · EXAM PREPARATION</span>
-      <h1>TOEIC Listening &amp; Reading</h1>
-      <p>Understand the exam. Build listening and reading skills. Prepare for all seven parts.</p>
-      <div className="ie-facts"><span>200 multiple-choice questions</span><span>About 2 hours</span><span>Score: 10–990</span></div>
-    </header>
-    <SectionTiles/>
-    <p className="ie-fineprint">This is the course outline. Lessons, practice questions, audio, and mock tests are not available yet.</p>
+  return <><h1 className="cn-sr-only">TOEIC Listening &amp; Reading</h1>
+    <CourseDirectory label="TOEIC course outline" items={sections.map(section => ({ ...section,
+      summary:section.summary + ' Outline only; lessons are planned.', href:'#' + TOEIC_BASE + '/' + section.id,
+    }))}/>
   </>
 }
 
@@ -86,14 +65,14 @@ function CourseSection({ area }) {
 
 export default function ToeicCourse({ route }) {
   const area = sections.some((item) => item.id === route.area) ? route.area : 'home'
-  return <div className="aw-page ie-page" lang="en">
-    <nav className="ie-breadcrumb" aria-label="TOEIC breadcrumb">
+  return <div className={'aw-page ie-page' + (area === 'home' ? ' cn-index' : '')} lang="en">
+    {area !== 'home' && <nav className="ie-breadcrumb" aria-label="TOEIC breadcrumb">
       <a href="#/application/tests">English Tests</a>
       <span aria-hidden="true">/</span>
       {area === 'home' ? <span>TOEIC L&amp;R</span> : <a href={`#${TOEIC_BASE}/home`}>TOEIC L&amp;R</a>}
       {area !== 'home' ? <><span aria-hidden="true">/</span><span>{sections.find((item) => item.id === area).title}</span></> : null}
-    </nav>
+    </nav>}
     {area === 'home' ? <CourseHome/> : <CourseSection area={area}/>}
-    <p className="ie-fineprint">Independent preparation outline. Artico is not affiliated with or endorsed by ETS or the TOEIC program.</p>
+    {area !== 'home' && <p className="ie-fineprint">Independent preparation outline. Artico is not affiliated with or endorsed by ETS or the TOEIC program.</p>}
   </div>
 }

@@ -1,3 +1,4 @@
+import IeltsHomeDirectory from '../IeltsHomeDirectory'
 /**
  * Artico IELTS Study View Component (`artico-ielts-study-v1`)
  * Renders:
@@ -20,59 +21,8 @@ import './ielts-study.css'
 
 const partLabel = (title) => title.replace(/^Part [\d.]+ · /, '').replace('[GT] ', '')
 
-export function StudyHome({ store, toolbar }) {
-  const lastUnit = STUDY_UNIT_BY_ID[store?.state?.notes?.['study-last-unit']]
-  return (
-    <div className="ies-home">
-      <header className="ies-home-masthead">
-        <span className="ies-eyebrow">English tests / Study course</span>
-        <h1><CurriculumIcon name="book" size={32} />IELTS Academic</h1>
-        <p className="ies-home-lead">Understand the test. Learn each skill. Put it into practice.</p>
-      </header>
-      {toolbar}
-      <section className="ies-start" aria-label="Start here">
-        <div>
-          <span className="ies-eyebrow">Start here</span>
-          <h2>A clear path through IELTS.</h2>
-          <p>Begin with the test format and scoring. Then work through Listening, Reading, Writing, and Speaking. Each lesson connects an explanation to examples, common errors, and a check of your understanding.</p>
-          <a className="ies-start-link" href={`#${ieltsStudyPath('overview', 'ov-how-to-read')}`}>How this course works <span aria-hidden="true">→</span></a>
-        </div>
-        <aside className="ies-course-note">
-          <strong>Study, then practise</strong>
-          <p>Use Study to understand a method. Switch to Practice within each skill to try it.</p>
-          <p>Academic is the main track. Shared lessons apply to both tests. General Training differences are marked separately.</p>
-        </aside>
-      </section>
-      {lastUnit && <aside className="ies-bookmark-bar" aria-label="Last opened study unit">
-        <span><strong>Continue reading</strong><br />{lastUnit.title}</span>
-        <a href={`#${ieltsStudyPath(lastUnit.area, lastUnit.id)}`}>Open lesson →</a>
-      </aside>}
-      <div className="ies-index-heading"><h2>Your course</h2><span>5 sections · 85 lessons</span></div>
-      <div className="ies-module-spine" aria-label="Five study modules">
-        {MODULE_METADATA.map((mod) => {
-          const units = getUnitsForArea(mod.id)
-          return <section key={mod.id} className={`ies-module-card ies-module-${mod.id}`} aria-labelledby={`ies-mod-${mod.id}`}>
-            <div className="ies-module-card-head">
-              <div className="ies-mod-title-group">
-                <CurriculumIcon name={mod.icon} size={25} />
-                <h2 id={`ies-mod-${mod.id}`}><a href={`#${ieltsStudyPath(mod.id, units[0].id)}`}>{mod.title}</a></h2>
-              </div>
-              <span className="ies-mod-num">{mod.num}</span>
-            </div>
-            <p className="ies-mod-scope">{mod.scope}</p>
-            <div className="ies-mod-parts">
-              {mod.parts.map((part) => <a key={part.id} className="ies-part-link" href={`#${ieltsStudyPath(mod.id, units.find(u => u.partId === part.id)?.id)}`}>
-                <span>{part.isGt && <span className="ies-badge ies-badge-gt">GT</span>} {partLabel(part.title)}</span>
-                <span className="ies-part-count">{part.count}<span className="ies-sr-only"> lessons</span> →</span>
-              </a>)}
-            </div>
-            <a className="ies-mod-start" href={`#${ieltsStudyPath(mod.id, units[0].id)}`}>Open {mod.id === 'overview' ? 'introduction' : mod.title.toLowerCase()} →</a>
-          </section>
-        })}
-      </div>
-      <p className="ies-home-footer-note">Ready to use what you have learned? <a href={`#${ieltsPath('home', 'practice')}`}>Explore practice →</a></p>
-    </div>
-  )
+export function StudyHome() {
+  return <IeltsHomeDirectory mode="study"/>
 }
 
 export function StudyReader({ area, unitId, store, toolbar }) {

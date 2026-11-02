@@ -1,3 +1,4 @@
+import { CourseIndex, CourseDirectory, CourseTree } from './CourseNavigation'
 import { useMemo, useState } from 'react'
 import { otherHalfChapters, otherHalfGroups, otherHalfIntro, otherHalfTopics } from './otherHalfContent'
 import './other-half-course.css'
@@ -203,36 +204,10 @@ function ChapterVisual({ chapter }) {
   </section>
 }
 
-function CourseOverview() {
+function CourseGuide() {
   return <div className="aw-page oh-page">
-    <a className="oh-back" href="#/application">← Application</a>
-    <header className="oh-cover">
-      <div className="oh-cover-copy">
-        <p className="oh-kicker">ARTICO · APPLICATION / FIELD GUIDE</p>
-        <h1>The Other Half <em>of English.</em></h1>
-        <p className="oh-cover-deck">A field guide to real American English beyond the textbook.</p>
-        <p className="oh-cover-intro">You can understand every word and still miss what is happening. This course makes more of real English visible.</p>
-        <div className="oh-cover-actions">
-          <a className="oh-primary" href={chapterPath(1)}>Start exploring <span aria-hidden="true">→</span></a>
-          <span>12 complete source chapters · 13 topics in the original contents</span>
-        </div>
-      </div>
-      <div className="oh-cover-art" aria-label="A visual comparison of textbook English and real-world English">
-        <div className="oh-art-sheet">
-          <span>THE TEXTBOOK HALF</span>
-          <strong>Grammar</strong><strong>Vocabulary</strong><strong>Sentence structure</strong>
-          <small>Clear forms. Standard sentences.</small>
-        </div>
-        <div className="oh-art-bridge" aria-hidden="true">+</div>
-        <div className="oh-art-note">
-          <span>THE OTHER HALF</span>
-          <div className="oh-art-tags"><b>tone</b><b>context</b><b>slang</b><b>timing</b><b>shared knowledge</b><b>gesture</b></div>
-          <small>Meaning in real situations.</small>
-        </div>
-        <div className="oh-art-caption">WORDS ARE ONLY PART OF THE MESSAGE.</div>
-      </div>
-    </header>
-
+    <a className="oh-back" href={root}>← The Other Half of English</a>
+    <header className="oh-chapter-header"><h1>About this guide</h1></header>
     <section className="oh-intro-section">
       <div className="oh-section-title">
         <span>THE IDEA</span>
@@ -260,33 +235,6 @@ function CourseOverview() {
       </div>
     </section>
 
-    <section className="oh-chapter-map" id="chapters">
-      <div className="oh-section-title oh-map-title">
-        <div><span>THE FIELD GUIDE</span><h2>Explore the chapters.</h2></div>
-        <p>Read them in any order. Start with whatever you already notice around you.</p>
-      </div>
-      {otherHalfGroups.map(group => {
-        const chapters = otherHalfChapters.filter(chapter => chapter.group === group.id)
-        return <div className="oh-chapter-group" key={group.id}>
-          <header><span>{group.label}</span><h3>{group.title}</h3><p>{group.description}</p></header>
-          <div className="oh-chapter-grid">
-            {chapters.map(chapter => chapter.missing
-              ? <article className="oh-chapter-card is-missing" key={chapter.number}>
-                  <span className="oh-card-number">{String(chapter.number).padStart(2, '0')}</span>
-                  <div><small>NOT IN THE SUPPLIED SOURCE</small><strong>{chapter.title}</strong><p>{chapter.subtitle}</p></div>
-                  <span className="oh-card-status">Text missing</span>
-                </article>
-              : <a className="oh-chapter-card" href={chapterPath(chapter.number)} key={chapter.number}>
-                  <span className="oh-card-number">{String(chapter.number).padStart(2, '0')}</span>
-                  <div><small>{chapter.tag || group.label}</small><strong>{chapter.title}</strong><p>{chapter.subtitle}</p></div>
-                  <span className="oh-card-arrow" aria-hidden="true">↗</span>
-                </a>)}
-          </div>
-        </div>
-      })}
-      <p className="oh-source-gap"><strong>Source note.</strong> The supplied master document lists “Regional and Social Variation” as Chapter 10, but does not include its chapter text. The course marks that gap rather than inventing material.</p>
-    </section>
-
     <section className="oh-reading-method">
       <div><span>HOW TO USE IT</span><h2>Notice more. Assume less.</h2><p>This is a recognition-first reference. You do not need to imitate every word or style you encounter.</p></div>
       <div className="oh-reading-steps">
@@ -299,19 +247,32 @@ function CourseOverview() {
   </div>
 }
 
-function ChapterNavigation({ current, mobile = false }) {
-  return <nav className={mobile ? 'oh-mobile-nav' : 'oh-sidebar'} aria-label="The Other Half of English chapters">
-    {!mobile && <div className="oh-sidebar-title"><span>THE FIELD GUIDE</span><strong>13 topics</strong></div>}
-    {otherHalfGroups.map(group => <div className="oh-nav-group" key={group.id}>
-      <span className="oh-nav-group-title">{group.title}</span>
-      {otherHalfChapters.filter(chapter => chapter.group === group.id).map(chapter => chapter.missing
-        ? <span className="oh-nav-item is-missing" key={chapter.number}><small>{String(chapter.number).padStart(2, '0')}</small>{chapter.shortTitle}<em>Not supplied</em></span>
-        : <a className="oh-nav-item" href={chapterPath(chapter.number)} aria-current={current === chapter.number ? 'page' : undefined} key={chapter.number}>
-            <small>{String(chapter.number).padStart(2, '0')}</small>{chapter.shortTitle}
-          </a>)}
-    </div>)}
-    <a className="oh-nav-overview" href={root}>← Course overview</a>
-  </nav>
+function CourseOverview() {
+  return <CourseIndex title="The Other Half of English">
+    <CourseDirectory label="Guide introduction" items={[{ id:'introduction', title:'About this guide', summary:'How to read the other half of English.', icon:'compass', wide:true, href:root + '/introduction' }]}/>
+    <CourseTree label="The Other Half of English chapters" groups={otherHalfGroups.map((group, index) => ({
+      id:group.id, title:group.title, icon:['messages','users','message','globe','lightbulb'][index], open:index === 0,
+      items:otherHalfChapters.filter(chapter => chapter.group === group.id).map(chapter => ({
+        id:chapter.number, number:String(chapter.number).padStart(2,'0'), title:chapter.title,
+        href:chapterPath(chapter.number), status:chapter.missing ? 'Chapter text not supplied' : undefined,
+      })),
+    }))}/>
+  </CourseIndex>
+}
+
+function ChapterContents({ sections }) {
+  return <details className="oh-contents" onKeyDown={event => {
+    if (event.key === 'Escape') { event.currentTarget.open = false; event.currentTarget.querySelector('summary').focus() }
+  }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false }}>
+
+    <summary>In this chapter <span aria-hidden="true">⌄</span></summary>
+    <nav aria-label="In this chapter">{sections.map(section => <button type="button" key={section.id} onClick={event => {
+      event.currentTarget.closest('details').open = false
+      const target = document.getElementById(section.id)
+      target?.focus({ preventScroll:true })
+      target?.scrollIntoView({ behavior:'instant', block:'start' })
+    }}>{inline(section.title)}</button>)}</nav>
+  </details>
 }
 
 function MissingChapter({ chapter }) {
@@ -337,18 +298,13 @@ function ChapterPage({ chapter }) {
   const chapterTag = chapter.tag || 'RECOGNITION · REFERENCE'
 
   return <div className="aw-page oh-page oh-chapter-page">
-    <nav className="oh-breadcrumb" aria-label="Breadcrumb">
-      <a href="#/application">Application</a><span>/</span><a href={root}>The Other Half of English</a><span>/</span><strong>Chapter {String(chapter.number).padStart(2, '0')}</strong>
-    </nav>
-    <div className="oh-layout">
-      <ChapterNavigation current={chapter.number}/>
-      <main className="oh-chapter-main">
-        <ChapterNavigation current={chapter.number} mobile/>
+    <div className="oh-layout oh-reader-layout">
+      <article className="oh-chapter-main">
         <header className="oh-chapter-header">
           <span>{chapter.group.toUpperCase()} · CHAPTER {String(chapter.number).padStart(2, '0')} / 13</span>
           <h1>{chapter.title}</h1>
           <p>{chapter.subtitle}</p>
-          <div className="oh-chapter-meta"><span>{chapterTag}</span><a href={root}>All chapters</a></div>
+          <div className="oh-chapter-meta"><span>{chapterTag}</span><ChapterContents sections={parsed.sections}/></div>
         </header>
 
         {chapter.number === 3 && <aside className="oh-caution"><strong>Adult language · recognition first.</strong><p>This reference includes vulgar and sexual slang. The source emphasizes that context, relationship, and social setting determine acceptability. Understanding a term does not require using it.</p></aside>}
@@ -367,7 +323,7 @@ function ChapterPage({ chapter }) {
         </div>}
 
         <div className="oh-sections">
-          {parsed.sections.map((section, index) => <section className="oh-content-section" id={section.id} key={section.id}>
+          {parsed.sections.map((section, index) => <section className="oh-content-section" id={section.id} tabIndex={-1} key={section.id}>
             <header><span>{String(index + 1).padStart(2, '0')}</span><h2>{inline(section.title)}</h2></header>
             <div className="oh-section-content">
               {section.blocks.map((block, blockIndex) => <MarkdownBlock block={block} searchable={searchable} query={query} key={blockIndex}/>)}
@@ -382,13 +338,14 @@ function ChapterPage({ chapter }) {
           {previous ? <a href={chapterPath(previous.number)}><small>PREVIOUS</small><strong>← {previous.title}</strong></a> : <a href={root}><small>OVERVIEW</small><strong>← All chapters</strong></a>}
           {next ? <a href={chapterPath(next.number)}><small>NEXT</small><strong>{next.title} →</strong></a> : <a href={root}><small>FINISH</small><strong>Return to the course overview ↗</strong></a>}
         </nav>
-      </main>
+      </article>
     </div>
   </div>
 }
 
 export default function OtherHalfCourse({ route }) {
   if (!route.chapter) return <CourseOverview/>
+  if (route.chapter === 'introduction') return <CourseGuide/>
   const chapter = otherHalfChapters.find(item => item.number === Number(route.chapter))
   if (!chapter) return <CourseOverview/>
   if (chapter.missing) return <MissingChapter chapter={chapter}/>

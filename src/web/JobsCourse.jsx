@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { CourseIndex, CourseDirectory, CourseTree, scrollCourseTop } from './CourseNavigation'
+import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import outline from './jobsCourseOutline.json'
 import c1 from './jobsCopy01.json'
@@ -65,9 +66,8 @@ export default function JobsCourse({learning,update}) {
   const ja = language === 'ja'
   const t=labels[ja?'ja':'en']
   const responses=learning.responses || {}
-  const [active,setActive]=useState(()=>lessons.some(x=>x.id===responses[jobKey('location')])?responses[jobKey('location')]:null)
+  const [active,setActive]=useState(null)
   const [mode,setMode]=useState('study')
-  const [openedUnit,setOpenedUnit]=useState('U01')
   const [reveal,setReveal]=useState(false)
   const [checked,setChecked]=useState(null)
   const [micState,setMicState]=useState('')
@@ -79,12 +79,10 @@ export default function JobsCourse({learning,update}) {
   const roleId=responses[jobKey('role')] || 'support'
   const role=roles.find(x=>x.id===roleId)||roles[0]
   const draft=current ? (responses[jobKey('note',current.id)]||''):''
-  const finished=useMemo(()=>lessons.filter(x=>responses[jobKey('done',x.id)]==='1').length,[responses])
   const setResponse=(key,value)=>update(prev=>({...prev,responses:{...prev.responses,[key]:value}}))
   const edit=(value)=>{if(current)setResponse(jobKey('note',current.id),value.slice(0,4900))}
-  const focusPage=()=>{const viewport=document.querySelector('.aw-main')||document.querySelector('main');if(viewport&&viewport.scrollTo)viewport.scrollTo({top:0,behavior:'instant'})}
-  const select=(id,tab='study')=>{if(recognition.current){recognition.current.stop();recognition.current=null;}setMicState('');setActive(id);setMode(tab);setReveal(false);setChecked(null);setWarn('');setResponse(jobKey('location'),id);focusPage()}
-  const home=()=>{setActive(null);setWarn('');setResponse(jobKey('location'),'');focusPage()}
+  const select=(id,tab='study')=>{if(recognition.current){recognition.current.stop();recognition.current=null;}setMicState('');setActive(id);setMode(tab);setReveal(false);setChecked(null);setWarn('');setResponse(jobKey('location'),id);scrollCourseTop()}
+  const home=()=>{setActive(null);setWarn('');setResponse(jobKey('location'),'');scrollCourseTop()}
   const completion=()=>{if(!draft.trim()){setWarn(t.empty);return}setWarn('');setResponse(jobKey('done',current.id),'1')}
   const dictate=()=>{
     if(recognition.current){recognition.current.stop();recognition.current=null;setMicState('');return}
@@ -105,26 +103,17 @@ export default function JobsCourse({learning,update}) {
   const email=current&&emails[current.id]
   const interviewQuestion=current&&(current.id==='8.3'?role.task:current.question)
 
-  if(!current)return <div className="aw-page jc-page">
-    <a className="ap-back" href="#/application">← {t.back}</a>
-    <header className="jc-hero"><p className="ap-eyebrow">ARTICO / APPLICATION</p><h1>{t.course}</h1><p>{t.sub}</p>
-      <div className="jc-hero-actions">
-        <button type="button" className="jc-primary" onClick={()=>select('1.1')}>{t.start} <span aria-hidden="true">→</span></button>
-        {responses[jobKey('location')]&&<button type="button" className="jc-secondary" onClick={()=>select(responses[jobKey('location')])}>{t.resume}</button>}
-      </div>
-      <p className="jc-meta">{finished} / {lessons.length} {ja?'レッスン練習済み':'lessons practised'}</p>
-    </header>
-    <div className="jc-course-map">
-      {units.map((u,i)=>{const ls=lessons.filter(l=>l.unit_id===u.id);const count=ls.filter(l=>responses[jobKey('done',l.id)]==='1').length;return <section className="jc-stage" key={u.id}>
-        <button type="button" className="jc-stage-top" aria-expanded={openedUnit===u.id} onClick={()=>setOpenedUnit(openedUnit===u.id?'':u.id)}>
-          <span className="jc-stage-index">{String(i+1).padStart(2,'0')}</span><span className="jc-stage-copy"><strong>{u.title}</strong><small>{u.promise}</small></span><span className="jc-stage-count">{count}/{ls.length}</span><span className="jc-chevron">{openedUnit===u.id?'−':'+'}</span>
-        </button>
-        {openedUnit===u.id&&<div className="jc-stage-detail">{ls.map(l=><button type="button" className="jc-lesson-row" key={l.id} onClick={()=>select(l.id)}>
-          <span className={'jc-mini-dot '+(responses[jobKey('done',l.id)]==='1'?'is-done':'')}/><span><strong>{l.id} · {l.title}</strong><small>{l.question}</small></span><span aria-hidden="true">›</span>
-        </button>)}<div className="jc-workbook"> <span>{t.leave}</span><strong>{u.workbook.title}</strong><p>{u.workbook.task}</p></div></div>}
-      </section>})}
-    </div>
-  </div>
+  if(!current)return <CourseIndex title={t.course}>
+    {lessons.some(lesson => lesson.id === responses[jobKey('location')]) && <CourseDirectory label={t.resume} items={[{
+      id:'resume', title:t.resume, summary:lessons.find(lesson => lesson.id === responses[jobKey('location')]).title, icon:'book', wide:true,
+      onClick:() => select(responses[jobKey('location')]),
+    }]}/>}
+
+    <CourseTree label={t.all} groups={units.map((unit, index) => ({
+      id:unit.id, title:unit.title, icon:'briefcase', open:index === 0,
+      items:lessons.filter(lesson => lesson.unit_id === unit.id).map(lesson => ({ id:lesson.id, number:lesson.id, title:lesson.title, onClick:() => select(lesson.id) })),
+    }))}/>
+  </CourseIndex>
 
   return <div className="aw-page jc-page">
     <nav className="jc-crumb" aria-label="Course position"><button type="button" onClick={home}>← {t.overview}</button><span>/</span><span>{unit.title}</span><span>/</span><span>{current.id}</span></nav>
@@ -149,7 +138,8 @@ export default function JobsCourse({learning,update}) {
           {current.id==='4.3'&&<section className="jc-section"><h2>{ja?'編集できる構成':'An adaptable structure'}</h2><pre className="jc-document">{draftLetter}</pre></section>}
           <section className="jc-phrase"><div><p className="jc-kicker">{t.words}</p><strong lang="en">{info.language}</strong></div><button type="button" aria-label={t.hear} title={t.hear} onClick={()=>speak(info.language)}>▶ <span className="jc-play-label">{t.hear}</span></button></section>
           <section className="jc-caution"><strong>{t.watch}</strong><p>{info.watch}</p></section>
-          <button type="button" className="jc-primary jc-wide" onClick={()=>{setMode('practice');focusPage()}}>{t.practice} <span aria-hidden="true">→</span></button>
+          <details className="jc-workbook"><summary>{t.leave}</summary><strong>{unit.workbook.title}</strong><p>{unit.workbook.task}</p></details>
+          <button type="button" className="jc-primary jc-wide" onClick={()=>{setMode('practice');scrollCourseTop()}}>{t.practice} <span aria-hidden="true">→</span></button>
         </div>:<div className="jc-reading">
           {current.unit_id==='U08'&&<p className="jc-disclaimer">{t.capstone}</p>}
           {current.id==='8.1'&&<section className="jc-section"><h2>{t.role}</h2><div className="jc-role-list">{roles.map(r=><button key={r.id} type="button" className={roleId===r.id?'is-selected':''} onClick={()=>setResponse(jobKey('role'),r.id)}><strong>{r.name}</strong><span>{r.duties}</span><small>{r.required}</small></button>)}</div></section>}

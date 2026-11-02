@@ -3,14 +3,14 @@
 export const applicationTracks = [
   {
     id:'other-half', icon:'book', en:'The Other Half of English', ja:'英語のもう半分',
-    enSummary:'A field guide to real American English beyond textbooks. Recognition first; no speaking drills.',
+    enSummary:'Understand meaning beyond textbook English.',
     jaSummary:'教科書では扱われにくい、実際のアメリカ英語を理解するためのガイド。',
     tasks:[], // A recognition-first reference course, not a speaking or test track.
   },
   {
     id:'tests', icon:'school', en:'English Tests', ja:'英語試験',
-    enSummary:'IELTS, TOEFL, TOEIC, EIKEN and other tests.',
-    jaSummary:'IELTS・TOEFL・TOEIC・英検など。',
+    enSummary:'Study IELTS or explore the TOEIC outline.',
+    jaSummary:'IELTSを学ぶ。TOEICのコース概要を見る。',
     tasks:[
       { en:'Speak about a familiar place', ja:'身近な場所を説明する',
         kind:'speaking',
@@ -30,25 +30,25 @@ export const applicationTracks = [
   },
   {
     id:'smalltalk', icon:'messages', en:'Small Talk', ja:'ちょっとした会話',
-    enSummary:'Understand everyday social connection. Learn to begin, respond, and finish naturally.',
+    enSummary:'Begin, build, and finish everyday conversations.',
     jaSummary:'人と自然につながる会話の仕組みを学び、始め方・返し方・終え方を練習する。',
     tasks:[], // Routed to the dedicated SmallTalkCourse. Old notes remain readable.
   },
   {
     id:'interviews', icon:'briefcase', en:'Jobs & Interviews', ja:'仕事・面接',
-    enSummary:'Explore the full hiring journey, from finding a job to interviews and offers.',
+    enSummary:'Work through job searches, interviews, and offers.',
     jaSummary:'仕事探しから履歴書・面接・採用結果まで、順を追って学ぶ。',
     tasks:[], // Routed to the dedicated eight-stage JobsCourse.
   },
   {
     id:'presentations', icon:'presentation', en:'Presentations & Public Speaking', ja:'発表・人前で話す',
-    enSummary:'Plan and deliver talks for research, business, teaching and real-world situations.',
+    enSummary:'Plan and deliver a talk for your audience.',
     jaSummary:'研究・ビジネス・教育など、目的に合う発表を組み立てて伝える。',
     tasks:[], // Routed to the dedicated research-informed 18-lesson PresentationCourse.
   },
   {
     id:'academic', icon:'school', en:'Academic & Research Writing', ja:'学術・研究ライティング',
-    enSummary:'Six stages: read evidence, write manuscripts and revise academic work.',
+    enSummary:'Read evidence, write manuscripts, and revise.',
     jaSummary:'文献の読解から研究論文の執筆・推敲まで、６ステージで学ぶ。',
     tasks:[], // Routed to the dedicated 33-lesson AcademicCourse.
   },
@@ -73,13 +73,13 @@ export const applicationTracks = [
   },
   {
     id:'reading', icon:'book', en:'Reading & Understanding', ja:'読解・理解',
-    enSummary:'A graded library of stories, real-world documents, news and literature.',
+    enSummary:'Explore stories, documents, news, and literature.',
     jaSummary:'物語・日常文書・ニュース・文学を読む、難易度別のライブラリー。',
     tasks:[], // Routed to the dedicated ReadingCourse; old generic drills have been replaced.
   },
   {
     id:'ideas', icon:'lightbulb', en:'Ideas & Expression', ja:'アイデア・表現',
-    enSummary:'Explore, refine, and express your own thinking in clear English.',
+    enSummary:'Explore, refine, and express your own thinking.',
     jaSummary:'考えを深め、論理を整え、自分の言葉で英語で伝える。',
     tasks:[], // Dedicated eight-lesson IdeasCourse. Legacy saved drafts remain untouched.
 

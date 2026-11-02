@@ -477,8 +477,8 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
 test('Application exercises use learner notes, not fake scores or unlocks',()=>{
   const ui=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   const css=readFileSync(new URL('./application.css', import.meta.url),'utf8')
-  assert.match(ui, /applicationTracks\.map\(\(track, index\) =>/)
-  assert.match(ui, /href=\{'#\/application\/' \+ track\.id\}/)
+  assert.match(ui, /applicationTracks\.map\(track =>/)
+  assert.match(ui, /href:'#\/application\/' \+ track\.id/)
   assert.match(ui, /applicationResponseKey\(track\.id, selected\)/)
   assert.match(ui, /maxLength=\{1900\}/)
   assert.match(ui, /onChange=\{e=>changes\(e\.target\.value\)\}/)

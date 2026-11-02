@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
+import { CourseIndex, CourseDirectory, CourseTree, scrollCourseTop } from './CourseNavigation'
+import { useEffect, useState } from 'react'
 import { useLanguage } from './Language'
 import { academicStages, academicLessons, academicGuidedActivities, riverbend, getAcademicLesson } from './academicCourseData'
 import { academicJapanese } from './academicCourseJa'
@@ -139,9 +140,8 @@ export default function AcademicCourse({ learning, update }) {
   const t = text[locale]
   const responses = learning.responses || {}
   const storedLocation = responses[repoKey('location')]
-  const [active,setActive] = useState(() => getAcademicLesson(storedLocation)?.id || null)
+  const [active,setActive] = useState(null)
   const [mode,setMode] = useState('study')
-  const [opened,setOpened] = useState('01')
   const [draft,setDraft] = useState(() => active ? readAcademicDraft(window.localStorage,active) : '')
   const [stored,setStored] = useState(true)
   const [showModel,setShowModel] = useState(false)
@@ -150,21 +150,16 @@ export default function AcademicCourse({ learning, update }) {
   const current = active ? getAcademicLesson(active) : null
   const stage = current ? academicStages.find(s=>s.id===current.stage) : null
   const guided = current && academicGuidedActivities[current.id]
-  const completed = useMemo(()=>academicLessons.filter(l=>responses[repoKey('done',l.id)]==='1').length,[responses])
   const setResponse = (key,value) => update(prev=>({...prev,responses:{...prev.responses,[key]:value}}))
-  const focus = () => {
-    const pane = document.querySelector('.aw-main') || document.querySelector('main')
-    if(pane && pane.scrollTo) pane.scrollTo({top:0,behavior:'instant'})
-  }
   const select = (id,tab='study') => {
     if(!getAcademicLesson(id)) return
-    setActive(id);setMode(tab);setOpened(id.split('.')[0])
+    setActive(id);setMode(tab)
     setDraft(readAcademicDraft(window.localStorage,id))
     setStored(true);setShowModel(false);setReview([false,false,false]);setWarning('')
-    setResponse(repoKey('location'),id);focus()
+    setResponse(repoKey('location'),id);scrollCourseTop()
   }
   const home = () => {
-    setActive(null);setWarning('');setResponse(repoKey('location'),'');focus()
+    setActive(null);setWarning('');setResponse(repoKey('location'),'');scrollCourseTop()
   }
   const edit = value => {
     const limited=value.slice(0,16000)
@@ -178,48 +173,21 @@ export default function AcademicCourse({ learning, update }) {
     setWarning('')
     setResponse(repoKey('done',active),'1')
   }
-  const navigateTab = tab => {setMode(tab);setWarning('');focus()}
+  const navigateTab = tab => {setMode(tab);setWarning('');scrollCourseTop()}
   const index=academicLessons.findIndex(l=>l.id===active)
   const currentJa=academicJapanese[active] || null
 
   useEffect(()=>{document.title=current ? current.title+' · Artico' : 'Academic & Research Writing · Artico'},[current])
-  if(!current)return <div className="aw-page jc-page ac-page">
-    <a className="ap-back" href="#/application">← {t.back}</a>
-    <header className="jc-hero ac-hero">
-      <p className="ap-eyebrow">ARTICO / APPLICATION</p>
-      <h1>{t.title}</h1>
-      <p>{t.intro}</p>
-      <div className="jc-hero-actions">
-        <button type="button" className="jc-primary" onClick={()=>select(academicLessons[0].id)}>{t.begin} <span aria-hidden="true">→</span></button>
-        {storedLocation && getAcademicLesson(storedLocation) && <button type="button" className="jc-secondary" onClick={()=>select(storedLocation)}>{t.resume}</button>}
-      </div>
-      <p className="jc-meta">{completed} / {academicLessons.length} {t.count} · {t.canUse}</p>
-    </header>
-    <div className="ac-overview-heading"><h2>{t.stages}</h2><span>{academicStages.length} {ja?'ステージ':'stages'}</span></div>
-    <div className="jc-course-map">
-      {academicStages.map(s=>{
-        const ls=academicLessons.filter(l=>l.stage===s.id)
-        const count=ls.filter(l=>responses[repoKey('done',l.id)]==='1').length
-        return <section key={s.id} className="jc-stage">
-          <button type="button" className="jc-stage-top" aria-expanded={opened===s.id} onClick={()=>setOpened(opened===s.id?'':s.id)}>
-            <span className="jc-stage-index">{s.id}</span>
-            <span className="jc-stage-copy"><strong>{s.title}</strong>
-              {ja && <small className="ac-ja-name" lang="ja">{s.ja}</small>}
-              <small>{ja?s.jaPromise:s.promise}</small>
-            </span><span className="jc-stage-count">{count}/{ls.length}</span><span className="jc-chevron">{opened===s.id?'−':'+'}</span>
-          </button>
-          {opened===s.id && <div className="jc-stage-detail">
-            {ls.map(l=><button type="button" className="jc-lesson-row" key={l.id} onClick={()=>select(l.id)}>
-              <span className={'jc-mini-dot '+(responses[repoKey('done',l.id)]==='1'?'is-done':'')}/>
-              <span><strong>{l.id} · {l.title}</strong>{ja && <small lang="ja">{l.ja}</small>}<small>{l.question}</small></span><span aria-hidden="true">›</span>
-            </button>)}
-            <div className="jc-workbook"><span>{t.outline}</span><strong>{s.artifact}</strong><p>{s.promise}</p></div>
-          </div>}
-        </section>
-      })}
-    </div>
-    <p className="ac-course-fine">{t.note}</p>
-  </div>
+  if(!current)return <CourseIndex title={t.title}>
+    {getAcademicLesson(storedLocation) && <CourseDirectory label={t.resume} items={[{
+      id:'resume', title:t.resume, summary:getAcademicLesson(storedLocation).title, icon:'book', wide:true, onClick:() => select(storedLocation),
+    }]}/>}
+
+    <CourseTree label={t.stages} groups={academicStages.map((stage, index) => ({
+      id:stage.id, title:ja ? stage.ja : stage.title, icon:'school', open:index === 0,
+      items:academicLessons.filter(lesson => lesson.stage === stage.id).map(lesson => ({ id:lesson.id, number:lesson.id, title:ja ? lesson.ja : lesson.title, onClick:() => select(lesson.id) })),
+    }))}/>
+  </CourseIndex>
 
   return <div className="aw-page jc-page ac-page">
     <nav className="jc-crumb" aria-label={ja?'現在の学習位置':'Course position'}>
@@ -301,6 +269,7 @@ export default function AcademicCourse({ learning, update }) {
           </button>
           <p className="jc-small">{t.note} {t.auto}</p>
         </div>}
+        <details className="jc-workbook"><summary>{t.outline}</summary><strong>{stage.artifact}</strong><p>{stage.promise}</p></details>
         <div className="jc-footer">
           <button type="button" className="jc-secondary" onClick={()=>index>0?select(academicLessons[index-1].id):home()}>
             ← {index>0?t.prev:t.home}

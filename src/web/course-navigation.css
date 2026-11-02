@@ -1,0 +1,39 @@
+.cn-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.aw-page.cn-index{display:block;width:100%;max-width:1120px;margin:0 auto;padding:28px 32px 56px}
+.cn-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.cn-blue{--cn-tint:#f5f8fe;--cn-line:#dbe5f4}
+.cn-green{--cn-tint:#f0f8f5;--cn-line:#dbe9e3}
+.cn-purple{--cn-tint:#f6f3fb;--cn-line:#e6dff1}
+.cn-warm{--cn-tint:#fbf6ef;--cn-line:#eee3d4}
+.cn-directory .cn-card{display:flex;align-items:center;gap:18px;min-height:130px;padding:26px 22px;border:1px solid var(--cn-line);border-radius:20px;background:var(--cn-tint);color:#293d3e;text-decoration:none;text-align:left;font:inherit;width:100%;cursor:pointer;transition:border-color .18s,box-shadow .18s,transform .18s}
+.cn-card:hover{border-color:#a9bcbf;box-shadow:0 4px 16px #233e3b08;transform:translateY(-1px)}
+.cn-wide{grid-column:1/-1}
+.cn-icon{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;border:1px solid #dfe6eb;border-radius:14px;background:#ffffffa6;color:#657778}
+.cn-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:6px}
+.cn-copy strong{font-size:19px;line-height:1.35;font-weight:700;letter-spacing:-.025em}
+.cn-copy>span{font-size:14px;line-height:1.6;color:#647374}
+.cn-chevron{flex:0 0 20px}
+.cn-card:focus-visible,.cn-group>summary:focus-visible,.cn-branches a:focus-visible,.cn-branches button:focus-visible{outline:3px solid #315ed8;outline-offset:4px}
+.cn-tree{display:grid;gap:16px;margin:0}
+.cn-directory+.cn-tree,.cn-tree+.cn-directory{margin-top:22px}
+.cn-group{position:relative;border:1px solid var(--cn-line);border-radius:20px;background:var(--cn-tint)}
+.cn-group>summary{display:flex;align-items:center;gap:16px;min-height:102px;padding:22px;list-style:none;cursor:pointer;border-radius:20px}
+.cn-group>summary::-webkit-details-marker{display:none}
+.cn-group-number{font-size:12px;font-weight:700;color:#82918e;font-variant-numeric:tabular-nums}
+.cn-chevron-down{transform:rotate(90deg);transition:transform .18s}
+.cn-group[open]>summary .cn-chevron-down{transform:rotate(-90deg)}
+.cn-branches{list-style:none;margin:0;padding:0 22px 16px 82px;border-top:1px solid var(--cn-line)}
+.cn-branches li{position:relative;border-left:2px solid var(--cn-line);padding-left:28px}
+.cn-branches li:before{content:'';position:absolute;top:0;left:-2px;width:23px;height:34px;border:solid var(--cn-line);border-width:0 0 2px 2px;border-bottom-left-radius:12px}
+.cn-branches li:last-child{border-left-color:transparent}
+.cn-branches a,.cn-branches button{display:flex;align-items:center;gap:16px;min-height:68px;width:100%;padding:15px 8px;border:0;border-bottom:1px solid var(--cn-line);background:transparent;text-decoration:none;color:#344747;text-align:left;font:inherit;cursor:pointer;border-radius:6px}
+.cn-branches li:last-child>a,.cn-branches li:last-child>button{border-bottom:0}
+.cn-branches a:hover,.cn-branches button:hover{background:#ffffff72}
+.cn-branch-number{flex:0 0 24px;color:#87918e;font-size:12px;font-variant-numeric:tabular-nums}
+.cn-branch-copy{flex:1;min-width:0;display:grid;gap:4px}
+.cn-branch-copy strong{font-size:15px;font-weight:600;line-height:1.5}
+.cn-branch-copy small{font-size:12px;color:#8b7b5a}
+@media(max-width:650px){.aw-page.cn-index{padding:20px 16px 40px}.cn-directory{grid-template-columns:minmax(0,1fr);gap:12px}.cn-card{min-height:112px;padding:20px 16px;gap:14px;border-radius:17px}.cn-icon{width:46px;height:46px;flex-basis:46px;border-radius:12px}.cn-copy strong{font-size:17px}.cn-copy>span{font-size:13px}.cn-group>summary{padding:18px 14px;gap:12px}.cn-group-number{display:none}.cn-branches{padding:0 12px 10px 36px}.cn-branches li{padding-left:20px}.cn-branches li:before{width:16px}.cn-branches a,.cn-branches button{gap:10px}.cn-branch-copy strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.cn-card,.cn-chevron-down{transition:none}.cn-card:hover{transform:none}}
+
+.aw-page.cn-index.ie-page{width:100%;max-width:1120px}

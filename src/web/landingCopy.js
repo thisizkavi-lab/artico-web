@@ -50,7 +50,7 @@ export const landingCopy = {
 // the globe picker changes every section without changing navigation or layout.
 export const landingPageCopy = {
   en: {
-    pageTitle: 'Artico — One language. Infinite possibilities.',
+    pageTitle: 'Artico — One language. Many possibilities.',
     skip: 'Skip to content',
     open: 'Open Artico',
     backToLanding: 'Artico — back to landing page',
@@ -60,7 +60,7 @@ export const landingPageCopy = {
     selectLanguage: 'Select explanation language',
     languageTrigger: 'Choose language (current: English)',
     start: 'Get Started',
-    heroTitle: ['One language, infinite', 'possibilities.'],
+    heroTitle: ['One language,', 'many possibilities.'],
     heroDescription: 'Turn English from a barrier into a multiplier, giving people everywhere the freedom to communicate, connect, and create in a language shared across borders.',
     whyEyebrow: 'THE IDEA BEHIND ARTICO',
     whyTitle: 'why artico?',
@@ -158,7 +158,7 @@ export const landingPageCopy = {
     feedbackCopyFailed: 'Copy was unavailable. Select your message to copy it.',
   },
   ja: {
-    pageTitle: 'Artico — 英語ひとつで、可能性は無限に。',
+    pageTitle: 'Artico — ひとつの言語、たくさんの可能性。',
     skip: '本文へスキップ',
     open: 'Articoを開く',
     backToLanding: 'Artico — ランディングページの先頭へ',
@@ -168,7 +168,7 @@ export const landingPageCopy = {
     selectLanguage: '説明に使う言語を選ぶ',
     languageTrigger: '言語を選択（現在：日本語）',
     start: 'はじめる',
-    heroTitle: ['英語ひとつで、', '可能性は無限に。'],
+    heroTitle: ['ひとつの言語、', 'たくさんの可能性。'],
     heroDescription: '英語を、壁ではなく可能性を広げる力に。世界の人と話し、つながり、新しいものを生み出す自由を、あなたに。',
     whyEyebrow: 'ARTICOが大切にしていること',
     whyTitle: 'なぜ、Articoなのか？',

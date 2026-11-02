@@ -215,8 +215,8 @@ function StepFamily({ language, onSpeak }) {
       </div>
       <p className="ar-f14-subnote">
         {language === 'ja'
-          ? 'step- は継親を通じた関係、half- は生みの親を一人共有する関係を表します。'
-          : 'Step- describes a family connection through a stepparent. Half- means sharing one birth parent.'}
+          ? <><strong lang="en">step-</strong> は継親を通じた関係、<strong lang="en">half-</strong> は生みの親を一人共有する関係を表します。</>
+          : <><strong lang="en">Step-</strong> describes a family connection through a stepparent. <strong lang="en">Half-</strong> means sharing one birth parent.</>}
       </p>
     </Board>
   )
@@ -248,8 +248,8 @@ function VocabularySections({ language, onSpeak }) {
         <PictureGrid terms={ageTerms} language={language} onSpeak={onSpeak} variant="ar-f14-growing-grid" />
         <p className="ar-f14-hint">
           {language === 'ja'
-            ? 'child は「子ども」を表すほか、親との関係では成人した息子や娘にも使います。'
-            : 'Child can mean a young person, or someone’s son or daughter at any age.'}
+            ? <><strong lang="en">child</strong> は「子ども」を表すほか、親との関係では成人した息子や娘にも使います。</>
+            : <><strong lang="en">Child</strong> can mean a young person, or someone’s son or daughter at any age.</>}
         </p>
       </Board>
     </div>

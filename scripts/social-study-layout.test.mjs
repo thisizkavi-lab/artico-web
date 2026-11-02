@@ -203,6 +203,12 @@ test('notes emphasize explained English phrases in either language without chang
   assert.ok(unrelated.every((run) => !run.emphasis), 'ordinary mentions are not definition targets')
   const subjects = emphasizeNoteRuns([{ text: 'Breaking up here means interrupted sound. Drop can describe a call ending.' }])
   assert.deepEqual(subjects.filter((run) => run.emphasis).map((run) => run.text), ['Breaking up', 'Drop'])
+  for (const text of ['So moves the conversation to the next step.', 'So で次の行動へ進みます。']) {
+    const explicit = emphasizeNoteRuns([{ text }], {}, ['So'])
+    assert.equal(explicit.find((run) => run.text === 'So')?.emphasis, true)
+    assert.equal(explicit.map((run) => run.text).join(''), text)
+  }
+  assert.ok(emphasizeNoteRuns([{ text: 'Someone else explains it.' }], {}, ['So']).every((run) => !run.emphasis))
 })
 
 test('marked late-course references use complete paired tables and retain merged source identities', () => {

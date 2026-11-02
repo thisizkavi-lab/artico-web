@@ -3,6 +3,7 @@ import { useLanguage } from './Language'
 import ReferencePhraseShelf from './ReferencePhraseShelf'
 import { chapter04JapaneseFor } from './chapter04Japanese'
 import { chapter05JapaneseFor } from './chapter05Japanese'
+import { emphasizeNoteRuns } from './studyTextPresentation'
 const plain = (runs) => runs.map((run) => run.text).join('')
 export function RichText({ runs = [] }) {
   return runs.map((run, index) =>
@@ -59,9 +60,8 @@ export function SourceContent({ block, audioProps, focusedId, examples = true, p
   else if (block.type === 'explanation' && block.teachingNote)
     content = (
       <aside className="ar-teaching-note" aria-label={block.teachingNote}>
-        <span className="ar-teaching-note-title">Note</span>
-        <p className="ar-teaching-note-copy">{block.teachingNote && block.teachingNote !== 'Note'
-          && <strong>{block.teachingNote} </strong>}<RichText runs={block.runs} /></p>
+        <span className="ar-teaching-note-title">{language === 'ja' ? 'メモ' : 'Note'}</span>
+        <p className="ar-teaching-note-copy"><RichText runs={emphasizeNoteRuns(block.runs, audioProps?.byId)} /></p>
       </aside>
     )
   else if (block.type === 'table')

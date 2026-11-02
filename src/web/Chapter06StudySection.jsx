@@ -4,6 +4,7 @@ import { conversationSide } from './conversationLayout'
 import { chapter06Presentation } from './chapter06Presentation'
 import { sectionPhraseIds } from './phraseSceneData'
 import './chapter06-pilot.css'
+import { emphasizeNoteRuns } from './studyTextPresentation'
 
 function Chapter06Conversation({ block, byId, audioProps, Audio, focusedId }) {
   const { language } = useLanguage()
@@ -58,7 +59,7 @@ export default function Chapter06StudySection({ section, byId, audioProps, Audio
       if (entry.type === 'note') return <aside key={entry.id} className="ar-ch06-note" data-source-block={entry.id}>
         {anchors(entry.source.phraseIds)}
         <span className="ar-ch06-note-label">{language === 'ja' ? 'メモ' : 'Note'}</span>
-        <p><RichText runs={entry.source.runs} /></p>
+        <p><RichText runs={emphasizeNoteRuns(entry.source.runs, byId)} /></p>
       </aside>
       if (entry.type === 'reply-table') return <div key={entry.id} className="rc-table ar-ch06-reply-table"
         role="region" aria-label={language === 'ja' ? '同じ気持ちを伝える返し方' : 'Sharing the same feeling'} tabIndex={0}>

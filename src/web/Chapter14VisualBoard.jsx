@@ -46,27 +46,27 @@ const familyLines = [
 const familyHearts = [[360,58],[780,58],[980,180],[600,180],[150,180],[500,305],[990,305],[480,435],[790,435]]
 
 const relationshipTerms = [
-  ['siblings','兄弟姉妹','👫'], ['twins','双子','👭'], ['only child','一人っ子','🧒'],
-  ['oldest child','一番上の子','🥇'], ['middle child','真ん中の子','🧒'], ['youngest child','末っ子','🍼'],
-  ['parents','両親','👨‍👩‍👧'], ['children','子どもたち','🧒👧'], ['grandparents','祖父母','👵👴'],
-  ['grandchildren','孫たち','👧👦'], ['single parent','ひとり親','👩‍👧'], ['partner','パートナー','💞'],
-  ['spouse','配偶者','💍'], ['engaged','婚約している','💍'], ['married','結婚している','💒'],
-  ['single','独身／交際相手がいない','🧍'], ['divorced','離婚している','💔'],
-  ['husband','夫','🧑'], ['wife','妻','👩'], ['ex-husband','元夫','🧍'],
-  ['ex-wife','元妻','🧍‍♀️'], ['colleague','同僚','🧑‍💼'], ['friend','友人','🤝'],
-  ['neighbour / neighbor','近所の人','🏠'],
+  ['siblings','兄弟姉妹'], ['twins','双子'], ['only child','一人っ子'],
+  ['oldest child','一番上の子'], ['middle child','真ん中の子'], ['youngest child','末っ子'],
+  ['parents','両親'], ['children','子どもたち'], ['grandparents','祖父母'],
+  ['grandchildren','孫たち'], ['single parent','ひとり親'], ['partner','パートナー'],
+  ['spouse','配偶者'], ['engaged','婚約している'], ['married','結婚している'],
+  ['single','独身／交際相手がいない'], ['divorced','離婚している'],
+  ['husband','夫'], ['wife','妻'], ['ex-husband','元夫'],
+  ['ex-wife','元妻'], ['colleague','同僚'], ['friend','友人'],
+  ['neighbour / neighbor','近所の人'],
 ]
 const lifeTerms = [
-  ['birth','誕生','👶'], ['birthday','誕生日','🎂'], ['graduation','卒業','🎓'],
-  ['first job','初めての仕事','💼'], ['promotion','昇進','📈'], ['falling in love','恋に落ちること','💕'],
-  ['wedding','結婚式','💐'], ['holiday / vacation','休暇／旅行','🏖️'], ['divorce','離婚','💔'],
-  ['new home','新居','🏡'], ['retirement','退職／引退','🌿'], ['funeral','葬儀','🕊️'],
+  ['birth','誕生'], ['birthday','誕生日'], ['graduation','卒業'],
+  ['first job','初めての仕事'], ['promotion','昇進'], ['falling in love','恋に落ちること'],
+  ['wedding','結婚式'], ['holiday / vacation','休暇／旅行'], ['divorce','離婚'],
+  ['new home','新居'], ['retirement','退職／引退'], ['funeral','葬儀'],
 ]
 const ageTerms = [
-  ['baby','赤ちゃん','👶'], ['toddler','歩き始めた幼児','🚼'],
-  ['child','子ども','🧒'], ['girl','女の子','👧'], ['boy','男の子','👦'],
-  ['teenager','10代の若者','🧑‍🤝‍🧑'], ['adult','大人','🧑'], ['woman','女性','👩'],
-  ['man','男性','👨'], ['older adult','高齢の成人','🧓'], ['senior citizen','高齢者','👵👴'],
+  ['baby','赤ちゃん'], ['toddler','歩き始めた幼児'],
+  ['child','子ども'], ['girl','女の子'], ['boy','男の子'],
+  ['teenager','10代の若者'], ['adult','大人'], ['woman','女性'],
+  ['man','男性'], ['older adult','高齢の成人'], ['senior citizen','高齢者'],
 ]
 const stepTerms = [
   ['stepparent','継親'], ['stepmother / stepmom','継母'],
@@ -187,9 +187,6 @@ function StepFamily({ language, onSpeak }) {
               <MiniFamilyNode en="half-brother / half-sister" ja="異父／異母兄弟姉妹" language={language} onSpeak={onSpeak} />
             </div>
           </div>
-          <p>{language === 'ja'
-            ? '生みの親を一人共有する兄弟姉妹です。'
-            : 'You share one birth parent.'}</p>
         </article>
         <article className="ar-f14-step-panel">
           <h3>{language === 'ja' ? 'STEP- の関係' : 'STEP- RELATIONSHIP'}</h3>
@@ -211,9 +208,6 @@ function StepFamily({ language, onSpeak }) {
               </div>
             </div>
           </div>
-          <p>{language === 'ja'
-            ? '継親の別の関係で生まれた子は、あなたの義理の兄弟姉妹です。'
-            : 'Your stepparent’s child from another relationship is your stepbrother or stepsister.'}</p>
         </article>
       </div>
       <div className="ar-f14-step-vocabulary">
@@ -231,9 +225,10 @@ function StepFamily({ language, onSpeak }) {
 function PictureGrid({ terms, language, onSpeak, variant = '' }) {
   return (
     <div className={'ar-f14-picture-grid ' + variant}>
-      {terms.map(([en, ja, icon]) => (
+      {terms.map(([en, ja]) => (
         <Word key={en} en={en} ja={ja} language={language} onSpeak={onSpeak} className="ar-f14-picture-word">
-          <span className="ar-f14-picture-icon" aria-hidden="true">{icon}</span>
+          <img className="ar-f14-picture-art" aria-hidden="true" alt="" width="160" height="112" loading="lazy"
+            src={`${import.meta.env.BASE_URL}assets/course/family-symbols/${en.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.svg`} />
         </Word>
       ))}
     </div>

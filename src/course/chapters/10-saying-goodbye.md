@@ -59,7 +59,7 @@ Here Sky offers a next step. If you want a definite time, **When are you free?**
 
 ## Optional: Familiar closings
 
-**Catch you later** and **See ya** can close a familiar exchange. **I gotta go** is an informal written representation of **I've got to go**. **I'm out** can announce your departure in a casual scene. Choose the style you intend; none is a required way to sound American.
+**Catch you later** and **See ya** can close a familiar exchange. **I gotta go** is an informal written representation of **I've got to go**. **I'm out** can announce your departure in a casual scene. Choose the style you intend.
 
 ## Practice: Bring the encounter to an end
 

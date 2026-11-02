@@ -27,8 +27,8 @@
   .ar-study-note, .ar-ch06-note, .ar-c03-idea, .ar-c03-lesson-tip
 ) :is(p, .ip-prose, .ar-note-copy, .ar-teaching-note-copy) strong {
   font-size: inherit;
-  font-weight: 500;
-  color: inherit;
+  font-weight: 700;
+  color: #626b72;
 }
 .ip-page .ip-reading.ar-compact-study-notes:is(.ar-shared-study, .ar-page) :is(
   .ar-note-label, .ar-teaching-note-title, .ar-reference-note-label,

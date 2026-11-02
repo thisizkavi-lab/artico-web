@@ -1,4 +1,5 @@
 import { vocabularyChapters } from './socialStudyLayout.js'
+import { referenceStudyPresentation } from './studyReferencePresentation.js'
 
 const chapter08Notes = new Set(['ch08-b2', 'ja-08-study-0-2', 'ch08-b15', 'ja-08-study-3-0', 'ja-08-study-3-1'])
 const chapter07Notes = new Set([
@@ -53,7 +54,7 @@ function supportingExplanation(block, chapterId, earlierText, byId) {
 // Presentation changes preserve source wording, IDs, and the bilingual lessons.
 export function illustratedStudyPresentation(section, chapterId, language, byId) {
   let caption
-  const blocks = []
+  let blocks = []
   let earlierText = ''
   let followingConversation = false
   const custom = customLayouts.has(chapterId)
@@ -75,13 +76,19 @@ export function illustratedStudyPresentation(section, chapterId, language, byId)
       followingConversation = true
       continue
     }
+    if (chapterId === '16' && section.id === '16-study-0' && source?.type === 'table') {
+      blocks.push({ ...block, source: { ...source, presentation: 'occasion-response' } })
+      earlierText += ' ' + sourceText(block)
+      continue
+    }
     if (!custom && isExpressionMeaningList(source)) {
       blocks.push({ ...block, source: comparisonTable(source, chapterId, language) })
       earlierText += ' ' + sourceText(block)
       followingConversation = false
       continue
     }
-    const note = !custom && (chapterId === '07' && chapter07Notes.has(block.id) ||
+    const note = !custom && (chapterId === '16' && section.id === '16-study-0' && index > 0 && source?.type === 'explanation' ||
+      chapterId === '07' && chapter07Notes.has(block.id) ||
       chapterId === '08' && chapter08Notes.has(block.id) ||
       followingConversation && supportingExplanation(block, chapterId, earlierText, byId))
     blocks.push(note
@@ -89,14 +96,16 @@ export function illustratedStudyPresentation(section, chapterId, language, byId)
     earlierText += ' ' + sourceText(block)
     if (source?.type !== 'explanation') followingConversation = false
   }
+  if (!custom && Number(chapterId) >= 13) blocks = referenceStudyPresentation(section, blocks, chapterId, language)
   const first = blocks[0]
   const lead = first?.type === 'source' && first.source.type === 'explanation' && !first.source.teachingNote
+    && first.source.presentation !== 'anchor-only'
     ? first : null
   // Grammar examples belong in their note rather than among the main phrases.
   const preferredIds = chapterId === '08' && section.id === '08-study-0'
     ? blocks.filter((block) => block.source?.type === 'table' || ['ch08-b5', 'ja-08-study-0-6'].includes(block.id))
       .flatMap((block) => block.source.type === 'table'
-        ? block.source.phraseCells.flat().filter(Boolean) : block.source.phraseIds ?? [])
+        ? block.source.phraseCells?.flat().filter(Boolean) ?? block.source.phraseIds ?? [] : block.source.phraseIds ?? [])
     : undefined
   return { blocks, lead, preferredIds }
 }

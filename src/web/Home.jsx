@@ -1,5 +1,6 @@
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
+import Glyph from './Glyph'
 import './home.css'
 
 const startingPoints = [
@@ -51,7 +52,7 @@ export default function Home() {
       </header>
       <div className="ah-options">
         {startingPoints.map(point => (
-          <section className={'ah-option ah-option--' + point.id} key={point.id}>
+          <a className={'ah-option ah-option--' + point.id} key={point.id} href={point.href}>
             <span className="ah-illustration" aria-hidden="true">
               <CurriculumIcon name={point.icon} size={44} />
             </span>
@@ -59,14 +60,8 @@ export default function Home() {
               <h2 lang="en">{point.label}</h2>
               <p>{ja ? point.descriptionJa : point.description}</p>
             </div>
-            {point.href ? (
-              <a className="ah-action" href={point.href}>
-                {ja ? '始める' : 'Start'} <span aria-hidden="true">→</span>
-              </a>
-            ) : (
-              <span className="ah-coming">{ja ? '準備中' : 'Coming later'}</span>
-            )}
-          </section>
+            <span className="ah-card-arrow" aria-hidden="true"><Glyph name="chevronRight" size={20} /></span>
+          </a>
         ))}
       </div>
     </div>

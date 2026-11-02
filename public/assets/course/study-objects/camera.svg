@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="51 49 186 110" width="180" height="150"><title>camera</title><g style="--c-bg-1:#EEF4FA;--c-bg-2:#DAE6F2;--c-surface:#CBD5E1;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FEF9C3;--c-ink:#1E2A3B"><defs xmlns="http://www.w3.org/2000/svg">
+<linearGradient id="camera-stage" x2="0" y2="1"><stop stop-color="#EEF4FA" /><stop offset="1" stop-color="#DAE6F2" /></linearGradient>
+<linearGradient id="camera-metal" x2="0" y2="1"><stop stop-color="#F1F5F9" /><stop offset="1" stop-color="#94A3B8" /></linearGradient>
+<linearGradient id="camera-device" x2="0" y2="1"><stop stop-color="#6F91C0" /><stop offset="1" stop-color="#3D5F91" /></linearGradient>
+<linearGradient id="camera-screen" x2="0" y2="1"><stop stop-color="#D8ECF8" /><stop offset="1" stop-color="#A8C7DD" /></linearGradient>
+<filter id="camera-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1E2A3B" flood-opacity=".2" /></filter>
+</defs>
+<g xmlns="http://www.w3.org/2000/svg" id="camera-layer-focal" filter="url(#camera-shadow)"><path d="M62 77Q62 69 72 69H107L116 57H167L178 69H216Q226 69 226 80V135Q226 145 215 145H73Q62 145 62 135Z" fill="url(#camera-device)" stroke="#1E2A3B" stroke-width="2.8" /><path d="M76 79H110V102H76Z" fill="#CBD5E1" stroke="#1E2A3B" stroke-width="1.8" /><circle cx="149" cy="108" r="36" fill="#27364B" stroke="#1E2A3B" stroke-width="2.6" /><circle cx="149" cy="108" r="28" fill="url(#camera-metal)" stroke="#94A3B8" stroke-width="2" /><circle cx="149" cy="108" r="20" fill="#5479AC" stroke="#1E2A3B" stroke-width="2" /><circle cx="149" cy="108" r="12" fill="#27364B" /><circle cx="145" cy="103" r="4" fill="#D8ECF8" /><rect x="184" y="83" width="25" height="14" rx="4" fill="#DCECFB" stroke="#1E2A3B" stroke-width="1.6" /><circle cx="199" cy="74" r="4" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.5" /></g>
+</g></svg>

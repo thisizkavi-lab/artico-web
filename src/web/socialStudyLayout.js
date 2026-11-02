@@ -1,3 +1,5 @@
+import sectionArt from './studySectionArt.json' with { type: 'json' }
+
 // Presentation decisions only. Source wording, phrase IDs, and practice data stay
 // in the compiled course so both explanation languages use the same structure.
 export const vocabularyChapters = new Set(['20', '26', '34', '45', '56', '65', '72', '80', '88'])
@@ -25,8 +27,12 @@ export function studyPhraseAnchors(sections) {
 }
 
 export function studyExpressions(section, byId) {
+  if (section.blocks.some((block) => block.source?.presentation === 'occasion-response')) return []
   const tableIds = new Set(section.blocks.flatMap((block) =>
-    block.type === 'source' && block.source.type === 'table' ? block.source.phraseIds ?? [] : []))
+    block.type === 'source' && block.source.type === 'table' ? (block.source.phraseIds ?? []).filter((id) => {
+      const target = normalizeStudyText(byId[id]?.en)
+      return target && block.source.rows.some((row) => row.some((cell) => normalizeStudyText(cell.map((run) => run.text).join('')).includes(target)))
+    }) : []))
   const ids = section.blocks.flatMap((block) => block.type === 'source' ? block.source.phraseIds ?? [] : [])
   return [...new Set(ids)].map((id) => byId[id]).filter((item) =>
     item && item.kind !== 'word' && !tableIds.has(item.id) && !/-line\d+$/.test(item.id))
@@ -40,6 +46,7 @@ export function isStudyIntroduction(section) {
 }
 
 export const studyIllustrations = {
+  ...sectionArt,
   '20-study-0': { file: 'study-drinks.webp', width: 960, height: 341, en: 'Black coffee, a latte, iced tea, and a reusable cup', ja: 'ブラックコーヒー、ラテ、アイスティー、繰り返し使えるカップ' },
   '20-study-1': { file: 'study-kitchen.webp', width: 960, height: 550, en: 'A knife and cutting board, a whisk and bowl, a colander, and a saucepan', ja: '包丁とまな板、泡立て器とボウル、ざる、片手鍋' },
   '26-study-0': { file: 'study-hobbies.webp', width: 960, height: 513, en: 'A camera, a plant pot and paintbrushes, a yoga mat, and a chessboard', ja: 'カメラ、植木鉢と絵筆、ヨガマット、チェス盤' },

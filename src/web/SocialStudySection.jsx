@@ -3,8 +3,11 @@ import { useLanguage } from './Language'
 import { RichText } from './ContentBlocks'
 import { approvedAudio } from './components'
 import Glyph from './Glyph'
-import { normalizeStudyText, studyExpressions, studyIllustrations, vocabularyChapters } from './socialStudyLayout'
+import { normalizeStudyText, studyExpressions, studyIllustrations, vocabularyChapters, isStudyIntroduction } from './socialStudyLayout'
 import './social-study-layout.css'
+import { emphasizeNoteRuns } from './studyTextPresentation'
+import { StudyEmail, StudyForm } from './StudyDocuments'
+import StudyVocabulary, { vocabularyPictures } from './StudyVocabulary'
 
 const plain = (runs = []) => runs.map((run) => run.text).join('')
 
@@ -65,17 +68,12 @@ function StudySourceBlock({ block, byId, anchors, audioProps, focusedId }) {
     )
   })
   let content
-  if (block.type === 'table' && block.header.length === 2 && block.presentation !== 'expression-meaning') {
-    content = (
-      <dl className="ar-study-definitions" aria-label={block.header.map(plain).join(' / ')}>
-        {block.rows.map((row, index) => (
-          <div className="ar-study-definition" key={index}>
-            <dt>{text(row[0])}</dt>
-            <dd>{text(row[1])}</dd>
-          </div>
-        ))}
-      </dl>
-    )
+  if (block.presentation === 'anchor-only') {
+    content = null
+  } else if (block.presentation === 'sample-form') {
+    content = <StudyForm />
+  } else if (['email-anatomy', 'email-reply'].includes(block.presentation)) {
+    content = <StudyEmail block={block} />
   } else if (block.type === 'table') {
     content = (
       <div className="ar-study-table" role="region" aria-label={block.header.map(plain).join(' / ')} tabIndex={0}>
@@ -99,17 +97,19 @@ function StudySourceBlock({ block, byId, anchors, audioProps, focusedId }) {
     </Tag>
   } else if (block.teachingNote) {
     content = <aside className="ar-study-note">
-      <span className="ar-study-note-label">Note</span>
-      <p>{block.teachingNote !== 'Note' && <strong>{block.teachingNote} </strong>}{text(block.runs)}</p>
+      <span className="ar-study-note-label">{language === 'ja' ? 'メモ' : 'Note'}</span>
+      <p>{text(emphasizeNoteRuns(block.runs, byId))}</p>
     </aside>
   } else {
     content = <p className="ar-study-prose">{text(block.runs)}</p>
   }
   const unplaced = items.filter((item) => anchors[item.id] === block.id && !rendered.has(item.id))
   return (
-    <div className={`ar-study-source${block.presentation === 'expression-meaning' ? ' ar-expression-meaning-source' : ''}${items.some((item) => item.id === focusedId) ? ' is-focused' : ''}`}
+    <div className={`ar-study-source${block.presentation === 'anchor-only' ? ' ar-anchor-only-source' : ''}${block.presentation === 'expression-meaning' ? ' ar-expression-meaning-source' : ''}${block.presentation === 'occasion-response' ? ' ar-occasion-response-source' : ''}${items.some((item) => item.id === focusedId) ? ' is-focused' : ''}`}
       data-source-block={block.id} lang={language}>
+      {(block.sourceBlockIds ?? []).filter((id) => id !== block.id).map((id) => <span key={id} data-source-block={id} />)}
       {unplaced.map((item) => <span className="ar-study-anchor" key={item.id} id={`study-${item.id}`} tabIndex={-1} />)}
+      {block.referencePreface && <p className="ar-study-reference-preface">{block.referencePreface}</p>}
       {content}
     </div>
   )
@@ -119,19 +119,22 @@ export default function SocialStudySection({ section, chapterId, byId, anchors, 
   const blocks = section.blocks
   const vocabulary = vocabularyChapters.has(chapterId)
   const lead = blocks[0]?.type === 'source' && blocks[0].source.type === 'explanation' &&
-    !blocks[0].source.teachingNote ? blocks[0] : null
+    !blocks[0].source.teachingNote && blocks[0].source.presentation !== 'anchor-only' ? blocks[0] : null
+  const documentExample = blocks.some((block) => ['email-anatomy', 'sample-form'].includes(block.source?.presentation))
+  const pictures = vocabulary ? vocabularyPictures(section, byId) : []
   const renderBlock = (block) => {
     if (block.type === 'source') return <StudySourceBlock key={block.id} block={block.source}
       byId={byId} anchors={anchors} audioProps={audioProps} focusedId={focusedId} />
-    if (block.type === 'conversation') return renderConversation(block)
+    if (block.type === 'conversation') return renderConversation({ ...block, art: null })
     if (block.type === 'diagram') return renderDiagram(block)
     return null
   }
   return (
     <div className={`ar-study-content${vocabulary ? ' ar-vocabulary-study' : ''}`}>
       {lead && renderBlock(lead)}
-      <StudyIllustration key={section.id} sectionId={section.id} />
-      {!vocabulary && <StudyExpressions items={studyExpressions(section, byId)} audioProps={audioProps} />}
+      {pictures.length >= 2 ? <StudyVocabulary pictures={pictures} audioProps={audioProps} />
+        : !documentExample && !isStudyIntroduction(section) && <StudyIllustration key={section.id} sectionId={section.id} />}
+      {!vocabulary && !documentExample && <StudyExpressions items={studyExpressions(section, byId)} audioProps={audioProps} />}
       {blocks.filter((block) => block !== lead).map(renderBlock)}
     </div>
   )

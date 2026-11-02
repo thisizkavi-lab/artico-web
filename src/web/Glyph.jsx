@@ -39,6 +39,7 @@ export default function Glyph({ name, size = 20 }) {
       </>
     ),
     chevron: <path d="m8 10 4 4 4-4" />,
+    chevronRight: <path d="m9 5 7 7-7 7" />,
     check: <path d="m5 12 4 4L19 6" />,
     save: <path d="M6 3h12v18l-6-4-6 4Z" />,
   }

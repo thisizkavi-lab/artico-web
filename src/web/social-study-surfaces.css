@@ -42,12 +42,12 @@
 .ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.rc-table, .ar-ch02-table, .ar-study-table) thead {
   background: color-mix(in srgb, var(--ar-section-top) 90%, white);
 }
-.ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody th {
+.ip-page .ar-shared-study .ar-expression-meaning-source :is(.rc-table, .ar-study-table) tbody th {
   color: #33445f;
   font-size: 14px;
   font-weight: 600;
 }
-.ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody td {
+.ip-page .ar-shared-study .ar-expression-meaning-source :is(.rc-table, .ar-study-table) tbody td {
   color: #7a8595;
   font-size: 12px;
   font-weight: 400;
@@ -67,8 +67,8 @@
 .ip-page .ar-shared-study :is(.ar-f14-step-panel, .ar-f14-chip, .ar-f14-age-card) { background: var(--ar-study-surface); }
 @media (max-width: 600px) {
   .ip-page .ar-shared-study .ar-ch08-study .ar-unified-phrase-stage { height: 185px; }
-  .ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody th { font-size: 13px; }
-  .ip-page .ar-shared-study .ar-expression-meaning-source .rc-table tbody td { font-size: 11.5px; }
+  .ip-page .ar-shared-study .ar-expression-meaning-source :is(.rc-table, .ar-study-table) tbody th { font-size: 13px; }
+  .ip-page .ar-shared-study .ar-expression-meaning-source :is(.rc-table, .ar-study-table) tbody td { font-size: 11.5px; }
 }
 /* Humor uses a separate renderer with the same four parent-section tints. */
 .hm-page .hm-study .hm-section {

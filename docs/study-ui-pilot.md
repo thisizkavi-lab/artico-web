@@ -1,6 +1,6 @@
 # Social Fluency study UI notes
 
-Status: Chapters 06 and 08 supply the current chapter-specific examples. Compact notes and section-tinted inner surfaces apply across Social Fluency, including the separate Humor chapter, following Kavi's review. Continue reviewing each chapter's content and illustrations individually.
+Status: Chapters 06–08 supply the current chapter-specific examples. Compact notes and section-tinted inner surfaces apply across Social Fluency, including the separate Humor chapter, following Kavi's review. Chapter 07's review also authorizes applying the same structural patterns throughout the course. Continue reviewing each chapter's content and illustrations individually.
 
 ## Reading hierarchy
 
@@ -74,6 +74,18 @@ The exact prompts, filenames, and built-in Image Gen method are recorded in `doc
 
 These presentation transformations retain the original English/Japanese source data. The tests check table wording, scene labels, note placement, and the four distinct PNG assets. Browser review checks all four Chapter 08 sections, desktop/mobile wrapping, Japanese explanations, and phrase selection in Chapter 01.
 
+## Chapter 07 and matching patterns across the course
+
+The scene label belongs to its conversation. A short, standalone bold label immediately before a conversation becomes that conversation's heading; it no longer needs a separate large card followed by “Example conversation.” Preserve its English or Japanese wording. Chapter 06's explicitly removed labels remain removed.
+
+In Chapter 07, the headings are “Choosing what to do,” “An invitation and an alternative,” and “A clearer boundary.” The six refusal/uncertainty bullets become an expression/meaning table. The invitation explanation follows the illustration and phrases, immediately above its conversation. The acceptance, alternative-plan, and Good idea / Sounds good explanations use compact notes. Remove the marked final directness commentary, including its Japanese counterpart; keep every conversation turn.
+
+Apply the table pattern only to unordered lists with multiple rows that each begin with an emphasized expression or term and continue with an explanation. Preserve every run of text and all phrase IDs. Keep instructions, examples without definitions, and ordered sequences in their existing formats. Converted tables use semantic row/column headers and the existing section tint; explanations are smaller and dimmer than the English expression. Shared-layout tables stack their rows on phones.
+
+Treat concise interpretive paragraphs following conversations as supporting notes. Keep the introduction above the illustration when it introduces the section. A term's first definition retains normal reading size; check its phrase-bank type and earlier section content before demoting an explanation. This also protects the vocabulary chapters' primary learning content. The approved custom layouts in Chapters 01–03, 06, 11, and 14 keep their own presentation logic.
+
+This pass adds 31 English and 32 Japanese contextual conversation headings, and 25 English and 51 Japanese comparison tables beyond the preceding Chapter 08/10 work. The Japanese source contains additional definition lists and conversation explanations. The chapter-by-chapter audit records 90 English and 508 Japanese supporting paragraphs newly assigned a note role. These are presentation changes; the compiled lesson files, practice data, and stable identifiers remain unchanged.
+
 ## Carrying this forward after review
 
 Review each chapter individually in order. Identify whether each block teaches vocabulary, phrases, conversation, or a note; choose its presentation based on that purpose. Use a table for a comparison or expression/meaning relationship, and a conversation for contextual use. Remove an empty scene label only when the scene is already clear. Never remove substantive teaching content to tidy the screen.
@@ -85,10 +97,10 @@ Check English and Japanese, every section, and mobile wrapping before calling a 
 ## Validation
 
 - `npm run test:chapter06-pilot`: source preservation in English/Japanese, all three reply pairs, all four continuation expressions, retained Japanese row explanations, conversations, notes, and unique phrase anchors; existing conversation-layout checks.
-- The focused learning-shell, Chapter 06, illustrated-study presentation, shared-study, conversation, and Humor tests pass all 50 checks. The shared-study render test checks every shared chapter in both languages.
+- The focused learning-shell, Chapter 06, illustrated-study presentation, shared-study, conversation, and Humor tests pass all 53 checks. The shared-study render test checks every shared chapter in both languages, including the transformed tables, source labels retained as headings, complete source wording, and unique phrase anchors. Course-wide model checks also cover the early custom renderers, idempotence, and protection for first-use vocabulary definitions.
 - `npm exec vite build`: production build.
 - Browser review of the current changes at 825×903 and 390×844; all four new illustrations load, tables fit without horizontal overflow, Japanese explanations remain present, the final interpretation sits below the illustration, and Chapter 01 phrase selection still updates its selected state.
-- Review shared surfaces in Chapters 01–03, 05, 08, 10, 13, and Humor. Chapter-specific content changes stay scoped to their marked lessons.
+- Review shared surfaces in Chapters 01–03, 05, 08, 10, 13, and Humor. Chapter 07's structural patterns now apply to matching content elsewhere, while chapter-specific removals stay scoped to the marked lesson.
 
 The production build retains the repository's existing large-chunk advisory. This pilot does not change bundling strategy.
 

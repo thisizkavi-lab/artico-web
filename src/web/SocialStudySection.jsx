@@ -65,7 +65,7 @@ function StudySourceBlock({ block, byId, anchors, audioProps, focusedId }) {
     )
   })
   let content
-  if (block.type === 'table' && block.header.length === 2) {
+  if (block.type === 'table' && block.header.length === 2 && block.presentation !== 'expression-meaning') {
     content = (
       <dl className="ar-study-definitions" aria-label={block.header.map(plain).join(' / ')}>
         {block.rows.map((row, index) => (
@@ -107,7 +107,7 @@ function StudySourceBlock({ block, byId, anchors, audioProps, focusedId }) {
   }
   const unplaced = items.filter((item) => anchors[item.id] === block.id && !rendered.has(item.id))
   return (
-    <div className={`ar-study-source${items.some((item) => item.id === focusedId) ? ' is-focused' : ''}`}
+    <div className={`ar-study-source${block.presentation === 'expression-meaning' ? ' ar-expression-meaning-source' : ''}${items.some((item) => item.id === focusedId) ? ' is-focused' : ''}`}
       data-source-block={block.id} lang={language}>
       {unplaced.map((item) => <span className="ar-study-anchor" key={item.id} id={`study-${item.id}`} tabIndex={-1} />)}
       {content}

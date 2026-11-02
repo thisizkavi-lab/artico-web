@@ -158,13 +158,13 @@ function Conversation({ block, audioProps, focusedId }) {
   return (
     <div className={`ip-scene ${block.art ? '' : 'ip-scene-short'}${block.replyAlternatives ? ' ip-scene-branching' : ''}${block.art?.startsWith('ch12-') ? ' ar-ch12-conversation' : ''}`}>
       <header className="ar-scene-heading">
-        <h3>{block.title}</h3>
+        <h3 data-source-block={block.captionSourceId}>{block.studyTitle || block.title}</h3>
         <ConversationAudio block={block} audioProps={audioProps} />
       </header>
       {block.art && <div className="ip-scene-setting">
         <img src={art(block.art)} alt={block.alt} width="760" height="476" loading="lazy" />
       </div>}
-      <div className="ip-conversation" aria-label={block.title}>
+      <div className="ip-conversation" aria-label={block.studyTitle || block.title}>
         {block.phrases.map((id, index) => {
           // The final reply is displayed as one of the two branches below, not repeated as a fixed third turn.
           if (block.replyAlternatives?.choices.some((choice) => choice.id === id)) return null
@@ -365,14 +365,17 @@ function Study({ audioProps, focusedId }) {
     SourceContent,
     Diagram,
   } = useLesson()
+  const studySections = introductionSections.map((section) => ({ ...section,
+    blocks: illustratedStudyPresentation(section, lessonId, language, introductionById).blocks,
+  }))
   const sharedLayout = usesSharedStudyLayout(lessonId)
-  const studyAnchors = sharedLayout ? studyPhraseAnchors(introductionSections) : {}
+  const studyAnchors = sharedLayout ? studyPhraseAnchors(studySections) : {}
   const playIllustratedPhrase = (item) => {
     if (approvedAudio[item.id]) audioProps.onPlay(item.id)
   }
   return (
     <div className={`ip-reading ar-shared-study ar-compact-study-notes${lessonId === '02' ? ' ar-ch02-study' : ''}${lessonId === '06' ? ' ar-ch06-pilot' : ''}${Number(lessonId) >= 4 ? ' ar-polished-study' : ''}`}>
-      {lessonId === '14' ? <Chapter14VisualBoard /> : introductionSections.map((section, index) => (
+      {lessonId === '14' ? <Chapter14VisualBoard /> : studySections.map((section, index) => (
         <section
           className={`ip-section${sharedLayout && isStudyIntroduction(section) ? ' ar-study-introduction' : ''}`}
           key={section.id}
@@ -644,7 +647,8 @@ const chapter05PhraseIllustrations = [
 function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
   const { byId, SourceContent } = useLesson()
   const { language } = useLanguage()
-  const intro = section.blocks.find((block) => block.type === 'source' && block.source.type === 'explanation')
+  const intro = section.blocks[0]?.type === 'source' && section.blocks[0].source.type === 'explanation' &&
+    !section.blocks[0].source.teachingNote ? section.blocks[0] : null
   const table = section.blocks.find((block) => block.type === 'source' && block.source.type === 'table')
   const conversation = section.blocks.find((block) => block.type === 'conversation')
   const notes = section.blocks.filter((block) =>
@@ -652,7 +656,7 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
     block.source.type === 'explanation' &&
     block !== intro,
   )
-  if (!table || !conversation) return <ChapterIllustratedPhraseStudySection
+  if (!table || !conversation || table.source.presentation === 'expression-meaning') return <ChapterIllustratedPhraseStudySection
     section={section} sectionIndex={sectionIndex} audioProps={audioProps}
     focusedId={focusedId} illustrationOverride={chapter05PhraseIllustrations[sectionIndex]}
   />
@@ -670,7 +674,7 @@ function Chapter05PhraseStudySection({ section, sectionIndex, audioProps, focuse
         <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
       </section>
       <section className="ar-phrase-example">
-        <h3>{language === 'ja' ? '会話例' : 'Example conversation'}</h3>
+        <h3 data-source-block={conversation.captionSourceId}>{conversation.studyTitle || (language === 'ja' ? '会話例' : 'Example conversation')}</h3>
         <div className="ar-phrase-example-lines">
           {conversation.turns.map((turn, index) => {
             const item = byId[turn.id]
@@ -710,7 +714,7 @@ function ChapterPhraseConversation({ block, audioProps, conversationIndex }) {
   const speakers = [...new Set(block.turns.map((turn) => turn.speaker))]
   return (
     <section className="ar-phrase-example">
-      <h3>{block.studyTitle || (language === 'ja'
+      <h3 data-source-block={block.captionSourceId}>{block.studyTitle || (language === 'ja'
         ? (conversationIndex === 0 ? '会話例' : 'もう一つの会話例')
         : (conversationIndex === 0 ? 'Example conversation' : 'Another example'))}</h3>
       <div className="ar-phrase-example-lines">
@@ -789,7 +793,8 @@ function ChapterIllustratedPhraseStudySection({ section, sectionIndex, audioProp
 function ChapterPhraseStudySection({ section, sectionIndex, audioProps, focusedId }) {
   const { byId, SourceContent } = useLesson()
   const { language } = useLanguage()
-  const intro = section.blocks.find((block) => block.type === 'source' && block.source.type === 'explanation')
+  const intro = section.blocks[0]?.type === 'source' && section.blocks[0].source.type === 'explanation' &&
+    !section.blocks[0].source.teachingNote ? section.blocks[0] : null
   const table = section.blocks.find((block) => block.type === 'source' && block.source.type === 'table')
   const conversation = section.blocks.find((block) => block.type === 'conversation')
   const notes = section.blocks.filter((block) =>
@@ -797,7 +802,7 @@ function ChapterPhraseStudySection({ section, sectionIndex, audioProps, focusedI
     block.source.type === 'explanation' &&
     block !== intro,
   )
-  if (!table || !conversation) return <ChapterIllustratedPhraseStudySection
+  if (!table || !conversation || table.source.presentation === 'expression-meaning') return <ChapterIllustratedPhraseStudySection
     section={section} sectionIndex={sectionIndex}
     audioProps={audioProps} focusedId={focusedId}
   />
@@ -813,7 +818,7 @@ function ChapterPhraseStudySection({ section, sectionIndex, audioProps, focusedI
         <SourceContent block={table.source} audioProps={audioProps} focusedId={focusedId} examples={false} />
       </section>
       <section className="ar-phrase-example">
-        <h3>{language === 'ja' ? '会話例' : 'Example conversation'}</h3>
+        <h3 data-source-block={conversation.captionSourceId}>{conversation.studyTitle || (language === 'ja' ? '会話例' : 'Example conversation')}</h3>
         <div className="ar-phrase-example-lines">
           {conversation.turns.map((turn, index) => {
             const item = byId[turn.id]

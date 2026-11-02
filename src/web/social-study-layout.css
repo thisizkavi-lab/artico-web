@@ -183,11 +183,11 @@
 }
 .ip-page .ar-polished-study .ar-study-introduction .ip-section-heading { display: none; }
 
-/* A scene belongs to its exchange, rather than appearing a second time above
-   it. Preserve the artwork's natural ratio and keep the dialogue readable. */
+/* Illustrations introduce their teaching section. Conversations keep text,
+   speaker portraits, and audio in one readable column. */
 .ip-page .ar-polished-study .ar-study-content > .ip-scene {
   display: grid;
-  grid-template-columns: minmax(130px, .7fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 16px 22px;
   min-width: 0;
@@ -266,3 +266,23 @@
   .ip-page .ar-polished-study .ar-study-table tbody :is(th, td) { padding: 4px 0; border: 0; }
   .ip-page .ar-polished-study .ar-study-table td::before { content: attr(data-label); display: block; margin-bottom: 2px; color: #8994a3; font-size: 10px; }
 }
+
+.ip-page .ar-polished-study .ar-anchor-only-source { display:contents; }
+.ip-page .ar-polished-study .ar-study-word-atlas {
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px 16px;
+  margin:0; padding:12px 0; list-style:none;
+}
+.ip-page .ar-polished-study .ar-study-word-atlas li { min-width:0; text-align:center; }
+.ip-page .ar-polished-study .ar-study-word-atlas img { display:block; width:100%; height:104px; object-fit:contain; margin:0 auto 10px; }
+.ip-page .ar-polished-study .ar-study-word-label { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:3px; }
+.ip-page .ar-polished-study .ar-study-word-label strong { color:var(--study-ink); font-size:13px; font-weight:600; line-height:1.5; }
+.ip-page .ar-polished-study .ar-study-word-label .ar-study-inline-audio { width:24px; height:24px; border:0; background:transparent; }
+.ip-page .ar-polished-study .ar-study-word-atlas li > small { display:block; color:#8a95a4; font-size:10px; line-height:1.5; margin-top:3px; }
+@media(max-width:700px) {
+  .ip-page .ar-polished-study .ar-study-word-atlas { grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px 12px; }
+  .ip-page .ar-polished-study .ar-study-word-atlas img { height:84px; }
+}
+@media(max-width:420px) {
+  .ip-page .ar-polished-study .ar-study-word-atlas { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+.ip-page .ar-polished-study .ar-study-reference-preface { margin:0 0 10px; font-size:11px; color:#8993a0; line-height:1.65; }

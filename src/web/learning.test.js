@@ -560,7 +560,7 @@ test('learning tree is grayscale with blue selection while other views retain bl
   assert.match(path, /width:3px; background:var\(--rl-v-branch\)/)
   assert.doesNotMatch(path, /--rl-v-trunk:#7198d2|--rl-v-branch:#a1bae4|--rl-v-leaf:#bfd1ee/)
 
-  assert.match(home, /background:#285bcc; color:white/)
+  assert.match(home, /\.ah-option:focus-visible \{ outline:3px solid #8bb0ef/)
   assert.match(application, /\.ap-exercise-tabs button\.is-selected/)
   assert.match(writing, /\.ws-prompt-item\.is-selected/)
   assert.match(vocab, /background: #285bcc/)
@@ -605,8 +605,9 @@ test('Home cards are compact grayscale and Foundations displays as Level Zero', 
   assert.match(css, /border:1px solid #e0e0e0/)
   assert.match(css, /color:#242424/)
   assert.match(css, /background:#f5f5f5/)
-  assert.match(css, /background:#285bcc; color:white/)
-  assert.match(css, /\.ah-action:focus-visible/)
+  assert.match(home, /<a className=\{'ah-option ah-option--' \+ point.id\} key=\{point.id\} href=\{point.href\}/)
+  assert.doesNotMatch(home, /className="ah-action"/)
+  assert.match(css, /\.ah-option:focus-visible/)
 })
 
 test('Level Zero shows a compact illustrated ABC mark without altering letter lesson icons', () => {
@@ -645,7 +646,7 @@ test('Social Fluency uses illustrated people and Home actions stay close', () =>
   assert.match(homeCSS, /\.ah-page \{ width:min\(100%,830px\)/)
   assert.match(homeCSS, /\.ah-option--social \.curriculum-icon--social-duo/)
   assert.match(treeCSS, /\.rl-vertical-stage-button > \.curriculum-icon--social-duo/)
-  assert.match(homeCSS, /\.ah-action:focus-visible/)
+  assert.match(homeCSS, /\.ah-option:focus-visible/)
   assert.match(home, /href:'#\/courses\?social'/)
 })
 

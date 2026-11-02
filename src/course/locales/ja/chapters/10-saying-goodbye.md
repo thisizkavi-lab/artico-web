@@ -70,7 +70,7 @@ Jamieは楽しかったのでまたしたいと伝えています。Skyはそれ
 <!-- source-heading: Optional: Familiar closings -->
 ## 任意: 親しいやり取りでの終わり方
 
-**Catch you later** と **See ya** は、親しいやり取りを終える表現です。**I gotta go** は、**I've got to go** のくだけた話し方を文字で表した形です。**I'm out** は、くだけた場面で出発や退出を知らせることがあります。意図する話し方を選んでください。アメリカらしく話すために、どれかが必須ということはありません。
+**Catch you later** と **See ya** は、親しいやり取りを終える表現です。**I gotta go** は、**I've got to go** のくだけた話し方を文字で表した形です。**I'm out** は、くだけた場面で出発や退出を知らせることがあります。意図する話し方を選んでください。
 
 <!-- source-heading: Practice: Bring the encounter to an end -->
 ## 練習: やり取りを終える

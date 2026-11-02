@@ -52,6 +52,22 @@
   font-size: 12px;
   font-weight: 400;
 }
+.ip-page .ar-shared-study .ar-occasion-response-source .ar-study-table tbody th {
+  width: 38%;
+  color: #7a8595;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ip-page .ar-shared-study .ar-occasion-response-source .ar-study-table tbody td {
+  color: #33445f;
+  font-size: 15px;
+  font-weight: 600;
+}
+.ip-page .ar-shared-study .ar-occasion-response-source .ar-study-table tbody td strong { font-weight: 600; }
+@media (max-width: 700px) {
+  .ip-page .ar-shared-study .ar-occasion-response-source .ar-study-table tbody th { width: auto; }
+  .ip-page .ar-shared-study .ar-occasion-response-source .ar-study-table tbody td { font-size: 14px; }
+}
 .ip-page .ip-reading.ar-compact-study-notes:is(.ar-page, .ar-shared-study) :is(.ar-unified-phrase-stage, .ar-c03-exchange, .ar-illustrated-scene, .ar-reference-art) {
   background: transparent;
 }

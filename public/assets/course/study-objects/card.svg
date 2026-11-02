@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 48 199 101" width="180" height="150"><title>card</title><g style="--c-bg-1:#FAF8F3;--c-bg-2:#EEF4FA;--c-surface:#EAE3D5;--c-primary:#5479AC;--c-secondary:#3D5F91;--c-accent:#F2C14E;--c-highlight:#FFFFFF;--c-ink:#1E2A3B"><defs xmlns="http://www.w3.org/2000/svg">
+    <linearGradient id="card-credit-card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8EB0DE" /><stop offset=".5" stop-color="#5479AC" /><stop offset="1" stop-color="#3D5F91" /></linearGradient>
+    <radialGradient id="card-credit-chip"><stop stop-color="#FCE29C" /><stop offset="1" stop-color="#D49B2A" /></radialGradient>
+    <path id="card-credit-shape" d="M55 65 Q55 57 64 57 H218 Q228 57 228 67 V123 Q228 132 219 132 H64 Q55 132 55 123 Z" />
+    <clipPath id="card-credit-clip"><use href="#card-credit-shape" /></clipPath>
+    <filter id="card-credit-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#1E2A3B" flood-opacity=".2" /></filter>
+  </defs>
+
+  <g xmlns="http://www.w3.org/2000/svg" id="card-layer-focal" filter="url(#card-credit-shadow)"><use href="#card-credit-shape" fill="url(#card-credit-card)" stroke="#1E2A3B" stroke-width="2.7" /><g clip-path="url(#card-credit-clip)"><path d="M51 118 C102 74 149 78 232 44 V138 H51Z" fill="#3D5F91" opacity=".52" /><path d="M62 61 C101 56 141 65 171 73" fill="none" stroke="#8EB0DE" stroke-width="5" opacity=".55" /></g><rect x="75" y="80" width="32" height="25" rx="4" fill="url(#card-credit-chip)" stroke="#1E2A3B" stroke-width="1.7" /><path d="M85 81 V104 M96 81 V104 M76 88 H106 M76 97 H106" stroke="#B55B28" stroke-width="1.4" /><path d="M139 116 H204" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity=".85" /><circle cx="209" cy="114" r="5" fill="#F2C14E" stroke="#1E2A3B" stroke-width="1.4" /></g>
+
+  </g></svg>

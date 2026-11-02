@@ -8,14 +8,15 @@ import { catalog, foundationSteps, groups, savedItems } from './content'
 import { applicationTracks } from './applicationTracks'
 import './library-readable.css'
 
-function CourseLesson({ href, number, iconName, title, active = false }) {
+function CourseLesson({ href, number, iconName, title, active = false, recommended = false }) {
+  const { language } = useLanguage()
   return (
     <a className={'rl-vertical-lesson' + (active ? ' is-current' : '')} href={href}
       aria-current={active ? 'location' : undefined}>
       <span className="rl-tree-node rl-tree-node--lesson" aria-hidden="true" />
       <span className="rl-vertical-lesson-number">{number}</span>
       <CurriculumIcon name={iconName} size={19} />
-      <span className="rl-vertical-lesson-title">{title}</span>
+      <span className="rl-vertical-lesson-title">{title}{recommended && <small className="rl-lesson-recommended">{language === 'ja' ? 'おすすめ' : 'Recommended'}</small>}</span>
       <span className="rl-vertical-arrow" aria-hidden="true">›</span>
     </a>
   )
@@ -87,6 +88,7 @@ export function Courses({ learning, route }) {
                           number={String(i + 1).padStart(2, '0')}
                           iconName={foundationIcon(id)}
                           title={language === 'ja' ? lesson.ja : lesson.en}
+                          recommended={id === 'tongue-intro'}
                           active={learning.last?.startsWith('/foundation/' + id + '/')} />
                       })}
                     </div>

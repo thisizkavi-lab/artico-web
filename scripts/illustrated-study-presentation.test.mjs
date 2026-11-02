@@ -58,14 +58,19 @@ test('matching editorial changes preserve bilingual source content throughout th
       }
       for (const block of section.blocks) {
         if (id === '07' && ['ch07-b15', 'ja-07-study-2-8'].includes(block.id)) continue
-        const presented = blocks.find((entry) => entry.id === block.id)
+        const presented = blocks.find((entry) => entry.id === block.id || entry.source?.sourceBlockIds?.includes(block.id))
         if (!presented) {
           const conversation = blocks.find((entry) => entry.captionSourceId === block.id)
           assert.equal(conversation?.studyTitle, plain(block.source.runs), `${language}:${id}: caption remains as a heading`)
           captions++
           continue
         }
-        if (isExpressionMeaningList(block.source)) {
+        if (presented.source?.editorialRewrite || presented.source?.reformattedDefinition) {
+          assert.ok((block.source?.phraseIds ?? []).every((id) => presented.source.phraseIds.includes(id)), 'reference edits preserve practice IDs')
+          if (presented.source.type === 'table') {
+            assert.ok(presented.source.rows.every((row) => row.every((cell) => plain(cell).trim())), `${language}:${id}: reference cells contain meaningful text`)
+          }
+        } else if (isExpressionMeaningList(block.source)) {
           assert.equal(presented.source.type, 'table')
           assert.deepEqual(presented.source.phraseIds, block.source.phraseIds)
           assert.deepEqual(presented.source.rows.map((row) => row.map(plain).join('')), block.source.items.map((item) => plain(item.runs)))

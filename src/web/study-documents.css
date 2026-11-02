@@ -1,0 +1,37 @@
+.ip-page .ar-polished-study :is(.ar-email-example, .ar-form-example) {
+  margin:0; min-width:0; border:1px solid var(--ar-study-line); border-radius:16px;
+  background:var(--ar-study-surface); overflow:hidden; color:var(--study-ink);
+}
+.ip-page .ar-polished-study :is(.ar-email-example, .ar-form-example) figcaption {
+  display:flex; align-items:center; gap:8px; padding:13px 18px;
+  font-size:12px; font-weight:600; color:#758296;
+  border-bottom:1px solid var(--ar-study-line);
+}
+.ip-page .ar-polished-study .ar-email-envelope { display:flex; flex-wrap:wrap; gap:8px 26px; padding:14px 18px 6px; color:#8994a3; font-size:11px; }
+.ip-page .ar-polished-study .ar-email-envelope strong { margin-left:8px; color:#56667c; font-weight:600; }
+.ip-page .ar-polished-study .ar-email-parts { padding:6px 18px 18px; }
+.ip-page .ar-polished-study .ar-email-part { display:grid; grid-template-columns:132px minmax(0,1fr); gap:18px; padding:16px 0; }
+.ip-page .ar-polished-study .ar-email-part + .ar-email-part { border-top:1px dashed var(--ar-study-line); }
+.ip-page .ar-polished-study .ar-email-annotation { padding-top:3px; color:#8b97a5; font-size:10px; line-height:1.5; }
+.ip-page .ar-polished-study .ar-email-part p { white-space:pre-line; margin:0; font-size:14px; line-height:1.8; overflow-wrap:anywhere; }
+.ip-page .ar-polished-study .ar-email-subject p { font-weight:600; }
+.ip-page .ar-polished-study .ar-email-reply-subject { padding:12px 18px; font-size:13px; border-bottom:1px solid var(--ar-study-line); }
+.ip-page .ar-polished-study .ar-email-reply-subject small { color:#8b97a5; margin-right:12px; }
+.ip-page .ar-polished-study .ar-form-fields { display:grid; gap:18px; margin:0; padding:22px; }
+.ip-page .ar-polished-study .ar-form-fields dt { display:flex; align-items:baseline; flex-wrap:wrap; gap:8px; font-size:13px; font-weight:600; }
+.ip-page .ar-polished-study .ar-form-fields dt small { color:#8b97a5; font-size:10px; font-weight:400; }
+.ip-page .ar-polished-study .ar-form-fields dd { display:flex; align-items:center; justify-content:space-between; margin:6px 0 0; padding:12px; border:1px solid var(--ar-study-line); border-radius:8px; background:var(--ar-study-raised); color:#718197; font-size:14px; overflow-wrap:anywhere; }
+.ip-page .ar-polished-study .ar-form-submit-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:0 22px 22px; }
+.ip-page .ar-polished-study .ar-form-submit { display:inline-flex; gap:18px; align-items:center; padding:10px 16px; border-radius:8px; background:#dce7f2; color:#536b89; font-size:13px; font-weight:600; }
+.ip-page .ar-polished-study .ar-form-submit-row small { font-size:10px; color:#8b97a5; }
+.ip-page .ar-polished-study .ar-form-confirmation { display:flex; gap:12px; align-items:center; margin:0 22px; padding:14px; border:1px solid #c8dcd6; border-radius:10px; background:#e8f1ed; color:#56736b; }
+.ip-page .ar-polished-study .ar-form-confirmation small { font-size:10px; color:#8c9d95; }
+.ip-page .ar-polished-study .ar-form-confirmation p { margin:5px 0 0; font-size:13px; line-height:1.6; }
+.ip-page .ar-polished-study .ar-form-caption { margin:14px 22px 22px; font-size:11px; color:#85918c; line-height:1.6; }
+@media(max-width:600px) {
+  .ip-page .ar-polished-study .ar-email-part { grid-template-columns:minmax(0,1fr); gap:5px; padding:14px 0; }
+  .ip-page .ar-polished-study .ar-email-part p { font-size:13px; }
+  .ip-page .ar-polished-study .ar-form-fields { padding:16px; }
+  .ip-page .ar-polished-study .ar-form-submit-row { padding:0 16px 16px; }
+  .ip-page .ar-polished-study .ar-form-confirmation { margin-inline:16px; }
+}

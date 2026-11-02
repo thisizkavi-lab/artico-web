@@ -4,7 +4,7 @@ import { ieltsArea, ieltsPath } from './ieltsNavigation'
 export function breadcrumbItems(route, { t = value => value, language = 'en', foundationTitle, stageTitle } = {}) {
   const ja = language === 'ja'
   const learn = { label:t('Learn'), href:'#/courses' }
-  const application = { label:ja ? '実践' : 'Application', href:'#/application' }
+  const application = { label:ja ? '実践' : 'Application', href:'#/courses?application' }
   let items
   if (route.page === 'application') {
     items = [learn, application]

@@ -1,6 +1,8 @@
 # Application navigation
 
-Course home pages are directories. Put teaching, examples, workbooks, and reference material inside the destinations they open.
+Application course choices live in the expandable Application branch in Learn (`#/courses?application`). The old `#/application` entry opens that branch; it does not have a separate directory.
+
+Individual course home pages are directories. Put teaching, examples, workbooks, and reference material inside the destinations they open.
 
 - Use `CourseIndex` for the page, `CourseDirectory` for independent choices, and `CourseTree` for grouped chapters. These share icon sizes, quiet pastel surfaces, typography, focus states, and phone layouts.
 - Make the entire card or branch row interactive. Use a link for a route and a button for an existing state-based workspace. Keep descriptions to one short sentence. Large covers, competing start buttons, completion counters, and introductory essays do not belong on the directory.

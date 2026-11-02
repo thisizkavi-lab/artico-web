@@ -55,7 +55,7 @@ test('Presentation routes preserve all study, practice, cases and blueprint page
     const path='/application/presentations/'+lesson
     assert.deepEqual(parseRoute('#'+path),{path,page:'application',id:'presentations',lesson})
   }
-  assert.equal(parseRoute('#/application/presentations/99/study').page,'application')
+  assert.equal(parseRoute('#/application/presentations/99/study').page,'courses')
   assert.equal(parseRoute('#/application/presentations/99/study').id,undefined)
 })
 test('Presenter drafts and Half-Life rounds survive local learning sanitization', () => {

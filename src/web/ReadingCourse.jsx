@@ -131,7 +131,7 @@ export default function ReadingCourse({route}){
  const c=collectionFor(route.collection),mode=route.view==='practice'?'practice':'study'
  const text=byId[route.text]?.collection===c?.id?byId[route.text]:null
  return <div className={'aw-page rd-page'+(text?' rd-wide':!c && route.collection !== 'saved' ? ' cn-index':'')}>
- {(c || route.collection === 'saved') && <nav className="rd-breadcrumb" aria-label="Reading breadcrumb"><a href="#/application">{t.back}</a><span>/</span>{c?<a href={'#'+path('home',mode)}>Reading & Understanding</a>:<span>Reading & Understanding</span>}{c&&<><span>/</span>{text?<a href={'#'+path(c.id,mode)}>{c.title}</a>:<span>{c.title}</span>}</>}</nav>}
+ {(c || route.collection === 'saved') && <nav className="rd-breadcrumb" aria-label="Reading breadcrumb"><a href="#/courses?application">{t.back}</a><span>/</span>{c?<a href={'#'+path('home',mode)}>Reading & Understanding</a>:<span>Reading & Understanding</span>}{c&&<><span>/</span>{text?<a href={'#'+path(c.id,mode)}>{c.title}</a>:<span>{c.title}</span>}</>}</nav>}
  {c && <div className="rd-modebar"><Segments items={[{value:'study',label:t.study},{value:'practice',label:t.practice}]} label="Reading Study or Practice" active={mode} onChange={v=>window.location.hash=path(c?.id||'home',v,text?.id)}/><a href={'#'+path('home',mode)}>{t.all}</a></div>}
  {route.collection === 'saved' ? <SavedWords state={state} change={change} t={t}/> : text?<Reader key={text.id+'-'+mode} text={text} mode={mode} state={state} change={change} t={t} lang={lang}/>:
  c?<Collection key={c.id} c={c} mode={mode} state={state} t={t} lang={lang}/>:

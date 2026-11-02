@@ -38,7 +38,7 @@ test('Reading Study and Practice deep links resolve and preserve last visits',()
   }
 })
 test('Invalid reading deep links cannot choose arbitrary sections or external paths',()=>{
-  assert.equal(parseRoute('#/application/reading/unknown/practice').path,'/application')
+  assert.equal(parseRoute('#/application/reading/unknown/practice').path,'/courses?application')
   assert.equal(parseRoute('#/application/reading/short/study?text=bad%2Fpath').text,undefined)
   assert.equal(parseRoute('#/application/reading/short/study/extra').path,'/application/reading')
 })

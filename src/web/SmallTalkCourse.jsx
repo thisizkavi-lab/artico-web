@@ -218,7 +218,7 @@ export default function SmallTalkCourse({route,learning,update}) {
   const previous=lessons[index-1]??null
   const next=lessons[index+1]??null
   return <div className="aw-page st-page sm-page">
-    <div className="st-breadcrumb"><a href="#/application">Application</a><span>›</span><a href={'#'+root}>Small Talk</a><span>›</span><span>{active.title}</span></div>
+    <div className="st-breadcrumb"><a href="#/courses?application">Application</a><span>›</span><a href={'#'+root}>Small Talk</a><span>›</span><span>{active.title}</span></div>
     <div className="st-layout">
       <CourseNav active={active} learning={learning}/>
       <main className="st-main sm-main">

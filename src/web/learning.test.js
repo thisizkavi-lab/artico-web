@@ -419,7 +419,7 @@ test('Home has four functional starting points, including Application', () => {
   assert.match(progress, /aw-progress-resume/)
   assert.match(landing, /al-footer-logo artico-wordmark" href="#\/landing"/)
   assert.equal((home.match(/id:'(?:orientation|foundation|social|application)'/g) ?? []).length, 4)
-  for(const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/application'])
+  for(const href of ['#/foundation/orientation/study', '#/courses?foundation', '#/courses?social', '#/courses?application'])
     assert.ok(home.includes("href:'" + href + "'"), href)
   assert.doesNotMatch(home, /Unlock|lock-icon|disabled button/i)
 })
@@ -447,11 +447,12 @@ test('Learn keeps Foundations and Social Fluency and expands eight Application t
 test('Application tracks use valid routes; Jobs has its own full course', () => {
   const ids = ['other-half','tests','smalltalk','interviews','presentations','academic','writing','reading','ideas']
   assert.deepEqual(applicationTracks.map(track=>track.id), ids)
-  assert.equal(parseRoute('#/application').page, 'application')
+  assert.deepEqual(parseRoute('#/application'), { path:'/courses?application', page:'courses' })
+  assert.deepEqual(parseRoute('#/application/'), parseRoute('#/courses?application'))
   assert.equal(parseRoute('#/application/other-half/04').chapter, '04')
   assert.equal(parseRoute('#/application/other-half/10').id, 'other-half')
-  assert.equal(parseRoute('#/application/other-half/14').path, '/application')
-  assert.equal(parseRoute('#/application/unknown').path, '/application')
+  assert.equal(parseRoute('#/application/other-half/14').path, '/courses?application')
+  assert.equal(parseRoute('#/application/unknown').path, '/courses?application')
   for(const track of applicationTracks) {
     assert.equal(parseRoute('#/application/'+track.id).id, track.id)
     assert.ok(track.icon && track.en && track.ja && track.enSummary && track.jaSummary)
@@ -477,8 +478,6 @@ test('Application tracks use valid routes; Jobs has its own full course', () => 
 test('Application exercises use learner notes, not fake scores or unlocks',()=>{
   const ui=readFileSync(new URL('./Application.jsx', import.meta.url),'utf8')
   const css=readFileSync(new URL('./application.css', import.meta.url),'utf8')
-  assert.match(ui, /applicationTracks\.map\(track =>/)
-  assert.match(ui, /href:'#\/application\/' \+ track\.id/)
   assert.match(ui, /applicationResponseKey\(track\.id, selected\)/)
   assert.match(ui, /maxLength=\{1900\}/)
   assert.match(ui, /onChange=\{e=>changes\(e\.target\.value\)\}/)
@@ -508,7 +507,7 @@ test('Small Talk is a complete dedicated course, with valid deep links and saved
       assert.equal(visit(emptyLearning,path).last,path)
     }
   }
-  assert.equal(parseRoute('#/application/smalltalk/99/practice').path,'/application')
+  assert.equal(parseRoute('#/application/smalltalk/99/practice').path,'/courses?application')
   const notes={'application-smalltalk-note-01':'An opener for class','application-smalltalk-reflection-01':'Fact: person said goodbye','application-smalltalk-done-01':'1'}
   assert.deepEqual(sanitizeLearning({...emptyLearning,responses:notes}).responses,notes)
   const legacy={ [applicationResponseKey('smalltalk',0)]:'Old notes' }
@@ -740,8 +739,8 @@ test('storytelling deep links and saved practice survive reload without acceptin
     ['application','storytelling','05','practice'])
   assert.equal(parseRoute('#/application/storytelling/16/study').lesson, '16')
   assert.equal(parseRoute('#/application/storytelling/28/practice').lesson, '28')
-  assert.equal(parseRoute('#/application/storytelling/29/study').path, '/application')
-  assert.equal(parseRoute('#/application/storytelling/05/wrong').path, '/application')
+  assert.equal(parseRoute('#/application/storytelling/29/study').path, '/courses?application')
+  assert.equal(parseRoute('#/application/storytelling/05/wrong').path, '/courses?application')
   assert.equal(parseRoute('#/application/storytelling').id, 'storytelling')
   const state = sanitizeLearning({
     ...emptyLearning, last:'/application/storytelling/05/practice',

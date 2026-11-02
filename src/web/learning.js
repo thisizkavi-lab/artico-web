@@ -166,7 +166,7 @@ export function parseRoute(hash) {
   if (page === 'application') {
     if (id === 'other-half') {
       const chapter = /^(?:0[1-9]|1[0-3]|introduction)$/.test(view ?? '') ? view : null
-      if (segments.length > (chapter ? 3 : 2) || (view && !chapter)) return { path:'/application', page:'application' }
+      if (segments.length > (chapter ? 3 : 2) || (view && !chapter)) return { path:'/courses?application', page:'courses' }
       return { path:'/application/other-half' + (chapter ? '/' + chapter : ''), page:'application', id:'other-half', ...(chapter ? { chapter } : {}) }
     }
     if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature|saved)$/.test(view ?? '') && ['study','practice'].includes(scene)) {
@@ -212,10 +212,10 @@ export function parseRoute(hash) {
       return { path: '/application/smalltalk/' + view + '/' + scene, page:'application', id:'smalltalk', lesson:view, mode:scene }
     if (id === 'storytelling' && /^(?:0[1-9]|1\d|2[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
-    if (!id) return { path: '/application', page:'application' }
+    if (!id) return { path:'/courses?application', page:'courses' }
     if (/^(?:tests|smalltalk|interviews|presentations|academic|storytelling|writing|reading|ideas)$/.test(id) && !view)
       return { path:'/application/' + id, page:'application', id }
-    return { path: '/application', page:'application' }
+    return { path:'/courses?application', page:'courses' }
   }
   if (page === 'home') return { path: '/home', page: 'home' }
   if (['courses', 'practice', 'progress', 'saved'].includes(page)) return { path, page }

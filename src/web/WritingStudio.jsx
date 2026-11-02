@@ -1,3 +1,6 @@
+import { applicationMode, applicationPath } from './applicationNavigation'
+import { useCourseLocation } from './ApplicationCourseShell'
+import { writingStudyGuides } from './writingStudyGuides'
 import { CourseIndex, CourseDirectory, scrollCourseTop } from './CourseNavigation'
 import { useMemo, useRef, useState } from 'react'
 import { useLanguage } from './Language'
@@ -8,15 +11,17 @@ import './writing-studio.css'
 const { prompts, categories } = writingData
 const categoryById = Object.fromEntries(categories.map(category => [category.id, category]))
 
+function writingStorage() { try { return window.localStorage } catch { return null } }
+
 function DraftEditor({ prompt, locale, position, total, previous, next, onDraftChange }) {
   const ja = locale === 'ja'
-  const [draft, setDraft] = useState(() => readWritingDraft(window.localStorage, prompt.id))
+  const [draft, setDraft] = useState(() => readWritingDraft(writingStorage(), prompt.id))
   const [saved, setSaved] = useState(true)
   const [copyState, setCopyState] = useState('')
   const words = writingWordCount(draft)
   const update = text => {
     setDraft(text)
-    const success = saveWritingDraft(window.localStorage, prompt.id, text)
+    const success = saveWritingDraft(writingStorage(), prompt.id, text)
     setSaved(success)
     onDraftChange(prompt.id, !!text.trim() && success)
     setCopyState('')
@@ -39,7 +44,8 @@ function DraftEditor({ prompt, locale, position, total, previous, next, onDraftC
       </div>
       <div className="ws-prompt-block">
         {prompt.section && <p className="ws-section-label">{prompt.section}</p>}
-        <h2 lang="en">{prompt.prompt}</h2>
+        <h1 lang="en">{prompt.title}</h1>
+        {prompt.prompt !== prompt.title && <p className="ws-task-detail">{prompt.prompt}</p>}
         <p className="ws-optional">{ja
           ? 'あなた自身の言葉で書いてみましょう。答えたくないテーマは飛ばしても大丈夫です。'
           : 'Write in your own words. Feel free to skip a topic that feels too personal.'}</p>
@@ -88,14 +94,30 @@ function DraftEditor({ prompt, locale, position, total, previous, next, onDraftC
   )
 }
 
-export default function WritingStudio() {
+function WritingStudy({ prompt, category, locale, practiceHref }) {
+  const ja = locale === 'ja'
+  const [purpose, steps, example] = writingStudyGuides[prompt.category]
+  return <article className="ws-study">
+    <header><p className="ws-eyebrow">{ja ? '学ぶ' : 'STUDY'} · {category.title}</p><h1>{prompt.title}</h1></header>
+    <section><h2>{ja ? '課題を読む' : 'Read the task'}</h2><p>{prompt.prompt}</p></section>
+    <section><h2>{ja ? '伝えたいことを決める' : 'Decide what the reader needs'}</h2><p>{purpose}</p>
+      <table><tbody>{steps.map((step,index) => <tr key={step}><th scope="row">{String(index + 1).padStart(2,'0')}</th><td>{step}</td></tr>)}</tbody></table>
+    </section>
+    <section className="ws-study-example"><h2>{ja ? 'このカテゴリーの短い例' : 'A short example in this category'}</h2><p>{example}</p></section>
+    <aside className="ws-study-note">{ja ? '例の構成に注目して、自分の内容に合わせて使いましょう。Practiceで自分の文章を書けます。' : 'Notice how the example develops one idea. Choose the parts that fit your own task, then write your own response in Practice.'}</aside>
+    <a className="ws-study-practice" href={practiceHref}>{ja ? '練習に進む' : 'Write your own response'} →</a>
+  </article>
+}
+
+export default function WritingStudio({ route = {} }) {
   const { language } = useLanguage()
   const ja = language === 'ja'
-  const [browse, setBrowse] = useState(true)
-  const [category, setCategory] = useState('c01')
-  const [query, setQuery] = useState('')
-  const [selectedId, setSelectedId] = useState(prompts[0].id)
-  const [draftIds, setDraftIds] = useState(() => listWritingDraftIds(window.localStorage, prompts.map(prompt => prompt.id)))
+  const browse = !route.category || route.category === 'home'
+  const mode = applicationMode(route)
+  const [category, setCategory] = useState(route.category && route.category !== 'home' ? route.category : 'c01')
+  const [query, setQuery] = useState(route.search || '')
+  const [selectedId, setSelectedId] = useState(route.prompt || prompts[0].id)
+  const [draftIds, setDraftIds] = useState(() => listWritingDraftIds(writingStorage(), prompts.map(prompt => prompt.id)))
   const editorRef = useRef(null)
 
   const visible = useMemo(() => prompts.filter(prompt => {
@@ -129,9 +151,9 @@ export default function WritingStudio() {
     if (value) setCategory('all')
   }
   const openCategory = id => {
-    setCategory(id); setQuery(''); setBrowse(false); scrollCourseTop()
+    window.location.hash = applicationPath({ id:'writing', category:id },mode); scrollCourseTop()
   }
-  const showCategories = () => { setBrowse(true); scrollCourseTop() }
+  useCourseLocation({ ...route, id:'writing', category:browse ? 'home' : category, prompt:browse ? undefined : selected?.id, search:query || undefined })
   if (browse) return <CourseIndex title={ja ? '英語で書く' : 'Writing'}>
     <CourseDirectory label={ja ? '書くカテゴリー' : 'Writing categories'} items={[
       ...categories.map(item => ({ id:item.id, title:ja ? item.ja : item.title, summary:item.count + (ja ? ' テーマ' : item.count === 1 ? ' writing prompt' : ' writing prompts'), icon:'pencil', onClick:() => openCategory(item.id) })),
@@ -140,19 +162,12 @@ export default function WritingStudio() {
   </CourseIndex>
   return (
     <div className="aw-page ws-page">
-      <button className="ws-back" type="button" onClick={showCategories}>← {ja ? 'すべてのカテゴリー' : 'All writing categories'}</button>
-      <header className="ws-heading">
-        <p className="ws-eyebrow">APPLICATION / WRITING</p>
-        <h1>{ja ? '英語で書く' : 'Writing'}</h1>
-        <p>{ja ? 'テーマを選び、自分の考えを英語で表現しましょう。' :
-          'Choose a topic and put your thoughts into words.'}</p>
-        <span className="ws-source-count">{categories.length} {ja ? 'カテゴリー' : 'categories'} · {prompts.length} {ja ? 'テーマ' : 'prompts'} · {draftIds.size} {ja ? '保存した下書き' : 'drafts'}</span>
-      </header>
       <div className="ws-layout">
-        <aside className="ws-browser" aria-label={ja ? '書くテーマを選ぶ' : 'Browse writing prompts'}>
+        <details className="ws-browser" aria-label={ja ? '書くテーマを選ぶ' : 'Browse writing prompts'}>
+          <summary>{ja ? 'テーマを選ぶ' : 'Choose a prompt'} <span>{visible.length}</span></summary>
           <div className="ws-browser-controls">
             <label htmlFor="ws-category">{ja ? 'カテゴリー' : 'Category'}</label>
-            <select id="ws-category" value={category} onChange={event => setCategory(event.target.value)}>
+            <select id="ws-category" value={category} onChange={event => openCategory(event.target.value)}>
               <option value="all">{ja ? 'すべてのカテゴリー' : 'All categories'} ({prompts.length})</option>
               <option value="drafts">{ja ? '自分の下書き' : 'My drafts'} ({draftIds.size})</option>
               {categories.map(c => <option key={c.id} value={c.id}>
@@ -184,16 +199,14 @@ export default function WritingStudio() {
               ? '該当するテーマがありません。カテゴリーや検索語を変更してください。'
               : 'No matching prompts. Try another category or search.'}</p>}
           </div>
-        </aside>
+        </details>
         <div className="ws-workspace" ref={editorRef}>
-          {selected ? <DraftEditor key={selected.id} prompt={selected} locale={language}
+          {selected ? mode === 'study' ? <WritingStudy prompt={selected} category={categoryById[selected.category]} locale={language} practiceHref={'#' + applicationPath({ id:'writing', category, prompt:selected.id, search:query || undefined }, 'practice')}/> : <DraftEditor key={selected.id} prompt={selected} locale={language}
             position={position} total={visible.length}
             previous={position > 0 ? () => go(visible[position - 1].id) : null}
             next={position < visible.length - 1 ? () => go(visible[position + 1].id) : null}
             onDraftChange={recordDraft}/> :
-            <p className="ws-workspace-empty">{ja
-              ? '別のカテゴリーまたは検索語を選んでください。'
-              : 'Select another category or search to choose a prompt.'}</p>}
+            <section className="ws-workspace-empty"><h1>{category === 'drafts' ? (ja ? '自分の下書き' : 'My drafts') : (ja ? '該当するテーマがありません' : 'No matching prompts')}</h1><p>{category === 'drafts' ? (ja ? 'Practiceで文章を書くと、ここから続きを書けます。' : 'Start a response in Practice to keep a draft here.') : (ja ? 'カテゴリーや検索語を変更してください。' : 'Try another category or search.')}</p><a href={'#' + applicationPath({ id:'writing' },mode)}>{ja ? 'カテゴリーを選ぶ' : 'Choose a category'}</a></section>}
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { applicationMode } from './applicationNavigation'
 import { CourseIndex, CourseDirectory, CourseTree } from './CourseNavigation'
 import { useEffect, useState } from 'react'
 import {
@@ -260,16 +261,16 @@ function ResourceLinks() {
  </section>
 }
 
-function Overview() {
+function Overview({ mode }) {
   return <CourseIndex title="Public speaking & presentations">
     <CourseTree label="Presentation lessons" groups={parts.map((part, index) => ({
       id:part, title:part, open:index === 0, icon:['users','lightbulb','route','presentation','microphone','pencil'][index],
-      items:lessons.filter(lesson => lesson.part === part).map(lesson => ({ id:lesson.id, number:lesson.id, title:lesson.title, href:pathFor(lesson.id) })),
+      items:lessons.filter(lesson => lesson.part === part).map(lesson => ({ id:lesson.id, number:lesson.id, title:lesson.title, href:pathFor(lesson.id,mode) })),
     }))}/>
     <CourseDirectory label="Presentation tools and references" items={[
-      { id:'guide', title:'Course guide & resources', summary:'Set a goal. Explore the framework, phrase library, videos, and worksheets.', icon:'compass', wide:true, href:root + '/guide' },
-      { id:'cases', title:'Worked presentations', summary:'Eight situations, with complete examples.', icon:'presentation', href:root + '/cases' },
-      { id:'blueprint', title:'Your presentation blueprint', summary:'Build and revise a talk of your own.', icon:'pencil', href:root + '/blueprint' },
+      { id:'guide', title:'Course guide & resources', summary:'Set a goal. Explore the framework, phrase library, videos, and worksheets.', icon:'compass', wide:true, href:root + '/guide/' + mode },
+      { id:'cases', title:'Worked presentations', summary:'Eight situations, with complete examples.', icon:'presentation', href:root + '/cases/' + mode },
+      { id:'blueprint', title:'Your presentation blueprint', summary:'Build and revise a talk of your own.', icon:'pencil', href:root + '/blueprint/' + mode },
     ]}/>
   </CourseIndex>
 }
@@ -349,7 +350,7 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
     <div className="ps-lesson-layout">
       <aside className="ps-sidebar"><span className="ps-kicker">THE COURSE</span>{parts.map(part=><div key={part}><strong>{part}</strong>{lessons.filter(l=>l.part===part).map(l=><a href={pathFor(l.id)} aria-current={l.id===lesson.id?'page':undefined} key={l.id}>{l.id} · {l.title}</a>)}</div>)}</aside>
       <main className="ps-lesson-main">
-        <header className="ps-lesson-header"><span className="ps-kicker">LESSON {lesson.id} / {lessons.length} · {lesson.part}</span><h1>{lesson.title}</h1><p>{lesson.goal}</p><div className="ps-tabs"><a href={pathFor(lesson.id,'study')} aria-current={mode==='study'?'page':undefined}>Study</a><a href={pathFor(lesson.id,'practice')} aria-current={mode==='practice'?'page':undefined}>Practice</a></div></header>
+        <header className="ps-lesson-header"><span className="ps-kicker">LESSON {lesson.id} / {lessons.length} · {lesson.part}</span><h1>{lesson.title}</h1><p>{lesson.goal}</p></header>
         {mode==='practice' ? <>
          <section className="ps-lesson-section"><span className="ps-kicker">YOUR TASK</span><h2>Try it in your own words.</h2><p className="ps-practice-prompt">{lesson.practice}</p><ul className="ps-checks">{lesson.criteria.map(t=><li key={t}>{t}</li>)}</ul><SavedText learning={learning} update={update} responseKey={noteKey(lesson.id)} label="Draft, outline, or reflection" placeholder="A short outline is enough. Say the full version aloud." /></section>
          <Decision lesson={lesson}/>
@@ -380,11 +381,41 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
           <Decision lesson={lesson}/>
           <section className="ps-next-task"><span className="ps-kicker">NOW PRACTISE</span><h2>Don't stop at recognition.</h2><p>{lesson.practice}</p><a className="ps-primary" href={pathFor(lesson.id,'practice')}>Start this practice →</a></section>
         </>}
-        <footer className="ps-next"><a href={previous?pathFor(previous.id):root}>← {previous?previous.title:'Overview'}</a><a href={next?pathFor(next.id):root+'/cases'}>{next?next.title:'Worked examples'} →</a></footer>
+        <footer className="ps-next"><a href={previous?pathFor(previous.id,mode):root+'/home/'+mode}>← {previous?previous.title:'Overview'}</a><a href={next?pathFor(next.id,mode):root+'/cases/'+mode}>{next?next.title:'Worked examples'} →</a></footer>
       </main>
     </div>
  </div>
 }
+function ToolPractice({ section, learning, update, caseId, setCaseId }) {
+ const example = cases.find(item => item.id === caseId) || cases[0]
+ if (section === 'guide') return <div className="ps-page aw-page">
+  <header className="ps-intro"><h1>Set a goal and test your thinking.</h1><p>Choose a real speaking situation. Keep one useful goal, then use the discussion prompts to develop and question your plan.</p></header>
+  <SavedText learning={learning} update={update} responseKey="application-presentations-course-goal" label="My goal for this course" rows={4} placeholder="Name a situation and one skill you want to improve."/>
+  <DiscussionPrompts/><a className="ps-primary" href={pathFor('01','practice')}>Open the first practice lesson →</a>
+ </div>
+ return <div className="ps-page aw-page">
+  <header className="ps-intro"><h1>Build a talk for a situation.</h1><p>Choose a context, draft your own decisions, then compare the worked example. Your decisions use the same saved blueprint as the full workbook.</p></header>
+  <CaseSwitcher caseId={caseId} onChange={setCaseId}/>
+  {['audience','goal','message','evidence'].map(key => <SavedText key={key} learning={learning} update={update} responseKey={blueprintKey(caseId,key)} label={fields.find(field => field[0] === key)?.[1] || key} rows={3} placeholder="Make a specific decision for your audience."/>)}
+  <details className="ps-case-comparison"><summary>Compare the worked example</summary><CaseDetails item={example}/></details>
+  <a className="ps-primary" href={root+'/blueprint/practice'}>Continue your full blueprint →</a>
+ </div>
+}
+function BlueprintStudy({ caseId, setCaseId }) {
+ const example = cases.find(item => item.id === caseId) || cases[0]
+ return <div className="ps-page aw-page">
+  <header className="ps-intro"><h1>How to build a presentation blueprint.</h1><p>A blueprint connects the audience, the claim, the evidence, and the experience of the talk. Start with decisions you can revise.</p></header>
+  <section className="ps-lesson-section"><h2>Work from purpose to revision</h2><table><thead><tr><th>Decision</th><th>Question to answer</th></tr></thead><tbody>{[
+   ['Audience and purpose','Who needs this talk, and what should it help them understand or do?'],
+   ['Message and evidence','What is your main point? What supports it, and what are its limits?'],
+   ['Structure and delivery','What order, examples, visuals, and spoken language help this audience follow?'],
+   ['Rehearsal and revision','Where did a listener struggle? What will you change and test again?'],
+  ].map(([decision,question]) => <tr key={decision}><th scope="row">{decision}</th><td>{question}</td></tr>)}</tbody></table></section>
+  <CaseSwitcher caseId={caseId} onChange={setCaseId}/><CaseDetails item={example}/>
+  <a className="ps-primary" href={root+'/blueprint/practice'}>Build your own blueprint →</a>
+ </div>
+}
+
 export default function PresentationCourse({route,learning,update}) {
  useEffect(()=>{
   const responses=learning.responses||{}
@@ -400,15 +431,18 @@ export default function PresentationCourse({route,learning,update}) {
   }
   if(Object.keys(migration).length)update(prev=>({...prev,responses:{...prev.responses,...migration}}))
  },[learning.responses,update])
+ const mode = applicationMode(route)
  const savedCase=learning.responses?.[contextKey]
  const caseId=Object.prototype.hasOwnProperty.call(caseNames,savedCase)?savedCase:'science'
  const setCaseId=(value)=>update(prev=>({...prev,responses:{...prev.responses,[contextKey]:value}}))
+ if(mode==='practice' && ['guide','cases'].includes(route.lesson))return <ToolPractice section={route.lesson} learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
+ if(route.lesson==='blueprint' && mode==='study')return <BlueprintStudy caseId={caseId} setCaseId={setCaseId}/>
  if(route.lesson==='guide')return <CourseGuide learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
  if(route.lesson==='blueprint')return <Blueprint learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
  if(route.lesson==='cases')return <CasesView learning={learning} caseId={caseId} setCaseId={setCaseId}/>
  const lesson=lessons.find(item=>item.id===route.lesson)
  if(lesson)return <LessonView key={lesson.id} lesson={lesson} mode={route.mode||'study'} learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
- return <Overview learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
+ return <Overview mode={route.mode || 'study'} learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
 }
 
 export { sourceLinks }

@@ -86,7 +86,7 @@ test('Writing uses a searchable, bilingual and responsive editor rather than two
   assert.match(ui,/categories\.map\(c =>/)
   assert.match(ui,/visible\.map\(\(prompt,index\) =>/)
   assert.match(ui,/setCategory\('all'\)/)
-  assert.match(ui,/saveWritingDraft\(window\.localStorage, prompt\.id, text\)/)
+  assert.match(ui,/saveWritingDraft\(writingStorage\(\), prompt\.id, text\)/)
   assert.match(ui,/key=\{selected\.id\}/)
   assert.match(ui,/writingWordCount\(draft\)/)
   assert.match(ui,/navigator\.clipboard\.writeText\(draft\)/)

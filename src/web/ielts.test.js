@@ -41,7 +41,7 @@ test('TOEIC L&R outline pages resolve independently of existing IELTS routes', (
     assert.equal(route.area, area)
     assert.equal(route.path, path)
   }
-  for (const input of ['#/application/tests/toeic/unknown', '#/application/tests/toeic/reading/practice']) {
+  for (const input of ['#/application/tests/toeic/unknown', '#/application/tests/toeic/reading/wrong']) {
     assert.equal(parseRoute(input).path, '/application/tests')
   }
 })

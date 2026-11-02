@@ -55,7 +55,7 @@ const answers = [
 ]
 function Label({children}) { return <p className="st-eyebrow">{children}</p> }
 function ProgressDot({done}) {return <span className={'st-dot'+(done?' is-done':'')} aria-label={done?'Practised':'Not yet practised'} />}
-function Overview() {
+function Overview({ mode }) {
   return <CourseIndex title="Small Talk">
     <CourseDirectory label="Small Talk field guide" items={[
       { id:'guide', title:'The complete field guide', summary:'Read the foundations, lessons, and conversation map.', icon:'book', href:guideHref, wide:true },
@@ -65,22 +65,22 @@ function Overview() {
     <CourseTree label="Small Talk lessons" groups={[
       { id:'foundations', title:'Understanding small talk', icon:'compass', items:foundationCards.map(item => ({ id:item.no, title:item.title, href:guideHref + '#' + item.anchor })) },
       ...units.map((unit, index) => ({ id:unit.id, title:unit.title, icon:'messages', open:index === 0,
-        items:unit.lessons.map(id => ({ id, number:id, title:lessons.find(lesson => lesson.id === id).title, href:'#' + pathFor(id, 'practice') })),
+        items:unit.lessons.map(id => ({ id, number:id, title:lessons.find(lesson => lesson.id === id).title, href:'#' + pathFor(id, mode) })),
       })),
     ]}/>
   </CourseIndex>
 }
-function CourseNav({active,learning}) {
+function CourseNav({active,learning,mode}) {
   return <nav className="st-side" aria-label="Small Talk lessons">
     <p className="st-side-label">Small Talk / Contents</p>
     {units.map(unit=><div key={unit.id}>
-      <a className={'st-side-unit'+(unit.lessons.includes(active.id)?' is-active':'')} href={'#'+pathFor(unit.lessons[0])}>{unit.title}</a>
+      <a className={'st-side-unit'+(unit.lessons.includes(active.id)?' is-active':'')} href={'#'+pathFor(unit.lessons[0],mode)}>{unit.title}</a>
       {unit.lessons.includes(active.id)&&<div className="st-side-lessons">{unit.lessons.map(id=>{
         const l=lessons.find(v=>v.id===id)
-        return <a className={'st-side-lesson'+(active.id===id?' is-current':'')} href={'#'+pathFor(id)} key={id}>
+        return <a className={'st-side-lesson'+(active.id===id?' is-current':'')} href={'#'+pathFor(id,mode)} key={id}>
         {learning.responses?.[doneKey(id)]==='1'?'✓ ':''}{l.title}</a>})}</div>}
     </div>)}
-    <a className="st-side-unit" href={'#'+root}>← All lessons</a>
+    <a className="st-side-unit" href={'#'+pathFor('home',mode)}>← All lessons</a>
   </nav>
 }
 function Study({active}) {
@@ -213,26 +213,22 @@ function Practice({active,learning,update}) {
 export default function SmallTalkCourse({route,learning,update}) {
   const active=useMemo(()=>lessons.find(l=>l.id===route.lesson)??null,[route.lesson])
   const mode=route.mode==='practice'?'practice':'study'
-  if (!active) return <Overview learning={learning}/>
+  if (!active) return <Overview mode={mode} learning={learning}/>
   const index=lessons.findIndex(l=>l.id===active.id)
   const previous=lessons[index-1]??null
   const next=lessons[index+1]??null
   return <div className="aw-page st-page sm-page">
-    <div className="st-breadcrumb"><a href="#/courses?application">Application</a><span>›</span><a href={'#'+root}>Small Talk</a><span>›</span><span>{active.title}</span></div>
+    <div className="st-breadcrumb"><a href="#/courses?application">Application</a><span>›</span><a href={'#'+pathFor('home',mode)}>Small Talk</a><span>›</span><span>{active.title}</span></div>
     <div className="st-layout">
-      <CourseNav active={active} learning={learning}/>
+      <CourseNav active={active} learning={learning} mode={mode}/>
       <main className="st-main sm-main">
         <Label>SMALL TALK / LESSON {active.id} OF {String(lessons.length).padStart(2,'0')}</Label>
         <h1>{active.title}</h1>
         <p className="st-goal">{active.goal}</p>
-        <nav className="st-tabs" aria-label="Study or Practice">
-          <a href={'#'+pathFor(active.id,'study')} aria-current={mode==='study'?'page':undefined}>Study</a>
-          <a href={'#'+pathFor(active.id,'practice')} aria-current={mode==='practice'?'page':undefined}>Practice {learning.responses?.[doneKey(active.id)]==='1'?'✓':''}</a>
-        </nav>
         {mode==='study'?<Study active={active}/>:<Practice active={active} learning={learning} update={update}/>}
         <nav className="sm-lesson-footer" aria-label="Lesson navigation">
-          {previous?<a className="st-secondary" href={'#'+pathFor(previous.id,'study')}>← Previous lesson</a>:<a className="st-secondary" href={'#'+root}>← Course overview</a>}
-          {next?<a className="st-secondary" href={'#'+pathFor(next.id,'study')}>Next lesson →</a>:<a className="st-secondary" href={'#'+root}>All lessons →</a>}
+          {previous?<a className="st-secondary" href={'#'+pathFor(previous.id,mode)}>← Previous lesson</a>:<a className="st-secondary" href={'#'+pathFor('home',mode)}>← Course overview</a>}
+          {next?<a className="st-secondary" href={'#'+pathFor(next.id,mode)}>Next lesson →</a>:<a className="st-secondary" href={'#'+pathFor('home',mode)}>All lessons →</a>}
         </nav>
       </main>
     </div>

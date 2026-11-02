@@ -29,7 +29,7 @@ export function Courses({ learning, route }) {
     ? 'application'
     : learnStages.find(stage => route.path.endsWith('?' + stage.id))?.id
   const initialStage = requestedStage ??
-    (getLearningStage(learning.last)?.id === 'social' ? 'social' : 'foundation')
+    (['social','application'].includes(getLearningStage(learning.last)?.id) ? getLearningStage(learning.last).id : 'foundation')
   const currentId = learning.last?.match(/\/lesson\/(\d+)/)?.[1]
   const initialGroup = groups.findIndex((group) =>
     currentId && Number(currentId) >= group.start && Number(currentId) <= group.end,

@@ -19,6 +19,12 @@ export const emptyLearning = {
 }
 const validView =
   /^(?:\/lesson\/(?:0[1-9]|[1-8]\d|9[0-7])\/(?:study|practice|reader|words|phrases)(?:\/(?:first|friend))?(?:\?(?:phrase=phrase-(?:friend|coworker)|line=ch(?:0[1-9]|[1-8]\d|9[0-7])-(?:line|v|b|p)\d+))?|\/foundation\/(?:orientation|how-it-works|letters|hear|write|sounds|tongue-intro|lr)(?:\/(?:study|practice|chunks|whole))?|\/application\/storytelling\/(?:0[1-9]|1\d|2[0-8])\/(?:study|practice)|\/application\/smalltalk\/(?:0[1-9]|1[0-2])\/(?:study|practice)|\/application\/reading\/(?:home|short|stories|everyday|media|ideas|literature|saved)\/(?:study|practice)(?:\?text=[a-z0-9-]{1,70})?|\/application\/ideas\/(?:home|0[1-8])\/(?:study|practice)(?:\?task=0[1-8]-[a-z])?|\/application\/presentations\/(?:0[1-9]|1[0-8])\/(?:study|practice)|\/application\/presentations\/(?:blueprint|cases|guide)|\/application\/other-half(?:\/(?:0[1-9]|1[0-3]|introduction))?)$/
+function isTrackedView(path) {
+  if (validView.test(path)) return true
+  if (typeof path !== 'string' || !path.startsWith('/application/') || path.length > 600) return false
+  const route = parseRoute('#' + path)
+  return route.page === 'application' && route.path === path
+}
 const normalizeLrPath = (path) => typeof path === 'string' && path.startsWith('/foundation/lr/')
   ? (path.endsWith('/study') ? '/foundation/tongue-intro/study' : '/foundation/tongue-intro/practice') : path
 const isPractice = (path) =>
@@ -29,7 +35,7 @@ export function sanitizeLearning(input) {
   const positions = Object.fromEntries(
     Object.entries(input.positions ?? {}).map(([path, top]) => [normalizeLrPath(path), top]).filter(
       ([path, value]) =>
-        validView.test(path) && Number.isFinite(value) && value >= 0 && value < 1000000,
+        isTrackedView(path) && Number.isFinite(value) && value >= 0 && value < 1000000,
     ),
   )
   const indices = Object.fromEntries(
@@ -74,10 +80,10 @@ export function sanitizeLearning(input) {
   )
   return {
     version: 1,
-    last: typeof input.last === 'string' && validView.test(input.last) ? normalizeLrPath(input.last) : null,
+    last: typeof input.last === 'string' && isTrackedView(input.last) ? normalizeLrPath(input.last) : null,
     lastPractice:
       typeof input.lastPractice === 'string' &&
-      validView.test(input.lastPractice) &&
+      isTrackedView(input.lastPractice) &&
       isPractice(input.lastPractice)
         ? normalizeLrPath(input.lastPractice)
         : null,
@@ -165,9 +171,22 @@ export function parseRoute(hash) {
   }
   if (page === 'application') {
     if (id === 'other-half') {
-      const chapter = /^(?:0[1-9]|1[0-3]|introduction)$/.test(view ?? '') ? view : null
-      if (segments.length > (chapter ? 3 : 2) || (view && !chapter)) return { path:'/courses?application', page:'courses' }
-      return { path:'/application/other-half' + (chapter ? '/' + chapter : ''), page:'application', id:'other-half', ...(chapter ? { chapter } : {}) }
+      const item = /^(?:home|introduction|0[1-9]|1[0-3])$/.test(view ?? '') ? view : null
+      const mode = ['study','practice'].includes(scene) ? scene : null
+      if (segments.length > (mode ? 4 : item ? 3 : 2) || (view && !item) || (scene && !mode)) return { path:'/courses?application', page:'courses' }
+      return { path:'/application/other-half' + (item ? '/' + item : '') + (mode ? '/' + mode : ''), page:'application', id:'other-half',
+        ...(item && item !== 'home' ? { chapter:item } : {}), ...(mode ? { mode } : {}) }
+    }
+    if (['interviews','academic'].includes(id) && ['study','practice'].includes(scene) && segments.length === 4) {
+      const valid = view === 'home' || (id === 'interviews' ? /^[1-8]\.\d{1,2}$/ : /^0[1-6]\.\d{2}$/).test(view)
+      if (valid) return { path:'/application/' + id + '/' + view + '/' + scene, page:'application', id, lesson:view, mode:scene }
+    }
+    if (id === 'writing' && /^(?:home|all|drafts|c0[1-9]|c1[0-4])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4) {
+      const input = new URLSearchParams(path.split('?')[1] || ''), query = new URLSearchParams()
+      if (/^[a-z0-9-]{1,60}$/.test(input.get('prompt') || '')) query.set('prompt', input.get('prompt'))
+      if (input.get('q')) query.set('q', input.get('q').slice(0,80))
+      return { path:'/application/writing/' + view + '/' + scene + (query.size ? '?' + query : ''), page:'application', id, category:view, mode:scene,
+        ...(query.has('prompt') ? { prompt:query.get('prompt') } : {}), ...(query.has('q') ? { search:query.get('q') } : {}) }
     }
     if (id === 'reading' && /^(?:home|short|stories|everyday|media|ideas|literature|saved)$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       if (segments.length > 4) return {path:'/application/reading',page:'application',id:'reading'}
@@ -193,9 +212,9 @@ export function parseRoute(hash) {
     }
     if (id === 'tests' && view === 'toeic') {
       const area = scene ?? 'home'
-      if (segments.length > 4 || !/^(?:home|overview|listening|reading|mocks)$/.test(area))
+      if (segments.length > 5 || !/^(?:home|overview|listening|reading|mocks)$/.test(area) || (segments[4] && !['study','practice'].includes(segments[4])))
         return { path: '/application/tests', page: 'application', id: 'tests' }
-      return { path: '/application/tests/toeic/' + area, page: 'application', id: 'tests', exam: 'toeic', area }
+      return { path:'/application/tests/toeic/' + area + (segments[4] ? '/' + segments[4] : ''), page:'application', id:'tests', exam:'toeic', area, ...(segments[4] ? { view:segments[4] } : {}) }
     }
     if (id === 'ideas' && /^(?:home|0[1-8])$/.test(view ?? '') && ['study','practice'].includes(scene)) {
       const given = new URLSearchParams(path.split('?')[1] ?? '').get('task')
@@ -203,12 +222,12 @@ export function parseRoute(hash) {
       return { path:'/application/ideas/' + view + '/' + scene + (task ? '?task=' + task : ''), page:'application', id:'ideas',
         lesson:view, mode:scene, ...(task ? { task } : {}) }
     }
-    if (id === 'presentations' && /^(?:0[1-9]|1[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4)
+    if (id === 'presentations' && /^(?:home|guide|cases|blueprint|0[1-9]|1[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene) && segments.length === 4)
       return { path:'/application/presentations/' + view + '/' + scene, page:'application', id:'presentations', lesson:view, mode:scene }
     if (id === 'presentations' && ['blueprint','cases','guide'].includes(view) && segments.length === 3)
       return { path:'/application/presentations/' + view, page:'application', id:'presentations', lesson:view }
     if (id === 'humor') return parseRoute('#/lesson/34/study')
-    if (id === 'smalltalk' && /^(?:0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))
+    if (id === 'smalltalk' && /^(?:home|0[1-9]|1[0-2])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/smalltalk/' + view + '/' + scene, page:'application', id:'smalltalk', lesson:view, mode:scene }
     if (id === 'storytelling' && /^(?:0[1-9]|1\d|2[0-8])$/.test(view ?? '') && ['study','practice'].includes(scene))
       return { path: '/application/storytelling/' + view + '/' + scene, page:'application', id:'storytelling', lesson:view, mode:scene }
@@ -257,7 +276,7 @@ export function parseRoute(hash) {
 }
 
 export function visit(learning, path) {
-  return validView.test(path)
+  return isTrackedView(path)
     ? { ...learning, last: path, lastPractice: isPractice(path) ? path : learning.lastPractice }
     : learning
 }

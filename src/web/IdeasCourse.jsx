@@ -1,7 +1,7 @@
 import { CourseDirectory } from './CourseNavigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import CurriculumIcon from './CurriculumIcon'
-import { Icon, Segments } from './components'
+import { Icon } from './components'
 import { ideasLessons, ideasLesson, ideasPath } from './ideasContent'
 import './ielts.css'
 import './ideas.css'
@@ -251,9 +251,6 @@ export default function IdeasCourse({ route }) {
       <a href={'#' + ideasPath('home',mode)}>Ideas &amp; Expression</a>
       {lesson && <><span aria-hidden="true">/</span><span>{lesson.title}</span></>}
     </nav>}
-    {lesson && <div className="ie-modebar"><Segments items={[{value:'study',label:'Study'},{value:'practice',label:'Practice'}]}
-      label="Ideas & Expression Study or Practice" active={mode} onChange={(next) => go(ideasPath(lesson?.id || 'home', next))}/>
-      <a href={'#' + ideasPath('home',mode)}>All lessons</a></div>}
     {!lesson ? <Home route={{mode}} store={store}/> : mode === 'study'
       ? <Study key={lesson.id} lesson={lesson} store={store}/>
       : <Practice key={lesson.id} route={route} lesson={lesson} store={store}/>}

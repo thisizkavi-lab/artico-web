@@ -1,0 +1,46 @@
+.ac-course-shell{color:var(--ink,#263b3b)}
+.ac-mode-bar{position:sticky;top:0;z-index:22;display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(100%,1120px);margin:0 auto;padding:12px 32px;background:var(--paper,#faf9f6);border-bottom:1px solid var(--line,#dfe3e2)}
+.ac-mode-switch{display:flex;gap:3px;padding:4px;background:#e9eded;border-radius:13px}
+.ac-mode-switch :is(a,button){display:flex;align-items:center;justify-content:center;gap:9px;min-height:43px;min-width:115px;padding:9px 17px;border:0;border-radius:10px;background:transparent;color:#607172;text-decoration:none;font:650 15px/1.4 var(--font-sans,system-ui,sans-serif);cursor:pointer;transition:background .16s,color .16s,box-shadow .16s}
+.ac-mode-switch :is([aria-current=page],[aria-pressed=true]){background:#fff;color:#285bcc;box-shadow:0 1px 5px #223b3b0b}
+.ac-mode-switch :is(a,button):focus-visible,.ac-mode-trailing a:focus-visible{outline:3px solid #285bcc;outline-offset:3px}
+.ac-mode-switch button:disabled{cursor:default;opacity:.65}
+.ac-mode-trailing{min-width:0;text-align:right;font-size:13px;line-height:1.5;color:#667775}
+.ac-mode-trailing a{color:inherit;text-underline-offset:4px;text-decoration:none}
+.ac-mode-trailing a:hover{text-decoration:underline}
+.ac-course-shell>.aw-page{max-width:1120px}
+.ac-course-shell .jc-sidebar,.ac-course-shell .st-side,.ac-course-shell .ps-sidebar{display:none}
+.ac-course-shell .jc-layout,.ac-course-shell .st-layout,.ac-course-shell .ps-lesson-layout{display:block}
+.ac-course-shell .jc-main,.ac-course-shell .st-main{max-width:900px;margin:0 auto}
+.ac-course-shell .oh-content-section,.ac-course-shell [id^=ies-unit]{scroll-margin-top:95px}
+@media(max-width:650px){.ac-mode-bar{padding:10px 16px;gap:10px}.ac-mode-switch :is(a,button){min-width:96px;padding:9px 11px;font-size:14px}.ac-mode-trailing{font-size:12px}.ac-mode-trailing>span{max-width:140px;display:block}}
+@media(prefers-reduced-motion:reduce){.ac-mode-switch :is(a,button){transition:none}}
+
+.ac-course-shell .ws-layout{display:block}
+.ac-course-shell .ws-browser{position:static;height:auto;max-height:none;width:100%;margin-bottom:24px;border-radius:14px;border:1px solid #dfe5e0;background:#f5f7f4;padding:0}
+.ws-browser>summary{display:flex;justify-content:space-between;align-items:center;padding:15px 18px;cursor:pointer;font-size:14px;font-weight:650;color:#536d63}
+.ws-browser>summary span{font-size:12px;color:#82918a}
+.ac-course-shell .ws-browser-controls{padding:12px 18px}
+.ac-course-shell .ws-prompt-list{max-height:320px;overflow:auto;padding:0 10px 10px}
+.ac-course-shell .ws-workspace{width:100%;max-width:900px;margin:0 auto}
+.ws-study{display:grid;gap:24px;color:#3b5049;line-height:1.85}
+.ws-study h1{font-size:clamp(25px,3.2vw,36px);line-height:1.3;letter-spacing:-.025em;margin:8px 0 0}.ws-study h2{font-size:19px;margin:0 0 10px}.ws-study p{font-size:15px;margin:0}
+.ws-study table,.ac-toeic-example table{border-collapse:collapse;width:100%;margin-top:15px;font-size:14px;text-align:left}
+.ws-study :is(th,td),.ac-toeic-example :is(th,td){padding:12px;border-bottom:1px solid #dce5dd;vertical-align:top}.ws-study th{width:30px;color:#8d9c8f}
+.ws-study-example{background:#f1f6f0;border:1px solid #dce5db;border-radius:16px;padding:22px}.ws-study-example p{white-space:pre-line}
+.ws-study-note{padding:12px 16px;border:1px solid #e9e1cd;border-radius:12px;background:#faf8ef;color:#898575;font-size:12px;line-height:1.8}
+.ws-study-practice{color:#285bcc;font-size:14px;font-weight:650;text-underline-offset:4px}
+.ac-toeic-examples{display:grid;gap:18px}.ac-toeic-example{padding:22px;border:1px solid #dfe6e1;border-radius:17px;background:#f3f7f3}.ac-toeic-example h3{margin:0;font-size:18px}.ac-toeic-example th{width:110px;color:#698174;font-size:12px}.ac-toeic-example td{font-size:14px;line-height:1.8}
+
+.ac-course-shell :is(.ie-breadcrumb,.rd-breadcrumb,.ps-crumb,.jc-crumb,.st-breadcrumb){display:none}
+.ac-course-shell .ws-editor-header h1{font-size:clamp(25px,3.2vw,36px);line-height:1.3;margin:8px 0 14px;letter-spacing:-.025em}
+.ps-case-comparison{border:1px solid #e0e5df;border-radius:14px;padding:16px}.ps-case-comparison>summary{cursor:pointer;font-weight:650;color:#60776c}
+
+.ac-course-shell .ws-prompt-block h1{font-size:clamp(25px,3.2vw,36px);line-height:1.4;margin:0 0 12px;letter-spacing:-.025em}
+
+.ac-course-shell :is(.oh-page,.ps-page,.st-page,.jc-page,.rd-page,.ie-page,.ws-page,.ac-practice) h1{font-family:inherit;font-size:clamp(28px,3.5vw,40px);font-weight:700;line-height:1.25;letter-spacing:-.035em}
+.ac-course-shell .ps-cover h1 em{font-style:normal}
+.ac-course-shell .oh-visual-heading h2{font-family:inherit;font-size:23px;font-weight:650;line-height:1.35}
+.ac-course-shell .oh-visual :is(.oh-visual-cards,.oh-visual-columns)>article{background:#f7f9fc;border-color:#dfe7ed;border-radius:12px;padding:18px}
+.ac-course-shell .oh-visual-cards strong{font-size:14px}.ac-course-shell .oh-visual-cards p{font-size:12px;line-height:1.7}
+.ws-task-detail{font-size:15px;line-height:1.8;color:#5f7370;margin:0 0 16px}

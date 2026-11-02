@@ -1,3 +1,4 @@
+import { applicationPath, applicationMode } from './applicationNavigation'
 import { CourseIndex, CourseDirectory, CourseTree, scrollCourseTop } from './CourseNavigation'
 import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
@@ -61,13 +62,13 @@ function speak(text){
 }
 function TextBlock({text}) { return <p className="jc-preline">{text}</p> }
 
-export default function JobsCourse({learning,update}) {
+export default function JobsCourse({route = {},learning,update}) {
   const {language} = useLanguage()
   const ja = language === 'ja'
   const t=labels[ja?'ja':'en']
   const responses=learning.responses || {}
-  const [active,setActive]=useState(null)
-  const [mode,setMode]=useState('study')
+  const active = route.lesson
+  const mode = applicationMode(route)
   const [reveal,setReveal]=useState(false)
   const [checked,setChecked]=useState(null)
   const [micState,setMicState]=useState('')
@@ -81,8 +82,8 @@ export default function JobsCourse({learning,update}) {
   const draft=current ? (responses[jobKey('note',current.id)]||''):''
   const setResponse=(key,value)=>update(prev=>({...prev,responses:{...prev.responses,[key]:value}}))
   const edit=(value)=>{if(current)setResponse(jobKey('note',current.id),value.slice(0,4900))}
-  const select=(id,tab='study')=>{if(recognition.current){recognition.current.stop();recognition.current=null;}setMicState('');setActive(id);setMode(tab);setReveal(false);setChecked(null);setWarn('');setResponse(jobKey('location'),id);scrollCourseTop()}
-  const home=()=>{setActive(null);setWarn('');setResponse(jobKey('location'),'');scrollCourseTop()}
+  const select=(id,tab=mode)=>{if(recognition.current){recognition.current.stop();recognition.current=null;}setMicState('');window.location.hash=applicationPath({ id:'interviews', lesson:id },tab);setReveal(false);setChecked(null);setWarn('');setResponse(jobKey('location'),id);scrollCourseTop()}
+  const home=()=>{window.location.hash=applicationPath({ id:'interviews' },mode);setWarn('');setResponse(jobKey('location'),'');scrollCourseTop()}
   const completion=()=>{if(!draft.trim()){setWarn(t.empty);return}setWarn('');setResponse(jobKey('done',current.id),'1')}
   const dictate=()=>{
     if(recognition.current){recognition.current.stop();recognition.current=null;setMicState('');return}
@@ -129,7 +130,7 @@ export default function JobsCourse({learning,update}) {
         <p className="ap-eyebrow">{t.unit} {Number(unit.id.slice(1))} / 8 · {current.id}</p>
         <h1>{current.title}</h1>
         <p className="jc-question">{current.question}</p>
-        <div className="jc-switch" role="group" aria-label="Learning mode"><button type="button" aria-pressed={mode==='study'} className={mode==='study'?'is-active':''} onClick={()=>{setMode('study');setWarn('')}}>{t.study}</button><button type="button" aria-pressed={mode==='practice'} className={mode==='practice'?'is-active':''} onClick={()=>{setMode('practice');setWarn('')}}>{t.practice}{responses[jobKey('done',current.id)]==='1'?' ✓':''}</button></div>
+
 
         {mode==='study'?<div className="jc-reading">
           <section className="jc-section"><h2>{t.learn}</h2>{ja&&<p lang="ja" className="jc-ja-summary">{japaneseCopy[current.id]}</p>}<TextBlock text={info.intro}/></section>
@@ -139,7 +140,7 @@ export default function JobsCourse({learning,update}) {
           <section className="jc-phrase"><div><p className="jc-kicker">{t.words}</p><strong lang="en">{info.language}</strong></div><button type="button" aria-label={t.hear} title={t.hear} onClick={()=>speak(info.language)}>▶ <span className="jc-play-label">{t.hear}</span></button></section>
           <section className="jc-caution"><strong>{t.watch}</strong><p>{info.watch}</p></section>
           <details className="jc-workbook"><summary>{t.leave}</summary><strong>{unit.workbook.title}</strong><p>{unit.workbook.task}</p></details>
-          <button type="button" className="jc-primary jc-wide" onClick={()=>{setMode('practice');scrollCourseTop()}}>{t.practice} <span aria-hidden="true">→</span></button>
+          <button type="button" className="jc-primary jc-wide" onClick={()=>select(current.id,'practice')}>{t.practice} <span aria-hidden="true">→</span></button>
         </div>:<div className="jc-reading">
           {current.unit_id==='U08'&&<p className="jc-disclaimer">{t.capstone}</p>}
           {current.id==='8.1'&&<section className="jc-section"><h2>{t.role}</h2><div className="jc-role-list">{roles.map(r=><button key={r.id} type="button" className={roleId===r.id?'is-selected':''} onClick={()=>setResponse(jobKey('role'),r.id)}><strong>{r.name}</strong><span>{r.duties}</span><small>{r.required}</small></button>)}</div></section>}

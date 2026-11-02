@@ -1,3 +1,4 @@
+import { CourseIndex, CourseDirectory, CourseTree } from './CourseNavigation'
 import { useEffect, useState } from 'react'
 import {
   presentationLessons as lessons, presentationCases as cases, presentationSituations as situations,
@@ -259,7 +260,21 @@ function ResourceLinks() {
  </section>
 }
 
-function Overview({learning,update,caseId,setCaseId}) {
+function Overview() {
+  return <CourseIndex title="Public speaking & presentations">
+    <CourseTree label="Presentation lessons" groups={parts.map((part, index) => ({
+      id:part, title:part, open:index === 0, icon:['users','lightbulb','route','presentation','microphone','pencil'][index],
+      items:lessons.filter(lesson => lesson.part === part).map(lesson => ({ id:lesson.id, number:lesson.id, title:lesson.title, href:pathFor(lesson.id) })),
+    }))}/>
+    <CourseDirectory label="Presentation tools and references" items={[
+      { id:'guide', title:'Course guide & resources', summary:'Set a goal. Explore the framework, phrase library, videos, and worksheets.', icon:'compass', wide:true, href:root + '/guide' },
+      { id:'cases', title:'Worked presentations', summary:'Eight situations, with complete examples.', icon:'presentation', href:root + '/cases' },
+      { id:'blueprint', title:'Your presentation blueprint', summary:'Build and revise a talk of your own.', icon:'pencil', href:root + '/blueprint' },
+    ]}/>
+  </CourseIndex>
+}
+
+function CourseGuide({learning,update,caseId,setCaseId}) {
  const completed=lessons.filter(l=>learning.responses?.[doneKey(l.id)]==='yes').length
  return <div className="ps-page aw-page">
     <a className="ps-back" href="#/application">← Application</a>
@@ -348,7 +363,7 @@ function LessonView({lesson,learning,update,caseId,setCaseId,mode}) {
           <details className="ps-lesson-source">
             <summary>Source basis for this lesson</summary>
             <p>{lesson.sourceBasis}</p>
-            <a href={root+'#sources'}>Open the full research and source library →</a>
+            <a href={root+'/guide'}>Open the full research and source library →</a>
           </details>
           <section className="ps-lesson-section"><span className="ps-kicker">SEE THE DIFFERENCE</span><h2>Before & after</h2>
             <div className="ps-switch" role="group" aria-label="Comparison versions"><button onClick={()=>setComparison('before')} className={comparison==='before'?'active':''} aria-pressed={comparison==='before'}>Less useful</button><button onClick={()=>setComparison('after')} className={comparison==='after'?'active':''} aria-pressed={comparison==='after'}>Improved</button></div>
@@ -388,6 +403,7 @@ export default function PresentationCourse({route,learning,update}) {
  const savedCase=learning.responses?.[contextKey]
  const caseId=Object.prototype.hasOwnProperty.call(caseNames,savedCase)?savedCase:'science'
  const setCaseId=(value)=>update(prev=>({...prev,responses:{...prev.responses,[contextKey]:value}}))
+ if(route.lesson==='guide')return <CourseGuide learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
  if(route.lesson==='blueprint')return <Blueprint learning={learning} update={update} caseId={caseId} setCaseId={setCaseId}/>
  if(route.lesson==='cases')return <CasesView learning={learning} caseId={caseId} setCaseId={setCaseId}/>
  const lesson=lessons.find(item=>item.id===route.lesson)

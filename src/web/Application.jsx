@@ -1,6 +1,6 @@
+import { CourseIndex, CourseDirectory } from './CourseNavigation'
 import { lazy, Suspense, useState } from 'react'
 import { useLanguage } from './Language'
-import CurriculumIcon from './CurriculumIcon'
 import { applicationTracks, applicationTrack, applicationResponseKey } from './applicationTracks'
 import WritingStudio from './WritingStudio'
 import JobsCourse from './JobsCourse'
@@ -15,36 +15,13 @@ const ToeicCourse = lazy(() => import('./ToeicCourse'))
 const ReadingCourse = lazy(() => import('./ReadingCourse'))
 const IdeasCourse = lazy(() => import('./IdeasCourse'))
 
-function TrackCard({ track, language, index }) {
-  return (
-    <a className="ap-track" href={'#/application/' + track.id}>
-      <span className="ap-track-icon" aria-hidden="true"><CurriculumIcon name={track.icon} size={26} /></span>
-      <span className="ap-track-copy">
-        <span className="ap-track-number">{String(index + 1).padStart(2, '0')}</span>
-        <strong lang="en">{track.en}</strong>
-        <small>{language === 'ja' ? track.jaSummary : track.enSummary}</small>
-      </span>
-      <span className="ap-arrow" aria-hidden="true">›</span>
-    </a>
-  )
-}
-
 function TrackOverview({ language }) {
-  const ja = language === 'ja'
-  return (
-    <div className="aw-page ap-page">
-      <header className="ap-header">
-        <p className="ap-eyebrow">APPLICATION</p>
-        <h1>{ja ? '英語で、何をしたい？' : 'What do you want to do in English?'}</h1>
-        <p>{ja ? '目的を選んで、実際に使う練習を始めましょう。' : 'Choose a goal. Practise doing it in English.'}</p>
-      </header>
-      <div className="ap-tracks">
-        {applicationTracks.map((track, index) =>
-          <TrackCard key={track.id} track={track} index={index} language={language} />
-        )}
-      </div>
-    </div>
-  )
+  return <CourseIndex title={language === 'ja' ? '実践' : 'Application'}>
+    <CourseDirectory label={language === 'ja' ? '実践コース' : 'Application courses'} items={applicationTracks.map(track => ({
+      id:track.id, title:language === 'ja' ? track.ja : track.en, summary:language === 'ja' ? track.jaSummary : track.enSummary,
+      icon:track.icon, href:'#/application/' + track.id,
+    }))}/>
+  </CourseIndex>
 }
 
 function TrackExercise({ track, language, learning, update }) {

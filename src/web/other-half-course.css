@@ -234,3 +234,16 @@
   .oh-glossary-field{grid-template-columns:62px minmax(0,1fr)}
 }
 @media(prefers-reduced-motion:reduce){.oh-page *{transition:none!important}}
+
+/* A chapter is a single reading column; its local contents replace the chapter sidebar. */
+.oh-reader-layout.oh-layout{display:block;max-width:850px;margin:0 auto}
+.oh-contents{position:relative;margin-left:auto;font:500 13px/1.5 var(--font-sans, sans-serif);color:#536b69;z-index:3}
+.oh-contents summary{display:flex;align-items:center;gap:20px;cursor:pointer;list-style:none;padding:8px 0}
+.oh-contents summary::-webkit-details-marker{display:none}
+.oh-contents summary:focus-visible{outline:2px solid #315ed8;outline-offset:4px}
+.oh-contents nav{position:absolute;right:0;top:100%;width:min(370px,75vw);max-height:55vh;overflow:auto;padding:8px;background:#fffdf9;border:1px solid #dce4e0;border-radius:14px;box-shadow:0 14px 36px #233e3b16}
+.oh-contents button{display:block;width:100%;text-align:left;border:0;border-radius:7px;background:none;padding:10px 12px;font:inherit;color:inherit;cursor:pointer}
+.oh-contents button:hover,.oh-contents button:focus-visible{background:#eef4f1}
+.oh-content-section{scroll-margin-top:24px}
+.oh-content-section:focus{outline:none}
+.oh-page.cn-index{background:transparent}

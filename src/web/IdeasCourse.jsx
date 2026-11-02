@@ -1,3 +1,4 @@
+import { CourseDirectory } from './CourseNavigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import CurriculumIcon from './CurriculumIcon'
 import { Icon, Segments } from './components'
@@ -57,18 +58,11 @@ function SaveStatus({ status }) {
     {status === 'unavailable' ? 'Device storage is unavailable. Copy your work before you leave.' : 'Text is saved on this device, not in an account. Voice recordings are not saved automatically.'}
   </p>
 }
-function Directory({ mode, completed }) {
+function Directory({ mode }) {
   const icons = ['lightbulb', 'pencil', 'compass', 'school', 'route', 'messages', 'pencil', 'microphone']
-  return <div className="ie-directory">
-    {ideasLessons.map((lesson, index) => {
-      const count = lesson.tasks.filter((task) => completed[task.id]).length
-      return <a className="ie-branch" key={lesson.id} href={'#' + ideasPath(lesson.id, mode)}>
-        <span className="ie-branch-icon" aria-hidden="true"><CurriculumIcon name={icons[index]} size={25}/></span>
-        <span className="ie-branch-copy"><small>{lesson.id} · {count} of {lesson.tasks.length} exercises reviewed</small><strong>{lesson.title}</strong><span>{lesson.summary}</span></span>
-        <Icon name="next"/>
-      </a>
-    })}
-  </div>
+  return <CourseDirectory label="Ideas & Expression lessons" items={ideasLessons.map((lesson, index) => ({
+    id:lesson.id, title:lesson.title, summary:lesson.summary, icon:icons[index], href:'#' + ideasPath(lesson.id, mode),
+  }))}/>
 }
 function IdeaSeed({ store, collapsed = false }) {
   const body = <div className="id-seed-body">
@@ -82,26 +76,8 @@ function IdeaSeed({ store, collapsed = false }) {
     ? <details className="id-seed id-seed-fold"><summary>Your idea workspace <span>{store.state.mainIdea ? '· idea saved' : '· optional'}</span></summary>{body}</details>
     : <section className="id-seed"><h2>Your idea workspace</h2><p>Keep one question alive while you learn. It does not have to be original or impressive.</p>{body}</section>
 }
-function Home({ route, store }) {
-  const total = allTasks.length
-  const done = Object.values(store.state.completed).filter(Boolean).length
-  return <>
-    <header className="ie-heading"><h1>Ideas &amp; Expression</h1><p>Find out what you think. Test it. Then express it in clear, natural English.</p></header>
-    <section className="id-path" aria-label="Course approach">
-      <div><span>01</span><strong>Explore</strong><small>Get the thought out</small></div>
-      <div><span>02</span><strong>Refine</strong><small>Question and structure it</small></div>
-      <div><span>03</span><strong>Express</strong><small>Write, speak, revise</small></div>
-    </section>
-    <section className="ie-prose">
-      <h2>Thinking is not a straight line.</h2>
-      <p>An idea may start as an observation, a doubt, or a feeling. Writing and speaking can reveal gaps you had not noticed. You can return to an earlier step when the reasoning changes. The goal is not to sound certain; it is to know what you mean.</p>
-      <p>A useful short-answer frame is <strong>point → support → implication</strong>. But a question, comparison, explanation, or personal reflection may need another structure. The eight lessons show you when to use each.</p>
-    </section>
-    <IdeaSeed store={store}/>
-    <div className="id-directory-top"><h2>{route.mode === 'practice' ? 'Choose a lesson to practise' : 'Follow the thinking process'}</h2><span>{done} of {total} exercises reviewed</span></div>
-    <Directory mode={route.mode} completed={store.state.completed}/>
-    <SaveStatus status={store.status}/>
-  </>
+function Home({ route }) {
+  return <><h1 className="cn-sr-only">Ideas &amp; Expression</h1><Directory mode={route.mode}/></>
 }
 function Example({ lesson }) {
   const [open, setOpen] = useState([])
@@ -269,15 +245,15 @@ export default function IdeasCourse({ route }) {
   const store = useWorkbook()
   const lesson = ideasLesson(route.lesson)
   const mode = route.mode === 'practice' ? 'practice' : 'study'
-  return <div className="aw-page ie-page id-page" lang="en">
-    <nav className="ie-breadcrumb" aria-label="Ideas & Expression breadcrumb">
+  return <div className={'aw-page ie-page id-page' + (!lesson ? ' cn-index' : '')} lang="en">
+    {lesson && <nav className="ie-breadcrumb" aria-label="Ideas & Expression breadcrumb">
       <a href="#/application">Application</a><span aria-hidden="true">/</span>
       <a href={'#' + ideasPath('home',mode)}>Ideas &amp; Expression</a>
       {lesson && <><span aria-hidden="true">/</span><span>{lesson.title}</span></>}
-    </nav>
-    <div className="ie-modebar"><Segments items={[{value:'study',label:'Study'},{value:'practice',label:'Practice'}]}
+    </nav>}
+    {lesson && <div className="ie-modebar"><Segments items={[{value:'study',label:'Study'},{value:'practice',label:'Practice'}]}
       label="Ideas & Expression Study or Practice" active={mode} onChange={(next) => go(ideasPath(lesson?.id || 'home', next))}/>
-      <a href={'#' + ideasPath('home',mode)}>All lessons</a></div>
+      <a href={'#' + ideasPath('home',mode)}>All lessons</a></div>}
     {!lesson ? <Home route={{mode}} store={store}/> : mode === 'study'
       ? <Study key={lesson.id} lesson={lesson} store={store}/>
       : <Practice key={lesson.id} route={route} lesson={lesson} store={store}/>}

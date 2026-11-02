@@ -1,3 +1,5 @@
+import IeltsHomeDirectory from './IeltsHomeDirectory'
+import { CourseDirectory, CourseIndex } from './CourseNavigation'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import CurriculumIcon from './CurriculumIcon'
 import { Icon, Segments } from './components'
@@ -76,15 +78,12 @@ function Workbook({ area, state, change, saveState }) {
   </section>
 }
 function TestsHome() {
-  return <div className="aw-page ie-page" lang="en">
-    <a className="ie-back" href="#/application">Back to Application</a>
-    <header className="ie-heading"><h1>English Tests</h1><p>Use your English for the result you need. Choose a test to begin.</p></header>
-    <Directory items={[
-      { id: 'ielts', title: 'IELTS Academic', icon: 'school', summary: 'Study the test. Practise each skill. Build toward an independent rehearsal.', href: ieltsPath() },
-      { id: 'toeic', title: 'TOEIC Listening & Reading', icon: 'briefcase', summary: 'Explore the seven-part exam. Course outline available now; lessons and practice are planned.', href: '/application/tests/toeic/home' },
+  return <CourseIndex title="English Tests">
+    <CourseDirectory label="English tests" items={[
+      { id:'ielts', title:'IELTS Academic', icon:'school', summary:'Study the test and practise each skill.', href:'#' + ieltsPath() },
+      { id:'toeic', title:'TOEIC Listening & Reading', icon:'briefcase', summary:'Explore the course outline. Lessons and practice are planned.', href:'#/application/tests/toeic/home' },
     ]}/>
-    <p className="ie-fineprint">IELTS Academic includes learning and practice materials. TOEIC Listening &amp; Reading is an outline only for now.</p>
-  </div>
+  </CourseIndex>
 }
 function History({ state }) {
   const attempts = state.attempts.filter((attempt) => taskById[attempt.taskId]).slice().reverse().slice(0, 8)
@@ -94,23 +93,8 @@ function History({ state }) {
     return <li key={attempt.id}><a href={`#${ieltsPath(task.skill, 'practice', task.id, attempt.id)}`}><span><strong>{task.title}</strong><small>{new Date(attempt.startedAt).toLocaleDateString('en', { month: 'short', day: 'numeric' })} · {attempt.mode === 'guided' ? 'Guided' : attempt.mode === 'mock' ? 'Timed rehearsal' : 'Practice'}{attempt.seenBefore ? ' · Seen material' : ''}</small></span><b>{attempt.status === 'completed' ? 'Review' : 'Resume'}</b></a></li>
   })}</ul></section>
 }
-function IeltsHome({ route, store, toolbar }) {
-  const tiles = ieltsAreas.map((item) => ({
-    ...item,
-    href: item.id === 'overview' ? ieltsStudyPath('overview','ov-what-ielts-measures')
-      : ieltsPath(item.id, 'practice'),
-  }))
-  return <div className="ie-practice-home">
-    <header className="ie-heading">
-      <span className="ie-eyebrow">ARTICO · IELTS</span>
-      <h1>IELTS Practice</h1>
-      <p>Choose a skill. Try the exercises. Review your answers.</p>
-    </header>
-    {toolbar}
-    <Directory items={tiles} mode="practice"/>
-    <History state={store.state}/>
-    <p className="ie-fineprint">These are original training activities, not official IELTS tests. Short exercises do not produce an IELTS band score.</p>
-  </div>
+function IeltsHome() {
+  return <IeltsHomeDirectory mode="practice"/>
 }
 function Overview({ route, store }) {
   if (route.view === 'practice') return <>
@@ -247,8 +231,8 @@ export default function IeltsCourse({ route }) {
       const targetTask = mode === 'practice' || route.area === 'guided' ? route.task : undefined
       go(ieltsPath(targetArea, mode, targetTask))
     }}/>{isRunning ? <span>Finish or leave this attempt before changing modes.</span> : <a href={`#${ieltsPath('home', route.view)}`}>All IELTS sections</a>}</div>
-  return <div className={`aw-page ie-page ${route.task || isStudyReader ? 'ie-page-wide' : ''} ${isStudyPage ? 'ie-study-page' : ''} ${isCourseLanding ? 'ie-course-landing' : ''}`} lang="en">
-    <nav className="ie-breadcrumb" aria-label="IELTS breadcrumb"><a href="#/application/tests">English Tests</a><span aria-hidden="true">/</span><a href={`#${ieltsPath('home', route.view)}`}>IELTS Academic</a>{area ? <><span aria-hidden="true">/</span><span>{area.title}</span></> : null}</nav>
+  return <div className={`aw-page ie-page ${route.area === 'home' && !route.task ? 'cn-index' : ''} ${route.task || isStudyReader ? 'ie-page-wide' : ''} ${isStudyPage ? 'ie-study-page' : ''} ${isCourseLanding ? 'ie-course-landing' : ''}`} lang="en">
+    {route.area !== 'home' && <nav className="ie-breadcrumb" aria-label="IELTS breadcrumb"><a href="#/application/tests">English Tests</a><span aria-hidden="true">/</span><a href={`#${ieltsPath('home', route.view)}`}>IELTS Academic</a>{area ? <><span aria-hidden="true">/</span><span>{area.title}</span></> : null}</nav>}
     {!isCourseLanding && toolbar}
     {route.task ? task ? <IeltsWorkspace key={activeAttempt?.id ?? `${task.id}-${route.view}-${route.area}`} route={route} task={task} attempt={activeAttempt} store={store}/> : <section className="ie-prose"><h1>That workbook is not available.</h1><a href={`#${ieltsPath('home')}`}>Return to IELTS</a></section> : route.view === 'study' && ['home', 'overview', 'speaking', 'writing', 'listening', 'reading'].includes(route.area) ? <IeltsStudyView route={route} store={store} toolbar={toolbar} /> : route.area === 'home' ? <IeltsHome route={route} store={store} toolbar={toolbar}/> : route.area === 'overview' ? <Overview route={route} store={store}/> : skillInfo[route.area] ? <Skill route={route} store={store} toolbar={toolbar}/> : route.area === 'mock' ? <MockHub/> : route.area === 'guided' ? <Guided route={route} store={store}/> : route.area === 'mocks' ? <Mocks route={route} store={store}/> : <Simulation route={route} store={store}/>}
 

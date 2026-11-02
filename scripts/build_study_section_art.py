@@ -136,6 +136,7 @@ custom['pot']=rect(22,35,56,50,BLUE,7)+path('M21 47H8V63H22M79 47H92V63H79M17 35
 custom['flowerpot']=path('M19 29H81L70 92H30Z',ROSE)+rect(15,24,70,13,GOLD,3)+path('M32 46 38 81M68 46 62 81',stroke='#bd9384',width=2)
 custom['tools']=path('M19 9 34 21 29 39 84 83 76 93 20 49 9 37 11 19 21 29 29 23Z',BLUE)+path('M62 43 48 31 61 14 81 10 92 24 74 38Z',SAGE)+path('M58 45 19 87',stroke='#b19574',width=11)+path('M56 45 20 86',stroke=INK,width=2)
 custom['bank']=path('M8 32 50 8 92 32Z',BLUE)+rect(14,33,72,9,PAPER,0)+''.join(rect(x,43,9,36,SAGE,1) for x in [22,46,70])+path('M10 84H90M5 92H95',stroke=INK,width=4)+circle(50,24,6,GOLD)
+custom['appmenu']=rect(10,10,80,80,PAPER,7)+rect(10,10,80,19,BLUE,5)+path('M19 16H31M19 22H31',stroke=PAPER,width=2)+''.join(circle(24,y,4,GOLD if y==62 else SAGE)+path(f'M37 {y}H75',stroke='#8b9eaf',width=3) for y in [42,62,80])
 
 aliases = {
  'baggage':'luggage','brake':'brakes','cap':'@cap','body':'@body','bookmark':'@bookmark',
@@ -303,6 +304,7 @@ for sid,(en,ja) in scene_descriptions.items():
 object_out=ROOT/'public/assets/course/study-objects'
 object_out.mkdir(parents=True,exist_ok=True)
 object_svg('pot')  # Distinct from a flowerpot in the kitchen vocabulary atlas.
+object_svg('appmenu')  # Software choices, distinct from a restaurant menu.
 object_manifest={}
 for key,(view,inner) in cache.items():
     file=object_out/f'{key}.svg'

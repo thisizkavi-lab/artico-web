@@ -4,10 +4,15 @@ const escaped = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 // Preserve every character while making the expression, rather than the whole
 // explanation, visually prominent. Quotes and existing practice targets both
 // work even when the original paragraph was saved as one plain-text run.
-export function emphasizeNoteRuns(runs = [], byId = {}) {
+export function emphasizeNoteRuns(runs = [], byId = {}, explainedTerms = []) {
   const text = plain(runs)
   const normalized = text.replace(/[‘’]/g, "'")
   const ranges = []
+  for (const term of explainedTerms.filter(Boolean)) {
+    const candidate = term.replace(/[‘’]/g, "'")
+    const pattern = new RegExp(`(?<![a-z0-9])${escaped(candidate)}(?![a-z0-9])`, 'gi')
+    for (const match of normalized.matchAll(pattern)) ranges.push([match.index, match.index + match[0].length])
+  }
   for (const match of text.matchAll(/[“"]([^”"\n]+)[”"]/g)) {
     if (/[a-z]/i.test(match[1])) ranges.push([match.index + 1, match.index + match[0].length - 1])
   }

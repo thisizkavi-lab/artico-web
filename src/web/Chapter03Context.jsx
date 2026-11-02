@@ -1,6 +1,8 @@
 import { useLanguage } from './Language'
 import Glyph from './Glyph'
 import { approvedAudio } from './components'
+import { RichText } from './ContentBlocks'
+import { emphasizeNoteRuns } from './studyTextPresentation'
 import './chapter03-context.css'
 
 // Chapter 03 teaches discourse functions through the preceding turn.
@@ -356,7 +358,7 @@ function ContextCard({ item, audioProps, language }) {
     </div>
     <div className="ar-c03-idea">
       <strong>Note</strong>
-      <p>{language === 'ja' ? item.ja : item.en}</p>
+      <p><RichText runs={emphasizeNoteRuns([{ text: language === 'ja' ? item.ja : item.en }], {}, [item.word])} /></p>
     </div>
   </article>
 }
@@ -476,7 +478,7 @@ export default function Chapter03StudySection({ sectionIndex, audioProps }) {
         </article>
       })}
     </div>
-    <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? 'もっと簡単に聞いてもよい' : 'A simpler alternative'}</strong><p>{language === 'ja' ? '付加疑問が難しければ、Does the class start at six? のように普通の質問でも確認できます。相手に合わせるより、事実を正しく答えることが大切です。' : 'If the tag feels difficult, ask a full question: “Does the class start at six?” Answer with the correct information even if the question suggests something else.'}</p></div>
+    <div className="ar-c03-lesson-tip"><strong>{language === 'ja' ? 'もっと簡単に聞いてもよい' : 'A simpler alternative'}</strong><p><RichText runs={emphasizeNoteRuns([{ text: language === 'ja' ? '付加疑問が難しければ、Does the class start at six? のように普通の質問でも確認できます。相手に合わせるより、事実を正しく答えることが大切です。' : 'If the tag feels difficult, ask a full question: “Does the class start at six?” Answer with the correct information even if the question suggests something else.' }], {}, ['Does the class start at six?'])} /></p></div>
   </div>
   return null
 }

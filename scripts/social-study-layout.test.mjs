@@ -59,6 +59,10 @@ test('every shared study chapter renders both languages with its complete source
             renderDiagram: () => null,
           }))))
         const text = visibleText(html)
+        if (id === '88') {
+          assert.ok(html.includes('study-objects/appmenu.svg'), 'software vocabulary shows an application menu')
+          assert.equal(html.includes('study-objects/menu.svg'), false, 'the restaurant menu is reserved for restaurant vocabulary')
+        }
         for (const section of source.study) {
           for (const block of section.blocks) {
             if (block.type === 'conversation') continue

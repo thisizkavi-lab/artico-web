@@ -40,7 +40,8 @@ export function vocabularyPictures(section, byId) {
       const candidates = objects[key] ? [en] : en.split(/\s*[;/]\s*/)
       return candidates.flatMap((label) => {
         const normalizedLabel = normalizeStudyText(label)
-        const object = aliases[normalizedLabel] ?? normalizedLabel
+        const object = section.id.startsWith('88-') && normalizedLabel === 'menu'
+          ? 'appmenu' : aliases[normalizedLabel] ?? normalizedLabel
         if (!objects[object] || seen.has(object)) return []
         seen.add(object)
         return [{ en: label, item: byText.get(normalizedLabel), file: objects[object] }]

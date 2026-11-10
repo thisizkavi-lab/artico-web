@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from './Language'
 import CurriculumIcon from './CurriculumIcon'
 import { readingCollections as collections, readingTexts as texts, readingTextById as byId, readingTiers as tiers } from './readingContent'
+import './library-readable.css'
 import './reading.css'
 
 const key='artico.reading.v1'
@@ -43,6 +44,7 @@ const readingStages = [
  {id:'advanced',title:'Advanced',ja:'上級',aim:'Interpret and evaluate',aimJa:'意味を解釈し、考える'}
 ]
 const getLevel = tier => readingLevels.find(level => level.tier === tier)
+
 function Home({mode,lang,state,t}) {
  const ja=lang==='ja'
  const ordered=readingLevels.flatMap(level=>texts.filter(item=>item.tier===level.tier))
@@ -50,56 +52,89 @@ function Home({mode,lang,state,t}) {
  const totalDone=texts.filter(complete).length
  const current=byId[state.last] || ordered.find(item=>!complete(item)) || ordered[0]
  const suggested=ordered.find(item=>!complete(item)) || current
+ const initialLevel=getLevel(current?.tier)||getLevel(suggested?.tier)||readingLevels[0]
  const [tab,setTab]=useState('path')
- const [active,setActive]=useState(()=>getLevel(suggested?.tier)?.id||1)
- const percentage=(done,total)=>total?Math.round(done/total*100):0
- return <div className="rd-home">
+ const [expandedStage,setExpandedStage]=useState(initialLevel.stage)
+ const [expandedLevel,setExpandedLevel]=useState(initialLevel.id)
+ const percent=(done,total)=>total?Math.round(done/total*100):0
+ return <div className="rd-home rd-course-tree rl-vertical-page">
   <header className="rd-home-hero">
-   <p className="rd-eyebrow">{ja?'READING PATH · 読解':'YOUR READING JOURNEY'}</p>
-   <h1>Reading &amp; Understanding</h1>
-   <p>{ja?'物語を楽しみながら、少しずつ深く読めるようになる。好きなレベルから始められます。':'Follow stories. Notice more. Grow from understanding simple events to interpreting complex ideas.'}</p>
+   <p className="rd-eyebrow">{ja?'読書の道すじ':'YOUR READING PATH'}</p>
+   <h1>{ja?'次の読み物を選ぼう。':'Choose your next reading.'}</h1>
+   <p>{ja?'短い物語から複雑な文章まで。自分のペースで読み進めよう。':'From simple stories to complex ideas. Follow a clear path, or start wherever you like.'}</p>
   </header>
-  <section className="rd-continue" aria-label={ja?'読書の進捗':'Reading progress'}>
-   <div className="rd-continue-top"><span>{ja?'これまでの読書':'YOUR PROGRESS'}</span><strong>{totalDone} / {texts.length} {ja?'読了':'readings'}</strong></div>
-   <div className="rd-progress-track" role="progressbar" aria-label={ja?'読書の進捗':'Reading progress'} aria-valuenow={totalDone} aria-valuemin="0" aria-valuemax={texts.length}><span style={{width:percentage(totalDone,texts.length)+'%'}}/></div>
-   <div className="rd-continue-action"><div><small>{state.last?(ja?'前回の続き':'PICK UP WHERE YOU LEFT OFF'):(ja?'まずはこの物語から':'A GOOD PLACE TO START')}</small><strong>{current?.title||'The Red Umbrella'}</strong><p>{ja?'読むほど、少しずつ世界が広がります。':'Keep reading at your own pace. No levels are locked.'}</p></div>
-    {current&&<a className="rd-primary" href={'#'+path(current.collection,mode,current.id)}>{state.last?(ja?'続きを読む':'Continue reading'):(ja?'読み始める':'Start reading')} <span aria-hidden="true">→</span></a>}
+  <div className="rd-home-status">
+   <div className="rd-status-text">
+    <span>{ja?'読書の進捗':'YOUR PROGRESS'} · {totalDone} / {texts.length}</span>
+    {current && <a href={'#'+path(current.collection,mode,current.id)}>{state.last?(ja?'続きから読む':'Continue: '):(ja?'おすすめ':'Start: ')}{current.title} <span aria-hidden="true">›</span></a>}
    </div>
-  </section>
+   <div className="rd-progress-track" role="progressbar" aria-label={ja?'読書の進捗':'Reading progress'} aria-valuenow={totalDone} aria-valuemin="0" aria-valuemax={texts.length}><span style={{width:percent(totalDone,texts.length)+'%'}}/></div>
+  </div>
   <div className="rd-home-tabs" role="group" aria-label={ja?'表示を選ぶ':'Choose reading view'}>
    <button type="button" aria-pressed={tab==='path'} className={tab==='path'?'is-current':''} onClick={()=>setTab('path')}>{ja?'レベル別に読む':'Reading Path'}</button>
    <button type="button" aria-pressed={tab==='explore'} className={tab==='explore'?'is-current':''} onClick={()=>setTab('explore')}>{ja?'ジャンルから探す':'Explore by Type'}</button>
   </div>
-  {tab==='explore' ? <section className="rd-explore"><div className="rd-home-section-head"><h2>{ja?'好きなジャンルから探す':'Browse anything that interests you'}</h2><p>{ja?'それぞれのジャンルには、複数の難易度の読み物があります。':'Each collection has its own mix of difficulty levels.'}</p></div><Directory mode={mode} lang={lang}/></section> :
-   <div className="rd-path">
-    <p className="rd-level-note">{ja?'CEFR（A1〜C2）は目安です。文章を読んだだけで英語力を認定するものではありません。':'A1–C2 are approximate learning targets, not certified ratings of these texts or your English ability.'}</p>
-    {readingStages.map(stage=>{
-     const group=readingLevels.filter(level=>level.stage===stage.id)
-     const selected=group.find(level=>level.id===active)
-     const selection=selected?texts.filter(item=>item.tier===selected.tier):[]
-     return <section key={stage.id} className="rd-stage">
-      <div className="rd-stage-heading"><div><p className="rd-eyebrow">{ja?stage.ja:stage.title}</p><h2>{ja?stage.aimJa:stage.aim}</h2></div><span>{group.map(level=>'0'+level.id).join(' · ')}</span></div>
-      <div className="rd-level-grid">{group.map(level=>{
-       const books=texts.filter(item=>item.tier===level.tier),done=books.filter(complete).length
-       const open=active===level.id
-       return <button key={level.id} type="button" className={'rd-level-card'+(open?' is-active':'')} aria-expanded={open} onClick={()=>setActive(open?null:level.id)}>
-        <div className="rd-level-top"><span>{ja?'レベル':'LEVEL'} {String(level.id).padStart(2,'0')}</span><span>{level.cefr} <span aria-hidden="true">↗</span></span></div>
-        <strong>{ja?level.ja:level.title}</strong>
-        <p>{ja?level.summaryJa:level.summary}</p>
-        <div className="rd-level-bottom"><small>{books.length?done+' / '+books.length+' '+(ja?'読了':'readings'):ja?'準備中':'In development'}</small><span aria-hidden="true">{open?'−':'+'}</span></div>
-        <div className="rd-progress-track rd-progress-small"><span style={{width:percentage(done,books.length)+'%'}}/></div>
-       </button>
-      })}</div>
-      {selected&&<div className="rd-level-detail">
-       <div className="rd-detail-heading"><div><p className="rd-eyebrow">{ja?'レベル':'LEVEL'} {selected.id} · {selected.cefr}</p><h3>{ja?selected.ja:selected.title}</h3><p>{ja?selected.skillJa:selected.skill}</p></div><button type="button" onClick={()=>setActive(null)} aria-label={ja?'閉じる':'Close level'}>×</button></div>
-       {selection.length?<div className="rd-text-list">{selection.map((item,index)=><a key={item.id} className="rd-text-row" href={'#'+path(item.collection,mode,item.id)}>
-        <span className="rd-index">{String(index+1).padStart(2,'0')}</span><span className="rd-text-copy"><strong>{item.title}</strong><span>{item.subtitle}</span><small>{collectionFor(item.collection)?.title} · {time(item)} min · {item.format}</small></span><span className="rd-row-action">{state.done[item.id]?t.practised:state.read[item.id]?t.read:t.reader} ›</span>
-       </a>)}</div>:<p className="rd-empty">{ja?'このレベルの文章は現在準備中です。':'New readings for this level are being developed. Explore other levels in the meantime.'}</p>}
-      </div>}
-     </section>
-    })}
+  {tab==='explore' ?
+   <section className="rd-explore"><div className="rd-home-section-head"><h2>{ja?'ジャンルから選ぶ':'Browse by type'}</h2><p>{ja?'ジャンルごとに難易度を選べます。':'Choose a genre, then find a reading at your level.'}</p></div><Directory mode={mode} lang={lang}/></section>
+   : <>
+    <div className="rl-vertical-stages rd-reading-stages">
+     {readingStages.map((stage,index)=>{
+      const open=expandedStage===stage.id
+      const stageLevels=readingLevels.filter(level=>level.stage===stage.id)
+      const stageTexts=stageLevels.flatMap(level=>texts.filter(item=>item.tier===level.tier))
+      const stageDone=stageTexts.filter(complete).length
+      const stageIconName=stage.id==='beginner'?'book':stage.id==='intermediate'?'messages':'lightbulb'
+      return <section key={stage.id} className={'rl-vertical-stage'+(open?' is-open':'')}>
+       <span className="rl-vertical-step" aria-hidden="true">{String(index+1).padStart(2,'0')}</span>
+       <div className="rl-vertical-shell">
+        <button type="button" className="rl-vertical-stage-button"
+         aria-controls={'rd-stage-panel-'+stage.id} aria-expanded={open}
+         onClick={()=>{setExpandedStage(open?null:stage.id);if(!open)setExpandedLevel(stageLevels[0].id)}}>
+         <CurriculumIcon name={stageIconName} size={26}/>
+         <span className="rl-vertical-stage-title">
+          <strong>{ja?stage.ja:stage.title}</strong>
+          <small>{ja?stage.aimJa:stage.aim}</small>
+         </span>
+         <span className="rd-tree-stage-progress">{stageDone} / {stageTexts.length}</span>
+         <span className="rl-vertical-chevron" aria-hidden="true"/>
+        </button>
+        <div id={'rd-stage-panel-'+stage.id} className="rl-vertical-stage-panel" hidden={!open}>
+         <div className="rl-vertical-group-tree">
+          {stageLevels.map(level=>{
+           const levelOpen=expandedLevel===level.id
+           const items=texts.filter(item=>item.tier===level.tier)
+           const done=items.filter(complete).length
+           return <section key={level.id} className={'rl-vertical-group'+(levelOpen?' is-open':'')}>
+            <button type="button" className="rl-vertical-group-button"
+             aria-controls={'rd-level-panel-'+level.id} aria-expanded={levelOpen}
+             onClick={()=>setExpandedLevel(levelOpen?null:level.id)}>
+             <span className="rl-vertical-range">{String(level.id).padStart(2,'0')}</span>
+             <CurriculumIcon name="book" size={20}/>
+             <span className="rd-tree-level-title"><strong>{ja?level.ja:level.title}</strong><small>{ja?level.summaryJa:level.summary}</small></span>
+             <span className="rd-level-cefr">{level.cefr}</span>
+             <span className="rl-vertical-chevron" aria-hidden="true"/>
+            </button>
+            <div id={'rd-level-panel-'+level.id} className="rl-vertical-lessons rl-vertical-group-lessons rd-tree-reading-list" hidden={!levelOpen}>
+             <p className="rd-tree-skill">{ja?level.skillJa:level.skill}</p>
+             {items.length ? items.map((item,i)=><a className="rl-vertical-lesson" key={item.id} href={'#'+path(item.collection,mode,item.id)}>
+              <span className="rl-vertical-lesson-number">{String(i+1).padStart(2,'0')}</span>
+              <CurriculumIcon name={collectionFor(item.collection)?.icon||'book'} size={19}/>
+              <span className="rl-vertical-lesson-title">{item.title}<small>{time(item)} min · {item.format}{complete(item)?' · '+(ja?'読了':'Read'):''}</small></span>
+              <span className="rl-vertical-arrow" aria-hidden="true">›</span>
+             </a>):<p className="rd-tree-empty">{ja?'このレベルの読み物は準備中です。':'Readings for this level are in development.'}</p>}
+             {items.length>0 && <div className="rd-tree-level-progress"><span>{done} / {items.length} {ja?'読了':'read'}</span><div className="rd-progress-track"><span style={{width:percent(done,items.length)+'%'}}/></div></div>}
+            </div>
+           </section>
+          })}
+         </div>
+        </div>
+       </div>
+      </section>
+     })}
+    </div>
+    <p className="rd-level-note">{ja?'CEFR（A1〜C2）は学習目標の目安であり、文章や学習者の認定レベルではありません。':'CEFR labels are approximate learning targets, not certified ratings of passages or learners.'}</p>
     <div className="rd-saved-shortcut"><a href={'#'+path('saved',mode)}><CurriculumIcon name="bookmark" size={20}/><span>{t.saved}</span><span aria-hidden="true">→</span></a></div>
-   </div>}
+   </>}
  </div>
 }
 function SavedWords({state,change,t,mode}) {
